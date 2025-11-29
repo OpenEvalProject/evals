@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors present a theoretical framework based on the Arrhenius equation predicting that linear (additive) modulation of the activation energy barrier for synaptic vesicle fusion results in supralinear (multiplicative) effects on the fusion rate. This relationship is mathematically derived from reaction rate theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7, C12, and C13 collectively establish a coherent theoretical framework grounded in the Arrhenius equation. The mathematical derivation (C12, C13) logically follows from established chemical kinetics principles (C7), and the prediction (C2) is a direct consequence of this framework. The theoretical foundation is sound and well-supported by citations to fundamental principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A minimal vesicle state model with selective modulation of the fusion rate constant k2 by hypertonic sucrose accurately fits experimental synaptic responses at concentrations \u22650.5M, providing quantitative estimates of RRP size (1.31 \u00b1 0.23 nC), priming rate (0.132 \u00b1 0.031 nC/s), and unpriming rate constant (0.11 \u00b1 0.01 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 demonstrate that the model successfully fits experimental data and yields parameter estimates consistent with previous literature. The quantitative values (C19-C21) are compared with multiple prior studies and fall within expected ranges. Figure 3 provides visual confirmation of model fits, and the methodology appears rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Hypertonic sucrose (1M) reduces the activation energy for fusion by 9.3 R\u0304T (5.4 kCal/mol), which is comparable to the estimated reduction during action potential stimulation (5.9 kCal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C23 and C24 report calculated activation energy changes, the authors acknowledge that the value at 0M is likely overestimated by ~3 R\u0304T due to Ca\u00b2\u207a-dependent spontaneous release (C23 evidence). Additionally, values at higher concentrations (0.75M, 1M) may be underestimated due to receptor saturation (C22). These uncertainties affect the reliability of the maximal reduction estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Changes in the maximal fusion rate constant k2,max alone are sufficient to explain the non-linear relationship between release kinetics and RRP depletion observed across different hypertonic sucrose concentrations and genetic/pharmacological perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by model simulations (Figure 4) and comparison with experimental data from multiple studies (Figure 5). The model prediction matches the observed non-linear relationship between k2,max and depleted RRP fraction, demonstrating that modulation of the fusion rate constant is sufficient to explain these effects without invoking changes in other parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Phorbol ester (PDBu) stimulation produces supralinear effects on the fusion rate constant k2,max (three orders of magnitude larger increase at 0.5M than at 0M) while causing additive effects on activation energy (uniform ~-0.3 R\u0304T shift across 0.2-0.5M sucrose concentrations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C30 are well-supported by experimental data in Figure 6. The supralinear effect on k2,max (C28) and the additive effect on activation energy (C29, C30) are clearly demonstrated. Bootstrap analysis confirms that mean k2,max values fall within 95% confidence intervals. The authors appropriately note that the larger effect at 0M may be overestimated due to Ca\u00b2\u207a-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "ComplexinI/II deficiency produces supralinear effects on fusion kinetics (eightfold larger reduction of k2,max at 0.5M than at 0.25M) without affecting RRP size, priming, or unpriming rates, suggesting complexins reduce the activation energy for fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C33 are supported by reanalysis of published data (Xue et al., 2010) shown in Figure 7. The supralinear effect on k2,max (C33) and the lack of effect on RRP size and priming/unpriming (C31) are clearly demonstrated. However, the authors note some complexity in the activation energy changes across concentrations (C33), suggesting complexins may have multiple effects beyond simple activation energy reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The additive versus multiplicative relationship between activation energy and fusion rate provides a novel explanation for previously observed non-linear effects of genetic/pharmacological perturbations on synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the integration of theoretical predictions (C2, C13) with experimental demonstrations for both PDBu (C28-C30) and complexin deficiency (C33), as well as the successful explanation of literature data (C26, Figure 5). The framework successfully unifies observations across multiple perturbations, providing a coherent mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Hypertonic solutions induce Ca\u00b2\u207a-independent vesicle fusion selectively from the readily releasable pool, with concentration-dependent changes in release kinetics (higher hypertonicity produces faster release with decreased time-to-peak and increased peak release rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C14, C15, and C16 are well-supported by citations to established literature (Rosenmund and Stevens, 1996; Basu et al., 2007) and confirmed by experimental observations in Figure 2A. The Ca\u00b2\u207a-independence (C15) and concentration-dependence (C16) are fundamental properties that have been previously validated and are reproduced in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Kinetics of responses to 0.5M sucrose are unaffected by the competitive AMPA receptor antagonist kynurenic acid, but 0.75M responses show faster kinetics in the presence of KYN, suggesting receptor saturation/desensitization at higher concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by experimental data in Figure 3\u2014figure supplement 3. This control experiment is important for validating the use of 0.5M as the maximal depleting concentration and for cautioning against interpretation of parameters at higher concentrations. The finding appropriately limits the concentration range for reliable parameter estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The similarity between the HS-induced reduction in activation energy measured here and theoretical estimates for protein-free liposome fusion suggests that hypertonicity may act directly on lipids rather than proteins, possibly by filling energetically expensive 'voids' during fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34 and C35 present an interesting hypothesis based on comparison with theoretical work (Malinin and Lentz, 2004). However, this remains speculative as the authors acknowledge uncertainty about whether SNARE complexes are pre-assembled and note that the measured value may be underestimated. The mechanism by which hypertonicity reduces activation energy is not directly tested and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The experimental system uses autaptic hippocampal neurons cultured for 13-18 days with whole-cell voltage-clamp recordings at room temperature and a fast perfusion system achieving solution exchange within 0.4 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe methodological details that are clearly stated and supported by experimental measurements (Figure 2\u2014figure supplement 2 for C38). These technical specifications are important for reproducibility and interpretation of results. The solution exchange time is appropriately fast relative to the measured response kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C9"
+    ],
+    "result": "Multiple molecular processes contribute to the energy barrier for vesicle fusion, including membrane deformation, lipid modifications, and SNARE protein assembly, with Ca\u00b2\u207a sensors of the synaptotagmin family rapidly increasing fusion rates by several orders of magnitude during action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, and C9 summarize established knowledge from the literature, supported by appropriate citations. These claims provide necessary background context for the study but do not represent novel findings. The citations are to authoritative reviews and primary research establishing these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C40"
+    ],
+    "result": "Changes in kinetics of hypertonic sucrose-induced responses have been interpreted as changes in 'release willingness' or 'fusogenicity' of vesicles, and RRP size at steady state results from dynamic equilibrium between priming, unpriming, and fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C40 describe established concepts from prior literature (Basu et al., 2007; Wierda et al., 2007; Weis et al., 1999) that form the conceptual foundation for the current study. These are well-accepted interpretations in the field and are appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Sporozoite motility in the dermis changes over time, with an initial phase of maximal dispersal in the first 15-20 minutes, followed by increasingly constrained circular motility starting at 20 minutes, and a late-phase slowdown beginning at 60 minutes. The decrease in dispersal is not due to reduced speed until 60 minutes, but rather to changes in trajectory and increased circular motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C37 provide comprehensive temporal analysis of sporozoite motility using MSD, speed, track straightness, and circling behavior measurements. The data from multiple time points (5, 10, 20, 30, 60, 120 min) consistently show the described pattern, supported by quantitative metrics and statistical analysis. The observation is replicated in mosquito-bite inoculated sporozoites (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C82"
+    ],
+    "result": "Sporozoite migration in the dermis does not follow a Brownian random walk, with the probability of large displacements being much higher than expected for Brownian motion. This may enable sporozoites to encounter blood vessels more efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 present probability distribution analysis (Figure 1C) comparing sporozoite displacement to Brownian walk, showing statistically significant deviation. The interpretation in C82 is speculative but logically follows from the data. The analysis is appropriate for characterizing migration patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "Sporozoites exhibit two distinct types of motility: 'avascular motility' characterized by high speed (1.38 \u03bcm/s) and less confinement, and 'perivascular motility' near blood vessels with reduced speed (1.06 \u03bcm/s) and increased curvature matching dermal capillaries (0.125-0.2 \u03bcm\u207b\u00b9). This switch indicates specific recognition of blood vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by differential tracking analysis showing statistically significant differences in speed (p<0.0001, C45), MSD (C46), and curvature (C47) between avascular and perivascular tracks. The curvature analysis matching capillary geometry is particularly compelling. Claims C83 and C85 appropriately infer recognition events from the statistical changes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CS\u0394N and TRAP-VAL mutant sporozoites show reduced motility in vivo. CS\u0394N sporozoites move at 1.14 \u03bcm/s (26% reduction) while TRAP-VAL sporozoites move at 0.72 \u03bcm/s (54% reduction) at 10 minutes. Both mutants show decreased dispersal with MSD slopes reduced by 40% and 70% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 present quantitative motility measurements for mutant sporozoites with clear statistical comparisons to wild-type controls. The data are internally consistent, showing correlation between speed reduction and decreased MSD. Sample sizes are adequate (179 WT, 211 CS\u0394N, 215 TRAP-VAL tracks) and measurements are replicated across multiple videos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C92",
+      "C93"
+    ],
+    "result": "CS\u0394N sporozoites spend significantly more time (40.7% vs 28%) in association with blood vessels compared to wild-type, yet maintain normal switching between avascular and perivascular motility. The constitutively exposed TSR domain leads to increased time on vascular endothelia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60-C61 are supported by quantitative tracking data (Figure 5B-D) showing increased vessel association time while maintaining normal MSD and speed changes near vessels. Claim C92 is directly supported by data. However, C93 is speculative about the necessity of TSR regulation, though it's a reasonable hypothesis based on the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TRAP-VAL sporozoites spend similar proportions of motile time near vessels as wild-type (when motile), but the total population spends only 10% of time on vessels due to high numbers of non-motile parasites. Despite vessel contact, they show 97% reduction in blood vessel entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62, C70-C71 are supported by tracking data distinguishing motile time from total time. Claim C72 appropriately infers invasion defects from the discrepancy between vessel contact time and invasion rates. The distinction between motile and total time is important for interpretation and properly addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73"
+    ],
+    "result": "Blood vessel invasion rates are dramatically reduced in mutants: CS\u0394N shows 90% reduction (0.23% vs 2.38%) and TRAP-VAL shows 98% reduction (0.05% vs 2.38%) compared to wild-type. Lymphatic invasion is similarly impaired. CS\u0394N mutants spend equal total time on vessels as wild-type yet show 90% reduced invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68, C73 present invasion quantification from manual counting in 4-minute videos. The dramatic reduction in invasion despite vessel contact (especially for CS\u0394N, C73) is a key finding. Sample sizes are adequate (33 WT, 31 CS\u0394N, 35 TRAP-VAL videos). Control experiments (C69) confirm CD31 labeling doesn't affect invasion rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C94"
+    ],
+    "result": "Both CS\u0394N and TRAP-VAL mutations result in increased surface exposure of adhesion domains, and the inability to regulate adhesive interactions likely prevents completion of blood vessel entry. The ability to regulate adhesive interactions is key for successful dermal exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citations to prior work characterizing these mutants. Claims C75 and C94 appropriately infer that dysregulated adhesion explains invasion defects, based on the observation that mutants contact vessels but cannot enter. The inference is logical given the molecular characteristics of the mutants and their phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "High gliding speed is critical for sporozoite infectivity, as demonstrated by TRAP-VAL mutants moving at less than half wild-type speed, resulting in 70% reduction in tissue exploration and significantly decreased ability to encounter and invade blood vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 appropriately connect the observed speed reduction in TRAP-VAL mutants to decreased tissue exploration (MSD reduction) and reduced infectivity. The causal chain is well-supported by the quantitative data, though C90 includes inference about the mechanism of reduced infectivity that is reasonable but not directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Wild-type sporozoites spend over 25% of their time engaging with blood vessels without successful entry, suggesting only certain areas of the vasculature are suitable for invasion. The heterogeneous structure of dermal capillaries may create preferential invasion sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is directly supported by quantitative data (28% time on vessels, 2.38% invasion rate). Claim C96 is a reasonable inference from this discrepancy. Claims C97-C98 provide biological context from literature (C97) and speculation (C98) about heterogeneous invasion sites, which is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Modest changes in sporozoite motility result in dramatic decreases in blood vessel invasion and infectivity, indicating that dermal exit is an important barrier and potential intervention point. This may explain the partial success of the RTS,S vaccine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is well-supported by the mutant data showing disproportionate effects on invasion. Claim C100 appropriately infers that dermal exit is a barrier. Claims C101-C102 are speculative applications to vaccine development, supported by citation (C101) but representing future directions rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Sporozoite motility exhibits three temporal phases: initial high-speed dispersal (0-20 min) maximizing tissue exploration, intermediate constrained motility (20-60 min) hypothesized to optimize vessel engagement, and late-phase slowdown (60-120 min) with 70% becoming non-motile by 2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C79-C81 are supported by temporal motility data. Claim C78 is explicitly labeled as a hypothesis by the authors, which is appropriate given the correlative nature of the timing with vessel engagement. The three-phase model is well-supported by the data, though the functional interpretation of the intermediate phase remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C69"
+    ],
+    "result": "CD31 labeling specifically marks blood vessels but not lymphatic vessels in the experimental timeframe (2-3 hours), as confirmed by lack of co-localization with LYVE-1. CD31 labeling does not interfere with sporozoite behavior or vessel invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 establish the specificity of the CD31 labeling method, supported by prior literature (C38, C40) and validation experiments (C41). Claim C69 provides important control data showing the labeling method doesn't perturb the system. This methodological validation is essential for interpreting the vessel-associated motility data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on malaria transmission and sporozoite motility: sporozoites are injected by mosquitoes, travel via blood to the liver, and exhibit substrate-dependent gliding motility at 1-3 \u03bcm/s (10-30x faster than lymphocytes). Motility is essential for dermal exit and is affected by adhesion turnover and environmental obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide established background information supported by multiple literature citations. These are not novel findings but necessary context. The claims accurately represent prior knowledge about malaria transmission and sporozoite biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work established that CSP and TRAP are important for dermal exit: CS\u0394N mutants show normal IV infectivity but impaired dermal exit despite only modest in vitro motility defects, while TRAP-VAL mutants show reduced gliding speed (0.5 \u03bcm/s) and greater infectivity reduction after intradermal versus IV inoculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 accurately summarize prior published work (Coppi et al. 2011, Ejigiri et al. 2012) that motivated the current study. These claims are properly attributed to previous studies and provide essential context for the current investigation of these mutants in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C87",
+      "C91"
+    ],
+    "result": "Prior in vitro and modeling studies showed sporozoites respond to obstacles and that sporozoite curvature matches capillary geometry. Rapid dispersal may represent evolutionary adaptation to escape phagocytic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C87 cite relevant prior work. Claim C91 is speculation about evolutionary pressure, supported by citation but not directly tested. These provide context for interpreting the current findings but are not primary results of this study.",
+    "result_type": "MINOR"
+  }
+]

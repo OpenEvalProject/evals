@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors characterize baseline electrophysiological properties of granule cells and mossy fiber boutons in awake, head-fixed mice at rest. Granule cells exhibited low firing rates (0.12 \u00b1 0.31 Hz) despite relatively high EPSC frequencies (60 \u00b1 35 Hz), with 62% showing no spiking during quiet periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 provide consistent experimental measurements from in vivo patch-clamp recordings with appropriate sample sizes (n=27-47 cells from multiple mice). The data establish baseline properties that are internally consistent and well-documented with standard deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "During locomotion, mossy fiber firing increased (though not significantly, p=0.14), while EPSC frequency in granule cells increased significantly (p<0.0001), and granule cell firing rates increased dramatically (p<0.05). Granule cell spikes occurred in high-frequency bursts (106 \u00b1 65 Hz instantaneous frequency) with high variability (CV=2.2 \u00b1 1.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 present experimental data with statistical tests showing locomotion-evoked changes. The non-significant mossy fiber result (C30) is appropriately reported. The burst characteristics are well-quantified with multiple parameters. Sample sizes are small (n=4-9 cells) but statistical significance is achieved for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The ratio of granule cell EPSCs to mossy fiber terminal spikes was consistent with the known 4:1 anatomical convergence, with 95% confidence intervals of 3.5-17.7 at rest and 1.7-8.4 during motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 use appropriate bootstrap statistical methods to calculate confidence intervals. The consistency with known anatomical convergence (C42) provides validation of the recording approach. However, the wide confidence intervals suggest substantial variability in the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors identify slow inward currents during locomotion as glutamate spillover currents rather than NMDA currents, based on voltage-clamp recordings at -70 mV, modeling showing NMDA contributes <0.4% of current, and prior literature showing extrasynaptic NMDA receptors dominate in adult mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 provide converging evidence from experimental data (C43), modeling (C46), and literature (C45, C47) to support the spillover interpretation. The exclusion of NMDA contribution is well-justified by voltage-dependent Mg2+ block at -70 mV holding potential. The inference in C48 is reasonable given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Spillover current amplitude correlated with EPSC frequency, with the proportion of current carried by spillover increasing at higher EPSC rates. Cross-correlation analysis showed spillover lagged fast EPSCs by 40 ms, and burst-triggered averaging showed a 31 ms latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 present consistent temporal relationships between fast EPSCs and slow currents using multiple analytical approaches (correlation, cross-correlation, burst-triggered averaging). The 40 ms and 31 ms lags are consistent with spillover kinetics. Data from n=9 cells provides reasonable support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Spillover currents enhance granule cell spiking during locomotion through a synergistic interaction with fast EPSCs. Modeling showed combined spillover and fast currents produced significantly more spikes (9.27 \u00b1 6.36 Hz) than either alone (spillover: 2.69 \u00b1 3.78 Hz; fast: 1.01 \u00b1 0.94 Hz; p=3.39\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 combine experimental observations (C54) with computational modeling (C55-C56) to demonstrate spillover's functional role. The significant correlation (r=0.45, p=0.0055) and ANOVA results support synergistic interaction. However, the modeling relies on a published model adapted for this study, and validation of model parameters could be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "EPSC rates increased significantly at locomotion onset (100\u00b18 to 145\u00b112 Hz, p=0.0036) and decreased at locomotion offset (139\u00b110 to 106\u00b17 Hz, p=0.0118), though EPSCs occurred at high frequencies even during rest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide statistically significant evidence for locomotion-related changes in EPSC rates with appropriate paired t-tests. Sample size (n=23 periods from 9 cells) is adequate. The observation of high baseline EPSC rates (C61) is important context for interpreting the locomotion-evoked changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Motion during locomotion correlated with mossy fiber bouton spiking, granule cell EPSCs, and granule cell spiking at both low (1.5 s) and high (33 ms) temporal resolution, but spillover showed significant correlation in only a minority of cells (2/9) at high temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 present correlation analyses at multiple timescales. The lack of high temporal resolution correlation for spillover (C64) is consistent with its slow kinetics. The inference that motion is represented in granule cell input/output (C65) is well-supported by the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Activity-triggered motion maps and PCA analysis revealed that granule cell activity correlated with specific body movements. 19/20 maps showed limb signals, and peak cross-correlations with principal components reached 0.3-0.55, significantly higher than surrogate data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 use appropriate video analysis methods (activity-triggered averaging, PCA) to link neural activity to specific movements. The comparison to surrogate data (C74) provides statistical validation. The semi-automated labeling algorithm for PCs adds rigor, though details of validation are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Electrophysiological parameters showed step cycle modulation in mossy fiber boutons (3/4 cells right limb, 1/4 left limb) and granule cell EPSCs (5/9 right limb, 4/9 left limb), but rarely in granule cell spiking (0/7 right limb, 2/7 left limb). Spillover was not significantly correlated with step cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 report step cycle modulation with appropriate statistical testing. The low proportion of significantly modulated granule cell spikes (C80-C81) is notable and honestly reported. The lack of spillover modulation (C82) is consistent with its slow kinetics. Sample sizes are small but statistical methods appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Using Hidden Markov Models, step sequences could be accurately reconstructed from single-cell activity in some cells (2/4 mossy fibers, 2/5 granule cell spikes, 2/9 EPSCs, p<0.05), but not from spillover currents alone, indicating rich locomotion information is present at the synaptic input level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 present an important finding using HMM analysis. However, the success rate is modest (2/4 to 2/9 cells), and the manuscript does not provide sufficient detail about HMM training/validation procedures, potential overfitting, or why only some cells showed significant reconstruction. The inference about 'rich information' (C86) may overstate findings given the limited success rate. More rigorous cross-validation and analysis of what distinguishes successful from unsuccessful reconstructions would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The phase difference between maximal modulation for the two forelimbs clustered around 90\u00b0 (102\u00b130\u00b0 for MFTs, 104\u00b119.2\u00b0 for EPSCs, 74\u00b115\u00b0 for GC spikes), and the magnitude of modulation was highly correlated between forelimbs (R=0.9, p=3.48\u00d710\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 provide quantitative analysis of bilateral coordination with appropriate statistics. The 90\u00b0 phase difference is consistent with alternating gait patterns. The high correlation (C117) with strong statistical significance supports coordinated bilateral representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "These are the first whole-cell recordings from granule cells in awake mice. The low firing rates observed are similar to anesthetized/decerebrate preparations despite higher EPSC rates, suggesting low firing is a general property under tight control by intrinsic mechanisms and synaptic inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately contextualize the technical achievement (C87) and compare findings to prior work (C88-C89). The inference about tight control (C91) is reasonable but somewhat speculative, as direct evidence for the mechanisms is not provided in this study. The comparison across preparations strengthens the conclusion about general properties (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Granule cells switch from sparse to dense activation during locomotion, with firing organized in bursts similar to those observed with sensory stimulation. The increase may be driven by spinocerebellar pathways, and upstream circuits provide sufficient activation to overcome the high spiking threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 synthesize experimental observations with prior literature. The sparse-to-dense transition (C92) is well-supported by data. The comparison to sensory stimulation (C93-C94) appropriately cites prior work. Claims C95-C96 are more speculative inferences about mechanisms, which is appropriate for a Discussion section but lacks direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "This is the first investigation of glutamate spillover in awake behaving animals. Spillover currents make substantial contributions to synaptic charge during locomotion and are essential for driving observed firing rates. The spillover mechanism increases signal-to-noise ratio by ensuring sparse firing at rest and enhanced firing during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 present a major finding about spillover function in vivo. The experimental evidence (C99) and modeling support (C100) are strong. The mechanistic interpretation (C101-C103) is well-reasoned based on known spillover properties and the data presented. However, direct experimental manipulation of spillover (e.g., with uptake blockers) would provide stronger causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Given that granule cells are the most abundant neurons in the brain and spikes are energetically expensive, maintaining sparse firing at rest could be an important energy conservation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 present a reasonable speculation about functional significance based on established facts (C104-C105) and cited literature (C105-C106). The inference about energy conservation (C107) is appropriately presented as speculative ('could be') and is well-grounded in the metabolic considerations discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Movement during locomotion shows unexpectedly strong representation in both mossy fiber input and granule cell output. In some neurons, entire step sequences can be reconstructed from single-cell activity, indicating gait information is present at the single-cell level. The representation relies on tuned neurons shifting from sparse to dense coding during movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C114 synthesize the main findings. While the correlation data (C108-C109) is well-supported, the step sequence reconstruction (C110) succeeded in only a subset of cells, which somewhat undermines the strength of claims about 'gait information at single-cell level' (C111). The interpretation about sparse-to-dense coding (C114) is reasonable but the manuscript cites Marr's sparse coding theory without fully addressing why the observed pattern contradicts or modifies that theory. The claims would be stronger with more analysis of what distinguishes cells that do vs. don't show step reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Locomotion can be directly read out from mossy fiber synaptic input and spike output in single granule cells. The entire step sequence can be predicted from EPSCs and spikes of single cells, suggesting a robust gait code is present at the cerebellar input layer and transmitted to Purkinje cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2-C9 represent the paper's main conclusions. While supported by experimental data, the strength of these claims is limited by: (1) step sequence reconstruction succeeded in only a minority of cells (2/4 to 2/9), (2) insufficient detail about HMM validation and potential overfitting, (3) the inference about 'robust gait code' (C7) may overstate findings given variable success rates, and (4) transmission to Purkinje cells (C8) is inferred from anatomy rather than demonstrated. The claims are partially supported but would benefit from more rigorous validation and more cautious language about the proportion of cells showing these properties.",
+    "result_type": "MAJOR"
+  }
+]

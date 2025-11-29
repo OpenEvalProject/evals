@@ -1,0 +1,1728 @@
+{
+  "submission": {
+    "id": "ceff01e6-db7b-49cb-8933-70b6facf9e1c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:22:07.903119Z",
+    "updated_at": "2025-11-29T04:22:07.903119Z"
+  },
+  "content": [
+    {
+      "id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "submission_id": "ceff01e6-db7b-49cb-8933-70b6facf9e1c",
+      "content_type": "manuscript",
+      "content_text": "# Anatomy of BioJS, an open source community for the life sciences\n\n## Authors\n\n- Guy Yachdav<sup>1</sup> \u2020\n- Tatyana Goldberg<sup>2</sup>\n- Sebastian Wilzbach<sup>3</sup>\n- David Dao<sup>4</sup>\n- Iris Shih<sup>5</sup>\n- Saket Choudhary<sup>6</sup> ([ORCID: 0000-0001-5202-7633](https://orcid.org/0000-0001-5202-7633))\n- Steve Crouch<sup>7</sup>\n- Max Franz<sup>8</sup>\n- Alexander Garc\u00eda<sup>9</sup>\n- Leyla J Garc\u00eda<sup>10</sup>\n- Bj\u00f6rn A Gr\u00fcning<sup>11</sup> ([ORCID: 0000-0002-3079-6586](https://orcid.org/0000-0002-3079-6586))\n- Devasena Inupakutika<sup>12</sup>\n- Ian Sillitoe<sup>13</sup>\n- Anil S Thanki<sup>14</sup>\n- Bruno Vieira<sup>15</sup> ([ORCID: 0000-0002-4878-6431](https://orcid.org/0000-0002-4878-6431))\n- Jos\u00e9 M Villaveces<sup>16</sup>\n- Maria V Schneider<sup>17</sup>\n- Suzanna Lewis<sup>18</sup>\n- Steve Pettifer<sup>19</sup>\n- Burkhard Rost<sup>20</sup>\n- Manuel Corpas<sup>21</sup> \u2020\n\n### Affiliations\n\n1. Bioinformatik Technische Universit\u00e4t M\u00fcnchen Garching Germany ; TUM Graduate School, Center of Doctoral Studies in Informatics and its Applications Technische Universit\u00e4t M\u00fcnchen Garching Germany and Biosof LLC New York United States\n2. Bioinformatik Technische Universit\u00e4t M\u00fcnchen Garching Germany and TUM Graduate School, Center of Doctoral Studies in Informatics and its Applications Technische Universit\u00e4t M\u00fcnchen Garching Germany\n3. Bioinformatik Technische Universit\u00e4t M\u00fcnchen Garching Germany\n4. Bioinformatik Technische Universit\u00e4t M\u00fcnchen Garching Germany\n5. Bioinformatik Technische Universit\u00e4t M\u00fcnchen Garching Germany\n6. Molecular and Computational Biology University of Southern California Los Angeles United States\n7. Web and Internet Science University of Southampton Southampton United Kingdom\n8. Banting and Best Department of Medical Research, Donnelly Centre for Cellular and Biomolecular Research University of Toronto Toronto Canada\n9. Linkingdata I/O LLC Austin United States\n10. European Molecular Biology Laboratory-European Bioinformatics Institute Cambridge United Kingdom\n11. Bioinformatics Group, Department of Computer Science and Centre for Biological Systems Analysis University of Freiburg Freiburg Germany\n12. Web and Internet Science University of Southampton Southampton United Kingdom\n13. Institute of Structure and Molecular Biology University College London London United Kingdom\n14. The Genome Analysis Centre Norwich United Kingdom\n15. School of Biological and Chemical Sciences Queen Mary University of London London United Kingdom\n16. Max Planck Institute of Biochemistry Planegg Germany\n17. The Genome Analysis Centre Norwich United Kingdom\n18. Lawrence Berkeley National Laboratory Berkeley United States\n19. School of Computer Science The University of Manchester Manchester United Kingdom\n20. Bioinformatik Technische Universit\u00e4t M\u00fcnchen Garching Germany ; TUM Graduate School, Center of Doctoral Studies in Informatics and its Applications Technische Universit\u00e4t M\u00fcnchen Garching Germany and Biosof LLC New York United States\n21. The Genome Analysis Centre Norwich United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBioJS is an open source software project that develops visualization tools for different types of biological data. Here we report on the factors that influenced the growth of the BioJS user and developer community, and outline our strategy for building on this growth. The lessons we have learned on BioJS may also be relevant to other open source software projects.\n\n## Introduction\n\nBioJavaScript (BioJS; http://biojs.net/) was set up to meet a need for an open source library of reusable components to visualize and analyse biological data on the web (Figure 1; Corpas et al., 2014). These components are discrete modules that can be reused, extended and combined to meet a particular visualization need. Unlike proprietary (or closed-source) systems, which are typically distributed as \u2018executable\u2019 files under restrictive licenses, open source software projects make their source code freely available under a permissive license (Millington, 2012; Balch, et al., 2015). This allows other users to modify, extend and re-distribute the software with few restrictions and at no cost to other users.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07009/elife-07009-fig1-v1.jpg)\n\n**Figure 1.:** Tree Viewer (visualization of phylogeny data in a tree-like graph); MSA Viewer (visualization and analysis of multiple sequence alignments); Proteome (multilevel visualization of proteomes in UniProt; The UniProt Consortium, 2015); 3D structures (visualization of protein structures); Dot-bracket (visualization of RNA secondary structures); Muts-needle plot (presentation of mutation distribution across protein sequences). Protein Feature Viewer (visualization of position-based annotations in protein sequences); Plasmids (visualization of DNA plasmids); Pathway visualization (visualization of data from Pathway Commons; Cerami et al., 2011). Note that all visualization tools are native to the browser and do not require any specialized software (such as Adobe flash, Java Virtual Machine or Microsoft Silverlight) to be installed or loaded.\n\nHowever, the fact that the community is allowed and encouraged to contribute to an open source software project is no guarantee that they will contribute. It is certainly not a sufficient condition for ensuring sustainability: repositories of open source software such as GitHub (https://github.com) and SourceForge (http://sourceforge.net) are littered with abandoned projects that have failed to gain the support needed to survive beyond the originator's initial enthusiasm and/or funding.\n\nIn the case of BioJS we were acutely aware of the need to gain buy-in from the community for two reasons:To fulfil the vision of a suite of tools capable of displaying diverse biological data requires expertise and capacity that is well beyond that of any individual group of developers working in isolation.To encourage users to spend time integrating BioJS tools into their websites and applications, the project has to have, and be seen to have, a potential lifespan far beyond that of its initial funding.\n\nPredicting the success of projects is hard, and there is nothing in the nature of open source initiatives that makes this any easier. There have been attempts to quantify success in open source software (see, e.g., the metrics proposed by Crowston et al., 2003), but these have gained little traction. More useful, we feel, have been articles that provide pragmatic advice to would-be open software developers, such as \u2018Ten simple rules for the open development of scientific software\u2019 (Prlic and Procter, 2012). Rather than repeating or re-working the general-purpose recommendations of others, here we describe what we have learned from the BioJS project.\n\n## Project evolution\n\nBioJS was initially developed in 2012 through a collaboration between the European Bioinformatics Institute (EMBL-EBI) and The Genome Analysis Centre (TGAC). The project began as a set of individual graphical components deposited in a bespoke online registry. Since then it has expanded into a community of 41 code contributors spread across four continents, a Google Group forum with more than 150 members (https://groups.google.com/forum/#!forum/biojs), and 15 published papers (as of May 2015). The project's first paper, published in 2013 (Gomez, et al., 2013), has been cited 31 times to date.\n\nThe BioJS registry (http://biojs.io) offers a modern platform for fast and customizable access to components. The registry provides a centralized resource where deposited components can be discovered, tested and downloaded at the push of a button. BioJS components are organized as packages. This modular approach reduces duplication of effort and has been used by other projects, such as BioGem (Bonnal, et al., 2012). Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).\n\n## Building and growing an open source community\n\nIn this section we discuss the factors that, we believe, have played an important role in the growth of the BioJS open source community.\n\n### Clear mission and vision statements for the project\n\nA vision is an ambitious aim that clearly states the value that the project adds. BioJS's vision is that \u2018every online biological dataset in the world should be visualized with BioJS tools\u2019. This vision statement communicates the way that BioJS aims to \u2018change the world\u2019. The members of our community are energized and motivated to contribute to this worthy cause. We also have a mission statement that describes what we do in order to achieve the our vision: \u2018we develop an open-source library of JavaScript components to visualize biological data\u2019. Whereas the vision is broad, ambitious and overarching, the mission statement is more practical and actionable. Having both a mission statement and a vision helps the BioJS community define what to do and who we are.\n\n### Aligning interests with the wider community\n\nBioJS aims to create the largest, most comprehensive repository of JavaScript-based tools that visualize online biological data. Many research groups that generate and make their data available will benefit if we are successful. Groups developing new components will now find that a host of core JavaScript functionality (I/O, parsers, basic visualization) is already available as part of the BioJS library. This creates an ecosystem where new contributors can plug into and extend existing components according to their needs and preferences. Furthermore, developers can leverage the visibility of the BioJS registry to increase the exposure of their own tools, and attract community adoption and feedback. Creating incentives for developers to add their tools into BioJS aligns the interest of many groups with our own project. This in turn has many benefits: (1) group leaders are more inclined to expend scarce resources that advance both their own and BioJS's goals; (2) the BioJS community grows as more participants find that their own goals are aligned with those of BioJS; and (3) some people who join the project may become long-term participants or even become evangelists who promote the project to others. Aligning interests with the community is crucial to grow contribution for projects that lack funding: indeed, the development of 27 components was done by groups that are not directly affiliated with BioJS, but who appreciated the value of contributing to BioJS and decided to integrate the components they had developed into the registry.\n\n### Low technological barriers\n\nShared interests and goals may not be enough if contributing to a project involves significant and costly technical effort, so we have designed BioJS such that a potential contributor is faced with a relatively small set of technical requirements: s/he needs to know JavaScript, to ensure that their component conforms to the NPM package manager (https://www.npmjs.com), and to follow some simple naming conventions; contributors are not required to understand the core system. Moreover, multiple parallel contributions can be worked on at once, eliminating cross-development dependencies and affording contributors independence in creating their own components.\n\n### Detailed and complete documentation and tutorials\n\nThe educational section of the BioJS website (http://edu.biojs.net) includes a comprehensive tutorial tailored for different types and levels of developers. Newcomers will find that the \u2018getting started\u2019 section sheds light on what the project is about and how core concepts (such as packaging) help to achieve modularity. Tutorials offer a step-by-step set of instructions on how to create a new BioJS component and detail the two-step process for publishing components. Contributors can then \u2018graduate\u2019 to the more advanced and detailed sections of the tutorial to explore the nuances of BioJS packages, components, the registry and the JavaScript technologies development stack. Good documentation is crucial for an open source project such as BioJS as it helps to \u2018flatten\u2019 the learning curve and thus promote participation, contribution and ultimately adoption.\n\n### An open, fair and inclusive recognition strategy\n\nBioJS's recognition strategy aims to be as inclusive and fair as possible. In 2013 we published an \u2018Application Note\u2019 in Bioinformatics including all contributing members, and in 2014 we published a collection of 14 articles in F1000RESEARCH that provided an update on the project at the time (Corpas, et al., 2014). By allowing publication of independent BioJS components as separate \u2018Application Note\u2019-type articles, we have enabled contributors who spend most of their time on voluntary basis to claim ownership and gain recognition for the work they do.\n\n### Prompt and unfailingly positive communication\n\nWe have created several channels of communication to respond to needs of different project stakeholders. Our Gitter channel (https://gitter.im/biojs), which currently includes 47 members, is a public chat-room that is directly linked to our GitHub repository. Developers use the Gitter channel to announce new commits, bug fixes, patches and forks. Questions and answers about source code are posted to the room on a daily basis and, as a matter of principle, the core development team attempts to provide immediate responses on the Gitter channel. A timely response is crucial for keeping volunteers engaged and demonstrating the vitality of the project. The positive tone and friendly conduct on the chat room and mailing list also exemplify the inclusive ethos of the BioJS community.\n\n### Early decentralization of responsibilities\n\nSince its early days the BioJS community has adopted a culture that encourages and supports members who wish to assume direct responsibility for parts of the project. As a result, we do not have one central \u2018benevolent dictator\u2019, but rather a core group of motivated and committed community members.\n\n### Promotion of the project through outreach and education\n\nTime spent on promoting, evangelizing and networking is one of the most fruitful investments in the community. We regularly schedule tutorials, talks and meetings at events such as VizBi, ECCB, ISMB and its satellite meeting BOSC, as these are natural venues to connect with our target audience. BioJS first organized a half-day tutorial at the 2014 VizBi conference (held in Heidelberg, Germany) where 12 participants got hands-on experience in creating and adding new components to the registry. Later that year five coders travelled to Munich, Germany, to participate in the first ever BioJS hackathon, an event that gave birth to BioJS 2.0. Other hackathons, workshops and tutorials have been held in different venues across Europe and the US, aimed at increasing the visibility of the project and promoting contribution. During the winter semester of 2015 the Technical University of Munich ran an undergraduate level biological data visualization course in which 24 students were introduced to BioJS and contributed 11 components to the registry.\n\n### Being \u2018cool\u2019 by joining community development programs\n\nWhile many in science would prefer to just focus on traditional research activities, we discovered that joining high-profile programs, such as the Google Summer of Code (GSoC) program, was a highly effective way to advance the project goals. Such programs offer outstanding opportunities to interact with the best and the brightest students. The GSoC program offers student developers stipends to write code for various open source software projects, and BioJS received sponsorship for five GSoC internship positions in 2014. The impact of entering this program was immediate: we saw a sharp increase in the number of subscriptions to our community mailing list (from \u223c40 members to nearly 100) in less than a month. The impact is also long lasting as we now have five peer-reviewed articles underway, describing projects that broaden the scope of the BioJS library and make it more useful for our community. Moreover, two of the students from the GSoC program (SW, DD) have now become members of the core group and, led by SW, have themselves orchestrated a series of hackathons in which BioJS was transitioned to version 2.0. The PhyloWidget project has also benefitted from the GSoC program (Jordan and Piel, 2008).\n\nThe BioJS project has also received support from the UK Software Sustainability Institute (http://www.software.ac.uk/open-call) to assess and help improve BioJS (by, e.g., evaluating documentation, code maintainability and the ease of development).\n\n## Comparable approaches from other open-source communities\n\nNone of the points raised above are unique to BioJS as there are a number of other open source software projects in the life sciences. For instance, Cytoscape.js (http://js.cytoscape.org), an open source community developing a web-based viewer for the Cytoscape network viewer (Shannon, et al., 2003), is also mostly decentralized, being organized through some simple rules and with a community of contributors from both the public and private sectors. These contributors add new features to the library and discuss new feature ideas and bug reports. However, code contributions (i.e., pull requests) do require centralized review before merging into the main codebase.\n\nThe Galaxy project (Giardine, et al., 2005; Blankenberg, et al., 2010; Goecks, et al., 2010) is making advanced bioinformatics software accessible to biologists by directly providing an intuitive web interface to these applications. The Galaxy software enables the reproduction of computational research workflows by capturing and organizing the pipeline's layout and components into re-runnable protocols. The project also makes use of public collaboration tools to coordinate code contributions with the development community, and it maintains a dedicated portal (https://biostar.usegalaxy.org/) to communicate and support its user base. Like BioJS, the Galaxy core framework can be easily extended by plugins of all kinds, and the Galaxy core team offers the Galaxy ToolShed to distribute and share all these extensions in an App-Store like fashion. The annual Galaxy Community Conference (GCC) also attracts more than 200 participants and offers a variety of workshops and a hackathon.\n\nThe Bionode project (http://www.bionode.io) aims to provide modular, scalable and highly reusable tools for bioinformatics analysis. The community that surrounds this project is mainly composed of bioinformaticians and JavaScript (Node.js) developers who dedicate their time either as a hobby or because they need to add a feature (or fix a bug) for their own projects. Bionode is very open to any kind of contribution and does not enforce too many rules or governance to the community.\n\n## Conclusions\n\nLife science open source communities have their own special peculiarities and motivations. We have presented a compilation of experiences that, in our view, have helped BioJS to become a robust international project within a relatively short period of time. Apart from fostering the right skills and technical experience to develop BioJS, we have established formal means to reward contributors, to keep the community members motivated, and to increase our impact. If used with care and fairness, recognition can be a powerful lever with which to build communities. We believe that some of the lessons we have learned and the practices we have established will help others to build similarly robust open source projects and communities.\n",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f638e008-268a-4129-9a8b-6e6ed1debb85",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C1",
+      "claim": "BioJS is an open source software project that develops visualization tools for different types of biological data.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS is an open source software project that develops visualization tools for different types of biological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "b52e1775-8b44-43e7-a001-c25a38275768",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C2",
+      "claim": "BioJavaScript (BioJS) was set up to meet a need for an open source library of reusable components to visualize and analyse biological data on the web.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJavaScript (BioJS; http://biojs.net/) was set up to meet a need for an open source library of reusable components to visualize and analyse biological data on the web (Figure 1; Corpas et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the introduction and supported by a citation to Corpas et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "28a8f6b4-90f9-4cb1-8fa6-ae6c08c28209",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C3",
+      "claim": "BioJS components are discrete modules that can be reused, extended and combined to meet a particular visualization need.",
+      "claim_type": "EXPLICIT",
+      "source": "These components are discrete modules that can be reused, extended and combined to meet a particular visualization need.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the nature of BioJS components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "08601105-ef5d-409d-a8b4-4d47f8abdcd6",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C4",
+      "claim": "Open source software projects make their source code freely available under a permissive license.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike proprietary (or closed-source) systems, which are typically distributed as 'executable' files under restrictive licenses, open source software projects make their source code freely available under a permissive license (Millington, 2012; Balch, et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Millington, 2012 and Balch et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "60e86c95-e6f0-4aa6-ab24-efe2c7cff1b4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C5",
+      "claim": "Open source software allows other users to modify, extend and re-distribute the software with few restrictions and at no cost to other users.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows other users to modify, extend and re-distribute the software with few restrictions and at no cost to other users.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the characteristics of open source software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "1b6c9f77-147f-405d-8f9f-679dc44bee16",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C6",
+      "claim": "Repositories of open source software such as GitHub and SourceForge are littered with abandoned projects that have failed to gain the support needed to survive beyond the originator's initial enthusiasm and/or funding.",
+      "claim_type": "EXPLICIT",
+      "source": "repositories of open source software such as GitHub (https://github.com) and SourceForge (http://sourceforge.net) are littered with abandoned projects that have failed to gain the support needed to survive beyond the originator's initial enthusiasm and/or funding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation about the state of open source repositories.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2344b546-f4ca-4311-91cd-38e29b670ebd",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C7",
+      "claim": "Fulfilling the vision of a suite of tools capable of displaying diverse biological data requires expertise and capacity that is well beyond that of any individual group of developers working in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "To fulfil the vision of a suite of tools capable of displaying diverse biological data requires expertise and capacity that is well beyond that of any individual group of developers working in isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the requirements for achieving BioJS's vision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "8497e89e-c045-4ce8-939e-8867973cf439",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C8",
+      "claim": "To encourage users to spend time integrating BioJS tools into their websites and applications, the project has to have, and be seen to have, a potential lifespan far beyond that of its initial funding.",
+      "claim_type": "EXPLICIT",
+      "source": "To encourage users to spend time integrating BioJS tools into their websites and applications, the project has to have, and be seen to have, a potential lifespan far beyond that of its initial funding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the requirements for user adoption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2bc6efff-9906-4f4e-9fe0-98b6b0f2ac95",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C9",
+      "claim": "BioJS was initially developed in 2012 through a collaboration between the European Bioinformatics Institute (EMBL-EBI) and The Genome Analysis Centre (TGAC).",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS was initially developed in 2012 through a collaboration between the European Bioinformatics Institute (EMBL-EBI) and The Genome Analysis Centre (TGAC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the origin of BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "10e89c9b-fbd3-4831-b4d9-4e7287b963d3",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C10",
+      "claim": "BioJS has expanded into a community of 41 code contributors spread across four continents.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then it has expanded into a community of 41 code contributors spread across four continents, a Google Group forum with more than 150 members (https://groups.google.com/forum/#!forum/biojs), and 15 published papers (as of May 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the size and distribution of the BioJS community as of May 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2c228201-b727-4b6b-a5d3-2944bac063fb",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C11",
+      "claim": "BioJS has a Google Group forum with more than 150 members as of May 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then it has expanded into a community of 41 code contributors spread across four continents, a Google Group forum with more than 150 members (https://groups.google.com/forum/#!forum/biojs), and 15 published papers (as of May 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the size of the BioJS Google Group forum as of May 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "efac4017-c861-4505-8c61-72c4222f5dc1",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C12",
+      "claim": "BioJS has 15 published papers as of May 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then it has expanded into a community of 41 code contributors spread across four continents, a Google Group forum with more than 150 members (https://groups.google.com/forum/#!forum/biojs), and 15 published papers (as of May 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of published papers related to BioJS as of May 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "3c5cc9dd-e87d-41ce-88d1-b318515c2d09",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C13",
+      "claim": "The project's first paper, published in 2013, has been cited 31 times to date.",
+      "claim_type": "EXPLICIT",
+      "source": "The project's first paper, published in 2013 (Gomez, et al., 2013), has been cited 31 times to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the citation count of the first BioJS paper.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "e79d9df2-c234-4073-a0e3-f0f6bf64ecd4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C14",
+      "claim": "The BioJS registry offers a modern platform for fast and customizable access to components.",
+      "claim_type": "EXPLICIT",
+      "source": "The BioJS registry (http://biojs.io) offers a modern platform for fast and customizable access to components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the capabilities of the BioJS registry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "0234b984-db2a-4b2f-a6fe-c1bd593b6b11",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C15",
+      "claim": "The BioJS registry provides a centralized resource where deposited components can be discovered, tested and downloaded at the push of a button.",
+      "claim_type": "EXPLICIT",
+      "source": "The registry provides a centralized resource where deposited components can be discovered, tested and downloaded at the push of a button.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the functionality of the BioJS registry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "a7ed83d9-e538-43a5-b933-faa2aced8673",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C16",
+      "claim": "BioJS components are organized as packages.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS components are organized as packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the organization of BioJS components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "ba6ef1b2-b0f9-44a4-8031-e1e1c6cde59d",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C17",
+      "claim": "The modular approach of BioJS reduces duplication of effort.",
+      "claim_type": "EXPLICIT",
+      "source": "This modular approach reduces duplication of effort and has been used by other projects, such as BioGem (Bonnal, et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the benefits of BioJS's modular approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "50d94a6a-0699-46c6-86e4-e69cf48606a2",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C18",
+      "claim": "The modular approach has been used by other projects, such as BioGem.",
+      "claim_type": "EXPLICIT",
+      "source": "This modular approach reduces duplication of effort and has been used by other projects, such as BioGem (Bonnal, et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bonnal et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "69ed172e-d032-48b7-bda6-d8e6768a6ce7",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C19",
+      "claim": "PredictProtein has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yachdav et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2a63792f-e9aa-4ab3-9255-12c2b8593da7",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C20",
+      "claim": "CATH has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sillitoe et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "0cf6cfdb-ada1-4ebd-ad47-c7c85509c2a4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C21",
+      "claim": "Genome3D has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lewis et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "4af2da4f-f00a-4c14-82e6-043598b2e35e",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C22",
+      "claim": "Reactome has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Croft et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "9513890d-a727-481b-8849-c45f053402bf",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C23",
+      "claim": "Expression Atlas has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Petryszak et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "6aa38cda-9df1-41a5-8d1a-e0a303be58c4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C24",
+      "claim": "Ensembl has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cunningham et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "40b4e271-5d6d-4a02-9bf4-4c3216bd2d21",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C25",
+      "claim": "InterMine has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Smith et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "f8dc74d0-317e-45bf-8ff3-32931e021237",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C26",
+      "claim": "PolyMarker has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ramirez-Gonzalez et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "e13c8f15-581b-477b-a946-85927203017b",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C27",
+      "claim": "The TGAC Browser has shown commitment to BioJS by utilizing and developing components.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recognized projects and institutions have already shown commitment to BioJS by utilizing and developing components: examples of this include PredictProtein (Yachdav et al., 2014), CATH (Sillitoe et al., 2013), Genome3D (Lewis et al., 2013), Reactome (Croft et al., 2014), Expression Atlas (Petryszak et al., 2014), Ensembl (Cunningham et al., 2015), InterMine (Smith et al., 2012), PolyMarker (Ramirez-Gonzalez et al., 2015) and the TGAC Browser (http://browser.tgac.ac.uk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the TGAC Browser's use of BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "f46bbc6f-52c9-4ba1-aa38-20deb8796ab8",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C28",
+      "claim": "BioJS's vision is that 'every online biological dataset in the world should be visualized with BioJS tools'.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS's vision is that 'every online biological dataset in the world should be visualized with BioJS tools'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of BioJS's vision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "4a86dcaa-afba-4cb6-8556-e8bb883a86d0",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C29",
+      "claim": "BioJS's mission statement is 'we develop an open-source library of JavaScript components to visualize biological data'.",
+      "claim_type": "EXPLICIT",
+      "source": "We also have a mission statement that describes what we do in order to achieve the our vision: 'we develop an open-source library of JavaScript components to visualize biological data'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of BioJS's mission.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "75f61016-2eff-4eda-9223-f4d65aee17b4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C30",
+      "claim": "BioJS aims to create the largest, most comprehensive repository of JavaScript-based tools that visualize online biological data.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS aims to create the largest, most comprehensive repository of JavaScript-based tools that visualize online biological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of BioJS's aim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "e55c1c7b-2a8f-46c0-936f-eba181386080",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C31",
+      "claim": "The development of 27 components was done by groups that are not directly affiliated with BioJS.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed, the development of 27 components was done by groups that are not directly affiliated with BioJS, but who appreciated the value of contributing to BioJS and decided to integrate the components they had developed into the registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of components developed by non-affiliated groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "fd3447d2-4d13-4c5f-8e16-ae221020584b",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C32",
+      "claim": "Contributors to BioJS need to know JavaScript.",
+      "claim_type": "EXPLICIT",
+      "source": "s/he needs to know JavaScript, to ensure that their component conforms to the NPM package manager (https://www.npmjs.com), and to follow some simple naming conventions; contributors are not required to understand the core system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the technical requirements for contributing to BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "007631b8-6d61-42cd-a431-bdeeb77b8de0",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C33",
+      "claim": "Contributors to BioJS need to ensure that their component conforms to the NPM package manager.",
+      "claim_type": "EXPLICIT",
+      "source": "s/he needs to know JavaScript, to ensure that their component conforms to the NPM package manager (https://www.npmjs.com), and to follow some simple naming conventions; contributors are not required to understand the core system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the technical requirements for contributing to BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "1fe1ebd9-c18f-4516-976f-5d04deed0b50",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C34",
+      "claim": "Contributors to BioJS need to follow some simple naming conventions.",
+      "claim_type": "EXPLICIT",
+      "source": "s/he needs to know JavaScript, to ensure that their component conforms to the NPM package manager (https://www.npmjs.com), and to follow some simple naming conventions; contributors are not required to understand the core system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the technical requirements for contributing to BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "ff6bbdf6-cda5-47ad-a15c-3f3f645a9e31",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C35",
+      "claim": "Contributors to BioJS are not required to understand the core system.",
+      "claim_type": "EXPLICIT",
+      "source": "s/he needs to know JavaScript, to ensure that their component conforms to the NPM package manager (https://www.npmjs.com), and to follow some simple naming conventions; contributors are not required to understand the core system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about what is not required of BioJS contributors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "75d63df2-be7c-469e-96d5-0adf83d9351d",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C36",
+      "claim": "The educational section of the BioJS website includes a comprehensive tutorial tailored for different types and levels of developers.",
+      "claim_type": "EXPLICIT",
+      "source": "The educational section of the BioJS website (http://edu.biojs.net) includes a comprehensive tutorial tailored for different types and levels of developers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the content of the BioJS educational website.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "37abb45d-a16b-4772-bf0e-e1d76f4d3860",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C37",
+      "claim": "In 2013 BioJS published an 'Application Note' in Bioinformatics including all contributing members.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2013 we published an 'Application Note' in Bioinformatics including all contributing members, and in 2014 we published a collection of 14 articles in F1000RESEARCH that provided an update on the project at the time (Corpas, et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a publication in 2013.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "7a50a206-0027-42a0-bb47-9bbf0b3780e6",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C38",
+      "claim": "In 2014 BioJS published a collection of 14 articles in F1000RESEARCH that provided an update on the project at the time.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2013 we published an 'Application Note' in Bioinformatics including all contributing members, and in 2014 we published a collection of 14 articles in F1000RESEARCH that provided an update on the project at the time (Corpas, et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a publication in 2014, supported by a citation to Corpas et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2b18693c-2f5e-4c64-abaa-9191990ee101",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C39",
+      "claim": "BioJS's Gitter channel currently includes 47 members.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Gitter channel (https://gitter.im/biojs), which currently includes 47 members, is a public chat-room that is directly linked to our GitHub repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of members in the Gitter channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "49ecff07-5d50-47c3-9033-8a2d39f1d65a",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C40",
+      "claim": "BioJS's Gitter channel is a public chat-room that is directly linked to the GitHub repository.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Gitter channel (https://gitter.im/biojs), which currently includes 47 members, is a public chat-room that is directly linked to our GitHub repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the nature of the Gitter channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "240be736-ec8f-449c-9d44-6e920ca6eede",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C41",
+      "claim": "Developers use the Gitter channel to announce new commits, bug fixes, patches and forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Developers use the Gitter channel to announce new commits, bug fixes, patches and forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about how developers use the Gitter channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "700b97e1-ca9a-48c8-8dd4-d40a9345d034",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C42",
+      "claim": "Questions and answers about source code are posted to the Gitter room on a daily basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Questions and answers about source code are posted to the room on a daily basis and, as a matter of principle, the core development team attempts to provide immediate responses on the Gitter channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the frequency of activity on the Gitter channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "04e21581-6eea-4d53-89d4-445db7113464",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C43",
+      "claim": "The core development team attempts to provide immediate responses on the Gitter channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Questions and answers about source code are posted to the room on a daily basis and, as a matter of principle, the core development team attempts to provide immediate responses on the Gitter channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the core development team's communication practices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "bd9f5f60-11a8-454c-bf4b-8946fb0d7948",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C44",
+      "claim": "BioJS does not have one central 'benevolent dictator', but rather a core group of motivated and committed community members.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we do not have one central 'benevolent dictator', but rather a core group of motivated and committed community members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the leadership structure of BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "78253644-4ffb-4e5b-98e3-cc8047616550",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C45",
+      "claim": "BioJS first organized a half-day tutorial at the 2014 VizBi conference held in Heidelberg, Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS first organized a half-day tutorial at the 2014 VizBi conference (held in Heidelberg, Germany) where 12 participants got hands-on experience in creating and adding new components to the registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about an event organized by BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "90ba5be9-704e-45ff-b967-ce428bf087a3",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C46",
+      "claim": "12 participants got hands-on experience in creating and adding new components to the registry at the 2014 VizBi conference tutorial.",
+      "claim_type": "EXPLICIT",
+      "source": "BioJS first organized a half-day tutorial at the 2014 VizBi conference (held in Heidelberg, Germany) where 12 participants got hands-on experience in creating and adding new components to the registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the number of participants at the tutorial.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "7932e795-400d-4d00-b131-3b6ece9a86ab",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C47",
+      "claim": "Five coders travelled to Munich, Germany, to participate in the first ever BioJS hackathon.",
+      "claim_type": "EXPLICIT",
+      "source": "Later that year five coders travelled to Munich, Germany, to participate in the first ever BioJS hackathon, an event that gave birth to BioJS 2.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the first BioJS hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "80bcc97f-a98e-42f6-aa16-0a1b9e63a228",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C48",
+      "claim": "The first BioJS hackathon gave birth to BioJS 2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Later that year five coders travelled to Munich, Germany, to participate in the first ever BioJS hackathon, an event that gave birth to BioJS 2.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the outcome of the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "286b091f-9b7e-40a9-a0d0-13e83763a1fb",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C49",
+      "claim": "During the winter semester of 2015 the Technical University of Munich ran an undergraduate level biological data visualization course in which 24 students were introduced to BioJS.",
+      "claim_type": "EXPLICIT",
+      "source": "During the winter semester of 2015 the Technical University of Munich ran an undergraduate level biological data visualization course in which 24 students were introduced to BioJS and contributed 11 components to the registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about a course at the Technical University of Munich.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "06d734a5-cbf8-4dfd-9584-db8cadb45b30",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C50",
+      "claim": "24 students contributed 11 components to the registry during the winter semester of 2015 at the Technical University of Munich.",
+      "claim_type": "EXPLICIT",
+      "source": "During the winter semester of 2015 the Technical University of Munich ran an undergraduate level biological data visualization course in which 24 students were introduced to BioJS and contributed 11 components to the registry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about student contributions to BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "045210ad-f8d2-4af5-971c-c6ceb27b817c",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C51",
+      "claim": "BioJS received sponsorship for five GSoC internship positions in 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "The GSoC program offers student developers stipends to write code for various open source software projects, and BioJS received sponsorship for five GSoC internship positions in 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about BioJS's participation in the Google Summer of Code program.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "9481bc2c-ad27-402f-a21c-6d4fd1dd228b",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C52",
+      "claim": "BioJS saw a sharp increase in the number of subscriptions to the community mailing list (from \u223c40 members to nearly 100) in less than a month after entering the GSoC program.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of entering this program was immediate: we saw a sharp increase in the number of subscriptions to our community mailing list (from \u223c40 members to nearly 100) in less than a month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the impact of joining the GSoC program on mailing list subscriptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "dde93cf4-4be5-43e0-84a9-73becfce6766",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C53",
+      "claim": "BioJS now has five peer-reviewed articles underway, describing projects that broaden the scope of the BioJS library and make it more useful for the community.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact is also long lasting as we now have five peer-reviewed articles underway, describing projects that broaden the scope of the BioJS library and make it more useful for our community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ongoing publications related to BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "b80b5237-70b0-483d-840d-8ea062091536",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C54",
+      "claim": "Two of the students from the GSoC program (SW, DD) have become members of the core group.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, two of the students from the GSoC program (SW, DD) have now become members of the core group and, led by SW, have themselves orchestrated a series of hackathons in which BioJS was transitioned to version 2.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the long-term impact of the GSoC program on BioJS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "fd3f1c78-7215-4476-b44e-b673b03426a8",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C55",
+      "claim": "Led by SW, GSoC students orchestrated a series of hackathons in which BioJS was transitioned to version 2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, two of the students from the GSoC program (SW, DD) have now become members of the core group and, led by SW, have themselves orchestrated a series of hackathons in which BioJS was transitioned to version 2.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the role of GSoC students in transitioning BioJS to version 2.0.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "96dbdb45-841e-49da-868b-675f836634f3",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C56",
+      "claim": "The PhyloWidget project has benefitted from the GSoC program.",
+      "claim_type": "EXPLICIT",
+      "source": "The PhyloWidget project has also benefitted from the GSoC program (Jordan and Piel, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jordan and Piel, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "fad046b5-4d32-4b10-b4af-6cbfde177c96",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C57",
+      "claim": "The BioJS project has received support from the UK Software Sustainability Institute to assess and help improve BioJS.",
+      "claim_type": "EXPLICIT",
+      "source": "The BioJS project has also received support from the UK Software Sustainability Institute (http://www.software.ac.uk/open-call) to assess and help improve BioJS (by, e.g., evaluating documentation, code maintainability and the ease of development).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about support received from the UK Software Sustainability Institute.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "4b3ed638-0220-4fdd-8636-d8996c5f5b79",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C58",
+      "claim": "Cytoscape.js is an open source community developing a web-based viewer for the Cytoscape network viewer.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Cytoscape.js (http://js.cytoscape.org), an open source community developing a web-based viewer for the Cytoscape network viewer (Shannon, et al., 2003), is also mostly decentralized, being organized through some simple rules and with a community of contributors from both the public and private sectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shannon et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "f3c346a5-4324-491a-b99f-002582947c58",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C59",
+      "claim": "Cytoscape.js is mostly decentralized, being organized through some simple rules and with a community of contributors from both the public and private sectors.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Cytoscape.js (http://js.cytoscape.org), an open source community developing a web-based viewer for the Cytoscape network viewer (Shannon, et al., 2003), is also mostly decentralized, being organized through some simple rules and with a community of contributors from both the public and private sectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the organizational structure of Cytoscape.js.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "e1559c53-7945-44e8-a921-ae944dc47c4e",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C60",
+      "claim": "Code contributions (i.e., pull requests) to Cytoscape.js require centralized review before merging into the main codebase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, code contributions (i.e., pull requests) do require centralized review before merging into the main codebase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the code review process for Cytoscape.js.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "c347e4aa-f6c8-4afa-b741-4645e5a32534",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C61",
+      "claim": "The Galaxy project is making advanced bioinformatics software accessible to biologists by directly providing an intuitive web interface to these applications.",
+      "claim_type": "EXPLICIT",
+      "source": "The Galaxy project (Giardine, et al., 2005; Blankenberg, et al., 2010; Goecks, et al., 2010) is making advanced bioinformatics software accessible to biologists by directly providing an intuitive web interface to these applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Giardine et al., 2005; Blankenberg et al., 2010; and Goecks et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "94bebdb6-f58b-44f5-a8a1-6c842b89f99f",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C62",
+      "claim": "The Galaxy software enables the reproduction of computational research workflows by capturing and organizing the pipeline's layout and components into re-runnable protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The Galaxy software enables the reproduction of computational research workflows by capturing and organizing the pipeline's layout and components into re-runnable protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the capabilities of Galaxy software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "176df9d9-d4b8-426f-a9e0-29eee6626876",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C63",
+      "claim": "The Galaxy project makes use of public collaboration tools to coordinate code contributions with the development community.",
+      "claim_type": "EXPLICIT",
+      "source": "The project also makes use of public collaboration tools to coordinate code contributions with the development community, and it maintains a dedicated portal (https://biostar.usegalaxy.org/) to communicate and support its user base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about Galaxy's use of collaboration tools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "ad04b460-28c2-4e4b-be11-1ee95e5331d4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C64",
+      "claim": "The Galaxy project maintains a dedicated portal to communicate and support its user base.",
+      "claim_type": "EXPLICIT",
+      "source": "The project also makes use of public collaboration tools to coordinate code contributions with the development community, and it maintains a dedicated portal (https://biostar.usegalaxy.org/) to communicate and support its user base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about Galaxy's user support portal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "5fc910e1-ffaa-4487-9612-85f7f07df2dc",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C65",
+      "claim": "The Galaxy core framework can be easily extended by plugins of all kinds.",
+      "claim_type": "EXPLICIT",
+      "source": "Like BioJS, the Galaxy core framework can be easily extended by plugins of all kinds, and the Galaxy core team offers the Galaxy ToolShed to distribute and share all these extensions in an App-Store like fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the extensibility of the Galaxy framework.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "0bdf514b-2a41-44da-94e0-facda1614546",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C66",
+      "claim": "The Galaxy core team offers the Galaxy ToolShed to distribute and share extensions in an App-Store like fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Like BioJS, the Galaxy core framework can be easily extended by plugins of all kinds, and the Galaxy core team offers the Galaxy ToolShed to distribute and share all these extensions in an App-Store like fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the Galaxy ToolShed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "64b8432f-199e-46b7-9e72-03673aaa03f3",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C67",
+      "claim": "The annual Galaxy Community Conference (GCC) attracts more than 200 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The annual Galaxy Community Conference (GCC) also attracts more than 200 participants and offers a variety of workshops and a hackathon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the size of the Galaxy Community Conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "a492cbf8-4bd9-4c54-9f48-952e821593db",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C68",
+      "claim": "The annual Galaxy Community Conference (GCC) offers a variety of workshops and a hackathon.",
+      "claim_type": "EXPLICIT",
+      "source": "The annual Galaxy Community Conference (GCC) also attracts more than 200 participants and offers a variety of workshops and a hackathon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the activities at the Galaxy Community Conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "d26cc309-f9c1-4044-982c-155aeaee1de2",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C69",
+      "claim": "The Bionode project aims to provide modular, scalable and highly reusable tools for bioinformatics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bionode project (http://www.bionode.io) aims to provide modular, scalable and highly reusable tools for bioinformatics analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the aims of the Bionode project.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "83dc5011-6e10-412a-931a-ae7fd8121add",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C70",
+      "claim": "The community that surrounds the Bionode project is mainly composed of bioinformaticians and JavaScript (Node.js) developers.",
+      "claim_type": "EXPLICIT",
+      "source": "The community that surrounds this project is mainly composed of bioinformaticians and JavaScript (Node.js) developers who dedicate their time either as a hobby or because they need to add a feature (or fix a bug) for their own projects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the composition of the Bionode community.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "a08b7423-4d7e-4ff7-869e-58bfdfc71365",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C71",
+      "claim": "Bionode is very open to any kind of contribution and does not enforce too many rules or governance to the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Bionode is very open to any kind of contribution and does not enforce too many rules or governance to the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about Bionode's approach to community governance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "bec7219c-44a8-4f4e-bd35-9aa5e748cbea",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C72",
+      "claim": "BioJS visualization tools are native to the browser and do not require any specialized software to be installed or loaded.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that all visualization tools are native to the browser and do not require any specialized software (such as Adobe flash, Java Virtual Machine or Microsoft Silverlight) to be installed or loaded.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is stated in the caption of Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "312d2723-2599-4ce6-bbb2-04556f8f2ed0",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C73",
+      "claim": "BioJS includes a Tree Viewer for visualization of phylogeny data in a tree-like graph.",
+      "claim_type": "EXPLICIT",
+      "source": "Tree Viewer (visualization of phylogeny data in a tree-like graph)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "fa705715-011e-495f-86e2-703adf6a0ed4",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C74",
+      "claim": "BioJS includes an MSA Viewer for visualization and analysis of multiple sequence alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "MSA Viewer (visualization and analysis of multiple sequence alignments)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "3161cdc6-3d45-4ad2-b7e4-5ffba75949bd",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C75",
+      "claim": "BioJS includes a Proteome viewer for multilevel visualization of proteomes in UniProt.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteome (multilevel visualization of proteomes in UniProt; The UniProt Consortium, 2015)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption, with a citation to The UniProt Consortium, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "dfb9c7be-f622-4655-b2ea-72c670244dbe",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C76",
+      "claim": "BioJS includes a 3D structures viewer for visualization of protein structures.",
+      "claim_type": "EXPLICIT",
+      "source": "3D structures (visualization of protein structures)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "83c0880c-b618-4e42-affe-abd45b328a50",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C77",
+      "claim": "BioJS includes a Dot-bracket viewer for visualization of RNA secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Dot-bracket (visualization of RNA secondary structures)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "b8fd8272-16ff-4368-8aba-ac30c3f4fdc6",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C78",
+      "claim": "BioJS includes a Muts-needle plot for presentation of mutation distribution across protein sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Muts-needle plot (presentation of mutation distribution across protein sequences)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "13616706-5794-4709-9394-fbb9ada7587e",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C79",
+      "claim": "BioJS includes a Protein Feature Viewer for visualization of position-based annotations in protein sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein Feature Viewer (visualization of position-based annotations in protein sequences)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "e2f85d22-20e8-404c-bc47-c96c79e1ac37",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C80",
+      "claim": "BioJS includes a Plasmids viewer for visualization of DNA plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmids (visualization of DNA plasmids)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2d27b234-2ff6-45f5-a0b6-2531f5919c55",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "claim_id": "C81",
+      "claim": "BioJS includes a Pathway visualization tool for visualization of data from Pathway Commons.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway visualization (visualization of data from Pathway Commons; Cerami et al., 2011)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and described in its caption, with a citation to Cerami et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BioJS is an open source library of reusable, modular JavaScript components for visualizing diverse biological data types on the web, including phylogenetic trees, sequence alignments, proteomes, 3D protein structures, RNA structures, mutations, protein features, plasmids, and pathways. All visualization tools are browser-native and require no specialized software plugins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish BioJS's purpose and modular architecture, while C72-C81 provide specific examples of visualization components with visual evidence from Figure 1. The claims are directly stated and supported by both textual descriptions and visual demonstrations of the various component types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "fa2e52bb-62c5-464a-9a68-74a3805e4e1c",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BioJS evolved from a 2012 collaboration between EMBL-EBI and TGAC into a community of 41 code contributors across four continents, with over 150 Google Group members, 15 published papers, and 31 citations of its first paper (as of May 2015).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 provide quantitative metrics of BioJS's growth and impact. These are directly stated factual claims with specific numbers and dates. While the metrics are time-stamped to May 2015, they adequately document the project's evolution during the reported period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "c48942fe-35f2-4cee-8175-0169aa4af456",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The BioJS registry provides a centralized, modern platform where components organized as packages can be discovered, tested, and downloaded, with a modular approach that reduces duplication of effort similar to other projects like BioGem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 describe the registry's functionality with direct statements. C17-C18 make comparative claims about benefits and similarity to other projects, supported by citation to BioGem. The modular architecture claim is reasonable given the package-based organization described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "7a668919-c792-4172-8520-3e3e9796192e",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple recognized bioinformatics projects and institutions have adopted BioJS, including PredictProtein, CATH, Genome3D, Reactome, Expression Atlas, Ensembl, InterMine, PolyMarker, and the TGAC Browser.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 list specific projects that have utilized BioJS components. Most are supported by citations to relevant publications (C19-C26), while C27 references a URL. This demonstrates real-world adoption, though the extent of integration and active use is not quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "50b04c64-1683-4af2-9855-7afb4b3651c3",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BioJS has a clear vision ('every online biological dataset in the world should be visualized with BioJS tools') and mission ('develop an open-source library of JavaScript components to visualize biological data') aimed at creating the largest, most comprehensive repository of JavaScript-based biological data visualization tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are direct quotations and statements of the project's strategic goals. These are clearly articulated aspirational statements that guide the project, though whether BioJS will achieve the vision of being the 'largest' repository is not empirically demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "991e2933-bfed-41c9-8c73-5e8dd6c29b60",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "27 BioJS components were developed by groups not directly affiliated with the project, demonstrating external adoption and contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 provides a specific quantitative measure of external contribution. This is a directly stated metric that demonstrates community engagement beyond the core team, supporting the claim of successful community building.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "34f6b1ed-386a-4787-8a63-19012578e0ed",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Contributing to BioJS requires knowledge of JavaScript, conformance to NPM package manager standards, and following naming conventions, but does not require understanding the core system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 describe the technical requirements for contribution. These are directly stated and represent a reasonable set of requirements for a JavaScript-based modular system. The low barrier to entry supports the community-building strategy discussed in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "09011fe6-a758-4723-846c-a5eda31e6976",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The BioJS educational website provides comprehensive tutorials tailored for different developer types and skill levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C36 states that comprehensive tutorials exist but provides no evidence of their actual content, quality, or effectiveness. The claim cannot be verified from the manuscript alone, and no metrics of tutorial usage or user feedback are provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "896a7fe2-1933-474b-8386-6b1ff4ce9e90",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "BioJS published an Application Note in Bioinformatics in 2013 including all contributors, and a collection of 14 articles in F1000Research in 2014 providing a project update.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe specific publications with dates, venues, and citation support (C38 cites Corpas et al., 2014). These represent verifiable publication records that demonstrate the project's academic output and recognition strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "44c56bbc-8791-4dcd-9505-1ed2fbeec5d6",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BioJS maintains a Gitter channel with 47 members that serves as a public chat room linked to GitHub, where developers announce updates and the core team provides daily, immediate responses to questions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 describe the communication infrastructure and practices. The specific membership number (C39) and description of activities are directly stated. However, the claim of 'immediate' responses (C43) is aspirational ('attempts to provide') rather than empirically validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "6c54e163-051f-464b-8a9c-c1656297ea87",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BioJS has a decentralized leadership structure with a core group of motivated community members rather than a single 'benevolent dictator'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 describes the governance model. This is a direct statement about organizational structure that aligns with the community-building strategy described throughout the manuscript. The claim is consistent with other evidence of distributed contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "26d282ee-3bba-43a6-baa4-c4a8863f09be",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BioJS organized outreach events including a half-day tutorial at the 2014 VizBi conference with 12 participants and a hackathon in Munich with 5 coders that led to BioJS 2.0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 provide specific details about outreach events with participant numbers and outcomes. These are directly stated factual claims that demonstrate community engagement activities. The causal link between the hackathon and BioJS 2.0 (C48) is stated but not elaborated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "4ba620cc-1774-459f-8657-678b15e8c2a6",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "During winter 2015, 24 students in a Technical University of Munich undergraduate course were introduced to BioJS and contributed 11 components to the registry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 provide specific metrics about educational integration and student contributions. These are directly stated and demonstrate successful integration into formal education, though the quality or utility of the 11 contributed components is not assessed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "d0b86338-fea4-43b0-890d-9b263f24044a",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "BioJS's participation in Google Summer of Code 2014 with 5 internship positions led to immediate growth (mailing list membership from ~40 to nearly 100 in less than a month), long-term impact (5 peer-reviewed articles in progress), and leadership development (2 students became core members and led the transition to BioJS 2.0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 document GSoC participation and its impacts with specific metrics. The immediate growth (C52) is quantified and time-bounded. The long-term impacts (C53-C55) demonstrate sustained engagement, though the causal attribution to GSoC alone cannot be definitively established from the evidence provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "6e7046c2-bdbc-4ba6-83ac-ecb0add3365b",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The PhyloWidget project has benefitted from the Google Summer of Code program.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by citation to Jordan and Piel, 2008. This provides comparative context for BioJS's GSoC participation, though the specific nature of PhyloWidget's benefits is not detailed in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "a089d137-f16b-4746-80e7-6e7dc0ba77cc",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "BioJS received support from the UK Software Sustainability Institute to assess and improve the project through evaluation of documentation, code maintainability, and ease of development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 describes institutional support received. This is directly stated with a URL reference. However, the outcomes or findings of this assessment are not reported, limiting the ability to evaluate its impact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "2d63f0e9-7cbb-40d5-b23c-2702da6c5857",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Cytoscape.js is a comparable open source project with a mostly decentralized structure organized through simple rules and contributors from public and private sectors, though code contributions require centralized review before merging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 describe Cytoscape.js as a comparative example. C58 is supported by citation to Shannon et al., 2003. The organizational description (C59-C60) provides useful context for understanding different governance models in open source bioinformatics projects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "1dd8f684-c845-4f7b-aef1-73a96155884b",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Galaxy project provides an intuitive web interface for bioinformatics software, enables workflow reproduction, uses public collaboration tools, maintains a user support portal, offers an extensible framework with a ToolShed for plugin distribution, and hosts an annual conference attracting over 200 participants with workshops and hackathons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C68 describe Galaxy as another comparative example. C61 is supported by multiple citations. The other claims describe Galaxy's features and community activities, providing context for understanding successful open source bioinformatics projects. These are generally well-established facts about Galaxy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "05975c14-ecd7-403b-bf23-39dbab81140e",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Bionode project aims to provide modular, scalable bioinformatics tools with a community of bioinformaticians and JavaScript developers, maintaining an open contribution model without extensive rules or governance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 describe Bionode as a third comparative example. These are directly stated descriptions that provide additional context for understanding different approaches to open source community building in bioinformatics, particularly the trade-offs between structure and openness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "8b050ff7-d28a-4dbf-a81b-5e5b65571037",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Open source software makes source code freely available under permissive licenses, allowing users to modify, extend, and redistribute with few restrictions at no cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 define open source software characteristics. C4 is supported by citations to Millington, 2012 and Balch et al., 2015. These are standard definitions of open source software that provide necessary background context for the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "06993b0b-8cd9-416f-9604-d81cc889ab40",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Open source repositories like GitHub and SourceForge contain many abandoned projects that failed to gain sufficient community support to survive beyond initial funding or enthusiasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 makes a general observation about open source project failure but provides no quantitative evidence, citations, or systematic analysis to support the characterization of repositories as 'littered' with abandoned projects. While this may be a reasonable observation, it lacks empirical support in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    },
+    {
+      "id": "05b3e087-5f9b-4d01-abb7-95fa245d09ed",
+      "content_id": "612aaec6-c098-46b0-b05c-393847c4ee59",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Achieving BioJS's vision requires expertise beyond any single development group, and encouraging user adoption requires demonstrating project longevity beyond initial funding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 present logical arguments about requirements for project success. These are reasonable inferences about the challenges facing open source bioinformatics projects, though they are presented as assertions rather than empirically tested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:07.903119Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f638e008-268a-4129-9a8b-6e6ed1debb85",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "b52e1775-8b44-43e7-a001-c25a38275768",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "28a8f6b4-90f9-4cb1-8fa6-ae6c08c28209",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "bec7219c-44a8-4f4e-bd35-9aa5e748cbea",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "312d2723-2599-4ce6-bbb2-04556f8f2ed0",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "fa705715-011e-495f-86e2-703adf6a0ed4",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "3161cdc6-3d45-4ad2-b7e4-5ffba75949bd",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "dfb9c7be-f622-4655-b2ea-72c670244dbe",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "83c0880c-b618-4e42-affe-abd45b328a50",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "b8fd8272-16ff-4368-8aba-ac30c3f4fdc6",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "13616706-5794-4709-9394-fbb9ada7587e",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "e2f85d22-20e8-404c-bc47-c96c79e1ac37",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "2d27b234-2ff6-45f5-a0b6-2531f5919c55",
+      "result_id": "06b8a022-b6be-4acb-9ea4-1cfe5d74e1bb"
+    },
+    {
+      "claim_id": "2bc6efff-9906-4f4e-9fe0-98b6b0f2ac95",
+      "result_id": "fa2e52bb-62c5-464a-9a68-74a3805e4e1c"
+    },
+    {
+      "claim_id": "10e89c9b-fbd3-4831-b4d9-4e7287b963d3",
+      "result_id": "fa2e52bb-62c5-464a-9a68-74a3805e4e1c"
+    },
+    {
+      "claim_id": "2c228201-b727-4b6b-a5d3-2944bac063fb",
+      "result_id": "fa2e52bb-62c5-464a-9a68-74a3805e4e1c"
+    },
+    {
+      "claim_id": "efac4017-c861-4505-8c61-72c4222f5dc1",
+      "result_id": "fa2e52bb-62c5-464a-9a68-74a3805e4e1c"
+    },
+    {
+      "claim_id": "3c5cc9dd-e87d-41ce-88d1-b318515c2d09",
+      "result_id": "fa2e52bb-62c5-464a-9a68-74a3805e4e1c"
+    },
+    {
+      "claim_id": "e79d9df2-c234-4073-a0e3-f0f6bf64ecd4",
+      "result_id": "c48942fe-35f2-4cee-8175-0169aa4af456"
+    },
+    {
+      "claim_id": "0234b984-db2a-4b2f-a6fe-c1bd593b6b11",
+      "result_id": "c48942fe-35f2-4cee-8175-0169aa4af456"
+    },
+    {
+      "claim_id": "a7ed83d9-e538-43a5-b933-faa2aced8673",
+      "result_id": "c48942fe-35f2-4cee-8175-0169aa4af456"
+    },
+    {
+      "claim_id": "ba6ef1b2-b0f9-44a4-8031-e1e1c6cde59d",
+      "result_id": "c48942fe-35f2-4cee-8175-0169aa4af456"
+    },
+    {
+      "claim_id": "50d94a6a-0699-46c6-86e4-e69cf48606a2",
+      "result_id": "c48942fe-35f2-4cee-8175-0169aa4af456"
+    },
+    {
+      "claim_id": "69ed172e-d032-48b7-bda6-d8e6768a6ce7",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "2a63792f-e9aa-4ab3-9255-12c2b8593da7",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "0cf6cfdb-ada1-4ebd-ad47-c7c85509c2a4",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "4af2da4f-f00a-4c14-82e6-043598b2e35e",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "9513890d-a727-481b-8849-c45f053402bf",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "6aa38cda-9df1-41a5-8d1a-e0a303be58c4",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "40b4e271-5d6d-4a02-9bf4-4c3216bd2d21",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "f8dc74d0-317e-45bf-8ff3-32931e021237",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "e13c8f15-581b-477b-a946-85927203017b",
+      "result_id": "7a668919-c792-4172-8520-3e3e9796192e"
+    },
+    {
+      "claim_id": "f46bbc6f-52c9-4ba1-aa38-20deb8796ab8",
+      "result_id": "50b04c64-1683-4af2-9855-7afb4b3651c3"
+    },
+    {
+      "claim_id": "4a86dcaa-afba-4cb6-8556-e8bb883a86d0",
+      "result_id": "50b04c64-1683-4af2-9855-7afb4b3651c3"
+    },
+    {
+      "claim_id": "75f61016-2eff-4eda-9223-f4d65aee17b4",
+      "result_id": "50b04c64-1683-4af2-9855-7afb4b3651c3"
+    },
+    {
+      "claim_id": "e55c1c7b-2a8f-46c0-936f-eba181386080",
+      "result_id": "991e2933-bfed-41c9-8c73-5e8dd6c29b60"
+    },
+    {
+      "claim_id": "fd3447d2-4d13-4c5f-8e16-ae221020584b",
+      "result_id": "34f6b1ed-386a-4787-8a63-19012578e0ed"
+    },
+    {
+      "claim_id": "007631b8-6d61-42cd-a431-bdeeb77b8de0",
+      "result_id": "34f6b1ed-386a-4787-8a63-19012578e0ed"
+    },
+    {
+      "claim_id": "1fe1ebd9-c18f-4516-976f-5d04deed0b50",
+      "result_id": "34f6b1ed-386a-4787-8a63-19012578e0ed"
+    },
+    {
+      "claim_id": "ff6bbdf6-cda5-47ad-a15c-3f3f645a9e31",
+      "result_id": "34f6b1ed-386a-4787-8a63-19012578e0ed"
+    },
+    {
+      "claim_id": "75d63df2-be7c-469e-96d5-0adf83d9351d",
+      "result_id": "09011fe6-a758-4723-846c-a5eda31e6976"
+    },
+    {
+      "claim_id": "37abb45d-a16b-4772-bf0e-e1d76f4d3860",
+      "result_id": "896a7fe2-1933-474b-8386-6b1ff4ce9e90"
+    },
+    {
+      "claim_id": "7a50a206-0027-42a0-bb47-9bbf0b3780e6",
+      "result_id": "896a7fe2-1933-474b-8386-6b1ff4ce9e90"
+    },
+    {
+      "claim_id": "2b18693c-2f5e-4c64-abaa-9191990ee101",
+      "result_id": "44c56bbc-8791-4dcd-9505-1ed2fbeec5d6"
+    },
+    {
+      "claim_id": "49ecff07-5d50-47c3-9033-8a2d39f1d65a",
+      "result_id": "44c56bbc-8791-4dcd-9505-1ed2fbeec5d6"
+    },
+    {
+      "claim_id": "240be736-ec8f-449c-9d44-6e920ca6eede",
+      "result_id": "44c56bbc-8791-4dcd-9505-1ed2fbeec5d6"
+    },
+    {
+      "claim_id": "700b97e1-ca9a-48c8-8dd4-d40a9345d034",
+      "result_id": "44c56bbc-8791-4dcd-9505-1ed2fbeec5d6"
+    },
+    {
+      "claim_id": "04e21581-6eea-4d53-89d4-445db7113464",
+      "result_id": "44c56bbc-8791-4dcd-9505-1ed2fbeec5d6"
+    },
+    {
+      "claim_id": "bd9f5f60-11a8-454c-bf4b-8946fb0d7948",
+      "result_id": "6c54e163-051f-464b-8a9c-c1656297ea87"
+    },
+    {
+      "claim_id": "78253644-4ffb-4e5b-98e3-cc8047616550",
+      "result_id": "26d282ee-3bba-43a6-baa4-c4a8863f09be"
+    },
+    {
+      "claim_id": "90ba5be9-704e-45ff-b967-ce428bf087a3",
+      "result_id": "26d282ee-3bba-43a6-baa4-c4a8863f09be"
+    },
+    {
+      "claim_id": "7932e795-400d-4d00-b131-3b6ece9a86ab",
+      "result_id": "26d282ee-3bba-43a6-baa4-c4a8863f09be"
+    },
+    {
+      "claim_id": "80bcc97f-a98e-42f6-aa16-0a1b9e63a228",
+      "result_id": "26d282ee-3bba-43a6-baa4-c4a8863f09be"
+    },
+    {
+      "claim_id": "286b091f-9b7e-40a9-a0d0-13e83763a1fb",
+      "result_id": "4ba620cc-1774-459f-8657-678b15e8c2a6"
+    },
+    {
+      "claim_id": "06d734a5-cbf8-4dfd-9584-db8cadb45b30",
+      "result_id": "4ba620cc-1774-459f-8657-678b15e8c2a6"
+    },
+    {
+      "claim_id": "045210ad-f8d2-4af5-971c-c6ceb27b817c",
+      "result_id": "d0b86338-fea4-43b0-890d-9b263f24044a"
+    },
+    {
+      "claim_id": "9481bc2c-ad27-402f-a21c-6d4fd1dd228b",
+      "result_id": "d0b86338-fea4-43b0-890d-9b263f24044a"
+    },
+    {
+      "claim_id": "dde93cf4-4be5-43e0-84a9-73becfce6766",
+      "result_id": "d0b86338-fea4-43b0-890d-9b263f24044a"
+    },
+    {
+      "claim_id": "b80b5237-70b0-483d-840d-8ea062091536",
+      "result_id": "d0b86338-fea4-43b0-890d-9b263f24044a"
+    },
+    {
+      "claim_id": "fd3f1c78-7215-4476-b44e-b673b03426a8",
+      "result_id": "d0b86338-fea4-43b0-890d-9b263f24044a"
+    },
+    {
+      "claim_id": "96dbdb45-841e-49da-868b-675f836634f3",
+      "result_id": "6e7046c2-bdbc-4ba6-83ac-ecb0add3365b"
+    },
+    {
+      "claim_id": "fad046b5-4d32-4b10-b4af-6cbfde177c96",
+      "result_id": "a089d137-f16b-4746-80e7-6e7dc0ba77cc"
+    },
+    {
+      "claim_id": "4b3ed638-0220-4fdd-8636-d8996c5f5b79",
+      "result_id": "2d63f0e9-7cbb-40d5-b23c-2702da6c5857"
+    },
+    {
+      "claim_id": "f3c346a5-4324-491a-b99f-002582947c58",
+      "result_id": "2d63f0e9-7cbb-40d5-b23c-2702da6c5857"
+    },
+    {
+      "claim_id": "e1559c53-7945-44e8-a921-ae944dc47c4e",
+      "result_id": "2d63f0e9-7cbb-40d5-b23c-2702da6c5857"
+    },
+    {
+      "claim_id": "c347e4aa-f6c8-4afa-b741-4645e5a32534",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "94bebdb6-f58b-44f5-a8a1-6c842b89f99f",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "176df9d9-d4b8-426f-a9e0-29eee6626876",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "ad04b460-28c2-4e4b-be11-1ee95e5331d4",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "5fc910e1-ffaa-4487-9612-85f7f07df2dc",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "0bdf514b-2a41-44da-94e0-facda1614546",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "64b8432f-199e-46b7-9e72-03673aaa03f3",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "a492cbf8-4bd9-4c54-9f48-952e821593db",
+      "result_id": "1dd8f684-c845-4f7b-aef1-73a96155884b"
+    },
+    {
+      "claim_id": "d26cc309-f9c1-4044-982c-155aeaee1de2",
+      "result_id": "05975c14-ecd7-403b-bf23-39dbab81140e"
+    },
+    {
+      "claim_id": "83dc5011-6e10-412a-931a-ae7fd8121add",
+      "result_id": "05975c14-ecd7-403b-bf23-39dbab81140e"
+    },
+    {
+      "claim_id": "a08b7423-4d7e-4ff7-869e-58bfdfc71365",
+      "result_id": "05975c14-ecd7-403b-bf23-39dbab81140e"
+    },
+    {
+      "claim_id": "08601105-ef5d-409d-a8b4-4d47f8abdcd6",
+      "result_id": "8b050ff7-d28a-4dbf-a81b-5e5b65571037"
+    },
+    {
+      "claim_id": "60e86c95-e6f0-4aa6-ab24-efe2c7cff1b4",
+      "result_id": "8b050ff7-d28a-4dbf-a81b-5e5b65571037"
+    },
+    {
+      "claim_id": "1b6c9f77-147f-405d-8f9f-679dc44bee16",
+      "result_id": "06993b0b-8cd9-416f-9604-d81cc889ab40"
+    },
+    {
+      "claim_id": "2344b546-f4ca-4311-91cd-38e29b670ebd",
+      "result_id": "05b3e087-5f9b-4d01-abb7-95fa245d09ed"
+    },
+    {
+      "claim_id": "8497e89e-c045-4ce8-939e-8867973cf439",
+      "result_id": "05b3e087-5f9b-4d01-abb7-95fa245d09ed"
+    }
+  ],
+  "comparisons": []
+}

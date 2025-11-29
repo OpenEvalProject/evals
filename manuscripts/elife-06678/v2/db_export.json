@@ -1,0 +1,1150 @@
+{
+  "submission": {
+    "id": "b6ac66a4-419b-4bcb-aa54-4d814fd23ac6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:14:33.009293Z",
+    "updated_at": "2025-11-29T04:14:33.009293Z"
+  },
+  "content": [
+    {
+      "id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "submission_id": "b6ac66a4-419b-4bcb-aa54-4d814fd23ac6",
+      "content_type": "manuscript",
+      "content_text": "# Tuning the speed-accuracy trade-off to maximize reward rate in multisensory decision-making\n\n## Authors\n\n- Jan Drugowitsch<sup>1</sup> \u2020\n- Gregory C DeAngelis<sup>1</sup>\n- Dora E Angelaki<sup>3</sup>\n- Alexandre Pouget<sup>1</sup>\n\n### Affiliations\n\n1. Department of Brain and Cognitive Sciences University of Rochester Rochester United States\n2. Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale \u00c9cole Normale 12 Sup\u00e9rieure Paris France\n3. Department of Neuroscience Baylor College of Medicine Houston United States\n4. D\u00e9partement des Neurosciences Fondamentales Universit\u00e9 de Gen\u00e8ve Geneva Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor decisions made under time pressure, effective decision making based on uncertain or ambiguous evidence requires efficient accumulation of evidence over time, as well as appropriately balancing speed and accuracy, known as the speed/accuracy trade-off. For simple unimodal stimuli, previous studies have shown that human subjects set their speed/accuracy trade-off to maximize reward rate. We extend this analysis to situations in which information is provided by multiple sensory modalities. Analyzing previously collected data (Drugowitsch et al., 2014), we show that human subjects adjust their speed/accuracy trade-off to produce near-optimal reward rates. This trade-off can change rapidly across trials according to the sensory modalities involved, suggesting that it is represented by neural population codes rather than implemented by slow neuronal mechanisms such as gradual changes in synaptic weights. Furthermore, we show that deviations from the optimal speed/accuracy trade-off can be explained by assuming an incomplete gradient-based learning of these trade-offs.\n\n## Introduction\n\nIn the uncertain and ambiguous world we inhabit, effective decision making not only requires efficient processing of sensory information, but also evaluating when enough information has been accumulated to commit to a decision. One can make fast, but uninformed and thus inaccurate, decisions or one can elect to make slower, but well-informed, choices. Choosing this so-called speed-accuracy trade-off (SAT) becomes even more complex if several sensory modalities provide decision-related information. For example, the strategy for crossing a busy street will be very different in bright daylight, when one can rely on both eyes and ears to detect oncoming vehicles, as compared to complete darkness, in which case the ears will prove to be the more reliable source of information.\n\nThe SAT has been extensively studied for perceptual decisions based on information provided by a single sensory modality. For the most commonly studied visual modality, it has been shown that animals accumulate evidence near-optimally over time (Kiani and Shadlen, 2009). In this context, the efficiency of the chosen SAT is assessed in comparison to diffusion models, a family of models that trigger decisions as soon as a drifting and diffusing particle reaches one of two bounds (Ratcliff, 1978). In these models, which describe the SAT surprisingly well despite their simplicity (Ratcliff, 1978; Palmer et al., 2005; Ratcliff and McKoon, 2008), the drift represents the available sensory information, and the diffusion causes variability in decision times and choices. The level of the bound controls the SAT, with a higher bound leading to slower, more accurate choices. Instructed changes to the SAT have been shown to be well captured by changes to only the bound in a diffusion model (Reddi and Carpenter, 2000; Reddi et al., 2003; Palmer et al., 2005). Without being explicitly instructed to make either fast or accurate decisions, well-trained human subjects are known to adjust their SAT to maximize their reward rate (Simen et al., 2009; Balci et al., 2011), or a combination of reward rate and choice accuracy (Bogacz et al., 2010). These SAT adjustments are also well captured by tuning the corresponding diffusion model bounds. Thus, we can define the SAT directly in terms of these bounds: a constant SAT refers to behavior predicted by diffusion models with constant bounds, and a SAT that changes across trials requires a diffusion model with bounds that vary on the same time-scale.\n\nHere, we extend the analysis of how human decision-makers adjust their SAT to situations in which they receive information from multiple sensory modalities. We have previously shown that, even in the case of multiple modalities and time-varying evidence reliability, humans are able to accumulate evidence across time and modalities in a statistically near-optimal fashion (Drugowitsch et al., 2014). This analysis was based on a variant of diffusion models that retains optimal evidence accumulation even for multiple sources of evidence whose reliability varies differentially over time. As we focused on evidence accumulation in that study, we were agnostic as to how the SAT varied across stimulus conditions; thus, we left the model bounds, which controlled the SAT, as free parameters that were adjusted to best explain the subjects' behavior.\n\nIn this follow-up study, we use the previously devised model to analyze whether and how effectively human subjects adjust their SAT if they have evidence from multiple modalities at their disposal. Specifically, we find that subjects adjust their SAT on a trial by trial basis, depending on whether the stimuli are unisensory or multisensory. Moreover, the changes in SAT result in reward rates that are close to those achievable by the best-tuned model, a finding that is robust to changes in assumptions about how the reward rate is computed. Finally, we demonstrate that small deviations from the optimal SAT seem to stem from an incomplete reward rate maximization process. Overall, our findings hint at decision-making strategies that are more flexible than previously assumed, with SATs that are efficiently changed on a trial-by-trial basis.\n\n## Results and discussion\n\nOur analysis is based on previously reported behavioral data from human subjects performing a reaction-time version of a heading discrimination task based on optic flow (visual condition), inertial motion (vestibular condition), or a combination of both cues (combined condition) (Drugowitsch et al., 2014). Reliability of the visual cue was varied randomly across trials by changing the motion coherence of the optic flow. Subjects experienced forward translation with a small leftward or rightward deviation, and were instructed to report as quickly and as accurately as possible whether they moved leftward or rightward relative to straight ahead.\n\nFirst, we ask whether subjects can adjust their SAT from trial to trial. Having related changes in the SAT to changes in diffusion model bounds, this is akin to asking if their behavior could arise from a diffusion model with a bound that changes on a trial-by-trial basis. Our diffusion model necessitates the use of a scaled bound, which is the constant actual bound per modality divided by the diffusion standard deviation that depends on optic flow coherence. The use of such a scaled bound prohibits us from fitting actual bound levels, but rather scaled versions thereof. For the same reason, we cannot unambiguously predict the behavior that would emerge from a model with actual bounds matched across modalities (i.e., a constant SAT). Therefore, we instead rely on a qualitative argument about how such matched bounds would be reflected in the relation between decision speed and accuracy across modalities.\n\nAs Figure 1A illustrates for subject B2, increasing the coherence of the optic flow caused subjects to make faster, more accurate choices. This pattern was similar if only the visual modality (solid blue lines, Figure 1A) or both modalities were present (solid red lines, Figure 1A). This result is qualitatively compatible with the idea that subjects used a single SAT within conditions in which the same modality (visual/vestibular) or modality combination (combined) provided information about heading. Within the framework of diffusion models with fixed actual bounds on the diffusing particle, such a single SAT predicts that, once the amount of evidence per unit time (in our case controlled by the coherence) increases, choices ought to be on average either faster, more accurate, or both in combination, but never slower or less accurate. However, our data violate this prediction, thus showing that the SAT changes across conditions. Consider, for example, the choice accuracy and reaction times of subject B2 in both the visual-only (top blue circle, Figure 1A) and combined condition (top red square, Figure 1A) trials at 70% motion coherence. Although the combined condition provides more evidence per unit time due to the additional presence of the vestibular modality, responses in the combined condition are less accurate than in the visual-only condition, violating the idea of a single SAT (that is, a fixed diffusion model bound) across conditions. The same pattern emerged across all subjects, whose choices in the combined condition were on average significantly less accurate than in the visual condition (for 70% coherence; one-tailed Wilcoxon signed-rank W = 54, p < 0.002). As these stimulus conditions were interleaved across trials, our results clearly indicate that subjects were able to change their SAT on a trial-by-trial basis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06678/elife-06678-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fraction of correct choices is plotted as a function of mean reaction time for subject B2. Blue/cyan: visual condition; green/lime: vestibular condition; red/orange: combined condition. Solid: data; dashed: model with parametric bound tuned to maximize reward rate. Motion coherence varies across data points in the red/orange and blue/cyan curves. The tuned model generally predicts slower and more accurate choices in the visual condition, leading to the longest-possible reaction time (2 s stimulus time + non-decision time) for all but the highest stimulus coherence. (B) Reward rate for trials of the combined condition is plotted against reward rate for trials of the visual condition (open blue symbols), the vestibular condition (open green symbols) and both unimodal conditions in combination (gray filled symbols). Reward rates are computed as number of correct decisions per unit time for the respective trial subgroups, and are shown for each subject separately, with bootstrapped 95% confidence intervals.\n\nA less common variant of diffusion models bounds the posterior belief rather than the diffusing particle. In this case, changing the amount of evidence per unit time only affects the response time but not its accuracy, which remains unchanged. When increasing coherence, we observed a change of both response time and choice accuracy within each condition (Figure 1A), supporting a bounded diffusing particle rather than a bounded posterior belief. In rare cases, the two model variants predict the same behavior (Drugowitsch et al., 2012), but this is not the case in our context.\n\nNext, we explore whether these adjustments in the SAT serve to maximize subjects' reward rate. Even though subjects did not receive an explicit reward for correct trials, we assumed that correct decisions evoke an internal reward of magnitude one. Therefore, we computed reward rate as the fraction of correct decisions across all trials, divided by the average time between the onset of consecutive trials. We proceed in two steps: first, we ask whether subjects have a higher reward rate across trials of the multisensory condition compared to both unimodal conditions. This is an important question because we have found previously that subjects accumulate evidence optimally across modalities (Drugowitsch et al., 2014), which implies that, with proper setting of the SAT, they should be able to obtain higher reward rates in the multisensory condition compared to the unimodal conditions. As shown in Figure 1B, reward rate is indeed greater, for all subjects, when both sensory modalities are presented than for either modality alone (both unimodal vs combined: Wilcoxon signed-ranks W = 0, p < 0.002). This confirms that subjects combined evidence across modalities to improve their choices.\n\nWe now turn to the question of whether subjects tune their SATs to maximize the reward rate. For this purpose, we focus on the reward rate across all trials rather than for specific stimulus conditions, as subjects might, for example, trade off decision accuracy in unimodal conditions with decision speed in the combined condition. To determine how close subjects were to maximizing their reward rate, we needed to compute the best achievable reward rate. To do this, we tuned the bounds of our modified diffusion model to maximize its reward rate, while keeping all other model parameters, including the non-decision times and choice biases, fixed to those resulting from fits to the behavior of individual subjects. As a starting point, we allowed bounds to vary freely for each stimulus modality and each motion coherence, to provide the greatest degrees of freedom for the maximization. As described further below, we also performed the same analysis with more restrictive assumptions. We call the reward rate resulting from this procedure the optimal reward rate. This reward rate was subject-dependent, and was used as a baseline against which the empirical reward rates were compared.\n\nFigure 2A shows the outcome of this comparison. As can be seen, all but one subject featured a reward rate that was greater than 90% of the optimum, with two subjects over 95%. As a comparison, the best performance when completely ignoring the stimulus and randomly choosing one option at trial onset (i.e., all actual bounds set to zero) causes a significant 25\u201330% drop in reward rate (subjects vs random: Wilcoxon signed-rank W = 55, p < 0.002). Thus, subjects featured near-optimal reward rates that were significantly better than those resulting from rapid, uninformed choices.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06678/elife-06678-fig2-v2.jpg)\n\n**Figure 2.:** The optimal reward rate is the best reward rate achievable by a model with tuned decision bounds. (A) Each subject's reward rate is shown as a fraction of the optimal reward rate (blue bars). In addition, the expected reward rate is shown for immediate random decisions (red bars). (B) Box-plots show relative reward rates for different assumptions regarding how reward rate is computed. \u2018no cost\u2019 corresponds to the case shown in panel A. \u2018cost 0.1\u2019 and \u2018cost 0.2\u2019 assume a cost per second for accumulating evidence over time. \u2018parametric bounds\u2019 uses the original bounds from Drugowitsch et al. (2014), rather than a separate bound parameter for each modality and coherence. The last two bars (\u2018unbiased\u2019) remove the subjects' decision biases before computing the optimal reward rate. All box-plots show the maximum/minimum relative reward rates (whiskers), the 25% and 75% percentiles (central bar), and the median (central line) value across subjects. Data are shown for the subjects' reward rates (blue) and for immediate random choices (red).\n\nOur analysis of the subjects' reward rate relative to the optimum is fairly robust to assumptions we make about how this reward rate and its optimum are defined. Thus far, we have assumed implicit, constant rewards for correct decisions and the absence of any losses for the passage of time or incorrect choices. However, accumulating evidence is effortful, and this effort might offset the eventual gains resulting from correct choices. In fact, previous work suggests that human decision makers incur such a cost, possibly related to mental effort, in the range of 0.1\u20130.2 units of reward per second for accumulating evidence (Drugowitsch et al., 2012). Importantly, this cost modulates both the subjects' and the optimal reward rate, causing the median reward rate across subjects to actually rise slightly to 95.4% and 95.1% (costs of 0.1 and 0.2) of the optimum value (Figure 2B, second and third columns), compared to the cost-free median of 93.7%.\n\nThe optimal reward rates so far were obtained from a model in which we allowed independent bounds for each stimulus modality and each motion coherence, which implies that subjects can rapidly and accurately estimate coherence. Using instead the more realistic assumption (Drugowitsch et al., 2014) that bounds only vary across modalities while coherence modulates diffusion variance but not bound height, we reduce the number of parameters and thus degrees of freedom for reward rate maximization. As a result, subjects' reward rates relative to the optimum rise slightly (median 94.5%), where the optimal model is now restricted to use the same bound across all coherences (Figure 2B, fourth column). Furthermore, we have assumed the model to feature the same choice biases as the subjects. These biases reduce the probability of performing correct choices, and thus the reward rate, such that removing them from our model boosts the model's optimal reward rate. As a consequence, removing these biases causes a consistent drop in subjects' relative reward rate (Figure 2B, last two columns). Even then, reward rates are still around 90% of the optimum (median 87.8% and 88.7% for free and parametric bounds, respectively). If instead of featuring the observed behavior, subjects were to ignore the stimulus and randomly choose one option at trial onset, they would incur a significant drop in reward rate for all of the different assumptions about how we define this optimum (e.g., with/without accumulation cost, \u2026) as outlined above (subject vs random, blue vs red in Figure 2B: Wilcoxon signed-rank W = 55, p < 0.002, except cost 0.2: W = 54, p < 0.004).\n\nDespite exhibiting near-optimal reward rates, all subjects feature small deviations from optimality. These deviations may result from incomplete learning of the optimal SAT. We only provided feedback about the correctness of choices in early stages of the experiment, until performance stabilized, and subjects did not receive feedback during the main experiment. Nevertheless, subjects' speed/accuracy trade-off remained rather stable after removing feedback, which includes all trials we analyzed. Thus, incomplete learning in the initial training period should be reflected equally in all of these trials. To test the incomplete-learning hypothesis, we assumed that subjects adjusted their strategy in small steps by using gradient-based information about how the reward rate changed in the local neighborhood of the currently chosen bounds. For our argument, it does not matter if the gradient-based strategy was realized through stochastic trial-and-error or more refined approaches involving analytic estimates of the gradient, as long as it involved an unbiased estimate of the gradient. What is important, however, is that such an approach would lead to faster learning along directions of steeper gradients (Figure 3A). As a result, incomplete learning should lead to near-optimal bounds along directions having a steep gradient, but large deviations from the optimal bound settings along directions having shallow gradients.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06678/elife-06678-fig3-v2.jpg)\n\n**Figure 3.:** (A) The effects of incomplete gradient ascent on the relation between projected bound distance and local curvature (that is, second derivative of the reward rate at estimated bound) are illustrated for a fictional maximization problem with only two bounds. The grey trajectory shows a sequence of gradient ascent steps on the reward rate function, whose shape is illustrated by two iso-reward rate contours (black) around its maximum (cross). Stopping this gradient ascent procedure (large grey filled circle) before it reaches the optimum causes this stopping point to be close to the optimal bound in directions of large curvature (red), and farther away from the optimum in directions of shallow curvature (blue). (B) Curvature at the estimated bound location is plotted against the distance between the estimated and optimal bound (see text for details). This plot includes 7 (3 coherence condition) or 13 (6 coherence condition) data points per subject, one for each modality/coherence combination. Data for the visual, vestibular and combined conditions are shown in shades of blue/cyan, green, and red/yellow, respectively, and motion coherence is indicated by color saturation. (C) The reward rate loss (i.e., optimal model reward rate minus subject's reward rate) as estimated from the model (abscissa) is plotted against the loss predicted by the quadratic approximation used in the analysis in (A)\u2013(B), for each subject (ordinate). If the reward rate has a quadratic dependence on the bounds, then all the data points would lie along the diagonal. Small deviations from the diagonal indicate that the reward rate is indeed close-to-quadratic in these bounds.\n\nTo measure the steepness of the gradient for different near-optimal bounds, we used the reward rate's curvature (that is, its second derivative) with respect to each of these bounds. If these bounds were set by incomplete gradient ascent, we would expect bounds associated with a strong curvature to be near-optimal (red dimension in Figure 3A; large curvature, close to optimal bound in inset) and bounds in directions of shallow curvature to be far away from their optimum (blue dimension in Figure 3A; small curvature, distant from optimal bound in inset). In contrast, strongly mis-tuned bounds associated with a large curvature (points far away from either axis in Figure 3B) would violate this hypothesis. If we plot reward rate curvature against the distance between estimated and optimal bounds, the data clearly show the predicted relationship (Figure 3B). Specifically, reward rate curvature is generally moderate to strong in the vestibular-only and combined conditions, and most of these bounds are found to be near-optimal. In contrast, curvature is rather low for the visual condition, and many of the associated bounds are far from their optimal settings. This is exactly the pattern one would expect to observe if deviations from optimality result from a prematurely terminated gradient-based learning strategy. This analysis rests on the assumption that the manner in which reward rate varies with changes in the bounds is well approximated by a quadratic function. If this were the case, then the estimated loss in reward rate featured by the subjects when compared to the tuned model should also be well approximated by this quadratic function. These two losses are indeed close to each other for most subjects (Figure 3C), thus validating the assumption.\n\nPrevious studies have suggested that deviations from optimal bound settings may arise if subjects are uncertain about the inter-trial interval (Bogacz et al., 2010; Zacksenhouse et al., 2010). With such uncertainty, subjects should set their bound above that deemed to be optimal when the inter-trial interval is perfectly known. A similar above-optimal bound would arise if subjects are either uncertain about the optimal bound, or have difficulty in maintaining their bounds at the same level across trials. This is because the reward rate drops off more quickly below than above the optimal bounds (Figure 4A). Thus, if the subject's bounds fluctuate across trials, or the subjects are uncertain about the optimal bounds, they should aim at setting their bounds above rather than below this optimum. Indeed, this would minimize the probability that the bound would fluctuate well below the optimal value, which would result in a very sharp drop in reward rate. However, our data indicate that, in contrast to previous findings from single-modality tasks (Simen et al., 2009; Bogacz et al., 2010), subjects consistently set their bounds below the optimum level (Figure 4B). In other words, they make faster and less accurate decisions than predicted by either of the above considerations. Figure 1A (data vs tuned) illustrates an extreme case for subject B2, in which the best reward rate is achieved in some conditions by waiting until stimulus offset. While not always as extreme as shown for this subject, a distinct discrepancy between observed and reward rate-maximizing behavior exists for all subjects, and is a reflection of the fact that near-optimal reward rates can be achieved with remarkably different joint tunings of reaction times and choice accuracy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06678/elife-06678-fig4-v2.jpg)\n\n**Figure 4.:** (A) The curves show how the reward rate changes with a simultaneous, linear change of all bounds. From left to right, bound levels increase from zero to the (reward-rate maximizing) optimal bound levels (unity values on the abscissa), and continue to bound levels well above this optimum. Different colors correspond to different assumptions about the cost for accumulating evidence over time. The optimal bound levels (unity values on the abscissa) that maximize the reward rate depend on these costs, and thus differ between the three curves. The empirical bound level estimates for individual subjects do not lie on the straight line that is defined by the simultaneous, linear change of all optimal bounds. To evaluate where these empirical bounds lie with respect to the optimal bounds, we found the closest point (along contours of equal reward rate) on this line for the empirical bounds. These points are shown for subject A for different costs by the filled circles. (B) The closest points are illustrated for all subjects, for different accumulation costs. As can be seen, for any assumption for this cost, the subjects' bounds are well below the optimal settings.\n\nWhat are the potential neural correlates of the highly flexible decision bounds and associated SATs that are reflected in the subjects' behavior? One possibility is the observed bound on neural activity (Roitman and Shadlen, 2002; Schall, 2003; Churchland et al., 2008; Kiani et al., 2008) in the lateral intraparietal cortex in monkeys, an area that seems to reflect the accumulation of noisy and ambiguous evidence (Yang and Shadlen, 2007). It still needs to be clarified if similar mechanisms are involved in our experimental setup, in which we observed modality-dependent trial-by-trial changes in the SAT. In contrast to suggestions from neuroimaging studies (Green et al., 2012), such trial-by-trial changes are unlikely to emerge from slow changes in connectivity. A more likely alternative, that is compatible with neurophysiological findings, is a neuronal \u2018urgency signal\u2019 that modulates this trade-off by how quickly it drives decision-related neuronal activity to a common decision threshold (Hanks et al., 2014). Although only observed for blocked designs, a similar modality-dependent urgency signal could account for the trial-by-trial SAT changes of our experiment, and qualitatively mimic a change in diffusion model bounds. Currently, our model can only predict changes in scaled decision boundaries, which conflate actual boundary levels with the diffusion standard deviation. It does not predict how the actual bound level changes, which is the quantity that relates to the magnitude of such an urgency signal. In general, quantitatively relating diffusion model parameters to neural activity strongly depends on how specific neural populations encode accumulated evidence, which has only been investigated for cases that are substantially simpler (e.g., Kira et al., 2015) than the ones we consider here.\n\nFurther qualitative evidence for neural mechanisms that support trial-by-trial changes in the SAT comes from monkeys performing a visual search task with different, visually cued, response deadlines (Heitz and Schall, 2012). Even though the different deadline conditions were blocked, analysis of FEF neural activity revealed a change in baseline activity that emerged already in the first trial of each consecutive block, hinting at flexible mechanisms that pre-emptively govern changes in SAT. In general, such changes in SAT are likely to emerge through orchestrated changes in multiple neural mechanisms, such as changes in baseline, visual gain, duration of perceptual processing, and the other effects observed by Heitz and Schall (2012), or through combined changes to perceptual processing and motor preparation, as suggested by Salinas et al. (2014).\n\nThe observed SATs support the hypothesis that gradient-based information is used by subjects during the initial training trials to try to learn the optimal bound settings. We do not make strong assumptions about exactly how this training information is used, and even a very simple strategy of occasional bound adjustments in the light of positive or negative feedback is, in fact, gradient-based (albeit not very efficient) (e.g., Myung and Busemeyer, 1989). The clearest example of a strategy that is not gradient-based is one that does not at all adjust the SAT, or one that does so randomly, without regard to the error feedback that was given to subjects during the initial training period. Such strategies are not guaranteed to lead to the consistent curvature/bound distance relationship observed in Figure 3B. For a single speed/accuracy trade-off, adjusting this trade-off has already been thoroughly investigated, albeit with conflicting results (Myung and Busemeyer, 1989; Simen et al., 2006; Simen et al., 2009; Balci et al., 2011). Greater insight into the dynamics of learning this trade-off will require further experiments that keep the task stable throughout acquisition of the strategy, and reduce the number of conditions and potential confounds to explain the observed changes in behavior.\n\nIn summary, we have shown that subjects performing a multisensory reaction-time task tune their SAT to achieve reward rates close to those achievable by the best-tuned model. This near-optimal performance is invariant under various assumptions about how the reward rate is computed, and is, even under the most conservative assumptions, in the range of 90% of the optimal reward rate. Deviations from optimality are unlikely to have emerged from a strategy of setting bounds to make them robust to perturbations. Instead, our data support the idea that decision bounds have been tuned by a gradient-based strategy. Such tuning is also in line with the observation of near-optimal reward rates, which are unlikely to result from a random bound-setting strategy. Overall, our study provides novel insights into the flexibility with which human decision makers choose between speed and accuracy of their choices.\n\n## Materials and methods\n\nSeven subjects (3 male) aged 23\u201338 years participated in a reaction-time version of a heading discrimination task with three different coherence levels of the visual stimulus. Of these subjects, three (subjects B, D, F; 1 male) participated in a follow-up experiment with six coherence levels. The six-coherence version of their data is referred to as B2, D2, and F2. More details about the subjects and the task can be found in Drugowitsch et al. (2014). Not discussed in this reference is the inter-trial interval, which is the time from decision to stimulus onset in the next trial. This interval is required to compute the reward rate, and was 6 s on average across trials.\n\nUnless otherwise noted, we used a variant of the modified diffusion model described in Drugowitsch et al. (2014) to fit the subjects' behavior, and we tuned its parameters to maximize reward rates. Rather than using a constant decision bound for each modality and parameterizing how the diffusion variance depends on the coherence of visual motion (as in Drugowitsch et al., 2014), the model variant used here allowed for a separate bound/variance combination per modality and coherence. Thus, it featured 7 bound parameters for the 3-coherence experiments, and 13 bound parameters for the 6-coherence experiments. This variant was chosen to increase the model's flexibility when maximizing its reward rate. The original model variant with constant bounds and a changing variance led to qualitatively comparable results (Figure 1A, \u2018tuned\u2019, and Figure 2B, \u2018parametric bounds\u2019).\n\nFor each subject, we adjusted the model's parameters to fit the subject's behavior as in Drugowitsch et al. (2014), through a combination of posterior sampling and gradient ascent. Based on these maximum-likelihood parameters, we then found the model parameters that maximized reward rate by adjusting the bound/variance parameters using gradient ascent on the reward rate, while keeping all other model parameters fixed. To avoid getting trapped in local maxima, we performed this maximization 50 times with random re-starts, and chose the parameters that led to the overall highest reward rate. When performing the maximization, we only modified the parameters controlling the bounds, while keeping all other parameters fixed to the maximum-likelihood values. The latter differed across subjects, such that this maximization led to different maximum reward rates for different subjects. For the \u2018no bias\u2019 variant in Figure 2B, we set the choice biases to zero before performing the reward rate maximization.\n\nIn all cases, the reward rate was computed as the fraction of correct choices across trials, divided by the average trial time, which is the time between the onsets of consecutive trials. Any non-zero evidence accumulation cost (Figures 2, 4) was first multiplied with the average decision time (that is, reaction time minus estimated non-decision time) across all trials, and then subtracted from the numerator.\n\nOur argument about the speed of convergence of steepest gradient ascent is based on the assumption that bounds are updated according to $\\theta^{n}=\\theta^{n\u22121}+\\alpha\\nablaf(\\theta^{n\u22121})$, where $\\theta^{n\u22121}$ and $\\theta^{n}$ are the bound vectors before and during the nth steepest gradient ascent step, $f(\\theta)$ and $\\nablaf(\\theta)$ are the reward rate and its gradient for bounds $\\theta$, and $\\alpha$ is the step size. The speed of this procedure (i.e., the bound change between consecutive steps) depends for each bound on the size of the corresponding element in the reward rate gradient. For optimal bounds, this gradient is zero, which makes the gradient itself unsuitable as a measure of gradient ascent speed. Instead, we use the rate of change of this gradient close to the bounds $\\theta^$ estimated for individual subjects. This rate of change, called the curvature, is proportional to the gradient close to $\\theta^$, and therefore also proportional to the speed at which $\\theta^$ is approached. Close-to and at the optimal reward rate, which is a maximum, this curvature is negative. As we were more interested in its size than its sign, Figure 3 shows the absolute value of this curvature. We estimated this curvature at $\\theta^$ by computing the Hessian of $f(\\theta^)$ by finite differences (D'Errico, John [2006]. Adaptive Robust Numerical Differentiation. MATLAB Central File Exchange. Retrieved 3 July 2014), where we used the model that allowed for a different bound level per modality and coherence (7 and 13 bound parameters/dimensions for 3 and 6 coherence experiment, respectively). Before computing the distance between estimated and reward rate-maximizing bounds, we projected bound parameter vectors into the eigenspace of this Hessian, corresponding to the orientations of decreasing curvature strength. The absolute bound difference was then computed for each dimension (i.e., modality and coherence) of this eigenspace separately, with the corresponding curvature given by the associated eigenvalue (Figure 3B).\n\nIn Figure 3B, each bound dimension (i.e., modality and coherence, see figure legend) is associated with a different color. As described in the previous paragraph, this figure shows bound differences and curvatures not in the space of original bound levels, but rather in a projected space. To illustrate this bound coordinate transformation in the figure colors, we performed the same coordinate transform on the RGB values associated with each dimension, to find the colors associated with the dimensions of the projected space. The projected colors (filled cirles in Figure 3B plot) closely match the original ones (Figure 3B legend), which reveals that the curvature eigenspace is well aligned to that of the bound parameters. This indicates that the reward rate curvatures associated with each of the bound parameters, that is, each modality/coherence combination, are fairly independent. Due to the close match between projected and original colors, we do not mention the color transformation in the legend of Figure 3.\n\nOur analysis is also valid if subjects do not follow the reward rate gradient explicitly. They could, for example, approximate this gradient stochastically on a step-by-step basis. As long as the stochastic approximation is unbiased, our argument still holds. One such stochastic approximation would be to test if a change in a single bound (corresponding to a single trial) improves the noisy estimate of the reward rate, that is, if $f(\\theta^{n})>f(\\theta^{n\u22121})+\\epsilon$, where only a single element (i.e., bound) is changed between $\\theta^{n\u22121}$ and $\\theta^{n}$, and $\\epsilon$ is zero-mean symmetric random noise. In this case, larger changes, which are more likely to occur in directions of larger gradient, are more likely accepted. As a result, faster progress is made along steeper directions, which is the basic premise upon which our analysis is based.\n\nTo illustrate how the reward rate changed with bound height (Figure 4), we assumed that all (7 or 13) bound parameters varied along a straight line drawn from the origin to the reward rate-maximizing parameter settings. To project the maximum-likelihood bound parameters from the subject fits onto this line (dots in Figure 4A,B), we followed the iso-reward rate contour from these parameters until they intersected with the line. We also tried an alternative approach by projecting these parameters onto the line by vector projection, which resulted in a change of the reward rate, but otherwise led to qualitatively similar results as those shown in Figure 4B. In both cases, the subjects' bound parameters were well below those found to maximize the reward rate.\n",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "5739375e-e037-4a48-9529-b81a95e526ad",
+      "submission_id": "b6ac66a4-419b-4bcb-aa54-4d814fd23ac6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy Behrens, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06678.006](https://doi.org/10.7554/eLife.06678.006)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTuning the speed-accuracy trade-off to maximize reward rate in multisensory decision-making\u201d for consideration at eLife. Your article has been favorably evaluated by Timothy Behrens (Senior editor) and two reviewers, one of whom, Bruno Averbeck, has agreed to share his identity.\n\nThe editor and the reviewers discussed their comments before we reached this decision, and agree that the study potentially represents an important advance on your previous work.\n\nFor example:\n\n\u201cThis manuscript is essentially a continuation of the work that these authors published recently in eLife on multisensory decision making, and as such is an appropriate update/complement to those results.\n\nThe current study presents model fits to the original psychophysical data specifically investigating whether the behavior of the subjects was consistent with a strategy to maximize the reward rate. This is indeed an important point because the answer is not entirely obvious given the original observations: in a reaction time (RT) paradigm, when subjects based their perceptual choices on information from two sensory modalities (visual and vestibular) rather than a single one, they generally chose more rapidly rather than more accurately. What the authors found was: (1) that the subjects' behavior across experimental conditions (difficulty x modality) was indeed consistent with reward-rate maximization, and (2) that the observed deviations from optimality were small and can be explained as the consequence of incomplete or imperfect learning.\u201d\n\nHowever, there are some key points that the reviewers would like addressed before we can reach a final decision.\n\nMost critically, there are: (a) questions about how the model relate to the experimental data:\n\nReviewer 1:\n\nThe demonstration that the reward rate is higher in the multimodal than the single-modality conditions is given in Figure 1B, and the demonstration that the SAT setting affects the reward rate is given in Figure 2, and there are two important issues about how these key results relate to each other.\n\nIn Figure 2 the baseline condition or null hypothesis is the set of red bars, which represent an extreme situation in which decisions are made randomly and as fast as possible; accuracy doesn't matter at all (presumably this corresponds to a zero, or very low bound). It is fine to show that, but the question is whether the SAT is tuned, not whether it exists at all. The relevant comparison is the condition in which the bound is not zero but just constant across conditions; i.e., when the SAT setting is simply fixed. The key piece of information is, how large is the discrepancy between the maximum reward rate obtainable with a variable SAT (i.e., adjustable bound) and one obtainable with a constant SAT (non-adjustable bound)?\n\nA second, related issue, is how those model results square with the experimental data. In particular, suppose you take the best-fitting model with fixed bounds (constant SAT) and make a plot of the model results identical to that in Figure 1B. What will it look like? If it matches the real data, then no SAT tuning is necessary across conditions, and conversely, if it does not match the real data then it will provide compelling evidence that the SAT setting does vary across conditions. Then, assuming that the fixed bound is indeed insufficient (which is difficult to infer from the current results), a similar plots can be constructed for the best-fitting model with adjustable bounds. This would directly answer the question of whether the SAT setting is likely to be tuned based on the experimental data, regardless of whether the setting is the optimal one or not. This distinction would be very useful.\n\nReviewer 2:\n\n1) What would the fraction correct look like in Figure 1A for the bound that optimizes reward rate?\n\n2) The SAT is explicitly linked to the bound height in the Introduction and then referred to as SAT throughout. But this was slightly confusing. If one explicitly unpacks the speed-accuracy trade-off then it's not clear what it means to use one for all conditions. Perhaps at times it would be useful to link it back to the bound, or to just say bound when talking about the SAT across conditions. This is particularly confusing because in the final paragraph, the paragraph starts by talking about adjusting the SAT from trial-to-trial and later suggests that one SAT is used across conditions. If this is discussed in terms of the bound it makes sense, but discussing it in terms of the SAT is hard to follow. Also, during the modeling the bounds are allowed to vary by condition. So why is it suggested that a single bound is used? How much do the bounds vary by condition? How close to optimal do the subjects get if a single bound is used across modalities?\n\nand (b) questions about potential circularities in the analysis:\n\nReviewer 2:\n\nThe gradient analysis seems circular. Or rather it seems like the results of the gradient analysis are consistent with the subjects doing relatively well. If they set parameters far from optimal in dimensions where the gradient has high curvature they would be quite suboptimal. In fact, it should be possible to relate the total deviation of the subject parameters from optimal, normalized by the hessian to the performance of the subject. In other words, take the difference between the optimal bound parameters and the subject's actual bound parameters (call this delta_b) and multiply them by the inverse of the Hessian. Specifically, delta_b * inv(H) * delta_b. Does this predict how well the subjects do?\n\nHowever, it is also important that you address the following substantive issues:\n\nThe SAT is also confusing because it is in diffusion particle space and not in belief space. If the SAT was in belief space, and various assumptions are met (lack of side bias etc.) then accuracy should be on average the same across conditions, and the speed should be the only thing that changes as information increases, correct? This should perhaps be made more clear and developed in a bit more detail.\n\nIsn't there an explicit link between increasing drift rate (i.e. information rate) and whether speed and/or accuracy both increases for a fixed bound?\n\nIs there a significant difference between subject reward rate and random choices for the cost 0.2 condition? These appear to differ by the least amount.\n",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "074f9750-18c2-4a90-a205-ef204002276f",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C1",
+      "claim": "For simple unimodal stimuli, previous studies have shown that human subjects set their speed/accuracy trade-off to maximize reward rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For simple unimodal stimuli, previous studies have shown that human subjects set their speed/accuracy trade-off to maximize reward rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research in the field, though specific citations are not provided in this sentence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "c21fc939-df25-43dd-adfc-3c295f5615d4",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C2",
+      "claim": "Human subjects adjust their speed/accuracy trade-off to produce near-optimal reward rates in multisensory decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing previously collected data (Drugowitsch et al., 2014), we show that human subjects adjust their speed/accuracy trade-off to produce near-optimal reward rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of previously collected experimental data from Drugowitsch et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "99e76925-4481-4de4-900b-d405f5d1780e",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C3",
+      "claim": "The speed/accuracy trade-off can change rapidly across trials according to the sensory modalities involved.",
+      "claim_type": "EXPLICIT",
+      "source": "This trade-off can change rapidly across trials according to the sensory modalities involved, suggesting that it is represented by neural population codes rather than implemented by slow neuronal mechanisms such as gradual changes in synaptic weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the observed trial-by-trial changes in behavior across different sensory modality conditions in the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f0630dc9-69c3-432b-802b-ff6c3fd50d24",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C4",
+      "claim": "The speed/accuracy trade-off is represented by neural population codes rather than implemented by slow neuronal mechanisms such as gradual changes in synaptic weights.",
+      "claim_type": "EXPLICIT",
+      "source": "This trade-off can change rapidly across trials according to the sensory modalities involved, suggesting that it is represented by neural population codes rather than implemented by slow neuronal mechanisms such as gradual changes in synaptic weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the rapid trial-by-trial changes observed, which would be incompatible with slow mechanisms like synaptic weight changes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "ef2c2216-f3c9-4fce-b003-05058803e0cb",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C5",
+      "claim": "Deviations from the optimal speed/accuracy trade-off can be explained by assuming an incomplete gradient-based learning of these trade-offs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that deviations from the optimal speed/accuracy trade-off can be explained by assuming an incomplete gradient-based learning of these trade-offs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis presented in the manuscript showing the relationship between curvature and bound distance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "05f5d318-3b52-46b5-ab80-d35d96f75ac9",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C6",
+      "claim": "Animals accumulate evidence near-optimally over time for visual modality decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the most commonly studied visual modality, it has been shown that animals accumulate evidence near-optimally over time (Kiani and Shadlen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kiani and Shadlen, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "dacfe132-0617-4db8-b26e-a71a36145a53",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C7",
+      "claim": "Diffusion models describe the speed-accuracy trade-off surprisingly well despite their simplicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In these models, which describe the SAT surprisingly well despite their simplicity (Ratcliff, 1978; Palmer et al., 2005; Ratcliff and McKoon, 2008), the drift represents the available sensory information, and the diffusion causes variability in decision times and choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "19aedb24-583b-401d-ba68-86e906e099c1",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C8",
+      "claim": "In diffusion models, the drift represents the available sensory information, and the diffusion causes variability in decision times and choices.",
+      "claim_type": "EXPLICIT",
+      "source": "In these models, which describe the SAT surprisingly well despite their simplicity (Ratcliff, 1978; Palmer et al., 2005; Ratcliff and McKoon, 2008), the drift represents the available sensory information, and the diffusion causes variability in decision times and choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established property of diffusion models based on prior research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f92da59b-f65f-4c1b-8fa7-4e4423d89474",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C9",
+      "claim": "The level of the bound in diffusion models controls the speed-accuracy trade-off, with a higher bound leading to slower, more accurate choices.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of the bound controls the SAT, with a higher bound leading to slower, more accurate choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of diffusion models based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "66d93972-0725-4e98-bd48-9763b087020e",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C10",
+      "claim": "Instructed changes to the speed-accuracy trade-off are well captured by changes to only the bound in a diffusion model.",
+      "claim_type": "EXPLICIT",
+      "source": "Instructed changes to the SAT have been shown to be well captured by changes to only the bound in a diffusion model (Reddi and Carpenter, 2000; Reddi et al., 2003; Palmer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "7194e920-23d5-41d6-9547-7443abdc2a96",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C11",
+      "claim": "Well-trained human subjects adjust their speed-accuracy trade-off to maximize their reward rate without being explicitly instructed.",
+      "claim_type": "EXPLICIT",
+      "source": "Without being explicitly instructed to make either fast or accurate decisions, well-trained human subjects are known to adjust their SAT to maximize their reward rate (Simen et al., 2009; Balci et al., 2011), or a combination of reward rate and choice accuracy (Bogacz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "085ed96b-df31-4c00-91e0-9ba20c7aa5b7",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C12",
+      "claim": "Humans are able to accumulate evidence across time and modalities in a statistically near-optimal fashion even with multiple modalities and time-varying evidence reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that, even in the case of multiple modalities and time-varying evidence reliability, humans are able to accumulate evidence across time and modalities in a statistically near-optimal fashion (Drugowitsch et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previously published research by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "1e8785df-9bfc-42d5-8e53-a085a1dc5bd5",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C13",
+      "claim": "Increasing the coherence of the optic flow caused subjects to make faster, more accurate choices.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 1A illustrates for subject B2, increasing the coherence of the optic flow caused subjects to make faster, more accurate choices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "bd98e95e-de42-4fae-8056-c0e28c368508",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C14",
+      "claim": "The pattern of faster, more accurate choices with increasing coherence was similar if only the visual modality or both modalities were present.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern was similar if only the visual modality (solid blue lines, Figure 1A) or both modalities were present (solid red lines, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f80423ed-4365-42ed-97b3-872bf0366106",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C15",
+      "claim": "Subjects' choices in the combined condition were on average significantly less accurate than in the visual condition at 70% coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "The same pattern emerged across all subjects, whose choices in the combined condition were on average significantly less accurate than in the visual condition (for 70% coherence; one-tailed Wilcoxon signed-rank W = 54, p < 0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "1a2eb80a-0c93-4359-b5fa-3e0798da302d",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C16",
+      "claim": "Subjects were able to change their speed-accuracy trade-off on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "As these stimulus conditions were interleaved across trials, our results clearly indicate that subjects were able to change their SAT on a trial-by-trial basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that different SATs were used for interleaved trial conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "7c77e7e2-ba43-49d5-8d46-3a8f5d319ee7",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C17",
+      "claim": "Subjects have a higher reward rate across trials of the multisensory condition compared to both unimodal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1B, reward rate is indeed greater, for all subjects, when both sensory modalities are presented than for either modality alone (both unimodal vs combined: Wilcoxon signed-ranks W = 0, p < 0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "ab4e6359-ca1d-49b9-ad6b-b22678314ce9",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C18",
+      "claim": "Subjects combined evidence across modalities to improve their choices.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that subjects combined evidence across modalities to improve their choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the higher reward rate in the combined condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "2aecc9c0-c642-41ad-908e-9903cc2dcdfc",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C19",
+      "claim": "All but one subject featured a reward rate that was greater than 90% of the optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, all but one subject featured a reward rate that was greater than 90% of the optimum, with two subjects over 95%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "bfced815-9581-4b0d-9341-8d5de4c380ba",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C20",
+      "claim": "Completely ignoring the stimulus and randomly choosing one option at trial onset causes a significant 25\u201330% drop in reward rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As a comparison, the best performance when completely ignoring the stimulus and randomly choosing one option at trial onset (i.e., all actual bounds set to zero) causes a significant 25\u201330% drop in reward rate (subjects vs random: Wilcoxon signed-rank W = 55, p < 0.002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model simulations and statistical comparison with subject data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "ae0b1a14-170a-4e38-8278-05ac6b62796c",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C21",
+      "claim": "Subjects featured near-optimal reward rates that were significantly better than those resulting from rapid, uninformed choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, subjects featured near-optimal reward rates that were significantly better than those resulting from rapid, uninformed choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison between subject performance and random choice performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "121556d0-1ec3-4456-aa39-b6ab2d36d892",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C22",
+      "claim": "Human decision makers incur a cost for accumulating evidence, possibly related to mental effort, in the range of 0.1\u20130.2 units of reward per second.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, previous work suggests that human decision makers incur such a cost, possibly related to mental effort, in the range of 0.1\u20130.2 units of reward per second for accumulating evidence (Drugowitsch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f110ade7-33b9-4bcb-b54a-c2ccaadb385d",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C23",
+      "claim": "With accumulation costs of 0.1 and 0.2, the median reward rate across subjects rises to 95.4% and 95.1% of the optimum value.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this cost modulates both the subjects' and the optimal reward rate, causing the median reward rate across subjects to actually rise slightly to 95.4% and 95.1% (costs of 0.1 and 0.2) of the optimum value (Figure 2B, second and third columns), compared to the cost-free median of 93.7%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "d7457aa2-f13c-46b4-b0a3-8d06b4491b04",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C24",
+      "claim": "Using parametric bounds that only vary across modalities while coherence modulates diffusion variance causes subjects' reward rates relative to the optimum to rise slightly to a median of 94.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, subjects' reward rates relative to the optimum rise slightly (median 94.5%), where the optimal model is now restricted to use the same bound across all coherences (Figure 2B, fourth column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "8de69089-3e58-44b4-9d76-bd395819089c",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C25",
+      "claim": "Removing choice biases from the model causes a consistent drop in subjects' relative reward rate to around 90% of the optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, removing these biases causes a consistent drop in subjects' relative reward rate (Figure 2B, last two columns). Even then, reward rates are still around 90% of the optimum (median 87.8% and 88.7% for free and parametric bounds, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "447f13f4-c405-4990-b890-2dad1d98d30e",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C26",
+      "claim": "Subjects' speed/accuracy trade-off remained rather stable after removing feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, subjects' speed/accuracy trade-off remained rather stable after removing feedback, which includes all trials we analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "132635cd-1af2-4870-9b48-40ab71303f28",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C27",
+      "claim": "Incomplete learning in the initial training period should be reflected equally in all analyzed trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, incomplete learning in the initial training period should be reflected equally in all of these trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the stability of performance after feedback removal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "ca0ffd14-9bbe-446e-a6ea-16846e33bca3",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C28",
+      "claim": "Gradient-based learning leads to faster learning along directions of steeper gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "What is important, however, is that such an approach would lead to faster learning along directions of steeper gradients (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a known property of gradient-based optimization methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f19dfadb-bea5-4af7-967e-078b2fe1f85f",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C29",
+      "claim": "Incomplete learning should lead to near-optimal bounds along directions having a steep gradient, but large deviations from the optimal bound settings along directions having shallow gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, incomplete learning should lead to near-optimal bounds along directions having a steep gradient, but large deviations from the optimal bound settings along directions having shallow gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the properties of gradient-based learning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "6ad6c36e-36bd-4f28-8d89-f279d1c07fee",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C30",
+      "claim": "The data show that reward rate curvature is generally moderate to strong in the vestibular-only and combined conditions, and most of these bounds are found to be near-optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, reward rate curvature is generally moderate to strong in the vestibular-only and combined conditions, and most of these bounds are found to be near-optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "7cc1a5bb-6c22-4fec-a08d-50a4dec3d1b1",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C31",
+      "claim": "Curvature is rather low for the visual condition, and many of the associated bounds are far from their optimal settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, curvature is rather low for the visual condition, and many of the associated bounds are far from their optimal settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "07ba4216-c2ab-4381-bb66-ebe23ce68765",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C32",
+      "claim": "The pattern of curvature and bound distance is exactly what one would expect to observe if deviations from optimality result from a prematurely terminated gradient-based learning strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "This is exactly the pattern one would expect to observe if deviations from optimality result from a prematurely terminated gradient-based learning strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed relationship between curvature and bound distance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "163c0e25-4c42-4d18-879b-f0a84fe228ce",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C33",
+      "claim": "The estimated loss in reward rate featured by the subjects when compared to the tuned model is well approximated by a quadratic function.",
+      "claim_type": "EXPLICIT",
+      "source": "These two losses are indeed close to each other for most subjects (Figure 3C), thus validating the assumption.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "6a0c8e6b-7c0f-42b0-ada1-8715d5e63868",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C34",
+      "claim": "Previous studies have suggested that deviations from optimal bound settings may arise if subjects are uncertain about the inter-trial interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have suggested that deviations from optimal bound settings may arise if subjects are uncertain about the inter-trial interval (Bogacz et al., 2010; Zacksenhouse et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "baa5921e-adc9-4165-b951-a7e7d4d9b375",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C35",
+      "claim": "With uncertainty about the inter-trial interval, subjects should set their bound above that deemed to be optimal when the inter-trial interval is perfectly known.",
+      "claim_type": "EXPLICIT",
+      "source": "With such uncertainty, subjects should set their bound above that deemed to be optimal when the inter-trial interval is perfectly known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical predictions from prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "36f075e1-5265-4fa7-a74e-535b7aa5b70c",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C36",
+      "claim": "The reward rate drops off more quickly below than above the optimal bounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the reward rate drops off more quickly below than above the optimal bounds (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "68aed339-3b74-49ee-9169-33eabaa4be98",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C37",
+      "claim": "Subjects consistently set their bounds below the optimum level, in contrast to previous findings from single-modality tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data indicate that, in contrast to previous findings from single-modality tasks (Simen et al., 2009; Bogacz et al., 2010), subjects consistently set their bounds below the optimum level (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis shown in Figure 4B and comparison with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "1e98ea45-8321-427e-b1b2-ce78cc10424c",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C38",
+      "claim": "Subjects make faster and less accurate decisions than predicted by considerations of inter-trial interval uncertainty or bound fluctuation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, they make faster and less accurate decisions than predicted by either of the above considerations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that bounds are set below optimal levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "564c3d6b-e4f0-4192-9b32-013d9f189092",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C39",
+      "claim": "Near-optimal reward rates can be achieved with remarkably different joint tunings of reaction times and choice accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "While not always as extreme as shown for this subject, a distinct discrepancy between observed and reward rate-maximizing behavior exists for all subjects, and is a reflection of the fact that near-optimal reward rates can be achieved with remarkably different joint tunings of reaction times and choice accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of the data across all subjects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "34487296-c7b3-4f5b-8906-79f6abac3c00",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C40",
+      "claim": "The lateral intraparietal cortex in monkeys reflects the accumulation of noisy and ambiguous evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is the observed bound on neural activity (Roitman and Shadlen, 2002; Schall, 2003; Churchland et al., 2008; Kiani et al., 2008) in the lateral intraparietal cortex in monkeys, an area that seems to reflect the accumulation of noisy and ambiguous evidence (Yang and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior neurophysiological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "e9e0d060-9a88-486d-b0a0-f057374a6c80",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C41",
+      "claim": "Trial-by-trial changes in speed-accuracy trade-off are unlikely to emerge from slow changes in connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to suggestions from neuroimaging studies (Green et al., 2012), such trial-by-trial changes are unlikely to emerge from slow changes in connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rapid trial-by-trial nature of the observed changes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "1ca80c30-ab3d-4400-b677-733fa02e7764",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C42",
+      "claim": "A neuronal 'urgency signal' that modulates the speed-accuracy trade-off by how quickly it drives decision-related neuronal activity to a common decision threshold is a likely mechanism for trial-by-trial changes.",
+      "claim_type": "EXPLICIT",
+      "source": "A more likely alternative, that is compatible with neurophysiological findings, is a neuronal 'urgency signal' that modulates this trade-off by how quickly it drives decision-related neuronal activity to a common decision threshold (Hanks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on prior neurophysiological findings.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "acb417df-6ace-4a1a-b187-1665d907beb9",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C43",
+      "claim": "A modality-dependent urgency signal could account for the trial-by-trial speed-accuracy trade-off changes and qualitatively mimic a change in diffusion model bounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only observed for blocked designs, a similar modality-dependent urgency signal could account for the trial-by-trial SAT changes of our experiment, and qualitatively mimic a change in diffusion model bounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension of prior findings to the current experimental context.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "ccedade6-2414-47c6-ae2f-f286cef77bc8",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C44",
+      "claim": "Analysis of FEF neural activity revealed a change in baseline activity that emerged already in the first trial of each consecutive block in a visual search task with different response deadlines.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the different deadline conditions were blocked, analysis of FEF neural activity revealed a change in baseline activity that emerged already in the first trial of each consecutive block, hinting at flexible mechanisms that pre-emptively govern changes in SAT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior neurophysiological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "efbcf8f9-f153-4197-bca7-68504d4ce18c",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C45",
+      "claim": "Changes in speed-accuracy trade-off are likely to emerge through orchestrated changes in multiple neural mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, such changes in SAT are likely to emerge through orchestrated changes in multiple neural mechanisms, such as changes in baseline, visual gain, duration of perceptual processing, and the other effects observed by Heitz and Schall (2012), or through combined changes to perceptual processing and motor preparation, as suggested by Salinas et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on integration of findings from multiple prior studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "cf3f6499-2af5-4b30-aff9-63a34a122819",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C46",
+      "claim": "The observed speed-accuracy trade-offs support the hypothesis that gradient-based information is used by subjects during the initial training trials to try to learn the optimal bound settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed SATs support the hypothesis that gradient-based information is used by subjects during the initial training trials to try to learn the optimal bound settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of the relationship between curvature and bound distance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "6940e074-bdb5-43d7-92cd-e23391a26e1f",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C47",
+      "claim": "Seven subjects aged 23\u201338 years participated in a reaction-time version of a heading discrimination task with three different coherence levels of the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven subjects (3 male) aged 23\u201338 years participated in a reaction-time version of a heading discrimination task with three different coherence levels of the visual stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "abb8b337-b7fb-4997-ae9c-07324c73bf34",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C48",
+      "claim": "Three subjects participated in a follow-up experiment with six coherence levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these subjects, three (subjects B, D, F; 1 male) participated in a follow-up experiment with six coherence levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "ed18f27b-0e8c-4304-b72c-3bf4f17d5a60",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C49",
+      "claim": "The inter-trial interval was 6 s on average across trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Not discussed in this reference is the inter-trial interval, which is the time from decision to stimulus onset in the next trial. This interval is required to compute the reward rate, and was 6 s on average across trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "e75fef39-bc35-41ea-891f-6e96dc940d53",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C50",
+      "claim": "The model variant used featured 7 bound parameters for the 3-coherence experiments, and 13 bound parameters for the 6-coherence experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it featured 7 bound parameters for the 3-coherence experiments, and 13 bound parameters for the 6-coherence experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "53e02427-440f-4b17-bbb3-2f783e092832",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C51",
+      "claim": "The model variant with separate bounds per modality and coherence was chosen to increase the model's flexibility when maximizing its reward rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This variant was chosen to increase the model's flexibility when maximizing its reward rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "207f5871-d098-4323-ba50-7629338fef74",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C52",
+      "claim": "The original model variant with constant bounds and a changing variance led to qualitatively comparable results.",
+      "claim_type": "EXPLICIT",
+      "source": "The original model variant with constant bounds and a changing variance led to qualitatively comparable results (Figure 1A, 'tuned', and Figure 2B, 'parametric bounds').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of different model variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "b24b7f25-4a6e-4843-8e99-778b0701b4f6",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C53",
+      "claim": "Model parameters were adjusted to fit the subject's behavior through a combination of posterior sampling and gradient ascent.",
+      "claim_type": "EXPLICIT",
+      "source": "For each subject, we adjusted the model's parameters to fit the subject's behavior as in Drugowitsch et al. (2014), through a combination of posterior sampling and gradient ascent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "59e8535e-293e-4c4a-a7ac-79a0b6d07f10",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "claim_id": "C54",
+      "claim": "Reward rate maximization was performed 50 times with random re-starts to avoid getting trapped in local maxima.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid getting trapped in local maxima, we performed this maximization 50 times with random re-starts, and chose the parameters that led to the overall highest reward rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the optimization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04e3387c-fbe7-4fac-a482-12093540665a",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Subjects demonstrate trial-by-trial adjustment of speed-accuracy trade-off (SAT) in multisensory decision-making. Increasing visual coherence led to faster, more accurate choices in both visual-only and combined conditions (C13, C14). However, at 70% coherence, combined condition choices were significantly less accurate than visual-only (p < 0.002), violating predictions of a constant SAT across interleaved conditions (C15, C16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 provide converging evidence for trial-by-trial SAT adjustment. The key observation that combined-modality trials show lower accuracy than visual-only trials at the same coherence (C15), despite providing more total evidence, directly contradicts a fixed-bound diffusion model and supports flexible SAT adjustment. The statistical test is appropriate (Wilcoxon signed-rank) and significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "8062d980-de8e-4bbe-9dc1-75d8a6593faa",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Subjects achieve higher reward rates in multisensory conditions compared to unimodal conditions by combining evidence across modalities. Reward rate was significantly greater when both sensory modalities were presented than for either modality alone (W = 0, p < 0.002) across all subjects (C17, C18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 are well-supported by statistical analysis shown in Figure 1B. The Wilcoxon signed-rank test is appropriate for comparing paired conditions across subjects, and the result (W = 0, p < 0.002) indicates all subjects showed the predicted pattern. This confirms multisensory integration benefits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "0e4338a3-3075-4fcc-8c16-026a91f19bee",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Human subjects achieve near-optimal reward rates in multisensory decision-making, with all but one subject exceeding 90% of the optimal reward rate. This performance is significantly better than random choice strategies, which cause a 25-30% drop in reward rate (W = 55, p < 0.002) (C2, C19, C20, C21).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C19-C21 are supported by model-based analysis comparing subject performance to optimized diffusion model bounds. The comparison to random choice provides an important baseline. However, the 'optimal' reward rate depends on model assumptions (number of free parameters, treatment of biases), which are addressed in robustness analyses (C23-C25).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "07e6aee5-1ea0-477d-a6ba-2167a05cbf19",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Near-optimal reward rate performance is robust to different modeling assumptions. With accumulation costs of 0.1-0.2, median reward rates rise to 95.4% and 95.1% of optimum (C23). Using parametric bounds yields 94.5% (C24). Even removing choice biases maintains ~90% optimality (87.8-88.7%) (C25).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 demonstrate robustness through sensitivity analyses varying key assumptions. The analyses appropriately test whether conclusions depend on specific modeling choices. Figure 2B shows consistent patterns across assumptions. This strengthens the main finding of near-optimal performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f67b026f-f3e2-4a97-be7b-2062716c3449",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Deviations from optimal SAT can be explained by incomplete gradient-based learning. Gradient-based learning predicts faster convergence along steeper gradients (C28, C29). Data show strong curvature and near-optimal bounds for vestibular/combined conditions, but low curvature and suboptimal bounds for visual conditions (C30, C31), matching predictions of prematurely terminated gradient ascent (C32). The quadratic approximation of reward rate loss is validated (C33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C28-C33, C46 present a coherent explanation for observed deviations from optimality. The relationship between curvature and bound distance (Figure 3B) matches theoretical predictions of gradient-based learning. The validation of the quadratic approximation (Figure 3C) supports the analytical framework. However, this remains an inference about the learning mechanism rather than direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "99ded3a0-9b49-492f-82ad-6aa8d292f632",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Subjects set bounds below optimal levels, contradicting predictions from inter-trial interval uncertainty or bound fluctuation theories. Previous work predicts bounds should be set above optimal due to asymmetric reward rate loss (C34-C36), but data show subjects consistently set bounds below optimum (C37, C38), making faster and less accurate decisions than predicted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by Figure 4B showing all subjects below optimal bound levels. This contradicts prior findings from single-modality tasks (C37 cites Simen et al., 2009; Bogacz et al., 2010). The observation is robust but the explanation remains unclear\u2014the authors rule out existing theories but don't provide a definitive alternative mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "7ed483c4-3e1a-4efd-ab9c-7e95fdd91c12",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Speed-accuracy trade-off remained stable after feedback removal, suggesting incomplete learning during initial training is reflected equally across all analyzed trials (C26, C27).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by observation of behavioral stability. This is important for interpreting the incomplete learning hypothesis, as it suggests the analyzed trials reflect a stable learned strategy rather than ongoing learning dynamics. However, quantitative evidence for stability is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "dc9e9d14-98f4-4a4d-b14b-0be999a15934",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Near-optimal reward rates can be achieved with remarkably different joint tunings of reaction times and choice accuracy, as evidenced by discrepancies between observed behavior and reward rate-maximizing predictions across subjects (C39).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by the observation that subjects achieve ~90-95% optimal reward rates despite different speed-accuracy combinations than the model predicts (illustrated in Figure 1A for subject B2). This reflects the relatively flat reward rate surface near the optimum, allowing multiple strategies to achieve similar performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "235d6b68-8a70-43ac-b977-618d6a188a79",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The neural mechanisms underlying rapid trial-by-trial SAT changes likely involve neural population codes or urgency signals rather than slow synaptic changes. Possible mechanisms include bounded neural activity in lateral intraparietal cortex (C40), modality-dependent urgency signals (C42, C43), or orchestrated changes in multiple neural mechanisms (C44, C45). Slow connectivity changes are unlikely given the rapid trial-by-trial adjustments (C3, C4, C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3-C4, C40-C45 are largely speculative about neural mechanisms. While the behavioral evidence for rapid trial-by-trial changes (C3) is solid, the proposed neural mechanisms (C4, C42-C43, C45) are inferences based on prior literature from different experimental contexts. The authors appropriately acknowledge these as possibilities rather than demonstrated mechanisms. Direct neural evidence in this multisensory context is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "f47ce28a-619e-4753-8b1d-d4f61cc8c519",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Seven subjects (aged 23-38 years) performed a reaction-time heading discrimination task with three coherence levels; three subjects completed a follow-up with six coherence levels. The inter-trial interval averaged 6 seconds (C47-C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 describe basic experimental methods. These are factual descriptions of the study design and are appropriately documented. The inter-trial interval (C49) is important for reward rate calculations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "78d1a4af-cd20-4b98-90ec-9ffd22f86219",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The modified diffusion model used separate bounds per modality and coherence (7 or 13 parameters) to maximize flexibility for reward rate optimization (C50, C51). Alternative parametric bounds yielded qualitatively comparable results (C52). Model fitting used posterior sampling and gradient ascent (C53), with 50 random restarts for reward rate maximization to avoid local maxima (C54).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 describe the modeling approach. The methods are clearly documented and appropriate. The use of multiple random restarts (C54) is good practice for optimization. The comparison of model variants (C52) supports robustness of conclusions. These are standard computational methods appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "41e08db4-97d8-4e79-abed-0b850b6fac52",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work establishes that subjects optimize speed-accuracy trade-offs in unimodal tasks (C1, C11), animals accumulate evidence near-optimally (C6), diffusion models effectively describe SAT (C7-C9), instructed SAT changes are captured by bound changes (C10), and humans can optimally accumulate evidence across modalities (C12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C12 summarize established prior work with appropriate citations. These provide the theoretical and empirical foundation for the current study. The claims accurately represent the cited literature and establish the context for extending SAT optimization analysis to multisensory decision-making.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    },
+    {
+      "id": "2937b0bd-e4a8-4b00-9e6f-2c497b9d2a9b",
+      "content_id": "c5c30016-469c-4f42-9c94-1e25eefa5f9a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous work suggests human decision makers incur an accumulation cost of 0.1-0.2 reward units per second, possibly related to mental effort (Drugowitsch et al., 2012) (C22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 appropriately cites prior work on accumulation costs. This parameter is used in sensitivity analyses (C23) to test robustness of the main findings. The citation is accurate and the parameter range is used appropriately in the current analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:33.009293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e8785df-9bfc-42d5-8e53-a085a1dc5bd5",
+      "result_id": "04e3387c-fbe7-4fac-a482-12093540665a"
+    },
+    {
+      "claim_id": "bd98e95e-de42-4fae-8056-c0e28c368508",
+      "result_id": "04e3387c-fbe7-4fac-a482-12093540665a"
+    },
+    {
+      "claim_id": "f80423ed-4365-42ed-97b3-872bf0366106",
+      "result_id": "04e3387c-fbe7-4fac-a482-12093540665a"
+    },
+    {
+      "claim_id": "1a2eb80a-0c93-4359-b5fa-3e0798da302d",
+      "result_id": "04e3387c-fbe7-4fac-a482-12093540665a"
+    },
+    {
+      "claim_id": "7c77e7e2-ba43-49d5-8d46-3a8f5d319ee7",
+      "result_id": "8062d980-de8e-4bbe-9dc1-75d8a6593faa"
+    },
+    {
+      "claim_id": "ab4e6359-ca1d-49b9-ad6b-b22678314ce9",
+      "result_id": "8062d980-de8e-4bbe-9dc1-75d8a6593faa"
+    },
+    {
+      "claim_id": "c21fc939-df25-43dd-adfc-3c295f5615d4",
+      "result_id": "0e4338a3-3075-4fcc-8c16-026a91f19bee"
+    },
+    {
+      "claim_id": "2aecc9c0-c642-41ad-908e-9903cc2dcdfc",
+      "result_id": "0e4338a3-3075-4fcc-8c16-026a91f19bee"
+    },
+    {
+      "claim_id": "bfced815-9581-4b0d-9341-8d5de4c380ba",
+      "result_id": "0e4338a3-3075-4fcc-8c16-026a91f19bee"
+    },
+    {
+      "claim_id": "ae0b1a14-170a-4e38-8278-05ac6b62796c",
+      "result_id": "0e4338a3-3075-4fcc-8c16-026a91f19bee"
+    },
+    {
+      "claim_id": "f110ade7-33b9-4bcb-b54a-c2ccaadb385d",
+      "result_id": "07e6aee5-1ea0-477d-a6ba-2167a05cbf19"
+    },
+    {
+      "claim_id": "d7457aa2-f13c-46b4-b0a3-8d06b4491b04",
+      "result_id": "07e6aee5-1ea0-477d-a6ba-2167a05cbf19"
+    },
+    {
+      "claim_id": "8de69089-3e58-44b4-9d76-bd395819089c",
+      "result_id": "07e6aee5-1ea0-477d-a6ba-2167a05cbf19"
+    },
+    {
+      "claim_id": "ef2c2216-f3c9-4fce-b003-05058803e0cb",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "ca0ffd14-9bbe-446e-a6ea-16846e33bca3",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "f19dfadb-bea5-4af7-967e-078b2fe1f85f",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "6ad6c36e-36bd-4f28-8d89-f279d1c07fee",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "7cc1a5bb-6c22-4fec-a08d-50a4dec3d1b1",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "07ba4216-c2ab-4381-bb66-ebe23ce68765",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "163c0e25-4c42-4d18-879b-f0a84fe228ce",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "cf3f6499-2af5-4b30-aff9-63a34a122819",
+      "result_id": "f67b026f-f3e2-4a97-be7b-2062716c3449"
+    },
+    {
+      "claim_id": "6a0c8e6b-7c0f-42b0-ada1-8715d5e63868",
+      "result_id": "99ded3a0-9b49-492f-82ad-6aa8d292f632"
+    },
+    {
+      "claim_id": "baa5921e-adc9-4165-b951-a7e7d4d9b375",
+      "result_id": "99ded3a0-9b49-492f-82ad-6aa8d292f632"
+    },
+    {
+      "claim_id": "36f075e1-5265-4fa7-a74e-535b7aa5b70c",
+      "result_id": "99ded3a0-9b49-492f-82ad-6aa8d292f632"
+    },
+    {
+      "claim_id": "68aed339-3b74-49ee-9169-33eabaa4be98",
+      "result_id": "99ded3a0-9b49-492f-82ad-6aa8d292f632"
+    },
+    {
+      "claim_id": "1e98ea45-8321-427e-b1b2-ce78cc10424c",
+      "result_id": "99ded3a0-9b49-492f-82ad-6aa8d292f632"
+    },
+    {
+      "claim_id": "447f13f4-c405-4990-b890-2dad1d98d30e",
+      "result_id": "7ed483c4-3e1a-4efd-ab9c-7e95fdd91c12"
+    },
+    {
+      "claim_id": "132635cd-1af2-4870-9b48-40ab71303f28",
+      "result_id": "7ed483c4-3e1a-4efd-ab9c-7e95fdd91c12"
+    },
+    {
+      "claim_id": "564c3d6b-e4f0-4192-9b32-013d9f189092",
+      "result_id": "dc9e9d14-98f4-4a4d-b14b-0be999a15934"
+    },
+    {
+      "claim_id": "99e76925-4481-4de4-900b-d405f5d1780e",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "f0630dc9-69c3-432b-802b-ff6c3fd50d24",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "34487296-c7b3-4f5b-8906-79f6abac3c00",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "e9e0d060-9a88-486d-b0a0-f057374a6c80",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "1ca80c30-ab3d-4400-b677-733fa02e7764",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "acb417df-6ace-4a1a-b187-1665d907beb9",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "ccedade6-2414-47c6-ae2f-f286cef77bc8",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "efbcf8f9-f153-4197-bca7-68504d4ce18c",
+      "result_id": "235d6b68-8a70-43ac-b977-618d6a188a79"
+    },
+    {
+      "claim_id": "6940e074-bdb5-43d7-92cd-e23391a26e1f",
+      "result_id": "f47ce28a-619e-4753-8b1d-d4f61cc8c519"
+    },
+    {
+      "claim_id": "abb8b337-b7fb-4997-ae9c-07324c73bf34",
+      "result_id": "f47ce28a-619e-4753-8b1d-d4f61cc8c519"
+    },
+    {
+      "claim_id": "ed18f27b-0e8c-4304-b72c-3bf4f17d5a60",
+      "result_id": "f47ce28a-619e-4753-8b1d-d4f61cc8c519"
+    },
+    {
+      "claim_id": "e75fef39-bc35-41ea-891f-6e96dc940d53",
+      "result_id": "78d1a4af-cd20-4b98-90ec-9ffd22f86219"
+    },
+    {
+      "claim_id": "53e02427-440f-4b17-bbb3-2f783e092832",
+      "result_id": "78d1a4af-cd20-4b98-90ec-9ffd22f86219"
+    },
+    {
+      "claim_id": "207f5871-d098-4323-ba50-7629338fef74",
+      "result_id": "78d1a4af-cd20-4b98-90ec-9ffd22f86219"
+    },
+    {
+      "claim_id": "b24b7f25-4a6e-4843-8e99-778b0701b4f6",
+      "result_id": "78d1a4af-cd20-4b98-90ec-9ffd22f86219"
+    },
+    {
+      "claim_id": "59e8535e-293e-4c4a-a7ac-79a0b6d07f10",
+      "result_id": "78d1a4af-cd20-4b98-90ec-9ffd22f86219"
+    },
+    {
+      "claim_id": "074f9750-18c2-4a90-a205-ef204002276f",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "05f5d318-3b52-46b5-ab80-d35d96f75ac9",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "dacfe132-0617-4db8-b26e-a71a36145a53",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "19aedb24-583b-401d-ba68-86e906e099c1",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "f92da59b-f65f-4c1b-8fa7-4e4423d89474",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "66d93972-0725-4e98-bd48-9763b087020e",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "7194e920-23d5-41d6-9547-7443abdc2a96",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "085ed96b-df31-4c00-91e0-9ba20c7aa5b7",
+      "result_id": "41e08db4-97d8-4e79-abed-0b850b6fac52"
+    },
+    {
+      "claim_id": "121556d0-1ec3-4456-aa39-b6ab2d36d892",
+      "result_id": "2937b0bd-e4a8-4b00-9e6f-2c497b9d2a9b"
+    }
+  ],
+  "comparisons": []
+}

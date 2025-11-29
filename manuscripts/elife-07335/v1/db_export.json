@@ -1,0 +1,2330 @@
+{
+  "submission": {
+    "id": "6f926e10-b48f-4cd7-a43f-64f47e1d803e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:40:22.574583Z",
+    "updated_at": "2025-11-29T04:40:22.574583Z"
+  },
+  "content": [
+    {
+      "id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "submission_id": "6f926e10-b48f-4cd7-a43f-64f47e1d803e",
+      "content_type": "manuscript",
+      "content_text": "# Species-wide whole genome sequencing reveals historical global spread and recent local persistence in Shigella flexneri\n\n## Authors\n\n- Thomas R Connor<sup>1</sup> ([ORCID: 0000-0003-2394-6504](https://orcid.org/0000-0003-2394-6504)) \u2020\n- Clare R Barker<sup>1</sup>\n- Kate S Baker<sup>2</sup>\n- Fran\u00e7ois-Xavier Weill<sup>3</sup>\n- Kaisar Ali Talukder<sup>4</sup>\n- Anthony M Smith<sup>5</sup>\n- Stephen Baker<sup>6</sup>\n- Malika Gouali<sup>3</sup>\n- Duy Pham Thanh<sup>6</sup>\n- Ishrat Jahan Azmi<sup>4</sup>\n- Wanderley Dias da Silveira<sup>9</sup>\n- Torsten Semmler<sup>10</sup>\n- Lothar H Wieler<sup>10</sup>\n- Claire Jenkins<sup>12</sup>\n- Alejandro Cravioto<sup>13</sup>\n- Shah M Faruque<sup>4</sup>\n- Julian Parkhill<sup>2</sup>\n- Dong Wook Kim<sup>14</sup>\n- Karen H Keddy<sup>5</sup>\n- Nicholas R Thomson<sup>2</sup>\n\n### Affiliations\n\n1. Cardiff School of Biosciences Cardiff United Kingdom\n2. Pathogen Genomics Wellcome Trust Sanger Centre Cambridge United Kingdom\n3. Unit\u00e9 des Bact\u00e9ries Pathog\u00e8nes Ent\u00e9riques Institut Pasteur Paris France\n4. Centre for Food and Water Borne Diseases International Centre for Diarrhoeal Disease Research Dhaka Bangladesh\n5. Centre for Enteric Diseases, National Institute for Communicable Diseases and Faculty of Health Sciences University of the Witwatersrand Johannesburg South Africa\n6. The Hospital for Tropical Diseases, Wellcome Trust Major Overseas Programme Oxford University Clinical Research Unit Ho Chi Minh City Vietnam\n7. Centre for Tropical Medicine, Nuffield Department of Clinical Medicine Oxford University Oxford United Kingdom\n8. The London School of Hygiene and Tropical Medicine London United Kingdom\n9. Department of Genetics, Evolution, and Bioagents, Institute of Biology University of Campinas S\u00e3o Paulo Brazil\n10. Centre for Infection Medicine, Institute of Microbiology and Epizootics Freie University Berlin Germany\n11. Robert Koch Institute Berlin Germany\n12. Gastrointestinal Bacteria Reference Unit Public Health England London United Kingdom\n13. Global Evaluative Sciences, Inc. Seattle United States\n14. Department of Pharmacy, School of Pharmacy Hanyang University Ansan Republic of Korea\n\n\u2020 Corresponding author\n\n## Abstract\n\nShigella flexneri is the most common cause of bacterial dysentery in low-income countries. Despite this, S. flexneri remains largely unexplored from a genomic standpoint and is still described using a vocabulary based on serotyping reactions developed over half-a-century ago. Here we combine whole genome sequencing with geographical and temporal data to examine the natural history of the species. Our analysis subdivides S. flexneri into seven phylogenetic groups (PGs); each containing two-or-more serotypes and characterised by distinct virulence gene complement and geographic range. Within the S. flexneri PGs we identify geographically restricted sub-lineages that appear to have persistently colonised regions for many decades to over 100 years. Although we found abundant evidence of antimicrobial resistance (AMR) determinant acquisition, our dataset shows no evidence of subsequent intercontinental spread of antimicrobial resistant strains. The pattern of colonisation and AMR gene acquisition suggest that S. flexneri has a distinct life-cycle involving local persistence.\n\n## Introduction\n\nOnce a major cause of mortality and morbidity in Europe and the US prior to the widespread provision of reliable sanitation systems and clean drinking water, bacterial dysentery caused by Shigella spp., remains a significant infection in low-income countries (Kotloff et al., 2013). While the Shigellae are, phylogenetically, Escherichia coli, they were originally classified as separate species based upon shared disease and biochemical phenotypes that marked them out as distinct from other E. coli strains\u2014a distinction that is still reflected in their species nomenclature because of continued global medical importance. The \u2018genus\u2019 Shigella consists of four species (Shigella flexneri, Shigella sonnei, Shigella boydii and Shigella dysenteriae) causes approximately 165 million new infections globally per year (Kotloff et al., 1999; Ram et al., 2008), which have previously been estimated to result in up to 1 million deaths annually (Kotloff et al., 1999, 2013). The vast majority of cases and fatalities occur in low to middle-income countries in children under the age of 5 years (Kotloff et al., 1999; von Seidlein et al., 2006). The preponderance of these cases are attributable to endemic disease caused by the species S. flexneri (Vinh et al., 2009; Ud-Din et al., 2013; Livio et al., 2014). Despite the importance of S. flexneri as an etiological agent of diarrheal disease globally, little is known about its detailed population structure. This knowledge gap is a substantial limitation as the ability to accurately track bacterial pathogens is a cornerstone of effective surveillance and downstream public health interventions.\n\nThis poor understanding of S. flexneri is partly a result of a lack of high-resolution tools for subtyping this species. Traditionally S. flexneri strains are subdivided based on the antigenic variation of the O-antigen component of the bacterial lipopolysaccharide (LPS) using typing antisera and the slide agglutination method (serotyping). Serotyping currently subdivides isolates into serotypes or subserotypes by the use of type-specific and group factors antisera (Edwards and Ewing, 1986; Sun et al., 2011). Although serotyping still forms the central vocabulary for describing this species it is now widely agreed that many genes that determine serotype are encoded on horizontally transmissible genetic elements (Allison and Verma, 2000), thus facilitating serotype switching. Therefore the extent to which core characteristics of the species that are currently inferred based on serotype relate to the phylogenetic relationships of strains remains open to question.\n\nThrough limited genetic and genomic studies we know that Shigella spp. represent distinct clades that fall within the E. coli species complex (Pupo et al., 2000; Yang et al., 2005, 2007; Ashton et al., 2014; Sahl et al., 2015). These studies show the existence of two distinct S. flexneri lineages, with one lineage including only a single serotype (S. flexneri 6) (Choi et al., 2007) that clusters within species S. boydii (Yang et al., 2007) and possesses a different LPS O-antigen. The second monophyletic S. flexneri group contains representatives of all other S. flexneri serotypes (1\u20135, X, Y) and is responsible for the majority of S. flexneri disease; it is this main lineage that is examined here.\n\nWhole genome sequencing has been used successfully to uncover key aspects of the provenance as well as global and regional epidemiology of other Shigella species. Work on the now rarely isolated (von Seidlein et al., 2006), S. dysenteriae type 1 has shown it to be an epidemic pathogen characterised by sporadic, large scale outbreaks that spread rapidly and widely via a series of intercontinental transmissions, often associated with war or famine (Rohmer et al., 2014). Studies examining the dominant endemic Shigella species of industrialised and newly industrialised countries, S. sonnei, have also revealed a species that is highly clonal (Karaolis et al., 1994; Holt et al., 2012). S. sonnei evolved in Europe \u223c300 years ago and has recently moved out of this region via intercontinental spread as a single, rapidly evolving lineage, establishing new, local, populations in countries as they industrialise (Holt et al., 2012, 2013). The contrast between the distribution of the two endemic Shigella species, S. sonnei and S. flexneri, has posed the question why is it that two different species predominate under very different socio-economic conditions (Kotloff et al., 1999)? S. flexneri remains the dominant species in low-income countries (multiple studies report over 50% of all cases of shigellosis [Kotloff et al., 1999, 2013; Livio et al., 2014]), whereas S. sonnei is the most commonly isolated Shigella species in industrialised countries (77% of cases as reported by Kotloff et al., 1999) where there is better sanitation and access to clean food and drinking water. The reasons for these differences are poorly understood, as are specific transmission patterns that may account for the variation in the dominant Shigella species in these differing settings.\n\nTo further our understanding of the evolution, population structure and phylogeography of S. flexneri we gathered a representative global collection of 351 isolates of S. flexneri, spanning serotypes 1\u20135, X, Xv and Y, collected from the contemporary principal foci of endemic disease; Africa, Asia and South and Central America as well as historical isolates from reference collections dating back to 1914 (Supplementary file 1). We performed whole genome sequencing on the sample set to provide a basis for exploring the relationship of strain, serotype and geography. Our analysis reveals that S. flexneri is composed of phylogenetically distinct lineages, with each lineage holding similar levels of diversity to the entire S. sonnei species. We observe that the natural history of S. flexneri is characterised by long term (in some cases over 100 years) colonisation of individual countries demonstrating that it is far older, and far more diverse than S. sonnei. From this, our analysis uncovers further key differences between the population structure of these two species; providing new clues as to the reasons for the persistence, and most recently decline of S. flexneri.\n\n## Results\n\n### The genomic population structure of S. flexneri\n\nTo determine a detailed phylogeny of this species we mapped the sequence reads from the 351 S. flexneri strains to the concatenated reference genome of S. flexneri strain 301, including its virulence plasmid (VP), to detect single nucleotide polymorphisms (SNPs). SNPs falling in transposases, IS elements, repeats or regions identified as being recombinant (Figure 1\u2014figure supplement 1) and unlikely to reflect the underlying phylogeny of the bacterium, were excluded from this analysis. We identified 67,981 SNPs among the 352 genomes (including reference genome), with 63,186 of these on the chromosome and 4795 on the VP. Following the removal of recombinant regions (almost entirely concentrated in phage, IS elements and S. flexneri Pathogenic Islands, Figure 1\u2014figure supplement 1), 55,662 SNPs remained in total, with 53,078 on the chromosome and 2584 on the VP. From these SNPs we inferred a maximum likelihood phylogeny showing that the population of S. flexneri is composed of several pylogenetically distinct lineages (Figure 1, Figure 1\u2014figure supplement 2). To unambiguously subdivide the species based on shared patterns of sequence variation, we used the software package Bayesian analysis of population structure (BAPS) (Cheng et al., 2011, 2013) to identify robust phylogenetic groups (PGs) within S. flexneri. This subdivided the population into seven PGs, concordant with the phylogeny (Figure 1). Performing the BAPS analysis on alignments of the chromosome and VP collectively or individually resulted in the same pattern of clustering, reflecting that the VP phylogeny precisely mirrors that of the chromosome, indicating co-evolution (Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-v1.jpg)\n\n**Figure 1.:** Phylogenetic groups (PGs) determined by Bayesian analysis of population structure clustering are boxed within dotted lines, with the geographic and serotype composition of isolates in each PG being inlaid as pie charts.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Blue indicates a likely recombination within an individual isolate while red indicated recombination common to multiple isolates. Green text at the top indicates mobile elements determined by a manual examination of the reference S. flexneri strain 301 genome.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The SNP tree uses the same alignment as in Figure 1, but is constructed from the SNPs that can be assigned to each branch. The ancestral states were reconstructed using ACTRAN. Insert\u2014a table showing the number of SNPs between the most recent common ancestor (MRCA) of each of the PGs identified.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** A maximum likelihood phylogeny of the S. flexneri chromosome (left) is shown adjacent to one of the VP (right). Collared blocks and labels enclose independently identified BAPs clusters for sequence alignments of the chromosome and VP. Dotted lines indicate groups of isolates shared between clusters in phylogeny.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Dates of MRCA are shown overlying internal nodes followed by 95% HPD in parentheses. Tips display the country of origin for each isolate (where available), coloured by region while the date given in red at the base of each group is the MRCA date obtained from the software Path-O-Gen, calculated based on the root-to-tip distance. The horizontal scale is in the unit of years in the past.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Dates of MRCA are shown overlying internal nodes followed by 95% HPD in parentheses. Tips display the country of origin for each isolate (where available), coloured by region while the date given in red at the base of each group is the MRCA date obtained from the software Path-O-Gen, calculated based on the root-to-tip distance. The horizontal scale is in the unit of years in the past.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Dates of MRCA are shown overlying internal nodes followed by 95% HPD in parentheses. Tips display the country of origin for each isolate (where available), coloured by region while the date given in red at the base of each group is the MRCA date obtained from the software Path-O-Gen, calculated based on the root-to-tip distance. The horizontal scale is in the unit of years in the past.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Dates of MRCA are shown overlying internal nodes followed by 95% HPD in parentheses. Tips display the country of origin for each isolate (where available), coloured by region while the date given in red at the base of each group is the MRCA date obtained from the software Path-O-Gen, calculated based on the root-to-tip distance. The horizontal scale is in the unit of years in the past.\n\n### The natural history of S. flexneri\n\nGenetic clustering of the population and the phylogenetic tree revealed a species that is composed of seven discrete PGs, separated by considerable evolutionary distance (ranging from 1138 to 8430 SNPs between PGs\u2014Figure 1\u2014figure supplement 2), this analysis provided only limited information regarding the natural history of the organism. Most of the PGs contained organisms from several geographic regions, and significantly all PGs contained samples collected over a period of at least 60 years. To combine the geographic and temporal metadata with the genomic information, we used Bayesian evolutionary analysis by sampling trees (BEAST) (Drummond and Rambaut, 2007) to reconstruct the temporal and geographical history of the major PGs. Inferring evolutionary rates and estimating the dates of the most recent common ancestor (MRCA) of individual PGs, we found that rates of mutation were similar among PGs (between 6.46 \u00d7 10\u22127 substitutions per site per year [PG1] to 9.54 \u00d7 10\u22127 substitutions per site per year [PG2]). These mutation rates are consistent with previous estimates for S. flexneri (3.2 \u00d7 10\u22127 substitutions per site per year [Zhang et al., 2014]), S. sonnei (6.0 \u00d7 10\u22127 substitutions per site per year [Holt et al., 2012]) and S. dysenteriae (6.52 \u00d7 10\u22127 substitutions per site per year [Rohmer et al., 2014]). Using these data we predicted the MRCA of each PG, finding that the median age of the MRCA for all PGs was between 150 and 900 years ago (Figure 1, Figure 1\u2014figure supplements 4\u20137). Of the PGs, PG1, 2, 4 and 6 are the oldest lineages with median BEAST estimate of MRCAs of these groups dating to between 1341 and 1659. Contrastingly, PG5 and PG3, the latter containing the majority of serotype 2a isolates\u2014one of the key suggested S. flexneri vaccine targets\u2014are much younger, and these PGs have median estimated MRCAs dating to 1822 (PG5) and 1848 (PG3); contemporaneous with the MRCA of the emergence of S. sonnei from Europe. However, unlike S. sonnei, the emergence of new S. flexneri PGs did not appear to result in displacement or replacement of isolates from other PGs; rather the older PGs have persisted and continue to cause disease alongside the newer PGs, as evidenced by the fact that every PG contains at least one strain collected since 2008 (Supplementary file 1).\n\n### The intercontinental spread of S. flexneri\n\nOne of the most striking features of the S. sonnei population was the recent intercontinental spread of the organism. Analysing our dataset using the discrete states phylogeographic analysis implemented in BEAST we observed a contrasting natural history of S. flexneri PGs 1\u20137 with respect to S. sonnei (Holt et al., 2012). We observed considerable genomic diversity in S. flexneri isolates collected from the same region. Regions where S. flexneri is endemic simultaneously supported at least two populations of S. flexneri originating from distinct PGs; with the Indian subcontinent having geographically-monophyletic sublineages from four different PGs (Figure 1, Figure 1\u2014figure supplements 4\u20136, Figure 2). None of these sublineages are recently introduced into these regions; most geographically monophyletic sublineages within the PGs had MRCAs in the range of 25\u2013150 years. As well as observing isolates from different genomic backgrounds coexisting in the same geographic area, our data also show that sublineages from the same PG can also persist contemporaneously in the same geographical region, over an extended period of time (Figure 1\u2014figure supplements 4, 6).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig2-v1.jpg)\n\n**Figure 2.:** The midpoint-rooted maximum likelihood phylogenetic tree shows PGs, with tips and terminal branches collared by continent of origin. Tracks adjacent to each isolate show the percentage BLAST identity of the best hit in the sample assembly against key virulence and AMR determinants. Isolates with mutations in the gyr/par genes have black bars in the relevant tracks. The virulence determinants shown are SHI-1 (pic, sigA, set1AB), SHI-2 (shiABCDE, iucABCD, iutA), sat, enterobactin (entABECFD, fepABCDG), sitABCD, fecEDCBAR, stx1ab, fimZBCHGFDEAY, and the AMR genes are aac(3)-II, aadA1, aadA2, aadA5, strA, strB, sat1 (aminioglycosides), blaCTX-M-24, blaOXA-1, blaTEM-1, (\u03b2-lactams) ermB, msrE, mphA, mphE, (macrolides) catA1, catB1, (phenicols) qacE\u03941, qnrS1, (quinolones) qepA, sul1, sul2 (sulphonamides) tetA(A), tetA(D), tetA(B) (tetracyclin), dfrA17, dfrA3b, dfrA1, dfrA5, dfrA14 and dfrA8 (trimethoprim).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The tree is drawn using PhyML, with a GTR model and contains 191 strains. Isolate labels are collared according to whole-genome based PG definition.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Grey circles indicate branches where acquisition events are predicted to have taken place.\n\nDespite this structure of long-term phylogeographic association on a population wide level, we also observe that some PGs were highly geographically restricted and appear to have spread to only a limited number of regions. For example, PG2 has a MRCA dated to 1550 (95% CI: 1340\u20131725), with Asian isolates appearing in both sublineages of this cluster (Figure 1\u2014figure supplement 5). The MRCA for the Asian isolates was estimated to be 1544; however the African isolates form a single cluster that has a more recent MRCA\u2014dated to 1885 (95% CI: 1833\u20131923); a result that implies that PG2 S. flexneri was likely introduced into Africa from Asia at least 130 years ago. However, it is also important to note that while there is always a possibility of sample bias; within our dataset there is a clear signal that the African and Asian lineages are distinct, and have been for some time. Other samples may change this view, however, the sampling strategy we used was to collect samples globally\u2014capturing a cross section of current disease with a historical view of the population of S. flexneri\u2014without a specific focus on a single serotype grouping or geographic region. The fact that clear clusters within the population associated with geographic origin do appear would not be expected by chance.\n\n### The genome of S. flexneri is stable, with recombination mostly limited to mobile elements\n\nPerhaps surprisingly for a gastrointestinal pathogen of the E. coli complex, at least on a population level, we found very limited evidence of large-scale species-wide recombination within the genome (Figure 1\u2014figure supplement 1), with S. flexneri displaying a recombination profile more in line with the lifestyle-restricted ST131 than with members of other gastrointestinal pathovars such as ETEC (McNally et al., 2013). Within the virulence repertoire, where recombination could be identified, it was generally present among all isolates within a single PG(s), indicating that the recombination was likely to be ancestral occurring prior to PG divergence. Furthermore, most evident recombination is restricted to previously identified mobile genetic elements (Figure 1\u2014figure supplement 1).\n\nBy examining known chromosomally encoded virulence determinants, it is clear that many known virulence functions are ubiquitous to all PGs (Figure 2). The distribution of virulence determinants indicated that many of the genes/islands whose loss is known to attenuate S. flexneri virulence (such as the VP [Sansonetti et al., 1982] and aerobactin [Lawlor et al., 1987; Wyckoff et al., 2009]) were acquired early in its evolutionary history and have been subsequently retained. However, some variation in the composition of virulence determinants is also evident. For example, Sat, a Serine Protease Autotransporter, is found in PGs 2, 4, and 7, but absent from PGs 1, 3, 5 or 6 (Figure 2). Although the latter PGs possess a genetic scar suggesting that Sat was present ancestrally and has been subsequently lost.\n\nWe also find that the SHI-1 pathogenicity island\u2014a distinguishing feature of serotype 2a (the dominant serotype causing disease world-wide [Kotloff et al., 1999])\u2014was acquired once (between 1848 and 1882) near to the root of PG3. SHI-1 carries genes encoding three key virulence associated proteins\u2014Pic, (Henderson et al., 1999) SigA (Al-Hasani et al., 2000), and the S. flexneri enterotoxin ShET1 (Fasano et al., 1997). Pic, which is also found in Enteroaggregative E. coli, encodes a secreted protease that has been shown to have mucinase activity and has been suggested to be involved in haemagglutination and serum resistance (Henderson et al., 1999). SigA is thought to be involved in fluid accumulation (Al-Hasani et al., 2000), while the S. flexneri enterotoxin ShET1 has also been shown to be involved in fluid accumulation in rabbit ileal loop models (Fasano et al., 1997), and has been proposed as being the causative agent of the voluminous watery diarrhoea characteristic of a S. flexneri serotype 2a infection (Noriega et al., 1995; Fasano et al., 1997). Although SHI-1 is only present in PG3 (135 of 146 PG3 isolates included carried this island), it is present in the range of serotypes found within this phylogroup\u2014including multiple isolates of serotypes 1a, 2a, 2b and 5a. This demonstrates that the toxin is not peculiar to strains carrying a particular serotype, but rather to strains within a PG that are predominantly serotype 2a; consistent with reports of a small number of non-2a serotypes reported to encode this toxin (Noriega et al., 1995). Our genomic data further confirm that these cases were not simply mis-serotyped, but likely represent cases of sporadic serotype switching amongst isolates within PG3.\n\nMore generally, we observe evidence for recombination amongst the genes responsible for serotype (see gtr Figure 1\u2014figure supplement 1), which remains the de-facto method for describing strains of Shigella. When cross comparing the classical and in silico molecular serotyping schemes (Sun et al., 2011) we saw no significant difference in the serotypes predicted (assessed using a Kolmogorov\u2013Smirnov test). However, our results do demonstrate that while certain serotypes make up the majority of certain clusters (Figure 1, Figure 2\u2014figure supplement 1), all of the PGs contained multiple serotypes. This indicates that although the core genome is remarkably stable, serotype switching does occur undermining the principle that serotype can be used either as a basis for describing the properties of a lineage or for epidemiological surveillance and tracking. These results also imply that vaccines targeting a particular backbone using a serotype (such as a 2a vaccine to target SHI-1 encoding isolates from PG3) could be susceptible to the effects of serotype switching.\n\nIn addition to our observations around SHI-1 and the VP we also observed some variation in virulence factor complement within PGs principally for Iron uptake functions; the sit (Runyen-Janecky et al., 2003) and fec loci (Luck et al., 2001) and enterobactin biosynthesis operon. Across our S. flexneri tree it is apparent that these have contrasting patterns of gain and loss; sit is ancestral, but was sporadically lost (unexpectedly, as it has been reported to be in all clinical isolates previously [Runyen-Janecky et al., 2003]), while fec has been gained sporadically by isolates within PG3, as well as being gained (and retained) on separate occasions by isolates in PG1, 2 and 6. Of additional interest is the enterobactin operon; which encodes a high affinity iron siderophore (O'Brien and Gibson, 1970). It has previously been reported that in S. flexneri the enterobactin genes are \u2018rarely utilized\u2019 (Schmitt and Payne, 1988; Wyckoff et al., 2009; Reuter et al., 2014); however, our data show that the enterobactin genes are present across PGs 3, 5, 7 and 4, as well as a subset of related isolates within of PG1. Examining the enterobactin gene specifically, we observed the same phylogenetic topology as that observed for the whole genome tree (Figure 2, Figure 2\u2014figure supplement 2); suggesting this element is ancestral, and has been lost by a subset of PGs. The ubiquitous nature of these enterobactin genes suggests that these genes are more significant than \u2018rarely utilized\u2019; as they have been retained by multiple PGs, over a long timescale.\n\nIn addition to these PG-wide patterns, within PG3 we observed six tightly clustered isolates that also carry a Shiga toxin 1a (Stx1a)-encoding phage (Figure 2) which is identical to the recently reported \u03c6POC-J13 (accession number KJ603229) (Gray et al., 2014). These isolates were collected between 2003 and 2008 from Latin America (Haiti, French Guiana and the Dominican Republic). This is consistent with these findings charting the emergence of Stx1a-producing S. flexneri in the region (Gray et al., 2014). Given that the reference phage clusters phylogenetically within our sequenced isolates it is likely that the phage was acquired once in this sublineage of PG3. The dating analysis on the Stx-1-containing PG3 sublineage showed that the phage could have been acquired no later than 1998 (Figure 1\u2014figure supplement 6) suggesting that strains carrying this phage may have been present but undetected in the population for 5\u201310 years before the earliest reported isolation of Stx1a-producing S. flexneri.\n\n### Antimicrobial resistance determinants have been gained and retained locally on multiple occasions independently by multiple lineages\n\nAntimicrobial resistance (AMR) has been shown to be a strong influence on the recent evolutionary history of many bacterial pathogens (Mutreja et al., 2011; Holt et al., 2012; Okoro et al., 2012; He et al., 2013; Mather et al., 2013). Screening for the presence of known AMR genes (Figure 2) we found that AMR gene distribution was highly variable both within and across PGs (Figure 2). Unlike S. sonnei, we observe little evidence that the acquisition of AMR-related loci is linked to the establishment or replacement of dominant lineages in any geographic location. While published evidence does exist of one major, on-going, clonal outbreak of S. flexneri in high income countries that has been shown to be the result of a combination of specific epidemiological, AMR and behavioural factors within the MSM community (Baker et al., 2015), examining our dataset focused around historical isolates and those with an origin in low-income countries, we observe limited historical evidence of global expansion as a result of AMR. In contrast we observe the widespread acquisition of AMR determinants independently across the tree. The most widespread AMR loci are found on the multidrug resistance element (MDRE), part of the Shigella resistance locus-pathogenicity island (SRL-PAI) with variants found in representatives from all PGs. Our analysis suggests that the SRL-PAI has been introduced independently on at least nine occasions (Figure 2\u2014figure supplement 3). In six of these it has been maintained in subsequent lineages for protracted periods of time. There is, however, no evidence of isolates carrying SRL-PAI spreading outside of their geographic region, and, once acquired, in a number of cases it appears that the SRL-MDRE may have been subsequently lost (Figure 2\u2014figure supplement 3). Beyond the SRL-PAI we observe 23 internal branches where non SRL-PAI resistance determinants have been acquired (Figure 2), depicting a distinctive wave-like pattern of resistance determinant acquisition over time (Figure 3). The earliest resistance genes observed in the population code for sulphonamide resistance (1950s), followed by streptomycin and tetracycline (1960s) resistance, with \u03b2 lactamases arising first in strains isolated in the 1970s (Figure 3A). Notably, we observe that in all cases within S. flexneri the strains acquiring AMR determinants remain geographically restricted, although on a population level we also observe an upward trend in AMR determinant possession over time, in all PGs (Figure 3B). We also observe that whilst AMR is widespread in the 21st century, we can isolate S. flexneri strains that do not harbour large numbers of AMR determinants; this is in marked contrast to observations within the S. sonnei population.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07335/elife-07335-fig3-v1.jpg)\n\n**Figure 3.:** (A) Graph showing the proportion of isolates from each decade that contain the AMR genes. (B) Graph showing the average number of resistance genes found in each isolate collected, by year.\n\n## Discussion\n\nOur results present the clearest and most complete overview of the temporal and geographic patterns that underpin the population structure of the species S. flexneri obtained to date. It provides a genetic framework and evolutionary context for studies looking within single countries or looking at individual outbreaks or lineages of interest. These data contrast with that of the other Shigella species for which we have global population data, S. sonnei and S. dysenteriae; with the pattern of long term colonisation, diversity and coexistence in S. flexneri lineages appearing to share more similarities with pathogenic E. coli variants such as ETEC (von Mentzer et al., 2014) than other Shigella species. It is evident from the presented data that, at a population level, S. flexneri is characterised by long-term colonisation of endemic regions, with limited evidence of intercontinental transmission within the last 30 years. Our data also suggest that endemic countries support a diverse population of S. flexneri, and have done for some time, implying long-term local-transmission/colonisation in those settings. This is in direct contrast to S. sonnei, where historically the population is characterised by recent colonisation of countries and dominant pandemic lineages, with frequent inter-country and inter-continental transmission and repeated strain replacement (Holt et al., 2012).\n\nIt is also evident that while AMR has had significant in the natural history of both species, the effects of AMR acquisition on the population are contrasting. For S. sonnei the acquisition of multiple AMR genes was strongly associated with lineage replacement by dominant resistant lineages, on a global scale. Whereas, for S. flexneri, we observe a population where there have been over 30 independent acquisitions of AMR determinants at a local level; but these acquisitions generally result in limited global spread (Figure 2). This implies that while AMR may be a significant factor in maintaining existing lineages within specific locales we do not see widespread evidence of AMR acquisition leading to the pandemic displacement of other pre-existing lineages. Moreover this observation also extends to the simultaneous acquisitions of multiple AMR genes en bloc, such as those associated with the SRL-PAI. The acquisition of this locus appeared to have occurred in lineages that, within this dataset, show no subsequent evidence of travel outside of their original geographic area. It may be that the transient nature of AMR gene carriage is the result of rapid gain and loss during periods of differential selection, consistent with S. flexneri persisting in the environment where it is conceivable that selection by AMR could be less significant. Despite this lack of evidence of rapid global spread of AMR, on a population level we did observe both an on-going trend of increasing resistance in S. flexneri, and evidence that this pathogen acquires resistance determinants rapidly, often keeping the AMR determinants for protracted periods. However, we also continue to observe recently collected strains with a low number of resistance determinants\u2014suggesting that strains with a limited resistance repertoire are continuing to persist within the wider population. This observation suggests that although there is evidently some selective advantage to carrying AMR determinants, as evidenced by the increasing level of resistance across the pathogen population, it is not an absolute requirement for modern S. flexneri.\n\nThe contrast between the observed population structure, natural history and role of AMR in the narrative of S. flexneri and S. sonnei may be related to the lifecycle of these two organisms. It has previously been shown that S. flexneri strains can be recovered from the environment in endemic countries (Faruque et al., 2002) unlinked to any outbreak, and that under experimental conditions S. flexneri can survive for several months in water at room temperature (Uyanik et al., 2008), simulated environmental water (Hendricks and Morrison, 1967; Islam et al., 1996) and upon foodstuffs (Islam et al., 1993). Furthermore, there are multiple examples of S. flexneri outbreaks where the outbreak strain was traced back to, and isolated from local water sources (Swaddiwudhipong et al., 1995; He et al., 2009; Saha et al., 2009). In addition, at least one study has been undertaken that has demonstrated that within Bangladesh S. flexneri disease risk was persistent throughout the year and associated with environmental factors (geographic location/provision of flood defences) (Emch et al., 2008). When these studies are combined with both our results and additional observations that the provision of clean water and good sanitation correlates with a reduction in the rates of S. flexneri disease (Esrey et al., 1985), we believe that the implication is that in an environment where water is frequently persistently contaminated with faeces, S. flexneri, in effect, persists in the environment, and has been doing so over the long term, in countries around the world. A mechanism of environmental persistence would explain our observations around the longevity of lineages of S. flexneri in endemic countries and provide an obvious transmission mechanism. When considering the temporal and phylogeographic analyses presented here in this context, we think that the evidence supports the concept, suggested previously, that in endemic countries the lifecycle of S. flexneri disease is analogous to that of Vibrio cholerae (Faruque et al., 2002); with part of the pathogens infectious cycle being in contaminated water, from which it periodically emerges to cause disease. While our data suggests that an environmental stage may be important for S. flexneri\u2014whose reduced incidence has previously been correlated with the provision of clean water and improved sanitation (Esrey et al., 1985), the inverse is true for S. sonnei. It has been suggested that the O-antigen carried by Plesiomonas shigelloides (another organism isolated from faecally contaminated water)\u2014that is immunologically indistinguishable from the S. sonnei O-antigen may help to explain the contrasting global distribution of S. sonnei and S. flexneri infections (Sack et al., 1994). Exposure to P. shigelloides, through drinking contaminated ground water has been hypothesized to stimulate low level cross protective immunity against S. sonnei, explaining why it is rarely found in the resource poor settings but its incidence increases with water sanitation. If the P. shigelloides hypothesis is proved to be true, it may be that contaminated water holds the key to both the increase in S. sonnei and the decrease in S. flexneri observed as countries develop.\n\nCollectively, our analyses outline a historic pathogen with a stable core genome that comes equipped with a repertoire of virulence determinants that have enabled it to colonise, and persist, in multiple locations for hundreds of years. However, this life-cycle is at odds with current patterns of human development; with temporal analysis revealing limited evidence of intercontinental transmission and local colonisation within the last 30 years. It may be that this change is reflective of the fact that over the course of the 20th Century, many countries have industrialised; with increasing provision of clean water and sanitation possibly disrupting the traditional transmission route of S. flexneri. However, despite its decline in industrialised countries, where transmission of this pathogen by faecally contaminated food and water is well controlled, S. flexneri continues, as it has done for hundreds of years, to be a source of disease infecting millions in the low-income nations of the world.\n\n## Materials and methods\n\n### Samples\n\nContemporaneous strains isolated from patients were collected from accredited diagnostic or Public Health laboratories located in Bangladesh (ICDDRB, n = 114), South Africa (National Institute for Communicable Diseases, Johannesburg, South Africa, n = 29), and, for Francophone Africa and Latin America, from the French National Reference Centre for E. coli, Shigella, and Salmonella (Institut Pasteur, n = 54) and the Hospital for Tropical Diseases, Ho Chi Minh City, Vietnam (n = 34). A historical selection of isolates was obtained from the Institut Pasteur (n = 41) and The International Vaccine Institute and Hanyang University, Korea (n = 62), to provide a stronger temporal signal for the BEAST analysis. Additionally, we also included the HPA type strains (n = 16) (Ashton et al., 2014) and NCTC1 (Baker et al., 2014). Serotyping was performed on isolates using the standard tests used locally by the submitting lab (using either commercial or locally produced, polyclonal and monoclonal typing antisera), and the classical serotypes obtained were checked, and in most cases confirmed, using a molecular serotyping schema (Sun et al., 2011).\n\n### Sequencing\n\nDNA was extracted by collecting laboratories and sequenced at the Wellcome Trust Sanger Institute to a minimum of 50-fold coverage using an Illumina HiSeq 2000 with multiplexing of 96 samples per flow cell using 100 bp paired end reads. Sequencing data was submitted to the ENA (Genome accession numbers provided in Supplementary file 1). To perform subsequent analyses around the AMR and virulence gene determinants, sequence data was assembled de novo using Velvet (Zerbino and Birney, 2008), with assemblies improved using iCORN (Otto et al., 2010) and the Velvet Columbus module.\n\n### Bioinformatics analysis\n\nPhylogenetic and population genetic relationships were determined based on a similar approach to that employed by Holt et al. (2012) for S. sonnei. Sequence (FASTQ) files for each isolate in the study were mapped back against the reference S. flexneri serotype 2a strain 301 concatenated with its complete VP (Accession numbers: AE005674, AF386526). A whole genome alignment was produced by SNP-calling isolates, and regions that were recombinant were identified using the software package Gubbins (Croucher et al., 2014). The recombinant regions were subsequently manually checked and their content identified. Following removal of recombinant regions, mapping coverage was checked manually and variable sites were extracted. The resulting SNP alignment was used to infer a phylogeny using RAxML version 7.4 with a General Time Reversible model and gamma correction (n = 4) for among site rate variation (Stamatakis, 2006). The alignment produced prior to the removal of recombinant regions (66,524 bp in length) was passed to BAPS to identify phylogenetic clusters (Corander et al., 2004, 2008).\n\nThe individual plasmid alignment was generated by extracting the part of the combined plasmid/chromosome alignment that contained plasmid sequence only. This alignment was then analysed on its own. Following SNP calling, this produced a SNP alignment of 4784 bp that was used to generate an unrooted phylogeny and perform BAPS clustering (as above) within the plasmid population.\n\nTo examine the temporal and phylogeographic distribution of the samples we made use of BEAST, providing taxa subsets of the recombination-free alignment and providing geographic information and sample dates. The parameters were as follows: a Bayesian skyline model for population growth was used, with a log-normally distributed clock rate. For each PG BEAST was run across five chains of 100,000,000 generations each, sampled every 1000 generations. Convergence was determined by visual inspection of MCMC parameters across the chains. All parameter ESS values were \u2265200. The parameter and tree estimates were combined using the LogCombiner and TreeAnnotator components of the BEAST package, with the first 10% of states in each chain discarded as burn-in, and then produced a Maximum Clade Credibility tree from the combined file, which was visualized with FigTree.\n\nThe presence of virulence and AMR determinants (Figure 2) was determined by BLAST against reference loci as described previously (Reuter et al., 2014). For the AMR genes (Figure 2) the presence of mutations in the DNA gyrase and topoisomerase IV protein sequences were assessed by inspection of de novo assembled sequences.\n",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f1619379-3d42-42b9-bc88-f2073fa06b75",
+      "submission_id": "6f926e10-b48f-4cd7-a43f-64f47e1d803e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Diethard Tautz, Max Planck Institute for Evolutionary Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07335.017](https://doi.org/10.7554/eLife.07335.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cSpecies-wide whole genome sequencing reveals historical global spread and recent local persistence in Shigella flexneri\u201d for peer review at eLife. Your submission has been favorably evaluated by Diethard Tautz (Senior editor) and two reviewers, one of whom, Allan McNally, has agreed to share his identity.\n\nThe reviewers have discussed the reviews with one another, and the editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present a comprehensive analysis of the evolution of Shigella flexneri. The work is excellently conducted and the conclusions drawn in the manuscript are sound and solidly supported by the data. The contrast presented in the manuscript between S. flexneri and S. sonnei make this more than just another species phylogeny paper, showing very interesting insights into the effect of socio-demographic influences on how pathogenic lineages of bacteria evolve.\n\nEssential revisions:\n\n1) Looking at the section on AMR and the phylogeny it seems that PG3, which contains the serotype 2a clinically dominant strains, is the most recently emerged of the phylogroups. When one looks at the mapping of the AMR genes the low-diversity bottom half of PG3 appears to have a near identical AMR pattern. So whilst you state there is no effect of AMR on the evolution of S. flexneri lineages and dissemination, one could argue that PG3 shows signs of clonal expansion of an AMR lineage? Please clarify.\n\nFurther to this point on the discussion that AMR is not an absolute requirement for modern S. flexneri. Is it not plausible that the patchwork appearance of AMR seen in the majority of the PGS may be due to transient carriage of AMR genes? Such that they are only maintained for short periods of time when selection for them is great, but then they are rapidly lost during the hypothesised environmental phase of their life cycle?\n\n2) We consider the suggestion of a different life style or a different life-cycle between S. flexneri and other Shigella species as a very interesting hypothesis and very important to the field, if true. However, such an interpretation of the genomics data ideally requires further experimental support. As far as we know, Shigella has no environmental reservoir and human is its only host. You cite a paper reporting the isolation of S. flexneri from the environment (Faruque et al., 2002); however, similar numbers of S. dysenteriae were also isolated from these environmental samples and therefore, do not support a different life style of S. flexneri than other Shigella species. Furthermore, different virulence genes (ipaBCD) from the virulence plasmid were missing in these so-called environmental isolates, but were present in clinical isolates, suggesting avirulent phenotype of these isolates.\n\nIt would therefore be prudent to provide more evidence for an environmental persistence of S. flexneri, for example from genome sequences of food or environmental isolates. Are these available in your collection? Further, it might be useful to check for clues in the genome why S. flexneri might be more persistent in the environment. Are there any differences in carbon or nitrogen utilization pathways (different number of pseudogenes) in relation to S. Sonnei?\n\nAlternatively, we suggest a test in the lab. A controlled comparison of the survival of Shigella species in water can provide strong experimental support for such an assumption and possibly explain the different epidemiology of S. flexneri vs. S. Sonnei.\n\nIn case that neither the bioinformatic analysis provide additional clues nor the experimental approach is feasible, we would ask you to clearly explain the caveats associated with your assumption of different life styles.\n\n3) A slight weakness is that recent S. flexneri isolates from European origin are underrepresented in the collection. It appears that the most recent European strain (E2610/72) was from 1972. As global tourism from endemic countries to Europe increased greatly in the last 40 years or so, facilitating a possible intercontinental transmission might be overlooked if recent isolates are not included. For example of a recent outbreak in Europe, please see: M L Borg Ongoing outbreak of Shigella flexneri serotype 3a in men who have sex with men in England and Wales, data from 2009-2011. Eurosurveillance, Volume 17, 2012. Accordingly, we should like to ask you to assess the possibility to add more recent isolates from Europe in your study.\n",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f871c93-3dc8-4d7b-bced-eedf3c841d8d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C1",
+      "claim": "Shigella flexneri is the most common cause of bacterial dysentery in low-income countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Shigella flexneri is the most common cause of bacterial dysentery in low-income countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract without supporting data in the manuscript itself, but is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ac866481-18d6-4c14-8a3f-bf77b51ee403",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C2",
+      "claim": "S. flexneri is subdivided into seven phylogenetic groups (PGs).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis subdivides S. flexneri into seven phylogenetic groups (PGs); each containing two-or-more serotypes and characterised by distinct virulence gene complement and geographic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by BAPS clustering analysis and phylogenetic reconstruction shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "31543a79-edcb-4e79-af9e-de1695dedb71",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C3",
+      "claim": "Each phylogenetic group contains two or more serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis subdivides S. flexneri into seven phylogenetic groups (PGs); each containing two-or-more serotypes and characterised by distinct virulence gene complement and geographic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the serotype composition shown in Figure 1 pie charts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "07789c8c-c676-4bfd-abad-49621d3aca1d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C4",
+      "claim": "Each phylogenetic group is characterized by distinct virulence gene complement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis subdivides S. flexneri into seven phylogenetic groups (PGs); each containing two-or-more serotypes and characterised by distinct virulence gene complement and geographic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the virulence gene distribution analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e6efad05-512b-409b-8308-c548e7c50c96",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C5",
+      "claim": "Each phylogenetic group is characterized by distinct geographic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis subdivides S. flexneri into seven phylogenetic groups (PGs); each containing two-or-more serotypes and characterised by distinct virulence gene complement and geographic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the geographic composition shown in Figure 1 pie charts and phylogeographic analyses in Figure 1 supplements 4-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "577ea386-7b65-420a-8c47-5b3a394bb89e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C6",
+      "claim": "Geographically restricted sub-lineages of S. flexneri have persistently colonized regions for many decades to over 100 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the S. flexneri PGs we identify geographically restricted sub-lineages that appear to have persistently colonised regions for many decades to over 100 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BEAST temporal analysis showing MRCA dates and geographic clustering patterns in Figure 1 supplements 4-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "7fdb4bb4-51d8-40a0-ae7c-e295da4a3052",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C7",
+      "claim": "There is abundant evidence of antimicrobial resistance (AMR) determinant acquisition in S. flexneri.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we found abundant evidence of antimicrobial resistance (AMR) determinant acquisition, our dataset shows no evidence of subsequent intercontinental spread of antimicrobial resistant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the AMR gene distribution shown in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "97dae47d-98cd-4e1b-af4b-a84d0aaa16b3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C8",
+      "claim": "There is no evidence of intercontinental spread of antimicrobial resistant S. flexneri strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we found abundant evidence of antimicrobial resistance (AMR) determinant acquisition, our dataset shows no evidence of subsequent intercontinental spread of antimicrobial resistant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the phylogeographic analysis showing geographic restriction of AMR-carrying lineages in Figure 2 and Figure 2 supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "9eb7dfe4-4255-4443-ad72-3c858e4bc028",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C9",
+      "claim": "The pattern of colonization and AMR gene acquisition suggest that S. flexneri has a distinct life-cycle involving local persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of colonisation and AMR gene acquisition suggest that S. flexneri has a distinct life-cycle involving local persistence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic patterns and AMR distribution data presented in Figures 1-3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "41cf4d9f-84c4-4a88-b6c3-54691a35b8c5",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C10",
+      "claim": "Shigella spp. cause approximately 165 million new infections globally per year.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'genus' Shigella consists of four species (Shigella flexneri, Shigella sonnei, Shigella boydii and Shigella dysenteriae) causes approximately 165 million new infections globally per year (Kotloff et al., 1999; Ram et al., 2008), which have previously been estimated to result in up to 1 million deaths annually (Kotloff et al., 1999, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b10cb081-3775-4954-943d-d7b60e0f0de3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C11",
+      "claim": "Shigella infections have previously been estimated to result in up to 1 million deaths annually.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'genus' Shigella consists of four species (Shigella flexneri, Shigella sonnei, Shigella boydii and Shigella dysenteriae) causes approximately 165 million new infections globally per year (Kotloff et al., 1999; Ram et al., 2008), which have previously been estimated to result in up to 1 million deaths annually (Kotloff et al., 1999, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "6aaec9e6-9093-4765-bbce-5bc3c4413373",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C12",
+      "claim": "The vast majority of Shigella cases and fatalities occur in low to middle-income countries in children under the age of 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of cases and fatalities occur in low to middle-income countries in children under the age of 5 years (Kotloff et al., 1999; von Seidlein et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "3abd8351-da58-4874-aa49-207145d5dfbd",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C13",
+      "claim": "The preponderance of Shigella cases are attributable to endemic disease caused by S. flexneri.",
+      "claim_type": "EXPLICIT",
+      "source": "The preponderance of these cases are attributable to endemic disease caused by the species S. flexneri (Vinh et al., 2009; Ud-Din et al., 2013; Livio et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "0d0fa10d-c30a-4e0a-975d-cebac2283d68",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C14",
+      "claim": "Many genes that determine serotype in S. flexneri are encoded on horizontally transmissible genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Although serotyping still forms the central vocabulary for describing this species it is now widely agreed that many genes that determine serotype are encoded on horizontally transmissible genetic elements (Allison and Verma, 2000), thus facilitating serotype switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ddd18a24-8647-467f-aae1-b015e65982bb",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C15",
+      "claim": "Shigella spp. represent distinct clades that fall within the E. coli species complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Through limited genetic and genomic studies we know that Shigella spp. represent distinct clades that fall within the E. coli species complex (Pupo et al., 2000; Yang et al., 2005, 2007; Ashton et al., 2014; Sahl et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "5966ec31-67f7-4bbb-87c3-e07bf411ca58",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C16",
+      "claim": "There are two distinct S. flexneri lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies show the existence of two distinct S. flexneri lineages, with one lineage including only a single serotype (S. flexneri 6) (Choi et al., 2007) that clusters within species S. boydii (Yang et al., 2007) and possesses a different LPS O-antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "d40823ea-a347-49dd-ba92-4edcee40a883",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C17",
+      "claim": "One S. flexneri lineage includes only serotype 6, clusters within S. boydii, and possesses a different LPS O-antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies show the existence of two distinct S. flexneri lineages, with one lineage including only a single serotype (S. flexneri 6) (Choi et al., 2007) that clusters within species S. boydii (Yang et al., 2007) and possesses a different LPS O-antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "134af8f5-6bf8-478f-9753-51f08d60ee15",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C18",
+      "claim": "The second monophyletic S. flexneri group contains representatives of all other S. flexneri serotypes (1\u20135, X, Y) and is responsible for the majority of S. flexneri disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The second monophyletic S. flexneri group contains representatives of all other S. flexneri serotypes (1\u20135, X, Y) and is responsible for the majority of S. flexneri disease; it is this main lineage that is examined here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature and defines the scope of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ffb88ee3-237e-4b03-9364-5fb8f917ef2d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C19",
+      "claim": "S. dysenteriae type 1 is an epidemic pathogen characterized by sporadic, large scale outbreaks that spread rapidly and widely via intercontinental transmissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Work on the now rarely isolated (von Seidlein et al., 2006), S. dysenteriae type 1 has shown it to be an epidemic pathogen characterised by sporadic, large scale outbreaks that spread rapidly and widely via a series of intercontinental transmissions, often associated with war or famine (Rohmer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "2b1b5ae8-82db-4ef1-badd-64c2cbc62dc9",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C20",
+      "claim": "S. sonnei is highly clonal.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies examining the dominant endemic Shigella species of industrialised and newly industrialised countries, S. sonnei, have also revealed a species that is highly clonal (Karaolis et al., 1994; Holt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f07af269-a815-4c1a-92bf-07aa12980f22",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C21",
+      "claim": "S. sonnei evolved in Europe approximately 300 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "S. sonnei evolved in Europe \u223c300 years ago and has recently moved out of this region via intercontinental spread as a single, rapidly evolving lineage, establishing new, local, populations in countries as they industrialise (Holt et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "000a04b0-8344-41a7-b879-e4582a8ea9f8",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C22",
+      "claim": "S. sonnei has recently moved out of Europe via intercontinental spread as a single, rapidly evolving lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "S. sonnei evolved in Europe \u223c300 years ago and has recently moved out of this region via intercontinental spread as a single, rapidly evolving lineage, establishing new, local, populations in countries as they industrialise (Holt et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "28161f52-6998-429d-a002-12764517d8f8",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C23",
+      "claim": "S. flexneri accounts for over 50% of all cases of shigellosis in multiple studies.",
+      "claim_type": "EXPLICIT",
+      "source": "S. flexneri remains the dominant species in low-income countries (multiple studies report over 50% of all cases of shigellosis [Kotloff et al., 1999, 2013; Livio et al., 2014]), whereas S. sonnei is the most commonly isolated Shigella species in industrialised countries (77% of cases as reported by Kotloff et al., 1999) where there is better sanitation and access to clean food and drinking water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "4849d708-a53c-4748-bff3-7215d738215d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C24",
+      "claim": "S. sonnei accounts for 77% of Shigella cases in industrialized countries.",
+      "claim_type": "EXPLICIT",
+      "source": "S. flexneri remains the dominant species in low-income countries (multiple studies report over 50% of all cases of shigellosis [Kotloff et al., 1999, 2013; Livio et al., 2014]), whereas S. sonnei is the most commonly isolated Shigella species in industrialised countries (77% of cases as reported by Kotloff et al., 1999) where there is better sanitation and access to clean food and drinking water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b6a586f6-4d47-407a-a069-d066fa32d51e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C25",
+      "claim": "The study gathered a representative global collection of 351 isolates of S. flexneri spanning serotypes 1\u20135, X, Xv and Y.",
+      "claim_type": "EXPLICIT",
+      "source": "To further our understanding of the evolution, population structure and phylogeography of S. flexneri we gathered a representative global collection of 351 isolates of S. flexneri, spanning serotypes 1\u20135, X, Xv and Y, collected from the contemporary principal foci of endemic disease; Africa, Asia and South and Central America as well as historical isolates from reference collections dating back to 1914 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "a765c39d-16bf-4501-a48e-5f825f7f02b1",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C26",
+      "claim": "The S. flexneri isolates were collected from Africa, Asia, South and Central America, and include historical isolates dating back to 1914.",
+      "claim_type": "EXPLICIT",
+      "source": "To further our understanding of the evolution, population structure and phylogeography of S. flexneri we gathered a representative global collection of 351 isolates of S. flexneri, spanning serotypes 1\u20135, X, Xv and Y, collected from the contemporary principal foci of endemic disease; Africa, Asia and South and Central America as well as historical isolates from reference collections dating back to 1914 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "7b7969c0-cac7-462a-8926-1a4ca426f549",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C27",
+      "claim": "67,981 SNPs were identified among the 352 genomes (including reference genome).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 67,981 SNPs among the 352 genomes (including reference genome), with 63,186 of these on the chromosome and 4795 on the VP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the SNP calling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "01ab4eac-9b09-494d-9270-24d35e2593f5",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C28",
+      "claim": "63,186 SNPs were identified on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 67,981 SNPs among the 352 genomes (including reference genome), with 63,186 of these on the chromosome and 4795 on the VP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the SNP calling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "57d4779b-8a98-4926-bb08-8d769908bc5e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C29",
+      "claim": "4,795 SNPs were identified on the virulence plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 67,981 SNPs among the 352 genomes (including reference genome), with 63,186 of these on the chromosome and 4795 on the VP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the SNP calling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "c297b3a8-dce7-441c-937c-911a6d692ea7",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C30",
+      "claim": "After removal of recombinant regions, 55,662 SNPs remained in total.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the removal of recombinant regions (almost entirely concentrated in phage, IS elements and S. flexneri Pathogenic Islands, Figure 1\u2014figure supplement 1), 55,662 SNPs remained in total, with 53,078 on the chromosome and 2584 on the VP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the recombination filtering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "84d2d0f2-624e-425a-a93f-c8d16befef5e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C31",
+      "claim": "After removal of recombinant regions, 53,078 SNPs remained on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the removal of recombinant regions (almost entirely concentrated in phage, IS elements and S. flexneri Pathogenic Islands, Figure 1\u2014figure supplement 1), 55,662 SNPs remained in total, with 53,078 on the chromosome and 2584 on the VP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the recombination filtering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "6017deb4-62d3-4c65-ba23-191826bc080c",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C32",
+      "claim": "After removal of recombinant regions, 2,584 SNPs remained on the virulence plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the removal of recombinant regions (almost entirely concentrated in phage, IS elements and S. flexneri Pathogenic Islands, Figure 1\u2014figure supplement 1), 55,662 SNPs remained in total, with 53,078 on the chromosome and 2584 on the VP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the recombination filtering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "dcc8dd14-72c5-43dc-9490-aac04a71baad",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C33",
+      "claim": "Recombinant regions were almost entirely concentrated in phage, IS elements and S. flexneri Pathogenic Islands.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the removal of recombinant regions (almost entirely concentrated in phage, IS elements and S. flexneri Pathogenic Islands, Figure 1\u2014figure supplement 1), 55,662 SNPs remained in total, with 53,078 on the chromosome and 2584 on the VP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the recombination analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "48ed55ed-ac69-4239-8875-581b61f6e640",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C34",
+      "claim": "The virulence plasmid phylogeny precisely mirrors that of the chromosome, indicating co-evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing the BAPS analysis on alignments of the chromosome and VP collectively or individually resulted in the same pattern of clustering, reflecting that the VP phylogeny precisely mirrors that of the chromosome, indicating co-evolution (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the congruent phylogenies shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "48691244-3ca4-4274-80c4-53bce2a2d591",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C35",
+      "claim": "The phylogenetic groups are separated by considerable evolutionary distance, ranging from 1138 to 8430 SNPs between PGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic clustering of the population and the phylogenetic tree revealed a species that is composed of seven discrete PGs, separated by considerable evolutionary distance (ranging from 1138 to 8430 SNPs between PGs\u2014Figure 1\u2014figure supplement 2), this analysis provided only limited information regarding the natural history of the organism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the table in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b22f7b92-ba6d-4bc6-b975-d45f2ddc5382",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C36",
+      "claim": "Mutation rates among phylogenetic groups were similar, ranging between 6.46 \u00d7 10\u22127 and 9.54 \u00d7 10\u22127 substitutions per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring evolutionary rates and estimating the dates of the most recent common ancestor (MRCA) of individual PGs, we found that rates of mutation were similar among PGs (between 6.46 \u00d7 10\u22127 substitutions per site per year [PG1] to 9.54 \u00d7 10\u22127 substitutions per site per year [PG2]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST analysis of temporal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "de8c79ab-1d12-4b8b-8e38-0087d272ecdf",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C37",
+      "claim": "The mutation rate for PG1 is 6.46 \u00d7 10\u22127 substitutions per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring evolutionary rates and estimating the dates of the most recent common ancestor (MRCA) of individual PGs, we found that rates of mutation were similar among PGs (between 6.46 \u00d7 10\u22127 substitutions per site per year [PG1] to 9.54 \u00d7 10\u22127 substitutions per site per year [PG2]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST analysis of temporal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "405daab6-4b05-4d1d-91dd-315e495e6903",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C38",
+      "claim": "The mutation rate for PG2 is 9.54 \u00d7 10\u22127 substitutions per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring evolutionary rates and estimating the dates of the most recent common ancestor (MRCA) of individual PGs, we found that rates of mutation were similar among PGs (between 6.46 \u00d7 10\u22127 substitutions per site per year [PG1] to 9.54 \u00d7 10\u22127 substitutions per site per year [PG2]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST analysis of temporal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "330bb2fa-84ee-4e8d-ba9d-e8001e155991",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C39",
+      "claim": "The mutation rates for S. flexneri are consistent with previous estimates for S. flexneri (3.2 \u00d7 10\u22127 substitutions per site per year).",
+      "claim_type": "EXPLICIT",
+      "source": "These mutation rates are consistent with previous estimates for S. flexneri (3.2 \u00d7 10\u22127 substitutions per site per year [Zhang et al., 2014]), S. sonnei (6.0 \u00d7 10\u22127 substitutions per site per year [Holt et al., 2012]) and S. dysenteriae (6.52 \u00d7 10\u22127 substitutions per site per year [Rohmer et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the study results to published literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "06c5c8a7-1f7f-489f-9c19-9e516e7752aa",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C40",
+      "claim": "The mutation rate for S. sonnei is 6.0 \u00d7 10\u22127 substitutions per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutation rates are consistent with previous estimates for S. flexneri (3.2 \u00d7 10\u22127 substitutions per site per year [Zhang et al., 2014]), S. sonnei (6.0 \u00d7 10\u22127 substitutions per site per year [Holt et al., 2012]) and S. dysenteriae (6.52 \u00d7 10\u22127 substitutions per site per year [Rohmer et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "dfc54e7d-de38-4ffb-9aab-0e65b1aba192",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C41",
+      "claim": "The mutation rate for S. dysenteriae is 6.52 \u00d7 10\u22127 substitutions per site per year.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutation rates are consistent with previous estimates for S. flexneri (3.2 \u00d7 10\u22127 substitutions per site per year [Zhang et al., 2014]), S. sonnei (6.0 \u00d7 10\u22127 substitutions per site per year [Holt et al., 2012]) and S. dysenteriae (6.52 \u00d7 10\u22127 substitutions per site per year [Rohmer et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "9ca68d87-8447-4e4d-a1bf-261a5099bfc3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C42",
+      "claim": "The median age of the MRCA for all phylogenetic groups was between 150 and 900 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these data we predicted the MRCA of each PG, finding that the median age of the MRCA for all PGs was between 150 and 900 years ago (Figure 1, Figure 1\u2014figure supplements 4\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from BEAST temporal analysis shown in Figure 1 and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "75f961cf-304b-4c42-8ceb-c58164a60a51",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C43",
+      "claim": "PG1, 2, 4 and 6 are the oldest lineages with median BEAST estimates of MRCAs dating to between 1341 and 1659.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the PGs, PG1, 2, 4 and 6 are the oldest lineages with median BEAST estimate of MRCAs of these groups dating to between 1341 and 1659.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "3ce8b119-ef73-4b7e-9222-19f66ae78ae2",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C44",
+      "claim": "PG5 has a median estimated MRCA dating to 1822.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, PG5 and PG3, the latter containing the majority of serotype 2a isolates\u2014one of the key suggested S. flexneri vaccine targets\u2014are much younger, and these PGs have median estimated MRCAs dating to 1822 (PG5) and 1848 (PG3); contemporaneous with the MRCA of the emergence of S. sonnei from Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f1063647-40c4-4d80-9c0d-e27f75a5ef61",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C45",
+      "claim": "PG3 has a median estimated MRCA dating to 1848.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, PG5 and PG3, the latter containing the majority of serotype 2a isolates\u2014one of the key suggested S. flexneri vaccine targets\u2014are much younger, and these PGs have median estimated MRCAs dating to 1822 (PG5) and 1848 (PG3); contemporaneous with the MRCA of the emergence of S. sonnei from Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "09a21675-241e-47bf-a892-4f137110dec0",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C46",
+      "claim": "PG3 contains the majority of serotype 2a isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, PG5 and PG3, the latter containing the majority of serotype 2a isolates\u2014one of the key suggested S. flexneri vaccine targets\u2014are much younger, and these PGs have median estimated MRCAs dating to 1822 (PG5) and 1848 (PG3); contemporaneous with the MRCA of the emergence of S. sonnei from Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the phylogenetic tree and serotype distribution in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "7d4fcd36-1c46-4be2-b623-ba448e482d88",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C47",
+      "claim": "The emergence of new S. flexneri PGs did not result in displacement or replacement of isolates from other PGs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike S. sonnei, the emergence of new S. flexneri PGs did not appear to result in displacement or replacement of isolates from other PGs; rather the older PGs have persisted and continue to cause disease alongside the newer PGs, as evidenced by the fact that every PG contains at least one strain collected since 2008 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal distribution of isolates across PGs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "73532f87-18eb-4d53-8ccb-7aa05dc8f097",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C48",
+      "claim": "Every phylogenetic group contains at least one strain collected since 2008.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike S. sonnei, the emergence of new S. flexneri PGs did not appear to result in displacement or replacement of isolates from other PGs; rather the older PGs have persisted and continue to cause disease alongside the newer PGs, as evidenced by the fact that every PG contains at least one strain collected since 2008 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "3bc2f55f-2856-4d7b-8ddd-9fd69543574d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C49",
+      "claim": "Regions where S. flexneri is endemic simultaneously support at least two populations of S. flexneri originating from distinct PGs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed considerable genomic diversity in S. flexneri isolates collected from the same region. Regions where S. flexneri is endemic simultaneously supported at least two populations of S. flexneri originating from distinct PGs; with the Indian subcontinent having geographically-monophyletic sublineages from four different PGs (Figure 1, Figure 1\u2014figure supplements 4\u20136, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the phylogeographic analysis shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "4255ed45-e251-4680-87d7-1f940c81d1b5",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C50",
+      "claim": "The Indian subcontinent has geographically-monophyletic sublineages from four different phylogenetic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed considerable genomic diversity in S. flexneri isolates collected from the same region. Regions where S. flexneri is endemic simultaneously supported at least two populations of S. flexneri originating from distinct PGs; with the Indian subcontinent having geographically-monophyletic sublineages from four different PGs (Figure 1, Figure 1\u2014figure supplements 4\u20136, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the phylogeographic analysis shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "887a4467-6258-4f05-8bf8-6c642dd6fc28",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C51",
+      "claim": "Most geographically monophyletic sublineages within the PGs had MRCAs in the range of 25\u2013150 years.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these sublineages are recently introduced into these regions; most geographically monophyletic sublineages within the PGs had MRCAs in the range of 25\u2013150 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e2bb2881-d09e-4004-be9c-dbc1a202a4f0",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C52",
+      "claim": "PG2 has a MRCA dated to 1550 (95% CI: 1340\u20131725).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PG2 has a MRCA dated to 1550 (95% CI: 1340\u20131725), with Asian isolates appearing in both sublineages of this cluster (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from BEAST temporal analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "961448f0-d963-4056-a457-dfb495d6527e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C53",
+      "claim": "The MRCA for Asian isolates in PG2 was estimated to be 1544.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRCA for the Asian isolates was estimated to be 1544; however the African isolates form a single cluster that has a more recent MRCA\u2014dated to 1885 (95% CI: 1833\u20131923); a result that implies that PG2 S. flexneri was likely introduced into Africa from Asia at least 130 years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "9b73631b-35c0-421f-8281-20f722e30062",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C54",
+      "claim": "The MRCA for African isolates in PG2 was dated to 1885 (95% CI: 1833\u20131923).",
+      "claim_type": "EXPLICIT",
+      "source": "The MRCA for the Asian isolates was estimated to be 1544; however the African isolates form a single cluster that has a more recent MRCA\u2014dated to 1885 (95% CI: 1833\u20131923); a result that implies that PG2 S. flexneri was likely introduced into Africa from Asia at least 130 years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from BEAST temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "0c7f305e-5581-46c2-86fc-f5c607c9f19f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C55",
+      "claim": "PG2 S. flexneri was likely introduced into Africa from Asia at least 130 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRCA for the Asian isolates was estimated to be 1544; however the African isolates form a single cluster that has a more recent MRCA\u2014dated to 1885 (95% CI: 1833\u20131923); a result that implies that PG2 S. flexneri was likely introduced into Africa from Asia at least 130 years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic and temporal analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f94010ec-e4e1-43f8-b281-c10367d67781",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C56",
+      "claim": "There is very limited evidence of large-scale species-wide recombination within the S. flexneri genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps surprisingly for a gastrointestinal pathogen of the E. coli complex, at least on a population level, we found very limited evidence of large-scale species-wide recombination within the genome (Figure 1\u2014figure supplement 1), with S. flexneri displaying a recombination profile more in line with the lifestyle-restricted ST131 than with members of other gastrointestinal pathovars such as ETEC (McNally et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the recombination analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "104f0ca4-a35b-45af-b71c-a647d2dd6c46",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C57",
+      "claim": "S. flexneri displays a recombination profile more in line with lifestyle-restricted ST131 than with ETEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps surprisingly for a gastrointestinal pathogen of the E. coli complex, at least on a population level, we found very limited evidence of large-scale species-wide recombination within the genome (Figure 1\u2014figure supplement 1), with S. flexneri displaying a recombination profile more in line with the lifestyle-restricted ST131 than with members of other gastrointestinal pathovars such as ETEC (McNally et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made based on the recombination analysis and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "0660eece-7451-4ab1-956c-8f630bdd624f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C58",
+      "claim": "Where recombination could be identified in the virulence repertoire, it was generally present among all isolates within a single PG(s), indicating ancestral recombination prior to PG divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the virulence repertoire, where recombination could be identified, it was generally present among all isolates within a single PG(s), indicating that the recombination was likely to be ancestral occurring prior to PG divergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the recombination patterns observed in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "159aa2dc-f6c9-4cb4-9494-55a1f89e91bf",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C59",
+      "claim": "Most evident recombination is restricted to previously identified mobile genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, most evident recombination is restricted to previously identified mobile genetic elements (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the recombination analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "cec78e62-6afc-4fa7-86e4-a4563bf01e61",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C60",
+      "claim": "Many known virulence functions are ubiquitous to all phylogenetic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining known chromosomally encoded virulence determinants, it is clear that many known virulence functions are ubiquitous to all PGs (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the virulence gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "470ddf16-ec38-479a-977a-ba4414810fd3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C61",
+      "claim": "The virulence plasmid and aerobactin were acquired early in S. flexneri evolutionary history and have been subsequently retained.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of virulence determinants indicated that many of the genes/islands whose loss is known to attenuate S. flexneri virulence (such as the VP [Sansonetti et al., 1982] and aerobactin [Lawlor et al., 1987; Wyckoff et al., 2009]) were acquired early in its evolutionary history and have been subsequently retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the virulence gene distribution shown in Figure 2 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "75985171-02bd-4324-8558-97108797e550",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C62",
+      "claim": "Sat (Serine Protease Autotransporter) is found in PGs 2, 4, and 7, but absent from PGs 1, 3, 5 or 6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some variation in the composition of virulence determinants is also evident. For example, Sat, a Serine Protease Autotransporter, is found in PGs 2, 4, and 7, but absent from PGs 1, 3, 5 or 6 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the virulence gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f75c15d1-c7be-48e8-bfce-03df0c42ac74",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C63",
+      "claim": "PGs 1, 3, 5 and 6 possess a genetic scar suggesting that Sat was present ancestrally and has been subsequently lost.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Sat, a Serine Protease Autotransporter, is found in PGs 2, 4, and 7, but absent from PGs 1, 3, 5 or 6 (Figure 2). Although the latter PGs possess a genetic scar suggesting that Sat was present ancestrally and has been subsequently lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f1f34835-0bfb-4a8b-8095-de767a9ed2b8",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C64",
+      "claim": "The SHI-1 pathogenicity island was acquired once between 1848 and 1882 near the root of PG3.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that the SHI-1 pathogenicity island\u2014a distinguishing feature of serotype 2a (the dominant serotype causing disease world-wide [Kotloff et al., 1999])\u2014was acquired once (between 1848 and 1882) near to the root of PG3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic distribution and temporal analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "cb23965e-1bdf-4551-860e-824dffb383ff",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C65",
+      "claim": "SHI-1 carries genes encoding three key virulence associated proteins: Pic, SigA, and ShET1.",
+      "claim_type": "EXPLICIT",
+      "source": "SHI-1 carries genes encoding three key virulence associated proteins\u2014Pic, (Henderson et al., 1999) SigA (Al-Hasani et al., 2000), and the S. flexneri enterotoxin ShET1 (Fasano et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "48f180f8-65a8-4ca1-9ec3-efa1457b9bf3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C66",
+      "claim": "Pic encodes a secreted protease that has mucinase activity and has been suggested to be involved in haemagglutination and serum resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Pic, which is also found in Enteroaggregative E. coli, encodes a secreted protease that has been shown to have mucinase activity and has been suggested to be involved in haemagglutination and serum resistance (Henderson et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "0491d16f-cc23-44de-bd40-3ee239483f32",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C67",
+      "claim": "SigA is thought to be involved in fluid accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "SigA is thought to be involved in fluid accumulation (Al-Hasani et al., 2000), while the S. flexneri enterotoxin ShET1 has also been shown to be involved in fluid accumulation in rabbit ileal loop models (Fasano et al., 1997), and has been proposed as being the causative agent of the voluminous watery diarrhoea characteristic of a S. flexneri serotype 2a infection (Noriega et al., 1995; Fasano et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "33bc4312-7dcf-4b91-9d73-82c364e5d38f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C68",
+      "claim": "ShET1 has been shown to be involved in fluid accumulation in rabbit ileal loop models.",
+      "claim_type": "EXPLICIT",
+      "source": "SigA is thought to be involved in fluid accumulation (Al-Hasani et al., 2000), while the S. flexneri enterotoxin ShET1 has also been shown to be involved in fluid accumulation in rabbit ileal loop models (Fasano et al., 1997), and has been proposed as being the causative agent of the voluminous watery diarrhoea characteristic of a S. flexneri serotype 2a infection (Noriega et al., 1995; Fasano et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "1d9abedf-acfc-4fac-b1cb-f1f1488c87a6",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C69",
+      "claim": "ShET1 has been proposed as the causative agent of the voluminous watery diarrhoea characteristic of S. flexneri serotype 2a infection.",
+      "claim_type": "EXPLICIT",
+      "source": "SigA is thought to be involved in fluid accumulation (Al-Hasani et al., 2000), while the S. flexneri enterotoxin ShET1 has also been shown to be involved in fluid accumulation in rabbit ileal loop models (Fasano et al., 1997), and has been proposed as being the causative agent of the voluminous watery diarrhoea characteristic of a S. flexneri serotype 2a infection (Noriega et al., 1995; Fasano et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "15cb0534-72bc-4391-8683-d0ca0c3ebd7f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C70",
+      "claim": "SHI-1 is present in 135 of 146 PG3 isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SHI-1 is only present in PG3 (135 of 146 PG3 isolates included carried this island), it is present in the range of serotypes found within this phylogroup\u2014including multiple isolates of serotypes 1a, 2a, 2b and 5a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the virulence gene screening shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "faf80820-5831-43af-816d-280440552b17",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C71",
+      "claim": "SHI-1 is present in multiple serotypes within PG3, including serotypes 1a, 2a, 2b and 5a.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SHI-1 is only present in PG3 (135 of 146 PG3 isolates included carried this island), it is present in the range of serotypes found within this phylogroup\u2014including multiple isolates of serotypes 1a, 2a, 2b and 5a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the virulence gene screening and serotype data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "0901d6cb-4d87-4f58-b5bc-9502e05495c8",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C72",
+      "claim": "The SHI-1 toxin is not peculiar to strains carrying a particular serotype, but rather to strains within PG3 that are predominantly serotype 2a.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the toxin is not peculiar to strains carrying a particular serotype, but rather to strains within a PG that are predominantly serotype 2a; consistent with reports of a small number of non-2a serotypes reported to encode this toxin (Noriega et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution of SHI-1 across serotypes within PG3 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b1e64bc4-18a6-4cb4-95d0-e9bca7ff2ba2",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C73",
+      "claim": "There is evidence for recombination amongst the genes responsible for serotype.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we observe evidence for recombination amongst the genes responsible for serotype (see gtr Figure 1\u2014figure supplement 1), which remains the de-facto method for describing strains of Shigella.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the recombination analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "75250a43-a581-4153-9663-1b7cfd9b5d56",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C74",
+      "claim": "There was no significant difference between classical and in silico molecular serotyping schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "When cross comparing the classical and in silico molecular serotyping schemes (Sun et al., 2011) we saw no significant difference in the serotypes predicted (assessed using a Kolmogorov\u2013Smirnov test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison of serotyping methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "966f6fcd-76c5-47f6-b9ab-1b1e00fa0d6f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C75",
+      "claim": "All phylogenetic groups contained multiple serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results do demonstrate that while certain serotypes make up the majority of certain clusters (Figure 1, Figure 2\u2014figure supplement 1), all of the PGs contained multiple serotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the serotype distribution shown in Figure 1 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "98896846-18f0-4f09-a78c-d69bc10ea744",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C76",
+      "claim": "Serotype switching occurs in S. flexneri, undermining the principle that serotype can be used as a basis for describing lineage properties or for epidemiological surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that although the core genome is remarkably stable, serotype switching does occur undermining the principle that serotype can be used either as a basis for describing the properties of a lineage or for epidemiological surveillance and tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of multiple serotypes within phylogenetic groups.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ebb7467e-234d-461a-826e-c154c9e4cb73",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C77",
+      "claim": "Vaccines targeting a particular backbone using a serotype could be susceptible to the effects of serotype switching.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also imply that vaccines targeting a particular backbone using a serotype (such as a 2a vaccine to target SHI-1 encoding isolates from PG3) could be susceptible to the effects of serotype switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of serotype switching within phylogenetic groups.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e84d064e-6d06-4ef2-9759-19ff2f7085fc",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C78",
+      "claim": "The sit locus has been sporadically lost across the S. flexneri tree.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to our observations around SHI-1 and the VP we also observed some variation in virulence factor complement within PGs principally for Iron uptake functions; the sit (Runyen-Janecky et al., 2003) and fec loci (Luck et al., 2001) and enterobactin biosynthesis operon. Across our S. flexneri tree it is apparent that these have contrasting patterns of gain and loss; sit is ancestral, but was sporadically lost (unexpectedly, as it has been reported to be in all clinical isolates previously [Runyen-Janecky et al., 2003]), while fec has been gained sporadically by isolates within PG3, as well as being gained (and retained) on separate occasions by isolates in PG1, 2 and 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the virulence gene distribution shown in Figure 2 and contrasts with published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "1b40ecf6-8e65-4b7a-a9e6-39ab2077748f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C79",
+      "claim": "The fec locus has been gained sporadically by isolates within PG3, as well as being gained and retained on separate occasions by isolates in PG1, 2 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "Across our S. flexneri tree it is apparent that these have contrasting patterns of gain and loss; sit is ancestral, but was sporadically lost (unexpectedly, as it has been reported to be in all clinical isolates previously [Runyen-Janecky et al., 2003]), while fec has been gained sporadically by isolates within PG3, as well as being gained (and retained) on separate occasions by isolates in PG1, 2 and 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the virulence gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ec10c616-33e1-41b7-8984-50be51cc8b55",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C80",
+      "claim": "The enterobactin genes are present across PGs 3, 5, 7 and 4, as well as a subset of related isolates within PG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of additional interest is the enterobactin operon; which encodes a high affinity iron siderophore (O'Brien and Gibson, 1970). It has previously been reported that in S. flexneri the enterobactin genes are 'rarely utilized' (Schmitt and Payne, 1988; Wyckoff et al., 2009; Reuter et al., 2014); however, our data show that the enterobactin genes are present across PGs 3, 5, 7 and 4, as well as a subset of related isolates within of PG1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the virulence gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "10e1fa2f-fa4c-4b06-b179-b3fe89e783d6",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C81",
+      "claim": "The enterobactin gene phylogenetic topology is the same as that observed for the whole genome tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the enterobactin gene specifically, we observed the same phylogenetic topology as that observed for the whole genome tree (Figure 2, Figure 2\u2014figure supplement 2); suggesting this element is ancestral, and has been lost by a subset of PGs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the enterobactin gene phylogeny shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "c22d5d87-bc8e-4273-b3ba-18372b2f9960",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C82",
+      "claim": "The enterobactin genes are ancestral and have been lost by a subset of phylogenetic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the enterobactin gene specifically, we observed the same phylogenetic topology as that observed for the whole genome tree (Figure 2, Figure 2\u2014figure supplement 2); suggesting this element is ancestral, and has been lost by a subset of PGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic analysis of enterobactin genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "0130a421-b2af-4271-995b-6eb6ce7efa69",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C83",
+      "claim": "Six tightly clustered isolates within PG3 carry a Shiga toxin 1a (Stx1a)-encoding phage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these PG-wide patterns, within PG3 we observed six tightly clustered isolates that also carry a Shiga toxin 1a (Stx1a)-encoding phage (Figure 2) which is identical to the recently reported \u03c6POC-J13 (accession number KJ603229) (Gray et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the virulence gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "40107fb1-c8b0-475a-b726-7ad57f927465",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C84",
+      "claim": "The Stx1a-encoding phage is identical to the recently reported \u03c6POC-J13.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these PG-wide patterns, within PG3 we observed six tightly clustered isolates that also carry a Shiga toxin 1a (Stx1a)-encoding phage (Figure 2) which is identical to the recently reported \u03c6POC-J13 (accession number KJ603229) (Gray et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "92010a7b-1ebd-4cdd-b329-4f316a975db7",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C85",
+      "claim": "The Stx1a-carrying isolates were collected between 2003 and 2008 from Latin America (Haiti, French Guiana and the Dominican Republic).",
+      "claim_type": "EXPLICIT",
+      "source": "These isolates were collected between 2003 and 2008 from Latin America (Haiti, French Guiana and the Dominican Republic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is documented in the sample metadata.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "85798684-9fb0-4245-9c03-ac06baf4181f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C86",
+      "claim": "The Stx1a phage was likely acquired once in this sublineage of PG3.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the reference phage clusters phylogenetically within our sequenced isolates it is likely that the phage was acquired once in this sublineage of PG3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic clustering of Stx1a-carrying isolates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "66cc9a14-a156-4899-af90-40a3584922a3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C87",
+      "claim": "The Stx1a phage could have been acquired no later than 1998.",
+      "claim_type": "EXPLICIT",
+      "source": "The dating analysis on the Stx-1-containing PG3 sublineage showed that the phage could have been acquired no later than 1998 (Figure 1\u2014figure supplement 6) suggesting that strains carrying this phage may have been present but undetected in the population for 5\u201310 years before the earliest reported isolation of Stx1a-producing S. flexneri.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from BEAST temporal analysis shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "cde88d66-5845-4f65-90dd-7eaab0fccbc3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C88",
+      "claim": "Strains carrying the Stx1a phage may have been present but undetected in the population for 5\u201310 years before the earliest reported isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "The dating analysis on the Stx-1-containing PG3 sublineage showed that the phage could have been acquired no later than 1998 (Figure 1\u2014figure supplement 6) suggesting that strains carrying this phage may have been present but undetected in the population for 5\u201310 years before the earliest reported isolation of Stx1a-producing S. flexneri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b9377beb-cfd3-4dfe-bf5c-5dc7bd452a67",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C89",
+      "claim": "AMR gene distribution is highly variable both within and across phylogenetic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening for the presence of known AMR genes (Figure 2) we found that AMR gene distribution was highly variable both within and across PGs (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the AMR gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "d3569102-935b-45b0-8ab2-f1cc627b8fe0",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C90",
+      "claim": "There is little evidence that acquisition of AMR-related loci is linked to the establishment or replacement of dominant lineages in any geographic location.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike S. sonnei, we observe little evidence that the acquisition of AMR-related loci is linked to the establishment or replacement of dominant lineages in any geographic location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic and AMR distribution analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "cd9c2ec5-6d28-4841-aef9-740fcd08db18",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C91",
+      "claim": "There is limited historical evidence of global expansion of S. flexneri as a result of AMR.",
+      "claim_type": "EXPLICIT",
+      "source": "While published evidence does exist of one major, on-going, clonal outbreak of S. flexneri in high income countries that has been shown to be the result of a combination of specific epidemiological, AMR and behavioural factors within the MSM community (Baker et al., 2015), examining our dataset focused around historical isolates and those with an origin in low-income countries, we observe limited historical evidence of global expansion as a result of AMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic and AMR distribution analysis of the dataset.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "74b76b20-a8c7-443f-a3f8-b98b3cab37b0",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C92",
+      "claim": "The widespread acquisition of AMR determinants occurred independently across the S. flexneri phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast we observe the widespread acquisition of AMR determinants independently across the tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the AMR gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "53322249-bf40-497d-a6cf-e9859bf12e2e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C93",
+      "claim": "The SRL-PAI has been introduced independently on at least nine occasions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that the SRL-PAI has been introduced independently on at least nine occasions (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ancestral state reconstruction shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "dd728cd9-55c1-4bc5-b99e-4afa8f91f4dd",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C94",
+      "claim": "The SRL-PAI has been maintained in subsequent lineages for protracted periods of time in six cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In six of these it has been maintained in subsequent lineages for protracted periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic distribution of SRL-PAI shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "96f76300-ce75-4fc7-9d1a-39a12b2b4bb9",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C95",
+      "claim": "There is no evidence of isolates carrying SRL-PAI spreading outside of their geographic region.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, however, no evidence of isolates carrying SRL-PAI spreading outside of their geographic region, and, once acquired, in a number of cases it appears that the SRL-MDRE may have been subsequently lost (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the phylogeographic analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "7fb7e5f2-ee1a-432b-8af8-b2c103a9ce05",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C96",
+      "claim": "In a number of cases the SRL-MDRE may have been subsequently lost after acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, however, no evidence of isolates carrying SRL-PAI spreading outside of their geographic region, and, once acquired, in a number of cases it appears that the SRL-MDRE may have been subsequently lost (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the phylogenetic distribution shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "4defb446-d12a-4288-b88c-6843b3f6b2a1",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C97",
+      "claim": "There are 23 internal branches where non SRL-PAI resistance determinants have been acquired.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the SRL-PAI we observe 23 internal branches where non SRL-PAI resistance determinants have been acquired (Figure 2), depicting a distinctive wave-like pattern of resistance determinant acquisition over time (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the AMR gene distribution shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "9a4ad940-fae3-47cc-91b4-1257db870730",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C98",
+      "claim": "The earliest resistance genes observed in the population code for sulphonamide resistance (1950s).",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest resistance genes observed in the population code for sulphonamide resistance (1950s), followed by streptomycin and tetracycline (1960s) resistance, with \u03b2 lactamases arising first in strains isolated in the 1970s (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the temporal distribution of AMR genes shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f536969b-0ab9-4bf8-9e50-3ba1748486f5",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C99",
+      "claim": "Streptomycin and tetracycline resistance genes appeared in the 1960s.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest resistance genes observed in the population code for sulphonamide resistance (1950s), followed by streptomycin and tetracycline (1960s) resistance, with \u03b2 lactamases arising first in strains isolated in the 1970s (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the temporal distribution of AMR genes shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e6a5d8e4-08d3-41b7-b891-385709070d48",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C100",
+      "claim": "\u03b2-lactamases arose first in strains isolated in the 1970s.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest resistance genes observed in the population code for sulphonamide resistance (1950s), followed by streptomycin and tetracycline (1960s) resistance, with \u03b2 lactamases arising first in strains isolated in the 1970s (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the temporal distribution of AMR genes shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "d159b25f-f1af-4df9-8d58-bd71890d1865",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C101",
+      "claim": "Strains acquiring AMR determinants remain geographically restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observe that in all cases within S. flexneri the strains acquiring AMR determinants remain geographically restricted, although on a population level we also observe an upward trend in AMR determinant possession over time, in all PGs (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic and AMR distribution analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "c2571326-fab1-477a-86b1-42bcec76fe6e",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C102",
+      "claim": "There is an upward trend in AMR determinant possession over time in all phylogenetic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observe that in all cases within S. flexneri the strains acquiring AMR determinants remain geographically restricted, although on a population level we also observe an upward trend in AMR determinant possession over time, in all PGs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the temporal trend shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ee964013-67e6-43c8-8d56-5136a68f7c0c",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C103",
+      "claim": "S. flexneri strains that do not harbour large numbers of AMR determinants can still be isolated in the 21st century.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that whilst AMR is widespread in the 21st century, we can isolate S. flexneri strains that do not harbour large numbers of AMR determinants; this is in marked contrast to observations within the S. sonnei population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the AMR distribution shown in Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "8d84713a-650f-454f-99b9-1170273c632f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C104",
+      "claim": "At a population level, S. flexneri is characterized by long-term colonization of endemic regions with limited evidence of intercontinental transmission within the last 30 years.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident from the presented data that, at a population level, S. flexneri is characterised by long-term colonisation of endemic regions, with limited evidence of intercontinental transmission within the last 30 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic analysis presented in the results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "634cce96-ee2c-4e5f-b8ea-e53121ac9ee0",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C105",
+      "claim": "Endemic countries support a diverse population of S. flexneri and have done for some time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also suggest that endemic countries support a diverse population of S. flexneri, and have done for some time, implying long-term local-transmission/colonisation in those settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic diversity and temporal analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "9f4c60bc-8ae1-4714-9fcd-dfbd62299e24",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C106",
+      "claim": "S. sonnei is historically characterized by recent colonization of countries and dominant pandemic lineages with frequent inter-country and inter-continental transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in direct contrast to S. sonnei, where historically the population is characterised by recent colonisation of countries and dominant pandemic lineages, with frequent inter-country and inter-continental transmission and repeated strain replacement (Holt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "41abf30b-d772-4fe3-ac18-fa5122aae915",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C107",
+      "claim": "For S. sonnei, acquisition of multiple AMR genes was strongly associated with lineage replacement by dominant resistant lineages on a global scale.",
+      "claim_type": "EXPLICIT",
+      "source": "For S. sonnei the acquisition of multiple AMR genes was strongly associated with lineage replacement by dominant resistant lineages, on a global scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with published S. sonnei studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "65fd955f-f100-4080-bbd4-7d0b36055761",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C108",
+      "claim": "For S. flexneri, there have been over 30 independent acquisitions of AMR determinants at a local level with limited global spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas, for S. flexneri, we observe a population where there have been over 30 independent acquisitions of AMR determinants at a local level; but these acquisitions generally result in limited global spread (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the AMR distribution and phylogeographic analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "a025ec66-f33c-4f94-bc23-ae6fced4cc6d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C109",
+      "claim": "AMR may be a significant factor in maintaining existing S. flexneri lineages within specific locales but does not lead to pandemic displacement of other pre-existing lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that while AMR may be a significant factor in maintaining existing lineages within specific locales we do not see widespread evidence of AMR acquisition leading to the pandemic displacement of other pre-existing lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic and AMR distribution analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "253ff6fc-3f2e-49ec-afe8-4685b36b3298",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C110",
+      "claim": "S. flexneri strains can be recovered from the environment in endemic countries unlinked to any outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been shown that S. flexneri strains can be recovered from the environment in endemic countries (Faruque et al., 2002) unlinked to any outbreak, and that under experimental conditions S. flexneri can survive for several months in water at room temperature (Uyanik et al., 2008), simulated environmental water (Hendricks and Morrison, 1967; Islam et al., 1996) and upon foodstuffs (Islam et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "d3659fe0-d994-4a6b-a764-3ed4bcf2f045",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C111",
+      "claim": "Under experimental conditions S. flexneri can survive for several months in water at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been shown that S. flexneri strains can be recovered from the environment in endemic countries (Faruque et al., 2002) unlinked to any outbreak, and that under experimental conditions S. flexneri can survive for several months in water at room temperature (Uyanik et al., 2008), simulated environmental water (Hendricks and Morrison, 1967; Islam et al., 1996) and upon foodstuffs (Islam et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "842862df-1051-4c0c-ac76-e938ea10ae35",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C112",
+      "claim": "There are multiple examples of S. flexneri outbreaks where the outbreak strain was traced back to and isolated from local water sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there are multiple examples of S. flexneri outbreaks where the outbreak strain was traced back to, and isolated from local water sources (Swaddiwudhipong et al., 1995; He et al., 2009; Saha et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "5aa5b2b1-aa39-449b-a74d-6b2eb46264ca",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C113",
+      "claim": "Within Bangladesh, S. flexneri disease risk was persistent throughout the year and associated with environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, at least one study has been undertaken that has demonstrated that within Bangladesh S. flexneri disease risk was persistent throughout the year and associated with environmental factors (geographic location/provision of flood defences) (Emch et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "ffd4b6a0-4f31-4147-8c6a-609f756f3bb4",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C114",
+      "claim": "The provision of clean water and good sanitation correlates with a reduction in the rates of S. flexneri disease.",
+      "claim_type": "EXPLICIT",
+      "source": "When these studies are combined with both our results and additional observations that the provision of clean water and good sanitation correlates with a reduction in the rates of S. flexneri disease (Esrey et al., 1985), we believe that the implication is that in an environment where water is frequently persistently contaminated with faeces, S. flexneri, in effect, persists in the environment, and has been doing so over the long term, in countries around the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e6d080f5-e5f4-4eda-93ac-91f2fb7fc781",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C115",
+      "claim": "In environments where water is frequently contaminated with faeces, S. flexneri persists in the environment over the long term.",
+      "claim_type": "EXPLICIT",
+      "source": "When these studies are combined with both our results and additional observations that the provision of clean water and good sanitation correlates with a reduction in the rates of S. flexneri disease (Esrey et al., 1985), we believe that the implication is that in an environment where water is frequently persistently contaminated with faeces, S. flexneri, in effect, persists in the environment, and has been doing so over the long term, in countries around the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of published literature and the study's phylogeographic findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b1743c10-7f91-466b-a932-68e7b5bfe125",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C116",
+      "claim": "The lifecycle of S. flexneri disease is analogous to that of Vibrio cholerae, with part of the pathogen's infectious cycle being in contaminated water.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the temporal and phylogeographic analyses presented here in this context, we think that the evidence supports the concept, suggested previously, that in endemic countries the lifecycle of S. flexneri disease is analogous to that of Vibrio cholerae (Faruque et al., 2002); with part of the pathogens infectious cycle being in contaminated water, from which it periodically emerges to cause disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the study's findings and supported by citation to published literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e0388623-d78b-4c78-842b-ecb431893d29",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C117",
+      "claim": "The O-antigen carried by Plesiomonas shigelloides is immunologically indistinguishable from the S. sonnei O-antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the O-antigen carried by Plesiomonas shigelloides (another organism isolated from faecally contaminated water)\u2014that is immunologically indistinguishable from the S. sonnei O-antigen may help to explain the contrasting global distribution of S. sonnei and S. flexneri infections (Sack et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "c13e553d-438a-4ca9-ab27-2942fa5136e7",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C118",
+      "claim": "Exposure to P. shigelloides through drinking contaminated ground water has been hypothesized to stimulate low level cross protective immunity against S. sonnei.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to P. shigelloides, through drinking contaminated ground water has been hypothesized to stimulate low level cross protective immunity against S. sonnei, explaining why it is rarely found in the resource poor settings but its incidence increases with water sanitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis discussed in the context of published literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "5d198daf-0c48-4db0-9bc4-761efddf644c",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C119",
+      "claim": "S. flexneri is a historic pathogen with a stable core genome equipped with a repertoire of virulence determinants that have enabled it to colonize and persist in multiple locations for hundreds of years.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our analyses outline a historic pathogen with a stable core genome that comes equipped with a repertoire of virulence determinants that have enabled it to colonise, and persist, in multiple locations for hundreds of years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic, temporal, and virulence gene analyses presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "66e1f0c6-a365-44d5-b4d0-ea9ff34c5905",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C120",
+      "claim": "Temporal analysis reveals limited evidence of intercontinental transmission and local colonization of S. flexneri within the last 30 years.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this life-cycle is at odds with current patterns of human development; with temporal analysis revealing limited evidence of intercontinental transmission and local colonisation within the last 30 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogeographic and temporal analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "376b5569-eb98-4b56-8f81-5ea1a5647897",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C121",
+      "claim": "Over the course of the 20th Century, many countries have industrialized with increasing provision of clean water and sanitation possibly disrupting the traditional transmission route of S. flexneri.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that this change is reflective of the fact that over the course of the 20th Century, many countries have industrialised; with increasing provision of clean water and sanitation possibly disrupting the traditional transmission route of S. flexneri.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the temporal patterns observed and general knowledge of public health improvements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "a087b4cb-afde-42f1-a486-fe93fa1b30ce",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "claim_id": "C122",
+      "claim": "S. flexneri continues to be a source of disease infecting millions in low-income nations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its decline in industrialised countries, where transmission of this pathogen by faecally contaminated food and water is well controlled, S. flexneri continues, as it has done for hundreds of years, to be a source of disease infecting millions in the low-income nations of the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and the study's findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S. flexneri is subdivided into seven phylogenetic groups (PGs) based on BAPS clustering analysis of 67,981 SNPs identified from 352 genomes. Each PG contains two or more serotypes and is characterized by distinct virulence gene complement and geographic range. The PGs are separated by considerable evolutionary distance (1138-8430 SNPs), and the virulence plasmid phylogeny mirrors the chromosome phylogeny, indicating co-evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 and C27-C35 collectively provide strong evidence for the phylogenetic structure of S. flexneri. The BAPS clustering analysis (C2), SNP identification (C27-C32), recombination filtering (C30-C33), and phylogenetic analyses (C34-C35) are well-documented with supporting figures. The characterization of PGs by serotype (C3), virulence genes (C4), and geography (C5) is demonstrated in Figures 1 and 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutation rates among S. flexneri phylogenetic groups are similar (6.46-9.54 \u00d7 10\u207b\u2077 substitutions per site per year), consistent with rates in other Shigella species. The median age of MRCA for all PGs ranges from 150-900 years ago, with PG1, 2, 4, and 6 being the oldest (1341-1659) and PG3 and PG5 being younger (1822 and 1848, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 are supported by BEAST temporal analysis shown in Figure 1 and supplements. The mutation rates are consistent with published estimates for related species (C39-C41), and the MRCA dates are derived from appropriate phylogenetic methods. The confidence intervals are provided for key estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f267c37d-d4de-4512-98e8-7d3755e213f0",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "S. flexneri exhibits long-term colonization of endemic regions with geographically restricted sub-lineages persisting for decades to over 100 years. Unlike S. sonnei, the emergence of new PGs did not result in displacement of older lineages. Endemic regions simultaneously support multiple populations from distinct PGs, with limited evidence of intercontinental transmission within the last 30 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C55, C104-C105, and C120 are well-supported by phylogeographic and temporal analyses shown in Figures 1-2 and supplements. The BEAST analysis provides MRCA dates for geographically monophyletic sublineages (C51-C54), and the observation that every PG contains recent isolates (C48) supports the persistence claim. The specific example of PG2 introduction into Africa (C55) is supported by temporal data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e794bd9d-707b-4fc2-abf9-74c85c40f96a",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "S. flexneri displays very limited large-scale species-wide recombination, with a recombination profile more similar to lifestyle-restricted ST131 than to ETEC. Most evident recombination is restricted to mobile genetic elements, and where recombination is identified in the virulence repertoire, it is generally ancestral to PG divergence. Evidence for recombination exists among serotype-determining genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 and C73 are supported by recombination analysis shown in Figure 1\u2014figure supplement 1. The comparison to ST131 and ETEC (C57) is based on cited literature and the recombination patterns observed. The restriction of recombination to mobile elements (C59) and ancestral recombination in virulence genes (C58) are demonstrated in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "4ce4f08f-2858-42d8-8d09-546d693f3f52",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Many known virulence functions are ubiquitous to all PGs, including the virulence plasmid and aerobactin, which were acquired early and retained. However, variation exists in virulence factor complement, including the Sat protease (present in PGs 2, 4, 7 but lost from PGs 1, 3, 5, 6), iron uptake loci (sit, fec), and enterobactin biosynthesis genes (present in PGs 1, 3, 4, 5, 7 and ancestral but lost in some PGs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 and C78-C82 are supported by virulence gene distribution analysis shown in Figure 2. The presence/absence patterns are clearly demonstrated, and the inference of ancestral presence with subsequent loss (C63, C82) is supported by phylogenetic distribution and genetic scars. The enterobactin phylogeny (C81) matches the whole genome tree topology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The SHI-1 pathogenicity island was acquired once between 1848-1882 near the root of PG3 and is present in 135 of 146 PG3 isolates. SHI-1 carries genes encoding Pic, SigA, and ShET1, which are involved in mucinase activity, fluid accumulation, and watery diarrhea. SHI-1 is present in multiple serotypes within PG3 (1a, 2a, 2b, 5a), demonstrating it is not serotype-specific but rather PG3-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C72 are well-supported by phylogenetic distribution (Figure 2), temporal analysis, and cited literature. The single acquisition event (C64) is inferred from phylogenetic clustering, the temporal estimate is from BEAST analysis, and the presence across multiple serotypes (C71-C72) is demonstrated by the data. The functional roles of the genes (C65-C69) are supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "b13421e1-9501-4dd2-af5b-ef161abd574d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Classical and in silico molecular serotyping schemes show no significant difference. However, all PGs contain multiple serotypes, indicating that serotype switching occurs in S. flexneri. This undermines the use of serotype for describing lineage properties or epidemiological surveillance and suggests that serotype-based vaccines could be susceptible to serotype switching effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by statistical comparison (Kolmogorov-Smirnov test) and serotype distribution data shown in Figures 1 and 2. The observation of multiple serotypes within PGs (C75) directly supports the occurrence of serotype switching (C76). However, C77 is more speculative about vaccine implications, though it is a reasonable inference from the serotype switching observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Six tightly clustered isolates within PG3 carry a Shiga toxin 1a (Stx1a)-encoding phage identical to \u03c6POC-J13, collected from Latin America between 2003-2008. The phage was likely acquired once in this sublineage no later than 1998, suggesting strains carrying this phage may have been present but undetected for 5-10 years before the earliest reported isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 are supported by virulence gene screening (Figure 2), phylogenetic clustering, and BEAST temporal analysis (Figure 1\u2014figure supplement 6). The identity to \u03c6POC-J13 (C84) is supported by citation, and the single acquisition event (C86) is inferred from phylogenetic clustering. The temporal estimate (C87-C88) is derived from BEAST analysis with appropriate uncertainty acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There is abundant evidence of AMR determinant acquisition in S. flexneri, with highly variable distribution within and across PGs. However, there is no evidence of intercontinental spread of AMR-resistant strains. The SRL-PAI has been introduced independently at least nine occasions and maintained in six cases, but isolates carrying it remain geographically restricted. Over 30 independent acquisitions of AMR determinants occurred at local levels with limited global spread. AMR acquisition shows a temporal wave pattern (sulfonamides in 1950s, streptomycin/tetracycline in 1960s, \u03b2-lactamases in 1970s), with an upward trend over time but strains without AMR can still be isolated in the 21st century.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C89-C103, C108-C109 are strongly supported by AMR gene distribution analysis (Figure 2), phylogeographic analysis (Figure 2\u2014figure supplement 3), and temporal trends (Figure 3). The independent acquisitions (C92-C93) are demonstrated by ancestral state reconstruction, geographic restriction (C95, C101) is shown by phylogeographic analysis, and temporal patterns (C98-C100, C102) are clearly demonstrated in Figure 3. The contrast with S. sonnei (C90-C91) is supported by comparison with cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "a125c0b7-bbf6-4806-bfe6-3e65aa59de3d",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "S. sonnei is historically characterized by recent colonization of countries and dominant pandemic lineages with frequent intercontinental transmission and repeated strain replacement. For S. sonnei, acquisition of multiple AMR genes was strongly associated with lineage replacement by dominant resistant lineages on a global scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 are supported by citations to published literature (Holt et al., 2012) and serve as important context for comparing S. flexneri and S. sonnei population dynamics. These are well-established findings from prior work that are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "d6f59de5-cf32-49d3-8791-894a9e2db262",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The pattern of colonization and AMR gene acquisition suggest that S. flexneri has a distinct life-cycle involving local persistence, potentially analogous to Vibrio cholerae with part of the infectious cycle in contaminated water. S. flexneri can survive for months in water and has been recovered from environmental sources. The provision of clean water and sanitation correlates with reduced S. flexneri disease. S. flexneri is characterized as a historic pathogen with a stable core genome that has colonized and persisted in multiple locations for hundreds of years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C115-C116, C119, and C121 involve significant inference and speculation beyond the direct data presented. While the phylogeographic patterns (C104-C105) and environmental survival data from cited literature (C110-C114) are supportive, the proposed environmental persistence lifecycle (C115-C116) is an interpretation that requires additional experimental validation. The comparison to V. cholerae (C116) is speculative, and the disruption by industrialization (C121) is hypothetical. These are reasonable hypotheses but not definitively proven by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about Shigella epidemiology, disease burden, and prior phylogenetic knowledge are presented, including that S. flexneri is the most common cause of bacterial dysentery in low-income countries, Shigella causes ~165 million infections and up to 1 million deaths annually, and prior studies have identified two distinct S. flexneri lineages with different characteristics compared to S. sonnei and S. dysenteriae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C10-C24 are background information supported by citations to published literature. These establish the context and prior knowledge for the study. While C1 is stated as established knowledge without direct supporting data in the manuscript, it is consistent with the cited literature and serves as appropriate background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "8cd7fb80-d489-49f1-8d58-2cb419ac7dc5",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study gathered a representative global collection of 351 S. flexneri isolates spanning serotypes 1-5, X, Xv, and Y, collected from Africa, Asia, South and Central America, and including historical isolates dating back to 1914.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 describe the study design and sample collection, which is documented in the methods and Supplementary file 1. This is a straightforward methodological description that is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "f711d9da-6a08-4946-8c99-73343ba76734",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The O-antigen carried by Plesiomonas shigelloides is immunologically indistinguishable from the S. sonnei O-antigen, and exposure to P. shigelloides through drinking contaminated groundwater has been hypothesized to stimulate cross-protective immunity against S. sonnei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C118 are supported by citation to published literature (Sack et al., 1994) and are presented as a hypothesis to explain the contrasting distribution of S. sonnei and S. flexneri. This is appropriately characterized as a hypothesis rather than a proven mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    },
+    {
+      "id": "5803fd74-22d9-428c-b5c6-8226097610c7",
+      "content_id": "22c3bf2c-d72f-4aaa-a9b0-fad3be95e860",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "S. flexneri continues to be a source of disease infecting millions in low-income nations despite its decline in industrialized countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C122 is supported by established knowledge and the study's findings. This is a summary statement consistent with the background literature and the persistence patterns observed in the phylogeographic analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:22.574583Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ac866481-18d6-4c14-8a3f-bf77b51ee403",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "31543a79-edcb-4e79-af9e-de1695dedb71",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "07789c8c-c676-4bfd-abad-49621d3aca1d",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "e6efad05-512b-409b-8308-c548e7c50c96",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "7b7969c0-cac7-462a-8926-1a4ca426f549",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "01ab4eac-9b09-494d-9270-24d35e2593f5",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "57d4779b-8a98-4926-bb08-8d769908bc5e",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "c297b3a8-dce7-441c-937c-911a6d692ea7",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "84d2d0f2-624e-425a-a93f-c8d16befef5e",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "6017deb4-62d3-4c65-ba23-191826bc080c",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "dcc8dd14-72c5-43dc-9490-aac04a71baad",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "48ed55ed-ac69-4239-8875-581b61f6e640",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "48691244-3ca4-4274-80c4-53bce2a2d591",
+      "result_id": "fe5b5735-ef24-455c-97cc-7c78921bfa2b"
+    },
+    {
+      "claim_id": "b22f7b92-ba6d-4bc6-b975-d45f2ddc5382",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "de8c79ab-1d12-4b8b-8e38-0087d272ecdf",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "405daab6-4b05-4d1d-91dd-315e495e6903",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "330bb2fa-84ee-4e8d-ba9d-e8001e155991",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "06c5c8a7-1f7f-489f-9c19-9e516e7752aa",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "dfc54e7d-de38-4ffb-9aab-0e65b1aba192",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "9ca68d87-8447-4e4d-a1bf-261a5099bfc3",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "75f961cf-304b-4c42-8ceb-c58164a60a51",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "3ce8b119-ef73-4b7e-9222-19f66ae78ae2",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "f1063647-40c4-4d80-9c0d-e27f75a5ef61",
+      "result_id": "1217d9bf-db46-4610-89dc-1709ee9f1ea3"
+    },
+    {
+      "claim_id": "577ea386-7b65-420a-8c47-5b3a394bb89e",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "7d4fcd36-1c46-4be2-b623-ba448e482d88",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "73532f87-18eb-4d53-8ccb-7aa05dc8f097",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "3bc2f55f-2856-4d7b-8ddd-9fd69543574d",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "4255ed45-e251-4680-87d7-1f940c81d1b5",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "887a4467-6258-4f05-8bf8-6c642dd6fc28",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "e2bb2881-d09e-4004-be9c-dbc1a202a4f0",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "961448f0-d963-4056-a457-dfb495d6527e",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "9b73631b-35c0-421f-8281-20f722e30062",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "0c7f305e-5581-46c2-86fc-f5c607c9f19f",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "8d84713a-650f-454f-99b9-1170273c632f",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "634cce96-ee2c-4e5f-b8ea-e53121ac9ee0",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "66e1f0c6-a365-44d5-b4d0-ea9ff34c5905",
+      "result_id": "f267c37d-d4de-4512-98e8-7d3755e213f0"
+    },
+    {
+      "claim_id": "f94010ec-e4e1-43f8-b281-c10367d67781",
+      "result_id": "e794bd9d-707b-4fc2-abf9-74c85c40f96a"
+    },
+    {
+      "claim_id": "104f0ca4-a35b-45af-b71c-a647d2dd6c46",
+      "result_id": "e794bd9d-707b-4fc2-abf9-74c85c40f96a"
+    },
+    {
+      "claim_id": "0660eece-7451-4ab1-956c-8f630bdd624f",
+      "result_id": "e794bd9d-707b-4fc2-abf9-74c85c40f96a"
+    },
+    {
+      "claim_id": "159aa2dc-f6c9-4cb4-9494-55a1f89e91bf",
+      "result_id": "e794bd9d-707b-4fc2-abf9-74c85c40f96a"
+    },
+    {
+      "claim_id": "b1e64bc4-18a6-4cb4-95d0-e9bca7ff2ba2",
+      "result_id": "e794bd9d-707b-4fc2-abf9-74c85c40f96a"
+    },
+    {
+      "claim_id": "cec78e62-6afc-4fa7-86e4-a4563bf01e61",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "470ddf16-ec38-479a-977a-ba4414810fd3",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "75985171-02bd-4324-8558-97108797e550",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "f75c15d1-c7be-48e8-bfce-03df0c42ac74",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "e84d064e-6d06-4ef2-9759-19ff2f7085fc",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "1b40ecf6-8e65-4b7a-a9e6-39ab2077748f",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "ec10c616-33e1-41b7-8984-50be51cc8b55",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "10e1fa2f-fa4c-4b06-b179-b3fe89e783d6",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "c22d5d87-bc8e-4273-b3ba-18372b2f9960",
+      "result_id": "4ce4f08f-2858-42d8-8d09-546d693f3f52"
+    },
+    {
+      "claim_id": "f1f34835-0bfb-4a8b-8095-de767a9ed2b8",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "cb23965e-1bdf-4551-860e-824dffb383ff",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "48f180f8-65a8-4ca1-9ec3-efa1457b9bf3",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "0491d16f-cc23-44de-bd40-3ee239483f32",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "33bc4312-7dcf-4b91-9d73-82c364e5d38f",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "1d9abedf-acfc-4fac-b1cb-f1f1488c87a6",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "15cb0534-72bc-4391-8683-d0ca0c3ebd7f",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "faf80820-5831-43af-816d-280440552b17",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "0901d6cb-4d87-4f58-b5bc-9502e05495c8",
+      "result_id": "c72fc25a-b098-4ab8-aafa-feed72f97bb1"
+    },
+    {
+      "claim_id": "75250a43-a581-4153-9663-1b7cfd9b5d56",
+      "result_id": "b13421e1-9501-4dd2-af5b-ef161abd574d"
+    },
+    {
+      "claim_id": "966f6fcd-76c5-47f6-b9ab-1b1e00fa0d6f",
+      "result_id": "b13421e1-9501-4dd2-af5b-ef161abd574d"
+    },
+    {
+      "claim_id": "98896846-18f0-4f09-a78c-d69bc10ea744",
+      "result_id": "b13421e1-9501-4dd2-af5b-ef161abd574d"
+    },
+    {
+      "claim_id": "ebb7467e-234d-461a-826e-c154c9e4cb73",
+      "result_id": "b13421e1-9501-4dd2-af5b-ef161abd574d"
+    },
+    {
+      "claim_id": "0130a421-b2af-4271-995b-6eb6ce7efa69",
+      "result_id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1"
+    },
+    {
+      "claim_id": "40107fb1-c8b0-475a-b726-7ad57f927465",
+      "result_id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1"
+    },
+    {
+      "claim_id": "92010a7b-1ebd-4cdd-b329-4f316a975db7",
+      "result_id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1"
+    },
+    {
+      "claim_id": "85798684-9fb0-4245-9c03-ac06baf4181f",
+      "result_id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1"
+    },
+    {
+      "claim_id": "66cc9a14-a156-4899-af90-40a3584922a3",
+      "result_id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1"
+    },
+    {
+      "claim_id": "cde88d66-5845-4f65-90dd-7eaab0fccbc3",
+      "result_id": "d555e6f8-b47f-4d08-a29d-09487f19e3a1"
+    },
+    {
+      "claim_id": "7fdb4bb4-51d8-40a0-ae7c-e295da4a3052",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "97dae47d-98cd-4e1b-af4b-a84d0aaa16b3",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "b9377beb-cfd3-4dfe-bf5c-5dc7bd452a67",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "d3569102-935b-45b0-8ab2-f1cc627b8fe0",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "cd9c2ec5-6d28-4841-aef9-740fcd08db18",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "74b76b20-a8c7-443f-a3f8-b98b3cab37b0",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "53322249-bf40-497d-a6cf-e9859bf12e2e",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "dd728cd9-55c1-4bc5-b99e-4afa8f91f4dd",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "96f76300-ce75-4fc7-9d1a-39a12b2b4bb9",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "7fb7e5f2-ee1a-432b-8af8-b2c103a9ce05",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "4defb446-d12a-4288-b88c-6843b3f6b2a1",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "9a4ad940-fae3-47cc-91b4-1257db870730",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "f536969b-0ab9-4bf8-9e50-3ba1748486f5",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "e6a5d8e4-08d3-41b7-b891-385709070d48",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "d159b25f-f1af-4df9-8d58-bd71890d1865",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "c2571326-fab1-477a-86b1-42bcec76fe6e",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "ee964013-67e6-43c8-8d56-5136a68f7c0c",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "65fd955f-f100-4080-bbd4-7d0b36055761",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "a025ec66-f33c-4f94-bc23-ae6fced4cc6d",
+      "result_id": "e0ec0009-a86f-4aeb-a983-c199d7a1e21f"
+    },
+    {
+      "claim_id": "9f4c60bc-8ae1-4714-9fcd-dfbd62299e24",
+      "result_id": "a125c0b7-bbf6-4806-bfe6-3e65aa59de3d"
+    },
+    {
+      "claim_id": "41abf30b-d772-4fe3-ac18-fa5122aae915",
+      "result_id": "a125c0b7-bbf6-4806-bfe6-3e65aa59de3d"
+    },
+    {
+      "claim_id": "9eb7dfe4-4255-4443-ad72-3c858e4bc028",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "253ff6fc-3f2e-49ec-afe8-4685b36b3298",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "d3659fe0-d994-4a6b-a764-3ed4bcf2f045",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "842862df-1051-4c0c-ac76-e938ea10ae35",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "5aa5b2b1-aa39-449b-a74d-6b2eb46264ca",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "ffd4b6a0-4f31-4147-8c6a-609f756f3bb4",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "e6d080f5-e5f4-4eda-93ac-91f2fb7fc781",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "b1743c10-7f91-466b-a932-68e7b5bfe125",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "5d198daf-0c48-4db0-9bc4-761efddf644c",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "376b5569-eb98-4b56-8f81-5ea1a5647897",
+      "result_id": "d6f59de5-cf32-49d3-8791-894a9e2db262"
+    },
+    {
+      "claim_id": "0f871c93-3dc8-4d7b-bced-eedf3c841d8d",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "41cf4d9f-84c4-4a88-b6c3-54691a35b8c5",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "b10cb081-3775-4954-943d-d7b60e0f0de3",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "6aaec9e6-9093-4765-bbce-5bc3c4413373",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "3abd8351-da58-4874-aa49-207145d5dfbd",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "0d0fa10d-c30a-4e0a-975d-cebac2283d68",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "ddd18a24-8647-467f-aae1-b015e65982bb",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "5966ec31-67f7-4bbb-87c3-e07bf411ca58",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "d40823ea-a347-49dd-ba92-4edcee40a883",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "134af8f5-6bf8-478f-9753-51f08d60ee15",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "ffb88ee3-237e-4b03-9364-5fb8f917ef2d",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "2b1b5ae8-82db-4ef1-badd-64c2cbc62dc9",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "f07af269-a815-4c1a-92bf-07aa12980f22",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "000a04b0-8344-41a7-b879-e4582a8ea9f8",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "28161f52-6998-429d-a002-12764517d8f8",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "4849d708-a53c-4748-bff3-7215d738215d",
+      "result_id": "1fb8ded9-b139-41fd-82ce-7ae9b0ef9643"
+    },
+    {
+      "claim_id": "b6a586f6-4d47-407a-a069-d066fa32d51e",
+      "result_id": "8cd7fb80-d489-49f1-8d58-2cb419ac7dc5"
+    },
+    {
+      "claim_id": "a765c39d-16bf-4501-a48e-5f825f7f02b1",
+      "result_id": "8cd7fb80-d489-49f1-8d58-2cb419ac7dc5"
+    },
+    {
+      "claim_id": "e0388623-d78b-4c78-842b-ecb431893d29",
+      "result_id": "f711d9da-6a08-4946-8c99-73343ba76734"
+    },
+    {
+      "claim_id": "c13e553d-438a-4ca9-ab27-2942fa5136e7",
+      "result_id": "f711d9da-6a08-4946-8c99-73343ba76734"
+    },
+    {
+      "claim_id": "a087b4cb-afde-42f1-a486-fe93fa1b30ce",
+      "result_id": "5803fd74-22d9-428c-b5c6-8226097610c7"
+    }
+  ],
+  "comparisons": []
+}

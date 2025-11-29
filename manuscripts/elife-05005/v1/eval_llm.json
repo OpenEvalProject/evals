@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Recently reported non-canonical miRNA binding sites do not mediate detectable repression despite binding the miRNA in vivo. This conclusion is based on analyses of multiple types of non-canonical sites identified through various CLIP methods (nucleation-bulge sites, CLASH-identified sites, chimera-identified sites, MIRZA predictions, and IMPACT-seq sites) across multiple experimental systems including zebrafish embryos, mammalian cell lines, and different cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C58 collectively demonstrate through multiple independent experimental approaches (mRNA profiling, ribosome profiling, proteomics) across diverse biological systems that non-canonical sites identified by CLIP and related methods bind miRNAs but do not mediate repression. The convergence of negative results across different site types, detection methods, and biological contexts provides strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C78",
+      "C132",
+      "C134",
+      "C136"
+    ],
+    "result": "The vast majority of functional miRNA target sites are canonical seed-matched sites. Non-canonical sites that mediate repression (3\u2032-supplementary, centered, and cleavage sites) comprise less than 1% of effective sites that can be predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C78, C132, C134, and C136 are well-supported by the comprehensive negative results for non-canonical sites (C46-C58) combined with established knowledge about rare functional non-canonical site types. The inability of CLIP approaches to identify repressive non-canonical targets provides compelling evidence against their widespread existence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CLIP clusters and CLASH/chimera interactions lacking canonical seed matches are enriched for motifs that pair to the cognate miRNA, confirming that these sites bind miRNAs in vivo. The most enriched nucleotides typically preserve Watson-Crick pairing in a core 4-5 nucleotides within the seed region, with tolerance for mismatches or wobbles at varied positions. When bulges occur, they are in the mRNA strand, with the most tolerated position being between nucleotides pairing to miRNA positions 4 and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C77 are supported by systematic motif analysis of CLIP data (Figure 2) showing enrichment for miRNA-complementary sequences. The structural characterization of binding patterns, including the position and nature of bulges, is consistent across multiple datasets and species. The conclusion that these sites bind but don't mediate repression (C77) integrates the binding evidence with the functional data from the first result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The 74 sRNA transfection datasets exhibit substantial batch effects and sRNA-independent biases. mRNA fold changes from different arrays were highly correlated despite different transfected sRNAs, with datasets from the same publication clustering together. 3\u2032-UTR AU content and length correlated with mRNA changes in publication-specific patterns, and derepression of endogenous miRNA targets was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are well-supported by the correlation analyses shown in Figure 3A-C and supplementary figures. The identification of batch effects, AU content correlations, and endogenous target derepression is clearly demonstrated through hierarchical clustering and correlation metrics, providing strong justification for the normalization approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Application of PLSR (partial least-squares regression) normalization largely eliminated correlations between datasets, correlations between mRNA fold changes and AU content/3\u2032-UTR length, and the signal for derepression of endogenous miRNA targets. This normalization substantially enhanced the net signal for sRNA-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by the before-and-after comparisons shown in Figure 3D-H. The effectiveness of PLSR normalization is demonstrated through reduced inter-dataset correlations, elimination of confounding feature correlations, and enhanced signal for site-containing mRNAs. The methodology is clearly described and the results are quantitatively shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "To avoid complications from alternative 3\u2032-UTR isoforms, the model was developed using mRNAs from genes where \u226590% of 3P-seq tags corresponded to a single 3\u2032-UTR isoform and with a single seed match to the transfected sRNA in the 3\u2032 UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe methodological choices that are well-justified by cited literature (C90-C91) and clearly implemented (C92-C93). The rationale for avoiding genes with multiple abundant isoforms is sound, and the selection criteria are explicitly stated. This represents careful experimental design to minimize confounding factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "Through stepwise regression on 1000 bootstrap samples, 14 features were robustly selected from 26 candidate features as most predictive of miRNA targeting efficacy. These features include site type, 3\u2032-supplementary pairing, local AU content, minimum distance from 3\u2032-UTR ends, TA, SPS, 3\u2032-UTR length, ORF length, predicted structural accessibility, number of offset-6mer sites in 3\u2032 UTR, number of 8mer sites in ORF, nucleotide identity of position 8 of the target, nucleotide identity of positions 1 and 8 of the sRNA, and site conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96, and C97 are supported by the feature selection methodology described in the text and detailed in Table 1. The use of bootstrap sampling (1000 iterations) and the criterion of selection in nearly all samples for at least two site types provides robust statistical support for the feature selection. The specific features are clearly enumerated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The regression coefficients reveal that mRNAs with longer ORFs or 3\u2032 UTRs are more resistant to repression, while those with structurally accessible sites or ORF 8mer sites are more prone to repression. Newly incorporated features (3\u2032-UTR length, ORF length, structural accessibility) contribute similarly to previously used features (SPS, TA, local AU). Nucleotide identities at specific positions (sRNA position 1, 8; target position 8) have site-type-dependent effects on efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by the regression coefficients shown in Figure 4C. The signs and magnitudes of coefficients are clearly presented, and the interpretations are straightforward. The comparison of feature contributions is based on coefficient magnitudes, which is appropriate for scaled features. The position-specific nucleotide effects are quantitatively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The context++ model, which considers site type and 14 additional features, performed significantly better than existing models including 17 other in silico tools. It performed substantially better than the most predictive published model (TargetScan6.All), with DIANA-microT-CDS, miRTarget2, miRanda-miRSVR, MIRZA-G, and TargetRank being the most predictive algorithms from other groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C107-C109 are supported by comprehensive comparisons shown in Figure 5B. The r\u00b2 values clearly demonstrate superior performance of context++ over 17 other methods. The statistical significance is established, and the relative ranking of other methods is quantitatively shown. The comparison is fair as it uses an independent test set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "All algorithms designed to identify many non-canonical sites performed poorly in predicting the response of mRNAs lacking canonical 7-8 nt 3\u2032-UTR sites (r\u00b2 < 0.004 for most). After eliminating canonical 7-8 nt sites, the context++ model showed modest prediction accuracy by capturing effects of canonical 6mers, while algorithms designed for non-canonical sites were essentially unresponsive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 and C121-C123 are supported by Figure 5C and 5F showing poor performance of non-canonical site prediction algorithms. The r\u00b2 values are quantitatively reported, and the context++ model's modest success is attributed to canonical 6mer sites, which is consistent with the model's design. This provides additional evidence against functional non-canonical sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The top 112 predictions of the context++ model (average of 16 per miRNA) were significantly more repressed than top predictions from earlier TargetScan versions and other algorithms. The distribution of fold changes intersected 0.0 at a cumulative fraction of 0.92, suggesting an upper limit of 16% false positives, compared to 24-100% for previous algorithms. Across a broad spectrum of cutoffs, context++ predictions were consistently the most repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 are supported by Figure 5D-E and supplementary figures. The cumulative distribution analysis provides a quantitative estimate of false positives, and the calculation method (2 \u00d7 8% = 16%) is clearly explained. The systematic evaluation across multiple cutoffs (Figure 5E) demonstrates robust superior performance. The comparison is comprehensive and statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The context++ model (TargetScan7) performed at least as well as the best high-throughput in vivo crosslinking approaches (CLIP, CLASH, chimera, pulldown-seq, IMPACT-seq) in all comparisons. For identifying consequential miRNA-target interactions, the TargetScan7 model is more convenient than experimental determination of binding sites and at least as effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C124-C126 are supported by comprehensive comparisons in Figure 6A-L. The statistical tests show that TargetScan7 predictions performed as well or better than CLIP-supported targets across multiple experimental systems and methods. The conclusion about convenience and effectiveness is justified by the data, though the convenience aspect is self-evident rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The context++ model explained 14% of the variability among mRNAs with canonical 7-8 nt 3\u2032-UTR sites in the test set (r\u00b2 = 0.14), increasing to 0.15 when considering alternative 3\u2032-UTR isoforms. A model without the site-conservation feature performed nearly as well (r\u00b2 = 0.126 vs 0.139), suggesting the context++ model captured 70% of the information potentially imparted by molecular features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are supported by the r\u00b2 values reported in the text and shown in Figure 4B and 5B. The calculation of 70% information capture ([0.044-0.013]/0.044) is mathematically correct and provides insight into model performance. However, 86% of variability remains unexplained, which the authors acknowledge may be due to experimental noise, secondary effects, and model imperfections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "The context++ model is generally applicable to all canonical sites, including nonconserved sites and sites for nonconserved miRNAs, viral miRNAs, and off-targets of synthetic siRNAs and shRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by the model's design (not requiring conservation for scoring) and its performance on nonconserved sites shown in Figure 6K-L. The general applicability is a logical inference from the model's features and demonstrated performance, though not all applications (viral miRNAs, siRNA off-targets) are explicitly tested in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "CLIP-identified non-canonical sites bind miRNA too transiently to mediate repression. The high abundance of non-canonical binding sites (with information content as low as 5.6 bits) helps offset their low occupancy, yielding more non-canonical than canonical sites detected by CLIP. Variable crosslinking efficiency might explain why many ineffective non-canonical sites are identified and why many top context++ predictions are missed by CLIP methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 are mechanistic explanations and speculations rather than directly demonstrated results. While the information content calculation (5.6 bits vs 12-14 bits for canonical sites) is data-based, the proposals about transient binding, crosslinking efficiency, and their consequences are plausible inferences but not experimentally validated. The modest overlap in Figure 6 supports C140, but the underlying mechanisms remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The requirement of extensive additional pairing to compensate for a seed mismatch arises from unfavorable conformational changes, relative disorder of 3\u2032 nucleotides, and their unfavorable arrangement prior to seed pairing. In contrast, the seed backbone is pre-organized to favor A-form pairing with bases of nucleotides 2-5 accessible, and perfect pairing through nucleotide 7 creates opportunities for favorable minor groove contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by citations to structural and mechanistic studies (Bartel 2009, Schirle et al. 2014, Nakanishi et al. 2012, Schirle and MacRae 2012). These are established findings from the literature used to explain the observed rarity of functional non-canonical sites. The claims accurately represent cited work and provide mechanistic context for the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C144",
+      "C145"
+    ],
+    "result": "TargetScan version 7.0 integrated the context++ model with current 3\u2032-UTR-isoform data. The number of human 3\u2032-UTR sites conserved above background increased from approximately 46,400 to approximately 62,300 with updated PCT scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C144, and C145 describe the implementation of TargetScan7 and are supported by the detailed methods section and the increase in predicted conserved sites. The integration of the model with isoform data is described in the methods, and the increase from ~46,400 to ~62,300 sites is explicitly stated and attributed to improved annotations and expanded species alignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Predicted structural accessibility was scored as proportional to the log10 value of the unpaired probability for a 14-nt region centered on the match to miRNA nucleotides 7 and 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 is supported by the optimization analysis shown in Figure 4A, which systematically evaluated different window sizes and positions. The choice of a 14-nt window centered on positions 7-8 is based on empirical optimization and resembles previously reported optimal parameters (Tafer et al. 2008). The methodology is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The conservation signal of chimera-identified non-canonical sites is not smaller for sites of less conserved miRNAs and therefore is not indicative of functional miRNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by the analysis in Figure 1\u2014figure supplement 5B showing no significant difference in z-score distributions between sites of broadly conserved and less conserved miRNAs. The rationale is clearly explained: if conservation reflected functional targeting, sites of broadly conserved miRNAs should show stronger conservation signals. The absence of this difference suggests the conservation signal arises from confounding properties of conserved regions rather than functional miRNA targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C59"
+    ],
+    "result": "Background knowledge about miRNA biology, site types, and targeting features established in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C45, and C59 represent established knowledge from the literature, properly cited throughout. These provide essential context for the study but are not novel findings. They are accurately represented and appropriately referenced, serving as the foundation for the new work presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "CLIP approaches can identify non-canonical sites that bind the miRNA with some degree of specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is supported by the motif enrichment analysis in Figure 2 showing that CLIP-identified non-canonical sites are enriched for sequences complementary to the cognate miRNA. This demonstrates specific binding despite the lack of functional repression, which is a key finding that reconciles the CLIP data with the functional data.",
+    "result_type": "MAJOR"
+  }
+]

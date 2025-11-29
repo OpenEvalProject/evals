@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Sensitivity to multipoint correlations, quantified by the MCDI, is significantly higher in V2 (mean ~0.10) than V1 (mean ~0.05), with the greatest sensitivity in supragranular V2 (mean 0.162, median 0.12). The typical V2 supragranular neuron distinguishes 2-3 of 21 stimulus pairs, while typical V1 neurons show no discrimination (median MCDI = 0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 provide converging quantitative evidence from 421 neurons with appropriate statistical testing (Wilcoxon rank-sum, FDR-corrected p<0.05). The laminar analysis (C28-C31) shows a systematic progression with supragranular V2 significantly different from all other compartments except granular V2 (p=0.053). The large sample size and consistent pattern across multiple analyses support this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C4"
+    ],
+    "result": "V2 neurons selectively respond to informative multipoint correlations (even, odd, white triangle, black triangle) that are variable in natural images, but show minimal discrimination among uninformative correlations (random, wye, foot) that are predictable from simpler statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are directly supported by Figure 2B-C showing stimulus-specific and pair-specific MCDI values. The data demonstrate that neurons discriminate informative correlations while showing little response to uninformative ones, consistent with efficient coding predictions. The statistical methods (shuffle test with FDR correction) are appropriate for this comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Neuronal responses to multipoint correlations manifest as transient firing rate changes 70-100 ms after stimulus onset. Significant differences between structured and random stimuli are more common in V2 than V1, and decremental responses are more frequent in V2, though not required for discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe temporal response properties supported by PSTHs in Figure 1. The 70-100 ms latency is consistent with cortical processing times. The observation that decremental responses are not required (C24) is important for interpretation and is supported by specific examples. Statistical significance was assessed with appropriate shuffle tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sensitivity to multipoint correlations is widely distributed across V2 neurons and not restricted to specific cell types (simple vs complex, regular-spiking vs fast-spiking), neurons with mappable receptive fields, or neurons with specific RF sizes. This sensitivity is present even in neurons without mappable RFs (65/152 in V2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 demonstrate broad distribution through multiple negative results (no significant associations with cell type, RF mappability, or RF size). The inclusion of neurons without mappable RFs (C39-C40) is methodologically important and well-justified. Statistical tests appropriately used non-parametric methods for these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The V1-V2 difference in multipoint correlation sensitivity persists when controlling for RF size (measured in deg\u00b2 or number of checks). Across all RF sizes and stimulus scaling factors, V2 shows higher MCDI than V1. A subset of large-RF infragranular V1 neurons shows modest sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by Figure 2\u2014figure supplement 1, which systematically controls for RF size and stimulus scaling. The analysis demonstrates that the V1-V2 difference is not an artifact of RF size differences. The identification of a V1 subpopulation (C48) is appropriately qualified as a suggestion rather than a definitive finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The high MCDI in supragranular V2 likely reflects intrinsic V2 processing rather than inherited V1 signals, based on: (1) anatomical connectivity showing infragranular V1 projects to SC/LGN not V2, (2) V2 inputs arise from V1 layers 2/3/4b with low MCDI, and (3) the difference between V2 granular and supragranular layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 combine anatomical knowledge (C50-C51, citing Felleman & Van Essen 1991) with the laminar MCDI pattern to make a logical inference. The argument is sound: if V1 were the source, sensitivity should appear in V2 granular layer. The jump from granular to supragranular V2 (C29-C30) supports intrinsic V2 computation. However, this remains an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C72"
+    ],
+    "result": "Multidimensional scaling of neuronal discrimination patterns shows V2 neurons separate informative correlations along independent axes (even-odd vs white/black triangle), mirroring psychophysical findings. The neuronal representation expands from clustered (V1) to multidimensional (V2), with higher MCDI for four-point (even) than three-point correlations, paralleling human perceptual sensitivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 and C72 integrate neuronal data (Figure 2D) with psychophysical findings (C58-C59, citing Victor & Conte 2012, Hermundstad 2014). The multidimensional scaling appropriately visualizes population discrimination patterns. The correspondence between neural and perceptual axes (C57-C58) is compelling, though the authors acknowledge discrepancies (C61-C67). The inference is well-supported but not perfect alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "There are discrepancies between V2 neuronal responses and human psychophysics: uninformative stimuli are not perfectly aligned with random stimuli in neural representation, and the MCDI for odd stimuli is much lower than the 25% reduction in psychophysical sensitivity. These may reflect limitations of the MCDI measure or additional processing beyond V2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 honestly acknowledge limitations in the neural-perceptual correspondence. The explanation for odd stimulus discrepancy (C64-C65) is reasonable\u2014odd stimuli contain even correlations at larger scales. The speculation about measurement limitations (C66-C67) is appropriately qualified. This transparent discussion of discrepancies strengthens rather than weakens the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C34"
+    ],
+    "result": "A subpopulation of large-RF neurons in infragranular V1 shows modest sensitivity to multipoint correlations, primarily in layer 5/6 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C71 identify an atypical V1 subpopulation supported by Figure 2\u2014figure supplement 1. The characterization as \"modest\" and \"appears to be\" appropriately reflects the strength of evidence. This finding is interesting but secondary to the main V2 results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "V2 sensitivity to multipoint correlations is scale-invariant over a threefold range of spatial scales (10-fold range in checks per RF), comparable to the fourfold range in natural images and human psychophysics. This suggests individual neurons with varying RF sizes can account for the full perceptual range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by Figure 2\u2014figure supplement 1 showing MCDI across RF sizes. The comparison to natural image statistics (C85) and psychophysics (C86, C88) strengthens the interpretation. The inference that RF size variation accounts for scale invariance (C91) is reasonable but remains speculative without direct testing across eccentricities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Many V2 neurons without mappable RFs by reverse correlation nevertheless show selective sensitivity to multipoint correlations. This is computationally consistent because the stimulus design equates black/white checks at each location, making discrimination independent of single-check correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 address an important methodological point. The tetrode recordings enabled analysis of neurons typically excluded (C92-C93). The computational argument (C97-C98) is sound\u2014multipoint correlation sensitivity doesn't require linear RF structure. The speculation about why RFs aren't mappable (C96) is reasonable. This finding has important implications for understanding V2 computation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors speculate that sensitivity to informative multipoint correlations provides a computational basis for known V2 properties including corner/junction sensitivity, illusory contours, and figure-ground discrimination. Stimulus examples show that informative correlations are enriched for these features, and V2 sensitivity persists when correlations are isolated from natural context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C84 propose an integrative framework linking multipoint correlations to diverse V2 properties. While C74-C77 correctly cite established V2 sensitivities and C78-C82 describe stimulus properties, the causal link (C73, C83) remains speculative. C84 is supported\u2014V2 responds to isolated correlations\u2014but whether this \"accounts for\" other V2 properties requires additional experiments. The speculation is reasonable but not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose that a two-stage linear-nonlinear-linear-nonlinear cascade could produce the observed specificity, with possible implementations either as V1\u2192V2 stages or recurrent processing within V2. The prominence of responses in supragranular V2 suggests correspondences with this computational architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 discuss plausible mechanisms citing relevant literature (Schmid & Victor 2014, Victor & Conte 1991). The two-stage model (C100-C101) is well-motivated, and the laminar pattern (C102) provides suggestive evidence. However, both proposed implementations (C103-C104) remain speculative without direct testing. This is appropriate speculation for the Discussion but not a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The experimental design recorded 421 neurons (269 V1, 152 V2) using stimuli with ~8 checks per RF, check sizes 0.08-0.5\u00b0, with 1024 examples per stimulus type presented for 320 ms. Stimuli were maximum-entropy given their defining correlation, with matched power spectra and independently controlled correlation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C105-C114 describe methodological details that are clearly stated and appropriate. The large stimulus set (C109-C110) addresses potential confounds from specific check patterns. The maximum-entropy generation (C111) and matched power spectra (C112-C113) ensure proper stimulus control. The independent control of correlations (C114) is critical for isolating effects. These methods are sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work (Hermundstad et al. 2014, Tka\u010dik et al. 2010) established that efficient coding under input sampling constraints predicts greater resources for variable (informative) statistics, contrasting with whitening under output constraints. Multipoint correlation analysis reduces dimensionality, separates informative from uninformative statistics, and enables rigorous testing with synthetic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 accurately summarize prior theoretical and empirical work with appropriate citations. The efficient coding framework (C1-C2, C7-C10) is correctly described. The methodological advantages of multipoint correlations (C11-C15) are well-established. The stimulus characterizations (C17-C20) correctly reference prior work. These provide essential context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

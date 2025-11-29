@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "AGRP and POMC neurons show high sample purity and are transcriptionally distinct cell types, with 694 differentially expressed genes between them in fed conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 demonstrate strong enrichment of cell-type markers (252-432 fold), and C10 shows minimal non-neuronal contamination (>300-fold differential). C11 identifies 694 DEGs with appropriate statistical criteria. The data quality metrics and marker validation support high sample purity and clear cell-type distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C2"
+    ],
+    "result": "AGRP neurons show dramatically greater transcriptional sensitivity to food deprivation than POMC neurons, with 826 vs 47 differentially expressed genes respectively (17-fold difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide specific fold-changes and q-values for marker genes and total DEG counts. C17 correctly calculates the 17-fold difference. C2 states this as the main finding. The statistical thresholds are clearly defined (q<0.05, |log2fc|>1, CPM>20), and the magnitude of difference is striking and well-supported. Post-hoc power analysis indicates 80% detection of 2-fold changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Cdkn1a is the second-most highly upregulated gene in AGRP neurons during food deprivation (+166-fold, q=7.7e-7) but unchanged in POMC neurons, validated by smFISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C18-C19 provide RNA-Seq quantification with highly significant q-values showing cell-type specificity. C20 provides independent validation using smFISH with extremely significant p-value (1.5e-53, KS test). The convergence of RNA-Seq and smFISH data strongly supports this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Cell-type specific RNA-Seq reveals differential regulation of metabolic hormone receptors: Asb4 is selectively downregulated in POMC neurons (-5.8-fold) while Lepr is selectively upregulated in AGRP neurons (+5.3-fold) during food deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 demonstrate cell-type specific changes with highly significant q-values (2.2e-9, 1.3e-10) and appropriate controls showing no change in the other cell type. This illustrates the value of cell-type specific profiling over whole-tissue approaches, as noted in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Food deprivation selectively activates ER stress/UPR pathways in AGRP neurons, evidenced by upregulation of ER-localized genes (95% upregulated, p=8.3e-16), increased BiP expression, Xbp1 splicing, and upregulation of Xbp1s target genes, without engagement of PERK or ATF6 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C37 present a comprehensive analysis of UPR activation using multiple complementary approaches: RNA-Seq enrichment analysis (C24-C25), specific marker genes (C26, C29, C31-C33, C35), immunohistochemistry validation (C27-C28), Xbp1 splicing analysis (C30), and functional reporters (C34, C36-C37). The negative results for stress granules (C34) and ATF6 nuclear translocation (C36) are appropriately controlled with positive control (tunicamycin, C37). The convergence of multiple independent lines of evidence strongly supports selective UPR activation in AGRP neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Oxidative stress response pathways are activated in AGRP neurons during food deprivation, with reduced Keap1 expression and upregulation of Nfe2l2/Nrf2 target genes including glutathione biosynthetic enzymes (Gclc, Gclm) and oxidative stress markers (Mt1, Mt2, Srxn1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe a coordinated oxidative stress response with specific fold-changes and q-values. The pattern is consistent with known Nfe2l2/Nrf2 signaling (reduced Keap1 leading to Nrf2 stabilization and target gene activation). However, the q-value for Keap1 (q=0.05) is at the threshold of significance, which introduces some uncertainty about the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The pro-apoptotic gene Ddit3/Chop is unchanged in AGRP neurons after food deprivation, suggesting that UPR activation does not trigger apoptotic pathways at this timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C44 reports no change in Ddit3/Chop expression, which is appropriately interpreted as evidence against apoptotic UPR signaling. This is consistent with the anti-apoptotic gene expression patterns described elsewhere in the manuscript and supports the interpretation of adaptive rather than pathological ER stress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Food deprivation causes selective downregulation of circadian genes in AGRP neurons (9/19 core circadian genes down, 3/19 up), with significant enrichment of E-box containing genes among downregulated transcripts (p=0.00075), while POMC neurons show minimal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 demonstrate coordinated circadian gene regulation using established gene sets from prior literature. The enrichment analysis (C48-C49) shows statistical significance in AGRP but not POMC neurons. C50 shows that 90% (18/20) of significantly changed E-box genes are downregulated, indicating directional consistency. The use of established circadian gene sets strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Food deprivation induces upregulation of genes associated with excitatory synaptic transmission and plasticity in AGRP neurons, including glutamate receptors (Gria3, Grik1, Grik3), synaptogenic genes (Syndig1, Syndig1l), plasticity-associated kinases (Pak3, Ptk2b, Plk2), and vesicle release machinery (Sv2c, Snap25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 describe coordinated changes in synaptic function genes with specific fold-changes and q-values. C51 shows significant enrichment of synapse-localized genes (p=1.2e-6). The pattern is consistent with known mechanisms of synaptic plasticity and increased neurotransmitter release. However, these are transcriptional changes only; functional validation of synaptic changes would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The SK3 potassium channel (Kcnn3) is sharply downregulated in AGRP neurons during food deprivation (-5.4-fold, q=0.0006), resulting in loss of apamin-sensitive SK conductance and increased neuronal excitability, as demonstrated by electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 combine RNA-Seq data (C62-C63) with functional electrophysiological validation (C64-C66). The loss of apamin-sensitive currents in FD mice (C64, C66) directly confirms the functional consequence of reduced Kcnn3 expression. The increased firing rates with apamin in fed mice (C65) and the similarity to FD neuron excitability (C66) provide strong mechanistic support. This is an excellent example of integrating transcriptomics with functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "AGRP and POMC neurons express many GPCRs (59 and 61 respectively at >20 TPM), with significant differential expression between cell types (8 and 13 GPCRs >10-fold enriched) and significant enrichment of GPCRs among food deprivation-regulated genes in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 provide comprehensive GPCR profiling with clear expression thresholds (>20 TPM) and enrichment statistics (p=0.0002 for AGRP, p=3.3e-5 for POMC). The data establish a catalog of expressed GPCRs and demonstrate their regulation by metabolic state. This provides a valuable resource for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "GPCR expression shows opposite patterns in AGRP vs POMC neurons during food deprivation, with Hrh3 reciprocally regulated (AGRP: -9.5-fold, POMC: +5.3-fold) and Gnas selectively upregulated in AGRP neurons (+1.8-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 demonstrate cell-type specific and reciprocal regulation of GPCRs with significant q-values. The reciprocal regulation of Hrh3 is particularly striking and suggests coordinated but opposite responses to energy deficit in these two populations. The pattern is consistent with known functional roles of these neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Gpr6 expression increases in AGRP neurons after food deprivation (validated by smFISH, p=4.8e-10), and viral overexpression of Gpr6 in AGRP neurons significantly increases body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C76 validates RNA-Seq findings with independent smFISH data showing highly significant increase. C77 provides functional validation through chronic overexpression experiments showing significant body weight effects. The combination of expression validation and functional consequence strongly supports a role for Gpr6 in body weight regulation. However, the mechanism by which Gpr6 affects body weight is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Neuropeptides typically associated with reduced appetite (Nmb, Nts, Nucb2) are upregulated in AGRP neurons during food deprivation, along with their cognate receptors (Nmbr, Ntsr1), suggesting potential local signaling roles that promote appetite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 report significant upregulation of these neuropeptides and receptors with appropriate statistics. However, the interpretation that these have local appetite-promoting roles contradicts their known systemic anorexigenic effects. While the authors acknowledge this paradox and cite evidence for Nmb increasing AGRP neuron activity, the functional significance remains unclear. The data are solid but the interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The chemokine Ccl17 is highly upregulated in AGRP neurons after food deprivation (+21.6-fold, validated by smFISH), and both acute intracerebroventricular injection and chronic overexpression in AGRP neurons increase food intake and body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 establish upregulation with RNA-Seq and smFISH validation (p=1.4e-20). C86 shows modest acute effects on food intake (1-hr significant, 2-hr not significant). C87 demonstrates progressive body weight increase with chronic overexpression. The convergence of expression data and functional validation supports a role for CCL17 in body weight regulation, though the acute feeding effects are modest and the mechanism is unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Four secreted proteins downregulated in AGRP neurons during food deprivation (Fgf1, Cbln4, Bmp3, Ptn/Enpp2) all reduce food intake when administered by intracerebroventricular injection, consistent with their reduced expression during energy deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 establish downregulation with RNA-Seq and smFISH validation for Cbln4 and Bmp3 (p=6.8e-17 and 9e-12). C91 shows that all four proteins significantly reduce 24-hr food intake. The consistency between expression changes and functional effects supports the interpretation that these proteins normally suppress feeding and are downregulated to promote feeding during energy deficit. However, the mechanisms and physiological relevance of these effects require further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The magnitude of differential gene expression in AGRP neurons after food deprivation (826 DEGs) is considerably greater than observed in other cell types after various perturbations of brain state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C92 compares the number of DEGs to other studies, noting 160-fold more DEGs than fast-spiking interneurons after muscimol treatment, 10-50% more than Mecp2 knockout effects, and 34-fold more than motor neurons in ALS models. However, these comparisons are confounded by differences in statistical power, analysis methods (RNA-Seq vs microarray), and perturbation severity. The authors acknowledge that their study has greater statistical power and uses RNA-Seq, which can detect more changes. While the number of DEGs is impressive, the claim of 'considerably greater' response is difficult to evaluate fairly given methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "AGRP neurons are activated during energy deficit and increase appetite and weight gain, while POMC neurons have opposite effects, as established by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C6 summarize established knowledge from prior literature with appropriate citations. These provide context for the current study but are not novel findings. The citations appear appropriate and the statements are consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "RNA-Seq data is publicly available at GEO (accession GSE68177).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C93 provides data availability information. This is a data sharing statement rather than a scientific result, but it is important for reproducibility and is appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript provides extensive background on meiotic recombination, crossover formation, and the relationship between heterozygosity and recombination. These claims establish the biological context and prior knowledge regarding crossover interference, DSB repair pathways, and the effects of sequence polymorphisms on recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 are well-supported by citations to established literature and represent accepted knowledge in the field. These background claims provide the necessary context for understanding the experimental work and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study analyzed five fluorescent crossover reporter intervals (I1b, I1fg, I2f, 420, CEN3) spanning 11.5% of the Arabidopsis genome, with varying recombination rates and heterozygosity levels. CEN3 showed the highest heterozygosity and lowest recombination rate, while I2f showed the highest recombination rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by data presented in Table 2 and Figure 1A. The characterization of the intervals is methodologically sound and provides essential information about the experimental system used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The authors adapted CellProfiler image analysis software to rapidly score fluorescent seed for crossover measurement, and validated that this automated method produces measurements not significantly different from manual scoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by Figure 2 and statistical analysis (GLM p=0.373). The validation of the automated method against manual scoring is appropriate and demonstrates methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "F1 hybrids from crosses between Col-0 lines carrying fluorescent reporters and 32 diverse accessions showed extensive variation in crossover frequency, with both significantly higher and lower recombination compared to Col homozygotes. Over 13 million gametes were scored, revealing that F1 genetic distances correlated poorly with polymorphism levels within intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C42 are supported by extensive data in Figure 3, Tables 3-4, and statistical analysis (GLM p < 2.0\u00d710\u207b\u00b9\u2076). The large sample size (13,264,943 gametes) provides strong statistical power. The observation that some F1s show higher crossovers is consistent with prior work cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Analysis of Col\u00d7Ct F2 recombinant populations for three intervals (420, I2f, CEN3) revealed that homozygosity outside the measured interval was associated with high recombination within the interval. QTL analysis detected no trans effects from other chromosomes, only cis effects on the same chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by QTL analysis, F-tests, and chi-square tests presented in Figure 4, Tables 5-7. The statistical analyses are appropriate and the FDR correction for multiple testing is properly applied. The consistent pattern across three independent intervals strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C50",
+      "C51"
+    ],
+    "result": "Using the I3bc three-color interval, the authors demonstrated that heterozygous regions increase crossovers when juxtaposed with homozygous regions (HET-HOM), while the adjacent homozygous regions show reciprocal decreases in crossover frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C50-C51 are supported by statistical analysis of I3bc data (GLM p < 2.0\u00d710\u207b\u00b9\u2076) presented in Figure 5B. The reciprocal changes in adjacent intervals provide strong evidence for the juxtaposition effect and implicate crossover interference as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Analysis of fancm and fancm zip4 mutants with varying heterozygosity patterns demonstrated that non-interfering crossover repair is inefficient in heterozygous regions, particularly in CEN3. The interfering pathway is required for crossover remodeling at heterozygosity-homozygosity junctions, as shown by the loss of the juxtaposition effect in fancm zip4 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by extensive statistical analysis (multiple GLM tests with p < 2.0\u00d710\u207b\u00b9\u2076) of 420-CEN3 data in different genetic backgrounds presented in Figure 6. The genetic dissection using mutants with altered crossover pathways provides strong mechanistic insight. The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C61"
+    ],
+    "result": "Total chiasmata counts measured cytologically were not significantly different between Col/Col homozygotes, Ct/Ct homozygotes, Col/Ct F1 heterozygotes, and recombinant lines with varying heterozygosity patterns, consistent with homeostatic control of total crossover numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C61 are supported by chi-square analysis (p=0.3365) of chiasmata counts from chromosome spreads presented in Figure 7. The cytological validation of total crossover homeostasis despite regional changes is important and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Crossover interference measurements using the I3bc interval demonstrated that heterozygous regions show stronger interference than homozygous regions. In wild type, interference significantly increased in HET-HET compared to HOM-HOM backgrounds. The interfering pathway is required for crossover remodeling, as HET-HOM zip4 mutants showed reduced crossovers compared to HOM-HOM zip4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C62-C72 are supported by extensive statistical analysis of I3bc interference data in wild type and mutant backgrounds (Figure 8, multiple GLM tests). The three-color FTL system allows direct measurement of interference, and the results across multiple genetic backgrounds are internally consistent. The unexpected increase in interference in fancm and fancm zip4 HET-HET backgrounds is appropriately noted and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Analysis of tetrad FTL data from Col/Col and Col/Ler crosses showed that genetic distance decreased in Col/Ler for six of eight intervals, and interference strength significantly increased in Col/Ler compared to Col/Col using Fisher's combined probability test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by tetrad analysis data in Tables 8-9. The large sample sizes (49,801 tetrads for Col/Col and 42,422 for Col/Ler) provide strong statistical power. Fisher's combined probability test is appropriate for comparing interference ratios across multiple intervals. This provides independent validation of the heterozygosity effect on interference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose mechanistic models to explain their observations: (1) mismatched precursors in heterozygous regions may be slowed in maturation and trigger feedback mechanisms causing additional DSBs, or (2) mismatched precursors may be more sensitive to crossover designation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 are explicitly speculative models proposed by the authors to explain their observations. While these models are plausible and consistent with the data, they are not directly tested in this study. The authors appropriately present these as hypotheses that could be distinguished by measuring non-crossover levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript discusses prior work showing that sequence polymorphisms inhibit crossovers at fine scale in various organisms (mouse, yeast, maize) and that multiple levels of meiotic regulation exist, providing context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by appropriate citations to previous work. These claims provide important context for interpreting the current results and are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  }
+]

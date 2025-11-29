@@ -1,0 +1,2236 @@
+{
+  "submission": {
+    "id": "6f27e2ba-4fd8-4156-84d0-132f73c2ed67",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:49:22.308412Z",
+    "updated_at": "2025-11-29T03:49:22.308412Z"
+  },
+  "content": [
+    {
+      "id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "submission_id": "6f27e2ba-4fd8-4156-84d0-132f73c2ed67",
+      "content_type": "manuscript",
+      "content_text": "# Automatic discovery of cell types and microcircuitry from neural connectomics\n\n## Authors\n\n- Eric Jonas<sup>1</sup> \u2020\n- Konrad Kording<sup>2</sup>\n\n### Affiliations\n\n1. Department of Electrical Engineering and Computer Science University of California, Berkeley Berkeley United States\n2. Department of Physical Medicine and Rehabilitation Northwestern University Chicago United States\n3. Department of Physical Medicine and Rehabilitation Rehabilitation Institute of Chicago Chicago United States\n4. Department of Physiology Northwestern University Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural connectomics has begun producing massive amounts of data, necessitating new analysis methods to discover the biological and computational structure. It has long been assumed that discovering neuron types and their relation to microcircuitry is crucial to understanding neural function. Here we developed a non-parametric Bayesian technique that identifies neuron types and microcircuitry patterns in connectomics data. It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses. We show that the approach recovers known neuron types in the retina and enables predictions of connectivity, better than simpler algorithms. It also can reveal interesting structure in the nervous system of Caenorhabditis elegans and an old man-made microprocessor. Our approach extracts structural meaning from connectomics, enabling new approaches of automatically deriving anatomical insights from these emerging datasets.\n\n## Introduction\n\nEmerging connectomics techniques (Zador et al., 2012; Morgan and Lichtman, 2013) promise to quantify the location and connectivity of each neuron within a tissue volume. These massive datasets will far exceed the capacity of neuroanatomists to manually trace small circuits, thus necessitating computational, quantitative, and automatic methods for understanding neural circuit structure. The impact of this kind of high-throughput transition has been seen before\u2014the rise of sequencing techniques necessitated the development of novel computational methods to understand genomic structure, ushering in bioinformatics as an independent discipline (Koboldt et al., 2013).\n\nThe brain consists of multiple kinds of neurons, each of which is hypothesized to have a specific role in overall computation. Neuron types differ in many ways, for example, chemical or morphological, but they also differ in the way they connect to one another (Seung and S\u00fcmb\u00fcl, 2014). In fact, the idea of well defined, type-dependent local connectivity patterns (microcircuits) has a long history (Passingham, 2002), and is prominent in many areas, from sensory (e.g., retina; Masland, 2001) to processing (e.g., neocortex; Mountcastle, 1997) to movement (e.g., spinal cord; Grillner et al., 2005). These types of repeated computing patterns are a common feature of computing systems, even occurring in man-made computing circuits. It remains an important challenge to develop algorithms to use connectivity-based anatomical data (connectomics) to automatically back out underlying microcircuitry.\n\nThe discovery of structure is a crucial aspect of network science. Early approaches focused on global graph properties, such as the types of scaling present in the network (Watts and Strogatz, 1998). While this approach leads to an understanding of the global network, more recent work aims at identifying very small-scale repeat patterns, or motifs, in networks (Milo et al., 2002). These motifs are defined not between different node types, but rather represent repeated patterns of topology.\n\nThe discovery of structure in probabilistic graphs is a well-known problem in machine learning. Commonly used algorithms include community-based detection methods (Girvan and Newman, 2002) and stochastic block models (Nowicki and Snijders, 2001). While these approaches can incorporate the probabilistic nature of neural connections (Hill et al., 2012), they do not incorporate the additional richer structure present in connectomics data\u2014the location of cell bodies, the spatial distribution of synapses, and the distances between neurons. It is of particular importance that the probability of connections has a strong spatial component, a factor that is hard to reconcile with many other methods. A model attempting to fully capture the variation in the nervous system should take into account the broad set of available features.\n\nWhen it comes to neuroscience and other computing systems, we expect patterns of connectivity much more complex than traditional motifs, exhibiting a strong spatial dependence arising from the complex genetic, chemical, and activity-based neural development processes.\n\nTo address these challenges, here we describe a Bayesian non-parametric model that can discover circuit structure automatically from connectomics data: the cell types, their spatial patterns of interconnection, and the locations of somata and synapses. We show that by incorporating this additional information, our model both accurately predicts the connection as well as agrees with human neuroanatomists as to the identification of cell types. We take as inspiration previous work on identifying cell types automatically from morphology (Guerra et al., 2011) and electrophysiology (Druckmann et al., 2013).\n\nWe primarily focus on the recently released mouse retina connectome (Helmstaedter et al., 2013), but additionally examine the Caenorhabditis elegans connectome (White et al., 1986). Comparing the cell types discovered by the algorithms with those obtained manually by human anatomists reveals a high degree of agreement. We thus present a scalable probabilistic approach to infer microcircuitry from connectomics data available today and in the future.\n\n## Model\n\nWe build a structured probabilistic model which begins with the generic notion of a cell being a member of a single type\u2014and these types affect soma depth, distribution of synapses, as well as a cell type and distance-dependent connection probability. For example, retinal ganglion cells may synapse on nearby, but not far away, amacrine cells, with bipolar cells clearly tessellating space and synapsing on both. In machine learning parlance, our method is unsupervised\u2014it seeks to discover structure in data and make predictions in the absence of training data. Rather than taking in examples of types annotated by human neuroanatomists, we instead start with the weakest possible assumption in an attempt to algorithmically discover this structure. We contrast this with the supervised approaches taken in Guerra et al. (2011), where there is high confidence in the (morphologically defined) types and then a supervised classifier is built, as our goal here is explicit discovery of types.\n\nFrom these assumptions (priors) we develop a generative Bayesian model that estimates the underlying cell types and how they connect. We take as input (Figure 1A) the connectivity matrix of cells (Figure 1B), a matrix of the distance between cells (Figure 1C), the per-cell soma depth (Figure 1D), and the depth profile of the cell's synapses (Figure 1E). We perform joint probabilistic inference to automatically learn the number of cell types, which cells belong to which type, their type-specific connectivity, and how connections between types vary with distance. We also simultaneously learn the soma depth associated with each type and the typical synaptic density profile (Figure 1F\u2013H).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig1-v1.jpg)\n\n**Figure 1.:** (A) As input we take the connectivity between cells (B), the distance between them (C), the depth of the cell bodies (D), and the depth profile of the synapses (E). (F) Our algorithm discovers hidden cell types in this connectivity data by assuming all cells of a type share a distance-dependent connectivity profile, similar depth, and a similar synaptic density profile, with cells of other types. This results in a clustering of the cells by those hidden types. (F) Shows the cell connectivity matrix with cells of the same type grouped together. (G) Shows the learned probability of connection (p(conn)) between our different types at various distances\u2014in this case, the cells are likely to connect when they are close. (H) Shows the probability of connection (p(conn)) between two cell types that very rarely connect\u2014there is a background \u2018base\u2019 connection rate to account for errors in data, but the probability is very low. (I) Shows that we also recover the expected laminarity of types and the depth-specific (J) synaptic connectivity. (K) We then plot how the connectivity between these types changes as a function of distance between the cell bodies to better understand short-range and long-range connectivity patterns.\n\nWe start with a model for connectivity, the iSBM (Kemp et al., 2006; Xu et al., 2006), which has been shown to meaningfully cluster connection graphs while learning the number of hidden groups, or types. We extend this approach by adding distance dependence to model salient aspects of microcircuitry via logistic and exponential distance-link functions. We form a unimodial model of cell body depth and a multimodal synapse density profile model (see \u2018Materials and methods\u2019 for mathematical details).\n\nAs an illustrative example, consider a network with only three cell types, labeled A, B, and C. Assume these cells are uniformly distributed in space, and that the probability of connection between any two cells, ci and cj, depends only on their type and their distance, according to a logistic (sigmoidal) function. Let A connect only to nearby B and C cells, but B connect to any C regardless of distance. This is the prior intuition our model is designed to capture.\n\nFor the basic link-distance model, we take as input a connectivity matrix R defining the connections between cell ei and ej, as well as a distance function d(ei, ej) representing a (physical) distance between adjacent cells. See the supplemental material for extension to multiple connectivity matrices. We assume there exist an unknown number K of latent (unobserved) cell types, $k\\in{1,2,3,\u2026,K}$, and that each cell ei belongs to a single cell type. We indicate a cell ei is of type k using the assignment vector (c), so ci = k. The observed connectivity between two cells R(ei, ej) then depends only on their latent type and their distance through a link function f(\u22c5, d(ei, ej)). We assume f is parameterized based on the latent type, ci = m and cj = n, via a parameter \u03b7mn, as well as a set of global hyperparameters \u03b8, such that the link function is f(d(ei, ej)|\u03b7mn, \u03b8).\n\nWe then jointly infer the posterior distribution of the class assignment vector (c) = {ci}, the parameter matrix \u03b7mn, and the global model hyperparameters \u03b8:\n\n$$\np(c,\u03b7,\\theta|R)\u221d\\prodi,jp(R(e_{i},e_{j})|f(d(e_{i},e_{j})|\u03b7_{c_{i}c_{j}}),\\theta)\\prodm,np(\u03b7_{mn}|\\theta)p(\\theta)p(c|\\alpha)p(\\alpha)p(\\theta).\n$$\n\nOur subsequent analysis uses both the full posterior distribution over these parameters as well as the most probable, or maximum a posteriori (MAP), estimate.\n\nFor the retina data, we then extend the model with the additional features indicated. Cell soma depth is modeled as a cell-type-dependent Gaussian distribution with latent (unknown) per-type mean and variance. Similarly, each cell has some number Ni of synapses, each of which is drawn from a cell-type-specific density profile with up to three modes.\n\nInference is performed via MCMC via three composable transition kernels\u2014one for structural, one for per-type parameters, and one for global parameters and hyperparameters. Details of data preprocessing, inference parameters, and runtime can be found in the 'Methods section.\n\n### Metrics\n\nTo evaluate the quality of the model fit, we need to use information that quantifies aspects of the data for which we have ground truth information. We focus on two aspects of performance. First, if the model works well, then the probability that a pair of neurons is of the same type should be high if the neurons actually are of the same type. Second, the model should assign a high probability of connection between two cells if they have a connection in the underlying data. We term these two factors clustering accuracy and link-prediction accuracy.\n\nTo assess the accuracy of a clustering compared to that determined by neuroanatomists, we employ three metrics\u2014clustering homogeneity, clustering completeness, and the ARI. All metrics equal 1.0 when two clusterings completely agree. Homogeneity reflects the degree to which a found cluster or type contains only a single true type. Completeness measures how much of a true type is contained within a single identified type\u2014a completeness of 1.0 means no true type is split into multiple subtypes. ARI is a metric that reflects both measures (see the supplemental material for more information).\n\nTo assess the accuracy of the model for connections, we use link prediction accuracy. If our model accurately captures the true structure of the data, it should be good at predicting if a link exists. We thus train the model on the data with a subset of the links marked as unobserved and thus compute our predictive accuracy. We perform 10-way cross-validation on a given dataset (Guerra et al., 2011), learn the resulting model, and use that model to predict the missing synapses. Each potential link between cells is assigned a probability, and we compute the AUC for the resulting ROC curve. An AUC of 1.0 means that we perfectly predict the presence and absence of the missing synapses. We use link prediction accuracy to quantify how good the model is at discovering the underlying connectivity.\n\n## Results\n\nWe will first establish that our algorithm works properly and try to understand its properties using simulated data. Subsequently, we will analyze in detail a dataset on the retina. Lastly, we will briefly discuss the analysis of data from the worm C. elegans and from an old man-made microprocessor.\n\n### Validation with simulated data where ground truth is known\n\nTo validate our model, we performed a series of simulations to test if the model can accurately recover the true underlying network structure and cell type identity. We thus simulate data for which we know the correct structure and compare the estimated structure based on the algorithm (see \u2018Materials and methods\u2019) with the one we used for simulation. We find that the model does a good job of recovering the correct number of cell types (Figure 2A), the cell identities (Figure 2B), and the spatial extent of each type (Figure 2C). For comparison, we show the results using the infinite stochastic block model (iSBM) instead (Figure 2A\u2013C, black line) which assumes that only cell type matters, and thus finds small neighborhoods of connected nodes (instead of global connectivity patterns). This contrast shows that while the regular block model can not correctly deal with distance-dependent connectivity, our model can. Our model converges relatively quickly (see 'Mixing of Markov chains') to an estimate of the most probable values for the cell types, which is enabled by using a combination of simulated annealing and parallelized Markov-chain Monte Carlo (MCMC) (see \u2018Materials and methods\u2019 for details). Thus our model at least is promising for application to biological datasets.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig2-v1.jpg)\n\n**Figure 2.:** (A) The infinite stochastic block model (which only uses connectivity information) over-estimates the number of classes as it fails to take distance into account, whereas our modeling of the combination of distance and connectivity finds close to the true number of classes. Conn: connectivity; dist: distance. (B) As we increase the true number of types, our method continues to find the correct clustering (as measured by the adjusted Rand index, ARI) whereas the infinite stochastic block model (iSBM) overclusters and thus poorly matches ground truth. (C) We examine the spatial extent (size) of the discovered types (clusters) by measuring the two-dimensional standard deviation of the cell locations. The y-axis indicates what fraction of the discovered types had a given spatial extent. Without incorporating distance, we identify a large number of small, spatially-localized types. With distance, we see a correct recovery of the spatial extent of each type.\n\n### Model mismatch\n\nWe next analyze how our model performs in cases where the data are generated with assumptions different from ours. To understand the properties of our model, we attempt connectivity inference on four sets of synthetic data. This helps us understand what our model would do if the data do not obey our assumptions.\n\nWe thus generate 10 sets of synthetic data from each of four existing models. The distance-dependent stochastic block model assumes type depends on distance, the traditional stochastic block model has no notion of distance, the mixed membership block model assumes type is combinatorial, and the latent position cluster model assumes that type is clustered-but-continuous.\n\nIf the data are sampled from our model, inference according to our model, unsurprisingly, is good by all measures. It correctly estimates the number of cell types, it is good at predicting connectivity (high area under the curve, AUC), it agrees with human classification (Rand index), it discovers all types, and leads to homogeneous estimates (Figure 3, first row). If the data come from a block model without distance dependence, we see that it still does well on all meaningful measures (Figure 3, second row). This is unsurprising, as our model learns the distance dependence, even its absence. For the mixed membership model (Figure 3, third row), the model grossly overestimates the number of types, by basically allocating a type for each combination of memberships. Otherwise, it still performs relatively well. Lastly, for the latent position clustering model (Figure 3, fourth row), the model does poorly. If type is continuous instead of discrete, then our model is basically trying to cover a continuous set with a discrete scenario leading to rather poor performance. However, as we do expect cell types to have a discrete biological basis, we might expect our model to do well with real data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig3-v1.jpg)\n\n**Figure 3.:** Horizontal columns show results with synthetic data generated according to the distance-dependent stochastic block model, the non-distance-dependent stochastic block model, the mixed membership block model, and the latent position cluster model. In all cases histograms represent posterior distribution over the indicated metric. (A) The number of types found by the model; the vertical dashed line indicates the \u2018true\u2019 type number (not applicable to the mixed membership model). (B) The area under the receiver operating characteristic (ROC) curve, indicating link prediction accuracy. (C, D, E) Clustering metrics quantifying degree of type agreement with known ground truth.\n\n### Sensitivity to edge effects\n\nConnectomic efforts so far have reconstructed only small sections of neural tissue. Consequently, many connections to cells outside that tissue volume will be lost. We are concerned that this selective elimination of connectivity along the boundary might give the appearance of distance-dependent connectivity when there is none. We thus performed simulations to check if edge effects could destroy spatial structure and if edge effects could introduce artificial, spurious spatial structure. We measure the degree to which distance-dependent effects can arise from selecting regions that are smaller than the \u2018scale\u2019 of connectivity (Figure 4). We do this by generating two collections of synthetic datasets\u2014one with distance-dependent connectivity and one without. We then in each dataset randomly examine contiguous circular regions with area varying from zero to the entire volume, and empirically calculate the spatial variance in type-dependent connectivity. We find that, if there is no distance dependence, edge effects do not artificially introduce distance dependence. However, if the section we are examining is too small, our model can miss the distance dependence. Thus with respect to distance-dependent connectivity inference, our model errs on the side of caution. But we also find that for spatial extent that is similar to the currently available datasets, the effects of this are quite limited.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig4-v1.jpg)\n\n**Figure 4.:** We measure the variance in the connectivity-distance plot for randomly selected regions of each dataset, ranging from single cells to the entire volume. We see that while selecting too small a region can destroy the appearance of distance-dependent connectivity, it does not create it in non-spatial data.\n\n### Learning types and circuitry in the retina\n\nThe mouse retina (Masland, 2001) is a neural circuit which we expect to have connectivity patterns that are well approximated by our generative model. It is known that there are multiple classes of cells that can be broadly grouped into: ganglion cells that transmit information to the rest of the brain; bipolar cells that connect between different cells; and amacrine cells that feed into the ganglion cells. Recent research (Helmstaedter et al., 2013) has produced a large dataset containing both the types of cells from orthogonal approaches, and also the connectivity matrix between all reconstructed cells (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig5-v1.jpg)\n\n**Figure 5.:** Here we show the maximum a posteriori (MAP) estimate for the types in the mouse retina data. (A) Input connectivity data for 950 cells for which soma positions were known. (B) Clustered connectivity matrix; each arbitrary color corresponds to a single type and will be used to identify that type in the remainder of the plot. (C) The spatial distribution of our cell types\u2014each cell type tessellates space. Colors correspond to those in (B). (D) Connectivity between our clusters as a function of distance\u2014the cluster consisting primarily of retinal ganglion cells (brown nodes on the graph) exhibits the expected near and far connectivity. Conn prob: probability of connection.\n\nThe algorithm took 8 hr to perform inference, dividing neurons into a set of cell types which reflect known neuroanatomical distinctions (Figure 5 shows the MAP result). For each pair of neurons there is a specific distance-dependent connection probability (Figure 5D), which is well approximated by the model fit. Moreover, each type of cell is rather isotropically distributed across space (Figure 5C) as should be expected for true cell types.\n\nComparing the results of the algorithm to other information sources allows evaluation of the quality of the type determination. Our types closely reflect the (anatomist-determined) segmentation of cells into retinal ganglion, narrow amacrine, medium/wide amacrine, and bipolar cells (Figure 6B). We find that the types we find tend to reflect the known laminar distribution in the retina (Figure 6C) as well as the known synaptic density profiles.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig6-v1.jpg)\n\n**Figure 6.:** Our fully Bayesian model gives a confidence estimate (posterior probability) that any two given cells are of the same type. In (A) we visualize that cell\u2013cell coassignment matrix, showing the probability that cell i is of the same type as cell j on a range from 0.0 to 1.0. The block structure shows subsets of cells which are believed to all belong to the same type. For comparison, (B) shows the anatomist-defined type for each cell, grouped broadly into the coarse types identified in the previous panel. (C) Link versus cluster accuracy. (D) The posterior distribution of receiver operating characteristic (ROC) curves from 10-fold cross-validation when predicting connectivity, as well as (E) the area under the curve (AUC) and (F) the type agreements with known neuroanatomist types. ARI: adjusted Rand index. Model comparison, showing using human-discovered types with and without distance information, as well as our model incorporating just connectivity, connectivity and distance, or connectivity, distance, and synaptic depth (as well as the alternative latent position cluster model, see text). (G) A comparison of the predictive accuracy (AUC) for hand-labeled anatomical data, versus inclusion of additional sources of information, as well as the clustering accuracy. Note that our model sacrifices very little predictive accuracy for additional clustering accuracy. By comparison, conventional methods fail at one or both. ARI: adjusted Rand index. (H) The spatial extent (in depth and area) of the types identified by humans and our various algorithmic approaches.\n\nThe algorithm yields a separation of neurons into a smaller number of types than the fully granular listing of 71 types found by the original authors of the paper (Helmstaedter et al., 2013), although it is still highly correlated with those finer type distinctions (see section \u2018Mouse retina\u2019). It is our expectation that, with larger datasets, even closer agreement would be found.\n\nOur fully Bayesian model produces a distribution over probable clusterings. Figure 6 shows this posterior distribution as a cell\u2013cell coassignment matrix, sorted to find maximum block structure. Each large, dark block represents a collection of cells believed with strong probability to be of the same type. When we plot (Figure 6B) the anatomist-derived cell types along the left, we can see that each block consists of a roughly homogeneous collection of types.\n\nWe evaluate our model along three sets of parameters (Figure 6): how closely does our clustering agree with neuroanatomists' knowledge? Given two cells, how accurately can our model predict the link between them? And how closely does the spatial extent (within a layer) of our identified types agree with the spatial extent of types identified by neuroanatomists?\n\nFor our model we show the receiver operating characteristic (ROC) curve (Figure 6D) which shows how the true and false positive rates trade off. We plot the posterior distribution of the area under this curve in Figure 6E. We then plot the posterior distribution for cluster agreement metrics\u2014completeness, homogeneity, and adjusted Rand index (ARI) (Figure 6F). We see that our model tends to over-cluster\u2014cells which are of distinct type (at the finest granularity of neuroanatomist-identified type) are grouped as a single type by our model.\n\nWe compare link-prediction accuracy across the methods, including our own (Figure 6G, AUC, red). We find that given the dataset, many techniques allow for good link-predictive accuracy. All the methods allow decent link prediction with an AUC in the 0.9 range. However, our algorithm clearly outperforms the simple statistical models that only use connectivity.\n\nAs a second measure we compare link-prediction accuracy across the methods (Figure 6G, ARI, blue). We find that our algorithm far outperforms the controls. We also find that when it is based on more of the same information used by anatomists, then it gets better at agreeing with these anatomists. In particular, using connectivity, distance, synapse distribution, and soma depth leads to the highest ARI. When using the available information, the algorithm produces a good fit to human anatomist judgments.\n\nFinally we look at the spatial extent of the discovered types both within a layer and between layers (Figure 6H). We see that, in the absence of distance information, mere connectivity information results in types which only span a small region of space\u2014essentially local cliques. Incorporation of distance information results in types which span the entire extent of the layer. The depth variance of all models continues to be substantially larger than that predicted by human anatomists\u2014future directions of work include attempting to more strongly encode this prior belief of laminarity.\n\n### Recovering spatial connectivity in multiple graphs simultaneously\n\nHaving shown our model to work on the repeating tessellated, laminar structure of the mammalian retina, we then apply our model to a structurally very different connectome\u2014the whole body of a small roundworm: C. elegans is a model system in developmental neuroscience (White et al., 1986), with the location and connectivity of each of 302 neurons developmentally determined, leading to early measurement of the connectome. Unlike the retina, only the motor neurons in C. elegans exhibit regular distribution in space\u2014along the body axis. Most interneurons are concentrated in various ganglia that project throughout the entire animal, and the sensory neurons are primarily located in a small number of anterior ganglia. C. elegans also differs from the retina in that the measured connectome is actually two separate graphs\u2014one of directed chemical synapses and another of undirected electrical synapses. As this is a very different connectome, it allows an interesting generalization test: how well will our model work on such a distinct dataset?\n\nUsing both the chemical and electrical connectivity (see \u2018Materials and methods\u2019), we determined the underlying cell types explained by connectivity and distance (Figure 7A). A superficial inspection of the results shows clustering into groups consisting roughly homogeneously of motor neurons, sensory neurons, and interneurons. Closer examination reveals agreement with the classifications originally outlined by White in 1986 (White et al., 1986).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig7-v1.jpg)\n\n**Figure 7.:** (A) Posterior distribution on cell connectivity as a function of discovered type, similar to Figure 6. In (B) we plot neuroanatomist-derived types along with their labels. Our model shows a high probability of motor neurons, sensory neurons, and various interneuron classes being of the same type. Soma positions along the body axis are plotted in (C) where we see that we cluster spatially distributed motor neurons together, whereas head sensory neurons are more likely to be grouped together as well. (D) The receiver operating characteristic (ROC) curves for held-out link probability for both the electrical synapses (gap junctions) and chemical synapses in C. elegans. (E) The posterior distribution of the area under the ROC curve (AUC) for the curves in (D). (F) Measurements of the agreement of our identified cell types compared to neuroanatomists. The high completeness but low homogeneity (and corresponding low adjusted Rand index, ARI) reflects our model's tendency to group multiple types into a single type.\n\nNote our clustering does not perfectly reflect known divisions\u2014several combinations of head and sensory neurons are combined, and a difficult-to-explain group of mostly VB and DB motor neuron types, with VC split between various groups. Our identified cell types thus reflect a \u2018coarsening\u2019 of known types, based entirely on connectivity and distance information, even when the organism exhibits substantially less spatial regularity than the retina.\n\n### Types and connectivity in artificial structures\n\nTo show the applicability of our method to other connectome-style datasets, we obtained the spatial location and interconnectivity of the transistors in a classic microprocessor, the MOS Technology 6502 (used in the Apple II) (James et al., 2010). Computer architects use common patterns of transistors when designing circuits, with each transistor having a \u2018type\u2019 in the circuit. We identified a region of the processor with complex but known structure containing the primary 8-bit registers X, Y, and S (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig8-v1.jpg)\n\n**Figure 8.:** (A) The micrograph of the original microprocessor, with the region containing the registers under study highlighted. (B) Our graph consists of the interconnections of MOS field-effect transistors with three terminals, Gate, C1, and C2. The reconstruction technique did not permit resolution of C1 and C2 into source and drain. (C) The spatial distribution of the transistors in each cluster show a clear pattern. (D) The clusters and connectivity versus distance for connections between Gate and C1, Gate and C2, and C1 and C2 terminals on a transistor. Purple and yellow types have a terminal pulled down to ground and mostly function as inverters. The blue types are clocked, stateful transistors, green control the ALU and orange control the special data bus (SDB).\n\nOur algorithm identifies areas of spatial homogeneity that mirror the known structure in the underlying architecture of the circuit, segmenting transistor types recognizable to computer architects. Using the original schematics, we see that one identified type contains the \u2018clocked\u2019 transistors, which retain digital state. Two other types contain transistors with pins C1 or C2 connected to ground, mostly serving as inverters. An additional identified type controls the behavior of the three registers of interest (X, Y, and S) with respect to the SB data bus, either allowing them to latch or drive data from the bus. The repeat patterns of spatial connectivity are visible in Figure 8C, showing the man-made horizontal and vertical layout of the same types of transistors.\n\n## Discussion\n\nWe have presented a machine learning technique that allows cell types and microcircuitry to be discovered from connectomics data. We have shown its applicability to regularly structured laminar neural circuits like the retina, as well as a less structured whole neuronal organism (C. elegans) and a classic processor. When compared to existing methods, we show how the incorporation of all of this data yields results that combine both high link-prediction accuracy and high agreement with human anatomists. We have found that combining the available data types allows us to discover cell types and microcircuitry that were known to exist in the systems based on decades of previous research and allows good prediction of connectivity.\n\nFor our probabilistic models, no known solution exists to exactly find the most probable parsing of the neurons into cell types and connectivity patterns. We employ a collection of MCMC techniques (see \u2018Materials and methods\u2019), but while different initializations converge to similar ultimate values, we can never realistically obtain the global optimum. There are a broad range of techniques that may offer good approximations to the global optimum and future work could adapt them to find more precise solutions to our problem.\n\nFor our probabilistic model, inference becomes slower as the amount of data increases. Our algorithm required several hours for 1000 neurons. Scaling this class of probabilistic model is an active area of research, and recent results in both variational methods (Hoffman et al., 2013) and spectral learning (Anandkumar et al., 2012) and future work could adapt them to find faster approximate solutions to our problem.\n\nLarger datasets will allow algorithms to distinguish more distinct types and we expect closer agreement with existing anatomical knowledge as more data become available. Moreover, in general, for such problems precision increases with the size of the dataset and the cells that we have are not sufficient to statistically distinguish all the cell types known in anatomy (such as the \u223c70 in the retina). Still, using only connectivity and distance, it is possible to meaningfully divide neurons into types.\n\nOur small collection of hand-selected distance-dependent likelihood functions is clearly non-exhaustive, and assumes monotonicity of connectivity probability\u2014for a given class, closer cells are never less likely to connect. This is known to be insufficient for various neural systems. Future models could incorporate a wider variety of likelihood functions, or even learn the global functional form from the data.\n\nThere are a range of previous approaches to the discovery of neural microcircuitry (Mountcastle, 1957; Douglas and Martin, 1991; Freund and Buzs\u00e1ki, 1998; Barth\u00f3 et al., 2004). These generally involve a great deal of manual labor and ad hoc determination of what constitutes a type of cell\u2014to this day there are disagreements in the literature as to the true types in the mammalian retina. Much as phylogenomics has changed our understanding of animal ontologies, modern large scale data will allow the efficient unbiased discovery of cell types and circuits. The sheer amount of available data demands the introduction of algorithmic approaches.\n\nThe development of automatic identification and quantification of cell type may also provide a new computational phenotype for quantifying the effect of disease, genetic interventions, and developmentally experienced neural activity. Our method can in principle identify neuron types across non-connected graphs, for example, across animals. For example, the types of neurons in one animal can be associated with the types of neurons in another animal, in the same way as this is already possible through molecular markers (Brown and Hestrin, 2009). This could be particularly important if cell types appear that are due to properties of the stimuli and experience as opposed to just the molecular properties of cells, such as color and orientation selective types in primary visual cortex (Lennie and Movshon, 2005; Sincich and Horton, 2005). This would allow comparative quantitative anatomy across animals, and aid the search for the ultimate causes of connectivity.\n\nOur model combines connectivity, cellular and synaptic properties, and suggests the way towards combining even richer data. Distinct cell types differ in morphology, connectivity, transcriptomics, relation to behavior or stimuli, and many other ways. Algorithms combining these data and type information may allow us to synthesize all the available information from one experiment or even across experiments into a joint model of brain structure and function.\n\nOur work shows how rich probabilistic models can contribute to computational neuroanatomy. Eventually, algorithms will have to become a central tool for anatomists, as it will progressively become impossible for humans to parse the huge datasets. This transition may follow a similar transition to that of molecular biology (with gene-finding algorithms) and evolutionary biology (with computational phylogenetics). Ultimately, computational approaches may help resolve the significant disagreements across human anatomists.\n\n## Methods\n\n### Probabilistic model\n\nOur model is a extension of the iSBM (Kemp et al., 2006; Xu et al., 2006) to incorporate spatial relations between entities, inspired by attempts to extend these models with arbitrary discriminative functions (Murphy, 2012).\n\nWe take as input a connectivity matrix R defining the connections between cell ei and ej, as well as a distance function d(ei, ej) representing a (physical) distance between adjacent cells. See the supplemental material for extension to multiple connectivity matrices. We assume there exist an unknown number K of latent (unobserved) cell types, $k\\in{1,2,3,\u2026,K}$, and that each cell ei belongs to a single cell type. We indicate a cell ei is of type k using the assignment vector (c), so ci = k. The observed connectivity between two cells R(ei, ej) then depends only on their latent type and their distance through a link function f(\u22c5, d(ei, ej)). We assume f is parameterized based on the latent type, ci = m and cj = n, via a parameter \u03b7mn, as well as a set of global hyperparameters \u03b8, such that the link function is f(d(ei, ej)|\u03b7mn, \u03b8).\n\nWe then jointly infer the MAP estimate of the class assignment vector (c) = {ci}, the parameter matrix \u03b7mn, and the global model hyperparameters \u03b8:\n\n$$\np(c,\u03b7,\\theta|R)\u221d\\prodi,jp(R(e_{i},e_{j})|f(d(e_{i},e_{j})|\u03b7_{c_{i}c_{j}}),\\theta)\\prodm,np(\u03b7_{mn}|\\theta)p(\\theta)p(c|\\alpha)p(\\alpha)p(\\theta).\n$$\n\nWe describe the spatial \u2018logistic-distance Bernoulli\u2019 function here, and others in the supplemental material.\n\nThe \u2018logistic-distance Bernoulli\u2019 spatial model assumes that, if cell ei is of type m and cell ej is of type n, then \u03b7mn = (\u03bcmn, \u03bbmn), and the probability that two cells ei and ej are connected is given by\n\n$$\np^{*}=\\frac{1.0}{1+exp\\frac{d(e_{i},e_{j})\u2212\\mu_{mn}}{\\lambda_{mn}}},\n$$\n\n\n\n$$\np=p^{*}\u22c5(p_{max}\u2212p_{min})+p_{min},\n$$\n\nwhere pmax and pmin are global per-graph parameters.\n\nWe place exponential priors on the latent parameters:\n\n$$\n\\mu_{mn}\u223cexp(\\mu|\\mu^{hp}),\n$$\n\n\n\n$$\n\\lambda_{mn}\u223cexp(\\lambda|\\lambda^{hp}),\n$$\n\nusing \u03bbhp and \u03bchp as global per-graph hyperparameters.\n\nWe use a Dirichlet-process prior on class assignments, which allows the number of classes to be determined automatically. In brief, for N total cells, the probability of a cell belonging to a class is proportional to the number of data points already in that class, Nk, such that $p(c_{i}=k)\u221d\\frac{m_{k}}{N+\\alpha}$ and the probability of the cell belonging to a new class k\u2032 is $p(c_{i}=k\u2032)\u221d\\frac{\\alpha}{N+\\alpha}$. \u03b1 is the global concentration parameter\u2014larger values of \u03b1 make the model more likely to propose new classes. We grid the parameter \u03b1 and allow the best value to be learned from the data.\n\nWhere we model cell depth, we assume that each cell type has a typical depth, and thus a Gaussian distribution of si. We assume $s_{i}\u223cN(\\mu_{k}^{(s)},\\sigma_{k}^{2(s)})$, where the (s) superscript indicates these model parameters are associated with the soma-depth portion of our model. We use a conjugate prior for $(\\mu_{k}^{(s)},\\sigma_{k}^{2(s)})$ with $\\mu_{k}^{(s)}\u223cN(\\mu_{hp}^{(s)},\\sigma_{k}^{2(s)}/\u03ba_{hp}^{(s)})$ and $\\sigma_{k}^{2(s)}\u223c\u03c7^{\u22121}(\\sigma_{hp}^{2(s)},\u03bd_{hp}^{(s)}$. The use of conjugacy simplifies inference while allowing for each cell type to have its own depth mean and distribution.\n\nWe model synapse depth profile that each cell type has a characteristic depth distribution of synaptic contact points, and mixture of Gaussian distributions over cell is Ni contact points, gi. We do this by assuming the $g_{j}^{i}$ are drawn from an M = 3-component mixture of Gaussians. Thus associated with each cell type k is a vector of M Gaussian means $(\\mu_{k,1}^{g},\u22ef,\\mu_{k,M}^{g})$, and a mixture vector \u03c0k. This representation can thus model depth distributions of contact points that have up to three modes, an assumption that is well matched in the bulk of anatomical studies of cell-type-dependent connectivity.\n\n### Inference\n\nWe perform posterior inference via MCMC, annealing on the global likelihood during the traditional burn-in phase. MCMC transition kernels for different parts of the state space can be chained together to construct a kernel whose ergodic distribution is the target ergodic distribution over the entire state space.\n\nOur first transition kernel (\u2018structural\u2019) performs Gibbs sampling of the assignment vector $p(c|\u03b7,\\theta,\\alpha)$. The lack of conjugacy in our likelihood model makes an explicit evaluation of the conditional assignment probabilities impossible, motivating us to use an auxiliary variable method (Neal, 2000) in which a collection of ephemeral classes is explicitly represented for the duration of the Gibbs scan.\n\nWe then employ a transition kernel to update the per-component parameter values \u03b7mn. Conditioned on the assignment vector c and the model hyperparameters \u03b8, \u03b1 the individual \u03b7mn are independent. We slice sample (Neal, 2003) each component's parameters, choosing the slice width as a function of the global hyperparameter range.\n\nThe global hyperparameters, both \u03b1 and \u03b8, are allowed to take on a discrete set of possible values. As \u03b8 is often a tuple of possible values, we explore the Cartesian product of all possible values. We then Gibbs sample (our final transition kernel), which is always possible in a small, finite, discrete state space.\n\nWe chain these three kernels together, and then globally anneal on the likelihood from a temperature of T = 64 down to T = 1 over 900 iterations unless otherwise indicated, and then run the chain for another 100 iterations. We then generate at least 20 samples, each taken from the end of a single Markov chain initialized from different random initial points in the state space. For visualization we pick the chain with the highest log likelihood, but for all numerical comparisons (including link probability and cluster accuracy) we use this full collection of samples from the posterior distribution to estimate the resulting statistics.\n\n### Link prediction\n\nTo compute link-prediction accuracy, we compute the probability of a link between two cells using each model, trained via 10-fold cross-validation. We use a full collection of posterior samples when computing the link probability, and then compute the area under the ROC curve for each.\n\nWe compare our model with a standard network clustering model, the latent-position clustering model. This model assumes each cell belongs to one of K clusters, and each cluster is associated with a d-dimensional Gaussian distribution. The probability of a link is then a function of the distance between the data points in this continuous space. We use a variational implementation provided in R (Salter-Townshend and Murphy, 2013), parametrically varying the number of latent dimensions and the number of requested groups. While this model provides reasonable link-predictive accuracy, the clusterings dramatically disagree with those from human anatomists.\n\n### Parameters\n\nHierarchical generative models can be sensitive to hyperparameter settings, thus for most hyperparameters we perform inference. In cases where we cannot, we run separate collections of Markov chains at separate settings and show the results across all pooled parameters. For the case of the mouse retina data, we consider maximum link probability $p_{max}\\in{0.95,0.9,0.7}$, variance scales for the synapse density profile of $\\sigma^{2}\\in{0.01,0.1,1.0}$ (of normalized depth), and $K\\in{2,3}$ possible synapse density profile mixture components. For the connectivity-distance-only model we actually perform inference over both pmax and pmin.\n\n### Mixing of our Markov chains\n\nEvaluating whether or not approximate inference methods, such as MCMC, produce samples which are valid approximations of the posterior distribution is an ongoing area of research in the computational statistics community. We use a rough proxy here\u2014synthetic likelihood evaluation. For synthetic datasets of sizes comparable to our real data size, do we recover known ground truth information after running our Markov chains for the appropriate amount of time?\n\nFigures 9 and 10 show the cluster accuracy (ARI) to ground truth and the total log score as a function of runtime. We see dramatic changes in log score initially as we vary the temperature, stabilizing as runtime progresses, for each chain. Then we see the characteristic jumps between nearby modes towards the end of the run, in both log score and ARI. Importantly, regardless of whether our model over- or under-estimates the exact posterior variance about the network, we find points in the latent variable space that are both predictive and parsimonious, largely agreeing with the human anatomists and predicting existing connections.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig9-v1.jpg)\n\n![Figure 10.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig10-v1.jpg)\n\n### Dataset details\n\n#### Mouse retina\n\nDense serial electron microscopy of a 114 \u03bcm \u00d7 80 \u03bcm area in the mouse retina by Helmstaedter et al. (2013) yielded a listing of places where neurons come into contact. There were over 1000 cells originally, and we selected the 950 for which the location of the soma could be reconstructed from the provided cell plots (soma locations were not provided by the study's authors in machine-readable form). The result was a matrix of the total synapse-like contact area between all pairs of 950 cells. Area was thresholded at 0.1 \u03bcm, determined by hand, to yield a 950 \u00d7 950 entry matrix that served as input to our algorithm. We measured the distance between cells using the reconstructed soma centers, and used the logistic-distance spatial relation. Hyperprior griddings are shown in the \u2018Hyperprior grids and hyperprior inference\u2019 section.\n\n#### C. elegans\n\nWe obtained the connectome of C. elegans from data published previously (Varshney et al., 2011), and isolated the 279 non-pharyngeal neurons, with a total of 6393 chemical synapses and 890 gap junctions originally cleaned up in Chen et al. (2006). A cell's position was its distance along the anterior\u2013posterior axis normalized between 0 and 1. We used both networks, the chemical network as a directed graph and the electrical network as an undirected graph. We use the synapse counts with the logistic-distance Poisson likelihood, scaling the counts by 4.0 to compensate for the Poisson's overdispersion.\n\n#### Microprocessor\n\nWe extracted the connection graph for the transistors in the MOS 6502 (James et al., 2010). Each transistor has three terminals (gate, source, drain), but the methods of the original dataset were unable to consistently resolve which of the C1 and C2 terminals were source and drain, leading to ambiguity in our encoding. We identified a region consisting of three registers X, Y, and S via visual inspection and focused our efforts there. We created a total of six connectivity matrices by examining possible terminal pairings. For example, one graph encodes the connectivity between pins $g$ and $c_{1}.$ We then have, $R^{gc_{1}}(e_{i},e_{j})=1$ if transistor ej and ej are connected via pins g and c1.\n\n### Other likelihoods\n\nWe reparameterized the logistic-distance Bernoulli likelihood to better capture the microprocessor data structure. We are explicitly setting the maximum probability p of the logistic function on a per-component basis, drawing from a global $p\u223cBeta(\\alpha_{hp},\\beta_{hp})$. Then \u03bb is set for each component as a global hyperparameter, \u03bb.\n\nThe \u2018logistic-distance Poisson\u2019 spatial model is used to explicitly model the count of synapses, c, between two neurons. The probability of c synapses between two neurons is distributed $c\u223cPoisson(c|r)$, where r (the \u2018rate\u2019) is generated by a scaled logistic function (the logistic function has range [0, 1]). For each component \u03b7mn we learn both the threshold \u03bcmn and the rate scaling factor rmn. Thus if cells m and n are likely to have on average 20 synapses if they are closer than 5 \u03bcm, then \u03bcmn = 5 and rmn = 20.\n\nThus the probability of R(ei, ej) = c synapses between two cells ei and ej is given by:\n\n$$\nr^{*}=\\frac{1.0}{1+exp\\frac{d(e_{i},e_{j})\u2212\\mu_{mn}}{\\lambda}},\n$$\n\n\n\n$$\nr=r^{*}\u22c5(r_{mn}\u2212r_{min})+r_{min},\n$$\n\n\n\n$$\nR(e_{i},e_{j})\u223cPoisson(c|r),\n$$\n\nwhere \u03bb and rmin are per-graph parameters and we have per-component parameters $\\mu_{mn}\u223cExp(\\mu|\\mu^{hp})$ and $r_{mn}\u223cExp(r_{mn}|r_{scale}^{hp})$.\n\n### Source code and data\n\nAll source code and materials for running experiments can be obtained from the project website, at http://ericmjonas.github.io/connectodiscovery/.\n\nAll preprocessed data has been made publically available as well.\n\n### Extension to multiple graphs\n\nThe model can handle multiple graphs Rq simultaneously with a shared clustering by extending the likelihood to include the product of the likelihoods of the individual graphs.\n\n$$\np(c,\u03b7^{q},\\theta^{q}|R^{q})\u221d\\prodq(\\prodi,jp(R^{q}(e_{i},e_{j})|f(d(e_{i},e_{j})|\u03b7_{c_{i}c_{j}}^{q},\\theta^{q})\\prodm,np(\u03b7_{mn}^{q}|\\theta^{q})p(\\theta^{q}))p(c|\\alpha)p(\\alpha).\n$$\n\n### Hyperprior grids and hyperprior inference\n\nFor the mouse retina logistic-distance Bernoulli model, we gridded \u03bchp and \u03bbhp into 40 log10-spaced points 1.0 and 80.\n\nFor the C. elegans data with the logistic-distance Poisson model, we gridded \u03bchp and \u03bb into 20 log10-spaced points between 0.2 and 2.0, and the ratescalehp parameter into 20 log10-spaced points between 2.0 and 20.0. We globally set ratemin = 0.01.\n\nFor the microprocessor with the logistic-distance with fixed lambda parameter and Bernoulli likelihood, we gridded muhp into 50 log10-spaced points between 10 and 500 and set \u03bb = \u03bchp/10. $p_{min}\\in{0.001,0.01,0.02}$ and both p\u03b1 and $p_{\\beta}\\in{0.1,1.0,2.0}$.\n\n### Measuring clustering similarity\n\nWe compare discovered types to known types via cluster comparison metrics: cluster homogeneity, cluster completeness, and the ARI. Homogeneity measures how many true types are in a given found type. If every cell type is split into two types, each subtype is still completely homogeneous. Completeness measures how many members of a given true type are split across found types.\n\nARI takes into account both effects (Hubert and Arabie, 1985)\u2014two identical clusterings have an ARI of 1.0, while progressively more dissimilar clusters have lower ARIs, becoming slightly negative as the clustering gets anti-correlated.\n\nFigure 11 shows the result of taking 20 different clusters and moving data points between them according to the following operations.\u2022distribute: take a class and distribute its elements uniformly among the remaining types.\u2022merge: take a type and merge it into another existing type.\u2022split: take a type and split it into two distinct types.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/04250/elife-04250-fig11-v1.jpg)\n\nWe can see the impact on ARI, completeness, and homogeneity as we perform these operations on more of the original 20 types. In all cases, \u2018distribution\u2019 of one type among the others is detrimental to the metric. Splitting impacts completeness but not homogeneity, and merging impacts homogeneity but not completeness.\n",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d7f8531f-2e0d-4bba-89f0-16e323d9543b",
+      "submission_id": "6f27e2ba-4fd8-4156-84d0-132f73c2ed67",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, University Health Network, and University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04250.014](https://doi.org/10.7554/eLife.04250.014)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAutomatic discovery of cell types and microcircuitry from neural connectomics\u201d for consideration at eLife. Your article has been evaluated by a Senior editor, a Reviewing editor and three reviewers, and it was decided that a revised submission should be considered.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall, the reviewers felt that the work potentially presents a major advance, addressing the problem of automatic analysis of large, augmented connectomic data sets, a problem that is quickly growing in importance as these data sets become available. As such, the work is considered to be very timely. However, it was also felt that it is unclear how the algorithm works and what its limitations might be. A more careful description and presentation of the method with added discussions is strongly needed. In other words, does the method actually work? As presented, it seems magical and impressive, and there was some concern as to whether it was too good to be true. Data and methods need to be made available as well as having controls and showing ROC curves to allow further evaluation. More rigor in defining terms and labeling figures is also needed. It was also felt that the figures, while aesthetically pleasing, were not helpful for evaluation of the algorithm.\n\nSpecifically, the following aspects were raised:\n\n1) Explain the algorithm limitations, i.e., where it breaks down (noting that the reviewers appreciate that no algorithm can solve every problem). This might be best done in the context of a toy problem. Any potential user of this algorithm would benefit from understanding its limitations better. Under what conditions does it break down? What are the pressure points? For example, what if the data set has structure, but there really aren't distinct classes (as has been proposed for cortex)? Is it particularly sensitive to some of the choices of priors? Etc. Perhaps other examples would provide better insight into potential failure modes.\n\n2) Show cross-validation on the link prediction.\n\n3) As given, the cell type identity analysis is difficult to parse; the circos-style plots don't tell much and the other plots are often inadequately labelled. It is also unclear as to how validation was performed or was to be observed. Simply seeing ROC curves (or reported areas) or something similar is needed. The figures are of low informational value. How would some well-known supervised method do at this task in cross-validation? It would seem, intuitively, to be a natural choice for learning cell identity. See, for example, PMID: 21154911, for a well-defined analysis.\n\nShow ROC style prediction on the cell types. This can be done by cross-validation i.e., do the clustering, then label all the cells using, e.g., 2/3 of the human-labelled data. Then assign each unknown cell a label based on its co-membership with cells of known labels. This would end up giving a ranked score, since probabilistic. The comparison method would be something like nearest-neighbor assignment. To avoid making this a multi-class prediction problem, one could do it one class at a time and not worry about overlapped assignments. This would set a good standard for methods comparison.\n\n4) Consideration and discussion about the edge effects in the retinal data.\n\nThe retina data set covers a relatively small volume of the retina (on the order of 100 microns in each direction) and most of the cells whose cell bodies are located within this volume have their neurites \u201ccut off\u201d, i.e. they are not fully contained within the volume. This will lead to edge effects that may impact or bias connection patterns, for example cells whose cell bodies are near the center of the field of view should have more synaptic contacts (more partners in the contact matrix) simply because they are more fully captured in the reconstruction. How have such potential edge effects been accounted for in the present analyses? Could there be improvement in the performance of the clustering algorithm by taking into account such biases?\n\n5) Chip example was considered less critical as compared to providing more testing and further details and discussion on the retinal and C.elegans examples.\n\n6) The use of connectivity information for characterizing nodes in a neural network has a long history in cognitive and systems neuroscience. It would be nice to point this out. A potential starting point is the review of Passingham et al. (2002) in Nature Reviews Neuroscience.\n\n7) Additional comments regarding unhelpful/unclear figure aspects for algorithm specifics:\n\nAre there any known inherent biases in terms of preferences in cluster sizes? It appears, from Figure 4, that there are a small number of fairly large (and quite uniform) clusters and a larger number of quite small ones (that seem quite noisy with respect to the anatomist's cell classification).\n\nIt is difficult to judge just by visual inspection alone how \u201cgood\u201d the agreement between the automated cluster analysis and the anatomist's ordering scheme really is (Figure 3C, outer ring). Is there a more quantitative way of determining the \u201cfit\u201d of the model with the a priori anatomical cell type assignments?\n\nIn a similar vein, the text claims (in the subsection headed \u201cRecovering spatial connectivity in multiple graphs simultaneously\u201d) that for C. elegans the clusters correspond roughly homogenously to moto, sensory and interneurons, but looking at Figure 5, it is not so clear. Interneurons are found in almost all of the clusters, and very few are truly homogeneous with respect to these three types of neurons. Again, it would be good to think of a way to quantify \u201chomogeneity\u201d.\n\nIn the circular plots (e.g. Figure 1I), it is not quite clear what the shaded arcs in the center refer to. Is the shading proportional to some sort of density (of what?), and what does the width of these arcs refer to?\n",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "86d453b5-c575-467d-8b4a-f4d0f7d18174",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C1",
+      "claim": "Neural connectomics has begun producing massive amounts of data, necessitating new analysis methods to discover the biological and computational structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural connectomics has begun producing massive amounts of data, necessitating new analysis methods to discover the biological and computational structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of the field, drawing from established scientific knowledge about connectomics data generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3c83ae81-6dde-4123-97f0-6ca5c98b5578",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C2",
+      "claim": "It has long been assumed that discovering neuron types and their relation to microcircuitry is crucial to understanding neural function.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been assumed that discovering neuron types and their relation to microcircuitry is crucial to understanding neural function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to established scientific consensus in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "5839039b-532c-40cb-a303-aac5977c48e4",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C3",
+      "claim": "The authors developed a non-parametric Bayesian technique that identifies neuron types and microcircuitry patterns in connectomics data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we developed a non-parametric Bayesian technique that identifies neuron types and microcircuitry patterns in connectomics data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological contribution described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d494d029-0ae2-40be-9eb1-beeaadacd96b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C4",
+      "claim": "The technique combines connectivity, cell body location, and the spatial distribution of synapses in a principled and probabilistically coherent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the features used by the model as presented in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "b8ff6b0f-e95d-489d-b4a8-3846a8d4511c",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C5",
+      "claim": "The approach recovers known neuron types in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the approach recovers known neuron types in the retina and enables predictions of connectivity, better than simpler algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental results shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "76714e73-19f7-488c-ba9f-4218e08a7f6b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C6",
+      "claim": "The approach enables predictions of connectivity better than simpler algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the approach recovers known neuron types in the retina and enables predictions of connectivity, better than simpler algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis with other methods shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "125488a3-62cd-47d5-9b84-1c92d859c019",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C7",
+      "claim": "The approach can reveal interesting structure in the nervous system of Caenorhabditis elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "It also can reveal interesting structure in the nervous system of Caenorhabditis elegans and an old man-made microprocessor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through application to C. elegans data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "a74ff9c4-3031-4864-a73f-8e9ff19b6263",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C8",
+      "claim": "The approach can reveal interesting structure in an old man-made microprocessor.",
+      "claim_type": "EXPLICIT",
+      "source": "It also can reveal interesting structure in the nervous system of Caenorhabditis elegans and an old man-made microprocessor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through application to microprocessor data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "67809b6c-19ac-4c13-aefa-fc1b93c888c2",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C9",
+      "claim": "Emerging connectomics techniques promise to quantify the location and connectivity of each neuron within a tissue volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging connectomics techniques (Zador et al., 2012; Morgan and Lichtman, 2013) promise to quantify the location and connectivity of each neuron within a tissue volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e1f5d6d7-3bf3-4647-9ba2-65149fd1c3a7",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C10",
+      "claim": "Massive connectomics datasets will far exceed the capacity of neuroanatomists to manually trace small circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These massive datasets will far exceed the capacity of neuroanatomists to manually trace small circuits, thus necessitating computational, quantitative, and automatic methods for understanding neural circuit structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the scale of data being generated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "691ed39f-de18-47c3-9e15-7110f1729049",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C11",
+      "claim": "The rise of sequencing techniques necessitated the development of novel computational methods to understand genomic structure, ushering in bioinformatics as an independent discipline.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of this kind of high-throughput transition has been seen before\u2014the rise of sequencing techniques necessitated the development of novel computational methods to understand genomic structure, ushering in bioinformatics as an independent discipline (Koboldt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents established knowledge about the history of bioinformatics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "5c4bb626-a647-41ec-a6ab-aa32aa9f7a55",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C12",
+      "claim": "The brain consists of multiple kinds of neurons, each of which is hypothesized to have a specific role in overall computation.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain consists of multiple kinds of neurons, each of which is hypothesized to have a specific role in overall computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established neuroscience knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "91c6db53-fc98-4394-b7a9-298c8518f315",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C13",
+      "claim": "Neuron types differ in the way they connect to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuron types differ in many ways, for example, chemical or morphological, but they also differ in the way they connect to one another (Seung and S\u00fcmb\u00fcl, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "56b74d6f-321a-45cf-b2e8-3b9b8d999d8f",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C14",
+      "claim": "The idea of well defined, type-dependent local connectivity patterns (microcircuits) has a long history.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the idea of well defined, type-dependent local connectivity patterns (microcircuits) has a long history (Passingham, 2002), and is prominent in many areas, from sensory (e.g., retina; Masland, 2001) to processing (e.g., neocortex; Mountcastle, 1997) to movement (e.g., spinal cord; Grillner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "6f63f97a-7e9c-41bf-bd9d-9c2def35d9b6",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C15",
+      "claim": "Types of repeated computing patterns are a common feature of computing systems, even occurring in man-made computing circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These types of repeated computing patterns are a common feature of computing systems, even occurring in man-made computing circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents general knowledge about computing systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "73af7777-b5de-4759-80d2-9ab04b8ff7a7",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C16",
+      "claim": "Early network science approaches focused on global graph properties, such as the types of scaling present in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Early approaches focused on global graph properties, such as the types of scaling present in the network (Watts and Strogatz, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "a211e948-6164-45c3-8f6a-9d4f06e5d509",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C17",
+      "claim": "More recent network science work aims at identifying very small-scale repeat patterns, or motifs, in networks.",
+      "claim_type": "EXPLICIT",
+      "source": "While this approach leads to an understanding of the global network, more recent work aims at identifying very small-scale repeat patterns, or motifs, in networks (Milo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f96fe4b8-e6a1-449b-a7f7-91333990da29",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C18",
+      "claim": "Community-based detection methods and stochastic block models are commonly used algorithms for discovering structure in probabilistic graphs.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly used algorithms include community-based detection methods (Girvan and Newman, 2002) and stochastic block models (Nowicki and Snijders, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "42539c8f-0b40-4eb8-90de-2323096ac7c1",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C19",
+      "claim": "Traditional graph clustering approaches can incorporate the probabilistic nature of neural connections.",
+      "claim_type": "EXPLICIT",
+      "source": "While these approaches can incorporate the probabilistic nature of neural connections (Hill et al., 2012), they do not incorporate the additional richer structure present in connectomics data\u2014the location of cell bodies, the spatial distribution of synapses, and the distances between neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "12f0abd3-94b9-407f-aab5-8fe565489343",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C20",
+      "claim": "Traditional graph clustering approaches do not incorporate the location of cell bodies, the spatial distribution of synapses, and the distances between neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While these approaches can incorporate the probabilistic nature of neural connections (Hill et al., 2012), they do not incorporate the additional richer structure present in connectomics data\u2014the location of cell bodies, the spatial distribution of synapses, and the distances between neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "80796dc3-9d9c-4734-b0e7-e4241560bd0d",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C21",
+      "claim": "The probability of connections has a strong spatial component in neural systems.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of particular importance that the probability of connections has a strong spatial component, a factor that is hard to reconcile with many other methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about neural connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "20d44837-c5e9-47a1-8fe3-44da0bbf7c0f",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C22",
+      "claim": "Patterns of connectivity in neuroscience and other computing systems are expected to be much more complex than traditional motifs, exhibiting a strong spatial dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "When it comes to neuroscience and other computing systems, we expect patterns of connectivity much more complex than traditional motifs, exhibiting a strong spatial dependence arising from the complex genetic, chemical, and activity-based neural development processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of neural development processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "70806502-53a3-4a0e-96e9-add618e7ffea",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C23",
+      "claim": "The Bayesian non-parametric model can discover circuit structure automatically from connectomics data: the cell types, their spatial patterns of interconnection, and the locations of somata and synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these challenges, here we describe a Bayesian non-parametric model that can discover circuit structure automatically from connectomics data: the cell types, their spatial patterns of interconnection, and the locations of somata and synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of the model as demonstrated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "97e26b0b-b583-4f24-b416-44af6b8eb38b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C24",
+      "claim": "By incorporating additional information, the model both accurately predicts the connection as well as agrees with human neuroanatomists as to the identification of cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that by incorporating this additional information, our model both accurately predicts the connection as well as agrees with human neuroanatomists as to the identification of cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental results comparing the model to human annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "9d9e9496-e1cd-48de-8069-384df865b147",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C25",
+      "claim": "The authors take inspiration from previous work on identifying cell types automatically from morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "We take as inspiration previous work on identifying cell types automatically from morphology (Guerra et al., 2011) and electrophysiology (Druckmann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "8b6800a6-2973-42b2-b43a-d03376a7f41e",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C26",
+      "claim": "The authors take inspiration from previous work on identifying cell types automatically from electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "We take as inspiration previous work on identifying cell types automatically from morphology (Guerra et al., 2011) and electrophysiology (Druckmann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c4bda6b0-6977-40d6-94df-85d113e1ab17",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C27",
+      "claim": "The authors primarily focus on the recently released mouse retina connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "We primarily focus on the recently released mouse retina connectome (Helmstaedter et al., 2013), but additionally examine the Caenorhabditis elegans connectome (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and describes the datasets used.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "eae30d26-a372-4b9d-8359-c00e94355e51",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C28",
+      "claim": "The authors additionally examine the Caenorhabditis elegans connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "We primarily focus on the recently released mouse retina connectome (Helmstaedter et al., 2013), but additionally examine the Caenorhabditis elegans connectome (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and describes the datasets used.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "22b96448-0bba-495a-982f-d74a81892e99",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C29",
+      "claim": "Comparing the cell types discovered by the algorithms with those obtained manually by human anatomists reveals a high degree of agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the cell types discovered by the algorithms with those obtained manually by human anatomists reveals a high degree of agreement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative comparison metrics shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e37aae41-bf7f-4aab-b81e-20c7c6e96add",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C30",
+      "claim": "The model begins with the generic notion of a cell being a member of a single type.",
+      "claim_type": "EXPLICIT",
+      "source": "We build a structured probabilistic model which begins with the generic notion of a cell being a member of a single type\u2014and these types affect soma depth, distribution of synapses, as well as a cell type and distance-dependent connection probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assumptions of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "103e7d74-b488-4c86-aa67-44110c10083b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C31",
+      "claim": "Cell types affect soma depth, distribution of synapses, as well as a cell type and distance-dependent connection probability.",
+      "claim_type": "EXPLICIT",
+      "source": "We build a structured probabilistic model which begins with the generic notion of a cell being a member of a single type\u2014and these types affect soma depth, distribution of synapses, as well as a cell type and distance-dependent connection probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assumptions of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "062f1a04-0e7f-4aaa-aa17-26a2e63c0a42",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C32",
+      "claim": "The method is unsupervised\u2014it seeks to discover structure in data and make predictions in the absence of training data.",
+      "claim_type": "EXPLICIT",
+      "source": "In machine learning parlance, our method is unsupervised\u2014it seeks to discover structure in data and make predictions in the absence of training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "4f481cf1-58c6-4a2d-97c5-9989c9347261",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C33",
+      "claim": "The model takes as input the connectivity matrix of cells, a matrix of the distance between cells, the per-cell soma depth, and the depth profile of the cell's synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "We take as input (Figure 1A) the connectivity matrix of cells (Figure 1B), a matrix of the distance between cells (Figure 1C), the per-cell soma depth (Figure 1D), and the depth profile of the cell's synapses (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the input data to the model and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "7e1232b0-b69a-4725-965d-c8efc7074504",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C34",
+      "claim": "The model performs joint probabilistic inference to automatically learn the number of cell types, which cells belong to which type, their type-specific connectivity, and how connections between types vary with distance.",
+      "claim_type": "EXPLICIT",
+      "source": "We perform joint probabilistic inference to automatically learn the number of cell types, which cells belong to which type, their type-specific connectivity, and how connections between types vary with distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outputs of the model inference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "51c06712-dc04-49ab-bb22-0588806d1b01",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C35",
+      "claim": "The model simultaneously learns the soma depth associated with each type and the typical synaptic density profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We also simultaneously learn the soma depth associated with each type and the typical synaptic density profile (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes additional outputs of the model and references Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "6d510979-e2a7-45b2-ac93-e2c0efd874bb",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C36",
+      "claim": "The model starts with the iSBM, which has been shown to meaningfully cluster connection graphs while learning the number of hidden groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We start with a model for connectivity, the iSBM (Kemp et al., 2006; Xu et al., 2006), which has been shown to meaningfully cluster connection graphs while learning the number of hidden groups, or types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on the iSBM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d2b65fa9-ee3d-441b-b5c4-704971ac7f4a",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C37",
+      "claim": "The authors extend the iSBM approach by adding distance dependence to model salient aspects of microcircuitry via logistic and exponential distance-link functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We extend this approach by adding distance dependence to model salient aspects of microcircuitry via logistic and exponential distance-link functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological contribution of the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e439fead-6be9-4d5e-8f66-8d9f8ee284e6",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C38",
+      "claim": "The model forms a unimodal model of cell body depth and a multimodal synapse density profile model.",
+      "claim_type": "EXPLICIT",
+      "source": "We form a unimodial model of cell body depth and a multimodal synapse density profile model (see 'Materials and methods' for mathematical details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes components of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "0e2791ad-3ed8-47ec-8128-5dc4e2ee1e12",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C39",
+      "claim": "If the model works well, then the probability that a pair of neurons is of the same type should be high if the neurons actually are of the same type.",
+      "claim_type": "EXPLICIT",
+      "source": "First, if the model works well, then the probability that a pair of neurons is of the same type should be high if the neurons actually are of the same type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an evaluation criterion for the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "8affe4c2-f44f-4b7f-a6de-0b07d1b081b8",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C40",
+      "claim": "The model should assign a high probability of connection between two cells if they have a connection in the underlying data.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the model should assign a high probability of connection between two cells if they have a connection in the underlying data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an evaluation criterion for the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "32bbaea7-108a-492c-8196-e6c674f583c8",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C41",
+      "claim": "Homogeneity reflects the degree to which a found cluster or type contains only a single true type.",
+      "claim_type": "EXPLICIT",
+      "source": "Homogeneity reflects the degree to which a found cluster or type contains only a single true type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines a metric used in the evaluation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "5e15826d-d946-4808-bce7-8fa76a188fab",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C42",
+      "claim": "Completeness measures how much of a true type is contained within a single identified type.",
+      "claim_type": "EXPLICIT",
+      "source": "Completeness measures how much of a true type is contained within a single identified type\u2014a completeness of 1.0 means no true type is split into multiple subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines a metric used in the evaluation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f603fda8-3c7e-4977-bbe3-a438c73102bd",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C43",
+      "claim": "ARI is a metric that reflects both homogeneity and completeness measures.",
+      "claim_type": "EXPLICIT",
+      "source": "ARI is a metric that reflects both measures (see the supplemental material for more information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines a metric used in the evaluation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "cea1de47-bb8b-4b65-aa59-fe31d705367a",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C44",
+      "claim": "The model does a good job of recovering the correct number of cell types in simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the model does a good job of recovering the correct number of cell types (Figure 2A), the cell identities (Figure 2B), and the spatial extent of each type (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results from simulated data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f1e4a603-f30b-404c-9201-1c6c01772669",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C45",
+      "claim": "The model does a good job of recovering cell identities in simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the model does a good job of recovering the correct number of cell types (Figure 2A), the cell identities (Figure 2B), and the spatial extent of each type (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results from simulated data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "85d0c78f-86b0-476b-913f-91413aef8353",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C46",
+      "claim": "The model does a good job of recovering the spatial extent of each type in simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the model does a good job of recovering the correct number of cell types (Figure 2A), the cell identities (Figure 2B), and the spatial extent of each type (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results from simulated data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c5b72ef6-4950-46cf-a488-295bc0ca1719",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C47",
+      "claim": "The regular block model (iSBM) cannot correctly deal with distance-dependent connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrast shows that while the regular block model can not correctly deal with distance-dependent connectivity, our model can.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "9d97912f-dda1-406b-aa23-048b576515ad",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C48",
+      "claim": "The authors' model can correctly deal with distance-dependent connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrast shows that while the regular block model can not correctly deal with distance-dependent connectivity, our model can.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "8dda1418-ea9b-436b-ae44-6f4fb3569fe5",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C49",
+      "claim": "The model converges relatively quickly to an estimate of the most probable values for the cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model converges relatively quickly (see 'Mixing of Markov chains') to an estimate of the most probable values for the cell types, which is enabled by using a combination of simulated annealing and parallelized Markov-chain Monte Carlo (MCMC) (see 'Materials and methods' for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by convergence analysis shown in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "9aaecfd5-3879-4028-a92e-6408028145e4",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C50",
+      "claim": "If the data are sampled from the authors' model, inference according to their model is good by all measures.",
+      "claim_type": "EXPLICIT",
+      "source": "If the data are sampled from our model, inference according to our model, unsurprisingly, is good by all measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3ad66868-3907-4153-99ea-292cc4b481b8",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C51",
+      "claim": "If the data come from a block model without distance dependence, the model still does well on all meaningful measures.",
+      "claim_type": "EXPLICIT",
+      "source": "If the data come from a block model without distance dependence, we see that it still does well on all meaningful measures (Figure 3, second row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3a6f9b2a-8b96-48bb-903a-f484e311d60b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C52",
+      "claim": "For the mixed membership model, the model grossly overestimates the number of types, by basically allocating a type for each combination of memberships.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mixed membership model (Figure 3, third row), the model grossly overestimates the number of types, by basically allocating a type for each combination of memberships.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "1c21e4d2-9cfb-48e4-8790-cc2eb0cc4070",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C53",
+      "claim": "For the latent position clustering model, the model does poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, for the latent position clustering model (Figure 3, fourth row), the model does poorly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f7adee21-4951-4991-a4b5-711fab483b50",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C54",
+      "claim": "If type is continuous instead of discrete, then the model is basically trying to cover a continuous set with a discrete scenario leading to rather poor performance.",
+      "claim_type": "EXPLICIT",
+      "source": "If type is continuous instead of discrete, then our model is basically trying to cover a continuous set with a discrete scenario leading to rather poor performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about model limitations based on the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d9d32d6c-80a4-4cda-842f-44a12d3c004d",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C55",
+      "claim": "Cell types are expected to have a discrete biological basis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as we do expect cell types to have a discrete biological basis, we might expect our model to do well with real data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "9a1d7ea5-6c2b-4e6a-a32c-b8c9d3be5f37",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C56",
+      "claim": "If there is no distance dependence, edge effects do not artificially introduce distance dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, if there is no distance dependence, edge effects do not artificially introduce distance dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "bf1ed9f1-7509-4d55-bea6-7cd34911969d",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C57",
+      "claim": "If the section being examined is too small, the model can miss the distance dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the section we are examining is too small, our model can miss the distance dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "9e8d8ea0-9668-424b-b069-0074be648816",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C58",
+      "claim": "With respect to distance-dependent connectivity inference, the model errs on the side of caution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus with respect to distance-dependent connectivity inference, our model errs on the side of caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the edge effect analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "40192205-b40a-4127-9b24-39d253fd3b5c",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C59",
+      "claim": "For spatial extent that is similar to the currently available datasets, the effects of edge artifacts are quite limited.",
+      "claim_type": "EXPLICIT",
+      "source": "But we also find that for spatial extent that is similar to the currently available datasets, the effects of this are quite limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d7047f7c-6179-4ae4-9bdc-dda9a71454bc",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C60",
+      "claim": "The mouse retina is a neural circuit which is expected to have connectivity patterns that are well approximated by the generative model.",
+      "claim_type": "EXPLICIT",
+      "source": "The mouse retina (Masland, 2001) is a neural circuit which we expect to have connectivity patterns that are well approximated by our generative model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of retinal structure and is supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e29aae1b-6b06-4bfd-9d79-d65e3421cf94",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C61",
+      "claim": "There are multiple classes of cells in the retina that can be broadly grouped into: ganglion cells that transmit information to the rest of the brain; bipolar cells that connect between different cells; and amacrine cells that feed into the ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that there are multiple classes of cells that can be broadly grouped into: ganglion cells that transmit information to the rest of the brain; bipolar cells that connect between different cells; and amacrine cells that feed into the ganglion cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about retinal cell types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e3b41a55-2bce-473a-87b5-6e42fc331cf5",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C62",
+      "claim": "Recent research has produced a large dataset containing both the types of cells from orthogonal approaches, and also the connectivity matrix between all reconstructed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research (Helmstaedter et al., 2013) has produced a large dataset containing both the types of cells from orthogonal approaches, and also the connectivity matrix between all reconstructed cells (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to the dataset source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "0c9f19cc-5da2-4a0e-b624-8cbc063842f7",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C63",
+      "claim": "The algorithm took 8 hr to perform inference on the retina data.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm took 8 hr to perform inference, dividing neurons into a set of cell types which reflect known neuroanatomical distinctions (Figure 5 shows the MAP result).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of computational performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "0e18ab0f-57f0-46ac-b76d-738841b7e503",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C64",
+      "claim": "The algorithm divides neurons into a set of cell types which reflect known neuroanatomical distinctions.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm took 8 hr to perform inference, dividing neurons into a set of cell types which reflect known neuroanatomical distinctions (Figure 5 shows the MAP result).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "81e4a077-7aea-49b0-a306-a1a20fdb56e3",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C65",
+      "claim": "For each pair of neurons there is a specific distance-dependent connection probability, which is well approximated by the model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "For each pair of neurons there is a specific distance-dependent connection probability (Figure 5D), which is well approximated by the model fit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "63cfcda2-49cf-4089-8716-b54f9ae47f10",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C66",
+      "claim": "Each type of cell is rather isotropically distributed across space.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, each type of cell is rather isotropically distributed across space (Figure 5C) as should be expected for true cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "cbf062e9-82df-46b1-99eb-72031029bfaf",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C67",
+      "claim": "The discovered types closely reflect the (anatomist-determined) segmentation of cells into retinal ganglion, narrow amacrine, medium/wide amacrine, and bipolar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our types closely reflect the (anatomist-determined) segmentation of cells into retinal ganglion, narrow amacrine, medium/wide amacrine, and bipolar cells (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3fa71a87-6975-4399-8256-d128eeb78df1",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C68",
+      "claim": "The discovered types tend to reflect the known laminar distribution in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the types we find tend to reflect the known laminar distribution in the retina (Figure 6C) as well as the known synaptic density profiles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "29278922-a0bc-4cc5-bac9-8fea03e61a74",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C69",
+      "claim": "The discovered types tend to reflect the known synaptic density profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the types we find tend to reflect the known laminar distribution in the retina (Figure 6C) as well as the known synaptic density profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "fa61c16e-8b9c-4708-bf24-b15f6653dc55",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C70",
+      "claim": "The algorithm yields a separation of neurons into a smaller number of types than the fully granular listing of 71 types found by the original authors of the paper.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm yields a separation of neurons into a smaller number of types than the fully granular listing of 71 types found by the original authors of the paper (Helmstaedter et al., 2013), although it is still highly correlated with those finer type distinctions (see section 'Mouse retina').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with the original dataset annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "b38db3ac-7f93-4f28-ad15-bc2af1d94e53",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C71",
+      "claim": "The algorithm's clustering is still highly correlated with the finer type distinctions found by the original authors.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm yields a separation of neurons into a smaller number of types than the fully granular listing of 71 types found by the original authors of the paper (Helmstaedter et al., 2013), although it is still highly correlated with those finer type distinctions (see section 'Mouse retina').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "a369f636-a299-4fc5-9082-ac1bd57cab41",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C72",
+      "claim": "With larger datasets, even closer agreement with anatomist classifications would be found.",
+      "claim_type": "EXPLICIT",
+      "source": "It is our expectation that, with larger datasets, even closer agreement would be found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future performance with more data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "b80ac9f8-af50-4116-9437-c0022b410fb1",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C73",
+      "claim": "The model tends to over-cluster\u2014cells which are of distinct type (at the finest granularity of neuroanatomist-identified type) are grouped as a single type by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that our model tends to over-cluster\u2014cells which are of distinct type (at the finest granularity of neuroanatomist-identified type) are grouped as a single type by our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the clustering results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e75d7e6a-149d-4817-bd22-9166553aef8c",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C74",
+      "claim": "Many techniques allow for good link-predictive accuracy on the retina dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that given the dataset, many techniques allow for good link-predictive accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "220b7557-e0f5-41ac-a9eb-deb9b5a5046d",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C75",
+      "claim": "All the methods allow decent link prediction with an AUC in the 0.9 range.",
+      "claim_type": "EXPLICIT",
+      "source": "All the methods allow decent link prediction with an AUC in the 0.9 range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "6561678b-d3b4-4643-84d2-bde0433d7e45",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C76",
+      "claim": "The authors' algorithm clearly outperforms the simple statistical models that only use connectivity for link prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our algorithm clearly outperforms the simple statistical models that only use connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "353dcb0b-db50-4c8e-833a-e9f727b5924a",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C77",
+      "claim": "The authors' algorithm far outperforms the controls in terms of clustering accuracy (ARI).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that our algorithm far outperforms the controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d1b7e642-8cb3-4a6d-a582-a20c50fe7996",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C78",
+      "claim": "When the model is based on more of the same information used by anatomists, then it gets better at agreeing with these anatomists.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that when it is based on more of the same information used by anatomists, then it gets better at agreeing with these anatomists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "1f247e23-0b2f-4b93-955a-dc20ca1931e1",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C79",
+      "claim": "Using connectivity, distance, synapse distribution, and soma depth leads to the highest ARI.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, using connectivity, distance, synapse distribution, and soma depth leads to the highest ARI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "dc91a715-4086-4e10-87c0-c944f5ba84d8",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C80",
+      "claim": "In the absence of distance information, mere connectivity information results in types which only span a small region of space\u2014essentially local cliques.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that, in the absence of distance information, mere connectivity information results in types which only span a small region of space\u2014essentially local cliques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "1f534150-ad8e-40c1-a468-2edd64a122c0",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C81",
+      "claim": "Incorporation of distance information results in types which span the entire extent of the layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of distance information results in types which span the entire extent of the layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "717307ea-12e3-40c2-b2a1-387aee939317",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C82",
+      "claim": "The depth variance of all models continues to be substantially larger than that predicted by human anatomists.",
+      "claim_type": "EXPLICIT",
+      "source": "The depth variance of all models continues to be substantially larger than that predicted by human anatomists\u2014future directions of work include attempting to more strongly encode this prior belief of laminarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "16d00030-c04a-4bc6-89e7-85045bcac14b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C83",
+      "claim": "C. elegans is a model system in developmental neuroscience, with the location and connectivity of each of 302 neurons developmentally determined, leading to early measurement of the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans is a model system in developmental neuroscience (White et al., 1986), with the location and connectivity of each of 302 neurons developmentally determined, leading to early measurement of the connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "ededc31c-994c-44b7-88f4-fdd6503b22b3",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C84",
+      "claim": "Unlike the retina, only the motor neurons in C. elegans exhibit regular distribution in space\u2014along the body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the retina, only the motor neurons in C. elegans exhibit regular distribution in space\u2014along the body axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about C. elegans anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "2d961990-b3a6-4bfd-9a88-6968db0e5a30",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C85",
+      "claim": "Most interneurons in C. elegans are concentrated in various ganglia that project throughout the entire animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interneurons are concentrated in various ganglia that project throughout the entire animal, and the sensory neurons are primarily located in a small number of anterior ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about C. elegans anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c419452f-333f-48fc-b982-0e1e70db79cf",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C86",
+      "claim": "The sensory neurons in C. elegans are primarily located in a small number of anterior ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interneurons are concentrated in various ganglia that project throughout the entire animal, and the sensory neurons are primarily located in a small number of anterior ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about C. elegans anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "5411ffab-b173-4374-8577-266c1305a578",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C87",
+      "claim": "The measured C. elegans connectome is actually two separate graphs\u2014one of directed chemical synapses and another of undirected electrical synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans also differs from the retina in that the measured connectome is actually two separate graphs\u2014one of directed chemical synapses and another of undirected electrical synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the C. elegans dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c53df626-0ee5-4541-85dd-43e123b262ce",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C88",
+      "claim": "A superficial inspection of the C. elegans results shows clustering into groups consisting roughly homogeneously of motor neurons, sensory neurons, and interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A superficial inspection of the results shows clustering into groups consisting roughly homogeneously of motor neurons, sensory neurons, and interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "42704bfc-a4e8-4139-a3cf-c007c3f77fa2",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C89",
+      "claim": "Closer examination of C. elegans results reveals agreement with the classifications originally outlined by White in 1986.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer examination reveals agreement with the classifications originally outlined by White in 1986 (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with the original classifications and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "cef767bc-7c69-4492-9f2e-6abe84a4244e",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C90",
+      "claim": "The clustering of C. elegans neurons does not perfectly reflect known divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Note our clustering does not perfectly reflect known divisions\u2014several combinations of head and sensory neurons are combined, and a difficult-to-explain group of mostly VB and DB motor neuron types, with VC split between various groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f25b9472-d3b8-4ad1-9530-eb0103619831",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C91",
+      "claim": "The identified C. elegans cell types reflect a 'coarsening' of known types, based entirely on connectivity and distance information.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identified cell types thus reflect a 'coarsening' of known types, based entirely on connectivity and distance information, even when the organism exhibits substantially less spatial regularity than the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the results shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "4c787356-ca48-49d9-9af7-1fe5400a5fe3",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C92",
+      "claim": "Computer architects use common patterns of transistors when designing circuits, with each transistor having a 'type' in the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer architects use common patterns of transistors when designing circuits, with each transistor having a 'type' in the circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents general knowledge about computer architecture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "5b768468-89ab-4209-ada2-c2873087e587",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C93",
+      "claim": "The algorithm identifies areas of spatial homogeneity in the microprocessor that mirror the known structure in the underlying architecture of the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Our algorithm identifies areas of spatial homogeneity that mirror the known structure in the underlying architecture of the circuit, segmenting transistor types recognizable to computer architects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "09d3300b-6858-4651-bdc7-116c2ee681ba",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C94",
+      "claim": "One identified type in the microprocessor contains the 'clocked' transistors, which retain digital state.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the original schematics, we see that one identified type contains the 'clocked' transistors, which retain digital state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with the original schematics and results shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d68239e0-e843-4e32-8bf1-3cb72c4aea15",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C95",
+      "claim": "Two identified types in the microprocessor contain transistors with pins C1 or C2 connected to ground, mostly serving as inverters.",
+      "claim_type": "EXPLICIT",
+      "source": "Two other types contain transistors with pins C1 or C2 connected to ground, mostly serving as inverters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with the original schematics and results shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e61dac8e-7632-4b59-b5bb-0313aee1cf95",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C96",
+      "claim": "An additional identified type in the microprocessor controls the behavior of the three registers of interest (X, Y, and S) with respect to the SB data bus.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional identified type controls the behavior of the three registers of interest (X, Y, and S) with respect to the SB data bus, either allowing them to latch or drive data from the bus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with the original schematics and results shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c3c0beb1-e07f-4294-abd1-0012103d7ca8",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C97",
+      "claim": "The repeat patterns of spatial connectivity are visible in the microprocessor, showing the man-made horizontal and vertical layout of the same types of transistors.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeat patterns of spatial connectivity are visible in Figure 8C, showing the man-made horizontal and vertical layout of the same types of transistors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by results shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "a0a7c12e-da1d-4c68-903c-7eb7c3533441",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C98",
+      "claim": "The incorporation of all available data types yields results that combine both high link-prediction accuracy and high agreement with human anatomists.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to existing methods, we show how the incorporation of all of this data yields results that combine both high link-prediction accuracy and high agreement with human anatomists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "22479c78-38c3-412a-bd4c-85021b4be561",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C99",
+      "claim": "Combining the available data types allows discovery of cell types and microcircuitry that were known to exist in the systems based on decades of previous research.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that combining the available data types allows us to discover cell types and microcircuitry that were known to exist in the systems based on decades of previous research and allows good prediction of connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results across all three datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "10496d90-12cf-431c-8cd6-5c9f1518d479",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C100",
+      "claim": "No known solution exists to exactly find the most probable parsing of the neurons into cell types and connectivity patterns for the probabilistic models used.",
+      "claim_type": "EXPLICIT",
+      "source": "For our probabilistic models, no known solution exists to exactly find the most probable parsing of the neurons into cell types and connectivity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents knowledge about the computational complexity of the problem.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "b1c975fe-72e6-4127-a2d7-00e4efb70258",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C101",
+      "claim": "While different initializations converge to similar ultimate values, the global optimum can never realistically be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ a collection of MCMC techniques (see 'Materials and methods'), but while different initializations converge to similar ultimate values, we can never realistically obtain the global optimum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the MCMC approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "2eff2318-e018-4ae0-968e-b59f2b31c107",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C102",
+      "claim": "For the probabilistic model, inference becomes slower as the amount of data increases.",
+      "claim_type": "EXPLICIT",
+      "source": "For our probabilistic model, inference becomes slower as the amount of data increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general property of the computational approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "991dde5a-644b-4cc3-9a4e-1c21e10f80b6",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C103",
+      "claim": "The algorithm required several hours for 1000 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our algorithm required several hours for 1000 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of computational performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "bb30ea6a-5125-4989-9104-75584585af1e",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C104",
+      "claim": "Larger datasets will allow algorithms to distinguish more distinct types.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger datasets will allow algorithms to distinguish more distinct types and we expect closer agreement with existing anatomical knowledge as more data become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future performance with more data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "da6f38a6-3717-4b55-9d4a-8a02656ea417",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C105",
+      "claim": "Closer agreement with existing anatomical knowledge is expected as more data become available.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger datasets will allow algorithms to distinguish more distinct types and we expect closer agreement with existing anatomical knowledge as more data become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future performance with more data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "7a28bc9e-125f-46fc-984d-0becc9c03a2a",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C106",
+      "claim": "In general, for such problems precision increases with the size of the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in general, for such problems precision increases with the size of the dataset and the cells that we have are not sufficient to statistically distinguish all the cell types known in anatomy (such as the \u223c70 in the retina).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents general knowledge about statistical inference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c226cb11-ded3-40a2-9ee3-b25a0ff29f61",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C107",
+      "claim": "The cells available in the dataset are not sufficient to statistically distinguish all the cell types known in anatomy (such as the \u223c70 in the retina).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in general, for such problems precision increases with the size of the dataset and the cells that we have are not sufficient to statistically distinguish all the cell types known in anatomy (such as the \u223c70 in the retina).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the current dataset size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "343ac19c-f128-4f91-91ef-bc5087a2d2fa",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C108",
+      "claim": "Using only connectivity and distance, it is possible to meaningfully divide neurons into types.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, using only connectivity and distance, it is possible to meaningfully divide neurons into types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by results across all datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "46477580-8401-4cb4-a376-2e3694083b37",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C109",
+      "claim": "The small collection of hand-selected distance-dependent likelihood functions is clearly non-exhaustive.",
+      "claim_type": "EXPLICIT",
+      "source": "Our small collection of hand-selected distance-dependent likelihood functions is clearly non-exhaustive, and assumes monotonicity of connectivity probability\u2014for a given class, closer cells are never less likely to connect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of model limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "336add31-9422-4835-ad16-9bac0f51dc94",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C110",
+      "claim": "The model assumes monotonicity of connectivity probability\u2014for a given class, closer cells are never less likely to connect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our small collection of hand-selected distance-dependent likelihood functions is clearly non-exhaustive, and assumes monotonicity of connectivity probability\u2014for a given class, closer cells are never less likely to connect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "28931c93-1b09-44b4-9f72-27646fdac1c2",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C111",
+      "claim": "The monotonicity assumption is known to be insufficient for various neural systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This is known to be insufficient for various neural systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents knowledge about neural connectivity patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e93861b8-467d-4666-82e0-4832020dd332",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C112",
+      "claim": "The development of automatic identification and quantification of cell type may provide a new computational phenotype for quantifying the effect of disease, genetic interventions, and developmentally experienced neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of automatic identification and quantification of cell type may also provide a new computational phenotype for quantifying the effect of disease, genetic interventions, and developmentally experienced neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "8ade783a-ec49-4630-9bbe-aae07c0b7323",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C113",
+      "claim": "The method can in principle identify neuron types across non-connected graphs, for example, across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method can in principle identify neuron types across non-connected graphs, for example, across animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential capabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "585fb6e6-a90a-4445-bc22-76a3911b7536",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C114",
+      "claim": "The types of neurons in one animal can be associated with the types of neurons in another animal, in the same way as this is already possible through molecular markers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the types of neurons in one animal can be associated with the types of neurons in another animal, in the same way as this is already possible through molecular markers (Brown and Hestrin, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents a potential application.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "b3a6512d-a848-470e-9ede-88403ea58ece",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C115",
+      "claim": "Cell types may appear that are due to properties of the stimuli and experience as opposed to just the molecular properties of cells, such as color and orientation selective types in primary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be particularly important if cell types appear that are due to properties of the stimuli and experience as opposed to just the molecular properties of cells, such as color and orientation selective types in primary visual cortex (Lennie and Movshon, 2005; Sincich and Horton, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents a speculation about potential discoveries.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "1b9f2d05-dee0-44d2-a03e-228fd993388f",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C116",
+      "claim": "The approach would allow comparative quantitative anatomy across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This would allow comparative quantitative anatomy across animals, and aid the search for the ultimate causes of connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "edc21a87-53db-48ad-90a6-c12ce3876b00",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C117",
+      "claim": "Distinct cell types differ in morphology, connectivity, transcriptomics, relation to behavior or stimuli, and many other ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct cell types differ in morphology, connectivity, transcriptomics, relation to behavior or stimuli, and many other ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about cell type differences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "eea3e6f4-6e88-4422-8a22-5efd1c870345",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C118",
+      "claim": "Algorithms combining these data and type information may allow synthesis of all the available information from one experiment or even across experiments into a joint model of brain structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Algorithms combining these data and type information may allow us to synthesize all the available information from one experiment or even across experiments into a joint model of brain structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future capabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "76d01068-3f23-4181-9b1d-7f5d0a96f26a",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C119",
+      "claim": "Eventually, algorithms will have to become a central tool for anatomists, as it will progressively become impossible for humans to parse the huge datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, algorithms will have to become a central tool for anatomists, as it will progressively become impossible for humans to parse the huge datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the future of the field.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3818636b-f0f9-4281-afc1-5d22956b836b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C120",
+      "claim": "This transition may follow a similar transition to that of molecular biology (with gene-finding algorithms) and evolutionary biology (with computational phylogenetics).",
+      "claim_type": "EXPLICIT",
+      "source": "This transition may follow a similar transition to that of molecular biology (with gene-finding algorithms) and evolutionary biology (with computational phylogenetics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation drawing an analogy to other fields.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "bc13bd98-90b8-48de-b7e1-7ccfe3e9a0f1",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C121",
+      "claim": "Computational approaches may help resolve the significant disagreements across human anatomists.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, computational approaches may help resolve the significant disagreements across human anatomists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "34461685-0006-4ec0-9d71-0036f389211b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C122",
+      "claim": "The model is an extension of the iSBM to incorporate spatial relations between entities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is a extension of the iSBM (Kemp et al., 2006; Xu et al., 2006) to incorporate spatial relations between entities, inspired by attempts to extend these models with arbitrary discriminative functions (Murphy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and describes the methodological contribution.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "64f00edb-2fa7-4043-846d-4d8dfc2a05c7",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C123",
+      "claim": "Dense serial electron microscopy of a 114 \u03bcm \u00d7 80 \u03bcm area in the mouse retina by Helmstaedter et al. yielded a listing of places where neurons come into contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Dense serial electron microscopy of a 114 \u03bcm \u00d7 80 \u03bcm area in the mouse retina by Helmstaedter et al. (2013) yielded a listing of places where neurons come into contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and describes the dataset.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c9f9cdf3-4506-4521-8052-2e5ef585124c",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C124",
+      "claim": "There were over 1000 cells originally in the retina dataset, and 950 were selected for which the location of the soma could be reconstructed.",
+      "claim_type": "EXPLICIT",
+      "source": "There were over 1000 cells originally, and we selected the 950 for which the location of the soma could be reconstructed from the provided cell plots (soma locations were not provided by the study's authors in machine-readable form).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "e3510ae8-0a62-48de-96d1-8ac4e352f6b7",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C125",
+      "claim": "The authors obtained the connectome of C. elegans from data published previously.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the connectome of C. elegans from data published previously (Varshney et al., 2011), and isolated the 279 non-pharyngeal neurons, with a total of 6393 chemical synapses and 890 gap junctions originally cleaned up in Chen et al. (2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and describes the dataset source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c9911954-9a85-4b5e-8227-6a204c06b227",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C126",
+      "claim": "The C. elegans dataset contains 279 non-pharyngeal neurons, with a total of 6393 chemical synapses and 890 gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the connectome of C. elegans from data published previously (Varshney et al., 2011), and isolated the 279 non-pharyngeal neurons, with a total of 6393 chemical synapses and 890 gap junctions originally cleaned up in Chen et al. (2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and describes the dataset.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d5ebc5f0-2917-4a78-a864-1883f68bb466",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C127",
+      "claim": "The authors extracted the connection graph for the transistors in the MOS 6502.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted the connection graph for the transistors in the MOS 6502 (James et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and describes the dataset source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f335fe24-c578-45e9-a5af-89eceb5f6c5a",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "claim_id": "C128",
+      "claim": "Each transistor has three terminals (gate, source, drain), but the methods of the original dataset were unable to consistently resolve which of the C1 and C2 terminals were source and drain.",
+      "claim_type": "EXPLICIT",
+      "source": "Each transistor has three terminals (gate, source, drain), but the methods of the original dataset were unable to consistently resolve which of the C1 and C2 terminals were source and drain, leading to ambiguity in our encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the microprocessor dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "105d5037-2a38-4311-9e10-cc0374691f21",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a non-parametric Bayesian model that extends the infinite stochastic block model (iSBM) to incorporate spatial information (distance, soma depth, synapse distribution) alongside connectivity for automatic discovery of neuron types and microcircuitry patterns in connectomics data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C23, C30-C38, and C122 collectively describe the model architecture and capabilities. The model is well-documented with mathematical formulations, clear description of inputs (C33), outputs (C34-C35), and the extension from iSBM (C36-C37). The methodological contribution is substantiated by detailed methods and figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "19a2f68f-916e-40fb-b406-16ec5a880870",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "On simulated data with known ground truth, the model accurately recovers the correct number of cell types, cell identities, and spatial extent of types, outperforming the standard iSBM which cannot handle distance-dependent connectivity. The model performs well when data match its assumptions but struggles with continuous (non-discrete) type structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C54 are supported by simulation results shown in Figures 2 and 3. The comparative analysis demonstrates the model's ability to recover ground truth under appropriate conditions and identifies specific failure modes (e.g., latent position clustering, C53-C54). The convergence analysis (C49) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "093479c9-26ee-4c88-a0a1-967fb65ce546",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Edge effects from examining small tissue sections do not artificially introduce distance dependence when none exists, though very small sections can cause the model to miss true distance dependence. For datasets of currently available sizes, edge artifacts have limited effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by simulation results in Figure 4 that systematically examine edge effects across different spatial scales. The analysis demonstrates the model errs conservatively (C58) and validates its applicability to current dataset sizes (C59).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3504273f-e7c9-451e-943e-2b7635f85ce8",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "On mouse retina data, the algorithm recovers known neuron types (ganglion, amacrine, bipolar cells) with high agreement to human anatomist classifications, accurately models distance-dependent connectivity, and produces spatially isotropic type distributions. The model identifies fewer types than the finest-grained anatomist classification (coarser grouping) but maintains high correlation with finer distinctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C24, C29, C63-C71, C73 are supported by extensive results in Figures 5-6 showing quantitative agreement metrics (ARI, homogeneity, completeness), spatial distributions, and connectivity patterns. The acknowledged over-clustering (C73) is documented with data. The 8-hour runtime (C63) provides practical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f797f65f-255d-4829-a76f-653cab17cbca",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model achieves superior link prediction accuracy (AUC ~0.9) and clustering accuracy (ARI) compared to simpler algorithms that use only connectivity. Performance improves when incorporating more information types (connectivity, distance, synapse distribution, soma depth), with distance information being critical for discovering spatially extended types rather than local cliques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C74-C81, C98 are supported by comparative analysis in Figure 6G-H showing quantitative metrics across multiple methods. The systematic ablation study (C78-C79) demonstrates the contribution of each data type. The spatial extent analysis (C80-C81) provides mechanistic insight into why distance information matters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "f7c83610-dee3-4ddc-9cc4-3602560cf64b",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The depth variance of discovered types is substantially larger than that predicted by human anatomists, indicating the model does not fully capture laminar structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by results in Figure 6H and acknowledged as a limitation requiring future work. This represents an honest assessment of model shortcomings with supporting data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "cbec0aa9-74e5-4619-bbf0-c74160e3b653",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "On C. elegans connectome data, the model identifies cell types that agree with classifications from White (1986), clustering motor neurons, sensory neurons, and interneurons, though with some imperfect divisions. The identified types represent a 'coarsening' of known types based on connectivity and distance, even in this less spatially regular organism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C88-C91 are supported by results in Figure 7 showing clustering patterns and comparison to established classifications. The acknowledgment of imperfect clustering (C90) with specific examples demonstrates rigorous evaluation. The generalization to a structurally different system validates the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "c1e3ed42-511e-433f-8caf-b6549540e6d5",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "On a microprocessor (MOS 6502), the algorithm identifies transistor types that correspond to known functional components (clocked transistors, inverters, register control elements) and reveals spatial patterns of connectivity matching the engineered horizontal and vertical layout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C93-C97 are supported by results in Figure 8 with validation against original schematics. The identification of functionally meaningful types (C94-C96) and spatial patterns (C97) in a completely different domain (engineered circuits) provides strong evidence for the generality of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "748b9f0e-5eb4-4d1f-af86-cd5dfca59e04",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Combining connectivity and distance information allows meaningful discovery of cell types and microcircuitry that match decades of previous research across multiple systems (retina, C. elegans, microprocessor).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99 and C108 are supported by the collective results across all three datasets (Figures 5-8). The consistency of findings across diverse systems with different spatial organizations provides strong validation of the core claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d3f4d16c-60a1-4afb-b565-3d780e368d01",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The MCMC inference approach cannot guarantee finding the global optimum, though different initializations converge to similar values. Inference time scales with data size, requiring several hours for 1000 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 are supported by computational analysis (Figures 9-10) and represent honest acknowledgment of computational limitations. The convergence analysis (C101) and runtime measurements (C103) provide empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "d24daff0-36c2-46bf-901f-8cb545feb141",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The current dataset size is insufficient to distinguish all ~70 known retinal cell types. The model's hand-selected distance-dependent likelihood functions are non-exhaustive and assume monotonicity of connectivity probability, which is known to be insufficient for various neural systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107, C109-C111 represent acknowledged limitations with supporting reasoning. C107 is an inference based on statistical principles (C106), while C109-C111 identify specific model assumptions and their known inadequacies. These are honest assessments of current limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "3f7e9d82-4944-40a9-8924-536fe677a459",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "With larger datasets, the algorithm is expected to distinguish more distinct types and achieve closer agreement with anatomical knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72, C104-C105 are speculations about future performance (evidence_type: SPECULATION). While reasonable based on general statistical principles (C106), these remain untested predictions without supporting data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    },
+    {
+      "id": "601373d4-a7e6-4803-990a-bf9074c1a168",
+      "content_id": "faf09e0f-faf4-4284-b074-ba282d19919c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The method may enable new applications including computational phenotyping for disease/genetic studies, cross-animal type identification, discovery of experience-dependent cell types, comparative anatomy, and integration of multiple data modalities. Computational approaches may become essential as datasets grow and could help resolve disagreements among anatomists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C112-C121 are speculations about potential future applications and impacts (evidence_type: SPECULATION). While plausible and supported by analogies to other fields (C114, C115, C120), these remain untested hypotheses without empirical validation in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:49:22.308412Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5839039b-532c-40cb-a303-aac5977c48e4",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "d494d029-0ae2-40be-9eb1-beeaadacd96b",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "70806502-53a3-4a0e-96e9-add618e7ffea",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "e37aae41-bf7f-4aab-b81e-20c7c6e96add",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "103e7d74-b488-4c86-aa67-44110c10083b",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "062f1a04-0e7f-4aaa-aa17-26a2e63c0a42",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "4f481cf1-58c6-4a2d-97c5-9989c9347261",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "7e1232b0-b69a-4725-965d-c8efc7074504",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "51c06712-dc04-49ab-bb22-0588806d1b01",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "6d510979-e2a7-45b2-ac93-e2c0efd874bb",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "d2b65fa9-ee3d-441b-b5c4-704971ac7f4a",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "e439fead-6be9-4d5e-8f66-8d9f8ee284e6",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "34461685-0006-4ec0-9d71-0036f389211b",
+      "result_id": "105d5037-2a38-4311-9e10-cc0374691f21"
+    },
+    {
+      "claim_id": "cea1de47-bb8b-4b65-aa59-fe31d705367a",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "f1e4a603-f30b-404c-9201-1c6c01772669",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "85d0c78f-86b0-476b-913f-91413aef8353",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "c5b72ef6-4950-46cf-a488-295bc0ca1719",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "9d97912f-dda1-406b-aa23-048b576515ad",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "8dda1418-ea9b-436b-ae44-6f4fb3569fe5",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "9aaecfd5-3879-4028-a92e-6408028145e4",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "3ad66868-3907-4153-99ea-292cc4b481b8",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "3a6f9b2a-8b96-48bb-903a-f484e311d60b",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "1c21e4d2-9cfb-48e4-8790-cc2eb0cc4070",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "f7adee21-4951-4991-a4b5-711fab483b50",
+      "result_id": "19a2f68f-916e-40fb-b406-16ec5a880870"
+    },
+    {
+      "claim_id": "9a1d7ea5-6c2b-4e6a-a32c-b8c9d3be5f37",
+      "result_id": "093479c9-26ee-4c88-a0a1-967fb65ce546"
+    },
+    {
+      "claim_id": "bf1ed9f1-7509-4d55-bea6-7cd34911969d",
+      "result_id": "093479c9-26ee-4c88-a0a1-967fb65ce546"
+    },
+    {
+      "claim_id": "9e8d8ea0-9668-424b-b069-0074be648816",
+      "result_id": "093479c9-26ee-4c88-a0a1-967fb65ce546"
+    },
+    {
+      "claim_id": "40192205-b40a-4127-9b24-39d253fd3b5c",
+      "result_id": "093479c9-26ee-4c88-a0a1-967fb65ce546"
+    },
+    {
+      "claim_id": "b8ff6b0f-e95d-489d-b4a8-3846a8d4511c",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "97e26b0b-b583-4f24-b416-44af6b8eb38b",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "22b96448-0bba-495a-982f-d74a81892e99",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "0c9f19cc-5da2-4a0e-b624-8cbc063842f7",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "0e18ab0f-57f0-46ac-b76d-738841b7e503",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "81e4a077-7aea-49b0-a306-a1a20fdb56e3",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "63cfcda2-49cf-4089-8716-b54f9ae47f10",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "cbf062e9-82df-46b1-99eb-72031029bfaf",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "3fa71a87-6975-4399-8256-d128eeb78df1",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "29278922-a0bc-4cc5-bac9-8fea03e61a74",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "fa61c16e-8b9c-4708-bf24-b15f6653dc55",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "b38db3ac-7f93-4f28-ad15-bc2af1d94e53",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "b80ac9f8-af50-4116-9437-c0022b410fb1",
+      "result_id": "3504273f-e7c9-451e-943e-2b7635f85ce8"
+    },
+    {
+      "claim_id": "76714e73-19f7-488c-ba9f-4218e08a7f6b",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "e75d7e6a-149d-4817-bd22-9166553aef8c",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "220b7557-e0f5-41ac-a9eb-deb9b5a5046d",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "6561678b-d3b4-4643-84d2-bde0433d7e45",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "353dcb0b-db50-4c8e-833a-e9f727b5924a",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "d1b7e642-8cb3-4a6d-a582-a20c50fe7996",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "1f247e23-0b2f-4b93-955a-dc20ca1931e1",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "dc91a715-4086-4e10-87c0-c944f5ba84d8",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "1f534150-ad8e-40c1-a468-2edd64a122c0",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "a0a7c12e-da1d-4c68-903c-7eb7c3533441",
+      "result_id": "f797f65f-255d-4829-a76f-653cab17cbca"
+    },
+    {
+      "claim_id": "717307ea-12e3-40c2-b2a1-387aee939317",
+      "result_id": "f7c83610-dee3-4ddc-9cc4-3602560cf64b"
+    },
+    {
+      "claim_id": "125488a3-62cd-47d5-9b84-1c92d859c019",
+      "result_id": "cbec0aa9-74e5-4619-bbf0-c74160e3b653"
+    },
+    {
+      "claim_id": "c53df626-0ee5-4541-85dd-43e123b262ce",
+      "result_id": "cbec0aa9-74e5-4619-bbf0-c74160e3b653"
+    },
+    {
+      "claim_id": "42704bfc-a4e8-4139-a3cf-c007c3f77fa2",
+      "result_id": "cbec0aa9-74e5-4619-bbf0-c74160e3b653"
+    },
+    {
+      "claim_id": "cef767bc-7c69-4492-9f2e-6abe84a4244e",
+      "result_id": "cbec0aa9-74e5-4619-bbf0-c74160e3b653"
+    },
+    {
+      "claim_id": "f25b9472-d3b8-4ad1-9530-eb0103619831",
+      "result_id": "cbec0aa9-74e5-4619-bbf0-c74160e3b653"
+    },
+    {
+      "claim_id": "a74ff9c4-3031-4864-a73f-8e9ff19b6263",
+      "result_id": "c1e3ed42-511e-433f-8caf-b6549540e6d5"
+    },
+    {
+      "claim_id": "5b768468-89ab-4209-ada2-c2873087e587",
+      "result_id": "c1e3ed42-511e-433f-8caf-b6549540e6d5"
+    },
+    {
+      "claim_id": "09d3300b-6858-4651-bdc7-116c2ee681ba",
+      "result_id": "c1e3ed42-511e-433f-8caf-b6549540e6d5"
+    },
+    {
+      "claim_id": "d68239e0-e843-4e32-8bf1-3cb72c4aea15",
+      "result_id": "c1e3ed42-511e-433f-8caf-b6549540e6d5"
+    },
+    {
+      "claim_id": "e61dac8e-7632-4b59-b5bb-0313aee1cf95",
+      "result_id": "c1e3ed42-511e-433f-8caf-b6549540e6d5"
+    },
+    {
+      "claim_id": "c3c0beb1-e07f-4294-abd1-0012103d7ca8",
+      "result_id": "c1e3ed42-511e-433f-8caf-b6549540e6d5"
+    },
+    {
+      "claim_id": "22479c78-38c3-412a-bd4c-85021b4be561",
+      "result_id": "748b9f0e-5eb4-4d1f-af86-cd5dfca59e04"
+    },
+    {
+      "claim_id": "343ac19c-f128-4f91-91ef-bc5087a2d2fa",
+      "result_id": "748b9f0e-5eb4-4d1f-af86-cd5dfca59e04"
+    },
+    {
+      "claim_id": "10496d90-12cf-431c-8cd6-5c9f1518d479",
+      "result_id": "d3f4d16c-60a1-4afb-b565-3d780e368d01"
+    },
+    {
+      "claim_id": "b1c975fe-72e6-4127-a2d7-00e4efb70258",
+      "result_id": "d3f4d16c-60a1-4afb-b565-3d780e368d01"
+    },
+    {
+      "claim_id": "2eff2318-e018-4ae0-968e-b59f2b31c107",
+      "result_id": "d3f4d16c-60a1-4afb-b565-3d780e368d01"
+    },
+    {
+      "claim_id": "991dde5a-644b-4cc3-9a4e-1c21e10f80b6",
+      "result_id": "d3f4d16c-60a1-4afb-b565-3d780e368d01"
+    },
+    {
+      "claim_id": "c226cb11-ded3-40a2-9ee3-b25a0ff29f61",
+      "result_id": "d24daff0-36c2-46bf-901f-8cb545feb141"
+    },
+    {
+      "claim_id": "46477580-8401-4cb4-a376-2e3694083b37",
+      "result_id": "d24daff0-36c2-46bf-901f-8cb545feb141"
+    },
+    {
+      "claim_id": "336add31-9422-4835-ad16-9bac0f51dc94",
+      "result_id": "d24daff0-36c2-46bf-901f-8cb545feb141"
+    },
+    {
+      "claim_id": "28931c93-1b09-44b4-9f72-27646fdac1c2",
+      "result_id": "d24daff0-36c2-46bf-901f-8cb545feb141"
+    },
+    {
+      "claim_id": "a369f636-a299-4fc5-9082-ac1bd57cab41",
+      "result_id": "3f7e9d82-4944-40a9-8924-536fe677a459"
+    },
+    {
+      "claim_id": "bb30ea6a-5125-4989-9104-75584585af1e",
+      "result_id": "3f7e9d82-4944-40a9-8924-536fe677a459"
+    },
+    {
+      "claim_id": "da6f38a6-3717-4b55-9d4a-8a02656ea417",
+      "result_id": "3f7e9d82-4944-40a9-8924-536fe677a459"
+    },
+    {
+      "claim_id": "e93861b8-467d-4666-82e0-4832020dd332",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "8ade783a-ec49-4630-9bbe-aae07c0b7323",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "585fb6e6-a90a-4445-bc22-76a3911b7536",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "b3a6512d-a848-470e-9ede-88403ea58ece",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "1b9f2d05-dee0-44d2-a03e-228fd993388f",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "eea3e6f4-6e88-4422-8a22-5efd1c870345",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "76d01068-3f23-4181-9b1d-7f5d0a96f26a",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "3818636b-f0f9-4281-afc1-5d22956b836b",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    },
+    {
+      "claim_id": "bc13bd98-90b8-48de-b7e1-7ccfe3e9a0f1",
+      "result_id": "601373d4-a7e6-4803-990a-bf9074c1a168"
+    }
+  ],
+  "comparisons": []
+}

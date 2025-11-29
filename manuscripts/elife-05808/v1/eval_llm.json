@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CaRuby-Nano is a new red calcium indicator with nanomolar affinity (KD = 258 \u00b1 8 nM), 50-fold fluorescence increase upon Ca2+ binding, quantum yield of 0.45, and effective two-photon excitation. The indicator was developed by introducing an oxygen atom on the BAPTA ring and repositioning the fluorophore to the meta position to increase electron density and reduce affinity-lowering effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 provide direct experimental measurements of CaRuby-Nano's photophysical properties from cuvette calibration experiments with appropriate error estimates. Claims C44-C49 describe the rational design strategy based on established chemical principles (cited to Tsien, 1980), and the resulting sub-micromolar affinity is confirmed by experimental data. The structural modifications and their effects are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Conjugation of CaRuby-Nano with dextran via the azido side arm minimally affects calcium affinity (KD increased from 258 nM to 295 nM for 6 kD dextran), addressing a major limitation of traditional dextran conjugation methods that use BAPTA carboxylic groups and result in large affinity decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 provide direct experimental comparison of KD values before and after conjugation, showing only a 14% increase. Claims C35-C41 establish the context and rationale, citing established knowledge about traditional conjugation problems and the CaRuby family's azido side arm design. The minimal affinity change is consistent with prior work (Zamaleeva et al., 2014) and represents a key advantage of this indicator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C50",
+      "C51"
+    ],
+    "result": "CaRuby-Nano exhibits fast binding kinetics comparable to established calcium indicators, with a rising phase time course (0.55 \u00b1 0.13 ms) not significantly different from Fluo-5F (0.40 \u00b1 0.09 ms, p = 0.37), measured at high acquisition rates (2.2-5.0 kHz) in Purkinje cell spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide direct statistical comparison with appropriate sample sizes (n=59 spines from 7 cells vs n=36 spines from 4 cells) and a non-significant p-value (0.37), supporting the conclusion of comparable kinetics. Claim C50 documents the experimental parameters. The inference about sensitivity to fast Ca2+ changes (C51) is reasonable given the measured kinetics, though it remains somewhat speculative without direct action potential measurements at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "CaRuby-Nano demonstrates high sensitivity for detecting small calcium transients in vivo, with single action potentials producing reliable fluorescence transients (mean dR/R0 = 0.52 \u00b1 0.19, n = 6 cells) and the expected sublinear saturation behavior for increasing spike numbers characteristic of high-affinity indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 provide direct in vivo measurements from neocortical pyramidal neurons with appropriate sample sizes and quantification. The observed saturation behavior (C11) matches theoretical expectations for high-affinity indicators, providing internal validation. Claims C12-C13 draw reasonable conclusions from the combined in vitro and in vivo data demonstrating sensitivity to small transients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "CaRuby-Nano AM enables bulk loading of cerebellar tissue in vivo with labeling patterns, signal quality, and detection of spontaneous and sensory-evoked activity comparable to the established indicator OGB-1 AM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide direct comparisons to published results using OGB-1 AM (Sullivan et al., 2005; Ozden et al., 2009; Schultz et al., 2009), demonstrating comparable performance across multiple metrics. The experiments were performed in three independent trials, providing replication. Claim C17's conclusion that CaRuby-Nano AM is a valuable tool is supported by the successful demonstration of bulk loading and functional imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C30"
+    ],
+    "result": "CaRuby-Nano enables dual-color imaging with green-emitting indicators through spectral overlap with eGFP, demonstrated by simultaneous imaging of glutamate release (iGluSnFR) and postsynaptic calcium responses in Purkinje cells, with differential spatial patterns confirming spectral isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe a novel dual-color imaging experiment with clear visual evidence (Figure 4A-C) showing spatially distinct glutamate and calcium signals. The differential spatial distribution (glutamate confined to synaptic sites, calcium global) provides strong evidence for spectral isolation and validates the biological interpretation. This represents a previously impossible experiment enabled by CaRuby-Nano's spectral properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CaRuby-Nano enables in vivo dual-color imaging in olfactory bulb glomeruli, detecting odor-evoked presynaptic calcium responses with excellent signal-to-noise ratio in OSN terminals while eYFP labels postsynaptic structures, with responses showing expected adaptation at high odorant concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide direct observations from in vivo experiments (n=8 animals) with visual evidence (Figure 4D-F). Claim C25 notes consistency with prior work (Lecoq et al., 2009), providing external validation. The experiment successfully demonstrates dual-color functional imaging in vivo, extending the in vitro results to a physiologically relevant preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CaRuby-Nano's photophysical properties (KD = 295 nM for dextran conjugate, 50-fold fluorescence increase, quantum yield = 0.45) position it as an ideal indicator for quantifying small intracellular calcium transients, with performance characteristics between Fluo-4 and OGB-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide direct quantitative comparisons to established indicators (Fluo-4 KD = 335 nM, OGB-1 quantum yield ~0.7, Fluo-4 quantum yield ~0.14). The classification as ideal for small transients (C28) is supported by the measured properties and reference to Appendix 1. Claim C29's conclusion about suitability for in vitro and in vivo imaging is validated by the multiple experimental demonstrations throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The azido function of CaRuby-Nano can be reduced to an amine for functionalization with molecular tools (antibodies, SNAP tags, peptides), enabling sophisticated multiplexed experiments such as simultaneous pre- and postsynaptic activity measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C31 describes chemical properties and potential applications based on the azido group structure, but no experimental data is provided demonstrating reduction to amine or subsequent functionalization. Claim C32's statement about enabling sophisticated experiments is partially demonstrated (dual-color imaging shown) but the specific functionalizations mentioned remain speculative. Additional experimental validation would be needed to fully support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C42",
+      "C43"
+    ],
+    "result": "Previous CaRuby indicators had dissociation constants ranging from 3.4 to 21.6 \u00b5M, which were too high for reliable detection of small calcium transients, motivating the development of CaRuby-Nano with improved affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide specific KD values for previous CaRuby versions with citation (Yasuda et al., 2004) and reference to Appendix 1 for details. Claims C33-C35 establish the general context about red-shifted fluorophore limitations and dextran conjugation strategies, supported by established knowledge. This provides clear motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The overcrowding of the green spectral band due to dominance of fluorescein and eGFP-based probes creates a need for red-shifted indicators, with X-Rhodamine chromophores sharing favorable photophysical properties and finding increasing use in calcium indicator development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 establish the scientific context and motivation for developing red-shifted calcium indicators, supported by multiple citations (Wilt et al., 2009; Miyawaki, 2011; Looger and Griesbeck, 2012; Oheim et al., 2014; Eberhard and Erne, 1991; Egawa et al., 2011). These claims accurately represent the state of the field and provide appropriate justification for the work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C31",
+      "C32"
+    ],
+    "result": "Hairy induction leads to transcriptional changes in 387 genes (241 down-regulated, 146 up-regulated), with 70% of down-regulated genes directly bound by Hairy and enriched for developmental functions, while only 30% of up-regulated genes are bound, suggesting indirect regulation. The microarray successfully captured known Hairy targets and genes with complementary expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C31-C32 provide converging evidence from microarray analysis, ChIP data comparison, gene ontology analysis, and validation against known targets. The quantitative findings are internally consistent and supported by appropriate statistical tests (p < 3.7e-18 for GO enrichment). The distinction between direct (70% bound) and indirect (30% bound) targets is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C37",
+      "C43"
+    ],
+    "result": "The majority of genes bound by Hairy show no transcriptional changes, but over half of Hairy-bound regions exhibit chromatin modifications. This demonstrates widespread biochemical activity that is decoupled from gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C37, and C43 consistently demonstrate the key finding that Hairy binding and chromatin modification are frequently uncoupled from transcriptional effects. The quantitative data (>50% of bound regions show chromatin changes, but most don't affect expression) is clearly presented in figures and represents a major conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C33",
+      "C34"
+    ],
+    "result": "Hairy mediates widespread coordinated chromatin modifications including H4Ac, H3K27Ac, and H3K4me1 deacetylation/demethylation in blocks >1 kb (average ~2.5 kb), with Hairy-bound blocks significantly larger than unbound blocks. The modifications show gene-specific patterns, with some genes losing only acetyl marks while others also lose H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C33-C34 are well-supported by ChIP-seq data shown in Figure 2 and quantitative analysis in Figure 3. The statistical significance of size differences (p-values provided) and the detailed gene-specific examples provide strong evidence. The average size measurement (~2.5 kb) is clearly stated and the heterogeneity is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C42"
+    ],
+    "result": "Hairy-mediated chromatin changes show strong correlations between H4Ac, H3K27Ac, and H3K4me1 modifications, with deacetylation also correlated with loss of H3K4me1 and H3K4me3. Hairy primarily represses by eliminating active marks rather than adding repressive marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C42 are supported by correlation analysis shown in Figure 6A and the comprehensive assessment of multiple histone marks. The conclusion that Hairy works primarily through removal of active marks is well-justified by the data showing minimal changes in repressive marks like H3K9me3 and H3K27me3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Hairy-mediated chromatin modifications occur predominantly at intergenic and intronic regions (likely distal enhancers) for acetylation marks, while methylation mark changes occur in their naturally enriched regions. Hairy targets are enriched in developmentally regulated genes with large cis-regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by genomic annotation analysis shown in Figure 6B and gene ontology analysis. The observation that acetylation changes deviate from genomic averages while methylation changes follow natural distributions is clearly documented. The enrichment in developmental genes is consistent with known Hairy biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Hairy induces chromatin modifications on genes that are not transcriptionally affected, including the actively transcribed pyr gene and the silent nht gene, demonstrating errant targeting with biochemical activity but no functional consequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are directly supported by specific examples shown in Figure 5A-B with clear ChIP-seq tracks. These examples effectively illustrate the key concept of uncoupled chromatin changes and provide concrete evidence for the errant targeting hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Only 75 of 241 repressed genes show changes in RNA Pol II occupancy, with nearly all (72/75) directly bound by Hairy. The patterns of Pol II loss vary by gene (promoter, gene body, or both), suggesting Hairy interferes at different steps of the transcription cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by Pol II ChIP-seq data shown in Figure 7. The quantitative findings are clear and the gene-specific examples demonstrate heterogeneity in mechanism. However, the interpretation that Hairy acts at different steps is somewhat speculative, as alternative explanations (e.g., low signal from poised polymerase) are acknowledged but not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "H3K4me1 shows both decreases (especially at Hairy-bound regions) and increases (at ~25% of repressed genes, not overlapping with Hairy binding), suggesting complex regulation with potential compensatory responses at promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by statistical analysis shown in supplementary figures. The bidirectional changes in H3K4me1 are well-documented, though the interpretation of increases as compensatory responses is somewhat speculative. The data clearly shows the complexity of this modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Hairy repression does not require changes in repressive histone modifications H3K36me3, H3K9me3, or H3K27me3, indicating that gene silencing occurs primarily through removal of active marks rather than addition of repressive marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by ChIP-seq data in Figure 4C and consistent with previous work (C41 cites Li and Arnosti, 2011). The minimal changes in repressive marks across repressed genes provide clear evidence that these modifications are not required for Hairy-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "There is no correlation between Hairy binding site height/extent and the range of chromatin alteration, suggesting effectiveness is not simply a function of binding site number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by correlation analysis shown in Figure 3\u2014figure supplement 2. The lack of correlation is clearly stated and suggests that other local factors beyond binding strength determine the extent of chromatin spreading.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Machine learning analysis using Random Forests achieved ~75% accuracy in predicting gene repression, with Hairy and Gro binding properties being good but insufficient indicators on their own, requiring integration with chromatin marks and Pol II data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by systematic machine learning analysis shown in Figure 8B and Supplementary file 4. The 75% accuracy represents substantial improvement over background (58%), and the feature analysis appropriately identifies key predictive variables. The methodology using cross-validation is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "40% of induced Hairy binding sites overlap with endogenous Hairy ChIP-chip data (p = 2.15e-159), and similar binding motifs are enriched in both datasets, validating that the inducible system recapitulates endogenous Hairy targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are critical validation controls supported by comparison of ChIP-seq and ChIP-chip data shown in Figure 1\u2014figure supplement 1. The significant overlap (p = 2.15e-159) and motif similarity provide strong evidence that the inducible system is biologically relevant, though the 40% overlap also indicates some differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Heat shock alone has no effect on gene expression patterns or chromatin marks, validating the experimental control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is an essential control that is stated clearly with reference to previous work and unpublished data. While the unpublished data is not shown, the statement is consistent with standard practice and the authors' previous publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Hairy can mediate biochemical activities in most bound regions with little context requirement, contrasting with earlier models requiring active enhancer context. This suggests Hairy is relatively nonselective in attracting chromatin-modifying agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 represent a major conclusion that contrasts with previous models (Nibu et al., 2001). The evidence from widespread chromatin modifications at diverse genomic locations (>50% of bound sites) supports this conclusion, though the degree of 'nonselectivity' may be overstated given that some context effects are still observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Hairy mediates histone acetylation and methylation in large blocks with context-specific effects, exhibits biochemical activity at many loci uncoupled from gene expression changes, and errantly targets many regions to modify chromatin landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent the main conclusions stated in the abstract and are well-supported by the comprehensive genome-wide data presented throughout the manuscript. The large-scale chromatin modifications (C1), uncoupling from transcription (C2), and errant targeting (C3) are all documented with multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C54",
+      "C55"
+    ],
+    "result": "Errant targeting by Hairy may facilitate evolution of novel regulatory modules through molecular exaptation, as the biochemical activity at non-functional sites could enable formation of new enhancers with gain of activator binding sites. These interactions are likely not under strong evolutionary selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C54-C55 represent speculative evolutionary interpretations of the errant targeting phenomenon. While the biochemical observations are solid, the evolutionary implications are hypothetical and would require additional evidence such as comparative genomics, evolutionary conservation analysis, or experimental evolution studies to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Background information and context about Hairy biology, including its expression pattern, interaction partners (Gro, CtBP, Sir2 HDAC), comparison to other repressors, and previous findings about its mechanism and reversibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C24, C49-C52 provide background context with appropriate citations. C51 mentions unpublished data about reversibility which cannot be fully evaluated but is plausible given the nature of chromatin modifications. These claims appropriately frame the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Previous work showed Hairy induced extensive deacetylation on ftz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 appropriately cites previous work (Li and Arnosti, 2011) and provides context for the current genome-wide study. This is a straightforward citation of prior results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Genomic studies should not automatically equate changes in active chromatin marks like H3K27Ac with functional enhancers without additional validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is a cautionary conclusion well-supported by the finding that chromatin changes can occur without transcriptional effects. This represents an important methodological insight for the field, though it is somewhat obvious that correlation does not equal causation.",
+    "result_type": "MINOR"
+  }
+]

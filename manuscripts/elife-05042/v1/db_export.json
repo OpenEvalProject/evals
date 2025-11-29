@@ -1,0 +1,1600 @@
+{
+  "submission": {
+    "id": "af643841-a210-40e4-bd58-a99dd38afe6d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:37:37.518444Z",
+    "updated_at": "2025-11-29T03:37:37.518444Z"
+  },
+  "content": [
+    {
+      "id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "submission_id": "af643841-a210-40e4-bd58-a99dd38afe6d",
+      "content_type": "manuscript",
+      "content_text": "# Response to Nodal morphogen gradient is determined by the kinetics of target gene induction\n\n## Authors\n\n- Julien Dubrulle<sup>1</sup> \u2020\n- Benjamin M Jordan<sup>2</sup>\n- Laila Akhmetova<sup>1</sup>\n- Jeffrey A Farrell<sup>1</sup>\n- Seok-Hyung Kim<sup>4</sup>\n- Lilianna Solnica-Krezel<sup>5</sup>\n- Alexander F Schier<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n2. Department of Mathematics, College of Science and Engineering University of Minnesota Minneapolis United States\n3. Department of Organismal and Evolutionary Biology Harvard University Cambridge United States\n4. Division of Medicine Medical University of South Carolina Charleston United States\n5. Department of Developmental Biology Washington University School of Medicine Saint Louis United States\n6. Department of Medicine Vanderbilt University Medical Center Nashville United States\n7. Harvard Stem Cell Institute Harvard University Cambridge United States\n8. Broad Institute of MIT and Harvard Cambridge United States\n9. Center for Brain Science Harvard University Cambridge United States\n10. Center for Systems Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMorphogen gradients expose cells to different signal concentrations and induce target genes with different ranges of expression. To determine how the Nodal morphogen gradient induces distinct gene expression patterns during zebrafish embryogenesis, we measured the activation dynamics of the signal transducer Smad2 and the expression kinetics of long- and short-range target genes. We found that threshold models based on ligand concentration are insufficient to predict the response of target genes. Instead, morphogen interpretation is shaped by the kinetics of target gene induction: the higher the rate of transcription and the earlier the onset of induction, the greater the spatial range of expression. Thus, the timing and magnitude of target gene expression can be used to modulate the range of expression and diversify the response to morphogen gradients.\n\n## Introduction\n\nThe Nodal signaling pathway plays essential roles in animal development. Nodal signaling induces and patterns mesendoderm and establishes left-right asymmetry (Conlon et al., 1994; Shen, 2007; Grande and Patel, 2009; Schier, 2009; Duboc et al., 2010; Shiratori and Hamada, 2014). The Nodal signaling pathway regulates dozens of genes, ranging from transcription factors to cytoskeletal components, in order to pattern embryonic tissues (Bennett et al., 2007; Liu et al., 2011; Fodor et al., 2013). In embryonic stem cells, Nodal signaling is required for self-renewal as well as specification of endoderm and mesoderm (James et al., 2005; Vallier et al., 2005; Schier, 2009; Oshimori and Fuchs, 2012; Chen et al., 2013). Nodal signals can form concentration gradients and can act as morphogens (Chen and Schier, 2001; Williams et al., 2004; M\u00fcller et al., 2012, 2013; Xu et al., 2014a). It is unclear, however, how different Nodal concentrations induce different target genes and give rise to different cell types.\n\nThe classic morphogen threshold model postulates that Nodal signals are secreted from a source and form a concentration gradient that induces different fates in the target tissue according to local ligand concentration (Ashe and Briscoe, 2006; Barkai and Shilo, 2009; Rogers and Schier, 2011). According to this model, high-threshold genes require high levels of Nodal signaling and thus are expressed close to the source (short-range genes), whereas low-threshold genes require lower levels of Nodal and are expressed at a greater distance from the source (long-range genes). Studies of mesendoderm patterning by Nodal in fish and frog have provided five lines of evidence that support the concentration threshold model. First, Nodal signals are produced locally starting at mid-blastula stages, and by the beginning of gastrulation, cells overlapping or close to the Nodal source express endodermal markers, while cells farther away express mesodermal genes (Feldman et al., 1998; Sampath et al., 1998; Gritsman et al., 2000; Chen and Schier, 2001; Harvey and Smith, 2009). Second, a gradient of activated Smad2, the principal transducer of the pathway, peaks at the Nodal source (Faure et al., 2000; Yeo and Whitman, 2001; Harvey and Smith, 2009) with high levels of activated Smad2 in endodermal progenitors and lower levels in mesodermal precursors. Third, reduction of Nodal signaling during blastula stages leads to the absence of endodermal fates but leaves most mesodermal fates intact (Schier et al., 1997; Feldman et al., 1998, 2000; Gritsman et al., 2000; Dougan et al., 2003; Hagos and Dougan, 2007). Fourth, ubiquitous low concentrations of Nodal induce mesodermal markers, whereas high Nodal concentrations induce endodermal markers (Gritsman et al., 2000; Thisse et al., 2000; Dougan et al., 2003). Fifth, an ectopic source of Nodal can induce short- and long-range expression of endodermal and mesodermal markers, respectively (Thisse et al., 2000; Chen and Schier, 2001; Williams et al., 2004; M\u00fcller et al., 2012; Xu et al., 2014a). These observations suggest that different concentration thresholds induce different gene expression patterns.\n\nIn addition to the contribution of Nodal concentration to target gene induction, the timing of signaling affects Nodal interpretation. For example, the Nodal gradient is not static as signaling activity increases in range and amplitude between the initiation of Nodal expression and the onset of zebrafish gastrulation 2 hr later (Harvey and Smith, 2009; M\u00fcller et al., 2012). Moreover, delayed activation or premature inhibition of Nodal activity affects mesendoderm patterning (Gritsman et al., 2000; Dougan et al., 2003; Hagos and Dougan, 2007). Two models have addressed how duration of exposure and changes in concentration contribute to Nodal interpretation. In the snapshot model, cells rapidly adapt their output to the increasing concentration of Nodal, regardless of the duration and history of exposure (Rogers and Schier, 2011). Indeed, increases in activated Smad2 levels are accompanied by an expansion of target gene expression domains (Harvey and Smith, 2009). In this model, the only role of time is to allow the gradient to expand and reach the thresholds that trigger the expression of short- and long-range genes (Harvey and Smith, 2009). The alternative \u2018cumulative dose\u2019 or \u2018integration\u2019 model postulates that the duration of Nodal signaling plays a critical role in Nodal interpretation. Cells adopt progressively more marginal fates with increasing duration of exposure to Nodal (Gritsman et al., 2000; Hagos and Dougan, 2007). In this model, induction of long-range genes only requires Nodal for short periods of time, whereas activation of short-range genes depends on an extended period of exposure to high Nodal levels. It has therefore been suggested that the total cumulative dose of Nodal signaling determines the cell fate but it is unclear at which level in the pathway a cumulative dose would be measured (Hagos and Dougan, 2007).\n\nStudies of TGF\u03b2 signaling in other contexts have suggested additional mechanisms for the time-dependent interpretation of Nodal signaling. In Xenopus, analysis of signaling by Activin, a TGF\u03b2 signal related to Nodal, has suggested a ratchet model: the response to the signal is maintained once the ligand has bound the receptor. Indeed, a short pulse of Activin is sufficient to induce and maintain target gene expression several hours after the pulse (Gurdon et al., 1995, 1998; Dyson and Gurdon, 1998; Bourillot et al., 2002). This molecular \u2018memory\u2019 has been shown to rely on the persistence of active receptor-ligand complexes (Jullien and Gurdon, 2005) and allows changes in signaling output only in response to increasing Activin concentrations but not to decreasing concentrations.\n\nCell culture studies have suggested that time-dependent Nodal interpretation is dictated by the dynamics of the signaling pathway (Inman et al., 2002; Xu et al., 2002; Nicol\u00e1s et al., 2004; Schmierer and Hill, 2005; Guzman-Ayala et al., 2009). TGF\u03b2 signaling pathways operate through distinct steps: ligand binding to its receptor, phosphorylation and nuclear accumulation of Smad2, and induction of target gene expression (ten Dijke and Hill, 2004; Massagu\u00e9, 2012). Several studies have revealed parameters that affect the levels of activated Smad2. For example, cultured human keratinocytes take approximately 60 min of ligand exposure to generate the maximum level of activated Smad2 (Inman et al., 2002). Other studies have shown that the rates of Smad2 phosphorylation and nucleo-cytoplasmic transport affect signaling output (Clarke et al., 2006; Zi and Klipp, 2007; Schmierer et al., 2008; Viz\u00e1n et al., 2013) or that the speed and frequency of TGF\u03b2 ligand presentation influences target gene response (Sorre et al., 2014). These cell culture studies highlight the potential roles of signaling dynamics in target gene induction but it is unclear how these dynamics affect the response to Nodal in vivo.\n\nTo distinguish between the numerous proposed mechanisms for Nodal morphogen interpretation, we studied the temporal and spatial dynamics of Smad2 activation and target gene induction in the early zebrafish embryo. We find that not only Nodal concentration and time of exposure but also the kinetics of target gene induction are key determinants of the response to Nodal morphogens. In particular, our study indicates that a target gene's transcription rate and onset of activation are major determinants of expression range, revealing previously unrecognized layers in the interpretation of morphogen gradients.\n\n## Results\n\n### Smad2 is essential for Nodal signaling\n\nSmad2 activation has been used as a read-out for Nodal signaling, but it has been unclear whether this transcriptional regulator is the main transducer of Nodal signaling in zebrafish (Dick et al., 2000; Jia et al., 2008). To test the role of Smad2 in Nodal signal transduction, we used TILLING (Wienholds et al., 2003) to recover a non-sense mutation in smad2 and generated embryos lacking maternal and zygotic Smad2 (MZsmad2; Figure 1A,B). Endoderm and head and trunk mesoderm are absent in MZsmad2 embryos, a phenotype very similar or identical to Nodal loss-of-function mutants (Figure 1C\u2013E) (Feldman et al., 1998; Gritsman et al., 1999). MZsmad2 mutants could be rescued by ubiquitous expression of wild-type Smad2 and GFP-Smad2 and the larval lethality of Zsmad2 mutants could be rescued to adulthood by a GFP-Smad2 transgene (Figure 1F\u2013H; Table 1). Moreover, neither Nodal nor Activin displayed any activity in MZsmad2 mutants (Figure 1I,J). These results demonstrate that Smad2 is an essential transducer of Nodal signaling during mesendoderm specification.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig1-v1.jpg)\n\n**Figure 1.:** (A) Illustration of the Smad2 protein showing the position of the ENU-induced non-sense mutation. (B) Western blot against Smad2/3 on 24 hpf embryos of different genotypes for smad2. MZ, maternal-zygotic homozygotes, Z\u2212/\u2212, zygotic homozygotes, Z+/\u2212, zygotic heterozygotes. The pool of maternally contributed Smad2 protein persists for at least 24 hr in zygotic homozygous embryos while it is depleted in MZsmad2 mutants. (C\u2013J) Phenotypic analysis of 36 hpf zebrafish embryos. (C) Wild-type embryo. (D) MZoep embryo: maternal-zygotic mutant for one-eyed pinhead (oep), a cell surface protein required for Nodal signaling (Gritsman et al., 1999). (E) MZsmad2 embryo. Msmad2 mutants display a very similar phenotype (not shown). (F) MZsmad2 embryo rescued with 20 pg of smad2 mRNA. (G\u2013H) MZsmad2 embryo rescued with 50 pg of gfp-smad2 mRNA (brightfield (G), epifluorescence (H)). smad2 mRNA appears to be more effective in rescuing the prechordal plate defects in MZsmad2 mutants as compared to gfp-smad2 mRNA. (I) MZsmad2 embryo injected with 5 pg mRNA for the zebrafish Nodal homolog squint. (J) MZsmad2 embryo injected with 5 pg mRNA for activin. Note that while Activin can activate the Nodal pathway in the absence of oep (Gritsman et al., 1999; Cheng et al., 2003), neither Squint nor Activin can activate the pathway in the absence of Smad2.\n\n**Table 1.**\n \u03b2-actin::GFP-Smad2 transgene rescues smad2/smad2 adult lethality\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">smad2/+ X smad2/+; Tg(GFP-Smad2)/+</th>\n    </tr>\n    <tr>\n      <th>Genotype</th>\n      <th>+/+</th>\n      <th>Tg(gfp-smad2)/+</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>+/+</td>\n      <td>11 (37%)</td>\n      <td>4 (15%)</td>\n    </tr>\n    <tr>\n      <td>smad2/+</td>\n      <td>19 (63%)</td>\n      <td>17 (60%)</td>\n    </tr>\n    <tr>\n      <td>smad2/smad2</td>\n      <td>0 (0%)</td>\n      <td>7 (25%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_smad2/+ fish were crossed to smad2/+; Tg(GFP-Smad2)/+ fish and their progeny was raised to adulthood and genotyped for smad2 and for Tg(GFP-Smad2). The only recovered adult progeny homozygous for smad2 contains a copy of the GFP-Smad2 transgene._\n\n### Spatio-temporal map of Smad2 activity and target gene expression\n\nThe nuclear accumulation of GFP-Smad2 is a well-established reporter of TGF\u03b2 signaling (Nicol\u00e1s et al., 2004; Xu and Massagu\u00e9, 2004; Harvey and Smith, 2009). This approach has been applied in embryos to visualize how the activated Smad2 gradient evolves over time (Harvey and Smith, 2009), but it has not yet been determined how Smad2 activity changes in individual cells and how cell movements might influence gradient interpretation (Xiong et al., 2013) (Figure 2A). We therefore generated stable transgenic lines in which both GFP-Smad2 and histone H2B-RFP were ubiquitously expressed (Figure 2B,C), and tracked GFP-Smad2 nuclear accumulation at the single cell level over time and space.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig2-v1.jpg)\n\n**Figure 2.:** (A) Illustration of Nodal signaling input\u2013output relationship during blastula stage. Gray = yolk, white = blastoderm. Nodal is produced at the margin, diffuses and forms a gradient along the vegetal\u2013animal axis. Nodal signaling induces a gradient of activated Smad2, which induces long- and short-range target gene expression. (B and C) Maximal intensity projection of a confocal stack of a Histone 2B-RFP (B), GFP-Smad2 (C) double transgenic embryo at 50% epiboly (blue box in (A)). GFP-Smad2 strongly accumulates in the nuclei of cells close to the margin, the source of Nodal signals. (D) Heatmap of the nucleo-cytoplasmic (NC) ratio of GFP intensity from the embryo in (B and C). Each dot represents the position of a cell (overlay of five consecutive frames, 3-min intervals per frame). Each cell is color-coded according to its GFP NC ratio (see Figure 2\u2014figure supplement 2 for movement of cells). (E) Examples of single cell tracks at different locations along the vegetal\u2013animal axis, showing changes in GFP-Smad2 NC ratio over time. The position of most cells relative to the margin remains constant during blastula stage. Cells close to the margin activate Nodal signaling earlier and at higher levels than cells at a distance from the margin. The short bursts observed in some cell tracks are caused by transient nuclear accumulation of GFP-Smad2 at the onset of nuclear envelope breakdown and are observed even in the absence of Nodal signaling. (F) NC ratio dynamics of tracked cells along the vegetal\u2013animal axis. (G) Mean NC ratio values from (F) in 30 min bins. Note that the range and amplitude of the Smad2 activity gradient increase over the course of 90 min. Basal NC ratio is higher in younger embryos (see Figure 2G, 3.5 hpf). Since this phenomenon is also observed in the absence of Nodal signaling (MZoep mutants), the higher NC ratio is unlikely to reflect early Smad2 activation, but a higher nuclear import/export ratio of GFP-Smad2 during early development. (H) Time course of ntl (upper panel) and gsc (bottom panel) expression detected by RNA in situ hybridization. ntl begins to be induced as early as 3.5 hpf and its domain of expression expands over time to 100\u2013120 \u00b5m from the margin; gsc begins to be induced 30 min later than ntl and its domain of expression expands to 50 \u00b5m from the margin. Close-up views of dorsal side, animal pole to the top. Right panel, heatmap for the grayscale intensity of in situ hybridization signals along the vegetal\u2013animal axis showing the increase in range and intensity of ntl and gsc expression over time. See Figure 2\u2014figure supplement 3 for comparison of probes and Figure 2\u2014figure supplement 4 for independent validation of gsc and ntl expression domains using Seurat.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) GFP-Smad2 NC ratio as a function of distance from the margin. Black dots represent individual cells and the thick red line shows a polynomial fit. (B) Dose response analysis of Smad2 and GFP-Smad2 phosphorylation by Western blot following increasing amounts of activin mRNA in MZoep mutant. MZoep embryos lack endogenous Nodal activity but ectopic Activin can activate the Nodal pathway in the absence of oep. Numbers indicate amounts of pGFP-Smad2 and pSmad2 relative to GFP-Smad2 and Smad2 signals, respectively. (C) GFP-Smad2 NC ratio distribution following increasing amounts of activin mRNA in MZoep background. Both Smad2/GFP-Smad2 phosphorylation and the GFP-Smad2 NC ratio increase as the Activin levels increase.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Tracks of 50 random cells from the embryo shown in Figure 2D over a period of 30 min. Because of epiboly movements, cells move towards the vegetal pole, but their relative position from the margin barely changes (see Figure 2E).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Illustration of the experiment: a ntl-gsc fusion mRNA was injected at the one cell stage at four different concentrations (2, 8, 25 and 100 pg). Embryos were then fixed at the 128\u2013256 cell stage and processed for in situ hybridization with either ntl or gsc probes. (B) Representative images of embryos hybridized with gsc (left) or ntl (right) probes at different concentrations. (C) Mean signal intensity and standard deviation as a function of injected fusion mRNA concentration for gsc and ntl (n = 5 embryos). The gsc probe is less sensitive at low concentrations. p = 0.03 at 2 pg, p = 0.03 at 8 pg, p = 0.12 at 25 pg, and p = 0.14 at 100 pg (Two-sample t-test).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Gene expression patterns of ntl (left) and gsc (right) computed from single-cell RNAseq data spatially assigned to a 50% epiboly zebrafish embryo using Seurat (Satija et al., in press). Lateral view, dorsal side to the right.\n\nTo enable accurate quantification, we determined how Smad2 phosphorylation, GFP-Smad2 phosphorylation and GFP-Smad2 nucleo-cytoplasmic (NC) ratio increased with increasing Nodal signaling (Figure 2\u2014figure supplement 1). These calibrations established that the GFP-Smad2 NC ratio could serve as a read-out for pathway activity and confirmed the graded nuclear accumulation of Smad2-GFP along the vegetal\u2013animal axis (Harvey and Smith, 2009) (Figure 2D, Figure 2\u2014figure supplement 1).\n\nTo follow the trajectory of each cell, we tracked individual blastomeres over time (Figure 2D\u2013F, Figure 2\u2014figure supplement 2, Figure 2\u2014source data 1), determined their GFP-Smad2 NC ratio, and measured their distance from the margin. The resulting spatio-temporal map of Smad2 activity revealed that (1) the position of cells relative to the margin did not change extensively until the onset of gastrulation (Figure 2E); (2) cells close to the margin tended to activate Smad2 early and reached the highest levels of activated Smad2; (3) cells located farther away from the margin tended to activate Smad2 with a delay and the levels of activated Smad2 remained low (Figure 2F,G). Thus, during the 1.5 hr from mid- to late-blastula stage a low-amplitude short-range gradient of activated Smad2 is transformed into a high-amplitude long-range gradient.\n\nTo determine how the expression range of Nodal target genes correlates with Smad2 activity, we analyzed the expression of the long-range and short-range genes ntl and gsc, respectively (Figure 2H, Figure 2\u2014figure supplements 3, 4). ntl was first faintly detected in a few cells on the presumptive dorsal side of the embryo at the mid-blastula stage. Subsequently, its expression domain intensified and progressively extended animally until the onset of gastrulation. By contrast, gsc expression initiated \u223c30 min later and remained confined to a narrow domain on the dorsal side (Figure 2H). Comparing the spatio-temporal maps of Nodal target gene expression and Smad2 activity confirmed that the long-range target gene ntl was induced at both high and low levels of activated Smad2, whereas the expression of the short-range gene gsc correlated with high Smad2 levels and sustained Smad2 activity.\n\n### Testing the threshold and ratchet models\n\nThe spatiotemporal maps of Smad2 activity and target gene expression are consistent with previous proposals postulating that signaling thresholds determine target gene induction (Harvey and Smith, 2009). To directly test the threshold model of Nodal signaling, we wished to determine whether high Smad2 activity fully predicts the activation of both short- and long-range Nodal target genes. Using transplantation assays, we exposed GFP-Smad2 cells to high Nodal levels for different periods of time and analyzed the relationships between activated Smad2 levels and target gene expression (Figure 3A). GFP-Smad2 NC ratios were similar in cells exposed to Nodal for either 1 or 2 hr (Figure 3B,E). However, while the long-range gene ntl was expressed both after one or 2 hr of exposure to Nodal (Figure 3D,G), the expression of the short-range gene gsc was only detected after 2 hr of exposure (Figure 3C,F). These results are inconsistent with the strictest forms of the threshold model\u2014the level of Smad2 activity at a given time predicts target gene expression\u2014and reveal that the duration of signaling influences morphogen interpretation primarily at the level of target gene induction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the transplantation experiment. Animal pole cells (black circles) from a GFP-Smad2 transgenic embryo were transplanted into the animal pole of a host embryo that had been injected with mRNA for squint, a zebrafish Nodal gene (red). Host cells were unresponsive to Nodal because they were maternal-zygotic mutants for one-eyed pinhead (MZoep), a cell surface protein required for Nodal signaling. This strategy prevents feedback loops and restricts target gene expression to donor cells. The developmental age of donor cells was matched to host embryos. Black parallelograms indicate imaging plane in subsequent panels. (B\u2013G) Nodal signaling response of donor cells after 1 hr (B\u2013D) or 2 hr (E\u2013G) of exposure to Nodal. (B and E) Projection of confocal stacks of transplanted embryos and associated NC ratio (mean \u00b1 std). Activated Smad2 levels are similar in both cases. See Figure 3\u2014figure supplement 1 for time course of GFP-Smad2 N/C ratio. (C and F) RNA in situ hybridization for gsc. (D and G) RNA in situ hybridization for ntl. ntl is expressed after 1 (n = 12/12) or 2 hr (n = 16/16) of Nodal exposure while gsc signal in transplanted cells is only detected after 2 hr of exposure (n = 1/15 at 1 hr, n = 12/14 after 2 hr). Images in B\u2013G are from different embryos. Note that the differences in the duration of Nodal exposure uncouple the activated Smad2 level from target gene expression.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Boxplot of the NC ratio of GFP-Smad2 cells over time. GFP-Smad2 cells (n \u223c50) were transplanted into a MZoep host embryo injected with 30 pg of squint mRNA (as in Figure 3A, bottom panel), and the NC ratio was determined at different time intervals. Note that the NC ratio is never higher at any time between 3.5 and 5.5 hpf than as compared to 5.5 hpf.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Top: Illustration of transplantation experiments to move cells from a region with Nodal (red) to a region without Nodal. Cells located at the margin of a 30% epiboly GFP-Smad2 transgenic embryo were transplanted to the animal pole of a stage-matched wild-type embryo. The NC ratio of GFP-Smad2 was measured over time by time-lapse microscopy (n = 3 embryos). Bottom: boxplot of the NC ratio distribution at different time intervals after transplantation. Smad2 activity progressively decreases and reaches basal levels after 60 min. Two-sample t-tests p-values are indicated: NS, not significant; *p \u2264 0.05; **p \u2264 0.01. (B) Top: Illustration of the transplantation experiment. Bottom: RNA in situ hybridization for ntl 30 min (left) or 120 min (right) after marginal cells were transplanted to the animal pole. After 30 min, the majority of ectopically transplanted marginal cells express ntl (n = 12/14 transplantations) whereas 2 hr after transplantation, 90% of embryos are devoid of ectopic ntl expression (n = 17/19 transplantations). These results indicate that Nodal pathway activity cannot be maintained for prolonged periods in the absence of Nodal.\n\nThe spatiotemporal maps of Smad2 activity and target gene expression support one prediction of the ratchet model\u2014cells respond to increases in ligand concentration. To test the other tenet of the ratchet model\u2014cells remember the highest ligand concentration they have been exposed to\u2014we determined whether response is refractory to decreasing Nodal levels. We transplanted GFP-Smad2 cells from the blastula margin (where Nodal concentration is high) to the animal pole (where Nodal concentration is low). Inconsistent with the ratchet model, Smad2 activity progressively decreased and reached basal levels after \u223c60 min (Figure 3\u2014figure supplement 2A). Similarly, the expression of the long-range gene ntl disappeared over time (Figure 3\u2014figure supplement 2B). Thus, pathway activity and target gene expression cannot be maintained for extended periods after transient exposure to Nodal.\n\n### A kinetic model for Nodal morphogen gradient interpretation\n\nSince the threshold and ratchet models do not fully account for Nodal morphogen interpretation, we sought an alternative model based on the biochemistry and biophysics of signaling. The changes in Smad2 activity and gene expression suggested that the kinetics of signal transduction and gene induction might be major factors in Nodal morphogen interpretation. To determine how time and concentration might translate into pathway activity and target gene response, we developed a mathematical description of the kinetics of Nodal signaling (Chen et al., 2010) (Source code 1). To reduce the complexity of the system and the numbers of free parameters, we focused on the three main steps in the pathway (Figure 4A): (1) the diffusion of Nodal from a local source, (2) the Nodal-dependent phosphorylation of Smad2 (pSmad2), and (3) the pSmad2-dependent transcription of target genes. Three coupled differential equations were formulated to implement the kinetic model. All equations were based on standard reaction-diffusion models and mass-action kinetics.(1)\u2202N\u2202t=P(x,t)+DN.\u22072.N\u2212k1.N.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig4-v1.jpg)\n\n**Figure 4.:** (A) Diagram of the Nodal signaling pathway used for modeling (left) and coupled differential equations describing the changes of Nodal, activated Smad2 and target genes over time (right). The Nodal ligand is locally produced, diffuses and via kinase receptors phosphorylates Smad2. Phosphorylated Smad2 acts as a transcription regulator and binds to target genes to induce transcription. (B) Spatiotemporal gene expression patterns were simulated over 3 hr using the kinetic model. Each panel depicts the expression pattern resulting from a unique combination of the four free parameters involved in mRNA production (transcription rate \u03b1, degradation rate \u03b2, dissociation constant Kd and Hill coefficient) while other parameters are held constant. Note how changes in these parameters change the range of target gene expression. See Figure 4\u2014figure supplement 1 for more extensive simulations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, C, E, G, I) Contour plots of maximum range of expression after 3 hr of signaling. (B, D, F, H, J) Contour plots of onset of expression. (A and B) Combined effect of Tx rate (x axis) and Kd (y axis) with a Hill coefficient of 1 and a degradation rate of 10\u22125 s\u22121. Tx rate and Kd contribute equally to the range of expression, except at low Kd and low Tx rate, where the range is more sensitive to changes in Tx rate. (C and D) Combined effect of Tx rate (x axis) and Kd (y axis) with a Hill coefficient of 4 and a degradation rate of 10\u22125 s\u22121. The range becomes more sensitive to changes in Kd and less sensitive to changes in Tx rate. (E and F) Combined effect of Tx rate (x axis) and Kd (y axis) with a Hill coefficient of 1 and a degradation rate of 5 \u00d7 10\u22124 s\u22121 (G and H) Combined effect of Tx rate (x axis) and degradation rate (y axis) with a Hill coefficient of 1 and Kd of 6 nM. Range and onset of expression are only sensitive to changes in degradation rates when RNA half-life is very short (half life <30 min). (I and J) Combined effect of Kd (x axis) and degradation rate (y axis) for a Hill coefficient of 1 and Tx rate of 0.1 count/s. Range and onset of expression are only sensitive to changes in degradation rates when RNA half-life is very short (half life <30 min).\n\nEquation 1 describes the change of Nodal (N) levels over time. Nodal is produced from a source, diffuses and is degraded. Nodal levels at a distance from the source increase with increases in Nodal production (P) and diffusion (D) and with decreases in clearance (k1).\n\n$$\n\\frac{dS_{p}}{dt}=k_{2}.N.S\u2212k_{3}.S_{p}.\n$$\n\nEquation 2 describes the change in activated (phosphorylated) Smad2 (Sp) levels over time. Smad2 activation is proportional to Nodal and non-activated (non-phosphorylated) Smad2 (S) concentrations. Thus, when Nodal concentration increases, activated Smad2 levels increase. Smad2 is deactivated (de-phosphorylated) at rate k3.\n\n$$\n\\frac{dRNA_{target}}{dt}=\\alpha.\\frac{S_{p}^{n}}{K_{d}^{n}+S_{p}^{n}}\u2212\\beta.RNA_{target}.\n$$\n\nEquation 3 describes the induction of Nodal target genes (RNAtarget) over time. For each target gene, levels of expression and dynamics of induction are defined by its maximal transcription rate (\u03b1), degradation rate of its RNA (\u03b2), and the affinity of pSmad2 for its promoter/enhancer (Kd). The expression of a given target gene increases as \u03b1 increases, Kd decreases, or the degradation rate decreases. As the concentration of pSmad2 increases, target gene transcription increases. The Hill coefficient n defines the cooperativity that modulates the sensitivity of the response.\n\n### Constraining the kinetic model through in vivo measurements\n\nTo test the effectiveness of the kinetic model in explaining and predicting Nodal gradient interpretation, we wished to run simulations with a realistic set of parameters. The effective diffusion coefficients and clearance rates of Nodals have been experimentally determined (M\u00fcller et al., 2012), but other parameters of the system have not been measured. Exploring the contribution of each of these parameters in regulating target gene expression revealed that multiple parameter combinations could simulate the expression patterns observed in vivo (Figure 4B and Figure 4\u2014figure supplement 1). In particular, the range of expression is affected most dramatically by changes in transcription rate, Kd or Hill coefficient. We therefore decided to constrain the parameter space by performing a detailed quantification of pSmad2 levels and target gene expression at different Nodal concentrations and durations of exposure. To precisely control the levels and timing of ligand input, we injected different amounts of recombinant mouse Nodal protein into the extracellular space of blastula embryos that lacked endogenous Nodal ligands (Figure 5A). Nodal-injected embryos were collected at different time points and pSmad2 levels were determined by Western blotting. Target gene expression levels were measured by NanoString analysis using a custom-designed codeset (Figure 5\u2014source data 1). This technique combines fluorescently barcoded probes with microimaging to detect and count hundreds of transcripts simultaneously in a single hybridization reaction and without amplification. It thus avoids the primer-specific amplification biases of qRT-PCR experiments and allows the direct measurement and comparison of transcript levels (Geiss et al., 2008; Su et al., 2009; Strobl-Mazzulla et al., 2010).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig5-v1.jpg)\n\n**Figure 5.:** (A) Experimental design: Wild-type embryos were injected at the one-cell stage with squint and cyclops MOs to knock down endogenous Nodal signaling. Morphant embryos were further injected either at 3.5 or 4.5 hpf with recombinant mouse Nodal protein at different concentrations in the extracelluar space. They were then incubated for different periods of time and processed for Western blot to determine pSmad2 levels or for NanoString to assess mRNA levels. (B) Dose-response (left panel) and time course (middle panel) of Smad2 activation at high (100 nM, dark green) and low (10 nM, light green) Nodal concentrations. Dots represent experimental data points and orange lines show model simulations with k2 = 3.13 \u00d7 10\u22126 nM\u22121s\u22121 and k3 = 1.8 \u00d7 10\u22124 s\u22121. Black lines represent the 95% confidence intervals of data predictions. (Right panel) Simulated spatial distribution of Smad2 activation in a one-dimensional column of cells from 3.5 to 5 hpf in response to Nodal production from a source that extends from L = 0 to 25 \u00b5m. (C) Dose-response (top) and time course (bottom) data of 12 direct Nodal targets (black dots). Given a specific set of parameters for each gene, the model (red line) recapitulates the dynamics of gene expression. Black lines represent fits encompassing the 95% prediction confidence intervals. gsc and ntl dynamics are highlighted within black boxes.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Left panel: binding peaks of Smad2 and its associated transcription factor FoxH1 at dome stage after injection of zebrafish Nodal Squint mRNA (red) or after treatment with the Nodal signaling inhibitor SB505124 (blue). Peaks called by the MACS algorithm are indicated (gray blocks). Middle panel: NanoString count levels after injection of recombinant mouse Nodal protein (red) or after SB505124 treatment (blue) in the absence (\u2212cycloH) or in the presence (+cycloH) of the translation inhibitor cycloheximide. Right panel: time course induction of target genes after Nodal injection at 3.5 hpf (green) or 4.5 hpf (orange). In each case, (1) a specific Smad2 peak associated with a FoxH1 peak appears in the vicinity of the TSS upon Squint injection, (2) the Nodal-induced expression is not abolished by cycloheximide treatment, and (3) induction kinetics have similar trajectories independently of the stage of Nodal exposure, suggesting that these genes are direct targets of Nodal signaling.\n\n#### Phospho-Smad2\n\nAs predicted by the kinetic model and in agreement with previous studies (Zi et al., 2011), increasing Nodal levels induced higher levels of pSmad2 until a plateau was reached. High Nodal levels lead to a very rapid activation of Smad2, reaching a quasi-steady state after 1 hr. In contrast, low Nodal levels induced lower levels of Smad2 activation and quasi-steady state Smad2 activation was only reached 2 hr after ligand exposure (Figure 5B).\n\nWe subjected the kinetic model to a fitting procedure to identify values that would best reflect the experimental data (see \u2018Materials and methods\u2019). For Smad2 activation, we found phosphorylation rates (range from 2.3 \u00d7 10\u22126 to 4.0 \u00d7 10\u22126 nM\u22121s\u22121) and turnover rates (range from 0.9 \u00d7 10\u22124 to 2.7 \u00d7 10\u22124 s\u22121) similar to previous studies performed in cell culture and Xenopus animal cap cells (Bourillot et al., 2002; Schmierer and Hill, 2005; Schmierer et al., 2008).\n\n#### Target gene expression\n\nTo measure target gene expression, we first identified genes in our NanoString codeset that were directly regulated by Nodal signaling using three criteria: (1) increased expression upon increase of Nodal levels (Figure 5C), (2) Nodal-mediated gene induction in the presence of translation-blocking cycloheximide (Figure 5\u2014figure supplement 1), and (3) binding by Smad2 in the vicinity of transcription start sites (often in conjunction with the co-regulator FoxH1, Figure 5\u2014figure supplement 1, Figure 5\u2014source data 2\u20135) (Liu et al., 2011; Yoon et al., 2011). This analysis identified 47 direct targets of Nodal signaling.\n\nNanoString analysis allowed precise comparisons of transcript levels in response to different levels and duration of Nodal exposure (Geiss et al., 2008; Strobl-Mazzulla et al., 2010; Nam and Davidson, 2012). Target genes had specific response profiles (Figure 5C, Figure 5\u2014source data 6). For example, ntl, a typical long-range target, was induced at low Nodal concentrations and its expression reached high NanoString counts (\u223c2500) at high Nodal concentrations. The induction of ntl expression was rapid: ntl mRNA accumulated within 30 min after injection of intermediate levels of Nodal and continuously increased over time. By contrast, gsc, a short-range Nodal target, required higher concentrations of Nodal to be detected above background levels, and its NanoString counts at high Nodal concentrations were 25 times lower than those of ntl. The induction of gsc was slow: mRNA accumulation was only detected after 60 min. These measurements reveal striking differences in the transcriptional magnitude and timing of Nodal-induced gene expression.\n\nTo examine whether the kinetic model could capture the behavior of individual target genes, we screened for gene-specific parameter combinations that satisfied the constraints imposed by the NanoString measurements (see \u2018Materials and methods\u2019, Source code 2). Parameter value search was limited to defined intervals: 10\u22123 to 101 counts per second for the transcription rate (Miller et al., 2011; Tu et al., 2014), 0.1 to 100 nM for Kd (Xi et al., 2011; Geertz et al., 2012; Gentsch et al., 2013), 1 \u00d7 10\u22125 to 1 \u00d7 10\u22123 s\u22121 for the degradation rate (Rabani et al., 2011) and Hill coefficients from 1 to 4. Reflecting the different transcript levels measured by NanoString, transcription rates varied widely between genes, ranging from 0.0016 to 9.3 counts/s (mean 0.54 \u00b1 1.66). In contrast, Kds only ranged from 0.73 to 42 nM, with more than 75% of Kds between 5 and 10 nM (Figure 5\u2014source data 7). For example, we found Kds of Smad2 for ntl and gsc of 4.9 nM and 5.4 nM, respectively, while the transcription rates were 0.67 counts/s for ntl and 0.032 counts/s for gsc. These differences explain why only prolonged exposure to Nodal induced gsc in the test of threshold model (Figure 3): only very low gsc RNA counts (\u223c50) can be detected 1 hr after Nodal exposure. In contrast, ntl, which was rapidly induced in the test of the threshold model, was induced at high levels (\u223c1000 counts) after 1 hr. The finding that a realistic set of parameter combinations satisfied the constraints imposed by the NanoString measurements suggests that the kinetic model provides a suitable description of Nodal morphogen interpretation.\n\n### The kinetic model predicts the range of target gene expression\n\nTo test whether the kinetic model can recapitulate and predict the temporal and spatial pattern of Nodal target gene expression, we ran simulations in a one-dimensional column of cells spanning the vegetal\u2013animal axis. We let Nodal be produced and diffuse from a point source and used the parameters identified in the previous section to simulate the spatial Smad2 activation and transcriptional response over time. Using these conditions, the spatiotemporal pattern of activated Smad2 correlated well with the endogenous pattern of Smad2 activation (Figure 5B): a short-range low-amplitude gradient was transformed over time into a long-range high-amplitude gradient, as observed in vivo for the GFP-Smad2 activity gradient (Figure 2F,G) (Harvey and Smith, 2009).\n\nThe simulated spatiotemporal patterns of gene expression also fit well with the in vivo data. For example, in our simulations, ntl expression began in cells close to the margin 45 min after ligand production started, and the range of ntl continuously increased and reached cells located more than 100 \u00b5m away from the margin after 3 hr (Figures 2H, 6A). By contrast, gsc expression was delayed and its range of expression was confined to cells close to the source (Figures 2H, 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig6-v1.jpg)\n\n**Figure 6.:** Comparison of kinetic model simulations and RNA fluorescent in situ hybridization for ntl (A), gsc (B), foxa3 (C), efnb2a (D). Left panels: simulations of spatiotemporal expression patterns over 3 hr along a 200 \u00b5m-high column of cells using gene-specific parameters identified in the parameter screen. Right panels: RNA fluorescent in situ hybridization at 3, 4.5 and 6 hpf. The size of the embryonic field is 100 \u00b5m wide and 200 \u00b5m high. Animal pole to the top.\n\nTo test the predictive power of the kinetic model, we determined the expression patterns of genes that had not been analyzed in detail with respect to their range. As predicted by the simulations, foxa3 mRNA rapidly accumulated at high levels up to four cell tiers (\u223c60 \u00b5m) from the source and then extended up to 80\u2013100 \u00b5m by the onset of gastrulation (Figure 6C). efnb2a mRNA also readily accumulated but was expressed in a narrower domain, as predicted from the simulations (Figure 6D). These results reveal the power of the kinetic model in recapitulating and predicting the response of target genes to Nodal morphogen signaling.\n\n### Transcription rate predicts range of target gene expression\n\nSince the kinetic model predicted target gene expression, we wished to determine which parameters were the major contributors to the range of gene expression. In the simulations described above (Figure 4B and Figure 4\u2014figure supplement 1), genes whose Kd is low and maximal transcription rate is high are expressed at high levels and at long range. In contrast, the degradation rate influences the range of expression only when mRNA half-lives are very short (Figure 4\u2014figure supplement 1). In agreement with the simulations, we found that genes that are highly induced by Nodal generally display a long range of expression (Figure 7A,B). Strikingly, the maximal transcription rate, not the Kd or the degradation rate, was the best predictor of gene expression range (Figure 7C,D). For example, while the degradation rate, Kd and Hill coefficient for the long-range gene foxa3 and the short-range gene gsc are very similar (Figure 5\u2014source data 7), their maximal transcription rate, and therefore their maximal level of expression, differ by a factor of 20. These results raise the possibility that the maximal transcription rate is a major contributor to target gene expression range: the higher the maximal rate of transcription, the longer the range. Moreover, multiple hypotheses analysis indicates that a model in which the maximal transcription rate is gene-specific and Kd is identical for all the genes performs better than a model where Kd is gene-specific and the maximal transcription rate is constant (see Nodal signaling modeling section in \u2018Materials and methods\u2019). Although the Kd may affect target gene response, these analyses indicate that the maximal transcription rate is a key parameter in determining the range of expression.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig7-v1.jpg)\n\n**Figure 7.:** (A) Bar graph showing the number of counts detected 90 min after injection of 100 nM of recombinant Nodal protein for the 61 Nodal-responsive genes (direct and indirect) identified in the NanoString codeset. Some of the genes used in this study are highlighted. (B) Scatter plot comparing maximal expression and simulated range. Highly expressed genes tend to have a longer range of expression. (C and D) Scatter plots comparing fitted Kd and maximal transcription rate (Tx rate) in relation to maximal expression (C) and in relation to simulated spatial range of expression (D). Most Kd values remain in a narrow range while transcription rates spread over several orders of magnitude.\n\n### Delayed response to Nodal restricts the range of target gene expression\n\nTo analyze additional predictions generated by the kinetic model, we asked whether a delay in gene induction might affect target gene response. To simulate this scenario, we extended the kinetic model with a co-factor that is produced later than and independently of Nodal and acts together with Smad2 to activate gene transcription. Simulations revealed not only the expected delay but also a reduced range of target gene induction: a long-range gene could be transformed into a short-range gene by introducing a delay in gene induction (Figure 8A).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig8-v1.jpg)\n\n**Figure 8.:** (A) Simulation of efnb2b expression using the kinetic model without (left) or with (right) a co-transcriptional activator Y. The dependence on Y delays the onset of efnb2b expression and reduces its range. (B) Top: Experimental design. Bottom: Time-course induction of efnb2b after injecting recombinant Nodal protein at 3.5 hpf (green) and 4.5 hpf (orange). The induction kinetics of this gene are very slow, but the later Nodal is injected, the faster its induction. Note that counts for the expression of late target genes are higher after early injection compared to later injections. This effect might be due to the fact that after early injections phospho-Smad2 levels are high for a longer period before a gene becomes competent to respond as compared to late injections, when there is a shorter time window of high phospho-Smad2 levels. There might be a priming mechanism in which longer exposure to activated Smad2 increases gene expression when competence is reached. (C) RNA fluorescent in situ hybridization for efnb2b at 3, 4.5 and 6 hpf. Expression of efnb2b is only detected at 6 hpf, although Nodal signaling and the expression of most other Nodal targets commences much earlier.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Left panel: binding peaks of Smad2 and the associated transcription factor FoxH1 at dome stage after injection of Squint mRNA (red) or after treatment with the Nodal signaling inhibitor SB505124 (blue). Peaks called by the MACS algorithm are indicated (gray blocks). Middle panel: NanoString count levels after mNodal injection (red) or after SB treatment (blue) in the absence (\u2212cycloH) or the presence (+cycloH) of the translation inhibitor cycloheximide. Right panel: time course induction of target genes after Nodal injection at 3.5 hpf (green) or 4.5 hpf (orange). Although these genes have Smad2/FoxH1 binding sites, their induction is abolished in the presence of cycloheximide, suggesting that an additional transcriptional co-regulator controls their transcription. Moreover, these genes are delayed in their onset of expression. The length of the delay depends on the stage at which Nodal is applied.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05042/elife-05042-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Concentration-dependent induction of flh (left), bra (middle) and gsc (right). bra and flh can be induced at low Nodal concentrations. (B) Induction dynamics of bra after injecting Nodal at 3.25, 4.25 and 5.25 hpf as a function of time after injection (left) or as a function of absolute embryonic time (right). Arrowheads in the right panel indicate the time of Nodal injection. bra can only be induced when the embryo has reached a specific embryonic stage. bra expression is detected by RT-qPCR. (C) Fluorescent RNA in situ hybridization with bra probe at 3, 4.5, 6 hpf. bra is only detected at 6 hpf in 5 cell tiers.\n\nTo determine whether such delayed genes might exist in vivo, we screened our NanoString data for Nodal targets whose induction upon Nodal exposure was delayed (Figure 8B, Figure 8\u2014figure supplement 1). We discovered a small set of genes that were induced slowly after Nodal exposure at 3.5 hpf but more rapidly after exposure at 4.5 hpf (Figure 8B, Figure 8\u2014figure supplement 1). For example, when Nodal was injected at 3.5 hpf, efnb2b was only induced after approximately 2 hr. By contrast, when Nodal was injected at 4.5 hpf, the delay in efnb2b induction was reduced by more than 30 min (Figure 8B). In contrast, most other genes responded rapidly to Nodal exposure at either time point (Figure 5\u2014figure supplement 1). This result revealed that the delay was gene-specific and did not reflect a general lack of competence to respond to Nodal signaling or activate gene expression. Similar to the canonical target genes, genes with delayed induction contained Smad2/FoxH1 binding sites and showed a clear response upon injection of Nodal (Figure 8\u2014figure supplement 1) but their induction was abolished in the presence of cycloheximide (Figure 8\u2014figure supplement 1). These Nodal target genes are therefore likely to be regulated not only by Nodal signaling but additional factors. Strikingly, and as predicted by the delayed induction model, efnb2b expression in the embryo was detected only late (6 hpf) and at a short range (5 cell tiers) (Figure 8C). Similarly, the Nodal target gene bra (Martin and Kimelman, 2008) could only be induced shortly before gastrulation and, as predicted by the model, was expressed at low levels and at a short range (Figure 8\u2014figure supplement 2). These results reveal that a delay in transcriptional response can be used to limit the range of morphogen-induced gene expression.\n\n## Discussion\n\nNumerous models have been proposed to explain how morphogen gradients are interpreted to generate diverse gene expression patterns. To interrogate these models, we have taken a quantitative approach to measure the parameters that underlie gradient formation (M\u00fcller et al., 2012) and interpretation (this study). This approach reveals that the kinetics of target gene induction is a major determinant of morphogen interpretation and suggests that a kinetic model of morphogen interpretation is better suited for the Nodal morphogen system than the prominent threshold and ratchet models.\n\nThe kinetic model recapitulates the dynamics of Smad2 activation and reveals how distinct gene expression patterns can be generated: (1) the Nodal morphogen gradient forms and extends through diffusion; (2) rapid phosphorylation generates a corresponding gradient of activated Smad2; target genes are induced based on (3) their affinity for activated Smad2, (4) their maximal transcription rate, and (5) their competence to respond to activated Smad2. Thus, a target gene can be induced rapidly and at a long range by high transcription rate, high Smad2 affinity and early onset of induction. Conversely, low affinity for Smad2, low transcription rate or late onset of induction generate short-range gene expression patterns.\n\nOur analysis identifies transcription rates and induction delays as two novel strategies to modulate morphogen interpretation. Previous models of morphogen interpretation have emphasized the importance of differential DNA (or chromatin) affinity: the higher the affinity for the transcription regulator, the longer the range of target gene expression. Our results do not contradict such models but reveal that in a rapidly developing system, the intrinsic rate of transcription of a target gene can be a major determinant of gene expression range: high affinity binding sites cannot overcome the limits imposed on gene expression range by low levels of intrinsic transcription. Similarly, delays in transcriptional onset can turn high affinity target genes into short-range genes.\n\nThe Nodal morphogen system stands in contrast to two other well-studied morphogen systems, Sonic Hedgehog (Shh) and Bicoid. The Shh gradient patterns the dorsoventral axis of the mammalian neural tube over several days (Briscoe and Ericson, 1999; Nishi et al., 2009; Cohen et al., 2013). Although different concentrations of Shh elicit different transcriptional responses, feedback and cross-regulatory interactions are key determinants of patterning. For example, cells are progressively desensitized to Shh activity by upregulating patched1 (Dessaud et al., 2007), and downstream targets regulate each other to generate discrete domains of expression (Balaskas et al., 2012). Thus, in contrast to the Nodal system which rapidly establishes target gene expression patterns, the Shh system makes extensive use of feedback inhibition and cross-regulation. At the other extreme, the Bicoid morphogen has already formed a quasi steady-state gradient before its target genes can be activated during zygotic genome activation (Driever and N\u00fcsslein-Volhard, 1988; Gregor et al., 2007; Porcher et al., 2010). Bicoid concentration and affinity to regulatory chromatin elements are important (but not the sole [Ochoa-Espinosa et al., 2009; Chen et al., 2012]) determinants of target gene expression along the anterior-posterior axis of the Drosophila embryo (Driever et al., 1989; Burz et al., 1998). Thus, in contrast to the Nodal morphogen gradient, which evolves and is interpreted continuously under pre-steady state conditions, the Bicoid morphogen system makes only limited use of temporal strategies to modulate target gene response.\n\nThe influence of transcription rates and delays in morphogen interpretation raises the question how these processes might be regulated at the molecular level. Transcriptional delay might be achieved by a co-activator for target gene induction. Alternatively, a repressor might have to be eliminated for a target gene to become competent to respond. Transcription rates might be influenced by local chromatin structure, promoter strength, and by co-activators that boost or repressors that dampen the levels of target gene expression (Li et al., 2007; Lupien et al., 2008; Hager et al., 2009; Kanodia et al., 2012; Peterson et al., 2012; Coulon et al., 2013; Oosterveen et al., 2013; Foo et al., 2014; Xu et al., 2014b). In either case, our study suggests that the intensity and onset of target gene transcription can be major determinants in shaping morphogen gradient interpretation. Similar mechanisms might modulate other rapid and dynamic pattern formation processes (Bolouri and Davidson, 2003; Lewis, 2003; de-Leon and Davidson, 2010; Oates et al., 2012).\n\n## Materials and methods\n\n### Fish strains and transgenics\n\nFish were raised and maintained under standard conditions. Wild-type embryos were collected from TLAB in-crosses. MZoeptz57 embryos were obtained as previously described (Zhang et al., 1998; Gritsman et al., 1999). Mutations in the smad2 gene (ENSDARG0000006389, zv9) were screened for in the sperm of ENU-treated males by TILLING with primers encompassing exons 9 and 10.\n\n#### Outer primers\n\nOSm2F1: 5\u2032-CAATGGAGATAAGCCTGTGGC.\n\nOSm2R4: 5\u2032-TCTGCAAATGTTTTAAGCACTATTTCAG.\n\n#### Inner primers\n\nISm2F2: 5\u2032-CTGTAATTTTAATATATTCATTTTTGCTGGC.\n\nISm2R3: 5\u2032-TGCATAAATCTAATTGGCATTTTTAGATAAACC.\n\nA stop mutation was selected in exon 9 (arg335 > Stop) and heterozygous fish were produced by in vitro fertilization. After at least three outcrosses of smad2vu99/+ fish with a TLAB strain, smad2vu99/smad2vu99 germline carrier fish were obtained by the germline transplantation technique as described (Ciruna et al., 2002). The carrier fish were in-crossed to produce MZsmad2 embryos. gfp-smad2 and h2b-rfp transgenic strains were generated by the meganuclease I-SceI technique as described (Thermes et al., 2002). egfp was introduced in frame upstream of the zebrafish smad2 coding sequence. Both gfp-smad2 and h2b-rfp were inserted downstream of a 5.3 kb fragment of the zebrafish \u03b2-actin promoter (gift of F Maderspacher) and the cassettes were subcloned into the I-SceI vector. GFP-Smad2 and H2B-RFP transgenic fish were intercrossed to generate double trans-heterozygotes.\n\n### Embryo manipulations\n\n#### mRNA injections\n\nConstructs were cloned in pCS2+ and mRNA for smad2, gfp-smad2, squint and activin were synthesized using the mMessage mMachine kit (Ambion, Grand Island, NY). cyclops and squint morpholinos (MOs) (Gene Tools, Philomath, OR) were previously described (Feldman and Stemple, 2001; Karlen and Rebagliati, 2001). Dechorionated embryos were injected at the one-cell stage with 0.5\u20131 nl of mRNA at the appropriate concentration.\n\n#### Transplantations\n\nCell transplantations were performed by mouth pipetting. 20\u201350 cells were transplanted from a donor (gfp-smad2/h2b-rfp or wild-type) to a host embryo (wild-type or squint injected MZoep). To test Nodal signaling maintenance after input removal, marginal cells of gfp-smad2/h2b-rfp or wild-type donor embryos at 30% epiboly were transplanted into the animal pole of stage-matched wild-type host embryos. Transplanted embryos were further incubated and processed for either confocal microscopy or for in situ hybridization. To analyze the relationships between activated Smad2 levels and Nodal target gene expression, animal pole cells of gfp-smad2/h2b-rfp embryos at 3.5 hpf or 4.5 hpf were transplanted into the animal pole of squint injected stage-matched MZoep embryos. Under these conditions, only donor cells in transplanted embryos can respond to Nodal. Transplanted embryos were incubated for 1 or 2 hr and processed for confocal microscopy and for in situ hybridization.\n\n#### Nodal induction dynamics\n\nWild-type embryos were first injected at the one-cell stage with 1 nl of cyclops and squint MOs mixture (at 0.2 mM and 4 \u00b5g/\u00b5l, respectively) to inhibit endogenous Nodal signals. Morphants were further injected with 0.5\u20131.5 nl of recombinant mouse Nodal protein (rmNodal, R&D Systems, Minneapolis, MN) at different concentrations in the extracellular space at 4 hpf (sphere stage). To test transcriptional competence, rmNODAL was injected at different stages ranging from 3.25 to 5.25 hpf. Cycloheximide (Sigma, Saint Louis, MO) was applied to dechorionated embryos in embryo medium at 50 \u00b5g/\u00b5l at 3 hpf. 30 min later embryos were injected with 100 nM Nodal protein and were incubated for 90 min before being processed for total RNA extraction and NanoString analysis.\n\n### Embryo samples processing\n\n#### In situ hybridization\n\nIn situ hybridization on whole mount embryos were carried out using standard protocols. ntl, gsc, foxa3, efnb2a, efnb2b and bra probes were previously described (Schulte-Merker et al., 1992, 1994; Bennett et al., 2007; Martin and Kimelman, 2008). A ntl-gsc fusion probe was constructed by amplifying the full length gsc mRNA using the primers cg [ggatcc] ATGCCCGCTGGGATGTTTAGTATC and ataagaat [gcggccgc] TTAGATATTACTTTAATATTTGTTCCTGTTTTCAGGC and cloning into a plasmid containing full length ntl mRNA using BamHI and NotI enzymes. This construct was linearized with NotI and transcribed using T3. The mRNA was injected into embryos collected from a TLAB incross at the 1-cell stage at four different doses (2 pg, 8 pg, 25 pg, and 100 pg). Embryos were cultured to the 128\u2013256-cell stage and fixed in 4% formaldehyde overnight. They were dehydrated, rehydrated, and stained using standard methods. The same concentrated probe stocks were used that had been used in Figure 2, which were freshly diluted 1:100 in hybridization medium. Following staining, embryos were cleared in benzyl benzoate/benzyl alcohol (2:1 vol/vol) Five random embryos were chosen for each probe\u2013dose combination and imaged from the animal cap in one session with no changes to the settings of the microscope. These images were blinded (so that the file names no longer reflected the treatment), converted to grayscale, and the region of the animal cap that represented a single layer of stained cells was selected in ImageJ with the Lasso tool. The mean brightness of this region and a similarly sized background region were calculated. Each image file was quantitated three separate times and averaged, and the background brightness was subtracted. Brightness measurements were inverted (so that more staining would be a higher number), and their mean and standard deviation was plotted.\n\n#### Western blotting\n\nWestern blots were performed using standard procedures and the signal was detected by chemiluminescence (ECL plus, Amersham, Piscataway, NJ). Phosphorylated Smad2 was probed using a rabbit anti-phospho-Smad2 (Ser465/467) antibody (1:2000 dilution, Cell Signaling Technology, Danvers, MA, #3104) and total Smad2 was probed using a rabbit anti-Smad2/3 antibody (1:2000 dilution, Cell Signaling Technology, #3102). Signals were quantified in ImageJ with the Gel Analyzer function and the ratio between phospho-Smad2 and total Smad2 signals was calculated.\n\n#### NanoString\n\nTotal RNA from 5 to 10 embryos for each data point was extracted using the RNAeasy mini kit (Qiagen, The Netherlands) and 100 ng of input RNA was processed through the nCounter assay using standard protocols (NanoString Technologies, Seattle, WA) (Kulkarni, 2011). Samples were first normalized to positive controls included in the codeset. The codeset content was further normalized to 11 reference genes to correct for difference in sample input between assays, according to manufacturer's guidelines.\n\n#### qPCR\n\nTotal RNA from 5 to 10 embryos was extracted using the RNAeasy mini kit (Qiagen) and 100 ng of input RNA was used to synthesize cDNA with the iScript kit (Bio-Rad, Hercules, CA). qPCR reactions were performed in duplicates using the Go Taq qPCR kit (Amersham) on a MX3000P qPCR instrument (Agilent Technologies, Santa Clara, CA). Relative expression of a given gene was calculated by the \u2206Ct procedure using eef1a1l1 as a reference. Primers used for qPCR analysis are as followed:\n\nbra\n\nF: 5\u2032 CTGTAGGGAACTCCTCTCAGT\n\nR: 5\u2032 AAGCAGCTGTGTCGTATAAAG\n\neef1a1l1\n\nF: 5\u2032 AGAAGGAAGCCGCTGAGATGG\n\nR: 5\u2032 TCCGTTCTTGGAGATACCAGCC\n\nflh\n\nF: 5\u2032 GGCGGAGATGAGAGAACGAAC\n\nR: 5\u2032 GATAGCAGAACACGGGATAGC\n\ngsc\n\nF: 5\u2032 GAGACGACACCGAACCATTT\n\nR: 5\u2032 CCTCTGACGACGACCTTTTC\n\n### Time lapse imaging, image processing, analysis and cell tracking\n\nLive embryos were embedded in 0.8% low melting point agarose on a glass bottom culture dish (MatTek, Ashland, MA), with the marginal region facing the objective. The dish was filled with fish water (Instant Ocean sea salt [0.6 g/l] in RO water, 0.01 mg/l methylene blue) to prevent dehydration. Images were acquired on a PASCAL confocal microscope (Zeiss, Germany) using a 25\u00d7 objective (LCI Plan-Neofluar/0.8) equipped with a heated stage set at 28\u00b0C. Samples were simultaneously excited with an argon laser at 488 nm and a Helium laser at 546 nm. Four confocal planes were imaged at 3 \u00b5m intervals (512 \u00d7 512 size, 12-bit depth, line averaging eight times) every 3 min for a period of 3 hr. Embryonic position of the recorded field was assessed morphologically at the end of the imaging session. Image stacks were processed using custom-made Matlab scripts to measure centroid localization of nucleus, nucleo-cytoplasmic ratio of GFP-Smad2 intensity, distance from the margin, and cell tracks (see Supplementary file 1). Channels of stacked confocal images were split in ImageJ and saved as grayscale TIFF image sequences (8-bit for H2B-RFP, 16-bit for GFP-Smad2). H2B-RFP images were further converted to binary images, by applying a threshold using Otsu's method. Objects smaller than 20 pixels were then removed, and the resulting images were segmented using the Moore-Neighbor tracing algorithm modified by Jacob's stopping criteria. The centroid location and area of each nucleus were then extracted. The binary image of the H2B-RFP was used as a mask on the corresponding GFP-Smad2 image to extract nuclear only- and cytoplasmic only GFP-Smad2 signals. The ratio between the mean nuclear GFP intensity and the mean cytoplasmic GFP intensity was used to define Smad2 activity at the single cell level. In MZoep mutants (Nodal insensitive), the mean NC ratio value is 1.19 \u00b1 0.07. Cell tracking was perfomed using the nearest-neighbor strategy based on the centroid position of each nucleus at different time frames. The nearest centroid of the next frame was selected as being part of the cell track if it was less than 10 pixels apart. This process was reiterated through all the frames to generate cell tracks. Based on visual checks of the resulting tracks, \u223c90% of the tracks are estimated to be accurate. The distance between each centroid and the margin was measured at each time point. The position of the margin was defined using a user interface: the maximal projection of the H2B-RFP channel was displayed and six reference points were manually selected along the yolk-blastoderm boundary. The whole margin position was then extrapolated by fitting a polynomial curve. The fitted function was used to determine the distance of each centroid from the margin.\n\n### Smad2/FoxH1 chromatin immuno-precipitation\n\nEmbryos for Smad2 and FoxH1 ChIP were collected at dome stage after 5 pg squint mRNA injection or after treatment with the Nodal signaling inhibitor SB505124 (Sigma S4696) at 20 \u00b5M final. For FoxH1 ChIP, embryos were injected with 5 pg of FoxH1-flag mRNA at 1-cell stage, and anti-flag antibody was used for the pull down.\n\nFor each ChIP, 800 embryos were collected and fixed in 1.85% formaldehyde for 15 min at 20\u00b0C. Formaldehyde was quenched by adding glycine to a final concentration of 0.125 M. Embryos were rinsed three times in ice-cold PBS, and resuspended in cell lysis buffer (10 mM Tris-HCl pH7.5/10 mM NaCl/0.5% NP40) and lysed for 15 min on ice. Nuclei were collected by centrifugation, resuspended in nuclei lysis buffer (50 mM Tris-HCl pH 7.5/10 mM EDTA/1% SDS) and lysed for 10 min on ice. Samples were diluted three times in IP dilution buffer (16.7 mM Tris-HCl pH 7.5/167 mM NaCl/1.2 mM EDTA/0.01% SDS) and sonicated to obtain fragments of \u223c500 bp. Triton X-100 was added to a final concentration of 0.75% and the lysate was incubated overnight while rotating at 4\u00b0C with 25 \u00b5l of protein G magnetic Dynabeads (Invitrogen) pre-bound to an excess amount of antibody. Antibodies used were anti-FLAG M1 (Sigma F3165), anti-Smad2/3 (Invitrogen, Grand Island, NY 51\u20131300). Bound complexes were washed six times with RIPA (50 mM HEPES pH7.6/1 mM EDTA/0.7% DOC/1% Igepal/0.5 M LiCl) and TBS and then eluted from the beads with elution buffer (50 mM NaHCO3/1% SDS). Crosslinks were reversed overnight at 65\u00b0C and DNA purified by the QIAquick PCR purification kit (Qiagen). Libraries were prepared according to the Illumina sequencing library preparation protocol and sequenced on an Illumina HiSeq 2000. ChIP-seq reads were mapped to the zebrafish genome (UCSC Zv9 assembly) and peaks were called using MACS (Zhang et al., 2008).\n\n### Nodal signaling modeling\n\nThe goal of modeling Nodal signaling is to predict the range of expression of Nodal target genes in the embryonic blastula and to analyze the key parameters regulating gene response.\n\nEquations 1\u20133 were used to model the kinetics of Nodal signaling.\n\n$$\n\\frac{\\partialN}{\\partialt}=P(x,t)+D_{N}.\\nabla^{2}.N\u2212k_{1}.N,\n$$\n\n\n\n$$\n\\frac{dS_{p}}{dt}=k_{2}.N.S\u2212k_{3}.S_{p},\n$$\n\n\n\n$$\n\\frac{dRNA_{target}}{dt}=\\alpha.\\frac{S_{p}^{n}}{K_{d}^{n}+S_{p}^{n}}\u2212\\beta.RNA_{target}.\n$$\n\nP: Production rate of Nodal from the source, where $P=\\gamma.\\frac{t}{1+t}$ when x \u2264 25 \u00b5m and P = 0 when x > 25 \u00b5m.\n\nDN: Diffusion coefficient of Nodal.\n\nk1: clearance rate of Nodal.\n\nk2: activation (phosphorylation) rate of Smad2.\n\nk3: de-activation (de-phosphorylation) rate of Smad2.\n\n\u03b1: maximal transcription rate of Nodal target gene.\n\n\u03b2: degradation rate of Nodal target gene.\n\nKd: effective dissociation constant of activated Smad2 for target gene enhancer.\n\nn: Hill coefficient.\n\nWe assume that the pool of total Smad2 remains constant such that Stotal = S + Sp.\n\nWe used two different scenarios to reflect the experimental set up: the \u2018homogenous\u2019 scenario, where ectopic Nodal ligand is injected uniformly into a Nodal depleted embryo, and the \u2018spatial gradient\u2019 scenario, where Nodal is produced locally on one side of a one-dimension column of cells.\n\n#### Parameterization\n\nKnown parameters: DN: 1.5 \u00b5m2/s; k1: 1 \u00d7 10\u22124 s\u22121 (M\u00fcller et al., 2012); Estimated parameters: Smad2total: 25 nM/cell (Schmierer et al., 2008); Unknown parameters: \u03b3, k2, k3, \u03b1, \u03b2, Kd, n.\n\n#### Homogenous model\n\nIn this model, we assume that the exogenous Nodal concentration is uniformly distributed in the embryo and reaches steady-state shortly after injection. In this case, $\\frac{\\partialN}{\\partialt}=0;$\n\nInitial conditions:\n\n$$\nN=0,\u20095,\u200910,\u200925,\u200950\u2009or\u2009100\u2009nM,\n$$\n\n\n\n$$\nRNA_{target}=0.\n$$\n\nUnknown parameters were then retrieved through minimization of the residual sum of squared errors for the fitted model using the Nelder-Mead simplex method (using a constrained version of the MATLAB function fminsearch) using three different initial guesses spanning the parameter space. The best set of parameters was selected according to the highest coefficient of determination. Parameter confidence intervals of 95% were computed from the residuals and the coefficient covariance.\n\n#### Spatial gradient model\n\nIn this model, we consider the behavior of a column of cells spanning the vegetal\u2013animal axis of the embryo (500 \u00b5m in length) during a 3-hr time span. Parameter values for Smad2 activation and gene induction were taken from the homogenous model. The unknown parameter left in this spatial model is \u03b3, the maximal production of Nodal. As expected for a morphogen molecule, the system is very sensitive to the levels of Nodal. We thus manually set \u03b3 to a value where the simulated expression pattern of the well-characterized Nodal target ntl fits the in vivo distribution (\u03b3 = 0.03 nM/s). Each gene was then individually simulated using its specific parameters, and its range of expression was defined as the distance from the source where the expression drops below 100 counts.\n\nInitial conditions:\n\n$$\nN=\u20090;\u2009S\u2009=\u2009S_{tot};\u2009RNA_{target}\u2009=\u20090;\n$$\n\n#### Boundary conditions\n\n$$\n\\frac{\\partialN}{\\partialx}_{|x=0}=\\frac{\\partialN}{\\partialx}_{|x=500}=0.\n$$\n\nSimulations were solved numerically using the MATLAB pdepe function.\n\n#### Delay model\n\nIn order to model the delay in gene induction, we introduced a co-factor Y required to activate target gene transcription in cooperation with Smad2. In this case,\n\n$$\n\\frac{dRNA_{target}}{dt}=\u2009\\alpha.\\frac{Y.S_{p}}{K_{d}^{2}+\u2009Y.S_{p}}\u2212\u2009\\beta.RNA_{target},\n$$\n\nand\n\n$$\n\\frac{dY}{dt}=k_{4},\n$$\n\nwith k4 = 4.6 \u00d7 10\u22125 nM/s and with initial conditions at T0 = 0, Y0 = 0. To abolish delay, we solved (3) with initial conditions where at T0, Y0 = Yfinal.\n\n### Model comparison and complexity\n\nMost models of morphogen signaling and interpretation use large numbers of parameters and can thus suffer from overfitting. We thus considered six different models with different numbers of parameters to describe Smad2-dependent transcription of Nodal target genes and compared the probability that these models can generate the data.\n\nThe same rate of Smad2 activation is shared among these models:\n\n$$\n\\frac{dS_{p}}{dt}=k_{1}.N.S\u2212k_{2}.S_{p},\n$$\n\nwhere Sp, N and S are phosphorylated Smad2, Nodal and non-phosphorylated Smad2 concentrations, respectively, with k1 = 3.1 \u00d7 10\u22126 nM\u22121s\u22121 and k2 = 1.8 \u00d7 10\u22124 s\u22121.\n\nAll models for RNA production have two terms: a pSmad2-dependent mRNA transcription rate, and a linear mRNA degradation rate.\n\nIn Model 1, we assume that the effective transcription rate is linearly proportional to pSmad2 concentration:\n\n$$\nM1:\u2009\\frac{dRNA}{dt}=\\alpha.S_{p}\u2212\\beta.RNA.\n$$\n\nIn Model 2, we assume that the transcription rate is regulated by a dissociation constant for pSmad2:\n\n$$\nM2:\u2009\\frac{dRNA}{dt}=\\frac{S_{p}}{K_{d}+S_{p}}\u2212\\beta.RNA.\n$$\n\nModel 3 is similar to Model 2, with the addition of a maximum transcription rate coefficient:\n\n$$\nM3:\u2009\\frac{dRNA}{dt}=\\alpha.\\frac{S_{p}}{K_{d}+S_{p}}\u2212\\beta.RNA.\n$$\n\nModel 4 is similar to Model 2, with the addition of a Hill coefficient and a fixed transcription rate coefficient.\n\n$$\nM4:\u2009\\frac{dRNA}{dt}=A.\\frac{S_{p}^{n}}{K_{d}^{n}+S_{p}^{n}}\u2212\\beta.RNA,\n$$\n\nA = 0.1 count/s, corresponding to the mode value of the maximal transcription rate coefficient distribution of our fully developed model (see Table 1).\n\nModel 5 is similar to Model 4, except that in this case, the maximal transcription rate coefficient is let free while the dissociation constant is fixed:\n\n$$\nM5:\u2009\\frac{dRNA}{dt}=\\alpha.\\frac{S_{p}^{n}}{C^{n}+S_{p}^{n}}\u2212\\beta.RNA,\n$$\n\nC = 6.7 nM, corresponding to the mode value of the dissociation constant distribution of our fully developed model (see Table 1).\n\nFinally, Model 6 is the fully developed model:\n\n$$\nM6:\u2009\\frac{dRNA}{dt}=\\alpha.\\frac{S_{p}^{n}}{K_{d}^{n}+S_{p}^{n}}\u2212\\beta.RNA.\n$$\n\nAssuming that our NanoString measurements {yi} are noisy with a standard deviation of {\u03c3i}, we can consider yi as a Gaussian random variable with a mean value f(ti;\u03b8) of the underlying model containing a vector of parameters \u03b8 and a variance \u03c3i2 (Bialek, 2012). We thus have,\n\n$$\nP(y_{i}|t_{i},\\theta)=\\frac{1}{\\sqrt{2\\pi\\sigma_{i}^{2}}}exp[\u2212\\frac{(y_{i}\u2212f(t_{i};\\theta))^{2}}{2\\sigma_{i}^{2}}],\n$$\n\nand\n\n$$\nP({y_{i}}|{t_{i}},\\theta)=\\prodi=1NP(y_{i}|t_{i},\\theta).\n$$\n\nThe probability of the data given the underlying model is\n\n$$\nP({t_{i},y_{i}}|\\theta)=[\\prodi=1NP(y_{i}|t_{i},\\theta)][\\prodiP(t_{i})].\n$$\n\nGiven\n\n$$\n\u03c7^{2}=\\sumi|\\frac{(y_{i}\u2212f(t_{i};\\theta)}{\\sigma_{i}}|^{2},\n$$\n\n\n\n$$\nP({t_{i},y_{i}}|\\theta)=exp[\\sumi=1NlnP(t_{i})\u2212\\frac{1}{2}\\sumi=1Nln(2\\pi\\sigma_{i}^{2})\u2212\\frac{1}{2}\u03c7^{2}].\n$$\n\nTherefore minimizing \u03c72 by fitting the parameters \u03b8 increases the probability that the model could have produced the data. However, different classes of models with different numbers of parameters whose values are unknown have to be considered. To determine the probability of the data given a class of models with unknown K parameters, an integration over all the possible values of the parameters, weighted by some prior knowledge, has to be computed\n\n$$\nP({t_{i},y_{i}}|class)=\\int^{\u2009}d^{K}\\thetaP(\\theta)P({t_{i},y_{i}}|\\theta)\n$$\n\n\n\n$$\n\u2009=\\int^{\u2009}d^{K}\\thetaP(\\theta)exp[\u2212\\frac{1}{2}\\sumi=1Nln(2\\pi\\sigma_{i}^{2})\u2212\\frac{1}{2}\u03c7^{2}(\\theta;{t_{i},y_{i}})][\\prodnP(t_{n})],\n$$\n\nwhere P(\u03b8) is the probability of the a priori distribution of the parameters.\n\n\u03c72 is proportional to N, and we can write\n\n$$\nP({t_{i},y_{i}}|class)=exp[\u2212\\frac{1}{2}\\sumi=1Nln(2\\pi\\sigma_{i}^{2})][\\prodnP(t_{n})]\\int^{\u2009}d^{K}\\thetae^{\u2212Nf(\\theta)},\n$$\n\nwhere\n\n$$\nf(\\theta)=\\frac{1}{2N}\u03c7^{2}(\\theta;{t_{i};y_{i}})\u2212\\frac{1}{N}ln\u2009P(\\theta).\n$$\n\nWe use a saddle point approximation such that\n\n$$\n\\int^{\u2009}d^{K}\\thetae^{\u2212Nf(\\theta)}\u2248e^{\u2212Nf(\\theta^{\u2217})}(2\\pi)^{\\frac{K}{2}}exp[\u2212\\frac{1}{2}ln\u2009det(NH)],\n$$\n\nwhere \u03b8* is the value at which f(\u03b8) is minimized, and H is the Hessian matrix of the second derivatives at this point. Taking the negative log probability of the data given the model class, we have\n\n$$\n\u2212ln\u2009P({t_{i},y_{i}}|class)\u2248\\sumi=1Nln(2\\pi\\sigma_{i}^{2})\u2212\\sumi=1Nln\u2009P(t_{i})+\\frac{1}{2}\u03c7_{min}^{2}+ln\u2009P(\\theta^{\u2217})\u2212\\frac{K}{2}ln\u20092\u2009\\pi+\\frac{1}{2}ln\u2009det(NH).\n$$\n\nSince H is a K \u00d7 K matrix, $det(NH)=N^{K}det(H)$, and we finally have\n\n$$\n\u2212ln\u2009P({t_{i},y_{i}}|class)\u2248\\sumi=1Nln(2\\pi\\sigma_{i}^{2})\u2212\\sumi=1Nln\u2009P(t_{i})+\\frac{1}{2}\u03c7_{min}^{2}+\\frac{K}{2}ln\u2009N+\\frac{1}{2}ln\u2009det(H)+ln\u2009P(\\theta^{\u2217})\u2212\\frac{K}{2}ln\u20092\\pi.\n$$\n\nThe negative log probability measures the length of the shortest code for the data being generated given the class of models. This length depends on the sample size of the data, the number of parameters, the quality of the fit, and some prior on the parameters that we consider flat in our case. Therefore, the model giving the smallest value of the code is to be considered the best model explaining the data given the sample size. The NanoString data and associated noise (which is \u223c10% of the count value based on the analysis of the positive spikes across a cartridge) are identical in all our models, so we are left to compare\n\n$$\nC_{MX}=\\frac{1}{2}\u03c7_{min}^{2}+\\frac{K}{2}ln\u2009N+\\frac{1}{2}lndet(H)\u2212\\frac{K}{2}ln\u20092\u2009\\pi.\n$$\n\nCalculating the mean value across all genes, we found\n\nCM1 = 601.1\n\nCM2 = 767.6\n\nCM3 = 681.0\n\nCM4 = 264.3\n\nCM5 = 134.5\n\nCM6 = 204.1\n\nCM5 < CM6 < CM4 < CM1 < CM3 < CM2.\n\nThus, among all the six different models we considered, model M5 and M6 are the most probable models given the data, highlighting the importance of the maximal transcription rate.\n",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "8beae923-cfec-409a-aca8-24d91ae4b29b",
+      "submission_id": "af643841-a210-40e4-bd58-a99dd38afe6d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05042.033](https://doi.org/10.7554/eLife.05042.033)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cResponse to Nodal morphogen gradient is determined by the kinetics of target gene induction\u201d for consideration at eLife. Your article has been favorably evaluated by Janet Rossant (Senior editor), a Reviewing editor, and 2 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThere is uniform consensus that your study addressing the mechanisms transforming the graded distribution of Nodal into distinct RNA expression-pattern domains is solid and important. This topic is central in Developmental Biology and is highly relevant for a large number of other processes during later developmental stages in which Nodal and other secreted TGF-b molecules are involved. The subject and scope of the results reported in the paper thus fit very well the requirements from papers published in eLife.\n\nPlease address the following specific points (brought in order of appearance in the text; points 5 and 6 can be viewed as the major concerns).\n\n1) While convincing, the rescue of the MZsmad mutation by GFP-Smad2 appears incomplete as compared with the wild type and to the rescue by non-GFP version. If this really reflects the functionality of the protein, the authors should mention this point in the text.\n\n2) \u201cCells close to the margin tended to activate Smad2 early and reached the highest levels of activated Smad2\u201d (mentioned in the Results). In Figure 2E, the second and fourth cells from the margin do not appear to follow this rule. If they are exceptions, they should be replaced. Alternatively, instead of following one cell per distance, presenting the average of values measured from several adjacent cells in 50 micrometer intervals would probably provide a more convincing picture of what appears to be a correct conclusion.\n\n3) Figure 2D: the time interval between the 5 frames presented should be indicated in the figure legend. Additionally, for the panel to be informative, at least for several representative cells, the direction of the movement should be indicated.\n\n4) \u201cCells located farther away from the margin tended to activate Smad2 with a delay and the levels of activated Smad2 remained low\u201d (in the Results). In Figure 2G, it appears that at 3.5 hpf, Smad2 is activated in cells away from the margin (80 \u00b5M and further). Subsequently, this activation is gradually lost (what appears like inactivation from 4 to 5 hpf). This is also seen in some examples shown in Figure 2E as mentioned in point 3. The '3.5 hpf results' can be interpreted as either 'noise' or as a process of inactivation with time of cells away from the source. The latter explanation (activation followed by inactivation) could be discussed in the context of the ratchet model. If the authors consider the activation values at 3.5 hpf to signify noise, they should clearly state that in the text and indicate accordingly the range of relevant data Figure 2E\u2013G (starting from 4 hpf?).\n\n5) \u201cNtl was first faintly detected in a few cells on the presumptive dorsal side of the embryo at the midblastula stage. Subsequently, its expression domain intensified and progressively extended animally until the onset of gastrulation. By contrast, gsc expression initiated \u223c30 min later and remained confined to a narrow domain on the dorsal side\u201d. As shown in Figure 2H, the authors use in situ hybridization to compare the dynamics of transcription and spatial distribution of ntl and gsc transcripts. For the conclusion to be valid, the authors should show that the sensitivity of the method is identical for both genes. This could be done for example by injecting a concentration series of a gsc-ntl fused RNA, detecting it at 3 hpf (prior to endogenous gene activation) using ntl and gsc probes (used in the study) to detect the injected RNAs. Comparable sensitivity of both probes should be confirmed. Further, identical staining procedure (e.g., duration of color development) should be applied to both probes to validate the conclusion as above. While I believe the result will be the expected one (especially in light of the nanostring data) formally, based on this panel alone and the description of the procedure, the difference in timing and expression pattern could arise from relatively more efficient ntl detection. While not essential, double labeling within the same embryo would be even more convincing.\n\n6) Concerning Figure 3, the labeling of the host embryo as MZoep + Nodal should be changed into MZoep + nodal to indicated that the source of the Nodal is RNA. In that figure, GFP-Smad2 NC values at 5.5 hpf are interpreted by the authors to signify similar activation levels in the transplanted cells. It is possible, that cells transplanted into 3.5hpf embryos vs those transplanted into 4.5hpf embryos, could have experienced different levels of Nodal activation in the host. For example, it could in principle be that the Nodal level the transplanted cells are exposed to is higher in the \u201c3.5hpf experiment\u201d due to the protein expression dynamics derived from the injected RNA. To rule out this possibility, the authors could determine the N/C ratio of GFP-Smad2 at 4, 4.5 and 5 hpf as well. This experiment is suggested despite the statement that the cells do not remember the signal when transplanted into animal positions (as in Figure 3\u2013figure supplement 1) since high initial signaling could in principle cooperate with a later weaker signal.\n\n7) Figure 3\u2013figure supplement 1, statistical tests showing significance for panel A would make the statement more convincing.\n\n8) The authors state: \u201cThese analyses indicate that not only the Kd but also maximal transcription rate is a key determinant of gene-specific morphogen response...\u201d From Figure 7C and 7D, the Kd appears to have no effect on either expression rate or expression range. It is not clear therefore why the authors consider the Kd as a contributing parameter.\n\n9) In Figure 8B, bottom right panel, are the counts significantly higher following the earlier injection at the same developmental stage as those counts following a later injection? If so, the author should discuss this point. If the data exist, it would be interesting to discuss this point in the context of the genes analyzed in Figure 8\u2013figure supplement 1 as shown in the right panel.\n",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9ebae4f2-8419-43c5-9eb1-618ca9d657a1",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C1",
+      "claim": "Smad2 is an essential transducer of Nodal signaling during mesendoderm specification in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Smad2 is an essential transducer of Nodal signaling during mesendoderm specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through MZsmad2 mutant phenotype analysis showing absence of endoderm and mesoderm, rescue experiments with Smad2 expression, and loss of Nodal/Activin activity in MZsmad2 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "433e9e83-2ca6-4260-847c-d1158481fc50",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C2",
+      "claim": "MZsmad2 embryos lack endoderm and head and trunk mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Endoderm and head and trunk mesoderm are absent in MZsmad2 embryos, a phenotype very similar or identical to Nodal loss-of-function mutants (Figure 1C\u2013E) (Feldman et al., 1998; Gritsman et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed phenotype in MZsmad2 mutants shown in Figure 1E and compared to wild-type and MZoep mutants, with citation to previous Nodal mutant studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "4bcc051d-a9b1-4c12-aa58-2f088f5e561b",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C3",
+      "claim": "MZsmad2 mutants can be rescued by ubiquitous expression of wild-type Smad2 and GFP-Smad2.",
+      "claim_type": "EXPLICIT",
+      "source": "MZsmad2 mutants could be rescued by ubiquitous expression of wild-type Smad2 and GFP-Smad2 and the larval lethality of Zsmad2 mutants could be rescued to adulthood by a GFP-Smad2 transgene (Figure 1F\u2013H; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through injection of smad2 and gfp-smad2 mRNA into MZsmad2 embryos and transgenic rescue experiments shown in Figure 1F-H and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "25fce543-1e90-438c-9560-a79e29b39405",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C4",
+      "claim": "Neither Nodal nor Activin display any activity in MZsmad2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, neither Nodal nor Activin displayed any activity in MZsmad2 mutants (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by injection of squint (Nodal) and activin mRNA into MZsmad2 embryos with no phenotypic rescue, as depicted in Figure 1I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "fefb2db3-9265-438d-972c-1656d55746cd",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C5",
+      "claim": "The long-range target gene ntl is induced at both high and low levels of activated Smad2.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the spatio-temporal maps of Nodal target gene expression and Smad2 activity confirmed that the long-range target gene ntl was induced at both high and low levels of activated Smad2, whereas the expression of the short-range gene gsc correlated with high Smad2 levels and sustained Smad2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by comparing spatiotemporal maps of GFP-Smad2 nuclear accumulation with ntl and gsc expression patterns from in situ hybridization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "2b2ee58a-c72e-42f4-b182-b56e28b67fa9",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C6",
+      "claim": "The expression of the short-range gene gsc correlates with high Smad2 levels and sustained Smad2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the spatio-temporal maps of Nodal target gene expression and Smad2 activity confirmed that the long-range target gene ntl was induced at both high and low levels of activated Smad2, whereas the expression of the short-range gene gsc correlated with high Smad2 levels and sustained Smad2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by comparing spatiotemporal maps of GFP-Smad2 nuclear accumulation with ntl and gsc expression patterns from in situ hybridization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c07a77c0-a502-4bd0-b912-bcfc430c9979",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C7",
+      "claim": "GFP-Smad2 cells exposed to Nodal for 1 or 2 hours have similar NC ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-Smad2 NC ratios were similar in cells exposed to Nodal for either 1 or 2 hr (Figure 3B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from transplantation experiments where GFP-Smad2 cells were exposed to Nodal for different durations, shown in Figure 3B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "fbdf732b-fbc7-465c-8570-be36032e2a04",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C8",
+      "claim": "The long-range gene ntl is expressed after both 1 and 2 hours of exposure to Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the long-range gene ntl was expressed both after one or 2 hr of exposure to Nodal (Figure 3D,G), the expression of the short-range gene gsc was only detected after 2 hr of exposure (Figure 3C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through transplantation experiments with RNA in situ hybridization for ntl after 1 and 2 hours of Nodal exposure, shown in Figure 3D,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "f59c1a1f-2787-473b-8b8c-f334a3af7d86",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C9",
+      "claim": "The short-range gene gsc is only expressed after 2 hours of exposure to Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the long-range gene ntl was expressed both after one or 2 hr of exposure to Nodal (Figure 3D,G), the expression of the short-range gene gsc was only detected after 2 hr of exposure (Figure 3C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through transplantation experiments with RNA in situ hybridization for gsc after 1 and 2 hours of Nodal exposure, shown in Figure 3C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "917dcd4d-5f05-4c4c-aa09-07a1b426636f",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C10",
+      "claim": "The level of Smad2 activity at a given time does not fully predict target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are inconsistent with the strictest forms of the threshold model\u2014the level of Smad2 activity at a given time predicts target gene expression\u2014and reveal that the duration of signaling influences morphogen interpretation primarily at the level of target gene induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that similar Smad2 activity levels at 1 and 2 hours result in different target gene expression patterns (ntl vs gsc).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "e22610af-3660-4716-aae1-08d5ccc12a2d",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C11",
+      "claim": "The duration of signaling influences morphogen interpretation primarily at the level of target gene induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are inconsistent with the strictest forms of the threshold model\u2014the level of Smad2 activity at a given time predicts target gene expression\u2014and reveal that the duration of signaling influences morphogen interpretation primarily at the level of target gene induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transplantation experiments showing that duration of Nodal exposure affects target gene expression independently of Smad2 activity levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "d4a4b939-fb5c-49d8-ad26-8f0918111f36",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C12",
+      "claim": "Smad2 activity progressively decreases and reaches basal levels after approximately 60 minutes when cells are moved from high to low Nodal concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Inconsistent with the ratchet model, Smad2 activity progressively decreased and reached basal levels after \u223c60 min (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by transplanting GFP-Smad2 cells from the margin to the animal pole and tracking NC ratio over time, shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "1dfa549b-f948-4dbc-b5bf-78b83cae2bab",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C13",
+      "claim": "The expression of the long-range gene ntl disappears over time after cells are moved from high to low Nodal concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the expression of the long-range gene ntl disappeared over time (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through transplantation experiments with RNA in situ hybridization for ntl at different time points after transplantation, shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "3ca05692-84ab-451c-a860-c039fae7202e",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C14",
+      "claim": "Pathway activity and target gene expression cannot be maintained for extended periods after transient exposure to Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pathway activity and target gene expression cannot be maintained for extended periods after transient exposure to Nodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transplantation experiments showing that Smad2 activity and ntl expression decrease when cells are moved from high to low Nodal environments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "d4c87864-151c-41af-867c-8d45bbce59c7",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C15",
+      "claim": "Increasing Nodal levels induce higher levels of pSmad2 until a plateau is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the kinetic model and in agreement with previous studies (Zi et al., 2011), increasing Nodal levels induced higher levels of pSmad2 until a plateau was reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by Western blot analysis of pSmad2 levels after injection of different concentrations of recombinant Nodal protein, with citation to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "8e9818e6-f691-444b-bdef-27ccf4efa4d0",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C16",
+      "claim": "High Nodal levels lead to very rapid activation of Smad2, reaching a quasi-steady state after 1 hour.",
+      "claim_type": "EXPLICIT",
+      "source": "High Nodal levels lead to a very rapid activation of Smad2, reaching a quasi-steady state after 1 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by time course Western blot analysis of pSmad2 levels after injection of high concentrations of recombinant Nodal protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "25e624de-56a0-403e-bf3f-07a6b09394c6",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C17",
+      "claim": "Low Nodal levels induce lower levels of Smad2 activation and quasi-steady state Smad2 activation is only reached 2 hours after ligand exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, low Nodal levels induced lower levels of Smad2 activation and quasi-steady state Smad2 activation was only reached 2 hr after ligand exposure (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by time course Western blot analysis of pSmad2 levels after injection of low concentrations of recombinant Nodal protein, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "a346acdc-5eb5-4bf5-8a2e-c207866641d6",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C18",
+      "claim": "Phosphorylation rates for Smad2 activation range from 2.3 \u00d7 10\u22126 to 4.0 \u00d7 10\u22126 nM\u22121s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For Smad2 activation, we found phosphorylation rates (range from 2.3 \u00d7 10\u22126 to 4.0 \u00d7 10\u22126 nM\u22121s\u22121) and turnover rates (range from 0.9 \u00d7 10\u22124 to 2.7 \u00d7 10\u22124 s\u22121) similar to previous studies performed in cell culture and Xenopus animal cap cells (Bourillot et al., 2002; Schmierer and Hill, 2005; Schmierer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to experimental pSmad2 data, with citation to previous studies showing similar values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "4fa91d6c-1b6b-4a58-bc97-cc34a857caca",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C19",
+      "claim": "Turnover rates for Smad2 activation range from 0.9 \u00d7 10\u22124 to 2.7 \u00d7 10\u22124 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For Smad2 activation, we found phosphorylation rates (range from 2.3 \u00d7 10\u22126 to 4.0 \u00d7 10\u22126 nM\u22121s\u22121) and turnover rates (range from 0.9 \u00d7 10\u22124 to 2.7 \u00d7 10\u22124 s\u22121) similar to previous studies performed in cell culture and Xenopus animal cap cells (Bourillot et al., 2002; Schmierer and Hill, 2005; Schmierer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to experimental pSmad2 data, with citation to previous studies showing similar values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c5e09542-5f12-46fa-a126-b0d854ebbf5c",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C20",
+      "claim": "47 genes were identified as direct targets of Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified 47 direct targets of Nodal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identified using three criteria: increased expression upon Nodal exposure, induction in presence of cycloheximide, and Smad2 binding near transcription start sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "96c3e9ae-4180-46f6-b8bf-fed95a25aaa9",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C21",
+      "claim": "ntl is induced at low Nodal concentrations and reaches high NanoString counts (~2500) at high Nodal concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ntl, a typical long-range target, was induced at low Nodal concentrations and its expression reached high NanoString counts (\u223c2500) at high Nodal concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by NanoString analysis of ntl expression at different Nodal concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "49cd527a-fb85-4e21-a44b-fc91a53cf1b0",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C22",
+      "claim": "The induction of ntl expression is rapid, with mRNA accumulating within 30 minutes after injection of intermediate levels of Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of ntl expression was rapid: ntl mRNA accumulated within 30 min after injection of intermediate levels of Nodal and continuously increased over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by NanoString time course analysis of ntl expression after Nodal injection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c5a8493d-1665-45ac-a1e2-5ccfc6b4cce5",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C23",
+      "claim": "gsc requires higher concentrations of Nodal to be detected above background levels compared to ntl.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, gsc, a short-range Nodal target, required higher concentrations of Nodal to be detected above background levels, and its NanoString counts at high Nodal concentrations were 25 times lower than those of ntl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by NanoString analysis comparing gsc and ntl expression at different Nodal concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "a3d79fe1-6e4b-40bf-9399-0a2c346ccc19",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C24",
+      "claim": "gsc NanoString counts at high Nodal concentrations are 25 times lower than those of ntl.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, gsc, a short-range Nodal target, required higher concentrations of Nodal to be detected above background levels, and its NanoString counts at high Nodal concentrations were 25 times lower than those of ntl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by NanoString analysis comparing gsc and ntl expression at high Nodal concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "1c19a54c-51bf-4e78-8f01-b713d5e2efea",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C25",
+      "claim": "The induction of gsc is slow, with mRNA accumulation only detected after 60 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of gsc was slow: mRNA accumulation was only detected after 60 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by NanoString time course analysis of gsc expression after Nodal injection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "cc797bc0-6762-4fa7-890a-4f00c40d3ff5",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C26",
+      "claim": "Transcription rates for Nodal target genes vary widely, ranging from 0.0016 to 9.3 counts/s with a mean of 0.54 \u00b1 1.66.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflecting the different transcript levels measured by NanoString, transcription rates varied widely between genes, ranging from 0.0016 to 9.3 counts/s (mean 0.54 \u00b1 1.66).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to NanoString data for 47 direct Nodal target genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c3a1af21-abbf-41ec-a44b-b9b306189f9a",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C27",
+      "claim": "Kds for Nodal target genes range from 0.73 to 42 nM, with more than 75% of Kds between 5 and 10 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Kds only ranged from 0.73 to 42 nM, with more than 75% of Kds between 5 and 10 nM (Figure 5\u2014source data 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to NanoString data for 47 direct Nodal target genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "46fd39c9-576c-4473-a8cb-35b448027c8e",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C28",
+      "claim": "The Kd of Smad2 for ntl is 4.9 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found Kds of Smad2 for ntl and gsc of 4.9 nM and 5.4 nM, respectively, while the transcription rates were 0.67 counts/s for ntl and 0.032 counts/s for gsc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to NanoString data for ntl.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "1d2d475b-96a4-4934-8345-ca2e652db86d",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C29",
+      "claim": "The Kd of Smad2 for gsc is 5.4 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found Kds of Smad2 for ntl and gsc of 4.9 nM and 5.4 nM, respectively, while the transcription rates were 0.67 counts/s for ntl and 0.032 counts/s for gsc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to NanoString data for gsc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "1aaea995-aea4-483d-a8a5-f1a289c12988",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C30",
+      "claim": "The transcription rate for ntl is 0.67 counts/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found Kds of Smad2 for ntl and gsc of 4.9 nM and 5.4 nM, respectively, while the transcription rates were 0.67 counts/s for ntl and 0.032 counts/s for gsc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to NanoString data for ntl.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "f87fd082-d01d-47cc-ae38-845d8b279784",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C31",
+      "claim": "The transcription rate for gsc is 0.032 counts/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found Kds of Smad2 for ntl and gsc of 4.9 nM and 5.4 nM, respectively, while the transcription rates were 0.67 counts/s for ntl and 0.032 counts/s for gsc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by fitting the kinetic model to NanoString data for gsc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "232cfb0d-5819-4539-9ad8-de5dd46c741a",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C32",
+      "claim": "Only very low gsc RNA counts (~50) can be detected 1 hour after Nodal exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences explain why only prolonged exposure to Nodal induced gsc in the test of threshold model (Figure 3): only very low gsc RNA counts (\u223c50) can be detected 1 hr after Nodal exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low transcription rate of gsc and NanoString measurements after 1 hour of Nodal exposure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "3fa51981-6343-405f-931a-1cca2f384a28",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C33",
+      "claim": "ntl is induced at high levels (~1000 counts) after 1 hour of Nodal exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ntl, which was rapidly induced in the test of the threshold model, was induced at high levels (\u223c1000 counts) after 1 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured by NanoString analysis of ntl expression 1 hour after Nodal exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "b4c6a010-9ea3-4cc9-8e23-9cd671e23e56",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C34",
+      "claim": "The kinetic model recapitulates the spatiotemporal pattern of activated Smad2 observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these conditions, the spatiotemporal pattern of activated Smad2 correlated well with the endogenous pattern of Smad2 activation (Figure 5B): a short-range low-amplitude gradient was transformed over time into a long-range high-amplitude gradient, as observed in vivo for the GFP-Smad2 activity gradient (Figure 2F,G) (Harvey and Smith, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing model simulations with experimental GFP-Smad2 NC ratio measurements over time and space, shown in Figures 2F,G and 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "4e2083fe-b403-4483-861c-bf02ecc5cef1",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C35",
+      "claim": "In simulations, ntl expression begins in cells close to the margin 45 minutes after ligand production starts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in our simulations, ntl expression began in cells close to the margin 45 min after ligand production started, and the range of ntl continuously increased and reached cells located more than 100 \u00b5m away from the margin after 3 hr (Figures 2H, 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Generated by running the kinetic model with ntl-specific parameters and comparing to in vivo expression patterns shown in Figures 2H and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "bcb81914-69bc-49a5-ac21-637191540896",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C36",
+      "claim": "The range of ntl expression reaches cells located more than 100 \u00b5m away from the margin after 3 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in our simulations, ntl expression began in cells close to the margin 45 min after ligand production started, and the range of ntl continuously increased and reached cells located more than 100 \u00b5m away from the margin after 3 hr (Figures 2H, 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Generated by running the kinetic model with ntl-specific parameters and comparing to in vivo expression patterns shown in Figures 2H and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "028ee80e-bbee-439e-9a4a-83ed5d354acf",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C37",
+      "claim": "gsc expression is delayed and its range of expression is confined to cells close to the source.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, gsc expression was delayed and its range of expression was confined to cells close to the source (Figures 2H, 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Generated by running the kinetic model with gsc-specific parameters and comparing to in vivo expression patterns shown in Figures 2H and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "1a84e587-18c8-4a63-9ca3-ec81ffaccd4d",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C38",
+      "claim": "foxa3 mRNA rapidly accumulates at high levels up to four cell tiers (~60 \u00b5m) from the source and extends up to 80\u2013100 \u00b5m by the onset of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the simulations, foxa3 mRNA rapidly accumulated at high levels up to four cell tiers (\u223c60 \u00b5m) from the source and then extended up to 80\u2013100 \u00b5m by the onset of gastrulation (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by RNA fluorescent in situ hybridization at different time points and compared to model predictions, shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "04db24f7-bb78-4df9-9f0f-8e1604c2582f",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C39",
+      "claim": "efnb2a mRNA readily accumulates but is expressed in a narrower domain than foxa3.",
+      "claim_type": "EXPLICIT",
+      "source": "efnb2a mRNA also readily accumulated but was expressed in a narrower domain, as predicted from the simulations (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by RNA fluorescent in situ hybridization at different time points and compared to model predictions, shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "fa2ba74c-eb4f-4820-95c3-05e5c10819e8",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C40",
+      "claim": "Genes that are highly induced by Nodal generally display a long range of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the simulations, we found that genes that are highly induced by Nodal generally display a long range of expression (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing maximal expression levels from NanoString data with simulated spatial ranges, shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "5a38021e-666c-4199-95b5-836f7cc749cd",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C41",
+      "claim": "The maximal transcription rate is the best predictor of gene expression range among the kinetic parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the maximal transcription rate, not the Kd or the degradation rate, was the best predictor of gene expression range (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by scatter plot analysis comparing different kinetic parameters with expression range, shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "5516e606-9889-482a-a790-da283b7b3d03",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C42",
+      "claim": "The maximal transcription rates for foxa3 and gsc differ by a factor of 20.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while the degradation rate, Kd and Hill coefficient for the long-range gene foxa3 and the short-range gene gsc are very similar (Figure 5\u2014source data 7), their maximal transcription rate, and therefore their maximal level of expression, differ by a factor of 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by comparing fitted parameters for foxa3 and gsc from the kinetic model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "ece8dadb-82c1-4e5d-aafc-3165d37d5204",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C43",
+      "claim": "A delay in gene induction can reduce the range of target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations revealed not only the expected delay but also a reduced range of target gene induction: a long-range gene could be transformed into a short-range gene by introducing a delay in gene induction (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by extending the kinetic model with a co-factor that delays gene induction and comparing simulations with and without the delay, shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "e412dd49-2006-421c-8556-aaadb3895f5e",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C44",
+      "claim": "efnb2b is induced slowly after Nodal exposure at 3.5 hpf but more rapidly after exposure at 4.5 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when Nodal was injected at 3.5 hpf, efnb2b was only induced after approximately 2 hr. By contrast, when Nodal was injected at 4.5 hpf, the delay in efnb2b induction was reduced by more than 30 min (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by NanoString time course analysis of efnb2b expression after Nodal injection at different developmental stages, shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "1795b52d-3ac2-4234-ae8e-72b66892c851",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C45",
+      "claim": "efnb2b expression is detected only late (6 hpf) and at a short range (5 cell tiers).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, and as predicted by the delayed induction model, efnb2b expression in the embryo was detected only late (6 hpf) and at a short range (5 cell tiers) (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by RNA fluorescent in situ hybridization at different time points, shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "b62fa7cc-3871-492f-8e1c-0d00a409f119",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C46",
+      "claim": "bra can only be induced shortly before gastrulation and is expressed at low levels and at a short range.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the Nodal target gene bra (Martin and Kimelman, 2008) could only be induced shortly before gastrulation and, as predicted by the model, was expressed at low levels and at a short range (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by RT-qPCR and RNA fluorescent in situ hybridization at different developmental stages, shown in Figure 8\u2014figure supplement 2, with citation to previous study identifying bra as a Nodal target.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "25f899e9-061f-4aef-b4d5-bdd044c5e20a",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C47",
+      "claim": "The kinetics of target gene induction is a major determinant of morphogen interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach reveals that the kinetics of target gene induction is a major determinant of morphogen interpretation and suggests that a kinetic model of morphogen interpretation is better suited for the Nodal morphogen system than the prominent threshold and ratchet models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined results of spatiotemporal mapping, transplantation experiments, NanoString analysis, and kinetic modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "27e8a723-63e5-4671-86b9-859104a2f250",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C48",
+      "claim": "A target gene can be induced rapidly and at a long range by high transcription rate, high Smad2 affinity and early onset of induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a target gene can be induced rapidly and at a long range by high transcription rate, high Smad2 affinity and early onset of induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the kinetic model and experimental data showing how different parameters affect gene expression range.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "17c45553-7b7c-495f-8b55-807330f79557",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C49",
+      "claim": "Low affinity for Smad2, low transcription rate or late onset of induction generate short-range gene expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, low affinity for Smad2, low transcription rate or late onset of induction generate short-range gene expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the kinetic model and experimental data showing how different parameters affect gene expression range.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "0ce32371-894c-4fa2-a0dd-6eeeaf85b4da",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C50",
+      "claim": "In a rapidly developing system, the intrinsic rate of transcription of a target gene can be a major determinant of gene expression range.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results do not contradict such models but reveal that in a rapidly developing system, the intrinsic rate of transcription of a target gene can be a major determinant of gene expression range: high affinity binding sites cannot overcome the limits imposed on gene expression range by low levels of intrinsic transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that transcription rate is the best predictor of expression range and that high affinity alone is insufficient for long-range expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "ff3920ad-3ce1-4014-9d1c-815a208b9664",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C51",
+      "claim": "High affinity binding sites cannot overcome the limits imposed on gene expression range by low levels of intrinsic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results do not contradict such models but reveal that in a rapidly developing system, the intrinsic rate of transcription of a target gene can be a major determinant of gene expression range: high affinity binding sites cannot overcome the limits imposed on gene expression range by low levels of intrinsic transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of gsc and foxa3, which have similar Kds but very different transcription rates and expression ranges.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c1fc9721-6d69-43d3-9686-9cf0d9ed1f09",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C52",
+      "claim": "Delays in transcriptional onset can turn high affinity target genes into short-range genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, delays in transcriptional onset can turn high affinity target genes into short-range genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by simulations and experimental data showing that efnb2b and bra have delayed induction and short-range expression despite having Smad2 binding sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "5cf49239-2776-485f-9e2c-c65fe035d700",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C53",
+      "claim": "The Nodal morphogen gradient forms and extends through diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach reveals that the kinetics of target gene induction is a major determinant of morphogen interpretation and suggests that a kinetic model of morphogen interpretation is better suited for the Nodal morphogen system than the prominent threshold and ratchet models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the kinetic model which incorporates Nodal diffusion and previous experimental measurements of Nodal diffusion coefficients.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "77681576-d6d7-43f3-be98-e62b948e4e1e",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C54",
+      "claim": "Rapid phosphorylation generates a corresponding gradient of activated Smad2.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach reveals that the kinetics of target gene induction is a major determinant of morphogen interpretation and suggests that a kinetic model of morphogen interpretation is better suited for the Nodal morphogen system than the prominent threshold and ratchet models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by measuring pSmad2 levels at different Nodal concentrations and time points, and by GFP-Smad2 spatiotemporal mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "d403d4d3-d740-4109-a977-6c0c745bda10",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C55",
+      "claim": "The Nodal signaling pathway plays essential roles in animal development.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nodal signaling pathway plays essential roles in animal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific consensus about Nodal signaling function in development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c2b48be1-9a44-4165-8c14-4b7f85f31604",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C56",
+      "claim": "Nodal signaling induces and patterns mesendoderm and establishes left-right asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signaling induces and patterns mesendoderm and establishes left-right asymmetry (Conlon et al., 1994; Shen, 2007; Grande and Patel, 2009; Schier, 2009; Duboc et al., 2010; Shiratori and Hamada, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple previous studies on Nodal signaling functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "b8c2b968-d195-41b8-8e72-386a59d86157",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C57",
+      "claim": "The Nodal signaling pathway regulates dozens of genes, ranging from transcription factors to cytoskeletal components.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nodal signaling pathway regulates dozens of genes, ranging from transcription factors to cytoskeletal components, in order to pattern embryonic tissues (Bennett et al., 2007; Liu et al., 2011; Fodor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies identifying Nodal target genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "0e0b8f36-4661-495a-b56c-8661a3c41d8c",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C58",
+      "claim": "Nodal signaling is required for self-renewal as well as specification of endoderm and mesoderm in embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic stem cells, Nodal signaling is required for self-renewal as well as specification of endoderm and mesoderm (James et al., 2005; Vallier et al., 2005; Schier, 2009; Oshimori and Fuchs, 2012; Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies on Nodal signaling in embryonic stem cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "306d3d0e-994e-481e-882f-b875356d4975",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C59",
+      "claim": "Nodal signals can form concentration gradients and can act as morphogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Nodal signals can form concentration gradients and can act as morphogens (Chen and Schier, 2001; Williams et al., 2004; M\u00fcller et al., 2012, 2013; Xu et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies demonstrating Nodal gradient formation and morphogen activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "058f246e-d4d1-4323-a280-68ee40857c01",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C60",
+      "claim": "Cells close to the margin activate Nodal signaling earlier and at higher levels than cells at a distance from the margin.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells close to the margin activate Nodal signaling earlier and at higher levels than cells at a distance from the margin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by single-cell tracking of GFP-Smad2 NC ratio over time and space.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "45499d29-c964-42bd-a6ac-7d3f2f062af8",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C61",
+      "claim": "During the 1.5 hours from mid- to late-blastula stage, a low-amplitude short-range gradient of activated Smad2 is transformed into a high-amplitude long-range gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, during the 1.5 hr from mid- to late-blastula stage a low-amplitude short-range gradient of activated Smad2 is transformed into a high-amplitude long-range gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by time-lapse imaging and quantification of GFP-Smad2 NC ratio along the vegetal-animal axis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "2c532404-7718-4c35-a312-2a3ed3fd69e3",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C62",
+      "claim": "ntl was first faintly detected in a few cells on the presumptive dorsal side of the embryo at the mid-blastula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "ntl was first faintly detected in a few cells on the presumptive dorsal side of the embryo at the mid-blastula stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed by RNA in situ hybridization time course analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "69845c14-4b95-4cab-b0ea-8e7132a47654",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C63",
+      "claim": "ntl expression domain intensified and progressively extended animally until the onset of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, its expression domain intensified and progressively extended animally until the onset of gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed by RNA in situ hybridization time course analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "9288f506-4b52-4afb-aceb-567f0a77b0c8",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C64",
+      "claim": "gsc expression initiated approximately 30 minutes later than ntl and remained confined to a narrow domain on the dorsal side.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, gsc expression initiated \u223c30 min later and remained confined to a narrow domain on the dorsal side (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by RNA in situ hybridization time course analysis, shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "ea44fcbb-36a5-45b7-9786-09572be1b878",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C65",
+      "claim": "The position of cells relative to the margin does not change extensively until the onset of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting spatio-temporal map of Smad2 activity revealed that (1) the position of cells relative to the margin did not change extensively until the onset of gastrulation (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by single-cell tracking showing minimal displacement relative to the margin, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "cf2801cb-5d11-4923-a639-eb5a9750e786",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C66",
+      "claim": "A model in which the maximal transcription rate is gene-specific and Kd is identical for all genes performs better than a model where Kd is gene-specific and the maximal transcription rate is constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, multiple hypotheses analysis indicates that a model in which the maximal transcription rate is gene-specific and Kd is identical for all the genes performs better than a model where Kd is gene-specific and the maximal transcription rate is constant (see Nodal signaling modeling section in 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined by comparing different model formulations using Bayesian model comparison based on code length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "631e5bca-c0d3-461c-ba4e-5ef98b56c27d",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C67",
+      "claim": "The gsc probe is less sensitive at low concentrations compared to the ntl probe.",
+      "claim_type": "EXPLICIT",
+      "source": "The gsc probe is less sensitive at low concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by injecting ntl-gsc fusion mRNA at different concentrations and comparing signal intensities from gsc and ntl probes, shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "02a1b3c1-745e-4bbc-81f8-ee05b7283bff",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C68",
+      "claim": "The \u03b2-actin::GFP-Smad2 transgene rescues smad2/smad2 adult lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-actin::GFP-Smad2 transgene rescues smad2/smad2 adult lethality",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by crossing smad2/+ fish to smad2/+; Tg(GFP-Smad2)/+ fish and recovering adult smad2/smad2 fish only when they carry the GFP-Smad2 transgene, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "6013583c-2f0b-46cb-a42e-9bbe674a1807",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C69",
+      "claim": "The effective diffusion coefficients and clearance rates of Nodals have been experimentally determined.",
+      "claim_type": "EXPLICIT",
+      "source": "The effective diffusion coefficients and clearance rates of Nodals have been experimentally determined (M\u00fcller et al., 2012), but other parameters of the system have not been measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study that measured Nodal diffusion and clearance parameters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "9b399d06-ed84-449d-bcf9-ed24013a7e47",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C70",
+      "claim": "The range of expression is affected most dramatically by changes in transcription rate, Kd or Hill coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploring the contribution of each of these parameters in regulating target gene expression revealed that multiple parameter combinations could simulate the expression patterns observed in vivo (Figure 4B and Figure 4\u2014figure supplement 1). In particular, the range of expression is affected most dramatically by changes in transcription rate, Kd or Hill coefficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by systematic parameter exploration using the kinetic model, shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "7cfb75b1-8cce-4956-8056-9221ebd5fc2d",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C71",
+      "claim": "The degradation rate influences the range of expression only when mRNA half-lives are very short.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations described above (Figure 4B and Figure 4\u2014figure supplement 1), genes whose Kd is low and maximal transcription rate is high are expressed at high levels and at long range. In contrast, the degradation rate influences the range of expression only when mRNA half-lives are very short (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by systematic parameter exploration using the kinetic model, shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "d2c1a5cf-75c5-420a-9761-3a1dd62239c4",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C72",
+      "claim": "Genes with delayed induction contain Smad2/FoxH1 binding sites and show a clear response upon injection of Nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the canonical target genes, genes with delayed induction contained Smad2/FoxH1 binding sites and showed a clear response upon injection of Nodal (Figure 8\u2014figure supplement 1) but their induction was abolished in the presence of cycloheximide (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ChIP-seq analysis showing Smad2/FoxH1 binding and NanoString analysis showing Nodal-dependent induction, shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "fa432dc4-db2b-484d-886c-a874de0d4af8",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C73",
+      "claim": "The induction of genes with delayed response is abolished in the presence of cycloheximide.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the canonical target genes, genes with delayed induction contained Smad2/FoxH1 binding sites and showed a clear response upon injection of Nodal (Figure 8\u2014figure supplement 1) but their induction was abolished in the presence of cycloheximide (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NanoString analysis of gene expression after Nodal injection in the presence of cycloheximide, shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c3d07704-d803-483e-9b32-2ebc7976fe54",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C74",
+      "claim": "Genes with delayed induction are likely to be regulated not only by Nodal signaling but additional factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These Nodal target genes are therefore likely to be regulated not only by Nodal signaling but additional factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that these genes have Smad2/FoxH1 binding sites but their induction is abolished by cycloheximide, suggesting requirement for additional protein synthesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "9fb9f890-8dc0-41a0-8e44-e1dccaeb142e",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C75",
+      "claim": "Transcriptional delay might be achieved by a co-activator for target gene induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional delay might be achieved by a co-activator for target gene induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on the observation that delayed genes require protein synthesis (cycloheximide sensitivity) and show stage-dependent induction kinetics.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "43858129-eb7d-48c0-a65f-4c5e0630ca88",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C76",
+      "claim": "A repressor might have to be eliminated for a target gene to become competent to respond.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a repressor might have to be eliminated for a target gene to become competent to respond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed alternative mechanism to explain delayed gene induction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "3bc25fb6-0132-41cc-961a-b95ed5c2e91d",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C77",
+      "claim": "Transcription rates might be influenced by local chromatin structure, promoter strength, and by co-activators that boost or repressors that dampen the levels of target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription rates might be influenced by local chromatin structure, promoter strength, and by co-activators that boost or repressors that dampen the levels of target gene expression (Li et al., 2007; Lupien et al., 2008; Hager et al., 2009; Kanodia et al., 2012; Peterson et al., 2012; Coulon et al., 2013; Oosterveen et al., 2013; Foo et al., 2014; Xu et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanisms based on citations to previous studies on transcriptional regulation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c83c4644-ded2-477a-a577-0dcf612a06f4",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "claim_id": "C78",
+      "claim": "The intensity and onset of target gene transcription can be major determinants in shaping morphogen gradient interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, our study suggests that the intensity and onset of target gene transcription can be major determinants in shaping morphogen gradient interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined experimental and modeling results showing that transcription rate and induction timing strongly affect expression range.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86aa2c8a-139b-414f-af6f-f610db078b05",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Smad2 is essential for Nodal signaling during zebrafish mesendoderm specification. MZsmad2 mutants lack endoderm and mesoderm, phenocopying Nodal loss-of-function mutants. The phenotype can be rescued by Smad2 or GFP-Smad2 expression, and neither Nodal nor Activin show activity in MZsmad2 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide converging genetic, phenotypic, and rescue evidence demonstrating Smad2's essential role. The mutant phenotype (C2), rescue experiments (C3), and loss of ligand responsiveness (C4) collectively establish Smad2 as the critical transducer of Nodal signaling. The evidence includes appropriate controls (MZoep comparison) and multiple complementary approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spatiotemporal mapping reveals that the Nodal morphogen gradient and Smad2 activity evolve dynamically during blastula stages. A low-amplitude short-range gradient transforms into a high-amplitude long-range gradient over 1.5 hours. The long-range gene ntl is induced at both high and low Smad2 levels, while the short-range gene gsc requires high sustained Smad2 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C60-C65 are supported by single-cell tracking of GFP-Smad2 and in situ hybridization time courses. The spatiotemporal mapping approach provides quantitative data on gradient dynamics and correlates Smad2 activity with target gene expression patterns. The methodology is appropriate and the conclusions are directly supported by the imaging data shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "cd8c8939-a462-4870-b3b3-6445bb2f4515",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Testing the threshold model reveals that similar Smad2 activity levels at 1 and 2 hours result in different target gene expression patterns. While ntl is expressed after both 1 and 2 hours of Nodal exposure, gsc is only expressed after 2 hours, despite similar GFP-Smad2 NC ratios. This demonstrates that duration of signaling influences morphogen interpretation at the level of target gene induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 are supported by well-designed transplantation experiments that control exposure duration while measuring both Smad2 activity and target gene expression. The finding that similar Smad2 levels produce different gene expression outcomes depending on duration directly challenges the strict threshold model. The experimental design appropriately isolates the variable of interest (duration) while controlling for Smad2 activity levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "e0e904a9-3e0b-4d18-93ef-45c2a74b1841",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Testing the ratchet model shows that Smad2 activity and target gene expression cannot be maintained after transient Nodal exposure. When cells are moved from high to low Nodal environments, Smad2 activity decreases to basal levels within 60 minutes and ntl expression disappears over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are supported by transplantation experiments tracking GFP-Smad2 and ntl expression after moving cells from margin to animal pole. The results directly contradict the ratchet model's prediction of sustained activity. The experimental approach is appropriate for testing this hypothesis, though the number of replicates and statistical analysis could be more explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "b5f30919-f83b-431d-b787-0d643b8fc438",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dose-response and time-course analysis of Smad2 phosphorylation reveals concentration- and time-dependent activation kinetics. High Nodal levels induce rapid Smad2 activation reaching quasi-steady state after 1 hour, while low Nodal levels induce slower activation reaching steady state after 2 hours. Fitted phosphorylation and turnover rates are consistent with previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by Western blot analysis with appropriate controls and model fitting. The measured kinetic parameters (C18-C19) align with previously published values from other systems, providing external validation. The experimental design using recombinant Nodal protein allows precise control of ligand concentration and timing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NanoString analysis identifies 47 direct Nodal targets and reveals striking differences in transcriptional magnitude and timing. ntl shows rapid induction and high expression (~2500 counts), while gsc requires higher Nodal concentrations, shows slow induction (detected only after 60 min), and reaches 25-fold lower expression. Transcription rates vary widely (0.0016-9.3 counts/s), while Kds cluster narrowly (0.73-42 nM, 75% between 5-10 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C31 are supported by comprehensive NanoString analysis with appropriate criteria for identifying direct targets (Nodal-dependent induction, cycloheximide insensitivity, Smad2 binding). The quantitative measurements allow direct comparison of transcript levels across genes. The finding that transcription rates vary more than Kds is a key observation, though the model fitting procedure could benefit from more explicit uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "b183f8bf-3951-4d36-a94e-c237a9211c33",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The kinetic parameters explain differential gene induction in threshold model tests. Only ~50 gsc RNA counts are detected 1 hour after Nodal exposure due to its low transcription rate, while ntl reaches ~1000 counts after 1 hour due to its high transcription rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 connect the measured kinetic parameters to the experimental observations from the threshold model tests. The inference is logical and supported by the NanoString data, providing a mechanistic explanation for the time-dependent differences in gene expression despite similar Smad2 activity levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "7683d5b2-ced2-469c-a4a0-7da25dd81818",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The kinetic model recapitulates spatiotemporal patterns of Smad2 activation and target gene expression. Simulations predict that ntl expression begins 45 minutes after ligand production and extends >100 \u03bcm from the margin after 3 hours, while gsc expression is delayed and confined close to the source. Predictions for foxa3 and efnb2a are validated by RNA in situ hybridization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 demonstrate the predictive power of the kinetic model. The model successfully recapitulates known expression patterns (ntl, gsc) and makes testable predictions for other genes (foxa3, efnb2a) that are validated experimentally. This provides strong support for the model's validity, though the spatial simulations rely on previously measured diffusion parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "6909dab0-193f-4f81-a8b1-35b168fcf3c4",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcription rate is the best predictor of gene expression range among kinetic parameters. Genes highly induced by Nodal display long-range expression, and maximal transcription rate correlates better with range than Kd or degradation rate. Model comparison analysis supports a model where transcription rate is gene-specific while Kd is constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C66 are supported by systematic analysis comparing different parameters with expression range and by Bayesian model comparison. The finding that transcription rate is the primary determinant is a key insight. However, the model comparison (C66) could be strengthened by more explicit discussion of assumptions and alternative model formulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Delayed gene induction restricts expression range. Simulations show that introducing a delay transforms long-range genes into short-range genes. Experimentally, efnb2b and bra show stage-dependent induction kinetics and are expressed late and at short range. These genes contain Smad2/FoxH1 binding sites but require protein synthesis (cycloheximide-sensitive), suggesting regulation by additional factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C72-C74 are supported by modeling predictions validated by experimental observations. The cycloheximide sensitivity (C73) provides mechanistic insight suggesting additional co-factors are required. The stage-dependent induction kinetics (C44) are well-documented. This represents a novel mechanism for modulating morphogen interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The kinetics of target gene induction is a major determinant of morphogen interpretation. Target genes can be induced rapidly at long range through high transcription rate, high Smad2 affinity, and early onset, while low transcription rate, low affinity, or delayed onset generate short-range patterns. In rapidly developing systems, intrinsic transcription rate can be a major determinant of expression range, and high affinity binding sites cannot overcome limits imposed by low transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 and C78 represent the major conceptual conclusions synthesized from the experimental and modeling results. These conclusions are well-supported by the collective evidence, though they represent inferences that extend beyond the specific measurements. The claims appropriately acknowledge that these findings apply particularly to 'rapidly developing systems,' recognizing potential context-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "07b03573-14b6-4369-ad48-1a4a1f710791",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Nodal morphogen gradient forms through diffusion and rapid phosphorylation generates a corresponding gradient of activated Smad2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by the kinetic model incorporating diffusion (with parameters from prior work, C69) and by experimental measurements of pSmad2 and GFP-Smad2 gradients. The diffusion-based mechanism is consistent with previous experimental measurements of Nodal diffusion coefficients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "f1c4b580-964b-45c1-a214-f4d8fde6f2d5",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of Nodal signaling in development, mesendoderm patterning, left-right asymmetry, stem cell regulation, and morphogen gradient formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 represent established background knowledge supported by multiple citations to prior literature. These provide appropriate context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "100906fa-14a5-417a-bd88-76e49f97d85a",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Technical validation claims: the gsc probe is less sensitive at low concentrations than the ntl probe, and the \u03b2-actin::GFP-Smad2 transgene rescues smad2/smad2 adult lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 represent important technical controls. C67 is supported by fusion mRNA experiments showing differential probe sensitivity, which is important for interpreting in situ hybridization results. C68 is supported by genetic crosses showing transgenic rescue, validating the GFP-Smad2 reporter as functional.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "956630bf-e910-4acc-a0f3-676a50aa2d2b",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Model parameterization and sensitivity analysis: diffusion coefficients and clearance rates were previously measured; parameter exploration reveals that expression range is most affected by transcription rate, Kd, and Hill coefficient, while degradation rate only influences range when mRNA half-lives are very short.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 describe model parameterization and sensitivity analysis. C69 appropriately cites prior work for diffusion parameters. C70-C71 are supported by systematic parameter exploration shown in supplementary figures. This analysis is important for understanding which parameters matter most, though more quantitative sensitivity metrics could strengthen the conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    },
+    {
+      "id": "90dd16fe-2feb-41fd-a838-f7f168ed05f1",
+      "content_id": "1577c203-67f0-49bb-a25f-38ebbbc91f53",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative mechanistic proposals for how transcriptional delays and rates might be regulated, including co-activators, repressor elimination, chromatin structure, and promoter strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 are explicitly speculative proposals for mechanisms that could explain the observed phenomena. While these are reasonable hypotheses supported by citations to relevant literature (C77), they are not directly tested in this study. These represent appropriate discussion of potential mechanisms but should not be considered established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:37:37.518444Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9ebae4f2-8419-43c5-9eb1-618ca9d657a1",
+      "result_id": "86aa2c8a-139b-414f-af6f-f610db078b05"
+    },
+    {
+      "claim_id": "433e9e83-2ca6-4260-847c-d1158481fc50",
+      "result_id": "86aa2c8a-139b-414f-af6f-f610db078b05"
+    },
+    {
+      "claim_id": "4bcc051d-a9b1-4c12-aa58-2f088f5e561b",
+      "result_id": "86aa2c8a-139b-414f-af6f-f610db078b05"
+    },
+    {
+      "claim_id": "25fce543-1e90-438c-9560-a79e29b39405",
+      "result_id": "86aa2c8a-139b-414f-af6f-f610db078b05"
+    },
+    {
+      "claim_id": "fefb2db3-9265-438d-972c-1656d55746cd",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "2b2ee58a-c72e-42f4-b182-b56e28b67fa9",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "058f246e-d4d1-4323-a280-68ee40857c01",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "45499d29-c964-42bd-a6ac-7d3f2f062af8",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "2c532404-7718-4c35-a312-2a3ed3fd69e3",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "69845c14-4b95-4cab-b0ea-8e7132a47654",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "9288f506-4b52-4afb-aceb-567f0a77b0c8",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "ea44fcbb-36a5-45b7-9786-09572be1b878",
+      "result_id": "6ce8fbd4-43f8-455e-bc31-50583d720d6c"
+    },
+    {
+      "claim_id": "c07a77c0-a502-4bd0-b912-bcfc430c9979",
+      "result_id": "cd8c8939-a462-4870-b3b3-6445bb2f4515"
+    },
+    {
+      "claim_id": "fbdf732b-fbc7-465c-8570-be36032e2a04",
+      "result_id": "cd8c8939-a462-4870-b3b3-6445bb2f4515"
+    },
+    {
+      "claim_id": "f59c1a1f-2787-473b-8b8c-f334a3af7d86",
+      "result_id": "cd8c8939-a462-4870-b3b3-6445bb2f4515"
+    },
+    {
+      "claim_id": "917dcd4d-5f05-4c4c-aa09-07a1b426636f",
+      "result_id": "cd8c8939-a462-4870-b3b3-6445bb2f4515"
+    },
+    {
+      "claim_id": "e22610af-3660-4716-aae1-08d5ccc12a2d",
+      "result_id": "cd8c8939-a462-4870-b3b3-6445bb2f4515"
+    },
+    {
+      "claim_id": "d4a4b939-fb5c-49d8-ad26-8f0918111f36",
+      "result_id": "e0e904a9-3e0b-4d18-93ef-45c2a74b1841"
+    },
+    {
+      "claim_id": "1dfa549b-f948-4dbc-b5bf-78b83cae2bab",
+      "result_id": "e0e904a9-3e0b-4d18-93ef-45c2a74b1841"
+    },
+    {
+      "claim_id": "3ca05692-84ab-451c-a860-c039fae7202e",
+      "result_id": "e0e904a9-3e0b-4d18-93ef-45c2a74b1841"
+    },
+    {
+      "claim_id": "d4c87864-151c-41af-867c-8d45bbce59c7",
+      "result_id": "b5f30919-f83b-431d-b787-0d643b8fc438"
+    },
+    {
+      "claim_id": "8e9818e6-f691-444b-bdef-27ccf4efa4d0",
+      "result_id": "b5f30919-f83b-431d-b787-0d643b8fc438"
+    },
+    {
+      "claim_id": "25e624de-56a0-403e-bf3f-07a6b09394c6",
+      "result_id": "b5f30919-f83b-431d-b787-0d643b8fc438"
+    },
+    {
+      "claim_id": "a346acdc-5eb5-4bf5-8a2e-c207866641d6",
+      "result_id": "b5f30919-f83b-431d-b787-0d643b8fc438"
+    },
+    {
+      "claim_id": "4fa91d6c-1b6b-4a58-bc97-cc34a857caca",
+      "result_id": "b5f30919-f83b-431d-b787-0d643b8fc438"
+    },
+    {
+      "claim_id": "c5e09542-5f12-46fa-a126-b0d854ebbf5c",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "96c3e9ae-4180-46f6-b8bf-fed95a25aaa9",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "49cd527a-fb85-4e21-a44b-fc91a53cf1b0",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "c5a8493d-1665-45ac-a1e2-5ccfc6b4cce5",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "a3d79fe1-6e4b-40bf-9399-0a2c346ccc19",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "1c19a54c-51bf-4e78-8f01-b713d5e2efea",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "cc797bc0-6762-4fa7-890a-4f00c40d3ff5",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "c3a1af21-abbf-41ec-a44b-b9b306189f9a",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "46fd39c9-576c-4473-a8cb-35b448027c8e",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "1d2d475b-96a4-4934-8345-ca2e652db86d",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "1aaea995-aea4-483d-a8a5-f1a289c12988",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "f87fd082-d01d-47cc-ae38-845d8b279784",
+      "result_id": "9babf04b-f310-4a1a-ae0c-ca5ae08725e1"
+    },
+    {
+      "claim_id": "232cfb0d-5819-4539-9ad8-de5dd46c741a",
+      "result_id": "b183f8bf-3951-4d36-a94e-c237a9211c33"
+    },
+    {
+      "claim_id": "3fa51981-6343-405f-931a-1cca2f384a28",
+      "result_id": "b183f8bf-3951-4d36-a94e-c237a9211c33"
+    },
+    {
+      "claim_id": "b4c6a010-9ea3-4cc9-8e23-9cd671e23e56",
+      "result_id": "7683d5b2-ced2-469c-a4a0-7da25dd81818"
+    },
+    {
+      "claim_id": "4e2083fe-b403-4483-861c-bf02ecc5cef1",
+      "result_id": "7683d5b2-ced2-469c-a4a0-7da25dd81818"
+    },
+    {
+      "claim_id": "bcb81914-69bc-49a5-ac21-637191540896",
+      "result_id": "7683d5b2-ced2-469c-a4a0-7da25dd81818"
+    },
+    {
+      "claim_id": "028ee80e-bbee-439e-9a4a-83ed5d354acf",
+      "result_id": "7683d5b2-ced2-469c-a4a0-7da25dd81818"
+    },
+    {
+      "claim_id": "1a84e587-18c8-4a63-9ca3-ec81ffaccd4d",
+      "result_id": "7683d5b2-ced2-469c-a4a0-7da25dd81818"
+    },
+    {
+      "claim_id": "04db24f7-bb78-4df9-9f0f-8e1604c2582f",
+      "result_id": "7683d5b2-ced2-469c-a4a0-7da25dd81818"
+    },
+    {
+      "claim_id": "fa2ba74c-eb4f-4820-95c3-05e5c10819e8",
+      "result_id": "6909dab0-193f-4f81-a8b1-35b168fcf3c4"
+    },
+    {
+      "claim_id": "5a38021e-666c-4199-95b5-836f7cc749cd",
+      "result_id": "6909dab0-193f-4f81-a8b1-35b168fcf3c4"
+    },
+    {
+      "claim_id": "5516e606-9889-482a-a790-da283b7b3d03",
+      "result_id": "6909dab0-193f-4f81-a8b1-35b168fcf3c4"
+    },
+    {
+      "claim_id": "cf2801cb-5d11-4923-a639-eb5a9750e786",
+      "result_id": "6909dab0-193f-4f81-a8b1-35b168fcf3c4"
+    },
+    {
+      "claim_id": "ece8dadb-82c1-4e5d-aafc-3165d37d5204",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "e412dd49-2006-421c-8556-aaadb3895f5e",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "1795b52d-3ac2-4234-ae8e-72b66892c851",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "b62fa7cc-3871-492f-8e1c-0d00a409f119",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "d2c1a5cf-75c5-420a-9761-3a1dd62239c4",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "fa432dc4-db2b-484d-886c-a874de0d4af8",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "c3d07704-d803-483e-9b32-2ebc7976fe54",
+      "result_id": "cee69af0-5f0b-4a7a-b2c4-806c1a35ce09"
+    },
+    {
+      "claim_id": "25f899e9-061f-4aef-b4d5-bdd044c5e20a",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "27e8a723-63e5-4671-86b9-859104a2f250",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "17c45553-7b7c-495f-8b55-807330f79557",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "0ce32371-894c-4fa2-a0dd-6eeeaf85b4da",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "ff3920ad-3ce1-4014-9d1c-815a208b9664",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "c1fc9721-6d69-43d3-9686-9cf0d9ed1f09",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "c83c4644-ded2-477a-a577-0dcf612a06f4",
+      "result_id": "c15c605c-16af-42b6-9cc7-0a041d4f28d0"
+    },
+    {
+      "claim_id": "5cf49239-2776-485f-9e2c-c65fe035d700",
+      "result_id": "07b03573-14b6-4369-ad48-1a4a1f710791"
+    },
+    {
+      "claim_id": "77681576-d6d7-43f3-be98-e62b948e4e1e",
+      "result_id": "07b03573-14b6-4369-ad48-1a4a1f710791"
+    },
+    {
+      "claim_id": "d403d4d3-d740-4109-a977-6c0c745bda10",
+      "result_id": "f1c4b580-964b-45c1-a214-f4d8fde6f2d5"
+    },
+    {
+      "claim_id": "c2b48be1-9a44-4165-8c14-4b7f85f31604",
+      "result_id": "f1c4b580-964b-45c1-a214-f4d8fde6f2d5"
+    },
+    {
+      "claim_id": "b8c2b968-d195-41b8-8e72-386a59d86157",
+      "result_id": "f1c4b580-964b-45c1-a214-f4d8fde6f2d5"
+    },
+    {
+      "claim_id": "0e0b8f36-4661-495a-b56c-8661a3c41d8c",
+      "result_id": "f1c4b580-964b-45c1-a214-f4d8fde6f2d5"
+    },
+    {
+      "claim_id": "306d3d0e-994e-481e-882f-b875356d4975",
+      "result_id": "f1c4b580-964b-45c1-a214-f4d8fde6f2d5"
+    },
+    {
+      "claim_id": "631e5bca-c0d3-461c-ba4e-5ef98b56c27d",
+      "result_id": "100906fa-14a5-417a-bd88-76e49f97d85a"
+    },
+    {
+      "claim_id": "02a1b3c1-745e-4bbc-81f8-ee05b7283bff",
+      "result_id": "100906fa-14a5-417a-bd88-76e49f97d85a"
+    },
+    {
+      "claim_id": "6013583c-2f0b-46cb-a42e-9bbe674a1807",
+      "result_id": "956630bf-e910-4acc-a0f3-676a50aa2d2b"
+    },
+    {
+      "claim_id": "9b399d06-ed84-449d-bcf9-ed24013a7e47",
+      "result_id": "956630bf-e910-4acc-a0f3-676a50aa2d2b"
+    },
+    {
+      "claim_id": "7cfb75b1-8cce-4956-8056-9221ebd5fc2d",
+      "result_id": "956630bf-e910-4acc-a0f3-676a50aa2d2b"
+    },
+    {
+      "claim_id": "9fb9f890-8dc0-41a0-8e44-e1dccaeb142e",
+      "result_id": "90dd16fe-2feb-41fd-a838-f7f168ed05f1"
+    },
+    {
+      "claim_id": "43858129-eb7d-48c0-a65f-4c5e0630ca88",
+      "result_id": "90dd16fe-2feb-41fd-a838-f7f168ed05f1"
+    },
+    {
+      "claim_id": "3bc25fb6-0132-41cc-961a-b95ed5c2e91d",
+      "result_id": "90dd16fe-2feb-41fd-a838-f7f168ed05f1"
+    }
+  ],
+  "comparisons": []
+}

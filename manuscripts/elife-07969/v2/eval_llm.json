@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study addresses a critical gap in influenza research by establishing the first quantitative assessment of the relationship between ferret and human transmission, motivated by controversies surrounding gain-of-function experiments and observed discrepancies with H7N9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the scientific context and motivation for the study. The claims are well-supported by appropriate citations documenting the use of ferrets as models (C1), the lack of prior quantitative assessment (C2), concerns about H7N9 discrepancies (C3), and the policy context (C4). These background claims provide valid justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C60",
+      "C63"
+    ],
+    "result": "The authors compiled a comprehensive dataset of 240 transmission estimates including 81 ferret respiratory droplet experiments, 76 ferret direct contact experiments, and 83 human household SAR estimates across ten influenza A subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48, C60, and C63 describe the dataset compilation and are internally consistent. The total of 240 estimates (81 + 76 + 83 = 240) is mathematically correct. The data collection methodology is clearly described with appropriate inclusion/exclusion criteria (C49-C62), supporting the validity of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C10"
+    ],
+    "result": "Ferret respiratory droplet SAR explains 66% of the variation in human SAR at the subtype level (p=0.003), though ferret SAR estimates are systematically higher than corresponding human estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 report a statistically significant correlation (R\u00b2=0.66, p=0.003) between ferret respiratory droplet and human SAR at the subtype level. The statistical analysis appears appropriate using weighted linear regression. Claim C10 notes the systematic bias. The correlation is supported by Figure 2A showing the relationship, though the analysis is limited to subtype-level aggregation rather than strain-specific comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C25",
+      "C26"
+    ],
+    "result": "Respiratory droplet transmission experiments in ferrets are superior to direct contact experiments for predicting human transmission, though direct contact data may provide complementary information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C25-C26 demonstrate that respiratory droplet transmission (p=0.003) significantly predicts human SAR while direct contact does not (p=0.14). Multiple analyses including ROC curves (C25, Figure 3\u2014figure supplement 3) support this conclusion. Claim C26 notes marginal support for bivariate models (C15), suggesting some added value from direct contact data. The statistical evidence consistently supports the superiority of respiratory droplet experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C24"
+    ],
+    "result": "Despite the strong subtype-level correlation, substantial overlap in ferret SAR distributions across subtypes limits the ability to definitively classify individual strains, resulting in low power to resolve human SAR from single ferret experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C24 identify a critical limitation: while mean correlations are strong, individual experiment results overlap substantially across subtypes (Figure 2B). This prevents unambiguous classification of novel strains. The claims are well-supported by the overlap analysis and are consistent with the wide confidence intervals observed in specific case studies (C18-C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Logistic regression analysis identified ranges of ferret SAR that distinguish supercritical from subcritical subtypes, with respiratory droplet SAR (p<0.0001) showing greater specificity than direct contact SAR (p=0.01), though H7N9 and H5N1 were anomalies in the expected clustering patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 describe logistic regression results with highly significant p-values for both transmission modes. The classification approach is methodologically sound, using weighted regression and defining supercritical/subcritical groups based on known epidemiology (C67-C68, C71). Claims C69-C70 appropriately identify H7N9 and H5N1 as anomalies, which is critical for interpreting model limitations. The statistical evidence and biological interpretation are well-integrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The relationship between ferret SAR and supercritical classification is robust to binomial uncertainty, as demonstrated by simulation analysis with 1000 resampled datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 describes a sensitivity analysis using binomial resampling (Figure 3\u2014figure supplement 2) to assess robustness to sampling uncertainty. This is an appropriate method to evaluate the stability of the logistic regression relationship. The simulation approach strengthens confidence in the main findings despite small sample sizes in individual experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Application of the classification model to specific cases (GOF H5N1, 1918 H1N1, and H7N9) revealed that wide confidence intervals prevent definitive classification even when point estimates fall in the supercritical range, with H7N9 showing particularly equivocal results even when aggregating 42 ferrets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 apply the model to important test cases and demonstrate its limitations in practice. The analysis appropriately accounts for binomial confidence intervals and shows that even substantial sample sizes (42 ferrets for H7N9, C22) may yield equivocal classifications. This honest assessment of model limitations is well-supported by the data in Figure 4 and strengthens the overall credibility of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Power analysis reveals that classifying a supercritical strain requires at least 8 ferrets (for SAR=1.0) or more than 30 ferrets (for SAR=0.8) to achieve 80% power at \u03b1=0.05, sample sizes that exceed those typically used in published studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 present power calculations that are mathematically appropriate for binomial testing. The finding that current sample sizes (maximum 12 ferrets, C27) are insufficient for definitive classification is a critical practical limitation. The power analysis methodology appears sound and the conclusions about sample size requirements are well-justified, though the calculations assume testing against a fixed threshold rather than accounting for uncertainty in the threshold itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Standardization of experimental design, particularly transmission definitions (viral isolation vs. seroconversion), is needed to reduce variability, with evidence that seroconversion is more sensitive and can detect deep respiratory tract infections missed by nasal wash measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 identify methodological heterogeneity as a source of noise and recommend standardization. The discord between viral isolation and serological data (C31) is documented in the source data. Claim C32 is supported by citation to imaging studies. Sensitivity analysis (C33) shows results are robust to definition choice but with differential effects on predictive power. These recommendations are well-justified by the observed variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Despite limitations, ferret transmission experiments provide a valuable tool with relatively high sensitivity and specificity for identifying strains with pandemic potential, serving as a link between virologic/genetic changes and human transmissibility in the context of complex and partially understood transmission phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 present balanced conclusions about the utility of ferret models. Claim C35 is supported by ROC analysis (Figure 3\u2014figure supplement 3) showing AUC values of 0.90 for respiratory droplet transmission. Claims C36-C37 appropriately contextualize the findings within the broader challenge of predicting human transmission. The conclusions are measured and acknowledge both strengths and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The analysis was limited to subtype-level resolution due to lack of strain-specific human transmissibility data, though supplementary analysis including avian H5N1 and H7N9 isolates yielded results consistent with the main findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 acknowledge a key limitation and describe sensitivity analysis to assess its impact. The limitation to subtype-level analysis is clearly justified by data availability (C38). The robustness check including avian isolates (C39, Figure 2\u2014figure supplement 1) strengthens confidence that within-subtype variation does not fundamentally alter the conclusions, though this remains an important caveat for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "While the study demonstrates that isolates more transmissible in ferrets are statistically more likely to sustain transmission in humans, the H7N9 anomaly reveals the ferret model is fallible and underscores the need to corroborate ferret transmission estimates with other evidence, leading to the conclusion that ferret data provide a valuable but imperfect correlate of human transmissibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide a nuanced interpretation of the findings, acknowledging both the general validity of the ferret model (C41) and its specific failures (C42). The H7N9 case is particularly important as it represents a real-world test where ferret experiments yielded misleading results. The balanced conclusion (C44) appropriately reflects the mixed evidence and is well-supported by the data showing both strong correlations and notable exceptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study used secondary attack rate (SAR) as the primary metric, calculated from both ad hoc methods and maximum likelihood procedures for human data, with each method having distinct biases and limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 define the key metric and describe methodological approaches for estimation. The definition of SAR (C45) is standard and appropriately cited. The discussion of ad hoc vs. maximum likelihood methods (C46-C47) acknowledges important methodological considerations and potential biases. The decision to include estimates from both methods is reasonable given the limitations of each approach, though this introduces heterogeneity into the human SAR estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "The study applied rigorous inclusion and exclusion criteria for both ferret and human studies to ensure comparability, including exclusion of serially passaged isolates, non-standard inoculation routes, vaccinated animals, and non-household human contacts, while restricting ferret data primarily to wild-type human isolates based on evidence of genetic bottlenecks and adaptation barriers for animal isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C62 describe comprehensive inclusion/exclusion criteria that are well-justified. The exclusion of animal isolates from primary analysis (C55-C57) is supported by citations documenting genetic and phenotypic differences. The validation that reverse genetics isolates behave similarly to wild-type (C58-C59, Figure 1\u2014figure supplement 1) supports their inclusion. The criteria enhance internal validity though they may limit generalizability to some experimental designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C73"
+    ],
+    "result": "The statistical analysis employed weighted linear regression for comparing ferret and human SAR at the subtype level, and weighted logistic regression for classifying supercritical vs. subcritical transmission, with weights based on sample sizes to account for uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C72-C73 describe the statistical methodology. The use of weighted regression is appropriate given the varying sample sizes and uncertainty across studies. Weighting by number of ferrets (C65, C72) and number of human SAR estimates (C66) is reasonable. The specification of R version 3.1.2 (C73) aids reproducibility. The statistical approaches are sound for the aggregate, subtype-level analysis performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "This study represents the first quantitative demonstration of a link between influenza transmission efficiency in ferrets and humans at the subtype level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 summarizes the primary contribution of the work. This is supported by the prior claim (C2) that no such quantitative assessment existed previously, and by the statistical analyses (C6-C7, C13-C14) demonstrating significant relationships. The novelty claim appears valid based on the cited literature and represents an important advance in the field.",
+    "result_type": "MAJOR"
+  }
+]

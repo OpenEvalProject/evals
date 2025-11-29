@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors developed a computational model of a 300 kb budding yeast chromosome using a bead-spring representation with 2000 nucleosomes, where DNA linkers behave as springs following Hooke's law and nucleosomes follow Brownian dynamics. The model incorporates physical forces including entropic forces, tension, repulsion, and angle correction forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C15 collectively describe the computational model construction with explicit physical principles (Hooke's law, Brownian dynamics) and appropriate biological approximations (topoisomerase II for DNA crossing). The model parameters are clearly defined and justified by citations to structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The model incorporates condensin binding sites at ~10 kb intervals based on experimental ChIP data, with interactions established when sites come within 40 nm. Two models are compared: Type I allows pairwise interactions only, while Type II allows each site to interact with up to two others, enabling higher-order assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 describe the condensin implementation with experimental justification (C16 cites ChIP data). The 40 nm interaction radius is justified by molecular architecture data (C18). The Type I and Type II models are clearly distinguished and provide the basis for testing different mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The relaxed computational nucleosome chain has dimensions similar to experimental interphase budding yeast chromatin (670 nm for 144 kb loci separation). This suggests interphase chromatin exists in a relatively relaxed state driven by entropic forces, without requiring additional organizing principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide experimental validation of the model's starting configuration. Claims C59-C63 interpret this finding, concluding that entropic forces and nucleosome geometry alone can explain interphase chromatin dimensions. The inference is well-supported by the close match between simulation and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mitotic chromosome compaction (~25% length, ~2-fold volume) depends on condensin and can be recapitulated by reducing condensin dissociation probability 10-fold in the Type I model. The Type II model over-compacts (>40% length reduction), exceeding in vivo observations. The half-life of condensin interactions determines condensation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide experimental measurements of mitotic compaction with condensin dependence. Claims C29-C33 show the Type I model matches experimental compaction while Type II exceeds it. The conclusion about interaction half-life (C31) is well-supported by the systematic variation of dissociation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "4C analysis reveals condensin-dependent increases in intrachromosomal interactions in mitosis, with condensin binding sites serving as interaction hubs. The Type I model's simulated contact maps show striking qualitative resemblance to experimental maps, while Type II produces broader distributions with excessive long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 present experimental 4C data showing condensin-dependent interaction increases. Claims C38-C42 compare computational and experimental interaction maps, with Type I showing better agreement. The quantitative analysis of interactions beyond 100 kb (C40-C42) provides objective comparison metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The Type I model generates a dynamic web-like architecture in interphase with transient rosette formation in mitosis. The Type II model produces more stable, extensive rosette structures that dominate in both interphase (>1/3 of chromosome) and mitosis (most of chromosome).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe distinct architectural features of the two models based on simulation analysis. The characterization is quantified in Figure 4B with percentages, lifespans, and sizes of rosette structures. The dynamic vs. stable nature is clearly distinguished between models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Kurtosis values from simulations (2.2-2.8) agree well with experimental measurements, lying closer to Type I than Type II. Persistence length analysis shows both models match experimental estimates (58-134 nm) at distances up to ~150 kb, but diverge at greater distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 compare kurtosis values between simulation and experiment with good agreement. Claims C51-C54 analyze persistence length with appropriate citations to experimental data. The agreement at shorter distances and divergence at longer distances is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In two-chromosome simulations, the Type I model achieves chromosome individualization through dynamic pairwise interactions, while Type II maintains chromosomes in an entangled state due to stable rosette-like hubs. Dynamic interactions better prevent persistent cross-linking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe two-chromosome condensation simulations with clear differences between models. The mechanistic explanation (C57) that intrachromosomal interactions are favored due to chain continuity is physically reasonable. Figure 6 provides quantitative support showing fewer interchromosome contacts in Type I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "Type I interactions better match in vivo observations across multiple metrics (distance distributions, interaction maps, chromosome individualization). The dynamic web structure provides the 'weak chromatin glue' theoretically required for chromosome individualization, allowing intrachromosomal interactions to dominate over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 synthesize the comprehensive comparison showing Type I superiority. Claims C67-C70 connect to theoretical predictions and provide mechanistic explanation. The conclusion is well-supported by multiple independent lines of evidence (compaction, 4C maps, kurtosis, chromosome separation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Volume calculations show the modeled chromosome occupies 5.0\u00b10.17\u00d710\u207b\u00b2 \u03bcm\u00b3 (Type I) in interphase. Scaling to the full 12 Mb yeast genome yields ~2\u00b10.07 \u03bcm\u00b3, accounting for half the nuclear volume (~4 \u03bcm\u00b3), indicating the genome comfortably fits within the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 present volume calculations with appropriate scaling and comparison to known nuclear dimensions (cited). The calculation methodology is described in Materials and Methods. The conclusion that the genome fits comfortably is supported by occupying only half the nuclear volume.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Nucleosome displacement in simulations (30.9\u00b113.4 nm/30ms for Type I, 30.8\u00b113.3 nm/30ms for Type II) is comparable to but slightly lower than experimental measurements in mammalian cells (51.2 nm/30ms). Model features are robust to parameter variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 compare simulated and experimental nucleosome dynamics. The difference is acknowledged and explained by active processes in vivo (C86). Claim C87 reports robustness testing. The comparison uses mammalian rather than yeast data, which is a limitation but acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The \u03b1 angle distribution in simulations peaks at ~70\u00b0 (vs. 75\u00b0 experimentally from crystal structures) with a broad distribution (20-180\u00b0), allowing diverse local conformations including possible 20-30 nm fiber fragments, though most structures show broad conformational ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 describe the \u03b1 angle distribution with comparison to experimental crystal structure data (C89). The model allows but does not require compact fiber structures (C90), with most simulations showing diverse conformations (C91). This is appropriately characterized as emergent rather than imposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Simulations require ~25 million steps (~7 minutes in vivo time) to reach steady state after changing condensin dissociation probability, which is compatible with biological requirements for yeast chromosome condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 report simulation timescales with conversion to biological time using the diffusion coefficient calculation described in Materials and Methods. The 7-minute timescale is reasonable for mitotic entry in yeast, supporting biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The Type I and Type II models differ in interaction rules: Type I allows each condensin site to interact with exactly one other site (random choice if multiple nearby), while Type II allows up to two interactions per site (random choices if more than two nearby).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 clearly define the algorithmic implementation distinguishing the two models. These rules directly implement the conceptual difference between pairwise and higher-order interactions, providing the mechanistic basis for all model comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Robustness testing with alternative parameters (Ks=10 pN/nm, F=11 pN vs. original Ks=50 pN/nm, F=24.5 pN) generating different inter-nucleosome tensions (2.2 pN vs. 4.7 pN) shows main model features are insensitive to parameter variations. These tensions are insufficient to disrupt histone-DNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 report systematic robustness testing showing model conclusions hold across parameter ranges. Claims C99-C100 evaluate biological implications of the tension values with appropriate citation. This strengthens confidence that results are not artifacts of specific parameter choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C77"
+    ],
+    "result": "The study demonstrates that simple assumptions based on first principles (stochastic pairwise condensin interactions) can explain chromosome behavior, with pairwise interactions explaining data better than higher-order interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 state the main conclusions, while C77 provides the overarching interpretation. These are well-supported by the comprehensive comparison across multiple metrics (compaction, 4C maps, kurtosis, persistence length, chromosome separation) all favoring Type I over Type II.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establish that condensin is a principal mediator of chromosome condensation, promotes interactions between binding sites, and belongs to the SMC family that binds DNA by topological embrace. Condensin depletion causes defective condensation and segregation errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 present established background knowledge supported by multiple citations spanning two decades of research across organisms. These provide the biological context and justification for focusing the model on condensin-mediated interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors acknowledge that both Type I and II mechanisms might occur simultaneously, potentially regulated by condensin modifications. The web-like architecture is consistent with analyses of higher eukaryotic chromosomes. Multiple SMC complexes and condensin types add complexity beyond the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 appropriately discuss model limitations and broader context. C71 notes Type I simulations show transient rosettes. C72 is speculation about regulation. C74-C76 cite supporting evidence from other systems and acknowledge additional complexity. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

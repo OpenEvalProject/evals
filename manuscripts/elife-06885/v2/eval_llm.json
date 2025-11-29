@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C43"
+    ],
+    "result": "miR-9 and Ngn1 show correlated temporal expression patterns during brain development, with miR-9 peaking at E16 (just before astrogliogenesis) and both being expressed in VZ/SVZ progenitors during the neurogenic period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide qPCR and ISH data showing temporal correlation between miR-9 and Ngn1 expression patterns. The data are internally consistent and use appropriate techniques. However, correlation does not establish causation, which is addressed by subsequent mechanistic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C37"
+    ],
+    "result": "Ngn1 directly binds to an E-box element in the miR-9-2 promoter and activates miR-9 expression during neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide converging evidence from multiple complementary approaches: sequence analysis identified a putative binding site (C11), luciferase assays showed E-box-dependent activation by wild-type but not mutant Ngn1 (C12-C13), ChIP-qPCR demonstrated direct binding in cultured cells and in vivo at appropriate developmental stages (C14-C15), and overexpression increased miR-9 levels (C16). The use of negative controls (miR-99b, AQ-Ngn1 mutant, E-box mutant) strengthens the specificity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C50"
+    ],
+    "result": "In vivo manipulation of miR-9 levels by in utero electroporation specifically affects astrocyte but not neuronal differentiation, with overexpression reducing and knockdown increasing astrocyte numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 show bidirectional effects of miR-9 manipulation on astrocytes using three independent markers (Aldh1l1, Slc1a3, Gfap) while neurons (Rbfox3+) remain unaffected. C22 confirms miR-9 expression in neurons but not astrocytes, consistent with a cell-autonomous mechanism. Statistical significance is reported (p<0.01, p<0.05). The lack of migration defects (C50) rules out indirect effects. However, the manuscript does not report sample sizes or number of biological replicates for these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C44",
+      "C51"
+    ],
+    "result": "In vitro, miR-9 overexpression reduces astrocyte differentiation while knockdown increases it, with minimal effects on neuronal differentiation, suggesting miR-9 specifically inhibits the glial fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 demonstrate consistent bidirectional effects in cultured NPCs using multiple approaches (plasmid electroporation, miR-9 duplexes, promoter-reporter assays). The specificity for astrocytes over neurons is well-documented. However, C51 reports that miR-9 knockdown reduced Map2+ neurons, which appears contradictory to C21 and C25 and is not adequately explained. This inconsistency raises questions about experimental conditions or cell-type-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C38"
+    ],
+    "result": "miR-9 directly targets the 3' UTRs of Lifr-beta, Il6st, and Jak1 mRNAs, reducing their protein levels and consequently blocking Stat1/3 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide strong mechanistic evidence: bioinformatic prediction identified binding sites (C29), luciferase assays showed ~40% reduction that was reversed by miR-9 inhibitor and abolished by seed sequence mutation (C30-C31), western blots confirmed reduced protein levels (C32), and Stat1/3 phosphorylation was blocked without affecting total Stat levels (C28). The multi-target approach and use of appropriate controls (mutant 3'UTRs, inhibitors) support direct targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C45",
+      "C46"
+    ],
+    "result": "Ngn1 suppresses Jak-Stat pathway components through both miR-9-dependent and miR-9-independent (Crebbp sequestration) mechanisms that act jointly to ensure neuronal fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 show Ngn1 also downregulates Lifr-beta, Il6st, and Jak1 through mechanisms beyond miR-9 induction. C45-C46 propose a model integrating both mechanisms. The data support dual regulation, though the relative contributions of each mechanism are not quantified. The model is logical but remains somewhat speculative regarding how the two pathways are coordinated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Constitutively active Stat3 (Stat3C) bypasses miR-9 inhibition of astrocyte differentiation, demonstrating that Stat signaling is the critical downstream target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 provides functional rescue evidence that Stat3C can overcome miR-9's inhibitory effects on astrogliogenesis. This is a critical experiment establishing that the Jak-Stat pathway is indeed the relevant downstream target. However, the manuscript does not show the data quantitatively or describe the extent of rescue, limiting full evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C36",
+      "C41",
+      "C42"
+    ],
+    "result": "Background knowledge establishing that Lif-Jak-Stat signaling controls astrogliogenesis, Ngn1 inhibits this pathway and glial differentiation, and that Stat signaling has positive autoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C17-C18, C36, C41-C42 represent prior knowledge from the literature (cited work) that provides context for the current study. These are appropriately cited and form the foundation for the research question. The authors correctly attribute these findings to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Ngn1 both activates the neurogenic program and inhibits the astrogliogenic program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by data in Figure 3\u2014figure supplement 1C showing Ngn1 promotes Tuj1+ neurons while reducing Gfap+ astrocytes. This dual function is well-established in the literature and confirmed here, though the data presentation is limited to a supplementary figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C48",
+      "C49"
+    ],
+    "result": "The study reveals a novel epigenetic mechanism whereby Ngn1 modulates non-coding RNA (miR-9) to suppress astrogliogenesis through inhibition of Jak-Stat signaling, representing multiple layers of regulation ensuring neuronal fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C48-C49 represent the major conclusions synthesizing the experimental findings. The evidence from the grouped results above collectively supports this model. The mechanism is novel in linking a proneural transcription factor to miRNA-mediated regulation of cell fate. However, the term 'epigenetic' may be imprecise here, as miRNA regulation is post-transcriptional rather than truly epigenetic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "miRNAs represent a mechanism of epigenetic regulation that can rapidly respond to developmental cues to control cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is general background knowledge about miRNA function, appropriately cited to foundational papers in the field. This contextualizes the significance of the findings but is not a novel result of this study.",
+    "result_type": "MINOR"
+  }
+]

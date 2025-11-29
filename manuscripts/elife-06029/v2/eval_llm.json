@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "KIF1C binds Rab6A directly at both its N-terminal motor domain and C-terminal cargo binding domain (CBD). The motor domain binds Rab6A with KD = 0.23 \u00b5M, while the CBD binds with KD = 0.9 \u00b5M. Both interactions are specific for active, GTP-bound Rab6A and do not require adaptor proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C45 provide converging evidence from multiple experimental approaches (co-IP, GST pulldowns, in vitro binding assays with purified proteins) demonstrating direct, specific, high-affinity binding of Rab6A to both KIF1C termini. The data include appropriate controls (other Rabs, GDP vs GTP states, concentration dependence) and quantitative affinity measurements consistent with known Rab:effector interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Rab6A binding to the KIF1C motor domain requires loops 6 and 10, which are spatially adjacent and positioned away from the microtubule-binding interface. Chimeric and loop-swap experiments demonstrate that converting KIF1C loops 6 and 10 to KIF1A sequences abolishes Rab6A binding while preserving microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C59 use systematic domain mapping with chimeras and point mutants to identify the Rab6A binding site. The loop 6/10 mutant loses Rab6A binding (C52, C56, C57) but retains microtubule binding (C55), demonstrating specificity. Structural modeling (C47, C48, C54, C59) supports the biochemical findings. Controls with KIF1A and loop 2/3 mutants strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Rab6A binding to the KIF1C motor domain inhibits microtubule interaction both in vitro and in cells. Rab6A increases the KD of KIF1C for microtubules by >10-fold in both AMP-PNP and ADP states, reduces the number of motors on microtubules by 30%, and decreases the percentage of moving motors by 60%, without affecting the speed or processivity of motors that remain motile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C72 demonstrate Rab6A-mediated inhibition of KIF1C-microtubule interaction through multiple complementary assays: co-sedimentation (C62-C64), TIRF microscopy (C69-C70), and cellular localization (C6, C75-C79). The effect is specific (C66 shows Rab33 has no effect), quantitative (>10-fold change in KD), and affects only microtubule attachment, not motor properties (C71-C72). The proposed conformational mechanism (C68) is reasonable given the structural location of the binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In cells, Rab6A co-expression reduces the microtubule localization of wild-type KIF1C-350 motor domain by 33% but does not affect the loop 6/10 mutant that cannot bind Rab6A, demonstrating that Rab6A influences KIF1C-microtubule association in vivo through direct motor domain binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 provide cellular validation of the in vitro findings. The differential effect on wild-type vs loop mutant KIF1C (C76-C78) demonstrates specificity and confirms that the motor domain interaction is functionally relevant in cells. Quantification using Pearson correlation (C77) provides statistical rigor (p < 0.001). Controls showing no change in total KIF1C expression rule out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "KIF1C depletion slows VSV-G protein delivery to the cell surface by 4.5-fold, demonstrating that KIF1C participates in post-Golgi protein transport to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C82-C84 use a well-established VSV-G transport assay with siRNA depletion to demonstrate KIF1C's role in secretory transport. The 4.5-fold decrease in delivery rate (C83) is substantial and statistically significant. This finding is consistent with prior genome-wide screens (C80-C81) and validates KIF1C's functional role in membrane traffic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "KIF1C depletion affects Rab6A vesicle motility by increasing confinement area 2-fold, increasing vesicle speed by 31%, increasing directional changes by 74%, and increasing backwards movement events. KIF1C promotes vesicle directionality and maintains confinement of stationary vesicles while preventing backwards motion of stalled vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C85-C92 use quantitative live-cell imaging with automated tracking to characterize vesicle behavior. The data show consistent effects across multiple parameters (confinement, speed, directionality) with statistical significance. The interpretation that KIF1C promotes directionality (C89-C92) is well-supported by the observation that speed increases but productive movement decreases upon KIF1C depletion. However, the inability to perform plasmid rescue limits the strength of the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "KIF1C depletion causes Golgi fragmentation, which can be rescued by wild-type KIF1C or the non-motile K103A mutant (which binds Rab6A but not ATP/microtubules), but not by the loop 6/10 mutant (which cannot bind Rab6A). This demonstrates that KIF1C influences Golgi morphology independent of motor function, but dependent on Rab6A binding at the motor domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C93-C101 use siRNA depletion and rescue with structure-function mutants to dissect KIF1C's role in Golgi organization. The key finding that the non-motile K103A mutant rescues (C99) while the Rab6A-binding-deficient loop mutant does not (C95) demonstrates that motor activity is dispensable but Rab6A binding is essential. Quantification of Golgi morphology (Figure 8B) provides statistical support. The localization data for mutants (C96-C97) confirm their expected properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "KIF1C overexpression protects Golgi ribbons from nocodazole-induced fragmentation in a manner dependent on Rab6A binding at both termini but independent of motor activity. Wild-type KIF1C, K103A, and E170A mutants (all capable of binding Rab6A) protect the Golgi, while loop 6/10 and \u0394CBD mutants (deficient in Rab6A binding) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C102-C108 use nocodazole treatment to test KIF1C's role in Golgi organization independent of microtubules. The pattern of rescue by different mutants (C102-C107) is internally consistent and supports the model that Rab6A binding at both ends is necessary and sufficient. Quantification (Figure 9B) shows statistical significance. The finding that motor-dead mutants rescue (C105-C106) confirms the motor-independent mechanism identified in the siRNA rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A small pool of KIF1C (both wild-type and K103A mutant) forms contacts with the Golgi, as revealed by liquid nitrogen permeabilization to remove cytosolic proteins. This pool is appropriately situated to contribute to Golgi structure stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 use a specialized permeabilization technique to detect a minor Golgi-associated pool of KIF1C that would otherwise be obscured by abundant cytosolic protein. The observation that the non-motile K103A mutant shows clearer Golgi contacts (C109) is consistent with its inability to move to the cell periphery. While the technique is appropriate and the data support the conclusions, the qualitative nature of the microscopy and the small size of the pool limit the strength of the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C112"
+    ],
+    "result": "KIF1C transports Rab6A vesicles and influences Golgi organization through a novel regulatory mechanism in which Rab6A binding to the motor domain represents an entirely new mode of regulation for kinesin motors, potentially allowing the motor to choose between binding membranes or microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14, C112 represent the major conclusions of the study. The novelty claim (C14, C112) is well-supported by the comprehensive demonstration that no prior examples exist of Rab GTPases binding motor domains to regulate motor-microtubule interactions. The functional consequences for vesicle transport (C1) and Golgi organization (C2) are demonstrated through multiple lines of evidence in the other result groups. The claim of novelty is appropriately qualified ('to our knowledge').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose a model in which KIF1C attaches to membranes via C-terminal Rab6A binding, after which the motor domain can either bind microtubules for transport, bind another Rab6A molecule to allow other motors to drive transport, or bind adjacent Rab6A-containing membranes. KIF1C could serve to hold Golgi mini-stacks together or play a role in vesicle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C120 present speculative models for how the dual Rab6A binding sites might function. While these models are reasonable interpretations of the data and are appropriately presented as hypotheses (using 'may,' 'could,' 'hypothetically'), they lack direct experimental support. The models are plausible given the demonstrated binding properties and functional effects, but would require additional experiments to validate. The speculation is appropriate for a Discussion section but does not constitute a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C40",
+      "C44",
+      "C80",
+      "C81",
+      "C117"
+    ],
+    "result": "Background claims about kinesin function, KIF1C structure, and prior findings on KIF1C and Rab proteins from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22, C40, C44, C80-C81, C117 represent background knowledge and citations to prior work. These are appropriately cited and provide context for the current study. The structural information about KIF1C (C17-C18) is supported by Figure 1A. The citations appear accurate based on the references provided. These claims establish the foundation for the novel findings but are not results of the current study.",
+    "result_type": "MINOR"
+  }
+]

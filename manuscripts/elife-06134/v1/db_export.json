@@ -1,0 +1,1562 @@
+{
+  "submission": {
+    "id": "185ad637-5a55-479c-a6c5-b58303502f4b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:00:59.756927Z",
+    "updated_at": "2025-11-29T05:00:59.756927Z"
+  },
+  "content": [
+    {
+      "id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "submission_id": "185ad637-5a55-479c-a6c5-b58303502f4b",
+      "content_type": "manuscript",
+      "content_text": "# A thesaurus for a neural population code\n\n## Authors\n\n- Elad Ganmor<sup>1</sup> ([ORCID: 0000-0003-4834-5713](https://orcid.org/0000-0003-4834-5713))\n- Ronen Segev<sup>2</sup>\n- Elad Schneidman<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Weizmann Institute of Science Rehovot Israel\n2. Department of Life Sciences, Zlotowski Center for Neuroscience Ben-Gurion University of the Negev Beer-Sheva Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nInformation is carried in the brain by the joint spiking patterns of large groups of noisy, unreliable neurons. This noise limits the capacity of the neural code and determines how information can be transmitted and read-out. To accurately decode, the brain must overcome this noise and identify which patterns are semantically similar. We use models of network encoding noise to learn a thesaurus for populations of neurons in the vertebrate retina responding to artificial and natural videos, measuring the similarity between population responses to visual stimuli based on the information they carry. This thesaurus reveals that the code is organized in clusters of synonymous activity patterns that are similar in meaning but may differ considerably in their structure. This organization is highly reminiscent of the design of engineered codes. We suggest that the brain may use this structure and show how it allows accurate decoding of novel stimuli from novel spiking patterns.\n\n## Introduction\n\nNoise is prevalent in the nervous system, from ion channels through synapses and single neurons, and up to the system level (Mainen and Sejnowski, 1995; Schneidman et al., 1998; Rieke et al., 1999; Osborne et al., 2005; Faisal et al., 2008; Ala-Laurila et al., 2011). Consequently, even when presented with identical stimuli, the brain may receive different spiking patterns from the sensory neurons (Mainen and Sejnowski, 1995; Berry et al., 1997; de Ruyter van Steveninck et al., 1997; Reich et al., 2001). The nature of neural noise thus determines how information is encoded in the brain (Borst and Theunissen, 1999; Stocker and Simoncelli, 2006; Cafaro and Rieke, 2010; Rolls and Treves, 2011), and how it might be read out from neural activity (Warland et al., 1997; Dan et al., 1998; Vargas-Irwin et al., 2010). To correctly decode, the brain must overcome this noise (Osborne et al., 2005; Sreenivasan and Fiete, 2011).\n\nIn engineering, codes are designed to solve this problem by choosing codewords that are far apart in the space of patterns, relative to the typical noise levels. That way, if noise corrupts a message, it would still be easily distinguishable from the noisy variants of other codewords (Cover and Thomas, 1991; Sreenivasan and Fiete, 2011; Curto et al., 2013). It is not clear however, how this issue is resolved in the brain, or how it affects the design of the neural code, where information is carried by the joint activity patterns of large groups of noisy neurons (Nicolelis et al., 1995; Maynard et al., 1999; Mazor and Laurent, 2005; Fujisawa et al., 2008; Pillow et al., 2008; Truccolo et al., 2010; Ganmor et al., 2011a; Harvey et al., 2012). It is clear that the nature of correlations among neurons is central in shaping the code's capacity and content, in particular in the context of noise (Zohary et al., 1994; Zemel et al., 1998; Abbott and Dayan, 1999; Diesmann et al., 1999; Sompolinsky et al., 2001; Schneidman et al., 2006; Pillow et al., 2008; Shlens et al., 2009; Ganmor et al., 2011b; Schwartz et al., 2012; Granot-Atedgi et al., 2013). However, the functional role of these correlations in encoding information by large populations has been heavily debated (Nirenberg et al., 2001; Amari et al., 2003; Pola et al., 2003; Schneidman et al., 2003a, 2006; Averbeck et al., 2006; Tkacik et al., 2006; de la Rocha et al., 2007; Pillow et al., 2008; Ecker et al., 2010; Ohiorhenuan et al., 2010; Oizumi et al., 2010; Ganmor et al., 2011a), partly because of the difficulty to study them directly at the network level and the limitations of generalizing from small groups of cells to large ones.\n\nTo uncover the structure and content of neural population codebooks, we must be able to quantify the similarity between population activity patterns. In other words, we need to understand network noise well enough to know which patterns are likely to be interchanged in encoding the same stimulus. Several studies suggested intuitive and computationally efficient measures of spike train similarity (Victor and Purpura, 1997; van Rossum, 2001; Houghton and Sen, 2008). However, they mostly focused on single neurons and often assumed the functional form of similarity between responses. Despite their computational simplicity, it is not clear whether such simple metrics can adequately represent similarity between neural responses. The Hamming distance, for example, is a very intuitive measure of similarity between population activity patterns, simply defined as the number of neurons that switch state from spiking to silence and vice versa. Yet, it measures similarity in form, or syntactic similarity, but not necessarily similarity in meaning, that is, semantic similarity (Huth et al., 2012). This would be analogous to suggesting that \u2018night\u2019 and \u2018light\u2019 are similar in meaning because they differ by just one letter. Extending such metrics to large populations requires additional assumptions on the way the similarity measures between different cells should be combined.\n\nWe suggest here that the semantic similarity between neural activity patterns can be measured by comparing what each pattern tells the brain about the stimulus. We demonstrate that in the vertebrate retina, responding to natural and artificial stimuli, we can estimate this similarity between any pair of population responses, using models of population encoding noise. Using this similarity structure, or \u2018thesaurus\u2019, we can map the semantic organization and content of the population codebook and show how it enables the accurate decoding of novel population patterns.\n\n## Results\n\nTo study the variability, or noise, which is inherent to encoding of sensory stimuli by large populations of neurons, we presented isolated salamander retinas with over 600 repeats of the same 10 s long video clips (one natural video and one artificial spatially uniform and temporally Gaussian flicker video), and recorded the joint response of dozens of retinal ganglion cells (see \u2018Materials and methods\u2019). Each video was presented continuously in a loop for \u223c2 hr. This allowed us to collect hundreds of neural population responses evoked by the exact same visual stimulus (including identical stimulus history up to several minutes). Figure 1A shows examples of the stochastic, or noisy, responses of single neurons from the population to the same stimulus segment (see also Mainen and Sejnowski, 1995; Berry et al., 1997).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig1-v1.jpg)\n\n**Figure 1.:** (A) Subset of the responses of four retinal ganglion cells to 20 repeats of the same artificial video clip (out of 641 altogether). Each block corresponds to one cell, each line to a single repeat; black dots mark spike times. (B) Top: Response of a population of 20 retinal ganglion cells to four repeats of the same stimulus as in A. Here, each block represents the response of the entire population in a single trial and each line represents a single cell. Bottom: All 641 population responses of the 20 cells (across repeats) for one time point marked by the shaded bar in the raster plot above. Black ticks represent spikes; each vertical slice in the plot is the population response on a single trial and is therefore a single sample from the conditional distribution of responses given the stimulus presented at that point in time P(r|s). (C) Top: Conditional entropy of the population response patterns, given the stimulus, as a function of time for a 10 s artificial video clip repeated hundreds of times. Thin gray lines correspond to different groups of 20 cells; Average over 10 groups is shown in purple. Bottom: The average firing rate, for the same stimulus, shown as a function of time. (D\u2013F) Same as A\u2013C but for a natural video clip (with 693 repeats).\n\nIn order to examine the responses at the population level, we defined the population activity pattern r(t) as the binary vector of the instantaneous states of each neuron: the ith entry in the vector, ri, being 1 if the ith neuron spiked, and 0 if it was silent (responses were binned in 20 ms bins; for other bin sizes see Figure 5\u2014figure supplement 4). Note that each time point, t, corresponds to a particular segment of the video (t runs from 0 to 10 s\u2014the length of the video), and thus to a particular visual stimulus which we denote as s(t). For a 10 s long video, binned at 20 ms, we have 500 such stimuli.\n\nBy collecting the responses recorded at the same time point in the video across many repeated presentations, we obtain samples from the conditional distribution of activity patterns r given a stimulus s, denoted P(r|s). This distribution is commonly referred to as the \u2018encoding distribution\u2019 of the stimulus. Figure 1B shows samples of the joint responses of 20 neurons (the population size we focus on in this study) across the repetitions of the video, reflecting the wide variety of different population activity patterns evoked by the same stimulus.\n\nWe quantified the variability of the population patterns that encoded the same stimulus by the entropy, H, of the encoding distribution, P(r|s), which measures the \u2018width\u2019 or richness of the distribution (see \u2018Materials and methods\u2019). Figure 1C shows the entropy of P(r|s) as a function of time (or, equivalently, of stimulus), along with the instantaneous population rate, reflecting that the variability of the population responses is high when the population's firing rate goes up.\n\n### Measuring semantic similarity between population activity patterns\n\nThe encoding noise determines which population patterns may be used to encode the same stimulus and thus implicitly defines similarity between patterns. We submit that two neural activity patterns are similar, in terms of their meaning, to the extent that they convey similar information to the brain. This constitutes semantic similarity between population patterns, which does not necessarily rely on any syntactic similarity (for example total spike count). Intuitively, this is analogous to synonyms in natural language, which may not look similar, but still have the same meaning (Pereira et al., 1993).\n\nThe meaning of a neural activity pattern r is given by what it tells the brain about its corresponding input, or in the case of sensory systems, the potential stimuli that could have resulted in that response. Since the mapping between stimulus and response is probabilistic, the meaning of r is given by the probability distribution over stimuli conditioned on that response, namely P(s|r). We therefore defined the distance between two neural population activity patterns rk and rl as the dissimilarity between P (s|rk) and P (s|rl),\n\n$$\nd(r_{k},r_{l})=D_{JS}(P(s|r_{k})||P(s|r_{l})),\n$$\n\nwhere DJS is the Jensen-Shannon divergence between the distributions (see \u2018Materials and methods\u2019)\u2014a symmetric measure of dissimilarity that varies between 0, for identical distributions, and 1, for non-overlapping distributions. Here, 0 would imply that the two activity patterns are perfect \u2018synonyms\u2019 and have identical meaning, whereas 1 would imply completely different meaning.\n\nRather than directly estimating P(s|r), which is challenging both experimentally and statistically, we can instead estimate P(r|s) and infer P(s|r) through Bayes' rule, namely P(s|r) = P(r|s)P(s)/P(r), where P(s) is the distribution over stimuli (set to be a uniform distribution over all video frames used in the experiment), and P(r) is the distribution of the neural responses (calculated by marginalizing over stimuli, $P(r)=\\sumsP(s)P(r|s)$). Our experimental design, in which we presented many repeats of the same video, allowed us to draw hundreds of samples from P(r|s), for every s. However, due to the exponential number of possible population activity patterns one cannot directly sample this distribution in full even for groups of 20 neurons. Instead, we construct accurate models of population encoding noise, which we then use to estimate d(ri,rj) for any pair of population patterns.\n\n### Population responses to \u2018interesting\u2019 stimuli exhibit strong network noise correlations\n\nThe properties of encoding noise, and in particular, the magnitude and importance of correlations between neurons in encoding a stimulus, commonly known as \u2018noise correlations\u2019, have been heavily debated (Nirenberg et al., 2001; Schneidman et al., 2003a; Ohiorhenuan et al., 2010; Oizumi et al., 2010). For pairs of neurons, average noise correlations are typically weak (Cafaro and Rieke, 2010; Ecker et al., 2010), implying that pairs of neurons are not far from being conditionally independent given the stimulus. If groups of cells were encoding information independently, that is, if $P(r|s)=\u03a0_{i}P(r^{i}|s)$ for large populations, then P(r|s) would be defined by the individual and independent noise of each neuron and would be easily learned from the noise of each neuron P(ri|s). However, weak pairwise correlations do not imply that large groups are conditionally independent in encoding stimuli (Schneidman et al., 2006; Pillow et al., 2008; Vidne et al., 2012; Granot-Atedgi et al., 2013). Moreover, noise correlations are often estimated on average, over a range of different stimuli, and it is not clear what low average noise correlations imply for population encoding of specific stimuli.\n\nWe therefore estimated the noise correlations at the population level, for each stimulus s. Specifically, we quantified the correlation of the population in encoding the stimulus s, by the multi-information, I(r|s)=H[Pind\u2009(r|s)]\u2212H[P(r|s)] (Amari, 2001; Schneidman et al., 2003b), where H[Pind\u2009(r|s)] is the entropy assuming neurons are independent given the stimulus\u2014Pind(r|s)=\u03a0iP(ri|s), and H[P(r|s)] is the entropy of the joint population response to the stimulus s (estimated following Strong et al., 1998). We note that I(r|s) measures the total correlations of all orders among the cells. We found that most stimuli did not evoke a substantial response from the retina, which gave rise to low noise correlation in the network for these stimuli. However, when something \u2018interesting\u2019 happened in the video and the ganglion cells increased their firing rates, we found a sharp increase in the degree of network noise correlations for both natural and artificial videos (Figure 2A,B; see Figure 2\u2014figure supplement 1 for analysis of sampling properties). Thus, while on average the network noise correlations may be weak, the population was strongly correlated and far from conditionally independent in response to interesting stimuli. In other words, for these stimuli, the variability or noise at the level of the network is significantly reduced compared to what would be expected from the apparent noise level of individual cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig2-v1.jpg)\n\n**Figure 2.:** (A) Population noise correlation, measured by the multi-information over the conditional population responses, at each point in time in response to an artificial video. Thin gray lines correspond to individual groups of 20 cells; average over groups is shown in purple. (B) Population noise correlation as a function of average population firing rate for one representative group. Interesting events in the video evoke a vigorous response by the retina, characterized by strong network correlations. (C) Distribution of spike counts across different repeats of the same stimulus for the time point marked by black dot in A. Purple dots correspond to empirical estimates, gray line is what we would expect if neurons were conditionally independent, given the stimulus; and red line is the prediction of the maximum entropy pairwise model. (D\u2013F) Same as A\u2013C but for a natural video clip.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Pairwise maximum entropy upper bound on entropy (gray) and the extrapolation corrected noise entropy (Treves and Panzeri, 1995; Strong et al., 1998) (purple) are shown as a function of the naive noise entropy estimate. Each dot corresponds to the distribution at a single time point in the artificial video; black line marks identity. The bias corrections are on the order of a few percent at most. (B) Same as A, but for data taken from the natural video data set (693 repeats).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) A pairwise (second order maximum entropy as in the text) and an independent model (product of marginals) was fit to each time point (equivalently stimulus) in the artificial video using 90% of video repeats. The log likelihood ratio of the two models (log[LikelihoodPairwise/LikelihoodCond. \u2212 Indep.]) is plotted as a function of time (equivalently stimulus), for the held out 10% of repeats. The likelihoods are similar much of the time, corresponding to low firing epochs, but for many points in time the likelihood of the pairwise model can be orders of magnitude higher. (B) Same as A, for the natural video.\n\nIndeed, conditionally independent models of population encoding (which assume no noise correlations) fail exactly at such interesting stimuli (Pillow et al., 2008; Granot-Atedgi et al., 2013), reflecting that in order to accurately characterize the population responses and the noise, we need a model that takes into account correlations between the cells that depend on the stimulus. We extended the framework of maximum entropy models for neural activity patterns (Schneidman et al., 2006; Shlens et al., 2009), to the population responses to each stimulus (Granot-Atedgi et al., 2013): for each stimulus, s, we fit the minimal model that has the same stimulus dependent firing rates and pairwise noise correlations observed over the repeats of that stimulus. This stimulus-dependent pairwise maximum entropy model is given by\n\n$$\nP^{(2)}(r|s)=\\frac{1}{Z(s)}exp(\\sumi\\alpha_{i}(s)r^{i}+\\sumi<j\\beta_{ij}(s)r^{i}r^{j}),\n$$\n\nwhere \u03b1i(s) and \u03b2ij(s) were fit to obey the constraints. We found that P(2)(r|s) gave relatively accurate models of the distribution of patterns that the population displayed across repeats, for the different stimuli (Figure 2\u2014figure supplement 2), in agreement with Granot-Atedgi et al. (2013). In particular, they captured accurately the strong network noise correlations (Figure 2C).\n\n### A thesaurus for a neural population code\n\nWe then use the distributions P(2)(r|s) that describe the population encoding noise, to estimate the dissimilarity, d(ri,rj), between any pair of patterns over the population in a reliable and precise manner. Since there are over a million possible population activity patterns for 20 neurons, we present here only the similarity matrix of all the population patterns that were observed in the test data (half of the data, which was randomly selected and not used to learn the similarity between activity patterns).\n\nIf stimuli were represented by overall population rates (Bohte et al., 2000; Amari et al., 2003; Loebel et al., 2007; Schwartz et al., 2012), then responses containing the same number of spiking neurons would be similar, and thus would have a small d between them. Figure 3A shows the similarity matrix d(ri,rj) for one representative group of 20 cells, where matrix rows (and columns) stand for individual population patterns and are ordered according to the total number of spikes in each response. The lack of structure in the matrices for both artificial and natural stimuli shows that similar spike counts do not imply similar meaning.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig3-v1.jpg)\n\n**Figure 3.:** (A) Top: Similarity matrices of the population responses of representative groups of 20 neurons to an artificial (left) and natural (right) video. Each entry in the matrix corresponds to the similarity, d (see text), between two population responses observed in the test data (responses shown at bottom). Matrix rows (and columns) are ordered by total spike count in the population responses. Bottom: The population responses corresponding to the entries in the matrix; black ticks represent spikes. Each column is a population activity pattern corresponding to the matrix column directly above. Blue lines mark borders between different clusters. The lack of structure in the matrices implies that population responses with similar spike counts do not carry similar meanings. (B) Same as A, only here the matrix is clustered into 120 clusters. Matrix rows (and columns) are ordered such that responses from the same cluster appear together. A clustered organization of the population code is clearly evident. (C) Same as B, but using the Hamming distance between population responses, instead of the similarity measure d. A simple measure of syntactic similarity does not reveal the underlying clustered organization of the code.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The similarity matrix used in Figure 3 in the main text was first randomly shuffled and only then clustered. Clearly the grouping structure has disappeared, suggesting the structure is a property of the code's organization and not the values in the matrix or the power of the clustering algorithm. (B) For each of the ten 20 neuron groups we calculated the C Index (Hubert and Schultz, 2011) (left, labeled \u2018Data\u2019), which measures goodness of clustering; a smaller C Index corresponds to better clustering. For each matrix, we then measured the C Index for 100 randomly shuffled versions and took the minimal value of all shuffled matrices (right, labeled \u2018Shuffled\u2019). None of the shuffled values came close to the real values, indicating a p-value smaller than 0.01 for each matrix. (C) Correlation coefficient between similarity matrices estimated using different fractions of data. Overall we had 641 repeats of the artificial video. Using 70% of the repeats, we are at \u223c0.9 correlation with our estimates using all available repeats (Data are for the same matrix shown in Figure 3 of main text). (D\u2013F) Same as A\u2013C but for data taken from the natural video data set.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) We sought a simple formula to approximate the similarity measure d, in the spirit of the measures described in Victor and Purpura (1997); van Rossum (2001); Houghton and Sen (2008). The Hamming distance gave a very poor approximation of similarity and even a measure which gave a different weight to each neuron, $\\delta_{1}(r_{i},r_{j})=\\sum\\muw^{\\mu}(r_{i}^{\\mu}\u2212r_{j}^{\\mu})^{2}$, performed very poorly. Shown is a joint histogram of the similarity values d(ri,rj) (x-axis) and the corresponding values predicted by a global second order similarity model $\\delta_{2}(r_{i},r_{j})=\\sum\\mu\\sum\u03bdw^{\\mu\u03bd}(r_{i}^{\\mu}\u2212r_{j}^{\u03bd})^{2}$ (y-axis. w parameters fit to train data; results for cross-validated test data are shown) for the responses of a representative group of 20 neurons (same as in Figure 3) to an artificial video. For clarity, values were normalized about the y-axis, such that each vertical slice sums to one. (B) Joint histogram of the similarity values of pairs of responses from the same cluster (x-axis) and the similarity predicted by a local second order model for similarity, that is, \u03b42 applied independently to each cluster. Other details as in A. These results suggest that noise is highly stimulus dependent and cannot be accurately described by a global, stimulus independent, model. Yet, for a given cluster, we can accurately describe its similarity neighborhood, using the appropriate set of single neurons and neuron pairs. (C) In support of the previous conclusion, we found that close inspection of large response clusters reveals an obvious structure within clusters. Many of the clusters of similar responses can be characterized as having very precise neurons (almost always spiking or almost always silent), alongside more noisy neurons, which appear to be nearly random within a cluster. These precise and noisy neurons differ from one cluster to another. Shown is a detailed view of the responses in a subset of the clusters, which contain between 20 and 50 different patterns and appear most frequently in the data. Top: All population responses belonging to each cluster (clusters separated by vertical lines). Each horizontal line corresponds to one neuron; each vertical slice is the response of the population to a single repeat. Bottom: The average response of each cluster. The spiking probability of each neuron is represented by its gray scale intensity (color bar: dark\u2014high spike probability, light\u2014low spike probability). (D-F) same as (A-C), but for a natural video stimulus.\n\nIn clear contrast, when we used a hierarchical clustering algorithm on d(ri,rj) matrices and grouped responses together according to their similarity (see \u2018Materials and methods\u2019), we found that the ordered matrices exhibit an almost perfect block diagonal structure (Figure 3B; see Figure 3\u2014figure supplement 1 for statistical analysis). Thus, the population code that is used by the retina both for artificial videos, and for natural videos, is arranged in sets, or clusters, of highly similar activity patterns, which are very different from all other patterns. We term these groups of highly similar responses neural \u2018synonyms\u2019, and by analogy we refer to the similarity measure d as a neural thesaurus.\n\nWe examined whether the Hamming distance, which is a simple and intuitive measure of similarity between population responses (the number of neurons that differ in their spiking or silence state), was sufficient to reveal the structure of the population codebook. We thus constructed the matrices of Hamming distances between all pairs of population activity patterns, and clustered the responses, using the same hierarchical agglomerative clustering. Figure 3C shows the Hamming matrix for the same group of 20 cells from a\u2013d, where matrix rows (and columns) are ordered according to the clustering results. We did not find evident structure in the codebook used for natural stimuli, and only slightly more structure was apparent for the artificial stimuli. We emphasize that the results of Figure 3 were typical for many independent choices of groups of cells (as is summarized later in Figure 5).\n\nThese results reflect the importance of measuring similarity in meaning and not similarity in structure. Using a syntactic (structure based) measure, we would not have been able to uncover the clustered organization of the neural population code that the semantic similarity reveals. Patterns that belong to the same cluster do exhibit some shared structure, namely some of the neurons almost always fire in a specific cluster and others are always silent (Figure 3B, bottom). However, importantly, we found that the semantic similarity structure over all the patterns we observed could not be captured by a simple linear or bilinear function of the population patterns (Figure 3\u2014figure supplement 2).\n\n### Coding by clusters\n\nThe clustered structure of the neural population codebook suggests that the same stimulus may be represented by different, yet semantically similar population patterns, or synonyms. Such structure is commonly used in engineered codes in computer science and communications (Cover and Thomas, 1991; Sreenivasan and Fiete, 2011; Curto et al., 2013). This gives rise to two important predictions, which we confirmed by cross-validation, using novel (held out) test stimuli: 1. Responses to repeated presentations of a stimulus should come from the same cluster. 2. Responses from the same cluster should be nearly interchangeable.\n\nTo directly show the advantages of cluster-based encoding of information by the retina, we quantified the reliability of population patterns used to encode the same stimulus. Because of the noise, the responses to repeated presentations of the same stimulus are so variable that even the most frequent population pattern would occur only a handful of times (Figure 4A,B). However, the reliability of the population code is revealed when instead of focusing on individual patterns, we count how many of the population patterns evoked by the same stimulus belong to the same cluster. Notably, even when the population response was highly unreliable (i.e., the most frequent response pattern appeared less than 20% of the time), often over 70% of the observed responses would fall within a single cluster (mostly for the natural video), for the cross-validated test data (see Figure 4\u2014figure supplement 1 for statistical analysis).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig4-v1.jpg)\n\n**Figure 4.:** (A) The probability of the most frequent response across video repeats is plotted as a function of stimulus identity in gray (stimuli are sorted by reliability). In purple, we plot the reliability of the clustered response, that is, the probability of observing a response from the most frequent cluster for each stimulus (clustering matrix presented in Figure 3). Only the 100 stimuli that evoked the strongest response are shown. Clearly, responses to the same stimulus tend to come from the same cluster, even when the most frequent single response occurs less than 20% of the time, thus the cluster code is far less noisy. (B) Same as A but for the natural video data set.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Responses recorded at the same time point across video repeats cluster together significantly. Shown is the probability of the most frequent cluster, plotted as a function of stimulus id (purple; stimuli sorted by reliability), for the clustered response; that is, the probability of the most frequent cluster evoked by each stimulus (same as Figure 4A). For comparison, we also shuffled the cluster assignment of each response and repeated the analysis. Shown in gray is mean \u00b1 STD of the most frequent cluster in 100 randomly shuffled cluster assignments. Clearly, for many time points the high reliability of the clustered response is not merely a result of response grouping, but the tendency of responses from the same cluster to be associated with the same stimulus. (B) Same as A, but for natural video data set.\n\n### Clusters convey most of the information available about the stimulus\n\nThe most direct test of \u2018coding by clusters\u2019 is to ask how much information about the stimulus would be lost if instead of knowing the precise population activity pattern (exactly which neurons spiked and which ones were silent) we only knew which cluster the pattern belongs to. We therefore compared the information that the full set of population responses r carry about the stimulus I(s;r), to the information that is carried just by knowing which cluster (out of k possible ones) the response belongs to, I(s;Ck(r)). To that end, we labeled every population pattern in the test data according to its cluster identity, Ck(r), based on the similarity structure learned from training data (see \u2018Materials and methods\u2019). To avoid any arbitrary assumptions about the number of clusters, we assessed how much information is carried by k clusters, for different values of k (Figure 5) on novel test data that was not used for learning the similarity structure. We found that \u223c100 clusters were enough to account for over 80% of the information available about the stimulus in the detailed population patterns, for both types of stimuli. Importantly, clustering the responses based on the Hamming distance between them gave significantly worse results. This clearly reflects that responses in the same cluster have a similar meaning and can indeed be viewed as noisy variants of a noise-free codeword, similar to the ground states or attractors in a Hopfield model (Hopfield, 1982; Tkacik et al., 2006).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig5-v1.jpg)\n\n**Figure 5.:** (A) The fraction of information retained about the stimulus when population responses are replaced with the label of the cluster they belong to, plotted as a function of the number of clusters used. Lines correspond to the average of 10 groups of 20 neurons, line widths represent SEM. Purple\u2014clustering based on the similarity measure described in the text, gray\u2014clustering based on the Hamming distance. Inset: Fraction of information as a function of the number of clusters on a linear scale. Individual groups are shown in gray, and the orange line marks the curve corresponding to the representative matrix from Figure 3. Very few clusters are required to account for most of the information, suggesting responses from the same cluster have a similar meaning. (B) Same as A, but for a natural video clip.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Fraction of information retained about the stimulus plotted against the number of response clusters. The similarity measure learned from the artificial video train data is applied either to cross-validated test data (same as Figure 5 of main text; purple line), or to the train data itself (purple dots). We see nearly identical performance on cross-validated and non cross-validated data. Shown is the same representative group of 20 neurons as in Figure 3. (B) The number of clusters required to recover over 50% (filled purple circles) or 80% (open triangles) of the information available about the stimulus, plotted as a function of the inverse number of stimuli in the test data (train data remained fixed), on a semi-logarithmic scale. Also shown, for comparison, is the overall number of observed patterns (black line). Depicted are average and SEM (may be smaller than markers) over 10 different groups of 20 neurons. As the number of stimuli in the test set increased, we saw a very mild increase in the number of clusters required to account for either 50% or 80% of the information. In fact, there was no significant increase in the number of clusters when the number of stimuli increased from 200 to 250 (p > 0.4, sign rank test), while the number of observed patterns grew significantly by over 500 (p < 0.01 sign rank test). This suggests that the clusters (or \u2018code-words\u2019) we identified are relevant to a wide range of stimuli within the same stimulus class. (C, D) Same as panels A and B, but for data taken from the natural video data set.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Fraction of information retained about the stimulus plotted against the number of response clusters (full field flicker stimulus). Responses were either clustered using simple agglomerative clustering (purple. Same as in main text, see \u2018Materials and methods\u2019), or using agglomerative information bottleneck clustering (Slonim and Tishby, 1999), which explicitly aims to cluster responses such that maximal information about the stimulus is retained (black). Although, we would expect clustering aimed at information maximization to do a better job, after cross-validation (applying the clustering to novel responses to novel stimuli), we see that the simple similarity based clustering performs just as well. The data shown are for the same representative group as used throughout the main text. We note that results are shown for cross-validated test data, and that information bottleneck clustering is a greedy approach with no guarantee of optimality, thus it is possible for similarity based clustering to outperform information bottleneck clustering. (B) Same as A, but for the responses to a natural video stimulus.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Left: The probability of observing the most frequent response across repeats of the artificial video is plotted as a function of stimulus i.d. in gray; for clarity, the stimuli are sorted by reliability of their responses. In black is the reliability of the clustered response, that is, the probability of the most frequent cluster evoked by each stimulus, where responses were clustered by similarity derived from a conditionally independent model. In purple is the clustered reliability as derived from the pairwise model used in the main text (same as Figure 4). Only stimuli that evoked a strong response (at least one spike in over 75% of the repeats) are shown. Here, reliability is much higher when using the more accurate pairwise model to derive similarity between population responses. Right: Same as left, but for the Natural video data set. Here, differences between conditionally independent and pairwise models are less pronounced. (B) Left: Similarity derived from the conditionally independent model is directly compared with the similarity derived from the pairwise model, for test responses to the artificial video. Similarities between response pairs calculated using the conditionally independent model were binned (x-axis) and the mean and standard deviation of the similarity for the same pairs was calculated using the pairwise model (y-axis). Black line marks identity. Right: Same as left, but for the natural video. We see that similarity measured using the conditionally independent model is closer to that measured using the more accurate pairwise model under natural stimulation. (C) Left: same as Figure 5A, but here we compare the fraction of information as a function of number of clusters curve obtained by using the pairwise model (purple) and the one obtained using the conditionally independent model, in which noise correlations are ignored (gray).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Correlation matrix between the similarity values estimated for all possible response pairs. For a given group of 8 neurons from the artificial video data set, we calculated the full similarity matrix over all 256 possible responses. This was done for bin sizes between 5 and 80 ms. We then calculated the correlation between the similarity matrices for each combination of bin sizes. Shown is an average across 8 randomly chosen groups of 8 neurons. The results indicate that except for extreme differences in bin size, we recover highly consistent similarity structures. (B) The fraction of information is shown as a function of the number of clusters in the similarity matrix (compare to Figure 5 in main text). Different bin sizes are indicated by colors. Different lines correspond to different individual 8 neuron groups (same groups as A). We see very similar results except for the very short time bin of 5 ms. (C, D) Same as A and B but for data taken from the natural video data set.\n\nWe therefore conclude that grouping responses by their similarity in the training data identified clusters that conserved the information available about the stimuli in the test data, thus indicating that the similarity we measured is a general feature of the code and not limited to a particular set of stimuli. Importantly, all stimuli in the test data and many of the neural responses they evoked were not observed in the training data that we used to learn d(ri,rj). Thus, the limited number of stimuli and responses observed in the training data were sufficient to identify semantic clusters and predict the similarity between over a million possible neural responses evoked by a multitude of different possible stimuli, which were verified using the test data. We further point out that d(ri,rj) was so stable across time and for different selections of train and test data, that the information curves derived from clustering the cross-validated test data and the training data itself were nearly identical (Figure 5\u2014figure supplement 1). In addition, the number of clusters required to convey 80% of the information seems to saturate with the size of the test set (Figure 5\u2014figure supplement 1). We conclude that the similarity between neural responses does not rely on the specific stimuli we used and would generalize to other stimuli at least within the same stimulus class.\n\nWe further emphasize that clustering of the responses was based on similarity alone and was not optimized to maximize information in any way (which could therefore give even better results). Yet, even if we clustered patterns by explicitly trying to maximize the information, we achieved very similar results (Figure 5\u2014figure supplement 2). This suggests that grouping responses simply by their semantic similarity may be nearly optimal from an information transmission standpoint.\n\nWe also estimated the semantic similarity between population patterns with simpler models for the population responses to the stimuli\u2014using conditionally independent models of encoding, where for each stimulus s the response is described by $P(r|s)=\u03a0_{i}P(r^{i}|s)$. Although these models give a different and less accurate estimate for the probability distribution than the pairwise model P(2)(r|s) (Figure 2), we find that grouping the population activity patterns using this model results in a similar clustered structure (see Figure 5\u2014figure supplement 3). This may suggest that the codebook organization into clusters is sufficiently robust, so that even when using a less accurate model of the neural responses one can identify the organization of the response space (see more in the \u2018Discussion\u2019).\n\n### Mapping the structure of the neural population codebook and its meaning\n\nGiven that almost all information about the stimulus is carried by the identity of the cluster that a given activity pattern belongs to, we asked whether we can map the functional organization of the population codebook. We used Isomap (Tenenbaum et al., 2000) to present a low dimensional embedding of all the population responses associated with clusters that contain 30\u2013300 responses in three-dimensional Euclidean space (Figure 6A; see \u2018Materials and methods\u2019 and Video 1 for the raw data points in 3D). Isomap is an embedding algorithm for high dimensional data that preserves the geodesic distance between points. While this embedding is imperfect (one would need more dimensions to achieve a nearly perfect embedding; see Figure 6\u2014figure supplement 1), it provides an approximate view of the organization of the population code of a sensory system and coarsely reflects the \u2018cloud\u2019 of patterns that make up each cluster.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig6-v1.jpg)\n\n**Figure 6.:** (A) The responses belonging to clusters that contain 30\u2013300 patterns were embedded using Isomap. Each ellipse represents the 1 STD Gaussian fit to all responses belonging to a single cluster. The Euclidean distance in the plot approximates the similarity measure d (see text). The coordinates also correspond to the RGB value of each ellipse, thus nearby clusters share similar colors. Same representative group as in Figure 3. (B) Embedding of cluster triggered average waveforms in 2D Euclidean space. For each pair of clusters from panel A, we calculated the inter-cluster distance as the average similarity between pairs of responses, one from each cluster. Clusters were then embedded in 2D space using Isomap in a manner that approximates the calculated distances. Each cluster is represented by the mean stimulus that preceded (250 ms) responses belonging to that cluster. Thus, nearby waveforms belong to similar clusters. Clusters are colored as in panel A, therefore the blue channel corresponds to the third dimension of embedding not shown in the plot.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Geodesic vs embedded distances for the embedding shown in Figure 6A. The x-axis is the Geodesic distance between clusters (i.e., distances in the neighborhood graph; methods), vs the Euclidean distances after embedding in 3D. (B) Residual variance as a function of dimensionality for embedding of waveforms in Figure 6A. The residual variance is defined as 1 \u2212 r2(dG,dIso), where r is the correlation coefficient, dG is the geodesic distances between points as defined by the weighted neighborhood graph (Tenenbaum et al., 2000), and dIso is the Euclidean distances between points after embedding. (C) Same as A, but for embedding of responses in Figure 6B. Due to the large number of population responses embedded (2391), we show the joint histogram of the geodesic (x-axis) and embedded (y-axis) distance values. Colorbar represents frequency of occurrence of distance pairs. (D) Same as B, but for embedding of responses in Figure 6B. (E) For each pair of clusters shown in Figure 6A, we calculated the correlation coefficient between the cluster triggered average stimulus (the average of all stimuli preceding responses in a cluster) of each cluster, and plot it as a function of the distance between the clusters. Inter cluster distance was defined as the average similarity between pairs of responses, one from each cluster. Even though the correlation coefficient is not the ideal measure to quantify similarity among stimuli, we still see a clear and significant relationship between cluster similarity and stimulus similarity. Namely, clusters that are more similar (smaller values on the x-axis) have a higher correlation between their associated average stimuli.\n\n![Video 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-media1.avi.jpg)\n\n**Video 1.:** Each dot represents a single population response to the artificial video; the Euclidean distance between points approximates the similarity d between them. Similar to Figure 6A, only we explicitly plot every population activity pattern in each cluster. Colors represent different clusters and correspond to the colors in Figure 6A,B.\n\nTo show the functional correlates of these clusters in coding, we present the similarity between clusters in terms of the stimuli that they encode. To that end, we quantified the distance between each pair of clusters, Cm and Cl, by the average distance between all inter-cluster response pairs, $\u2329d(r_{i},r_{j})\u232a_{i\\inC_{1},j\\inC_{2}}$. We then embed the clusters in a Euclidean space according to the similarity between them (again using Isomap). Thus, in Figure 6B each cluster is represented by the average of its associated stimulus ensemble (we emphasize that the stimuli were taken exclusively from the test data). Hence, waveforms that are closer in space belong to clusters that are more similar. We find that response similarity measured from the training data predicts stimulus similarity in the test data (Figure 6\u2014figure supplement 1 shows the correlation between cluster similarity and stimulus similarity; for more accurate metrics on stimulus space, see [Tka\u010dik et al., 2013]). Thus, the similarity measure proposed here for the population responses captures similarity in meaning and generalizes across stimuli. We note that this analysis could only be carried out on the simple one dimensional full field video, as there is no evident way to reduce the dimensionality of natural stimuli.\n\n### Decoding novel population patterns using the neural thesaurus\n\nThe organization of the retina codebook may also explain how the brain can decode novel stimuli from novel neural activity patterns. Namely, if we observe a response r that we have never seen before, we can now ask what similar responses tell us about the stimulus. Importantly, this can be done since P(2)(r|s) allows us to estimate d(ri,rj) even for patterns we have not seen in the past. Indeed, we found that P(s|r) for a held-out test response, r, could be well estimated simply by taking P(s|r\u2032) for the response, r\u2032, which is most similar to it. Similarity was assessed using the thesaurus that we learned from the training data, that is, for different stimuli than the ones we tested on (Figure 7A,B). This approach clearly improved our ability to estimate the stimulus compared to our prior knowledge about the stimulus, as measured by the Jensen-Shannon divergence between the \u2018true\u2019 P(s|r) and the estimate (Figure 7C). Using a thesaurus based on the Hamming distance clearly degraded performance and reduced the accuracy of the stimulus estimate (Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig7-v1.jpg)\n\n**Figure 7.:** (A) The conditional distribution over stimuli for one population response, P(s|r), to the artificial video is shown (black dots). P(s|r) can be well approximated by the conditional distribution over stimuli P(s|r\u2032) where r\u2032 is the response most similar to r according to the thesaurus d (\u2018r\u2032Nearest\u2019, purple line). Actual responses are shown as inset. The same representative group of 20 neurons shown in Figure 3 was used here. Error bars represent standard errors of the probability estimates B. Same as in A, but for a natural video clip. (C) Top: The average Jensen-Shannon divergence between the \u2018true\u2019 P(s|r) and the estimate described in panel A (Semantic), or for an estimate derived using the Hamming distance instead of our similarity measure (Hamming), for the artificial video data. Also shown is the average divergence from the prior over stimuli (Prior). Plotted are mean and standard errors (barely discernable) across all patterns that had at least one close neighbor (<0.25 bits away). Bottom: Same as above, but for the natural video data. Having a thesaurus markedly improves our ability to gain some knowledge about never before seen responses, compared to a naive prior, or even to using Hamming distance as a similarity measure.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06134/elife-06134-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Left: The average Jensen-Shannon divergence between the \u2018true\u2019 P(s|r) and the estimate based on the most similar response as measured using either the conditionally independent model or the pairwise model used in the main text (see Figure 7), for responses evoked by an artificial video. Plotted are mean and standard errors (barely discernable) across all patterns that had at least one close neighbor (<0.25 bits away). The pairwise model performs on average slightly yet significantly better (p < 10\u22124, two-sided paired sign test). Right: Same as left, but for the natural video. Again, the pairwise model performs on average slightly yet significantly better (p < 10\u22124, two-sided paired sign test).\n\nThus, using a very limited set of known responses it is possible to decode novel responses to novel stimuli. This may be crucial when encountering new responses to known stimuli, due to sensory noise, or when generalizing prior knowledge to novel stimuli.\n\n## Discussion\n\nWe presented a thesaurus for a neural population code\u2014a similarity measure between population activity patterns, based on the meaning of the responses and not on their syntactic structure. This is a general framework for mapping the codebook in any sensory system, since it makes no assumptions about what makes two spike trains similar, or that the similarity structure should obey a metric in the strict mathematical sense. Indeed, it revealed that the neural code of the brain is very different than our usual mathematical intuition: what we may regard as intuitive measures, like the Hamming distance, fail to capture the similarity between neural population responses. Instead, we found a highly structured codebook, organized in groups of responses that carry very similar information, and are distinct from all other responses.\n\nThis organization of the neural population codebook into a relatively small number of semantically different clusters is reminiscent of the design of engineered codes used in communication. There, to overcome noise, different codewords are placed far apart in space of codewords, to allow for error-correction. Since noise may corrupt a message that is sent through a channel, when a pattern is received, it is compared to all possible codewords and is classified according to the nearest one. Importantly, the distance between codewords must be defined by the nature of the noise. Here, we found a neural population code that seems to be built along similar lines. Our thesaurus revealed that most of the information that the population encodes is held by the identity of the cluster that a specific activity pattern belongs to, and that more detailed information may be carried by the fine structure of the pattern. These results generalized across novel stimuli and scaled slowly with the number of stimuli used (Figure 5\u2014figure supplement 1). We thus suggest that our analysis reveals a design principle of the population codebook of a sensory circuit.\n\nWhat are the advantages of such a population code design? We note that for a large neural population, most network activity patterns are observed at most once (Ganmor et al., 2011a). Thus, the brain frequently receives from its sensory neurons activity patterns that were never seen before. This may occur either due to sensory noise, corrupting the response to a known stimulus but also as a result of a truly novel stimulus. In either case, a semantic similarity measure between neural population responses may explain how these novel inputs may be deciphered: when a novel response pattern is encountered it can take on the information content of similar responses, whose meaning is already known. Therefore, the thesaurus may not only explain how sensory noise can be overcome but also how the brain can generalize across stimuli. Indeed, the thesaurus enabled us to decode neural activity patterns we have not seen before, based on their similarity to other responses.\n\nUncovering the structure and organization of the population code relied on our ability to accurately model the noisy nature of the population response to specific stimuli. It is the nature of the noise that determines how likely two responses are to be interchanged, and consequently the semantic similarity between them. Here, we used pairwise maximum entropy models to capture the \u2018noise correlations\u2019 at every time point, (Figure 2), which were weak on average, but significant at specific times, as was also shown in (Kohn and Smith, 2005; Pillow et al., 2008; Cafaro and Rieke, 2010; Granot-Atedgi et al., 2013).\n\nInterestingly, learning a thesaurus using the conditionally independent model of the neural responses to the stimuli, recovered a similarity structure that was on par with that revealed by the pairwise model, in terms of the information that the clusters carried about the stimulus. These results are surprisingly given that the cells were clearly not conditionally independent. One possible explanation is that the organization of the codebook may be so robust, namely that the separation between clusters is sufficiently large, that even an inaccurate model can capture the identity clusters because the errors of the model are smaller than the distance between clusters. The results of (Schwartz et al., 2012; Granot-Atedgi et al., 2013) suggest that the contribution of noise correlations to shaping the population response to stimuli will increase significantly with network size. Since by definition, the conditional independent model implies larger encoding noise (noise entropy), this suggests that the clusters would be \u2018wider\u2019 in this case. It would therefore be most interesting to explore the thesaurus that these models would give for larger populations of cells, beyond groups of 20 cells that we used here for sampling reasons. Finally, we note again that the pairwise models gave better results for decoding stimuli over the conditionally independent model.\n\nPrevious studies have suggested mathematically elegant and computationally efficient measures of spike train similarity, relying mostly on edit-distance based metrics (Victor and Purpura, 1997; van Rossum, 2001; Victor, 2005; Houghton and Sen, 2008). Our approach is fundamentally different, as it does not assume a metric structure, or particular features of the code (Haslinger et al., 2013) and does not require assumptions about the syntactic similarity between activity patterns. But maybe most importantly, we found that the semantic similarity between population responses could not be approximated by simple linear or bilinear functions of the patterns. This is mostly due to the fact that noise showed a high degree of stimulus dependence (Figure 3\u2014figure supplement 2). This means that the correlated nature of neural noise shapes the population code differently for different stimuli.\n\nThe approach we presented here could be immediately applied to other neural circuits (Bathellier et al., 2012; Parnas et al., 2013), and it is therefore important to note where our approach has been restrictive and could be extended. First, our clustering was not optimized to maximize the information that the clusters carry about the stimulus, but only to group similar responses together. Interestingly, such an information maximization clustering approach (Slonim and Tishby, 1999) does not result in significantly more information using fewer clusters (Figure 5\u2014figure supplement 2). Second, hard clustering of the population responses into k clusters is somewhat arbitrary, and it is possible to consider generalizations to fuzzy rather than hard clustering\u2014where responses may be associated with several clusters, or categories, simultaneously in a probabilistic manner (Zemel et al., 1998). Lastly, while both agglomerative and spectral clustering yielded similar results in our analysis of the nature of the retinal population code, it is possible that other ways of clustering would reveal further structure of the code.\n\n## Materials and methods\n\n### Electrophysiology\n\nExperiments were performed on the adult tiger salamander (Ambystoma tigrinum). All experiments were approved by the institutional animal care and use committee of Ben-Gurion University of the Negev and were in accordance with government regulations. Prior to the experiment the salamander was adapted to bright light for 30 min. Retinas were isolated from the eye and peeled from the sclera together with the pigment epithelium. Retinas were placed with the ganglion cell layer facing a multi-electrode array with 252 electrodes (Ayanda Biosystems, Lausanne, Switzerland) and superfused with oxygenated (95% O2/5% CO2) Ringer medium which contains: 110 mM NaCl, 22 mM NaHCO3, 2.5 mM KCl, 1 mM CaCl2, 1.6 mM MgCl2, and 18 mM Glucose, at room temperature (Meister et al., 1994). The electrode diameter was 10 \u03bcm and electrode spacing varied between 40 and 80 \u03bcm. The array was lowered onto the retina from above by means of a standard mechanical manipulator. Extracellularly recorded signals were amplified (Multi Channel Systems, Germany) and digitized at 10k Samples/s on four personal computers and stored for off-line spike sorting and analysis. Spike sorting was done by extracting the amplitude and width from each potential waveform, and then by clustering using an in-house written MATLAB program (Source code 1). 48/31 retinal ganglion cells were recorded and cleanly isolated in the artificial/natural video experiment.\n\n### Visual Stimulation\n\nNatural video clips were acquired using a digital video camera (Sony Handycam DCR-HC23) at 30 frames per second. The stimulus was projected onto the salamander retina from a CRT video monitor (ViewSonic G90fB) at a frame rate of 60 Hz such that each acquired frame was presented twice, using standard optics (Puchalla et al., 2005). The original color videos were converted to gray scale, using a gamma correction for the computer monitor. Artificial full-field flicker stimuli were generated by sampling a uniform gray level from a normal distribution. In both cases, the visual stimulus covered the retinal patch that was used for the experiment entirely. A 10 s clip was taken from each video and played to separate retinas repetitively for approximately 2 hr. Each video was therefore replayed to the retina over 600 times.\n\n### Data Analysis\n\nAnalysis was carried out in MATLAB. We examined the responses of ten randomly chosen groups of 20 neurons from each retina. Spikes were binned at 20 ms (different bin sizes did not qualitatively affect our results, see Figure 5\u2014figure supplement 4). Each response r is a 20 bit binary vector with each bit corresponding to the activity of a single neuron (0 representing silence and 1 representing spiking) in a single time bin.\n\n### Estimating the noise distribution\n\nTo estimate the probability distribution of responses to a given stimulus P(r|s), we considered the ensemble of responses recorded at a single point in time in the video across repeats. Note that the retina is displayed with the exact same stimulus, including several minutes of stimulus history, at each repeat. We then estimated the single neuron and pairwise spiking probability from the data in order to generate a maximum entropy pairwise model as detailed in previous work (Ganmor et al., 2011b). Briefly, the maximum entropy pairwise distribution is known to take the form (Jaynes, 1957) $P^{(2)}(r|s)=\\frac{1}{Z(s)}exp(\\sumi=1N\\alpha_{i}(s)r_{i}+\\sumi<j\\beta_{ij}(s)r_{i}r_{j})$. The parameters can be found by optimizing the likelihood of the data L(Data|\u03b1,\u03b2). Since the log likelihood is concave, the global optimum can be found using gradient methods, with local derivatives $\\frac{\\partialL}{\\partial\\alpha_{i}(s)}=\u2329r_{i}\u232a_{P_{Data}(r|s)}\u2212\u2329r_{i}\u232a_{P^{(2)}(r|s)}$, where <f(r)>P represents the expected value of some function of the response, f, with respect to the probability distribution P.\n\n### Clustering and Information\n\nData were split into train and test sets. The train set was used to learn the conditional probabilities P(r|s), which were then used to construct P(s|r) through Bayes' rule P(s|r) = P(r|s)P(s)/P(r). The dissimilarity matrix between all responses observed in the test set was defined as d(r1,r2) = DJS(P(s|r1)||P(s|r2)) (where DJS stands for the Jensen-Shannon divergence, and s represents only train stimuli). This matrix was clustered using hierarchical agglomerative clustering with the distance between clusters defined as the average distance between inter-cluster pairs. Different methods of spectral clustering yielded similar results. The number of clusters, k, was systematically varied. For a given value of k, the mutual information between stimulus and clusters I(s;Ck(r)) was estimated as follows: Each response in the test data was replaced with its cluster label Ck(r) (Ck(r) can take a value in {1\u2026k}) and then mutual information was estimated as I(s;Ck(r)) = H(Ck(r)) \u2212 H(Ck(r)|s), where H is the Shannon entropy. H(Ck(r)) is the total entropy of different clusters in the data. $H(C_{k}(r))=\u2212\\sumi=1kP(C_{k}(r)=i)log(P(C_{k}(r)=i))$, where $P(C_{k}(r)=i)$ is the frequency of the ith cluster, out of k, in the data. H(Ck(r)|s) is the average conditional entropy of clusters given stimulus s. In our case, we treat each time point in the 10 s video as a unique stimulus, and thus H(Ck(r)|s) is given by the conditional entropy at each time point across video repeats, averaged over time points\u2014$H(C_{k}(r)|s)=H(C_{k}(r)|t)=\u2212\\sumt=1T\\frac{1}{T}\\sumi=1kP(C_{k}(r)=i|t)log\u2061P(C_{k}(r)=i|t)$, where $P(C_{k}(r)=i|t)$ is the frequency of cluster i, out of k, at time t in the video. The representative matrices in Figure 3 were chosen as the matrices with the fifth (out of 10) highest average ratio of the within cluster similarity and the overall similarity. The total degree of network correlation was measured using the multi-information (Amari, 2001; Schneidman et al., 2003b), defined as IN = Hind \u2212 H, where Hind is the independent entropy (sum of all individual neuron entropies) and H is the entropy estimated from the actual data. In all cases where information or entropy was estimated, we used the method of extrapolation (Treves and Panzeri, 1995; Strong et al., 1998) to correct for finite sampling biases. These corrections were on the order of a few percent (see Figure 2\u2014figure supplement 1).\n\n### Decoding\n\nFor a given response r in the test set, we compared the \u2018true\u2019 P(s|r), constructed from P(r|s) across test stimuli as previously described, to one of three estimates $P\u02dc(s|r)$: (1) The true prior over stimuli P(s), which is a uniform distribution over stimuli. (2) A nearest neighbor estimate, that is, $P\u02dc(s|r)$ = P(s|r\u2032) where d(r,r\u2032) is minimal across all responses in the test set. (3) Same as 2, only r\u2032 is a nearest neighbor in Hamming distance (arbitrarily chosen out of all nearest neighbors).\n\n### Response embedding\n\nResponses were embedded using the Isomap algorithm (Tenenbaum et al., 2000). Given a set of pairwise distances, Isomap finds a configuration of points in k dimensions that most closely recreate the geodesic distances between points. The geodesic distance between two points is either the dissimilarity d between them, if they are connected in the neighborhood graph, or the shortest weighted path if they are not. Two nodes were connected if their dissimilarity was smaller than 0.5 bits (epsilon neighborhood). Isomap was chosen over multi dimensional scaling approaches as it gave better results, in particular since dissimilarities are bounded from above (1 bit maximum). We limited the number of points to embed so that a 2\u20133 dimensional embedding gave a reasonably faithful reconstruction of the geodesic distances as measured by the residual variance.\n",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6020b954-28ae-4ba1-aa8a-477bedab862b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C1",
+      "claim": "Information is carried in the brain by the joint spiking patterns of large groups of noisy, unreliable neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Information is carried in the brain by the joint spiking patterns of large groups of noisy, unreliable neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that draws from established understanding in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "1f00ee6b-61fa-46f7-99d7-fe4c136635fe",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C2",
+      "claim": "Noise limits the capacity of the neural code and determines how information can be transmitted and read-out.",
+      "claim_type": "EXPLICIT",
+      "source": "This noise limits the capacity of the neural code and determines how information can be transmitted and read-out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to established concepts in information theory and neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "93e13f10-4084-4c7a-973b-9601d8d07a9a",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C3",
+      "claim": "The brain must overcome noise to accurately decode and identify which patterns are semantically similar.",
+      "claim_type": "EXPLICIT",
+      "source": "To accurately decode, the brain must overcome this noise and identify which patterns are semantically similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the problem of noisy neural coding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "480bb68b-760a-45e9-a57d-40259d4ded25",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C4",
+      "claim": "Models of network encoding noise can be used to learn a thesaurus for populations of neurons in the vertebrate retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We use models of network encoding noise to learn a thesaurus for populations of neurons in the vertebrate retina responding to artificial and natural videos, measuring the similarity between population responses to visual stimuli based on the information they carry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f1a64aea-1352-442b-965f-2a1c736deb8c",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C5",
+      "claim": "The neural code is organized in clusters of synonymous activity patterns that are similar in meaning but may differ considerably in their structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This thesaurus reveals that the code is organized in clusters of synonymous activity patterns that are similar in meaning but may differ considerably in their structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ac88e6b9-6770-4ccf-b07c-63b62dc0fae3",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C6",
+      "claim": "The organization of the neural code is highly reminiscent of the design of engineered codes.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization is highly reminiscent of the design of engineered codes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive comparison drawn from the observed data structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "b71dbd67-fa4c-428e-a105-948e9ce2aa42",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C7",
+      "claim": "The clustered structure of the code allows accurate decoding of novel stimuli from novel spiking patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the brain may use this structure and show how it allows accurate decoding of novel stimuli from novel spiking patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through decoding analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c7c8c060-8dbf-4694-8726-5b5062ecbc20",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C8",
+      "claim": "Noise is prevalent in the nervous system from ion channels through synapses and single neurons up to the system level.",
+      "claim_type": "EXPLICIT",
+      "source": "Noise is prevalent in the nervous system, from ion channels through synapses and single neurons, and up to the system level (Mainen and Sejnowski, 1995; Schneidman et al., 1998; Rieke et al., 1999; Osborne et al., 2005; Faisal et al., 2008; Ala-Laurila et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "27cb6c37-f39b-44f7-bbb9-3573fcaca474",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C9",
+      "claim": "Even when presented with identical stimuli, the brain may receive different spiking patterns from sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, even when presented with identical stimuli, the brain may receive different spiking patterns from the sensory neurons (Mainen and Sejnowski, 1995; Berry et al., 1997; de Ruyter van Steveninck et al., 1997; Reich et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies demonstrating neural variability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "145f3bd7-b4bb-4148-87d4-74a7825c048a",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C10",
+      "claim": "The nature of neural noise determines how information is encoded in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of neural noise thus determines how information is encoded in the brain (Borst and Theunissen, 1999; Stocker and Simoncelli, 2006; Cafaro and Rieke, 2010; Rolls and Treves, 2011), and how it might be read out from neural activity (Warland et al., 1997; Dan et al., 1998; Vargas-Irwin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "4e876426-6111-4aa1-9536-d1a15520c93b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C11",
+      "claim": "In engineering, codes are designed to solve noise problems by choosing codewords that are far apart in the space of patterns relative to typical noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In engineering, codes are designed to solve this problem by choosing codewords that are far apart in the space of patterns, relative to the typical noise levels. That way, if noise corrupts a message, it would still be easily distinguishable from the noisy variants of other codewords (Cover and Thomas, 1991; Sreenivasan and Fiete, 2011; Curto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established principles from information theory and coding theory, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "efb8a4f1-104a-4163-8541-4bb218e63048",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C12",
+      "claim": "The nature of correlations among neurons is central in shaping the code's capacity and content, particularly in the context of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that the nature of correlations among neurons is central in shaping the code's capacity and content, in particular in the context of noise (Zohary et al., 1994; Zemel et al., 1998; Abbott and Dayan, 1999; Diesmann et al., 1999; Sompolinsky et al., 2001; Schneidman et al., 2006; Pillow et al., 2008; Shlens et al., 2009; Ganmor et al., 2011b; Schwartz et al., 2012; Granot-Atedgi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to prior research on neural correlations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "5fc421bd-3b51-4277-b4ec-4197e400d6dd",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C13",
+      "claim": "The functional role of correlations in encoding information by large populations has been heavily debated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functional role of these correlations in encoding information by large populations has been heavily debated (Nirenberg et al., 2001; Amari et al., 2003; Pola et al., 2003; Schneidman et al., 2003a, 2006; Averbeck et al., 2006; Tkacik et al., 2006; de la Rocha et al., 2007; Pillow et al., 2008; Ecker et al., 2010; Ohiorhenuan et al., 2010; Oizumi et al., 2010; Ganmor et al., 2011a), partly because of the difficulty to study them directly at the network level and the limitations of generalizing from small groups of cells to large ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies with differing perspectives.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "5d6af34a-93d3-409e-9e36-9a00c563e82e",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C14",
+      "claim": "Semantic similarity between neural activity patterns can be measured by comparing what each pattern tells the brain about the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest here that the semantic similarity between neural activity patterns can be measured by comparing what each pattern tells the brain about the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the core methodological proposal of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ce1c548f-11d5-48a0-a68b-9299e2281bab",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C15",
+      "claim": "Isolated salamander retinas were presented with over 600 repeats of the same 10 s long video clips.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the variability, or noise, which is inherent to encoding of sensory stimuli by large populations of neurons, we presented isolated salamander retinas with over 600 repeats of the same 10 s long video clips (one natural video and one artificial spatially uniform and temporally Gaussian flicker video), and recorded the joint response of dozens of retinal ganglion cells (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "1adb7e39-315e-4428-bfe4-884cda38f190",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C16",
+      "claim": "Each video was presented continuously in a loop for approximately 2 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Each video was presented continuously in a loop for \u223c2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific experimental parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c6a0e532-c685-41b1-b1cc-a887ea1aff93",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C17",
+      "claim": "Single neurons show stochastic, noisy responses to the same stimulus segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A shows examples of the stochastic, or noisy, responses of single neurons from the population to the same stimulus segment (see also Mainen and Sejnowski, 1995; Berry et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1A and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ab1c3871-9a96-44d0-84d7-0bfaf6e2e56b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C18",
+      "claim": "The population activity pattern r(t) is defined as the binary vector of the instantaneous states of each neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to examine the responses at the population level, we defined the population activity pattern r(t) as the binary vector of the instantaneous states of each neuron: the ith entry in the vector, ri, being 1 if the ith neuron spiked, and 0 if it was silent (responses were binned in 20 ms bins; for other bin sizes see Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data representation method used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "760cbc67-7af7-40a5-b850-b92ee55e714f",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C19",
+      "claim": "Responses were binned in 20 ms bins.",
+      "claim_type": "EXPLICIT",
+      "source": "responses were binned in 20 ms bins; for other bin sizes see Figure 5\u2014figure supplement 4",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific methodological parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "b6828ec9-3a57-4797-b7d0-b65756d540d7",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C20",
+      "claim": "The variability of the population responses is high when the population's firing rate goes up.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1C shows the entropy of P(r|s) as a function of time (or, equivalently, of stimulus), along with the instantaneous population rate, reflecting that the variability of the population responses is high when the population's firing rate goes up.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "57a49685-8864-45bd-ba4d-b7f390c7d1c9",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C21",
+      "claim": "Two neural activity patterns are similar in terms of their meaning to the extent that they convey similar information to the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We submit that two neural activity patterns are similar, in terms of their meaning, to the extent that they convey similar information to the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual definition proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "6b7b5d9c-e11a-4bec-9802-06b82b88af0c",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C22",
+      "claim": "The meaning of a neural activity pattern r is given by the probability distribution over stimuli conditioned on that response, P(s|r).",
+      "claim_type": "EXPLICIT",
+      "source": "The meaning of a neural activity pattern r is given by what it tells the brain about its corresponding input, or in the case of sensory systems, the potential stimuli that could have resulted in that response. Since the mapping between stimulus and response is probabilistic, the meaning of r is given by the probability distribution over stimuli conditioned on that response, namely P(s|r).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework based on Bayesian inference.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "eb2ed23e-5900-49c0-9e18-d770905fba6e",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C25",
+      "claim": "The experimental design allowed drawing hundreds of samples from P(r|s) for every stimulus s.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental design, in which we presented many repeats of the same video, allowed us to draw hundreds of samples from P(r|s), for every s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantage of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "3f682097-4dc9-469c-a0cd-266d055961e8",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C26",
+      "claim": "Due to the exponential number of possible population activity patterns, one cannot directly sample the full distribution even for groups of 20 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the exponential number of possible population activity patterns one cannot directly sample this distribution in full even for groups of 20 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical constraint based on combinatorics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "edc9e530-28a1-4b91-95a7-e86178b19db8",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C27",
+      "claim": "Average noise correlations for pairs of neurons are typically weak.",
+      "claim_type": "EXPLICIT",
+      "source": "For pairs of neurons, average noise correlations are typically weak (Cafaro and Rieke, 2010; Ecker et al., 2010), implying that pairs of neurons are not far from being conditionally independent given the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "a14c4660-e998-44b2-8e3d-8afc41a931a2",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C28",
+      "claim": "Weak pairwise correlations do not imply that large groups are conditionally independent in encoding stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, weak pairwise correlations do not imply that large groups are conditionally independent in encoding stimuli (Schneidman et al., 2006; Pillow et al., 2008; Vidne et al., 2012; Granot-Atedgi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "71b7d2d9-ee31-43fd-813d-c7455f749afd",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C29",
+      "claim": "Most stimuli did not evoke a substantial response from the retina, giving rise to low noise correlation in the network for these stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most stimuli did not evoke a substantial response from the retina, which gave rise to low noise correlation in the network for these stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "50899674-e5ed-40ad-9ca7-51694c3d5046",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C30",
+      "claim": "When something interesting happened in the video and ganglion cells increased their firing rates, there was a sharp increase in network noise correlations for both natural and artificial videos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when something 'interesting' happened in the video and the ganglion cells increased their firing rates, we found a sharp increase in the degree of network noise correlations for both natural and artificial videos (Figure 2A,B; see Figure 2\u2014figure supplement 1 for analysis of sampling properties).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "8fc99fc7-2c28-4199-a8e8-eee7047b56d4",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C31",
+      "claim": "For interesting stimuli, the population was strongly correlated and far from conditionally independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while on average the network noise correlations may be weak, the population was strongly correlated and far from conditionally independent in response to interesting stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "e136b84f-9e68-40f3-978a-99ee8a6e4a40",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C32",
+      "claim": "For interesting stimuli, the variability or noise at the network level is significantly reduced compared to what would be expected from the apparent noise level of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, for these stimuli, the variability or noise at the level of the network is significantly reduced compared to what would be expected from the apparent noise level of individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the noise correlation findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f518e355-e21e-44c3-92d7-befe8ef1a228",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C33",
+      "claim": "Conditionally independent models of population encoding fail at interesting stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, conditionally independent models of population encoding (which assume no noise correlations) fail exactly at such interesting stimuli (Pillow et al., 2008; Granot-Atedgi et al., 2013), reflecting that in order to accurately characterize the population responses and the noise, we need a model that takes into account correlations between the cells that depend on the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and is consistent with the observed data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "104ea54d-4d7c-41c0-b26b-cd97e99f6f9b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C34",
+      "claim": "A stimulus-dependent pairwise maximum entropy model was fit for each stimulus to capture firing rates and pairwise noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended the framework of maximum entropy models for neural activity patterns (Schneidman et al., 2006; Shlens et al., 2009), to the population responses to each stimulus (Granot-Atedgi et al., 2013): for each stimulus, s, we fit the minimal model that has the same stimulus dependent firing rates and pairwise noise correlations observed over the repeats of that stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f0ee0f49-c0a8-4dff-9715-1945b491d69e",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C35",
+      "claim": "The pairwise maximum entropy model P(2)(r|s) gave relatively accurate models of the distribution of patterns that the population displayed across repeats for different stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that P(2)(r|s) gave relatively accurate models of the distribution of patterns that the population displayed across repeats, for the different stimuli (Figure 2\u2014figure supplement 2), in agreement with Granot-Atedgi et al. (2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model validation, supported by figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "1adc3956-6cd0-43b1-b95d-3930e4c200e0",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C36",
+      "claim": "The pairwise maximum entropy models captured accurately the strong network noise correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, they captured accurately the strong network noise correlations (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "52627335-03a1-4e2b-858d-c94cfd22b480",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C37",
+      "claim": "Similar spike counts do not imply similar meaning in neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of structure in the matrices for both artificial and natural stimuli shows that similar spike counts do not imply similar meaning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the analysis of similarity matrices in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "7a998717-84e7-4955-8f7e-bf6d783f2bbd",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C38",
+      "claim": "When using hierarchical clustering on the semantic similarity matrices, the population code is arranged in sets or clusters of highly similar activity patterns that are very different from all other patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In clear contrast, when we used a hierarchical clustering algorithm on d(ri,rj) matrices and grouped responses together according to their similarity (see 'Materials and methods'), we found that the ordered matrices exhibit an almost perfect block diagonal structure (Figure 3B; see Figure 3\u2014figure supplement 1 for statistical analysis). Thus, the population code that is used by the retina both for artificial videos, and for natural videos, is arranged in sets, or clusters, of highly similar activity patterns, which are very different from all other patterns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding demonstrated in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "592683e6-f298-4f8e-ad3d-4678a6ebd047",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C39",
+      "claim": "The Hamming distance does not reveal the clustered structure of the population codebook as effectively as the semantic similarity measure.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined whether the Hamming distance, which is a simple and intuitive measure of similarity between population responses (the number of neurons that differ in their spiking or silence state), was sufficient to reveal the structure of the population codebook. We thus constructed the matrices of Hamming distances between all pairs of population activity patterns, and clustered the responses, using the same hierarchical agglomerative clustering. Figure 3C shows the Hamming matrix for the same group of 20 cells from a\u2013d, where matrix rows (and columns) are ordered according to the clustering results. We did not find evident structure in the codebook used for natural stimuli, and only slightly more structure was apparent for the artificial stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "026f0c12-84a8-40b2-b902-f91ad549d0ef",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C40",
+      "claim": "Measuring similarity in meaning rather than similarity in structure is important for uncovering the clustered organization of the neural population code.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reflect the importance of measuring similarity in meaning and not similarity in structure. Using a syntactic (structure based) measure, we would not have been able to uncover the clustered organization of the neural population code that the semantic similarity reveals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing different similarity measures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ae393b9c-3e8c-4ba9-9da2-a993baa82bfa",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C41",
+      "claim": "Patterns that belong to the same cluster exhibit some shared structure, with some neurons almost always firing and others always silent.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns that belong to the same cluster do exhibit some shared structure, namely some of the neurons almost always fire in a specific cluster and others are always silent (Figure 3B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the detailed view of clusters in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f1c56b75-10d9-4374-8818-77619cc199ab",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C42",
+      "claim": "The semantic similarity structure over all patterns could not be captured by a simple linear or bilinear function of the population patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, importantly, we found that the semantic similarity structure over all the patterns we observed could not be captured by a simple linear or bilinear function of the population patterns (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "b58a7825-662e-4039-ba2c-ab66780786a9",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C43",
+      "claim": "Responses to repeated presentations of a stimulus should come from the same cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "This gives rise to two important predictions, which we confirmed by cross-validation, using novel (held out) test stimuli: 1. Responses to repeated presentations of a stimulus should come from the same cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction that was tested and confirmed with cross-validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "76e91e6f-d4c9-4db1-b448-bbe2ef9d3f0f",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C44",
+      "claim": "Responses from the same cluster should be nearly interchangeable.",
+      "claim_type": "EXPLICIT",
+      "source": "2. Responses from the same cluster should be nearly interchangeable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction that was tested and confirmed with cross-validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f3d66f73-911e-40fe-b71e-571179e63e88",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C45",
+      "claim": "Even when the most frequent population pattern appeared less than 20% of the time, often over 70% of the observed responses would fall within a single cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, even when the population response was highly unreliable (i.e., the most frequent response pattern appeared less than 20% of the time), often over 70% of the observed responses would fall within a single cluster (mostly for the natural video), for the cross-validated test data (see Figure 4\u2014figure supplement 1 for statistical analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "2fc288dc-ec0f-4003-b423-d2ae1402899f",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C46",
+      "claim": "Approximately 100 clusters were enough to account for over 80% of the information available about the stimulus in the detailed population patterns for both types of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u223c100 clusters were enough to account for over 80% of the information available about the stimulus in the detailed population patterns, for both types of stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the information analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "86f94ac2-ffcd-4f4a-ba73-d69c109ece20",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C47",
+      "claim": "Clustering the responses based on the Hamming distance gave significantly worse results than semantic similarity clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, clustering the responses based on the Hamming distance between them gave significantly worse results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 5 comparing different clustering approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "8b4ff088-7de5-4f74-a84c-bd65517a210e",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C48",
+      "claim": "Responses in the same cluster have a similar meaning and can be viewed as noisy variants of a noise-free codeword.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly reflects that responses in the same cluster have a similar meaning and can indeed be viewed as noisy variants of a noise-free codeword, similar to the ground states or attractors in a Hopfield model (Hopfield, 1982; Tkacik et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the information analysis results, supported by analogy to known models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "41f6350f-2d82-4008-bd6c-227e5c7830f8",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C49",
+      "claim": "The similarity measure learned from training data predicts stimulus similarity in test data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that response similarity measured from the training data predicts stimulus similarity in the test data (Figure 6\u2014figure supplement 1 shows the correlation between cluster similarity and stimulus similarity; for more accurate metrics on stimulus space, see [Tka\u010dik et al., 2013]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6 and its supplement.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "cb56834a-5235-4230-85b6-32fbb7b94ca7",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C50",
+      "claim": "The similarity between neural responses captures similarity in meaning and generalizes across stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the similarity measure proposed here for the population responses captures similarity in meaning and generalizes across stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the generalization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "969dfd7e-01c7-4d07-a47b-f784d4a42154",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C51",
+      "claim": "P(s|r) for a held-out test response r could be well estimated by taking P(s|r\u2032) for the response r\u2032 which is most similar to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that P(s|r) for a held-out test response, r, could be well estimated simply by taking P(s|r\u2032) for the response, r\u2032, which is most similar to it. Similarity was assessed using the thesaurus that we learned from the training data, that is, for different stimuli than the ones we tested on (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "5c457905-a68a-47f0-a035-5fe04cce1073",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C52",
+      "claim": "Using a thesaurus based on semantic similarity clearly improved the ability to estimate the stimulus compared to prior knowledge about the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach clearly improved our ability to estimate the stimulus compared to our prior knowledge about the stimulus, as measured by the Jensen-Shannon divergence between the 'true' P(s|r) and the estimate (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "7e28697a-905b-45db-af4f-2d10e429760e",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C53",
+      "claim": "Using a thesaurus based on the Hamming distance clearly degraded performance and reduced the accuracy of the stimulus estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a thesaurus based on the Hamming distance clearly degraded performance and reduced the accuracy of the stimulus estimate (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "d7fc8384-99c4-496d-b701-2ebf437d41db",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C54",
+      "claim": "Using a very limited set of known responses it is possible to decode novel responses to novel stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, using a very limited set of known responses it is possible to decode novel responses to novel stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the decoding analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ca43a15e-ec7a-430e-9dc4-f4d253215bc5",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C55",
+      "claim": "The thesaurus may be crucial when encountering new responses to known stimuli due to sensory noise or when generalizing prior knowledge to novel stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be crucial when encountering new responses to known stimuli, due to sensory noise, or when generalizing prior knowledge to novel stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "bc93d4dd-fe94-4dc3-9c05-e5b30299d3e0",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C56",
+      "claim": "The neural code of the brain is very different from usual mathematical intuition about similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it revealed that the neural code of the brain is very different than our usual mathematical intuition: what we may regard as intuitive measures, like the Hamming distance, fail to capture the similarity between neural population responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing different similarity measures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "bb763bc2-3566-4512-911b-7fe1ad590f85",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C57",
+      "claim": "The neural population codebook is organized into a relatively small number of semantically different clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization of the neural population codebook into a relatively small number of semantically different clusters is reminiscent of the design of engineered codes used in communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive comparison based on the observed structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "481c7a7f-1f49-43da-8a6d-45dcb42aacdd",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C58",
+      "claim": "Most of the information that the population encodes is held by the identity of the cluster that a specific activity pattern belongs to.",
+      "claim_type": "EXPLICIT",
+      "source": "Our thesaurus revealed that most of the information that the population encodes is held by the identity of the cluster that a specific activity pattern belongs to, and that more detailed information may be carried by the fine structure of the pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the information analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "bd3c30b2-d670-4a76-880f-3a9e282ef120",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C59",
+      "claim": "The analysis reveals a design principle of the population codebook of a sensory circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus suggest that our analysis reveals a design principle of the population codebook of a sensory circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f28bb5d9-9fc0-4b47-8bb9-cf445b2c31e8",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C60",
+      "claim": "For a large neural population, most network activity patterns are observed at most once.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that for a large neural population, most network activity patterns are observed at most once (Ganmor et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "d5eac65f-1920-4f85-8fc3-fcd03e8c45b2",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C61",
+      "claim": "The brain frequently receives from its sensory neurons activity patterns that were never seen before.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the brain frequently receives from its sensory neurons activity patterns that were never seen before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the previous claim about pattern rarity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "25f4abc8-e5c7-4761-87f2-1688edbc319a",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C62",
+      "claim": "A semantic similarity measure between neural population responses may explain how novel inputs may be deciphered.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, a semantic similarity measure between neural population responses may explain how these novel inputs may be deciphered: when a novel response pattern is encountered it can take on the information content of similar responses, whose meaning is already known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional role of the thesaurus.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "e8afc3c8-95ab-470b-b9f8-f00e9387bf07",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C63",
+      "claim": "The thesaurus may explain how sensory noise can be overcome and how the brain can generalize across stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the thesaurus may not only explain how sensory noise can be overcome but also how the brain can generalize across stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the broader implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "2ddc8d49-42d5-45de-9094-d9de83fd9d8b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C64",
+      "claim": "Uncovering the structure and organization of the population code relied on the ability to accurately model the noisy nature of the population response to specific stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncovering the structure and organization of the population code relied on our ability to accurately model the noisy nature of the population response to specific stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion about what enabled the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "d8e4f9e7-ec6c-4fd2-a128-a4a3cdd0471d",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C65",
+      "claim": "Pairwise maximum entropy models were used to capture the noise correlations at every time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used pairwise maximum entropy models to capture the 'noise correlations' at every time point, (Figure 2), which were weak on average, but significant at specific times, as was also shown in (Kohn and Smith, 2005; Pillow et al., 2008; Cafaro and Rieke, 2010; Granot-Atedgi et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the modeling approach and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c3b5c7b0-957d-473b-a31d-6cf9d17998ea",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C66",
+      "claim": "Learning a thesaurus using the conditionally independent model of neural responses recovered a similarity structure that was on par with that revealed by the pairwise model in terms of information about the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, learning a thesaurus using the conditionally independent model of the neural responses to the stimuli, recovered a similarity structure that was on par with that revealed by the pairwise model, in terms of the information that the clusters carried about the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing different models, shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c4c4cf54-0c0b-42aa-bc6b-0dc46230ec0b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C67",
+      "claim": "The organization of the codebook may be so robust that even an inaccurate model can capture the identity of clusters because the errors of the model are smaller than the distance between clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that the organization of the codebook may be so robust, namely that the separation between clusters is sufficiently large, that even an inaccurate model can capture the identity clusters because the errors of the model are smaller than the distance between clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the robustness finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "788814ce-823a-4767-8f59-3f6e48de8b16",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C68",
+      "claim": "The pairwise models gave better results for decoding stimuli over the conditionally independent model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note again that the pairwise models gave better results for decoding stimuli over the conditionally independent model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f0aea7bd-43eb-49a0-81d0-69a5db6c5793",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C69",
+      "claim": "The semantic similarity between population responses could not be approximated by simple linear or bilinear functions of the patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "But maybe most importantly, we found that the semantic similarity between population responses could not be approximated by simple linear or bilinear functions of the patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from attempting to fit simpler models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c5d8ceb0-8010-4982-92b1-6769f1c956f6",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C70",
+      "claim": "Noise showed a high degree of stimulus dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "This is mostly due to the fact that noise showed a high degree of stimulus dependence (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "6a4a7d64-d37a-47a5-8f79-3d65c0374e09",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C71",
+      "claim": "The correlated nature of neural noise shapes the population code differently for different stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the correlated nature of neural noise shapes the population code differently for different stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the stimulus-dependent noise findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "34efe6d6-210b-491e-938c-779b02e044ae",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C72",
+      "claim": "Experiments were performed on the adult tiger salamander (Ambystoma tigrinum).",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed on the adult tiger salamander (Ambystoma tigrinum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "64016587-2b04-4643-8a24-72f42c5b969d",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C73",
+      "claim": "All experiments were approved by the institutional animal care and use committee of Ben-Gurion University of the Negev and were in accordance with government regulations.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were approved by the institutional animal care and use committee of Ben-Gurion University of the Negev and were in accordance with government regulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an ethical compliance statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "8d46fac4-d87d-4c4c-b2a4-02ff19903743",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C74",
+      "claim": "48/31 retinal ganglion cells were recorded and cleanly isolated in the artificial/natural video experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "48/31 retinal ganglion cells were recorded and cleanly isolated in the artificial/natural video experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c6a65f8c-8591-4311-a49d-00292cb557f8",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C75",
+      "claim": "Natural video clips were acquired using a digital video camera at 30 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural video clips were acquired using a digital video camera (Sony Handycam DCR-HC23) at 30 frames per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "63465f78-0e23-4a8d-805c-ce7d15b1dc99",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C76",
+      "claim": "The stimulus was projected onto the salamander retina from a CRT video monitor at a frame rate of 60 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulus was projected onto the salamander retina from a CRT video monitor (ViewSonic G90fB) at a frame rate of 60 Hz such that each acquired frame was presented twice, using standard optics (Puchalla et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f81a24fa-f277-41e8-81c2-43fdf5bde495",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C77",
+      "claim": "Ten randomly chosen groups of 20 neurons from each retina were examined.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the responses of ten randomly chosen groups of 20 neurons from each retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "4b1b4e52-9782-4388-902b-c37ac3f9def9",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C78",
+      "claim": "The multi-information I(r|s) was used to quantify the correlation of the population in encoding stimulus s.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we quantified the correlation of the population in encoding the stimulus s, by the multi-information, I(r|s)=H[Pind (r|s)]\u2212H[P(r|s)] (Amari, 2001; Schneidman et al., 2003b), where H[Pind (r|s)] is the entropy assuming neurons are independent given the stimulus\u2014Pind(r|s)=\u03a0iP(ri|s), and H[P(r|s)] is the entropy of the joint population response to the stimulus s (estimated following Strong et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical measure used, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "134e639b-c541-4292-be6e-5fc4cf67eb40",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "claim_id": "C79",
+      "claim": "The multi-information I(r|s) measures the total correlations of all orders among the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that I(r|s) measures the total correlations of all orders among the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification of what the measure captures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Neural information is carried by noisy, unreliable populations of neurons, and noise limits coding capacity and determines how information can be transmitted and decoded. The brain must overcome this noise to accurately decode semantically similar patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C8-C10 establish the foundational context of noisy neural coding based on well-established neuroscience principles supported by extensive citations. These claims provide the motivation for the study and are well-supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Salamander retinas were presented with over 600 repeats of 10-second video clips (natural and artificial), and responses from dozens of retinal ganglion cells were recorded. Single neurons showed stochastic responses, and population variability increased with firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 and C72-C77 describe the experimental design, data collection, and basic observations. The methodology is clearly described with appropriate detail, and the observation about variability correlating with firing rate (C20) is directly supported by Figure 1C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "e1be9e86-f750-475e-8564-0cde54c30907",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "While average pairwise noise correlations are weak, the population showed strong network noise correlations during 'interesting' stimuli when firing rates increased. For these stimuli, the population was far from conditionally independent, and network-level variability was significantly reduced compared to expectations from individual cell noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 present a key finding about stimulus-dependent noise correlations, supported by Figure 2A,B and citations to prior work. The observation that correlations are weak on average but strong for specific stimuli is well-demonstrated and represents an important characterization of the neural code.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A stimulus-dependent pairwise maximum entropy model was fit for each stimulus to capture firing rates and pairwise noise correlations. This model accurately captured the distribution of population patterns and the strong network noise correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C65 describe the modeling approach and its validation. The pairwise maximum entropy model is well-established (with citations), and its accuracy is demonstrated in Figure 2C and Figure 2\u2014figure supplement 2. The methodological approach is sound and appropriately validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c7f9a3f2-00ab-4d08-96f2-d1085d55328b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Semantic similarity between neural activity patterns can be measured by comparing what each pattern tells the brain about the stimulus, quantified as P(s|r). The experimental design allowed sampling P(r|s), though the exponential number of possible patterns prevents direct sampling of the full distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C21-C22, and C25-C26 establish the theoretical framework for semantic similarity. The approach is conceptually sound, grounded in Bayesian inference, and the limitations are appropriately acknowledged. This represents a novel methodological contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "5da8f93a-b0e8-4800-a668-3d669d461d02",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When using semantic similarity measures and hierarchical clustering, the population code is organized into clusters of highly similar activity patterns that differ from other patterns. Similar spike counts do not imply similar meaning, and Hamming distance fails to reveal this clustered structure. The semantic similarity structure cannot be captured by simple linear or bilinear functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 present the central finding of clustered code organization. This is strongly supported by Figure 3B showing block-diagonal structure, with statistical validation in Figure 3\u2014figure supplement 1. The comparison with Hamming distance (C39, Figure 3C) and demonstration that simple functions fail (C42, Figure 3\u2014figure supplement 2) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "d6c2cf30-21c9-4c13-bb70-989b3fe4c223",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Responses to repeated presentations of a stimulus come from the same cluster, and responses from the same cluster are nearly interchangeable. Even when the most frequent pattern appeared less than 20% of the time, over 70% of responses fell within a single cluster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe predictions that were tested and confirmed via cross-validation. The quantitative finding in C45 is supported by Figure 4 and Figure 4\u2014figure supplement 1, demonstrating that cluster-based coding substantially improves reliability over individual pattern reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "f6c6d407-7698-43a4-876f-23c3dbf6ccd0",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Approximately 100 clusters account for over 80% of the information about the stimulus in detailed population patterns. Clustering based on Hamming distance gave significantly worse results. Responses in the same cluster have similar meaning and can be viewed as noisy variants of a noise-free codeword.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 quantify the information content of clusters, supported by Figure 5. The comparison with Hamming distance clustering (C47) is clearly demonstrated, and the interpretation as noisy variants of codewords (C48) is reasonable given the information analysis and analogy to established models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "c1b4d6a9-45e6-4d08-b60f-2505756ae113",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The similarity measure learned from training data predicts stimulus similarity in test data, and the similarity between neural responses captures similarity in meaning and generalizes across stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 demonstrate generalization of the thesaurus to novel stimuli, supported by Figure 6 and Figure 6\u2014figure supplement 1. This is a critical validation showing that the semantic similarity structure is not specific to the training stimuli but represents a general property of the code.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ec812238-ab32-4de0-98dc-aad96eb70a20",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "P(s|r) for held-out test responses can be well estimated using the most similar response from training data. Using semantic similarity clearly improved stimulus estimation compared to prior knowledge, while Hamming distance degraded performance. This enables decoding of novel responses to novel stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 demonstrate the functional utility of the thesaurus for decoding, supported by Figure 7. The quantitative comparison (Figure 7C) shows clear improvement over prior and Hamming-based approaches, validating the practical application of the semantic similarity framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "04056e4f-1832-4bca-8142-5258e90de440",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The neural code is organized in clusters of synonymous activity patterns similar in meaning but different in structure, reminiscent of engineered codes. This organization allows accurate decoding of novel stimuli from novel patterns. Most information is held by cluster identity, revealing a design principle of sensory circuit codebooks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C56-C59 synthesize the main findings and their interpretation. The clustered organization is well-demonstrated (previous results), the analogy to engineered codes is reasonable given the observed structure, and the decoding capability is validated. The claim about design principles (C59) is appropriately framed as a suggestion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "64cbb2c8-4ba0-4663-a426-c80ff67e394e",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In engineering, codes solve noise problems by spacing codewords far apart. Neural correlations are central to shaping code capacity and content in the context of noise, though their functional role in large populations has been debated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 provide context from engineering and prior neuroscience research, supported by appropriate citations. These establish the conceptual framework and motivation for the study, acknowledging ongoing debates in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "ea157361-c964-4c6c-bd56-a45a977aea32",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Uncovering code structure relied on accurately modeling noisy population responses. Interestingly, conditionally independent models recovered similar cluster structure in terms of information, possibly due to robust codebook organization. However, pairwise models gave better decoding results, and semantic similarity could not be approximated by simple functions due to high stimulus-dependent noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 discuss the role of modeling choices and noise properties. The finding that independent models give similar clustering (C66) is surprising but supported by supplementary figures. The explanation (C67) is appropriately speculative. The superiority of pairwise models for decoding (C68) and stimulus-dependent noise (C70-C71) are supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "226a52a3-b97b-4568-a792-46361384c59b",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "For large populations, most activity patterns are observed at most once, so the brain frequently receives novel patterns. A semantic similarity measure may explain how novel inputs are deciphered and how the brain generalizes across stimuli, which may be crucial for handling sensory noise and novel stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C63 and C55 present speculative interpretations about the functional role of the thesaurus. While C60 is supported by citation and C61 is a logical inference, claims C62-C63 and C55 are explicitly speculative (marked as SPECULATION in evidence_type). These represent interesting hypotheses but lack direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    },
+    {
+      "id": "dcf70048-6dd7-4cd9-a309-1f30efc38503",
+      "content_id": "268744c3-127d-4437-a1d0-b7ed07a38ca2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Models of network encoding noise can be used to learn a thesaurus for populations of neurons in the vertebrate retina responding to artificial and natural videos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 summarizes the overall methodological approach of the study. This is well-supported by the experimental design (C15-C19), the modeling approach (C34-C36), and the successful construction and validation of the thesaurus (C38-C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:00:59.756927Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6020b954-28ae-4ba1-aa8a-477bedab862b",
+      "result_id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca"
+    },
+    {
+      "claim_id": "1f00ee6b-61fa-46f7-99d7-fe4c136635fe",
+      "result_id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca"
+    },
+    {
+      "claim_id": "93e13f10-4084-4c7a-973b-9601d8d07a9a",
+      "result_id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca"
+    },
+    {
+      "claim_id": "c7c8c060-8dbf-4694-8726-5b5062ecbc20",
+      "result_id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca"
+    },
+    {
+      "claim_id": "27cb6c37-f39b-44f7-bbb9-3573fcaca474",
+      "result_id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca"
+    },
+    {
+      "claim_id": "145f3bd7-b4bb-4148-87d4-74a7825c048a",
+      "result_id": "0de3d9ef-1592-4e1c-9f20-19c09ebfdeca"
+    },
+    {
+      "claim_id": "ce1c548f-11d5-48a0-a68b-9299e2281bab",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "1adb7e39-315e-4428-bfe4-884cda38f190",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "c6a0e532-c685-41b1-b1cc-a887ea1aff93",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "ab1c3871-9a96-44d0-84d7-0bfaf6e2e56b",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "760cbc67-7af7-40a5-b850-b92ee55e714f",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "b6828ec9-3a57-4797-b7d0-b65756d540d7",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "34efe6d6-210b-491e-938c-779b02e044ae",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "64016587-2b04-4643-8a24-72f42c5b969d",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "8d46fac4-d87d-4c4c-b2a4-02ff19903743",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "c6a65f8c-8591-4311-a49d-00292cb557f8",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "63465f78-0e23-4a8d-805c-ce7d15b1dc99",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "f81a24fa-f277-41e8-81c2-43fdf5bde495",
+      "result_id": "33346d6d-c1e8-4e1b-ba03-fd2802367fd7"
+    },
+    {
+      "claim_id": "edc9e530-28a1-4b91-95a7-e86178b19db8",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "a14c4660-e998-44b2-8e3d-8afc41a931a2",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "71b7d2d9-ee31-43fd-813d-c7455f749afd",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "50899674-e5ed-40ad-9ca7-51694c3d5046",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "8fc99fc7-2c28-4199-a8e8-eee7047b56d4",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "e136b84f-9e68-40f3-978a-99ee8a6e4a40",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "f518e355-e21e-44c3-92d7-befe8ef1a228",
+      "result_id": "e1be9e86-f750-475e-8564-0cde54c30907"
+    },
+    {
+      "claim_id": "104ea54d-4d7c-41c0-b26b-cd97e99f6f9b",
+      "result_id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a"
+    },
+    {
+      "claim_id": "f0ee0f49-c0a8-4dff-9715-1945b491d69e",
+      "result_id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a"
+    },
+    {
+      "claim_id": "1adc3956-6cd0-43b1-b95d-3930e4c200e0",
+      "result_id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a"
+    },
+    {
+      "claim_id": "d8e4f9e7-ec6c-4fd2-a128-a4a3cdd0471d",
+      "result_id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a"
+    },
+    {
+      "claim_id": "4b1b4e52-9782-4388-902b-c37ac3f9def9",
+      "result_id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a"
+    },
+    {
+      "claim_id": "134e639b-c541-4292-be6e-5fc4cf67eb40",
+      "result_id": "47c492b0-6aa2-4790-83e1-3dc9a3bd594a"
+    },
+    {
+      "claim_id": "5d6af34a-93d3-409e-9e36-9a00c563e82e",
+      "result_id": "c7f9a3f2-00ab-4d08-96f2-d1085d55328b"
+    },
+    {
+      "claim_id": "57a49685-8864-45bd-ba4d-b7f390c7d1c9",
+      "result_id": "c7f9a3f2-00ab-4d08-96f2-d1085d55328b"
+    },
+    {
+      "claim_id": "6b7b5d9c-e11a-4bec-9802-06b82b88af0c",
+      "result_id": "c7f9a3f2-00ab-4d08-96f2-d1085d55328b"
+    },
+    {
+      "claim_id": "eb2ed23e-5900-49c0-9e18-d770905fba6e",
+      "result_id": "c7f9a3f2-00ab-4d08-96f2-d1085d55328b"
+    },
+    {
+      "claim_id": "3f682097-4dc9-469c-a0cd-266d055961e8",
+      "result_id": "c7f9a3f2-00ab-4d08-96f2-d1085d55328b"
+    },
+    {
+      "claim_id": "52627335-03a1-4e2b-858d-c94cfd22b480",
+      "result_id": "5da8f93a-b0e8-4800-a668-3d669d461d02"
+    },
+    {
+      "claim_id": "7a998717-84e7-4955-8f7e-bf6d783f2bbd",
+      "result_id": "5da8f93a-b0e8-4800-a668-3d669d461d02"
+    },
+    {
+      "claim_id": "592683e6-f298-4f8e-ad3d-4678a6ebd047",
+      "result_id": "5da8f93a-b0e8-4800-a668-3d669d461d02"
+    },
+    {
+      "claim_id": "026f0c12-84a8-40b2-b902-f91ad549d0ef",
+      "result_id": "5da8f93a-b0e8-4800-a668-3d669d461d02"
+    },
+    {
+      "claim_id": "ae393b9c-3e8c-4ba9-9da2-a993baa82bfa",
+      "result_id": "5da8f93a-b0e8-4800-a668-3d669d461d02"
+    },
+    {
+      "claim_id": "f1c56b75-10d9-4374-8818-77619cc199ab",
+      "result_id": "5da8f93a-b0e8-4800-a668-3d669d461d02"
+    },
+    {
+      "claim_id": "b58a7825-662e-4039-ba2c-ab66780786a9",
+      "result_id": "d6c2cf30-21c9-4c13-bb70-989b3fe4c223"
+    },
+    {
+      "claim_id": "76e91e6f-d4c9-4db1-b448-bbe2ef9d3f0f",
+      "result_id": "d6c2cf30-21c9-4c13-bb70-989b3fe4c223"
+    },
+    {
+      "claim_id": "f3d66f73-911e-40fe-b71e-571179e63e88",
+      "result_id": "d6c2cf30-21c9-4c13-bb70-989b3fe4c223"
+    },
+    {
+      "claim_id": "2fc288dc-ec0f-4003-b423-d2ae1402899f",
+      "result_id": "f6c6d407-7698-43a4-876f-23c3dbf6ccd0"
+    },
+    {
+      "claim_id": "86f94ac2-ffcd-4f4a-ba73-d69c109ece20",
+      "result_id": "f6c6d407-7698-43a4-876f-23c3dbf6ccd0"
+    },
+    {
+      "claim_id": "8b4ff088-7de5-4f74-a84c-bd65517a210e",
+      "result_id": "f6c6d407-7698-43a4-876f-23c3dbf6ccd0"
+    },
+    {
+      "claim_id": "41f6350f-2d82-4008-bd6c-227e5c7830f8",
+      "result_id": "c1b4d6a9-45e6-4d08-b60f-2505756ae113"
+    },
+    {
+      "claim_id": "cb56834a-5235-4230-85b6-32fbb7b94ca7",
+      "result_id": "c1b4d6a9-45e6-4d08-b60f-2505756ae113"
+    },
+    {
+      "claim_id": "969dfd7e-01c7-4d07-a47b-f784d4a42154",
+      "result_id": "ec812238-ab32-4de0-98dc-aad96eb70a20"
+    },
+    {
+      "claim_id": "5c457905-a68a-47f0-a035-5fe04cce1073",
+      "result_id": "ec812238-ab32-4de0-98dc-aad96eb70a20"
+    },
+    {
+      "claim_id": "7e28697a-905b-45db-af4f-2d10e429760e",
+      "result_id": "ec812238-ab32-4de0-98dc-aad96eb70a20"
+    },
+    {
+      "claim_id": "d7fc8384-99c4-496d-b701-2ebf437d41db",
+      "result_id": "ec812238-ab32-4de0-98dc-aad96eb70a20"
+    },
+    {
+      "claim_id": "f1a64aea-1352-442b-965f-2a1c736deb8c",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "ac88e6b9-6770-4ccf-b07c-63b62dc0fae3",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "b71dbd67-fa4c-428e-a105-948e9ce2aa42",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "bc93d4dd-fe94-4dc3-9c05-e5b30299d3e0",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "bb763bc2-3566-4512-911b-7fe1ad590f85",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "481c7a7f-1f49-43da-8a6d-45dcb42aacdd",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "bd3c30b2-d670-4a76-880f-3a9e282ef120",
+      "result_id": "04056e4f-1832-4bca-8142-5258e90de440"
+    },
+    {
+      "claim_id": "4e876426-6111-4aa1-9536-d1a15520c93b",
+      "result_id": "64cbb2c8-4ba0-4663-a426-c80ff67e394e"
+    },
+    {
+      "claim_id": "efb8a4f1-104a-4163-8541-4bb218e63048",
+      "result_id": "64cbb2c8-4ba0-4663-a426-c80ff67e394e"
+    },
+    {
+      "claim_id": "5fc421bd-3b51-4277-b4ec-4197e400d6dd",
+      "result_id": "64cbb2c8-4ba0-4663-a426-c80ff67e394e"
+    },
+    {
+      "claim_id": "2ddc8d49-42d5-45de-9094-d9de83fd9d8b",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "c3b5c7b0-957d-473b-a31d-6cf9d17998ea",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "c4c4cf54-0c0b-42aa-bc6b-0dc46230ec0b",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "788814ce-823a-4767-8f59-3f6e48de8b16",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "f0aea7bd-43eb-49a0-81d0-69a5db6c5793",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "c5d8ceb0-8010-4982-92b1-6769f1c956f6",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "6a4a7d64-d37a-47a5-8f79-3d65c0374e09",
+      "result_id": "ea157361-c964-4c6c-bd56-a45a977aea32"
+    },
+    {
+      "claim_id": "f28bb5d9-9fc0-4b47-8bb9-cf445b2c31e8",
+      "result_id": "226a52a3-b97b-4568-a792-46361384c59b"
+    },
+    {
+      "claim_id": "d5eac65f-1920-4f85-8fc3-fcd03e8c45b2",
+      "result_id": "226a52a3-b97b-4568-a792-46361384c59b"
+    },
+    {
+      "claim_id": "25f4abc8-e5c7-4761-87f2-1688edbc319a",
+      "result_id": "226a52a3-b97b-4568-a792-46361384c59b"
+    },
+    {
+      "claim_id": "e8afc3c8-95ab-470b-b9f8-f00e9387bf07",
+      "result_id": "226a52a3-b97b-4568-a792-46361384c59b"
+    },
+    {
+      "claim_id": "ca43a15e-ec7a-430e-9dc4-f4d253215bc5",
+      "result_id": "226a52a3-b97b-4568-a792-46361384c59b"
+    },
+    {
+      "claim_id": "480bb68b-760a-45e9-a57d-40259d4ded25",
+      "result_id": "dcf70048-6dd7-4cd9-a309-1f30efc38503"
+    }
+  ],
+  "comparisons": []
+}

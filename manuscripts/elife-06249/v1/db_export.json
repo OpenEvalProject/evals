@@ -1,0 +1,2201 @@
+{
+  "submission": {
+    "id": "7d6b1c98-0352-4051-85ff-dfb8b639809a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:08:36.594114Z",
+    "updated_at": "2025-11-29T04:08:36.594114Z"
+  },
+  "content": [
+    {
+      "id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "submission_id": "7d6b1c98-0352-4051-85ff-dfb8b639809a",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic regulation of transcription factors by nucleosome remodeling\n\n## Authors\n\n- Ming Li<sup>1</sup>\n- Arjan Hada<sup>2</sup>\n- Payel Sen<sup>2</sup>\n- Lola Olufemi<sup>2</sup>\n- Michael A Hall<sup>3</sup>\n- Benjamin Y Smith<sup>3</sup>\n- Scott Forth<sup>3</sup>\n- Jeffrey N McKnight<sup>4</sup>\n- Ashok Patel<sup>4</sup>\n- Gregory D Bowman<sup>4</sup>\n- Blaine Bartholomew<sup>2</sup>\n- Michelle D Wang<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology Cornell University Ithaca United States\n2. Department of Biochemistry and Molecular Biology Southern Illinois University School of Medicine Carbondale United States\n3. Department of Physics, Laboratory of Atomic and Solid State Physics Howard Hughes Medical Institute, Cornell University Ithaca United States\n4. Thomas C. Jenkins Department of Biophysics Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe chromatin landscape and promoter architecture are dominated by the interplay of nucleosome and transcription factor (TF) binding to crucial DNA sequence elements. However, it remains unclear whether nucleosomes mobilized by chromatin remodelers can influence TFs that are already present on the DNA template. In this study, we investigated the interplay between nucleosome remodeling, by either yeast ISW1a or SWI/SNF, and a bound TF. We found that a TF serves as a major barrier to ISW1a remodeling, and acts as a boundary for nucleosome repositioning. In contrast, SWI/SNF was able to slide a nucleosome past a TF, with concurrent eviction of the TF from the DNA, and the TF did not significantly impact the nucleosome positioning. Our results provide direct evidence for a novel mechanism for both nucleosome positioning regulation by bound TFs and TF regulation via dynamic repositioning of nucleosomes.\n\n## Introduction\n\nDynamic access to specific genetic information is critical for cellular development and response to the environment. Thus, processes such as transcription must be mediated by mechanisms that regulate gene function rapidly and reliably (Barrera and Ren, 2006; Kornberg, 2007). In eukaryotic cells, proper transcriptional regulation depends upon transcription factors (TFs) that bind to specific DNA-binding sites (Kadonaga, 2004). Additionally, the repression of transcription has often been correlated with the presence of nucleosomes, the basic units of chromatin structure, in which histone\u2013DNA interactions act as a barrier for RNA polymerase elongation along DNA (Li et al., 2007; Petesch and Lis, 2012; Teves et al., 2014). Therefore, understanding the relationship between TF binding and nucleosomes is essential in understanding gene expression and regulation (Voss and Hager, 2014).\n\nChromatin landscape and promoter architecture are dominated by the interplay of nucleosome and TF binding. Nucleosomes and TFs have been shown to compete for binding to DNA (Mirny, 2010; Moyle-Heyrman et al., 2011; Lickwar et al., 2012). This competition is based on the respective affinities of the TF and nucleosome for DNA, and depends upon DNA sequence, histone variants, and histone modifications. However, a nucleosome may also be repositioned through the action of chromatin remodelers, suggesting additional levels of transcription regulation. Some TFs are known to recruit nucleosome remodelers. Previous earlier studies focused on how these recruiting TFs affect the outcomes of nucleosome remodeling (Nagaich et al., 2004; Boeger et al., 2008; Dechassa et al., 2010; Voss et al., 2011). However, it is unclear how TFs that do not recruit remodelers influence the chromatin landscape. We hypothesize that nucleosome remodeling, without remodeler recruitment, may regulate the state of a bound TF. Specifically, a remodeler may attempt to move a nucleosome to or through a site pre-occupied by a TF. During such an encounter, the TF may be displaced, or it may act as a roadblock for nucleosome remodeling. Thus, chromatin remodeling may serve as an alternative mechanism to regulate transcription through its influence on a bound TF, and a bound TF may dictate the location of a remodeled nucleosome.\n\nHere, we studied the influence of nucleosome remodeling on a bound TF in a single molecule assay. We used a DNA unzipping technique (Jiang et al., 2005; Shundrovsky et al., 2006; Hall et al., 2009; Jin et al., 2010; Dechassa et al., 2011; Li and Wang, 2012; Inman et al., 2014) to characterize the locations of a bound TF and a nucleosome simultaneously, on long DNA templates to near base pair accuracy. By examining the remodeling behavior upon encountering a bound TF, we determined that the relationship between TFs and nucleosome remodeling not only plays a critical role in nucleosome positioning, but also reveals a novel mechanism for how a TF can be dynamically recycled by nucleosome remodeling.\n\n## Results\n\n### Precise determination of the position of a transcription factor and a nucleosome\n\nIn this work, we needed to precisely locate the positions of a nucleosome and a TF before and after nucleosome remodeling. We thus employed the DNA unzipping technique (Figure 1\u2014figure supplement 1), which has been demonstrated to be a powerful single molecule technique for accurate and precise determination of positions and strengths of DNA\u2013protein interactions (Jiang et al., 2005; Shundrovsky et al., 2006; Hall et al., 2009; Jin et al., 2010; Dechassa et al., 2011; Li and Wang, 2012; Inman et al., 2014). To evaluate the precision of this approach, we constructed a DNA template containing a single Gal4 sequence for binding to the Gal4 DNA-binding domain (Gal4DBD) and a single 601 nucleosome positioning sequence (601NPE) for uniquely positioning a nucleosome. Gal4DBD contains only the 147 amino acids of the N terminal domain of the Gal4 protein and does not have any known remodeler recruitment function.\n\nFigure 1 shows representative traces from unzipping DNA molecules without nucleosome remodeling. The top trace of Figure 1 shows the result when the DNA template was unzipped starting from the Gal4 side. Both Gal4DBD (a single smaller peak) and a nucleosome (two clusters of larger peaks) were readily detected above the baseline of the corresponding naked DNA. The bottom trace shows the result when the DNA template was unzipped starting from the nucleosome side. Although the nucleosome unzipping signature was readily detectable, the unzipping signature of Gal4DBD was sometimes masked by that of the nucleosome. Therefore, it was often necessary to carry out unzipping experiments from both directions. Analysis of these unzipping signatures confirmed that unzipping mapped the position of the TF and the nucleosome to near base pair precision (\u2018Materials and methods\u2019; Figure 1\u2014figure supplement 2; Figure 1\u2014figure supplement 3a; Figure 1\u2014figure supplement 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig1-v1.jpg)\n\n**Figure 1.:** DNA molecules, each containing a nucleosome and a bound Gal4DBD, were unzipped. All unzipped DNA molecules used in this work were in the region of 600 bp to 1.2 kbp. For clarity, much smaller regions are shown in all figures, with the origin of a template sequence defined as center position (the dyad) of the 601NPE. Shaded regions indicate locations of the Gal4 binding sequence and the 601NPE. (top panel) Cartoon illustrating the unzipping template design using for this experiment. A Gal4 sequence was separated from a 601NPE by 10 bp. The orientation of the 601NPE sequence is indicated by a white arrow. (middle panel) Unzipping in the direction in which the bound Gal4DBD was encountered first. (bottom panel) Unzipping in the direction in which the nucleosome was encountered first.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The DNA template was attached, at one end, to the surface of a glass coverslip via a digoxigenin\u2013antidigoxigenin linkage, and at its other end to a microsphere via a biotin\u2013streptavidin linkage. As the coverslip was moved away from the trapped microsphere, using a loading-rate clamp, the dsDNA was sequentially converted into ssDNA upon base pair separation. The presence of force peaks above the naked DNA baseline revealed the detected locations of protein\u2013DNA interactions.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Single molecule unzipping detected Gal4DBD and a nucleosome simultaneously. The histograms for detected locations of Gal4DBD (green) and nucleosome (red) were obtained by pooling data from multiple single molecule traces, with the expected bound locations represented by their respective dashed lines. For each histogram, the precision was determined by the standard deviation of each histogram, and the accuracy by the difference between the mean of the histogram and the expected value (the vertical dashed line). These data demonstrate both the precision and accuracy to be near base-pair.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** To characterize Gal4DBD binding to its binding sequence, DNA unzipping was carried out in the presence of known Gal4DBD concentrations. (A) A representative unzipping trace of a bound Gal4DBD. The location of the binding sequence is shown as a shaded region. Naked DNA unzipping baseline is shown in gray. (B) Fraction of bound Gal4DBD vs the concentration of Gal4DBD. For a given concentration of Gal4DBD, measurements were on multiple DNA molecules to obtain the fraction of Gal4DBD. Data points are represented as (mean \u00b1 s.e.m.). The relation for the fraction bound vs [Gal4DBD] was fit to:$\\frac{[Gal4DBD]}{[Gal4DBD]+K_{d}}$ (red smooth curve), which yielded the dissociation equilibrium constant $K_{d}$= 3.4 nM. (C) Fraction of bound Gal4DBD vs time. This relation shows no significant Gal4DBD dissociation from its binding sequence over a course of one hour. Data were fit to a straight line to guide the eye.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The presence of a bound Gal4DBD was determined by the magnitude of the force peak at the Gal4 binding sequence. In the presence of a bound Gal4DBD, the peak force increased substantially and was readily differentiable from the baseline DNA force.\n\nThese unzipping experiments also revealed tight binding of Gal4DBD to its recognition sequence and slow dissociation. Under our experimental conditions, the equilibrium dissociation constant of Gal4DBD was determined to be 3.4 nM (Figure 1\u2014figure supplement 3b). Our experiments were carried out with 95% of Gal4 sites bound to Gal4DBD. In addition, the bound Gal4DBD's lifetime was much longer than 1 hr (the typical duration of a single molecule experiment) (Figure 1\u2014figure supplement 3c). For all experiments involving Gal4DBD, including those in Figure 1, Gal4DBD was allowed to equilibrate with the DNA, and remaining free Gal4DBD was then flushed from the sample chamber. Thus, subsequent remodeling reactions were carried out without free Gal4DBD in solution.\n\n### Gal4DBD affects the directionality of ISW1a and SWI/SNF remodeling differently\n\nChromatin remodelers utilize ATP hydrolysis to move nucleosomes by altering histone\u2013DNA interactions, with the two major families of chromatin remodelers, ISWI and SWI/SNF, differing in their outcomes of the remodeling reaction (Clapier and Cairns, 2009). SWI/SNF family remodelers are known to be associated with nucleosome disruption (Imbalzano et al., 1996; Logie and Peterson, 1997; Aoyagi et al., 2002) and transcriptional activation (Kwon et al., 1994; Hassan et al., 2001; Gkikopoulos et al., 2011); while ISWI family remodelers have been shown to contribute to the formation of evenly spaced nucleosome arrays (Tsukiyama et al., 1999; Fyodorov and Kadonaga, 2002; Lusser et al., 2005; Torigoe et al., 2011). Despite these opposing characteristics, both remodeler families have been implicated in transcriptional activation and repression (Kwon et al., 1994; Moreira and Holmberg, 1999; Hassan et al., 2001; Martens and Winston, 2002; Whitehouse et al., 2007; Yadon et al., 2010). On mononucleosome substrates, many ISWI remodelers have been shown to be sensitive to naked DNA segments flanking the nucleosome, preferentially sliding the nucleosome towards the longer segment of DNA (Yang et al., 2006; Blosser et al., 2009; Deindl et al., 2013). This sensitivity to linker DNA is believed to underlie their ability to generate evenly spaced nucleosomal arrays (Gelbart et al., 2001; Stockdale et al., 2006). SWI/SNF remodelers, on the other hand, can shift a histone octamer up to 50 bp off the end of a short DNA fragment (Kassabov et al., 2003). On dinucleosomal templates, SWI/SNF remodelers have been found to shift one nucleosome onto another, indicating nucleosome disruption and eviction characteristics of these remodelers (Engeholm et al., 2009; Dechassa et al., 2010).\n\nHere, we employed ySWI/SNF and yISW1a as model systems to study how a bound Gal4DBD may affect the remodeling of an adjacent nucleosome. First, we investigated the initial direction of nucleosome remodeling in the presence of a bound Gal4DBD in close proximity. This was achieved by limiting the remodeling reaction to the first remodeling event which we define as a single round of remodeler binding, nucleosome remodeling, and remodeler detachment from the nucleosomal DNA (Shundrovsky et al., 2006). We engineered a DNA template in which a Gal4 binding sequence and a 601NPE were separated by 10 bp. The DNA template containing a positioned nucleosome was then remodeled, by either SWI/SNF or ISW1a, for a short period of time (\u223c1 min), with or without the addition of Gal4DBD (Figure 2; Figure 2\u2014figure supplement 1; \u2018Materials and methods\u2019). During such a short remodeling time, \u223c56% of nucleosomes pooled from measurements of multiple single molecules were found to remain at the original location, suggesting a lack of remodeling (Figure 2\u2014figure supplement 2). Of the remaining \u223c45% of the nucleosomes that were remodeled, we estimate that \u223c73% were remodeled only once and \u223c27% were remodeled more than once, using a method we previously established (Shundrovsky et al., 2006).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig2-v1.jpg)\n\n**Figure 2.:** Nucleosomes were remodeled by either 1 nM ISW1a or 1 nM SWI/SNF with 1 mM ATP for 1 min, a time sufficiently short that the majority of nucleosomes were not remodeled (Figure 2\u2014figure supplement 2). Each DNA template was subsequently unzipped. For templates used in (D)\u2013(G), the 601NPE was separated from the Gal4 binding sequence by 10 bp. (A) Distribution of the location of a nucleosome before remodeling. Data were pooled from measurements on multiple nucleosomal DNA molecules. (B) Distribution of the location of a nucleosome remodeled by ISW1a in the absence of Gal4DBD. (C) Distribution of the location of a nucleosome remodeled by SWI/SNF in the absence of Gal4DBD. (D) Distribution of the location of a nucleosome remodeled by ISW1a with a bound Gal4DBD initially located upstream of the 601NPE. (E) Distribution of the location of a nucleosome remodeled by SWI/SNF with a bound Gal4DBD initially located upstream of the 601NPE. (F) Distribution of the location of the nucleosome remodeled by ISW1a with a bound Gal4DBD initially located downstream of the 601NPE. (G) Distribution of the location of a nucleosome remodeled by SWI/SNF with a bound Gal4DBD initially located downstream of the 601NPE.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The figure panels A to G show the raw traces for the corresponding panels in Figure 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) For each nucleosome distribution, remodeled by either ISW1a or SWI/SNF as shown in Figure 2B,C, was fit to a double Gaussian function. One Gaussian (narrow green curve) corresponds to the distribution of unremodeled nucleosomes and the other (broader green curve) to the distribution of remodeled nucleosomes. The sum of the two Gaussians is shown as the red curve. (B) A table summarizing fractions of unremodeled percentage and remodeled percentage for both ISW1a and SWI/SNF.\n\nIn the absence of Gal4DBD, although the nucleosome unzipping signature did not appear to be altered after remodeling by either ISW1a or SWI/SNF (Figure 2\u2014figure supplement 1; Shundrovsky et al., 2006), the positions of the nucleosomes were spread out from the original location. Both ISW1a and SWI/SNF were able to move a nucleosome bi-directionally (Figure 2B,C) without inducing significant changes in the nucleosome structure (Figure 2\u2014source data 1). The slight asymmetric distribution of the remodeled nucleosome was likely due to the non-palindromic feature of the 601 sequence (Lowary and Widom, 1998) which leads to some asymmetry in the protein\u2013DNA interactions at the two halves of a nucleosome (Hall et al., 2009). The results from SWI/SNF remodeling were also consistent with those from an earlier study (Shundrovsky et al., 2006).\n\nInterestingly, in the presence of Gal4DBD, ISW1a moved the nucleosome away from Gal4DBD (Figure 2D), whereas SWI/SNF moved the nucleosome towards Gal4DBD (Figure 2E). To determine whether such a differential behavior was a result of the DNA sequence used, we engineered another DNA template that was identical to this one, except that the Gal4 binding site was located on the other side of the 601NPE. After adding Gal4DBD, ISW1a again moved the nucleosome away from the Gal4DBD (Figure 2F), while SWI/SNF again moved the nucleosome towards the Gal4DBD (Figure 2G). These data rule out the possibility of a DNA sequence effect on the directionality of nucleosome movement by the two remodelers. Therefore, we conclude that the bound Gal4DBD affects the directionality of nucleosome movement by the two types of remodelers differently: away from the TF for ISW1a and toward the TF for SWI/SNF.\n\nOur findings on the TF directed SWI/SNF nucleosome remodeling are entirely novel; while our findings on the TF directed ISW1a nucleosome remodeling are in agreement with a previous study that used NURF (a homolog of ISWI complexes in Drosophila) in the presence of Gal4DBD (Kang et al., 2002).\n\n### Gal4DBD is a barrier for nucleosome sliding by ISW1a\n\nSince ISW1a moved a nucleosome away from an adjacent Gal4DBD, the bound Gal4DBD may provide a barrier to ISW1a remodeling. To test this, we designed an unzipping template with a 601NPE at the end of the template and a Gal4 binding at a greater spacing (75 bp) from the 601NPE (Figure 3\u2014figure supplement 1). The use of an end-positioned nucleosome should dictate that the nucleosome movement could only take place towards a bound Gal4DBD. After ISW1a remodeling for 10 min, which was sufficiently long to allow for multiple rounds of remodeling, the distributions of the nucleosome location showed a significant difference between the absence and presence of Gal4DBD (Figure 3A,B). In the absence of Gal4DBD, the nucleosome was moved away from the template end by several hundred base pairs towards the center region of the template, generating a rather broad distribution. In contrast, in the presence of Gal4DBD, although nucleosomes were still moved away from the end of the template, they were not able to pass the location of the Gal4DBD (Figure 3B). Instead, the distribution peaked at the midpoint between the Gal4 binding sequence and the 601NPE.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig3-v1.jpg)\n\n**Figure 3.:** Nucleosomes were remodeled by 1 nM ISW1a with 1 mM ATP for 10 min with or without Gal4DBD. Shaded regions indicate locations of Gal4 binding sequence and 601NPE. (A) Distributions of the locations of the nucleosome and bound Gal4DBD, either before remodeling or without Gal4DBD, as controls. (B) Distributions of the locations of the nucleosome after ISW1a remodeling in the presence of Gal4DBD on three different templates of increasing separation between the Gal4 binding sequence and the 601NPE. For each template, the nucleosome position distribution is dominated by a narrow population, but has a few outliers which were moved a much greater distance and some of which even passed the Gal4 binding sequence. These outliers (\u223c5%) were likely a result of templates that did not have a bound Gal4DBD initially (\u223c5%; see main text). This is further supported by the observation that none of these outlier traces revealed a bound Gal4DBD. Nonetheless, in order to avoid possible bias, these nucleosome positions were still used for further analysis in (C) and thus contributed to the error bars in (C). (C) Relationship between the distance the remodeled nucleosome moved and the separation between the Gal4 binding sequence and the 601NPE. Error bars are SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shown is a representative unzipping trace of a DNA molecule containing an end-positioned nucleosome and a bound Gal4DBD.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** This relation shows that ISW1a remodeler tends to center a nucleosome between the Gal4 binding site and the DNA end. Error bars are SEM. The dashed line indicates the center position on the DNA.\n\nTo further examine the relationship between the location of Gal4DBD and the ISW1a-remodeled nucleosome, we used two additional templates with shorter (24 bp and 50 bp) distances between the Gal4 binding site and the 601NPE (Figure 3B). After ISW1a remodeling in the presence of Gal4DBD, we found that the dyad locations of the remodeled nucleosomes always nearly centered between the bound Gal4DBD and the template end (Figure 3C; Figure 3\u2014figure supplement 2). These results demonstrate that Gal4DBD is a physical barrier for ISW1a mediated nucleosome remodeling and that ISW1a is able to use Gal4DBD as a reference point to reposition a nucleosome.\n\nThis novel finding is of particular relevance to in vivo nucleosome spacing, especially near transcription start and termination sites. Although previous studies have suggested a possible role for ISWI remodelers to space nucleosomes using bound TFs near these sites (Pazin et al., 1997; Gkikopoulos et al., 2011; Yen et al., 2012), our results provide direct evidence that ISWI remodelers can indeed sense and respond to the presence of a DNA-bound protein such as a TF, which acts as barrier to dictate the placement of nucleosomes.\n\n### SWI/SNF remodeling evicts Gal4DBD from DNA\n\nIn order to test whether a bound Gal4DBD is a physical barrier for SWI/SNF remodeling and what the fate of a bound Gal4DBD is upon nucleosome remodeling, we used the same template as the one that we used in single round experiments and performed 10 min remodeling on template both in the absence and in the presence of Gal4DBD. After a single round of nucleosome remodeling, the nucleosome will likely overlap the Gal4 binding site (Figure 2). However, the force signature of a bound Gal4DBD is subtle compared to that of a nucleosome (Figure 1), and thus the presence or the absence of a bound Gal4DBD cannot be definitively differentiated from a nucleosome by the unzipping force. Therefore, in order to determine whether a Gal4DBD was present after nucleosome remodeling, we allowed SWI/SNF to carry out multiple rounds of remodeling reactions to potentially reposition the nucleosome sufficiently far from the Gal4 binding site to allow for a definitive assay of the state of binding at the Gal4 binding site.\n\nFor this experiment, we designed a long template (\u223c1200 bp) with a 601NPE separated from a Gal4 binding sequence by 11 bp. The 601NPE was located near the center of a long DNA template to allow ample distance for possible bidirectional sliding of the nucleosome via multiple rounds of remodeling, such that the remodeled nucleosome and possible presence of Gal4DBD could be independently detected. After a 10 min remodeling by SWI/SNF, nucleosomes were repositioned from the center of the template to random locations along the entire sequence. Both in the absence and presence of Gal4DBD, remodeled nucleosomes were detected on both sides of the original Gal4 binding position (Figure 4A, Figure 4\u2014figure supplement 1). This indicates that Gal4DBD is not a physical barrier for SWI/SNF mediated nucleosome remodeling.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig4-v1.jpg)\n\n**Figure 4.:** Nucleosomes were remodeled by 1.5 nM SWI/SNF with 1 mM ATP for 10 min with or without Gal4DBD. Shaded regions indicate locations of Gal4 binding sequence and 601NPE. (A) Distributions of the locations of the nucleosome and bound Gal4DBD before remodeling (upper plot), after remodeling without Gal4DBD (middle plot), and after remodeling with Gal4DBD (lower plot). (B) Representative traces in the case of before remodeling (top plot; N = 55) and after remodeling (middle and bottom plots; N = 50). The middle plot shows an example trace where a nucleosome was remodeled to the opposite side of Gal4DBD relative to its original position; while the bottom plot shows an example trace where a nucleosome was remodeled to the same side of Gal4DBD relative to its original position. Gray traces were taken from the corresponding naked DNA.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To determine whether the distributions of the locations of remodeled nucleosomes were similar for measurements made by unzipping the DNA in one direction vs in the other direction, we unzipped multiple DNA molecules, each containing either an unremodeled or a remodeled nucleosome, from both directions. Nucleosome remodeling was carried out in 1 nM SWI/SNF with 1 mM ATP for 5 min. Our data show similar distributions for data obtained in both directions.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** To test whether SWI/SNF is able to evict Gal4DBD via nucleosome remodeling when a bound Gal4DBD is located farther away from a nucleosome, we used a template where the Gal4 binding site was separated from the 601NPS by 24 bp and carried out unzipping experiments under identical conditions as those shown in Figure 4. Out of all traces where the nucleosome was repositioned to the opposite side of the Gal4 binding site by SWI/SNF (N = 13), we did not detect any Gal4DBD binding signature on the template, indicating eviction of Gal4DBD. Shown are example traces, with arrows indicating the unzipping directions.\n\nWhat is the fate of the Gal4DBD after a nucleosome has been remodeled? To answer this question, we allowed a nucleosome to be remodeled by SWI/SNF in the presence of Gal4DBD. We then analyzed each trace to determine whether a nucleosome was remodeled to the opposite side of the Gal4 sequence or to the same side of the Gal4 sequence, relative to the 601NPE. For the traces where nucleosomes were remodeled to the opposite side of the Gal4 sequence, we did not detect any Gal4DBD unzipping signature (Figure 4B; Figure 1\u2014figure supplement 4). This indicates that SWI/SNF was able to move the nucleosome in such a way that the Gal4DBD was evicted from its binding sequence. For traces where a nucleosome was remodeled to the same side of the Gal4 sequence relative to the 601NPE (Figure 4B), we also did not detect any Gal4DBD unzipping signature. This implies that these nucleosomes were likely first remodeled towards the bound Gal4DBD, as indicated by Figure 2, resulting in the eviction of Gal4DBD. This was followed by subsequent remodeling events that moved nucleosomes to other positions. Control experiments SWI/SNF is unable to evict a bound Gal4DBD in the absence of a nucleosome or in the absence of ATP (Figure 4\u2014source data 1). An increase in the separation between the Gal4 binding site and 601NPS to 24 bp still permits SWI/SNF remodeling to evict Gal4DBD (Figure 4\u2014figure supplement 2). Therefore, we conclude that SWI/SNF remodeling is able to evict a bound TF and this eviction requires the presence of a nucleosome.\n\nOur findings provide the first direct evidence that SWI/SNF nucleosome remodeling is capable of evicting a bound TF. Previously, SWI/SNF was shown to move one nucleosome to invade and eventually disrupt an adjacent nucleosome (Dechassa et al., 2010). Taken together with our findings, SWI/SNF nucleosome remodeling appears to be powerful machinery capable of actively overcoming and removing a variety of obstacles in its vicinity.\n\n### Nucleosome remodeling shows similar effects in the presence of a Lac repressor\n\nTo rule out the possibility that the interaction between a TF and a nucleosome demonstrated above is specific to Gal4DBD, we replaced Gal4 binding sequence with a Lac repressor binding sequence and repeated the above experiments using the Lac repressor. Because the Lac repressor is only found in prokaryotic cells and has no known relationship with any chromatin remodeler in eukaryotic cells, it can act as a biologically neutral bound protein. When ISW1a remodeled an end-positioned nucleosome on a template also containing a bound Lac repressor, the Lac repressor effectively dictated the position of the remodeled nucleosome, with ISW1a centering the nucleosome on the DNA with the Lac repressor acting as a barrier (Figure 5A). In contrast, SWI/SNF was able to slide a nucleosome in either direction, displacing the bound Lac repressor (Figure 5B). Therefore, we conclude that the mechanism of TF regulation by nucleosome remodeling is likely general without any specificity to a particular TF.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig5-v1.jpg)\n\n**Figure 5.:** Shaded regions indicate locations of Lac repressor binding sequence and 601NPE. (A) Distributions of locations of nucleosomes before remodeling (upper plot), after remodeling by ISW1a without Lac repressor (middle plot), and after remodeling by ISW1a with Lac repressor (lower plot). Lac repressor binding sequence was separated from the 601NPE by 50 bp. Nucleosomes remodeling was carried out in 1 nM ISW1a with 1 mM ATP for 10 min with or without Lac repressor. (B) Representative traces in the case of before SWI/SNF remodeling (top plot; N = 25) and after remodeling (middle and bottom plots; N = 27). Lac repressor binding site was separated from the 601NPE by 10 bp. Nucleosomes were remodeled by 1.5 nM SWI/SNF with 1 mM ATP for 10 min. The middle plot shows an example trace where a nucleosome was remodeled to the other side of the Lac repressor and the bottom plot shows an example trace where a nucleosome was remodeled to the same side of Lac repressor.\n\n## Discussion\n\nIt has been widely acknowledged that SWI/SNF remodelers move nucleosomes toward the ends of a DNA template and ISWI remodelers move nucleosomes away from the ends of a DNA template (Stockdale et al., 2006; Yang et al., 2006; Zofall et al., 2006; Leonard and Narlikar, 2015). However, rather than DNA ends, in vivo DNA nucleosome remodeling will most likely encounter DNA-binding proteins such as TFs. Here, we show that ISW1a senses a bound TF as a boundary during nucleosome repositioning, while SWI/SNF remodeling is unimpeded by the presence of a bound TF and is able to slide a nucleosome and evict the TF (Figure 6). In contrast to bulk biochemical studies that typically use DNA ends as boundaries on short DNA templates, our studies using bound TFs as potential barriers better mimic a situation that will more likely occur in vivo.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06249/elife-06249-fig6-v1.jpg)\n\n**Figure 6.:** When a nucleosome is remodeled by ISW1a (left), nucleosome repositioning is blocked by a bound TF, the TF remains intact, and the remodeled nucleosome is positioned with the TF acting as a boundary and reference point. On the other hand, when a nucleosome is remodeled by SWI/SNF (right), nucleosome positioning is unaffected by a bound TF and the TF is evicted.\n\n### Differential directionality of nucleosome remodeling\n\nOur results showed opposite directionality for nucleosome positioning when a nucleosome in close proximity to a TF was remodeled by ISW1a and SWI/SNF (Figure 2). Biochemical studies and the crystal structure of ISW1a indicate that the DNA-binding domain of ISW1a binds to \u223c29 bp of the extranucleosomal DNA, which has been proposed to act as an anchor to pull the nucleosome towards ISW1a (Gangaraju and Bartholomew, 2007; Hauk and Bowman, 2011; Yamada et al., 2011; Hota et al., 2013). Our finding that ISW1a moves nucleosome away from a TF adjacent to the nucleosome is consistent with an important role of the DNA-binding domain in engaging fully accessible DNA immediately flanking the nucleosome. In contrast, while it has been widely acknowledged that SWI/SNF does not require extra-nucleosomal DNA binding to remodel a nucleosome, cryo-EM and DNA-crosslinking experiments have shown that the Snf6 subunit of SWI/SNF binds to \u223c15 bp of the extra-nucleosomal DNA and the rest of the SWI/SNF slides the nucleosome away from where the Snf6 subunit binds (Dechassa et al., 2008). Although the Snf6 subunit has not been shown to be essential for remodeling, it has DNA-binding affinity (Sengupta et al., 2001; Dechassa et al., 2008). We speculate that it may help to orient SWI/SNF binding on the nucleosome. In the presence of a barrier adjacent to a nucleosome, Snf6 may prefer to bind to the side of the nucleosome with more linker DNA and thus orient SWI/SNF to slide a nucleosome towards the TF.\n\n### Nucleosome spacing by ISW1a in vivo\n\nOur study of ISW1a remodeling demonstrates that Gal4DBD is an effective barrier for ISW1a-mediated nucleosome remodeling and the ISW1a is able to use Gal4DBD as a reference point to reposition nucleosomes (Figure 3). These results have significant implications for the mechanism of nucleosome spacing in vivo. Genome-wide nucleosome mapping in budding yeast revealed that deletion of ISWI in yeast disrupts nucleosome spacing (Gkikopoulos et al., 2011), suggesting that ISW1 remodelers are key players in generating evenly distributed nucleosomal arrays. In addition, several recent studies have shown that certain DNA-binding factors located at the promoter region are also responsible for nucleosome positioning (Whitehouse et al., 2007; Yadon et al., 2010; Zhang et al., 2010; Bai et al., 2011; Hughes et al., 2012; Yen et al., 2012; Parikh and Kim, 2013; Struhl and Segal, 2013; Lieleg et al., 2014). Our finding that a bound Gal4DBD is a barrier to ISW1a now provides direct evidence to illustrate that ISW1a can potentially use a TF around the promoter region as a reference point to evenly position nucleosomes into the gene body.\n\n### In vivo implications of SWI/SNF action in TF regulation\n\nOur study shows that TF eviction is an intrinsic property of SWI/SNF remodeling and is independent of SWI/SNF recruitment (Figures 4 and 5). It has been previously shown that SWI/SNF recruitment by the glucocorticoid receptor (GR) induced histone loss in nucleosomes and this was immediately followed by GR and SWI/SNF eviction from the template (Nagaich et al., 2004). Our current work demonstrates that, in the absence of remodeler recruitment, TF eviction via nucleosome remodeling can take place without substantial nucleosome loss. Although SWI/SNF can translocate along naked DNA (Lia et al., 2006; Zhang et al., 2006; Sirinakis et al., 2011), raising the possibility for TF eviction solely by SWI/SNF, we found that in the absence of a nucleosome, SWI/SNF did not displace Gal4DBD from its binding site (Figure 4\u2014source data 1). Thus, SWI/SNF translocation alone is insufficient to displace a bound Gal4DBD and TF eviction requires nucleosome remodeling. Previous work by Owen-Hughes and coworkers (Lia et al., 2006) found that translocation by RSC was highly sensitive to a force in the DNA. Therefore, although SWI/SNF is known to translocate along naked DNA, it may have limited ability in dealing with a road block, such as a bound protein. It is also possible that SWI/SNF is unable to efficiently locate a bound protein in the absence of a nucleosome. We speculate that TF removal may be accelerated once a nucleosome is repositioned over the bound TF. Indeed, a recent single molecule fluorescence study of Gal4 binding kinetics on nucleosomal DNA showed that a nucleosome regulates Gal4 binding not only by preventing Gal4 binding, but also by dramatically increasing the Gal 4 dissociation rate from the DNA (Luo et al., 2014).\n\nSWI/SNF family remodelers are known to be involved in transcriptional activation. Genome-wide mapping of yeast indicates that, apart from localizing to nucleosomes around transcription start sites, SWI/SNF family remodelers are also enriched upstream of the promoter regions (Yen et al., 2012). Genome-wide analysis of the locations of human chromatin remodelers also found that Brg1, Chd4, and Snf2h are highly enriched at the promoter and distal upstream regions (Morris et al., 2014). Since many relevant transcriptional modulators, such as enhancers (Ren, 2010) and insulators (Bell et al., 2001), are located further upstream of promoters, SWI/SNF family remodelers could move promoter nucleosomes to dynamically regulate these factors. Thus, although SWI/SNF alone does not possess any ability to remove TFs on its own, our work shows that SWI/SNF can slide nucleosomes to displace neighboring TFs around the promoter region, providing a mechanistic basis for dynamically clearing both nucleosomes and other bound factors upon SWI/SNF recruitment (Nagaich et al., 2004).\n\n## Materials and methods\n\n### Plasmids\n\nThe plasmids containing the Gal4 binding site and the 601NPE with varied distances were prepared using standard PCR and cloning methods. The cloning segments were generated by standard PCR from the 601 plasmid (Lowary and Widom, 1998) using special primers, one of which contains one Gal4 binding site. The distance between the primer containing the Gal4 binding site and the 601NPE determines the distance between the Gal4 binding site and 601NPE. Then, the PCR product was cloned into the pDrive vector (Qiagen, Valencia, CA). The finished constructs were confirmed by DNA sequencing.\n\n### Nucleosome unzipping template\n\nNucleosomal DNA templates were prepared using methods similar to those previously described (Koch et al., 2002; Li and Wang, 2012). Briefly, each DNA construct consisted of two separate segments. A \u223c1.1 kbp anchoring segment was amplified, by PCR, from plasmid pRL574 using a digoxigenin-labeled primer and then subsequently digested with BstXI (NEB, Ipswich, MA) to produce an overhang. The unzipping templates were amplified, by PCR, from the plasmids described above and amplified with a biotin-labeled primer, digested with BstXI, and dephosphorylated using CIP (NEB, Ipswich, MA) to introduce a nick into the final DNA template. Nucleosomes were assembled from purified HeLa histones onto the unzipping fragment by a well-established salt dialysis method (Lee and Narlikar, 2001). The two segments were joined by ligation immediately prior to use. This produced a complete template labeled with a single dig tag on one end and a biotin tag located 7 bp after the nick in one DNA strand.\n\n### Nucleosome remodeling reaction\n\nyISW1a and ySWI/SNF were purified as previously described (Gangaraju and Bartholomew, 2007; Dechassa et al., 2008). yGal4DBD was purchased from Santa Cruz Biotechnology, Inc., Dallas, TX. After the ligation of the anchoring segment and unzipping segment containing a nucleosome, we incubated 20 nM of the nucleosomal DNA with 200 nM Gal4DBD at 16\u00b0C for 30 min. Single molecule sample preparation was performed according to protocols previously described (Li and Wang, 2012). The remodeling experiments were conducted in a sample chamber after the DNA tethers are formed. SWI/SNF remodeling reactions contained 1.5 nM purified ySWI/SNF, and 1 mM ATP in the SWI/SNF remodeling buffer (10 mM Tris\u22c5Cl, pH 8.0, 100 mM NaCl, 7 mM MgCl2, 2 mM DTT, 0.1 mg/ml acBSA). ISW1a remodeling reactions contained 1.5 nM purified yISW1a, and 1 mM ATP in the ISW1a remodeling buffer (30 mM HEPES, pH 7.6, 3 mM MgCl2, 5 mM NaCl, 0.1 mM EGTA, 0.02 mM EDTA, 5% glycerol, 0.2 mg/ml acBSA). Both types of remodeling reactions were incubated at 25\u00b0C with duration specified. The reactions were stopped by the addition of 10 mM EDTA and 0.25 mg/ml Salmon Sperm DNA and incubation for 5 min at 25\u00b0C. Finally, the sample chamber was rinsed with 100 \u03bcl sample buffer (10 mM Tris\u22c5Cl pH 7.5, 1 mM EDTA, 100 mM NaCl, 1.5 mM MgCl2, 1 mM DTT, 3% (vol/vol) glycerol, 0.02% (vol/vol) Tween 20, and 2 mg/ml BSA). Single molecule unzipping measurements were subsequently performed in this sample buffer.\n\n### Data collection and alignment\n\nAn optical trapping setup as previously described (Brower-Toland and Wang, 2004) was used to unzip a single DNA molecule by moving the microscope coverslip horizontally away from an optical trap. The unzipping methods have been previously described (Li and Wang, 2012) and briefly summarized here. Whenever the unzipping fork encountered an interaction that prevented the fork progression, the unzipping force was ramped up linearly with time (15 pN/s) until the interaction was disrupted. When two interactions occurred in close vicinity, upon the disruption of the first interaction the force was unable to relax back to the baseline before being ramped up again for the second interaction, subjecting this subsequent interaction to a higher initial force. Therefore, for each region of interactions, the dwell time histogram highlighted the edge of the region first encountered. Another feature of this method was the display of the distinctive force signature for a nucleosome, allowing for robust identification of the nucleosome structure.\n\nData were low pass filtered to 5 kHz, digitized at \u223c12 kHz, and later low pass filtered to 60 Hz. The precision and accuracy of the experimental curves were improved to near base pair level by cross-correlation of regions immediately before the Gal4DBD disruption and after the nucleosome disruption, using methods as previously described (Hall et al., 2009; Li and Wang, 2012). For the experimental curves where the nucleosomes are located at the end of the template, the cross-correlation was carried out for a region immediately before the Gal4DBD disruption or nucleosome disruption. To account for minor instrumental drift, trapping bead size variations, and DNA linker variations, the alignment allowed for a small additive shift (\u223c10 bp) and multiplicative linear stretch (<2%) using algorithms similar to those previously described (Hall et al., 2009).\n\n### Determination of locations of a TF and a nucleosome\n\nGal4DBD showed a distinct unzipping signature with a single force peak at 8 bp from the center of the consensus sequence (Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3a), indicating the front end of the Gal4DBD footprint on the DNA. The disruption force peak was 18\u201320 pN, significantly larger than the baseline force of \u223c15 pN. Therefore, we determined the center position of a bound Gal4DBD by first detecting the peak force location and then shifting this location by 8 bp in the direction of unzipping.\n\nThe positioned nucleosome displayed a much more complex force signature with multiple force peaks and a significantly greater overall force, reflecting the multiple finer and stronger histone\u2013DNA interactions within a nucleosome (Shundrovsky et al., 2006; Hall et al., 2009). We determine the dyad position of a nucleosome by first measuring mean force location within the first force cluster and then shifting this position by 43 bp in the direction of the unzipping (Figure 1\u2014figure supplement 2).\n",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c010d6f3-4a78-4f13-8021-d2c03b7295bb",
+      "submission_id": "7d6b1c98-0352-4051-85ff-dfb8b639809a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06249.021](https://doi.org/10.7554/eLife.06249.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDynamic Regulation of Transcription Factors by Nucleosome Remodeling\u201d for consideration at eLife. Your article has been overall favorably evaluated by James Manley (Senior editor), two expert reviewers, and a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the two reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this manuscript, Li et al. use a single-molecule DNA unzipping approach to probe the mechanism of nucleosome remodeling by two ATP-dependent nucleosome-remodeling complexes, Isw1a and SWI/SNF, and the influence of DNA-binding protiens on this process. While the biochemical properties and mechanisms of action of ATP-dependent remodeling factors have been studied extensively, relatively few studies have examined how DNA-binding proteins impact and are impacted by nucleosome remodeling. Using a previously described unzipping assay, the authors present evidence that a Gal4 derivative (1-147) or the Lac repressor can block nucleosome sliding by ISWI1a. By contrast, the data suggest that SWI/SNF action leads to eviction of both Gal4 and LacR. The authors find that DNA-binding proteins serve as a barrier to nucleosome sliding by Isw1a, and nucleosomes tend to become evenly spaced between the DNA-binding protein and a barrier on the other side (such as the end of the DNA fragment). By contrast, SWI/SNF preferentially remodels nucleosomes toward the DNA-binding protein and displaces the DNA-binding factor in the process. This displacement by SWI/SNF depends on nucleosome remodeling. The experimental results as shown appear solid, but there are several concerns with the experimental design that create serious issues as described below.\n\nSpecific major comments:\n\n1) Figure 1: Given the modest peak corresponding to Gal4DBD relative to naked DNA, some statistical analysis of the peak height distribution across multiple traces with and without Gal4DBD binding is necessary to understand how confidently the Gal4DBD-bound vs unbound state can be assessed in later experiments.\n\n2) In Figure 4, the authors allow SWI/SNF to remodel nucleosomes for 10 minutes, observing that Gal4DBD is removed from the template in most cases, including those in which the nucleosome ends up at a location further away from the Gal4 binding site. Since the authors already observed that nucleosomes are initially moved by SWI/SNF closer to the Gal4DBD, they infer that nucleosomes are initially moved near or past the Gal4 binding site, displacing Gal4DBD, and then move in either direction afterward. This seems like a missed opportunity\u2014why not just examine what happens to Gal4DBD in the initial remodeling event (in a 1 minute, or slightly longer, remodeling reaction as performed in Figure 2)? This would allow assessment of whether the nucleosome actually needs to invade the Gal4 binding site to displace the DBD, or whether loss of DBD occurs prior to that, when the nucleosome gets within a certain distance of the DBD. This additional mechanistic insight would add some novelty and strengthen the paper.\n\n3) It is not clear how SWI/SNF complex can translocate past the Gal4DBD without displacing it in the absence of a nucleosome (in the first paragraph of the subsection headed \u201cIn vivo implications of SWI/SNF action in TF regulation\u201d). Do the authors think the Gal4DBD is temporarily displaced when SWI/SNF moves past and then re-binds, that the DBD remains bound when SWI/SNF translocates past its binding site, or that SWI/SNF cannot translocate past a bound DBD in the absence of nucleosomes? Some discussion of this point would be useful.\n\n4) Gal4 (1-147) is known to contain a transcriptional activation domain that is functional in vitro (Lin et al., Cell. 1988 Aug 26;54(5):659-64). This derivative is never used as a DNA binding domain control, but rather the 1-94 derivative is employed. SWI/SNF is known to be recruited by acidic activation domains, and it is not clear if targeting/binding by Gal4 (1-147) is impacting these results, especially the directionality of remodeling. If the authors wish to further investigate the directionality issue, they should either use 1-94, or use the Lac repressor constructs.\n\n5) The authors need to provide an ATP control to demonstrate that loss of the Gal4 signature reflects actual remodeling events, rather than simply a consequence of SWI/SNF binding. This is especially problematic as the SWI/SNF experiments all appear to use substrates where the Gal4 or Lac binding sites are extremely close to the nucleosome edge (10-11 bp). In contrast, the ISW1a experiments employ a variety of templates with varying distances. It is not clear why the same templates were not used for SWI/SNF studies. From their model, SWI/SNF should be able to evict Gal4 even if it is located at great distances from the 601 sequence. Such templates should be tested.\n\n6) Note that previous nucleosome mapping experiments by the Bartholomew lab (Dechassa et al., 2008) showed that the Snf6 subunit of SWI/SNF actually binds to the first 15 bp of linker DNA and would thus compete for Gal4 (1-147) or Lac binding.\n\n7) Note that older experiments from the Kadonaga group (Pazin et al., 1997, Science 276:809) showed very nicely that a DNA binding domain (tetR) could provide a boundary function for ATP-dependent remodeling enzymes. Although these older studies used a Drosophila embyro extract system, we now know that these assays were monitoring the activity of the ISWI-containing ACF complex. These older studies detract from the novelty of this current study.\n\n8) The authors state that the ability of Gal4 to impart directionality onto the SWI/SNF remodeling reaction is novel. However, Workman and colleagues have previously provided evidence for a similar effect in ensemble experiments with Gal4-VP16 (EMBO J 2007 26:730).\n\n9) It is not clear from the Methods section when the unzipping reaction is performed. Are remodeling enzymes stopped and removed before the unzip or after? Please explain.\n\n10) Please explain why were constructs with factor binding sites directly adjacent to the nucleosomes the only ones used in the SWI/SNF studies. Were these constructs the only ones that worked?\n",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "45e96b92-fc3a-415c-9396-4fe685e708c2",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C1",
+      "claim": "The DNA unzipping technique can characterize the locations of a bound TF and a nucleosome simultaneously on long DNA templates to near base pair accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the remodeling behavior upon encountering a bound TF, we determined that the relationship between TFs and nucleosome remodeling not only plays a critical role in nucleosome positioning, but also reveals a novel mechanism for how a TF can be dynamically recycled by nucleosome remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes using DNA unzipping to characterize positions and cites previous work demonstrating this capability.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "8be8ac3d-efb4-42a6-a0a5-42db0d03c0fa",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C2",
+      "claim": "A TF serves as a major barrier to ISW1a remodeling and acts as a boundary for nucleosome repositioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a TF serves as a major barrier to ISW1a remodeling, and acts as a boundary for nucleosome repositioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "7966fc4f-dc4e-48c9-b832-61c2ac760405",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C3",
+      "claim": "SWI/SNF was able to slide a nucleosome past a TF with concurrent eviction of the TF from the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SWI/SNF was able to slide a nucleosome past a TF, with concurrent eviction of the TF from the DNA, and the TF did not significantly impact the nucleosome positioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "519b5059-67b4-4a0c-ae93-8f6fa313b298",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C4",
+      "claim": "The TF did not significantly impact nucleosome positioning by SWI/SNF.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SWI/SNF was able to slide a nucleosome past a TF, with concurrent eviction of the TF from the DNA, and the TF did not significantly impact the nucleosome positioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing nucleosome distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ab163d68-88ae-4077-9e3a-68cbb6ac25ee",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C5",
+      "claim": "The repression of transcription has often been correlated with the presence of nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the repression of transcription has often been correlated with the presence of nucleosomes, the basic units of chromatin structure, in which histone\u2013DNA interactions act as a barrier for RNA polymerase elongation along DNA (Li et al., 2007; Petesch and Lis, 2012; Teves et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "65770bcb-bc7f-44dc-8779-8a8a87a6a0e8",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C6",
+      "claim": "Nucleosomes and TFs compete for binding to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes and TFs have been shown to compete for binding to DNA (Mirny, 2010; Moyle-Heyrman et al., 2011; Lickwar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "caac7402-3642-490f-8e8c-923a34014735",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C7",
+      "claim": "The competition between nucleosomes and TFs is based on the respective affinities of the TF and nucleosome for DNA, and depends upon DNA sequence, histone variants, and histone modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "This competition is based on the respective affinities of the TF and nucleosome for DNA, and depends upon DNA sequence, histone variants, and histone modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c7d13294-e12f-4961-bfdf-c54bf654edd6",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C8",
+      "claim": "Some TFs are known to recruit nucleosome remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "Some TFs are known to recruit nucleosome remodelers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "9704d0eb-fa47-42fe-a7cf-9402bd8015c7",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C9",
+      "claim": "Gal4DBD contains only the 147 amino acids of the N terminal domain of the Gal4 protein and does not have any known remodeler recruitment function.",
+      "claim_type": "EXPLICIT",
+      "source": "Gal4DBD contains only the 147 amino acids of the N terminal domain of the Gal4 protein and does not have any known remodeler recruitment function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "71d96978-a3a6-4f5e-b26a-e8ea81a5141a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C10",
+      "claim": "The equilibrium dissociation constant of Gal4DBD was determined to be 3.4 nM under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our experimental conditions, the equilibrium dissociation constant of Gal4DBD was determined to be 3.4 nM (Figure 1\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 1\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "7c316846-a964-459c-8fe2-ee1f0603a033",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C11",
+      "claim": "The bound Gal4DBD's lifetime was much longer than 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the bound Gal4DBD's lifetime was much longer than 1 hr (the typical duration of a single molecule experiment) (Figure 1\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 1\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "92cd1182-57ab-4381-82a4-37e36352006c",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C12",
+      "claim": "SWI/SNF family remodelers are known to be associated with nucleosome disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF family remodelers are known to be associated with nucleosome disruption (Imbalzano et al., 1996; Logie and Peterson, 1997; Aoyagi et al., 2002) and transcriptional activation (Kwon et al., 1994; Hassan et al., 2001; Gkikopoulos et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "352832b8-2c18-4c7d-94d1-d19562dc9583",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C13",
+      "claim": "SWI/SNF family remodelers are known to be associated with transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF family remodelers are known to be associated with nucleosome disruption (Imbalzano et al., 1996; Logie and Peterson, 1997; Aoyagi et al., 2002) and transcriptional activation (Kwon et al., 1994; Hassan et al., 2001; Gkikopoulos et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "100c37ed-30d1-429a-be98-299f7c68dbfa",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C14",
+      "claim": "ISWI family remodelers have been shown to contribute to the formation of evenly spaced nucleosome arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "while ISWI family remodelers have been shown to contribute to the formation of evenly spaced nucleosome arrays (Tsukiyama et al., 1999; Fyodorov and Kadonaga, 2002; Lusser et al., 2005; Torigoe et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b93038d8-0e3a-4231-b0f0-5759ef8446b2",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C15",
+      "claim": "Both SWI/SNF and ISWI remodeler families have been implicated in transcriptional activation and repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these opposing characteristics, both remodeler families have been implicated in transcriptional activation and repression (Kwon et al., 1994; Moreira and Holmberg, 1999; Hassan et al., 2001; Martens and Winston, 2002; Whitehouse et al., 2007; Yadon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "774331b8-0854-4cf2-9512-f16d25418176",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C16",
+      "claim": "Many ISWI remodelers have been shown to be sensitive to naked DNA segments flanking the nucleosome, preferentially sliding the nucleosome towards the longer segment of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "On mononucleosome substrates, many ISWI remodelers have been shown to be sensitive to naked DNA segments flanking the nucleosome, preferentially sliding the nucleosome towards the longer segment of DNA (Yang et al., 2006; Blosser et al., 2009; Deindl et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "fb9557d6-17de-48de-a2bd-e37cab461e5b",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C17",
+      "claim": "SWI/SNF remodelers can shift a histone octamer up to 50 bp off the end of a short DNA fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF remodelers, on the other hand, can shift a histone octamer up to 50 bp off the end of a short DNA fragment (Kassabov et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ea25a287-9285-4dd0-af43-3110b9c9ba4a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C18",
+      "claim": "SWI/SNF remodelers have been found to shift one nucleosome onto another on dinucleosomal templates, indicating nucleosome disruption and eviction characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "On dinucleosomal templates, SWI/SNF remodelers have been found to shift one nucleosome onto another, indicating nucleosome disruption and eviction characteristics of these remodelers (Engeholm et al., 2009; Dechassa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "7ae73325-b9d5-44c8-ac66-523d7a3c3393",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C19",
+      "claim": "Approximately 56% of nucleosomes remained at the original location after short remodeling time, suggesting a lack of remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "During such a short remodeling time, \u223c56% of nucleosomes pooled from measurements of multiple single molecules were found to remain at the original location, suggesting a lack of remodeling (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "663280ee-ce41-4cd9-a391-de092e87921d",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C20",
+      "claim": "Of the remodeled nucleosomes, approximately 73% were remodeled only once and approximately 27% were remodeled more than once.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining \u223c45% of the nucleosomes that were remodeled, we estimate that \u223c73% were remodeled only once and \u223c27% were remodeled more than once, using a method we previously established (Shundrovsky et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data analysis using a previously established method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "f8d31047-964a-4493-ba67-d8f84b9ac12f",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C21",
+      "claim": "In the absence of Gal4DBD, both ISW1a and SWI/SNF were able to move a nucleosome bi-directionally.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Gal4DBD, although the nucleosome unzipping signature did not appear to be altered after remodeling by either ISW1a or SWI/SNF (Figure 2\u2014figure supplement 1; Shundrovsky et al., 2006), the positions of the nucleosomes were spread out from the original location. Both ISW1a and SWI/SNF were able to move a nucleosome bi-directionally (Figure 2B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "08d7d765-0d2f-49e7-ab23-74c059187cc1",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C22",
+      "claim": "In the presence of Gal4DBD, ISW1a moved the nucleosome away from Gal4DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the presence of Gal4DBD, ISW1a moved the nucleosome away from Gal4DBD (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "801d6e12-5b16-4c5a-a4c0-9497cb94baa2",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C24",
+      "claim": "The bound Gal4DBD affects the directionality of nucleosome movement by ISW1a and SWI/SNF differently: away from the TF for ISW1a and toward the TF for SWI/SNF.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that the bound Gal4DBD affects the directionality of nucleosome movement by the two types of remodelers differently: away from the TF for ISW1a and toward the TF for SWI/SNF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data from multiple templates with different orientations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "6096b2b5-b942-4e00-9b1c-c5801cbda5d9",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C25",
+      "claim": "The findings on TF directed ISW1a nucleosome remodeling are in agreement with a previous study that used NURF in the presence of Gal4DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the TF directed SWI/SNF nucleosome remodeling are entirely novel; while our findings on the TF directed ISW1a nucleosome remodeling are in agreement with a previous study that used NURF (a homolog of ISWI complexes in Drosophila) in the presence of Gal4DBD (Kang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares current findings to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "f04ba334-1378-44ac-ae30-b2f7dfb87056",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C26",
+      "claim": "The findings on TF directed SWI/SNF nucleosome remodeling are entirely novel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the TF directed SWI/SNF nucleosome remodeling are entirely novel; while our findings on the TF directed ISW1a nucleosome remodeling are in agreement with a previous study that used NURF (a homolog of ISWI complexes in Drosophila) in the presence of Gal4DBD (Kang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "9ebf4d77-eed1-4ef7-8f33-dfbc99056239",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C27",
+      "claim": "In the presence of Gal4DBD, nucleosomes remodeled by ISW1a were not able to pass the location of the Gal4DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the presence of Gal4DBD, although nucleosomes were still moved away from the end of the template, they were not able to pass the location of the Gal4DBD (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "9e3574b2-6c67-4d1d-a93e-d2736f9ba072",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C28",
+      "claim": "The distribution of ISW1a-remodeled nucleosomes peaked at the midpoint between the Gal4 binding sequence and the 601NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the distribution peaked at the midpoint between the Gal4 binding sequence and the 601NPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b839fe9e-85eb-4a43-b15a-c24fadb75586",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C29",
+      "claim": "The dyad locations of the remodeled nucleosomes always nearly centered between the bound Gal4DBD and the template end.",
+      "claim_type": "EXPLICIT",
+      "source": "After ISW1a remodeling in the presence of Gal4DBD, we found that the dyad locations of the remodeled nucleosomes always nearly centered between the bound Gal4DBD and the template end (Figure 3C; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "a00e45ef-74db-4dd8-b225-6f3611ca639a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C30",
+      "claim": "Gal4DBD is a physical barrier for ISW1a mediated nucleosome remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Gal4DBD is a physical barrier for ISW1a mediated nucleosome remodeling and that ISW1a is able to use Gal4DBD as a reference point to reposition a nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing nucleosome positioning relative to Gal4DBD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ea3e79a6-b2e5-4715-94ab-91513c8a02a0",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C31",
+      "claim": "ISW1a is able to use Gal4DBD as a reference point to reposition a nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Gal4DBD is a physical barrier for ISW1a mediated nucleosome remodeling and that ISW1a is able to use Gal4DBD as a reference point to reposition a nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing nucleosome positioning relative to Gal4DBD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "00fd6629-7667-47c7-9aa8-f9b4fef9445a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C32",
+      "claim": "Deletion of ISWI in yeast disrupts nucleosome spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide nucleosome mapping in budding yeast revealed that deletion of ISWI in yeast disrupts nucleosome spacing (Gkikopoulos et al., 2011), suggesting that ISW1 remodelers are key players in generating evenly distributed nucleosomal arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "1c031458-cf7a-4f8f-9dc9-5d0450fd0d64",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C33",
+      "claim": "ISW1 remodelers are key players in generating evenly distributed nucleosomal arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide nucleosome mapping in budding yeast revealed that deletion of ISWI in yeast disrupts nucleosome spacing (Gkikopoulos et al., 2011), suggesting that ISW1 remodelers are key players in generating evenly distributed nucleosomal arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "6413022f-5992-4f99-be22-4a4d5f761411",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C34",
+      "claim": "Certain DNA-binding factors located at the promoter region are responsible for nucleosome positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several recent studies have shown that certain DNA-binding factors located at the promoter region are also responsible for nucleosome positioning (Whitehouse et al., 2007; Yadon et al., 2010; Zhang et al., 2010; Bai et al., 2011; Hughes et al., 2012; Yen et al., 2012; Parikh and Kim, 2013; Struhl and Segal, 2013; Lieleg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "9747a095-ab5a-48c4-84d9-c80320d40fdb",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C35",
+      "claim": "ISW1a can potentially use a TF around the promoter region as a reference point to evenly position nucleosomes into the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that a bound Gal4DBD is a barrier to ISW1a now provides direct evidence to illustrate that ISW1a can potentially use a TF around the promoter region as a reference point to evenly position nucleosomes into the gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b20a72c1-f771-4452-a1f5-8d4586981263",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C36",
+      "claim": "Gal4DBD is not a physical barrier for SWI/SNF mediated nucleosome remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in the absence and presence of Gal4DBD, remodeled nucleosomes were detected on both sides of the original Gal4 binding position (Figure 4A, Figure 4\u2014figure supplement 1). This indicates that Gal4DBD is not a physical barrier for SWI/SNF mediated nucleosome remodeling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "f3745465-7edc-4c9f-bb4f-ea0d0e0000fd",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C37",
+      "claim": "SWI/SNF was able to move the nucleosome in such a way that the Gal4DBD was evicted from its binding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For the traces where nucleosomes were remodeled to the opposite side of the Gal4 sequence, we did not detect any Gal4DBD unzipping signature (Figure 4B; Figure 1\u2014figure supplement 4). This indicates that SWI/SNF was able to move the nucleosome in such a way that the Gal4DBD was evicted from its binding sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on data shown in Figure 4B and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "61d686f4-e885-45e7-a68a-d5b5c70b461f",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C38",
+      "claim": "SWI/SNF is unable to evict a bound Gal4DBD in the absence of a nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments SWI/SNF is unable to evict a bound Gal4DBD in the absence of a nucleosome or in the absence of ATP (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "be9be51f-0d56-4139-ad69-cab50aa3244b",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C39",
+      "claim": "SWI/SNF is unable to evict a bound Gal4DBD in the absence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments SWI/SNF is unable to evict a bound Gal4DBD in the absence of a nucleosome or in the absence of ATP (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "0619472a-cf28-4220-a964-1f9d313bdde3",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C40",
+      "claim": "SWI/SNF remodeling is able to evict a bound TF and this eviction requires the presence of a nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that SWI/SNF remodeling is able to evict a bound TF and this eviction requires the presence of a nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data including control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "11b8e9e2-1645-4dc6-924d-421809c29640",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C41",
+      "claim": "SWI/SNF was shown to move one nucleosome to invade and eventually disrupt an adjacent nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, SWI/SNF was shown to move one nucleosome to invade and eventually disrupt an adjacent nucleosome (Dechassa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "992cd1df-ab09-485d-8287-6d60e4e5411b",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C42",
+      "claim": "When ISW1a remodeled an end-positioned nucleosome on a template also containing a bound Lac repressor, the Lac repressor effectively dictated the position of the remodeled nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "When ISW1a remodeled an end-positioned nucleosome on a template also containing a bound Lac repressor, the Lac repressor effectively dictated the position of the remodeled nucleosome, with ISW1a centering the nucleosome on the DNA with the Lac repressor acting as a barrier (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "a359e690-b47d-492a-80d9-57a7596553d0",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C43",
+      "claim": "SWI/SNF was able to slide a nucleosome in either direction, displacing the bound Lac repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SWI/SNF was able to slide a nucleosome in either direction, displacing the bound Lac repressor (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c0bb2524-fa77-4edc-aabb-7a00a4a29d95",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C44",
+      "claim": "The mechanism of TF regulation by nucleosome remodeling is likely general without any specificity to a particular TF.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that the mechanism of TF regulation by nucleosome remodeling is likely general without any specificity to a particular TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experiments with both Gal4DBD and Lac repressor showing similar results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "1a4b2550-e170-4cf0-b7b1-c0cccdb7dd29",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C45",
+      "claim": "SWI/SNF remodelers move nucleosomes toward the ends of a DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely acknowledged that SWI/SNF remodelers move nucleosomes toward the ends of a DNA template and ISWI remodelers move nucleosomes away from the ends of a DNA template (Stockdale et al., 2006; Yang et al., 2006; Zofall et al., 2006; Leonard and Narlikar, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "7a00658a-d355-4d7c-a84b-efbad496996d",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C46",
+      "claim": "ISWI remodelers move nucleosomes away from the ends of a DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely acknowledged that SWI/SNF remodelers move nucleosomes toward the ends of a DNA template and ISWI remodelers move nucleosomes away from the ends of a DNA template (Stockdale et al., 2006; Yang et al., 2006; Zofall et al., 2006; Leonard and Narlikar, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ac3d9376-2445-4069-9f02-f6b1709b1b72",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C47",
+      "claim": "ISW1a senses a bound TF as a boundary during nucleosome repositioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that ISW1a senses a bound TF as a boundary during nucleosome repositioning, while SWI/SNF remodeling is unimpeded by the presence of a bound TF and is able to slide a nucleosome and evict the TF (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the main findings supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "94c0c3b4-5158-4a38-ae91-9dc36584b2f6",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C48",
+      "claim": "SWI/SNF remodeling is unimpeded by the presence of a bound TF and is able to slide a nucleosome and evict the TF.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that ISW1a senses a bound TF as a boundary during nucleosome repositioning, while SWI/SNF remodeling is unimpeded by the presence of a bound TF and is able to slide a nucleosome and evict the TF (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the main findings supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "4a184ee7-e600-4d3d-a4be-b1e44251f7b2",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C49",
+      "claim": "The DNA-binding domain of ISW1a binds to approximately 29 bp of the extranucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies and the crystal structure of ISW1a indicate that the DNA-binding domain of ISW1a binds to \u223c29 bp of the extranucleosomal DNA, which has been proposed to act as an anchor to pull the nucleosome towards ISW1a (Gangaraju and Bartholomew, 2007; Hauk and Bowman, 2011; Yamada et al., 2011; Hota et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "4de86617-b2ff-4ba7-b5f9-1b1bc49f2a5a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C50",
+      "claim": "The DNA-binding domain of ISW1a has been proposed to act as an anchor to pull the nucleosome towards ISW1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies and the crystal structure of ISW1a indicate that the DNA-binding domain of ISW1a binds to \u223c29 bp of the extranucleosomal DNA, which has been proposed to act as an anchor to pull the nucleosome towards ISW1a (Gangaraju and Bartholomew, 2007; Hauk and Bowman, 2011; Yamada et al., 2011; Hota et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "626a9a66-1581-4989-9574-bf15a8c20b98",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C51",
+      "claim": "The Snf6 subunit of SWI/SNF binds to approximately 15 bp of the extra-nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while it has been widely acknowledged that SWI/SNF does not require extra-nucleosomal DNA binding to remodel a nucleosome, cryo-EM and DNA-crosslinking experiments have shown that the Snf6 subunit of SWI/SNF binds to \u223c15 bp of the extra-nucleosomal DNA and the rest of the SWI/SNF slides the nucleosome away from where the Snf6 subunit binds (Dechassa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c775884d-d3aa-496e-aa68-4cf507d56dd2",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C52",
+      "claim": "The Snf6 subunit has not been shown to be essential for remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Snf6 subunit has not been shown to be essential for remodeling, it has DNA-binding affinity (Sengupta et al., 2001; Dechassa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "2104a0e6-5628-4af0-a8ec-cdc94c35d616",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C53",
+      "claim": "The Snf6 subunit has DNA-binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Snf6 subunit has not been shown to be essential for remodeling, it has DNA-binding affinity (Sengupta et al., 2001; Dechassa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "39c58bfa-f338-433a-8508-9efb810be841",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C54",
+      "claim": "SWI/SNF recruitment by the glucocorticoid receptor induced histone loss in nucleosomes and this was immediately followed by GR and SWI/SNF eviction from the template.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that SWI/SNF recruitment by the glucocorticoid receptor (GR) induced histone loss in nucleosomes and this was immediately followed by GR and SWI/SNF eviction from the template (Nagaich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ffca77f3-ba51-43f3-a615-43912a1b9de3",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C55",
+      "claim": "In the absence of remodeler recruitment, TF eviction via nucleosome remodeling can take place without substantial nucleosome loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current work demonstrates that, in the absence of remodeler recruitment, TF eviction via nucleosome remodeling can take place without substantial nucleosome loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "fd675f0f-1afa-4552-add4-2d5dbdea56c1",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C56",
+      "claim": "SWI/SNF can translocate along naked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SWI/SNF can translocate along naked DNA (Lia et al., 2006; Zhang et al., 2006; Sirinakis et al., 2011), raising the possibility for TF eviction solely by SWI/SNF, we found that in the absence of a nucleosome, SWI/SNF did not displace Gal4DBD from its binding site (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "6042ce2b-18c3-4264-8aa6-5068f0d32086",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C57",
+      "claim": "In the absence of a nucleosome, SWI/SNF did not displace Gal4DBD from its binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SWI/SNF can translocate along naked DNA (Lia et al., 2006; Zhang et al., 2006; Sirinakis et al., 2011), raising the possibility for TF eviction solely by SWI/SNF, we found that in the absence of a nucleosome, SWI/SNF did not displace Gal4DBD from its binding site (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c25874b9-bede-4a78-9755-847cb60095ba",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C58",
+      "claim": "SWI/SNF translocation alone is insufficient to displace a bound Gal4DBD and TF eviction requires nucleosome remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SWI/SNF translocation alone is insufficient to displace a bound Gal4DBD and TF eviction requires nucleosome remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data from control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "29795c4a-11f8-4656-b661-95712e022295",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C59",
+      "claim": "Translocation by RSC was highly sensitive to a force in the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by Owen-Hughes and coworkers (Lia et al., 2006) found that translocation by RSC was highly sensitive to a force in the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "a352488a-9bbe-4731-bafc-2aa5835c15e8",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C60",
+      "claim": "A nucleosome regulates Gal4 binding not only by preventing Gal4 binding, but also by dramatically increasing the Gal4 dissociation rate from the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent single molecule fluorescence study of Gal4 binding kinetics on nucleosomal DNA showed that a nucleosome regulates Gal4 binding not only by preventing Gal4 binding, but also by dramatically increasing the Gal 4 dissociation rate from the DNA (Luo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "4ffd1208-8804-4e59-b933-a1064b89515c",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C61",
+      "claim": "SWI/SNF family remodelers are enriched upstream of the promoter regions in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide mapping of yeast indicates that, apart from localizing to nucleosomes around transcription start sites, SWI/SNF family remodelers are also enriched upstream of the promoter regions (Yen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "57ce0e9a-5fdc-44a5-a1b7-6bbf515c2813",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C62",
+      "claim": "Brg1, Chd4, and Snf2h are highly enriched at the promoter and distal upstream regions in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide analysis of the locations of human chromatin remodelers also found that Brg1, Chd4, and Snf2h are highly enriched at the promoter and distal upstream regions (Morris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "3fe8b590-4707-4204-8540-c114bfd5bce6",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C63",
+      "claim": "SWI/SNF can slide nucleosomes to displace neighboring TFs around the promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although SWI/SNF alone does not possess any ability to remove TFs on its own, our work shows that SWI/SNF can slide nucleosomes to displace neighboring TFs around the promoter region, providing a mechanistic basis for dynamically clearing both nucleosomes and other bound factors upon SWI/SNF recruitment (Nagaich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "5ea9299e-975c-45b3-ba25-2019baac0a7e",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C64",
+      "claim": "Nucleosomes were assembled from purified HeLa histones onto the unzipping fragment by a salt dialysis method.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes were assembled from purified HeLa histones onto the unzipping fragment by a well-established salt dialysis method (Lee and Narlikar, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "58eb6d7d-e388-435f-b65f-208b4a2285ad",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C65",
+      "claim": "yISW1a and ySWI/SNF were purified as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "yISW1a and ySWI/SNF were purified as previously described (Gangaraju and Bartholomew, 2007; Dechassa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "2830fb3b-a8cc-450a-94a4-49ddca62eae5",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C66",
+      "claim": "yGal4DBD was purchased from Santa Cruz Biotechnology, Inc.",
+      "claim_type": "EXPLICIT",
+      "source": "yGal4DBD was purchased from Santa Cruz Biotechnology, Inc., Dallas, TX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of materials used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "87f94627-b177-489f-86c8-8933d330b6a8",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C67",
+      "claim": "The precision and accuracy of the experimental curves were improved to near base pair level by cross-correlation of regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The precision and accuracy of the experimental curves were improved to near base pair level by cross-correlation of regions immediately before the Gal4DBD disruption and after the nucleosome disruption, using methods as previously described (Hall et al., 2009; Li and Wang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis method used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "524382fa-c97e-4b24-ad2a-e7010e1dbc8d",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C68",
+      "claim": "Gal4DBD showed a distinct unzipping signature with a single force peak at 8 bp from the center of the consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Gal4DBD showed a distinct unzipping signature with a single force peak at 8 bp from the center of the consensus sequence (Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3a), indicating the front end of the Gal4DBD footprint on the DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "98d27184-ae14-4188-ab8d-bd0745dd9e86",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C69",
+      "claim": "The disruption force peak for Gal4DBD was 18\u201320 pN, significantly larger than the baseline force of approximately 15 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The disruption force peak was 18\u201320 pN, significantly larger than the baseline force of \u223c15 pN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "eb8058af-fa87-4d21-936d-c0cfac1d0e44",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C70",
+      "claim": "The positioned nucleosome displayed a complex force signature with multiple force peaks and significantly greater overall force.",
+      "claim_type": "EXPLICIT",
+      "source": "The positioned nucleosome displayed a much more complex force signature with multiple force peaks and a significantly greater overall force, reflecting the multiple finer and stronger histone\u2013DNA interactions within a nucleosome (Shundrovsky et al., 2006; Hall et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental observations supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "3d936f23-e109-48dd-9408-7ab8ea3f1542",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C71",
+      "claim": "TF eviction is an intrinsic property of SWI/SNF remodeling and is independent of SWI/SNF recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that TF eviction is an intrinsic property of SWI/SNF remodeling and is independent of SWI/SNF recruitment (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is based on experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b951511d-db56-46d5-9e0d-6248e0846feb",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C72",
+      "claim": "The results provide direct evidence for a novel mechanism for both nucleosome positioning regulation by bound TFs and TF regulation via dynamic repositioning of nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide direct evidence for a novel mechanism for both nucleosome positioning regulation by bound TFs and TF regulation via dynamic repositioning of nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "24b0cb62-4d5a-4e32-9e93-0369073f4020",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C73",
+      "claim": "Proper transcriptional regulation depends upon transcription factors that bind to specific DNA-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic cells, proper transcriptional regulation depends upon transcription factors (TFs) that bind to specific DNA-binding sites (Kadonaga, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "e13c40ef-3815-40eb-a29c-05b19ea89726",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C74",
+      "claim": "Histone\u2013DNA interactions act as a barrier for RNA polymerase elongation along DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the repression of transcription has often been correlated with the presence of nucleosomes, the basic units of chromatin structure, in which histone\u2013DNA interactions act as a barrier for RNA polymerase elongation along DNA (Li et al., 2007; Petesch and Lis, 2012; Teves et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "f6ee0492-9409-4bff-afc8-798575e47bf0",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C75",
+      "claim": "Understanding the relationship between TF binding and nucleosomes is essential in understanding gene expression and regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, understanding the relationship between TF binding and nucleosomes is essential in understanding gene expression and regulation (Voss and Hager, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the study supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c1845fa4-bf4b-4014-861d-af2a6a5e265f",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C76",
+      "claim": "A nucleosome may be repositioned through the action of chromatin remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a nucleosome may also be repositioned through the action of chromatin remodelers, suggesting additional levels of transcription regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "f53ee024-23be-4de8-9989-cfddf3f00a3d",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C77",
+      "claim": "Previous studies focused on how recruiting TFs affect the outcomes of nucleosome remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous earlier studies focused on how these recruiting TFs affect the outcomes of nucleosome remodeling (Nagaich et al., 2004; Boeger et al., 2008; Dechassa et al., 2010; Voss et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "453d133f-9019-48b4-9cd1-ec65b9806d33",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C78",
+      "claim": "It is unclear how TFs that do not recruit remodelers influence the chromatin landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear how TFs that do not recruit remodelers influence the chromatin landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "0567c53f-c5e8-4915-8461-e6ee66138203",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C79",
+      "claim": "Nucleosome remodeling may serve as an alternative mechanism to regulate transcription through its influence on a bound TF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, chromatin remodeling may serve as an alternative mechanism to regulate transcription through its influence on a bound TF, and a bound TF may dictate the location of a remodeled nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b6ea4480-40b0-4c52-b404-d7540e14b8e6",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C80",
+      "claim": "A bound TF may dictate the location of a remodeled nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, chromatin remodeling may serve as an alternative mechanism to regulate transcription through its influence on a bound TF, and a bound TF may dictate the location of a remodeled nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "42b2fb8b-46ce-44b8-b93d-363564539129",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C81",
+      "claim": "The DNA unzipping technique has been demonstrated to be a powerful single molecule technique for accurate and precise determination of positions and strengths of DNA\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus employed the DNA unzipping technique (Figure 1\u2014figure supplement 1), which has been demonstrated to be a powerful single molecule technique for accurate and precise determination of positions and strengths of DNA\u2013protein interactions (Jiang et al., 2005; Shundrovsky et al., 2006; Hall et al., 2009; Jin et al., 2010; Dechassa et al., 2011; Li and Wang, 2012; Inman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "4e32d372-aa98-4eac-8672-1b8f12c3ea9c",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C82",
+      "claim": "The 601 nucleosome positioning sequence uniquely positions a nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate the precision of this approach, we constructed a DNA template containing a single Gal4 sequence for binding to the Gal4 DNA-binding domain (Gal4DBD) and a single 601 nucleosome positioning sequence (601NPE) for uniquely positioning a nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the 601 sequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "73f26b05-30b5-461b-a78b-52ce48c1958a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C83",
+      "claim": "Both Gal4DBD and a nucleosome were readily detected above the baseline of the corresponding naked DNA in unzipping experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The top trace of Figure 1 shows the result when the DNA template was unzipped starting from the Gal4 side. Both Gal4DBD (a single smaller peak) and a nucleosome (two clusters of larger peaks) were readily detected above the baseline of the corresponding naked DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "40ac875c-1cf0-4c43-8138-febde4798127",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C84",
+      "claim": "It was often necessary to carry out unzipping experiments from both directions to detect both Gal4DBD and nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottom trace shows the result when the DNA template was unzipped starting from the nucleosome side. Although the nucleosome unzipping signature was readily detectable, the unzipping signature of Gal4DBD was sometimes masked by that of the nucleosome. Therefore, it was often necessary to carry out unzipping experiments from both directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "845ce589-d4c8-4053-a08b-bb9237ccb1ae",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C85",
+      "claim": "Analysis of unzipping signatures confirmed that unzipping mapped the position of the TF and the nucleosome to near base pair precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these unzipping signatures confirmed that unzipping mapped the position of the TF and the nucleosome to near base pair precision ('Materials and methods'; Figure 1\u2014figure supplement 2; Figure 1\u2014figure supplement 3a; Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "438af25d-2e6c-4816-89a0-5069389e04cd",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C86",
+      "claim": "Experiments were carried out with 95% of Gal4 sites bound to Gal4DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments were carried out with 95% of Gal4 sites bound to Gal4DBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "dec676ce-783b-4757-bf97-98b2928e8543",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C87",
+      "claim": "Subsequent remodeling reactions were carried out without free Gal4DBD in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, subsequent remodeling reactions were carried out without free Gal4DBD in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "29659ef6-e083-46ee-b12c-46bbc774d940",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C88",
+      "claim": "Chromatin remodelers utilize ATP hydrolysis to move nucleosomes by altering histone\u2013DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodelers utilize ATP hydrolysis to move nucleosomes by altering histone\u2013DNA interactions, with the two major families of chromatin remodelers, ISWI and SWI/SNF, differing in their outcomes of the remodeling reaction (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "c073c493-facd-40f6-9b0e-525677a3b201",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C89",
+      "claim": "The two major families of chromatin remodelers, ISWI and SWI/SNF, differ in their outcomes of the remodeling reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin remodelers utilize ATP hydrolysis to move nucleosomes by altering histone\u2013DNA interactions, with the two major families of chromatin remodelers, ISWI and SWI/SNF, differing in their outcomes of the remodeling reaction (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "588c703b-3a98-4aee-8a40-ddbb982dc966",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C90",
+      "claim": "The sensitivity to linker DNA is believed to underlie ISWI remodelers' ability to generate evenly spaced nucleosomal arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "This sensitivity to linker DNA is believed to underlie their ability to generate evenly spaced nucleosomal arrays (Gelbart et al., 2001; Stockdale et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "423c5948-0bd1-4b49-971d-ac2f95597f4a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C91",
+      "claim": "The slight asymmetric distribution of the remodeled nucleosome was likely due to the non-palindromic feature of the 601 sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The slight asymmetric distribution of the remodeled nucleosome was likely due to the non-palindromic feature of the 601 sequence (Lowary and Widom, 1998) which leads to some asymmetry in the protein\u2013DNA interactions at the two halves of a nucleosome (Hall et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of the 601 sequence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ae476c43-fdbf-4e56-b3f1-9f6edbd65bb5",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C92",
+      "claim": "The results from SWI/SNF remodeling were consistent with those from an earlier study.",
+      "claim_type": "EXPLICIT",
+      "source": "The results from SWI/SNF remodeling were also consistent with those from an earlier study (Shundrovsky et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares current findings to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "af32c367-9216-4eb7-bf34-a790ffbe5aaf",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C93",
+      "claim": "An increase in the separation between the Gal4 binding site and 601NPS to 24 bp still permits SWI/SNF remodeling to evict Gal4DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in the separation between the Gal4 binding site and 601NPS to 24 bp still permits SWI/SNF remodeling to evict Gal4DBD (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "7d6318ca-23d4-4704-844c-8641b537a2d7",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C94",
+      "claim": "The findings provide the first direct evidence that SWI/SNF nucleosome remodeling is capable of evicting a bound TF.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide the first direct evidence that SWI/SNF nucleosome remodeling is capable of evicting a bound TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "488f5237-af99-405f-8a17-31923d48fdd9",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C95",
+      "claim": "SWI/SNF nucleosome remodeling appears to be powerful machinery capable of actively overcoming and removing a variety of obstacles in its vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our findings, SWI/SNF nucleosome remodeling appears to be powerful machinery capable of actively overcoming and removing a variety of obstacles in its vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on current and previous findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "2770b364-2e63-40af-bac6-fb337ae349cf",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C96",
+      "claim": "The Lac repressor is only found in prokaryotic cells and has no known relationship with any chromatin remodeler in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Lac repressor is only found in prokaryotic cells and has no known relationship with any chromatin remodeler in eukaryotic cells, it can act as a biologically neutral bound protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b3ad21ef-1c9e-411c-9a4a-a3d3a7e20fd9",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C97",
+      "claim": "The Lac repressor can act as a biologically neutral bound protein in the experimental system.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Lac repressor is only found in prokaryotic cells and has no known relationship with any chromatin remodeler in eukaryotic cells, it can act as a biologically neutral bound protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of Lac repressor.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "b156e0ea-a1f6-4186-94cf-f2e5de9a6a2b",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C98",
+      "claim": "ISW1a centering the nucleosome on the DNA with the Lac repressor acting as a barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "When ISW1a remodeled an end-positioned nucleosome on a template also containing a bound Lac repressor, the Lac repressor effectively dictated the position of the remodeled nucleosome, with ISW1a centering the nucleosome on the DNA with the Lac repressor acting as a barrier (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "f5c66a42-90de-42b3-bf40-2918c24784da",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C99",
+      "claim": "In vivo DNA nucleosome remodeling will most likely encounter DNA-binding proteins such as TFs rather than DNA ends.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rather than DNA ends, in vivo DNA nucleosome remodeling will most likely encounter DNA-binding proteins such as TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about in vivo conditions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "234fa7dd-5179-4fdf-b4db-2ed73676d743",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C100",
+      "claim": "Studies using bound TFs as potential barriers better mimic a situation that will more likely occur in vivo compared to bulk biochemical studies that use DNA ends as boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to bulk biochemical studies that typically use DNA ends as boundaries on short DNA templates, our studies using bound TFs as potential barriers better mimic a situation that will more likely occur in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental approaches and their relevance to in vivo conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "5222c407-a393-4b28-b664-db9e9e8d2556",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C101",
+      "claim": "The finding that ISW1a moves nucleosome away from a TF adjacent to the nucleosome is consistent with an important role of the DNA-binding domain in engaging fully accessible DNA immediately flanking the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that ISW1a moves nucleosome away from a TF adjacent to the nucleosome is consistent with an important role of the DNA-binding domain in engaging fully accessible DNA immediately flanking the nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting experimental findings to known structural features.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "5674aa22-4829-43fb-8a9b-cebbdc9ce966",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C102",
+      "claim": "SWI/SNF does not require extra-nucleosomal DNA binding to remodel a nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while it has been widely acknowledged that SWI/SNF does not require extra-nucleosomal DNA binding to remodel a nucleosome, cryo-EM and DNA-crosslinking experiments have shown that the Snf6 subunit of SWI/SNF binds to \u223c15 bp of the extra-nucleosomal DNA and the rest of the SWI/SNF slides the nucleosome away from where the Snf6 subunit binds (Dechassa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "d7274611-81e7-4902-bc56-56722c94f8b3",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C103",
+      "claim": "The rest of SWI/SNF slides the nucleosome away from where the Snf6 subunit binds.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while it has been widely acknowledged that SWI/SNF does not require extra-nucleosomal DNA binding to remodel a nucleosome, cryo-EM and DNA-crosslinking experiments have shown that the Snf6 subunit of SWI/SNF binds to \u223c15 bp of the extra-nucleosomal DNA and the rest of the SWI/SNF slides the nucleosome away from where the Snf6 subunit binds (Dechassa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "779c69d1-298a-48b9-ac76-55dcd9e859cf",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C104",
+      "claim": "Snf6 may help to orient SWI/SNF binding on the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that it may help to orient SWI/SNF binding on the nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ee59b34c-cd95-4556-a831-854d8cd6a3cb",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C105",
+      "claim": "In the presence of a barrier adjacent to a nucleosome, Snf6 may prefer to bind to the side of the nucleosome with more linker DNA and thus orient SWI/SNF to slide a nucleosome towards the TF.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of a barrier adjacent to a nucleosome, Snf6 may prefer to bind to the side of the nucleosome with more linker DNA and thus orient SWI/SNF to slide a nucleosome towards the TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "621c053c-3074-4e7b-8f12-04e22681bc89",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C106",
+      "claim": "SWI/SNF may have limited ability in dealing with a road block, such as a bound protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although SWI/SNF is known to translocate along naked DNA, it may have limited ability in dealing with a road block, such as a bound protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental observations and previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "4cc9750e-6905-42f5-b90f-5cd155198974",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C107",
+      "claim": "It is possible that SWI/SNF is unable to efficiently locate a bound protein in the absence of a nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that SWI/SNF is unable to efficiently locate a bound protein in the absence of a nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "ead3316a-5ff3-49b8-bd84-8b3bbf643535",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C108",
+      "claim": "TF removal may be accelerated once a nucleosome is repositioned over the bound TF.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that TF removal may be accelerated once a nucleosome is repositioned over the bound TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "0ba761fe-77da-43bd-b0f6-b0af4e93ca25",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C109",
+      "claim": "SWI/SNF family remodelers are involved in transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF family remodelers are known to be involved in transcriptional activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "34c882e8-4099-43ca-8a92-f8916f165aa4",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C110",
+      "claim": "Many relevant transcriptional modulators, such as enhancers and insulators, are located further upstream of promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many relevant transcriptional modulators, such as enhancers (Ren, 2010) and insulators (Bell et al., 2001), are located further upstream of promoters, SWI/SNF family remodelers could move promoter nucleosomes to dynamically regulate these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "85d849f3-8fde-4f90-ab3e-53f30e09c493",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C111",
+      "claim": "SWI/SNF family remodelers could move promoter nucleosomes to dynamically regulate transcriptional modulators located upstream of promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many relevant transcriptional modulators, such as enhancers (Ren, 2010) and insulators (Bell et al., 2001), are located further upstream of promoters, SWI/SNF family remodelers could move promoter nucleosomes to dynamically regulate these factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and known locations of transcriptional modulators.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "9c2ef7c5-88b7-4710-85c2-a18b21e08637",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "claim_id": "C112",
+      "claim": "SWI/SNF alone does not possess any ability to remove TFs on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although SWI/SNF alone does not possess any ability to remove TFs on its own, our work shows that SWI/SNF can slide nucleosomes to displace neighboring TFs around the promoter region, providing a mechanistic basis for dynamically clearing both nucleosomes and other bound factors upon SWI/SNF recruitment (Nagaich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing that SWI/SNF cannot evict TF in the absence of nucleosome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DNA unzipping technique can precisely map the positions of both a transcription factor (Gal4DBD) and a nucleosome simultaneously on DNA templates to near base pair accuracy. The method was validated using templates containing a Gal4 binding sequence and a 601 nucleosome positioning sequence, with both protein-DNA interactions readily detected above baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C81-C85, and C67-C70 collectively demonstrate the technical capability and validation of the DNA unzipping method. The experimental data (Figures 1, 1-supplement 2-4) show clear detection of both Gal4DBD and nucleosomes with documented precision and accuracy at near base-pair resolution. The method is well-supported by previous literature and current experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "e65b8bfa-43d6-4a75-88f2-c74deb6dc6d6",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gal4DBD binds tightly to its recognition sequence with an equilibrium dissociation constant of 3.4 nM and a lifetime exceeding 1 hour under experimental conditions. Experiments were conducted with 95% of Gal4 sites bound and without free Gal4DBD in solution during remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C86-C87 describe the binding characteristics of Gal4DBD that are critical for interpreting remodeling experiments. The Kd measurement and lifetime data are supported by experimental evidence (Figure 1-supplement 3b,c), and the experimental conditions are clearly stated. These characterizations are essential controls for the main experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "42a6344a-c18e-4847-ae97-72c9dc0d33b7",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During short remodeling times (~1 min), approximately 56% of nucleosomes remained unremodeled, while of the remodeled nucleosomes, ~73% underwent single remodeling events and ~27% underwent multiple events. In the absence of Gal4DBD, both ISW1a and SWI/SNF moved nucleosomes bi-directionally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 describe the baseline remodeling behavior without TF present. The data are supported by Figure 2-supplement 2 and Figure 2B,C. The quantification of remodeling events uses a previously established method (Shundrovsky et al., 2006), providing methodological validation. These results establish the control conditions for comparison with TF-present experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "75b71d7d-4316-4463-a386-7d04e5567dea",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the presence of Gal4DBD, ISW1a moved nucleosomes away from the TF, while SWI/SNF moved nucleosomes toward the TF. This differential directionality was confirmed using templates with Gal4DBD on either side of the nucleosome, ruling out DNA sequence effects. The ISW1a findings agree with previous work using NURF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C24-C25 describe a major finding on differential remodeler directionality. The data are supported by Figure 2D-G showing consistent directional preferences regardless of TF orientation. The agreement with previous NURF studies (Kang et al., 2002) provides independent validation. The experimental design with reversed orientations effectively controls for sequence effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "37efd9d1-e4b5-49d2-afe9-38b7e5ea5700",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gal4DBD acts as a physical barrier to ISW1a-mediated nucleosome remodeling. ISW1a-remodeled nucleosomes could not pass the Gal4DBD location and instead positioned with their dyad centered between the bound Gal4DBD and the template end, demonstrating that ISW1a uses Gal4DBD as a reference point for nucleosome positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 describe a key mechanistic finding supported by Figure 3B,C and Figure 3-supplement 2. The data show consistent centering behavior across multiple template designs with different TF-nucleosome separations. The linear relationship in Figure 3C provides quantitative support for the centering mechanism. This is a well-supported major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "e21b42e7-eddf-4d70-aaa4-36fb01ef48d6",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ISW1a can potentially use transcription factors around promoter regions as reference points to evenly position nucleosomes into gene bodies. This interpretation is supported by genome-wide data showing that ISWI deletion disrupts nucleosome spacing in yeast and that DNA-binding factors at promoters are responsible for nucleosome positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 connect the experimental findings to in vivo nucleosome spacing. While C32-C34 cite established genome-wide observations, C35 is an inference from the current experimental data (C27-C31). The inference is reasonable given the direct experimental evidence that ISW1a uses Gal4DBD as a barrier and reference point. However, this remains an extrapolation to in vivo conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gal4DBD is not a physical barrier for SWI/SNF-mediated nucleosome remodeling. SWI/SNF was able to slide nucleosomes past the TF with concurrent eviction of Gal4DBD from its binding sequence. This eviction requires the presence of both a nucleosome and ATP, as SWI/SNF alone cannot evict Gal4DBD in the absence of a nucleosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 and C93 describe a major finding on SWI/SNF's ability to evict TFs. The data are supported by Figures 4A,B and control experiments (Figure 4-source data 1, Figure 4-supplement 2). The controls demonstrating that eviction requires both nucleosome and ATP are critical for establishing mechanism. The absence of Gal4DBD signal after remodeling provides direct evidence of eviction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "04574d5d-6b4e-42c1-9569-b1785ea9841a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanism of TF regulation by nucleosome remodeling is general and not specific to Gal4DBD. When ISW1a remodeled nucleosomes in the presence of Lac repressor, the Lac repressor acted as a barrier and dictated nucleosome positioning. In contrast, SWI/SNF displaced the Lac repressor, similar to results with Gal4DBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C98 demonstrate generalizability using a second, biologically neutral TF (Lac repressor). The data (Figure 5A,B) show consistent behavior with both TFs, supporting the conclusion that the mechanism is general. The use of Lac repressor, which has no known relationship with eukaryotic remodelers (C96-C97), strengthens the argument that the effects are not TF-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "8a805049-94f2-4257-ae5e-e4ec944097c4",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TF eviction by SWI/SNF is an intrinsic property of nucleosome remodeling and is independent of SWI/SNF recruitment. SWI/SNF alone cannot evict Gal4DBD in the absence of a nucleosome, demonstrating that TF eviction requires nucleosome remodeling rather than SWI/SNF translocation alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57-C58, C71, and C112 establish that TF eviction is coupled to nucleosome remodeling. The control experiments showing no eviction without nucleosomes (Figure 4-source data 1) are critical. This distinguishes the mechanism from simple SWI/SNF translocation (C56) and provides mechanistic insight. The conclusion is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "aa74d824-c61e-4a87-8616-540ac395c6a1",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The DNA-binding domain of ISW1a binds approximately 29 bp of extranucleosomal DNA and has been proposed to act as an anchor. The finding that ISW1a moves nucleosomes away from an adjacent TF is consistent with this domain requiring fully accessible DNA immediately flanking the nucleosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 cite established structural and biochemical data about ISW1a. Claim C101 connects these prior findings to the current experimental observations (C22, C27-C31). The inference is reasonable and consistent with known ISW1a structure-function relationships. However, this remains a mechanistic interpretation rather than direct demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "d7729243-4d53-4162-9da8-0b6a0661f2bb",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Snf6 subunit of SWI/SNF binds approximately 15 bp of extra-nucleosomal DNA, though it is not essential for remodeling. It may help orient SWI/SNF binding on the nucleosome, potentially preferring the side with more linker DNA in the presence of a barrier, thus orienting SWI/SNF to slide nucleosomes toward the TF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C53 cite established structural data. However, C104-C105 are explicitly stated as speculation. While the speculation is reasonable given the experimental observations of directional preference (C24), there is no direct experimental evidence in this study to support the proposed role of Snf6 in determining directionality. This remains a plausible but untested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "0f95ad59-9aee-44bd-bdfe-be2ddbdaff2c",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SWI/SNF can slide nucleosomes to displace neighboring TFs around promoter regions, potentially regulating transcriptional modulators such as enhancers and insulators located upstream of promoters. This provides a mechanistic basis for dynamically clearing both nucleosomes and bound factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C111 extrapolate the experimental findings (C36-C40) to in vivo regulatory contexts. While the experimental evidence for TF eviction is strong, the application to specific regulatory scenarios (enhancers, insulators) is inferential. The inference is reasonable given genome-wide localization data (C61-C62) showing SWI/SNF enrichment at relevant locations, but remains an extrapolation beyond the experimental system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "334f8664-1192-416f-8703-fc2d0b0d0f3d",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The results provide direct evidence for a novel mechanism for both nucleosome positioning regulation by bound TFs and TF regulation via dynamic repositioning of nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is the overarching conclusion supported by the collective experimental evidence. The dual mechanism\u2014TFs as barriers for ISW1a (C27-C31) and TF eviction by SWI/SNF (C36-C40)\u2014is well-documented. The novelty claim for SWI/SNF-mediated TF eviction is supported (C26, C94), while ISW1a findings confirm previous work (C25). This represents a major conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "25578053-8f94-4d3f-8600-e3123336a099",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A nucleosome regulates Gal4 binding by preventing binding and dramatically increasing dissociation rate. TF removal may be accelerated once a nucleosome is repositioned over the bound TF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 cites previous work (Luo et al., 2014) on Gal4 binding kinetics. Claim C108 is explicitly stated as speculation. While the speculation is consistent with C60 and could explain the mechanism of TF eviction, there is no direct experimental evidence in this study measuring TF dissociation rates in the presence of remodeled nucleosomes. This remains a plausible but untested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge on nucleosome-TF competition, chromatin remodeler families, and their known properties establishes the context for the study. SWI/SNF and ISWI remodelers differ in their outcomes, with SWI/SNF associated with nucleosome disruption and ISWI with generating evenly spaced arrays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C12-C18, C45-C46, C73-C76, and C88-C90 represent established knowledge supported by extensive citations. These provide the scientific context and rationale for the study. While these are not novel findings, they are accurately represented and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "7d4cdca9-d1b5-4b7e-9b9b-f77226c474c2",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Materials and methods: Nucleosomes were assembled using salt dialysis, remodelers were purified as previously described, and Gal4DBD was purchased commercially.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe standard methods with appropriate citations. These are methodological details that support reproducibility but are not novel findings. The methods are adequately described and referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "1bc63452-f49c-4063-bdf4-8860e30a9d2a",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The slight asymmetric distribution of remodeled nucleosomes is likely due to the non-palindromic 601 sequence. SWI/SNF remodeling results are consistent with an earlier study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 provide methodological context and validation. C91 explains an observed asymmetry based on known properties of the 601 sequence (cited). C92 validates current findings against previous work (Shundrovsky et al., 2006). Both are reasonable interpretations supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "17a27a44-2ff8-4844-8b70-02c8869e64ff",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Discussion of prior work and in vivo context: Previous studies on SWI/SNF recruitment, translocation properties, genome-wide localization patterns, and the rationale for using Lac repressor as a neutral control protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C56, C59, C61-C62, C96-C97, C99-C100, C106-C107, C109-C110 provide context from prior literature and logical inferences about in vivo relevance. These are appropriately cited and support the interpretation of results, though C106-C107 involve some speculation about SWI/SNF's limited ability to deal with roadblocks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "200f99be-4008-483c-bc62-efc9b4a24419",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous studies focused on TF recruitment of remodelers, but it remains unclear how non-recruiting TFs influence chromatin landscape. The hypothesis is that nucleosome remodeling may regulate bound TFs and that TFs may dictate remodeled nucleosome locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 identify a knowledge gap that motivates the study. Claims C79-C80 state the working hypothesis. These are appropriately framed as hypotheses (C79-C80 are marked as speculation) that are subsequently tested experimentally. This represents sound scientific reasoning and study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    },
+    {
+      "id": "660bc2d7-5853-460d-a40b-47510d2e0519",
+      "content_id": "b0d623af-1eda-4021-9f6f-2adcb1487a2e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Novelty and significance claims: The findings on SWI/SNF-mediated TF eviction are entirely novel, while ISW1a findings agree with previous work. SWI/SNF appears to be powerful machinery capable of overcoming various obstacles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 establish that Gal4DBD does not recruit remodelers, which is critical for the experimental design. Claims C25-C26 appropriately distinguish novel findings (SWI/SNF) from confirmatory ones (ISW1a). Claims C41, C94-C95 place findings in context of SWI/SNF's broader capabilities. The novelty claims are justified by the experimental evidence and literature comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:36.594114Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "45e96b92-fc3a-415c-9396-4fe685e708c2",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "42b2fb8b-46ce-44b8-b93d-363564539129",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "4e32d372-aa98-4eac-8672-1b8f12c3ea9c",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "73f26b05-30b5-461b-a78b-52ce48c1958a",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "40ac875c-1cf0-4c43-8138-febde4798127",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "845ce589-d4c8-4053-a08b-bb9237ccb1ae",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "87f94627-b177-489f-86c8-8933d330b6a8",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "524382fa-c97e-4b24-ad2a-e7010e1dbc8d",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "98d27184-ae14-4188-ab8d-bd0745dd9e86",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "eb8058af-fa87-4d21-936d-c0cfac1d0e44",
+      "result_id": "5b05c285-19eb-4f6f-ad32-725a2c9cdf9f"
+    },
+    {
+      "claim_id": "71d96978-a3a6-4f5e-b26a-e8ea81a5141a",
+      "result_id": "e65b8bfa-43d6-4a75-88f2-c74deb6dc6d6"
+    },
+    {
+      "claim_id": "7c316846-a964-459c-8fe2-ee1f0603a033",
+      "result_id": "e65b8bfa-43d6-4a75-88f2-c74deb6dc6d6"
+    },
+    {
+      "claim_id": "438af25d-2e6c-4816-89a0-5069389e04cd",
+      "result_id": "e65b8bfa-43d6-4a75-88f2-c74deb6dc6d6"
+    },
+    {
+      "claim_id": "dec676ce-783b-4757-bf97-98b2928e8543",
+      "result_id": "e65b8bfa-43d6-4a75-88f2-c74deb6dc6d6"
+    },
+    {
+      "claim_id": "7ae73325-b9d5-44c8-ac66-523d7a3c3393",
+      "result_id": "42a6344a-c18e-4847-ae97-72c9dc0d33b7"
+    },
+    {
+      "claim_id": "663280ee-ce41-4cd9-a391-de092e87921d",
+      "result_id": "42a6344a-c18e-4847-ae97-72c9dc0d33b7"
+    },
+    {
+      "claim_id": "f8d31047-964a-4493-ba67-d8f84b9ac12f",
+      "result_id": "42a6344a-c18e-4847-ae97-72c9dc0d33b7"
+    },
+    {
+      "claim_id": "08d7d765-0d2f-49e7-ab23-74c059187cc1",
+      "result_id": "75b71d7d-4316-4463-a386-7d04e5567dea"
+    },
+    {
+      "claim_id": "801d6e12-5b16-4c5a-a4c0-9497cb94baa2",
+      "result_id": "75b71d7d-4316-4463-a386-7d04e5567dea"
+    },
+    {
+      "claim_id": "6096b2b5-b942-4e00-9b1c-c5801cbda5d9",
+      "result_id": "75b71d7d-4316-4463-a386-7d04e5567dea"
+    },
+    {
+      "claim_id": "9ebf4d77-eed1-4ef7-8f33-dfbc99056239",
+      "result_id": "37efd9d1-e4b5-49d2-afe9-38b7e5ea5700"
+    },
+    {
+      "claim_id": "9e3574b2-6c67-4d1d-a93e-d2736f9ba072",
+      "result_id": "37efd9d1-e4b5-49d2-afe9-38b7e5ea5700"
+    },
+    {
+      "claim_id": "b839fe9e-85eb-4a43-b15a-c24fadb75586",
+      "result_id": "37efd9d1-e4b5-49d2-afe9-38b7e5ea5700"
+    },
+    {
+      "claim_id": "a00e45ef-74db-4dd8-b225-6f3611ca639a",
+      "result_id": "37efd9d1-e4b5-49d2-afe9-38b7e5ea5700"
+    },
+    {
+      "claim_id": "ea3e79a6-b2e5-4715-94ab-91513c8a02a0",
+      "result_id": "37efd9d1-e4b5-49d2-afe9-38b7e5ea5700"
+    },
+    {
+      "claim_id": "00fd6629-7667-47c7-9aa8-f9b4fef9445a",
+      "result_id": "e21b42e7-eddf-4d70-aaa4-36fb01ef48d6"
+    },
+    {
+      "claim_id": "1c031458-cf7a-4f8f-9dc9-5d0450fd0d64",
+      "result_id": "e21b42e7-eddf-4d70-aaa4-36fb01ef48d6"
+    },
+    {
+      "claim_id": "6413022f-5992-4f99-be22-4a4d5f761411",
+      "result_id": "e21b42e7-eddf-4d70-aaa4-36fb01ef48d6"
+    },
+    {
+      "claim_id": "9747a095-ab5a-48c4-84d9-c80320d40fdb",
+      "result_id": "e21b42e7-eddf-4d70-aaa4-36fb01ef48d6"
+    },
+    {
+      "claim_id": "b20a72c1-f771-4452-a1f5-8d4586981263",
+      "result_id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed"
+    },
+    {
+      "claim_id": "f3745465-7edc-4c9f-bb4f-ea0d0e0000fd",
+      "result_id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed"
+    },
+    {
+      "claim_id": "61d686f4-e885-45e7-a68a-d5b5c70b461f",
+      "result_id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed"
+    },
+    {
+      "claim_id": "be9be51f-0d56-4139-ad69-cab50aa3244b",
+      "result_id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed"
+    },
+    {
+      "claim_id": "0619472a-cf28-4220-a964-1f9d313bdde3",
+      "result_id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed"
+    },
+    {
+      "claim_id": "af32c367-9216-4eb7-bf34-a790ffbe5aaf",
+      "result_id": "58b74df5-427b-4ba2-98c3-a32fc0b94eed"
+    },
+    {
+      "claim_id": "992cd1df-ab09-485d-8287-6d60e4e5411b",
+      "result_id": "04574d5d-6b4e-42c1-9569-b1785ea9841a"
+    },
+    {
+      "claim_id": "a359e690-b47d-492a-80d9-57a7596553d0",
+      "result_id": "04574d5d-6b4e-42c1-9569-b1785ea9841a"
+    },
+    {
+      "claim_id": "c0bb2524-fa77-4edc-aabb-7a00a4a29d95",
+      "result_id": "04574d5d-6b4e-42c1-9569-b1785ea9841a"
+    },
+    {
+      "claim_id": "b156e0ea-a1f6-4186-94cf-f2e5de9a6a2b",
+      "result_id": "04574d5d-6b4e-42c1-9569-b1785ea9841a"
+    },
+    {
+      "claim_id": "ffca77f3-ba51-43f3-a615-43912a1b9de3",
+      "result_id": "8a805049-94f2-4257-ae5e-e4ec944097c4"
+    },
+    {
+      "claim_id": "6042ce2b-18c3-4264-8aa6-5068f0d32086",
+      "result_id": "8a805049-94f2-4257-ae5e-e4ec944097c4"
+    },
+    {
+      "claim_id": "c25874b9-bede-4a78-9755-847cb60095ba",
+      "result_id": "8a805049-94f2-4257-ae5e-e4ec944097c4"
+    },
+    {
+      "claim_id": "3d936f23-e109-48dd-9408-7ab8ea3f1542",
+      "result_id": "8a805049-94f2-4257-ae5e-e4ec944097c4"
+    },
+    {
+      "claim_id": "9c2ef7c5-88b7-4710-85c2-a18b21e08637",
+      "result_id": "8a805049-94f2-4257-ae5e-e4ec944097c4"
+    },
+    {
+      "claim_id": "4a184ee7-e600-4d3d-a4be-b1e44251f7b2",
+      "result_id": "aa74d824-c61e-4a87-8616-540ac395c6a1"
+    },
+    {
+      "claim_id": "4de86617-b2ff-4ba7-b5f9-1b1bc49f2a5a",
+      "result_id": "aa74d824-c61e-4a87-8616-540ac395c6a1"
+    },
+    {
+      "claim_id": "5222c407-a393-4b28-b664-db9e9e8d2556",
+      "result_id": "aa74d824-c61e-4a87-8616-540ac395c6a1"
+    },
+    {
+      "claim_id": "626a9a66-1581-4989-9574-bf15a8c20b98",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "c775884d-d3aa-496e-aa68-4cf507d56dd2",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "2104a0e6-5628-4af0-a8ec-cdc94c35d616",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "5674aa22-4829-43fb-8a9b-cebbdc9ce966",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "d7274611-81e7-4902-bc56-56722c94f8b3",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "779c69d1-298a-48b9-ac76-55dcd9e859cf",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "ee59b34c-cd95-4556-a831-854d8cd6a3cb",
+      "result_id": "d7729243-4d53-4162-9da8-0b6a0661f2bb"
+    },
+    {
+      "claim_id": "3fe8b590-4707-4204-8540-c114bfd5bce6",
+      "result_id": "0f95ad59-9aee-44bd-bdfe-be2ddbdaff2c"
+    },
+    {
+      "claim_id": "85d849f3-8fde-4f90-ab3e-53f30e09c493",
+      "result_id": "0f95ad59-9aee-44bd-bdfe-be2ddbdaff2c"
+    },
+    {
+      "claim_id": "b951511d-db56-46d5-9e0d-6248e0846feb",
+      "result_id": "334f8664-1192-416f-8703-fc2d0b0d0f3d"
+    },
+    {
+      "claim_id": "a352488a-9bbe-4731-bafc-2aa5835c15e8",
+      "result_id": "25578053-8f94-4d3f-8600-e3123336a099"
+    },
+    {
+      "claim_id": "ead3316a-5ff3-49b8-bd84-8b3bbf643535",
+      "result_id": "25578053-8f94-4d3f-8600-e3123336a099"
+    },
+    {
+      "claim_id": "ab163d68-88ae-4077-9e3a-68cbb6ac25ee",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "65770bcb-bc7f-44dc-8779-8a8a87a6a0e8",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "caac7402-3642-490f-8e8c-923a34014735",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "92cd1182-57ab-4381-82a4-37e36352006c",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "352832b8-2c18-4c7d-94d1-d19562dc9583",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "100c37ed-30d1-429a-be98-299f7c68dbfa",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "b93038d8-0e3a-4231-b0f0-5759ef8446b2",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "774331b8-0854-4cf2-9512-f16d25418176",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "fb9557d6-17de-48de-a2bd-e37cab461e5b",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "ea25a287-9285-4dd0-af43-3110b9c9ba4a",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "1a4b2550-e170-4cf0-b7b1-c0cccdb7dd29",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "7a00658a-d355-4d7c-a84b-efbad496996d",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "24b0cb62-4d5a-4e32-9e93-0369073f4020",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "e13c40ef-3815-40eb-a29c-05b19ea89726",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "f6ee0492-9409-4bff-afc8-798575e47bf0",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "c1845fa4-bf4b-4014-861d-af2a6a5e265f",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "29659ef6-e083-46ee-b12c-46bbc774d940",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "c073c493-facd-40f6-9b0e-525677a3b201",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "588c703b-3a98-4aee-8a40-ddbb982dc966",
+      "result_id": "4b399cf0-9f3f-4d44-9b08-4cbab80d4976"
+    },
+    {
+      "claim_id": "5ea9299e-975c-45b3-ba25-2019baac0a7e",
+      "result_id": "7d4cdca9-d1b5-4b7e-9b9b-f77226c474c2"
+    },
+    {
+      "claim_id": "58eb6d7d-e388-435f-b65f-208b4a2285ad",
+      "result_id": "7d4cdca9-d1b5-4b7e-9b9b-f77226c474c2"
+    },
+    {
+      "claim_id": "2830fb3b-a8cc-450a-94a4-49ddca62eae5",
+      "result_id": "7d4cdca9-d1b5-4b7e-9b9b-f77226c474c2"
+    },
+    {
+      "claim_id": "423c5948-0bd1-4b49-971d-ac2f95597f4a",
+      "result_id": "1bc63452-f49c-4063-bdf4-8860e30a9d2a"
+    },
+    {
+      "claim_id": "ae476c43-fdbf-4e56-b3f1-9f6edbd65bb5",
+      "result_id": "1bc63452-f49c-4063-bdf4-8860e30a9d2a"
+    },
+    {
+      "claim_id": "39c58bfa-f338-433a-8508-9efb810be841",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "fd675f0f-1afa-4552-add4-2d5dbdea56c1",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "29795c4a-11f8-4656-b661-95712e022295",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "4ffd1208-8804-4e59-b933-a1064b89515c",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "57ce0e9a-5fdc-44a5-a1b7-6bbf515c2813",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "2770b364-2e63-40af-bac6-fb337ae349cf",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "b3ad21ef-1c9e-411c-9a4a-a3d3a7e20fd9",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "f5c66a42-90de-42b3-bf40-2918c24784da",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "234fa7dd-5179-4fdf-b4db-2ed73676d743",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "621c053c-3074-4e7b-8f12-04e22681bc89",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "4cc9750e-6905-42f5-b90f-5cd155198974",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "0ba761fe-77da-43bd-b0f6-b0af4e93ca25",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "34c882e8-4099-43ca-8a92-f8916f165aa4",
+      "result_id": "17a27a44-2ff8-4844-8b70-02c8869e64ff"
+    },
+    {
+      "claim_id": "f53ee024-23be-4de8-9989-cfddf3f00a3d",
+      "result_id": "200f99be-4008-483c-bc62-efc9b4a24419"
+    },
+    {
+      "claim_id": "453d133f-9019-48b4-9cd1-ec65b9806d33",
+      "result_id": "200f99be-4008-483c-bc62-efc9b4a24419"
+    },
+    {
+      "claim_id": "0567c53f-c5e8-4915-8461-e6ee66138203",
+      "result_id": "200f99be-4008-483c-bc62-efc9b4a24419"
+    },
+    {
+      "claim_id": "b6ea4480-40b0-4c52-b404-d7540e14b8e6",
+      "result_id": "200f99be-4008-483c-bc62-efc9b4a24419"
+    },
+    {
+      "claim_id": "c7d13294-e12f-4961-bfdf-c54bf654edd6",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    },
+    {
+      "claim_id": "9704d0eb-fa47-42fe-a7cf-9402bd8015c7",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    },
+    {
+      "claim_id": "6096b2b5-b942-4e00-9b1c-c5801cbda5d9",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    },
+    {
+      "claim_id": "f04ba334-1378-44ac-ae30-b2f7dfb87056",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    },
+    {
+      "claim_id": "11b8e9e2-1645-4dc6-924d-421809c29640",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    },
+    {
+      "claim_id": "7d6318ca-23d4-4704-844c-8641b537a2d7",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    },
+    {
+      "claim_id": "488f5237-af99-405f-8a17-31923d48fdd9",
+      "result_id": "660bc2d7-5853-460d-a40b-47510d2e0519"
+    }
+  ],
+  "comparisons": []
+}

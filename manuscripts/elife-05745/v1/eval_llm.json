@@ -1,0 +1,493 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The slx9-1 allele (slx9L108P) causes slow growth at 20-30\u00b0C similar to slx9\u0394 but not at 37\u00b0C, and this growth defect is not due to reduced protein levels as Slx9 and Slx9-1 are present at similar levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by growth assay data (Figure 1A) and Western blot analysis showing equivalent protein levels. The data directly demonstrate the temperature-sensitive growth phenotype and rule out protein stability as the cause of the defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Slx9-1-GFP displays identical localization to wild-type Slx9-GFP, localizing to the nucleolus and nucleoplasm, indicating correct targeting of the mutant protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by fluorescence microscopy data (Figure 1B) showing co-localization with the nucleolar marker Gar1-mCherry. The identical localization pattern demonstrates that the L108P mutation does not affect subcellular targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Slx9-1 is correctly recruited to 40S pre-ribosomes, as demonstrated by co-enrichment with Enp1-TAP at levels comparable to wild-type Slx9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by tandem affinity purification data (Figure 1C). The co-enrichment data demonstrate that the slx9-1 mutation does not impair recruitment to pre-ribosomal particles, establishing that the functional defect lies elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "slx9-1 cells are impaired in 40S pre-ribosome export, showing nucleoplasmic accumulation of both uS5-GFP and 20S pre-rRNA similar to slx9\u0394 cells, despite Slx9-1 being recruited to pre-ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 are well-supported by fluorescence microscopy and FISH data (Figure 1D) combined with prior work. The nucleoplasmic accumulation of export reporters in slx9-1 cells, despite proper recruitment of Slx9-1 to pre-ribosomes, establishes a functional defect in export rather than assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C37",
+      "C38"
+    ],
+    "result": "slx9-1 and slx9\u0394 show genetic interactions with export factors including mex67\u0394loop, mtr2\u0394loop116-137, and rrp12-GFP, supporting a role for Slx9 in 40S pre-ribosome export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C37-C38 are supported by genetic interaction data (Figure 2A) and citations to previous work. The synthetic lethality and growth defects with known export factors provide strong genetic evidence for Slx9's role in the export pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Slx9 shuttles between the nucleus and cytoplasm, as demonstrated by heterokaryon assays showing Slx9-GFP localization to both nuclei, similar to the shuttling factor Enp1 and unlike the non-shuttling nucleolar protein Gar1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by heterokaryon assay data (Figure 2B) with appropriate positive (Enp1) and negative (Gar1) controls. The experimental design is sound and the data clearly demonstrate shuttling behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Slx9 directly binds RanQLGTP but does not form a trimeric export complex with Crm1 and RanQLGTP, indicating it is a Ran-binding protein but lacks a functional NES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by in vitro binding assays (Figure 2C) with appropriate controls (Ssb1C). The data clearly show RanGTP binding but absence of trimeric complex formation, establishing Slx9 as a novel type of RanGTP-binding protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Slx9 interacts exclusively with RanGTP and not RanGDP, establishing it as a shuttling RanGTP-binding protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by in vitro binding assays (Figure 2D) with appropriate controls (Yrb1 for RanGTP binding, Ntf2 for RanGDP binding). The specificity for RanGTP is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Slx9-1 shows approximately 50% reduction in RanQLGTP binding compared to wild-type Slx9, indicating modest impairment in RanGTP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by quantitative in vitro binding assays (Figure 2E) with error bars from multiple replicates. The ~50% reduction is statistically significant and provides a molecular basis for the functional defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The basic patch of RanQLGTP (residues R142 and K143) contributes to Slx9 binding, as mutations in this region (RKAA and RKEE) impair Slx9:RanGTP interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by in vitro binding assays with RanGTP mutants (Figure 3A) and appropriate controls (Kap123, Yrb1). The differential effects of alanine vs. charge reversal mutations provide mechanistic insight into the binding interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The C-terminal acidic tail of Ran negatively regulates RanGTP:Slx9 interactions, as removal of this tail (Ran\u0394CQLGTP) enhances Slx9 binding compared to wild-type RanQLGTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by in vitro binding assays (Figure 3B) with appropriate controls (Yrb1, Kap123). The enhanced binding upon tail removal is specific to Slx9 and not observed with Kap123, demonstrating a unique regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Both slx9\u0394 and slx9-1 are synthetically lethal with yrb2\u0394, suggesting that Slx9 and Yrb2 functionally overlap to ensure proper nuclear export of 40S pre-ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by genetic interaction data (Figure 2A) and citations to previous work characterizing yrb2\u0394 phenotypes. The synthetic lethality provides strong evidence for functional overlap in the export pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Unlike Yrb2/RanBP3 which binds both Crm1 and RanGTP cooperatively, Slx9 binds RanGTP but not Crm1, suggesting a distinct mechanism for promoting Crm1-export complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by in vitro binding data (Figure 2C) and citations to previous work on Yrb2/RanBP3. The comparison establishes that Slx9 functions through a novel mechanism distinct from known RanGTP-binding proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Yeast Ltv1 and Rio2 form trimeric complexes with Crm1 and RanQLGTP via a cooperative mechanism in vitro, and this requires their C-terminal NESs. Rio2, but not Ltv1, also interacts weakly with RanQLGTP independent of Crm1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by in vitro binding assays (Figure 4A) showing cooperative complex formation and the requirement for NESs. The weak RanGTP binding by Rio2 is clearly demonstrated and distinguishes it from Ltv1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Slx9 directly binds to Rio2 but not to Ltv1 or the 60S adaptor Nmd3, demonstrating specificity for the 40S pre-ribosome-associated adaptor Rio2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by in vitro binding assays (Figure 4B) and co-purification data (Figure 1C). The specificity for Rio2 over other NES-containing adaptors establishes Slx9's selective role in 40S export.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The GST-Rio2:Slx9 complex efficiently recruits RanQLGTP, and Rio2 binds Slx9 and RanQLGTP using distinct surfaces, as neither protein displaces the other from Rio2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by sequential binding assays (Figures 5A-C) showing that pre-saturation with one binding partner does not affect recruitment of the other. This demonstrates non-competitive binding and distinct binding surfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Only the GST-Rio2:Slx9:RanQLGTP complex efficiently recruits Crm1, and this recruitment requires both the NES of Rio2 and RanQLGTP bound to Rio2, indicating that Rio2 must bind both Slx9 and RanGTP to recruit Crm1 in a non-cooperative manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by systematic binding assays (Figures 6B-C) testing all component combinations. The data clearly demonstrate that all three components (Slx9, Rio2, RanGTP) are required for efficient Crm1 recruitment, establishing a stepwise assembly mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The GST-Rio2:Slx9-1:RanQLGTP complex is impaired in loading Crm1 despite Slx9-1 binding Rio2 at least as well as wild-type Slx9 and being able to recruit RanQLGTP, demonstrating that Slx9's function in promoting Crm1-export complex assembly relies on proper interaction between Slx9 and RanGTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are supported by in vitro binding assays (Figure 6D) showing that Slx9-1 can form the Rio2:Slx9-1:RanGTP complex but is defective in Crm1 recruitment. This links the modest RanGTP binding defect to the functional defect in export complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Rio23G (with glycine mutations proximal to the NES) is unable to cooperatively recruit Crm1 in the presence of RanQLGTP in vitro, while Rio23A (with alanine substitutions) can, suggesting that the glycine mutations destabilize the NES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by in vitro binding assays (Figure 7A and supplement) comparing the glycine and alanine mutants. The differential behavior provides evidence for NES destabilization by the glycine mutations, consistent with structural principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Both rio2\u0394NES and rio23G rescue the lethality of rio2\u0394, but rio2\u0394NES is synthetically lethal with mex67\u0394loop and mtr2\u0394loop116-137 while rio23G is not. Neither allele is synthetic lethal with slx9\u0394 or slx9-1, indicating that Rio23G is functional in vivo despite being defective in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by genetic complementation and interaction data (Figure 7B and supplements). The differential genetic interactions provide important context for interpreting the in vitro data and suggest that Slx9 can rescue the destabilized NES in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A GST-Rio23G:Slx9:RanQLGTP complex is able to recruit Crm1 similar to the wild-type complex, but the GST-Rio23G:Slx9-1:RanQLGTP complex is impaired in loading Crm1, suggesting that Slx9 promotes Crm1 loading by stabilizing the region surrounding the Rio2-NES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by in vitro binding assays (Figures 7C-D) showing that wild-type Slx9 can restore Crm1 binding to the destabilized Rio23G NES, but Slx9-1 cannot. This provides direct evidence for Slx9's NES-stabilizing function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Replacing the Rio2-NES with the strong NESs of Nmd3 (Rio2Nmd3NES) bypasses the requirement for Slx9 in 40S pre-ribosome export, as slx9\u0394 cells expressing Rio2Nmd3NES do not accumulate uS5-GFP in the nucleoplasm, and both NESs are required for this bypass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 are supported by genetic complementation data (Figure 8A), in vitro binding assays (Figure 8B), and fluorescence microscopy (Figure 8C). The rescue of the export defect by strong NESs provides strong evidence that Slx9's primary function is to overcome weak NES-Crm1 interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The expression of Rio2Nmd3NES in yrb2\u0394 cells does not rescue the nucleoplasmic accumulation of uS5-GFP, indicating that the heterologous NESs specifically bypass Slx9 function but not other steps that drive 40S pre-ribosome export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by fluorescence microscopy data (Figure 8D). The specificity of the rescue for slx9\u0394 but not yrb2\u0394 demonstrates that the strong NESs specifically compensate for Slx9 function and not other export factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Slx9 is a new type of RanGTP-binding protein that promotes assembly of a Crm1-export complex on Rio2 by overcoming the low affinity between the NES and Crm1 through a non-canonical stepwise mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 represent the main conclusions of the study, which are well-supported by the comprehensive in vitro and in vivo data presented. The stepwise assembly mechanism is clearly demonstrated through systematic binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The pre-rRNA processing defects observed in slx9\u0394 mutants could be a consequence of a primary defect in nuclear export of 40S pre-ribosomes, as supported by genetic interactions and suppression by MEX67-MTR2 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by citations to previous work and genetic data. The interpretation that export defects are primary and processing defects are secondary is reasonable given the suppression data, though alternative explanations cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "Slx9 does not have apparent homology with known Ran-binding proteins based on sequence analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by sequence analysis described in the text. This establishes Slx9 as a novel type of RanGTP-binding protein, though the absence of homology does not preclude structural similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Slx9 mediates a non-canonical stepwise assembly of a Crm1-export complex that differs from the canonical cooperative assembly pathway, where Slx9 first binds RanGTP and Rio2 through non-cooperative interactions, and all three proteins are then required for efficient Crm1 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 are supported by systematic binding studies (Figures 5-6) and citations to previous work on canonical Crm1 assembly. The stepwise mechanism is clearly distinguished from cooperative assembly through the stability of intermediate complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "A stepwise formation of a Crm1-export complex could allow currently uncharacterized quality control surveillance steps to monitor pre-ribosome assembly and ensure that only correctly assembled particles are chosen for export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is speculative reasoning about potential biological significance. While the stepwise mechanism is well-established, the proposed quality control function is not directly tested and remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Slx9 utilizes a distinct mechanism from Yrb2/RanBP3 for Crm1-export complex assembly, as Slx9 does not bind Crm1 or compete with the NES, but remains stably bound to the export complex. Despite these differences, both proteins overcome low NES-Crm1 affinity, and their strong genetic interaction suggests both mechanisms are employed for 40S export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C139 are supported by in vitro binding data (Figures 2C, 6) showing Slx9's distinct binding properties, citations to previous work on Yrb2/RanBP3, and genetic interaction data (Figure 2A). The comparison effectively establishes Slx9 as a novel type of export facilitator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Rio2 is not the sole target of Slx9, as evidenced by the differential genetic interactions between rio2\u0394NES and slx9\u0394 compared to the synthetic lethality of slx9\u0394yrb2\u0394, suggesting additional NES-containing adaptors employ Slx9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 are supported by genetic interaction data (Figure 7 supplements). The logic is sound: if Rio2 were the sole target, rio2\u0394NES and slx9\u0394 should show similar genetic profiles. Claim C143 is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Slx9 stabilizes NES conformers to promote Crm1 binding, as demonstrated by restoration of Crm1 recruitment to the destabilized Rio23G NES in the presence of Slx9. This suggests Slx9 may belong to a family of RanGTP-binding proteins that induce and stabilize NES conformers, allowing greater NES variability and regulation of Crm1 recognition efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 are well-supported by in vitro binding data (Figure 7C) and citations to structural work. Claims C149-C151 are more speculative but represent reasonable predictions based on the NES-conformer selection model. The mechanistic insight is valuable even if the proposed protein family remains hypothetical.",
+    "result_type": "MAJOR"
+  }
+]

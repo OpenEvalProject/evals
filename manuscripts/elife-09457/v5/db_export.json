@@ -1,0 +1,1827 @@
+{
+  "submission": {
+    "id": "415c15f5-bd5a-4223-9969-19adf859df78",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:52:53.766511Z",
+    "updated_at": "2025-11-29T04:52:53.766511Z"
+  },
+  "content": [
+    {
+      "id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "submission_id": "415c15f5-bd5a-4223-9969-19adf859df78",
+      "content_type": "manuscript",
+      "content_text": "# Unified pre- and postsynaptic long-term plasticity enables reliable and flexible learning\n\n## Authors\n\n- Rui Ponte Costa<sup>1</sup> ([ORCID: 0000-0003-2595-2027](https://orcid.org/0000-0003-2595-2027)) \u2020\n- Robert C Froemke<sup>5</sup>\n- P Jesper Sj\u00f6str\u00f6m<sup>3</sup> ([ORCID: 0000-0001-7085-2223](https://orcid.org/0000-0001-7085-2223))\n- Mark CW van Rossum<sup>1</sup> ([ORCID: 0000-0001-6525-6814](https://orcid.org/0000-0001-6525-6814))\n\n### Affiliations\n\n1. Institute for Adaptive and Neural Computation, School of Informatics University of Edinburgh Edinburgh United Kingdom\n2. Neuroinformatics Doctoral Training Centre, School of Informatics University of Edinburgh Edinburgh United Kingdom\n3. The Research Institute of the McGill University Health Centre, Department of Neurology and Neurosurgery McGill University Montreal Canada\n4. Centre for Neural Circuits and Behaviour University of Oxford Oxford United Kingdom\n5. Skirball Institute for Biomolecular Medicine, Departments of Otolaryngology, Neuroscience and Physiology New York University School of Medicine New York United States\n6. Center for Neural Science New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough it is well known that long-term synaptic plasticity can be expressed both pre- and postsynaptically, the functional consequences of this arrangement have remained elusive. We show that spike-timing-dependent plasticity with both pre- and postsynaptic expression develops receptive fields with reduced variability and improved discriminability compared to postsynaptic plasticity alone. These long-term modifications in receptive field statistics match recent sensory perception experiments. Moreover, learning with this form of plasticity leaves a hidden postsynaptic memory trace that enables fast relearning of previously stored information, providing a cellular substrate for memory savings. Our results reveal essential roles for presynaptic plasticity that are missed when only postsynaptic expression of long-term plasticity is considered, and suggest an experience-dependent distribution of pre- and postsynaptic strength changes.\n\n## Materials and methods\n\n### Short- and long-term synaptic plasticity model\n\n#### Short-term plasticity model\n\nTo model short-term synaptic plasticity, we used the Tsodyks-Markram model with facilitation (Markram et al., 1998). This model is defined by the following ODEs\n\n$$\n\\frac{dr(t)}{dt}=\\frac{1\u2212r(t)}{D}\u2212p(t)r(t)X(t),\n$$\n\n\n\n$$\n\\frac{dp(t)}{dt}=\\frac{P\u2212p(t)}{F}+P[1\u2212p(t)]X(t).\n$$\n\nThe first equation models the vesicle depletion process, where the (normalized) number of vesicles r is decreased by an amount p(t)r(t) after a presynaptic spike from the train $X(t)=\\sum_{t_{pre}}\\delta(t\u2212t_{pre})$. Between spikes r recovers to 1 with a depression time constant D. The second equation models the dynamics of the presynaptic factor p which increases an amount P[1 \u2212 p] after every presynaptic spike, decaying back to baseline presynaptic factor P with a facilitation time constant F. By varying the synaptic dynamics parameters D, F and P, one can obtain different synaptic dynamics. We used typical values for pyramidal-onto-pyramidal synapses (Costa et al., 2013), D = 200 ms and F = 50 ms, while P is modified by long-term plasticity as below. The average number of vesicles released per spike is r(t)p(t), which can be interpreted as the presynaptic strength.\n\n### Long-term plasticity model\n\nIn layer-5 pyramidal to pyramidal cell synapses, timing-dependent LTD is presynaptically expressed. It is mediated by the coincidence between a postsynaptic signal (eCB release) and a presynaptic signal (presynaptic NMDA receptor activation) (Sj\u00f6str\u00f6m et al., 2003, 2004; Bender and Feldman, 2006; Yang and Calakos, 2013). LTP is driven by postsynaptic coincidence detection of the combined binding of glutamate and postsynaptic depolarization (Bender and Feldman, 2006; Sj\u00f6str\u00f6m et al., 2007; Shouval et al., 2010), promoting an increase in the number and/or properties of postsynaptic AMPA receptors (Malinow and Malenka, 2002). However, timing-dependent LTP also has a presynaptic component, mediated by postsynaptic diffusion of NO (Hardingham and Fox, 2006; Sj\u00f6str\u00f6m et al., 2007; Hardingham et al., 2013; Yang and Calakos, 2013).\n\nOur phenomenological triplet model of long-term modification of pre- and postsynaptic components has three synaptic traces, two postsynaptic (y+ and y\u2212) and one presynaptic (x+), which increase upon a post- or presynaptic spike, respectively (see Appendix 1 for a more detailed comparison with the triplet model (Pfister and Gerstner, 2006)). The traces are obtained by filtering the spike trains with a first-order low-pass filter. We defined the postsynaptic depression trace\n\n$$\n\\frac{dy_{\u2212}(t)}{dt}=\\frac{\u2212y_{\u2212}(t)}{\\tau_{y_{\u2212}}}+Y(t),\n$$\n\nthe postsynaptic potentiation trace\n\n$$\n\\frac{dy_{+}(t)}{dt}=\\frac{\u2212y_{+}(t)}{\\tau_{y_{+}}}+Y(t),\n$$\n\nand the presynaptic potentiation trace\n\n$$\n\\frac{dx_{+}(t)}{dt}=\\frac{\u2212x_{+}(t)}{\\tau_{x_{+}}}+X(t).\n$$\n\nThe long-term modification in the weight is achieved by modifying the postsynaptic factor q and the presynaptic factor P. The postsynaptic factor is modified with every postsynaptic spike Y according to\n\n$$\n\u0394q=c_{+}x_{+}(t)y_(t\u2212\u03f5)Y(t)\u23dfTriplet_{post}^{LTP},\n$$\n\nwhere c+ is a constant that sets the amount of postsynaptic LTP. The y\u2212 trace is evaluated at (t \u2212 \u03f5), so that the value of the respective synaptic trace is readout before being updated. The triplet character of this rule is expressed by the fact that it contains the presynaptic component once, but the postsynaptic activity twice (Y and filtered version y\u2212). This ensures that LTP only takes place when the postsynaptic spike follows both a presynaptic spike and a preceding postsynaptic spike (Pfister and Gerstner, 2006). As a result, low pairing frequencies do not lead to LTP, as y\u2212 will have decayed, consistent with data (Sj\u00f6str\u00f6m et al., 2001).\n\nSimilarly, the presynaptic factor is modified whenever the presynaptic cell is active according to\n\n$$\n\u0394P=\u2212d_y_(t)y_{+}(t)X(t)\u23dfTriplet_{pre}^{LTD}+d_{+}x_{+}(t\u2212\u03f5)y_{+}(t)X(t)\u23dfTriplet_{pre}^{LTP}.\n$$\n\nFor plasticity in P to occur, the presynaptic spikes X readout the postsynaptic traces (presynaptic coincidence detection), y\u2212y+ for presynaptic LTD and x+y+ for presynaptic LTP. d\u2212 and d+ are constants that set the amount of presynaptic LTD and LTP, respectively. While presynaptic LTD has a triplet form, it contains two postsynaptic traces and the raw presynaptic spike train. Therefore it does not vanish at low frequencies. Equivalently, this term could be written as a doublet rule with a double exponential as the presynaptic trace.\n\nThe total synaptic strength is a product of both pre- and postsynaptic factors\n\n$$\nw(t)=qp(t)r(t).\n$$\n\nFor a synapse that has not been stimulated recently this simplifies to w = Pq.\n\nBeing a probability we hard-bounded P = [0, 1]. The postsynaptic factor q had a lower bound of 0, and an upper bound of 2. Alternatively a soft-bounded rule could be used (van Rossum et al., 2012). In the data used to fit the model (see below), postsynaptic homosynaptic LTD was not apparent on the timescale of the experiment. Because it seems unrealistic that the postsynaptic factor q never decreases, slow homeostasic scaling of the postsynaptic factor was included for network simulations (Turrigiano et al., 1998). This prevents weakly active synapses from potentiating the postsynaptic factor q. It was modelled as a postsynaptic subtractive normalization, so that the total change in q of synapse i was equal to $\u0394q_{i}\u2212\\alpha\\frac{1}{N}\\sum_{j=1}^{N}\u0394q_{j}$\u00a0(Miller and MacKay, 1994). The only condition on the speed \u03b1 for it to be consistent with the data, is that it should not lead to noticable homeostasis on the timescale of the experiments. For computational efficiency we used \u03b1 = 0.075, which is still orders of magnitude faster than what has been observed in homeostasis experiments. The exact form of slow normalization (\u03b1 \u2192 0) does not affect the qualitative behavior of the model. Note that the timescale of the slow normalization determines how long the memory savings effects are present.\n\nTo speed up the numerical implementations, we integrated the synaptic traces between the pre- and postsynaptic spikes. In the following equations, we label the presynaptic spikes with k and the postsynaptic ones with l.\n\n$$\ny_{\u2212}^{l+1}=y_{\u2212\u00a0}^{l} exp(\u2212\\frac{\u0394t_{post}}{\\tau_{y_{\u2212}}})+1,\n$$\n\n\n\n$$\ny_{+}^{l+1}=y_{+\u00a0}^{l} exp(\u2212\\frac{\u0394t_{post}}{\\tau_{y_{+}}})+1,\n$$\n\n\n\n$$\nx_{+}^{k+1}=x_{+}^{k}\u00a0 exp(\u2212\\frac{\u0394t_{pre}}{\\tau_{x_{+}}})+1.\n$$\n\nWe subsequently integrated the model between pre- and postsynaptic spikes\n\n$$\nq_{l+1}=q_{l}+c_{+}x_{+\u00a0}^{k} exp(\u2212\\frac{\u0394t_{post\u2212pre}}{\\tau_{x_{+}}})y_{\u2212\u00a0}^{l} exp(\u2212\\frac{\u0394t_{post}}{\\tau_{y_{\u2212}}}),\n$$\n\n\n\n$$\nP_{k+1}=P_{k}\u2212d_{\u2212}y_{\u2212}^{l} exp(\u2212\\frac{\u0394t_{pre\u2212post}}{\\tau_{y_{\u2212}}})y_{+\u00a0}^{l} exp(\u2212\\frac{\u0394t_{pre\u2212post}}{\\tau_{y_{+}}})+d_{+}y_{+\u00a0}^{l} exp(\u2212\\frac{\u0394t_{pre\u2212post}}{\\tau_{y_{+}}})x_{+\u00a0}^{k} exp(\u2212\\frac{\u0394t_{pre}}{\\tau_{x_{+}}}),\n$$\n\nwhere \u0394tpost\u2212pre is the time between the current postsynaptic spike and the last presynaptic spike, \u0394tpost is the time between the current postsynaptic spike and the last one, and similarly for \u0394tpre\u2212post and \u0394tpre. Finally, we also integrated the STP (Equations 1, 2) between presynaptic spikes k and k + 1, a time \u0394tpre apart, yielding\n\n$$\nr_{k+1}=1\u2212[1\u2212r_{k}(1\u2212p_{k})]exp(\u2212\\frac{\u0394t_{pre}}{D}),\n$$\n\n\n\n$$\np_{k+1}=P+p_{k}[1\u2212P]exp(\u2212\\frac{\u0394t_{pre}}{F}).\n$$\n\nwith initial conditions r0 = 1 and p0 = P.\n\n### Model fitting to in vitro plasticity data\n\nWe fitted the free parameters of the long-term plasticity model \u03b8 = {d\u2212, \u03c4y\u2212, d+, \u03c4y+, c+, \u03c4x+} to the frequency- and timing-dependent slice STDP data of layer-5 pyramidal cells (Sj\u00f6str\u00f6m et al., 2001). Parameters are shown in Table 1. Rather than fitting to changes in the weight w, we fitted directly to modifications in P and q (see Equations 21, 22 for our estimators of P and q). This was done by minimizing the mean squared error between the data and the experiments for both P and q (as shown in Figure 1)\n\n$$\n\\theta=argmin_{\\theta}\\frac{1}{N}\\sumjN[(\\frac{P_{model}^{after}}{P_{model}^{before}}\u2212\\frac{P_{data}^{after}}{P_{data}^{before}})^{2}+(\\frac{q_{model}^{after}}{q_{model}^{before}}\u2212\\frac{q_{data}^{after}}{q_{data}^{before}})^{2}],\n$$\n\nwhere N denotes the number of protocols fitted, 10 in total (5 different pairing frequencies with \u221210 ms or +10 ms relative timing, see below). For induction protocols at high frequencies (\u226510 Hz), pre- and postsynaptic spike trains consisted of five spikes that were paired 15 times at 0.1 Hz. Low-frequency pairings (0.1 Hz) were done with a single pre- and postsynaptic spike (as in Sj\u00f6str\u00f6m et al., 2001). Before plasticity induction, P and q were set to 0.5 and 1, respectively. For the interaction of STP and STDP simulations (Figure 1F,G), we used a standard passive neuron model with a membrane time constant of 25 ms.\n\n**Table 1.**\n Unified pre- and postsynaptic spike-timing-dependent plasticity (STDP) model parameters\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>d\u2212</th>\n      <th>\u03c4y\u2212 (ms)</th>\n      <th>d+</th>\n      <th>\u03c4y+ (ms)</th>\n      <th>c+</th>\n      <th>\u03c4x+ (ms)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Young rat visual cortex</td>\n      <td>0.00389</td>\n      <td>12.5</td>\n      <td>0.002483</td>\n      <td>417.8</td>\n      <td>0.013706</td>\n      <td>48.6</td>\n    </tr>\n  </tbody>\n</table>\n\n_The model was fitted to data from young rat visual cortex (Sj\u00f6str\u00f6m et al., 2001)._\n\n**Table 2.**\n Comparison between unified pre- and postsynaptic STDP model and different versions of the triplet model (for simplicity we removed the function arguments) (Pfister and Gerstner, 2006)\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>LTD</th>\n      <th>LTP1</th>\n      <th>LTP2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pre-post STDP</td>\n      <td>X d\u2212y\u2212y+</td>\n      <td>X d+y+x+</td>\n      <td>Y c+x+y\u2212</td>\n    </tr>\n    <tr>\n      <td>minimal HC Triplet</td>\n      <td>X\u2009A2\u2212y1</td>\n      <td>Y\u2009A2+x1</td>\n      <td>Y\u2009A3+x1y2</td>\n    </tr>\n    <tr>\n      <td>minimal VC Triplet</td>\n      <td>X\u2009A2\u2212y1</td>\n      <td>\u2013</td>\n      <td>Y\u2009A3+x1y2</td>\n    </tr>\n  </tbody>\n</table>\n\nWithout further fitting this model also captured pharmacological blockade of the plasticity traces. In the model, we simulated the experimental effects of pharmacological blockade by setting the relevant parameter or variable to 0. Specifically, we simulated the effects of blocking two different retrograde messenger systems shown to be involved in STDP in layer-5 pyramidal cell pairs, eCB signaling (Sj\u00f6str\u00f6m et al., 2003) and NO signaling (Sj\u00f6str\u00f6m et al., 2007). To reproduce pharmacological blockade experiments, we used high-frequency pairing (50 Hz) with +10 ms delay, which is comparable with our frequency-dependent results and approximates the long depolarizing currents used in Sj\u00f6str\u00f6m et al. (2007). Blocking eCB receptors prevents presynaptic LTD (Sj\u00f6str\u00f6m et al., 2003). By setting d\u2212 = 0 presynaptic LTD was disabled. This reveals presynaptic LTP and enhances short-term depression (Figure 1\u2014figure supplement 3), consistent with experimental evidence (Sj\u00f6str\u00f6m et al., 2007), as the drugs used are likely to block presynaptic eCB receptors. In contrast, blocking NO decreases LTP but does not affect short-term synaptic dynamics (Sj\u00f6str\u00f6m et al., 2007) (Figure 1\u2014figure supplement 3A). We simulated this by setting y+ = 0, so that both presynaptic components were absent.\n\n### Stochastic synaptic responses and in vitro P and q estimation\n\nThe release of neurotransmitter was assumed to follow a standard binomial model (Del Castillo and Katz, 1954)\n\n$$\nP_{syn}(X=k)=(Nk)P^{k}(1\u2212P)^{N\u2212k},\n$$\n\nwhich defines the probability of having k successful events (neurotransmitter release) given N trials (release sites) with equal probability P.\n\nThe mean synaptic response is scaled by a postsynaptic factor q, which can be related to the quantal amplitude so that\n\n$$\n\\mu_{syn}=PqN,\n$$\n\nand the variance is\n\n$$\n\\sigma_{syn}^{2}=q^{2}NP(1\u2212P).\n$$\n\nFollowing the binomial release model (Equation 18), \u03bcsyn (Equation 19) and $\\sigma_{syn}^{2}$ (Equation 20),\n\n$$\nP=\\frac{\\mu_{syn}}{Nq},\n$$\n\nand\n\n$$\nq=\\frac{\\sigma_{syn}^{2}}{\\mu_{syn}}+\\frac{\\mu_{syn}}{N}.\n$$\n\nThe number of release sites N is believed to change only after a few hours (Bolshakov et al., 1997; Saez and Friedlander, 2009). As the slice synaptic plasticity experiments analysed here lasted only up to 1.5 hr (Sj\u00f6str\u00f6m et al., 2001) and we were interested in the relative changes we assumed constant N = 5.5 in our analysis below, as estimated in Markram et al. (1997) using data from the same connection type we used to fit our model. Equations 21, 22 were used to estimate P and q from in vitro plasticity data (see above), respectively (dataset deposited at Dryad data repository at http://dx.doi.org/10.5061/dryad.p286g [Costa et al., 2015]). Note that because the data had to be reanalized in full there are minor differences in the mean weights previously published (Sj\u00f6str\u00f6m et al., 2001).\n\nWe verified our P and q extraction method by analysing short-term plasticity experiments with pharmacological manipulation of presynaptic release or of postsynaptic gain (Figure 1\u2014figure supplement 2A, Sj\u00f6str\u00f6m et al., 2003), and experiments with pharmacological blockade of pre- or postsynaptic long-term plasticity (Figure 1\u2014figure supplement 2B, Sj\u00f6str\u00f6m et al., 2007) (Figure 1\u2014figure supplement 2A,B). In addition, long-term changes in P but not in q were inversely correlated with changes in paired-pulse ratio, as expected (Figure 1\u2014figure supplement 2C,D). Taken together, these results lend experimental support to our binomial-distribution-based approach for extracting P and q to tune changes in the pre- and postsynaptic modifications of our unified STDP model (Figure 1D,E).\n\n### Analysis of in vivo data\n\nWe extracted the effective P and q from the in vivo data obtained by Froemke et al. (2013). Again using a binomial model, we obtained estimators for their variability measure given by v = q (1 \u2212 P) and the mean by \u03bc = PqN. To ease comparison with our simulations we set the initial P to the same initial condition used in our simulations P = 0.5 (Costa et al., 2013). We then obtained the initial $N=\\frac{|\\mu|}{qP}$ and the initial $q=\\frac{v}{(1\u2212P)}$. For the after pairing data we allowed both pre- and postsynaptic factors P and q to change, while N was fixed to the values extracted before pairing (Bolshakov et al., 1997). The estimations after learning were obtained as $q=v+\\frac{|\\mu|}{N}$ and $P=\\frac{|\\mu|}{Nq}$. We used these estimators to extract q and P from measurements for both the depression experienced for the unpaired (best before pairing) receptive field position and the potentiated paired position (Froemke et al., 2013). After pairing, the effective q of the potentiated (\u2018on\u2019) response increased from $q_{before}^{on}=23.3\u2009pA$ to $q_{after}^{on}=27.1\u2009pA$ (+16.3%), while P increased from $P_{before}^{on}=0.5$ to $P_{after}^{on}=0.73$ (+46%). Responses that were depressed (\u2018off\u2019), typically the original best frequency, yielded no statistically significant change in $q_{before}^{off}$, while $P_{before}^{off}=0.5$ and $P_{after}^{off}=0.40$ (\u221220%) (Figures 2, Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 3). To ease comparison with the postsynaptic factor in the simulations we scaled the experimentally obtained q such that before plasticity it was 1. We compared models where we allowed both P and q to change or only one of them, the lower variability estimation error was obtained by the one where both factors change (Figure 2\u2014figure supplement 3E). The estimation error was calculated as $\\frac{1}{N}\\sum^{\u200b}_{i}^{N}(v_{real}^{i}\u2212v_{estimated}^{i})^{2}$, where N is the number of data points.\n\n### Synaptic signal detection\n\nWe calculated the SNR of a synaptic response defined here by a random variable s, amidst additive background noise defined by the random variable n as follows\n\n$$\nSNR_{syn}=2\\frac{(\u27e8s\u27e9\u2212\u27e8n\u27e9)^{2}}{\\sigma_{s}^{2}+\\sigma_{n}^{2}},\n$$\n\nIt is assumed that $n\u223c\ud835\udca9(0,\\sigma_{n}^{2})$ and we also used the Gaussian approximation to the binomial release model specified above, $s\u223c\ud835\udca9(PqN,q^{2}NP(1\u2212P)+\\sigma_{n}^{2})$, from which follows the SNR of the first postsynaptic response\n\n$$\nSNR_{syn}=2\\frac{(PqN)^{2}}{q^{2}NP(1\u2212P)+2\\sigma_{n}^{2}}.\n$$\n\nIn Figure 2, we used $\\sigma_{n}^{2}=0.5$. Variance of the k-th postsynaptic response is given by $\\sigma_{syn^{k}}^{2}=q^{2}Nr_{k}p_{k}(1\u2212r_{k}p_{k})$ (Figure 2\u2014figure supplement 2A). The SNR of the k-th postsynaptic response is\n\n$$\nSNR_{syn}^{k}=2\\frac{(r_{k}p_{k}qN)^{2}}{q^{2}Nr_{k}p_{k}(1\u2212r_{k}p_{k})+2\\sigma_{n}^{2}},\n$$\n\nwhere pk and rk are given by Equations 15, 16, respectively. The SNR of the sum of the first K responses, evoked at a given presynaptic firing rate \u03c1 therefore equals\n\n$$\nSNR_{syn}^{\u03c1}=2\\frac{(\\sum_{k=0}^{K\u22121}r_{k}p_{k}qN)^{2}}{\\sum_{k=0}^{K\u22121}q^{2}Nr_{k}p_{k}(1\u2212r_{k}p_{k})+2\\sum_{k=0}^{K\u22121}\\sigma_{n}^{2}}.\n$$\n\nAfter unified STDP the first response has a higher amplitude and the second one a much lower amplitude due to synaptic depression. Combined with the background noise, the SNR can drop when the second or further responses are included. However, the SNR of the summed response will always be larger than when only postsynaptic modifications are made (see Figure 2\u2014figure supplement 2B). This holds for any frequency, Figure 2\u2014figure supplement 2C and carries over to an information theoretic analysis of the response, Figure 2\u2014figure supplement 2D.\n\nNext, we used ROC analysis to compute the false alarm and detection probability of the first postsynaptic response\n\n$$\np_{false\u2009alarm}=\\int_{T}^{+\u221e}P_{n}(r)dr=\\frac{1}{2}erfc(\\frac{T}{\\sqrt{2\\sigma_{n}^{2}}})^{\u200b},\n$$\n\n\n\n$$\np_{detection}=\\int_{T}^{+\u221e}P_{s}(r)dr=\\frac{1}{2}erfc(\\frac{T\u2212PqN}{\\sqrt{2q^{2}NP(1\u2212P)+\\sigma_{n}^{2}}})^{\u200b}.\n$$\n\nwhere T is the discrimination threshold, and erfc is the complementary error function defined as $erfc(x)=\\frac{2}{\\sqrt{\\pi}}\\int_{x}^{\u221e}e^{\u2212t^{2}}dt$. To assess the overall discriminability, we used pdiscrimination, which is the area under the ROC curve (AUC). The AUC was computed by integrating over the ROC curve using the trapezoid method (see Figure 2D). Given that N is a simple constant we set it to 1, unless otherwise stated (see data inference above).\n\n### Receptive field development\n\nFor the receptive field development simulations, we used a feedforward network with 100 presynaptic neurons j with Poisson statistics and a single integrate-and-fire postsynaptic neuron. The postsynaptic neuron was modelled as an adaptive exponential integrate-and-fire neuron model (Brette and Gerstner, 2005). Model parameters were as reported in Brette and Gerstner (2005);\u00a0Badel et al. (2008)\u00a0and synapses were modelled as input currents. The firing rate of the presynaptic Poisson neurons was modelled using a Gaussian profile, defined as\n\n$$\n\u03c1(j;p,\\sigma)=\u03c1_{min}+(\u03c1_{max}\u2212\u03c1_{min})e^{\\frac{\u2212(j\u2212p)^{2}}{2\\sigma^{2}}}.\n$$\n\nwhere \u03c1 is the rate in the Poisson neuron model j, p the input position for which the rate is maximal, and \u03c3 = 5 Hz the distribution spread. \u03c1max and \u03c1min are the maximum and minimum rates, and were set to \u03c1max = 50 Hz and \u03c1min = 3 Hz. We scaled d\u2212, d+ and c+ by a factor 0.15 to yield a smoother receptive field development. q was bounded between 0 nA and 20 nA, so that the synaptic input is appropriately scaled for the neuron model used. The network was simulated for 100 s to achieve convergence. For the memory savings experiment, we interleaved two receptive field positions. Results for receptive development and memory savings were averaged over 10 runs. The response of the postsynaptic neuron (Figure 3C) was assessed by presenting each stimulus alone with long-term synaptic plasticity inactive. Receptive field simulations were implemented in simulator Brian 1.41 (Goodman and Brette, 2008). Code for running and plotting the savings experiment is available online (http://modeldb.yale.edu/184487).\n\n### Statistical comparison\n\nResults are reported as mean \u00b1 SEM. Statistical comparisons were made with Student's t-test for equal means, if data was normally distributed as assessed using Kolmogorov\u2013Smirnov test, Mann\u2013Whitney U non-parametric test was used otherwise. For multiple comparisons we applied ANOVA or Kruskal\u2013Wallis test for normally or non-normally distributed data, respectively. For correlation analysis the Spearman's coefficient was used together with one-tailed Student's t-test. Significance levels are *p < 0.05, **p < 0.01, and ***p < 0.001.\n",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "2e5496af-b3b0-4dfb-b264-f1253f52fa9c",
+      "submission_id": "415c15f5-bd5a-4223-9969-19adf859df78",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09457.016](https://doi.org/10.7554/eLife.09457.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \u201cUnified pre- and postsynaptic long-term plasticity enables reliable and flexible learning\u201d for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll three reviewers found aspects of the improvement in SNR confusing. I think this can be remedied with textual changes not requiring additional experiments or simulations (although if additional simulations \u2013 e.g. addressing Reviewer #3's concerns about frequency \u2013 will help to clarify, these could presumably be included). All three reviews are included below in the hopes that this will aid in clarifying the manuscript.\n\nReviewer #1:\n\nThis is a carefully done, compact paper with a crisp message that offers a potential solution to an important problem in neuroscience. Although there is now broad agreement that pre- and postsynaptic plasticity mechanisms can coexist at many central synapses, the functional benefit of this is unclear. The authors here adapt prior models of spike-timing-dependent plasticity to take account of the experimentally determined properties of pre- and postsynaptic expression mechanisms for plasticity. They show two functional benefits. First, the two mechanisms better account for observed improvements in sensory discrimination with learning and second, the dual mechanism permits much more rapid relearning when the stimuli being learned change with time.\n\nI have no major concerns.\n\nReviewer #2:\n\nIt is really good to see a model of this detail and rigor combining the pre and post-synaptic aspects of plasticity and to see that we have finally arrived at a point where it is accepted that pre and post-synaptic elements show plasticity. My comments are going to be fairly minor but I hope that the authors will make some effort to tackle them because it will probably help communicate the ideas.\n\nThe first point is that the model seeks to explain the advantages of presynaptic plasticity. One of these is the decrease in variance in developing receptive fields another is retained information or savings on reversal of plasticity. Unfortunately, having raked through the formulae a few times, I cannot see where this comes from. In Figure 3, the relearning occurs more quickly because the post-synaptic factor decays slowly. Can the authors explain in more detail why presynaptic plasticity improves relearning? Also, could it not (theoretically) be achieved another way, say by increasing the duration of the post-synaptic factor? I am still missing what is unique about the disposition of the presynaptic plasticity.\n\nI am not disputing the premise, however. It may well be that the slower turnover of presynaptic terminals compared to spines allows faster relearning. I believe that Finnerty and colleagues have done some work on this and they should probably be mentioned in this paper.\n\nThe second point is that the main body of the paper seems to be over very quickly. I was left searching for more text. There are several points that could be more fully discussed, including the elements that are explicitly missing from the model and what the impact might be. For example, how does inhibition and plasticity of inhibition impact the outcome and how might the time course of structural plasticity modify the model. On the second point, the Matsuzaki reference deals with structure and synaptic weight post-synaptically but not pre-synaptically. It would also be useful to hear how the model might fit different structures - would more presynaptic plasticity be warranted in layer 5 pyramidal cells than in hippocampus for example?\n\nReviewer #3:\n\nThis paper presents a theoretical model for STDP that incorporates both a pre- and post-synaptic expression locus. To date the vast majority of models have focused on implementations of LTP and LTD that simply scale the value of the synaptic weight, but do not alter short-term synaptic plasticity-thus altering the temporal profile of EPSPs. Importantly the model is based on, and captures, the experimental data which strongly suggests that there are pre- and postsynaptic expression mechanisms. Together the paper is highly novel and provides important data-based insights to our understanding of synaptic plasticity.\n\nIt is very interesting that the rule results in better discrimination. What is not clear is why? That is, why does a higher P value provide improve SNR? Yes, the first presynaptic spike generates a large reliable EPSP, but the subsequent spikes are less reliable and depressed. The SNR and ROC analyses were analytical, but I'm struggling to understand how these analyses can capture the true SNR and discriminability without taking into account the firing rate of the presynaptic units. Discriminability must depend in part of on the frequency of the Poisson inputs (and the D and F time constants)-but as it stands the analysis is based on the probabilistic nature of P, that is, essentially only for the first spike. Either I'm missing something, or an analysis based on the actual simulations (which take into account the timing of the spikes) should be performed. This is probably a minor issue, however, as Figure 3C makes it clear the discriminability based on firing rate is excellent.\n\nBased on Figure 3A, P seems to saturate at 1, meaning that there is little or no release for the next 200 ms. This is one reason the SNR calculation may be misleading. It would be useful to show postsynaptic trace segments during stimulation as part of this figure.\n\nI think some readers, particularly, those accustomed to the hippocampal field, will be unfamiliar with the strong evidence that there are presynaptic components to STDP. So I think it is important to strengthen their argument a bit, and perhaps mention that, these studies are based on neocortical data, and that there is likely a difference between hippocampal and neocortical STDP.\n",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89a29234-4167-4a74-b54e-ac3f5f06a0bb",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C1",
+      "claim": "Long-term synaptic plasticity can be expressed both pre- and postsynaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well known that long-term synaptic plasticity can be expressed both pre- and postsynaptically, the functional consequences of this arrangement have remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "896e2421-b024-4342-82f2-08b3974dd735",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C2",
+      "claim": "Spike-timing-dependent plasticity with both pre- and postsynaptic expression develops receptive fields with reduced variability compared to postsynaptic plasticity alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that spike-timing-dependent plasticity with both pre- and postsynaptic expression develops receptive fields with reduced variability and improved discriminability compared to postsynaptic plasticity alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by the modeling and simulation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "95510f59-1e0a-4175-8e71-5c5c56a40c09",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C3",
+      "claim": "Spike-timing-dependent plasticity with both pre- and postsynaptic expression develops receptive fields with improved discriminability compared to postsynaptic plasticity alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that spike-timing-dependent plasticity with both pre- and postsynaptic expression develops receptive fields with reduced variability and improved discriminability compared to postsynaptic plasticity alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by the modeling and simulation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "edc01b6f-89b1-44ec-b4c2-399a5655a456",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C4",
+      "claim": "Long-term modifications in receptive field statistics from the unified plasticity model match recent sensory perception experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These long-term modifications in receptive field statistics match recent sensory perception experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with experimental data from Froemke et al. (2013) as described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "38074587-1de4-4541-a0a9-1fa96436fd5b",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C5",
+      "claim": "Learning with unified pre- and postsynaptic plasticity leaves a hidden postsynaptic memory trace that enables fast relearning of previously stored information.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, learning with this form of plasticity leaves a hidden postsynaptic memory trace that enables fast relearning of previously stored information, providing a cellular substrate for memory savings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by the memory savings simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "0fd886c8-9fe8-42f1-b3a2-ae4ccc0735a6",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C6",
+      "claim": "The hidden postsynaptic memory trace provides a cellular substrate for memory savings.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, learning with this form of plasticity leaves a hidden postsynaptic memory trace that enables fast relearning of previously stored information, providing a cellular substrate for memory savings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "097ef8cb-bbaa-4576-881d-ec0d96dbfce8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C7",
+      "claim": "Presynaptic plasticity has essential roles that are missed when only postsynaptic expression of long-term plasticity is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal essential roles for presynaptic plasticity that are missed when only postsynaptic expression of long-term plasticity is considered, and suggest an experience-dependent distribution of pre- and postsynaptic strength changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results comparing unified plasticity to postsynaptic-only plasticity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "4cf43323-42c6-4d23-ab17-cf88fa510d6c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C8",
+      "claim": "There is an experience-dependent distribution of pre- and postsynaptic strength changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal essential roles for presynaptic plasticity that are missed when only postsynaptic expression of long-term plasticity is considered, and suggest an experience-dependent distribution of pre- and postsynaptic strength changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested based on the modeling results and their interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "ba25f92d-99e1-476d-bd7b-d7c5740b3227",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C9",
+      "claim": "The Tsodyks-Markram model with facilitation was used to model short-term synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "To model short-term synaptic plasticity, we used the Tsodyks-Markram model with facilitation (Markram et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement citing the model used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "dc9d24e3-a79f-4175-a483-24844c966441",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C11",
+      "claim": "Between spikes, r recovers to 1 with a depression time constant D.",
+      "claim_type": "EXPLICIT",
+      "source": "Between spikes r recovers to 1 with a depression time constant D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical formulation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "2d40f507-f2a2-4d89-bfb3-05e81c0fff2b",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C12",
+      "claim": "The presynaptic factor p increases an amount P[1 \u2212 p] after every presynaptic spike.",
+      "claim_type": "EXPLICIT",
+      "source": "The second equation models the dynamics of the presynaptic factor p which increases an amount P[1 \u2212 p] after every presynaptic spike, decaying back to baseline presynaptic factor P with a facilitation time constant F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical formulation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "16c0836b-ac70-448a-aba4-30ccc5b1fcd6",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C13",
+      "claim": "The presynaptic factor p decays back to baseline presynaptic factor P with a facilitation time constant F.",
+      "claim_type": "EXPLICIT",
+      "source": "The second equation models the dynamics of the presynaptic factor p which increases an amount P[1 \u2212 p] after every presynaptic spike, decaying back to baseline presynaptic factor P with a facilitation time constant F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical formulation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "074889d3-b380-4129-95be-795344f8eef3",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C14",
+      "claim": "Typical values for pyramidal-onto-pyramidal synapses are D = 200 ms and F = 50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We used typical values for pyramidal-onto-pyramidal synapses (Costa et al., 2013), D = 200 ms and F = 50 ms, while P is modified by long-term plasticity as below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement citing parameter values used in the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "71ab74ee-e4ad-4b8f-affd-7b3848fdbbd8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C15",
+      "claim": "The average number of vesicles released per spike is r(t)p(t), which can be interpreted as the presynaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of vesicles released per spike is r(t)p(t), which can be interpreted as the presynaptic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the model description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "7c1f44e4-6c8f-45e6-8b2f-22c7e7b40945",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C16",
+      "claim": "In layer-5 pyramidal to pyramidal cell synapses, timing-dependent LTD is presynaptically expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In layer-5 pyramidal to pyramidal cell synapses, timing-dependent LTD is presynaptically expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the biological system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "500ea681-5f94-4974-9afb-9cda3e1b7b5d",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C17",
+      "claim": "Timing-dependent LTD is mediated by the coincidence between a postsynaptic signal (eCB release) and a presynaptic signal (presynaptic NMDA receptor activation).",
+      "claim_type": "EXPLICIT",
+      "source": "It is mediated by the coincidence between a postsynaptic signal (eCB release) and a presynaptic signal (presynaptic NMDA receptor activation) (Sj\u00f6str\u00f6m et al., 2003, 2004; Bender and Feldman, 2006; Yang and Calakos, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "1df694c0-26dc-49d8-becd-be88d208aa7d",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C18",
+      "claim": "LTP is driven by postsynaptic coincidence detection of the combined binding of glutamate and postsynaptic depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "LTP is driven by postsynaptic coincidence detection of the combined binding of glutamate and postsynaptic depolarization (Bender and Feldman, 2006; Sj\u00f6str\u00f6m et al., 2007; Shouval et al., 2010), promoting an increase in the number and/or properties of postsynaptic AMPA receptors (Malinow and Malenka, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "ae3f946c-9f44-4f35-a975-c5cccbf07e75",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C19",
+      "claim": "LTP promotes an increase in the number and/or properties of postsynaptic AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "LTP is driven by postsynaptic coincidence detection of the combined binding of glutamate and postsynaptic depolarization (Bender and Feldman, 2006; Sj\u00f6str\u00f6m et al., 2007; Shouval et al., 2010), promoting an increase in the number and/or properties of postsynaptic AMPA receptors (Malinow and Malenka, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8d4e1cab-e6d3-4607-b325-c2cb75f55cdb",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C20",
+      "claim": "Timing-dependent LTP has a presynaptic component mediated by postsynaptic diffusion of NO.",
+      "claim_type": "EXPLICIT",
+      "source": "However, timing-dependent LTP also has a presynaptic component, mediated by postsynaptic diffusion of NO (Hardingham and Fox, 2006; Sj\u00f6str\u00f6m et al., 2007; Hardingham et al., 2013; Yang and Calakos, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "2ced4b57-4a5b-4019-86ff-0ecb0314496d",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C21",
+      "claim": "The phenomenological triplet model of long-term modification has three synaptic traces: two postsynaptic (y+ and y\u2212) and one presynaptic (x+).",
+      "claim_type": "EXPLICIT",
+      "source": "Our phenomenological triplet model of long-term modification of pre- and postsynaptic components has three synaptic traces, two postsynaptic (y+ and y\u2212) and one presynaptic (x+), which increase upon a post- or presynaptic spike, respectively (see Appendix 1 for a more detailed comparison with the triplet model (Pfister and Gerstner, 2006)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8c8d09d2-eb4e-4370-8209-239bd4047ac6",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C22",
+      "claim": "The synaptic traces increase upon a post- or presynaptic spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phenomenological triplet model of long-term modification of pre- and postsynaptic components has three synaptic traces, two postsynaptic (y+ and y\u2212) and one presynaptic (x+), which increase upon a post- or presynaptic spike, respectively (see Appendix 1 for a more detailed comparison with the triplet model (Pfister and Gerstner, 2006)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b162172c-ec03-48ac-83b7-73c7992e40dd",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C23",
+      "claim": "The traces are obtained by filtering the spike trains with a first-order low-pass filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The traces are obtained by filtering the spike trains with a first-order low-pass filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "79bcc72f-2c14-4b54-b098-145d4e2e1efa",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C24",
+      "claim": "The long-term modification in the weight is achieved by modifying the postsynaptic factor q and the presynaptic factor P.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-term modification in the weight is achieved by modifying the postsynaptic factor q and the presynaptic factor P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8f9ccb1c-6705-4522-b8b5-3508d6a5bd79",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C26",
+      "claim": "LTP only takes place when the postsynaptic spike follows both a presynaptic spike and a preceding postsynaptic spike.",
+      "claim_type": "EXPLICIT",
+      "source": "This ensures that LTP only takes place when the postsynaptic spike follows both a presynaptic spike and a preceding postsynaptic spike (Pfister and Gerstner, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model behavior, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "f21e1663-e154-4290-a051-171c12cfc961",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C27",
+      "claim": "Low pairing frequencies do not lead to LTP because y\u2212 will have decayed.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, low pairing frequencies do not lead to LTP, as y\u2212 will have decayed, consistent with data (Sj\u00f6str\u00f6m et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model behavior, consistent with cited experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "5658578c-ccc6-4c1b-9164-e4c5c0d2e3b3",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C29",
+      "claim": "For plasticity in P to occur, the presynaptic spikes readout the postsynaptic traces.",
+      "claim_type": "EXPLICIT",
+      "source": "For plasticity in P to occur, the presynaptic spikes X readout the postsynaptic traces (presynaptic coincidence detection), y\u2212y+ for presynaptic LTD and x+y+ for presynaptic LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "bf68c65b-9f91-4f3b-b9b1-7eb39e125d03",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C30",
+      "claim": "Presynaptic LTD has a triplet form containing two postsynaptic traces and the raw presynaptic spike train.",
+      "claim_type": "EXPLICIT",
+      "source": "While presynaptic LTD has a triplet form, it contains two postsynaptic traces and the raw presynaptic spike train.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "cf252f0c-16ee-4c86-9abf-601766cd9202",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C31",
+      "claim": "Presynaptic LTD does not vanish at low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it does not vanish at low frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b32c56ad-39cd-44c6-bb54-af6389c40416",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C33",
+      "claim": "For a synapse that has not been stimulated recently, the synaptic strength simplifies to w = Pq.",
+      "claim_type": "EXPLICIT",
+      "source": "For a synapse that has not been stimulated recently this simplifies to w = Pq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical simplification of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "5cdd03b9-5843-4f3e-81c9-798ec50dc299",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C34",
+      "claim": "P is hard-bounded between 0 and 1 as it is a probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Being a probability we hard-bounded P = [0, 1].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a constraint applied in the model based on the biological interpretation of P.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "daa2bbbf-8b9b-4897-b8bc-0dcd4c50d2cb",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C35",
+      "claim": "The postsynaptic factor q has a lower bound of 0 and an upper bound of 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The postsynaptic factor q had a lower bound of 0, and an upper bound of 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a constraint applied in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "590f8c87-88e8-45c9-84a9-2e8d6e83a366",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C36",
+      "claim": "Postsynaptic homosynaptic LTD was not apparent on the timescale of the experiment in the data used to fit the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the data used to fit the model (see below), postsynaptic homosynaptic LTD was not apparent on the timescale of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data used for model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "044736e2-18dd-423a-a923-e9e9df3e922c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C37",
+      "claim": "Slow homeostatic scaling of the postsynaptic factor was included for network simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it seems unrealistic that the postsynaptic factor q never decreases, slow homeostasic scaling of the postsynaptic factor was included for network simulations (Turrigiano et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice made for the simulations, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "be355144-6ccc-46d1-9205-c617f69e066f",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C38",
+      "claim": "Homeostatic scaling prevents weakly active synapses from potentiating the postsynaptic factor q.",
+      "claim_type": "EXPLICIT",
+      "source": "This prevents weakly active synapses from potentiating the postsynaptic factor q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the functional role of homeostatic scaling in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "36785fc3-2d11-47ff-929b-ccdd96d8d356",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C40",
+      "claim": "The speed of homeostatic scaling should not lead to noticeable homeostasis on the timescale of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The only condition on the speed \u03b1 for it to be consistent with the data, is that it should not lead to noticable homeostasis on the timescale of the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a constraint applied to ensure consistency with experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8f6a7397-5003-4a55-aafe-ce25a7b2965a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C41",
+      "claim": "\u03b1 = 0.075 was used for computational efficiency, which is still orders of magnitude faster than what has been observed in homeostasis experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "For computational efficiency we used \u03b1 = 0.075, which is still orders of magnitude faster than what has been observed in homeostasis experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about parameter choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "d746530b-6699-4903-ad29-3a965a176600",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C42",
+      "claim": "The exact form of slow normalization (\u03b1 \u2192 0) does not affect the qualitative behavior of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact form of slow normalization (\u03b1 \u2192 0) does not affect the qualitative behavior of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the model to parameter choices.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8ab83aa3-74f1-4ae3-b7ca-a1cc010cbb8c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C43",
+      "claim": "The timescale of the slow normalization determines how long the memory savings effects are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the timescale of the slow normalization determines how long the memory savings effects are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how a model parameter affects a specific outcome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "bd30ac80-0d05-4237-8dc9-96589b01ed30",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C44",
+      "claim": "The free parameters of the long-term plasticity model were fitted to frequency- and timing-dependent slice STDP data of layer-5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted the free parameters of the long-term plasticity model \u03b8 = {d\u2212, \u03c4y\u2212, d+, \u03c4y+, c+, \u03c4x+} to the frequency- and timing-dependent slice STDP data of layer-5 pyramidal cells (Sj\u00f6str\u00f6m et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about model fitting to experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "de665955-f938-45d8-b5c6-f3a744d79497",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C45",
+      "claim": "The model was fitted directly to modifications in P and q rather than to changes in the weight w.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than fitting to changes in the weight w, we fitted directly to modifications in P and q (see Equations 21, 22 for our estimators of P and q).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "9c495c8f-8267-4d36-bcfb-701a0e1976d8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C46",
+      "claim": "The fitting was done by minimizing the mean squared error between the data and the experiments for both P and q.",
+      "claim_type": "EXPLICIT",
+      "source": "This was done by minimizing the mean squared error between the data and the experiments for both P and q (as shown in Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about the fitting procedure, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8450eb80-1a4a-4b1f-87b4-a097265b59f9",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C47",
+      "claim": "For induction protocols at high frequencies (\u226510 Hz), pre- and postsynaptic spike trains consisted of five spikes that were paired 15 times at 0.1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "For induction protocols at high frequencies (\u226510 Hz), pre- and postsynaptic spike trains consisted of five spikes that were paired 15 times at 0.1 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the simulation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "892631db-63ce-4630-a7df-25a24710c1ef",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C48",
+      "claim": "Low-frequency pairings (0.1 Hz) were done with a single pre- and postsynaptic spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-frequency pairings (0.1 Hz) were done with a single pre- and postsynaptic spike (as in Sj\u00f6str\u00f6m et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the simulation protocol, consistent with cited experimental procedures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "91b06226-05ec-4c84-a99c-2b18d3e6d98b",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C49",
+      "claim": "Before plasticity induction, P and q were set to 0.5 and 1, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Before plasticity induction, P and q were set to 0.5 and 1, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about initial conditions in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "638246ae-6e65-44b0-9df5-7424aab1e11b",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C50",
+      "claim": "For the interaction of STP and STDP simulations, a standard passive neuron model with a membrane time constant of 25 ms was used.",
+      "claim_type": "EXPLICIT",
+      "source": "For the interaction of STP and STDP simulations (Figure 1F,G), we used a standard passive neuron model with a membrane time constant of 25 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about the neuron model used in specific simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b778c33a-3175-43a8-b111-16a9614fde4a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C51",
+      "claim": "The model without further fitting captured pharmacological blockade of the plasticity traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Without further fitting this model also captured pharmacological blockade of the plasticity traces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the model's ability to reproduce additional experimental results without additional parameter fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "579c98ce-44f5-4bf6-b279-c01422e7cf72",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C52",
+      "claim": "The experimental effects of pharmacological blockade were simulated by setting the relevant parameter or variable to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, we simulated the experimental effects of pharmacological blockade by setting the relevant parameter or variable to 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about how pharmacological manipulations were modeled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "f7a51a1b-90f4-490f-b55e-4e1181d81c27",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C53",
+      "claim": "eCB signaling is involved in STDP in layer-5 pyramidal cell pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we simulated the effects of blocking two different retrograde messenger systems shown to be involved in STDP in layer-5 pyramidal cell pairs, eCB signaling (Sj\u00f6str\u00f6m et al., 2003) and NO signaling (Sj\u00f6str\u00f6m et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "948b6d9f-9216-49ec-b997-f9d910cffadd",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C54",
+      "claim": "NO signaling is involved in STDP in layer-5 pyramidal cell pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we simulated the effects of blocking two different retrograde messenger systems shown to be involved in STDP in layer-5 pyramidal cell pairs, eCB signaling (Sj\u00f6str\u00f6m et al., 2003) and NO signaling (Sj\u00f6str\u00f6m et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "6b1ab4f6-c4b3-4da8-9f88-09d0287cccf7",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C55",
+      "claim": "Blocking eCB receptors prevents presynaptic LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking eCB receptors prevents presynaptic LTD (Sj\u00f6str\u00f6m et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "74a6fa51-d3a9-438d-a7cd-f2117653aff1",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C56",
+      "claim": "Setting d\u2212 = 0 in the model disables presynaptic LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "By setting d\u2212 = 0 presynaptic LTD was disabled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about how eCB blockade was simulated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "cff25024-6167-41cf-a911-8846d240f391",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C57",
+      "claim": "Blocking eCB receptors reveals presynaptic LTP and enhances short-term depression.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals presynaptic LTP and enhances short-term depression (Figure 1\u2014figure supplement 3), consistent with experimental evidence (Sj\u00f6str\u00f6m et al., 2007), as the drugs used are likely to block presynaptic eCB receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model simulations that is consistent with cited experimental evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "bd26ea36-6727-4649-91d7-07e045c02477",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C58",
+      "claim": "Blocking NO decreases LTP but does not affect short-term synaptic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, blocking NO decreases LTP but does not affect short-term synaptic dynamics (Sj\u00f6str\u00f6m et al., 2007) (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge supported by a citation and shown in a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b57ac9dc-b1ed-4b17-ab9f-5ff1ddad5fa9",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C59",
+      "claim": "NO blockade was simulated by setting y+ = 0, so that both presynaptic components were absent.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated this by setting y+ = 0, so that both presynaptic components were absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about how NO blockade was simulated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "e8fe2904-7cbd-4fc8-a018-ce115fc1afff",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C60",
+      "claim": "The release of neurotransmitter was assumed to follow a standard binomial model.",
+      "claim_type": "EXPLICIT",
+      "source": "The release of neurotransmitter was assumed to follow a standard binomial model (Del Castillo and Katz, 1954)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the model used, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "69c29adf-b81a-4d5d-8dbe-659cfa24c2e1",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C62",
+      "claim": "The number of release sites N is believed to change only after a few hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of release sites N is believed to change only after a few hours (Bolshakov et al., 1997; Saez and Friedlander, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "1032d525-f844-4938-a7a5-ea3fde747709",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C63",
+      "claim": "The slice synaptic plasticity experiments lasted only up to 1.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "As the slice synaptic plasticity experiments analysed here lasted only up to 1.5 hr (Sj\u00f6str\u00f6m et al., 2001) and we were interested in the relative changes we assumed constant N = 5.5 in our analysis below, as estimated in Markram et al. (1997) using data from the same connection type we used to fit our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental data used, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "4024c8a0-ecdf-4f8c-8067-d5c53f678c00",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C64",
+      "claim": "N was assumed constant at 5.5 in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As the slice synaptic plasticity experiments analysed here lasted only up to 1.5 hr (Sj\u00f6str\u00f6m et al., 2001) and we were interested in the relative changes we assumed constant N = 5.5 in our analysis below, as estimated in Markram et al. (1997) using data from the same connection type we used to fit our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about an assumption made in the analysis, based on cited estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "5adb546c-ab07-45e1-b211-a77c146bea38",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C65",
+      "claim": "Equations 21, 22 were used to estimate P and q from in vitro plasticity data.",
+      "claim_type": "EXPLICIT",
+      "source": "Equations 21, 22 were used to estimate P and q from in vitro plasticity data (see above), respectively (dataset deposited at Dryad data repository at http://dx.doi.org/10.5061/dryad.p286g [Costa et al., 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about data analysis, with reference to a data repository.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "71d68461-d3de-4452-b0f1-fb8217163300",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C66",
+      "claim": "There are minor differences in the mean weights compared to previously published values due to full reanalysis of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that because the data had to be reanalized in full there are minor differences in the mean weights previously published (Sj\u00f6str\u00f6m et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a note about differences between the current analysis and previously published results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "715ab773-6f52-4f3f-869c-cbfa7a90984c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C67",
+      "claim": "The P and q extraction method was verified by analysing short-term plasticity experiments with pharmacological manipulation of presynaptic release or of postsynaptic gain.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified our P and q extraction method by analysing short-term plasticity experiments with pharmacological manipulation of presynaptic release or of postsynaptic gain (Figure 1\u2014figure supplement 2A, Sj\u00f6str\u00f6m et al., 2003), and experiments with pharmacological blockade of pre- or postsynaptic long-term plasticity (Figure 1\u2014figure supplement 2B, Sj\u00f6str\u00f6m et al., 2007) (Figure 1\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about validation of the extraction method using experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "7aa2f32a-b25e-4347-b01b-164d84a73217",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C68",
+      "claim": "Long-term changes in P but not in q were inversely correlated with changes in paired-pulse ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, long-term changes in P but not in q were inversely correlated with changes in paired-pulse ratio, as expected (Figure 1\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the data analysis that matches expectations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "3d43f52f-6df3-4103-ac8c-08a07dbf2ef9",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C69",
+      "claim": "The binomial-distribution-based approach for extracting P and q is supported by experimental evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results lend experimental support to our binomial-distribution-based approach for extracting P and q to tune changes in the pre- and postsynaptic modifications of our unified STDP model (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the validation analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "e3591290-bd81-4b90-8c87-ee1bf13496c8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C70",
+      "claim": "The effective P and q were extracted from in vivo data obtained by Froemke et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted the effective P and q from the in vivo data obtained by Froemke et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about analysis of published experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "09f63485-0f4d-4714-b11d-04fe4c4205c8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C71",
+      "claim": "A binomial model was used to obtain estimators for the variability measure v = q (1 \u2212 P) and the mean \u03bc = PqN.",
+      "claim_type": "EXPLICIT",
+      "source": "Again using a binomial model, we obtained estimators for their variability measure given by v = q (1 \u2212 P) and the mean by \u03bc = PqN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "30e9cd22-7e47-424a-b8dc-091d50a72ac3",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C72",
+      "claim": "The initial P was set to 0.5 to ease comparison with simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "To ease comparison with our simulations we set the initial P to the same initial condition used in our simulations P = 0.5 (Costa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about parameter choice for analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "7cb7131b-4951-4f10-bedd-7af0bb8961f2",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C73",
+      "claim": "After pairing, both pre- and postsynaptic factors P and q were allowed to change, while N was fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "For the after pairing data we allowed both pre- and postsynaptic factors P and q to change, while N was fixed to the values extracted before pairing (Bolshakov et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the analysis approach, with a citation supporting the assumption about N.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "cb4b6845-f393-4094-85fa-eccb08ad6d01",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C78",
+      "claim": "The experimentally obtained q was scaled such that before plasticity it was 1 to ease comparison with simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "To ease comparison with the postsynaptic factor in the simulations we scaled the experimentally obtained q such that before plasticity it was 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about data normalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "30a574fe-913d-45b1-956f-a47082c4a11c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C79",
+      "claim": "Models where both P and q change had lower variability estimation error compared to models where only one factor changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared models where we allowed both P and q to change or only one of them, the lower variability estimation error was obtained by the one where both factors change (Figure 2\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "3e4a8bb1-8f17-41d6-97c4-cb8ad41ca38e",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C83",
+      "claim": "After unified STDP, the first response has a higher amplitude and the second one a much lower amplitude due to synaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "After unified STDP the first response has a higher amplitude and the second one a much lower amplitude due to synaptic depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "0d345964-4cd2-4ec9-af59-99e612b5881a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C84",
+      "claim": "Combined with background noise, the SNR can drop when the second or further responses are included.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the background noise, the SNR can drop when the second or further responses are included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a phenomenon observed in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b1f74415-ab67-4a09-b77b-d775e2890094",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C85",
+      "claim": "The SNR of the summed response will always be larger than when only postsynaptic modifications are made.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the SNR of the summed response will always be larger than when only postsynaptic modifications are made (see Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model analysis shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "daef3eab-481d-4ac0-943e-96e63d447fcb",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C86",
+      "claim": "The SNR advantage of unified plasticity holds for any frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "This holds for any frequency, Figure 2\u2014figure supplement 2C and carries over to an information theoretic analysis of the response, Figure 2\u2014figure supplement 2D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "93a75936-1e65-4510-b302-fe4341f68069",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C87",
+      "claim": "ROC analysis was used to compute the false alarm and detection probability of the first postsynaptic response.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we used ROC analysis to compute the false alarm and detection probability of the first postsynaptic response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "9fd9935a-1037-48b8-a77f-0e77fc10541a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C88",
+      "claim": "The overall discriminability was assessed using pdiscrimination, which is the area under the ROC curve (AUC).",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the overall discriminability, we used pdiscrimination, which is the area under the ROC curve (AUC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the discriminability measure used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "69827bba-8d82-4a48-9ded-2ca17788e605",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C89",
+      "claim": "The AUC was computed by integrating over the ROC curve using the trapezoid method.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC was computed by integrating over the ROC curve using the trapezoid method (see Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about the computation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "ef3ac8de-7760-4786-84d1-274811371e2a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C90",
+      "claim": "For receptive field development simulations, a feedforward network with 100 presynaptic neurons and a single integrate-and-fire postsynaptic neuron was used.",
+      "claim_type": "EXPLICIT",
+      "source": "For the receptive field development simulations, we used a feedforward network with 100 presynaptic neurons j with Poisson statistics and a single integrate-and-fire postsynaptic neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the network architecture used in simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "0dd8dd3d-7bd1-4c9f-a614-8ece68417cbd",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C91",
+      "claim": "The postsynaptic neuron was modelled as an adaptive exponential integrate-and-fire neuron model.",
+      "claim_type": "EXPLICIT",
+      "source": "The postsynaptic neuron was modelled as an adaptive exponential integrate-and-fire neuron model (Brette and Gerstner, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the neuron model used, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "c74300a9-18cf-4302-89f0-8c0d2f7659ed",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C92",
+      "claim": "Model parameters were as reported in Brette and Gerstner (2005) and Badel et al. (2008).",
+      "claim_type": "EXPLICIT",
+      "source": "Model parameters were as reported in Brette and Gerstner (2005); Badel et al. (2008) and synapses were modelled as input currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about parameter sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "84add189-deaf-4b3d-8620-46af269e29d1",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C94",
+      "claim": "The maximum and minimum rates were set to \u03c1max = 50 Hz and \u03c1min = 3 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c1max and \u03c1min are the maximum and minimum rates, and were set to \u03c1max = 50 Hz and \u03c1min = 3 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about parameter values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "f4ee6d37-b280-4581-975f-27ebeb5e1df9",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C95",
+      "claim": "d\u2212, d+ and c+ were scaled by a factor 0.15 to yield a smoother receptive field development.",
+      "claim_type": "EXPLICIT",
+      "source": "We scaled d\u2212, d+ and c+ by a factor 0.15 to yield a smoother receptive field development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about parameter scaling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8feef6cb-b1f4-4d06-8a05-64cf66e71500",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C96",
+      "claim": "q was bounded between 0 nA and 20 nA so that the synaptic input is appropriately scaled for the neuron model used.",
+      "claim_type": "EXPLICIT",
+      "source": "q was bounded between 0 nA and 20 nA, so that the synaptic input is appropriately scaled for the neuron model used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about parameter bounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "105322dd-12ee-4092-9ad5-a570e5ebe6d0",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C97",
+      "claim": "The network was simulated for 100 s to achieve convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "The network was simulated for 100 s to achieve convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about simulation duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "ee7c3938-0068-48bd-8fcd-5cd675603a43",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C98",
+      "claim": "For the memory savings experiment, two receptive field positions were interleaved.",
+      "claim_type": "EXPLICIT",
+      "source": "For the memory savings experiment, we interleaved two receptive field positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "29e62c06-0d93-4b89-a881-b9994598c81b",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C99",
+      "claim": "Results for receptive development and memory savings were averaged over 10 runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Results for receptive development and memory savings were averaged over 10 runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about data averaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b54aca21-1d9f-48f6-8c18-51ff12fe9657",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C100",
+      "claim": "The response of the postsynaptic neuron was assessed by presenting each stimulus alone with long-term synaptic plasticity inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of the postsynaptic neuron (Figure 3C) was assessed by presenting each stimulus alone with long-term synaptic plasticity inactive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about response assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8d13373e-e51e-4032-bc66-185b18de2c20",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C101",
+      "claim": "Receptive field simulations were implemented in simulator Brian 1.41.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptive field simulations were implemented in simulator Brian 1.41 (Goodman and Brette, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the simulation software used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "6d1c75f7-f1a3-401a-8f9c-377f7e59093c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C102",
+      "claim": "Code for running and plotting the savings experiment is available online at http://modeldb.yale.edu/184487.",
+      "claim_type": "EXPLICIT",
+      "source": "Code for running and plotting the savings experiment is available online (http://modeldb.yale.edu/184487).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "d5b64312-b0f8-4052-bd5d-433223479b4f",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C103",
+      "claim": "Statistical comparisons were made with Student's t-test for equal means if data was normally distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical comparisons were made with Student's t-test for equal means, if data was normally distributed as assessed using Kolmogorov\u2013Smirnov test, Mann\u2013Whitney U non-parametric test was used otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b05684fa-a088-44d6-8695-3f95282a0ed0",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C104",
+      "claim": "Mann\u2013Whitney U non-parametric test was used for non-normally distributed data.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical comparisons were made with Student's t-test for equal means, if data was normally distributed as assessed using Kolmogorov\u2013Smirnov test, Mann\u2013Whitney U non-parametric test was used otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "d0b29491-9125-45b9-88ae-731d65c0de7c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C105",
+      "claim": "For multiple comparisons, ANOVA was applied for normally distributed data.",
+      "claim_type": "EXPLICIT",
+      "source": "For multiple comparisons we applied ANOVA or Kruskal\u2013Wallis test for normally or non-normally distributed data, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "2ddd2ab2-ea21-4588-8bfc-a1204492e3f8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C106",
+      "claim": "For multiple comparisons, Kruskal\u2013Wallis test was applied for non-normally distributed data.",
+      "claim_type": "EXPLICIT",
+      "source": "For multiple comparisons we applied ANOVA or Kruskal\u2013Wallis test for normally or non-normally distributed data, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "a7698221-949a-4e1c-8eef-e566006f4603",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "claim_id": "C107",
+      "claim": "For correlation analysis, the Spearman's coefficient was used together with one-tailed Student's t-test.",
+      "claim_type": "EXPLICIT",
+      "source": "For correlation analysis the Spearman's coefficient was used together with one-tailed Student's t-test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3310f593-92b5-4814-802f-c89050aca2a8",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors implemented the Tsodyks-Markram model with facilitation to simulate short-term synaptic plasticity, using standard parameter values for pyramidal-to-pyramidal synapses (D=200ms, F=50ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 describe the implementation of a well-established short-term plasticity model with appropriate parameter values cited from the literature. The mathematical formulation is standard and the parameter choices are justified by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "bc4457dd-7a72-41d1-8822-2dd3f3db2c4c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors base their model on established biological mechanisms: presynaptic LTD mediated by eCB signaling, postsynaptic LTP mediated by AMPA receptor changes, and presynaptic LTP mediated by NO signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 cite multiple experimental studies establishing these mechanisms in layer-5 pyramidal cells. These are well-documented biological facts that appropriately motivate the model design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed a unified triplet STDP model with three synaptic traces that modifies both presynaptic (P) and postsynaptic (q) factors, with LTP requiring triplet interactions and presynaptic LTD not vanishing at low frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C35 describe a mathematically coherent model with biologically motivated constraints. The triplet structure is justified by citations and the frequency-dependent behavior matches experimental observations. The mathematical formulation is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "92b136f7-989b-4fe4-a9cb-4a95d6821851",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors added slow homeostatic scaling of the postsynaptic factor q to prevent unrealistic unbounded potentiation, with the timescale chosen to not affect experimental timescales but determine memory savings duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 justify the inclusion of homeostatic scaling based on biological realism and cite supporting literature. The parameter choice (\u03b1=0.075) is explicitly stated to be orders of magnitude faster than biological homeostasis, ensuring consistency with the experimental data used for fitting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "469ba306-8551-4fee-b63b-3ac8ba999cce",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model parameters were fitted to frequency- and timing-dependent STDP data from layer-5 pyramidal cells by minimizing mean squared error between model predictions and experimental measurements of P and q separately.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 describe a rigorous fitting procedure using appropriate experimental data. The choice to fit P and q separately rather than total weight w is methodologically sound given the model structure. Initial conditions and protocols match experimental procedures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "a45606f2-51f1-49e1-9570-b9b3373e84b3",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model without additional fitting captured pharmacological blockade experiments: eCB blockade revealed presynaptic LTP and enhanced depression, while NO blockade decreased LTP without affecting short-term dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C59 demonstrate that the model generalizes to independent experimental manipulations without additional parameter fitting. The simulation approach (setting relevant parameters to zero) is appropriate, and the results match cited experimental observations, providing strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "4918596e-9a47-4684-987c-7afb510498e1",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors used a binomial release model to extract P and q from experimental data, assuming constant N=5.5 release sites, and validated this approach through pharmacological manipulations and correlation with paired-pulse ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C69 describe a standard approach for estimating synaptic parameters. The assumption of constant N is justified by the experimental timescale (<1.5hr) and cited literature. Multiple validation analyses (C67-C68) support the extraction method, with changes in P but not q correlating with paired-pulse ratio as expected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "050a48d9-a197-4e7e-b700-7b94e5614b08",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of in vivo data from Froemke et al. (2013) showed that models allowing both P and q to change had lower variability estimation error than models with only one changing factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C79 describe reanalysis of published in vivo data using the same binomial framework. The model comparison (C79) provides quantitative support for unified plasticity. The methodological choices (fixing initial P=0.5, holding N constant) are reasonable and clearly justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "c8c8f192-8705-4aa8-80e0-5e06992bc2d9",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Unified pre- and postsynaptic STDP develops receptive fields with reduced variability and improved discriminability compared to postsynaptic-only plasticity, matching recent sensory perception experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 represent primary findings supported by the modeling results and comparison with Froemke et al. (2013) data. The analysis of in vivo data (C70-C79) and SNR calculations (C83-C86) provide quantitative support for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "2a066592-0005-4999-976b-b02ad8b79d8e",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The unified plasticity model produces higher signal-to-noise ratio in summed responses compared to postsynaptic-only plasticity across all frequencies, as assessed by ROC analysis and information theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 describe analytical results showing SNR advantages of unified plasticity. The mathematical analysis is sound, using appropriate measures (ROC, AUC, information theory). The result that SNR advantages hold across frequencies strengthens the generality of the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "125bd81a-7569-44ee-a8bf-04ada724ce7c",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Learning with unified plasticity leaves a hidden postsynaptic memory trace (elevated q) that enables fast relearning, providing a cellular substrate for memory savings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 describe a key prediction of the model supported by simulations (C98-C100). The mechanism is clear: slow homeostatic normalization of q creates a persistent trace. Claim C43 appropriately notes that the timescale of normalization determines savings duration, acknowledging a key parameter dependency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Receptive field development was simulated using a feedforward network with 100 Poisson presynaptic neurons and an adaptive exponential integrate-and-fire postsynaptic neuron, with results averaged over 10 runs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C102 describe appropriate network architecture and simulation methods. Parameter choices are justified (C92, C94), scaling factors are documented (C95), and code availability (C102) supports reproducibility. The 10-run average (C99) provides reasonable statistical sampling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "b05086a6-7e44-4223-b9fa-a3cb57e8c12a",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Presynaptic plasticity has essential roles missed by postsynaptic-only models, suggesting an experience-dependent distribution of pre- and postsynaptic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 represent high-level conclusions supported by the collective modeling results (reduced variability, improved discriminability, memory savings). Claim C8 is appropriately cautious ('suggest') as it extrapolates from the model to broader principles. The evidence from multiple analyses supports these interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    },
+    {
+      "id": "8ea46549-2f71-4a42-8251-ad9c952ad48b",
+      "content_id": "ab186349-1682-4b4c-8bda-a5d8fe1d1400",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Statistical analyses used appropriate parametric (t-test, ANOVA) or non-parametric (Mann-Whitney U, Kruskal-Wallis) tests based on normality assessment, with Spearman correlation for correlation analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C107 describe standard and appropriate statistical methods. The use of normality testing to select between parametric and non-parametric tests is methodologically sound. The choice of one-tailed tests for correlations (C107) is appropriate for directional hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:52:53.766511Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ba25f92d-99e1-476d-bd7b-d7c5740b3227",
+      "result_id": "3310f593-92b5-4814-802f-c89050aca2a8"
+    },
+    {
+      "claim_id": "dc9d24e3-a79f-4175-a483-24844c966441",
+      "result_id": "3310f593-92b5-4814-802f-c89050aca2a8"
+    },
+    {
+      "claim_id": "2d40f507-f2a2-4d89-bfb3-05e81c0fff2b",
+      "result_id": "3310f593-92b5-4814-802f-c89050aca2a8"
+    },
+    {
+      "claim_id": "16c0836b-ac70-448a-aba4-30ccc5b1fcd6",
+      "result_id": "3310f593-92b5-4814-802f-c89050aca2a8"
+    },
+    {
+      "claim_id": "074889d3-b380-4129-95be-795344f8eef3",
+      "result_id": "3310f593-92b5-4814-802f-c89050aca2a8"
+    },
+    {
+      "claim_id": "71ab74ee-e4ad-4b8f-affd-7b3848fdbbd8",
+      "result_id": "3310f593-92b5-4814-802f-c89050aca2a8"
+    },
+    {
+      "claim_id": "7c1f44e4-6c8f-45e6-8b2f-22c7e7b40945",
+      "result_id": "bc4457dd-7a72-41d1-8822-2dd3f3db2c4c"
+    },
+    {
+      "claim_id": "500ea681-5f94-4974-9afb-9cda3e1b7b5d",
+      "result_id": "bc4457dd-7a72-41d1-8822-2dd3f3db2c4c"
+    },
+    {
+      "claim_id": "1df694c0-26dc-49d8-becd-be88d208aa7d",
+      "result_id": "bc4457dd-7a72-41d1-8822-2dd3f3db2c4c"
+    },
+    {
+      "claim_id": "ae3f946c-9f44-4f35-a975-c5cccbf07e75",
+      "result_id": "bc4457dd-7a72-41d1-8822-2dd3f3db2c4c"
+    },
+    {
+      "claim_id": "8d4e1cab-e6d3-4607-b325-c2cb75f55cdb",
+      "result_id": "bc4457dd-7a72-41d1-8822-2dd3f3db2c4c"
+    },
+    {
+      "claim_id": "2ced4b57-4a5b-4019-86ff-0ecb0314496d",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "8c8d09d2-eb4e-4370-8209-239bd4047ac6",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "b162172c-ec03-48ac-83b7-73c7992e40dd",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "79bcc72f-2c14-4b54-b098-145d4e2e1efa",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "8f9ccb1c-6705-4522-b8b5-3508d6a5bd79",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "f21e1663-e154-4290-a051-171c12cfc961",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "5658578c-ccc6-4c1b-9164-e4c5c0d2e3b3",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "bf68c65b-9f91-4f3b-b9b1-7eb39e125d03",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "cf252f0c-16ee-4c86-9abf-601766cd9202",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "b32c56ad-39cd-44c6-bb54-af6389c40416",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "5cdd03b9-5843-4f3e-81c9-798ec50dc299",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "daa2bbbf-8b9b-4897-b8bc-0dcd4c50d2cb",
+      "result_id": "6e6aa42c-20c6-4c7a-8f75-3c54d085b030"
+    },
+    {
+      "claim_id": "590f8c87-88e8-45c9-84a9-2e8d6e83a366",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "044736e2-18dd-423a-a923-e9e9df3e922c",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "be355144-6ccc-46d1-9205-c617f69e066f",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "36785fc3-2d11-47ff-929b-ccdd96d8d356",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "8f6a7397-5003-4a55-aafe-ce25a7b2965a",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "d746530b-6699-4903-ad29-3a965a176600",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "8ab83aa3-74f1-4ae3-b7ca-a1cc010cbb8c",
+      "result_id": "92b136f7-989b-4fe4-a9cb-4a95d6821851"
+    },
+    {
+      "claim_id": "bd30ac80-0d05-4237-8dc9-96589b01ed30",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "de665955-f938-45d8-b5c6-f3a744d79497",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "9c495c8f-8267-4d36-bcfb-701a0e1976d8",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "8450eb80-1a4a-4b1f-87b4-a097265b59f9",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "892631db-63ce-4630-a7df-25a24710c1ef",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "91b06226-05ec-4c84-a99c-2b18d3e6d98b",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "638246ae-6e65-44b0-9df5-7424aab1e11b",
+      "result_id": "469ba306-8551-4fee-b63b-3ac8ba999cce"
+    },
+    {
+      "claim_id": "b778c33a-3175-43a8-b111-16a9614fde4a",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "579c98ce-44f5-4bf6-b279-c01422e7cf72",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "f7a51a1b-90f4-490f-b55e-4e1181d81c27",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "948b6d9f-9216-49ec-b997-f9d910cffadd",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "6b1ab4f6-c4b3-4da8-9f88-09d0287cccf7",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "74a6fa51-d3a9-438d-a7cd-f2117653aff1",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "cff25024-6167-41cf-a911-8846d240f391",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "bd26ea36-6727-4649-91d7-07e045c02477",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "b57ac9dc-b1ed-4b17-ab9f-5ff1ddad5fa9",
+      "result_id": "a45606f2-51f1-49e1-9570-b9b3373e84b3"
+    },
+    {
+      "claim_id": "e8fe2904-7cbd-4fc8-a018-ce115fc1afff",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "69c29adf-b81a-4d5d-8dbe-659cfa24c2e1",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "1032d525-f844-4938-a7a5-ea3fde747709",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "4024c8a0-ecdf-4f8c-8067-d5c53f678c00",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "5adb546c-ab07-45e1-b211-a77c146bea38",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "71d68461-d3de-4452-b0f1-fb8217163300",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "715ab773-6f52-4f3f-869c-cbfa7a90984c",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "7aa2f32a-b25e-4347-b01b-164d84a73217",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "3d43f52f-6df3-4103-ac8c-08a07dbf2ef9",
+      "result_id": "4918596e-9a47-4684-987c-7afb510498e1"
+    },
+    {
+      "claim_id": "e3591290-bd81-4b90-8c87-ee1bf13496c8",
+      "result_id": "050a48d9-a197-4e7e-b700-7b94e5614b08"
+    },
+    {
+      "claim_id": "09f63485-0f4d-4714-b11d-04fe4c4205c8",
+      "result_id": "050a48d9-a197-4e7e-b700-7b94e5614b08"
+    },
+    {
+      "claim_id": "30e9cd22-7e47-424a-b8dc-091d50a72ac3",
+      "result_id": "050a48d9-a197-4e7e-b700-7b94e5614b08"
+    },
+    {
+      "claim_id": "7cb7131b-4951-4f10-bedd-7af0bb8961f2",
+      "result_id": "050a48d9-a197-4e7e-b700-7b94e5614b08"
+    },
+    {
+      "claim_id": "cb4b6845-f393-4094-85fa-eccb08ad6d01",
+      "result_id": "050a48d9-a197-4e7e-b700-7b94e5614b08"
+    },
+    {
+      "claim_id": "30a574fe-913d-45b1-956f-a47082c4a11c",
+      "result_id": "050a48d9-a197-4e7e-b700-7b94e5614b08"
+    },
+    {
+      "claim_id": "896e2421-b024-4342-82f2-08b3974dd735",
+      "result_id": "c8c8f192-8705-4aa8-80e0-5e06992bc2d9"
+    },
+    {
+      "claim_id": "95510f59-1e0a-4175-8e71-5c5c56a40c09",
+      "result_id": "c8c8f192-8705-4aa8-80e0-5e06992bc2d9"
+    },
+    {
+      "claim_id": "edc01b6f-89b1-44ec-b4c2-399a5655a456",
+      "result_id": "c8c8f192-8705-4aa8-80e0-5e06992bc2d9"
+    },
+    {
+      "claim_id": "3e4a8bb1-8f17-41d6-97c4-cb8ad41ca38e",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "0d345964-4cd2-4ec9-af59-99e612b5881a",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "b1f74415-ab67-4a09-b77b-d775e2890094",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "daef3eab-481d-4ac0-943e-96e63d447fcb",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "93a75936-1e65-4510-b302-fe4341f68069",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "9fd9935a-1037-48b8-a77f-0e77fc10541a",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "69827bba-8d82-4a48-9ded-2ca17788e605",
+      "result_id": "2a066592-0005-4999-976b-b02ad8b79d8e"
+    },
+    {
+      "claim_id": "38074587-1de4-4541-a0a9-1fa96436fd5b",
+      "result_id": "125bd81a-7569-44ee-a8bf-04ada724ce7c"
+    },
+    {
+      "claim_id": "0fd886c8-9fe8-42f1-b3a2-ae4ccc0735a6",
+      "result_id": "125bd81a-7569-44ee-a8bf-04ada724ce7c"
+    },
+    {
+      "claim_id": "8ab83aa3-74f1-4ae3-b7ca-a1cc010cbb8c",
+      "result_id": "125bd81a-7569-44ee-a8bf-04ada724ce7c"
+    },
+    {
+      "claim_id": "ef3ac8de-7760-4786-84d1-274811371e2a",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "0dd8dd3d-7bd1-4c9f-a614-8ece68417cbd",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "c74300a9-18cf-4302-89f0-8c0d2f7659ed",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "84add189-deaf-4b3d-8620-46af269e29d1",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "f4ee6d37-b280-4581-975f-27ebeb5e1df9",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "8feef6cb-b1f4-4d06-8a05-64cf66e71500",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "105322dd-12ee-4092-9ad5-a570e5ebe6d0",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "ee7c3938-0068-48bd-8fcd-5cd675603a43",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "29e62c06-0d93-4b89-a881-b9994598c81b",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "b54aca21-1d9f-48f6-8c18-51ff12fe9657",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "8d13373e-e51e-4032-bc66-185b18de2c20",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "6d1c75f7-f1a3-401a-8f9c-377f7e59093c",
+      "result_id": "94f8d2e3-7cc8-428a-8133-429d3c32a13a"
+    },
+    {
+      "claim_id": "097ef8cb-bbaa-4576-881d-ec0d96dbfce8",
+      "result_id": "b05086a6-7e44-4223-b9fa-a3cb57e8c12a"
+    },
+    {
+      "claim_id": "4cf43323-42c6-4d23-ab17-cf88fa510d6c",
+      "result_id": "b05086a6-7e44-4223-b9fa-a3cb57e8c12a"
+    },
+    {
+      "claim_id": "d5b64312-b0f8-4052-bd5d-433223479b4f",
+      "result_id": "8ea46549-2f71-4a42-8251-ad9c952ad48b"
+    },
+    {
+      "claim_id": "b05684fa-a088-44d6-8695-3f95282a0ed0",
+      "result_id": "8ea46549-2f71-4a42-8251-ad9c952ad48b"
+    },
+    {
+      "claim_id": "d0b29491-9125-45b9-88ae-731d65c0de7c",
+      "result_id": "8ea46549-2f71-4a42-8251-ad9c952ad48b"
+    },
+    {
+      "claim_id": "2ddd2ab2-ea21-4588-8bfc-a1204492e3f8",
+      "result_id": "8ea46549-2f71-4a42-8251-ad9c952ad48b"
+    },
+    {
+      "claim_id": "a7698221-949a-4e1c-8eef-e566006f4603",
+      "result_id": "8ea46549-2f71-4a42-8251-ad9c952ad48b"
+    }
+  ],
+  "comparisons": []
+}

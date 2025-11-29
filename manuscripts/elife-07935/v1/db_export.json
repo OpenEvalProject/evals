@@ -1,0 +1,1594 @@
+{
+  "submission": {
+    "id": "4dee100e-1a0e-40f2-8f6a-a6a2f6a1a31b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:49:06.618132Z",
+    "updated_at": "2025-11-29T04:49:06.618132Z"
+  },
+  "content": [
+    {
+      "id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "submission_id": "4dee100e-1a0e-40f2-8f6a-a6a2f6a1a31b",
+      "content_type": "manuscript",
+      "content_text": "# Phenotypic states become increasingly sensitive to perturbations near a bifurcation in a synthetic gene network\n\n## Authors\n\n- Kevin Axelrod<sup>1</sup>\n- Alvaro Sanchez<sup>2</sup>\n- Jeff Gore<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Harvard University Graduate Program in Biophysics Cambridge United States\n2. Rowland Institute Harvard University Cambridge United States\n3. Department of Physics Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroorganisms often exhibit a history-dependent phenotypic response after exposure to a stimulus which can be imperative for proper function. However, cells frequently experience unexpected environmental perturbations that might induce phenotypic switching. How cells maintain phenotypic states in the face of environmental fluctuations remains an open question. Here, we use environmental perturbations to characterize the resilience of phenotypic states in a synthetic gene network near a critical transition. We find that far from the critical transition an environmental perturbation may induce little to no phenotypic switching, whereas close to the critical transition the same perturbation can cause many cells to switch phenotypic states. This loss of resilience was observed for perturbations that interact directly with the gene circuit as well as for a variety of generic perturbations-such as salt, ethanol, or temperature shocks-that alter the state of the cell more broadly. We obtain qualitatively similar findings in natural gene circuits, such as the yeast GAL network. Our findings illustrate how phenotypic memory can become destabilized by environmental variability near a critical transition.\n\n## Introduction\n\nMicrobes such as yeast and bacteria often adopt a specific phenotype in response to an environmental stimulus, and in many cases this phenotype can be retained even after the stimulus has been removed (Ozbudak et al., 2004; Acar et al., 2005; Hu et al., 2012; Williams et al., 2013). Stably storing such a phenotype can be critical for survival during adverse environmental changes (Gasch et al., 2000; Gasch and Werner-Washburne, 2002; Chen et al., 2003; Brauer et al., 2008). Several well-studied natural gene networks can be found in multiple phenotypic states depending on the history that the cells have experienced, notably including the yeast galactose utilization network and sporulation commitment in Bacillus subtilis (Acar et al., 2005; Igoshin et al., 2006). Additionally, synthetic biology aims to create de novo phenotypic memory storage devices, which could be used in applications such as tracking dynamics of the gut microbiome (Ajo-Franklin et al., 2007; Kotula et al., 2014). In spite of the importance of phenotypic memory in natural and synthetic gene circuits, little is known about how environmental perturbations might disrupt a cell's ability to stably adopt a specific phenotype.\n\nGiven that phenotypic memory often results from feedback loops within the cell (Ferrell and Machleder, 1998; Pomerening et al., 2003; Xiong and Ferrell, 2003; Angeli et al., 2004; Ozbudak et al., 2004), it is possible that this phenotypic memory will display characteristics of other complex systems that exhibit bistability, memory, and associated critical transitions or \u2018tipping points\u2019 that lead to sudden changes in the state of the system in response to small changes in the environment. A phenomenon that may be especially relevant to cellular memory is that complex systems near a critical transition experience a loss of resilience of their stable states to external perturbations (Dai et al., 2012). In particular, a system far from a critical transition may return to its original state following a perturbation, whereas closer to the critical transition the same environmental perturbation may cause the system to switch to an alternative stable state (e.g., collapse of a population [Dai et al., 2012]). The dynamics in the vicinity of the critical point are very slow on both sides of the critical point. Therefore, it is worth noting that a short lived perturbation that pushes the system past the critical point may also not cause switching if the perturbation is short enough, if it pushes it to a position that is close to the critical point, or both. This aforementioned loss of resilience near a critical transition results from a shrinking basin of attraction in the stability landscape (Scheffer et al., 2009). In the context of a gene network, this loss of resilience would manifest as an increasing sensitivity of phenotypic memory against environmental perturbations approaching the environmental condition in which cells would (deterministically) switch to a different phenotype. Our initial goal was to observe memory in a model gene circuit and then characterize the resilience of the phenotypic state against perturbations in the extracellular environment.\n\n## Results\n\nTo study this predicted loss of resilience, we first employed a synthetic genetic switch in budding yeast that has previously been shown to exhibit hysteresis and bistability (Gardner et al., 2000; Blake et al., 2006; Ellis et al., 2009; Wu et al., 2013). This toggle switch is composed of two mutually inhibitory transcription factors, LacI and TetR (Figure 1A). To enable tracking of the state of the cell, different color fluorescent proteins are expressed depending upon which of these transcriptional factors is highly expressed (mCherry and eGFP, hereafter referred to as \u2018RFP\u2019 and \u2018GFP\u2019). As external knobs to control the state of the cell, the inducer IPTG modulates the strength of repression of LacI, whereas ATc modulates the strength of repression of TetR.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig1-v1.jpg)\n\n**Figure 1.:** (A) A toggle switch consists of two mutually inhibitory transcription factors, two fluorescent readouts of the system state, and two small molecule inhibitors of the transcription factors. (B) Following growth in one of two histories, cells are then diluted into a range of ATc concentrations and propagated in culture for several days. Histogram counts are binned logarithmically. (C) The intensity of GFP fluorescence is plotted as a function of (ATc) for 11 different conditions for the high GFP history (green triangles) and high RFP history (red circles) after 92 hr of growth. The distributions are offset for ease of viewing. 20,000 events are collected, and then a narrow gate is drawn to select several hundred cells of roughly equal size. From this narrow gate, 50 cells at random are plotted. The region of memory is shaded in yellow.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Yeast cells were pre-grown in the GFP state (green triangles) or RFP state (red circles) and then transferred to a range of ATc concentrations. After 92 hr of growth, the fraction of cells that have switched from their history state to the alternative state is plotted vs ATc. Error bars represent the standard error from three different samples of Forward Scatter Area vs Side Scatter Area (FSC-A vs SSC-A). See Figure 2\u2014figure supplement 2 for details of how a gate is drawn.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cells were pre-grown in the high RFP state and then transferred to 40 \u03bcM IPTG and 2 ng/ml ATc. The fraction of cells remaining in a high RFP state is plotted as a function of time. The switching kinetics are more complicated than what one would expect from first-order kinetics. Error bars represent the standard error from three different samples of FSC-A vs SSC-A.\n\nAs a demonstration of how cellular memory operates in this gene network, one population of cells was pre-grown in IPTG to initialize the cells in a high GFP state (Figure 1B). A separate population of cells was pre-grown in ATc to initialize the cells in a high RFP state. We then transferred the populations to a range of ATc concentrations and monitored the dynamics over several days using flow cytometry. All cultures were grown with a fixed concentration of IPTG (40 \u03bcM), which served as an orthogonal control variable for later experiments. For high and low concentrations of ATc, cells converged to a state that was independent of the history they were pre-grown in (Figure 1B,C). However, for intermediate concentrations of ATc there was little to no switching of the phenotypic state of the cells even after 260 hr of growth and over 80 cell divisions. The mutual repression in this toggle switch therefore indeed allows for remarkably stable cellular memory for intermediate ATc concentrations. As expected (Acar et al., 2005), the lifetime of the states decreases approaching the critical transition at which switching is deterministic (hereafter, we refer to this point as the \u2018critical transition\u2019 or \u2018phenotypic switch\u2019), although interestingly we observe non-exponential switching kinetics, potentially indicating the presence of metastable states in the gene network (Figure 1\u2014figure supplements 1, 2). This decrease in lifetime is one manifestation of deteriorating cellular memory approaching the critical transition, but it is not obvious whether in ATc concentrations with long lifetimes (i.e., strong memory) the cells are also able to retain their memory in the face of environmental perturbations.\n\nIn analogy to other complex systems, we hypothesized that phenotypic states in this gene network might become increasingly sensitive to perturbations near a critical transition (Van Nes and Scheffer, 2007). This expectation arises because the state's basin of attraction shrinks as the stable and unstable fixed points approach one another (Figure 2A). Brief environmental perturbations will push the system out of equilibrium. If the system is far from the critical transition it will return to its original state after the perturbation is removed (Figure 2B). However, close to the critical transition, the same perturbation might cause the system to cross the basin boundary, thus causing the cell to switch phenotypic states. Therefore, phenotypic states are expected to lose resilience to environmental perturbations near a critical transition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig2-v1.jpg)\n\n**Figure 2.:** (A) A schematic of how the effective potential changes and the basin of attraction shrinks approaching the critical transition. The size of the basin of attraction is determined by the distance between the stable and unstable fixed points. (B) Far from the critical transition, a perturbation temporarily depresses the value of GFP; the system recovers to its initial state after the perturbation is removed. Close to the critical transition, the same perturbation causes the system to cross the basin boundary into the alternative state. (C) 92 hr after history washout, cells at different distances from the phenotypic switch were exposed to a reduction in (IPTG) from 40 \u03bcM to 0.1 \u03bcM. Cells grew for 24 hr in this new condition. IPTG was then restored to 40 \u03bcM and cells were allowed to recover for 24 hr. Control cells were propagated with (IPTG) held fixed at 40 \u03bcM. (D) The fraction of cells that switched into a high RFP state in response to the perturbation is plotted as a function of distance from the tipping point. Two different strength perturbations, a weak (10 \u03bcM) and a strong (0.1 \u03bcM) are plotted. Error bars in D represent the standard error of three different samplings from forward scatter area (FSC-A) vs side scatter area (SSC-A) (see Figure 2\u2014figure supplement 2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cells were pre-grown in the RFP state. 92 hr after history washout, cells at different distances from the phenotypic switch were exposed to an increase in (IPTG) from 40 \u03bcM to 360 \u03bcM. Cells grew for 24 hr in this new condition. IPTG was then restored to 40 \u03bcM and cells were allowed to recover for 24 hr. The fraction of cells that switched into a high GFP state in response to the perturbation is plotted as a function of (ATc). Control cells were propagated with (IPTG) held fixed at 40 \u03bcM. Error bars represent the standard error of three different samplings from forward scatter area (FSC-A) vs side scatter area (SSC-A).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** 10,000 events are collected on the flow cytometer, and the forward scatter area and side scatter area are plotted for each event. A narrow gate (shown in black dashed lines) is drawn to select a subset of cells (approximately 200) for analysis. This effectively decouples fluorescence from cell size, so that differences in fluorescence are due to differences in expression of fluorescent proteins. Error bars in most plots are determined by analyzing three randomly chosen gates and calculating the standard error.\n\nTo test this theoretically proposed loss of resilience we perturbed cells at different distances from the critical transition (i.e., different ATc concentrations) and measured how likely the cells were to switch into the alternative phenotypic state as a result of environmental perturbations. We examined two classes of perturbations, \u2018directional\u2019 (in which the perturbation increased the probability of switching into the alternative state by inhibiting one or another of the two transcription factors that form the toggle switch) and \u2018generic\u2019 (in which the interaction between the toggle switch and the perturbation was not immediately obvious).\n\nTo explore the directional perturbation we prepared cells in the GFP state by pre-growing them in IPTG. We then transferred the populations to multiple ATc concentrations for 4 days, leaving the cells in the high GFP state but at varying distances from the critical transition. At the end of the fourth day, the cells were then perturbed by decreasing the concentration of IPTG for 1 day before returning the IPTG concentration to its original value. Far from the critical transition (2 ng/ml ATc), the IPTG perturbation caused almost no cells to switch their phenotypic state (Figure 2C). However, close to the critical transition (8 ng/ml ATc), the perturbation caused a great majority of the cells to switch into a high RFP state. Even after the perturbation was removed and the initial conditions were restored, many cells remained in a high RFP state. As expected, the severity of the environmental perturbation (i.e., the magnitude of reduction in IPTG) correlated with the fraction of cells that switched states in response to the perturbation (Figure 2D). Importantly, there was negligible switching (\u223c0.5%) into the high RFP state for control cells grown in constant IPTG concentrations, demonstrating that the phenotypic switching was indeed caused by the perturbation. Moreover, the lack of phenotypic switching in the absence of the perturbation also indicates that in all of these conditions the traditional measure of cellular memory\u2014the lifetime of the state\u2014would classify all of these conditions as being stable with a high degree of cellular memory. Similar results were observed in the other direction, as cells pre-grown in the RFP state approach the critical transition associated with sudden switching to the GFP state (Figure 2\u2014figure supplement 1). Thus, phenotypic states in the toggle switch lose resilience to directional perturbations near a critical transition.\n\nCellular memory in development and cell cycle progression must be resilient against a wide range of different environmental perturbations. Given this, we wanted to explore whether memory in the toggle switch would lose resilience against generic perturbations approaching a critical transition. Cells from a high GFP history at different distances from the phenotypic switch (2, 4, and 8 ng/ml ATc) were perturbed in several different ways for 24 hr: heat stress, osmotic stress with sodium chloride, ethanol stress, and a glucose pulse. Remarkably, we observed a loss of resilience against all four of these generic perturbations (Figure 3A,B). Far from the critical transition (2 ng/ml ATc), there was little to no phenotypic switching in response to any of these \u2018generic\u2019 perturbations. However, close to the critical transition (8 ng/ml ATc) we observed nearly complete switching in all perturbations, despite the fact that there was essentially no switching (\u223c0.5%) in the absence of the perturbations. At a given distance from the phenotypic switch, increasing the strength of a generic perturbation increased the probability that cells would switch into the alternative state (Figure 3\u2014figure supplement 1). The switching induced by the glucose perturbation can perhaps be understood by the fact that glucose shuts down expression of the entire system (LacI, TetR, GFP, and RFP) via catabolite repression of a GAL1 upstream activation sequence, thus pushing the cells toward a low GFP and low RFP state (Gardner et al., 2000; Ellis et al., 2009). The other three perturbations have much broader effects on the cell with no obvious connection to the toggle switch network being probed in our experiments. Cellular memory can therefore degrade near a critical transition for a wide range of different environmental perturbations (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cells were pre-grown in the high GFP state. 92 hr after history washout, cells at 2, 4, and 8 ng/ml ATc were exposed to an osmotic stress (600 mM NaCl). Cells grew for 24 hr in this new condition. The osmotic stress was then removed and cells were allowed to recover for 24 hr. Control cells were propagated with NaCl held constant throughout the whole time course. Growth media contains trace NaCl (2 mM). (B) The fraction of cells that switched into a high RFP state is plotted as a function of [ATc]. During the 24 hr perturbation period, cells were exposed to 6% ethanol (pink), 600 mM NaCl (peach), 37\u00b0C (violet), 0.2% glucose (blue), or no perturbation (teal). Error bars in B represent the standard error of three different samplings from FSC-A vs SSC-A. All results were replicated in a second independent experiment several weeks later (see Figure 3\u2014figure supplement 2). (C) A schematic of the key findings from the perturbation experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Yeast cells expressing the toggle switch were pre-grown in a high GFP state and then transferred to an environmental condition that is close to the phenotypic switch ([ATc] = 8 ng/ml). Cells were perturbed for 24 hr with a salt (upper panel) or an ethanol pulse (lower panel) and then allowed to recover for 24 hr. The fraction of cells that switch into the high RFP state in response to the perturbation is plotted as a function of perturbation intensity. ATc and IPTG were held fixed throughout the perturbation and recovery periods. Control cells were propagated with no supplemental salt or ethanol for comparison. Error bars represent the standard error of measurements from three different gatings on FSC-A vs SSC-A.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Same experiment as Figure 3B. Yeast cells expressing the toggle switch were pre-grown in the high GFP state and then transferred to different distances from the critical transition (2, 4, or 8 ng/ml ATc). After 92 hr of growth, the cells were perturbed for 24 hr and then allowed to recover for 24 hr. The fraction of cells that switched into a high RFP state is plotted as a function of (ATc). During the perturbation period, cells were exposed to 6% ethanol (yellow), 600 mM NaCl (peach), 37\u00b0C (violet), 0.2% glucose (blue), or no perturbation (teal).Error bars represent the standard error of three different samplings from FSC-A vs SSC-A.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (Left Panel) Yeast cells were pre-grown in the high RFP state. 92 hr after history washout, cells at 2, 4, and 8 ng/ml ATc were exposed to 6% ethanol (pink), 600 mM NaCl (peach), 37\u00b0C (violet), 0.2% glucose (blue), or no perturbation (teal). Cells grew for 24 hr in this new condition. The perturbation was then removed and cells were allowed to recover for 24 hr. Control cells were propagated in 2% galactose and 30\u00b0C with no salt or ethanol. The fraction of cells that switched into a high GFP state is plotted as a function of (ATc). (Right Panel) The cells were pre-grown in a high GFP state (green) or high RFP state (red) and then transferred to an intermediate distance from the phenotypic switch (4 ng/ml ATc). 92 hr after history washout, the cells were perturbed as described above. The mean fluorescence shifts from its pre-perturbation location (red or green dot) to the tip of the perturbation arrow. Error bars in the left panel represent the Laplacian-corrected binomial counting error.\n\nComplex dynamic systems near critical transitions are predicted to lose resilience to a specific class of perturbations: those that push the system toward the alternative stable state. However, the effect of a salt shock or a heat shock on the GFP output of the toggle switch is challenging to predict a priori. Notably, it is possible that some generic perturbations will stabilize the state of the cells and reduce their probability of switching. Indeed, we found that none of the four generic perturbations led to a loss of resilience in the transition from the high RFP state (Figure 3\u2014figure supplement 3). This result is unsurprising given that the perturbations did not strongly push the genetic network toward the high GFP state (Figure 3\u2014figure supplement 3). For the salt, ethanol, and heat stresses, the perturbation increased the RFP output of the cells, thereby stabilizing the state. Thus, phenotypic states in the toggle switch only loss resilience to perturbations that push the system toward the alternative state.\n\nWe reasoned that our experimentally-observed loss of resilience could be caused by a shrinking basin of attraction of the phenotypic state. To test this hypothesis, we used our perturbation experiments to estimate the location of the basin boundary in GFP-RFP space and see how it shifted for different concentrations of ATc (Figure 4A). For a given concentration of ATc and a chosen perturbation, we measured the fraction of cells that switched into the alternative state at the end of the recovery period. Analysis of the GFP-RFP distribution at the end of the perturbation and before the recovery period revealed that many cells were in an indeterminate state between the two stable phenotypic states. We ranked the cells according to the ratio of GFP expression to RFP expression and assumed that a cell would switch phenotypic states when its ratio of GFP expression to RFP expression fell below a critical threshold. This is equivalent to assuming that the basin boundary between the two phenotypic states takes the form of a line on a log\u2013log plot. To justify this assumption, we used a simple mathematical model of the toggle switch (see Figure 4\u2014figure supplement 1 and \u2018Materials and methods\u2019). Our modeling indicated that this assumption would hold as long as the promoter strengths of the two transcription factors in the toggle switch were approximately equal.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig4-v1.jpg)\n\n**Figure 4.:** (A) By examining the RFP-GFP distribution at the end of the recovery period and comparing it to the end of the perturbation period, the basin boundary can be estimated. A cell is assumed to switch when its ratio of GFP to RFP expression falls below some threshold \u03b1, so the separatrix is a line with slope 1 and intercept \u03b1 on a log\u2013log plot. A simple model of the toggle switch supports this assumption (see Figure 4\u2014figure supplement 1). For each [ATc], eight perturbations (10 \u03bcM IPTG, 0.1 \u03bcM IPTG, 37\u00b0C, 200 mM NaCl, 600 mM NaCl, 2% ethanol, 6% ethanol, and 0.2% glucose) were used to estimate \u03b1 by minimizing the mean-squared deviation between the estimated and measured fractions. (B) The estimated fraction is compared to the measured fraction for [ATc] = 2 ng/ml (\u25a1), 4 ng/ml (\u2206), and 8 ng/ml (\u25cb). (C) The unperturbed GFP-RFP distribution for cells at 0 ng/ml (green) and 128 ng/ml (red) is overlaid with the estimated separatrix from 2, 4, and 8 ng/ml. \u03bc \u00b1 \u03c3 is shaded for each separatrix. (D) The location of the high GFP stable fixed point (green), unstable fixed point (purple), and low GFP stable fixed point (red) are plotted as a function of ATc. The system is bistable for intermediate ATc and monostable at low and high ATc. We assume that switching follows a line in log-space connecting the centroids of the two distributions in Figure 4C (see Figure 4\u2014figure supplement 2). Error bars in all plots represent the standard error from three samplings from the FSC-A vs SSC-A distribution.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A deterministic model features cooperative binding of repressor proteins to their promoters (see \u2018Materials and methods\u2019 section for details). The system was initialized with a wide range of initial concentrations of LacI and TetR. The system then evolved in time until it reached one of the two stable fixed points. Initial conditions leading to a high LacI state are shaded in green, and initial conditions leading to a high TetR state are shaded in red. The stable fixed points are represented by black circles. The basin boundary is the interface where the red and the green areas meet. Top: the promoters have equal strengths and bottom, the promoters have asymmetric strengths. See also the grey line in figure S7 of reference (Wu et al., 2013).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Yeast cells in a high GFP condition (2 ng/ml ATc) are plotted in green and cells in a high RFP condition (128 ng/ml ATc) are plotted in red. The line connecting the centroids of the distribution is plotted in black. Overlaid in purple is the distribution of cells that were initially in a high GFP state and were then perturbed for 24 hr with a glucose pulse. The unstable fixed point in Figure 4D is estimated by finding the y-coordinate of the intersection of the basin boundary in Figure 4C with the black line above.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Here, p = 50, K = 15, and \u03b3 = 0.5. 100 cells are initialized in a high Lac state and equilibrate for ten generations. Suddenly, K is increased to 100 for a variable time period (ranging from 0.2 to 20 generations). K is then restored to 15, and the cells are allowed to equilibrate for several more generations. At the end of the recovery, we determine what fraction of the cells remains in a high Lac state.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Here, p = 50, K = 15, and \u03b3 = 0.5. 100 cells are initialized in a high Lac state and equilibrate for ten generations. Suddenly, K is decreased to 1 for a variable time period (ranging from 0.2 to 20 generations). K is then restored to 15, and the cells equilibrate for several more generations. At the end of the recovery, we determine what fraction of the cells remains in a high Lac state.\n\nUsing the assumption described above, we estimated the location of the basin boundary consistent with our experimentally observed fractions at the end of the recovery period. Encouragingly, we find that for a given concentration of ATc, the switching fraction for the eight different perturbations (weak and strong IPTG, weak and strong ethanol, weak and strong salt, heat, glucose) is well fit by a single separatrix (Figure 4B). Moreover, as ATc increases from 2 to 8 ng/ml, the location of the basin boundary gets closer to the location of the high GFP stable fixed point (Figure 4C). Knowing the location of the basin boundary allowed us to map the bifurcation (Figure 4D). Thus, the loss of resilience appears to be driven by a shrinking basin of attraction of the phenotypic state near the critical transition.\n\nGiven that the phenotypic states associated with our toggle switch lose resilience to perturbations near the critical transition, a natural question is whether, just as in other examples of critical transitions in complex systems such as ecosystem collapse, it is possible to develop warning indicators that this loss of resilience is taking place (Dai et al., 2012). For example, one might expect that the mean GFP of cells in the high GFP state would decrease with increasing ATc, thus potentially signaling that the critical transition is approaching (Isaacs et al., 2003). However, we find that the mean GFP of unswitched cells is approximately constant over the range of ATc concentrations in which we observe a loss of resilience (Figure 1B and Figure 5A). Researchers in a number of fields have explored early warning indicators based on a loss of stability near a critical transition (broadening of the effective potential as illustrated in Figure 2A) (Scheffer et al., 2009). This loss of stability would manifest in our experiments as an increase in the variation of GFP fluorescence among the population of (unswitched) cells. However, we find experimentally that there is no increase in variation within the population approaching the critical transition, even very close to the transition where the GFP state is metastable (Figure 5B,C). The theoretically proposed early warning indicators based on local stability therefore fail to predict the critical transition in this gene network (Menck et al., 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig5-v1.jpg)\n\n**Figure 5.:** Yeast cells expressing the toggle switch were pre-grown in the high GFP state (green triangles) or the high RFP state (red circles) and then transferred to a range of ATc concentrations for 92 hr. (A) The mean GFP fluorescence of cells that have not switched from their pre-growth state is plotted against [ATc]. Above 16 ng/ml (for the GFP history) and below 1 ng/ml (for the RFP history), all of the cells have switched into the alternative state. To quantify population variability, the standard deviation normalized to the mean (coefficient of variation, i.e., \u2018CV\u2019) is plotted for the B, log-transformed and C, linear values of fluorescence. When calculating variation, only cells that remain in the state they were pre-grown in are analyzed (see inset in B). To minimize the effect of instrument noise in B and C, variation in RFP fluorescence is measured for the RFP history (similarly, variation in GFP is measured for the GFP history). Error bars in A represent the standard error of three samplings from FSC-A vs SSC-A. Error bars in B and C are standard errors from 200 bootstrap resamplings of the data.\n\nTo explore the generality of our results, we chose to study the yeast GAL network, which displays an \u2018all-or-none\u2019 response in some sugar environments containing galactose (Biggar and Crabtree, 2001; Song et al., 2010). However, the wild-type GAL network exhibits only weak memory (Song et al., 2010). To expand the range of galactose concentrations for which the system has memory (Acar et al., 2005), we used a strain of yeast constitutively expressing the repressor GAL80 (which codes for a transcriptional repressor involved in one of the many feedback loops that stabilize memory in this network). To assess the state of the network, yellow fluorescent protein (YFP) expression was driven by a GAL1 promoter. Cells were pre-grown in high galactose (GAL ON) and then grown for a day in a range of galactose concentrations (Figure 6A). We then examined the resilience of the GAL network to perturbations at different distances from its critical transition, similar to our experiments with the toggle switch. For the GAL network, a glucose pulse served as a directional perturbation (due to catabolite repression [Gancedo, 1998]), and we again used heat, salt, and ethanol as generic perturbations. We found that the \u2018GAL ON\u2019 phenotypic state lost resilience to glucose and ethanol perturbations but not salt or heat (Figure 6B). Similarly, we performed experiments probing the resilience of the ON state in the Escherichia coli lac operon, where we again observed a loss of resilience to both directional perturbations and to the generic perturbation ethanol (Figure 6\u2014figure supplement 1). These three genetic switches have widely different architectures, and operate in two different species. Our results thus indicate that a loss of resilience approaching a phenotypic switch could be a general property of multistable gene networks and that \u2018generic\u2019 or global perturbations, such as temperature or salt shocks, can cause widespread loss of cellular memory.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig6-v1.jpg)\n\n**Figure 6.:** (A) 25 hr after history washout, a gal80-inducible strain shows strong memory above 0.05% galactose. The two histories are offset for ease of viewing, and the region of memory is shaded in yellow. 50 cells at random are plotted from a tight gate on FSC-A vs SSC-A. (B) 25 hr after history washout, cells at 0.4%, 0.1%, and 0.08% galactose were exposed to 6% ethanol (pink), 600 mM NaCl (peach), 37\u00b0C (violet), 0.1% glucose (blue), or no perturbation (teal). Cells grew for 12 hr in this new condition. The perturbation was then removed and cells were allowed to recover for 12 hr. Control cells were propagated with fixed glucose, galactose, and temperature. The fraction of cells that switched into a low YFP state after the perturbation is plotted as a function of [galactose]. Error bars are standard errors obtained by bootstrap with 200 resamplings of the data.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07935/elife-07935-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (Upper panel) The cells were pre-grown in either 0 or 100 \u03bcM TMG (\u2018LAC OFF\u2019 and \u2018LAC ON,\u2019 respectively) for 20 hr and then diluted into a range of TMG concentrations. After 21 hr of growth, the system exhibits strong hysteresis. A constitutively expressed mCherry allows for discrimination between OFF cells and noise. The region of memory is shaded in gray, and the two histories are offset for ease of viewing. Fifty cells at random are plotted. (Lower panel) 21 hr after pre-growth washout, the cells from the ON history were exposed to several perturbations for 12 hr (blue: 0.01% glucose; pink: 6% ethanol; peach: 1 M NaCl; violet: 43\u00b0C). The perturbations were then removed, and the cells were allowed to recover for 12 hr. The fraction of cells that switched into the OFF state is plotted as a function of [TMG]. Control cells (green) were grown at 37\u00b0C with no added salt, glucose, or ethanol. Error bars represent the standard error from 200 bootstrap resamplings of the data.\n\n## Discussion\n\nHere we have shown that brief perturbations in the extracellular environment can dramatically increase the rate of phenotypic switching from a highly stable memory state into an alternative state. We argue that this loss of resilience to perturbations near the bifurcation can be explained by a shrinking of the basin of attraction of the phenotypic state. By observing the GFP-RFP distribution at the end of the perturbation period and applying a simple threshold, we were able to accurately predict the fraction of cells that would return to the pre-perturbation memory state at the end of the recovery period. At a given distance from the bifurcation, the same basin boundary was able to accurately predict the switching fraction in response to eight different perturbations. The predictive success of this threshold is particularly impressive given that the different perturbations have dramatically different effects on the GFP-RFP distribution (see Figure 4A).\n\nThere is an interesting question of the precise mechanism by which the perturbations act on the system to push the cells to a new location in GFP-RFP space. Part of the answer is certainly that the perturbations cause a shift in the stability landscape underlying the phenotypic states. It is also possible that the perturbations cause an increase in noisy gene expression. Understanding what is occurring during the perturbation period, both biochemically and from a dynamical systems perspective, will be an area of investigation for future research.\n\nThe perturbations (salt stress, heat stress, etc) lasted for a significant duration: 24 hr, or roughly 3 to 8 cell divisions. It is interesting to ask whether we would have seen similar results if we had perturbed the system for a shorter duration. To address this question, we performed Gillespie simulations using a very simple phenomenological model of the toggle switch (see Source code 1). Similar to our test tube experiments, we initialized the system in a high Lac state. The system was allowed to equilibrate for several generations, before we suddenly changed one of the parameters of the system (either the disassociation constant between the transcription factor and the DNA or the promoter strength). We performed this perturbation for a variable duration ranging from 0.2 generations to 20 generations. The system was then allowed to recover (by restoring the parameter to its initial value) for several generations, and we then determined what fraction of cells remained in a high Lac state. Two key observations emerged. (1) The degree of switching is set by both the intensity and duration of the perturbation. For dramatic perturbations, the minimum duration of perturbation to induce switching is approximately set by the cell division time (Figure 4\u2014figure supplement 3). (2) Not all perturbations induced phenotypic switching. Of note, perturbations which stabilized the high Lac state induced negligible switching into the high Tet state (Figure 4\u2014figure supplement 4). These observations held regardless of whether the perturbation was achieved by changing the disassociation constant or the promoter strength.\n\nUnderstanding the stability of phenotypic states in gene networks remains an important challenge in biology. Here we have demonstrated that for robust cellular memory in natural contexts subject to environmental noise, low rates of stochastic switching from the phenotypic state is not sufficient. This is because the cellular memory must also be robust against environmental fluctuations and perturbations that are impossible to avoid. Here we found experimentally that several phenotypic states lost resilience to multiple environmental perturbations near a critical transition. Given that over time there will often be multiple kinds of environmental fluctuations and perturbations, our results argue that many forms of cellular memory will become destabilized near a critical transition. Our results provide a roadmap for exploring cellular memory and phenotypic switching in other contexts, from development to cancer progression.\n\n## Materials and methods\n\n### Strains\n\nToggle switch strains have been previously characterized (Ellis et al., 2009; Wu et al., 2013). Gal80-inducible strains have been previously described (Acar et al., 2005). LacY-YFP fusion strains have been previously described (Choi et al., 2008).\n\n### Toggle switch experiments\n\nCells were grown in synthetic media (YNB and CSM\u2014Trp\u2014Leu; Sunrise Science, San Diego, CA, United States) containing 2% galactose and ATc/IPTG (Sigma Aldrich, St. Louis, MO, United States) as described in the text. Cells were grown in 3 ml cultures in 14 ml VWR culture tubes (VWR, Radnor, PA, United States) and diluted daily to prevent saturation. Cells were pre-grown for 24 hr in either 1 mM IPTG or 250 ng/ml ATc and then transferred to a range of ATc concentrations as described in the text. 20 \u03bcl of cells were harvested daily at OD 0.5, diluted in 180 \u03bcl PBS, and run immediately on a Miltenyi MACSQuant VYB flow cytometer (Miltenyi Biotec, San Diego, CA, United States). After 4 days of serial transfer, cells were transferred to the perturbation environment. Cells grew for 24 hr in this environment before being characterized via flow cytometry and diluted into the original environment they were in before the perturbation (hereafter, the \u2018recovery environment\u2019). Cells grew for 24 hr in the recovery environment and then were characterized with flow cytometry. The basin boundary was estimated by assuming that cells switched phenotypes when the ratio of GFP to RFP expression fell below a critical threshold. All results were verified in two independent experiments carried out several weeks apart.\n\n### GAL network experiments\n\nCells were pre-grown for 24 hr in either 0.5% galactose or 0.01% glucose (GAL ON and GAL OFF, respectively) plus 0.05 \u03bcg/ml doxycycline (Sigma Aldrich). Cells were then diluted into 0.01% glucose, 0.05 \u03bcg/ml doxycycline, and galactose concentrations ranging from 0 to 2%. Cells were diluted every 12 hr and the OD was kept below 0.01 to minimize consumption of the sugars. Cells were harvested every 12 hr, concentrated via centrifugation, and characterized immediately via flow cytometry. Cells were transferred to the perturbation environment 24 hr after history removal. They were then grown for 12 hr, characterized via flow cytometry and diluted into the recovery environment, grown for a further 12 hr, and characterized via flow cytometry.\n\n### Lac network experiments\n\nCells were grown in M9 media (Sigma Aldrich) with 0.1% succinic acid as a carbon source. Cells were first pre-grown in either 0 or 100 \u00b5M TMG (\u2018Lac OFF\u2019 and \u2018Lac ON,\u2019 respectively) for 20 hr. The history condition was then washed out, and the two populations were then separately transferred to a range of TMG concentrations. Cells grew for 21 hr. YFP expression was assayed using flow cytometry as a proxy for the state of the Lac network. A constitutively expressed RFP enabled for discrimination between cells and noise. 21 hr after history washout, cells were diluted into the perturbation environment and grown for 12 hr. After 12 hr of growth, YFP expression was again assayed using flow cytometry. At the same time, the cells were diluted into the recovery environment and grown for a further 12 hr. At the end of the recovery period, YFP expression was again assayed using flow cytometry.\n\n### Data analysis\n\nFlow cytometry data was analyzed utilizing the Gore lab's flow cytometry tool kit, which can be accessed at http://gorelab.bitbucket.org/flowcytometrytools/. The code for the Gillespie simulation of the toggle switch has been uploaded as a supplementary file.\n\n### Theoretical model for the toggle switch\n\nThe rate of production of the two repressors is described by the following equations:\n\n$$\n\u2009[LacI]\u02d9=\\frac{P_{Tet}}{1+(\\frac{[TetR]}{K_{Tet}})^{2}}\u2212\u2009\\gamma[LacI],\n$$\n\n\n\n$$\n[TetR]\u02d9=\\frac{P_{Lac}}{1+(\\frac{[LacI]}{K_{Lac}})^{2}}\u2212\u2009\\gamma[TetR].\n$$\n\nThe promoter strength is determined by the DNA sequence and has been previously characterized (Ellis et al., 2009). As a simple approximation, we treat ATc and IPTG as modulating KTet and KLac. We assume that the proteins are stable, so the rate of transcription factor degradation is set by dilution via cell division.\n\nOur primary goal for the model was to predict the shape of the basin boundary between the two phenotypic states, particularly in a system where the promoter strengths are asymmetric. Figure 4\u2014figure supplement 1 was generated by picking values of KTet and KLac so that the system exhibited bistability over a range of [LacI] and [TetR]. We initialized the system with many different [LacI] and [Tet] and allowed the system to evolve according to Equations 1, 2 until the system reached a steady state.\n\nFor the equal promoter strengths, the following parameters were used:PLac = PTet = 50KLac = KTet = 15\u03b3Lac = \u03b3Tet = 0.5\n\nFor the unequal promoter strengths, the following parameters were used:PLac = 30PTet = 35KLac = KTet = 15\u03b3Lac = \u03b3Tet = 0.5\n\nFor the Gillespie simulations to investigate the effect of perturbation duration on switching fraction, we again used:PLac = PTet = 50KLac = KTet = 15\u03b3Lac = \u03b3Tet = 0.5\n\nSimilar to our test tube experiments, we initialized the system in a high Lac state. The system was allowed to equilibrate for several generations, before we suddenly changed one of the parameters of the system (either the disassociation constant between the transcription factor and the DNA or the promoter strength). We performed this perturbation for a variable duration ranging from 0.2 generations to 20 generations. The system was then allowed to recover (by restoring the parameter to its initial value) for several generations, and we then determined what fraction of cells remained in a high Lac state.\n",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "feac4558-e330-4ffc-a044-a015983f4bc3",
+      "submission_id": "4dee100e-1a0e-40f2-8f6a-a6a2f6a1a31b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James Ferrell, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07935.022](https://doi.org/10.7554/eLife.07935.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cCellular Memory Becomes Increasingly Sensitive to Perturbations Approaching a Phenotypic Switch\u201d for peer review at eLife. Your submission has been favorably evaluated by Naama Barkai (Senior editor) and three reviewers, one of whom, James Ferrell, is a member of the Board of Reviewing Editors.\n\nThe reviewers had quite an intensive discussion on the manuscript. The two main concerns were firstly the issue of novelty, in particular with respect to your previous 2011 paper, but also with respect to other synthetic biology papers that were published. Secondly, whether you in fact answered the question you pose regarding cellular memory. All the reviewers were concerned about these issues. The final decision was to ask you to revise the paper addressing the following points in particular.\n\n1) Change the Title/Abstract and opening about \u201ccellular memory\u201d as the reviewers were all concerned that you never really address it afterward in the paper. It should be clear upfront in the Abstract that you explore a synthetic system and extend their previous findings.\n\n2) Substantially enhance the explanation and discussion of the model.\n\n3) Minor: re-examine your first-passage time data. The lack of an exponential first-passage time might indicate some meta-stable intermediate. You may want to discuss this.\n\nThe individual reviews are attached below, and please address their points as well. It is important that you realize that these reviews were written prior to the discussion between reviews, and that during the course of the discussion all reviews were in full agreement with the more critical comments of reviewer #2, who initially raised the two points I specified above. So please pay special attention to this review.\n\nReviewer #1:\n\nThis paper examines whether a synthetic double-negative feedback loop (LacI -| TetR -| LacI) becomes more sensitive to perturbations (IPTG, hyperosmolar stress) when it is operating close to its bifurcation point. The answer is yes. The increased switching in response to hyperosmolar stress is particularly neat.\n\nThis is not a huge step forward conceptually. But I cannot recall that anyone has previously demonstrated that the expected behavior really does occur. To me the bigger question is whether natural switches are subject to this sort of \u201chazard\u201d, or whether the multiple interlinked feedback loops that always seem to be present serve to mitigate this behavior.\n\nThat said, I think this will serve as a nice example to which other synthetic and natural circuits can be compared. I support publication in eLife with only minor revisions.\n\nThe most important of my concerns has to do with the time scale of the perturbations. The authors use very long-lasting perturbations-24 h incubation in a new concentration of IPTG or in hyperosmolar stress. What happens when you use shorter perturbations? Does, for example, the perturbation need to be comparable in duration to the flipping time for the toggle switch?\n\nReviewer #2:\n\nAxelrod et al. set out to analyze how cells store memories in the face of environmental fluctuations. The question posed is interesting and important and the Gore group is an outstanding research group. However, disappointingly, the study does not answer the question posed in an informative or mechanistic way.\n\nThe primary major concern is that the study is highly descriptive and lacks a clear mechanistic model that sheds light on the question of how cells store memories. For example, we would have liked to see identification of a fundamental mechanism or a new design principle on how memory storage is implemented. Instead, the study largely characterizes the history dependence of the toggle switch and the phenomenon of the toggle losing resilience. For example, in Figure 2A, providing the precise model parameters that drive a shrinking basin of attraction might have helped to define a design principle. Figure 4 comes the closest to a mechanistic model but it really doesn't teach the reader very much about the underlying principles that drive the shrinking basin, instead it demonstrated consistency between model and experiment.\n\nA second major concern is that the study uses a synthetic construct rather than a real biological system to examine a phenomenon very similar to what the Gore group has previously reported (Science, 2011). In my opinion, using synthetic constructs would not be a concern (even for a high-impact venue) if a new phenomenon was being presented and tested for feasibility. However, here the phenomenon being examined is very similar to what the Gore group has previously demonstrated in yeast (Science, 2011) so the present study comes across a little bit like a simulation, just using this synthetic toggle construct instead of a real system. On a related note, the authors' honesty about the lack of a CV change as an indicator of switching (Figure 5) was highly laudable.\n\nWe sympathize with the authors since in these types of studies it is often a long road to identifying the most relevant and impactful framing for presenting a set of findings. Nevertheless, with regret, we feel this manuscript needs substantial reworking in order to rise to a level where it is appropriate for publication in such a venue.\n\nReviewer #3:\n\nThis is another excellent study by the Gore laboratory. This is a first for me where the submitted manuscript is already in such good shape that any comments on my part would merely be nitpicking. Therefore, in the spirit of eLife, I suggest publication of this beautiful study, which provides evidence for how cellular memory can become destabilized by environmental variability near a critical transition.\n\n1) Change the Title/Abstract and opening about \u201ccellular memory\u201d as it is not really addressed in the paper. Be clear upfront in the Title and the Abstract that this is a study of a synthetic circuit, not a natural circuit.\n\n2) The study uses very long-lasting perturbations 24 h incubation in a new concentration of IPTG or in hyperosmolar stress. What happens when you use shorter perturbations? Does, for example, the perturbation need to be comparable in duration to the flipping time for the toggle switch? Some data on how long the perturbations need to be would be very helpful.\n",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b1af68fd-99a9-4f27-b2be-68af10965d88",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C1",
+      "claim": "Microorganisms often exhibit a history-dependent phenotypic response after exposure to a stimulus which can be imperative for proper function.",
+      "claim_type": "EXPLICIT",
+      "source": "Microorganisms often exhibit a history-dependent phenotypic response after exposure to a stimulus which can be imperative for proper function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about microorganisms supported by established scientific knowledge and citations in the broader context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "fcc79eb1-cae3-4b0a-a6c0-cad88d666820",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C2",
+      "claim": "Far from the critical transition an environmental perturbation may induce little to no phenotypic switching.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that far from the critical transition an environmental perturbation may induce little to no phenotypic switching, whereas close to the critical transition the same perturbation can cause many cells to switch phenotypic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "12eaeeb0-45c7-419a-a567-9ae5e3cd137a",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C3",
+      "claim": "Close to the critical transition the same perturbation can cause many cells to switch phenotypic states.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that far from the critical transition an environmental perturbation may induce little to no phenotypic switching, whereas close to the critical transition the same perturbation can cause many cells to switch phenotypic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "d5f6316d-2847-4c4e-8b4e-947ebf8d2874",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C4",
+      "claim": "Loss of resilience was observed for perturbations that interact directly with the gene circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of resilience was observed for perturbations that interact directly with the gene circuit as well as for a variety of generic perturbations-such as salt, ethanol, or temperature shocks-that alter the state of the cell more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing directional perturbations (IPTG changes) causing switching near the critical transition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "c0875c32-1a4f-41da-8237-bd0537f6b0ad",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C5",
+      "claim": "Loss of resilience was observed for a variety of generic perturbations such as salt, ethanol, or temperature shocks.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of resilience was observed for perturbations that interact directly with the gene circuit as well as for a variety of generic perturbations-such as salt, ethanol, or temperature shocks-that alter the state of the cell more broadly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 3 showing various generic perturbations causing switching near the critical transition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "f84efdee-6843-4254-9cc9-dd8a24bc2b47",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C6",
+      "claim": "Qualitatively similar findings were obtained in natural gene circuits, such as the yeast GAL network.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtain qualitatively similar findings in natural gene circuits, such as the yeast GAL network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6 showing loss of resilience in the GAL network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "c0f828d6-a7ae-4726-89dd-46af3520122c",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C7",
+      "claim": "Microbes such as yeast and bacteria often adopt a specific phenotype in response to an environmental stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbes such as yeast and bacteria often adopt a specific phenotype in response to an environmental stimulus, and in many cases this phenotype can be retained even after the stimulus has been removed (Ozbudak et al., 2004; Acar et al., 2005; Hu et al., 2012; Williams et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "ed1beefa-500e-431d-976e-23887262447f",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C8",
+      "claim": "In many cases the phenotype can be retained even after the stimulus has been removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbes such as yeast and bacteria often adopt a specific phenotype in response to an environmental stimulus, and in many cases this phenotype can be retained even after the stimulus has been removed (Ozbudak et al., 2004; Acar et al., 2005; Hu et al., 2012; Williams et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "7de5c45a-6eaa-4c2c-b6b1-ec3ac02c1b77",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C9",
+      "claim": "Stably storing a phenotype can be critical for survival during adverse environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Stably storing such a phenotype can be critical for survival during adverse environmental changes (Gasch et al., 2000; Gasch and Werner-Washburne, 2002; Chen et al., 2003; Brauer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "b83c74f4-e7a4-4ffa-a6b8-5c165cf37cfb",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C10",
+      "claim": "The yeast galactose utilization network can be found in multiple phenotypic states depending on the history that the cells have experienced.",
+      "claim_type": "EXPLICIT",
+      "source": "Several well-studied natural gene networks can be found in multiple phenotypic states depending on the history that the cells have experienced, notably including the yeast galactose utilization network and sporulation commitment in Bacillus subtilis (Acar et al., 2005; Igoshin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "56341d1e-4095-4731-b83d-c2de9dce60a6",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C11",
+      "claim": "Sporulation commitment in Bacillus subtilis can be found in multiple phenotypic states depending on the history that the cells have experienced.",
+      "claim_type": "EXPLICIT",
+      "source": "Several well-studied natural gene networks can be found in multiple phenotypic states depending on the history that the cells have experienced, notably including the yeast galactose utilization network and sporulation commitment in Bacillus subtilis (Acar et al., 2005; Igoshin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "66428535-78dc-421e-ba39-10eb03e76765",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C12",
+      "claim": "Phenotypic memory often results from feedback loops within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that phenotypic memory often results from feedback loops within the cell (Ferrell and Machleder, 1998; Pomerening et al., 2003; Xiong and Ferrell, 2003; Angeli et al., 2004; Ozbudak et al., 2004), it is possible that this phenotypic memory will display characteristics of other complex systems that exhibit bistability, memory, and associated critical transitions or 'tipping points' that lead to sudden changes in the state of the system in response to small changes in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "ca31b309-7219-4e0f-bcaa-01b781af5f10",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C13",
+      "claim": "Complex systems near a critical transition experience a loss of resilience of their stable states to external perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "A phenomenon that may be especially relevant to cellular memory is that complex systems near a critical transition experience a loss of resilience of their stable states to external perturbations (Dai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research on complex systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "4d8dc6af-1561-48a3-841c-fdcbf87b09b9",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C14",
+      "claim": "A system far from a critical transition may return to its original state following a perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a system far from a critical transition may return to its original state following a perturbation, whereas closer to the critical transition the same environmental perturbation may cause the system to switch to an alternative stable state (e.g., collapse of a population [Dai et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research on complex systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "2df1b90f-cf2f-4241-80ec-981f6d8d30df",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C15",
+      "claim": "Closer to the critical transition the same environmental perturbation may cause the system to switch to an alternative stable state.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a system far from a critical transition may return to its original state following a perturbation, whereas closer to the critical transition the same environmental perturbation may cause the system to switch to an alternative stable state (e.g., collapse of a population [Dai et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research on complex systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "7a90a022-3738-4813-af1e-f7f4870f6e83",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C16",
+      "claim": "The loss of resilience near a critical transition results from a shrinking basin of attraction in the stability landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "This aforementioned loss of resilience near a critical transition results from a shrinking basin of attraction in the stability landscape (Scheffer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research on stability landscapes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "e760dc5f-b8fe-4dda-a101-aba933cc9a36",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C17",
+      "claim": "The synthetic genetic switch in budding yeast has previously been shown to exhibit hysteresis and bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "To study this predicted loss of resilience, we first employed a synthetic genetic switch in budding yeast that has previously been shown to exhibit hysteresis and bistability (Gardner et al., 2000; Blake et al., 2006; Ellis et al., 2009; Wu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on the toggle switch.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "4dd4e428-6267-40c7-bac8-cb48036bfb74",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C18",
+      "claim": "The toggle switch is composed of two mutually inhibitory transcription factors, LacI and TetR.",
+      "claim_type": "EXPLICIT",
+      "source": "This toggle switch is composed of two mutually inhibitory transcription factors, LacI and TetR (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "0ae39f60-dda7-4ded-af17-cf543cccf51e",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C19",
+      "claim": "Different color fluorescent proteins are expressed depending upon which transcriptional factor is highly expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable tracking of the state of the cell, different color fluorescent proteins are expressed depending upon which of these transcriptional factors is highly expressed (mCherry and eGFP, hereafter referred to as 'RFP' and 'GFP').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design of the toggle switch system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "8d7d2b88-bd18-4222-86eb-c3d01a8a17c7",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C20",
+      "claim": "IPTG modulates the strength of repression of LacI.",
+      "claim_type": "EXPLICIT",
+      "source": "As external knobs to control the state of the cell, the inducer IPTG modulates the strength of repression of LacI, whereas ATc modulates the strength of repression of TetR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the mechanism of control in the toggle switch system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "2e998c56-6584-4a43-979d-35a4170ebd0e",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C21",
+      "claim": "ATc modulates the strength of repression of TetR.",
+      "claim_type": "EXPLICIT",
+      "source": "As external knobs to control the state of the cell, the inducer IPTG modulates the strength of repression of LacI, whereas ATc modulates the strength of repression of TetR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the mechanism of control in the toggle switch system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "3aa44fc9-d363-40c8-a39f-c138544a87f2",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C22",
+      "claim": "For high and low concentrations of ATc, cells converged to a state that was independent of the history they were pre-grown in.",
+      "claim_type": "EXPLICIT",
+      "source": "For high and low concentrations of ATc, cells converged to a state that was independent of the history they were pre-grown in (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "2f83f0f7-5d59-4a9c-85ea-28e106573790",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C23",
+      "claim": "For intermediate concentrations of ATc there was little to no switching of the phenotypic state of the cells even after 260 hr of growth and over 80 cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for intermediate concentrations of ATc there was little to no switching of the phenotypic state of the cells even after 260 hr of growth and over 80 cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing stable memory at intermediate ATc concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "067c619f-c586-44b5-ac67-272505f1ed1b",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C24",
+      "claim": "The mutual repression in the toggle switch allows for remarkably stable cellular memory for intermediate ATc concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutual repression in this toggle switch therefore indeed allows for remarkably stable cellular memory for intermediate ATc concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data showing stable phenotypic states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "da232352-a2d9-4c1d-9dab-4f222895e6dd",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C25",
+      "claim": "The lifetime of the states decreases approaching the critical transition at which switching is deterministic.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Acar et al., 2005), the lifetime of the states decreases approaching the critical transition at which switching is deterministic (hereafter, we refer to this point as the 'critical transition' or 'phenotypic switch'), although interestingly we observe non-exponential switching kinetics, potentially indicating the presence of metastable states in the gene network (Figure 1\u2014figure supplements 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplements 1, 2 and is consistent with cited previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "e28f9877-6bce-4788-88a3-73cb0927db42",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C26",
+      "claim": "Non-exponential switching kinetics were observed, potentially indicating the presence of metastable states in the gene network.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Acar et al., 2005), the lifetime of the states decreases approaching the critical transition at which switching is deterministic (hereafter, we refer to this point as the 'critical transition' or 'phenotypic switch'), although interestingly we observe non-exponential switching kinetics, potentially indicating the presence of metastable states in the gene network (Figure 1\u2014figure supplements 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2 and involves speculation about metastable states.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "b85ce7f6-e278-4334-a337-1ea0c7f1fd86",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C27",
+      "claim": "The state's basin of attraction shrinks as the stable and unstable fixed points approach one another.",
+      "claim_type": "EXPLICIT",
+      "source": "This expectation arises because the state's basin of attraction shrinks as the stable and unstable fixed points approach one another (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on theoretical understanding of dynamical systems and is illustrated in Figure 2A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "454ed1d6-dd11-41d0-bc18-f96a616f35bb",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C28",
+      "claim": "Far from the critical transition, a perturbation temporarily depresses the value of GFP and the system recovers to its initial state after the perturbation is removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Far from the critical transition, a perturbation temporarily depresses the value of GFP; the system recovers to its initial state after the perturbation is removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is illustrated in Figure 2B and supported by experimental data in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "7ac7c532-7850-4c1a-8047-89d0eb8cf777",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C29",
+      "claim": "Close to the critical transition, the same perturbation causes the system to cross the basin boundary into the alternative state.",
+      "claim_type": "EXPLICIT",
+      "source": "Close to the critical transition, the same perturbation causes the system to cross the basin boundary into the alternative state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is illustrated in Figure 2B and supported by experimental data in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "7c3cf897-27c4-484e-8a95-6266b343fb3b",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C30",
+      "claim": "Far from the critical transition (2 ng/ml ATc), the IPTG perturbation caused almost no cells to switch their phenotypic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Far from the critical transition (2 ng/ml ATc), the IPTG perturbation caused almost no cells to switch their phenotypic state (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "9efd697d-d956-43a0-9176-87459b1468c4",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C31",
+      "claim": "Close to the critical transition (8 ng/ml ATc), the perturbation caused a great majority of the cells to switch into a high RFP state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, close to the critical transition (8 ng/ml ATc), the perturbation caused a great majority of the cells to switch into a high RFP state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "33223785-3b00-485e-a9d7-e0ac7abbee8d",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C32",
+      "claim": "Even after the perturbation was removed and the initial conditions were restored, many cells remained in a high RFP state.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after the perturbation was removed and the initial conditions were restored, many cells remained in a high RFP state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing persistent switching after perturbation removal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "e773cdd9-e998-479a-a42c-87156d55f30e",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C33",
+      "claim": "The severity of the environmental perturbation correlated with the fraction of cells that switched states in response to the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the severity of the environmental perturbation (i.e., the magnitude of reduction in IPTG) correlated with the fraction of cells that switched states in response to the perturbation (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "1c112b4c-9a49-44f9-8efc-2e90a034a1b7",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C34",
+      "claim": "There was negligible switching (\u223c0.5%) into the high RFP state for control cells grown in constant IPTG concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was negligible switching (\u223c0.5%) into the high RFP state for control cells grown in constant IPTG concentrations, demonstrating that the phenotypic switching was indeed caused by the perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "4b191028-c8b2-4b7f-8711-76b36396663a",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C35",
+      "claim": "The lack of phenotypic switching in the absence of the perturbation indicates that in all of these conditions the traditional measure of cellular memory would classify all of these conditions as being stable with a high degree of cellular memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the lack of phenotypic switching in the absence of the perturbation also indicates that in all of these conditions the traditional measure of cellular memory\u2014the lifetime of the state\u2014would classify all of these conditions as being stable with a high degree of cellular memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data showing stable states in the absence of perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "5abc1419-82fa-4d4a-9206-11b85e510869",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C36",
+      "claim": "A loss of resilience against generic perturbations (heat stress, osmotic stress with sodium chloride, ethanol stress, and a glucose pulse) was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we observed a loss of resilience against all four of these generic perturbations (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "306e73ba-032e-4874-bab0-cddc21929f92",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C37",
+      "claim": "Far from the critical transition (2 ng/ml ATc), there was little to no phenotypic switching in response to any of the generic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Far from the critical transition (2 ng/ml ATc), there was little to no phenotypic switching in response to any of these 'generic' perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "499257c1-436a-4e43-a2bf-6ef2e1c42419",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C38",
+      "claim": "Close to the critical transition (8 ng/ml ATc) nearly complete switching was observed in all perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, close to the critical transition (8 ng/ml ATc) we observed nearly complete switching in all perturbations, despite the fact that there was essentially no switching (\u223c0.5%) in the absence of the perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "b2a7dd01-27b7-4f33-8b56-18024dae1b5d",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C39",
+      "claim": "At a given distance from the phenotypic switch, increasing the strength of a generic perturbation increased the probability that cells would switch into the alternative state.",
+      "claim_type": "EXPLICIT",
+      "source": "At a given distance from the phenotypic switch, increasing the strength of a generic perturbation increased the probability that cells would switch into the alternative state (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "c23141df-37c6-4b0f-bc2c-dbdfc8c09606",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C40",
+      "claim": "The switching induced by the glucose perturbation can be understood by the fact that glucose shuts down expression of the entire system via catabolite repression of a GAL1 upstream activation sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The switching induced by the glucose perturbation can perhaps be understood by the fact that glucose shuts down expression of the entire system (LacI, TetR, GFP, and RFP) via catabolite repression of a GAL1 upstream activation sequence, thus pushing the cells toward a low GFP and low RFP state (Gardner et al., 2000; Ellis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on the toggle switch system and catabolite repression.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "6882af12-6cfd-4766-af9b-4dc9a5964cfb",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C41",
+      "claim": "None of the four generic perturbations led to a loss of resilience in the transition from the high RFP state.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that none of the four generic perturbations led to a loss of resilience in the transition from the high RFP state (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "2b508af1-8c85-4d9b-8e3c-0e7ae5ed8756",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C42",
+      "claim": "For the salt, ethanol, and heat stresses, the perturbation increased the RFP output of the cells, thereby stabilizing the state.",
+      "claim_type": "EXPLICIT",
+      "source": "For the salt, ethanol, and heat stresses, the perturbation increased the RFP output of the cells, thereby stabilizing the state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "f5b7653b-380d-45fe-93b8-06b801cb59d6",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C43",
+      "claim": "Phenotypic states in the toggle switch only lose resilience to perturbations that push the system toward the alternative state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, phenotypic states in the toggle switch only loss resilience to perturbations that push the system toward the alternative state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data showing differential effects of perturbations on different transitions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "864e6cd1-8463-46a3-808b-03dcbfba3aeb",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C44",
+      "claim": "The experimentally-observed loss of resilience could be caused by a shrinking basin of attraction of the phenotypic state.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that our experimentally-observed loss of resilience could be caused by a shrinking basin of attraction of the phenotypic state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis that is tested using experimental data and modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "bd67bccb-e4aa-4adf-ac66-2db7c091c6f0",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C45",
+      "claim": "A cell is assumed to switch when its ratio of GFP to RFP expression falls below some threshold \u03b1, so the separatrix is a line with slope 1 and intercept \u03b1 on a log\u2013log plot.",
+      "claim_type": "EXPLICIT",
+      "source": "We ranked the cells according to the ratio of GFP expression to RFP expression and assumed that a cell would switch phenotypic states when its ratio of GFP expression to RFP expression fell below a critical threshold. This is equivalent to assuming that the basin boundary between the two phenotypic states takes the form of a line on a log\u2013log plot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the analytical approach used to estimate the basin boundary.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "3fb721d9-2388-4cdf-afbd-c0d52d4ccc35",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C46",
+      "claim": "A simple mathematical model of the toggle switch supports the assumption that the basin boundary takes the form of a line on a log-log plot.",
+      "claim_type": "EXPLICIT",
+      "source": "To justify this assumption, we used a simple mathematical model of the toggle switch (see Figure 4\u2014figure supplement 1 and 'Materials and methods'). Our modeling indicated that this assumption would hold as long as the promoter strengths of the two transcription factors in the toggle switch were approximately equal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "1b9617a1-6e39-403b-aa0f-2ba326459ccb",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C47",
+      "claim": "For a given concentration of ATc, the switching fraction for the eight different perturbations is well fit by a single separatrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, we find that for a given concentration of ATc, the switching fraction for the eight different perturbations (weak and strong IPTG, weak and strong ethanol, weak and strong salt, heat, glucose) is well fit by a single separatrix (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "6e54e85c-611b-4cea-9df1-a75fd96f78d0",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C48",
+      "claim": "As ATc increases from 2 to 8 ng/ml, the location of the basin boundary gets closer to the location of the high GFP stable fixed point.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as ATc increases from 2 to 8 ng/ml, the location of the basin boundary gets closer to the location of the high GFP stable fixed point (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "d49e291f-054b-4466-8cf4-ad3607c2301a",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C49",
+      "claim": "The loss of resilience appears to be driven by a shrinking basin of attraction of the phenotypic state near the critical transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the loss of resilience appears to be driven by a shrinking basin of attraction of the phenotypic state near the critical transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data and analysis of the basin boundary.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "301adb9a-6cf2-4034-ad0c-ba2bc8a51519",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C50",
+      "claim": "The mean GFP of unswitched cells is approximately constant over the range of ATc concentrations in which a loss of resilience is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that the mean GFP of unswitched cells is approximately constant over the range of ATc concentrations in which we observe a loss of resilience (Figure 1B and Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "8a164738-7d2d-465d-a5f0-a4892de747a2",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C51",
+      "claim": "There is no increase in variation within the population approaching the critical transition, even very close to the transition where the GFP state is metastable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find experimentally that there is no increase in variation within the population approaching the critical transition, even very close to the transition where the GFP state is metastable (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "703f013f-2a10-4ec5-a0af-6cad6e224d94",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C52",
+      "claim": "The theoretically proposed early warning indicators based on local stability fail to predict the critical transition in this gene network.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretically proposed early warning indicators based on local stability therefore fail to predict the critical transition in this gene network (Menck et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data showing no increase in variation and is contrasted with theoretical predictions cited in the literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "9a4bfa46-7d9e-4ae9-8dbe-e87245085361",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C53",
+      "claim": "The wild-type GAL network exhibits only weak memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the wild-type GAL network exhibits only weak memory (Song et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "db7175ae-9bcd-40f2-a3cf-f9e7742c222f",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C54",
+      "claim": "A strain of yeast constitutively expressing the repressor GAL80 was used to expand the range of galactose concentrations for which the system has memory.",
+      "claim_type": "EXPLICIT",
+      "source": "To expand the range of galactose concentrations for which the system has memory (Acar et al., 2005), we used a strain of yeast constitutively expressing the repressor GAL80 (which codes for a transcriptional repressor involved in one of the many feedback loops that stabilize memory in this network).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design and is supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "c8cbc5d2-8bb3-4e33-851e-39bdd80fbb33",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C55",
+      "claim": "The 'GAL ON' phenotypic state lost resilience to glucose and ethanol perturbations but not salt or heat.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the 'GAL ON' phenotypic state lost resilience to glucose and ethanol perturbations but not salt or heat (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "c41c338f-7d50-4cd8-815b-fff7f1cff5aa",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C56",
+      "claim": "A loss of resilience to both directional perturbations and to the generic perturbation ethanol was observed in the Escherichia coli lac operon.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we performed experiments probing the resilience of the ON state in the Escherichia coli lac operon, where we again observed a loss of resilience to both directional perturbations and to the generic perturbation ethanol (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "295ecded-0435-4059-a259-84e4b19bf83d",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C57",
+      "claim": "A loss of resilience approaching a phenotypic switch could be a general property of multistable gene networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that a loss of resilience approaching a phenotypic switch could be a general property of multistable gene networks and that 'generic' or global perturbations, such as temperature or salt shocks, can cause widespread loss of cellular memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data across multiple gene networks (toggle switch, GAL network, lac operon).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "ea25d438-e83f-4d9a-93e1-f6a292af2b0b",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C58",
+      "claim": "Generic or global perturbations, such as temperature or salt shocks, can cause widespread loss of cellular memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that a loss of resilience approaching a phenotypic switch could be a general property of multistable gene networks and that 'generic' or global perturbations, such as temperature or salt shocks, can cause widespread loss of cellular memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental data showing loss of resilience to various generic perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "46568f9e-9dbc-4ebf-a0f9-4232ec5a5117",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C59",
+      "claim": "Brief environmental perturbations can dramatically increase the rate of phenotypic switching from a highly stable memory state into an alternative state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have shown that brief perturbations in the extracellular environment can dramatically increase the rate of phenotypic switching from a highly stable memory state into an alternative state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main finding of the study, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "1b062cbd-61a0-4378-b6f3-73dd23445ed4",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C60",
+      "claim": "The loss of resilience to perturbations near the bifurcation can be explained by a shrinking of the basin of attraction of the phenotypic state.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that this loss of resilience to perturbations near the bifurcation can be explained by a shrinking of the basin of attraction of the phenotypic state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and analysis of the basin boundary shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "cbd43853-7f3e-498a-858a-001efe1bac0f",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C61",
+      "claim": "By observing the GFP-RFP distribution at the end of the perturbation period and applying a simple threshold, the fraction of cells that would return to the pre-perturbation memory state at the end of the recovery period could be accurately predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "By observing the GFP-RFP distribution at the end of the perturbation period and applying a simple threshold, we were able to accurately predict the fraction of cells that would return to the pre-perturbation memory state at the end of the recovery period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "db3a1696-af35-49c7-8bd3-87905924850c",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C62",
+      "claim": "At a given distance from the bifurcation, the same basin boundary was able to accurately predict the switching fraction in response to eight different perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "At a given distance from the bifurcation, the same basin boundary was able to accurately predict the switching fraction in response to eight different perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "14e03c1d-b3ec-452e-8e66-faccbfde3137",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C63",
+      "claim": "The predictive success of the threshold is particularly impressive given that the different perturbations have dramatically different effects on the GFP-RFP distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive success of this threshold is particularly impressive given that the different perturbations have dramatically different effects on the GFP-RFP distribution (see Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is an inference from the experimental data and analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "e2ef36b9-f57a-4d58-8fd7-05d28e2f230c",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C64",
+      "claim": "Part of the mechanism by which the perturbations act on the system is that the perturbations cause a shift in the stability landscape underlying the phenotypic states.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of the answer is certainly that the perturbations cause a shift in the stability landscape underlying the phenotypic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculation about the mechanism of perturbation effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "72fef573-47c9-458e-b827-8658c248a945",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C65",
+      "claim": "It is possible that the perturbations cause an increase in noisy gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the perturbations cause an increase in noisy gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculation about the mechanism of perturbation effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "05e0d533-859a-4c43-b347-c065fd9c1198",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C66",
+      "claim": "The perturbations lasted for a significant duration: 24 hr, or roughly 3 to 8 cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The perturbations (salt stress, heat stress, etc) lasted for a significant duration: 24 hr, or roughly 3 to 8 cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "d2ab97b9-080b-4271-8ef7-05c4496861ee",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C67",
+      "claim": "The degree of switching is set by both the intensity and duration of the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two key observations emerged. (1) The degree of switching is set by both the intensity and duration of the perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Gillespie simulation results shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "67c63519-04c0-47e5-bc75-2527ec124704",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C68",
+      "claim": "For dramatic perturbations, the minimum duration of perturbation to induce switching is approximately set by the cell division time.",
+      "claim_type": "EXPLICIT",
+      "source": "For dramatic perturbations, the minimum duration of perturbation to induce switching is approximately set by the cell division time (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Gillespie simulation results shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "e1416c82-b4d4-4681-b9c3-16abe2140a5b",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C69",
+      "claim": "Not all perturbations induced phenotypic switching.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Not all perturbations induced phenotypic switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Gillespie simulation results shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "6b90e3a9-5e56-480b-b784-640132652205",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C70",
+      "claim": "Perturbations which stabilized the high Lac state induced negligible switching into the high Tet state.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, perturbations which stabilized the high Lac state induced negligible switching into the high Tet state (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Gillespie simulation results shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "f1895c53-62b6-4197-88ae-4fd7dc28ad2e",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C71",
+      "claim": "For robust cellular memory in natural contexts subject to environmental noise, low rates of stochastic switching from the phenotypic state is not sufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have demonstrated that for robust cellular memory in natural contexts subject to environmental noise, low rates of stochastic switching from the phenotypic state is not sufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental findings showing that stable states can still lose resilience to perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "28d8fd78-e59f-49d0-b765-94644faa5fc5",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C72",
+      "claim": "Cellular memory must be robust against environmental fluctuations and perturbations that are impossible to avoid.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the cellular memory must also be robust against environmental fluctuations and perturbations that are impossible to avoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental findings and general biological knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "a0b0e9bc-eee0-405b-b1fb-4cb9f38ca40d",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C73",
+      "claim": "Many forms of cellular memory will become destabilized near a critical transition given that over time there will often be multiple kinds of environmental fluctuations and perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that over time there will often be multiple kinds of environmental fluctuations and perturbations, our results argue that many forms of cellular memory will become destabilized near a critical transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the experimental findings showing loss of resilience to multiple perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "17e78b2f-f780-4062-87c1-9b034d7c8871",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C74",
+      "claim": "Toggle switch strains have been previously characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Toggle switch strains have been previously characterized (Ellis et al., 2009; Wu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "e1ed7afa-ca9e-4478-bf40-69c0c693d2f6",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C75",
+      "claim": "Gal80-inducible strains have been previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "Gal80-inducible strains have been previously described (Acar et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "9d0fc51b-3848-410c-9da5-9bbcfb3220dc",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "claim_id": "C76",
+      "claim": "LacY-YFP fusion strains have been previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "LacY-YFP fusion strains have been previously described (Choi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The synthetic toggle switch in budding yeast exhibits bistability and stable cellular memory at intermediate ATc concentrations, with cells maintaining phenotypic states for over 260 hours and 80 cell divisions. The system shows hysteresis with cells converging to history-independent states at extreme ATc concentrations, and displays non-exponential switching kinetics approaching the critical transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 collectively demonstrate the toggle switch's bistable behavior through experimental data (Figures 1B,C) and prior characterization. The observation of stable memory for >260 hours (C23) with non-exponential kinetics (C26) is well-documented in the figures, though the speculation about metastable states (C26) remains unconfirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "237f4303-5081-4850-b201-f21aa6978c63",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phenotypic states in the toggle switch lose resilience to directional perturbations (IPTG changes) near the critical transition. Far from the transition (2 ng/ml ATc), IPTG perturbations cause minimal switching (~0%), while close to the transition (8 ng/ml ATc), the same perturbation causes the majority of cells to switch states, with switching persisting after perturbation removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C28-C34 are strongly supported by experimental data in Figures 2C,D showing dose-dependent loss of resilience. The control experiments (C34) demonstrating ~0.5% spontaneous switching validate that observed switching is perturbation-induced. The correlation between perturbation severity and switching fraction (C33) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The toggle switch exhibits loss of resilience to generic perturbations (heat, salt, ethanol, glucose) near the critical transition. At 2 ng/ml ATc, these perturbations cause minimal switching, while at 8 ng/ml ATc, nearly complete switching occurs despite negligible spontaneous switching in controls. The switching probability increases with perturbation strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C36-C39 are well-supported by experimental data in Figures 3A,B and supplementary figures. The observation that multiple mechanistically distinct perturbations all induce switching near the critical transition is a key finding. The dose-response relationship (C39) is documented in Figure 3\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "9b913f3b-68e4-4591-b94b-906549d5a1a3",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Generic perturbations do not cause loss of resilience in the transition from the high RFP state. Salt, ethanol, and heat stresses actually stabilize the RFP state by increasing RFP output. Phenotypic states only lose resilience to perturbations that push the system toward the alternative state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by data in Figure 3\u2014figure supplement 3, demonstrating directional specificity of the loss of resilience. This is an important control showing that not all perturbations cause switching in all directions, which strengthens the mechanistic interpretation that perturbations must push toward the alternative state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The loss of resilience is driven by a shrinking basin of attraction near the critical transition. A single linear separatrix in log-log GFP-RFP space accurately predicts switching fractions for eight different perturbations at a given ATc concentration. The basin boundary moves closer to the stable fixed point as ATc increases from 2 to 8 ng/ml.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 and C60-C63 are well-supported by the basin boundary analysis in Figure 4. The mathematical model (C46, Figure 4\u2014figure supplement 1) justifies the linear separatrix assumption. The predictive success across diverse perturbations (C47, C62) is impressive and validates the basin of attraction mechanism. However, the assumption of equal promoter strengths should be experimentally verified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "aeaccf1b-c9cc-4b63-a43a-f8c730898b29",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Traditional early warning indicators based on local stability fail to predict the critical transition in this gene network. The mean GFP of unswitched cells remains approximately constant across ATc concentrations showing loss of resilience, and there is no increase in population variation (coefficient of variation) approaching the critical transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by data in Figures 5A,B,C showing constant mean fluorescence and no increase in CV. This negative result is important as it demonstrates that commonly proposed early warning indicators do not apply to this system, highlighting the distinction between local and global stability measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "a9aeed03-177d-47ae-9afe-86d40873ce47",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The yeast GAL network, modified to enhance memory by constitutive GAL80 expression, exhibits loss of resilience to glucose and ethanol perturbations but not to salt or heat perturbations near its critical transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C53-C55 are supported by experimental data in Figure 6. The use of GAL80 overexpression to enhance memory (C54) is appropriately justified by citation. The selective loss of resilience to glucose and ethanol but not salt/heat (C55) parallels findings in the toggle switch, though the mechanistic basis for this selectivity could be better explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "7d746c81-644f-433d-a239-d445fb51ab9d",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The E. coli lac operon shows loss of resilience to both directional perturbations and ethanol stress. Loss of resilience approaching a phenotypic switch may be a general property of multistable gene networks, and generic perturbations can cause widespread loss of cellular memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by data in Figure 6\u2014figure supplement 1 for the lac operon. The generalization to multistable networks (C57-C58) is reasonable given observations in three different systems (toggle switch, GAL network, lac operon) across two species, though more examples would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "31870790-6428-4a77-a5ec-d3fdbcac9a12",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gillespie simulations reveal that the degree of switching depends on both perturbation intensity and duration, with the minimum duration for dramatic perturbations approximately equal to the cell division time. Not all perturbations induce switching; those that stabilize the current state induce negligible switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are supported by simulation results in Figure 4\u2014figure supplements 3 and 4. These computational results complement the experimental findings and provide mechanistic insights into perturbation dynamics. However, the simulations use a simplified phenomenological model, and experimental validation of the duration-dependence would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "2275f95b-db3c-4fd9-bed1-93dc0af6c9b1",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The theoretical framework from complex systems predicts that basins of attraction shrink as stable and unstable fixed points approach one another near critical transitions, leading to loss of resilience. Systems far from critical transitions return to their original state after perturbations, while those near transitions may switch to alternative stable states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 and C27 establish the theoretical foundation from prior work on complex systems (cited appropriately). These concepts are well-established in the literature and provide the conceptual framework for the experimental work. The application to gene networks is the novel contribution of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "21febc3c-1905-49c7-9f91-43d07572f604",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "For robust cellular memory in natural contexts, low rates of stochastic switching are insufficient; memory must also be robust against environmental perturbations. Many forms of cellular memory will become destabilized near critical transitions given the inevitability of multiple environmental fluctuations over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 represent important conceptual conclusions drawn from the experimental findings. These inferences are well-supported by the data showing that states with negligible spontaneous switching can still lose resilience to perturbations. The broader implications for cellular memory (C73) are reasonable extrapolations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "4d83032c-4954-43a4-bfba-e35db9aa84c0",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Microorganisms exhibit history-dependent phenotypic responses that can be retained after stimulus removal and are critical for survival. Natural gene networks like the yeast GAL network and B. subtilis sporulation can exist in multiple phenotypic states depending on history. Phenotypic memory often results from feedback loops within cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C12 establish the biological context and are supported by appropriate citations to prior work. These are well-established facts in the field that motivate the current study. The claims accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "d7f7bc99-e6df-4596-97c6-f86a787d01fb",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mechanism by which perturbations induce switching may involve shifts in the stability landscape and/or increases in noisy gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 are explicitly speculative (\"Part of the answer is certainly...\" and \"It is also possible...\"). While these are reasonable hypotheses, they lack experimental support in the manuscript. Future work distinguishing between these mechanisms would be valuable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "087ea774-3307-450b-8245-d0d628ed3be9",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The perturbations in the experiments lasted 24 hours, corresponding to approximately 3-8 cell divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 accurately describes the experimental design. This is a straightforward methodological detail that is important for interpreting the results and comparing to the simulation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "0b2e7b29-3f6f-4a9a-ba42-c65f4deb3e36",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The strains used in this study (toggle switch, GAL80-inducible, and LacY-YFP fusion strains) have been previously characterized in cited publications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 appropriately cite prior characterization of the strains used. This establishes that the biological systems are well-validated, though independent verification of key properties would strengthen confidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "fc733a60-7ee2-4120-9da6-d88a27519eb8",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Brief environmental perturbations can dramatically increase the rate of phenotypic switching from highly stable memory states into alternative states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is a summary statement of the main finding, well-supported by the collective experimental evidence from the toggle switch, GAL network, and lac operon experiments. This represents the core contribution of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "817199e7-153c-428a-964e-3f45fe24cc13",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Traditional measures of cellular memory based on state lifetime would classify all tested conditions as stable with high memory, despite their differential resilience to perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is an important inference highlighting the inadequacy of traditional memory metrics. It is supported by the observation of negligible spontaneous switching (C34) across conditions that show vastly different responses to perturbations. This conceptual point is central to the manuscript's contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    },
+    {
+      "id": "82629007-efdf-44fd-9ebd-46748bb6c30f",
+      "content_id": "a2a56889-195b-452d-9968-ea372cb62e1b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Glucose-induced switching can be understood through catabolite repression of the GAL1 upstream activation sequence, which shuts down expression of the entire toggle switch system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 provides a mechanistic explanation for glucose effects, supported by citations to prior work on the toggle switch system. This is a reasonable interpretation, though direct experimental verification of the proposed mechanism would strengthen the claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:49:06.618132Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e760dc5f-b8fe-4dda-a101-aba933cc9a36",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "4dd4e428-6267-40c7-bac8-cb48036bfb74",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "0ae39f60-dda7-4ded-af17-cf543cccf51e",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "8d7d2b88-bd18-4222-86eb-c3d01a8a17c7",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "2e998c56-6584-4a43-979d-35a4170ebd0e",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "3aa44fc9-d363-40c8-a39f-c138544a87f2",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "2f83f0f7-5d59-4a9c-85ea-28e106573790",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "067c619f-c586-44b5-ac67-272505f1ed1b",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "da232352-a2d9-4c1d-9dab-4f222895e6dd",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "e28f9877-6bce-4788-88a3-73cb0927db42",
+      "result_id": "d9890bf4-0fd2-4a8a-b482-2ec26ea105f4"
+    },
+    {
+      "claim_id": "fcc79eb1-cae3-4b0a-a6c0-cad88d666820",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "12eaeeb0-45c7-419a-a567-9ae5e3cd137a",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "454ed1d6-dd11-41d0-bc18-f96a616f35bb",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "7ac7c532-7850-4c1a-8047-89d0eb8cf777",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "7c3cf897-27c4-484e-8a95-6266b343fb3b",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "9efd697d-d956-43a0-9176-87459b1468c4",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "33223785-3b00-485e-a9d7-e0ac7abbee8d",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "e773cdd9-e998-479a-a42c-87156d55f30e",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "1c112b4c-9a49-44f9-8efc-2e90a034a1b7",
+      "result_id": "237f4303-5081-4850-b201-f21aa6978c63"
+    },
+    {
+      "claim_id": "d5f6316d-2847-4c4e-8b4e-947ebf8d2874",
+      "result_id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51"
+    },
+    {
+      "claim_id": "c0875c32-1a4f-41da-8237-bd0537f6b0ad",
+      "result_id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51"
+    },
+    {
+      "claim_id": "5abc1419-82fa-4d4a-9206-11b85e510869",
+      "result_id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51"
+    },
+    {
+      "claim_id": "306e73ba-032e-4874-bab0-cddc21929f92",
+      "result_id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51"
+    },
+    {
+      "claim_id": "499257c1-436a-4e43-a2bf-6ef2e1c42419",
+      "result_id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51"
+    },
+    {
+      "claim_id": "b2a7dd01-27b7-4f33-8b56-18024dae1b5d",
+      "result_id": "9bb8bde4-f1ab-4cce-8a0f-4768dee60f51"
+    },
+    {
+      "claim_id": "6882af12-6cfd-4766-af9b-4dc9a5964cfb",
+      "result_id": "9b913f3b-68e4-4591-b94b-906549d5a1a3"
+    },
+    {
+      "claim_id": "2b508af1-8c85-4d9b-8e3c-0e7ae5ed8756",
+      "result_id": "9b913f3b-68e4-4591-b94b-906549d5a1a3"
+    },
+    {
+      "claim_id": "f5b7653b-380d-45fe-93b8-06b801cb59d6",
+      "result_id": "9b913f3b-68e4-4591-b94b-906549d5a1a3"
+    },
+    {
+      "claim_id": "864e6cd1-8463-46a3-808b-03dcbfba3aeb",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "bd67bccb-e4aa-4adf-ac66-2db7c091c6f0",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "3fb721d9-2388-4cdf-afbd-c0d52d4ccc35",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "1b9617a1-6e39-403b-aa0f-2ba326459ccb",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "6e54e85c-611b-4cea-9df1-a75fd96f78d0",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "d49e291f-054b-4466-8cf4-ad3607c2301a",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "1b062cbd-61a0-4378-b6f3-73dd23445ed4",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "cbd43853-7f3e-498a-858a-001efe1bac0f",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "db3a1696-af35-49c7-8bd3-87905924850c",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "14e03c1d-b3ec-452e-8e66-faccbfde3137",
+      "result_id": "dddb15da-3583-4f39-b40e-48a6cf1bf15d"
+    },
+    {
+      "claim_id": "301adb9a-6cf2-4034-ad0c-ba2bc8a51519",
+      "result_id": "aeaccf1b-c9cc-4b63-a43a-f8c730898b29"
+    },
+    {
+      "claim_id": "8a164738-7d2d-465d-a5f0-a4892de747a2",
+      "result_id": "aeaccf1b-c9cc-4b63-a43a-f8c730898b29"
+    },
+    {
+      "claim_id": "703f013f-2a10-4ec5-a0af-6cad6e224d94",
+      "result_id": "aeaccf1b-c9cc-4b63-a43a-f8c730898b29"
+    },
+    {
+      "claim_id": "f84efdee-6843-4254-9cc9-dd8a24bc2b47",
+      "result_id": "a9aeed03-177d-47ae-9afe-86d40873ce47"
+    },
+    {
+      "claim_id": "9a4bfa46-7d9e-4ae9-8dbe-e87245085361",
+      "result_id": "a9aeed03-177d-47ae-9afe-86d40873ce47"
+    },
+    {
+      "claim_id": "db7175ae-9bcd-40f2-a3cf-f9e7742c222f",
+      "result_id": "a9aeed03-177d-47ae-9afe-86d40873ce47"
+    },
+    {
+      "claim_id": "c8cbc5d2-8bb3-4e33-851e-39bdd80fbb33",
+      "result_id": "a9aeed03-177d-47ae-9afe-86d40873ce47"
+    },
+    {
+      "claim_id": "c41c338f-7d50-4cd8-815b-fff7f1cff5aa",
+      "result_id": "7d746c81-644f-433d-a239-d445fb51ab9d"
+    },
+    {
+      "claim_id": "295ecded-0435-4059-a259-84e4b19bf83d",
+      "result_id": "7d746c81-644f-433d-a239-d445fb51ab9d"
+    },
+    {
+      "claim_id": "ea25d438-e83f-4d9a-93e1-f6a292af2b0b",
+      "result_id": "7d746c81-644f-433d-a239-d445fb51ab9d"
+    },
+    {
+      "claim_id": "d2ab97b9-080b-4271-8ef7-05c4496861ee",
+      "result_id": "31870790-6428-4a77-a5ec-d3fdbcac9a12"
+    },
+    {
+      "claim_id": "67c63519-04c0-47e5-bc75-2527ec124704",
+      "result_id": "31870790-6428-4a77-a5ec-d3fdbcac9a12"
+    },
+    {
+      "claim_id": "e1416c82-b4d4-4681-b9c3-16abe2140a5b",
+      "result_id": "31870790-6428-4a77-a5ec-d3fdbcac9a12"
+    },
+    {
+      "claim_id": "6b90e3a9-5e56-480b-b784-640132652205",
+      "result_id": "31870790-6428-4a77-a5ec-d3fdbcac9a12"
+    },
+    {
+      "claim_id": "b85ce7f6-e278-4334-a337-1ea0c7f1fd86",
+      "result_id": "2275f95b-db3c-4fd9-bed1-93dc0af6c9b1"
+    },
+    {
+      "claim_id": "ca31b309-7219-4e0f-bcaa-01b781af5f10",
+      "result_id": "2275f95b-db3c-4fd9-bed1-93dc0af6c9b1"
+    },
+    {
+      "claim_id": "4d8dc6af-1561-48a3-841c-fdcbf87b09b9",
+      "result_id": "2275f95b-db3c-4fd9-bed1-93dc0af6c9b1"
+    },
+    {
+      "claim_id": "2df1b90f-cf2f-4241-80ec-981f6d8d30df",
+      "result_id": "2275f95b-db3c-4fd9-bed1-93dc0af6c9b1"
+    },
+    {
+      "claim_id": "7a90a022-3738-4813-af1e-f7f4870f6e83",
+      "result_id": "2275f95b-db3c-4fd9-bed1-93dc0af6c9b1"
+    },
+    {
+      "claim_id": "f1895c53-62b6-4197-88ae-4fd7dc28ad2e",
+      "result_id": "21febc3c-1905-49c7-9f91-43d07572f604"
+    },
+    {
+      "claim_id": "28d8fd78-e59f-49d0-b765-94644faa5fc5",
+      "result_id": "21febc3c-1905-49c7-9f91-43d07572f604"
+    },
+    {
+      "claim_id": "a0b0e9bc-eee0-405b-b1fb-4cb9f38ca40d",
+      "result_id": "21febc3c-1905-49c7-9f91-43d07572f604"
+    },
+    {
+      "claim_id": "b1af68fd-99a9-4f27-b2be-68af10965d88",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "c0f828d6-a7ae-4726-89dd-46af3520122c",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "ed1beefa-500e-431d-976e-23887262447f",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "7de5c45a-6eaa-4c2c-b6b1-ec3ac02c1b77",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "b83c74f4-e7a4-4ffa-a6b8-5c165cf37cfb",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "56341d1e-4095-4731-b83d-c2de9dce60a6",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "66428535-78dc-421e-ba39-10eb03e76765",
+      "result_id": "4d83032c-4954-43a4-bfba-e35db9aa84c0"
+    },
+    {
+      "claim_id": "e2ef36b9-f57a-4d58-8fd7-05d28e2f230c",
+      "result_id": "d7f7bc99-e6df-4596-97c6-f86a787d01fb"
+    },
+    {
+      "claim_id": "72fef573-47c9-458e-b827-8658c248a945",
+      "result_id": "d7f7bc99-e6df-4596-97c6-f86a787d01fb"
+    },
+    {
+      "claim_id": "05e0d533-859a-4c43-b347-c065fd9c1198",
+      "result_id": "087ea774-3307-450b-8245-d0d628ed3be9"
+    },
+    {
+      "claim_id": "17e78b2f-f780-4062-87c1-9b034d7c8871",
+      "result_id": "0b2e7b29-3f6f-4a9a-ba42-c65f4deb3e36"
+    },
+    {
+      "claim_id": "e1ed7afa-ca9e-4478-bf40-69c0c693d2f6",
+      "result_id": "0b2e7b29-3f6f-4a9a-ba42-c65f4deb3e36"
+    },
+    {
+      "claim_id": "9d0fc51b-3848-410c-9da5-9bbcfb3220dc",
+      "result_id": "0b2e7b29-3f6f-4a9a-ba42-c65f4deb3e36"
+    },
+    {
+      "claim_id": "46568f9e-9dbc-4ebf-a0f9-4232ec5a5117",
+      "result_id": "fc733a60-7ee2-4120-9da6-d88a27519eb8"
+    },
+    {
+      "claim_id": "4b191028-c8b2-4b7f-8711-76b36396663a",
+      "result_id": "817199e7-153c-428a-964e-3f45fe24cc13"
+    },
+    {
+      "claim_id": "c23141df-37c6-4b0f-bc2c-dbdfc8c09606",
+      "result_id": "82629007-efdf-44fd-9ebd-46748bb6c30f"
+    }
+  ],
+  "comparisons": []
+}

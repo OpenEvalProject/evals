@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Using 7T fMRI at 0.8mm isotropic resolution across two independent datasets, the study demonstrates that PRC shows preferential functional connectivity with anterior-lateral EC (al-EC) while PHC shows preferential connectivity with posterior-medial EC (pm-EC). This differential connectivity follows a complex 3D gradient from anterior-ventral-lateral to posterior-dorsal-medial EC, with significant interactions along both anterior-posterior and lateral-medial axes. Multivariate classification achieved ~60% overall accuracy (>80% in extreme regions) in predicting connectivity preference based solely on voxel coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by convergent evidence from multiple analytical approaches across two independent datasets (N=15, N=14). The findings are demonstrated through: (1) seed-to-voxel connectivity analyses with appropriate statistical thresholding (Z>2.3, p<0.05 cluster-corrected), (2) paired t-tests showing significant differential connectivity, (3) repeated-measures ANOVAs with significant interactions (all p<0.005), (4) 3D visualization of connectivity gradients, (5) unilateral seed analyses confirming bilateral symmetry, and (6) cross-validated multivariate classification significantly above chance (p<0.001). The replication across two independent samples and consistency across multiple analytical methods strongly support these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C76"
+    ],
+    "result": "The functionally-defined EC subregions (al-EC and pm-EC) exhibit differential connectivity with the subiculum along the proximal-distal (transverse) axis. Al-EC shows preferential connectivity with proximal subiculum while pm-EC shows preferential connectivity with distal subiculum, with significant seed\u00d7proximal-distal interactions in both experiments (p<0.001). However, no significant interaction was found along the anterior-posterior axis of the subiculum for EC subregions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by repeated-measures ANOVAs showing significant two-way interactions (F(1,14)=25.7, p<0.001 for Exp.1; F(1,13)=24.3, p<0.001 for Exp.2) and follow-up t-tests confirming the predicted pattern in both experiments. Slice-by-slice analyses provide additional visualization of the gradient. The lack of anterior-posterior differentiation (p>0.26) is also clearly documented. The findings replicate across two independent datasets, strengthening confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PRC and PHC show differential connectivity with the subiculum along both the proximal-distal and anterior-posterior axes. PRC shows stronger connectivity with proximal and anterior subiculum, while PHC shows stronger connectivity with distal subiculum and (in one experiment) posterior subiculum. Importantly, the connectivity profiles of PRC/PHC with subiculum differ from those of al-EC/pm-EC along the longitudinal axis, suggesting that EC is not simply an anatomical extension of PRC/PHC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proximal-distal gradient is well-supported with significant interactions in both experiments (p\u22640.002) and consistent follow-up tests. The anterior-posterior gradient shows mixed support: significant in the most anterior 8 slices for both experiments, but posterior differentiation only reaches significance in Experiment 1 (p=0.035) and not Experiment 2 (p>0.4). The critical comparison between PRC/PHC and al-EC/pm-EC connectivity profiles shows a significant interaction in Experiment 1 (p=0.017) with a trend in Experiment 2 (p=0.087), supporting the interpretation that EC has distinct functional properties beyond simply relaying PRC/PHC signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C85",
+      "C103",
+      "C104",
+      "C109",
+      "C110"
+    ],
+    "result": "The human EC can be reliably subdivided into anterior-lateral and posterior-medial functional subregions whose connectivity patterns closely parallel known anatomical connectivity in rodents and nonhuman primates. These subregions represent critical nodes in two distinct cortico-hippocampal processing pathways, and the EC functions as more than a simple relay between neocortex and hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergence of multiple findings: (1) the demonstrated differential connectivity of EC subregions with PRC/PHC and subiculum, (2) replication across two independent datasets, (3) consistency with anatomical findings from animal models (extensively cited), (4) the demonstration that EC-subiculum connectivity differs from PRC/PHC-subiculum connectivity along the longitudinal axis, and (5) the complex 3D topography that cannot be captured by simple lateral-medial divisions. The inference that EC is more than a relay is supported by the differential connectivity patterns, though the functional implications remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study employed 7T fMRI with 0.8mm isotropic resolution (>6\u00d7 higher than previous MTL connectivity studies) in two independent samples (N=15 and N=14 after exclusions). Functional connectivity analyses were performed on task residuals after regressing out task effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details are clearly documented and appropriate. The resolution claim is verifiable through comparison with cited prior studies. The sample sizes are adequate for the within-subject connectivity analyses, and the use of two independent datasets for replication is a strength. The exclusion criteria (signal dropout, motion artifacts) are reasonable and clearly stated. The use of task residuals is justified by citations to prior work demonstrating equivalence to resting-state data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The methodological approach of analyzing task residuals after removing task-related variance is justified by prior work showing linear superposition of task activity and spontaneous BOLD fluctuations, with qualitatively consistent connectivity patterns between task residuals and continuous resting-state data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological justification is supported by appropriate citations to prior work (Fox et al., 2006; Fair et al., 2007; Lacy and Stark, 2012). While the authors acknowledge quantitative differences may exist, the qualitative consistency of connectivity patterns has been demonstrated in prior literature. This approach is reasonable given the constraints of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C58",
+      "C59",
+      "C67"
+    ],
+    "result": "Prior anatomical and functional studies in rodents and nonhuman primates have established that EC can be divided into subregions (LEC/MEC in rodents, anterior-lateral/posterior-medial in primates) that show differential connectivity with PRC/PHC and with hippocampal subfields along the proximo-distal axis. These pathways have been associated with object versus spatial/contextual information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior work are well-supported by extensive citations to the relevant literature. The authors accurately represent the state of knowledge from animal models, including the anatomical organization, functional distinctions, and the caveat that rodent LEC/MEC terminology emphasizes lateral-medial but actually reflects a rostrolateral-caudomedial organization. This background appropriately motivates the current human study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C60"
+    ],
+    "result": "Prior 3T fMRI studies in humans demonstrated differential connectivity of PRC and PHC with anterior versus posterior hippocampus (particularly subiculum and CA1), but were unable to assess EC connectivity due to limitations in SNR and spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior human fMRI work are accurately represented and appropriately cited (Kahn et al., 2008; Libby et al., 2012). The inference about technical limitations preventing EC assessment is reasonable given the small size and susceptibility of the EC. This appropriately establishes the gap that the current 7T study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A concurrent study by Navarro Schr\u00f6der et al. (2015) examined EC connectivity with extended cortical networks outside the MTL, finding that al-EC connects preferentially with anterior-temporal/prefrontal systems while pm-EC connects with posterior-medial systems, with differential activation during object versus scene processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent findings from the cited concurrent study. The convergence between the current study's MTL-focused findings and Navarro Schr\u00f6der et al.'s broader network findings strengthens both sets of results. The authors appropriately note the complementary nature of the two studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior fMRI studies have shown that PHC is preferentially engaged during processing of scenes/spatial/contextual information while PRC is preferentially engaged during object/item processing. Recent studies have reported differential activation in lateral versus medial EC during object versus spatial processing tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior functional neuroimaging work are well-supported by citations to review articles and specific studies (Schultz et al., 2012; Reagh and Yassa, 2014). The authors appropriately use this functional dissociation to interpret their connectivity findings and to motivate the functional significance of EC subdivisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In Alzheimer's disease, tau pathology emerges early in lateral EC regions, and functional connectivity analyses could potentially reveal how EC degeneration impacts distributed cortical networks and transsynaptic pathology progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim about early tau pathology in lateral EC is well-supported by citations to established AD pathology studies (Braak and Braak, 1991; Braak and Del Tredici, 2004). However, the potential applications to understanding AD progression are speculative and not directly tested in this study. While the speculation is reasonable and supported by citations to relevant work (Khan et al., 2014; La Joie et al., 2014), these remain hypotheses requiring future validation. The authors appropriately frame these as potential applications rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "PRC and PHC have direct reciprocal connections with CA1 and subiculum in addition to indirect connections via EC. The differential organization of direct versus EC-mediated connectivity may allow comparison between EC-gated hippocampal signals and direct neocortical input, and could enable integration of information across processing streams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anatomical claim about direct PRC/PHC-hippocampal connections is well-supported by citations to anatomical studies. However, the functional interpretations about signal comparison and information integration are speculative. While these are reasonable hypotheses motivated by the anatomical organization and supported by some citations, they are not directly tested in this study. The authors appropriately present these as possibilities rather than demonstrated mechanisms.",
+    "result_type": "MINOR"
+  }
+]

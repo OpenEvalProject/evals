@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The C2B domain of Munc13 interacts with the synprint region of CaV2.2 via a conserved polybasic sequence (KKRT), similar to interactions observed for synaptotagmin-1 and RIM1. Mutation of this motif (Munc13-KR/AA) disrupts the in vitro interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 collectively demonstrate the in vitro interaction between Munc13's C2B domain and VGCCs through a polybasic motif. The evidence includes sequence homology (C15, C19), prior knowledge of similar interactions (C16, C17), and direct biochemical data showing Ca2+-independent binding that is disrupted by the KR/AA mutation (C18, C20). The inference that this motif mediates interaction in situ (C21) is reasonable but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Munc13 knockdown (Munc13-KD) results in complete block of exocytosis and a 34% reduction in single action potential-driven Ca2+ influx at presynaptic terminals. This reduction is not due to changes in action potential waveform or total CaV2.1 abundance, and is fully rescued by re-expression of wild-type Munc13-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 provide converging evidence that Munc13-KD reduces Ca2+ influx independent of AP waveform changes (C27, C28) or CaV2.1 abundance (C29). The rescue experiment (C26) demonstrates specificity. However, the authors acknowledge they cannot distinguish between reduced surface VGCC abundance versus altered gating properties, which is an important limitation. The immunostaining approach (C29) only addresses total CaV2.1, not surface expression or CaV2.2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Following a 100 Hz burst (50 APs), wild-type synapses fully recover Ca2+ influx within 500 ms, whereas Munc13-KD synapses show ~30% residual inactivation at this timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 demonstrate differential recovery kinetics between WT and Munc13-KD using a train-recovery paradigm. The data in Figure 3 and Table 1 support these observations. However, the authors note they cannot distinguish whether this reflects increased inactivation during the train versus slower recovery in Munc13-KD, which limits mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In wild-type synapses, paired action potentials at 2 ms inter-stimulus interval (ISI) show 90% reduction in Ca2+ influx on the second AP. This depression is not driven by exocytosis, as demonstrated by TeNT-LC experiments that eliminate exocytosis without affecting VGCC reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 establish that paired-pulse depression of Ca2+ influx at 2 ms ISI is not exocytosis-dependent. The TeNT-LC control (C35, C36) is critical and well-executed. The 90% reduction (C33) is consistent with prior EPSC measurements (C34). The conclusion (C37) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C73"
+    ],
+    "result": "At physiological temperature (37\u00b0C), action potentials successfully propagate to presynaptic terminals during 2 ms ISI paired stimulation, whereas at 30\u00b0C the second AP fails to propagate. This demonstrates that synaptic depression at 2 ms ISI at physiological temperature is not due to AP failure but rather to Munc13-mediated VGCC reactivation failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C72-C73 provide critical temperature-dependent evidence using Arch-GFP voltage imaging. The data clearly show AP propagation at 37\u00b0C (C39) but failure at 30\u00b0C (C38), resolving a long-standing question in the field (C72). The conclusion that depression is due to VGCC reactivation failure rather than AP failure at physiological temperature (C40, C73) is well-supported. The correction for residual ARCH signal is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Munc13-KD dramatically alters VGCC reactivation kinetics: the second AP response at 2 ms ISI is 68% of the first (versus 10% in WT), and recovery is more efficient across 2-40 ms ISIs. Ca2+ influx at the soma in WT cells resembles that at Munc13-KD boutons, suggesting Munc13 actively modulates VGCC properties specifically in the active zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 demonstrate profound effects of Munc13 on VGCC kinetics. The paired-pulse data (C41) and recovery time course (C45, C46) are compelling. The soma comparison (C43) provides strong evidence for active-zone-specific modulation (C44), though it would be strengthened by direct measurement of Munc13 levels at soma versus boutons. The conclusion (C42) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The VGCC refractory period at 2 ms ISI is independent of Ca2+ influx magnitude in both WT and Munc13-KD neurons, as demonstrated by varying external Ca2+ concentrations. This suggests Munc13 alters VGCC gating by changing energy barriers between channel states rather than through Ca2+-dependent inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 address the mechanism of VGCC modulation. The external Ca2+ manipulation experiments (C48, C49) effectively rule out Ca2+-dependent inactivation (C47) as the mechanism. The mechanistic interpretation (C51) is reasonable given the combined observations of reduced single AP influx, increased reactivation at short ISIs, and slower recovery from trains. However, this remains a model that would benefit from additional biophysical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Re-expression of wild-type Munc13-1 fully rescues Ca2+ influx and VGCC kinetics in Munc13-KD neurons, whereas the Munc13-KR/AA mutant rescues exocytosis but not VGCC function. This demonstrates that the polybasic synprint-binding motif in the C2B domain is specifically responsible for Munc13's effects on VGCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 provide critical structure-function evidence linking the in vitro interaction to functional effects. The differential rescue by WT versus KR/AA mutant (C52, C54, C56) is compelling and demonstrates specificity. The conclusion that the synprint-binding motif is the primary determinant (C55, C57) is well-supported. The fact that KR/AA rescues exocytosis (C54) is important for ruling out indirect effects through vesicle priming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "At 2 ms ISI, wild-type synapses show 80% depression of exocytosis on the second AP, which is independent of Ca2+ influx magnitude. The Munc13-KR/AA mutant rescues single AP exocytosis but fails to restore paired-pulse depression, effectively decoupling vesicle priming from VGCC modulation and demonstrating that the C2B domain interaction mediates VGCC reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 demonstrate the functional consequences of Munc13-VGCC interaction for exocytosis. The paired-pulse exocytosis measurements (C61) parallel the Ca2+ influx data. The Ca2+-independence (C62) is consistent with earlier findings. The differential rescue by WT versus KR/AA (C63, C64) provides strong evidence for decoupling of functions (C65). The conclusion (C66) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C67",
+      "C68",
+      "C71",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Munc13 controls calcium channel use-dependence on millisecond to second timescales through interaction via two basic residues in its C2B domain. This interaction tunes temporal aspects of VGCCs, influences ultra-fast plasticity, and represents a novel mechanism for sculpting synaptic efficacy and controlling synaptic throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 and C67-C68, C71, C91-C93 represent the major conclusions of the study. These are well-supported by the comprehensive experimental evidence including in vitro binding, functional characterization across multiple timescales, structure-function analysis with the KR/AA mutant, and rescue experiments. The work establishes a novel role for active-zone proteins in modulating VGCC gating properties beyond localization/abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establishing prior knowledge about Munc13 as an essential active-zone protein for exocytosis, its multiple interaction domains and partners, and the prevailing understanding that active-zone proteins control VGCC localization/abundance but not channel properties themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 represent established background knowledge supported by appropriate citations. These provide context for the novelty of the current findings. Claim C7 is particularly important as it establishes the prevailing view that the current work challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "Speculative discussion claims about potential mechanisms and broader implications, including possible roles for other active-zone proteins (RIM1, synaptotagmin), three-way partnerships with syntaxin, PIP2 involvement, effects on channel diffusibility, and differences between Munc13 isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70, C74-C77, C78-C79, C80-C82, C85-C86, and C89 are speculative extensions of the findings. While these are reasonable hypotheses based on the data and prior knowledge, they lack direct experimental support in this manuscript. These represent appropriate discussion points and future directions but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "Background claims from the discussion citing prior work on C2B domain functions (PIP2 interaction, oligomerization), PIP2 modulation of VGCCs, Ca2+ channel diffusibility, and high-frequency bursts in the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C87-C88, and C90 represent established knowledge from prior studies, appropriately cited. These provide context for the discussion of potential mechanisms and physiological relevance.",
+    "result_type": "MINOR"
+  }
+]

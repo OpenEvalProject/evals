@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C85"
+    ],
+    "result": "Nearly a third of 47 sequenced non-laboratory yeast strains carried whole or partial chromosome amplification, with some chromosomes amplified in multiple unrelated isolates. Chromosome 8 was aneuploid in five unrelated isolates, and three strains harbored multiple aneuploidies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C85 are well-supported by genomic sequencing data from 47 strains shown in Figure 1A. The prevalence of aneuploidy (nearly one-third of strains) and specific patterns (Chr 8 in five isolates, multiple aneuploidies in three strains) are directly demonstrated by DNA-seq data with appropriate visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C67",
+      "C86"
+    ],
+    "result": "Natural aneuploid strains showed no significant growth reduction compared to euploid controls (p=0.19), with only a slight negative correlation between growth rate and DNA content (R=-0.3). This contrasts sharply with laboratory strains showing extreme growth retardation. Aneuploid derivatives of naturally euploid parents also showed little growth defect, indicating inherent tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C10-C11, C67, and C86 are supported by growth rate measurements in Figures 1B-C with appropriate statistical testing. The comparison between natural and laboratory strains is well-documented, and the forced aneuploidy experiment (C10) provides strong evidence for inherent tolerance rather than adaptive tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Chromosomal amplification was stable for >200-400 generations in four wild strains, whereas the W303 laboratory strain generally loses aneuploidy within 20 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by experimental passaging data demonstrating differential stability of aneuploidy between wild and laboratory strains. This provides important evidence for the biological relevance of aneuploidy in natural populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Naturally aneuploid strains did not activate the environmental stress response seen in laboratory aneuploids, but showed a weak common signature including up-regulation of 69 oxidoreductase genes and down-regulation of 269 genes enriched for mitochondrial ribosomal proteins and respiration genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by RNA-seq data in Figure 2A-B with functional enrichment analysis. The absence of stress response and presence of a distinct mitochondrial/oxidoreductase signature are well-documented, though the biological significance of this weak signature requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Naturally aneuploid yeast showed no growth defect on non-fermentable carbon sources, while W303_Chr12-3n displayed exacerbated defects and W303_Chr12-4n could not be generated with intact mitochondria, suggesting mitochondrial function differences contribute to strain-specific aneuploidy tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by growth measurements on different carbon sources (Figure 3) and experimental attempts to generate strains. The inference about mitochondrial function (C19) is reasonable given the data, though the mechanism remains speculative and would benefit from direct mitochondrial functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C60"
+    ],
+    "result": "Nearly 40% of amplified genes across six aneuploid strains showed lower expression per gene copy than expected, enriched for ribosomal proteins, translation factors, and mitochondrial proteins. Genes with proportionate expression were enriched for cytoplasmic/membrane proteins, while genes with >1.5\u00d7 higher expression were enriched for morphology genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C60 are well-supported by RNA-seq and DNA-seq analysis in Figure 4A with functional enrichment analysis. The methodology for identifying genes with lower-than-expected expression is clearly described and statistically sound, though the specific cutoffs used (1 or 2 standard deviations) introduce some arbitrariness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C62",
+      "C87"
+    ],
+    "result": "In isogenic aneuploid-euploid pairs, 11-36% of amplified genes showed lower-than-expected expression, suggesting active dosage compensation rather than adaptive mutations. This was observed even in forced aneuploids with little adaptation time, indicating dosage compensation is an inherent trait in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C62, and C87 are strongly supported by RNA-seq analysis in isogenic strain pairs (Figure 4B). The use of isogenic pairs eliminates confounding genetic differences, and the observation in forced aneuploids (C27) provides compelling evidence for inherent rather than adaptive compensation. The MLR model classification strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MLR model classification of isogenic strain panels revealed that in YPS1009_Chr12, 7% of genes showed expected expression (Class 1), 28% showed heritably reduced expression (Class 2a), and 29% showed dosage compensation (Class 3a). In NCYC110_Chr8, 11% showed dosage compensation while 49% showed heritably reduced expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by the novel MLR model analysis of RNA-seq data from isogenic strain panels. The statistical methodology is described in detail in the Methods and Appendix, though the model assumptions and validation could be more thoroughly documented. The strain-specific differences are notable and warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Sixteen to 20% of duplicated genes showed amplified mRNA abundance (Class 3b), enriched for cell morphology genes. Several aneuploid strains displayed differences in flocculence or cell shape compared to euploid controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by MLR classification and RNA-seq data (Figure 4B) with functional enrichment analysis. The morphological observations provide phenotypic validation, though more systematic quantification of morphological changes would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The 245 genes subject to dosage compensation were strongly enriched for translation factors, ribosomal proteins, ribosome biogenesis genes, iron/copper transporters, and mitochondrial proteins. Of genes with lower-than-expected expression in YPS163_Chr8 or T73_Chr8-4n, 79% also showed this pattern in NCYC110_Chr8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by functional enrichment analysis and cross-strain comparison of RNA-seq data. The consistency across Chr 8 aneuploid strains (79% overlap) provides validation, though the functional enrichments are heavily driven by ribosomal protein genes which may dominate the signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "There exist strain-specific differences in the genes that are subject to dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C39 is inferred from differences in gene classification across strains, but the evidence is mixed. While some genes show strain-specific patterns, the possibility of misclassification or technical variation is acknowledged. More systematic analysis across multiple chromosomes and strains would be needed to definitively establish strain-specific dosage compensation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C64",
+      "C65"
+    ],
+    "result": "Ribosomal protein genes RPL15A and RPL22A showed dosage compensation when cloned on plasmids, functioning across strain backgrounds and ploidy levels. This extends known feedback mechanisms beyond RPL32 to other RP genes, including those lacking introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C64-C65 are supported by qPCR data in Figure 7A-B showing that RP gene transcripts do not increase with DNA copy. The inference that feedback mechanisms extend beyond RPL32 (C65) is reasonable given the data, though the specific molecular mechanism for intronless genes remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Mitochondrial genes from Chr 12 showed ~2\u00d7 mRNA increase when duplicated in isolation on plasmids, but in the mini_4n strain with partial Chr 12 deletion, some mitochondrial genes lost dosage compensation while others maintained lower-than-expected expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by qPCR (Figure 7C-D) and microarray data (Figure 8B). The results suggest a more complex mechanism for mitochondrial gene dosage compensation that may depend on chromosomal context, though the specific mechanism remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Expression in W303_Chr12-3n was highly correlated with YPS1009_Chr12-3n for Class 3a genes (within 10% for two-thirds), but dosage compensation was lost or obscured in W303_Chr12-4n. Eleven mitochondrial genes on Chr 12 showed opposite patterns between YPS1009 and W303 panels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by RNA-seq data comparison between strain panels (Figure 8C). The strain-specific differences, particularly for mitochondrial genes, are well-documented and consistent with earlier observations about mitochondrial function differences between W303 and wild strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Dosage-compensated genes are enriched for genes deleterious in high copy (p=0.009), show weak enrichment for multi-subunit complexes (p=0.03), and display slightly higher transcript abundance and RNA polymerase occupancy, though these trends depend on inclusion of translation-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by comparison to published datasets with appropriate statistical testing. However, the weak enrichments and dependency on specific gene classes (particularly ribosomal proteins) suggest these may not be universal features of dosage-compensated genes. The balance hypothesis receives only limited support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C88"
+    ],
+    "result": "Genes subject to dosage compensation show higher expression constraint (lower Vg/Vm ratios) in wild populations compared to all genes, as expected for genes toxic when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C88 are supported by analysis of genetic variance (Vg) from natural isolates and mutational variance (Vm) from mutation-accumulation lines, shown in Figure 9A. The methodology is sound and the interpretation is consistent with the hypothesis that dosage compensation targets genes under strong selective constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C89",
+      "C90"
+    ],
+    "result": "Dosage-compensated genes show considerably higher copy-number variation than genes with proportionate expression (p=4e-8), suggesting CNV is buffered at these genes. Genes with heritably reduced expression also showed relaxed CNV constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C89-C90 are supported by CNV analysis across 103 strains (Figure 9B). The elevated CNV at dosage-compensated genes is statistically significant and biologically meaningful, supporting the buffering hypothesis. The finding for heritably reduced genes (C52) is more complex and may reflect misclassification or strain-specific compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Genes subject to dosage compensation show significantly higher buffering capacity scores (Bv) compared to all genes and amplified genes with proportionate expression (p=1.7e-4), demonstrating that dosage-compensated expression buffers CNV in S. cerevisiae populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by the novel Bv metric that integrates CNV frequency (weighted by phylogeny) with expression constraint. The statistical significance is strong and the biological interpretation is sound, though the Bv metric itself could benefit from additional validation and comparison to alternative approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C91"
+    ],
+    "result": "Chr 12 amplification in YPS1009 provides ecological advantage through increased freeze-thaw tolerance. The AQY2 water-transporter gene on Chr 12 escapes dosage compensation, showing higher expression with increasing chromosome copy, and freeze-thaw resistance improves proportionately with Chr 12 copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 and C91 are well-supported by freeze-thaw survival data (Figure 10B) and AQY2 expression data (Figure 10A), combined with prior evidence of selection at AQY2. This provides a clear example of how aneuploidy can provide adaptive advantage through amplification of genes that escape dosage compensation. The ecological relevance is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Reduced expression of amplified genes is in part due to heritable polymorphisms that down-regulate expression, some of which may have been selected during adaptation to aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by comparison of isogenic and non-isogenic strain pairs showing that some reduced expression persists across isogenic comparisons (heritable) while other cases show active compensation. The inference about selection is reasonable but speculative, as direct evidence of adaptive evolution is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The prevalence of dosage compensation found in yeast is likely true for other species and may explain lack of expression increase in amplified autosomal genes in Drosophila and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is speculative extrapolation from yeast data to other organisms. While the citations to Drosophila and human studies are appropriate, direct evidence for similar mechanisms in these organisms is not provided. This represents an interesting hypothesis but requires experimental validation in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Several TCA-cycle enzymes double as RNA-binding proteins that report on TCA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by appropriate citations to previous studies. This represents established knowledge used to contextualize potential mechanisms for mitochondrial gene dosage compensation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C20",
+      "C68",
+      "C69"
+    ],
+    "result": "Up-regulation of oxidoreductases and down-regulation of mitochondrial genes are hallmarks of Down syndrome. DS cells are sensitive to ROS and down-regulate mitochondrial respiration. Human patients show variability in DS sensitivity, suggesting genetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C68-C69 are supported by appropriate citations to Down syndrome literature. These claims provide important context for interpreting the yeast aneuploidy response, though direct mechanistic connections between yeast and human aneuploidy remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C92"
+    ],
+    "result": "Many genes escape dosage compensation and contribute to phenotypic variation. Aneuploidy is common in laboratory evolution but the Saccharomycotina karyotype is stable, suggesting aneuploidy serves as a transient intermediate. The model proposes dosage compensation buffers gene amplification through aneuploidy to provide a route to rapid phenotypic evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 and C92 synthesize the major findings into a coherent model. The model is well-supported by the data presented (aneuploidy prevalence, tolerance, dosage compensation, and adaptive advantage in YPS1009) and appropriate citations to laboratory evolution studies. The transient nature of aneuploidy is inferred from karyotype stability and cited studies, providing a reasonable evolutionary framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The higher incidence of Chr 8 amplification may reflect a higher frequency of mitotic error, based on mutation-accumulation line data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 is speculative, based on a single citation to MA line data. While the hypothesis is reasonable, alternative explanations (e.g., selection for Chr 8 amplification, smaller fitness cost) are not ruled out. Additional data would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C12",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Laboratory strains are extremely sensitive to chromosomal amplification and show proportionately higher expression from virtually all amplified genes. Laboratory strains have lost many features inherent in wild strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C81-C84 are supported by appropriate citations to previous studies and established knowledge. These claims provide essential context for the novelty of the current findings in wild strains, though they represent prior work rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Gene duplication can drive evolution by relaxing constraint, with immediate consequences typically being increased expression. Aneuploidy is linked to diseases but also facilitates evolution, though it comes with fitness costs potentially due to toxic gene overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 represent established knowledge and appropriate citations providing background context. These are not new findings but necessary framing for the manuscript's contributions.",
+    "result_type": "MINOR"
+  }
+]

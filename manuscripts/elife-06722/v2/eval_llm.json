@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors developed a TSS sequencing method based on modified 5\u2032-RACE with biotin purification that achieves high specificity (false-discovery rate <2.5%) and reproducibility (Pearson's \u03c1=0.89 between biological replicates), with 77% of reads mapping to expected TSS regions upstream of start codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C65-C66 collectively demonstrate the technical validity of the TSS sequencing method. The false-discovery rate calculation (C21), mapping statistics (C22), and correlation analysis (C23) provide strong quantitative evidence for method performance. The methodological description (C65-C66) is well-documented with appropriate controls (TAP-treated vs untreated samples).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The TSS consensus sequence in S. cerevisiae is A(N)6PyPu, with 88% of TSSs starting at a purine preceded by a pyrimidine (76%), though 58% of pyrimidine-starting reads show mismatches suggesting non-templated nucleotide addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by Web-LOGO analysis and sequencing data. The consensus sequence (C24) is validated by prior work (Zhang and Dietrich, 2005) and the quantitative observations (C25-C26) are directly calculated from data. The mismatch observation (C27) is intriguing and supported by Figure 1\u2014figure supplement 2B, though the mechanistic interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Peak-calling analysis identified 17,812 TSSCs genome-wide, with 5,927 assigned to mRNA 5\u2032-ends corresponding to 5,231 ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 report straightforward quantitative results from the peak-calling analysis. The numbers are internally consistent and the methodology for TSSC identification is described in Materials and Methods. These provide the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "About half of pervasive transcripts are degraded by NMD, with differential sensitivity: CUTs are primarily Rrp6-sensitive (79% stabilized in rrp6\u0394 vs 23% in upf1\u0394), while XUTs/SUTs are more NMD-sensitive (52% in upf1\u0394 vs 28% in rrp6\u0394). The double mutant shows additive effects with 76% of XUTs/SUTs and 92% of CUTs stabilized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C30-C37 are well-supported by DESeq2 analysis shown in Figure 2. The differential sensitivity patterns are clear and statistically significant. The additive effects in the double mutant (C36-C37) support the fail-safe mechanism interpretation. The use of appropriate statistical methods (DESeq2) and multiple biological replicates strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C49"
+    ],
+    "result": "NMD provides a fail-safe mechanism to remove pervasive transcripts that escaped nuclear degradation, as evidenced by additive effects of upf1\u0394 and rrp6\u0394 mutations on transcript accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C49 are supported by the observation of additive effects in double mutants for multiple transcript classes. This pattern is consistent with sequential quality control mechanisms. However, the interpretation as a \"fail-safe\" mechanism is somewhat inferential, though well-supported by the data and consistent with prior work on unspliced pre-mRNAs (Sayani and Chanfreau, 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "XUTs and SUTs carry spurious ORFs with shorter ORF lengths and longer 3\u2032-UTRs than mRNAs, features that target them for NMD degradation. NMD-insensitive XUTs/SUTs have significantly shorter 3\u2032-UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by sequence analysis (Figure 3\u2014figure supplement 1) and consistent with prior ribosome profiling data (C39). The structural features (short ORFs, long 3\u2032-UTRs) align with known NMD determinants in yeast (C41, citing Decourty et al., 2014). The observation that NMD-insensitive transcripts have shorter 3\u2032-UTRs (C42) provides internal validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "7,739 previously unannotated TSSCs were identified only in mutant cells, including 3,011 intergenic, 2,978 sense intragenic (B-TSSCs), and 1,750 antisense intragenic (A-TSSCs) transcripts. B-TSSCs are primarily NMD-sensitive while intergenic and A-TSSCs are affected by both Rrp6 and Upf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe novel transcript classes identified through the TSS sequencing approach. The classification is systematic and the differential sensitivities to degradation pathways (C47-C48) are shown in Figure 4. These represent genuine discoveries enabled by the methodology, though the biological significance of some low-abundance transcripts remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Co-transcriptional histone modifications by Set2 and NMD cooperate to restrict internally initiated transcripts, with 55% of A-TSSCs and 40% of B-TSSCs sensitive to Upf1. Set2-sensitive TSSCs are located further from mRNA 5\u2032-ends and B-TSSs show weak NFRs surrounded by well-positioned nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C69-C71 demonstrate cooperation between chromatin-based and NMD-based quality control. The positional bias (C69) is consistent with H3K36 methylation patterns. The nucleosome architecture around B-TSSs (C70) provides mechanistic insight, though the causal relationship (C71) is somewhat inferential. The data are internally consistent and supported by Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60"
+    ],
+    "result": "Low specificity of RNA polymerase II TSS selection generates NMD-sensitive transcript isoforms for 47% of expressed genes (2,437 genes), including those with uORFs (22% of genes, 1,129 genes) or internal TSSs. Transcript isoforms with uORFs are stabilized in upf1\u0394 while those with annotated start codons are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52-C56, and C60 are well-supported by genome-wide TSS analysis shown in Figure 7. The differential stabilization of uORF-containing vs canonical isoforms (C53-C54) validates NMD targeting. The 47% figure (C4, C60) represents a major finding about transcript heterogeneity. The observation that multi-uORF isoforms are more NMD-sensitive (C56) is consistent with translation initiation context effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C67"
+    ],
+    "result": "64% of expressed genes (3,327 genes) have internal TSSs (iTSSs), with 35% (1,821 genes) producing NMD-sensitive isoforms when iTSSs are followed by out-of-frame ATGs. iTSS expression levels significantly increase in upf1\u0394 and their consensus sequence matches general RNAPII initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C67 describe a major class of alternative transcript isoforms. The threshold of 4 reads for iTSS calling (C57) is reasonable and accounts for 99% of iTSS reads. The significant increase in iTSS expression in upf1\u0394 (C59, Figure 7C) demonstrates NMD targeting. The consensus sequence similarity (C67) supports these being genuine transcription initiation events rather than artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C68"
+    ],
+    "result": "There is a significant bias against in-frame ATGs at the beginning of genes with iTSSs (p=3.13\u00d710\u207b\u2075), with first ATGs in iTSS-initiated transcripts being predominantly out-of-frame relative to the main ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C62, and C68 demonstrate evolutionary constraint on genomic sequences. The statistical significance (C68, p=3.13\u00d710\u207b\u2075 by ANOVA) is strong. The bias is specifically observed in genes with iTSSs (C62), supporting a causal relationship. This represents an important finding about how genomes are shaped by pervasive transcription and quality control mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64"
+    ],
+    "result": "There is a significantly lower frequency of methionine in the N-terminal part of proteins from genes with iTSSs, though methionines are globally underrepresented at the beginning of all yeast proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C64 extend the genomic constraint observation to the protein level. The analysis shown in Figure 8D demonstrates the methionine depletion. The control observation that methionines are generally underrepresented (C64) is important context, but the additional depletion in iTSS-containing genes (C63) suggests specific evolutionary pressure. The statistical significance could be more explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims establishing the context of pervasive transcription, RNA quality control pathways (NNS complex, TRAMP, nuclear exosome, Xrn1), and NMD function in eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C20 provide established background knowledge supported by appropriate citations. These are not novel findings but necessary context. C1 correctly defines NMD function. The citations appear appropriate for the claims made, though the accuracy of specific cited results was not independently verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Data have been deposited in NCBI GEO under accession GSE64139.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is a straightforward data availability statement. This is good practice for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

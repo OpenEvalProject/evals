@@ -1,0 +1,1992 @@
+{
+  "submission": {
+    "id": "2b995b86-6c83-4098-9a49-6872141a0969",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:54:38.929808Z",
+    "updated_at": "2025-11-29T03:54:38.929808Z"
+  },
+  "content": [
+    {
+      "id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "submission_id": "2b995b86-6c83-4098-9a49-6872141a0969",
+      "content_type": "manuscript",
+      "content_text": "# Dosage compensation can buffer copy-number variation in wild yeast\n\n## Authors\n\n- James Hose<sup>1</sup>\n- Chris Mun Yong<sup>1</sup>\n- Maria Sardi<sup>1</sup>\n- Zhishi Wang<sup>2</sup>\n- Michael A Newton<sup>2</sup>\n- Audrey P Gasch<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory of Genetics University of Wisconsin-Madison Madison United States\n2. Department of Statistics University of Wisconsin-Madison Madison United States\n3. Genome Center of Wisconsin University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAneuploidy is linked to myriad diseases but also facilitates organismal evolution. It remains unclear how cells overcome the deleterious effects of aneuploidy until new phenotypes evolve. Although laboratory strains are extremely sensitive to aneuploidy, we show here that aneuploidy is common in wild yeast isolates, which show lower-than-expected expression at many amplified genes. We generated diploid strain panels in which cells carried two, three, or four copies of the affected chromosomes, to show that gene-dosage compensation functions at 10\u201330% of amplified genes. Genes subject to dosage compensation are under higher expression constraint in wild populations\u2014but they show elevated rates of gene amplification, suggesting that copy-number variation is buffered at these genes. We find that aneuploidy provides a clear ecological advantage to oak strain YPS1009, by amplifying a causal gene that escapes dosage compensation. Our work presents a model in which dosage compensation buffers gene amplification through aneuploidy to provide a natural, but likely transient, route to rapid phenotypic evolution.\n\n## Introduction\n\nSusumu Ohno proposed over 40 years ago that gene duplication could provide a major force in the evolution of new gene functions, by relaxing constraint on gene sequences and allowing one or both gene copies to evolve (Ohno, 1970). The genomic era has largely borne out that hypothesis, and many studies have characterized the outcomes of whole and partial genome amplification (Jaillon et al., 2009). The immediate consequence of duplication is assumed to be increased expression of the affected genes, and in some cases the increased expression provides a selective advantage (e.g., Sandegren and Andersson, 2009; Chang et al., 2013; Edi et al., 2014). Over longer periods, the relaxed constraint afforded by functional redundancy allows one or both gene copies to evolve (Ohno, 1970), driving sub- and neo-functionalization (Lynch and Force, 2000; Lynch et al., 2001), expression divergence (Gu et al., 2004, 2005; Li et al., 2005; Wang et al., 2012), and network rewiring (Presser et al., 2008; Freschi et al., 2011; De Smet and Van de Peer, 2012).\n\nWhole and partial chromosome amplification through aneuploidy is frequently observed in laboratory evolution studies and in drug-resistant fungal pathogens (Hughes et al., 2000; Dunham et al., 2002; Selmecki et al., 2006; Pavelka et al., 2010; Yona et al., 2012; Ni et al., 2013), suggesting that aneuploidy is a rapid route to phenotypic evolution. However, aneuploidy comes with a fitness cost, most famously in cases of human aneuploidies such as Down syndrome (DS) (Antonarakis et al., 2004). The reasons for aneuploidy toxicity are not entirely clear but may be due to increased expression from genes that are toxic when overexpressed (Siegel and Amon, 2012). Several studies have used Saccharomyces cerevisiae as a model for aneuploidy syndromes, since laboratory strains are extremely sensitive to chromosomal amplification. Laboratory strains with forced aneuploidy are extremely slow growing, regardless of the chromosome amplified (Torres et al., 2007; Pavelka et al., 2010). Transcriptomic and proteomic studies in these strains reported proportionately higher expression from virtually all amplified genes (Torres et al., 2007; Pavelka et al., 2010; Torres et al., 2010; Sheltzer et al., 2012), with a handful of exceptions recently identified at the protein level (Dephoure et al., 2014). The apparent lack of dosage compensation is consistent with another study by Springer et al. (2010), which found that expression at hemizygous genes is not up-regulated to compensate for reduced gene copy. While these studies have generated important results on aneuploidy intolerance in these particular strains, one caveat is that they were all done in laboratory strains, which have lost many features inherent in wild strains (Kvitek et al., 2008; Lewis et al., 2010; Lewis and Gasch, 2012). A remaining question is the extent to which aneuploidy occurs in nature and contributes to phenotypic variation in the wild.\n\nHere, we report that chromosomal amplification is common in non-laboratory yeast strains, which are inherently tolerant of aneuploidy and display an active mode of gene-dosage compensation at the transcript level, for specific classes of amplified genes. Strikingly, genes subject to dosage compensation are buffered against copy-number variation (CNV) and thus show elevated rates of gene amplification in natural isolates. Our results raise new implications for the role of aneuploidy in phenotypic evolution and the mechanisms cells use to tolerate it.\n\n## Results\n\nWe sequenced the genomes of 47 non-laboratory yeast strains, including wild, clinical, and industrial isolates (Supplementary file 1) and assessed the copy number of the 16 yeast chromosomes. Nearly a third of all strains carried whole (12 strains) or partial (2 strains) chromosome amplification (Figure 1A). Three strains harbored multiple aneuploidies, the extreme being insect-associated strain Y2189 that amplified four different chromosomes. Some chromosomes were amplified in multiple unrelated strains: Chromosome III (Chr 3), Chr 9, and Chr 12 were each amplified in different sets of strain pairs, Chr 1 (the smallest yeast chromosome) was amplified in three strains, and Chr 8 was aneuploid in five unrelated isolates. The higher incidence of Chr 8 amplification may reflect a higher frequency of mitotic error, since diploid mutation-accumulation (MA) lines propagated in the near-absence of selection amplify Chr 8 at a higher rate (Zhu et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig1-v3.jpg)\n\n**Figure 1.:** (A) Relative DNA copy (log2 (RPKM)) per gene (rows) across each of the 16 chromosomes for 47 sequenced strains (columns). Strains with 1.5\u00d7 (gray text) or 2\u00d7 (blue text) chromosomal copy per haploid genome are annotated by name. (B) Growth rates of aneuploid strains normalized to the niche-specific growth rate (see \u2018Materials and methods\u2019) plotted against the additional DNA content in each strain. (C) Haploid strains with a duplication of Chr 8 (labeled as \u2018disome\u2019) were selected from euploid parents (labeled as \u2018monosome\u2019) including the S288c-derived DBY7286, derived vineyard strain KCY40, and a haploid derivative of oak strain YPS163, see \u2018Materials and methods\u2019. Doubling times in YPD medium represent the average of four biological replicates; the average difference (\u2018dif\u2019) in growth rate is indicated. An asterisk represents statistically significant differences in doubling time (p < 6e-4, T-test).\n\nHowever, several lines of evidence refute the model that these aneuploidies represent deleterious mutations yet to be removed by selection. Unlike diploid MA lines that were at maximum trisomic for specific chromosomes, half of naturally aneuploid strains are tetrasomic (Figure 1A). Furthermore, natural aneuploids showed no significant growth reduction compared to closely related euploid reference strains (p = 0.19, paired T-test), although there was a slight negative correlation between growth rate and extra DNA content (R = \u22120.3, Figure 1B). This is in stark contrast to aneuploid laboratory strains, which show extreme growth retardation (Torres et al., 2007; Pavelka et al., 2010 and below). We also found that chromosomal amplification was stable for >200\u2013400 generations in four interrogated wild strains, whereas the W303 laboratory strain generally loses aneuploidy within 20 generations. To distinguish if the tolerant strains have adapted to aneuploidy or if non-W303 strains can inherently accommodate chromosome amplification, we selected aneuploid derivatives of several naturally euploid parents (see \u2018Materials and methods\u2019). We found little to no growth defect in derived aneuploid strains (Figure 1C). Thus, S. cerevisiae isolates are inherently tolerant of chromosomal amplification, which is common in nature.\n\n### A common aneuploidy response is distinct from that in the laboratory strain\n\nAneuploid laboratory strains are reported to show proportionately higher expression from virtually all amplified genes, causing proteotoxicity from excess protein production (Torres et al., 2007; Pavelka et al., 2010; Torres et al., 2010). We therefore investigated transcriptome profiles through RNA deep sequencing (RNA-seq) in six naturally aneuploid strains normalized to paired euploid reference strains that are closely related (thereby minimizing neutral expression differences unrelated to aneuploidy, see \u2018Materials and methods\u2019).\n\nConsistent with their near-normal growth rates, naturally aneuploid strains did not activate the environmental stress response as seen in sickly laboratory aneuploids (Torres et al., 2007; Sheltzer et al., 2012) (Figure 2A). However, we detected a weak signature common to several aneuploid strains, including the up-regulation of 69 unamplified genes (enriched for oxidoreductases) and reduced expression of 269 unamplified genes (strongly enriched for mitochondrial ribosomal protein (RP) genes and genes involved in respiration) in at least three of the six aneuploid strains (Figure 2B). We tested the respiratory capabilities of naturally aneuploid yeast with variable chromosome copy number and found no growth defect on non-fermentable carbon sources (Figure 3). In contrast, a diploid W303 strain trisomic for Chr 12 (\u2018W303_Chr12-3n\u2019) displayed an exacerbated growth defect on non-fermentable carbon sources, and we were unable to make the tetrasomic W303_Chr12-4n strain that retained its mitochondrial genome, despite numerous backcrossing attempts (Figure 3). This suggests that differences in mitochondrial function may contribute to differences in aneuploid tolerance across strain backgrounds. Interestingly, up-regulation of oxidoreductases and down-regulation of mitochondrial genes are a hallmark of DS (Conti et al., 2007; Lintas et al., 2012; Helguera et al., 2013; Valenti et al., 2014) (see Discussion).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig2-v3.jpg)\n\n**Figure 2.:** A) Expression of genes in the yeast environmental stress response (ESR) in aneuploid vs genetically related euploid strains. Biological replicates are shown for YJM428, Y2189, YPS1009, and NCYC110. The magnitude of the expression difference (log2 fold change) is as indicated in the key. B) Expression of 69 genes with higher expression (top) and 263 genes with lower expression (bottom) in aneuploid strains vs their paired euploid control.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig3-v3.jpg)\n\n**Figure 3.:** The average and standard deviation of doubling times measured for strains growing in yeast extract-peptone medium supplemented with 2% glucose (fermentable), 2% ethanol, 3% glycerol, or 2% acetate (non-fermentable) is shown for indicated strains. Isogenic, diploid panels of YPS1009, NCYC110, and W303 carried variable copy of Chr 12 or Chr 8 (see text). The relative growth rate on non-fermentable carbon sources (normalized to each strain's growth rate on glucose) was not significantly different for most aneuploid strains, with the exception of the W303_Chr12-3n strain that showed a greater growth defect when grown on ethanol or acetate compared to glucose (+ = p < 0.07, * = p < 0.05, paired T-test). The W303_Chr12-4n did not grow on non-fermentable carbon sources.\n\n### Many amplified genes display lower-than-expected expression\n\nGiven the significant phenotypic differences in laboratory vs non-laboratory aneuploid strains, we were particularly interested in the expression of amplified genes. We investigated transcript abundance relative to DNA copy for amplified genes, interrogating 2204 genes spanning eight amplified chromosomes across the six aneuploids. Across all strains, nearly 40% of amplified genes showed lower expression per gene copy compared to the paired euploid (Figure 4A, blue points, see \u2018Materials and methods\u2019). These were enriched for genes encoding RPs, translation factors, proteins localized to the nucleus or to mitochondria, and other groups (p < 1e-5, Supplementary file 2). The lower-than-expected expression could not be explained by a general repression response to the aneuploidy, since only 39 of the 838 affected genes were part of the common response described above. In contrast, amplified genes with expression proportionate to gene copy (Figure 4A, gray points) showed distinct enrichment for genes encoding proteins localized to the cytoplasm or to membranes, stress defense proteins, and kinases and transferases (p < 1e-5, Supplementary file 2). A subset of genes was expressed \u22651.5\u00d7 higher than expected per gene copy (Figure 4A, magenta points), and these were enriched for genes that influence morphology (p = 1e-5, see more below).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig4-v3.jpg)\n\n**Figure 4.:** The average log2(aneuploid vs euploid RNA-seq reads) per amplified gene was plotted against average log2(aneuploid vs euploid DNA seq reads) measured for that gene, in each of the interrogated aneuploid strains. (A) The combined set of amplified genes measured in each wild isolate normalized to a genetically related euploid reference strain, and (B) Amplified genes measured in two tetrasomic diploid strains and one disomic haploid strain normalized to isogenic euploids. Genes with lower-than-expected expression are plotted in blue and genes with higher-than-expected expression are plotted in magenta (see \u2018Materials and methods\u2019). The expected relationship representing proportionate increases in expression (slope of 1.0, intercept of 0) is shown in each panel.\n\n### Reduced expression in isogenic strain pairs implicates dosage compensation\n\nTwo models could explain the reduced expression from amplified genes. New mutations, through adaptation or drift, could heritably reduce expression at toxic amplified genes. Alternatively, wild strains may actively down-regulate expression in proportion to gene dose, known as dosage compensation. To distinguish between these possibilities, we generated isogenic aneuploid\u2013euploid strain pairs for three wild strains. We isolated euploid derivatives of strain T73_Chr8-4n (denoting four copies of Chr 8 in the diploid strain) and YJM428_Chr16-4n by serial passaging for many generations. We also used drug-based selection to isolate a mutant of naturally euploid oak-soil strain YPS163 in which Chr 8 was amplified (see \u2018Materials and methods\u2019). We then conducted duplicate RNA sequencing (RNA-seq) analysis in the isogenic aneuploid\u2013euploid pairs and identified genes on Chr 8 or Chr 16 with lower-than-expected expression, as above. Because the strains are nominally isogenic (see \u2018Materials and methods\u2019), most expression differences between the strain pairs are an active response to the aneuploidy.\n\nRecapitulating the results shown above, roughly 11\u201336% of amplified genes, depending on the strain, showed lower-than-expected expression (Figure 4B, blue points), while 2\u20134% showed higher-than-expected expression (Figure 4B, magenta points). Few of these genes participate in the common response to chromosome amplification, suggesting a mechanism of dosage compensation. A substantial fraction of the genes scored in the forced YPS163 aneuploid displayed reduced expression, even though this strain had little time to adapt to the aneuploidy. Thus, dosage compensation is likely an inherent trait in S. cerevisiae that functions at a subset of yeast genes.\n\n### Gene classification further refines expression patterns at amplified genes\n\nTo more accurately define genes subject to dosage compensation vs heritable polymorphisms, we next generated isogenic strain panels for oak strain YPS1009 and West African strain NCYC110, in which isogenic diploids carry two, three, or four copies of Chr 12 or Chr 8, respectively (Figure 5A). Expression in each strain within the YPS1009_Chr12 or NCYC110_Chr8 panels was normalized to a closely related euploid reference, YPS163 or NCYC3290, respectively. Comparing expression within the isogenic strain panel allows us to identify genes whose expression does not increase linearly as gene copy increases; comparing expression in the panel strains to the closely related euploid reference identifies heritable expression differences in the two strain backgrounds. A comparable panel was developed for laboratory strain W303 aneuploid for Chr 12. As expected, there was little growth difference across the wild-strain panels but a major defect as aneuploidy increased in the W303 laboratory strain (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig5-v3.jpg)\n\n**Figure 5.:** (A) Strain panels were generated by sporulating YPS1009 (naturally trisomic for Chr 12) or serial passaging of NCYC110 (naturally tetrasomic for Chr 8). (B) Average and standard deviation of doubling times for strains in each panel and euploid reference strains YPS163 or NCYC3290, normalized to the respective 2n strain in each panel. Asterisks represent significant differences (p < 0.01).\n\nWe measured mRNA and DNA abundance across each panel relative to the paired euploid references and developed a mixture of linear regression (MLR) model to classify genes based on the slope and intercept of the mRNA-gene copy relationships (Figure 6, see \u2018Materials and methods\u2019). Genes in Class 1 show proportionate increases in mRNA abundance as gene copy increases across the strain panel, with a slope of 1.0 and a log2 intercept of 0 that indicates comparable expression in the two euploid strains (Figure 6A). These genes therefore show no evidence of dosage compensation or heritably altered expression. Genes in Class 2 also show a linear relationship between mRNA and DNA copy (slope of 1.0) but have an altered intercept that reflects either constitutively reduced (Class 2a, Figure 6B) or constitutively elevated (Class 2b, Figure 6C) mRNA per gene copy. Thus, Class 2 genes display heritably altered expression but no evidence of dosage compensation. In contrast, genes in Class 3 show a disproportionate relationship between mRNA abundance and gene copy number. For genes in Class 3a, mRNA does not increase proportionately as gene copy increases across the strain panel, as evidenced by reduced slope of the linear fit (Figure 6D). Analogously, genes in Class 3b show a slope >1, indicating that mRNA abundance is amplified above expectation as gene copy increases. Because strains within each panel are isogenic aside of the aneuploidy, the reduced slope for Class 3a genes is indicative of dosage compensation while the elevated slope for Class 3b genes represents a disproportionate increase in expression.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig6-v3.jpg)\n\n**Figure 6.:** The log2(aneuploid vs euploid RNA-seq reads) for each gene was plotted against the log2(aneuploid vs euploid DNA-seq reads) measured for that gene in the -2n, -3n, and -4n strains within the strain panel normalized to the closely related euploid reference. (A\u2013E) Average and standard deviation of representative genes in the denoted classes, across three biological replicates. (F) All 173 Class 3a genes, normalized to the euploid strain from within the respective panel for clarity. The expected relationship representing proportionate increases in expression (slope of 1.0, intercept of 0) is shown in each panel.\n\nWe applied the MLR model to classify genes based on their maximum posterior probability (see \u2018Materials and methods\u2019). The results varied to some degree depending on the strain (Table 1). In the YPS1009_Chr12 strain panel, 7% of genes showed expected mRNA increases across the strain panel and with regard to the reference strain (Class 1). In contrast, 28% of genes showed heritably reduced expression per gene copy (Class 2a) while only 1% showed heritably increased expression (Class 2b). However, nearly a third of Chr 12 genes displayed a phenotype consistent with dosage compensation (Class 3a). In the NCYC110_Chr 8 strain panel, 11% of genes displayed a phenotype consistent with dosage compensation while almost half the Chr 8 genes were classified as having heritably reduced expression.\n\n**Table 1.**\n MLR Gene classifications\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene class</th>\n      <th>NCYC110 (Chr 8)</th>\n      <th>YPS1009 (Chr 12)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Non-linear</td>\n      <td>19 (7%)</td>\n      <td>32 (7%)</td>\n    </tr>\n    <tr>\n      <td>Class 1</td>\n      <td>16 (6%)</td>\n      <td>81 (16%)</td>\n    </tr>\n    <tr>\n      <td>Class 2a</td>\n      <td>138 (49%)</td>\n      <td>137 (28%)</td>\n    </tr>\n    <tr>\n      <td>Class 2b</td>\n      <td>32 (11%)</td>\n      <td>4 (1%)</td>\n    </tr>\n    <tr>\n      <td>Class 3a</td>\n      <td>30 (11%)</td>\n      <td>142 (29%)</td>\n    </tr>\n    <tr>\n      <td>Class 3b</td>\n      <td>46 (16%)</td>\n      <td>96 (20%)</td>\n    </tr>\n    <tr>\n      <td>TOTAL</td>\n      <td>281</td>\n      <td>492</td>\n    </tr>\n  </tbody>\n</table>\n\n_The number and percentage of genes classified in each group. Functional enrichments are listed in Supplementary file 2._\n\n### Genes linked to cell morphology show amplified expression in aneuploid strains\n\nSixteen to 20% of duplicated genes showed amplified mRNA abundance across the strain panels (Class 3b) or in isogenic aneuploid\u2013euploid pairs (Figure 4B). As a group, these 206 genes were enriched for genes important for cell morphology (p = 6e-6). We noted that several of our aneuploid strains displayed differences in flocculence or cell shape compared to euploid controls, as previously reported for aneuploid strains (Wu et al., 2010; Tan et al., 2013). We reasoned that this may be an indirect effect that extends to unamplified genes, and thus we identified unamplified genes with linear expression increase proportionate to the copy number of the amplified chromosome. This identified 39 genes in the YPS1009_Chr12 panel and 96 genes in the NCYC110_Chr8 panel (false discovery rate 0.05, see \u2018Materials and methods\u2019). When pooled together, and especially when combined with the 206 genes with amplified expression described above, there was strong enrichment for proteins localized to the membrane (p = 5e-4) and for those important for proper morphology (1e-8). Genes encoding cell-surface proteins are known to display altered expression due to changes in cell size/shape induced by ploidy effects (Wu et al., 2010), which may explain their altered expression here.\n\n### Dosage compensation occurs at specific functional groups with some variation across strains\n\nTo further investigate genes subject to dosage compensation, we combined Class 3a genes identified in the strain panels with genes displaying lower-than-expected expression in the isogenic aneuploid\u2013euploid strain pairs (Figure 4B, see \u2018Materials and methods\u2019), for a total of 245 genes. As a group, these genes were strongly enriched for translation factors (p = 5e-7), cytosolic RPs (p = 1e-5), ribosome biogenesis genes (p = 1e-4), iron/copper transporters (p = 4e-5), guanyl-nucleotide exchange factors (p = 7e-4), and genes encoding mitochondrial proteins (p = 3e-5). Once again, few of these genes (<7%) were repressed in other aneuploid strains, demonstrating that this is not an aneuploidy-stress response.\n\nThree of the isogenic aneuploid-euploid strain groups involved amplification of Chr 8, allowing us to assess strain-specific effects on dosage compensation. Of the genes with lower-than-expected expression in either the haploid YPS163_Chr8-disome or diploid T73_Chr8-4n strain, 79% showed lower-than-expected expression in the NCYC110_Chr8 strain panel. While an over-abundance of these genes were scored as dosage compensated in Class 3a (p = 7e-3), a surprising number of genes called compensated in the paired analysis were classified as having heritably reduced expression without dosage compensation (Class 2a) in the NCYC110_Chr8 panel. One possibility is that the genes are mis-classified or are affected by both heritably reduced expression and a mode of dosage compensation\u2014while the latter was true for a handful of the NCYC110 genes, most displayed high membership in Class 2a and had a slope and fit that was inconsistent with dosage compensation. These results raise the possibility that there exist strain-specific differences in the genes that are subject to dosage compensation (see \u2018Discussion\u2019).\n\n### Dosage compensation is mediated by multiple mechanisms\n\nIn the case of several interrogated RP genes, dosage compensation is most likely due to feedback control (Figure 7). When cloned onto a low-copy plasmid with flanking intergenic regions, transcripts RPL15A and RPL22A did not increase despite increasing DNA copy (Figure 7A,B). This was true regardless of allele, ploidy or strain background, indicating that the dosage response of RP genes functions in laboratory-strain backgrounds. In contrast, the dosage response was not seen when several mitochondrial genes from Chr 12 were duplicated in isolation, since mRNA for the genes increased \u223c2\u00d7 when the genes were amplified (Figure 7C,D). To further investigate the mechanism, we deleted the right arm of two of the four copies of acrocentric Chr 12 in the YPS1009_Chr12-4n strain (Figure 8A), thereby relieving aneuploidy at \u223c889 kb and 80% of the Chr 12 genes. For several mitochondrial genes that remained amplified in this strain, the dosage effect was lost, while for other genes expression remained lower than expected (Figure 8B). These results suggest a more complicated mechanism that will require further experiments to dissect.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig7-v3.jpg)\n\n**Figure 7.:** To measure the effects of gene duplication in the absence of aneuploidy, representative Class 3a genes were cloned onto a CEN plasmid and introduced into otherwise euploid strains. As a control, strains were also compared to an empty vector for normalization. mRNA and DNA abundance for the gene were quantified by qPCR as described in \u2018Materials and methods\u2019. Relative DNA (black) and RNA (gray) abundance for (A) RPL15A, (B) RPL22A, (C) COX8, or (D) MEF1 when introduced in extra copy into each strain. Panels A, C, D show abundance in haploid W303 or the haploid, monosomic (euploid) derivative of YPS1009 (\u2018YPS1009_m\u2019), and panel B shows abundance in diploid laboratory strain BY4743 and diploid, euploid derivative YPS1009_Chr12-2n. In all cases, the average and standard deviation of biological triplicates is shown.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig8-v3.jpg)\n\n**Figure 8.:** (A) Cartoon diagram of the four copies of Chr 12 in the tetraploid YPS1009_Chr12-4n strain and in the \u2018mini_4n\u2019 strain where two copies of the Chr 12-right arm are deleted (see \u2018Materials and methods\u2019 for details). (B) Expression was measured on tiled yeast-genome DNA microarrays. Shown are Class 3a genes that remain amplified in the mini-4n strain and could be quantified by arrays. Relative mRNA abundance was measured in biological triplicate in the YPS1009_Chr12-4n or YPS1009_mini-Chr12-4n strain vs the euploid YPS1009_Chr12-2n strain. Genes COX17, SPA2, and SDH2 showed an increase in expression in the mini_4n strain, however expression remained significantly lower than the expected two-fold difference proportionate to the gene amplification. FRE6 showed little dosage compensation when measured by DNA microarray analysis and correspondingly its expression did not change in the mini_4n strain. (C) Relative mRNA abundance of eleven genes that are dosage compensated across the YPS1009_Chr12 strain panel (left) but not the W303_Chr12 strain panel (right).\n\nWe were unable to fit the MLR model to the W303 panel: the W303_Chr12-4n strain had very abnormal expression, as described above. Surprisingly, however, expression in the W303_Chr12-3n strain was highly correlated to the YPS1009_Chr12-3n strain: for two-thirds of the Class 3a genes, expression in W303_Chr12-3n was within 10% of YPS1009_Chr12-3n values. Thus the dosage compensation phenotype appeared in effect at some genes in the W303_Chr12-3n strain but was lost or obscured in the W303_Chr12-4n strain. One clear exception was the group of eleven mitochondrial genes on Chr 12 that showed lower-than-expected expression in the YPS1009_Chr12 panel but proportionately higher (or amplified) expression in the W303_Chr12 panel (Figure 8C). These results once again point to a difference in mitochondrial function in W303 compared to other strains.\n\n### Genes subject to dosage compensation are buffered against CNV\n\nWe sought to identify common features of dosage-compensated genes that may explain their tighter expression control. One prediction is that dosage compensation occurs at genes that are most toxic when overexpressed. Indeed, the combined set of 245 dosage-compensated genes is enriched for genes that are deleterious in very high copy in the laboratory strain (p = 0.009, Makanae et al., 2013). A second prediction is posited by the balance hypothesis (Birchler and Veitia, 2007), which asserts that expression of multi-subunit protein complexes may be more tightly controlled to maintain protein stoichiometry. We found weak enrichment for proteins in multi-subunit complexes (p = 0.03, Pu et al., 2009), but the significance eroded if RPs were removed from the analysis. The group of dosage-compensated genes displayed slightly higher transcript abundance and higher RNA polymerase occupancy than the average gene (Chasman et al., 2014), but the trends did not hold if genes related to translation were removed.\n\nDosage-compensated genes were enriched for genes that are toxic when highly abundant, raising the possibility that their expression may also be under greater evolutionary constraint. To investigate this, we compared the variance in gene expression seen in natural isolates subject to mutation and selection (the genetic variance, Vg) (Skelly et al., 2013) to mutational variance (Vm) from MA lines (Landry et al., 2007). Genes that are under the highest constraint will have negative log2(Vg/Vm) ratios reflecting that expression variation is being removed by purifying selection. Genes subject to dosage compensation and genes affected by heritably reduced expression show higher constraint compared to all genes, as expected for genes that are toxic when over-expressed (Figure 9A). The effect was also true for amplified genes that display proportionate expression upon amplification, which is likely a byproduct of our classification (since we effectively eliminated genes with variable expression across strains and replicates). The trends were consistent when genes belonging to all enriched functional groups were removed from the analysis.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig9-v3.jpg)\n\n**Figure 9.:** (A) log2(Vg/Vm) as described in the text, (B) fraction of genes with copy-number variation (CNV) in at least one of 103 strains, and (C) log2 of the buffering capacity score, Bv, are shown for the gene groups in the key (where number of genes is indicated in parentheses). Amplified genes with proportionately higher expression include Class 1 genes and genes with proportionate expression in strain pairs (Figure 4A, gray points). Amplified genes with heritably reduced expression correspond to genes in Class 2a, minus genes identified as dosage compensated in other strains, while amplified genes subject to dosage compensation represent genes in Class 3a plus genes with lower-than-expected expression as identified in Figure 4B. Statistical significance was scored by comparing each group to the total set of yeast genes.\n\nAn active mode of dosage compensation is predicted to constrain expression in the face of underlying gene amplification, thereby buffering CNV. To test this hypothesis, we cataloged gene amplifications measured by array-CGH in 103 strains (Dunn et al., 2005; Carreto et al., 2008; Dunn et al., 2012). In fact, dosage-compensated genes show considerably higher CNV than genes that display proportionate mRNA increase upon gene amplification (p = 4e-8, Figure 9B). Somewhat surprisingly, genes with heritably reduced expression also showed relaxed constraint in CNV, which may reflect that some of these genes are dosage compensated in other strain backgrounds (see \u2018Discussion\u2019). Once again, the trends were not driven by enriched functional groups. We devised a CNV-buffering score, Bv, for each gene as the phylogeny-weighted sum of gene copy number across strains divided by Vg/Vm measured for that gene (see \u2018Materials and methods\u2019)\u2014genes with the strongest buffering capacity will therefore have the largest scores. Genes subject to dosage compensation show significantly higher Bv scores compared to all genes and compared to amplified genes with proportionately higher expression (p = 1.7e-4). Amplified genes with heritably reduced expression also showed higher buffering scores albeit lower than dosage-compensated genes (see \u2018Discussion\u2019). Together, these results show that genes subject to dosage-compensated expression can be buffered against CNV in S. cerevisiae populations.\n\n### Chr 12 amplification provides a selective advantage for an ecological trait\n\nThe ability to buffer the toxicity of gene amplification could facilitate rapid evolution through aneuploidy. Aneuploidy in laboratory strains can be advantageous under adverse conditions, when non-dosage compensated defense genes are amplified in expression (Hughes et al., 2000; Dunham et al., 2002; Chen et al., 2012; Yona et al., 2012); but the extent to which this occurs in nature is not known. We and others have previously shown that strains of S. cerevisiae and Saccharomyces paradoxus from wintry climates have undergone selection to maintain freeze-thaw (FT) tolerance (Will et al., 2010; Leducq et al., 2014). We noted that the AQY2 water-transporter gene underlying FT tolerance (Will et al., 2010) resides on Chr 12, which is amplified in New Jersey-oak strain YPS1009_Chr12-3n. AQY2 escapes dosage compensation, resulting in higher AQY2 expression across the strain panel (Figure 10A). Indeed, we found that FT resistance improves with increasing Chr 12 copy number in YPS1009 (Figure 10B). The strong signatures of selection that we previously observed at the AQY2 gene (Will et al., 2010) and the clear relevance of the trait suggest that Chr 12 amplification is advantageous to YPS1009 in nature.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/05462/elife-05462-fig10-v3.jpg)\n\n**Figure 10.:** (A) AQY2 expression as described in Figure 6. (B) Average and standard deviation of percent cell viability after freeze-thaw stress.\n\n## Discussion\n\nOur results provide new insight into a long-standing conundrum: how do cells tolerate duplication of toxic genes long enough for new phenotypes to evolve? Our results show that up to 40% of amplified genes in naturally aneuploid strains show lower-than-expected expression. The reduced expression is in part due to heritable polymorphisms that down-regulate expression from amplified genes, some of which may have been selected for during the adaptation to aneuploidy. But reduced expression of other amplified genes\u2014up to 30\u201336% in some strains\u2014appears to be actively regulated in proportion to increased gene dosage. The prevalence of the dosage compensation found here is likely true for other species and may explain the lack of expression increase previously noted for amplified autosomal genes in Drosophila (Zhang et al., 2010; Zhou et al., 2011) and humans (Antonarakis et al., 2004; Schuster-Bockler et al., 2010; Wang et al., 2011; Woodwark and Bateman, 2011).\n\nThe clear enrichment of specific functional classes\u2014including genes encoding RP and mitochondrial proteins\u2014points to specific targeted processes. While we did not find overwhelming support for the balance hypothesis, dosage compensated genes include several multi-subunit protein complexes and pathways. In the case of RP genes, dosage compensation most likely occurs via feedback to modulate mRNA abundance (Figure 7). Feedback is known to occur for several RP genes, including excess, unassembled L32 that binds a stem loop structure in its own transcript and inhibits intron splicing, perhaps triggering mRNA degradation (Dabeva and Warner, 1987; Vilardell and Warner, 1997). Our results imply that feedback pertains more broadly to other RP genes, including RPL15A (Figure 7A)\u2014notably, this transcript lacks an intron and thus must utilize a mechanism distinct from RPL32. The mechanism of dosage compensation at nuclear-encoded mitochondrial genes is less clear; however, several mitochondrial proteins are known to regulate translation or stability of other transcripts in shared pathways. For example, unassembled Cox1 protein can suppress translation of the COX1 transcript (Van Loon et al., 1983; Mick et al., 2011), while several TCA-cycle enzymes double as RNA-binding proteins that report on TCA activity (Elzinga et al., 1993; de Jong et al., 2000). A mode of dosage compensation that functions at the level of transcript abundance may provide an additional level of regulation to control protein stoichiometry.\n\nNatural isolates are generally tolerant to aneuploidy, whether or not they have had time to adapt to the extra chromosome. We did observe a common expression response in different aneuploid strains, including the up-regulation of oxidoreductases and the down-regulation of genes involved in mitochondrial translation and respiration. Interestingly, these trends are also seen in DS cells, which are extremely sensitive to reactive-oxygen species (ROS), and perhaps consequently, down-regulate mitochondrial respiration that in turn limits ROS production (Helguera et al., 2013). We found no defect in respiratory capacity in naturally aneuploid yeast, and so the implications of this response in yeast are not clear. Human patients display significant variability in their sensitivity to DS, suggesting genetic effects on DS pathologies (Roper and Reeves, 2006; Prandini et al., 2007). Our results also implicate strain-specific responses to Chr 8 amplification, in particular in the genes subject to dosage compensation vs heritably reduced expression. While some of the Class 2a genes could be mis-classified, these results raise the possibility of natural genetic variation in dosage compensation.\n\nWhile the expression of dosage-compensated genes is controlled in proportion to gene copy, many genes escape dosage compensation in response to aneuploidy and can contribute significantly to phenotypic variation. Whole and partial chromosome amplification is common in laboratory selection experiments (Dunham et al., 2002; Gresham et al., 2008; Yona et al., 2012) and is particularly prevalent in laboratory mutants that have an extreme fitness defect (Hughes et al., 2000; Koszul et al., 2004; Rancati et al., 2008). Yet the Saccharomycotina karyotype is extremely stable, holding at eight or sixteen chromosomes in most pre- and post-genome duplication species, respectively. This suggests that aneuploidy may serve as a transient intermediate, one that can be readily generated\u2014and readily lost\u2014depending on the selective pressures. Yona et al. (2012) showed that selection for increased stress tolerance in the laboratory produced aneuploid strains that eventually gave way to other solutions even when the selective pressure persisted. Our results show that aneuploidy is frequent and tolerated in nature and may provide an important route toward natural genetic variation.\n\n## Materials and methods\n\n### Strains and growth conditions\n\nS. cerevisiae strains listed in Supplementary file 1 (diploid unless otherwise noted) were grown at 30\u00b0C in batch culture in YPD (1% yeast extract, 2% peptone and 2% dextrose) medium. We chose this growth regime as opposed to chemostat cultures because our strains show little growth differences across the strain panels and also to avoid confounding effects in interpreting gene expression. Given the instability of chromosomal amplification in W303, aneuploid W303 strains were grown under appropriate selection to maintain the aneuploidy and shifted to YPD batch culture growth at 30\u00b0C depending on the experiment (outlined below). Growth rates shown in Figure 1B were obtained on a Tecan Infinite M200 PRO instrument (Tecan Mannedorf, Switzerland), growing cells in 96-well plates without shaking and scoring doubling times using the program GrowthRates (Hall et al., 2014). Growth rates shown in Figure 1B for each aneuploid strain were normalized to the average doubling time for euploid strains in the same ecological group (e.g., clinical, natural, oak, vineyard, industrial, sake groups). Doubling times shown in Figures 1C, 3, and 5 were determined from batch cultures.\n\n### Forcing aneuploidy in euploid parents\n\nWe followed the protocol outlined by Chen et al. (2012) to isolate aneuploid derivatives. Haploid strains (derived from S288c (DBY7286), oak strain YPS163 or vineyard strain KCY40) were grown in YPD +20 \u00b5g/ml radicicol (AG Scientific, San Diego, CA) for 24 hr to promote chromosome instability and induction of aneuploidy. Cells were then washed 3X with YPD, grown in YPD for 24 hr, and plated on YPD + 8\u201332 \u03bcg/ml fluconazole to select for Chr 8 aneuploidy, since amplification of ERG11 on Chr 8 was shown to confer fluconazole resistance (Chen et al., 2012). Minimal inhibitory concentrations on fluconazole at which 90% of cells (MIC90) die were determined for each strain: 32, 8, and 16 \u00b5g/ml for DBY7286, YPS163 and KCY40, respectively. Cells with Chr 8 amplification were initially screened via qPCR of select Chr 8 genes and confirmed by array comparative genomic hybridization (aCGH).\n\n### Generation of Aneuploid isogenic strain panels\n\nWe generated isogenic aneuploid-euploid strain pairs from two strains, T73_Chr8-4n and YJM428_Chr16-4n (derived from a spore of the original parent, YJM428_Chr12-3n_Chr16-4n in which Chr 12 amplification was lost). T73_Chr8-4n was passaged in liquid YPD culture for \u223c275 generations before a euploid derivative was identified by qPCR screening. YJM428_Chr16-4n was passaged for \u223c160 generations to produce a triploid strain that was then dissected and underwent mating-type switching to generate a diploid, euploid YJM428_Chr16-2n derivative.\n\nWe also generated two wild-strain panels from YPS1009 (also referred to as YPS1009_Chr12-3n for clarity in the text) and NCYC110 (aka NCYC110_Chr8-4n), and one laboratory strain panel for diploid W303_Chr12-3n (generated by mating a haploid disomic strain, generously provided by A Amon, to the euploid W303). Strain panels for W303_Chr12 and YPS1009_Chr12 were generated by sporulating the trisomic parents and selecting haploid spores with either one or no extra copies of Chr 12. The YPS1009 spores then diploidized after mating-type switching to form isogenic diploid strains having two (2n, i.e., euploid) or four (4n) copies Chr 12. The haploid W303_Chr12 spores were crossed to appropriate W303 strains to generate isogenic diploids with two, three, or four copies of Chr 12. Homozygous strain NCYC110_Chr8-4n was passaged in liquid YPD for \u223c427 generations before an isolate with only three Chr 8 copies was identified by qPCR screening. (A similar procedure was performed for YPS1009_Chr12-4n and W303_Chr12-4n to determine the stability of the aneuploidies.) A completely euploid derivative of NCYC110 was isolated shortly after at 444 generations. Aneuploidy of the respective chromosomes in each of the strain panels was initially verified via aCGH and subsequently via genomic sequencing, with periodic confirmation by qPCR to ensure aneuploidy maintenance.\n\n### Genomic sequencing\n\nGenomic sequencing was performed on genomic DNA isolated with a Genomic-tip 20/G Kit (Qiagen, Germantown, MD). 1 \u03bcg genomic DNA in a total volume of 50 \u00b5l in a 0.5 ml microcentrifuge tube was fragmented with a Diagenode Bioruptor sonication device (Diagenode, Denville, NJ) to a peak fragment size of 300\u2013400 bp, and 1 \u03bcg was used as an input into Illumina's TruSeq DNA Library Prep (Illumina, San Diego, CA). Ligation products were purified with the E-Gel SizeSelect System (Life Technologies, Carlsbad, CA). All cleanup steps in the genomic library prep were performed with Axy Prep MAG PCR Cleanup beads (Corning, Corning, NY). Genomic libraries were sequenced on Illumina's HiSeq 2000 or HiSeq 2500 System, generating single end 100 bp reads. Sequencing reads were processed with Trimmomatic version 0.30 (Bolger et al., 2014), and reads were mapped to a reference genome with strain-specific SNPs (for YPS163, YPS1009, NCYC110, NCYC3290, and W303) or to the S288c reference 58 for all other strains, using BWA version 0.7.3 (Li and Durbin, 2009). HTseq version 0.5.4 (Anders et al., 2014) summed read counts per gene, which were then normalized for gene size and the number of reads generated per library via reads per kilobase per million-mapped reads (RPKM). Genomic DNA was sequenced in duplicates for all strain panels. Aneuploid strains were identified as triploid or tetraploid if the median RPKM signal across the chromosome was 0.4\u20130.7 (to call triploids) or 0.7 to >1.0 (to call tetraploids). Genome sequences are available in the NIH Sequence Read Archive (SRA) under accession SRP047341.\n\nTo identify potential polymorphisms in nominally isogenic aneuploid\u2013euploid pairs, SNPs in each parental strain were called with GATK (DePristo et al., 2011) and substituted into the S288c genome reference, which was then used as the reference for remapping of all related strains. GATK was used to call single-nucleotide polymorphisms (SNPs) in each remapped strain. We found one homozygous SNP in NCYC110_Chr8-3n and a different homozygous SNP in NCYC110_Chr8-2n that were each identified in both replicates of the strain sequences. We performed a similar procedure for singleton genome sequences from YJM428_Chr16-2n and T73_Chr8-2n and identified 13 or 40 homozygous SNPs; these numbers are in the range of false-positive identifications found in a single replicate, as assessed from the NCYC110_Chr8 analysis above. We conclude from this analysis that there are relatively few legitimate SNPs in passaged strains and that the majority of expression differences are a direct response to the aneuploidy.\n\n### RNA-seq\n\nCells were harvested for 3 min at 3000 r.p.m., after which time the cells were flash frozen in liquid nitrogen and maintained at \u221280\u00b0C until RNA extraction. Select samples (for T73_Chr8, YPS163_Chr8, and YJM428_Chr16 strain pairs and one replicate of the NCYC110_Chr8 strain panel) were collected and mixed at a 10:1 cellular ratio with Schizosaccharomyces pombe PR100, which had been grown in YES medium for >7 generations to OD600 \u223c0.5, killed with 0.125V ice-cold quench solution (5% acid phenol in 100% EtOH), and collected. Cells were carefully counted on a hemocytometer to estimate cell counts. Total RNA was extracted with hot phenol as previously described (Gasch, 2002), DNase-treated at 37\u00b0C for 30 min with TURBO DNase (Life Technologies), and then precipitated at \u221220\u00b0C in 2.5 M LiCl for 30 min rRNA depletion of the DNase-treated total RNA and subsequent cDNA library preparation were performed with ScriptSeq Complete Kit H/M/R (Epicentre, Madison, WI), Index PCR Primers (Epicentre) and FailSafe PCR Enzyme Mix (Epicentre). rRNA-depleted RNA was purified with a RNeasy MinElute Cleanup Kit (Qiagen), while cDNA was purified with Axy Prep MAG PCR Cleanup beads (Corning). cDNA libraries were sequenced on Illumina's HiSeq 2000 System (UW-Madison DNA Sequencing Facility), generating single-end 100 bp reads. Sequencing reads were processed with Trimmomatic version 0.30 (Bolger et al., 2014) and reads were mapped to a reference genome with strain-specific SNPs (for YPS163, YPS1009, NCYC110, NCYC3290, and W303), to the S288c reference concatenated with the Sz. pombe genome (for doped samples listed above), or to the S288c reference 58 for all other strains, using BWA version 0.7.3 (Li and Durbin, 2009). HTseq version 0.5.4 (Anders et al., 2014) was used to obtain read counts per gene. Sequencing was done in biological triplicate for strain panels or biological duplicate for all strains except sake strains, which were done as singlets, with paired growth and strain collection for each replicate. For samples spiked with Sz. pombe controls, reads were normalized by a scaling factor such that the slope of the Sz. pombe reads across samples was 1.0, or normalized by traditional RPKM. The normalization methods produced data that were virtually indistinguishable; because RPKM-normalized data agreed better across biological replicates, RPKM normalization was used for all analyses described here. All RNA-seq data are available at NIH GEO accession GSE61532.\n\nTranscriptome profiling was done for six aneuploid strains and paired controls (including YJM428 and YJM308, Y2189 and Y2209, K9 or K1 and K10, NCYC110 and NYCY3290, and YPS1009 and YPS163). In the case of K9/K1, NCYC110, and YPS1009, the control was chosen based on the genetically closest known relative at the time of the analysis based on phylogenetic comparisons (Fay and Benavides, 2005; Kvitek et al., 2008; Liti et al., 2009). Controls for clinical isolate YJM428 and natural strain Y2189 were based on ecological group, choosing another clinical or natural isolate, respectively. RPKM values from each aneuploid were divided by RPKM measured from the euploid controls and logged, for both mRNA and DNA samples. For the analysis shown in Figure 4, we randomly chose two of the three replicates of YPS1009_Chr12-3n and NCYC110_Chr8-4n to produce statistical power comparable to the other strains analyzed in duplicate. Genes with lower-than-expected expression per gene copy (Figure 4) were identified as follows:\n\nFor each aneuploid chromosome in each strain, we first removed sub-telomeric genes with skewed measurements since these genes frequently show copy-number differences across strains. We then calculated the chromosome-wide mean and standard deviation of the log2(aneuploid vs euploid DNA reads), across all genes on the affected chromosome. For each amplified gene being considered, we took the mean of the log2(aneuploid vs euploid DNA reads) measured for that gene specifically; we used this value minus one standard deviation of the chromosome-wide mean (or two standard deviations in the case of the sake strains)\u2014this value served as a gene-specific cutoff for relative mRNA abundance. Genes with lower-than-expected expression per gene copy were identified if the log2(aneuploid vs euploid mRNA reads) was less than the filtering cutoff in both replicates (or one replicate for sake strains, which used a more stringent cutoff). This process identified genes whose relative mRNA abundance was lower than the relative DNA abundance at a high confidence interval. Genes whose log2(aneuploid vs euploid mRNA reads) difference was more than 1.5X lower (0.6 in log2 space) than the euploid control were excluded from the list, since their expression may be influenced by other effects. This identified 838 unique genes from the six aneuploid strains whose expression was lower-than-expected per gene copy, with 111 genes amplified and affected in >1 strain. We also identified amplified genes whose expression was distinctly not affected by dosage compensation as genes whose relative log2(mRNA abundance) was within the filtering cutoff for both replicates, excluding genes whose log2 expression difference was more than 2.5\u00d7 higher than the euploid control, since their expression may be influenced by other effects. This identified 928 genes whose expression was in the expected range if no dosage compensation is at work. A subset of these genes showed expression that was at least 1.5\u00d7 higher than expected, and these are annotated as magenta points in Figure 4.\n\nGenes that were differentially expressed in aneuploid vs euploid strains (regardless of DNA abundance) were identified with the program edgeR (Robinson et al., 2000). Because of limited power for the duplicated data sets, we also included genes whose expression was greater than 1.3X (log2 of 0.4) different from the euploid control in three of the six strains. Clustering of expression was done using the program Cluster 3.0 (http://bonsai.hgc.jp/\u223cmdehoon/software/cluster/software.htm) and visualized by Java Treeview (http://jtreeview.sourceforge.net). Enrichment of functional groups was done using the program FunSpec (Robinson et al., 2002). Enrichment of proteins in complexes was scored by hypergeometric test, comparing to curated complexes from (Pu et al., 2009); differences in degree from protein interaction networks was scored by T-test comparing the degree compiled by (Chasman et al., 2014) from genes in Class 3a vs other gene groups.\n\n### Mixture of linear regressions model\n\nA novel MLR model was developed to classify genes based on their expression across the two wild-strain panels. Preprocessed mRNA and DNA abundance data were analyzed further in the context of a new mixture of linear regressions (MLR) model in order to cluster genes according to their DNA/mRNA relationship. Within a given strain panel we modeled the relationship between DNA abundance at gene g from sample i, say Xg,i, and mRNA abundance Yg,i, where both are normalized to euploid controls and considered on the logarithmic scale. Briefly, we first filtered genes that exhibited a nonlinear relationship using a likelihood ratio test (Supplementary file 3). The interpretation of these profiles is not clear and therefore they were removed from further consideration. Data from the remaining genes, which exhibited a linear relationship Yg,i = Ag + Bg Xg,i + errorg,i, were fit to a discrete, random-effects mixture model in order to produce a relationship classifier (McLachlan and Peel, 2000). In the proposed MLR model, the five discrete classes correspond to constraints on the intercept \u03b1 and slope \u03b2 parameters of the linear regression: (Class 1) \u03b1g = 0, \u03b2g = 1, (Class 2a) \u03b1g < 0, \u03b2g = 1, (Class 2b) \u03b1g > 0, \u03b2 = 1, (Class 3a) \u03b2 < 1, (Class 3b) \u03b2g > 1. Class 1 represents genes with no dosage compensation and statistically indistinguishable expression between the 2n strain and paired euploid control. Class 2 represents genes whose expression increases linearly across the strain panel, but whose expression in the aneuploid derivatives is lower (Class 2a) or higher (Class 2b) per gene copy than the paired euploid. In contrast, Class 3 genes show expression changes across the strain panel that are disproportionate to the change in DNA copy, either showing lower (Class 3a) or greater (Class 3b) expression per gene copy as the aneuploidy increases. The inference is stabilized by treating the gene-specific slopes and intercepts as random effects that are constrained by the class structure; this effectively reduces the dimension of the parameter space. Fortuitously, explicit formula is available for the probability density of data within each class. The expectation maximization (EM) algorithm was used to estimate the MLR parameters; subsequently, genes were clustered together if they had a high posterior probability of arising from the same discrete class. Genes were classified based on the maximum posterior probability (Supplementary file 3). Further details are provided in Appendix 1. Unamplified genes in the two strain panels that displayed linear increases in expression in proportion to the amplified chromosome copy number were identified based on the probability of linear fit in R, using Benjamini and Hochberg multiple test correction (Benjamini and Hochberg, 1995).\n\n### Gene cloning, Chr 12 arm deletion, and qPCR\n\nW303 and/or YPS1009 alleles of each query gene were cloned onto a KANMX-marked CEN plasmid via homologous recombination in strain BY4741, from which plasmids were isolated and used to transform haploid or diploid versions of YPS1009_Chr12-2n, euploid W303, or euploid BY4743, where noted. Strains were grown in YPD + G418 for at least 3 generations to OD600 \u223c0.3. Cells were collected for genomic-DNA and RNA preps to measure copy number and transcript levels, respectively, as described above. RNA was DNase-digested and subsequently used to synthesize cDNA with an Oligo (dT) primer and Superscript III reverse transcriptase (Invitrogen). Quantitative PCR (qPCR) was performed with SYBR-Green as previously described (Lee et al., 2011). mRNA or DNA abundance measured for each gene was normalized to an internal control (ERV25) and compared to a strain carrying an empty vector.\n\nTo test the effect of aneuploidy dose on gene expression, a strain carrying an extra copy of the left-arm of Chr 12 only was generated (referred to a the \u2018mini-4n strain\u2019), by deleting the right arm of Chr 12 from the YPS1009_Chr12-4n strain, as follows: the KANMX cassette was PCR amplified with homology to the promoter region of GAT3, which flanks the Chr 12 centromere, or the promoter region of subtelomerically encoded gene YLR460C. The diploid, aneuploid YPS1009_Chr12-4n strain was transformed and G418-resistant colonies were selected and sporulated. One spore showed the expected 2/4 or 0/4 spore survival when dissected onto YPD + G418. PCR was used to confirm integration of the KANMX cassette and aCGH was used to confirm that the diploid cells are aneuploid for the left arm of Chr 12, but not the right arm. Expression levels of the amplified Class 3a genes were assessed by qPCR or DNA-microarray analysis as described above.\n\n### Expression constraint and CNV in wild strains\n\nVg/Vm values were calculated for each gene as follows: genetic variance Vg was taken as the variance in expression across 22 wild strains analyzed in (Skelly et al., 2013). Vm was taken as the variance in expression across MA lines generated in the absence of selection by (Landry et al., 2007). The ratio of Vg/Vm represents the effects of mutation + selection as measured in natural strains vs the effects of mutation in the near absence of selection as measured in MA lines. CNV data were taken from (Dunn et al., 2005; Carreto et al., 2008; Dunn et al., 2012), which measured gene copy number by aCGH. Strains whose aCGH profiles were correlated >0.9 were represented by a single, randomly chosen strain, to avoid over-representing strains that are highly related. This left 103 strains with aCGH values for each gene. Amplified genes were identified if the relative gene abundance was at least 1.6\u00d7 higher than the S288c reference. Genes that showed CNV in at least one of the 103 strains were compared in Figure 9B. To calculate Bv, a measure of the buffering capacity of each gene, we summed the number of strains in which the gene was amplified, weighted by the aCGH similarity weights (described in http://bonsai.hgc.jp/\u223cmdehoon/software/cluster/software.htm) as a proxy for strain relatedness. The weighting was applied to control for genetic similarities in the strains, to therefore highlight independent gene amplification events. For each gene, this value was divided by its calculated Vg/Vm ratio. Larger values represent a higher propensity for CNV coupled with more stringent expression constraint (i.e., small Vg/Vm).\n\n### FT tolerance\n\nThe YPS1009 isogenic strains and YPS163 were grown in YPD to OD600 \u223c0.3, and 100 \u00b5l of cells was subjected to dry ice/ethanol bath freezing (<\u221250\u00b0C) or ice as previously described (Will et al., 2010). Viability was determined using Live/Dead straining (Life Technologies) on a Guava EasyCyte Plus flow cytometer (Guava Technologies, Inc., Hayward, CA). Percentages of cells surviving freeze/thaw are reported for 3 biological replicates.\n",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "efa8dd81-55d5-4007-9627-6ee39c691071",
+      "submission_id": "2b995b86-6c83-4098-9a49-6872141a0969",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Duncan T Odom, Cancer Research UK Cambridge Institute , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05462.022](https://doi.org/10.7554/eLife.05462.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your work entitled \u201cDosage compensation buffers copy-number variation in wild yeast\u201d for consideration at eLife. Your article has been favorably evaluated by Stylianos Antonarakis (Senior editor), Duncan Odom (Reviewing editor), and three reviewers. The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe consensus was that the demonstration that wild yeast strains exhibit gene expression compensation in the face of aneuploidy was of potentially high interest to a broad community. Some substantial criticisms were raised, in particular by Reviewers 1 and 2, which you must carefully address before this can be published in eLife.\n\nThe essential revision requirements are: (1) repeat the chromosome titrations you did for Chr12 in strain YPS1009 using the Chr8 strains derived from NCYC110, and this new analysis must include spike-in controls for RNA-seq; (2) much better annotation of the strains used both in main text and in the supplemental.\n\nLike the three reviewers have done, the Reviewing Editor, Duncan Odom, has gone over your manuscript both editorially and graphic design-wise, and we have made suggestions below that should help improve your clarity and presentation. One extremely important point: you must re-tool your figures with an eye towards red\u2013green color blindness.\n\nReviewer #1:\n\nThis is a very interesting paper looking at aneuploidy in non-lab strains of yeast. They conclude that natural isolates are more tolerant of aneuploidy than the lab strain W303 and they suggest that this is related to an apparent dosage compensation of gene expression from the amplified chromosome.\n\nI think this is important work, and it is getting to the heart of several key conundrums in the aneuploidy field. Because it's such an important problem, I think the paper should do more to convincingly show the results and how they contrast with the lab strain results. I suspect, as the authors find in one of the RNAseq experiments, that their results are not actually as different as it first seems.\n\n1) The first set of RNAseq experiments are problematic for a few reasons. First, they are not performed with isogenic strains that only differ by presence/absence of a CNV. The additional variation in gene expression introduced by all the other genetic differences going on could be partly responsible for the observed differences. I think it is crucial to also show at least a few paired euploid samples of similar relatedness to demonstrate the degree of expression difference expected in the absence of any CNVs. The reason this is important can be best explained by imagining that the base expression really does change proportional to the copy number. Now imagine additional genetic differences cause many genes to change in expression by, say 1.5-fold up or down, a result that has frequently been observed in comparisons between natural isolates. In the simplest possible additive model of expression, many genes in the CNV would now show greater or less than expected changes in expression, but not due to dosage compensation.\n\nAlso, I think the data from these experiments would be much easier to interpret if displayed as histograms (e.g. something like Figure 2 in the recent eLife paper from Amon and Torres) in addition to the scatter plot view. Furthermore, the analysis would be much more compelling if compared directly to data from at least the W303 gene expression series, and preferably additional aneuploid lab strains (for example, the Hughes et al. deletion collection strains that are aneuploid, or some of the aneuploids isolated from experimental evolution). Though on average genes in the CNV change proportionately with copy number in these lab strain experiments, that is certainly not universally true, nor should it be: the W303 experiments, for example, have the same problem as described above, that is, the layering of multiple expression signatures, in this case the stress and/or growth rate response coupled with the copy number driven expression. Evolved strains and deletion strains have additional mutations as well that may affect expression on top of the perturbation from the CNV. Direct comparison to these data would be very convincing if there really is a big difference here. It certainly wouldn't be the first time that lab strains are outliers in behavior, so I am inclined to believe there is something to see, but it should be shown explicitly.\n\n2) Some of the concerns about the first set of experiments are mitigated by the dosage series generated for the second batch of RNAseq. Here, we have both isogenic lines carrying different numbers of chromosomes, and a direct comparison with the lab strain. The fact that the apparent dosage compensation is present in the W303 3N strain in this experiment is one thing that makes me suspect these results are not as different as initially posited (and see the paragraph above for ways of demonstrating that I'm wrong). Also, that the 4N W303 strain is the aberrant one, and grows most poorly, hints again at the issue with confounding additional gene expression signatures.\n\nAdditionally, I really wish that chromosome 12 had not been the core element of this part of the paper. The rDNA array is on chromosome 12, and differences in repeat number can change the size of the chromosome by up to a megabase. In the W303 experiments, chromosome 12 disomy causes a growth defect that I definitely would agree fits the definition of \u201cextreme.\u201d Also problematic, different strains carry polymorphisms in the rDNA that cause all sorts of potentially confounding phenotypes, such as issues with replication (see Kwan et al. 2013 PLoS Genetics), a problem that might be particularly important for aneuploids. I think the experiments are still interesting, of course, but they are difficult to interpret without some indication that the rDNA is similar in sequence and copy number in the different strain backgrounds. A chromosome 8 series in W303 (or at least one other matched set) would also be helpful in addressing the generalizability of the observations with 12.\n\n3) The remaining parts of the paper are nice follow-up experiments, including the analysis over other strains of genes that are found in CNVs more or less frequently, and the plasmid expression experiments. I have no major comments about these analyses and appreciated their inclusion.\n\nReviewer #2:\n\nThe Hose et al. manuscript examines the extent of dosage compensation within wild yeast strains. The work examines RNA-seq data and uses a new model (mixture of linear regression) to identify distinct classes of dosage compensation. They nicely use existing publicly available data to the level of dosage compensation constraint (Vg/Vm) and CNV buffering. In the data leading up to these sections, however, there are some major concerns.\n\nIn general differential expression studies using RNA-seq (subsection headed \u201cA common aneuploidy response recapitulates a Down syndrome signature\u201d; and edgeR as described here) assume that most things are not changing, an assumption that could very well be violated by whole chromosome amplifications. Normalization to a closely related euploid would not alleviate this issue. Spike in controls are necessary in this case. Redoing all their RNA-seq studies is unnecessary if spike in normalization for one strain relative to its closely related euploid shows largely identical results.\n\nIn the subsection headed \u201cMany amplified genes display lower-than-expected expression\u201d, it is noted that strains are \u201cisogenic aside of the aneuploidy\u201d yet this assertion is made without proof. In particular, the construction of the aneuploid isogenic panel for NCYC110 required passaging for 427 generations. At the known yeast mutation rate, this would result in roughly 2-3 mutations pre haploid genome content (or as many as 12 mutations in their strain as it is tetraploid). As anueploidy tolerating mutations are known to arise quickly (Torres et al. Cell 2010), it is unclear whether the observed differences arise from changes in aneuploidy or mutations. Given the diploid arose quickly after the triploid (17 generations), is the triploid strain unstable?\n\nGiven ambiguity in Figure 1A and the strain table, it is unclear if these were strains they already genome sequenced (in which case this would be a bioinformatic exercise) or whether genome sequencing is necessary.\n\nIn general the base ploidy and nature of the aneuploidy within various Figures is unclear. Given the broad range of comparisons made within this paper (strain backgrounds, aneuploidies, ploidies, etc), it is imperative for interpretation that these be more clearly labeled and identified. Likewise, their strain table should indicate for which strains genome sequence and RNA-seq are available from this study. It is unclear how \u201cclosely related euploids as paired controls\u201d was determined. How do you know a particular strain is closely related: by genome sequence, by lineage, other?\n\nReviewer #3:\n\nThe authors observed no difference in growth rates or doubling times in WT induced aneuploidy strains, suggesting no deleterious effects are derived from this. Moreover, aneuploidy was stable throughout generations, strengthening the hypothesis that WT strains tolerate aneuploidy.\n\nThe authors elegantly generated aneuploidy strains from euploid parents, which give strength to their conclusions and showed dosage compensation is one mechanisms involved in such tolerability generating less than expected gene expression in some of the amplified genes that are under higher evolutionary constrain due to their toxic effects if overexpressed.\n\nComments:\n\nThe observation of downregulation of respiration-related genes is very interesting, yet to conclude that induced aneuploidy in WT strains recapitulates a Down syndrome signature is not sustained by the data shown in this manuscript. I would leave this assumption/interesting correlation for discussion and only highlight mitochondrial ribosomal proteins and respiration genes signature.\n\nDo the authors have a hypothesis on how this signature is involved in the observed permissive aneuploidy?\n\nIs Figure 4 showing the overall number of lower and higher than expected regulated genes in all aneuploid cells versus their euploid? How many of those are common amongst all strains tested? How would this graph look for each individual strain aneuploidy/euploid comparison?\n\nDuncan Odom, Reviewing editor:\n\nMy comments are focused on presentational and editorial issues.\n\nThe Title should read: \u201cDosage compensation can buffer copy-number variation in wild yeast\u201d.\n\nThe Abstract should be carefully re-edited, as it has a few awkward sentences.\n\nIn the Introduction, what criteria were used in order to pair up your yeast samples was not at all clear. This is mentioned in the major comments numbered above, but this section will need heavy and careful revision.\n\nIn the Results section, the use of these seemingly arbitrary classes is confusing to the reader. Consider how else this section could be more clearly presented. Related: the number of genes in each class should be listed clearly in the text.\n\nIn the Discussion, the term 'Balance Hypothesis' requires both careful explanation (I have no idea what this is, for instance) and a few accessible references or reviews.\n\nIn the Discussion, you state: \u201cwhile the expression of these genes is controlled\u2026\u201d Which genes? This is a very ambiguous and poorly structured statement.\n\nFigures: In general, please consider re-tooling all figures using the principles outlined in Visual Display of Quantitative Information by Edward Tufte. However, below I highlight specific examples that should be corrected.\n\nThe use of colors in the figures is poorly considered throughout. Random color choices appear to occur in their bar charts. There is excessive use of bar charts, which reduce interest.\n\nRequired: Figure 2A and Figure 2B must not use red-green, as this is impossible for the 6-8% of male readers to see who are colorblind. Replace with yellow-blue instead. See: http://www.nature.com/nmeth/journal/v8/n6/full/nmeth.1618.html\n\nFigure 4 is poorly presented, and the axes are not understandable. Consider breaking into two separate and better annotated scatterplots.\n\nFigure 6. D panel is not informative. What is this trying to say?\n\nFigure 7. RNA abundance used blue in A/B and red in C/D. Why?\n",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "71a1fb5d-fcf1-43ad-8aab-dc3310aced59",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C1",
+      "claim": "Nearly a third of 47 sequenced non-laboratory yeast strains carried whole or partial chromosome amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced the genomes of 47 non-laboratory yeast strains, including wild, clinical, and industrial isolates (Supplementary file 1) and assessed the copy number of the 16 yeast chromosomes. Nearly a third of all strains carried whole (12 strains) or partial (2 strains) chromosome amplification (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data from 47 strains and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "2bc902f1-5a72-466c-adcf-916244f1106f",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C2",
+      "claim": "Three strains harbored multiple aneuploidies, with strain Y2189 amplifying four different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Three strains harbored multiple aneuploidies, the extreme being insect-associated strain Y2189 that amplified four different chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "3ea1a5ba-7f57-4971-8aee-f631e861fcfe",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C3",
+      "claim": "Chromosome 8 was aneuploid in five unrelated isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Chr 8 was aneuploid in five unrelated isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data from the 47 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "bf21c486-ccf6-4171-9966-c65aaf3b0a27",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C4",
+      "claim": "The higher incidence of Chr 8 amplification may reflect a higher frequency of mitotic error.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher incidence of Chr 8 amplification may reflect a higher frequency of mitotic error, since diploid mutation-accumulation (MA) lines propagated in the near-absence of selection amplify Chr 8 at a higher rate (Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on cited evidence from mutation-accumulation lines.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "7d082062-12c1-4d19-ac78-e3724c2a562e",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C5",
+      "claim": "Natural aneuploid strains showed no significant growth reduction compared to closely related euploid reference strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, natural aneuploids showed no significant growth reduction compared to closely related euploid reference strains (p = 0.19, paired T-test), although there was a slight negative correlation between growth rate and extra DNA content (R = \u22120.3, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth rate measurements and statistical analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "844a7f6d-4ed8-4137-a8d8-64ddd7136393",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C6",
+      "claim": "There was a slight negative correlation between growth rate and extra DNA content in aneuploid strains (R = \u22120.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, natural aneuploids showed no significant growth reduction compared to closely related euploid reference strains (p = 0.19, paired T-test), although there was a slight negative correlation between growth rate and extra DNA content (R = \u22120.3, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis of growth rate data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "d725d452-b276-45c2-b360-73e2db30c30b",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C7",
+      "claim": "Aneuploid laboratory strains show extreme growth retardation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to aneuploid laboratory strains, which show extreme growth retardation (Torres et al., 2007; Pavelka et al., 2010 and below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies and data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "797c1644-c512-4844-8953-fc81f06b8e12",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C8",
+      "claim": "Chromosomal amplification was stable for >200\u2013400 generations in four interrogated wild strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that chromosomal amplification was stable for >200\u2013400 generations in four interrogated wild strains, whereas the W303 laboratory strain generally loses aneuploidy within 20 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental passaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "f187f73b-6773-473e-af80-7bdda85859b3",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C9",
+      "claim": "The W303 laboratory strain generally loses aneuploidy within 20 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that chromosomal amplification was stable for >200\u2013400 generations in four interrogated wild strains, whereas the W303 laboratory strain generally loses aneuploidy within 20 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental passaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "eb113a9d-efab-4f57-a524-67b28b54b863",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C10",
+      "claim": "Aneuploid derivatives of naturally euploid parents showed little to no growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish if the tolerant strains have adapted to aneuploidy or if non-W303 strains can inherently accommodate chromosome amplification, we selected aneuploid derivatives of several naturally euploid parents (see 'Materials and methods'). We found little to no growth defect in derived aneuploid strains (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth rate measurements shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e5b2fc4c-9504-4ea5-a4f0-6855bfcd17d3",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C11",
+      "claim": "S. cerevisiae isolates are inherently tolerant of chromosomal amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, S. cerevisiae isolates are inherently tolerant of chromosomal amplification, which is common in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from growth data and aneuploidy prevalence data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "490d7979-4586-4f27-9f4a-8ad8f4a124f2",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C12",
+      "claim": "Aneuploid laboratory strains show proportionately higher expression from virtually all amplified genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory strains with forced aneuploidy are extremely slow growing, regardless of the chromosome amplified (Torres et al., 2007; Pavelka et al., 2010). Transcriptomic and proteomic studies in these strains reported proportionately higher expression from virtually all amplified genes (Torres et al., 2007; Pavelka et al., 2010; Torres et al., 2010; Sheltzer et al., 2012), with a handful of exceptions recently identified at the protein level (Dephoure et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous transcriptomic and proteomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "6f02b12b-e4ff-44b8-bcd8-21604565359a",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C13",
+      "claim": "Naturally aneuploid strains did not activate the environmental stress response as seen in sickly laboratory aneuploids.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their near-normal growth rates, naturally aneuploid strains did not activate the environmental stress response as seen in sickly laboratory aneuploids (Torres et al., 2007; Sheltzer et al., 2012) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2A and comparison to cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "831b1ab1-ac79-40b4-a828-5e339503bdbe",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C14",
+      "claim": "A weak signature common to several aneuploid strains included up-regulation of 69 unamplified genes enriched for oxidoreductases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected a weak signature common to several aneuploid strains, including the up-regulation of 69 unamplified genes (enriched for oxidoreductases) and reduced expression of 269 unamplified genes (strongly enriched for mitochondrial ribosomal protein (RP) genes and genes involved in respiration) in at least three of the six aneuploid strains (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data and functional enrichment analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "6c267cbe-4635-41db-a819-1e3c993f456c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C15",
+      "claim": "A weak signature common to several aneuploid strains included reduced expression of 269 unamplified genes strongly enriched for mitochondrial ribosomal protein genes and genes involved in respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected a weak signature common to several aneuploid strains, including the up-regulation of 69 unamplified genes (enriched for oxidoreductases) and reduced expression of 269 unamplified genes (strongly enriched for mitochondrial ribosomal protein (RP) genes and genes involved in respiration) in at least three of the six aneuploid strains (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data and functional enrichment analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "2f2110c6-c005-4e19-81ba-17dcc949fcd1",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C16",
+      "claim": "Naturally aneuploid yeast with variable chromosome copy number showed no growth defect on non-fermentable carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the respiratory capabilities of naturally aneuploid yeast with variable chromosome copy number and found no growth defect on non-fermentable carbon sources (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth measurements on different carbon sources shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "3c8a9f31-a75c-46f3-9148-e5233b13aee7",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C17",
+      "claim": "A diploid W303 strain trisomic for Chr 12 displayed an exacerbated growth defect on non-fermentable carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a diploid W303 strain trisomic for Chr 12 ('W303_Chr12-3n') displayed an exacerbated growth defect on non-fermentable carbon sources, and we were unable to make the tetrasomic W303_Chr12-4n strain that retained its mitochondrial genome, despite numerous backcrossing attempts (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "6274528d-dc1b-4607-87ad-70a14789fa05",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C18",
+      "claim": "The authors were unable to make the tetrasomic W303_Chr12-4n strain that retained its mitochondrial genome, despite numerous backcrossing attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a diploid W303 strain trisomic for Chr 12 ('W303_Chr12-3n') displayed an exacerbated growth defect on non-fermentable carbon sources, and we were unable to make the tetrasomic W303_Chr12-4n strain that retained its mitochondrial genome, despite numerous backcrossing attempts (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental attempts described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1964e68d-fd74-4ab7-88a7-604364714cb3",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C19",
+      "claim": "Differences in mitochondrial function may contribute to differences in aneuploid tolerance across strain backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that differences in mitochondrial function may contribute to differences in aneuploid tolerance across strain backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from growth defect data on non-fermentable carbon sources.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "4a31f6fe-e1d5-40dc-b327-e60f4705aa8b",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C20",
+      "claim": "Up-regulation of oxidoreductases and down-regulation of mitochondrial genes are a hallmark of Down syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, up-regulation of oxidoreductases and down-regulation of mitochondrial genes are a hallmark of DS (Conti et al., 2007; Lintas et al., 2012; Helguera et al., 2013; Valenti et al., 2014) (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Down syndrome studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1e899862-8cfc-46d0-8a0a-66bb0e29b726",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C21",
+      "claim": "Nearly 40% of amplified genes showed lower expression per gene copy compared to the paired euploid across all strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated transcript abundance relative to DNA copy for amplified genes, interrogating 2204 genes spanning eight amplified chromosomes across the six aneuploids. Across all strains, nearly 40% of amplified genes showed lower expression per gene copy compared to the paired euploid (Figure 4A, blue points, see 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq and DNA-seq data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "9533f30b-f553-49c6-a59c-5f1dbca2911c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C22",
+      "claim": "Amplified genes with lower-than-expected expression were enriched for genes encoding ribosomal proteins, translation factors, proteins localized to the nucleus or to mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "These were enriched for genes encoding RPs, translation factors, proteins localized to the nucleus or to mitochondria, and other groups (p < 1e-5, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional enrichment analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1db45c8b-fc05-4755-8709-334e426a3969",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C23",
+      "claim": "Amplified genes with expression proportionate to gene copy showed distinct enrichment for genes encoding proteins localized to the cytoplasm or to membranes, stress defense proteins, and kinases and transferases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, amplified genes with expression proportionate to gene copy (Figure 4A, gray points) showed distinct enrichment for genes encoding proteins localized to the cytoplasm or to membranes, stress defense proteins, and kinases and transferases (p < 1e-5, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional enrichment analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e63cbe01-2239-4750-929c-9428d8c3d2c7",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C24",
+      "claim": "A subset of genes was expressed \u22651.5\u00d7 higher than expected per gene copy and were enriched for genes that influence morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of genes was expressed \u22651.5\u00d7 higher than expected per gene copy (Figure 4A, magenta points), and these were enriched for genes that influence morphology (p = 1e-5, see more below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis and functional enrichment shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "3c880c5e-bc0b-49aa-bbb4-3e8e4d581588",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C25",
+      "claim": "Roughly 11\u201336% of amplified genes, depending on the strain, showed lower-than-expected expression in isogenic aneuploid-euploid pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recapitulating the results shown above, roughly 11\u201336% of amplified genes, depending on the strain, showed lower-than-expected expression (Figure 4B, blue points), while 2\u20134% showed higher-than-expected expression (Figure 4B, magenta points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq analysis in isogenic strain pairs shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "7802dd40-220a-47f2-aeda-b34f1f5e63d1",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C26",
+      "claim": "Few genes with lower-than-expected expression participate in the common response to chromosome amplification, suggesting a mechanism of dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Few of these genes participate in the common response to chromosome amplification, suggesting a mechanism of dosage compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of gene lists from different analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "52b3267c-67bf-4146-b8aa-bb89d8e87f25",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C27",
+      "claim": "A substantial fraction of genes in the forced YPS163 aneuploid displayed reduced expression, even though this strain had little time to adapt to the aneuploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial fraction of the genes scored in the forced YPS163 aneuploid displayed reduced expression, even though this strain had little time to adapt to the aneuploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data from the forced aneuploid strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "a8643911-f720-432f-acb6-6c036f20602c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C28",
+      "claim": "Dosage compensation is likely an inherent trait in S. cerevisiae that functions at a subset of yeast genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dosage compensation is likely an inherent trait in S. cerevisiae that functions at a subset of yeast genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression data in forced aneuploid strains with little adaptation time.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "35a84109-525f-4759-974a-15d65e892c3e",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C29",
+      "claim": "In the YPS1009_Chr12 strain panel, 7% of genes showed expected mRNA increases across the strain panel and with regard to the reference strain (Class 1).",
+      "claim_type": "EXPLICIT",
+      "source": "In the YPS1009_Chr12 strain panel, 7% of genes showed expected mRNA increases across the strain panel and with regard to the reference strain (Class 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MLR model classification of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e73d7c77-0f61-4dd0-8f88-addde48a81fb",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C30",
+      "claim": "In the YPS1009_Chr12 strain panel, 28% of genes showed heritably reduced expression per gene copy (Class 2a).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 28% of genes showed heritably reduced expression per gene copy (Class 2a) while only 1% showed heritably increased expression (Class 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MLR model classification of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "78cd034f-3113-42fd-a6d3-5660c2cd2e47",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C31",
+      "claim": "In the YPS1009_Chr12 strain panel, nearly a third of Chr 12 genes displayed a phenotype consistent with dosage compensation (Class 3a).",
+      "claim_type": "EXPLICIT",
+      "source": "However, nearly a third of Chr 12 genes displayed a phenotype consistent with dosage compensation (Class 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MLR model classification of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "2fa2f61b-4d61-48ad-8754-b01930ebd50d",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C32",
+      "claim": "In the NCYC110_Chr 8 strain panel, 11% of genes displayed a phenotype consistent with dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NCYC110_Chr 8 strain panel, 11% of genes displayed a phenotype consistent with dosage compensation while almost half the Chr 8 genes were classified as having heritably reduced expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MLR model classification of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "5a1d41cf-ba34-4289-881f-2c1ecb2c0004",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C33",
+      "claim": "In the NCYC110_Chr 8 strain panel, almost half the Chr 8 genes were classified as having heritably reduced expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NCYC110_Chr 8 strain panel, 11% of genes displayed a phenotype consistent with dosage compensation while almost half the Chr 8 genes were classified as having heritably reduced expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MLR model classification of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1111173a-a885-4723-be77-ee163e3a8649",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C34",
+      "claim": "Sixteen to 20% of duplicated genes showed amplified mRNA abundance across the strain panels or in isogenic aneuploid\u2013euploid pairs (Class 3b).",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen to 20% of duplicated genes showed amplified mRNA abundance across the strain panels (Class 3b) or in isogenic aneuploid\u2013euploid pairs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MLR model classification and RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e45fd186-2599-475a-9f00-cf2731a6487b",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C35",
+      "claim": "206 genes with amplified expression were enriched for genes important for cell morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "As a group, these 206 genes were enriched for genes important for cell morphology (p = 6e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional enrichment analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "f07624c7-88b7-422f-83f6-b296a42d40fb",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C36",
+      "claim": "Several aneuploid strains displayed differences in flocculence or cell shape compared to euploid controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that several of our aneuploid strains displayed differences in flocculence or cell shape compared to euploid controls, as previously reported for aneuploid strains (Wu et al., 2010; Tan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observations and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "2d7022a3-4b95-4a2f-88ab-7cd6a370b9ab",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C37",
+      "claim": "245 genes subject to dosage compensation were strongly enriched for translation factors, cytosolic ribosomal proteins, ribosome biogenesis genes, iron/copper transporters, guanyl-nucleotide exchange factors, and genes encoding mitochondrial proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As a group, these genes were strongly enriched for translation factors (p = 5e-7), cytosolic RPs (p = 1e-5), ribosome biogenesis genes (p = 1e-4), iron/copper transporters (p = 4e-5), guanyl-nucleotide exchange factors (p = 7e-4), and genes encoding mitochondrial proteins (p = 3e-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional enrichment analysis of dosage-compensated genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "75d985ec-ca89-470b-acb6-03be4c1916cf",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C38",
+      "claim": "Of the genes with lower-than-expected expression in either the haploid YPS163_Chr8-disome or diploid T73_Chr8-4n strain, 79% showed lower-than-expected expression in the NCYC110_Chr8 strain panel.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the genes with lower-than-expected expression in either the haploid YPS163_Chr8-disome or diploid T73_Chr8-4n strain, 79% showed lower-than-expected expression in the NCYC110_Chr8 strain panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of RNA-seq data across different Chr 8 aneuploid strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "88a56b87-95cf-47a6-b930-b92611ca8517",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C39",
+      "claim": "There exist strain-specific differences in the genes that are subject to dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results raise the possibility that there exist strain-specific differences in the genes that are subject to dosage compensation (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differences in gene classification across strains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "7a95944c-d824-4cd1-97da-c4fdaa32f338",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C40",
+      "claim": "For ribosomal protein genes RPL15A and RPL22A, transcripts did not increase despite increasing DNA copy when cloned onto a low-copy plasmid with flanking intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "When cloned onto a low-copy plasmid with flanking intergenic regions, transcripts RPL15A and RPL22A did not increase despite increasing DNA copy (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "8ebf8819-8396-414b-8382-70efeb394e84",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C41",
+      "claim": "The dosage response of ribosomal protein genes functions in laboratory-strain backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This was true regardless of allele, ploidy or strain background, indicating that the dosage response of RP genes functions in laboratory-strain backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from qPCR data across different strain backgrounds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "ba6a276e-5b41-4b35-85fd-1175ebbe346c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C42",
+      "claim": "The dosage response was not seen when several mitochondrial genes from Chr 12 were duplicated in isolation, since mRNA for the genes increased \u223c2\u00d7 when the genes were amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dosage response was not seen when several mitochondrial genes from Chr 12 were duplicated in isolation, since mRNA for the genes increased \u223c2\u00d7 when the genes were amplified (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "cba5e6ed-9114-4fec-8b51-da1e8f4907c3",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C43",
+      "claim": "For several mitochondrial genes that remained amplified in the mini_4n strain, the dosage effect was lost, while for other genes expression remained lower than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "For several mitochondrial genes that remained amplified in this strain, the dosage effect was lost, while for other genes expression remained lower than expected (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray expression data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "3df462e7-6eda-42de-b470-aa67d9e31075",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C44",
+      "claim": "Expression in the W303_Chr12-3n strain was highly correlated to the YPS1009_Chr12-3n strain: for two-thirds of the Class 3a genes, expression in W303_Chr12-3n was within 10% of YPS1009_Chr12-3n values.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, expression in the W303_Chr12-3n strain was highly correlated to the YPS1009_Chr12-3n strain: for two-thirds of the Class 3a genes, expression in W303_Chr12-3n was within 10% of YPS1009_Chr12-3n values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of RNA-seq data between strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "4cebd7b0-4fef-4573-9e3f-0b631b6b0dbe",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C45",
+      "claim": "The dosage compensation phenotype appeared in effect at some genes in the W303_Chr12-3n strain but was lost or obscured in the W303_Chr12-4n strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the dosage compensation phenotype appeared in effect at some genes in the W303_Chr12-3n strain but was lost or obscured in the W303_Chr12-4n strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression data comparison across W303 strains.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "f0ed685c-304a-456b-8a26-92d776320bb7",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C46",
+      "claim": "Eleven mitochondrial genes on Chr 12 showed lower-than-expected expression in the YPS1009_Chr12 panel but proportionately higher (or amplified) expression in the W303_Chr12 panel.",
+      "claim_type": "EXPLICIT",
+      "source": "One clear exception was the group of eleven mitochondrial genes on Chr 12 that showed lower-than-expected expression in the YPS1009_Chr12 panel but proportionately higher (or amplified) expression in the W303_Chr12 panel (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data comparison shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "9877e09f-6970-4604-9e71-f26e8d0a64f6",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C47",
+      "claim": "The combined set of 245 dosage-compensated genes is enriched for genes that are deleterious in very high copy in the laboratory strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the combined set of 245 dosage-compensated genes is enriched for genes that are deleterious in very high copy in the laboratory strain (p = 0.009, Makanae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to published data on gene overexpression toxicity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "cd2d2fb8-ef40-47b3-b05d-e32e72f5ade0",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C48",
+      "claim": "Dosage-compensated genes showed weak enrichment for proteins in multi-subunit complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found weak enrichment for proteins in multi-subunit complexes (p = 0.03, Pu et al., 2009), but the significance eroded if RPs were removed from the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enrichment analysis using published complex data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "c7289442-b0a2-431a-91d4-4ba745a205c3",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C49",
+      "claim": "Dosage-compensated genes displayed slightly higher transcript abundance and higher RNA polymerase occupancy than the average gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The group of dosage-compensated genes displayed slightly higher transcript abundance and higher RNA polymerase occupancy than the average gene (Chasman et al., 2014), but the trends did not hold if genes related to translation were removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to published RNA polymerase occupancy data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "f417f1d1-6ed2-480f-b18d-a64c71260144",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C50",
+      "claim": "Genes subject to dosage compensation and genes affected by heritably reduced expression show higher constraint compared to all genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes subject to dosage compensation and genes affected by heritably reduced expression show higher constraint compared to all genes, as expected for genes that are toxic when over-expressed (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of Vg/Vm ratios shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "08209f60-f490-4a13-ad65-e3ea59a38b8f",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C51",
+      "claim": "Dosage-compensated genes show considerably higher copy-number variation than genes that display proportionate mRNA increase upon gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, dosage-compensated genes show considerably higher CNV than genes that display proportionate mRNA increase upon gene amplification (p = 4e-8, Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of CNV data from 103 strains shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "6c4f029f-3377-4848-9d64-75e54f57e894",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C52",
+      "claim": "Genes with heritably reduced expression showed relaxed constraint in copy-number variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Somewhat surprisingly, genes with heritably reduced expression also showed relaxed constraint in CNV, which may reflect that some of these genes are dosage compensated in other strain backgrounds (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNV analysis and speculation about gene classification.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "d9737829-32db-4c16-88ff-bbf81e9683f5",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C53",
+      "claim": "Genes subject to dosage compensation show significantly higher Bv scores compared to all genes and compared to amplified genes with proportionately higher expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes subject to dosage compensation show significantly higher Bv scores compared to all genes and compared to amplified genes with proportionately higher expression (p = 1.7e-4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calculation and statistical analysis of buffering capacity scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "c1e2d991-ef6c-4e02-a1b3-4fbaaba0138c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C54",
+      "claim": "Genes subject to dosage-compensated expression can be buffered against copy-number variation in S. cerevisiae populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that genes subject to dosage-compensated expression can be buffered against CNV in S. cerevisiae populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CNV and buffering capacity analyses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "40730a94-db23-4ecd-8b1f-ce8167734a76",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C55",
+      "claim": "Strains of S. cerevisiae and Saccharomyces paradoxus from wintry climates have undergone selection to maintain freeze-thaw tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously shown that strains of S. cerevisiae and Saccharomyces paradoxus from wintry climates have undergone selection to maintain freeze-thaw (FT) tolerance (Will et al., 2010; Leducq et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "fd1e6f1e-4f67-40c0-b332-3cae570bcc06",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C56",
+      "claim": "The AQY2 water-transporter gene underlies freeze-thaw tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the AQY2 water-transporter gene underlying FT tolerance (Will et al., 2010) resides on Chr 12, which is amplified in New Jersey-oak strain YPS1009_Chr12-3n.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "95c03349-bede-4fe3-b9c4-f77bfca00ed6",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C57",
+      "claim": "AQY2 escapes dosage compensation, resulting in higher AQY2 expression across the YPS1009 strain panel.",
+      "claim_type": "EXPLICIT",
+      "source": "AQY2 escapes dosage compensation, resulting in higher AQY2 expression across the strain panel (Figure 10A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 10A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "5a19e923-6fd1-4dc2-a9e1-9485bc5767fd",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C58",
+      "claim": "Freeze-thaw resistance improves with increasing Chr 12 copy number in YPS1009.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that FT resistance improves with increasing Chr 12 copy number in YPS1009 (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by freeze-thaw survival measurements shown in Figure 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "61aac328-1721-49d6-9368-86c8ee08626c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C59",
+      "claim": "Chr 12 amplification is advantageous to YPS1009 in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong signatures of selection that we previously observed at the AQY2 gene (Will et al., 2010) and the clear relevance of the trait suggest that Chr 12 amplification is advantageous to YPS1009 in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from freeze-thaw data and cited evidence of selection at AQY2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "db98ca93-43c2-48e8-aeb1-b840622a5b80",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C60",
+      "claim": "Up to 40% of amplified genes in naturally aneuploid strains show lower-than-expected expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that up to 40% of amplified genes in naturally aneuploid strains show lower-than-expected expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data analysis across multiple strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "b7597f6e-dc8e-405a-8236-a9784540a44c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C61",
+      "claim": "Reduced expression of amplified genes is in part due to heritable polymorphisms that down-regulate expression from amplified genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced expression is in part due to heritable polymorphisms that down-regulate expression from amplified genes, some of which may have been selected for during the adaptation to aneuploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of isogenic and non-isogenic strain pairs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "43806d26-0644-47ef-aabc-b05da19c97cb",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C62",
+      "claim": "Reduced expression of other amplified genes\u2014up to 30\u201336% in some strains\u2014appears to be actively regulated in proportion to increased gene dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "But reduced expression of other amplified genes\u2014up to 30\u201336% in some strains\u2014appears to be actively regulated in proportion to increased gene dosage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MLR model classification of RNA-seq data from isogenic strain panels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "8fca2a74-3a1f-4b36-b7d2-c5f30d16b170",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C63",
+      "claim": "The prevalence of dosage compensation found in yeast is likely true for other species and may explain the lack of expression increase previously noted for amplified autosomal genes in Drosophila and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of the dosage compensation found here is likely true for other species and may explain the lack of expression increase previously noted for amplified autosomal genes in Drosophila (Zhang et al., 2010; Zhou et al., 2011) and humans (Antonarakis et al., 2004; Schuster-Bockler et al., 2010; Wang et al., 2011; Woodwark and Bateman, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on yeast data and citations to studies in other organisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "9cd49b14-6ada-4a4e-8fac-683020958b51",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C64",
+      "claim": "Feedback is known to occur for several ribosomal protein genes, including excess, unassembled L32 that binds a stem loop structure in its own transcript and inhibits intron splicing, perhaps triggering mRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Feedback is known to occur for several RP genes, including excess, unassembled L32 that binds a stem loop structure in its own transcript and inhibits intron splicing, perhaps triggering mRNA degradation (Dabeva and Warner, 1987; Vilardell and Warner, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on ribosomal protein feedback.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1bbac460-bd05-48bf-a571-a5e77d19cfc6",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C65",
+      "claim": "Feedback pertains more broadly to other ribosomal protein genes, including RPL15A.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results imply that feedback pertains more broadly to other RP genes, including RPL15A (Figure 7A)\u2014notably, this transcript lacks an intron and thus must utilize a mechanism distinct from RPL32.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from qPCR data shown in Figure 7A and knowledge about RPL15A lacking an intron.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "86998007-6a6f-47cb-83e0-46750c4a7855",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C66",
+      "claim": "Several TCA-cycle enzymes double as RNA-binding proteins that report on TCA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, unassembled Cox1 protein can suppress translation of the COX1 transcript (Van Loon et al., 1983; Mick et al., 2011), while several TCA-cycle enzymes double as RNA-binding proteins that report on TCA activity (Elzinga et al., 1993; de Jong et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "005aa68e-6843-4d87-84d2-b109eb3416aa",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C67",
+      "claim": "Natural isolates are generally tolerant to aneuploidy, whether or not they have had time to adapt to the extra chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural isolates are generally tolerant to aneuploidy, whether or not they have had time to adapt to the extra chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by growth data from naturally aneuploid strains and forced aneuploid derivatives.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "289238b7-ccba-4fcf-b5d7-9e8e879d7b5e",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C68",
+      "claim": "Down syndrome cells are extremely sensitive to reactive-oxygen species and down-regulate mitochondrial respiration that in turn limits ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these trends are also seen in DS cells, which are extremely sensitive to reactive-oxygen species (ROS), and perhaps consequently, down-regulate mitochondrial respiration that in turn limits ROS production (Helguera et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Down syndrome study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "19272dfd-7721-4a4d-938b-c83945e1dd7b",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C69",
+      "claim": "Human patients display significant variability in their sensitivity to Down syndrome, suggesting genetic effects on DS pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Human patients display significant variability in their sensitivity to DS, suggesting genetic effects on DS pathologies (Roper and Reeves, 2006; Prandini et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Down syndrome studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "5bed0393-d368-4408-8eef-b09cb81ef182",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C70",
+      "claim": "Many genes escape dosage compensation in response to aneuploidy and can contribute significantly to phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the expression of dosage-compensated genes is controlled in proportion to gene copy, many genes escape dosage compensation in response to aneuploidy and can contribute significantly to phenotypic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression data showing genes with proportionate or amplified expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "8067526e-572f-44d3-b7a5-bdff6989d572",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C71",
+      "claim": "Whole and partial chromosome amplification is common in laboratory selection experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole and partial chromosome amplification is common in laboratory selection experiments (Dunham et al., 2002; Gresham et al., 2008; Yona et al., 2012) and is particularly prevalent in laboratory mutants that have an extreme fitness defect (Hughes et al., 2000; Koszul et al., 2004; Rancati et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to laboratory evolution studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "c070196c-80a1-4d81-826d-61d536bc8299",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C72",
+      "claim": "The Saccharomycotina karyotype is extremely stable, holding at eight or sixteen chromosomes in most pre- and post-genome duplication species, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the Saccharomycotina karyotype is extremely stable, holding at eight or sixteen chromosomes in most pre- and post-genome duplication species, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Saccharomycotina evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "15bdca0a-5fdc-4fd9-8751-d95fb21acada",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C73",
+      "claim": "Aneuploidy may serve as a transient intermediate that can be readily generated and readily lost depending on the selective pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that aneuploidy may serve as a transient intermediate, one that can be readily generated\u2014and readily lost\u2014depending on the selective pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from karyotype stability and aneuploidy prevalence data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e1d2f05c-7ddc-4496-9c05-0eb6131afc99",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C74",
+      "claim": "Selection for increased stress tolerance in the laboratory produced aneuploid strains that eventually gave way to other solutions even when the selective pressure persisted.",
+      "claim_type": "EXPLICIT",
+      "source": "Yona et al. (2012) showed that selection for increased stress tolerance in the laboratory produced aneuploid strains that eventually gave way to other solutions even when the selective pressure persisted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to laboratory evolution study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1b7d2bf1-f9f5-4ada-9591-879bbfad7ad7",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C75",
+      "claim": "Aneuploidy is frequent and tolerated in nature and may provide an important route toward natural genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that aneuploidy is frequent and tolerated in nature and may provide an important route toward natural genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from aneuploidy prevalence, tolerance, and phenotypic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "5abe8576-3948-4e4d-a781-0a2ce081667e",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C76",
+      "claim": "Gene duplication could provide a major force in the evolution of new gene functions by relaxing constraint on gene sequences and allowing one or both gene copies to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Susumu Ohno proposed over 40 years ago that gene duplication could provide a major force in the evolution of new gene functions, by relaxing constraint on gene sequences and allowing one or both gene copies to evolve (Ohno, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ohno's hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "39a002e1-9ead-48a7-8731-e8cf7abdfea6",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C77",
+      "claim": "The immediate consequence of duplication is assumed to be increased expression of the affected genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The immediate consequence of duplication is assumed to be increased expression of the affected genes, and in some cases the increased expression provides a selective advantage (e.g., Sandegren and Andersson, 2009; Chang et al., 2013; Edi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge and citations to studies showing selective advantage.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "d23da6ee-132e-45db-9f88-b4cbf776279e",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C78",
+      "claim": "Aneuploidy is linked to myriad diseases but also facilitates organismal evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Aneuploidy is linked to myriad diseases but also facilitates organismal evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about aneuploidy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "48a6fa64-9ba4-4a0d-b0b5-48c6b04243f0",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C79",
+      "claim": "Aneuploidy comes with a fitness cost, most famously in cases of human aneuploidies such as Down syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aneuploidy comes with a fitness cost, most famously in cases of human aneuploidies such as Down syndrome (DS) (Antonarakis et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge and citation to Down syndrome study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "eedab5ed-a4ff-45ea-b46a-63d3c6e8e85e",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C80",
+      "claim": "The reasons for aneuploidy toxicity are not entirely clear but may be due to increased expression from genes that are toxic when overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons for aneuploidy toxicity are not entirely clear but may be due to increased expression from genes that are toxic when overexpressed (Siegel and Amon, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citation to previous study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "50074c27-0f8d-41cf-8d41-3e526c93d173",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C81",
+      "claim": "Laboratory strains are extremely sensitive to chromosomal amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have used Saccharomyces cerevisiae as a model for aneuploidy syndromes, since laboratory strains are extremely sensitive to chromosomal amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "ba85ba65-6dda-4e4a-a5ab-1d9e3327abfe",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C82",
+      "claim": "Laboratory strains with forced aneuploidy are extremely slow growing, regardless of the chromosome amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory strains with forced aneuploidy are extremely slow growing, regardless of the chromosome amplified (Torres et al., 2007; Pavelka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "aeb726bd-1412-4042-b49c-0a0b2ce5c377",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C83",
+      "claim": "Expression at hemizygous genes is not up-regulated to compensate for reduced gene copy.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent lack of dosage compensation is consistent with another study by Springer et al. (2010), which found that expression at hemizygous genes is not up-regulated to compensate for reduced gene copy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "cd9b7035-c3a3-45d0-928a-4f1f2aa9d215",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C84",
+      "claim": "Laboratory strains have lost many features inherent in wild strains.",
+      "claim_type": "EXPLICIT",
+      "source": "While these studies have generated important results on aneuploidy intolerance in these particular strains, one caveat is that they were all done in laboratory strains, which have lost many features inherent in wild strains (Kvitek et al., 2008; Lewis et al., 2010; Lewis and Gasch, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on laboratory vs wild strain differences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "b67a483d-9db5-4a3c-b8a7-3ea4add1e200",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C85",
+      "claim": "Chromosomal amplification is common in non-laboratory yeast strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that chromosomal amplification is common in non-laboratory yeast strains, which are inherently tolerant of aneuploidy and display an active mode of gene-dosage compensation at the transcript level, for specific classes of amplified genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data from 47 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "568fadd3-da17-48f7-b61e-6038cf5c5b4b",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C86",
+      "claim": "Non-laboratory yeast strains are inherently tolerant of aneuploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that chromosomal amplification is common in non-laboratory yeast strains, which are inherently tolerant of aneuploidy and display an active mode of gene-dosage compensation at the transcript level, for specific classes of amplified genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by growth rate data from naturally aneuploid and forced aneuploid strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "77d1d60d-5e19-4e68-a2f7-ff877c69a182",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C87",
+      "claim": "Non-laboratory yeast strains display an active mode of gene-dosage compensation at the transcript level for specific classes of amplified genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that chromosomal amplification is common in non-laboratory yeast strains, which are inherently tolerant of aneuploidy and display an active mode of gene-dosage compensation at the transcript level, for specific classes of amplified genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data from isogenic strain panels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "23385d8b-737d-416d-a2f5-117f2c63cd02",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C88",
+      "claim": "Genes subject to dosage compensation are under higher expression constraint in wild populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes subject to dosage compensation are under higher expression constraint in wild populations\u2014but they show elevated rates of gene amplification, suggesting that copy-number variation is buffered at these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of Vg/Vm ratios from wild populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "b4446c34-20e1-48e6-bae2-f5ccedfc5276",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C89",
+      "claim": "Genes subject to dosage compensation show elevated rates of gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes subject to dosage compensation are under higher expression constraint in wild populations\u2014but they show elevated rates of gene amplification, suggesting that copy-number variation is buffered at these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNV analysis across 103 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "a0659a2b-6764-49eb-94c4-336a8fcc2308",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C90",
+      "claim": "Copy-number variation is buffered at genes subject to dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes subject to dosage compensation are under higher expression constraint in wild populations\u2014but they show elevated rates of gene amplification, suggesting that copy-number variation is buffered at these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression constraint and CNV data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "6339efa5-07ed-4baa-904f-4cccc4a37561",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C91",
+      "claim": "Aneuploidy provides a clear ecological advantage to oak strain YPS1009 by amplifying a causal gene that escapes dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that aneuploidy provides a clear ecological advantage to oak strain YPS1009, by amplifying a causal gene that escapes dosage compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by freeze-thaw tolerance data and AQY2 expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "8ec52c2f-f599-48cc-972c-65971387d458",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "claim_id": "C92",
+      "claim": "Dosage compensation buffers gene amplification through aneuploidy to provide a natural, but likely transient, route to rapid phenotypic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work presents a model in which dosage compensation buffers gene amplification through aneuploidy to provide a natural, but likely transient, route to rapid phenotypic evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model inferred from all data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "33c17325-9615-4f21-8627-17e36de50639",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nearly a third of 47 sequenced non-laboratory yeast strains carried whole or partial chromosome amplification, with some chromosomes amplified in multiple unrelated isolates. Chromosome 8 was aneuploid in five unrelated isolates, and three strains harbored multiple aneuploidies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C85 are well-supported by genomic sequencing data from 47 strains shown in Figure 1A. The prevalence of aneuploidy (nearly one-third of strains) and specific patterns (Chr 8 in five isolates, multiple aneuploidies in three strains) are directly demonstrated by DNA-seq data with appropriate visualization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "ce2a20d4-399f-4644-9809-751ba28ae551",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Natural aneuploid strains showed no significant growth reduction compared to euploid controls (p=0.19), with only a slight negative correlation between growth rate and DNA content (R=-0.3). This contrasts sharply with laboratory strains showing extreme growth retardation. Aneuploid derivatives of naturally euploid parents also showed little growth defect, indicating inherent tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C10-C11, C67, and C86 are supported by growth rate measurements in Figures 1B-C with appropriate statistical testing. The comparison between natural and laboratory strains is well-documented, and the forced aneuploidy experiment (C10) provides strong evidence for inherent tolerance rather than adaptive tolerance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e7dee8e6-e364-41b3-9a43-cbf59d6273de",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chromosomal amplification was stable for >200-400 generations in four wild strains, whereas the W303 laboratory strain generally loses aneuploidy within 20 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by experimental passaging data demonstrating differential stability of aneuploidy between wild and laboratory strains. This provides important evidence for the biological relevance of aneuploidy in natural populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "4eb63de6-31b6-4f79-a04a-becb7fc00098",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Naturally aneuploid strains did not activate the environmental stress response seen in laboratory aneuploids, but showed a weak common signature including up-regulation of 69 oxidoreductase genes and down-regulation of 269 genes enriched for mitochondrial ribosomal proteins and respiration genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by RNA-seq data in Figure 2A-B with functional enrichment analysis. The absence of stress response and presence of a distinct mitochondrial/oxidoreductase signature are well-documented, though the biological significance of this weak signature requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "6bfd3db1-d4ef-49b6-a0e6-87a7fe775b9b",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Naturally aneuploid yeast showed no growth defect on non-fermentable carbon sources, while W303_Chr12-3n displayed exacerbated defects and W303_Chr12-4n could not be generated with intact mitochondria, suggesting mitochondrial function differences contribute to strain-specific aneuploidy tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 are supported by growth measurements on different carbon sources (Figure 3) and experimental attempts to generate strains. The inference about mitochondrial function (C19) is reasonable given the data, though the mechanism remains speculative and would benefit from direct mitochondrial functional assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "e2519ffb-c805-4241-ba9d-44c10448abd8",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nearly 40% of amplified genes across six aneuploid strains showed lower expression per gene copy than expected, enriched for ribosomal proteins, translation factors, and mitochondrial proteins. Genes with proportionate expression were enriched for cytoplasmic/membrane proteins, while genes with >1.5\u00d7 higher expression were enriched for morphology genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C60 are well-supported by RNA-seq and DNA-seq analysis in Figure 4A with functional enrichment analysis. The methodology for identifying genes with lower-than-expected expression is clearly described and statistically sound, though the specific cutoffs used (1 or 2 standard deviations) introduce some arbitrariness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In isogenic aneuploid-euploid pairs, 11-36% of amplified genes showed lower-than-expected expression, suggesting active dosage compensation rather than adaptive mutations. This was observed even in forced aneuploids with little adaptation time, indicating dosage compensation is an inherent trait in S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28, C62, and C87 are strongly supported by RNA-seq analysis in isogenic strain pairs (Figure 4B). The use of isogenic pairs eliminates confounding genetic differences, and the observation in forced aneuploids (C27) provides compelling evidence for inherent rather than adaptive compensation. The MLR model classification strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "ac418f5b-435a-4baa-99ce-48f205ea81d2",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MLR model classification of isogenic strain panels revealed that in YPS1009_Chr12, 7% of genes showed expected expression (Class 1), 28% showed heritably reduced expression (Class 2a), and 29% showed dosage compensation (Class 3a). In NCYC110_Chr8, 11% showed dosage compensation while 49% showed heritably reduced expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by the novel MLR model analysis of RNA-seq data from isogenic strain panels. The statistical methodology is described in detail in the Methods and Appendix, though the model assumptions and validation could be more thoroughly documented. The strain-specific differences are notable and warrant further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "89a213ab-c3ed-41ba-ab59-9d355a0a2236",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sixteen to 20% of duplicated genes showed amplified mRNA abundance (Class 3b), enriched for cell morphology genes. Several aneuploid strains displayed differences in flocculence or cell shape compared to euploid controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by MLR classification and RNA-seq data (Figure 4B) with functional enrichment analysis. The morphological observations provide phenotypic validation, though more systematic quantification of morphological changes would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "bda23e14-7fe2-43db-afc7-aac1613cc295",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 245 genes subject to dosage compensation were strongly enriched for translation factors, ribosomal proteins, ribosome biogenesis genes, iron/copper transporters, and mitochondrial proteins. Of genes with lower-than-expected expression in YPS163_Chr8 or T73_Chr8-4n, 79% also showed this pattern in NCYC110_Chr8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by functional enrichment analysis and cross-strain comparison of RNA-seq data. The consistency across Chr 8 aneuploid strains (79% overlap) provides validation, though the functional enrichments are heavily driven by ribosomal protein genes which may dominate the signal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "61f6e729-636f-47f1-9f16-5ad06e205587",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There exist strain-specific differences in the genes that are subject to dosage compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C39 is inferred from differences in gene classification across strains, but the evidence is mixed. While some genes show strain-specific patterns, the possibility of misclassification or technical variation is acknowledged. More systematic analysis across multiple chromosomes and strains would be needed to definitively establish strain-specific dosage compensation mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "64eed490-4f12-4682-a906-8038909c8a31",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ribosomal protein genes RPL15A and RPL22A showed dosage compensation when cloned on plasmids, functioning across strain backgrounds and ploidy levels. This extends known feedback mechanisms beyond RPL32 to other RP genes, including those lacking introns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 and C64-C65 are supported by qPCR data in Figure 7A-B showing that RP gene transcripts do not increase with DNA copy. The inference that feedback mechanisms extend beyond RPL32 (C65) is reasonable given the data, though the specific molecular mechanism for intronless genes remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "52c932ba-a510-4962-964c-1af0d3862d70",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mitochondrial genes from Chr 12 showed ~2\u00d7 mRNA increase when duplicated in isolation on plasmids, but in the mini_4n strain with partial Chr 12 deletion, some mitochondrial genes lost dosage compensation while others maintained lower-than-expected expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by qPCR (Figure 7C-D) and microarray data (Figure 8B). The results suggest a more complex mechanism for mitochondrial gene dosage compensation that may depend on chromosomal context, though the specific mechanism remains unclear and requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "4839170c-f051-47b2-a581-dea734e77de7",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Expression in W303_Chr12-3n was highly correlated with YPS1009_Chr12-3n for Class 3a genes (within 10% for two-thirds), but dosage compensation was lost or obscured in W303_Chr12-4n. Eleven mitochondrial genes on Chr 12 showed opposite patterns between YPS1009 and W303 panels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by RNA-seq data comparison between strain panels (Figure 8C). The strain-specific differences, particularly for mitochondrial genes, are well-documented and consistent with earlier observations about mitochondrial function differences between W303 and wild strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1fe32e1c-0758-48d3-8dd1-96f689a2651f",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Dosage-compensated genes are enriched for genes deleterious in high copy (p=0.009), show weak enrichment for multi-subunit complexes (p=0.03), and display slightly higher transcript abundance and RNA polymerase occupancy, though these trends depend on inclusion of translation-related genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by comparison to published datasets with appropriate statistical testing. However, the weak enrichments and dependency on specific gene classes (particularly ribosomal proteins) suggest these may not be universal features of dosage-compensated genes. The balance hypothesis receives only limited support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "7a0ecfec-bf46-48a7-9235-4d8df3dbe298",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Genes subject to dosage compensation show higher expression constraint (lower Vg/Vm ratios) in wild populations compared to all genes, as expected for genes toxic when overexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C88 are supported by analysis of genetic variance (Vg) from natural isolates and mutational variance (Vm) from mutation-accumulation lines, shown in Figure 9A. The methodology is sound and the interpretation is consistent with the hypothesis that dosage compensation targets genes under strong selective constraint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "1a66a59d-35ef-48b5-b5e7-6afe11a08c5c",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Dosage-compensated genes show considerably higher copy-number variation than genes with proportionate expression (p=4e-8), suggesting CNV is buffered at these genes. Genes with heritably reduced expression also showed relaxed CNV constraint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C89-C90 are supported by CNV analysis across 103 strains (Figure 9B). The elevated CNV at dosage-compensated genes is statistically significant and biologically meaningful, supporting the buffering hypothesis. The finding for heritably reduced genes (C52) is more complex and may reflect misclassification or strain-specific compensation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "ac15438d-53e2-4c90-8c98-774740aee7d0",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Genes subject to dosage compensation show significantly higher buffering capacity scores (Bv) compared to all genes and amplified genes with proportionate expression (p=1.7e-4), demonstrating that dosage-compensated expression buffers CNV in S. cerevisiae populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by the novel Bv metric that integrates CNV frequency (weighted by phylogeny) with expression constraint. The statistical significance is strong and the biological interpretation is sound, though the Bv metric itself could benefit from additional validation and comparison to alternative approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "0368fec8-a79a-4018-a031-8d86993708bf",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Chr 12 amplification in YPS1009 provides ecological advantage through increased freeze-thaw tolerance. The AQY2 water-transporter gene on Chr 12 escapes dosage compensation, showing higher expression with increasing chromosome copy, and freeze-thaw resistance improves proportionately with Chr 12 copy number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 and C91 are well-supported by freeze-thaw survival data (Figure 10B) and AQY2 expression data (Figure 10A), combined with prior evidence of selection at AQY2. This provides a clear example of how aneuploidy can provide adaptive advantage through amplification of genes that escape dosage compensation. The ecological relevance is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "ee8a580b-698f-45a0-a4f8-2c54a71c0005",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Reduced expression of amplified genes is in part due to heritable polymorphisms that down-regulate expression, some of which may have been selected during adaptation to aneuploidy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by comparison of isogenic and non-isogenic strain pairs showing that some reduced expression persists across isogenic comparisons (heritable) while other cases show active compensation. The inference about selection is reasonable but speculative, as direct evidence of adaptive evolution is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "147c2da7-424e-4310-b150-365198ce18aa",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The prevalence of dosage compensation found in yeast is likely true for other species and may explain lack of expression increase in amplified autosomal genes in Drosophila and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is speculative extrapolation from yeast data to other organisms. While the citations to Drosophila and human studies are appropriate, direct evidence for similar mechanisms in these organisms is not provided. This represents an interesting hypothesis but requires experimental validation in other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "3eefff83-4fe4-43f2-8b0d-50a3039371d0",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Several TCA-cycle enzymes double as RNA-binding proteins that report on TCA activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by appropriate citations to previous studies. This represents established knowledge used to contextualize potential mechanisms for mitochondrial gene dosage compensation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "af87a3fb-ffd5-4a85-99a0-491a76a7f699",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Up-regulation of oxidoreductases and down-regulation of mitochondrial genes are hallmarks of Down syndrome. DS cells are sensitive to ROS and down-regulate mitochondrial respiration. Human patients show variability in DS sensitivity, suggesting genetic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C68-C69 are supported by appropriate citations to Down syndrome literature. These claims provide important context for interpreting the yeast aneuploidy response, though direct mechanistic connections between yeast and human aneuploidy remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "2d61775c-c8d9-4c7a-98ef-1339baa17088",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Many genes escape dosage compensation and contribute to phenotypic variation. Aneuploidy is common in laboratory evolution but the Saccharomycotina karyotype is stable, suggesting aneuploidy serves as a transient intermediate. The model proposes dosage compensation buffers gene amplification through aneuploidy to provide a route to rapid phenotypic evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 and C92 synthesize the major findings into a coherent model. The model is well-supported by the data presented (aneuploidy prevalence, tolerance, dosage compensation, and adaptive advantage in YPS1009) and appropriate citations to laboratory evolution studies. The transient nature of aneuploidy is inferred from karyotype stability and cited studies, providing a reasonable evolutionary framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "43405a01-6b2f-4b9e-a7f2-c92c8286f6c9",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The higher incidence of Chr 8 amplification may reflect a higher frequency of mitotic error, based on mutation-accumulation line data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C4 is speculative, based on a single citation to MA line data. While the hypothesis is reasonable, alternative explanations (e.g., selection for Chr 8 amplification, smaller fitness cost) are not ruled out. Additional data would be needed to distinguish between these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "0d95e5e4-01af-4f6a-b019-0f0098513ea3",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Laboratory strains are extremely sensitive to chromosomal amplification and show proportionately higher expression from virtually all amplified genes. Laboratory strains have lost many features inherent in wild strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C81-C84 are supported by appropriate citations to previous studies and established knowledge. These claims provide essential context for the novelty of the current findings in wild strains, though they represent prior work rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    },
+    {
+      "id": "9b15609d-1c1f-469a-bfcd-9c76eb34569f",
+      "content_id": "5d99eb43-79f8-4b68-baa9-02a5da773f90",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Gene duplication can drive evolution by relaxing constraint, with immediate consequences typically being increased expression. Aneuploidy is linked to diseases but also facilitates evolution, though it comes with fitness costs potentially due to toxic gene overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 represent established knowledge and appropriate citations providing background context. These are not new findings but necessary framing for the manuscript's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:38.929808Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "71a1fb5d-fcf1-43ad-8aab-dc3310aced59",
+      "result_id": "33c17325-9615-4f21-8627-17e36de50639"
+    },
+    {
+      "claim_id": "2bc902f1-5a72-466c-adcf-916244f1106f",
+      "result_id": "33c17325-9615-4f21-8627-17e36de50639"
+    },
+    {
+      "claim_id": "3ea1a5ba-7f57-4971-8aee-f631e861fcfe",
+      "result_id": "33c17325-9615-4f21-8627-17e36de50639"
+    },
+    {
+      "claim_id": "b67a483d-9db5-4a3c-b8a7-3ea4add1e200",
+      "result_id": "33c17325-9615-4f21-8627-17e36de50639"
+    },
+    {
+      "claim_id": "7d082062-12c1-4d19-ac78-e3724c2a562e",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "844a7f6d-4ed8-4137-a8d8-64ddd7136393",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "d725d452-b276-45c2-b360-73e2db30c30b",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "eb113a9d-efab-4f57-a524-67b28b54b863",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "e5b2fc4c-9504-4ea5-a4f0-6855bfcd17d3",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "005aa68e-6843-4d87-84d2-b109eb3416aa",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "568fadd3-da17-48f7-b61e-6038cf5c5b4b",
+      "result_id": "ce2a20d4-399f-4644-9809-751ba28ae551"
+    },
+    {
+      "claim_id": "797c1644-c512-4844-8953-fc81f06b8e12",
+      "result_id": "e7dee8e6-e364-41b3-9a43-cbf59d6273de"
+    },
+    {
+      "claim_id": "f187f73b-6773-473e-af80-7bdda85859b3",
+      "result_id": "e7dee8e6-e364-41b3-9a43-cbf59d6273de"
+    },
+    {
+      "claim_id": "6f02b12b-e4ff-44b8-bcd8-21604565359a",
+      "result_id": "4eb63de6-31b6-4f79-a04a-becb7fc00098"
+    },
+    {
+      "claim_id": "831b1ab1-ac79-40b4-a828-5e339503bdbe",
+      "result_id": "4eb63de6-31b6-4f79-a04a-becb7fc00098"
+    },
+    {
+      "claim_id": "6c267cbe-4635-41db-a819-1e3c993f456c",
+      "result_id": "4eb63de6-31b6-4f79-a04a-becb7fc00098"
+    },
+    {
+      "claim_id": "2f2110c6-c005-4e19-81ba-17dcc949fcd1",
+      "result_id": "6bfd3db1-d4ef-49b6-a0e6-87a7fe775b9b"
+    },
+    {
+      "claim_id": "3c8a9f31-a75c-46f3-9148-e5233b13aee7",
+      "result_id": "6bfd3db1-d4ef-49b6-a0e6-87a7fe775b9b"
+    },
+    {
+      "claim_id": "6274528d-dc1b-4607-87ad-70a14789fa05",
+      "result_id": "6bfd3db1-d4ef-49b6-a0e6-87a7fe775b9b"
+    },
+    {
+      "claim_id": "1964e68d-fd74-4ab7-88a7-604364714cb3",
+      "result_id": "6bfd3db1-d4ef-49b6-a0e6-87a7fe775b9b"
+    },
+    {
+      "claim_id": "1e899862-8cfc-46d0-8a0a-66bb0e29b726",
+      "result_id": "e2519ffb-c805-4241-ba9d-44c10448abd8"
+    },
+    {
+      "claim_id": "9533f30b-f553-49c6-a59c-5f1dbca2911c",
+      "result_id": "e2519ffb-c805-4241-ba9d-44c10448abd8"
+    },
+    {
+      "claim_id": "1db45c8b-fc05-4755-8709-334e426a3969",
+      "result_id": "e2519ffb-c805-4241-ba9d-44c10448abd8"
+    },
+    {
+      "claim_id": "e63cbe01-2239-4750-929c-9428d8c3d2c7",
+      "result_id": "e2519ffb-c805-4241-ba9d-44c10448abd8"
+    },
+    {
+      "claim_id": "db98ca93-43c2-48e8-aeb1-b840622a5b80",
+      "result_id": "e2519ffb-c805-4241-ba9d-44c10448abd8"
+    },
+    {
+      "claim_id": "3c880c5e-bc0b-49aa-bbb4-3e8e4d581588",
+      "result_id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1"
+    },
+    {
+      "claim_id": "7802dd40-220a-47f2-aeda-b34f1f5e63d1",
+      "result_id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1"
+    },
+    {
+      "claim_id": "52b3267c-67bf-4146-b8aa-bb89d8e87f25",
+      "result_id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1"
+    },
+    {
+      "claim_id": "a8643911-f720-432f-acb6-6c036f20602c",
+      "result_id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1"
+    },
+    {
+      "claim_id": "43806d26-0644-47ef-aabc-b05da19c97cb",
+      "result_id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1"
+    },
+    {
+      "claim_id": "77d1d60d-5e19-4e68-a2f7-ff877c69a182",
+      "result_id": "d0682df8-c1e4-45cd-bffc-2da5e76004b1"
+    },
+    {
+      "claim_id": "35a84109-525f-4759-974a-15d65e892c3e",
+      "result_id": "ac418f5b-435a-4baa-99ce-48f205ea81d2"
+    },
+    {
+      "claim_id": "e73d7c77-0f61-4dd0-8f88-addde48a81fb",
+      "result_id": "ac418f5b-435a-4baa-99ce-48f205ea81d2"
+    },
+    {
+      "claim_id": "78cd034f-3113-42fd-a6d3-5660c2cd2e47",
+      "result_id": "ac418f5b-435a-4baa-99ce-48f205ea81d2"
+    },
+    {
+      "claim_id": "2fa2f61b-4d61-48ad-8754-b01930ebd50d",
+      "result_id": "ac418f5b-435a-4baa-99ce-48f205ea81d2"
+    },
+    {
+      "claim_id": "5a1d41cf-ba34-4289-881f-2c1ecb2c0004",
+      "result_id": "ac418f5b-435a-4baa-99ce-48f205ea81d2"
+    },
+    {
+      "claim_id": "1111173a-a885-4723-be77-ee163e3a8649",
+      "result_id": "89a213ab-c3ed-41ba-ab59-9d355a0a2236"
+    },
+    {
+      "claim_id": "e45fd186-2599-475a-9f00-cf2731a6487b",
+      "result_id": "89a213ab-c3ed-41ba-ab59-9d355a0a2236"
+    },
+    {
+      "claim_id": "f07624c7-88b7-422f-83f6-b296a42d40fb",
+      "result_id": "89a213ab-c3ed-41ba-ab59-9d355a0a2236"
+    },
+    {
+      "claim_id": "2d7022a3-4b95-4a2f-88ab-7cd6a370b9ab",
+      "result_id": "bda23e14-7fe2-43db-afc7-aac1613cc295"
+    },
+    {
+      "claim_id": "75d985ec-ca89-470b-acb6-03be4c1916cf",
+      "result_id": "bda23e14-7fe2-43db-afc7-aac1613cc295"
+    },
+    {
+      "claim_id": "88a56b87-95cf-47a6-b930-b92611ca8517",
+      "result_id": "61f6e729-636f-47f1-9f16-5ad06e205587"
+    },
+    {
+      "claim_id": "7a95944c-d824-4cd1-97da-c4fdaa32f338",
+      "result_id": "64eed490-4f12-4682-a906-8038909c8a31"
+    },
+    {
+      "claim_id": "8ebf8819-8396-414b-8382-70efeb394e84",
+      "result_id": "64eed490-4f12-4682-a906-8038909c8a31"
+    },
+    {
+      "claim_id": "9cd49b14-6ada-4a4e-8fac-683020958b51",
+      "result_id": "64eed490-4f12-4682-a906-8038909c8a31"
+    },
+    {
+      "claim_id": "1bbac460-bd05-48bf-a571-a5e77d19cfc6",
+      "result_id": "64eed490-4f12-4682-a906-8038909c8a31"
+    },
+    {
+      "claim_id": "ba6a276e-5b41-4b35-85fd-1175ebbe346c",
+      "result_id": "52c932ba-a510-4962-964c-1af0d3862d70"
+    },
+    {
+      "claim_id": "cba5e6ed-9114-4fec-8b51-da1e8f4907c3",
+      "result_id": "52c932ba-a510-4962-964c-1af0d3862d70"
+    },
+    {
+      "claim_id": "3df462e7-6eda-42de-b470-aa67d9e31075",
+      "result_id": "4839170c-f051-47b2-a581-dea734e77de7"
+    },
+    {
+      "claim_id": "4cebd7b0-4fef-4573-9e3f-0b631b6b0dbe",
+      "result_id": "4839170c-f051-47b2-a581-dea734e77de7"
+    },
+    {
+      "claim_id": "f0ed685c-304a-456b-8a26-92d776320bb7",
+      "result_id": "4839170c-f051-47b2-a581-dea734e77de7"
+    },
+    {
+      "claim_id": "9877e09f-6970-4604-9e71-f26e8d0a64f6",
+      "result_id": "1fe32e1c-0758-48d3-8dd1-96f689a2651f"
+    },
+    {
+      "claim_id": "cd2d2fb8-ef40-47b3-b05d-e32e72f5ade0",
+      "result_id": "1fe32e1c-0758-48d3-8dd1-96f689a2651f"
+    },
+    {
+      "claim_id": "c7289442-b0a2-431a-91d4-4ba745a205c3",
+      "result_id": "1fe32e1c-0758-48d3-8dd1-96f689a2651f"
+    },
+    {
+      "claim_id": "f417f1d1-6ed2-480f-b18d-a64c71260144",
+      "result_id": "7a0ecfec-bf46-48a7-9235-4d8df3dbe298"
+    },
+    {
+      "claim_id": "23385d8b-737d-416d-a2f5-117f2c63cd02",
+      "result_id": "7a0ecfec-bf46-48a7-9235-4d8df3dbe298"
+    },
+    {
+      "claim_id": "08209f60-f490-4a13-ad65-e3ea59a38b8f",
+      "result_id": "1a66a59d-35ef-48b5-b5e7-6afe11a08c5c"
+    },
+    {
+      "claim_id": "6c4f029f-3377-4848-9d64-75e54f57e894",
+      "result_id": "1a66a59d-35ef-48b5-b5e7-6afe11a08c5c"
+    },
+    {
+      "claim_id": "b4446c34-20e1-48e6-bae2-f5ccedfc5276",
+      "result_id": "1a66a59d-35ef-48b5-b5e7-6afe11a08c5c"
+    },
+    {
+      "claim_id": "a0659a2b-6764-49eb-94c4-336a8fcc2308",
+      "result_id": "1a66a59d-35ef-48b5-b5e7-6afe11a08c5c"
+    },
+    {
+      "claim_id": "d9737829-32db-4c16-88ff-bbf81e9683f5",
+      "result_id": "ac15438d-53e2-4c90-8c98-774740aee7d0"
+    },
+    {
+      "claim_id": "c1e2d991-ef6c-4e02-a1b3-4fbaaba0138c",
+      "result_id": "ac15438d-53e2-4c90-8c98-774740aee7d0"
+    },
+    {
+      "claim_id": "40730a94-db23-4ecd-8b1f-ce8167734a76",
+      "result_id": "0368fec8-a79a-4018-a031-8d86993708bf"
+    },
+    {
+      "claim_id": "fd1e6f1e-4f67-40c0-b332-3cae570bcc06",
+      "result_id": "0368fec8-a79a-4018-a031-8d86993708bf"
+    },
+    {
+      "claim_id": "95c03349-bede-4fe3-b9c4-f77bfca00ed6",
+      "result_id": "0368fec8-a79a-4018-a031-8d86993708bf"
+    },
+    {
+      "claim_id": "5a19e923-6fd1-4dc2-a9e1-9485bc5767fd",
+      "result_id": "0368fec8-a79a-4018-a031-8d86993708bf"
+    },
+    {
+      "claim_id": "61aac328-1721-49d6-9368-86c8ee08626c",
+      "result_id": "0368fec8-a79a-4018-a031-8d86993708bf"
+    },
+    {
+      "claim_id": "6339efa5-07ed-4baa-904f-4cccc4a37561",
+      "result_id": "0368fec8-a79a-4018-a031-8d86993708bf"
+    },
+    {
+      "claim_id": "b7597f6e-dc8e-405a-8236-a9784540a44c",
+      "result_id": "ee8a580b-698f-45a0-a4f8-2c54a71c0005"
+    },
+    {
+      "claim_id": "8fca2a74-3a1f-4b36-b7d2-c5f30d16b170",
+      "result_id": "147c2da7-424e-4310-b150-365198ce18aa"
+    },
+    {
+      "claim_id": "86998007-6a6f-47cb-83e0-46750c4a7855",
+      "result_id": "3eefff83-4fe4-43f2-8b0d-50a3039371d0"
+    },
+    {
+      "claim_id": "4a31f6fe-e1d5-40dc-b327-e60f4705aa8b",
+      "result_id": "af87a3fb-ffd5-4a85-99a0-491a76a7f699"
+    },
+    {
+      "claim_id": "289238b7-ccba-4fcf-b5d7-9e8e879d7b5e",
+      "result_id": "af87a3fb-ffd5-4a85-99a0-491a76a7f699"
+    },
+    {
+      "claim_id": "19272dfd-7721-4a4d-938b-c83945e1dd7b",
+      "result_id": "af87a3fb-ffd5-4a85-99a0-491a76a7f699"
+    },
+    {
+      "claim_id": "5bed0393-d368-4408-8eef-b09cb81ef182",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "8067526e-572f-44d3-b7a5-bdff6989d572",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "c070196c-80a1-4d81-826d-61d536bc8299",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "15bdca0a-5fdc-4fd9-8751-d95fb21acada",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "e1d2f05c-7ddc-4496-9c05-0eb6131afc99",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "1b7d2bf1-f9f5-4ada-9591-879bbfad7ad7",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "8ec52c2f-f599-48cc-972c-65971387d458",
+      "result_id": "2d61775c-c8d9-4c7a-98ef-1339baa17088"
+    },
+    {
+      "claim_id": "bf21c486-ccf6-4171-9966-c65aaf3b0a27",
+      "result_id": "43405a01-6b2f-4b9e-a7f2-c92c8286f6c9"
+    },
+    {
+      "claim_id": "490d7979-4586-4f27-9f4a-8ad8f4a124f2",
+      "result_id": "0d95e5e4-01af-4f6a-b019-0f0098513ea3"
+    },
+    {
+      "claim_id": "50074c27-0f8d-41cf-8d41-3e526c93d173",
+      "result_id": "0d95e5e4-01af-4f6a-b019-0f0098513ea3"
+    },
+    {
+      "claim_id": "ba85ba65-6dda-4e4a-a5ab-1d9e3327abfe",
+      "result_id": "0d95e5e4-01af-4f6a-b019-0f0098513ea3"
+    },
+    {
+      "claim_id": "aeb726bd-1412-4042-b49c-0a0b2ce5c377",
+      "result_id": "0d95e5e4-01af-4f6a-b019-0f0098513ea3"
+    },
+    {
+      "claim_id": "cd9b7035-c3a3-45d0-928a-4f1f2aa9d215",
+      "result_id": "0d95e5e4-01af-4f6a-b019-0f0098513ea3"
+    },
+    {
+      "claim_id": "5abe8576-3948-4e4d-a781-0a2ce081667e",
+      "result_id": "9b15609d-1c1f-469a-bfcd-9c76eb34569f"
+    },
+    {
+      "claim_id": "39a002e1-9ead-48a7-8731-e8cf7abdfea6",
+      "result_id": "9b15609d-1c1f-469a-bfcd-9c76eb34569f"
+    },
+    {
+      "claim_id": "d23da6ee-132e-45db-9f88-b4cbf776279e",
+      "result_id": "9b15609d-1c1f-469a-bfcd-9c76eb34569f"
+    },
+    {
+      "claim_id": "48a6fa64-9ba4-4a0d-b0b5-48c6b04243f0",
+      "result_id": "9b15609d-1c1f-469a-bfcd-9c76eb34569f"
+    },
+    {
+      "claim_id": "eedab5ed-a4ff-45ea-b46a-63d3c6e8e85e",
+      "result_id": "9b15609d-1c1f-469a-bfcd-9c76eb34569f"
+    }
+  ],
+  "comparisons": []
+}

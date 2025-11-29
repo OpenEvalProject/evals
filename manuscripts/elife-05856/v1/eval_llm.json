@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "Synthetic E. coli promoters were evolved de novo from a library of >1 million random sequences using FACS selection on mean expression level with minimal selection on noise properties. The selection protocol strongly favored mean expression (\u03bc) with almost no dependence on excess noise, as confirmed by fitness function analysis and additional selection rounds that did not alter noise distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C58, C60-C61 collectively establish the experimental design and validate that selection acted primarily on mean expression. The fitness function analysis (C60) and stability of noise distributions across additional selection rounds (C61) provide strong evidence that noise was not under selection, which is critical for the study's main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "Fluorescence measurements were validated as accurate proxies for gene expression. Mean fluorescence was directly proportional to GFP molecule numbers (confirmed by Western blot), protein levels were determined primarily by mRNA levels (confirmed by qPCR), fluorescence distributions were log-normal, and noise measurements were reproducible across biological replicates and consistent between flow cytometry and microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C13-C14 provide multiple independent validations of the measurement system. The Western blot calibration (C10), qPCR validation (C13), and cross-platform consistency (C14) establish that fluorescence measurements reliably reflect transcriptional activity, supporting the validity of all downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Differences in noise levels between reporters are likely dominated by differences in transcriptional noise of the promoters rather than translational or post-translational noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by the experimental design where only promoter sequences differ between constructs, combined with validation that protein levels track mRNA levels (C13) and that the 5' UTR and RBS are constant across all reporters. However, the authors acknowledge this is an inference rather than direct measurement of transcriptional noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "A systematic relationship exists between mean and variance of expression levels, with a strict lower bound on variance as a function of mean expression that can be modeled by intrinsic and extrinsic noise components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 describe well-established phenomena in gene expression noise that are clearly visible in the data (Figure 1D). The observation of a lower bound is consistent with theoretical expectations and previous literature, and provides the basis for defining excess noise as variance above this bound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C63"
+    ],
+    "result": "Most synthetic promoters exhibited noise levels close to the minimal level of native promoters, while a substantial fraction of native promoters showed significantly elevated excess noise (41.6% vs 26.1% above 0.05, p < 7.7\u00d710\u207b\u00b9\u2070). This demonstrates that functional E. coli promoters exhibit low noise by default when not selected for noise properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C63 present the central experimental finding with strong statistical support. The comparison between synthetic and native promoters is valid given the validated selection protocol (C60-C61) showing minimal selection on noise. The hypergeometric test provides appropriate statistical evidence for the difference in noise distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C51",
+      "C64"
+    ],
+    "result": "Native promoters with elevated excess noise must have experienced selective pressures that increased their noise levels, particularly highly regulated promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C51, C64 present the key inference from the experimental results. The logic is sound: if promoters have low noise by default (C20, C63) but many native promoters have high noise (C18-C19), then selection must have acted to increase noise. This inference is strengthened by the association with regulation (C24-C25, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "A significant association between expression plasticity and noise was confirmed in the present data, consistent with previous observations in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 establish an important correlation supported by the current data (Figure 2A) and previous literature. The authors appropriately note they did not clearly observe this in their previous study, but a re-analysis revealed it. The current data provides independent confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C52"
+    ],
+    "result": "Excess noise shows a strong positive relationship with the number of known transcriptional regulators targeting a promoter. Promoters without known regulatory inputs have noise levels similar to synthetic promoters, while those with one or more regulatory inputs show clearly elevated noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C52 present a key empirical observation (Figure 2B-C) linking noise to regulation. The data clearly show the relationship, though it relies on the completeness and accuracy of RegulonDB annotations. The similarity between unregulated native promoters and synthetic promoters (C25) provides additional support for the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The association between elevated noise and gene regulation has been observed in eukaryotes, and mutations that lower noise typically target TF binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 appropriately cites recent literature (Sharon et al., 2014; Hornung et al., 2012) to place the findings in broader context. This supports the generality of the noise-regulation relationship beyond E. coli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Regulators have noise in their expression/activity that is propagated to target genes, causing an increase in target expression noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe the well-established noise-propagation phenomenon, appropriately citing Thattai and van Oudenaarden, 2001. This provides the mechanistic basis for understanding how regulation affects noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "A theoretical model was developed showing that fitness effects of regulatory interactions can be calculated analytically under mild assumptions (Gaussian fitness functions and expression distributions), depending on only a few effective parameters (expression mismatch Y, coupling constant X, regulator correlation R, and signal-to-noise S).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31 describe the theoretical framework. The model is mathematically sound and the Gaussian approximations are reasonable for the parameter regimes considered. The derivation in Materials and Methods and Appendix 3 provides the mathematical foundation, though the assumptions should be tested for robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The theoretical model predicts that coupling to an uncorrelated noisy regulator (R=0) can substantially increase fitness through noise-propagation alone, implementing a bet-hedging strategy. Surprisingly, this can outperform coupling to a moderately correlated regulator with suboptimal signal-to-noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 present counterintuitive predictions from the model (Figure 3). The mathematical derivation supports these conclusions, though they are theoretical predictions that would benefit from experimental validation. The predictions follow logically from the model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C55"
+    ],
+    "result": "The model shows that regulators may be under selection to become noisy, and there exists a continuum of optimal regulatory strategies combining condition-response and noise-propagation effects. This provides a plausible evolutionary path from no regulation to accurate regulation through incremental increases in both correlation R and signal-to-noise S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C55 present important theoretical insights about regulatory evolution. The continuum of strategies (red curve in Figure 3B) is mathematically derived and provides a novel framework for understanding regulatory evolution. However, these remain theoretical predictions without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The model predicts that selective pressure for regulation is determined by expression mismatch Y, with no pressure when Y<1. Constitutive promoters (like the synthetic promoters and native promoters without regulatory inputs) have low noise by default, consistent with the Y<1 regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 connect the theoretical model to the experimental observations. The interpretation that synthetic promoters and unregulated native promoters correspond to the Y<1 regime is logical and consistent with both theory and data (Figure 2B-C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The model predicts positive correlations between expression plasticity and noise, between noise and number of regulatory inputs, and that higher initial mismatch Y requires more regulatory interactions to reduce mismatch below 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 present testable predictions that are consistent with the empirical observations in Figure 2. The mathematical basis for these predictions is sound, and they provide a unified explanation for multiple observed correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "The model predicts that promoter noise is determined by the noise of regulating TFs. A simple linear model assuming excess noise equals the sum of TF noise levels explained 17% of variance in promoter noise. The top five TFs associated with elevated target noise were CRP, H-NS, ArcA, ilvY, and GadX, consistent with biological knowledge about growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C50 test model predictions against data. While 17% explained variance is modest, it is substantial given the crude assumptions (equal noise-propagation for all targets, independent TF fluctuations). The identified TFs are biologically plausible given the experimental conditions, providing validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "H-NS is a histone-like nucleoid-associated protein that acts as a silencer, analogous to nucleosomes in eukaryotes where nucleosome positioning is a major determinant of transcriptional noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 provides appropriate biological context for the identification of H-NS, supported by relevant citations. The analogy to eukaryotic nucleosomes is reasonable and helps interpret the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C62"
+    ],
+    "result": "The theory shows that noise-propagation is often beneficial rather than a detrimental side-effect, acting as a rudimentary form of regulation that can provide sufficient benefit for new regulatory interactions to evolve. Unless regulation is very precise, regulatory interactions that increase noise are beneficial, and elevated noise can be expected when regulatory accuracy is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C56-C57, C62 present the key conceptual advance of the work. The theoretical model mathematically supports these conclusions, and they are consistent with the empirical observations. However, these are primarily theoretical insights that would benefit from more direct experimental tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establishing that gene expression varies stochastically in homogeneous environments, most genes show non-Poissonian fluctuations due to promoter state switching, noise levels are encoded in promoter sequences, and selection can act either to minimize noise or favor phenotypic diversity in fluctuating environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide appropriate background context, all supported by relevant citations to established literature. These set up the motivation for the study but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

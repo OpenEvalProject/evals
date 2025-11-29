@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Lamellipodin (Lpd) binds directly to actin filaments in vitro through electrostatic interactions mediated by a highly basic C-terminal region (residues 850-1250, pI 9.97). The binding is salt-dependent with a Kd of 255 \u00b1 2 nM in 50 mM KCl, and is abolished by mutating all 44 basic residues to alanine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from multiple experimental approaches (TIRF microscopy, co-sedimentation, mutagenesis, sequence analysis) demonstrating direct Lpd-actin binding. The Kd measurement, salt-dependence, and loss-of-function mutation data are internally consistent and support the electrostatic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Oligomerization of Lpd enhances its binding affinity to actin filaments. Dimeric GFP-LZ-Lpd binds more strongly than monomeric Lpd, maintaining binding even at 100 mM KCl. Higher-order oligomers and membrane-clustered Lpd show further enhanced binding, with oligomers diffusing along filament sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 demonstrate a clear oligomerization-dependent enhancement of actin binding through multiple constructs (dimers, trimers/tetramers, SUV-bound). The data from TIRF microscopy, co-sedimentation, and size-exclusion chromatography are consistent and support the avidity model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Membrane-tethered Lpd slows actin network assembly on lipid-coated beads (1.5 \u00b1 0.25 \u00b5m/min vs 7.0 \u00b1 0.48 \u00b5m/min for GFP control) and polarizes to the barbed end attachment zone in an actin-dependent manner, while control GFP is excluded from this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 present quantitative measurements of actin comet tail growth rates and spatial localization patterns that are internally consistent. The differential localization of Lpd vs GFP control provides strong evidence for specific actin-dependent polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Full-length Lpd and the C-terminal fragment Lpd850-1250aa localize to leading edge membranes in XTC cells and undergo retrograde flow with the actin network at similar velocities (71.9 \u00b1 17.5 nm/s for Lpd vs 73.5 \u00b1 14 nm/s for actin). This localization requires dynamic actin assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 demonstrate cellular localization through TIRF microscopy with quantitative velocity measurements showing statistically indistinguishable flow rates. Drug perturbation experiments (C20) support the requirement for dynamic actin. The data are internally consistent across multiple constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Lpd850-1250aa binds up to four VASP EVH1 domains simultaneously via six FPPPP motifs. Mutating all six motifs to AAPPP abolishes VASP recruitment in vitro but does not significantly affect cellular localization in XTC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 combine analytical ultracentrifugation data with in vitro recruitment assays and cellular localization studies. The disconnect between in vitro VASP binding and cellular localization (C27) is well-documented and supports the conclusion that VASP binding is not required for leading edge localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Lpd850-1250aa contains four SH3 domain binding sites. Mutating these sites (SH3*) reduces but does not eliminate leading edge localization, while mutating basic residues (35A or 44A) completely abolishes localization to actin-based membrane protrusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 use systematic mutagenesis to dissect binding requirements. The graded effects (SH3* partial loss vs 35A/44A complete loss) are consistent with the model that actin binding via basic residues is the primary determinant of localization, with SH3 interactions playing a supporting role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Constitutively membrane-tethered Lyn-GFP-Lpd850-1250aa localizes to leading edges, but the 35A mutant lacking basic residues fails to localize and distributes uniformly like Lyn-GFP control. A phosphatidylinositol lipid sensor (GFP-PLC\u03b4 PH) also distributes uniformly, arguing against polarized lipid distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 use membrane tethering to isolate the role of actin binding from membrane recruitment. The uniform distribution of both the 35A mutant and the lipid sensor control (C35) supports the interpretation that actin binding, not lipid polarity, drives leading edge enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cytochalasin D treatment causes rapid dissociation of GFP-Lpd850-1250aa from leading edge membranes, with more dramatic effects for the dimeric GFP-LZ-Lpd. This occurs even in mutants lacking Ena/VASP or SH3 binding sites, indicating that leading edge localization depends on free barbed ends independent of these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 use pharmacological perturbations to probe the mechanism of localization. The observation that Cytochalasin D causes dissociation in mutants that cannot bind VASP or SH3 domains (C39) provides strong evidence for direct barbed end interaction. The enhanced effect with dimeric Lpd (C38) is consistent with its higher actin affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Lpd can simultaneously bind Ena/VASP proteins and filamentous actin. VASP constructs that cannot bind actin alone associate with actin filaments when GFP-Lpd850-1250aa is present, forming higher-order clusters visible on filament sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate simultaneous binding through TIRF microscopy showing that Lpd recruits non-actin-binding VASP mutants to filaments. The formation of visible clusters (C43) provides additional evidence for multivalent interactions. The spatial separation of VASP and actin binding sites (Figure 2A) supports the structural feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The combination of VASP and GFP-LZ-Lpd produces extensive actin filament bundling in 100 mM KCl buffer, while neither protein alone bundles filaments under these conditions, demonstrating synergistic binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 show clear synergy through TIRF microscopy observations. The fact that neither protein alone causes bundling at 100 mM KCl (C45) while the combination does (C44) provides strong evidence for cooperative binding that compensates for weak individual interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Monomeric actin and profilin-actin antagonize Lpd binding to filaments. Both monomeric and dimeric Lpd reduce barbed end elongation rates in the presence of profilin-actin, consistent with monomer sequestration. Despite this, Lpd at near-stoichiometric concentrations can still bundle filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 document complex interactions between Lpd, monomeric actin, and filaments through TIRF microscopy and elongation assays. The reduced elongation rates (C48) and antagonism by monomeric actin (C47) are consistent with monomer binding. The bundling at high concentrations (C50) indicates sufficient residual filament binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Lpd increases VASP processivity by tethering VASP to actin filaments. GFP-LZ-Lpd-decorated filaments increase VASP barbed end dwell times (\u03c42 = 2.3 \u00b1 0.4 s vs \u03c41 = 0.49 \u00b1 0.03 s alone). VASP-Lpd complexes track barbed ends at 36 \u00b1 9.4 subunits/s with dwell times of 33 \u00b1 2 s, significantly longer than VASP alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide quantitative single-molecule measurements showing dramatic increases in VASP processivity. The dwell time measurements are internally consistent and the ~67-fold increase (0.49 s to 33 s) is substantial. The faster elongation rate for Lpd-VASP complexes vs VASP alone (C53) supports enhanced polymerase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Background on Ena/VASP proteins: they are weakly processive actin polymerases that require both EVH1 and EVH2 domains for stable membrane localization. The EVH1 domain binds proline-rich sequences, while EVH2 mediates actin binding. Cytochalasin D displaces Ena/VASP from cell periphery, indicating free barbed ends are functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 summarize established knowledge from the literature with appropriate citations. These provide necessary context for interpreting the current study's findings. The claims are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Background on MRL proteins and Lpd: MRL proteins are Ena/VASP binding partners containing tandem RA-PH domains that form dimers and bind phosphatidylinositol lipids. Lpd promotes lamellipodial protrusions and neurite outgrowth. While MRL proteins recruit Ena/VASP to membranes, their effect on VASP activity was previously uncharacterized, and they likely have VASP-independent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C78 provide comprehensive background on MRL proteins with appropriate citations. These establish the knowledge gap (C77) that motivates the current study and provide context for interpreting the novel findings about Lpd's direct actin binding and effects on VASP activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background on Lpd's broader cellular functions: Lpd interacts with reconstituted actin networks in vitro and with the Scar/WAVE regulatory complex via Abi1 SH3 domains. Lpd knockdown more potently inhibits lamellipodium formation than VASP loss and reduces lamellipodial actin density. Lpd is also implicated in fast endophilin-mediated endocytosis (FEME).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 summarize relevant prior work on Lpd's cellular functions with appropriate citations. These establish that Lpd has functions beyond VASP recruitment, providing context for the current study's findings about direct actin binding and multiple protein-protein interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Proposed model and broader implications: Lpd could orchestrate actin nucleation machinery at FEME sites. Local enrichment of Lpd at membranes exerts non-linear, cooperative effects on Ena/VASP activity. The authors propose that Lpd delivers Ena/VASP to growing barbed ends and increases polymerase activity by tethering, representing a positive feedback mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 present interpretations and models based on the experimental findings. While C88 is speculative (appropriately qualified with 'could'), C89-C91 are reasonable inferences from the demonstrated oligomerization-dependent binding enhancement and VASP processivity increases. These represent the authors' synthesis of their findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Methodological details: Actin was purified from Acanthamoeba castellani. XTC cells were chosen because they spread well and produce thin peripheral actin networks suitable for fluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe methodological choices that are standard in the field and appropriate for the experiments performed. These are straightforward factual statements about experimental design.",
+    "result_type": "MINOR"
+  }
+]

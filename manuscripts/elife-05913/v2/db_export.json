@@ -1,0 +1,1782 @@
+{
+  "submission": {
+    "id": "d777d519-e238-46b7-be42-48f3df6b9907",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:30:37.927960Z",
+    "updated_at": "2025-11-29T03:30:37.927960Z"
+  },
+  "content": [
+    {
+      "id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "submission_id": "d777d519-e238-46b7-be42-48f3df6b9907",
+      "content_type": "manuscript",
+      "content_text": "# The self-organization of grid cells in 3D\n\n## Authors\n\n- Federico Stella<sup>1</sup> \u2020\n- Alessandro Treves<sup>1</sup>\n\n### Affiliations\n\n1. Cognitive Neuroscience Scuola Internazionale Superiore di Studi Avanzati Trieste Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nDo we expect periodic grid cells to emerge in bats, or perhaps dolphins, exploring a three-dimensional environment? How long will it take? Our self-organizing model, based on ring-rate adaptation, points at a complex answer. The mathematical analysis leads to asymptotic states resembling face centered cubic (FCC) and hexagonal close packed (HCP) crystal structures, which are calculated to be very close to each other in terms of cost function. The simulation of the full model, however, shows that the approach to such asymptotic states involves several sub-processes over distinct time scales. The smoothing of the initially irregular multiple fields of individual units and their arrangement into hexagonal grids over certain best planes are observed to occur relatively quickly, even in large 3D volumes. The correct mutual orientation of the planes, though, and the coordinated arrangement of different units, take a longer time, with the network showing no sign of convergence towards either a pure FCC or HCP ordering.\n\n## Introduction\n\nWhere does our internal representation of space come from? And how does it code for space extending in three dimensions? New findings about space-related activity in the bat have recently raised this question again (Ulanovsky and Moss, 2011; Yartsev et al., 2011; Yartsev and Ulanovsky, 2013; Finkelstein et al., 2014). The similarity in the place cell and, most remarkably, in the grid cell representation between rodents and bats suggests a common neural substrate for spatial navigation, shared across these mammals (Andersen and Buneo, 2002; Jacobs et al., 2010; Sereno and Lehky, 2011; Killian et al., 2012; Indovina et al., 2013; Jacobs et al., 2013; Thurley et al., 2014), and it provides an indication possibly valid also for other animals living and moving extensively in three dimensions, like for example dolphins, monkeys and even non-mammalian species (Healy et al., 2005; Dacke and Srinivasan, 2007; Wu and Dickman, 2012; Burt de Perera and Holbrook, 2012). At the same time, the obvious difference in the behavior of these species requires a system that flexibly adapts to perform computations as different as mapping two- or three-dimensional space (Knierim et al., 2000; Hayman et al., 2011; Taube and Shinder, 2013). Here we describe a model of grid cell formation that accounts for both these aspects of spatial cognition, in a unitary perspective on the mEC network (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig1-v2.jpg)\n\n**Figure 1.:** (A) We simulate the trajectory of a bat exploring a volume of space over a prolonged period of time. At each step, the bat moves forward at a constant speed and chooses a new direction of movement close to the previous one. (B) The feed-forward network (equivalent to that shown in [Kropff and Treves, 2008]), including here only two mEC neurons. The would-be grid units receive inputs from place cell-like units with firing fields similar to those reported in Yartsev and Ulanovsky (2013). (C) Snapshots of the evolution of the firing rate map of a single unit. The figures correspond to (from left to right) 2, 5, 10 and 20 million time steps of learning.\n\nGrid cells seemingly require some clever engineering design that generates the common periodicity among neighboring units while keeping them distinct in terms of spatial phase (Zilli, 2012). While place cell and head direction cells have been shown to directly generalize to three dimensions (Yartsev and Ulanovsky, 2013; Finkelstein et al., 2014), the form that grid cells will exhibit in higher dimensionality (currently tested in flying bats [Ginosar et al., 2014]) is still not clear. Further, the question is still open of how the mechanism producing such a complex periodic pattern on a surface can, in the case of bats, extend to a volume (Jeffery et al., 2013), even when accepting the information-theoretic optimality of a regular lattice (Mathis et al., 2014). In the self-organization perspective that we propose, the spatial responses first emerge spontaneously, at the single unit level, with no engineering required. In the simplest version of the model, which we have explored in a series of studies (Kropff and Treves, 2008; Si et al., 2012; Stella et al., 2013), the periodicity of the grid pattern is a result of firing rate adaptation during exploration sessions that span a considerable developmental time (Figure 1, c). It is fixated gradually by means of synaptic plasticity in the feed-forward connections, which convey broad spatial inputs, for example but not necessarily from \u2018place units\u2019\u00a0(Figure 1, b). Contrary to other models limited to the explanation of grid cell expression, this model delves into the issue of their induction and, most importantly, can account for the effects of the geometry of the explored environment on the outcome of the self-organization process. We have shown how, for example, the model produces pentagonal grids on a spherical surface and heptagonal ones on a hyperbolic one (Urdapilleta et al., 2015). The nature of our model allows us to now investigate the process of grid cell self-organization in three dimensions without the need to modify any of its features. We use bats as our reference, as it is the species currently available for experiments during roughly homogeneous navigation along the three dimensions of physical space (Figure 1, a).\n\n## Model\n\n### Numerical simulations\n\nIn our simulations a virtual bat explores a volume of side L with a constant speed v. The position of the animal is sampled at time steps of constant \u0394t. We temporarily leave these quantities unspecified. We will discuss their actual values at the end of the paper as they are critical for the interpretation of the results. For the moment they should be understood as expressed in arbitrary units. The path the animal performs is generated as a correlated random walk in which the direction of movement at any time step depends on the previous one. For simplicity, the change in running direction between two consecutive steps of the virtual bat is sampled from a Gaussian distribution with zero mean and standard deviation \u03c3h = 0.15 radians.\n\n#### The network\n\nOur model is comprised of two layers. The input network represents, for example, the CA1 region of the hippocampus and contains Ninp = 123 units. The output network represents a population of NmEC = 125 would-be grid units in mEC, all with the same adaptation parameters when not differently stated. Each mEC unit receives afferent spatial inputs which, as already discussed in Kropff and Treves (2008), we take for simplicity to arise from regularly arranged place cells, although they could also arise from spatially modulated units in the adjacent cortices. The input to unit i at time t is then given by $h_{i}^{t}$:\n\n$$\nh_{t}^{i}=\\sumj\u2009W_{ij}^{t\u22121}r_{j}^{t}.\n$$\n\nThe weight $W_{ij}^{t}$ connects input unit j to mEC unit i. We will assume that at the time the mEC units develop their firing maps, spatially modulated or place cell-like activity is already present, either in the parahippocampal cortex or in the hippocampus. The network model works in the same way with any kind of spatially modulated input, but the place cell assumption reduces the averaging necessary for learning. Moreover, as recent studies have shown (Langston et al., 2010; Wills et al., 2010), it is entirely plausible that place cells develop an adult-like spatial code earlier than grid cells do. We thus model the place field as a Gaussian bump centered in the place cell preferred position $x\u2192_{j0}$: \n\n$$\nr_{j}^{t}=exp(\u2212\\frac{||x\u2192^{t}\u2212x\u2192_{j0}||^{2}}{2\\sigma_{p}^{2}}),\n$$\n\nwhere $x\u2192^{t}$ is the position at time t of the simulated bat, \u03c3p = 0.05 L is the width of the firing field and $||a\u2212b||$ is the Euclidean distance between two points a and b in three dimensions. Place field centers are homogeneously distributed in the volume (consistently with the experimental data presented in [Yartsev and Ulanovsky, 2013]). Note that the choice of the value for the parameter \u03c3p is not itself crucial for our model (Kropff and Treves, 2008). The range of values that it can take in simulations, however, is constrained in practice by the number of place cells used in the model. Basically the dimension of each place field should guarantee a homogeneous amount of global input activity across the environment. Given a sufficient place field density in the input layer, the parameter does not play a critical role anymore. As we show in the following, the properties of the developing grid fields depend on the time scale of adaptation and not on the size of the place fields.\n\n#### Single unit dynamics\n\nThe firing rate $\u03a8_{i}^{t}$ of mEC unit i is determined by a non-linear transfer function\n\n$$\n\u03a8_{i}^{t}=\\frac{2}{\\pi}arctan\u2009[g^{t}(\\alpha_{i}^{t}\u2212\\mu^{t})]\u0398(\\alpha_{i}^{t}\u2212\\mu^{t}),\n$$\n\nwhich is normalized to have maximal firing rate equal to 1 (in arbitrary units), and \u0398(\u22c5) is the Heaviside function. The variable \u03bct is a threshold while $\\alpha_{i}^{t}$ represents the adaptation-mediated input to the unit i. It is related to $h_{i}^{t}$ as follows:\n\n$$\n\\alpha_{i}^{t}=\\alpha_{i}^{t\u22121}+b_{1}(h_{i}^{t\u22121}\u2212\\beta_{i}^{t\u22121}\u2212\\alpha_{i}^{t\u22121}),\\beta_{i}^{t}=\\beta_{i}^{t\u22121}+b_{2}(h_{i}^{t\u22121}\u2212\\beta_{i}^{t\u22121}),\n$$\n\nwhere \u03b2i has slower dynamics than \u03b1i, with b2 = b1/3, b1 = 0.1 (in a continuous formulation, the b coefficients become rates, in units of (\u0394t\u22121)). This adaptive dynamics makes it more difficult for a neuron to fire for prolonged periods of time, and corresponds to the kernel K considered in the analytical treatment (Kropff and Treves, 2008). The gain gt and threshold \u03bct are iteratively adjusted by Equation 5 at every time step to fix the mean activity $a=\\sumi\u2009\u03a8_{i}^{t}/N_{mEC}$ and the sparsity $s=(\\sumi\u2009\u03a8_{i}^{t})^{2}/(N_{mEC}\\sumi\u2009\u03a8_{i}^{t^{2}})$ within a 10% relative error bound from pre-specified values, a0 = 0.1 and s0 = 0.3, respectively. If k is indexing the iteration process:\n\n$$\n\\mu^{t,k+1}=\\mu^{t,k}+b_{3}(a^{k}\u2212a_{0}),g^{t,k+1}=g^{t,k}+b_{4}g^{t,k}(s^{k}\u2212s_{0}).\n$$\n\nb3 = 0.01 and b4 = 0.1 are also rates, but in terms of intermediate iteration steps. ak and sk are the values of mean activity and sparsity determined by \u03bct,k and gt,k in the intermediate iteration steps. The iteration stops once the gain and threshold have been brought within the 10% error range, and the activity of mEC units is determined by the final values of the gain and threshold in Equation 3.\n\n#### Synaptic plasticity model\n\nThe learning process modifies the strength of the feed-forward connections according to a Hebbian rule:\n\n$$\nW~_{ij}^{t}=W_{ij}^{t\u22121}+\u03f5(\u03a8_{i}^{t}r_{j}^{t}\u2212\u03a8\u00af_{i}^{t\u22121}r\u00af_{j}^{t\u22121}),\n$$\n\nwith a rate \u03f5 = 0.002. $\u03a8_{i}^{t}\u00af$ and $r\u00af_{j}^{t}$ are estimated mean firing rates of mEC unit i and place unit j that are adjusted at each time step of the simulation:\n\n$$\n\u03a8\u00af_{i}^{t}=\u03a8\u00af_{i}^{t\u22121}+\u03b7(\u03a8_{i}^{t}\u2212\u03a8\u00af_{i}^{t\u22121}),r\u00af_{j}^{t}=r\u00af_{j}^{t\u22121}+\u03b7(r_{j}^{t}\u2212r\u00af_{j}^{t\u22121}),\n$$\n\nwith \u03b7 = 0.05 a time averaging factor. After each learning step, the provisional $W~_{ij}^{t}$ weights are normalized into unitary norm:\n\n$$\n\\sumj\u2009W_{ij}^{t2}=1.\n$$\n\nUnits that win during competitive learning (enforced by Equation 5) manage to establish strong connections with units that provide strong inputs. As learning proceeds, the units establish fields where they both receive strong inputs and, at the same time, are recovering from adaptation. The emergence of the grid map is the product of averaging over millions of time steps. It remains to be assessed whether this mechanism we propose might also account for the formation of new grid representations in a novel environment the animal adapts to, for a sufficient time, or if, instead, it can only be applied to the developmental period.\n\n#### Grid alignment: head direction input\n\nTwo substantial extensions are represented by the introduction in the model of head direction information, through the assignment of preferred directions to mEC units, and by the presence of recurrent connections in the mEC layer beside the feed-forward set between the two layers (Si et al., 2012). Both these additions to the earlier version of the model are important for the grid alignment issue that we are going to study in the 3D case. With these two additional elements, the overall input to unit j is now:\n\n$$\nh_{t}^{i}=f_{\\theta_{i}}(\\omega_{t})(\\sumj\u2009W_{ij}^{t\u22121}r_{j}^{t}+\u03c1\\sumk\u2009W_{ik}\u03a8_{k}^{t\u2212\\tau}),\n$$\n\nwith \u03c1 = 0.1 a factor setting the relative strength of feed-forward $(W_{ij}^{t})$ and collateral weights $(W_{ik})$, and \u03c4 = 25 steps a delay in signal transmission, as discussed by Si et al. (2012). The multiplicative factor $f_{\\theta_{i}}(\\omega_{t})$ in Equation 9 is a tuning function which is maximal when the current direction of the animal movement \u03c9t is along the preferred direction \u03b8i assigned to unit i (Zhang, 1996).\n\n$$\nf_{\\theta}(\\omega)=c+(1\u2212c)exp[\u03bd(cos(\\theta\u2212\\omega)\u22121)],\n$$\n\nwhere c = 0.2 and \u03bd = 0.8 are parameters determining the minimum value and the width of the cell tuning curve. Preferred head directions are randomly assigned to mEC units and they uniformly span the 4\u03c0 solid angle.\n\n#### Collateral weights\n\nThe appearance of fields in the output layer of the model is fully independent of the presence of collateral connections. Instead, their basic function is to favor the appearance of a certain phase shift of the fields in the post-synaptic unit relative to the pre-synaptic one, and consequently to induce the alignment of grids, producing a common orientation in the population (Si and Treves, 2013). In this study we will not deal with collateral weight self-organization, only with feed-forward weight learning. For simplicity, the collateral weights are set at convenient values at the beginning of the simulations and left unchanged afterwards. We will deal with the issue of recurrent connection plasticity in future work (but see [Si and Treves, 2013]).\n\nCollateral weights are set in the following way (Kropff and Treves, 2008): each mEC unit is temporarily assigned a preferred position, an auxiliary field at coordinates (xi, yi, zi). The coordinates are randomly chosen among the place field centers of the input layer. These auxiliary fields are introduced only for the sake of weight definition and do not play any role in other parts of the simulations. The collateral weight between unit i and unit k is then calculated as\n\n$$\nW_{ik}=[f_{\\theta_{i}}(\\omega_{ik})f_{\\theta_{k}}(\\omega_{ik})exp(\u2212\\frac{d_{ki}^{2}}{2\\sigma_{f}^{2}})\u2212\u03ba]^{+},\n$$\n\nwhere [*]+ denotes the Heaviside step function, \u03ba = 0.05 is an inhibition factor to favor sparse weights, $f_{\\theta_{i}}(\\omega_{ik})$ is the tuning function defined above (in Equation 10), \u03c9ik is the direction of the line connecting the auxiliary fields of unit i and k, \u03c3f = 0.2 L defines how broad the connectivity is, and dki is defined as\n\n$$\nd_{ki}^{2}=[x_{i}\u2212(x_{k}+lcos(\\omega_{ik}))]^{2}+[y_{i}\u2212(y_{k}+lcos(\\omega_{ik}))]^{2}+[z_{i}\u2212(z_{k}+lcos(\\omega_{ik}))]^{2},\n$$\n\nthat is, it is the distance between the auxiliary fields with an offset l = v \u00d7 \u03c4.\n\nThe normalization on this set of connections is performed as in Equation 8. The definition of the weights is such that it generates strong positive interactions between cells with similar preferred head direction and activation fields appropriately shifted along the same head direction.\n\n### Analytical model\n\nThe self-organization process we consider at the single-unit level can be described in analytical terms as an unsupervised optimization process, if one neglects the collateral interactions that are presumed to align the grids (Si et al., 2012). The simplified version of the model which can be analyzed mathematically is very abstract, and does not specify most of the parameters necessary to the simulations. Nevertheless, it indicates which are the asymptotic states that should be approached by the system after having evolved for a long time.\n\nThe asymptotic states are defined in terms of a variational principle, amounting to the minimization of a cost function of the form:\n\n$$\nH=H_{K}+H_{A}==\\int^{\u200b}d\u03c7[\u25bd\u03a8(\u03c7)]^{2}+\\gamma\\int^{\u200b}d\u03c7\\int^{\u200b}dt\u03a8(\u03c7(t))K(t\u2212t\u2032)\u03a8(\u03c7(t\u2032)),\n$$\n\nwhere \u03c7 is the spatial coordinate and \u03a8 represents the firing rate of the neuron across the environment. The functional is defined based on the hypothesis that the activity of the units reflects only two simple constraints:The minimization of the variability of the maps across space, that is, a preference for smooth maps. Such smoothness is expected to stem from the smoothness of the spatial inputs and of the neuronal transfer function. This constraint is expressed in the first term of the functional, the kinetic one.The penalization of maps that require a neuron to fire for prolonged periods of time, which is opposed by neuronal fatigue. The second term of the functional, the adaptation term, represents this constraint.\n\nThe parameter \u03b3 parameterizes the relative importance of the two constraints.\n\nThe dependence of the functional on time can be eliminated by taking into account the averaging effect of a long run over many trajectories and different speeds experienced during training. We therefore substitute the time-dependent kernel K(t \u2212 t\u2032) in the second term of Equation 13 with an effective space-dependent one, K(\u03c7\u2032 \u2212 \u03c7), using the average speed of the animal to fix the relationship between the two:\n\n$$\nH=H_{K}+H_{A}==\\frac{1}{V}\\int\u0393d\u03c7^{d}[\u25bd\u03a8(\u03c7)]^{2}+\\gamma\\frac{1}{V}\\int\u0393d\u03c7\u03a8(\u03c7)\\int\u0393d\u03c7\u2032\u03a8(\u03c7\u2032)K(|\u03c7\u2032\u2212\u03c7|),\n$$\n\nwhere we have also made explicit the normalization by the area V of the d-dimensional environment \u0393.\n\nWe directly apply this expression to ask which is the favorite arrangement of the fields in a 3D volume V.\n\n#### Optimal packing\n\nUnlike on the plane, where the hexagonal tiling is always the optimal one, three-dimensional space admits a multitude of equally optimal orderings of spheres. The problem of sphere packing, in a volume of 3D space, is a well-known mathematical problem, and it is known since the time of Gauss that any of these infinite optimal solutions can be described in terms of two fundamental arrangements, called face centered cubic (FCC) and hexagonal close packed (HCP), that represent the only two regular solutions to the problem. Both solutions are based on a series of layers of spheres arranged in a hexagonal pattern. These layers are stacked one upon the other with given phase differences between them (Figure 2). The difference between FCC and HCP lies in the sequence with which these phases appear. Given one of these layers, and taking it as a reference with positioning A, there are two possible arrangements (B and C) of the next layer, obtained with a translation of A, that puts all the spheres at the same distance from their neighbors. Any sequence of A, B and C without immediate repetitions has the same, maximum, packing score, but among all sequences there are the two regular prototypes:FCC = ABCABCABCA.HCP = ABABABABAB.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig2-v2.jpg)\n\n**Figure 2.:** Top: Functions used in cost function calculation for face centered cubic (FCC) and hexagonal close packed (HCP) structures. Color markers are used to indicate the layering in the field arrangement: FCC results from an A(red)B(blue)C(green) sequence, HCP from an A(red)B(blue)A(red) sequence. Middle: Same as above but from a different viewpoint to highlight the different organization of the relative phases. Bottom: Autocorrelograms of the above functions. Color markers indicate the magnitude of the corresponding peak in the autocorrelogram. Purple: full peaks. Orange: half peaks.\n\nIn both combinations each sphere has 12 first neighbors, and if d is the diameter of a sphere (or the distance between the centers of two neighboring spheres), then the inter-layer separation is $\\frac{\\sqrt{6}}{3}d$. If we consider the unit cell of 13 spheres (a central sphere + 12 neighbors) in Figure 2, then FCC and HCP differ only regarding the position of three spheres (compare the position of the fields marked in green and red in the top-left and top-right panels in Figure 2). In fact, while in FCC neighbor spheres are arranged in six pairs with symmetrical positions with respect to the center, in HCP there are only three of these pairs, those on the central plane (fields marked in blue in Figure 2, top right).\n\nConsidering the three-dimensional distribution of activity \u03c8(x) that minimizes the cost function in Equation 14, we then compare the relative optimality of FCC and HCP configurations. To do so we define two analytical expressions for the two arrangements of fields in terms of a combination of plane waves, as they are well suited to be treated in this formulation of the problem.\n\n#### FCC symmetry\n\nTo represent the FCC arrangement of fields we use the following expression:\n\n$$\n\u03c8^{FCC}(r)=1+\\frac{1}{4}\\sumi=14cos(k_{i}\u00b7r),\n$$\n\na combination of four plane waves (Figure 2, top left), with the four wave vectors ki given by the matrix:\n\n$$\nk_{i}=\\frac{2\\pi}{a}(00\\sqrt{3/2}2/\\sqrt{3}0\u22121/\\sqrt{6}\u22121/\\sqrt{3}1\u22121/\\sqrt{6}\u22121/\\sqrt{3}\u22121\u22121/\\sqrt{6}).\n$$\n\nThe directions of the wave vectors are equivalent to those of the center-to-vertex axes in a tetrahedron. This choice gives\n\n$$\nSpacing=a.\n$$\n\n\n\n$$\nNormalization<\u03c8^{FCC}>=1.\n$$\n\n\n\n$$\n|k_{i}|^{2}=\\frac{3}{2}(\\frac{2\\pi}{a})^{2}.\n$$\n\nAs any power of the previous expression maintains the same symmetry properties, we will actually compute the cost function for the first few powers:\n\n$$\n\u03c8_{n}^{FCC}(r)=p_{n}^{FCC}(1+\\frac{1}{4}\\sumi=14\u2009cos(k_{i}\u00b7r))^{n}.\n$$\n\nHere $p_{n}^{FCC}$ is used to maintain the normalization.\n\nThe first term of the cost function, the spatial average <\u03c8n\u2207\u03c8n>, can then be evaluated analytically by expanding \u03c8n over the Fourier modes and taking into account the orthonormality relations of planar waves. This calculation is quite simple for low powers, but the number of terms increases rapidly with n. The resulting formulas for n = 2 are reported in the \u2018Materials and methods\u2019 section.\n\nThe second term can be similarly calculated by using the change of variable q = x\u2032 \u2212 x together with the trigonometric property:\n\n$$\ncos(k\u00b7q+k\u00b7x+\u03d5)=cos(k\u00b7q)cos(k\u00b7x+\u03d5)\u2212sin(k\u00b7q)sin(k\u00b7q+\u03d5).\n$$\n\nSince sin(k\u22c5q)K(q) is an odd function and the integration domain is symmetrical around q = 0, the second term in Equation 21 does not survive the first integral in HA (Equation 14).\n\nThe calculations can then be performed as in the previous case after introducing the 3D Fourier transform of the adaptation kernel K:\n\n$$\nK\u02dc(k_{i})=\\intV\u2009dqK(q)cos(k_{i}\u00b7q).\n$$\n\nThe adaptation kernel may take various forms, but for reasons that will become clear in the next section, here we consider a kernel in a form that makes it factorable over the spatial variables. We use a difference of radially symmetric Gaussians:\n\n$$\nK(q)=K_{L}(q)\u2212\u03c1K_{S}(q)==\\frac{1}{(2\\piv\\tau_{L})^{3/2}}exp[\u2212\\frac{q^{2}}{(2v\\tau_{L})^{2}}]\u2212\\frac{\u03c1}{(2\\piv\\tau_{S})^{3/2}}exp[\u2212\\frac{q^{2}}{(2v\\tau_{S})^{2}}].\n$$\n\nThe Fourier transform of this kernel is:\n\n$$\nK\u02dc(k_{i})=K\u02dc_{L}(k_{i})\u2212\u03c1K\u02dc_{S}(k_{i})==exp[\u2212\\frac{1}{2}(k_{i}v\\tau_{L})^{2}]\u2212\u03c1\u2009exp[\u2212\\frac{1}{2}(k_{i}v\\tau_{S})^{2}].\n$$\n\nAgain the computation of the integral, although conceptually straightforward, becomes increasingly demanding with higher values of n due to the explosion in the number of terms.\n\n#### HCP symmetry\n\nSince the hexagonal close packing does not have central symmetry, the choice of a function reproducing the arrangement of fields is less evident. We opt for:\n\n$$\n\u03c8_{n}^{HCP}(r)=p_{n}^{HCP}((1/2+1/2cos(k_{z}\u00b7r))[1+\\frac{2}{3}\\sumi3\u2009cos(k_{xy}^{i})\u00b7r]+(1/2+1/2cos(k_{z}\u00b7(r+\u0394z)))[1+\\frac{2}{3}\\sumi3\u2009cos(k_{xy}^{i})\u00b7(r+\u0394x)])^{n},\n$$\n\nwhere two separate wave vectors are present: kxy fixing the spacing on planar hexagonal layers, and kz used instead to regulate the distance between layers (Figure 2, top right). As in the previous case, we consider different powers of the same formula, as they all present peaks in the same configuration.\n\nThe components of kxy are, again\n\n$$\nk_{i}=\\frac{2\\pi}{a}(2/\\sqrt{3}0\u22121/\\sqrt{3}1\u22121/\\sqrt{3}\u22121),\n$$\n\nwith $|k_{xy}|^{2}=\\frac{4}{3}(2\\pi/a)^{2},$ while the z component is set to $|k_{z}|=\\frac{\\sqrt{3}}{2\\sqrt{2}}(2\\pi/a)$ and $|k_{z}|^{2}=\\frac{3}{8}(2\\pi/a)^{2}$. To obtain the correct HCP arrangement of fields, \u0394x and \u0394z should be set to:\n\n$$\n\u0394x=(\\frac{1}{\\sqrt{3}},0).\n$$\n\n\n\n$$\n\u0394z=\\sqrt{\\frac{2}{3}}.\n$$\n\nSpacing and normalization are the same as for FCC.\n\nThe convenience of choosing a factorizing Gaussian kernel (Equation 23) is now evident: it allows splitting of the integrals in Equation 14 into the xy and z component. Apart from this expedient, the calculations for the HCP function follow the same line of those previously described for the FCC case. A significant difference is the dependence of the HCP solution on two parameters kx and kz. Therefore, while the choice of the adaptation parameters \u03c4L and \u03c4S fixes one of the two (as shown in Figure 3, left), one can still optimize over the ratio between the two. The value of kz/kxy that should be observed in the presence of a perfect HCP pattern can be calculated as 3/321/2 \u2248 0.53. In Figure 3 (right), we plot the values obtained for different powers of our expression for the HCP arrangement. While for higher values of n the value of kz/kxy extracted from the optimization progressively approaches the theoretical one, interestingly the n = 1 case exhibits a very different behavior with an optimal kz/kxy = 0, independently of the value of \u03b3. As kz represents the reciprocal of the inter-layer spacing (and also the wavelength of the activity modulation along the z-axis), this value indicates that the minimum value of the cost function is obtained with infinite distance (and infinitely slow modulation of the activity), or equivalently with a column-like distribution of activity, with a single layer of fields extending indefinitely in the vertical direction (Jeffery et al., 2013). This solution is distinct from the case of a single layer of fields, with no activity above and below them, a situation that does not entail the regular, three-dimensional configurations we are interested in. In Figure 3 we plot the values of the wave vectors obtained with the set of parameters: v\u03c4L = 1, \u03bd\u03c4S=13\u03bd\u03c4L, \u03c1 = 0.03. Changing these parameters alters the absolute values of the curves but does not affect the qualitative behavior of the solutions to the minimization of the cost function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig3-v2.jpg)\n\n**Figure 3.:** Results for the grid parameters resulting from the cost function minimization. Left: Optimal grid spacing for face centered cubic (FCC) and hexagonal close packed (HCP) structures and various powers of the respective expressions. Right: Optimal ratio between horizontal spacing and vertical spacing for different powers of the HCP expression. The orange continuous line indicates the theoretical value to obtain a perfect HCP arrangement. All the plots are obtained with parameters: v\u03c4L = 1, $\u03bd\\tau_{S}=\\frac{1}{3}\u03bd\\tau_{L}$, \u03c1 = 0.03.\n\n## Results\n\n### Asymptotic states for individual grids\n\n#### Self-organized grids appear to express a mixture of symmetries\n\nIn our simulations the activity of mEC units is progressively shaped over an extended period of time. Starting from an initial random arrangement of connections and a correspondingly heterogeneous distribution of activity, the combined effect of adaptation and synaptic learning leads the units to approach, after a transient reorganization of their firing fields in space, a stable configuration that is the outcome of the self-organization process. Looking at the firing configurations developed by the units in our simulations, one can notice a similarity with the theoretical solutions maximizing the packing density of spheres described above. In Figure 4 we show two typical examples from the units emerging in the model mEC layer in two distinct simulations, each taken after about 15 million time steps of learning time. On the top row the firing rates of the units presents a blobby appearance, with equally sized, spherical fields homogeneously distributed in the volume. Although rate maps resemble those we expect from a regular tiling of the three-dimensional environment, they are not very informative about the overall organization of the fields nor about any symmetry in their spatial distribution. Computing the corresponding autocorrelograms we indeed find that the two units are rather different in this respect, as they express two distinct field configurations. One is in fact presenting an approximately FCC arrangement (Figure 4, left), while the other is close to an HCP one (Figure 4, right). Overlaying the axes of symmetry of the two ideal arrangements (green and orange lines) illustrates the differences between the two.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig4-v2.jpg)\n\n**Figure 4.:** Left: Face centered cubic (FCC)-like unit. Right: Hexagonal close packed (HCP)-like unit. Top: Rate maps. Bottom: Autocorrelograms. We plot the central portion of the autocorrelogram comprising the peaks surrounding the origin. Red and blue contours correspond to a correlation value of 0.2 and 0.25, respectively.\n\nThus, self-organization based on synaptic adaptation can have multiple outcomes, leading to equivalently stable solutions. Identical systems, with the same network properties and subject to the same evolution dynamics might approach different asymptotic states, just as an effect of the random initial conditions.\n\nThis fact does not necessarily imply that different solutions can coexist in the same population. The presence of interactions between units might indeed induce a global response to the initial conditions driving all the cells to develop the same symmetric properties. By making use of the measures of order described in the \u2018Measure of long-range order\u2019 section in \u2018Materials and methods\u2019 and calculating the similarity of each activity pattern either to an FCC or to an HCP, we can assess the presence within a population of mEC units of the different asymptotic arrangements. In Figure 5 we show the distribution of the two scores, again taken after a long learning time (15 million time steps), for units all belonging to the same mEC population. The values of the two scores indicate the presence of both arrangements in the system. If we look at the scores for each unit at a given time (Figure 5, left), we indeed find that these are not clustered in two groups, each one expressing a homogeneous HCP or FCC arrangement, but instead they cover an entire continuum of scores between the two extremes, expressing all intermediate arrangements.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig5-v2.jpg)\n\n**Figure 5.:** Left: Distribution of face centered cubic (FCC) and hexagonal close packed (HCP) scores in a population of simulated mEC units. The scores span a continuum between a pure FCC arrangement (bottom right corner) and a pure HCP one (top left corner of the figure) and are widely distributed between the two extremes. Right: Analytical cost function for various powers of FCC and HCP as a function of \u03b3 parameter. Continuous lines indicate the minimum value within each set of solutions and are found to alternate as a global minimum in different ranges of values of \u03b3. For small values of the parameter \u03b3, instead, the trivial solution \u03c8 = 0 is favored. The plot is obtained with: v\u03c4L = 1, $\u03bd\\tau_{S}=\\frac{1}{3}\u03bd\\tau_{L}$, \u03c1 = 0.03.\n\n#### Which is the most favorable analytical solution?\n\nThis result points to a high degree of independence of each unit and at the same time to a rather weak preference of the system for either of the regular configurations of fields. We can contrast our observations on the asymptotic states approached by the mEC units simulated numerically with the analytic evaluation of the cost function associated with the regular asymptotic states (see the \u2018Measure of long-range order\u2019 section in \u2018Materials and methods\u2019). The calculations are based on the functional in Equation 14, comprising two terms, one representing the degree of smoothness of the map, the other the effects of adaptation. Its minimization (adjusting regular solutions to fit with the firing rate adaptation time scale) shows a rather complex interplay between different possible states (Figure 5, right). First of all, considering FCC and HCP separately, we see how, for both of them, solutions of higher power become successively favored as the value of the \u03b3 parameter increases, that is, as the weight of the adaptation component becomes increasingly dominant in the evaluation of the cost function. Therefore, the same arrangement of field positions, but with the fields becoming more and more concentrated and peaked, is selected moving rightward on the graph. In parallel, the two configurations, FCC and HCP, compete with each other, and the two are alternating as the optimal solution in different portions of the parameter space. The picture that emerges from this analysis is one of close equivalence of FCC and HCP in terms of optimality. There is no evidence of a regime in which one of the two strongly dominates the other. Instead, the features that are common to the two, like the hexagonal arrangement and the 12 first neighbors, appear to be the relevant ones for the evaluation of the cost function, with the differences appearing when considering higher order features only marginally contributing to its value and therefore generating minuscule quantitative differences between the two.\n\nAnalytical calculations deal with an abstract and simplified formulation of the properties of our network. The conclusion they suggest, however, is supported by our observations from the numerical simulation of the full model. The system does not appear to converge asymptotically to either of the two regular configurations of fields. Although neither FCC- nor HCP-symmetric solutions provide a unique description of the final arrangement of the units, the simulations produce examples of units similar to either of the two optimal packing solutions. The discrepancy between the configurations observed and the symmetric solutions, however, is not due to the emergence of mixtures of the two (like for example in a ABABCAB ordering of the layers), but rather to small deviations of the relative phases between fields of different layers from the optimal ones. Although we tested our model in environments of different size (as discussed in a following section), the model is computationally extremely demanding to run in very large environments, large enough to investigate this sort of mixed ordering. Analytical results show a substantial equivalence of FCC and HCP ordering, thus implying, in large structures, the possibility of multiple switching between the two, without altering the overall optimality of the configuration. Nevertheless, simulations show that this equivalence, even in the case of the small environments we tested (where we could usually observe three or only slightly more layers at the same time), is expressed in intermediate arrangements which are only partially symmetric. It is thus likely that introducing additional layers would just propagate this situation further without leading to the appearance of FCC and HCP mixtures.\n\n### Time scales for the emergence of local order\n\nConstructing either an FCC or an HCP arrangement of fields is a rather articulated endeavor that requires assembling a hierarchy of elements of increasing complexity. The three-dimensional structure described by the two arrangements implies the establishment of long-range relationships between the level of activity at distant points of the environment and involves determining the position of a large number of fields at the same time. Both FCC and HCP are described by unitary cells of 13 fields and the difference between the two lies in the different positioning of just three of them with respect to the others. It is evident by looking at Figure 2, however, that this long-range order is constructed from a set of building blocks that express symmetries and regularities at a local level, involving fewer fields and a smaller set of constraints. Understanding the outcome of the self-organization of grid cells in three dimensions can be thus approached bottom-up, starting from basic features of the representation and then following the learning process up towards their combination into overarching structures.\n\nAs in the two-dimensional case, a description of the grid can start from computing the mean distance between first-neighbor fields and the mean angle formed by triplets of adjacent fields. These two measures involve, respectively, two and three fields at a time and are not informative about correlations extending beyond these boundaries.\n\nAt this level order emerges almost immediately (Figure 6). The mean angle among neighboring fields (calculated over all the triplets of all the cells of a simulated population) is close to \u03c0/3 from the very beginning of learning and the real effect of continuing exploration is the reduction of the variability over the course of about 4 million time steps.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig6-v2.jpg)\n\n**Figure 6.:** Left: Mean angle formed by triplets of fields as a function of learning time (see the \u2018Local gridness measure\u2019 section in \u2018Materials and methods\u2019 for details on the measure). Right: Mean spacing between fields extracted from the autocorrelograms, for various conditions as a function of learning time.\n\nA similar behavior is observed when plotting the value of the mean spacing of the grids in time (calculated from the unit autocorrelograms) (Figure 6, right: blue line). Also in this case, after a short transient the value stabilizes after around 3\u20134 million time steps. Our choice of model parameters (and specifically of the adaptation parameter) leads to a spacing of 0.55 \u00d7 L. We run simulations in different conditions to test the sensitivity of this quantity to specific components of the model. We consider the case of having no internal connectivity in mEC, removing any interaction between different mEC units (Figure 6, right: red line) that are therefore developing grids independently, and the case in which rather than having a single value of the adaptation time course, common to all the units, the population expresses a range of possible values, drawn from a uniform distribution ranging from 0.85 \u00d7 b1 to 1.2 \u00d7 b1, where b1 = 0.1 is the value otherwise used (Figure 6, right: green line). In both cases we see that the time course of the development of a common grid spacing is not affected by the modifications of the standard model. Stabilization is obtained in the same time interval and while removing collateral connections appears to have absolutely no effect, the variability in the adaptation parameter results in a slightly different final value of the spacing (0.5 \u00d7 L).\n\nThese results indicate that the three-dimensional grid develops from the same ingredients of its lower dimensional equivalent. Mean spacing and mean angle are quickly fixed over the entire network almost simultaneously and are the first recognizable signs of the emergence of an ordered structure from the initial random distribution of activity. The equivalence between this process and that observed in a model of two-dimensional grid development is due to the same principles driving self-organization. The presence of an additional dimension does not affect the way in which fields are initially brought by adaptation to homogeneously and regularly cover the entire space.\n\n### Time scales for the emergence of long-range order\n\nUsing the measure described in the \u2018Local gridness measure\u2019 section in \u2018Materials and methods\u2019, we can evaluate the difference between the distribution of activity of a unit and a random arrangement of fields. Plotting the average across units of this index, which reflects the decrease of the variance in the angles between triplets, already observed in Figure 6, we see again (Figure 7, top left), that after roughly 4 million time steps the system is already arranged in a stable ordered manner, with equilateral triangles among neighboring fields that dominate the activity pattern. This ordering can be generated by the system independently of higher order symmetries, and it provides a first step for further arranging fields in more articulated structures.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig7-v2.jpg)\n\n**Figure 7.:** The panels present the time evolution of the measure of different symmetries in the arrangement of fields. Top row: Fast convergence of neighboring triplets of fields towards equilateral triangles (left) and of group of fields into planes with a hexagonal arrangement (right). Middle row: Slow convergence of the different units in the population towards a common orientation of the layers of fields. Left: Angle between the principal plane expressed by the various units. Right: Angle between fields arranged over mutually aligned planes. Bottom row: No convergence of global, inter-planar order. The measures of similarity with face centered cubic (FCC) and hexagonal close packed (HCP) ordering do not evolve with the extension of the learning time and remain close to intermediate values indicating an even distribution of the values over the population of grid cells. See \u2018Materials and methods\u2019 for details on the measures.\n\nA second step taken by the system is the coordination of multiple field triplets to arrange them in a hexagonal pattern. This process corresponds to the formation of a grid on the plane, but in three dimensions it involves the creation of not just one hexagon but of multiple superimposed planes each of which contains hexagonally arranged fields. To investigate the structure of the activity on the single layers, we take multiple slices of the autocorrelogram matrix. We take sections passing through the center, with different angles of azimuth and elevation. We then compute the autocorrelogram values on each of these planes, and we compare it with a hexagonal template of equidistant peaks with \u03c0/3 periodicity. The plane most resembling a hexagonal pattern according to a correlation measure (the \u2018best plane\u2019) is selected together with its similarity score. This method provides us with an equivalent of the traditional grid score used to judge the quality of planar grid cells. In Figure 7 (top right) we plot the time evolution of the average over the population of this score. Starting from very low values, indicative of a still unorganized ensemble of fields, the score steadily rises to reach a value of about 0.85 (out of a maximum of 1) after 6 million time steps and then remains stable over the rest of the simulation.\n\nThe previous analysis considers each unit separately and does not provide a measure of the coordination across the population of the formation of the field layering. But the presence of collateral interactions should induce some coordination in the way these layers are arranged in different cells, that is, in the direction along which these best planes align in space. We looked for the dispersion of their orientations, calculating the angles formed by the best planes of different cells (\u03b2, Figure 7, middle left), and the angle between the hexagonal grid axis of cells sharing a similar best plane (\u03c9, Figure 7, middle right). We indeed see that collateral interaction tends to align in time the principal layer of different cells, defining a preferred orientation for the global structure of the grid. The emergence of the common alignment of the layers is slower than the formation of the layers themselves. It takes about 12 million time steps of exploration time to significantly reduce the dispersion of the angles (note that \u03b2 is slightly faster, maybe indicating a tendency to first define the layers and then arrange shifts within them).\n\nHaving hexagonal layers tiled upon each other along the same direction still leaves to each cell the degree of freedom of setting the relative phase between pairs of these layers. It is clear at this point that a proper choice of these phases would result in the reproduction of either an FCC arrangement or an HCP arrangement. This higher level in the hierarchy of order for three-dimensional grids, which when attained would provide a completely regular tiling of the volume, does not have a correspondence in the two-dimensional case. It is thus a completely new level of complexity that can be only expressed when producing grids in three dimensions. In the bottom panels of Figure 7 we show the time course of the scores for FCC and HCP similarity (see the \u2018Measure of long-range order\u2019 section in \u2018Materials and methods\u2019). Their values are almost unchanged over the duration of the simulations and after 30 million time steps, a time largely exceeding that necessary for the other quantities to converge, both of them are still close to 0.5, which reflects the presence in the population of a large distribution of values.\n\nOur simulations are able to distinguish a hierarchy in the time course leading to the formation of three-dimensional grids. Different levels of complexity appear in the arrangement of fields with different speed. Fast converging quantities like the formation of equilateral triangles of fields and successively of layers of fields with hexagonal symmetry appear first, framing the activity of single units in the network. These initial structures are then modified on a slower time scale to obtain a global coordination among cells. Planes of fields are rotated to align them across the population, generating a common tiling of the fields of different cells that conserve their unique spatial phase. This global ordering is only partial though, as the phases of the units are only partially overlapping with those necessary to reproduce a perfectly regular tiling of the volume (either with an FCC or an HCP). If we exclude the very initial phase of network dynamics, self-organization does not appear to affect these aspects of network activity that therefore remain loosely determined even after a very extended period of time.\n\n### Volume dependence of the time scales\n\nThe critical question is how would these timescales scale up with the size of the environment. At least for the most rapid self-organizing processes, their very nature, dependent on plasticity in the feed-forward connections, would appear at first sight to require the pairing of each activity field of each unit to the specific configuration of sensory inputs which impinge at the same time on the feed-forward connections, therefore implying times for the formation of the grid that scale up with the number of fields in the volume. A volume of linear size L includes roughly $N_{3}=\\sqrt{2}(L/a)^{3}$ fields of spacing a in either an FCC or HCP arrangement (and $6\\sqrt{2}(L/a)^{3}$ trajectories connecting neighboring fields). A square of side L on a plane would include roughly $N_{2}=(2/\\sqrt{3})(L/a)^{2}$ fields. The emergence of equilateral triangles in 3D appears to require roughly a factor 2 more time than in 2D (Si et al., 2012), in approximate agreement with the factor $N_{3}/N_{2}=\\sqrt{(3/2)}(L/a)\u22431.2\\times1.8\u22432$ coming from the above argument. Note that if that were correct, equilateral triangles in an environment roughly four times as large, as can be argued to be the one used in the bat experiments in the Ulanovsky laboratory (Ginosar et al., 2014), would emerge in roughly 40\u201350 hr of continuous flight. Although the developmental maturation of the bat encompasses longer cumulative flying hours, what is likely relevant for structuring the feed-forward connections is time spent flying in the environment of the actual experiment. Not only can the mechanisms leading to grid-like activity only unfold while navigating and not during rest periods, they also appear to require, in our model, the exact configuration of input activity at each location in the environment. Therefore this constraint is likely to put the time scale of grid cell formation well above the feasible time duration of the experiment.\n\nIn fact, however, we find that the time for self-organization lengthens only a little, and clearly sublinearly, with the volume flown by the virtual bat. Given the multiple sub-processes involved in the self-organization of the grid units, we focus on a summary measure, derived from the analytical model: the cost function (Equation 14). Each of the two terms of the cost function, the kinetic and the adaptation kernel, can be calculated for each model grid unit at each time step of the simulation, and average values can be extracted and fit, for example, with sums of exponential functions. What cannot be calculated from the simulations themselves is the value of the \u03b3 factor that, in the cost function, would determine the weight of the adaptation kernel with respect to the kinetic term.\n\nWe find that the population-averaged data points for both terms can be well fit by a sum of two exponentials, plus a constant (Figure 8, inset) and with the same time parameter for the first exponential in each term:(29)HK(t)\u2243Av\u2009exp(\u2212t/\u03c4vS)+Bv\u2009exp(\u2212t/\u03c4vL)+K.(30)HA(t)\u2243Cv\u2009exp(\u2212t/\u03c4vS)\u2212Dv\u2009exp(\u2212t/\u03c4M)+Ev.with A, B, C, D, E volume-dependent positive fit parameters, and \u03c4S,M,L short, medium and long relaxation time scales (K turns out not to depend on the volume; nor, it seems, does \u03c4M).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig8-v2.jpg)\n\n**Figure 8.:** Temporal evolution of the cost function calculated for environments of different size. Lines from green to red correspond to environments of increasing size: 1 (green), 1.2, 1.4, 1.44, 1.68 and 1.96 (red) times the basic volume, respectively. With the choice of parameters reported in the discussion, these volumes would range from a 15.625 m3 room to a 30.625 m3 room. The inset shows the breakdown of the contribution to the total cost of the kinetic part and of the adaptation part for the cubic environment of size 2.5 \u00d7 2.5 \u00d7 2.5 m. Dots correspond to data points, lines to a fit. The constant of the kernel term, which varies with the volume, is not included for clarity.\n\nThe short term relaxation is therefore a joint decrease of both terms, while later the adaptation term rises, whereas the kinetic term continues to decrease. An empirical ansatz can be defined for \u03b3 as the largest value that still keeps the sum HK(t) + \u03b3HA(t) monotonically decreasing. With this ansatz, we plot the estimate of the cost function (without the Ev term, for clarity) for varying volume sizes, where we have multiplied either one or two of the three linear dimensions by either 1.2 or 1.4, obtaining volumes larger than the standard one by factors 1.2, 1.4, 1.44, 1.68 and 1.96. We can see from Figure 8 that the relaxation of this estimated cost function is mainly determined by the most rapid exponential terms, and is virtually complete by 3\u20134 million time steps, with a limited volume dependence. Consequently, apart from the slight prolongation of the initial transient, the time evolution of our measure for volumes of different size appears to be quite similar.\n\nThese results suggest that the time required for the complex dynamics of grid development depends only weakly on the number of fields that have to be arranged in a orderly manner in the volume. The initial relaxation, which accomplishes most of the rearrangement and probably centers on adjusting the angles between triplets of fields (cp. Figure 7, top left and Figure 8), occurs in a time that increases sublinearly with system size. This is followed by some bouncing back of the adaptation term, which may have to do with the finer adjustment of most field distances, leading to planar hexagonal grids (see Figures 6 and 7, top right), with a time constant which can be taken to be independent of the volume. It is protracted later by continued but minor smoothing of the fields, now in place on the best planes, concurrent, if collateral interactions are included, with the adjustment of the planes with respect to each other (Figure 7, middle), which extends over longer times. We do note that we have observed considerable variability in the degree of smoothness of the individual fields obtained at the end of the simulation, with a tendency for the larger volumes to require longer time and end up with rougher fields. Given the variability from simulation to simulation, however, it remains to be determined whether this trend is robust and whether it points at a significant bifurcation in trajectories of grid development.\n\n## Discussion\n\nHow are these results relevant to predict the grid configuration expressed in 3D, and that can be tested in a flying bat? Our model points towards a hierarchy of timescales, associated with the emergence of periodical spatial activity of increasing complexity. To establish a relation between our results and a real bat, it is necessary to specify the actual values of the temporal and spatial parameters of our model, to obtain a time scale for the development of the grids that we can then compare with experimental findings.\n\nIf we take time steps of size \u0394t = 10 ms and an average bat velocity of v = 1 m/s, the small environment used in most of our simulations will correspond to a cubic room of size L = 2.5 m. Then, with this choice of parameters, grids are formed with a field spacing of 2.5 m \u00d7 0.55 \u2248 1.4 m and an interlayer distance of $2.5m\\times0.55\\times\\frac{\\sqrt{6}}{3}\u22481.1m$. The time scale of grid formation can be calculated considering that 1 million simulation time steps correspond to 10,000 s or nearly 3 hr. Our model then predicts, in an environment the size of ours, the presence of (i) triplets of fields forming roughly equilateral triangles in \u224810\u201312 hr of continuous flight, (ii) hexagons in \u224815\u201318 hr, and finally (iii) different units that achieve a common orientation after \u224830\u201335 hr. These time scales do not seem very different from those predicted by the same model for the development of grids in a two-dimensional environment of similar linear size (relative to the grid spacing). Figure 6 in Si et al. (2012) indicates a time scale of about 20,000 s, or 5\u20136 hr, for the development of gridness in 2D. At the same time, this moderate increase in grid formation time might make it comparable to the flight time available for spatial learning during bat experiments. In these conditions, even the weak, sub-linear dependence of time scales with volume, that we do observe, may be sufficient to determine a switch between the possibility of forming regular structures and leaving them beyond reach.\n\nA regular tiling of the environment (either in the form of an FCC or of an HCP lattice) is a different story, even though it would be the optimal arrangement from an information-theoretic perspective (Mathis et al., 2014). The total simulation time would correspond to a maximum of \u224880\u201390 hr of continuous bat flight in the (2.5 m)3 volume. This time is just a lower bound for the time necessary to form a regular tiling of the environment, and likely a loose one, as our simulations do not seem to be converging towards one of them.\n\nThese considerations suggest that bats may form a partially regular 3D tiling of the environment at most once, and then possibly only if constrained to fly for a prolonged time in a rather small cage, while a completely regular, crystalline tiling of space seems to be hardly in the range of time available to real bats.\n\nIn conclusion, the presence of an additional dimension does not seem to preclude the appearance of some orderly arrangement of the fields in mEC units of bats. Nevertheless, this order might express only a partial set of the full spectrum of potential three-dimensional symmetry properties. It might be still sufficient to distinguish the activity of these cells from a random multi-peaked pattern, but it would place it at a substantial distance from a perfectly regular pattern, too. In our model this distance varies across a population of cells: some of them show only small deviations from perfect symmetry. We thus cannot exclude the possibility of finding some of these extreme cases in real animals. At the same time, the vast majority of simulated grid cells are very far from a perfectly regular arrangement and while the number of units actually found in the tails of the distribution of scores might be strongly dependent on some specific factors of the development of grid cells, the bulk of grid-like but imperfect cells can be regarded as a robust aspect of our model, and might extend to very different situations of 3D grid cell development, possibly including other species experiencing three-dimensional navigation.\n\n## Materials and methods\n\n### Local gridness measure\n\nThe triangular tile is the minimal structure associated with regular volume tessellations. The two properties defining any regular triangle are the length of the side and the internal angle. Therefore, to characterize the local structure of the grid pattern in an individual unit we extract these two properties from the spikes it produces. Firstly, from our three-dimensional rate maps we generate a representative number of spike pairs through a Poisson process to construct the distribution of distances. Typically, this distribution is highly multi-peaked, where the first peak corresponds to distances between intra-field spikes, the second peak between spikes belonging to neighboring fields, and subsequent peaks between spikes in non-adjacent fields. Since the length of the side of the tiling triangle in a regular pattern would correspond to the location of the second peak, we define a range of distances around this peak as a filter condition to declare spikes belonging to neighboring fields. The limits of this range were defined by the surrounding troughs, if they exist, or fixed to 0.5 d and 1.4 d, if they do not, where d is the distance corresponding to the second peak, declared as the grid distance of the unit. As a control condition, we generate a distribution of pseudo-spikes from reshuffling spike\u2013cell combinations and randomly reassigning spikes to different units, thus removing the field structure of the activity of each cell. Therefore, distances between pseudo-spikes are unimodally distributed. Secondly, triplets of spikes were putatively classified as belonging to neighboring fields based on distance filtering in the previous range, and the three internal angles determined. These three angles were pooled together and accumulated in an overall angular distribution. The distribution of angles so obtained for the spiking activity and the control condition were different and their ratio was used to characterize the angle subtended in the triangular pattern. Typically (in the asymptotical state), this ratio was unimodal and distributed asymmetrically around a peak. We defined the characteristic angle as the median of the above-chance distribution (ratio values above unity indicate an above-chance condition or, in other words, angles more frequently obtained than randomly) and the significance of the angle as the maximum of the ratio distribution.\n\n### Measure of long-range order\n\nFCC and HCP differences in the configuration of fields generate distinct symmetry properties for the two arrangements. These symmetries are reflected in the autocorrelograms that can be extracted from them. In the same way as the autocorrelogram of a hexagonal grid is a hexagonal grid, calculating the autocorrelogram of FCC (using function 20) just reproduces the same configuration (Figure 2, bottom left) of fields, with six symmetric pairs of equivalent peaks surrounding the central one. Indeed the symmetries of the structure are such that one can find four planes passing through the origin which contain peaks arranged in a hexagonal way; these planes form angles of 72\u00b0 and are all equivalent. The case is different for HCP, where the central symmetry is missing. In this case the autocorrelogram extracted from Equation 25 does not reproduce the original form of the function. In Figure 2, bottom right, one can see that the autocorrelogram presents nine pairs of peaks around the central one. But in this case these peaks are not all the same. The HCP structure is again periodical for translations along a plane, generating six peaks of height 1, like those of FCC (Figure 2, purple peaks). As the structure is translated out of this preferred plane, the ABAB arrangement of the HCP layers is such that there are no translations that reproduce the exact same configuration of fields, in the autocorrelogram. The six peaks above the central one (Figure 2, orange peaks) are indeed half-peaks, corresponding to an overlap of only half (six out of 12) of the peaks of the basic unit. Therefore, although one can identify seven planes with hexagonally arranged peaks on this autocorrelogram, they are not all equivalent to those in FCC. Only one of them contains all the peaks of height 1 and forms an angle of 72\u00b0 with the other six, which include half-peaks and form an angle of 56\u00b0 between them. We can then use different measures to quantify the degree of similarity of a unit activity to the FCC and HCP prototypical field arrangements. One measure is based on the autocorrelogram. From this, we first identify the best plane, the one which yields the highest grid score, measured here as the value of the planar autocorrelogram at the origin, that is, the planar autocorrelation over all the slices passing through the origin. Once the best plane has been identified, we use the fact that the FCC has three more planes with hexagonal symmetry, at \u223c72\u00b0 from the best plane and between one another. HCP instead has six of them, again at \u223c72\u00b0 from the best plane, but at \u223c56\u00b0 between them. We then take the slice scores, that is, the planar autocorrelation values on any one slice. We take all the slices at an angle of \u223c72\u00b0 from the best plane and sum the scores of the best triplet of slices with \u223c72\u00b0 of separation (\u03b62 \u2212 4). We then exclude them and take a second triplet of slices again with a \u223c72\u00b0 distance from one another and a distance of \u223c56\u00b0 from the first triplet (\u03b65 \u2212 7). These two numbers tell us about the number of different planes with hexagonal symmetry that can be built from our autocorrelograms. Both scores run from \u22123 to 3, as they are the sum of three correlations. We expect \u03b62 \u2212 4 to be high for both FCC and HCP arrangements, and its value should be considered as an indicator of the general quality of the grid. \u03b65 \u2212 7 instead should be high only for those grids presenting an HCP type of arrangement, but again its value might be affected by the quality of the grid. We thus define a score for the degree of FCC similarity as:\n\n$$\n\u03c7_{FCC}=(\u03b6_{2\u22124}\u2212\u03b6_{5\u22127})/\u03b6_{2\u22124},\n$$\n\nthat should be close to 1 in the presence of FCC, and to 0 in the HCP case.\n\nOn the other hand, HCP is characterized by the repetition of the same field positions every two layers, while FCC has a periodicity of three layers. Then another way to characterize the grids is to look for similarities between layers. Since the best plane we calculated indicates the direction of stacking of layers in the HCP (along its normal vector), we can go back to the firing rate map, take slices along this direction (that is, slices with the same best plane orientation) and calculate the correlation between planes separated by a two-layer distance (2 \u00d7 \u03bbz):\n\n$$\n\u03c7_{HCP}=\u03c1_{auto}(2\\times\\lambda_{z}).\n$$\n\nContrary to the previous score, this one should be close to 1 when HCP is expressed, and to 0 when FCC is.\n\n### Cost function expression for n = 2\n\nHere we give an example of the expression for the cost function obtained for n = 2.\n\n$$\nH(\u03c8_{2}^{FCC})=\\frac{71\\timesk^{2}}{162}+\\gamma\\times(1/648\\times(256K\u02dc(k)+K\u02dc(2k)+6\\times(K\u02dc(2\\sqrt{2/3}k)+K\u02dc((2k)/\\sqrt{3})))),\n$$\n\n\n\n$$\nH(\u03c8_{2}^{HCP})=\\frac{3045\\timesk_{xy}^{2}+1881\\timesk_{z}^{2}}{2601}+\\gamma\\times(\\frac{1}{3468}\\times(54K\u02dc(2k_{z})+1160K\u02dc(k_{xy})+1920K\u02dc[k_{xy}+k_{z}]+36\\timesK\u02dc(k_{xy}+2k_{z}]+2\\timesK\u02dc(2k_{xy})+48\\timesK\u02dc(2k_{xy}+k_{z})+9\\timesK\u02dc(2k_{xy}+2k_{z})+200\\timesK\u02dc(\\sqrt{3}k_{xy})+36\\timesK\u02dc(\\sqrt{3}k_{xy}+2k_{z}))),\n$$\n\nwhere k is the only parameter for spacing in FCC and kxy, kz are the two spacings of HCP, along the horizontal and vertical plane, respectively.\n",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "7312ac52-0776-44c9-9eaf-2a4e16ec0a7d",
+      "submission_id": "d777d519-e238-46b7-be42-48f3df6b9907",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark S Goldman, University of California at Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05913.010](https://doi.org/10.7554/eLife.05913.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe Self-Organization of Grid Cells in 3D\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor), a Mark Goldman (guest Reviewing editor), and two reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission:\n\nIn the interesting manuscript \u201cThe self-organization of grid cells in 3D\u201d, Stella and Treves provide the first predictions for the development through ontogeny of 3D firing patterns in 3D grid cells. The authors pursue a two-pronged approach in which they simulate a set of weekly selective 3D place cells with feedforward plastic synapses onto a population of entering grid cells and demonstrate the formation of 3D grid fields, with the grid spacing being controlled by the time-constant of firing-rate adaptation. Additionally they employ an effective field approach to analytically predict low-energy configurations of the population firing rate maps.\n\nSurprisingly, their model predicts that an adult network of 3D grid cells should comprise of a heterogeneous mix of both perfect (lattice like) 3D grids but also much-distorted grids. They show that, as the network is learning, already at the very beginning there appear triplets of spatial blobs of activity that are angled at 60-degrees. Only much later, with extensive training, do these triplets \u201ccrystallize\u201d, and the network gradually develops optimal-packing structures such as the hexagonal close pack (HCP) lattice or face centered cubic (FCC) lattice - as well as neurons which exhibit a mixture of HCP/FCC. This study is very interesting in that it provides direct predictions on how and why 3D grid cells should develop during ontogeny; there is very little data on this and so it is quite interesting that the authors have managed to make headway on this topic through careful theoretical analysis, examining the space of possibilities ahead of experiments. The model also explains how and why a high heterogeneity of 3D grid cells is expected - from cells exhibiting only triplets of activity-blobs angled at 60-degrees (but without any large-scale lattice organization), through random mixtures of HCP and FCC lattices, and ending with perfectly crystallized HCP and FCC lattices. This study will be of great interest to many neuroscientists, system biologists and physicists.\n\nComments:\n\n1) In the Abstract (and in many other places in the paper): The focus seems to be on predictions for bat experiments. Why do the authors single out the bat as the only relevant animal model for 3D grids? The predictions in the paper are very general, and may hold also for monkeys, dolphins, cats, or humans that also move through 3D space. The focus on bats is too narrow, and should be broadened throughout.\n\n2) In the subsection \u201cThe network\u201d, the authors mention that sigma_p = 0.05L. Does changing the sigma_p of the place cells affect any of the final properties of the grids, and/or their developmental time course?\n\n3) In the end of the subsection headed \u201cHCP symmetry\u201d, it is unclear why the authors write that small kz is equivalent to columns spreading over the z-axis (height) entire room. An alternative possibility is having only one layer of spherical blobs in the XY plane, without any additional layers repeating in the z-dimension. Are these options equivalent in terms of the minimization of the cost function?\n\n4) Results section, subsection headed \u201cWhich is the most favorable analytical solution?\u201d: The authors focus on HCP and FCC, but it is unclear here to which degree do they see also other solutions, besides HCP and FCC, e.g. random order of layers: ABCABABACBCBA\u2026 which is an arrangement that pack 3D space just as well as FCC or HCP but does not have any large-scale structure along the z-axis. Did you observe such neurons in your simulations?\n\n5) In the Discussion: The impression one gets from the end of the Discussion is that almost no cells at all are expected to exhibit perfect FCC or HCP - but in fact, according to Figure 4 (left), it seems that at least some of the grid cells are actually expected to develop a perfect FCC or a perfect HCP; is this correct? These cells might be a minority, but at least some are expected to develop FCC or FCP. So I think it's worthwhile to write it here explicitly, because right now the discussions seems to suggest the opposite.\n\n6) The model does not allow for plasticity between grid cells. The spatially localized structure for grid cell firing is essentially built in by hand through hand tuning, ahead of time, the lateral synapses. Note that this is only a suggestion for a future avenue of research and does not need to be addressed for the manuscript to be deemed acceptable. The progress made on addressing this difficult theoretical problem is sufficient for publication already.\n\n7) The Results section could be written to be in a somewhat more accessible form for the general, less mathematical reader.\n",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7f22cbc4-6ba3-43da-b2e4-22e75a3ab3d9",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C1",
+      "claim": "Place cell and grid cell representations are similar between rodents and bats.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in the place cell and, most remarkably, in the grid cell representation between rodents and bats suggests a common neural substrate for spatial navigation, shared across these mammals (Andersen and Buneo, 2002; Jacobs et al., 2010; Sereno and Lehky, 2011; Killian et al., 2012; Indovina et al., 2013; Jacobs et al., 2013; Thurley et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies comparing spatial representations across species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "dd7b8327-3251-4429-a4e9-261b4e894813",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C2",
+      "claim": "The similarity in spatial representations between rodents and bats suggests a common neural substrate for spatial navigation shared across mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in the place cell and, most remarkably, in the grid cell representation between rodents and bats suggests a common neural substrate for spatial navigation, shared across these mammals (Andersen and Buneo, 2002; Jacobs et al., 2010; Sereno and Lehky, 2011; Killian et al., 2012; Indovina et al., 2013; Jacobs et al., 2013; Thurley et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the observed similarity in spatial representations, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "2730564a-9a01-4574-88db-c80aec3743ea",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C3",
+      "claim": "Place cells have been shown to directly generalize to three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "While place cell and head direction cells have been shown to directly generalize to three dimensions (Yartsev and Ulanovsky, 2013; Finkelstein et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "761c8ec2-675f-423e-a027-3acb17b5a90b",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C4",
+      "claim": "Head direction cells have been shown to directly generalize to three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "While place cell and head direction cells have been shown to directly generalize to three dimensions (Yartsev and Ulanovsky, 2013; Finkelstein et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "29c9e1ac-f189-4fbd-91f3-609bc9844947",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C5",
+      "claim": "The form that grid cells will exhibit in higher dimensionality is still not clear.",
+      "claim_type": "EXPLICIT",
+      "source": "the form that grid cells will exhibit in higher dimensionality (currently tested in flying bats [Ginosar et al., 2014]) is still not clear",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim states the current state of knowledge in the field, with a citation to ongoing research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "f66e348b-87f6-43c2-9ade-cdb2b7c5d2ec",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C6",
+      "claim": "The question is still open of how the mechanism producing periodic patterns on a surface can extend to a volume in bats.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the question is still open of how the mechanism producing such a complex periodic pattern on a surface can, in the case of bats, extend to a volume (Jeffery et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim identifies an open research question, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "c096c69d-122e-4aaa-9781-dcf8c08b2558",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C7",
+      "claim": "A regular lattice is information-theoretically optimal for spatial representation.",
+      "claim_type": "EXPLICIT",
+      "source": "even when accepting the information-theoretic optimality of a regular lattice (Mathis et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a theoretical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "be9cfc70-61be-4392-ae29-b6125b9a37c0",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C8",
+      "claim": "In the self-organization model, spatial responses emerge spontaneously at the single unit level with no engineering required.",
+      "claim_type": "EXPLICIT",
+      "source": "In the self-organization perspective that we propose, the spatial responses first emerge spontaneously, at the single unit level, with no engineering required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a key feature of the authors' model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "6e98c045-ee96-4e67-aeb0-09eb740cbdc0",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C9",
+      "claim": "The periodicity of the grid pattern is a result of firing rate adaptation during exploration sessions that span a considerable developmental time.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simplest version of the model, which we have explored in a series of studies (Kropff and Treves, 2008; Si et al., 2012; Stella et al., 2013), the periodicity of the grid pattern is a result of firing rate adaptation during exploration sessions that span a considerable developmental time (Figure 1, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to previous studies and reference to Figure 1c showing the evolution of firing rate maps.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "1febf75b-6ae4-4a19-868f-abbf519f3de9",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C10",
+      "claim": "The grid pattern is fixated gradually by means of synaptic plasticity in the feed-forward connections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is fixated gradually by means of synaptic plasticity in the feed-forward connections, which convey broad spatial inputs, for example but not necessarily from 'place units' (Figure 1, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes a mechanism in the model, with reference to Figure 1b showing the network architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "7fa43ca9-4f45-4ba0-9752-0ff147321a29",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C11",
+      "claim": "The model can account for the effects of the geometry of the explored environment on the outcome of the self-organization process.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to other models limited to the explanation of grid cell expression, this model delves into the issue of their induction and, most importantly, can account for the effects of the geometry of the explored environment on the outcome of the self-organization process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a capability of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "07469ed4-fc81-450c-af4f-805c52c77dac",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C12",
+      "claim": "The model produces pentagonal grids on a spherical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown how, for example, the model produces pentagonal grids on a spherical surface and heptagonal ones on a hyperbolic one (Urdapilleta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "e383e68d-a93d-4713-ac27-f5049a267d88",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C13",
+      "claim": "The model produces heptagonal grids on a hyperbolic surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown how, for example, the model produces pentagonal grids on a spherical surface and heptagonal ones on a hyperbolic one (Urdapilleta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "58be105d-9e19-4296-81c8-a68419c16675",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C14",
+      "claim": "The input network contains 123 units representing the CA1 region of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "The input network represents, for example, the CA1 region of the hippocampus and contains Ninp = 123 units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a parameter of the simulation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "f0afbd93-630b-405a-a8ed-162786599558",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C15",
+      "claim": "The output network contains 125 would-be grid units in mEC.",
+      "claim_type": "EXPLICIT",
+      "source": "The output network represents a population of NmEC = 125 would-be grid units in mEC, all with the same adaptation parameters when not differently stated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a parameter of the simulation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "2422573a-5ecd-448e-8be2-ff833ef8af5d",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C16",
+      "claim": "Place cells develop an adult-like spatial code earlier than grid cells do.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as recent studies have shown (Langston et al., 2010; Wills et al., 2010), it is entirely plausible that place cells develop an adult-like spatial code earlier than grid cells do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "b4e46b34-b055-47d7-a70a-02db521c0ad4",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C17",
+      "claim": "Place field centers are homogeneously distributed in the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Place field centers are homogeneously distributed in the volume (consistently with the experimental data presented in [Yartsev and Ulanovsky, 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model parameter that is consistent with experimental data cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "5d394f10-43c1-4758-a2b5-a3df3dd4df62",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C18",
+      "claim": "The choice of the value for the parameter \u03c3p is not itself crucial for the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the choice of the value for the parameter \u03c3p is not itself crucial for our model (Kropff and Treves, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "772c05ee-dea7-4c19-9d00-d8a41da4f7f5",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C19",
+      "claim": "The properties of the developing grid fields depend on the time scale of adaptation and not on the size of the place fields.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show in the following, the properties of the developing grid fields depend on the time scale of adaptation and not on the size of the place fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the model results presented in the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "0b53c9de-a5ed-4050-a710-9adc410beffe",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C20",
+      "claim": "Three-dimensional space admits a multitude of equally optimal orderings of spheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike on the plane, where the hexagonal tiling is always the optimal one, three-dimensional space admits a multitude of equally optimal orderings of spheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established mathematical knowledge about sphere packing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "511c82f0-b6a4-4ed1-98aa-df540a83b02b",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C21",
+      "claim": "Face centered cubic (FCC) and hexagonal close packed (HCP) represent the only two regular solutions to the sphere packing problem.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem of sphere packing, in a volume of 3D space, is a well-known mathematical problem, and it is known since the time of Gauss that any of these infinite optimal solutions can be described in terms of two fundamental arrangements, called face centered cubic (FCC) and hexagonal close packed (HCP), that represent the only two regular solutions to the problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established mathematical knowledge attributed to Gauss.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "6030c9f2-32f5-4274-91e3-e93b7c73062b",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C22",
+      "claim": "Both FCC and HCP solutions are based on a series of layers of spheres arranged in a hexagonal pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Both solutions are based on a series of layers of spheres arranged in a hexagonal pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of FCC and HCP structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "c2ff2196-df3f-4e61-96d9-a0d280cd187a",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C23",
+      "claim": "In both FCC and HCP combinations, each sphere has 12 first neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "In both combinations each sphere has 12 first neighbors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of FCC and HCP structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "6c3b2273-3322-4a8c-a1a5-613cfd6ea0bb",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C25",
+      "claim": "FCC and HCP differ only regarding the position of three spheres in the unit cell of 13 spheres.",
+      "claim_type": "EXPLICIT",
+      "source": "If we consider the unit cell of 13 spheres (a central sphere + 12 neighbors) in Figure 2, then FCC and HCP differ only regarding the position of three spheres (compare the position of the fields marked in green and red in the top-left and top-right panels in Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2 showing the structural differences.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "52e6e7b3-d2e1-4247-84d8-c864c3937548",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C26",
+      "claim": "In FCC, neighbor spheres are arranged in six pairs with symmetrical positions with respect to the center.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, while in FCC neighbor spheres are arranged in six pairs with symmetrical positions with respect to the center",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of FCC structure, illustrated in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "338ca8ac-0996-4e71-b12f-dfeec6493e5e",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C27",
+      "claim": "In HCP, there are only three pairs of symmetrically positioned spheres, those on the central plane.",
+      "claim_type": "EXPLICIT",
+      "source": "in HCP there are only three of these pairs, those on the central plane (fields marked in blue in Figure 2, top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes a mathematical property of HCP structure, with reference to Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "5088fafe-975a-47c7-8191-283fdebf273c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C28",
+      "claim": "For low values of \u03b3 parameter, the trivial solution \u03c8 = 0 is favored in the cost function.",
+      "claim_type": "EXPLICIT",
+      "source": "For small values of the parameter \u03b3, instead, the trivial solution \u03c8 = 0 is favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from analytical calculations of the cost function shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "a42200c3-7516-4f6e-b2dd-c0b6eff78002",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C29",
+      "claim": "As the value of \u03b3 parameter increases, solutions of higher power become successively favored for both FCC and HCP.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, considering FCC and HCP separately, we see how, for both of them, solutions of higher power become successively favored as the value of the \u03b3 parameter increases, that is, as the weight of the adaptation component becomes increasingly dominant in the evaluation of the cost function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from analytical calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "60efaf61-e735-44c0-b375-b8622ce5b150",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C30",
+      "claim": "FCC and HCP configurations alternate as the optimal solution in different portions of the parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the two configurations, FCC and HCP, compete with each other, and the two are alternating as the optimal solution in different portions of the parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from analytical calculations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "8267a94b-1fbb-463f-9d1a-7272aec22393",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C31",
+      "claim": "There is no evidence of a regime in which FCC strongly dominates HCP or vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no evidence of a regime in which one of the two strongly dominates the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the analytical calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "f9b56e68-df6f-4632-a898-e78eb36e3655",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C32",
+      "claim": "The hexagonal arrangement and 12 first neighbors are the relevant features for the evaluation of the cost function.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the features that are common to the two, like the hexagonal arrangement and the 12 first neighbors, appear to be the relevant ones for the evaluation of the cost function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the analytical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "3b0893ba-e070-4321-932c-a5b2b7974a85",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C33",
+      "claim": "The system does not appear to converge asymptotically to either FCC or HCP regular configurations of fields.",
+      "claim_type": "EXPLICIT",
+      "source": "The system does not appear to converge asymptotically to either of the two regular configurations of fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "a5fd340e-f5da-4961-b8df-2ca3183324ef",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C34",
+      "claim": "Self-organized grids appear to express a mixture of symmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-organized grids appear to express a mixture of symmetries",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the title of a results section describing simulation outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "ed693722-6d90-456f-9df9-d54093ada0b0",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C35",
+      "claim": "Starting from an initial random arrangement of connections, the combined effect of adaptation and synaptic learning leads units to approach a stable configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from an initial random arrangement of connections and a correspondingly heterogeneous distribution of activity, the combined effect of adaptation and synaptic learning leads the units to approach, after a transient reorganization of their firing fields in space, a stable configuration that is the outcome of the self-organization process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the general behavior of the model in simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "835273f3-6c3a-4f0e-8060-7502f76ef9e8",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C36",
+      "claim": "After about 15 million time steps of learning time, firing rates of units present a blobby appearance with equally sized, spherical fields homogeneously distributed in the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4 we show two typical examples from the units emerging in the model mEC layer in two distinct simulations, each taken after about 15 million time steps of learning time. On the top row the firing rates of the units presents a blobby appearance, with equally sized, spherical fields homogeneously distributed in the volume.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "58eb3469-87bf-432c-9d45-92d5682cb4e2",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C37",
+      "claim": "One simulated unit presents an approximately FCC arrangement of fields.",
+      "claim_type": "EXPLICIT",
+      "source": "One is in fact presenting an approximately FCC arrangement (Figure 4, left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "dbc860e7-6ca8-44a6-ae92-c8fd306bc589",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C38",
+      "claim": "One simulated unit is close to an HCP arrangement of fields.",
+      "claim_type": "EXPLICIT",
+      "source": "while the other is close to an HCP one (Figure 4, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "2ab27fe2-d70b-4cab-8f94-20aaea5fcbe7",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C39",
+      "claim": "Self-organization based on synaptic adaptation can have multiple outcomes, leading to equivalently stable solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, self-organization based on synaptic adaptation can have multiple outcomes, leading to equivalently stable solutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the simulation results showing different units with different arrangements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "10ac1de2-f15e-4059-b5c4-794ec6863ef2",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C40",
+      "claim": "Identical systems with the same network properties might approach different asymptotic states as an effect of random initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Identical systems, with the same network properties and subject to the same evolution dynamics might approach different asymptotic states, just as an effect of the random initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "956ea77e-91fb-44d5-8bab-208007ee0a57",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C41",
+      "claim": "After 15 million time steps, both FCC and HCP arrangements are present within the same mEC population.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 5 we show the distribution of the two scores, again taken after a long learning time (15 million time steps), for units all belonging to the same mEC population. The values of the two scores indicate the presence of both arrangements in the system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "ce959c61-27e3-4086-82af-b2b23c6207b9",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C42",
+      "claim": "Unit scores cover an entire continuum between pure FCC and pure HCP arrangements, expressing all intermediate arrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "If we look at the scores for each unit at a given time (Figure 5, left), we indeed find that these are not clustered in two groups, each one expressing a homogeneous HCP or FCC arrangement, but instead they cover an entire continuum of scores between the two extremes, expressing all intermediate arrangements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "ebcab074-18c9-40a1-bc68-cf5a162889fc",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C43",
+      "claim": "The results point to a high degree of independence of each unit.",
+      "claim_type": "EXPLICIT",
+      "source": "This result points to a high degree of independence of each unit",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the distribution of scores shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "1c941774-61bb-463c-a86a-b435cee97695",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C44",
+      "claim": "The system shows a rather weak preference for either FCC or HCP regular configurations of fields.",
+      "claim_type": "EXPLICIT",
+      "source": "and at the same time to a rather weak preference of the system for either of the regular configurations of fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the distribution of scores shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "78cb4c8e-86ca-48e8-b5b1-ae1e35ed123f",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C45",
+      "claim": "The analytical calculations show a substantial equivalence of FCC and HCP ordering.",
+      "claim_type": "EXPLICIT",
+      "source": "Analytical results show a substantial equivalence of FCC and HCP ordering",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the results of the analytical model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "2a3308df-1aea-495b-8123-64afc294c179",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C46",
+      "claim": "The discrepancy between observed configurations and symmetric solutions is due to small deviations of the relative phases between fields of different layers from the optimal ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrepancy between the configurations observed and the symmetric solutions, however, is not due to the emergence of mixtures of the two (like for example in a ABABCAB ordering of the layers), but rather to small deviations of the relative phases between fields of different layers from the optimal ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from analysis of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "116a4438-5dc7-48e9-b50e-6241fa9d3ab9",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C47",
+      "claim": "The mean angle among neighboring fields is close to \u03c0/3 from the very beginning of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean angle among neighboring fields (calculated over all the triplets of all the cells of a simulated population) is close to \u03c0/3 from the very beginning of learning and the real effect of continuing exploration is the reduction of the variability over the course of about 4 million time steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "a3b7e4e8-901b-47d5-8774-1550f3d70afc",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C48",
+      "claim": "The variability in the mean angle among neighboring fields is reduced over the course of about 4 million time steps.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean angle among neighboring fields (calculated over all the triplets of all the cells of a simulated population) is close to \u03c0/3 from the very beginning of learning and the real effect of continuing exploration is the reduction of the variability over the course of about 4 million time steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "83722468-e685-494c-9c12-a95c1602f7c7",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C49",
+      "claim": "The mean spacing of the grids stabilizes after around 3-4 million time steps.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar behavior is observed when plotting the value of the mean spacing of the grids in time (calculated from the unit autocorrelograms) (Figure 6, right: blue line). Also in this case, after a short transient the value stabilizes after around 3\u20134 million time steps.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "bb2dd268-df34-4ff2-9c70-72ab8c3b6285",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C50",
+      "claim": "The model parameters lead to a spacing of 0.55 \u00d7 L.",
+      "claim_type": "EXPLICIT",
+      "source": "Our choice of model parameters (and specifically of the adaptation parameter) leads to a spacing of 0.55 \u00d7 L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a result from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "dc3d9712-e364-45ad-8532-426d7ca50062",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C51",
+      "claim": "Removing collateral connections appears to have no effect on the time course of grid spacing development.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases we see that the time course of the development of a common grid spacing is not affected by the modifications of the standard model. Stabilization is obtained in the same time interval and while removing collateral connections appears to have absolutely no effect",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "f65d2a8e-89d2-47cd-b7d1-419a7784d14a",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C52",
+      "claim": "Variability in the adaptation parameter results in a slightly different final value of the spacing (0.5 \u00d7 L).",
+      "claim_type": "EXPLICIT",
+      "source": "the variability in the adaptation parameter results in a slightly different final value of the spacing (0.5 \u00d7 L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "151ac046-ed15-4c98-926e-fc92b64f353a",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C53",
+      "claim": "The three-dimensional grid develops from the same ingredients as its lower dimensional equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the three-dimensional grid develops from the same ingredients of its lower dimensional equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "11747538-b956-4f71-aa79-9e7f01e0ccb5",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C54",
+      "claim": "Mean spacing and mean angle are quickly fixed over the entire network almost simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean spacing and mean angle are quickly fixed over the entire network almost simultaneously and are the first recognizable signs of the emergence of an ordered structure from the initial random distribution of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "dd737ad4-064e-4083-9a8b-d47fadd12fe1",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C55",
+      "claim": "The presence of an additional dimension does not affect the way in which fields are initially brought by adaptation to homogeneously and regularly cover the entire space.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of an additional dimension does not affect the way in which fields are initially brought by adaptation to homogeneously and regularly cover the entire space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from comparing 2D and 3D simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "46cd8944-efa6-45a8-a214-9bf4ef39a523",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C56",
+      "claim": "After roughly 4 million time steps, the system is already arranged in a stable ordered manner with equilateral triangles among neighboring fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the average across units of this index, which reflects the decrease of the variance in the angles between triplets, already observed in Figure 6, we see again (Figure 7, top left), that after roughly 4 million time steps the system is already arranged in a stable ordered manner, with equilateral triangles among neighboring fields that dominate the activity pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "4efaa7aa-d1ba-4ce4-ab5f-59337bdaa287",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C57",
+      "claim": "The ordering of equilateral triangles can be generated by the system independently of higher order symmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "This ordering can be generated by the system independently of higher order symmetries, and it provides a first step for further arranging fields in more articulated structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "fe6c366d-622f-4906-baef-457fac8e151f",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C58",
+      "claim": "The hexagonal pattern score steadily rises to reach a value of about 0.85 after 6 million time steps and then remains stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7 (top right) we plot the time evolution of the average over the population of this score. Starting from very low values, indicative of a still unorganized ensemble of fields, the score steadily rises to reach a value of about 0.85 (out of a maximum of 1) after 6 million time steps and then remains stable over the rest of the simulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "c465a356-9bd8-4364-a195-a8c7aa20153e",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C59",
+      "claim": "Collateral interaction tends to align in time the principal layer of different cells, defining a preferred orientation for the global structure of the grid.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed see that collateral interaction tends to align in time the principal layer of different cells, defining a preferred orientation for the global structure of the grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "6a9ee142-931d-4917-a7cc-21a40ca68bd0",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C60",
+      "claim": "The emergence of the common alignment of the layers takes about 12 million time steps of exploration time.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of the common alignment of the layers is slower than the formation of the layers themselves. It takes about 12 million time steps of exploration time to significantly reduce the dispersion of the angles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "d096877e-ac78-4842-a580-03e34b9bf73e",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C61",
+      "claim": "After 30 million time steps, both FCC and HCP scores are still close to 0.5, reflecting the presence in the population of a large distribution of values.",
+      "claim_type": "EXPLICIT",
+      "source": "Their values are almost unchanged over the duration of the simulations and after 30 million time steps, a time largely exceeding that necessary for the other quantities to converge, both of them are still close to 0.5, which reflects the presence in the population of a large distribution of values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "250840b5-04f3-4e8f-a8c3-7d107bcf3008",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C62",
+      "claim": "The simulations distinguish a hierarchy in the time course leading to the formation of three-dimensional grids.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations are able to distinguish a hierarchy in the time course leading to the formation of three-dimensional grids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "f662b082-78ab-4d36-85d2-aa8ec063c94c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C63",
+      "claim": "Different levels of complexity appear in the arrangement of fields with different speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Different levels of complexity appear in the arrangement of fields with different speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "a54ed61d-9f04-48d0-9909-57c248365417",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C64",
+      "claim": "Fast converging quantities like the formation of equilateral triangles and layers of fields with hexagonal symmetry appear first.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast converging quantities like the formation of equilateral triangles of fields and successively of layers of fields with hexagonal symmetry appear first, framing the activity of single units in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "9f777f9f-0fe3-487c-945d-4d60e354b4d4",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C65",
+      "claim": "Planes of fields are rotated to align them across the population on a slower time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "These initial structures are then modified on a slower time scale to obtain a global coordination among cells. Planes of fields are rotated to align them across the population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "d84826d4-e325-4db1-be8f-ef5a085e0609",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C66",
+      "claim": "Self-organization does not appear to affect the aspects of network activity related to perfect FCC or HCP tiling even after a very extended period of time.",
+      "claim_type": "EXPLICIT",
+      "source": "If we exclude the very initial phase of network dynamics, self-organization does not appear to affect these aspects of network activity that therefore remain loosely determined even after a very extended period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "96e43a5e-e73d-4ce7-bb7a-1dcb0e0dbf67",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C67",
+      "claim": "The emergence of equilateral triangles in 3D requires roughly a factor 2 more time than in 2D.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of equilateral triangles in 3D appears to require roughly a factor 2 more time than in 2D (Si et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with previous 2D simulation results cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "c7af37f2-1d00-4afb-8989-5becf321e70b",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C68",
+      "claim": "The time for self-organization lengthens only a little, and clearly sublinearly, with the volume flown by the virtual bat.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, however, we find that the time for self-organization lengthens only a little, and clearly sublinearly, with the volume flown by the virtual bat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from simulation results shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "7cf17eb9-f1d3-423d-99b0-82c45d8ec542",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C69",
+      "claim": "The population-averaged data points for both kinetic and adaptation terms can be well fit by a sum of two exponentials plus a constant.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the population-averaged data points for both terms can be well fit by a sum of two exponentials, plus a constant (Figure 8, inset)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data fitting shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "96430acf-e3c3-48eb-bdf1-6e463796240b",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C70",
+      "claim": "The relaxation of the estimated cost function is mainly determined by the most rapid exponential terms and is virtually complete by 3-4 million time steps.",
+      "claim_type": "EXPLICIT",
+      "source": "We can see from Figure 8 that the relaxation of this estimated cost function is mainly determined by the most rapid exponential terms, and is virtually complete by 3\u20134 million time steps, with a limited volume dependence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "9c0474a9-5e80-4308-922c-824be0d4a900",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C71",
+      "claim": "The time evolution of the cost function measure for volumes of different size appears to be quite similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, apart from the slight prolongation of the initial transient, the time evolution of our measure for volumes of different size appears to be quite similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "ed960f7b-3a16-4bbe-892a-6469168d32de",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C72",
+      "claim": "The time required for grid development depends only weakly on the number of fields that have to be arranged in the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the time required for the complex dynamics of grid development depends only weakly on the number of fields that have to be arranged in a orderly manner in the volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the volume-dependence analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "e4da6a0e-8e15-4f04-80c1-d57c4286dd10",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C73",
+      "claim": "The initial relaxation occurs in a time that increases sublinearly with system size.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial relaxation, which accomplishes most of the rearrangement and probably centers on adjusting the angles between triplets of fields (cp. Figure 7, top left and Figure 8), occurs in a time that increases sublinearly with system size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a conclusion drawn from the volume-dependence analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "aa3efb4a-3c4e-4cb8-b775-cae174002262",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C74",
+      "claim": "With time steps of \u0394t = 10 ms and bat velocity of v = 1 m/s, the small environment corresponds to a cubic room of size L = 2.5 m.",
+      "claim_type": "EXPLICIT",
+      "source": "If we take time steps of size \u0394t = 10 ms and an average bat velocity of v = 1 m/s, the small environment used in most of our simulations will correspond to a cubic room of size L = 2.5 m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim specifies parameter values used to relate simulation results to real-world scales.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "4a186ed0-5578-4edf-90b3-3fd1e6307b71",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C75",
+      "claim": "With the specified parameters, grids are formed with a field spacing of approximately 1.4 m.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, with this choice of parameters, grids are formed with a field spacing of 2.5 m \u00d7 0.55 \u2248 1.4 m",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a calculation based on simulation results and specified parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "f792d08d-d2d4-4418-a123-983ec3cdfed0",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C77",
+      "claim": "1 million simulation time steps correspond to nearly 3 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The time scale of grid formation can be calculated considering that 1 million simulation time steps correspond to 10,000 s or nearly 3 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a calculation based on specified parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "d9642933-0b2a-4f86-ac5a-4e76ebc1f8a2",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C78",
+      "claim": "The model predicts the presence of triplets of fields forming roughly equilateral triangles in approximately 10-12 hours of continuous flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model then predicts, in an environment the size of ours, the presence of (i) triplets of fields forming roughly equilateral triangles in \u224810\u201312 hr of continuous flight",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on simulation results and specified parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "7afcf066-5c7b-41c5-bc3c-226ba129076c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C79",
+      "claim": "The model predicts hexagons in approximately 15-18 hours of continuous flight.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) hexagons in \u224815\u201318 hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on simulation results and specified parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "d81da215-4b04-43d2-917c-8259dcb5366b",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C80",
+      "claim": "The model predicts different units achieve a common orientation after approximately 30-35 hours of continuous flight.",
+      "claim_type": "EXPLICIT",
+      "source": "and finally (iii) different units that achieve a common orientation after \u224830\u201335 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a prediction based on simulation results and specified parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "9c3769cc-0fe5-419b-b082-6856cf5cae81",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C81",
+      "claim": "These time scales do not seem very different from those predicted by the same model for the development of grids in a two-dimensional environment of similar linear size.",
+      "claim_type": "EXPLICIT",
+      "source": "These time scales do not seem very different from those predicted by the same model for the development of grids in a two-dimensional environment of similar linear size (relative to the grid spacing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a comparison with previous 2D model results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "6cb34d35-b6d0-4e1a-8fea-99ea1a0ad890",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C82",
+      "claim": "The 2D model indicates a time scale of about 5-6 hours for the development of gridness.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6 in Si et al. (2012) indicates a time scale of about 20,000 s, or 5\u20136 hr, for the development of gridness in 2D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "6b00b8ea-ae01-4bb0-8766-ac424ad7db8c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C83",
+      "claim": "The moderate increase in grid formation time might make it comparable to the flight time available for spatial learning during bat experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, this moderate increase in grid formation time might make it comparable to the flight time available for spatial learning during bat experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the implications of the model predictions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "fe5b7b35-edd0-4a3e-a6e0-b6c38e63f4df",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C84",
+      "claim": "The weak, sub-linear dependence of time scales with volume may be sufficient to determine a switch between the possibility of forming regular structures and leaving them beyond reach.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, even the weak, sub-linear dependence of time scales with volume, that we do observe, may be sufficient to determine a switch between the possibility of forming regular structures and leaving them beyond reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the implications of the model results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "b552caa4-7736-4840-aa68-9f50b8659f11",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C85",
+      "claim": "The total simulation time would correspond to a maximum of approximately 80-90 hours of continuous bat flight in the (2.5 m)\u00b3 volume.",
+      "claim_type": "EXPLICIT",
+      "source": "The total simulation time would correspond to a maximum of \u224880\u201390 hr of continuous bat flight in the (2.5 m)3 volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a calculation based on simulation duration and specified parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "bcf8904b-3990-4976-977f-dbdc2bb5665f",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C86",
+      "claim": "80-90 hours is just a lower bound for the time necessary to form a regular tiling of the environment, and likely a loose one.",
+      "claim_type": "EXPLICIT",
+      "source": "This time is just a lower bound for the time necessary to form a regular tiling of the environment, and likely a loose one, as our simulations do not seem to be converging towards one of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "d19b206f-04b6-4ffc-aad1-3217658e2146",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C87",
+      "claim": "Bats may form a partially regular 3D tiling of the environment at most once, and then possibly only if constrained to fly for a prolonged time in a rather small cage.",
+      "claim_type": "EXPLICIT",
+      "source": "These considerations suggest that bats may form a partially regular 3D tiling of the environment at most once, and then possibly only if constrained to fly for a prolonged time in a rather small cage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the model predictions and time scale analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "af41ef5b-f9cd-4327-a692-911ca90b46bd",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C88",
+      "claim": "A completely regular, crystalline tiling of space seems to be hardly in the range of time available to real bats.",
+      "claim_type": "EXPLICIT",
+      "source": "while a completely regular, crystalline tiling of space seems to be hardly in the range of time available to real bats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation based on the model predictions and time scale analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "230f0ff0-c5c3-4bab-a871-269940ffd7f2",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C89",
+      "claim": "The presence of an additional dimension does not seem to preclude the appearance of some orderly arrangement of the fields in mEC units of bats.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the presence of an additional dimension does not seem to preclude the appearance of some orderly arrangement of the fields in mEC units of bats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "7cd2e918-d18a-4a61-86da-5d2c7e56f094",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C90",
+      "claim": "The order in 3D grids might express only a partial set of the full spectrum of potential three-dimensional symmetry properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this order might express only a partial set of the full spectrum of potential three-dimensional symmetry properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "8e9aeeda-423d-4a98-84dd-738673a1fcf4",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C91",
+      "claim": "The partial order might be sufficient to distinguish the activity of these cells from a random multi-peaked pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "It might be still sufficient to distinguish the activity of these cells from a random multi-peaked pattern, but it would place it at a substantial distance from a perfectly regular pattern, too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the implications of the model results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "67a7b12b-da87-46f6-9713-a1faa2e1ba4f",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C92",
+      "claim": "In the model, the distance from perfect symmetry varies across a population of cells, with some showing only small deviations from perfect symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model this distance varies across a population of cells: some of them show only small deviations from perfect symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "49f515c3-59c1-43b9-b6dc-e61ec6f61fa0",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C93",
+      "claim": "The vast majority of simulated grid cells are very far from a perfectly regular arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the vast majority of simulated grid cells are very far from a perfectly regular arrangement",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "fc583c8a-af86-486e-a010-9d9e6b1d7b2c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "claim_id": "C94",
+      "claim": "The bulk of grid-like but imperfect cells can be regarded as a robust aspect of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "the bulk of grid-like but imperfect cells can be regarded as a robust aspect of our model, and might extend to very different situations of 3D grid cell development, possibly including other species experiencing three-dimensional navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculation about the generalizability of the model results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "10345394-be96-4c12-a761-4c39812ead5c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish that 3D space admits multiple optimal sphere packing arrangements, specifically FCC and HCP, which are the only two regular solutions. Both structures consist of hexagonal layers with 12 first neighbors per sphere, differing only in the positioning of three spheres in the unit cell of 13 spheres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C27 describe well-established mathematical properties of sphere packing in 3D space, attributed to Gauss. These are foundational geometric facts that provide the theoretical framework for the model. The claims are supported by established mathematical knowledge and are illustrated in Figure 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analytical minimization of the cost function reveals that FCC and HCP configurations alternate as optimal solutions across different parameter regimes, with no strong dominance of either structure. The hexagonal arrangement and 12 first neighbors common to both structures are the relevant features for cost function evaluation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C45 describe results from analytical calculations shown in Figure 5. The mathematical analysis demonstrates the near-equivalence of FCC and HCP structures in terms of the cost function, with alternating optimality depending on the \u03b3 parameter. The derivations appear mathematically sound and are presented with explicit formulas.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "3b355436-9686-470b-aa08-ab9c70853b57",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulations show that the self-organization process produces units with field arrangements that express a mixture of FCC and HCP symmetries rather than converging to pure regular configurations. Individual units show a continuum of scores between pure FCC and HCP, with discrepancies arising from small deviations in relative phases between field layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C44 and C46 are supported by simulation data shown in Figures 4 and 5. The distribution of FCC and HCP scores across the population demonstrates that units do not cluster into two distinct groups but span a continuum. This is a key finding showing that the model produces imperfect crystalline structures, consistent with the analytical prediction of near-equivalence between FCC and HCP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Local order emerges rapidly in the simulations, with mean angles between neighboring fields stabilizing near \u03c0/3 and mean grid spacing stabilizing at 0.55\u00d7L within 3-4 million time steps. This rapid emergence is independent of collateral connections and only slightly affected by variability in adaptation parameters, indicating that 3D grids develop from the same mechanisms as 2D grids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 are well-supported by simulation data in Figure 6. The time course analysis shows rapid stabilization of local geometric properties, and control simulations (removing collaterals, varying adaptation) demonstrate robustness. The comparison to 2D grid development is appropriately cited and supports the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "d516c9bb-b653-4314-83e0-6f9cf6393114",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The simulations reveal a hierarchical time course for 3D grid formation: equilateral triangles form by ~4 million steps, hexagonal layers by ~6 million steps, and common layer orientation by ~12 million steps. However, perfect FCC or HCP ordering does not emerge even after 30 million steps, with both scores remaining near 0.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C66 describe a clear hierarchy of structural emergence supported by multiple measures shown in Figure 7. The progression from local to global order is well-documented, and the failure to converge to perfect crystalline structures is a robust finding. The time scales are consistently reported across different measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "51d33e42-82ec-46e6-933f-74dbd493ae3d",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Volume-dependence analysis shows that self-organization time scales increase only sublinearly with environment size. The cost function relaxation is dominated by rapid exponential terms and is virtually complete by 3-4 million steps, with limited volume dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 are supported by data in Figure 8 showing cost function evolution across different volumes. The fitting to exponential functions is appropriate and the sublinear scaling is clearly demonstrated. However, the limited range of volumes tested (up to ~2\u00d7 the base volume) and the acknowledged variability in field smoothness suggest some caution in extrapolating to much larger volumes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Translating simulation parameters to real-world scales (\u0394t=10ms, v=1m/s, L=2.5m), the model predicts equilateral triangles form in ~10-12 hours, hexagons in ~15-18 hours, and common orientation in ~30-35 hours of continuous bat flight. These time scales are moderately longer than the 5-6 hours predicted for 2D grid development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C82 involve straightforward calculations translating simulation time steps to real-world time scales using specified parameters. The arithmetic is correct and the comparison to 2D results (C82) is appropriately cited. These predictions are testable and provide concrete experimental predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model predicts that bats may form partially regular 3D grids only if constrained to fly for prolonged periods in small cages, with complete crystalline tiling requiring >80-90 hours and likely being beyond the time available to real bats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C88 are speculative predictions about experimental feasibility. While the time scale calculations (C85) are based on simulation data, the conclusions about what is feasible for real bats involve assumptions about experimental conditions and bat behavior that are not directly tested. The claim that crystalline tiling is 'hardly in range' (C88) is reasonable given the data but remains speculative without experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "67313914-7f8b-448a-a853-fab8ff2c250f",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model concludes that 3D navigation does not preclude orderly field arrangements in bat mEC units, but this order expresses only partial symmetry properties. While some cells may show near-perfect symmetry, the majority exhibit grid-like but imperfect arrangements, which the authors suggest is a robust feature that may extend to other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 represent the main conclusions synthesizing the simulation results. The conclusion that partial order emerges (C89-C90) is well-supported by the data. The prediction about population heterogeneity (C92-C93) is supported by Figure 5. However, the generalization to other species (C94) is speculative, though reasonably grounded in the model's mechanistic basis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "8157d320-cf17-4030-9a0d-694b54433de2",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors present a self-organization model where grid patterns emerge spontaneously through firing rate adaptation and synaptic plasticity, without requiring engineered mechanisms. The model can account for environmental geometry effects and has previously been shown to produce pentagonal grids on spherical surfaces and heptagonal grids on hyperbolic surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 describe the conceptual framework and prior validation of the model. Claims C12-C13 are supported by citation to previous work (Urdapilleta et al., 2015). The model description (C8-C11) is consistent with the detailed methods presented and represents a coherent theoretical framework, though the claim about 'no engineering required' (C8) is somewhat philosophical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "75282488-bcd8-4d9c-a298-02928c7201ff",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model architecture consists of 123 input units (representing CA1 place cells) and 125 output units (mEC grid cells). Place field centers are homogeneously distributed, and the model assumes place cells develop before grid cells. The properties of developing grid fields depend on adaptation time scale rather than place field size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 describe model parameters and assumptions. The network sizes (C14-C15) are clearly specified. The assumption about place cell development (C16) is supported by appropriate citations. The claim about parameter sensitivity (C18-C19) is supported by citation and by the control simulations shown in Figure 6.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    },
+    {
+      "id": "c887f0ef-e0e1-4580-b078-7333297408fa",
+      "content_id": "1178966b-4c4a-4031-a33a-289745a59d46",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors review prior work showing similarity in spatial representations between rodents and bats, the generalization of place and head direction cells to 3D, and identify open questions about 3D grid cell structure and the mechanisms for extending periodic patterns from surfaces to volumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 summarize the state of the field based on multiple citations. These are appropriately characterized as prior work and open questions. The citations appear relevant and the characterization of what is known versus unknown is reasonable, though the actual content of the cited papers cannot be verified from this manuscript alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:37.927960Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b53c9de-a5ed-4050-a710-9adc410beffe",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "511c82f0-b6a4-4ed1-98aa-df540a83b02b",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "6030c9f2-32f5-4274-91e3-e93b7c73062b",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "c2ff2196-df3f-4e61-96d9-a0d280cd187a",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "6c3b2273-3322-4a8c-a1a5-613cfd6ea0bb",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "52e6e7b3-d2e1-4247-84d8-c864c3937548",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "338ca8ac-0996-4e71-b12f-dfeec6493e5e",
+      "result_id": "10345394-be96-4c12-a761-4c39812ead5c"
+    },
+    {
+      "claim_id": "5088fafe-975a-47c7-8191-283fdebf273c",
+      "result_id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd"
+    },
+    {
+      "claim_id": "a42200c3-7516-4f6e-b2dd-c0b6eff78002",
+      "result_id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd"
+    },
+    {
+      "claim_id": "60efaf61-e735-44c0-b375-b8622ce5b150",
+      "result_id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd"
+    },
+    {
+      "claim_id": "8267a94b-1fbb-463f-9d1a-7272aec22393",
+      "result_id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd"
+    },
+    {
+      "claim_id": "f9b56e68-df6f-4632-a898-e78eb36e3655",
+      "result_id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd"
+    },
+    {
+      "claim_id": "78cb4c8e-86ca-48e8-b5b1-ae1e35ed123f",
+      "result_id": "109078fb-57c2-4a78-bd07-a67e39f4cbcd"
+    },
+    {
+      "claim_id": "3b0893ba-e070-4321-932c-a5b2b7974a85",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "a5fd340e-f5da-4961-b8df-2ca3183324ef",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "ed693722-6d90-456f-9df9-d54093ada0b0",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "835273f3-6c3a-4f0e-8060-7502f76ef9e8",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "58eb3469-87bf-432c-9d45-92d5682cb4e2",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "dbc860e7-6ca8-44a6-ae92-c8fd306bc589",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "2ab27fe2-d70b-4cab-8f94-20aaea5fcbe7",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "10ac1de2-f15e-4059-b5c4-794ec6863ef2",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "956ea77e-91fb-44d5-8bab-208007ee0a57",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "ce959c61-27e3-4086-82af-b2b23c6207b9",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "ebcab074-18c9-40a1-bc68-cf5a162889fc",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "1c941774-61bb-463c-a86a-b435cee97695",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "2a3308df-1aea-495b-8123-64afc294c179",
+      "result_id": "3b355436-9686-470b-aa08-ab9c70853b57"
+    },
+    {
+      "claim_id": "116a4438-5dc7-48e9-b50e-6241fa9d3ab9",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "a3b7e4e8-901b-47d5-8774-1550f3d70afc",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "83722468-e685-494c-9c12-a95c1602f7c7",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "bb2dd268-df34-4ff2-9c70-72ab8c3b6285",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "dc3d9712-e364-45ad-8532-426d7ca50062",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "f65d2a8e-89d2-47cd-b7d1-419a7784d14a",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "151ac046-ed15-4c98-926e-fc92b64f353a",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "11747538-b956-4f71-aa79-9e7f01e0ccb5",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "dd737ad4-064e-4083-9a8b-d47fadd12fe1",
+      "result_id": "1e090fb4-b7fc-4c1f-82b3-7ea2a8b30514"
+    },
+    {
+      "claim_id": "46cd8944-efa6-45a8-a214-9bf4ef39a523",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "4efaa7aa-d1ba-4ce4-ab5f-59337bdaa287",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "fe6c366d-622f-4906-baef-457fac8e151f",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "c465a356-9bd8-4364-a195-a8c7aa20153e",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "6a9ee142-931d-4917-a7cc-21a40ca68bd0",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "d096877e-ac78-4842-a580-03e34b9bf73e",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "250840b5-04f3-4e8f-a8c3-7d107bcf3008",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "f662b082-78ab-4d36-85d2-aa8ec063c94c",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "a54ed61d-9f04-48d0-9909-57c248365417",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "9f777f9f-0fe3-487c-945d-4d60e354b4d4",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "d84826d4-e325-4db1-be8f-ef5a085e0609",
+      "result_id": "d516c9bb-b653-4314-83e0-6f9cf6393114"
+    },
+    {
+      "claim_id": "96e43a5e-e73d-4ce7-bb7a-1dcb0e0dbf67",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "c7af37f2-1d00-4afb-8989-5becf321e70b",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "7cf17eb9-f1d3-423d-99b0-82c45d8ec542",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "96430acf-e3c3-48eb-bdf1-6e463796240b",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "9c0474a9-5e80-4308-922c-824be0d4a900",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "ed960f7b-3a16-4bbe-892a-6469168d32de",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "e4da6a0e-8e15-4f04-80c1-d57c4286dd10",
+      "result_id": "51d33e42-82ec-46e6-933f-74dbd493ae3d"
+    },
+    {
+      "claim_id": "aa3efb4a-3c4e-4cb8-b775-cae174002262",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "4a186ed0-5578-4edf-90b3-3fd1e6307b71",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "f792d08d-d2d4-4418-a123-983ec3cdfed0",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "d9642933-0b2a-4f86-ac5a-4e76ebc1f8a2",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "7afcf066-5c7b-41c5-bc3c-226ba129076c",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "d81da215-4b04-43d2-917c-8259dcb5366b",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "9c3769cc-0fe5-419b-b082-6856cf5cae81",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "6cb34d35-b6d0-4e1a-8fea-99ea1a0ad890",
+      "result_id": "25a32494-1b94-455b-bc31-7aaea7bf0dd3"
+    },
+    {
+      "claim_id": "6b00b8ea-ae01-4bb0-8766-ac424ad7db8c",
+      "result_id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c"
+    },
+    {
+      "claim_id": "fe5b7b35-edd0-4a3e-a6e0-b6c38e63f4df",
+      "result_id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c"
+    },
+    {
+      "claim_id": "b552caa4-7736-4840-aa68-9f50b8659f11",
+      "result_id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c"
+    },
+    {
+      "claim_id": "bcf8904b-3990-4976-977f-dbdc2bb5665f",
+      "result_id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c"
+    },
+    {
+      "claim_id": "d19b206f-04b6-4ffc-aad1-3217658e2146",
+      "result_id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c"
+    },
+    {
+      "claim_id": "af41ef5b-f9cd-4327-a692-911ca90b46bd",
+      "result_id": "b4337d01-c7a9-4488-b08e-9c0b5ea2668c"
+    },
+    {
+      "claim_id": "230f0ff0-c5c3-4bab-a871-269940ffd7f2",
+      "result_id": "67313914-7f8b-448a-a853-fab8ff2c250f"
+    },
+    {
+      "claim_id": "7cd2e918-d18a-4a61-86da-5d2c7e56f094",
+      "result_id": "67313914-7f8b-448a-a853-fab8ff2c250f"
+    },
+    {
+      "claim_id": "8e9aeeda-423d-4a98-84dd-738673a1fcf4",
+      "result_id": "67313914-7f8b-448a-a853-fab8ff2c250f"
+    },
+    {
+      "claim_id": "67a7b12b-da87-46f6-9713-a1faa2e1ba4f",
+      "result_id": "67313914-7f8b-448a-a853-fab8ff2c250f"
+    },
+    {
+      "claim_id": "49f515c3-59c1-43b9-b6dc-e61ec6f61fa0",
+      "result_id": "67313914-7f8b-448a-a853-fab8ff2c250f"
+    },
+    {
+      "claim_id": "fc583c8a-af86-486e-a010-9d9e6b1d7b2c",
+      "result_id": "67313914-7f8b-448a-a853-fab8ff2c250f"
+    },
+    {
+      "claim_id": "be9cfc70-61be-4392-ae29-b6125b9a37c0",
+      "result_id": "8157d320-cf17-4030-9a0d-694b54433de2"
+    },
+    {
+      "claim_id": "6e98c045-ee96-4e67-aeb0-09eb740cbdc0",
+      "result_id": "8157d320-cf17-4030-9a0d-694b54433de2"
+    },
+    {
+      "claim_id": "1febf75b-6ae4-4a19-868f-abbf519f3de9",
+      "result_id": "8157d320-cf17-4030-9a0d-694b54433de2"
+    },
+    {
+      "claim_id": "7fa43ca9-4f45-4ba0-9752-0ff147321a29",
+      "result_id": "8157d320-cf17-4030-9a0d-694b54433de2"
+    },
+    {
+      "claim_id": "07469ed4-fc81-450c-af4f-805c52c77dac",
+      "result_id": "8157d320-cf17-4030-9a0d-694b54433de2"
+    },
+    {
+      "claim_id": "e383e68d-a93d-4713-ac27-f5049a267d88",
+      "result_id": "8157d320-cf17-4030-9a0d-694b54433de2"
+    },
+    {
+      "claim_id": "58be105d-9e19-4296-81c8-a68419c16675",
+      "result_id": "75282488-bcd8-4d9c-a298-02928c7201ff"
+    },
+    {
+      "claim_id": "f0afbd93-630b-405a-a8ed-162786599558",
+      "result_id": "75282488-bcd8-4d9c-a298-02928c7201ff"
+    },
+    {
+      "claim_id": "2422573a-5ecd-448e-8be2-ff833ef8af5d",
+      "result_id": "75282488-bcd8-4d9c-a298-02928c7201ff"
+    },
+    {
+      "claim_id": "b4e46b34-b055-47d7-a70a-02db521c0ad4",
+      "result_id": "75282488-bcd8-4d9c-a298-02928c7201ff"
+    },
+    {
+      "claim_id": "5d394f10-43c1-4758-a2b5-a3df3dd4df62",
+      "result_id": "75282488-bcd8-4d9c-a298-02928c7201ff"
+    },
+    {
+      "claim_id": "772c05ee-dea7-4c19-9d00-d8a41da4f7f5",
+      "result_id": "75282488-bcd8-4d9c-a298-02928c7201ff"
+    },
+    {
+      "claim_id": "7f22cbc4-6ba3-43da-b2e4-22e75a3ab3d9",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    },
+    {
+      "claim_id": "dd7b8327-3251-4429-a4e9-261b4e894813",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    },
+    {
+      "claim_id": "2730564a-9a01-4574-88db-c80aec3743ea",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    },
+    {
+      "claim_id": "761c8ec2-675f-423e-a027-3acb17b5a90b",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    },
+    {
+      "claim_id": "29c9e1ac-f189-4fbd-91f3-609bc9844947",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    },
+    {
+      "claim_id": "f66e348b-87f6-43c2-9ade-cdb2b7c5d2ec",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    },
+    {
+      "claim_id": "c096c69d-122e-4aaa-9781-dcf8c08b2558",
+      "result_id": "c887f0ef-e0e1-4580-b078-7333297408fa"
+    }
+  ],
+  "comparisons": []
+}

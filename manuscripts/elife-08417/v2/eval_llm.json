@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Behavioral discrimination threshold for image orientation gradually decreases during rapid learning within a single session. Both monkeys showed significant improvement (M1: p=1.42\u00d710\u207b\u2075, M2: p=0.028), with the largest improvement between blocks 1 and 2, followed by performance saturation. The threshold decreased from 18.9\u00b0 to 4.5\u00b0 (76.2% decrease) on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from two animals with appropriate statistical tests (ANOVA with post hoc comparisons). The behavioral learning effect is well-documented with specific quantitative measures and consistent patterns across subjects. Sample sizes are adequate (31 and 17 sessions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Population-level neuronal firing rates and discrimination performance (d') did not change significantly during learning (p>0.9 for firing rate, p>0.1 for d'). At the individual cell level, 15.4% of cells increased firing rates while 17.3% decreased (p<0.05), showing bidirectional changes that cancel at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 demonstrate that traditional single-neuron measures do not explain behavioral improvement during learning. The statistical tests are appropriate (ANOVA), sample size is adequate (n=105 sites), and the bidirectional changes in individual cells explain the null population effect. This supports the authors' hypothesis that population-level coordination, not firing rate changes, underlies learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "LFP power and event-related potentials (ERPs) did not change significantly across learning blocks in any frequency band (LFP power: p>0.15; ERPs for target: p=0.66, test: p=0.59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by appropriate statistical tests (ANOVA and Kruskal-Wallis). These null results are important controls showing that raw LFP power and ERPs do not track learning, setting up the contrast with spike-field coherence changes. The multiple testing across frequency bands is appropriately conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Rapid learning is associated with increased spike-field coherence (SFC) specifically in the theta band (4-8 Hz) during stimulus presentation intervals, while higher frequency bands (alpha, beta, gamma) showed no change or slight decreases. Theta SFC increased significantly (p<10\u207b\u2077, n=625 pairs) with a median increase of 34%, and this effect was consistent across both animals (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 provide the core finding with robust statistical support across multiple analyses (Wilcoxon signed-rank test, Kruskal-Wallis test, t-test). The large sample size (625 pairs), consistency across animals, and frequency-specific effects strengthen the conclusion. The temporal specificity (during stimulus presentation) and quantitative magnitude (34% increase) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The increase in theta SFC during learning was observed for both same-electrode and different-electrode spike-LFP pairs, and did not depend on the distance between electrodes (p<10\u207b\u00b9\u00b9 for both near <2mm and far >2mm pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 address important spatial specificity controls. The statistical tests are appropriate and highly significant. However, the finding that distance doesn't matter is somewhat surprising given that LFPs are thought to reflect local activity within ~2mm. This could suggest a more widespread synchronization mechanism, but the authors don't fully explore this unexpected result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Trial-by-trial analysis using a sliding window approach revealed that both theta spike-LFP coherence and behavioral discrimination threshold change gradually across trials, with matching time courses during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide important temporal resolution showing gradual rather than abrupt changes. The sliding window analysis (64 trials in 10-trial steps) is methodologically sound and addresses whether the block-based analysis might have obscured finer temporal dynamics. This strengthens the link between neural and behavioral changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "SFC during the delay period (between target and test stimuli) did not change significantly across learning blocks (p>0.05 for all delay intervals), suggesting that changes in working memory load do not explain the behavioral improvement during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide an important control ruling out working memory load as an alternative explanation. The statistical test is appropriate (Wilcoxon signed-rank test) and the delay period analysis is well-designed. However, the inference in C27 assumes that working memory load changes would necessarily manifest as SFC changes during the delay, which may not be the only possibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Changes in theta SFC during learning are independent of changes in neuronal firing rates. There was no correlation between firing rate changes and theta SFC (r=0.0178, p=0.5711), and z-scored coherence analysis confirmed theta SFC remained significantly elevated (p<0.05) while controlling for firing rate bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 address a critical methodological concern about whether SFC changes simply reflect firing rate changes. The correlation analysis and z-score normalization provide converging evidence. The statistical tests are appropriate and the conclusion is well-supported. This strengthens the interpretation that synchronization, not firing rate, is the key change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Theta SFC increase is most prominent in block 2 when learning rate is highest, followed by decreases in blocks 3 and 4 when behavioral performance stabilizes (p<0.05 for block 3 vs 2; p<0.001 for block 4 vs 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 reveals an important temporal pattern where theta SFC tracks learning rate rather than absolute performance level. The post hoc tests are appropriately applied and statistically significant. This suggests theta synchronization may be specifically related to plasticity during active learning rather than maintenance of learned performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Control experiments with familiar images, 'no learning' sessions, and passive fixation showed no significant changes in SFC across blocks in any frequency band (all p>0.05), demonstrating that theta SFC increases are specific to active learning of novel stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide critical controls demonstrating specificity of the theta SFC effect to learning. The familiar image control (n=23 sessions), no learning control (n=96 pairs), and passive fixation control (n=12 sessions, 741 pairs) are well-designed. Statistical tests are appropriate. These controls rule out stimulus novelty alone, task engagement, and passive exposure as explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The coordination of spike timing with local theta LFP activity only occurs during active learning when animals improve performance, and does not continue with familiar stimuli after learning stabilizes or in conditions without learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 synthesize the control experiments into a clear conclusion about the specificity of theta synchronization to learning. The inference is well-supported by the data from C34-C38. This is a key conclusion distinguishing learning-related plasticity from other factors like attention, novelty, or task engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Session-by-session changes in behavioral discrimination threshold are significantly correlated with changes in theta SFC (r=-0.49, p<0.01), but not with SFC in higher frequency bands (alpha: p=0.42, beta: p=0.94, gamma: p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 establish a direct link between neural and behavioral measures at the session level. The correlation is moderate (r=-0.49) and statistically significant. The frequency-specificity strengthens the conclusion. However, correlation does not establish causation, and the moderate correlation suggests other factors also contribute to behavioral improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Attention/alertness-related measures (firing rate, sensitivity, gamma LFP power, gamma spike-LFP synchrony) and eye movement parameters did not change significantly across learning blocks (p>0.1), ruling out gradual changes in behavioral context as explanations for increased theta coherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide important controls ruling out attention and eye movement confounds. The statistical tests are appropriate and the null results are informative. However, the inference assumes that attention/alertness would necessarily manifest in these specific measures, which may not capture all aspects of attentional state. The eye movement analysis is limited to saccade amplitude and frequency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Performance in match trials (bar release responses) did not significantly deteriorate across blocks (p>0.1), ruling out a strategy change where monkeys simply hold the lever throughout the session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 addresses an important alternative explanation for behavioral improvement. The control is well-designed and the statistical test is appropriate. This confirms that monkeys were genuinely learning the discrimination task rather than adopting a simpler response strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "After 150 trials of passive exposure to images followed by the discrimination task, behavioral improvement still occurred (p<0.01), indicating that passive exposure alone does not eliminate the learning effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 addresses whether initial poor performance might be due to distraction by stimulus novelty. The control experiment is well-designed with appropriate statistics. This confirms that the learning effect is not simply due to habituation to novel stimuli, but requires active task engagement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The main findings demonstrate that increased behavioral discrimination performance during learning is associated with tight coordination of spike timing with local population activity, specifically in the theta band. This spike-LFP theta synchronization only characterized learning of novel stimuli and was absent for familiar stimuli or without learning, indicating that plasticity in visual cortex during learning is accompanied by elevated low-frequency synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 synthesize the major findings into coherent conclusions. These summary claims are well-supported by the extensive data presented in earlier claims. The conclusions appropriately distinguish between what was observed (theta synchronization during learning) and what is inferred (relationship to plasticity). The frequency-specificity and condition-specificity strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "It is possible that behavioral improvement over longer timescales (e.g., weeks) may be accompanied by similar changes in spike-LFP theta synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is explicitly speculative and extends beyond the data. The authors appropriately qualify this as a possibility. While plausible based on the rapid learning results, this would require additional experiments over longer timescales to test. The claim is appropriately presented as speculation rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Theta oscillations in areas outside V4 may modulate excitability in areas projecting to and receiving information from V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is speculative and proposes a mechanism not directly tested in the study. While plausible, the authors did not record from areas outside V4 or test inter-areal interactions. This is appropriately presented as a possible mechanism in the Discussion, but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The correlation between theta phase-locking accuracy and behavioral performance suggests a relationship between synaptic plasticity in downstream areas and efficient information flow in visual cortex to facilitate learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 makes a mechanistic inference about synaptic plasticity and information flow based on the correlation between theta SFC and behavior. While the correlation is established (C41), the mechanistic interpretation about downstream plasticity and information flow is speculative. The study did not directly measure synaptic plasticity or information flow to downstream areas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript cites extensive prior work on theta oscillations and synaptic plasticity, perceptual learning theories, population coding, V4 function, and spike-field coherence to contextualize the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C84 represent citations to prior work that provide context and theoretical background. These are appropriately used to frame the study and interpret results. The citations appear relevant and accurately represented based on the text. However, without checking the original sources, complete verification of citation accuracy is not possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C89",
+      "C90"
+    ],
+    "result": "The experimental protocol involved monkeys performing at least 800 trials per session (~90 minutes) after achieving >85% accuracy with prototype stimuli over many weeks of practice. All experiments were conducted in accordance with NIH guidelines and approved by the institutional IACUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C89-C90 describe methodological details and ethical compliance. These are straightforward factual statements about the experimental design and regulatory approvals. The training protocol and session structure are clearly described and appropriate for the study goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The SFC analysis focused on the 150-350 ms window after stimulus onset to avoid artifacts from transient spike responses. SFC is independent of firing rates and LFP power due to normalization in its calculation, making it robust to small changes in LFP power across blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 explain important methodological choices and properties of the SFC measure. The rationale for the time window selection is sound (avoiding onset transients). The explanation of SFC normalization is accurate and addresses potential confounds. These methodological details strengthen confidence in the results.",
+    "result_type": "MINOR"
+  }
+]

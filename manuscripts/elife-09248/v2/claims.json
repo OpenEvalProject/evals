@@ -1,0 +1,1716 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "High-resolution structure prediction is currently limited to proteins that have homologs of known structure, or small proteins where thorough sampling of the conformational space is possible (<100 residues).",
+    "claim_type": "EXPLICIT",
+    "source": "Despite substantial efforts over decades, high-resolution structure prediction is currently limited to proteins that have homologs of known structure, or small proteins where thorough sampling of the conformational space is possible (<100 residues; even in this case, predictions can be very inaccurate).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of the field, supported by established scientific knowledge and context.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "For roughly 41% of protein families, there is currently no member with known structure.",
+    "claim_type": "EXPLICIT",
+    "source": "For roughly 41% of protein families, there is currently no member with known structure (Kamisetty et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Kamisetty et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Residue\u2013residue contacts can be accurately inferred from co-evolution patterns in sequences of related proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent work has shown that residue\u2013residue contacts can be accurately inferred from co-evolution patterns in sequences of related proteins (Marks et al., 2011; Morcos et al., 2011; Hopf et al., 2012; Jones et al., 2012; Marks et al., 2012; Nugent and Jones, 2012; Su\u0142kowska et al., 2012; Kamisetty et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "A pseudo-likelihood (PLM)-based approach results in more accurate contact predictions than early approaches that estimated restraints by inverting a covariance matrix.",
+    "claim_type": "EXPLICIT",
+    "source": "While early approaches estimated these restraints by inverting a covariance matrix (Marks et al., 2011; Morcos et al., 2011; Jones et al., 2012), subsequent studies have shown that a pseudo-likelihood (PLM)-based approach (Balakrishnan et al., 2011) results in more accurate predictions (Ekeberg et al., 2013; Kamisetty et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations comparing different approaches.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The prediction for T0806 is 3.6 C\u03b1-RMSD from the crystal structure (2.9 \u00c5 over 223 residues).",
+    "claim_type": "EXPLICIT",
+    "source": "the prediction for the complex 256 residue structure of T0806 is 3.6 C\u03b1-RMSD from the crystal structure (2.9 \u00c5 over 223 residues)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement comparing the predicted structure to the experimentally determined structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The prediction for T0824 is 4.2 C\u03b1-RMSD from the crystal structure (2.7 \u00c5 over 77 residues).",
+    "claim_type": "EXPLICIT",
+    "source": "the prediction for the 108 residue T0824 is 4.2 C\u03b1-RMSD from the crystal structure (2.7 \u00c5 over 77 residues)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement comparing the predicted structure to the experimentally determined structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The predictions for T0806 and T0824 were considerably more accurate than any previous predictions made in the 20 years of CASP experiments for proteins over 100 amino acids that lack homologs of known structure.",
+    "claim_type": "EXPLICIT",
+    "source": "When several months later the actual structures of these proteins were revealed, the predictions were found to be considerably more accurate than any previous predictions made in the 20 years of CASP experiments for proteins over 100 amino acids that lack homologs of known structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative statement based on the CASP experiment results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "With additional sampling, the lowest energy model for T0806 has an RMSD of 2.1 \u00c5 over 245 residues to the experimentally determined structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to time restraints, the calculations could not be run to convergence during CASP; with additional sampling, the lowest energy model for T0806 has an RMSD of 2.1 \u00c5 over 245 residues to the experimentally determined structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a measurement from additional computational experiments performed after CASP.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Both the co-evolution derived contacts and the new iterative hybridization protocol were critical to obtaining higher accuracy models.",
+    "claim_type": "EXPLICIT",
+    "source": "Both the co-evolution derived contacts and the new iterative hybridization protocol were critical to obtaining higher accuracy models: Rosetta calculations without constraints failed to converge (data not shown), and the ROBETTA server models generated without the hybridization step were considerably less accurate (11.6 vs 3.6 C\u03b1-RMSD for T0806 and 14.0 vs 4.2 C\u03b1-RMSD for T0824).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by comparative data showing the performance of different methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "ROBETTA server models generated without the hybridization step had 11.6 C\u03b1-RMSD for T0806 compared to 3.6 C\u03b1-RMSD with the hybridization step.",
+    "claim_type": "EXPLICIT",
+    "source": "the ROBETTA server models generated without the hybridization step were considerably less accurate (11.6 vs 3.6 C\u03b1-RMSD for T0806 and 14.0 vs 4.2 C\u03b1-RMSD for T0824).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct comparison of computational results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "ROBETTA server models generated without the hybridization step had 14.0 C\u03b1-RMSD for T0824 compared to 4.2 C\u03b1-RMSD with the hybridization step.",
+    "claim_type": "EXPLICIT",
+    "source": "the ROBETTA server models generated without the hybridization step were considerably less accurate (11.6 vs 3.6 C\u03b1-RMSD for T0806 and 14.0 vs 4.2 C\u03b1-RMSD for T0824).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct comparison of computational results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Structure models were generated for 58 of the 121 large protein families in prokaryotes for which three-dimensional structures are not available.",
+    "claim_type": "EXPLICIT",
+    "source": "We then describe the use of this method to generate structure models for 58 of the 121 large protein families in prokaryotes for which three-dimensional structures are not available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the results of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The structure models provide structural information for over 400,000 proteins belonging to the 58 families.",
+    "claim_type": "EXPLICIT",
+    "source": "These models, which are posted online for public access, provide structural information for the over 400,000 proteins belonging to the 58 families and suggest hypotheses about mechanism for the subset for which the function is known, and hypotheses about function for the remainder.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on counting the number of proteins in the families for which models were generated.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "At 4L sequences, the top 1.5L contacts are on average 50% correct.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose to focus on families with at least 4\u00d7 (protein length) sequences to ensure that the predicted contacts have high accuracy (Kamisetty et al., 2013; at 4L sequences, the top 1.5L contacts are on average 50% correct).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation and provides a specific accuracy metric.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "100 families satisfying the criteria were identified in Escherichia coli.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 100 families satisfying these criteria in Escherichia coli (Gram-negative, Proteobacteria), and an additional 22, 5, and 4 families in Bacillus subtilis (Gram-positive, Firmicutes bacterium), Halobacterium salinarum (Euryarchaeota), and Sulfolobus solfataricus (Crenarchaeota), respectively (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the computational analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "22 families satisfying the criteria were identified in Bacillus subtilis.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 100 families satisfying these criteria in Escherichia coli (Gram-negative, Proteobacteria), and an additional 22, 5, and 4 families in Bacillus subtilis (Gram-positive, Firmicutes bacterium), Halobacterium salinarum (Euryarchaeota), and Sulfolobus solfataricus (Crenarchaeota), respectively (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the computational analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "5 families satisfying the criteria were identified in Halobacterium salinarum.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 100 families satisfying these criteria in Escherichia coli (Gram-negative, Proteobacteria), and an additional 22, 5, and 4 families in Bacillus subtilis (Gram-positive, Firmicutes bacterium), Halobacterium salinarum (Euryarchaeota), and Sulfolobus solfataricus (Crenarchaeota), respectively (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the computational analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "4 families satisfying the criteria were identified in Sulfolobus solfataricus.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 100 families satisfying these criteria in Escherichia coli (Gram-negative, Proteobacteria), and an additional 22, 5, and 4 families in Bacillus subtilis (Gram-positive, Firmicutes bacterium), Halobacterium salinarum (Euryarchaeota), and Sulfolobus solfataricus (Crenarchaeota), respectively (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the computational analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "For only 4 of the 122 families with HHsearch E-values greater than 1E-04 did one of the top ten hits from HHsearch or SPARKS-X match the predicted contacts (have Rc values greater than 0.6).",
+    "claim_type": "EXPLICIT",
+    "source": "This approach is not very effective for the families identified as described above; for only 4 of the 122 families with HHsearch E-values greater than 1E-04 did one of the top ten hits from HHsearch or SPARKS-X match the predicted contacts (have Rc values greater than 0.6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the computational analysis comparing fold recognition to contact prediction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "For 11 of the 13 transmembrane proteins in the benchmark for which the structure prediction calculations converged, the RMSD of the predicted structure to the experimentally determined structure over the converged and constrained residues was below 4.0 \u00c5.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Table 1, for the 11 of the 13 proteins for which the structure prediction calculations converged, the RMSD of the predicted structure to the experimentally determined structure over the converged and constrained residues was below 4.0 \u00c5 (the RMSDs over the structurally aligned regions were all below 2.8 \u00c5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the benchmark results presented in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The RMSDs over the structurally aligned regions for the 11 converged transmembrane proteins were all below 2.8 \u00c5.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Table 1, for the 11 of the 13 proteins for which the structure prediction calculations converged, the RMSD of the predicted structure to the experimentally determined structure over the converged and constrained residues was below 4.0 \u00c5 (the RMSDs over the structurally aligned regions were all below 2.8 \u00c5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the benchmark results presented in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The calculations converged for 58 of the 121 proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "We built models for representatives of the 121 families with unknown structures using the Rosetta co-evolution-guided structure prediction protocol, eliminating from the lowest energy structures the non-converged and non-constrained residues. The calculations converged for 58 of the 121 proteins (Table 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the computational modeling results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Four targets had Rc values less than 0.7.",
+    "claim_type": "EXPLICIT",
+    "source": "Four targets had Rc values less than 0.7; these targets contain clusters of contacts that may be involved in homo-oligomeric formation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct count from the analysis of the models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Targets with Rc values less than 0.7 contain clusters of contacts that may be involved in homo-oligomeric formation.",
+    "claim_type": "EXPLICIT",
+    "source": "Four targets had Rc values less than 0.7; these targets contain clusters of contacts that may be involved in homo-oligomeric formation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the low Rc values based on the contact patterns observed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "With the exception of five targets with TMscore of 0.5, the structural similarity of the Rosetta models to the top ranked models generated by HHsearch/SPARK-X is very low.",
+    "claim_type": "EXPLICIT",
+    "source": "The models are very different from those generated using traditional profile search and threading methods: with the exception of five targets with TMscore of 0.5 (Table 2, columns 7\u20138), the structural similarity of the Rosetta models to the top ranked models generated by HHsearch/SPARK-X is very low.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural comparison metrics (TMscore) between different modeling approaches.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Cytochrome bd-I ubiquinol oxidase generates a proton-motive force to power the adenosine triphosphate (ATP) synthase when oxygen is limited.",
+    "claim_type": "EXPLICIT",
+    "source": "Cytochrome bd-I ubiquinol oxidase generates a proton-motive force to power the adenosine triphosphate (ATP) synthase when oxygen is limited.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the function of this enzyme.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The enzyme has two integral membrane subunits (CydA and CydB) with three hemes (heme b595, heme b558, and heme d) that mediate transfer of electrons from quinol to oxygen.",
+    "claim_type": "EXPLICIT",
+    "source": "The enzyme has two integral membrane subunits (CydA and CydB) with three hemes (heme b595, heme b558, and heme d) that mediate transfer of electrons from quinol to oxygen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the composition and function of the enzyme.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The models of CydA and CydB share the same fold\u2014a duplicated four helix bundle unit\u2014and form a pseudo symmetric heterodimer.",
+    "claim_type": "EXPLICIT",
+    "source": "The models of CydA and CydB share the same fold\u2014a duplicated four helix bundle unit\u2014and form a pseudo symmetric heterodimer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the predicted structural models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Structure comparisons of CydA and CydB to the PDB revealed nearly full-length structural similarity to polysulfide reductase TM domain (PsrC) (PDB: 2VPX).",
+    "claim_type": "EXPLICIT",
+    "source": "Structure comparisons of CydA and CydB to the PDB revealed nearly full-length structural similarity to polysulfide reductase TM domain (PsrC) (PDB: 2VPX), an enzyme complex responsible for the quinone-mediated reduction of polysulfide, and structure comparisons for the four helix bundle unit revealed strong similarities to cyt b561 (PDB: 4O7G).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural comparison of the predicted models to known structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Structure comparisons for the four helix bundle unit revealed strong similarities to cyt b561 (PDB: 4O7G).",
+    "claim_type": "EXPLICIT",
+    "source": "Structure comparisons of CydA and CydB to the PDB revealed nearly full-length structural similarity to polysulfide reductase TM domain (PsrC) (PDB: 2VPX), an enzyme complex responsible for the quinone-mediated reduction of polysulfide, and structure comparisons for the four helix bundle unit revealed strong similarities to cyt b561 (PDB: 4O7G).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural comparison of the predicted models to known structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "H19 ligates heme b595 in CydA.",
+    "claim_type": "EXPLICIT",
+    "source": "The b595 and b558 heme-binding sites of each CydA four helix bundle have been mapped experimentally by mutagenesis: H19 ligates heme b595, and H186 and M393, heme b558.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on experimental mutagenesis data.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "H186 and M393 ligate heme b558 in CydA.",
+    "claim_type": "EXPLICIT",
+    "source": "The b595 and b558 heme-binding sites of each CydA four helix bundle have been mapped experimentally by mutagenesis: H19 ligates heme b595, and H186 and M393, heme b558.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on experimental mutagenesis data.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "In the CydA model, H19, H186, and M393 are aligned with conserved axial ligands in cyt b561.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, in our model, these residues are aligned with conserved axial ligands in cyt b561 (Figure 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural alignment of the predicted model with a known structure, as shown in Figure 3C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "H126 in CydA is hypothesized to ligate heme d.",
+    "claim_type": "EXPLICIT",
+    "source": "Residues ligating heme d have not yet been identified experimentally, but in our model, a third conserved CydA histidine, H126 structurally aligns to a known heme-binding site near the cytoplasmic surface of cyt b561. We hypothesize that this residue ligates heme d, which has been proposed to be on the periplasmic side (see Figure 3C), a location of heme d near the cytoplasm could explain the proton-motive force generated across the membrane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on structural alignment and reasoning about mechanism.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "A location of heme d near the cytoplasm could explain the proton-motive force generated across the membrane.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesize that this residue ligates heme d, which has been proposed to be on the periplasmic side (see Figure 3C), a location of heme d near the cytoplasm could explain the proton-motive force generated across the membrane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mechanistic hypothesis based on the structural model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "In the CydA model, the quinone-binding residues cluster together.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the heme-ligating residues, mutagenesis studies (Borisov et al., 2011) have identified residues involved in quinone binding and proton flow. In our model of the structure of CydA, the quinone-binding residues (Figure 3B, red spheres) cluster together, and the proton channel residues (Figure 3B, blue spheres) cluster together.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the predicted structural model and comparison with mutagenesis data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "In the CydA model, the proton channel residues cluster together.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the heme-ligating residues, mutagenesis studies (Borisov et al., 2011) have identified residues involved in quinone binding and proton flow. In our model of the structure of CydA, the quinone-binding residues (Figure 3B, red spheres) cluster together, and the proton channel residues (Figure 3B, blue spheres) cluster together.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the predicted structural model and comparison with mutagenesis data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Two additional conserved residues with no known function (R9 and R448) are near the quinone-binding Q loop on the periplasmic surface in the CydA model.",
+    "claim_type": "EXPLICIT",
+    "source": "Two additional conserved residues with no known function (R9 and R448) are near the quinone-binding Q loop on the periplasmic surface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "L-tartrate dehydratase is used by E. coli under anaerobic conditions to convert L-tartrate (carbon source) to oxaloacetate.",
+    "claim_type": "EXPLICIT",
+    "source": "L-tartrate dehydratase is used by E. coli under anaerobic conditions to convert L-tartrate (carbon source) to oxaloacetate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the function of this enzyme.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The enzyme is a hetero-tetramer, with two copies of TtdA and two copies of TtdB.",
+    "claim_type": "EXPLICIT",
+    "source": "The enzyme is a hetero-tetramer, with two copies of TtdA and two copies of TtdB (Reaney et al., 1993).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "TtdA is homologous to the N terminus of a class I fumarase.",
+    "claim_type": "EXPLICIT",
+    "source": "TtdA is homologous to the N terminus of a class I fumarase, and TtdB, to the C terminus of the fumarase.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence homology analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "TtdB is homologous to the C terminus of a class I fumarase.",
+    "claim_type": "EXPLICIT",
+    "source": "TtdA is homologous to the N terminus of a class I fumarase, and TtdB, to the C terminus of the fumarase.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence homology analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "In the TtdA/TtdB complex model, three conserved TtdA cysteines (C71, C190, and C277) cluster near the TtdB interface which may be the 4Fe-4S cluster-binding site.",
+    "claim_type": "EXPLICIT",
+    "source": "In our complex model, three conserved TtdA cysteines (C71, C190, and C277) cluster near the TtdB interface which maybe the 4Fe-4S cluster-binding site (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a hypothesis based on the predicted structural model and the clustering of conserved cysteines.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "A conserved aspartate (D73) in TtdA might contribute to catalysis.",
+    "claim_type": "EXPLICIT",
+    "source": "This potential active site also includes a conserved aspartate (D73) that might contribute to catalysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on the location of a conserved residue in the predicted model.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The conserved TtdB H265 falls on the opposite side of the active site in the model and contributes to the active site of the second TtdB chain formed by the tetramer.",
+    "claim_type": "EXPLICIT",
+    "source": "The conserved TtdB H265 falls on the opposite side of the active site in our model and instead contributes to the active site of the second TtdB chain formed by the tetramer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the predicted tetrameric model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The TtdA/TtdB model suggests TtdA/TtdB forms an obligate tetramer.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, our model suggests TtdA/TtdB forms an obligate tetramer that would not have been predicted by co-evolution or conservation alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the structural model showing interactions between subunits.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "SatP mediates the uptake of succinate and acetate in E. coli coupled to proton symport.",
+    "claim_type": "EXPLICIT",
+    "source": "SatP (Succinate-acetate/proton symporter) mediates the uptake of succinate and acetate in E. coli coupled to proton symport (S\u00e1-Pessoa et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The predicted SatP structure is very similar to that of the proton-gated urea channel.",
+    "claim_type": "EXPLICIT",
+    "source": "Our predicted SatP structure (Figure 5A\u2013C) is very similar to that of the proton-gated urea channel (Figure 5D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of the predicted model to a known structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The urea channel assembles into a hexameric ring with each protomer forming a channel through the center of the 6TMH fold.",
+    "claim_type": "EXPLICIT",
+    "source": "The urea channel assembles into a hexameric ring with each protomer forming a channel through the center of the 6TMH fold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the structure of the urea channel.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Assembly of the SatP model into a hexameric ring satisfied predicted contacts not made in the monomer.",
+    "claim_type": "EXPLICIT",
+    "source": "Assembly of our SatP model into a hexameric ring satisfied predicted contacts not made in the monomer (Figure 5A,B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on analysis of the predicted contacts and the oligomeric model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Residues Leu131 and Ala164 have been shown to influence the solute selectivity of SatP.",
+    "claim_type": "EXPLICIT",
+    "source": "Residues that have been shown to influence the solute selectivity of SatP (Leu131 and Ala164) (S\u00e1-Pessoa et al., 2013) line the channel pore of our model (Figure 5C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on experimental data cited from the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Leu131 and Ala164 line the channel pore in the SatP model.",
+    "claim_type": "EXPLICIT",
+    "source": "Residues that have been shown to influence the solute selectivity of SatP (Leu131 and Ala164) (S\u00e1-Pessoa et al., 2013) line the channel pore of our model (Figure 5C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "FtsW is an integral membrane protein that is thought to transfer lipid-linked peptidoglycan precursors from the inner to the outer leaflet of the cytoplasmic membrane.",
+    "claim_type": "EXPLICIT",
+    "source": "FtsW is an integral membrane protein that is thought to transfer lipid-linked peptidoglycan precursors from the inner to the outer leaflet of the cytoplasmic membrane, where it interacts with the TM portion of peptidoglycan synthetase FtsI (Fraipont et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The FtsW model encompasses 10 TM helices, with the last seven (TMH4-TMH10) adopting a similar topology as TMH4-TMH7 and TMH10-12 of the TM domain of STT3 (PDB: 3WAK).",
+    "claim_type": "EXPLICIT",
+    "source": "The FtsW model encompasses 10 TM helices, with the last seven (TMH4-TMH10) adopting a similar topology as TMH4-TMH7 and TMH10-12 of the TM domain of STT3 (PDB: 3WAK) (Figure 6C,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of the predicted model to a known structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "STT3 is a dolichyl-diphosphooligosaccharide-protein glycosyltransferase that functions in N-glycan biosynthesis.",
+    "claim_type": "EXPLICIT",
+    "source": "STT3 is a dolichyl-diphosphooligosaccharide-protein glycosyltransferase that functions in N-glycan biosynthesis, transferring oligosaccharides from the membrane anchor dolichol-diphosphate to asparagine residues of proteins bound for secretion (Matsumoto et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The FtsW substrate, lipid II, has a membrane anchor similar to that of the STT3 substrate donor: bactoprenol-pyrophosphate conjugated to disaccharide.",
+    "claim_type": "EXPLICIT",
+    "source": "The FtsW substrate, lipid II, has a membrane anchor similar to that of the STT3 substrate donor: bactoprenol-pyrophosphate conjugated to disaccharide.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of substrate structures based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "A conserved DxH motif at the N-terminus of STT3 TMH4 coordinates a divalent metal ion in the active site.",
+    "claim_type": "EXPLICIT",
+    "source": "A conserved DxH motif at the N-terminus of STT3 TMH4 coordinates a divalent metal ion in the active site.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the STT3 structure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Two residues from the corresponding TMH4 of FtsW (R145 and K153) are essential for flippase activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Two residues from the corresponding TMH4 of FtsW (R145 and K153) are essential for flippase activity, with the side chain of R145 overlapping the divalent metal in superpositions of the FtsW model with the STT3 structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on experimental data about FtsW function.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The side chain of R145 overlaps the divalent metal in superpositions of the FtsW model with the STT3 structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Two residues from the corresponding TMH4 of FtsW (R145 and K153) are essential for flippase activity, with the side chain of R145 overlapping the divalent metal in superpositions of the FtsW model with the STT3 structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural alignment of the predicted FtsW model with the STT3 structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The conserved FtsW/STT3 TMH core is similar in sequence to the E. coli O-antigen ligase RfaL.",
+    "claim_type": "EXPLICIT",
+    "source": "The conserved FtsW/STT3 TMH core is similar in sequence to the E. coli O-antigen ligase RfaL, and our predicted structure for RfaL is similar in structure (Figure 6E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on sequence comparison and structural prediction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The predicted structure for RfaL is similar in structure to the FtsW/STT3 TMH core.",
+    "claim_type": "EXPLICIT",
+    "source": "The conserved FtsW/STT3 TMH core is similar in sequence to the E. coli O-antigen ligase RfaL, and our predicted structure for RfaL is similar in structure (Figure 6E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of predicted models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "E. coli prolipoprotein diacylglyceryl transferase (Lgt) is an inner membrane protein that transfers the diacylglyceryl moiety from phosphatidylglycerol to an N-terminal cysteine residue that follows the signal peptide of prolipoproteins.",
+    "claim_type": "EXPLICIT",
+    "source": "E. coli prolipoprotein diacylglyceryl transferase (Lgt) is an inner membrane protein that transfers the diacylglyceryl moiety from phosphatidylglycerol to an N-terminal cysteine residue that follows the signal peptide of prolipoproteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the function of Lgt.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The predicted structure of Lgt has a novel seven trans-membrane helix (TMH) fold.",
+    "claim_type": "EXPLICIT",
+    "source": "Our predicted structure of Lgt has a novel seven trans-membrane helix (TMH) fold, with many of the conserved residues (Y26, R134, N146, E151, G154, R239, and E243) clustering near the proposed periplasmic surface to form a putative active site (Figure 7, white spheres); the activity of Lgt is lost or greatly reduced upon mutating these residues to alanine (Pailler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Many conserved residues (Y26, R134, N146, E151, G154, R239, and E243) cluster near the proposed periplasmic surface to form a putative active site in the Lgt model.",
+    "claim_type": "EXPLICIT",
+    "source": "Our predicted structure of Lgt has a novel seven trans-membrane helix (TMH) fold, with many of the conserved residues (Y26, R134, N146, E151, G154, R239, and E243) clustering near the proposed periplasmic surface to form a putative active site (Figure 7, white spheres); the activity of Lgt is lost or greatly reduced upon mutating these residues to alanine (Pailler et al., 2012).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the predicted structural model and conservation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The activity of Lgt is lost or greatly reduced upon mutating Y26, R134, N146, E151, G154, R239, and E243 to alanine.",
+    "claim_type": "EXPLICIT",
+    "source": "Our predicted structure of Lgt has a novel seven trans-membrane helix (TMH) fold, with many of the conserved residues (Y26, R134, N146, E151, G154, R239, and E243) clustering near the proposed periplasmic surface to form a putative active site (Figure 7, white spheres); the activity of Lgt is lost or greatly reduced upon mutating these residues to alanine (Pailler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on experimental mutagenesis data cited from the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The topology and orientation of the TMHs in the Lgt structural model are consistent with a previously proposed topology model.",
+    "claim_type": "EXPLICIT",
+    "source": "The topology and orientation of the TMHs in our structural model are consistent with a previously proposed topology model (Pailler et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of the predicted model to a previously proposed model.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "UppP catalyzes the dephosphorylation of undecaprenyl pyrophosphate to form undecaprenyl phosphate, an essential carrier lipid for bacterial peptidoglycan cell wall synthesis.",
+    "claim_type": "EXPLICIT",
+    "source": "UppP (undecaprenyl pyrophosphate phosphatase), an integral membrane protein with unknown structure, catalyzes the dephosphorylation of undecaprenyl pyrophosphate to form undecaprenyl phosphate, an essential carrier lipid for bacterial peptidoglycan cell wall synthesis (El Ghachi et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "In the UppP structure model, TMH1 and TMH5 form broken helices that enter and exit the membrane on the same side.",
+    "claim_type": "EXPLICIT",
+    "source": "In our UppP structure model, TMH1 and TMH5 form broken helices that enter and exit the membrane on the same side, placing both catalytic regions near to the core of the structure (Figure 8A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The UppP model has a twofold symmetry between the broken TMH1-TMH4 and the broken TMH5-TMH8 that is mirrored by an internal duplication present in the UppP sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to a previously proposed model that assumed unbroken helices (Chang et al., 2014), our model has a twofold symmetry between the broken TMH1-TMH4 and the broken TMH5-TMH8 that is mirrored by an internal duplication present in the UppP sequence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on analysis of the predicted structural model and sequence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "A similarly duplicated TMH family of unknown function (YfcA) is distantly related to UppP by sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "A similarly duplicated TMH family of unknown function (YfcA) is distantly related to UppP by sequence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The structure prediction calculations suggest that YfcA has the same fold as UppP.",
+    "claim_type": "EXPLICIT",
+    "source": "Our structure prediction calculations suggest that YfcA has the same fold (Figure 8B; the multiple sequence alignments used to make the predictions for UppP and YfcA do not share any sequences).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the predicted structural models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The multiple sequence alignments used to make the predictions for UppP and YfcA do not share any sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "Our structure prediction calculations suggest that YfcA has the same fold (Figure 8B; the multiple sequence alignments used to make the predictions for UppP and YfcA do not share any sequences).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the independence of the sequence alignments used for prediction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "PrsW of B. subtilis is an intramembrane protease that cleaves site-1 anti-\u03c3 factor RsiW, a crucial step in the resistance to antimicrobial peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "PrsW of B. subtilis is an intramembrane protease that cleaves site-1 anti-\u03c3 factor RsiW, a crucial step in the resistance to antimicrobial peptides (Ellermeier and Losick, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "PrsW belongs to a large superfamily of membrane proteins that includes putative bacteriocin-processing enzymes and the APH-1 subunit of gamma-secretase.",
+    "claim_type": "EXPLICIT",
+    "source": "PrsW belongs to a large superfamily of membrane proteins that includes putative bacteriocin-processing enzymes and the APH-1 subunit of gamma-secretase (Pei et al., 2011b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence and structural analysis supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The PrsW model has structural similarity to an archaeal type II CAAX prenyl protease, mostly in a core of four TMHs (TMHs 3\u20136 in PrsW model and TMHs 4\u20137 in type II CAAX prenyl protease).",
+    "claim_type": "EXPLICIT",
+    "source": "Our PrsW model has structural similarity to an archaeal type II CAAX prenyl protease (Manolaridis et al., 2013), mostly in a core of four TMHs (TMHs 3\u20136 in PrsW model and TMHs 4\u20137 in type II CAAX prenyl protease) (Figure 9C,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of the predicted model to a known structure.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The predicted active site residues in motifs EExxK (TMH3) and HxxxD (TMH6) of PrsW occupy structurally compatible positions as conserved residues in motifs EExxxR (TMH4) and HxxxN (TMH7) of type II CAAX prenyl protease.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted active site residues in motifs EExxK (TMH3) and HxxxD (TMH6) of PrsW occupy structurally compatible positions as conserved residues in motifs EExxxR (TMH4) and HxxxN (TMH7) of type II CAAX prenyl protease.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural alignment of the predicted model with a known structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Another conserved histidine in the fifth TMH of PrsW (but absent in type II CAAX prenyl protease) is also located in the predicted active site of PrsW.",
+    "claim_type": "EXPLICIT",
+    "source": "Another conserved histidine in the fifth TMH of PrsW (but absent in type II CAAX prenyl protease) is also located in the predicted active site of PrsW.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The inner membrane protein YeiH is classified as a member of the CPA/AT transporter clan in PFAM.",
+    "claim_type": "EXPLICIT",
+    "source": "The inner membrane protein YeiH is classified as a member of the CPA/AT transporter clan in PFAM and sequence search yields high confidence matches to sodium/proton antiporters (HHsearch e-value 2.2E-05).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on database classification and sequence search results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Sequence search yields high confidence matches of YeiH to sodium/proton antiporters (HHsearch e-value 2.2E-05).",
+    "claim_type": "EXPLICIT",
+    "source": "The inner membrane protein YeiH is classified as a member of the CPA/AT transporter clan in PFAM and sequence search yields high confidence matches to sodium/proton antiporters (HHsearch e-value 2.2E-05).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence search results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The structural model of YeiH superimposes structurally with the structure of the antiporter NapA (PDB: 4BWZ), but the connectivity of the core of the structure is completely different.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, although our structural model of YeiH (Figure 10A,B) superimposes structurally with the structure of the antiporter NapA (PDB: 4BWZ; Lee et al., 2013), the connectivity of the core of the structure is completely different.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of the predicted model to a known structure.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The core domain of NapA contains two antiparallel discontinuous helices (TM4a, 4b and TM11a, 11b) that cross over each other.",
+    "claim_type": "EXPLICIT",
+    "source": "The core domain of NapA contains two antiparallel discontinuous helices (TM4a, 4b and TM11a, 11b) that cross over each other (Figure 10C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the known NapA structure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "In the YeiH model, the same hourglass-shaped assembly is formed by two pairs of broken helices (TM5, 6 and TM8, 9) that exit the membrane on the same side.",
+    "claim_type": "EXPLICIT",
+    "source": "In our YeiH model, the same hourglass-shaped assembly is formed by two pairs of broken helices (TM5, 6 and TM8, 9) that exit the membrane on the same side (Figure 10B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The E. coli chloramphenical resistance protein RarD is an apparent duplication of the homodimeric E. coli EmrE drug transporter.",
+    "claim_type": "EXPLICIT",
+    "source": "The E. coli chloramphenical resistance protein RarD is an apparent duplication of the homodimeric E. coli EmrE drug transporter, and our predicted structure of RarD indeed adopts an internal pseudo-symmetric fold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence analysis and the predicted structural model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The predicted structure of RarD adopts an internal pseudo-symmetric fold.",
+    "claim_type": "EXPLICIT",
+    "source": "The E. coli chloramphenical resistance protein RarD is an apparent duplication of the homodimeric E. coli EmrE drug transporter, and our predicted structure of RarD indeed adopts an internal pseudo-symmetric fold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The RarD model is structurally superimposable on the EmrE homodimer, but the first helices of the domains corresponding to the EmrE monomer are swapped.",
+    "claim_type": "EXPLICIT",
+    "source": "Our RarD model is structurally superimposable on the EmrE homodimer, but the first helices of the domains corresponding to the EmrE monomer are swapped (Figure 11B)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of the predicted model to a known structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The duplicated domains in RarD (called EamA domains) differ from EmrE by a critical helix insertion between helix-1 and helix-2 that causes helix-1 to adopt an inverted conformation in the membrane.",
+    "claim_type": "EXPLICIT",
+    "source": "The duplicated domains in RarD (called EamA domains) differ from EmrE by a critical helix insertion between helix-1 and helix-2 that causes helix-1 to adopt an inverted conformation in the membrane.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on analysis of the predicted structural model and comparison to EmrE.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "EmrE is one of a small number of dual-topology TM proteins in which a single polypeptide chain can insert into the membrane in two opposite orientations.",
+    "claim_type": "EXPLICIT",
+    "source": "EmrE is one of a small number of dual-topology TM proteins in which a single polypeptide chain can insert into the membrane in two opposite orientations, thus yielding inverted symmetric TMH topologies (Duran and Meiler, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The inverted symmetry of EmrE is fixed in the monomeric RarD structure.",
+    "claim_type": "EXPLICIT",
+    "source": "This inverted symmetry is fixed in the monomeric RarD structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the predicted RarD structure in relation to EmrE.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The proposed transport mechanism for EmrE involves switching the dimeric structure between alternate access states.",
+    "claim_type": "EXPLICIT",
+    "source": "The proposed transport mechanism for EmrE involves switching the dimeric structure between alternate access states (Fleishman et al., 2006; Morrison et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The homologous relationship between EmrE and RarD suggests the inverted symmetric RarD structure might also adopt alternate access states involving the two duplicated EamA halves.",
+    "claim_type": "EXPLICIT",
+    "source": "The homologous relationship between EmrE and RarD suggests the inverted symmetric RarD structure might also adopt alternate access states involving the two duplicated EamA halves.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on the structural similarity and known mechanism of EmrE.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The models of E. coli proteins YqfA and YhhN have topologies similar to that of G-protein-coupled receptors (GPCRs).",
+    "claim_type": "EXPLICIT",
+    "source": "Our models of E. coli proteins YqfA and YhhN have topologies similar to that of G-protein-coupled receptors (GPCRS).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural comparison of the predicted models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The YqfA sequence belongs to a large family of integral membrane proteins, with members in all three kingdoms of life.",
+    "claim_type": "EXPLICIT",
+    "source": "The YqfA sequence belongs to a large family of integral membrane proteins, with members in all three kingdoms of life.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence analysis and database searches.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The eukaryotic members of the YqfA family are seven-TM pass receptors for ligands such as prostaglandin and adipoQ.",
+    "claim_type": "EXPLICIT",
+    "source": "The eukaryotic members are seven-TM pass receptors for ligands such as prostaglandin and adipoQ (the progesterone-adiponectin receptor (PAQR) was predicted to be bacteriorhodopsin-like by Hopf et al., 2012), while a bacterial member is associated with furfural tolerance through an unknown mechanism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the eukaryotic members of this family.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The PAQR receptors belong to a larger superfamily of core seven TM-bound putative hydrolases identified as CREST.",
+    "claim_type": "EXPLICIT",
+    "source": "The PAQR receptors belong to a larger superfamily of core seven TM-bound putative hydrolases identified as CREST (Pei et al., 2011a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence and structural analysis supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The CREST superfamily is characterized by conserved motifs at the end of TMH2 (SxxxH), the beginning of TMH3 (D), and the beginning of TMH7 (HxxxH).",
+    "claim_type": "EXPLICIT",
+    "source": "The CREST superfamily is characterized by conserved motifs at the end of TMH2 (SxxxH), the beginning of TMH3 (D), and the beginning of TMH7 (HxxxH).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence analysis of the CREST superfamily.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "In the YqfA model, the conserved CREST motifs likely form an active site and are in the same region as the ligand-binding pocket in GPCRs.",
+    "claim_type": "EXPLICIT",
+    "source": "In the YqfA model, the conserved CREST motifs likely form an active site and are in the same region as the ligand-binding pocket in GPCRs (Figure 12).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on analysis of the predicted structural model and comparison to GPCRs.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "During the preparation of this manuscript, the structure of a homolog of YqfA was released by the PDB.",
+    "claim_type": "EXPLICIT",
+    "source": "During the preparation of this manuscript, the structure of a homolog of YqfA was released by the PDB; our model of YqfA is very similar to this structure (TMalign score of 0.80; Figure 12E), while the top hit of HHsearch and SPARKS-X models are not similar (TMalign score of 0.21 and 0.40).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the timing of structure release relative to the manuscript preparation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The model of YqfA is very similar to the released structure of a YqfA homolog (TMalign score of 0.80).",
+    "claim_type": "EXPLICIT",
+    "source": "During the preparation of this manuscript, the structure of a homolog of YqfA was released by the PDB; our model of YqfA is very similar to this structure (TMalign score of 0.80; Figure 12E), while the top hit of HHsearch and SPARKS-X models are not similar (TMalign score of 0.21 and 0.40).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison using TMalign.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The top hit of HHsearch and SPARKS-X models are not similar to the released YqfA homolog structure (TMalign score of 0.21 and 0.40).",
+    "claim_type": "EXPLICIT",
+    "source": "During the preparation of this manuscript, the structure of a homolog of YqfA was released by the PDB; our model of YqfA is very similar to this structure (TMalign score of 0.80; Figure 12E), while the top hit of HHsearch and SPARKS-X models are not similar (TMalign score of 0.21 and 0.40).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural comparison using TMalign.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The co-evolution-based model of YhhN has the GPCR topology, but with an N-terminal TMH extension.",
+    "claim_type": "EXPLICIT",
+    "source": "Our co-evolution-based model of YhhN (Figure 12C) has the GPCR topology, but with an N-terminal TMH extension.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "A YhhN family member was recently shown to function as a lysoplasmalogenase that catalyzes hydrolysis of the vinyl ether bond of lysoplasmalogen in lipid metabolism.",
+    "claim_type": "EXPLICIT",
+    "source": "A YhhN family member was recently shown to function as a lysoplasmalogenase that catalyzes hydrolysis of the vinyl ether bond of lysoplasmalogen in lipid metabolism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the function of a YhhN family member.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Conserved YhhN residues that might form the active site cluster in a similar place as the YqfA putative catalytic residues, lining what would be the ligand-binding site in GPCRs.",
+    "claim_type": "EXPLICIT",
+    "source": "Conserved YhhN residues that might form the active site cluster in a similar place as the YqfA putative catalytic residues, lining what would be the ligand-binding site in GPCRs (Figure 12C,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on analysis of the predicted structural model and comparison to GPCRs.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The model of YfiP, from a family of unknown function, contains a non-trivial trefoil knot topology characteristic of the alpha/beta knot methyltransferase (SPOUT) superfamily.",
+    "claim_type": "EXPLICIT",
+    "source": "Our model of YfiP, from a family of unknown function, contains a non-trivial trefoil knot topology characteristic of the alpha/beta knot methyltransferase (SPOUT) superfamily (Anantharaman et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on analysis of the predicted structural model and comparison to known structures.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "SPOUT structures utilize conserved residues to bind the AdoMet substrate in a binding cleft formed by the knot.",
+    "claim_type": "EXPLICIT",
+    "source": "SPOUT structures utilize conserved residues to bind the AdoMet substrate in a binding cleft formed by the knot.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about SPOUT structures.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "In the predicted YfiP structure, conserved DTW domain residues surround the AdoMet binding cleft, including Asp113, Thr115, Trp116, Pro87, Tyr145, Arg148, Thr158, and Glu160.",
+    "claim_type": "EXPLICIT",
+    "source": "In the predicted YfiP structure, conserved DTW domain residues surround the AdoMet binding cleft, including Asp113, Thr115, Trp116, Pro87, Tyr145, Arg148, Thr158, and Glu160 (Figure 13).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on analysis of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The predicted similarity of YfiP to the SPOUT methyltransferase fold substantiates a previously suggested role in rRNA processing.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted similarity of YfiP to the SPOUT methyltransferase fold substantiates a previously suggested role in rRNA processing (Burroughs and Aravind, 2014), as rRNA maturation requires extensive nucleotide modifications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the predicted structure and known functions of similar proteins.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The model of YitE, from a protein family of unknown function, has an arrangement of secondary structures nearly identical to the aquaporin water channel fold, including the pseudo-symmetric repeat unit, but with completely different connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Our model of YitE, from a protein family of unknown function, has an arrangement of secondary structures nearly identical to the aquaporin water channel fold (Figure 14), including the pseudo-symmetric repeat unit, but with completely different connectivity.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison of the predicted model to known structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The two half-helices that meet at the center of the protein are a key feature of water channels and critical for proton exclusion.",
+    "claim_type": "EXPLICIT",
+    "source": "The two half-helices that meet at the center of the protein are a key feature of water channels and critical for proton exclusion (Gonen et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about aquaporin structures supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The YitE model does not have the 'NPA' motif in the half helix characteristic of water channels.",
+    "claim_type": "EXPLICIT",
+    "source": "The YitE model does not have the 'NPA' motif in the half helix characteristic of water channels, but one of the half helices has an N pointing into the putative pore.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "One of the half helices in the YitE model has an N pointing into the putative pore.",
+    "claim_type": "EXPLICIT",
+    "source": "The YitE model does not have the 'NPA' motif in the half helix characteristic of water channels, but one of the half helices has an N pointing into the putative pore.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The E. coli YgdD protein belongs to a family of unknown function (Pfam: DUF423) with members widely distributed in both bacteria and eukaryotes, including proteins from plants, fungi, and metazoans.",
+    "claim_type": "EXPLICIT",
+    "source": "The E. coli YgdD protein belongs to a family of unknown function (Pfam: DUF423) with members widely distributed in both bacteria and eukaryotes, including proteins from plants, fungi, and metazoans.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on database classification and sequence analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The predicted contacts of YgdD are best accommodated in a homotrimer model.",
+    "claim_type": "EXPLICIT",
+    "source": "The predicted contacts of YgdD are best accommodated in a homotrimer model (Figure 15A,B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on analysis of the predicted contacts and modeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Each YgdD molecule in the homotrimer has four TMHs with left-handed connections between helices 1, 2, 3 as well as between helices 2, 3, 4.",
+    "claim_type": "EXPLICIT",
+    "source": "Each YgdD molecule in the homotrimer has four TMHs with left-handed connections between helices 1, 2, 3 as well as between helices 2, 3, 4.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the predicted structural model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The YgdD topology matches that of Membrane-Associated Proteins in Eicosanoid and Glutathione metabolism (MAPEG) family proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "Such a topology matches that of Membrane-Associated Proteins in Eicosanoid and Glutathione metabolism (MAPEG) family proteins (Jakobsson et al., 1999; Hebert and Jegersch\u00f6ld, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on structural comparison supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "YgdD and MAPEG exhibit the same overall homotrimer topology, both similar to the core of the heme-copper oxidase catalytic subunit.",
+    "claim_type": "EXPLICIT",
+    "source": "More strikingly, YgdD and MAPEG also exhibit the same overall homotrimer topology, both similar to the core of the heme-copper oxidase catalytic subunit (Pei et al., 2014) (Figure 15C,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on structural comparison supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Sequence similarity searches of YgdD by HHsearch did not reveal significant hits to MAPEG proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "Sequence similarity searches of YgdD by HHsearch (Remmert et al., 2012) did not reveal significant hits to MAPEG proteins, but weak HHsearch matches to heme-copper oxidase members were found (e.g., 3mk7, chain A, HHsearch probability score: 41).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence search results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Weak HHsearch matches to heme-copper oxidase members were found for YgdD (e.g., 3mk7, chain A, HHsearch probability score: 41).",
+    "claim_type": "EXPLICIT",
+    "source": "Sequence similarity searches of YgdD by HHsearch (Remmert et al., 2012) did not reveal significant hits to MAPEG proteins, but weak HHsearch matches to heme-copper oxidase members were found (e.g., 3mk7, chain A, HHsearch probability score: 41).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on sequence search results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The sequence alignment between the last two TMHs of YgdD and the last two TMHs of heme-copper oxidase members is consistent with the structural alignment between the predicted YgdD structure and the 3mk7 structure.",
+    "claim_type": "EXPLICIT",
+    "source": "The sequence alignment between the last two TMHs of YgdD and the last two TMHs of heme-copper oxidase members is consistent with the structural alignment between our predicted YgdD structure and the 3mk7 structure, suggesting that YgdD is evolutionarily related to heme-copper oxidases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on comparison of sequence and structural alignments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "YgdD is evolutionarily related to heme-copper oxidases.",
+    "claim_type": "EXPLICIT",
+    "source": "The sequence alignment between the last two TMHs of YgdD and the last two TMHs of heme-copper oxidase members is consistent with the structural alignment between our predicted YgdD structure and the 3mk7 structure, suggesting that YgdD is evolutionarily related to heme-copper oxidases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on sequence and structural similarity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The models for 58 large protein families cover a significant fraction of the prokaryotic sequences for which structural information was previously unavailable.",
+    "claim_type": "EXPLICIT",
+    "source": "The models presented in this article for 58 large protein families which cannot be accurately modeled using comparative modeling or fold recognition methods cover a significant fraction of the prokaryotic sequences for which structural information was previously unavailable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the impact of the work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Each of the 58 families have thousands of members.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of these families have thousands of members (Table 2, column 2), hence these models have quite broad impact.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the data presented in Table 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The models illustrate the complex transformations occurring in membrane protein evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the new structure-based interpretation of existing sequence conservation and mutational data the models enable, they illustrate the complex transformations occurring in membrane protein evolution: for example, the changes in YeiH and RarD structural element connectivity compared to previously known structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion based on the examples presented.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "In the co-evolution-guided de novo structure prediction case, structure modeling is critical to functional insight.",
+    "claim_type": "EXPLICIT",
+    "source": "With the advent of sensitive sequence profile\u2013profile comparison methods, much of protein structure modeling has been reduced to sequence alignment, and indeed for functional interpretation often much can be learned simply by draping the query sequence on a homologous structure; in contrast, as illustrated in the examples above, in the co-evolution-guided de novo structure prediction case, structure modeling is critical to functional insight.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the examples and analysis presented in the paper.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Large-scale genome sequencing is having an unanticipated impact on protein structure modeling, enabling accurate protein structure and protein complex modeling using co-evolution-based predicted contacts.",
+    "claim_type": "EXPLICIT",
+    "source": "Large-scale genome sequencing is having an unanticipated impact on protein structure modeling, enabling accurate protein structure and protein complex modeling using co-evolution-based predicted contacts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion about the impact of genome sequencing on structure prediction.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "As more organisms are sequenced, the number of protein families with sufficient sequences for accurate modeling will increase.",
+    "claim_type": "EXPLICIT",
+    "source": "The importance of this approach to structural biology over the next decade will depend on the balance between two opposing trends: as more organisms are sequenced, the number of protein families with sufficient sequences for accurate modeling will increase, but as more structures are determined, there are fewer families for which accurate models cannot be produced by reliable comparative modeling methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about future trends.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "As more structures are determined, there are fewer families for which accurate models cannot be produced by reliable comparative modeling methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The importance of this approach to structural biology over the next decade will depend on the balance between two opposing trends: as more organisms are sequenced, the number of protein families with sufficient sequences for accurate modeling will increase, but as more structures are determined, there are fewer families for which accurate models cannot be produced by reliable comparative modeling methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about future trends.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Co-evolution-based prediction will continue to have the most impact for membrane proteins because of the comparative difficulty in experimental structure determination.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of the comparative difficulty in experimental structure determination, it is likely that co-evolution-based prediction will continue to have the most impact for membrane proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction based on the challenges of membrane protein structure determination.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Structure models can now be generated for exactly the original class of proteins targeted by the PSI\u2014large protein families without any available information\u2014but at a small fraction of the cost.",
+    "claim_type": "EXPLICIT",
+    "source": "Significant resources were invested in the Protein Structure Initiative (PSI), with the initial goal 'to make the three-dimensional, atomic-level structures of most proteins easily obtainable from knowledge of their corresponding DNA sequences (Burley et al., 2008)'. It is notable that structure models can now be generated for exactly the original class of proteins targeted by the PSI\u2014large protein families without any available information\u2014but at a small fraction of the cost.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of the current approach to the goals and costs of the PSI.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  }
+]

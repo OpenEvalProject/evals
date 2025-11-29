@@ -1,0 +1,1939 @@
+{
+  "submission": {
+    "id": "9fe01e9b-064f-446b-8942-2e3fbaff8231",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:57:00.689280Z",
+    "updated_at": "2025-11-29T03:57:00.689280Z"
+  },
+  "content": [
+    {
+      "id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "submission_id": "9fe01e9b-064f-446b-8942-2e3fbaff8231",
+      "content_type": "manuscript",
+      "content_text": "# Projection neurons in Drosophila antennal lobes signal the acceleration of odor concentrations\n\n## Authors\n\n- Anmo J Kim<sup>1</sup>\n- Aurel A Lazar<sup>1</sup> \u2020\n- Yevgeniy B Slutskiy<sup>1</sup>\n\n### Affiliations\n\n1. Department of Electrical Engineering Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTemporal experience of odor gradients is important in spatial orientation of animals. The fruit fly Drosophila melanogaster exhibits robust odor-guided behaviors in an odor gradient field. In order to investigate how early olfactory circuits process temporal variation of olfactory stimuli, we subjected flies to precisely defined odor concentration waveforms and examined spike patterns of olfactory sensory neurons (OSNs) and projection neurons (PNs). We found a significant temporal transformation between OSN and PN spike patterns, manifested by the PN output strongly signaling the OSN spike rate and its rate of change. A simple two-dimensional model admitting the OSN spike rate and its rate of change as inputs closely predicted the PN output. When cascaded with the rate-of-change encoding by OSNs, PNs primarily signal the acceleration and the rate of change of dynamic odor stimuli to higher brain centers, thereby enabling animals to reliably respond to the onsets of odor concentrations.\n\n## Introduction\n\nOdor distribution in nature is intermittent and dynamic (Murlis et al., 1992; Vickers et al., 2001), and animals have evolved the ability to detect and respond to temporal variation of odor stimuli (David et al., 1983; Thesen et al., 1993; Vickers et al., 2001; Porter et al., 2007; Semmelhack and Wang, 2009; Kato et al., 2014). In one of the most sophisticated examples, Drosophila larvae with only a single functional olfactory sensory neuron (OSN) are capable of moving toward a droplet of an attractive odor by actively orienting themselves (Louis et al., 2008). Similarly, adult fruit flies exhibit robust odor-guided behaviors such as turning upwind in flight upon contact with an attractive odor plume (Budick and Dickinson, 2006) and staying within a specific odor zone (Semmelhack and Wang, 2009). In order to enable such odor-guided tasks, it is essential for any olfactory system to process time-varying features of olfactory stimuli and supply behaviorally relevant information to higher brain centers.\n\nSeveral recent studies have investigated how dynamic olfactory stimuli are processed in insect early olfactory systems (systems consisting principally of OSNs and projection neurons [PNs]) and observed significant temporal processing of odor signals (Bhandawat et al., 2007; Geffen et al., 2009; Kim et al., 2011; Nagel and Wilson, 2011; Martelli et al., 2013). Most of these studies employed a simple odor delivery system that generated step-pulse-like odor stimuli without directly monitoring the actual odor concentration levels. For a rigorous understanding of sensory processing, however, it is essential to precisely measure the input stimuli and systematically explore the input space, as has been successfully done in the field of vision and audition (Wu et al., 2006). Moreover, natural odor plumes are encountered in various spatiotemporal patterns, and their dynamics and statistics can influence the neural encoding mechanism (Brenner et al., 2000; Vickers et al., 2001).\n\nIn Drosophila, OSNs expressing the same receptors connect with PNs in one of roughly 50 spherical compartments, termed olfactory glomeruli, which constitute a deutocerebral neuropil called the antennal lobe. PNs subsequently relay olfactory information to higher brain centers such as the mushroom body and the lateral horn (Stocker et al., 1990).\n\nTwo recent studies independently reported that Drosophila OSNs encode not only the odor concentration but also its rate of change as a function of time (Kim et al., 2011; Nagel and Wilson, 2011). Building on this recent advance, we asked how PNs further contribute to creating internal representations of dynamic olfactory environments. We tested OSNs and PNs with short plume-like odor stimuli in a variety of settings and analyzed the correlation structure of input/output signals in the odor-OSN-PN pathway. We also constructed a two-dimensional (2D) linear\u2013nonlinear (LN) model of the OSN-to-PN transformation by inducing an ensemble of triangle-shaped OSN spike rates via a systematic design of olfactory stimuli.\n\n## Results\n\nWe employed a novel odor delivery system that can reliably produce various odor concentration waveforms and provide measurements of the odor concentration with a millisecond resolution on every experiment trial (Figure 1A,B) (Kim et al., 2011). Various odor concentration profiles were designed and tested (Figure 1\u2014figure supplement 1), and the corresponding OSN and PN responses were measured in two separate assays sharing the same odor delivery system (Figure 1A,B). The observed odor concentrations were closely matched between the two assays (Figure 2A\u2013C). We used acetone as the primary odorant because its low ionization potential afforded a high signal-to-noise ratio in our odor concentration measurements. We tested a pair of directly connected OSNs and PNs innervating the DM4 glomerulus with five different acetone concentration waveforms. The dynamics of OSN and PN responses differed significantly from their respective feedforward inputs, and all responses initiated within a few tens of milliseconds of the odor onset (Figure 1C). PNs generally showed a bigger peak spike rate and exhibited more phasic spiking patterns than the presynaptic OSNs. However, the exact functional transformation between OSNs and PNs could not be readily assessed due to the complex dynamics of OSN and PN signals.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig1-v2.jpg)\n\n**Figure 1.:** (A) An experimental setup. Activity of OSNs and PNs was recorded in two different assays, which share the same odor delivery system. A photoionization detector (PID) provided real-time measurements of odor concentrations in every trial. (B) Sample traces of OSN and PN responses to a triangle-shaped odor concentration profile. (C) Sample OSN and PN responses to five distinct odor concentration waveforms. (Top row) Odor concentration profiles. Each trace is an average of six interleaved trials, recorded in the OSN assay. (Middle row) Raster and peristimulus\u2013time histogram (PSTH) plots of the Or59b OSN response. (Bottom row) Raster and PSTH plots of the postsynaptic DM4 PN response to the same panel of odor stimuli.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each trace represents an average of 4\u20136 trials, and the odor concentration was measured in the OSN assay. An \u2018L\u2019 mark in magenta at the bottom left corner of each panel represents the zero amplitude point and zero time point for each stimulus epoch.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Three polynomial odor stimuli: a pulse, a ramp and a parabola. Light gray lines represent individual trials from five different OSN experiments, and dark gray lines represent individual traces from five different PN experiments. Blue and red lines are average traces, respectively, from the OSN and PN experiments. An \u2018L\u2019 mark in magenta at the bottom left corner of each panel represents the zero amplitude point. (D\u2013F) Or59b OSN response to the above stimuli (n = 5 flies). (G\u2013I) PN response to the same set of stimuli (n = 5 flies). (J\u2013L) Correlation analyses between three pairs of input and output (amp: amplitude, roc: rate of change, acc: acceleration). OSNs and PNs mainly encode the amplitude and rate of change of their feedforward inputs, whereas PNs most strongly represent the acceleration and rate-of-change components of the odor input. Results with error bars indicate mean \u00b1 standard deviation, and ***indicates p < 0.001 (t-test). n = 9 flies for each analysis, 5 flies from the above traces and 4 flies from the same experiment at half concentration (data not shown).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Outputs of an Or59b OSN and a DM4 PN in response to methyl butyrate polynomial odor inputs. Gray areas represent the standard deviation of the estimated OSN/PN output. (B) Outputs of an Or7a OSN and a DL5 PN in response to butanal polynomial odor inputs. Gray areas represent the standard deviation of the estimated OSN/PN output.\n\nWe therefore designed a set of elementary odor concentration waveforms: a step, a ramp and a parabola (top row of Figure 2A\u2013C). We reasoned that the simple nature of these waveforms would facilitate the analysis of the input/output relationship.\n\nConsistent with previous reports (Kim et al., 2011; Nagel and Wilson, 2011), OSNs responded most strongly to polynomial waveforms when the odor concentration rose rapidly. For the ramp and parabola odor signals, OSN responses were the exact rate-of-change function of their input: a step output to a ramp input (Figure 2B,E) and a ramp output to a parabola input (Figure 2C,F). This pattern of encoding was preserved for different combinations of odorants and OSN-PN pairs (Figure 2\u2014figure supplement 1). To look into this observation formally, we measured the similarity between three different input features\u2014concentration amplitude, rate of change, and acceleration\u2014and the output spike rate of OSNs by performing a set of cross-correlation analyses. The correlation was strong between the OSN output and both odor concentration and its rate of change, but weak between the OSN output and the acceleration of odor concentration (Figure 2J).\n\nGiven the very same panel of olfactory stimuli, PN responses exhibited bigger peak amplitude and more stereotyped temporal patterns than OSNs (Figure 2G\u2013I). All PN responses transiently peaked at the time of the odor onset, and their peak times were on average advanced from the OSN peak times. Specifically, in response to ramp-shaped OSN signals, PNs exhibited a rapid step response (Figure 2F,I). To step-like OSN signals, PN showed a phasic onset response, followed by a tonic spiking pattern (Figure 2E,H). These input/output relationships are reminiscent of the rate-of-change encoding in the odor-to-OSN transformation, where the ramp and step odor signals were similarly transformed. Biophysically, this phenomenon suggests a rapid adaptation between OSNs and PNs, which is in agreement with previous reports demonstrating strong short-term depression in synapses between OSNs and PNs (Kazama and Wilson, 2008, 2009; Nagel et al., 2015). From a modeling perspective, this observation predicted a strong correlation between the PN spike rate and the rate of change of the OSN spike rate. A correlation analysis between the PN output and three different input features\u2014OSN spike rate, rate of change, and acceleration\u2014confirmed this prediction (Figure 2K). Together, this supports the hypothesis that PN responses can be modeled as a function of the OSN spike rate and its rate of change, at least for the tested class of odor stimuli.\n\nWe therefore propose a simple model of the OSN-to-PN transformation comprising two input blocks: the OSN spike rate and its rate of change, followed by a 2D nonlinearity that maps these inputs into the PN spike rate (Figure 3D). The model has the structure of a classical 2D LN model with its linear blocks postulated as amplitude and rate-of-change filters (Brenner et al., 2000; Geffen et al., 2009). Given the hypothesized input blocks, the model can be fully identified by estimating the nonlinear block from experimental data. The validity of the model can be tested by assessing its ability to predict the PN response to new odor waveforms. In order to estimate the nonlinearity, we first designed OSN spike activity profiles that explore the hypothesized PN input space with an efficient sampling grid. An ensemble of triangle-shaped inputs was shown to be suitable for this purpose, since each up/down ramp stimulus tests the target system with a distinct pair of positive and negative gradients while also sweeping a wide range of input amplitudes (Kim et al., 2011).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig3-v2.jpg)\n\n**Figure 3.:** (A) Input/output traces used in modeling the OSN-to-PN transformation (n = 5 trials for both OSN and PN data). An ensemble of triangle-shaped OSN spike rates (middle) were designed as a direct in vivo input to the PNs. These OSN spiking patterns were induced by an ensemble of parabola odor inputs (top). (B) Input and output samples for the 2D nonlinearity block. Input axes are OSN spike rate and its rate of change, and the output is the PN spike rate. The samples were estimated from the OSN and PN spike trains with 25-ms sampling interval and depicted as a red dot in the input/output space. (C) A 2D nonlinearity was estimated by ridge regression method from the samples marked in (B). (D) A simple 2D model of the OSN-to-PN transformation, as a 2D linear-nonlinear model. (E) The 2D model was tested for a set of OSN spike rates to evaluate its predictive ability. The black surface depicts a three-dimensional rendering of the 2D nonlinearity in (B). Six OSN spike rates\u2014five triangle-shaped signals and one step-pulse-shaped input\u2014and their rate-of-change functions were projected to the surface. Amplitude readouts from the trajectories on the surface constitute the simulated PN output. The step-pulse-shaped input was introduced for cross-validation of the model since this input was not used for building the model. (F) The predicted PN spike rate closely followed the magnitude and dynamics of the experimental PN spike rate, for six OSN spike rate inputs (insets). The average prediction errors are 31, 26, 21, 21, 23, 29 spike/s (clockwise from the top-left corner, in root-mean-square error).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The triangle-shaped OSN spike rate (top), its rate of change (middle), and the corresponding PN spike rates (bottom). At a fixed OSN spike rate (60 spike/s, a solid red line in the top panel), the PN spike rate varies from 0 to 280 spike/s depending on the rate-of-change value of the OSN spike rate. (B) At a fixed OSN spike rate (blue line for 30 spike/s, red line for 60 spike/s, green line for 120 spike/s, as depicted in (A)), the PN spike rate is linearly related to the rate-of-change value of the OSN spike rate with half-wave rectification in the negative rate-of-change interval. (C) The gain \u03b2 of the PN response, with respect to the rate of change of the OSN output, decreases with increasing input amplitude.\n\nHow can we induce an ensemble of triangle signals at the OSN output? We fine-tuned odor concentration signals, while observing the OSN spike rate, until the desired OSN spike rates were produced (Figure 3A). The odor concentration signals inferred from this method are an ensemble of parabolas with systematically varying peak times and amplitudes (Figure 3A). The 2D nonlinearity was estimated subsequently by running a ridge regression analysis on spike rate samples from the OSN and PN signals (Kim et al., 2011) (Figure 3B,C).\n\nThe estimated 2D nonlinearity showed a strong dependency on the rate-of-change of OSN spike rate (Figure 3B,C). When the nonlinearity was estimated for samples with a fixed odor concentration value, the PN spike rate rose almost linearly with respect to the rate of change (Figure 3\u2014figure supplement 1). However, the gain of the PN output with respect to the OSN rate of change decreased monotonically with concentration, suggesting that at least a 2D model is required to describe the OSN-to-PN transformation (Figure 3\u2014figure supplement 1). We tested the model by comparing the simulated model output with the experimental PN spike activity (Figure 3C). With step, ramp, and parabola odor inputs, the experimental outputs were closely matched by the model (root-mean-square error = 25 spike/s, Figure 3F). While the odor-evoked responses were well matched by the model, including peak times and amplitudes, the model output often overestimated the actual PN spike rate before and after the stimulus interval. This is because the estimated nonlinearity exhibits a relatively high slope at low input amplitudes (Figure 3\u2014figure supplement 1), which renders the system highly sensitive to the noisy fluctuations at low OSN spike rates (Pahlberg and Sampath, 2011). This problem is thought to be mitigated in olfactory glomeruli by pooling input from a population of OSNs, thereby achieving a higher signal-to-noise ratio than provided by a single OSN (Bhandawat et al., 2007). In summary, the proposed simple 2D model provides a decent approximation of the OSN-to-PN transformation and corroborates the notion that PNs mainly encode OSN spike rate and its rate of change in a nonlinear fashion.\n\nWhat is the functional consequence of acceleration encoding by antennal lobe PNs? In signal processing theory, the time derivative, or rate-of-change operation, advances the phase of a time signal. For example, cos(t) is the time derivative of sin(t), and its phase is advanced by \u03c0/2. Similarly, the rate of change of a sample triangle-shaped signal shows an advancement of a peak time, and its acceleration exhibits a peak time that is further advanced (Figure 4A). Therefore, we reasoned that the computation of the first and second time derivatives (rate of change and acceleration) of odor concentrations by OSN and PNs, respectively, acts to advance peak times of olfactory stimuli. To investigate this idea with a larger set of odor stimuli, we designed a set of triangle-shaped odor waveforms with peak times varying uniformly between 0.6 s and 1.7 s after the stimulus onset (Figure 4B, \u2018odor\u2019 curve in Figure 4C). As shown in the previous experiments with triangle-shaped stimuli (Figure 2B), OSNs responded in a pulse-shaped pattern (Figure 4B), with the peak response advanced by 400\u20131000 ms relative to the stimulus peak (\u2018OSN\u2019 curve in Figure 4C). In response to the same panel of odor stimuli, PNs consistently produced peak output (Figure 4B) at around 200 ms after the stimulus onset, regardless of the dynamics of the odor/OSN signals (\u2018PN\u2019 curve in Figure 4C). For the parabola-shaped odor stimuli (Figure 3A), the peak OSN and PN responses were similarly advanced in time relative to the odor and OSN peaks (right plot in Figure 4C) but were more variable. The advancement of a peak time was previously reported for step-pulse odor stimuli (Bhandawat et al., 2007), and our work confirms this result for a larger set of dynamically varying odor stimuli. Together, we hypothesize that acceleration encoding in the Drosophila antennal lobe allows higher olfactory centers to rapidly respond to onsets of slowly rising odor stimuli.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06651/elife-06651-fig4-v2.jpg)\n\n**Figure 4.:** (A) A cascade of two rate-of-change transformations leads to the advancement of the peak time near to the stimulus onset, in response to a triangle-shaped input. At each stage, the rate of change of the input was computed, and the output was half-wave rectified. (B) 8 triangle-shaped acetone concentration waveforms (left) and the corresponding OSN and PN responses. (C) The peak times for odor, OSN, and PN signals. The advancement in peak times was observed in both the odor-to-OSN and OSN-to-PN transformations. Peak times were color coded so that the color of the marker matches that of the associated triangle signals in (B) and parabola signals in Figure 3 (A). n = 5 OSNs and n = 4 PNs for both triangles and parabolas. Results with error bars indicate mean \u00b1 standard deviation.\n\n## Discussion\n\nWe tested first- and second-order neurons in the Drosophila olfactory system with a wide range of dynamically varying odor concentrations and constructed a simple 2D LN model for the temporal processing of olfactory information. The shape of the 2D nonlinearity and the relatively low prediction error of the model support the hypothesis that the PN spike rate is most strongly dependent on the rate of change of its feedforward OSN input. When combined with the dynamic sensory encoding by OSNs\u2014encoding of odor concentration and its rate of change\u2014PNs signal the rate of change and, most strongly, the acceleration of odor concentration signals to higher brain centers. One remarkable example of the \u2018acceleration encoding\u2019 by PNs is found in the OSN/PN responses to the parabolically rising odor input, where the onset is enormously amplified to create step-like responses in PNs (Figure 2C,I).\n\nTo the best of our knowledge, the encoding of acceleration by an olfactory sensory system has not been demonstrated elsewhere. This sensory encoding mechanism is distinguished from other chemosensory systems. For example, in bacterial chemotaxis, the rate of change of a stimulus is computed and fed directly into its motor system that controls the flagellar rotation (Bourret et al., 1991). The nematode Caenorhabditis elegans also exhibits a local-gradient-based chemotaxis behavior, and neurons in its sensorimotor pathway are shown to compute the rate of change of concentration gradients (Suzuki et al., 2008).\n\nWhy do fruit flies compute acceleration of odor concentrations? How is the acceleration of an olfactory stimulus relevant to a fly's chemotaxis? An efficient chemotaxis strategy should depend on the distribution of odor molecules in the behaviorally relevant range, which can be quantified using a Reynolds number (Weissburg, 2000). Habitats of both nematodes and bacteria have low Reynolds numbers (Re < 1), and thus the odor distribution is primarily determined by a diffusion process. In this environment, the steepest local odor gradient can be directly linked to the location of the odor source, and therefore animals in such environments are expected to encode the rate of change of odor concentrations in order to detect the steepest gradient. In contrast, flying insects experience fluid mechanics that have relatively high Reynolds numbers (Re > 10), with turbulence dictating the distribution of odor molecules over the diffusion process. In this regime, the local odor gradient within an odor plume would be less informative in determining the location of the odor source than the distribution of odor plumes over a macroscopic scale. In fact, it has been well established that insects, including fruit flies, use a strategy of turning upwind during odor plume encounters, a strategy that does not require interpreting local concentration gradients (Budick and Dickinson, 2006).\n\nFurthermore, the relative position of a flying animal and the distribution of odor plumes evolve rapidly over time. It is therefore crucial for flying insects to detect and respond to an encountered odor plume before the fly's position drifts relative to adjacent plumes. We showed that Drosophila's early olfactory system signals the acceleration of odor concentrations to higher brain centers. This encoding mechanism allows an animal to detect the odor onset at a very early phase (Figure 4). Therefore, it is tempting to speculate that the acceleration encoding has evolved in Drosophila to maximize its chance to locate the odor source in a turbulent environment.\n\nIt has also been shown that fruit flies can respond to the spatial difference of the odor concentration between two antennae in both walking and flight (Duistermars et al., 2009; Gaudry et al., 2013). However, even with the lack of spatial sampling ability, fruit fly larvae can locate an odor source, based on the temporal sampling of odor gradients (Louis et al., 2008). Therefore, adult fruit flies may rely on both spatial and temporal sampling methods to locate an odor source, although their relative importance may vary depending on the locomotive state, as Reynolds numbers are different between walking and flight.\n\n## Materials and methods\n\n### Odor delivery\n\nWe built a precise and versatile odor delivery system (Kim et al., 2011). An odorant was diluted in dipropylene glycol, and 20 ml of the resulting mixture was put into a glass vial (30 ml) and subsequently sealed by a screw cap with a silicone septa. Inlet and outlet needles were inserted into the vial headspace. The saturated vapor in this headspace was puffed by directing a low-flow air stream (\u2264100 ml/min) from an air cylinder (UN1002; TechAir, White Plains, NY) into the odor vial by opening inlet and outlet solenoid valves (Series 10; Parker-Hannifin Corporation, Cleveland, OH). Subsequently, the outlet needle carried the saturated vapor from inside the vial to a custom laminar mixer where the odor flow was combined with a strong carrier flow (800 ml/min). The mixer was carefully designed so as to minimize the turbulence that could be formed when the low-flow odor stream is added to a high-flow-rate carrier stream. The output of the mixer was then directed to the antennae and maxillary palps of a prepared animal through a glass capillary (1 mm inner diameter). The interval between two consecutive puffs was between 45 s and 70 s depending on the amount of vapor consumed in each puff, and the mixture was replenished about every 10 trials. All flows were electronically controlled by a miniature pressure controller (VSO-EP; Parker-Hannifin, OH) and measured using a digital flow meter (PV9000; Key Instruments, Trevose, PA) in real time. After hitting the animal, the odor flow was immediately sucked into a probe and measured by a photoionization detector (PID; Aurora Scientific, Canada) with 1 l/min flow rate. The output of the PID was digitally sampled at 10 kHz and later advanced by 2 ms in order to compensate for the latency caused by the suction probe. In order to convert the PID output voltage into the odor concentration in parts per million (ppm), we regularly (every 10 trials) measured the output of the PID with a calibration odor (3% propylene) and estimated the general sensitivity of the PID, which gradually decays over time. The PID sensitivity ratio of actual odor to standard odor was measured in a separate experiment with a fully saturated odor vapor and used to calculate a scaling factor between the PID output (in Volts) and the absolute odor concentration (in ppm) (Kim et al., 2011).\n\n### Drosophila stocks\n\nDrosophila stocks were maintained at room temperature on a 12-hr light/12-hr dark schedule and kept in standard plastic vials containing a cornmeal agar medium. All experiments were carried out with female flies of the NP3062-GAL4/NP3062-GAL4;UAS-mCD8::GFP/UAS-mCD8::GFP;+/+ genotype. NP3062-GAL flies were kindly provided by Kei Ito.\n\n### Electrophysiology\n\nFemale flies 2\u20135 days posteclosion were used for both OSN and PN recordings. For the OSN recordings, single basiconic sensilla were targeted with electrolytically sharpened tungsten electrodes to measure the aggregate electrical activity of OSNs housed in these sensilla (Figure 1B) (Kim et al., 2011). Recordings were analyzed by a custom MATLAB code (Source code 1) to sort out action potentials from Or59b or Or7a OSNs (Kim et al., 2011). For the PN recordings, a female fly was gently immobilized beneath a cellulose acetate film with an adhesive (Datta et al., 2008). The film was then carefully transferred to a petri dish in which a circular hole was made at the center. When placing an animal in the hole, the location of the head was carefully adjusted so that the antennae and maxillary pals were located strictly within the odor stream between the odor delivery tubing and the suction probe, both of which were embedded in the petri dish. Antennal lobes were exposed by gently removing a head cuticle as well as the film under saline solution containing 108 mM NaCl, 5 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, and 5 mM HEPES (pH, 7.5; 265 mOsm) (Wang et al., 2003). In order to access the PN somas, the perineural sheath was weakened by a 1\u20132 min treatment with 1 mg/ml collagenase (Type I Collagenase; Sigma\u2013Aldrich, St. Louis, MO). The dorsal part of the sheath was then gently ruptured by a sharp quartz glass electrode using a micromanipulator (MP-285; Sutter Instrument, Novato, CA). A ground electrode was placed into the saline solution and connected to a headstage amplifier (CV-7B; Molecular Devices, Sunnyvale, CA).\n\nIn order to record action potentials of a single PN, a borosilicate patch electrode (7\u201310 M\u03a9 tip resistance) filled with saline solution was attached to the target cell and gentle suction was applied through the electrode capillary until a loose seal (50\u2013100 M\u03a9) was formed. The current was amplified (MultiClamp 700B; Molecular Devices, CA), low-pass filtered at 1.2 kHz, sampled at 10 kHz (Digidata 1322A; Axon Instruments), and stored on a computer by software (Clampex; Molecular Devices, CA). The animal was alive and active for a few hours as indicated by the spontaneous extension of its legs. Fresh oxygenated saline solution was perfused throughout the experiment. Finally, the PNs innervating the DM4 and DL5 glomeruli were identified by genetic means, using an enhancer trap line expressing Green Fluorescent Protein (GFP) in these cells. The identity of recorded cells was further verified by their odor response and the location of the soma in the dorsal cluster of the antennal lobe. Spike sequences were detected and sorted offline using custom software (Source code 1), written in MATLAB (MathWorks, Natick, MA).\n\n### Estimating spike rates, rate of change, and acceleration signals\n\nSpike rates of OSNs and PNs were estimated by constructing a peristimulus\u2013time histogram (PSTH) with a 100-ms bin size and a 75-ms overlap between adjacent bins. For the correlation analysis and 2D model prediction, the rate of change and acceleration components of odor and OSN traces were estimated by a forward difference equation, with the difference time interval as the scaling factor; for example, $\\frac{dx}{dt}=[x(t\u2212\u0394)\u2212x(t)]/\u0394$, where x represents either the odor concentration or the OSN response, and \u0394 denotes the time interval. The time interval was 50 ms for the odor rate of change, 100 ms for odor acceleration, the OSN rate of change and OSN acceleration. Since the output of the forward difference equation is sensitive to high-frequency components of the signal, we low-pass filtered the amplitude and rate-of-change signals before deriving the rate of change and acceleration, respectively. Cut-off frequencies of the low-pass filters were 20 Hz for the odor amplitude, 10 Hz for the odor rate of change, 4 Hz for the OSN spike rate, and 4 Hz for the OSN rate of change.\n\n### Cross-correlation analyses between input features and OSN/PN output\n\nThe cross-correlation coefficient, \u03f1(x,y) between an input x and the corresponding output y was computed as a normalized cross-covariance function; that is,\n\n$$\n\u03f1(x,y)=\\frac{\\frac{1}{N}\\sum_{i=1}^{N}(x[i]\u2212\\mu_{x})(y[i]\u2212\\mu_{y})}{\\sigma_{x}\\sigma_{y}},\n$$\n\nwhere \u03bc and \u03c3 are, respectively, the mean and standard deviation of the variable in the subscript.\n\n### Estimating the 2D nonlinearity\n\nWe hypothesized a nonlinear function f(.,.) that takes inputs from the OSN spike rate y and its rate of change dy/dt and whose output corresponds to the PN spike rate z; for example,\n\n$$\nz=f(y,\\frac{dy}{dt}),\n$$\n\nand f(.,.) was estimated using a 2D ridge regression method on 100 \u00d7 100 grids (Kim et al., 2011).\n",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "6a4f0a1c-e39d-4e30-8450-4b99a966f8a2",
+      "submission_id": "9fe01e9b-064f-446b-8942-2e3fbaff8231",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06651.011](https://doi.org/10.7554/eLife.06651.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cProjection neurons in Drosophila antennal lobes signal the acceleration of odor concentrations\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom, Ronald L Calabrese, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors present a systematic electrophysiological analysis of the sensory transformation in the OSN (antennae) and PN (olfactory lobe) layers of the adult Drosophila olfactory system. They design clever and precise olfactory stimuli to dissect the dynamics of the responses of OSNs and PNs and develop a 2D model for the OSN to PN transformation. They conclude that OSNs respond to stimulus amplitude and rate of change while PNs respond to OSN spike rate and rate of change. Thus PN respond mainly to odor rate of change and acceleration. These results indicate that PNs enable flies to reliably respond to onsets of slowly rising odorant gradients.\n\nThe writing is clear and lively and the paper is nicely illustrated. The data provided are substantive and combined with insightful analyses and modeling argues strongly for the authors' conclusions. The Discussion is lively but does not place the work in a more general context of a fly navigating an odor plume and thus could be profitably expanded.\n\nThere were some concerns that must be addressed:\n\n1) The novel finding here is with regard to the PN responses as previous work, albeit using less elegant stimuli, already characterized the dynamics of OSN activity to odor. Thus the Discussion should reflect this focus on the PNs.\n\n2) The Linear-Nonlinear-Poisson model of Figure 3\u2013figure supplement 2 caused considerable concern among the reviewers as the lack of fit at white noise onset was puzzling, causing them to wonder whether the technique has been properly applied. Moreover, the result is a negative one and does not impact upon the approach used by the authors. This analysis should be deleted and not discussed.\n\n3) In revising the Discussion the authors should focus more on the implication for coding by PNs in more natural fluid conditions. What advantage does the second derivative coding of odor concentration confer to the detection or retention of an odor signal in flight through turbulent flow regimes that does not shift smoothly along polynomial trajectories?\n\n4) The statistical concerns of Reviewer 2 should be thoroughly addressed.\n\nThese results have important implications for olfactory processing of realistic odor plumes in animals and indeed for sensory processing in general. Moreover, the results here have important behavior implications; they will be important in understanding chemotaxis.\n\nMinor comments:\n\n1) Figure 2: there seems to be an alignment problem. I suspect that the magenta \u201cL\u201d has been concatenated with the response line plots in A-C, but has been aligned with the response line plots in D-F, the effect of which is that the stimulus appears to lag behind the response when viewed along the vertical axis.\n\n2) Although I do not myself need to see it, the authors are likely going to encounter some resistance to the profound lack of p-values. Statistical tests are frequently misused, but the authors could consider whether indicating mean correlation coefficients in the absence of some sort of statistic invites criticism.\n\n3) In Figure 3, the simulations show a lot of noise at low odor concentration. This is a liability of any system sensitive to the first temporal derivative of stimulus intensity without some additional nonlinearity such as thresholding. This issue is examined in the visual system (Pahlberg and Sampath Bioessays 2011). Some discussion is warranted.\n",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b645fe7-5b67-4bbb-8da1-ba680af64aca",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C1",
+      "claim": "Temporal experience of odor gradients is important in spatial orientation of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal experience of odor gradients is important in spatial orientation of animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about animal behavior that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7afa34e0-c45d-4af0-bd70-54cca5d04fdd",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C2",
+      "claim": "The fruit fly Drosophila melanogaster exhibits robust odor-guided behaviors in an odor gradient field.",
+      "claim_type": "EXPLICIT",
+      "source": "The fruit fly Drosophila melanogaster exhibits robust odor-guided behaviors in an odor gradient field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and is referenced in the introduction with specific citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "1588366b-fb32-434c-80ce-0e9f947e1614",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C3",
+      "claim": "PN output strongly signals the OSN spike rate and its rate of change.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant temporal transformation between OSN and PN spike patterns, manifested by the PN output strongly signaling the OSN spike rate and its rate of change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in Figure 2 and correlation analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "fe42c506-139b-4f2e-9574-b604be67ff08",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C4",
+      "claim": "A simple two-dimensional model admitting the OSN spike rate and its rate of change as inputs closely predicted the PN output.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple two-dimensional model admitting the OSN spike rate and its rate of change as inputs closely predicted the PN output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modeling results shown in Figure 3, where the model predictions are compared with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e02ec4ae-bc45-4ad7-90f4-ffad96a30625",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C5",
+      "claim": "When cascaded with the rate-of-change encoding by OSNs, PNs primarily signal the acceleration and the rate of change of dynamic odor stimuli to higher brain centers.",
+      "claim_type": "EXPLICIT",
+      "source": "When cascaded with the rate-of-change encoding by OSNs, PNs primarily signal the acceleration and the rate of change of dynamic odor stimuli to higher brain centers, thereby enabling animals to reliably respond to the onsets of odor concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing the correlation between PN output and odor acceleration (Figure 2L) and the cascade of transformations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "5088d074-e9d6-4175-9362-bb08b073449d",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C6",
+      "claim": "Odor distribution in nature is intermittent and dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "Odor distribution in nature is intermittent and dynamic (Murlis et al., 1992; Vickers et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "396ccdde-f360-42f6-8067-2901f5be590a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C7",
+      "claim": "Animals have evolved the ability to detect and respond to temporal variation of odor stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "animals have evolved the ability to detect and respond to temporal variation of odor stimuli (David et al., 1983; Thesen et al., 1993; Vickers et al., 2001; Porter et al., 2007; Semmelhack and Wang, 2009; Kato et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "2ce09979-30de-41b5-929f-2e0d4e1156e7",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C8",
+      "claim": "Drosophila larvae with only a single functional olfactory sensory neuron are capable of moving toward a droplet of an attractive odor by actively orienting themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of the most sophisticated examples, Drosophila larvae with only a single functional olfactory sensory neuron (OSN) are capable of moving toward a droplet of an attractive odor by actively orienting themselves (Louis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Louis et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e525d9b7-01f7-4d96-8048-8d1ab7de7f8b",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C9",
+      "claim": "Adult fruit flies exhibit robust odor-guided behaviors such as turning upwind in flight upon contact with an attractive odor plume.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, adult fruit flies exhibit robust odor-guided behaviors such as turning upwind in flight upon contact with an attractive odor plume (Budick and Dickinson, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Budick and Dickinson, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "9d888942-7e02-4fc0-86a5-1733281b3ac8",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C10",
+      "claim": "Adult fruit flies stay within a specific odor zone.",
+      "claim_type": "EXPLICIT",
+      "source": "adult fruit flies exhibit robust odor-guided behaviors such as turning upwind in flight upon contact with an attractive odor plume (Budick and Dickinson, 2006) and staying within a specific odor zone (Semmelhack and Wang, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Semmelhack and Wang, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "dc8fe861-8efc-458f-aac6-5e2c782faca5",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C11",
+      "claim": "It is essential for any olfactory system to process time-varying features of olfactory stimuli and supply behaviorally relevant information to higher brain centers to enable odor-guided tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to enable such odor-guided tasks, it is essential for any olfactory system to process time-varying features of olfactory stimuli and supply behaviorally relevant information to higher brain centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the behavioral capabilities described and general principles of sensory processing.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "67c650d0-0d03-4b62-bf3e-41a63f067267",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C12",
+      "claim": "Several recent studies have observed significant temporal processing of odor signals in insect early olfactory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have investigated how dynamic olfactory stimuli are processed in insect early olfactory systems (systems consisting principally of OSNs and projection neurons [PNs]) and observed significant temporal processing of odor signals (Bhandawat et al., 2007; Geffen et al., 2009; Kim et al., 2011; Nagel and Wilson, 2011; Martelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "88d90f87-a66a-4403-a8d5-c3d91fcad842",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C13",
+      "claim": "Most studies on dynamic olfactory stimuli employed a simple odor delivery system that generated step-pulse-like odor stimuli without directly monitoring the actual odor concentration levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these studies employed a simple odor delivery system that generated step-pulse-like odor stimuli without directly monitoring the actual odor concentration levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of previous research methods based on the authors' review of the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7215c9ec-e22b-4099-9a0d-66cd7b4d80d1",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C14",
+      "claim": "For a rigorous understanding of sensory processing, it is essential to precisely measure the input stimuli and systematically explore the input space.",
+      "claim_type": "EXPLICIT",
+      "source": "For a rigorous understanding of sensory processing, however, it is essential to precisely measure the input stimuli and systematically explore the input space, as has been successfully done in the field of vision and audition (Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological principle supported by citation to work in other sensory modalities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "d2a3fdc0-5084-448f-9da6-8fb35f0122d1",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C15",
+      "claim": "Natural odor plumes are encountered in various spatiotemporal patterns, and their dynamics and statistics can influence the neural encoding mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, natural odor plumes are encountered in various spatiotemporal patterns, and their dynamics and statistics can influence the neural encoding mechanism (Brenner et al., 2000; Vickers et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a9961db3-ae17-4d09-aa18-07264a71def8",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C16",
+      "claim": "In Drosophila, OSNs expressing the same receptors connect with PNs in one of roughly 50 spherical compartments, termed olfactory glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, OSNs expressing the same receptors connect with PNs in one of roughly 50 spherical compartments, termed olfactory glomeruli, which constitute a deutocerebral neuropil called the antennal lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about the Drosophila olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "35e26515-b1d2-4bb8-891a-0b5a0dbe77ed",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C17",
+      "claim": "Olfactory glomeruli constitute a deutocerebral neuropil called the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, OSNs expressing the same receptors connect with PNs in one of roughly 50 spherical compartments, termed olfactory glomeruli, which constitute a deutocerebral neuropil called the antennal lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about the Drosophila olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a35604e2-692e-4a6c-8427-48caa86c1ebb",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C18",
+      "claim": "PNs relay olfactory information to higher brain centers such as the mushroom body and the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs subsequently relay olfactory information to higher brain centers such as the mushroom body and the lateral horn (Stocker et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stocker et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "94916181-f2bc-4aaa-9b34-d0124b2ffa26",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C19",
+      "claim": "Drosophila OSNs encode not only the odor concentration but also its rate of change as a function of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent studies independently reported that Drosophila OSNs encode not only the odor concentration but also its rate of change as a function of time (Kim et al., 2011; Nagel and Wilson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to two independent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "0213a80e-61ef-4f24-bb3f-c38b5161bed7",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C20",
+      "claim": "The novel odor delivery system can reliably produce various odor concentration waveforms and provide measurements of the odor concentration with a millisecond resolution on every experiment trial.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a novel odor delivery system that can reliably produce various odor concentration waveforms and provide measurements of the odor concentration with a millisecond resolution on every experiment trial (Figure 1A,B) (Kim et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the description of the experimental setup shown in Figure 1A,B and referenced in Kim et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "2cb032b3-5ad2-4028-9984-1c419a895fa7",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C21",
+      "claim": "The observed odor concentrations were closely matched between the OSN and PN assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed odor concentrations were closely matched between the two assays (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "bd74fd92-afa2-479d-937b-5ab64703c198",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C22",
+      "claim": "Acetone was used as the primary odorant because its low ionization potential afforded a high signal-to-noise ratio in odor concentration measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We used acetone as the primary odorant because its low ionization potential afforded a high signal-to-noise ratio in our odor concentration measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice explained by the authors based on the physical properties of acetone.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "620613ce-cf23-4c8f-84fd-31ce3cda8e56",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C23",
+      "claim": "The dynamics of OSN and PN responses differed significantly from their respective feedforward inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of OSN and PN responses differed significantly from their respective feedforward inputs, and all responses initiated within a few tens of milliseconds of the odor onset (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "579a8634-28e0-43cb-8b1d-207961e26809",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C24",
+      "claim": "All OSN and PN responses initiated within a few tens of milliseconds of the odor onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of OSN and PN responses differed significantly from their respective feedforward inputs, and all responses initiated within a few tens of milliseconds of the odor onset (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "ed8042fa-18fa-4539-98d3-0a7518a347b5",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C25",
+      "claim": "PNs generally showed a bigger peak spike rate than the presynaptic OSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs generally showed a bigger peak spike rate and exhibited more phasic spiking patterns than the presynaptic OSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data comparing OSN and PN responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "5d8f8431-edaf-4508-aa38-eb3ca1f35f6c",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C26",
+      "claim": "PNs exhibited more phasic spiking patterns than the presynaptic OSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs generally showed a bigger peak spike rate and exhibited more phasic spiking patterns than the presynaptic OSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data comparing OSN and PN responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7ce84421-df58-4d30-9504-d547c41f3cd4",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C27",
+      "claim": "OSNs responded most strongly to polynomial waveforms when the odor concentration rose rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Kim et al., 2011; Nagel and Wilson, 2011), OSNs responded most strongly to polynomial waveforms when the odor concentration rose rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and is consistent with previous reports cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a29f36be-64b8-4505-a659-9163c016d984",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C28",
+      "claim": "For the ramp odor signal, OSN responses were the exact rate-of-change function of their input: a step output to a ramp input.",
+      "claim_type": "EXPLICIT",
+      "source": "For the ramp and parabola odor signals, OSN responses were the exact rate-of-change function of their input: a step output to a ramp input (Figure 2B,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "573dc3a6-cb18-40ba-907c-6cb8b8625743",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C29",
+      "claim": "For the parabola odor signal, OSN responses were the exact rate-of-change function of their input: a ramp output to a parabola input.",
+      "claim_type": "EXPLICIT",
+      "source": "For the ramp and parabola odor signals, OSN responses were the exact rate-of-change function of their input: a step output to a ramp input (Figure 2B,E) and a ramp output to a parabola input (Figure 2C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "164548ae-9824-4ea0-bf53-192ee31ddd83",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C30",
+      "claim": "The pattern of rate-of-change encoding by OSNs was preserved for different combinations of odorants and OSN-PN pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of encoding was preserved for different combinations of odorants and OSN-PN pairs (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "f6b656bb-7463-4c47-ab21-31f021e42585",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C31",
+      "claim": "The correlation was strong between the OSN output and both odor concentration and its rate of change.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation was strong between the OSN output and both odor concentration and its rate of change, but weak between the OSN output and the acceleration of odor concentration (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7a1f75f0-b028-411d-9603-bf90b369d901",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C32",
+      "claim": "The correlation was weak between the OSN output and the acceleration of odor concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation was strong between the OSN output and both odor concentration and its rate of change, but weak between the OSN output and the acceleration of odor concentration (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "832aa671-b978-4ef9-bfd6-e3cac40870cd",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C33",
+      "claim": "PN responses exhibited bigger peak amplitude than OSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the very same panel of olfactory stimuli, PN responses exhibited bigger peak amplitude and more stereotyped temporal patterns than OSNs (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "f4449dae-81a5-4878-b6d3-ca35d9f86935",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C34",
+      "claim": "PN responses exhibited more stereotyped temporal patterns than OSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the very same panel of olfactory stimuli, PN responses exhibited bigger peak amplitude and more stereotyped temporal patterns than OSNs (Figure 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "fce7cddd-2128-4a43-bce4-d9754051b041",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C35",
+      "claim": "All PN responses transiently peaked at the time of the odor onset.",
+      "claim_type": "EXPLICIT",
+      "source": "All PN responses transiently peaked at the time of the odor onset, and their peak times were on average advanced from the OSN peak times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data on PN responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "973df95e-c5bb-430c-bdd1-500f93d96115",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C36",
+      "claim": "PN peak times were on average advanced from the OSN peak times.",
+      "claim_type": "EXPLICIT",
+      "source": "All PN responses transiently peaked at the time of the odor onset, and their peak times were on average advanced from the OSN peak times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data comparing OSN and PN peak times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "fce4e62d-b343-4454-9d61-f98bdea9995d",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C37",
+      "claim": "In response to ramp-shaped OSN signals, PNs exhibited a rapid step response.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in response to ramp-shaped OSN signals, PNs exhibited a rapid step response (Figure 2F,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "51393ea1-eebd-4cc5-80f5-a66746780021",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C38",
+      "claim": "To step-like OSN signals, PNs showed a phasic onset response, followed by a tonic spiking pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "To step-like OSN signals, PN showed a phasic onset response, followed by a tonic spiking pattern (Figure 2E,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "225e7cf6-ea82-4926-be3c-1649af97941c",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C39",
+      "claim": "The OSN-to-PN input/output relationships are reminiscent of the rate-of-change encoding in the odor-to-OSN transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These input/output relationships are reminiscent of the rate-of-change encoding in the odor-to-OSN transformation, where the ramp and step odor signals were similarly transformed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the two transformations observed in the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "15319fe9-f328-4421-b850-71583eee781d",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C40",
+      "claim": "The OSN-to-PN transformation suggests a rapid adaptation between OSNs and PNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysically, this phenomenon suggests a rapid adaptation between OSNs and PNs, which is in agreement with previous reports demonstrating strong short-term depression in synapses between OSNs and PNs (Kazama and Wilson, 2008, 2009; Nagel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed input/output relationships, supported by citations to previous work on synaptic depression.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "fa1c7337-3308-46cb-9f53-3fe0570828a5",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C41",
+      "claim": "There is strong short-term depression in synapses between OSNs and PNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysically, this phenomenon suggests a rapid adaptation between OSNs and PNs, which is in agreement with previous reports demonstrating strong short-term depression in synapses between OSNs and PNs (Kazama and Wilson, 2008, 2009; Nagel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e61bbc58-fbaa-4624-a482-1ce94d4b3247",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C42",
+      "claim": "There is a strong correlation between the PN spike rate and the rate of change of the OSN spike rate.",
+      "claim_type": "EXPLICIT",
+      "source": "From a modeling perspective, this observation predicted a strong correlation between the PN spike rate and the rate of change of the OSN spike rate. A correlation analysis between the PN output and three different input features\u2014OSN spike rate, rate of change, and acceleration\u2014confirmed this prediction (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "baa09c6b-cb79-4290-8f65-48260d315e2d",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C43",
+      "claim": "PN responses can be modeled as a function of the OSN spike rate and its rate of change, at least for the tested class of odor stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this supports the hypothesis that PN responses can be modeled as a function of the OSN spike rate and its rate of change, at least for the tested class of odor stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the correlation analysis and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "b118432c-aa19-47dd-b7ea-ed43771f5329",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C44",
+      "claim": "The proposed model of the OSN-to-PN transformation comprises two input blocks: the OSN spike rate and its rate of change, followed by a 2D nonlinearity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose a simple model of the OSN-to-PN transformation comprising two input blocks: the OSN spike rate and its rate of change, followed by a 2D nonlinearity that maps these inputs into the PN spike rate (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the model proposed by the authors, illustrated in Figure 3D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "8f061b4c-c4c1-47f2-a8e1-04fa9806d129",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C45",
+      "claim": "The model has the structure of a classical 2D LN model with its linear blocks postulated as amplitude and rate-of-change filters.",
+      "claim_type": "EXPLICIT",
+      "source": "The model has the structure of a classical 2D LN model with its linear blocks postulated as amplitude and rate-of-change filters (Brenner et al., 2000; Geffen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model structure, with citations to previous work on LN models.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "0a499971-583f-4f44-bdf2-4cd8206ca3ac",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C46",
+      "claim": "An ensemble of triangle-shaped inputs is suitable for efficiently sampling the hypothesized PN input space.",
+      "claim_type": "EXPLICIT",
+      "source": "An ensemble of triangle-shaped inputs was shown to be suitable for this purpose, since each up/down ramp stimulus tests the target system with a distinct pair of positive and negative gradients while also sweeping a wide range of input amplitudes (Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice explained by the authors and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "65ef30b4-dc3d-4136-b4dd-f706c4bd1ab6",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C47",
+      "claim": "The estimated 2D nonlinearity showed a strong dependency on the rate-of-change of OSN spike rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated 2D nonlinearity showed a strong dependency on the rate-of-change of OSN spike rate (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the estimated nonlinearity shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "dbb2068f-5993-45a5-ad69-fae9dcbecc42",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C48",
+      "claim": "When the nonlinearity was estimated for samples with a fixed odor concentration value, the PN spike rate rose almost linearly with respect to the rate of change.",
+      "claim_type": "EXPLICIT",
+      "source": "When the nonlinearity was estimated for samples with a fixed odor concentration value, the PN spike rate rose almost linearly with respect to the rate of change (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7baf1ef5-afb4-432a-b75f-7d880f5c72ab",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C49",
+      "claim": "The gain of the PN output with respect to the OSN rate of change decreased monotonically with concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the gain of the PN output with respect to the OSN rate of change decreased monotonically with concentration, suggesting that at least a 2D model is required to describe the OSN-to-PN transformation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "c9be76f0-a288-462d-874a-0523dd65a2e5",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C50",
+      "claim": "At least a 2D model is required to describe the OSN-to-PN transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the gain of the PN output with respect to the OSN rate of change decreased monotonically with concentration, suggesting that at least a 2D model is required to describe the OSN-to-PN transformation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that gain varies with concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "9fe5989c-ac54-4064-a66a-a2f3b7dc8531",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C51",
+      "claim": "With step, ramp, and parabola odor inputs, the experimental PN outputs were closely matched by the model (root-mean-square error = 25 spike/s).",
+      "claim_type": "EXPLICIT",
+      "source": "With step, ramp, and parabola odor inputs, the experimental outputs were closely matched by the model (root-mean-square error = 25 spike/s, Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the model validation data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "82fb7b44-7d88-4819-9ef4-0129ed4c15e3",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C52",
+      "claim": "The model output often overestimated the actual PN spike rate before and after the stimulus interval.",
+      "claim_type": "EXPLICIT",
+      "source": "While the odor-evoked responses were well matched by the model, including peak times and amplitudes, the model output often overestimated the actual PN spike rate before and after the stimulus interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing model predictions with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "55b2bc97-ae89-45f8-a843-4e998d89ffd0",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C53",
+      "claim": "The estimated nonlinearity exhibits a relatively high slope at low input amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the estimated nonlinearity exhibits a relatively high slope at low input amplitudes (Figure 3\u2014figure supplement 1), which renders the system highly sensitive to the noisy fluctuations at low OSN spike rates (Pahlberg and Sampath, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the estimated nonlinearity shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "d5cc65e0-730e-4f1b-82a0-df116210ac6c",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C54",
+      "claim": "The high slope at low input amplitudes renders the system highly sensitive to noisy fluctuations at low OSN spike rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the estimated nonlinearity exhibits a relatively high slope at low input amplitudes (Figure 3\u2014figure supplement 1), which renders the system highly sensitive to the noisy fluctuations at low OSN spike rates (Pahlberg and Sampath, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the nonlinearity shape, supported by citation to Pahlberg and Sampath, 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "659eb90f-b863-44af-be9c-e6063e0657cf",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C55",
+      "claim": "The noise sensitivity problem is thought to be mitigated in olfactory glomeruli by pooling input from a population of OSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is thought to be mitigated in olfactory glomeruli by pooling input from a population of OSNs, thereby achieving a higher signal-to-noise ratio than provided by a single OSN (Bhandawat et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how the system might work in vivo, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "91928a2d-7452-4f80-b1d1-68b6ee762c4a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C56",
+      "claim": "Pooling input from a population of OSNs achieves a higher signal-to-noise ratio than provided by a single OSN.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is thought to be mitigated in olfactory glomeruli by pooling input from a population of OSNs, thereby achieving a higher signal-to-noise ratio than provided by a single OSN (Bhandawat et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bhandawat et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a82cfe11-4d83-4c65-a7b3-98206220b442",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C57",
+      "claim": "The proposed simple 2D model provides a decent approximation of the OSN-to-PN transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the proposed simple 2D model provides a decent approximation of the OSN-to-PN transformation and corroborates the notion that PNs mainly encode OSN spike rate and its rate of change in a nonlinear fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the model validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "3756a13a-e0fb-4b14-9024-47781c1e7ef6",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C58",
+      "claim": "PNs mainly encode OSN spike rate and its rate of change in a nonlinear fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the proposed simple 2D model provides a decent approximation of the OSN-to-PN transformation and corroborates the notion that PNs mainly encode OSN spike rate and its rate of change in a nonlinear fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the modeling results and correlation analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a29b5eaf-8a59-449f-aece-e4eb6440f5d8",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C59",
+      "claim": "The time derivative, or rate-of-change operation, advances the phase of a time signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In signal processing theory, the time derivative, or rate-of-change operation, advances the phase of a time signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from signal processing theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "224744cc-6c1b-4129-bb75-32f22b9775e3",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C60",
+      "claim": "The rate of change of a sample triangle-shaped signal shows an advancement of a peak time.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the rate of change of a sample triangle-shaped signal shows an advancement of a peak time, and its acceleration exhibits a peak time that is further advanced (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "1410594a-6e5f-445d-8424-2a782c5841dd",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C61",
+      "claim": "The acceleration of a triangle-shaped signal exhibits a peak time that is further advanced compared to its rate of change.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the rate of change of a sample triangle-shaped signal shows an advancement of a peak time, and its acceleration exhibits a peak time that is further advanced (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "6df5a7a8-a5a4-4ea6-9eb0-f0103ee286a3",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C62",
+      "claim": "The computation of the first and second time derivatives (rate of change and acceleration) of odor concentrations by OSN and PNs acts to advance peak times of olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we reasoned that the computation of the first and second time derivatives (rate of change and acceleration) of odor concentrations by OSN and PNs, respectively, acts to advance peak times of olfactory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on signal processing theory and the observed transformations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "118b0111-e173-4090-9501-3f1847528f1a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C63",
+      "claim": "OSNs responded in a pulse-shaped pattern to triangle-shaped odor waveforms, with the peak response advanced by 400\u20131000 ms relative to the stimulus peak.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the previous experiments with triangle-shaped stimuli (Figure 2B), OSNs responded in a pulse-shaped pattern (Figure 4B), with the peak response advanced by 400\u20131000 ms relative to the stimulus peak ('OSN' curve in Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "91df7e63-fe9b-4ecf-8b12-02c16a06d512",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C64",
+      "claim": "In response to triangle-shaped odor stimuli, PNs consistently produced peak output at around 200 ms after the stimulus onset, regardless of the dynamics of the odor/OSN signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to the same panel of odor stimuli, PNs consistently produced peak output (Figure 4B) at around 200 ms after the stimulus onset, regardless of the dynamics of the odor/OSN signals ('PN' curve in Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "f94a16d4-aad2-4afe-bd94-191fb76bb492",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C65",
+      "claim": "For the parabola-shaped odor stimuli, the peak OSN and PN responses were similarly advanced in time relative to the odor and OSN peaks but were more variable.",
+      "claim_type": "EXPLICIT",
+      "source": "For the parabola-shaped odor stimuli (Figure 3A), the peak OSN and PN responses were similarly advanced in time relative to the odor and OSN peaks (right plot in Figure 4C) but were more variable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e928bb6b-2774-4250-bf25-05950f32f22e",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C66",
+      "claim": "The advancement of a peak time was previously reported for step-pulse odor stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The advancement of a peak time was previously reported for step-pulse odor stimuli (Bhandawat et al., 2007), and our work confirms this result for a larger set of dynamically varying odor stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bhandawat et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e6fe0624-53d1-465f-bbae-bdc442d96ddf",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C67",
+      "claim": "The current work confirms the advancement of peak time for a larger set of dynamically varying odor stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The advancement of a peak time was previously reported for step-pulse odor stimuli (Bhandawat et al., 2007), and our work confirms this result for a larger set of dynamically varying odor stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the contribution of the current work, supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "b486ace9-9d1a-44a1-bf7b-9f0dca6a9109",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C68",
+      "claim": "Acceleration encoding in the Drosophila antennal lobe allows higher olfactory centers to rapidly respond to onsets of slowly rising odor stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, we hypothesize that acceleration encoding in the Drosophila antennal lobe allows higher olfactory centers to rapidly respond to onsets of slowly rising odor stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed acceleration encoding and peak time advancement.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a700f368-ba1e-40ac-af4a-4e2b3b4cecbb",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C69",
+      "claim": "The shape of the 2D nonlinearity and the relatively low prediction error of the model support the hypothesis that the PN spike rate is most strongly dependent on the rate of change of its feedforward OSN input.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of the 2D nonlinearity and the relatively low prediction error of the model support the hypothesis that the PN spike rate is most strongly dependent on the rate of change of its feedforward OSN input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "3770b98d-c923-4fd9-b660-5fc6bf916bd7",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C70",
+      "claim": "When combined with the dynamic sensory encoding by OSNs, PNs signal the rate of change and, most strongly, the acceleration of odor concentration signals to higher brain centers.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with the dynamic sensory encoding by OSNs\u2014encoding of odor concentration and its rate of change\u2014PNs signal the rate of change and, most strongly, the acceleration of odor concentration signals to higher brain centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the cascade of transformations observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "4e80e6e2-557b-4837-a1c8-8134acb01993",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C71",
+      "claim": "In response to parabolically rising odor input, the onset is enormously amplified to create step-like responses in PNs.",
+      "claim_type": "EXPLICIT",
+      "source": "One remarkable example of the 'acceleration encoding' by PNs is found in the OSN/PN responses to the parabolically rising odor input, where the onset is enormously amplified to create step-like responses in PNs (Figure 2C,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "f3db13b2-bdea-4bcb-9700-c47f74c8a8db",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C72",
+      "claim": "The encoding of acceleration by an olfactory sensory system has not been demonstrated elsewhere to the best of the authors' knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, the encoding of acceleration by an olfactory sensory system has not been demonstrated elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e7d530c6-1dfe-48ef-a0b1-a40772b6cfe6",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C73",
+      "claim": "This sensory encoding mechanism is distinguished from other chemosensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This sensory encoding mechanism is distinguished from other chemosensory systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement based on the authors' knowledge of other chemosensory systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "febbad74-4a52-4c13-ae0b-c230435d8fbc",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C74",
+      "claim": "In bacterial chemotaxis, the rate of change of a stimulus is computed and fed directly into its motor system that controls the flagellar rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in bacterial chemotaxis, the rate of change of a stimulus is computed and fed directly into its motor system that controls the flagellar rotation (Bourret et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bourret et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "370bccde-1449-49a5-90a3-37a5f3b45099",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C75",
+      "claim": "The nematode Caenorhabditis elegans exhibits a local-gradient-based chemotaxis behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans also exhibits a local-gradient-based chemotaxis behavior, and neurons in its sensorimotor pathway are shown to compute the rate of change of concentration gradients (Suzuki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Suzuki et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "cd4f51f6-ab3b-4b43-80ed-8e344e439f79",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C76",
+      "claim": "Neurons in the C. elegans sensorimotor pathway compute the rate of change of concentration gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans also exhibits a local-gradient-based chemotaxis behavior, and neurons in its sensorimotor pathway are shown to compute the rate of change of concentration gradients (Suzuki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Suzuki et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "d29e347e-988c-4630-a945-4d8b9dd5af12",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C77",
+      "claim": "An efficient chemotaxis strategy should depend on the distribution of odor molecules in the behaviorally relevant range, which can be quantified using a Reynolds number.",
+      "claim_type": "EXPLICIT",
+      "source": "An efficient chemotaxis strategy should depend on the distribution of odor molecules in the behaviorally relevant range, which can be quantified using a Reynolds number (Weissburg, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle supported by citation to Weissburg, 2000.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "73c7d4f4-de1b-4c28-9963-f45361bb479c",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C78",
+      "claim": "Habitats of both nematodes and bacteria have low Reynolds numbers (Re < 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Habitats of both nematodes and bacteria have low Reynolds numbers (Re < 1), and thus the odor distribution is primarily determined by a diffusion process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the fluid mechanics of these organisms' environments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "c6851af9-8fbe-4bfb-bc33-e0ae987482b6",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C79",
+      "claim": "In low Reynolds number environments, the odor distribution is primarily determined by a diffusion process.",
+      "claim_type": "EXPLICIT",
+      "source": "Habitats of both nematodes and bacteria have low Reynolds numbers (Re < 1), and thus the odor distribution is primarily determined by a diffusion process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from fluid mechanics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "9c959418-8a58-4623-9b72-e6c60a4df764",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C80",
+      "claim": "In low Reynolds number environments, the steepest local odor gradient can be directly linked to the location of the odor source.",
+      "claim_type": "EXPLICIT",
+      "source": "In this environment, the steepest local odor gradient can be directly linked to the location of the odor source, and therefore animals in such environments are expected to encode the rate of change of odor concentrations in order to detect the steepest gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the physics of diffusion-dominated environments.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "888a491b-f1bc-44c5-8d86-524a88f1d017",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C81",
+      "claim": "Animals in low Reynolds number environments are expected to encode the rate of change of odor concentrations in order to detect the steepest gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In this environment, the steepest local odor gradient can be directly linked to the location of the odor source, and therefore animals in such environments are expected to encode the rate of change of odor concentrations in order to detect the steepest gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about optimal sensory encoding strategies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "302d1446-b658-44b1-ad99-afedeea3649f",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C82",
+      "claim": "Flying insects experience fluid mechanics that have relatively high Reynolds numbers (Re > 10).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flying insects experience fluid mechanics that have relatively high Reynolds numbers (Re > 10), with turbulence dictating the distribution of odor molecules over the diffusion process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the fluid mechanics of flying insects' environments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "63c2624b-3586-4646-b329-326ad7d45f4a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C83",
+      "claim": "In high Reynolds number environments, turbulence dictates the distribution of odor molecules over the diffusion process.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flying insects experience fluid mechanics that have relatively high Reynolds numbers (Re > 10), with turbulence dictating the distribution of odor molecules over the diffusion process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from fluid mechanics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "244e738f-cde5-4d4a-95ba-abde8da5c839",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C84",
+      "claim": "In high Reynolds number regimes, the local odor gradient within an odor plume would be less informative in determining the location of the odor source than the distribution of odor plumes over a macroscopic scale.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regime, the local odor gradient within an odor plume would be less informative in determining the location of the odor source than the distribution of odor plumes over a macroscopic scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the information content of odor signals in turbulent environments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "6e591bcd-ef07-4bcd-af8b-55199525c9a6",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C85",
+      "claim": "Insects, including fruit flies, use a strategy of turning upwind during odor plume encounters.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been well established that insects, including fruit flies, use a strategy of turning upwind during odor plume encounters, a strategy that does not require interpreting local concentration gradients (Budick and Dickinson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Budick and Dickinson, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7adb1a47-0b51-44cc-bdea-e8ac94f4ce00",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C86",
+      "claim": "The upwind turning strategy does not require interpreting local concentration gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been well established that insects, including fruit flies, use a strategy of turning upwind during odor plume encounters, a strategy that does not require interpreting local concentration gradients (Budick and Dickinson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the description of the behavioral strategy, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "ceb3084c-faeb-439f-ba27-c7755719e386",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C87",
+      "claim": "The relative position of a flying animal and the distribution of odor plumes evolve rapidly over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relative position of a flying animal and the distribution of odor plumes evolve rapidly over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the dynamics of flying insects in turbulent odor environments.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "d9629612-f235-484d-a936-8083ed23f7de",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C88",
+      "claim": "It is crucial for flying insects to detect and respond to an encountered odor plume before the fly's position drifts relative to adjacent plumes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore crucial for flying insects to detect and respond to an encountered odor plume before the fly's position drifts relative to adjacent plumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the behavioral requirements for successful chemotaxis in turbulent environments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "e6015617-1787-4ed0-b7e7-9d553e8c4d89",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C89",
+      "claim": "Drosophila's early olfactory system signals the acceleration of odor concentrations to higher brain centers.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that Drosophila's early olfactory system signals the acceleration of odor concentrations to higher brain centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding, supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "6ea06509-23de-45e0-bbe1-da4b8304f2d2",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C90",
+      "claim": "The acceleration encoding mechanism allows an animal to detect the odor onset at a very early phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This encoding mechanism allows an animal to detect the odor onset at a very early phase (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "53f8d124-10c1-45f5-a33b-036921092a0c",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C91",
+      "claim": "The acceleration encoding has evolved in Drosophila to maximize its chance to locate the odor source in a turbulent environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is tempting to speculate that the acceleration encoding has evolved in Drosophila to maximize its chance to locate the odor source in a turbulent environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation about the evolutionary significance of the finding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "4935750c-89a5-4a40-96ce-bc6fa8134d7b",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C92",
+      "claim": "Fruit flies can respond to the spatial difference of the odor concentration between two antennae in both walking and flight.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that fruit flies can respond to the spatial difference of the odor concentration between two antennae in both walking and flight (Duistermars et al., 2009; Gaudry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Duistermars et al., 2009 and Gaudry et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "1fba3f11-f90b-4ca2-95de-da97eee4858e",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C93",
+      "claim": "Even with the lack of spatial sampling ability, fruit fly larvae can locate an odor source, based on the temporal sampling of odor gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even with the lack of spatial sampling ability, fruit fly larvae can locate an odor source, based on the temporal sampling of odor gradients (Louis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Louis et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "8d45a6e7-d623-4ac8-b754-a8c92105d2aa",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C94",
+      "claim": "Adult fruit flies may rely on both spatial and temporal sampling methods to locate an odor source.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, adult fruit flies may rely on both spatial and temporal sampling methods to locate an odor source, although their relative importance may vary depending on the locomotive state, as Reynolds numbers are different between walking and flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how adult flies integrate different sensory strategies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "bd446099-1f1b-41f3-9330-5d07fa177bb2",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C95",
+      "claim": "The relative importance of spatial and temporal sampling methods may vary depending on the locomotive state, as Reynolds numbers are different between walking and flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, adult fruit flies may rely on both spatial and temporal sampling methods to locate an odor source, although their relative importance may vary depending on the locomotive state, as Reynolds numbers are different between walking and flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the physics of different locomotive states.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "11259b7d-610c-4fc2-bfa4-e99d428bfb2b",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C96",
+      "claim": "An odorant was diluted in dipropylene glycol for the odor delivery system.",
+      "claim_type": "EXPLICIT",
+      "source": "An odorant was diluted in dipropylene glycol, and 20 ml of the resulting mixture was put into a glass vial (30 ml) and subsequently sealed by a screw cap with a silicone septa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "d539f26d-d24f-4d3b-a356-8f56dec571e4",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C97",
+      "claim": "The interval between two consecutive puffs was between 45 s and 70 s depending on the amount of vapor consumed in each puff.",
+      "claim_type": "EXPLICIT",
+      "source": "The interval between two consecutive puffs was between 45 s and 70 s depending on the amount of vapor consumed in each puff, and the mixture was replenished about every 10 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "61adab6b-7dba-4a98-8e55-553500a44b36",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C98",
+      "claim": "The output of the PID was digitally sampled at 10 kHz and later advanced by 2 ms to compensate for the latency caused by the suction probe.",
+      "claim_type": "EXPLICIT",
+      "source": "The output of the PID was digitally sampled at 10 kHz and later advanced by 2 ms in order to compensate for the latency caused by the suction probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data acquisition and processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "2c268353-9d62-4e2e-8c6a-f51aaf6a1b2d",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C99",
+      "claim": "All experiments were carried out with female flies of the NP3062-GAL4/NP3062-GAL4;UAS-mCD8::GFP/UAS-mCD8::GFP;+/+ genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were carried out with female flies of the NP3062-GAL4/NP3062-GAL4;UAS-mCD8::GFP/UAS-mCD8::GFP;+/+ genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "6ce58355-41b4-44ea-91e4-6a9e476c5e20",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C100",
+      "claim": "Female flies 2\u20135 days posteclosion were used for both OSN and PN recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Female flies 2\u20135 days posteclosion were used for both OSN and PN recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "5c9c7684-ff39-41a1-972c-0528b8e16de5",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C101",
+      "claim": "For the OSN recordings, single basiconic sensilla were targeted with electrolytically sharpened tungsten electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the OSN recordings, single basiconic sensilla were targeted with electrolytically sharpened tungsten electrodes to measure the aggregate electrical activity of OSNs housed in these sensilla (Figure 1B) (Kim et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the recording methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "06efead5-1b8f-4259-8312-a042aafbda46",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C102",
+      "claim": "The perineural sheath was weakened by a 1\u20132 min treatment with 1 mg/ml collagenase for PN recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to access the PN somas, the perineural sheath was weakened by a 1\u20132 min treatment with 1 mg/ml collagenase (Type I Collagenase; Sigma\u2013Aldrich, St. Louis, MO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "7f032ee6-ed6b-4bd7-9036-25454f0e68e7",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C103",
+      "claim": "The PNs innervating the DM4 and DL5 glomeruli were identified by genetic means, using an enhancer trap line expressing Green Fluorescent Protein (GFP) in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the PNs innervating the DM4 and DL5 glomeruli were identified by genetic means, using an enhancer trap line expressing Green Fluorescent Protein (GFP) in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell identification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "98137a85-a7a2-4507-b039-002caf7872a7",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C104",
+      "claim": "The identity of recorded cells was further verified by their odor response and the location of the soma in the dorsal cluster of the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of recorded cells was further verified by their odor response and the location of the soma in the dorsal cluster of the antennal lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cell verification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "92a2e503-b571-4b7a-b21e-8158e1055721",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "claim_id": "C105",
+      "claim": "Spike rates of OSNs and PNs were estimated by constructing a peristimulus\u2013time histogram (PSTH) with a 100-ms bin size and a 75-ms overlap between adjacent bins.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike rates of OSNs and PNs were estimated by constructing a peristimulus\u2013time histogram (PSTH) with a 100-ms bin size and a 75-ms overlap between adjacent bins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1f8f05ac-348e-4d0b-9539-148718aadc8a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a novel odor delivery system that reliably produces various odor concentration waveforms with millisecond temporal resolution, using acetone as the primary odorant due to its favorable ionization properties for photoionization detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C96-C98 describe the odor delivery system with appropriate technical detail. The system's reliability is demonstrated by matched odor concentrations between OSN and PN assays (C21, Figure 2A-C), and the methodological choices are well-justified. This represents solid technical development that enables the subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "54783a96-52f5-44a2-91b3-584b8e6749eb",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "OSN and PN responses to dynamic odor stimuli differ significantly from their feedforward inputs, with PNs showing higher peak spike rates, more phasic patterns, and rapid response initiation within tens of milliseconds of odor onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are directly supported by experimental data in Figure 1C and throughout Figure 2. The observations of differential dynamics, rapid response times, and enhanced phasic patterns in PNs are clearly demonstrated and quantified across multiple stimulus types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "571a0d98-4b67-4400-94d5-3410bd483284",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OSNs encode both odor concentration and its rate of change, producing step-like responses to ramp inputs and ramp-like responses to parabolic inputs, with strong correlations to concentration and rate of change but weak correlation to acceleration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 are well-supported by experimental data in Figure 2B-F and correlation analyses in Figure 2J. The rate-of-change encoding is demonstrated across multiple odorant-OSN pairs (C30, Figure 2\u2014figure supplement 1), and the correlation analysis provides quantitative support with appropriate statistical testing (p < 0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PNs transform OSN inputs through rapid adaptation, exhibiting larger peak amplitudes, more stereotyped temporal patterns, and advanced peak times compared to OSNs, with strong correlation between PN spike rate and the rate of change of OSN spike rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 are supported by experimental data in Figure 2G-K and consistent with prior literature on synaptic depression (C41). The correlation analysis (C42, Figure 2K) provides quantitative support for the rate-of-change encoding hypothesis. The biophysical interpretation (C40) is reasonable given the cited evidence for short-term depression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "618764fb-2626-4260-810c-86d386f4198f",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A two-dimensional linear-nonlinear model with OSN spike rate and its rate of change as inputs accurately predicts PN responses, with the 2D nonlinearity showing strong dependency on the rate of change of OSN spike rate and concentration-dependent gain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50, C57-C58, and C69 describe the model development and validation. The model structure is well-justified (C44-C46), the nonlinearity estimation is appropriate (C47-C49, Figure 3B-C), and the necessity of a 2D model is demonstrated by concentration-dependent gain (C49, Figure 3\u2014figure supplement 1). The model's predictive accuracy supports the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "20e3cc78-ea1a-4264-afad-a9f405083d4a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 2D model closely matches experimental PN outputs for step, ramp, and parabola inputs (RMSE = 25 spike/s), though it overestimates spike rates during baseline periods due to high sensitivity at low input amplitudes, a limitation potentially mitigated in vivo by OSN population pooling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 honestly assess both the model's strengths and limitations. The validation data (C51, Figure 3F) demonstrates good predictive accuracy, while the authors appropriately acknowledge systematic errors (C52) and provide mechanistic explanations (C53-C54) supported by prior work (C56). The speculation about in vivo mitigation (C55) is reasonable but clearly identified as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "baf61084-da54-4617-b87f-d1e54e9c8a2a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Through cascaded rate-of-change transformations, the Drosophila early olfactory system (OSNs and PNs) primarily signals the acceleration and rate of change of odor concentrations to higher brain centers, with PNs showing enormous amplification of odor onsets for slowly rising stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C70-C71, and C89 represent the central finding. The cascade of transformations is well-demonstrated: OSNs encode concentration and rate of change (Figure 2J), PNs encode OSN rate and rate of change (Figure 2K), resulting in acceleration encoding (Figure 2L). The dramatic amplification for parabolic inputs (C71, Figure 2C,I) provides compelling evidence. The correlation analyses provide quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The rate-of-change and acceleration encoding by OSNs and PNs advances peak response times relative to odor stimuli, with PNs consistently peaking around 200 ms after stimulus onset regardless of stimulus dynamics, enabling rapid detection of odor onsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C67 and C90 are well-supported by signal processing theory (C59) and experimental data (C60-C65, Figure 4). The consistent PN peak timing (C64, Figure 4C) across varied stimulus dynamics is a strong result. The confirmation of prior findings for a broader stimulus set (C66-C67) appropriately contextualizes the work. The functional interpretation (C90) follows logically from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a7cecda2-a924-458d-a18d-d32a9c326e6a",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors hypothesize that acceleration encoding in Drosophila's antennal lobe has evolved to enable rapid responses to slowly rising odor stimuli and maximize the chance of locating odor sources in turbulent environments, representing a novel sensory encoding mechanism not previously demonstrated in olfactory systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68, C72-C73, and C91 represent speculative interpretations about evolutionary function. While the novelty claim (C72) appears reasonable based on the authors' literature review, the evolutionary hypotheses (C68, C91) are explicitly stated as speculation and lack direct experimental support. The functional advantage in turbulent environments is plausible but not tested. These remain interesting hypotheses requiring future validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that acceleration encoding in Drosophila differs from rate-of-change encoding in bacteria and nematodes due to different Reynolds number regimes: low Re environments favor gradient-based strategies while high Re turbulent environments favor rapid plume detection strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C88 present a comparative analysis grounded in fluid mechanics principles and cited behavioral literature. The Reynolds number framework (C77-C83) is well-established, and the behavioral strategies (C74-C76, C85-C86) are appropriately cited. The inference about information content in different flow regimes (C80-C81, C84) is reasonable. However, this remains a theoretical framework rather than experimentally tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "58ec2537-309d-4034-b5e9-9a83535343bf",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Adult fruit flies may integrate both spatial (bilateral comparison) and temporal sampling strategies for odor source localization, with relative importance potentially varying by locomotor state due to different Reynolds numbers in walking versus flight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C95 synthesize prior work (C92-C93, appropriately cited) with speculation about integration strategies (C94-C95). While the speculation is reasonable and grounded in physics, it lacks direct experimental support in this manuscript. The hypothesis about locomotor state-dependent strategies is interesting but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    },
+    {
+      "id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8",
+      "content_id": "e948cf83-b0ca-4077-8f0b-d0fd7953a251",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors used standardized experimental subjects (female NP3062-GAL4 flies, 2-5 days post-eclosion) and established electrophysiological methods for OSN and PN recordings, with appropriate cell identification and spike rate estimation procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C105 describe standard methodological details that are appropriate for the experiments. The genetic identification of PNs (C103) combined with functional and anatomical verification (C104) provides robust cell identification. The spike rate estimation method (C105) is clearly described and appropriate for the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:57:00.689280Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0213a80e-61ef-4f24-bb3f-c38b5161bed7",
+      "result_id": "1f8f05ac-348e-4d0b-9539-148718aadc8a"
+    },
+    {
+      "claim_id": "2cb032b3-5ad2-4028-9984-1c419a895fa7",
+      "result_id": "1f8f05ac-348e-4d0b-9539-148718aadc8a"
+    },
+    {
+      "claim_id": "bd74fd92-afa2-479d-937b-5ab64703c198",
+      "result_id": "1f8f05ac-348e-4d0b-9539-148718aadc8a"
+    },
+    {
+      "claim_id": "11259b7d-610c-4fc2-bfa4-e99d428bfb2b",
+      "result_id": "1f8f05ac-348e-4d0b-9539-148718aadc8a"
+    },
+    {
+      "claim_id": "d539f26d-d24f-4d3b-a356-8f56dec571e4",
+      "result_id": "1f8f05ac-348e-4d0b-9539-148718aadc8a"
+    },
+    {
+      "claim_id": "61adab6b-7dba-4a98-8e55-553500a44b36",
+      "result_id": "1f8f05ac-348e-4d0b-9539-148718aadc8a"
+    },
+    {
+      "claim_id": "620613ce-cf23-4c8f-84fd-31ce3cda8e56",
+      "result_id": "54783a96-52f5-44a2-91b3-584b8e6749eb"
+    },
+    {
+      "claim_id": "579a8634-28e0-43cb-8b1d-207961e26809",
+      "result_id": "54783a96-52f5-44a2-91b3-584b8e6749eb"
+    },
+    {
+      "claim_id": "ed8042fa-18fa-4539-98d3-0a7518a347b5",
+      "result_id": "54783a96-52f5-44a2-91b3-584b8e6749eb"
+    },
+    {
+      "claim_id": "5d8f8431-edaf-4508-aa38-eb3ca1f35f6c",
+      "result_id": "54783a96-52f5-44a2-91b3-584b8e6749eb"
+    },
+    {
+      "claim_id": "7ce84421-df58-4d30-9504-d547c41f3cd4",
+      "result_id": "571a0d98-4b67-4400-94d5-3410bd483284"
+    },
+    {
+      "claim_id": "a29f36be-64b8-4505-a659-9163c016d984",
+      "result_id": "571a0d98-4b67-4400-94d5-3410bd483284"
+    },
+    {
+      "claim_id": "573dc3a6-cb18-40ba-907c-6cb8b8625743",
+      "result_id": "571a0d98-4b67-4400-94d5-3410bd483284"
+    },
+    {
+      "claim_id": "164548ae-9824-4ea0-bf53-192ee31ddd83",
+      "result_id": "571a0d98-4b67-4400-94d5-3410bd483284"
+    },
+    {
+      "claim_id": "f6b656bb-7463-4c47-ab21-31f021e42585",
+      "result_id": "571a0d98-4b67-4400-94d5-3410bd483284"
+    },
+    {
+      "claim_id": "7a1f75f0-b028-411d-9603-bf90b369d901",
+      "result_id": "571a0d98-4b67-4400-94d5-3410bd483284"
+    },
+    {
+      "claim_id": "832aa671-b978-4ef9-bfd6-e3cac40870cd",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "f4449dae-81a5-4878-b6d3-ca35d9f86935",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "fce7cddd-2128-4a43-bce4-d9754051b041",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "973df95e-c5bb-430c-bdd1-500f93d96115",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "fce4e62d-b343-4454-9d61-f98bdea9995d",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "51393ea1-eebd-4cc5-80f5-a66746780021",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "225e7cf6-ea82-4926-be3c-1649af97941c",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "15319fe9-f328-4421-b850-71583eee781d",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "fa1c7337-3308-46cb-9f53-3fe0570828a5",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "e61bbc58-fbaa-4624-a482-1ce94d4b3247",
+      "result_id": "f5c5df97-b278-4600-b8e8-3ac9a623e79b"
+    },
+    {
+      "claim_id": "baa09c6b-cb79-4290-8f65-48260d315e2d",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "b118432c-aa19-47dd-b7ea-ed43771f5329",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "8f061b4c-c4c1-47f2-a8e1-04fa9806d129",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "0a499971-583f-4f44-bdf2-4cd8206ca3ac",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "65ef30b4-dc3d-4136-b4dd-f706c4bd1ab6",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "dbb2068f-5993-45a5-ad69-fae9dcbecc42",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "7baf1ef5-afb4-432a-b75f-7d880f5c72ab",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "c9be76f0-a288-462d-874a-0523dd65a2e5",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "a82cfe11-4d83-4c65-a7b3-98206220b442",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "3756a13a-e0fb-4b14-9024-47781c1e7ef6",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "a700f368-ba1e-40ac-af4a-4e2b3b4cecbb",
+      "result_id": "618764fb-2626-4260-810c-86d386f4198f"
+    },
+    {
+      "claim_id": "9fe5989c-ac54-4064-a66a-a2f3b7dc8531",
+      "result_id": "20e3cc78-ea1a-4264-afad-a9f405083d4a"
+    },
+    {
+      "claim_id": "82fb7b44-7d88-4819-9ef4-0129ed4c15e3",
+      "result_id": "20e3cc78-ea1a-4264-afad-a9f405083d4a"
+    },
+    {
+      "claim_id": "55b2bc97-ae89-45f8-a843-4e998d89ffd0",
+      "result_id": "20e3cc78-ea1a-4264-afad-a9f405083d4a"
+    },
+    {
+      "claim_id": "d5cc65e0-730e-4f1b-82a0-df116210ac6c",
+      "result_id": "20e3cc78-ea1a-4264-afad-a9f405083d4a"
+    },
+    {
+      "claim_id": "659eb90f-b863-44af-be9c-e6063e0657cf",
+      "result_id": "20e3cc78-ea1a-4264-afad-a9f405083d4a"
+    },
+    {
+      "claim_id": "91928a2d-7452-4f80-b1d1-68b6ee762c4a",
+      "result_id": "20e3cc78-ea1a-4264-afad-a9f405083d4a"
+    },
+    {
+      "claim_id": "1588366b-fb32-434c-80ce-0e9f947e1614",
+      "result_id": "baf61084-da54-4617-b87f-d1e54e9c8a2a"
+    },
+    {
+      "claim_id": "fe42c506-139b-4f2e-9574-b604be67ff08",
+      "result_id": "baf61084-da54-4617-b87f-d1e54e9c8a2a"
+    },
+    {
+      "claim_id": "e02ec4ae-bc45-4ad7-90f4-ffad96a30625",
+      "result_id": "baf61084-da54-4617-b87f-d1e54e9c8a2a"
+    },
+    {
+      "claim_id": "3770b98d-c923-4fd9-b660-5fc6bf916bd7",
+      "result_id": "baf61084-da54-4617-b87f-d1e54e9c8a2a"
+    },
+    {
+      "claim_id": "4e80e6e2-557b-4837-a1c8-8134acb01993",
+      "result_id": "baf61084-da54-4617-b87f-d1e54e9c8a2a"
+    },
+    {
+      "claim_id": "e6015617-1787-4ed0-b7e7-9d553e8c4d89",
+      "result_id": "baf61084-da54-4617-b87f-d1e54e9c8a2a"
+    },
+    {
+      "claim_id": "a29b5eaf-8a59-449f-aece-e4eb6440f5d8",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "224744cc-6c1b-4129-bb75-32f22b9775e3",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "1410594a-6e5f-445d-8424-2a782c5841dd",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "6df5a7a8-a5a4-4ea6-9eb0-f0103ee286a3",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "118b0111-e173-4090-9501-3f1847528f1a",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "91df7e63-fe9b-4ecf-8b12-02c16a06d512",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "f94a16d4-aad2-4afe-bd94-191fb76bb492",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "e928bb6b-2774-4250-bf25-05950f32f22e",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "e6fe0624-53d1-465f-bbae-bdc442d96ddf",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "6ea06509-23de-45e0-bbe1-da4b8304f2d2",
+      "result_id": "abb95abe-d0f2-4857-b8db-4ae175a8d0a4"
+    },
+    {
+      "claim_id": "b486ace9-9d1a-44a1-bf7b-9f0dca6a9109",
+      "result_id": "a7cecda2-a924-458d-a18d-d32a9c326e6a"
+    },
+    {
+      "claim_id": "f3db13b2-bdea-4bcb-9700-c47f74c8a8db",
+      "result_id": "a7cecda2-a924-458d-a18d-d32a9c326e6a"
+    },
+    {
+      "claim_id": "e7d530c6-1dfe-48ef-a0b1-a40772b6cfe6",
+      "result_id": "a7cecda2-a924-458d-a18d-d32a9c326e6a"
+    },
+    {
+      "claim_id": "53f8d124-10c1-45f5-a33b-036921092a0c",
+      "result_id": "a7cecda2-a924-458d-a18d-d32a9c326e6a"
+    },
+    {
+      "claim_id": "febbad74-4a52-4c13-ae0b-c230435d8fbc",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "370bccde-1449-49a5-90a3-37a5f3b45099",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "cd4f51f6-ab3b-4b43-80ed-8e344e439f79",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "d29e347e-988c-4630-a945-4d8b9dd5af12",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "73c7d4f4-de1b-4c28-9963-f45361bb479c",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "c6851af9-8fbe-4bfb-bc33-e0ae987482b6",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "9c959418-8a58-4623-9b72-e6c60a4df764",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "888a491b-f1bc-44c5-8d86-524a88f1d017",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "302d1446-b658-44b1-ad99-afedeea3649f",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "63c2624b-3586-4646-b329-326ad7d45f4a",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "244e738f-cde5-4d4a-95ba-abde8da5c839",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "6e591bcd-ef07-4bcd-af8b-55199525c9a6",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "7adb1a47-0b51-44cc-bdea-e8ac94f4ce00",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "ceb3084c-faeb-439f-ba27-c7755719e386",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "d9629612-f235-484d-a936-8083ed23f7de",
+      "result_id": "a86cbfcd-409a-4a8c-b800-b4b833c6a9ec"
+    },
+    {
+      "claim_id": "4935750c-89a5-4a40-96ce-bc6fa8134d7b",
+      "result_id": "58ec2537-309d-4034-b5e9-9a83535343bf"
+    },
+    {
+      "claim_id": "1fba3f11-f90b-4ca2-95de-da97eee4858e",
+      "result_id": "58ec2537-309d-4034-b5e9-9a83535343bf"
+    },
+    {
+      "claim_id": "8d45a6e7-d623-4ac8-b754-a8c92105d2aa",
+      "result_id": "58ec2537-309d-4034-b5e9-9a83535343bf"
+    },
+    {
+      "claim_id": "bd446099-1f1b-41f3-9330-5d07fa177bb2",
+      "result_id": "58ec2537-309d-4034-b5e9-9a83535343bf"
+    },
+    {
+      "claim_id": "2c268353-9d62-4e2e-8c6a-f51aaf6a1b2d",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    },
+    {
+      "claim_id": "6ce58355-41b4-44ea-91e4-6a9e476c5e20",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    },
+    {
+      "claim_id": "5c9c7684-ff39-41a1-972c-0528b8e16de5",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    },
+    {
+      "claim_id": "06efead5-1b8f-4259-8312-a042aafbda46",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    },
+    {
+      "claim_id": "7f032ee6-ed6b-4bd7-9036-25454f0e68e7",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    },
+    {
+      "claim_id": "98137a85-a7a2-4507-b039-002caf7872a7",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    },
+    {
+      "claim_id": "92a2e503-b571-4b7a-b21e-8158e1055721",
+      "result_id": "1db7cb67-7104-42e1-ba3d-926f3df4eec8"
+    }
+  ],
+  "comparisons": []
+}

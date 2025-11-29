@@ -1,0 +1,2362 @@
+{
+  "submission": {
+    "id": "5598c59c-ab04-4c6a-b13f-e101e7d5a2e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:27:29.594881Z",
+    "updated_at": "2025-11-29T04:27:29.594881Z"
+  },
+  "content": [
+    {
+      "id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "submission_id": "5598c59c-ab04-4c6a-b13f-e101e7d5a2e6",
+      "content_type": "manuscript",
+      "content_text": "# Integrating between-host transmission and within-host immunity to analyze the impact of varicella vaccination on zoster\n\n## Authors\n\n- Benson Ogunjimi<sup>1</sup> ([ORCID: 0000-0002-0831-2063](https://orcid.org/0000-0002-0831-2063)) \u2020\n- Lander Willem<sup>1</sup>\n- Philippe Beutels<sup>1</sup>\n- Niel Hens<sup>1</sup>\n\n### Affiliations\n\n1. Centre for Health Economics Research and Modeling Infectious Diseases, Vaccine and Infectious Disease Institute University of Antwerp Antwerp Belgium\n2. Interuniversity Institute for Biostatistics and Statistical Bioinformatics Hasselt University Hasselt Belgium\n3. Department of Mathematics and Computer Science University of Antwerp Antwerp Belgium\n4. School of Public Health and Community Medicine University of New South Wales Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nVaricella-zoster virus (VZV) causes chickenpox and reactivation of latent VZV causes herpes zoster (HZ). VZV reactivation is subject to the opposing mechanisms of declining and boosted VZV-specific cellular mediated immunity (CMI). A reduction in exogenous re-exposure \u2018opportunities\u2019 through universal chickenpox vaccination could therefore lead to an increase in HZ incidence. We present the first individual-based model that integrates within-host data on VZV-CMI and between-host transmission data to simulate HZ incidence. This model allows estimating currently unknown pivotal biomedical parameters, including the duration of exogenous boosting at 2 years, with a peak threefold to fourfold increase of VZV-CMI; the VZV weekly reactivation probability at 5% and VZV subclinical reactivation having no effect on VZV-CMI. A 100% effective chickenpox vaccine given to 1 year olds would cause a 1.75 times peak increase in HZ 31 years after implementation. This increase is predicted to occur mainly in younger age groups than is currently assumed.\n\n## Introduction\n\nVaricella-zoster virus (VZV) causes the itching, erythematous vesicular disease called varicella or chickenpox, mainly during childhood, and remains latent in neural ganglia afterwards. Latency can then be interrupted by episodes of (primarily subclinical) reactivation of VZV as shown by the detection of VZV in saliva or blood from otherwise healthy individuals (Sch\u00fcnemann et al., 1998; Nagel et al., 2011). VZV reactivations may also cause herpes zoster (HZ), which presents clinically as a painful dermatomal rash. HZ occurs most frequently in individuals with a drastically declined cellular immune status (Dolin et al., 1978), but ageing itself is often assumed to substantially reduce resilience of the VZV-specific immune response (Miller, 1980; Berger et al., 1981; Levin et al., 2003, 2008). Recent research supports the hypothesis that waning of VZV cellular mediated immunity (CMI) by age is also influenced by cytomegalovirus (CMV) infection (Ogunjimi et al., 2014).\n\nEffective and safe pediatric vaccines against varicella exist and have been universally implemented in some countries including the US, Australia, Greece, Germany, Japan and Taiwan (Marin et al., 2008). However, in many other countries policy makers have been hesitant to introduce childhood VZV vaccination due to the general population's perception of varicella as a relatively mild disease, as well as the so-called exogenous boosting hypothesis (Hope-Simpson, 1965; Ogunjimi et al., 2013). This hypothesis is based on the concept of the secondary immune response and assumes that boosting of VZV-CMI occurs upon re-exposure to varicella. Boosted VZV-specific cellular immunity would subsequently reduce the risk of VZV reactivation and thence HZ. The introduction of widespread childhood VZV vaccination would reduce opportunities for varicella re-exposure and could therefore increase HZ incidence, as shown in model-based projections (Schuette and Hethcote, 1999; Brisson et al., 2000; Bilcke et al., 2013). Although current data on HZ-incidence post introduction of childhood VZV vaccination has caused controversy, a systematic review rating the quality of the evidence, concluded that exogenous boosting exists, but that its population-wide effect after widespread childhood VZV vaccination remains highly uncertain (Ogunjimi et al., 2013). One of the main points of criticism on current predictions by deterministic VZV simulation models is the entanglement of exogenous boosting, waning of immunity, immunosenescence and reactivation undermining the possibility of estimating the magnitude and duration of exogenous boosting accurately. A concern is that these entangled parameters can be chosen to fit these models well to observed HZ incidence data, but that they are too artificial to allow real and verifiable biological interpretations. This leads to currently unverifiable and potentially poor predictions of VZV dynamics beyond the fitted equilibrium states. An additional, hitherto ignored uncertainty, is the potential occurrence of endogenous boosting by subclinical VZV reactivation. Indeed, some studies have shown VZV to reactivate subclinically both in healthy individuals, immunocompromised and stressed individuals (Sch\u00fcnemann et al., 1997; Mehta et al., 2003; Nagel et al., 2011). However, the effect on VZV-CMI has not yet been quantified.\n\nIn the current paper, we describe the first individual-based VZV model, explicitly combining within and between-host dynamics. This model is based on experimental viro-immunological data and allows an accurate estimation of the exogenous boosting characteristics and explicit insertion or validation of experimental data.\n\n## Results\n\n### VZV IBM parameter prediction\n\nUsing a step-wise algorithm we initially found eight unique parameter sets leading to a reasonable fit of Belgian HZ incidence data (see Table 1 and Figure 1). All best-fitting parameter sets were based on boosting scenario 3 (predefined exponential loss of boosted VZV-CMI). Seven of these models include exogenous boosting (defined as an exponential decay) with a peak value of 1.3, a boosting duration ranging between 2 and 15 years, no endogenous boosting, a weekly VZV reactivation probability and an annual VZV-CMI loss (= waning) estimated to be 1\u20131.5% and 1\u20132%, respectively. We note that although the fits are excellent for the most relevant age groups, 25 years and older, they are less suited to predict HZ incidence for younger ages. One model predicted a peak boosting value of 2.5, a boosting duration of only 1 year and no endogenous boosting. Although this model was less suited to fit to HZ data for older age groups, it fitted much better to HZ data for younger age groups. In additional analyses relaxing on some parameter constraints, we obtained final parameter sets that led to excellent predictions across all age groups (see Table 1 and Figure 2). The two best fitting parameter sets predicted peak boosting values between 2.8 and 4 (maximum allowable value), a duration of boosting limited to 1 or 2 years and, as before, no endogenous boosting. Averaged VZV-specific CMI levels are shown in Figure 3.\n\n**Table 1.**\n Best fitting parameter sets\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter set</th>\n      <th>Deviance*</th>\n      <th>Annual waning rate (%)</th>\n      <th>Boosting scenario</th>\n      <th>Duration of boosting (years)</th>\n      <th>Peak fold increase following exogenous boosting</th>\n      <th>VZV weekly reactivation probability (%)</th>\n      <th>Distribution threshold VZV-CMI for HZ</th>\n      <th>Peak fold increase following endogenous boosting</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"9\">Original Search (obtained after Step 2 in Table 1)</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>926</td>\n      <td>2.0</td>\n      <td>3</td>\n      <td>10</td>\n      <td>1.3</td>\n      <td>1.5</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>939</td>\n      <td>1.5</td>\n      <td>3</td>\n      <td>3</td>\n      <td>1.3</td>\n      <td>1.5</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>949</td>\n      <td>2.0</td>\n      <td>3</td>\n      <td>7</td>\n      <td>1.3</td>\n      <td>1.5</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>951</td>\n      <td>2.0</td>\n      <td>3</td>\n      <td>12</td>\n      <td>1.3</td>\n      <td>1.5</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>968</td>\n      <td>2.0</td>\n      <td>3</td>\n      <td>7</td>\n      <td>1.3</td>\n      <td>1.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>970</td>\n      <td>1.0</td>\n      <td>3</td>\n      <td>2</td>\n      <td>1.3</td>\n      <td>1.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>969</td>\n      <td>2.0</td>\n      <td>3</td>\n      <td>15</td>\n      <td>1.3</td>\n      <td>1.5</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>934</td>\n      <td>1.0</td>\n      <td>3</td>\n      <td>1</td>\n      <td>2.5</td>\n      <td>5.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td colspan=\"9\">Border search</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>751</td>\n      <td>1.0</td>\n      <td>3</td>\n      <td>1</td>\n      <td>2.8</td>\n      <td>5.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>799</td>\n      <td>1.0</td>\n      <td>3</td>\n      <td>1</td>\n      <td>3.1</td>\n      <td>5.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>965</td>\n      <td>1.5</td>\n      <td>3</td>\n      <td>2</td>\n      <td>3.4</td>\n      <td>5.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>804</td>\n      <td>1.5</td>\n      <td>3</td>\n      <td>2</td>\n      <td>3.7</td>\n      <td>5.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>722</td>\n      <td>1.5</td>\n      <td>3</td>\n      <td>2</td>\n      <td>4.0</td>\n      <td>5.0</td>\n      <td>4</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Results shown are averaged results per parameter set.VZV, varicella-zoster virus; HZ, herpes zoster._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig1-v1.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig2-v1.jpg)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig2-figsupp1-v1.jpg)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig3-v1.jpg)\n\n**Figure 3.:** Caption: note that this figure shows average dynamics although some individuals will have VZV-specific CMI values below 1 (making them susceptible to HZ).\n\n### Childhood varicella vaccination and its implications for HZ incidence\n\nUsing our best fitting parameter sets (set 9 and 13 from Table 1) we simulated the effects of a 100% permanently effective varicella vaccine given to all children aged 1 year (100% coverage). Our predictions (averaged per parameter set) showed a net increase in HZ incidence during approximately 50 years (see Figure 4). The peak increase in HZ incidence was reached approximately 31 years after programme initiation and was 1.75 (1.64\u20131.87) (100% CI) times higher than the HZ incidence prior to varicella vaccination. The CI is constructed by using three runs per parameter set and normalizing each run by means of the run-specific averaged equilibrium HZ incidence between 100 and 300 years since the beginning of the simulation. This means that per 1,000,000 person-years the total number of HZ cases would increase on average from 3219 to 5313 (set 9) or from 3209 to 5955 (set 13). Figure 5 shows that the relative contribution of different age groups to HZ incidence changes in the time period after introduction of varicella vaccination. Noteworthy is the relative dominance of the 31\u201340 year old age group between 10\u201350 years after introduction of varicella vaccination.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig4-v1.jpg)\n\n**Figure 4.:** The red line indicates the moment of CP vaccine introduction, which is assumed to be 100% effective.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig5-v1.jpg)\n\n## Discussion\n\nIt is hypothesized that exogenous re-exposure to varicella increases VZV-specific cellular immunity (VZV-CMI). This natural consequence of the secondary immune response will reduce an individual's risk for HZ. When the probability of contact per unit-time between currently infectious and previously recovered varicella patients reduces, through a reduction in varicella incidence, it can be expected that HZ incidence temporarily increases due to a lack of exogenous boosting (Hope-Simpson, 1965; Ogunjimi et al., 2013).\n\nTo our knowledge, this study is the first to use an individual-based dynamic transmission model for VZV. This model allowed us to combine immunological and virological data to estimate key parameters in VZV population dynamics, such as the peak CMI response following re-exposure, duration of boosting and VZV subclinical reactivation characteristics. This means that in contrast to the deterministic models where abstract and ad hoc compartments are created to define the transition between different epidemiological states (for example the transition of a varicella recovered state to a zoster susceptible state), we can actually work with true biological, and verifiable, concepts such as VZV-CMI. Our best fitting parameter sets for Belgium suggest the effective duration of exogenous boosting to last only between 1 and 2 years. These predictions are significantly lower than those from the highly cited deterministic VZV model by Brisson et al., in which the average duration was predicted to be 20 years ([7\u201341 years] 95%CI) (Brisson et al., 2002). Our peak immunological response was estimated to be 2.8\u20134.0 times larger than the pre-re-exposure value. These predictions are consistent with those experimentally found in adults re-exposed to VZV by varicella contacts in the household (Arvin et al., 1983; Vossen et al., 2004) or by vaccination (Levin et al., 2008). A possible limitation of our study was that all close contacts with varicella patients were assumed to exert an equal \u2018average\u2019 boosting effect on the exposed individual. Future studies could assess how important it would be to incorporate variability in the impact of an exposure through direct contact with a varicella case, based on characteristics of both the exposed and the infectious person (e.g., age, comorbidity).\n\nThe VZV reactivation probability was estimated to be 5% per week. Observed data on VZV reactivation probability are rather sparse and highly divergent regarding study design, sampling site (saliva, blood, cerebrospinal fluid) and results (Sch\u00fcnemann et al., 1997; Mehta et al., 2003; Engelmann et al., 2008; Birlea et al., 2011; Nagel et al., 2011; van Velzen et al., 2013). The observed weekly VZV reactivation probability is a topic of discussion in the literature and varies between 0 and 71%. As such it is difficult to compare our estimates with the range of observed values. We also note that VZV reactivation in our model might only be detectable at the neural ganglia at not (always) necessarily in peripheral tissues. In order for HZ to occur, we assumed that VZV-CMI should be below a relative threshold (following a specific distribution) during VZV reactivation. None of our best fitting parameter sets predicted a significant effect of VZV reactivation on VZV-CMI, implying that endogenous boosting most likely does not have an impact on the occurrence of HZ. This finding is important since the existence of endogenous boosting has been proposed to have an effect in reducing the negative effects of varicella vaccination on HZ incidence. Future experimental studies should focus on confirming our predicted VZV reactivation probability and the lack of endogenous boosting.\n\nThe annual decline of VZV-CMI was predicted to be between 1 and 1.5%. This result is lower than the 2.7\u20133.9% experimentally observed by Levin et al. for individuals older than 60 years (Levin et al., 2008). The twofold difference in waning rate can be explained by the explicit disentanglement of waning and boosting (with younger age groups having\u2014on average\u2014higher probabilities of being boosted recently thereby actually increasing the observed waning rate). A limitation in our study is the use of a fixed waning rate for all ages. Our results might be interpreted as an averaged result of lower waning rates for younger age groups and higher waning rates for older age groups (as documented by Levin et al. (2008)). A higher waning rate in older age groups could for example be caused by chronic CMV infection (Ogunjimi et al., 2014). Although different types of waning (both in model specification and age dependency) can be used in this kind of simulation models, we believe that further experimental data documenting VZV specific cellular memory as a function of age is needed so that new waning models can be appropriately formulated. One future avenue of research could be the fitting of our predicted VZV-CMI to observed VZV-CMI data, as this will be a mixture of waning, immunosenescence and boosting. Better VZV-CMI datasets than those currently available are needed to be able to do this. These datasets could and should contain immune responses against different VZV peptides and could differentiate between the different cellular immunity compartments (CD4 vs CD8 and central vs effector memory cells). The use of our VZV IBM could help us identify which VZV-CMI compartment is of importance in controlling HZ.\n\nWe used our best fitting models to analyze the effects of a 100% effective varicella vaccine implemented for all 1-year-old children. We predicted a net increase in HZ incidence during 50 years and a 1.75 peak fold increase 31 years after introduction of the vaccination program. This delay in the HZ peak incidence is caused by cohorts born close to the time varicella vaccination was introduced experiencing less repeated boosting instances during their childhood than previously born cohorts (a mechanism that is similar to the progressive immunity model proposed in the deterministic VZV model by Guzzetta et al. (2013)). Although increases in HZ incidences following universal childhood varicella vaccination have been noticed, some authors have attributed these increases to a background evolution that was already present prior to CP vaccination (see discussion in Ogunjimi et al. (2013)). However, our analysis shows that proper documentation of significant increases in HZ incidence might not be possible during the first 10 years, even if a 100% effective vaccine would be used. For instance, during the first 10 years of the US program, both uptake and efficacy with the initial single dose vaccination programme were far below 100%. Although our model predicts a much lower duration of boosting than used hitherto in compartmental models (Ogunjimi et al., 2013), some of our overall HZ projections are qualitatively similar. However, in contrast to earlier model estimates our VZV IBM predicts that 31\u201340 year olds contribute the most to the peak in HZ incidence following varicella vaccination. Some observational studies found no effect of varicella vaccination on HZ incidence for those aged 60 years and older (Hales et al., 2013). This could be compatible with an overall HZ incidence increase due to rising HZ incidence among 31\u201340 year olds. Importantly, younger adults have been shown to be less likely to develop post-herpetic neuralgia (Opstelten et al., 2002; Drolet et al., 2010). Thus although our aggregated predictions regarding the increase in HZ incidence following varicella vaccination may appear similar to those published using deterministic models, cost-effectiveness analyses using our VZV IBM would be more in favor of universal childhood varicella vaccination.\n\nA major benefit of our modeling approach is the possibility to verify our best\u2013fit parameter values via experimental studies, or vice versa, to adapt parameter values when empiricism delivers new insights. For example, if a new experimental study would prove the existence of endogenous boosting, this could be readily implemented in our VZV IBM so that parameter sets could be estimated, conditional on the existence of endogenous boosting. Although our IBM has given us valuable insights into between-host and within-host VZV dynamics, other influential factors could be introduced in future versions. These factors could relate to CMV-immunosenescence (Ogunjimi et al., 2014), maternal antibodies, reduced VZV-CMI induction if infected during the first year of life as this might improve the prediction of the teenage group (Terada et al., 1994), co-infection with other viruses (Ogunjimi et al., 2015), risk groups (for e.g., immunosuppressed individuals) and HLA types (Meysman et al., 2015). Although current deterministic compartmental models should be able to partially account for these effects, a VZV IBM seems better suited to directly model the influence of these immunity-perturbing factors. Future VZV IBM should also explore more realistic vaccination scenarios as well as inter-country variability (Poletti et al., 2013).\n\nWe conclude that our VZV individual-based model has explicitly estimated the duration of exogenous boosting to be limited to only 1 or 2 years and that there was no significant effect from endogenous boosting.\n\n## Materials and methods\n\n### Model overview\n\nWe present an individual-based model in which the individual's risk of HZ is determined by the individual's VZV-CMI vs the so defined \u2018Force of Reactivation (FoR)\u2019 that represents the strength of VZV reactivation (as detailed in the Modeling VZV reactivation paragraph). In contrast to classical deterministic epidemiological models, our model is not explicitly compartmentalized by means of ad hoc defined epidemiological groups. Instead the main \u2018flow diagram\u2019 represents the evolution of VZV-CMI with time and under several events (for more details see the next paragraphs). Briefly, Figure 6 illustrates that individuals are born susceptible and that VZV-CMI is equal to zero during this time period. After exposure to chickenpox or HZ, VZV-CMI receives an initial value. Next, VZV-CMI is expected to undergo waning and several events can occur. The first event depicted (but the reader should realize that the timing of the events are interchangeable) is exogenous boosting after re-exposure to either chickenpox or HZ. Exogenous boosting is assumed to increase VZV-CMI temporary, after which decay towards \u2018the original trajectory of VZV-CMI\u2019 is assumed to occur. Next, we depicted unsuccessful reactivation of VZV that is assumed to cause endogenous boosting of VZV-CMI (again followed by a decay). However, if the FoR is relatively higher than VZV-CMI, VZV reactivation will be successful and will cause HZ (followed by a reinstatement of VZV-CMI).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig6-v1.jpg)\n\n**Figure 6.:** The sequence of exogenous boosting and VZV reactivation can be switched.\n\n### Demographics\n\nThe dynamics of the synthetic population of the individual-based model are based on Belgian population and mortality data normalized to a fixed total population of 998,400 individuals (Eurostat, 2012). The chosen population size is the result of a trade-off between ensuring sufficient heterogeneity and a manageable computational burden. Natural deaths are selected based on the age-dependent mortality rate. Per time step, the number of newborns equals the number of deaths to obtain a constant population size. To conduct predictions over many years, a stationary demographic structure is required throughout the simulated period. The Belgian population from 2012 has an overrepresentation of people from age 40 to 60 years (see Figure 7). Applying a fixed age-dependent mortality rate in combination with the replacement by newborns would results in an oscillating population distribution over time with respect to age. Therefore, the initial age distribution is not based on the Belgian population count from 2012 but on the survivor function estimated from data on the number of deaths per capita. The survivor function by age is estimated from data on the number of deaths per capita by m(a)=\u2009exp(\u2212\u222b0a\u03bc(t)dt) with age-dependent mortality rate \u03bc using a thin plate regression spline model with the gam-function in the R-package mgvc (Wood, 2011; Hens, 2012). Figure 7 illustrates the survivor function by age together with the Belgian population and mortality rates in 2012.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig7-v1.jpg)\n\nThe model runs in time steps of 1 week and people with week-age 53 move to the next age class. To obtain homogeneous age transitions throughout the simulated period, initial week-ages are randomly assigned between 1 and 52. People from the last age class with 53 weeks are removed from the population so that the demographic structure remains stable throughout the simulated period.\n\n### Modeling dynamics of primary VZV infection\n\nAt the start of the simulation, 30 individuals between ages 1 and 3 are randomly infected with CP. The weekly probability \u03bbi,t for a susceptible individual to become infected with VZV (after contact with at least one infectious individual) is calculated by $\\lambda_{i,t}=1\u2212\\prodn=180(1\u2212w(i,n))^{\\sumCPI_{n}}\u00b7(1\u2212m\u00b7w(i,n))^{\\sumHZI_{n}}$ with w(i,n) the weekly effective contact probability for an individual from group i with a random individual from group n, m the relative HZ infectiousness (empirically estimated to be 0.17 [cf. paragraph \u2018Modeling VZV endogenous reactivation\u2019]) and CPIn and HZIn the total number of infectious individuals per age class for CP and HZ, respectively. This formula is thus constructed by the complement of the probability that an individual did not have a successful contact with any of the chickenpox or HZ patients. The VZV infection probability, w(i, n), is based on empirical social contact data as described elsewhere (Ogunjimi et al., 2009). Here w(i, n) equals the number of close contacts per week lasting longer than 15 min between two random individuals in age classes i and n multiplied by the best fitting proportionality parameter q = 0.181 based on Belgian social contact and VZV seroprevalence data (Ogunjimi et al., 2009).\n\nIndividuals infected for the first time with VZV are infectious for 1 week after an incubation period of 2 weeks. Next, they are CP recovered and receive a normalized CMI value of 1 \u00b1 a randomly distributed factor (normal distribution with variance 0.1 as suggested by Terada et al. (1994)).\n\n### Modeling waning of VZV-CMI\n\nOnce arrived in the CP recovered state, VZV-CMI starts waning at a weekly rate via the multiplication with (1\u2014waning-rate). The waning-rate (see Table 2) is informed by the annual decline of 2.7\u20133.9% per age-year as noted by baseline VZV-CMI values by Levin et al. (2008). In all model steps, waning is applied to all variables. Note that in our model waning and ageing are indistinguishable.\n\n**Table 2.**\n Initial parameter sets\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Step 1</th>\n      <th>Step 2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Annual waning rate (%)</td>\n      <td>2.0</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>3.0</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>4.0</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Boosting scenario</td>\n      <td>1</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td rowspan=\"9\">Duration of boosting (years)</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Peak fold increase following exogenous boosting</td>\n      <td>1</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td>1.6</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>2.2</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>2.2</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"8\">VZV weekly reactivation probability (%)</td>\n      <td>0.01</td>\n      <td>0.001</td>\n    </tr>\n    <tr>\n      <td>0.1</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>0.3</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>0.5</td>\n      <td>0.015</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Distribution threshold VZV-CMI for HZ</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Peak fold increase following endogenous boosting</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>1.4</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>1.8</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>2.2</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n### Modeling exogenous re-exposure to VZV\n\nAt each weekly update, the CP recovered individuals have a probability \u03bbi, t to receive a boost of VZV-specific immunity. Although HZ is less infectious than CP, we assume that if boosting has occurred, the magnitude of VZV-CMI boosting will be similar for both CP and HZ. To analyze the effect of boosting, we retain a CMI value for each individual with and without boosting.\n\nIn the first 6 weeks after exogenous boosting, VZV-CMI is assumed to increase linearly up to \u2018Peak fold increase\u2019 times the pre-boosting value (Levin et al., 2008), but is limited to a maximum of 4 times the VZV-CMI value without re-exposure. The 6 week duration between the boosting event and the peak has been influenced by the Levin et al. (2008) data. Limiting the effect of boosting to a factor 4 is based on the recent finding that pediatricians, highly exposed to CP, have T-cell values that are on average 3\u20134 times higher than controls, but not higher (Ogunjimi et al., 2014).\n\nNext, VZV-CMI will decrease following one of three different boosting scenarios (as shown in Figure 8) until it reaches the pre-boosting value again (after a \u2018duration of boosting\u2019):Exponential decrease from peak to pre-boosting value based on VZV ELISPOT CMI data after Zostavax vaccination as published by Levin et al. (2008). Levin et al. (2008) presented ELISPOT data on Zostavax vs placebo-vaccinated individuals and the relative increases were (visual reference to figure in the Levin et al. paper): 120% (6 weeks), 60% (1 year), 50% (2 years) and 40% (3 years). Using these average values we performed a regression analysis to estimate the VZV-CMI exponential decay rate per week.Exponential decrease from peak to 60% of pre-boosting value ([Levin et al., 2008], based on simulation from peak to year 1, cf. supra), followed by a constant value for x years with x defined by the parameter set, but \u22653 years. After x years, VZV-CMI returns to the pre-boosting value. This scenario is compatible with the assumption that memory cells have a predefined and fixed lifespan as implied by Westera et al. (2013).Exponential decrease from peak to pre-boosting value based on the boosting period of x years as defined by the parameter set. The exponential decay is defined by the peak and duration of boosting: $Y(t)=P\u22c5Y_{0}\u22c5e^{\u2212\\frac{ln(P)}{x}\u22c5t}$ with Y(t) = VZV-CMI (disregarding age), P = peak fold increase, Y0 = VZV-CMI prior to entering boosting sequence (= \u2018original VZV-CMI\u2019) and x = duration of boosting. This function is constructed by the boundary conditions that Y(t = x) = Y0 and Y(t = 0) = P*Y0.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig8-v1.jpg)\n\n**Figure 8.:** (A) Illustrates the exponential decline parameterized by a peak (+120%) at 6 weeks, (+60%) 1 year later, (50%) 2 years later and (+40%) 3 years later as presented by the Zostavax vaccine trial by Levin et al. (B) Illustrates the exponential decline from peak (+120%) to (+60%) 1 year later and constant for x years (as defined by the parameter set) after wards, as a modified interpretation of the results of the Zostavax vaccine trial by Levin et al. (C) Illustrates the increase to a peak value as defined by the parameter set that is followed by an exponential decline so that the pre-boosting value is reached after x years.\n\nIt is important to clarify that if a new boosting event occurs during an ongoing boosting sequence, the VZV-CMI value attained right before the new boosting event occurs, is assumed to be the baseline \u2018pre-boosting\u2019 reference for the new boosting sequence. This means that for scenario 3 in case of a new boosting event 6 weeks (and mutatis mutandis for the other situations) after the first boost VZV-CMI evolves as \n\n$$\nY(t)=P\u22c5Y_{1}\u22c5e^{\u2212\\frac{ln(P)}{x}\u22c5(t\u2212t_{1})}=P\u22c5P\u22c5Y_{0}\u22c5e^{\u2212\\frac{ln(P)}{x}\u22c5t_{1}}\ufe38Y_{1}\u22c5e^{\u2212\\frac{ln(P)}{x}\u22c5(t\u2212t_{1})}=P^{2}\u22c5Y_{0}\u22c5e^{\u2212\\frac{ln(P)}{x}\u22c5t},\n$$\n\nwith the subscript 1 referring to the situation when the second boosting event occurs.\n\nThis shows that boosting during an ongoing boosting episode prolongs the time before the \u2018original VZV-CMI (Y(t) = Y0)\u2019 is reached again.\n\n### Modeling VZV reactivation\n\nAfter primary infection, VZV is assumed to remain latent, but capable of reactivation. The frequencies of VZV reactivation used in the parameter sets were informed by observed VZV reactivation frequencies in random samples from healthy individuals (2% in blood [Sch\u00fcnemann et al., 1997]; 0 out of 112 saliva samples [Mehta et al., 2003]; 2.5% in saliva [Nagel et al., 2011]), immunosuppressed patients (8.1% from various sites [Engelmann et al., 2008]), individuals with malignancies (7.5% in blood [Malavige et al., 2010]) and HIV patients (9% in saliva [van Velzen et al., 2013]; 16% in cerebrospinal fluid [Birlea et al., 2011]). The consequence of reactivation can either be endogenous boosting or clinical reactivation (HZ) and this is defined by the difference between VZV-CMI and the FoR.\n\nThe FoR defines the VZV-CMI needed to resist clinical reactivation and if VZV-CMI < FoR, reactivation will lead to HZ. The reader should imagine the FoR to represent independent reactivation behavior of VZV and whether this reactivation will lead to HZ or endogenous boosting will depend on the value of VZV-CMI. The FoR deviates per time step and individual by means of a gamma probability density function. This gamma function is chosen as it represents the summation of unknown biological phenomena that are assumed to have an exponential distribution. The parameter set includes four different gamma distributions (see Table 2 and Figure 9). HZ individuals are assumed to be infectious for 1 week and receive a VZV-CMI reset to 1 \u00b1 random factor (normally distributed, cf. primary infection). There exists no data on the relative infectiousness of HZ patients nor is it likely that this can be estimated through experiments. We chose to approximate the relative infectiousness of HZ patients by the relative infectiousness of breakthrough CP patients (Bernstein et al., 1993). This has previously been estimated at 0.17 (Brisson et al., 2002). Although HZ infectiousness was needed to maintain circulation of VZV in our model, the relative effects on overall VZV transmission are\u2014compared to CP\u2014marginal. Figure 2\u2014figure supplement 1 shows the results of a sensitivity analysis in which we varied HZ infectiousness from 0.03 to 0.45 for the 13 best fitting parameter. As can be seen in Figure 2\u2014figure supplement 1 our results are quite robust. Reinstallation of VZV-specific immunity after HZ is based on experimental data showing that a second case of HZ only occurs in about 5% of individuals (Yawn et al., 2011) and that VZV-CMI is higher in recovered HZ patients than in age-matched controls (Weinberg et al., 2009).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/07116/elife-07116-fig9-v1.jpg)\n\nIf VZV-CMI \u2265 FoR, endogenous boosting occurs followed by an exponential decrease according to one of the scenarios described in the previous section. The peak following endogenous boosting, however, is restricted to be at most equal to the peak following exogenous boosting. In addition, we assume that an endogenous boosting sequence will always be overruled by a new successful exogenous re-exposure boosting episode.\n\n### Statistical and computational details\n\nSimulations were performed using Matlab 2012b on the Flemish VSC supercomputer. Simulations ran for 320 years and model output was obtained by averaging the age-specific results over the last 80 years. The main outputs were CP incidence, HZ incidence, VZV serology and VZV-CMI. In order to optimize the fitting procedure, we performed a two-step parameter set analysis. The following 7 parameters were estimated by means of the fitting procedure: VZV-CMI waning rate, type of boosting scenario, duration of exogenous boosting, peak fold increase following exogenous boosting, VZV reactivation probability, FoR distribution and the peak fold increase following endogenous boosting.\n\nIn the first step we ran each parameter set three times. We calculated per set the Binomial likelihood by fitting the HZ age-specific output data to Belgian HZ incidence data (Bilcke et al., 2012). Next, we selected the parameter set leading to the lowest mean deviance (= \u22122*loglikelihood) based on the three repetitions with different stochastic seed and all other parameter sets with deviance +5% at most in order to account for model selection uncertainty (Castro Sanchez et al., 2013). In order to broaden the parameter selection, we also selected the most prevalent (marginal) parameter values in the lowest mean deviance 2.5% percentile (see Table 3).\n\n**Table 3.**\n Step 2 parameter set selection\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameters</th>\n      <th>Best parameter sets + deviance +5%</th>\n      <th>Most prevalent parameters in Q2.5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Annual waning rate (%)</td>\n      <td>2.0</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Boosting scenario</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Duration of exogenous boosting (years)</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Peak fold increase following exogenous boosting</td>\n      <td>1.6</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>2.2</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">VZV weekly reactivation probability (%)</td>\n      <td>0.01</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>0.1</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Distribution threshold VZV-CMI for HZ</td>\n      <td>2</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Peak fold increase following endogenous boosting</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the second step we adapted our parameter ranges and intervals according to the best fitting values to obtain new parameter combinations (see Table 3). Again, we ran each parameter set three times and calculated the mean deviance. The best parameter sets were defined by those parameter sets that had at least one run with a deviance within the 5% range of the deviance of the best fitting parameter set.\n\nGiven the fact that some selected parameter values were on an unexplored border of the parameter grid, we studied whether more extreme values for the border parameters led to better results (and continuing if deviance was within the second step best deviance +5%). Doing this, we allowed the other parameters to vary for one unit in both parameter directions.\n\n### Predicting the effects of CP vaccination on Belgian HZ incidence\n\nWe used our best parameter sets and introduced a simplistic hypothetical single dose 100% effective CP vaccine (without waning of vaccine-induced immunity) for all children ageing between 1 and 2 years. Vaccinated individuals were assumed not to be susceptible to HZ.\n",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "9270397b-e79d-4531-a1da-ccbde966f9db",
+      "submission_id": "5598c59c-ab04-4c6a-b13f-e101e7d5a2e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07116.017](https://doi.org/10.7554/eLife.07116.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the submission was accepted after an appeal against the decision.]\n\nThank you for choosing to send your work entitled \u201cIntegrating between-host transmission and within-host immunity to analyze the impact of varicella vaccination on zoster\u201d for consideration at eLife. Your full submission has been evaluated by Prabhat Jha (Senior editor) and three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the decision was reached after discussions between the reviewers. Based on our discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Mark Jit (Reviewing editor); Alessia Melegaro (reviewer #3). Another reviewer chose to remain anonymous.\n\nAll of us agreed that it is innovative and addresses an important issue which is being explicitly modelled for the first time, i.e. the role of the dynamics of cell-mediated infection and endogenous boosting in VZV reactivation. Given that this concern has had a large influence on vaccine decision making in Europe and elsewhere, the topic is of considerable public health importance. However, we had a number of major concerns with the paper which would require substantial changes to the methodology to address.\n\nBelow are the most substantive concerns; however we would encourage the authors to look at the more detailed comments from each reviewer as well.\n\n1) The model is itself is hard to understand and therefore to assess what it adds to the existing literature. The Methods section plunges straight into a discussion of the estimation of the various parameters. It is not clear whether the follows the traditional Brisson/Edmunds/van Hoek approach, the Guzzetta progressive immunity one (AJE 2013) or a different approach entirely. It would be helpful to start with an overview of the model structure (with a written description and/or compartmental flow diagram), as well as the main ways it differs from previous models.\n\n2) It is not clear what the conclusions add to existing modelling work on the same topic. The manuscript criticises existing deterministic models used in current research in the field. However, the main conclusions of the paper (e.g. with regards to vaccine impact) are in line with those of available deterministic models. Although the rise in herpes zoster is predicted to occur earlier in life, it is unclear whether the magnitude of the HZ rise would be smaller, the same or larger than in previous models, and hence the overall significance of this age shift. The fact that a perfect vaccine is used makes the comparison particularly difficult, although it is understandable why this was done in order to show effects more clearly. Hence it would be important to explain clearly what the gains achieved by an individual-based framework taking into account cell-mediated infection explicitly are.\n\n3) In addition, the manuscript points out that a variety of models are able to fit age-specific incidence or prevalence data so conclusions may be a function of model structure rather than biological fact. However, the model as it stands has at least 6 free parameters (i.e. more than in currently used deterministic models), which appear to be fitted to a single output, a zoster age-specific incidence profile. This should worse over-fitting problems, thereby increasing rather than reducing the lack of identifiability. There needs to be some way to address this problem, or at least more extensive sensitivity analyses to show that the conclusions are robust to the range of possible parameter values.\n\n4) Furthermore, like previous models, the conclusions are not completely independent of subjective model choices, since the form and sometimes the parameter values of functions representing cell-mediated immunity and boosting have to be pre-determined (albeit with reference to empirical work). In particular, in the three exogenous boosting scenarios, a number of parameters are simply assumed and no explanations on their values are provided. For example the force of boosting (subsection \u201cModeling exogenous re-exposure to VZV\u201d) is assumed to occur at the same rate as the force of infection. This assumption (which contrasts with the earlier remark that the actual magnitude of the boosting effects is unknown) should be emphasized, as it might be a main responsible of the fact that seven of the best models \u201cinclude exogenous boosting\u201d (see Results). Better justification for all the assumptions and assumed parameter values is required; at present it is not clear that this is the \u201cfinal answer\u201d to the exogenous boosting question.\n\nReviewer #1:\n\nThis paper deals with an important issue, i.e. the extent to which childhood varicella vaccination may cause an increase in HZ in adults due to reduction in exogenous boosting. The observational and ecological evidence about boosting are hard to interpret precisely. As the authors point out, a variety of mathematical models are able to fit age-specific incidence or prevalence data so conclusions may be a function of model structure rather than biological fact. This paper offers a number of improvements that may enhance the believability of conclusions, particularly an individual-based structure which allows tracking of within-host immune dynamics, allowing the duration of exogenous boosting to be fitted rather than largely assumed.\n\nThe main difficulty is that the model itself is hard to understand and therefore to assess what it adds to the existing literature. The Methods section plunges straight into a discussion of the estimation of the various parameters. It would be helpful to start with an overview of the model (with a written description and/or compartmental flow diagram), as well as the main ways it differs from previous models.\n\nThe comparison with previous models (which have been influential to vaccine policy in much of Europe) needs to be a bit sharper. In particular, it is not clear whether the magnitude of the HZ rise is smaller, the same or larger than previous models (e.g. Brisson). The fact that a perfect vaccine is used makes the comparison particularly difficult, although it is understandable why this was done in order to show effects more clearly. Hence even though the rise in HZ occurs earlier in life, it is not clear what the impact on cost-effectiveness will be.\n\nAlso it should be noted that the conclusions are not completely independent of subjective model choices, since the form and sometimes the parameter values of functions representing cell-mediated immunity and boosting have to be pre-determined (albeit with reference to empirical work), as is inevitable. Hence it is not clear that this is the \u201cfinal answer\u201d to the exogenous boosting question.\n\nHowever, the model clearly adds a great deal of additional insight to the existing debate, including the use of data that was not previously used in this fashion.\n\nReviewer #2:\n\nThe paper has some innovative aspects, as it represents a first attempt (to my knowledge) to explicitly include into a single model for VZV transmission dynamics and reactivation (and vaccination), the trend in cell mediated immunity (CMI) and endogenous boosting. As trends in CMI and the role of boosting are thought to be the primary determinants of VZV reactivation, explicit consideration of such effects (instead than e.g. implicitly as in available models) is worthwhile.\n\nI have however some major points that should be carefully tackled. Authors criticize deterministic models used in current research in the field (Introduction, \u201cOne of the main points of criticism ... equilibrium states.\u201d) Since however some of the main conclusions of this paper are in line with those of available deterministic models (e.g. in regards of the impact of vaccination) authors should explain clearly which are the possible gains allowed by IBMs, particularly in what respects the present approach should be superior to the deterministic models used in the literature. My main point here deals with identifiability of model parameters. The current model has at least 6 free parameters (i.e. more than in the currently used deterministic models), which as I understand are fitted to a single output, a zoster age-specific incidence profile. This should worse over-fitting problems, thereby emphasizing rather than reducing, the aforementioned criticism.\n\nI am not entirely clear about the three hypotheses about CMI decrease after a boosting event (subsection \u201cModeling exogenous re-exposure to VZV\u201d). In subsection \u201cModeling waning of VZV-CMI\u201d a hypothesis has been made about CMI decline after primary CP infection. I believe one should take this \u2013 for reasons of both modeling parsimony and simplicity \u2013 as a baseline holding also for CMI decline after a boosting event, especially given that the data by Levin et al. used by the authors to parametrize the model did not seem to refer to CMI decline after primary chickenpox only. Other hypotheses could then naturally be grounded against this baseline. In particular I am not clear about the meaning of HP1, in subsection \u201cModeling exogenous re-exposure to VZV\u201d, \u201cExponential decrease from peak to pre-boosting value based\u201d. Why do you want to prevent that decline continues beyond the pre-boosting situation? The Hp3 formula is incomprehensible and needs careful explanation.\n\nThe force of boosting (subsection \u201cModeling exogenous re-exposure to VZV\u201d) is assumed to occur at the same rate as the FOI. This assumption (which contrasts the authors' remark that the actual magnitude of the boosting effects is unknown) should be emphasized, as it might be a main responsible of the fact that seven of the best models \u201cinclude exogenous boosting\u201d (see Results).\n\nAbout the modeling of the Force of reactivation (subsection \u201cModeling VZV endogenous reactivation\u201d), recent papers have modeled it as an increasing function of age (=senescence), and of time elapsed since last boosting episode. In the paper this is modeled as a purely random factor \u201cThe FoR deviates per time step and individual by means of a gamma function.\u201d Am I understanding correctly? In my opinion that should be taken as a (useful) baseline against which, however, to ground alternative, possibly more realistic hypotheses. Therefore this point should be motivated more carefully. How was this gamma (density?) parametrized? This is important because one of the main results on the impact of vaccination i.e. the young age of zoster cases in the post-vaccination period (\u201cNoteworthy is the relative dominance of the 31\u201340 year...\u201d) might strongly follow from this hypothesis.\n\nReviewer #3:\n\nThis work aims at answering some relevant questions about VZV infection and in particular estimating parameters that describe the exogenous and endogenous boosting effect, a key aspect when considering the introduction of varicella vaccination. For this reason I believe that the paper, in principle, is very relevant and of interest for the research community that is involved in VZV modeling and policy decision making.\n\nHowever, also considering the standard of the eLife journal, I believe the paper cannot be accepted in its current form. Some major improvements and changes are required to make it fit for publication. In particular, specific modeling assumptions and fitting procedures need to be carefully re-addressed and properly clarified before consideration for publication. See the list below for the required amendments:\n\n1) The analysis is based on an Agent-Based Modeling framework. These models require a very thorough validation procedure, especially when considering a realistic demographic population. The authors do not show any model output that convinces us that the demographic component is suitable to model VZV in Belgium. I believe that these validations outputs should be presented.\n\n2) Details of the model structure used are missing. Is the structure following the traditional Brisson/Edmunds/van Hoek approach or the Guzzetta progressive immunity one (AJE 2013)? Details on this should be available to the reader.\n\n3) The three exogenous boosting scenarios: a number of parameters are simply assumed and no explanations on their values are provided. In particular, why six weeks to reach the peak after exogenous boosting? Also, in scenario 2, 60% of pre-boosting value (why?), steady state for x years (?) and why >= 3 years? A better explanation on these parameter values is required. Also what is the biological explanation for the return to pre-boosting values after x years? Finally, in scenario 3 there's a little bit of confusion between delta t and x. The authors should check the formula of Y(t).\n\n4) The lines \u201cHZ individuals are assumed to be infectious for 1 week and receive a VZV-CMI reset to 1 +/\u2212 random factor (normally distributed, cf. primo infection) and \u201cHZ only occurs in about 5% of individuals [Yawn 2011] and that VZV-CMI is higher in recovered HZ patients than in age-matched controls\u201d seem contradicting. What is the post HZ value of VZV CMI? As after primary infection or higher?\n\n5) The sentence \u201cAlthough HZ infectiousness was needed to maintain circulation of VZV in our model, the relative effects on overall VZV transmission are \u2013 compared to CP \u2013 marginal\u201d: it is not clear here why you need HZ infectiousness to maintain circulation of VZV infection. If it is post-vaccination we don't care to maintain VZV circulation. If it is pre-vaccination, then there is something wrong if the model need HZ to keep VZV infection.\n\n6) The approximation of HZ infectiousness to varicella breakthrough is a strong assumption. at the least we need to check the sensitivity of model results to variations of this parameter value.\n\n7) The fitting procedure needs to be rethought. It seems that the authors explore in a two-step approach a grid of values and parameter sets. First of all, where is the decision to run the simulation three times coming from? And how is the grid of parametric space explored? And also how are the values in the grid selected? What is the criteria? From Table 2 I notice some very weird combinations of parameters going from step 1 to step 2. It does not seem we are considering the whole parametric space in step 1 and then narrowing the ranges as a function of the results obtained in step 1. A much more comprehensive sensitivity analysis should be performed to evaluate more thoroughly the entire parametric space.\n\n8) The best parameter sets are chosen based on a fit of the HZ incidence data, considered to be binomially distributed. Wouldn't it be better to consider a Poisson distribution for the HZ incidence data (Guzzetta et al., 2013), considering that incidence refers to count of HZ episodes per age group?\n\n9) The authors built an IBM that accounts for both between and within host dynamics, namely, taking into consideration both exogenous and endogenous boosting. The best parameter sets to inform the mathematical model are chosen based on repeated fitting of the HZ age-specific incidence estimates from the model to observed HZ incidence data from Belgium. As regards the fit of the best sets of parameters to the observed HZ data, as shown in Figure 1 and 2, the fit is very poor for the younger age groups, even for the two best parameter sets (9 and 13), as it is duly noted by the authors. Is there any way to improve the fit in this age group, considering that in the deterministic model by Guzzetta et al. (2013) it can be observed a better fit of HZ in young age groups? Maybe the authors should aggregate the incidence into age classes as otherwise the stochastic nature of the data might prevail over the goodness of fit.\n\n10) It seems, from parameters sets 8, 9, and 13, that a higher peak fold increase following exogenous boosting is associated with a better fit of HZ incidence data in the first ten years of age. What about the age group between 10 and 20 years of age, the one suffering the poorest fit?\n\n11) The authors claim that their model can easily accommodate new parameter value coming from experimental studies. However, when it comes to consider the effect of an hypothetic vaccination program, they choose a very simplistic and unrealistic one. Wouldn't it be better if they considered more realistic scenarios, such as those taken into consideration by Poletti et al. (2013) and other works, or some actual vaccination program, as the one in the US or in other countries with an effective varicella vaccination program? Also, the amount and timing of zoster reactivation may be country-specific as shown in Poletti (2013). This should be mentioned in the Discussion, especially considering the current debate on whether or not to introduce universal VZV vaccination in several countries.\n\n12) Figures 4 and 5 should be redone considering maybe an aggregation over time, to avoid all the stochasticity of the model output. In Figure 4 the authors plot the pre-steady state and pre-vaccination incidence which is not of interest. And there is also a part of the plot without any line (right hand side). The interesting bit is the post vaccination part to which the authors only dedicate a small portion of the graph. Also, why are there different colors?\n",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d74e5ce9-5c57-45ef-8f8a-2d38a62c32f3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C1",
+      "claim": "Varicella-zoster virus (VZV) causes chickenpox.",
+      "claim_type": "EXPLICIT",
+      "source": "Varicella-zoster virus (VZV) causes chickenpox and reactivation of latent VZV causes herpes zoster (HZ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"TEXT\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "5614e9d0-0818-4605-a205-8306c678d53b",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C2",
+      "claim": "Reactivation of latent VZV causes herpes zoster (HZ).",
+      "claim_type": "EXPLICIT",
+      "source": "Varicella-zoster virus (VZV) causes chickenpox and reactivation of latent VZV causes herpes zoster (HZ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"TEXT\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "5f2b8b8f-5cc7-45db-8507-7a550d7021e0",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C3",
+      "claim": "VZV reactivation is subject to declining VZV-specific cellular mediated immunity (CMI).",
+      "claim_type": "EXPLICIT",
+      "source": "VZV reactivation is subject to the opposing mechanisms of declining and boosted VZV-specific cellular mediated immunity (CMI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "d8f9fe24-991d-49bd-a36e-6cef29e7a665",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C4",
+      "claim": "VZV reactivation is subject to boosted VZV-specific cellular mediated immunity (CMI).",
+      "claim_type": "EXPLICIT",
+      "source": "VZV reactivation is subject to the opposing mechanisms of declining and boosted VZV-specific cellular mediated immunity (CMI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "a65c7c5a-6251-450e-93c6-9ed37b659ab8",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C5",
+      "claim": "A reduction in exogenous re-exposure opportunities through universal chickenpox vaccination could lead to an increase in HZ incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in exogenous re-exposure 'opportunities' through universal chickenpox vaccination could therefore lead to an increase in HZ incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the abstract based on the exogenous boosting mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "8b872379-b6b0-486b-9886-f1b5d9d3e03a",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C6",
+      "claim": "This is the first individual-based model that integrates within-host data on VZV-CMI and between-host transmission data to simulate HZ incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We present the first individual-based model that integrates within-host data on VZV-CMI and between-host transmission data to simulate HZ incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct claim about the novelty of the presented model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "28119edc-f77e-404c-90bf-43614fe724df",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C7",
+      "claim": "The duration of exogenous boosting is estimated at 2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "This model allows estimating currently unknown pivotal biomedical parameters, including the duration of exogenous boosting at 2 years, with a peak threefold to fourfold increase of VZV-CMI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "9206402d-3de8-4690-ab8f-69227df12c62",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C8",
+      "claim": "Exogenous boosting causes a peak threefold to fourfold increase of VZV-CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "This model allows estimating currently unknown pivotal biomedical parameters, including the duration of exogenous boosting at 2 years, with a peak threefold to fourfold increase of VZV-CMI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "dd742538-7923-4634-9d0c-a2b510cbca8e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C9",
+      "claim": "The VZV weekly reactivation probability is 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "the VZV weekly reactivation probability at 5%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "79ca1d72-6f75-4fa4-82c7-18bf4bd99fcc",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C10",
+      "claim": "VZV subclinical reactivation has no effect on VZV-CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "VZV subclinical reactivation having no effect on VZV-CMI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived finding presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "11f5e16d-492a-4be6-8dc1-35933f5f16af",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C11",
+      "claim": "A 100% effective chickenpox vaccine given to 1 year olds would cause a 1.75 times peak increase in HZ 31 years after implementation.",
+      "claim_type": "EXPLICIT",
+      "source": "A 100% effective chickenpox vaccine given to 1 year olds would cause a 1.75 times peak increase in HZ 31 years after implementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "beee50b9-f442-46ad-a0f6-0417a780afea",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C12",
+      "claim": "The predicted increase in HZ following chickenpox vaccination is predicted to occur mainly in younger age groups than is currently assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase is predicted to occur mainly in younger age groups than is currently assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "807368ef-14cb-4807-b270-85c8f6842ce1",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C13",
+      "claim": "VZV causes varicella or chickenpox, mainly during childhood.",
+      "claim_type": "EXPLICIT",
+      "source": "Varicella-zoster virus (VZV) causes the itching, erythematous vesicular disease called varicella or chickenpox, mainly during childhood, and remains latent in neural ganglia afterwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "7ace6755-a9cd-4b0e-99c0-93e24a4791fe",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C14",
+      "claim": "VZV remains latent in neural ganglia after primary infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Varicella-zoster virus (VZV) causes the itching, erythematous vesicular disease called varicella or chickenpox, mainly during childhood, and remains latent in neural ganglia afterwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "8a67399a-8015-4a7b-98da-c39250ddb16a",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C15",
+      "claim": "VZV can reactivate subclinically as shown by detection of VZV in saliva or blood from otherwise healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Latency can then be interrupted by episodes of (primarily subclinical) reactivation of VZV as shown by the detection of VZV in saliva or blood from otherwise healthy individuals (Sch\u00fcnemann et al., 1998; Nagel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "4b8335f4-e2b8-4ab0-9100-ce098c21412d",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C16",
+      "claim": "VZV reactivations may cause herpes zoster (HZ), which presents clinically as a painful dermatomal rash.",
+      "claim_type": "EXPLICIT",
+      "source": "VZV reactivations may also cause herpes zoster (HZ), which presents clinically as a painful dermatomal rash.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "47731bfb-95a0-451b-b05a-a02204f83238",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C17",
+      "claim": "HZ occurs most frequently in individuals with a drastically declined cellular immune status.",
+      "claim_type": "EXPLICIT",
+      "source": "HZ occurs most frequently in individuals with a drastically declined cellular immune status (Dolin et al., 1978)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "be75d869-6797-4add-a371-6377ca2cc1c1",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C18",
+      "claim": "Ageing itself is often assumed to substantially reduce resilience of the VZV-specific immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "but ageing itself is often assumed to substantially reduce resilience of the VZV-specific immune response (Miller, 1980; Berger et al., 1981; Levin et al., 2003, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "50b2c789-a0f9-47e7-8a68-27eae08f3a98",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C19",
+      "claim": "Waning of VZV cellular mediated immunity (CMI) by age is influenced by cytomegalovirus (CMV) infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research supports the hypothesis that waning of VZV cellular mediated immunity (CMI) by age is also influenced by cytomegalovirus (CMV) infection (Ogunjimi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "c43e204b-8827-49b5-831c-eb507d7c7b11",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C20",
+      "claim": "Effective and safe pediatric vaccines against varicella exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective and safe pediatric vaccines against varicella exist and have been universally implemented in some countries including the US, Australia, Greece, Germany, Japan and Taiwan (Marin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference and is established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "a56068d9-c806-4ae1-abef-771395c9d186",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C21",
+      "claim": "Varicella vaccines have been universally implemented in the US, Australia, Greece, Germany, Japan and Taiwan.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective and safe pediatric vaccines against varicella exist and have been universally implemented in some countries including the US, Australia, Greece, Germany, Japan and Taiwan (Marin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "414e49c8-4177-44b7-ad21-95346b05f2cd",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C22",
+      "claim": "Policy makers in many countries have been hesitant to introduce childhood VZV vaccination due to the general population's perception of varicella as a relatively mild disease.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in many other countries policy makers have been hesitant to introduce childhood VZV vaccination due to the general population's perception of varicella as a relatively mild disease, as well as the so-called exogenous boosting hypothesis (Hope-Simpson, 1965; Ogunjimi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason for policy hesitation with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "4c228268-a91f-4765-b97c-919b9bb45c4d",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C23",
+      "claim": "Policy makers have been hesitant to introduce childhood VZV vaccination due to the exogenous boosting hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in many other countries policy makers have been hesitant to introduce childhood VZV vaccination due to the general population's perception of varicella as a relatively mild disease, as well as the so-called exogenous boosting hypothesis (Hope-Simpson, 1965; Ogunjimi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason for policy hesitation with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "2e5b6bf5-715e-4e3a-9e9e-1c314cc6a075",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C24",
+      "claim": "The exogenous boosting hypothesis is based on the concept of the secondary immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is based on the concept of the secondary immune response and assumes that boosting of VZV-CMI occurs upon re-exposure to varicella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the hypothesis based on immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "62e5d240-fdf4-4fa1-846e-c855dc84c927",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C25",
+      "claim": "The exogenous boosting hypothesis assumes that boosting of VZV-CMI occurs upon re-exposure to varicella.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is based on the concept of the secondary immune response and assumes that boosting of VZV-CMI occurs upon re-exposure to varicella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the hypothesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "45ec6d98-7899-46c0-941a-a85745ce67a0",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C26",
+      "claim": "Boosted VZV-specific cellular immunity would reduce the risk of VZV reactivation and thence HZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Boosted VZV-specific cellular immunity would subsequently reduce the risk of VZV reactivation and thence HZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the exogenous boosting hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "def6acb3-2043-48cf-b5a9-8bbf6ac06487",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C27",
+      "claim": "The introduction of widespread childhood VZV vaccination would reduce opportunities for varicella re-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of widespread childhood VZV vaccination would reduce opportunities for varicella re-exposure and could therefore increase HZ incidence, as shown in model-based projections (Schuette and Hethcote, 1999; Brisson et al., 2000; Bilcke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference supported by model-based projections.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "111c8bef-ad29-4042-b87c-5914b5eb9358",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C28",
+      "claim": "Widespread childhood VZV vaccination could increase HZ incidence, as shown in model-based projections.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of widespread childhood VZV vaccination would reduce opportunities for varicella re-exposure and could therefore increase HZ incidence, as shown in model-based projections (Schuette and Hethcote, 1999; Brisson et al., 2000; Bilcke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited model-based projections.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "fba253d5-48d7-4bec-a2c2-9f1d2c454b65",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C29",
+      "claim": "A systematic review concluded that exogenous boosting exists.",
+      "claim_type": "EXPLICIT",
+      "source": "Although current data on HZ-incidence post introduction of childhood VZV vaccination has caused controversy, a systematic review rating the quality of the evidence, concluded that exogenous boosting exists, but that its population-wide effect after widespread childhood VZV vaccination remains highly uncertain (Ogunjimi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited systematic review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "c60dea31-c965-4187-8da7-e07c82f0efdd",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C30",
+      "claim": "The population-wide effect of exogenous boosting after widespread childhood VZV vaccination remains highly uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although current data on HZ-incidence post introduction of childhood VZV vaccination has caused controversy, a systematic review rating the quality of the evidence, concluded that exogenous boosting exists, but that its population-wide effect after widespread childhood VZV vaccination remains highly uncertain (Ogunjimi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited systematic review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "8030ebc6-c090-4012-92d2-47c6cf138c1c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C31",
+      "claim": "Current deterministic VZV simulation models entangle exogenous boosting, waning of immunity, immunosenescence and reactivation, undermining the possibility of estimating the magnitude and duration of exogenous boosting accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main points of criticism on current predictions by deterministic VZV simulation models is the entanglement of exogenous boosting, waning of immunity, immunosenescence and reactivation undermining the possibility of estimating the magnitude and duration of exogenous boosting accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "46403796-4151-47d3-887b-fd292542943d",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C32",
+      "claim": "Entangled parameters in deterministic models can be chosen to fit models well to observed HZ incidence data, but are too artificial to allow real and verifiable biological interpretations.",
+      "claim_type": "EXPLICIT",
+      "source": "A concern is that these entangled parameters can be chosen to fit these models well to observed HZ incidence data, but that they are too artificial to allow real and verifiable biological interpretations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "afb2380a-b0fe-48eb-8cef-4d9759ff9103",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C33",
+      "claim": "Some studies have shown VZV to reactivate subclinically in healthy individuals, immunocompromised and stressed individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, some studies have shown VZV to reactivate subclinically both in healthy individuals, immunocompromised and stressed individuals (Sch\u00fcnemann et al., 1997; Mehta et al., 2003; Nagel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "878f7e9b-0d5e-4f46-88bf-ad830652408d",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C34",
+      "claim": "The effect of subclinical VZV reactivation on VZV-CMI has not yet been quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effect on VZV-CMI has not yet been quantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "41a1c062-7a21-4216-bdc4-782f3df67245",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C35",
+      "claim": "This is the first individual-based VZV model explicitly combining within and between-host dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current paper, we describe the first individual-based VZV model, explicitly combining within and between-host dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the presented model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "dc4a8a4b-a289-47d2-b442-83f2dcda8c12",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C36",
+      "claim": "The model is based on experimental viro-immunological data.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is based on experimental viro-immunological data and allows an accurate estimation of the exogenous boosting characteristics and explicit insertion or validation of experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's foundation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "da62d94d-7b2c-49a4-89ee-ef7295e0fa72",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C37",
+      "claim": "Eight unique parameter sets led to a reasonable fit of Belgian HZ incidence data.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a step-wise algorithm we initially found eight unique parameter sets leading to a reasonable fit of Belgian HZ incidence data (see Table 1 and Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the model fitting procedure, supported by Table 1 and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "1a38ca65-7ed0-4e10-84bf-fbe30b110574",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C38",
+      "claim": "All best-fitting parameter sets were based on boosting scenario 3 (predefined exponential loss of boosted VZV-CMI).",
+      "claim_type": "EXPLICIT",
+      "source": "All best-fitting parameter sets were based on boosting scenario 3 (predefined exponential loss of boosted VZV-CMI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "454c1246-3d32-41f4-aec9-b6f355d98799",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C39",
+      "claim": "Seven of the best-fitting models include exogenous boosting with a peak value of 1.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of these models include exogenous boosting (defined as an exponential decay) with a peak value of 1.3, a boosting duration ranging between 2 and 15 years, no endogenous boosting, a weekly VZV reactivation probability and an annual VZV-CMI loss (= waning) estimated to be 1\u20131.5% and 1\u20132%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "42f2daeb-19e1-4b74-8733-a9c5714f8264",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C40",
+      "claim": "Seven of the best-fitting models have a boosting duration ranging between 2 and 15 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of these models include exogenous boosting (defined as an exponential decay) with a peak value of 1.3, a boosting duration ranging between 2 and 15 years, no endogenous boosting, a weekly VZV reactivation probability and an annual VZV-CMI loss (= waning) estimated to be 1\u20131.5% and 1\u20132%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "86d43b0e-473d-4de5-acb7-347fa857aa79",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C41",
+      "claim": "Seven of the best-fitting models include no endogenous boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of these models include exogenous boosting (defined as an exponential decay) with a peak value of 1.3, a boosting duration ranging between 2 and 15 years, no endogenous boosting, a weekly VZV reactivation probability and an annual VZV-CMI loss (= waning) estimated to be 1\u20131.5% and 1\u20132%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "41f6846d-5ae0-4ebe-9b1f-57e73a103841",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C42",
+      "claim": "Seven of the best-fitting models have an annual VZV-CMI loss (waning) estimated to be 1\u20131.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of these models include exogenous boosting (defined as an exponential decay) with a peak value of 1.3, a boosting duration ranging between 2 and 15 years, no endogenous boosting, a weekly VZV reactivation probability and an annual VZV-CMI loss (= waning) estimated to be 1\u20131.5% and 1\u20132%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "83a43ef8-8f0e-496a-9c26-e278bfc0c6f0",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C43",
+      "claim": "The fits are excellent for age groups 25 years and older.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that although the fits are excellent for the most relevant age groups, 25 years and older, they are less suited to predict HZ incidence for younger ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of model fit quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "c2332936-2fb5-4f2a-b9a4-492fb654acc2",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C44",
+      "claim": "The initial fits are less suited to predict HZ incidence for younger ages.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that although the fits are excellent for the most relevant age groups, 25 years and older, they are less suited to predict HZ incidence for younger ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of model fit quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "43199a33-3c7e-4653-8e7c-240975f8eebe",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C45",
+      "claim": "One model predicted a peak boosting value of 2.5, a boosting duration of only 1 year and no endogenous boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "One model predicted a peak boosting value of 2.5, a boosting duration of only 1 year and no endogenous boosting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "6cb95b79-4112-4400-a8da-480464c5058c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C46",
+      "claim": "The model with peak boosting value of 2.5 was less suited to fit to HZ data for older age groups but fitted much better to HZ data for younger age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this model was less suited to fit to HZ data for older age groups, it fitted much better to HZ data for younger age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of model fit quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "b0ef96e2-503a-45cc-b391-5e561f2db0d5",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C47",
+      "claim": "The two best fitting parameter sets predicted peak boosting values between 2.8 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "The two best fitting parameter sets predicted peak boosting values between 2.8 and 4 (maximum allowable value), a duration of boosting limited to 1 or 2 years and, as before, no endogenous boosting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the refined model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "bf506cf8-f80e-4623-83fe-de014fd9be48",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C48",
+      "claim": "The two best fitting parameter sets predicted a duration of boosting limited to 1 or 2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The two best fitting parameter sets predicted peak boosting values between 2.8 and 4 (maximum allowable value), a duration of boosting limited to 1 or 2 years and, as before, no endogenous boosting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the refined model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "f465656f-5473-4315-b6ae-f13a530b19b0",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C49",
+      "claim": "The two best fitting parameter sets predicted no endogenous boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "The two best fitting parameter sets predicted peak boosting values between 2.8 and 4 (maximum allowable value), a duration of boosting limited to 1 or 2 years and, as before, no endogenous boosting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the refined model fitting procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "a266da89-96d2-4de8-a95a-717bb2518239",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C50",
+      "claim": "The peak increase in HZ incidence was reached approximately 31 years after programme initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak increase in HZ incidence was reached approximately 31 years after programme initiation and was 1.75 (1.64\u20131.87) (100% CI) times higher than the HZ incidence prior to varicella vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction for the vaccination scenario.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "70ed8d6c-3cd3-4b66-92cb-0587dd5bb7f9",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C51",
+      "claim": "The peak HZ incidence was 1.75 (1.64\u20131.87) times higher than the HZ incidence prior to varicella vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak increase in HZ incidence was reached approximately 31 years after programme initiation and was 1.75 (1.64\u20131.87) (100% CI) times higher than the HZ incidence prior to varicella vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction for the vaccination scenario with confidence interval.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "0df36f4f-d56d-410a-9e9f-7babc17a0899",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C52",
+      "claim": "Per 1,000,000 person-years the total number of HZ cases would increase on average from 3219 to 5313 (set 9) or from 3209 to 5955 (set 13).",
+      "claim_type": "EXPLICIT",
+      "source": "This means that per 1,000,000 person-years the total number of HZ cases would increase on average from 3219 to 5313 (set 9) or from 3209 to 5955 (set 13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction for the vaccination scenario.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "a03b9a10-6e86-4ec7-ac6f-9a6ce0dcf87e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C53",
+      "claim": "The relative contribution of different age groups to HZ incidence changes in the time period after introduction of varicella vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows that the relative contribution of different age groups to HZ incidence changes in the time period after introduction of varicella vaccination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "d217c48b-5a6e-4fc6-b95d-edee574b257e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C54",
+      "claim": "The 31\u201340 year old age group dominates HZ incidence between 10\u201350 years after introduction of varicella vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy is the relative dominance of the 31\u201340 year old age group between 10\u201350 years after introduction of varicella vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "704b99b8-b7ce-4807-bd01-d27ff3b34b51",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C55",
+      "claim": "This study is the first to use an individual-based dynamic transmission model for VZV.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this study is the first to use an individual-based dynamic transmission model for VZV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "670d9eb7-e36c-42ca-966e-90d1a3f7ce4c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C56",
+      "claim": "The model allowed combining immunological and virological data to estimate key parameters in VZV population dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This model allowed us to combine immunological and virological data to estimate key parameters in VZV population dynamics, such as the peak CMI response following re-exposure, duration of boosting and VZV subclinical reactivation characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "f8d4802d-c80f-44bc-9894-a58e473d1da3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C57",
+      "claim": "The best fitting parameter sets for Belgium suggest the effective duration of exogenous boosting to last only between 1 and 2 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Our best fitting parameter sets for Belgium suggest the effective duration of exogenous boosting to last only between 1 and 2 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "9de3f89b-9c27-4ac6-9201-455e53220eec",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C58",
+      "claim": "The predicted duration of exogenous boosting (1-2 years) is significantly lower than the 20 years predicted by the deterministic VZV model by Brisson et al.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictions are significantly lower than those from the highly cited deterministic VZV model by Brisson et al., in which the average duration was predicted to be 20 years ([7\u201341 years] 95%CI) (Brisson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a cited model.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "2c842573-cb55-4149-86f4-a40b97d194bf",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C59",
+      "claim": "The peak immunological response was estimated to be 2.8\u20134.0 times larger than the pre-re-exposure value.",
+      "claim_type": "EXPLICIT",
+      "source": "Our peak immunological response was estimated to be 2.8\u20134.0 times larger than the pre-re-exposure value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "d5a5f88a-3633-4e0e-ba1a-7894de24aafa",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C60",
+      "claim": "The predicted peak immunological response (2.8-4.0 times) is consistent with those experimentally found in adults re-exposed to VZV by varicella contacts in the household.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictions are consistent with those experimentally found in adults re-exposed to VZV by varicella contacts in the household (Arvin et al., 1983; Vossen et al., 2004) or by vaccination (Levin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "d9e0317e-fec8-4439-9c12-50cbaaf2f5cc",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C61",
+      "claim": "The predicted peak immunological response (2.8-4.0 times) is consistent with those experimentally found in adults re-exposed to VZV by vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictions are consistent with those experimentally found in adults re-exposed to VZV by varicella contacts in the household (Arvin et al., 1983; Vossen et al., 2004) or by vaccination (Levin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "cc0bcb89-92bf-4b0e-aa56-f822bcbd72a6",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C62",
+      "claim": "All close contacts with varicella patients were assumed to exert an equal 'average' boosting effect on the exposed individual.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible limitation of our study was that all close contacts with varicella patients were assumed to exert an equal 'average' boosting effect on the exposed individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated model assumption and limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "48d567dd-0667-46ab-8b97-7e657c39bc2c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C63",
+      "claim": "The VZV reactivation probability was estimated to be 5% per week.",
+      "claim_type": "EXPLICIT",
+      "source": "The VZV reactivation probability was estimated to be 5% per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "863d755e-800b-4b2b-b242-d6b85925cd51",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C64",
+      "claim": "Observed data on VZV reactivation probability are rather sparse and highly divergent regarding study design, sampling site and results.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed data on VZV reactivation probability are rather sparse and highly divergent regarding study design, sampling site (saliva, blood, cerebrospinal fluid) and results (Sch\u00fcnemann et al., 1997; Mehta et al., 2003; Engelmann et al., 2008; Birlea et al., 2011; Nagel et al., 2011; van Velzen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "fd723287-f689-47ad-87fb-f2a10fc43a22",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C65",
+      "claim": "The observed weekly VZV reactivation probability varies between 0 and 71%.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed weekly VZV reactivation probability is a topic of discussion in the literature and varies between 0 and 71%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of literature findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "18067188-fcf4-44c2-a182-80dbe18c60c1",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C66",
+      "claim": "None of the best fitting parameter sets predicted a significant effect of VZV reactivation on VZV-CMI.",
+      "claim_type": "EXPLICIT",
+      "source": "None of our best fitting parameter sets predicted a significant effect of VZV reactivation on VZV-CMI, implying that endogenous boosting most likely does not have an impact on the occurrence of HZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "cd32b6c2-358a-4a14-a851-ba5ad8a28c5e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C67",
+      "claim": "Endogenous boosting most likely does not have an impact on the occurrence of HZ.",
+      "claim_type": "EXPLICIT",
+      "source": "None of our best fitting parameter sets predicted a significant effect of VZV reactivation on VZV-CMI, implying that endogenous boosting most likely does not have an impact on the occurrence of HZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "c4da89a6-d2c1-4732-8cab-b1fe81ef3685",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C68",
+      "claim": "The annual decline of VZV-CMI was predicted to be between 1 and 1.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The annual decline of VZV-CMI was predicted to be between 1 and 1.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model-derived estimate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "7149c617-b716-4a76-855d-a140ce1a3797",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C69",
+      "claim": "The predicted annual decline of VZV-CMI (1-1.5%) is lower than the 2.7\u20133.9% experimentally observed by Levin et al. for individuals older than 60 years.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is lower than the 2.7\u20133.9% experimentally observed by Levin et al. for individuals older than 60 years (Levin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "9ceed36c-baa7-4c03-9cde-898283bc3b27",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C70",
+      "claim": "The twofold difference in waning rate can be explained by the explicit disentanglement of waning and boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "The twofold difference in waning rate can be explained by the explicit disentanglement of waning and boosting (with younger age groups having\u2014on average\u2014higher probabilities of being boosted recently thereby actually increasing the observed waning rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the difference between model and experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "ff06f1cf-2b5d-401d-a3a0-4d9884349f3c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C71",
+      "claim": "The model predicts a net increase in HZ incidence during approximately 50 years following a 100% effective varicella vaccine given to all 1-year-old children.",
+      "claim_type": "EXPLICIT",
+      "source": "Our predictions (averaged per parameter set) showed a net increase in HZ incidence during approximately 50 years (see Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model prediction shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "fc44d849-0a4a-4768-842b-732b1963fa2f",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C72",
+      "claim": "The delay in the HZ peak incidence is caused by cohorts born close to the time varicella vaccination was introduced experiencing less repeated boosting instances during their childhood than previously born cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "This delay in the HZ peak incidence is caused by cohorts born close to the time varicella vaccination was introduced experiencing less repeated boosting instances during their childhood than previously born cohorts (a mechanism that is similar to the progressive immunity model proposed in the deterministic VZV model by Guzzetta et al. (2013)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the model mechanism with a citation to a similar model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "37edc33c-32b2-447d-bf0a-58e6e26105f2",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C73",
+      "claim": "Proper documentation of significant increases in HZ incidence might not be possible during the first 10 years, even if a 100% effective vaccine would be used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our analysis shows that proper documentation of significant increases in HZ incidence might not be possible during the first 10 years, even if a 100% effective vaccine would be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "e9674b52-57f1-4151-bbfe-26481d7fd6f2",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C74",
+      "claim": "During the first 10 years of the US program, both uptake and efficacy with the initial single dose vaccination programme were far below 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, during the first 10 years of the US program, both uptake and efficacy with the initial single dose vaccination programme were far below 100%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the US vaccination program.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "3f2d0c2f-4a56-4d75-821c-8c1c6a1e325a",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C75",
+      "claim": "The VZV IBM predicts that 31\u201340 year olds contribute the most to the peak in HZ incidence following varicella vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to earlier model estimates our VZV IBM predicts that 31\u201340 year olds contribute the most to the peak in HZ incidence following varicella vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction that contrasts with earlier models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "8047eae6-2cdd-4417-9d72-115d95af8164",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C76",
+      "claim": "Some observational studies found no effect of varicella vaccination on HZ incidence for those aged 60 years and older.",
+      "claim_type": "EXPLICIT",
+      "source": "Some observational studies found no effect of varicella vaccination on HZ incidence for those aged 60 years and older (Hales et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited observational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "6fe9b80c-8abd-4186-87c9-f32f1b6651d4",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C77",
+      "claim": "Younger adults have been shown to be less likely to develop post-herpetic neuralgia.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, younger adults have been shown to be less likely to develop post-herpetic neuralgia (Opstelten et al., 2002; Drolet et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "b38bef24-1d11-4fa8-a54a-851a1afe042e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C78",
+      "claim": "Cost-effectiveness analyses using the VZV IBM would be more in favor of universal childhood varicella vaccination compared to deterministic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus although our aggregated predictions regarding the increase in HZ incidence following varicella vaccination may appear similar to those published using deterministic models, cost-effectiveness analyses using our VZV IBM would be more in favor of universal childhood varicella vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about cost-effectiveness based on the model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "2e92be57-96c1-4e52-be71-c3218ebf41c3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C79",
+      "claim": "A major benefit of the modeling approach is the possibility to verify best\u2013fit parameter values via experimental studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A major benefit of our modeling approach is the possibility to verify our best\u2013fit parameter values via experimental studies, or vice versa, to adapt parameter values when empiricism delivers new insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "478c4106-2216-44ba-9863-7710fe4a1709",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C80",
+      "claim": "The dynamics of the synthetic population are based on Belgian population and mortality data normalized to a fixed total population of 998,400 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of the synthetic population of the individual-based model are based on Belgian population and mortality data normalized to a fixed total population of 998,400 individuals (Eurostat, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's demographic structure with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "28cb307e-8d32-4dbf-9aa9-4da5e6838730",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C81",
+      "claim": "The chosen population size is the result of a trade-off between ensuring sufficient heterogeneity and a manageable computational burden.",
+      "claim_type": "EXPLICIT",
+      "source": "The chosen population size is the result of a trade-off between ensuring sufficient heterogeneity and a manageable computational burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a modeling decision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "5dbc8af5-b269-418c-9c18-77ecb7ad70ed",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C82",
+      "claim": "Natural deaths are selected based on the age-dependent mortality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural deaths are selected based on the age-dependent mortality rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's demographic dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "1dbbc0fa-e541-447c-937d-6d5d672e8670",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C83",
+      "claim": "Per time step, the number of newborns equals the number of deaths to obtain a constant population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Per time step, the number of newborns equals the number of deaths to obtain a constant population size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's demographic dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "6ed6995e-73de-4d86-8ce1-9d30109d407b",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C84",
+      "claim": "The model runs in time steps of 1 week.",
+      "claim_type": "EXPLICIT",
+      "source": "The model runs in time steps of 1 week and people with week-age 53 move to the next age class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's temporal resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "bb841b04-f68a-4930-b40f-b8648dbdb39b",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C85",
+      "claim": "At the start of the simulation, 30 individuals between ages 1 and 3 are randomly infected with CP.",
+      "claim_type": "EXPLICIT",
+      "source": "At the start of the simulation, 30 individuals between ages 1 and 3 are randomly infected with CP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's initial conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "707a6427-8afc-48df-9103-9ade33f289fd",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C86",
+      "claim": "The relative HZ infectiousness is empirically estimated to be 0.17.",
+      "claim_type": "EXPLICIT",
+      "source": "with w(i,n) the weekly effective contact probability for an individual from group i with a random individual from group n, m the relative HZ infectiousness (empirically estimated to be 0.17 [cf. paragraph 'Modeling VZV endogenous reactivation'])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter based on empirical estimation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "228a3103-2e2b-4c0a-9253-9a591a0574bb",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C87",
+      "claim": "The VZV infection probability is based on empirical social contact data.",
+      "claim_type": "EXPLICIT",
+      "source": "The VZV infection probability, w(i, n), is based on empirical social contact data as described elsewhere (Ogunjimi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's contact structure with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "09aee61f-2efc-4e8a-8ca1-775b44f8de1a",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C88",
+      "claim": "Individuals infected for the first time with VZV are infectious for 1 week after an incubation period of 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals infected for the first time with VZV are infectious for 1 week after an incubation period of 2 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter based on known disease characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "41545eda-ae3a-4809-ac1a-eaa2cfee2f79",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C89",
+      "claim": "CP recovered individuals receive a normalized CMI value of 1 \u00b1 a randomly distributed factor (normal distribution with variance 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, they are CP recovered and receive a normalized CMI value of 1 \u00b1 a randomly distributed factor (normal distribution with variance 0.1 as suggested by Terada et al. (1994)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "ca90b827-b785-4837-a813-32fc3f842839",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C90",
+      "claim": "Once in the CP recovered state, VZV-CMI starts waning at a weekly rate via multiplication with (1\u2014waning-rate).",
+      "claim_type": "EXPLICIT",
+      "source": "Once arrived in the CP recovered state, VZV-CMI starts waning at a weekly rate via the multiplication with (1\u2014waning-rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's waning mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "a8a0a6e7-7718-470f-a09d-15d16a7d770f",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C91",
+      "claim": "The waning-rate is informed by the annual decline of 2.7\u20133.9% per age-year as noted by baseline VZV-CMI values by Levin et al.",
+      "claim_type": "EXPLICIT",
+      "source": "The waning-rate (see Table 2) is informed by the annual decline of 2.7\u20133.9% per age-year as noted by baseline VZV-CMI values by Levin et al. (2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter informed by cited data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "059c0585-d310-461f-ae72-d3356ffd77ac",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C92",
+      "claim": "In the first 6 weeks after exogenous boosting, VZV-CMI is assumed to increase linearly up to 'Peak fold increase' times the pre-boosting value.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first 6 weeks after exogenous boosting, VZV-CMI is assumed to increase linearly up to 'Peak fold increase' times the pre-boosting value (Levin et al., 2008), but is limited to a maximum of 4 times the VZV-CMI value without re-exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "da0e0d4c-1f8a-4550-a294-388b5c0444df",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C93",
+      "claim": "The effect of boosting is limited to a maximum of 4 times the VZV-CMI value without re-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first 6 weeks after exogenous boosting, VZV-CMI is assumed to increase linearly up to 'Peak fold increase' times the pre-boosting value (Levin et al., 2008), but is limited to a maximum of 4 times the VZV-CMI value without re-exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model constraint.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "de562f4f-850d-4b13-8252-0a6660a78274",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C94",
+      "claim": "Limiting the effect of boosting to a factor 4 is based on the finding that pediatricians, highly exposed to CP, have T-cell values that are on average 3\u20134 times higher than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Limiting the effect of boosting to a factor 4 is based on the recent finding that pediatricians, highly exposed to CP, have T-cell values that are on average 3\u20134 times higher than controls, but not higher (Ogunjimi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model constraint based on cited empirical data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "cd822ffc-f77a-4c01-920b-aa171c2a2fee",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C95",
+      "claim": "The FoR defines the VZV-CMI needed to resist clinical reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The FoR defines the VZV-CMI needed to resist clinical reactivation and if VZV-CMI < FoR, reactivation will lead to HZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a model concept.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "2e771042-907b-4c84-aab3-62b6faa29771",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C96",
+      "claim": "If VZV-CMI < FoR, reactivation will lead to HZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The FoR defines the VZV-CMI needed to resist clinical reactivation and if VZV-CMI < FoR, reactivation will lead to HZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "31e82ccd-d07c-4f03-bc72-7414c001436c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C97",
+      "claim": "The FoR deviates per time step and individual by means of a gamma probability density function.",
+      "claim_type": "EXPLICIT",
+      "source": "The FoR deviates per time step and individual by means of a gamma probability density function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's stochastic component.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "70b942f5-b3cd-43ad-b57c-ef1a5a63a435",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C98",
+      "claim": "HZ individuals are assumed to be infectious for 1 week.",
+      "claim_type": "EXPLICIT",
+      "source": "HZ individuals are assumed to be infectious for 1 week and receive a VZV-CMI reset to 1 \u00b1 random factor (normally distributed, cf. primary infection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "0d63b0b6-a65d-4929-a944-f7a0a9065c34",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C99",
+      "claim": "HZ individuals receive a VZV-CMI reset to 1 \u00b1 random factor (normally distributed).",
+      "claim_type": "EXPLICIT",
+      "source": "HZ individuals are assumed to be infectious for 1 week and receive a VZV-CMI reset to 1 \u00b1 random factor (normally distributed, cf. primary infection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "668cdbf3-cb93-49dc-8054-8224fd64b982",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C100",
+      "claim": "The relative infectiousness of HZ patients was approximated by the relative infectiousness of breakthrough CP patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose to approximate the relative infectiousness of HZ patients by the relative infectiousness of breakthrough CP patients (Bernstein et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "82d8f5a9-05b7-4a26-8f2a-71003cfe374d",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C101",
+      "claim": "The relative infectiousness of breakthrough CP patients has previously been estimated at 0.17.",
+      "claim_type": "EXPLICIT",
+      "source": "This has previously been estimated at 0.17 (Brisson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited estimate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "df31f4c4-3a7b-4a1f-b326-fc5743e4985a",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C102",
+      "claim": "Reinstallation of VZV-specific immunity after HZ is based on experimental data showing that a second case of HZ only occurs in about 5% of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinstallation of VZV-specific immunity after HZ is based on experimental data showing that a second case of HZ only occurs in about 5% of individuals (Yawn et al., 2011) and that VZV-CMI is higher in recovered HZ patients than in age-matched controls (Weinberg et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption based on cited experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "1efcdb37-9175-48b1-8222-3937b3fa97e5",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C103",
+      "claim": "VZV-CMI is higher in recovered HZ patients than in age-matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinstallation of VZV-specific immunity after HZ is based on experimental data showing that a second case of HZ only occurs in about 5% of individuals (Yawn et al., 2011) and that VZV-CMI is higher in recovered HZ patients than in age-matched controls (Weinberg et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "b0c9af66-c684-47a5-8a19-ec0792d3aadc",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C104",
+      "claim": "If VZV-CMI \u2265 FoR, endogenous boosting occurs followed by an exponential decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "If VZV-CMI \u2265 FoR, endogenous boosting occurs followed by an exponential decrease according to one of the scenarios described in the previous section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "6d4bdc95-47a2-4d84-8e34-ab832c5b84bc",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C105",
+      "claim": "The peak following endogenous boosting is restricted to be at most equal to the peak following exogenous boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak following endogenous boosting, however, is restricted to be at most equal to the peak following exogenous boosting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model constraint.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "d269a15b-c8bc-4c7c-8f7b-56e780723f99",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C106",
+      "claim": "An endogenous boosting sequence will always be overruled by a new successful exogenous re-exposure boosting episode.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we assume that an endogenous boosting sequence will always be overruled by a new successful exogenous re-exposure boosting episode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "dc4e8eda-0903-46fe-8a5a-095126e52fe3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C107",
+      "claim": "Simulations were performed using Matlab 2012b on the Flemish VSC supercomputer.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations were performed using Matlab 2012b on the Flemish VSC supercomputer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "63ca00e8-1870-4ad0-951d-26a64f394621",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C108",
+      "claim": "Simulations ran for 320 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations ran for 320 years and model output was obtained by averaging the age-specific results over the last 80 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation duration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "24540a51-a95d-479f-80df-5b4ca3d01dea",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C109",
+      "claim": "Model output was obtained by averaging the age-specific results over the last 80 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations ran for 320 years and model output was obtained by averaging the age-specific results over the last 80 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the output analysis method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "1f6b724e-5b97-4b22-bbb0-f85fc042c4be",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C110",
+      "claim": "A two-step parameter set analysis was performed to optimize the fitting procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to optimize the fitting procedure, we performed a two-step parameter set analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "ccdd9c5f-251e-488b-a51c-d86d6974d512",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C111",
+      "claim": "Seven parameters were estimated by means of the fitting procedure: VZV-CMI waning rate, type of boosting scenario, duration of exogenous boosting, peak fold increase following exogenous boosting, VZV reactivation probability, FoR distribution and the peak fold increase following endogenous boosting.",
+      "claim_type": "EXPLICIT",
+      "source": "The following 7 parameters were estimated by means of the fitting procedure: VZV-CMI waning rate, type of boosting scenario, duration of exogenous boosting, peak fold increase following exogenous boosting, VZV reactivation probability, FoR distribution and the peak fold increase following endogenous boosting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the parameters estimated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "95e9cd65-6125-48d8-9719-60ee98f03d75",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C112",
+      "claim": "In the first step, each parameter set was run three times.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first step we ran each parameter set three times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "f9f66593-81cc-4892-8c95-fa787c900b9e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C113",
+      "claim": "The Binomial likelihood was calculated per set by fitting the HZ age-specific output data to Belgian HZ incidence data.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated per set the Binomial likelihood by fitting the HZ age-specific output data to Belgian HZ incidence data (Bilcke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical method with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "8a21e233-63fd-4dcd-87ff-9faa7211f800",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "claim_id": "C114",
+      "claim": "Vaccinated individuals were assumed not to be susceptible to HZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccinated individuals were assumed not to be susceptible to HZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption for the vaccination scenario.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04c71c52-7664-4c7c-b2bb-057c565bcfd0",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors present the first individual-based model (IBM) for VZV that integrates within-host immunological dynamics (VZV-CMI) with between-host transmission dynamics to simulate HZ incidence. This represents a novel modeling approach compared to existing deterministic compartmental models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35, and C55 consistently assert the novelty of this modeling approach. The model architecture described in the Methods section and illustrated in Figure 6 demonstrates explicit integration of individual-level VZV-CMI dynamics with population-level transmission, which is a methodological advance over prior deterministic models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "3e3eba8e-4e51-4c0e-b669-1667462142ed",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Initial model fitting identified eight parameter sets with reasonable fit to Belgian HZ data, all using exponential decay of boosted immunity (scenario 3). Seven sets predicted exogenous boosting with peak 1.3-fold increase and 2-15 year duration. Refined fitting yielded two best parameter sets with peak boosting 2.8-4.0 fold, duration 1-2 years, and no endogenous boosting, providing excellent fit across all age groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C49 describe a systematic parameter fitting procedure with results shown in Table 1 and Figures 1-2. The stepwise refinement from initial to final parameter sets is methodologically sound, with quantitative goodness-of-fit metrics (deviance) reported. The progression from poor fit in younger ages to excellent fit across all ages demonstrates model improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "fab33e3b-8420-4809-a467-05fe6901c392",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model estimates exogenous boosting duration at 1-2 years with a peak 2.8-4.0 fold (or 3-4 fold) increase in VZV-CMI following re-exposure to varicella. This duration is substantially shorter than the 20 years predicted by prior deterministic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C48, C57, and C59 present consistent estimates from the best-fitting parameter sets (sets 9 and 13 in Table 1). The abstract states 2 years duration with 3-4 fold increase, while detailed results specify 1-2 years with 2.8-4.0 fold increase. These estimates are validated against experimental data from household exposure and vaccination studies (C60, C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "edb4700a-4d9c-4326-b37f-6a619f2fcc3f",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The predicted exogenous boosting duration (1-2 years) is significantly lower than the 20 years (95% CI: 7-41 years) predicted by the deterministic model of Brisson et al. (2002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 makes a direct comparison with a specific prior model, citing the original source. This comparison is valid and highlights a key difference between the IBM approach and deterministic models. The discrepancy is attributed to the explicit disentanglement of waning, boosting, and immunosenescence in the IBM (C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "03f6cabf-5538-46bc-a600-d979a0be8752",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model estimates VZV weekly reactivation probability at 5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9 and C63 state a 5% weekly reactivation probability. However, C64 and C65 acknowledge that observed data are sparse and highly divergent (0-71% range). The authors note difficulty comparing their estimate to observed values and suggest reactivation may only be detectable at neural ganglia. Without independent validation, this parameter estimate remains uncertain despite fitting the model well.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "7f26fd08-cb50-4396-9002-a72aafaf4786",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model predicts that VZV subclinical reactivation has no significant effect on VZV-CMI, implying endogenous boosting does not impact HZ occurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C41, C49, C66, and C67 consistently report that all best-fitting parameter sets predicted no endogenous boosting (peak fold increase = 1 in Table 1). This finding emerges from systematic parameter estimation and is an important negative result, though the authors acknowledge it requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "774290b2-c26f-49ca-adc5-9240b1abf2de",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts annual VZV-CMI waning rate of 1-1.5%, which is lower than the 2.7-3.9% observed experimentally in individuals >60 years. This difference is explained by the model's explicit disentanglement of waning and boosting effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C69, C70, and C42 present the waning rate estimate and provide a mechanistic explanation for the discrepancy with experimental data. The explanation (C70) that younger age groups experience more frequent boosting, thereby increasing observed waning rates, is logically coherent and demonstrates the value of the modeling approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "f757a206-13e0-4534-8476-486e78f65789",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A hypothetical 100% effective varicella vaccine given to 1-year-olds would cause a 1.75-fold (95% CI: 1.64-1.87) peak increase in HZ incidence 31 years after implementation, with net increase lasting approximately 50 years. This translates to an increase from ~3,200 to 5,300-5,900 HZ cases per million person-years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C50, C51, C52, and C71 present consistent vaccination scenario predictions with confidence intervals, shown in Figure 4. The predictions are based on the two best-fitting parameter sets (9 and 13) and include quantitative estimates with uncertainty bounds. The 31-year delay is mechanistically explained by cohort effects (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "148d5469-8f84-4e6e-bdd0-b5c5d962ae51",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The predicted increase in HZ following vaccination occurs mainly in the 31-40 year age group, contrasting with earlier model predictions that focused on older age groups. This age distribution is shown to change over time following vaccination introduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C53, C54, and C75 describe age-specific predictions shown in Figure 5. The dominance of the 31-40 year age group between 10-50 years post-vaccination is a novel prediction that differs from deterministic models. This has important implications for disease burden assessment, as younger adults are less likely to develop post-herpetic neuralgia (C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "6c695af2-6661-40e3-b0c5-3a3c918a453d",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model's predicted peak immunological response (2.8-4.0 fold increase) is consistent with experimental observations from adults re-exposed to VZV through household contacts or vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 validate the model predictions against independent experimental data from cited studies (Arvin et al. 1983, Vossen et al. 2004, Levin et al. 2008). This external validation strengthens confidence in the model's biological realism and parameter estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "cc98e277-541c-4fd4-83b2-9556a3e3e09f",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Current deterministic VZV models entangle exogenous boosting, waning, immunosenescence, and reactivation, making accurate parameter estimation difficult and producing artificial parameters that lack verifiable biological interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 provide critical assessment of existing deterministic models, identifying a key limitation that motivates the IBM approach. This criticism is substantiated by the authors' ability to explicitly model and estimate these processes separately, yielding biologically interpretable parameters that can be validated experimentally (C79).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "3d2bc103-6516-4139-8b3f-a4af2fa5881c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The 31-year delay in peak HZ incidence is caused by cohorts born near vaccination introduction experiencing fewer boosting instances during childhood compared to earlier cohorts, similar to the progressive immunity mechanism in the Guzzetta et al. (2013) model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 provides a mechanistic explanation for the delayed peak, with citation to a similar concept in prior work. This explanation is consistent with the model structure where childhood boosting opportunities affect lifetime HZ risk. The comparison to Guzzetta et al. appropriately acknowledges related prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "a1fea7b7-458a-4876-902c-ef8b8cc95dfd",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Significant increases in HZ incidence may not be detectable during the first 10 years post-vaccination, even with 100% effective vaccine. Historical US vaccination programs had uptake and efficacy well below 100% during the first decade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 explain why observational studies may not have detected HZ increases following vaccination introduction. This inference from the model results (Figure 4 shows modest early increases) is reasonable and addresses an important controversy in the field regarding conflicting observational evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "55beba96-6ad6-41fa-ac8a-7d5f73d409a0",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cost-effectiveness analyses using the VZV IBM would be more favorable toward universal childhood varicella vaccination compared to deterministic models, despite similar aggregate HZ incidence predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 makes an inference about cost-effectiveness without performing actual cost-effectiveness analysis. While the reasoning (younger age of HZ cases with lower post-herpetic neuralgia risk) is sound, this remains speculative without formal economic evaluation. The claim is plausible but requires additional analysis to be supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "4b77c67e-668f-4b0b-8ad5-959ba5845a0c",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model assumes all close contacts with varicella patients exert an equal 'average' boosting effect, which is acknowledged as a limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 explicitly acknowledges a model limitation. This is an appropriate recognition that the model simplifies heterogeneity in exposure intensity and individual response. The authors suggest future work could incorporate this variability based on characteristics of exposed and infectious individuals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model uses a synthetic Belgian population of 998,400 individuals with demographics based on 2012 data, running in weekly time steps with stationary population structure maintained through balanced births and deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 describe the demographic structure and initialization of the model. These methodological details are clearly specified and the population size is justified as a trade-off between heterogeneity and computational burden. The use of survivor functions to create stationary age distribution is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "5c9047d5-e67d-4cfa-a1bd-ac84d795a601",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The model uses HZ relative infectiousness of 0.17, approximated from breakthrough chickenpox patients, with VZV infection probability based on empirical Belgian social contact data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C87, C100, and C101 describe key transmission parameters with appropriate citations. The approximation of HZ infectiousness from breakthrough varicella is reasonable given lack of direct data. Figure 2\u2014supplement 1 shows model robustness to variation in this parameter (0.03-0.45 range).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "eed6dda8-45c2-48cf-875a-f79238416888",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Simulations were performed using Matlab 2012b for 320 years, with output averaged over the last 80 years. A two-step parameter fitting procedure estimated 7 parameters using binomial likelihood comparison to Belgian HZ data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C113 describe computational methods and statistical fitting procedures. The approach is methodologically sound with appropriate burn-in period (240 years) before analysis. The two-step refinement procedure with deviance-based selection is reasonable, though only 3 replicates per parameter set is relatively limited for stochastic models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The model implements specific rules for primary infection, immunity initialization, waning, and exogenous boosting, with parameters informed by published experimental data and biological constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C94 describe model implementation details with appropriate citations to supporting data. The 4-fold maximum boosting limit is justified by pediatrician exposure data (C94). The 6-week rise to peak and subsequent decay scenarios are based on Levin et al. vaccine trial data. These specifications demonstrate biological grounding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "955e3a65-6666-43d3-bd45-eb2cc74319f3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The model implements VZV reactivation using a Force of Reactivation (FoR) concept with gamma-distributed threshold. Reactivation leads to HZ if VZV-CMI < FoR, or endogenous boosting if VZV-CMI \u2265 FoR. HZ cases receive immunity reset based on low recurrence rates and elevated CMI in recovered patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C106 describe the reactivation mechanism with supporting citations for HZ recurrence rates (C102) and post-HZ immunity (C103). The FoR concept is a novel modeling construct that allows stochastic reactivation outcomes. The gamma distribution choice is justified as representing summation of exponentially-distributed biological processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "f97c1393-7d5c-40e1-b1c6-9744187344ea",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "In the vaccination scenario, vaccinated individuals were assumed not to be susceptible to HZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C114 describes a simplifying assumption for the vaccination scenario. This is clearly stated but represents a limitation, as vaccine-induced immunity may wane and vaccinated individuals could potentially develop HZ, though at lower rates than naturally infected individuals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "64936185-9d20-444e-bd25-9677b09af5e1",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about VZV biology, epidemiology, and vaccination, including that VZV causes chickenpox and HZ, remains latent in ganglia, can reactivate subclinically, and that effective vaccines exist and have been implemented in several countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C13-C21 present established scientific knowledge with appropriate citations. These background claims are well-supported by the literature and provide necessary context for the study. They are not novel findings but rather set up the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Policy hesitation regarding childhood VZV vaccination stems from perception of varicella as mild disease and the exogenous boosting hypothesis, which posits that re-exposure boosts immunity and reduces HZ risk. While systematic review confirms exogenous boosting exists, its population-wide impact post-vaccination remains uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 describe the policy context and exogenous boosting hypothesis with appropriate citations, including a systematic review by the authors (Ogunjimi et al. 2013). This establishes the motivation for the modeling study and acknowledges existing uncertainty in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "e6727846-f581-451e-a1e7-5156922a0e6e",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Studies have documented subclinical VZV reactivation in various populations, but the effect on VZV-CMI has not been quantified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C34 identify a knowledge gap with supporting citations. This gap motivates the model's investigation of endogenous boosting effects. The subsequent finding of no significant endogenous boosting (C66, C67) addresses this gap.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "6e8917e3-83d5-4d30-8684-963b990366a3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Observed data on VZV reactivation probability are sparse and highly divergent (0-71% range) across studies with different designs and sampling sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C65 characterize the state of empirical evidence on reactivation rates with multiple citations. This acknowledges uncertainty in a key parameter and explains why model-based estimation is valuable, though it also highlights difficulty in validating the model's 5% estimate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "5186607e-0717-4380-b265-b1df96d8d0d3",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Observational studies found no vaccination effect on HZ incidence in those \u226560 years, and younger adults are less likely to develop post-herpetic neuralgia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C77 cite observational evidence that supports the model's prediction of age-specific effects. These claims help interpret the significance of the model's finding that HZ increases occur primarily in younger age groups (C75), which has implications for disease burden assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    },
+    {
+      "id": "22b4541e-ccb1-498d-87e8-f3c2eae0ce62",
+      "content_id": "8639eb1b-e5d5-420e-85cc-7a58d3726d56",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "A major benefit of the modeling approach is the ability to verify best-fit parameter values through experimental studies or adapt parameters when new empirical data become available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 articulates an advantage of the IBM approach over deterministic models. This is supported by the model's use of biologically interpretable parameters that can be directly compared to experimental measurements (as demonstrated with C60, C61, C69). This represents good scientific practice of proposing testable predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:27:29.594881Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8b872379-b6b0-486b-9886-f1b5d9d3e03a",
+      "result_id": "04c71c52-7664-4c7c-b2bb-057c565bcfd0"
+    },
+    {
+      "claim_id": "41a1c062-7a21-4216-bdc4-782f3df67245",
+      "result_id": "04c71c52-7664-4c7c-b2bb-057c565bcfd0"
+    },
+    {
+      "claim_id": "704b99b8-b7ce-4807-bd01-d27ff3b34b51",
+      "result_id": "04c71c52-7664-4c7c-b2bb-057c565bcfd0"
+    },
+    {
+      "claim_id": "da62d94d-7b2c-49a4-89ee-ef7295e0fa72",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "1a38ca65-7ed0-4e10-84bf-fbe30b110574",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "454c1246-3d32-41f4-aec9-b6f355d98799",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "42f2daeb-19e1-4b74-8733-a9c5714f8264",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "86d43b0e-473d-4de5-acb7-347fa857aa79",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "41f6846d-5ae0-4ebe-9b1f-57e73a103841",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "83a43ef8-8f0e-496a-9c26-e278bfc0c6f0",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "c2332936-2fb5-4f2a-b9a4-492fb654acc2",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "43199a33-3c7e-4653-8e7c-240975f8eebe",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "6cb95b79-4112-4400-a8da-480464c5058c",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "b0ef96e2-503a-45cc-b391-5e561f2db0d5",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "bf506cf8-f80e-4623-83fe-de014fd9be48",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "f465656f-5473-4315-b6ae-f13a530b19b0",
+      "result_id": "3e3eba8e-4e51-4c0e-b669-1667462142ed"
+    },
+    {
+      "claim_id": "28119edc-f77e-404c-90bf-43614fe724df",
+      "result_id": "fab33e3b-8420-4809-a467-05fe6901c392"
+    },
+    {
+      "claim_id": "9206402d-3de8-4690-ab8f-69227df12c62",
+      "result_id": "fab33e3b-8420-4809-a467-05fe6901c392"
+    },
+    {
+      "claim_id": "bf506cf8-f80e-4623-83fe-de014fd9be48",
+      "result_id": "fab33e3b-8420-4809-a467-05fe6901c392"
+    },
+    {
+      "claim_id": "f8d4802d-c80f-44bc-9894-a58e473d1da3",
+      "result_id": "fab33e3b-8420-4809-a467-05fe6901c392"
+    },
+    {
+      "claim_id": "2c842573-cb55-4149-86f4-a40b97d194bf",
+      "result_id": "fab33e3b-8420-4809-a467-05fe6901c392"
+    },
+    {
+      "claim_id": "9de3f89b-9c27-4ac6-9201-455e53220eec",
+      "result_id": "edb4700a-4d9c-4326-b37f-6a619f2fcc3f"
+    },
+    {
+      "claim_id": "dd742538-7923-4634-9d0c-a2b510cbca8e",
+      "result_id": "03f6cabf-5538-46bc-a600-d979a0be8752"
+    },
+    {
+      "claim_id": "48d567dd-0667-46ab-8b97-7e657c39bc2c",
+      "result_id": "03f6cabf-5538-46bc-a600-d979a0be8752"
+    },
+    {
+      "claim_id": "79ca1d72-6f75-4fa4-82c7-18bf4bd99fcc",
+      "result_id": "7f26fd08-cb50-4396-9002-a72aafaf4786"
+    },
+    {
+      "claim_id": "86d43b0e-473d-4de5-acb7-347fa857aa79",
+      "result_id": "7f26fd08-cb50-4396-9002-a72aafaf4786"
+    },
+    {
+      "claim_id": "f465656f-5473-4315-b6ae-f13a530b19b0",
+      "result_id": "7f26fd08-cb50-4396-9002-a72aafaf4786"
+    },
+    {
+      "claim_id": "18067188-fcf4-44c2-a182-80dbe18c60c1",
+      "result_id": "7f26fd08-cb50-4396-9002-a72aafaf4786"
+    },
+    {
+      "claim_id": "cd32b6c2-358a-4a14-a851-ba5ad8a28c5e",
+      "result_id": "7f26fd08-cb50-4396-9002-a72aafaf4786"
+    },
+    {
+      "claim_id": "c4da89a6-d2c1-4732-8cab-b1fe81ef3685",
+      "result_id": "774290b2-c26f-49ca-adc5-9240b1abf2de"
+    },
+    {
+      "claim_id": "7149c617-b716-4a76-855d-a140ce1a3797",
+      "result_id": "774290b2-c26f-49ca-adc5-9240b1abf2de"
+    },
+    {
+      "claim_id": "9ceed36c-baa7-4c03-9cde-898283bc3b27",
+      "result_id": "774290b2-c26f-49ca-adc5-9240b1abf2de"
+    },
+    {
+      "claim_id": "41f6846d-5ae0-4ebe-9b1f-57e73a103841",
+      "result_id": "774290b2-c26f-49ca-adc5-9240b1abf2de"
+    },
+    {
+      "claim_id": "11f5e16d-492a-4be6-8dc1-35933f5f16af",
+      "result_id": "f757a206-13e0-4534-8476-486e78f65789"
+    },
+    {
+      "claim_id": "a266da89-96d2-4de8-a95a-717bb2518239",
+      "result_id": "f757a206-13e0-4534-8476-486e78f65789"
+    },
+    {
+      "claim_id": "70ed8d6c-3cd3-4b66-92cb-0587dd5bb7f9",
+      "result_id": "f757a206-13e0-4534-8476-486e78f65789"
+    },
+    {
+      "claim_id": "0df36f4f-d56d-410a-9e9f-7babc17a0899",
+      "result_id": "f757a206-13e0-4534-8476-486e78f65789"
+    },
+    {
+      "claim_id": "ff06f1cf-2b5d-401d-a3a0-4d9884349f3c",
+      "result_id": "f757a206-13e0-4534-8476-486e78f65789"
+    },
+    {
+      "claim_id": "beee50b9-f442-46ad-a0f6-0417a780afea",
+      "result_id": "148d5469-8f84-4e6e-bdd0-b5c5d962ae51"
+    },
+    {
+      "claim_id": "a03b9a10-6e86-4ec7-ac6f-9a6ce0dcf87e",
+      "result_id": "148d5469-8f84-4e6e-bdd0-b5c5d962ae51"
+    },
+    {
+      "claim_id": "d217c48b-5a6e-4fc6-b95d-edee574b257e",
+      "result_id": "148d5469-8f84-4e6e-bdd0-b5c5d962ae51"
+    },
+    {
+      "claim_id": "3f2d0c2f-4a56-4d75-821c-8c1c6a1e325a",
+      "result_id": "148d5469-8f84-4e6e-bdd0-b5c5d962ae51"
+    },
+    {
+      "claim_id": "d5a5f88a-3633-4e0e-ba1a-7894de24aafa",
+      "result_id": "6c695af2-6661-40e3-b0c5-3a3c918a453d"
+    },
+    {
+      "claim_id": "d9e0317e-fec8-4439-9c12-50cbaaf2f5cc",
+      "result_id": "6c695af2-6661-40e3-b0c5-3a3c918a453d"
+    },
+    {
+      "claim_id": "8030ebc6-c090-4012-92d2-47c6cf138c1c",
+      "result_id": "cc98e277-541c-4fd4-83b2-9556a3e3e09f"
+    },
+    {
+      "claim_id": "46403796-4151-47d3-887b-fd292542943d",
+      "result_id": "cc98e277-541c-4fd4-83b2-9556a3e3e09f"
+    },
+    {
+      "claim_id": "fc44d849-0a4a-4768-842b-732b1963fa2f",
+      "result_id": "3d2bc103-6516-4139-8b3f-a4af2fa5881c"
+    },
+    {
+      "claim_id": "37edc33c-32b2-447d-bf0a-58e6e26105f2",
+      "result_id": "a1fea7b7-458a-4876-902c-ef8b8cc95dfd"
+    },
+    {
+      "claim_id": "e9674b52-57f1-4151-bbfe-26481d7fd6f2",
+      "result_id": "a1fea7b7-458a-4876-902c-ef8b8cc95dfd"
+    },
+    {
+      "claim_id": "b38bef24-1d11-4fa8-a54a-851a1afe042e",
+      "result_id": "55beba96-6ad6-41fa-ac8a-7d5f73d409a0"
+    },
+    {
+      "claim_id": "cc0bcb89-92bf-4b0e-aa56-f822bcbd72a6",
+      "result_id": "4b77c67e-668f-4b0b-8ad5-959ba5845a0c"
+    },
+    {
+      "claim_id": "478c4106-2216-44ba-9863-7710fe4a1709",
+      "result_id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85"
+    },
+    {
+      "claim_id": "28cb307e-8d32-4dbf-9aa9-4da5e6838730",
+      "result_id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85"
+    },
+    {
+      "claim_id": "5dbc8af5-b269-418c-9c18-77ecb7ad70ed",
+      "result_id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85"
+    },
+    {
+      "claim_id": "1dbbc0fa-e541-447c-937d-6d5d672e8670",
+      "result_id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85"
+    },
+    {
+      "claim_id": "6ed6995e-73de-4d86-8ce1-9d30109d407b",
+      "result_id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85"
+    },
+    {
+      "claim_id": "bb841b04-f68a-4930-b40f-b8648dbdb39b",
+      "result_id": "9df8d84a-f16b-42c8-9209-e33b7f1bde85"
+    },
+    {
+      "claim_id": "707a6427-8afc-48df-9103-9ade33f289fd",
+      "result_id": "5c9047d5-e67d-4cfa-a1bd-ac84d795a601"
+    },
+    {
+      "claim_id": "228a3103-2e2b-4c0a-9253-9a591a0574bb",
+      "result_id": "5c9047d5-e67d-4cfa-a1bd-ac84d795a601"
+    },
+    {
+      "claim_id": "668cdbf3-cb93-49dc-8054-8224fd64b982",
+      "result_id": "5c9047d5-e67d-4cfa-a1bd-ac84d795a601"
+    },
+    {
+      "claim_id": "82d8f5a9-05b7-4a26-8f2a-71003cfe374d",
+      "result_id": "5c9047d5-e67d-4cfa-a1bd-ac84d795a601"
+    },
+    {
+      "claim_id": "dc4e8eda-0903-46fe-8a5a-095126e52fe3",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "63ca00e8-1870-4ad0-951d-26a64f394621",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "24540a51-a95d-479f-80df-5b4ca3d01dea",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "1f6b724e-5b97-4b22-bbb0-f85fc042c4be",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "ccdd9c5f-251e-488b-a51c-d86d6974d512",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "95e9cd65-6125-48d8-9719-60ee98f03d75",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "f9f66593-81cc-4892-8c95-fa787c900b9e",
+      "result_id": "eed6dda8-45c2-48cf-875a-f79238416888"
+    },
+    {
+      "claim_id": "09aee61f-2efc-4e8a-8ca1-775b44f8de1a",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "41545eda-ae3a-4809-ac1a-eaa2cfee2f79",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "ca90b827-b785-4837-a813-32fc3f842839",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "a8a0a6e7-7718-470f-a09d-15d16a7d770f",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "059c0585-d310-461f-ae72-d3356ffd77ac",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "da0e0d4c-1f8a-4550-a294-388b5c0444df",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "de562f4f-850d-4b13-8252-0a6660a78274",
+      "result_id": "9f85bc5e-97aa-4325-a62a-a051abeeaa53"
+    },
+    {
+      "claim_id": "cd822ffc-f77a-4c01-920b-aa171c2a2fee",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "2e771042-907b-4c84-aab3-62b6faa29771",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "31e82ccd-d07c-4f03-bc72-7414c001436c",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "70b942f5-b3cd-43ad-b57c-ef1a5a63a435",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "0d63b0b6-a65d-4929-a944-f7a0a9065c34",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "df31f4c4-3a7b-4a1f-b326-fc5743e4985a",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "1efcdb37-9175-48b1-8222-3937b3fa97e5",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "b0c9af66-c684-47a5-8a19-ec0792d3aadc",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "6d4bdc95-47a2-4d84-8e34-ab832c5b84bc",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "d269a15b-c8bc-4c7c-8f7b-56e780723f99",
+      "result_id": "955e3a65-6666-43d3-bd45-eb2cc74319f3"
+    },
+    {
+      "claim_id": "8a21e233-63fd-4dcd-87ff-9faa7211f800",
+      "result_id": "f97c1393-7d5c-40e1-b1c6-9744187344ea"
+    },
+    {
+      "claim_id": "d74e5ce9-5c57-45ef-8f8a-2d38a62c32f3",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "5614e9d0-0818-4605-a205-8306c678d53b",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "807368ef-14cb-4807-b270-85c8f6842ce1",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "7ace6755-a9cd-4b0e-99c0-93e24a4791fe",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "8a67399a-8015-4a7b-98da-c39250ddb16a",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "4b8335f4-e2b8-4ab0-9100-ce098c21412d",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "47731bfb-95a0-451b-b05a-a02204f83238",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "be75d869-6797-4add-a371-6377ca2cc1c1",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "50b2c789-a0f9-47e7-8a68-27eae08f3a98",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "c43e204b-8827-49b5-831c-eb507d7c7b11",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "a56068d9-c806-4ae1-abef-771395c9d186",
+      "result_id": "64936185-9d20-444e-bd25-9677b09af5e1"
+    },
+    {
+      "claim_id": "414e49c8-4177-44b7-ad21-95346b05f2cd",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "4c228268-a91f-4765-b97c-919b9bb45c4d",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "2e5b6bf5-715e-4e3a-9e9e-1c314cc6a075",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "62e5d240-fdf4-4fa1-846e-c855dc84c927",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "45ec6d98-7899-46c0-941a-a85745ce67a0",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "def6acb3-2043-48cf-b5a9-8bbf6ac06487",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "111c8bef-ad29-4042-b87c-5914b5eb9358",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "fba253d5-48d7-4bec-a2c2-9f1d2c454b65",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "c60dea31-c965-4187-8da7-e07c82f0efdd",
+      "result_id": "2a159a82-28ee-4b2b-9ca5-58fbc163ddbd"
+    },
+    {
+      "claim_id": "afb2380a-b0fe-48eb-8cef-4d9759ff9103",
+      "result_id": "e6727846-f581-451e-a1e7-5156922a0e6e"
+    },
+    {
+      "claim_id": "878f7e9b-0d5e-4f46-88bf-ad830652408d",
+      "result_id": "e6727846-f581-451e-a1e7-5156922a0e6e"
+    },
+    {
+      "claim_id": "863d755e-800b-4b2b-b242-d6b85925cd51",
+      "result_id": "6e8917e3-83d5-4d30-8684-963b990366a3"
+    },
+    {
+      "claim_id": "fd723287-f689-47ad-87fb-f2a10fc43a22",
+      "result_id": "6e8917e3-83d5-4d30-8684-963b990366a3"
+    },
+    {
+      "claim_id": "8047eae6-2cdd-4417-9d72-115d95af8164",
+      "result_id": "5186607e-0717-4380-b265-b1df96d8d0d3"
+    },
+    {
+      "claim_id": "6fe9b80c-8abd-4186-87c9-f32f1b6651d4",
+      "result_id": "5186607e-0717-4380-b265-b1df96d8d0d3"
+    },
+    {
+      "claim_id": "2e92be57-96c1-4e52-be71-c3218ebf41c3",
+      "result_id": "22b4541e-ccb1-498d-87e8-f3c2eae0ce62"
+    }
+  ],
+  "comparisons": []
+}

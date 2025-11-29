@@ -1,0 +1,1688 @@
+{
+  "submission": {
+    "id": "dafc59ff-f59c-48ad-8b9e-573c88bf91cd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:45:00.384148Z",
+    "updated_at": "2025-11-29T04:45:00.384148Z"
+  },
+  "content": [
+    {
+      "id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "submission_id": "dafc59ff-f59c-48ad-8b9e-573c88bf91cd",
+      "content_type": "manuscript",
+      "content_text": "# Down-regulation of TORC2-Ypk1 signaling promotes MAPK-independent survival under hyperosmotic stress\n\n## Authors\n\n- Alexander Muir<sup>1</sup>\n- Fran\u00e7oise M Roelants<sup>1</sup>\n- Garrett Timmons<sup>3</sup>\n- Kristin L Leskoske<sup>1</sup>\n- Jeremy Thorner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Biochemistry, Biophysics and Structural Biology, Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Chemical Biology Graduate Program University of California, Berkeley Berkeley United States\n3. Department of Chemistry University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn eukaryotes, exposure to hypertonic conditions activates a MAPK (Hog1 in Saccharomyces cerevisiae and ortholog p38 in human cells). In yeast, intracellular glycerol accumulates to counterbalance the high external osmolarity. To prevent glycerol efflux, Hog1 action impedes the function of the aquaglyceroporin Fps1, in part, by displacing channel co-activators (Rgc1/2). However, Fps1 closes upon hyperosmotic shock even in hog1\u2206 cells, indicating another mechanism to prevent Fps1-mediated glycerol efflux. In our prior proteome-wide screen, Fps1 was identified as a target of TORC2-dependent protein kinase Ypk1 (Muir et al., 2014). We show here that Fps1 is an authentic Ypk1 substrate and that the open channel state of Fps1 requires phosphorylation by Ypk1. Moreover, hyperosmotic conditions block TORC2-dependent Ypk1-mediated Fps1 phosphorylation, causing channel closure, glycerol accumulation, and enhanced survival under hyperosmotic stress. These events are all Hog1-independent. Our findings define the underlying molecular basis of a new mechanism for responding to hypertonic conditions.\n\n## Introduction\n\nIn Saccharomyces cerevisiae, target of rapamycin (TOR) Complex 2 (TORC2)-dependent signaling responds to multiple plasma membrane-perturbing stresses, including sphingolipid depletion (Roelants et al., 2010, 2011), heat shock (Sun et al., 2012), and both hypotonic (Berchtold et al., 2012) and hypertonic (Lee et al., 2012) conditions. The essential downstream effector of TORC2 is the protein kinase Ypk1 (and its paralog Ypk2) (Casamayor et al., 1999; Roelants et al., 2002, 2004).\n\nTo understand how TORC2-Ypk1 signaling elicits cellular responses, we performed a genome-wide screen to discern previously unidentified Ypk1 substrates and thereby discovered that ceramide synthase activity is stimulated by TORC2-Ypk1 (Muir et al., 2014). Among other potential targets, our screen pinpointed two proteins involved in glycerol metabolism, aquaglyceroporin Fps1 (Luyten et al., 1995) and Gpt2/Gat1, an enzyme that converts glycerol-3P to phosphatidic acid (Zheng and Zou, 2001), a precursor to other phospholipids and triacylglycerol (Henry et al., 2012). Both candidates warranted further investigation because, as we showed, Ypk1-mediated phosphorylation inhibits another enzyme in glycerol metabolism, Gpd1, which generates glycerol-3P (Lee et al., 2012), and GPD1 expression is highly induced by hyperosmotic stress (Albertyn et al., 1994b). Second, accumulation of intercellular glycerol is essential for yeast cell survival under hyperosmotic conditions (Westfall et al., 2008; Saito and Posas, 2012; Hohmann, 2015). Thus, we suspected that TORC2-Ypk1 signaling might play an as yet unrecognized role in the cellular response to hyperosmotic shock.\n\nHyperosmotic conditions evoke two known signaling modalities. Pathways coupled to alternative osmosensors (Sln1 and Sho1) activate MAPK Hog1, which drives both transcription-independent and -dependent responses that markedly increase both production and intracellular retention of glycerol (Westfall et al., 2008; Saito and Posas, 2012; Hohmann, 2015). Hyperosmotic shock also increases cytosolic [Ca2+] thereby activating calcineurin (CN) (Denis and Cyert, 2002), promoting processes that stimulate retrieval of excess plasma membrane (Guiney et al., 2015). Although both CN-deficient and hog1\u2206 cells are quite sensitive to the ionic imbalances caused by high salt (e.g., 1 M NaCl), hog1\u2206 cells are significantly more sensitive to hypertonic stress per se, such as a high concentration of an uncharged impermeant osmolyte (e.g., 1 M sorbitol).\n\nOur understanding of the response to high osmolarity remains incomplete, however. Although it is well documented that preventing glycerol efflux through the aquaglyceroporin Fps1 is essential for yeast to survive hyperosmolarity (Luyten et al., 1995; Tam\u00e1s et al., 1999; Duskova et al., 2015), and that activated Hog1 can negatively regulate this channel by displacing the Fps1-activating proteins Rgc1/2 (Lee et al., 2013), Fps1 still closes in response to hyperosmotic shock in hog1\u2206 cells (Tam\u00e1s et al., 1999; Babazadeh et al., 2014). Therefore, we explored the possibility, as suggested by our screen, that Fps1 is an authentic target of TORC2-dependent Ypk1-mediated phosphorylation, that this modification is important for Fps1 function, and that it is under regulation by hyperosmotic conditions.\n\n## Results\n\n### Ypk1 phosphorylates Fps1 and hyperosmotic shock inhibits this phosphorylation\n\nThe 743-residue enzyme Gpt2 contains one Ypk1 phospho-acceptor motif (646RSRSSSI652). At such sites, Ser residues just penultimate to the canonical one (in red) can be phosphorylated in a Ypk1-dependent manner (Roelants et al., 2011). Therefore, we generated a Gpt2(S649A S650A S651A) mutant. One or more of these three Ser residues is phosphorylated in vivo because, compared to wild-type, Gpt23A exhibited a distinctly faster mobility upon SDS-PAGE, a hallmark of decreased phosphorylation (Figure 1A), just like wild-type Gpt2 treated with phosphatase (Figure 1\u2014figure supplement 1). However, this phosphorylation did not appear to be dependent on Ypk1 because little change occurred in Gpt2 mobility when an analog-sensitive ypk1-as ypk2\u0394 strain was treated with the cognate inhibitor (3-MB-PP1) (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig1-v2.jpg)\n\n**Figure 1.:** (A) Wild-type (BY4741) or ypk1-as ypk2\u0394 (yAM135-A) cells expressing plasmid borne Gpt2-3xFLAG (pAX238) or Gpt23A-3xFLAG (pAX244) were grown to mid-exponential phase and then treated with vehicle (\u2212) or 10 \u03bcM 3-MB-PP1 (+) for 90 min. Cells were harvested, extracts prepared, resolved by SDS-PAGE, and blotted as in \u2018Materials and methods\u2019. (B) Wild-type cells expressing either Fps1-3xFLAG (yGT21) or Fps13A-3xFLAG (yGT22) from the FPS1 promoter at the normal chromosomal locus, or ypk1-as ypk2\u0394 cells expressing either Fps1-3xFLAG (yAM281) or Fps13A-3xFLAG (yAM284-A) from the FPS1 promoter at the normal chromosomal locus, were grown to mid-exponential phase and treated as in (A) with vehicle or 3-MB-PP1 for 60 min. Cells were harvested, extracts prepared, resolved by Phos-tag SDS-PAGE, and blotted as in \u2018Materials and methods\u2019. Unphosphorylated Fps1 (red asterisk). (C) A tor2-as strain (yKL5) expressing Fps1-3xFLAG (pAX274) or Fps13A-3xFLAG (pAX275) was grown to mid-exponential phase and then treated with vehicle (\u2212) or 2 \u03bcM BEZ-235 (+) for 30 min. Cells were harvested, extracts prepared, resolved and analyzed as in (B). (D) Wild-type (BY4741) or tor2-29ts (JTY5468) cells expressing Ypk17A-myc (pFR252) were grown at 30\u00b0C (left panel) or 26\u00b0C (right panel) to mid-exponential phase, then diluted into fresh YPD in the absence (\u2212) or presence of 1 M sorbitol (final concentration). After the indicated times (1\u201315 min), culture samples were collected, lysed and the resulting extracts resolved by Phos-tag SDS-PAGE and analyzed by immunoblotting with anti-myc mAb 9E10, as described in \u2018Materials and methods\u2019. (E) As in (D), except for the genotype (strain) expressing Ypk17A-myc (pFR252), which were, aside from the wild-type control, hog1\u0394 (YJP544), sho1\u0394 (JTY5540), ssk1\u0394 (JTY5541), ssk22\u0394 (JTY5539), ssk2\u0394 (JTY5538) or pbs2\u0394 (JTY5537), and the treatment with 1 M sorbitol was for 1 min. (F) Wild-type (BY4741) or otherwise isogenic cna1\u2206 cna2\u2206 (JTY5574) cells expressing Ypk17A-myc (pFR252) were grown to mid-exponential phase then diluted into fresh YPD in the absence (\u2212) or presence (+) of 1 M sorbitol (final concentration). After 1 min, the cells were collected, lysed and the resulting extracts resolved by Phos-tag SDS-PAGE and analyzed by immunoblotting with anti-myc mAb 9E10, as described in \u2018Materials and methods\u2019. (G) Wild-type cells expressing either Fps1-3xFLAG (yGT21) or Fps13A-3xFLAG (yGT22) from the chromosomal FPS1 locus, were diluted into fresh YPD in the absence (\u2212) or presence of 1 M sorbitol (final concentration) for the indicated times and then extracts of the cells prepared and analyzed as in (B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Wild-type (BY4741) cells expressing Gpt2-3xFLAG (pAX238) were grown to mid-exponential phase. The cells were harvested, lysed and trichloroacetic acid extracts prepared as described in the \u2018Materials and methods\u2019. The precipitated proteins were resolubilized, treated with calf intestinal phosphatase (CIP), resolved by SDS-PAGE, and analyzed by immunoblotting, all as described in the \u2018Materials and methods\u2019.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Diagram of Fps1 (adapted from Lee et al., 2013) with approximate location of predicted Ypk sites indicated as red circles. Primary sequence context of predicted sites are shown at left. (B) Extracts from Fps1-3xFLAG (yGT21), Fps1(T147A)-3xFLAG (yAM310-A), Fps1(S181A S185A)-3xFLAG (yAM301-A), Fps1(S570A)-3xFLAG (yGT24) or Fps13A-3xFLAG (yGT22) expressing strains were prepared, resolved by Phos-tag SDS-PAGE (see \u2018Materials and methods\u2019), and blotted as in Figure 1B. Red asterisks, unphosphorylated Fps1. (C) Cells expressing Fps1-3xFLAG (yGT21) were grown, extracts prepared, treated with phosphatase, as in \u2018Materials and methods\u2019, and analyzed on a Phos-tag gel, as described in Figure 1B.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** GST-Fps1(531-669) (pBT7) and GST-Fps1(531-669 S570A) (pAX135) were purified from Escherichia coli and incubated with [\u03b3-32P]ATP and Ypk1-as, purified from S. cerevisiae, in the absence or presence of 3-MB-PP1. The products were then resolved by SDS-PAGE and analyzed by Coomassie blue dye staining and autoradiography, as indicated, using procedures described in \u2018Materials and methods\u2019.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) A ypk1\u2206 strain (JTY6142) expressing Ypk1-HA (pPL215) was grown to mid-exponential phase and diluted into fresh medium in the absence (\u2212) or presence (+) of 1 M sorbitol (final concentration). After 1 min, the cells were collected by centrifugation for 5 min and lysed. The resulting extracts were resolved by SDS-PAGE and analyzed by immunoblotting with anti-pYpk1(T662) antibody and anti-HA antibody, as described in \u2018Materials and methods\u2019. (B) Cells (BY4741) expressing Ypk17A-myc (pFR252) were grown, extracts prepared, treated with phosphatase, and analyzed as Figure 1D.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Wild-type (BY4741) cells expressing Ypk17A-myc (pFR252) were grown at 30\u00b0C to mid-exponential phase then diluted into fresh YPD in the absence (\u2212) and presence (+) of 1 M sorbitol (final concentration) for the indicated time periods. Extracts were prepared, resolved and blotted as described in \u2018Materials and methods\u2019. (B) Fps1-3xFLAG (yGT21) or Fps13A-3xFLAG (yGT22) expressing cells were treated with 1 M sorbitol for indicated time points and Fps1-3xFLAG was resolved and analyzed as in Figure 1B.\n\nIn marked contrast, three of four predicted Ypk1 sites in the 669-residue Fps1 channel (176RRRSRSR182, 180RSRATSN186, 565RARRTSD571) (Figure 1\u2014figure supplement 2A) are phosphorylated in vivo, as indicated by the effect of site-directed mutations to Ala on electrophoretic mobility (Figure 1\u2014figure supplement 2B), and their phosphorylation requires Ypk1 activity, because, in inhibitor-treated ypk1-as ypk2\u0394 cells, the mobility of wild-type Fps1 was indistinguishable from that of Fps1(S181A S185A S570A) (Figure 1B), just like wild-type Fps1 treated with phosphatase (Figure 1\u2014figure supplement 2C). Moreover, a C-terminal fragment of Fps1 containing Ser570, one of the apparent Ypk1 phosphorylation sites delineated in vivo, is phosphorylated by purified Ypk1 in vitro and solely at the Ypk1 site (S570) (Figure 1\u2014figure supplement 3). Furthermore, as for other Ypk1-dependent modifications (Muir et al., 2014), phosphorylation of these same sites in Fps1 in vivo was also TORC2-dependent, because treatment with a TORC2 inhibitor (NVP-BEZ235) (Kliegman et al., 2013) also reduced Fps1 phosphorylation (Figure 1C). Thus, Fps1 is a bona fide Ypk1 substrate.\n\nWe documented elsewhere using Phos-tag gel mobility shift that Ypk1 phosphorylation at T662, one of its well-characterized TORC2 sites, is eliminated when cells are subjected to hyperosmotic shock for 10 min (Lee et al., 2012), and the same effect is observed using a specific antibody (Niles et al., 2012) that monitors phosphorylation of Ypk1 at the same site (Figure 1\u2014figure supplement 4A). Using Ypk17A, which also permits facile detection of mobility shifts arising from TORC2-specific phosphorylation (K Leskoske and FM Roelants, unpublished results) (Figure 1\u2014figure supplement 4B), we followed the kinetics of this change. Loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs very rapidly (within 1 min) and persists for about 15 min (Figure 1D), but is transient. By 20 min after hyperosmotic shock, TORC2-mediated Ypk1 phosphorylation is again detectable and is nearly back to the pre-stress level by 75 min (Figure 1\u2014figure supplement 5A). Rapid reduction in TORC2-mediated Ypk1 phosphorylation under hypertonic stress was still observed in mutants lacking the Sho1- or Sln1-dependent pathways that converge on Hog1 or Hog1 itself (Figure 1E) or CN (Figure 1F). Thus, loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs independently of other known response pathways.\n\nGiven that Ypk1 phosphorylates Fps1 and that hyperosmotic stress rapidly abrogates TORC2-dependent phosphorylation and activation of Ypk1, Ypk1 modification of Fps1 should be prevented under hyperosmotic stress. As expected, Ypk1 phosphorylation of Fps1 is rapidly lost upon hyperosmotic shock (Figure 1G), yielding a species with mobility indistinguishable from Fps13A, remains low for at least 20 min, but returns by 75 min (Figure 1\u2014figure supplement 5B), mirroring the kinetics of loss and return of both TORC2-mediated Ypk1 phosphorylation (Figure 1D and Figure 1\u2014figure supplement 5A) and Ypk1-dependent phosphorylation of Gpd1 that we observed before (Lee et al., 2012). Thus, hyperosmotic stress dramatically down-modulates Ypk1-mediated phosphorylation of Fps1.\n\n### Ypk1 phosphorylation of Fps1 promotes channel opening and glycerol efflux\n\nIn its open state, the Fps1 channel permits entry of toxic metalloid, arsenite, which inhibits growth (Thorsen et al., 2006), whereas lack of Fps1 (fps1\u2206) or the lack of channel activators (rgc1\u2206 rgc2\u2206) (Beese et al., 2009) or an Fps1 mutant that cannot open because it cannot bind the activators (Fps1\u2206PHD) (Lee et al., 2013) are arsenite resistant. We found that Fps13A was at least as arsenite resistant as any other mutant that abrogates Fps1 function (Figure 2A). Thus, Fps13A acts like a closed channel, suggesting that Ypk1-mediated phosphorylation promotes channel opening. Loss of individual phosphorylation sites led to intermediate levels of arsenite resistance (Figure 2B). Thus, modification at these sites contributes additively to channel opening.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cultures of Fps1-3xFLAG (yGT21), Fps13A-3xFLAG (yGT22), Fps1\u0394PHD-3xFLAG (yAM307-A), rgc1\u0394 rgc2\u0394 (DL3188) and fps1\u0394 (yAM181-A) were adjusted to A600 nm = 1.0 and serial dilutions were then spotted onto YPD plates containing the indicated concentration of arsenite. Cells were allowed to grow for 4 days at 30\u00b0C prior to imaging. (B) As in (A), except Fps1-3xFLAG (yGT21), Fps1(T147A)-3xFLAG (yAM310-A), Fps1(S181A S185A)-3xFLAG (yAM301-A), Fps1(S570A)-3xFLAG (yGT24) or Fps13A-3xFLAG (yGT22) cultures were used and cells were grown for 2 days at 30\u00b0C prior to imaging. (C) Triplicate exponentially-growing cultures of wild-type (BY4742), fps1\u0394 (yAM181-A), Fps1-3xFLAG (yGT21) and Fps13A-3xFLAG (yGT22) strains were harvested, extracted, and the glycerol and protein concentration measured as described in \u2018Materials and methods\u2019. Values represent the ratio of glycerol-to-protein (error bar, standard error of the mean). (D) Extracts from the strains in (B) were resolved by standard SDS-PAGE using 8% acrylamide gels. (E) fps1\u0394 (yAM181-A) cells expressing Fps1-GFP (pAX290), Fps1(S181A S185A)-GFP, (pAX294), Fps1(S570A)-GFP (pAX293) or Fps13A-GFP (pAX295) were viewed by fluorescence microscopy as described in \u2018Materials and methods\u2019. Representative fields are shown.\n\nOthers have shown that intracellular glycerol is elevated in fps1\u2206 cells in the absence of hyperosmotic stress (Tam\u00e1s et al., 1999). If Fps13A favors the closed-channel state, then it should also cause constitutive elevation of intracellular glycerol concentration. Indeed, in the absence of any osmotic perturbation, Fps13A mutant cells accumulated \u223ctwofold as much glycerol as otherwise isogenic FPS1+ strains (Figure 2C). Consistent with this result, we observed before that loss of Ypk1 (and Ypk2) activity caused an increase in glycerol level compared to control cells (Lee et al., 2012).\n\nConsistent with Ypk1-dependent phosphorylation affecting Fps1 channel function per se, immunoblotting (Figure 2D) and fluorescence microscopy (Figure 2E) showed that the steady-state level and localization of Fps1 are unaffected by the presence or absence of these modifications.\n\n### Hyperosmotic stress-evoked down-regulation of Ypk1 phosphorylation of Fps1 promotes cell survival independently of known Fps1 regulators\n\nFps1 can be negatively regulated by Hog1 via two mechanisms: Hog1 phosphorylation of Fps1 stimulates its internalization and degradation (Thorsen et al., 2006; Mollapour and Piper, 2007); Hog1 phosphorylation closes the channel by displacing bound Fps1 activators (Rgc1 and Rgc2) (Beese et al., 2009; Lee et al., 2013). We found, however, that Fps13A was still in the closed state, as judged by arsenite resistance, in the total absence of Hog1 (hog1\u0394) (Figure 3A), or in an Fps1 mutant (Fps1IVAA) that cannot bind Hog1 or where the activator cannot be displaced from Fps1 by Hog1 phosphorylation (Rgc27A) (Lee et al., 2013) (Figure 3B). Thus, closure of the Fps1 channel by lack of Ypk1 phosphorylation occurs independently of any effects requiring Hog1. Consistent with this conclusion, presence or absence of Ypk1-mediated Fps1 phosphorylation had no effect on Fps1-Rgc2 interaction (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cultures of Fps1-3xFLAG (yGT21), Fps1570A-3xFLAG (yGT24), Fps13A-3xFLAG (yGT22), Fps1-3xFLAG hog1\u0394 (yAM275), Fps1570A-3xFLAG hog1\u0394 (yAM291-A) and Fps13A-3xFLAG hog1\u0394 (yAM278) strains were adjusted to A600 nm = 1.0 and serial dilutions were then spotted onto YPD plates containing the indicated concentration of arsenite. Cells were allowed to grow for 2 days at 30\u00b0C prior to imaging. (B) As in (A), except Fps1IVAA-3xFLAG (yAM308-A), Fps1(3A)IVAA-3xFLAG (yAM309-A), Rgc27A-HA (yAM315) and Fps13A-3xFLAG Rgc27A-HA (yAM318) strains were tested. The Fps1IVAA mutation prevents Hog1 binding to and regulation of Fps1, and Rgc27A cannot be displaced from Fps1 because it cannot be phosphorylated by Hog1; both mutations render the channel constitutively open and make cells arsenite sensitive (Lee et al., 2013). (C) Fps1-3xFLAG (yAM271-A) or Fps13A-3xFLAG (yAM272-A) strains were co-transformed with PMET25-Rgc2-HA (p3151) and PMET25-Fps1-3xFLAG (pAX302) or PMET25-Fps13A -3xFLAG (pAX303) plasmids. After Rgc2-HA and Fps1-3xFLAG expression, Fps1 was immuno-purified with anti-FLAG antibody-coated beads (see \u2018Materials and methods\u2019). The bound proteins were resolved by SDS-PAGE and the amount of Rgc2-HA present determined by immunoblotting with anti-HA antibody. (D) Wild-type (BY4741), hog1\u0394 (YJP544) or Fps13A-3xFLAG hog1\u0394 (yAM278) strains were grown and serial dilutions of these cultures plated onto synthetic complete medium lacking tryptophan with 2% dextrose and the indicated concentration of sorbitol. Cells were grown for 3 days prior to imaging.\n\nCollectively, our results show that, independently of Hog1, hypertonic conditions drastically diminish TORC2-dependent Ypk1 phosphorylation, in turn dramatically decreasing Ypk1-mediated Fps1 phosphorylation, thereby closing the channel and causing intracellular glycerol accumulation. Thus, absence of Ypk1 phosphorylation should allow a cell lacking Hog1 to better survive hyperosmotic conditions. Indeed, Fps13A hog1\u0394 cells are significantly more resistant to hyperosmotic stress than otherwise isogenic hog1\u0394 cells (Figure 3D). This epistasis confirms that, even when Hog1 is absent, loss of Ypk1-mediated Fps1 channel opening is sufficient for cells to accumulate an adequate amount of glycerol to physiologically cope with hyperosmotic stress.\n\n## Discussion\n\nAside from further validating the utility of our screen for identifying new Ypk1 substrates (Muir et al., 2014), our current findings demonstrate that TORC2-dependent Ypk1-catalyzed phosphorylation of Fps1 opens this channel and, conversely, that loss of Ypk1-dependent Fps1 phosphorylation upon hypertonic shock is sufficient to close the channel, prevent glycerol efflux, and promote cell survival. In agreement with our observations, in a detailed kinetic analysis of global changes in the S. cerevisiae phosphoproteome upon hyperosmotic stress (Kanshin et al., 2015), it was noted that two sites in Fps1 (S181 and T185), which we showed here are modified by Ypk1, become dephosphorylated.\n\nWe previously showed that Gpd1, the rate-limiting enzyme for glycerol production under hyperosmotic conditions (Remize et al., 2001), is negatively regulated by Ypk1 phosphorylation (Lee et al., 2012). Thus, inactivation of TORC2-Ypk1 signaling upon hyperosmotic shock has at least two coordinated consequences that work synergistically to cause glycerol accumulation and promote cell survival, a similar outcome but mechanistically distinct from the processes evoked by Hog1 activation (Figure 4). First, loss of TORC2-Ypk1 signaling alleviates inhibition of Gpd1, which, combined with transcriptional induction of GPD1 by hyperosmotic stress, greatly increases glycerol production. Second, loss of TORC2-Ypk1 signaling closes the Fps1 channel, thereby retaining the glycerol produced.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09336/elife-09336-fig4-v2.jpg)\n\n**Figure 4.:** (A) Hog1 MAPK-mediated response to acute hyperosmotic stress (adapted from Hohmann, 2015). Unstressed condition (top), Hog1 is inactive and glycerol generated as a minor side product of glycolysis under fermentation conditions can escape to the medium through the Fps1 channel maintained in its open state by bound Rgc1 and Rgc2. Upon hyperosmotic shock (bottom), pathways coupled to the Sho1 and Sln1 osmosensors lead to Hog1 activation. Activated Hog1 increases glycolytic flux via phosphorylation of Pkf26 in the cytosol and, on a longer time scale, also enters the nucleus (not depicted) where it transcriptionally upregulates GPD1 (de Nadal et al., 2011; Saito and Posas, 2012), the enzyme rate-limiting for glycerol formation, thereby increasing glycerol production. Activated Hog1 also prevents glycerol efflux by phosphorylating and displacing the Fps1 activators Rgc1 and Rgc2 (Lee et al., 2013). These processes act synergistically to elevate the intracellular glycerol concentration providing an osmolyte to counterbalance the external high osmolarity. (B) Unstressed condition (top), active TORC2-Ypk1 keeps intracellular glycerol level low by inhibition of Gpd1 (Lee et al., 2012) and because Ypk1-mediated phosphorylation promotes the open state of the Fps1 channel. Upon hyperosmotic shock (bottom), TORC2-dependent phosphorylation of Ypk1 is rapidly down-regulated. In the absence of Ypk1-mediated phosphorylation, inhibition of Gpd1 is alleviated, thereby increasing glycerol production. Concomitantly, loss of Ypk1-mediated phosphorylation closes the Fps1 channel, even in the presence of Rgc1 and Rgc2, thereby promoting glycerol accumulation to counterbalance the external high osmolarity. Schematic depiction of TORC2 based on data from Wullschleger et al. (2005); Liao and Chen (2012); Gaubitz et al. (2015).\n\nPresence of two systems (TORC2-Ypk1 and Hog1) might allow cells to adjust optimally to stresses occurring with different intensity, duration, or frequency. Reportedly, Hog1 responds to stresses occurring no more frequently than every 200 s (Hersen et al., 2008; McClean et al., 2009), whereas we found TORC2-Ypk1 signaling responded to hypertonic stress in \u226460 s. Also, the Sln1 and Sho1 sensors that lead to Hog1 activation likely can respond to stimuli that do not affect the TORC2-Ypk1 axis, and vice-versa.\n\nA remaining question is how hyperosmotic stress causes such a rapid and profound reduction in phosphorylation of Ypk1 at its TORC2 sites. This outcome could arise from activation of a phosphatase (other than CN), inhibition of TORC2 catalytic activity, or both. Despite a recent report that Tor2 (the catalytic component of TORC2) interacts physically with Sho1 (Lam et al., 2015), raising the possibility that a Hog1 pathway sensor directly modulates TORC2 activity, we found that hyperosmolarity inactivates TORC2 just as robustly in sho1\u0394 cells as in wild-type cells. Alternatively, given the role ascribed to the ancillary TORC2 subunits Slm1 and Slm2 (Gaubitz et al., 2015) in delivering Ypk1 to the TORC2 complex (Berchtold et al., 2012; Niles et al., 2012), response to hyperosmotic shock might be mediated by some influence on Slm1 and Slm2. Thus, although the mechanism that abrogates TORC2 phosphorylation of Ypk1 upon hypertonic stress remains to be delineated, this effect and its consequences represent a novel mechanism for sensing and responding to hyperosmolarity.\n\n## Materials and methods\n\n### Construction of yeast strains and growth conditions\n\nS. cerevisiae strains used in this study (Supplementary file 1) were constructed using standard yeast genetic manipulations (Amberg et al., 2005). For all strains constructed, integration of each DNA fragment of interest into the correct genomic locus was assessed using genomic DNA from isolated colonies of corresponding transformants as the template and PCR amplification with an oligonucleotide primer complementary to the integrated DNA and a reverse oligonucleotide primer complementary to chromosomal DNA at least 150 bp away from the integration site, thereby confirming that the DNA fragment was integrated at the correct locus. Finally, the nucleotide sequence of each resulting reaction product was determined to confirm that it had the correct sequence. Yeast cultures were grown in rich medium (YPD; 1% yeast extract, 2% peptone, 2% glucose) or in defined minimal medium (SCD; 0.67% yeast nitrogen base, 2% glucose) supplemented with the appropriate nutrients to permit growth of auxotrophs and/or to select for plasmids.\n\n### Plasmids and recombinant DNA methods\n\nAll plasmids used in this study (Supplementary file 2) were constructed using standard laboratory methods (Green and Sambrook, 2012) or by Gibson assembly (Gibson et al., 2009) using the Gibson Assembly Master Mix Kit according to the manufacturer's specifications (New England Biolabs, Ipswich, Massachusetts, United States). All constructs generated in this study were confirmed by nucleotide sequence analysis covering all promoter and coding regions in the construct.\n\n### Preparation of cell extracts and immunoblotting\n\nYeast cell extracts were prepared by an alkaline lysis and trichloroacetic acid (TCA) precipitation method, as described previously (Westfall et al., 2008). For samples analyzed by immunoblotting, the precipitated proteins were resolubilized and resolved by SDS-PAGE, as described below. For samples subjected to phosphatase treatment, the precipitated proteins were resolubilized in 100 \u00b5l solubilization buffer (2% SDS, 2% \u03b2-mercaptoethanol, 150 mM NaCl, 50 mM Tris-HCl [pH 8.0]), diluted with 900 \u00b5l calf intestinal phosphatase dilution buffer (11.1 mM MgCl2, 150 mM NaCl, 50 mM Tris-HCl [pH 8.0]), incubated with calf intestinal alkaline phosphatase (350 U; New England Biolabs) for 4 hr at 37\u00b0C, recollected by TCA precipitation, resolved by SDS-PAGE, and analyzed by immunobotting. To resolve Gpt2 and its phosphorylated isoforms, samples (15 \u03bcl) of solubilized protein were subjected to SDS-PAGE at 120 V in 8% acrylamide gels polymerized and crosslinked with a ratio of acrylamide:bisacrylamide::75:1. To resolve Fps1 and Ypk1 and their phosphorylated isoforms, samples (15 \u03bcl) of solubilized protein were subjected to Phos-tag SDS-PAGE (Kinoshita et al., 2009) (8% acrylamide, 35 \u00b5M Phos-tag [Wako Chemicals USA, Inc.], 35 \u00b5M MnCl2) at 160 V.\n\nAfter SDS-PAGE, proteins were transferred to nitrocellulose and incubated with mouse or rabbit primary antibody in Odyssey buffer (Li-Cor Biosciences, Lincoln, Nebraska, United States), washed, and incubated with appropriate IRDye680LT-conjugated or IRDye800CW-conjugated anti-mouse or anti-rabbit IgG (Li-Cor Biosciences) in Odyssey buffer with 0.1% Tween-20 and 0.02% SDS. Blots were imaged using an Odyssey infrared scanner (Li-Cor Biosciences). Primary antibodies and dilutions used were: rabbit anti-HA, 1:1000 (Covance Inc., Dedham, Massachusetts, United States); mouse anti-HA, 1:1000 (Covance Inc.); mouse anti-FLAG, 1:5000 (Sigma\u2013Aldrich, St. Louis, Missouri, United States); rabbit anti-FLAG, 1:5000 (Sigma\u2013Aldrich); tissue culture medium containing mouse anti-c-myc mAb 9E10, 1:100 (Monoclonal Antibody Facility, Cancer Research Laboratory, University of California, Berkeley); rabbit anti-Ypk1(P-T662), 1:20,000 (generous gift from Ted Powers, University of California, Davis); and, rabbit anti-yeast Pgk1, 1:10,000 (this laboratory).\n\n### Protein purification and in vitro kinase assay\n\nYpk1 and GST-Fps1(531-0669) proteins were purified as previously described (Muir et al., 2014). Following protein purification, Ypk1 in vitro kinase assays were performed as previously described (Muir et al., 2014).\n\n### Measurement of intracellular glycerol accumulation\n\nMeasurement of intracellular glycerol was conducted as described (Albertyn et al., 1994a). Briefly, samples (\u223c40 ml) of exponentially-growing cultures were harvested by centrifugation, washed with 1 ml of medium, recollected and the resulting cell pellets frozen in liquid N2 and stored at \u221280\u00b0C prior to analysis. Each cell pellet was boiled for 10 min in 1 ml of 50 mM Tris-Cl (pH 7.0). This eluate was clarified by centrifugation for 15 min at 13,200 rpm (16,100\u00d7g) in a microfuge (Eppendorf 5415D). Glycerol concentration in the resulting supernatant fraction was measured using a commercial enzymic assay kit (Sigma Aldrich) and normalized to the protein concentration of the same initial extract as measured by the Bradford method (Bradford, 1976).\n\n### Fluorescence microscopy of Fps1-GFP\n\nAn fps1\u0394 strain was transformed with plasmids expressing wild-type Fps1-GFP or the mutant Fps1-GFP derivatives and grown in selective medium to mid-exponential phase. Samples of the resulting cultures were viewed directly under an epifluorescence microscope (model BH-2; Olympus America, Inc.) using a 100\u00d7 objective fitted with appropriate band-pass filters (Chroma Technology Corp.). Images were collected using a CoolSNAP MYO charge-coupled device camera (Photometrics, Tucson, Arizona, United States).\n\n### Co-immunoprecipitation of Fps1 and Rgc2\n\nCo-immunoprecipitation experiments were performed with minor modifications as previously described (Lee et al., 2013). Cells expressing Fps1-3xFLAG (yAM271-A), Fps13A-3xFLAG (yAM272-A) or untagged Fps1 (BY4742) were transformed with empty vector or the same vector expressing Fps1-3xFLAG (pAX302) or Fps13A-3xFLAG (pAX303) under control of the MET25 promoter. These transformants were then co-transformed with a plasmid expressing Rgc2-3xHA under control of the MET25 promoter (Lee et al., 2013). Cultures of each were grown to mid-exponential phase in SCD-Ura-Leu. Cultures were then diluted to A600 nm = 0.2 in 1 l of SCD-Ura-Leu-Met to induce expression of Rgc2-3xHA and Fps1-3xFLAG and grown at 30\u00b0C for 4 hr. Cells were harvested by centrifugation and resuspended in 5 ml of TNE+Triton+NP-40 (50 mM Tris-Cl [pH 7.5], 150 mM NaCl, 4 mM NaVO4, 50 mM NaF, 20 mM Na-PPi, 5 mM EDTA, 5 mM EGTA, 0.5% Triton-X100, 1.0% NP-40, 1\u00d7 cOmplete protease inhibitor [Roche, Pleasanton, California, United States]). The cells were then lysed cryogenically using Mixer Mill MM301 (Retsch GmbH, Haan, Germany). The lysate was thawed on ice and then clarified by centrifugation for 20 min at 10,500 rpm (13,000\u00d7g) in the SS34 rotor of a refrigerated centrifuge (Sorvall RC-5B). Protein concentration of the clarified lysate was measured using BCA reagent (Thermo Fisher Scientific, Waltham, Massachusetts, United States) and then Fps1-3xFLAG was immunoprecipitated from a volume of extract containing a total of 10 mg protein using 50 \u03bcl of mouse anti-FLAG antibody coupled-agarose resin (Sigma Aldrich) equilibrated in TNE+Triton+NP-40. Binding was allowed to occur for 2 hr at 4\u00b0C. The resin was then washed extensively with TNE+Triton+NP-40 and the proteins remaining bound were then resolved by SDS-PAGE and analyzed by immunoblotting with appropriate antibodies to detect both Fps1-3xFLAG and Rgc2-3xHA.\n",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "eb530a1e-46ad-461f-987f-737ee9a279eb",
+      "submission_id": "dafc59ff-f59c-48ad-8b9e-573c88bf91cd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tony Hunter, Salk Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09336.013](https://doi.org/10.7554/eLife.09336.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cDown-regulation of TORC2-Ypk1 signaling promotes MAPK-independent survival under hyperosmotic stress\u201d for peer review at eLife. Your submission has been favorably evaluated by Tony Hunter (Senior editor) and two reviewers. One of the two reviewers, Susan Henry, has agreed to share her identity.\n\nThe reviewers have discussed the reviews with one another, and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers were interested in your elucidation of a new TORC2-Ypk1-Fps1 pathway that serves as a Hog1-independent backup mechanism for cell survival in response to hyperosmotic stress acting by closing the Fps1 channel for glycerol efflux, resulting in glycerol accumulation and cell survival during hyperosmotic stress, and they are both in favor of publication in eLife with revision.\n\nPlease address the specific points raised by Reviewer 2, which all appear feasible to do within a short time frame.\n\nReviewer 1:\n\nPrior work from this group had shown that phosphorylation of the Ypk1 protein kinase at its TORC2-dependent sites is eliminated rapidly during hyperosmotic shock but that this loss is attenuated within 10-15 min, but this attenuation was found to be independent of known stress response pathways, including the Hog1 MAPK. Their previous proteomic screen had also identified Fps1p as being a target of the Ypk1p protein kinase.\n\nThis current paper provides strong and clear evidence that the aquaglyceroporin Fps1p is a bona fide target of Ypk1, a TORC2-dependent protein kinase, upon exposure of yeast cells to hypertonic stress. This current work also demonstrates for the first time that the open channel state of Fps1 is dependent on phosphorylation by Ypk1p. In addition, and importantly, the authors show that in wild-type cells, under hyperosmotic stress conditions, TORC2-dependent phosphorylation of Fps1 by Ypk1 is blocked. They show that this results in closure of the Fps1 channel for glycerol efflux, resulting in glycerol accumulation during hyperosmotic stress, which in turn leads to increased cell survival under these conditions.\n\nThe evidence presented also indicates that these responses are not dependent on the Hog1 MAPK pathway, which is also activated during hypertonic stress. Thus, this work identifies a novel mechanism involved in survival under hypertonic stress that is Hog1 independent, but TORC2-dependent.\n\nOverall, the data are of high quality and importance and reveal a novel mechanism.\n\nReviewer 2:\n\nMuir et al. follow up a previous genome-wide screen in which they identified potential Ypk1 substrates. They now confirm that aquaglyceroporin (Fps1) is a target of Ypk1. The authors demonstrate that TORC2-Ypk1 signaling initiates Fps1 phosphorylation to promote Fps1 channel opening. Phospho-deficient Fps1 is in a closed state and confers resistance to hyperosmotic stress and arsenite. They also show that hyperosmotic stress inhibits TORC2-Ypk1 signaling.\n\n1) It has been reported already that the Slm proteins activate TORC2-Ypk1 signaling in response to hypo-osmotic stress (Berchtold et al. Nat Cell Biol. 14:542, 2012). Do the Slm proteins inhibit TORC2-Ypk1 in response to hyperosmotic stress? Also, the Berchtold et al. studies should be discussed.\n\n2) Figure 1A-C: The authors show that TORC2-Ypk1 signaling promotes phosphorylation of Fps1 on three serine residues (Ser181, Ser 185, Ser570) as determined by resolving \u201cphospho-\u201dFps1 in phos-tag gels. The phos-tag gel assay requires a phosphatase-treated control to claim that that the slow-migrating band is indeed phospho-Fps1. Figure 1A (experiment for Gpt2 phosphorylation) also needs a phosphatase-treated control.\n\n3) Figure 1C: The authors demonstrate that acute inactivation of TORC2, by BEZ235 treatment of an analog-sensitive tor2 (tor2-as) mutant, reduces Fps1 phosphorylation. Is there a positive control to show that TORC2 activity is indeed inhibited? The authors could possibly look at TORC1 activity (e.g. Sch9 phosphorylation), since TOR2 is also part of TORC1.\n\n4) Figure 1D: The authors show that TORC2 activity is inhibited upon sorbitol treatment, as determined by mobility shift of Ypk1 in a phos-tag gel. For this experiment, they used a phospho-deficient mutant of Ypk1 in which bona fide TORC2 target sites (Ser644 and Thr662) are mutated. This suggests that the slow migrating form of Ypk1 (this also needs phosphatase treatment) may be phosphorylated on yet to be characterized sites and it is these sites that the authors are monitoring. A more reliable assay of TORC2 activity would be to blot with phospho-Ypk1 antibody (Thr662) (Berchtold et al. Nat Cell Biol. Op. cit.).\n\n5) The authors state: \u201cThus, Fps1 is a bona fide Ypk1 substrate.\u201d To make this claim, they should provide evidence that Ypk1 directly phosphorylates Fps1. This can be done by performing a Ypk1 kinase assay in vitro with recombinant Fps1-WT and Fps1-3A. The authors have previously performed in vitro Ypk1 assays.\n\n6) Figure 2A: The authors show that phospho-deficient Fps1-3A cells are the most arsenite resistant cells among fps1 mutants tested. They concluded that the Fps13A mutant is a closed channel such that toxic arsenite cannot enter cells. Why are Fps13A mutant cells more resistant than fps1\u2206 cells or Fps1-\u2206PHD cells in which Fps1 channel is constantly absent or closed, respectively?\n\n7) Figure 2A-B: Based on data showing that Fps13A mutant cells are resistant to arsenite, the authors conclude that Ypk1-mediated phosphorylation promotes Fps1 channel opening. This conclusion would be strengthened if the authors also demonstrated that a phospho-mimetic mutant of Fps1 (Fps13D or Fps13E) confers arsenite hyper-sensitivity.\n",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57b9f3ef-133c-46b8-86cb-2c626136336a",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C1",
+      "claim": "In eukaryotes, exposure to hypertonic conditions activates a MAPK (Hog1 in Saccharomyces cerevisiae and ortholog p38 in human cells).",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, exposure to hypertonic conditions activates a MAPK (Hog1 in Saccharomyces cerevisiae and ortholog p38 in human cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about MAPK activation in response to hypertonic stress across eukaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "adf9154f-ea0b-4d8f-885f-57becddcce5c",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C2",
+      "claim": "In yeast, intracellular glycerol accumulates to counterbalance the high external osmolarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, intracellular glycerol accumulates to counterbalance the high external osmolarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast osmotic stress response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "7a2ae29c-8cca-4e27-af9f-86462a8cdd22",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C3",
+      "claim": "Hog1 action impedes the function of the aquaglyceroporin Fps1, in part, by displacing channel co-activators (Rgc1/2).",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent glycerol efflux, Hog1 action impedes the function of the aquaglyceroporin Fps1, in part, by displacing channel co-activators (Rgc1/2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hog1 regulation of Fps1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "f676daa5-4905-4020-bde9-02e4fdaa4c94",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C4",
+      "claim": "Fps1 closes upon hyperosmotic shock even in hog1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Fps1 closes upon hyperosmotic shock even in hog1\u2206 cells, indicating another mechanism to prevent Fps1-mediated glycerol efflux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior literature and indicates the existence of a Hog1-independent mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "58e7b9ac-eb39-492b-b790-8b274b626d38",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C5",
+      "claim": "Fps1 was identified as a target of TORC2-dependent protein kinase Ypk1 in a prior proteome-wide screen.",
+      "claim_type": "EXPLICIT",
+      "source": "In our prior proteome-wide screen, Fps1 was identified as a target of TORC2-dependent protein kinase Ypk1 (Muir et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work (Muir et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "b2e18869-b197-4dae-bc81-458f0812d5e0",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C6",
+      "claim": "Fps1 is an authentic Ypk1 substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Fps1 is an authentic Ypk1 substrate and that the open channel state of Fps1 requires phosphorylation by Ypk1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including phosphorylation assays and mobility shift experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "0edc15c1-c52b-4457-9926-121bba87520c",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C7",
+      "claim": "The open channel state of Fps1 requires phosphorylation by Ypk1.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Fps1 is an authentic Ypk1 substrate and that the open channel state of Fps1 requires phosphorylation by Ypk1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that Fps13A mutant (lacking Ypk1 phosphorylation sites) behaves like a closed channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "c4dc175c-6c10-40b5-9446-0759f52e06fc",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C8",
+      "claim": "Hyperosmotic conditions block TORC2-dependent Ypk1-mediated Fps1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, hyperosmotic conditions block TORC2-dependent Ypk1-mediated Fps1 phosphorylation, causing channel closure, glycerol accumulation, and enhanced survival under hyperosmotic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing loss of Fps1 phosphorylation upon hyperosmotic shock.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "d2c7ee5f-9b62-43d6-bb19-f889864076fa",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C9",
+      "claim": "Hyperosmotic conditions cause channel closure of Fps1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, hyperosmotic conditions block TORC2-dependent Ypk1-mediated Fps1 phosphorylation, causing channel closure, glycerol accumulation, and enhanced survival under hyperosmotic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the loss of Ypk1-mediated phosphorylation and the arsenite resistance phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "c32f704a-20b4-411d-b949-76c32a270bd1",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C10",
+      "claim": "Hyperosmotic conditions cause glycerol accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, hyperosmotic conditions block TORC2-dependent Ypk1-mediated Fps1 phosphorylation, causing channel closure, glycerol accumulation, and enhanced survival under hyperosmotic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing increased intracellular glycerol in Fps13A cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "cb9513fe-8295-4b06-92ad-d9cb2d48b343",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C11",
+      "claim": "Hyperosmotic conditions cause enhanced survival under hyperosmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, hyperosmotic conditions block TORC2-dependent Ypk1-mediated Fps1 phosphorylation, causing channel closure, glycerol accumulation, and enhanced survival under hyperosmotic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that Fps13A hog1\u0394 cells survive better than hog1\u0394 cells under hyperosmotic stress.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "5865e9ca-85a0-4792-898c-44e4b6ded205",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C12",
+      "claim": "The events of channel closure, glycerol accumulation, and enhanced survival are all Hog1-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "These events are all Hog1-independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that Fps13A confers arsenite resistance and survival benefits even in hog1\u0394 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "b07fa401-957f-4600-8edb-b9fab49fb500",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C13",
+      "claim": "TORC2-dependent signaling responds to sphingolipid depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In Saccharomyces cerevisiae, target of rapamycin (TOR) Complex 2 (TORC2)-dependent signaling responds to multiple plasma membrane-perturbing stresses, including sphingolipid depletion (Roelants et al., 2010, 2011), heat shock (Sun et al., 2012), and both hypotonic (Berchtold et al., 2012) and hypertonic (Lee et al., 2012) conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "b83e6592-889c-41eb-8921-a69436589874",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C14",
+      "claim": "TORC2-dependent signaling responds to heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "In Saccharomyces cerevisiae, target of rapamycin (TOR) Complex 2 (TORC2)-dependent signaling responds to multiple plasma membrane-perturbing stresses, including sphingolipid depletion (Roelants et al., 2010, 2011), heat shock (Sun et al., 2012), and both hypotonic (Berchtold et al., 2012) and hypertonic (Lee et al., 2012) conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sun et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "cadb4518-2070-480b-a422-fb1c21d9c3e7",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C15",
+      "claim": "TORC2-dependent signaling responds to hypotonic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In Saccharomyces cerevisiae, target of rapamycin (TOR) Complex 2 (TORC2)-dependent signaling responds to multiple plasma membrane-perturbing stresses, including sphingolipid depletion (Roelants et al., 2010, 2011), heat shock (Sun et al., 2012), and both hypotonic (Berchtold et al., 2012) and hypertonic (Lee et al., 2012) conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Berchtold et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "ff1b957c-582e-4efd-a28d-34ee43463f36",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C16",
+      "claim": "TORC2-dependent signaling responds to hypertonic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In Saccharomyces cerevisiae, target of rapamycin (TOR) Complex 2 (TORC2)-dependent signaling responds to multiple plasma membrane-perturbing stresses, including sphingolipid depletion (Roelants et al., 2010, 2011), heat shock (Sun et al., 2012), and both hypotonic (Berchtold et al., 2012) and hypertonic (Lee et al., 2012) conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "fa3c83a5-ae1c-4de2-86d7-62d346c9b0ef",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C17",
+      "claim": "The essential downstream effector of TORC2 is the protein kinase Ypk1 (and its paralog Ypk2).",
+      "claim_type": "EXPLICIT",
+      "source": "The essential downstream effector of TORC2 is the protein kinase Ypk1 (and its paralog Ypk2) (Casamayor et al., 1999; Roelants et al., 2002, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "01c4060e-76c0-426e-b4a4-fbc00d114b46",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C18",
+      "claim": "A genome-wide screen was performed to discern previously unidentified Ypk1 substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how TORC2-Ypk1 signaling elicits cellular responses, we performed a genome-wide screen to discern previously unidentified Ypk1 substrates and thereby discovered that ceramide synthase activity is stimulated by TORC2-Ypk1 (Muir et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "4bdc9080-cd6c-4885-89a3-75dc990ed6a6",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C19",
+      "claim": "Ceramide synthase activity is stimulated by TORC2-Ypk1.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how TORC2-Ypk1 signaling elicits cellular responses, we performed a genome-wide screen to discern previously unidentified Ypk1 substrates and thereby discovered that ceramide synthase activity is stimulated by TORC2-Ypk1 (Muir et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Muir et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "60b0313b-5163-4562-844d-8f99c1cfe204",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C20",
+      "claim": "The screen pinpointed aquaglyceroporin Fps1 as a potential Ypk1 target.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other potential targets, our screen pinpointed two proteins involved in glycerol metabolism, aquaglyceroporin Fps1 (Luyten et al., 1995) and Gpt2/Gat1, an enzyme that converts glycerol-3P to phosphatidic acid (Zheng and Zou, 2001), a precursor to other phospholipids and triacylglycerol (Henry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "c3740dd4-2693-48de-805c-c781e3bbd440",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C21",
+      "claim": "The screen pinpointed Gpt2/Gat1 as a potential Ypk1 target.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other potential targets, our screen pinpointed two proteins involved in glycerol metabolism, aquaglyceroporin Fps1 (Luyten et al., 1995) and Gpt2/Gat1, an enzyme that converts glycerol-3P to phosphatidic acid (Zheng and Zou, 2001), a precursor to other phospholipids and triacylglycerol (Henry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "d72213e3-cae8-4496-9b8d-328c2834608e",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C22",
+      "claim": "Gpt2/Gat1 is an enzyme that converts glycerol-3P to phosphatidic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other potential targets, our screen pinpointed two proteins involved in glycerol metabolism, aquaglyceroporin Fps1 (Luyten et al., 1995) and Gpt2/Gat1, an enzyme that converts glycerol-3P to phosphatidic acid (Zheng and Zou, 2001), a precursor to other phospholipids and triacylglycerol (Henry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zheng and Zou, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "be10b293-4cf8-4bd6-8fb3-cac4d4cb7e03",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C23",
+      "claim": "Phosphatidic acid is a precursor to other phospholipids and triacylglycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other potential targets, our screen pinpointed two proteins involved in glycerol metabolism, aquaglyceroporin Fps1 (Luyten et al., 1995) and Gpt2/Gat1, an enzyme that converts glycerol-3P to phosphatidic acid (Zheng and Zou, 2001), a precursor to other phospholipids and triacylglycerol (Henry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Henry et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "8907ad29-69f2-4da6-b846-9e2d815b4ee6",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C24",
+      "claim": "Ypk1-mediated phosphorylation inhibits Gpd1, which generates glycerol-3P.",
+      "claim_type": "EXPLICIT",
+      "source": "Both candidates warranted further investigation because, as we showed, Ypk1-mediated phosphorylation inhibits another enzyme in glycerol metabolism, Gpd1, which generates glycerol-3P (Lee et al., 2012), and GPD1 expression is highly induced by hyperosmotic stress (Albertyn et al., 1994b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "acebe0c3-3750-48ba-b60d-ce88c32c6f8e",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C25",
+      "claim": "GPD1 expression is highly induced by hyperosmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Both candidates warranted further investigation because, as we showed, Ypk1-mediated phosphorylation inhibits another enzyme in glycerol metabolism, Gpd1, which generates glycerol-3P (Lee et al., 2012), and GPD1 expression is highly induced by hyperosmotic stress (Albertyn et al., 1994b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Albertyn et al., 1994b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "b4b1c3ca-daed-4386-a77f-e3873141e2a1",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C26",
+      "claim": "Accumulation of intercellular glycerol is essential for yeast cell survival under hyperosmotic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, accumulation of intercellular glycerol is essential for yeast cell survival under hyperosmotic conditions (Westfall et al., 2008; Saito and Posas, 2012; Hohmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "2d83df38-2d05-452b-bce1-486ef509f3c1",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C27",
+      "claim": "Hyperosmotic conditions evoke pathways coupled to alternative osmosensors (Sln1 and Sho1) that activate MAPK Hog1.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperosmotic conditions evoke two known signaling modalities. Pathways coupled to alternative osmosensors (Sln1 and Sho1) activate MAPK Hog1, which drives both transcription-independent and -dependent responses that markedly increase both production and intracellular retention of glycerol (Westfall et al., 2008; Saito and Posas, 2012; Hohmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "c325cdaf-034c-4ff7-8f6a-1b6dddb12eae",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C28",
+      "claim": "Hog1 drives both transcription-independent and -dependent responses that markedly increase both production and intracellular retention of glycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathways coupled to alternative osmosensors (Sln1 and Sho1) activate MAPK Hog1, which drives both transcription-independent and -dependent responses that markedly increase both production and intracellular retention of glycerol (Westfall et al., 2008; Saito and Posas, 2012; Hohmann, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "a28b84df-0c7a-4b8e-9f78-8553cf3bd4c2",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C29",
+      "claim": "Hyperosmotic shock increases cytosolic [Ca2+] thereby activating calcineurin (CN).",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperosmotic shock also increases cytosolic [Ca2+] thereby activating calcineurin (CN) (Denis and Cyert, 2002), promoting processes that stimulate retrieval of excess plasma membrane (Guiney et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Denis and Cyert, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "e03e0ffa-32e8-4c4d-92be-9d56e6811ec6",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C30",
+      "claim": "Calcineurin activation promotes processes that stimulate retrieval of excess plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperosmotic shock also increases cytosolic [Ca2+] thereby activating calcineurin (CN) (Denis and Cyert, 2002), promoting processes that stimulate retrieval of excess plasma membrane (Guiney et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guiney et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "11b10852-f412-40a9-9d8c-00c13eee6fbf",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C31",
+      "claim": "Both CN-deficient and hog1\u2206 cells are quite sensitive to the ionic imbalances caused by high salt (e.g., 1 M NaCl).",
+      "claim_type": "EXPLICIT",
+      "source": "Although both CN-deficient and hog1\u2206 cells are quite sensitive to the ionic imbalances caused by high salt (e.g., 1 M NaCl), hog1\u2206 cells are significantly more sensitive to hypertonic stress per se, such as a high concentration of an uncharged impermeant osmolyte (e.g., 1 M sorbitol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast stress responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "20bb83f3-edab-4f06-8353-4c1598352dce",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C32",
+      "claim": "hog1\u2206 cells are significantly more sensitive to hypertonic stress per se, such as a high concentration of an uncharged impermeant osmolyte (e.g., 1 M sorbitol).",
+      "claim_type": "EXPLICIT",
+      "source": "Although both CN-deficient and hog1\u2206 cells are quite sensitive to the ionic imbalances caused by high salt (e.g., 1 M NaCl), hog1\u2206 cells are significantly more sensitive to hypertonic stress per se, such as a high concentration of an uncharged impermeant osmolyte (e.g., 1 M sorbitol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast stress responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "8af6d16a-ea1d-4d4c-8b5f-228f05473f71",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C33",
+      "claim": "Preventing glycerol efflux through the aquaglyceroporin Fps1 is essential for yeast to survive hyperosmolarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well documented that preventing glycerol efflux through the aquaglyceroporin Fps1 is essential for yeast to survive hyperosmolarity (Luyten et al., 1995; Tam\u00e1s et al., 1999; Duskova et al., 2015), and that activated Hog1 can negatively regulate this channel by displacing the Fps1-activating proteins Rgc1/2 (Lee et al., 2013), Fps1 still closes in response to hyperosmotic shock in hog1\u2206 cells (Tam\u00e1s et al., 1999; Babazadeh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "851b4cf6-1bd8-48dc-a014-1575810b98ec",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C34",
+      "claim": "Activated Hog1 can negatively regulate Fps1 channel by displacing the Fps1-activating proteins Rgc1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well documented that preventing glycerol efflux through the aquaglyceroporin Fps1 is essential for yeast to survive hyperosmolarity (Luyten et al., 1995; Tam\u00e1s et al., 1999; Duskova et al., 2015), and that activated Hog1 can negatively regulate this channel by displacing the Fps1-activating proteins Rgc1/2 (Lee et al., 2013), Fps1 still closes in response to hyperosmotic shock in hog1\u2206 cells (Tam\u00e1s et al., 1999; Babazadeh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "f7ae1198-8d79-4d05-a9e3-20930409c267",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C35",
+      "claim": "Fps1 still closes in response to hyperosmotic shock in hog1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well documented that preventing glycerol efflux through the aquaglyceroporin Fps1 is essential for yeast to survive hyperosmolarity (Luyten et al., 1995; Tam\u00e1s et al., 1999; Duskova et al., 2015), and that activated Hog1 can negatively regulate this channel by displacing the Fps1-activating proteins Rgc1/2 (Lee et al., 2013), Fps1 still closes in response to hyperosmotic shock in hog1\u2206 cells (Tam\u00e1s et al., 1999; Babazadeh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tam\u00e1s et al., 1999 and Babazadeh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "f4a56d54-4b7c-4c97-8b77-3a5844d54080",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C36",
+      "claim": "The 743-residue enzyme Gpt2 contains one Ypk1 phospho-acceptor motif (646RSRSSSI652).",
+      "claim_type": "EXPLICIT",
+      "source": "The 743-residue enzyme Gpt2 contains one Ypk1 phospho-acceptor motif (646RSRSSSI652).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a sequence analysis result from the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "1f041637-c3a5-4f71-82e2-09170a55e543",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C37",
+      "claim": "At Ypk1 phospho-acceptor sites, Ser residues just penultimate to the canonical one can be phosphorylated in a Ypk1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "At such sites, Ser residues just penultimate to the canonical one (in red) can be phosphorylated in a Ypk1-dependent manner (Roelants et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Roelants et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "016c96eb-b9b0-4130-a7b2-2c3941487351",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C38",
+      "claim": "One or more of the three Ser residues (S649, S650, S651) in Gpt2 is phosphorylated in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "One or more of these three Ser residues is phosphorylated in vivo because, compared to wild-type, Gpt23A exhibited a distinctly faster mobility upon SDS-PAGE, a hallmark of decreased phosphorylation (Figure 1A), just like wild-type Gpt2 treated with phosphatase (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing mobility shift on SDS-PAGE and phosphatase treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "81841f0e-a084-4297-a2d8-80c648aab547",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C39",
+      "claim": "Gpt2 phosphorylation does not appear to be dependent on Ypk1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this phosphorylation did not appear to be dependent on Ypk1 because little change occurred in Gpt2 mobility when an analog-sensitive ypk1-as ypk2\u0394 strain was treated with the cognate inhibitor (3-MB-PP1) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing no change in Gpt2 mobility upon Ypk1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "00cb5ea9-c7fb-4f15-bf9d-eb1e783e9838",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C40",
+      "claim": "Three of four predicted Ypk1 sites in the 669-residue Fps1 channel (176RRRSRSR182, 180RSRATSN186, 565RARRTSD571) are phosphorylated in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast, three of four predicted Ypk1 sites in the 669-residue Fps1 channel (176RRRSRSR182, 180RSRATSN186, 565RARRTSD571) (Figure 1\u2014figure supplement 2A) are phosphorylated in vivo, as indicated by the effect of site-directed mutations to Ala on electrophoretic mobility (Figure 1\u2014figure supplement 2B), and their phosphorylation requires Ypk1 activity, because, in inhibitor-treated ypk1-as ypk2\u0394 cells, the mobility of wild-type Fps1 was indistinguishable from that of Fps1(S181A S185A S570A) (Figure 1B), just like wild-type Fps1 treated with phosphatase (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing mobility shifts upon site-directed mutagenesis and Ypk1 inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "09153dad-0c2b-4481-8f99-64bc72a88ff9",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C41",
+      "claim": "Fps1 phosphorylation at the three sites requires Ypk1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast, three of four predicted Ypk1 sites in the 669-residue Fps1 channel (176RRRSRSR182, 180RSRATSN186, 565RARRTSD571) (Figure 1\u2014figure supplement 2A) are phosphorylated in vivo, as indicated by the effect of site-directed mutations to Ala on electrophoretic mobility (Figure 1\u2014figure supplement 2B), and their phosphorylation requires Ypk1 activity, because, in inhibitor-treated ypk1-as ypk2\u0394 cells, the mobility of wild-type Fps1 was indistinguishable from that of Fps1(S181A S185A S570A) (Figure 1B), just like wild-type Fps1 treated with phosphatase (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing that Ypk1 inhibition eliminates the mobility difference between wild-type and mutant Fps1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "e6b7b8e9-e0d1-4293-a2e7-7040270abfe2",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C42",
+      "claim": "A C-terminal fragment of Fps1 containing Ser570 is phosphorylated by purified Ypk1 in vitro and solely at the Ypk1 site (S570).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a C-terminal fragment of Fps1 containing Ser570, one of the apparent Ypk1 phosphorylation sites delineated in vivo, is phosphorylated by purified Ypk1 in vitro and solely at the Ypk1 site (S570) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro kinase assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "547f970b-72a3-4458-a741-af87fcc1c574",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C43",
+      "claim": "Phosphorylation of the same sites in Fps1 in vivo is TORC2-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as for other Ypk1-dependent modifications (Muir et al., 2014), phosphorylation of these same sites in Fps1 in vivo was also TORC2-dependent, because treatment with a TORC2 inhibitor (NVP-BEZ235) (Kliegman et al., 2013) also reduced Fps1 phosphorylation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing reduced Fps1 phosphorylation upon TORC2 inhibition.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "66980f2c-0a68-4107-b57f-96e2bbf00824",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C44",
+      "claim": "Ypk1 phosphorylation at T662 is eliminated when cells are subjected to hyperosmotic shock for 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "We documented elsewhere using Phos-tag gel mobility shift that Ypk1 phosphorylation at T662, one of its well-characterized TORC2 sites, is eliminated when cells are subjected to hyperosmotic shock for 10 min (Lee et al., 2012), and the same effect is observed using a specific antibody (Niles et al., 2012) that monitors phosphorylation of Ypk1 at the same site (Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2012 and experimental data using a phospho-specific antibody.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "dc21c736-9202-4cfb-8ceb-8f516a2529cf",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C45",
+      "claim": "Loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs very rapidly (within 1 min) and persists for about 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs very rapidly (within 1 min) and persists for about 15 min (Figure 1D), but is transient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing kinetics of Ypk1 dephosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "5dbe1dfc-fe9f-4156-99a6-445862b29f1f",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C46",
+      "claim": "Loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock is transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs very rapidly (within 1 min) and persists for about 15 min (Figure 1D), but is transient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing recovery of Ypk1 phosphorylation over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "3d50dd77-8b5c-4fac-bb2e-465575377fca",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C47",
+      "claim": "By 20 min after hyperosmotic shock, TORC2-mediated Ypk1 phosphorylation is again detectable and is nearly back to the pre-stress level by 75 min.",
+      "claim_type": "EXPLICIT",
+      "source": "By 20 min after hyperosmotic shock, TORC2-mediated Ypk1 phosphorylation is again detectable and is nearly back to the pre-stress level by 75 min (Figure 1\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing time course of Ypk1 phosphorylation recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "bdee5106-3d15-4f28-a4d0-8921fa58ae54",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C48",
+      "claim": "Rapid reduction in TORC2-mediated Ypk1 phosphorylation under hypertonic stress was still observed in mutants lacking the Sho1- or Sln1-dependent pathways that converge on Hog1 or Hog1 itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid reduction in TORC2-mediated Ypk1 phosphorylation under hypertonic stress was still observed in mutants lacking the Sho1- or Sln1-dependent pathways that converge on Hog1 or Hog1 itself (Figure 1E) or CN (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing Ypk1 dephosphorylation in various mutant backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "96f64a94-d44a-4450-8fb8-015c87831134",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C49",
+      "claim": "Rapid reduction in TORC2-mediated Ypk1 phosphorylation under hypertonic stress was still observed in mutants lacking CN.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid reduction in TORC2-mediated Ypk1 phosphorylation under hypertonic stress was still observed in mutants lacking the Sho1- or Sln1-dependent pathways that converge on Hog1 or Hog1 itself (Figure 1E) or CN (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing Ypk1 dephosphorylation in CN-deficient cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "f66ef6b7-fe75-493a-baa6-5bf18d2f27db",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C50",
+      "claim": "Loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs independently of other known response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of TORC2-mediated Ypk1 phosphorylation upon hyperosmotic shock occurs independently of other known response pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing Ypk1 dephosphorylation in mutants lacking Hog1 and CN pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "9cbcc0bf-79c3-46d3-9cc4-183b05ea5541",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C51",
+      "claim": "Ypk1 phosphorylation of Fps1 is rapidly lost upon hyperosmotic shock.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Ypk1 phosphorylation of Fps1 is rapidly lost upon hyperosmotic shock (Figure 1G), yielding a species with mobility indistinguishable from Fps13A, remains low for at least 20 min, but returns by 75 min (Figure 1\u2014figure supplement 5B), mirroring the kinetics of loss and return of both TORC2-mediated Ypk1 phosphorylation (Figure 1D and Figure 1\u2014figure supplement 5A) and Ypk1-dependent phosphorylation of Gpd1 that we observed before (Lee et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing Fps1 mobility shift upon hyperosmotic shock.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "535e6d9d-5cf8-4a75-95d6-8ddb825b4b69",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C52",
+      "claim": "Ypk1 phosphorylation of Fps1 remains low for at least 20 min after hyperosmotic shock, but returns by 75 min.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Ypk1 phosphorylation of Fps1 is rapidly lost upon hyperosmotic shock (Figure 1G), yielding a species with mobility indistinguishable from Fps13A, remains low for at least 20 min, but returns by 75 min (Figure 1\u2014figure supplement 5B), mirroring the kinetics of loss and return of both TORC2-mediated Ypk1 phosphorylation (Figure 1D and Figure 1\u2014figure supplement 5A) and Ypk1-dependent phosphorylation of Gpd1 that we observed before (Lee et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing time course of Fps1 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "fd79fb6b-9993-4483-a3df-34b4beac08dc",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C53",
+      "claim": "The kinetics of Fps1 phosphorylation loss and return mirror the kinetics of loss and return of TORC2-mediated Ypk1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Ypk1 phosphorylation of Fps1 is rapidly lost upon hyperosmotic shock (Figure 1G), yielding a species with mobility indistinguishable from Fps13A, remains low for at least 20 min, but returns by 75 min (Figure 1\u2014figure supplement 5B), mirroring the kinetics of loss and return of both TORC2-mediated Ypk1 phosphorylation (Figure 1D and Figure 1\u2014figure supplement 5A) and Ypk1-dependent phosphorylation of Gpd1 that we observed before (Lee et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparing the time courses of Fps1 and Ypk1 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "2b0a1431-3f55-4423-9b11-1b67dbefa4aa",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C54",
+      "claim": "Hyperosmotic stress dramatically down-modulates Ypk1-mediated phosphorylation of Fps1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hyperosmotic stress dramatically down-modulates Ypk1-mediated phosphorylation of Fps1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data on Fps1 phosphorylation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "a66d74c8-83ba-406c-b456-eac9246786e4",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C55",
+      "claim": "In its open state, the Fps1 channel permits entry of toxic metalloid, arsenite, which inhibits growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In its open state, the Fps1 channel permits entry of toxic metalloid, arsenite, which inhibits growth (Thorsen et al., 2006), whereas lack of Fps1 (fps1\u2206) or the lack of channel activators (rgc1\u2206 rgc2\u2206) (Beese et al., 2009) or an Fps1 mutant that cannot open because it cannot bind the activators (Fps1\u2206PHD) (Lee et al., 2013) are arsenite resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Thorsen et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "7205d4db-878a-422d-8bbb-f9c72200297a",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C56",
+      "claim": "Lack of Fps1 (fps1\u2206) confers arsenite resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In its open state, the Fps1 channel permits entry of toxic metalloid, arsenite, which inhibits growth (Thorsen et al., 2006), whereas lack of Fps1 (fps1\u2206) or the lack of channel activators (rgc1\u2206 rgc2\u2206) (Beese et al., 2009) or an Fps1 mutant that cannot open because it cannot bind the activators (Fps1\u2206PHD) (Lee et al., 2013) are arsenite resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Fps1 function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "5cb73f4c-cf66-48e5-a22c-e04ebc145be7",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C57",
+      "claim": "Lack of channel activators (rgc1\u2206 rgc2\u2206) confers arsenite resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In its open state, the Fps1 channel permits entry of toxic metalloid, arsenite, which inhibits growth (Thorsen et al., 2006), whereas lack of Fps1 (fps1\u2206) or the lack of channel activators (rgc1\u2206 rgc2\u2206) (Beese et al., 2009) or an Fps1 mutant that cannot open because it cannot bind the activators (Fps1\u2206PHD) (Lee et al., 2013) are arsenite resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Beese et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "0197195d-6d46-4ae5-a6b1-b360f06e1df4",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C58",
+      "claim": "An Fps1 mutant that cannot open because it cannot bind the activators (Fps1\u2206PHD) confers arsenite resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In its open state, the Fps1 channel permits entry of toxic metalloid, arsenite, which inhibits growth (Thorsen et al., 2006), whereas lack of Fps1 (fps1\u2206) or the lack of channel activators (rgc1\u2206 rgc2\u2206) (Beese et al., 2009) or an Fps1 mutant that cannot open because it cannot bind the activators (Fps1\u2206PHD) (Lee et al., 2013) are arsenite resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "9892456b-e8b5-4b16-b4a5-a002b10eb011",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C59",
+      "claim": "Fps13A was at least as arsenite resistant as any other mutant that abrogates Fps1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Fps13A was at least as arsenite resistant as any other mutant that abrogates Fps1 function (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing arsenite resistance of Fps13A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "e84a8f85-dbec-43bc-b602-758b1efd6626",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C60",
+      "claim": "Fps13A acts like a closed channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Fps13A acts like a closed channel, suggesting that Ypk1-mediated phosphorylation promotes channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the arsenite resistance phenotype of Fps13A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "34f5bbfd-d0fa-450e-b692-ceac316c3ad4",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C61",
+      "claim": "Ypk1-mediated phosphorylation promotes channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Fps13A acts like a closed channel, suggesting that Ypk1-mediated phosphorylation promotes channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Fps13A (lacking Ypk1 phosphorylation sites) acts like a closed channel.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "a5a3379e-9fe3-4e35-af87-59dc26861fa1",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C62",
+      "claim": "Loss of individual phosphorylation sites led to intermediate levels of arsenite resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of individual phosphorylation sites led to intermediate levels of arsenite resistance (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing arsenite resistance of single-site mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "0f52b133-24f3-45e5-9b7c-c63d27ade418",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C63",
+      "claim": "Modification at the Ypk1 sites contributes additively to channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, modification at these sites contributes additively to channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the intermediate arsenite resistance of single-site mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "b6116427-4213-43bf-a96e-0a54755c4870",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C64",
+      "claim": "Intracellular glycerol is elevated in fps1\u2206 cells in the absence of hyperosmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have shown that intracellular glycerol is elevated in fps1\u2206 cells in the absence of hyperosmotic stress (Tam\u00e1s et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tam\u00e1s et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "e3927c1e-22c7-4e63-9a05-f19c0593b378",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C65",
+      "claim": "Fps13A mutant cells accumulated \u223ctwofold as much glycerol as otherwise isogenic FPS1+ strains in the absence of any osmotic perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the absence of any osmotic perturbation, Fps13A mutant cells accumulated \u223ctwofold as much glycerol as otherwise isogenic FPS1+ strains (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data measuring intracellular glycerol levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "0d033338-7657-4020-ae22-30c66262abdc",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C66",
+      "claim": "Loss of Ypk1 (and Ypk2) activity caused an increase in glycerol level compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this result, we observed before that loss of Ypk1 (and Ypk2) activity caused an increase in glycerol level compared to control cells (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "360bcfb8-9875-4f1b-9fc0-38f70fbe3c49",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C67",
+      "claim": "The steady-state level and localization of Fps1 are unaffected by the presence or absence of Ypk1-dependent phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Ypk1-dependent phosphorylation affecting Fps1 channel function per se, immunoblotting (Figure 2D) and fluorescence microscopy (Figure 2E) showed that the steady-state level and localization of Fps1 are unaffected by the presence or absence of these modifications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from immunoblotting and fluorescence microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "9bddc364-d267-4ed5-a04f-2dee1dcb2f8d",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C68",
+      "claim": "Fps1 can be negatively regulated by Hog1 via two mechanisms: Hog1 phosphorylation of Fps1 stimulates its internalization and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fps1 can be negatively regulated by Hog1 via two mechanisms: Hog1 phosphorylation of Fps1 stimulates its internalization and degradation (Thorsen et al., 2006; Mollapour and Piper, 2007); Hog1 phosphorylation closes the channel by displacing bound Fps1 activators (Rgc1 and Rgc2) (Beese et al., 2009; Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "65e4d3ff-dc6d-4155-811a-a1b0e5b266ab",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C69",
+      "claim": "Hog1 phosphorylation closes the Fps1 channel by displacing bound Fps1 activators (Rgc1 and Rgc2).",
+      "claim_type": "EXPLICIT",
+      "source": "Fps1 can be negatively regulated by Hog1 via two mechanisms: Hog1 phosphorylation of Fps1 stimulates its internalization and degradation (Thorsen et al., 2006; Mollapour and Piper, 2007); Hog1 phosphorylation closes the channel by displacing bound Fps1 activators (Rgc1 and Rgc2) (Beese et al., 2009; Lee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Beese et al., 2009 and Lee et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "e4d1279b-a02a-442a-99ea-b5c056161690",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C70",
+      "claim": "Fps13A was still in the closed state in the total absence of Hog1 (hog1\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "We found, however, that Fps13A was still in the closed state, as judged by arsenite resistance, in the total absence of Hog1 (hog1\u0394) (Figure 3A), or in an Fps1 mutant (Fps1IVAA) that cannot bind Hog1 or where the activator cannot be displaced from Fps1 by Hog1 phosphorylation (Rgc27A) (Lee et al., 2013) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing arsenite resistance of Fps13A in hog1\u0394 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "56d2010d-7de1-44f2-ac83-17ef8d634210",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C71",
+      "claim": "Fps13A was still in the closed state in an Fps1 mutant (Fps1IVAA) that cannot bind Hog1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, however, that Fps13A was still in the closed state, as judged by arsenite resistance, in the total absence of Hog1 (hog1\u0394) (Figure 3A), or in an Fps1 mutant (Fps1IVAA) that cannot bind Hog1 or where the activator cannot be displaced from Fps1 by Hog1 phosphorylation (Rgc27A) (Lee et al., 2013) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing arsenite resistance of Fps1(3A)IVAA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "5c174bc5-6e8d-4572-97ce-f3ff50cd03ee",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C72",
+      "claim": "Fps13A was still in the closed state where the activator cannot be displaced from Fps1 by Hog1 phosphorylation (Rgc27A).",
+      "claim_type": "EXPLICIT",
+      "source": "We found, however, that Fps13A was still in the closed state, as judged by arsenite resistance, in the total absence of Hog1 (hog1\u0394) (Figure 3A), or in an Fps1 mutant (Fps1IVAA) that cannot bind Hog1 or where the activator cannot be displaced from Fps1 by Hog1 phosphorylation (Rgc27A) (Lee et al., 2013) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing arsenite resistance of Fps13A in Rgc27A background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "eb34a69a-c22f-4c80-80b9-9485ae1661a1",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C73",
+      "claim": "Closure of the Fps1 channel by lack of Ypk1 phosphorylation occurs independently of any effects requiring Hog1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, closure of the Fps1 channel by lack of Ypk1 phosphorylation occurs independently of any effects requiring Hog1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing Fps13A remains closed in hog1\u0394 and Hog1-insensitive mutant backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "fc873d1a-403e-4b5a-93eb-6e7e7f480de3",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C74",
+      "claim": "Presence or absence of Ypk1-mediated Fps1 phosphorylation had no effect on Fps1-Rgc2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this conclusion, presence or absence of Ypk1-mediated Fps1 phosphorylation had no effect on Fps1-Rgc2 interaction (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by co-immunoprecipitation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "ee0f2604-1cbb-43a4-9764-31ced0b54e06",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C75",
+      "claim": "Fps13A hog1\u0394 cells are significantly more resistant to hyperosmotic stress than otherwise isogenic hog1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Fps13A hog1\u0394 cells are significantly more resistant to hyperosmotic stress than otherwise isogenic hog1\u0394 cells (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing growth of Fps13A hog1\u0394 cells on sorbitol plates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "37acd77c-5464-4f47-b3fc-190c30897a57",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C76",
+      "claim": "Even when Hog1 is absent, loss of Ypk1-mediated Fps1 channel opening is sufficient for cells to accumulate an adequate amount of glycerol to physiologically cope with hyperosmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This epistasis confirms that, even when Hog1 is absent, loss of Ypk1-mediated Fps1 channel opening is sufficient for cells to accumulate an adequate amount of glycerol to physiologically cope with hyperosmotic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the epistasis experiment showing Fps13A suppresses hog1\u0394 hyperosmotic sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "704a32b8-77b2-4834-bfbb-ba44e55f095e",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C77",
+      "claim": "TORC2-dependent Ypk1-catalyzed phosphorylation of Fps1 opens this channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from further validating the utility of our screen for identifying new Ypk1 substrates (Muir et al., 2014), our current findings demonstrate that TORC2-dependent Ypk1-catalyzed phosphorylation of Fps1 opens this channel and, conversely, that loss of Ypk1-dependent Fps1 phosphorylation upon hypertonic shock is sufficient to close the channel, prevent glycerol efflux, and promote cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "becec3b7-5347-47ff-90c6-8a07e6729bf0",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C78",
+      "claim": "Loss of Ypk1-dependent Fps1 phosphorylation upon hypertonic shock is sufficient to close the channel, prevent glycerol efflux, and promote cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from further validating the utility of our screen for identifying new Ypk1 substrates (Muir et al., 2014), our current findings demonstrate that TORC2-dependent Ypk1-catalyzed phosphorylation of Fps1 opens this channel and, conversely, that loss of Ypk1-dependent Fps1 phosphorylation upon hypertonic shock is sufficient to close the channel, prevent glycerol efflux, and promote cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "64a635d3-7cb0-4dc8-a40e-2ddc6b4810ef",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C79",
+      "claim": "In a detailed kinetic analysis of global changes in the S. cerevisiae phosphoproteome upon hyperosmotic stress, two sites in Fps1 (S181 and T185) become dephosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our observations, in a detailed kinetic analysis of global changes in the S. cerevisiae phosphoproteome upon hyperosmotic stress (Kanshin et al., 2015), it was noted that two sites in Fps1 (S181 and T185), which we showed here are modified by Ypk1, become dephosphorylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kanshin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "19ab2dd2-10b6-49c6-92b3-a9d44b0f8e47",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C80",
+      "claim": "Gpd1 is the rate-limiting enzyme for glycerol production under hyperosmotic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that Gpd1, the rate-limiting enzyme for glycerol production under hyperosmotic conditions (Remize et al., 2001), is negatively regulated by Ypk1 phosphorylation (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Remize et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "71c5e3f1-f74d-410a-9edd-83475e401bef",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C81",
+      "claim": "Gpd1 is negatively regulated by Ypk1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that Gpd1, the rate-limiting enzyme for glycerol production under hyperosmotic conditions (Remize et al., 2001), is negatively regulated by Ypk1 phosphorylation (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "8d74c2ce-d404-4fbf-a909-53617cca3df1",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C82",
+      "claim": "Inactivation of TORC2-Ypk1 signaling upon hyperosmotic shock has at least two coordinated consequences that work synergistically to cause glycerol accumulation and promote cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inactivation of TORC2-Ypk1 signaling upon hyperosmotic shock has at least two coordinated consequences that work synergistically to cause glycerol accumulation and promote cell survival, a similar outcome but mechanistically distinct from the processes evoked by Hog1 activation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement integrating the findings about Gpd1 and Fps1 regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "1a73bc46-d79f-4c69-9d22-ec396211ea9e",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C83",
+      "claim": "Loss of TORC2-Ypk1 signaling alleviates inhibition of Gpd1, which, combined with transcriptional induction of GPD1 by hyperosmotic stress, greatly increases glycerol production.",
+      "claim_type": "EXPLICIT",
+      "source": "First, loss of TORC2-Ypk1 signaling alleviates inhibition of Gpd1, which, combined with transcriptional induction of GPD1 by hyperosmotic stress, greatly increases glycerol production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known regulation of Gpd1 by Ypk1 and transcriptional induction of GPD1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "bda319b5-8284-48af-bb19-e0ce9058092a",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C84",
+      "claim": "Loss of TORC2-Ypk1 signaling closes the Fps1 channel, thereby retaining the glycerol produced.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, loss of TORC2-Ypk1 signaling closes the Fps1 channel, thereby retaining the glycerol produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing Fps1 closure upon loss of Ypk1 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "283d97d1-8bd5-4e63-9e5f-ecd569aa1939",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C85",
+      "claim": "Presence of two systems (TORC2-Ypk1 and Hog1) might allow cells to adjust optimally to stresses occurring with different intensity, duration, or frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of two systems (TORC2-Ypk1 and Hog1) might allow cells to adjust optimally to stresses occurring with different intensity, duration, or frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential advantage of having two parallel systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "b1e0bcc7-a92f-45d5-91e4-0f6197dff687",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C86",
+      "claim": "Hog1 responds to stresses occurring no more frequently than every 200 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Reportedly, Hog1 responds to stresses occurring no more frequently than every 200 s (Hersen et al., 2008; McClean et al., 2009), whereas we found TORC2-Ypk1 signaling responded to hypertonic stress in \u226460 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hersen et al., 2008 and McClean et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "c65e09da-3594-4276-aa25-86d0cbfee3b6",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C87",
+      "claim": "TORC2-Ypk1 signaling responded to hypertonic stress in \u226460 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Reportedly, Hog1 responds to stresses occurring no more frequently than every 200 s (Hersen et al., 2008; McClean et al., 2009), whereas we found TORC2-Ypk1 signaling responded to hypertonic stress in \u226460 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing rapid Ypk1 dephosphorylation within 1 min.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "fc2e1b01-d4f6-4a19-8359-de9440295402",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C88",
+      "claim": "The Sln1 and Sho1 sensors that lead to Hog1 activation likely can respond to stimuli that do not affect the TORC2-Ypk1 axis, and vice-versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the Sln1 and Sho1 sensors that lead to Hog1 activation likely can respond to stimuli that do not affect the TORC2-Ypk1 axis, and vice-versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential differential responsiveness of the two pathways.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "ccdd0368-eb51-4dd1-aa83-25ef5d9f49fa",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C89",
+      "claim": "Rapid and profound reduction in phosphorylation of Ypk1 at its TORC2 sites upon hyperosmotic stress could arise from activation of a phosphatase (other than CN), inhibition of TORC2 catalytic activity, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "A remaining question is how hyperosmotic stress causes such a rapid and profound reduction in phosphorylation of Ypk1 at its TORC2 sites. This outcome could arise from activation of a phosphatase (other than CN), inhibition of TORC2 catalytic activity, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "035437d7-5c6a-4088-b35d-68c5b188c9e7",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C90",
+      "claim": "A recent report showed that Tor2 (the catalytic component of TORC2) interacts physically with Sho1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a recent report that Tor2 (the catalytic component of TORC2) interacts physically with Sho1 (Lam et al., 2015), raising the possibility that a Hog1 pathway sensor directly modulates TORC2 activity, we found that hyperosmolarity inactivates TORC2 just as robustly in sho1\u0394 cells as in wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lam et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "18eb01ac-f87d-4043-822b-aea2bb893415",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C91",
+      "claim": "Hyperosmolarity inactivates TORC2 just as robustly in sho1\u0394 cells as in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a recent report that Tor2 (the catalytic component of TORC2) interacts physically with Sho1 (Lam et al., 2015), raising the possibility that a Hog1 pathway sensor directly modulates TORC2 activity, we found that hyperosmolarity inactivates TORC2 just as robustly in sho1\u0394 cells as in wild-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing Ypk1 dephosphorylation in sho1\u0394 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "32aaccaa-5543-4b72-8545-f5de8f46e55d",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C92",
+      "claim": "The ancillary TORC2 subunits Slm1 and Slm2 play a role in delivering Ypk1 to the TORC2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, given the role ascribed to the ancillary TORC2 subunits Slm1 and Slm2 (Gaubitz et al., 2015) in delivering Ypk1 to the TORC2 complex (Berchtold et al., 2012; Niles et al., 2012), response to hyperosmotic shock might be mediated by some influence on Slm1 and Slm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Berchtold et al., 2012 and Niles et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "2fd5a8ab-ffb6-4309-b224-14fd6234f59a",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C93",
+      "claim": "Response to hyperosmotic shock might be mediated by some influence on Slm1 and Slm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, given the role ascribed to the ancillary TORC2 subunits Slm1 and Slm2 (Gaubitz et al., 2015) in delivering Ypk1 to the TORC2 complex (Berchtold et al., 2012; Niles et al., 2012), response to hyperosmotic shock might be mediated by some influence on Slm1 and Slm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "c18fa4cc-6088-4029-9884-c7bf8fc9c175",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "claim_id": "C94",
+      "claim": "The down-regulation of TORC2-Ypk1 signaling and its consequences represent a novel mechanism for sensing and responding to hyperosmolarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although the mechanism that abrogates TORC2 phosphorylation of Ypk1 upon hypertonic stress remains to be delineated, this effect and its consequences represent a novel mechanism for sensing and responding to hyperosmolarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e4991eb8-7edd-461e-bb6c-42e41c3fe852",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gpt2 contains a predicted Ypk1 phospho-acceptor motif and is phosphorylated in vivo at one or more Ser residues (S649, S650, S651), but this phosphorylation does not depend on Ypk1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are well-supported by experimental data. The sequence analysis (C36), mobility shift assays (C38), phosphatase treatment, and Ypk1 inhibition experiments (C39) collectively demonstrate that Gpt2 is phosphorylated in vivo but not by Ypk1, despite containing a predicted Ypk1 consensus site.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "387fee3b-99bb-4536-a75c-c23f8acbb645",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Fps1 is an authentic Ypk1 substrate, with three of four predicted Ypk1 sites (S181, S185, S570) phosphorylated in vivo in a Ypk1- and TORC2-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 and C6 are strongly supported by converging experimental evidence including site-directed mutagenesis (C40), Ypk1 inhibition experiments (C41), in vitro kinase assays (C42), and TORC2 inhibition (C43). The data demonstrate that Fps1 is a bona fide Ypk1 substrate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "8dd7e759-0eb7-4f93-8020-209effba6905",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hyperosmotic shock causes rapid, transient loss of TORC2-mediated Ypk1 phosphorylation (within 1 min, persisting ~15 min, recovering by 75 min), independently of Hog1 and calcineurin pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 are well-supported by time-course experiments using Phos-tag gels and phospho-specific antibodies (C44-C47), and genetic experiments in mutant backgrounds lacking Hog1 pathway components or calcineurin (C48-C50). The kinetics and pathway independence are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "1ba3c51a-f371-4dee-83f3-1600925fee9d",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hyperosmotic stress rapidly eliminates Ypk1-mediated Fps1 phosphorylation, with kinetics mirroring TORC2-mediated Ypk1 dephosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 and C8 are supported by Phos-tag gel mobility shift experiments showing rapid loss of Fps1 phosphorylation upon hyperosmotic shock (C51), persistence for 20 min and recovery by 75 min (C52), with kinetics paralleling Ypk1 dephosphorylation (C53). The temporal correlation is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "620bee6d-be0b-41d4-ba15-e47e359241df",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Fps1 phosphorylation by Ypk1 promotes channel opening, as the non-phosphorylatable Fps13A mutant behaves like a closed channel (arsenite resistant), and individual phosphorylation sites contribute additively to channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 and C7 are supported by arsenite resistance assays showing that Fps13A is as resistant as other closed-channel mutants (C59-C60), and single-site mutants show intermediate resistance (C62), indicating additive contributions (C63). The functional link between phosphorylation and channel opening is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "5d434030-a3bf-4b1e-9642-93cb00894e8b",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fps13A mutant cells accumulate approximately twofold more intracellular glycerol than wild-type cells under normal conditions, consistent with a closed channel state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by direct glycerol measurements showing ~2-fold accumulation in Fps13A cells. This is consistent with prior work on Ypk1/Ypk2 loss (C66) and supports the functional consequence of channel closure (C10). The quantitative measurement provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "d16cf29c-097f-46d9-90c3-609356f3f36e",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ypk1-dependent phosphorylation affects Fps1 channel function per se, without altering steady-state protein levels or plasma membrane localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by immunoblotting and fluorescence microscopy data showing no changes in Fps1 abundance or localization between wild-type and Fps13A. This demonstrates that phosphorylation regulates channel activity rather than trafficking or stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "cf0923dd-ceee-4673-a5d1-6b842deb0e6c",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fps1 channel closure by loss of Ypk1 phosphorylation occurs independently of Hog1, as Fps13A remains closed in hog1\u0394 cells, in Fps1 mutants that cannot bind Hog1, and when Rgc2 cannot be displaced by Hog1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 are supported by arsenite resistance assays in multiple genetic backgrounds (hog1\u0394, Fps1IVAA, Rgc27A) and co-immunoprecipitation showing no effect of Ypk1 phosphorylation on Fps1-Rgc2 interaction. The independence from Hog1 regulation is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "2dce8491-84db-4763-90b1-a0e481cc7184",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Loss of Ypk1-mediated Fps1 phosphorylation (Fps13A) is sufficient to suppress the hyperosmotic sensitivity of hog1\u0394 cells, demonstrating that this mechanism can promote survival independently of Hog1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76, C11-C12 are supported by epistasis experiments showing that Fps13A hog1\u0394 cells survive better on sorbitol than hog1\u0394 cells alone. This genetic evidence demonstrates sufficiency of the TORC2-Ypk1-Fps1 pathway for hyperosmotic stress survival in the absence of Hog1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "7cadb5fb-f009-4125-b86e-3bcf203ab463",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Down-regulation of TORC2-Ypk1 signaling upon hyperosmotic shock represents a novel Hog1-independent mechanism for hyperosmotic stress response, with coordinated effects on both glycerol production (via Gpd1) and retention (via Fps1 closure).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78, C82-C84, and C94 represent the main conclusion integrating all experimental findings. The mechanism is well-supported by the collective evidence showing: (1) TORC2-Ypk1 phosphorylation opens Fps1, (2) hyperosmotic shock blocks this phosphorylation, (3) this closes Fps1 and promotes survival, and (4) this occurs independently of Hog1. The dual regulation of Gpd1 and Fps1 provides a coherent mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "4b480bc8-23a4-42c8-a0be-a0e3c967903d",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Independent phosphoproteomic analysis confirms that Fps1 sites S181 and T185 become dephosphorylated upon hyperosmotic stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by citation to an independent study (Kanshin et al., 2015) that corroborates the authors' findings using a different methodology. This external validation strengthens the main results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "a29de7de-f06c-4f9d-ba31-9d5da812ab56",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TORC2-Ypk1 signaling responds to hypertonic stress more rapidly (\u226460 s) than Hog1 (which responds to stresses no more frequently than every 200 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 are supported by citations for Hog1 response kinetics and experimental data showing Ypk1 dephosphorylation within 1 min. The comparison suggests differential temporal dynamics between the two pathways, though the functional significance requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "995f21d7-1c46-4103-9982-fde0caa3cf72",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Despite a reported physical interaction between Tor2 and Sho1, hyperosmolarity inactivates TORC2 equally in sho1\u0394 and wild-type cells, indicating Sho1 is not required for TORC2 inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by experimental data showing equivalent Ypk1 dephosphorylation in sho1\u0394 cells. This rules out a simple model where Sho1 directly mediates TORC2 inactivation, despite the reported physical interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    },
+    {
+      "id": "4d5380d8-4c94-418e-8af4-20c2edc069c5",
+      "content_id": "f9560c34-6ac5-4e16-9ff8-18f1bc96674b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculative discussion of potential advantages of dual stress response systems and possible mechanisms for TORC2 inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85, C88, C89, and C93 are explicitly speculative statements about potential functional advantages and mechanisms. While reasonable hypotheses, they are not experimentally tested in this manuscript and represent future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:45:00.384148Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f4a56d54-4b7c-4c97-8b77-3a5844d54080",
+      "result_id": "e4991eb8-7edd-461e-bb6c-42e41c3fe852"
+    },
+    {
+      "claim_id": "1f041637-c3a5-4f71-82e2-09170a55e543",
+      "result_id": "e4991eb8-7edd-461e-bb6c-42e41c3fe852"
+    },
+    {
+      "claim_id": "016c96eb-b9b0-4130-a7b2-2c3941487351",
+      "result_id": "e4991eb8-7edd-461e-bb6c-42e41c3fe852"
+    },
+    {
+      "claim_id": "81841f0e-a084-4297-a2d8-80c648aab547",
+      "result_id": "e4991eb8-7edd-461e-bb6c-42e41c3fe852"
+    },
+    {
+      "claim_id": "00cb5ea9-c7fb-4f15-bf9d-eb1e783e9838",
+      "result_id": "387fee3b-99bb-4536-a75c-c23f8acbb645"
+    },
+    {
+      "claim_id": "09153dad-0c2b-4481-8f99-64bc72a88ff9",
+      "result_id": "387fee3b-99bb-4536-a75c-c23f8acbb645"
+    },
+    {
+      "claim_id": "e6b7b8e9-e0d1-4293-a2e7-7040270abfe2",
+      "result_id": "387fee3b-99bb-4536-a75c-c23f8acbb645"
+    },
+    {
+      "claim_id": "547f970b-72a3-4458-a741-af87fcc1c574",
+      "result_id": "387fee3b-99bb-4536-a75c-c23f8acbb645"
+    },
+    {
+      "claim_id": "b2e18869-b197-4dae-bc81-458f0812d5e0",
+      "result_id": "387fee3b-99bb-4536-a75c-c23f8acbb645"
+    },
+    {
+      "claim_id": "66980f2c-0a68-4107-b57f-96e2bbf00824",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "dc21c736-9202-4cfb-8ceb-8f516a2529cf",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "5dbe1dfc-fe9f-4156-99a6-445862b29f1f",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "3d50dd77-8b5c-4fac-bb2e-465575377fca",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "bdee5106-3d15-4f28-a4d0-8921fa58ae54",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "96f64a94-d44a-4450-8fb8-015c87831134",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "f66ef6b7-fe75-493a-baa6-5bf18d2f27db",
+      "result_id": "8dd7e759-0eb7-4f93-8020-209effba6905"
+    },
+    {
+      "claim_id": "9cbcc0bf-79c3-46d3-9cc4-183b05ea5541",
+      "result_id": "1ba3c51a-f371-4dee-83f3-1600925fee9d"
+    },
+    {
+      "claim_id": "535e6d9d-5cf8-4a75-95d6-8ddb825b4b69",
+      "result_id": "1ba3c51a-f371-4dee-83f3-1600925fee9d"
+    },
+    {
+      "claim_id": "fd79fb6b-9993-4483-a3df-34b4beac08dc",
+      "result_id": "1ba3c51a-f371-4dee-83f3-1600925fee9d"
+    },
+    {
+      "claim_id": "2b0a1431-3f55-4423-9b11-1b67dbefa4aa",
+      "result_id": "1ba3c51a-f371-4dee-83f3-1600925fee9d"
+    },
+    {
+      "claim_id": "c4dc175c-6c10-40b5-9446-0759f52e06fc",
+      "result_id": "1ba3c51a-f371-4dee-83f3-1600925fee9d"
+    },
+    {
+      "claim_id": "9892456b-e8b5-4b16-b4a5-a002b10eb011",
+      "result_id": "620bee6d-be0b-41d4-ba15-e47e359241df"
+    },
+    {
+      "claim_id": "e84a8f85-dbec-43bc-b602-758b1efd6626",
+      "result_id": "620bee6d-be0b-41d4-ba15-e47e359241df"
+    },
+    {
+      "claim_id": "34f5bbfd-d0fa-450e-b692-ceac316c3ad4",
+      "result_id": "620bee6d-be0b-41d4-ba15-e47e359241df"
+    },
+    {
+      "claim_id": "a5a3379e-9fe3-4e35-af87-59dc26861fa1",
+      "result_id": "620bee6d-be0b-41d4-ba15-e47e359241df"
+    },
+    {
+      "claim_id": "0f52b133-24f3-45e5-9b7c-c63d27ade418",
+      "result_id": "620bee6d-be0b-41d4-ba15-e47e359241df"
+    },
+    {
+      "claim_id": "0edc15c1-c52b-4457-9926-121bba87520c",
+      "result_id": "620bee6d-be0b-41d4-ba15-e47e359241df"
+    },
+    {
+      "claim_id": "e3927c1e-22c7-4e63-9a05-f19c0593b378",
+      "result_id": "5d434030-a3bf-4b1e-9642-93cb00894e8b"
+    },
+    {
+      "claim_id": "0d033338-7657-4020-ae22-30c66262abdc",
+      "result_id": "5d434030-a3bf-4b1e-9642-93cb00894e8b"
+    },
+    {
+      "claim_id": "c32f704a-20b4-411d-b949-76c32a270bd1",
+      "result_id": "5d434030-a3bf-4b1e-9642-93cb00894e8b"
+    },
+    {
+      "claim_id": "360bcfb8-9875-4f1b-9fc0-38f70fbe3c49",
+      "result_id": "d16cf29c-097f-46d9-90c3-609356f3f36e"
+    },
+    {
+      "claim_id": "e4d1279b-a02a-442a-99ea-b5c056161690",
+      "result_id": "cf0923dd-ceee-4673-a5d1-6b842deb0e6c"
+    },
+    {
+      "claim_id": "56d2010d-7de1-44f2-ac83-17ef8d634210",
+      "result_id": "cf0923dd-ceee-4673-a5d1-6b842deb0e6c"
+    },
+    {
+      "claim_id": "5c174bc5-6e8d-4572-97ce-f3ff50cd03ee",
+      "result_id": "cf0923dd-ceee-4673-a5d1-6b842deb0e6c"
+    },
+    {
+      "claim_id": "eb34a69a-c22f-4c80-80b9-9485ae1661a1",
+      "result_id": "cf0923dd-ceee-4673-a5d1-6b842deb0e6c"
+    },
+    {
+      "claim_id": "fc873d1a-403e-4b5a-93eb-6e7e7f480de3",
+      "result_id": "cf0923dd-ceee-4673-a5d1-6b842deb0e6c"
+    },
+    {
+      "claim_id": "ee0f2604-1cbb-43a4-9764-31ced0b54e06",
+      "result_id": "2dce8491-84db-4763-90b1-a0e481cc7184"
+    },
+    {
+      "claim_id": "37acd77c-5464-4f47-b3fc-190c30897a57",
+      "result_id": "2dce8491-84db-4763-90b1-a0e481cc7184"
+    },
+    {
+      "claim_id": "cb9513fe-8295-4b06-92ad-d9cb2d48b343",
+      "result_id": "2dce8491-84db-4763-90b1-a0e481cc7184"
+    },
+    {
+      "claim_id": "5865e9ca-85a0-4792-898c-44e4b6ded205",
+      "result_id": "2dce8491-84db-4763-90b1-a0e481cc7184"
+    },
+    {
+      "claim_id": "704a32b8-77b2-4834-bfbb-ba44e55f095e",
+      "result_id": "7cadb5fb-f009-4125-b86e-3bcf203ab463"
+    },
+    {
+      "claim_id": "becec3b7-5347-47ff-90c6-8a07e6729bf0",
+      "result_id": "7cadb5fb-f009-4125-b86e-3bcf203ab463"
+    },
+    {
+      "claim_id": "8d74c2ce-d404-4fbf-a909-53617cca3df1",
+      "result_id": "7cadb5fb-f009-4125-b86e-3bcf203ab463"
+    },
+    {
+      "claim_id": "1a73bc46-d79f-4c69-9d22-ec396211ea9e",
+      "result_id": "7cadb5fb-f009-4125-b86e-3bcf203ab463"
+    },
+    {
+      "claim_id": "bda319b5-8284-48af-bb19-e0ce9058092a",
+      "result_id": "7cadb5fb-f009-4125-b86e-3bcf203ab463"
+    },
+    {
+      "claim_id": "c18fa4cc-6088-4029-9884-c7bf8fc9c175",
+      "result_id": "7cadb5fb-f009-4125-b86e-3bcf203ab463"
+    },
+    {
+      "claim_id": "64a635d3-7cb0-4dc8-a40e-2ddc6b4810ef",
+      "result_id": "4b480bc8-23a4-42c8-a0be-a0e3c967903d"
+    },
+    {
+      "claim_id": "b1e0bcc7-a92f-45d5-91e4-0f6197dff687",
+      "result_id": "a29de7de-f06c-4f9d-ba31-9d5da812ab56"
+    },
+    {
+      "claim_id": "c65e09da-3594-4276-aa25-86d0cbfee3b6",
+      "result_id": "a29de7de-f06c-4f9d-ba31-9d5da812ab56"
+    },
+    {
+      "claim_id": "035437d7-5c6a-4088-b35d-68c5b188c9e7",
+      "result_id": "995f21d7-1c46-4103-9982-fde0caa3cf72"
+    },
+    {
+      "claim_id": "18eb01ac-f87d-4043-822b-aea2bb893415",
+      "result_id": "995f21d7-1c46-4103-9982-fde0caa3cf72"
+    },
+    {
+      "claim_id": "283d97d1-8bd5-4e63-9e5f-ecd569aa1939",
+      "result_id": "4d5380d8-4c94-418e-8af4-20c2edc069c5"
+    },
+    {
+      "claim_id": "fc2e1b01-d4f6-4a19-8359-de9440295402",
+      "result_id": "4d5380d8-4c94-418e-8af4-20c2edc069c5"
+    },
+    {
+      "claim_id": "ccdd0368-eb51-4dd1-aa83-25ef5d9f49fa",
+      "result_id": "4d5380d8-4c94-418e-8af4-20c2edc069c5"
+    },
+    {
+      "claim_id": "2fd5a8ab-ffb6-4309-b224-14fd6234f59a",
+      "result_id": "4d5380d8-4c94-418e-8af4-20c2edc069c5"
+    }
+  ],
+  "comparisons": []
+}

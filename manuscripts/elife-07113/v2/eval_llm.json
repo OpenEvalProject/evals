@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the context and motivation for developing improved AmTrac sensors. AmTrac and MepTrac are intensiometric sensors that monitor ammonium transporter activity but are limited for quantitative studies. Ratiometric sensors would be advantageous, and AmTrac shows spectral similarities to existing dual-emission sensors like deGFP1 and deGFP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C13 provide well-supported background from prior work (De Michele et al., 2013) and established knowledge in the field. The citations to prior work on AmTrac/MepTrac and dual-emission sensors (deGFP1, deGFP4, GEM-GECO1) are appropriate and the motivation for developing ratiometric sensors is clearly justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Different AmTrac variants (AmTrac-LE, -GS, -LS, -IS) differ only in two amino acid residues in the left linker but show dramatically different fluorescence spectra. All variants show two excitation maxima (A-band ~390 nm, B-band ~500 nm), with AmTrac-LE dominated by the A-state and other variants shifted toward the B-state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 describe the structural composition and spectroscopic characterization of AmTrac variants, supported by experimental data in Figure 1A-B. The observation that minimal sequence differences lead to large spectral changes is well-documented with appropriate controls (blank yeast cells) and replication (n=3-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript establishes that AmTracs differ from typical soluble fluorescent protein sensors. In GFP, the A-state and B-state represent protonated and deprotonated chromophore states coupled by protonation equilibrium. AmTracs are membrane-localized, reducing mobility, which distinguishes them from soluble sensors that typically operate via solvent accessibility changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 appropriately cite established GFP photophysics and make reasonable inferences about how membrane localization affects sensor properties. The distinction from soluble sensors is logical and sets up the rationale for time-resolved fluorescence studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Time-resolved fluorescence and anisotropy measurements reveal distinct photophysical mechanisms for AmTrac-GS versus AmTrac-LE. AmTrac-GS shows single exponential decay (\u03c4 ~2.5 ns) consistent with EGFP, while AmTrac-LE shows bi-exponential decay indicating two excited state species. Lifetime changes upon ammonium treatment are minimal (<1 ns), excluding solvent quenching. Anisotropy measurements show minimal changes, excluding homo-FRET. The authors conclude that structural rearrangements affect protonation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C42 present rigorous time-resolved fluorescence data (Figure 1C-D, Figure 1\u2014figure supplements 1-2) with appropriate replication (n=3). The exclusion of solvent quenching and homo-FRET as mechanisms is well-justified by the quantitative lifetime and anisotropy data. The conclusion that structural rearrangements affect protonation states is a reasonable inference from the data, though the mechanism remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Excited-state proton transfer (ESPT) occurs in AmTrac sensors. Green fluorescence is detected after A-state excitation in both AmTrac-LE and -GS, supporting ESPT occurrence. However, AmTrac-LE shows differential responses depending on which state is excited: 30% FI decrease with A-state excitation versus ~50% with B-state excitation. AmTrac-LE uniquely displays dual emission maxima (490 nm and 515 nm) with an iso-emissive point upon ammonium addition, a behavior not observed in AmTrac-GS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 are well-supported by spectroscopic data (Figure 2A-B, Figure 2\u2014figure supplement 1A). The detection of green emission after A-state excitation provides direct evidence for ESPT. The quantitative differences in response between A-state and B-state excitation are clearly documented. The iso-emissive point is a strong indicator of dual-emission behavior and is appropriately highlighted as unique to AmTrac-LE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Structural modeling using cpEGFP crystal structure (PDB 3EVP) as a proxy for AmTrac-LE reveals that Glu148 (corresponding to Glu235 in AmTrac-LE) shows two rotamers indicating flexibility. Theoretical modifications replacing LE with GS show only one conformational state for serine, suggesting more stability. The authors postulate that Glu235 relocates during sensing, altering ESPT efficiency and producing dual emission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C63 rely heavily on computational modeling using PyMOL and a proxy structure (cpEGFP) rather than actual AmTrac structures. While the modeling is reasonable and the observations about rotamer flexibility are valid, the conclusions remain speculative (C57, C63 explicitly use 'assume' and 'postulate'). The lack of direct structural data for AmTrac limits confidence in the mechanistic interpretations. The modeling provides plausible hypotheses but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Random mutagenesis of the left linker identified four dual-emission variants (deAmTracs) with linker compositions CP, FP, RP, YP, all containing proline at position 235. The best variants, deAmTrac-CP and -FP, show opposing changes in blue (490 nm) and green (515 nm) emission with clear iso-emissive points. The emission ratio nearly doubles upon ammonium treatment, with EC50 values (54\u00b19 \u00b5M for CP, 36\u00b16 \u00b5M for FP) similar to original AmTrac (55\u00b17 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C80 describe a systematic screening of >500 colonies with clear selection criteria and quantitative characterization. The spectroscopic data (Figure 3A-B, Figure 3\u2014figure supplement 1) demonstrate dual emission with iso-emissive points and nearly doubled ratios. The EC50 values are well-determined with error estimates (n=5) and appropriately compared to prior work. The convergence on proline at position 235 across all four variants is a strong result suggesting functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors speculate that proline or glutamic acid at position 235 hinder deprotonation or stabilize the protonated chromophore state. Computational modeling shows that CP and FP linkers yield different rotamers, suggesting flexibility. These residues may partially disrupt the ESPT pathway, trapping the excited A-state which emits blue light, though green emission from successful ESPT still dominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C85 are explicitly speculative (using 'speculate,' 'postulate,' 'may'). The computational modeling (C82, Figure 3\u2014figure supplement 2) supports the possibility of conformational flexibility, but the mechanistic interpretation of how CP/FP linkers partially disrupt ESPT remains hypothetical. The observation that green emission dominates (C85) is data-supported, but the mechanistic explanation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Mutational analysis demonstrates that deAmTrac fluorescence response correlates with transporter activity. The inactivating mutation T464D blocks growth and response in deAmTrac-CP and -FP. Suppressor mutations A141E and Q61E differentially affect transport capacity and spectral properties: A141E increases blue emission and transport capacity, while Q61E increases green emission and partially restores activity. These effects are similar to those observed in AmTrac-LE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 present systematic mutational analysis with both growth assays and spectroscopic characterization (Figure 4A-B, Figure 4\u2014figure supplement 1). The correlation between transport activity and fluorescence response is well-demonstrated across multiple mutants. The observation that mutations affect both transport and spectral properties (C96) is an important caveat appropriately noted by the authors. The data support the utility of deAmTracs while acknowledging system complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose a mechanistic model with three co-existing processes: (i) structural rearrangements upon ammonium perception, (ii) predominantly protonated chromophore state, and (iii) partial ESPT disruption. Without ammonium transport, efficient ESPT produces green emission. With increasing transport activity, ESPT is partially inhibited, producing blue emission from the protonated intermediate. The rearrangements must be extremely fast but not dramatic enough to completely prevent ESPT, explaining why green emission dominates. The modest ratio changes may reflect small spatial rearrangements or ensemble averaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C104 present a comprehensive mechanistic model that is consistent with the experimental observations but remains largely speculative. The model is explicitly described as 'postulated' (C97) and contains multiple inferences (C98, C100, C102, C103). While the model logically explains the dual-emission behavior and is grounded in established ESPT mechanisms (citing Chattoraj et al., 1996), it lacks direct experimental validation. The explanation for modest ratio changes (C104) is speculative. The model represents a reasonable working hypothesis but requires further experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript's central findings are that photophysical characterization of AmTrac variants enabled construction of dual-emission deAmTrac sensors showing opposing blue/green emission changes with nearly doubled ratios upon ammonium addition. The response ratio correlates with transport activity in mutants, and partial disruption of excited-state proton transfer is important for generating dual-emission sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 summarize the main results of the study. The photophysical characterization (C3) is thorough and well-documented. The construction and characterization of deAmTracs (C4-C6) is supported by extensive spectroscopic and mutational data. The conclusion about partial ESPT disruption (C7) is a reasonable inference from the collective data, though the mechanism remains somewhat speculative. Overall, the core findings are well-supported by the experimental evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "All measurements were performed using yeast strain 31019b lacking endogenous MEP ammonium transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 describes the experimental system with appropriate citation (Marini et al., 1997). The use of a knockout strain lacking endogenous transporters is essential for isolating the sensor response and is a well-established approach in the field.",
+    "result_type": "MINOR"
+  }
+]

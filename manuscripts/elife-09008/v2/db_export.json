@@ -1,0 +1,2164 @@
+{
+  "submission": {
+    "id": "abdd7d6a-a612-4cf4-ba52-3db878861ad7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:17:36.594119Z",
+    "updated_at": "2025-11-29T04:17:36.594119Z"
+  },
+  "content": [
+    {
+      "id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "submission_id": "abdd7d6a-a612-4cf4-ba52-3db878861ad7",
+      "content_type": "manuscript",
+      "content_text": "# Promoter nucleosome dynamics regulated by signalling through the CTD code\n\n## Authors\n\n- Philippe Materne<sup>1</sup>\n- Jayamani Anandhakumar<sup>1</sup>\n- Valerie Migeot<sup>1</sup>\n- Ignacio Soriano<sup>2</sup>\n- Carlo Yague-Sanz<sup>1</sup>\n- Elena Hidalgo<sup>3</sup>\n- Carole Mignion<sup>1</sup>\n- Luis Quintales<sup>2</sup>\n- Francisco Antequera<sup>2</sup>\n- Damien Hermand<sup>1</sup> \u2020\n\n### Affiliations\n\n1. URPHYM-GEMO, Namur Research College University of Namur Namur Belgium\n2. Instituto de Biolog\u00eda Funcional y Gen\u00f3mica, Consejo Superior de Investigaciones Cient\u00edficas Universidad de Salamanca Salamanca Spain\n3. Departament de Ciencies Experimentals i de la Salut Universitat Pompeu Fabra Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe phosphorylation of the RNA polymerase II C-terminal domain (CTD) plays a key role in delineating transcribed regions within chromatin by recruiting histone methylases and deacetylases. Using genome-wide nucleosome mapping, we show that CTD S2 phosphorylation controls nucleosome dynamics in the promoter of a subset of 324 genes, including the regulators of cell differentiation ste11 and metabolic adaptation inv1. Mechanistic studies on these genes indicate that during gene activation a local increase of phospho-S2 CTD nearby the promoter impairs the phospho-S5 CTD-dependent recruitment of Set1 and the subsequent recruitment of specific HDACs, which leads to nucleosome depletion and efficient transcription. The early increase of phospho-S2 results from the phosphorylation of the CTD S2 kinase Lsk1 by MAP kinase in response to cellular signalling. The artificial tethering of the Lsk1 kinase at the ste11 promoter is sufficient to activate transcription. Therefore, signalling through the CTD code regulates promoter nucleosomes dynamics.\n\n## Introduction\n\nThe integration of various aspects of the transcription of DNA into mature mRNA relies on combinatorial phosphorylations of the flexible scaffold structure formed by the RNA polymerase II (PolII) subunit Rpb1 C-terminal domain (CTD), which is comprised of repeats of the consensus heptad YSPTSPS (Phatnani and Greenleaf, 2006; Hsin and Manley, 2012). Genes transcribed by the PolII show a stereotypical pattern of CTD phosphorylation with phospho-S5 (S5P) peaking near the transcription start site (TSS) and phospho-S2 (S2P) accumulating towards the 3\u2032-end of the transcribed region (Buratowski, 2009). Despite discrepancies, genome-wide analyses of CTD phosphorylation support that the CTD cycle is uniform across genes (Kim et al., 2010; Mayer et al., 2010; Tietjen et al., 2010; Bataille et al., 2012), and a broad body of evidence supports the seminal role of CTD S5P and S2P in transcriptional regulation and chromatin metabolism (Buratowski, 2009). However, recent works showed that contrary to S5P, S2P is dispensable in both fission yeast and budding yeast (Cassart et al., 2012; Devos et al., 2015) and only affects the steady-state level of a subset of mRNAs (Coudreuse et al., 2010; Saberianfar et al., 2011; Sukegawa et al., 2011). Therefore, a disconnect exists between the apparent uniform occupancy of the phosphorylated PolII and the gene-specific defects resulting from the disappearance of a phosphorylation; a similar case occurring with chromatin regulators (Drogat and Hermand, 2012; Egloff et al., 2012; Weiner et al., 2012).\n\nThe distribution of histone H3K4 and K36 methylation mirrors CTD phosphorylation due to the direct recruitment of the H3 methyltransferases Set1-COMPASS (for H3K4) and Set2 (for H3K36) by the S5P and S2P of PolII, respectively (Ng et al., 2003; Keogh et al., 2005). Set1 is the only H3K4 methyltransferase in yeast, but it produces monomethylation, dimethylation, and trimethylation states. In budding yeast, H3K4me3 is strongest near the TSS, while H3K4me2 is highest just downstream, and H3K4me1 is dispersed throughout the length of the transcribed region (Liu et al., 2005; Pokholok et al., 2005). However, in vertebrates, the majority of H3K4me2 colocalizes with H3K4me3 in discrete regions nearby the promoter (Ruthenburg et al., 2007). Set2 targets H3K36me2 and me3 that are both highest near the 3\u2032-end (Krogan et al., 2003; Kizer et al., 2005).\n\nDespite a strong positive correlation between the H3K4 and K36 methylations and active PolII occupancy, their primarily function appears to be to repress histone acetylation and transcription because both serve as a binding platform for recruitment and the activation of histone deacetylase complexes (HDACs) including Set3 complex (SET3C) and Rpd3C(S) (Kim and Buratowski, 2009; Buratowski and Kim, 2010; Govind et al., 2010). This paradox may only be apparent because HDACs counteract unregulated initiation that could profit from the elevated nucleosome dynamics associated with acetylation during active transcription.\n\nKnown methyl-lysine-binding domains include the plant homeodomain (PHD) finger and the chromodomain. Available data support that these domains are responsible for the H3 methylation-dependent recruitment of HDACs. For example, the chromodomain protein Eaf3 is a subunit of Rpd3C(S) deacetylase and binds H3K36me (Carrozza et al., 2005; Keogh et al., 2005). Complementarily, the PHD finger protein Set3 is part of the SET3C complex and binds H3K4me2 to mediate deacetylation of histones in the 5\u2032 regions (Kim and Buratowski, 2009; Kim et al., 2012). Similarly, the PHD domain of the HDAC-associated ING2 protein mediates its binding to the dimethylated and trimethylated H3K4 at the promoters of proliferation genes (Pena et al., 2006; Shi et al., 2006).\n\nHow the balance between acetylation and deacetylation at promoters is regulated during transcription is poorly understood, and a role of the phosphorylated CTD in regulating that process is unknown. Here, we show that S2P affects promoter nucleosome occupancy at a subset of genomic loci. Mechanistic studies reveal that upon gene activation, the Sty1 MAP kinase directly phosphorylates the CTD S2 kinase Lsk1, which results in increased S2P nearby the promoter. We also show that the doubly phosphorylated S2P-S5P CTD has lower affinity for Set1 compared to the S5P CTD. Therefore, the peak of S2P at the promoter counteracts H3K4 methylation and the recruitment of histone deacetylases. Our results indicate that cellular signalling mediated by the PolII CTD directly controls promoter nucleosome dynamics and gene transcription of a subset of genes.\n\n## Results\n\n### CTD S2P regulates promoter nucleosome dynamics at a subset of genes\n\nAuthentic full-length rpb1 CTD S2A (S2A) mutants in fission yeast and budding yeast are viable (Coudreuse et al., 2010; Schwer and Shuman, 2011; Cassart et al., 2012; Drogat and Hermand, 2012) and are barely affected for steady-state transcription or termination (Lenstra et al., 2013), suggesting that the function of S2P in the coupling between transcription and maturation is either not essential or ensured by redundant mechanisms. Yet, the transcription of a subset of genes is strongly defective in the fission yeast S2A mutant as typically shown for ste11 that encodes the master regulator of sexual differentiation (Otsubo and Yamamoto, 2012; Anandhakumar et al., 2013), which results in sterility. In order to understand the molecular basis of this specific sensitivity of S2P, we performed a genome-wide screen for genetic interactions using synthetic genetic arrays (SGAs) with both the S2 kinase lsk1 (cdk12 that encodes the S2 kinase) deletion and the S2A mutant. Although both screens highlighted a genetic link between S2P and RNA maturation, about a third of the shared interactions found fell in chromatin remodelling and modifications (Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1). This genetic connection between S2P and chromatin biology led us to perform a genome-wide mapping of nucleosome position and occupancy by MNase-Seq. We used the DANPOS bioinformatics pipeline to analyze the data, which defines three categories of nucleosome dynamics: position shift, fuzziness change, and occupancy change. These analyses revealed that 3.8% of the nucleosomes were dynamics in the S2A mutant compared to the wt (based on a false discovery rate <0.005), carrying mostly occupancy changes and position shifts (Figure 1\u2014source data 2). Statistical analyses revealed that these dynamic nucleosomes are enriched in the promoter region encompassing \u2212350 bp to +50 bp flanking the TSS (p-value < 2.2e-16, odds ratio = 2.82), and especially the \u22121 nucleosome (Figure 1A, left panel). A meta-gene analysis of the nucleosome occupancy signal for all protein-coding genes revealed higher occupancy around the TSS in the S2A mutant, and an 11 bp shift of the average \u22121 nucleosome toward the TSS (Figure 1A, middle panel). When selecting the 10% protein-coding genes whose promoter nucleosome-depleted region (NDR) shrinks the most in the absence of S2P (Figure 1A, right panel), the shift of the average \u22121 nucleosome rose to 44 bp (Figure 1B, left panel). In contrast, the 10% protein genes with the lower decrease in promoter NDR did not show a similar effect. In addition, the genes showing promoter dynamic nucleosomes in the absence of S2P tended to have larger NDRs and 5\u2032-UTR (Figure 1\u2014source data 2), two features reminiscent of the genes that we have previously characterized as showing a peak of S2P nearby the promoter during transcriptional activation (Coudreuse et al., 2010), including ste11 (Figure 1C). In addition, we found that the 10% genes whose promoter NDR shrinks the most in the S2A mutant are highly enriched in this list of genes showing early S2P (Fisher's exact test p-value = 0.0013, odds ratio = 2.6) and in genes downregulated more than twofold in the S2A mutant (Fisher's exact test p-value = 0.0057, odds ratio = 1.4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left panel: the percentage of dynamic nucleosomes aligned relative to the transcription start site (TSS) in the fission yeast genome. The red line indicates the average percentage of dynamic nucleosome over the genome (3.7%). Middle panel: meta-gene analysis of the nucleosome occupancy signal for all protein-coding genes near the TSS. The distance between the TSS and the average \u22121 nucleosome midpoint position is indicated in blue for the wt and red for the S2A mutant. Right panel: distribution of the variation in nucleosome-depleted region (NDR) length at TSS between wt and the S2A mutant. The 10% genes showing the strongest increase or strongest decrease in NDR size are indicated. (B) Left panel: meta-gene analysis of the nucleosome occupancy signal for the 10% protein-coding genes showing the strongest decrease in NDR size at the TSS in the S2A mutant. The distance between the TSS and the average \u22121 nucleosome midpoint is indicated in blue for the wt and red for the S2A mutant. Right panel: meta-gene analysis of the nucleosome occupancy signal for the 10% protein-coding genes showing the strongest increase in NDR size at the TSS in the S2A mutant (blue: wt, red: S2A). (C) Nucleosomes occupancy nearby the promoter of ste11 (blue: wt, red: S2A). (D) Left panel: the percentage of dynamic nucleosomes aligned relative to the TTS in the fission yeast genome. The red line indicates the average percentage of dynamic nucleosome over the genome (3.7%). Middle panel: meta-gene analysis of the nucleosome occupancy signal for all protein coding genes near the TTS. Right panel: distribution of the variation in NDR length at TTS between wt and the S2A mutant (blue: wt, red: S2A).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The Bioneer deletion library was screened in quadruplicate for synthetic lethal interactions with either the lsk1 deletion or the rpb1 CTD S2A strains. 98 interactions were detected for lsk1, and 120 interactions were detected with rpb1 CTD S2A. The 66 shared interactions were classified by gene ontology in functional categories and displayed in the Osprey software (see \u2018Material and methods\u2019). (B) One plate of the Bioneer deletion library containing the pub1::kanR and spt6::kanR deletion mutants (in quadruplicate) is shown together with the mating partner plate that only contains lsk1::natR strains. After crossing and selection (see \u2018Material and methods\u2019), recombinants are selected on medium supplemented with kanamycin and nourseothricin. The co-lethal interactions are highlighted. (C) Confirmation of the genetic interactions by tetrad analyses followed by growth assay on unsupplemented rich medium, or rich medium supplemented with kanamycin or nourseothricin. Tetratype segregation was typically observed and reveals that the double mutants are not viables. Note that tetrad analysis was performed for about half (10) of the genes falling in the \u00abchromatin regulation\u00bb GO functional category.\n\nImportantly, even though a global nucleosome occupancy gain is also observed at the 3\u2032 ends of protein-coding genes (TTS), it did not significantly affect the length of the NDR at TTS (Figure 1D).\n\nTaken together, these analyses reveal an unexpected role of S2P in regulating nucleosomes occupancy and position at the promoter of 324 genes (Figure 1\u2014source data 2).\n\n### CTD S2P regulates histone occupancy and acetylation within the promoter region of ste11\n\nBuilding on our previous work on ste11, we therefore analyzed the occupancy of H3 in the presence or absence of S2P, which revealed an increased level of H3 occurring specifically at the promoter of ste11, while the transcribed region was barely affected. The effect was not observed at the adh1 locus whose transcription does not require S2P (Figure 2A). Nucleosome scanning provided a high-resolution picture of nucleosomes occupancy at the unusually large NDR of ste11 with a marked increase in nucleosome abundance close to the +1 site in the S2A mutant (Figure 2A, Figure 2\u2014figure supplement 1A,B). The loss of the NDR when S2P is abolished is a plausible explanation for the strong reduction of PolII occupancy and transcription observed previously (Coudreuse et al., 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left panel: the occupancy of H3 measured by ChIP using the indicated amplicons in the 5\u2032 proximal region of the ste11 and adh1 genes in the indicated strains. Right panel: similar to the left panel except that more amplicons were used and the data obtained in the lsk1\u0394 and S2A strains were normalized to the wt set as 1. (B) The wt and lsk1\u0394 strains were starved for nitrogen at the indicated time points (hours). The occupancy of acetylated H3 at the indicated places was determined by ChIP using anti-H3-K14-ac normalized against unmodified H3. (C) The occupancy of H3 was measured by ChIP using the indicated amplicon in a lsk1-as strain grown in the presence or absence of 10 \u03bcM 3-MB-PP1 for 1 hr. (D) A lsk1-as strain was cultured during vegetative growth (T0) and starved for nitrogen for 3 hr (T3). At T0, 10 \u03bcM 3-MB-PP1 (+I) or an identical volume of DMSO (\u2212I) was added as indicated. The occupancy of acetylated H3 at the indicated places was determined by ChIP using anti-H3-K14-ac normalized against unmodified H3. (E) The occupancy of RNA polymerase II (8WG16 antibody) measured by ChIP using the indicated amplicons in the 5\u2032 proximal region of the ste11 gene in the indicated strains. (F) Relative quantification (RQ) of the ste11 mRNA determined by quantitative Q-RT-PCR in the indicated strains. a.u.: arbitrary units. (G) The occupancy of H3 measured by ChIP using the indicated amplicons in the 5\u2032 proximal region of the ste11 gene in the indicated strains.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** \u2032(A) Nucleosome scanning analysis of the wt and rpb1 CTD S2A strains. Nucleosomal DNA enrichment at the indicated positions of the ste11 locus was determined by ChIP experiment on MNase-digested chromatin. Data are presented as the average of three independent experiments along with the SEM. Inferred nucleosome location is indicated and the position of the amplicons (\u22121 and 1) used in other experiments is indicated. (B) Schematic of amplicons used in the nucleosome scanning experiments. Green and blue arrows represent 17 overlapping amplicons (named a to q) covering a 1222 bp region encompassing the NDR and 255 bp of the ste11 transcript. The +1 site and its genomic coordinate are indicated. The red arrows represent the amplicons used in ChIP experiments (referred as \u22121, 1, 2). (C) The wt and lsk1\u0394 strains were cultured during vegetative growth (T0) and nitrogen starvation at the indicated time points (hour). The occupancy of methylated histone H3 was determined by ChIP using an antibody specific for the methylated H3-K36 residue normalized against a ChIP against the unmodified histone H3. The location of the amplicons used in Q-PCR is indicated. Each column represents the mean percentage immunoprecipitation value \u00b1 SEM (n = 3). (D) RQ of the ste11 mRNA determined by Q-RT-PCR using the \u0394\u0394ct method in the wt and the set2 strains during vegetative growth (T0) and nitrogen starvation at the indicated time points (hour). The error bars were calculated from duplicates. a.u.: arbitrary units. (E) The occupancy of acetylated histone H3 was determined by ChIP using an antibody specific for the acetylated H3-K36 residue normalized against a ChIP against the unmodified histone H3. The location of the amplicons used in Q-PCR is indicated. Each column represents the mean percentage immunoprecipitation value \u00b1 SEM (n = 2).\n\nImportantly, the requirement of S2P for ste11 transcription was independent of Set2, even though we could confirm that the molecular link between S2P and H3K36 methylation is conserved in fission yeast (Figure 2\u2014figure supplement 1C\u2013E).\n\nIn fission yeast, the transcription of the ste11 gene is strongly induced by nitrogen or glucose starvation (Coudreuse et al., 2010), which is correlated with a specific increase in histone acetylation at the promoter (Figure 2B). In the absence of the S2 kinase Lsk1, no increase was observed (Figure 2B). Remarkably, the inhibition of Lsk1 using an analogue-sensitive mutant (Lsk1-as) led to an increase of the level of promoter H3 within 1 hr and abolished acetylation during ste11 induction (Figure 2C,D). These data indicate that the phosphorylation of the CTD by Lsk1 dynamically regulates histone occupancy and acetylation over the ste11 promoter.\n\nConsidering the well-established presence of S2P on the elongating PolII, the possibility exists that the increased nucleosome occupancy at the promoter would be a secondary effect resulting from an elongation defect in the S2A strain. To test this possibility, we analyzed the effect of the leo1 mutant that encodes a component of the PAF complex that regulates elongation (Mbogning et al., 2013). The absence of leo1 resulted in an increased occupancy of PolII over the ste11 gene body (Figure 2E) and a decreased expression of ste11 (Figure 2F). However, it did not affect the level of H3 at promoter (Figure 2G). The marked decrease of the level of the PolII over the entire ste11 locus observed when S2P is absent (Coudreuse et al., 2010) and the increase occupancy of H3 at the ste11 promoter (Figure 2A) are therefore not recapitulated in a mutant showing an elongation defect.\n\nWe next investigated the effect of Histone Acetyltransferase (HAT) and HDAC on the expression of ste11 and their connection with S2P.\n\n### The peak of S2P at the ste11 promoter counteracts the S5P-Set1-SET3C pathway\n\nWe first tested if the decreased acetylation observed when S2P is abolished resulted from the loss of chromatin-associated Gcn5, the main HAT at work at the ste11 locus (Helmlinger et al., 2008). However, the level of Gcn5 was not decreased in the absence of S2P (Figure 3\u2014figure supplement 1A), which led us to consider the alternative possibility that the S2P is required to counteract the effect of histone deacetylation by one or several histone deacetylase (HDAC). Supporting this possibility, a treatment with Trichostatin A led to an increase in the level of the ste11 mRNA of sevenfold and 25 fold, respectively, in the wt and the mutants lacking S2P (Figure 3\u2014figure supplement 1B). These results highlight the fact that chemically induced histone deacetylation bypasses the requirement of S2P for ste11 transcription.\n\nIn order to test if the decreased histone acetylation observed the absence of S2P was a cause, or a consequence of the increased nucleosome occupancy over the NDR, we generated unacetylatable K14R (H3K14R) and K36R (H3K36R) histone H3 mutants (Figure 3\u2014figure supplement 1C) and showed that they behaved similarly to the S2A strain, while a H3K36Q, which mimics constitutive acetylation had the opposite effect (Figure 3\u2014figure supplement 1D,E). We conclude that the removal of a single acetylation site on H3 (either K14 or K36 was tested) is sufficient to cause an alteration of nucleosome occupancy within the promoter resulting in a defect in ste11 transcription.\n\nWe next monitored the level of ste11 mRNA in all the known fission yeast HDAC mutants (Figure 3\u2014figure supplement 1F). The deletion of hos2 led to a marked derepression of ste11, while other single mutants somehow affected ste11 but never to the extend of the loss of hos2. The Hos2 enzyme is part of the conserved SET3C deacetylase complex that is recruited in budding yeast by S5P either directly or through the methylation of H3 lysine 4 (H3K4) by Set1, which itself depends on the S5P (Ng et al., 2003; Kim and Buratowski, 2009; Govind et al., 2010). ChIP experiments revealed that Hos2 peaks at the ste11 promoter and that its recruitment was strongly dependent upon the S5-phosphorylated CTD as its occupancy was decreased in a CTD S5A mutant, which is kept viable by fusing the human capping enzyme Mce1 (Schwer and Shuman, 2011) (Figure 3C). Contrary, the absence of lsk1 resulted in an increased occupancy of the Hos2 HDAC at the ste11 promoter (Figure 3D), which likely explains the marked decrease in H3 acetylation observed when Lsk1 is absent. Consistent with the antagonistic role of S5P and S2P in the chromatin association of Hos2, abolition of S5P suppressed the defect in ste11 expression observed in the S2A mutant and restored wild-type level of the ste11 mRNA (Figure 3E). Most likely, the suppression is mediated through the loss of the Hos2 HDAC as the deletion of hos2 in the S2A mutant behaved similarly to the S5A mutant (Figure 3F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig3-v2.jpg)\n\n**Figure 3.:** (A) Nucleosome scanning analysis of the S2A and H3K36R strains. Nucleosomal DNA enrichment at the indicated positions of the ste11 locus was determined by ChIP experiment on MNase-digested chromatin. Data are presented as the average of two independent experiments along with the SEM. (B) RQ of the ste11 mRNA determined by Q-RT-PCR in the wt and hos2\u0394 strains during nitrogen starvation at the indicated time points (hour). a.u.: arbitrary units. (C) The occupancy of Hos2-TAP was measured by ChIP using the indicated amplicons at the ste11 locus in a wt strain and a CTD S5A mutant. Each column represents the averaged value \u00b1 SEM (n = 4). (D) Identical to C with a wt strain and an lsk1\u0394 mutant. (E\u2013F) RQ of the ste11 mRNA determined by quantitative Q-RT-PCR in the indicated strains. a.u.: arbitrary units.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The occupancy of Gcn5-TAP was measured by ChIP at indicated loci in a wt strain and a lsk1\u0394 mutant. Each column represents the mean percentage immunoprecipitation value \u00b1 SEM (n = 3) normalized to an untagged control strain. (B) RQ of the ste11, adh1, and sam1 mRNAs determined by Q-RT-PCR using the \u0394\u0394ct method in the indicated strains grown in the presence of Trichostatin A (50 \u03bcg/ml) or an equivalent volume of DMSO for 2 hr. The number indicated in each column is the fold increase of expression in the TSA vs DMSO condition. The data were normalized to the wt set as 1 in order to highlight the fold increase of expression in the lsk1\u0394 and the rpb1 CTD S2A mutants. All experiments were performed in duplicate. (C) Schematic of the construction of the histone mutants, based on previous work by the Allshire laboratory. Two of the loci harbouring the histones H3 and H4 genes are ultimately deleted by the natR and kanR markers, while the third locus (h3.2) harbours the mutation. (D) The occupancy of histone H3 was measured by ChIP using the indicated amplicon in the indicated strains. Each column represents the mean percentage immunoprecipitation value \u00b1 SEM (n = 2). (E) RQ of the ste11 mRNA determined by quantitative RT-PCR using the \u0394\u0394ct method in the indicated strains during vegetative growth (T0) and nitrogen starvation at the indicated time points (hour). a.u.: arbitrary units. (F) RQ of the ste11 mRNA determined by quantitative RT-PCR using the \u0394\u0394ct method in the indicated strains lacking one of the fission yeast HDAC. Note that for clr6, a ts strain (clr6-1) and the isogenic wild type were used and cultured 4 hr at 36\u00b0C. a.u.: arbitrary units.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Similar to Figure 3C except that an untagged wild-type strain was used. (B) Similar to Figure 5C except that an untagged wild-type strain was used. (C) Similar to Figure 5D except that an untagged wild-type strain was used. (D) Similar to Figure 3\u2014figure supplement 1A except that an untagged wild-type strain was used.\n\nTaken together, these genetic interactions suggest that S2P counteracts the S5P-Hos2 (SET3C) pathway to increase histone acetylation at the promoter of ste11. As indicated above, Set1 is recruited by the CTD S5P, and the resulting H3K4 methylation is a prerequisite for the binding of the SET3C HDAC. Accordingly, the deletion of set1 resulted in a derepression of ste11, (Figure 4A). It was recently shown that Set1 can repress transcription independently of the methylation of its target, H3K4 (Lorenz et al., 2014). However, we also observed a twofold increase of the level of the ste11 mRNA in a strain harbouring a H3K4R mutant that cannot be methylated, suggesting that the effect of Set1 at the ste11 locus is mediated mainly through H3K4 methylation (Figure 4A). Importantly, the deletion of set1 suppressed the sterility of the lsk1 mutant (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig4-v2.jpg)\n\n**Figure 4.:** (A) RQ of the ste11 mRNA determined by quantitative RT-PCR using the \u0394\u0394ct method in the wt, set1\u0394, and H3K4R strains. Each column represents the averaged value \u00b1 SEM (n = 2). a.u.: arbitrary units. Note that the wild-type control is different in the case of the set1\u0394 and H3K4R strains because the histone mutant is constructed in a background where only one copy of the histone H3 is retained (Figure 3\u2014figure supplement 1C). Isogenic strains are used as control and set as 1. (B) Heterothallic wild-type, lsk1\u0394, set1\u0394, and set1\u0394 lsk1\u0394 strains were plated for 48 hr on mating medium before iodine staining to reveal sterility. (C) NLS-GST-CTD fusions containing wt, S2A, or S5A repeats were expressed in fission yeast from a pREP-3 plasmid. Protein extracts from the ctr and set1-TAP strains expressing these fusions were probed by Western blot using the anti-GST, anti-S5P, anti-S2P, or anti-TAP antibodies as indicated (Top panel-Total extracts). After TAP immunoprecipitation, the resulting beads were probed by Western blot using anti-GST or anti-TAP antibodies (Bottom panel-TAP IP). Right panel: a protein extract from the ctr strain expressing the NLS-GST-CTD fusion was treated or not by a phosphatase and probed by Western blot using anti-GST antibodies.\n\nBased on these data, we speculated that the burst of S2P at the promoter could interfere with the binding of Set1 to the CTD S5P. In order to test this possibility, we expressed plasmid born NLS-GST-CTD (full-length) fusions harbouring wt, S5A, or S2A repeats in fission yeast. Preliminary experiments revealed that the wild-type version was phosphorylated on both S2 and S5, while the S2A or S5A versions lacked the corresponding S2P or S5P, respectively (Figure 4C). When expressed in a Set1-TAP strain, only the S2A version (S5 phosphorylated) could be immunoprecipitated by Set1-TAP. No interaction was observed with the S5A CTD version, confirming the dependency of Set1 to S5P to bind the CTD. Importantly, the doubly S2P-S5P phosphorylated CTD did not bind Set1-TAP, indicating that the presence of S2P interferes with the binding of Set1 to S5P (Figure 4C).\n\nTaken together, the previous data indicate that the timely burst of S2P in the promoter region of ste11 counteracts the S5P-dependent methylation and deacetylation occurring at the promoter by physically displacing Set1. This model raises the question of the recruitment of Lsk1 in the 5\u2032 region of the transcribed unit.\n\n### MAP kinase-dependent phosphorylation of the S2 kinase Lsk1 regulates its specific recruitment in the 5\u2032 region of the ste11 gene\n\nMass spectrometry analyses of TAP-purified Lsk1 complexes together with proteome-wide analyses (Wilson-Grady et al., 2008; Beltrao et al., 2009) revealed that some of the MAP kinase consensus sites (PXS/TP) found within the N-terminal region of Lsk1were phosphorylated in vivo. All the phosphorylated residues are located within a long N-terminal extension that is present in all the Cdk12 orthologs but with low sequence conservation compared to the canonical C-terminal CDK domain (Figure 5\u2014figure supplement 1A,B). An N-terminal truncated version of Lsk1 rescues the thermosensitive defect of lsk1 deletion and shows in vitro kinase activity similar to the wt, which suggests a regulatory rather than catalytic role for the N-terminal extension (Figure 5\u2014figure supplement 1C,D). It was previously shown that the Sty1 MAP kinase (Sanso et al., 2011) could phosphorylate Lsk1 in vitro (Sukegawa et al., 2011). We confirmed and expanded these data and showed that 12 sites including loosely consensus sequences needed to be eliminated in order to abrogate the phosphorylation (Figure 5A). The deletion of the N-terminal region of Lsk1 (Lsk1 \u0394N) or the mutation of the 12 sites phosphorylated by Sty1 (Lsk1 12SA) severely impaired the induction of the ste11 mRNA in a way reminiscent of the sty1 deletion (Figure 5B). Contrary, the mutation of the four canonical MAPK sites to glutamic acid, mimicking constitutive phosphorylation, increased the level of ste11 mRNA in both vegetative growth and differentiation suggesting that the Sty1-dependent signal transduction through the Lsk1 CTD kinase is a rate limiting step in ste11 transcriptional regulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig5-v2.jpg)\n\n**Figure 5.:** (A) The Sty1-TAP protein was precipitated and used on beads for in vitro kinase assays using wt and mutated (4SA or 12SA) forms of the GST-Lsk1 protein as indicated. The MAP kinase was activated by nitrogen starvation. The amount of precipitated proteins was estimated by Western blot analysis using peroxidase\u2013antiperoxidase (PAP). (B) RQ of the ste11 mRNA determined by Q-RT-PCR in the indicated strains during nitrogen starvation at the indicated time points (hour). a.u.: arbitrary units. lsk1 4SE refers to a mutant where the four residues fitting the perfect MAPK consensus were mutated to glutamic acid to mimic phosphorylation. (C) Left panel, the occupancy of Lsk1-TAP and the Lsk1\u0394N-TAP and Lsk112SA-TAP mutants was measured by ChIP using the indicated amplicons. Middle panel, same experiment in wt or sty1\u0394 strains. Right panel, the occupancy of S2P was measured by ChIP using the indicated amplicons in the indicated strains. These experiments were performed during vegetative growth (T0) and early nitrogen starvation (T1). (D) The occupancy of RNA Pol II was measured by ChIP in the indicated strains using the indicated amplicons. The experiment was performed during early nitrogen starvation (T1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Lsk1-TAP was purified from 1 g of soluble extract and the final eluted fraction was separated on SDS\u2013PAGE, silver stained, and analyzed by mass spectrometry. (B) Protein sequence alignment of the fission yeast Lsk1 and Cdc2 cyclin-dependent kinases. * indicates identity, indicates high similarity, indicates similarity. MAPK consensus motifs (PXS/TP) are underlined, phosphorylated residues identified by mass spectrometry are marked with P, and additional residues phosphorylated in vitro are circled. The vertical bar refers to the truncation in the lsk1\u0394N mutant. (C) Spot dilution assay of wt, lsk1\u0394, and lsk1\u0394 strains grown 2 days at 32\u00b0C or 36\u00b0C on rich medium. (D) Strains harbouring the indicated tagged proteins were lysed, and immunoprecipitation was performed on IgG beads followed by kinase assay on GST-CTD. A Western blot analysis was performed using the PAP antibody. 4SA refers to the lsk1 mutant where only the four residues fitting the perfect MAPK consensus were mutated. 12SA refers to the lsk1 mutant where 12 residues were mutated. \u0394N refers to the truncated mutant.\n\nChIP experiments revealed that the abolition of MAPK signalling in the Lsk1 \u0394N or the Lsk1 12SA mutants resulted in a marked decrease in the occupancy of Lsk1 and S2P along the ste11 5\u2032 regulatory regions. A very similar reduction of Lsk1 occupancy was observed in the absence of Sty1 (Figure 5C). When the phosphorylation of Lsk1 by Sty1 was abolished, a marked decrease in the occupancy of PolII was also observed (Figure 5D).\n\nTaken together, these data suggest a model where that the Sty1 MAPK pathway dynamically regulates the specific recruitment of Lsk1 in the 5\u2032 region of the ste11 gene, which is required for its transcription. In order to test this model, we designed a chimeric Lsk1 kinase where the regulatory N-terminal extension was replaced by the DNA-binding domain (High Mobility Group [HMG]) of the Ste11 transcription factor (Figure 6A). Considering that Ste11 binds its own promoter, we anticipated that the DNA-binding domain should bring Lsk1 at the ste11 promoter independently of the nutritional status of the cells. The HA-tagged chimeric HMG-Lsk1 kinase was properly expressed from the thiamine repressed pREP vector (Figure 6B). Remarkably, the induction of the HMG-Lsk1-HA protein led to a more that sixfold increase in the level of the ste11 mRNA, while the removal of thiamine had a modest effect (Figure 6C). ChIP experiments indicated that the HMG-Lsk1-HA kinase was properly recruited at the ste11 promoter, which resulted in an increase in S2P (Figure 6D,E). The effect was not observed at the adh1 promoter. The results show that the forced recruitment of Lsk1 at the ste11 promoter is sufficient to induce transcription, independently of a nitrogen or glucose starvation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig6-v2.jpg)\n\n**Figure 6.:** (A) A schematic of the chimeric HMG-Lsk1-HA protein. The wild-type Ste11 and Lsk1 proteins are depicted and the size of various regions indicated in amino acids. (B) Western blot analysis (anti-HA) of a wild-type strain containing the pREP-1 HMG-lsk1-HA plasmid or the corresponding empty vector and grown for 22 hr in the presence or absence of thiamine (that represses expression) as indicated. (C) RQ of the ste11 mRNA determined by quantitative RT-PCR using the \u0394\u0394ct method in a wild-type strain containing the indicated plasmids and grown for 22 hr in the presence or absence of thiamine as indicated. a.u.: arbitrary units. (D) The occupancy of HMG-Lsk1-HA at the ste11 and the adh1 promoters was measured by ChIP (anti-HA) using the indicated amplicon in a wild-type strain containing the pREP-1 HMG-lsk1-HA plasmid and grown for 22 hr in the presence or absence of thiamine as indicated. Each column represents the mean percentage immunoprecipitation value \u00b1 SEM (n = 2). (E) Similar to D except that the immunoprecipitation was performed with an anti-S2P antibody.\n\n### Several HDAC complexes are targeted by CTD S2P during gene activation\n\nMany important insights into transcriptional regulation have come from studies on glucose repression of the Spinv1/ScSUC2 gene that encodes an invertase required to use alternative carbon sources (Celenza and Carlson, 1986; Hoffman and Winston, 1991; Ahn et al., 2012). Remarkably, in a way very reminiscent of ste11, the derepression of inv1 in low glucose also required S2P, the MAP kinase consensus sites in Lsk1 N-terminal region and the Sty1 kinase (Figure 7A). Moreover, as shown for ste11, the transcriptional induction of inv1 was concomitant to an early increase of S2P within the promoter (Figure 7B). In order to determine the relative increase of S2P over the ste11 and inv1 loci after 1 hr of induction, we first normalized the level of S2P (based on the 3E10 antibody) on the total level of PolII (based on the 8WG16 antibody). We next determined the ratio of normalized S2P observed at T1 on T0. This revealed that PolII reached its highest level of S2P close to the promoter during the induction of ste11 and inv1. By contrast, the increase of S2P over the fbp1 locus (a gene induced in the same conditions as inv1 (Hirota et al., 2008) was strongly biased to the 3\u2032 end of the gene (Figure 7\u2014figure supplement 1), reminiscent of the \u2018canonical\u2019 occupancy profile of S2P, and fbp1 induction was totally independent of S2P (data not shown).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig7-v2.jpg)\n\n**Figure 7.:** (A) Northern blot analysis of inv1 expression in the indicated strains after an hour shift from high glucose (2%) to low glucose (0.1%). Note that the mRNA is not detected in high glucose (not shown). Ethidium bromide strained ribosomal RNAs and the level of expression of the cam1 gene are shown as loading controls. (B) The occupancy of S2P was measured by ChIP using the indicated amplicons in the 5\u2032 proximal region of the inv1 gene in the indicated strains. These experiments were performed in high-glucose medium (T0) and after 1 hr in low-glucose medium (T1). (C) The wt and S2A strains were cultured in low glucose for 1 hr to induce inv1. The occupancy of acetylated H3 was determined by ChIP using anti-H3-K14-ac normalized against unmodified H3 (D). The location of the amplicons used in Q-PCR is indicated. (E) The occupancy of RNA Polymerase II was measured by ChIP in the indicated strains using the indicated amplicons in the 5\u2032 proximal region of the inv1 gene. The strains were cultured in low glucose for 1 hr to induce inv1. (F) Northern blot analyses of inv1 expression in the indicated strains after an hour shift from high glucose (2%) to low glucose (0.1%). Ethidium bromide strained ribosomal RNAs and the level of expression of the cam1 gene are shown as loading controls.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The level of S2P (based on a ChIP using the 3E10 antibody) was determined and normalized on the total level of polymerase (based on a ChIP using the 8WG16 antibody). The ratio of the normalized S2P signal between T0 on T1 (1 hr of induction) is shown for the ste11, inv1, and fbp1 loci. Therefore, a value of 1 indicates that there is no increase in the level of S2P after 1 hr of induction.\n\nWithin the inv1 regulatory region, the absence of S2P resulted in decreased acetylation and increased occupancy of histones, which was associated with a marked decrease of PolII occupancy (Figure 7C\u2013E). Both the S5A and the set1 deletion mutants fully suppressed the defect resulting from the lack of S2P (Figure 7F). However, the deletion of Hos2 (SET3C) did not affect inv1 expression (data not shown). A previous genome-wide analysis reported that glucose repression of inv1 requires the Rpd3C(L) (Clr6)-dependent promoter histone deacetylation (Wiren et al., 2005). The SET3C and Rpd3C(L) complexes both harbour a binder for H3K4me: the Set3 PHD finger and the Png2 ING domain proteins, respectively (Shi et al., 2006; Nicolas et al., 2007; Shi et al., 2007). We therefore tested if the deletion of png2 could suppress the defect of inv1 expression in the absence of S2P, which was the case (Figure 7F).\n\nThese data indicate that, similarly to the case of ste11, the phosphorylation of S2 within the CTD plays a critical role to reverse the methylation-dependent recruitment of the Rpd3C(L) complex to the promoter of inv1 and allows transcriptional activation upon glucose starvation and MAP kinase signalling.\n\n## Discussion\n\nThe phosphorylation of the PolII CTD and the methylation of H3K4 are probably the best markers of active transcription, but it is unclear how their interplay is regulated to affect gene expression. Here, we show that cellular signalling through the CTD code directly modulates H3K4 methylation-dependent deacetylation of promoter nucleosomes at some specific loci, which is required for gene activation during cell differentiation and metabolic adaptation.\n\nGenome-wide MNase-Seq in a strain where S2P is absent revealed that a subset of 324 genes displays specific changes of promoter nucleosome dynamic, defined as position shift, fuzziness change, and occupancy change as defined by the DANPOS bioinformatics pipeline, which leads to a shorter NDR at TSS. These target genes tend to have larger than average NDR and 5\u2032-UTR, which may indicate that they are under more complex regulation. This is clearly the case of ste11 and inv1, two model genes that we have analyzed in more details. These analyses revealed that the phosphorylation of S2 is critical for gene activation by reversing the effects of histone deacetylation by HDAC at the promoter.\n\nHistone deacetylases including Rpd3C(L) and the SET3C complexes localize to promoter regions through their capacity to bind H3K4me, which links them to Set1 and S5P. In the subset of genes we have analyzed, we propose that during transcriptional induction, the local increase of S2P nearby the promoter prevents the efficient association of Set1 with the S5P CTD (Figure 8). Interestingly, previous work revealed a spread of the Set1-dependent H3K4me2 and H3K4me3 marks 3\u2032 into the bodies of genes in the absence of Ctk1, the CTD S2 kinase in budding yeast (Wood et al., 2007; Xiao et al., 2007). These data were interpreted to mean that S2P phosphorylation acts as a barrier to prevent the CTD S5P-dependent association of Set1, which explain the restricted pattern of H3K4 dimethylation and trimethylation classically observed. We propose that the temporary, MAP kinase dependent, targeting of S2P at the promoter of target genes acts similarly. In this context, it was also shown that the presence of S2P upstream of S5P within a peptide abolishes the recognition by an anti-S5P antibody (Hintermair et al., 2012), again suggesting that S2P somehow interferes with the recognition of the neighbour S5P, which we observe using an NLS-GST-CTD fusion expressed in vivo (Figure 4).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig8-v2.jpg)\n\n**Figure 8.:** When gene expression is low in non-induced conditions, the phosphorylation of the CTD on S5 recruits the Set1 methylase and the SET3C or the RPD3L HDAC complexes. The Set3 and Png2 subunits of these two complexes mediate interactions with the methylated (di or tri-) H3K4. Upon induction of gene expression, the Sty1 MAP kinase is activated and phosphorylates the CTD S2 kinase Lsk1, which is required for an increase in S2P nearby the promoter. We propose that the S2P-S5P CTD displaces the HDACs complexes, which leads to a local increase in nucleosome acetylation and dynamics. In the absence of CTD S2P, the nucleosomes occupancy over the NDR is high, which impedes the RNA pol II access and efficient transcription.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09008/elife-09008-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) The wt and ctk1\u0394 strains were starved for nitrogen at the indicated time points (hours). The occupancy of acetylated H3K14 at the IME1 TSS was determined by ChIP using anti-H3-K14-ac normalized against unmodified H3. (B) RQ of the IME mRNA determined by Q-RT-PCR using the \u0394\u0394ct method in the indicated strains during vegetative growth (T0) and nitrogen starvation at the indicated time points (hour). a.u.: arbitrary units.\n\nThe decrease in histone methylation and deacetylation following the rise of S2P leads to a burst in acetylation and transcription initiation (Figure 8). Despite the fact that the SET3C and the Rpd3C(L) complexes have very different subunits composition, they are both responding to the signalling through CTD S2P because they harbour the histone methyl-lysine-binding domain proteins Set3 and Png2, respectively. A remaining question is why different HDAC complexes are required in the case of ste11 and inv1. The Rpd3C(L) has been proposed to regulate transcriptional burst frequency, while the SET3C complex is thought to modulate the burst size (Hnisz et al., 2012; Weinberger et al., 2012), so the involvement of different HDAC complexes is likely related to gene-specific induction dynamics.\n\nIn budding yeast, the current model of H3K4 methylation-dependent histone deacetylation proposes that Set1, recruited by the CTD S5P, deposits the H3K4me2 mark, which in turn recruits the SET3C via the Set3 PHD finger, localizing the Hos2 and Hst1 HDAC subunits of SET3C in 5\u2032 transcribed regions (Kim and Buratowski, 2009; Buratowski and Kim, 2010). It was also reported that SET3C is directly recruited by the CTD S5P, whereas it is the interaction with methylated H3 that is required for the deacetylation activity (Govind et al., 2010). Whatever the exact mechanism, the promoter occupancy of the HDACs complexes requires S5P. Considering the evolutionary conservation of all the proteins implicated in this model, we envision that the process may be operating at some target genes in other eukaryotes. In support to this view, the budding yeast S2 kinase, Ctk1, is also phosphorylated within the N-terminal region (Chi et al., 2007; Breitkreutz et al., 2010). The reported defect of the ctk1 mutant for gametogenesis (Lee and Greenleaf, 1991) led us to test the requirement of Ctk1 for the increased acetylation of promoter histones during the induction of the master regulator of meiosis, IME1, in diploid budding yeast cells. The absence of ctk1 abrogated the burst of promoter histones acetylation (Figure 8\u2014figure supplement 1A) and resulted in low expression (Figure 8\u2014figure supplement 1B). Remarkably, the defect observed in the absence of CTD S2P was suppressed by the deletion of the Set3 subunit of the SET3C HDAC complex (Figure 8\u2014figure supplement 1B), in agreement with the data obtained in fission yeast. These data, together with the recent discovery of a gene-specific role of Cdk12 in the control of gene expression in human cells (Blazek et al., 2011), support the conservation of the molecular mechanism we report here, which opens further dissection in higher eukaryotes. Interestingly, in Drosophila, the UpSet protein, an ortholog of yeast Set3, also recruits Rpd3-containing HDACs to developmental genes and its PHD domain was proposed to recognize methylation on H3K4, establishing a dependency to Set1 (Rincon-Arano et al., 2012, 2013). The most common phenotype associated with the deletion of UpSet occurs during gametogenesis, similarly to yeast.\n\nOur work also shows that S2 phosphorylation within the CTD responds to cellular signalling. Upon activation, the Sty1 MAP kinase phosphorylates the CTD S2 kinase Lsk1 on multiple sites spread over the long N-terminal extension of the kinase. We show that the phosphorylation of Lsk1 is required for the 5\u2032 peak of CTD S2P during the induction of the ste11 and inv1 genes, while it does not appear to be required for the kinase activity itself. This dependency on MAP kinase phosphorylation likely explains why only a subset of promoters is regulated in this manner. Considering that MAP kinases, including Sty1, are recruited to their target genes, they are likely to confer this specificity. Remarkably, the artificial tethering of the S2 kinase Lsk1 at the ste11 promoter is sufficient to induce ste11 expression, independently of nitrogen starvation and MAP kinase phosphorylation. Further studies are required to understand how the phosphorylation of the conserved N-terminal extension of the S2 kinase modulates its recruitment. Previous work revealed that MAPK signalling exerts a multilayered control on gene expression (de Nadal et al., 2011). Our data demonstrate that MAP kinase also directly controls CTD phosphorylation, which expands the emerging theme that chromatin-associated proteins are key responders to environmental cues (Weiner et al., 2012).\n\n## Materials and methods\n\n### General methods\n\nFission yeast growth, gene targeting, and mating were performed as described (Bamps et al., 2004; Fersht et al., 2007). TAP purification was performed as described (Guiguen et al., 2007). TAP immunoprecipitation and kinase assay on GST-CTD were previously described (Drogat et al., 2012). Inhibitors (1-Nm-PP1 and 3-Mb-PP1) of the analogue-sensitive mutant kinases were purchased from Toronto Research Chemicals (Toronto, Canada). Trichostatin A was purchased from Millipore (Billerica, MA) and used at 50 \u03bcg/ml. GST-fusion proteins were expressed and purified using the GE kit according to the manufacturer instructions with the following variations: growth was performed at 18\u00b0C and induction performed at 0.5 mg/ml IPTG. The expression of ste11 was induced by nitrogen starvation or by the addition of methionine, as described (Schweingruber et al., 1998; Coudreuse et al., 2010). The expression of inv1 was induced by shifting cells grown in YE 2% glucose medium to YE 0.1% glucose/glycerol 3% for 1 hr. Western blot were performed with anti-GST (Sigma), peroxidase\u2013antiperoxidase (PAP) (Sigma), anti-S2P (3E10, Covance), anti-S5P (H15, Covance) antibodies.\n\nPhosphatase (\u03bb-phosphatase, New England Biolabs) treatment was performed as described. Iodine staining was performed as described (Bauer et al., 2012).\n\n### ChIP and quantitative RT-PCR\n\nChromatin immunoprecipitations were performed using a Bioruptor (Diagenode, Belgium) and Dynabeads (Invitrogen, Calrsbad, CA). Note that when a tagged protein is used (Lsk1-TAP, Rpb3-HA, Gcn5-myc, Hos2-TAP), the IP/T ChIP ratio is shown in the main figures and the corresponding untagged control strain treated simultaneously is shown in Figure 3\u2014figure supplement 2. Total RNA was prepared and purified on Qiagen RNeasy. Quantitative RT-PCR was performed using the ABI high capacity RNA-to-cDNA. The untreated sample was used as a reference and the act1 mRNA was used for normalization. Antibodies used in ChIP were PAP (Sigma), anti-Rpb1 S2P (Chromotek), anti-RNA polymerase II (Millipore), anti-HA (Covance), anti-H3 (abcam), anti-H3K14ac (Millipore), anti-H3K36ac (Millipore), anti-H3 K4Me2 (Millipore), anti-H3K4Me3 (Millipore), anti-H3K36me (a kind gift of Jean-Christophe Andrau), anti-Myc (Covance).\n\nFor all ChIP experiments, each column represents the mean percentage immunoprecipitation value \u00b1 SEM (n = 2\u20134). All oligonucleotides used are listed in Supplementary file 1.\n\n### Quickchange mutagenesis, plasmid construction\n\nAll the site-directed mutagenesis were performed using the Quickchange kit (Stratagene) following the instructions of the manufacturer.\n\nTo generate the pREP-1 HMG-lsk1-HA, the sequence of the insert was designed by gene synthesis (Integrated DNA Technologies) and the resulting fragment was cloned in the pREP-1 plasmid using the BamHI-SmaI restriction sites.\n\n### Cloning and expression of NLS-GST-CTD\n\nIn order to clone the full-length versions of NLS-GST-CTD, the wt, S2A, and S5A GST-CTD inserts were amplified from pGEX4-T1 vectors (Coudreuse et al., 2010) adding the coding sequence for the following NLS PKKKRKVA and the XhoI-BglII restriction sites. These inserts were cloned in pREP-3 in SalI-BamHI, and the resulting plamsids transformed in fission yeast.\n\n### Integration of mutants\n\nThe integration of the histone mutants is described in Figure 3\u2014figure supplement 1C. The lsk1 mutants were integrated at the lsk1 locus by replacement and 5-FOA selection in a lsk1::ura4 strain. All the mutants were amplified from a plasmid after Quickchange mutagenesis using the Expand TAQ polymerase (Roche).\n\n### SGAs\n\nDue to the sterility of the lsk1::natR deletion strain and the rpb1 S2A-natR strain, both strains were first transformed with a plasmid expressing the ste11 gene, which rescues the sterility. To test for genetic interaction, the query strains were mated to the array of single deletion strains (Bioneer deletion library) on SPA plates. All steps were performed manually using V&P Scientific pin replicators allowing either 96 or 384 wells format. Immediately following the transfer of cells onto the mating plate. Cells were then allowed to sporulate at 26\u00b0C for 3 days, and mating plates were subsequently transferred to 42\u00b0C for 3 days in order to eliminate unmated/unsporulated cells, thereby enriching for spores. Following heat treatment, spores were transferred on YES plates and allowed to germinate for 2 days at 32\u00b0C. To select for recombinant double-mutant haploids, cells were arrayed on YES plates containing G418 and nourseothricin and allowed to grow for a further 2 days.\n\n### Nucleosome scanning\n\nA culture of 500 ml of fission yeast cells was grown to OD 0.5 at 32\u00b0C and crosslinked with 7 ml of formaldehyde 37% for 20 min at 25\u00b0C, 60 rpm. The crosslink was stopped by the addition of 27 ml of Glycine and cells were pelleted. The pellet was resuspended in preincubation solution (Citric acid 20 mM, Na2HPO4 20 mM, Ethylenediaminetetraacetic acid [EDTA] pH 8 40 mM) supplemented with 100 \u00b5l \u03b2 mercaptoethanol/50 ml and incubated 10 min at 30\u00b0C. The cells were centrifugated and resuspended in 10 ml of Sorbitol 1 M/Tris pH 7.4 50 mM buffer containing 200 \u00b5l Zymolase (0.01 g/200 \u00b5l water) and incubated 20 min at 30\u00b0C (40 min when Edinburgh Minimal Media [EMM] medium was used). After centrifugation, the pellet was resuspended in 7.5 ml NP buffer (Sorbitol 1 M, NaCl 50 mM, Tris pH 7.4, 10 mM, MgCl2 5 mM, CaCl2 1 mM, NP-40 0.75%) supplemented with 7.6 ml NP buffer + 0.5 \u00b5l \u03b2 mercaptoethanol + 400 \u00b5l spermidine 10 mM) and split into 2 Falcon tubes (Total and MNase treated). Add 50 \u00b5l MNase (32 units) to one tube and incubate 20 min at 37\u00b0C without agitation. Add 500 \u00b5l Stop buffer, 200 \u00b5l RNase A (0.4 mg/ml), and 225 \u00b5l proteinase K (20 mg/ml) and incubate at 65\u00b0C overnight. Potassium acetate was added (1.25 ml of a 3 M solution) and the mix was incubated 5 min on ice. After phenol extraction, 200 \u00b5l NaCl 5 M, 1.7 \u00b5l Glycogene (20 mg/ml), and 3.5 ml of isopropanol were added. After precipitation and ethanol wash, the pellet was resuspended in 200 \u00b5l of TE buffer. The samples were run on agarose gel (1.5%) and the bands corresponding to the mononucleosomes were cut and purified with Qiagen. Q-PCR with the primer pairs of the set of overlapping amplicons was performed. Nucleosomal DNA enrichment calculated as the ratio between the amounts of PCR product obtained from DNA samples generated from the mononucleosomal gel purification to that of the input (total) DNA.\n\n### TAP immunoprecipitation and kinase assays\n\nThese assays were performed as described (Guiguen et al., 2007).\n\n### Northern blot and Q-RT-PCR\n\nTotal RNA was prepared as described (Guiguen et al., 2007) and purified on Qiagen RNeasy. Total RNA (15\u201330 \u03bcg) was separated on gel and transferred on nitrocellulose. Hybridization of a multiprimed labelled probe covering the inv1 open reading frame was performed overnight at 42\u00b0C. Q-RT-PCR was performed using the ABI high capacity RNA-to-cDNA following the instructions of the manufacturer. The untreated sample was used as a reference and the act1 mRNA was used for normalization. In all Q-RT-PCR experiments, each column represents the averaged value \u00b1 SEM (n = 2).\n\nNote that while studying the induction of inv1, Northern blots were preferred to Q-RT-PCR because the act1 mRNA showed variations during the course of the experiment.\n\n### MNase-seq\n\nThe preparation of mononucleosomal DNA and the sequencing of mononucleosomal DNA were previously described in details (Soriano et al., 2013). The nucleosome sequencing data have been deposited in the GEO database under the accession number GSE59768.\n\n### MNase-seq data processing and detection of dynamic nucleosomes and NDR analyses\n\nMNase-seq data were processed and dynamic changes were detected using DANPOS (Dynamic Analysis of Nucleosome Positioning and Occupancy by Sequencing\u2014https://code.google.com/p/danpos/). Clonal reads (determined by their very high coverage compared to the mean coverage across the genome based on a Poisson p-value cut-off) were removed from the reads previously mapped on the Schizosaccharomyces pombe genome with BWA (http://bio-bwa.sourceforge.net). Variation in size resulting from MNase treatment was compensated by shifting each read toward the 3\u2032 direction for half of the estimated fragment size. Nucleosome occupancy was then calculated as the quantile-normalized count of adjusted reads covering each base pair in the genome. After this processing, DANPOS calculates the differential signal at single nucleotide position based on a Poisson test. Dynamic nucleosomes are then identified by peak calling on these signals. TSS and TTS-associated NDR length were quantified as the length of the longest DNA segment whose proximal border is located closer than 65 bp from the TSS (or TES) with nucleosome occupancy levels lower than an arbitrary threshold (mean(occupancygenome) \u2212 standard_deviation(occupancygenome)) at any point.\n\nThe processed data can be visualized on the web browser http://nucleosome.usal.es/fgb2/gbrowse/S2A/.\n",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "fb14650a-45cf-4fbb-bf35-1ff82f7ca335",
+      "submission_id": "abdd7d6a-a612-4cf4-ba52-3db878861ad7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Danny Reinberg, Howard Hughes Medical Institute, New York University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09008.021](https://doi.org/10.7554/eLife.09008.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The previous decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \u201cPromoter nucleosome dynamics regulated by signaling through the CTD code\u201d for consideration at eLife. Your full submission has been evaluated by James Manley (Senior editor), a Reviewing editor, and three peer reviewers, and the decision was reached after discussions between the reviewers. Based on our discussions and the individual reviews below, we regret to inform you that your work cannot be considered further for publication in eLife.\n\nAlthough we recognize the potential novelty of the work describing a function of Ser-2 phosphorylation at the promoter, we believe that the phenomenon is likely not general, but most importantly in the absence of mechanism it only remains as an observation.\n\nReviewer #1:\n\nThe authors identified chromatin remodellers and chromatin modifiers in a synthetic screen analyzing mutants of Pol II CTD serine 2 (S2A) and the CTD S2 kinase lsk in S. pombe. Further analysis revealed that nucleosome dynamics and occupancy at promoters was altered in CTD S2A mutants in a subset of genes, including the genes ste11 and inv1. Molecular and genetic experiments identified altered histone acetylation as a possible reason for increased histone occupancy at promoters.\n\nHistone deacetylation at promoters is under the control of H3K4 methylation and the H3K4 methylation dependent recruitment of HDACs SET3C and RPD3 to promoters. The authors show that CTD S2 phosphorylation can block the recruitment of HDACs to promoters and thereby contribute to gene activation. Further, phosphorylation of kinase Lsk and its recruitment to promoters is growth regulated and under the control of MAP kinases. Mutation of MAP kinase specific phosphorylation sites in the N-terminal domain of Lsk prevents its recruitment to promoters, phosphorylation of CTD S2, and thereby the dissociation of HDACs from promoters. In line with these observations the authors can activate ste11 expression after artificial tethering of LSK 1 at the ste11 promoter. While the association of HDACs with promoters is CTD S5-P dependent the authors suggest that the combined phosphorylation of S5 and S2 can abolish this association, leading to hyperacetylation of chromatin and gene activation.\n\nThe assumption the CTD S2-P dependent mechanism of gene activation described here for S. pombe could be a more general mechanism is supported by supplementary data in paper. Inactivation of Ctk1, the S. cerevisiae CTD S2 kinase, abrogates promoter histone acetylation and results in low gene expression.\n\nAll together this is a very detailed and carefully performed analysis and all conclusions are supported by data.\n\nHow CTD S2-P marks mechanistically can abrogate the association of HDACs with promoters remains open but this question is beyond this paper.\n\nReviewer #2:\n\nThe manuscript by Hermand and coworkers investigates a functional link between CTD phosphorylation at serine-2 and histone dynamics in the yeast Schizosaccharomyces pombe. The authors provide a large number of experimental data ranging from genome-wide synthetic genetics arrays (SGAs) for growth phenotypes to locus-specific chromatin modifications. However, the presented results fail to provide compelling evidence for their thesis that 'promoter nucleosome dynamics is regulated by the CTD code'. Most importantly, the provided data do not discriminate between cause and effect or even bystander effects.\n\nMany results and conclusions of this study have multiple interpretation issues.\n\nFirst, the authors present the combined results from two genome-wide SGAs using a CTD-S2 kinase deletion and an rpb1 CTD-S2A mutant allele. As expected the identified genes display a significant overlap, but it is troublesome that only single subunits of chromatin regulatory complexes were identified. Also, there is little evidence of a systematic enrichment of ATP-dependent chromatin remodellers, which regulate nucleosome dynamics. Surprisingly, the authors did not investigate the identified Rsc1 and Swr1 genetic interactions in any detail. Next, the nucleosome density is determined in the rpb1 CTD-S2A, but not in the lsk1 deletion. Compared to wild type yeast the authors observe small differences in global MNase sensitivity and they make conclusions on nucleosome dynamics. This is highly surprising. Nucleosome dynamics is defined as nucleosome turnover or half-lives at specific genomic loci. Therefore, the conclusion that 'these analyses reveal an unexpected role of S2P in regulation nucleosome dynamic' is flawed.\n\nNext, the authors focus on the histone modifications at the ste11 and inv1 genes for locus-specific effects. The rationale for this is sketchy and not linked to the results from the SGA screens as the H3K4 and H3K36 (de)methylation or H3K14 (de)acetylation machineries were not identified in these screens. Also, the reason to analyze involvement of the PAF complex (via the LEO1 gene) in CTD-S2 phosphorylation dependent regulation of ste11 is not clear. The conclusion that 'defects in initiation or elongation cannot explain the increased level of histone H3 observed at the ste11 promoter in the absence of S2P' is not substantiated, as the authors did not analyze RNA polymerase II occupancy at ste11 in the CTD-S2A strain.\n\nReviewer #3:\n\nThis paper follows up earlier results showing that a CTD serine 2 to alanine mutant has gene-specific, rather than general, effects in S. pombe. A synthetic lethal screen found many interactions between the S2A mutant or Lsk1/Cdk12 (S2 kinase) and chromatin-related factors. Nucleosome mapping revealed a subset of genes with altered nucleosome positions near promoters in these mutants. The rest of the paper focuses on one of these genes (ste11), with a few other experiments done on the inv1 gene. The story then gets a little confusing. The model proposed is that these promoters are repressed by H3K4 methylation recruiting either SET3C or Rpd3L HDACs. To activate the genes, the MAPK Sty1 phosphorylates Lsk1, which in turn phosphorylates S2 near the ste11 promoter to block H3K4 methylation and subsequent HDAC recruitment. It's a complicated model, and the many experiments needed to look at each of these steps makes the paper difficult to follow.\n\nMajor issues:\n\n1) A big gap in the paper is understanding why only a small number of promoters are affected, since CTD phosphorylation and H3K4 methylation are seen at all active genes. At several points in the paper, the text suggests this is a general mechanism, but the data don't support that. What specifies which promoters are repressed, and is Sty1 recruited to these promoters specifically? The change in the NDR suggests remodelers may be involved\u2014maybe these promoters are more dependent on SWI/SNF? Are there overlapping ncRNAs causing methylation over the promoter regions?\n\n2) A critical element of the model is that double S2P+S5P no longer binds Set1 complex (and/or HDACs). This should be tested physically, maybe by peptide binding.\n\n[Editors\u2019 note: further revisions were requested before acceptance.]\n\nThank you for choosing to send your work entitled \u201cPromoter nucleosome dynamics regulated by signaling through the CTD code\u201d for consideration at eLife. Your submission has been considered by James Manley and the Reviewing Editor who oversaw the initial review.\n\nWe remain unconvinced of the general significance of the observations and are still concerned regarding the limited mechanistic insight. However, if you can: 1) show that the phenomena observed (ser-2 phosphorylation) occurs at a significant number of promoters in yeast; and 2) provide more solid insights into the mechanism, then we would be willing to consider a new manuscript on this topic.\n",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f3bf0faa-5c27-440e-b112-483766b2e5f0",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C1",
+      "claim": "The phosphorylation of the RNA polymerase II C-terminal domain (CTD) plays a key role in delineating transcribed regions within chromatin by recruiting histone methylases and deacetylases.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylation of the RNA polymerase II C-terminal domain (CTD) plays a key role in delineating transcribed regions within chromatin by recruiting histone methylases and deacetylases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about CTD phosphorylation function, supported by the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f24e0392-872d-4ed3-92f5-9800c318bdfc",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C2",
+      "claim": "CTD S2 phosphorylation controls nucleosome dynamics in the promoter of a subset of 324 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genome-wide nucleosome mapping, we show that CTD S2 phosphorylation controls nucleosome dynamics in the promoter of a subset of 324 genes, including the regulators of cell differentiation ste11 and metabolic adaptation inv1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genome-wide nucleosome mapping data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "37760a85-08fd-401f-8800-b495f5eb3130",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C3",
+      "claim": "ste11 and inv1 are among the genes whose promoter nucleosome dynamics are controlled by CTD S2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genome-wide nucleosome mapping, we show that CTD S2 phosphorylation controls nucleosome dynamics in the promoter of a subset of 324 genes, including the regulators of cell differentiation ste11 and metabolic adaptation inv1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by experimental data on these specific genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "38cb337f-3c7e-4824-83d6-affc0343d6bb",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C4",
+      "claim": "During gene activation, a local increase of phospho-S2 CTD nearby the promoter impairs the phospho-S5 CTD-dependent recruitment of Set1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistic studies on these genes indicate that during gene activation a local increase of phospho-S2 CTD nearby the promoter impairs the phospho-S5 CTD-dependent recruitment of Set1 and the subsequent recruitment of specific HDACs, which leads to nucleosome depletion and efficient transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mechanistic studies including ChIP experiments and protein interaction assays shown in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "e3b117c5-83fc-4f69-ac47-0bbf0d271668",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C5",
+      "claim": "Impairment of Set1 recruitment leads to reduced recruitment of specific HDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistic studies on these genes indicate that during gene activation a local increase of phospho-S2 CTD nearby the promoter impairs the phospho-S5 CTD-dependent recruitment of Set1 and the subsequent recruitment of specific HDACs, which leads to nucleosome depletion and efficient transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data showing reduced HDAC occupancy when S2P is present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "c370f0b2-7f15-4e75-bf5f-2d3df7b84f55",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C6",
+      "claim": "Reduced HDAC recruitment leads to nucleosome depletion and efficient transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistic studies on these genes indicate that during gene activation a local increase of phospho-S2 CTD nearby the promoter impairs the phospho-S5 CTD-dependent recruitment of Set1 and the subsequent recruitment of specific HDACs, which leads to nucleosome depletion and efficient transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleosome occupancy data and transcription measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "080cba4d-62f2-44c7-a8bd-29de87cbfd99",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C7",
+      "claim": "The early increase of phospho-S2 results from the phosphorylation of the CTD S2 kinase Lsk1 by MAP kinase in response to cellular signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The early increase of phospho-S2 results from the phosphorylation of the CTD S2 kinase Lsk1 by MAP kinase in response to cellular signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro kinase assays and ChIP experiments showing Sty1-dependent phosphorylation of Lsk1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "57ff958e-c72c-4ff7-ada5-aeff7fac69e0",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C8",
+      "claim": "Artificial tethering of the Lsk1 kinase at the ste11 promoter is sufficient to activate transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The artificial tethering of the Lsk1 kinase at the ste11 promoter is sufficient to activate transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with the HMG-Lsk1 fusion protein shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "98d2e8d7-e70a-4d06-94eb-ea13adacdd89",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C9",
+      "claim": "Signalling through the CTD code regulates promoter nucleosomes dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, signalling through the CTD code regulates promoter nucleosomes dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the collective experimental evidence presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "21cb98f0-7a57-44e1-a43b-53ae577b73b1",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C10",
+      "claim": "Genes transcribed by PolII show a stereotypical pattern of CTD phosphorylation with phospho-S5 peaking near the transcription start site and phospho-S2 accumulating towards the 3\u2032-end of the transcribed region.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes transcribed by the PolII show a stereotypical pattern of CTD phosphorylation with phospho-S5 (S5P) peaking near the transcription start site (TSS) and phospho-S2 (S2P) accumulating towards the 3\u2032-end of the transcribed region (Buratowski, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature (Buratowski, 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "e9c3748c-e686-47e8-a384-69bda8480d0b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C11",
+      "claim": "Genome-wide analyses of CTD phosphorylation support that the CTD cycle is uniform across genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite discrepancies, genome-wide analyses of CTD phosphorylation support that the CTD cycle is uniform across genes (Kim et al., 2010; Mayer et al., 2010; Tietjen et al., 2010; Bataille et al., 2012), and a broad body of evidence supports the seminal role of CTD S5P and S2P in transcriptional regulation and chromatin metabolism (Buratowski, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies (Kim et al., 2010; Mayer et al., 2010; Tietjen et al., 2010; Bataille et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "96f655d5-2707-4e0d-a23b-4fff19c2fa50",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C12",
+      "claim": "S2P is dispensable in both fission yeast and budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent works showed that contrary to S5P, S2P is dispensable in both fission yeast and budding yeast (Cassart et al., 2012; Devos et al., 2015) and only affects the steady-state level of a subset of mRNAs (Coudreuse et al., 2010; Saberianfar et al., 2011; Sukegawa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Cassart et al., 2012; Devos et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "78776d60-9fdd-428d-bb37-1cc635b8ea1d",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C13",
+      "claim": "S2P only affects the steady-state level of a subset of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent works showed that contrary to S5P, S2P is dispensable in both fission yeast and budding yeast (Cassart et al., 2012; Devos et al., 2015) and only affects the steady-state level of a subset of mRNAs (Coudreuse et al., 2010; Saberianfar et al., 2011; Sukegawa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Coudreuse et al., 2010; Saberianfar et al., 2011; Sukegawa et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "81b06fa9-8002-4d84-8548-9c8fc53dabce",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C14",
+      "claim": "The distribution of histone H3K4 and K36 methylation mirrors CTD phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of histone H3K4 and K36 methylation mirrors CTD phosphorylation due to the direct recruitment of the H3 methyltransferases Set1-COMPASS (for H3K4) and Set2 (for H3K36) by the S5P and S2P of PolII, respectively (Ng et al., 2003; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Ng et al., 2003; Keogh et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "56eb9586-ccc0-4f68-a5ff-6cfe225c55c5",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C15",
+      "claim": "Set1-COMPASS is recruited by S5P of PolII for H3K4 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of histone H3K4 and K36 methylation mirrors CTD phosphorylation due to the direct recruitment of the H3 methyltransferases Set1-COMPASS (for H3K4) and Set2 (for H3K36) by the S5P and S2P of PolII, respectively (Ng et al., 2003; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Ng et al., 2003; Keogh et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "9174f375-ced8-448c-a712-bdc88fc1710e",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C16",
+      "claim": "Set2 is recruited by S2P of PolII for H3K36 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of histone H3K4 and K36 methylation mirrors CTD phosphorylation due to the direct recruitment of the H3 methyltransferases Set1-COMPASS (for H3K4) and Set2 (for H3K36) by the S5P and S2P of PolII, respectively (Ng et al., 2003; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Ng et al., 2003; Keogh et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "974f377c-8d1c-4433-be3f-09643be1c486",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C17",
+      "claim": "Set1 is the only H3K4 methyltransferase in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Set1 is the only H3K4 methyltransferase in yeast, but it produces monomethylation, dimethylation, and trimethylation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast chromatin biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "d40efa63-aa77-43de-bdf9-cfbca9b93ee9",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C18",
+      "claim": "In budding yeast, H3K4me3 is strongest near the TSS, while H3K4me2 is highest just downstream, and H3K4me1 is dispersed throughout the length of the transcribed region.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, H3K4me3 is strongest near the TSS, while H3K4me2 is highest just downstream, and H3K4me1 is dispersed throughout the length of the transcribed region (Liu et al., 2005; Pokholok et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Liu et al., 2005; Pokholok et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "8c717314-10f7-4e38-af48-446bdc602bd1",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C19",
+      "claim": "In vertebrates, the majority of H3K4me2 colocalizes with H3K4me3 in discrete regions nearby the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in vertebrates, the majority of H3K4me2 colocalizes with H3K4me3 in discrete regions nearby the promoter (Ruthenburg et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited study (Ruthenburg et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "96c07597-9127-4000-a604-6ef219cd4ccd",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C20",
+      "claim": "Set2 targets H3K36me2 and me3 that are both highest near the 3\u2032-end.",
+      "claim_type": "EXPLICIT",
+      "source": "Set2 targets H3K36me2 and me3 that are both highest near the 3\u2032-end (Krogan et al., 2003; Kizer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Krogan et al., 2003; Kizer et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "09c26e3b-35d4-4514-89f9-acd61998186b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C21",
+      "claim": "H3K4 and K36 methylations serve as a binding platform for recruitment and activation of histone deacetylase complexes including Set3 complex and Rpd3C(S).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a strong positive correlation between the H3K4 and K36 methylations and active PolII occupancy, their primarily function appears to be to repress histone acetylation and transcription because both serve as a binding platform for recruitment and the activation of histone deacetylase complexes (HDACs) including Set3 complex (SET3C) and Rpd3C(S) (Kim and Buratowski, 2009; Buratowski and Kim, 2010; Govind et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Kim and Buratowski, 2009; Buratowski and Kim, 2010; Govind et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "4d7dfe45-4e31-4b01-8520-e622a0e045fc",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C22",
+      "claim": "The chromodomain protein Eaf3 is a subunit of Rpd3C(S) deacetylase and binds H3K36me.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the chromodomain protein Eaf3 is a subunit of Rpd3C(S) deacetylase and binds H3K36me (Carrozza et al., 2005; Keogh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Carrozza et al., 2005; Keogh et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "439aec1d-1cb0-43b1-89a7-6ae8f265af2f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C23",
+      "claim": "The PHD finger protein Set3 is part of the SET3C complex and binds H3K4me2 to mediate deacetylation of histones in the 5\u2032 regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementarily, the PHD finger protein Set3 is part of the SET3C complex and binds H3K4me2 to mediate deacetylation of histones in the 5\u2032 regions (Kim and Buratowski, 2009; Kim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Kim and Buratowski, 2009; Kim et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "87f519ff-dc29-4b11-b782-92f356d2cf23",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C24",
+      "claim": "The PHD domain of the HDAC-associated ING2 protein mediates its binding to the dimethylated and trimethylated H3K4 at the promoters of proliferation genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the PHD domain of the HDAC-associated ING2 protein mediates its binding to the dimethylated and trimethylated H3K4 at the promoters of proliferation genes (Pena et al., 2006; Shi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies (Pena et al., 2006; Shi et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "00489434-3e47-4d54-b29c-bd5ba7774da7",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C25",
+      "claim": "3.8% of the nucleosomes were dynamic in the S2A mutant compared to the wt.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that 3.8% of the nucleosomes were dynamics in the S2A mutant compared to the wt (based on a false discovery rate <0.005), carrying mostly occupancy changes and position shifts (Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome-wide MNase-Seq data analyzed with DANPOS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "8fe1f186-e53a-4333-9faa-321c1d26ac9d",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C26",
+      "claim": "Dynamic nucleosomes in the S2A mutant are enriched in the promoter region encompassing \u2212350 bp to +50 bp flanking the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analyses revealed that these dynamic nucleosomes are enriched in the promoter region encompassing \u2212350 bp to +50 bp flanking the TSS (p-value < 2.2e-16, odds ratio = 2.82), and especially the \u22121 nucleosome (Figure 1A, left panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of MNase-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "ba9070e8-2fa1-460b-a3cd-1fc7f86c6868",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C27",
+      "claim": "A meta-gene analysis revealed an 11 bp shift of the average \u22121 nucleosome toward the TSS in the S2A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "A meta-gene analysis of the nucleosome occupancy signal for all protein-coding genes revealed higher occupancy around the TSS in the S2A mutant, and an 11 bp shift of the average \u22121 nucleosome toward the TSS (Figure 1A, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A middle panel based on meta-gene analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "26d84b7a-9481-48ee-b425-a47864acedac",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C28",
+      "claim": "For the 10% protein-coding genes whose promoter NDR shrinks the most in the absence of S2P, the shift of the average \u22121 nucleosome rose to 44 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "When selecting the 10% protein-coding genes whose promoter nucleosome-depleted region (NDR) shrinks the most in the absence of S2P (Figure 1A, right panel), the shift of the average \u22121 nucleosome rose to 44 bp (Figure 1B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B left panel for a subset of genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "06cce43e-8700-4236-bafa-a7d050c2bc92",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C29",
+      "claim": "Genes showing promoter dynamic nucleosomes in the absence of S2P tend to have larger NDRs and 5\u2032-UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the genes showing promoter dynamic nucleosomes in the absence of S2P tended to have larger NDRs and 5\u2032-UTR (Figure 1\u2014source data 2), two features reminiscent of the genes that we have previously characterized as showing a peak of S2P nearby the promoter during transcriptional activation (Coudreuse et al., 2010), including ste11 (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the MNase-Seq data and comparison with previous work (Coudreuse et al., 2010).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "bd623b64-8f66-4b61-b9ed-d129d2aa7e7c",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C30",
+      "claim": "The 10% genes whose promoter NDR shrinks the most in the S2A mutant are highly enriched in genes showing early S2P.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the 10% genes whose promoter NDR shrinks the most in the S2A mutant are highly enriched in this list of genes showing early S2P (Fisher's exact test p-value = 0.0013, odds ratio = 2.6) and in genes downregulated more than twofold in the S2A mutant (Fisher's exact test p-value = 0.0057, odds ratio = 1.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (Fisher's exact test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "15616bff-f402-44f8-8e3e-8c7be531dace",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C31",
+      "claim": "The 10% genes whose promoter NDR shrinks the most in the S2A mutant are enriched in genes downregulated more than twofold in the S2A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the 10% genes whose promoter NDR shrinks the most in the S2A mutant are highly enriched in this list of genes showing early S2P (Fisher's exact test p-value = 0.0013, odds ratio = 2.6) and in genes downregulated more than twofold in the S2A mutant (Fisher's exact test p-value = 0.0057, odds ratio = 1.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (Fisher's exact test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "a0edebe0-183d-4e14-ba94-da3779736a0b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C32",
+      "claim": "In the S2A mutant, there is an increased level of H3 occurring specifically at the promoter of ste11.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on our previous work on ste11, we therefore analyzed the occupancy of H3 in the presence or absence of S2P, which revealed an increased level of H3 occurring specifically at the promoter of ste11, while the transcribed region was barely affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "72c354d8-b398-4382-819e-6290bb9e1fa4",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C33",
+      "claim": "The increased H3 occupancy at the ste11 promoter in the S2A mutant was not observed at the adh1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was not observed at the adh1 locus whose transcription does not require S2P (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "c17737ae-95be-4ef0-b065-4f582c252b9f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C34",
+      "claim": "Nucleosome scanning revealed a marked increase in nucleosome abundance close to the +1 site in the S2A mutant at the ste11 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosome scanning provided a high-resolution picture of nucleosomes occupancy at the unusually large NDR of ste11 with a marked increase in nucleosome abundance close to the +1 site in the S2A mutant (Figure 2A, Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A and Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "d2149b8f-f74f-40a5-80b2-297a209c9243",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C35",
+      "claim": "The loss of the NDR when S2P is abolished is a plausible explanation for the strong reduction of PolII occupancy and transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of the NDR when S2P is abolished is a plausible explanation for the strong reduction of PolII occupancy and transcription observed previously (Coudreuse et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current data and previous observations (Coudreuse et al., 2010).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "82ea8e20-ba01-499a-a82f-713f846ab942",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C36",
+      "claim": "The transcription of the ste11 gene is strongly induced by nitrogen or glucose starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, the transcription of the ste11 gene is strongly induced by nitrogen or glucose starvation (Coudreuse et al., 2010), which is correlated with a specific increase in histone acetylation at the promoter (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited work (Coudreuse et al., 2010) and data in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "0e69803f-969e-47f7-a4b2-f5fa6e2ee2da",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C37",
+      "claim": "Induction of ste11 is correlated with a specific increase in histone acetylation at the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, the transcription of the ste11 gene is strongly induced by nitrogen or glucose starvation (Coudreuse et al., 2010), which is correlated with a specific increase in histone acetylation at the promoter (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "5d8c00d0-eebb-49ab-8ebd-bda522f87d51",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C38",
+      "claim": "In the absence of the S2 kinase Lsk1, no increase in histone acetylation at the ste11 promoter was observed during induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the S2 kinase Lsk1, no increase was observed (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "b3392c1c-cd63-499b-8abc-9a1e71401e67",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C39",
+      "claim": "Inhibition of Lsk1 using an analogue-sensitive mutant led to an increase of the level of promoter H3 within 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the inhibition of Lsk1 using an analogue-sensitive mutant (Lsk1-as) led to an increase of the level of promoter H3 within 1 hr and abolished acetylation during ste11 induction (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f6db55f0-7a01-4113-bdd0-d5746c22aa19",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C40",
+      "claim": "Inhibition of Lsk1 abolished acetylation during ste11 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the inhibition of Lsk1 using an analogue-sensitive mutant (Lsk1-as) led to an increase of the level of promoter H3 within 1 hr and abolished acetylation during ste11 induction (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "d0f2b0f8-525f-4862-bc61-35d3ca90be7b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C41",
+      "claim": "The phosphorylation of the CTD by Lsk1 dynamically regulates histone occupancy and acetylation over the ste11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the phosphorylation of the CTD by Lsk1 dynamically regulates histone occupancy and acetylation over the ste11 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Lsk1-as experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "aa75b97f-31f3-439e-ae35-cacdfd1d260d",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C42",
+      "claim": "The absence of leo1 resulted in an increased occupancy of PolII over the ste11 gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of leo1 resulted in an increased occupancy of PolII over the ste11 gene body (Figure 2E) and a decreased expression of ste11 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "a94e9856-cc76-4d28-8d7d-df013dc168a0",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C43",
+      "claim": "The absence of leo1 resulted in decreased expression of ste11.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of leo1 resulted in an increased occupancy of PolII over the ste11 gene body (Figure 2E) and a decreased expression of ste11 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "8591c610-6939-4fcb-a307-10e507f651ea",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C44",
+      "claim": "The absence of leo1 did not affect the level of H3 at the ste11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it did not affect the level of H3 at promoter (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "31d1d7d0-2af3-4e25-9d13-b0746bce8bea",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C45",
+      "claim": "The level of Gcn5 was not decreased in the absence of S2P at the ste11 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested if the decreased acetylation observed when S2P is abolished resulted from the loss of chromatin-associated Gcn5, the main HAT at work at the ste11 locus (Helmlinger et al., 2008). However, the level of Gcn5 was not decreased in the absence of S2P (Figure 3\u2014figure supplement 1A), which led us to consider the alternative possibility that the S2P is required to counteract the effect of histone deacetylation by one or several histone deacetylase (HDAC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "2950e1e8-32c5-4771-8f36-271fed22e65b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C46",
+      "claim": "Treatment with Trichostatin A led to an increase in the level of the ste11 mRNA of sevenfold in the wt and 25 fold in the mutants lacking S2P.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this possibility, a treatment with Trichostatin A led to an increase in the level of the ste11 mRNA of sevenfold and 25 fold, respectively, in the wt and the mutants lacking S2P (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "a742ed9f-b786-4d01-88ab-f31eb4a45a89",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C47",
+      "claim": "Chemically induced histone deacetylation bypasses the requirement of S2P for ste11 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "These results highlight the fact that chemically induced histone deacetylation bypasses the requirement of S2P for ste11 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Trichostatin A treatment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "bd65605c-13e6-4788-ae10-33fa2a807000",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C48",
+      "claim": "H3K14R and H3K36R histone H3 mutants behaved similarly to the S2A strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test if the decreased histone acetylation observed the absence of S2P was a cause, or a consequence of the increased nucleosome occupancy over the NDR, we generated unacetylatable K14R (H3K14R) and K36R (H3K36R) histone H3 mutants (Figure 3\u2014figure supplement 1C) and showed that they behaved similarly to the S2A strain, while a H3K36Q, which mimics constitutive acetylation had the opposite effect (Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "5d205d55-3b07-496b-9efd-d79aaa73e578",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C49",
+      "claim": "H3K36Q, which mimics constitutive acetylation, had the opposite effect to H3K14R and H3K36R.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test if the decreased histone acetylation observed the absence of S2P was a cause, or a consequence of the increased nucleosome occupancy over the NDR, we generated unacetylatable K14R (H3K14R) and K36R (H3K36R) histone H3 mutants (Figure 3\u2014figure supplement 1C) and showed that they behaved similarly to the S2A strain, while a H3K36Q, which mimics constitutive acetylation had the opposite effect (Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "0ed9dc96-673d-4270-9302-d332bf884f94",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C50",
+      "claim": "The removal of a single acetylation site on H3 (either K14 or K36) is sufficient to cause an alteration of nucleosome occupancy within the promoter resulting in a defect in ste11 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the removal of a single acetylation site on H3 (either K14 or K36 was tested) is sufficient to cause an alteration of nucleosome occupancy within the promoter resulting in a defect in ste11 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the histone mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "581f8fbb-f23c-4e56-8b99-7f8f5d764630",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C51",
+      "claim": "The deletion of hos2 led to a marked derepression of ste11.",
+      "claim_type": "EXPLICIT",
+      "source": "We next monitored the level of ste11 mRNA in all the known fission yeast HDAC mutants (Figure 3\u2014figure supplement 1F). The deletion of hos2 led to a marked derepression of ste11, while other single mutants somehow affected ste11 but never to the extend of the loss of hos2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "45003201-1615-4dd9-9026-8b8c9814be23",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C52",
+      "claim": "Hos2 peaks at the ste11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP experiments revealed that Hos2 peaks at the ste11 promoter and that its recruitment was strongly dependent upon the S5-phosphorylated CTD as its occupancy was decreased in a CTD S5A mutant, which is kept viable by fusing the human capping enzyme Mce1 (Schwer and Shuman, 2011) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "9ad483f7-8b4c-4b02-aba2-e18f4aa2367b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C53",
+      "claim": "Hos2 recruitment at the ste11 promoter was strongly dependent upon the S5-phosphorylated CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP experiments revealed that Hos2 peaks at the ste11 promoter and that its recruitment was strongly dependent upon the S5-phosphorylated CTD as its occupancy was decreased in a CTD S5A mutant, which is kept viable by fusing the human capping enzyme Mce1 (Schwer and Shuman, 2011) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C and supported by the cited work (Schwer and Shuman, 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "5932ff93-1433-4df0-a3dc-4ff353487528",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C54",
+      "claim": "The absence of lsk1 resulted in an increased occupancy of the Hos2 HDAC at the ste11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary, the absence of lsk1 resulted in an increased occupancy of the Hos2 HDAC at the ste11 promoter (Figure 3D), which likely explains the marked decrease in H3 acetylation observed when Lsk1 is absent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "ae2097c1-ba8c-4e55-a0aa-b05efa0bea88",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C55",
+      "claim": "The increased occupancy of Hos2 in the absence of lsk1 likely explains the marked decrease in H3 acetylation observed when Lsk1 is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary, the absence of lsk1 resulted in an increased occupancy of the Hos2 HDAC at the ste11 promoter (Figure 3D), which likely explains the marked decrease in H3 acetylation observed when Lsk1 is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ChIP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "b0e8498e-697e-48bb-ae42-1e951d311faf",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C56",
+      "claim": "Abolition of S5P suppressed the defect in ste11 expression observed in the S2A mutant and restored wild-type level of the ste11 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the antagonistic role of S5P and S2P in the chromatin association of Hos2, abolition of S5P suppressed the defect in ste11 expression observed in the S2A mutant and restored wild-type level of the ste11 mRNA (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "4dbe12cf-6e76-469f-9c5c-13c4d3a240af",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C57",
+      "claim": "The deletion of hos2 in the S2A mutant behaved similarly to the S5A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Most likely, the suppression is mediated through the loss of the Hos2 HDAC as the deletion of hos2 in the S2A mutant behaved similarly to the S5A mutant (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "fb576fc6-e4eb-42a9-b5ca-f616de810256",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C58",
+      "claim": "The deletion of set1 resulted in a derepression of ste11.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the deletion of set1 resulted in a derepression of ste11, (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "a6d82938-1773-4538-bb14-338f2b515aba",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C59",
+      "claim": "A twofold increase of the level of the ste11 mRNA was observed in a strain harbouring a H3K4R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed a twofold increase of the level of the ste11 mRNA in a strain harbouring a H3K4R mutant that cannot be methylated, suggesting that the effect of Set1 at the ste11 locus is mediated mainly through H3K4 methylation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "cabe01cf-b85d-4e24-b0f0-7cb4c5e18ebc",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C60",
+      "claim": "The effect of Set1 at the ste11 locus is mediated mainly through H3K4 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed a twofold increase of the level of the ste11 mRNA in a strain harbouring a H3K4R mutant that cannot be methylated, suggesting that the effect of Set1 at the ste11 locus is mediated mainly through H3K4 methylation (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the H3K4R mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "6fc6587f-d60d-4cd0-b3ea-d107dfc9456f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C61",
+      "claim": "The deletion of set1 suppressed the sterility of the lsk1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the deletion of set1 suppressed the sterility of the lsk1 mutant (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f1ca2fcc-142f-4299-8289-ab7168b5611f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C62",
+      "claim": "Only the S2A version of the CTD (S5 phosphorylated) could be immunoprecipitated by Set1-TAP.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in a Set1-TAP strain, only the S2A version (S5 phosphorylated) could be immunoprecipitated by Set1-TAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "e7b31422-a4e3-4258-80b3-79c21e986a02",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C63",
+      "claim": "No interaction between Set1-TAP and the S5A CTD version was observed, confirming the dependency of Set1 to S5P to bind the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "No interaction was observed with the S5A CTD version, confirming the dependency of Set1 to S5P to bind the CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "ba7445ae-2b74-491e-b064-53166cf4aceb",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C64",
+      "claim": "The doubly S2P-S5P phosphorylated CTD did not bind Set1-TAP, indicating that the presence of S2P interferes with the binding of Set1 to S5P.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the doubly S2P-S5P phosphorylated CTD did not bind Set1-TAP, indicating that the presence of S2P interferes with the binding of Set1 to S5P (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "455ac684-89b5-463f-9301-3093f13ccb35",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C65",
+      "claim": "Some of the MAP kinase consensus sites found within the N-terminal region of Lsk1 were phosphorylated in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analyses of TAP-purified Lsk1 complexes together with proteome-wide analyses (Wilson-Grady et al., 2008; Beltrao et al., 2009) revealed that some of the MAP kinase consensus sites (PXS/TP) found within the N-terminal region of Lsk1were phosphorylated in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data and cited proteome-wide analyses (Wilson-Grady et al., 2008; Beltrao et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "99ae4944-c9ab-4ada-a556-f852b08c2a3b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C66",
+      "claim": "An N-terminal truncated version of Lsk1 rescues the thermosensitive defect of lsk1 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "An N-terminal truncated version of Lsk1 rescues the thermosensitive defect of lsk1 deletion and shows in vitro kinase activity similar to the wt, which suggests a regulatory rather than catalytic role for the N-terminal extension (Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "1b737601-eaf5-4a9f-ae8b-0b0f06c7dcc3",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C67",
+      "claim": "An N-terminal truncated version of Lsk1 shows in vitro kinase activity similar to the wt.",
+      "claim_type": "EXPLICIT",
+      "source": "An N-terminal truncated version of Lsk1 rescues the thermosensitive defect of lsk1 deletion and shows in vitro kinase activity similar to the wt, which suggests a regulatory rather than catalytic role for the N-terminal extension (Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "2ecb128a-869f-4df2-bbac-13aa01559603",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C68",
+      "claim": "The N-terminal extension of Lsk1 has a regulatory rather than catalytic role.",
+      "claim_type": "EXPLICIT",
+      "source": "An N-terminal truncated version of Lsk1 rescues the thermosensitive defect of lsk1 deletion and shows in vitro kinase activity similar to the wt, which suggests a regulatory rather than catalytic role for the N-terminal extension (Figure 5\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data on the truncated version.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "56a8d31d-e857-4cfa-a67e-1238c39b74ec",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C69",
+      "claim": "The Sty1 MAP kinase could phosphorylate Lsk1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that the Sty1 MAP kinase (Sanso et al., 2011) could phosphorylate Lsk1 in vitro (Sukegawa et al., 2011). We confirmed and expanded these data and showed that 12 sites including loosely consensus sequences needed to be eliminated in order to abrogate the phosphorylation (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited work (Sukegawa et al., 2011) and confirmed in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "2ad42f23-89cf-435d-809b-0d0885edf133",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C70",
+      "claim": "12 sites including loosely consensus sequences needed to be eliminated in order to abrogate the phosphorylation of Lsk1 by Sty1.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed and expanded these data and showed that 12 sites including loosely consensus sequences needed to be eliminated in order to abrogate the phosphorylation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "353aa4a3-b056-466e-b9ea-f491de36d5e8",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C71",
+      "claim": "The deletion of the N-terminal region of Lsk1 (Lsk1 \u0394N) severely impaired the induction of the ste11 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of the N-terminal region of Lsk1 (Lsk1 \u0394N) or the mutation of the 12 sites phosphorylated by Sty1 (Lsk1 12SA) severely impaired the induction of the ste11 mRNA in a way reminiscent of the sty1 deletion (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "ed875926-5a09-4f75-8e61-dc1453804343",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C72",
+      "claim": "The mutation of the 12 sites phosphorylated by Sty1 (Lsk1 12SA) severely impaired the induction of the ste11 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion of the N-terminal region of Lsk1 (Lsk1 \u0394N) or the mutation of the 12 sites phosphorylated by Sty1 (Lsk1 12SA) severely impaired the induction of the ste11 mRNA in a way reminiscent of the sty1 deletion (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "107c8cdf-73e3-42b0-9f5f-6115d76659c7",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C73",
+      "claim": "The mutation of the four canonical MAPK sites to glutamic acid, mimicking constitutive phosphorylation, increased the level of ste11 mRNA in both vegetative growth and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary, the mutation of the four canonical MAPK sites to glutamic acid, mimicking constitutive phosphorylation, increased the level of ste11 mRNA in both vegetative growth and differentiation suggesting that the Sty1-dependent signal transduction through the Lsk1 CTD kinase is a rate limiting step in ste11 transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "082ec5b8-40b0-45e1-89b1-3211e5fe1dba",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C74",
+      "claim": "The Sty1-dependent signal transduction through the Lsk1 CTD kinase is a rate limiting step in ste11 transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary, the mutation of the four canonical MAPK sites to glutamic acid, mimicking constitutive phosphorylation, increased the level of ste11 mRNA in both vegetative growth and differentiation suggesting that the Sty1-dependent signal transduction through the Lsk1 CTD kinase is a rate limiting step in ste11 transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phosphomimetic mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "b4c04fd5-6816-4b23-b8b4-65b7f14140fe",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C75",
+      "claim": "The abolition of MAPK signalling in the Lsk1 \u0394N or the Lsk1 12SA mutants resulted in a marked decrease in the occupancy of Lsk1 and S2P along the ste11 5\u2032 regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP experiments revealed that the abolition of MAPK signalling in the Lsk1 \u0394N or the Lsk1 12SA mutants resulted in a marked decrease in the occupancy of Lsk1 and S2P along the ste11 5\u2032 regulatory regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "2119dc32-955a-4399-8d76-5725a873c544",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C76",
+      "claim": "A very similar reduction of Lsk1 occupancy was observed in the absence of Sty1.",
+      "claim_type": "EXPLICIT",
+      "source": "A very similar reduction of Lsk1 occupancy was observed in the absence of Sty1 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "be78ffd6-dd59-46da-9dfb-b2e839f9ac74",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C77",
+      "claim": "When the phosphorylation of Lsk1 by Sty1 was abolished, a marked decrease in the occupancy of PolII was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When the phosphorylation of Lsk1 by Sty1 was abolished, a marked decrease in the occupancy of PolII was also observed (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "576f05cb-addc-4ad8-a531-4ffbc702335f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C78",
+      "claim": "The induction of the HMG-Lsk1-HA protein led to a more than sixfold increase in the level of the ste11 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the induction of the HMG-Lsk1-HA protein led to a more that sixfold increase in the level of the ste11 mRNA, while the removal of thiamine had a modest effect (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f189ca42-181c-4c8f-b6f8-e4db4116f0d3",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C79",
+      "claim": "The HMG-Lsk1-HA kinase was properly recruited at the ste11 promoter, which resulted in an increase in S2P.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP experiments indicated that the HMG-Lsk1-HA kinase was properly recruited at the ste11 promoter, which resulted in an increase in S2P (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "daeb66aa-63ce-43d3-bba9-5a8387a157d1",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C80",
+      "claim": "The forced recruitment of Lsk1 at the ste11 promoter is sufficient to induce transcription, independently of a nitrogen or glucose starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the forced recruitment of Lsk1 at the ste11 promoter is sufficient to induce transcription, independently of a nitrogen or glucose starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the HMG-Lsk1 experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "d790187e-c249-4122-a71d-0c935c8cfc82",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C81",
+      "claim": "The derepression of inv1 in low glucose required S2P, the MAP kinase consensus sites in Lsk1 N-terminal region and the Sty1 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in a way very reminiscent of ste11, the derepression of inv1 in low glucose also required S2P, the MAP kinase consensus sites in Lsk1 N-terminal region and the Sty1 kinase (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "a6aeca61-e178-4f40-a145-01fa8a1c6154",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C82",
+      "claim": "The transcriptional induction of inv1 was concomitant to an early increase of S2P within the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as shown for ste11, the transcriptional induction of inv1 was concomitant to an early increase of S2P within the promoter (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "448fb897-ae01-4634-9a80-ba5184aff79d",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C83",
+      "claim": "PolII reached its highest level of S2P close to the promoter during the induction of ste11 and inv1.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that PolII reached its highest level of S2P close to the promoter during the induction of ste11 and inv1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of S2P ChIP data normalized to total PolII.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "891d9428-b616-4d33-87aa-e926e82d28a7",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C84",
+      "claim": "The increase of S2P over the fbp1 locus was strongly biased to the 3\u2032 end of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the increase of S2P over the fbp1 locus (a gene induced in the same conditions as inv1 (Hirota et al., 2008) was strongly biased to the 3\u2032 end of the gene (Figure 7\u2014figure supplement 1), reminiscent of the 'canonical' occupancy profile of S2P, and fbp1 induction was totally independent of S2P (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "5cbe05ac-703c-4624-8bda-0c1d6929d4ae",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C85",
+      "claim": "fbp1 induction was totally independent of S2P.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the increase of S2P over the fbp1 locus (a gene induced in the same conditions as inv1 (Hirota et al., 2008) was strongly biased to the 3\u2032 end of the gene (Figure 7\u2014figure supplement 1), reminiscent of the 'canonical' occupancy profile of S2P, and fbp1 induction was totally independent of S2P (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on data not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "ab880b35-786b-4b4e-a534-00a819342ada",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C86",
+      "claim": "Within the inv1 regulatory region, the absence of S2P resulted in decreased acetylation and increased occupancy of histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the inv1 regulatory region, the absence of S2P resulted in decreased acetylation and increased occupancy of histones, which was associated with a marked decrease of PolII occupancy (Figure 7C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "061b3bb8-02dc-4047-bd05-597a4c71d98f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C87",
+      "claim": "The absence of S2P at inv1 was associated with a marked decrease of PolII occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the inv1 regulatory region, the absence of S2P resulted in decreased acetylation and increased occupancy of histones, which was associated with a marked decrease of PolII occupancy (Figure 7C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "066d9df9-09c3-43d0-97a1-fd6f62340e23",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C88",
+      "claim": "Both the S5A and the set1 deletion mutants fully suppressed the defect resulting from the lack of S2P at inv1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the S5A and the set1 deletion mutants fully suppressed the defect resulting from the lack of S2P (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "4b8bed2a-31de-49df-972c-c4d54fb1acae",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C89",
+      "claim": "The deletion of Hos2 (SET3C) did not affect inv1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the deletion of Hos2 (SET3C) did not affect inv1 expression (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on data not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "e79feced-dd08-44cc-b310-939000b2bd50",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C90",
+      "claim": "Glucose repression of inv1 requires the Rpd3C(L) (Clr6)-dependent promoter histone deacetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous genome-wide analysis reported that glucose repression of inv1 requires the Rpd3C(L) (Clr6)-dependent promoter histone deacetylation (Wiren et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a previous study (Wiren et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f0b70e6b-2928-4525-a0b4-85a9b2f847b4",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C91",
+      "claim": "The deletion of png2 suppressed the defect of inv1 expression in the absence of S2P.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore tested if the deletion of png2 could suppress the defect of inv1 expression in the absence of S2P, which was the case (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "b2e5d66b-5b52-4520-ade4-378ce860d7bf",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C92",
+      "claim": "A subset of 324 genes displays specific changes of promoter nucleosome dynamic in a strain where S2P is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide MNase-Seq in a strain where S2P is absent revealed that a subset of 324 genes displays specific changes of promoter nucleosome dynamic, defined as position shift, fuzziness change, and occupancy change as defined by the DANPOS bioinformatics pipeline, which leads to a shorter NDR at TSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome-wide MNase-Seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "1296edf2-d8c1-419a-a4b3-70905742e016",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C93",
+      "claim": "Target genes affected by S2P tend to have larger than average NDR and 5\u2032-UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "These target genes tend to have larger than average NDR and 5\u2032-UTR, which may indicate that they are under more complex regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the MNase-Seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "08d0f2a2-35c3-4f84-b771-4520c3c9111e",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C94",
+      "claim": "During transcriptional induction, the local increase of S2P nearby the promoter prevents the efficient association of Set1 with the S5P CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the subset of genes we have analyzed, we propose that during transcriptional induction, the local increase of S2P nearby the promoter prevents the efficient association of Set1 with the S5P CTD (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the proposed model based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "d830d0ed-a837-4fec-a12d-4eeef15d8a70",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C95",
+      "claim": "In the absence of Ctk1, there is a spread of the Set1-dependent H3K4me2 and H3K4me3 marks 3\u2032 into the bodies of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous work revealed a spread of the Set1-dependent H3K4me2 and H3K4me3 marks 3\u2032 into the bodies of genes in the absence of Ctk1, the CTD S2 kinase in budding yeast (Wood et al., 2007; Xiao et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Wood et al., 2007; Xiao et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "7c1cca1e-bcd5-4eb4-83fb-b47209ddbf42",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C96",
+      "claim": "S2P phosphorylation acts as a barrier to prevent the CTD S5P-dependent association of Set1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data were interpreted to mean that S2P phosphorylation acts as a barrier to prevent the CTD S5P-dependent association of Set1, which explain the restricted pattern of H3K4 dimethylation and trimethylation classically observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of cited work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "caa43f7f-6779-4ed9-95f4-1f2a760d7e8b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C97",
+      "claim": "The presence of S2P upstream of S5P within a peptide abolishes the recognition by an anti-S5P antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it was also shown that the presence of S2P upstream of S5P within a peptide abolishes the recognition by an anti-S5P antibody (Hintermair et al., 2012), again suggesting that S2P somehow interferes with the recognition of the neighbour S5P, which we observe using an NLS-GST-CTD fusion expressed in vivo (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Hintermair et al., 2012) and confirmed in Figure 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "74b8dc21-e410-437c-9c62-8966ea5b2056",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C98",
+      "claim": "The decrease in histone methylation and deacetylation following the rise of S2P leads to a burst in acetylation and transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in histone methylation and deacetylation following the rise of S2P leads to a burst in acetylation and transcription initiation (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed model shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "34dcd2aa-86da-4b25-9576-86a0b48cf405",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C99",
+      "claim": "The Rpd3C(L) has been proposed to regulate transcriptional burst frequency, while the SET3C complex is thought to modulate the burst size.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rpd3C(L) has been proposed to regulate transcriptional burst frequency, while the SET3C complex is thought to modulate the burst size (Hnisz et al., 2012; Weinberger et al., 2012), so the involvement of different HDAC complexes is likely related to gene-specific induction dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Hnisz et al., 2012; Weinberger et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "4be41578-e588-4f1b-b179-1a4fdc8366c0",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C100",
+      "claim": "The budding yeast S2 kinase, Ctk1, is phosphorylated within the N-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "In support to this view, the budding yeast S2 kinase, Ctk1, is also phosphorylated within the N-terminal region (Chi et al., 2007; Breitkreutz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Chi et al., 2007; Breitkreutz et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "28726e9b-4831-47e9-8ddd-a1ebc2a709ba",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C101",
+      "claim": "The absence of ctk1 abrogated the burst of promoter histones acetylation during the induction of IME1.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of ctk1 abrogated the burst of promoter histones acetylation (Figure 8\u2014figure supplement 1A) and resulted in low expression (Figure 8\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f189a918-1e34-4d9b-9e20-acb97d862e3a",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C102",
+      "claim": "The absence of ctk1 resulted in low expression of IME1.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of ctk1 abrogated the burst of promoter histones acetylation (Figure 8\u2014figure supplement 1A) and resulted in low expression (Figure 8\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "13ec7e06-5bca-4feb-b62c-26d81e239dcd",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C103",
+      "claim": "The defect observed in the absence of CTD S2P in budding yeast was suppressed by the deletion of the Set3 subunit of the SET3C HDAC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the defect observed in the absence of CTD S2P was suppressed by the deletion of the Set3 subunit of the SET3C HDAC complex (Figure 8\u2014figure supplement 1B), in agreement with the data obtained in fission yeast.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "c0a608b7-2202-4cce-a4d5-534251b2ea0b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C104",
+      "claim": "In Drosophila, the UpSet protein recruits Rpd3-containing HDACs to developmental genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in Drosophila, the UpSet protein, an ortholog of yeast Set3, also recruits Rpd3-containing HDACs to developmental genes and its PHD domain was proposed to recognize methylation on H3K4, establishing a dependency to Set1 (Rincon-Arano et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Rincon-Arano et al., 2012, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "2b85d417-c5ca-437f-a69a-e48dfdee4e86",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C105",
+      "claim": "The PHD domain of UpSet was proposed to recognize methylation on H3K4, establishing a dependency to Set1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in Drosophila, the UpSet protein, an ortholog of yeast Set3, also recruits Rpd3-containing HDACs to developmental genes and its PHD domain was proposed to recognize methylation on H3K4, establishing a dependency to Set1 (Rincon-Arano et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (Rincon-Arano et al., 2012, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "2f5d99b9-c836-4a80-82c7-ba7b2e6a7f70",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C106",
+      "claim": "The most common phenotype associated with the deletion of UpSet occurs during gametogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common phenotype associated with the deletion of UpSet occurs during gametogenesis, similarly to yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to yeast phenotypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "22a706ee-d22f-4f6e-b6c0-c9d086f9bd79",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C107",
+      "claim": "Upon activation, the Sty1 MAP kinase phosphorylates the CTD S2 kinase Lsk1 on multiple sites spread over the long N-terminal extension of the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also shows that S2 phosphorylation within the CTD responds to cellular signalling. Upon activation, the Sty1 MAP kinase phosphorylates the CTD S2 kinase Lsk1 on multiple sites spread over the long N-terminal extension of the kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the in vitro kinase assays and mutational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "580a0534-6b84-4036-bee1-9c4015cc4f7b",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C108",
+      "claim": "The phosphorylation of Lsk1 is required for the 5\u2032 peak of CTD S2P during the induction of the ste11 and inv1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the phosphorylation of Lsk1 is required for the 5\u2032 peak of CTD S2P during the induction of the ste11 and inv1 genes, while it does not appear to be required for the kinase activity itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data and kinase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "66027942-966d-498a-a61d-84daa259857d",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C109",
+      "claim": "The phosphorylation of Lsk1 does not appear to be required for the kinase activity itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the phosphorylation of Lsk1 is required for the 5\u2032 peak of CTD S2P during the induction of the ste11 and inv1 genes, while it does not appear to be required for the kinase activity itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by kinase assays on mutant forms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "35e31be4-d29b-4061-9512-b804335a8b70",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C110",
+      "claim": "MAP kinases, including Sty1, are recruited to their target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that MAP kinases, including Sty1, are recruited to their target genes, they are likely to confer this specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "3f081721-703d-4e4d-802a-c6964b951e59",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C111",
+      "claim": "MAPK signalling exerts a multilayered control on gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work revealed that MAPK signalling exerts a multilayered control on gene expression (de Nadal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous work (de Nadal et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "e09fff97-6f5d-4485-80f3-31c4763aaae6",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "claim_id": "C112",
+      "claim": "MAP kinase directly controls CTD phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that MAP kinase also directly controls CTD phosphorylation, which expands the emerging theme that chromatin-associated proteins are key responders to environmental cues (Weiner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the data showing Sty1 phosphorylation of Lsk1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86def2d2-5727-49f9-bbc6-87804a4c936c",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genome-wide MNase-Seq analysis reveals that CTD S2 phosphorylation controls nucleosome dynamics at the promoters of 324 genes. These genes show enrichment of dynamic nucleosomes in the promoter region (\u2212350 bp to +50 bp flanking TSS), with an average 11 bp shift of the \u22121 nucleosome toward the TSS in the S2A mutant, and tend to have larger NDRs and 5\u2032-UTRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25-C31, C92-C93 collectively provide strong support through genome-wide MNase-Seq data analyzed with DANPOS (FDR <0.005), statistical enrichment analysis (p-value < 2.2e-16, odds ratio = 2.82), and Fisher's exact tests showing enrichment in genes with early S2P and downregulated genes. The data are internally consistent and appropriately analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At the ste11 locus, loss of S2P leads to increased H3 occupancy specifically at the promoter, with nucleosome scanning revealing increased nucleosome abundance near the +1 site. Inhibition of the S2 kinase Lsk1 rapidly increases promoter H3 levels and abolishes histone acetylation during ste11 induction, demonstrating that CTD phosphorylation by Lsk1 dynamically regulates histone occupancy and acetylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 are supported by multiple complementary approaches including ChIP-qPCR, nucleosome scanning, and analogue-sensitive kinase inhibition experiments. The use of the lsk1-as system provides temporal resolution showing effects within 1 hour. The specificity is demonstrated by the lack of effect at the control adh1 locus (C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "65586a13-0571-4a09-8150-9971947f1133",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deletion of leo1, which causes an elongation defect, increases PolII occupancy over the ste11 gene body and decreases ste11 expression, but does not affect H3 levels at the promoter, distinguishing elongation defects from the promoter-specific effects of S2P loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 provide an important control experiment demonstrating that the promoter nucleosome effects observed in S2A mutants are not secondary consequences of elongation defects. The data clearly distinguish between elongation and promoter-specific regulatory mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The decreased histone acetylation in the absence of S2P is not due to loss of the HAT Gcn5, but rather to increased HDAC activity. Trichostatin A treatment bypasses the S2P requirement, and unacetylatable histone H3 mutants (H3K14R, H3K36R) phenocopy the S2A strain, while the acetylation-mimicking H3K36Q has opposite effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by ChIP data, pharmacological inhibition, and histone mutant analysis. The logic is sound: ruling out loss of HAT recruitment, demonstrating HDAC involvement through TSA treatment (7-fold vs 25-fold increase in wt vs S2A mutants), and establishing causality through histone mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "bd49a2c5-4576-4df3-8441-f1e550421734",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The HDAC Hos2 (SET3C complex) peaks at the ste11 promoter and its recruitment depends on S5-phosphorylated CTD. In the absence of lsk1, Hos2 occupancy increases, explaining decreased H3 acetylation. Genetic suppression experiments show that abolishing S5P or deleting hos2 suppresses the S2A defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by systematic ChIP experiments, HDAC deletion screens, and genetic suppression analysis. The antagonistic relationship between S5P and S2P in Hos2 recruitment is demonstrated through multiple complementary approaches including the S5A suppression of S2A phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Set1 deletion derepresses ste11, and this effect is mediated mainly through H3K4 methylation as shown by the H3K4R mutant. Set1 deletion suppresses lsk1 sterility. Biochemical experiments demonstrate that Set1 binds S5P-CTD but not S2P-S5P doubly phosphorylated CTD, indicating that S2P interferes with Set1 binding to S5P.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 are supported by genetic analysis, phenotypic assays (sterility suppression), and biochemical co-immunoprecipitation experiments with NLS-GST-CTD fusions. The key mechanistic finding (C64) that doubly phosphorylated CTD does not bind Set1 is directly demonstrated and provides molecular explanation for the genetic observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MAP kinase consensus sites in the N-terminal region of Lsk1 are phosphorylated in vivo. The Sty1 MAP kinase phosphorylates Lsk1 in vitro on 12 sites. Deletion of the N-terminal region or mutation of these sites severely impairs ste11 induction and reduces Lsk1 and S2P occupancy at the ste11 promoter, while phosphomimetic mutations increase ste11 expression, indicating that Sty1-dependent phosphorylation of Lsk1 is rate-limiting for ste11 transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C77 are supported by mass spectrometry, in vitro kinase assays, ChIP experiments, and mutational analysis including deletion, alanine substitution, and phosphomimetic mutations. The convergence of multiple experimental approaches (biochemical, genetic, and genomic) provides strong support for the signaling mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "818b1d95-f978-4852-a88a-52479bceb045",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Artificial tethering of Lsk1 to the ste11 promoter via an HMG-Lsk1 fusion is sufficient to activate ste11 transcription independently of nitrogen or glucose starvation, demonstrating that promoter-localized Lsk1 activity is sufficient for transcriptional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 and C8 describe a key gain-of-function experiment showing >6-fold induction of ste11 mRNA upon HMG-Lsk1 expression, with corresponding recruitment and S2P increase at the promoter. This elegant experiment directly tests sufficiency and is well-controlled (no effect at adh1 promoter).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "28785003-93f5-41aa-91f5-6c7d289af61f",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The inv1 gene shows similar regulation to ste11: its derepression requires S2P, Lsk1 phosphorylation sites, and Sty1, with early S2P increase at the promoter during induction. Loss of S2P decreases acetylation and increases histone occupancy at inv1. However, inv1 regulation involves the Rpd3C(L) complex (via Png2) rather than SET3C (Hos2), and is suppressed by S5A, set1\u0394, or png2\u0394.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C91 extend the mechanism to a second gene (inv1) using Northern blots, ChIP, and genetic suppression. The differential involvement of Rpd3C(L) vs SET3C is well-documented (C89, C90, C91). The data are internally consistent and demonstrate generalizability while revealing gene-specific differences in HDAC complex usage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "07c2ad63-aef0-4884-a23b-0a8ea03f1796",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The proposed model is that during transcriptional induction, local increase of S2P near the promoter prevents efficient association of Set1 with S5P CTD, leading to decreased histone methylation and deacetylation, resulting in a burst of acetylation and transcription initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C94, and C98 represent the integrated mechanistic model supported by the collective experimental evidence including nucleosome dynamics, ChIP data, biochemical binding assays, and genetic suppression experiments. The model logically integrates all major findings and is consistent with the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "b3a3d7e3-9e53-4781-8037-01dfd1353997",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In budding yeast, the absence of the S2 kinase ctk1 abrogates the burst of promoter histone acetylation during IME1 induction and results in low expression. This defect is suppressed by deletion of Set3, demonstrating conservation of the mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 provide evidence for evolutionary conservation of the mechanism in budding yeast. The data show similar effects on histone acetylation and gene expression, with genetic suppression by Set3 deletion paralleling the fission yeast results. This strengthens the generalizability of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "968cc881-9594-4529-8cce-5b2f0803f610",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that CTD phosphorylation plays key roles in transcription and chromatin regulation, with S5P and S2P showing stereotypical distributions. However, S2P is dispensable in yeast and affects only a subset of mRNAs, creating a disconnect between uniform CTD phosphorylation patterns and gene-specific requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C13 provide established background knowledge from cited literature that frames the research question. These are well-supported by multiple citations and represent the current understanding that motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "116a78ca-b394-4941-b7ef-31cd50b905ab",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on histone methylation: H3K4 and K36 methylation patterns mirror CTD phosphorylation due to recruitment of Set1-COMPASS by S5P and Set2 by S2P. These methylation marks serve as binding platforms for HDAC complexes including SET3C and Rpd3C(S), with specific reader domains (PHD fingers, chromodomains) recognizing methylated histones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C24 provide essential background on the established connections between CTD phosphorylation, histone methylation, and HDAC recruitment. These are well-supported by multiple citations and establish the framework for understanding the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "abdf300f-eef4-4293-b373-9b2c568e9404",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims relating current findings to prior literature: S2P acts as a barrier to Set1 association in budding yeast, S2P upstream of S5P abolishes antibody recognition, different HDAC complexes regulate transcriptional burst dynamics, Ctk1 is phosphorylated in its N-terminus, Drosophila UpSet shows similar mechanisms, and MAP kinases are recruited to target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97, C99-C100, C104-C106, C110-C111 contextualize the findings within existing literature through appropriate citations. These comparisons strengthen the interpretation and demonstrate consistency with related observations in other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    },
+    {
+      "id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf",
+      "content_id": "023dcc67-d178-4182-ba24-15e9bfab526a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Summary claims: ste11 and inv1 are among the 324 genes regulated by S2P. The early S2P increase results from MAP kinase phosphorylation of Lsk1. Signaling through the CTD code regulates promoter nucleosome dynamics. MAP kinase directly controls CTD phosphorylation, with Lsk1 phosphorylation required for the 5\u2032 S2P peak but not for kinase activity itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C7, C9, C107-C109, C112 represent high-level summary statements that are well-supported by the collective experimental evidence presented in the manuscript. These integrate multiple lines of evidence into coherent conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:36.594119Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f24e0392-872d-4ed3-92f5-9800c318bdfc",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "00489434-3e47-4d54-b29c-bd5ba7774da7",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "8fe1f186-e53a-4333-9faa-321c1d26ac9d",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "ba9070e8-2fa1-460b-a3cd-1fc7f86c6868",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "26d84b7a-9481-48ee-b425-a47864acedac",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "06cce43e-8700-4236-bafa-a7d050c2bc92",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "bd623b64-8f66-4b61-b9ed-d129d2aa7e7c",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "15616bff-f402-44f8-8e3e-8c7be531dace",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "b2e5d66b-5b52-4520-ade4-378ce860d7bf",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "1296edf2-d8c1-419a-a4b3-70905742e016",
+      "result_id": "86def2d2-5727-49f9-bbc6-87804a4c936c"
+    },
+    {
+      "claim_id": "a0edebe0-183d-4e14-ba94-da3779736a0b",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "72c354d8-b398-4382-819e-6290bb9e1fa4",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "c17737ae-95be-4ef0-b065-4f582c252b9f",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "d2149b8f-f74f-40a5-80b2-297a209c9243",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "82ea8e20-ba01-499a-a82f-713f846ab942",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "0e69803f-969e-47f7-a4b2-f5fa6e2ee2da",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "5d8c00d0-eebb-49ab-8ebd-bda522f87d51",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "b3392c1c-cd63-499b-8abc-9a1e71401e67",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "f6db55f0-7a01-4113-bdd0-d5746c22aa19",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "d0f2b0f8-525f-4862-bc61-35d3ca90be7b",
+      "result_id": "02e64ee5-022a-473a-a36d-ebf1a8d7f3d5"
+    },
+    {
+      "claim_id": "aa75b97f-31f3-439e-ae35-cacdfd1d260d",
+      "result_id": "65586a13-0571-4a09-8150-9971947f1133"
+    },
+    {
+      "claim_id": "a94e9856-cc76-4d28-8d7d-df013dc168a0",
+      "result_id": "65586a13-0571-4a09-8150-9971947f1133"
+    },
+    {
+      "claim_id": "8591c610-6939-4fcb-a307-10e507f651ea",
+      "result_id": "65586a13-0571-4a09-8150-9971947f1133"
+    },
+    {
+      "claim_id": "31d1d7d0-2af3-4e25-9d13-b0746bce8bea",
+      "result_id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0"
+    },
+    {
+      "claim_id": "2950e1e8-32c5-4771-8f36-271fed22e65b",
+      "result_id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0"
+    },
+    {
+      "claim_id": "a742ed9f-b786-4d01-88ab-f31eb4a45a89",
+      "result_id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0"
+    },
+    {
+      "claim_id": "bd65605c-13e6-4788-ae10-33fa2a807000",
+      "result_id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0"
+    },
+    {
+      "claim_id": "5d205d55-3b07-496b-9efd-d79aaa73e578",
+      "result_id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0"
+    },
+    {
+      "claim_id": "0ed9dc96-673d-4270-9302-d332bf884f94",
+      "result_id": "83b3de0e-beaf-4de8-ae68-9edefb5d43c0"
+    },
+    {
+      "claim_id": "581f8fbb-f23c-4e56-8b99-7f8f5d764630",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "45003201-1615-4dd9-9026-8b8c9814be23",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "9ad483f7-8b4c-4b02-aba2-e18f4aa2367b",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "5932ff93-1433-4df0-a3dc-4ff353487528",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "ae2097c1-ba8c-4e55-a0aa-b05efa0bea88",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "b0e8498e-697e-48bb-ae42-1e951d311faf",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "4dbe12cf-6e76-469f-9c5c-13c4d3a240af",
+      "result_id": "bd49a2c5-4576-4df3-8441-f1e550421734"
+    },
+    {
+      "claim_id": "fb576fc6-e4eb-42a9-b5ca-f616de810256",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "a6d82938-1773-4538-bb14-338f2b515aba",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "cabe01cf-b85d-4e24-b0f0-7cb4c5e18ebc",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "6fc6587f-d60d-4cd0-b3ea-d107dfc9456f",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "f1ca2fcc-142f-4299-8289-ab7168b5611f",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "e7b31422-a4e3-4258-80b3-79c21e986a02",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "ba7445ae-2b74-491e-b064-53166cf4aceb",
+      "result_id": "ab9af8e0-dc10-4484-ab2b-91dc7c2284a1"
+    },
+    {
+      "claim_id": "455ac684-89b5-463f-9301-3093f13ccb35",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "99ae4944-c9ab-4ada-a556-f852b08c2a3b",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "1b737601-eaf5-4a9f-ae8b-0b0f06c7dcc3",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "2ecb128a-869f-4df2-bbac-13aa01559603",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "56a8d31d-e857-4cfa-a67e-1238c39b74ec",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "2ad42f23-89cf-435d-809b-0d0885edf133",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "353aa4a3-b056-466e-b9ea-f491de36d5e8",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "ed875926-5a09-4f75-8e61-dc1453804343",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "107c8cdf-73e3-42b0-9f5f-6115d76659c7",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "082ec5b8-40b0-45e1-89b1-3211e5fe1dba",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "b4c04fd5-6816-4b23-b8b4-65b7f14140fe",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "2119dc32-955a-4399-8d76-5725a873c544",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "be78ffd6-dd59-46da-9dfb-b2e839f9ac74",
+      "result_id": "1b673ab2-ec45-451b-9f8a-205b99f9cee0"
+    },
+    {
+      "claim_id": "576f05cb-addc-4ad8-a531-4ffbc702335f",
+      "result_id": "818b1d95-f978-4852-a88a-52479bceb045"
+    },
+    {
+      "claim_id": "f189ca42-181c-4c8f-b6f8-e4db4116f0d3",
+      "result_id": "818b1d95-f978-4852-a88a-52479bceb045"
+    },
+    {
+      "claim_id": "daeb66aa-63ce-43d3-bba9-5a8387a157d1",
+      "result_id": "818b1d95-f978-4852-a88a-52479bceb045"
+    },
+    {
+      "claim_id": "57ff958e-c72c-4ff7-ada5-aeff7fac69e0",
+      "result_id": "818b1d95-f978-4852-a88a-52479bceb045"
+    },
+    {
+      "claim_id": "d790187e-c249-4122-a71d-0c935c8cfc82",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "a6aeca61-e178-4f40-a145-01fa8a1c6154",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "448fb897-ae01-4634-9a80-ba5184aff79d",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "891d9428-b616-4d33-87aa-e926e82d28a7",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "5cbe05ac-703c-4624-8bda-0c1d6929d4ae",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "ab880b35-786b-4b4e-a534-00a819342ada",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "061b3bb8-02dc-4047-bd05-597a4c71d98f",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "066d9df9-09c3-43d0-97a1-fd6f62340e23",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "4b8bed2a-31de-49df-972c-c4d54fb1acae",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "e79feced-dd08-44cc-b310-939000b2bd50",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "f0b70e6b-2928-4525-a0b4-85a9b2f847b4",
+      "result_id": "28785003-93f5-41aa-91f5-6c7d289af61f"
+    },
+    {
+      "claim_id": "38cb337f-3c7e-4824-83d6-affc0343d6bb",
+      "result_id": "07c2ad63-aef0-4884-a23b-0a8ea03f1796"
+    },
+    {
+      "claim_id": "e3b117c5-83fc-4f69-ac47-0bbf0d271668",
+      "result_id": "07c2ad63-aef0-4884-a23b-0a8ea03f1796"
+    },
+    {
+      "claim_id": "c370f0b2-7f15-4e75-bf5f-2d3df7b84f55",
+      "result_id": "07c2ad63-aef0-4884-a23b-0a8ea03f1796"
+    },
+    {
+      "claim_id": "08d0f2a2-35c3-4f84-b771-4520c3c9111e",
+      "result_id": "07c2ad63-aef0-4884-a23b-0a8ea03f1796"
+    },
+    {
+      "claim_id": "74b8dc21-e410-437c-9c62-8966ea5b2056",
+      "result_id": "07c2ad63-aef0-4884-a23b-0a8ea03f1796"
+    },
+    {
+      "claim_id": "28726e9b-4831-47e9-8ddd-a1ebc2a709ba",
+      "result_id": "b3a3d7e3-9e53-4781-8037-01dfd1353997"
+    },
+    {
+      "claim_id": "f189a918-1e34-4d9b-9e20-acb97d862e3a",
+      "result_id": "b3a3d7e3-9e53-4781-8037-01dfd1353997"
+    },
+    {
+      "claim_id": "13ec7e06-5bca-4feb-b62c-26d81e239dcd",
+      "result_id": "b3a3d7e3-9e53-4781-8037-01dfd1353997"
+    },
+    {
+      "claim_id": "f3bf0faa-5c27-440e-b112-483766b2e5f0",
+      "result_id": "968cc881-9594-4529-8cce-5b2f0803f610"
+    },
+    {
+      "claim_id": "21cb98f0-7a57-44e1-a43b-53ae577b73b1",
+      "result_id": "968cc881-9594-4529-8cce-5b2f0803f610"
+    },
+    {
+      "claim_id": "e9c3748c-e686-47e8-a384-69bda8480d0b",
+      "result_id": "968cc881-9594-4529-8cce-5b2f0803f610"
+    },
+    {
+      "claim_id": "96f655d5-2707-4e0d-a23b-4fff19c2fa50",
+      "result_id": "968cc881-9594-4529-8cce-5b2f0803f610"
+    },
+    {
+      "claim_id": "78776d60-9fdd-428d-bb37-1cc635b8ea1d",
+      "result_id": "968cc881-9594-4529-8cce-5b2f0803f610"
+    },
+    {
+      "claim_id": "81b06fa9-8002-4d84-8548-9c8fc53dabce",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "56eb9586-ccc0-4f68-a5ff-6cfe225c55c5",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "9174f375-ced8-448c-a712-bdc88fc1710e",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "974f377c-8d1c-4433-be3f-09643be1c486",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "d40efa63-aa77-43de-bdf9-cfbca9b93ee9",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "8c717314-10f7-4e38-af48-446bdc602bd1",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "96c07597-9127-4000-a604-6ef219cd4ccd",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "09c26e3b-35d4-4514-89f9-acd61998186b",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "4d7dfe45-4e31-4b01-8520-e622a0e045fc",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "439aec1d-1cb0-43b1-89a7-6ae8f265af2f",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "87f519ff-dc29-4b11-b782-92f356d2cf23",
+      "result_id": "116a78ca-b394-4941-b7ef-31cd50b905ab"
+    },
+    {
+      "claim_id": "d830d0ed-a837-4fec-a12d-4eeef15d8a70",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "7c1cca1e-bcd5-4eb4-83fb-b47209ddbf42",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "caa43f7f-6779-4ed9-95f4-1f2a760d7e8b",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "34dcd2aa-86da-4b25-9576-86a0b48cf405",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "4be41578-e588-4f1b-b179-1a4fdc8366c0",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "c0a608b7-2202-4cce-a4d5-534251b2ea0b",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "2b85d417-c5ca-437f-a69a-e48dfdee4e86",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "2f5d99b9-c836-4a80-82c7-ba7b2e6a7f70",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "35e31be4-d29b-4061-9512-b804335a8b70",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "3f081721-703d-4e4d-802a-c6964b951e59",
+      "result_id": "abdf300f-eef4-4293-b373-9b2c568e9404"
+    },
+    {
+      "claim_id": "37760a85-08fd-401f-8800-b495f5eb3130",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    },
+    {
+      "claim_id": "080cba4d-62f2-44c7-a8bd-29de87cbfd99",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    },
+    {
+      "claim_id": "98d2e8d7-e70a-4d06-94eb-ea13adacdd89",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    },
+    {
+      "claim_id": "22a706ee-d22f-4f6e-b6c0-c9d086f9bd79",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    },
+    {
+      "claim_id": "580a0534-6b84-4036-bee1-9c4015cc4f7b",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    },
+    {
+      "claim_id": "66027942-966d-498a-a61d-84daa259857d",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    },
+    {
+      "claim_id": "e09fff97-6f5d-4485-80f3-31c4763aaae6",
+      "result_id": "f5bd9ad4-e34d-4c19-8ce3-7754f7b37aaf"
+    }
+  ],
+  "comparisons": []
+}

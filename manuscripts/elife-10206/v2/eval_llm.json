@@ -1,0 +1,175 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "NMDA-Rs are glutamate-gated ion channels critical for synaptic plasticity in learning and drug addiction. They are expressed in most brain cell types, making cell type-specific assessment of their function challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6-C10 establish the biological context and motivation for the study. These are well-supported by citations to established literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Existing pharmacological NMDA-R antagonists lack cell type-selectivity, while genetic methods (Cre-loxP) provide cell type-specificity but are slow and lead to compensatory effects over timescales of weeks to lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 describe limitations of existing methods and are supported by citations to prior research (C14, C15). This establishes the rationale for developing a new approach combining temporal control with cell type-specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "CM-MK801 was designed as a masked NMDA-R antagonist using a carboxymethylpropyl ester masking group linked to MK801 via a 4-hydroxy-3-nitrobenzyl carbamate. The masking group is stable to endogenous esterases but cleaved by transgenic PLE, liberating MK801 intracellularly through spontaneous 1,6-elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe the chemical design and mechanism. The design is based on prior work (C19, C20) and the chemical mechanism (C22) is consistent with established organic chemistry principles. The synthesis is detailed in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C59",
+      "C60"
+    ],
+    "result": "CM-MK801 completely blocks NMDA-R currents in PLE+ cortical neurons (82% inhibition, similar to AP5) but shows minimal effect in adjacent PLE\u2212 neurons (16% reduction, not significantly different from control rundown). MK801 liberation is confined to PLE-expressing cells without affecting neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32, C59-C60 demonstrate cell type-specific efficacy through electrophysiological recordings with appropriate controls (AP5, PLE+/\u2212 comparisons). Statistical analysis (ANOVA, p=0.15) supports the lack of significant effect in PLE\u2212 neurons. The perforated patch technique appropriately prevents dilution of liberated MK801.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Prior research established that cocaine induces NMDA-R-dependent synaptic potentiation of AMPA-R currents in VTA dopamine neurons, but genetic studies using Grin1 knockout showed conflicting results due to compensatory effects, with some studies showing constitutive potentiation and others showing prevention of cocaine-induced plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 summarize prior literature on cocaine-induced plasticity in DA neurons. All claims are supported by appropriate citations. This establishes the biological context and unresolved questions that motivate the application of CM-MK801.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Using CM-MK801 in VTA brain slices, cocaine-induced potentiation of AMPA-R mEPSC amplitude occurred in PLE\u2212 DA neurons (19.9\u00b10.9 pA) but was blocked in PLE+ DA neurons (12.7\u00b10.8 pA, similar to non-cocaine controls). mEPSC frequency and membrane properties were unaffected, demonstrating that NMDA-Rs in DA neurons are necessary for cocaine-induced synaptic potentiation ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46, C61-C63 present the cocaine plasticity experiments with appropriate statistical analysis (ANOVA F3,57=19.0, p<0.001). The experimental design includes proper controls (PLE+/\u2212 neurons, cocaine+/\u2212 conditions) and the blinded experimental protocol strengthens the findings. Results are consistent with one prior study (Engblom et al., 2008) using Cre-ER.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study demonstrates enzymatic targeting of MK801 to molecularly defined neurons with cell type-selectivity and temporal control, enabling rapid cell type-specific blockade of native NMDA-Rs. This approach can dissect signaling pathways in complex brain circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C47-C50 represent the main conclusions of the study. These are well-supported by the experimental data from both cortical neurons (C27-C32) and VTA DA neurons (C41-C46). The approach successfully combines genetic selectivity with pharmacological temporal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The absence of neighbor effects with CM-MK801/PLE is consistent with prior experiments targeting MK801 to individual neurons via patch pipette.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 provides mechanistic context for the lack of spillover to adjacent neurons, supported by citation to Bender et al., 2006. This is consistent with the experimental observations in C28-C32.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CM-MK801 has limited aqueous solubility (5-10 \u03bcM), requiring elevated DMSO levels (>0.1%) that make brain slices unsuitable for recordings, limiting in vivo applications. Additional improvements are needed for in vivo use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 identify a significant limitation based on experimental observations. The authors appropriately acknowledge that they could not test in vivo AMPA-R potentiation due to this constraint. This is an honest assessment of the method's current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Ex vivo approaches using CM-MK801/PLE have broad utility for studying NMDA-Rs in different cell types (neurons vs. glia) and can potentially be extended to other small molecules for cell type-specific pharmacology in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C58 are speculative about future applications. While C55 is a reasonable inference given the widespread expression of NMDA-Rs, C57-C58 are explicitly speculative. The extension to other molecules (C58) is supported by citation to prior work but has not been demonstrated in this study.",
+    "result_type": "MINOR"
+  }
+]

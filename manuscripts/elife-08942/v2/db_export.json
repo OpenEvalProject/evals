@@ -1,0 +1,1896 @@
+{
+  "submission": {
+    "id": "afacc46c-a4aa-49d4-a513-56847b4c73bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:37:43.469498Z",
+    "updated_at": "2025-11-29T04:37:43.469498Z"
+  },
+  "content": [
+    {
+      "id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "submission_id": "afacc46c-a4aa-49d4-a513-56847b4c73bf",
+      "content_type": "manuscript",
+      "content_text": "# Resection is responsible for loss of transcription around a double-strand break in Saccharomyces cerevisiae\n\n## Authors\n\n- Nicola Manfrini<sup>1</sup>\n- Michela Clerici<sup>1</sup>\n- Maxime Wery<sup>2</sup>\n- Chiara Vittoria Colombo<sup>1</sup>\n- Marc Descrimes<sup>2</sup>\n- Antonin Morillon<sup>2</sup> \u2020\n- Fabrizio d'Adda di Fagagna<sup>3</sup> \u2020\n- Maria Pia Longhese<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Dipartimento di Biotecnologie e Bioscienze Universit\u00e0 di Milano-Bicocca Milan Italy\n2. Institut Curie, Dynamics of Genetic Information: Fundamental Basis and Cancer Universit\u00e9 Pierre et Marie Curie Paris France\n3. IFOM Foundation FIRC Institute of Molecular Oncology Foundation Milan Italy\n4. Istituto di Genetica Molecolare Consiglio Nazionale delle Ricerche Pavia Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nEmerging evidence indicate that the mammalian checkpoint kinase ATM induces transcriptional silencing in cis to DNA double-strand breaks (DSBs) through a poorly understood mechanism. Here we show that in Saccharomyces cerevisiae a single DSB causes transcriptional inhibition of proximal genes independently of Tel1/ATM and Mec1/ATR. Since the DSB ends undergo nucleolytic degradation (resection) of their 5\u2032-ending strands, we investigated the contribution of resection in this DSB-induced transcriptional inhibition. We discovered that resection-defective mutants fail to stop transcription around a DSB, and the extent of this failure correlates with the severity of the resection defect. Furthermore, Rad9 and generation of \u03b3H2A reduce this DSB-induced transcriptional inhibition by counteracting DSB resection. Therefore, the conversion of the DSB ends from double-stranded to single-stranded DNA, which is necessary to initiate DSB repair by homologous recombination, is responsible for loss of transcription around a DSB in S. cerevisiae.\n\n## Introduction\n\nDNA double-strand breaks (DSBs) are particularly dangerous for cells, since their inefficient or inaccurate repair can result in deletions and chromosomal translocations that can lead to cancer and/or severe developmental abnormalities in humans. DSB formation leads to activation of a complex DNA damage response (DDR), whose key players are highly conserved protein kinases, which include human ATM and ATR, as well as their Saccharomyces cerevisiae orthologs Tel1 and Mec1 (Gobbini et al., 2013). Once activated by DSBs, ATM/Tel1 and ATR/Mec1 promote DSB repair, delay cell cycle progression or trigger the elimination of genetically unstable cells by inducing cell death.\n\nOne of the main mechanisms to repair DSBs is homologous recombination (HR), which requires resection of the broken ends in order to generate 3\u2032-ended single-stranded DNA (ssDNA) tails that invade the homologous undamaged template. In S. cerevisiae, DSB resection is initiated by the evolutionarily conserved MRX (Mre11-Rad50-Xrs2) complex that, together with Sae2, catalyzes the initial processing of the DSB ends. The 5\u2032-ending strands can then be further degraded by two other machineries depending on Exo1 and Sgs1-Dna2, respectively (Symington and Gautier, 2011).\n\nIn eukaryotes, the DDR proteins function in the context of a highly organized chromatin environment that needs to be overcome to gain access to damaged DNA. Histone modifications and ATP-dependent chromatin remodelling proteins help to overcome this barrier by altering chromatin structure at the site of damage (Price and D'Andrea, 2013). One of the most characterized histone modifications is the phosphorylation of histone H2AX by ATM/Tel1 and ATR/Mec1, which spreads away from the DSB into large domains of surrounding chromatin (Rogakou et al., 1999; Downs et al., 2000; Burma et al., 2001; Ward and Chen, 2001). Other chromatin alterations detected at DSBs are associated with open and decondensed chromatin, indicating that chromatin at DSBs undergoes a transition to a more open, less compact conformation (Price and D'Andrea, 2013).\n\nHowever, several proteins associated with repressive or transcriptionally inactive chromatin, including HP1, PcG (Polycomb group) proteins, PRMD2 methyltransferase, KAP-1, su(var)3-9 methyltrasferase variant (SUV3-9) and the macrohistone variant macroH2A1, are recruited to DNA lesions (Soria et al., 2012), suggesting that repressive chromatin can be generated around DSBs. Consistent with this hypothesis, generation of several DSBs distal to the promoter of a reporter gene in mammalian cells leads to ATM-dependent transcriptional repression of this reporter gene (Shanbhag et al., 2010), possibly through phosphorylation of the transcriptional elongation factor ENL (Ui et al., 2015). Similarly, RNA polymerase I-mediated transcription of rDNA is inhibited in an ATM-dependent manner in the vicinity of DSBs (Kruhlak et al., 2007). Furthermore, the steady state RNA levels of genes proximal to a single DSB have been observed to decrease by microarray analysis also in S. cerevisiae cells (Lee et al., 2000).\n\nHowever, a different study in mammalian cells, where individual DSBs were induced at discrete endogenous sequences, showed that only transcription of the DSB-containing gene was affected (Pankotai et al., 2012). Furthermore, non-coding RNAs that control DDR activation are induced in the surrounding of DSBs in both vertebrates and Arabidopsis (Francia et al., 2012; Michalik et al., 2012; Wei et al., 2012), indicating that transcription can occur around DSBs.\n\nGiven these apparently contrasting results, other studies are required to understand how DSBs affect transcription in their surroundings. Furthermore, as DSBs are resected to generate 3\u2032-ended ssDNA, and ATM, macroH2A1, PRMD2 and HP1 proteins are required for this process (Jazayeri et al., 2006; Soria and Almouzni, 2013; Ayrapetov et al., 2014; Khurana et al., 2014), whether DSB resection has a role in the DSB-induced transcriptional inhibition needs to be investigated.\n\nBy using the budding yeast HO endonuclease to create single DSBs at different chromosomal loci, we show that DSB induction causes Mec1- and Tel1-independent transcriptional inhibition of genes surrounding the DSB site. Failure to resect the DSB ends prevents this transcriptional inhibition, which is instead enhanced by accelerating the resection process. Altogether, these data indicate that loss of transcription around a DSB in S. cerevisiae cells is due to the conversion of DSB ends from double-stranded DNA (dsDNA) to ssDNA.\n\n## Results\n\n### Transcription is reduced in cis to a DSB at the MAT locus\n\nTo investigate changes in the transcription of genes surrounding DSBs, we took advantage of a yeast haploid strain (JKM139) where a single DSB can be generated at the MAT locus by galactose-induced expression of the HO endonuclease. As the homologous donor sequences HML and HMR are deleted in this strain, this DSB cannot be repaired by HR (Lee et al., 1998). We previously used this strain for total RNA-seq analysis of protein-coding gene expression upon induction of the HO-induced DSB to show that mRNA levels of the vast majority of protein-coding genes underwent no significant change upon DSB generation (Manfrini et al., 2015). Here we focused on the MAT locus that was not analyzed in the previous study. We mapped the RNA-seq data from two biological replicates of the JKM139 wild-type strain grown in raffinose (time zero, T0) and shifted to galactose-containing medium for 60 (T60) and 240 (T240) min on a restricted reference \u2018genome\u2019 corresponding to the MAT locus \u00b110 kb (Figure 1A). Quantitative analysis of tag densities for annotated genes in this region revealed a moderate signal decrease for the DSB-proximal genes 60 min after HO induction, and a strong signal reduction along the whole region after 240 min (Figure 1B). Strikingly, after 240 min of HO induction, density for the proximal genes BUD5, HMRA2, HMRA1 and TAF2 showed a \u226510-fold decrease compared to time zero, while density was only reduced by about twofold for the distal genes SNT1, IMG1 and BUD23 (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig1-v2.jpg)\n\n**Figure 1.:** (A) Strand-specific RNA-seq data from the two biological replicates of wild type strain (JKM139) before (time zero, T0) and 60 (T60) or 240 (T240) min after HO induction, were uniquely mapped to the MAT locus \u00b110 kb. For each time point, densities (tag/nucleotide, log2 scale) from the two replicates were pooled and visualized as a heatmap with the upper and lower panels corresponding to the + and \u2212 strands, respectively. Black arrows represent annotated genes. (B) Density for genes along the MAT locus \u00b110 kb at T0, T60 and T240 after HO induction. Mean values \u00b1s.d. were calculated from the two biological replicates analyzed. RRT12 showed too low signal to be significantly quantified and was not included. (C) Ratio of density for genes along the MAT locus \u00b110 kb at T0, T60 and T240 after HO induction. For each time point, densities were normalized on the values obtained at T0. Mean values \u00b1s.d. were calculated as above. RNA-seq data used to construct the graphs of Figure 1B,C are available in Figure 1\u2014source data 1.\n\nValidation of the above data by using quantitative reverse transcriptase PCR (qRT-PCR) confirmed the reduction in transcript levels for genes located around the HO-induced DSB 240 min after HO induction (Figure 2A). The level of these mRNAs decreased progressively as the distance of the corresponding genes from the DSB diminished and such decrease was independent of the strand that was transcribed (Figure 2A). These decreases measured 240 min after HO induction were not influenced by mRNA stability, as all the analyzed mRNAs have half-lives shorter than 50 min (Geisberg et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig2-v2.jpg)\n\n**Figure 2.:** (A) YEPR exponentially growing cell cultures of the JKM139 strain, carrying the HO cut site at the MAT locus, were transferred to YEPRG at T0 to induce HO. RNA levels of genes located at different distances from the HO cut site were evaluated by quantitative reverse transcriptase PCR (qRT-PCR) at T0 and T240 after HO induction. Results are presented as ratios between T240 and T0. RNA levels were quantified using \u2206\u2206Ct method and quantities were normalized to ACT1 RNA levels. The mean values \u00b1s.d. are represented (n = 3). (B) Exponentially growing YEPR cell cultures of the JKM139 derivative strains expressing either a fully functional Rpb2-HA fusion protein or untagged Rpb2 were transferred to YEPRG at T0 to induce HO. Binding of Rpb2-HA at different distance from the DSB at T0 and T240 after HO induction was evaluated by ChIP and qPCR. Primers used were the same as in (A). Results are presented as ratios between Rpb2-HA and untagged Rpb2, both of which normalized against the corresponding input, at T240 relative to T0. The mean values \u00b1s.d. are represented (n = 3). Rpb2-HA binding at the ACT1 gene was used as internal control.\n\nBecause both qRT-PCR and RNA-seq measured the steady state level of total RNAs, which is a balance between synthesis and degradation, we investigated whether the reduction of RNA levels for genes around the DSB was due to transcriptional inhibition. To this end, the binding of the Rpb2 second largest subunit of RNA polymerase II was measured at T0 and 240 min after HO induction at different distances from the DSB. Indeed, Rpb2 association in the surroundings of the DSB decreased and this effect progressively diminished as a function of the distance from the DSB (Figure 2B), indicating that transcription was inhibited specifically around the DSB.\n\n### Local transcriptional inhibition is a general response to DSB formation\n\nTo investigate whether the DSB-induced transcriptional inhibition was specific for the MAT locus, we analyzed RNA levels and RNA polymerase II binding in tGI354 and YFP17 strains, which carried the recognition site for the HO endonuclease at the ARG5,6 locus on chromosome V or at the LEU2 locus on chromosome III, respectively. Since tGI354 strain can use the uncleavable MATa-inc sequence on chromosome III as a donor to repair the HO-induced DSB by Rad51-dependent HR, this strain carried the deletion of RAD51. After generation of the HO-induced DSB at the ARG5,6 locus, we found that both the RNA levels of genes located in the surrounding of the DSB (Figure 3A) and Rbp2 occupancy (Figure 3B) progressively decreased as the distance of the corresponding genes from the DSB diminished. Similar results were obtained when the HO-induced DSB was generated at the LEU2 locus (Figure 3C,D). We conclude that inhibition of local transcription is a general response to DSB formation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig3-v2.jpg)\n\n**Figure 3.:** (A) YEPR exponentially growing cell cultures of tGI354 strain, carrying the HO site at the ARG5,6 locus and the deletion of RAD51 gene, were transferred to YEPRG at T0 to induce HO. RNA levels of genes located at different distances from the HO cut site were evaluated by qRT-PCR at T0 and T240 after HO induction, as described in Figure 2A. Results are presented as ratios between T240 and T0. The mean values \u00b1s.d. are represented (n = 3). (B) Binding of Rpb2-HA from samples collected in (A) was evaluated by ChIP and qPCR as described in Figure 2B. Primers used were the same as in (A). The mean values \u00b1s.d. are represented (n = 3). (C) YEPR exponentially growing cell cultures of YFP17 strain, carrying the HO cut site at the LEU2 locus, were transferred to YEPRG at T0 to induce HO. RNA levels were analyzed as in Figure 2A but normalized to the ALG9 gene transcript. Only transcription of genes located on the right side of the HO-induced DSB was analyzed because no transcription units are present on the left side of the break. The mean values \u00b1s.d. are represented (n = 3). (D) Binding of Rpb2-HA from samples collected in (C) was evaluated by ChIP and qPCR as described in Figure 2B. Primers used were the same as in (C).\n\n### The checkpoint kinases Tel1 and Mec1 are not required for DSB-induced transcriptional inhibition\n\nIn all eukaryotes, DNA DSBs induce a DDR that depends on the checkpoint kinases ATM/Tel1 and ATR/Mec1 (Gobbini et al., 2013). As transcriptional repression in proximity to DSBs requires ATM in mammalian cells (Kruhlak et al., 2007; http://journal.frontiersin.org/Journal/10.3389/fgene.2013.00136/full, Shanbhag et al., 2010), we asked whether Tel1 and/or Mec1 were necessary for transcriptional silencing of genes flanking the HO-induced DSB. HO expression was induced by galactose addition in mec1\u2206, tel1\u2206 and mec1\u2206 tel1\u2206 cells (mec1\u2206 and mec1\u2206 tel1\u2206 cells were kept viable by SML1 deletion) and mRNA levels were analyzed 240 min after HO induction. As the lack of Mec1 causes cells to progress through the cell cycle even after DSB formation, HO was induced in cells arrested in G2 with nocodazole and kept arrested in G2 during HO-cut induction. As shown in Figure 4, the amount of RNA transcribed from genes surrounding the DSB was reduced to quite similar extents in HO-induced wild type, mec1\u2206 sml1\u2206, tel1\u2206 and mec1\u2206 tel1\u2206 sml1\u2206 cells, with mec1\u2206 sml1\u2206 cells showing a more pronounced decrease. This finding indicates that neither Tel1 nor Mec1 are responsible for DSB-induced transcriptional inhibition.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig4-v2.jpg)\n\n**Figure 4.:** YEPR exponentially growing cell cultures of the JKM139 strain, carrying the HO cut site at the MAT locus, were arrested in G2 with nocodazole and transferred at T0 to YEPRG in the presence of nocodazole. RNA levels were analyzed by qRT-PCR as described in Figure 2A. The mean values \u00b1s.d. are represented (n = 3).\n\n### \u03b3H2A and Rad9 limit DSB-induced transcriptional inhibition by negatively regulating DSB resection\n\nA single DSB triggers phosphorylation of histone H2A to form \u03b3H2A, which spreads on each side of the DSB to about 50 kb distance (Rogakou et al., 1999; Shroff et al., 2004). Interestingly, \u03b3H2A diminishes strongly over highly transcribed regions and H2A phosphorylation is rapidly restored if transcription is subsequently inhibited (Lee et al., 2014). We therefore investigated whether \u03b3H2A plays a role in DSB-induced transcriptional inhibition by expressing HO in hta1-S129A cells, which produced a H2A variant carrying a non-phosphorylatable alanine residue replacing Ser129. As histone H2A is encoded by the two genes HTA1 and HTA2, hta1-S129A cells also carried the HTA2 deletion. Strikingly, not only RNA levels of genes proximal to the DSB still decreased in hta1-S129A cells, but this decrease was more severe than in wild type cells (Figure 5A), indicating that \u03b3H2A counteracts repression of transcription around the DSB.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig5-v2.jpg)\n\n**Figure 5.:** (A) YEPR exponentially growing cell cultures of the JKM139 derivative strains, carrying the HO cut site at the MAT locus, were transferred to YEPRG at T0. RNA levels of genes located in the surroundings of the HO cut site at the MAT locus were analyzed at T0 and T240 after HO induction by qRT-PCR as described in Figure 2A. The mean values \u00b1s.d. are represented (n = 3). (B) Method to measure DSB resection. Gel blots of SspI-digested genomic DNA separated on alkaline agarose gel were hybridized with a single-stranded MAT probe (ss probe) that anneals to the unresected strand. 5\u2032\u20133\u2032 resection progressively eliminates SspI sites (S), producing larger SspI fragments (r1 through r7) detected by the probe. (C) DSB resection. Genomic DNA prepared from samples collected in (A) was analysed for single-stranded DNA (ssDNA) formation at the indicated times after HO induction as described in (B). The image that was used for the cropped final Figure 5C is available in Figure 5\u2014source data 1.\n\nThe ends of DSBs are nucleolytically processed to generate 3\u2032-ended ssDNA that initiate HR. DSB resection is negatively regulated by the checkpoint protein Rad9, which inhibits mainly the Sgs1-Dna2 resection machinery (Bonetti et al., 2015; Ferrari et al., 2015). The lack of \u03b3H2A reduces the amount of Rad9 bound at the DSB ends and, as a consequence, hta1-S129A cells resect the DSB ends more efficiently than wild type cells (Eapen et al., 2012; Clerici et al., 2014). Thus, we investigated whether the enhanced DSB-induced transcriptional repression observed in hta1-S129A mutant cells was due to their accelerated nucleolytic processing of the DSB ends. Resection of the DSB 5\u2032 strand can be measured by following the loss of restriction fragments by Southern blot analysis with a ssRNA probe annealing on one side of the break (Figure 5B). Strikingly, SGS1 deletion, which reduced the accelerated resection in hta1-S129A cells to almost wild type levels (Figure 5C), also reduced their enhanced DSB-induced transcriptional inhibition (Figure 5A). Furthermore, rad9\u2206 cells, which undergo accelerated DSB resection (Lazzaro et al., 2008), showed transcription inhibition around the DSB to the same extent as hta1-S129A cells (Figure 5A). Altogether these data indicate that \u03b3H2A and Rad9 limit the inhibition of transcription around the DSB ends by counteracting the resection process.\n\n### Loss of transcription around a DSB depends on resection\n\nWe then investigated if generation of ssDNA was responsible for transcription inhibition at DSBs. Resection has been reported to initiate asynchronously from the ends of DSBs (Shroff et al., 2004) and to move about 4 kb/hr (Vaze et al., 2002). After 60 min of HO induction, wild type cells accumulated mostly r2 resection products, indicating that DSB resection in most cells had not proceeded beyond 3.5 kb from the DSB (Figure 6A). At the same time point, we detected a strong decrease of Rpb2 occupancy at the TAF2 and BUD5 genes, which are located within 4 kb from either side of the DSB (Figure 6B). Concomitantly with the progression of 5\u2032\u20133\u2032 resection (Figure 6A), also the binding of Rpb2 to distal genes progressively diminished (Figure 6B), suggesting that the decrease of RNA polymerase II occupancy around the DSB correlates with the time it takes for a DNA-end to become single-stranded.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig6-v2.jpg)\n\n**Figure 6.:** (A) DSB resection. YEPR exponentially growing cell cultures of JKM139 derivative strains, carrying the HO cut site at the MAT locus, were transferred to YEPRG at T0. Formation of ssDNA was determined as described in Figure 5B. (B) Binding of Rpb2-HA in wild type cells from samples collected in (A) was evaluated by ChIP and qPCR as described in Figure 2B. The mean values \u00b1s.d. are represented (n = 3). (C) Binding of Rpb2-HA in exo1\u2206 sgs1\u2206 cells from samples collected in (A) was evaluated by ChIP and qPCR as described in Figure 2B. The mean values \u00b1s.d. are represented (n = 3). (D) RNA levels from samples collected in (A) were analyzed at T0 and T240 after HO induction by qRT-PCR as described in Figure 2A. The mean values \u00b1s.d. are represented (n = 3). Contiguous images that were used for the cropped final Figure 6A are available in Figure 6\u2014source data 1.\n\nDSB resection in S. cerevisiae is initiated by MRX and Sae2, which catalyze an endonucleolytic cleavage of the 5\u2032 strands. The resulting partially resected 5\u2032 strand can be further processed by the nucleases Exo1 and Dna2, the latter working in concert with the 3\u2032\u20135\u2032 helicase Sgs1 (Mimitou and Symington, 2008; Zhu et al., 2008). DSB resection is severely affected by either simultaneous inactivation of Exo1 and Sgs1 or the lack of MRX, with the latter not only providing the endonuclease activity to initiate resection, but also promoting the loading of Exo1, Sgs1 and Dna2 at DSB ends (Shim et al., 2010). To assess whether DSB resection has a role in the DSB-induced transcriptional silencing, we asked whether exo1\u2206, mre11\u2206 or exo1\u2206 sgs1\u2206 cells, which were impaired in resection to different extents, were still capable to repress transcription of genes in the vicinity of the HO-induced DSB. Indeed, neither the amount of Rpb2 bound around the HO-induced DSB (Figure 6C) nor RNA levels were decreased in exo1\u2206 sgs1\u2206 cells (Figure 6D), which had the most severe DSB resection defect compared to mre11\u2206 and exo1\u2206 single mutants (Figure 6A). RNA levels only slightly decreased in HO-induced mre11\u2206 cells (Figure 6D), which were severely defective in the accumulation of resection products (Figure 6A), while only the RNA levels of genes proximal to the break site were diminished in exo1\u2206 mutant cells (Figure 6D), which initiated DSB resection but failed to accumulate resection products longer than 3.5 kb (Figure 6A). Thus, loss of transcription around a DSB in S. cerevisiae is due to the conversion of dsDNA to ssDNA by the resection machinery.\n\n## Discussion\n\nHere, we further extend the observation that induction of a DSB at the MAT locus in S. cerevisiae cells leads to a decrease of the RNA steady state levels of proximal genes (Lee et al., 2000), by demonstrating that this decrease is not locus specific and is due to dissociation of RNA polymerase II from its template DNA. In contrast to the reported requirement of mammalian ATM for transcription silencing around a DSB (Kruhlak et al., 2007; Shanbhag et al., 2010; Ui et al., 2015), neither Tel1 nor Mec1 appear to be necessary for transcriptional inhibition at the DSB site in S. cerevisiae. Instead, we found that mutants defective in DSB resection fail to inhibit transcription around a DSB, and the extent of this failure correlates with the severity of the DSB resection defect. Furthermore, accelerating DSB resection by preventing \u03b3H2A generation or by eliminating Rad9 enhances this DSB-induced transcriptional inhibition. Altogether, these data indicate that loss of transcription around a DSB in S. cerevisiae is not due to an active regulatory mechanism, but to the conversion of the DSB ends from dsDNA to ssDNA.\n\nNucleolytic processing of the template DNA strand should stop transcription of the corresponding gene. However, we found that mRNA levels and RNA polymerase II occupancy around a DSB decrease independently of the strand that is transcribed, indicating that loss of non-template DNA strands also impedes transcription. Therefore, the most likely reason of why the conversion from dsDNA to ssDNA stops transcription is that the transcription machinery binds only dsDNA. Consistent with this hypothesis, it has been shown that within a region containing a stretch of dsDNA preceding a single-strand 3\u2032 DNA end, purified RNA polymerase II transcribes within the dsDNA portion (Lilley and Houghton, 1979; Kadesch and Chamberlin, 1982). Furthermore, structural analyses of transcription initiation reveals that RNA polymerase II and its associated General Transcription Factors bind double-stranded promoter DNA to form a closed preinitiation complex (PIC), where the transcriptional machinery interacts with both template and non-template DNA strands (Liu et al., 2013; Sainsbury et al., 2015). Moreover, removal of either the template or non-template strands prevents binding of T7 RNA polymerase to the promoter, supporting the importance of protein-dsDNA interaction in the spatial organization of the transcriptional initiation complex (Maslak and Martin, 1993).\n\nInteraction of the transcriptional machinery with dsDNA also allows transcription initiation and elongation. In fact, the double-stranded promoter DNA follows a straight path in the PIC complex and this rigidity allows the subsequent transition from a closed to an open promoter complex, where a central DNA region is melted leading to a transcription bubble in which the DNA template strand enters the RNA polymerase II cleft (Murakami et al., 2013). Furthermore, competition between the non-template DNA strand and the RNA transcript for base-pairing with the DNA template strand was shown to be important for maintaining structure and function during elongation (Kireeva et al., 2011), reinforcing the inhibitory effects of ssDNA on the transcription process.\n\nIn summary, while DSB-induced transcriptional repression in mammals is reportedly an active mechanism controlled by ATM, the stop of transcription around a DSB in S. cerevisiae cells is due to the conversion of dsDNA to ssDNA that is necessary to initiate DSB repair by HR (Figure 7). In any case, while Mec1 and Tel1 are not required to resect a DSB, ATM and the chromatin compaction promoting proteins macroH2A1, PRMD2 and HP1 promote end resection by facilitating the loading of BRCA1 at the DSB ends (Soria and Almouzni, 2013; Ayrapetov et al., 2014; Khurana et al., 2014). Thus, whether the nucleolytic processing of the DSB ends contributes to repress transcription around a DSB also in mammals is an important question that remains to be addressed. In fact, although in human cells inactivation of the end resection factor CtIP does not restore trascription around the DSB (Shanbhag et al., 2010), other resection machineries are known to be active in resecting DSBs in CtIP-depleted cells (Tomimatsu et al., 2012) and could contribute to inhibit transcription around the DSB.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08942/elife-08942-fig7-v2.jpg)\n\n**Figure 7.:** Resection of the 5\u2032 strands at both DSB ends leads to release of the transcription machinery (dashed lines) and to subsequent transcription arrest independently of whether the degraded DNA strand acts as template or non-template. Since the RNA polymerase binds double-stranded promoter DNA, generation of ssDNA at the DSB ends prevents reinitiation events (bar-headed line). Blue arrows indicate direction of transcription.\n\n## Materials and methods\n\n### Yeast strains\n\nThe yeast strains used in this study are derivatives of JKM139, YFP17 or tGI354 strains and are listed in Supplementary file 1. Cells were grown in YEP medium (1% yeast extract, 2% peptone) supplemented with 2% glucose (YEPD), 2% raffinose (YEPR) or 2% raffinose and 3% galactose (YEPRG).\n\n### DSB resection\n\nDSB end resection at the MAT locus in JKM139 derivative strains was analyzed on alkaline agarose gels as previously described (Clerici et al., 2008), by using a single-stranded probe complementary to the unresected DSB strand. This probe was obtained by in vitro transcription using Promega (Madison, WI) Riboprobe System-T7 and plasmid pML514 as a template. Plasmid pML514 was constructed by inserting in the pGEM7Zf EcoRI site a 900-bp fragment containing part of the MAT\u03b1 locus (coordinates 200870 to 201587 on chromosome III).\n\n### Total RNA-seq analysis\n\nTotal RNA-seq libraries were previously described (Manfrini et al., 2015) and data were retrieved from the Gene Expression Omnibus (accession number GSE63444; Manfrini et al., 2014). Reads were uniquely mapped as described (Manfrini et al., 2015) on a reference \u2018genome\u2019 corresponding to the MATa sequence \u00b110 kb, that was manually reconstructed by replacing MAT\u03b1-specific elements with the corresponding MATa-specific elements in the MAT\u03b1 locus sequence \u00b110 kb (chr. 3, positions 188671 to 211177) retrieved from SGD (http://www.yeastgenome.org/). Data were normalized using the normalization factors previously used for the whole transcriptome analysis (Manfrini et al., 2015), based on the total number of reads that mapped on all the ORFs of the yeast genome.\n\n### qRT-PCR\n\nTotal RNA was extracted from cells using the Bio-Rad (Hercules, CA) Aurum total RNA mini kit. First strand cDNA synthesis was performed with the Bio-Rad iScript cDNA Synthesis Kit. qRT-PCR was performed on a MiniOpticon Real-time PCR system (Bio-Rad) and RNA levels were quantified using the \u2206\u2206Ct method. Quantities were normalized to either ACT1 or ALG9 RNA levels. Since RNR1 is transcriptionally induced immediately after HO-induced DSB, its RNA level at T240 was normalized on the value obtained 30 min after HO induction, when DSB resection was not proceeded beyond 1.7 kb. Primer sequences are provided in Supplementary file 2.\n\n### ChIP analysis\n\nChIP analysis was performed as previously described (Viscardi et al., 2007). Chromatin extracts from both RPB2-HA and RPB2 strains were immunoprecipitated with anti-HA antibodies (12CA5). Input and immunoprecipitated DNA were purified and analyzed by qPCR. Amplicons were chosen well within the coding region of the genes and of the highly transcribed ACT1 gene on chromosome VI as a control. The ratio between values obtained for Rpb2-HA and those obtained with the untagged Rpb2 immunoprecipitated samples, both of which normalized against the corresponding input, was calculated for each time point after HO induction. The obtained values were divided by the ratio calculated from uninduced cells, arbitrarily set to 1, for each amplicon. Primer sequences are provided in Supplementary file 2.\n",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "b2e33c6f-4aa6-4456-a711-0f1100501fb5",
+      "submission_id": "afacc46c-a4aa-49d4-a513-56847b4c73bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, University of Texas MD Anderson Cancer Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08942.015](https://doi.org/10.7554/eLife.08942.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cResection drives transcriptional repression around a DNA double-strand break in Saccharomyces cerevisiae\u201d for peer review at eLife. Your submission has been favorably evaluated by Jim Kadonaga (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nWe all felt that this was an important and high quality study that clearly supported the novel finding that transcription stops due to DNA resection.\n\n1) We all felt that the likely reason why transcription stops and RNA polymerase II occupancy is lost upon resection is because the transcription machinery, such as TBP and RNA polymerase II bind to dsDNA and not ssDNA. This stopping transcription due to loss of DNA template model is quite a different model from the current repression model, which implies an active regulatory mechanism. As such, an in depth discussion of loss of transcription as a consequence of loss of DNA template with appropriate citations, and a model figure to illustrate this idea, is needed.\n\n2) The data generated from the HO site at LEU2 and the HO site at MAT need to be in two separate figures, and the difference emphasized more strongly in the text. Otherwise this will all be assumed to be at MAT and the apparent novelty of this work, compared to the previous Lee et al. paper, will be reduced.\n\n3) The result with the mec1\u2206 tel1\u2206 double mutant needs to be reported in order to conclude that the DNA damage checkpoint is not required for stopping transcription around a DNA double strand break.\n\nReviewer #1:\n\nAlthough brief, this is an important study that makes significant advances on the previous work from Jim Haber's lab showing that there is progressive transcriptional repression around the DNA double strand break (DSB) induced by the HO endonuclease at the yeast MAT locus. There are two important novel results from the current work: 1) the transcriptional repression around a DSB is not dependent on checkpoint activation (in contrast to the situation in mammalian cells); 2) transcriptional repression is dependent on DNA resection. This last finding is very novel and exciting, and has not yet been examined in other systems. The work is of high quality, but the following points need to be addressed:\n\n1) Given the partial redundancy of Tel1 and Mec1 in activation of the DNA damage checkpoint, it is important that they show that transcriptional repression around the HO site is not affected in a tel1 mec1 sml1 mutant, in order to make the conclusion that the activation of the DNA damage checkpoint is not required for transcriptional repression.\n\n2) Mechanically, it makes sense that DNA resection would block transcription, given that RNA polymerase II binds to double strand DNA, and cannot transcribe from single strand DNA. This should be discussed briefly.\n\nReviewer #2:\n\nThis is a very straightforward analysis of a consequence of DNA double-strand break on local transcription. There are a plethora of observations in the literature that bare on this issue, motivating the authors to carry out these studies. At the risk of oversimplification, the message from this story seems to be very simply simplified, that conversion of DNA from double strand to single strand, that allows homologous recombination, has an \u2018unintended\u2019 consequence; genes that become single-stranded can no longer by transcribed (presumably it\u2019s well know that RNA polymerase binding and regulation etc. occurs only on double-strand templates, and not on single-strand templates). All of their lovely experiments are consistent with this simple idea, an idea they only state once and, in my view, deserves to be highlighted in the Abstract, and supported with a model at manuscript\u2019s end. Sometimes biology does have simple explanations; this seems to be one of those times.\n\nI have but a few issues I think important to address, most in the writing. The experiments appear impeccable, thorough, clearly illustrated.\n\n1) They need to emphasize that they carried out this analysis on a non-MAT locus DSB, Figure 2D is of an HO break at the LEU2 locus. So, they have tested 2 DSBs. Is their general conclusion made any more convincing by test of a third DSB? Yet, showing data at the HO site at LEU2 is critical for the generality of their conclusions. I suggest they therefore put the LEU2 HO data in a separate Figure. Shape the data in a similar fashion as the HO data, state distance from HO site, extending left and right from the DSB, as they did for the MAT HO site data. Parallel presentations make it easier for the reader.\n\n2) As I said in the general comments, they need to show a model. The \u2018take home\u2019 message is simple, and easily grasped by all with a model. That model can have Rad9 and H2A\u2206 in it. Yet, most critically is the double-strand to single-strand conversion as the mechanistic explanation. And this inhibition appears to be perhaps unintended consequences of a separate biological reaction, generating a substrate for recombination.\n\n3) They need a citation that in fact single-strand templates do not support transcription.\n\n4) I do not quite get how the transcriptional repression cannot be Mec1 regulated, if Mec1 regulates degradation by regulating Rad9, etc.? And degradation of telomere proximal DNA has complex interactions with Mec1 and Rad53, and Rad9; a word on how the telomere resection is or is not relevant here.\n\n5) In the Results section, the authors allude to a previous paper (Manfrini et al., 2015, EMBO Rep) stating: \u201cWe previously used this strain for total RNA-seq analysis of protein-coding gene expression upon induction of the HO-induced DSB\u201d. What did they conclude from that study relevant to this study?\n\n6) The conclusion that the inhibition is not cell cycle regulated, based on but two experiments \u2013 asynchronous and G2/M synchronized \u2013 is underwhelming. At least under those two conditions they see no difference; tone down the generalization, as the experiments do not support that conclusion. I do not suggest getting rigorous about the cell cycle effects, or lack thereof; this is not an important issue, it seems. Just have the language match the data in this point.\n\n7) Make it more transparent how gene transcription reduction correlates with extent of degradation. So, when reporting on the r2 restriction site, state how far away it is from the HO site, what gene is there, and how much that genes transcription is reduced and at what time.\n\n8) At the Results outset, I think it best to set the reader up for the story and technical issues. It is relevant that the time scale, in hours, is far longer than the half-lives of the mRNAs involved, though is this known? Therefore, half-lives of mRNAs does not muddle the analysis.\n\n9) In the Discussion section, you state that \u201cDSB resection not only generates ssDNA ends necessary to initiate HR, but can also facilitate the access of DNA repair proteins to the site of damage by releasing the transcriptional machinery from the DSB. That is speculation, right? Label as such.\n\nReviewer #3:\n\nIn the manuscript by Manfrini et al, the authors examine the transcript levels of genes flanking a DNA break in budding yeast and find that transcript levels decrease over time. The decrease in transcription correlates with resection levels, and strains with altered kinetics of resection show corresponding altered kinetics of transcription changes.\n\nThe data in the manuscript are generally of good quality and the changes in transcription and resection are very clear. The really major problem with this manuscript is that the conclusions are written in such a way as to imply that resection is regulating transcriptional repression. However, the data in the manuscript very clearly demonstrates that at the 240 minute time point (at which most of the transcription assays are performed), there is extensive resection of the area containing the genes being analyzed. Resection of double-stranded DNA will prevent transcription factors (such as TBP) from binding to promoter elements and as a result, transcription is no longer possible (and of course, depending on the orientation of the gene, resection can mean that there is no longer a template for the RNA polymerase!). Consequently, most of the cells in the population are unable to carry out transcription of these genes at this time point. This is quite different from \u2018transcriptional repression\u2019, which implies regulation. At earlier time points (e.g. shown in Figure 1), the only genes affected are precisely those genes that would no longer be completely double stranded in many cells. The ChIP data in Figure 4 fully support this (i.e. that loss of the double stranded DNA sequence results in loss of binding by RNA polymerase II).\n\nTherefore, what the manuscript is in fact demonstrating is that transcription is never repressed in yeast in genes flanking a DNA break. It is only impeded by loss of DNA sequence during resection. This is different from what has been established in the mammalian system, where there is an active mechanism for signalling to the transcriptional machinery over multiple kilobases where resection isn't taking place. Therefore, if the manuscript is rewritten to make this clear it would be of interest.\n",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89b0d576-f404-422c-90e5-78f32637c69f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C1",
+      "claim": "Mammalian checkpoint kinase ATM induces transcriptional silencing in cis to DNA double-strand breaks (DSBs) through a poorly understood mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence indicate that the mammalian checkpoint kinase ATM induces transcriptional silencing in cis to DNA double-strand breaks (DSBs) through a poorly understood mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to existing literature about ATM's role in transcriptional silencing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "2d85a42f-8c87-4283-8ddb-6db9dc1fb215",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C2",
+      "claim": "In Saccharomyces cerevisiae, a single DSB causes transcriptional inhibition of proximal genes independently of Tel1/ATM and Mec1/ATR.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that in Saccharomyces cerevisiae a single DSB causes transcriptional inhibition of proximal genes independently of Tel1/ATM and Mec1/ATR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "0b73d8b0-7a99-4c6c-9dad-a9c5c27d0057",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C3",
+      "claim": "DSB ends undergo nucleolytic degradation (resection) of their 5\u2032-ending strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the DSB ends undergo nucleolytic degradation (resection) of their 5\u2032-ending strands, we investigated the contribution of resection in this DSB-induced transcriptional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about DSB processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "403fcc19-81c0-45d6-9207-1092009bf8e6",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C4",
+      "claim": "Resection-defective mutants fail to stop transcription around a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that resection-defective mutants fail to stop transcription around a DSB, and the extent of this failure correlates with the severity of the resection defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "e0ef3869-7d0a-439d-91cc-70796257d192",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C5",
+      "claim": "The extent of failure to stop transcription correlates with the severity of the resection defect.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that resection-defective mutants fail to stop transcription around a DSB, and the extent of this failure correlates with the severity of the resection defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different resection mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "95bca176-3c9f-42c7-a4eb-57da6b909d2c",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C6",
+      "claim": "Rad9 reduces DSB-induced transcriptional inhibition by counteracting DSB resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Rad9 and generation of \u03b3H2A reduce this DSB-induced transcriptional inhibition by counteracting DSB resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing effects of Rad9 deletion on transcription and resection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "bf7c7c74-3169-4e23-ad95-f7f4572487cf",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C7",
+      "claim": "Generation of \u03b3H2A reduces DSB-induced transcriptional inhibition by counteracting DSB resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Rad9 and generation of \u03b3H2A reduce this DSB-induced transcriptional inhibition by counteracting DSB resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with hta1-S129A mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "d81c863b-1036-46ad-89c1-2a580e58e5a4",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C8",
+      "claim": "The conversion of DSB ends from double-stranded to single-stranded DNA is necessary to initiate DSB repair by homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the conversion of the DSB ends from double-stranded to single-stranded DNA, which is necessary to initiate DSB repair by homologous recombination, is responsible for loss of transcription around a DSB in S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about homologous recombination mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "fda5bfc5-866a-462e-a109-003ac559dbfc",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C9",
+      "claim": "The conversion of DSB ends from double-stranded to single-stranded DNA is responsible for loss of transcription around a DSB in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the conversion of the DSB ends from double-stranded to single-stranded DNA, which is necessary to initiate DSB repair by homologous recombination, is responsible for loss of transcription around a DSB in S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "9eb9445a-f0b0-4517-92e7-6770ed364b75",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C10",
+      "claim": "Inefficient or inaccurate DSB repair can result in deletions and chromosomal translocations that can lead to cancer and/or severe developmental abnormalities in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA double-strand breaks (DSBs) are particularly dangerous for cells, since their inefficient or inaccurate repair can result in deletions and chromosomal translocations that can lead to cancer and/or severe developmental abnormalities in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the consequences of DSB misrepair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "ee9d47ae-020c-42e0-be85-cd9fbc24eb28",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C11",
+      "claim": "DSB formation leads to activation of a complex DNA damage response (DDR).",
+      "claim_type": "EXPLICIT",
+      "source": "DSB formation leads to activation of a complex DNA damage response (DDR), whose key players are highly conserved protein kinases, which include human ATM and ATR, as well as their Saccharomyces cerevisiae orthologs Tel1 and Mec1 (Gobbini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "e74599a1-956c-4951-9d02-4c8715519cda",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C12",
+      "claim": "Key players of the DDR are highly conserved protein kinases, which include human ATM and ATR, as well as their Saccharomyces cerevisiae orthologs Tel1 and Mec1.",
+      "claim_type": "EXPLICIT",
+      "source": "DSB formation leads to activation of a complex DNA damage response (DDR), whose key players are highly conserved protein kinases, which include human ATM and ATR, as well as their Saccharomyces cerevisiae orthologs Tel1 and Mec1 (Gobbini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "6c8a1f95-f23e-48c8-a519-6a2307e351fc",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C13",
+      "claim": "ATM/Tel1 and ATR/Mec1 promote DSB repair once activated by DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Once activated by DSBs, ATM/Tel1 and ATR/Mec1 promote DSB repair, delay cell cycle progression or trigger the elimination of genetically unstable cells by inducing cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about checkpoint kinase functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "36a44ced-ecf1-4a3b-9a03-5349716250d1",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C14",
+      "claim": "ATM/Tel1 and ATR/Mec1 delay cell cycle progression once activated by DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Once activated by DSBs, ATM/Tel1 and ATR/Mec1 promote DSB repair, delay cell cycle progression or trigger the elimination of genetically unstable cells by inducing cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about checkpoint kinase functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "ab0794fb-908e-4e9f-942b-8ba8d034d846",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C15",
+      "claim": "ATM/Tel1 and ATR/Mec1 trigger the elimination of genetically unstable cells by inducing cell death once activated by DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Once activated by DSBs, ATM/Tel1 and ATR/Mec1 promote DSB repair, delay cell cycle progression or trigger the elimination of genetically unstable cells by inducing cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about checkpoint kinase functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "b980450a-4812-42d0-b5de-92fa3b84a576",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C16",
+      "claim": "Homologous recombination (HR) requires resection of the broken ends in order to generate 3\u2032-ended single-stranded DNA (ssDNA) tails that invade the homologous undamaged template.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main mechanisms to repair DSBs is homologous recombination (HR), which requires resection of the broken ends in order to generate 3\u2032-ended single-stranded DNA (ssDNA) tails that invade the homologous undamaged template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about homologous recombination mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "2f014df6-26ad-45e7-8dce-521bf088d858",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C17",
+      "claim": "In S. cerevisiae, DSB resection is initiated by the evolutionarily conserved MRX (Mre11-Rad50-Xrs2) complex that, together with Sae2, catalyzes the initial processing of the DSB ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, DSB resection is initiated by the evolutionarily conserved MRX (Mre11-Rad50-Xrs2) complex that, together with Sae2, catalyzes the initial processing of the DSB ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DSB resection mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "23325bfb-d493-4001-b179-0d19ab605eb9",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C18",
+      "claim": "The 5\u2032-ending strands can be further degraded by two other machineries depending on Exo1 and Sgs1-Dna2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5\u2032-ending strands can then be further degraded by two other machineries depending on Exo1 and Sgs1-Dna2, respectively (Symington and Gautier, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "dd6c7dab-4492-40f3-8f4b-e9cae2558d95",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C19",
+      "claim": "Histone modifications and ATP-dependent chromatin remodelling proteins help to overcome the chromatin barrier by altering chromatin structure at the site of damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone modifications and ATP-dependent chromatin remodelling proteins help to overcome this barrier by altering chromatin structure at the site of damage (Price and D'Andrea, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "7f1fa527-3396-44bd-b28b-070572e71fcd",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C20",
+      "claim": "Phosphorylation of histone H2AX by ATM/Tel1 and ATR/Mec1 spreads away from the DSB into large domains of surrounding chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most characterized histone modifications is the phosphorylation of histone H2AX by ATM/Tel1 and ATR/Mec1, which spreads away from the DSB into large domains of surrounding chromatin (Rogakou et al., 1999; Downs et al., 2000; Burma et al., 2001; Ward and Chen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "a0264c35-018e-4a28-8ebc-854ed67a1c44",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C21",
+      "claim": "Chromatin alterations detected at DSBs are associated with open and decondensed chromatin, indicating that chromatin at DSBs undergoes a transition to a more open, less compact conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other chromatin alterations detected at DSBs are associated with open and decondensed chromatin, indicating that chromatin at DSBs undergoes a transition to a more open, less compact conformation (Price and D'Andrea, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "f995c5ee-ed1b-4aeb-9f65-87b1a4b7c8e0",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C22",
+      "claim": "Several proteins associated with repressive or transcriptionally inactive chromatin, including HP1, PcG (Polycomb group) proteins, PRMD2 methyltransferase, KAP-1, su(var)3-9 methyltrasferase variant (SUV3-9) and the macrohistone variant macroH2A1, are recruited to DNA lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several proteins associated with repressive or transcriptionally inactive chromatin, including HP1, PcG (Polycomb group) proteins, PRMD2 methyltransferase, KAP-1, su(var)3-9 methyltrasferase variant (SUV3-9) and the macrohistone variant macroH2A1, are recruited to DNA lesions (Soria et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "046f2e18-9ee1-4dd5-af3a-e62dfd9cc8ad",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C23",
+      "claim": "Generation of several DSBs distal to the promoter of a reporter gene in mammalian cells leads to ATM-dependent transcriptional repression of this reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, generation of several DSBs distal to the promoter of a reporter gene in mammalian cells leads to ATM-dependent transcriptional repression of this reporter gene (Shanbhag et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "5d7f5225-a3e7-4745-ad39-0b6553233824",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C24",
+      "claim": "ATM-dependent transcriptional repression possibly occurs through phosphorylation of the transcriptional elongation factor ENL.",
+      "claim_type": "EXPLICIT",
+      "source": "generation of several DSBs distal to the promoter of a reporter gene in mammalian cells leads to ATM-dependent transcriptional repression of this reporter gene (Shanbhag et al., 2010), possibly through phosphorylation of the transcriptional elongation factor ENL (Ui et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature and involves speculation about mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "a14e168f-3bc9-4be7-955a-97a3f8470fb4",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C25",
+      "claim": "RNA polymerase I-mediated transcription of rDNA is inhibited in an ATM-dependent manner in the vicinity of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RNA polymerase I-mediated transcription of rDNA is inhibited in an ATM-dependent manner in the vicinity of DSBs (Kruhlak et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "1d19f989-4231-4e7e-bb10-dabb912df253",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C26",
+      "claim": "The steady state RNA levels of genes proximal to a single DSB have been observed to decrease by microarray analysis in S. cerevisiae cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the steady state RNA levels of genes proximal to a single DSB have been observed to decrease by microarray analysis also in S. cerevisiae cells (Lee et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "152cc601-fd53-4727-86cc-72522d034b52",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C27",
+      "claim": "In mammalian cells where individual DSBs were induced at discrete endogenous sequences, only transcription of the DSB-containing gene was affected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a different study in mammalian cells, where individual DSBs were induced at discrete endogenous sequences, showed that only transcription of the DSB-containing gene was affected (Pankotai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "a6436de5-baf7-4170-bf5b-504d64a47df6",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C28",
+      "claim": "Non-coding RNAs that control DDR activation are induced in the surrounding of DSBs in both vertebrates and Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, non-coding RNAs that control DDR activation are induced in the surrounding of DSBs in both vertebrates and Arabidopsis (Francia et al., 2012; Michalik et al., 2012; Wei et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "42e18a62-b2e3-4daf-89c2-bee92a2380f7",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C29",
+      "claim": "Transcription can occur around DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, non-coding RNAs that control DDR activation are induced in the surrounding of DSBs in both vertebrates and Arabidopsis (Francia et al., 2012; Michalik et al., 2012; Wei et al., 2012), indicating that transcription can occur around DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that non-coding RNAs are induced around DSBs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "35924066-df19-479d-9d06-5cc878eb21ea",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C30",
+      "claim": "ATM, macroH2A1, PRMD2 and HP1 proteins are required for DSB resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as DSBs are resected to generate 3\u2032-ended ssDNA, and ATM, macroH2A1, PRMD2 and HP1 proteins are required for this process (Jazayeri et al., 2006; Soria and Almouzni, 2013; Ayrapetov et al., 2014; Khurana et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "a75e9753-ca97-4a40-a027-3af8ca95a712",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C31",
+      "claim": "After 240 min of HO induction, density for the proximal genes BUD5, HMRA2, HMRA1 and TAF2 showed a \u226510-fold decrease compared to time zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, after 240 min of HO induction, density for the proximal genes BUD5, HMRA2, HMRA1 and TAF2 showed a \u226510-fold decrease compared to time zero, while density was only reduced by about twofold for the distal genes SNT1, IMG1 and BUD23 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "f8ef9dfe-a843-45c3-a297-3c7c5e4ff39f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C32",
+      "claim": "After 240 min of HO induction, density was only reduced by about twofold for the distal genes SNT1, IMG1 and BUD23.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, after 240 min of HO induction, density for the proximal genes BUD5, HMRA2, HMRA1 and TAF2 showed a \u226510-fold decrease compared to time zero, while density was only reduced by about twofold for the distal genes SNT1, IMG1 and BUD23 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "491bc251-013c-49be-8f9f-5a419537be18",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C33",
+      "claim": "The level of mRNAs decreased progressively as the distance of the corresponding genes from the DSB diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of these mRNAs decreased progressively as the distance of the corresponding genes from the DSB diminished and such decrease was independent of the strand that was transcribed (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "480bddcf-de9c-4f25-86fc-4c2e319a34b9",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C34",
+      "claim": "The decrease in mRNA levels was independent of the strand that was transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of these mRNAs decreased progressively as the distance of the corresponding genes from the DSB diminished and such decrease was independent of the strand that was transcribed (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "2220a3b5-2f0a-4f2b-809a-20ba6c482e84",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C35",
+      "claim": "All the analyzed mRNAs have half-lives shorter than 50 min.",
+      "claim_type": "EXPLICIT",
+      "source": "These decreases measured 240 min after HO induction were not influenced by mRNA stability, as all the analyzed mRNAs have half-lives shorter than 50 min (Geisberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "3a7f843f-6d9a-4f4f-a6fc-f319ef45d95e",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C36",
+      "claim": "The decreases in mRNA levels measured 240 min after HO induction were not influenced by mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "These decreases measured 240 min after HO induction were not influenced by mRNA stability, as all the analyzed mRNAs have half-lives shorter than 50 min (Geisberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that mRNA half-lives are shorter than the measurement time.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "bc322a36-a9f9-4490-a3c3-4fc7601780c3",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C37",
+      "claim": "Rpb2 association in the surroundings of the DSB decreased and this effect progressively diminished as a function of the distance from the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Rpb2 association in the surroundings of the DSB decreased and this effect progressively diminished as a function of the distance from the DSB (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "9ea7f16f-98ec-4bc9-ab7a-ca096768f4e3",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C38",
+      "claim": "Transcription was inhibited specifically around the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Rpb2 association in the surroundings of the DSB decreased and this effect progressively diminished as a function of the distance from the DSB (Figure 2B), indicating that transcription was inhibited specifically around the DSB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the ChIP data showing decreased Rpb2 binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "06430573-e3d6-4557-93e5-20d98efe5d68",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C39",
+      "claim": "After generation of the HO-induced DSB at the ARG5,6 locus, both the RNA levels of genes located in the surrounding of the DSB and Rbp2 occupancy progressively decreased as the distance of the corresponding genes from the DSB diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "After generation of the HO-induced DSB at the ARG5,6 locus, we found that both the RNA levels of genes located in the surrounding of the DSB (Figure 3A) and Rbp2 occupancy (Figure 3B) progressively decreased as the distance of the corresponding genes from the DSB diminished.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "80aa6fac-b596-47a3-b935-05192bf84562",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C40",
+      "claim": "Similar results were obtained when the HO-induced DSB was generated at the LEU2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained when the HO-induced DSB was generated at the LEU2 locus (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "df7427f9-4cea-47e5-a92d-6af0c87886ff",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C41",
+      "claim": "Inhibition of local transcription is a general response to DSB formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that inhibition of local transcription is a general response to DSB formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from observations at multiple loci (MAT, ARG5,6, LEU2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "29f3e0a7-a775-40b4-8ba0-463419678e77",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C42",
+      "claim": "The amount of RNA transcribed from genes surrounding the DSB was reduced to quite similar extents in HO-induced wild type, mec1\u2206 sml1\u2206, tel1\u2206 and mec1\u2206 tel1\u2206 sml1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, the amount of RNA transcribed from genes surrounding the DSB was reduced to quite similar extents in HO-induced wild type, mec1\u2206 sml1\u2206, tel1\u2206 and mec1\u2206 tel1\u2206 sml1\u2206 cells, with mec1\u2206 sml1\u2206 cells showing a more pronounced decrease.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "f1ecebab-b336-4e4b-a43b-64d361f791cf",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C43",
+      "claim": "Neither Tel1 nor Mec1 are responsible for DSB-induced transcriptional inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that neither Tel1 nor Mec1 are responsible for DSB-induced transcriptional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that transcriptional inhibition occurs in checkpoint kinase mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "82cec1cd-4283-4888-b920-ef222a41180b",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C44",
+      "claim": "A single DSB triggers phosphorylation of histone H2A to form \u03b3H2A, which spreads on each side of the DSB to about 50 kb distance.",
+      "claim_type": "EXPLICIT",
+      "source": "A single DSB triggers phosphorylation of histone H2A to form \u03b3H2A, which spreads on each side of the DSB to about 50 kb distance (Rogakou et al., 1999; Shroff et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "115a7545-3bfc-45f1-ba76-430c2a2f444e",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C45",
+      "claim": "\u03b3H2A diminishes strongly over highly transcribed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, \u03b3H2A diminishes strongly over highly transcribed regions and H2A phosphorylation is rapidly restored if transcription is subsequently inhibited (Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "ec9ae150-25ad-48a8-80a0-14ab6fb4be65",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C46",
+      "claim": "H2A phosphorylation is rapidly restored if transcription is subsequently inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, \u03b3H2A diminishes strongly over highly transcribed regions and H2A phosphorylation is rapidly restored if transcription is subsequently inhibited (Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "b10a8d2c-b1d5-4658-9f08-fbc39418a24b",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C47",
+      "claim": "Not only RNA levels of genes proximal to the DSB still decreased in hta1-S129A cells, but this decrease was more severe than in wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, not only RNA levels of genes proximal to the DSB still decreased in hta1-S129A cells, but this decrease was more severe than in wild type cells (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "a6fcdcf5-cdcf-4f10-8949-2e8f1d1c803c",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C48",
+      "claim": "\u03b3H2A counteracts repression of transcription around the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, not only RNA levels of genes proximal to the DSB still decreased in hta1-S129A cells, but this decrease was more severe than in wild type cells (Figure 5A), indicating that \u03b3H2A counteracts repression of transcription around the DSB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that preventing \u03b3H2A formation enhances transcriptional repression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "45680c62-3760-408d-b0b8-172c06e8ada6",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C49",
+      "claim": "DSB resection is negatively regulated by the checkpoint protein Rad9, which inhibits mainly the Sgs1-Dna2 resection machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "DSB resection is negatively regulated by the checkpoint protein Rad9, which inhibits mainly the Sgs1-Dna2 resection machinery (Bonetti et al., 2015; Ferrari et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "de08a304-b78d-42c9-b382-b10b84bf0002",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C50",
+      "claim": "The lack of \u03b3H2A reduces the amount of Rad9 bound at the DSB ends.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of \u03b3H2A reduces the amount of Rad9 bound at the DSB ends and, as a consequence, hta1-S129A cells resect the DSB ends more efficiently than wild type cells (Eapen et al., 2012; Clerici et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "b6f1196e-573c-4493-a9d4-a8651ea04b28",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C51",
+      "claim": "hta1-S129A cells resect the DSB ends more efficiently than wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of \u03b3H2A reduces the amount of Rad9 bound at the DSB ends and, as a consequence, hta1-S129A cells resect the DSB ends more efficiently than wild type cells (Eapen et al., 2012; Clerici et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature and data in Figure 5C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "b189253f-7d4f-48ba-a6d2-a023be57cc5f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C52",
+      "claim": "SGS1 deletion reduced the accelerated resection in hta1-S129A cells to almost wild type levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, SGS1 deletion, which reduced the accelerated resection in hta1-S129A cells to almost wild type levels (Figure 5C), also reduced their enhanced DSB-induced transcriptional inhibition (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "f75074c6-5a4c-477c-8695-f5b3b6fe530f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C53",
+      "claim": "SGS1 deletion reduced the enhanced DSB-induced transcriptional inhibition in hta1-S129A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, SGS1 deletion, which reduced the accelerated resection in hta1-S129A cells to almost wild type levels (Figure 5C), also reduced their enhanced DSB-induced transcriptional inhibition (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "9dcbd3d9-b768-40f2-a9c8-c9d0f24709b9",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C54",
+      "claim": "rad9\u2206 cells undergo accelerated DSB resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rad9\u2206 cells, which undergo accelerated DSB resection (Lazzaro et al., 2008), showed transcription inhibition around the DSB to the same extent as hta1-S129A cells (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "411f7b95-8301-4987-81b8-393db6ee0558",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C55",
+      "claim": "rad9\u2206 cells showed transcription inhibition around the DSB to the same extent as hta1-S129A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rad9\u2206 cells, which undergo accelerated DSB resection (Lazzaro et al., 2008), showed transcription inhibition around the DSB to the same extent as hta1-S129A cells (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "b8a00289-6cf0-4cc5-9143-d86c03aaec04",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C56",
+      "claim": "\u03b3H2A and Rad9 limit the inhibition of transcription around the DSB ends by counteracting the resection process.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these data indicate that \u03b3H2A and Rad9 limit the inhibition of transcription around the DSB ends by counteracting the resection process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observations that preventing \u03b3H2A or deleting Rad9 enhances both resection and transcriptional inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "c00c0f61-19ea-4456-b5f8-d2551f3675b5",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C57",
+      "claim": "Resection has been reported to initiate asynchronously from the ends of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Resection has been reported to initiate asynchronously from the ends of DSBs (Shroff et al., 2004) and to move about 4 kb/hr (Vaze et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "29a6474c-48d3-4c9b-8807-1959e0d717f8",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C58",
+      "claim": "Resection moves about 4 kb/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Resection has been reported to initiate asynchronously from the ends of DSBs (Shroff et al., 2004) and to move about 4 kb/hr (Vaze et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "725eddc3-6180-41a2-bb56-7942e162a99f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C59",
+      "claim": "After 60 min of HO induction, wild type cells accumulated mostly r2 resection products, indicating that DSB resection in most cells had not proceeded beyond 3.5 kb from the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "After 60 min of HO induction, wild type cells accumulated mostly r2 resection products, indicating that DSB resection in most cells had not proceeded beyond 3.5 kb from the DSB (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by resection data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "d641dc63-6f71-411e-80df-3752effd1c89",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C60",
+      "claim": "At 60 min after HO induction, a strong decrease of Rpb2 occupancy was detected at the TAF2 and BUD5 genes, which are located within 4 kb from either side of the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time point, we detected a strong decrease of Rpb2 occupancy at the TAF2 and BUD5 genes, which are located within 4 kb from either side of the DSB (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "193ea3be-5048-4bc7-bd0f-a79400687c3a",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C61",
+      "claim": "Concomitantly with the progression of 5\u2032\u20133\u2032 resection, the binding of Rpb2 to distal genes progressively diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly with the progression of 5\u2032\u20133\u2032 resection (Figure 6A), also the binding of Rpb2 to distal genes progressively diminished (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "1c34fc41-a796-4a6f-9889-a24da1491c31",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C62",
+      "claim": "The decrease of RNA polymerase II occupancy around the DSB correlates with the time it takes for a DNA-end to become single-stranded.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly with the progression of 5\u2032\u20133\u2032 resection (Figure 6A), also the binding of Rpb2 to distal genes progressively diminished (Figure 6B), suggesting that the decrease of RNA polymerase II occupancy around the DSB correlates with the time it takes for a DNA-end to become single-stranded.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the temporal correlation between resection and Rpb2 dissociation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "7707125d-d348-4869-81b5-6b7767cd59a4",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C63",
+      "claim": "DSB resection in S. cerevisiae is initiated by MRX and Sae2, which catalyze an endonucleolytic cleavage of the 5\u2032 strands.",
+      "claim_type": "EXPLICIT",
+      "source": "DSB resection in S. cerevisiae is initiated by MRX and Sae2, which catalyze an endonucleolytic cleavage of the 5\u2032 strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DSB resection mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "c527c350-d62d-4cab-bf79-69e6b0b0787d",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C64",
+      "claim": "The partially resected 5\u2032 strand can be further processed by the nucleases Exo1 and Dna2, the latter working in concert with the 3\u2032\u20135\u2032 helicase Sgs1.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting partially resected 5\u2032 strand can be further processed by the nucleases Exo1 and Dna2, the latter working in concert with the 3\u2032\u20135\u2032 helicase Sgs1 (Mimitou and Symington, 2008; Zhu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "8f32f137-1eaa-47ac-bb31-d5928555678c",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C65",
+      "claim": "DSB resection is severely affected by either simultaneous inactivation of Exo1 and Sgs1 or the lack of MRX.",
+      "claim_type": "EXPLICIT",
+      "source": "DSB resection is severely affected by either simultaneous inactivation of Exo1 and Sgs1 or the lack of MRX, with the latter not only providing the endonuclease activity to initiate resection, but also promoting the loading of Exo1, Sgs1 and Dna2 at DSB ends (Shim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "f2cfa825-10f6-4639-9d77-a522986deb4d",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C66",
+      "claim": "MRX not only provides the endonuclease activity to initiate resection, but also promotes the loading of Exo1, Sgs1 and Dna2 at DSB ends.",
+      "claim_type": "EXPLICIT",
+      "source": "DSB resection is severely affected by either simultaneous inactivation of Exo1 and Sgs1 or the lack of MRX, with the latter not only providing the endonuclease activity to initiate resection, but also promoting the loading of Exo1, Sgs1 and Dna2 at DSB ends (Shim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "34ad4336-1fe2-405b-8af0-3590047c8682",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C67",
+      "claim": "Neither the amount of Rpb2 bound around the HO-induced DSB nor RNA levels were decreased in exo1\u2206 sgs1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, neither the amount of Rpb2 bound around the HO-induced DSB (Figure 6C) nor RNA levels were decreased in exo1\u2206 sgs1\u2206 cells (Figure 6D), which had the most severe DSB resection defect compared to mre11\u2206 and exo1\u2206 single mutants (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 6C, 6D, and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "ed801df0-5f61-4783-9c06-077002e6ea6b",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C68",
+      "claim": "exo1\u2206 sgs1\u2206 cells had the most severe DSB resection defect compared to mre11\u2206 and exo1\u2206 single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, neither the amount of Rpb2 bound around the HO-induced DSB (Figure 6C) nor RNA levels were decreased in exo1\u2206 sgs1\u2206 cells (Figure 6D), which had the most severe DSB resection defect compared to mre11\u2206 and exo1\u2206 single mutants (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by resection data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "72095965-d898-48c8-adc1-0fa16210276f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C69",
+      "claim": "RNA levels only slightly decreased in HO-induced mre11\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA levels only slightly decreased in HO-induced mre11\u2206 cells (Figure 6D), which were severely defective in the accumulation of resection products (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 6D and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "9107f4a1-bc65-4111-b375-9af598e99b38",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C70",
+      "claim": "mre11\u2206 cells were severely defective in the accumulation of resection products.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA levels only slightly decreased in HO-induced mre11\u2206 cells (Figure 6D), which were severely defective in the accumulation of resection products (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by resection data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "3ef3f0c3-d084-4543-863d-87be53cc234c",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C71",
+      "claim": "Only the RNA levels of genes proximal to the break site were diminished in exo1\u2206 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "while only the RNA levels of genes proximal to the break site were diminished in exo1\u2206 mutant cells (Figure 6D), which initiated DSB resection but failed to accumulate resection products longer than 3.5 kb (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 6D and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "a938dd85-6676-404e-bc76-7a08c263ede4",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C72",
+      "claim": "exo1\u2206 mutant cells initiated DSB resection but failed to accumulate resection products longer than 3.5 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "while only the RNA levels of genes proximal to the break site were diminished in exo1\u2206 mutant cells (Figure 6D), which initiated DSB resection but failed to accumulate resection products longer than 3.5 kb (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by resection data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "23babc58-888c-4471-a028-91246f8a5718",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C73",
+      "claim": "Loss of transcription around a DSB in S. cerevisiae is due to the conversion of dsDNA to ssDNA by the resection machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of transcription around a DSB in S. cerevisiae is due to the conversion of dsDNA to ssDNA by the resection machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "6bb608d6-cf0c-479b-ad4a-fa38e5498e83",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C74",
+      "claim": "Induction of a DSB at the MAT locus in S. cerevisiae cells leads to a decrease of the RNA steady state levels of proximal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we further extend the observation that induction of a DSB at the MAT locus in S. cerevisiae cells leads to a decrease of the RNA steady state levels of proximal genes (Lee et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature and extended by current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "2be77aba-abd3-40eb-9bc3-6d103621ba52",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C75",
+      "claim": "The decrease in RNA steady state levels is due to dissociation of RNA polymerase II from its template DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we further extend the observation that induction of a DSB at the MAT locus in S. cerevisiae cells leads to a decrease of the RNA steady state levels of proximal genes (Lee et al., 2000), by demonstrating that this decrease is not locus specific and is due to dissociation of RNA polymerase II from its template DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "bc51092c-50ab-4a8e-b6b6-855e6b96bbbd",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C76",
+      "claim": "The decrease in RNA steady state levels is not locus specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we further extend the observation that induction of a DSB at the MAT locus in S. cerevisiae cells leads to a decrease of the RNA steady state levels of proximal genes (Lee et al., 2000), by demonstrating that this decrease is not locus specific and is due to dissociation of RNA polymerase II from its template DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data at multiple loci in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "bc2ed051-164f-4a9c-920b-98e147cfa709",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C77",
+      "claim": "Mammalian ATM is required for transcription silencing around a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the reported requirement of mammalian ATM for transcription silencing around a DSB (Kruhlak et al., 2007; Shanbhag et al., 2010; Ui et al., 2015), neither Tel1 nor Mec1 appear to be necessary for transcriptional inhibition at the DSB site in S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "ac881603-be20-405e-8e48-eca8b5d9536b",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C78",
+      "claim": "Mutants defective in DSB resection fail to inhibit transcription around a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that mutants defective in DSB resection fail to inhibit transcription around a DSB, and the extent of this failure correlates with the severity of the DSB resection defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "fc001b87-119c-4623-8292-f47d4eed62e0",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C79",
+      "claim": "Accelerating DSB resection by preventing \u03b3H2A generation enhances DSB-induced transcriptional inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, accelerating DSB resection by preventing \u03b3H2A generation or by eliminating Rad9 enhances this DSB-induced transcriptional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "69fa0a9c-1eb9-493b-a871-d7ddb77596ff",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C80",
+      "claim": "Accelerating DSB resection by eliminating Rad9 enhances DSB-induced transcriptional inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, accelerating DSB resection by preventing \u03b3H2A generation or by eliminating Rad9 enhances this DSB-induced transcriptional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "dc2fe504-1747-465a-8751-3a7c48a43027",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C81",
+      "claim": "Loss of transcription around a DSB in S. cerevisiae is not due to an active regulatory mechanism, but to the conversion of the DSB ends from dsDNA to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that loss of transcription around a DSB in S. cerevisiae is not due to an active regulatory mechanism, but to the conversion of the DSB ends from dsDNA to ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "645bceff-d8ab-4ab0-b6be-64b6391c0186",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C82",
+      "claim": "Nucleolytic processing of the template DNA strand should stop transcription of the corresponding gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleolytic processing of the template DNA strand should stop transcription of the corresponding gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the requirement of DNA template for transcription.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "7d428154-7818-4a15-997d-803ca33499be",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C83",
+      "claim": "mRNA levels and RNA polymerase II occupancy around a DSB decrease independently of the strand that is transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that mRNA levels and RNA polymerase II occupancy around a DSB decrease independently of the strand that is transcribed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "6770e1c1-dce6-4112-b7e1-037a74b4d581",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C84",
+      "claim": "Loss of non-template DNA strands also impedes transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that mRNA levels and RNA polymerase II occupancy around a DSB decrease independently of the strand that is transcribed, indicating that loss of non-template DNA strands also impedes transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that transcription is inhibited regardless of which strand is transcribed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "bd0e252e-755d-4632-abea-a6a8b56b839e",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C85",
+      "claim": "The most likely reason why the conversion from dsDNA to ssDNA stops transcription is that the transcription machinery binds only dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the most likely reason of why the conversion from dsDNA to ssDNA stops transcription is that the transcription machinery binds only dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and supported by literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "46431775-f6b1-47f5-b6ff-78bccb31ad54",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C86",
+      "claim": "Within a region containing a stretch of dsDNA preceding a single-strand 3\u2032 DNA end, purified RNA polymerase II transcribes within the dsDNA portion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, it has been shown that within a region containing a stretch of dsDNA preceding a single-strand 3\u2032 DNA end, purified RNA polymerase II transcribes within the dsDNA portion (Lilley and Houghton, 1979; Kadesch and Chamberlin, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "bed6ab50-a16e-4fbf-8fdf-f2f566db45da",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C87",
+      "claim": "Structural analyses of transcription initiation reveals that RNA polymerase II and its associated General Transcription Factors bind double-stranded promoter DNA to form a closed preinitiation complex (PIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, structural analyses of transcription initiation reveals that RNA polymerase II and its associated General Transcription Factors bind double-stranded promoter DNA to form a closed preinitiation complex (PIC), where the transcriptional machinery interacts with both template and non-template DNA strands (Liu et al., 2013; Sainsbury et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "213da7de-78c8-4fd3-8145-763922266385",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C88",
+      "claim": "In the closed preinitiation complex (PIC), the transcriptional machinery interacts with both template and non-template DNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, structural analyses of transcription initiation reveals that RNA polymerase II and its associated General Transcription Factors bind double-stranded promoter DNA to form a closed preinitiation complex (PIC), where the transcriptional machinery interacts with both template and non-template DNA strands (Liu et al., 2013; Sainsbury et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "e1494f67-4cff-45aa-9e2f-0a0b2783ab41",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C89",
+      "claim": "Removal of either the template or non-template strands prevents binding of T7 RNA polymerase to the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, removal of either the template or non-template strands prevents binding of T7 RNA polymerase to the promoter, supporting the importance of protein-dsDNA interaction in the spatial organization of the transcriptional initiation complex (Maslak and Martin, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "3d249d71-24c8-4604-86d1-c43846c9ba4e",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C90",
+      "claim": "The double-stranded promoter DNA follows a straight path in the PIC complex and this rigidity allows the subsequent transition from a closed to an open promoter complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the double-stranded promoter DNA follows a straight path in the PIC complex and this rigidity allows the subsequent transition from a closed to an open promoter complex, where a central DNA region is melted leading to a transcription bubble in which the DNA template strand enters the RNA polymerase II cleft (Murakami et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "c521fd86-ca4d-4b45-8f6e-7a40994738fc",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C91",
+      "claim": "Competition between the non-template DNA strand and the RNA transcript for base-pairing with the DNA template strand is important for maintaining structure and function during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, competition between the non-template DNA strand and the RNA transcript for base-pairing with the DNA template strand was shown to be important for maintaining structure and function during elongation (Kireeva et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "fc664c46-11a0-41af-836c-9c0581f73579",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C92",
+      "claim": "DSB-induced transcriptional repression in mammals is reportedly an active mechanism controlled by ATM.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, while DSB-induced transcriptional repression in mammals is reportedly an active mechanism controlled by ATM, the stop of transcription around a DSB in S. cerevisiae cells is due to the conversion of dsDNA to ssDNA that is necessary to initiate DSB repair by HR (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "525ea87c-7b8f-4c4e-a1a2-93b7e34c920d",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C93",
+      "claim": "While Mec1 and Tel1 are not required to resect a DSB, ATM and the chromatin compaction promoting proteins macroH2A1, PRMD2 and HP1 promote end resection by facilitating the loading of BRCA1 at the DSB ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, while Mec1 and Tel1 are not required to resect a DSB, ATM and the chromatin compaction promoting proteins macroH2A1, PRMD2 and HP1 promote end resection by facilitating the loading of BRCA1 at the DSB ends (Soria and Almouzni, 2013; Ayrapetov et al., 2014; Khurana et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature and data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "99ebeb51-0ea0-4f53-aff8-bfa0afc74a67",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C94",
+      "claim": "In human cells, inactivation of the end resection factor CtIP does not restore transcription around the DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, although in human cells inactivation of the end resection factor CtIP does not restore trascription around the DSB (Shanbhag et al., 2010), other resection machineries are known to be active in resecting DSBs in CtIP-depleted cells (Tomimatsu et al., 2012) and could contribute to inhibit transcription around the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "47f55f18-c17e-44c0-b082-75fc5303516f",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C95",
+      "claim": "Other resection machineries are known to be active in resecting DSBs in CtIP-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, although in human cells inactivation of the end resection factor CtIP does not restore trascription around the DSB (Shanbhag et al., 2010), other resection machineries are known to be active in resecting DSBs in CtIP-depleted cells (Tomimatsu et al., 2012) and could contribute to inhibit transcription around the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "898fc012-22b4-4edb-bef4-deb507eb2f72",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C96",
+      "claim": "Other resection machineries could contribute to inhibit transcription around the DSB in CtIP-depleted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, although in human cells inactivation of the end resection factor CtIP does not restore trascription around the DSB (Shanbhag et al., 2010), other resection machineries are known to be active in resecting DSBs in CtIP-depleted cells (Tomimatsu et al., 2012) and could contribute to inhibit transcription around the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential mechanisms in mammalian cells.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "0963d1c9-c2ac-49a1-8a07-e453996eb022",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C97",
+      "claim": "Resection of the 5\u2032 strands at both DSB ends leads to release of the transcription machinery and to subsequent transcription arrest independently of whether the degraded DNA strand acts as template or non-template.",
+      "claim_type": "EXPLICIT",
+      "source": "Resection of the 5\u2032 strands at both DSB ends leads to release of the transcription machinery (dashed lines) and to subsequent transcription arrest independently of whether the degraded DNA strand acts as template or non-template.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model in Figure 7 and supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "d889b0d3-6c2b-4c55-9f41-2486d1505e03",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "claim_id": "C98",
+      "claim": "Generation of ssDNA at the DSB ends prevents reinitiation events.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the RNA polymerase binds double-stranded promoter DNA, generation of ssDNA at the DSB ends prevents reinitiation events (bar-headed line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the model in Figure 7 and inferred from the requirement of dsDNA for RNA polymerase binding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c4c134a2-3059-4919-90bd-ade5956c4528",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DSB induction at the MAT locus causes distance-dependent transcriptional inhibition. RNA-seq and qRT-PCR show that mRNA levels of genes proximal to the DSB decrease \u226510-fold, while distal genes show only ~2-fold reduction. ChIP analysis demonstrates that Rpb2 (RNA polymerase II) occupancy decreases progressively as a function of distance from the DSB, confirming transcriptional inhibition rather than post-transcriptional effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 are well-supported by multiple complementary experimental approaches (RNA-seq, qRT-PCR, ChIP) shown in Figures 1 and 2. The data consistently demonstrate distance-dependent transcriptional inhibition around the DSB. The control for mRNA stability (C35-C36) strengthens the conclusion that changes reflect transcriptional rather than post-transcriptional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "215a331e-9735-49d1-8977-def6499898c4",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DSB-induced transcriptional inhibition is a general, locus-independent phenomenon in S. cerevisiae. Similar distance-dependent decreases in RNA levels and Rpb2 occupancy occur at ARG5,6 and LEU2 loci, demonstrating that transcriptional inhibition is not specific to the MAT locus and results from RNA polymerase II dissociation from template DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C74-C76 are supported by data from three independent loci (MAT, ARG5,6, LEU2) shown in Figures 2 and 3. The consistency across different genomic locations provides strong evidence for a general mechanism. The demonstration that Rpb2 dissociates from DNA (C75) directly addresses the molecular basis of transcriptional inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "7c3f0505-a456-4a9e-9703-f87d1c8111c8",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DSB-induced transcriptional inhibition in S. cerevisiae occurs independently of checkpoint kinases Tel1/ATM and Mec1/ATR. RNA levels decrease similarly in wild-type, mec1\u0394, tel1\u0394, and double mutant cells, contrasting with the ATM-dependent mechanism reported in mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C42-C43 are supported by data in Figure 4 showing comparable transcriptional inhibition across all checkpoint kinase mutants. This represents a key mechanistic distinction from mammalian systems (C77). The experimental design appropriately controls for cell cycle effects by using nocodazole arrest. The conclusion that Tel1/Mec1 are not required is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "5cfae229-9c00-495f-96af-ed6f9155bf8b",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u03b3H2A counteracts DSB-induced transcriptional inhibition by limiting resection. The hta1-S129A mutant (lacking \u03b3H2A) shows enhanced transcriptional repression and accelerated resection compared to wild-type. Deletion of SGS1 suppresses both the enhanced resection and transcriptional inhibition in hta1-S129A cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 and C79 are supported by coordinated data in Figure 5 showing that preventing \u03b3H2A formation enhances both resection (Figure 5C) and transcriptional inhibition (Figure 5A). The genetic suppression by sgs1\u0394 provides strong evidence linking resection extent to transcriptional inhibition. The mechanistic connection through Rad9 recruitment (C50) is supported by cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "db9157cd-5e37-4dcc-a78b-e47ec86ec0b5",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Rad9 limits DSB-induced transcriptional inhibition by counteracting resection. rad9\u0394 cells show enhanced transcriptional inhibition comparable to hta1-S129A cells and undergo accelerated DSB resection, indicating that both \u03b3H2A and Rad9 function to limit transcriptional repression through their anti-resection activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C54-C56, and C80 are supported by data in Figure 5A showing that rad9\u0394 cells exhibit transcriptional inhibition similar to hta1-S129A cells. The known role of Rad9 in inhibiting resection (C49, C54) provides a mechanistic link. The convergence of \u03b3H2A and Rad9 phenotypes strengthens the conclusion that resection drives transcriptional inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "652a016c-8061-445e-9e5e-62b78b053780",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The temporal progression of transcriptional inhibition correlates with resection kinetics. At 60 min post-DSB induction, resection has proceeded ~3.5 kb and Rpb2 occupancy decreases strongly at genes within 4 kb. As resection progresses over time, Rpb2 binding to more distal genes progressively diminishes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by coordinated temporal analysis in Figure 6A-B showing correlation between resection progression and Rpb2 dissociation. The spatial and temporal correspondence provides strong evidence for a causal relationship. However, the correlation is inferential (C62) rather than directly demonstrated through perturbation at specific time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "aa47415f-b50c-45af-a15c-30d4fadaa44b",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DSB resection is necessary and sufficient for transcriptional inhibition in S. cerevisiae. Resection-defective mutants (exo1\u0394 sgs1\u0394, mre11\u0394) fail to inhibit transcription, with the extent of failure correlating with resection defect severity. The exo1\u0394 single mutant shows limited resection (~3.5 kb) and correspondingly limited transcriptional inhibition of only proximal genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C67-C73 are strongly supported by Figure 6 showing dose-dependent relationship between resection capacity and transcriptional inhibition across multiple mutants. The exo1\u0394 sgs1\u0394 double mutant with the most severe resection defect shows no transcriptional inhibition, while partial resection in exo1\u0394 causes partial inhibition. This provides compelling evidence that resection drives transcriptional inhibition (C73, C81).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The conversion of DSB ends from dsDNA to ssDNA by resection is responsible for loss of transcription around DSBs in S. cerevisiae. Transcriptional inhibition occurs independently of which strand is transcribed, indicating that loss of either template or non-template strand impedes transcription, likely because RNA polymerase II requires dsDNA for binding and function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C73, C81-C85, C97-C98 represent the central conclusion, well-supported by the collective experimental evidence. The strand-independence observation (C83-C84) is critical and supported by Figure 2A data. The mechanistic interpretation that RNA polymerase requires dsDNA (C85) is reasonable and supported by cited structural studies (C86-C91), though the manuscript does not directly test this mechanism in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "04a5eae7-11a3-4676-928c-071f7526394d",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RNA polymerase II and associated transcription factors require dsDNA for proper function. Structural and biochemical studies show that the preinitiation complex interacts with both DNA strands, dsDNA rigidity is required for promoter opening, and competition between non-template strand and RNA transcript is important for elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 are supported by appropriate citations to structural and biochemical literature. These claims provide mechanistic context for interpreting the experimental observations but represent prior knowledge rather than new findings. The citations appear appropriate and the mechanistic model is consistent with established understanding of transcription.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "28db6148-8373-43a2-a896-bbc5af7b620c",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In mammalian cells, ATM-dependent transcriptional silencing occurs around DSBs, possibly through phosphorylation of elongation factor ENL. This represents an active regulatory mechanism distinct from the passive resection-based mechanism in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23-C25, C77, and C92 accurately represent prior work in mammalian systems based on appropriate citations. These claims establish important context for the current study by highlighting the mechanistic difference between yeast and mammals. However, C24 appropriately notes uncertainty about the ENL mechanism ('possibly').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "8e28ca6f-3e3b-47d2-b73c-0981dd4aa2df",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The relationship between resection and transcriptional inhibition in mammalian cells remains unclear. While ATM and chromatin-associated proteins promote resection in mammals, CtIP inactivation does not restore transcription, possibly because other resection machineries remain active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C96 appropriately acknowledge uncertainty about whether resection contributes to transcriptional inhibition in mammals. C93 is supported by citations, but C96 is explicitly speculative ('could contribute'). The manuscript correctly identifies this as an open question requiring future investigation. The CtIP data (C94) suggests complexity but does not rule out a resection contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    },
+    {
+      "id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62",
+      "content_id": "0354f58f-ffac-4917-a325-390509390c2a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge about DSB biology, DNA damage response, resection machinery, chromatin modifications, and transcription. These claims establish the scientific context including: DSB resection mechanisms (MRX, Sae2, Exo1, Sgs1-Dna2), checkpoint kinase functions, \u03b3H2A spreading, chromatin remodeling, and prior observations of transcriptional changes near DSBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C8, C10-C22, C26-C30, C35, C44-C46, C49, C57-C58, C63-C66, and C82 represent established knowledge appropriately cited from literature. These provide essential context but are not novel findings. The citations appear appropriate and the background information is accurately represented. C82 is a logical inference about template strand requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:37:43.469498Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a75e9753-ca97-4a40-a027-3af8ca95a712",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "f8ef9dfe-a843-45c3-a297-3c7c5e4ff39f",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "491bc251-013c-49be-8f9f-5a419537be18",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "480bddcf-de9c-4f25-86fc-4c2e319a34b9",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "3a7f843f-6d9a-4f4f-a6fc-f319ef45d95e",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "bc322a36-a9f9-4490-a3c3-4fc7601780c3",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "9ea7f16f-98ec-4bc9-ab7a-ca096768f4e3",
+      "result_id": "c4c134a2-3059-4919-90bd-ade5956c4528"
+    },
+    {
+      "claim_id": "06430573-e3d6-4557-93e5-20d98efe5d68",
+      "result_id": "215a331e-9735-49d1-8977-def6499898c4"
+    },
+    {
+      "claim_id": "80aa6fac-b596-47a3-b935-05192bf84562",
+      "result_id": "215a331e-9735-49d1-8977-def6499898c4"
+    },
+    {
+      "claim_id": "df7427f9-4cea-47e5-a92d-6af0c87886ff",
+      "result_id": "215a331e-9735-49d1-8977-def6499898c4"
+    },
+    {
+      "claim_id": "6bb608d6-cf0c-479b-ad4a-fa38e5498e83",
+      "result_id": "215a331e-9735-49d1-8977-def6499898c4"
+    },
+    {
+      "claim_id": "2be77aba-abd3-40eb-9bc3-6d103621ba52",
+      "result_id": "215a331e-9735-49d1-8977-def6499898c4"
+    },
+    {
+      "claim_id": "bc51092c-50ab-4a8e-b6b6-855e6b96bbbd",
+      "result_id": "215a331e-9735-49d1-8977-def6499898c4"
+    },
+    {
+      "claim_id": "2d85a42f-8c87-4283-8ddb-6db9dc1fb215",
+      "result_id": "7c3f0505-a456-4a9e-9703-f87d1c8111c8"
+    },
+    {
+      "claim_id": "29f3e0a7-a775-40b4-8ba0-463419678e77",
+      "result_id": "7c3f0505-a456-4a9e-9703-f87d1c8111c8"
+    },
+    {
+      "claim_id": "f1ecebab-b336-4e4b-a43b-64d361f791cf",
+      "result_id": "7c3f0505-a456-4a9e-9703-f87d1c8111c8"
+    },
+    {
+      "claim_id": "bc2ed051-164f-4a9c-920b-98e147cfa709",
+      "result_id": "7c3f0505-a456-4a9e-9703-f87d1c8111c8"
+    },
+    {
+      "claim_id": "ac881603-be20-405e-8e48-eca8b5d9536b",
+      "result_id": "7c3f0505-a456-4a9e-9703-f87d1c8111c8"
+    },
+    {
+      "claim_id": "b10a8d2c-b1d5-4658-9f08-fbc39418a24b",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "a6fcdcf5-cdcf-4f10-8949-2e8f1d1c803c",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "de08a304-b78d-42c9-b382-b10b84bf0002",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "b6f1196e-573c-4493-a9d4-a8651ea04b28",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "b189253f-7d4f-48ba-a6d2-a023be57cc5f",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "f75074c6-5a4c-477c-8695-f5b3b6fe530f",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "fc001b87-119c-4623-8292-f47d4eed62e0",
+      "result_id": "5cfae229-9c00-495f-96af-ed6f9155bf8b"
+    },
+    {
+      "claim_id": "95bca176-3c9f-42c7-a4eb-57da6b909d2c",
+      "result_id": "db9157cd-5e37-4dcc-a78b-e47ec86ec0b5"
+    },
+    {
+      "claim_id": "9dcbd3d9-b768-40f2-a9c8-c9d0f24709b9",
+      "result_id": "db9157cd-5e37-4dcc-a78b-e47ec86ec0b5"
+    },
+    {
+      "claim_id": "411f7b95-8301-4987-81b8-393db6ee0558",
+      "result_id": "db9157cd-5e37-4dcc-a78b-e47ec86ec0b5"
+    },
+    {
+      "claim_id": "b8a00289-6cf0-4cc5-9143-d86c03aaec04",
+      "result_id": "db9157cd-5e37-4dcc-a78b-e47ec86ec0b5"
+    },
+    {
+      "claim_id": "69fa0a9c-1eb9-493b-a871-d7ddb77596ff",
+      "result_id": "db9157cd-5e37-4dcc-a78b-e47ec86ec0b5"
+    },
+    {
+      "claim_id": "725eddc3-6180-41a2-bb56-7942e162a99f",
+      "result_id": "652a016c-8061-445e-9e5e-62b78b053780"
+    },
+    {
+      "claim_id": "d641dc63-6f71-411e-80df-3752effd1c89",
+      "result_id": "652a016c-8061-445e-9e5e-62b78b053780"
+    },
+    {
+      "claim_id": "193ea3be-5048-4bc7-bd0f-a79400687c3a",
+      "result_id": "652a016c-8061-445e-9e5e-62b78b053780"
+    },
+    {
+      "claim_id": "1c34fc41-a796-4a6f-9889-a24da1491c31",
+      "result_id": "652a016c-8061-445e-9e5e-62b78b053780"
+    },
+    {
+      "claim_id": "403fcc19-81c0-45d6-9207-1092009bf8e6",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "e0ef3869-7d0a-439d-91cc-70796257d192",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "34ad4336-1fe2-405b-8af0-3590047c8682",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "ed801df0-5f61-4783-9c06-077002e6ea6b",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "72095965-d898-48c8-adc1-0fa16210276f",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "9107f4a1-bc65-4111-b375-9af598e99b38",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "3ef3f0c3-d084-4543-863d-87be53cc234c",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "a938dd85-6676-404e-bc76-7a08c263ede4",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "23babc58-888c-4471-a028-91246f8a5718",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "ac881603-be20-405e-8e48-eca8b5d9536b",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "dc2fe504-1747-465a-8751-3a7c48a43027",
+      "result_id": "aa47415f-b50c-45af-a15c-30d4fadaa44b"
+    },
+    {
+      "claim_id": "fda5bfc5-866a-462e-a109-003ac559dbfc",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "23babc58-888c-4471-a028-91246f8a5718",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "dc2fe504-1747-465a-8751-3a7c48a43027",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "7d428154-7818-4a15-997d-803ca33499be",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "6770e1c1-dce6-4112-b7e1-037a74b4d581",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "bd0e252e-755d-4632-abea-a6a8b56b839e",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "0963d1c9-c2ac-49a1-8a07-e453996eb022",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "d889b0d3-6c2b-4c55-9f41-2486d1505e03",
+      "result_id": "04c2cade-d8e9-4372-8bfc-df7b7da2a343"
+    },
+    {
+      "claim_id": "46431775-f6b1-47f5-b6ff-78bccb31ad54",
+      "result_id": "04a5eae7-11a3-4676-928c-071f7526394d"
+    },
+    {
+      "claim_id": "bed6ab50-a16e-4fbf-8fdf-f2f566db45da",
+      "result_id": "04a5eae7-11a3-4676-928c-071f7526394d"
+    },
+    {
+      "claim_id": "213da7de-78c8-4fd3-8145-763922266385",
+      "result_id": "04a5eae7-11a3-4676-928c-071f7526394d"
+    },
+    {
+      "claim_id": "e1494f67-4cff-45aa-9e2f-0a0b2783ab41",
+      "result_id": "04a5eae7-11a3-4676-928c-071f7526394d"
+    },
+    {
+      "claim_id": "3d249d71-24c8-4604-86d1-c43846c9ba4e",
+      "result_id": "04a5eae7-11a3-4676-928c-071f7526394d"
+    },
+    {
+      "claim_id": "c521fd86-ca4d-4b45-8f6e-7a40994738fc",
+      "result_id": "04a5eae7-11a3-4676-928c-071f7526394d"
+    },
+    {
+      "claim_id": "89b0d576-f404-422c-90e5-78f32637c69f",
+      "result_id": "28db6148-8373-43a2-a896-bbc5af7b620c"
+    },
+    {
+      "claim_id": "046f2e18-9ee1-4dd5-af3a-e62dfd9cc8ad",
+      "result_id": "28db6148-8373-43a2-a896-bbc5af7b620c"
+    },
+    {
+      "claim_id": "5d7f5225-a3e7-4745-ad39-0b6553233824",
+      "result_id": "28db6148-8373-43a2-a896-bbc5af7b620c"
+    },
+    {
+      "claim_id": "a14e168f-3bc9-4be7-955a-97a3f8470fb4",
+      "result_id": "28db6148-8373-43a2-a896-bbc5af7b620c"
+    },
+    {
+      "claim_id": "bc2ed051-164f-4a9c-920b-98e147cfa709",
+      "result_id": "28db6148-8373-43a2-a896-bbc5af7b620c"
+    },
+    {
+      "claim_id": "fc664c46-11a0-41af-836c-9c0581f73579",
+      "result_id": "28db6148-8373-43a2-a896-bbc5af7b620c"
+    },
+    {
+      "claim_id": "525ea87c-7b8f-4c4e-a1a2-93b7e34c920d",
+      "result_id": "8e28ca6f-3e3b-47d2-b73c-0981dd4aa2df"
+    },
+    {
+      "claim_id": "99ebeb51-0ea0-4f53-aff8-bfa0afc74a67",
+      "result_id": "8e28ca6f-3e3b-47d2-b73c-0981dd4aa2df"
+    },
+    {
+      "claim_id": "47f55f18-c17e-44c0-b082-75fc5303516f",
+      "result_id": "8e28ca6f-3e3b-47d2-b73c-0981dd4aa2df"
+    },
+    {
+      "claim_id": "898fc012-22b4-4edb-bef4-deb507eb2f72",
+      "result_id": "8e28ca6f-3e3b-47d2-b73c-0981dd4aa2df"
+    },
+    {
+      "claim_id": "0b73d8b0-7a99-4c6c-9dad-a9c5c27d0057",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "d81c863b-1036-46ad-89c1-2a580e58e5a4",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "9eb9445a-f0b0-4517-92e7-6770ed364b75",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "ee9d47ae-020c-42e0-be85-cd9fbc24eb28",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "e74599a1-956c-4951-9d02-4c8715519cda",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "6c8a1f95-f23e-48c8-a519-6a2307e351fc",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "36a44ced-ecf1-4a3b-9a03-5349716250d1",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "ab0794fb-908e-4e9f-942b-8ba8d034d846",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "b980450a-4812-42d0-b5de-92fa3b84a576",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "2f014df6-26ad-45e7-8dce-521bf088d858",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "23325bfb-d493-4001-b179-0d19ab605eb9",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "dd6c7dab-4492-40f3-8f4b-e9cae2558d95",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "7f1fa527-3396-44bd-b28b-070572e71fcd",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "a0264c35-018e-4a28-8ebc-854ed67a1c44",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "f995c5ee-ed1b-4aeb-9f65-87b1a4b7c8e0",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "1d19f989-4231-4e7e-bb10-dabb912df253",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "152cc601-fd53-4727-86cc-72522d034b52",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "a6436de5-baf7-4170-bf5b-504d64a47df6",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "42e18a62-b2e3-4daf-89c2-bee92a2380f7",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "35924066-df19-479d-9d06-5cc878eb21ea",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "2220a3b5-2f0a-4f2b-809a-20ba6c482e84",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "82cec1cd-4283-4888-b920-ef222a41180b",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "115a7545-3bfc-45f1-ba76-430c2a2f444e",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "ec9ae150-25ad-48a8-80a0-14ab6fb4be65",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "45680c62-3760-408d-b0b8-172c06e8ada6",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "c00c0f61-19ea-4456-b5f8-d2551f3675b5",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "29a6474c-48d3-4c9b-8807-1959e0d717f8",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "7707125d-d348-4869-81b5-6b7767cd59a4",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "c527c350-d62d-4cab-bf79-69e6b0b0787d",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "8f32f137-1eaa-47ac-bb31-d5928555678c",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "f2cfa825-10f6-4639-9d77-a522986deb4d",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    },
+    {
+      "claim_id": "645bceff-d8ab-4ab0-b6be-64b6391c0186",
+      "result_id": "e2190fe8-8ec9-40f5-bad1-a7160c128d62"
+    }
+  ],
+  "comparisons": []
+}

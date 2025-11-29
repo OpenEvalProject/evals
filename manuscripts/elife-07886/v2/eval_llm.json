@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript establishes the theoretical background that PAC has been observed in humans and interpreted as reflecting phase coding, but this link has not been empirically validated. Prior work in rodents and monkeys has demonstrated phase-coded neural activity, and LFO phase can decode behaviorally relevant information, but the relationship between PAC and phase coding in humans remained untested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 accurately characterize the state of prior knowledge through appropriate citations. The authors correctly identify a gap in the literature (C3, C18) that PAC in humans has been assumed to reflect phase coding without direct evidence. This provides appropriate motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study analyzed intracranial EEG recordings from 167 electrodes in six epilepsy patients viewing images from four categories (houses, tools, scenes, faces). Recordings were properly filtered, artifact-rejected, and balanced across categories. At least 20% of electrodes in each patient showed significant PAC (72/167 total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C76 provide comprehensive methodological details with appropriate ethical approvals and data quality controls. The inclusion of 32 ipsilateral electrodes from one patient is justified and validated through control analysis (C73). Sample sizes and trial numbers are adequate and balanced across conditions (C75-C76).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PAC was observed at 43% of electrodes (72/167), with HFA increasing ~150ms after stimulus onset and occurring in 66% of trials. Slow-modulating frequencies clustered in the delta band (0.5-4 Hz), while HFA modulated frequencies clustered around slow (~32 Hz) and fast (~110 Hz) gamma. HFA was typically maximal near the oscillatory trough (180\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C28 are well-supported by appropriate statistical tests (ANOVA, chi-square, Rayleigh test) with reported effect sizes. The OTC method (C77-C78) provides a data-driven approach to identify PAC. Control analyses using MI methods (C81-C83) confirm the main findings, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "87% (63/72) of PAC+ electrodes showed significant phase clustering for all four categories. Phase clustering was observed in each patient and did not vary across categories at FMAX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 demonstrate that PAC occurs consistently across all stimulus categories using appropriate statistical tests (Rayleigh test with Bonferroni correction, ANOVA). This is a necessary prerequisite for testing whether PAC relates to category-specific phase coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C46"
+    ],
+    "result": "78% (49/63) of PAC+ electrodes showed unique phase-clustering profiles for at least one category (DS=3), with at least 15% of electrodes in each patient showing this effect. Categories with larger difference scores exhibited larger phase differences (maximally 35\u00b0 offset). Phase-coding was equally likely at all phases and for all categories, supporting that HFA at distinct phases and frequencies reflects category-specific representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C46 provide strong evidence for category-specific phase coding using the novel DS metric and appropriate statistical tests (Watson Williams test with Bonferroni correction, Rayleigh test, chi-square). The finding that phase-coding occurs equally at all phases (C36) rules out trivial explanations and supports genuine category-specific representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Pattern classification analysis showed that 25% of electrodes (42/167) had significant decoding accuracy compared to label-shuffled surrogates. Critically, 11% (19/167) showed higher decoding during HFA events versus random events, and 10% (17/167) showed significant enhancement relative to both control conditions, with at least two electrodes per patient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide converging evidence for phase coding through machine learning classification with appropriate surrogate controls. The dual control approach (label shuffling and event shuffling) strengthens the conclusion that phase information during HFA events specifically carries categorical information. Statistical significance is properly assessed using binomial tests with effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Phase clustering was significantly larger at FMAX compared to FMIN on PAC+ electrodes. Only 20% (15/72) of PAC+ electrodes showed significant phase-clustering at FMIN for all categories, and only 1 electrode showed category-selective phase-clustering at FMIN. Enhanced phase-clustering was specifically found around 0.5 and 1 Hz, not at adjacent frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate frequency-specificity of phase coding through appropriate control analyses comparing maximum and minimum modulatory frequencies. The paired t-test (C42) and frequency sweep analysis (C45) rule out the alternative explanation that effects are simply due to slower phase variation, supporting genuine frequency-specific phase representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C55"
+    ],
+    "result": "Category-specific HFA modulations occurred at different phases and frequencies of the underlying low-frequency rhythm, permitting decoding of categorical information from HFA event phases. These results provide the first evidence that PAC coincides with phase-dependent coding in the human brain, explicitly linking phase-coupled neural activity to phase coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C55 represent the main conclusions of the study and are well-supported by the convergent evidence from multiple analyses (DS metric, classification, frequency-specificity controls). The study successfully demonstrates that PAC and phase coding co-occur, addressing the key gap identified in prior literature (C3, C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Phase-coding of categorical information extended beyond brain areas associated with higher-order vision, suggesting category-specificity may involve complex, idiosyncratic associations beyond perception. These findings align with prior work showing spatially-distributed content-specific representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 involve anatomical interpretations that are not fully supported by detailed spatial analyses in the manuscript. While C47 is observational, C48 is speculative about the nature of representations. The claim would benefit from more rigorous anatomical localization and functional characterization to distinguish perceptual from associative processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study identified frequency-specific phase representations in humans, with PAC predominantly occurring in the delta band around 1 Hz. The authors speculate this may reflect task entrainment creating an oscillatory hierarchy, or 'nested coupling' distinct from broadband high gamma reflecting population spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C54 mix supported findings (C50-C51 based on data) with speculative interpretations (C52-C53). While the delta band predominance is well-documented, the mechanistic explanations remain hypothetical. C54 accurately cites prior work but the distinction between nested coupling and broadband gamma requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PAC was detected using the OTC method, conceptually similar to event-locked analysis around HFA periods. Control analyses showed 56% of electrodes had larger phase representation during HFA windows versus surrogates, with significantly larger values on PAC+ electrodes. Alternative MI-based methods confirmed PAC was most prominent in delta band with maximal gamma at 180\u00b0 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe methodological approaches and validation analyses. The OTC method is appropriately cited (C77) and validated through multiple control analyses (C79-C80) and alternative methods (C81-C83). The convergence of results across methods strengthens confidence in the PAC findings.",
+    "result_type": "MINOR"
+  }
+]

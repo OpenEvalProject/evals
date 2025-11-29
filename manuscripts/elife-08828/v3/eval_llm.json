@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Spire1C contains a novel, highly conserved 58 amino acid alternate exon (ExonC) that is present across mammalian species with 96% identity to humans and 79% identity to chicken. The conservation extends into intronic regions, suggesting regulatory importance and indispensability for organismal health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 collectively demonstrate the identification and characterization of ExonC through molecular cloning (C21), tissue expression analysis (C22), and comprehensive sequence conservation analysis across species (C23-C27). The conservation data are quantitative and specific, with appropriate negative control (zebrafish, C27). The inference about regulatory importance (C29) and biological significance (C30) is reasonable given the high degree of conservation observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Spire1C is a novel mitochondria-localized isoform of Spire1, with ExonC being both necessary and sufficient for mitochondrial targeting. This was demonstrated through overexpression of tagged constructs, endogenous antibody staining, and domain deletion analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide converging evidence from multiple experimental approaches: overexpressed myc-Spire1C colocalizes with mitochondria (C31), endogenous protein detected by \u03b1-ExonC antibody shows mitochondrial localization (C32), GFP-ExonC alone targets to mitochondria (C33), and deletion of ExonC abolishes targeting (C34). The necessity and sufficiency conclusion (C35) is well-supported by the gain-of-function (C33) and loss-of-function (C34) experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Spire1C localizes to the mitochondrial outer membrane with a specific topology: the N-terminal KIND and WH2 domains face the cytoplasm while the C-terminus of ExonC is not cytoplasm-exposed, consistent with a hairpin or transmembrane configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The topology is well-supported by multiple lines of evidence: SIM imaging shows peripheral localization (C36-C37), fluorescence protease protection assays demonstrate differential accessibility of N- vs C-terminal tags (C38-C40), and computational predictions identify two \u03b1-helices in ExonC (C44-C45). The C-terminal tagging disrupts localization (C46), further supporting the proposed topology. The hairpin model (C47) is a reasonable inference from the combined data, though alternative membrane insertion mechanisms cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Spire1C undergoes lateral diffusion along the mitochondrial outer membrane rather than rapid binding/dissociation with the cytoplasm, as demonstrated by differential fluorescence recovery after partial versus complete photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The photobleaching experiments provide clear evidence for membrane-associated lateral diffusion: partial bleaching shows directional recovery from adjacent regions (C48), while complete bleaching of an entire mitochondrion shows minimal recovery (C49). This pattern is characteristic of membrane-bound proteins and inconsistent with cytoplasmic exchange, supporting the conclusion in C50.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Spire1C promotes actin assembly on mitochondrial surfaces through its WH2 actin-nucleating domains, independent of its formin-binding KIND domain. Overexpression of wild-type Spire1C causes dramatic actin accumulation on mitochondria, while WH2 mutants lose this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by SIM imaging showing low baseline actin-mitochondria colocalization (C51), dramatic increase with Spire1C overexpression (C52), retention of activity without KIND domain (C53), and loss of activity with WH2 mutations (C54). The domain-specific requirements clearly demonstrate that actin nucleation activity, not formin binding, drives the observed actin accumulation (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Spire1C promotes mitochondrial fission through both its actin-nucleating WH2 domains and formin-binding KIND domain. Overexpression increases fission frequency and shortens mitochondria, while loss-of-function (knockdown or domain deletions) decreases fission and elongates mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide comprehensive evidence from complementary approaches: morphological analysis (C56-C63), quantitative length measurements with appropriate statistics (C60-C63), and direct fission event counting (C64-C67). The requirement for both WH2 and KIND domains (C65-C66) distinguishes fission regulation from simple actin accumulation. Sample sizes appear adequate (>200 mitochondria, >10 cells per condition) and p-values are reported. The conclusion (C68) is well-supported by the domain requirement data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The KIND domain of Spire1C regulates ER-mitochondria contact sites. Deletion of the KIND domain (Spire1C\u0394KIND) significantly reduces ER-mitochondria overlap and crossover sites, while wild-type Spire1C or Spire1C mWH2 do not affect these contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present quantitative data on ER-mitochondria intersections across different conditions. The specific reduction with Spire1C\u0394KIND (C70-C71) but not with other constructs (C69) suggests a specific role for the KIND domain. However, the inference about mechanism (C72) is reasonable but somewhat speculative\u2014the KIND domain could affect ER-mitochondria contacts through INF2 binding or other mechanisms. The data support the observation but the mechanistic interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The Spire1C KIND domain directly binds to the C-terminal region of INF2, and this interaction can be regulated by INF2 self-association. The interaction was demonstrated through GST pull-down and fluorescence anisotropy assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct binding is supported by two independent in vitro methods: GST pull-down (C73) and fluorescence anisotropy (C76). The specificity is demonstrated by the lack of binding to INF2-NT (C73) and the inhibition by INF2-NT (C74), which is consistent with known INF2 self-interaction. The conclusion of direct binding (C77) is well-supported, though the physiological relevance of the relatively low affinity interaction requires cellular validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Spire1C and INF2 functionally interact to promote mitochondrial fission. The KIND domain of Spire1C is required for INF2-mediated fission, as Spire1C\u0394KIND blocks the effect of constitutively active INF2 A149, while Spire1C mWH2 does not. INF2 knockdown also prevents Spire1C-mediated fission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional interaction is demonstrated through multiple complementary experiments: constitutively active INF2 A149 causes mitochondrial fragmentation (C78), which is maintained with Spire1C or Spire1C mWH2 (C79-C80) but blocked by Spire1C\u0394KIND (C81). The reciprocal experiment showing INF2 knockdown blocks Spire1C function (C83) strengthens the conclusion. The interpretation that KIND-mediated binding is necessary but actin nucleation is dispensable when INF2 is constitutively active (C82) is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Spire1C and INF2 cooperate to promote ER-mediated mitochondrial constriction. Spire1C overexpression increases constriction frequency from 55% to 72%, while Spire1C mWH2, Spire1C\u0394KIND, Spire1C knockdown, or INF2 depletion all significantly reduce constriction frequency (24-37%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data (C134-C139) provide strong statistical evidence with appropriate sample sizes (>95 intersections, >11 cells per condition) and p-values. The pattern is consistent: wild-type Spire1C increases constriction (C85, C135), while disrupting either actin nucleation (C86, C136) or INF2 binding (C87, C138) reduces constriction below baseline. The requirement for both Spire1C and INF2 (C88-C89, C137, C139) supports the cooperative model (C90). The visual identification of constriction sites could introduce observer bias, but the consistency across conditions and statistical significance support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Computational modeling demonstrates that actin polymerization forces are sufficient to drive mitochondrial constriction. The model predicts 10-20 polymerizing actin filaments or 2-3 pN actomyosin tension can generate the pressure needed for observed constriction degrees, values that are physiologically reasonable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational modeling is based on established biophysical principles (membrane bending energy, C140) and validated against experimental electron tomography data (C142). The model parameters (50 nm ER tubule width, C141; lipid bilayer bending modulus, C140) are appropriate. The predicted force requirements (C92-C93) fall within known physiological ranges for actin polymerization (~1 pN per filament) and actomyosin contraction, supporting feasibility (C94). However, the model makes simplifying assumptions (zero lateral tension, specific geometry) that may not fully capture in vivo complexity. The conclusion that the model is consistent with prior studies (C95) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Spire1C serves as a molecular regulator of INF2-mediated actin polymerization at ER-mitochondria contact sites to drive mitochondrial division. As a mitochondrial outer membrane protein with cytoplasm-facing actin-nucleating and formin-binding domains, Spire1C is uniquely positioned to coordinate actin assembly between mitochondria and ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the major findings into a coherent model. The claims collectively demonstrate: (1) Spire1C's unique mitochondrial localization (C100-C101), (2) its membrane topology with functional domains facing cytoplasm (C102-C103), (3) its ability to nucleate actin on mitochondria (C104-C106), (4) its effects on mitochondrial division (C107-C109), (5) its dependence on formin proteins (C110), (6) its direct interaction with INF2 (C111), (7) the functional consequences of disrupting this interaction (C112-C115), and (8) the proposed cooperative mechanism (C116). The model is well-supported by the experimental data, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "A proposed mechanistic model suggests Spire1C:actin complexes on mitochondria associate with INF2 on the ER to draw organelles together, followed by INF2-mediated actin filament elongation in a 'rocket launcher' mechanism, creating an actin meshwork that exerts pressure to constrict mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the model (C117-C120) is consistent with the experimental data and draws on established mechanisms (C118), several aspects remain speculative. The 'rocket launcher' mechanism is proposed by analogy to other systems (C118) but not directly demonstrated. The role of tethering complexes (C117) is inferred but not tested. The computational modeling supports the feasibility of actin-mediated constriction (C121), but the specific molecular choreography proposed requires additional validation. The speculation about low-affinity binding enabling dissociation (C122) is reasonable but untested. This represents a working model that requires further experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Spire1C may serve broader roles in mitochondrial dynamics beyond fission, potentially linking mitochondria to various actin-dependent processes including motility, partitioning, and mtDNA distribution. Interactions with myosin Va and potential parallels to endosomal Spire proteins suggest additional unexplored functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C123-C133) are largely speculative and represent discussion of future directions rather than demonstrated results. The interaction with myosin Va (C127) is mentioned as unpublished data, limiting evaluation. The connections to other actin-dependent processes (C126, C129, C130) are based on literature but not tested in this study. The speculation about endosomal Spire proteins (C131-C132) is interesting but analogical. While these represent reasonable hypotheses for future investigation, they are not supported by data in the current manuscript and should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background context on mitochondrial division: The process involves two steps (initial constriction and Drp1-mediated scission), occurs at ER-mitochondria intersection zones, and is facilitated by actin polymerization mediated by ER-anchored INF2. Spire proteins are known actin nucleators that interact with formins but had not previously been localized to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C17, C96-C98) represent established background knowledge from prior literature, appropriately cited throughout. They provide essential context for the current study but are not novel findings. The claim that no Spire proteins had been previously shown to localize to mitochondria or ER (C17) is important for establishing novelty and is supported by citation to Dietrich et al., 2013.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors implemented the Tsodyks-Markram model with facilitation to simulate short-term synaptic plasticity, using standard parameter values for pyramidal-to-pyramidal synapses (D=200ms, F=50ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe the implementation of a well-established short-term plasticity model with appropriate parameter values cited from the literature. The mathematical formulation is standard and the parameter choices are justified by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors base their model on established biological mechanisms: presynaptic LTD mediated by eCB signaling, postsynaptic LTP mediated by AMPA receptor changes, and presynaptic LTP mediated by NO signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 cite multiple experimental studies establishing these mechanisms in layer-5 pyramidal cells. These are well-documented biological facts that appropriately motivate the model design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a unified triplet STDP model with three synaptic traces that modifies both presynaptic (P) and postsynaptic (q) factors, with LTP requiring triplet interactions and presynaptic LTD not vanishing at low frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C35 describe a mathematically coherent model with biologically motivated constraints. The triplet structure is justified by citations and the frequency-dependent behavior matches experimental observations. The mathematical formulation is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors added slow homeostatic scaling of the postsynaptic factor q to prevent unrealistic unbounded potentiation, with the timescale chosen to not affect experimental timescales but determine memory savings duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 justify the inclusion of homeostatic scaling based on biological realism and cite supporting literature. The parameter choice (\u03b1=0.075) is explicitly stated to be orders of magnitude faster than biological homeostasis, ensuring consistency with the experimental data used for fitting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The model parameters were fitted to frequency- and timing-dependent STDP data from layer-5 pyramidal cells by minimizing mean squared error between model predictions and experimental measurements of P and q separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 describe a rigorous fitting procedure using appropriate experimental data. The choice to fit P and q separately rather than total weight w is methodologically sound given the model structure. Initial conditions and protocols match experimental procedures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model without additional fitting captured pharmacological blockade experiments: eCB blockade revealed presynaptic LTP and enhanced depression, while NO blockade decreased LTP without affecting short-term dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 demonstrate that the model generalizes to independent experimental manipulations without additional parameter fitting. The simulation approach (setting relevant parameters to zero) is appropriate, and the results match cited experimental observations, providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors used a binomial release model to extract P and q from experimental data, assuming constant N=5.5 release sites, and validated this approach through pharmacological manipulations and correlation with paired-pulse ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 describe a standard approach for estimating synaptic parameters. The assumption of constant N is justified by the experimental timescale (<1.5hr) and cited literature. Multiple validation analyses (C67-C68) support the extraction method, with changes in P but not q correlating with paired-pulse ratio as expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C78",
+      "C79"
+    ],
+    "result": "Analysis of in vivo data from Froemke et al. (2013) showed that models allowing both P and q to change had lower variability estimation error than models with only one changing factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 describe reanalysis of published in vivo data using the same binomial framework. The model comparison (C79) provides quantitative support for unified plasticity. The methodological choices (fixing initial P=0.5, holding N constant) are reasonable and clearly justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Unified pre- and postsynaptic STDP develops receptive fields with reduced variability and improved discriminability compared to postsynaptic-only plasticity, matching recent sensory perception experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 represent primary findings supported by the modeling results and comparison with Froemke et al. (2013) data. The analysis of in vivo data (C70-C79) and SNR calculations (C83-C86) provide quantitative support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The unified plasticity model produces higher signal-to-noise ratio in summed responses compared to postsynaptic-only plasticity across all frequencies, as assessed by ROC analysis and information theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 describe analytical results showing SNR advantages of unified plasticity. The mathematical analysis is sound, using appropriate measures (ROC, AUC, information theory). The result that SNR advantages hold across frequencies strengthens the generality of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43"
+    ],
+    "result": "Learning with unified plasticity leaves a hidden postsynaptic memory trace (elevated q) that enables fast relearning, providing a cellular substrate for memory savings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 describe a key prediction of the model supported by simulations (C98-C100). The mechanism is clear: slow homeostatic normalization of q creates a persistent trace. Claim C43 appropriately notes that the timescale of normalization determines savings duration, acknowledging a key parameter dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Receptive field development was simulated using a feedforward network with 100 Poisson presynaptic neurons and an adaptive exponential integrate-and-fire postsynaptic neuron, with results averaged over 10 runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C102 describe appropriate network architecture and simulation methods. Parameter choices are justified (C92, C94), scaling factors are documented (C95), and code availability (C102) supports reproducibility. The 10-run average (C99) provides reasonable statistical sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Presynaptic plasticity has essential roles missed by postsynaptic-only models, suggesting an experience-dependent distribution of pre- and postsynaptic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 represent high-level conclusions supported by the collective modeling results (reduced variability, improved discriminability, memory savings). Claim C8 is appropriately cautious ('suggest') as it extrapolates from the model to broader principles. The evidence from multiple analyses supports these interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Statistical analyses used appropriate parametric (t-test, ANOVA) or non-parametric (Mann-Whitney U, Kruskal-Wallis) tests based on normality assessment, with Spearman correlation for correlation analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 describe standard and appropriate statistical methods. The use of normality testing to select between parametric and non-parametric tests is methodologically sound. The choice of one-tailed tests for correlations (C107) is appropriate for directional hypotheses.",
+    "result_type": "MINOR"
+  }
+]

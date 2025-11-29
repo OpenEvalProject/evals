@@ -1,0 +1,1956 @@
+{
+  "submission": {
+    "id": "19729a8f-a7f1-4f9f-bae8-b1707466ae94",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:20:27.634882Z",
+    "updated_at": "2025-11-29T04:20:27.634882Z"
+  },
+  "content": [
+    {
+      "id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "submission_id": "19729a8f-a7f1-4f9f-bae8-b1707466ae94",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics of preventive vs post-diagnostic cancer control using low-impact measures\n\n## Authors\n\n- Andrei R Akhmetzhanov<sup>1</sup>\n- Michael E Hochberg<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institut des Sciences de l'Evolution de Montpellier University of Montpellier Montpellier France\n2. Theoretical Biology Lab, Department of Biology McMaster University Hamilton Canada\n3. Santa Fe Institute Santa Fe United States\n4. Wissenschaftskolleg zu Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCancer poses danger because of its unregulated growth, development of resistance, and metastatic spread to vital organs. We currently lack quantitative theory for how preventive measures and post-diagnostic interventions are predicted to affect risks of a life threatening cancer. Here we evaluate how continuous measures, such as life style changes and traditional treatments, affect both neoplastic growth and the frequency of resistant clones. We then compare and contrast preventive and post-diagnostic interventions assuming that only a single lesion progresses to invasive carcinoma during the life of an individual, and resection either leaves residual cells or metastases are undetected. Whereas prevention generally results in more positive therapeutic outcomes than post-diagnostic interventions, this advantage is substantially lowered should prevention initially fail to arrest tumour growth. We discuss these results and other important mitigating factors that should be taken into consideration in a comparative understanding of preventive and post-diagnostic interventions.\n\n## Introduction\n\nMathematical models play an important role in describing and analysing the complex process of carcinogenesis. Natural selection for increases in tumour cell population growth can be represented as the net effect of increased cell division rates and/or decreased apoptosis (e.g., Wodarz and Komarova, 2007). Relatively rare driver mutations confer such a net growth advantage, whereas numerically dominant passenger mutations with initially neutral or mildly deleterious effects (Marusyk et al., 2012; Bozic et al., 2013; McFarland et al., 2013) can increase in frequency due to genetic hitchhiking or subsequent positive selection. Amongst the many passengers in a growing tumour, some can contribute to chemoresistance, and sufficiently large tumours could contain different clones that, taken as a group, can resist some, if not most, chemotherapies (see Michor et al., 2005 for resistance to imatinib). Chemotherapeutic remission followed by relapse suggests that these resistant cells are often present at low frequencies prior to therapy, either due to genetic drift or costs associated with resistance. Resistant phenotypes subsequently increase in frequency during radiotherapy or chemotherapy, and through competitive release they may incorporate one or more additional drivers, resulting in accelerated growth compared to the original tumour (for related discussion on pathogens, see Huijben et al., 2013).\n\nPrevious mathematical studies have considered alternatives to attempting to minimize or eradicate clinically diagnosed cancers with maximum tolerated doses (MTDs) of chemotherapeutic drugs. This body of work indicates that MTD is particularly prone to select for chemoresistance (e.g., Foo and Michor, 2009; Foo and Michor, 2010; Lorz et al., 2013), and what little empirical work exists supports this basic prediction (Turke et al., 2010), but see (Kouyos et al., 2014) for other disease systems. Numerous alternatives to the goal of cancer minimization/eradication have been proposed and investigated (e.g., Maley et al., 2004; Komarova and Wodarz, 2005; Foo and Michor, 2009; Gatenby et al., 2009a, 2009b; Bozic et al., 2013; Jansen et al., 2015). For example, Komarova and Wodarz (2005) considered how the use of one or multiple drugs could prevent the emergence or curb the growth of chemoresistance. They showed that the evolutionary rate and associated emergence of a diversity of chemoresistant lineages is a major determinant in the success or failure of multiple drugs vs a single one. Lorz and co-workers (Lorz et al., 2013) recently modelled the employment of cytotoxic and cytostatic therapies alone or in combination and showed how combination strategies could be designed to be superior in terms of tumour eradication or managing resistance than either agent used alone. Foo and Michor (2009) evaluated how different dosing schedules of a single drug could be used to slow the emergence of resistance given toxicity constraints. One of their main conclusions is that drugs slowing the generation of chemoresistant mutants and subsequent evolution are more likely to be successful than those only increasing cell death rates.\n\nThese and other computational approaches have yet to consider the use of preventive measures to reduce cancer-associated morbidity and mortality whilst limiting resistance. Prevention includes life-style changes and interventions or therapies in the absence of detectable invasive carcinoma (e.g., Etzioni et al., 2003; Lippman and Lee, 2006; William et al., 2009; Hochberg et al., 2013), for example, reduced cigarette consumption (Doll and Peto, 1976) or chemoprevention (Steward and Brown, 2013). In depth consideration of preventive measures and their likely impact on individual risk and epidemiological trends is important given the likelihood that all individuals harbour pre-cancerous lesions, some of which may transform into invasive carcinoma (Bissell and Hines, 2011; Greaves, 2014), and concerns as to whether technological advances will continue to make significant headway in treating clinically detected cancers (Gillies et al., 2012; Vogelstein et al., 2013).\n\nHere, we model how continuous, constant measures affect tumour progression and the emergence of resistant lineages. We assume that an individual can contract at most a single cancer, originating from a single lesion. Importantly, we consider cases where the measure may select for the evolution of resistant phenotypes and cases where no resistance is possible. Our approach is to quantify the daily extent to which a growing neoplasm must be arrested in order to either eradicate it or to delay a potentially lethal cancer. Several authors have previously argued how constant or intermittent low toxicity therapies either before or after tumour discovery could be an alternative to MTD chemotherapies (Wu and Lippman, 2011; Hochberg et al., 2013), but to our knowledge, no study has actually quantified based on empirical parameter estimates, the extent to which cancer cell population growth needs to be arrested for such approaches to succeed (see related discussion in Bozic et al., 2010; Gerstung et al., 2011; Bozic et al., 2013). Below we employ the terms \u2018treatment\u2019, \u2018measure\u2019, and \u2018therapy\u2019 interchangeably, all indicating intentional measures to arrest cancer cell population growth.\n\nWe first derive analytical expressions for the expected total number of cells within a tumour at any given time. We explore dynamics of tumour sizes at given times, and times to detection for given tumour sizes. Specifically, we show that the expected mean tumour size in a population of subjects can be substantially different from the median, since the former is highly influenced by outliers due to tumours of very large size. We then consider constant preventive measures and show that treatment outcome is sensitive to initial conditions, particularly for intermediate-sized tumours. Importantly, we provide approximate conditions for tumour control both analytically and numerically using empirical parameter estimates. We next consider post-diagnostic interventions in which tumour resection either is not complete and leaves residual cells or undetected metastases are present. We contrast these with prevention scenarios where (1) there is no difference in the age at which either prevention or post-diagnostic intervention commences, and (2) prevention and post-diagnostic interventions are alternatives, that is, the former always occurs before the latter. We show as expected that therapeutic outcomes are generally superior under prevention vs post-diagnostic intervention, and that higher impacts on the cancer cell population are usually required for post-diagnostic interventions to achieve a level of control comparable to prevention. Moreover, we find that should resection leave sufficiently large numbers of residual cells (or metastases are not discovered), then a range of the most successful outcomes under prevention is not attainable under post-diagnostic intervention, regardless of potential cell arrest. Finally and importantly, whereas there is little gained in terms of outcomes in post-diagnostic intervention beyond approximately 0.3% cell arrest per day for both small (10,000) and large (1 million) cancer cell populations, prevention outcomes may achieve continual gains for the latter cell number, up to about 0.6% cell arrest per day.\n\n## Modeling framework\n\nPrevious study has evaluated the effects of deterministic and stochastic processes on tumour growth and the acquisition of chemoresistance (Komarova and Wodarz, 2005; Bozic et al., 2010; Reiter et al., 2013, see review Beerenwinkel et al., 2015). We first consider both processes through exact solutions and numerical simulations of master equations, using the mean field approach (see Appendix 1 for details). A mean field approach assumes a large initial number of cells (Krapivsky et al., 2010) and averages any effects of stochasticity, so that an intermediate state of the system is described by a set of ordinary differential equations (i.e., master equations; Gardiner, 2004). Solutions to these are complex even in the absence of the explicit consideration of both drivers and passengers (Antal and Krapivsky, 2011; Kessler and Levine, 2013).\n\nWe do not explicitly model the different pre-cancerous or invasive carcinoma states. Rather, our approach follows the dynamics of the relative frequencies of subclones, each composed of identical cells (Baake and Wagner, 2001; Saakian and Hu, 2006). We simulate tumour growth using a discrete time branching process for cell division (Athreya and Ney, 1972; Bozic et al., 2010). For each numerical experiment, we initiate a tumour of a given size and proportion of resistant cells.\n\nBriefly, the model framework is as follows. Each cell in a population is described by two characteristics. The first is its resistance status to the measure, which is either \u2018not resistant\u2019 (j = 0) or \u2018resistant\u2019 (j = 1). The second property is the number of accumulated driver mutations (maximum N) in a given cell line. At each time step of 4 days, cells either divide or die, and when a cell divides, its daughter cell has a probability $u$ of producing a driver mutation and v of producing a resistant mutation. We assume no back mutation, and that cells do not compete for space or limiting resources.\n\nThe fitness function fij, the difference between the birth and death rates of a cell, is defined by the number of accumulated drivers (i = 0, 1, \u2026, N) and resistance status (j = 0, 1): a sensitive cancerous cell with a single driver has selective advantage s, and any accumulated driver adds s to fitness, while resistance is associated with a constant cost c. Exposure to a single treatment affects only non-resistant cells (j = 0), incurring a loss \u03c3 to their fitness. Thus, the fitness function is:\n\n$$\nf_{ij}=s(i+1)\u2212\\sigma(1\u2212j)\u2212cj.\n$$\n\nThe assumption of driver additivity is a special case of multiplicative fitness, and both are approximately equivalent for very small s.\n\nWe conducted numerical experiments, each with the same initial states but each using a unique set of randomly generated numbers of a branching process. For each simulation and each time step, the number of cells at time (t + 1) was sampled from a multinomial distribution of cells at time t (see Bozic et al., 2010 for details). Table 1 presents baseline parameter values employed in this study. Hereafter, we refer to \u03c3 as the treatment intensity (applied once every cell cycle of 4 days), while the corresponding daily arrest level to non-resistant cells is approximated by \u03c3/4.\n\n**Table 1.**\n Baseline parameter values used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Variable</th>\n      <th>Value</th>\n      <th>Range</th>\n      <th>Ref.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Time step (cell cycle length)</td>\n      <td>T</td>\n      <td>4 days</td>\n      <td>3\u20134 days</td>\n      <td>(Bozic et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>Selective advantage</td>\n      <td>s</td>\n      <td>0.4%</td>\n      <td>0.1\u20131.0%</td>\n      <td>(Bozic et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>Cost of resistance</td>\n      <td>c</td>\n      <td>0.1%</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Mutation rate to acquire an additional driver</td>\n      <td>u</td>\n      <td>3.4 \u00d7 10\u22125</td>\n      <td>10\u22127\u201310\u22122</td>\n      <td>(Bozic et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>Mutation rate to acquire resistance</td>\n      <td>v</td>\n      <td>10\u22126</td>\n      <td>10\u22127\u201310\u22122</td>\n      <td>(Komarova and Wodarz, 2005)</td>\n    </tr>\n    <tr>\n      <td>Maximal number of additional drivers</td>\n      <td>N</td>\n      <td>5 (Figures 1, 2) 9 (other figures)</td>\n      <td>0\u20139</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial cell population</td>\n      <td>M0</td>\n      <td>106 cells</td>\n      <td>\u2013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pre-resistance level</td>\n      <td>\u03ba</td>\n      <td>0.01%</td>\n      <td>\u2013</td>\n      <td>(Iwasa et al., 2006)</td>\n    </tr>\n    <tr>\n      <td>Number of replicate numerical simulations (excluding extinctions)</td>\n      <td>\u2013</td>\n      <td>106</td>\n      <td>\u2013</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Detection threshold</td>\n      <td>M</td>\n      <td>109 cells</td>\n      <td>107\u20131011</td>\n      <td>(Beckman et al., 2012)</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u2018Range\u2019 is values from previous study and employed in the present study._\n\n## Results\n\n### Preventive measures\n\nWe first study preventive interventions where a patient has a high risk of developing a cancer and/or a biomarker that indicates the probable presence of a cancer. In either case, so that we can compare and contrast different intervention levels, we assume that the (undetected) tumour contains M0 cells when prevention commences. We examine effects on the mean by considering the distribution of tumour sizes at different times using mean-field dynamics (see Appendix 1). Numerical experiments were then conducted by assuming that tumours initially contained M0 = 106 identical cells (i = 0), of which 0.01% were resistant. These assumptions are obviously oversimplifications, and we relax some of them below and in the next sections.\n\nThere is an excellent correspondence between analytical and numerical results for \u03c3 varied in range of s (Appendix 1\u2014figure 1A). A more detailed study of the distribution of tumour sizes reveals that the mean diverges considerably from median behaviour in the majority of cases, since the former is strongly influenced by outliers with high-tumour cell numbers (see Appendix 1\u2014figure 1B).\n\nFigure 1 shows four examples of numerical experiments. An untreated tumour reaches the assumed detection threshold of 109 cells by about 18 years on average and because it is not subject to strong negative selection (we assume low c), any emerging resistant cell-lines are likely to remain at low frequency (0.03% at the detection time in the example of Figure 1A). In Figure 1B, low-treatment intensity delays tumour growth and thus time of detection by approximately 16 years, while an increase in dose tends to result in tumours dominated by resistant cells (Figure 1C). Despite being unaffected by treatment, resistant cell populations are sometimes observed to go extinct stemming from stochasticity (Figure 1D), and this tends to occur more at high-treatment levels, because there are fewer sensitive tumour cells to seed new (mutant) resistant cell populations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig1-v2.jpg)\n\n**Figure 1.:** Examples of single patient tumour growth for (A) no treatment. (B) \u03c3 = 0.6%. (C) \u03c3 = 1.0%. (D) \u03c3 = 2.0%. The shaded area shows the change in total tumour size and the hatched area, the resistant part of a tumour. The treatment intensity \u03c3 in this and all other figures are represented as cell arrest per day (\u03c3/4). Parameter values as in Table 1.\n\nWe next considered how therapies affected the distribution of tumour detection times in cases where the cancer cell population attained a threshold of 109 cells. The magnitude of the selective advantage s shows that tumour growth is largely driven by its non-resistant part for relatively low-impact treatments \u03c3 < 2s (Figure 2A). Importantly, the tumour shifts from being mainly non-resistant to resistant at \u03c3 \u2248 2s, which is reflected by the inflection point in the trajectory of the median (indicated by point B in Figure 2A,B). Notice that detection times are also most variable at \u03c3 \u2248 2s. The median changes smoothly at high-treatment levels (\u03c3 > 2s), tending to a horizontal asymptote. This is explained by the fact that the sensitive part is heavily suppressed at high-treatment levels, meaning that the dynamics are strongly influenced by the actual time point at which the first resistance mutation occurs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig2-v2.jpg)\n\n**Figure 2.:** The median (lines) and 90% confidence intervals (shaded areas) of detection times, measured as years beyond the initiation of the preventive measure. Effects of: (A) the selective advantage of each additional driver and (B) the cost of resistance. (C) Samples of the distribution of detection times (in relative frequencies, adjusted for 3-month bins) for corresponding points, indicated in A and B. Dashed black line is the mean and the dashed-and-dotted line is the median. The colour-code indicates the average level of resistance in detected tumours over 3 month intervals (see inset in B). All cells j = 0 at t = 0. Other parameters as in Table 1. Detection time is log-transformed in A and B.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Maximal number of additionally accumulated drivers. (B) Initial cell number. (C) Level of initial partial resistance of a tumour. (D) Presence or absence of resistant cell-lines. Point colour-codes indicate the average level of resistance in detected tumours over 3 month intervals (see inset in B). For simplicity, only the median is indicated in B and C for the baseline case (blue line). Lines and shading otherwise as in Figure 2. Unless otherwise stated, parameter values as in Table 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Success is defined as tumour non-detection by 50 years. Daily effect of treatment on cellular arrest is assumed to be 0.25%. Unless otherwise stated, parameter values as in Table 1.\n\nWe find, counterintuitively, that early-detected tumours are more likely to be resistant under constant treatments than those detected at later times (A, B, and C in Figure 2C). This is because tumours under treatment that by chance obtain resistance early grow faster than those that do not. By the time of detection, non-resistant tumours usually accumulate up to 4 additional drivers on average, while resistant tumours have fewer. For larger values of cost c, an additional non-regularity emerges at \u03c3 \u2248 3s (segment DEF in Figure 2B), and is associated with tumours having a majority of cells with maximum numbers of drivers. This region is also characterized by a different transition to complete resistance (cf. Videos 1, 2 for relatively low and high costs of resistance, respectively). For example, at point D, tumours with a majority of non-resistance have less variable detection times than tumours with a majority of resistant cells (points E and F in Figure 2B and corresponding panels in Figure 2C). Treatment levels along the segment DEF result in tumours that are more likely to be resistant as one goes from the centre to the tails of the distribution of detection times. This differs qualitatively from the previous case of a lower cost of resistance, where the tumours are less resistant in the tail of the distribution of detection times (cf segments ABC and DEF in Figure 2B and corresponding panels in Figure 2C).\n\n![Video 1.](https://cdn.elifesciences.org/articles/06266/elife-06266-media1.mp4.jpg)\n\n**Video 1.:** (A) The median (thick line) and 90% confidence intervals (shaded areas with dashed boundaries) for the distribution of detection times. (B) Arbitrary samples of the distribution of detection times and distribution of the mean number of accumulated drivers. The colour-code indicates the average level of resistance in detected tumours over 3 month intervals. Parameters as in Table 1.\n\n![Video 2.](https://cdn.elifesciences.org/articles/06266/elife-06266-media2.mp4.jpg)\n\n**Video 2.:** (A) The median (thick line) and 90% confidence intervals (shaded areas with dashed boundaries) for the distribution of detection times. (B) Arbitrary samples of the distribution of detection times and distribution of the mean number of accumulated drivers. The colour-code indicates the average level of resistance in detected tumours over 3 month intervals. Parameters as in Table 1 except for the cost of resistance c = 0.4%.\n\nThe inflection point at \u03c3 \u2248 2s in Figure 2A is due to the accumulation of additional drivers within tumours and associated increases in the likelihood that the tumour eventually resists treatment. Since the initial population consists of 106 cells, in the absence of treatment, a mutant cell with one additional driver and associated fitness 2s will appear very rapidly. Such a tumour can be suppressed only if \u03c3 > 2s. This is supported by additional numerical experiments where we vary the maximal number of additional driver mutations N: the inflection point \u03c3 \u2248 2s disappears when N = 0 (Figure 2\u2014figure supplement 1A). The inflection points at \u03c3 = 3s, 4s emerge at treatment levels that effectively suppress sensitive subclones with the most drivers before resistance mutations are obtained (cf Figure 2\u2014figure supplement 1A\u2013C with Figure 2\u2014figure supplement 1D and Video 3). Specifically, the peaked distributions, corresponding to better therapeutic outcomes, tend to disappear when resistant subclones emerge.\n\n![Video 3.](https://cdn.elifesciences.org/articles/06266/elife-06266-media3.mp4.jpg)\n\n**Video 3.:** (A) The median (thick line) and 90% confidence intervals (shaded areas with dashed boundaries) for the distribution of detection times. (B) Arbitrary samples of the distribution of detection times and the distribution of the mean number of accumulated drivers. The colour-code indicates the average level of resistance in detected tumours over 3 month intervals. The resistance mutation is knocked out (v = 0). Otherwise parameters as in Table 1.\n\nThe initial cancer cell number M0 affects both the median and distribution of detection times (Figure 2\u2014figure supplement 1B). For large initial tumours, growth is deterministic and exponential. As the initial size is decreased from 106 to 105, stochastic effects are increasingly manifested by greater variability in tumour inhibition and an inflection point observed at the 95th percentile. Moreover, we find that a tumour is likely to be eradicated under a range of constant treatments when M0 = 105 or fewer initial cells; in contrast, a tumour is virtually certain to persist regardless of treatment level for M0 = 107 cells or greater (Figure 2\u2014figure supplement 2A,B). In other words, our model indicates that tumours that are c. 1% the size of most clinically detectable, internal cancers will typically be impossible to eradicate by single molecule chemoprevention when resistance is possible.\n\nGiven the mutation rates assumed here, many tumours with 1 million cells will either already contain or rapidly subsequently acquire resistant cells (Iwasa et al., 2006). It is therefore not surprising that the initial fraction of resistant cells in a tumour has little impact on dynamics (Figure 2\u2014figure supplement 1C). In contrast, another measure of success in control (the fraction of persons with tumours that remain undetected after 50 years of growth) improves substantially with lower numbers of initial resistance mutations, particularly at higher treatment levels (Figure 2\u2014figure supplement 2C). This is because the initial phases of treatment have a major impact on the potential for new resistant mutants: should few be initially present or emerge, they will either go stochastically extinct or will not grow to detection levels (1 billion cells) in the 50 year time frame of these numerical experiments.\n\nWe conducted further sensitivity analyses by varying accumulation rates u of additional driver mutations. We find that tumours exhibit more or less deterministic growth depending on the initial number of cells M0 and driver mutation rate u whereby the larger the population (Figure 2\u2014figure supplement 1B) or the higher the mutation rate (Appendix 1\u2014figure 4A), the less apparent are stochastic effects. The corresponding analysis is presented in \u2019Varying mutation rate and initial tumour size\u2018 in Appendix 1 and Appendix 1\u2014figure 4.\n\nFinally, we considered scenarios where the cost of resistance is dose-dependent and specifically situations of drug addiction (Das Thakur et al., 2013). Numerical studies presented in more detail in \u2019A simple form of drug addiction for resistant cell-lines\u2018 in Appendix 1 show that under dose-dependent costs, a drug treatment only applied when the number of non-resistant cells exceeds the number of resistant cells (e.g., a metronomic therapy [Fischer et al., 2015]) leads to slower long-term tumour growth than does a constant therapy.\n\n### Post-diagnostic interventions\n\nWe next investigated how a post-diagnostic measure (usually some form of chemotherapy or radiation therapy, but could also involve adjuvants after an initial therapy) affects the probability of treatment success, the distribution of times for tumour relapse, and resistance levels. We assume that a tumour grows from one cell (i = 0, j = 0) and is discovered either at 109 (early) or 1011 (very late) cells, whereupon the primary tumour is removed, leaving a small number (104 or 106) of residual, and/or undetected or inoperable neighbouring micro-metastatic cells, and/or distant metastatic cells. Below, we contrast this with prevention without discriminating the age at which either intervention type commences, whereas in the following section, we consider these as competing alternatives. Figure 3A and Figure 3\u2014figure supplement 1A present the distributions of driver mutations for each scenario. (Recall that in the previous section, we assumed that when a measure commenced, tumours had no additional drivers (i = 0)).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig3-v2.jpg)\n\n**Figure 3.:** (A) The distribution of mean sizes of subclones (hatched bars = before removal and solid bars = post removal). (B) The time distribution of cases in which either intervention type fails to control the tumour below the detection threshold after 50 years (thick line = median, filled area with dashed boundaries = 90% CIs) for different constant treatment intensities. (C) The percentage of cases where the tumour consists of less than 100 resistant cells at 4 years after treatment commences (solid lines), and the percentage of cases where tumour size is below the detection threshold 20 years after the measure begins (dashed-and-dotted lines). (D) The mean number of accumulated drivers within a tumour at the time of detection. Parameter values as in Table 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Same as Figure 3, except interventions against 104 cancer cells. (A) The distribution of mean sizes of subclones for different constant treatment intensities (hatched bars = before removal and solid bars = post removal). (B) The time distribution of cases in which either intervention type fails to control the tumour below the detection threshold after 50 years (thick lines = medians, shaded areas with dashed boundaries = 90% CIs). (C) The percentage of cases when a tumour consists of less than 100 resistant cells at 4 years post-resection (solid lines) and the percentage of cases when tumour sizes are below the detection threshold 20 years after the measure commences (dashed-and-dotted lines). (D) The mean number of accumulated drivers within a tumour at the time of detection. Parameter values as in Table 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Time to tumour relapse following resection as function of the time it takes for the initial cancer cell to attain 109 cells (i.e., the point at which the tumour is discovered, resected, and treatment begins). Each dot represents a numerical simulation from the yellow distribution in Figure 3B (only 1,000 simulation results out of 106are shown). Four different treatment levels are considered. Black solid line is a simple linear regression, and grey area with dashed boundaries indicates extrapolation of high and low bounds accounting for 95% of observations (prediction interval). The fitted linear regression model gives an intercept of 7.5 years, a slope of 1.6\u00b0 and R2 of 0.024 in (A), 10.4 years, 2.2\u00b0 and R2 of 0.017 in (B), 12.9 years, 3.0\u00b0 and R2 of 0.009 in (C), and 13.1 years, 3.3\u00b0 and R2 of 0.008 in (D). Parameters as in Table 1.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Time to tumour discovery is generally more predictive of post-diagnostic therapeutic outcome for lower treatment levels. See Figure 3\u2014figure supplement 2 for details.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The fitted negative exponential regression model y = ae-bx gives a = 13.5 years, b = 0.3 and R2 = 0.696 in (A), 18.95 years, 0.3 and R2 = 0.537 in (B), 23.0 years, 0.29 and R2 = 0.262 in (C), and 23.9 years, 0.3 and R2 = 0.224 in (D). See Figure 3\u2014figure supplement 2 for details.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Time to tumour discovery is more predictive of post-diagnostic therapeutic outcome for lower treatment levels. See Figure 3\u2014figure supplement 4 for details.\n\nFirst, we examine the case where post-diagnostic resection leaves 106 cells. As suggested by our studies above on prevention, 1 million cells have a high probability of already containing resistant subclones, and deterministic effects dominate subsequent tumour growth dynamics. Comparing the median expectations of years from tumour excision to relapse, early discovery (at 109 cells) yields an additional 3.4 years compared to late discovery (at 1011 cells) at \u03c3 = 1.5% (medians for low vs high detection thresholds are 14.8 and 11.4 years, respectively; Figure 3B). Consider the following example: 20 years after resection and commencing treatment, the probability of tumour non-detection (i.e., the tumour is either eradicated or does not reach the detection threshold) is close to zero, regardless of treatment intensity (Figure 3C). Contrast this with cases of prevention starting at the same cancer cell population size (106 cells) but which fail to control the incipient tumour for the 50 years of the simulation: the detection time of these potentially life-threatening tumours is substantially longer than either of the excision cases (median 25.5 years for \u03c3 = 1.5%, i.e., 0.3\u20130.4% potential cell arrest per day), and tumours are managed below the detection threshold after 20 years in more than 80% of cases for any \u03c3 > 1.0% (Figure 3C).\n\nNow consider a residual population of 1/100th the previous case, that is, 104 cells. Here, stochastic effects play a more important role in dynamics (Figure 3\u2014figure supplement 1A,B). Due to initial heterogeneity (i.e., the co-occurrence of many subclones), when there are 4 and 5 (5 and 6) additional drivers in the dominant subclones of a residual cancer from an excised tumour of 109 (1011) cells, we observe a double peak at 4s and 5s (5s and 6s) (cf Figure 3\u2014figure supplement 1B). These peaks in variability of outcomes are a result of the stochastic nature of the appearance of the first resistance mutations and of additional driver mutations. Interestingly, the secondary detection times (i.e., when residual or metastatic cells grow to form a new tumour) are more variable for small initial tumours compared to larger ones (cf the median 35.8 years, 90% CIs [17.0, 70.5] years vs 22.4, [13.7, 37.0] years for 109 vs 1011, respectively, with \u03c3 = 1.5%). This effect is due to resistance emergence in more aggressive subclones for larger tumours, such that the tumour relapses more deterministically (i.e., with less variability and faster on average). The probability of tumour non-detection after 20 years and the distribution of the mean number of accumulated drivers within tumours are shown in Figure 3\u2014figure supplement 1C,D, respectively (cf with the previous case, shown in Figure 3C,D).\n\nImportantly, for both thresholds of tumour excision, subsequent cancer cell arrest levels beyond approximately \u03c3 = 1.5% make little difference in terms of tumour growth (Figure 3B-D, Figure 3\u2014figure supplement 1B-D), since virtually all of the sensitive cells post-excision will be arrested or killed by the measure beyond this level, leaving uncontrollable resistant cells to grow and repopulate the primary tumour site and/or metastases. (Note that this level is above that found in the previous section. This is because drivers accumulate throughout tumour growth in the results given in Figure 3, whereas tumours were assumed to only start accumulating the first drivers after growth from M0 cells in Figure 2 and Figure 2\u2014figure supplements 1, 2). Moreover, we find that for post-diagnostic interventions knowledge about the number of drivers at the time of tumour discovery is a far better predictor of outcome than information about the time from tumour initiation to discovery, and that increases in treatment intensity tend to decrease predictive accuracy (Figure 3\u2014figure supplements 2\u20135).\n\n### Prevention vs post-diagnostic intervention\n\nThe above results consider preventive measures and post-diagnostic interventions as independent rather than alternative approaches. Thus, although prevention delays tumour growth for longer times on average than does post-diagnostic intervention, because prevention is always initiated before diagnosis, when considering the relative benefits and risks of each, the actual time gained by the former relative to the latter in terms of cancer-free life will be less than the differences reported in Figure 3B and Figure 3\u2014figure supplement 1B.\n\nFigure 4 presents a hypothetical comparative scenario of prevention vs post-diagnostic intervention. Prevention may either succeed without recurrence, or should the measure initially fail and a tumour be clinically detected, the patient has a \u2018second chance\u2019 whereby the tumour is resected and treatment continued (assumed at the same treatment intensity \u03c3), either to a further relapse (failure) or non-detection (success) (Figure 4A). Compare this scenario with the more standard post-diagnostic resection followed by treatment, which either results in relapse or detection-free life (Figure 4B). These numerical experiments assume the same starting point (time at which the cancer cell population equals M0, and drivers and resistant subclones are present) for each tumour, and because of a \u2018second chance\u2019 following initial failure in prevention, are run for a maximum of 50 years after the starting point (same as the numerical studies in the previous section). We also assume, as before, that potential therapeutic resistance mechanisms to all intervention types are identical.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig4-v2.jpg)\n\n**Figure 4.:** A tumour is initiated by one cell and grows to size M0 (either 104 or 106 cells in our numerical studies). Prevention (A) arrests tumour growth at intensity \u03c3 (daily level = \u03c3/4). Should the tumour grow to 109 cells, it is diagnosed and resected to M = M0 cells and then treated again at intensity \u03c3. Post-diagnostic intervention (B) does not discover the growing tumour until 109 cells (i.e., $\\sigma=\\sigma^=0$), whereupon it is resected to M = M0 cells and then treated at intensity \u03c3 > 0. Either intervention finally \u2018fails\u2019 should the tumour attain 109 cells a second time, no later than 50 years after the initial lesion of size M0. Should the tumour be eradicated or not exceed 109 cells by 50 years after the initial lesion, then the intervention is deemed a \u2018success\u2019.\n\nFigure 5 presents the comparative outcomes (see also Videos 4, 5). When prevention starts at (or tumour resection misses) relatively large cancer cell populations (1 million cells), only small comparative gains occur from higher cell arrest in terms of outright treatment success (Figure 5A), whereas interventions starting at much smaller cancer cell numbers (10,000) result in considerably greater outright success (Figure 5B). Looking at situations of relapse only for prevention vs post-diagnostic intervention, the former generally results in superior outcomes in terms of delaying tumour growth, particularly for large residual cell populations (cf Figure 5C,D). In contrast, for lower numbers of residual cells, some post-diagnostic resected tumours in the sample will be initially resistance free (cf Figure 5\u2014figure supplement 1A,B). This, together with fewer accumulated drivers in the highest driver subclones, contributes to improved outcomes should relapse occur (Figure 5D) and overall treatment success at sufficiently high treatment intensities (Figure 5A,B,E,F). Importantly, resected tumours in both the prevention (when it initially fails) and post-diagnostic scenarios may contain numerous resistant cells (example of 0.25% daily cellular arrest: Figure 5\u2014figure supplements 2, 3). Prior selection for resistance in initially failed prevention generally results in larger residual resistant cell populations than pre-therapeutic residual populations in post-diagnostic situations (filled bars, cf captions A and B in Figure 5\u2014figure supplements 2, 3), but smaller residual resistant cell populations than treatment failures following post-diagnostic resection (hatched bars, cf captions A and D in Figure 5\u2014figure supplements 2, 3). Note that, as expected, secondary failures are associated with larger percentages of resistant subclones and a shift in the distributions towards more drivers (cf captions C and D in Figure 5\u2014figure supplements 2, 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig5-v2.jpg)\n\n**Figure 5.:** Tumours are either treated at M0 = 106 cells (left panels) or M0 = 104 cells (right panels). (A, B) Probability of treatment success, defined as the proportion of cases where the tumour remains undetected (either extinct or below 109 cells) by 50 years after the initial lesion of M0 cells. (C, D) Distribution of times to relapse for treatment failures. (E, F) Distribution of detection times for all cases including relapsed tumours and tumours remaining undetected prior to and after 50 years (detection times are assigned to 50 years in the latter case). Parameters as in Table 1. See Figure 3 for details.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Tumours are either treated at M0 = 106cells (A) or M0 = 104cells (B). Red lines and yellow shading = population following resection. Parameter values as in Table 1.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Cases where a tumour is detected and resected following prevention. (B) Cases where a tumour is detected and resected with no prevention. (C) Cases of relapse following resection and secondary treatment to initially failed prevention. (D) Cases of relapse following resection and primary treatment in cases where there was no prevention. Hatched bars indicate cell numbers in the tumour and solid bar numbers after resection and 106 residual or metastatic cells. Daily arresting level assumed to be 0.25%. Parameter values as in Table 1.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Same as Figure 5\u2014figure supplement 2, except M0 is 104 cancer cells.\n\n![Video 4.](https://cdn.elifesciences.org/articles/06266/elife-06266-media4.mp4.jpg)\n\n**Video 4.:** Tumours are treated at M0 = 106 cells. (A) The median (thick line) and 90% confidence intervals (shaded areas with dashed boundaries) for the distribution of times to relapse for treatment failures. (B) and (C) Arbitrary samples of the distribution of detection times for preventive and post-diagnostic interventions, respectively. The colour-code indicates the mean number of accumulated drivers over a period of 1 year. The rectangles on the top of B and on the bottom of C show the fifth and 95th percentiles, the blue circle indicates the median, and the red line is the mean. Parameters as in Table 1.\n\n![Video 5.](https://cdn.elifesciences.org/articles/06266/elife-06266-media5.mp4.jpg)\n\n**Video 5.:** Tumours are treated at M0 = 104 cells. (A) The median (thick line) and 90% confidence intervals (shaded areas with dashed boundaries) for the distribution of times to relapse for treatment failures. (B) and (C) Arbitrary samples of the distribution of detection times for preventive and post-diagnostic interventions, respectively. The colour-code indicates the mean number of accumulated drivers over a period of 1 year. The rectangles at the top of B and the bottom of C shows the fifth and 95th percentiles, the blue circle indicates the median, and the red line is the mean. Parameters as in Table 1.\n\nFigure 5E,F shows the distributions of detection times for all numerical experiments. We see that when both non-relapse (Figure 5A) and relapse (Figure 5C) are taken into account for large cancer cell populations (1 million cells), treating preventively at levels beyond about 0.3% arrest per day increases median delays in detection times due to outright success (i.e., survival beyond 50 years) but has no effect on the lower 95th percentile (Figure 5E). (Although not shown, arrest beyond approximately 0.6% per day does not yield further gains). In contrast, post-diagnostic intervention improves only marginally beyond daily arrest levels of about 0.3% (Figure 5E). Figure 5F shows the corresponding results for smaller cancer cell populations (based on integrating the results in Figure 5B,D), whereby a high median probability of full success is obtained >0.1% and >0.3% daily arrest for prevention and post-diagnostic intervention, respectively (Figure 5F). Thus for both cell population levels, prevention generally results in better outcomes compared to post-diagnostic intervention.\n\n## Discussion\n\nMTD chemotherapies present numerous challenges, a major one being the selection of resistant phenotypes, which are possible precursors for relapse (Gerlinger and Swanton, 2010). We mathematically and numerically investigated how the intensity of an anti-cancer measure, modelled as the arresting effect on a cancer cell population, resulted in success (i.e., either eradication or long-term tumour control) or failure (tumours growing beyond a threshold indicative of a life threatening cancer). Our central result is that beyond low impact thresholds\u2014approximated by the Darwinian fitness of the subclone with the most driver mutations\u2014little additional control is achieved when resistant subclones are present or likely to emerge during the long-term intervention assumed here.\n\nWe considered two contrasting scenarios. In the first, people at high risk of contracting a life threatening cancer make life-style changes or receive continuous, chemopreventive therapies, and in the second, more usual situation, a tumour is discovered and removed, and the patient treated with specific cytotoxic or cytostatic chemicals and/or with radiation. We found that, as expected, to achieve a given outcome, prevention requires smaller effects on cancer cell populations of a given size than do post-diagnostic interventions, the latter having smaller probabilities of complete cure and shorter times to tumour relapse. Inversely and importantly, for any given cell arrest level, prevention is, on average, superior to comparable post-diagnostic interventions, even when including cases where prevention initially fails, and resection and additional therapy are needed.\n\nSpecifically, based on empirical parameter estimates, we find that maximal long-term control occurs at surprisingly low daily levels of arrest. In the example where interventions target 1 million cancer cells, these levels are approximately 0.6% and 0.3% for preventive and post-diagnostic interventions, respectively. That the level is higher for preventive scenarios is because effective \u2018cure\u2019 (i.e., relapse does not occur during the 50 year period assumed in our numerical experiments) is possible, especially at cell arrest levels beyond 0.3%, whereas \u2018cure\u2019 is far less probable for post-diagnostic interventions. However, should prevention initially fail and a tumour be diagnosed and resected, any residual or metastatic cells are likely to contain more resistant clones than the corresponding situation for a post-diagnostic tumour. We stress that this latter result is contingent on our assumption that the same mutations (and mechanisms) are responsible for resistance to both preventive and post-diagnostic interventions. Should preventive and post-diagnostic measures differ substantially in their targets (and therefore resistance mechanisms), then evolved resistance to (failed) prevention could be irrelevant to the efficacy of subsequent traditional therapies.\n\nOur results point to what is perhaps an underappreciated challenge in cancer control: low impact interventions risk being unable to control subclones with the most fitness-enhancing drivers, whereas high levels of arrest risk selecting for resistance (Figure 6). Future models should investigate these contingencies more extensively for alternative assumptions and a range of parameterizations for specific cancer types. Below, we discuss challenges to cancer management for both preventive and post-diagnostic scenarios.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06266/elife-06266-fig6-v2.jpg)\n\n**Figure 6.:** Increasing treatment intensity selects against subclones with increasing numbers of drivers, whereas, regardless of treatment intensity, all resistant subclones with s(i+1) > c increase in number. The solid lines illustrate how selection and the initial number of resistant cells in a treated tumour predict median detection times and associated resistance levels. Median detection times approach a horizontal asymptote at 100% resistance as treatment intensity increases, whereas if the resistant mutation were to be knocked out, then the vertical asymptote at \u03c3crit = qs (where q is the number of drivers in the fastest growing subclone) would be approached instead for sufficiently small tumours. Asymptotes are shown as dashed lines. We illustrate three cases, each with an initial population of 100,000 identical cells (i = 0) and with one of three different initial numbers of resistant cells: 10, 100 or 1,000 (top to bottom lines). Other parameters as in Table 1.\n\n### Preventive interventions\n\nWhereas primary prevention is becoming an increasingly significant approach in reducing risk of certain cancers (e.g., Colditz and Bohlke, 2014), chemopreventive therapies are uncommon, despite empirical support for their effects (William et al., 2009). Several theoretical and in vitro experimental studies indicate that chemoprevention can reduce risks of life threatening cancers. For example, Silva and colleagues (Silva et al., 2012) parameterized computational models to show how low doses of verapamil and 2-deoxyglucose could be administered adaptively to promote longer tumour progression times. These drugs are thought to increase the costs of resistance and the competitive impacts of sensitive cells on resistant cancer cell subpopulations. However, some of the most promising results have come from studies employing non-steroidal anti-inflammatory drugs (NSAIDs), including experiments (Ibrahim-Hashim et al., 2012), investigations of their molecular effects (Galipeau et al., 2007; Kostadinov et al., 2013), and their use (Cuzick et al., 2015). For example, Ibrahim and co-workers (Ibrahim-Hashim et al., 2012) studied the action of NSAIDs and specifically sodium bicarbonate in reducing prostate tumours in male TRAMP mice (i.e., an animal model of transgenic adenocarcinoma of the mouse prostate). They showed that mice commencing the treatment at 4 weeks of age had significantly smaller tumour masses, and that more survived to the end of the experiment than either the controls or those mice commencing the treatment at an older age. Kostadinov et al. (2013) showed how NSAID use in a sample of people with Barrett's oesophagus is associated with reductions in somatic genomic abnormalities and their growth to detectable levels. It is noteworthy that it is not known to what extent reductions in cancer progression under NSAIDs are due to either cytotoxic or cytostatic effects or both. Although we do not explicitly model cytotoxic or cytostatic impacts, therapies curbing net growth rates but maintaining them at or above zero could be interpreted as resulting from the action of either cytotoxic and/or cytostatic processes. In contrast, therapies reducing net growth rates substantially below zero necessarily have a cytotoxic component. Our model, or modifications of it to explicitly include cytotoxic and cytostatic effects, could be used in future research to make predictions about optimal dose and start times to achieve acceptable levels of tumour control (or, e.g., the probability of a given tumour size and heterogeneity level by a given age).\n\nDecisions whether or not to employ specific chemopreventive therapies carry with them the risk of a poorer outcome than would have been the case had another available strategy (or no treatment at all) been adopted (Esserman et al., 2004). This issue is relevant to situations where alterations in life-style, removal or treatment of pre-cancerous lesions, or medications potentially result in unwanted side effects or induce new invasive neoplasms (e.g., Berrington de Gonzalez et al., 2011). Chemopreventive management prior to clinical detection would be most appropriate for individuals with genetic predispositions, familial histories, elevated levels of specific biomarkers, or risk-associated behaviours or life-styles (Hemminki and Li, 2004; Lippman and Lee, 2006; Sutcliffe et al., 2009; William et al., 2009; Hochberg et al., 2013). Importantly, our approach presupposes that the danger a nascent, growing tumour presents is proportional to its size and (implicitly, all else being equal) a person's age. Due caution is necessary in interpreting our results, since studies have argued that metastatic potential rather than tumour size may be a better predictor of future survival (Hynes, 2003; Foulkes et al., 2010; Sethi and Kang, 2011). However, given the expectation that prevention typically confronts smaller, less heterogeneous neoplasms, which are less likely to have resistant clones and to have metastasised (Hochberg et al., 2013; Gerlinger et al., 2014), support our basic conclusion that prevention is generally a superior strategy in terms of cancer-free survival compared to post-diagnostic intervention.\n\n### Post-diagnostic interventions\n\nOver the past decade, several alternative approaches to MTD have been proposed, where the objective is to manage rather than eradicate tumours (e.g., Maley et al., 2004; Komarova and Wodarz, 2005; Gatenby, 2009; Gatenby et al., 2009a, 2009b; Foo and Michor, 2010; Jansen et al., 2015). Tumour management attempts to limit cancer growth, metastasis, and reduce the probability of obtaining resistance mutations through, for example, micro-environmental modification, or competition with non-resistant cancer cell populations or with healthy cells. These approaches usually involve clinically diagnosed cancers: either inoperable tumours or residual or metastatic cancers after tumour excision. In the former situation, tumours are typically large enough in size to contain numerous resistance mutations. In many, if not most, cases, these neoplasms will have metastasized, meaning greater variability both in terms of phenotypes and potential resistance to chemotherapies, and in penetrance of therapeutic molecules to targeted tumour cells (Klein et al., 2002; Byrne et al., 2005). In contrast, the latter situation involves smaller, residual, or metastatic cancer cell populations, composed of high frequencies of resistant variants or dormant cells (Klein et al., 2002). According to our results, both scenarios are likely to involve populations with large numbers of accumulated driver mutations (or, although not considered in our study, fewer driver mutations but each with larger selective effect), which ostensibly contribute to the speed of relapse. Thus, management of clinically detected tumours need not only limit the proliferation and spread of refractory subpopulations but should also aim to control the growth of multi-driver subclones (Figure 5\u2014figure supplements 2, 3). In other words, in addition to actual resistance mutations (j = 1), subclones with q drivers will be effectively resistant to therapeutic interventions if q s \u226b \u03c3 (Figure 6).\n\nWe therefore suggest that the frequency distribution of driver mutations and the distribution of resistant subclones within a heterogeneous cancer cell population could be used to instruct decisions of the time course of treatment levels, with the aims of curbing tumour growth, metastasis, and resistance. We found that tumours typically achieve several additional driver mutations by the time they reach detection (Figure 3A; Figure 3\u2014figure supplement 1A; Figure 5\u2014figure supplements 2, 3), which approximates certain estimates (Stratton et al., 2009) but falls short of others (Sjoblom et al., 2006).\n\n### Conclusion\n\nOur results indicate that the two most important variables in determining therapeutic outcome are (1) the size of the initial cancer cell population (i.e., when prevention commences and/or post-diagnosis, following resection), (2) associated tumour heterogeneity in terms of accumulated drivers, and the presence of resistance phenotypes. This highlights the importance of biomarkers as accurate indicators of otherwise undetectable malignancies (Roukos et al., 2007), and the accurate assessment of local or distant metastases (Pantel et al., 1999). We suggest that if order-of-magnitude estimates of cell populations and intra-tumour heterogeneity are possible, then low dose, continuous, constant approaches could be established that lower and possibly minimize risks of the emergence of future, life-threatening cancers. According to our model, such options will generally be superior to more aggressive chemotherapies if therapeutic resistance is a risk factor.\n\nThe framework proposed here is sufficiently general to portray major events in different types of cancer with emphasis on solid tumours. However, some aspects of cancerous tumour growth are considered only implicitly, and further research is required to formulate more realistic models to include, for example, spatial aspects of tumour growth (Orlando et al., 2013), competition/cooperation between different subclones (Korolev et al., 2014), combinational (multidrug) resistance (Gillet and Gottesman, 2010; Bozic et al., 2013), drug-addiction, observed for example in certain melanomas (Das Thakur et al., 2013), or advantageous resistant mutations, observed in some leukemias (Michor et al., 2005). Moreover, future studies should investigate alternatives to the traditional post-diagnostic therapeutic scenarios considered here (e.g., molecularly targeted therapies [Yap, 2015]). Our study nevertheless predicts that the main hurdle to post-diagnostic MTD interventions remains resistant subclones, since beyond minimal impacts on the order of 0.3% per day for the larger of the two residual or metastatic cell populations simulated here (which are still very small by clinical diagnostic standards\u2014c 1 mm3), increased therapeutic intensity selects disproportionally for resistance and has negligible benefits in terms of delaying life-threatening cancers.\n",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "e6289a0b-501f-4289-88ec-1a4f08eae8bd",
+      "submission_id": "19729a8f-a7f1-4f9f-bae8-b1707466ae94",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carl T Bergstrom, University of Washington , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06266.030](https://doi.org/10.7554/eLife.06266.030)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDynamics of preventive and reactive cancer control using low-impact measures\u201d for consideration at eLife. Your article has been favorably evaluated by Diethard Tautz (Senior editor) and three reviewers, one of whom, Carl Bergstrom, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAll three reviewers found this to be an interesting and timely paper that addresses a very important question. The work is well-conceived, attentive to detail, and well-interpreted. Nonetheless the reviewers raised a number of points which they felt should be addressed.\n\n1) The authors use specific parameter values for their investigations. These parameters are presented in Table 1, and instead of giving biologically applicable ranges, the authors use particular values. In my opinion, it is important to investigate the range and not just a set of values. The paper would benefit greatly from some degree of sensitivity analysis to explain how results change as parameters change. For example, it is assumed that mutations are acquired with the rate 3.4x10^(-5). In reality, this parameter can vary over a very large range. It could be as low as 10^(-7) and as high as 10^(-2) in the presence of genomic instability. This is a change over five orders of magnitude, and can affect the results in a significant way. This should be addressed and discussed.\n\n2) The authors assume that resistance presents a cost. At the same time, it has been suggested in the literature that some resistant mutations can actually be advantageous (e.g. in chronic lymphocytic leukemia). How will this alter the results?\n\n3) It would be useful to discuss how the model applies or could be modified to apply to different types of therapies. Traditional therapies, more modern targeted therapies, and various sorts of combination treatments have very different properties. Often the source of resistance is not known. It is sometimes associated with specific mutations, and sometimes it has a different origin. The authors should explain how their model can be used in these different circumstances, and what modifications in the model correspond to different cases. Here we are looking less for additional modeling than for guidance on how the model could be adapted in future work.\n\n4) Similarly, different cancers have different properties (solid tumors vs. leukemias, for example). It would be useful to discuss how future studies could extend the model to explicitly model different cancer types.\n\n5) In the Abstract and throughout the paper, please clearly specify whether this paper is intended to address the implications of preventive/therapeutic interventions on the fate of a single aberrant clone, or on the fate of an individual patient. This distinction is important because cancer at almost any site in the body occurs in the context of additional subclinical aberrations in the population of cells. That is, most cancers arise in organs that are predisposed to cancer due to an interplay of inherited and exogenous influences (i.e., gene x environment interactions). Thus the process can be manifest not only in a single aberrant clone in one organ, but many concomitant clones within or across organs (e.g., long-term tobacco exposure places one at risk for myriad cancers in various organs) leading to synchronous and metachronous precancers and cancers.\n\n6) The manuscript continually refers to \u201cresidual cells,\u201d but the goal of most cancer-related surgeries is complete tumor removal. Complete resection is the foundation of cancer care wherever feasible. So it appears that this paper really relates to the fraction of cancer cases with residual or metastatic cancer. If so, that should be clarified in the title and background of the work (e.g. Dynamics of preventive and therapeutic interventions in patients with residual/metastatic cancer using low-impact measures).\n",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f1d96a28-7db4-43b1-8dd9-cf3938c8889f",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C1",
+      "claim": "Cancer poses danger because of its unregulated growth, development of resistance, and metastatic spread to vital organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer poses danger because of its unregulated growth, development of resistance, and metastatic spread to vital organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer characteristics presented in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6f79ba62-02ca-41d0-8e2b-391457ba89c0",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C2",
+      "claim": "Prevention generally results in more positive therapeutic outcomes than post-diagnostic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas prevention generally results in more positive therapeutic outcomes than post-diagnostic interventions, this advantage is substantially lowered should prevention initially fail to arrest tumour growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by numerical simulations and analytical results presented in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "ba4da9ad-ff60-4c5e-9074-400ae25a3368",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C3",
+      "claim": "The advantage of prevention over post-diagnostic intervention is substantially lowered should prevention initially fail to arrest tumour growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas prevention generally results in more positive therapeutic outcomes than post-diagnostic interventions, this advantage is substantially lowered should prevention initially fail to arrest tumour growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results showing that failed prevention leads to residual populations with more resistant clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "9b5c4d33-fa61-46e2-8b55-7510f2ba9ffc",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C4",
+      "claim": "Natural selection for increases in tumour cell population growth can be represented as the net effect of increased cell division rates and/or decreased apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural selection for increases in tumour cell population growth can be represented as the net effect of increased cell division rates and/or decreased apoptosis (e.g., Wodarz and Komarova, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Wodarz and Komarova, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "de994d1c-b045-4913-b70e-f4637136d377",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C5",
+      "claim": "Relatively rare driver mutations confer a net growth advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively rare driver mutations confer such a net growth advantage, whereas numerically dominant passenger mutations with initially neutral or mildly deleterious effects (Marusyk et al., 2012; Bozic et al., 2013; McFarland et al., 2013) can increase in frequency due to genetic hitchhiking or subsequent positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies on driver and passenger mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "82e15166-c975-4084-9c0c-434eb63c74d4",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C6",
+      "claim": "Passenger mutations with initially neutral or mildly deleterious effects can increase in frequency due to genetic hitchhiking or subsequent positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively rare driver mutations confer such a net growth advantage, whereas numerically dominant passenger mutations with initially neutral or mildly deleterious effects (Marusyk et al., 2012; Bozic et al., 2013; McFarland et al., 2013) can increase in frequency due to genetic hitchhiking or subsequent positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Marusyk et al., 2012; Bozic et al., 2013; McFarland et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "fd091aba-d4bc-4c64-b490-805709b2a05a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C7",
+      "claim": "Sufficiently large tumours could contain different clones that, taken as a group, can resist some, if not most, chemotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the many passengers in a growing tumour, some can contribute to chemoresistance, and sufficiently large tumours could contain different clones that, taken as a group, can resist some, if not most, chemotherapies (see Michor et al., 2005 for resistance to imatinib).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Michor et al., 2005 regarding resistance to imatinib.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "07ba8194-0cad-440e-ba75-fc058cb9b324",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C8",
+      "claim": "Chemotherapeutic remission followed by relapse suggests that resistant cells are often present at low frequencies prior to therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemotherapeutic remission followed by relapse suggests that these resistant cells are often present at low frequencies prior to therapy, either due to genetic drift or costs associated with resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on clinical observations of remission and relapse patterns.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "256a7f17-499f-47b0-9e16-af572cb5a7a2",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C9",
+      "claim": "MTD is particularly prone to select for chemoresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This body of work indicates that MTD is particularly prone to select for chemoresistance (e.g., Foo and Michor, 2009; Foo and Michor, 2010; Lorz et al., 2013), and what little empirical work exists supports this basic prediction (Turke et al., 2010), but see (Kouyos et al., 2014) for other disease systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to theoretical work (Foo and Michor, 2009; Foo and Michor, 2010; Lorz et al., 2013) and empirical work (Turke et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6f5feda5-8745-4272-ace9-f40654bd331c",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C10",
+      "claim": "Empirical work supports the prediction that MTD is prone to select for chemoresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This body of work indicates that MTD is particularly prone to select for chemoresistance (e.g., Foo and Michor, 2009; Foo and Michor, 2010; Lorz et al., 2013), and what little empirical work exists supports this basic prediction (Turke et al., 2010), but see (Kouyos et al., 2014) for other disease systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to empirical work by Turke et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "9915fb3b-b911-490b-abc1-ca80f0c606cc",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C11",
+      "claim": "The evolutionary rate and associated emergence of a diversity of chemoresistant lineages is a major determinant in the success or failure of multiple drugs vs a single one.",
+      "claim_type": "EXPLICIT",
+      "source": "They showed that the evolutionary rate and associated emergence of a diversity of chemoresistant lineages is a major determinant in the success or failure of multiple drugs vs a single one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from Komarova and Wodarz (2005) cited in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "48820a99-46bb-49a6-9e53-2a37cf6ded52",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C12",
+      "claim": "Combination strategies of cytotoxic and cytostatic therapies could be designed to be superior in terms of tumour eradication or managing resistance than either agent used alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Lorz and co-workers (Lorz et al., 2013) recently modelled the employment of cytotoxic and cytostatic therapies alone or in combination and showed how combination strategies could be designed to be superior in terms of tumour eradication or managing resistance than either agent used alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lorz et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "f2bd12dc-b4a5-4d8e-bcb1-be94cb3f2558",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C13",
+      "claim": "Drugs slowing the generation of chemoresistant mutants and subsequent evolution are more likely to be successful than those only increasing cell death rates.",
+      "claim_type": "EXPLICIT",
+      "source": "One of their main conclusions is that drugs slowing the generation of chemoresistant mutants and subsequent evolution are more likely to be successful than those only increasing cell death rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to conclusions from Foo and Michor (2009) cited in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "97692321-d478-4272-97a8-b2111bb5d249",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C14",
+      "claim": "All individuals harbour pre-cancerous lesions, some of which may transform into invasive carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "In depth consideration of preventive measures and their likely impact on individual risk and epidemiological trends is important given the likelihood that all individuals harbour pre-cancerous lesions, some of which may transform into invasive carcinoma (Bissell and Hines, 2011; Greaves, 2014), and concerns as to whether technological advances will continue to make significant headway in treating clinically detected cancers (Gillies et al., 2012; Vogelstein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bissell and Hines, 2011; Greaves, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "d04a06cc-d2ae-4ff4-9a0a-1aa6ed526238",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C15",
+      "claim": "The model assumes that an individual can contract at most a single cancer, originating from a single lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that an individual can contract at most a single cancer, originating from a single lesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the modeling framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "9240e929-e665-4be5-838b-eaaa036d2f85",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C16",
+      "claim": "The expected mean tumour size in a population of subjects can be substantially different from the median, since the former is highly influenced by outliers due to tumours of very large size.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that the expected mean tumour size in a population of subjects can be substantially different from the median, since the former is highly influenced by outliers due to tumours of very large size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analytical and numerical results shown in Appendix 1\u2014figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "5a14f901-e601-4e2a-a9a0-a92ed7814448",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C17",
+      "claim": "Treatment outcome is sensitive to initial conditions, particularly for intermediate-sized tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "We then consider constant preventive measures and show that treatment outcome is sensitive to initial conditions, particularly for intermediate-sized tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical simulations presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "bf0d2781-9317-45a5-8ad0-58529aac777a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C18",
+      "claim": "Higher impacts on the cancer cell population are usually required for post-diagnostic interventions to achieve a level of control comparable to prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "We show as expected that therapeutic outcomes are generally superior under prevention vs post-diagnostic intervention, and that higher impacts on the cancer cell population are usually required for post-diagnostic interventions to achieve a level of control comparable to prevention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative numerical simulations shown in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "a7180378-186d-443a-aaf8-b9635c92fbac",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C19",
+      "claim": "Should resection leave sufficiently large numbers of residual cells (or metastases are not discovered), then a range of the most successful outcomes under prevention is not attainable under post-diagnostic intervention, regardless of potential cell arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that should resection leave sufficiently large numbers of residual cells (or metastases are not discovered), then a range of the most successful outcomes under prevention is not attainable under post-diagnostic intervention, regardless of potential cell arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "e7e8a24b-e9a7-4c15-b3e2-e9c146e32a87",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C20",
+      "claim": "There is little gained in terms of outcomes in post-diagnostic intervention beyond approximately 0.3% cell arrest per day for both small (10,000) and large (1 million) cancer cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally and importantly, whereas there is little gained in terms of outcomes in post-diagnostic intervention beyond approximately 0.3% cell arrest per day for both small (10,000) and large (1 million) cancer cell populations, prevention outcomes may achieve continual gains for the latter cell number, up to about 0.6% cell arrest per day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results shown in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "f47031db-a58c-4f01-a02c-9ae5a50dc9ef",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C21",
+      "claim": "Prevention outcomes may achieve continual gains for large (1 million) cancer cell populations, up to about 0.6% cell arrest per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally and importantly, whereas there is little gained in terms of outcomes in post-diagnostic intervention beyond approximately 0.3% cell arrest per day for both small (10,000) and large (1 million) cancer cell populations, prevention outcomes may achieve continual gains for the latter cell number, up to about 0.6% cell arrest per day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "b454ff8f-6e54-43bf-9b13-9fae47222725",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C22",
+      "claim": "A mean field approach assumes a large initial number of cells and averages any effects of stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "A mean field approach assumes a large initial number of cells (Krapivsky et al., 2010) and averages any effects of stochasticity, so that an intermediate state of the system is described by a set of ordinary differential equations (i.e., master equations; Gardiner, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Krapivsky et al., 2010 and Gardiner, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "a8a8204d-8a2b-4ad8-b41f-8a0131c8f161",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C23",
+      "claim": "The fitness function fij is defined by the number of accumulated drivers (i = 0, 1, \u2026, N) and resistance status (j = 0, 1).",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness function fij, the difference between the birth and death rates of a cell, is defined by the number of accumulated drivers (i = 0, 1, \u2026, N) and resistance status (j = 0, 1): a sensitive cancerous cell with a single driver has selective advantage s, and any accumulated driver adds s to fitness, while resistance is associated with a constant cost c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the model's fitness function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6399326b-2a7f-46f3-82cd-33ad6f74fb46",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C24",
+      "claim": "A sensitive cancerous cell with a single driver has selective advantage s, and any accumulated driver adds s to fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness function fij, the difference between the birth and death rates of a cell, is defined by the number of accumulated drivers (i = 0, 1, \u2026, N) and resistance status (j = 0, 1): a sensitive cancerous cell with a single driver has selective advantage s, and any accumulated driver adds s to fitness, while resistance is associated with a constant cost c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "005bbf4f-0f83-4026-a521-d45a8eb9f9f5",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C25",
+      "claim": "Resistance is associated with a constant cost c.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness function fij, the difference between the birth and death rates of a cell, is defined by the number of accumulated drivers (i = 0, 1, \u2026, N) and resistance status (j = 0, 1): a sensitive cancerous cell with a single driver has selective advantage s, and any accumulated driver adds s to fitness, while resistance is associated with a constant cost c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "9270aa4b-98ee-4203-ab2b-8028f21089a7",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C26",
+      "claim": "Exposure to a single treatment affects only non-resistant cells (j = 0), incurring a loss \u03c3 to their fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to a single treatment affects only non-resistant cells (j = 0), incurring a loss \u03c3 to their fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "c7469bc1-41fa-47dc-ae29-a42ed71e006c",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C27",
+      "claim": "The assumption of driver additivity is a special case of multiplicative fitness, and both are approximately equivalent for very small s.",
+      "claim_type": "EXPLICIT",
+      "source": "The assumption of driver additivity is a special case of multiplicative fitness, and both are approximately equivalent for very small s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical statement about the model assumptions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "8e3bc86a-2847-4d19-bd54-91459733a1a9",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C28",
+      "claim": "There is an excellent correspondence between analytical and numerical results for \u03c3 varied in range of s.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an excellent correspondence between analytical and numerical results for \u03c3 varied in range of s (Appendix 1\u2014figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of analytical and numerical results shown in Appendix 1\u2014figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "abbdfcd9-1fd3-4dc2-ab0c-0f2171b49048",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C29",
+      "claim": "The mean diverges considerably from median behaviour in the majority of cases, since the former is strongly influenced by outliers with high-tumour cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "A more detailed study of the distribution of tumour sizes reveals that the mean diverges considerably from median behaviour in the majority of cases, since the former is strongly influenced by outliers with high-tumour cell numbers (see Appendix 1\u2014figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Appendix 1\u2014figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "a6ea4e49-e180-4984-b607-b234d84ba3d3",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C30",
+      "claim": "An untreated tumour reaches the assumed detection threshold of 10^9 cells by about 18 years on average.",
+      "claim_type": "EXPLICIT",
+      "source": "An untreated tumour reaches the assumed detection threshold of 109 cells by about 18 years on average and because it is not subject to strong negative selection (we assume low c), any emerging resistant cell-lines are likely to remain at low frequency (0.03% at the detection time in the example of Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical simulation results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "214e7dc7-10cd-4dc4-b273-463287115313",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C31",
+      "claim": "In an untreated tumour, any emerging resistant cell-lines are likely to remain at low frequency (0.03% at the detection time).",
+      "claim_type": "EXPLICIT",
+      "source": "An untreated tumour reaches the assumed detection threshold of 109 cells by about 18 years on average and because it is not subject to strong negative selection (we assume low c), any emerging resistant cell-lines are likely to remain at low frequency (0.03% at the detection time in the example of Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical simulation results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "7038a4f3-a61c-4727-b30b-360c2bb0e208",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C32",
+      "claim": "Low-treatment intensity delays tumour growth and thus time of detection by approximately 16 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1B, low-treatment intensity delays tumour growth and thus time of detection by approximately 16 years, while an increase in dose tends to result in tumours dominated by resistant cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical simulation results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "ef928782-cac9-4b41-ba8a-b5010eda23db",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C33",
+      "claim": "An increase in dose tends to result in tumours dominated by resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1B, low-treatment intensity delays tumour growth and thus time of detection by approximately 16 years, while an increase in dose tends to result in tumours dominated by resistant cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical simulation results shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "fefc6579-443e-4d69-8343-6fd3b7f78f0e",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C34",
+      "claim": "Resistant cell populations are sometimes observed to go extinct stemming from stochasticity, and this tends to occur more at high-treatment levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being unaffected by treatment, resistant cell populations are sometimes observed to go extinct stemming from stochasticity (Figure 1D), and this tends to occur more at high-treatment levels, because there are fewer sensitive tumour cells to seed new (mutant) resistant cell populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical simulation results shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "bbee08e5-acb7-4a01-b29f-22f21918deef",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C35",
+      "claim": "Tumour growth is largely driven by its non-resistant part for relatively low-impact treatments \u03c3 < 2s.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the selective advantage s shows that tumour growth is largely driven by its non-resistant part for relatively low-impact treatments \u03c3 < 2s (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "1e99066f-83e3-4f9d-a11b-3e78bff3c996",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C36",
+      "claim": "The tumour shifts from being mainly non-resistant to resistant at \u03c3 \u2248 2s.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the tumour shifts from being mainly non-resistant to resistant at \u03c3 \u2248 2s, which is reflected by the inflection point in the trajectory of the median (indicated by point B in Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "1f8692da-0eb9-401c-8035-ca73e7a54d1a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C37",
+      "claim": "Detection times are most variable at \u03c3 \u2248 2s.",
+      "claim_type": "EXPLICIT",
+      "source": "Notice that detection times are also most variable at \u03c3 \u2248 2s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "b0338cc9-e0ea-46fd-b8da-6e8d3f53b9e4",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C38",
+      "claim": "The median changes smoothly at high-treatment levels (\u03c3 > 2s), tending to a horizontal asymptote.",
+      "claim_type": "EXPLICIT",
+      "source": "The median changes smoothly at high-treatment levels (\u03c3 > 2s), tending to a horizontal asymptote.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6a586fd5-1afe-41ae-9a57-7b49012d424a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C39",
+      "claim": "At high-treatment levels, the dynamics are strongly influenced by the actual time point at which the first resistance mutation occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is explained by the fact that the sensitive part is heavily suppressed at high-treatment levels, meaning that the dynamics are strongly influenced by the actual time point at which the first resistance mutation occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model dynamics and numerical results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "3d564f72-0c94-4d17-88d6-f63eebdce121",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C40",
+      "claim": "Early-detected tumours are more likely to be resistant under constant treatments than those detected at later times.",
+      "claim_type": "EXPLICIT",
+      "source": "We find, counterintuitively, that early-detected tumours are more likely to be resistant under constant treatments than those detected at later times (A, B, and C in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6edbee06-a701-4005-8675-1b398f9018d4",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C41",
+      "claim": "Tumours under treatment that by chance obtain resistance early grow faster than those that do not.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because tumours under treatment that by chance obtain resistance early grow faster than those that do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model dynamics explaining the counterintuitive finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "fa3a2b0b-05c9-4f1e-82de-c22992654082",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C42",
+      "claim": "By the time of detection, non-resistant tumours usually accumulate up to 4 additional drivers on average, while resistant tumours have fewer.",
+      "claim_type": "EXPLICIT",
+      "source": "By the time of detection, non-resistant tumours usually accumulate up to 4 additional drivers on average, while resistant tumours have fewer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "7c87a78b-d25e-4de4-b878-5ce68136ad43",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C43",
+      "claim": "The inflection point at \u03c3 \u2248 2s in Figure 2A is due to the accumulation of additional drivers within tumours and associated increases in the likelihood that the tumour eventually resists treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The inflection point at \u03c3 \u2248 2s in Figure 2A is due to the accumulation of additional drivers within tumours and associated increases in the likelihood that the tumour eventually resists treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the model dynamics and numerical results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "5c76bc89-7dc5-4eef-a979-1e3a51454a9a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C44",
+      "claim": "A tumour can be suppressed only if \u03c3 > 2s when the initial population consists of 10^6 cells and a mutant cell with one additional driver and associated fitness 2s appears very rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the initial population consists of 106 cells, in the absence of treatment, a mutant cell with one additional driver and associated fitness 2s will appear very rapidly. Such a tumour can be suppressed only if \u03c3 > 2s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "662a1408-b2ca-4b74-b5ed-901c000f2bd9",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C45",
+      "claim": "The inflection point \u03c3 \u2248 2s disappears when N = 0 (no additional driver mutations allowed).",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by additional numerical experiments where we vary the maximal number of additional driver mutations N: the inflection point \u03c3 \u2248 2s disappears when N = 0 (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "ec8ae68f-bd46-49fa-93ad-c130b7eb429f",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C46",
+      "claim": "The initial cancer cell number M0 affects both the median and distribution of detection times.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial cancer cell number M0 affects both the median and distribution of detection times (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "371806ce-bdff-4992-b06b-a3e538c6d11d",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C47",
+      "claim": "For large initial tumours, growth is deterministic and exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "For large initial tumours, growth is deterministic and exponential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model dynamics and numerical results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "2ae47d20-8465-4a74-b070-ac53cad668e9",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C48",
+      "claim": "A tumour is likely to be eradicated under a range of constant treatments when M0 = 10^5 or fewer initial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that a tumour is likely to be eradicated under a range of constant treatments when M0 = 105 or fewer initial cells; in contrast, a tumour is virtually certain to persist regardless of treatment level for M0 = 107 cells or greater (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6129cece-2364-457f-b387-3f242a64f188",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C49",
+      "claim": "A tumour is virtually certain to persist regardless of treatment level for M0 = 10^7 cells or greater.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that a tumour is likely to be eradicated under a range of constant treatments when M0 = 105 or fewer initial cells; in contrast, a tumour is virtually certain to persist regardless of treatment level for M0 = 107 cells or greater (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "4a9c9605-edf2-4e10-8a76-1a61242c024b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C50",
+      "claim": "Tumours that are c. 1% the size of most clinically detectable, internal cancers will typically be impossible to eradicate by single molecule chemoprevention when resistance is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, our model indicates that tumours that are c. 1% the size of most clinically detectable, internal cancers will typically be impossible to eradicate by single molecule chemoprevention when resistance is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the numerical results showing that tumours with 10^7 cells or more cannot be eradicated.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6851e35b-fa0b-4bed-9611-0228fe651c98",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C51",
+      "claim": "Many tumours with 1 million cells will either already contain or rapidly subsequently acquire resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the mutation rates assumed here, many tumours with 1 million cells will either already contain or rapidly subsequently acquire resistant cells (Iwasa et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Iwasa et al., 2006 and the mutation rates used in the model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "1b830946-dee2-48aa-91a0-5ce496cf2b58",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C52",
+      "claim": "The initial fraction of resistant cells in a tumour has little impact on dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore not surprising that the initial fraction of resistant cells in a tumour has little impact on dynamics (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "d4156712-3ad9-4876-8582-8cde11ef1e33",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C53",
+      "claim": "The fraction of persons with tumours that remain undetected after 50 years of growth improves substantially with lower numbers of initial resistance mutations, particularly at higher treatment levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, another measure of success in control (the fraction of persons with tumours that remain undetected after 50 years of growth) improves substantially with lower numbers of initial resistance mutations, particularly at higher treatment levels (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "27b3f5ed-9808-4468-8e39-68f0e8c0194f",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C54",
+      "claim": "Tumours exhibit more or less deterministic growth depending on the initial number of cells M0 and driver mutation rate u.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that tumours exhibit more or less deterministic growth depending on the initial number of cells M0 and driver mutation rate u whereby the larger the population (Figure 2\u2014figure supplement 1B) or the higher the mutation rate (Appendix 1\u2014figure 4A), the less apparent are stochastic effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 2\u2014figure supplement 1B and Appendix 1\u2014figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "f9fec92b-ead7-4cd7-9c9b-89a4b7b382f5",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C55",
+      "claim": "Under dose-dependent costs, a drug treatment only applied when the number of non-resistant cells exceeds the number of resistant cells leads to slower long-term tumour growth than does a constant therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerical studies presented in more detail in 'A simple form of drug addiction for resistant cell-lines' in Appendix 1 show that under dose-dependent costs, a drug treatment only applied when the number of non-resistant cells exceeds the number of resistant cells (e.g., a metronomic therapy [Fischer et al., 2015]) leads to slower long-term tumour growth than does a constant therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical studies presented in Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "3b5b763e-2fed-4f29-aa1f-9db1a9fbd54b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C56",
+      "claim": "Early discovery (at 10^9 cells) yields an additional 3.4 years compared to late discovery (at 10^11 cells) at \u03c3 = 1.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the median expectations of years from tumour excision to relapse, early discovery (at 109 cells) yields an additional 3.4 years compared to late discovery (at 1011 cells) at \u03c3 = 1.5% (medians for low vs high detection thresholds are 14.8 and 11.4 years, respectively; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "79be93e4-1c21-4854-9468-6a13264ff434",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C57",
+      "claim": "20 years after resection and commencing treatment, the probability of tumour non-detection is close to zero, regardless of treatment intensity, when post-diagnostic resection leaves 10^6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consider the following example: 20 years after resection and commencing treatment, the probability of tumour non-detection (i.e., the tumour is either eradicated or does not reach the detection threshold) is close to zero, regardless of treatment intensity (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "232854cc-5694-478c-bcd6-24fa25ef07d3",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C58",
+      "claim": "For prevention starting at 10^6 cells that fails to control the incipient tumour for 50 years, the detection time is substantially longer than either of the excision cases (median 25.5 years for \u03c3 = 1.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast this with cases of prevention starting at the same cancer cell population size (106 cells) but which fail to control the incipient tumour for the 50 years of the simulation: the detection time of these potentially life-threatening tumours is substantially longer than either of the excision cases (median 25.5 years for \u03c3 = 1.5%, i.e., 0.3\u20130.4% potential cell arrest per day), and tumours are managed below the detection threshold after 20 years in more than 80% of cases for any \u03c3 > 1.0% (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "44a5c809-537f-4ce8-b222-9ddf21c197ce",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C59",
+      "claim": "For prevention starting at 10^6 cells, tumours are managed below the detection threshold after 20 years in more than 80% of cases for any \u03c3 > 1.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast this with cases of prevention starting at the same cancer cell population size (106 cells) but which fail to control the incipient tumour for the 50 years of the simulation: the detection time of these potentially life-threatening tumours is substantially longer than either of the excision cases (median 25.5 years for \u03c3 = 1.5%, i.e., 0.3\u20130.4% potential cell arrest per day), and tumours are managed below the detection threshold after 20 years in more than 80% of cases for any \u03c3 > 1.0% (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "f926c71d-acf8-4e99-896d-168179e488ca",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C60",
+      "claim": "When there are 10^4 residual cells, stochastic effects play a more important role in dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Now consider a residual population of 1/100th the previous case, that is, 104 cells. Here, stochastic effects play a more important role in dynamics (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "cf866498-c268-4114-b70d-22d224689423",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C61",
+      "claim": "The secondary detection times are more variable for small initial tumours compared to larger ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the secondary detection times (i.e., when residual or metastatic cells grow to form a new tumour) are more variable for small initial tumours compared to larger ones (cf the median 35.8 years, 90% CIs [17.0, 70.5] years vs 22.4, [13.7, 37.0] years for 109 vs 1011, respectively, with \u03c3 = 1.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results comparing different initial tumour sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "5c89a717-528a-4b02-aa03-16d51c473b57",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C62",
+      "claim": "For both thresholds of tumour excision, subsequent cancer cell arrest levels beyond approximately \u03c3 = 1.5% make little difference in terms of tumour growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, for both thresholds of tumour excision, subsequent cancer cell arrest levels beyond approximately \u03c3 = 1.5% make little difference in terms of tumour growth (Figure 3B-D, Figure 3\u2014figure supplement 1B-D), since virtually all of the sensitive cells post-excision will be arrested or killed by the measure beyond this level, leaving uncontrollable resistant cells to grow and repopulate the primary tumour site and/or metastases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3B-D and Figure 3\u2014figure supplement 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "9029566f-a756-491b-859d-bcd6eb00e4fa",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C63",
+      "claim": "For post-diagnostic interventions, knowledge about the number of drivers at the time of tumour discovery is a far better predictor of outcome than information about the time from tumour initiation to discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that for post-diagnostic interventions knowledge about the number of drivers at the time of tumour discovery is a far better predictor of outcome than information about the time from tumour initiation to discovery, and that increases in treatment intensity tend to decrease predictive accuracy (Figure 3\u2014figure supplements 2\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3\u2014figure supplements 2\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "c6e720d9-4da9-4641-9fd0-aadfbb0d5ebd",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C64",
+      "claim": "Increases in treatment intensity tend to decrease predictive accuracy of outcome for post-diagnostic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that for post-diagnostic interventions knowledge about the number of drivers at the time of tumour discovery is a far better predictor of outcome than information about the time from tumour initiation to discovery, and that increases in treatment intensity tend to decrease predictive accuracy (Figure 3\u2014figure supplements 2\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3\u2014figure supplements 2\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6c8543fc-feda-4cd5-93e3-1390293ec20a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C65",
+      "claim": "When prevention starts at relatively large cancer cell populations (1 million cells), only small comparative gains occur from higher cell arrest in terms of outright treatment success.",
+      "claim_type": "EXPLICIT",
+      "source": "When prevention starts at (or tumour resection misses) relatively large cancer cell populations (1 million cells), only small comparative gains occur from higher cell arrest in terms of outright treatment success (Figure 5A), whereas interventions starting at much smaller cancer cell numbers (10,000) result in considerably greater outright success (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "92e1d6a0-a31c-4dc2-9cc3-554e9b61d70b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C66",
+      "claim": "Interventions starting at much smaller cancer cell numbers (10,000) result in considerably greater outright success.",
+      "claim_type": "EXPLICIT",
+      "source": "When prevention starts at (or tumour resection misses) relatively large cancer cell populations (1 million cells), only small comparative gains occur from higher cell arrest in terms of outright treatment success (Figure 5A), whereas interventions starting at much smaller cancer cell numbers (10,000) result in considerably greater outright success (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "4278e1cf-796f-4fce-8013-e6d666f206b6",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C67",
+      "claim": "Prevention generally results in superior outcomes in terms of delaying tumour growth, particularly for large residual cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at situations of relapse only for prevention vs post-diagnostic intervention, the former generally results in superior outcomes in terms of delaying tumour growth, particularly for large residual cell populations (cf Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "170ab77e-4c37-455c-9062-f95a29ddee3b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C68",
+      "claim": "For lower numbers of residual cells, some post-diagnostic resected tumours in the sample will be initially resistance free.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for lower numbers of residual cells, some post-diagnostic resected tumours in the sample will be initially resistance free (cf Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "158bcb87-1000-4564-b5d7-70290e824ab1",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C69",
+      "claim": "Prior selection for resistance in initially failed prevention generally results in larger residual resistant cell populations than pre-therapeutic residual populations in post-diagnostic situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior selection for resistance in initially failed prevention generally results in larger residual resistant cell populations than pre-therapeutic residual populations in post-diagnostic situations (filled bars, cf captions A and B in Figure 5\u2014figure supplements 2, 3), but smaller residual resistant cell populations than treatment failures following post-diagnostic resection (hatched bars, cf captions A and D in Figure 5\u2014figure supplements 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5\u2014figure supplements 2, 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "da832733-ce5a-4bfa-8a8b-089e76eaca89",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C70",
+      "claim": "Secondary failures are associated with larger percentages of resistant subclones and a shift in the distributions towards more drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, as expected, secondary failures are associated with larger percentages of resistant subclones and a shift in the distributions towards more drivers (cf captions C and D in Figure 5\u2014figure supplements 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5\u2014figure supplements 2, 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "4d0ece11-168e-4b94-bae0-7b7630b56a6b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C71",
+      "claim": "For large cancer cell populations (1 million cells), treating preventively at levels beyond about 0.3% arrest per day increases median delays in detection times due to outright success but has no effect on the lower 95th percentile.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that when both non-relapse (Figure 5A) and relapse (Figure 5C) are taken into account for large cancer cell populations (1 million cells), treating preventively at levels beyond about 0.3% arrest per day increases median delays in detection times due to outright success (i.e., survival beyond 50 years) but has no effect on the lower 95th percentile (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "a67811dd-f007-47b1-b55b-bcc2dd36ece9",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C72",
+      "claim": "Arrest beyond approximately 0.6% per day does not yield further gains for prevention of large cancer cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "(Although not shown, arrest beyond approximately 0.6% per day does not yield further gains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from numerical simulations not shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "e92a5e1d-5bc3-4450-96dc-0dba8a81b1e8",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C73",
+      "claim": "Post-diagnostic intervention improves only marginally beyond daily arrest levels of about 0.3% for large cancer cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, post-diagnostic intervention improves only marginally beyond daily arrest levels of about 0.3% (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "2af14315-bb77-465f-befd-15947c6c9c39",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C74",
+      "claim": "For smaller cancer cell populations (10,000), a high median probability of full success is obtained >0.1% and >0.3% daily arrest for prevention and post-diagnostic intervention, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5F shows the corresponding results for smaller cancer cell populations (based on integrating the results in Figure 5B,D), whereby a high median probability of full success is obtained >0.1% and >0.3% daily arrest for prevention and post-diagnostic intervention, respectively (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "536eb737-7fec-4338-9000-e98da5e1be0e",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C75",
+      "claim": "Beyond low impact thresholds\u2014approximated by the Darwinian fitness of the subclone with the most driver mutations\u2014little additional control is achieved when resistant subclones are present or likely to emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "Our central result is that beyond low impact thresholds\u2014approximated by the Darwinian fitness of the subclone with the most driver mutations\u2014little additional control is achieved when resistant subclones are present or likely to emerge during the long-term intervention assumed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding supported by multiple numerical results throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "99041f1d-c812-432b-b545-2b685afbc455",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C76",
+      "claim": "To achieve a given outcome, prevention requires smaller effects on cancer cell populations of a given size than do post-diagnostic interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, as expected, to achieve a given outcome, prevention requires smaller effects on cancer cell populations of a given size than do post-diagnostic interventions, the latter having smaller probabilities of complete cure and shorter times to tumour relapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding supported by numerical results in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "16e00c0f-73e8-4d0e-90c0-bbc28ddba97c",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C77",
+      "claim": "For any given cell arrest level, prevention is, on average, superior to comparable post-diagnostic interventions, even when including cases where prevention initially fails.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely and importantly, for any given cell arrest level, prevention is, on average, superior to comparable post-diagnostic interventions, even when including cases where prevention initially fails, and resection and additional therapy are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding supported by numerical results in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "a9d0097c-073b-45a4-8aa5-0d270826ede9",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C78",
+      "claim": "Maximal long-term control occurs at surprisingly low daily levels of arrest: approximately 0.6% and 0.3% for preventive and post-diagnostic interventions, respectively, for interventions targeting 1 million cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, based on empirical parameter estimates, we find that maximal long-term control occurs at surprisingly low daily levels of arrest. In the example where interventions target 1 million cancer cells, these levels are approximately 0.6% and 0.3% for preventive and post-diagnostic interventions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding supported by numerical results in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "fec200c0-7eee-4e6d-a5ae-ee83400d9173",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C79",
+      "claim": "Should prevention initially fail and a tumour be diagnosed and resected, any residual or metastatic cells are likely to contain more resistant clones than the corresponding situation for a post-diagnostic tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "However, should prevention initially fail and a tumour be diagnosed and resected, any residual or metastatic cells are likely to contain more resistant clones than the corresponding situation for a post-diagnostic tumour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results shown in Figure 5\u2014figure supplements 2, 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "7e487d7e-59f3-4ad3-b6f7-cda62d710770",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C80",
+      "claim": "Low impact interventions risk being unable to control subclones with the most fitness-enhancing drivers, whereas high levels of arrest risk selecting for resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results point to what is perhaps an underappreciated challenge in cancer control: low impact interventions risk being unable to control subclones with the most fitness-enhancing drivers, whereas high levels of arrest risk selecting for resistance (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary inference supported by numerical results throughout the manuscript and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "5ee19516-7eda-4e75-abd9-280d932ef516",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C81",
+      "claim": "Chemopreventive therapies are uncommon, despite empirical support for their effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas primary prevention is becoming an increasingly significant approach in reducing risk of certain cancers (e.g., Colditz and Bohlke, 2014), chemopreventive therapies are uncommon, despite empirical support for their effects (William et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to William et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "51a50d1e-d717-4cfc-9b44-9db242276ec1",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C82",
+      "claim": "Low doses of verapamil and 2-deoxyglucose could be administered adaptively to promote longer tumour progression times.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Silva and colleagues (Silva et al., 2012) parameterized computational models to show how low doses of verapamil and 2-deoxyglucose could be administered adaptively to promote longer tumour progression times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Silva et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "6984a2a1-c4cf-463a-8774-7c66a1c3f4fa",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C83",
+      "claim": "Mice commencing NSAID treatment at 4 weeks of age had significantly smaller tumour masses and more survived to the end of the experiment than controls or those commencing treatment at an older age.",
+      "claim_type": "EXPLICIT",
+      "source": "They showed that mice commencing the treatment at 4 weeks of age had significantly smaller tumour masses, and that more survived to the end of the experiment than either the controls or those mice commencing the treatment at an older age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from Ibrahim-Hashim et al., 2012 cited in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "558206a0-6567-4c28-ad96-9e7dbada03f3",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C84",
+      "claim": "NSAID use in people with Barrett's oesophagus is associated with reductions in somatic genomic abnormalities and their growth to detectable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Kostadinov et al. (2013) showed how NSAID use in a sample of people with Barrett's oesophagus is associated with reductions in somatic genomic abnormalities and their growth to detectable levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kostadinov et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "3ad46ee2-3a4f-4a7b-94ae-da4b47472b5f",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C85",
+      "claim": "It is not known to what extent reductions in cancer progression under NSAIDs are due to either cytotoxic or cytostatic effects or both.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that it is not known to what extent reductions in cancer progression under NSAIDs are due to either cytotoxic or cytostatic effects or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding NSAID mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "cba3f702-51b7-4a5e-92a3-f3bc56a5483b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C87",
+      "claim": "Studies have argued that metastatic potential rather than tumour size may be a better predictor of future survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Due caution is necessary in interpreting our results, since studies have argued that metastatic potential rather than tumour size may be a better predictor of future survival (Hynes, 2003; Foulkes et al., 2010; Sethi and Kang, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hynes, 2003; Foulkes et al., 2010; Sethi and Kang, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "9974667f-0791-4192-ab1f-501613c934eb",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C88",
+      "claim": "Prevention typically confronts smaller, less heterogeneous neoplasms, which are less likely to have resistant clones and to have metastasised.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the expectation that prevention typically confronts smaller, less heterogeneous neoplasms, which are less likely to have resistant clones and to have metastasised (Hochberg et al., 2013; Gerlinger et al., 2014), support our basic conclusion that prevention is generally a superior strategy in terms of cancer-free survival compared to post-diagnostic intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hochberg et al., 2013; Gerlinger et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "0032fac3-b436-46a9-b223-3d4c58cccd12",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C89",
+      "claim": "Several alternative approaches to MTD have been proposed where the objective is to manage rather than eradicate tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the past decade, several alternative approaches to MTD have been proposed, where the objective is to manage rather than eradicate tumours (e.g., Maley et al., 2004; Komarova and Wodarz, 2005; Gatenby, 2009; Gatenby et al., 2009a, 2009b; Foo and Michor, 2010; Jansen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies on tumour management approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "fe1aad79-f014-44d9-b6bd-ff8f80d9d657",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C90",
+      "claim": "Tumours typically achieve several additional driver mutations by the time they reach detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tumours typically achieve several additional driver mutations by the time they reach detection (Figure 3A; Figure 3\u2014figure supplement 1A; Figure 5\u2014figure supplements 2, 3), which approximates certain estimates (Stratton et al., 2009) but falls short of others (Sjoblom et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by numerical results shown in Figure 3A, Figure 3\u2014figure supplement 1A, and Figure 5\u2014figure supplements 2, 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "0faa06fb-26c8-4bdb-b7db-eb9c39f507a2",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C91",
+      "claim": "The two most important variables in determining therapeutic outcome are the size of the initial cancer cell population and associated tumour heterogeneity in terms of accumulated drivers and the presence of resistance phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the two most important variables in determining therapeutic outcome are (1) the size of the initial cancer cell population (i.e., when prevention commences and/or post-diagnosis, following resection), (2) associated tumour heterogeneity in terms of accumulated drivers, and the presence of resistance phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on numerical results throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "ca5256e8-8f78-4bc9-8a0c-c457efbcaee7",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C92",
+      "claim": "If order-of-magnitude estimates of cell populations and intra-tumour heterogeneity are possible, then low dose, continuous, constant approaches could be established that lower and possibly minimize risks of the emergence of future, life-threatening cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that if order-of-magnitude estimates of cell populations and intra-tumour heterogeneity are possible, then low dose, continuous, constant approaches could be established that lower and possibly minimize risks of the emergence of future, life-threatening cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "b49fa529-9389-4a4e-acfe-e7205ba15171",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C93",
+      "claim": "Low dose, continuous approaches will generally be superior to more aggressive chemotherapies if therapeutic resistance is a risk factor.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model, such options will generally be superior to more aggressive chemotherapies if therapeutic resistance is a risk factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the modeling results throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "38693267-53c5-48b2-b508-01aad155003c",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C94",
+      "claim": "The main hurdle to post-diagnostic MTD interventions remains resistant subclones.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study nevertheless predicts that the main hurdle to post-diagnostic MTD interventions remains resistant subclones, since beyond minimal impacts on the order of 0.3% per day for the larger of the two residual or metastatic cell populations simulated here (which are still very small by clinical diagnostic standards\u2014c 1 mm3), increased therapeutic intensity selects disproportionally for resistance and has negligible benefits in terms of delaying life-threatening cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on numerical results in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "ea7f8567-4e71-40e8-aacf-ae109bed716b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "claim_id": "C95",
+      "claim": "Beyond minimal impacts on the order of 0.3% per day for residual populations of 1 million cells, increased therapeutic intensity selects disproportionally for resistance and has negligible benefits in terms of delaying life-threatening cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study nevertheless predicts that the main hurdle to post-diagnostic MTD interventions remains resistant subclones, since beyond minimal impacts on the order of 0.3% per day for the larger of the two residual or metastatic cell populations simulated here (which are still very small by clinical diagnostic standards\u2014c 1 mm3), increased therapeutic intensity selects disproportionally for resistance and has negligible benefits in terms of delaying life-threatening cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by numerical results in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "abb7f325-480c-4da2-ada6-ecc20b283aa8",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors develop a mathematical modeling framework using mean field approaches and branching processes to simulate tumor growth dynamics. The model tracks cells by number of driver mutations (i) and resistance status (j), with fitness defined additively by drivers (selective advantage s per driver) and resistance cost (c), while treatment affects only non-resistant cells with loss \u03c3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe the core mathematical framework with appropriate citations and clear model assumptions. The mean field approach and branching process methodology are standard techniques properly applied here, and the fitness function definition is mathematically sound for the parameter regime considered (very small s).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "d9990d7f-1c0a-4698-9e58-08956b2c2788",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analytical and numerical results show excellent correspondence, but mean tumor size diverges considerably from median due to outliers with very large cell numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C16 are supported by data in Appendix 1\u2014figure 1A,B showing agreement between analytical and numerical approaches and demonstrating the mean-median divergence. This is an expected statistical property when distributions have heavy tails, properly identified by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "65e9eb19-da19-4858-8217-2f087ce787aa",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Numerical simulations demonstrate that untreated tumors reach detection threshold (10^9 cells) in ~18 years with low resistant cell frequency (0.03%), low-intensity treatment delays detection by ~16 years, higher doses select for resistance-dominated tumors, and resistant populations can go extinct stochastically especially at high treatment levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are directly supported by simulation results in Figure 1A-D. The findings are internally consistent with the model assumptions and demonstrate expected evolutionary dynamics under different treatment intensities. The stochastic extinction observation (C34) is properly explained mechanistically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "feed129d-2960-48db-8a29-13d6a52a33ea",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For treatment intensities \u03c3 < 2s, tumor growth is driven by non-resistant cells, but tumors shift to resistance-dominated at \u03c3 \u2248 2s (an inflection point with maximum detection time variability). This inflection is due to accumulation of additional drivers and disappears when no additional driver mutations are allowed (N=0). At high treatment levels (\u03c3 > 2s), dynamics are strongly influenced by timing of first resistance mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39, C43-C45 describe a key mechanistic finding supported by Figure 2A,B and Figure 2\u2014figure supplement 1A. The \u03c3 \u2248 2s threshold is theoretically justified (C44) and experimentally validated by the N=0 control (C45). The explanation linking the inflection to driver accumulation is logically sound given the model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "b32ee2a1-4889-401e-995e-5754b8cc6e7a",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Counterintuitively, early-detected tumors under constant treatment are more likely to be resistant than late-detected tumors because tumors acquiring resistance early grow faster. Non-resistant tumors accumulate up to 4 additional drivers by detection, while resistant tumors have fewer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 present a counterintuitive finding supported by Figure 2C with a mechanistic explanation (C41). The observation that resistant tumors have fewer drivers (C42) is consistent with the model where resistance provides growth advantage without needing additional drivers. This is a logically coherent result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Initial tumor size M0 critically affects outcomes: growth becomes deterministic and exponential for large tumors, tumors \u226410^5 cells can be eradicated under various treatments, but tumors \u226510^7 cells persist regardless of treatment. Tumors at ~1% of clinically detectable size (~10^7 cells) are typically impossible to eradicate by single-agent chemoprevention when resistance is possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50, C54 are supported by Figure 2\u2014figure supplement 1B and 2A,B. The threshold findings are clearly demonstrated in the data. However, the clinical interpretation (C50) extrapolates from model results and depends heavily on the specific parameter values and single-agent assumption, which could be stated more cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "b14c7486-679b-4459-a361-913094177e65",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For tumors with 1 million cells, many will already contain or rapidly acquire resistant cells, making initial resistant fraction have little impact on dynamics. However, success rates (tumors undetected after 50 years) improve substantially with lower initial resistance, particularly at higher treatment levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by Figure 2\u2014figure supplement 1C and 2C, with C51 appropriately citing Iwasa et al. 2006. The apparent contradiction between C52 and C53 is resolved by noting they measure different outcomes (dynamics vs. long-term success), though this could be explained more clearly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "d65a245d-6d4f-4ce0-b224-0fee14bf7396",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Under dose-dependent resistance costs, adaptive drug treatment applied only when non-resistant cells exceed resistant cells (metronomic therapy) leads to slower long-term tumor growth than constant therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 references numerical studies in Appendix 1 that are not fully presented in the main text. Without access to these detailed results, the robustness of this finding cannot be fully evaluated. The claim represents an interesting extension but requires more complete presentation of methods and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "526bada7-8527-4844-8327-633f1dc89cfc",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For post-diagnostic intervention with 10^6 residual cells, early discovery (10^9) yields 3.4 additional years vs. late discovery (10^11) at \u03c3=1.5%, but 20-year non-detection probability is near zero regardless of treatment intensity. In contrast, prevention starting at 10^6 cells shows median detection at 25.5 years (\u03c3=1.5%) with >80% managed below detection after 20 years for \u03c3>1.0%. With 10^4 residual cells, stochastic effects dominate and detection times are more variable for smaller initial tumors. Beyond \u03c3\u22481.5%, increased treatment makes little difference as resistant cells dominate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 are supported by Figure 3B-D and Figure 3\u2014figure supplement 1A-D. The comparative analysis between prevention and post-diagnostic intervention is clearly presented with appropriate statistical measures (medians, confidence intervals). The mechanistic explanation for the \u03c3\u22481.5% threshold is consistent with the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "8f1e75de-9c4a-44f1-9c35-f8e6f369498e",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For post-diagnostic interventions, the number of drivers at tumor discovery is a far better predictor of outcome than time from initiation to discovery, and treatment intensity increases tend to decrease predictive accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by Figure 3\u2014figure supplements 2\u20135. The finding makes biological sense given that driver accumulation directly affects fitness while time is only indirectly related. The decreased predictive accuracy at higher treatment intensities likely reflects increased stochastic effects from resistance dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prevention starting at large populations (10^6 cells) shows small gains from higher cell arrest for outright success, while smaller populations (10^4 cells) show considerably greater success. Prevention generally delays tumor growth better than post-diagnostic intervention, especially for large residual populations. Failed prevention results in larger residual resistant populations than pre-therapeutic post-diagnostic situations, but smaller than post-diagnostic treatment failures. Secondary failures show larger resistant percentages and more drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 are supported by Figure 5A-D and Figure 5\u2014figure supplements 1-3. The comparative analysis is comprehensive and the findings are internally consistent. The observation about resistant population sizes (C69) is particularly important for understanding the consequences of failed prevention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "060ed4bf-bfcf-4764-8357-7b4803398e0c",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "For large populations (10^6 cells), preventive treatment beyond ~0.3% daily arrest increases median detection times but not the 5th percentile, with no further gains beyond ~0.6% daily arrest. Post-diagnostic intervention improves only marginally beyond 0.3% daily arrest. For smaller populations (10^4 cells), high success is achieved at >0.1% (prevention) and >0.3% (post-diagnostic intervention) daily arrest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by Figure 5E-F. These are key quantitative findings that define optimal treatment intensities. The asymptotic behavior is consistent with the model's resistance dynamics. However, C72 notes results \"not shown,\" which slightly weakens confidence in the exact 0.6% threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "e4e0fc67-2b49-4a9a-869f-b0a6145a6365",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prevention generally results in more positive therapeutic outcomes than post-diagnostic interventions, requiring smaller effects on cancer cell populations to achieve given outcomes. For any given cell arrest level, prevention is superior on average, even including cases where prevention initially fails.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18, C76, C77 represent the main comparative conclusion, supported by comprehensive numerical results in Figures 3-5. The finding is robust across different initial population sizes and treatment intensities. This is the central thesis of the paper and is well-supported by the modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "52a7343f-353f-4033-9d4e-5dbf92a00c2d",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The advantage of prevention over post-diagnostic intervention is substantially lowered if prevention initially fails, as residual cells after failed prevention contain more resistant clones than post-diagnostic tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C79 are supported by Figure 5\u2014figure supplements 2-3. This important caveat to the main finding is well-demonstrated. However, the result depends on the assumption that resistance mechanisms are identical for preventive and post-diagnostic measures, which the authors acknowledge but may not hold clinically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "098e1589-37d5-4e86-a838-4798286ffd50",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Beyond low impact thresholds approximated by the fitness of the subclone with most drivers, little additional control is achieved when resistant subclones are present or likely to emerge. Maximal long-term control occurs at surprisingly low daily arrest levels (~0.6% prevention, ~0.3% post-diagnostic for 10^6 cells). The two most important variables determining outcome are initial cancer cell population size and tumor heterogeneity (drivers and resistance). Low impact interventions risk failing to control multi-driver subclones while high arrest levels risk selecting for resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C78, C80, C91 synthesize the main findings. These conclusions are well-supported by the comprehensive modeling results throughout Figures 2-5. The identification of the trade-off between controlling multi-driver subclones and selecting for resistance is a key conceptual contribution. The specific quantitative thresholds are model-dependent but the qualitative insight is robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "de1097bf-d01c-49db-adba-4ef7be961f42",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "For post-diagnostic intervention, there is little gained beyond ~0.3% daily cell arrest for both small (10^4) and large (10^6) populations, while prevention may achieve continual gains up to ~0.6% daily arrest for large populations. Beyond 0.3% daily impact for 10^6 residual cells, increased therapeutic intensity selects disproportionally for resistance with negligible benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, C95 present specific quantitative thresholds supported by Figures 3, 5. These are important practical findings. However, the generalizability depends on the specific parameter values used (particularly s=0.4%, c=0.1%), which represent one point in parameter space. Sensitivity to these parameters could be explored more thoroughly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "656e77f1-12bc-4d98-b4a6-ee25f5cddac8",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "If order-of-magnitude estimates of cell populations and intra-tumor heterogeneity are possible, low dose, continuous, constant approaches could minimize risks of life-threatening cancers and will generally be superior to aggressive chemotherapies if therapeutic resistance is a risk factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93 are recommendations based on the modeling results but represent speculation about clinical application. The conditional nature (\"if order-of-magnitude estimates are possible\") is appropriate, but the feasibility of obtaining such estimates in practice is unclear. The recommendation also assumes the model adequately captures relevant clinical dynamics, which may be oversimplified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "d459d0b0-4502-494f-887f-b13aa9c9764f",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors provide extensive background on cancer biology, evolution of resistance, prior modeling work, and empirical evidence for chemoprevention, citing numerous studies on driver/passenger mutations, MTD limitations, alternative treatment strategies, and NSAID effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C14, C81-C85, C87-C89 represent literature review and background knowledge appropriately cited. These claims establish context and justify the modeling approach. The citations appear appropriate and the characterizations of prior work are reasonable, though detailed verification of each citation is beyond this review's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "eb2fae64-2456-4f56-8886-20d4d7bfa466",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The model assumes an individual can contract at most a single cancer from a single lesion, and treatment outcome is sensitive to initial conditions, particularly for intermediate-sized tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C17 describe model assumptions and findings. C15 is a clearly stated simplifying assumption. C17 is supported by the numerical results showing high variability at intermediate treatment intensities (Figure 2). Both are appropriate for the modeling framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "390580e0-c9a1-4fbb-b9aa-3d3bac2b787b",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "If resection leaves sufficiently large residual cells or metastases are undiscovered, a range of the most successful prevention outcomes is unattainable under post-diagnostic intervention regardless of cell arrest level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by Figure 5 showing that post-diagnostic intervention cannot achieve the best prevention outcomes for large residual populations. This is a key finding about the limitations of post-diagnostic approaches. The result is robust within the model framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "7a1123ea-8243-4610-a569-5d9eadd2b990",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Tumors typically achieve several additional driver mutations by detection, approximating some estimates but falling short of others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by Figure 3A, Figure 3\u2014figure supplement 1A, and Figure 5\u2014figure supplements 2-3, with appropriate citations to Stratton et al. 2009 and Sjoblom et al. 2006. The acknowledgment that results fall between different empirical estimates is appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    },
+    {
+      "id": "b3ee21aa-487f-4387-b684-2d50bc675389",
+      "content_id": "4c7bf0a7-c3b1-46d2-beeb-ddbfd0f417b7",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The main hurdle to post-diagnostic MTD interventions remains resistant subclones, as increased therapeutic intensity beyond minimal impacts (~0.3% daily for 10^6 cells) selects disproportionally for resistance with negligible benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 synthesizes findings from Figures 3 and 5. This conclusion is well-supported by the modeling results. However, it applies specifically to the single-agent, constant-dose scenario modeled and may not generalize to combination therapies or adaptive strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:27.634882Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b454ff8f-6e54-43bf-9b13-9fae47222725",
+      "result_id": "abb7f325-480c-4da2-ada6-ecc20b283aa8"
+    },
+    {
+      "claim_id": "a8a8204d-8a2b-4ad8-b41f-8a0131c8f161",
+      "result_id": "abb7f325-480c-4da2-ada6-ecc20b283aa8"
+    },
+    {
+      "claim_id": "6399326b-2a7f-46f3-82cd-33ad6f74fb46",
+      "result_id": "abb7f325-480c-4da2-ada6-ecc20b283aa8"
+    },
+    {
+      "claim_id": "005bbf4f-0f83-4026-a521-d45a8eb9f9f5",
+      "result_id": "abb7f325-480c-4da2-ada6-ecc20b283aa8"
+    },
+    {
+      "claim_id": "9270aa4b-98ee-4203-ab2b-8028f21089a7",
+      "result_id": "abb7f325-480c-4da2-ada6-ecc20b283aa8"
+    },
+    {
+      "claim_id": "c7469bc1-41fa-47dc-ae29-a42ed71e006c",
+      "result_id": "abb7f325-480c-4da2-ada6-ecc20b283aa8"
+    },
+    {
+      "claim_id": "8e3bc86a-2847-4d19-bd54-91459733a1a9",
+      "result_id": "d9990d7f-1c0a-4698-9e58-08956b2c2788"
+    },
+    {
+      "claim_id": "abbdfcd9-1fd3-4dc2-ab0c-0f2171b49048",
+      "result_id": "d9990d7f-1c0a-4698-9e58-08956b2c2788"
+    },
+    {
+      "claim_id": "9240e929-e665-4be5-838b-eaaa036d2f85",
+      "result_id": "d9990d7f-1c0a-4698-9e58-08956b2c2788"
+    },
+    {
+      "claim_id": "a6ea4e49-e180-4984-b607-b234d84ba3d3",
+      "result_id": "65e9eb19-da19-4858-8217-2f087ce787aa"
+    },
+    {
+      "claim_id": "214e7dc7-10cd-4dc4-b273-463287115313",
+      "result_id": "65e9eb19-da19-4858-8217-2f087ce787aa"
+    },
+    {
+      "claim_id": "7038a4f3-a61c-4727-b30b-360c2bb0e208",
+      "result_id": "65e9eb19-da19-4858-8217-2f087ce787aa"
+    },
+    {
+      "claim_id": "ef928782-cac9-4b41-ba8a-b5010eda23db",
+      "result_id": "65e9eb19-da19-4858-8217-2f087ce787aa"
+    },
+    {
+      "claim_id": "fefc6579-443e-4d69-8343-6fd3b7f78f0e",
+      "result_id": "65e9eb19-da19-4858-8217-2f087ce787aa"
+    },
+    {
+      "claim_id": "bbee08e5-acb7-4a01-b29f-22f21918deef",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "1e99066f-83e3-4f9d-a11b-3e78bff3c996",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "1f8692da-0eb9-401c-8035-ca73e7a54d1a",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "b0338cc9-e0ea-46fd-b8da-6e8d3f53b9e4",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "6a586fd5-1afe-41ae-9a57-7b49012d424a",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "7c87a78b-d25e-4de4-b878-5ce68136ad43",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "5c76bc89-7dc5-4eef-a979-1e3a51454a9a",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "662a1408-b2ca-4b74-b5ed-901c000f2bd9",
+      "result_id": "feed129d-2960-48db-8a29-13d6a52a33ea"
+    },
+    {
+      "claim_id": "3d564f72-0c94-4d17-88d6-f63eebdce121",
+      "result_id": "b32ee2a1-4889-401e-995e-5754b8cc6e7a"
+    },
+    {
+      "claim_id": "6edbee06-a701-4005-8675-1b398f9018d4",
+      "result_id": "b32ee2a1-4889-401e-995e-5754b8cc6e7a"
+    },
+    {
+      "claim_id": "fa3a2b0b-05c9-4f1e-82de-c22992654082",
+      "result_id": "b32ee2a1-4889-401e-995e-5754b8cc6e7a"
+    },
+    {
+      "claim_id": "ec8ae68f-bd46-49fa-93ad-c130b7eb429f",
+      "result_id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78"
+    },
+    {
+      "claim_id": "371806ce-bdff-4992-b06b-a3e538c6d11d",
+      "result_id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78"
+    },
+    {
+      "claim_id": "2ae47d20-8465-4a74-b070-ac53cad668e9",
+      "result_id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78"
+    },
+    {
+      "claim_id": "6129cece-2364-457f-b387-3f242a64f188",
+      "result_id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78"
+    },
+    {
+      "claim_id": "4a9c9605-edf2-4e10-8a76-1a61242c024b",
+      "result_id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78"
+    },
+    {
+      "claim_id": "27b3f5ed-9808-4468-8e39-68f0e8c0194f",
+      "result_id": "21c9fa05-a5dd-4f74-ae7c-f94e94b24d78"
+    },
+    {
+      "claim_id": "6851e35b-fa0b-4bed-9611-0228fe651c98",
+      "result_id": "b14c7486-679b-4459-a361-913094177e65"
+    },
+    {
+      "claim_id": "1b830946-dee2-48aa-91a0-5ce496cf2b58",
+      "result_id": "b14c7486-679b-4459-a361-913094177e65"
+    },
+    {
+      "claim_id": "d4156712-3ad9-4876-8582-8cde11ef1e33",
+      "result_id": "b14c7486-679b-4459-a361-913094177e65"
+    },
+    {
+      "claim_id": "f9fec92b-ead7-4cd7-9c9b-89a4b7b382f5",
+      "result_id": "d65a245d-6d4f-4ce0-b224-0fee14bf7396"
+    },
+    {
+      "claim_id": "3b5b763e-2fed-4f29-aa1f-9db1a9fbd54b",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "79be93e4-1c21-4854-9468-6a13264ff434",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "232854cc-5694-478c-bcd6-24fa25ef07d3",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "44a5c809-537f-4ce8-b222-9ddf21c197ce",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "f926c71d-acf8-4e99-896d-168179e488ca",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "cf866498-c268-4114-b70d-22d224689423",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "5c89a717-528a-4b02-aa03-16d51c473b57",
+      "result_id": "526bada7-8527-4844-8327-633f1dc89cfc"
+    },
+    {
+      "claim_id": "9029566f-a756-491b-859d-bcd6eb00e4fa",
+      "result_id": "8f1e75de-9c4a-44f1-9c35-f8e6f369498e"
+    },
+    {
+      "claim_id": "c6e720d9-4da9-4641-9fd0-aadfbb0d5ebd",
+      "result_id": "8f1e75de-9c4a-44f1-9c35-f8e6f369498e"
+    },
+    {
+      "claim_id": "6c8543fc-feda-4cd5-93e3-1390293ec20a",
+      "result_id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6"
+    },
+    {
+      "claim_id": "92e1d6a0-a31c-4dc2-9cc3-554e9b61d70b",
+      "result_id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6"
+    },
+    {
+      "claim_id": "4278e1cf-796f-4fce-8013-e6d666f206b6",
+      "result_id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6"
+    },
+    {
+      "claim_id": "170ab77e-4c37-455c-9062-f95a29ddee3b",
+      "result_id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6"
+    },
+    {
+      "claim_id": "158bcb87-1000-4564-b5d7-70290e824ab1",
+      "result_id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6"
+    },
+    {
+      "claim_id": "da832733-ce5a-4bfa-8a8b-089e76eaca89",
+      "result_id": "55e79c1c-5ee2-43eb-83ea-87ea1bb7a0b6"
+    },
+    {
+      "claim_id": "4d0ece11-168e-4b94-bae0-7b7630b56a6b",
+      "result_id": "060ed4bf-bfcf-4764-8357-7b4803398e0c"
+    },
+    {
+      "claim_id": "a67811dd-f007-47b1-b55b-bcc2dd36ece9",
+      "result_id": "060ed4bf-bfcf-4764-8357-7b4803398e0c"
+    },
+    {
+      "claim_id": "e92a5e1d-5bc3-4450-96dc-0dba8a81b1e8",
+      "result_id": "060ed4bf-bfcf-4764-8357-7b4803398e0c"
+    },
+    {
+      "claim_id": "2af14315-bb77-465f-befd-15947c6c9c39",
+      "result_id": "060ed4bf-bfcf-4764-8357-7b4803398e0c"
+    },
+    {
+      "claim_id": "6f79ba62-02ca-41d0-8e2b-391457ba89c0",
+      "result_id": "e4e0fc67-2b49-4a9a-869f-b0a6145a6365"
+    },
+    {
+      "claim_id": "bf0d2781-9317-45a5-8ad0-58529aac777a",
+      "result_id": "e4e0fc67-2b49-4a9a-869f-b0a6145a6365"
+    },
+    {
+      "claim_id": "99041f1d-c812-432b-b545-2b685afbc455",
+      "result_id": "e4e0fc67-2b49-4a9a-869f-b0a6145a6365"
+    },
+    {
+      "claim_id": "16e00c0f-73e8-4d0e-90c0-bbc28ddba97c",
+      "result_id": "e4e0fc67-2b49-4a9a-869f-b0a6145a6365"
+    },
+    {
+      "claim_id": "ba4da9ad-ff60-4c5e-9074-400ae25a3368",
+      "result_id": "52a7343f-353f-4033-9d4e-5dbf92a00c2d"
+    },
+    {
+      "claim_id": "fec200c0-7eee-4e6d-a5ae-ee83400d9173",
+      "result_id": "52a7343f-353f-4033-9d4e-5dbf92a00c2d"
+    },
+    {
+      "claim_id": "536eb737-7fec-4338-9000-e98da5e1be0e",
+      "result_id": "098e1589-37d5-4e86-a838-4798286ffd50"
+    },
+    {
+      "claim_id": "a9d0097c-073b-45a4-8aa5-0d270826ede9",
+      "result_id": "098e1589-37d5-4e86-a838-4798286ffd50"
+    },
+    {
+      "claim_id": "7e487d7e-59f3-4ad3-b6f7-cda62d710770",
+      "result_id": "098e1589-37d5-4e86-a838-4798286ffd50"
+    },
+    {
+      "claim_id": "0faa06fb-26c8-4bdb-b7db-eb9c39f507a2",
+      "result_id": "098e1589-37d5-4e86-a838-4798286ffd50"
+    },
+    {
+      "claim_id": "e7e8a24b-e9a7-4c15-b3e2-e9c146e32a87",
+      "result_id": "de1097bf-d01c-49db-adba-4ef7be961f42"
+    },
+    {
+      "claim_id": "f47031db-a58c-4f01-a02c-9ae5a50dc9ef",
+      "result_id": "de1097bf-d01c-49db-adba-4ef7be961f42"
+    },
+    {
+      "claim_id": "ea7f8567-4e71-40e8-aacf-ae109bed716b",
+      "result_id": "de1097bf-d01c-49db-adba-4ef7be961f42"
+    },
+    {
+      "claim_id": "ca5256e8-8f78-4bc9-8a0c-c457efbcaee7",
+      "result_id": "656e77f1-12bc-4d98-b4a6-ee25f5cddac8"
+    },
+    {
+      "claim_id": "b49fa529-9389-4a4e-acfe-e7205ba15171",
+      "result_id": "656e77f1-12bc-4d98-b4a6-ee25f5cddac8"
+    },
+    {
+      "claim_id": "f1d96a28-7db4-43b1-8dd9-cf3938c8889f",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "9b5c4d33-fa61-46e2-8b55-7510f2ba9ffc",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "de994d1c-b045-4913-b70e-f4637136d377",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "82e15166-c975-4084-9c0c-434eb63c74d4",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "fd091aba-d4bc-4c64-b490-805709b2a05a",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "07ba8194-0cad-440e-ba75-fc058cb9b324",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "256a7f17-499f-47b0-9e16-af572cb5a7a2",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "6f5feda5-8745-4272-ace9-f40654bd331c",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "9915fb3b-b911-490b-abc1-ca80f0c606cc",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "48820a99-46bb-49a6-9e53-2a37cf6ded52",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "f2bd12dc-b4a5-4d8e-bcb1-be94cb3f2558",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "97692321-d478-4272-97a8-b2111bb5d249",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "5ee19516-7eda-4e75-abd9-280d932ef516",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "51a50d1e-d717-4cfc-9b44-9db242276ec1",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "6984a2a1-c4cf-463a-8774-7c66a1c3f4fa",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "558206a0-6567-4c28-ad96-9e7dbada03f3",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "3ad46ee2-3a4f-4a7b-94ae-da4b47472b5f",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "cba3f702-51b7-4a5e-92a3-f3bc56a5483b",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "9974667f-0791-4192-ab1f-501613c934eb",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "0032fac3-b436-46a9-b223-3d4c58cccd12",
+      "result_id": "d459d0b0-4502-494f-887f-b13aa9c9764f"
+    },
+    {
+      "claim_id": "d04a06cc-d2ae-4ff4-9a0a-1aa6ed526238",
+      "result_id": "eb2fae64-2456-4f56-8886-20d4d7bfa466"
+    },
+    {
+      "claim_id": "5a14f901-e601-4e2a-a9a0-a92ed7814448",
+      "result_id": "eb2fae64-2456-4f56-8886-20d4d7bfa466"
+    },
+    {
+      "claim_id": "a7180378-186d-443a-aaf8-b9635c92fbac",
+      "result_id": "390580e0-c9a1-4fbb-b9aa-3d3bac2b787b"
+    },
+    {
+      "claim_id": "fe1aad79-f014-44d9-b6bd-ff8f80d9d657",
+      "result_id": "7a1123ea-8243-4610-a569-5d9eadd2b990"
+    },
+    {
+      "claim_id": "38693267-53c5-48b2-b508-01aad155003c",
+      "result_id": "b3ee21aa-487f-4387-b684-2d50bc675389"
+    }
+  ],
+  "comparisons": []
+}

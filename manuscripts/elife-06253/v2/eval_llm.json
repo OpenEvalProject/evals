@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A peptide library screen identified oxyntomodulin (OXM) as a potent resetting signal of liver circadian clocks. Out of 200 peptides tested, only a few produced marked phase shifts in PER2::LUC rhythms in liver slices, including OXM, GCG, and exendin-4. OXM reset PER2::LUC rhythms at much lower doses than GCG (up to 8 hr phase delays vs. 3 hr for GCG), while GLP-1, GLP-2, and GRPP had no significant effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C26-C30 are well-supported by experimental data from the peptide screen shown in Figure 1. The dose-response curves and phase shift measurements provide clear evidence that OXM is more potent than other proglucagon-derived peptides at resetting liver clock rhythms. Statistical analyses (ANOVA) are provided for the dose-response data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "OXM effects on liver clock resetting are phase-dependent. Phase delays were predominantly observed at 90-210\u00b0 of the PER2::LUC cycle with maximum effects around 180\u00b0, while modest shifts occurred at 270-360\u00b0. This phase-dependency was validated using dexamethasone (DEX) as a positive control, which showed similar phase-dependent effects as previously reported in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by experimental data in Figure 1G and Figure 1\u2014figure supplement 1. The phase response curves demonstrate clear circadian gating of OXM effects, consistent with Zeitgeber properties. The DEX validation strengthens confidence in the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "OXM signals through the glucagon receptor (GCGR) but not the GLP-1 receptor (GLP1R) to reset liver clocks. RT-PCR showed Glp1r transcripts were undetectable in liver but present in pancreas. OXM retained potent clock-resetting effects in Glp1r\u2212/\u2212 liver slices, while GCGR inhibition with GRI-2 blocked both OXM- and GCG-induced clock resetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are well-supported by multiple lines of evidence: RT-PCR data (Figure 2\u2014figure supplement 1), genetic knockout experiments (Figure 2A), and pharmacological inhibition (Figure 2B). The convergence of these approaches provides strong evidence for GCGR-mediated signaling. However, the authors acknowledge that no OXM-specific receptor has been identified, leaving open the possibility of additional receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "OXM treatment activates CREB signaling at the Per1 promoter. GCGR is a G protein-coupled receptor that activates CREB via protein kinase A. ChIP analysis showed that 30 min after OXM treatment, CREB binding was significantly increased at the Per1 CRE but not at downstream sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by ChIP data (Figure 2C) and established knowledge of GCGR signaling pathways. The ChIP experiment provides direct evidence of CREB recruitment to the Per1 promoter. The specificity (CRE vs. downstream sequences) strengthens the finding. Statistical significance is reported (p < 0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "OXM treatment induces Per1 and Per2 expression in a phase-dependent manner in liver slices. At 180\u00b0, Per1 was transiently induced at 60 min (returning to baseline by 120 min), while Per2 induction persisted beyond 120 min. Bmal1 expression was unaffected. At 360\u00b0, no clock gene induction occurred. Per1/2 induction was preserved in Glp1r\u2212/\u2212 slices, confirming GLP-1R independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by qPCR data in Figure 3. Two-way ANOVA with appropriate post-tests was used. The phase-dependency of gene induction aligns with the phase-dependency of clock resetting. The Glp1r\u2212/\u2212 data provide genetic confirmation of receptor specificity. Sample sizes (n=6-8) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "OXM resets the liver clock but not the SCN clock in vivo. Intravenous OXM injection at ZT3 induced robust Per1 and Per2 expression in liver, but no induction occurred at ZT15. In situ hybridization showed no acute effect of OXM on Per expression in the SCN at ZT3, indicating tissue-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by in vivo qPCR (Figure 4A,B) and ISH data (Figure 4C). The time-of-day dependency is consistent with slice culture results. The lack of SCN response is important for establishing peripheral specificity. Two-way ANOVA with appropriate statistics is provided. Sample sizes (n=3-5) are modest but adequate for these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "OXM treatment causes phase delays of hepatic clock gene rhythms in vivo. Phase delays of Per2 and Dbp mRNA rhythms were detected in livers of OXM-treated mice relative to PBS controls under constant darkness and fasting conditions. Per2 rhythms appeared dampened after OXM injection, while Dbp rhythms were not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by in vivo time course data (Figure 4D). Two-way ANOVA shows significant treatment effects and interactions. The experimental design (constant darkness, fasting) appropriately controls for confounding factors. The differential dampening of Per2 vs. Dbp is interesting but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "OXM treatment affects hepatic metabolic gene expression rhythms. Transcript profiles of Foxo1 and Pdk4 were phase-delayed, while Foxo1 and Pklr were dampened. Pepck was not rhythmic and unaffected by OXM. The glucose transporter Slc2a2 was dampened and the pyruvate transporter Slc16a7 was phase-delayed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by qPCR data (Figure 5). Two-way ANOVA with appropriate statistics is provided. The effects on metabolic genes suggest functional consequences of clock resetting. However, the lack of Pepck rhythmicity is inconsistent with prior literature (Lamia et al., 2008), which the authors acknowledge but do not fully explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Food intake induces OXM secretion in mice. OLI levels were elevated during the active dark phase in fed mice but remained low under fasting. After 12-hr fasting, refeeding caused a rapid OLI increase within 20 min that persisted for >1 hr. Mean fasting OLI was ~3.5 ng/ml with high inter-individual variation. OLI induction after OXM injections was 2-3-fold higher than after refeeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by OLI measurement data (Figure 6A-C, Figure 6\u2014figure supplement 1). Two-way ANOVA shows significant effects. The temporal correlation between food intake and OLI elevation is clear. However, the authors acknowledge that OXM assays may cross-react with GCG and glicentin (C102), which complicates interpretation of absolute OLI levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Food-induced hepatic Per expression is mediated by OXM. Refeeding after fasting caused transient Per1 induction and more persistent Per2 induction, paralleling OLI elevation. Anti-OXM IgG treatment partially inhibited food-mediated Per activation in both wild-type and Glp1r\u2212/\u2212 mice. Anti-OXM IgG did not affect postprandial insulin, GLP-1, or GCG levels, suggesting these hormones are not involved in food-induced Per expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by qPCR and hormone measurement data (Figure 6D-I). The antibody neutralization experiments provide strong evidence for OXM involvement. The lack of effect on other hormones is important for ruling out indirect mechanisms. However, the partial (not complete) inhibition suggests other factors may also contribute, which the authors acknowledge (C97-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "OXM neutralization attenuates food-induced liver clock resetting. After 12-hr fasting, refeeding caused significant phase delays of PER2::LUC activity in liver slices, which was attenuated by anti-OXM treatment. Anti-OXM alone had no effect. These data suggest OXM acts as a metabolic synchronizer linking food intake to hepatic clock gene expression and rhythm shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by liver slice luminescence data (Figure 6J,K). Two-way ANOVA shows significant effects. The ex vivo slice experiments complement the in vivo antibody neutralization data. The conclusion that OXM is a metabolic synchronizer (C76) is reasonable but somewhat speculative, as complete inhibition was not achieved and other factors likely contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "OXM displays greater clock-resetting capacity than GCG despite lower GCGR binding affinity, suggesting additional mechanisms. OXM levels increase while GCG decreases after feeding. Recent work shows GCG/GCGR signaling regulates Bmal1 during fasting, while OXM does not affect Bmal1, suggesting GCGR signaling may have different clock targets depending on timing and ligand. An additional OXM receptor or synergistic factors like insulin may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C89 raise important mechanistic questions but remain speculative. The paradox of OXM's greater potency despite lower GCGR affinity (C83) is acknowledged but not resolved. The suggestion of an additional OXM receptor (C84) is based on citations but not directly tested. The comparison to Sun et al.'s GCG/Bmal1 findings (C87-C89) is interesting but the differential clock targets hypothesis requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "OXM-induced clock resetting involves CREB-mediated Per gene induction, similar to light-induced SCN resetting. GCGR activation induces PKA-mediated CREB phosphorylation and DNA binding. Per1/2 induction is a conserved clock-resetting mechanism across tissues. Per induction was weaker in liver slices than in vivo, and slightly faster in vivo, suggesting additional amplifying mechanisms in intact animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by the study's data and established literature. The mechanistic parallel to SCN light resetting is well-founded. The observation of weaker/slower effects in slices vs. in vivo (C94-C95) is appropriately cautious and suggests complexity not fully captured in the slice system. This is a reasonable interpretation but somewhat speculative regarding the nature of amplifying mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "OXM is not the sole mediator of food-induced clock resetting. OXM neutralization does not completely inhibit refeeding effects on Per induction and clock resetting. This may be due to incomplete OXM neutralization or contributions from other food-induced factors such as insulin or indirect GLP-1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by the partial inhibition observed in antibody neutralization experiments. The authors appropriately acknowledge limitations and alternative explanations. Claim C99 regarding indirect GLP-1 effects is based on citation (Panjwani et al., 2013) and remains speculative in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "OLI secretion shows moderate diurnal variability under ad libitum feeding, with ~20% reduction during fasting. Substantial food intake is necessary to acutely increase OXM secretion sufficiently to affect the liver clock. Interpretation of OLI levels is complicated by assay cross-reactivity with GCG and glicentin, which is structurally similar to OXM and released at similar levels after feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by OLI measurement data and appropriately acknowledge technical limitations. The cross-reactivity issue (C102) is an important caveat that affects interpretation of absolute OLI levels. The speculation about glicentin (C104) is reasonable given structural similarity but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109",
+      "C110"
+    ],
+    "result": "The study demonstrates that food intake induces OLI and hepatic clock resetting in mice, with OXM treatment mimicking food-mediated effects in a time-dependent manner. OXM, likely in concert with other metabolic peptides, may be involved in the detrimental effects of mistimed food intake on metabolic homeostasis. Chronotherapeutic targeting of incretin signaling is proposed as a potential strategy against shift work-related metabolic disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 summarize well-supported findings. Claim C109 is a reasonable inference from the data but acknowledges other factors are likely involved. Claim C110 is speculative regarding therapeutic applications and represents future directions rather than demonstrated results. The overall conclusions are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C34"
+    ],
+    "result": "Background claims establish that shift work is associated with health risks, circadian clocks are based on transcriptional-translational feedback loops, the SCN is the master pacemaker synchronized by light, peripheral clocks can be reset by food timing, and OXM is a gut-derived incretin hormone that modulates metabolism and is secreted in response to food intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25, C34 provide established background knowledge supported by appropriate citations. These claims set the context for the study but do not represent novel findings. The citations appear appropriate and the background is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C107",
+      "C108"
+    ],
+    "result": "Additional background claims establish that eating during the rest phase causes internal desynchrony linked to metabolic disorders, food entrainment does not depend solely on glucose, daytime feeding in mice uncouples liver from SCN clocks, ~10% of liver transcriptome is under circadian control, and metabolic hormones have been implicated in peripheral clock regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82, C107-C108 provide additional background context supported by appropriate citations. These establish the rationale for investigating food-related clock resetting mechanisms and the importance of liver clock regulation for metabolism.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C52",
+      "C53"
+    ],
+    "result": "Drosophila larvae navigate odor gradients through run-turn alternation, where run duration is modulated by sensory input: runs up-gradient are elongated, runs down-gradient are shortened, and turns are preceded by decreases in odor concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C52-C53 are all supported by citations to published work (Gomez-Marin et al., 2011; Gershow et al., 2012) and experimental observations. These claims establish the basic behavioral strategy underlying larval chemotaxis, which forms the foundation for the rest of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48"
+    ],
+    "result": "Larvae with a genetically reduced olfactory system containing only a single functional OSN are capable of robust chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C48 are supported by citations to published work (Fishilevich et al., 2005; Louis et al., 2008; Cobb, 1999). This result justifies the experimental approach of studying single OSN function to understand chemotaxis mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The Or42a OSN displays complex response dynamics to naturalistic odor stimuli, amplifying changes in stimulus intensity and showing differential sensitivity to positive versus negative gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C54-C56 are supported by experimental data shown in Figures 2 and 3. The OSN firing rate shows clear amplification of stimulus changes, peaks with the first derivative during rising phases, and responds differently to positive versus negative gradients. These observations are well-documented with electrophysiological recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "A linear system-identification approach using M-sequence and reverse-correlation was insufficient to account for OSN firing patterns elicited by naturalistic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by experimental data and modeling described in Materials and methods, with additional support from Figure 13. This negative result motivated the development of the nonlinear ODE model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C14",
+      "C102"
+    ],
+    "result": "OSNs act as differentiators that transiently normalize stimulus intensity through a combination of incoherent feed-forward (IFF) and integral feedback (IFB) regulatory motifs, with the IFF+IFB composite model providing a remarkably good fit to experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C13, C14, C102 are supported by extensive modeling and experimental validation shown in Figure 4 and supplements. The composite IFF+IFB model accurately reproduces OSN dynamics for both odor and naturalistic stimuli, with the IFB contributing ~30% to the dynamics. The model structure is justified by biophysical considerations and parameter optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Light-evoked OSN responses can be well-approximated by the pure IFF motif without IFB contribution, and light stimulation produces comparable OSN dynamics to odor stimulation, enabling substitution of odor with light in behavioral experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C57-C61 are supported by experimental data in Figure 4 and Table 2. The temporal patterns of OSN activity elicited by light and odor ramps are comparable, the goodness of fit for the pure IFF motif is similar for both modalities, and parameter optimization shows the IFB pathway does not contribute to light-evoked responses. This validates the optogenetic approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C107",
+      "C108"
+    ],
+    "result": "A single larval OSN is sensitive to both stimulus intensity and its first derivative, combining the function of a slope (ON) detector for positive gradients and an OFF detector for negative gradients, with transient normalization of the dose-response function by the short-term history of stimulus changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C34-C37, C107-C108 are supported by experimental data, mathematical analysis (Equation 1), and modeling results. The QSSA solution reveals that positive derivatives excite the OSN while negative derivatives inhibit it, consistent with experimental observations. The transient normalization mechanism is mathematically derived and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In open-loop optogenetic experiments, high OSN activity suppresses turning while low activity facilitates turning, with stationary OSN firing rates leading to probabilistic run-to-turn transitions that are largely independent of run duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C64-C76 are supported by experimental data from virtual reality experiments shown in Figure 5. The modulation of turn probability by OSN activity is clearly demonstrated: sustained high firing during rising phases suppresses turning, while inhibition during falling phases promotes turning. The experimental design with blind larvae controls for photophobic behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C109"
+    ],
+    "result": "A generalized linear model (GLM) linking OSN spiking dynamics to turn probability accurately reproduces experimental turn probabilities, with the model's performance critically dependent on the nonlinear transformation achieved by the olfactory transduction cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C77-C81, C109 are supported by modeling results shown in Figures 5E-F and Table 4. The stimulus-to-behavior GLM accurately reproduces turn probability time courses for linear and nonlinear ramps. Control models without OSN processing or with only stimulus derivative perform significantly worse, demonstrating the importance of the nonlinear OSN transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The integrated neural-to-behavior model built on open-loop stimulation successfully predicts run-to-turn transitions in closed-loop virtual odor gradients, with turns typically preceded by steady increases in predicted turn probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C82-C88 are supported by experimental data and statistical analysis shown in Figure 6. The model trained on open-loop light ramps accurately predicts behavior in closed-loop light gradients. The log-likelihood analysis demonstrates significant improvement over control models (p < 0.0001), validating the model's predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Synthetic light landscapes with different geometries (well, volcano, mesa, linear hat) produce predictable behavioral responses consistent with the integrated stimulus-to-behavior model, demonstrating that sustained OSN activity suppresses turning while inhibition promotes turning in a nearly deterministic manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C89-C97 are supported by experimental data shown in Figure 7. The model accurately predicts turn latencies and spatial distributions for all four landscape types. The well landscape produces the shortest turn latency (0.93 s), followed by volcano (3.48 s), with mesa and linear hat showing longer latencies (6.6-6.7 s) with no significant difference. The predictions match experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The integrated stimulus-to-behavior model successfully predicts run-to-turn transitions in real odor gradients, with the likelihood of observed runs significantly larger than control models, establishing that the model describes how single OSN dynamics influence naturalistic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C98-C100 are supported by experimental data and statistical analysis shown in Figure 8. The model predicts monotonic increases in turn probability before turns in odor gradients. Bootstrap analysis shows the test model significantly outperforms controls (p = 0.0001). The shallower geometry of the odor gradient compared to light gradient is documented in Figure 8\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C101"
+    ],
+    "result": "The enhanced information-processing capacity of larval OSNs, which are sensitive to both stimulus intensity and its derivative, contrasts with bipolar ON-OFF detectors in C. elegans and cockroaches, but is consistent with complex encoding in adult fly OSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C30, C101 are supported by citations to published work comparing sensory encoding across species (Rieke, 1997; Song et al., 2012; Tichy et al., 2005; Chalasani et al., 2007; Kim et al., 2011; Martelli et al., 2013; Suzuki et al., 2008; Joesch et al., 2010). This contextualizes the findings within the broader literature on sensory processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The IFB and IFF regulatory motifs identified in the larval OSN model are consistent with known mechanisms in bacterial chemoreception, olfactory transduction, and phototransduction, with the IFB likely acting on the odorant receptor and the IFF on downstream transduction components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C103-C105 are supported by citations to published work (Yi et al., 2000; De Palo et al., 2013; Nagel and Wilson, 2011; Goentoro and Kirschner, 2009; Lim et al., 2013; Kato et al., 2014; Liu et al., 2015; Gu et al., 2009) and modeling results. The consistency with prior work on regulatory motifs in sensory systems strengthens the biological plausibility of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "When larvae ascend Gaussian odor gradients, high OSN firing rates are expected, while motion down the gradient would produce robust inhibition of OSN activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are inferred from the model and experimental results. These predictions follow logically from the established OSN response properties (slope detection for positive gradients, OFF detection for negative gradients) and are consistent with the behavioral observations in real odor gradients (Figure 8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The information transmitted by a single larval OSN is sufficient to represent positive and negative odor gradients through excitation and inhibition, with the same OSN controlling both up-gradient and down-gradient sensorimotor programs, unlike the separate ON-OFF pathways in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by experimental data, modeling results (Figure 5\u2014figure supplement 3), and citations to published work (Chalasani et al., 2007; Suzuki et al., 2008; Klein et al., 2015; Luo et al., 2014). The striking dependence of model accuracy on nonlinear OSN transformation is demonstrated, and the contrast with C. elegans is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "While the antennal lobe interneuron network is expected to participate in olfactory processing, the current work suggests these computations are not strictly necessary for robust chemotaxis, though including downstream circuit elements could improve model accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C47, C112-C114 are partially supported by citations (Das et al., 2013; Asahina et al., 2009; Larkin et al., 2010; Kim et al., 2015; Ramaekers et al., 2005; Masuda-Nakagawa et al., 2009) and the successful prediction of behavior from single OSN activity. However, the claim that antennal lobe computations are 'not strictly necessary' is based on the sufficiency of the single-OSN model rather than direct experimental manipulation of the antennal lobe. The suggestion that including downstream elements would improve accuracy is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Or42a odorant receptor has a well-characterized tuning profile including isoamyl acetate (IAA), and the temporal evolution of odor gradients from small droplets cannot be neglected, unlike large droplets which produce approximately stationary Gaussian distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by citations (Fishilevich et al., 2005; Kreher et al., 2008; Asahina et al., 2009; Louis et al., 2008) and experimental observations with modeling. The PDE model for odor diffusion (Figure 9-10) demonstrates the temporal evolution of the gradient, justifying the dynamic reconstruction approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The integration-differentiation scaling function S(x,t) plays a role similar to input gain control in the adult antennal lobe, but operates within the primary OSN driven by temporal integration of stimulus changes, and appears related to adaptive rescaling in adult-fly OSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by mathematical analysis (Equation 1) and citations to published work (Olsen et al., 2010; Kim et al., 2011; Nagel and Wilson, 2011). The comparison to gain control mechanisms in other systems is appropriate and helps contextualize the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C111",
+      "C115",
+      "C118"
+    ],
+    "result": "Several aspects of the model remain to be investigated, including whether IFF regulation is mediated by intracellular calcium, whether the sensorimotor principles generalize to other odorant receptors, and whether the model applies to other aspects of chemotaxis such as turn orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C111, C115, C118 are explicitly speculative statements about future research directions. While these are reasonable questions based on the current findings, they represent uncertainties and limitations rather than established results. These claims appropriately identify areas requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "The Drosophila larva offers unique opportunities for understanding neural circuit basis of behavior, and interdisciplinary approaches combining behavioral, imaging, circuit reconstruction, modeling, and robotics should improve understanding of sensorimotor integration in simple nervous systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117, C119-C120 are supported by citations to published work (van Breugel and Dickinson, 2014; Carde and Willis, 2008; Kim et al., 2011; Fujiwara et al., 2014; Szyszka et al., 2014; Ohyama et al., 2013, 2015; Yao et al., 2012; Grasso et al., 2000; Webb, 2002; Izquierdo and Lockery, 2010; Ando et al., 2013). These claims appropriately place the work in broader context and suggest future directions.",
+    "result_type": "MINOR"
+  }
+]

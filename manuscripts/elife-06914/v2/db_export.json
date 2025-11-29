@@ -1,0 +1,1917 @@
+{
+  "submission": {
+    "id": "9f8bc67b-51df-4fe2-8c76-62d16f875aaa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:14:34.208512Z",
+    "updated_at": "2025-11-29T04:14:34.208512Z"
+  },
+  "content": [
+    {
+      "id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "submission_id": "9f8bc67b-51df-4fe2-8c76-62d16f875aaa",
+      "content_type": "manuscript",
+      "content_text": "# The neuropeptide tachykinin is essential for pheromone detection in a gustatory neural circuit\n\n## Authors\n\n- Shruti Shankar<sup>1</sup>\n- Jia Yi Chua<sup>1</sup>\n- Kah Junn Tan<sup>1</sup>\n- Meredith EK Calvert<sup>1</sup>\n- Ruifen Weng<sup>3</sup>\n- Wan Chin Ng<sup>1</sup>\n- Kenji Mori<sup>4</sup>\n- Joanne Y Yew<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Temasek Life Sciences Laboratory Singapore Singapore\n2. Department of Biological Sciences National University of Singapore Singapore Singapore\n3. Institute of Molecular and Cell Biology Singapore Singapore\n4. Photosensitive Materials Research Center Toyo Gosei Co., Ltd Chiba Japan\n5. Pacific Biosciences Research Center University of Hawaii at M\u0101noa Honolulu United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGustatory pheromones play an essential role in shaping the behavior of many organisms. However, little is known about the processing of taste pheromones in higher order brain centers. Here, we describe a male-specific gustatory circuit in Drosophila that underlies the detection of the anti-aphrodisiac pheromone (3R,11Z,19Z)-3-acetoxy-11,19-octacosadien-1-ol (CH503). Using behavioral analysis, genetic manipulation, and live calcium imaging, we show that Gr68a-expressing neurons on the forelegs of male flies exhibit a sexually dimorphic physiological response to the pheromone and relay information to the central brain via peptidergic neurons. The release of tachykinin from 8 to 10 cells within the subesophageal zone is required for the pheromone-triggered courtship suppression. Taken together, this work describes a neuropeptide-modulated central brain circuit that underlies the programmed behavioral response to a gustatory sex pheromone. These results will allow further examination of the molecular basis by which innate behaviors are modulated by gustatory cues and physiological state.\n\n## Introduction\n\nFor many animals, exogenously released chemical cues known as pheromones heavily influence social behaviors that are crucial to survival and reproduction (Karlson and Luscher, 1959). Elucidating the neural basis of pheromone detection provides a means for understanding how information from sensory stimuli is encoded and used to modulate complex behaviors such as mating (Pavlou and Goodwin, 2013; Haga-Yamanaka et al., 2014) and aggression (Chamero et al., 2007; Wang et al., 2011; Fern\u00e1ndez and Kravitz, 2013).\n\nThe neural circuits underlying olfactory pheromone detection are well described in the silkmoth Bombyx mori (Sakurai et al., 2014) and honey bee (Roussel et al., 2014). In Drosophila, the pathways mediating detection of the sex pheromone 11-cis-vaccenyl acetate (cVA) have been refined down to 4 neurons connected by 3 synapses (Ruta et al., 2010). In addition, the projection patterns for several other olfactory receptor neurons that likely detect sex pheromones have been mapped from the antennal lobe to the ventral lateral horn, implicating this region in the central brain as a specialized site for processing pheromone odors (Jefferis et al., 2007).\n\nIn contrast to the olfactory system, the higher order pathways for the processing of gustatory pheromones are largely unknown despite their importance in behavior (Wang et al., 2011; Fern\u00e1ndez and Kravitz, 2013). Several pheromone receptors located in the primary gustatory organs (proboscis, labellum, forelegs) have been identified. Gr32a (Miyamoto and Amrein, 2008) is thought to respond to the male pheromone (7Z)-tricosene (Wang et al., 2011; Fan et al., 2013; Andrews et al., 2014). Furthermore, Gr33a (Moon et al., 2009), Gr39a (Watanabe et al., 2011), and a member of the class of ionotropic receptors (IRs), Ir20a (Koh et al., 2014), contribute to courtship behavior, though the ligands remain unidentified. Lastly, a recently discovered class of ion channels belonging to the pickpocket family of proteins (ppk23, ppk25, and ppk29) responds to both female pheromones and male anti-aphrodisiacs (Thistle et al., 2012; Toda et al., 2012; Mast et al., 2014; Vijayan et al., 2014). Without exception, processes from all Gr-expressing neurons map to the ventral cord and the subesophageal zone (SEZ) (Wang et al., 2004; Kwon et al., 2014). However, little is known about the post-synaptic targets of the SEZ as well as the neurotransmitter systems used to mediate pheromone-related behaviors in the central brain.\n\nIn this work, we describe a central neural circuit that mediates the detection and behavioral response to a gustatory sex pheromone, (3R,11Z,19Z)-3-acetoxy-11,19-octacosadien-1-ol (CH503). CH503 is transferred from males to females during mating and inhibits courtship from other males (Yew et al., 2009). The pheromone also functions as a potent suppressor of male courtship behavior in other drosophilids (Ng et al., 2014). We show that CH503 is detected by Gr68a-expressing gustatory neurons on the male foreleg and that information is transduced via peptidergic cells to the central brain. Specifically, a cluster of 8\u201310 neurons within the SEZ mediates the pheromone-triggered courtship-avoidance response through the release of the neuropeptide tachykinin.\n\n## Results\n\n### CH503 inhibits male courtship behavior in a dose-dependent manner\n\nCourtship in Drosophila consists of a stereotyped sequence of behaviors including orientation, wing vibration, tapping with the forelegs, abdomen curling, and copulation (Spieth, 1974) (Figure 1A). To determine the sensitivity of males to CH503 and to examine the courtship features that are suppressed by the pheromone, wild-type CantonS male flies were placed with virgin females perfumed with doses of synthetic CH503 ranging from 0 to 2667 ng. Males exhibited a dose-dependent response to the pheromone. A dose of 167 ng/fly was sufficient to suppress courtship in approximately 50% of the behavioral trials (Figure 1B). The latency to courtship initiation (as measured by the first instance of wing vibration) was similar across all doses, ranging from 350 to 400 s (Figure 1C). However, the overall courtship vigor was significantly suppressed by the pheromone (Figure 1D). Taken together, these findings indicate that CH503 inhibits later stages of the courtship sequence and sustained courtship behavior.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig1-v2.jpg)\n\n**Figure 1.:** (A) The typical courtship sequence of D. melanogaster is comprised of wing vibration performed by the male towards the female, tapping and tasting of the female abdomen with the forelegs, and abdomen curling followed by copulation. (B) Courtship behavior exhibited by wild-type Drosophila males decreases in a dose-dependent manner with increasing amounts of CH503 on the surface of virgin females. N = 25\u201330, Fisher's exact probability test, *p < 0.05, **p < 0.01, ***p < 0.001. (C) CH503 does not change the latency to courtship initiation, as measured by the latency to wing vibration. N = 16\u201324, ANOVA with Tukey's multiple comparison test. Error bars represent SEM. (D) CH503 suppresses the amount of time the fly actively spends courting. Courtship vigor is defined as the total time the male spends courting, calculated from the first instance of orientation and wing vibration. N = 8\u201324, ANOVA with Tukey's multiple comparison test, **p < 0.01. Error bars represent SEM. (E) CH503 has low volatility and inhibits courtship only when detected on female cuticles. The absence of female cuticular hydrocarbons in oenocyte-less (oe-) flies also did not affect CH503-induced courtship suppression. N = 8, Fisher's exact probability test, ***p < 0.001.\n\n### CH503 is a low volatility contact cue and is effective only when detected on female cuticles\n\nWing extension is one of the first steps of the courtship ritual and can be triggered in the absence of tactile contact through visual cues (Ejima and Griffith, 2008; Pan et al., 2012; Agrawal et al., 2014) and volatile pheromones (Tompkins et al., 1980; Venard and Jallon, 1980). Since the latency to wing extension did not appear to be affected by CH503, we hypothesized that the pheromone is detected only at close proximity. To determine whether tactile contact with CH503 is necessary for courtship suppression, we positioned a pheromone source separated from the female target at various distances. To prevent contact with the pheromone, a mesh barrier was placed between the courtship chamber and a second chamber containing a piece of filter paper soaked with 64 \u03bcg of CH503. Despite the high dose of pheromone, male courtship was uninhibited when the filter paper was placed 6 or 3 mm away, or on the floor of the courtship chamber (allowing for direct contact). In each case, 100% of male flies initiated courtship towards females (Figure 1E). Potentially, female pheromones act in synergy with CH503 and both cues are needed to inhibit courtship. However, a mixture of female cuticular extract and CH503 applied to filter paper that was placed on the floor of the chamber was ineffective (Figure 1E). We further tested for synergistic effects from female pheromones by using transgenic female flies in which oenocytes, the pheromone-producing cells in Drosophila, were genetically ablated. In the presence of oenocyte-less flies perfumed with CH503, male courtship was still significantly inhibited (Figure 1E). In sum, these results indicate that female-specific pheromones synthesized in the oenocytes do not mediate the detection of CH503. Furthermore, CH503 is effective as an anti-aphrodisiac only when placed on the cuticular surface of females, indicating that sensory cues other than cuticular lipids are required.\n\n### CH503 is detected by taste, not smell\n\nBased on the relatively high molecular weight of CH503 and its low volatility, we hypothesized that CH503 is likely to be perceived as a tastant. We performed a proboscis extension reflex (PER) assay to test whether CH503 is detected by foreleg gustatory receptors. Stimulation of the foreleg with rewarding stimulants such as a sugar solution induces extension of the proboscis (Kimura et al., 1986) while aversive, bitter substances suppress the PER (Lacaille et al., 2007). Exposure of the forelegs to 0.5\u20132.0 \u00b5g of CH503 together with 4% sucrose reduced the frequency of the PER (Figure 2A). Similarly, caffeine, a bitter stimulus, also suppressed the PER. In contrast, females did not exhibit a change in the PER when exposed to CH503, indicating that either the pheromone was not detected or that it does not carry a negative valence for females (Figure 2\u2014figure supplement 1). To further examine whether CH503 is detected as an odorant or tastant, we tested the responses of transgenic males defective in smell or taste perception. Flies lacking the olfactory co-receptor Or83b (Orco) exhibit significant defects in olfactory pheromone detection (Larsson et al., 2004). However, Or83b-defective flies still suppressed courtship in the presence of CH503 (Figure 2B). In contrast, Voila1 mutants, which exhibit gustatory defects (Balakireva et al., 1998), continued to court CH503-perfumed females (Figure 2B). Taken together, these results indicate that CH503 is perceived as an aversive tastant by males and not females and is detected by gustatory receptors on the foreleg.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig2-v2.jpg)\n\n**Figure 2.:** (A) Simultaneous stimulation of the male foreleg with 4% sucrose and CH503 or caffeine significantly inhibits the proboscis extension reflex (PER; shown in pictures) in CantonS males (white). The PER suppression was not observed in \u0394Gr68a mutant flies (gray) but was restored upon re-introduction of the Gr68a gene (Gr68aRes; blue). For each genotype, the response to each test compound was compared to the response to sucrose alone. N = 18, Fisher's exact probability test, ***p < 0.001, ****p < 0.0001, ns: not significant. (B) A behavioral screen targeting foreleg-specific gustatory receptor neurons, pheromone receptors, and a pheromone binding protein reveals that Gr68a is a candidate receptor for detecting (S, Z, Z)-CH503. The number of flies exhibiting courtship in response to the pheromone (purple) was compared to the response to a solvent-perfumed female (white). For some genotypes (far right of graph), the basal courtship level was too low to observe a courtship suppression effect. N = 12\u201373, Fisher's exact probability test, *p < 0.05, **p < 0.01; ***p < 0.001. (C) Silencing Gr68a expression with RNAi or genetic deletion resulted in a loss of sensitivity to CH503. The courtship suppression response was unaltered in parental control lines and restored upon re-introduction of the gene into the mutant. Hyperactivation of Gr68a-expressing neurons using dTrpA1 at the activation temperature (29\u00b0C) resulted in a slight but non-significant courtship suppression compared to the inactive temperature (19\u00b0C). Parental control lines exhibited no difference in courtship behavior at 29\u00b0C or 19\u00b0C. N = 12\u201337, Fisher's exact probability test, *p < 0.05, ns: not significant. (D) (Top) A schematic of the Gr68a gene locus shows that the single coding exon (blue) resides within the intronic region (black) of another gene, CG6024. (middle) The homologous recombination strategy for deletion and rescue of Gr68a involves replacement of the endogenous gene with the mini-white marker using recombinase-mediated cassette exchange (RMCE). Genomic rescue of Gr68a is accomplished by exchanging mini-white via RMCE with the Gr68a sequence. (Bottom) Analysis by semi-quantitative PCR of genomic DNA shows the complete absence of Gr68a expression in two homozygous mutant alleles and successful rescue in the respective Gr68aRes lines. Rp49 expression is used as a loading control. CG6024 expression is not changed in mutant or rescue lines (Figure 2\u2014figure supplement 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The PER response to (S, Z, Z)-CH503 is sexually dimorphic. Females do not respond to the more potent stereoisomer (S, Z, Z)-CH503 (green) while males respond across a range of doses (black). Both males and females suppress PER when presented with other aversive substances, (7Z)-tricosene and caffeine. N = 18, Fisher's exact probability test, ns: not significant; ***p < 0.001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Gr68a levels are effectively reduced in homologous recombinant mutant (\u0394Gr68a) and restored in rescue (Gr68Res) alleles. Gene expression levels are shown normalized to wild-type CantonS levels. The expression of CG6024 is unaffected by manipulation of the Gr68a locus. Data show normalized average \u00b1 standard deviation (SD), N = 3.\n\n### CH503 is detected by Gr68a neurons on the forelegs of male flies\n\nTo identify the subset of neurons on the male foreleg that detect CH503, we performed a behavioral screen by using the Gal4-UAS transgene system to ablate or functionally suppress each of the 19 known foreleg-specific gustatory neurons (Ling et al., 2014). The courtship behavior of transgenic or mutant males was then tested in the presence of CH503-perfumed females. The synthetic stereoisomer (S, Z, Z)-CH503 (Figure 2\u2014figure supplement 2) was used for preliminary screening since it is more potent than naturally occurring (R, Z, Z)-CH503 both in suppressing courtship (Shikichi et al., 2012; Ng et al., 2014) and the PER (Figure 2\u2014figure supplement 1) and thus, would lessen the likelihood of false positives. Males from 15 of the gustatory Gal4 lines displayed normal courtship suppression behavior in the presence of CH503-perfumed females (Figure 2B). Four lines exhibited significantly reduced levels of courtship behavior with control females, thus confounding our ability to detect CH503-related courtship suppression. However, males in which the Gr68a-encoding gene was transcriptionally silenced continued to court females in the presence of (S, Z, Z)-CH503 (Figure 2B). A similar response was found when males were tested with the natural pheromone at a 333 ng/fly dose using two independent Gal4 lines (Figure 2C). To ensure complete loss of Gr68a expression, we generated a \u0394Gr68a mutant using targeted ends-out homologous recombination and confirmed the loss of expression with PCR (Figure 2D; Figure 2\u2014figure supplement 3). \u0394Gr68 mutants displayed robust courtship behavior in the presence of CH503-perfumed females (Figure 2C). Importantly, the sensitivity to CH503 was restored upon re-introduction of the Gr68a-encoding gene (Gr68aRes; Figure 2C). The coding region for Gr68a resides within the intronic region of another gene, CG6024 (Figure 2D). However, CG6024 expression was not significantly changed in either mutant or rescue lines (Figure 2\u2014figure supplement 3).\n\nTo determine whether activation of Gr68a neurons was sufficient to induce the courtship avoidance response, we expressed the conditionally activated cation channel Drosophila TrpA1 (dTrpA1). In the presence of unperfumed female targets, a slight but non-significant suppression in courtship behavior was observed at the activation temperature of 29\u00b0C compared with the inactive condition at 19\u00b0C (Figure 2C). Thus, activation of Gr68a neurons is not sufficient to suppress courtship, possibly due to conflicting signals resulting from mutual activation of mechanosensory and chemosensory neurons (see \u2018Discussion\u2019).\n\n### Gr68a neurons exhibit a dose-dependent physiological response to CH503\n\nTo visualize Gr68a neurons and their processes, we drove expression of a membrane-tethered green fluorescent protein molecule (UAS-mCD8::GFP) using Gr68a-Gal4. Consistent with previous reports (Bray and Amrein, 2003; Ejima and Griffith, 2008; Ling et al., 2014), a sexually dimorphic GFP expression pattern was observed in the chemosensory neurons of gustatory bristles found in male forelegs (Figure 3A). Each of the male tarsal segments exhibited more labeled neurons than females (Table 1). Labeled non-neuronal cells (distinguished by larger, irregularly shaped membranes lacking projections) were also observed but only in male legs (Figure 3A; Table 1). Notably, knockdown of Gr68a expression using the pan-neuronal elav-Gal4 driver resulted in a loss of sensitivity to CH503 (Figure 2B). The results recapitulate the phenotype observed with Gr68a-Gal4 and indicate that neuronally expressed receptors are important for CH503 detection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-v2.jpg)\n\n**Figure 3.:** (A) Visualization of GFP-labeled Gr68a-expressing neurons reveals neuronal and non-neuronal cells (arrowheads) in tarsal segments T2-5 from the male foreleg. Scale bar: 35 \u03bcm. (B) Gr68a-expressing neurons in the male foreleg show changes in Ca2+ activity in response to two doses of CH503 (pink, red). The behaviorally inert analog (R)-3-Acetoxy-11, 19-octacosadiyn-1-ol fails to elicit a significant response (gray). No increase in \u0394F/F is observed from the forelegs of \u0394Gr68a-mutant flies (red stripes). Cells are designated according to the schematic (left) showing sensory neurons (green) and non-neural cells (yellow). For each cell type, the averaged response \u00b1\u00a0SEM and sample size is shown; Student's t-test with unequal variance, *p < 0.05, **p < 0.01. Unless otherwise indicated, statistical power is at least 0.8 for a significance level of 0.05 for the 50 and 500 ng CH503 doses. \u2021N = 47 required for power of 0.8; \u2020N = 201 required for 0.8 power. (C) A color-coded time course from 0\u201396 s showing the response in T2 Gr68a neurons evoked by 500 ng of CH503. The positions of the neurons on the foreleg are shown in the raw fluorescent image (bottom right corner, square). See also Figure 3\u2014figure supplement 1 and Video 1. Scale bar: 10 \u03bcm. (D) Gr68a-expressing neurons on the female foreleg do not show a statistically significant response to (R, Z, Z)-CH503. Student's t-test with unequal variance, p > 0.05 for all cells tested. Error bars indicate SEM; sample sizes are shown below each cell type. Unless otherwise indicated, statistical power is at least 0.8 for a significance level of 0.05 for the 50 and 500 ng CH503 doses. \u2020N \u223c 100 needed to achieve 0.8 power.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Red arrow indicates the time at which the stimulus was added.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** An increase in intracellular Ca2+ levels was observed in Gr68a-expressing neurons upon application of (S, Z, Z)-CH503. Two cells (o, x) showed a higher \u0394F/F increase in response to 500 ng of (S, Z, Z)-CH503 (dark blue) compared with the natural pheromone applied at the same dose (Figure 3B, red). Maximum \u0394F/F values plateau at 50 ng of (S, Z, Z)-CH503 in 5 cells (x, y, a, c, d). The averaged response for each cell type \u00b1 SEM and sample size is shown; Student's t-test with unequal variance, *p < 0.05, **p < 0.01.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** RNAi-mediated suppression of Gr68a severely reduces neural responses induced by (R, Z, Z)-CH503 (red). In most cells, the response to the pheromone was not distinguishable from the response to buffer (white), with the exception of cell f. The averaged response for each cell type \u00b1\u00a0SEM and sample size is shown; Student's t-test with unequal variance, *p = 0.016.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Application of 500 ng of CH503 elicited a significant \u0394F/F increase in ppk23-expressing neurons on the male proboscis (red). In contrast, ppk23-expressing neurons from the female proboscis did not show a significant change in \u0394F/F. The averaged response for each cell type \u00b1SEM and sample size is shown; Student's t-test, *p = 0.012. (B) A color-coded time course from 0 to 96 s showing the response of ppk23 neurons on the proboscis to 500 ng of CH503. Heterogeneity in response times is apparent amongst the different cell types with some cells responding intensely at 6.4 s and others only \u223c88 s after CH503 application. See also Video 2. The positions of the neurons on the proboscis are shown in the raw fluorescent image (bottom right corner). Scale bar: 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Visualization of GFP-labeled ppk23-expressing neurons in the male foreleg in tarsal segments T2-5. Scale bar: 35 \u03bcm. (B) Ppk23-expressing neurons on tarsal segments T2-5 were stimulated with 50 ng of (S, Z, Z)-CH503, an equivalent dose of the behaviorally inactive analog (S)-3-acetoxy-11-octacosen-1-ol or 500 ng of (R, Z, Z)-CH503. A robust increase in \u0394F/F specific to (S, Z, Z)-CH503 was elicited from 2 cells on T2 and 1 cell on T3. Several cells in each segment displayed a robust response to the analog. The averaged response for each cell type \u00b1 SEM and sample size is shown, Student's t-test, *p < 0.05, **p < 0.01, ***p < 0.001. (C) A color-coded time course from 0 to 96 s showing the response in ppk23-expressing neurons on the male foreleg to 500 ng of CH503. The cells exhibit a bursting response consisting of fluorescence intensity increasing at periodic intervals for the duration of the recording. See also Video 3. The positions of the neurons on the foreleg are shown in the raw fluorescent image (bottom right corner). Scale bar: 10 \u03bcm. (D) Line graph representation showing the oscillatory response of a T2 ppk23 neuron upon stimulation with 500 ng of CH503. Red arrow indicates the time point at which the stimulus was added.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Pearson's coefficients: 0.06 (left) and 0.02 (right); scale bar: 50 \u03bcm.\n\n**Table 1.**\n Average number of GFP-positive cells in male and female foreleg segments labeled using Gr68a-Gal4\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>T1</th>\n      <th>T2</th>\n      <th>T3</th>\n      <th>T4</th>\n      <th>T5</th>\n      <th>Total*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u2642 neurons</td>\n      <td>2 \u00b1 1</td>\n      <td>2 \u00b1 1</td>\n      <td>3 \u00b1 1</td>\n      <td>2 \u00b1 1</td>\n      <td>0 (9/12 flies)</td>\n      <td>9 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>\u2640 neurons</td>\n      <td>2 \u00b1 1</td>\n      <td>1 \u00b1 1</td>\n      <td>2 \u00b1 1</td>\n      <td>1 \u00b1 1</td>\n      <td>0 (11/12 flies)</td>\n      <td>6 \u00b1 2</td>\n    </tr>\n    <tr>\n      <td>\u2642 non-neural cells</td>\n      <td>2 \u00b1 1</td>\n      <td>3 \u00b1 0</td>\n      <td>2 \u00b1 0</td>\n      <td>1 \u00b1 0</td>\n      <td>0</td>\n      <td>8 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>\u2640 non-neural cells</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Averaged count (\u00b1SD) from 12 flies._\n\nTo measure directly the response of Gr68a-expressing neurons to CH503, we performed in vivo calcium imaging of the forelegs of live flies by expressing the calcium sensor GCaMP5 under control of Gr68a-Gal4. The maximum fluorescent change (\u0394F/F) was elicited with a bath-applied dose of 500 ng of (R, Z, Z)-CH503, close to the minimum dosage required to elicit a behavioral response in courtship assays (Figure 3B). At this dose, 6 of 9 cells in segments T2\u20134 showed significant responses compared to the control solvent, ranging from \u0394F/F 0.34 \u00b1 0.05 to 1.39 \u00b1 0.46 (mean \u00b1 SEM). At a dose of 50 ng, only 1 cell (T4, Cell a) showed a significant signal increase, with an average \u0394F/F of 1.52 \u00b1 0.37. Gr68-neurons exhibited two general patterns of responses: more commonly, a phasic response is observed where maximum fluorescent intensity occurred immediately after the addition of the pheromone and was followed by a gradual decline to baseline levels after 6 s. A tonic response is also seen where fluorescence gradually increased and peaked after approximately 120 s (Figure 3C; Figure 3\u2014figure supplement 1; Video 1). Gr68a-expressing neurons also responded to the synthetic stereoisomer (S, Z, Z)-CH503 over the same range of doses though they differed in terms of dynamic range and response pattern (Figure 3\u2014figure supplement 2).\n\n![Video 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-media1.avi.jpg)\n\n**Video 1.:** Cell bodies in T3 exhibit a tonic response upon stimulation with 500 ng of CH503.\n\nStimulation of Gr68a-expressing neurons with a synthetic CH503 analog containing two triple bonds did not elicit a change in fluorescent signal (Figure 3B), consistent with previous observations that the analog is behaviorally inert (Shikichi et al., 2013). Additionally, CH503 failed to evoke a physiological response when Gr68a expression was either reduced using RNAi or eliminated in \u0394Gr68a mutants (Figure 3B; Figure 3\u2014figure supplement 3). In females, the responses to the pheromone from the forelegs were indistinguishable from that of the solvent control (Figure 3D). In the case of cells j and s, it may be that the responses are too subtle to be reliably measured without a sample size \u223c100. The functional imaging results are consistent with observations from the appetitive PER assay where females also failed to exhibit a measurable response to CH503 (Figure 2\u2014figure supplement 1). Taken together, direct measurement of neural response in Gr68a-expressing neurons reveals robust functional activation by CH503 in males only. Moreover, the double-bonds in the carbon backbone of the CH503 molecule are an essential structural feature for pheromone activity.\n\n### The role of pickpocket neurons in CH503 detection\n\nRecently, male and female leg neurons expressing the ion channel ppk23 were shown to respond physiologically to non-volatile gustatory pheromones in D. melanogaster (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012). We measured responses from GCaMP-expressing ppk23-Gal4-labeled cells in the labella and forelegs of both male and female flies. In the male proboscis, CH503 activated approximately 8 of 14 neurons while none of the female ppk23 neurons responded (Figure 3\u2014figure supplement 4; Video 2). The response of ppk23 neurons in the male foreleg was more heterogeneous compared to Gr68a-expressing neurons. Depending on the cell, neural responses could be elicited by the natural pheromone (R, Z, Z)-CH503, the artificial stereoisomer (S, Z, Z)-CH503, a synthetic CH503 analog or solvent controls (Figure 3\u2014figure supplement 5). While most ppk23-expressing neurons typically responded in a phasic manner with a maximum change in \u0394F/F shortly after pheromone addition, some cells exhibited bursting responses with large increases in \u0394F/F that recurred frequently during the time course of the experiment (Figure 3\u2014figure supplement 5; Video 3).\n\n![Video 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-media2.avi.jpg)\n\n**Video 2.:** Following stimulation with 500 ng of CH503, the projections of ppk23 neurons exhibit a bursting response. The cell bodies respond in a tonic manner, displaying a gradual increase in fluorescence intensity. The tonic response could be due to persistent stimulation from the pheromone.\n\n![Video 3.](https://cdn.elifesciences.org/articles/06914/elife-06914-media3.avi.jpg)\n\n**Video 3.:** Following stimulation with 500 ng of CH503, cell bodies and projections in T3 display a bursting response.\n\nTo test whether ppk23 plays a role in mediating the behavioral response to CH503, we examined the behavior of male flies in which ppk23 expression was silenced using RNAi. Males continued to respond to CH503 though the courtship suppression effect is partially mitigated compared to other gustatory receptors (Figure 2B). It was not possible to assess the courtship behavior of \u0394ppk23 mutants due to low basal courtship levels. Knockdown of a second member of the ppk family, ppk25, also resulted in a partially reduced sensitivity to CH503 (Figure 2B). While these results do not eliminate the possibility that ppk-23/25-expressing neurons contribute to CH503 detection, both the physiological and behavioral data indicate that the responses of the cells by themselves are not the primary sensory pathway and do not appear to be necessary for courtship suppression to occur.\n\n### Identification of higher order neurons involved in CH503 detection\n\nThe Gr68a-Gal4-labeled neurons send axonal projections to each of the six thoracico-abdominal (TAG) neuromeres and extend into the SEZ and the antennal mechanosensory and motor center (AMMC) (Figure 4A). To identify upstream pathways that relay information from the SEZ, we screened 22 Gal4 drivers and 9 UAS-RNAi lines targeting central brain regions, neuropeptide systems, and neurotransmitter circuits for their contribution to CH503-induced courtship suppression (Figure 4\u2014figure supplement 1; Table 2). Interestingly, suppression of neural activity using the c929-Gal4 line resulted in a marked decrease in sensitivity to CH503 (Figure 4B). The peptide driver labels both neuroendocrine and peptidergic neurons in the central nervous system and processes in the TAG ([Taghert et al., 2001; Hewes et al., 2003]; Figure 4\u2014figure supplement 2). We partially limited c929-Gal4 expression by suppressing Gal4 activity in the ventral nerve cord with the repressor tsh-Gal80 and observed that sensitivity to CH503 was not restored (Figure 4B; Figure 4\u2014figure supplement 2). Hence, c929-labeled processes in the thoracic ganglia do not appear to contribute to the behavioral response to CH503.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig4-v2.jpg)\n\n**Figure 4.:** (A) Gr68a-Gal4-labeled afferent projections extend to the thoracico-abdominal ganglia (TAG), subesophageal zone (SEZ), and antennal mechanosensory and motor center (AMMC). Image represents a maximum intensity Z-series projection. Scale bar A: 25 \u03bcm; A\u2032: 50 \u03bcm. (B) Inhibition of electrical activity in c929-Gal4-labeled neurons with UAS-dORK\u0394C, an inwardly rectifying K+ channel, resulted in high courtship levels in the presence of CH503. Suppressing Gal4 expression in the ventral cord with a tsh-Gal80 transgene (hence, limiting dORK\u0394C expression primarily to the central brain) failed to restore sensitivity to CH503. No change in CH503 response was observed in the absence of the c929-Gal4 driver. N = 23\u201325, Fisher's exact probability test, ns: not significant, ****p < 0.0001. (C) Ablation of central brain neural circuits associated with NPF abolished the courtship suppression response to CH503. The courtship behavior of genetic controls was unaffected. Silencing NPF expression in all neural cells (using elav-Gal4) or in peptidergic neurons (using c929-Gal4) did not alter flies' sensitivity to CH503. N = 14\u201333, Fisher's exact probability test, ns: not significant, **p < 0.01, ****p < 0.0001. (D) NPF-expressing processes are closely apposed to Gr68a-Gal4 synaptic terminals labeled with synaptobrevin-GFP (syb-GFP) in the AMMC (D\u2032) and SEZ (D\u2032\u2032). No co-localization is observed (Pearson's coefficient: 0.01). Image represents a maximum intensity Z-series projection. Scale bar D: 50 \u03bcm; D\u2032, D\u2032\u2032: 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Inactivation of neural activity by expression of the temperature-sensitive Shibire transgene (UAS-Shits1) or UAS-dORK\u0394C within NPF- and c929-Gal4 circuits resulted in a loss of sensitivity to CH503 (purple vs white). It was not possible to assess some Gal4 lines (far right) due to low activity or lethality upon suppression of neural activity. N = 8\u201324 for each line, Fisher's exact probability test, ns: not significant; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Co-expression is observed in cell bodies housed in the thoracico-abdominal ganglia (TAG), subesophageal zone (SEZ), superior medial protocerebrum (SMP), and processes along the median bundle (MBDL). (A\u2032) Magnification of square in A. (A\u2032\u2032) Z-section from another depth. Images represent maximum intensity Z-series projections. Scale bar A: 25 \u03bcm; A\u2032 and A\u2032\u2032: 50 \u03bcm. (B) The tsh-Gal80 transgene restricts c929-Gal4 expression to the brain Scale bar: 25 \u03bcm.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** RNAi-mediated silencing of tachykinin (TK) expression within the c929-Gal4 circuit inhibits sensitivity to (S, Z, Z)-CH503 (purple vs white). RNAi manipulation of other neurotransmitter systems did not have a significant effect on CH503-detection (black vs white). N = 21\u201335, Fisher's exact probability test, ns: not significant; **p < 0.01; ***p < 0.001.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Quantitative PCR analysis of NPF transcript levels from heads of elav>NPF-RNAi and elav/+ control flies. RNAi induces a 5.3-fold reduction of NPF transcript levels. Gene expression levels are shown normalized to wildtype CantonS levels. Data show normalized average \u00b1 standard deviation (SD), N = 3.\n\n**Table 2.**\n Gal4 and RNAi lines used to screen for CH503-related defects\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Stock</th>\n      <th>Expression pattern or gene targeted*</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>c386a-Gal4</td>\n      <td>EB</td>\n      <td>www.fly-trap.org</td>\n    </tr>\n    <tr>\n      <td>2-72-Gal4</td>\n      <td>EB</td>\n      <td>gift from U Heberlein (Janelia Farm, VA, USA)</td>\n    </tr>\n    <tr>\n      <td>4-67-Gal4</td>\n      <td>EB</td>\n      <td>Gift from U Heberlein</td>\n    </tr>\n    <tr>\n      <td>9-161-Gal4</td>\n      <td>PC, FSB, MB</td>\n      <td>Gift from U Heberlein</td>\n    </tr>\n    <tr>\n      <td>2-13-Gal4</td>\n      <td>interneurons, PC</td>\n      <td>Gift from U Heberlein</td>\n    </tr>\n    <tr>\n      <td>c819-Gal4</td>\n      <td>(Pan et al., 2012)</td>\n      <td>(Pan et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>c061-Gal4</td>\n      <td>PC, FSB, MB</td>\n      <td>(Pan et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>R71GO1-Gal4</td>\n      <td>PI, VNC</td>\n      <td>(Pan et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>OK107-Gal4</td>\n      <td>MB</td>\n      <td>DGRC #106098</td>\n    </tr>\n    <tr>\n      <td>TrH-Gal4</td>\n      <td>5HT cells</td>\n      <td>Bloomington #10531</td>\n    </tr>\n    <tr>\n      <td>TH-Gal4</td>\n      <td>DA cells</td>\n      <td>Bloomington #8848</td>\n    </tr>\n    <tr>\n      <td>Tdc2-Gal4</td>\n      <td>TA and OCT cells</td>\n      <td>Bloomington #9313</td>\n    </tr>\n    <tr>\n      <td>MB247-Gal4</td>\n      <td>MB, EB</td>\n      <td>Bloomington #50742</td>\n    </tr>\n    <tr>\n      <td>JO-15-Gal4</td>\n      <td>Johnston's organ</td>\n      <td>Bloomington #6753</td>\n    </tr>\n    <tr>\n      <td>DDC-Gal4</td>\n      <td>DA and 5HT cells</td>\n      <td>Bloomington #7010</td>\n    </tr>\n    <tr>\n      <td>c309-Gal4</td>\n      <td>MB, SEZ, CX, AL, PI, TG</td>\n      <td>Bloomington #6906</td>\n    </tr>\n    <tr>\n      <td>c305-Gal4</td>\n      <td>MB, EB, AL, glia</td>\n      <td>Bloomington #30829</td>\n    </tr>\n    <tr>\n      <td>c305-Gal4</td>\n      <td>MB</td>\n      <td>Bloomington #30829</td>\n    </tr>\n    <tr>\n      <td>c205-Gal4</td>\n      <td>FB</td>\n      <td>Bloomington #30827</td>\n    </tr>\n    <tr>\n      <td>c161y-Gal4</td>\n      <td>EB, FSB, PC, chordotonal organ</td>\n      <td>Bloomington #27893</td>\n    </tr>\n    <tr>\n      <td>c107-Gal4</td>\n      <td>EB, FSB, PC, chordotonal organ</td>\n      <td>Bloomington #30823</td>\n    </tr>\n    <tr>\n      <td>30Y-Gal4</td>\n      <td>MB</td>\n      <td>Bloomington #30818</td>\n    </tr>\n    <tr>\n      <td>CheB42a\u03945\u201368</td>\n      <td>CheB42a</td>\n      <td>(Park et al., 2006)</td>\n    </tr>\n    <tr>\n      <td>UAS-TbH-RNAi #1, 2</td>\n      <td>Tyrosine \u03b2-hydroxylase</td>\n      <td>VDRC #107070, 51667</td>\n    </tr>\n    <tr>\n      <td>UAS-OAMB-RNAi #1, 2, 3</td>\n      <td>Mushroom body OA receptor</td>\n      <td>Bloomington #31233, 31711; VDRC #106511</td>\n    </tr>\n    <tr>\n      <td>UAS-Cha-RNAi</td>\n      <td>Choline acetyltransferase</td>\n      <td>VDRC #20183</td>\n    </tr>\n    <tr>\n      <td>UAS-VAChT-RNAi</td>\n      <td>Vesicular acetylcholine transporter</td>\n      <td>VDRC #40918</td>\n    </tr>\n    <tr>\n      <td>UAS-DAT-RNAi</td>\n      <td>DA transporter</td>\n      <td>VDRC #12082</td>\n    </tr>\n    <tr>\n      <td>UAS-TH-RNAi</td>\n      <td>Tyrosine hydroxylase</td>\n      <td>VDRC #3308</td>\n    </tr>\n    <tr>\n      <td>UAS-Dop1R1-RNAi</td>\n      <td>DA 1-like receptor 1</td>\n      <td>VDRC #107058</td>\n    </tr>\n    <tr>\n      <td>UAS-Dop1R2-RNAi</td>\n      <td>DA 1-like receptor 2</td>\n      <td>VDRC #105324</td>\n    </tr>\n    <tr>\n      <td>UAS-VGAT-RNAi #1, 2</td>\n      <td>Vesicular GABA transporter</td>\n      <td>VDRC #103586, 45916</td>\n    </tr>\n    <tr>\n      <td>UAS-Tdc2-RNAi</td>\n      <td>Tyrosine decarboxylase</td>\n      <td>Bloomington #25871</td>\n    </tr>\n    <tr>\n      <td>UAS-SERT-RNAi</td>\n      <td>5HT transporter</td>\n      <td>VDRC #11346</td>\n    </tr>\n    <tr>\n      <td>UAS-GABA B R1-RNAi</td>\n      <td>Metabotropic GABA-B receptor subtype1</td>\n      <td>VDRC #101440</td>\n    </tr>\n    <tr>\n      <td>UAS-GABA B R2-RNAi</td>\n      <td>Metabotropic GABA-B receptor subtype2</td>\n      <td>VDRC #1785</td>\n    </tr>\n    <tr>\n      <td>UAS-GABA B R3-RNAi #1, 2</td>\n      <td>Metabotropic GABA-B receptor subtype3</td>\n      <td>VDRC #108036, 50176</td>\n    </tr>\n    <tr>\n      <td>UAS-GAD1-RNAi</td>\n      <td>Glutamic acid decarboxylase</td>\n      <td>VDRC #32344</td>\n    </tr>\n  </tbody>\n</table>\n\n_*AL: antennal lobe; CX: central complex; EB: ellipsoid body; FSB: fan-shaped body; MB: mushroom body; PC: protocerebrum; PI: pars intercerebralis; SEZ: subesophageal zone; TG: thoracic ganglion; VNC: ventral nerve cord; 5HT: serotonin; DA: dopamine; OCT: octopamine; TA: tyramine._\n\nWe next attempted to identify other neurotransmitters within the c929-Gal4 circuit that could mediate pheromone processing. RNAi-mediated silencing of genes related to aminergic, cholinergic, glutamatergic, and GABAergic synthesis, transport, and receptor systems did not have an effect (Figure 4\u2014figure supplement 3). However, genetic ablation or suppression of neural activity in two neuropeptidergic circuits, neuropeptide F (NPF) and tachykinin (TK), reduced sensitivity to CH503 (Figure 4C; Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig5-v2.jpg)\n\n**Figure 5.:** (A) Ablation of TK-expressing circuits using two independent Gal4 drivers (TK2 and TK3) removed sensitivity to CH503. Homozygous or trans-heterozygous \u0394TK deletion mutants also exhibit a loss of sensitivity to CH503. Rescuing TK expression in two different mutant backgrounds restored the behavioral response to CH503. See Figure 5\u2014figure supplement 2 for parental controls. N = 15\u201331, Fisher's exact probability test, ns: not significant, ****p < 0.0001. (B, C, E) TK-expressing cells are closely apposed to Gr68a-Gal4 synaptic terminals labeled with synaptobrevin-GFP (syb-GFP) in the SEZ (C) and AMMC (E). No co-localization is observed (Pearson's coefficient: 0). Image represents a maximum intensity Z-series projection. (D, D\u2032) Positive GRASP-GFP signal in the SEZ indicates synaptic connectivity between Gr68a neurons and TK processes. The GFP signal is overlaid on a phase-contrast image of the tissue (arrows). (F, F\u2032) Positive GRASP-GFP signal in the AMMC indicates synaptic connectivity between Gr68a neurons and TK processes. The GFP signal is overlaid on a phase-contrast image of the tissue (rectangle). Scale bar B: 50 \u03bcm; all other scale bars: 20 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Three different TK-Gal4 drivers were tested for their contribution to CH503 processing. Cell ablation or inactivation of neural activity using TK2-Gal4 and TK3-Gal4 (purple vs white) but not TK1-Gal4 (black vs white) removed sensitivity to (S, Z, Z)-CH503. N = 28\u201336, Fisher's exact probability test, ns: not significant; **p < 0.01; ***p < 0.001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The presence of the Gal4 or UAS transgene is not sufficient to rescue the response to CH503. N = 23\u201330, Fisher's exact probability test, all results are not significant.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Left: the brightness of the confocal image is exaggerated in order to visualize the tissue. Right: the fluorescent image is overlaid on a phase-contrast image of the tissue. Scale bar: 50 \u03bcm.\n\nThe peptide NPF co-localizes with c929-Gal4 throughout the TAG, SEZ, and protocerebrum (Figure 4\u2014figure supplement 2). Anatomical analysis revealed that Gr68a synaptic terminals and NPF-positive processes are closely apposed to each other in the SEZ, implicating NPF-expressing circuits as a putative second order relay to the central brain (Figure 4D). Notably, silencing NPF expression using c929-Gal4 or the pan-neural driver elav-Gal4 (which caused a 5.3-fold decrease in transcript level, Figure 4\u2014figure supplement 4) was ineffective at changing the male inhibitory courtship response (Figure 4C). These findings indicate that the NPF peptide itself is not likely to be essential for mediating CH503-related behavior. Consistent with this observation, silencing of the neuronal circuits associated with the NPF receptor, NPFR, also did not change the response to CH503 (Figure 4\u2014figure supplement 1).\n\n### TK-expressing cells are a second order circuit for gustatory pheromone information\n\nTK-expressing cells represent a second higher order neural circuit that mediates CH503-induced courtship suppression. We observed a significantly altered response in males both to the natural pheromone (Figure 5A) and the more potent (S, Z, Z)-CH503 stereoisomer (Figure 5\u2014figure supplement 1) following genetic cell ablation or functional suppression of TK-expressing cells. The results were consistent using two independent TK-Gal4 drivers which label overlapping but not identical cell populations. Genetic excision of the TK gene also caused a striking loss of sensitivity to CH503 (Figure 5A). The phenotype was rescued upon ectopic expression of TK in the mutant background (Figure 5A). Thus, in contrast to our findings with the NPF peptide, the product of the TK gene is necessary for mediating the behavioral actions induced by CH503.\n\nTo examine TK expression relative to Gr68a processes, we used an antibody to TK to label brain tissue from Gr68a-Gal4>UAS-sybGFP flies. Positive TK staining is evident in the SEZ and AMMC and is positioned closely to Gr68a-Gal4-labeled terminals (Figure 5B,C,E). To determine if there is synaptic connectivity, we used the GFP reconstitution across synaptic partners (GRASP) method (Feinberg et al., 2008; Gordon and Scott, 2009). Complementary fragments of membrane-tethered GFP are expressed using Gr68a-Gal4 and TK-LexA drivers. By themselves, the fragments are non-fluorescent. However, close apposition of the fragments reconstitutes a functional GFP molecule and in this way, labels sites of synaptic contacts. Positive GRASP-GFP staining was apparent in the SEZ (Figure 5D; 6 out of 10 brains) and the AMMC (Figure 5F; 9 out of 10 brains), indicating connectivity. In tissue from negative controls lacking the Gr68a-Gal4 driver, only diffuse non-specific staining is seen (4 out of 4 brains; Figure 5\u2014figure supplement 3).\n\n### TK-expressing cells are essential for gustatory pheromone detection\n\nWe next asked whether the TK-positive cells involved in the processing of CH503 overlap with the NPF-Gal4 or c929-Gal4 circuit. Indeed, silencing TK expression only within either of these Gal4-defined populations resulted in a reduced response to CH503, with male courtship levels indistinguishable from those of the solvent-perfumed fly (Figure 6A,C). Conditional suppression of TK only from late pupal stage onwards (using temperature-sensitive Gal80) also produced the same phenotype, indicating that loss of CH503 sensitivity from TK knockdown is not due to non-specific developmental effects (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig6-v2.jpg)\n\n**Figure 6.:** (A) RNAi-mediated knockdown of TK only in central NPF-Gal4 circuits abrogates the CH503-induced courtship suppression response. Conditional knockdown only from late pupal stage onwards (29\u00b0C permissive temperature, TK-RNAi expressed) elicits the same phenotype. At the 25\u00b0C restrictive temperature (TK-RNAi not expressed), flies continue to respond to the pheromone. Restoring TK expression only in the NPF-Gal4 circuit is not sufficient to restore sensitivity to CH503. See Figure 6\u2014figure supplement 2 for parental controls. N = 14\u201323, Fisher's exact probability test, ns: not significant, ***p < 0.001. (B) Co-expression and co-localization of anti-NPF immunostaining with TK2-Gal4 processes is observed only in two pairs of bilateral cells in the ventrolateral protocerebrum (indicated by arrowheads; Pearson's coefficient: 0.7). No co-expression is observed in midline cells\u2014the apparent co-localization observed in some cells (yellow signal) is due to overlapping signals from stacking different optical layers. Image represents a maximum intensity Z-series projection. Scale bar: 50 \u03bcm. (C) Silencing TK expression only in the c929-Gal4 circuit removes CH503 sensitivity. Rescuing TK expression only in the c929-Gal4 circuit restores sensitivity. N = 16\u201324, Fisher's exact probability test, ns: not significant, *p < 0.05. (D) Co-expression of anti-TK immunostaining with c929-Gal4 GFP expression is observed in 10 cell bodies housed in the SEZ (arrowheads; D\u2032). Images represent maximum intensity Z-series projections. Scale bar D: 50 \u03bcm; D\u201c: 35 \u03bcm. (E) Histogram showing frequency of cells in the SEZ that are triple-labeled with anti-NPF antibody, anti-TK antibody, and c929-Gal4 GFP expression. (F, G) Seven or three triple-labeled cells (arrows) in the SEZ. Images represent maximum intensity Z-series projections. Scale bar: 20 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Inactivation of TK neurons using a third TK-Gal4 line results in a loss of sensitivity to CH503. The sensitivity is restored upon rescue of TK expression. (B) No co-localization or co-expression is evident (Pearson's coefficient: 0.02). Image represents a maximum intensity Z-series projection. Scale bar: 50 \u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** N = 24\u201332, Fisher's exact probability test, all results are not significant.\n\nTo examine the intersection of TK- and NPF-defined circuits, TK2-Gal4-labeled brains were stained with an antibody to NPF. Co-expression in 7 cells (designated NPF-TK cells) was evident in the anterior ventrolateral protocerebrum (Figure 6B). However, two lines of evidence indicate that these 4 cells are not sufficient for mediating courtship suppression. First, on a TK mutant background, rescuing TK expression only within the NPF circuit did not restore the courtship suppression response (Figure 6A). Second, the four NPF-TK cells are not labeled by TK3-Gal4, a second population of cells that was also found to contribute to CH503 detection (Figure 6\u2014figure supplement 1).\n\nWe next attempted to rescue pheromone sensitivity by replacing TK expression only within the c929-Gal4 circuit. In wild-type flies, co-expression is evident in 10 cells in the SEZ, designated as c929-TK cells (Figure 6D,D\u2032). Rescue of TK expression only in these 10 cells restored the pheromone-response behavior in the \u0394TK2 and \u0394TK1/2 transheterozygote mutant background (Figure 6C). Failure to rescue in the \u0394TK1 background is likely due to a stronger mutant allele. Triple labeling of NPF and TK within the c929 circuit revealed positive but variable co-expression between animals (Figure 6E\u2013G). The majority of tissue samples contained between 1 and 3 triple labeled cells (Figure 6F), with one brain showing as many as 7 cells (Figure 6G). Taken together, these results indicate that TK release from a cluster of 8\u201310 cells within the SEZ is necessary to mediate the response to the gustatory pheromone CH503. In addition, NPF-Gal4 and TK expression overlap in a small population of cells in the SEZ and protocerebrum.\n\n## Discussion\n\nOur work describes a neural circuit that is essential for the detection of a gustatory sex pheromone. Sensory neurons in the male foreleg that house the gustatory receptor Gr68a detect the sex pheromone CH503 and relay information to higher order neural centers via peptidergic neurons in the SEZ. The release of TK from a cluster of 8\u201310 cells found within the c929-labeled SEZ region is essential for mediating the courtship suppression response.\n\n### A dual sensory role for Gr68a in courtship initiation\n\nPrevious characterization of Gr68a indicated that female pheromones are likely to serve as ligands and that Gr68a-impaired males are defective in their courtship of females (Bray and Amrein, 2003). In contrast, our study shows that Gr68a-impaired males courted females at similar levels to control males and that one ligand for the receptor is the male sex pheromone CH503. Several factors can account for these discrepancies. First, the courtship defect of Gr68a-impaired males is only evident in larger-sized behavioral chambers (Ejima and Griffith, 2008). Our study used smaller chambers (\u2205 = 10 mm) compared to the previous study (30 mm; Bray and Amrein, 2003) hence masking the courtship defect. Second, Ejima and Griffith previously showed that Gr68a is needed to relay motion-related cues that stimulate courtship initiation. The dual sensory role of Gr68a is consistent with its expression pattern in males in separate mechanosensory and gustatory neuron populations (Ejima and Griffith, 2008) and afferent projections to the SEZ and AMMC, a relay center for auditory information. Thus, males' inability to detect motion rather than female pheromones may underlie the previously reported Gr68a-related courtship initiation defects. Taken together with the results of our current study, we propose that excitatory mechanosensory information is integrated with inhibitory CH503 detection via Gr68a neurons and both types of sensory cues shape the decision to initiate and sustain courtship. This model is consistent with our findings that activation of Gr68a-neurons using TrpA1 did not promote courtship suppression. Simultaneous activation of both courtship-promoting and suppressing channels likely resulted in an overall null response. Similar dual functioning neurons integrating chemical information with touch have been described in nematodes (Kaplan and Horvitz, 1993), mammalian olfactory receptors (Grosmaitre et al., 2007), and vertebrate nociceptor systems (Besson and Chaouch, 1987; Woolf and Walters, 1991).\n\n### Interaction of CH503 with Gr68a\n\nThe nature of the ligand\u2013receptor interaction is an open question in the absence of data from heterologous expression studies or structure\u2013function analysis. Our observation that CH503 induces courtship inhibition only when detected on female cuticles has several implications for the underlying mechanisms. Potentially, activation of Gr68a receptors found on other parts of the male body (e.g., other regions of the legs or wings) is needed and occurs only when males assume courtship postures. Alternatively, concurrent detection of a co-factor residing on female cuticles might be required. Though our results show that hexane-soluble molecules on the cuticle are not needed, the possibility remains that cuticular peptides or proteins may help transduce pheromone detection. Previous work indicated that a pheromone binding protein, CheB42a, is found in the lumen surrounding Gr68a-neurons and is needed for detection of female pheromones (Park et al., 2006). While CheB42a mutants are still sensitive to CH503, other families of binding proteins may be used to detect female-specific signals that facilitate the activity of CH503. Lastly, tactile contact might be needed together with chemosensory stimulation. Previously, Kohatsu et al. showed that in Drosophila, contact between the male foreleg and female abdomen was necessary to initiate courtship (Kohatsu et al., 2011). Abdomen contact induced transient activity in the transmidline interneurons of the P1 neuron cluster, a designated \u2018command center\u2019 for courtship behavior that integrates input from multiple sensory modalities (Kimura et al., 2008; Kohatsu et al., 2011; von Philipsborn et al., 2011). Information relayed from the upstream targets of Gr68a-expressing neurons could contribute to the silencing of P1 neurons and in this way, lower the probability of sustained courtship behavior. Whether both chemical and tactile cues are mediated by the same receptor or the same cell remains to be determined.\n\n### Relevance of Gr68a neuron physiological responses to mating behavior\n\nThe majority of Gr68a neurons responded to CH503 at a 500 ng dose, an amount consistent with the behaviorally active dose. However, the quantity that is transferred to the female during courtship is approximately 60\u2013100 ng based on semi-quantitative mass spectral analysis of recently mated females. Why is there a discrepancy between the amount that is needed for biological activity and the amount that is transferred? It could be that the presence of cVA, another anti-aphrodisiac, reduces the necessity for a large amount of CH503 or that each molecule synergizes the efficacy of the other. Additionally, recent findings indicate that male D. melanogaster have adapted to become less sensitive to CH503 to circumvent the courtship inhibitory response (Ng et al., 2014). While \u223c80 ng is sufficient to inhibit male courtship in other non-CH503 producing drosophilid species, D. melanogaster males (and males of other species that express CH503) have become less sensitive to the molecule in order to avoid chemical coercion from other males (Ng et al., 2014). Thus, it is not surprising that males are not sensitive to the amount of CH503 transferred to females.\n\n### Gr68a and pickpocket neurons represent two different populations of gustatory pheromone-sensing neurons\n\nThe ion channels ppk23 and ppk25 are expressed in a specialized class of gustatory neurons that were recently shown to be involved in the detection of non-volatile, male- and female-specific cuticular hydrocarbons (Lu et al., 2012; Thistle et al., 2012; Toda et al., 2012; Vijayan et al., 2014). Though we were able to measure CH503-induced physiological activity from ppk23-expressing neurons on the proboscis and the male foreleg, the responses in the foreleg are not likely to be specific to the natural pheromone since behaviorally inert chemical analogs also caused a change in Ca2+ flux. It is unclear as well whether the activity of ppk23 and ppk25-expressing neurons contributes to CH503-mediated courtship avoidance since males continue to respond to the pheromone (albeit more weakly) when expression of either channel is suppressed. Since ppk23 neurons co-localize with fruitless (Thistle et al., 2012; Toda et al., 2012), a master gene that regulates many aspects of courtship behavior (Yamamoto and Koganezawa, 2013), whereas Gr68a neurons do not (Figure 3\u2014figure supplement 6), it is clear that Gr68a and ppk23 expression will also be in distinct populations of neurons. Based on previous observations that ppk23 neurons respond to both attractive and aversive sex pheromones, we speculate that they function as general detectors for a subset of chemosensory cues rather than encode information about valence.\n\n### Comparison of the CH503 gustatory circuit to circuits for other tastants and pheromones\n\nAfferent inputs from Gr-expressing sensory neurons extend to the neuromeres of the TAG and the SEZ in distinct projection patterns (Kwon et al., 2014). Are there distinct loci within the SEZ that differentially process food and pheromonal cues? In the olfactory system of the fly, information from fruit and pheromones appears to segregate into distinct regions of the lateral horn of the protocerebrum (Jefferis et al., 2007) (though some exceptions have been found, see Ronderos et al., 2014 and Grosjean et al., 2011). In the SEZ, the distinctions are less clear. The Gr32a, Gr33a, and Gr39a receptors, which are predicted to detect courtship-inhibitory pheromones, overlap with bitter-sensing neurons in the labellum (Wang et al., 2004; Weiss et al., 2011) and have very similar SEZ projection patterns (Kwon et al., 2014). In addition, no obvious differences in receptor expression at the periphery have been found between males and females. In contrast, Gr68a expression is specialized for male forelegs, appearing in both gustatory and mechanosensory neuron populations. Expression in females is largely restricted to cells located next to chordotonal organs (Ejima and Griffith, 2008). Moreover, the Gr68a neuron projection pattern to the TAG appears unique amongst the gustatory receptors, perhaps reflecting its dual role in mechanosensation and chemical detection (Kwon et al., 2014). Refined analysis of individual afferent processes in the SEZ will allow us to better understand whether the quality and valence of a tastant is encoded at the level of the sensory receptor or transformed within the SEZ and higher order regions. Intriguingly, the AMMC was recently identified as a higher-order processing target for gustatory projection neurons from the SEZ which convey sweet information (Kain and Dahanukar, 2015). Perhaps some AMMC-projecting neurons may exist for bitter or pheromone-specific information.\n\n### Central processing of pheromone detection by peptidergic circuits\n\nThe decision to mate involves considerable investment of resources and risk of predation (Daly, 1978). In this regard, the TK circuitry serves as a point of convergence for multiple, opposing physiological drives which underlie an animal's decision to mate (Figure 7). TK has been implicated in numerous systemic functions including lipid metabolism (Song et al., 2014), stress resistance (Kahsai et al., 2010), and modulation of aggression levels (Asahina et al., 2014). In addition, the mammalian homolog Substance P controls sexual behavior, stress responses, appetite, and aggression (Argiolas and Melis, 2013). The convergence of aggression and sex within a common neural pathway alludes to the possibility that the choice to fight or court is modulated by TK release which is, in part, regulated by external stimuli such as pheromones. Interestingly, the c929-TK cells identified in this study were shown previously to be involved in water conservation in response to desiccation (named ipc-1 and 2a; [Kahsai et al., 2010]), indicating that physiological stress could inform the decision to initiate and sustain courtship via TK signaling.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06914/elife-06914-fig7-v2.jpg)\n\n**Figure 7.:** Gr68a neurons on the foreleg relay chemosensory and mechanosensory signals to the subesophageal zone (SEZ) and AMMC, respectively. Movement detection via Gr68a neurons contributes to the decision to court, possibly through TK signaling. The c929-TK cell cluster within the SEZ transduces information via TK release to higher order centers, potentially including the P1 courtship \u2018command center\u2019. Metabolic stress responses and pheromone detection converge on the c929-TK cluster. Overall levels of TK release from this group of 8\u201310 cells could modulate the behavioral switch between aggression and courtship.\n\nThe NPF peptide itself does not appear to play a direct role. It is likely that the circuit defined by NPF-Gal4 line effectively inhibits the response to CH503 due to expression in non-NPF expressing cells, some of which express TK. It is intriguing to consider that NPF-related circuits were shown recently to be important in transducing pheromone perception from ppk23-positive cells to the central brain (Gendron et al., 2014). Perhaps overlapping TK circuits may function as a second order circuit for ppk23 neurons.\n\nIn summary, the circuit described in this work provides a tractable model in which to study how gustatory pheromone information converges with physiological state to modulate complex social behavior. Identifying the neural substrates that respond to TK release and determining how third order neurons integrate with components for processing olfactory pheromone information will be essential in piecing together a connectome for mating behavior.\n\n## Materials and methods\n\n### Fly stocks\n\nThe following lines were used: Or83b-Gal4 (Larsson et al., 2004); Gr-Gal4 collection including Gr68a-Gal42 (Weiss et al., 2011); Gr68a-Gal41 (Bray and Amrein, 2003); ppk23-Gal4, \u0394ppk23, and \u0394ppk29 (Thistle et al., 2012); Voila1 (Balakireva et al., 1998); NPF-Gal4 and NPFR1-Gal4 (Wu et al., 2003); c929-Gal4 (Hewes et al., 2003); oeno-Gal4 and UAS-hid, stinger (Billeter et al., 2009); tsh-Gal80 (kind gift of Julie Simpson); UAS-GCaMP5G (Akerboom et al., 2012); \u0394TK1, \u0394TK2, and UAS-TK (Asahina et al., 2014); UAS-spGFP and LexAop-spGFP (Gordon and Scott, 2009); TK-Gal41 (#51975), TK-Gal42 (#51974), TK-Gal43 (#51973), TK-LexA (#54080), UAS-mCD8:GFP, UAS-stinger, UAS-syt.eGFP, UAS-reaper, UAS-dORK\u0394C, UAS-DTI, UAS-Shibirets1, UAS-dTrpA1 (Bloomington Stock Center, Indiana, USA); UAS-Gr68a-RNAi (13380, 13381 from VDRC, Vienna, AU) and UAS-TK-RNAi (103662 from VDRC). All other stocks used for screening are described in Table 2.\n\n### Transgenic flies\n\n\u0394Gr68a and \u0394Gr68a-rescue (Gr68aRes) flies were generated by ends-out homologous recombination as previously described (Chen et al., 2011) using the pw25-RMCE-targeting vectors and verified by PCR using primers to the vector sequence (Weng et al., 2009). Loss of the Gr68a sequence was verified by quantitative PCR. To generate Gr68a-Gal4 and UAS-GCaMP5-expressing alleles in the mutant and rescue backgrounds, Gr68a-Gal42 and UAS-GCaMP5 transgenes were re-combined onto flies with the \u0394Gr68a or Gr68aRes background and verified by labeling with UAS-mCD8::GFP.\n\n### Chemical reagents\n\nThe chemical syntheses of (3S,11Z,19Z)-CH503, (3R,11Z,19Z)-CH503, (S)-3-Acetoxy-19-octacosen-1-ol and (R)-3-Acetoxy-11, 19-octacosadiyn-1-ol have previously been described (Mori et al., 2010; Shikichi et al., 2013). All other solvents and reagents were obtained from Sigma\u2013Aldrich (St. Louis, MO, USA).\n\n### Courtship assay\n\nMales (5\u201310 days old) were isolated at the pupal stage and raised at 23\u00b0C with 60% humidity in 10 ml polypropylene vials containing 2 ml of standard cornmeal media. A decapitated virgin female target and a 5\u201310 days old socially na\u00efve experimental male were placed in a courtship chamber (\u2205: 10 mm, height: 3 mm) and digitally recorded for 30 min. The female courtship targets were perfumed with CH503 or evaporated solvent (control) as previously described (Yew et al., 2009). Briefly, six female flies were placed in 1.5-ml glass vials containing 0.25, 0.5, 1, 2, or 4 \u03bcg of (R, Z, Z)-CH503 and vortexed three times with 20 s rest intervals. Approximately 25% of the vial contents are transferred to the flies using this method (Billeter et al., 2009). A single fly from each vial was tested using direct analysis in real time mass spectrometry (DART MS; [Yew et al., 2008, 2009]) to check the abundance of the CH503 signal relative to other cuticular hydrocarbons.\n\nFor the tests of CH503 volatility, a 2-layer courtship chamber was constructed with the top layer containing a male and an unperfumed decapitated virgin female and the bottom layer containing filter paper overlaid with 64 \u03bcg of (R, Z, Z)-CH503. To prepare female fly extract, 1 or 2 flies were submerged in hexane for 10 min at room temperature, after which the solvent was removed and added to the filter paper.\n\nThe courting pairs % refers to the number of trials in which courtship was observed for longer than one minute divided by the total number of trials. Behavioral assays for perfumed and solvent-perfumed animals were performed in parallel. The courting pairs % was compared between pheromone and solvent-perfumed flies bearing the identical genetic background. Statistical analysis was performed using a Fisher's exact probability test with Yates correction (VassarStats, www.vassarstats.net). Courtship vigor and latency were calculated for the 30 min observation period and compared using a one-way ANOVA with a Tukey's post-hoc test (SPSS Statistics, IBM, USA).\n\n### Screen for receptor and neural circuits associated with CH503 detection\n\nBehavioral screens were performed using female targets perfumed with 83 ng/fly of (S, Z, Z)-CH503 or 333 ng/fly dose of (R, Z, Z)-CH503. Both doses were previously established as the minimum necessary for each stereoisomer to elicit significant courtship suppression (Mori et al., 2010). Transgenic flies were generated using the Gal4\u2013UAS system to drive expression of toxin or pro-apoptotic transgenes (UAS-Reaper, UAS-DTI, and UAS-hid, stinger) or transgenes that interfere with synaptic transmission (UAS-Shibirets1 and UAS\u2013dORK\u0394C). For Gr-Gal4 lines, UAS-Reaper was used since UAS-DTI expression led to low basal courtship activity. For central circuit screening, UAS-Shibirets1 was used to avoid developmental lethality. For Gal4 lines in which UAS-Shibirets1 expression led to paralysis, seizures, or low courtship activity, UAS\u2013dORK\u0394C was used as a milder form of neural inhibition. Knockdown of Gr68a expression was performed using an RNAi line since the use of other transgenes resulted in larval lethality. Manipulation of neurotransmitter levels was performed using RNAi to target the respective transporters, receptors, or biosynthetic enzymes. See Table 2 for a complete list of Gal4 and UAS-RNAi lines used for screening.\n\nFor experiments involving temperature-sensitive transgenes (UAS-Shibirets1 and UAS-dTrpA1), flies were placed in a humidity-controlled incubator at 29\u00b0C for 2 hr prior to the assay to activate the transgene. Courtship chambers were placed on a hotplate pre-warmed to 29\u00b0C, during which time the flies were introduced into each chamber. The chamber was placed in an incubator at 29\u00b0C and the temperature was monitored throughout the assay. Control experiments were carried out in parallel at 23\u00b0C (for assays using UAS-Shibirets1) or 19\u00b0C (for assays using UAS-dTrpA1).\n\n### Proboscis extension reflex assay\n\nThe proboscis extension reflex (PER) assay was performed as previously described (Lacaille et al., 2007; Shiraiwa and Carlson, 2007). Virgin 1-day-old male and female flies were starved for 36 hr in a vial containing tissue soaked with water. Flies were mounted with nail polish on the dorsal side onto glass slides and placed in a humidified Petri dish for at least 2 hr prior to the assay. Paper wicks coated in 20 \u03bcl of a test solution were used for bilateral stimulation of the tarsi of mounted flies. One leg was touched with a paper wick soaked in 4% sucrose (in distilled H2O, wt/vol) while the second leg was simultaneously stimulated with one of the following solutions: (i) 4% sucrose, (ii) 25\u2013100 \u03bcg/ml (R, Z, Z)-CH503 in hexane, (iii) 0.25\u201325 \u03bcg/ml (S, Z, Z)-CH503 in hexane, and (iv) 100 mM caffeine in dH2O. Each substance was tested three times with a 2 min rest between stimulations. A response was counted as positive when the fly extended its proboscis for at least 2 of 3 stimulations. The response to each substance was compared to the response induced by 4% sucrose alone using a Fisher's exact probability test. The assays were carried out at the same time each day, and the experimenter was blind to the identity and concentration of stimulants tested in the assay.\n\n### Immunohistochemistry\n\nAdult Drosophila brains and thoracic ganglia from 6- to 10-day-old virgin flies were dissected in phosphate buffered-saline with 0.3% Triton X-100, pH 7.2 (PBST) and fixed in ice-cold 4% paraformaldehyde for 25 min. Samples were washed three times, for 15 min each in PBST, treated in a blocking solution containing PBST and 10% normal goal serum for 30 min at room temperature, and incubated in primary antibody solution. After three washes in PBST, the tissues were incubated overnight at 4\u00b0C in secondary antibody solution. Following three washes in PBST, the brains were mounted on glass slides with Vectashield mounting medium (Vector Laboratories, Burlingame, CA). Images were acquired on a Zeiss LSM 510 Meta inverted microscope equipped with 488, 543, and 633 nm lasers. For all tissues, 132 frames with a z step size of 0.46 \u03bcm were acquired. The following secondary antibodies used were anti-chicken 488 (1:500; Jackson ImmunoResearch Laboratories, West Grove, USA), anti-rabbit Cy3 (1:500; Jackson ImmunoResearch Laboratories), anti-guinea pig Cy3 (1:500; Jackson ImmunoResearch Laboratories), anti-mouse 633 (1:500; Jackson ImmunoResearch Laboratories). Image analysis was done using ImageJ software (NIH). The following primary antibodies and dilutions were used: chicken anti-GFP (1:1000; Abcam, Cambridge, UK), mouse anti-nc82a (1:50; Developmental Studies Hybridoma Bank, Iowa City, USA), mouse anti-GFP (1:1000, for GRASP; A11120, Life Technologies, NY, USA), mouse anti-GFP (1:100, for GRASP; G6539, Sigma\u2013Aldrich), rabbit anti-NPF (1:2000; kind gift from P Shen; [Wu et al., 2003]), and guinea pig anti-TK (1:2000; kind gift from D Anderson; [Asahina et al., 2014]). The Pearson's coefficient, a measure of co-localization, was calculated using Imaris software (Bitplane AG, Zurich, Switzerland).\n\n### Quantitative PCR analysis\n\nFor each biological replicate, RNA from 200 flash-frozen fly forelegs (for Gr68a experiments) or 20 flash-frozen heads (for NPF experiments) was extracted using TRIzol Reagent (Ambion, Austin, TX, USA) according to manufacturer's instructions. DNAse treatment was performed using TURBO DNA-free kit (Ambion) and cDNA was synthesized with SuperScript III (Invitrogen, Waltham, MA, USA) with an oligo-dT primer. Quantitative PCR was performed using CFX Connect Real-Time PCR System (Bio-Rad, Hercules, CA, USA) and SYBR Fast ABI Prism qPCR kit (Kapa Biosystems, Wilmington, MA, USA). See Table 3, for primer sequences and annealing temperatures.\n\n**Table 3.**\n Primers used for quantitative and semi-quantitative (semi-Q) PCR experiments\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Forward primer (5\u2032\u20133\u2032)</th>\n      <th>Reverse primer (5\u2032\u20133\u2032)</th>\n      <th>Annealing temperature (\u00b0C)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gr68a (qPCR)</td>\n      <td>CCAAGGTGATACCGAGGAGGAGA</td>\n      <td>TCGTGAAGAGTGCGAAAGTG</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>Gr68a (semi-Q PCR)</td>\n      <td>CCAAGGTGATACCGAGGAGA</td>\n      <td>CATTGGCCAGCAGATACTCA</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <td>CG6024</td>\n      <td>CCAAGGTGATACCGAGGAGA</td>\n      <td>TCATGAAGAGTGCGAAAGTG</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>NPF</td>\n      <td>GCGAAAGAACGATGTCAACAC</td>\n      <td>TGTTGTCCATCTCGTGATTCC</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>rp49</td>\n      <td>CCAAGGACTTCATCCGCCACC</td>\n      <td>GCGGGTGCGCTTGTTCGATCC</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <td>RMCE vector</td>\n      <td>GTACTGACGGACACACCGAAG</td>\n      <td>GGATCAACTACCGCCACCT</td>\n      <td>52</td>\n    </tr>\n  </tbody>\n</table>\n\n### In vivo Ca2+ imaging\n\nIn vivo GCaMP imaging experiments were performed on 14- to 28-day-old adults. A live fly was immobilized on a 0.17-mm coverslip with nail polish (Sally Hansen, USA). 10 \u00b5l of PBST were placed onto the tarsal segments using a pipette, after which three pre-stimulation images were acquired for a total duration of 2.4 s. For each measurement, 117 post stimulation images were acquired for a total duration of 93.6 s immediately after the addition of 10 \u00b5l of the natural stereoisomer of CH503, (R, Z, Z)-CH503 (final concentrations of 50 or 500 ng in PBST). Identical conditions were used for measurements using (S, Z, Z)-CH503. No reflux flow is used in the sample preparation. Control stimulants consisted of 10 \u00b5l of solvent or an analog of CH503: (S)-3-Acetoxy-19-octacosen-1-ol (50 ng, final concentration) or (R)-3-Acetoxy-11, 19-octacosadiyn-1-ol (500 ng, final concentration). The analogs were previously established to be behaviorally inert (Shikichi et al., 2013). Images were acquired on a spinning disk confocal microscope (Ti-E; Nikon Instruments, Melville, USA) equipped with a CSU-X1 scan head (Yokogawa Electric, Tokyo, JA) and either a digital sCMOS camera (ORCA-Flash4.0; Hamamatsu Photonics, Shizuoka, JA) or a cooled CCD camera (CoolSNAP HQ2; Photometrics, Tucson, USA) using a 60\u00d7/1.4 N.A. oil objective lens. A 491 nm laser was used to excite the GCaMP5 reporter. Four Z-slices with a thickness of 0.5 \u00b5m each were acquired every 800 ms, for a total of 120 frames.\n\nTo calculate the maximum change in fluorescence signal (\u2206F/F), the signal density over the whole cell body was divided by the signal from an equivalent volume of an adjacent region (background). Confocal Z-stacks were analyzed using ImageJ (Schneider et al., 2012). For Gr68a-Gal4-labeled neurons, \u2206F/F was calculated from single neurons. For ppk23-Gal4-labeled neurons on the foreleg, \u2206F/F was calculated from the total signal from either two adjacent cell bodies or the base of the axon projections. Due to their close proximity to each other, some individual cell bodies could not be differentiated. In some experiments, the maximum \u2206F/F occurred in projections though it could not be discerned from which cell body the projection originated. For proboscis measurements, \u2206F/F represents the averaged values from 14 cells (for CH503 stimulation) or 20 cells (for PBST stimulation), measured from 5\u20136 flies. For all measurements, the averaged, normalized response to the stimulant vs the averaged, normalized response to control solvent was compared using a Student's t-test for equal or unequal variances (Vassar Stats). Comparison of variance was determined with an F-Test (Vassar Stats). Statistical power analysis was performed using G*Power 3 (Faul et al., 2007).\n",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "2bcd8f43-2d09-495a-bb61-1a0f8043da3d",
+      "submission_id": "9f8bc67b-51df-4fe2-8c76-62d16f875aaa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06914.034](https://doi.org/10.7554/eLife.06914.034)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe neuropeptide tachykinin is essential for pheromone detection in a gustatory neural circuit\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Leslie Griffith (Reviewing editor); Aki Ejima (peer reviewer). A further reviewer remains anonymous.\n\nThe Reviewing editor and the other two reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper describes a receptor and a neuronal circuit for the detection of the male contact pheromone CH503 and provides an important advance for our understanding of the influence of gustatory pheromones on courtship behavior. For the most part the experiments are clear and the data are convincing. Several issues need to be addressed before this paper is suitable for publication.\n\n1) Calcium imaging data. N is too low to give the reader any confidence that the conclusions drawn are robust. Simply looking at the high variability in these measurements makes it clear that N must be quite a bit higher to have the statistical power to make a conclusion. For instance, the data on the female foreleg in 3D look qualitatively similar to the male foreleg. The lack of statistical significance is likely due to low and N and it is disingenuous to suggest that this means females \u201cdo not detect\u201d CH503. They clearly have responses that are equal in magnitude to males in T2. N has to be substantially increased and an a priori power test should be done to determine what N needs to be. Additionally, the doses/sources of pheromone used on males and females absolutely must be the same. It is completely inappropriate to conclude females do not respond if you do not use an effective dose of CH503.\n\n2) RNAi experiments. There are a lot of RNAi lines used and their effectiveness needs to be demonstrated or references to studies that validate them provided. This is especially crucial with regard to negative results such as those shown for NPF-RNAi. Concluding that this peptide is not required based on a line that is not shown to reduce NPF immunoreactivity is not a very strong argument without the appropriate control experiment. An additional independent NPF-RNAi would also strengthen the case.\n\n3) Circuit. The actual nature of the circuit is not clear. The authors posit a direct connection between Gr68a neurons and NFP-positive cells. Are these also TK-positive cells? Are there synaptic connections between Gr68a neurons and TK neurons? Are there functional connections? GRASP and/or functional imaging or even some better immunohistochemistry with anti-TK to show where those cells are with respect to the Gr68a terminals would be helpful along with a more precise and clear explanation of the model.\n\n4) In vivo relevance of dosages of CH503.There needs to be at least a discussion of the levels of CH503 present on females during normal courtship and how this relates to dosages used in this study.\n\n5) Exact nature of the CH503/Gr68a interaction. The behavioral and genetic results are consistent with a direct receptor/ligand interaction, but without heterologous expression of Gr68a and demonstration of direct effects of CH503, it is still possible that the interaction is more complex (especially in light of the requirement for it to be presented on a female to be effective). The authors need to acknowledge the potential complexity of the interaction if they cannot provide this type of evidence.\n",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b536180-ea6a-47b7-8b5d-4d521fa60681",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C1",
+      "claim": "CH503 is the anti-aphrodisiac pheromone (3R,11Z,19Z)-3-acetoxy-11,19-octacosadien-1-ol.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a male-specific gustatory circuit in Drosophila that underlies the detection of the anti-aphrodisiac pheromone (3R,11Z,19Z)-3-acetoxy-11,19-octacosadien-1-ol (CH503).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines CH503 as (3R,11Z,19Z)-3-acetoxy-11,19-octacosadien-1-ol and identifies it as an anti-aphrodisiac pheromone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "9bf841ea-e942-462f-94ab-080e251636e6",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C2",
+      "claim": "Gr68a-expressing neurons on the forelegs of male flies exhibit a sexually dimorphic physiological response to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Using behavioral analysis, genetic manipulation, and live calcium imaging, we show that Gr68a-expressing neurons on the forelegs of male flies exhibit a sexually dimorphic physiological response to the pheromone and relay information to the central brain via peptidergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that behavioral analysis, genetic manipulation, and live calcium imaging were used to demonstrate this sexually dimorphic response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "55506887-4b37-45b1-b416-393343e7a1f0",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C3",
+      "claim": "Gr68a-expressing neurons relay information to the central brain via peptidergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using behavioral analysis, genetic manipulation, and live calcium imaging, we show that Gr68a-expressing neurons on the forelegs of male flies exhibit a sexually dimorphic physiological response to the pheromone and relay information to the central brain via peptidergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that information is relayed to the central brain via peptidergic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "341f0bb6-4f3d-488b-bd96-a37f250c2283",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C4",
+      "claim": "The release of tachykinin from 8 to 10 cells within the subesophageal zone is required for CH503-triggered courtship suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The release of tachykinin from 8 to 10 cells within the subesophageal zone is required for the pheromone-triggered courtship suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that tachykinin release from 8-10 cells in the SEZ is required for courtship suppression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "eb865887-db48-48a8-9fd3-37e6e397cadd",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C5",
+      "claim": "CH503 is transferred from males to females during mating.",
+      "claim_type": "EXPLICIT",
+      "source": "CH503 is transferred from males to females during mating and inhibits courtship from other males (Yew et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Yew et al., 2009 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "3eb3ee3d-2475-4c3a-b8d2-920ac946f070",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C6",
+      "claim": "CH503 inhibits courtship from other males after being transferred to females.",
+      "claim_type": "EXPLICIT",
+      "source": "CH503 is transferred from males to females during mating and inhibits courtship from other males (Yew et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Yew et al., 2009 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "ebdd2a5a-3ce4-4ab8-8545-55b7da76860b",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C7",
+      "claim": "CH503 functions as a potent suppressor of male courtship behavior in other drosophilids.",
+      "claim_type": "EXPLICIT",
+      "source": "The pheromone also functions as a potent suppressor of male courtship behavior in other drosophilids (Ng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Ng et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "d02243ba-6f7a-430b-a2b6-c5002717bf1d",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C8",
+      "claim": "A dose of 167 ng/fly of CH503 was sufficient to suppress courtship in approximately 50% of behavioral trials.",
+      "claim_type": "EXPLICIT",
+      "source": "A dose of 167 ng/fly was sufficient to suppress courtship in approximately 50% of the behavioral trials (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data showing dose-dependent courtship suppression, with Figure 1B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "776c92f6-db0d-4caa-81da-4ea9e77b8c31",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C9",
+      "claim": "The latency to courtship initiation was similar across all CH503 doses, ranging from 350 to 400 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The latency to courtship initiation (as measured by the first instance of wing vibration) was similar across all doses, ranging from 350 to 400 s (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data on latency to courtship initiation, with Figure 1C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "56455dce-fecf-447c-a3c3-4116aa561a01",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C10",
+      "claim": "CH503 significantly suppressed overall courtship vigor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the overall courtship vigor was significantly suppressed by the pheromone (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data showing suppression of courtship vigor, with Figure 1D providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "63ddfc89-b4a1-45dc-b887-d306500fca0b",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C11",
+      "claim": "CH503 inhibits later stages of the courtship sequence and sustained courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings indicate that CH503 inhibits later stages of the courtship sequence and sustained courtship behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on latency and courtship vigor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "44ac2e7a-c6c3-4266-a142-297869cc4fe5",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C12",
+      "claim": "CH503 has low volatility.",
+      "claim_type": "EXPLICIT",
+      "source": "CH503 has low volatility and inhibits courtship only when detected on female cuticles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data showing that CH503 does not inhibit courtship when separated from females, with Figure 1E providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "f868ce00-a32f-42a7-8fe2-009873d72116",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C13",
+      "claim": "CH503 inhibits courtship only when detected on female cuticles.",
+      "claim_type": "EXPLICIT",
+      "source": "CH503 has low volatility and inhibits courtship only when detected on female cuticles. The absence of female cuticular hydrocarbons in oenocyte-less (oe-) flies also did not affect CH503-induced courtship suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data showing that CH503 must be on female cuticles to inhibit courtship, with Figure 1E providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a843d1d2-0145-4215-9d97-677482c8a4ba",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C14",
+      "claim": "The absence of female cuticular hydrocarbons in oenocyte-less flies did not affect CH503-induced courtship suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of female cuticular hydrocarbons in oenocyte-less (oe-) flies also did not affect CH503-induced courtship suppression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using oenocyte-less flies, with Figure 1E providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "014cb463-8891-4fe6-be0f-5665b55926eb",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C15",
+      "claim": "Female-specific pheromones synthesized in the oenocytes do not mediate the detection of CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these results indicate that female-specific pheromones synthesized in the oenocytes do not mediate the detection of CH503.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data using oenocyte-less flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "880132e1-1633-4c7a-a5e0-a3d31a8794ae",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C16",
+      "claim": "CH503 is effective as an anti-aphrodisiac only when placed on the cuticular surface of females.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CH503 is effective as an anti-aphrodisiac only when placed on the cuticular surface of females, indicating that sensory cues other than cuticular lipids are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on CH503 placement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "823a3360-2631-421f-b9c7-ba2db1cc8045",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C17",
+      "claim": "Sensory cues other than cuticular lipids are required for CH503 to be effective.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CH503 is effective as an anti-aphrodisiac only when placed on the cuticular surface of females, indicating that sensory cues other than cuticular lipids are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "b7ff58cd-41fd-41a3-91a9-c7be24d0b84f",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C18",
+      "claim": "Exposure of male forelegs to 0.5\u20132.0 \u00b5g of CH503 together with 4% sucrose reduced the frequency of the proboscis extension reflex (PER).",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of the forelegs to 0.5\u20132.0 \u00b5g of CH503 together with 4% sucrose reduced the frequency of the PER (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data from PER assays, with Figure 2A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "47825cc7-c086-456a-bb99-da73c7fcd782",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C19",
+      "claim": "Caffeine, a bitter stimulus, suppressed the PER in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, caffeine, a bitter stimulus, also suppressed the PER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports experimental data from PER assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "9c2f02a2-0823-4bd0-9c66-1385ad18d743",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C20",
+      "claim": "Females did not exhibit a change in the PER when exposed to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, females did not exhibit a change in the PER when exposed to CH503, indicating that either the pheromone was not detected or that it does not carry a negative valence for females (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data from PER assays with females, with Figure 2\u2014figure supplement 1 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "445aeb01-e7d6-4f59-8be0-b0ab1d07e06e",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C21",
+      "claim": "Or83b-defective flies still suppressed courtship in the presence of CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Or83b-defective flies still suppressed courtship in the presence of CH503 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using Or83b mutants, with Figure 2B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "3d947b48-b688-4328-abce-5f2488f7f7bd",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C22",
+      "claim": "Voila1 mutants, which exhibit gustatory defects, continued to court CH503-perfumed females.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Voila1 mutants, which exhibit gustatory defects (Balakireva et al., 1998), continued to court CH503-perfumed females (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using Voila1 mutants, with Figure 2B providing visual evidence and citation to Balakireva et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a46e9189-030f-49e1-b3a3-457c2823a57b",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C23",
+      "claim": "CH503 is perceived as an aversive tastant by males and not females.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that CH503 is perceived as an aversive tastant by males and not females and is detected by gustatory receptors on the foreleg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PER assay data and mutant studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "042fd726-81ca-4b19-a17f-cd46d05788c3",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C24",
+      "claim": "CH503 is detected by gustatory receptors on the foreleg.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that CH503 is perceived as an aversive tastant by males and not females and is detected by gustatory receptors on the foreleg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PER assay data and mutant studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "99fa9f79-b192-4023-9e67-0049f9d4cc68",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C25",
+      "claim": "Males in which the Gr68a-encoding gene was transcriptionally silenced continued to court females in the presence of (S, Z, Z)-CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "However, males in which the Gr68a-encoding gene was transcriptionally silenced continued to court females in the presence of (S, Z, Z)-CH503 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using Gr68a RNAi, with Figure 2B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "02d1742c-4191-4050-a8a0-fe8d8f586551",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C26",
+      "claim": "\u0394Gr68a mutants displayed robust courtship behavior in the presence of CH503-perfumed females.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0394Gr68 mutants displayed robust courtship behavior in the presence of CH503-perfumed females (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using \u0394Gr68a mutants, with Figure 2C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "88a5e220-037d-4ed9-ac1d-eb387bb9f149",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C27",
+      "claim": "The sensitivity to CH503 was restored upon re-introduction of the Gr68a-encoding gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the sensitivity to CH503 was restored upon re-introduction of the Gr68a-encoding gene (Gr68aRes; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using Gr68a rescue lines, with Figure 2C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a7ac7eb8-3c99-426a-aa3c-14a297535631",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C28",
+      "claim": "CG6024 expression was not significantly changed in either mutant or rescue lines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CG6024 expression was not significantly changed in either mutant or rescue lines (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data showing no change in CG6024 expression, with Figure 2\u2014figure supplement 3 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "45a37180-9a2a-4d1b-9d8b-5a10152d7998",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C29",
+      "claim": "Activation of Gr68a neurons using dTrpA1 resulted in a slight but non-significant suppression in courtship behavior at 29\u00b0C compared with 19\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of unperfumed female targets, a slight but non-significant suppression in courtship behavior was observed at the activation temperature of 29\u00b0C compared with the inactive condition at 19\u00b0C (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using dTrpA1, with Figure 2C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "20c22f7b-a8a5-4dbf-850b-78fbf7f2ee13",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C30",
+      "claim": "Activation of Gr68a neurons is not sufficient to suppress courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activation of Gr68a neurons is not sufficient to suppress courtship, possibly due to conflicting signals resulting from mutual activation of mechanosensory and chemosensory neurons (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the dTrpA1 experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "10cd9095-f7d4-43f8-9da9-9c6428667fb4",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C31",
+      "claim": "A sexually dimorphic GFP expression pattern was observed in the chemosensory neurons of gustatory bristles found in male forelegs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Bray and Amrein, 2003; Ejima and Griffith, 2008; Ling et al., 2014), a sexually dimorphic GFP expression pattern was observed in the chemosensory neurons of gustatory bristles found in male forelegs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports imaging data showing sexually dimorphic expression, with Figure 3A providing visual evidence and citations to previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "2a6c5b97-3eed-4932-afb1-a8caf2e5793a",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C32",
+      "claim": "Each of the male tarsal segments exhibited more labeled neurons than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the male tarsal segments exhibited more labeled neurons than females (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports cell counting data, with Table 1 providing quantitative evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "cff73527-0551-404f-8aee-925ef2e974aa",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C33",
+      "claim": "Labeled non-neuronal cells were observed only in male legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeled non-neuronal cells (distinguished by larger, irregularly shaped membranes lacking projections) were also observed but only in male legs (Figure 3A; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports imaging and cell counting data, with Figure 3A and Table 1 providing visual and quantitative evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "231911f5-6bd4-4f38-a791-3c7859e11767",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C34",
+      "claim": "Knockdown of Gr68a expression using the pan-neuronal elav-Gal4 driver resulted in a loss of sensitivity to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, knockdown of Gr68a expression using the pan-neuronal elav-Gal4 driver resulted in a loss of sensitivity to CH503 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental data using elav-Gal4 to drive Gr68a RNAi, with Figure 2B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "87164b07-6071-486a-a0cc-93a26fbbfbf5",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C35",
+      "claim": "Neuronally expressed Gr68a receptors are important for CH503 detection.",
+      "claim_type": "EXPLICIT",
+      "source": "The results recapitulate the phenotype observed with Gr68a-Gal4 and indicate that neuronally expressed receptors are important for CH503 detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the elav-Gal4 experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "c0838094-2936-478a-a862-5bd83b2b5af8",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C36",
+      "claim": "At a dose of 500 ng of (R, Z, Z)-CH503, 6 of 9 cells in segments T2\u20134 showed significant responses compared to the control solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "At this dose, 6 of 9 cells in segments T2\u20134 showed significant responses compared to the control solvent, ranging from \u0394F/F 0.34 \u00b1 0.05 to 1.39 \u00b1 0.46 (mean \u00b1 SEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports calcium imaging data showing cellular responses to CH503.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "129d1ad5-5dbd-4f00-b131-844f1f5de7ad",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C37",
+      "claim": "At a dose of 50 ng, only 1 cell (T4, Cell a) showed a significant signal increase, with an average \u0394F/F of 1.52 \u00b1 0.37.",
+      "claim_type": "EXPLICIT",
+      "source": "At a dose of 50 ng, only 1 cell (T4, Cell a) showed a significant signal increase, with an average \u0394F/F of 1.52 \u00b1 0.37.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports calcium imaging data showing cellular responses to CH503.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "2cdd6174-ede7-4dd2-a95c-c85e393cffdb",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C38",
+      "claim": "Gr68a-neurons exhibited two general patterns of responses: a phasic response and a tonic response.",
+      "claim_type": "EXPLICIT",
+      "source": "Gr68-neurons exhibited two general patterns of responses: more commonly, a phasic response is observed where maximum fluorescent intensity occurred immediately after the addition of the pheromone and was followed by a gradual decline to baseline levels after 6 s. A tonic response is also seen where fluorescence gradually increased and peaked after approximately 120 s (Figure 3C; Figure 3\u2014figure supplement 1; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports calcium imaging data showing different response patterns, with Figure 3C, Figure 3\u2014figure supplement 1, and Video 1 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "8f05d451-3db2-4fee-abb5-b20c86b03129",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C39",
+      "claim": "Stimulation of Gr68a-expressing neurons with a synthetic CH503 analog containing two triple bonds did not elicit a change in fluorescent signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of Gr68a-expressing neurons with a synthetic CH503 analog containing two triple bonds did not elicit a change in fluorescent signal (Figure 3B), consistent with previous observations that the analog is behaviorally inert (Shikichi et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports calcium imaging data using a CH503 analog, with Figure 3B providing visual evidence and citation to Shikichi et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "50362dd3-a4cd-4cb5-bc9c-ecd0d87c4f0c",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C40",
+      "claim": "CH503 failed to evoke a physiological response when Gr68a expression was either reduced using RNAi or eliminated in \u0394Gr68a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CH503 failed to evoke a physiological response when Gr68a expression was either reduced using RNAi or eliminated in \u0394Gr68a mutants (Figure 3B; Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports calcium imaging data using Gr68a RNAi and mutants, with Figure 3B and Figure 3\u2014figure supplement 3 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "db2d8ebf-2d63-42f1-be65-d7088ecc7770",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C41",
+      "claim": "In females, the responses to CH503 from the forelegs were indistinguishable from that of the solvent control.",
+      "claim_type": "EXPLICIT",
+      "source": "In females, the responses to the pheromone from the forelegs were indistinguishable from that of the solvent control (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports calcium imaging data from female flies, with Figure 3D providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "8b3de259-1b28-4cf2-b35f-0803049ca806",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C42",
+      "claim": "The double-bonds in the carbon backbone of the CH503 molecule are an essential structural feature for pheromone activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, direct measurement of neural response in Gr68a-expressing neurons reveals robust functional activation by CH503 in males only. Moreover, the double-bonds in the carbon backbone of the CH503 molecule are an essential structural feature for pheromone activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the calcium imaging data using CH503 analogs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "287d3712-e8d4-4b92-9647-9c18d80470de",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C43",
+      "claim": "In the male proboscis, CH503 activated approximately 8 of 14 ppk23 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the male proboscis, CH503 activated approximately 8 of 14 neurons while none of the female ppk23 neurons responded (Figure 3\u2014figure supplement 4; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports calcium imaging data from ppk23 neurons, with Figure 3\u2014figure supplement 4 and Video 2 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "b4046178-8ab7-4889-85a1-71e05ae3b5b6",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C44",
+      "claim": "None of the female ppk23 neurons responded to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "In the male proboscis, CH503 activated approximately 8 of 14 neurons while none of the female ppk23 neurons responded (Figure 3\u2014figure supplement 4; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports calcium imaging data from ppk23 neurons, with Figure 3\u2014figure supplement 4 and Video 2 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "79f50eb0-b4f0-40b4-af67-67a43790f932",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C45",
+      "claim": "Males with ppk23 expression silenced using RNAi continued to respond to CH503 though the courtship suppression effect is partially mitigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Males continued to respond to CH503 though the courtship suppression effect is partially mitigated compared to other gustatory receptors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using ppk23 RNAi, with Figure 2B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a08a19da-6d2a-4d7c-9566-16429f064fc3",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C46",
+      "claim": "Knockdown of ppk25 resulted in a partially reduced sensitivity to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of a second member of the ppk family, ppk25, also resulted in a partially reduced sensitivity to CH503 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using ppk25 RNAi, with Figure 2B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "2317dcb7-d412-4fe6-a77d-bfdf851fe38e",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C47",
+      "claim": "The responses of ppk-23/25-expressing neurons by themselves are not the primary sensory pathway and do not appear to be necessary for courtship suppression to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "While these results do not eliminate the possibility that ppk-23/25-expressing neurons contribute to CH503 detection, both the physiological and behavioral data indicate that the responses of the cells by themselves are not the primary sensory pathway and do not appear to be necessary for courtship suppression to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ppk23/25 behavioral and physiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "e0a3b372-80fe-41ea-96f6-7013b937fd6b",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C48",
+      "claim": "Gr68a-Gal4-labeled neurons send axonal projections to each of the six thoracico-abdominal (TAG) neuromeres and extend into the SEZ and the AMMC.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gr68a-Gal4-labeled neurons send axonal projections to each of the six thoracico-abdominal (TAG) neuromeres and extend into the SEZ and the antennal mechanosensory and motor center (AMMC) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports imaging data showing projection patterns, with Figure 4A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a2689408-b98f-4538-ba80-615fd5cd4dc7",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C49",
+      "claim": "Suppression of neural activity using the c929-Gal4 line resulted in a marked decrease in sensitivity to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, suppression of neural activity using the c929-Gal4 line resulted in a marked decrease in sensitivity to CH503 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using c929-Gal4, with Figure 4B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "eed8f391-bafb-4b09-b26f-7b6246126709",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C50",
+      "claim": "c929-labeled processes in the thoracic ganglia do not appear to contribute to the behavioral response to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "We partially limited c929-Gal4 expression by suppressing Gal4 activity in the ventral nerve cord with the repressor tsh-Gal80 and observed that sensitivity to CH503 was not restored (Figure 4B; Figure 4\u2014figure supplement 2). Hence, c929-labeled processes in the thoracic ganglia do not appear to contribute to the behavioral response to CH503.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using tsh-Gal80 to restrict c929-Gal4 expression, with Figure 4B and Figure 4\u2014figure supplement 2 providing visual evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "f3ea6461-c698-4164-b51e-d5a6a0a68674",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C51",
+      "claim": "Genetic ablation or suppression of neural activity in neuropeptide F (NPF) circuits reduced sensitivity to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic ablation or suppression of neural activity in two neuropeptidergic circuits, neuropeptide F (NPF) and tachykinin (TK), reduced sensitivity to CH503 (Figure 4C; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using NPF circuit manipulations, with Figure 4C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "bd4e439d-84c0-4238-a01f-ac8a509fe2ee",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C52",
+      "claim": "Genetic ablation or suppression of neural activity in tachykinin (TK) circuits reduced sensitivity to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genetic ablation or suppression of neural activity in two neuropeptidergic circuits, neuropeptide F (NPF) and tachykinin (TK), reduced sensitivity to CH503 (Figure 4C; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK circuit manipulations, with Figure 5A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "82dae284-30c7-4bbb-a010-12eea4fc8649",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C53",
+      "claim": "Gr68a synaptic terminals and NPF-positive processes are closely apposed to each other in the SEZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical analysis revealed that Gr68a synaptic terminals and NPF-positive processes are closely apposed to each other in the SEZ, implicating NPF-expressing circuits as a putative second order relay to the central brain (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports imaging data showing anatomical proximity, with Figure 4D providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "9203e62a-57ea-4a44-b466-f0861c268a0c",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C54",
+      "claim": "Silencing NPF expression using c929-Gal4 or the pan-neural driver elav-Gal4 was ineffective at changing the male inhibitory courtship response.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, silencing NPF expression using c929-Gal4 or the pan-neural driver elav-Gal4 (which caused a 5.3-fold decrease in transcript level, Figure 4\u2014figure supplement 4) was ineffective at changing the male inhibitory courtship response (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using NPF RNAi, with Figure 4C and Figure 4\u2014figure supplement 4 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "edf5d244-72a9-4ea6-8e28-91af2d47616a",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C55",
+      "claim": "The NPF peptide itself is not likely to be essential for mediating CH503-related behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the NPF peptide itself is not likely to be essential for mediating CH503-related behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the NPF RNAi behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "abd6c874-6bc4-4664-8fba-a4fa6e05e31f",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C56",
+      "claim": "Silencing of the neuronal circuits associated with the NPF receptor, NPFR, did not change the response to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, silencing of the neuronal circuits associated with the NPF receptor, NPFR, also did not change the response to CH503 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using NPFR circuit manipulations, with Figure 4\u2014figure supplement 1 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "ba818176-a9cd-443b-92a0-066f6a6cf374",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C57",
+      "claim": "Genetic excision of the TK gene caused a striking loss of sensitivity to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic excision of the TK gene also caused a striking loss of sensitivity to CH503 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK deletion mutants, with Figure 5A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "fdd6e3d3-be5a-4aae-aa7f-092d1aa36b1f",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C58",
+      "claim": "The phenotype of TK mutants was rescued upon ectopic expression of TK in the mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype was rescued upon ectopic expression of TK in the mutant background (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK rescue lines, with Figure 5A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "92feb642-90a9-46cf-b304-4941c3a75080",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C59",
+      "claim": "The product of the TK gene is necessary for mediating the behavioral actions induced by CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to our findings with the NPF peptide, the product of the TK gene is necessary for mediating the behavioral actions induced by CH503.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the TK mutant and rescue data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "2452c580-f782-489b-900b-5f0c61b41a58",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C60",
+      "claim": "Positive TK staining is evident in the SEZ and AMMC and is positioned closely to Gr68a-Gal4-labeled terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive TK staining is evident in the SEZ and AMMC and is positioned closely to Gr68a-Gal4-labeled terminals (Figure 5B,C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports immunohistochemistry data showing TK and Gr68a proximity, with Figure 5B, C, and E providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "fc1d4bc8-faec-48b3-a268-236253edfb3b",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C61",
+      "claim": "Positive GRASP-GFP staining was apparent in the SEZ (6 out of 10 brains) and the AMMC (9 out of 10 brains), indicating connectivity between Gr68a and TK neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive GRASP-GFP staining was apparent in the SEZ (Figure 5D; 6 out of 10 brains) and the AMMC (Figure 5F; 9 out of 10 brains), indicating connectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports GRASP data showing synaptic connectivity, with Figure 5D and F providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "e5aa817f-4093-41ca-a1ee-9c13a272d224",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C62",
+      "claim": "Silencing TK expression only within NPF-Gal4 populations resulted in a reduced response to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, silencing TK expression only within either of these Gal4-defined populations resulted in a reduced response to CH503, with male courtship levels indistinguishable from those of the solvent-perfumed fly (Figure 6A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK RNAi in NPF-Gal4 circuits, with Figure 6A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "ec3f6bad-de23-4796-9a63-e4b72495c1d5",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C63",
+      "claim": "Silencing TK expression only within c929-Gal4 populations resulted in a reduced response to CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, silencing TK expression only within either of these Gal4-defined populations resulted in a reduced response to CH503, with male courtship levels indistinguishable from those of the solvent-perfumed fly (Figure 6A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK RNAi in c929-Gal4 circuits, with Figure 6C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "59609d44-4780-4ae8-a860-4bc0cff6583a",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C64",
+      "claim": "Conditional suppression of TK only from late pupal stage onwards produced the same phenotype as constitutive suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional suppression of TK only from late pupal stage onwards (using temperature-sensitive Gal80) also produced the same phenotype, indicating that loss of CH503 sensitivity from TK knockdown is not due to non-specific developmental effects (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using temperature-sensitive Gal80, with Figure 6A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "fd958a70-1378-493b-869c-d65f952852f7",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C65",
+      "claim": "Co-expression of NPF and TK2-Gal4 is evident in 7 cells in the anterior ventrolateral protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression in 7 cells (designated NPF-TK cells) was evident in the anterior ventrolateral protocerebrum (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports immunohistochemistry data showing co-expression, with Figure 6B providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "68ffc1c6-573f-4d35-a22f-01b146c0694f",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C66",
+      "claim": "Rescuing TK expression only within the NPF circuit did not restore the courtship suppression response.",
+      "claim_type": "EXPLICIT",
+      "source": "First, on a TK mutant background, rescuing TK expression only within the NPF circuit did not restore the courtship suppression response (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK rescue in NPF circuits, with Figure 6A providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "32571426-c63f-46a7-8779-f241d0062cfc",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C67",
+      "claim": "The four NPF-TK cells in the protocerebrum are not sufficient for mediating courtship suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two lines of evidence indicate that these 4 cells are not sufficient for mediating courtship suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the NPF-TK rescue data and TK3-Gal4 data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "9aeaaab1-0628-4bb3-9d97-ed7fe1751b62",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C68",
+      "claim": "Co-expression of c929-Gal4 and TK is evident in 10 cells in the SEZ.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type flies, co-expression is evident in 10 cells in the SEZ, designated as c929-TK cells (Figure 6D,D\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports immunohistochemistry data showing co-expression, with Figure 6D and D\u2032 providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "936fce10-afa7-49fd-b618-abdb377f2ca6",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C69",
+      "claim": "Rescue of TK expression only in the 10 c929-TK cells restored the pheromone-response behavior in the \u0394TK2 and \u0394TK1/2 transheterozygote mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue of TK expression only in these 10 cells restored the pheromone-response behavior in the \u0394TK2 and \u0394TK1/2 transheterozygote mutant background (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports behavioral data using TK rescue in c929-Gal4 circuits, with Figure 6C providing visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "61ee6e16-2edd-4bb7-89bb-be27c3ca48c7",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C70",
+      "claim": "TK release from a cluster of 8\u201310 cells within the SEZ is necessary to mediate the response to the gustatory pheromone CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that TK release from a cluster of 8\u201310 cells within the SEZ is necessary to mediate the response to the gustatory pheromone CH503.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the TK rescue and co-expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "27c5fa95-6c61-44e4-a036-e7dfc02f272f",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C71",
+      "claim": "NPF-Gal4 and TK expression overlap in a small population of cells in the SEZ and protocerebrum.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NPF-Gal4 and TK expression overlap in a small population of cells in the SEZ and protocerebrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the triple labeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "e7a2e378-025d-4676-82e5-b4e0b9782d38",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C72",
+      "claim": "Gr68a has a dual sensory role in courtship initiation, detecting both motion-related cues and the male sex pheromone CH503.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual sensory role of Gr68a is consistent with its expression pattern in males in separate mechanosensory and gustatory neuron populations (Ejima and Griffith, 2008) and afferent projections to the SEZ and AMMC, a relay center for auditory information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the expression pattern and projection data, with citation to Ejima and Griffith, 2008.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "73bc918f-7c1a-425f-bf35-6531ce6cb192",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C73",
+      "claim": "Excitatory mechanosensory information is integrated with inhibitory CH503 detection via Gr68a neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, males' inability to detect motion rather than female pheromones may underlie the previously reported Gr68a-related courtship initiation defects. Taken together with the results of our current study, we propose that excitatory mechanosensory information is integrated with inhibitory CH503 detection via Gr68a neurons and both types of sensory cues shape the decision to initiate and sustain courtship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "8fb4f8b3-3218-47a9-ba05-7deae2d743aa",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C74",
+      "claim": "Simultaneous activation of both courtship-promoting and suppressing channels likely resulted in an overall null response in dTrpA1 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with our findings that activation of Gr68a-neurons using TrpA1 did not promote courtship suppression. Simultaneous activation of both courtship-promoting and suppressing channels likely resulted in an overall null response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the dTrpA1 experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "10135f0b-8ea6-495a-a1db-efdea473c72d",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C75",
+      "claim": "The amount of CH503 transferred to females during courtship is approximately 60\u2013100 ng based on semi-quantitative mass spectral analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the quantity that is transferred to the female during courtship is approximately 60\u2013100 ng based on semi-quantitative mass spectral analysis of recently mated females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports mass spectrometry data on CH503 transfer.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a3fee85b-f10f-476b-9896-7e5bd77c302c",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C76",
+      "claim": "D. melanogaster males have adapted to become less sensitive to CH503 to circumvent the courtship inhibitory response.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent findings indicate that male D. melanogaster have adapted to become less sensitive to CH503 to circumvent the courtship inhibitory response (Ng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Ng et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "d3633809-59a3-4fba-956d-436e4e9de443",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C77",
+      "claim": "Approximately 80 ng of CH503 is sufficient to inhibit male courtship in other non-CH503 producing drosophilid species.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u223c80 ng is sufficient to inhibit male courtship in other non-CH503 producing drosophilid species, D. melanogaster males (and males of other species that express CH503) have become less sensitive to the molecule in order to avoid chemical coercion from other males (Ng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Ng et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "0853f1dc-4551-4f70-8c10-56f718eb79ac",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C78",
+      "claim": "Gr68a neurons co-localize with fruitless.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ppk23 neurons co-localize with fruitless (Thistle et al., 2012; Toda et al., 2012), a master gene that regulates many aspects of courtship behavior (Yamamoto and Koganezawa, 2013), whereas Gr68a neurons do not (Figure 3\u2014figure supplement 6), it is clear that Gr68a and ppk23 expression will also be in distinct populations of neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports imaging data showing lack of co-localization, with Figure 3\u2014figure supplement 6 providing visual evidence and citations to Thistle et al., 2012; Toda et al., 2012; and Yamamoto and Koganezawa, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "7d67ae97-e682-4148-b78b-20430adf92a3",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C79",
+      "claim": "ppk23 neurons function as general detectors for a subset of chemosensory cues rather than encode information about valence.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on previous observations that ppk23 neurons respond to both attractive and aversive sex pheromones, we speculate that they function as general detectors for a subset of chemosensory cues rather than encode information about valence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on previous observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "fe56c171-3799-4913-a07c-9bbd0989da41",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C80",
+      "claim": "The AMMC was recently identified as a higher-order processing target for gustatory projection neurons from the SEZ which convey sweet information.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the AMMC was recently identified as a higher-order processing target for gustatory projection neurons from the SEZ which convey sweet information (Kain and Dahanukar, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Kain and Dahanukar, 2015 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "d97ddc4f-72a7-4857-b937-e95f5582600e",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C81",
+      "claim": "The TK circuitry serves as a point of convergence for multiple, opposing physiological drives which underlie an animal's decision to mate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the TK circuitry serves as a point of convergence for multiple, opposing physiological drives which underlie an animal's decision to mate (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the TK circuit data, with Figure 7 providing a visual model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "3152aa9f-f506-4e1a-ac90-793203842542",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C82",
+      "claim": "TK has been implicated in lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "TK has been implicated in numerous systemic functions including lipid metabolism (Song et al., 2014), stress resistance (Kahsai et al., 2010), and modulation of aggression levels (Asahina et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Song et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "cff4166e-ab3d-4088-aa48-f7f5e38b0c76",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C83",
+      "claim": "TK has been implicated in stress resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "TK has been implicated in numerous systemic functions including lipid metabolism (Song et al., 2014), stress resistance (Kahsai et al., 2010), and modulation of aggression levels (Asahina et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Kahsai et al., 2010 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "c0834e9e-76ae-4f0f-99e0-900aad2d65ad",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C84",
+      "claim": "TK has been implicated in modulation of aggression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "TK has been implicated in numerous systemic functions including lipid metabolism (Song et al., 2014), stress resistance (Kahsai et al., 2010), and modulation of aggression levels (Asahina et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Asahina et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "65d1e544-06ac-4e3e-ab83-8f4acc8c238c",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C85",
+      "claim": "The mammalian homolog of TK, Substance P, controls sexual behavior, stress responses, appetite, and aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mammalian homolog Substance P controls sexual behavior, stress responses, appetite, and aggression (Argiolas and Melis, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Argiolas and Melis, 2013 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "d2eb8436-c0fd-4696-b987-911b3535f7de",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C86",
+      "claim": "The choice to fight or court is modulated by TK release which is, in part, regulated by external stimuli such as pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "The convergence of aggression and sex within a common neural pathway alludes to the possibility that the choice to fight or court is modulated by TK release which is, in part, regulated by external stimuli such as pheromones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the TK circuit data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "485d94ef-2f3f-4d5c-a5a2-f0758635cda9",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C87",
+      "claim": "The c929-TK cells identified in this study were shown previously to be involved in water conservation in response to desiccation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the c929-TK cells identified in this study were shown previously to be involved in water conservation in response to desiccation (named ipc-1 and 2a; [Kahsai et al., 2010]), indicating that physiological stress could inform the decision to initiate and sustain courtship via TK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Kahsai et al., 2010 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "4281e9a7-5f4f-46c9-9695-d2abc11b9eb1",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C88",
+      "claim": "Physiological stress could inform the decision to initiate and sustain courtship via TK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the c929-TK cells identified in this study were shown previously to be involved in water conservation in response to desiccation (named ipc-1 and 2a; [Kahsai et al., 2010]), indicating that physiological stress could inform the decision to initiate and sustain courtship via TK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the c929-TK cell data and citation to Kahsai et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "85f868f0-5e18-4c82-b0bc-606044b6e373",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C89",
+      "claim": "Courtship in Drosophila consists of a stereotyped sequence of behaviors including orientation, wing vibration, tapping with the forelegs, abdomen curling, and copulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Courtship in Drosophila consists of a stereotyped sequence of behaviors including orientation, wing vibration, tapping with the forelegs, abdomen curling, and copulation (Spieth, 1974) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites Spieth, 1974 as the source for this claim, with Figure 1A providing visual evidence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "88a41652-ab47-46c4-a02c-ad1a5800b9f5",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C90",
+      "claim": "The neural circuits underlying olfactory pheromone detection are well described in the silkmoth Bombyx mori.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural circuits underlying olfactory pheromone detection are well described in the silkmoth Bombyx mori (Sakurai et al., 2014) and honey bee (Roussel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Sakurai et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "5f3590ab-b513-4470-9f24-f6ac92a060d0",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C91",
+      "claim": "The neural circuits underlying olfactory pheromone detection are well described in the honey bee.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural circuits underlying olfactory pheromone detection are well described in the silkmoth Bombyx mori (Sakurai et al., 2014) and honey bee (Roussel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Roussel et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "6ed9cd04-7416-4ed4-9fab-6def1b6f006d",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C92",
+      "claim": "In Drosophila, the pathways mediating detection of the sex pheromone 11-cis-vaccenyl acetate (cVA) have been refined down to 4 neurons connected by 3 synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, the pathways mediating detection of the sex pheromone 11-cis-vaccenyl acetate (cVA) have been refined down to 4 neurons connected by 3 synapses (Ruta et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Ruta et al., 2010 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "7d8ef71b-6852-4d86-bfb4-a433e825b07e",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C93",
+      "claim": "The projection patterns for several olfactory receptor neurons that likely detect sex pheromones have been mapped from the antennal lobe to the ventral lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the projection patterns for several other olfactory receptor neurons that likely detect sex pheromones have been mapped from the antennal lobe to the ventral lateral horn, implicating this region in the central brain as a specialized site for processing pheromone odors (Jefferis et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Jefferis et al., 2007 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "b0afd0be-629a-4edc-bcaa-87896125013e",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C94",
+      "claim": "Gr32a is thought to respond to the male pheromone (7Z)-tricosene.",
+      "claim_type": "EXPLICIT",
+      "source": "Gr32a (Miyamoto and Amrein, 2008) is thought to respond to the male pheromone (7Z)-tricosene (Wang et al., 2011; Fan et al., 2013; Andrews et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Miyamoto and Amrein, 2008; Wang et al., 2011; Fan et al., 2013; and Andrews et al., 2014 as sources for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "d56a82a4-813a-43dd-b162-709dfda79d3a",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C95",
+      "claim": "Gr33a contributes to courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Gr33a (Moon et al., 2009), Gr39a (Watanabe et al., 2011), and a member of the class of ionotropic receptors (IRs), Ir20a (Koh et al., 2014), contribute to courtship behavior, though the ligands remain unidentified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Moon et al., 2009 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "23b5da84-2822-4489-9aa7-bb7bd56b3d36",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C96",
+      "claim": "Gr39a contributes to courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Gr33a (Moon et al., 2009), Gr39a (Watanabe et al., 2011), and a member of the class of ionotropic receptors (IRs), Ir20a (Koh et al., 2014), contribute to courtship behavior, though the ligands remain unidentified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Watanabe et al., 2011 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "17736c66-d066-4b15-a343-57dc1c53d137",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C97",
+      "claim": "Ir20a contributes to courtship behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Gr33a (Moon et al., 2009), Gr39a (Watanabe et al., 2011), and a member of the class of ionotropic receptors (IRs), Ir20a (Koh et al., 2014), contribute to courtship behavior, though the ligands remain unidentified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Koh et al., 2014 as the source for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "36f795a3-c03f-4f60-9c12-c6cd89889fb7",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C98",
+      "claim": "ppk23, ppk25, and ppk29 respond to both female pheromones and male anti-aphrodisiacs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, a recently discovered class of ion channels belonging to the pickpocket family of proteins (ppk23, ppk25, and ppk29) responds to both female pheromones and male anti-aphrodisiacs (Thistle et al., 2012; Toda et al., 2012; Mast et al., 2014; Vijayan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Thistle et al., 2012; Toda et al., 2012; Mast et al., 2014; and Vijayan et al., 2014 as sources for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "98bab20b-394d-4fdc-b457-89dc3183eee5",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "claim_id": "C99",
+      "claim": "Processes from all Gr-expressing neurons map to the ventral cord and the subesophageal zone (SEZ).",
+      "claim_type": "EXPLICIT",
+      "source": "Without exception, processes from all Gr-expressing neurons map to the ventral cord and the subesophageal zone (SEZ) (Wang et al., 2004; Kwon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Wang et al., 2004 and Kwon et al., 2014 as sources for this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "349fb125-dfdd-4979-934d-25a52879e4b6",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CH503 suppresses courtship behavior in a dose-dependent manner, with 167 ng/fly sufficient to suppress courtship in ~50% of trials. The pheromone does not affect latency to courtship initiation but significantly reduces courtship vigor, indicating it inhibits later stages of courtship and sustained courtship behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 provide converging behavioral evidence showing dose-dependent courtship suppression with specific quantitative measurements (Figure 1B-D). The distinction between latency (unchanged) and vigor (decreased) is well-documented and supports the conclusion about later-stage courtship inhibition. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "f2a50832-c026-488b-8fc8-31d0821f88d0",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CH503 has low volatility and functions only when detected on female cuticles through direct contact. Female cuticular hydrocarbons synthesized in oenocytes are not required for CH503 detection, indicating that sensory cues other than cuticular lipids are necessary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 are supported by systematic experiments testing CH503 at various distances and with oenocyte-less flies (Figure 1E). The negative results with separated pheromone sources and positive results with oenocyte-less flies provide strong evidence for the contact-dependent mechanism and independence from cuticular hydrocarbons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "6cc87ba5-5618-4760-af94-125903e6f394",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CH503 is detected as an aversive tastant by male but not female flies through gustatory receptors on the foreleg. PER assays show CH503 suppresses proboscis extension in males similar to caffeine, while Or83b mutants retain sensitivity but Voila1 gustatory mutants lose sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 are supported by complementary PER assays and genetic dissection (Figure 2A-B, Figure 2\u2014supplement 1). The sexual dimorphism in PER response, retention of response in olfactory mutants, and loss in gustatory mutants provide strong converging evidence for gustatory detection specifically in males.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gr68a is necessary for CH503 detection. RNAi knockdown and genetic deletion of Gr68a eliminate courtship suppression in response to CH503, and sensitivity is restored by genetic rescue. The neighboring gene CG6024 is not affected by Gr68a manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28, C34-C35 demonstrate necessity through multiple independent approaches: RNAi with two Gal4 drivers, genetic deletion, and rescue (Figure 2B-C, Figure 2\u2014supplement 3). The control showing CG6024 is unaffected addresses potential off-target effects. This is strong genetic evidence for Gr68a's role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "cc16ebdb-7598-4b0e-b610-dc255635de5f",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Activation of Gr68a neurons using dTrpA1 is not sufficient to suppress courtship, showing only slight non-significant suppression. This is proposed to result from simultaneous activation of both courtship-promoting mechanosensory and courtship-suppressing chemosensory channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C30, C74 report a negative result with dTrpA1 activation (Figure 2C). While the observation is clear, the interpretation (C74) is speculative. The dual-function model is reasonable but not directly tested. Alternative explanations (e.g., insufficient activation, wrong neuronal subset) are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "1571ba3c-c925-4d4d-90fc-5bdd96237c85",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gr68a-Gal4 labels sexually dimorphic neurons in male forelegs, with more neurons in each male tarsal segment compared to females. Non-neuronal cells are observed only in male legs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by imaging data (Figure 3A) and quantitative cell counts (Table 1) consistent with previous reports (Bray and Amrein, 2003; Ejima and Griffith, 2008; Ling et al., 2014). The sexual dimorphism is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gr68a neurons exhibit dose-dependent calcium responses to CH503 in males but not females. At 500 ng, 6 of 9 cells in T2-4 respond significantly. Neurons show phasic or tonic response patterns. A behaviorally inert analog fails to elicit responses, and responses are abolished in Gr68a mutants. The double bonds in CH503 are essential for activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 are supported by systematic calcium imaging experiments (Figure 3B-D, supplements). The dose-dependence, sexual dimorphism, structure-activity relationship with the analog, and loss of response in mutants provide strong converging evidence. Statistical comparisons to controls are reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "7190549d-526d-4923-ba7a-a0de34a39fb3",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ppk23 neurons in the male proboscis respond to CH503, but ppk23/25-expressing neurons are not the primary sensory pathway for CH503 detection. RNAi knockdown of ppk23 or ppk25 only partially reduces sensitivity to CH503.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 show ppk23 neurons respond physiologically (Figure 3\u2014supplement 4) but behavioral evidence indicates they are not necessary (Figure 2B). The partial reduction with RNAi and heterogeneous responses to analogs (Figure 3\u2014supplement 5) support the conclusion that these neurons are not the primary pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "7b654864-7934-4795-a33e-976670afd4bd",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gr68a neurons project to thoracico-abdominal ganglia, SEZ, and AMMC. Suppression of c929-Gal4 neurons reduces CH503 sensitivity, but c929-labeled processes in the thoracic ganglia do not contribute to the behavioral response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by anatomical imaging (Figure 4A) and behavioral experiments with spatial restriction using tsh-Gal80 (Figure 4B, Figure 4\u2014supplement 2). The negative result with ventral cord restriction effectively localizes the relevant neurons to the brain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "cf89a33e-f6a2-4310-8e8b-4ef1cc6516dd",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NPF-expressing circuits are anatomically positioned as second-order relays from Gr68a neurons in the SEZ, but the NPF peptide itself is not essential for CH503-mediated behavior. Genetic ablation of NPF circuits reduces sensitivity, but RNAi knockdown of NPF or silencing NPFR circuits does not affect the response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C53-C56 show a dissociation between circuit function and peptide function. Anatomical proximity is demonstrated (Figure 4D), ablation affects behavior (Figure 4C), but peptide knockdown (5.3-fold reduction, Figure 4\u2014supplement 4) has no effect. This suggests the circuit is important but NPF release is not the critical signal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tachykinin (TK) is necessary for CH503 detection. Genetic deletion of TK eliminates sensitivity, which is rescued by TK re-expression. TK-positive cells are closely apposed to Gr68a terminals in the SEZ and AMMC, and GRASP experiments demonstrate synaptic connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C57-C61 provide strong genetic (deletion and rescue, Figure 5A) and anatomical evidence (immunostaining Figure 5B,C,E; GRASP Figure 5D,F) for TK's necessity. The GRASP signal in 6/10 brains (SEZ) and 9/10 brains (AMMC) demonstrates functional connectivity, though the incomplete penetrance suggests some variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "fe690a55-f417-4d4b-8f72-c685f6798a78",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TK release from 8-10 cells in the SEZ (c929-TK cells) is necessary and sufficient for CH503-mediated courtship suppression. Silencing TK in either NPF-Gal4 or c929-Gal4 circuits eliminates the response. Rescue of TK expression specifically in c929-TK cells restores behavior, while rescue in NPF circuits does not. NPF-TK co-expressing cells exist but are not sufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C71 provide detailed circuit dissection using intersectional genetics (Figure 6). The necessity is shown by RNAi in specific circuits, sufficiency by targeted rescue, and temporal control experiments rule out developmental effects (Figure 6A). The anatomical characterization (Figure 6B,D-G) identifies the critical cell population. This is rigorous circuit mapping.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "00ca1c3c-5e48-46f7-afac-5180a4fa9005",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Gr68a has a dual sensory role, detecting both motion-related cues and CH503. Excitatory mechanosensory information and inhibitory CH503 detection are proposed to be integrated via Gr68a neurons to shape courtship decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C73 propose a model integrating current findings with previous work (Ejima and Griffith, 2008) on mechanosensation. While the dual expression pattern and projection to AMMC support this model, direct evidence for integration of these signals is not provided. The model is plausible but remains speculative without functional tests of mechanosensory responses in the same neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "8bcd962c-8538-4130-857a-028d1f6cd390",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The amount of CH503 transferred during mating (60-100 ng) is less than the amount required for robust behavioral suppression in D. melanogaster males. This is consistent with reports that D. melanogaster males have evolved reduced sensitivity to CH503 to avoid chemical coercion, while ~80 ng is sufficient in non-CH503 producing species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 provides mass spectrometry data on natural transfer amounts. Claims C76-C77 cite Ng et al., 2014 for the evolutionary context. The discrepancy between transferred amount and behaviorally effective dose is documented, and the evolutionary explanation from the cited work provides context, though the authors did not test this hypothesis directly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "064df356-53ae-402d-b7cd-e41c50c90536",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CH503 is the anti-aphrodisiac pheromone (3R,11Z,19Z)-3-acetoxy-11,19-octacosadien-1-ol, which is transferred from males to females during mating and inhibits courtship from other males in D. melanogaster and other drosophilids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 defines CH503. Claims C5-C7 cite established literature (Yew et al., 2009; Ng et al., 2014) for the transfer and function of CH503. These are well-established facts from prior work that provide essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "c41769c6-ff1c-496d-8bb6-5381b067d166",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Gr68a-expressing neurons on male forelegs exhibit sexually dimorphic physiological responses to CH503 and relay information to the central brain via peptidergic neurons. Tachykinin release from 8-10 cells in the SEZ is required for CH503-triggered courtship suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 summarize the main findings of the paper as stated in the abstract. These are supported by the detailed experimental evidence in claims C36-C42 (physiological responses), C48-C50 (projections), and C62-C70 (TK requirement). This represents the core discovery of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "8e816cab-948d-4950-b256-2db32cc5b710",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Gr68a neurons do not co-localize with fruitless, distinguishing them from ppk23 neurons. ppk23 neurons are proposed to function as general detectors for chemosensory cues rather than encoding valence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is supported by imaging data (Figure 3\u2014supplement 6) showing lack of co-localization. However, claim C79 is speculative, based on previous observations that ppk23 neurons respond to both attractive and aversive pheromones. This interpretation is reasonable but not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    },
+    {
+      "id": "a81a6254-f4e2-4204-8638-33758a1c0f43",
+      "content_id": "f72263b3-2e7b-4607-a8c9-ddcec0f9c2e1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The TK circuitry serves as a convergence point for multiple physiological drives underlying mating decisions, including pheromone detection, metabolic stress, and aggression. The c929-TK cells were previously implicated in water conservation during desiccation, suggesting physiological stress could inform courtship decisions via TK signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81, C86, C88 propose an integrative model based on the current findings and prior work (Kahsai et al., 2010). While the identification of c929-TK cells as the same cells involved in desiccation response (C87) is supported by citation, the broader model of integration is speculative. No experiments directly test how metabolic stress or aggression interact with CH503 detection in these neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:14:34.208512Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d02243ba-6f7a-430b-a2b6-c5002717bf1d",
+      "result_id": "349fb125-dfdd-4979-934d-25a52879e4b6"
+    },
+    {
+      "claim_id": "776c92f6-db0d-4caa-81da-4ea9e77b8c31",
+      "result_id": "349fb125-dfdd-4979-934d-25a52879e4b6"
+    },
+    {
+      "claim_id": "56455dce-fecf-447c-a3c3-4116aa561a01",
+      "result_id": "349fb125-dfdd-4979-934d-25a52879e4b6"
+    },
+    {
+      "claim_id": "63ddfc89-b4a1-45dc-b887-d306500fca0b",
+      "result_id": "349fb125-dfdd-4979-934d-25a52879e4b6"
+    },
+    {
+      "claim_id": "44ac2e7a-c6c3-4266-a142-297869cc4fe5",
+      "result_id": "f2a50832-c026-488b-8fc8-31d0821f88d0"
+    },
+    {
+      "claim_id": "f868ce00-a32f-42a7-8fe2-009873d72116",
+      "result_id": "f2a50832-c026-488b-8fc8-31d0821f88d0"
+    },
+    {
+      "claim_id": "a843d1d2-0145-4215-9d97-677482c8a4ba",
+      "result_id": "f2a50832-c026-488b-8fc8-31d0821f88d0"
+    },
+    {
+      "claim_id": "014cb463-8891-4fe6-be0f-5665b55926eb",
+      "result_id": "f2a50832-c026-488b-8fc8-31d0821f88d0"
+    },
+    {
+      "claim_id": "880132e1-1633-4c7a-a5e0-a3d31a8794ae",
+      "result_id": "f2a50832-c026-488b-8fc8-31d0821f88d0"
+    },
+    {
+      "claim_id": "823a3360-2631-421f-b9c7-ba2db1cc8045",
+      "result_id": "f2a50832-c026-488b-8fc8-31d0821f88d0"
+    },
+    {
+      "claim_id": "b7ff58cd-41fd-41a3-91a9-c7be24d0b84f",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "47825cc7-c086-456a-bb99-da73c7fcd782",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "9c2f02a2-0823-4bd0-9c66-1385ad18d743",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "445aeb01-e7d6-4f59-8be0-b0ab1d07e06e",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "3d947b48-b688-4328-abce-5f2488f7f7bd",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "a46e9189-030f-49e1-b3a3-457c2823a57b",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "042fd726-81ca-4b19-a17f-cd46d05788c3",
+      "result_id": "6cc87ba5-5618-4760-af94-125903e6f394"
+    },
+    {
+      "claim_id": "99fa9f79-b192-4023-9e67-0049f9d4cc68",
+      "result_id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84"
+    },
+    {
+      "claim_id": "02d1742c-4191-4050-a8a0-fe8d8f586551",
+      "result_id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84"
+    },
+    {
+      "claim_id": "88a5e220-037d-4ed9-ac1d-eb387bb9f149",
+      "result_id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84"
+    },
+    {
+      "claim_id": "a7ac7eb8-3c99-426a-aa3c-14a297535631",
+      "result_id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84"
+    },
+    {
+      "claim_id": "231911f5-6bd4-4f38-a791-3c7859e11767",
+      "result_id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84"
+    },
+    {
+      "claim_id": "87164b07-6071-486a-a0cc-93a26fbbfbf5",
+      "result_id": "3dd8a1b4-9ec6-4e59-a27d-434f5b326c84"
+    },
+    {
+      "claim_id": "45a37180-9a2a-4d1b-9d8b-5a10152d7998",
+      "result_id": "cc16ebdb-7598-4b0e-b610-dc255635de5f"
+    },
+    {
+      "claim_id": "20c22f7b-a8a5-4dbf-850b-78fbf7f2ee13",
+      "result_id": "cc16ebdb-7598-4b0e-b610-dc255635de5f"
+    },
+    {
+      "claim_id": "8fb4f8b3-3218-47a9-ba05-7deae2d743aa",
+      "result_id": "cc16ebdb-7598-4b0e-b610-dc255635de5f"
+    },
+    {
+      "claim_id": "10cd9095-f7d4-43f8-9da9-9c6428667fb4",
+      "result_id": "1571ba3c-c925-4d4d-90fc-5bdd96237c85"
+    },
+    {
+      "claim_id": "2a6c5b97-3eed-4932-afb1-a8caf2e5793a",
+      "result_id": "1571ba3c-c925-4d4d-90fc-5bdd96237c85"
+    },
+    {
+      "claim_id": "cff73527-0551-404f-8aee-925ef2e974aa",
+      "result_id": "1571ba3c-c925-4d4d-90fc-5bdd96237c85"
+    },
+    {
+      "claim_id": "c0838094-2936-478a-a862-5bd83b2b5af8",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "129d1ad5-5dbd-4f00-b131-844f1f5de7ad",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "2cdd6174-ede7-4dd2-a95c-c85e393cffdb",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "8f05d451-3db2-4fee-abb5-b20c86b03129",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "50362dd3-a4cd-4cb5-bc9c-ecd0d87c4f0c",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "db2d8ebf-2d63-42f1-be65-d7088ecc7770",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "8b3de259-1b28-4cf2-b35f-0803049ca806",
+      "result_id": "5fa86366-f2fe-4485-8ea9-f3f342fe0008"
+    },
+    {
+      "claim_id": "287d3712-e8d4-4b92-9647-9c18d80470de",
+      "result_id": "7190549d-526d-4923-ba7a-a0de34a39fb3"
+    },
+    {
+      "claim_id": "b4046178-8ab7-4889-85a1-71e05ae3b5b6",
+      "result_id": "7190549d-526d-4923-ba7a-a0de34a39fb3"
+    },
+    {
+      "claim_id": "79f50eb0-b4f0-40b4-af67-67a43790f932",
+      "result_id": "7190549d-526d-4923-ba7a-a0de34a39fb3"
+    },
+    {
+      "claim_id": "a08a19da-6d2a-4d7c-9566-16429f064fc3",
+      "result_id": "7190549d-526d-4923-ba7a-a0de34a39fb3"
+    },
+    {
+      "claim_id": "2317dcb7-d412-4fe6-a77d-bfdf851fe38e",
+      "result_id": "7190549d-526d-4923-ba7a-a0de34a39fb3"
+    },
+    {
+      "claim_id": "e0a3b372-80fe-41ea-96f6-7013b937fd6b",
+      "result_id": "7b654864-7934-4795-a33e-976670afd4bd"
+    },
+    {
+      "claim_id": "a2689408-b98f-4538-ba80-615fd5cd4dc7",
+      "result_id": "7b654864-7934-4795-a33e-976670afd4bd"
+    },
+    {
+      "claim_id": "eed8f391-bafb-4b09-b26f-7b6246126709",
+      "result_id": "7b654864-7934-4795-a33e-976670afd4bd"
+    },
+    {
+      "claim_id": "f3ea6461-c698-4164-b51e-d5a6a0a68674",
+      "result_id": "cf89a33e-f6a2-4310-8e8b-4ef1cc6516dd"
+    },
+    {
+      "claim_id": "82dae284-30c7-4bbb-a010-12eea4fc8649",
+      "result_id": "cf89a33e-f6a2-4310-8e8b-4ef1cc6516dd"
+    },
+    {
+      "claim_id": "9203e62a-57ea-4a44-b466-f0861c268a0c",
+      "result_id": "cf89a33e-f6a2-4310-8e8b-4ef1cc6516dd"
+    },
+    {
+      "claim_id": "edf5d244-72a9-4ea6-8e28-91af2d47616a",
+      "result_id": "cf89a33e-f6a2-4310-8e8b-4ef1cc6516dd"
+    },
+    {
+      "claim_id": "abd6c874-6bc4-4664-8fba-a4fa6e05e31f",
+      "result_id": "cf89a33e-f6a2-4310-8e8b-4ef1cc6516dd"
+    },
+    {
+      "claim_id": "bd4e439d-84c0-4238-a01f-ac8a509fe2ee",
+      "result_id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3"
+    },
+    {
+      "claim_id": "ba818176-a9cd-443b-92a0-066f6a6cf374",
+      "result_id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3"
+    },
+    {
+      "claim_id": "fdd6e3d3-be5a-4aae-aa7f-092d1aa36b1f",
+      "result_id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3"
+    },
+    {
+      "claim_id": "92feb642-90a9-46cf-b304-4941c3a75080",
+      "result_id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3"
+    },
+    {
+      "claim_id": "2452c580-f782-489b-900b-5f0c61b41a58",
+      "result_id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3"
+    },
+    {
+      "claim_id": "fc1d4bc8-faec-48b3-a268-236253edfb3b",
+      "result_id": "7a76b1b2-d0e9-4a0b-ad87-912e2eff0fe3"
+    },
+    {
+      "claim_id": "e5aa817f-4093-41ca-a1ee-9c13a272d224",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "ec3f6bad-de23-4796-9a63-e4b72495c1d5",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "59609d44-4780-4ae8-a860-4bc0cff6583a",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "fd958a70-1378-493b-869c-d65f952852f7",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "68ffc1c6-573f-4d35-a22f-01b146c0694f",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "32571426-c63f-46a7-8779-f241d0062cfc",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "9aeaaab1-0628-4bb3-9d97-ed7fe1751b62",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "936fce10-afa7-49fd-b618-abdb377f2ca6",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "61ee6e16-2edd-4bb7-89bb-be27c3ca48c7",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "27c5fa95-6c61-44e4-a036-e7dfc02f272f",
+      "result_id": "fe690a55-f417-4d4b-8f72-c685f6798a78"
+    },
+    {
+      "claim_id": "e7a2e378-025d-4676-82e5-b4e0b9782d38",
+      "result_id": "00ca1c3c-5e48-46f7-afac-5180a4fa9005"
+    },
+    {
+      "claim_id": "73bc918f-7c1a-425f-bf35-6531ce6cb192",
+      "result_id": "00ca1c3c-5e48-46f7-afac-5180a4fa9005"
+    },
+    {
+      "claim_id": "10135f0b-8ea6-495a-a1db-efdea473c72d",
+      "result_id": "8bcd962c-8538-4130-857a-028d1f6cd390"
+    },
+    {
+      "claim_id": "a3fee85b-f10f-476b-9896-7e5bd77c302c",
+      "result_id": "8bcd962c-8538-4130-857a-028d1f6cd390"
+    },
+    {
+      "claim_id": "d3633809-59a3-4fba-956d-436e4e9de443",
+      "result_id": "8bcd962c-8538-4130-857a-028d1f6cd390"
+    },
+    {
+      "claim_id": "6b536180-ea6a-47b7-8b5d-4d521fa60681",
+      "result_id": "064df356-53ae-402d-b7cd-e41c50c90536"
+    },
+    {
+      "claim_id": "eb865887-db48-48a8-9fd3-37e6e397cadd",
+      "result_id": "064df356-53ae-402d-b7cd-e41c50c90536"
+    },
+    {
+      "claim_id": "3eb3ee3d-2475-4c3a-b8d2-920ac946f070",
+      "result_id": "064df356-53ae-402d-b7cd-e41c50c90536"
+    },
+    {
+      "claim_id": "ebdd2a5a-3ce4-4ab8-8545-55b7da76860b",
+      "result_id": "064df356-53ae-402d-b7cd-e41c50c90536"
+    },
+    {
+      "claim_id": "9bf841ea-e942-462f-94ab-080e251636e6",
+      "result_id": "c41769c6-ff1c-496d-8bb6-5381b067d166"
+    },
+    {
+      "claim_id": "55506887-4b37-45b1-b416-393343e7a1f0",
+      "result_id": "c41769c6-ff1c-496d-8bb6-5381b067d166"
+    },
+    {
+      "claim_id": "341f0bb6-4f3d-488b-bd96-a37f250c2283",
+      "result_id": "c41769c6-ff1c-496d-8bb6-5381b067d166"
+    },
+    {
+      "claim_id": "0853f1dc-4551-4f70-8c10-56f718eb79ac",
+      "result_id": "8e816cab-948d-4950-b256-2db32cc5b710"
+    },
+    {
+      "claim_id": "7d67ae97-e682-4148-b78b-20430adf92a3",
+      "result_id": "8e816cab-948d-4950-b256-2db32cc5b710"
+    },
+    {
+      "claim_id": "d97ddc4f-72a7-4857-b937-e95f5582600e",
+      "result_id": "a81a6254-f4e2-4204-8638-33758a1c0f43"
+    },
+    {
+      "claim_id": "d2eb8436-c0fd-4696-b987-911b3535f7de",
+      "result_id": "a81a6254-f4e2-4204-8638-33758a1c0f43"
+    },
+    {
+      "claim_id": "4281e9a7-5f4f-46c9-9695-d2abc11b9eb1",
+      "result_id": "a81a6254-f4e2-4204-8638-33758a1c0f43"
+    }
+  ],
+  "comparisons": []
+}

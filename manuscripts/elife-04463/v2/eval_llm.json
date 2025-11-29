@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors measured binding affinities of CPX-48 to post-fusion SNARE (Kd = 43 \u00b1 7 nM) and pre-fusion SNARE\u039460 (Kd = 457 \u00b1 47 nM) using ITC, finding approximately 5-fold tighter binding than previously reported by Trimbuch et al. These binding constants ensure ~96% saturation of the central helix binding site at 1.5-fold molar excess of CPX-48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide direct ITC measurements with error estimates and appropriate controls. The binding constants are consistent with expected values based on prior literature (C12 matches Pabst et al. 2002), and the saturation calculation (C15) follows logically from the measured Kd values. The data address a specific criticism from Trimbuch et al. regarding incomplete blocking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C50"
+    ],
+    "result": "ITC experiments with blocked SNARE\u039460 (using 2.5-3-fold excess CPX-48) demonstrate that full-length CPX binds with Kd = 15.2 \u00b1 1.4 \u03bcM and CPX26-83 binds with Kd = 23.9 \u00b1 0.1 \u03bcM, corroborating the interaction of CPXacc with the t-SNARE groove in pre-fusion SNARE complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C50 present replicated ITC measurements with higher blocking peptide excess (\u226599% saturation) that reproduce previous findings (C18 matches the ~16 \u03bcM reported in K\u00fcmmel et al. 2011). The slightly weaker binding of the truncated construct (C19) is consistent with the authors' model. The experimental design appropriately isolates the CPXacc-t-SNARE interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C51"
+    ],
+    "result": "Titration of super-clamp CPX (scCPX) into unblocked SNARE\u039460 reveals multiple binding sites per SNARE complex, with ITC thermograms best fit by a bivalent binding model incorporating independent thermodynamic parameters for CPXcen and CPXacc interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C51 describe ITC data (Figure 3) showing characteristic multi-site binding thermograms. The use of scCPX with enhanced affinity allows resolution of the two binding modes. The bivalent model fitting (C22) is appropriate for the observed data, though the authors acknowledge wild-type CPX shows qualitatively similar but less resolved behavior. This directly demonstrates the trans interaction feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C52"
+    ],
+    "result": "FRET experiments with CPX-GPGP (containing a helix-breaking GPGP linker) show dramatic decreases in FRET signal for both SNARE\u039460 and full SNARE complexes compared to wild-type CPX, demonstrating that the low FRET state in pre-fusion complexes reflects discrete conformational change rather than increased flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C52 present new FRET data (Figure 4) using the Bimane/Oregon green pair (R0 ~38\u00c5) that addresses a specific criticism from Trimbuch et al. The dramatic FRET decrease with CPX-GPGP compared to wild-type provides a clear negative control showing that flexibility alone cannot explain the observed low FRET state. The use of two FRET pairs with different R0 values strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C33",
+      "C73"
+    ],
+    "result": "CD measurements show that isolated CPXacc (residues 26-48) is unfolded while CPX26-83 forms stable \u03b1-helical structure, explaining why CPX26-48 alone does not interact with SNARE\u039460 in ITC or NMR experiments and suggesting that CPXacc conformations depend on protein context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 present direct CD spectroscopy data (Figure 5A) showing clear structural differences between constructs. This provides a mechanistic explanation for the lack of interaction observed with isolated CPXacc (C33) and supports the authors' interpretation (C73) that longer constructs are required for proper folding and binding. The data reconcile apparent discrepancies between their results and Trimbuch et al.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "DLS analysis shows that CPX26-83/SNARE\u039460 complexes oligomerize at 25-50 \u03bcM concentrations, consistent with a model predicting polymer formation based on the measured Kd (~25 \u03bcM), while non-clamping mutations or blocking the t-SNARE groove prevent oligomerization. This oligomerization would cause NMR line broadening, explaining why trans interactions were not detected by NMR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present DLS data (Figure 5B) showing concentration-dependent oligomerization that fits a theoretical model (C37) based on independently measured Kd values. The negative controls with ncCPX and blocked SNARE (C38-C39) show minimal oligomerization, supporting specificity. Claims C59-C62 logically connect this to NMR limitations for large complexes, providing a plausible explanation for the negative NMR results. However, the model is semi-quantitative and makes assumptions about polymer geometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose that NMR concentrations (~25-50 \u03bcM) used by Trimbuch et al. were at the lower end of typical ranges, likely resulting in predominantly monomeric CPX-SNARE\u039460 complexes with only minor oligomeric fractions that would be invisible due to line broadening, thus explaining the negative NMR results without precluding trans interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 are largely speculative (marked as SPECULATION in evidence_type). While the reasoning about NMR limitations for large complexes is sound (C60-C61 based on KNOWLEDGE), the specific claims about experimental conditions and oligomeric state distributions (C64-C65) are conjectures without direct evidence. The conclusion (C66) is an inference that, while plausible, requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Previous FRET experiments using two different FRET pairs (Stilbene/Bimane and Bimane/Oregon Green) showed well-defined high and low FRET states for CPX bound to post- and pre-fusion SNARE complexes, with distances matching crystal structure predictions and position-dependent FRET consistent with an angled CPXacc conformation rather than increased disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 summarize previously published FRET data from K\u00fcmmel et al. 2011 and Krishnakumar et al. 2011. The use of two FRET pairs with different R0 values (C24), agreement with crystal structures (C25), position-dependent FRET (C28), and consistency across different VAMP truncations (C29) provide converging evidence. The comparison with expected behavior of unstructured proteins (C26-C27) appropriately addresses alternative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C47",
+      "C48",
+      "C49",
+      "C72"
+    ],
+    "result": "Mutations in CPXacc show that hydrophobic mutations enhance binding (~8-fold) while charged mutations abolish CPXacc-t-SNARE interaction, with corresponding effects on clamping function in both in vitro and in vivo assays, arguing against an electrostatic hindrance model and supporting a hydrophobic interaction mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C47-C49 cite consistent mutagenesis data from multiple studies (K\u00fcmmel et al. 2011, Yang et al. 2010, Cho et al. 2014) showing structure-function relationships. The pattern that hydrophobic mutations enhance while charged mutations abolish both binding and function (C48) provides strong evidence for the mechanism. Claim C72 appropriately synthesizes this evidence against the alternative electrostatic model proposed by Trimbuch et al.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C67",
+      "C68"
+    ],
+    "result": "The inhibitory function of CPX shows system-dependent differences: it is not observed in autaptic CPX TKO mice where super-clamp and non-clamp mutations had no expected effect, but is observed in other systems (rodent mass cultures, Drosophila) where predicted mutations show corresponding effects on spontaneous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C67-C68 document well-established differences between experimental systems based on multiple citations. Claims C42-C45 cite specific rescue experiments showing that mutations predicted to enhance or disrupt clamping have corresponding functional effects in appropriate systems. This appropriately contextualizes the negative results from Trimbuch et al. (C67) and explains why certain systems may be more suitable for studying CPX clamping mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Functional studies show that CPX inhibitory function requires a fully-folded and rigid helix, with flexibility introduced into the minimal functional domain (residues 26-83) causing reduction or loss of clamping ability proportional to the degree of instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 cite multiple independent studies (Radoff et al. 2014, K\u00fcmmel et al. 2011, Cho et al. 2014) showing consistent structure-function relationships. The dose-dependent effect of flexibility on clamping (C55) supports a mechanistic requirement for structural rigidity. This corroborates the FRET interpretation that the low FRET state reflects defined conformation rather than disorder.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors acknowledge that wild-type CPXacc interactions with t-SNARE differ from those observed in crystal structures with super-clamp CPX (scCPX), being weaker and potentially involving slightly different surfaces, though a single mutation (F34M) can produce two distinct binding interfaces both yielding zig-zag topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 cite structural data from K\u00fcmmel et al. 2011 showing that different binding modes can produce the same topology. Claims C75-C77 represent appropriate scientific caution, acknowledging that crystal structures with scCPX may not exactly represent wild-type interactions while maintaining that the general trans interaction model remains valid. This nuanced interpretation strengthens rather than weakens the overall argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C58"
+    ],
+    "result": "The authors defend their previously proposed trans clamping model in which CPX central helix binds one SNAREpin while the accessory helix bridges to a second SNAREpin, occupying the v-SNARE binding site and organizing SNAREpins into a zig-zag topology incompatible with fusion, while acknowledging the model is not proven but remains the most well-defined model with substantial supporting evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 states the model being defended. Claims C9-C11 describe the structural basis from previous crystal structures. Claim C58 provides appropriate scientific qualification. The manuscript presents multiple lines of new evidence (ITC, FRET, DLS, CD) that collectively support this model while addressing specific criticisms. The acknowledgment that the model is not proven (C58) is scientifically appropriate given ongoing debate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "In vivo studies in multiple systems support observations first made with the cell-cell fusion assay, validating the relevance of this in vitro system for studying CPX clamping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 cites multiple studies (Yang et al. 2010, Cho et al. 2014, and earlier work) showing consistency between in vitro and in vivo findings. This addresses concerns raised by Trimbuch et al. about the validity of the cell-cell fusion assay. The convergence of evidence from different experimental systems strengthens confidence in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C53"
+    ],
+    "result": "Recent reports suggest that the inhibitory and activating functions of CPX may be separable, with genetic rescue experiments in Drosophila showing that mutations preventing zig-zag array formation disrupt spontaneous release clamping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C53 cite recent work (Yang et al. 2010, Cho et al. 2014, Lai et al. 2014) suggesting functional separability and providing genetic validation of the zig-zag model. This represents an important refinement of the model, acknowledging complexity while maintaining support for the trans clamping mechanism in regulating spontaneous release specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establish that SNARE complexes mediate synaptic vesicle fusion, with synaptotagmin and complexin as key regulators, where complexin inhibits spontaneous release, is essential for synchronous exocytosis, and clamps SNARE assembly by stabilizing an intermediate ~50% zippered state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 present well-established background knowledge supported by multiple authoritative citations. These are standard facts in the field that provide necessary context for the manuscript's specific contributions. The evidence types appropriately include CITATION and KNOWLEDGE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C70",
+      "C71"
+    ],
+    "result": "The manuscript addresses a recent NMR study by Trimbuch et al. that failed to detect trans clamping interactions and proposed an alternative electrostatic hindrance model based on charge effects on neurotransmitter release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C70-C71 accurately summarize the competing findings and model from Trimbuch et al. 2014 that motivated this manuscript. These claims appropriately frame the scientific controversy being addressed. The evidence type (CITATION) is appropriate as these describe prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The authors speculate that yet unknown additional interactions in the pre-fusion complex, not represented in their crystal structure, may further stabilize the trans clamping interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is explicitly speculative (marked as SPECULATION in evidence_type) and represents a hypothesis about potential additional stabilizing interactions. While this is reasonable scientific speculation that could guide future work, it lacks experimental support in the current manuscript and should not be considered a supported result.",
+    "result_type": "MINOR"
+  }
+]

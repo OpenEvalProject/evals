@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The thermal limits were operationally defined as temperatures where >90% of embryos hatched: 12\u00b0C and 25\u00b0C for C. elegans, and 14\u00b0C and 27\u00b0C for C. briggsae. These thermal ranges are narrower than the reproductive ranges and align with C. briggsae inhabiting warmer climates than C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide a clear operational definition of thermal limits based on embryonic viability data (Figures 1A-B). The 90% threshold is arbitrary but reasonable for defining robust population propagation (C4). Comparisons with cited reproductive ranges (C5-C6) and ecological distributions (C3) provide appropriate context. The methodology is straightforward and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Within the thermal range, the vast majority of 35 monitored cellular features were temperature-dependent, but some features (fraction of time in mitosis, cell division asymmetry) exhibited temperature-independent behavior, suggesting temperature-compensation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 describe systematic quantification of cellular features with appropriate statistical correction for multiple testing (Bonferroni correction, p<0.0014). The observation of both temperature-dependent and temperature-independent features is well-documented (Figure 1\u2014source data 1, Figures 2B-C). The inference of temperature-compensation mechanisms (C10) is reasonable given the data, though mechanistic details are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Mitosis duration decreased monotonically with temperature within the thermal range but plateaued beyond both thermal limits in C. elegans. Cell cycle duration was well-described by Arrhenius kinetics in C. elegans (92% variance explained) but not in C. briggsae beyond 25\u00b0C (variance dropped from 86% to 39%), indicating mitosis duration is a limit-sensitive feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 present compelling evidence that mitosis duration changes behavior at thermal limits. The Arrhenius model fitting (C14-C15) provides quantitative support, though the manuscript should clarify whether the 92% and 86% values represent R\u00b2 or adjusted R\u00b2. The comparison between species (C13) strengthens the conclusion. F-test statistics support the plateau observation (C12). The inference that mitosis duration is limit-sensitive (C17) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cell division asymmetry was constant within the thermal range but decreased below 12\u00b0C (p=0.0005) and increased above 25\u00b0C (p<10\u207b\u2077) in C. elegans. In C. briggsae, asymmetry increased at 28-29\u00b0C (p<10\u207b\u00b9\u2070) but did not decrease at the lower limit, possibly due to weaker spindle pole oscillations limiting the dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 document statistically significant changes in cell division asymmetry at thermal limits with appropriate p-values. The species difference (C22) is interesting, and the mechanistic speculation about spindle oscillations (C23-C24) is supported by citation and visual comparison (Figures 2D, 3D). However, C24 is speculative and would benefit from direct experimental testing. The overall pattern of asymmetry changes at thermal limits is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Embryo size was larger at the lower end of the thermal range and decreased with increasing temperature (consistent with the temperature-size rule). However, below the lower thermal limit, embryo size was significantly reduced in both species (C. elegans p<10\u207b\u2077, C. briggsae p=0.001), a reversal compatible with the MASROS hypothesis of cold-inhibited mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 document a well-characterized pattern (temperature-size rule, C28) with appropriate citations, then identify a striking reversal below the lower thermal limit (C30-C31) with strong statistical support. The comparison with other organisms (C32) and interpretation via MASROS (C33) provide appropriate context. However, the MASROS interpretation (C33) is inferential and requires experimental validation, which is provided later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Beyond the upper thermal limit, embryo size plateaued but embryos became more elongated in both species (C. elegans p=0.0004, C. briggsae p<10\u207b\u00b9\u2070). This elongation increases surface area, potentially augmenting oxygen diffusion availability. Changes in cell size and shape are signature hallmarks of thermal limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 identify a novel morphological response at the upper thermal limit with strong statistical support (C35). The geometric inference about surface area increase (C36) is mathematically sound (Figure 2\u2014figure supplement 1). The conclusion that size and shape changes are hallmarks of thermal limits (C37) is well-supported by the combined observations. However, the functional significance of elongation for oxygen diffusion remains to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Respiration increased exponentially within the thermal range (consistent with Arrhenius kinetics) but departed from this pattern below the lower limit (p<10\u207b\u2074) and above the upper limit (p<10\u207b\u00b9\u2070), indicating reduced respiration at thermal limits. A clear correlation exists between reduced aerobic capacity and increased lethality at thermal limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide critical experimental evidence for the MASROS hypothesis. The respiration measurements (Figure 4A) show clear departures from Arrhenius kinetics at both thermal limits with strong statistical support (C39-C40). However, the manuscript should provide more methodological details: sample sizes, number of replicates, and whether measurements were normalized appropriately. The correlation statement (C41) is cautious and appropriate, acknowledging that correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "RNAi depletion of three respiratory chain components (atp-2, cyc-1, nuo-1) caused embryonic lethality within the thermal range, but this lethality was reduced at thermal limits compared to within the range. This supports the notion that mitochondrial respiratory chain capacity is restricted at thermal limits, and suggests other metabolic routes may be used to a larger extent at those temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 and C85-C88 present a clever experimental test of the hypothesis. The observation that respiratory chain compromise has less impact at thermal limits (C42-C46) strongly supports restricted aerobic metabolism at those temperatures. The cyc-1(RNAi) respiration validation (C85: 56\u00b113% of wild-type, p<10\u207b\u00b3) strengthens the interpretation. However, alternative explanations (C88: pH changes, ROS) are appropriately acknowledged. The speculation about alternative metabolic routes (C48) is reasonable but requires further investigation. The air-1(RNAi) control (Figure 4\u2014figure supplement 2) addresses potential temperature-dependent RNAi effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "RNAi depletion of respiratory chain components recapitulated thermal limit phenotypes within the thermal range: atp-2(RNAi) embryos were more elongated at 12\u00b0C and 16\u00b0C (p=0.0034, p=0.0039); nuo-1(RNAi) and cyc-1(RNAi) embryos showed reduced size. All three depletions increased surface-to-volume ratio, mimicking wild-type beyond thermal limits and supporting the view that cellular hallmarks reflect restricted aerobic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 provide strong experimental support for the causal link between restricted aerobic metabolism and morphological changes. The recapitulation of thermal limit phenotypes by respiratory chain compromise within the thermal range (C53-C54) is compelling evidence. Statistical support is provided for individual observations (C50-C52). However, the manuscript notes that the three RNAi conditions differ somewhat in their effects (C53), which is not fully explained. Sample sizes for some conditions are small (noted in Methods), which may limit statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The thermal response of select cellular features changed precisely at viability-defined thermal limits, with a mere 10% decrease in viability associated with observable cellular changes. Experiments with compromised respiration revealed that aerobic metabolism plays a smaller role at thermal limits, raising the possibility that other metabolic routes are favored. Changes in size and shape observed beyond thermal limits can be recapitulated by impairing aerobic metabolism, supporting the view that these changes arise in response to restricted aerobic metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 synthesize the main findings. The coincidence of cellular changes with viability-defined limits (C55) is striking and well-documented. The observation that 10% viability decrease correlates with cellular changes (C56) is notable but the causal relationship is uncertain. The inference about reduced reliance on aerobic metabolism (C57) is well-supported by the RNAi experiments. The speculation about alternative metabolic routes (C58) is reasonable but requires direct metabolic profiling. The recapitulation argument (C59-C60) is the strongest evidence for the causal link between restricted aerobic metabolism and morphological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C68"
+    ],
+    "result": "The work provides critical experimental evidence that restricted aerobic metabolism is a general principle characterizing thermal limits in multicellular organisms in water and on land, representing an important piece of the puzzle that contributes to defining both thermal limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C68 make broad generalizations based on data from two nematode species. While the evidence within C. elegans and C. briggsae is strong, extrapolating to \"multicellular organisms in water and on land\" is premature. The study examines terrestrial nematodes in aqueous medium, not truly terrestrial conditions. Testing in genuinely aquatic vs. terrestrial organisms, and across more phylogenetic diversity, would be needed to support this general claim. The conclusion is overstated relative to the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Other mechanisms contribute to setting thermal limits: cold-induced unsaturated fatty acid changes contribute to the lower limit (accounting for 16% of cold tolerance difference in C. elegans); warm-induced glycosylation, synaptonemal complex defects, and sperm defects contribute to the upper limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 appropriately contextualize the current findings within existing literature. All claims are supported by appropriate citations. The acknowledgment that fatty acid changes account for only 16% of cold tolerance (C64) highlights that multiple mechanisms contribute to thermal limits. This provides important context that restricted aerobic metabolism is one of several contributing factors, not the sole determinant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript reviews the OCLTT and MASROS hypotheses, noting that oxygen supply-demand mismatch has been suggested to set thermal limits, that the MASROS hypothesis predicts decreased respiration beyond thermal limits, and that these predictions have not been tested experimentally in an integrative fashion. The temperature-size rule and its steeper slope in aquatic vs. terrestrial organisms support the oxygen limitation framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C84 provide appropriate background and motivation for the study. The literature review is accurate and well-cited. The identification of the knowledge gap (C79-C80, C83) appropriately motivates the experimental work. These claims establish the conceptual framework and are well-supported by citations. This is standard background material that contextualizes the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "C. briggsae diverged from C. elegans 18-100 million years ago, can develop at warmer temperatures, and the variance of cellular features does not increase beyond thermal limits compared to within the range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide supporting details. The divergence time (C89) is appropriately cited and justifies the comparative approach. The observation about C. briggsae's warmer tolerance (C91) is consistent with C2-C3. The variance observation (C90) is important for ruling out that thermal limit effects are simply due to increased noise or stochasticity. These are well-supported minor observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "Cell cycle duration within the thermal range follows Arrhenius kinetics in C. elegans with 92% explained variance, but plateaus beyond both thermal limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, and C14 specifically address the Arrhenius model fitting. The 92% explained variance indicates excellent fit within the thermal range. The plateau beyond limits (C12) represents a clear departure from Arrhenius behavior. However, the manuscript should clarify: (1) whether this is R\u00b2 or adjusted R\u00b2, (2) how many data points were used in the fit, (3) whether residuals were examined for systematic deviations. The F-test approach for detecting departures is appropriate, but the manuscript should report the actual F-statistics and degrees of freedom, not just p-values.",
+    "result_type": "MAJOR"
+  }
+]

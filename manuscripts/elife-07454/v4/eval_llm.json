@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C34",
+      "C35",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors introduce a new approach to predict protein-protein binding affinity based on inter-residue contacts (ICs) at the interface. Using a benchmark dataset of 144 complexes (filtered to 122, then 81 'cleaned' complexes), they demonstrate that ICs correlate with experimental binding affinity, with optimal correlation at 4.0 \u00c5 cutoff (R = -0.50, p < 0.0001) for the initial dataset and R = -0.59 (p < 0.0001) at 5.5 \u00c5 for the cleaned dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C25, C34, C63-C71 collectively establish the methodological approach and demonstrate correlation between ICs and binding affinity. The data filtering process is documented (C22, C64-C65), the dataset characteristics are described (C66-C69), and the correlation results are reported with statistical significance (C23-C25, C34). The approach is reproducible with clear definitions (C70-C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors demonstrate that experimental methods used for binding affinity measurements significantly impact prediction accuracy. Reliable methods (stopped-flow fluorimetry, SPR, spectroscopy, ITC) show correlations ranging from R = -0.53 to -0.70, while indirect methods (inhibition assays, fluorescence spectrophotometry) show meaningless correlations (R \u2248 0.04-0.05). Removing unreliable methods improves correlation from R = -0.50 to R = -0.59.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C34 provide comprehensive evidence that experimental method choice affects prediction accuracy. The analysis systematically evaluates 10 different experimental methods (C26), reports specific correlations for each reliable method (C27-C30), identifies problematic methods with near-zero correlations (C31-C32), explains their limitations with citations (C33), and demonstrates improvement when unreliable data are removed (C34). This is a well-supported finding with clear statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors demonstrate that inter-residue contacts (ICs) are superior descriptors of binding affinity compared to buried surface area (BSA), with ICs showing R = -0.59 vs BSA R = -0.46. Classification of ICs by residue polarity (polar/apolar/charged) further improves performance, with Model 3 achieving R = -0.67 compared to R = -0.59 for total ICs alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 demonstrate systematic comparison of structural descriptors with clear statistical evidence. The superiority of ICs over BSA is established (C35), specific contact types are analyzed (C36), and the improvement from combining contact types is quantified (C39). The residue classification scheme is clearly defined (C72-C73). Model performance comparisons are reported with appropriate statistics (C38-C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "The authors develop an ICs/NIS-based model (Model 6) that combines interfacial contacts classified by residue type with non-interacting surface properties, achieving the best reported performance (R = -0.73, RMSE = 1.89 kcal/mol) on the cleaned dataset of 81 complexes. The model identifies charged and polar residue contacts as the most relevant contributions to binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C42, C56-C57, C61 establish the final model's performance with clear statistical metrics. The model equation is provided (referenced in C42), performance is quantified (C41, C56), and the simplicity of using only two structural features is emphasized (C57). The claim of 'unprecedented accuracy' (C56) and 'best predictor reported to date' (C61) is supported by the comparison in the next result group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C62"
+    ],
+    "result": "The ICs/NIS-based model shows reduced sensitivity to conformational changes compared to previous methods, with similar performance for rigid (R = -0.75, RMSE = 1.88 kcal/mol) and flexible (R = -0.73, RMSE = 1.88 kcal/mol) complexes. This indicates that interface residue contacts are robust predictors less affected by conformational changes upon binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43-C46, C62 demonstrate the model's robustness to conformational changes with quantitative evidence. The performance metrics for rigid vs flexible cases are nearly identical (C43-C44), supporting the claim of reduced sensitivity (C45). The interpretation that ICs are robust predictors is a reasonable inference from the minimal performance difference (C46, C62). Figure 3 and 4 provide visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C76"
+    ],
+    "result": "The ICs/NIS-based model outperforms all previously published methods on a common set of 79 complexes, including methods by Kastritis et al., Horton & Lewis, Moal et al., and 99 intermolecular parameters from CCharPPI. The comparison demonstrates superior performance across both rigid and flexible complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C76 establish the comparative superiority of the new model. The comparison methodology is clearly described (C76), ensuring fair evaluation on a common dataset. Figure 4 provides visual evidence of outperformance across multiple methods (C47). The comprehensive comparison including 99 additional parameters from CCharPPI (C48) strengthens the claim of superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors provide mechanistic insight into why ICs outperform BSA: ICs represent a 'higher level definition' that captures both contact surface and pairwise interactions related to interface packing. Using the Fab D3H44-Tissue factor complex as an example, they show that ICs distribute contributions more evenly across residues than BSA, which is heavily dependent on residue solvent accessibility in the free form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide mechanistic explanation supported by a specific example. The conceptual distinction between ICs and BSA is clearly articulated (C49-C51), and the Fab D3H44-Tissue factor complex provides concrete evidence (C52-C55). Figure 5 and its supplement visualize the more even distribution of IC contributions compared to BSA. The inference that this leads to higher prediction accuracy (C55) is reasonable given the demonstrated performance differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors confirm that higher numbers of interfacial contacts correlate with stronger binding, consistent with prior evidence that interfaces are larger and more tightly packed with increasing interaction strength. While ICs and BSA are related, ICs show substantially better correlations with binding strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 place the findings in context of prior knowledge. The relationship between contact number and binding strength is established as consistent with literature (C58-C59, with citations). The comparative superiority of ICs over BSA is reiterated with supporting data (C60). This represents confirmatory findings that validate the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The authors performed fourfold cross-validation repeated 10 times to assess model robustness, partitioning the dataset into training (75%) and validation (25%) sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 describes appropriate cross-validation methodology. The approach is standard and well-described. Results are referenced as being in Supplementary file 3, though the specific cross-validation results are not detailed in the main text. The methodology is sound for assessing model generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors provide background context establishing that protein-protein interactions are critical for cellular functions, that binding affinity is key to understanding complex formation, that perturbations lead to disease, and that current computational methods for predicting binding affinity have significant limitations including failure to account for conformational changes and other factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C19 establish background knowledge and motivation. These are well-supported by appropriate citations and represent established knowledge in the field. The claims about limitations of existing methods (C13-C15) are supported by citations. This provides appropriate context but represents background rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

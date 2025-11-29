@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the theoretical background contrasting the prevailing view of motor cortex (representing muscle/movement parameters) with the dynamical systems perspective (where neural activity evolves lawfully from initial states through rotational dynamics). This dynamical view is supported by prior work in non-human primates showing rotational population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide well-cited background establishing two competing theoretical frameworks. The prevailing view (C1, C8, C9, C17) and dynamical systems perspective (C2, C3, C10-C12) are both supported by appropriate citations to prior literature. The characterization of macaque findings (C13-C17) accurately represents published work and provides the foundation for the current human study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study recorded neural activity from two participants with ALS-related tetraplegia (T6 and T7) using implanted microelectrode arrays during an 8-target center-out task controlled by finger movements. Participants had different degrees of motor impairment and movement timing, with T6 showing faster responses and greater motor capability than T7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C62 provide comprehensive methodological details about participants, recording equipment, task design, and data collection parameters. These are straightforward descriptive claims about the experimental setup that are internally consistent and appropriately detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Population neural activity in both human participants exhibited strong rotational dynamics in the jPCA plane, with rotations proceeding consistently across conditions from initial pre-movement states. The top jPCA plane captured 61% (T6) and 27% (T7) of variance, comparable to 28% reported in macaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 present the core finding with quantitative support from Figure 1B,C and Video 1. The variance explained values provide objective metrics, and comparison to macaque data (C28) is appropriate. However, the substantial difference between T6 (61%) and T7 (27%) warrants more discussion about what drives this variability and whether it relates to disease progression or other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Shuffle control analyses disrupting the relationship between pre-movement and movement-epoch activity eliminated the rotational structure, demonstrating that the observed rotations are not artifacts of the jPCA method but reflect genuine dynamical structure in the neural population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C63-C70 describe critical control analyses shown in Figure 2 and supplements. The shuffle controls appropriately test whether jPCA might spuriously find rotations in complex multiphasic data. The qualitative (C29) and quantitative (C30) loss of rotational structure after shuffling provides strong evidence that the findings are not methodological artifacts. The logic is sound and follows established practices from prior macaque work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The distribution of angles between neural state and its derivative peaked near \u03c0/2 in both human participants, similar to macaque data, confirming rotational dynamics at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide an independent quantitative metric of rotational dynamics shown in Figure 3. The angle analysis converges with the jPCA findings and the similarity to macaque data strengthens the cross-species comparison. The interpretation that angles near \u03c0/2 indicate rotation is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C43"
+    ],
+    "result": "Human motor cortex contains similar dynamical structure to non-human primates, suggesting a conserved underlying dynamical system for movement generation and challenging the prevailing representational view in favor of a dynamical systems perspective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5 and C36, C43 represent the primary conclusions but face significant limitations. Both participants had ALS with motor cortex changes (C34-C35), making generalization to healthy human motor cortex uncertain. While the similarity to macaque data is suggestive, the small sample size (n=2), disease state, and lack of healthy controls limit the strength of this inference. The conclusion is plausible but requires validation in larger, healthier populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Both participants likely had substantial motor cortex changes due to ALS progression, limiting the ability to conclusively demonstrate that dynamical activity is present in healthy human motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 appropriately acknowledge a critical limitation of the study. The authors correctly note that ALS-related changes may affect motor cortex structure and function, preventing definitive conclusions about healthy human motor cortex. This honest assessment of limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The findings raise questions about whether rotational dynamics persist during imagined movements, which could distinguish between the hypothesis that dynamics generate muscle patterns versus serving as covert rehearsal mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 present speculative but well-reasoned future directions. The distinction between dynamics for muscle generation versus covert rehearsal is conceptually clear and testable. These are appropriately framed as open questions rather than conclusions, with C38 citing relevant prior work on motor cortex activity during imagined movements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The findings suggest potential for improving brain-machine interface performance by incorporating neural population dynamics into control algorithms, based on prior macaque work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 propose translational applications based on cited macaque work (Kao et al., 2015). While the suggestion is reasonable, it remains speculative without direct testing in human BMI systems. The inference from observing dynamics to improving BMI performance requires additional validation steps not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Prior human studies in participants with tetraplegia demonstrated that motor cortical action potentials contain information about intended movement kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 accurately cites prior work (Truccolo et al., 2008) establishing that human motor cortex activity contains kinematic information. This provides appropriate context for the current study's investigation of dynamical structure.",
+    "result_type": "MINOR"
+  }
+]

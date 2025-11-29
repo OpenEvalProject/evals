@@ -1,0 +1,1127 @@
+{
+  "submission": {
+    "id": "59308ba4-d76d-4b2e-a7a8-50413e6d99aa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:09:46.309720Z",
+    "updated_at": "2025-11-29T05:09:46.309720Z"
+  },
+  "content": [
+    {
+      "id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "submission_id": "59308ba4-d76d-4b2e-a7a8-50413e6d99aa",
+      "content_type": "manuscript",
+      "content_text": "# Reward modulates the effect of visual cortical microstimulation on perceptual decisions\n\n## Authors\n\n- Nela Cicmil<sup>1</sup> \u2020\n- Bruce G Cumming<sup>2</sup>\n- Andrew J Parker<sup>1</sup>\n- Kristine Krug<sup>1</sup>\n\n### Affiliations\n\n1. Department of Physiology, Anatomy & Genetics University of Oxford Oxford United Kingdom\n2. Lab of Sensorimotor Research National Eye Institute National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEffective perceptual decisions rely upon combining sensory information with knowledge of the rewards available for different choices. However, it is not known where reward signals interact with the multiple stages of the perceptual decision-making pathway and by what mechanisms this may occur. We combined electrical microstimulation of functionally specific groups of neurons in visual area V5/MT with performance-contingent reward manipulation, while monkeys performed a visual discrimination task. Microstimulation was less effective in shifting perceptual choices towards the stimulus preferences of the stimulated neurons when available reward was larger. Psychophysical control experiments showed this result was not explained by a selective change in response strategy on microstimulated trials. A bounded accumulation decision model, applied to analyse behavioural performance, revealed that the interaction of expected reward with microstimulation can be explained if expected reward modulates a sensory representation stage of perceptual decision-making, in addition to the better-known effects at the integration stage.\n\n## Introduction\n\nA central issue for models of perceptual decision-making is how information about the value associated with different choices is combined with sensory information to influence the final decision. Balancing sensory evidence with the prospect of reward must take place on a case-by-case basis for every trial in which a decision is made. When sensory information is used simply to signal the availability of reward in value-based decisions, the activity of lateral intraparietal (LIP) neurons correlates with the relative reward an animal can expect for a particular choice (Platt and Glimcher, 1999; Sugrue et al., 2004). In perceptual decision-making, however, making a correct decision requires the discrimination of one version of the stimulus from another. Experimentally, different perceptual choices can be arranged to receive greater or lesser reward, contingent upon a correct decision. Such manipulations affect perceptual decision-making, for example by improving performance or biasing decisions (e.g., Summerfield and Koechlin 2010; Weil et al. 2010). However, the neural mechanisms by which reward signals influence perceptual decision-making are not fully understood.\n\nPerceptual decision-making has been successfully modelled as a bounded evidence-accumulation process in which sensory evidence about the visual stimulus is represented in sensory cortex and then integrated over time in sensorimotor structures such as lateral intraparietal cortex (area LIP) (Shadlen and Newsome, 2001; Roitman and Shadlen, 2002; Mazurek et al., 2003; Huk and Shadlen, 2005; Gold and Shadlen, 2007) (Figure 1). Previous human neuroimaging and animal electrophysiology studies found that when perceptual decision-making is modelled in this way, information about reward is reflected only at the integration stage, represented in sensorimotor structures such as area LIP (Rorie et al., 2010; Summerfield and Koechlin, 2010; Mulder et al., 2012). But does reward simply affect the accumulation of sensory evidence and the motor response, or does it also affect neuronal representations of the sensory stimulus, for example in visual cortical area V5/MT (Figure 1)?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig1-v2.jpg)\n\n**Figure 1.:** Primary visual cortex (area V1) comprises the initial stage of visual information processing but neurons here can respond to visual sensory signals that do not reach perception (Cumming and Parker, 1997). On the other hand, activity of motion- and disparity-selective neurons in visual area V5/MT have been closely linked to animals' subjective perception during discrimination of structure-from-motion (SFM) visual stimuli (Dodd et al., 2001). In the present study, we artificially activate motion- and disparity-selective neurons in visual area V5/MT with electrical microstimulation. Microstimulation biases perceptual choices towards visual interpretations that match the tuning of the stimulated neurons (Krug et al., 2013). In visual discrimination tasks, sensory evidence is integrated over time into a decision variable (DV), represented in the activity of neurons in lateral intraparietal cortex (area LIP; see Gold and Shadlen 2007 for review). Since visually evoked and electrically evoked signals both influence behaviour, they are presumably integrated together to influence the DV. The results of evidence integration also affect activity in the frontal eye fields (FEF) that represent the planning of eye movements (saccades), which animals use to indicate their perceptual decision in the discrimination task (Figure 2). Previous studies have established an influence of reward on neural representations in sensorimotor regions such as area LIP (Platt and Glimcher, 1999; Sugrue et al., 2004; Rorie et al., 2010). However, it is not known whether reward can also affect sensory or perceptual signals represented in visual cortex during perceptual decision-making.\n\nThere is some indication that expected reward can affect sensory representations. Blood-oxygen level dependent (BOLD) signals in sensory cortex are modulated by reward probability, size and delivery (Pleger et al., 2008; Serences and Saproo, 2010; Weil et al., 2010). However, the BOLD signal is an indirect measure of neural activity that averages the responses of many neurons, including those that are excited by the sensory stimulus and those that are inhibited by it (Logothetis et al., 2001; Logothetis and Wandell, 2004), and may be differentially affected by modulatory signals in comparison to neuronal spiking (Boynton, 2011). A stronger indication comes from a study in which neuronal responses from area V1 were electrophysiologically recorded while animals performed a saccadic curve-tracing task (Stanisor et al., 2013). This study showed that V1 activity was predicted by the reward value of a stimulus relative to other stimuli, implying that reward signals have the potential to reach the earliest stages of sensory cortical processing (Figure 1).\n\nExperimental interference with the activity of sensory cortex may directly induce changes in the subject's behaviour or their perceptual report, and provides a tool with which to dissect the perceptual decision-making pathway. Such interventions provide strong evidence for a causal role of that region in generating that behaviour or report (Parker and Newsome, 1998). Electrical microstimulation of small populations of neurons in relevant cortical regions, combined with sensory stimulation, can produce reliable changes in perceptual reports, which are specific to the stimulus preferences of the neurons at the microstimulated site (Salzman et al., 1990, 1992). When the stimulated neurons encode combinations of visual cues, microstimulation adds a signal that is specific to that combination, as found in cortical area V5/MT for visual motion and binocular disparity (Krug et al., 2013). Using microstimulation to bias perceptual choices under different reward conditions is a novel approach with which to explore the interaction between expected reward and sensory signals that contribute directly to perceptual decisions.\n\nWe investigated the interaction between electrical microstimulation of visual cortical area V5/MT and available reward size for a correct choice during visual discrimination of a structure-from-motion (SFM) stimulus. The available reward size for a correct choice was varied according to animals' preceding behavioural performance. When electrical microstimulation is applied in a sensory area during a perceptual decision task, any effect of reward that acts exclusively at the integration stage, by which time visually and electrically evoked sensory signals have been combined (Figure 1), would not differentially affect visually evoked and electrically evoked signals. On the other hand, reward could have a differential effect on neurons that have been specifically excited by either visual or electrical microstimulation. We found that the size of the microstimulation effect on perceptual choices was modulated by the size of the available reward for a correct choice. In the context of a simplified bounded evidence-accumulation model, these results were best explained by an effect of reward on neuronal representations of sensory evidence, in addition to an effect on the integration stage.\n\n## Results\n\nWe trained two macaque monkeys (Fle & Ica) to discriminate the direction of rotation of a transparent cylinder defined by SFM in a random-dot kinematogram. This stimulus portrays two transparent surfaces of moving dots, with the dots on one surface moving in the opposite direction from the dots on the other surface. This pattern of motion generates a percept of a rotating cylinder with a compelling sensation of 3D depth (Treue et al., 1991) (Video 1). Adding binocular disparities to the dots defines the depth order of the two dot surfaces and specifies the direction of rotation of the cylinder to be clockwise (CW) or counter-clockwise (CCW) as viewed from above. If both dot surfaces have zero disparity, then the depth order of the stimulus is ambiguous and the perception is bistable (Nawrot and Blake, 1989; Parker and Krug, 2003). Cylinders were presented at a range of binocular disparities, measured in degrees of visual angle (\u00b0), in a pseudo-randomized order (Dodd et al., 2001). At the end of each 2000 ms trial, animals indicated their decision about cylinder rotation with a saccadic eye movement to the appropriate target (Figure 2). When the binocular disparity objectively defined an unambiguous rotation, the animal was rewarded for a correct choice of rotation direction. When there was zero binocular disparity, there was no correct answer and choices were rewarded randomly on 50% of these trials. Electrical microstimulation of motion- and disparity-selective multi-units (MU) in visual cortical area V5/MT was applied during visual stimulus presentation in a randomly selected half of the trials. Area V5/MT has been shown to have a specific role in 3D depth processing (Dodd et al., 2001; Krug et al., 2004; Krug and Parker, 2011), and to contain specialised intrinsic connectivity suitable for combining visual depth and motion signals (Ahmed et al., 2012), relevant for the cylinder stimulus. As previously reported, electrical microstimulation of area V5/MT biases animals' choices towards the cylinder rotation direction preferred (PREF) by the MU (\u03c72 likelihood-ratio test of nested models Equations 1a,b, p < 0.05 in 28 out of 48 sites; Fle: 13/20 sites; Ica: 15/28 sites) (Krug et al., 2013). When combined with simultaneous visual stimulation, these artificially induced signals are effectively integrated into perceptual decisions and consistently influence behaviour in this visual task.\n\n![Video 1.](https://cdn.elifesciences.org/articles/07832/elife-07832-media1.mov.jpg)\n\n**Video 1.:** An illustration of the SFM rotating cylinder stimulus used in the study. This example video shows the ambiguously rotating zero-disparity version of the cylinder, for which perception of the direction of rotation is bistable.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig2-v2.jpg)\n\n**Figure 2.:** At the beginning of each trial, the monkey looked at the fixation point. The visual stimulus was then presented for 2000 ms, within the receptive field (RF) of the V5/MT multi-unit site selected for microstimulation (yellow dashed circle indicates RF location). Upon stimulus offset, two choice targets appeared. The monkey indicated its perceptual decision with an eye movement to one of the choice targets (left for clockwise [CW] rotation and right for counter-clockwise [CCW]). If the response was correct, the animal received a fluid reward; if incorrect, it received no reward and a time-out. On 50% of trials (pseudo-randomly chosen), electrical microstimulation was added to the V5/MT multi-unit site during visual stimulus presentation. Inset panels: Fluid reward volume increased in two steps up to a maximum depending upon the animal's performance history, that is, the number of immediately preceding consecutive correct choices. Reward size increased more quickly for Fle than Ica as a function of consecutive correct responses, but for both animals we categorized the trials into two conditions: maximal reward size (\u2018large\u2019) and sub-maximal reward size (\u2018small\u2019). The average size of sub-maximal rewards was half the maximal reward size for both animals.\n\nThe two-alternative forced-choice paradigm dynamically updated the reward contingencies for the animal depending on whether the animal's response was correct or incorrect. When the choice on the immediately preceding trial was correct, the fluid reward volume for the current trial was increased in two stages up to a maximal quantity (Figure 2). The largest reward size was therefore available for longer sequences of consecutively correct choices, to incentivize animals towards better performance. \u2018Large\u2019 reward was twice the average volume of \u2018small\u2019 rewards. All trials with reward size less than maximal were classified as \u2018small reward\u2019, as there were too few trials with the intermediate reward size to allow meaningful further division by size. We provided rewards for correct decisions about the visual stimulus regardless of rotation direction, so changes in available reward size did not bias perceptual decisions towards one direction or another.\n\n### Large reward trials are associated with better performance\n\nIn agreement with the existing literature about reward and perceptual decisions, available reward size affected perceptual choices. Trials from psychophysical (non-microstimulated) experimental blocks were separated according to available reward size and pooled across blocks and animals. There was a significant interaction between the slope of the fitted psychometric function and available reward size, indicating better performance in large reward trials (\u03c72 likelihood-ratio test of nested models Equations 2a,b, \u2018Materials and methods\u2019: p = 0.001; Figure 3). Since the reward schedule was dependent on performance history, fluctuations in animals' performance over the course of a block could have contributed to a correlation between large reward trials and high performance. However, the control analyses for performance fluctuations (see below) show that such fluctuations do not explain the main results of the study.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig3-v2.jpg)\n\n**Figure 3.:** Animals performed two blocks of the visual discrimination task at each site, prior to the introduction of electrical microstimulation. Trials were separated according to available reward size (small or large) and pooled across all sites over both animals. Psychometric functions are fit with cumulative Gaussians. There is a significant interaction between reward size and steepness of the slope (s.d. of the fitted function; \u03c72 likelihood-ratio test of nested models Equations 2a,b: p = 0.001). For large reward trials the slope is steeper, indicating better performance accuracy. Error bars show the standard error of the mean (s.e.m.).\n\n### Bounded accumulation can model interactions between reward and perceptual decision-making\n\nIt is not well understood at which stages of cortical processing for perceptual decision-making neural signals for reward are integrated (Figure 1). However, the neural mechanisms of perceptual decision-making per se have been modelled successfully by a bounded evidence-accumulation process in which representations of sensory information are noisily integrated over time towards decision bounds that represent the possible perceptual outcomes (Gold and Shadlen, 2007; Ratcliff and McKoon, 2008) (Figure 4A). Considering the possible effects of reward on different parameters in the bounded accumulation model can help us to interpret how expected reward influences perceptual decisions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig4-v2.jpg)\n\n**Figure 4.:** (A) Momentary evidence, in favour of choice \u2018A\u2019 over choice \u2018B\u2019, is accumulated over time. The time-varying accumulation of evidence is termed the decision variable (DV; black line). (B) The bounded accumulation model applied to the cylinder task with microstimulation. The momentary evidence (e) is the difference in activity between two neuronal pools, one selective for CW rotation and one for CCW rotation. Parameter k represents the sensitivity of these sensory representations to the cylinder disparity C (Palmer et al., 2005). In each trial, the DV follows a stochastic \u2018drift-diffusion\u2019 path with an average drift rate dependent on the mean of e = kC. Parameter B represents the distances to the CW and CCW decision bounds, which are assumed to be equal. Microstimulation contributes to e as additional evidence in favour of the sensory preference of the stimulated V5/MT multi-unit site (CCW in this example). The perceptual decision depends on which bound was first reached, or, if neither is reached, which bound the DV is nearest to at the end of stimulus viewing. (C) Model simulations illustrate that the slope of the psychometric function, fitted by a simple logistic model of bounded accumulation (Equation 3a), can be affected by changes in either parameter k or B; for example, an increase in either parameter will steepen the slope, indicating improved performance. (D) Model simulations illustrate how insertion of additional sensory evidence by electrical microstimulation in visual cortex biases perceptual choices toward the preferred (PREF) cylinder disparity of the stimulated multi-unit (MU), which is revealed as a shift of the psychometric function. (E) An increase in parameter B steepens the slope of the psychometric functions, but does not change the size of microstimulation shift. This is because by the evidence-accumulation stage, visually evoked and electrically evoked signals are combined and cannot be differentially affected (see panel B). (F) An increase in parameter k also steepens the slope of the psychometric function. However, improved perceptual sensitivity to the stimulus affects only the visually-evoked sensory representations (see panel B), so the relative contribution of the electrically-evoked signals is decreased, which results in a decrease in the microstimulation-induced shift of the psychometric function.\n\nIn the bounded accumulation model, sensory evidence about the cylinder stimulus is represented as the difference in activity of two pools of sensory neurons, where the conjoint motion and disparity tuning of each pool represents one of the two possible interpretations of cylinder rotation direction (Mazurek et al., 2003; Palmer et al., 2005; Gold and Shadlen, 2007; Krug et al., 2013) (Figure 4B). Sensory evidence is integrated over time to influence the drift-diffusion of the decision variable (DV) (Huk and Shadlen, 2005). The DV starts at a particular distance from the two decision bounds and, during stimulus viewing, drifts stochastically towards one or other decision bound at a rate proportional to the sensory evidence favouring the prospective choices. Upon stimulus offset, the animal makes a saccade towards the target that corresponds to its perceptual choice, which depends upon either the first bound that was crossed or, if no bound was crossed, the bound nearer to the DV final position (Kiani et al., 2008; Fetsch et al., 2014) (Figure 4B). The distance between the DV starting point and the decision bounds predicts the reaction time distribution in a reaction time task; in the present fixed viewing duration task, it offers predictions of decision times that are shorter than the stimulus duration and, critically for our data, it predicts performance accuracy (Kiani et al., 2008; Fetsch et al., 2014).\n\nAccording to the bounded accumulation model, an increase in either the stimulus sensitivity (represented by parameter k) or the distance between the DV starting point and the bounds (represented by parameter B, Equation 3a, \u2018Materials and methods\u2019; Figure 4B) can improve performance (Figure 4C; compare to Figure 3). This is because increasing the perceptual sensitivity to the stimulus allows smaller stimulus disparity signals to have a greater effect on the perceptual decision; on the other hand, increasing the diffusion distance to the decision bounds decreases the relative impact of spurious noise on the final decision (Bogacz et al., 2006; Ratcliff and McKoon, 2008). The contributions of these parameters cannot be differentiated based upon these perceptual choice data alone because they both improve performance. However, these parameters make different predictions about what should happen to visual cortical microstimulation when performance improves. Electrical microstimulation biases perceptual decisions towards the PREF direction of the stimulated MU site (Figure 4D; Krug et al., 2013). If performance in large reward trials improves as a result of an increase in B, this will not affect the size of the microstimulation shift, because B acts at an integration stage that is positioned after the location at which visually evoked and electrically evoked signals have been combined (Figure 4E; see also Figure 1). If performance improves as a result of an increase in k, this will decrease the relative influence of microstimulation on perceptual choices (illustrated by a smaller horizontal shift between microstimulated and non-microstimulated psychometric functions) because k acts specifically on visually evoked sensory representations before they are combined with electrical microstimulation signals (Figure 4F). Therefore, the insertion of the electrical microstimulation signal at the level of representation of sensory evidence (area V5/MT) allows us to separate the effects of parameters k and B according to this model.\n\n### Expected reward size modulates the effect of microstimulation on perceptual decisions\n\nWe fit the bounded accumulation model of decision-making (Equation 3a, \u2018Materials and methods\u2019) to behavioural choice data combined across significant PREF microstimulation sites (sites with a significant microstimulation effect in their PREF cylinder rotation direction), separately for each animal (Figure 5). Prior to pooling, cylinder disparity values were normalised by the maximum disparity from the range used at each site. The size of the microstimulation effect - the horizontal shift between microstimulated and non-microstimulated psychometric functions\u2014was decreased in large reward trials (dashed lines) compared to small reward trials (smooth lines), implicating a change in stimulus sensitivity (parameter k) by reward (see Figure 4F). Using a \u03c72 likelihood-ratio test, we compared the goodness-of-fit of the full bounded-accumulation model in which all parameters were allowed to vary by reward (Equation 3a, \u2018Materials and methods\u2019) to a nested model in which the parameter in question (either k or B) was frozen, that is, not allowed to vary by reward (Equations 3b,c, respectively).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig5-v2.jpg)\n\n**Figure 5.:** Trials were pooled across significant PREF microstimulation sites separately for monkeys Fle (A) and Ica (B). Psychometric functions were fit with the bounded accumulation model (Equation 3a). In both cases, the effect of microstimulation (horizontal shift between red and black psychometric functions) was smaller in large reward trials (dashed lines) compared to small reward trials (smooth lines). For both animals, the best-fitting model allowed both parameter k (stimulus sensitivity) and parameter B (distance to decision bounds) to be affected by reward condition (\u03c72 likelihood-ratio tests of nested models Equations 3b,c, p < 0.05 in all cases, see main text for details). This suggests that reward can affect sensory representations as well as evidence integration during perceptual decision-making. Error bars show s.e.m.\n\nFor both animals, the overall best-fitting model was the full model in which both parameters B and k were affected by reward condition (Equation 3a). For both animals, parameter k was significantly increased in large compared to small reward trials (\u03c72 likelihood-ratio test of nested models Equations 3 a,b: Fle: p < 0.001; Ica: p < 0.001; Table 1). This result supports the interpretation that the improvement in performance seen in large reward trials is in part due to an increase in parameter k, that is, increased sensitivity of sensory representations to the visual stimulus when reward is large. The estimated distance between the starting point of DV integration and the decision bounds, represented by parameter B, was also significantly affected by reward, decreasing in large compared to small reward trials (\u03c72 likelihood-ratio test of nested models Equations 3a,c: Fle: p = 0.007; Ica: p < 0.001; Table 1). Altogether these results indicate that expected reward affects perceptual decision-making both at the sensory representation stage (parameter k) and the integration stage (parameter B). Statistical results are unaffected when data were pooled across all microstimulation sites.\n\n**Table 1.**\n Parameter values for bounded accumulation model fit to data combined over significant PREF microstimulation sites\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Animal</th>\n      <th>Parameter</th>\n      <th>Estimated value (small reward)</th>\n      <th>Estimated value (large reward)</th>\n      <th>% Change in estimate by reward</th>\n      <th>\u2212logL* for frozen parameter model</th>\n      <th>\u2212logL* for full model</th>\n      <th>\u03c7-value of model comparison</th>\n      <th>p value of \u03c72-test\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Fle</td>\n      <td>k</td>\n      <td>1.74</td>\n      <td>2.41</td>\n      <td>+38.3</td>\n      <td>3045.0</td>\n      <td>3034.3</td>\n      <td>21.4</td>\n      <td>0.00002</td>\n    </tr>\n    <tr>\n      <td>Ica</td>\n      <td>k</td>\n      <td>1.94</td>\n      <td>3.50</td>\n      <td>+80.4</td>\n      <td>2398.9</td>\n      <td>2389.2</td>\n      <td>19.4</td>\n      <td>0.00001</td>\n    </tr>\n    <tr>\n      <td>Fle</td>\n      <td>B</td>\n      <td>1.77</td>\n      <td>1.40</td>\n      <td>\u221220.7</td>\n      <td>3037.9</td>\n      <td>3034.3</td>\n      <td>7.2</td>\n      <td>0.0073</td>\n    </tr>\n    <tr>\n      <td>Ica</td>\n      <td>B</td>\n      <td>1.29</td>\n      <td>0.79</td>\n      <td>\u221238.4</td>\n      <td>2394.8</td>\n      <td>2389.2</td>\n      <td>11.2</td>\n      <td>0.0008</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Negative log likelihoods (\u2212logL) reported for each model fit, that is, with all parameters allowed to vary by reward condition (Equation 3a) compared with each parameter frozen (Equations 3b,c).\u2020p values were obtained from a \u03c72 likelihood-ratio test comparing the fit of the full bounded evidence-accumulation model to a restricted version of the model in which the specified parameter was not allowed to change value for different reward conditions (nested models Equations 3a,b,c, \u2018Materials and methods\u2019; Figure 5A,B)._\n\nAn independent site-by-site analysis confirmed that the effect of microstimulation was significantly decreased in large reward trials compared to small reward trials (Figure 6). For each significant PREF microstimulation site, psychometric functions were fit with a pair of cumulative Gaussian functions (Equation 1a, \u2018Materials and methods\u2019), whose means were allowed to differ by microstimulation condition but whose standard deviation was constrained to be the same (Krug et al., 2013). We illustrate these psychometric functions for example site fle302. Here, MU neurons were selective for a CCW cylinder rotation direction (Figure 6\u2014figure supplement 1A). The effect of electrical microstimulation was equivalent to adding binocular disparity of \u22120.023\u00b0 in magnitude to the stimulus dots, biasing choices toward the PREF cylinder direction CCW (Figure 6\u2014figure supplement 1B). We then separated trials according to whether available reward was large or small (Figure 6\u2014figure supplement 1C,D). Microstimulation always biased the animal's response toward CCW rotation, the PREF rotation direction at this site. However, when reward size was large, the effect of electrical microstimulation was equivalent to addition of \u22120.019\u00b0 of binocular disparity (Figure 6\u2014figure supplement 1C), representing a reduction of about 30% compared to when reward size was small, where the microstimulation current was equivalent to addition of \u22120.027\u00b0 (Figure 6\u2014figure supplement 1D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig6-v2.jpg)\n\n**Figure 6.:** This is significant over both animals for microstimulation shifts normalised by discrimination threshold at each site (A; Wilcoxon sign-rank test: p < 0.001) and also for the raw microstimulation shifts (B; p < 0.001). This is also significant for each animal separately (see \u2018Results\u2019 for details). Raw microstimulation shifts (B) are plotted on a log-scale; please note that the effect of reward is comparable across different microstimulation effect sizes (see Figure 8). Black lines indicate the identity relationship.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) At this site, the MU tuning had a preference for counter-clockwise rotating cylinders (PREF direction = CCW). Filled circles: response to cylinder stimulus. Open circle: baseline (blank screen). (B) Electrical microstimulation consistently increased the proportion of choices in the PREF direction. The proportions of PREF responses with and without microstimulation were fitted with a pair of cumulative Gaussians, constrained so that both curves had the same standard deviation (s.d.) but different means. The two-mean fit was better than a single function describing both microstimulated and non-microstimulated data, indicating a significant microstimulation effect at this site (\u03c72 likelihood-ratio test of nested models Equations 1a,b, p < 0.001). The horizontal shift between the fitted curves is a measure of microstimulation effect size. Here the effect is equivalent to adding a binocular disparity of \u22120.023\u00b0 to the stimulus, such that the cylinder would appear to rotate more strongly in the PREF direction, CCW. Division by the s.d. gives the normalized microstimulation effect (here, 1.298). (C) In trials where available reward was large, microstimulation was decreased, equivalent to adding \u22120.019\u00b0 of disparity (normalized shift = 1.165). (D) In trials where available reward was small, microstimulation was equivalent to adding \u22120.027\u00b0 of binocular disparity (normalized shift = 1.542). All error bars show s.e.m.\n\nOver all significant PREF microstimulation sites over both animals, we considered both the unit-less normalised microstimulation-induced shift (divided by the cylinder threshold at the site; Figure 6A), and the raw shift measured in degrees of visual angle (Figure 6B). The normalised microstimulation shift was significantly smaller for large expected reward trials (median = 0.67) compared to small expected reward trials (median = 0.88; Wilcoxon sign-rank test of normalised shift values, two-sided: n = 28, p < 0.001) and also when considered separately for each animal Fle (median large reward trials = 0.94; small reward trials = 1.37; n = 13, p = 0.005) and Ica (median large reward trials = 0.54; small reward trials = 0.68; n = 15, p = 0.022). Similarly, the raw microstimulation shift was significantly smaller for large expected reward trials (median = 0.0064\u00b0) compared to small expected reward trials (median = 0.0093\u00b0; Wilcoxon sign-rank tests of raw shift values: n = 28, p < 0.001) and also when considered separately for each animal Fle (median large reward trials = 0.0099\u00b0; small reward trials = 0.024\u00b0; n = 13, p = 0.013) and Ica (median large reward trials = 0.0025\u00b0; small reward trials = 0.0071\u00b0; n = 15, p = 0.005). Statistical results were unaffected when data were pooled across all stimulation sites.\n\n### Control: visual perturbation to test an adjustment strategy\n\nWe tested the possibility that the animals detect some subtle difference between trials with and without electrical microstimulation, and accordingly adjust their decision criterion to bias their choices against the microstimulation effect - and that they might do this more in large reward trials to reduce their error rate. This seems unlikely, as in principle the animals could then have applied a different criterion to all microstimulation trials and thereby eliminated the effect of microstimulation altogether, resulting in far fewer errors overall and thereby improving their acquisition of rewards. Nevertheless, to examine the possibility of such a strategy, we performed a set of psychophysical control experiments with monkey Ica that reproduced the effect of electrical microstimulation using a visual stimulus perturbation. This variation omitted the electrical microstimulation itself, but retained the cognitive cues that might be delivered to the animal during electrical microstimulation.\n\nUsing the same experimental parameters as for electrical microstimulation sessions, we inserted an additional binocular disparity signal, \u2018\u2206dx\u2019, to the cylinder stimulus pseudo-randomly on 50% of trials (see Salzman et al. 1992; Fetsch et al. 2014 for a similar manipulation of visual motion signals in a motion direction discrimination task). In our experiment, the trials with the \u2206dx signal were overtly flagged by a change in the appearance of the cylinder stimulus from all black dots to all white dots (Figure 7). This change in cylinder appearance is highly salient to human observers and we assume it is also salient for the monkey. Importantly, the animal was only rewarded for perceptual choices that would have been correct had the additional disparity signal not been present. This creates a form of \u2018microstimulation\u2019 experiment in which the presence of the extra disparity cue \u2206dx is clearly signalled by a change in stimulus colour from black to white. The animal was first trained over 10 days and 45,000 trials on this task. Unlike the electrical microstimulation experiments, which contained a mixture of microstimulation biases across different V5/MT sites, favouring sometimes CW and sometimes CCW choices, the added disparity signal \u2206dx always gave a consistent shift towards CCW perceptual choices. This increased the chance that the animal would engage in a strategy that exploited all available information to reduce its error rate and gain more reward.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig7-v2.jpg)\n\n**Figure 7.:** A control experiment was run with animal Ica, in which microstimulation was simulated by insertion of an additional disparity signal (\u2018\u2206dx\u2019) into the cylinder stimulus. The animal was rewarded only for correct choices with respect to cylinder disparity before insertion of \u2206dx. Inset panels illustrate the colour change of cylinder dots from all black in trials with no additional disparity added (A) to all white dots in \u2206dx trials (B). Performance in the \u2206dx control was significantly better in large reward compared to small reward trials (\u03c72 likelihood-ratio test of nested models Equations 2a,b: p < 0.001), but there was no significant effect of reward on the shift induced by additional \u2206dx disparity (\u03c72 likelihood-ratio test of nested models Equations 2a,c: p > 0.05). Therefore, even when trials that contain additional disparity were clearly signalled, the animal did not make an adjustment to counter this additional signal more on large relative to small reward trials. By contrast, under the same model, reward significantly reduced the electrical microstimulation shift for both Fle and Ica (see main text). This suggests that the change in microstimulation shift with reward was not likely to be due to the animals adopting a decision criterion that depended both on reward size and on detecting microstimulation. Error bars show s.e.m.\n\nDespite the fact that trials with \u2206dx were clearly signalled, the psychometric function for \u2206dx trials was horizontally shifted towards the response direction predicted by the additional disparity signal, successfully emulating the horizontal shift of the psychometric function due to V5/MT electrical microstimulation (Figure 7). As observed in the electrical microstimulation experiments, there was a significant improvement in performance in trials where a larger reward was available for a correct choice (\u03c72 likelihood-ratio test of nested models Equations 2a,b: Ica-\u2206dx: p < 0.001). However, there was no significant interaction between reward condition and \u2206dx-induced shift in the \u2206dx psychometric functions (\u03c72 likelihood-ratio test of nested models Equations 2a,c: Ica-\u2206dx: p > 0.05; Figure 7), in contrast to the results when the same test was applied to the electrical microstimulation datasets (\u03c72 likelihood-ratio test of nested models Equations 2a,c: Fle: p < 0.001; Ica: p < 0.001). Therefore, there is no evidence to support the view that microstimulation induces a different percept that the animal discounts more effectively when reward is higher, since the animal does not make an adjustment in large reward trials when the presence of additional disparity is clearly signalled.\n\n### Controls: stimulus eccentricity and slower fluctuations in task engagement\n\nWe explored further trends in the data to evaluate the potential relationship between the reward modulation of visual cortical microstimulation, stimulus eccentricity, discrimination threshold, and raw overall microstimulation effect at each site. Visual area V5/MT contains a retinotopic map of contralateral visual space (Albright and Desimone, 1987) and the receptive field (RF) location of each microstimulated MU varies in eccentricity, that is, distance from the fovea (Desimone and Ungerleider, 1986). The cylinder stimulus was matched to the MU RF location at each microstimulation site. Both animals' cylinder discrimination thresholds significantly correlated with stimulus eccentricity, worsening as eccentricity increased (Figure 8A). The raw overall microstimulation effect also significantly correlated with the cylinder discrimination threshold at each site (Figure 8B). The reward modulation of the raw microstimulation shift effect was significantly correlated with stimulus eccentricity and with the raw overall microstimulation effect size for both animals considered together, and for one animal considered alone (Ica), such that the biggest raw effects of reward on microstimulation occurred for sites with largest eccentricity (where thresholds were high) and the biggest raw overall microstimulation effect (Figure 8C,D). However, these correlations disappeared for reward modulation of the microstimulation shift effect when normalised by cylinder discrimination threshold at each site (Figure 8E,F). This shows that the reward effect is constant when microstimulation is expressed as a fraction of the discrimination threshold.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig8-v2.jpg)\n\n**Figure 8.:** (A) Cylinder discrimination threshold (s.d. of the cumulative Gaussian fitted to the psychometric function) significantly correlates with stimulus eccentricity, which is determined by the MU receptive field (RF) location at the microstimulation site (Fle: p = 0.001; Ica: p = 0.001). (B) Raw overall microstimulation effect at each site is significantly correlated with discrimination threshold (Ica: p < 0.001; Fle: p < 0.001). (C) Effect of reward on the raw microstimulation shift (i.e. the raw microstimulation shift in large reward trials minus the raw shift in small reward trials) significantly correlates with stimulus eccentricity for both animals considered together (p = 0.018) and also for Ica alone (p < 0.001). (D) Effect of reward on the raw microstimulation shift significantly correlates with the raw overall microstimulation effect for both animals considered together (p = 0.028) and also for Ica alone (p < 0.001). (E) When the effect of reward is considered over microstimulation shifts normalised by discrimination threshold, the correlation with stimulus eccentricity disappears (p > 0.05 in all cases). (F) When the effect of reward is normalised by discrimination threshold at each site, the correlation with raw overall microstimulation effect disappears (p > 0.05 in all cases). (E, F) show that the reward effect is constant when expressed as a fraction of discrimination threshold. All correlation tests use Pearson's product\u2013moment correlation coefficient.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Time-series analysis of performance over the microstimulation session at example site fle300. Smoothed performance accuracy (proportion correct choices) was calculated over a sliding time window of 30 trials. The horizontal line indicates mean performance accuracy at the site. Smoothed performance accuracy fluctuates above and below this mean, perhaps reflecting fluctuations in task engagement. The amount of performance fluctuation at each site was calculated as the area between the smoothed performance curve and the horizontal line, normalised by total number of trials. Epochs of good and bad performance were identified, marked in green and red respectively. (B) There is no correlation between normalised reward effect size and the amount of performance fluctuation across microstimulation sites, either for animals separately or together (Pearson's product\u2013moment correlation: p >> 0.05 in all cases), suggesting that performance fluctuation cannot explain the reward effect on microstimulation. Next, we tested whether the effect of reward on microstimulation remained in good epochs (C) and bad epochs (D), combined across sites and animals. For both types of epoch, the effect of microstimulation was significantly smaller in large compared to small expected reward trials (\u03c72-test of nested models Equations 2a,c: good epochs: p < 0.001; bad epochs: p < 0.001), showing that the effect of expected reward on microstimulation remains present in different states of task engagement. Although it might be expected that there may be fewer difficult (small disparity) trials in good epochs than bad epochs, it can be seen that all disparities are represented in both epoch types, allowing the psychometric functions to be fitted.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** The microstimulation effect may wane over time in some experiments (Salzman et al., 1992). Microstimulation might be less effective near the end of each experimental session, simultaneously with the occurrence of a greater proportion of large reward trials near the end of the session \u2013 for example, owing to a training effect that increases the number of consecutive correct responses. Such a co-variation could explain the difference in microstimulation effect by reward. A running average of the proportion of large reward trials was calculated for each experimental session at each significant PREF microstimulation site (significant shift in the PREF stimulus direction), across both animals. The normalised reward effect on microstimulation shift is plotted against the gradient of the best-fit line of the running-average proportion of large reward trials over time, for each site. A positive gradient indicates an increased proportion of large reward trials towards the end of the microstimulation session. There was no correlation between reward effect and proportion of large reward trials at the end of the session over the two animals (Spearman's rank correlation: n = 28, p > 0.05; Pearson's linear correlation: n = 28, p > 0.05).\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07832/elife-07832-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** Pair-wise quantile\u2013quantile comparison plots between the electrical microstimulation data (pooled over significant PREF sites), fitted cumulative Gaussian model (Equation 2a), and fitted bounded accumulation model (Equation 3a) for Fle (A, B, C) and Ica (D, E, F). \u2018Quantile\u2019 values are the proportions of PREF choices for each stimulus disparity data point, taken from the real datasets. For each such quantile value, the corresponding cylinder disparity value was extracted from the fitted psychometric function for each model. These model-simulated disparity values were plotted against the disparities obtained from the microstimulation data, and against each other. A linear quantile\u2013quantile relationship indicates a reasonable fit of the model to the microstimulation data for model-data comparisons, and a reasonable correspondence between model fits for model\u2013model comparisons.\n\nIn these experiments, available reward size for a correct choice depended upon animals' performance in the preceding trials, increasing gradually when animals performed correctly over consecutive trials (Figure 2). Sequences of correct trials are more likely when the animal is more engaged in the task, perhaps due to attentional or motivational states. In an alternative interpretation, slower fluctuations in task engagement, rather than expected reward size, are the cause of the observed effects. Variations in task engagement would be expected to occur at least an order of magnitude slower (over the space of around 30 trials) than differential valuations of upcoming reward (which occur over the space of two or three trials; Figure 2). We therefore address this concern with a time-series analysis of task engagement.\n\nFor the experimental session at each microstimulation site for each animal, a smoothed performance average was calculated using a sliding time window of size 30 trials (Figure 8\u2014figure supplement 1A). The extent of performance fluctuation over the experimental session was estimated as the area between the smooth performance curve and average (normalised by total number of trials). If fluctuations in task engagement underlie the observed association between reward and microstimulation shift, there should be a correlation between the extent of performance fluctuation and size of reward effect. However, there was no correlation for either animal considered separately or together (p > 0.05 in all cases; Figure 8\u2014figure supplement 1B). Furthermore, the effect of expected reward on microstimulation shift remained when trials were separated according to whether they occur in \u2018good\u2019 or \u2018bad\u2019 epochs of task engagement (\u03c72 likelihood-ratio test of nested models Equations 2a,c, data pooled across sites and animals: good epochs: p < 0.001; bad epochs: p < 0.001; Figure 8\u2014figure supplement 1C,D). Therefore, the modulation of cortical microstimulation by available reward size does not seem to be associated with or dependent upon slower fluctuations in task engagement.\n\nIn further controls, we found that the effect of reward could not be explained by the waning of microstimulation effect over time during an experimental session, combined with a propensity to have a greater proportion of large reward trials at the end of a microstimulation session (Figure 8\u2014figure supplement 2). Also, there were no significant differences in proportion of microstimulated trials or mean absolute disparity between reward conditions (Supplementary file 1).\n\n## Discussion\n\nPerformance-contingent reward size modulated the effect of electrical microstimulation of visual area V5/MT on visual perceptual decisions. The size of the perceptual shift induced by electrical microstimulation was smaller when the available reward for a correct choice was larger. These results suggest that reward signals interact differently with visually evoked and artificially introduced sensory information. A simplified bounded accumulation model of perceptual decision-making best explains the data if expected reward is allowed to affect the representation of sensory evidence. This effect of reward is in addition to an effect upon the integration of that evidence during the formation of the perceptual decision. If reward were to affect only the integration stage, it should influence behavioural responses to neural signals in the same way regardless of whether those signals have been evoked by visual input or artificially by microstimulation (Figure 4). Experimentally, however, we found the converse (Figure 5). We propose that, on this view, reward interacts with the sensory/perceptual signals in cortical representations of the visual stimulus during visual perceptual decision-making, in addition to affecting the integration stage (see Figure 1).\n\nIn the fitting of the bounded evidence-accumulation model, we found that when available reward was large there was a decrease in the distance between the starting point of the DV and the decision bounds. Under conditions where one choice is associated with a larger expected reward than the other, previous neurophysiological, human neuroimaging and computational studies have shown a decreased distance between the DV starting position and the decision bound for larger reward, which is beneficial because this bias results in an overall greater accumulation of reward (Feng et al., 2009; Rorie et al., 2010; Summerfield and Koechlin, 2010; Gao et al., 2011; Mulder et al., 2012). When both choices are associated with larger rewards, as in the present study, the distance to both decision bounds might be expected to decrease, as we, and others (Rorie et al., 2010), have found. On its own, this effect would impair performance accuracy when available reward is large because the closer proximity of the DV to the bounds would result in a greater effect of accumulated noise on the final perceptual choice (Bogacz et al., 2006, 2007; Rorie et al., 2010). However, the reciprocal increase in sensitivity to the visual stimulus, discussed above, balances the decrease in accuracy resulting from the shorter distance-to-bound, so that overall performance in fact improves when available reward is larger, as we observe.\n\nPrevious studies found that information about reward was reflected only at the integration stage of visual perceptual decision-making, represented in sensorimotor structures (Feng et al., 2009; Rorie et al., 2010; Summerfield and Koechlin, 2010; Gao et al., 2011; Mulder et al., 2012). However, experiments employing other types of task, such as a cued curve-tracing saccade task (Stanisor et al., 2013), somatosensory discrimination (Pleger et al., 2008), tasks in which a subject must select between two presented visual stimuli (Serences, 2008; Serences and Saproo, 2010), or a fixation task where a reward is delivered with or without a visual cue (Arsenault et al., 2013), found that activity in sensory cortex can also be modulated by reward. Except for Stanisor et al. (2013), these studies used BOLD-fMRI, an indirect measure of neural activity that averages the responses of many neurons excited or inhibited by the sensory stimulus (Logothetis et al., 2001; Logothetis and Wandell, 2004). Our results extend these previous findings by indicating that expected reward also interacts with sensory representations about the visual stimulus during visual discrimination itself.\n\nThe source of the reward signal affecting sensory cortex may reflect an influence from prefrontal cortex, anterior cingulate cortex, or amygdala, known to represent reward and value predictions during decision-making (Rushworth and Behrens, 2008; Bermudez and Schultz, 2010; Levy and Glimcher, 2012), or neuromodulation by serotonergic neurons originating from the dorsal raphe nucleus, which also signal reward (Cohen et al., 2015). Another significant source of reward signals in the brain are dopaminergic reward-predicting neurons, which may also indirectly modulate or enhance sensory cortical activity (for review, see Schultz 2002).\n\nIn the present study, the size of available reward was expected to affect animals' motivation and indeed they demonstrate better performance in large reward trials. In this way, our study differs from other studies in which prior probability, not reward value, of each stimulus is cued in each trial, which may bias perceptual decisions to obtain larger overall rewards without necessarily affecting motivation or performance (for example, Rao et al. 2012).\n\n### Controls for animal strategy and performance fluctuation\n\nOur results could not be explained by an adaptive change in the animals' strategy based upon recognizing the presence of microstimulation. In a control experiment, in which an additional visual disparity (\u2206dx) signal that mimicked the microstimulation effect was clearly cued by a change in stimulus colour, the effect of \u2206dx on choices was not affected by expected reward size, even though overall task performance was better in large reward trials as seen in the electrical microstimulation sessions. This indicates that the animal did not apply a strategy to compensate for the \u2206dx signal specifically on large reward trials, even when trials that contained additional visual disparity were clearly identifiable. This experiment controls for the situation in which microstimulation produces a different percept that the animal is able to discount more effectively when available reward is higher. However, this psychophysical experiment cannot simulate possible noise or other aberrance in inputs associated with electrically evoked sensory neuronal activity, which, for example, might be weighed less compared to more \u2018normal\u2019, visually evoked inputs; weights that could change based on expected reward. We discuss this issue further in the next section.\n\nIn the present study, reward depended on animals' performance in the preceding trials, increasing gradually when animals performed correctly over consecutive trials, which is more likely to happen when the animal is more engaged in the visual task. Therefore, instead of expected reward size, fluctuations in task engagement (for example due to attentional or motivational states) could result in epochs of good and bad performance, which are inevitably associated with more large reward or small reward trials respectively. These fluctuations could therefore potentially underlie the observed association between large reward trials and better performance, and the observed effects on the microstimulation shift. However, a time-series analysis of performance over the course of the microstimulation experimental sessions showed that there was no correlation between the performance fluctuation and the differential effect of microstimulation by reward. Furthermore, when trials in each microstimulation session were separated according to whether they occurred in a \u2018good epoch\u2019 (a window of better-than-average performance) or \u2018bad epoch\u2019 (poorer-than-average performance), the modulation of microstimulation shift by reward size remained within both types of epoch. These analyses, which monitor closely engagement with the task over time, provide evidence against the hypothesis that the differential microstimulation effect can be accounted for purely by fluctuations in task engagement. Future experiments can directly rule out this possibility by varying reward size independently of performance, for example by using a block design or trial-by-trial cueing of the available reward size.\n\n### Limitations of a simplified bounded evidence-accumulation model\n\nIn our interpretation of the results, we assume that electrically evoked signals in visual area V5/MT are thereafter integrated into the perceptual decision-making process in a manner identical to visually evoked evidence (Figure 5). This interpretation is supported by the behavioural shift induced by electrical microstimulation in perceptual decisions. However, the circuit mechanisms of the effect of electrical microstimulation are incompletely understood, and microstimulation has been reported to have unanticipated inhibitory effects on downstream cortical targets (Logothetis et al., 2010; Sultan et al., 2011). Such observations have generally been made in anaesthetised animals, without the concurrent presentation of a visual stimulus expected to activate the same brain areas as microstimulation, and at stimulation currents orders of magnitude higher than used in this study (250\u20131000 \u03bcA, compared to our 20 \u03bcA). Therefore, it is difficult to interpret these effects in the context of our experimental protocols.\n\nA remaining possibility is that odd or aberrant inputs from electrically evoked sensory neurons might be weighed less by decision-making areas compared with more \u2018normal\u2019 that is, visually evoked inputs, and that these weights could change based upon expected reward. Our \u2206dx experiment cannot control for this case because we added the additional stimulus disparity signal via visual stimulation that by this argument cannot mimic the artificially induced microstimulation signal. However, we argue that there is currently little evidence to suggest that the brain applies differential weights to electrically and visually evoked sensory signals in this way. It is important to note that microstimulation affects behaviour in both large and small reward trials, suggesting that it is not an aberrant signal but a clear signal that affects perceptual choices in all cases. When combined with relevant visual stimulation, electrical microstimulation in many visual cortical areas significantly and reliably affects behaviour in a variety of visual perceptual tasks (Cicmil and Krug, 2015). If the microstimulation signal could affect final motor output via a neural path independent from visually evoked signals, it would be expected that microstimulation would be detectable and/or processed by the brain in some qualitatively different way. But a recent study that modelled in detail the relationship between microstimulation, perceptual choices and decision confidence found that their data did not support the view that microstimulation induces a change in neural activity that is processed qualitatively differently from visually evoked activity (Fetsch et al., 2014), and our \u2206dx control shows that the animal cannot use an obvious difference in the stimulus percept to discard some of the visual information provided.\n\nElectrophysiological recordings from stimulus-relevant neurons during visual perceptual decision-making are necessary to directly show whether expected reward modulates the neuronal firing rates and tuning functions at a specific visual cortical site in the manner predicted by an increase in stimulus sensitivity under large reward. Yet, the unique contribution of a microstimulation intervention to this question is to show that reward modulations at a level prior to the integration stage have a causal effect on the perceptual decision, rather than representing a top-down echo of decision-formation that might not be causally relevant to the perceptual choice itself.\n\nThe form of the bounded accumulation model considered here is a simplified case of the race model, in which evidence for each choice is integrated separately by two decision variables (Usher and McClelland, 2001). We used the assumption that the accumulator inputs are perfectly negatively correlated, which corresponds to the action of one accumulator only (Figure 5A,B) (Palmer et al., 2005; Ratcliff and McKoon, 2008). To avoid unnecessary assumptions and over-fitting, we chose the simplest model framework that could explain our findings. The microstimulation signal was modelled as additional sensory evidence towards the cylinder rotation direction preferences of the microstimulated neurons. The null choice bias, whereby animals apply an overall bias towards the non-preferred direction of the stimulated neurons in order to match overall reward proportions for different choices (Salzman et al., 1992), was modelled as an offset to the overall psychometric function (Equation 3a, \u2018Materials and methods\u2019). The parameters of the bounded accumulation model are commonly used to explain both choice and reaction time. However, bounded integration underlies perceptual decisions even when stimulus viewing duration is dictated by the environment (Kiani et al., 2008), and the model can be fit usefully in these circumstances (Fetsch et al., 2014). Although we employed a fixed viewing duration task, differential effects of reward on parameter k, coding for stimulus scaling sensitivity, and parameter B, coding for distance-to-bound, could be differentiated in our model due to the insertion of the microstimulation signal in visual area V5/MT (Figure 4).\n\nThe lack of reaction-time measurements in the present experiment leaves open the possibility that changes to parameter B may also arise from an overall increase in the gain of accumulation of sensory evidence. The consensus from electrophysiological studies (Rorie et al., 2010), human neuroimaging (Summerfield and Koechlin, 2010; Mulder et al., 2012), and psychophysical studies (Diederich and Busemeyer, 2006; Diederich, 2008) is that reward effects on the DV accumulation process occur through changes to the distance-to-bound; we therefore follow this interpretation. A microstimulation-reaction time task, or detailed measurement of neuronal firing rates in sensorimotor structures such as LIP that represent the integration stage, would be necessary to resolve this issue. Regardless, the specific interpretation of parameter B's effects does not affect the main conclusions of this study.\n\n### Relationship between reward and attention\n\nWe have argued that the most parsimonious explanation for our observations is that larger available reward increases the sensitivity of visually evoked sensory representations about the visual stimulus. This bears strong similarity to the effect on neuronal responses when attention is allocated to a specific spatial location or to a PREF stimulus feature (Treue and Maunsell, 1996, 1999; McAdams and Maunsell, 2000; Corbetta and Shulman, 2002; Saenz et al., 2002). Indeed, manipulations of reward and attention are often difficult to separate (Maunsell, 2004). However, these effects cannot trivially explain our findings.\n\nWith regard to feature attention, our trial-by-trial reward schedule was balanced so that both perceptual interpretations of the cylinder were equally rewarded, if correctly identified. Feature attention was therefore not directed in favour of one perceptual interpretation of cylinder rotation direction. Our experimental task always directed spatial attention to the location of the visual stimulus, because the animal responded to the visual stimulus in every trial to obtain a reward, whether small or large. Thus, results from spatial attention studies, which measure differences in neuronal activity when attention is directed into and away from their RF (Treue and Maunsell, 1996, 1999; McAdams and Maunsell, 2000), cannot directly be applied to our results. The definition of spatial attention could be extended to encompass gradations of attention applied to a particular spatial location according to expected reward size, which may be manipulated by experiments such as ours. In that case, the present study would be the first to provide data demonstrating such an effect during perceptual decision-making, and to integrate such modulations of sensory representations coherently with reward manipulation and decision model theory (Smith and Ratcliff, 2009).\n\nIn summary, we found that the effect of V5/MT electrical microstimulation on perceptual decisions was less effective when available reward was larger. In the context of a bounded evidence-accumulation model, this suggests that reward modulates sensory representations during perceptual decision-making, in addition to altering the integration of sensory evidence into the DV in sensorimotor structures (Gold and Shadlen, 2007). Further electrophysiological research should record in area LIP to show directly how the electrically introduced signal in V5/MT is integrated into the perceptual decision under different reward states, and should record in visual area V5/MT to show how reward modulates the signals of sensory evidence in visual cortex during perceptual decisions.\n\n## Materials and methods\n\n### Animals\n\nMicrostimulation experiments were conducted in one cortical hemisphere in two adult male rhesus macaque monkeys (Macaca mulatta). Prior to the experiments, each monkey was surgically implanted under general anaesthesia with a head-holding device and a recording chamber placed over a craniotomy above the occipital lobe. For monkey Fle, scleral magnetic search coils were implanted in both eyes under general anaesthesia, to monitor eye position and vergence. Monkey Ica had one scleral magnetic search coil only. Monkeys were trained to fixate on a binocularly presented marker and to perform the visual task that required the animals to discriminate the motion and binocular disparity information in a rotating SFM cylinder stimulus (Figure 2).\n\n### Locations and ethics statements\n\nExperiments were conducted at two locations: monkey Fle was tested at Oxford University, UK; monkey Ica was tested at the National Institutes of Health, Bethesda, USA (henceforth referred to as Oxford and NIH, respectively). Except where specifically described, the protocols were identical in the two locations.\n\nAt Oxford, all procedures complied with United Kingdom Home Office regulations on animal experimentation. At NIH, all procedures complied with US Public Health Service policy on the humane care and use of laboratory animals, and all protocols were approved by the National Eye Institute Animal Care and Use Committee.\n\n### Visual stimuli\n\nThe visual stimulus for the discrimination task was a rotating SFM cylinder made up of two transparent surfaces of random dots moving in opposite directions (random dot kinematogram) (Treue et al., 1991) (Video 1). The dots had a sinusoidal velocity profile as would be expected in an orthographic projection of a three-dimensional rotating cylinder. When the two dot surfaces are presented at the same binocular disparity, the cylinder rotation direction is bistable and over time will undergo spontaneous fluctuations in the perceived direction of rotation (Wallach and O'Connell, 1953; Ullman, 1979). Adding opposite horizontal disparity separates the front and back walls of the cylinder in depth, thereby disambiguating the direction of rotation. The disparity of each dot was scaled sinusoidally to match the velocity profile, with the maximal disparity difference between the two dot surfaces at the central axis of the cylinder. Equal but opposite disparities were added to the front and back surfaces of the cylinder, so that its principal axis remained in the plane of fixation. Below, we use the term \u2018disparity\u2019 to refer to this maximal difference in disparity between dots moving in opposite directions. We used the following convention: when the front wall of dots moved to the left with respect to cylinder orientation axis, this corresponded to a CW rotating cylinder as viewed from above; when the front wall moved to the right, this corresponded to a CCW rotating cylinder. To allow pooling across microstimulation sites, quantitative behavioural analysis was carried out with reference to PREF choices. For the pooled data, positive disparities refer to the stimulus rotation direction for which the site was selective.\n\nCylinder stimuli consisted of 50% black dots and 50% white dots presented at maximum contrast (99% of full contrast) on a mid-grey background at a dot density of 25%. Half the dots (randomly selected) moved in one direction and the remaining dots moved in the opposite direction. When a dot reached the edge of the cylinder, it reversed direction.\n\nIn Oxford, stimuli were displayed binocularly using a Wheatstone stereoscope configuration with two monitors (Eizo FlexScan 78, Eizo, Bracknell, UK). A pair of mirrors positioned in front of the monkey reflected the images from each of the two monitor screens separately into the left and right eyes. Frame rate was 72 Hz. Monitor screens were positioned 84 cm from the monkey, and covered approximately 21\u00b0 \u00d7 17\u00b0 of the visual field. Mean luminance was 42 cd/m2 and dot diameter was 0.2\u00b0. The dot refresh rate was 2%, that is, on each video frame, 2% of the dots were relocated to a randomly chosen location on the cylinder surface, so that dots had a mean lifetime of 615 ms in each location.\n\nAt NIH, stimuli were displayed binocularly using two DLP projectors (Projection Design evo2sx+, projectiondesign\u00ae/Barco, Inc., Xenia, OH) with polarizing filters. The image was projected onto a polarisation-preserving screen (Filmscreen 150, Stewart Filmscreen, Amelia, OH). Frame rate was 60 Hz. The screen was 112 cm away from the monkey, and covered approximately 41\u00b0 \u00d7 32\u00b0. Mean luminance of the display viewed through polarized filters was 17.5 cd/m2 and dot diameter was 0.18\u00b0. Dot refresh rate was 1%.\n\n### Psychophysical task\n\nThe psychophysical task was a two-alternative forced choice discrimination of the direction of rotation of the SFM cylinder. Stimulus disparities were matched to the psychophysical threshold of the animal in order to obtain a full psychometric function. To initiate a trial, the animal had to acquire the fixation point. The visual stimulus was then presented for 2000 ms (Figure 2). At stimulus offset, the fixation point also disappeared and two choice targets corresponding to the two possible directions of cylinder rotation appeared. In the Oxford, targets were located to the left and right side of the fixation point. In the NIH set-up, targets were also located opposite one another on either side of the fixation point but on an axis normal to the cylinder orientation. The animals indicated their perceptual decision by making a saccadic eye-movement to one of the two targets. A saccade to the correct target resulted in a fluid reward. If the choice was incorrect, the animal received no reward and there was a short time-out before the start of the next trial. For ambiguous cylinders (zero-disparity trials), 50% of the trials were rewarded at random. If the animal broke fixation during stimulus presentation, no reward was given.\n\n### Reward schedule\n\nAnimals worked on the task to gain fluid rewards to meet their daily requirements. Reward size available for a correct choice on each trial depended upon the number of immediately preceding consecutive correct responses that the animal had made, increasing in two steps up to a maximum (Figure 1). Choices in zero-disparity trials were rewarded 50% of the time at random, and for the purposes of calculating the reward sequence they were discounted. For monkey Ica, reward size was 0.08 ml on the first and second consecutive correct choices after an error, 0.12 ml for the third consecutive correct choice, and 0.2 ml on the fourth and all subsequent consecutive correct trials. For monkey Fle, reward size was 1/3 of maximum for the first correct choice, 2/3 of maximum for the second, and reached maximum size (usually 0.18 ml) for the third and all subsequent consecutive correct choices. Thus reward size increased more quickly for Fle than Ica as a function of consecutive correct responses. For both animals, we categorized trials into two conditions: maximal (large) reward size and sub-maximal (small) reward size, where for both animals the average size of the two sub-maximal reward sizes was half that of the maximal reward size. Animals were familiar with their respective reward schedule because it was used throughout all training and recording sessions with the discrimination task; it was not introduced only for the microstimulation experiments.\n\n### V5/MT multi-unit recording\n\nRecording from MU neuronal clusters was carried out to characterize and select the cortical microstimulation sites. Single tungsten microelectrodes coated with polyimide tubing were used (0.1\u20130.3 M\u03a9 impedance at 1 kHz; MicroProbe, Inc., Gaithersburg, MD). A hydraulic microdrive mounted on the recording cylinder advanced the electrode through a guide tube. Electrical signals from the electrode were filtered, amplified and displayed through visual and audio monitors, and stored to computer disk. Online classification of activity and pre-processing steps were done with the DataWave Discovery system (DataWave Technologies, Loveland, CO) at Oxford and Spike 2 (Cambridge Electronic Design Ltd., Cambridge, UK) data acquisition program at NIH.\n\nArea V5/MT was approached posteriorly through the recording chamber in incremental steps of about 100 \u00b5m. Area V5/MT was identified by established physiological criteria: (1) the approach through the grey/white matter pattern comprising the striate cortex, lunate sulcus and the posterior bank of the superior temporal sulcus (STS) (Zeki, 1974); (2) by neurons' characteristic direction selectivity and binocular disparity selectivity and its clustering in V5/MT (Van Essen et al., 1981; Maunsell and Van Essen, 1983; Albright and Desimone, 1987; Bradley et al., 1995, 1998; DeAngelis et al., 1998; DeAngelis and Newsome, 1999); (3) the known relationship between the size and eccentricity of V5/MT receptive fields (Desimone and Ungerleider, 1986); and (4) from penetration to penetration, the relationship between RF positions and known topography of V5/MT (Albright and Desimone, 1987).\n\n### Selection and characterisation of stimulation sites\n\nMonkeys maintained fixation on a central fixation point while direction selectivity was established for an MU cluster at a particular electrode location, using kinetic dots moving coherently in different directions. The direction evoking the greatest response on average was assigned to be the PREF motion direction for the MU cluster. The RF boundaries were then mapped using a patch of dots moving in the PREF motion direction. After quantitative confirmation of direction tuning within these boundaries, the binocular disparity preference of the MU cluster was measured by presenting a plane of moving dots in the PREF direction at different binocular disparities around the fixation plane. Only MU sites with discernible motion and disparity tuning were further explored. The directions of motion of the two transparent planes of dots that made up the cylinder were aligned with the PREF and the opposite (NULL) directions of the MU cluster and the MU cylinder preference was calculated online over a range of disparities.\n\nWhen the direction- and cylinder disparity-preference of MU cluster activity were found to remain constant over at least 300 \u00b5m of cortex, the electrode was retracted to the middle of that stretch. At the proposed stimulation site, the MU RF size, direction selectivity and cylinder preference were quantitatively re-measured. The cylinder stimulus position, size, orientation, and dot speed were carefully matched to the preferences of the MU at the stimulation site. The monkey first performed 50 to 140 trials of the psychophysical task without microstimulation, prior to the microstimulation experiment, in order to allow the selection of a range of stimulus disparities near threshold at that site.\n\nThe total number of cortical sites at which microstimulation was applied was 20 in monkey Fle and 28 in monkey Ica. This number of biological replicates (different stimulation sites) was chosen to be as close as possible to the number of microstimulation sites used in previous studies of this cortical area (V5/MT; in particular, DeAngelis et al. 1998). Stimulation sites were selected freshly on each day of recording and the choice of sites for stimulation was independently determined on each occasion of performing the experiment, by reference to the selection criteria presented above.\n\n### Experimental procedure for microstimulation\n\nElectrical microstimulation was applied during the 2000 ms of stimulus presentation on half of the trials, pseudo-randomly interleaved with non-microstimulated trials. Stimulation consisted of 20 \u00b5A biphasic pulses of 200 \u00b5s cathodal stimulation followed by 200 \u00b5s anodal stimulation, delivered at 200 Hz. Only cortical microstimulation sites with at least 10 microstimulation trials and 10 non-stimulation trials at each of at least 5 different stimulus disparities were included in subsequent analyses. All included sites showed significant tuning to disparity in the cylinder stimulus (one-way ANOVA, p < 0.05).\n\n### Site-by-site quantification of microstimulation effect\n\nFor each microstimulation site, we plotted the proportion of choices made by the monkey towards the PREF rotation direction, at each stimulus disparity, separately for microstimulated and non-microstimulated trials. Behavioural data were fitted for each site with a two-mean cumulative Gaussian distribution:\n\n$$\nP_{PREF}(C)=1/2(1+erf((C\u2212(\u00b50\u00a0+\u00a0\\beta\u00b51))/\\sigma\\sqrt{2})),\n$$\n\nwhere C is the cylinder disparity (positive in PREF direction); \u00b5i is the mean of the distribution; \u03c3 is the s.d.; erf is the error function; \u03b2 = 1 for microstimulated trials and \u03b2 = 0 for non-microstimulated trials. PPREF corresponds to the probability of making a decision in the PREF direction of the microstimulated site. To test whether microstimulation significantly shifted the psychometric function, the two-mean model was compared to a model in which mean was not allowed to vary by microstimulation (Krug et al., 2013):\n\n$$\nP_{PREF}(C)=1/2(1+erf((C\u2212\u00b50)/\\sigma\\sqrt{2})).\n$$\n\nA \u03c72 likelihood-ratio test was used to ascertain whether the full model fitted the data significantly better than the nested model (p < 0.05; 1 degree of freedom as models differed by 1 parameter). Maximum likelihood estimate model fitting was performed with MATLAB's fminsearch function and was repeated multiple times from a wide range of starting parameter values, in order that results would not be driven by local minima.\n\nThe microstimulation effect is quantified by taking the estimated value of parameter \u00b51; this is equivalent to a horizontal shift in the psychometric curve. The size of the electrical microstimulation effect can thus be expressed in terms of the size of binocular disparity that would need to be added to the stimulus to shift perceptual behaviour to the same extent (Krug et al., 2013).\n\n### Quantification of interaction between reward, task performance and microstimulation\n\nA cumulative Gaussian function was used to evaluate the interaction between reward, task performance and microstimulation for psychometric data pooled across multiple microstimulation sites. Prior to pooling, we normalized stimulus disparity values at each site by dividing them by the maximum disparity value of the site. This ensured that the maximum normalized disparity was 1 and minimum was \u22121, with the other disparity values lying in between. In the full model both the mean \u00b5 and standard deviation (s.d.) \u03c3 are allowed to vary by microstimulation condition and reward condition,\n\n$$\nP_{PREF}(C)=1/2(1+erf((C\u2212(\u00b50+\\beta\u00b5_{1}+\\alpha\u00b5_{2}+\\alpha\\beta\u00b5_{3}))/(\\sigma_{0}+\\alpha\\sigma_{1}+\\beta\\sigma_{2})\\sqrt{2})),\n$$\n\nwhere C is the cylinder disparity (positive in PREF direction); \u00b5i represents the mean; \u03c3i represents s.d., \u03b1 = 1 in trials were available reward is large, otherwise \u03b1 = 0; \u03b2 = 1 in trials where additional stimulation is introduced, otherwise \u03b2 = 0; erf is the error function. PPREF corresponds to the probability of making a decision in the PREF direction of the additional stimulation introduced. To test whether reward affected task performance, this full model was compared with a nested model in which s.d. \u03c3 (a measure of performance threshold) was not allowed to vary by reward condition:\n\n$$\nP_{PREF}(C)=1/2(1+erf((C\u2212(\u00b50+\\beta\u00b5_{1}+\\alpha\u00b5_{2}+\\alpha\\beta\u00b5_{3}))/(\\sigma_{0}+\\beta\\sigma_{2})\\sqrt{2})).\n$$\n\nA \u03c72 likelihood-ratio test was used to ascertain whether the full model fitted the data significantly better than the nested model (p < 0.05; 1\u00a0degree of freedom as models differed by 1 parameter). Similarly, the effect of reward on microstimulation was evaluated with a \u03c72 likelihood-ratio test to compare the full model with a nested model in which the change in mean by microstimulation, represented by \u03b2\u00b5i, was not allowed to vary by reward condition:\n\n$$\nP_{PREF}(C)=1/2(1+erf((C\u2212(\u00b50+\\beta\u00b5_{1}+\\alpha\u00b5_{2}))/(\\sigma_{0}+\\alpha\\sigma_{1}+\\beta\\sigma_{2})\\sqrt{2})).\n$$\n\nModel fitting was performed as described in the previous section. We report uncorrected p values; however, all statistically significant results survive Bonferroni correction for multiple comparisons across the two animals (where relevant).\n\n### Decision model analysis: bounded evidence accumulation\n\nA logistic regression model representing the effect of cylinder stimulus disparity, microstimulation and trial reward condition on the psychometric functions was derived from the simple, one-dimensional drift-diffusion model of perceptual decision-making (Palmer et al., 2005; Gold and Shadlen, 2007) (see also Figure 1). The full bounded evidence-accumulation model explains perceptual choices in the PREF direction (PPREF) according to the following equation:\n\n$$\nP_{PREF}(C)=\u00a01\u00a0/(1\u00a0+\u00a0e^(\u2212((B_{0}\u00a0+\u00a0\\alphaB_{1})((k_{0}+\\alphak_{1}+\\betak_{2})C+\\beta)+x_{0}+\\alphax_{1}))),\n$$\n\nwhere C is the (normalized) cylinder disparity (positive in PREF direction); \u03b1 = 1 for large reward trials and \u03b1 = 0 for small reward trials; \u03b2 = 1 for microstimulated trials and \u03b2 = 0 for non-microstimulated trials. The relation between stimulus strength C and the aspect of DV drift that is driven by visually evoked sensory evidence is represented by parameter ki (see also Figure 4A,B). The distance to the decision bounds from the starting point of the drift-diffusion process and the overall gain of the drift rate are represented by parameter Bi. Behavioural null bias in non-stimulated trials (Salzman et al., 1990, 1992) is represented by parameter xi. To test whether reward affected parameter ki, this full model was compared with a nested model in which ki was not allowed to vary by reward condition:\n\n$$\nP_{PREF}(C)=\u00a01\u00a0/(1\u00a0+\u00a0e^(\u2212((B_{0}\u00a0+\u00a0\\alphaB_{1})((k_{0}+\\betak_{2})C+\\beta)+x_{0}+\\alphax_{1}))).\n$$\n\nA \u03c72 likelihood-ratio test was used to ascertain whether the full model fitted the data significantly better than the nested model (p < 0.05; 1\u00a0degree of freedom as models differed by 1 parameter). Similarly, the effect of reward on parameter Bi was evaluated with a \u03c72 likelihood-ratio test to compare the full model with a nested model in which Bi was not allowed to vary by reward:\n\n$$\nP_{PREF}(C)=\u00a01\u00a0/(1\u00a0+\u00a0e^(\u2212((B_{0})((k_{0}+\\alphak_{1}+\\betak_{2})C+\\beta)+x_{0}+\\alphax_{1}))).\n$$\n\nModel fitting was performed as described in previous sections. We report uncorrected p values; however, all statistically significant results survive Bonferroni correction for multiple comparisons across the two animals (where relevant). Quantile\u2013quantile comparisons between the fit of this decision model and the cumulative Gaussian model described in the previous section indicate a reasonable correspondence between model fits (Figure 8\u2014figure supplement 3).\n\n### Site-by-site quantification of effect of reward on microstimulation shift\n\nAt each microstimulation site, trials were divided according to whether the available reward size for a correct choice in the trial was large or small. The size of the horizontal shift of the psychometric function induced by electrical microstimulation was re-calculated as described in the previous section, separately for large and small reward trials. To normalise the effect of microstimulation across sites with different associated threshold due to stimulus eccentricity (see Figure 8), the horizontal shift of the psychometric function in each reward condition was divided by the psychometric threshold for that reward condition that is, the standard deviation (s.d.) of the fitted cumulative Gaussian (Equation 1a; Uka and DeAngelis 2006). A Wilcoxon sign-rank test across sites (p < 0.05, two-sided) was used to ascertain whether there was an overall significant difference in the size of the microstimulation shift between the large and small reward conditions. A non-parametric test was used because although the normalized shifts were normally distributed (Lilliefors test, p > 0.05), the underlying distribution of raw shift values was not normally distributed (Lilliefors test, p = 0.001). We report uncorrected p values; however, all statistically significant results survive Bonferroni correction for multiple comparisons across the two animals (where relevant).\n\n### Visual perturbation (\u2206dx) control experiment\n\nWe performed a control experiment on one monkey, Ica, in which we used a visual stimulus to mimic the psychophysical effect of microstimulation. We matched stimulus and task parameters to the microstimulation experiment but no electrical microstimulation took place. Instead, we added a signal of +0.005\u00b0 disparity, termed \u2018\u2206dx\u2019, to the stimulus in half of the trials, pseudo-randomly selected (see Salzman et al. 1992; Fetsch et al. 2014 for a similar manipulation in a visual motion task). This extra signal was not included in the determination of the correct response, that is, we rewarded the monkey's perceptual choices according to the stimulus disparity without the addition of \u2206dx.\n\nThe \u2206dx trials were overtly cued by a change in the colour of the cylinder stimulus, from 100% white dots to 100% black dots (Figure 7A,B). This allowed us to explore the behavioural strategy adopted by the animal when trials with and without an additional, non-rewarded visual disparity signal are clearly cued. We kept reward schedules the same. Therefore, for maximal reward accumulation, the monkey's optimal strategy would to bias its perceptual reports away from the fake signal cylinder disparity on the trials that were overtly cued as \u2206dx.\n\nOver 5 days, 15 experimental sessions of psychophysical data was collected, with all experimental parameters remaining constant. There were approximately 1000 to 2000 trials in each experimental session. By contrast, there were on average 500 trials in each experimental block at the electrical microstimulation sites. The \u2206dx control experiment comprised 12,149 trials in total, whilst the Fle and Ica electrical microstimulation experiments comprised 9,411 and 10,592 trials in total, respectively, over all microstimulation sites. Since our objective was to ascertain whether the animal learns to treat the \u2206dx trials differently from non-\u2206dx trials, we kept the direction of the \u2206dx signal the same throughout the control experiment. If the animal fails to adjust its criterion on a reward-size basis in this situation when it is clearly apparent when the additional visual disparity signal is added, it seems very unlikely that they could do so when the signal introduced by microstimulation varied between experiments (as it did for the real microstimulation).\n\n### Time-series analysis of performance fluctuation\n\nPerformance accuracy (proportion of correct choices) was calculated over a sliding time window 30 trials wide. To estimate the amount of performance fluctuation over the microstimulation session at a given site, the area between the smoothed performance curve and the horizontal line indicating the mean overall performance over that session was calculated using trapezoidal numerical integration implemented by MATLAB's trapz function (see Figure 8\u2014figure supplement 1A). Since different sites had microstimulation sessions of different lengths, this area was normalised across sites by division by the total number of trials in the microstimulation session at each site. \u2018Good\u2019 and \u2018bad\u2019 performance epochs were identified as stretches of smoothed performance that were above or below mean site performance, respectively, for at least the length of the smoothing time window (i.e. at least 30 trials). To evaluate whether the reward effect on microstimulation remained within good and bad epochs considered individually, trials from good and bad epochs were pooled across sites and animals and fit with cumulative Gaussians to test whether there was significant interaction between reward and microstimulation shift (\u03c72-test of nested models Equations 2a,c, p < 0.05, as described in previous sections).\n",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "cdab33f7-8647-4f23-a5e6-4e2beccd607e",
+      "submission_id": "59308ba4-d76d-4b2e-a7a8-50413e6d99aa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matteo Carandini, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07832.018](https://doi.org/10.7554/eLife.07832.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cReward modulates the effect of visual cortical microstimulation on perceptual decisions\u201d for peer review at eLife. Your submission has been evaluated by Eve Marder (Senior Editor) and four reviewers, one of whom, Matteo Carandini, is a member of our Board of Reviewing Editors. Their opinion is favorable, provided that you can address some concerns, which we hope are addressable with existing data and new analyses.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis interesting study investigates an important topic that should be of broad general interest: the interaction of expected reward with sensitivity of perceptual choices. The paper shows that there is such an interaction both in choices made purely from sensory inputs and from choices influenced by microstimulation of sensory cortex. When the expected rewards are higher, responses are more veridical and less likely to be swayed by microstimulation.\n\nHowever, as outlined below, there are concerns about the interpretation of the data, the analysis, and the organization of the paper. First, because of the experimental design, it is not clear whether the effects are due to differences in expected reward or to slower variations in task engagement. Second, it is not clear where the effect takes place: at the level of sensory representations or in the manner that decision processes weigh those representations? Third, microstimulation may have engaged specific strategies that are not the same as during normal sensory stimulation. Fourth, there are some unexplained trends in the data that need further exploration and explanation. Finally, the paper would be more effective if it was more explicit about the specific question that the experiments address.\n\n1) Expected reward or to task engagement?\n\nIn the experiments, reward size depended on animal's performance in the preceding trials, increasing gradually when animal performed correctly over consecutive trials. Indeed, the animal received larger rewards only after sequences of correct trials, which are more likely when the animal is more engaged. Does higher reward cause the animals to work harder, or does the reward go up because the animal is working harder? Perhaps, rather than expected reward size, the relevant factor are slower fluctuations in task engagement. In this interpretation expected reward size is not the cause of the observed effects. Rather, it is an incidental factor entirely due to experimental design. Even without manipulations of reward size, we know that non-human primates go through fluctuations in their performance, presumably reflecting their attentional or motivational states.\n\nThe ideal way to rule this out would of course be with other experiments where reward size varies independently of performance, and the animal knows it in advance, either through blocking or through a cue such as the color of the fixation spot, which could vary from trial to trial. It would have also been much better if the task allowed for the measurement of reaction times, as these could provide evidence that the animals successfully inferred the trial-by-trial reward size (one could regress response times on the size of the upcoming reward).\n\nIn the absence of new experiments, it might be possible to address this concern with some time-series analysis of the present data. One might be able to argue that variations in task engagement would be slower than valuations of upcoming reward.\n\n2) Where does the effect take place?\n\nThe paper argues that reward influences perceptual sensitivity, operating \u201cprior to integration of sensory evidence\u201d. However, it is not clear how much prior to that integration. There seem to be two possibilities. One is that \u201creward affects sensory representations of the stimulus\u201d, i.e. the responses of MT neurons. Another is that it influences their interpretation, i.e. the weight that decision mechanisms assign to sensory evidence in MT. It is not clear which of these two is supported by the paper. It should be able to test the first hypothesis by looking at the firing rate of MT neurons, which the authors presumably have recorded. Does it depend on reward? If it doesn't, the microstimulation data clearly support the second hypothesis. If it does, then it is not clear what the microstimulation data add to the story. The authors presumably have data from MT responses (at least multiunit activity or LFP) to support or falsify these possibilities. The paper would be greatly strengthened by an analysis of such data.\n\n3) Is there something special about microstimulation?\n\nThe paper shows that microstimulation is more effective when reward sizes are small, and less effective when they are large. Perhaps this is because the animal is better able to screen out the effects of microstimulation on some trials than others (for some unknown reason). The monkey would therefore be more likely to do better on these trials, and thus reward size would go up. Differences between the \u0394dx control and the main data limit the value of this control for this concern. In other words, noisy or odd/aberrant inputs from sensory neurons (e.g. electrically evoked responses) might be weighed less compared to the more \u201cnormal\u201d inputs (e.g. visually evoked responses of non-stimulated MT neurons). These weights can then change based on expected reward or task engagement. It is not clear that there is any analysis that can address this concern, but perhaps it would help to see it be acknowledged and discussed.\n\n4) Effect of reward on model parameters:\n\nThere is a concern about the central conclusion about the effect of reward size on the parameters of the bounded accumulation model, B and k. It would help to have a schematic figure showing what would happen to the psychometric functions when k changes, B changes, and both change. The critical passage in the Discussion (\u201cEven though we employed a fixed viewing duration task, differential effects of reward on parameters k (stimulus scaling sensitivity) and B (distance-to-bound) could be constrained in our model due to the insertion of the microstimulation signal in visual area V5/MT\u201d) is too cryptic to help. In the data analysis, it is also not clear how well the two effects can be separated. While the statistical testing of each parameter seems appropriate, one can't readily see the magnitudes of the effect of freezing each on the overall goodness of fit of the model. This could be solved by adding such information to Table 2.\n\n5) Unexplored trends in the data:\n\nThere's a puzzle in that the bulk of the cases where the reward manipulation had a big effect were cases where the microstimulation effect was weak and the performance was good. This can be gleaned by comparing where the bigger effects fell in Figure 3A,B. The only way one can get a big relative effect from a small absolute one is if the slope is quite steep. Why is there no effect of reward for big (in absolute terms) microstimulation effects? Perhaps these are high eccentricity sites where thresholds are high? But then, why would the same effects not be seen in those cases?\n\nThe behavioral effect of reward (both in normal trials and in microstimulated trials) is considerably cleaner in animal Ica compared to the animal Fle. Is there any reason for such a difference? Can the analysis be strengthened by considering individual sessions, and statistics across sessions?\n\nAlso, it should be possible to improve the analysis by treating reward size as a continuous rather than categorical manner, or at least a different categorization. For instance, it would be helpful to see whether the results hold if trials were categorized to less-than-average and more-than-average reward sizes. For this analysis, the average reward size per trial would be measured for each session and then trials could be separated based on the measured average.\n\n6) Reorganizing the paper around a central question:\n\nThis paper is organized in a manner that is appropriate to specialists, but fails to make a coherent case that is understandable and interesting to a wider audience. In the Abstract and Introduction, it repeatedly indicates that it wants to make some measurement simply because it has not been made before. This is insufficient motivation: the fact that something has not been done before does not mean that it is interesting and that it answers some question about brain function. It is much better to start by posing a clear question about brain function, and to organize the paper around that question.\n\nIn this paper, the central question seems to be the one posed in the second paragraph of the Introduction: \u201chow information about the value associated with different choices is combined with sensory information to influence the final decision\u201d. In that respect, it might make sense to invert the order of presentation of the data, and start from the results obtained without microstimulation.\n\nFor example, a suggested sequence of arguments is: (1) Start from the existing knowledge (e.g. Stanisor, 2013 and others) and support it by documenting the effect of reward on psychometric data obtained without microstimulation (the black curves in Figure 5C,D). (2) Model this effect with the bounded accumulation model (Figure 5), and indicate which parameters change. (3) Ask: how does reward influence perceptual sensitivity? One possibility is that it influences the stimulus representation itself, i.e. the responses of MT neurons. Another possibility is that it influences the weight that the decision mechanisms assign to MT responses. (4) See if we can rule out the first possibility by looking at the firing rate of MT neurons. Does it depend on reward? (5) Support the second possibility with the microstimulation data. Show the current Figure 2 and Figure 4A,B (the red curves), with fits by the drift diffusion model (no need to show the same data twice as currently appear in Figure 4 and Figure 5). Show statistics to support the claim (e.g. Figure 3). This is the key piece of evidence, and there is already sufficient level of analysis in the paper to support it. (6) Show the control, the simulated microstimulation. This will assuage some concerns about the microstimulation and its interpretation.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cReward modulates the effect of visual cortical microstimulation on perceptual decisions\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior Editor) and a Reviewing Editor. The manuscript has been improved but there are some remaining minor issues that need to be addressed before acceptance, as outlined below.\n\nThe paper has much improved in terms of clarity and general organization. The new analyses are very useful, and the new Figure 4 makes a much clearer case. There are, however, some details that still need to be addressed before the paper is ready for publication.\n\n1) The analysis in Figure 3 is still hard to evaluate because the reward schedule depended on performance. Therefore, large rewards were mainly delivered when performance was high. Doesn't this design basically predict the result? If so, please acknowledge this flaw in Results, and discuss it in Discussion.\n\n2) The paper goes back and forth between two conclusions: (A) reward affects sensory representations of the stimulus, prior to integration stage (last sentence of Abstract), and (B) reward affects both sensory representation and integration stage (last sentence of introduction). In fact, the results support the second conclusion (reward affects both model parameters, B and k) so the Abstract needs to be edited to reflect this.\n\n3) In fact, the Abstract needs a thorough editing. It is not enough to say that something is not understood in general terms. Specifically, what aspect of it is not understood? And what does the paper do to understand it? And what conclusion can be drawn from the results?\n\n4) The paper often refers to a \u201csensorimotor stage\u201d. This is presumably meant to indicate LIP? If so, it would be useful to indicate this in Figure 1. Or better, use a different word (decision stage? integration stage?) and again make sure this choice is consistent with the words used in Figure 1.\n",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c75f38d1-7fb7-4c62-9fce-c992243314fc",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C1",
+      "claim": "Effective perceptual decisions rely upon combining sensory information with knowledge of the rewards available for different choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective perceptual decisions rely upon combining sensory information with knowledge of the rewards available for different choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about perceptual decision-making that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "45d6169b-bebc-445d-a313-0fe3fd15a46d",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C2",
+      "claim": "It is not known where reward signals interact with the multiple stages of the perceptual decision-making pathway and by what mechanisms this may occur.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not known where reward signals interact with the multiple stages of the perceptual decision-making pathway and by what mechanisms this may occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current scientific knowledge, which is the motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "13ff9a7f-8257-4ab8-bbf0-a830b2603e5d",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C3",
+      "claim": "Microstimulation was less effective in shifting perceptual choices towards the stimulus preferences of the stimulated neurons when available reward was larger.",
+      "claim_type": "EXPLICIT",
+      "source": "Microstimulation was less effective in shifting perceptual choices towards the stimulus preferences of the stimulated neurons when available reward was larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "339aff1d-bec9-4939-b8bd-3717d9af8e3e",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C4",
+      "claim": "A bounded accumulation decision model revealed that the interaction of expected reward with microstimulation can be explained if expected reward modulates a sensory representation stage of perceptual decision-making, in addition to the better-known effects at the integration stage.",
+      "claim_type": "EXPLICIT",
+      "source": "A bounded accumulation decision model, applied to analyse behavioural performance, revealed that the interaction of expected reward with microstimulation can be explained if expected reward modulates a sensory representation stage of perceptual decision-making, in addition to the better-known effects at the integration stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by model fitting results presented in Table 1 and Figure 5, showing significant effects of reward on parameter k (sensory representation).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "c95d5373-0873-4392-a80d-07cd1dfc605b",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C5",
+      "claim": "When sensory information is used simply to signal the availability of reward in value-based decisions, the activity of lateral intraparietal (LIP) neurons correlates with the relative reward an animal can expect for a particular choice.",
+      "claim_type": "EXPLICIT",
+      "source": "When sensory information is used simply to signal the availability of reward in value-based decisions, the activity of lateral intraparietal (LIP) neurons correlates with the relative reward an animal can expect for a particular choice (Platt and Glimcher, 1999; Sugrue et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies by Platt and Glimcher (1999) and Sugrue et al. (2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "82ba0e8c-5b0a-4022-9912-597f7c930f4c",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C6",
+      "claim": "Perceptual decision-making has been successfully modelled as a bounded evidence-accumulation process in which sensory evidence about the visual stimulus is represented in sensory cortex and then integrated over time in sensorimotor structures such as lateral intraparietal cortex (area LIP).",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual decision-making has been successfully modelled as a bounded evidence-accumulation process in which sensory evidence about the visual stimulus is represented in sensory cortex and then integrated over time in sensorimotor structures such as lateral intraparietal cortex (area LIP) (Shadlen and Newsome, 2001; Roitman and Shadlen, 2002; Mazurek et al., 2003; Huk and Shadlen, 2005; Gold and Shadlen, 2007) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple citations to previous modeling studies and is illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "143cf364-4527-466c-b26f-cd352184fa9c",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C7",
+      "claim": "Previous human neuroimaging and animal electrophysiology studies found that when perceptual decision-making is modelled in this way, information about reward is reflected only at the integration stage, represented in sensorimotor structures such as area LIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous human neuroimaging and animal electrophysiology studies found that when perceptual decision-making is modelled in this way, information about reward is reflected only at the integration stage, represented in sensorimotor structures such as area LIP (Rorie et al., 2010; Summerfield and Koechlin, 2010; Mulder et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies by Rorie et al. (2010), Summerfield and Koechlin (2010), and Mulder et al. (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "83cd05a6-456e-44bf-8d6d-0387a9346cfc",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C8",
+      "claim": "Activity of motion- and disparity-selective neurons in visual area V5/MT have been closely linked to animals' subjective perception during discrimination of structure-from-motion (SFM) visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, activity of motion- and disparity-selective neurons in visual area V5/MT have been closely linked to animals' subjective perception during discrimination of structure-from-motion (SFM) visual stimuli (Dodd et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dodd et al. (2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "d0cbdae6-ae02-40a5-b06d-da06b9257464",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C9",
+      "claim": "Neurons in primary visual cortex (area V1) can respond to visual sensory signals that do not reach perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary visual cortex (area V1) comprises the initial stage of visual information processing but neurons here can respond to visual sensory signals that do not reach perception (Cumming and Parker, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cumming and Parker (1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "2f59a268-fcdf-4387-8519-9411493e4889",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C10",
+      "claim": "Microstimulation biases perceptual choices towards visual interpretations that match the tuning of the stimulated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Microstimulation biases perceptual choices towards visual interpretations that match the tuning of the stimulated neurons (Krug et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Krug et al. (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "305d621f-ed6f-46aa-97b9-f26905c0b419",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C11",
+      "claim": "Blood-oxygen level dependent (BOLD) signals in sensory cortex are modulated by reward probability, size and delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood-oxygen level dependent (BOLD) signals in sensory cortex are modulated by reward probability, size and delivery (Pleger et al., 2008; Serences and Saproo, 2010; Weil et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies by Pleger et al. (2008), Serences and Saproo (2010), and Weil et al. (2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "aefac4f9-b959-450c-a6a3-4c4082ae751b",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C12",
+      "claim": "The BOLD signal is an indirect measure of neural activity that averages the responses of many neurons, including those that are excited by the sensory stimulus and those that are inhibited by it.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the BOLD signal is an indirect measure of neural activity that averages the responses of many neurons, including those that are excited by the sensory stimulus and those that are inhibited by it (Logothetis et al., 2001; Logothetis and Wandell, 2004), and may be differentially affected by modulatory signals in comparison to neuronal spiking (Boynton, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Logothetis et al. (2001), Logothetis and Wandell (2004), and Boynton (2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "465cb681-5a11-449a-8a68-60874ebd0f18",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C13",
+      "claim": "V1 activity was predicted by the reward value of a stimulus relative to other stimuli in a saccadic curve-tracing task.",
+      "claim_type": "EXPLICIT",
+      "source": "This study showed that V1 activity was predicted by the reward value of a stimulus relative to other stimuli, implying that reward signals have the potential to reach the earliest stages of sensory cortical processing (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on a study by Stanisor et al. (2013) mentioned in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "c8fd6947-ac7d-410e-b1a5-1126a9e48d2a",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C14",
+      "claim": "Electrical microstimulation of small populations of neurons in relevant cortical regions, combined with sensory stimulation, can produce reliable changes in perceptual reports, which are specific to the stimulus preferences of the neurons at the microstimulated site.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical microstimulation of small populations of neurons in relevant cortical regions, combined with sensory stimulation, can produce reliable changes in perceptual reports, which are specific to the stimulus preferences of the neurons at the microstimulated site (Salzman et al., 1990, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Salzman et al. (1990, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "15088f16-694e-493c-a491-361ac11be94f",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C15",
+      "claim": "When the stimulated neurons encode combinations of visual cues, microstimulation adds a signal that is specific to that combination, as found in cortical area V5/MT for visual motion and binocular disparity.",
+      "claim_type": "EXPLICIT",
+      "source": "When the stimulated neurons encode combinations of visual cues, microstimulation adds a signal that is specific to that combination, as found in cortical area V5/MT for visual motion and binocular disparity (Krug et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Krug et al. (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "0395b649-171b-4c2b-943f-f1090a8d4a6a",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C16",
+      "claim": "Electrical microstimulation of area V5/MT biases animals' choices towards the cylinder rotation direction preferred by the multi-unit in 28 out of 48 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, electrical microstimulation of area V5/MT biases animals' choices towards the cylinder rotation direction preferred (PREF) by the MU (\u03c72 likelihood-ratio test of nested models Equations 1a,b, p < 0.05 in 28 out of 48 sites; Fle: 13/20 sites; Ica: 15/28 sites) (Krug et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical testing of the experimental data and citation to Krug et al. (2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "a7581132-7fcb-4b47-a98c-4e39206b0f5f",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C17",
+      "claim": "There was a significant interaction between the slope of the fitted psychometric function and available reward size, indicating better performance in large reward trials.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant interaction between the slope of the fitted psychometric function and available reward size, indicating better performance in large reward trials (\u03c72 likelihood-ratio test of nested models Equations 2a,b, 'Materials and methods': p = 0.001; Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical testing of the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "db38872e-0037-46b6-b1c7-62e75b250853",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C18",
+      "claim": "An increase in either the stimulus sensitivity (parameter k) or the distance between the DV starting point and the bounds (parameter B) can improve performance according to the bounded accumulation model.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the bounded accumulation model, an increase in either the stimulus sensitivity (represented by parameter k) or the distance between the DV starting point and the bounds (represented by parameter B, Equation 3a, 'Materials and methods'; Figure 4B) can improve performance (Figure 4C; compare to Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model simulations shown in Figure 4C and theoretical understanding of the bounded accumulation model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "e9893b02-55c9-4e7e-bae7-5b678d2e82a3",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C19",
+      "claim": "If performance in large reward trials improves as a result of an increase in B, this will not affect the size of the microstimulation shift, because B acts at an integration stage that is positioned after the location at which visually evoked and electrically evoked signals have been combined.",
+      "claim_type": "EXPLICIT",
+      "source": "If performance in large reward trials improves as a result of an increase in B, this will not affect the size of the microstimulation shift, because B acts at an integration stage that is positioned after the location at which visually evoked and electrically evoked signals have been combined (Figure 4E; see also Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model simulations shown in Figure 4E and logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "39782bc1-a749-47da-b4b7-b70eb81ec2ff",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C20",
+      "claim": "If performance improves as a result of an increase in k, this will decrease the relative influence of microstimulation on perceptual choices because k acts specifically on visually evoked sensory representations before they are combined with electrical microstimulation signals.",
+      "claim_type": "EXPLICIT",
+      "source": "If performance improves as a result of an increase in k, this will decrease the relative influence of microstimulation on perceptual choices (illustrated by a smaller horizontal shift between microstimulated and non-microstimulated psychometric functions) because k acts specifically on visually evoked sensory representations before they are combined with electrical microstimulation signals (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on model simulations shown in Figure 4F and logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "71f872eb-fb67-423d-9805-d9ec217eaea7",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C21",
+      "claim": "The size of the microstimulation effect was decreased in large reward trials compared to small reward trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the microstimulation effect - the horizontal shift between microstimulated and non-microstimulated psychometric functions\u2014was decreased in large reward trials (dashed lines) compared to small reward trials (smooth lines), implicating a change in stimulus sensitivity (parameter k) by reward (see Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5 and model fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "e187ee67-8185-4728-ae5e-db84ec18747f",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C22",
+      "claim": "For both animals, parameter k was significantly increased in large compared to small reward trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For both animals, parameter k was significantly increased in large compared to small reward trials (\u03c72 likelihood-ratio test of nested models Equations 3 a,b: Fle: p < 0.001; Ica: p < 0.001; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical testing of model fits, with results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "ca3e1b3a-6f37-45ec-bc27-f767cfe0499d",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C23",
+      "claim": "The estimated distance between the starting point of DV integration and the decision bounds (parameter B) was significantly affected by reward, decreasing in large compared to small reward trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated distance between the starting point of DV integration and the decision bounds, represented by parameter B, was also significantly affected by reward, decreasing in large compared to small reward trials (\u03c72 likelihood-ratio test of nested models Equations 3a,c: Fle: p = 0.007; Ica: p < 0.001; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical testing of model fits, with results shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "6471dade-71a6-4708-a387-e6119bde60e8",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C24",
+      "claim": "Expected reward affects perceptual decision-making both at the sensory representation stage (parameter k) and the integration stage (parameter B).",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results indicate that expected reward affects perceptual decision-making both at the sensory representation stage (parameter k) and the integration stage (parameter B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the model fitting results showing significant effects of reward on both parameters k and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "29a6dcd5-f337-4f91-ac98-5ac98145b581",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C25",
+      "claim": "The normalised microstimulation shift was significantly smaller for large expected reward trials (median = 0.67) compared to small expected reward trials (median = 0.88).",
+      "claim_type": "EXPLICIT",
+      "source": "The normalised microstimulation shift was significantly smaller for large expected reward trials (median = 0.67) compared to small expected reward trials (median = 0.88; Wilcoxon sign-rank test of normalised shift values, two-sided: n = 28, p < 0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical testing of the data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "02703fcc-d26d-4645-9a8f-69f80ede332c",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C26",
+      "claim": "The raw microstimulation shift was significantly smaller for large expected reward trials (median = 0.0064\u00b0) compared to small expected reward trials (median = 0.0093\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the raw microstimulation shift was significantly smaller for large expected reward trials (median = 0.0064\u00b0) compared to small expected reward trials (median = 0.0093\u00b0; Wilcoxon sign-rank tests of raw shift values: n = 28, p < 0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical testing of the data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "9259c60f-662c-4904-b96e-ca6a329a0a91",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C27",
+      "claim": "Performance in the \u2206dx control was significantly better in large reward compared to small reward trials.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in the electrical microstimulation experiments, there was a significant improvement in performance in trials where a larger reward was available for a correct choice (\u03c72 likelihood-ratio test of nested models Equations 2a,b: Ica-\u2206dx: p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical testing of the control experiment data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "8970a5e6-bdfc-4974-9c0b-19c8b1b10850",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C28",
+      "claim": "There was no significant interaction between reward condition and \u2206dx-induced shift in the \u2206dx psychometric functions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no significant interaction between reward condition and \u2206dx-induced shift in the \u2206dx psychometric functions (\u03c72 likelihood-ratio test of nested models Equations 2a,c: Ica-\u2206dx: p > 0.05; Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical testing of the control experiment data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "d3848ff7-a185-4e31-b1ed-eeb86753526e",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C29",
+      "claim": "Both animals' cylinder discrimination thresholds significantly correlated with stimulus eccentricity, worsening as eccentricity increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Both animals' cylinder discrimination thresholds significantly correlated with stimulus eccentricity, worsening as eccentricity increased (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "4268b982-3300-4e3b-b729-8608e247c992",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C30",
+      "claim": "The raw overall microstimulation effect significantly correlated with the cylinder discrimination threshold at each site.",
+      "claim_type": "EXPLICIT",
+      "source": "The raw overall microstimulation effect also significantly correlated with the cylinder discrimination threshold at each site (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "bf972a44-43f1-41d6-bf75-766b9ef79242",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C31",
+      "claim": "The reward modulation of the raw microstimulation shift effect was significantly correlated with stimulus eccentricity and with the raw overall microstimulation effect size for both animals considered together, and for one animal considered alone (Ica).",
+      "claim_type": "EXPLICIT",
+      "source": "The reward modulation of the raw microstimulation shift effect was significantly correlated with stimulus eccentricity and with the raw overall microstimulation effect size for both animals considered together, and for one animal considered alone (Ica), such that the biggest raw effects of reward on microstimulation occurred for sites with largest eccentricity (where thresholds were high) and the biggest raw overall microstimulation effect (Figure 8C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analyses shown in Figure 8C and 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "635e779b-025c-4387-8438-c2fbccaba921",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C32",
+      "claim": "The correlations between reward modulation and eccentricity/microstimulation effect disappeared when microstimulation shift was normalised by cylinder discrimination threshold at each site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these correlations disappeared for reward modulation of the microstimulation shift effect when normalised by cylinder discrimination threshold at each site (Figure 8E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analyses shown in Figure 8E and 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "8b02d030-a477-4527-b6e2-40161ac767d0",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C33",
+      "claim": "The reward effect is constant when microstimulation is expressed as a fraction of the discrimination threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the reward effect is constant when microstimulation is expressed as a fraction of the discrimination threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the disappearance of correlations when data are normalized by threshold (Figure 8E,F).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "786b8a1a-8a38-4c24-a3d1-e1abbc0869fc",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C34",
+      "claim": "There was no correlation between normalised reward effect size and the amount of performance fluctuation across microstimulation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no correlation between normalised reward effect size and the amount of performance fluctuation across microstimulation sites, either for animals separately or together (Pearson's product\u2013moment correlation: p >> 0.05 in all cases), suggesting that performance fluctuation cannot explain the reward effect on microstimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "3576528e-7dfd-4f15-965e-aea0c288c7d4",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C35",
+      "claim": "The effect of microstimulation was significantly smaller in large compared to small expected reward trials in both good epochs and bad epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "For both types of epoch, the effect of microstimulation was significantly smaller in large compared to small expected reward trials (\u03c72-test of nested models Equations 2a,c: good epochs: p < 0.001; bad epochs: p < 0.001), showing that the effect of expected reward on microstimulation remains present in different states of task engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical testing of data separated by performance epochs, shown in Figure 8\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "702be0e5-503c-4fbe-824e-61fe36e5e5ea",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C36",
+      "claim": "When both choices are associated with larger rewards, the distance to both decision bounds might be expected to decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "When both choices are associated with larger rewards, as in the present study, the distance to both decision bounds might be expected to decrease, as we, and others (Rorie et al., 2010), have found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the current study's findings and citation to Rorie et al. (2010).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "7f16248c-f746-4dfb-be90-9393384c8523",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C37",
+      "claim": "A decrease in distance-to-bound would impair performance accuracy when available reward is large because the closer proximity of the DV to the bounds would result in a greater effect of accumulated noise on the final perceptual choice.",
+      "claim_type": "EXPLICIT",
+      "source": "On its own, this effect would impair performance accuracy when available reward is large because the closer proximity of the DV to the bounds would result in a greater effect of accumulated noise on the final perceptual choice (Bogacz et al., 2006, 2007; Rorie et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical understanding of the bounded accumulation model, supported by citations to Bogacz et al. (2006, 2007) and Rorie et al. (2010).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "4d954523-8365-48c1-a4fb-a7946ee2f13e",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C38",
+      "claim": "The reciprocal increase in sensitivity to the visual stimulus balances the decrease in accuracy resulting from the shorter distance-to-bound, so that overall performance improves when available reward is larger.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reciprocal increase in sensitivity to the visual stimulus, discussed above, balances the decrease in accuracy resulting from the shorter distance-to-bound, so that overall performance in fact improves when available reward is larger, as we observe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined effects of changes in parameters k and B observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "253e70e1-b78f-42ef-b538-905b0416bb94",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C39",
+      "claim": "Previous studies found that information about reward was reflected only at the integration stage of visual perceptual decision-making, represented in sensorimotor structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that information about reward was reflected only at the integration stage of visual perceptual decision-making, represented in sensorimotor structures (Feng et al., 2009; Rorie et al., 2010; Summerfield and Koechlin, 2010; Gao et al., 2011; Mulder et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "33ea6b91-d6a2-4ee5-80d2-259be00b4253",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C40",
+      "claim": "Activity in sensory cortex can be modulated by reward in tasks such as cued curve-tracing saccade task, somatosensory discrimination, and visual stimulus selection tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experiments employing other types of task, such as a cued curve-tracing saccade task (Stanisor et al., 2013), somatosensory discrimination (Pleger et al., 2008), tasks in which a subject must select between two presented visual stimuli (Serences, 2008; Serences and Saproo, 2010), or a fixation task where a reward is delivered with or without a visual cue (Arsenault et al., 2013), found that activity in sensory cortex can also be modulated by reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "75add3ca-4ca3-45b6-991a-4223129c5669",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C41",
+      "claim": "The source of the reward signal affecting sensory cortex may reflect an influence from prefrontal cortex, anterior cingulate cortex, or amygdala, known to represent reward and value predictions during decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "The source of the reward signal affecting sensory cortex may reflect an influence from prefrontal cortex, anterior cingulate cortex, or amygdala, known to represent reward and value predictions during decision-making (Rushworth and Behrens, 2008; Bermudez and Schultz, 2010; Levy and Glimcher, 2012), or neuromodulation by serotonergic neurons originating from the dorsal raphe nucleus, which also signal reward (Cohen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on known functions of these brain regions cited from previous studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "f3164877-6519-4f06-a6ca-6ea38a6ea173",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C42",
+      "claim": "Dopaminergic reward-predicting neurons may indirectly modulate or enhance sensory cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Another significant source of reward signals in the brain are dopaminergic reward-predicting neurons, which may also indirectly modulate or enhance sensory cortical activity (for review, see Schultz 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on a review by Schultz (2002).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "16b68236-a392-4247-a612-70bea45179da",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C43",
+      "claim": "Area V5/MT has a specific role in 3D depth processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Area V5/MT has been shown to have a specific role in 3D depth processing (Dodd et al., 2001; Krug et al., 2004; Krug and Parker, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "85d0f1e3-9c56-4fa8-be63-4137a9fae93b",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C44",
+      "claim": "Area V5/MT contains specialised intrinsic connectivity suitable for combining visual depth and motion signals.",
+      "claim_type": "EXPLICIT",
+      "source": "and to contain specialised intrinsic connectivity suitable for combining visual depth and motion signals (Ahmed et al., 2012), relevant for the cylinder stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ahmed et al. (2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "cf5e0601-3fac-4803-857d-6485f800f5b2",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C45",
+      "claim": "The SFM stimulus portrays two transparent surfaces of moving dots, with the dots on one surface moving in the opposite direction from the dots on the other surface, generating a percept of a rotating cylinder with a compelling sensation of 3D depth.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus portrays two transparent surfaces of moving dots, with the dots on one surface moving in the opposite direction from the dots on the other surface. This pattern of motion generates a percept of a rotating cylinder with a compelling sensation of 3D depth (Treue et al., 1991) (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the visual stimulus used in the study, supported by citation to Treue et al. (1991) and Video 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "8dd4c6a0-9161-4df0-853f-b8578280dbf5",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C46",
+      "claim": "Adding binocular disparities to the dots defines the depth order of the two dot surfaces and specifies the direction of rotation of the cylinder to be clockwise (CW) or counter-clockwise (CCW) as viewed from above.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding binocular disparities to the dots defines the depth order of the two dot surfaces and specifies the direction of rotation of the cylinder to be clockwise (CW) or counter-clockwise (CCW) as viewed from above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the visual stimulus based on established principles of binocular vision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "5811ddff-b636-4547-98c5-6c94a4e848f8",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C47",
+      "claim": "If both dot surfaces have zero disparity, then the depth order of the stimulus is ambiguous and the perception is bistable.",
+      "claim_type": "EXPLICIT",
+      "source": "If both dot surfaces have zero disparity, then the depth order of the stimulus is ambiguous and the perception is bistable (Nawrot and Blake, 1989; Parker and Krug, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nawrot and Blake (1989) and Parker and Krug (2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "d64552e6-0b1a-4354-8936-78a22db74078",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C48",
+      "claim": "Microstimulation experiments were conducted in one cortical hemisphere in two adult male rhesus macaque monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Microstimulation experiments were conducted in one cortical hemisphere in two adult male rhesus macaque monkeys (Macaca mulatta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "c8ebe8c7-f007-4106-b2fc-62c82e78f497",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C49",
+      "claim": "Area V5/MT was identified by established physiological criteria including the approach through grey/white matter pattern, neurons' characteristic direction selectivity and binocular disparity selectivity, the relationship between size and eccentricity of receptive fields, and the relationship between RF positions and known topography.",
+      "claim_type": "EXPLICIT",
+      "source": "Area V5/MT was identified by established physiological criteria: (1) the approach through the grey/white matter pattern comprising the striate cortex, lunate sulcus and the posterior bank of the superior temporal sulcus (STS) (Zeki, 1974); (2) by neurons' characteristic direction selectivity and binocular disparity selectivity and its clustering in V5/MT (Van Essen et al., 1981; Maunsell and Van Essen, 1983; Albright and Desimone, 1987; Bradley et al., 1995, 1998; DeAngelis et al., 1998; DeAngelis and Newsome, 1999); (3) the known relationship between the size and eccentricity of V5/MT receptive fields (Desimone and Ungerleider, 1986); and (4) from penetration to penetration, the relationship between RF positions and known topography of V5/MT (Albright and Desimone, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methods used to identify V5/MT, supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "6f2e56c3-08a0-4ab2-a7b8-28e3dcc08b37",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C50",
+      "claim": "Electrical microstimulation was applied during the 2000 ms of stimulus presentation on half of the trials, pseudo-randomly interleaved with non-microstimulated trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical microstimulation was applied during the 2000 ms of stimulus presentation on half of the trials, pseudo-randomly interleaved with non-microstimulated trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "94387584-2a82-4e85-aee3-0254d8ba62b7",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "claim_id": "C51",
+      "claim": "Stimulation consisted of 20 \u00b5A biphasic pulses of 200 \u00b5s cathodal stimulation followed by 200 \u00b5s anodal stimulation, delivered at 200 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation consisted of 20 \u00b5A biphasic pulses of 200 \u00b5s cathodal stimulation followed by 200 \u00b5s anodal stimulation, delivered at 200 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the microstimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c023415-166b-4ab9-811a-6770de94fd1a",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study addresses a gap in understanding where and how reward signals interact with the perceptual decision-making pathway. While effective perceptual decisions require combining sensory information with reward knowledge (C1), the specific stages and mechanisms of this interaction remain unknown (C2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the scientific context and motivation for the study. C1 represents established knowledge in the field, while C2 identifies a clear gap that justifies the experimental approach. Both are well-supported by the literature cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "1a5742ba-7aa9-49b8-b680-4fa9665920fb",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Microstimulation of V5/MT neurons was less effective in shifting perceptual choices toward the neurons' preferred direction when available reward was larger. This effect was significant both for normalized shifts (median 0.67 vs 0.88, p<0.001) and raw shifts (median 0.0064\u00b0 vs 0.0093\u00b0, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The core experimental finding is well-supported by statistical analyses across 28 significant sites in two animals (C25, C26). The data in Figures 5 and 6 provide clear visual and quantitative evidence. The use of both normalized and raw measures strengthens the conclusion, and the effect survives Bonferroni correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "171674fe-9b57-4d53-9777-c27f5db0eaf7",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bounded accumulation modeling revealed that reward affects both sensory representation (parameter k increased significantly in large reward trials, p<0.001 for both animals) and integration stages (parameter B decreased significantly, p<0.007 and p<0.001). This dual effect explains the interaction between reward and microstimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model fitting results in Table 1 provide strong statistical support for effects on both parameters k and B. The logic connecting these parameter changes to the observed microstimulation effects is sound, based on the model structure shown in Figure 4. However, the model is simplified and makes assumptions about how microstimulation signals are integrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "036ea374-f2e4-4d27-905b-7a098f46ff8e",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Performance improved significantly in large reward trials compared to small reward trials, as indicated by steeper psychometric function slopes (p=0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is supported by statistical testing of pooled data across sites (Figure 3). The result is consistent with existing literature on reward effects on performance and provides important context for interpreting the microstimulation effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "e82e5355-3a83-4afd-a834-09ce69f2ab9a",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In a control experiment using visual perturbation (\u0394dx) that mimicked microstimulation effects, performance improved with large rewards (p<0.001), but there was no significant interaction between reward and the \u0394dx-induced shift (p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This control experiment (Figure 7) provides critical evidence against the alternative explanation that animals adopt a compensatory strategy on microstimulation trials. The \u0394dx trials were overtly cued by color change, yet animals did not adjust their responses differentially by reward condition, supporting the interpretation that the microstimulation-reward interaction reflects genuine sensory modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "8db29019-feac-4d58-a14e-399a1a474015",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "According to the bounded accumulation model, increases in either parameter k (stimulus sensitivity) or B (distance to bounds) can improve performance, but they make different predictions about microstimulation effects. An increase in B should not affect microstimulation shift size, while an increase in k should decrease it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These theoretical predictions (Figure 4C-F) are logically derived from the model structure and provide the framework for interpreting the experimental results. The reasoning is sound given the model assumptions, though the model itself is simplified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "768fcc86-1bc8-4ed9-a860-f06757852ac8",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Discrimination thresholds correlated with stimulus eccentricity, and raw microstimulation effects correlated with thresholds. Raw reward modulation correlated with eccentricity and overall microstimulation effect, but these correlations disappeared when normalized by threshold, indicating the reward effect is constant as a fraction of discrimination threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation analyses in Figure 8 are appropriately conducted and interpreted. The disappearance of correlations after normalization (C32, C33) is an important control showing that the reward effect scales with task difficulty, supporting the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "002797e5-c4ad-4eeb-a15b-f1086c5e16ac",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Performance fluctuations across sessions did not correlate with reward effect size, and the reward modulation of microstimulation remained significant in both good and bad performance epochs (p<0.001 for both).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The time-series analysis (Figure 8\u2014figure supplement 1) provides important controls against the alternative explanation that task engagement fluctuations drive the observed effects. The persistence of the reward effect across different performance states strengthens the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "4d9cfc1d-5c16-4a9f-9353-c38fd6885b05",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Electrical microstimulation of V5/MT biased choices toward the preferred direction in 28 of 48 sites (58%), replicating previous findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This replication of prior work (Krug et al., 2013) establishes that the microstimulation manipulation was effective. The statistical testing (\u03c7\u00b2 likelihood-ratio test, p<0.05) is appropriate, and the success rate is consistent with previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "0a51370a-1dbe-4a77-b469-7e6f59578aec",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When both choices are associated with larger rewards, distance to both decision bounds decreases (as found here and by Rorie et al., 2010). This would impair accuracy due to increased noise effects, but the reciprocal increase in stimulus sensitivity (parameter k) balances this, resulting in net performance improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This interpretation reconciles the seemingly contradictory effects on parameters B and k, explaining how performance improves despite decreased distance-to-bound. The logic is sound and consistent with theoretical understanding of the bounded accumulation model (citations to Bogacz et al., 2006, 2007).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes the theoretical framework by reviewing prior work on reward signals in decision-making, the bounded accumulation model, the role of different cortical areas (V1, V5/MT, LIP), and the effects of microstimulation and BOLD signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent prior work through appropriate citations. They establish the necessary background for understanding the current study's contribution. The characterization of previous findings appears accurate based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "3f446d14-0b37-43a0-98f1-0ca25a1fd31b",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous studies found reward effects only at the integration stage in perceptual decision-making tasks, but other task types showed reward modulation of sensory cortex activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately characterize the state of the literature, distinguishing between findings in perceptual decision-making tasks (C39) versus other task types (C40). The citations appear appropriate, though the authors acknowledge limitations of BOLD-fMRI studies (C12).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "adc52617-dfb1-4291-9098-92c2741db68d",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The source of reward signals affecting sensory cortex may be prefrontal cortex, anterior cingulate cortex, amygdala, serotonergic neurons from dorsal raphe nucleus, or dopaminergic reward-predicting neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative claims about potential neural sources, appropriately qualified with 'may' (C41, C42). While based on known functions of these regions, the current study does not test these possibilities. The speculation is reasonable but unsupported by the present data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "32dc8c28-09a0-4978-9b7f-b6578d244b68",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Area V5/MT has a specific role in 3D depth processing and contains specialized connectivity for combining depth and motion signals. The SFM cylinder stimulus used portrays two transparent surfaces of moving dots that generate a percept of a rotating cylinder, with binocular disparities defining rotation direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the rationale for targeting V5/MT and the properties of the visual stimulus. They are well-supported by citations (C43, C44, C47) and established principles of binocular vision (C46). The stimulus description is clear and matches Video 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    },
+    {
+      "id": "b906a12f-a5cd-43ae-8700-e4ca2e571b57",
+      "content_id": "233b1394-a19d-446e-9fa1-c03b14112574",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used two adult male rhesus macaque monkeys, with V5/MT identified by established physiological criteria. Microstimulation consisted of 20 \u00b5A biphasic pulses at 200 Hz, applied on half the trials during the 2000 ms stimulus presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological details are clearly stated and appropriately documented. The criteria for identifying V5/MT (C49) are well-established and properly cited. The microstimulation parameters (C51) are within standard ranges used in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:09:46.309720Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c75f38d1-7fb7-4c62-9fce-c992243314fc",
+      "result_id": "7c023415-166b-4ab9-811a-6770de94fd1a"
+    },
+    {
+      "claim_id": "45d6169b-bebc-445d-a313-0fe3fd15a46d",
+      "result_id": "7c023415-166b-4ab9-811a-6770de94fd1a"
+    },
+    {
+      "claim_id": "13ff9a7f-8257-4ab8-bbf0-a830b2603e5d",
+      "result_id": "1a5742ba-7aa9-49b8-b680-4fa9665920fb"
+    },
+    {
+      "claim_id": "71f872eb-fb67-423d-9805-d9ec217eaea7",
+      "result_id": "1a5742ba-7aa9-49b8-b680-4fa9665920fb"
+    },
+    {
+      "claim_id": "29a6dcd5-f337-4f91-ac98-5ac98145b581",
+      "result_id": "1a5742ba-7aa9-49b8-b680-4fa9665920fb"
+    },
+    {
+      "claim_id": "02703fcc-d26d-4645-9a8f-69f80ede332c",
+      "result_id": "1a5742ba-7aa9-49b8-b680-4fa9665920fb"
+    },
+    {
+      "claim_id": "339aff1d-bec9-4939-b8bd-3717d9af8e3e",
+      "result_id": "171674fe-9b57-4d53-9777-c27f5db0eaf7"
+    },
+    {
+      "claim_id": "e187ee67-8185-4728-ae5e-db84ec18747f",
+      "result_id": "171674fe-9b57-4d53-9777-c27f5db0eaf7"
+    },
+    {
+      "claim_id": "ca3e1b3a-6f37-45ec-bc27-f767cfe0499d",
+      "result_id": "171674fe-9b57-4d53-9777-c27f5db0eaf7"
+    },
+    {
+      "claim_id": "6471dade-71a6-4708-a387-e6119bde60e8",
+      "result_id": "171674fe-9b57-4d53-9777-c27f5db0eaf7"
+    },
+    {
+      "claim_id": "a7581132-7fcb-4b47-a98c-4e39206b0f5f",
+      "result_id": "036ea374-f2e4-4d27-905b-7a098f46ff8e"
+    },
+    {
+      "claim_id": "9259c60f-662c-4904-b96e-ca6a329a0a91",
+      "result_id": "e82e5355-3a83-4afd-a834-09ce69f2ab9a"
+    },
+    {
+      "claim_id": "8970a5e6-bdfc-4974-9c0b-19c8b1b10850",
+      "result_id": "e82e5355-3a83-4afd-a834-09ce69f2ab9a"
+    },
+    {
+      "claim_id": "db38872e-0037-46b6-b1c7-62e75b250853",
+      "result_id": "8db29019-feac-4d58-a14e-399a1a474015"
+    },
+    {
+      "claim_id": "e9893b02-55c9-4e7e-bae7-5b678d2e82a3",
+      "result_id": "8db29019-feac-4d58-a14e-399a1a474015"
+    },
+    {
+      "claim_id": "39782bc1-a749-47da-b4b7-b70eb81ec2ff",
+      "result_id": "8db29019-feac-4d58-a14e-399a1a474015"
+    },
+    {
+      "claim_id": "d3848ff7-a185-4e31-b1ed-eeb86753526e",
+      "result_id": "768fcc86-1bc8-4ed9-a860-f06757852ac8"
+    },
+    {
+      "claim_id": "4268b982-3300-4e3b-b729-8608e247c992",
+      "result_id": "768fcc86-1bc8-4ed9-a860-f06757852ac8"
+    },
+    {
+      "claim_id": "bf972a44-43f1-41d6-bf75-766b9ef79242",
+      "result_id": "768fcc86-1bc8-4ed9-a860-f06757852ac8"
+    },
+    {
+      "claim_id": "635e779b-025c-4387-8438-c2fbccaba921",
+      "result_id": "768fcc86-1bc8-4ed9-a860-f06757852ac8"
+    },
+    {
+      "claim_id": "8b02d030-a477-4527-b6e2-40161ac767d0",
+      "result_id": "768fcc86-1bc8-4ed9-a860-f06757852ac8"
+    },
+    {
+      "claim_id": "786b8a1a-8a38-4c24-a3d1-e1abbc0869fc",
+      "result_id": "002797e5-c4ad-4eeb-a15b-f1086c5e16ac"
+    },
+    {
+      "claim_id": "3576528e-7dfd-4f15-965e-aea0c288c7d4",
+      "result_id": "002797e5-c4ad-4eeb-a15b-f1086c5e16ac"
+    },
+    {
+      "claim_id": "0395b649-171b-4c2b-943f-f1090a8d4a6a",
+      "result_id": "4d9cfc1d-5c16-4a9f-9353-c38fd6885b05"
+    },
+    {
+      "claim_id": "702be0e5-503c-4fbe-824e-61fe36e5e5ea",
+      "result_id": "0a51370a-1dbe-4a77-b469-7e6f59578aec"
+    },
+    {
+      "claim_id": "7f16248c-f746-4dfb-be90-9393384c8523",
+      "result_id": "0a51370a-1dbe-4a77-b469-7e6f59578aec"
+    },
+    {
+      "claim_id": "4d954523-8365-48c1-a4fb-a7946ee2f13e",
+      "result_id": "0a51370a-1dbe-4a77-b469-7e6f59578aec"
+    },
+    {
+      "claim_id": "c95d5373-0873-4392-a80d-07cd1dfc605b",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "82ba0e8c-5b0a-4022-9912-597f7c930f4c",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "143cf364-4527-466c-b26f-cd352184fa9c",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "83cd05a6-456e-44bf-8d6d-0387a9346cfc",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "d0cbdae6-ae02-40a5-b06d-da06b9257464",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "2f59a268-fcdf-4387-8519-9411493e4889",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "305d621f-ed6f-46aa-97b9-f26905c0b419",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "aefac4f9-b959-450c-a6a3-4c4082ae751b",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "465cb681-5a11-449a-8a68-60874ebd0f18",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "c8fd6947-ac7d-410e-b1a5-1126a9e48d2a",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "15088f16-694e-493c-a491-361ac11be94f",
+      "result_id": "ea605751-6ce3-48cf-84c7-ef702bb0aa7e"
+    },
+    {
+      "claim_id": "253e70e1-b78f-42ef-b538-905b0416bb94",
+      "result_id": "3f446d14-0b37-43a0-98f1-0ca25a1fd31b"
+    },
+    {
+      "claim_id": "33ea6b91-d6a2-4ee5-80d2-259be00b4253",
+      "result_id": "3f446d14-0b37-43a0-98f1-0ca25a1fd31b"
+    },
+    {
+      "claim_id": "75add3ca-4ca3-45b6-991a-4223129c5669",
+      "result_id": "adc52617-dfb1-4291-9098-92c2741db68d"
+    },
+    {
+      "claim_id": "f3164877-6519-4f06-a6ca-6ea38a6ea173",
+      "result_id": "adc52617-dfb1-4291-9098-92c2741db68d"
+    },
+    {
+      "claim_id": "16b68236-a392-4247-a612-70bea45179da",
+      "result_id": "32dc8c28-09a0-4978-9b7f-b6578d244b68"
+    },
+    {
+      "claim_id": "85d0f1e3-9c56-4fa8-be63-4137a9fae93b",
+      "result_id": "32dc8c28-09a0-4978-9b7f-b6578d244b68"
+    },
+    {
+      "claim_id": "cf5e0601-3fac-4803-857d-6485f800f5b2",
+      "result_id": "32dc8c28-09a0-4978-9b7f-b6578d244b68"
+    },
+    {
+      "claim_id": "8dd4c6a0-9161-4df0-853f-b8578280dbf5",
+      "result_id": "32dc8c28-09a0-4978-9b7f-b6578d244b68"
+    },
+    {
+      "claim_id": "5811ddff-b636-4547-98c5-6c94a4e848f8",
+      "result_id": "32dc8c28-09a0-4978-9b7f-b6578d244b68"
+    },
+    {
+      "claim_id": "d64552e6-0b1a-4354-8936-78a22db74078",
+      "result_id": "b906a12f-a5cd-43ae-8700-e4ca2e571b57"
+    },
+    {
+      "claim_id": "c8ebe8c7-f007-4106-b2fc-62c82e78f497",
+      "result_id": "b906a12f-a5cd-43ae-8700-e4ca2e571b57"
+    },
+    {
+      "claim_id": "6f2e56c3-08a0-4ab2-a7b8-28e3dcc08b37",
+      "result_id": "b906a12f-a5cd-43ae-8700-e4ca2e571b57"
+    },
+    {
+      "claim_id": "94387584-2a82-4e85-aee3-0254d8ba62b7",
+      "result_id": "b906a12f-a5cd-43ae-8700-e4ca2e571b57"
+    }
+  ],
+  "comparisons": []
+}

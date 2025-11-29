@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C64",
+      "C65",
+      "C66",
+      "C73"
+    ],
+    "result": "The authors developed a novel ice/water interface simulation system using the TIP4P water model with NAMD2.9 and CHARMM22 forcefield. The system consisted of 17,434 water molecules with 1,692 constrained to form a seed ice crystal angled at 4.3\u00b0 to enable continual ice growth through periodic boundary conditions, addressing the computational challenge that a critical ice nucleus at 1 K supercooling would require ~18 million water molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22, C64-C66, and C73 collectively describe a well-justified methodological approach. The choice of TIP4P water model is appropriately justified by citations (C18-C19), the simulation system design is clearly described with specific parameters (C20-C22, C64-C66), and the computational rationale is explained through Gibbs-Thomson calculations (C73). The angled seed crystal design is an innovative solution to enable continuous ice growth within computational constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In 32 independent simulations at 228 K, sbwAFP bound to ice in 26 cases with consistent orientation. Each binding event involved a linear array of 6 ordered water molecules spaced ~4.5 \u00c5 apart, bridging between the prism ice face and conserved threonine residues. These water molecules were structurally distinct from bulk ice, forming fully satisfied tetrahedral hydrogen bonding with both ice and threonine hydroxyl groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe the primary binding mechanism observed across multiple independent simulations. The high success rate (26/32 binding events) with consistent orientation provides strong statistical support. The structural characterization of the ordered water layer is detailed and specific, with clear geometric parameters. However, the claim would be strengthened by quantitative analysis of binding geometry variability across the 26 events and error estimates on the 4.5 \u00c5 spacing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Simulations of a sbwAFP mutant with 4 Thr\u2192Leu substitutions (positions 7, 21, 39, 69) showed complete loss of ice binding in all 16 independent 250 ns simulations. The authors conclude that ordered water molecules are crucial for sbwAFP ice recognition and binding, as the mutations remove stabilizing hydroxyl-water hydrogen bond interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide strong functional validation of the ordered water mechanism through loss-of-function mutagenesis. The complete absence of binding (0/16) contrasts sharply with wild-type (26/32), and the mutant design specifically tests the hydroxyl interaction hypothesis. The interpretation (C31-C32) is mechanistically sound and consistent with the structural observations. This result is strengthened by citation to prior experimental work (C29, Graether et al. 2000) showing these mutations disrupt activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "At 225 K (5 K below Tm), sbwAFP adsorbed to ice within 40 ns and induced marked convex curvature with cylindrical radius ~50 \u00c5 by 250 ns. The ice fraction equilibrated at 0.46 \u00b1 0.01 over 280-1000 ns, while AFP-free controls froze completely within 150 ns. The observed curvature showed good qualitative agreement with theoretical Gibbs-Thomson predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 demonstrate ice growth inhibition through the Gibbs-Thomson mechanism. The quantitative measurements (C35-C36) with error estimates and appropriate control (C37) provide rigorous evidence. The comparison to theory (C38) is appropriately qualified as 'qualitative' given the acknowledged difficulty in quantitative curvature measurement due to ice front fluctuations. The microsecond timescale simulation provides adequate sampling for equilibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Temperature-dependent simulations showed progressive ice melting as temperature increased: at 230 K (\u2248Tm), ice fraction decreased to 0.21 \u00b1 0.02 with sbwAFP stabilizing a 7 \u00c5 ice protrusion; at 232 K (+2 K above Tm), ice fraction further decreased to 0.15 \u00b1 0.01 with an 8.5 \u00c5 protrusion showing slight concave curvature; at 235 K, sbwAFP detached within 10 ns and ice fraction dropped to 0.08 \u00b1 0.01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate temperature-dependent behavior consistent with thermal hysteresis and melting inhibition. The progressive decrease in ice fraction with increasing temperature is well-quantified with error estimates. The observation that AFP remains bound above the melting point (C40, C42) until 235 K (C43) provides evidence for the 'superheating' phenomenon. The contiguous nature of these simulations (continuing from the same system) is appropriate for studying temperature effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C48",
+      "C62"
+    ],
+    "result": "The simulations demonstrate that sbwAFP binding to ice is virtually irreversible, with the protein never detaching once bound (except during deliberate melting at 235 K) even over millisecond-range simulations at above-melting temperatures. The authors conclude this demonstrates the Gibbs-Thomson effect and that ice growth inhibition agrees closely with theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44, C48, and C62 are well-supported by the extended simulation data showing no spontaneous unbinding events across multiple microsecond simulations until extreme conditions (235 K). The irreversibility observation is consistent with cited experimental evidence (C46-C47). However, the claim of 'close agreement' with Gibbs-Thomson theory (C62) is somewhat overstated given that C38 acknowledges only 'qualitative agreement' due to measurement difficulties. The binding energy magnitude remains unquantified, which the authors acknowledge as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C49",
+      "C50",
+      "C61"
+    ],
+    "result": "The authors conclude that sbwAFP binds indirectly to the prism ice face through ordered water molecules that are structurally distinct from ice, and that these ordered waters are crucial for ice plane specificity and integration into the ice lattice. Mutation of the ice binding surface disrupts water ordering and abolishes activity, confirming the mechanism. The simulations demonstrate ice growth inhibition consistent with the Gibbs-Thomson law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C6, C49-C50, and C61 represent the main conclusions synthesized from the simulation results. These are well-supported by the convergent evidence from binding characterization (C23-C28), mutational analysis (C29-C32), and temperature-dependent inhibition studies (C33-C43). The indirect binding mechanism through ordered water is a novel finding that resolves prior uncertainty in the field (C17). The conclusions appropriately integrate structural, functional, and thermodynamic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work shows conflicting estimates of AFP-ice binding energy ranging from -157 to below -5 kcal/mol. However, experimental evidence from microfluidic studies (Celik et al. 2013) and field observations of Antarctic fish (Cziko et al. 2014) suggests binding is strong and virtually irreversible with little exchange of AFP from ice surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 accurately summarize prior literature with appropriate citations. This contextualizes the current work's observations of irreversible binding. The authors correctly identify the discrepancy between low binding energy estimates and experimental observations of irreversibility, though they defer quantitative binding energy calculations to future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "Prior computational and structural studies support the role of ordered water in AFP function. Nutt and Smith (2008) found water was more ice-like on sbwAFP's binding face at low temperatures; Midya and Bandyopadhyay (2014) found similar water arrangements for Tenebrio molitor AFP; and crystal structures of various AFPs contain ordered waters postulated to integrate into ice, including mpAFP which shows extensive clathrate-like water networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C55-C56 appropriately cite prior work that supports the ordered water mechanism. These citations strengthen the current findings by showing consistency with previous observations. The references span both computational and experimental structural studies, providing convergent support from multiple methodologies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "In contrast to sbwAFP, the alpha-helical winter flounder AFP (wfAFP) retains activity when ice-binding threonine residues are substituted with hydrophobic valine, suggesting wfAFP ice binding does not depend on threonine hydroxyl groups and may involve hydrophobic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 accurately cite experimental work (Haymet et al. 1999) showing different AFPs may use different binding mechanisms. The authors appropriately caution against over-interpreting comparisons between structurally distinct AFP families and call for further characterization before drawing conclusions. This demonstrates appropriate scientific restraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C63",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Previous AFP simulations modeled pre-arranged proteins at equilibrium ice-water interfaces and lacked actively growing ice fronts, limiting mechanistic insights. The current work addresses this gap by simulating freely diffusing AFP spontaneously adsorbing to a growing ice interface without orientation bias, representing one of the first complete in silico demonstrations of a protein's biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C63, C83-C86 appropriately contextualize the methodological advance of this work relative to prior simulations. The criticism of prior work is fair and well-cited (Nada and Furukawa 2012). The claim of being 'one of the first' complete functional demonstrations (C63) is reasonable given the unbiased binding, mechanism characterization, and functional validation shown. However, 'complete' may be somewhat overstated as binding energetics remain unquantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that AFPs protect cold-adapted organisms by binding to ice and inhibiting growth through the Gibbs-Thomson effect, creating thermal hysteresis gaps ranging from tenths to over 6\u00b0C. AFPs have evolved independently multiple times to bind stereo-selectively to various ice planes, with activity levels adapted to environmental temperatures. The molecular mechanism of binding (direct vs. through ordered water) has been uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C17 provide appropriate background context supported by established knowledge and citations. These claims accurately represent the state of the field and identify the key uncertainty (C17) that the current work addresses. The background appropriately distinguishes between fish and insect AFPs and their different environmental requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The spruce budworm AFP (sbwAFP) has a \u03b2-helix structure with triangular cross-section and a regular array of threonine-x-threonine motifs on its ice-binding face. The threonine spacing matches ice lattice dimensions (7.4 \u00c5 along c-axis, 4.5 \u00c5 along a-axis). The second threonine row is particularly sensitive to mutation. sbwAFP induces up to 6\u00b0C freezing point depression and 0.44\u00b0C melting inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 accurately describe sbwAFP structure and properties based on established knowledge and appropriate citations (Graether et al. 2000, Celik et al. 2010). The structural match between threonine spacing and ice lattice dimensions provides the rationale for studying this protein. These are well-established facts that contextualize the simulation work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior computational studies of winter flounder AFP established correlations between threonine spacing and ice lattice dimensions, initially proposing hydrogen bonding as the primary binding force. However, paradoxical mutational results led to revised models emphasizing hydrophobic interactions or ice-water interface accumulation. Nada and Furukawa (2011) were among the first to model sbwAFP at the prism ice-water interface, showing two binding conformations could affect ice growth kinetics consistent with Gibbs-Thomson effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 provide an accurate historical overview of AFP computational studies with appropriate citations. The summary correctly traces the evolution of mechanistic understanding from hydrogen bonding models to more complex views incorporating hydrophobic effects. This contextualizes how the field has grappled with the binding mechanism question and positions the current work as advancing beyond prior limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Unlike most AFPs, the bacterial mpAFP binds to all ice plane orientations rather than specific ones, possibly through extended ice-like water ordering interacting with ice in non-specific orientations in a process similar to ice sintering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 states an established property of mpAFP, but C58 is explicitly speculative ('may result from'). While the speculation is reasonable given the clathrate-like water network mentioned in C56, it lacks direct supporting evidence. The citation to ice sintering (Kuroiwa 1961) provides a conceptual analogy but not mechanistic validation. This remains an interesting hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The computational requirements to simulate unconstrained AFPs at growing ice-water interfaces are significant and only recently became accessible. The spruce budworm AFP provides an excellent model system and has been used in previous computational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 appropriately contextualize the computational feasibility and choice of model system. The statement about recent accessibility of computational resources is reasonable given the microsecond-scale simulations performed. The choice of sbwAFP is well-justified by prior use in computational studies (citations provided) and its well-characterized properties.",
+    "result_type": "MINOR"
+  }
+]

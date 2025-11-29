@@ -1,0 +1,1482 @@
+{
+  "submission": {
+    "id": "d2c85295-8482-45e2-9a6c-6a233138bb1b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:58:48.927715Z",
+    "updated_at": "2025-11-29T03:58:48.927715Z"
+  },
+  "content": [
+    {
+      "id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "submission_id": "d2c85295-8482-45e2-9a6c-6a233138bb1b",
+      "content_type": "manuscript",
+      "content_text": "# Endoplasmic reticulum stress-independent activation of unfolded protein response kinases by a small molecule ATP-mimic\n\n## Authors\n\n- Aaron S Mendez<sup>1</sup>\n- Jennifer Alfaro<sup>3</sup>\n- Marisol A Morales-Soto<sup>3</sup>\n- Arvin C Dar<sup>1</sup>\n- Emma McCullagh<sup>3</sup>\n- Katja Gotthardt<sup>2</sup>\n- Han Li<sup>2</sup>\n- Diego Acosta-Alvear<sup>2</sup>\n- Carmela Sidrauski<sup>2</sup>\n- Alexei V Korennykh<sup>2</sup>\n- Sebastian Bernales<sup>3</sup>\n- Kevan M Shokat<sup>1</sup> \u2020\n- Peter Walter<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n2. Department of Biochemistry and Biophysics Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n3. Fundaci\u00f3n Ciencia & Vida Santiago Chile\n4. Departamento de Ciencias Biol\u00f3gicas, Facultad de Ciencias Biol\u00f3gicas Universidad Andr\u00e9s Bello Santiago Chile\n5. Department of Structural and Chemical Biology Mount Sinai Hospital New York United States\n6. Department of Chemical Biology Max Planck Institute of Molecular Physiology Dortmund Germany\n7. Department of Molecular Biology Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTwo ER membrane-resident transmembrane kinases, IRE1 and PERK, function as stress sensors in the unfolded protein response. IRE1 also has an endoribonuclease activity, which initiates a non-conventional mRNA splicing reaction, while PERK phosphorylates eIF2\u03b1. We engineered a potent small molecule, IPA, that binds to IRE1's ATP-binding pocket and predisposes the kinase domain to oligomerization, activating its RNase. IPA also inhibits PERK but, paradoxically, activates it at low concentrations, resulting in a bell-shaped activation profile. We reconstituted IPA-activation of PERK-mediated eIF2\u03b1 phosphorylation from purified components. We estimate that under conditions of maximal activation less than 15% of PERK molecules in the reaction are occupied by IPA. We propose that IPA binding biases the PERK kinase towards its active conformation, which trans-activates apo-PERK molecules. The mechanism by which partial occupancy with an inhibitor can activate kinases may be wide-spread and carries major implications for design and therapeutic application of kinase inhibitors.\n\n## Introduction\n\nRoughly 30% of all proteins encoded in eukaryotes pass through the endoplasmic reticulum (ER), where they are folded, modified, and assembled, before they are delivered to the plasma membrane, the outside of the cell, or to various way-stations in the secretory and endocytic pathways. To ascertain fidelity during protein maturation, ER-resident unfolded protein sensors continuously monitor the folding status in the ER lumen. The unfolded protein response (UPR) is induced when the protein folding capacity of the ER is surpassed, triggering the activation of three transmembrane sensors/signal transducers, IRE1 (inositol-requiring enzyme 1), PERK (protein kinase RNA (PKR)-like ER kinase), and ATF6 (activating transcription factor-6). Two of the sensors, IRE1 and PERK, are protein kinases that are amenable to modulation by small molecule ATP-mimetics.\n\nIRE1is the most conserved of these proteins. It contains an ER-lumenal sensor domain that is activated by binding directly to unfolded polypeptides (Credle et al., 2005; Gardner and Walter, 2011). As a result, IRE1 oligomerizes, activating its cytosolic kinase and endoribonuclease domains (Cox et al., 1993; Sidrauski et al., 1996; Calfon et al., 2002; Korennykh et al., 2009; Li et al., 2010). IRE1's RNase domain initiates a non-conventional splicing reaction that results in the excision of an intron from the mRNA encoding the transcription factor XBP1. XBP1 produced from the spliced mRNA drives transcription of UPR target genes to remedy ER stress. The luminal domain of PERK is homologous to that of IRE1 and thus its activation is presumably also driven by direct binding to unfolded polypetides (Gardner and Walter, 2011). Active PERK phosphorylates the \u03b1-subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) (Harding et al., 1999), leading to trapping eIF2\u03b1 in its GDP-bound inactive state, blocks eIF2\u03b1 recycling. As a result, global protein synthesis is attenuated, while a few mRNAs, including that encoding the transcription factor ATF4, are preferentially translated (Harding et al., 2000; Wek et al., 2006).\n\nRecent chemical genetic work in our laboratories revealed that phospho-transfer by Ire1's kinase domain can be bypassed using an ATP mimetic (1NM-PP1) (Papa et al., 2003; Rubio et al., 2011). Starting with studies in Saccharomyces cerevisiae, we showed that Ire1's RNase modality can be activated using a small molecule ATP mimetic (1NM-PP1), when used in conjunction with a mutant form of Ire1 (\u2018IRE1-as\u2019 for analog sensitized) that allows 1NM-PP1 to bind to the ATP-binding site of IRE1's kinase domain. Subsequent work showed that the RNase activity of wild-type Ire1 can too be activated pharmacologically with the broad-acting kinase inhibitors APY29 and Sunitinib in vitro (Korennykh et al., 2009). The crystal structure of the Ire1 kinase/RNase domains bound to APY29, combined with biophysical and enzyme kinetic analyses, showed that binding of ATP-mimetic ligands to Ire1's active kinase site predisposes the enzyme to oligomerization, which activates its RNase activity.\n\nLigand binding to the ATP binding pocket in IRE1's kinase domain, however, does not always result in oligomerization and RNase activation. Rather, activation requires that IRE1's kinase domain is in its active conformational state, characterized by the inward positioning of the \u03b1C helix and the DFG-loop in the kinase active site (DFG/\u03b1C-in conformation) (Korennykh et al., 2011; Korennykh and Walter, 2012; Wang et al., 2012; Sanches et al., 2014). Thus, ATP-mimetic ligands that trap IRE1's kinase domain in the inactive, DFG/\u03b1C-out conformation act as inhibitors, rather than activators, of IRE1 oligomerization and signaling via its RNase domain. Because RNase activation can occur in the absence of a phospho-transfer reaction, IRE1 is unique in that it is possible to monitor the functional consequences of conformational changes in the kinase domain induced by ligand occupancy of the ATP-binding site without concerns of losing the kinase activity.\n\nThe model depicting IRE1's kinase domain as a switch that becomes trapped in two states (DFG/\u03b1C-in and DFG/\u03b1C-out) depending on the ligand bound to its active site is an over-simplification. Different ligands yield different plateaus of maximal oligomerization and RNase activation, even when saturating the active site. This seemingly perplexing property is reconciled by the model in which different ligands predispose IRE1's kinase domain to populate the DFG/\u03b1C-in and DFG/\u03b1C-out states to different degrees; a strong IRE1 RNase activator would stabilize the DFG/\u03b1C-in state, whereas a weaker one would bias the IRE1 molecules in the population towards the DGF/\u03b1C-in state, without completely trapping them in this state. The reverse would be true for IRE1 RNase inhibitors, which would bias IRE1's kinase domain towards the DFG/\u03b1C-out state.\n\nTo date, models of IRE1 activation have largely been derived from in vitro characterizations that lack in vivo confirmation, as the available tools were non-selective (and hence overtly toxic) to test in living cells (Wang et al., 2012). Moreover, while 1NM-PP1 predisposes IRE1-as towards activation, it proved insufficient to activate IRE1 in cells in the absence of ER stress (which vastly concentrates IRE1 by virtue of oligomerization of the lumenal domain) or over-expression. Here, we describe the development of a novel small molecule, IPA, as the lead compound of a series of second-generation IRE1 activators. Surprisingly, IPA activates not only IRE1's RNase, but also PERK signaling but, by contrast to its ability to activate IRE1, only at low concentrations. We propose that PERK activation results from ligand-induced conformational changes in a small percentage of the molecules in the population that then interact with and activate PERK molecules that contain an empty active site.\n\n## Results\n\n### Generation of small molecule activators of IRE1\u03b1\n\nRecent work identified an ATP mimetic that activates mammalian IRE1\u03b1's RNase activity in vitro (Wang et al., 2012; Sanches et al., 2014). These results, along with the co-crystal structure of S. cerevisiae Ire1 with the aminopyrazole-based inhibitor APY29 (PDB ID: 3FBV) (Korennykh et al., 2009), provided a starting point to develop more selective and more potent IRE1 activators. We reasoned that (1) the cyclopropyl substituent on the pyrazole ring, which binds to the gatekeeper pocket in the S. cerevisiae Ire1 structure, would be a key determinant of human IRE1\u03b1 binding, (2) interactions of the hinge-binding element of the APY29 scaffold would be essential to stabilizing IRE1\u03b1's kinase domain in a conformation leading to RNase activation, and (3) the pyrimidine ring, which occupies the adenine pocket in the S. cerevisiae structure, would provide an appropriate space filling moiety that further enhances affinity to the ATP binding pocket (Figure 1A). We therefore kept these three elements constant in further optimizations and explored varying substituents attached to the pyrimidine ring for their ability to improve properties of the compounds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig1-v1.jpg)\n\n**Figure 1.:** (A) The core scaffold of APY29 (aminopyrazole pyrimidine-base indicated in beige). (B) Structure-activity analysis of activating compounds. Compounds were assayed at 1 \u03bcM in a RNA cleavage assay containing IRE1\u03b1-KR43 (200 nM) and 5\u2032 [32P]-labeled RNA substrate HP21 (see \u2018Materials and methods\u2019). IPAx is methylated at the N[1] position in the pyrazole ring indicated as shown in R1. (C) The effects of activating compounds (20 \u03bcM) as a function of IRE1\u03b1-KR43 concentration. 1/2kmax, obs and Hill coefficients (\u2018n\u2019) were calculated (IPA: 1/2kmax, obs = 0.43 \u03bcM, n = 4.2; cmp1: 1/2kmax, obs = 3 \u03bcM, n = 3.8; IPAx 1/2kmax, obs = 8 \u03bcM, n = 3.3, DMSO control: 1/2kmax, obs = 8 \u03bcM, n = 3.3). (D) Compounds and FDA-approved drugs (all at 1 \u00b5M) were screened against a panel of 266 recombinant human kinases (\u2018S/T\u2019: Ser/Thr protein kinases; \u2018Y\u2019: Tyr protein kinases, \u2018PI\u2019: phosphatidylinositide lipid kinases). APY24 contains the aminopyrozole pyrimidine-base, which is similar to APY29 (Figure 1\u2014figure supplement 2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A fluorescence RNA substrate (HP17) containing a 5\u2032 fluorescein and 3\u2032 black hole quencher was used to determine RNase activity at a constant concentration of IRE1\u03b1 ([IRE1\u03b1-KR43] = 100 nM; IPA EC50 = 0.36 \u03bcM; APY29 EC50 = 5.2 \u03bcM; cmp1 EC50 = 0.95 \u03bcM).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The structure of APY24 contains a aminopyrozole pyrimidine core similar to APY29.\n\nTo this end, we modified the molecule by substituting urea-linked and variably m- and p-substituted phenyl groups for the benzimidazole of APY29. Diphenyl urea linkers have previously been used successfully in the design of kinase inhibitors (Dar et al., 2008; Dar and Shokat, 2011; Korennykh et al., 2012). In exploring the addition of this chemotype on the APY29 scaffold, we generated a panel of 10 variants (Figure 1B). Each member of the panel was tested in an RNase activity assay using recombinant IRE1\u03b1-KR43 and a labeled short hairpin RNA substrate derived from human XBP1 mRNA. IRE1\u03b1-KR43 comprises the soluble cytoplasmic portion of IRE1\u03b1, composed of the kinase and RNase domains plus 43 amino acids of the linker that bridges the kinase to its transmembrane domain.\n\nAs expected from the chemical design strategy, we produced a series of IRE1\u03b1 RNase activators. We observed that compounds bearing m-trifluoromethyl, p-methyl, p-ethyl, m-metoxy, and p-methoxy groups on the terminal phenyl ring (cmp1, cmp2, cmp3, cmp4, and cmp5) activated IRE1\u03b1-KR43 activity 10\u2013100-fold under assay conditions, as compared to fivefold by the parent compound APY29 (Figure 1B). These results were surprising, because the presence of an m-trifluoromethyl group was previously shown to be important to retain activity of related kinase inhibitors but, as shown here, is not essential for activation of IRE1\u03b1-KR43. We were also surprised that the activity was improved further by the presence of a p-substituted thioether group and, similarly albeit weaker, by the presence of a p-iodo group (cmp6 and cmp7, 900-fold RNase activation under assay conditions). We conclude that IRE1\u03b1 prefers a substituent with polarizable character at the para-position of the terminal phenyl ring, perhaps indicating that the ring occupies a hydrophobic region in IRE1\u03b1's active site. Increasing bulkiness at the para-position resulted in decreased activities (cmp8, cmp9, and cmp10), suggesting that the size of this pocket must be limited.\n\nWe decided to further characterize compound cmp6, based on its robust activation properties. Henceforth, we refer to cmp6 as IPA (for IRE1/PERK Activator) for reasons to be discussed below. To validate that binding of IPA to IRE1\u03b1's kinase domain is critical for IRE1\u03b1 RNase activation, we generated a control compound, IPAx. In IPAx, the pyrazole ring bears an additional N1-methyl group that is predicted to sterically interfere with binding to the gatekeeper pocket in IRE1\u03b1 (Figure 1A). Indeed, when assayed for activation of IRE1\u03b1 RNase activity, IPAx was inactive showing an indistinguishable effect from the DMSO control (Figure 1B).\n\nATP mimetics, such as APY29, induce IRE1\u03b1-KR43 oligomerization, which in turn activates the RNase activity (Korennykh et al., 2011; Wang et al., 2012). To assess whether IPA acts through a corresponding mechanism, we measured RNase activity as a function of enzyme concentration in the presence of saturating compound concentrations (20 \u03bcM; Figure 1C and Figure 1\u2014figure supplement 1). When no activator was added, apo-IRE1\u03b1\u2013KR43 RNase activity, measured as kobs under single-turnover conditions, increased sharply with increasing enzyme concentration, reaching \u00bd kmax, obs at 8 \u03bcM (Figure 1C, purple circles). The measured Hill coefficient of the activation was n = 3.3, indicating that, consistent with previous work (Li et al., 2010), enzymatic activation parallels oligomerization. By contrast, in the presence of cmp1 or IPA, IRE1\u03b1\u2013KR43 RNase activity reached \u00bd kmax, obs at 3- and 20-fold lower enzyme concentrations, respectively (\u00bd kmax, obs = 3 \u03bcM and 0.43 \u03bcM; and n = 3.8 and 4.2, Figure 1C, red and blue circles), indicating that cmp1 and IPA binding significantly predispose IRE1\u03b1\u2013KR43 to oligomerization and activation. By contrast, addition of IPAx did not enhance IRE1\u03b1 activation, showing activation kinetics that were in all respects indistinguishable from the no-compound control (Figure 1C, pink circles), consistent with its inability to bind to IRE1\u03b1-KR43 (Figure 1C and Figure 1\u2014figure supplement 1).\n\nKinome-wide screening of cmp1 and IPA demonstrated a dramatic improvement of selectivity for both molecules when compared to APY24 (Figure 1D and Figure 1\u2014figure supplement 1), a close analog of APY29, containing the same core-scaffold. In this assay, compounds were screened at a fixed concentration of 1 \u03bcM against a panel of 266 kinases, and the number of those inhibited by \u2265 80% was scored (Figure 1D). We also included in the analysis several bench-mark inhibitors, such as the promiscuous natural product staurosporine (STS) and several clinically approved kinase inhibitors. We note that both cmp1 and IPA show better selectivity profiles when compared to the clinically approved compounds Sunitinib and Dasatinib.\n\n### In vivo effects of IPA on IRE1\u03b1 signaling\n\nTo examine the effects of IPA in living cells, we monitored the UPR in HEK293T cells using RT-PCR to measure splicing of XBP1 mRNA. We found that IPA-induced XBP1 mRNA splicing in a time- and dose-dependent manner (Figure 2A). At a concentration of 2 \u03bcM IPA, splicing was induced within 2 hr (lane 5). As expected, IPAx did not induce XBP1 mRNA splicing (Figure 2B, lane 3). We used tunicamycin (Tm), which induces ER stress by blocking N-linked glycosylation, as a positive control to induce the UPR (Figure 2A, lanes 7, and Figure 2B, lane 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig2-v1.jpg)\n\n**Figure 2.:** (A) HEK293T cells were treated with increasing concentrations of IPA as a function of time. Tunicamycin (Tm, 2 \u00b5g/ml) was used as positive control to induce endoplasmic reticulum stress. The resulting XBP1 mRNA spliced products detected by RT-PCR (\u2018u\u2019: unspliced and \u2018s\u2019: spliced) are indicated. Control cells were treated with DMSO only. The asterisk identifies a hybrid amplicon resulting from spliced and unspliced XBP1 mRNA. (B) The effects of IPAx on the splicing of XBP1 mRNA in HEK293T cells were detected by RT-PCR after 4-hr incubation ([IPA] and [IPAx] = 2 \u00b5M). (C) Inhibition of IPA-mediated XBP1 mRNA splicing in HEK293T cells by AD60 (incubation time = 4 hr; [AD60] = 1 \u03bcM). (D) IRE1-GFP foci formation in T-REx293 cells. IRE1-GFP was visualized by confocal microscopy. (E) Effects of IPA on HEK293T cell viability (LD50 = 0.83 \u03bcM).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A dose response of AD60 in the presences of Tm (2 \u03bcg/m) is shown. Luciferase activity of cells treated with AD60 was normalized to cells treated with Tm only. AD60 IC50 = 0.75 \u03bcM.\n\nTo further rule out off-target effects through which IPA might induce ER stress indirectly, we use a recently discovered IRE1\u03b1 inhibitor, AD60, that binds to the ATP binding pocket of IRE1\u03b1's kinase domain, locking it into its inactive DFG/\u03b1C-out conformation and inhibiting its RNase activity (Dar et al., 2008; Korennykh et al., 2012). Using an XBP1 mRNA-splicing reporter that produces an XBP1-luciferase fusion protein only after IRE1-mediated splicing of its mRNA, we determined an IC50 of 0.75 \u03bcM for AD60 in HEK293T cells (Figure 2C and Figure 2\u2014figure supplement 1). As expected, AD60 inhibited Tm-induced XBP1 mRNA splicing (Figure 2C, lane 3). Likewise, AD60 fully ablated IPA-induced XBP1 mRNA splicing (Figure 2C, lanes 9\u201312), even at the highest IPA concentration tested. Taken together, these results confirm that IPA binds to the ATP-pocket of IRE1\u03b1 to induce XBP1 mRNA splicing in cells.\n\nWe next used a T-REx293 cell line, containing a genome-integrated doxycycline-inducible IRE1\u03b1-GFP fusion gene, to monitor IRE1\u03b1 oligomerization in vivo (Li et al., 2010). In the presence of doxycycline, IRE1\u03b1-GFP was expressed and localized to the ER (Figure 2D). As previously described, Tm rapidly induced the relocalization of IRE1\u03b1-GFP into discrete foci, indicative of IRE1\u03b1 oligomerization and activation (Li et al., 2010). Furthermore, the foci dissolved by 8 hr of treatment as cells attenuated IRE1\u03b1 signaling even in the presence of unmitigated ER stress (Figure 2D, upper panels) (Li et al., 2010). As expected, IPA caused relocalization of IRE1\u03b1-GFP into foci, consistent with sustained IRE1 activation (Figure 2D, lower panels). While Tm-induced foci became larger and fewer over time as previously observed, IPA-induced foci remained small and numerous. Interestingly, IPA-induced foci remained stable even at late time points, consistent with the results obtained for XBP1 mRNA splicing (Figure 2A). These results suggest that IPA-binding to IRE1\u03b1 stabilizes IRE1\u03b1's oligomeric state, interfering with its attenuation.\n\nWe next tested the effect of IPA on cell viability. As shown in Figure 2E, IPA killed cells with an LD50 of 0.82 \u03bcM. This strong toxicity was surprising considering that previous studies have shown that IRE1\u03b1 has a cytoprotective role and that IRE1\u03b1 knock-out cells are viable. The result therefore is best explained by a possible off-target effect connected to ER stress, likely to be mediated through another kinase in the cell. Moreover, as the interplay between the different UPR branches controls the switch over from cytoprotection to apoptosis (Lin et al., 2007), we next probed for possible effect of IPA on PERK and ATF6 signaling.\n\n### In vivo effects of IPA on the ATF6 and PERK UPR branches\n\nTo assess the effects of IPA on the activity of the two other UPR branches, we first examined activation of ATF6. To this end, we monitored mRNA levels by RT-PCR for two ATF6-driven transcriptional target genes, HERP1 and DERL3, in HEK293T cells. As expected, treatment with Tm induced the expression of these two genes (Figure 3A,B, lanes 6\u20139). By contrast, IPA caused no detectable induction (Figure 3A,B, lanes 2\u20135), indicating that IPA does not induce general ER stress.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig3-v1.jpg)\n\n**Figure 3.:** (A) The levels of ATF6 transcriptional target mRNAs HERPUD1 (HERP1) and DERLIN3 (DERL3) were measured by RT-PCR in HEK293T cells treated with 1 \u03bcM IPA. GAPDH was used as a loading control. (B) Same as in (A) but cells were treated with 4 \u03bcM IPA. (C) Phosphorylation of PERK and eIF2\u03b1 in HEK293T cells treated with IPA were detected by immunoblotting (incubation time = 4 hr); PERK phosphorylation is apparent from its shift in gel mobility; eIF2\u03b1 phosphorylation was detected using a phospho-specific antibody. \u03b2-actin was used as a loading control. (D) HEK293T cells were treated for 4 hr with IPA (1 \u00b5M), IPAx (1 \u00b5M), or Tm (2 \u00b5g/ml). PERK shift and eIF2\u03b1 phosphorylation were detected as in C. (E) Wild-type (WT), Ire1\u2212/\u2212, and Perk\u2212/\u2212 mouse embryonic fibroblast (MEFs) cells were treated with IPA (1 \u00b5M) or Tm (5 \u00b5g/ml) for 4 hr. Induction of XBP1 mRNA splicing by IPA was measured by RT-PCR. (F) Cells were treated as above. PERK gel mobility shift and eIF2\u03b1 phosphorylation were detected by immunoblotting.\n\nTo evaluate effects of IPA on the PERK branch, we measured the phosphorylation state of PERK and eIF2\u03b1 by Western blotting. Upon activation, PERK becomes hyperphosphorylated and displays a characteristic mobility shift in SDS-PAGE gels, as observed in cells treated with Tm (Figure 3C, lane 7). Unexpectedly, we observed that IPA also induced a shift in the mobility of PERK (Figure 3C, lanes 2\u20134). This shift, however, was only observed at low-to-intermediate concentrations (0.1, 0.5, and 1 \u00b5M), whereas at higher concentrations (2 and 4 \u03bcM, Figure 3C, lanes 5 and 6), PERK phosphorylation was severely diminished or not detectable. We also monitored PERK activation by phosphorylation of eIF2\u03b1, detected with a phospho-eIF2\u03b1-specific antibody (Figure 3C). These results paralleled those obtained for PERK phosphorylation. By contrast, equivalent concentrations of IPAx did not stimulate PERK or eIF2\u03b1 phosphorylation (Figure 3D, lane 3).\n\nPERK activation by IPA could be due to direct binding of IPA to PERK, or it could be caused by indirect activation of PERK by IRE1. If the latter were true, IPA should not trigger PERK activation in the absence of IRE1. To test this notion, we treated mouse embryonic fibroblasts (MEFs) derived from Ire1\u03b1\u2212/\u2212 and Perk\u2212/\u2212 knock-out mice with IPA and monitored XBP1 mRNA splicing, and PERK and eIF2\u03b1 phosphorylation. As in HEK293T cells, treatment of wild-type MEFs with IPA induced both the PERK and IRE1 branches of the UPR. As expected, we observed no IPA-induced XBP1 mRNA splicing in Ire1\u03b1\u2212/\u2212 MEFs (Figure 3E, lane 4) and only a trace amount of IPA-induced eIF2\u03b1 phosphorylation in Perk\u2212/\u2212 MEFs (Figure 3F, lane 6). By contrast, we observed no IPA-induced XBP1 mRNA splicing, but pronounced PERK phosphorylation (indicated by its mobility shift) and eIF2\u03b1 phosphorylation in the Ire1\u03b1\u2212/\u2212 knock-out MEFs. These results indicate that IPA activates the IRE1 and PERK branches of the UPR independently.\n\nTo test whether IPA binds PERK at its ATP binding site, we purified the cytosolic domain of PERK as a GST-PERK fusion protein. This preparation purified as a stable GST-PERK dimer, which in the presence of radiolabelled [\u03b3-32P]ATP efficiently phosphorylated eIF2\u03b1 in vitro. We next tested the effects of IPA and IPAx using this kinase assay. IPA inhibited the PERK kinase reaction with an IC50 = 2.8 \u03bcM (Figure 4A, solid red circles and Figure 4\u2014figure supplement 1). These data suggest that IPA binds to PERK directly, where it would act as a competitive inhibitor for ATP and thus block its phosphorylation activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig4-v1.jpg)\n\n**Figure 4.:** (A) The effects of IPA, cmp1, and APY29 on GST-PERK kinase activity were monitored measuring phosphorylation of purified S. cerevisiae eIF2\u03b1 with \u03b3-[32P]-labeled ATP (IPA IC5o = 2.8 \u03bcM; cmp1 IC5o = 4.5 \u03bcM, APY29 IC5o = 0.69 \u03bcM). (B) HEK293T cells were pre-treated with IPA for 30 min. Cells were then either co-incubated with IPA and Tm (2 \u00b5g/ml) for an additional 4 hr (lanes 4, 5, and 6) or washed (IPA wash-out) and treated with Tm alone (lanes 7, 8, and 9).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Dose responses were based on a 12-point inhibitor titration, using a twofold dilution series starting from 30 \u03bcM to determine the IC50 values of PERK inhibition.\n\n### IPA activates PERK at low concentrations but inhibits it at higher concentrations\n\nThe observation of IPA-induced PERK inhibition (shown in Figure 3C and Figure 4A) poses the conundrum of why we observed IPA-induced activation in the low micromolar IPA range, producing an unusual, bell-shaped dose response (Figure 3C). This behavior could be explained by a model posing that at lower IPA concentrations, IPA occupies the ATP-binding sites of a subset of PERK molecules, triggering kinase activation of neighboring, unoccupied PERK molecules, as previously shown for other kinases (Hall-Jackson et al., 1999; Hatzivassiliou et al., 2010; Poulikakos et al., 2010). At higher IPA concentrations, IPA would saturate all PERK molecules, thereby inhibiting the pathway. We treated HEK293T with both Tm and IPA, expecting that Tm would not be able to activate PERK signaling in the presence of sufficiently high IPA concentration. Indeed, at 4 \u03bcM IPA, we observed that Tm addition did not activate PERK (Figure 4B, lane 6). Moreover, at 1 \u00b5M IPA, which induces PERK activation (Figure 3C and Figure 3D), we found that Tm did not enhance the PERK mobility shift or eIF2\u03b1 phosphorylation further than what was achieved by IPA alone (Figure 4B, lane 5). IPA inhibition of PERK was reversible, since washing IPA out allowed for activation by Tm (Figure 4B, lane 9).\n\n### PERK inhibitors block IPA-induced PERK activation and restore translation\n\nWe next demonstrated that it is possible to keep the PERK pathway off in the presence of IPA. To this end, we added the selective PERK inhibitor GSK2606414 (Axten et al., 2012) (henceforth abbreviated as \u2018GSK\u2019) to HEK293T cells treated with IPA, at concentrations that exert the greatest effect on PERK pathway activation. As expected, GSK abolished IPA-induced PERK and eIF2\u03b1 phosphorylation (Figure 5A; lanes 5 and 6 and Figure 5\u2014figure supplement 4).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig5-v1.jpg)\n\n**Figure 5.:** (A) Reversal of IPA-mediated PERK activation ([IPA] = 0.5 and 1 \u03bcM; lanes 5 and 6; note peak in Figure 3C at these concentrations) in combination with GSK2606414 (GSK, 1 \u03bcM) was observed using immunoblotting as described in (Figure 3C). As a control, GSK (1 \u03bcM) was used to also inhibit PERK branch activation by thapsigargin (Tg; 100 nM; lane 3). (B) HEK293T cells were incubated with [35S] methionine to monitor protein translation upon addition of IPA (1 \u03bcM) or a combination of IPA (1 \u03bcM) and GSK (1 \u03bcM). The UPR was induced with Tg (100 nM) or DMSO as indicated. (C) Cotreatment of HEK293T cells with IPA + GSK. HEK293T cell viability was measured as a dose-response of IPA in combination with 1 \u03bcM of GSK (pink circles). The presence of 1 \u03bcM GSK shifted the IPA LD50 from 0.82 \u03bcM to 6.21 \u03bcM. The change in cell viability \u00b1 GSK inhibitor is overlaid on both dose responses (green bars). Cells were treated with compounds for 24 hr and cell viability was normalized to DMSO controls.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Quantification of [35S] incorporation was performed a total of 3-time, and mean errors were derived.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** A dose response of GSK was administered in HEK293T cells for 24 hr. No effect on viability was observed at 1 \u03bcM.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** A dose response of STS in the presence of 1 \u03bcM GSK PERK inhibitor. No change in cell viability was observed in the presence of GSK when STS was present.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Reversal of IPA-mediated PERK activation ([IPA] = 0.5 and 1 \u03bcM; lanes 7 and 8; note lanes 5 and 6 which show robust activation of the PERK pathway) in combination with GSK2606414 (GSK, 1 \u03bcM) was observed using immunoblotting as described in (Figure 3C). As a control, GSK (1 \u03bcM) was used to also inhibit PERK branch activation by thapsigargin (Tg; 100 nM; lane 3). No effect on the pathway was observed with GSK alone (lane 4).\n\nThe phosphorylation of eIF2\u03b1 resulting from PERK activation inhibits translation initiation. Indeed, when we incubated HEK293T cells with IPA in the low concentration range where PERK becomes activated, incorporation of [35S]-methionine into newly synthesized proteins was impaired (Figure 5B, lanes 3 and 5), consistent with translation attenuation. Interestingly, treatment with GSK-restored translation to baseline levels (Figure 5B, lanes 4 and 6 and Figure 5\u2014figure supplement 1). This pharmacological manipulation therefore allowed us to experimentally uncouple IPA-induced IRE1\u03b1 and PERK activation. In particular, we were interested in testing whether the unexpected toxicity of IPA (Figure 2E) could, at last in part, be explained by PERK activation, which is known to induce apoptosis (Lin et al., 2007). To explore this notion, we tested cell viability at increasing IPA concentrations in the presence GSK. GSK inhibits PERK in cells with an EC50 of 200 nM (Axten et al., 2012; Moreno et al., 2013) and shows no cell toxicity at 1 \u03bcM (Figure 5C and Figure 5\u2014figure supplement 2). Indeed, GSK added at 1 \u03bcM protected cells from IPA-induced cell death, shifting the LD50 from 0.8 \u03bcM to 6.2 \u03bcM (Figure 5C). As a further control, we tested whether GSK would also rescue cells treated with STS, a rather pleiotropic kinase inhibitor. GSK had no effect under these conditions (Figure 5C and Figure 5\u2014figure supplement 3).\n\nTo address directly whether PERK activation resulted from IPA binding to PERK itself, we recombinantly expressed the cytosolic portion of human PERK and eIF2\u03b1, the only known PERK substrate, and reconstituted the phosphorylation reaction in vitro. To this end, the cytosolic portion of PERK was dephosphorylated and then proteolytically severed and chromatographically separated from its glutathione S-transferase tag, known to promote-constitutive multimerization. The resulting PERK cytosolic fragment was responsive to activation, by contrast to the constitutively active, phosphorylated PERK-GST fusion protein assayed in Figure 4\u2014figure supplement 1.\n\nAs shown in Figure 6A, we observed a large increase in the rate of PERK phosphorylation of eIF2\u03b1, which peaked at 0.5 \u03bcM IPA (3.2-fold increase over DMSO control) and then declined at higher IPA concentrations, whereas IPAx had no effect (Figure 6A, Figure 6\u2014figure supplements 1, 2). The in vitro bell-shaped activity profile mimicked closely the effect observed in intact cells (Figure 3C). Furthermore using chemical crosslinking, we observed that IPA\u2014but not its inactive analog IPAx\u2014significantly increased PERK oligomerization, apparent as an enhanced formation of cross-linked species migrating at the size expected for PERK dimers, trimers, and tetramers (Figure 6B). The formation of higher-ordered PERK oligomers during ER stress was previously reported (Bertolotti et al., 2000; Marciniak et al., 2006).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig6-v1.jpg)\n\n**Figure 6.:** (A) Recombinant PERK cytoplasmic domain was incubated at a set concentration of IPA. The fold-change in the rate of eIF2\u03b1 was normalized to the DMSO control and plotted for all concentration. The greatest effects were observed at 500 nM (3.3-fold change) and 3 \u03bcM (0.31-fold change) in activity. IPAx showed no effect on the rate of PERK activity at a concentration of 20 \u03bcM. (B) Recombinant PERK cytoplasmic domain (2 \u03bcM) was preincubated with varying concentrations of IPA (or IPAx) and subjected to chemical cross-linking. An IPA-dependent increase in the dimer, trimer, and tetramer complexes was observed, whereas IPAx (50 \u03bcM) showed no effect when compared to the DMSO control.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** SDS-polyacrylamide gel showing a dose response of IPA. eIF2\u03b1 phosphorylation was used as a read out of activity. A dramatic activation and inhibition profile is observed. At maximal activity IPA elicits a 3.3-fold change in activation and 0.31-fold change at inhibitory concentrations.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** To test effect of IPAx on PERK activation two concentrations (0.3 and 0.5 \u03bcM) were tested in vitro. The SDS-polyacrylamide gel shows the effect of IPAx on PERK activation at 0.3 and 0.5 \u03bcM. No activation was observed when normalized to the DMSO control.\n\n## Discussion\n\nThe kinase domain of IRE1 can be targeted by small molecules to modulate its function. Based on the co-crystal structure of S. cerevisiae Ire1 with APY29, we developed a series of new small molecule activators, including IPA. We showed that IPA is a strong activator of IRE1\u03b1 signaling in vitro, by trapping IRE1\u03b1's kinase domain in its active (DFG/\u03b1C-in) conformation, which promotes IRE1 oligomerization. In the oligomer, IRE1's RNase becomes activated (Korennykh et al., 2009), offering the unique opportunity to read-out the conformational status of a kinase domain in the absence of phospho-transfer. Conversely, a compound, AD60, that traps IRE1's kinase domain in its inactive (DFG/\u03b1C-out) conformation acts as an inhibitor of IRE1 signaling. Our studies confirm in mammalian cells that IRE1's kinase domain acts as a conformational switch, in which ligand binding to the ATP binding pocket\u2014rather than enzymatic phospho-transfer\u2014controls activity and down-stream signal transduction events (Korennykh et al., 2011).\n\nTo rule out that IPA exerts its IRE1 activating activity by causing general ER stress, we explored its effects on the two other branches of the UPR that signal through ATF6 and PERK. Unexpectedly, we discovered that IPA also activated PERK. By contrast to IRE1 however, for which IPA drives activation in vitro and in vivo as IPA concentrations were increased, PERK activation displayed a bell-shaped dose response: PERK was activated at low IPA concentrations while being inhibited at higher ones.\n\nThe paradoxical activation of kinase signaling by kinase inhibitors was first noted for Raf kinase inhibitors almost 15 years ago (Hall-Jackson et al., 1999). The observation of kinase activation in patients undergoing Raf inhibitor (vemurafenib) clinical trials then led to an intense investigation of the cellular basis for the phenomenon (Hatzivassiliou et al., 2010; Poulikakos et al., 2010). Current models suggest that drug-induced dimerization of Raf causes an increase in Raf kinase activity. This contention is supported by apo- and drug-kinase complex crystal structures, which show Raf dimers in the asymmetric crystal unit (Rajakulendran et al., 2009). Other models have been proposed that Raf inhibitor-induced Raf activation (Holderfield et al., 2013), and, to date, the critical prediction of the model that the Raf kinase inhibitor vemurafenib should induce Raf kinase activity in a purified system has resisted all attempts at biochemical reconstitution. This paucity in direct experimental access has forced mechanistic studies of inhibitor-induced activation to be carried out in cells, where the effects of the many components of the Ras-Raf-Mek-Erk pathway are necessarily confounding. Our work with the reconstitution of PERK's paradoxical activation by IPA shows for the first time that no other components of the kinase pathway are necessary and that inhibitor binding is sufficient for activation through the formation of homo-dimers or higher-ordered homo-oligomers. It was previously suggested that PERK activation is depended upon dimerization and the formation of higher-ordered oligomers (Bertolotti et al., 2000).\n\nThis behavior can be explained in a model in which ligand binding to a few kinase molecules biases them towards the DFG/\u03b1C-in conformation that nucleates assembly with apo-kinases, enabling their trans-activation (Figure 7) (Korennykh and Walter, 2012). Assuming a Kd of 2.8 \u03bcM for IPA-binding to PERK as determined by PERK inhibition (Figure 4A), we estimate that approximately 15% of the PERK molecules are occupied by IPA under assay conditions that yield maximal activation. Since PERK\u2022IPA triggered activation of unoccupied apo-PERK molecules would bias their conformation towards the active state and hence is likely to enhance their affinity for the inhibitor, the estimate of IPA-occupancy in the population defines an upper limit. This back-of-the-envelope calculation therefore suggests that PERK may form oligomers larger than dimers, in which one PERK\u2022IPA may suffice to activate more than one apo-PERK. At low concentrations of IPA, heterodimers of PERK\u2022IPA/PERKapo, or perhaps larger oligomers of PERK\u2022IPA/[PERKapo]n, where all PERK molecules are in the active DFG/\u03b1C-in conformation, are active in phospho-transfer. At higher, saturating IPA doses, all PERK molecules would be occupied by IPA and thus inhibited through competition with ATP binding.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig7-v1.jpg)\n\n**Figure 7.:** The mechanism of PERK activation suggests that at low concentrations of IPA PERK protein is hyper activated presumably through movements of the (DFG/\u03b1C-in). At higher doses of IPA all active sites are filled blocking PERK's activity.\n\nThus, the PERK/IPA enzyme/ligand combination mimics the RAF/vemurafenib combination and broadens the number of examples where an ATP-competitive binder can activate rather than inhibit a kinase. This mode of kinase regulation, now documented for two different protein kinases, may be more widespread than currently appreciated. Indeed, we observed a small amount of activation of eIF2\u03b1 phosphorylation in PERK\u2212/\u2212 cells (Figure 3F, lane 6), indicating that at least one of the other known eIF2\u03b1 kinases (GCN2, HRI, and PKR) may be similarly regulated. Kinase activation by partial occupancy of the active site, therefore, may be an important consideration in dosing kinase inhibitors for therapeutic applications, imposing a \u2018minimal tolerable dose\u2019 below which potential drugs may exert detrimental effects that oppose the desired therapy. This dangerous scenario may result from many kinase inhibitors that bind and stabilize kinases in the DFG/\u03b1C-in conformation.\n\nBased on the observation that ATF6 was not activated in cells treated with IPA, we conclude that IPA-mediated activation of IRE1 and PERK occurred in the absence of ER stress. This property contrasts with that of the previously described activator 1NM-PP1, which binds in the ATP binding pocket to IRE1-as, the cognate, analog-sensitized allele. Activation of IRE1-as by 1NM-PP1 requires the additional induction of ER stress (Wang et al., 2012), or overproduction of IRE1-as driving IRE1-as oligomerization by mass action (Ghosh et al., 2014). IPA therefore presents a unique pharmacological tool with which activation of wild-type IRE1 can be studied in living cells directly in the absence of ER stress.\n\nThe select application of combinations of UPR modulators has allowed us to begin dissecting the individual contributions of the signaling branches of the UPR. In particular, we have shown that the lethality that IPA displays at high doses can be partially overcome if the PERK pathway is inactivated using a selective PERK inhibitor, GSK, increasing the EC50 with which IPA drives cells into apoptosis by about an order of magnitude. This observation is consistent with the proposed roles of both the IRE1 and PERK branches, providing cytoprotective and pro-apoptotic outputs, respectively (Lin et al., 2007). Moreover, AD60, as a DFG-out kinase inhibitor, reversed the effects of IPA on IRE1. IPA, AD60, and other compounds developed to date therefore provide a stepping-stone towards developing novel methodologies for the selective pharmacological tuning of the UPR. Diseases, such as multiple myeloma, a cancer of highly secretory plasma cells where the UPR is thought to play a major cytoprotective role (Carrasco et al., 2007; Leung-Hagesteijn et al., 2013), or triple-negative breast cancer, in which high XBP1 activity has been correlated with poor patient prognosis (Chen et al., 2014), have exposed the potential significance of targeting the UPR in cancers. Additionally, mutations found in cancer cells that weaken IRE1\u03b1 RNase activity may be amenable targets for allosteric modulation. The chemical biology tools developed in this work provide an important step forward towards exploring the utility of UPR-based therapies, as well as offer fundamental mechanistic insights into a key mechanism that keeps the healthy balance of protein folding in the ER.\n\n## Materials and methods\n\n### Cell culture\n\nHEK293T, T-REx293 and wild type, Ire1\u2212/\u2212 and Perk\u2212/\u2212 cells MEF cells were maintained at 37\u00b0C, 5% CO2 in Dulbecco's Modified Eagle Medium (DMEM) supplemented with 10% Fetal Bovine Serum (FBS), 10 units/ml penicillin and 10 \u03bcg/ml streptomycin (Life Technologies, San Francisco, CA). Tm was obtained from Sigma (Milwaukee, WI). Transient and stable transfections were performed using the Lipofectamine 2000 (Invitrogen, Carlsbad CA) and FuGene6 reagent (Roche). Stable cell lines expressing IRE1-3F6HGFP T-REx293 were described previously (Li et al., 2010).\n\n### Live cell imaging\n\nT-REx293 cells were split 2 days before imaging onto glass-bottom micro-well dishes (MatTek) at 5 \u00d7 104 cells/dish. Doxycyclin-containing medium (10 nM doxycycline) was added for 24 hr, withdrawn before imaging and replaced with imaging media (Hank's Balanced Salt Solution [Gibco], 2% FBS, and 5 mM HEPES pH 7.0). Images were acquired on a spinning-disk confocal microscope as described (Li et al., 2010).\n\n### Metabolic labeling\n\nHEK293T cells (500,000 cells/ml) were plated in 12-well flat bottom culture cluster dishes (Costar, Fisher Scientific) 24 hr before the experiment. IPA (1 \u03bcM), or a combination of IPA with GSK2606414 (TRC inc. Toronto Canada), were added to the cells culture for no longer than 2 hr. 15 min prior to lysing cells, 4 \u03bcCi of Express [35S] protein-labeling mix (Perkin\u2013Elmer) was added. Media were removed, and cells were immediately lysed in a buffer containing 25 mM Tris-HCl pH 8, 8 mM MgCl2, 1 mM dithiothreitol (DTT), 1% Triton X-100, 15% glycerol, 10 mM leupeptin, 153 \u03bcM aprotenin, and 1 mM phenylmethanesulfonyl fluoride. Cells lysates were kept on ice for 30 min before high-speed centrifugation followed by denaturation at 95\u00b0C. The samples were resolved on an SDS-polyacrylamide gel, which were then stained with Coomassie blue to ascertain protein loading. Dry gels were exposed to a blank phosphorscreen and scanned using a Typhoon variable mode imager (GE Healthcare). The resulting autoradiograms were quantified using ImageQuant software (Molecular Dynamics).\n\n### Cell viability assays\n\nHEK293T cells were grown in DMEM (Sigma) complete media containing 10% FBS, 10 units/ml penicillin (Invitrogen), and 10 \u03bcg/ml streptomycin (Invitrogen). Cells were plated at a density of 30,000 cells per well in 96-well black plates with clear flat bottoms (Corning, Sigma-Aldrich) 24 hr before the experiment. A 12-point semi-logarithmic dilution series of compounds was made starting at 30 \u03bcM not to exceed 0.1% DMSO after final dilution into the growth media. Viability assays were conducted over the course of 24 hr. Cell viability was determined using CellTiter-Blue (Promega) following the manufacturer's instructions. A Spectramax5 Microplate reader equipped with SoftMax Pro 5 software (Molecular Devices) was used to read out viability, and data were plotted using SigmaPlot software package (Systat Software). Experiments were done in triplicate, and mean values were computed for each data point.\n\n### RNA isolation and RT-PCR\n\nCells were lysed and total RNA was collected (Total RNA Kit 1, EZ-RNA, EZNA [USA]). PolyA+ mRNA was reverse transcribed with M-MLV (Invitrogen), and the resulting cDNA was used as a template for PCR amplification across the fragment of XBP1 cDNA containing the intron. Primers used to amplify human XBP1: 5\u2032-TTACGAGAGAAAACTCATGGC-3\u2032 and 5\u2032-GGGTCCAAGTTGTCCAGAATGC-3\u2032. To amplify murine XBP1: 5\u2032-GAACCAGGAGTTAAGAACACG-3\u2032 and 5\u2032-AGGCAACAGTGTCGAGTCC-3\u2032. PCR conditions were as follows: 95\u00b0C for 5 min, 95\u00b0C for 1 min, 58\u00b0C for 30 s, 72\u00b0C for 30 s, and 72\u00b0C for 5 min, with 20 cycles of amplification. PCR products were resolved on a 2.5% agarose tris-acetate EDTA (TAE) gel. As previously reported, a hybrid amplicon species consisting of unspliced Xbp-1 annealed to spliced Xbp-1 can also be produced through this PCR reaction and was visible as a slower migrating band above the unspliced amplicon. The same cDNA was used as template for PCR of DERLIN-3 and HERPUD1, both ATF6 targets, and GAPDH, which was used as loading control. Primers used included the following: DERLIN-3, 5\u2032-AGTTCCACTCTTTGATGGAGGGCA-3\u2032 and 5\u2032-AGCCAGCTGTGAGGAATATGGGAA-3\u2032; HERPUD1-1, 5\u2032-ACAAGGTGGCCCTATTGTGGAAGA-3\u2032 and 5\u2032-AGTCCATTCCTGTCAAAGCCTCCA-3\u2032; GAPDH, 5\u2032-CCATGTTCGTCATGGGTGTGA-3\u2032 and 5\u2032-CATGGACTGTGGTCATGAGT-3\u2032. PCR conditions were: 95\u00b0C \u00d7 5 min, 95\u00b0C \u00d7 1 min, 56\u00b0C \u00d7 30 s, 72\u00b0C for 30 s for 25 cycles, 72\u00b0C for 5 min at 4\u00b0C. PCR products were resolved on a 2% agarose TAE gel.\n\n### Protein expression and purification\n\nHuman IRE1\u03b1-KR43 with a hexa-histidine (6xHis) tag in its N-terminus was expressed and purified in SF21 cells as described (Li et al., 2010). Cells were lysed in buffer containing 20 mM Tris-HCl, pH 7.5, 600 mM NaCl, 2 mM MgCl2, 3 mM imidazole, 10% glycerol, 1% Triton X-100, 3 mM \u03b2-mercaptoethanol, COMPlete protease inhibitors (Roche), and PhosSTOP phosphatase inhibitor cocktail (Roche) and passed through an AVESTIN emulsiflex-C3 3\u00d7 times for complete lysis. The lysate was cleared using centrifugation at 100,000\u00d7g. Clear lysate was allowed to incubate on Ni-NTA agarose (Qiagen) beads for 2 hr before being washed 3\u00d7 times with buffer containing 20 mM Tris-HCl, pH7.5, 600 mM NaCl, 2 mM MgCl2, 30 mM imidazole, 10% glycerol, and 3 mM \u03b2-mercaptoethanol. Protein was eluted from the column by raising the imidazole concentration to 250 mM. The eluate was then passed through a HiTrap desalting column (GE Healthcare). Lastly, the 6xHis was cleaved as described (Li et al., 2010) and the resulting protein was then loaded onto a HisTrap HP, 5 \u00d7 5 ml column to remove the uncleaved protein. The cleaved protein was then loaded on a Mono-S 5/50 GL column (GE Healthcare), and the eluate was then concentrated to 5 mg/ml and loaded on a Superdex 200 HR 10/300 (GE Healthare) column in buffer containing 20 mM Tris-HCl pH 7.5, 250 mM NaCl, 5% Glycerol and 5 mM tris(2-carboxyethyl)phosphine (TCEP). The pure protein solution was aliquoted and stored at \u221280\u00b0C.\n\nTo express the cytosolic kinase domain of PERK, the murine PERK kinase domain (580\u20131077aa) was cloned into a pGEX4T1 vector to create a fusion protein containing N-terminal GST. The plasmid was transformed into Escherichia coli strain BL21DE3 RIPL (Agilent Technologies). Cells were grown in LB medium containing ampicillin and chloramphenicol until OD600 = 0.6. Expression was induced with 0.2 mM IPTG at 18\u00b0C for 16 hr. Cells were harvested by centrifugation, resuspended in buffer A (50 mM Tris pH 7.5, 150 mM NaCl, 5 mM MgCl2, 3 mM \u03b2-mercaptoethanol, 2.5% Glycerol) and lysed by sonication. After centrifugation, the supernatant was applied to a GST-Sepharose column and washed with buffer A and buffer A containing 500 mM KCl and 1 mM ATP. Sample was eluted with buffer A containing 20 mM glutathione. GST-PERK kinase domain was then concentrated and further purified on a Superdex 200 10/300 gel filtration column equilibrated in buffer B (50 mM Tris pH 7.5, 50 mM NaCl, 5 mM MgCl2, 3 mM DTT, 1% Glycerol). Fractions containing GST-PERK kinase domain were concentrated and flash-frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\nFull-length cytosolic human PERK was codon-optimized for E. coli expression by Genewiz Inc. A construct was then cloned into a Pgex-6p-2 vector for expression using two rounds of In-Fusion cloning (Clontech) (535\u20131093 \u0394660\u2013868). The cytosolic portion of PERK, lacking the unstructured loop region (amino acids 535\u20131093 \u0394660\u2013868) was then co-expressed with a tagless lambda phosphatase to produce a fully dephosphorylated PERK protein in BL21 star (DE3) (Life Technologies) (Dar et al., 2008). Cells were grown to an OD600 of 0.5 before induction with 0.1 mM IPTG at 15\u00b0C for 25 hr. Cells were harvested and lysed using AVESTIN Emulsiflex-C3 in a buffer containing 50 mM Tris-HCl, pH 8.0, 500 mM NaCl, 10% glycerol, 5 mM TCEP (buffer A), and EDTA-free COMPlete protease inhibitor cocktail (Roche). Lysate was cleared by centrifugation at 100,000\u00d7g before batch binding to a GST-Sepharose resin. The resin was washed 5\u00d7 times with buffer A, and on-column tag cleavage was preformed using PreScission protease (GE Healthcare). The protein was loaded onto a HiTrap Q HP column to remove remaining protease. The PERK (535\u20131093 \u0394660\u2013868) protein was then concentrated and fractionated on a Superdex 200 GL (GE Healthcare) to remove uncleaved GST-PERK protein.\n\n### Immunoblotting\n\nCells were lysed in 50 mM Tris-HCl, 2% SDS, 10% glycerol, 0.01% bromophenol blue, pH 6.8 supplemented with phosphatase inhibitors (Sigma) and protease inhibitors (Roche). 30 \u03bcg to 50 \u03bcg of total protein was loaded on each lane of 8% or 10% SDS-PAGE gels. The separated proteins were then transferred onto nitrocellulose membranes for immunoblotting. The following antibodies and dilutions were used: anti-\u03b2-actin 1:10,000 (A5441, Sigma), anti-total PERK at 1:1000 (C33E10, Cell Signaling Technology), anti-phospho eIF2\u03b1 at 1:1000 (3597S, Cell Signaling Technology), anti-total eIF2\u03b1 at 1:1000 (L57A5, Cell Signaling Technology). After overnight incubation with primary antibody, membranes were washed in PBS with 0.05% Tween and incubated in HRP-coupled secondary antibody anti-rabbit (611\u20131302, Rockland) or anti-mouse (610\u20131302, Rockland) diluted at 1:5000 in wash buffer. Immunoreactive bands were detected by chemiluminescence.\n\n### In vitro endoribonuclease IRE1 activity assay\n\nIRE1 endoribonuclease activity was detected employing two in vitro assays. kobs and Hill coefficients were determined from the cleavage kinetics of [32P]-labeled RNA substrates as previously described (Korennykh et al., 2009). The assay was started by adding 1 \u03bcl of [32P]-labeled RNA to 9 \u03bcl of premixture containing 20 mM HEPES pH 7.4, 70 mM NaCl, 2 mM MgCl2, 4 mM DTT, 5% glycerol, 1 \u00b5l of 10 \u03bcM compound in DMSO. Reactions were performed at 30\u00b0C. Reactions were conducted under single turnover conditions. They contained \u22641 pM [32P]-labeled RNA and increasing concentrations of purified IRE1\u03b1-KR43. Reactions were quenched at time intervals with 6 \u03bcl stop solution (10 M urea, 0.1% SDS, 0.1 mM EDTA, 0.05% xylene cyanol, and 0.05% bromophenol blue). Samples were analyzed in 10\u201320% Urea-PAGE gels. Gels were scanned using a Typhoon variable mode imager (GE Healthcare) and quantified using the ImageQuant and GelQuant software packages (Molecular Devices). The data were plotted and fit to exponential curves using SigmaPlot software package (Systat Software) to determine observed rate constants as previously described (Korennykh et al., 2009). EC50 values were determined using a FRET-based cleavage assay. A FRET probe (FRET_IDT_17 56- FAM/rCrArCrCrUrCrUrGrCrArGrCrArGrGrUrG/IABlk_FQ) was purchased from IDT (RNase free HPLC purification) and dissolved in RNase-free H2O. Excitation: 485 (480\u2013490) and emission: 517 (512\u2013520). The reactions were started by addition of RNA FRET probe (to a final concentration of 100 nM) to 9.4 \u03bcl of premixture containing 20 mM HEPES, pH 7.4, 70 mM NaCl, 2 mM MgCl2, 4 mM DTT, 5% glycerol, and compound in DMSO not to exceed 1%. Reactions were performed at 30\u00b0C and contained 150 nM enzyme under single turnover conditions. Reactions were quenched at time intervals with equal volumes of formamide. Samples were analyzed using a SpectraMax M5 plate reader equipped with SoftMax Pro 5 and data acquisition software (Molecular Devices). The data were plotted using SigmaPlot software package (Systat Software). Experiments were repeated 3\u20134 times and mean values were computed.\n\n### Generation of XBP1 reporter cell line\n\nA plasmid encoding a modified ER stress reporter construct consisting of a C-terminally FLAG-tagged firefly luciferase coding sequence fused to an N-terminal hemagglutinin-tagged tandem repeat of a partial sequence of XBP1 of human origin lacking its DNA-binding domain and containing the IRE1-cognate intron (pCAX-HA-2xXBP1\u0394DBD(anATG)-LUC-F, kind gift of Takao Iwawaki [Hosoda et al., 2010]), was used as a template to generate a retroviral expression construct. The coding sequence of the reporter was amplified by PCR using primers with engineered BamHI and EcoRI sites and was subsequently cloned into the cognate sites of the retroviral expression vector pBABE.puro (Addgene) to generate construct DAA-A171. DAA-A171 was used to generate recombinant retroviral particles using standard methods and the resulting retroviral supernatant was used to transduce HEK293T cells, which were then subsequently selected with puromycin to create a stable reporter cell line.\n\n### Kinase-inhibitor profiling\n\nIPA and cmp1 were assayed by Invitrogen to derive percent inhibition of kinase activity. All compounds were screened at 1 \u03bcM and raw values are shown in supplementary tables. Detailed procedures for kinase reactions, ATP concentrations used and Z\u2032-LYTE or Adapta assay formats are described in SelectScreen Customer Protocol (http://www.invitrogen.com/kinaseprofiling). Kinase-inhibition data for 1 \u03bcM inhibitor of each of the clinical and tool compounds STS, Sunitinib, Dasatinib, Imatinib, SB202190, Erlotinib and Gefitinib were provided by Invitrogen based on stock results and not an independent comparison conducted or commissioned by the authors. Raw data of percent inhibition of all 266 kinases can be located in Supplementary file 1. Screening analysis for APY24 was previously reported (Statsuk et al., 2008).\n\n### In vitro PERK cross-linking assay\n\nA solution of PERK cytosolic domain (535\u20131093 \u0394660\u2013868) (2 \u03bcM) was incubated with IPA or IPAx for 15 min before the addition of 250 \u03bcM of the amino group-reactive cross-linking agent bis[sulfosuccinimidyl] suberate (BS2g-d0, Thermo Scientific). After 30-min incubation at room temperature Tris-HCl pH 7.5 was added to a final concentration of 55 mM. Samples were then boiled in Laemmli sample buffer and loaded into an Any kD Mini-protean TGX gel (Bio Rad). Cross-linked protein was visualized using Colloidal Coomassie G-250 stain.\n\n### In vitro PERK kinase assay\n\nGST-PERK kinase domain (580\u20131077 aa) was pre-incubated with compounds for 30 min. The kinase reaction was initiated by addition of ATP including 0.2 mCi \u03b3-[32P]-ATP. The final concentrations of the reactants were 50 nM GST-PERK, 50 \u03bcM eIF2\u03b1, 100 \u03bcM ATP and varying concentrations of compound. At 30 min, 2 \u03bcl of each reaction was spotted onto a P81 phospho-cellulose membrane. The membrane was washed in 1% phosphoric acid and the sheets were washed five times in buffer, dried, and transferred radioactivity was measured using a Typhoon variable mode imager (GE Healthcare) and quantified using the ImageQuant (Molecular Devices). Titration data were fit to a sigmoidal dose response to derive IC50 values using the SigmaPlot software package (Systat software). Dose responses were based on a 12-point inhibitor titration, using a semi-logarithmic dilution series starting from 30 \u03bcM. Experiments were completed 2\u20134 times and mean values were computed.\n\nPERK activation was measured using PERK (535\u20131093 \u0394660\u2013868) in a buffer containing 20 mM Tris-HCl, 150 mM NaCl, 4 mM MgCl2, 5 mM TCEP, 1% glycerol, pH 8.0. PERK concentration was 1 \u03bcM, and activity was measured at 30\u00b0C. PERK was pre-incubated with 50 \u03bcM of cold ATP in the presence or absence of IPA or IPAx. The reaction was then initiated by adding S. cerevisiae eIF2\u03b1 (1\u2013180) and 0.2 mCi \u03b3-[32P]-ATP. The reaction was monitored over a time course of 30 min, during which 1/6 of the reaction volume was removed at 0.5, 1, 5, 10, 20, and 30 min and stopped in Laemmli buffer supplemented with 50 mM EDTA. Reactions were then boiled and loaded onto a 12.5% Criterion precast gel (Bio-rad). The gel was then dried before imaging using a Typhoon variable mode imager (GE Healthcare). Gels were quantified using ImageQuant software and data were processed using SigmaPlot software package. Rates were determined using non-linear regression. Experiments were performed 3 times, and mean errors were determined.\n\nThe fraction PERK bound by IPA was calculated using the standard Langmuir isotherm equation. Using the calculated IC50 described in Figure 4A.\n\n$$\nfraction\u2009bound=\\frac{1}{1+\\frac{IC_{50}}{[I]}}.\n$$\n\n### Chemistry: synthesis of intermediate 3\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig8-v1.jpg)\n\n2,4-dichloropyrimidine 2 (13.30 g, 89.31 mmol) and 3-amino-5-cyclopropylpyrazole 1 (11.00 g, 89.31 mmol) were dissolved in tetrahydrofuran (TFA) (100 ml) followed by the addition of deionized water (100 ml). The solution was then treated with potassium acetate (261.9 g, 2.5 mol). The resulting mixture was kept at 55\u00b0C for 48 hr. The mixture was filtered to remove excess potassium acetate. The organic layer was separated and dried using magnesium sulfate and concentrated before loading on an AnaLogix silica column. Intermediate 3 was separated as previously reported (Hosoda et al., 2010). 1H NMR (400 MHz, DMSO) \u03b4 12.14 (s, 1H), 10.23 (s, 1H), 1.84 (m, 1H), 0.88 (m, 2H), 0.64 (m, 2H). 13C NMR (100 MHz, DMSO) \u03b4 161.4, 160.7, 160.0, 153.9, 148.6, 147.8, 146.8, 8.4, 8.2. MS calculated for C10H10N5 235.06, found 236.15 (M+).\n\n### Synthesis of intermediate 5\n\n![Figure 9.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig9-v1.jpg)\n\nPyrimidine monochloride 3 (4 g, 16.9 mmol) (Oakwood chemical) and p-phenylene-diamine 4 (1.9 g, 16.9 mmol) (Sigma) were dissolved in butanol (BuOH) (50 ml) (Sigma) followed by the addition of concentrated HCl (0.1 ml) (Fisher Scientific). The resulting mixture was kept at 100\u00b0C overnight. Purple precipitate was collected by filtration, washed with 30 ml of cold BuOH and dried under vacuum yielding intermediate 5, which was used in the next step without further purification. MS calculated for C16H17N7 307.15, found 308.5.\n\n### Synthesis of cmp1\n\n![Figure 10.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig10-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry dimethylformamide (DMF) (Sigma). The flask was placed in an ice bath before addition of 3-(trifluoromethyl)phenyl isocyanate (93.5 mg; 0.069 ml; 0.5 mmol) 6 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by the addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and distilled water (dH2O) for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yielded cmp1. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.30 (s, 1H), 10.00 (s, 2H), 8.70 (s, 3H), 7.43 (m, J = 2.3 Hz, 6H), 6.62 (d, J = 2.1 Hz, 5H), 5.29 (s, 1H) 2.51 (m, J = 10.2 Hz, 4H), 1.79 (t, J = 9.6 Hz, 1H), 0.87 (s, 4H) 13C NMR (151 MHz, DMSO-d6) \u03b4 155.7, 152.8, 141.8, 138.4, 135.5, 133.6, 130.2, 129.3, 128.9, 118.8, 112.6, 97.6, 8.9; ESI-MS m/z [M + H] found 495.49 calculated 494.49.\n\n### Synthesis of cmp2\n\n![Figure 11.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig11-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. Flask was placed in an Ice bath before addition of p-Toyl isocyanate (0.066 mg; 0.063 ml; 0.5 mmol) 7 (Sigma) drop wise using a Hamilton syringe under argon. Resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp2. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.21 (s, 1H), 9.13 (s, 1H), 8.58 (q, J = 1.3 Hz, 9H), 8.35 (d, J = 21.6 Hz, 3H), 6.54 (s, 3H) 2.51 (m, J = 10.2 Hz, 4H), 1.89 (s, 1H) 1.29 (t, J= 1.1 Hz, 3H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 155.4, 153.8, 146.8, 140.3, 139.7, 136.7, 131.2, 127.8, 117.3, 115.4, 63.5, 33.5, 32.1 8.1; ESI-MS m/z [M + H] found 440.28 calculated 440.21.\n\n### Synthesis of cmp3\n\n![Figure 12.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig12-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-Ethylphenyl isocyante (0.073 mg; 0.072 ml; 0.5 mmol) 8 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield product cmp3. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.30 (s, 1H), 10.00 (s, 2H), 7.50 (d, J = 2.1 Hz, 3H), 7.33 (s, 6H), 7.08 (t, J = 7.2 Hz, 3H), 1.79 (s, 2H), 1.13 (m, J = 13.4 Hz, 5H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 162.4, 153.0, 141.16, 130.4, 130.0, 129.9, 123.8, 122.21, 118.4, 114.5, 113.9, 35.6, 8.4; ESI-MS m/z [M + H] found 455.5 calculated 454.31.\n\n### Synthesis of cmp4\n\n![Figure 13.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig13-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 3-methoxyphenyl isocyanate (0.075 mg; 0.066 ml; 0.5 mmol) 9 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by the addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp4. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.43 (s, 1H), 11.1 (s, 1H), 10.17 (s, 1H), 8.78 (d, J = 19 Hz, 2H), 8.68, 7.82 (s, 1H), 7.57 (q, j = 6.1 Hz, 2H), 7.41 (t, J = 8.9 Hz, 2H), 7.18 (q, J = 7.2 Hz, 3H), 6.84 (d, J = 5.8 Hz, 1H), 3.89 (s, 3H), 1.79 (s, 1H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 160.1, 152.95, 141.4, 130.0, 119.9, 110.9, 107.6, 104.4, 55.3, 8.37; ESI-MS m/z [M + H] found 457.6 calculated 456.45.\n\n### Synthesis of cmp5\n\n![Figure 14.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig14-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-methoxyphenyl isocyanate (0.075 mg; 0.065; 0.5 mmol) 10 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by the addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp5. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.40 (s, 1H), 11.18 (s, 1H), 10.20 (s, 1H), 9.73 (q, J = 8.6 Hz, 2H), 8.78 (d, J = 8.9 Hz, 3H), 7.62 (t, J = 2.5 Hz, 2H), 7.44 (t, j = 6.1 Hz, 3H), 6.98 (t, J = 7.2 Hz, 2H) 3.78 (m, J = 12.2 Hz, 3H), 1.79 (s, 1H), 0.87 (s, 4H), 0.54 (s, 2H); 13C NMR (151 MHz DMSO-d6) \u03b4 159.3, 153.1, 141.3, 125.3, 121.4, 110.4, 108.6, 104.3, 58.3, 8.4; ESI-MS m/z [M + H] found 457.5 calculated 456.51.\n\n### Synthesis of cmp6 (IPA)\n\n![Figure 15.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig15-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-(methylthio)phenyl isocyanate (0.082 mg; 0.07 ml; 0.5 mmol) 11 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield IPA. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.10 (s, 1H), 9.95 (s, 2H), 8.61 (d, J = 3.7 Hz, 2H), 7.48 (d, J = 2.3 Hz, 8H), 7.22 (d, J = 21.3 Hz, 3H), 2.21 (m, J = 10.2 Hz, 3H), 1.79 (s, 1H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 161.3, 155.3, 142.3, 140.6, 137.4, 135.8, 133.3, 131.2, 128.3, 119.5, 114.3, 16.5, 8.2; ESI-MS m/z [M + H] found 472.18 calculated 472.20.\n\n### Synthesis of cmp7\n\n![Figure 16.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig16-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-iodophenyl isocyanate (0.122 mg, 0.5 mmol) 12 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp7. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.21 (s, 1H), 9.10 (s, 1H), 8.81 (s, 1H), 8.79 (s, 1H), 8.52 (t, J = 8.5 Hz, 1H), 8.08 (S, 1H), 7.68 (m, J = 11.8 Hz, 4H), 7.38 (m, J = 10.2, 4H), 6.14 (d, J = 15.2 Hz, 2H), 1.79 (s, 1H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 156.4, 152.9, 140.3, 137.7, 136.1, 133.5, 120.7, 120.2, 119.3, 116.9, 98.1, 84.7, 8.1; ESI-MS m/z [M + H] found 553.3 calculated 552.08.\n\n### Synthesis of cmp8\n\n![Figure 17.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig17-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-bromophenyl isocyanate (0.099 mg, 0.5 mmol) 13 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp8. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.21 (s, 1H), 9.51 (s, 1H), 8.81 (m, J = 21.8 HZ, 2H), 8.68 (d, J = 6.3 Hz, 1H), 7.82 (s, 1H), 7.48 (m, J = 22.5 Hz, 8H), 7.33 (d, J = 23.2 Hz, 2H), 7.08 (t, J = 7.2, 3H), 1.79 (s, 1H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 155.3, 152.3, 140.9, 138.3, 137.6, 132.6, 122.4, 121.8, 120.8, 118.4, 95.4, 82.7, 8.2; ESI-MS m/z [M + H] found 505.5 calculated 504.10.\n\n### Synthesis of cmp9\n\n![Figure 18.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig18-v1.jpg)\n\nIntermediate 5 (153 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-isopropylphenyl isocyanate (0.080 mg; 0.08; 0.5 mmol) 14 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp9. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.11 (s, 1H), 8.51 (t, J = 13.6 Hz, 4H), 7.58 (m, J = 8.3 Hz, 2H), 7.22 (q, J = 12.6 Hz, 8H), 6.48 (d, J = 5.1 Hz, 1H), 1.13 (m, J = 13.4, 8H), 0.87 (m, J = 19.4 Hz, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 158.3, 151.6, 144.7, 139.3, 138.6, 136.9, 134.5, 124.8, 119.1, 118.5, 36.5, 32.5, 8.1; ESI-MS m/z [M + H] found 469.5 calculated 468.24.\n\n### Synthesis of cmp10\n\n![Figure 19.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig19-v1.jpg)\n\nIntermediate 5 (200 mg, 0.5 mmol) was dissolved in 10 ml of dry DMF. The flask was placed in an ice bath before addition of 4-tert-butylphenyl isocyanate (0.087 mg; 0.089 ml; 0.5 mmol) 15 (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield cmp10. 1H NMR (400 MHz, DMSO-d6): \u03b4 12.11 (s, 1H), 9.43 (s, 1H), 8.81 (s, 1H), 8.68 (m, J = 22.3 Hz, 2H), 7.92 (s, 1H), 7.43 (m, j = 28.1 Hz, 8H), 6.28 (t, J = 7.2 Hz, 2H) 1.79 (s, 1H), 1.13 (s, 9H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 153.1, 144.3, 137.7, 135.8, 133.9, 125.8, 119.1, 118.3, 119.07, 118.3, 34.3, 31.7, 30.9, 8.1; ESI-MS m/z [M + H] found 483.5 calculated 482.25.\n\n### Synthesis of IPAx\n\n![Figure 20.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig20-v1.jpg)\n\nPyrimidine monochloride 3 (0.4 g, 1.67 mmol) was dissolved in dry round bottom flask containing 30 ml of dichloromethane (anhydrous) (Sigma). The flask was then chilled to 4\u00b0C in an ice bath under argon. Potassium carbonate (K2CO3) (0.92 g, 6.68 mmol) was added, and the reaction was stirred for 10 min. Iodomethane (0.425 g, 2.5 mmol) was then added drop-wise and kept at 4\u00b0C until determined complete by thin layer chromatography. The reaction was then filtered to remove excess K2CO3 and an equal volume of dH2O was added to reaction mixture. The mixture was washed three times with brine solution and then dried using magnesium sulfate. The solution was then filtered and concentrated before being loaded on to an AnaLogix silica column. Monomethylated intermediate 16 was isolated using a solution of 5% methanol in chloroform over 30 min. ESI-MS m/z [M + H] found 250.3 calculated 249.09.\n\n![Figure 21.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig21-v1.jpg)\n\nIntermediate 16 (0.157 g, 0.633 mmol) and p-phenylene-diamine (0.068 g, 0.633 mmol) were dissolved in BuOH (3 ml) followed by the addition of concentrated HCl (0.01 ml) resulting mixture was kept at 100\u00b0C for 8 hr. Isolation and purification of 17 is as described for intermediate 3. ESI-MS m/z [M + H]+ found 322.5 calculated 321.19.\n\n![Figure 22.](https://cdn.elifesciences.org/articles/05434/elife-05434-fig22-v1.jpg)\n\nIntermediate 17 (0.038 mg, 0.123 mmol) was dissolved in 5 ml of dry DMF. The flask was placed in a ice bath before addition of 4-(methylthio)phenyl isocyonate (0.023 mg, 0.123 mmol) (Sigma) drop wise using a Hamilton syringe under argon. The resulting mixture was allowed to warm to room temperature overnight. Crude compound was isolated by the addition of cold H2O (30 ml) and isolated by filtration. Solid was washed with 100% CH3CN and then suspended in 1:1 CH3CN and dH2O for reverse-phase purification using HPLC. A gradient from 2\u201380% CH3CN:H2O (0.1% TFA) was used to further during purification on a C18 column (Agilent Technologies) followed by lyophilization to yield IPAX. 1H NMR (400 MHz, DMSO-d6): \u03b4 10.00 (s, 2H), 8.81 (s, 1H), 8.68 (d, J = 2.3 Hz, 1H), 7.82 (s, 1H), 7.50 (d, j = 2.1 Hz, 3H), 7.33 (s, 6H), 7.08 (t, J = 7.2, 3H), 6.08 (s, 2H), 1.79 (s, 1H), 0.87 (s, 4H); 13C NMR (151 MHz DMSO-d6) \u03b4 162.4, 153.0, 141.1, 131.3, 130.1, 129.3, 123.8, 122.1, 118.2, 115.2, 114.2, 8.4; ESI-MS m/z [M + H]+ found 487.5 calculated 486.21.\n",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "5d10a766-d4f1-4cd1-9b95-6ddce3c93842",
+      "submission_id": "d2c85295-8482-45e2-9a6c-6a233138bb1b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05434.021](https://doi.org/10.7554/eLife.05434.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cER stress-independent activation of unfolded protein response kinases by a small molecule ATP-mimic\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor and Reviewing editor) and three reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this study, Mendez et al. report the discovery and characterization of IPA, a small molecule (ATP mimetic) modulator of the unfolded protein response effectors IRE1 and PERK.\n\nPrevious work by the authors using small molecule ATP-mimics to inhibit the kinase domain of IRE1 showed an interesting mechanism by which IRE1 responds to unfolded protein stress: The kinase activity of the IRE1 kinase is not required, but rather the active conformation of the kinase.\n\nIn the present work, using biochemical assays, the authors demonstrate that IPA is an activator of IRE1 both in vitro and in vivo. Based on previous experiments published by the authors, the data are interpreted with a model in which the new compound shifts the equilibrium between the active and inactive conformation of the kinase much more towards the active state.\n\nUnexpectedly, they also report that IPA acts as a PERK activator at low concentrations and as a PERK inhibitor at high concentrations. The authors propose that at low (non-saturating) concentrations of IPA, IPA binding to one PERK protomer promotes dimerization and transactivation of a second PERK protomer bound to ATP, resulting in auto-phosphorylation of PERK and subsequent phosphorylation of eIF2\u03b1. At higher concentrations of IPA, all PERK protomers are occupied by IPA resulting in complete inhibition of its phosphotransfer function.\n\nExperiments in IRE1-/- MEFs show that activation of PERK does not involve IRE1, and in vitro experiments confirm direct binding of the compound to PERK. Treatment of cells with GSK2606414, a potent PERK inhibitor, provided a protective effect against IPA toxicity, providing further support for the model that IPA toxicity is mediated by off-target inhibition of PERK.\n\nThis is an interesting and timely observation as it closely mimics the analogous phenomenon uncovered for RAF-specific kinase inhibitors, which cause paradoxical ligand-induced activation of RAF kinase signaling in cells. It thus appears that the notion of paradoxical activation of kinase function by kinase inhibitors may be more general to kinase families regulated by kinase domain dimerization. These observations have important implications for the design and clinical use of protein kinase small-molecule therapeutics.\n\nOverall the manuscript is well written, easy to follow and the data are of high quality. Aspects of the work dealing with structure-informed design of the compound, its specificity and in vitro and cell-based activity on IRE1 are clear and convincing. Despite the general interest in the work, the reviewers all feel that the conclusions regarding the model for PERK activation must be strengthened, with particular attention to the following concerns/questions, described below under the \u201cMajor Points\u201d heading. A collated set of other comments that should be considered is also provided.\n\nMajor points:\n\n1) While the data are consistent with the proposed model for PERK activation, there are no data to directly show this. There are quite straightforward biochemical experiments that could deliver such evidence:\n\ni) Given that IPA strongly stabilizes the active conformation of IRE1, one would expect quite strong cooperative binding of IPA to PERK if the proposed model is correct: Binding of IPA to PERK causes the neighboring apo-PERK molecules to be in the active state, hence the high affinity state. This seems to be a good experiment to validate the proposed model.\n\nii) Since the authors have the cytosolic part of PERK expressed, a more quantitative in vitro characterization of the binding of the compound would strengthen the proposed model.\n\n2) In Figure 4A, the authors use recombinant GST-PERK to demonstrate that IPA directly inhibits PERK. Specifically they show that IPA inhibits PERK phosphorylation of eIF2\u03b1 in vitro. However, no evidence of enhancement of kinase activity is observed at low concentrations of IPA that mimics the phenomenon observed in cells (i.e. IPA activates PERK kinase function in cells at low IPA concentration) as shown in Figure 3C.\n\nIn contrast, at the very end of the manuscript, the authors point to Figure 6A showing that low concentrations of IPA in fact does activate PERK kinase activity against eIF2\u03b1 in vitro. What is the basis for this discrepancy? Perhaps both data panels could be shown in the same figure for clarity.\n\n3) In Figure 5B, the authors show that at low concentrations of IPA, PERK is activated leading to impaired translation (lane 5 vs. lane 3). However, they fail to show what happens to translation at high concentrations of IPA. If their model is correct, then at higher concentrations of IPA, cellular translation should be restored and match the levels shown in lanes 3, 4 and 6. The presented figure in its current form is so striking and tantalizing that the reader hungers for a more detailed analysis.\n\nOther points to consider:\n\nReviewer 1:\n\n1) At the end of the subsection headed \u201cIn vivo effects of IPA on the ATF6 and PERK UPR branches\u201d, the authors state that IPA is an ATP competitive inhibitor. This is not proven experimentally so the authors should either provide the data in support (ATP competition curves) or qualify the original statement (the compound is likely an ATP competitive inhibitor based on the following facts\u2026).\n\n2) The authors should also include the autoradiographs quantified in Figure 4A as a supplementary figure.\n\n3) In Figure 5A, Mendez et al. show that PERK signaling can be turned off using GSK (a previously published high affinity PERK selective inhibitor developed by GSK) even in the presence of low concentrations of IPA, that alone cause activation of PERK. One essential missing control in this data figure is the IPA-alone control lanes. To be consistent with other figures presented in the manuscript, the authors should include 1 micromolar (PERK activation) and 4 micromolar (PERK inhibition) concentrations of IPA.\n\n4) In Figure 5C, the authors should include a negative control showing the growth inhibition profile of GSK alone, even if it doesn't inhibit growth.\n\n5) In the fourth paragraph of the Discussion section, how do the authors infer the Kd from the IC50? Include the details in the Methods section.\n\n6) In Figure 6, the authors perform a full dose response analysis for IPA but only show a single point analysis for IPAx. And the concentration tested for IPAx does not match any of the concentration points tested for IPA. As such, the IPAx analysis is not informative. The authors should redo the experiment using comparable concentrations of IPAx.\n\n7) Figure 1C and 2D are consistent with the notion that IPA induces the dimerization of Ire1. In the RAF field, authors use reciprocal IPs to demonstrate inhibitor-induced dimerization in cells (and AUC in vitro). Can the authors provide direct evidence that IPA induces PERK dimerization using either immunofluorescence (as per Figure 2D) or IP pull downs? This data would strengthen the proposed model.\n\nReviewer 2:\n\n1) Is IPA less toxic to PERK-/- MEFs than WT or IRE1-/- MEFs?\n\n2) Need controls in Figure 5A with IPA treatment but no GSK. Also the thapsigargin induced shift in \u201cphosphoPERK\u201d mobility looks qualitatively more pronounced than that induced by IPA. Is it possible that there are different sites getting phosphoryalted?\n\n3) Why aren't higher concentrations of IPA (sufficient to inhibit PERK) non-toxic?\n\n4) Discussion regarding IPA-induced dimerization of PERK is over emphasized, given that there are no data in the paper examining effect of IPA on oligomeric state of PERK. Fine to point out recent findings in RAF, but would not include Figure 7 without experimentally addressing the question.\n\n5) It would be helpful to remind the reader that AD60 is expected to bind an inactive conformation of IRE1, and therefore not to activate RNase (in the appropriate place in the Results section).\n\n6) Define IRE1 (KR43) construct in Results.\n\n7) Make clear in the text that specificity comparisons with APY24 and the various commercial TKIs are based on \u201cstock\u201d results from invitrogen, and not an independent comparison conducted/commissioned by the authors (if this is indeed the case?)\n\n8) Does the GSK compound bind an active or inactive PERK kinase conformation?\n\nReviewer 3:\n\n1) It is very difficult to see that the IRE1\u03b1-GFP foci become less but larger with Tm treatment, and stay small but numerous with IPA. Could the authors improve the figure? Second what is the mechanistic explanation for the different behavior, particularly the growth of the foci with Tm?\n\n2) The authors talk about \u201coligomerization\u201d that triggers RNase activity, can they be more specific about what oligomeric state is found?\n\n3) The finding for PERK activation is in analogy to ATP-competitive inhibitor induced RAF dimerization. Since the dimerization mechanism is the heart of the manuscript (Figure 7), dimerization as a function of IAP concentration needs to be shown with additional direct experiments as previously done for RAF using AUC.\n",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e21e53a8-1101-40d1-aff5-e2ad104c0703",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C1",
+      "claim": "Roughly 30% of all proteins encoded in eukaryotes pass through the endoplasmic reticulum (ER).",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly 30% of all proteins encoded in eukaryotes pass through the endoplasmic reticulum (ER), where they are folded, modified, and assembled, before they are delivered to the plasma membrane, the outside of the cell, or to various way-stations in the secretory and endocytic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about protein trafficking in eukaryotic cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "a367813e-2d50-4e2e-ac06-b686dcdffbdb",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C2",
+      "claim": "IRE1 is the most conserved of the UPR sensor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "IRE1is the most conserved of these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about IRE1 conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "f84db2e4-32a0-4d07-a935-ea362081e215",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C3",
+      "claim": "IRE1 contains an ER-lumenal sensor domain that is activated by binding directly to unfolded polypeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains an ER-lumenal sensor domain that is activated by binding directly to unfolded polypeptides (Credle et al., 2005; Gardner and Walter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "14ef197b-cb68-4498-a1f9-0e24f6f3f617",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C4",
+      "claim": "IRE1 oligomerizes upon activation, activating its cytosolic kinase and endoribonuclease domains.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, IRE1 oligomerizes, activating its cytosolic kinase and endoribonuclease domains (Cox et al., 1993; Sidrauski et al., 1996; Calfon et al., 2002; Korennykh et al., 2009; Li et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "4a144624-a1dc-4acf-816e-5c4a03ef3993",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C5",
+      "claim": "IRE1's RNase domain initiates a non-conventional splicing reaction that results in the excision of an intron from the mRNA encoding the transcription factor XBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "IRE1's RNase domain initiates a non-conventional splicing reaction that results in the excision of an intron from the mRNA encoding the transcription factor XBP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about IRE1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "17c21974-fb10-4665-ada1-46028b66bc18",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C6",
+      "claim": "The luminal domain of PERK is homologous to that of IRE1.",
+      "claim_type": "EXPLICIT",
+      "source": "The luminal domain of PERK is homologous to that of IRE1 and thus its activation is presumably also driven by direct binding to unfolded polypetides (Gardner and Walter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "ab70a891-a3f4-4cb5-b188-da0aa6b79bb2",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C7",
+      "claim": "Active PERK phosphorylates the \u03b1-subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Active PERK phosphorylates the \u03b1-subunit of eukaryotic translation initiation factor 2 (eIF2\u03b1) (Harding et al., 1999), leading to trapping eIF2\u03b1 in its GDP-bound inactive state, blocks eIF2\u03b1 recycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "7918b04e-16e6-44df-9ad7-12c73a749f08",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C8",
+      "claim": "Phosphorylation of eIF2\u03b1 by PERK leads to attenuation of global protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, global protein synthesis is attenuated, while a few mRNAs, including that encoding the transcription factor ATF4, are preferentially translated (Harding et al., 2000; Wek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "58ac3f53-b7f4-46d2-b8fe-c0ab3f1624b3",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C9",
+      "claim": "Phospho-transfer by Ire1's kinase domain can be bypassed using an ATP mimetic (1NM-PP1).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent chemical genetic work in our laboratories revealed that phospho-transfer by Ire1's kinase domain can be bypassed using an ATP mimetic (1NM-PP1) (Papa et al., 2003; Rubio et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research from the authors' laboratories.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "f5081c63-91b8-499f-bfec-4097423e7e61",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C10",
+      "claim": "1NM-PP1 activates Ire1's RNase modality when used in conjunction with a mutant form of Ire1 (IRE1-as).",
+      "claim_type": "EXPLICIT",
+      "source": "Starting with studies in Saccharomyces cerevisiae, we showed that Ire1's RNase modality can be activated using a small molecule ATP mimetic (1NM-PP1), when used in conjunction with a mutant form of Ire1 ('IRE1-as' for analog sensitized) that allows 1NM-PP1 to bind to the ATP-binding site of IRE1's kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the authors' prior work in S. cerevisiae.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "bee5b9fa-f66c-4d40-b33f-4b119ad228b4",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C11",
+      "claim": "The RNase activity of wild-type Ire1 can be activated pharmacologically with the broad-acting kinase inhibitors APY29 and Sunitinib in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent work showed that the RNase activity of wild-type Ire1 can too be activated pharmacologically with the broad-acting kinase inhibitors APY29 and Sunitinib in vitro (Korennykh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "b3da9aed-f22f-4af5-b340-c411016c4f27",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C12",
+      "claim": "Binding of ATP-mimetic ligands to Ire1's active kinase site predisposes the enzyme to oligomerization, which activates its RNase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the Ire1 kinase/RNase domains bound to APY29, combined with biophysical and enzyme kinetic analyses, showed that binding of ATP-mimetic ligands to Ire1's active kinase site predisposes the enzyme to oligomerization, which activates its RNase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural and biochemical data from prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "bfe6f2b4-b246-4b85-9b1a-e9847e6131ef",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C13",
+      "claim": "Activation of IRE1's RNase requires that IRE1's kinase domain is in its active conformational state, characterized by the inward positioning of the \u03b1C helix and the DFG-loop in the kinase active site (DFG/\u03b1C-in conformation).",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, activation requires that IRE1's kinase domain is in its active conformational state, characterized by the inward positioning of the \u03b1C helix and the DFG-loop in the kinase active site (DFG/\u03b1C-in conformation) (Korennykh et al., 2011; Korennykh and Walter, 2012; Wang et al., 2012; Sanches et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "e832b952-e1e3-4fcb-80c0-c45c8e3b63bf",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C14",
+      "claim": "ATP-mimetic ligands that trap IRE1's kinase domain in the inactive, DFG/\u03b1C-out conformation act as inhibitors of IRE1 oligomerization and signaling via its RNase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ATP-mimetic ligands that trap IRE1's kinase domain in the inactive, DFG/\u03b1C-out conformation act as inhibitors, rather than activators, of IRE1 oligomerization and signaling via its RNase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the conformational state of the kinase domain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "fb291a47-ce10-4cfb-896c-0238fceb03d8",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C15",
+      "claim": "Different ligands yield different plateaus of maximal oligomerization and RNase activation of IRE1, even when saturating the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Different ligands yield different plateaus of maximal oligomerization and RNase activation, even when saturating the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "44711996-bbeb-48bb-8034-853887275e27",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C16",
+      "claim": "IPA is a potent small molecule that binds to IRE1's ATP-binding pocket and predisposes the kinase domain to oligomerization, activating its RNase.",
+      "claim_type": "EXPLICIT",
+      "source": "We engineered a potent small molecule, IPA, that binds to IRE1's ATP-binding pocket and predisposes the kinase domain to oligomerization, activating its RNase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "5cb02382-a027-4220-b4b7-7336e342a85f",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C17",
+      "claim": "IPA inhibits PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "IPA also inhibits PERK but, paradoxically, activates it at low concentrations, resulting in a bell-shaped activation profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "7a8a5520-41ec-49a3-8b7e-9b16f0d34ebb",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C18",
+      "claim": "IPA activates PERK at low concentrations, resulting in a bell-shaped activation profile.",
+      "claim_type": "EXPLICIT",
+      "source": "IPA also inhibits PERK but, paradoxically, activates it at low concentrations, resulting in a bell-shaped activation profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "d62eda00-2c61-4b46-83f1-66b2fa8a43d4",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C19",
+      "claim": "IPA-activation of PERK-mediated eIF2\u03b1 phosphorylation can be reconstituted from purified components.",
+      "claim_type": "EXPLICIT",
+      "source": "We reconstituted IPA-activation of PERK-mediated eIF2\u03b1 phosphorylation from purified components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "def5e212-58fd-499c-8e83-11d5d009c9a0",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C20",
+      "claim": "Under conditions of maximal activation, less than 15% of PERK molecules in the reaction are occupied by IPA.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that under conditions of maximal activation less than 15% of PERK molecules in the reaction are occupied by IPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on experimental data and calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "07893341-94bb-4fa5-967e-dc2f4c779cb5",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C21",
+      "claim": "IPA binding biases the PERK kinase towards its active conformation, which trans-activates apo-PERK molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that IPA binding biases the PERK kinase towards its active conformation, which trans-activates apo-PERK molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "28df42f4-8a60-416f-a2ad-dba0140fa3f5",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C22",
+      "claim": "Compounds bearing m-trifluoromethyl, p-methyl, p-ethyl, m-metoxy, and p-methoxy groups on the terminal phenyl ring (cmp1, cmp2, cmp3, cmp4, and cmp5) activated IRE1\u03b1-KR43 activity 10\u2013100-fold under assay conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that compounds bearing m-trifluoromethyl, p-methyl, p-ethyl, m-metoxy, and p-methoxy groups on the terminal phenyl ring (cmp1, cmp2, cmp3, cmp4, and cmp5) activated IRE1\u03b1-KR43 activity 10\u2013100-fold under assay conditions, as compared to fivefold by the parent compound APY29 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "03377fd3-2450-49bc-8888-0515f5832291",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C23",
+      "claim": "The presence of a p-substituted thioether group improves IRE1\u03b1-KR43 RNase activation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We were also surprised that the activity was improved further by the presence of a p-substituted thioether group and, similarly albeit weaker, by the presence of a p-iodo group (cmp6 and cmp7, 900-fold RNase activation under assay conditions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing different compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "c7abc4d7-b169-44a0-bd3d-437b1975fd99",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C24",
+      "claim": "IRE1\u03b1 prefers a substituent with polarizable character at the para-position of the terminal phenyl ring.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that IRE1\u03b1 prefers a substituent with polarizable character at the para-position of the terminal phenyl ring, perhaps indicating that the ring occupies a hydrophobic region in IRE1\u03b1's active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from structure-activity relationship data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "6e2959c9-53b0-437b-ac18-21232f583f59",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C25",
+      "claim": "Increasing bulkiness at the para-position of the terminal phenyl ring results in decreased IRE1\u03b1-KR43 RNase activation activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing bulkiness at the para-position resulted in decreased activities (cmp8, cmp9, and cmp10), suggesting that the size of this pocket must be limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing different compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "7f49490f-33c7-4337-a39b-6b08bbf335e7",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C26",
+      "claim": "IPAx is inactive in activating IRE1\u03b1 RNase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when assayed for activation of IRE1\u03b1 RNase activity, IPAx was inactive showing an indistinguishable effect from the DMSO control (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "9d65c3ac-90b9-4b7e-b02d-4d204c2b845c",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C27",
+      "claim": "In the presence of cmp1 or IPA, IRE1\u03b1\u2013KR43 RNase activity reached \u00bd kmax, obs at 3- and 20-fold lower enzyme concentrations, respectively, compared to no-compound control.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the presence of cmp1 or IPA, IRE1\u03b1\u2013KR43 RNase activity reached \u00bd kmax, obs at 3- and 20-fold lower enzyme concentrations, respectively (\u00bd kmax, obs = 3 \u03bcM and 0.43 \u03bcM; and n = 3.8 and 4.2, Figure 1C, red and blue circles), indicating that cmp1 and IPA binding significantly predispose IRE1\u03b1\u2013KR43 to oligomerization and activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "52d940b3-9e5f-4edb-97ce-acb4f14b42a5",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C28",
+      "claim": "Addition of IPAx did not enhance IRE1\u03b1 activation, showing activation kinetics that were indistinguishable from the no-compound control.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, addition of IPAx did not enhance IRE1\u03b1 activation, showing activation kinetics that were in all respects indistinguishable from the no-compound control (Figure 1C, pink circles), consistent with its inability to bind to IRE1\u03b1-KR43 (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "af4daf50-38b4-4953-87e3-13e9a5773c9d",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C29",
+      "claim": "Kinome-wide screening of cmp1 and IPA demonstrated a dramatic improvement of selectivity for both molecules when compared to APY24.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinome-wide screening of cmp1 and IPA demonstrated a dramatic improvement of selectivity for both molecules when compared to APY24 (Figure 1D and Figure 1\u2014figure supplement 1), a close analog of APY29, containing the same core-scaffold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinome-wide screening data shown in Figure 1D and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "698d1c0b-f7f7-4829-a08b-eb379b6080eb",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C30",
+      "claim": "Both cmp1 and IPA show better selectivity profiles when compared to the clinically approved compounds Sunitinib and Dasatinib.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that both cmp1 and IPA show better selectivity profiles when compared to the clinically approved compounds Sunitinib and Dasatinib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinome-wide screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "e2aad2b1-c65c-4a0c-806b-e5655cd4e1e5",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C31",
+      "claim": "IPA induced XBP1 mRNA splicing in HEK293T cells in a time- and dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that IPA-induced XBP1 mRNA splicing in a time- and dose-dependent manner (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "1cc23310-4a64-4035-bf6a-45327988092a",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C32",
+      "claim": "At a concentration of 2 \u03bcM IPA, XBP1 mRNA splicing was induced within 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "At a concentration of 2 \u03bcM IPA, splicing was induced within 2 hr (lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "66414484-37a0-4f07-8060-713cccc48733",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C33",
+      "claim": "IPAx did not induce XBP1 mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, IPAx did not induce XBP1 mRNA splicing (Figure 2B, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "7c2c83d4-369c-4b30-a17f-38327029a27d",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C34",
+      "claim": "AD60 fully ablated IPA-induced XBP1 mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, AD60 fully ablated IPA-induced XBP1 mRNA splicing (Figure 2C, lanes 9\u201312), even at the highest IPA concentration tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "35e4f181-0fd9-4863-9090-41303cc434ee",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C35",
+      "claim": "IPA binds to the ATP-pocket of IRE1\u03b1 to induce XBP1 mRNA splicing in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results confirm that IPA binds to the ATP-pocket of IRE1\u03b1 to induce XBP1 mRNA splicing in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that AD60 inhibits IPA-induced XBP1 mRNA splicing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "94f77bd1-1b4c-4615-affe-62a7a7f34aa0",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C36",
+      "claim": "IPA caused relocalization of IRE1\u03b1-GFP into foci, consistent with sustained IRE1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, IPA caused relocalization of IRE1\u03b1-GFP into foci, consistent with sustained IRE1 activation (Figure 2D, lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "f73a9ce5-dbf7-4bfd-b8be-8e39158fceae",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C37",
+      "claim": "IPA-induced foci remained stable even at late time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IPA-induced foci remained stable even at late time points, consistent with the results obtained for XBP1 mRNA splicing (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "40dc9c34-7edd-454c-88d5-4f17afa9918e",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C38",
+      "claim": "IPA-binding to IRE1\u03b1 stabilizes IRE1\u03b1's oligomeric state, interfering with its attenuation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that IPA-binding to IRE1\u03b1 stabilizes IRE1\u03b1's oligomeric state, interfering with its attenuation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that IPA-induced foci remain stable over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "af5d9d41-d22f-4da5-b69b-9226e045ab9a",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C39",
+      "claim": "IPA killed HEK293T cells with an LD50 of 0.82 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2E, IPA killed cells with an LD50 of 0.82 \u03bcM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "1a788c9b-c7fe-4319-90a4-491b72c6e256",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C40",
+      "claim": "IPA caused no detectable induction of ATF6-driven transcriptional target genes HERP1 and DERL3.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, IPA caused no detectable induction (Figure 3A,B, lanes 2\u20135), indicating that IPA does not induce general ER stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "27349399-8c5f-44df-8e06-3b7ceb3ff419",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C41",
+      "claim": "IPA induced a shift in the mobility of PERK at low-to-intermediate concentrations (0.1, 0.5, and 1 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we observed that IPA also induced a shift in the mobility of PERK (Figure 3C, lanes 2\u20134). This shift, however, was only observed at low-to-intermediate concentrations (0.1, 0.5, and 1 \u00b5M), whereas at higher concentrations (2 and 4 \u03bcM, Figure 3C, lanes 5 and 6), PERK phosphorylation was severely diminished or not detectable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "5ccfca46-884b-49fb-a62b-7e34165e880d",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C42",
+      "claim": "At higher IPA concentrations (2 and 4 \u03bcM), PERK phosphorylation was severely diminished or not detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "This shift, however, was only observed at low-to-intermediate concentrations (0.1, 0.5, and 1 \u00b5M), whereas at higher concentrations (2 and 4 \u03bcM, Figure 3C, lanes 5 and 6), PERK phosphorylation was severely diminished or not detectable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "4e255098-805e-4190-98a4-ed700535c650",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C43",
+      "claim": "IPA-induced eIF2\u03b1 phosphorylation paralleled PERK phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also monitored PERK activation by phosphorylation of eIF2\u03b1, detected with a phospho-eIF2\u03b1-specific antibody (Figure 3C). These results paralleled those obtained for PERK phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "1e19431d-c979-430f-b2b9-35b03fe81113",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C44",
+      "claim": "IPAx did not stimulate PERK or eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, equivalent concentrations of IPAx did not stimulate PERK or eIF2\u03b1 phosphorylation (Figure 3D, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "d68fcc6a-8d93-49c7-a569-6dbefe45e573",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C45",
+      "claim": "IPA activates the IRE1 and PERK branches of the UPR independently.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that IPA activates the IRE1 and PERK branches of the UPR independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data using Ire1\u03b1\u2212/\u2212 and Perk\u2212/\u2212 MEFs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "86e0b368-23ae-4d63-ba5a-b4c384befb86",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C46",
+      "claim": "IPA inhibited the PERK kinase reaction with an IC50 = 2.8 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "IPA inhibited the PERK kinase reaction with an IC50 = 2.8 \u03bcM (Figure 4A, solid red circles and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "9eac5059-38f7-4cf5-9f1b-cc680ddf27a7",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C47",
+      "claim": "IPA binds to PERK directly.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that IPA binds to PERK directly, where it would act as a competitive inhibitor for ATP and thus block its phosphorylation activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that IPA inhibits PERK kinase activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "903876cb-5888-46da-9ede-4a2024aa82d9",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C48",
+      "claim": "At 4 \u03bcM IPA, Tm addition did not activate PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at 4 \u03bcM IPA, we observed that Tm addition did not activate PERK (Figure 4B, lane 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "3e6621be-da39-41c7-90de-1cd2fd05a289",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C49",
+      "claim": "At 1 \u00b5M IPA, Tm did not enhance the PERK mobility shift or eIF2\u03b1 phosphorylation further than what was achieved by IPA alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, at 1 \u00b5M IPA, which induces PERK activation (Figure 3C and Figure 3D), we found that Tm did not enhance the PERK mobility shift or eIF2\u03b1 phosphorylation further than what was achieved by IPA alone (Figure 4B, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "eee7857d-1dcc-44ee-8b83-16f2cb2459c3",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C50",
+      "claim": "IPA inhibition of PERK was reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "IPA inhibition of PERK was reversible, since washing IPA out allowed for activation by Tm (Figure 4B, lane 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "80da03e6-1224-48c3-a905-4883a6b05edd",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C51",
+      "claim": "GSK abolished IPA-induced PERK and eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GSK abolished IPA-induced PERK and eIF2\u03b1 phosphorylation (Figure 5A; lanes 5 and 6 and Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "cd954ba8-78bd-42c7-970a-c7433178c8f3",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C52",
+      "claim": "Treatment with GSK-restored translation to baseline levels in IPA-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, treatment with GSK-restored translation to baseline levels (Figure 5B, lanes 4 and 6 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "d2eadb6b-9a08-4040-86cb-7ab696a25a64",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C53",
+      "claim": "GSK added at 1 \u03bcM protected cells from IPA-induced cell death, shifting the LD50 from 0.8 \u03bcM to 6.2 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, GSK added at 1 \u03bcM protected cells from IPA-induced cell death, shifting the LD50 from 0.8 \u03bcM to 6.2 \u03bcM (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "5e40ca67-dff6-4c2d-a288-0170490353eb",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C54",
+      "claim": "A large increase in the rate of PERK phosphorylation of eIF2\u03b1 was observed, which peaked at 0.5 \u03bcM IPA (3.2-fold increase over DMSO control).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6A, we observed a large increase in the rate of PERK phosphorylation of eIF2\u03b1, which peaked at 0.5 \u03bcM IPA (3.2-fold increase over DMSO control) and then declined at higher IPA concentrations, whereas IPAx had no effect (Figure 6A, Figure 6\u2014figure supplements 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A and Figure 6\u2014figure supplements 1, 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "fca06649-250a-4e38-8258-eab9ad8529fd",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C55",
+      "claim": "The in vitro bell-shaped activity profile of IPA on PERK mimicked closely the effect observed in intact cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vitro bell-shaped activity profile mimicked closely the effect observed in intact cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A and Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "08b64ef7-4cf7-4c4e-8466-db86f1a57f00",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C56",
+      "claim": "IPA significantly increased PERK oligomerization, apparent as an enhanced formation of cross-linked species migrating at the size expected for PERK dimers, trimers, and tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore using chemical crosslinking, we observed that IPA\u2014but not its inactive analog IPAx\u2014significantly increased PERK oligomerization, apparent as an enhanced formation of cross-linked species migrating at the size expected for PERK dimers, trimers, and tetramers (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "c3094bd6-c2f7-4926-b126-d6188c18ea3c",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C57",
+      "claim": "The formation of higher-ordered PERK oligomers during ER stress was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of higher-ordered PERK oligomers during ER stress was previously reported (Bertolotti et al., 2000; Marciniak et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "42fa6051-f78f-4c44-9a3a-80bcbfe1b953",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C58",
+      "claim": "IRE1's kinase domain acts as a conformational switch, in which ligand binding to the ATP binding pocket\u2014rather than enzymatic phospho-transfer\u2014controls activity and down-stream signal transduction events.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies confirm in mammalian cells that IRE1's kinase domain acts as a conformational switch, in which ligand binding to the ATP binding pocket\u2014rather than enzymatic phospho-transfer\u2014controls activity and down-stream signal transduction events (Korennykh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data, supported by a citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "ed7d0bfc-a5e7-460c-a45e-38334dedeb5f",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C59",
+      "claim": "The paradoxical activation of kinase signaling by kinase inhibitors was first noted for Raf kinase inhibitors almost 15 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The paradoxical activation of kinase signaling by kinase inhibitors was first noted for Raf kinase inhibitors almost 15 years ago (Hall-Jackson et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "b549a3d5-c2d5-40bf-89e0-ecbe99657d4a",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C60",
+      "claim": "Current models suggest that drug-induced dimerization of Raf causes an increase in Raf kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models suggest that drug-induced dimerization of Raf causes an increase in Raf kinase activity. This contention is supported by apo- and drug-kinase complex crystal structures, which show Raf dimers in the asymmetric crystal unit (Rajakulendran et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "7f64c211-e246-431a-a683-bdada101cb3a",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C61",
+      "claim": "The critical prediction of the model that the Raf kinase inhibitor vemurafenib should induce Raf kinase activity in a purified system has resisted all attempts at biochemical reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "This contention is supported by apo- and drug-kinase complex crystal structures, which show Raf dimers in the asymmetric crystal unit (Rajakulendran et al., 2009). Other models have been proposed that Raf inhibitor-induced Raf activation (Holderfield et al., 2013), and, to date, the critical prediction of the model that the Raf kinase inhibitor vemurafenib should induce Raf kinase activity in a purified system has resisted all attempts at biochemical reconstitution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of research on Raf kinase activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "a00bd319-c324-4566-bce5-cddccd00ebb3",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C62",
+      "claim": "The work with the reconstitution of PERK's paradoxical activation by IPA shows for the first time that no other components of the kinase pathway are necessary and that inhibitor binding is sufficient for activation through the formation of homo-dimers or higher-ordered homo-oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work with the reconstitution of PERK's paradoxical activation by IPA shows for the first time that no other components of the kinase pathway are necessary and that inhibitor binding is sufficient for activation through the formation of homo-dimers or higher-ordered homo-oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "222fed3f-948f-41e8-bccd-0db74b8c41a0",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C63",
+      "claim": "It was previously suggested that PERK activation is depended upon dimerization and the formation of higher-ordered oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously suggested that PERK activation is depended upon dimerization and the formation of higher-ordered oligomers (Bertolotti et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "7dc945dd-9349-4754-ba6d-abbfcfa52b06",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C64",
+      "claim": "Approximately 15% of the PERK molecules are occupied by IPA under assay conditions that yield maximal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming a Kd of 2.8 \u03bcM for IPA-binding to PERK as determined by PERK inhibition (Figure 4A), we estimate that approximately 15% of the PERK molecules are occupied by IPA under assay conditions that yield maximal activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate based on experimental data and calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "d5c59b75-6629-4a07-a3f7-79453b02f755",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C65",
+      "claim": "PERK may form oligomers larger than dimers, in which one PERK\u2022IPA may suffice to activate more than one apo-PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "This back-of-the-envelope calculation therefore suggests that PERK may form oligomers larger than dimers, in which one PERK\u2022IPA may suffice to activate more than one apo-PERK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data and calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "3230a322-d6bb-4024-a29b-ff08f1920737",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C66",
+      "claim": "At low concentrations of IPA, heterodimers of PERK\u2022IPA/PERKapo, or perhaps larger oligomers of PERK\u2022IPA/[PERKapo]n, where all PERK molecules are in the active DFG/\u03b1C-in conformation, are active in phospho-transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "At low concentrations of IPA, heterodimers of PERK\u2022IPA/PERKapo, or perhaps larger oligomers of PERK\u2022IPA/[PERKapo]n, where all PERK molecules are in the active DFG/\u03b1C-in conformation, are active in phospho-transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "ca7b7830-3bb0-464f-b142-a256a228d82e",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C67",
+      "claim": "At higher, saturating IPA doses, all PERK molecules would be occupied by IPA and thus inhibited through competition with ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher, saturating IPA doses, all PERK molecules would be occupied by IPA and thus inhibited through competition with ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "4c3daf18-4ec3-43cb-b13a-878869d90a9e",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C68",
+      "claim": "The PERK/IPA enzyme/ligand combination mimics the RAF/vemurafenib combination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PERK/IPA enzyme/ligand combination mimics the RAF/vemurafenib combination and broadens the number of examples where an ATP-competitive binder can activate rather than inhibit a kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data and comparison to prior research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "e4b1dbfb-4b95-47ea-8616-e0bf8bc92059",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C69",
+      "claim": "Kinase activation by partial occupancy of the active site may be an important consideration in dosing kinase inhibitors for therapeutic applications, imposing a 'minimal tolerable dose' below which potential drugs may exert detrimental effects that oppose the desired therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinase activation by partial occupancy of the active site, therefore, may be an important consideration in dosing kinase inhibitors for therapeutic applications, imposing a 'minimal tolerable dose' below which potential drugs may exert detrimental effects that oppose the desired therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data and implications for drug development.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "46001ad7-d88e-4b36-8cbc-7b9086600759",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C70",
+      "claim": "IPA-mediated activation of IRE1 and PERK occurred in the absence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the observation that ATF6 was not activated in cells treated with IPA, we conclude that IPA-mediated activation of IRE1 and PERK occurred in the absence of ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that ATF6 was not activated by IPA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "e270c8fb-1ea3-46ed-8ac0-3a1b5bd9084f",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C71",
+      "claim": "IPA presents a unique pharmacological tool with which activation of wild-type IRE1 can be studied in living cells directly in the absence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "IPA therefore presents a unique pharmacological tool with which activation of wild-type IRE1 can be studied in living cells directly in the absence of ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing that IPA activates IRE1 without inducing ER stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "55fa5af4-63d4-48cf-a7cc-d8d74d077eea",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C72",
+      "claim": "The lethality that IPA displays at high doses can be partially overcome if the PERK pathway is inactivated using a selective PERK inhibitor, GSK, increasing the EC50 with which IPA drives cells into apoptosis by about an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we have shown that the lethality that IPA displays at high doses can be partially overcome if the PERK pathway is inactivated using a selective PERK inhibitor, GSK, increasing the EC50 with which IPA drives cells into apoptosis by about an order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "35886b1d-588f-41bf-9c40-72305ab14116",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C73",
+      "claim": "This observation is consistent with the proposed roles of both the IRE1 and PERK branches, providing cytoprotective and pro-apoptotic outputs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the proposed roles of both the IRE1 and PERK branches, providing cytoprotective and pro-apoptotic outputs, respectively (Lin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "44306140-fe2c-445b-a27d-d60e1b8278ab",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "claim_id": "C74",
+      "claim": "AD60, as a DFG-out kinase inhibitor, reversed the effects of IPA on IRE1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AD60, as a DFG-out kinase inhibitor, reversed the effects of IPA on IRE1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed IPA, a potent and selective small molecule activator of IRE1\u03b1. Through structure-activity relationship studies, they identified that compounds with specific substituents (particularly p-substituted thioether groups) on the terminal phenyl ring showed enhanced IRE1\u03b1 RNase activation (up to 900-fold). IPA predisposes IRE1\u03b1 to oligomerization at 20-fold lower enzyme concentrations than controls and demonstrates improved kinome-wide selectivity compared to parent compounds and clinically approved kinase inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C22-C30 provide converging evidence from in vitro biochemical assays (RNase activity, oligomerization kinetics) and kinome-wide selectivity screening. The structure-activity relationships are systematically documented with quantitative measurements, and the inactive control compound IPAx validates specificity. The data support the conclusion that IPA is a potent and selective IRE1\u03b1 activator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "28ef1694-e991-4b76-8b35-fd7217e25320",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IPA activates IRE1\u03b1 signaling in living cells by binding to its ATP-binding pocket. IPA induced XBP1 mRNA splicing in HEK293T cells in a time- and dose-dependent manner (within 2 hr at 2 \u03bcM), caused IRE1\u03b1-GFP relocalization into stable foci, and this activation was completely blocked by the IRE1\u03b1 inhibitor AD60, confirming on-target engagement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 demonstrate IPA's cellular activity through multiple complementary assays: RT-PCR for XBP1 splicing, live-cell imaging for IRE1\u03b1 foci formation, and pharmacological validation with AD60 and the inactive analog IPAx. The convergence of these orthogonal approaches strongly supports that IPA activates IRE1\u03b1 in cells through ATP-pocket binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IPA activates PERK signaling independently of IRE1\u03b1 and without inducing general ER stress. IPA induced PERK and eIF2\u03b1 phosphorylation at low-to-intermediate concentrations (0.1-1 \u03bcM) but not at higher concentrations (2-4 \u03bcM), creating a bell-shaped dose-response. Experiments in Ire1\u03b1\u2212/\u2212 and Perk\u2212/\u2212 MEFs confirmed that IPA activates the IRE1 and PERK branches independently, and IPA did not induce ATF6 target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are supported by Western blot analysis of PERK/eIF2\u03b1 phosphorylation, RT-PCR of ATF6 target genes, and genetic validation using knockout MEFs. The bell-shaped dose-response is clearly documented, and the independence of IRE1 and PERK activation is demonstrated through loss-of-function experiments. The lack of ATF6 activation confirms absence of general ER stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "57e85145-1f47-49c8-aa15-a1104615ef60",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IPA directly binds to PERK and inhibits its kinase activity at high concentrations. In vitro kinase assays with purified GST-PERK showed IPA inhibits PERK with an IC50 of 2.8 \u03bcM. In cells, high IPA concentrations (4 \u03bcM) prevented tunicamycin-induced PERK activation, and this inhibition was reversible upon IPA washout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by in vitro kinase assays with purified components and cellular experiments with tunicamycin co-treatment. The IC50 determination is quantitative, and the reversibility experiment demonstrates that inhibition is not due to irreversible PERK inactivation. The data consistently support direct PERK binding and competitive ATP inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "41d5832c-c2ec-4480-abbe-f09cb7ee3e21",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The PERK inhibitor GSK2606414 blocks IPA-induced PERK activation and protects cells from IPA-mediated toxicity. GSK abolished IPA-induced PERK and eIF2\u03b1 phosphorylation, restored translation to baseline levels, and shifted the IPA LD50 from 0.8 \u03bcM to 6.2 \u03bcM (approximately 8-fold protection).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C72 are supported by Western blot analysis, metabolic labeling experiments, and cell viability assays. The pharmacological rescue with GSK provides strong evidence that PERK activation contributes to IPA toxicity. The magnitude of the LD50 shift is substantial and statistically meaningful, supporting the conclusion that PERK pathway activation is a major contributor to IPA-induced cell death.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "c1a9383c-58ab-4f56-9164-031feaed8794",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IPA activates PERK in a reconstituted in vitro system with purified components, showing a bell-shaped dose-response that peaks at 0.5 \u03bcM (3.2-fold activation). IPA increased PERK oligomerization as detected by chemical crosslinking. Under maximal activation conditions, approximately 15% of PERK molecules are occupied by IPA, suggesting that partial occupancy is sufficient for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C20, C54-C56, and C64 provide direct biochemical evidence for PERK activation by IPA using purified proteins. The bell-shaped dose-response in vitro mirrors cellular observations (C55), and crosslinking experiments demonstrate IPA-induced oligomerization. The occupancy calculation (C20, C64) is based on the measured IC50 and standard binding equations, providing a reasonable estimate. This is the first biochemical reconstitution of paradoxical kinase activation by an inhibitor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "99b703fc-5cfa-4617-8d29-e5d962192187",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a mechanism where IPA binding biases PERK toward its active conformation, enabling trans-activation of unoccupied apo-PERK molecules in heterodimers or higher-order oligomers. At low IPA concentrations, PERK\u2022IPA/PERKapo complexes are catalytically active, while at saturating concentrations, all PERK molecules are occupied and inhibited through ATP competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C65-C67 present a mechanistic model that is well-supported by the experimental observations: the bell-shaped dose-response (C54-C55), oligomerization data (C56), and occupancy calculations (C20, C64). The model logically explains how <15% occupancy can produce maximal activation and why high concentrations cause inhibition. While speculative elements remain (C21, C66, C67 are labeled as speculation/inference), the model is consistent with all experimental data and provides a coherent framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "c23b6c7a-21e1-4f96-b686-5fe052f0acf9",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IPA activates IRE1 and PERK in the absence of ER stress, providing a unique pharmacological tool for studying UPR signaling. IPA killed cells with an LD50 of 0.82 \u03bcM, and this toxicity is consistent with PERK's pro-apoptotic role. The IRE1 inhibitor AD60 reversed IPA's effects on IRE1, demonstrating pharmacological control of individual UPR branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C70-C71, C73-C74 are supported by the absence of ATF6 activation (C40), cell viability data (C39), and pharmacological rescue experiments (C34, C51-C53, C74). The conclusion that IPA activates UPR branches without general ER stress is well-founded. The utility as a research tool is appropriately stated, though broader validation in other cell types and contexts would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "6dcc3442-ccf4-4aa6-9b62-bb2d45527d73",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors demonstrate that IRE1's kinase domain acts as a conformational switch controlled by ligand binding rather than phospho-transfer, and provide the first biochemical reconstitution showing that kinase inhibitor binding alone is sufficient for activation through homo-oligomerization. This mechanism may be widespread among kinases and has implications for kinase inhibitor dosing in therapeutic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C62, C68 are strongly supported by the experimental data throughout the manuscript, particularly the in vitro reconstitution experiments (C19, C54-C56) and the demonstration that activation occurs without phospho-transfer. The comparison to RAF/vemurafenib (C68) is appropriate given the similar paradoxical activation phenomenon. The therapeutic implications (C69) are reasonable extrapolations from the data, though labeled as speculation. This represents a significant conceptual advance in understanding kinase regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "cca37b05-a6b9-49f6-99df-77a12001cc73",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide background on the unfolded protein response (UPR), describing the three sensor proteins (IRE1, PERK, ATF6) and their downstream signaling mechanisms, including IRE1-mediated XBP1 mRNA splicing and PERK-mediated eIF2\u03b1 phosphorylation leading to translational attenuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 represent established knowledge about the UPR, supported by appropriate citations to prior literature. These claims provide necessary context for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "8471f4cf-f7c7-465e-9758-7e4ac345426f",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors review prior work on pharmacological modulation of IRE1, including the use of ATP mimetics (1NM-PP1, APY29, Sunitinib) to activate IRE1's RNase activity, and the requirement for the kinase domain to adopt the active DFG/\u03b1C-in conformation for RNase activation. Different ligands produce different maximal activation levels even at saturating concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 accurately summarize prior research from the authors' laboratories and others, supported by appropriate citations. These claims establish the foundation for the current work but represent background rather than novel findings. Claim C15 may include some new observations but is presented as context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "c37262fa-ec82-49c3-9887-13aee2f850af",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors review the literature on paradoxical kinase activation by inhibitors, particularly for RAF kinases, noting that while drug-induced dimerization models have been proposed and supported by structural data, biochemical reconstitution of RAF activation by vemurafenib has not been achieved. PERK activation by dimerization and oligomerization was previously suggested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61, C63 accurately represent the state of knowledge regarding paradoxical kinase activation, supported by appropriate citations. These claims provide important context for interpreting the significance of the PERK reconstitution experiments but do not represent findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    },
+    {
+      "id": "f59709c1-d4f2-4fb1-8481-985b77fe0b69",
+      "content_id": "02e178ea-5d18-47f3-9731-ff41fa5a47e8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The formation of higher-ordered PERK oligomers during ER stress was previously reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is a straightforward citation to prior literature (Bertolotti et al., 2000; Marciniak et al., 2006) that provides context for the oligomerization observations in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:58:48.927715Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44711996-bbeb-48bb-8034-853887275e27",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "28df42f4-8a60-416f-a2ad-dba0140fa3f5",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "03377fd3-2450-49bc-8888-0515f5832291",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "c7abc4d7-b169-44a0-bd3d-437b1975fd99",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "6e2959c9-53b0-437b-ac18-21232f583f59",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "7f49490f-33c7-4337-a39b-6b08bbf335e7",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "9d65c3ac-90b9-4b7e-b02d-4d204c2b845c",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "52d940b3-9e5f-4edb-97ce-acb4f14b42a5",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "af4daf50-38b4-4953-87e3-13e9a5773c9d",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "698d1c0b-f7f7-4829-a08b-eb379b6080eb",
+      "result_id": "b4d9efa8-9ecd-4ddf-8a41-458e5ebbafe7"
+    },
+    {
+      "claim_id": "e2aad2b1-c65c-4a0c-806b-e5655cd4e1e5",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "1cc23310-4a64-4035-bf6a-45327988092a",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "66414484-37a0-4f07-8060-713cccc48733",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "7c2c83d4-369c-4b30-a17f-38327029a27d",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "35e4f181-0fd9-4863-9090-41303cc434ee",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "94f77bd1-1b4c-4615-affe-62a7a7f34aa0",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "f73a9ce5-dbf7-4bfd-b8be-8e39158fceae",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "40dc9c34-7edd-454c-88d5-4f17afa9918e",
+      "result_id": "28ef1694-e991-4b76-8b35-fd7217e25320"
+    },
+    {
+      "claim_id": "1a788c9b-c7fe-4319-90a4-491b72c6e256",
+      "result_id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c"
+    },
+    {
+      "claim_id": "27349399-8c5f-44df-8e06-3b7ceb3ff419",
+      "result_id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c"
+    },
+    {
+      "claim_id": "5ccfca46-884b-49fb-a62b-7e34165e880d",
+      "result_id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c"
+    },
+    {
+      "claim_id": "4e255098-805e-4190-98a4-ed700535c650",
+      "result_id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c"
+    },
+    {
+      "claim_id": "1e19431d-c979-430f-b2b9-35b03fe81113",
+      "result_id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c"
+    },
+    {
+      "claim_id": "d68fcc6a-8d93-49c7-a569-6dbefe45e573",
+      "result_id": "630645fd-bc3d-4fd0-ba18-fdc6f14e2a0c"
+    },
+    {
+      "claim_id": "86e0b368-23ae-4d63-ba5a-b4c384befb86",
+      "result_id": "57e85145-1f47-49c8-aa15-a1104615ef60"
+    },
+    {
+      "claim_id": "9eac5059-38f7-4cf5-9f1b-cc680ddf27a7",
+      "result_id": "57e85145-1f47-49c8-aa15-a1104615ef60"
+    },
+    {
+      "claim_id": "903876cb-5888-46da-9ede-4a2024aa82d9",
+      "result_id": "57e85145-1f47-49c8-aa15-a1104615ef60"
+    },
+    {
+      "claim_id": "3e6621be-da39-41c7-90de-1cd2fd05a289",
+      "result_id": "57e85145-1f47-49c8-aa15-a1104615ef60"
+    },
+    {
+      "claim_id": "eee7857d-1dcc-44ee-8b83-16f2cb2459c3",
+      "result_id": "57e85145-1f47-49c8-aa15-a1104615ef60"
+    },
+    {
+      "claim_id": "80da03e6-1224-48c3-a905-4883a6b05edd",
+      "result_id": "41d5832c-c2ec-4480-abbe-f09cb7ee3e21"
+    },
+    {
+      "claim_id": "cd954ba8-78bd-42c7-970a-c7433178c8f3",
+      "result_id": "41d5832c-c2ec-4480-abbe-f09cb7ee3e21"
+    },
+    {
+      "claim_id": "d2eadb6b-9a08-4040-86cb-7ab696a25a64",
+      "result_id": "41d5832c-c2ec-4480-abbe-f09cb7ee3e21"
+    },
+    {
+      "claim_id": "55fa5af4-63d4-48cf-a7cc-d8d74d077eea",
+      "result_id": "41d5832c-c2ec-4480-abbe-f09cb7ee3e21"
+    },
+    {
+      "claim_id": "5e40ca67-dff6-4c2d-a288-0170490353eb",
+      "result_id": "c1a9383c-58ab-4f56-9164-031feaed8794"
+    },
+    {
+      "claim_id": "fca06649-250a-4e38-8258-eab9ad8529fd",
+      "result_id": "c1a9383c-58ab-4f56-9164-031feaed8794"
+    },
+    {
+      "claim_id": "08b64ef7-4cf7-4c4e-8466-db86f1a57f00",
+      "result_id": "c1a9383c-58ab-4f56-9164-031feaed8794"
+    },
+    {
+      "claim_id": "d62eda00-2c61-4b46-83f1-66b2fa8a43d4",
+      "result_id": "c1a9383c-58ab-4f56-9164-031feaed8794"
+    },
+    {
+      "claim_id": "def5e212-58fd-499c-8e83-11d5d009c9a0",
+      "result_id": "c1a9383c-58ab-4f56-9164-031feaed8794"
+    },
+    {
+      "claim_id": "7dc945dd-9349-4754-ba6d-abbfcfa52b06",
+      "result_id": "c1a9383c-58ab-4f56-9164-031feaed8794"
+    },
+    {
+      "claim_id": "07893341-94bb-4fa5-967e-dc2f4c779cb5",
+      "result_id": "99b703fc-5cfa-4617-8d29-e5d962192187"
+    },
+    {
+      "claim_id": "d5c59b75-6629-4a07-a3f7-79453b02f755",
+      "result_id": "99b703fc-5cfa-4617-8d29-e5d962192187"
+    },
+    {
+      "claim_id": "3230a322-d6bb-4024-a29b-ff08f1920737",
+      "result_id": "99b703fc-5cfa-4617-8d29-e5d962192187"
+    },
+    {
+      "claim_id": "ca7b7830-3bb0-464f-b142-a256a228d82e",
+      "result_id": "99b703fc-5cfa-4617-8d29-e5d962192187"
+    },
+    {
+      "claim_id": "af5d9d41-d22f-4da5-b69b-9226e045ab9a",
+      "result_id": "c23b6c7a-21e1-4f96-b686-5fe052f0acf9"
+    },
+    {
+      "claim_id": "46001ad7-d88e-4b36-8cbc-7b9086600759",
+      "result_id": "c23b6c7a-21e1-4f96-b686-5fe052f0acf9"
+    },
+    {
+      "claim_id": "e270c8fb-1ea3-46ed-8ac0-3a1b5bd9084f",
+      "result_id": "c23b6c7a-21e1-4f96-b686-5fe052f0acf9"
+    },
+    {
+      "claim_id": "35886b1d-588f-41bf-9c40-72305ab14116",
+      "result_id": "c23b6c7a-21e1-4f96-b686-5fe052f0acf9"
+    },
+    {
+      "claim_id": "44306140-fe2c-445b-a27d-d60e1b8278ab",
+      "result_id": "c23b6c7a-21e1-4f96-b686-5fe052f0acf9"
+    },
+    {
+      "claim_id": "42fa6051-f78f-4c44-9a3a-80bcbfe1b953",
+      "result_id": "6dcc3442-ccf4-4aa6-9b62-bb2d45527d73"
+    },
+    {
+      "claim_id": "a00bd319-c324-4566-bce5-cddccd00ebb3",
+      "result_id": "6dcc3442-ccf4-4aa6-9b62-bb2d45527d73"
+    },
+    {
+      "claim_id": "4c3daf18-4ec3-43cb-b13a-878869d90a9e",
+      "result_id": "6dcc3442-ccf4-4aa6-9b62-bb2d45527d73"
+    },
+    {
+      "claim_id": "e4b1dbfb-4b95-47ea-8616-e0bf8bc92059",
+      "result_id": "6dcc3442-ccf4-4aa6-9b62-bb2d45527d73"
+    },
+    {
+      "claim_id": "e21e53a8-1101-40d1-aff5-e2ad104c0703",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "a367813e-2d50-4e2e-ac06-b686dcdffbdb",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "f84db2e4-32a0-4d07-a935-ea362081e215",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "14ef197b-cb68-4498-a1f9-0e24f6f3f617",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "4a144624-a1dc-4acf-816e-5c4a03ef3993",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "17c21974-fb10-4665-ada1-46028b66bc18",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "ab70a891-a3f4-4cb5-b188-da0aa6b79bb2",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "7918b04e-16e6-44df-9ad7-12c73a749f08",
+      "result_id": "cca37b05-a6b9-49f6-99df-77a12001cc73"
+    },
+    {
+      "claim_id": "58ac3f53-b7f4-46d2-b8fe-c0ab3f1624b3",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "f5081c63-91b8-499f-bfec-4097423e7e61",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "bee5b9fa-f66c-4d40-b33f-4b119ad228b4",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "b3da9aed-f22f-4af5-b340-c411016c4f27",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "bfe6f2b4-b246-4b85-9b1a-e9847e6131ef",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "e832b952-e1e3-4fcb-80c0-c45c8e3b63bf",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "fb291a47-ce10-4cfb-896c-0238fceb03d8",
+      "result_id": "8471f4cf-f7c7-465e-9758-7e4ac345426f"
+    },
+    {
+      "claim_id": "ed7d0bfc-a5e7-460c-a45e-38334dedeb5f",
+      "result_id": "c37262fa-ec82-49c3-9887-13aee2f850af"
+    },
+    {
+      "claim_id": "b549a3d5-c2d5-40bf-89e0-ecbe99657d4a",
+      "result_id": "c37262fa-ec82-49c3-9887-13aee2f850af"
+    },
+    {
+      "claim_id": "7f64c211-e246-431a-a683-bdada101cb3a",
+      "result_id": "c37262fa-ec82-49c3-9887-13aee2f850af"
+    },
+    {
+      "claim_id": "222fed3f-948f-41e8-bccd-0db74b8c41a0",
+      "result_id": "c37262fa-ec82-49c3-9887-13aee2f850af"
+    },
+    {
+      "claim_id": "c3094bd6-c2f7-4926-b126-d6188c18ea3c",
+      "result_id": "f59709c1-d4f2-4fb1-8481-985b77fe0b69"
+    }
+  ],
+  "comparisons": []
+}

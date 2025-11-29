@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "AGS is a severe inflammatory disorder with clinical and genetic overlap with SLE, caused by mutations in nucleic acid-degrading enzymes, and both diseases are characterized by excessive interferon alpha expression. DNA hypomethylation has been implicated in lupus pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish the background knowledge about AGS and SLE based on established literature and prior citations. These definitional and contextual claims are well-supported by multiple literature citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C75",
+      "C90",
+      "C91"
+    ],
+    "result": "AGS fibroblasts display an activated antiviral and immune response with interferon signature, with 98 genes up-regulated and 209 down-regulated, including inflammatory cytokines and chemokines. However, only a modest number of genes were differentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19, C75, C90-C91 are supported by RNA-seq data presented in Figure 1 and supplementary files. The transcriptional profiling shows clear upregulation of immune and interferon-related genes, though the authors acknowledge the changes are modest in scope. The data support the conclusion that fibroblasts are appropriate for studying AGS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C92",
+      "C93"
+    ],
+    "result": "Ribonucleotide accumulation in genomic DNA is specific to RNase H2-deficient AGS patients (AGS2 and AGS4), with 2-3 fold increase in AGS2 and 10-25 fold increase in AGS4, but not detected in AGS1 or AGS5. This suggests ribonucleotides are unlikely to be a common disease-causing nucleic acid species across all AGS subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24, C92-C93 are supported by nick translation assay data shown in Figure 2. The experimental approach is appropriate and includes proper controls (yeast wild-type and rnh201\u0394). The conclusion that ribonucleotide accumulation is specific to RNase H2 mutations is well-supported, though sample sizes are limited (n=2 patients per subtype).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "All AGS subtypes accumulate excessive RNA:DNA hybrids genome-wide, with 33,781 AGS-specific DRIP peaks occupying an additional 23.8 megabases. AGS-specific peaks differ from canonical R-loops: they show reduced GC skew overlap, are depleted at TSS/TTS, enriched in intergenic regions (AGS2/4) or gene bodies (AGS1/5), and enriched in LINE and LTR retrotransposons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C37, C94-C96 are supported by comprehensive DRIP-seq data shown in Figure 3 and supplements. The analysis includes appropriate controls and statistical testing. The observation that AGS-specific peaks differ from canonical R-loops (reduced GC skew, different genomic distribution) is well-documented. However, the mechanistic interpretation (C95) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C60",
+      "C61",
+      "C98",
+      "C99"
+    ],
+    "result": "All AGS fibroblasts display significant global DNA hypomethylation, with AGS2/4 showing profound ~20% reduction and AGS1/5 showing moderate 5-10% reduction. The hypomethylation affects all genomic compartments including LINE and LTR elements, and is not caused by deregulation of DNA methylation machinery genes. This represents the first evidence of epigenetic perturbations in AGS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C45, C60-C61, C98-C99 are supported by MethylC-seq data shown in Figure 4 and supplements. The genome-wide methylation analysis is comprehensive and includes appropriate validation by pyrosequencing (C43). The coverage is modest (3.21-7.82X) but sufficient for genome-wide trends. The claim of being 'first evidence' (C99) is supported as no prior AGS methylation studies are cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C62",
+      "C63"
+    ],
+    "result": "AGS2 and AGS4 fibroblasts display broader partially methylated domains (PMDs) than controls, with AGS-specific PMDs enriched for H3K27me3 marks (unlike common PMDs), suggesting silent condensed genomic regions are prone to becoming PMDs and this tendency is worsened by AGS2/4 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C62-C63 are supported by MethylC-seq analysis and chromatin feature overlap shown in Figure 5. The HMM-based PMD calling is appropriate. The enrichment of AGS-specific PMDs over H3K27me3 regions is well-documented. However, the mechanistic interpretation (C63) is speculative and acknowledged as such by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C97"
+    ],
+    "result": "AGS-specific RNA:DNA hybrids often occur within DNA hypomethylated regions. In AGS2/4, nearly half of AGS-unique DRIP peaks land in PMD regions (vs 10-15% for common peaks), with two-thirds matching AGS-specific PMDs. DNA methylation levels at AGS1/2/4-unique DRIP peaks are significantly lower than in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C54, C97 are supported by integrated analysis of DRIP-seq and MethylC-seq data shown in Figure 5. The overlap analysis is quantitative and shows clear enrichment of AGS-specific DRIP peaks in hypomethylated regions, particularly for AGS2/4. This represents a key finding linking the two main molecular abnormalities observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CRISPR/Cas9 knockout of RNASEH2A in HeLa cells causes DNA damage (elevated \u03b3H2AX), triggers 14-fold reactivation of a silent GFP reporter, and induces significant DNA hypomethylation at LINE-1 elements, suggesting a direct effect of RNASEH2A deficiency on DNA hypomethylation and gene reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by CRISPR knockout experiments shown in Figure 6, including Western blots, immunocytochemistry, microscopy, and bisulfite sequencing. The experiments include appropriate scramble controls. However, the conclusion of 'direct effect' (C59) is somewhat overstated as the experiments were limited to specific loci and a single cell line, and the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "There is no evidence for global alteration of transcriptional profiles as a result of DNA hypomethylation in AGS, consistent with the general absence of direct connections between DNA hypomethylation and gene reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by the RNA-seq data showing only modest transcriptional changes despite profound DNA hypomethylation. This negative result is important and consistent with prior literature (C77). However, the analysis may be limited by the specific cell type and developmental stage studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that replication stress caused by AGS mutations may indirectly result in defective DNMT1-mediated DNA methylation maintenance, potentially through PCNA clamp unloading at stalled forks. A positive feedback loop may link DNA damage and hypomethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C74 represent a mechanistic model based on integration of prior literature (C64-C70, C72-C73) with the current findings. While the model is plausible and well-reasoned, it remains speculative (C67, C71, C74) and lacks direct experimental validation in the current study. The proposed mechanism requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C100"
+    ],
+    "result": "RNA:DNA hybrids may represent a common immunogenic form of nucleic acids in AGS. DNA hypomethylation may contribute to interferon response through sensing by cGAS-STING or TLR9 pathways, which can detect RNA:DNA hybrids and unmethylated DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C83, C100 propose mechanisms for how the observed molecular abnormalities trigger immune responses. While the pathways cited are well-established (C79-C81, C83), the specific connection to AGS pathology remains speculative (C82, C100). The study demonstrates accumulation of RNA:DNA hybrids and DNA hypomethylation but does not directly test their immunogenic potential or pathway involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose two potential mechanisms for RNA:DNA hybrid accumulation in AGS: (1) DNA breaks may be repaired via Rad52-mediated pathways prone to RNA:DNA hybrid formation, or (2) hypomethylated regions may undergo spurious transcription leading to co-transcriptional R-loop formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C89 present mechanistic hypotheses for RNA:DNA hybrid formation. While based on established R-loop biology (C84-C85) and recent findings about RNA-templated repair (C86-C87), both proposed mechanisms (C88-C89) are speculative and lack direct experimental support in the current study. These remain testable hypotheses for future work.",
+    "result_type": "MINOR"
+  }
+]

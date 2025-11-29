@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors develop a mathematical modeling framework using mean field approaches and branching processes to simulate tumor growth dynamics. The model tracks cells by number of driver mutations (i) and resistance status (j), with fitness defined additively by drivers (selective advantage s per driver) and resistance cost (c), while treatment affects only non-resistant cells with loss \u03c3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe the core mathematical framework with appropriate citations and clear model assumptions. The mean field approach and branching process methodology are standard techniques properly applied here, and the fitness function definition is mathematically sound for the parameter regime considered (very small s).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C16"
+    ],
+    "result": "Analytical and numerical results show excellent correspondence, but mean tumor size diverges considerably from median due to outliers with very large cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C16 are supported by data in Appendix 1\u2014figure 1A,B showing agreement between analytical and numerical approaches and demonstrating the mean-median divergence. This is an expected statistical property when distributions have heavy tails, properly identified by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Numerical simulations demonstrate that untreated tumors reach detection threshold (10^9 cells) in ~18 years with low resistant cell frequency (0.03%), low-intensity treatment delays detection by ~16 years, higher doses select for resistance-dominated tumors, and resistant populations can go extinct stochastically especially at high treatment levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are directly supported by simulation results in Figure 1A-D. The findings are internally consistent with the model assumptions and demonstrate expected evolutionary dynamics under different treatment intensities. The stochastic extinction observation (C34) is properly explained mechanistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "For treatment intensities \u03c3 < 2s, tumor growth is driven by non-resistant cells, but tumors shift to resistance-dominated at \u03c3 \u2248 2s (an inflection point with maximum detection time variability). This inflection is due to accumulation of additional drivers and disappears when no additional driver mutations are allowed (N=0). At high treatment levels (\u03c3 > 2s), dynamics are strongly influenced by timing of first resistance mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C43-C45 describe a key mechanistic finding supported by Figure 2A,B and Figure 2\u2014figure supplement 1A. The \u03c3 \u2248 2s threshold is theoretically justified (C44) and experimentally validated by the N=0 control (C45). The explanation linking the inflection to driver accumulation is logically sound given the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Counterintuitively, early-detected tumors under constant treatment are more likely to be resistant than late-detected tumors because tumors acquiring resistance early grow faster. Non-resistant tumors accumulate up to 4 additional drivers by detection, while resistant tumors have fewer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 present a counterintuitive finding supported by Figure 2C with a mechanistic explanation (C41). The observation that resistant tumors have fewer drivers (C42) is consistent with the model where resistance provides growth advantage without needing additional drivers. This is a logically coherent result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54"
+    ],
+    "result": "Initial tumor size M0 critically affects outcomes: growth becomes deterministic and exponential for large tumors, tumors \u226410^5 cells can be eradicated under various treatments, but tumors \u226510^7 cells persist regardless of treatment. Tumors at ~1% of clinically detectable size (~10^7 cells) are typically impossible to eradicate by single-agent chemoprevention when resistance is possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C54 are supported by Figure 2\u2014figure supplement 1B and 2A,B. The threshold findings are clearly demonstrated in the data. However, the clinical interpretation (C50) extrapolates from model results and depends heavily on the specific parameter values and single-agent assumption, which could be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "For tumors with 1 million cells, many will already contain or rapidly acquire resistant cells, making initial resistant fraction have little impact on dynamics. However, success rates (tumors undetected after 50 years) improve substantially with lower initial resistance, particularly at higher treatment levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by Figure 2\u2014figure supplement 1C and 2C, with C51 appropriately citing Iwasa et al. 2006. The apparent contradiction between C52 and C53 is resolved by noting they measure different outcomes (dynamics vs. long-term success), though this could be explained more clearly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Under dose-dependent resistance costs, adaptive drug treatment applied only when non-resistant cells exceed resistant cells (metronomic therapy) leads to slower long-term tumor growth than constant therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 references numerical studies in Appendix 1 that are not fully presented in the main text. Without access to these detailed results, the robustness of this finding cannot be fully evaluated. The claim represents an interesting extension but requires more complete presentation of methods and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "For post-diagnostic intervention with 10^6 residual cells, early discovery (10^9) yields 3.4 additional years vs. late discovery (10^11) at \u03c3=1.5%, but 20-year non-detection probability is near zero regardless of treatment intensity. In contrast, prevention starting at 10^6 cells shows median detection at 25.5 years (\u03c3=1.5%) with >80% managed below detection after 20 years for \u03c3>1.0%. With 10^4 residual cells, stochastic effects dominate and detection times are more variable for smaller initial tumors. Beyond \u03c3\u22481.5%, increased treatment makes little difference as resistant cells dominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by Figure 3B-D and Figure 3\u2014figure supplement 1A-D. The comparative analysis between prevention and post-diagnostic intervention is clearly presented with appropriate statistical measures (medians, confidence intervals). The mechanistic explanation for the \u03c3\u22481.5% threshold is consistent with the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "For post-diagnostic interventions, the number of drivers at tumor discovery is a far better predictor of outcome than time from initiation to discovery, and treatment intensity increases tend to decrease predictive accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by Figure 3\u2014figure supplements 2\u20135. The finding makes biological sense given that driver accumulation directly affects fitness while time is only indirectly related. The decreased predictive accuracy at higher treatment intensities likely reflects increased stochastic effects from resistance dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Prevention starting at large populations (10^6 cells) shows small gains from higher cell arrest for outright success, while smaller populations (10^4 cells) show considerably greater success. Prevention generally delays tumor growth better than post-diagnostic intervention, especially for large residual populations. Failed prevention results in larger residual resistant populations than pre-therapeutic post-diagnostic situations, but smaller than post-diagnostic treatment failures. Secondary failures show larger resistant percentages and more drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by Figure 5A-D and Figure 5\u2014figure supplements 1-3. The comparative analysis is comprehensive and the findings are internally consistent. The observation about resistant population sizes (C69) is particularly important for understanding the consequences of failed prevention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "For large populations (10^6 cells), preventive treatment beyond ~0.3% daily arrest increases median detection times but not the 5th percentile, with no further gains beyond ~0.6% daily arrest. Post-diagnostic intervention improves only marginally beyond 0.3% daily arrest. For smaller populations (10^4 cells), high success is achieved at >0.1% (prevention) and >0.3% (post-diagnostic intervention) daily arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by Figure 5E-F. These are key quantitative findings that define optimal treatment intensities. The asymptotic behavior is consistent with the model's resistance dynamics. However, C72 notes results \"not shown,\" which slightly weakens confidence in the exact 0.6% threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C76",
+      "C77"
+    ],
+    "result": "Prevention generally results in more positive therapeutic outcomes than post-diagnostic interventions, requiring smaller effects on cancer cell populations to achieve given outcomes. For any given cell arrest level, prevention is superior on average, even including cases where prevention initially fails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C76, C77 represent the main comparative conclusion, supported by comprehensive numerical results in Figures 3-5. The finding is robust across different initial population sizes and treatment intensities. This is the central thesis of the paper and is well-supported by the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C79"
+    ],
+    "result": "The advantage of prevention over post-diagnostic intervention is substantially lowered if prevention initially fails, as residual cells after failed prevention contain more resistant clones than post-diagnostic tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C79 are supported by Figure 5\u2014figure supplements 2-3. This important caveat to the main finding is well-demonstrated. However, the result depends on the assumption that resistance mechanisms are identical for preventive and post-diagnostic measures, which the authors acknowledge but may not hold clinically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C78",
+      "C80",
+      "C91"
+    ],
+    "result": "Beyond low impact thresholds approximated by the fitness of the subclone with most drivers, little additional control is achieved when resistant subclones are present or likely to emerge. Maximal long-term control occurs at surprisingly low daily arrest levels (~0.6% prevention, ~0.3% post-diagnostic for 10^6 cells). The two most important variables determining outcome are initial cancer cell population size and tumor heterogeneity (drivers and resistance). Low impact interventions risk failing to control multi-driver subclones while high arrest levels risk selecting for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C78, C80, C91 synthesize the main findings. These conclusions are well-supported by the comprehensive modeling results throughout Figures 2-5. The identification of the trade-off between controlling multi-driver subclones and selecting for resistance is a key conceptual contribution. The specific quantitative thresholds are model-dependent but the qualitative insight is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C95"
+    ],
+    "result": "For post-diagnostic intervention, there is little gained beyond ~0.3% daily cell arrest for both small (10^4) and large (10^6) populations, while prevention may achieve continual gains up to ~0.6% daily arrest for large populations. Beyond 0.3% daily impact for 10^6 residual cells, increased therapeutic intensity selects disproportionally for resistance with negligible benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C95 present specific quantitative thresholds supported by Figures 3, 5. These are important practical findings. However, the generalizability depends on the specific parameter values used (particularly s=0.4%, c=0.1%), which represent one point in parameter space. Sensitivity to these parameters could be explored more thoroughly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "If order-of-magnitude estimates of cell populations and intra-tumor heterogeneity are possible, low dose, continuous, constant approaches could minimize risks of life-threatening cancers and will generally be superior to aggressive chemotherapies if therapeutic resistance is a risk factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are recommendations based on the modeling results but represent speculation about clinical application. The conditional nature (\"if order-of-magnitude estimates are possible\") is appropriate, but the feasibility of obtaining such estimates in practice is unclear. The recommendation also assumes the model adequately captures relevant clinical dynamics, which may be oversimplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors provide extensive background on cancer biology, evolution of resistance, prior modeling work, and empirical evidence for chemoprevention, citing numerous studies on driver/passenger mutations, MTD limitations, alternative treatment strategies, and NSAID effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C14, C81-C85, C87-C89 represent literature review and background knowledge appropriately cited. These claims establish context and justify the modeling approach. The citations appear appropriate and the characterizations of prior work are reasonable, though detailed verification of each citation is beyond this review's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C17"
+    ],
+    "result": "The model assumes an individual can contract at most a single cancer from a single lesion, and treatment outcome is sensitive to initial conditions, particularly for intermediate-sized tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C17 describe model assumptions and findings. C15 is a clearly stated simplifying assumption. C17 is supported by the numerical results showing high variability at intermediate treatment intensities (Figure 2). Both are appropriate for the modeling framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "If resection leaves sufficiently large residual cells or metastases are undiscovered, a range of the most successful prevention outcomes is unattainable under post-diagnostic intervention regardless of cell arrest level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by Figure 5 showing that post-diagnostic intervention cannot achieve the best prevention outcomes for large residual populations. This is a key finding about the limitations of post-diagnostic approaches. The result is robust within the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Tumors typically achieve several additional driver mutations by detection, approximating some estimates but falling short of others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by Figure 3A, Figure 3\u2014figure supplement 1A, and Figure 5\u2014figure supplements 2-3, with appropriate citations to Stratton et al. 2009 and Sjoblom et al. 2006. The acknowledgment that results fall between different empirical estimates is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The main hurdle to post-diagnostic MTD interventions remains resistant subclones, as increased therapeutic intensity beyond minimal impacts (~0.3% daily for 10^6 cells) selects disproportionally for resistance with negligible benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 synthesizes findings from Figures 3 and 5. This conclusion is well-supported by the modeling results. However, it applies specifically to the single-agent, constant-dose scenario modeled and may not generalize to combination therapies or adaptive strategies.",
+    "result_type": "MAJOR"
+  }
+]

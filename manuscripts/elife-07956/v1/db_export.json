@@ -1,0 +1,1424 @@
+{
+  "submission": {
+    "id": "ebe46404-5168-4372-a0ca-80fd44b7aa75",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:43:04.051774Z",
+    "updated_at": "2025-11-29T04:43:04.051774Z"
+  },
+  "content": [
+    {
+      "id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "submission_id": "ebe46404-5168-4372-a0ca-80fd44b7aa75",
+      "content_type": "manuscript",
+      "content_text": "# Enhancer additivity and non-additivity are determined by enhancer strength in the Drosophila embryo\n\n## Authors\n\n- Jacques P Bothma<sup>1</sup>\n- Hernan G Garcia<sup>2</sup>\n- Samuel Ng<sup>1</sup>\n- Michael W Perry<sup>1</sup>\n- Thomas Gregor<sup>2</sup> \u2020\n- Michael Levine<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Department of Physics Princeton University Princeton United States\n3. Lewis-Sigler Institute for Integrative Genomics Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetazoan genes are embedded in a rich milieu of regulatory information that often includes multiple enhancers possessing overlapping activities. In this study, we employ quantitative live imaging methods to assess the function of pairs of primary and shadow enhancers in the regulation of key patterning genes-knirps, hunchback, and snail-in developing Drosophila embryos. The knirps enhancers exhibit additive, sometimes even super-additive activities, consistent with classical gene fusion studies. In contrast, the hunchback enhancers function sub-additively in anterior regions containing saturating levels of the Bicoid activator, but function additively in regions where there are diminishing levels of the Bicoid gradient. Strikingly sub-additive behavior is also observed for snail, whereby removal of the proximal enhancer causes a significant increase in gene expression. Quantitative modeling of enhancer\u2013promoter interactions suggests that weakly active enhancers function additively while strong enhancers behave sub-additively due to competition with the target promoter.\n\n## Introduction\n\nThere is emerging evidence that metazoan genes occur in a complex regulatory landscape encompassing numerous enhancers (Jeong et al., 2006; Hong et al., 2008; Frankel et al., 2010; Perry et al., 2011; Rada-Iglesias et al., 2011; Buecker and Wysocka, 2012; Lagha et al., 2012; Levine et al., 2014). For example, the mouse Sonic Hedgehog gene is regulated by at least 20 different enhancers scattered over a distance of \u223c1 Mb (Jeong et al., 2006). Individual enhancers mediate expression in a variety of different tissues, including the brain, floorplate, and limb buds. Multiple enhancers with overlapping regulatory activities are also used to control gene expression within individual cell types. For example, the transcriptional activation of the gap gene hunchback (hb) in the early Drosophila embryo is mediated by both a proximal enhancer and distal \u2018shadow\u2019 enhancer that independently mediate activation in response to high levels of the Bicoid activator gradient (Buecker and Wysocka, 2012). Despite overwhelming evidence for multiple enhancers regulating the same gene it is unknown whether they simultaneously interact with the same promoter in a given cell. Here, we use a combination of quantitative live imaging and theoretical modeling to investigate the function of multiple enhancers for the regulation of a common target gene within a single cell type.\n\nThe fate map of the adult fly is established by \u223c1000 enhancers that regulate several hundred patterning genes during the 1-hr interval between two and three hrs after fertilization (Levine, 2010; Nien et al., 2011). As many as half of these genes contain \u2018shadow\u2019 enhancers with overlapping spatiotemporal activities that are thought to improve the precision and reliability of gene expression (Hong et al., 2008; Frankel et al., 2010; Perry et al., 2010, 2011; Lagha et al., 2012; Miller et al., 2014). For example, the hb shadow enhancer helps produce a sharp boundary of activation by the Bicoid gradient, while its snail (sna) counterpart helps ensure reliable activation under stressful conditions such as high temperatures (Perry et al., 2010, 2011). There is emerging evidence that shadow enhancers are used pervasively in a variety of developmental processes, in both invertebrates and vertebrates (Lagha et al., 2012; Arnold et al., 2013; Miller et al., 2014; Lam et al., 2015).\n\nThe underlying mechanisms by which two enhancers with extensively overlapping regulatory activities produce coordinated patterns of gene expression are uncertain. It is possible that they augment the levels of gene expression above the minimal thresholds required to execute appropriate cellular processes (Gregor et al., 2014). However, there is currently only limited experimental evidence for enhancers acting in an additive fashion (Arnold et al., 2013; Lam et al., 2015). An alternative view is that shadow enhancers suppress transcriptional noise and help foster uniform expression among the different cells of a population (Buecker and Wysocka, 2012). To explore these and other potential mechanisms, we examined the timing and levels of gene activity using bacterial artificial chromosomes (BAC) transgenes containing individual enhancers and combinations of primary and shadow enhancers in the early Drosophila embryo.\n\nBAC transgenes containing three key patterning genes, hb, knirps (kni), and sna, were examined in living precellular embryos. Quantitative analyses suggest that shadow enhancers mediate different mechanisms of transcriptional activity. For kni, we observe additive, even super-additive, activities of the primary and shadow enhancer pairs. In contrast, the hb enhancers function sub-additively in anterior regions containing saturating levels of the Bicoid activator but function additively in regions where there are diminishing levels of the Bicoid gradient. Strikingly, sub-additive behavior is also observed for sna, in that removal of the proximal enhancer causes a significant increase in gene expression. These observations suggest that the levels of enhancer activity determine the switch between additive and non-additive behaviors.\n\nUsing theoretical modeling, we suggest that these behaviors can be understood in the context of enhancers competing or cooperating for access to the promoter. Weak enhancers work additively due to infrequent interactions with the target promoter, whereas strong enhancers are more likely to impede one another due to frequent associations. Our results highlight the potential of combining quantitative live imaging and modeling in order to dissect the molecular mechanisms responsible for the precision of gene control in development (Gregor et al., 2014) and provide a preview into the complex function of multiple enhancers interacting with the same promoter.\n\n## Results\n\nPrevious live-imaging studies have relied on simple gene fusions containing a single enhancer attached to a reporter gene with MS2 stem loops inserted in either the 5\u2032 or 3\u2032 UTR (Garcia et al., 2013; Lucas et al., 2013; Bothma et al., 2014). Detection depends on the binding of a maternal mRNA-binding fusion protein (MCP::GFP) expressed throughout the early embryo. In order to examine the interplay between multiple enhancers, we created a series of BAC transgenes containing complete regulatory landscapes (summarized in Figure 1). The BAC transgenes contain an MS2-yellow reporter gene in place of the endogenous transcription units (Figure 1A). For each locus, hb, kni, and sna, we examined a series of three BAC transgenes: containing both primary and shadow enhancers, as well as derivatives lacking individual enhancers (Figure 1B,C). As expected, the BAC transgenes containing both enhancers produce robust expression of the MS2 reporter gene which recapitulate endogenous patterns previously measured using mRNA FISH and immunostaining (Perry et al., 2010, 2011) (Figure 1D\u2013I, Videos 1\u20133).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07956/elife-07956-fig1-v1.jpg)\n\n**Figure 1.:** (A) General structure of the reporter constructs. A reporter construct with 24 repeats of the MS2 stem loops and the yellow gene was recombined into BACs spanning the hb and kni loci. The 5\u2032 UTR and 3\u2032 UTR of the endogenous genes were left intact. The MCP::GFP protein that binds to the MS2 stem loops is present in the unfertilized egg and in the early embryo. Gene models of (B) the hb and (C) kni loci showing the location of the primary and shadow enhancers (Perry et al., 2011). (D, F, H) Snapshots of Drosophila embryos expressing different versions of the hb BAC>MS2 reporter containing different combinations of the two enhancers 10 min into nuclear cleavage cycle 13 (nc13). The colored bar on the bottom right indicates which enhancer was removed. (E, G, I) Snapshots of Drosophila embryos expressing different versions of the kni BAC>MS2 reporter containing different combinations of the two enhancers in nc14.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07956/elife-07956-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Fluorescent in situ hybridization of endogenous kni and kni BAC>yellow transgenes. (A) Shows an embryo with the fully intact kni BAC>yellow transgene in late nc 14. (B, C) Show embryos with the kni BAC>yellow transgene lacking both primary and shadow enhancers, removing both enhancers abolishes all activity in the stripe domain. In (A) an embryo is in late nc14 and (B) shows and embryo in early nc 14.\n\n![Video 1.](https://cdn.elifesciences.org/articles/07956/elife-07956-media1.avi.jpg)\n\n**Video 1.:** Maximum projection of hb BAC>MS2 transgene from nc10 to gastrulation, MCP::GFP in green and histone in red, anterior to the left and ventral view up. Time elapsed since the start of imaging is indicated in top left. The initial pattern is restricted to the anterior where expression is driven by the primary and shadow enhancers. In late nc13 the central domain enhancer starts to be expressed.\n\n![Video 2.](https://cdn.elifesciences.org/articles/07956/elife-07956-media2.avi.jpg)\n\n**Video 2.:** Maximum projection of kni BAC>MS2 transgene from nc10 to gastrulation, MCP::GFP in green and histone in red, anterior to the left and ventral view down. Time elapsed since the start of imaging is indicated in top left. The dynamics of the anterior and central parts of the pattern are evident.\n\n![Video 3.](https://cdn.elifesciences.org/articles/07956/elife-07956-media3.avi.jpg)\n\n**Video 3.:** Maximum projection of snail BAC>MS2 transgene from nc10 to gastrulation, MCP::GFP in green and histone in red, anterior to the left and ventral view up. Time elapsed since the start of imaging is indicated in top left.\n\nEnhancer \u2018deletions\u2019 were created by substituting native sequences with neutral sequences of similar sizes (see \u2018Materials and methods\u2019). These substitutions remove most of the critical sequences identified by ChIP-Seq assays (Harrison et al., 2011; Nien et al., 2011; Perry et al., 2011). It is nonetheless possible that critical flanking sequences persist within the transgenes. However, removal of both kni enhancers eliminates detectable transcripts in abdominal regions of early embryos (Figure 1\u2014figure supplement 1), suggesting that any remaining flanking sequences are insufficient to mediate expression.\n\nQualitative inspection of the hb and kni expression videos suggests that removal of either the primary or shadow enhancer does not cause a dramatic alteration in the overall patterns of gene activity. In order to identify more nuanced changes, we quantified the transcriptional activities of the complete series of BAC transgenes (Figure 2). The fluorescence intensities of active transcription foci were measured during nuclear cleavage cycles (nc) 13 and 14 at different positions across the anterior\u2013posterior (AP) axis. These intensities were converted into an absolute number of elongating Pol II molecules by calibrating with internal standards (see Garcia et al., 2013). Several embryos were analyzed for each time point, and the data were merged to determine the average behavior as a function of AP position and time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07956/elife-07956-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Mean number of Pol II molecules transcribing per nucleus (NPol II) in the hb BAC reporters containing different combinations of enhancers as a function of AP position for two time points in nc13. NPol II is calculated by averaging data from at least three embryos at each AP position. The predicted sum of the individual enhancers is also shown. Note the additivity at the boundary vs the sub-additivity at the core, anterior domain of the pattern. (C, D) Mean number of Pol II molecules transcribing per nucleus (NPol II) in the kni BAC reporters in nc14 as a function of AP position. For kni, we see super-additive behavior in the beginning of nc14 which then becomes additive later in nc14. The absolute number of transcribing Pol II molecules was estimated following a previous calibration (Garcia et al., 2013). Error bars are the standard error of the mean over multiple embryos.\n\nHb expression was examined during the \u223c15 min interphase of nc 13 when both the primary and shadow enhancers are active, but before the onset of later-acting \u2018stripe\u2019 enhancers during nc 14 (Perry et al., 2011, 2012). We measured the transcriptional activity of all three hb BAC transgenes (Figure 1D,F,H). Contrary to simple expectations suggested by previous studies (Arnold et al., 2013), we find that the two hb enhancers do not function in an additive fashion in anterior regions (20\u201340% egg length, EL) of the embryo (e.g., Figure 2A,B). Indeed, the levels produced by the wild-type transgene fall far short of the additive levels predicted by simply summing the levels of expression produced by the transgenes containing either the shadow or primary enhancer alone (Figure 2A,B). Moreover, the removal of the shadow enhancer has no effect on the levels of transcription in anterior regions, which is consistent with the original conception of the shadow enhancer as a \u2018back-up\u2019 in the event of stress (Hong et al., 2008).\n\nA very different scenario is observed in central regions of the embryo (40\u201350% EL) where hb expression switches from \u2018on\u2019 to \u2018off\u2019 to form a sharp border (Gregor et al., 2007). In this region, the wild-type transgene produces significantly higher levels of expression than either of the transgenes driven by a single enhancer. In fact, these levels correspond to the values predicted by simply adding the activities of the single-enhancer transgenes. Thus, the two enhancers transition from sub-additive to additive behavior in the region of the embryo where there are diminishing levels of the Bicoid activator gradient. We therefore suggest that the hb enhancers function additively only when they are operating below peak capacity (see below).\n\nTo further explore the activities of multiple enhancers, we examined the kni gene, which is regulated by an intronic enhancer and a distal 5\u2032 enhancer (Perry et al., 2011). We focus our analysis on central regions of the abdominal expression pattern since previous studies suggest the occurrence of long-range repressive interactions that establish the borders of the \u2018stripe\u2019 (Perry et al., 2011). During early periods of nc 14, the two enhancers function super-additively (Figure 2C). That is, the wild-type kni BAC transgene produces higher levels of expression than the predicted sum of the two transgenes containing either enhancer alone. During later stages of development, there is a twofold reduction in the expression levels of the endogenous gene, and at this time the two enhancers work in a simple additive manner (Figure 2D). Note that the maximum number of elongating polymerase (Pol II) complexes falls short of that seen for hb (compare with Figure 2A,B).\n\nUnderstanding the stark difference in the behaviors of the hb and kni enhancer pairs necessitates measuring the absolute strengths of the different enhancers. Using absolute counts of mRNA molecules (Little et al., 2013), we calibrated our live fluorescence intensity traces to determine the average numbers of actively elongating Pol II transcription complexes (Garcia et al., 2013). The kni transgenes containing single enhancers exhibit as little as fourfold lower levels of expression as compared with the corresponding hb transgenes (Figure 3A,B). At peak activity, the proximal hb enhancer induces \u223c50 transcribing Pol II complexes across the yellow reporter gene. By contrast, individual kni enhancers produce an average of only \u223c15 elongating Pol II complexes. We propose that the additive and super-additive behaviors of the two kni enhancers reflect their inherently \u2018weaker\u2019 activities as compared with the \u2018stronger\u2019 proximal hb enhancer (see \u2018Discussion\u2019). Note that, despite these differences, the overall output of transcripts and the overall rate of transcript production are essentially identical for all gap genes (Little et al., 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07956/elife-07956-fig3-v1.jpg)\n\n**Figure 3.:** (A) Time course of the mean number of Pol II molecules transcribing per nucleus (NPol II) for the different hb BAC transgenes and sum of individual enhancers at 27% EL for the duration of nc13. (B) kni BAC transgenes activities and the sum of individual enhancer activity at 60% EL for the first 50 min of nc14. (C) sna BAC transgenes and the sum of individual enhancer activities averaged over the central mesoderm for the initial 50 min of nc14. Error bars are the standard error of the mean over multiple embryos.\n\nTo test the proposed anti-correlation between enhancer strength and additivity, we analyzed the expression of sna, which is essential for delineating the invaginating mesoderm during gastrulation. sna transgenes containing either the proximal or distal enhancer produce peak transcriptional activities of \u223c40 actively transcribing Pol II complexes across the yellow reporter gene, similar to the numbers seen for the proximal hb enhancer (Figure 3C). Thus, both sna enhancers are strong and they exhibit strikingly sub-additive behaviors. In particular, the wild-type transgene displays significantly lower levels of expression than the mutant transgene containing only the shadow enhancer. Thus, strong enhancers not only fail to function additively but also interfere with one another, leading to sub-additive expression levels. This observation is also consistent with an earlier study, which suggested that the weaker proximal enhancer attenuates the activities of the stronger distal shadow enhancer (Dunipace et al., 2011).\n\nIn an effort to understand how multiple enhancers might function additively or sub-additively, we developed a mathematical model for dynamic enhancer\u2013promoter interactions. In this model, a single enhancer interacts with its promoter via a forward rate kon and a backward rate koff (Figure 4A). The relative values of the forward and reverse rates determine the strength of the enhancer\u2013promoter interaction by controlling what fraction of time the two are bound. When the enhancer and promoter interact, the promoter is in the ON state and initiates transcription at a rate r. This rate can be interpreted as the efficiency of enhancer-mediated transcriptional initiation upon enhancer\u2013promoter interaction. Hence, the observable rate of mRNA production depends on the interaction strength given by the ratio kon/koff, and the efficiency r with which transcription is initiated upon interaction (Figure 4B). This scheme can be generalized to include two enhancers (A and B) interacting with the same promoter (Figure 4C and see \u2018Materials and methods\u2019 for details of the mathematical analysis). In this model only one enhancer can interact with the promoter at a given time.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07956/elife-07956-fig4-v1.jpg)\n\n**Figure 4.:** (A) Minimal model of one enhancer engaging a promoter. kon and koff are the rates of promoter engagement and disengagement, respectively, and determine the interaction strength. r is the rate of mRNA production when the promoter is engaged and is a measure of the transcriptional efficiency. The mean number of Pol II molecules transcribing per nucleus (NPol II) is proportional to the rate of mRNA production. (B) As the interaction strength of a single enhancer is increased, the amount of mRNA produced increases up to a maximum value dictated by the transcriptional efficiency. (C) The model in (A) can be generalized to allow for multiple enhancers interacting with the same promoter. (D) In the regime where the interaction strength of both promoters is weak (kon/koff = 0.01), the amount of mRNA produced by having both A and B is simply the sum of the individual contributions of A and B, (r = 1). (E) In the regime where the interaction strength is large, the combined activity of both enhancers can be significantly less than the sum the individual enhancers. A less efficient enhancer A (rA = 0.2 au) can interfere with the more efficient enhancer B (rB = 1 au) such that their combined activity is significantly less than the sum of the activities of individual enhancers.\n\nWhen the individual enhancers interact infrequently with the promoter (kon/koff << 1) they are unlikely to attempt to engage the promoter simultaneously. In this regime, the enhancers will work additively, and the rate of mRNA production of enhancers A and B will simply be the sum of the production rate of A and B alone as shown in Figure 4D. However, as the strength of promoter\u2013enhancer interactions increases, the combined activity of both enhancers is less than the sum of each individual enhancer. When we model enhancers of different strengths (Figure 4E), the amount of mRNA production is reduced as the enhancer with the weaker transcriptional efficiency interacts more frequently with the promoter. This occurs because the two enhancers compete for access to the promoter, effectively inhibiting one another. Thus, weak enhancers might work additively due to infrequent interactions with the target promoter, whereas strong enhancers interfere with one another due to more frequent interactions (see below).\n\n## Discussion\n\nOur quantitative analysis of hb and kni expression provides seemingly opposing results. For kni, we observe additive, sometimes even super-additive, action of the two enhancers within the presumptive abdomen. In contrast, the two hb enhancers do not function in an additive fashion in anterior regions but are additive only in central regions where expression abruptly switches from \u2018on\u2019 to \u2018off\u2019. We propose that \u2018weak\u2019 enhancers function additively or even super-additively, whereas \u2018strong\u2019 enhancers can impede one another (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07956/elife-07956-fig5-v1.jpg)\n\n**Figure 5.:** (Upper left) Theoretical predictions (yellow) illustrating how the rate of mRNA production from both enhancers, $N_{Pol\u2009II}^{Primary+Shadow}$, varies with the sum of the activity of the individual enhancers, $N_{Pol\u2009II}^{Primary}+N_{Pol\u2009II}^{Shadow}$ (yellow). Mean number of Pol II molecules transcribing per nucleus (NPol II) is proportional to the rate of mRNA production. The green line shows perfect additivity for comparison. The model predicts additive behavior ($N_{Pol\u2009II}^{Primary+Shadow}\u2248N_{Pol\u2009II}^{Primary}+N_{Pol\u2009II}^{Shadow}$) when the rate of production is low and sub-additive behavior ($N_{Pol\u2009II}^{Primary+Shadow}<N_{Pol\u2009II}^{Primary}+N_{Pol\u2009II}^{Shadow})$ as the production rate increases. As the interaction strength of individual enhancers increases so does the rate of mRNA production, but the combined activity of both enhancers becomes sub-additive. (Upper right, lower left, lower right) Transcriptional activity of intact loci vs the sum of activities of individual enhancers for hb, kni, and sna at different times. A green line has been drawn in to indicate where $N_{Pol\u2009II}^{Primary+Shadow}$ is equal to $N_{Pol\u2009II}^{Primary}+N_{Pol\u2009II}^{Shadow}$. For hb and kni, the plots show data taken at different AP positions at 10 min into nc 13 and 20 min into nc 14, respectively, while for sna the datapoints were at different times. Ellipses indicate standard error of the mean.\n\nAdditional support for this view is provided by the analysis of sna. We found that the removal of the proximal enhancer significantly augments expression, consistent with the occurrence of enhancer interference within the native locus. It is also conceivable that a single strong enhancer (e.g., hb proximal or sna distal) already mediates maximum binding and release of Pol II at the promoter, and additional enhancers are therefore unable to increase the levels of expression. However, the increase in the levels of sna expression upon removal of the primary enhancer is inconsistent with this explanation. Perhaps, the proximity of the proximal enhancer to the sna promoter gives it a \u2018topological advantage\u2019 in blocking access of the distal enhancer (Dunipace et al., 2011). The proximal enhancer might mediate less efficient transcription than the distal enhancer and thereby reduce the overall levels of expression (see Figure 4E). We do not believe that this proposed difference is due to differential rates of Pol II elongation since published (Garcia et al., 2013) and preliminary studies suggest that different enhancers and promoters lead to similar elongation rates (\u223c2 kb/min; T Fuyaka and M Levine, unpublished results). A nonexclusive alternative possibility is that deletion of the proximal enhancer removes associated sna repression elements (MacArthur et al., 2009), thereby augmenting the efficiency of the distal enhancer.\n\nA minimal model of enhancer\u2013promoter associations provides insights into potential mechanisms. In the parameter regime where such interactions are infrequent the two enhancers display additive behavior. However, in the regime of frequent interactions, enhancers compete for access to the promoter resulting in sub-additive behavior. Enhancer\u2013promoter interaction parameters are likely to vary not only between different enhancers but also as the input patterns are modulated in time and space during development (Rushlow and Shvartsman, 2012; Kok and Arnosti, 2015).\n\nThis simple model explains the switch from sub-additive to additive enhancer activities for hb and sna. However, in order to explain the super-additive behavior of the kni enhancers, it would be necessary to incorporate an additional state in the model, whereby both enhancers form an active complex with the same target promoter. Such a complex would have a more potent ability to initiate transcription than individual enhancer\u2013promoter interactions.\n\nIn summary, we propose that enhancers operating at reduced activities (\u2018weak enhancers\u2019) can function in an additive manner due to relatively infrequent interactions with their target promoters. In contrast, \u2018strong\u2019 enhancers might function sub-additively due to competition for the promoter (Figure 4E). For hb, this switch between competitive and additive behavior occurs as the levels of Bicoid activator diminish in central regions where the posterior border of the anterior Hb domain is formed. Similarly, stress might reduce the performance of the sna enhancers to foster additive behavior under unfavorable conditions such as increases in temperature (Perry et al., 2010). Our study highlights the complexity of multiple enhancers in the regulation of gene expression. They need not function in a simple additive manner, and consequently, their value may be revealed only when their activities are compromised.\n\n## Materials and methods\n\n### Cloning and recombineering\n\nIn brief, BAC clones that map to the region of interest were identified from end-sequenced BAC libraries which can be viewed on a browser at http://pacmanfly.org, and ordered from BacPac Resources (http://bacpac.chori.org/) (Venken et al., 2009). These BACs arrive already cloned into a vector containing an attB sequence for targeted integration, mini-white cassette, chloramphenicol resistance and are in the inducible copy number strain EPI300, Epicentre Biotechnologies (Madison, WI). The following CHORI BACs were used as a starting point: sna BAC (CH322-18I14-1), hb BAC (BAC CH322-55J23), kni BAC (CH322-21P08).\n\nBACs requiring modification were first transformed into the recombineering strain SW102, which was obtained from NCI-Frederick Biological Resources Branch. Cultures containing specific BACs were grown overnight and recombination functions were induced as described (Perry et al., 2010). The induced bacteria were electroporated with targeting constructs that were prepared previously by PCR amplification. Targeting constructs were made using a pair of 90 base pair long oligonucleotides. These contained 25 base pairs specific to the region being amplified that was to be swapped into the BAC, and an additional 65 base pairs of sequence homologous to the target BAC flanking the region to be replaced. The homologous regions, or \u2018homology arms\u2019, target the amplified sequence to the region of interest for recombination. After electroporation and a 1 hr recovery period in 2XYT broth, bacteria were plated in a dilution series on LB plates with the appropriate antibiotic for overnight incubation at 30\u00b0C. Individual resulting colonies were screened by PCR for appropriate recombination at both homology arm locations. Confirmed positive recombinant colonies were transformed back into EPI300 cells (Epicentre Biotechnologies) and reconfirmed by antibiotic marker selection and PCR; PCR products were sequenced for final confirmation.\n\nOligonucleotides for amplification to make homology arm constructs (90 base pairs in length) were from Integrated DNA Technologies; shorter primers for colony screening PCR were from ELIM Biopharmaceuticals. Restriction enzymes were from New England Biopharmaceuticals. Qiagen products were used to isolate plasmid DNAs, gel-purify DNA fragments, and purify PCR products. Qiagen taq polymerase was used in colony PCR screening; Invitrogen Platinum pfx was used to amplify targeting constructs.\n\nThe first step in the modification was to replace the endogenous coding sequence of sna, hb, and kni genes with that of the yellow-kanamycin reporter gene. The yellow-kanamycin fragment was swapped into the place of the endogenous gene at the ATG start codon at the 5\u2032 end, leaving the 5\u2032 UTR intact. The endogenous 3\u2032 UTR was also left fully intact. In most cases, the different enhancers were replaced with an ampicillin resistance cassette which was PCR amplified from pBluescript. In the case of kni, one of the enhancers is in the intron of the transcribed region and so we replaced enhancer with a fragment of lambda phage DNA using galK positive and negative selection. The next step required the insertion the MS2 stem loop sequences. Copies of the MS2 stem loops were extracted from plasmid pCR4-24XMS2SL-stable (Addgene 31865) and were PCR amplified with primers with appropriate homology sequences.\n\n### BAC preparation for microinjection and phiC31-mediated integration\n\nBACs were induced to high copy number using Epicentre BAC autoinduction solution, according to supplier's instructions, and grown overnight for 16\u201318 hr at 37\u00b0C. DNA was prepared for micro-injection using the Invitrogen PureLink HiPure miniprep kit by following manufacturer instructions with described modifications for BACs and cosmids. DNA was diluted to a final concentration of \u223c300\u2013400 ng/\u00b5l and 1\u00d7 injection buffer. At least 200 embryos were injected per construct by BestGene Inc. (Chino Hills, CA). The transgenes were integrated into the following landing sites: BDSC 9723, BDSC 9750, and BDSC 24749. Hb lacking shadow and kni lacking primary were integrated into 9750 and 24,749, respectively, while all other transgenes were integrated into 9723.\n\n### Live imaging sample preparation and data acquisition\n\nFemale virgins of line yw; Histone-RFP;MCP-NoNLS-GFP (Garcia et al., 2013) were crossed with males of each reporter line. Collected embryos were dechorinated using bleach and mounted between a semipermeable membrane (Biofolie, In Vitro Systems & Services) and a coverslip (1.5, 18 mm \u00d7 18 mm) and embedded in Halocarbon 27 oil (Sigma). The flattening of the embryos makes it possible to image a larger number of nuclei in the same focal plane without causing significant changes in early development processes (Di Talia and Wieschaus, 2012).\n\nEmbryos were either imaged using a custom-built two-photon microscope (Liu et al., 2013) and a Zeiss LSM 780 confocal microscope. Imaging conditions on the two-photon microscope were as described in Garcia et al. (2013). The average laser power at the specimen was 10 mW, the pixel size was set to 220 nm and a single image consisted of 512 \u00d7 256 pixels. At each time point, a stack of 10 images separated by 1 \u00b5m was acquired resulting in a final time resolution of 37 s. Confocal imaging was performed using a Plan-Apochromat 40\u00d7/1.4NA oil immersion objective. The MCP-GFP and Histone-RFP were excited with a laser wavelength of 488 nm and 561 nm, respectively. Fluorescence was detected with two separate photomultiplier tubes using the Zeiss QUASAR detection unit (gallium-arsenide-phosphide photomultiplier was used for the GFP signal while the conventional detector was used for the RFP). Pixel size is 198 nm and images were captured at 512 \u00d7 512 pixel resolution with the pinhole set to a diameter of 116 \u00b5m. At each time point, a stack of 22 images separated by 0.5 \u00b5m was captured, spanning the nuclear layer. The final time resolution is 32 s.\n\n### Live imaging data analysis\n\nAnalysis was performed as described (Garcia et al., 2013) and full code can be downloaded from https://github.com/PrincetonUniversity/FlyRNAQuant. Histone-RFP slices were maximum projected for each time point. Nuclei were segmented using an object detection approach based on the Laplacian of Gaussian filter kernel. The segmented nuclei were then segmented and tracked over multiple nuclear cycles. Spots are detected in 3D and assigned to their respectively closest nucleus. When multiple spots are detected in the vicinity of a nucleus only the brightest one is kept. Spot intensity determination necessitates an estimate of the local fluorescent background for each particle. A 2D Gaussian fit to the peak plane of each particle column determines an offset, which is used as background estimator. The intensity is calculated by integrating the particle fluorescence over a circle with a radius of 6 pixels and then subtracting the estimated background. The imaging error is dominated by the error made in the fluorescent background estimation (Garcia et al., 2013).\n\nIt is possible to measure the average fluorescence per polymerase molecule for the hunchback enhancer > MS2 transgene with 24 MS2 repeats (Garcia et al., 2013). The quantitative imaging for the BAC transgenes was conducted under the exact same imaging conditions on the same microscope. The BAC transgenes also possess 24 MS2 repeats. However, the specific sequence of the stem loops is slightly different as these repeats have been further optimized to facilitate molecular biology work with them (Hocine et al., 2013). Assuming that the MS2 sites are similarly saturated with MCP::GFP protein in both cases we can then use the average fluorescence per polymerase molecule calculated for the hunchback>MS2 transgene to calibrate the BAC fluorescent traces in terms of the absolute number of transcribing polymerases per fluorescent spot.\n\n### Mathematical modeling\n\nWe propose a general scheme for enhancer promoter interactions which makes it possible to model the effect of having multiple enhancers activating a single promoter. Here, the enhancer and promoter engage and disengage with one another with characteristic rate constants kon and koff, respectively (see Figure 4A). The ratio between kon and koff determines the strength of the promoter-enhancer interaction. The system can be found in two states. First, the promoter can be unoccupied. We denote the occupancy of this state with [Enhancer]. Second, the promoter and enhancer can be engaged with an occupancy [Enhancer\u00b7Promoter]. Following the reaction scheme shown in Figure 4A, the temporal evolution of the occupancy of the state where the enhancer and promoter are engaged is given by\n\n$$\n\\frac{d[Enhancer\u2009\u00b7Promoter]}{dt}=k_{on}[Promoter]\u2212\u2009k_{off}[Enhancer\u2009\u00b7Promoter].\n$$\n\nWhile the enhancer is engaged with the promoter it is capable of producing mRNA at a rate r, which we will call the transcriptional efficiency. Hence the rate of mRNA production is given by\n\n$$\n\\frac{dmRNA}{dt}=r[Enhancer\u2009\u00b7Promoter].\n$$\n\nSince the promoter can only be in two states, engaged or not engaged by the enhancer, the occupancy of these two states is constrained by\n\n$$\n[Enhancer\u2009\u00b7Promoter]+[Promoter]=1.\n$$\n\nAssuming steady state in the temporal evolution of the state occupancies results in a rate of mRNA production of\n\n$$\n\\frac{dmRNA}{dt}=\u2009\\frac{k_{on}}{k_{on}+k_{off}}*r.\n$$\n\nIn Figure 4B we plot this rate as a function of the interaction strength for different values of enhancer efficiency.\n\nWhen considering two enhancers that can interact independently with the promoter (Figure 4C) we need to calculate the occupancy of the state accounting for the promoter interacting with enhancer A, [EnhancerA\u00b7Promoter], and with enhancer B, [EnhancerB\u00b7Promoter]. The temporal evolution of these occupancies is given by\n\n$$\n\\frac{d[Enhancer^{A}\u00b7Promoter]}{dt}=k_{on}^{A}[Promoter]\u2212k_{off}^{A}[Enhancer\u2009^{A}\u00b7Promoter],\n$$\n\nand\n\n$$\n\\frac{d[Enhancer^{B}\u00b7Promoter]}{dt}=k_{on}^{B}[Promoter]\u2212\u2009k_{off}^{B}[Enhancer\u2009^{B}\u00b7Promoter].\n$$\n\nIn this case the rate of mRNA production is given by\n\n$$\n\\frac{dmRNA}{dt}=r^{A}[Enhancer\u2009^{A}\u00b7Promoter]+r^{B}[Enhancer\u2009^{B}\u00b7Promoter],\n$$\n\nwhere the different promoter occupancy states are constrained by\n\n$$\n[Enhancer\u2009^{A}\u00b7Promoter]+[Enhancer\u2009^{B}\u00b7Promoter]+[Promoter]=1.\n$$\n\nIn analogy to the single-enhancer case we now assume steady state for the temporal evolution of the occupancies described by Equations 5, 6 and use the constraint given by Equation 7 to solve for [EnhancerA\u00b7Promoter] and [EnhancerB\u00b7Promoter]. Finally we replace these results into Equation 8 leading to\n\n$$\n\\frac{dmRNA}{dt}=\\frac{r^{A}k_{on}^{A}k_{off}^{B}+r^{B}k_{on}^{B}k_{off}^{A}}{k_{on}^{B}k_{off}^{A}+k_{on}^{A}k_{off}^{B}+k_{off}^{A}k_{off}^{B}}.\n$$\n\nUsing this equation we determine the rate of mRNA production as a function of the strength (i.e., r) and the efficiency (i.e., kon/koff) of enhancers A and B. These calculations are used to generate the plots shown in Figure 4D,E.\n",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "882f9ead-d9bf-4e7f-88f8-e9e478375a0c",
+      "submission_id": "ebe46404-5168-4372-a0ca-80fd44b7aa75",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robb Krumlauf, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07956.012](https://doi.org/10.7554/eLife.07956.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cEnhancer synergy and interference in living Drosophila embryos\u201d for peer review at eLife. Your submission has been favorably evaluated by Jim Kadonaga (Senior editor), Robb Krumlauf (Reviewing editor), and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe general consensus of the reviewers is that this is a strong paper, detailing high quality work with wide general relevance and import to current questions in the field of gene regulation. The main conclusion, that enhancers can work together in a variety of ways and that these differences are linked to important factors such as enhancer strength, is a significant one that will likely have an impact on the field. The state-of-the-art technique used here to visualize transcription live in vivo, represents a major advance for the quantitative study of enhancer function and gene expression.\n\nNo major experimental revisions are required but comments and concerns were raised by all three reviewers primarily in two areas: (1) relevant considerations that are not discussed in the text, and (2) limitations of the very simple theoretical model.\n\nThere is real enthusiasm for seeing a revised manuscript that incorporates or rebuts the issues and specific points noted below. The collective view is that this will significantly enhance the general interest of the manuscript.\n\nThe points to consider in revision are:\n\n1) The authors' interpretations depend on the assumption that 100% of the (relevant) regulatory activity at each gene locus is contained within the identified enhancers, and that flanking sequences left in the loci after deletion of an enhancer have no impact on gene expression. However, it is possible that sequences that flank enhancer A could interact positively with enhancer B when A is deleted, resulting in a \u201csuper-additive\u201d outcome. Minimal versions of enhancers are often weaker than longer versions, so it is possible that not all of the 'primary' or 'shadow' enhancer activity has been removed by the deletions. I think that the authors' assumption is a reasonable one, but it might be safer to acknowledge that when they refer to a transgene containing the primary enhancer \u201calone\u201d (Results, fifth paragraph), the deletion transgene actually contains much more non-coding sequence than that.\n\n2) The idea that enhancer additivity is a function of enhancer strength is a very interesting and appealing one, and it is central to the paper. Using the existing data, is there a way to plot those two measurements against one another to illustrate this idea more directly?\n\n3) I understand the theoretical model (Figure 4) as it is described in the text, but the authors make a point of saying that it explains enhancer interference, where \u201cthe combined activity of both enhancers is less than the sum of both enhancers\u201d (at the end of Results), and I don't see any evidence of enhancer interference in the graph. Shouldn't the red line (2 enhancers) dip below the green line (1 enhancer), and shouldn't the blue line reach an expression ratio lower than 1?\n\n4) On a closely related note, it isn't obvious to me how the model described here could ever drive the expression ratio below 1 by increasing enhancer-promoter engagement time, unless one enhancer were better at engaging the promoter but also worse at activating transcription when engaged. Wouldn't another state, such as non-productive enhancer-promoter interaction, need to be added to the model to achieve interference?\n\n5) In 2011, Perry et al. showed that the knirps intronic enhancer drives an inappropriately wide expression pattern, one that is \u201cnormalized\u201d when coupled with the proximal enhancer. This result suggests that the latter element has long-range repression type effects (or acts on the basal promoter in nuclei normally not expressing knirps to silence would-be inputs from the intron element). This data indicates that the authors' modeling of the enhancers as small activating units does not really conform to what we know about these elements. The authors do not discuss this prior finding, but presumably they have seen similar effects in their two photon system? The authors should test how a model involving such negative regulatory inputs would change their predictions. Admittedly this model would be more complex than the simple on/off model presented in this version of the manuscript, but we already know that this simpler presentation is insufficient.\n\n6) In 2009, MacArthur and colleagues measured transcription factor occupancy in the embryo. In that study, these researchers found that the Snail transcriptional repressor directly binds to the Snail regulatory elements that are tested here. The expression of Snail would thus induce some sort of negative feedback, if the binding measured in that study is indeed active. In light of the findings from this manuscript, where the primary enhancer by itself is weaker, and the shadow enhancer by itself is able to drive gene expression at about wild-type levels, it appears that Snail self-inhibition may be compromising promoter activity to reduce the overall output. Previous studies of the related short-range repressor Knirps have shown that this class of repressor may induce local, heterochromatized-like chromatin status (Li and Arnosti, 2011), thus if Snail is doing the same thing, the activity of this proximal element should be considered as a mix of active \u201csilencer\u201d-like activity with \u201cenhancer\u201d-like action in the classic sense. A similar local silencing action by parts of the knirps proximal element would explain the Perry results.\n\n7) The authors should address whether differences in elongation rates (which may be unlinked to promoter firing) would affect their estimations of overall enhancer activity. The genes tested here are very similar, but not identical \u2013 the lambda DNA filler for knirps or the unique 5' and 3' UTRs may have differential elongation potential. The overall conclusions about enhancer (non) additivity would still hold in any event.\n\n8) Authors state that hb enhancers do not function in additive fashion in anterior regions of the embryo (are subadditive). It is true, but by looking at the data in Figure 2A\u2013B and 3A, I would say that the transcriptional output of the shadow enhancer deletion overlaps pretty well with the wt, suggesting that hb shadow enhancer does not provide much of a contribution to transcription, at least in the anterior part of the embryo, which perhaps could be stated explicitly.\n\n9) Clearly the theoretical model does not account for the superadditive enhancer behavior, as seen for kni enhancers (which authors acknowledge in the discussion). Nonetheless, existence of the superadditive behavior indicates that a central assumption of the model \u2013 that a single enhancer engages the promoter at the time \u2013 is probably incorrect at least at a subset of loci. Could authors incorporate an additional state to their model accounting for the possibility of multiple enhancer interactions? How would that affect predictions of their model? What do authors think may determine competitive vs cooperative enhancer engagement with the promoter?\n",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "629e534b-a31e-4107-9a44-05fc4f0adf9c",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C1",
+      "claim": "The mouse Sonic Hedgehog gene is regulated by at least 20 different enhancers scattered over a distance of ~1 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the mouse Sonic Hedgehog gene is regulated by at least 20 different enhancers scattered over a distance of \u223c1 Mb (Jeong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jeong et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "e699ece2-c02e-47bc-a34a-9c50765107e8",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C2",
+      "claim": "Individual enhancers of the mouse Sonic Hedgehog gene mediate expression in a variety of different tissues, including the brain, floorplate, and limb buds.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual enhancers mediate expression in a variety of different tissues, including the brain, floorplate, and limb buds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement follows the citation to Jeong et al., 2006 and describes findings from that work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "5522188d-91c7-41e2-97ad-a904c810302c",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C3",
+      "claim": "The transcriptional activation of the gap gene hunchback (hb) in the early Drosophila embryo is mediated by both a proximal enhancer and distal 'shadow' enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the transcriptional activation of the gap gene hunchback (hb) in the early Drosophila embryo is mediated by both a proximal enhancer and distal 'shadow' enhancer that independently mediate activation in response to high levels of the Bicoid activator gradient (Buecker and Wysocka, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Buecker and Wysocka, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "87d57155-0431-4739-aeff-7e4b2447635b",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C4",
+      "claim": "The hunchback proximal and shadow enhancers independently mediate activation in response to high levels of the Bicoid activator gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the transcriptional activation of the gap gene hunchback (hb) in the early Drosophila embryo is mediated by both a proximal enhancer and distal 'shadow' enhancer that independently mediate activation in response to high levels of the Bicoid activator gradient (Buecker and Wysocka, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Buecker and Wysocka, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "5ecb7bff-526c-459a-9140-14cd0f0764f6",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C5",
+      "claim": "The fate map of the adult fly is established by ~1000 enhancers that regulate several hundred patterning genes during the 1-hr interval between two and three hrs after fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The fate map of the adult fly is established by \u223c1000 enhancers that regulate several hundred patterning genes during the 1-hr interval between two and three hrs after fertilization (Levine, 2010; Nien et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Levine, 2010 and Nien et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "4920650c-2b26-4abc-bda3-f6df0bcccc6a",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C6",
+      "claim": "As many as half of patterning genes contain 'shadow' enhancers with overlapping spatiotemporal activities.",
+      "claim_type": "EXPLICIT",
+      "source": "As many as half of these genes contain 'shadow' enhancers with overlapping spatiotemporal activities that are thought to improve the precision and reliability of gene expression (Hong et al., 2008; Frankel et al., 2010; Perry et al., 2010, 2011; Lagha et al., 2012; Miller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "d78adc8b-434a-4a4c-be91-11c901e8170d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C7",
+      "claim": "Shadow enhancers are thought to improve the precision and reliability of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As many as half of these genes contain 'shadow' enhancers with overlapping spatiotemporal activities that are thought to improve the precision and reliability of gene expression (Hong et al., 2008; Frankel et al., 2010; Perry et al., 2010, 2011; Lagha et al., 2012; Miller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations and represents a hypothesis in the field",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "cf53af30-358d-4fc8-b991-451d772dc95a",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C8",
+      "claim": "The hb shadow enhancer helps produce a sharp boundary of activation by the Bicoid gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the hb shadow enhancer helps produce a sharp boundary of activation by the Bicoid gradient, while its snail (sna) counterpart helps ensure reliable activation under stressful conditions such as high temperatures (Perry et al., 2010, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Perry et al., 2010, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "cff15e1e-4731-41a4-aa80-f5fc9be6c204",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C9",
+      "claim": "The snail shadow enhancer helps ensure reliable activation under stressful conditions such as high temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the hb shadow enhancer helps produce a sharp boundary of activation by the Bicoid gradient, while its snail (sna) counterpart helps ensure reliable activation under stressful conditions such as high temperatures (Perry et al., 2010, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Perry et al., 2010, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "078b4274-61b7-4b17-9016-bf9de9bec572",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C10",
+      "claim": "Shadow enhancers are used pervasively in a variety of developmental processes, in both invertebrates and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "There is emerging evidence that shadow enhancers are used pervasively in a variety of developmental processes, in both invertebrates and vertebrates (Lagha et al., 2012; Arnold et al., 2013; Miller et al., 2014; Lam et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "a0453425-e0b3-4da8-8f4f-c586cdac6a4e",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C11",
+      "claim": "There is currently only limited experimental evidence for enhancers acting in an additive fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is currently only limited experimental evidence for enhancers acting in an additive fashion (Arnold et al., 2013; Lam et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Arnold et al., 2013 and Lam et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "dad649a5-04a6-41dd-b191-42596e8b7e3b",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C12",
+      "claim": "The knirps enhancers exhibit additive, sometimes even super-additive activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The knirps enhancers exhibit additive, sometimes even super-additive activities, consistent with classical gene fusion studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "e1a9609e-bb5a-48f7-ad76-4520c0b27dcd",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C13",
+      "claim": "The hunchback enhancers function sub-additively in anterior regions containing saturating levels of the Bicoid activator.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the hunchback enhancers function sub-additively in anterior regions containing saturating levels of the Bicoid activator, but function additively in regions where there are diminishing levels of the Bicoid gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "98330483-90e1-496e-aea9-c95a1e7b2814",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C14",
+      "claim": "The hunchback enhancers function additively in regions where there are diminishing levels of the Bicoid gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the hunchback enhancers function sub-additively in anterior regions containing saturating levels of the Bicoid activator, but function additively in regions where there are diminishing levels of the Bicoid gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "4293845c-ef34-462c-aac3-2b0bbe553779",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C15",
+      "claim": "Removal of the proximal snail enhancer causes a significant increase in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly sub-additive behavior is also observed for snail, whereby removal of the proximal enhancer causes a significant increase in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "f449ffc5-64d1-4c6f-98d6-7aaa9a22f36e",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C16",
+      "claim": "Weakly active enhancers function additively while strong enhancers behave sub-additively due to competition with the target promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative modeling of enhancer\u2013promoter interactions suggests that weakly active enhancers function additively while strong enhancers behave sub-additively due to competition with the target promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "23d84281-ec73-481d-9970-ccb5c15bba71",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C17",
+      "claim": "BAC transgenes containing both enhancers produce robust expression of the MS2 reporter gene which recapitulate endogenous patterns previously measured using mRNA FISH and immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the BAC transgenes containing both enhancers produce robust expression of the MS2 reporter gene which recapitulate endogenous patterns previously measured using mRNA FISH and immunostaining (Perry et al., 2010, 2011) (Figure 1D\u2013I, Videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1D-I and Videos 1-3, and compared to previous work cited",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "32c64941-8cde-498f-aedc-ebbf2b372da8",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C18",
+      "claim": "Removal of both kni enhancers eliminates detectable transcripts in abdominal regions of early embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, removal of both kni enhancers eliminates detectable transcripts in abdominal regions of early embryos (Figure 1\u2014figure supplement 1), suggesting that any remaining flanking sequences are insufficient to mediate expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "639bf855-12fb-476f-aed5-3b63711f0672",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C19",
+      "claim": "Removal of either the primary or shadow enhancer does not cause a dramatic alteration in the overall patterns of hb and kni gene activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitative inspection of the hb and kni expression videos suggests that removal of either the primary or shadow enhancer does not cause a dramatic alteration in the overall patterns of gene activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on qualitative observation of video data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "8208262a-4113-420c-b687-328bd1199fa9",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C20",
+      "claim": "The two hb enhancers do not function in an additive fashion in anterior regions (20\u201340% egg length) of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to simple expectations suggested by previous studies (Arnold et al., 2013), we find that the two hb enhancers do not function in an additive fashion in anterior regions (20\u201340% egg length, EL) of the embryo (e.g., Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "3db3af8d-e42b-46bc-b87f-eb01e9df95a9",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C21",
+      "claim": "The levels of hb expression produced by the wild-type transgene fall far short of the additive levels predicted by simply summing the levels of expression produced by the transgenes containing either the shadow or primary enhancer alone in anterior regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the levels produced by the wild-type transgene fall far short of the additive levels predicted by simply summing the levels of expression produced by the transgenes containing either the shadow or primary enhancer alone (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "b17759d9-d263-4c60-801d-40dd89619233",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C22",
+      "claim": "Removal of the hb shadow enhancer has no effect on the levels of transcription in anterior regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the removal of the shadow enhancer has no effect on the levels of transcription in anterior regions, which is consistent with the original conception of the shadow enhancer as a 'back-up' in the event of stress (Hong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data in the manuscript and compared to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "d92d0cb9-925a-456a-9d58-b505b9a54c3c",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C23",
+      "claim": "In central regions of the embryo (40\u201350% EL) where hb expression switches from 'on' to 'off', the wild-type transgene produces significantly higher levels of expression than either of the transgenes driven by a single enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this region, the wild-type transgene produces significantly higher levels of expression than either of the transgenes driven by a single enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "34267146-d968-4bc9-9057-3df30ef0e786",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C24",
+      "claim": "In central regions of the embryo (40\u201350% EL), the hb expression levels correspond to the values predicted by simply adding the activities of the single-enhancer transgenes.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, these levels correspond to the values predicted by simply adding the activities of the single-enhancer transgenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "ebcd7217-f222-4d13-a5c6-028434f34f4d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C25",
+      "claim": "The two hb enhancers transition from sub-additive to additive behavior in the region of the embryo where there are diminishing levels of the Bicoid activator gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the two enhancers transition from sub-additive to additive behavior in the region of the embryo where there are diminishing levels of the Bicoid activator gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data showing different behaviors in different regions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "8f833f19-5413-4a14-8495-89a50a38624b",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C26",
+      "claim": "The hb enhancers function additively only when they are operating below peak capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore suggest that the hb enhancers function additively only when they are operating below peak capacity (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors based on their data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "35614cdb-a0e0-48e2-947d-14ad6d9dc456",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C27",
+      "claim": "The kni gene is regulated by an intronic enhancer and a distal 5\u2032 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the activities of multiple enhancers, we examined the kni gene, which is regulated by an intronic enhancer and a distal 5\u2032 enhancer (Perry et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Perry et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "dcfc3fd6-cddd-435d-9dce-afdb9640bb95",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C28",
+      "claim": "During early periods of nc 14, the two kni enhancers function super-additively.",
+      "claim_type": "EXPLICIT",
+      "source": "During early periods of nc 14, the two enhancers function super-additively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "1f75b41e-b83a-4de3-a7f2-a0f17078cfb7",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C29",
+      "claim": "The wild-type kni BAC transgene produces higher levels of expression than the predicted sum of the two transgenes containing either enhancer alone during early nc 14.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the wild-type kni BAC transgene produces higher levels of expression than the predicted sum of the two transgenes containing either enhancer alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "37745b93-e954-4a7d-87e7-5ce8d7940c65",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C30",
+      "claim": "During later stages of development, there is a twofold reduction in the expression levels of the endogenous kni gene.",
+      "claim_type": "EXPLICIT",
+      "source": "During later stages of development, there is a twofold reduction in the expression levels of the endogenous gene, and at this time the two enhancers work in a simple additive manner (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "5882c332-9648-48b8-ad90-53197936cccd",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C31",
+      "claim": "During later stages of nc 14, the two kni enhancers work in a simple additive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "During later stages of development, there is a twofold reduction in the expression levels of the endogenous gene, and at this time the two enhancers work in a simple additive manner (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "49427966-95c6-47c6-8036-38dc06612ee7",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C32",
+      "claim": "The maximum number of elongating polymerase (Pol II) complexes for kni falls short of that seen for hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the maximum number of elongating polymerase (Pol II) complexes falls short of that seen for hb (compare with Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of data in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "74c22442-87eb-487f-a8ff-df46d5838014",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C33",
+      "claim": "The kni transgenes containing single enhancers exhibit as little as fourfold lower levels of expression as compared with the corresponding hb transgenes.",
+      "claim_type": "EXPLICIT",
+      "source": "The kni transgenes containing single enhancers exhibit as little as fourfold lower levels of expression as compared with the corresponding hb transgenes (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "0fb9b5ae-8a98-4349-ad4a-e5c58e39802a",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C34",
+      "claim": "At peak activity, the proximal hb enhancer induces ~50 transcribing Pol II complexes across the yellow reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "At peak activity, the proximal hb enhancer induces \u223c50 transcribing Pol II complexes across the yellow reporter gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "6bde89db-bc37-4d36-8749-d20ee2ddf097",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C35",
+      "claim": "Individual kni enhancers produce an average of only ~15 elongating Pol II complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, individual kni enhancers produce an average of only \u223c15 elongating Pol II complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "50cf8356-4b31-4280-96ab-3ae348152d9b",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C36",
+      "claim": "The additive and super-additive behaviors of the two kni enhancers reflect their inherently 'weaker' activities as compared with the 'stronger' proximal hb enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the additive and super-additive behaviors of the two kni enhancers reflect their inherently 'weaker' activities as compared with the 'stronger' proximal hb enhancer (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors based on their data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "729f8a82-8602-4e34-b322-28f28f67d19d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C37",
+      "claim": "The overall output of transcripts and the overall rate of transcript production are essentially identical for all gap genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, despite these differences, the overall output of transcripts and the overall rate of transcript production are essentially identical for all gap genes (Little et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Little et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "01911600-ed17-4a30-9c5b-50c44dbd1e55",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C38",
+      "claim": "sna transgenes containing either the proximal or distal enhancer produce peak transcriptional activities of ~40 actively transcribing Pol II complexes across the yellow reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "sna transgenes containing either the proximal or distal enhancer produce peak transcriptional activities of \u223c40 actively transcribing Pol II complexes across the yellow reporter gene, similar to the numbers seen for the proximal hb enhancer (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "b136f56a-70a8-4025-8633-98934844e15d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C39",
+      "claim": "Both sna enhancers are strong and they exhibit strikingly sub-additive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both sna enhancers are strong and they exhibit strikingly sub-additive behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data showing high Pol II numbers and sub-additive behavior",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "ba18d329-22f7-45e6-b346-68498a7c8648",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C40",
+      "claim": "The wild-type sna transgene displays significantly lower levels of expression than the mutant transgene containing only the shadow enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the wild-type transgene displays significantly lower levels of expression than the mutant transgene containing only the shadow enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "b3cbc610-587f-4fc9-a4f4-7197c637422f",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C41",
+      "claim": "Strong enhancers not only fail to function additively but also interfere with one another, leading to sub-additive expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, strong enhancers not only fail to function additively but also interfere with one another, leading to sub-additive expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the data presented",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "5d399af2-c385-4c09-806c-b698c0bcbd2b",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C42",
+      "claim": "The proximity of the proximal enhancer to the sna promoter gives it a 'topological advantage' in blocking access of the distal enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, the proximity of the proximal enhancer to the sna promoter gives it a 'topological advantage' in blocking access of the distal enhancer (Dunipace et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors and supported by a citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "ba39ea2a-a9c0-4297-bd68-f1c2cb41777d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C43",
+      "claim": "The proximal sna enhancer might mediate less efficient transcription than the distal enhancer and thereby reduce the overall levels of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal enhancer might mediate less efficient transcription than the distal enhancer and thereby reduce the overall levels of expression (see Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors and supported by modeling shown in Figure 4E",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "d7989ef4-3692-4d69-963a-579e6c07d59d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C44",
+      "claim": "Different enhancers and promoters lead to similar elongation rates (~2 kb/min).",
+      "claim_type": "EXPLICIT",
+      "source": "We do not believe that this proposed difference is due to differential rates of Pol II elongation since published (Garcia et al., 2013) and preliminary studies suggest that different enhancers and promoters lead to similar elongation rates (\u223c2 kb/min; T Fuyaka and M Levine, unpublished results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a published citation and unpublished results",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "960a45cb-1070-4571-906c-27d4d1725a41",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C45",
+      "claim": "Deletion of the proximal sna enhancer might remove associated sna repression elements, thereby augmenting the efficiency of the distal enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "A nonexclusive alternative possibility is that deletion of the proximal enhancer removes associated sna repression elements (MacArthur et al., 2009), thereby augmenting the efficiency of the distal enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors and supported by a citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "af48d171-7b11-44cb-b74d-3a72e35ea257",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C46",
+      "claim": "In the parameter regime where enhancer-promoter interactions are infrequent, the two enhancers display additive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In the parameter regime where such interactions are infrequent the two enhancers display additive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "60d5886e-c383-4883-8198-e32a04193269",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C47",
+      "claim": "In the regime of frequent enhancer-promoter interactions, enhancers compete for access to the promoter resulting in sub-additive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the regime of frequent interactions, enhancers compete for access to the promoter resulting in sub-additive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "261e2e65-baa6-4548-9f36-60320bf30d1f",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C48",
+      "claim": "Enhancer\u2013promoter interaction parameters are likely to vary not only between different enhancers but also as the input patterns are modulated in time and space during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancer\u2013promoter interaction parameters are likely to vary not only between different enhancers but also as the input patterns are modulated in time and space during development (Rushlow and Shvartsman, 2012; Kok and Arnosti, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "d7435db8-b1a7-42be-ad36-634391381223",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C49",
+      "claim": "To explain the super-additive behavior of the kni enhancers, it would be necessary to incorporate an additional state in the model, whereby both enhancers form an active complex with the same target promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in order to explain the super-additive behavior of the kni enhancers, it would be necessary to incorporate an additional state in the model, whereby both enhancers form an active complex with the same target promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors based on modeling",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "761ac407-71dd-4c4d-8a42-83973780273f",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C50",
+      "claim": "A complex where both enhancers interact with the promoter would have a more potent ability to initiate transcription than individual enhancer\u2013promoter interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a complex would have a more potent ability to initiate transcription than individual enhancer\u2013promoter interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "c88812b6-022a-489f-bf5a-5690b5c4cede",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C51",
+      "claim": "Enhancers operating at reduced activities ('weak enhancers') can function in an additive manner due to relatively infrequent interactions with their target promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we propose that enhancers operating at reduced activities ('weak enhancers') can function in an additive manner due to relatively infrequent interactions with their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion proposed by the authors based on their data and modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "106c4e84-5b58-4918-95dc-878bdf4f1185",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C52",
+      "claim": "'Strong' enhancers might function sub-additively due to competition for the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 'strong' enhancers might function sub-additively due to competition for the promoter (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a conclusion proposed by the authors based on their data and modeling shown in Figure 4E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "92ba7e58-dcf3-48f5-bae6-3beed9ee073f",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C53",
+      "claim": "For hb, the switch between competitive and additive behavior occurs as the levels of Bicoid activator diminish in central regions where the posterior border of the anterior Hb domain is formed.",
+      "claim_type": "EXPLICIT",
+      "source": "For hb, this switch between competitive and additive behavior occurs as the levels of Bicoid activator diminish in central regions where the posterior border of the anterior Hb domain is formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data showing different behaviors in different regions with different Bicoid levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "3b066872-4c4d-40ea-870a-60a704f27119",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C54",
+      "claim": "Stress might reduce the performance of the sna enhancers to foster additive behavior under unfavorable conditions such as increases in temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, stress might reduce the performance of the sna enhancers to foster additive behavior under unfavorable conditions such as increases in temperature (Perry et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors and supported by a citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "f95f6e3f-e0be-4400-89e3-564b847bac58",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C55",
+      "claim": "Multiple enhancers need not function in a simple additive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study highlights the complexity of multiple enhancers in the regulation of gene expression. They need not function in a simple additive manner, and consequently, their value may be revealed only when their activities are compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the data presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "3c6edc75-6764-40bd-8b51-c145ac48d230",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C56",
+      "claim": "The value of multiple enhancers may be revealed only when their activities are compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study highlights the complexity of multiple enhancers in the regulation of gene expression. They need not function in a simple additive manner, and consequently, their value may be revealed only when their activities are compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the data and represents a hypothesis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "e1bef121-cba1-4ea7-9364-29aef0c89e72",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C57",
+      "claim": "BAC transgenes contain an MS2-yellow reporter gene in place of the endogenous transcription units.",
+      "claim_type": "EXPLICIT",
+      "source": "The BAC transgenes contain an MS2-yellow reporter gene in place of the endogenous transcription units (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental design shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "16e8fd28-7fc4-4c76-abf8-e44472606a1e",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C58",
+      "claim": "For each locus (hb, kni, and sna), a series of three BAC transgenes were examined: containing both primary and shadow enhancers, as well as derivatives lacking individual enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "For each locus, hb, kni, and sna, we examined a series of three BAC transgenes: containing both primary and shadow enhancers, as well as derivatives lacking individual enhancers (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental design shown in Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "6b5d871c-4f6f-4943-9cd4-3440d0f16d31",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C59",
+      "claim": "Hb expression was examined during the ~15 min interphase of nc 13 when both the primary and shadow enhancers are active.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb expression was examined during the \u223c15 min interphase of nc 13 when both the primary and shadow enhancers are active, but before the onset of later-acting 'stripe' enhancers during nc 14 (Perry et al., 2011, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental conditions and is supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "172d020c-f99c-41e2-99f8-94587162716f",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C60",
+      "claim": "The onset of later-acting 'stripe' enhancers for hb occurs during nc 14.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb expression was examined during the \u223c15 min interphase of nc 13 when both the primary and shadow enhancers are active, but before the onset of later-acting 'stripe' enhancers during nc 14 (Perry et al., 2011, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Perry et al., 2011, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "566aacb8-2077-466f-829b-7abb13ef55e4",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C61",
+      "claim": "When the individual kni enhancers interact infrequently with the promoter (kon/koff << 1) they are unlikely to attempt to engage the promoter simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "When the individual enhancers interact infrequently with the promoter (kon/koff << 1) they are unlikely to attempt to engage the promoter simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "803c9629-fbb9-49a6-aac5-929f65f6e21e",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C62",
+      "claim": "In the regime where enhancers interact infrequently with the promoter, the enhancers will work additively, and the rate of mRNA production of enhancers A and B will simply be the sum of the production rate of A and B alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regime, the enhancers will work additively, and the rate of mRNA production of enhancers A and B will simply be the sum of the production rate of A and B alone as shown in Figure 4D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on theoretical modeling shown in Figure 4D",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "2a6cfd2e-ce39-40c6-95bf-ea44144ed5d5",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C63",
+      "claim": "As the strength of promoter\u2013enhancer interactions increases, the combined activity of both enhancers is less than the sum of each individual enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the strength of promoter\u2013enhancer interactions increases, the combined activity of both enhancers is less than the sum of each individual enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "44198f6f-ab39-45af-bd75-f70b14a7b2b1",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C64",
+      "claim": "When modeling enhancers of different strengths, the amount of mRNA production is reduced as the enhancer with the weaker transcriptional efficiency interacts more frequently with the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "When we model enhancers of different strengths (Figure 4E), the amount of mRNA production is reduced as the enhancer with the weaker transcriptional efficiency interacts more frequently with the promoter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on theoretical modeling shown in Figure 4E",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "0ee43b44-6560-4e2a-a009-e9e9cc00e89b",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C65",
+      "claim": "The reduction in mRNA production with enhancers of different strengths occurs because the two enhancers compete for access to the promoter, effectively inhibiting one another.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs because the two enhancers compete for access to the promoter, effectively inhibiting one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "d630ff97-274a-4d3c-85a1-9970efda9b1d",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "claim_id": "C66",
+      "claim": "Weak enhancers might work additively due to infrequent interactions with the target promoter, whereas strong enhancers interfere with one another due to more frequent interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, weak enhancers might work additively due to infrequent interactions with the target promoter, whereas strong enhancers interfere with one another due to more frequent interactions (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on theoretical modeling",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a085f583-6c51-4fc8-8341-802f7dfda956",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BAC transgenes containing MS2-yellow reporter genes with various combinations of primary and shadow enhancers for hb, kni, and sna were constructed and validated. Wild-type transgenes containing both enhancers recapitulate endogenous expression patterns, while removal of both enhancers eliminates detectable transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe the experimental design, C17 shows validation against endogenous patterns with appropriate citations and imaging data (Figure 1D-I, Videos 1-3), and C18 demonstrates that enhancer deletions are functionally complete (Figure 1\u2014figure supplement 1). The methodology is well-documented and validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The hunchback enhancers exhibit spatially-dependent behavior: they function sub-additively in anterior regions with saturating Bicoid levels (20-40% EL) but additively in central regions (40-50% EL) where Bicoid levels diminish. Removal of the shadow enhancer has no effect in anterior regions but reduces expression in central regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 are supported by quantitative data in Figure 2A,B showing clear spatial differences in enhancer behavior. The transition from sub-additive to additive behavior correlates with the Bicoid gradient, supported by multiple measurements across embryonic positions. Statistical quantification with error bars strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "a4f6ff8b-7998-419e-9964-1170218aec89",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The knirps enhancers exhibit super-additive behavior during early nc14, where combined expression exceeds the sum of individual enhancers, then transition to simple additive behavior during later nc14 as expression levels decrease twofold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by temporal data in Figure 2C,D showing quantitative measurements at different developmental stages. The transition from super-additive to additive behavior is clearly documented with appropriate error bars and multiple embryo replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "bf48836f-ef4e-4d55-9ccd-83cbd9b2a907",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual kni enhancers are significantly weaker than hb enhancers, producing ~15 elongating Pol II complexes compared to ~50 for the proximal hb enhancer, representing a fourfold difference in expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by calibrated quantitative measurements shown in Figure 3A,B. The absolute Pol II counts were calibrated using previous methods (Garcia et al., 2013), providing a rigorous basis for comparing enhancer strengths across different genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "565e7a97-2262-4513-8bd3-c74d7bdd045c",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both snail enhancers are strong (~40 Pol II complexes each) and exhibit striking sub-additive behavior, with the wild-type transgene producing significantly lower expression than the transgene containing only the shadow enhancer. This demonstrates that strong enhancers can interfere with each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by data in Figure 3C showing high Pol II counts for individual enhancers and paradoxical reduction in expression when both are present. This counterintuitive result is well-documented and represents a key finding about enhancer interference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "d3c7c4c3-8fa7-4bea-ac16-92e23861f358",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose that weak enhancers function additively due to infrequent promoter interactions, while strong enhancers behave sub-additively due to competition for promoter access. This hypothesis explains the observed differences between kni (weak, additive) and hb/sna (strong, sub-additive) enhancer pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C51-C52 synthesize the experimental observations into a coherent model. The correlation between enhancer strength (measured by Pol II counts) and additivity behavior is consistently observed across all three genes (hb, kni, sna), providing strong support for this mechanistic hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "35f38013-d332-4d20-b752-822a99d88d50",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A mathematical model of enhancer-promoter interactions predicts that weak enhancers (infrequent interactions, kon/koff << 1) function additively, while strong enhancers (frequent interactions) compete for promoter access resulting in sub-additive behavior. The model explains how enhancers of different transcriptional efficiencies can interfere with each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 and C61-C66 describe a coherent mathematical framework (Figure 4) that qualitatively explains the experimental observations. The model makes testable predictions about the relationship between interaction strength and additivity. However, the model is not quantitatively fit to data, and parameters are not experimentally measured, limiting its predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "9a876175-7f78-4bc7-995b-fb837c732ec2",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "To explain super-additive behavior of kni enhancers, the model would need to incorporate a state where both enhancers simultaneously interact with the promoter, forming a more potent transcriptional complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C50 propose an extension to the model but acknowledge this mechanism is not included in the current framework. This is speculative and not experimentally tested. The super-additive behavior of kni is observed (C28-C29) but the mechanistic explanation remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "4d90b8bd-0b42-4aa0-825a-bc4cd59dd083",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The proximal sna enhancer may have a topological advantage in blocking the distal enhancer, or may mediate less efficient transcription, or its removal may eliminate associated repression elements, thereby explaining why deletion increases expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C43 and C45 propose multiple alternative hypotheses for the sna paradox but do not distinguish between them experimentally. While the observation of increased expression upon proximal enhancer deletion is well-supported (C40), the mechanistic explanation remains speculative with multiple non-exclusive possibilities cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "3cb3e5b9-8eb6-4e80-aca1-2043c4cb6ed8",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For hb, the switch from sub-additive to additive behavior occurs at the posterior border where Bicoid levels diminish, suggesting enhancers function additively only when operating below peak capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by the spatial data in Figure 2A,B showing the transition correlates with position along the Bicoid gradient. Claim C26 represents a reasonable inference from the data, though the concept of 'peak capacity' is not independently measured. The correlation is clear but causation is inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "19a0258f-dedf-41bc-a3be-d40a5f2e95c8",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Stress conditions might reduce enhancer performance to foster additive behavior, and the value of multiple enhancers may only be revealed when their activities are compromised.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54 and C56 are speculative hypotheses about the functional significance of shadow enhancers under stress. While C54 cites Perry et al., 2010 for stress effects on sna, the current study does not test stress conditions. These represent interesting hypotheses for future work but are not directly supported by the presented data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "3684bb90-45b5-4a78-9cfb-ae0c0dc14c71",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Different enhancers and promoters lead to similar Pol II elongation rates of approximately 2 kb/min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by published data (Garcia et al., 2013) and unpublished results from the authors. This supports the interpretation that differences in transcriptional output are not due to elongation rate differences but rather to initiation frequency or efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "238e5a63-8980-4ac2-b7d3-61c94db58659",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Qualitative inspection shows that removal of individual enhancers does not dramatically alter overall expression patterns. Hb was examined during nc13 when both enhancers are active but before later stripe enhancers activate in nc14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 describes qualitative observations from video data, while C59-C60 define the experimental timing window with appropriate citations. These methodological details are well-documented and the qualitative assessment is reasonable, though quantitative analysis (Figure 2) reveals more subtle differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "445ec643-6b10-49ca-8b14-1231d70d5286",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Despite differences in enhancer strength and Pol II numbers, the overall output of transcripts and rate of transcript production are essentially identical for all gap genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by citation to Little et al., 2013. This contextualizes the findings by showing that different regulatory strategies (strong vs. weak enhancers, additive vs. sub-additive) can achieve similar transcriptional outputs, highlighting the complexity of gene regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "33df967f-be96-4ce5-8116-db997935c221",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Enhancer-promoter interaction parameters likely vary between different enhancers and are modulated in time and space during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is a reasonable inference supported by the observed temporal changes in kni enhancer behavior (C28-C31) and spatial changes in hb behavior (C20-C25). The claim is appropriately hedged ('likely') and supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "00d0efb0-b43b-4ca2-b8c7-5664536c5b82",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Multiple enhancers need not function in a simple additive manner, highlighting the complexity of gene regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is a well-supported conclusion from the entire study. The data clearly demonstrate non-additive behaviors (sub-additive for hb and sna, super-additive for kni) across multiple genes, challenging simple models of enhancer function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "70e5d300-5f5a-4998-88c2-28096b6a23db",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background context on enhancer biology: Multiple enhancers are common in metazoan genes, shadow enhancers are thought to improve precision and reliability, and there is limited prior evidence for additive enhancer function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide literature context with appropriate citations. These establish the background and motivation for the study. The claims accurately represent prior work, though C7 notes that the function of shadow enhancers improving precision is a hypothesis ('thought to') rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    },
+    {
+      "id": "4fcdffe2-21ee-4201-a10e-5cea1efd99a0",
+      "content_id": "0c459158-4d3d-4cfa-a055-64cd5f196164",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The kni gene is regulated by an intronic enhancer and a distal 5' enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by citation to Perry et al., 2011 and is consistent with the experimental design shown in Figure 1C. This provides necessary background for interpreting the kni results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:43:04.051774Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e1bef121-cba1-4ea7-9364-29aef0c89e72",
+      "result_id": "a085f583-6c51-4fc8-8341-802f7dfda956"
+    },
+    {
+      "claim_id": "16e8fd28-7fc4-4c76-abf8-e44472606a1e",
+      "result_id": "a085f583-6c51-4fc8-8341-802f7dfda956"
+    },
+    {
+      "claim_id": "23d84281-ec73-481d-9970-ccb5c15bba71",
+      "result_id": "a085f583-6c51-4fc8-8341-802f7dfda956"
+    },
+    {
+      "claim_id": "32c64941-8cde-498f-aedc-ebbf2b372da8",
+      "result_id": "a085f583-6c51-4fc8-8341-802f7dfda956"
+    },
+    {
+      "claim_id": "8208262a-4113-420c-b687-328bd1199fa9",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "3db3af8d-e42b-46bc-b87f-eb01e9df95a9",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "b17759d9-d263-4c60-801d-40dd89619233",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "d92d0cb9-925a-456a-9d58-b505b9a54c3c",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "34267146-d968-4bc9-9057-3df30ef0e786",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "ebcd7217-f222-4d13-a5c6-028434f34f4d",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "e1a9609e-bb5a-48f7-ad76-4520c0b27dcd",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "98330483-90e1-496e-aea9-c95a1e7b2814",
+      "result_id": "137e3c9d-b6c7-4b77-af6c-a6243d421e4e"
+    },
+    {
+      "claim_id": "dcfc3fd6-cddd-435d-9dce-afdb9640bb95",
+      "result_id": "a4f6ff8b-7998-419e-9964-1170218aec89"
+    },
+    {
+      "claim_id": "1f75b41e-b83a-4de3-a7f2-a0f17078cfb7",
+      "result_id": "a4f6ff8b-7998-419e-9964-1170218aec89"
+    },
+    {
+      "claim_id": "37745b93-e954-4a7d-87e7-5ce8d7940c65",
+      "result_id": "a4f6ff8b-7998-419e-9964-1170218aec89"
+    },
+    {
+      "claim_id": "5882c332-9648-48b8-ad90-53197936cccd",
+      "result_id": "a4f6ff8b-7998-419e-9964-1170218aec89"
+    },
+    {
+      "claim_id": "dad649a5-04a6-41dd-b191-42596e8b7e3b",
+      "result_id": "a4f6ff8b-7998-419e-9964-1170218aec89"
+    },
+    {
+      "claim_id": "74c22442-87eb-487f-a8ff-df46d5838014",
+      "result_id": "bf48836f-ef4e-4d55-9ccd-83cbd9b2a907"
+    },
+    {
+      "claim_id": "0fb9b5ae-8a98-4349-ad4a-e5c58e39802a",
+      "result_id": "bf48836f-ef4e-4d55-9ccd-83cbd9b2a907"
+    },
+    {
+      "claim_id": "6bde89db-bc37-4d36-8749-d20ee2ddf097",
+      "result_id": "bf48836f-ef4e-4d55-9ccd-83cbd9b2a907"
+    },
+    {
+      "claim_id": "49427966-95c6-47c6-8036-38dc06612ee7",
+      "result_id": "bf48836f-ef4e-4d55-9ccd-83cbd9b2a907"
+    },
+    {
+      "claim_id": "01911600-ed17-4a30-9c5b-50c44dbd1e55",
+      "result_id": "565e7a97-2262-4513-8bd3-c74d7bdd045c"
+    },
+    {
+      "claim_id": "b136f56a-70a8-4025-8633-98934844e15d",
+      "result_id": "565e7a97-2262-4513-8bd3-c74d7bdd045c"
+    },
+    {
+      "claim_id": "ba18d329-22f7-45e6-b346-68498a7c8648",
+      "result_id": "565e7a97-2262-4513-8bd3-c74d7bdd045c"
+    },
+    {
+      "claim_id": "4293845c-ef34-462c-aac3-2b0bbe553779",
+      "result_id": "565e7a97-2262-4513-8bd3-c74d7bdd045c"
+    },
+    {
+      "claim_id": "b3cbc610-587f-4fc9-a4f4-7197c637422f",
+      "result_id": "565e7a97-2262-4513-8bd3-c74d7bdd045c"
+    },
+    {
+      "claim_id": "50cf8356-4b31-4280-96ab-3ae348152d9b",
+      "result_id": "d3c7c4c3-8fa7-4bea-ac16-92e23861f358"
+    },
+    {
+      "claim_id": "c88812b6-022a-489f-bf5a-5690b5c4cede",
+      "result_id": "d3c7c4c3-8fa7-4bea-ac16-92e23861f358"
+    },
+    {
+      "claim_id": "106c4e84-5b58-4918-95dc-878bdf4f1185",
+      "result_id": "d3c7c4c3-8fa7-4bea-ac16-92e23861f358"
+    },
+    {
+      "claim_id": "f449ffc5-64d1-4c6f-98d6-7aaa9a22f36e",
+      "result_id": "d3c7c4c3-8fa7-4bea-ac16-92e23861f358"
+    },
+    {
+      "claim_id": "af48d171-7b11-44cb-b74d-3a72e35ea257",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "60d5886e-c383-4883-8198-e32a04193269",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "566aacb8-2077-466f-829b-7abb13ef55e4",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "803c9629-fbb9-49a6-aac5-929f65f6e21e",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "2a6cfd2e-ce39-40c6-95bf-ea44144ed5d5",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "44198f6f-ab39-45af-bd75-f70b14a7b2b1",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "0ee43b44-6560-4e2a-a009-e9e9cc00e89b",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "d630ff97-274a-4d3c-85a1-9970efda9b1d",
+      "result_id": "35f38013-d332-4d20-b752-822a99d88d50"
+    },
+    {
+      "claim_id": "d7435db8-b1a7-42be-ad36-634391381223",
+      "result_id": "9a876175-7f78-4bc7-995b-fb837c732ec2"
+    },
+    {
+      "claim_id": "761ac407-71dd-4c4d-8a42-83973780273f",
+      "result_id": "9a876175-7f78-4bc7-995b-fb837c732ec2"
+    },
+    {
+      "claim_id": "5d399af2-c385-4c09-806c-b698c0bcbd2b",
+      "result_id": "4d90b8bd-0b42-4aa0-825a-bc4cd59dd083"
+    },
+    {
+      "claim_id": "ba39ea2a-a9c0-4297-bd68-f1c2cb41777d",
+      "result_id": "4d90b8bd-0b42-4aa0-825a-bc4cd59dd083"
+    },
+    {
+      "claim_id": "960a45cb-1070-4571-906c-27d4d1725a41",
+      "result_id": "4d90b8bd-0b42-4aa0-825a-bc4cd59dd083"
+    },
+    {
+      "claim_id": "92ba7e58-dcf3-48f5-bae6-3beed9ee073f",
+      "result_id": "3cb3e5b9-8eb6-4e80-aca1-2043c4cb6ed8"
+    },
+    {
+      "claim_id": "8f833f19-5413-4a14-8495-89a50a38624b",
+      "result_id": "3cb3e5b9-8eb6-4e80-aca1-2043c4cb6ed8"
+    },
+    {
+      "claim_id": "3b066872-4c4d-40ea-870a-60a704f27119",
+      "result_id": "19a0258f-dedf-41bc-a3be-d40a5f2e95c8"
+    },
+    {
+      "claim_id": "3c6edc75-6764-40bd-8b51-c145ac48d230",
+      "result_id": "19a0258f-dedf-41bc-a3be-d40a5f2e95c8"
+    },
+    {
+      "claim_id": "d7989ef4-3692-4d69-963a-579e6c07d59d",
+      "result_id": "3684bb90-45b5-4a78-9cfb-ae0c0dc14c71"
+    },
+    {
+      "claim_id": "639bf855-12fb-476f-aed5-3b63711f0672",
+      "result_id": "238e5a63-8980-4ac2-b7d3-61c94db58659"
+    },
+    {
+      "claim_id": "6b5d871c-4f6f-4943-9cd4-3440d0f16d31",
+      "result_id": "238e5a63-8980-4ac2-b7d3-61c94db58659"
+    },
+    {
+      "claim_id": "172d020c-f99c-41e2-99f8-94587162716f",
+      "result_id": "238e5a63-8980-4ac2-b7d3-61c94db58659"
+    },
+    {
+      "claim_id": "729f8a82-8602-4e34-b322-28f28f67d19d",
+      "result_id": "445ec643-6b10-49ca-8b14-1231d70d5286"
+    },
+    {
+      "claim_id": "261e2e65-baa6-4548-9f36-60320bf30d1f",
+      "result_id": "33df967f-be96-4ce5-8116-db997935c221"
+    },
+    {
+      "claim_id": "f95f6e3f-e0be-4400-89e3-564b847bac58",
+      "result_id": "00d0efb0-b43b-4ca2-b8c7-5664536c5b82"
+    },
+    {
+      "claim_id": "629e534b-a31e-4107-9a44-05fc4f0adf9c",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "e699ece2-c02e-47bc-a34a-9c50765107e8",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "5522188d-91c7-41e2-97ad-a904c810302c",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "87d57155-0431-4739-aeff-7e4b2447635b",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "5ecb7bff-526c-459a-9140-14cd0f0764f6",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "4920650c-2b26-4abc-bda3-f6df0bcccc6a",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "d78adc8b-434a-4a4c-be91-11c901e8170d",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "cf53af30-358d-4fc8-b991-451d772dc95a",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "cff15e1e-4731-41a4-aa80-f5fc9be6c204",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "078b4274-61b7-4b17-9016-bf9de9bec572",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "a0453425-e0b3-4da8-8f4f-c586cdac6a4e",
+      "result_id": "70e5d300-5f5a-4998-88c2-28096b6a23db"
+    },
+    {
+      "claim_id": "35614cdb-a0e0-48e2-947d-14ad6d9dc456",
+      "result_id": "4fcdffe2-21ee-4201-a10e-5cea1efd99a0"
+    }
+  ],
+  "comparisons": []
+}

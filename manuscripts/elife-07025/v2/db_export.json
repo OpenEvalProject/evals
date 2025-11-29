@@ -1,0 +1,1783 @@
+{
+  "submission": {
+    "id": "c230bcfd-5b83-4a19-bc99-df0780c1d17d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:20:28.473884Z",
+    "updated_at": "2025-11-29T04:20:28.473884Z"
+  },
+  "content": [
+    {
+      "id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "submission_id": "c230bcfd-5b83-4a19-bc99-df0780c1d17d",
+      "content_type": "manuscript",
+      "content_text": "# A mex3 homolog is required for differentiation during planarian stem cell lineage development\n\n## Authors\n\n- Shu Jun Zhu<sup>1</sup>\n- Stephanie E Hallows<sup>1</sup>\n- Ko W Currie<sup>1</sup>\n- ChangJiang Xu<sup>3</sup>\n- Bret J Pearson<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Program in Developmental and Stem Cell Biology The Hospital for Sick Children Toronto Canada\n2. Department of Molecular Genetics University of Toronto Toronto Canada\n3. Terrence Donnelly Centre for Cellular and Biomedical Research Toronto Canada\n4. Ontario Institute for Cancer Research Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeoblasts are adult stem cells (ASCs) in planarians that sustain cell replacement during homeostasis and regeneration of any missing tissue. While numerous studies have examined genes underlying neoblast pluripotency, molecular pathways driving postmitotic fates remain poorly defined. In this study, we used transcriptional profiling of irradiation-sensitive and irradiation-insensitive cell populations and RNA interference (RNAi) functional screening to uncover markers and regulators of postmitotic progeny. We identified 32 new markers distinguishing two main epithelial progenitor populations and a planarian homolog to the MEX3 RNA-binding protein (Smed-mex3-1) as a key regulator of lineage progression. mex3-1 was required for generating differentiated cells of multiple lineages, while restricting the size of the stem cell compartment. We also demonstrated the utility of using mex3-1(RNAi) animals to identify additional progenitor markers. These results identified mex3-1 as a cell fate regulator, broadly required for differentiation, and suggest that mex3-1 helps to mediate the balance between ASC self-renewal and commitment.\n\n## Introduction\n\nAdult stem cells (ASCs) are ultimately responsible for all tissue turnover in humans, which has been estimated to be approximately 1010 cells per day (Reed, 1999). This feat is achieved through a delicate balance of proliferation and differentiation, in order to maintain a stable stem cell population while replacing the exact number and type of cells lost to cell turnover or injury. This requires inherent asymmetry in stem cell lineages, with some daughter cells retaining stem cell identity while others become committed to differentiate (Rambhatla et al., 2001; Sherley, 2002; Simons and Clevers, 2011). Asymmetry in cell fate outcomes in stem cell lineages is known to happen in several ways. Asymmetry can be largely intrinsic, driven by the asymmetric distribution of RNA and proteins that drive different fates (Bossing et al., 1996; Doe, 1996, 2008; Doe and Bowerman, 2001; Bayraktar et al., 2010). For example, in Drosophila neuroblasts, the cell fate determinant Prospero is physically segregated into the daughter cell of a neuroblast division, where it drives differentiation and suppresses stem cell identity (Doe et al., 1991). In contrast, the size of the stem cell population can be controlled almost entirely by extrinsic means, such as in the mammalian intestinal crypt where paneth cells use WNT/Lgr5 signaling to maintain stem cell identity (Snippert et al., 2010; Sato et al., 2011). As the paneth cell niche expands in colon cancer, so too does the stem cell population (de Lau et al., 2007). Other stem cell types can use a combination of mechanisms, such as in the mammalian postnatal cortex of the brain where Hedgehog signaling maintains stem cell identity, and asymmetric segregation of RNA-binding protein complexes and cellular processes determines cell fate choice (Machold et al., 2003; Miller and Gauthier-Fisher, 2009; Vessey et al., 2012). For both regenerative medicine and cancer biology, elucidating how non-stem cell fates are specified is a fundamental aspect of understanding the mechanisms of stem cell lineage development.\n\nThe freshwater planarian Schmidtea mediterranea (a Lophotrochozoan flatworm) is quickly becoming a powerful model system to study gene function, regeneration, and ASC biology (Salo and Baguna, 2002; S\u00e1nchez Alvarado, 2003, 2006; Cebria, 2007; Gurley and S\u00e1nchez Alvarado, 2008; Rossi et al., 2008; Salo et al., 2009; Aboobaker, 2011; Gentile et al., 2011; Tanaka and Reddien, 2011; Baguna, 2012; Elliott and S\u00e1nchez Alvarado, 2013; Rink, 2013). Asexual planarians are constitutive adult animals and their well-known regenerative abilities are dependent on neoblasts, which possess stem cell activity and express the piwi homolog smedwi-1 (piwi-1) (S\u00e1nchez Alvarado and Kang, 2005; Reddien et al., 2005b; van Wolfswinkel et al., 2014). Neoblasts are broadly distributed throughout the mesenchyme where they constitute approximately 20\u201330% of all the cells in the animal, and serve to replenish all the differentiated cell types during normal tissue turnover and regeneration after injury (Krichinskaya and Martynova, 1975; Hayashi et al., 2006; Wagner et al., 2011). At steady state, the population of neoblasts is relatively constant in number despite high levels of tissue turnover, indicating that proliferation, self-renewal, and differentiation are finely balanced (Pellettieri and S\u00e1nchez Alvarado, 2007; Pearson and S\u00e1nchez Alvarado, 2008; Pellettieri et al., 2010). Currently, how neoblasts make the choice to adopt non-stem cell fates remains largely unknown; physical asymmetric segregation of cell fate components has not been demonstrated, and descriptions of any permissive niche-like signal remain elusive (Reddien, 2013; Rink, 2013).\n\nAlthough all planarian stem cells are piwi-1+, not all piwi-1+ cells are necessarily stem cells. Evidence increasingly shows commitment to particular lineages can occur at the piwi-1+ level as small numbers of these cells also express tissue-specific genes, though it remains unknown whether these cells are self-renewing or will directly differentiate (Lapan and Reddien, 2012; Cowles et al., 2013; Currie and Pearson, 2013; Scimone et al., 2014). Furthermore, recently neoblasts were divided into three major subclasses (sigma, zeta, gamma) based on transcriptional analyses, one of which generates non-dividing progenitors/progeny for the epithelium (zeta) and another postulated to be an intestinal-restricted subclass (gamma) (van Wolfswinkel et al., 2014). As neoblasts are the only mitotic cell type in planarians, they can be selectively ablated by irradiation, and over time, the immediate progeny of neoblasts eventually disappear as well (Reddien et al., 2005b; Eisenhoffer et al., 2008). Using fluorescence-activated cell sorting (FACS) analysis of irradiated animals stained with Hoechst, two cell populations can be discerned that are lost compared to non-irradiated animals: the \u2018X1\u2019 gate, which represents cells in the cell cycle with >2C DNA; and the \u2018X2\u2019 gate, which registers as a <2C DNA population due to Hoechst efflux. The remaining irradiation-insensitive (Xins) cells are assumed to be postmitotic differentiated cell types possessing 2C DNA (Reddien et al., 2005b; Hayashi et al., 2006). Studies have shown that the X1 population is >90% piwi-1+, and this gate has been used as the stem cell fraction in comparative transcriptomic studies (Reddien et al., 2005b; Eisenhoffer et al., 2008; Abril et al., 2010; Sandmann et al., 2011; Labbe et al., 2012; Onal et al., 2012; Resch et al., 2012; Solana et al., 2012). The X2 cell population is only 10\u201320% piwi-1+ and is thought to be enriched with immediate postmitotic progeny of neoblasts. This notion is supported by the finding that the five known markers of postmitotic progeny (prog-1, prog-2, and AGAT-1/2/3), predicted to label epithelial progenitors, are most highly expressed in the X2 cell fraction based on RNA-deep sequencing (RNAseq) (Eisenhoffer et al., 2008; Labbe et al., 2012; Onal et al., 2012; van Wolfswinkel et al., 2014). Additionally, other markers that associate with putative committed progenitor cells of the gut, brain, and eyes are also enriched in this cell fraction (hnf4, chat, and sp6-9, respectively) (Wagner et al., 2011; Lapan and Reddien, 2012; Cowles et al., 2013; Scimone et al., 2014). No study has comprehensively investigated the cells and transcripts specific to the X2 cell fraction, and the cell types within it remain an enigma.\n\nHere, we hypothesized that regulators that drive stem cells toward postmitotic fates will be highly enriched in the stem cell progeny-associated X2 FACS fraction. Thus, we selected the top 100 transcripts enriched in this FACS gate, as well as 20 that were irradiation-sensitive with no X1 or X2 enrichment, to explore as putative markers or regulators. We found that while X2-enriched genes represented a heterogeneous mixture of cell types, transcripts expressed in epithelial progenitors comprised the predominant gene signature in the X2 fraction. We identified 32 new progeny markers and demonstrated that they are expressed predominantly in either prog-1/2+ or AGAT-1+ epithelial progenitors. In addition, prog-1 and prog-2 represent members of a larger gene family of unknown function, expressed throughout this epithelial lineage. Through RNA interference (RNAi) screening of the 120 candidate transcripts, we identified a homolog to the RNA-binding protein MEX3 (Smed-mex3-1) as a critical regulator of postmitotic stem cell progeny. Knockdown of mex3-1 completely abolishes regenerative ability and halts the production of prog-1/2+ and AGAT-1+ postmitotic progeny populations. piwi-1+ stem cells concomitantly increase in number, an increase that was observed in all three neoblast subclasses. Finally, mex3-1(RNAi) worms have impaired contribution to tissue turnover, as evidenced by drastically reduced production of lineage-restricted neoblast descendants and diminished cell addition towards multiple tissue types, in addition to the epithelium. These results suggest that mex3-1 functions to maintain asymmetry in stem cell lineage progression by promoting postmitotic fates and suppressing self-renewal. Due to the well-known function of MEX3 in mediating asymmetric cell fates during Caenorhabditis elegans embryogenesis (Draper et al., 1996), we propose that Smed-mex3-1 mediates a similar process in planarian stem cell lineages.\n\n## Results\n\n### RNAseq analysis of the progeny-associated X2 FACS cell fraction\n\nPreviously, we published two replicates of Illumina RNAseq of the X2 cell fraction to a depth of 206 million reads (Labbe et al., 2012). Here, we sequenced a third replicate to 63 million reads. We found a very high correlation across all of our sequencing replicates, as well as with two irradiated samples from a previous study, which we subsequently analyzed along with our irradiated sequencing (Figure 1\u2014figure supplement 1, Supplementary file 1) (Onal et al., 2012; Resch et al., 2012; Solana et al., 2012). To identify transcripts enriched in the X2 cell fraction, we used the program DESeq (Anders and Huber, 2010) to compare RNAseq from purified X1 and X2 cells vs whole irradiated animals at 7 days after exposure to 60\u2013100 Gray (Gy) of \u03b3-irradiation (Anders and Huber, 2010; Solana et al., 2012; Fernandes et al., 2014). This identified 2839 X1 and 1512 X2 transcripts with a p-value \u2264 0.01 (Figure 1A,B, Supplementary file 1). It is important to note that X1 and X2 cells shared the majority of their transcriptional profiles (Figure 1C), and bona fide progeny markers can be highly expressed in the X1 fraction, while bona fide stem cell markers can be highly expressed in the X2 fraction (Figure 1A,B). Therefore, to be considered X2-enriched, we imposed the additional criterion that the expression ratio of X2/X1 was >1, to exclude transcripts jointly expressed in both irradiation-sensitive populations. This eliminated previously known stem cell genes, such as piwi-1 and -2, PCNA (proliferating cell nuclear antigen), and cyclinB (Figure 1A; 8th, 45th, 57th, and 80th highest enriched X2 genes, respectively), and reduced the total number of enriched X2 genes to 735 (Figure 1D, Supplementary file 1) (Orii et al., 2005; Reddien et al., 2005b; Eisenhoffer et al., 2008). Finally, we observed 66 transcripts that were highly expressed in wild-type animals, yet exhibited low counts in irradiated worms and in both X1 and X2 cell fractions (WThighXlow, Figure 1D, Supplementary file 1). From the remaining 735 X2-specific genes as well as these 66 other irradiation-sensitive transcripts, we hypothesized that these represented multiple types of irradiation-sensitive progenitor cells. We next cloned the top 100 X2-specific and 20 WThighXlow transcripts for expression and functional analyses (Figure 1D, Supplementary file 2). Genes were annotated based on the top BLAST hit in mouse, when the Expect value passed the threshold of e\u22125.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig1-v2.jpg)\n\n**Figure 1.:** Irradiation-sensitive cell populations (X1, X2) isolated by fluorescence-activated cell sorting (FACS), lethally irradiated whole worms (Irrad), and intact control worms (WT) were analyzed by RNA-deep sequencing (RNAseq). (A and B) MA plots comparing enrichment in the X2 (A) or X1 (B) cell populations over Irrad, with average expression level. Each gray dot represents one transcript. Blue dots represent transcripts found to be significantly enriched in the respective cell population through DESeq analysis (X2, p < 0.01; X1, p < 0.001). Previously established postmitotic lineage markers are indicated by orange triangles. Previously established stem cell-specific transcripts are indicated as green triangles. Candidate genes identified in this study as markers of epithelial progenitors are indicated as red circles (X2-enriched) or purple boxes (WThighXlow). (C) Hierarchical clustering of RNAseq data identifies transcripts enriched in the X2 population (red box), as well as a group of irradiation-sensitive transcripts, which have high expression in intact control worms but low expression in X1, X2, and Irrad populations (purple box, WThighXlow). To improve visualization, the heatmap depicts z-scores scaled to the range of \u22120.5 to +0.5. (D) Selection of candidate progeny genes for analysis was determined by enriched expression in X2 fraction compared to both Irrad and X1 fractions. The pool of candidate genes validated in this study to be expressed in epithelial progenitors is indicated in orange. >> denotes more than fivefold enrichment.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Scatter plots of transcripts (gray circles) with reads per million values of 1000 or less, displayed as log-transformed values. The black diagonal line represents a Pearson correlation coefficient of 1. The corresponding Pearson correlation coefficients are shown at the top of each panel. All correlation-test p-values were found to be equal to 0 (Student's t-test). As expected, the replicates in each data are highly correlated, and the Pearson correlation coefficients between the replicates in X1 or X2 are greater than 0.95. Furthermore, sequencing from whole irradiated planarians is highly correlated.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** An alignment of the 17 PROG family genes used in this study is shown using the tool MUSCLE. Blue shading of residues reflects conservation, which is also plotted below the alignment in the \u2018conservation\u2019 plot.\n\nInterestingly, the predicted proteins encoded by prog-1 and prog-2 do not have clear homology to genes in other animals, including the genomes of other sequenced flatworms (Echinococcus multilocularis, Schistosoma mansoni, Macrostomum lignano\u2014www.macgenome.org) (Berriman et al., 2009; Zheng et al., 2013). However, we observed that they had low similarity to each other and represented a family of at least 24 distinct members across multiple transcriptomes in S. mediterranea, 15 of which were represented in the top 100 X2-enriched gene set (Sandmann et al., 2011; Solana et al., 2012; Currie and Pearson, 2013; Vogg et al., 2014). Translations of the predicted open reading frames (average size 179 amino acids) for these 15 prog-related genes were aligned and analyzed by protein domain prediction software SMART (Figure 1\u2014figure supplement 2) (Schultz et al., 1998; Letunic et al., 2014). The only motif that could be detected was a signal sequence at the N-terminal end of the predicted proteins, suggesting that these proteins are secreted. These PROG-1/2 homologous genes were then named in a numbered sequence based on their closest homolog (e.g., prog-1-1, prog-2-1).\n\n### Whole-mount expression analysis of X2-enriched and WThighXlow transcripts reveals 32 markers of epithelial progenitors\n\nTo begin our analysis of the top 100 X2-enriched transcripts and the top 20 WThighXlow transcripts, we performed whole-mount in situ hybridization (WISH) to elucidate gene expression patterns. We observed that 40/120 transcripts were either not detectable or not specific, and the remaining 80/120 genes could be binned into one of four categories (Figure 2A, Figure 2\u2014figure supplement 1). One category (13/120) contained genes with the most intense expression in the bi-lobed brain and nervous system, with low levels of expression elsewhere in the body. A second group of genes (18/120) exhibited a predominantly stem cell-like expression pattern, with or without brain expression, which was confirmed by high expression in the X1 cell fraction (Figure 2A, Figure 2\u2014figure supplement 1A, Supplementary file 2). A third subset of genes was expressed in a variety of distinct patterns including the gut, pharynx, peri-pharyngeal region, and neck (17/120) (Figure 2A, Figure 2\u2014figure supplement 1A). Finally, the fourth and largest group (32/120) consisted of genes with an expression pattern highly similar to those of the known early and late progeny markers prog-1, prog-2, and AGAT-1, which are sub-epithelial across the entire animal with expression anterior to the photoreceptors (Figure 2A, Figure 2\u2014figure supplement 2) (Eisenhoffer et al., 2008). This prog-like subset exhibited varying degrees of X2-enrichment, and some were highly expressed in the X1 population (Figure 1A, Supplementary file 2). Transcripts that displayed a prog-like pattern where BLAST did not identify significant similarity were named as postmitotic progeny (pmp's) with ascending numerals (e.g., pmp-3, pmp-4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig2-v2.jpg)\n\n**Figure 2.:** (A) Whole-mount in situ hybridization (WISH) analysis of X2-enriched and WThighXlow candidate progeny genes in control and lethally irradiated worms. Examples of genes expressed in a stem cell-like pattern, strong in the bi-lobed brain, distinct and unique patterns, or in a prog-like sub-epithelial pattern are shown. prog-like genes were categorized as early progeny markers when they displayed similar post-irradiation down-regulation kinetics as prog-1 and prog-2, or late progeny markers when they displayed similar loss kinetics as AGAT-1. Established lineage markers prog-1, prog-2, and AGAT-1 are included as comparisons and highlighted in blue text. Candidate epithelial progenitor genes with WThighXlow expression are indicated in purple text. Anterior, left; scale bar, 200 \u03bcm. (B) Combinatorial double fluorescent WISH (dFISH) between lineage markers and identified X2-enriched and WThighXlow postmitotic progeny markers was performed to assess co-localization with stem cell, early progeny, and late progeny cell populations. Percent co-localization is shown at the top of each panel and is averaged from 3 to 4 animals. Magenta, percent co-expression in [row gene]+ cells; green, percent co-expression in [column gene]+ cells. Images from the head, trunk, and tail regions were used for all cell counts, with a minimum of 300 cells counted. Dispersions of data are in Supplementary file 3. Representative confocal projections spanning 4\u20136 \u03bcm of the head region are shown. Eyespots are marked by asterisks. Anterior, left; scale bar, 100 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) WISH was used to determine the gene expression patterns of X2-enriched and WThighXlow genes in intact control worms. Genes for which a reliable and discrete pattern could be obtained are shown. Genes were named based on the best BLASTx result in mouse (when Expect value < 1 \u00d7 e\u22125) or based on transcript identity if no homology is found. Genes were categorized as either predominant in the brain (Brain), predominant in a stem cell pattern with or without expression elsewhere (Stem cell-like), or possessing unique patterns (Various). (B) A subset of candidate progeny genes was assessed by whole-mount ISH after irradiation with 60 Gys, up to 7 days after exposure. Scale bars, 200 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Candidate progeny genes, which exhibited a prog-like expression pattern, were all assessed by WISH in irradiated worms (60 Gy) at the indicated time points. Genes were categorized as either early progeny or late progeny depending on whether they exhibited similar kinetics of down-regulation to prog-1/2 or AGAT-1/2/3, respectively. Genes, which are WThighXlow, are indicated in purple text. Scale bar, 200 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Co-expression of X2-enriched and WThighXlow early and late progeny markers with established lineage markers (prog-1, prog-2, and AGAT-1) or with each other was determined using dFISH. Confocal projections spanning 6\u201310 \u03bcm are shown. Smaller panels on the left show individual channels with expression of one gene; larger panels on the right show merged channels. Numbers indicate the percent of magenta-labeled cells, which co-express the green-labeled transcript. 200\u20132000 cells were counted for each dFISH combination. Location of eyespots is marked by asterisks; anterior, up.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** X2-enriched and WThighXlow early and late progeny transcripts identified as potential markers of epithelial progenitors were assessed by WISH in zfp-1(RNAi) animals. Knockdown of zfp-1 has previously been shown to selectively ablate zeta-neoblasts and output of epithelial progenitors, and down-regulate prog-1 and prog-2.\n\nUsing WISH, we confirmed that transcripts from each of these expression categories were irradiation-sensitive (Figure 2A, Figure 2\u2014figure supplements 1B, 2). Genes with a stem cell-like component to the expression pattern exhibited down-regulation after 24 hr, as anticipated for bona fide stem cell markers. However, we observed that multiple genes with distinct tissue expression patterns did not change appreciably following irradiation (Figure 2\u2014figure supplement 1B) and were deemed unlikely to be candidates of progenitor cell types. We subsequently focused on the group of genes exhibiting an epithelial progenitor-like pattern, given their prevalence, and sought to determine whether they were co-expressed in previously described prog-1+ and AGAT-1+ populations or specified towards other unknown lineages.\n\nThe postmitotic progeny markers prog-1/2 and AGAT-1/2/3 not only have largely non-overlapping expression patterns, but the kinetics of down-regulation following irradiation substantially differ as well (Figure 2A) (Eisenhoffer et al., 2008). prog-1/2 expression is lost within 48 hr post-irradiation, while AGAT-1 expression is lost between 48 hr and 7 days, leading to these two cell populations being termed \u2018early\u2019 and \u2018late\u2019 progeny, respectively. Combined with evidence from BrdU-labeling studies, the early and late progeny populations have been proposed to reflect a spatiotemporal progression along one lineage of ASC differentiation destined for the epithelium, such that prog-1/2 expression represents the transition state between neoblasts (potentially zeta-neoblasts) and AGAT-1+ cells (Eisenhoffer et al., 2008; Pearson and S\u00e1nchez Alvarado, 2010; van Wolfswinkel et al., 2014). To demonstrate that our newly identified prog-like markers were irradiation-sensitive and to determine their kinetics of down-regulation, animals were lethally irradiated (60 Gy) and analyzed for each marker for 7 days. We observed that 13/32 transcripts showed similar kinetics of down-regulation as the early progeny markers prog-1 and prog-2 and were almost completely lost by 48 hr post-irradiation (Figure 2A, Figure 2\u2014figure supplement 2). The remaining 19/32 transcripts showed the majority of loss beyond 48 hr post-irradiation, consistent with being late progeny markers (Figure 2A, Figure 2\u2014figure supplement 2). Interestingly, all WThighXlow genes grouped as late progeny, and moreover, were the only genes with detectable expression at 7 days post-irradiation. These highly similar expression patterns and irradiation-sensitivity kinetics were strong indicators that these new progeny markers were also expressed in epithelial progenitors. Through co-localization analyses, we next investigated whether that was the case, or whether these markers represented novel irradiation-sensitive stem cell progeny.\n\n### New progeny markers label either early or late progeny of the epithelial lineage\n\nPrior to determining how the new progeny markers fit into this putative lineage using double fluorescent WISH (dFISH), we first duplicated previous experiments with piwi-1, prog-1, and AGAT-1 in order to establish baseline values of overlap. Congruent with previous studies, we found a small amount of overlap between piwi-1 with prog-1, and minimal with AGAT-1: 7.2% \u00b1 2.1 of prog-1+ cells were piwi-1+, while merely 0.29% \u00b1 0.50 of AGAT-1+ cells were piwi-1+ (Supplementary file 3). In contrast to a previous study that found nearly 45% overlap between the progeny populations (Eisenhoffer et al., 2008), we found that only 5.4% \u00b1 2.4 of prog-1+ cells co-expressed low levels of AGAT-1, while 5.2% \u00b1 3.2 of AGAT-1+ cells had prog-1 expression. dFISH with new progeny markers also showed little overlap between early and late progeny, confirming that these progeny transcripts mark two mainly non-overlapping populations (Figure 2B, Figure 2\u2014figure supplement 3), and that previous overlap was likely an dFISH artifact. It has been shown that PIWI-1 protein has a wider expression domain than piwi-1 mRNA, reflecting the perdurance of PIWI-1 into postmitotic progeny (Guo et al., 2006; Wenemoser and Reddien, 2010). It is unknown how differentiated these piwi-1\u2212PIWI-1+ cells are, but they are clearly in a transition from a stem cell gene expression state to various postmitotic fates. In support of these data, we found that 17.8% \u00b1 12.2 of prog-1+ cells to be PIWI-1+, while 1.6% \u00b1 1.2 of AGAT-1+ cells had detectable PIWI-1 expression (Figure 2B, Supplementary file 3).\n\nTo determine whether our newly identified early and late progeny markers represented distinct population(s) of descendent cells outside of the putative prog-1/prog-2/AGAT-1 lineage, pairwise dFISH was performed and quantified. Consistent with the kinetics of loss post-irradiation, dFISH uncovered extensive overlap between the new early progeny markers with prog-1 and prog-2 (Figure 2B, Figure 2\u2014figure supplement 3, Supplementary file 3). Some genes, such as prog-1-1 and prog-2-3, exhibited nearly 100% co-localization with prog-1 and prog-2, respectively, whereas the lowest percentage overlap was observed with egr-1 and sox9-1, with approximately 50\u201370% of these cells co-expressing prog-1. sox9-1 and egr-1 were previously identified to be expressed in zeta-class piwi-1+ neoblasts (referred to as soxP-3 and egr-1 [Wagner et al., 2012]), and we confirmed that a sizeable percentage of sox9-1+ and egr-1+ cells co-expressed piwi-1 (49.1% \u00b1 5.2 and 29.4% \u00b1 11.9, respectively, Supplementary file 3). Almost all newly identified late progeny transcripts examined were found to exhibit substantial co-expression with AGAT-1, with overlap ranging from 100% with prog-1-7 to 55.5% with prog-1-4 (Figure 2\u2014figure supplement 3, Supplementary file 3). The exception was the late progeny marker prog-1-2, where only 20.4% of prog-1-2+ cells co-expressed AGAT-1 (Figure 2\u2014figure supplement 3). Given that prog-1-2 is expressed in both subepithelial and epithelial cells, we propose that prog-1-2+ cells represent a more differentiated state along the epithelial lineage and are possibly the subsequent transition for AGAT-1+ cells. We also performed dFISH between newly identified early and late progeny markers, which similarly showed that genes within each category exhibit highly overlapping expression (Figure 2\u2014figure supplement 3, Supplementary file 3).\n\nFinally, to validate that expression of these genes marked epithelial progenitors, we examined their expression by WISH in zfp-1(RNAi) worms. Knockdown of zfp-1 has been demonstrated to specifically ablate epithelial progenitors and epithelial differentiation, but not the differentiation of other tissue types (van Wolfswinkel et al., 2014). We observed that every new epithelial progenitor marker assessed was down-regulated after zfp-1 RNAi, confirming that these genes were indeed expressed in epithelial progenitors (Figure 2\u2014figure supplement 4). Together, these findings demonstrated that our newly identified transcripts represent markers of the early and late progeny produced by zeta neoblasts and comprise the primary two progenitor populations en route to the epithelium (van Wolfswinkel et al., 2014).\n\n### RNAi screening identifies mex3-1 as a candidate regulator of differentiation\n\nThe self-renewal of ASCs and the appropriate differentiation of postmitotic progeny are the driving force behind homeostatic cell turnover and regeneration of all tissues in planarians (Newmark and S\u00e1nchez Alvarado, 2000; Rossi et al., 2008; Baguna, 2012; van Wolfswinkel et al., 2014). RNAi against genes required for differentiation, such as p53, CHD4, zfp-1, and vasa-1, results in the decline of postmitotic progeny without depletion of ASCs, and subsequent defects in tissue homeostasis and regeneration (Pearson and S\u00e1nchezAlvarado, 2010; Scimone et al., 2010; Wagner et al., 2012). To determine whether progeny-enriched genes were regulators of postmitotic fates, we used RNAi knockdown against our set of 100 X2-enriched and 20 WThighXlow genes and screened for the above phenotypes. In agreement with previous data, RNAi against prog-1 and prog-2 separately or together did not yield any detectable phenotype (Eisenhoffer et al., 2008). Unexpectedly, none of the new epithelial progenitor markers yielded phenotypes upon knockdown either, suggestive of considerable functional redundancy among these genes. In contrast, knockdown of a gene encoding a homolog to the RNA-binding protein MEX3, Smed-mex3-1 (mex3-1) produced phenotypes highly suggestive of defective stem cell lineage progression. mex3-1(RNAi) was completely penetrant and lethal, resulting in ventral curling, head regression, and dorsal lesioning during homeostasis, as well as loss of regenerative ability after amputation (Figure 3A\u2013C), indicative of epithelial homeostasis defects as well as overall stem cell impairment (Bardeen and Baetjer, 1904; Reddien et al., 2005a). Using reciprocal BLAST, we identified two other MEX3 homologs in S. mediterranea (mex3-2 and mex3-3, transcripts SmedASXL_000637 and SmedASXL_01505, respectively), which both contained two KH RNA-binding domains and had top reciprocal BLAST hits in mouse, fly, and C. elegans. These additional MEX3 homologs were neither irradiation-sensitive nor produced observable phenotypes after knockdown and thus not investigated further (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig3-v2.jpg)\n\n**Figure 3.:** (A) Survival curves of mex3-1(RNAi) animals to determine the optimal RNAi dosage. One RNAi feed was sufficient to produce completely penetrant lethality by 27 days. (B) RNAi worms were observed for homeostatic abnormalities after 1\u20133 feeds. Time point at which animals were imaged is indicated as x days after z feeds (zfdx). (C) Regenerative ability after injury was tested according to the experimental timeline shown. Trunk fragments after pre- and post-pharyngeal amputations are shown. (D) Expression levels of mex3-1 in different FACS populations by RNAseq. Error bars show standard deviation. (E) WISH analysis of mex3-1 in intact worms after 60 Gray (Gy) irradiation. Scale bar, 200 \u03bcm. (F) dFISH was performed to examine mex3-1 expression in stem cells and postmitotic progeny. Numbers indicate the percentage of stem cells, early progeny, or late progeny co-expressing mex3-1 (n > 400 cells per dFISH, \u00b1 standard error). Scale bar, 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Phylogenetic analysis of the mex3 gene family in planarians shows that they are likely the results of planarian-specific duplications. A Bayesian phylogeny was run as outlined in the \u2018Materials and methods\u2019. Only posterior probabilities 50% and above are shown. S. mediterranea sequences are in red. Multiple mex3 homologs could not be found in individual species of other flatworms. (B) Expression levels of mex3-2 and mex3-3 in RNAseq of FACS-isolated populations and control intact worms. Expression of mex3 homologs by WISH after lethal irradiation (60 Gy) is shown below. (C) Phenotypes of mex3-2 and mex3-3 RNAi animals during homeostasis (upper panel) and during regeneration after amputation (lower panel). Species sequences used in the phylogeny: Smed = Schmidtea mediterranea; S. mansoni = Schistosoma mansoni; Echinococcus = Echinococcus multilocularis; Aplysia = Aplysia californica; Ci = Ciona intestinalis; Lg = Lottia gigantea; Dm = Drosophila melanogaster; Tc = Tribolium castaneum; Nvit = Nasonia vitripennis; Mm = Mus musculus; Xt = Xenopus tropicalis; Nvect = Nematostella vectensis; Sp = Strongylocentrotus purpuratus.\n\nTo begin elucidating the mechanism by which mex3-1 potentially regulates stem cell lineage progression, we examined where the gene was expressed in the epithelial lineage. By RNAseq, mex3-1 showed >fivefold enrichment in the X2 fraction over irradiated worms but also exhibited significant expression in the X1 stem cell fraction (Figure 3D). WISH of wild-type worms revealed a stem cell-like expression pattern with substantial expression peripheral to the stem cell compartment (Figure 3E). Following irradiation, progressively more of the pattern was lost over 7 days (Figure 3E), consistent with expression in both stem cell and immediate postmitotic progeny populations, and also consistent with previous irradiation data for mex3-1 (Solana et al., 2012). Analysis of mex3-1 using dFISH with lineage markers confirmed that mex3-1 was widely expressed in stem cells, early progeny, and late progeny (Figure 3F). Therefore, the homeostasis and regeneration defects described above could result from defects in any one or all of these cell populations, which was subsequently tested.\n\n### mex3-1 is required for epithelial progenitor specification\n\nTo ascertain which step(s) in stem cell lineage progression were aberrant after mex3-1 knockdown, we performed WISH analysis to follow stem cell and postmitotic prog-1/2+ and AGAT-1+ progeny population dynamics after RNAi was initiated. Knockdown of mex3-1 leads to a rapid decline of the two progeny populations but not of stem cells (Figure 4A, Figure 4\u2014figure supplement 1A), with the majority of progeny gene expression lost by 6 days after RNAi (Figure 4\u2014figure supplement 1B). We assessed the expression of additional newly identified epithelial progenitor markers as well and observed that all were similarly abolished, supporting the loss of these two progeny types (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig4-v2.jpg)\n\n**Figure 4.:** (A) Lineage markers labeling stem cells (piwi-1), early (prog-1, prog-2), and late (AGAT-1) progeny were assessed by WISH after RNAi. The day 12 time point reflects the maximal perturbation to progeny markers prior to obvious health decline in the animal. (B) Representative newly identified early and late progeny transcripts were assessed by WISH after RNAi. (C) Whole-animal quantification of TUNEL was performed to measure cell death in RNAi animals. Representative stains and time points are shown to the right. (D) Whole-animal quantification of H3P immunolabeling was performed to assess cell proliferation after RNAi. Representative stains and time points are shown to the right. Unless otherwise noted, all experimental time points are indicated as after a single RNAi feeding. Scale bars, 200 \u03bcm. Error bars are standard deviations. **p < 0.01, ***p < 0.001 (Student's t-test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Lineage markers labeling stem cells (piwi-1), early (prog-1, prog-2), and late (AGAT-1) progeny were assessed by WISH after RNAi. Shown are a late time point after one RNAi feeding and a late time point with multiple RNAi feeds, when health decline is evident. (B) Detailed time course analysis of early (prog-2) and late (AGAT-1, pmp-11) progeny marker down-regulation after mex3-1 RNAi. Scale bars, 200 \u03bcm. (C) FACS analysis with Hoechst staining of mex3-1(RNAi) animals 9 days after RNAi. FACS plots from one run are shown on the left; right table indicates proportion of X1 and X2 populations of all runs.\n\nThe down-regulation of progeny gene expression without corresponding decreases in the stem cell population suggested a selective defect in specifying committed progeny. However, these results could similarly arise from defective maintenance and survival of progeny, thus, we examined levels of apoptosis with TUNEL (terminal deoxynucleotidyl transferase dUTP nick end labeling) during phenotypic progression. Quantification of TUNEL showed that mex3-1(RNAi) animals had comparable levels of cell death to control worms up until 9 days after RNAi, but significantly higher levels from 12 days and onward (Figure 4C). Given that progeny gene expression was mostly ablated by 6 days after RNAi, we concluded that the loss of progeny populations was not attributed to progeny cell death. The cause of the late rise in cell death remains unclear but is coincident with when morphological homeostatic phenotypes begin to manifest and may be a secondary effect of declining animal health. We next investigated whether impaired stem cell proliferation was the underlying cause of reduced progeny production and performed time-course analysis of phosphorylated histone H3 immunolabeling (H3P). We observed significantly increased levels of proliferation in mex3-1(RNAi) worms at every time point examined (Figure 4D), which suggested that stem cell division was not impeded by mex3-1 knockdown.\n\nTo exclude the possibility that the heightened H3P+ levels in mex3-1(RNAi) worms reflected an accumulation of cells arrested in G2/M phase and an inability to complete the cell cycle, we performed labeling with the thymidine analog F-ara-EdU to measure S-phase progression. Worms pulsed at either 6 or 9 days after RNAi and fixed 24 hr later showed significantly increased numbers of total EdU-labeled cells in mex3-1(RNAi) animals compared to controls (Figure 5A), demonstrating that during phenotypic progression, a greater number of cells were entering the cell cycle. FACS profiles of mex3-1(RNAi) animals at day 9 revealed relatively normal proportions of cells in both the X1 and X2 gates (Figure 4\u2014figure supplement 1C), further evidence that stem cells were progressing through the cell cycle and not arrested at 4C DNA in the X1 gate. Worms exposed to sublethal doses of irradiation initially lose the vast majority of their stem cells and immediate postmitotic descendants; over time, the stem cell and progeny populations gradually recover, offering an easily quantifiable approach to assess both self-renewal and differentiation (Wagner et al., 2012). Sublethally irradiated mex3-1(RNAi) worms expanded piwi-1+ stem cell numbers over time but produced disproportionately fewer prog-1+ progeny than control worms (Figure 5B). These data demonstrated that the loss of early and late progeny marker expression after mex3-1 knockdown could not be attributed to cell cycle arrest or increased cell death, but rather result from a failure in cell fate specification.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig5-v2.jpg)\n\n**Figure 5.:** (A) RNAi worms were administered EdU at 6 or 9 days after RNAi and quantified after a 24-hr period. Counts were performed on whole-animal single confocal planes. (B) mex3-1(RNAi) animals were irradiated with a sublethal dose (16.5 Gy), and stem cells (piwi-1) and progeny (prog-1) were quantified by dFISH at 7 and 9 days after irradiation. The proportion of progeny to stem cells between mex3-1(RNAi) and control worms differed significantly (p < 0.001, analysis of covariance). Whole-animal confocal projections are shown. Each point on the graph represents one animal. (C) Stem cells were quantified in pre-pharyngeal cross sections of intact worms after RNAi by piwi-1 fluorescent WISH (FISH) during phenotypic progression. Single confocal planes at day 9 after RNAi are shown; dorsal, top. (D) Quantification of stem cell subclasses in intact worms 12 days after RNAi. Stem cell subclass was determined by piwi-1 labeling and expression of soxP-1 pooled with soxP-2 (sigma subclass), hnf4 (gamma), or zfp-1 (zeta). Diagrams indicate areas of worms quantified, and arrows indicate example double-positive cells. Scale bars, 200 \u03bcm in (A\u2013C) and 50 \u03bcm in (D). Error bars represent standard deviation. *p < 0.05, **p < 0.01, ***p < 0.001 (Student's t-test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Stem cells were quantified in mid-pharyngeal and tail cross sections of intact worms at 6 and 9 days after RNAi by piwi-1 FISH. Single confocal planes are shown; dorsal, top. Scale bar, 200 \u03bcm. *p < 0.05; **p < 0.01 (Student's t-test). 10 animals were counted per RNAi treatment.\n\n### Knockdown of mex3-1 results in expansion of the stem cell compartment\n\nGiven that early and late progeny cell fates failed to be specified and adopted in mex3-1(RNAi) animals despite ongoing stem cell divisions, we hypothesized that there was a loss in stem cell lineage asymmetry in favor of stem cell self-renewal. We sought to determine whether this was the case by quantifying piwi-1+ stem cells in transverse cross sections after RNAi. By 6 days after RNAi, we observed highly significant increases in the number of piwi-1+ stem cells in mex3-1(RNAi) animals compared to controls, which rose to a 50% increase by day 12 (Figure 5C, Figure 5\u2014figure supplement 1). The expansion of piwi-1+ stem cells after mex3-1 knockdown could either reflect a global increase in all stem cell subclasses or reflect an increase in a specific subclass (zeta-, sigma-, and gamma-neoblasts) (van Wolfswinkel et al., 2014). To ascertain whether subclasses were selectively affected, we quantified the number of piwi-1+ stem cells belonging to each subclass using the following probes: zfp-1 for the zeta subclass, hnf4 for the gamma subclass, and a pooled mix of soxP-1 and soxP-2 for the sigma subclass. Assessment at 12 days after RNAi revealed that all three subclasses were significantly increased by approximately 50% in mex3-1(RNAi) animals compared to controls (Figure 5D). Together, these results demonstrated that the failure to specify epithelial progenitors in mex3-1(RNAi) animals was not due to loss of zeta-neoblasts, and suggested that the expansion of the stem cell pools was due to an imbalance in cell fates favoring stem cell self-renewal over differentiation.\n\n### mex3-1 is required for turnover of multiple tissues\n\nThe ventral curling defect during homeostasis and ablation of all early and late progeny markers in mex3-1(RNAi) worms suggested that epithelial turnover may be severely compromised. We performed EdU labeling in intact mex3-1(RNAi) animals to measure the entry of new cells into the epithelium under normal homeostatic conditions. 7 days following EdU administration, numerous EdU+ cells were present in the epithelium of control(RNAi) worms, but virtually none had been incorporated into the epithelium in mex3-1(RNAi) animals (Figure 6A). Additionally, following amputation, mex3-1(RNAi) worms failed to re-establish the expression of epithelial genes at wounding sites, demonstrating that during both homeostasis and regeneration, mex3-1 is required for specification and differentiation of epithelial cell types (van Wolfswinkel et al., 2014) (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig6-v2.jpg)\n\n**Figure 6.:** (A) RNAi animals were administered EdU 6 days after RNAi, and EdU+ labeling in the epithelium was quantified after a 7-day period. Single confocal planes are shown, with EdU+ cells in the epithelium indicated by arrows. Top panel scale bar, 100 \u03bcm; bottom panel scale bar, 50 \u03bcm. (B) RNAi animals amputated 7 days after RNAi were analyzed after 7 days regeneration by dFISH for stem cells and epithelial-associated genes. Single confocal planes or projections of head blastemas are shown, with anterior to the left. Dotted lines indicate animal boundary. Scale bar, 100 \u03bcm. (C) Diagram indicating regions of animal imaged and examined for quantification of lineage-restricted neoblast progeny. (D) Lineage-restricted progeny populations were quantified in intact worms 12 days after RNAi, using PIWI-1 immunolabeling and FISH for ovo (eyes), chat or coe (brain), FoxA (pharynx), and six1/2-2 (protonephridia). Single confocal planes are shown. Arrows indicate example double-positive cells. Magnified areas are indicated by dashed boxes and inset to the right of each image. Scale bar, 50 \u03bcm. (E) RNAi animals were administered BrdU 6 days after RNAi, and BrdU+ labeling in differentiated tissues (chat, brain; mat, gut; laminin, pharynx) was examined after a 5-day period. Single confocal planes are shown. Arrowheads indicate example double-positive cells. Scale bar, 50 \u03bcm. Error bars represent standard deviation. *p < 0.05, **p < 0.01, ***p < 0.001 (Student's t-test). (F) Quantification of stem cells (piwi-1+PIWI-1+) and immediate postmitotic stem cell descendants (piwi-1\u2212PIWI-1+) were performed 6 days after RNAi, in head, pre-pharyngeal, and tail regions. Shown are single confocal planes from the tail region. Magnified areas are indicated by dashed boxes. The proportion of postmitotic descendants to stem cells between mex3-1(RNAi) and control worms differed significantly (p < 0.001, non-linear regression analysis). Scale bar, 50 \u03bcm on left panels, 10 \u03bcm on right panels. All counts were performed in 5\u201310 animals.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Expression of mex3-1 in neural-restricted neoblast progeny by mex3-1 and chat dFISH with PIWI-1 immunolabeling. Percentage of chat+PIWI-1+ cells which express mex3-1 is indicated at top-right of panel. Arrows indicate example triple-labeled cells. Dashed box indicates area of magnified panels. Left scale bar, 50 \u03bcm; right scale bar, 10 \u03bcm. (B) Animals were administered BrdU at 6 days after RNAi and assessed at 5 days post-BrdU. Scale bar, 100 \u03bcm. All images shown are single confocal planes.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Stem cell (piwi-1) and epithelial progenitor (prog-1) populations were examined by WISH in RNAi animals. Scale bar, 200 \u03bcm. (B) Eye and neural lineage-restricted neoblast progeny were quantified in RNAi animals by FISH (ovo, eye; chat, brain) with PIWI-1 immunolabeling. Arrows indicate example double-positive cells. Scale bars, 50 \u03bcm.\n\nPreviously, it was shown that even by selectively abolishing zeta-neoblasts and epithelial turnover, a regenerative blastema can still form with differentiated tissues such as brain, protonephridia, intestine, and muscle (van Wolfswinkel et al., 2014). Given that mex3-1(RNAi) animals were unable to produce any regenerative blastema, we hypothesized that mex3-1 may have a crucial role in the broad specification of multiple lineages. To examine this possibility, we assessed mex3-1(RNAi) worms for changes in the number of lineage-specified neoblast progeny of other tissue types in various body regions (Figure 6C). As PIWI-1 protein persists in immediate postmitotic stem cell descendants for up to 72 hr (Guo et al., 2006), co-localization of PIWI-1 with tissue-specific markers was used to identify lineage-restricted neoblast descendants, encompassing undifferentiated progenitors and newly differentiating cells. The neural genes, chat and coe, eye-specific transcription factor ovo, pharyngeal marker FoxA, and protonephridial marker six1/2-2 were used as markers to indicate differentiation toward their respective tissues (Scimone et al., 2011; Wagner et al., 2011; Lapan and Reddien, 2012; Cowles et al., 2013; Adler et al., 2014). Quantification of lineage-restricted neoblast progeny in intact mex3-1(RNAi) worms 12 days after RNAi showed significant reductions in all examined cell types (Figure 6D). We observed that virtually all chat+PIWI-1+ cells expressed mex3-1 (Figure 6\u2014figure supplement 1A), suggesting a direct role for mex3-1 in regulating differentiation outside the epithelial lineage. Concordant with decreased production of lineage-restricted neoblast progeny, we also observed that 5 days following labeling with BrdU, the entry of new cells into brain, intestine, and pharynx was significantly decreased in mex3-1(RNAi) animals (Figure 6E, Figure 6\u2014figure supplement 1B). These data demonstrate that the diminished capacity of mex3-1(RNAi) animals to produce differentiated progeny is not restricted to the epidermal lineage but is characteristic of multiple lineages in planarians.\n\nWe examined whether impaired differentiation toward multiple tissues could be observed in p53(RNAi) animals as well, as p53 knockdown has previously been shown to deplete prog-1+ progeny and increase stem cell proliferation (Pearson and S\u00e1nchez Alvarado, 2010). We found that knockdown of p53 did not alter the numbers of PIWI-1+ovo+ eye- or PIWI-1+chat+ brain-specified neoblast progeny (Figure 6\u2014figure supplement 2), demonstrating a broader role for mex3-1 in differentiation. To determine whether mex3-1 knockdown resulted in a global impediment in generating postmitotic cells, we quantified the proportion of piwi-1\u2212PIWI-1+ cells, which are thought to represent immediate stem cell progeny that have permanently exited the cell cycle. We found that mex3-1 RNAi resulted in a significant increase in the number of piwi-1+PIWI-1+ cells and simultaneous decrease in piwi-1\u2212PIWI-1+ cells compared to controls (Figure 6F), supporting a general reduction in the ability of stem cells to progress to a postmitotic state. From these data demonstrating abrogated production of lineage-restricted stem cell progeny, impaired contribution to the turnover of multiple tissue types, and concomitant increases in all known stem cell subclasses, we propose that mex3-1 is a critical regulator for all differentiating progeny, mediating the adoption of a non-stem cell fate.\n\n### RNAseq of mex3-1(RNAi) animals identifies novel progenitor transcripts\n\nRNAseq of mex3-1(RNAi) whole animals 12 days after RNAi was performed to provide a broad and comprehensive overview of gene expression changes. Given that mex3-1 RNAi specifically eliminates postmitotic progeny fates, we reasoned that this approach may offer a more selective method than X2-FACS enrichment in order to identify additional progenitor-specific transcripts both within and outside the epithelial lineage. In agreement with our data demonstrating hyper-proliferation and expansion of the entire stem cell compartment after mex3-1 knockdown, 13/59 known stem cell-specific transcripts were significantly upregulated upon knockdown of mex3-1 (p < 0.01, Figure 7\u2014figure supplement 1A, Supplementary file 4). These included cell cycle genes, two of which were further confirmed by WISH (PCNA and H2B; Figure 7\u2014figure supplement 1B). Importantly, we also observed an approximately 1.5-fold increase in soxP-1, zfp-1, and piwi-1 transcripts in mex3-1(RNAi) animals (Figure 7\u2014figure supplement 1A; Supplementary file 4), concordant with the increase in stem cell subclasses quantified by cell counting (Figure 5C,D).\n\nAs anticipated from the effects of mex3-1(RNAi) on the loss of all epithelial progenitor markers by WISH analyses, all but two of our new early and late progeny markers were severely down-regulated in the RNAseq data set for mex3-1(RNAi) animals compared to controls (Figure 7A; Supplementary file 4). The two transcripts that did not appreciably change (sox9-1 and RPC-2) have very high X1 expression in addition to labeling epithelial progenitors, which was not expected to change in mex3-1 RNAi. Together, the RNAseq data corroborate the in vivo cell type analyses, where mex3-1 was required to restrict the stem cell compartment and promote differentiation of progenitor fates. We next tested whether transcripts down-regulated following mex3-1 RNAi mark novel neoblast progeny.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig7-v2.jpg)\n\n**Figure 7.:** (A) RNAseq was performed on mex3-1(RNAi) animals 12 days after RNAi. Each gray dot represents one transcript. Established and newly identified progeny markers are indicated. Top mex3-1 down-regulated transcripts cloned out for validation by WISH are indicated as well. (B) The blue-circled transcripts from (A) all require mex3-1 for expression. Scale bar, 200 \u03bcm. (C) Assessment of the mex3-1(RNAi)-down-regulated transcript Smed_ASXL059179 as a marker for a novel pharynx progenitor cell type using FISH and PIWI-1 immunolabeling. Confocal projections in control and mex3-1 RNAi animals are shown. Error bars represent standard deviation. Scale bar, 50 \u03bcm. **p < 0.01 (Student's t-test). (D) Model of lineage specification in planarian stem cells. mex3-1 is a key determinant in balancing stem cell self-renewal and differentiation, acting as a promoter of postmitotic cell fates and commitment toward multiple lineages.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) RNAseq was performed on mex3-1(RNAi) animals 12 days after RNAi, and X1 enrichment is compared to fold change after mex3-1 knockdown. Each gray dot represents one transcript. Established stem cell genes (from Figure 1B), which were found to be significantly upregulated in mex3-1(RNAi), are highlighted in blue (p < 0.01). The fold changes of a subset of known stem cell genes (involved in proliferation, pan-stem cell gene, or subclass identity) are shown on the right. (B) Upregulation of the cell cycle genes PCNA and H2B in RNAseq analysis was confirmed by WISH of mex3-1(RNAi) worms 6 days after RNAi. (C) From the top down-regulated genes after mex3-1 knockdown, 21 uncharacterized genes were chosen for cloning and expression analysis by WISH (11/21 genes are shown). mex3-1(RNAi) animals were stained 12 days after RNAi to confirm that target genes were down-regulated. Genes were named based on the best BLASTx result to mouse when the Expect value <1 \u00d7 e\u22125, or based on transcript number if no homology was found. Scale bars, 200 \u03bcm.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07025/elife-07025-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Expression of three genes down-regulated after mex3-1 RNAi was assessed in lethally irradiated worms by WISH. Scale bar, 200 \u03bcm. (B) Expression of two mex3-1(RNAi)-down-regulated genes in late progeny was examined by dFISH with AGAT-1. Percentages of cells that express AGAT-1 are indicated in the top-right of each panel. Images shown are confocal projections spanning 4 \u03bcm in depth. Scale bar, 100 \u03bcm. (C) Functional analysis by RNAi knockdown of the new pharyngeal progenitor marker SmedASXL_059179. Expression of SmedASXL_059179 after knockdown was examined by WISH. Scale bar, 200 \u03bcm. (D) Diagram outlining schedule of RNAi feeds and amputation for assessment of pharynx regeneration. Shown is WISH of the pharynx marker laminin in regenerating tail fragments. Scale bar, 200 \u03bcm.\n\nWe chose 21 down-regulated and uncharacterized transcripts for validation by WISH. By RNAseq, all were irradiation-sensitive but not X2-enriched (Figure 7A, Supplementary file 4) and thus could be classified as WThighXlow. We found that 20/21 transcripts produced a prog-like pattern in control worms and exhibited severely reduced expression in mex3-1(RNAi) worms, as anticipated from RNAseq (Figure 7B, Figure 7\u2014figure supplement 1C). The remaining transcript, SmedASXL_059179, was highly expressed near the proximal end of the pharynx, throughout the pharynx proper, and was similarly dependent on mex3-1 for its expression (Figure 7B). Three transcripts were confirmed to be irradiation-sensitive by WISH (Figure 7\u2014figure supplement 2A), and two of these were verified to be additional late progeny markers based on their high degree of co-localization with AGAT-1 expression (Figure 7\u2014figure supplement 2B). We predicted that SmedASXL_059179+ cells may represent a pharyngeal progenitor cell type, and indeed, we observed PIWI-1+SmedASXL_059179+ cells near the proximal base of the pharynx (Figure 7C). However, no regulatory roles were uncovered for this gene, as RNAi against SmedASXL_059179 did not result in apparent perturbations to pharynx function during homeostasis or regeneration (Figure 7\u2014figure supplement 2C,D). Overall, these results further support a role for mex3-1 as a critical regulator of differentiation toward multiple lineages and also demonstrate the utility of transcriptional analysis of mex3-1(RNAi) in identifying additional markers of tissue-specific progenitor populations, as an alternative to the criteria of irradiation-sensitivity and FACS localization.\n\n## Discussion\n\n### The X2 population has high heterogeneity and a strong epithelial progenitor gene signature\n\nAt the outset of this study, most efforts had been put forth to understand stem cell (X1) transcriptomes, heterogeneity, and genetic regulators. Relatively little was known about the X2 FACS cell fraction, with the exception that it expresses a disproportionate number of transcription factors and shares most of its gene signature with the X1 fraction, and the few known stem cell progeny markers are most highly expressed in this fraction (Labbe et al., 2012). We reasoned here that investigating more genes specific to the X2 fraction could yield many markers and regulators for other tissue-specific progeny types. We found that transcripts enriched in the progeny-associated X2 FACS gate were expressed in a variety of cell types and not necessarily in stem cell progeny. Although transcripts with unique tissue-specific and non-stem cell expression patterns were uncovered and appeared to be potential candidates for novel progenitor types, it is now clear that the epithelial lineage has the strongest bias in terms of sequencing numbers. In total, we describe 32 new markers for early and late epithelial progenitors. Combined with the revelation that zeta-neoblasts are the largest known lineage-restricted stem cell subclass in planarians, we conclude that epithelial progenitors are the predominant output of stem cells, most likely reflecting highest turnover needs as well as molecular complexity of this organ.\n\n### mex3-1 as a candidate mediator of asymmetric cell fate in planarians\n\nThrough RNAi screening of the 120 candidate progeny transcripts, we identified mex3-1 as a critical factor in cell fate decision-making. mex3-1 was required not only for all epithelial progenitor fates but also all other tested lineage-restricted stem cell progeny, and to restrict the expansion of the stem cell compartment. MEX3 is an RNA-binding translational repressor discovered in C. elegans with embryonic and post-embryonic developmental roles (Draper et al., 1996). MEX3 is a fundamental regulator of asymmetry, mediating one of the earliest steps of cell fate determination in C. elegans by restricting expression of the cell fate determinant pal-1 transcription factor to the posterior blastomere of the early embryo (Draper et al., 1996; Huang et al., 2002). In adult C. elegans, MEX3 participates in the maintenance of germline stem cells (GSCs) by promoting proliferation, and interestingly, is not required for GSCs to differentiate and undergo meiosis (Ariz et al., 2009). Four mex3 homologs (MexA-D) are present in vertebrates, which remain poorly characterized (Buchet-Poyau et al., 2007). Recent work on MEX3A in murine intestinal cell culture showed that the master intestinal differentiation factor Cdx2, one of the vertebrate homologs of pal-1, is a target of MEX3A translational inhibition, and furthermore, MEX3A overexpression increased levels of intestinal stem cell markers such as Bmi1 and Lgr5 (Pereira et al., 2013). Though the role of MEX3A in intestinal stem cell fate in vivo remains to be fully explored, these findings combined with our results in planarians suggest a conserved ancestral function for mex3 genes in cell fate choice.\n\nThe precise mechanisms by which mex3-1 exerts its effects in planarians are unresolved. Although both zfp-1 and mex3-1 are required for specification of epithelial-fated progeny, unlike zfp-1(RNAi) worms, mex3-1(RNAi) worms completely lose the ability to form any regenerative blastema. mex3-1 was further needed to prevent the expansion of the stem cell compartment, including sigma-, gamma-, and zeta-class neoblasts, which suggests that mex3-1 acts to mediate stem cell lineage asymmetry in the general stem cell pool and regulate all postmitotic lineages. As both C. elegans and vertebrate MEX3 proteins have been shown to be translational repressors, it is likely that this molecular function has been conserved in planarians. Thus, we propose a model of stem cell lineage progression with mex3-1 acting as a repressor of stem cell identity and self-renewal genes in postmitotic progenitors to promote differentiation (Figure 7D).\n\nDuring early C. elegans embryogenesis, the asymmetric distribution of both mex3 mRNA and protein underlies the asymmetric expression of pal-1 (Draper et al., 1996). While Smed-mex3-1 mRNA shows no such asymmetry at the current resolution of our tools in planarians, it is possible that asymmetric distribution or activation of MEX3-1 leads to the execution of its function in progeny only. An example of such a mechanism is Prospero in Drosophila neuroblasts, where it is transcribed and translated in stem cells and daughter cells, but is segregated to and functions in progeny in a classic example of intrinsic asymmetric cell division (Doe et al., 1991). Alternatively, MEX3-1 may have multiple cell type-specific roles and cell type-specific mRNA targets. No planarian homolog to the conserved MEX3 target Cdx2/pal-1 could be found in existing transcriptomes or genomic sequence (S\u00e1nchez Alvarado et al., 2003; Robb et al., 2008; Abril et al., 2010; Sandmann et al., 2011; Labbe et al., 2012; Onal et al., 2012; Resch et al., 2012; Solana et al., 2012; Fernandes et al., 2014). Therefore, elucidating the RNA targets of MEX3-1 will provide an opportunity to uncover novel RNA targets in other organisms and ASC systems.\n\n### Finding progenitors of other cell types\n\nNow that we have identified additional epithelial progenitor markers and progeny regulators, the question then becomes, what it is the best method to discover non-epithelial progenitors of other tissue types in planarians? With the evidence described in this study implicating mex3-1 as a regulator of multiple neoblast progeny for other tissues, transcriptional analysis of mex3-1(RNAi) animals may be a promising avenue to discover rare and novel progeny markers. For instance, comparing the wild-type X2 fraction with X2 cells isolated from mex3-1(RNAi) worms could provide insight into other cell types lost in this FACS gate due to specific cessation of differentiation, without confounding effects of irradiation or general ablation of the stem cell pool.\n\nIn addition to the assumption that differentiating progeny cells exist in the X2 fraction, it is clear that there are irradiation-sensitive transcripts and cells outside of the X1 and X2 FACS gates. At this juncture, isolating these populations from irradiation-insensitive cells is not achievable as there are no clear boundaries on where these cells would lie in FACS plots. Numerous transcripts, down-regulated after mex3-1 RNAi, were observed to belong to this WThighXlow category with little expression in the X1 or X2 fractions. The identification of one of these transcripts as a pharyngeal marker with expression in PIWI-1+ cells demonstrates that lineage-restricted progeny are present outside the X1 and X2 gates and merits the investment of future efforts toward screening further WThighXlow genes that are regulated by mex3-1 in order to uncover novel progenitors. This knowledge is necessary in order to achieve a comprehensive understanding of the asymmetries specific to ASC lineage organization. Due to the conserved role of MEX3 in regulating cell fate determination across multiple phyla, understanding how mex3-1 achieves lineage asymmetry in planarians will contribute to informing ASC biology and regeneration in other organisms.\n\n## Materials and methods\n\n### Deep sequencing\n\nWe previously performed RNAseq of the planarian X1, X2, and irradiation-insensitive compartments where the X2 cell fraction was sequenced to a depth of 206 million reads in two biological replicates (Labbe et al., 2012). Here, we performed an additional replicate by using flow cytometry to obtain cell populations as previously described (Hayashi et al., 2006; Pearson and S\u00e1nchez Alvarado, 2010). Approximately, 1 million X2 cells from 100 animals were isolated on a Becton\u2013Dickinson FACSaria over multiple sorts. Total RNA was purified and poly-A-selected cDNA libraries were prepped using the TruSeq kits from Illumina. This new X2 sample was multiplexed together with a new X1 and Irradiated control and each was sequenced to a depth of >63 million single-end 50 base pair reads on an Illumina HiSeq2500 with v4 chemistry. Raw sequence data were uploaded to NCBI GEO under accession number GSE68581. Each sample was aligned to the transcriptome under NCBI BioProject PRJNA215411 using Bowtie2 with no sequence trimming. Mapped reads per million reads (CPM) of each transcript was calculated. Note that kilobase-length of each transcript was not taken into account because in any expression ratio, the length scaling factor cancels out and no inter-transcript comparisons were performed. To ensure a well-defined statistic in the calculation of fold-change, pseudocounts of +1 were added to every numerator and denominator as a way to not bias differentially expressed genes toward lowly expressed transcripts (Klattenhoff et al., 2013). The transcripts listed in Supplementary files 1\u20134 can be found in the same transcriptome database. The heatmap in Figure 1C was created using the Partek Genomics Suite of software (www.partek.com) with the unsupervised hierarchical clustering algorithm: Pearson's Absolute Value Dissimilarity. Intact unirradiated control (WT) transcript levels were averaged from 12 replicates of unfed and control(RNAi) experiments and time points using over 700 million sequencing reads (Labbe et al., 2012; Solana et al., 2012; Currie and Pearson, 2013; Zhu and Pearson, 2013; Lin and Pearson, 2014).\n\n### Analysis of deep sequencing data\n\nIn order to validate the consistency of our previous and new deep sequencing replicates, Pearson correlations were performed with our own data as well as all previously published RNAseq relevant to the current study using CPM for each transcript with CPM <1000 (Figure 1\u2014figure supplement 1) (Labbe et al., 2012; Onal et al., 2012; Resch et al., 2012; Solana et al., 2012). The program DESeq was used to determine significantly enriched transcripts in the X2 (FDR < 0.01) or X1 (FDR < 0.001) cell fractions vs irradiated whole animals using the three biological replicates for each tissue type. MA plots, Pearson correlations, and log fold change plots were made using R.\n\n### Phylogenetics and cloning\n\nTranscripts identified by differential expression were cloned using forward and reverse primers into a double-stranded RNA expression vector as previously described (Rink et al., 2009). Riboprobes were made from PCR templates from the same vector (pT4P) (Pearson et al., 2009). The three MEX3 homologs in S. mediterranea were identified with tBLASTn searches of the planarian genome/transcriptomes using MEX3 protein sequences from C. elegans and mouse. Candidate planarian MEX3 homologs were validated by reciprocal BLASTx against the nr database (NCBI). The predicted proteins of the planarian MEX3 homologs were aligned using the program T-coffee along with MEX3 homologs from other species (Notredame et al., 2000). The program Geneious (www.geneious.com) was used to run a Bayesian phylogeny using the MrBayes plugin with the following settings: a WAG substitution model, 25% burnin, subsample frequency of 1000, 1 million replicates, and four heated chains (Ronquist and Huelsenbeck, 2003). The transcripts for mex3-1 and all new progeny markers from this manuscript are listed in Supplementary file 2.\n\n### Animal husbandry and RNAi\n\nAsexual S. mediterranea CIW4 strain was reared as previously described (S\u00e1nchez Alvarado et al., 2002). RNAi experiments were performed using previously described expression constructs and HT115 bacteria (Newmark et al., 2003). Briefly, bacteria were grown to an O.D. 600 of 0.8 and induced with 1 mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) for 2 hr. Bacteria were pelleted and mixed with liver paste at a ratio of 500 \u03bcl of liver per 100 ml of original culture volume. Bacterial pellets were thoroughly mixed into the liver paste and frozen as aliquots. The negative control RNAi was the unc22 sequence from C. elegans as previously described (Reddien et al., 2005a). For the screening of all genes in this study, RNAi food was fed to 7-day starved experimental worms every third day for five feedings. Subsequent functional analyses for mex3-1 were performed with one feed unless noted otherwise. Time points in figures denote the number of feeds for each gene as well as the number of days after the last feed. For example, 1fd12 corresponds to one RNAi feeding and 12 days after that feeding. Amputations were performed 6 days after the final feeding unless noted otherwise. All animals used for immunostaining were 3\u20134 mm in length and size-matched between experimental and control worms.\n\n### Immunolabeling, TUNEL, EdU, BrdU, irradiation, and WISH\n\nWISH, dFISH, and immunostaining were performed as previously described (Pearson et al., 2009; Lauter et al., 2011; Cowles et al., 2013; Currie and Pearson, 2013). Colorimetric WISH and fluorescent phospho-histone H3 (H3P) stains were imaged on a Leica M165 fluorescent dissecting microscope. The rabbit monoclonal antibody to H3ser10p from Millipore (04\u2013817) was used for all cell division assays (Newmark and S\u00e1nchez Alvarado, 2000). TUNEL was performed as previously described (Pellettieri and S\u00e1nchez Alvarado, 2007). Mouse anti-PIWI-1 (gift of Dr Jochen Rink [Wagner et al., 2011]) was used at 1:1000. H3ser10p and TUNEL were quantified using freely available ImageJ software (http://rsb.info.nih.gov/ij/). Significance was determined by a 2-tailed Student's t-test unless otherwise noted. All experiments were, at minimum, performed in triplicate with at least 10 worms per stain and per time point (i.e., n > 30). For irradiation experiments, planarians were exposed to 16.5 or 60 Gy of \u03b3-irradiation from a 137Cs source. F-ara-EdU was fed to worms in liver paste at a concentration of 0.05 mg/ml for a 7-day chase (fed at 1fd6) or 0.5 mg/ml for a 24-hr chase (fed at 1fd6 and 1fd9) and stained as previously described following the normal fixation for ISH (Pearson et al., 2009; Neef and Luedtke, 2011). BrdU was fed (at 1fd6) in liver paste at a concentration of 10 mg/ml and stained as previously described (van Wolfswinkel et al., 2014). Confocal images were acquired on a Leica DMIRE2 inverted fluorescence microscope with a Hamamatsu Back-Thinned EM-CCD camera and spinning disc confocal scan head, and stitched together for whole-animal images. Images were post-processed in Adobe Photoshop and figures assembled in Macromedia Freehand.\n",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "1930ac61-7749-403f-8229-cd91be87369c",
+      "submission_id": "c230bcfd-5b83-4a19-bc99-df0780c1d17d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07025.027](https://doi.org/10.7554/eLife.07025.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA mex3 homolog drives differentiation during planarian stem cell lineage development\u201d for consideration at eLife. Your article has been favorably evaluated by Fiona Watt (Senior editor), Marianne Bronner (Reviewing editor), and three reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors transcriptionally profiled a population of irradiation-sensitive G1/G0 cells in planarians (from the \u201cX2\u201d FACS gate) that is a mixture of cycling and immediately post-mitotic cells. Analysis of genes enriched in this population identified 32 new markers of postmitotic neoblast progeny differentiating into epidermal fates. Additionally, through RNAi screening of these genes, mex3-1 was identified as essential for differentiation into multiple planarian cell lineages (eye, neuronal lineages, and epithelium). Mex3-1 inhibition decreased numbers of post-mitotic progenitors cells and concomitantly increased numbers of proliferating neoblasts, including three lineages specified within that population, causing failure of regeneration and tissue homeostasis. RNA-seq from mex3-1(RNAi) animals confirmed that mex3-1 is a master regulator of genes expressed in post-mitotic neoblast progeny and also identified novel markers of differentiating cells in planarians. MEX3 proteins can repress translation to influence differentiation and asymmetric cell division. Still few molecules have been identified that control differentiation and cell cycle exit in planarians, and the identification of mex3-1 in particular suggests the essentiality of asymmetric cell division in forming progenitor populations.\n\nAlthough symmetric and asymmetric divisions have been predicted in this organism, this study provides the first molecular link to those processes in planarians. However, there are significant points that need to be addressed.\n\n1) The authors need to clarify the role of mex3 in cell cycle exit by determining the ratio of piwi(mRNA)+piwi(protein)+ vs. piwi(mRNA)-piwi(protein)+ cells after mex3 RNAi.\n\n2) They should address how mex3(RNAi) is distinct from RNAi of other factors required for neoblast differentiation (i.e. p53). In particular, does loss of mex3 result in eventual loss of the neoblasts like p53? In Figure 6D there is a \u223c3 fold drop in pH3+ cells between days 12 and 15. Is this due to depletion of the neoblast pool, similar to what happens with p53? What about at day 18? The authors should also assess p53 requirement in gut/neural progenitors to determine if mex3 is broader in its role.\n\n3) The authors need to provide further quantification of the neoblast results. The model that mex3 is promoting the differentiation/renewal balance is influenced from their data on neoblast numbers, but at present, the data are not sufficient to strongly make the case. The EdU quantification indicated that there are more S-phase cells in mex-3 RNAi animals, but this is a technically limited experiment because of patchy labeling. Where the counting was done in even an individual animal would yield very different results. Furthermore, the FACs quantification of cells greater than 2C (X1s) shows no clear difference or perhaps less in mex3 RNAi (Figure 4\u2013figure supplement 1B), and no increase in expansion of neoblasts, compared to the control, in the sublethal irradiation experiment is apparent. Figure 5C provides the strongest support, but no numbers are given, and it would be stronger with quantification from many animals and at multiple AP planes.\n\n4) Along the same lines, using the PIWI antibody (Figure 5D/6C) labels neoblasts and their descendants. Therefore, technically, stem cell subclasses are not shown. PIWI+ hnf4+ cells increase following mex3 RNAi, whereas ovo+ or coe+ PIWI+ cells decrease. How do these opposing results fit with the model? The authors should attempt to resolve quantitative impacts of mex3 RNAi on neoblast subclasses versus their non-dividing descendants using marker/piwi/PIWI labelings.\n\n5) Figures/data:\n\nFigure 1\u2013figure supplement 1: It is unclear whether the correlations were done on raw values or log-transformed values; if not log-transformed analyses, it should be plotted and analyzed this way to prevent overestimation of the correlation. Range/units on X and Y axes should be present. Graphs are overplotted, and might be better represented with 2D density plots. Red line is unclear; representing \u201ca Pearson correlation coefficient of 1\u201d is unclear. The correlation P values are unnecessary. RPM should be changed to CPM.\n\nFigure 1: Y axis states \u201cover Xins\u201d when the comparison is to whole worms and Xins has been used to refer to a FACs gate in the literature.\n\nIn the first paragraph of the subsection headed \u201cRNAseq analysis of the progeny-associated X2 FACS cell fraction\u201d: \u201cstem cell markers can be highly expressed in the X2 fraction (Figure 1A-B)\u201d \u2013 this is not shown in Figure 1 A/B.\n\nFigure1C: The colors are saturated, and it seems the range shown does not capture the range of the data. If they are setting a maximum/minimum for the graph that is below the range of the data this should be stated in the legend, or the shown range changed.\n\nFigure 1A/B: The \u201cLowess\u201d curve (Loess fit?) is not needed, and the authors are encouraged to remove it.\n\nFigure 1A/B: \u201cnew progeny markers\u201d is an awkward Figure label for these genes.\n\nFigure 1C legend: the description is poor \u2013 it is a heatmap, Z score range, etc.\n\nFigure 1\u2013figure supplement 2 is hard to read; trimming the end/uninformative part(s) would help focus on the region with similarity. Shown is not a \u201cMUSCLE alignment\u201d but a multiple sequence alignment done with MUSCLE. There is more than one shade of blue, which either represent similar or identical aa. The three rows of information below the alignment should be better described. Why not show all 24 in the alignment?\n\nFigure 2A, genes are divided into early and late, but a given late marker in principle could also have been present in early cells. This might be worth noting in the text.\n\nIn the first paragraph of the subsection headed \u201cNew progeny markers label either early or late progeny of the epithelial lineage\u201d the authors find that 5.4% of prog-1 cells expressed low levels of AGAT-1, and Eisenhoffer 2008 reported 44%. They refer to these populations as \u201ctwo mainly non-overlapping\u201d, which needs some clarification.\n\nFigure 3.\n\nPart A might be better as time following initiation of RNAi.\n\nPart E: what happens at longer time points post RNAi? How much expression is not irradiation sensitive?\n\nmex3 orthology: The tree lacks an outgroup(s) with a similar RNA-binding domain to that present in this protein family. Therefore, without outgroups, any non-mex3 family protein would give the same result as planarian MEX3 as presented in the tree in Figure 3\u2013figure supplement 1.\n\nFigure 4.\n\nC: there is a clear TUNEL effect, without clear explanation. It might be worth simply noting in the text that the explanation for this late rise in TUNEL+ cell number is unclear.\n\nC/D: Where counts were performed should be stated.\n\nThe X2s by FACs don't seem to be decreased following mex RNAi (Figure 4\u2013figure supplement 1), and yet there is a strong impact on prog-like+ cells by in situ. Is there an explanation? For example, is the fraction of X2s that are neoblasts (piwi+) increasing?\n\nFigure 5.\n\nB: This is a nice result clearly showing neoblast increases can occur in mex3 RNAi animals. The images are dark and hard to see in the present figure file.\n\nD: Using the PIWI antibody labels neoblasts and their descendants. Therefore, technically stem cell subclasses are not shown. I recommend having a simple cell count plot instead of showing ratios. The high variance of the data in the hnf4 and zfp1 counts, suggest the the p-value is a bit surprising, although without seeing the counts, that is hard to evaluate.\n\nFigure 6.\n\nA: There wasn't really a \u201cchase\u201d, it was a pulse + 7 days. The wording could be modified.\n\nC: See comments on Figure 5D. The PIWI ab here is less of a concern, if the wording is clear that these are neoblasts and/or descendants involved in tissue turnover. The ratio comment applies here as well. Number of animals counted should be noted.\n\nIs mex-3 expressed in the any/all of these three sets of cells?\n\nFigure 7.\n\nB: Are these indeed a similar class of cells studied in prior parts of the paper? (Several double-FISH tests would quickly confirm this). How do these look in the WT-high X-low data?\n\nC: numbers, rather than ratios would give reader a better understanding of how many cells were present/ counted. What fraction of these are PIWI+?\n\nWhat is the expression of the candidate pharynx progenitor marker in irradiated worms?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cA mex3 homolog is required for differentiation during planarian stem cell lineage development\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Fiona Watt (Senior editor), a Reviewing editor, and three reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) Reply to point #2: \u201cWe have included data demonstrating that mex3-1 is also expressed in chat+ neural progenitors (Figure 6\u2013Figure supplement 1)\u201d \u2013 this was done with PIWI1 antibody and therefore these cells are not necessarily progenitors; they could be newly differentiated cells. \u201cp53 knockdown does not significantly reduce ovo+ and chat+ progenitors\u201d \u2013 again, it was done with a PIWI1 antibody, and therefore those are not necessarily progenitors.\n\nThe wording should be addressed accordingly (or smedwi mRNA could be used).\n\nRelated to this, in the reply to major point 4: Would the authors\u2019 argument about hnf4 predict that smedwi (mRNA)+ coe+ cell would go up in frequency? This could in principle be tested to further support the proposed model.\n\n2) Figure 1\u2013figure supplement 1. Again, in this reviewer's view plots should be log transformed and correlation done on log-transformed values.\n\n3) Figure 1C. The response did not satisfactorily address the review comment. The legend states the z-score range shown, but if the data is not showing the actual z-score values, why not state what the actual range of the z-scores was in the data in the legend such that it is clear that some values were much lower/higher than the cutoffs on the range shown?\n\n4) MEX-3 orthology: The authors clarified their goal for the MEX3 phylogeny, which makes this tree of limited value; however, the answer leaves the evidence for MEX-3 orthology poorly described in the manuscript. Perhaps the authors can more explicitly describe in the methods the evidence that this is a MEX-3 ortholog (e.g., phylogenetics, unique domain architecture specific to this family, or lack of any other proteins with similarity near that present with the MEX-3 family in reciprocal genome searches).\n\n[Editors' note: final revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cA mex3 homolog is required for differentiation during planarian stem cell lineage development\u201d for further consideration at eLife. Your revised article has been evaluated by Fiona Watt (Senior editor), a Reviewing editor, and one of the original reviewers. The manuscript has been improved but there are still some differences in interpretation that we would ask you to address.\n\nReviewer #2:\n\nBelow is a discussion on comments regarding SMEDWI+ cells and the term \u201cprogenitor\u201d.\n\n1) Original Review: \u201cWe have included data demonstrating that mex3-1 is also expressed in chat+ neural progenitors (Figure 6\u2013Figure supplement 1)\u201d. This was done with PIWI1 antibody and therefore these cells are not necessarily progenitors; they could be newly differentiated cells.\n\nAuthor Comment: \u201cWe believe this is confusion in terminology. By \u2018progenitors\u2019 we do not mean an equivalent of dividing progenitors or transit amplifying cells from other systems, but instead imply a committed cell that has not yet fully differentiated and physically integrated into the terminal tissue\u2026\u201d\n\nReviewer Reply: Dividing or being transit amplifying is not the point of confusion. It is simple: a SMEDWI+ cell could be differentiated. SMEDWI+ cells can be fully integrated into tissues and express differentiated markers. For instance, Wagner et al. 2011: \u201cSMEDWI-1+ descendant cells expressed a choline acetyl-transferase ortholog, Smed-chat (Figure supplement 6); chat expression is widely conserved in cholinergic neurons (34). SMEDWI-1+; chat+ cells were enriched in brain regions and had neuronal morphology, and chat+ cells co-expressed additional neuronal markers (Figure supplement 6), indicating that SMEDWI-1+; chat+ cells are differentiating neurons\u201d.\n\nSimilarly, Scimone et al. 2011: SMEDWI+ cells can also be seen to co-express protonephridial differentiated cell markers (carbonic anhydrase and cubulin).\n\n2) Author Comment: \u201cTo try to minimize this confusion, we named most of our newly discovered transcripts in the \u2018postmitotic progeny\u2019 series. In this current revision, we have also tried to minimize the use of the word progenitor. So to directly address this comment: \u2018progenitors\u2019, \u2018stem cell progeny\u2019, and \u2018newly differentiating cells\u2019 are equivalent\u201d.\n\nReviewer Reply: \u201cnewly differentiated cells\u201d is what was written, but \u201cnewly differentiating\u201d and \u201cnewly differentiated\u201d are hard to really to distinguish regardless. The point is that calling something a neural progenitor, when it might be a cell with axons and differentiating or differentiated seems inaccurate.\n\n3) Author Comment: \u201cBecause PIWI-1 labels stem cells and immediate post-mitotic descendants, we consider \u2018progenitors\u2019 to be cells that are PIWI-1+[tissue-specific marker]+, to mark cells in the early stages of commitment\u201d.\n\nReviewer Reply: In this reviewer\u2019s view, this cannot be concluded (see above). According to available data, it is not possible to exclude, without additional data for a given tissue/cell type, the possible interpretation that any given SMEDWI+ cell is a differentiated cell.\n\n4) Author Comment: \u201cAs no permanent lineage tracing can yet be done in our system, it is impossible to know the terminal fates of individual cells and whether these piwi-1+ progenitors self-renew. We have attempted to clarify this in the text, and this rebuttal document will also help readers\u201d.\n\nReviewer Reply: The request was simply to be clear with wording in the instances when PIWI antibody is used only. There is strong evidence that these PIWI+ cells are neoblast descendants, either undifferentiated or newly differentiated. It can be useful as a tool used in this way; the authors should just be clear with wording, describing these cells as neoblast descendants rather than progenitors. Or, one could choose to be more explicit than \u201cneoblast descendant\u201d and state: neoblast, undifferentiated neoblast descendants, or newly differentiated/ing neoblast descendants. Or, if \u201cprogenitor\u201d was really desired, something along the lines of \u201cneoblast descendants, including undifferentiated progenitors and possibly newly differentiated cells\u201d.\n\n5) Original Review: \u201cp53 knockdown does not significantly reduce ovo+ and chat+ progenitors\u201d \u2013 again, it was done with a PIWI1 antibody, and therefore those are not necessarily progenitors. The wording should be addressed accordingly (or smedwi mRNA could be used).\n\nAuthor Comment: \u201cWe have clarified in the text our use of the term \u2018progenitor\u2019. We use the same progenitor term used in Lapan and Reddien (Plos Genetics 2011) and Lapan and Reddien (Cell Reports 2012) describing the sp6-9+ and ovo+ cells as eye progenitors, respectively. A similar terminology was used in the eLife manuscript by Adler, et al., 2014 regarding FoxA+ progenitors. Text changes can be found in the third paragraph of the Introduction and in the subsection headed \u2018mex3-1 is required for turnover of multiple tissues\u2019.\u201d\n\nReviewer Reply: In the case of the eye, cells outside of the eye (an epithelial optic cup and a neural ganglion) could be visualized and described as progenitors. A SMEDWI+ neuron in the eye would not considered a progenitor, but an eye cell \u2013 a similar such cell would be harder to identify in a less discrete tissue/cell population.\n",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "24d4eaa6-a835-44ce-a847-de4561f9f771",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C1",
+      "claim": "Neoblasts are adult stem cells (ASCs) in planarians that sustain cell replacement during homeostasis and regeneration of any missing tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Neoblasts are adult stem cells (ASCs) in planarians that sustain cell replacement during homeostasis and regeneration of any missing tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement about neoblasts supported by established scientific knowledge and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "8bfc4457-2c0e-496e-92f6-12bba16ebeb9",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C2",
+      "claim": "The X1 population is >90% piwi-1+.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have shown that the X1 population is >90% piwi-1+, and this gate has been used as the stem cell fraction in comparative transcriptomic studies (Reddien et al., 2005b; Eisenhoffer et al., 2008; Abril et al., 2010; Sandmann et al., 2011; Labbe et al., 2012; Onal et al., 2012; Resch et al., 2012; Solana et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies that characterized the X1 population.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "ec2f253e-a53f-41f3-8a1c-1d97aa40791c",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C3",
+      "claim": "The X2 cell population is only 10\u201320% piwi-1+.",
+      "claim_type": "EXPLICIT",
+      "source": "The X2 cell population is only 10\u201320% piwi-1+ and is thought to be enriched with immediate postmitotic progeny of neoblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an established fact with supporting citations in the context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "02c9d44e-ba9e-449f-aeca-fce1df6dea3a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C4",
+      "claim": "DESeq analysis identified 2839 X1 and 1512 X2 transcripts with a p-value \u2264 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 2839 X1 and 1512 X2 transcripts with a p-value \u2264 0.01 (Figure 1A,B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly supported by the computational analysis performed in this study and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "9d76d827-5233-4532-b3b7-2b9bff487a6f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C5",
+      "claim": "X1 and X2 cells shared the majority of their transcriptional profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that X1 and X2 cells shared the majority of their transcriptional profiles (Figure 1C), and bona fide progeny markers can be highly expressed in the X1 fraction, while bona fide stem cell markers can be highly expressed in the X2 fraction (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the hierarchical clustering analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "27dcea72-e1ab-4d41-a26e-6c94c7ee6682",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C6",
+      "claim": "32 new markers distinguish two main epithelial progenitor populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 32 new markers distinguishing two main epithelial progenitor populations and a planarian homolog to the MEX3 RNA-binding protein (Smed-mex3-1) as a key regulator of lineage progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by WISH and dFISH experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "15e32672-5c0e-4003-9778-621496ab63f4",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C7",
+      "claim": "mex3-1 was required for generating differentiated cells of multiple lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "mex3-1 was required for generating differentiated cells of multiple lineages, while restricting the size of the stem cell compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNAi experiments showing loss of multiple lineage markers after mex3-1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e3e4370c-ca83-46be-b73c-99c6412fca3e",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C8",
+      "claim": "mex3-1 restricts the size of the stem cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "mex3-1 was required for generating differentiated cells of multiple lineages, while restricting the size of the stem cell compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by quantification showing expansion of piwi-1+ cells after mex3-1 RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "1d1de233-3451-429f-bfc7-a3324fad6b3b",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C9",
+      "claim": "prog-1 and prog-2 represent members of a larger gene family of unknown function expressed throughout the epithelial lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, prog-1 and prog-2 represent members of a larger gene family of unknown function, expressed throughout this epithelial lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment analysis showing at least 24 distinct family members.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "b4e970f8-9406-4c14-bea4-7809b0e19f17",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C10",
+      "claim": "Knockdown of mex3-1 completely abolishes regenerative ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of mex3-1 completely abolishes regenerative ability and halts the production of prog-1/2+ and AGAT-1+ postmitotic progeny populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by regeneration assays and WISH analysis after mex3-1 RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "92c54487-489b-4afe-a351-d931531779b7",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C11",
+      "claim": "mex3-1 knockdown halts the production of prog-1/2+ and AGAT-1+ postmitotic progeny populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of mex3-1 completely abolishes regenerative ability and halts the production of prog-1/2+ and AGAT-1+ postmitotic progeny populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by WISH analysis demonstrating loss of these markers after mex3-1 RNAi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "a9f4c89a-3e10-4df5-9839-97266752d1d0",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C12",
+      "claim": "piwi-1+ stem cells concomitantly increase in number after mex3-1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "piwi-1+ stem cells concomitantly increase in number, an increase that was observed in all three neoblast subclasses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified by counting piwi-1+ cells in cross sections and by subclass markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "d954b968-1f07-41af-8692-2539328aa0cd",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C13",
+      "claim": "The increase in piwi-1+ stem cells after mex3-1 knockdown was observed in all three neoblast subclasses.",
+      "claim_type": "EXPLICIT",
+      "source": "piwi-1+ stem cells concomitantly increase in number, an increase that was observed in all three neoblast subclasses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by quantification of sigma, zeta, and gamma neoblast markers shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "2da35dcc-d44e-4bf0-9f0f-1338164ca6c1",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C14",
+      "claim": "mex3-1(RNAi) worms have impaired contribution to tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, mex3-1(RNAi) worms have impaired contribution to tissue turnover, as evidenced by drastically reduced production of lineage-restricted neoblast descendants and diminished cell addition towards multiple tissue types, in addition to the epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EdU and BrdU labeling experiments showing reduced incorporation into differentiated tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "53ec95f9-7209-4341-a9fd-779f0479b0c0",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C15",
+      "claim": "mex3-1 functions to maintain asymmetry in stem cell lineage progression by promoting postmitotic fates and suppressing self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mex3-1 functions to maintain asymmetry in stem cell lineage progression by promoting postmitotic fates and suppressing self-renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the combined data showing loss of progeny and expansion of stem cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "448126e2-44a0-40a9-a519-c200d9571745",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C16",
+      "claim": "The predicted proteins encoded by prog-1 and prog-2 do not have clear homology to genes in other animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the predicted proteins encoded by prog-1 and prog-2 do not have clear homology to genes in other animals, including the genomes of other sequenced flatworms (Echinococcus multilocularis, Schistosoma mansoni, Macrostomum lignano\u2014www.macgenome.org) (Berriman et al., 2009; Zheng et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on BLAST searches against other genomes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "44a9713f-c4be-468f-b8f4-0d438ba683a5",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C17",
+      "claim": "The PROG family consists of at least 24 distinct members across multiple transcriptomes in S. mediterranea.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that they had low similarity to each other and represented a family of at least 24 distinct members across multiple transcriptomes in S. mediterranea, 15 of which were represented in the top 100 X2-enriched gene set (Sandmann et al., 2011; Solana et al., 2012; Currie and Pearson, 2013; Vogg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis across multiple transcriptome databases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "706a5cdb-bbcc-4305-b4bd-993fa53bc2a9",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C18",
+      "claim": "The only motif detected in PROG family proteins was a signal sequence at the N-terminal end, suggesting that these proteins are secreted.",
+      "claim_type": "EXPLICIT",
+      "source": "The only motif that could be detected was a signal sequence at the N-terminal end of the predicted proteins, suggesting that these proteins are secreted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on protein domain prediction analysis using SMART software.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "9da8c779-add0-4822-856a-f9d0b6f93f6c",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C19",
+      "claim": "40/120 transcripts were either not detectable or not specific by WISH.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 40/120 transcripts were either not detectable or not specific, and the remaining 80/120 genes could be binned into one of four categories (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH analysis of candidate genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "1c962471-3a5b-4122-a0d8-ff13ea0bf1f6",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C20",
+      "claim": "13/120 genes showed most intense expression in the bi-lobed brain and nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "One category (13/120) contained genes with the most intense expression in the bi-lobed brain and nervous system, with low levels of expression elsewhere in the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on WISH expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "6ac93254-c0e2-4b43-bfbd-b36a06f6fbcf",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C21",
+      "claim": "18/120 genes exhibited a predominantly stem cell-like expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "A second group of genes (18/120) exhibited a predominantly stem cell-like expression pattern, with or without brain expression, which was confirmed by high expression in the X1 cell fraction (Figure 2A, Figure 2\u2014figure supplement 1A, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH patterns and RNAseq data showing X1 enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "a0458682-ff34-4459-91ba-9cb3ac91cf3f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C22",
+      "claim": "17/120 genes were expressed in a variety of distinct patterns including the gut, pharynx, peri-pharyngeal region, and neck.",
+      "claim_type": "EXPLICIT",
+      "source": "A third subset of genes was expressed in a variety of distinct patterns including the gut, pharynx, peri-pharyngeal region, and neck (17/120) (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "9b4ec19b-83f4-4ac5-b068-c29c77cc5ba2",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C23",
+      "claim": "32/120 genes exhibited an expression pattern highly similar to prog-1, prog-2, and AGAT-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the fourth and largest group (32/120) consisted of genes with an expression pattern highly similar to those of the known early and late progeny markers prog-1, prog-2, and AGAT-1, which are sub-epithelial across the entire animal with expression anterior to the photoreceptors (Figure 2A, Figure 2\u2014figure supplement 2) (Eisenhoffer et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH expression patterns compared to known markers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "a52c1b3e-30c3-4fb9-82ad-95ef60bc155a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C24",
+      "claim": "13/32 prog-like transcripts showed similar kinetics of down-regulation as prog-1 and prog-2, being almost completely lost by 48 hr post-irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 13/32 transcripts showed similar kinetics of down-regulation as the early progeny markers prog-1 and prog-2 and were almost completely lost by 48 hr post-irradiation (Figure 2A, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on time-course WISH analysis after irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "c46be042-1cf8-4f51-91d8-b102cb16d74c",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C25",
+      "claim": "19/32 prog-like transcripts showed the majority of loss beyond 48 hr post-irradiation, consistent with being late progeny markers.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 19/32 transcripts showed the majority of loss beyond 48 hr post-irradiation, consistent with being late progeny markers (Figure 2A, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on time-course WISH analysis after irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "f8b6815c-5375-4d62-83e8-d5b8ca3a117f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C26",
+      "claim": "All WThighXlow genes grouped as late progeny and were the only genes with detectable expression at 7 days post-irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all WThighXlow genes grouped as late progeny, and moreover, were the only genes with detectable expression at 7 days post-irradiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on irradiation time-course WISH analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "99f7769d-c5b8-47d9-884a-b47417ea16dd",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C27",
+      "claim": "7.2% \u00b1 2.1 of prog-1+ cells were piwi-1+.",
+      "claim_type": "EXPLICIT",
+      "source": "Congruent with previous studies, we found a small amount of overlap between piwi-1 with prog-1, and minimal with AGAT-1: 7.2% \u00b1 2.1 of prog-1+ cells were piwi-1+, while merely 0.29% \u00b1 0.50 of AGAT-1+ cells were piwi-1+ (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on dFISH quantification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "4c5dffa7-e72d-4c6d-8b42-1ed1d92a4c30",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C28",
+      "claim": "0.29% \u00b1 0.50 of AGAT-1+ cells were piwi-1+.",
+      "claim_type": "EXPLICIT",
+      "source": "Congruent with previous studies, we found a small amount of overlap between piwi-1 with prog-1, and minimal with AGAT-1: 7.2% \u00b1 2.1 of prog-1+ cells were piwi-1+, while merely 0.29% \u00b1 0.50 of AGAT-1+ cells were piwi-1+ (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on dFISH quantification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "a29455e0-7efc-4602-a472-1c742c9bb05f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C29",
+      "claim": "Only 5.4% \u00b1 2.4 of prog-1+ cells co-expressed low levels of AGAT-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to a previous study that found nearly 45% overlap between the progeny populations (Eisenhoffer et al., 2008), we found that only 5.4% \u00b1 2.4 of prog-1+ cells co-expressed low levels of AGAT-1, while 5.2% \u00b1 3.2 of AGAT-1+ cells had prog-1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on dFISH quantification experiments, contrasting with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "f1a10918-e53c-466f-a729-7c22c3873718",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C30",
+      "claim": "5.2% \u00b1 3.2 of AGAT-1+ cells had prog-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to a previous study that found nearly 45% overlap between the progeny populations (Eisenhoffer et al., 2008), we found that only 5.4% \u00b1 2.4 of prog-1+ cells co-expressed low levels of AGAT-1, while 5.2% \u00b1 3.2 of AGAT-1+ cells had prog-1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on dFISH quantification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "7f2a8f54-1f3b-4772-baa1-aead77173c27",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C31",
+      "claim": "17.8% \u00b1 12.2 of prog-1+ cells were PIWI-1+.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of these data, we found that 17.8% \u00b1 12.2 of prog-1+ cells to be PIWI-1+, while 1.6% \u00b1 1.2 of AGAT-1+ cells had detectable PIWI-1 expression (Figure 2B, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dFISH with PIWI-1 immunolabeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "0edd552e-708a-4173-b729-84af0e61a587",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C32",
+      "claim": "1.6% \u00b1 1.2 of AGAT-1+ cells had detectable PIWI-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of these data, we found that 17.8% \u00b1 12.2 of prog-1+ cells to be PIWI-1+, while 1.6% \u00b1 1.2 of AGAT-1+ cells had detectable PIWI-1 expression (Figure 2B, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dFISH with PIWI-1 immunolabeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "69cdc842-a6cb-4dbe-a169-13e0d3704994",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C33",
+      "claim": "Almost all newly identified late progeny transcripts examined exhibited substantial co-expression with AGAT-1, with overlap ranging from 100% with prog-1-7 to 55.5% with prog-1-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all newly identified late progeny transcripts examined were found to exhibit substantial co-expression with AGAT-1, with overlap ranging from 100% with prog-1-7 to 55.5% with prog-1-4 (Figure 2\u2014figure supplement 3, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dFISH co-localization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "302df05a-0c06-49d2-bfbc-020a9689fca1",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C34",
+      "claim": "Every new epithelial progenitor marker assessed was down-regulated after zfp-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that every new epithelial progenitor marker assessed was down-regulated after zfp-1 RNAi, confirming that these genes were indeed expressed in epithelial progenitors (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH analysis in zfp-1 RNAi animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "7223c040-4bb6-49bd-9c5e-bec76cda59f3",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C35",
+      "claim": "RNAi against prog-1 and prog-2 separately or together did not yield any detectable phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous data, RNAi against prog-1 and prog-2 separately or together did not yield any detectable phenotype (Eisenhoffer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNAi screening experiments, consistent with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "f8dc85fc-8656-4910-9c1e-3cd6d2860226",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C36",
+      "claim": "None of the new epithelial progenitor markers yielded phenotypes upon knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, none of the new epithelial progenitor markers yielded phenotypes upon knockdown either, suggestive of considerable functional redundancy among these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNAi screening experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e7fcb593-c5f7-4988-b7f4-8558f49dfca5",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C37",
+      "claim": "mex3-1(RNAi) was completely penetrant and lethal, resulting in ventral curling, head regression, and dorsal lesioning during homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "mex3-1(RNAi) was completely penetrant and lethal, resulting in ventral curling, head regression, and dorsal lesioning during homeostasis, as well as loss of regenerative ability after amputation (Figure 3A\u2013C), indicative of epithelial homeostasis defects as well as overall stem cell impairment (Bardeen and Baetjer, 1904; Reddien et al., 2005a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on phenotypic observations of mex3-1 RNAi animals.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "ed86cdc2-609e-4dfc-aa01-15bad4ba4121",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C38",
+      "claim": "mex3-1(RNAi) animals lost regenerative ability after amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "mex3-1(RNAi) was completely penetrant and lethal, resulting in ventral curling, head regression, and dorsal lesioning during homeostasis, as well as loss of regenerative ability after amputation (Figure 3A\u2013C), indicative of epithelial homeostasis defects as well as overall stem cell impairment (Bardeen and Baetjer, 1904; Reddien et al., 2005a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on regeneration assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "9160cbae-d94b-43ab-a480-2f5e7c59fea2",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C39",
+      "claim": "Two other MEX3 homologs in S. mediterranea (mex3-2 and mex3-3) were neither irradiation-sensitive nor produced observable phenotypes after knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Using reciprocal BLAST, we identified two other MEX3 homologs in S. mediterranea (mex3-2 and mex3-3, transcripts SmedASXL_000637 and SmedASXL_01505, respectively), which both contained two KH RNA-binding domains and had top reciprocal BLAST hits in mouse, fly, and C. elegans. These additional MEX3 homologs were neither irradiation-sensitive nor produced observable phenotypes after knockdown and thus not investigated further (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNAseq data and RNAi experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "dec08971-fc2d-4e71-8dd0-e815e0cedb3a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C40",
+      "claim": "mex3-1 showed >fivefold enrichment in the X2 fraction over irradiated worms but also exhibited significant expression in the X1 stem cell fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "By RNAseq, mex3-1 showed >fivefold enrichment in the X2 fraction over irradiated worms but also exhibited significant expression in the X1 stem cell fraction (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNAseq quantification shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "1cce461c-9382-4cd8-9b1d-d39cb463f26f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C41",
+      "claim": "mex3-1 was widely expressed in stem cells, early progeny, and late progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of mex3-1 using dFISH with lineage markers confirmed that mex3-1 was widely expressed in stem cells, early progeny, and late progeny (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dFISH co-localization analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "78727fda-95ef-4683-b49d-cc3786761692",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C42",
+      "claim": "Knockdown of mex3-1 leads to a rapid decline of the two progeny populations but not of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of mex3-1 leads to a rapid decline of the two progeny populations but not of stem cells (Figure 4A, Figure 4\u2014figure supplement 1A), with the majority of progeny gene expression lost by 6 days after RNAi (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH time-course analysis shown in Figure 4A and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "ec09c409-8aee-4ae8-b0c0-8708c60de008",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C43",
+      "claim": "The majority of progeny gene expression was lost by 6 days after mex3-1 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of mex3-1 leads to a rapid decline of the two progeny populations but not of stem cells (Figure 4A, Figure 4\u2014figure supplement 1A), with the majority of progeny gene expression lost by 6 days after RNAi (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on detailed time-course WISH analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "f759feb0-ae7c-47f4-9684-c8b0b59ec64a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C44",
+      "claim": "mex3-1(RNAi) animals had comparable levels of cell death to control worms up until 9 days after RNAi, but significantly higher levels from 12 days and onward.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of TUNEL showed that mex3-1(RNAi) animals had comparable levels of cell death to control worms up until 9 days after RNAi, but significantly higher levels from 12 days and onward (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on TUNEL quantification shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "d7c2f242-0040-4f42-8763-82341b436429",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C45",
+      "claim": "mex3-1(RNAi) worms showed significantly increased levels of proliferation at every time point examined.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significantly increased levels of proliferation in mex3-1(RNAi) worms at every time point examined (Figure 4D), which suggested that stem cell division was not impeded by mex3-1 knockdown.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on H3P immunolabeling quantification shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "c236c651-1a22-40ca-aa12-f540f0fa1eec",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C46",
+      "claim": "Worms pulsed with F-ara-EdU at 6 or 9 days after mex3-1 RNAi and fixed 24 hr later showed significantly increased numbers of total EdU-labeled cells compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms pulsed at either 6 or 9 days after RNAi and fixed 24 hr later showed significantly increased numbers of total EdU-labeled cells in mex3-1(RNAi) animals compared to controls (Figure 5A), demonstrating that during phenotypic progression, a greater number of cells were entering the cell cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on EdU labeling experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "f9d8299e-f56e-4ab3-a187-f8a48d3ae0b0",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C47",
+      "claim": "FACS profiles of mex3-1(RNAi) animals at day 9 revealed relatively normal proportions of cells in both the X1 and X2 gates.",
+      "claim_type": "EXPLICIT",
+      "source": "FACS profiles of mex3-1(RNAi) animals at day 9 revealed relatively normal proportions of cells in both the X1 and X2 gates (Figure 4\u2014figure supplement 1C), further evidence that stem cells were progressing through the cell cycle and not arrested at 4C DNA in the X1 gate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on FACS analysis shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "3e187974-6046-4a69-8c6d-3dc1f7fe29de",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C48",
+      "claim": "Sublethally irradiated mex3-1(RNAi) worms expanded piwi-1+ stem cell numbers over time but produced disproportionately fewer prog-1+ progeny than control worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Sublethally irradiated mex3-1(RNAi) worms expanded piwi-1+ stem cell numbers over time but produced disproportionately fewer prog-1+ progeny than control worms (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on sublethal irradiation experiments and quantification shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "f677851b-7ee6-4bea-b906-93a6c98ae546",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C49",
+      "claim": "By 6 days after mex3-1 RNAi, there were highly significant increases in the number of piwi-1+ stem cells compared to controls, which rose to a 50% increase by day 12.",
+      "claim_type": "EXPLICIT",
+      "source": "By 6 days after RNAi, we observed highly significant increases in the number of piwi-1+ stem cells in mex3-1(RNAi) animals compared to controls, which rose to a 50% increase by day 12 (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on quantification of piwi-1+ cells in cross sections shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "cb0a0c65-88f2-43a6-9186-783b0a6cfd24",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C50",
+      "claim": "All three neoblast subclasses (zeta, sigma, gamma) were significantly increased by approximately 50% in mex3-1(RNAi) animals at 12 days after RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment at 12 days after RNAi revealed that all three subclasses were significantly increased by approximately 50% in mex3-1(RNAi) animals compared to controls (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on quantification of subclass markers shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "14bf08d0-043f-4966-a6e4-d0ab6d4f771f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C51",
+      "claim": "7 days following EdU administration, numerous EdU+ cells were present in the epithelium of control(RNAi) worms, but virtually none had been incorporated into the epithelium in mex3-1(RNAi) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "7 days following EdU administration, numerous EdU+ cells were present in the epithelium of control(RNAi) worms, but virtually none had been incorporated into the epithelium in mex3-1(RNAi) animals (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on EdU chase experiments shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e94b649b-e896-480d-b905-7c307b76c1d2",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C52",
+      "claim": "Following amputation, mex3-1(RNAi) worms failed to re-establish the expression of epithelial genes at wounding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, following amputation, mex3-1(RNAi) worms failed to re-establish the expression of epithelial genes at wounding sites, demonstrating that during both homeostasis and regeneration, mex3-1 is required for specification and differentiation of epithelial cell types (van Wolfswinkel et al., 2014) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dFISH analysis of regenerating blastemas shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "c6bc7fa1-ca27-4428-b49a-7a56dc7a1e78",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C53",
+      "claim": "Quantification of lineage-restricted neoblast progeny in intact mex3-1(RNAi) worms 12 days after RNAi showed significant reductions in all examined cell types (chat, coe, ovo, FoxA, six1/2-2).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of lineage-restricted neoblast progeny in intact mex3-1(RNAi) worms 12 days after RNAi showed significant reductions in all examined cell types (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on quantification of PIWI-1+ cells co-expressing lineage markers shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "65892002-1c97-408a-a9d5-5775704462c5",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C54",
+      "claim": "Virtually all chat+PIWI-1+ cells expressed mex3-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that virtually all chat+PIWI-1+ cells expressed mex3-1 (Figure 6\u2014figure supplement 1A), suggesting a direct role for mex3-1 in regulating differentiation outside the epithelial lineage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on triple-label dFISH shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "9e565311-b46b-4410-a37e-bab7a90a2b6d",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C55",
+      "claim": "5 days following labeling with BrdU, the entry of new cells into brain, intestine, and pharynx was significantly decreased in mex3-1(RNAi) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordant with decreased production of lineage-restricted neoblast progeny, we also observed that 5 days following labeling with BrdU, the entry of new cells into brain, intestine, and pharynx was significantly decreased in mex3-1(RNAi) animals (Figure 6E, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on BrdU chase experiments shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "4e0b873f-08b0-4e8b-958a-8b837f67f0ff",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C56",
+      "claim": "Knockdown of p53 did not alter the numbers of PIWI-1+ovo+ eye- or PIWI-1+chat+ brain-specified neoblast progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knockdown of p53 did not alter the numbers of PIWI-1+ovo+ eye- or PIWI-1+chat+ brain-specified neoblast progeny (Figure 6\u2014figure supplement 2), demonstrating a broader role for mex3-1 in differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on quantification in p53 RNAi animals shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "8b4518b9-a022-44ff-9b04-d8d2fa9824bf",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C57",
+      "claim": "mex3-1 RNAi resulted in a significant increase in the number of piwi-1+PIWI-1+ cells and simultaneous decrease in piwi-1\u2212PIWI-1+ cells compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mex3-1 RNAi resulted in a significant increase in the number of piwi-1+PIWI-1+ cells and simultaneous decrease in piwi-1\u2212PIWI-1+ cells compared to controls (Figure 6F), supporting a general reduction in the ability of stem cells to progress to a postmitotic state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on quantification of piwi-1 mRNA and PIWI-1 protein co-expression shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "d8e842fd-cad1-48a1-a87b-676d8b50dacd",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C58",
+      "claim": "13/59 known stem cell-specific transcripts were significantly upregulated upon knockdown of mex3-1 (p < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our data demonstrating hyper-proliferation and expansion of the entire stem cell compartment after mex3-1 knockdown, 13/59 known stem cell-specific transcripts were significantly upregulated upon knockdown of mex3-1 (p < 0.01, Figure 7\u2014figure supplement 1A, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNAseq analysis of mex3-1 RNAi animals shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "0baeb097-b409-47da-84ae-8b7b630b2129",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C59",
+      "claim": "An approximately 1.5-fold increase in soxP-1, zfp-1, and piwi-1 transcripts was observed in mex3-1(RNAi) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also observed an approximately 1.5-fold increase in soxP-1, zfp-1, and piwi-1 transcripts in mex3-1(RNAi) animals (Figure 7\u2014figure supplement 1A; Supplementary file 4), concordant with the increase in stem cell subclasses quantified by cell counting (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNAseq data, consistent with cell counting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "27af96da-fc95-48ec-857b-8d5f9268e21e",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C60",
+      "claim": "All but two of the new early and late progeny markers were severely down-regulated in the RNAseq data set for mex3-1(RNAi) animals compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated from the effects of mex3-1(RNAi) on the loss of all epithelial progenitor markers by WISH analyses, all but two of our new early and late progeny markers were severely down-regulated in the RNAseq data set for mex3-1(RNAi) animals compared to controls (Figure 7A; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNAseq analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "3b0546f4-fa3b-4a3e-a5d0-8b867e3eb7a9",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C61",
+      "claim": "The two transcripts that did not appreciably change after mex3-1 RNAi (sox9-1 and RPC-2) have very high X1 expression in addition to labeling epithelial progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The two transcripts that did not appreciably change (sox9-1 and RPC-2) have very high X1 expression in addition to labeling epithelial progenitors, which was not expected to change in mex3-1 RNAi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNAseq data and expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "bd303119-961e-4536-80f0-1f4e3a8b9038",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C62",
+      "claim": "20/21 down-regulated and uncharacterized transcripts produced a prog-like pattern in control worms and exhibited severely reduced expression in mex3-1(RNAi) worms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 20/21 transcripts produced a prog-like pattern in control worms and exhibited severely reduced expression in mex3-1(RNAi) worms, as anticipated from RNAseq (Figure 7B, Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH validation of RNAseq candidates shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "a914357e-174b-4ec3-addb-f1b762f549b8",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C63",
+      "claim": "SmedASXL_059179 was highly expressed near the proximal end of the pharynx, throughout the pharynx proper, and was similarly dependent on mex3-1 for its expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining transcript, SmedASXL_059179, was highly expressed near the proximal end of the pharynx, throughout the pharynx proper, and was similarly dependent on mex3-1 for its expression (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on WISH analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "cb396b10-050c-420b-b168-f89ac35fb59a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C64",
+      "claim": "PIWI-1+SmedASXL_059179+ cells were observed near the proximal base of the pharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted that SmedASXL_059179+ cells may represent a pharyngeal progenitor cell type, and indeed, we observed PIWI-1+SmedASXL_059179+ cells near the proximal base of the pharynx (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dFISH with PIWI-1 immunolabeling shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "db1df18b-cb28-4d4a-8a67-26ac2724b3b8",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C65",
+      "claim": "RNAi against SmedASXL_059179 did not result in apparent perturbations to pharynx function during homeostasis or regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no regulatory roles were uncovered for this gene, as RNAi against SmedASXL_059179 did not result in apparent perturbations to pharynx function during homeostasis or regeneration (Figure 7\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on RNAi experiments shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "09d861be-297d-4b29-864b-b24f0c9cceda",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C66",
+      "claim": "Epithelial progenitors are the predominant output of stem cells, most likely reflecting highest turnover needs as well as molecular complexity of this organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the revelation that zeta-neoblasts are the largest known lineage-restricted stem cell subclass in planarians, we conclude that epithelial progenitors are the predominant output of stem cells, most likely reflecting highest turnover needs as well as molecular complexity of this organ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the preponderance of epithelial markers found in the X2 fraction and known biology.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "41382033-eafc-4a21-b0e5-5db81d2a2d97",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C67",
+      "claim": "MEX3 is an RNA-binding translational repressor discovered in C. elegans with embryonic and post-embryonic developmental roles.",
+      "claim_type": "EXPLICIT",
+      "source": "MEX3 is an RNA-binding translational repressor discovered in C. elegans with embryonic and post-embryonic developmental roles (Draper et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "82f125d6-f4f6-4add-ab67-9e9ce1c4a1df",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C68",
+      "claim": "MEX3 is a fundamental regulator of asymmetry in C. elegans, mediating one of the earliest steps of cell fate determination by restricting expression of the cell fate determinant pal-1 transcription factor to the posterior blastomere of the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "MEX3 is a fundamental regulator of asymmetry, mediating one of the earliest steps of cell fate determination in C. elegans by restricting expression of the cell fate determinant pal-1 transcription factor to the posterior blastomere of the early embryo (Draper et al., 1996; Huang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "5302228e-c0c5-4656-829b-9509752dbd52",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C69",
+      "claim": "In adult C. elegans, MEX3 participates in the maintenance of germline stem cells (GSCs) by promoting proliferation, and is not required for GSCs to differentiate and undergo meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult C. elegans, MEX3 participates in the maintenance of germline stem cells (GSCs) by promoting proliferation, and interestingly, is not required for GSCs to differentiate and undergo meiosis (Ariz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "51b1a2cf-126e-413d-8aed-9a05d32a8444",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C70",
+      "claim": "MEX3A overexpression increased levels of intestinal stem cell markers such as Bmi1 and Lgr5 in murine intestinal cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work on MEX3A in murine intestinal cell culture showed that the master intestinal differentiation factor Cdx2, one of the vertebrate homologs of pal-1, is a target of MEX3A translational inhibition, and furthermore, MEX3A overexpression increased levels of intestinal stem cell markers such as Bmi1 and Lgr5 (Pereira et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "6c9241c9-fef1-4b2e-88da-cbf65f0bce2e",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C71",
+      "claim": "The findings in planarians combined with results in C. elegans and vertebrates suggest a conserved ancestral function for mex3 genes in cell fate choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the role of MEX3A in intestinal stem cell fate in vivo remains to be fully explored, these findings combined with our results in planarians suggest a conserved ancestral function for mex3 genes in cell fate choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparative analysis across species.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "21822401-30d1-487f-89f4-384f5fb26833",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C72",
+      "claim": "Unlike zfp-1(RNAi) worms, mex3-1(RNAi) worms completely lose the ability to form any regenerative blastema.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both zfp-1 and mex3-1 are required for specification of epithelial-fated progeny, unlike zfp-1(RNAi) worms, mex3-1(RNAi) worms completely lose the ability to form any regenerative blastema.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of regeneration phenotypes between the two RNAi conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "3ccfdf85-eafd-468e-8174-4b7ec9669c91",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C73",
+      "claim": "mex3-1 acts to mediate stem cell lineage asymmetry in the general stem cell pool and regulate all postmitotic lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "mex3-1 was further needed to prevent the expansion of the stem cell compartment, including sigma-, gamma-, and zeta-class neoblasts, which suggests that mex3-1 acts to mediate stem cell lineage asymmetry in the general stem cell pool and regulate all postmitotic lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the broad effects observed across all neoblast subclasses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "636f4dea-8697-4821-953b-3848a6ae9f85",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C74",
+      "claim": "Both C. elegans and vertebrate MEX3 proteins have been shown to be translational repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "As both C. elegans and vertebrate MEX3 proteins have been shown to be translational repressors, it is likely that this molecular function has been conserved in planarians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "21884166-b711-4116-88ed-e43c65995350",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C75",
+      "claim": "mex3-1 acts as a repressor of stem cell identity and self-renewal genes in postmitotic progenitors to promote differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose a model of stem cell lineage progression with mex3-1 acting as a repressor of stem cell identity and self-renewal genes in postmitotic progenitors to promote differentiation (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the data and known MEX3 function.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e8048da6-4e59-4414-becd-86448b653d07",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C76",
+      "claim": "No planarian homolog to the conserved MEX3 target Cdx2/pal-1 could be found in existing transcriptomes or genomic sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "No planarian homolog to the conserved MEX3 target Cdx2/pal-1 could be found in existing transcriptomes or genomic sequence (S\u00e1nchez Alvarado et al., 2003; Robb et al., 2008; Abril et al., 2010; Sandmann et al., 2011; Labbe et al., 2012; Onal et al., 2012; Resch et al., 2012; Solana et al., 2012; Fernandes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on BLAST searches against planarian sequence databases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "05a9c6a1-3bdc-44ec-aee8-4cb5d9f5ca5a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C77",
+      "claim": "Transcriptional analysis of mex3-1(RNAi) animals may be a promising avenue to discover rare and novel progeny markers.",
+      "claim_type": "EXPLICIT",
+      "source": "With the evidence described in this study implicating mex3-1 as a regulator of multiple neoblast progeny for other tissues, transcriptional analysis of mex3-1(RNAi) animals may be a promising avenue to discover rare and novel progeny markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed future direction based on the utility demonstrated in this study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "d2b87468-3b61-4f4c-8ccd-537f401cdd52",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C78",
+      "claim": "The identification of SmedASXL_059179 as a pharyngeal marker with expression in PIWI-1+ cells demonstrates that lineage-restricted progeny are present outside the X1 and X2 gates.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of one of these transcripts as a pharyngeal marker with expression in PIWI-1+ cells demonstrates that lineage-restricted progeny are present outside the X1 and X2 gates and merits the investment of future efforts toward screening further WThighXlow genes that are regulated by mex3-1 in order to uncover novel progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the characterization of SmedASXL_059179 shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "538fce9d-9ccc-40a4-98ef-3929d08f8056",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "claim_id": "C79",
+      "claim": "Smed-mex3-1 mediates asymmetric cell fate in planarian stem cell lineages, similar to MEX3's role in C. elegans embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the well-known function of MEX3 in mediating asymmetric cell fates during Caenorhabditis elegans embryogenesis (Draper et al., 1996), we propose that Smed-mex3-1 mediates a similar process in planarian stem cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on functional conservation across species.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b17b54d-de3b-4f5d-9350-61ba183beadf",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNAseq analysis identified 2839 X1-enriched and 1512 X2-enriched transcripts (p \u2264 0.01), with X1 and X2 cells sharing the majority of their transcriptional profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C5 are directly supported by DESeq analysis and hierarchical clustering shown in Figure 1. The statistical threshold is clearly stated, and the overlap in transcriptional profiles is demonstrated by the clustering analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "b1a94bc2-3466-4a0f-8832-548489b2f80a",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "32 new markers distinguish two main epithelial progenitor populations: 13 early progeny markers (lost by 48 hr post-irradiation) and 19 late progeny markers (lost beyond 48 hr post-irradiation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C23-C26 are well-supported by WISH analysis showing expression patterns and irradiation time-course experiments (Figure 2A, Figure 2\u2014figure supplement 2). The kinetics of marker loss clearly distinguish early from late progeny populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "dFISH quantification reveals minimal overlap between piwi-1+ stem cells and AGAT-1+ late progeny (0.29% \u00b1 0.50), modest overlap between piwi-1 and prog-1+ early progeny (7.2% \u00b1 2.1), and low overlap between prog-1+ and AGAT-1+ populations (5.4% \u00b1 2.4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 are supported by quantitative dFISH experiments with standard deviations reported (Figure 2B, Supplementary file 3). The data contradict a previous study reporting 45% overlap, which the authors address explicitly. The measurements appear rigorous with appropriate replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "2400e651-11e4-4c81-b844-61b0474ebf5c",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All newly identified epithelial progenitor markers were down-regulated after zfp-1 RNAi, confirming their expression in epithelial progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by WISH analysis in zfp-1 RNAi animals (Figure 2\u2014figure supplement 4). This validation is appropriate given that zfp-1 is known to specifically ablate epithelial progenitors, providing functional confirmation of marker identity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "1063b5a2-68d4-49e5-8a76-6aef903b00a2",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "prog-1 and prog-2 belong to a planarian-specific gene family of at least 24 members with no clear homology to other animals, containing only a predicted N-terminal signal sequence suggesting secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C16-C18 are supported by BLAST searches, sequence alignment analysis (Figure 1\u2014figure supplement 2), and protein domain prediction. The lack of homology outside planarians is appropriately documented with searches against multiple flatworm genomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "bba39807-e3a8-4e0b-9190-b608994de1ac",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNAi screening of epithelial progenitor markers revealed no detectable phenotypes, suggesting functional redundancy among these genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by RNAi screening experiments. The interpretation of functional redundancy is reasonable given the large gene family identified (24 members), though alternative explanations (e.g., incomplete knockdown, compensatory mechanisms) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e6a0014a-7284-48c5-b3c1-42673d7b51d9",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "mex3-1 RNAi was completely penetrant and lethal, causing ventral curling, head regression, dorsal lesioning during homeostasis, and complete loss of regenerative ability after amputation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C10 are supported by phenotypic observations and regeneration assays (Figure 3A-C). The phenotypes are clearly documented with survival curves and images showing 100% penetrance and lethality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "ccf59144-156f-4a66-8744-c155b106edd3",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "mex3-1 showed >5-fold enrichment in X2 over irradiated animals but also significant X1 expression, and was widely expressed in stem cells, early progeny, and late progeny by dFISH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by RNAseq quantification (Figure 3D) and dFISH co-localization analysis (Figure 3F). The expression pattern is consistent with a gene functioning across multiple stages of the lineage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "47ebc5aa-f649-4e7f-a0eb-de5a1e6525c5",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "mex3-1 knockdown leads to rapid decline of prog-1/2+ and AGAT-1+ progeny populations (majority lost by 6 days) but not stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43, C11 are supported by time-course WISH analysis (Figure 4A, Figure 4\u2014figure supplement 1). The selective loss of progeny without stem cell depletion is clearly demonstrated across multiple markers and time points.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "ef014040-5169-44e5-a888-5b4d359b8ce9",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "mex3-1 RNAi animals showed comparable cell death to controls until day 9, but significantly increased proliferation (H3P+) and S-phase entry (EdU+) at all time points, with normal FACS profiles at day 9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by TUNEL quantification (Figure 4C), H3P immunolabeling (Figure 4D), EdU labeling (Figure 5A), and FACS analysis (Figure 4\u2014figure supplement 1C). The data convincingly exclude cell cycle arrest as the cause of progeny loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "914e5ffb-c5e2-4596-96e0-a042d7f26cce",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "mex3-1 knockdown caused expansion of piwi-1+ stem cells (50% increase by day 12) across all three neoblast subclasses (sigma, zeta, gamma), while sublethally irradiated mex3-1 RNAi animals produced disproportionately fewer prog-1+ progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C12-C13 are supported by quantification in cross sections (Figure 5C), subclass marker analysis (Figure 5D), and sublethal irradiation experiments (Figure 5B). The ~50% increase is consistent across multiple measurements and subclasses, with appropriate statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "fc9f8f34-8be8-4f41-8fb8-c57926fdc497",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "mex3-1 RNAi animals showed virtually no EdU+ cell incorporation into epithelium after 7 days and failed to re-establish epithelial gene expression at wound sites during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by EdU chase experiments (Figure 6A) and dFISH analysis of regenerating blastemas (Figure 6B). The data demonstrate impaired epithelial turnover during both homeostasis and regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "8e8ec1e1-9c53-4c3e-ba9f-42949d6ec808",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "mex3-1 knockdown caused significant reductions in lineage-restricted neoblast progeny for multiple tissues (chat+, coe+, ovo+, FoxA+, six1/2-2+) and decreased BrdU+ cell entry into brain, intestine, and pharynx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by quantification of PIWI-1+ cells co-expressing lineage markers (Figure 6D), triple-label dFISH (Figure 6\u2014figure supplement 1A), and BrdU chase experiments (Figure 6E). The data demonstrate broad effects beyond the epithelial lineage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "8be439c8-bad7-494e-bd27-1a3e5e295fbf",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "p53 knockdown did not alter numbers of PIWI-1+ovo+ or PIWI-1+chat+ lineage-restricted progeny, demonstrating a broader role for mex3-1 in differentiation compared to p53.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by quantification in p53 RNAi animals (Figure 6\u2014figure supplement 2). This control experiment appropriately distinguishes mex3-1 function from p53, which was previously shown to affect prog-1+ progeny.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "2c028a1d-1cc5-4287-8c67-b7062a5b9a0f",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "mex3-1 RNAi resulted in significant increase in piwi-1+PIWI-1+ cells and simultaneous decrease in piwi-1\u2212PIWI-1+ cells, supporting reduced ability to progress to postmitotic state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by quantification of piwi-1 mRNA and PIWI-1 protein co-expression (Figure 6F). The shift from piwi-1\u2212PIWI-1+ (postmitotic) to piwi-1+PIWI-1+ (stem cells) is consistent with the overall phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "541eb1c6-f5ac-4e19-b14d-ed7b53ded8c9",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "RNAseq of mex3-1 RNAi animals showed 13/59 known stem cell transcripts significantly upregulated (p < 0.01), including ~1.5-fold increases in soxP-1, zfp-1, and piwi-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by RNAseq analysis (Figure 7\u2014figure supplement 1A, Supplementary file 4). The transcriptional changes are concordant with the observed expansion of stem cell subclasses by cell counting (Figure 5C,D).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "3d1b2dc6-182c-4317-8f25-b46867e8ec75",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "All but two newly identified progeny markers (sox9-1, RPC-2) were severely down-regulated in mex3-1 RNAi animals by RNAseq, with 20/21 additional down-regulated transcripts validated by WISH showing prog-like patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 are supported by RNAseq analysis (Figure 7A) and WISH validation (Figure 7B, Figure 7\u2014figure supplement 1C). The exceptions (sox9-1, RPC-2) are appropriately explained by their high X1 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "6fa27799-baee-4fa5-9438-4a3775801234",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SmedASXL_059179 was identified as a pharyngeal marker with PIWI-1+ expression, demonstrating that lineage-restricted progeny exist outside the X1 and X2 FACS gates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C78 are supported by dFISH with PIWI-1 immunolabeling (Figure 7C). This finding is significant as it reveals limitations of the X1/X2 FACS approach for capturing all progenitor populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "1c756a43-1bb9-493d-8804-75ad09363175",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "RNAi against SmedASXL_059179 did not result in apparent perturbations to pharynx function during homeostasis or regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by RNAi experiments (Figure 7\u2014figure supplement 2C,D). However, the lack of phenotype may reflect functional redundancy, incomplete knockdown, or subtle defects not detected by the assays used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "ca770cfb-dc30-40e3-87af-4a13419a55d3",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "mex3-1 functions to maintain asymmetry in stem cell lineage progression by promoting postmitotic fates and suppressing self-renewal, acting broadly across multiple lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C14-C15, C73 represent the central interpretation of the study. This model is well-supported by the combined data showing: (1) loss of multiple lineage progeny, (2) expansion of all stem cell subclasses, (3) increased proliferation, (4) impaired tissue turnover, and (5) loss of regenerative ability. The interpretation is logical and consistent with all observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "91dc7143-93b9-41ff-98f9-d742f425ece3",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Epithelial progenitors are the predominant output of stem cells, reflecting highest turnover needs and molecular complexity of this organ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is an inference supported by the preponderance of epithelial markers in the X2 fraction (32/80 detectable genes) and the known size of the zeta-neoblast subclass. The interpretation is reasonable given the data, though quantitative comparison of turnover rates across tissues would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "d258773e-7c4b-49ef-837f-07b7e29f91ee",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "MEX3 is an RNA-binding translational repressor with conserved roles in asymmetric cell fate determination in C. elegans embryogenesis and adult germline, and in vertebrate intestinal stem cell regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 represent established knowledge from the literature, appropriately cited. These claims provide important context for interpreting the planarian mex3-1 results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "dee83eef-905a-41fc-a87b-e4c4794b221b",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The findings in planarians combined with results in C. elegans and vertebrates suggest a conserved ancestral function for mex3 genes in cell fate choice and asymmetric cell fate determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C79 represent a comparative inference based on functional similarities across species. The interpretation is reasonable given the conserved role in promoting differentiation and restricting stem cell identity, though direct molecular evidence for conserved mechanisms (e.g., shared targets) is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "fb718d18-4fe3-4b56-b2c6-6de09b40c4bd",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Unlike zfp-1 RNAi worms, mex3-1 RNAi worms completely lose the ability to form any regenerative blastema.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by comparison of regeneration phenotypes. This distinction is important as it suggests mex3-1 has broader effects than zfp-1, which specifically affects epithelial progenitors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e7911d48-39fa-4c83-bd6a-8c5e270d863e",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "MEX3 proteins are translational repressors in C. elegans and vertebrates, suggesting mex3-1 acts as a repressor of stem cell identity and self-renewal genes in postmitotic progenitors to promote differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is supported by literature, but C75 is a proposed model without direct experimental evidence. The model is plausible and consistent with the data, but the molecular mechanism (translational repression), specific targets, and whether MEX3-1 acts in stem cells vs. progeny remain to be demonstrated. This represents a testable hypothesis rather than a proven result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "78db8bdc-92f4-444b-8dff-08b2f179f05b",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "No planarian homolog to the conserved MEX3 target Cdx2/pal-1 could be found in existing transcriptomes or genomic sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by BLAST searches against planarian databases. This negative result is important as it suggests either divergent targets or that the homolog is highly diverged and not detectable by sequence similarity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "0847b22f-fc66-46bd-94be-38c7ba91b538",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Transcriptional analysis of mex3-1 RNAi animals may be a promising avenue to discover rare and novel progeny markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is a proposed future direction supported by the successful identification of 20/21 new progeny markers using this approach (C62). The utility of the method has been demonstrated in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "e10bf977-bfdc-4bd6-95de-3742f6c8a361",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Two other MEX3 homologs in S. mediterranea (mex3-2 and mex3-3) were neither irradiation-sensitive nor produced observable phenotypes after knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by RNAseq data and RNAi experiments (Figure 3\u2014figure supplement 1). This control is important for demonstrating specificity of mex3-1 function, though it's possible these homologs have redundant functions or roles in other contexts not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    },
+    {
+      "id": "7c5f239a-184b-4afd-b484-538a2bcefef1",
+      "content_id": "562a3a5b-7b54-405a-8eb5-f69d048137ea",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Neoblasts are adult stem cells in planarians that sustain cell replacement during homeostasis and regeneration. The X1 FACS population is >90% piwi-1+ (stem cells), while X2 is 10-20% piwi-1+ (enriched for progeny).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent established background knowledge appropriately cited from previous studies. These foundational concepts are well-accepted in the field and provide necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:20:28.473884Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "02c9d44e-ba9e-449f-aeca-fce1df6dea3a",
+      "result_id": "4b17b54d-de3b-4f5d-9350-61ba183beadf"
+    },
+    {
+      "claim_id": "9d76d827-5233-4532-b3b7-2b9bff487a6f",
+      "result_id": "4b17b54d-de3b-4f5d-9350-61ba183beadf"
+    },
+    {
+      "claim_id": "27dcea72-e1ab-4d41-a26e-6c94c7ee6682",
+      "result_id": "b1a94bc2-3466-4a0f-8832-548489b2f80a"
+    },
+    {
+      "claim_id": "9b4ec19b-83f4-4ac5-b068-c29c77cc5ba2",
+      "result_id": "b1a94bc2-3466-4a0f-8832-548489b2f80a"
+    },
+    {
+      "claim_id": "a52c1b3e-30c3-4fb9-82ad-95ef60bc155a",
+      "result_id": "b1a94bc2-3466-4a0f-8832-548489b2f80a"
+    },
+    {
+      "claim_id": "c46be042-1cf8-4f51-91d8-b102cb16d74c",
+      "result_id": "b1a94bc2-3466-4a0f-8832-548489b2f80a"
+    },
+    {
+      "claim_id": "f8b6815c-5375-4d62-83e8-d5b8ca3a117f",
+      "result_id": "b1a94bc2-3466-4a0f-8832-548489b2f80a"
+    },
+    {
+      "claim_id": "99f7769d-c5b8-47d9-884a-b47417ea16dd",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "4c5dffa7-e72d-4c6d-8b42-1ed1d92a4c30",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "a29455e0-7efc-4602-a472-1c742c9bb05f",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "f1a10918-e53c-466f-a729-7c22c3873718",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "7f2a8f54-1f3b-4772-baa1-aead77173c27",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "0edd552e-708a-4173-b729-84af0e61a587",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "69cdc842-a6cb-4dbe-a169-13e0d3704994",
+      "result_id": "41b4a82f-8359-413b-89a9-8fc9d9ee9b27"
+    },
+    {
+      "claim_id": "302df05a-0c06-49d2-bfbc-020a9689fca1",
+      "result_id": "2400e651-11e4-4c81-b844-61b0474ebf5c"
+    },
+    {
+      "claim_id": "1d1de233-3451-429f-bfc7-a3324fad6b3b",
+      "result_id": "1063b5a2-68d4-49e5-8a76-6aef903b00a2"
+    },
+    {
+      "claim_id": "448126e2-44a0-40a9-a519-c200d9571745",
+      "result_id": "1063b5a2-68d4-49e5-8a76-6aef903b00a2"
+    },
+    {
+      "claim_id": "44a9713f-c4be-468f-b8f4-0d438ba683a5",
+      "result_id": "1063b5a2-68d4-49e5-8a76-6aef903b00a2"
+    },
+    {
+      "claim_id": "706a5cdb-bbcc-4305-b4bd-993fa53bc2a9",
+      "result_id": "1063b5a2-68d4-49e5-8a76-6aef903b00a2"
+    },
+    {
+      "claim_id": "7223c040-4bb6-49bd-9c5e-bec76cda59f3",
+      "result_id": "bba39807-e3a8-4e0b-9190-b608994de1ac"
+    },
+    {
+      "claim_id": "f8dc85fc-8656-4910-9c1e-3cd6d2860226",
+      "result_id": "bba39807-e3a8-4e0b-9190-b608994de1ac"
+    },
+    {
+      "claim_id": "e7fcb593-c5f7-4988-b7f4-8558f49dfca5",
+      "result_id": "e6a0014a-7284-48c5-b3c1-42673d7b51d9"
+    },
+    {
+      "claim_id": "ed86cdc2-609e-4dfc-aa01-15bad4ba4121",
+      "result_id": "e6a0014a-7284-48c5-b3c1-42673d7b51d9"
+    },
+    {
+      "claim_id": "b4e970f8-9406-4c14-bea4-7809b0e19f17",
+      "result_id": "e6a0014a-7284-48c5-b3c1-42673d7b51d9"
+    },
+    {
+      "claim_id": "dec08971-fc2d-4e71-8dd0-e815e0cedb3a",
+      "result_id": "ccf59144-156f-4a66-8744-c155b106edd3"
+    },
+    {
+      "claim_id": "1cce461c-9382-4cd8-9b1d-d39cb463f26f",
+      "result_id": "ccf59144-156f-4a66-8744-c155b106edd3"
+    },
+    {
+      "claim_id": "78727fda-95ef-4683-b49d-cc3786761692",
+      "result_id": "47ebc5aa-f649-4e7f-a0eb-de5a1e6525c5"
+    },
+    {
+      "claim_id": "ec09c409-8aee-4ae8-b0c0-8708c60de008",
+      "result_id": "47ebc5aa-f649-4e7f-a0eb-de5a1e6525c5"
+    },
+    {
+      "claim_id": "92c54487-489b-4afe-a351-d931531779b7",
+      "result_id": "47ebc5aa-f649-4e7f-a0eb-de5a1e6525c5"
+    },
+    {
+      "claim_id": "f759feb0-ae7c-47f4-9684-c8b0b59ec64a",
+      "result_id": "ef014040-5169-44e5-a888-5b4d359b8ce9"
+    },
+    {
+      "claim_id": "d7c2f242-0040-4f42-8763-82341b436429",
+      "result_id": "ef014040-5169-44e5-a888-5b4d359b8ce9"
+    },
+    {
+      "claim_id": "c236c651-1a22-40ca-aa12-f540f0fa1eec",
+      "result_id": "ef014040-5169-44e5-a888-5b4d359b8ce9"
+    },
+    {
+      "claim_id": "f9d8299e-f56e-4ab3-a187-f8a48d3ae0b0",
+      "result_id": "ef014040-5169-44e5-a888-5b4d359b8ce9"
+    },
+    {
+      "claim_id": "3e187974-6046-4a69-8c6d-3dc1f7fe29de",
+      "result_id": "914e5ffb-c5e2-4596-96e0-a042d7f26cce"
+    },
+    {
+      "claim_id": "f677851b-7ee6-4bea-b906-93a6c98ae546",
+      "result_id": "914e5ffb-c5e2-4596-96e0-a042d7f26cce"
+    },
+    {
+      "claim_id": "a9f4c89a-3e10-4df5-9839-97266752d1d0",
+      "result_id": "914e5ffb-c5e2-4596-96e0-a042d7f26cce"
+    },
+    {
+      "claim_id": "cb0a0c65-88f2-43a6-9186-783b0a6cfd24",
+      "result_id": "914e5ffb-c5e2-4596-96e0-a042d7f26cce"
+    },
+    {
+      "claim_id": "d954b968-1f07-41af-8692-2539328aa0cd",
+      "result_id": "914e5ffb-c5e2-4596-96e0-a042d7f26cce"
+    },
+    {
+      "claim_id": "14bf08d0-043f-4966-a6e4-d0ab6d4f771f",
+      "result_id": "fc9f8f34-8be8-4f41-8fb8-c57926fdc497"
+    },
+    {
+      "claim_id": "e94b649b-e896-480d-b905-7c307b76c1d2",
+      "result_id": "fc9f8f34-8be8-4f41-8fb8-c57926fdc497"
+    },
+    {
+      "claim_id": "c6bc7fa1-ca27-4428-b49a-7a56dc7a1e78",
+      "result_id": "8e8ec1e1-9c53-4c3e-ba9f-42949d6ec808"
+    },
+    {
+      "claim_id": "65892002-1c97-408a-a9d5-5775704462c5",
+      "result_id": "8e8ec1e1-9c53-4c3e-ba9f-42949d6ec808"
+    },
+    {
+      "claim_id": "9e565311-b46b-4410-a37e-bab7a90a2b6d",
+      "result_id": "8e8ec1e1-9c53-4c3e-ba9f-42949d6ec808"
+    },
+    {
+      "claim_id": "4e0b873f-08b0-4e8b-958a-8b837f67f0ff",
+      "result_id": "8be439c8-bad7-494e-bd27-1a3e5e295fbf"
+    },
+    {
+      "claim_id": "8b4518b9-a022-44ff-9b04-d8d2fa9824bf",
+      "result_id": "2c028a1d-1cc5-4287-8c67-b7062a5b9a0f"
+    },
+    {
+      "claim_id": "d8e842fd-cad1-48a1-a87b-676d8b50dacd",
+      "result_id": "541eb1c6-f5ac-4e19-b14d-ed7b53ded8c9"
+    },
+    {
+      "claim_id": "0baeb097-b409-47da-84ae-8b7b630b2129",
+      "result_id": "541eb1c6-f5ac-4e19-b14d-ed7b53ded8c9"
+    },
+    {
+      "claim_id": "27af96da-fc95-48ec-857b-8d5f9268e21e",
+      "result_id": "3d1b2dc6-182c-4317-8f25-b46867e8ec75"
+    },
+    {
+      "claim_id": "3b0546f4-fa3b-4a3e-a5d0-8b867e3eb7a9",
+      "result_id": "3d1b2dc6-182c-4317-8f25-b46867e8ec75"
+    },
+    {
+      "claim_id": "bd303119-961e-4536-80f0-1f4e3a8b9038",
+      "result_id": "3d1b2dc6-182c-4317-8f25-b46867e8ec75"
+    },
+    {
+      "claim_id": "a914357e-174b-4ec3-addb-f1b762f549b8",
+      "result_id": "3d1b2dc6-182c-4317-8f25-b46867e8ec75"
+    },
+    {
+      "claim_id": "cb396b10-050c-420b-b168-f89ac35fb59a",
+      "result_id": "6fa27799-baee-4fa5-9438-4a3775801234"
+    },
+    {
+      "claim_id": "d2b87468-3b61-4f4c-8ccd-537f401cdd52",
+      "result_id": "6fa27799-baee-4fa5-9438-4a3775801234"
+    },
+    {
+      "claim_id": "db1df18b-cb28-4d4a-8a67-26ac2724b3b8",
+      "result_id": "1c756a43-1bb9-493d-8804-75ad09363175"
+    },
+    {
+      "claim_id": "15e32672-5c0e-4003-9778-621496ab63f4",
+      "result_id": "ca770cfb-dc30-40e3-87af-4a13419a55d3"
+    },
+    {
+      "claim_id": "e3e4370c-ca83-46be-b73c-99c6412fca3e",
+      "result_id": "ca770cfb-dc30-40e3-87af-4a13419a55d3"
+    },
+    {
+      "claim_id": "2da35dcc-d44e-4bf0-9f0f-1338164ca6c1",
+      "result_id": "ca770cfb-dc30-40e3-87af-4a13419a55d3"
+    },
+    {
+      "claim_id": "53ec95f9-7209-4341-a9fd-779f0479b0c0",
+      "result_id": "ca770cfb-dc30-40e3-87af-4a13419a55d3"
+    },
+    {
+      "claim_id": "3ccfdf85-eafd-468e-8174-4b7ec9669c91",
+      "result_id": "ca770cfb-dc30-40e3-87af-4a13419a55d3"
+    },
+    {
+      "claim_id": "09d861be-297d-4b29-864b-b24f0c9cceda",
+      "result_id": "91dc7143-93b9-41ff-98f9-d742f425ece3"
+    },
+    {
+      "claim_id": "41382033-eafc-4a21-b0e5-5db81d2a2d97",
+      "result_id": "d258773e-7c4b-49ef-837f-07b7e29f91ee"
+    },
+    {
+      "claim_id": "82f125d6-f4f6-4add-ab67-9e9ce1c4a1df",
+      "result_id": "d258773e-7c4b-49ef-837f-07b7e29f91ee"
+    },
+    {
+      "claim_id": "5302228e-c0c5-4656-829b-9509752dbd52",
+      "result_id": "d258773e-7c4b-49ef-837f-07b7e29f91ee"
+    },
+    {
+      "claim_id": "51b1a2cf-126e-413d-8aed-9a05d32a8444",
+      "result_id": "d258773e-7c4b-49ef-837f-07b7e29f91ee"
+    },
+    {
+      "claim_id": "6c9241c9-fef1-4b2e-88da-cbf65f0bce2e",
+      "result_id": "dee83eef-905a-41fc-a87b-e4c4794b221b"
+    },
+    {
+      "claim_id": "538fce9d-9ccc-40a4-98ef-3929d08f8056",
+      "result_id": "dee83eef-905a-41fc-a87b-e4c4794b221b"
+    },
+    {
+      "claim_id": "21822401-30d1-487f-89f4-384f5fb26833",
+      "result_id": "fb718d18-4fe3-4b56-b2c6-6de09b40c4bd"
+    },
+    {
+      "claim_id": "636f4dea-8697-4821-953b-3848a6ae9f85",
+      "result_id": "e7911d48-39fa-4c83-bd6a-8c5e270d863e"
+    },
+    {
+      "claim_id": "21884166-b711-4116-88ed-e43c65995350",
+      "result_id": "e7911d48-39fa-4c83-bd6a-8c5e270d863e"
+    },
+    {
+      "claim_id": "e8048da6-4e59-4414-becd-86448b653d07",
+      "result_id": "78db8bdc-92f4-444b-8dff-08b2f179f05b"
+    },
+    {
+      "claim_id": "05a9c6a1-3bdc-44ec-aee8-4cb5d9f5ca5a",
+      "result_id": "0847b22f-fc66-46bd-94be-38c7ba91b538"
+    },
+    {
+      "claim_id": "9160cbae-d94b-43ab-a480-2f5e7c59fea2",
+      "result_id": "e10bf977-bfdc-4bd6-95de-3742f6c8a361"
+    },
+    {
+      "claim_id": "24d4eaa6-a835-44ce-a847-de4561f9f771",
+      "result_id": "7c5f239a-184b-4afd-b484-538a2bcefef1"
+    },
+    {
+      "claim_id": "8bfc4457-2c0e-496e-92f6-12bba16ebeb9",
+      "result_id": "7c5f239a-184b-4afd-b484-538a2bcefef1"
+    },
+    {
+      "claim_id": "ec2f253e-a53f-41f3-8a1c-1d97aa40791c",
+      "result_id": "7c5f239a-184b-4afd-b484-538a2bcefef1"
+    }
+  ],
+  "comparisons": []
+}

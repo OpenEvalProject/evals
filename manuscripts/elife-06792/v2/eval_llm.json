@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "NMR spectroscopy reveals that acidic pH induces structural flexibility in \u03b1-helices 4 and 5 of the PhoQ periplasmic domain (PD). Of 120 assigned residues, 42 were affected by pH transition from 6.5 to 3.5, with approximately 20 resonances broadening beyond detection, indicating pH-dependent conformational dynamics. The pH-sensitive residues localize primarily to \u03b11, \u03b12, \u03b14, \u03b15 and proximal \u03b2-strands, forming an interconnected network spanning \u03b14/\u03b15 and the \u03b1/\u03b2-core, while 66 resonances remained unaffected, indicating pH-insensitive regions distal to \u03b14/\u03b15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45-C56 are well-supported by NMR spectroscopy data (Figures 1-2). The assignment of 120/138 resonances at pH 3.5, identification of 42 pH-affected residues with ~20 showing intermediate-to-slow exchange behavior, and structural mapping to \u03b14/\u03b15 regions provide strong evidence for pH-induced conformational dynamics. The overlap with activating mutations (C52) provides independent validation. The conclusion that \u03b14/\u03b15 contribute to pH sensing (C7, C55, C56) is a reasonable inference from the localized pH sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Engineering a W104C-A128C disulfide bond in the PhoQ PD restrains conformational flexibility in \u03b14/\u03b15 and selectively inhibits activation by acidic pH and divalent cation limitation while preserving CAMP responsiveness. The disulfide mutant shows significantly reduced phoN::TnphoA reporter activity under acidic pH and low divalent cation conditions but maintains wild-type or higher activity with CAMP stimulation. The disulfide also suppresses the T48I activating mutation in the TDK network, supporting interconnected signaling between \u03b14/\u03b15 and the \u03b1/\u03b2-core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C57-C71 are strongly supported by multiple lines of evidence: SDS-PAGE confirms disulfide formation (C57, Figure 3-supplement 1A), alkaline phosphatase assays demonstrate selective loss of pH/divalent cation sensing while retaining CAMP response (C58-C64, Figure 3A-B), control experiments with serine substitutions and single mutations confirm disulfide requirement (C65-C67), and suppression of T48I validates the \u03b14/\u03b15-TDK network connection (C59-C60). The chromosomal construct shows similar phenotype (C62), ruling out artifacts. The conclusion of distinct CAMP vs pH/divalent cation mechanisms (C71) is well-supported by the functional separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The crystal structure of PhoQW104C-A128C PD solved at 1.9 \u00c5 resolution confirms intramolecular disulfide bond formation between W104C and A128C, linking \u03b12 and \u03b14. The structure is highly similar to wild-type S. enterica Typhimurium and E. coli PhoQ PD (r.m.s.d. 1.07 \u00c5). Thermal denaturation studies show the disulfide increases stability at pH 5.5 (Tm(app) 75\u00b0C vs 56\u00b0C for wild-type), while reduced PhoQW104C-A128C is less stable than wild-type (Tm(app) 52\u00b0C), indicating the disulfide restrains conformational flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 are well-supported by structural and biophysical data. The 1.9 \u00c5 crystal structure (Table 1, Figure 4A) directly confirms disulfide formation and overall structural similarity to wild-type (C72-C75). CD thermal denaturation experiments (Figure 4C) provide quantitative evidence for increased stability with the disulfide and decreased stability upon reduction (C79-C80). The inference that substituting small polar residues decreases stability (C81) is supported by both the reduced mutant data and the W104S-A128S activity data. The mechanistic conclusion (C82) logically follows from the combined structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "phoQW104C-A128C S. enterica Typhimurium is fully virulent in mice despite inability to sense acidic pH and divalent cation limitation. In both susceptible BALB/c and relatively resistant A/J mice, phoQW104C-A128C bacteria showed splenic bacterial burden comparable to wild-type and significantly higher than \u0394phoQ. In competitive infections, phoQW104C-A128C demonstrated no reduction in competitive index and was actually more competitive than wild-type in IP infections. Similar competitive indices in IP and PO infections suggest pH/divalent cation sensing is not required for gastrointestinal survival or systemic spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C83-C88 are strongly supported by in vivo infection data (Figure 5A-B). Single-strain infections in both BALB/c and A/J mice show phoQW104C-A128C maintains wild-type virulence levels (C12, C83-C85), with appropriate statistical comparisons. Competitive index experiments demonstrate no fitness defect and even competitive advantage over wild-type (C86-C87), with \u0394phoQ showing expected attenuation. The similar CI values in IP vs PO infections (C88, Figure 5-supplement 1) support the conclusion about gastrointestinal survival. Sample sizes appear adequate (quintuplicate, multiple independent experiments) and appropriate controls (\u0394phoQ) are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Acidic pH sensing by PhoQ reduces S. enterica Typhimurium growth rate in vitro. Wild-type bacteria show decreased growth rate compared to phoQW104C-A128C and \u0394phoQ when grown in N-minimal media at pH 5.5, while all strains show similar growth kinetics at pH 7.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by growth curve data (Figure 5-supplement 2). The differential growth rates at pH 5.5 vs pH 7.5 provide evidence that pH sensing affects growth. However, the mechanistic interpretation (C91) that this is due to pH sensing per se rather than other effects of PhoQ activation could benefit from additional controls. The correlation with in vivo competitive advantage is noted but causation is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "phoQW104C-A128C bacteria survive as well as wild-type within bone marrow-derived macrophages from BALB/c mice. At 8- and 24-hpi, \u0394phoQ showed decreased bacterial burden relative to both wild-type and phoQW104C-A128C, while phoQW104C-A128C maintained at or above wild-type levels throughout infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by macrophage infection data (Figure 5C). The bacterial burden measurements at multiple time points show phoQW104C-A128C maintains wild-type survival levels while \u0394phoQ is attenuated. Statistical comparisons are provided. The conclusion that pH/divalent cation sensing is dispensable for macrophage survival (C94) is a reasonable inference, though it assumes the disulfide remains intact in the phagosome (acknowledged by authors as not directly measured).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "PhoQ-dependent gene expression is significantly induced in phoQW104C-A128C bacteria within macrophages, though at reduced levels compared to wild-type. Wild-type bacteria showed 41-, 29-, 36-, and 51-fold increases in pagD, pagO, phoN, and phoP expression, while phoQW104C-A128C showed 12-, 9-, 9-, and 33-fold increases relative to \u0394phoQ. This indicates that while maximal expression requires pH/divalent cation sensing (contributing ~3-4 fold increase), significant expression (\u22659-fold) occurs independently, suggesting CAMP or other host factors are major signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by qRT-PCR gene expression data (Figure 5D). The quantitative measurements show clear differences between wild-type and phoQW104C-A128C, with both significantly higher than \u0394phoQ. The interpretation that pH/divalent cation sensing contributes 3-4 fold (C97) is a reasonable calculation from the data. The conclusion that CAMP or alternative factors are major signals (C101) is a logical inference from the substantial residual expression in phoQW104C-A128C, though it remains somewhat speculative as the specific factors are not identified. The data are normalized to rpoD and presented as fold-induction, which is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose a model where PhoQ has evolved \u03b14/\u03b15 as a unique pH-responsive structural element that transitions from a stable, repressed state at neutral pH/millimolar divalent cations to a dynamic, flexible state under acidic pH or divalent cation limitation. The model suggests pH-induced flexibility may destabilize divalent cation salt-bridges, while divalent cation limitation may cause electrostatic repulsion. The model has similarities to computational predictions and suggests distinct conformational states for different stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C110 represent a mechanistic model based on the experimental data. While the model is consistent with the NMR, structural, and functional data presented, it remains largely speculative. The NMR data support conformational dynamics (C110 is well-supported), and the comparison to computational models (C107) is reasonable. However, the specific molecular mechanisms proposed (C105-C106) are not directly demonstrated. The model serves as a useful framework for interpreting the data but requires further experimental validation, particularly regarding salt-bridge dynamics and electrostatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "PhoQ pH sensing does not rely strictly on histidine protonation, unlike other pH sensors. Mutation of H157 causes modest activation but doesn't account for full pH response, while H137 and H120 mutations have no significant effect. Alternative mechanisms may involve conformational changes in the dimerization interface, supported by observations that T61C intermolecular disulfide increases activity and that the PD dimer dissociates at lower pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C117 present evidence against simple histidine protonation as the pH sensing mechanism. The histidine mutagenesis data (C112-C113) are cited or stated but not fully shown ('data not shown' for C113). The T61C and dimer dissociation observations (C114, C116) are interesting but also not shown in detail ('data not shown'). While the conclusion that pH sensing involves conformational flexibility (C117) is consistent with the overall study, the specific alternative mechanisms remain speculative. This section would benefit from more complete presentation of the supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The authors propose two speculative mechanisms for how CAMP might activate PhoQ independently of \u03b14/\u03b15 flexibility: (1) CAMP may interact directly with transmembrane regions or disrupt phospholipid packing, or (2) CAMP may function as a steric 'wedge' that overcomes repressive constraints between \u03b14/\u03b15 and the \u03b1/\u03b2-core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 are explicitly presented as speculative mechanisms ('Perhaps', 'Alternatively, it is plausible'). While these hypotheses are consistent with the observation that CAMP activates phoQW104C-A128C, they are not directly tested. The proposals serve to explain the functional separation of CAMP from pH/divalent cation sensing but remain unvalidated hypotheses requiring future experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors conclude that uncharacterized host factors, likely diverse cationic antimicrobial molecules, activate PhoQ during infection. This is based on observations that phoQW104C-A128C shows significant gene expression in macrophages and that PhoQ-dependent expression occurs in CRAMP-deficient macrophages. They speculate the large acidic patch on \u03b14/\u03b15 evolved in animal-associated bacteria to bind diverse CAMP, as environmental bacteria like P. aeruginosa lack these structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 combine experimental observations with evolutionary speculation. The experimental basis (C122-C123) is well-supported by the gene expression data (C95-C101) and the cited CRAMP-deficient macrophage study. The conclusion that uncharacterized factors activate PhoQ (C124) is a reasonable inference, though the specific identity remains unknown. The evolutionary interpretation (C125-C127) is speculative but plausible, supported by structural comparisons and the ability of various peptides to activate PhoQ. The structural difference with P. aeruginosa (C128) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The manuscript provides extensive background on PhoQ structure, function, and regulation, including its role in virulence, the PhoPQ two-component system, structural features of the periplasmic domain, regulation by divalent cations and feedback inhibition, and the macrophage phagosome environment. This establishes the context for investigating which signals are critical for PhoQ-mediated virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C44 represent background knowledge and prior work, appropriately cited throughout. These claims establish the scientific context and rationale for the study. The citations appear appropriate and the knowledge claims are consistent with the field. Some claims involve inferences from prior work (e.g., C29, C34, C41, C43) which are reasonable interpretations of cited studies. This background effectively motivates the key question: which PhoQ-activating signals are essential for virulence?",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors discuss limitations of prior approaches using chemical inhibitors to study PhoQ activation, noting that neutralization may affect CAMP maturation/trafficking. They speculate that CAMP may be the dominant signal during systemic infection, though sensing may be redundant or compartment-specific, and that pH/divalent cation sensing may be important for ex vivo survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C130 represent discussion points and speculation about the implications of the findings. C120 is supported by citation, while C121 is a plausible but unproven explanation for discrepancies with prior chemical inhibitor studies. C129-C130 are explicitly speculative ('tempting to speculate', 'perhaps'), acknowledging uncertainty about the relative importance of different signals in different contexts. These represent reasonable interpretations and future directions but are not experimentally validated in this study.",
+    "result_type": "MINOR"
+  }
+]

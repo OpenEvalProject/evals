@@ -1,0 +1,1659 @@
+{
+  "submission": {
+    "id": "37ca726f-faea-40e8-8693-2841db64a367",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:58:51.809015Z",
+    "updated_at": "2025-11-29T04:58:51.809015Z"
+  },
+  "content": [
+    {
+      "id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "submission_id": "37ca726f-faea-40e8-8693-2841db64a367",
+      "content_type": "manuscript",
+      "content_text": "# Amotl2a interacts with the Hippo effector Yap1 and the Wnt/\u03b2-catenin effector Lef1 to control tissue size in zebrafish\n\n## Authors\n\n- Sobhika Agarwala<sup>1</sup>\n- Sandra Duquesne<sup>1</sup>\n- Kun Liu<sup>1</sup>\n- Anton Boehm<sup>1</sup>\n- Lin Grimm<sup>2</sup>\n- Sandra Link<sup>1</sup>\n- Sabine K\u00f6nig<sup>1</sup>\n- Stefan Eimer<sup>1</sup>\n- Olaf Ronneberger<sup>1</sup>\n- Virginie Lecaudey<sup>2</sup> \u2020\n\n### Affiliations\n\n1. BIOSS Centre for Biological Signalling Studies Albert Ludwigs University of Freiburg Freiburg im Breisgau Germany\n2. Developmental Biology, Institute for Biology I, Faculty of Biology Albert Ludwigs University of Freiburg Freiburg im Breisgau Germany\n3. Image Analysis Lab, Institute for Computer Science Albert Ludwigs University of Freiburg Freiburg im Breisgau Germany\n4. ZBSA Center for Biological Systems Analysis Albert Ludwigs University of Freiburg Freiburg im Breisgau Germany\n5. Albert Ludwigs University of Freiburg Freiburg im Breisgau Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring development, proliferation must be tightly controlled for organs to reach their appropriate size. While the Hippo signaling pathway plays a major role in organ growth control, how it senses and responds to increased cell density is still unclear. In this study, we use the zebrafish lateral line primordium (LLP), a group of migrating epithelial cells that form sensory organs, to understand how tissue growth is controlled during organ formation. Loss of the cell junction-associated Motin protein Amotl2a leads to overproliferation and bigger LLP, affecting the final pattern of sensory organs. Amotl2a function in the LLP is mediated together by the Hippo pathway effector Yap1 and the Wnt/\u03b2-catenin effector Lef1. Our results implicate for the first time the Hippo pathway in size regulation in the LL system. We further provide evidence that the Hippo/Motin interaction is essential to limit tissue size during development.\n\n## Introduction\n\nControl of cell number is a critical process during the development of an organism. While proliferation is essential for organs to reach a correct size, failure to tightly regulate proliferation can lead to organ overgrowth and tumor formation. Proliferation must therefore be tightly controlled and coordinated with other developmental processes so that organs reach their proper final size, but do not exceed it. How this is achieved, however, is still largely unknown.\n\nIn the past 15 years, the Hippo signaling pathway has been identified as a major regulator of organ size during development and homeostasis, by promoting cell death and differentiation and inhibiting proliferation. First identified in Drosophila (Pan, 2007), the Hippo signaling pathway is highly conserved in vertebrates (Halder and Johnson, 2010; Pan, 2010). When Hippo signaling is active, the Hippo pathway effectors YAP1 (Yes-associated protein 1) and TAZ (transcriptional co-activator with a PDZ domain), the vertebrate homologs of the Drosophila Yorkie, are phosphorylated by a cascade of kinases leading to their sequestration in the cytoplasm and/or their degradation. In contrast, when the Hippo signaling pathway is inactive, YAP/TAZ can translocate into the nucleus and mediate transcription of genes that promote proliferation and inhibit apoptosis (Zhao et al., 2011; Barry and Camargo, 2013; Yu and Guan, 2013; Bossuyt et al., 2014).\n\nContact inhibition of proliferation was found to be largely mediated by the Hippo signaling pathway (Zhao et al., 2007). Downstream of cell\u2013cell adhesion and apicobasal polarity, many junction-associated proteins including E-cadherin, \u03b1-catenin, and proteins of the Crumbs and Par complexes promote Hippo signaling (Kim et al., 2011; Schlegelmilch et al., 2011; Silvis et al., 2011; Enderle and McNeill, 2013). These proteins serve as scaffold for the Hippo pathway kinases MST1/2 and LATS1/2 leading to YAP/TAZ phosphorylation and retention in the cytoplasm or degradation (Grusche et al., 2010; Boggiano and Fehon, 2012; Irvine, 2012; Schroeder and Halder, 2012; Gumbiner and Kim, 2014).\n\nRecent studies have shown that, in addition to changes in cell density, YAP/TAZ responds to changes in cell shape, tension forces, and substrate stiffness. This, however, seems largely independent of the canonical Hippo kinase cascade but depends on actin (Dupont et al., 2011; Wada et al., 2011; Halder et al., 2012; Aragona et al., 2013). The actin cytoskeleton indeed plays an important role in integrating and transmitting upstream signals to the Hippo pathway effectors YAP and TAZ (Gaspar and Tapon, 2014). Yet, how this is achieved is not well understood.\n\nSeveral recent reports suggest that the Motin family of junction-associated proteins could play a central role here. AMOT, AMOTL1, and AMOTL2 are scaffold proteins associated with tight-junctions, required for tight junction integrity (Bratt et al., 2002; Sugihara-Mizuno et al., 2007; Zheng et al., 2009) and endothelial cell migration (Troyanovsky et al., 2001; Bratt et al., 2005; Aase et al., 2007; Wang et al., 2011; Hultin et al., 2014; Moleirinho et al., 2014). Recently, Motin proteins have further been shown to interact with YAP and TAZ via their PPxY motifs and the WW motifs of YAP and TAZ (Chan et al., 2011; Wang et al., 2011; Zhao et al., 2011; Hirate et al., 2013; Hong, 2013; Lucci et al., 2013; Yi et al., 2013). In most cases, this physical interaction leads to the inhibition of YAP/TAZ via cytoplasmic retention, similar to, but independent of the canonical Hippo pathway. Interestingly, there is a competition between YAP/TAZ and F-actin to bind to Motin proteins (Mana-Capelli et al., 2014). Motin proteins have thus been proposed to mediate the response of YAP/TAZ to changes in the actin cytoskeleton downstream of mechanical signals. Yet, whether Motin proteins play such a central role in regulating organ growth in vivo in developing organisms is still largely unknown.\n\nThe posterior lateral line (pLL) system in zebrafish provides an excellent model system to address this question. The pLL is a sensory system comprised of mechanosensory organs, the neuromasts, scattered on the surface of the body. The pLL primordium (pLLP) consists of about 100 progenitors that delaminate from a cranial placode and migrate posteriorly towards the tip of the tail (Metcalfe et al., 1985; Ghysen and Dambly-Chaudiere, 2004). As the pLLP migrates, small groups of cells within its trailing region undergo cell shape changes to assemble into rosette-like structures, called proneuromasts. This assembly requires Fibroblast Growth Factor (FGF) signaling and the downstream effectors Shroom3 and Rock2a to activate non-muscle myosin and apical-constriction (Lecaudey et al., 2008; Nechiporuk and Raible, 2008; Ernst et al., 2012; Harding and Nechiporuk, 2012). Once assembled, proneuromasts are deposited behind the migrating pLLP and differentiate into functional neuromasts.\n\nProneuromast deposition comes with a significant loss of cells for the migrating pLLP. Wnt/\u03b2-catenin signaling partially compensates for this loss by promoting proliferation in the leading region (Gamba et al., 2010; Aman et al., 2011; McGraw et al., 2011; Valdivia et al., 2011; Matsuda et al., 2013). Hereafter, we use the term \u2018leading region\u2019 for the cells in the posterior part of the pLLP that do not assemble into rosettes. In contrast, with \u2018trailing region\u2019, we refer to the part of the pLLP where cells change their shape to assemble into rosettes and where FGF signaling is active.\n\nHere, we use the pLLP to address the mechanisms required to control proliferation and tissue size during organ development. We focus on the role of the Motin protein Angiomotin-like 2a (Amotl2a) that has been reported to be expressed in the migrating pLLP, to be a target of FGF signaling (Huang et al., 2007), to inhibit Wnt/\u03b2-catenin signaling during early zebrafish development (Li et al., 2012), and is a potential candidate to interact with the Hippo signaling pathway. Loss of Amotl2a function results in a significant increase in pLLP size due to overproliferation. In a yeast two-hybrid (Y2H) screen, we identified the zebrafish Hippo pathway effectors Yap1 and Taz as strong interacting partners of Amotl2a. We show that Yap1 is required for the pLLP to reach its correct size and that reducing the level of Yap1 suppresses the overproliferation in amotl2a mutant pLLP. Finally we show that, in addition to Yap1, the Wnt/\u03b2-catenin pathway effector Lef1 also mediates the hyperplasia phenotype of amotl2a mutants. This leads us to propose that Amotl2a, possibly by forming a ternary complex with Yap1 and \u03b2-catenin, limits proliferation in the trailing part of the pLLP. Here, we report the first mechanism that limits proliferation in the pLLP. In addition, we implicate the Hippo effector Yap1 in size control in the pLLP for the first time. Altogether, our results strongly suggest that Motin proteins play a major role in limiting organ growth during development by negatively regulating Yap/Taz and Wnt/\u03b2-catenin activities in vivo.\n\n## Results\n\n### amotl2a is expressed in the pLLP and localizes at cell\u2013cell junctions\n\namotl2a has been shown to be expressed in the pLLP (Huang et al., 2007). By combining in situ hybridization (ISH) with Green Fluorescent Protein (GFP) immunostaining in cldnb:gfp transgenic embryos, we showed that amotl2a was expressed throughout migration (Figure 1A\u2013C) in most of the pLLP with reduced or no expression in the most leading and trailing domains (Figure 1D\u2013I). The other motin genes amot, amotl1, and amotl2b were not expressed in the pLLP (Figure 1\u2014figure supplement 1A\u2013C). To determine the intracellular localization of Amotl2a in the pLLP, we fused Amotl2a to the red fluorescent protein TdTomato (TdT). Amotl2a-TdT was present in the cytoplasm and was strongly concentrated at the most apical, constricted part of the cells in assembling proneuromasts (Figure 1J\u2013K\u2032). In addition, it appeared as an apical ring in deposited neuromasts (Figure 1L,L\u2032).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013I) cldnb:gfp embryos stained with an amotl2a antisense RNA probe and an anti-GFP antibody (E, G, I) at the indicated stages. Red arrows indicate the posterior lateral line primordium (pLLP). (D\u2013I) Close-up views of the pLLP. (J\u2013L\u2032) Maximum intensity projection (MIP) of Z-stacks of the pLLP (J\u2013J\u2032) and a recently deposited neuromast (L\u2013L\u2032) in cldnb:gfp embryos injected with amotl2a-TdT mRNA. (K\u2013K\u2032) Close-up views of (J\u2013J\u2032). White arrows indicate rosette centers. Colors have been inverted. (M\u2013X) 30 hpf cldnb:gfp embryos stained with an amotl2a in situ hybridization (ISH) probe and an anti-GFP antibody (O, R, U, X) in the indicated genetic background. The right column shows the primordium at higher magnification. In all figures, scale bars correspond to 200 \u03bcm for whole-embryo images and 20 \u03bcm in close up views of the pLLP. In all figures, n is the total number of embryos/primordia analysed and N is the number of biological replicates (Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) ISH staining with probes against amot (A), amotl1 (B), and amotl2b (C) in cldnb:gfp embryos. (D\u2013I) ISH staining with an amotl2a probe in Tg(hsp70l:dnfgfr1EGFP)pdl embryos non-heat-shocked (D\u2013F) or heat-shocked (G\u2013I). The red arrow points to the pLLP. The dotted lines indicate the pLLP contour. (J, K) Boxplots showing the comparison of the relative length of the amotl2a-free domain (J) and of the amotl2a-expressing domain (K) between the indicated groups (Figure 1\u2014source data 1).\n\nWe next asked if amotl2a expression in the pLLP also required FGF signaling as it has been reported during early development (Huang et al., 2007). amotl2a expression was specifically lost in the pLLP of fgf3\u2212/\u2212;fgf10\u2212/\u2212 double mutants (Figure 1M\u2013R), upon expression of a dominant negative FGFR1 receptor (Figure 1\u2014figure supplement 1D\u2013I), and in embryos treated with the FGFR inhibitor SU5402 (not shown). Conversely, ectopic activation of FGF signaling using the Tg(hsp70l:fgf3-Myc)zf115 transgenic line led to an expansion of the amotl2a expression domain in the pLLP as compared to controls (Figure 1S\u2013X and Figure 1\u2014figure supplement 1J,K). These results indicated that FGF signaling is necessary and sufficient for amotl2a expression in the pLLP.\n\n### Amotl2a is not essential for tight junction and proneuromast assembly in the pLLP\n\nTo investigate the function of Amotl2a in the pLLP, we used a previously published translation-blocking morpholino (Amotl2aMo) (Huang et al., 2007; Wang et al., 2011; Li et al., 2012). At low doses, Amotl2aMo did not lead to any obvious morphological defects (Figure 2\u2014figure supplement 1A\u2013D) (Wang et al., 2011) and efficiently blocked the translation of a fusion between the ATG region of amotl2a and GFP (MoBS_Amotl2a-GFP, Figure 2\u2014figure supplement 1E,F).\n\nSince Motin proteins are necessary for tight junction integrity in several contexts (Bratt et al., 2002; Sugihara-Mizuno et al., 2007; Zheng et al., 2009), we performed ZO1 and phalloidin staining to label tight junctions and actin, respectively. While mature rosettes had similarly strong apical actin and ZO1 staining in morphant and control embryos (white arrows in Figure 2C\u2013F), the distance between the tip of the pLLP and the most recent fully assembled rosette (yellow arrows), appeared increased in amotl2a morphants (double arrowhead in Figure 2A,B). Yet, neuromasts were deposited normally (Figure 2G,H). This result suggested that rosette assembly was slightly delayed in amotl2a morphants but that Amotl2a was neither essential for tight junction assembly nor for neuromast formation and deposition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013F) MIP of Z-stacks of pLLP stained with ZO-1 (blue) and GFP (green) antibodies and phalloidin (red) in control (A, C, E) and amotl2a morphant (B, D, F) cldnb:gfp embryos at 30 hpf. (G, H) MIP of overview images of control (G) and amotl2a morphant (H) embryos after completion of migration. (I, J) Snapshots of time-lapse movies at the indicated timepoints showing a delay in migration in amotl2a morphants (J) as compared to controls (I). (K, L) Corresponding kymographs used to measure the migration speed. (M) Boxplot comparing the migration speeds (Figure 2\u2014source data 1, Figure 2\u2014figure supplements 1, 2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) Overview pictures of 30 hpf cldnb:gfp embryos uninjected (A, B) or injected with Amotl2aMo (C, D), imaged either with fluorescent (A\u2013C) or transmitted light (B\u2013D). (E, F) cldnb:gfp embryos injected with RNA encoding the Mo-binding region of Amotl2a fused to GFP (MoBS-amotl2a-gfp) either alone (E) or with Amotl2aMo (F). The bright green fluorescence in F comes from the expression of the cldnb:gfp transgene in the brain and eyes. The red arrowheads in A and C indicate the level of migration at which embryos were fixed for cell counting quantification (see \u2018Materials and methods\u2019).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Uninjected (A\u2013C and J\u2013L), p53Mo-injected (D\u2013F and M\u2013O), or Amotl2aMo-injected (G\u2013I and P\u2013R) cldnb:gfp embryos stained with a cxcr4b (A\u2013I) or a cxcr7b (J\u2013R) ISH probe and an anti-GFP antibody (C, F, I, L, O, R). Red arrows point to the pLLP.\n\nIn addition, the pLLP of amotl2a morphant embryos migrated 35% slower than controls (Figure 2I\u2013M). Yet, all primordia reached the tip of the tail (Figure 2G,H). Expression of the two G-protein-coupled receptors cxcr4b and cxcr7b was not detectably affected in morphants (Figure 2\u2014figure supplement 2), suggesting that a deregulation of their expression is unlikely to account for the decrease in migration speed. Altogether, these results suggested that while rosette assembly and migration are delayed in amotl2a morphants, the pLLP deposits neuromasts and eventually migrates to the tip of the tail.\n\n### Amotl2a is essential to restrict the number of cells in the pLLP, and thus to limit its size\n\nInterestingly, the size of amotl2a morphant pLLP appeared obviously increased throughout the migration process (Figure 3A\u2013C, also Figure 2I,J). To determine whether this was due to an increase in cell number, we developed an algorithm to automatically count cells in the pLLP based on the membrane labeling in cldnb:gfp embryos (see \u2018Materials and methods\u2019 and Figure 3\u2014figure supplement 1). Cell counts were done in pLLP that had reached the middle of the yolk extension in both controls and amotl2a morphants (thereafter referred to as \u2018mid-migration\u2019, red arrowhead in Figure 2\u2014figure supplement 1, see also \u2018Materials and methods\u2019). Cell counts indicated that the number of cells in amotl2a morphant pLLP was increased by 35\u201338% as compared to either uninjected or p53Mo-injected embryos (Figure 3E, p = 1.58E-40 and p = 9.53E-31, respectively). To confirm the specificity of the morphant phenotype, we co-injected Amotl2aMo with amotl2am, an RNA that was insensitive to the morpholino. Co-injection of Amotl2aMo with amotl2am RNA partially rescued the morphant phenotype (Figure 3D,F). While overexpression of amotl2a at the concentration used for the rescue experiment did not significantly reduce the number of cells in the pLLP (Figure 3F), injection at a higher concentration induced a moderate, but significant decrease in cell number (Figure 3\u2014figure supplement 2, \u221215%, p = 5.20E-07). Altogether, these results indicated that Amotl2a was essential to limit the number of cells in the migrating pLLP.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013D) MIP of Z-stacks of pLLP in cldnb:gfp embryos injected as indicated. (E, F) Boxplots showing the number of cells in the primordia of indicated groups, normalized to the control group. (G\u2013I\u2032\u2032) MIP of Z-stacks of pLLP in cldnb:gfp embryos stained with EdU and DAPI showing the green (membranes, middle), red (EdU, right), and merge (left) channels. (J, K) Boxplot showing the comparison of the EdU index in the indicated experimental conditions in whole primordia (J) or separately in the leading and trailing region (K) (Figure 3\u2014source data 1\u20133, Figure 3\u2014figure supplements 1, 2, Figure 3\u2014source data 4).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Raw image of pLLP in a cldnb:gfp embryo. (B) Enhanced, filtered image using anisotropic diffusion. (C) Segmentation of individual cells. (D) Segmentation mask of the pLLP.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A, B) MIP of Z-stacks of pLLP in cldnb:gfp embryos injected as indicated. (C) Corresponding boxplot comparing the number of cells in the indicated experimental conditions. (Figure 3\u2014source data 4).\n\n### Amotl2a is required to limit the proliferation rate in the trailing region of the pLLP\n\nTo determine the cause of the increase in cell counts in the pLLP of amotl2a morphants, we quantified proliferation rates using EdU to label proliferating cells (Figure 3G\u2013I\u2032\u2032). There was a significant increase in the EdU index of about 15% in the pLLP of amotl2a morphants as compared to controls (Figure 3J, p < 0.05). Since amotl2a was not expressed in the most leading part of the pLLP, we determined the proliferation rates separately in the leading vs trailing region of the primordium. While there was no difference in the proliferation index in the leading region between morphants and controls, there was a 34% increase in the trailing region (Figure 3K, p < 0.0001). Altogether, these results indicated that Amotl2a is required to restrict the number of cells in the pLLP by limiting proliferation in the region where rosettes assemble.\n\n### TALEN-induced non-sense mutations in amotl2a phenocopy the amotl2a knock-down phenotype\n\nTo confirm the specificity of the Amotl2Mo-induced phenotype, we generated amotl2a mutants using the transcription activator-like effector nuclease (TALEN) technique. Among several identified amotl2a alleles, two were further analyzed that introduced a frame-shift and a premature STOP codon in the third exon (Figure 4A). The putative resulting truncated proteins would lack most of the coiled-coil domain and the PDZ-binding domain (Figure 4B). Both alleles had identical phenotypes. amotl2a\u2212/\u2212 homozygous mutants were morphologically indistinguishable from their siblings (Figure 4C\u2013F) but had larger primordia (Figure 4G,H). Cell count analyses revealed a significant increase in cell numbers of 21% in amotl2a\u2212/\u2212 mutants as compared to their siblings (Figure 4I). In addition and as in morphants, pLLP migrated slower in amotl2a\u2212/\u2212 mutants as compared to controls (\u221232%, p < 0.0001, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig4-v2.jpg)\n\n**Figure 4.:** (A) Scheme showing the transcription activator-like effector nuclease (TALEN) target site in the amotl2a locus with the left and right TALEN-binding sites in red separated by the spacer including the restriction site used for screening (blue) (top). Alignment of the two conserved amotl2a mutant alleles with the corresponding wild-type sequence showing the deleted nucleotides (bottom). (B) Scheme comparing the functional domains present in the wild-type Amotl2a protein (721aa long) and the putative truncated proteins (272aa +17 or +9 missense aa for allele fu45 and fu46, respectively). (C\u2013F) 36 hpf cldnb:gfp wild-type sibling (C, D) or amotl2a\u2212/\u2212 mutant embryo (E, F) imaged with fluorescent (C, E) or transmitted light (D, F). (G, H, J, K) MIP of Z-stacks of pLLP in cldnb:gfp embryos with the indicated genetic background. (I, L) Boxplots comparing the cell numbers between the indicated genetic backgrounds. (M, N) MZamotl2a\u2212/\u2212 mutant embryo (N) showing an extra deposited neuromast as compared to a wild-type sibling embryo (M). (O) Boxplot showing the corresponding quantification (Figure 4\u2014source data 1, 2; Figure 4\u2014figure supplements 1, 2, Figure 4\u2014source data 3, 4).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Snapshots of time-lapse movies at the indicated timepoint showing a delay in migration speed in MZamotl2a\u2212/\u2212 mutants (B) as compared to siblings (A). (C, D) Corresponding kymographs. (E) Boxplot comparing the migration speeds in control vs MZamotl2a\u2212/\u2212 mutant pLLP (Figure 4\u2014source data 3).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Boxplots showing cell number quantifications in the first 3 neuromasts (n1 to n3) and interneuromast regions (i1 and i2) at 48 hpf in the indicated experimental conditions. (B) Boxplot showing cell number quantification in one neuromast close to the end of yolk extension (n3 or n4) at 72 hpf in the indicated experimental conditions (Figure 4\u2014source data 4).\n\nHomozygous mutants were viable, fertile, and generated maternal-zygotic (MZ) mutants that were also morphologically normal, viable, and fertile. Since amotl2a is expressed maternally (Huang et al., 2007), we wanted to determine whether maternal RNA and/or proteins also contributed to limit the number of cells in the pLLP. pLLP cell counts were further increased to 40% in MZamotl2a\u2212/\u2212 mutants as compared to controls (Figure 4J\u2013L, p = 1.18E-21), an increase similar to that quantified in amotl2a morphants (Figure 3E,F).\n\nWe then asked where these additional cells ended up later in development. Neither deposited neuromasts nor interneuromast chains comprised more cells at 48 hpf in morphants as compared to controls (Figure 4\u2014figure supplement 2A). Similarly, MZamotl2a\u2212/\u2212 mutant neuromasts also contained the same number of cells as controls at 72 hpf (Figure 4\u2014figure supplement 2B). Yet, there was on average one additional neuromast deposited in morphants (not shown) and mutants (Figure 4M\u2013O) as compared to control embryos. Altogether, these results confirmed that Amotl2a is required to limit the number of cells in the pLLP and thus its size. Also, loss of Amotl2a does not affect the size of mature neuromasts but increases their number.\n\n### Zebrafish Amotl2a physically interacts with zebrafish Yap1 and Taz\n\nTo dissect the mechanisms by which Amotl2a was limiting the number of cells in the pLLP, we performed a Y2H screen to identify Amotl2a-interacting partners. The screen was performed with a full-length (FL) cDNA of amotl2a as bait and a cDNA library of 18\u201320 hpf zebrafish embryos as prey library (Hybrigenics, France). 25 proteins were identified as potential Amotl2a interaction-partners and were given a score ranging from A (very high confidence in the interaction) to D (moderate confidence in the interaction). The Hippo pathway effectors Yap1 and Taz were among the 10 strongest identified partners with an A and B score, respectively. Further analysis showed that in both cases, the amino acid (aa) sequence shared by all prey fragments (Selected Interaction Domain) included the evolutionarily conserved WW motifs (2 for Yap1 and 1 for Taz, Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig5-v2.jpg)\n\n**Figure 5.:** (A) Part of the yeast two-hybrid (Y2H) screen results showing the Selected Interaction Domain (SID) of Yap1 and Taz (encoded by the gene wwtr1) and known functional and structural domain on these proteins. The SID is the amino acid sequence shared by all prey fragments matching the same reference protein, here Yap1 and Taz. (B) Y2H assay with Histidine (left panel, growth control) and without Histidine (right panel, protein interaction assay) showing the interactions between zebrafish Amotl2a and Yap1 or Taz (red), but not with the corresponding proteins mutated in the known interaction motifs: LPTY/PPEY for Amotl2a (green) and WW domain for Yap1 and Taz (pink). (C, D) MIP of Z-stacks of pLLP in cldnb:gfp embryos injected as indicated. (E) Boxplot comparing the number of cells in the pLLP in Yap1Mo-injected embryos and controls. (F) Scheme showing the TALEN target site in the yap1 locus with the left and right TALEN-binding sites in red separated by the spacer including the restriction site used for screening (blue) (top). Alignment of the two yap1 mutant alleles with the corresponding wild-type sequence showing the deleted nucleotides (bottom). (G) Scheme comparing the functional domains present in the wild-type Yap1 (442aa long) and the putative truncated proteins (76aa +25 or +45 missense aa before for allele fu47 and fu48, respectively). (H, I) Overview pictures of 36 hpf cldnb:gfp control and Zyap1\u2212/\u2212 embryos. (J\u2013M) MIP of Z-stacks of pLLP in cldnb:gfp embryos with the indicated genotype. (N\u2013P) Boxplot showing cell counts in the pLLP in embryos of the corresponding genotypes (Figure 5\u2014source data 1, 2; Figure 5\u2014figure supplement 1; Figure 5\u2014source data 3, 4).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Zyap1\u2212/\u2212 mutant embryos have fewer cells compared to sibling controls. (A\u2013B\u2032\u2032) 30 hpf cldnb:gfp embryos stained with a yap1 (A\u2013A\u2032\u2032) or a taz (B\u2013B\u2032\u2032) ISH probe and an anti-GFP antibody (A\u2032\u2032, B\u2032\u2032). (C\u2013E, H) Boxplot showing pLLP cell counts (C), number of deposited neuromasts (D), cell counts (E), and number of hair cells (H) per neuromast in the indicated experimental conditions. Cell counts were performed in the neuromast closest to the end of yolk extension (n3 or n4) at 72 hpf in (E\u2013H). (F\u2013G\u2032\u2032) MIP of Z-stacks of a deposited neuromast (n3 or n4) stained with an anti-HCS1 antibody (hair cells, red) and DAPI (cell nuclei, blue). (I\u2013L\u2032) ISH with a prox1 probe and an anti-GFP antibody staining (J\u2032, L\u2032) on embryos with the indicated genetic background. Red arrows point to the pLLP (A, B, I and K) (Figure 5\u2014source data 3, 4).\n\nTo further test if the WW motifs were required for the physical interactions, we mutated both and tested the interactions with Amotl2a in a Y2H assay. The Y2H assay first confirmed the interaction between zebrafish Amotl2a and zebrafish Yap1 and Taz (red in Figure 5B). Furthermore, mutations of the WW motifs of Yap1 and Taz abolished the corresponding interaction with Amotl2a (pink in Figure 5B). Conversely, mutations of the LPTY and PPEY motifs of Amotl2a, but not of either of them alone, abolished the interaction with WT Yap1 and Taz (green and yellow, respectively, in Figure 5B). This result indicated that, similar to their human orthologs, zebrafish Yap1 and Taz physically interact with zebrafish Amotl2a and that this interaction is mediated by the WW motifs of Yap1/Taz and the LPTY/PPEY motifs of Amotl2a. We therefore hypothesized that the increase in proliferation upon loss of Amotl2a could result from an upregulation of Yap1/Taz activity.\n\n### Yap1 activity is required for the pLLP to reach its normal size\n\nTo test whether an upregulation of Yap1/Taz activity could account for the increased cell number in the pLLP upon loss of Amotl2a function, we first assessed the expression of zebrafish yap1 and taz. Both genes were broadly expressed during development including in the pLLP (Figure 5\u2014figure supplement 1A,B). We then asked whether Yap1 or Taz was implicated in controlling pLLP cell number using morpholino-based knockdown. Injection of a previously published translation-blocking Mo against Taz (Hong et al., 2005) did not cause obvious differences in pLLP size (data not shown). In contrast, embryos injected with a previously published, splice-blocking Yap1 morpholino (Yap1Mo) (Skouloudaki et al., 2009; Fukui et al., 2014) were morphologically normal but had smaller pLLP than controls and often a rounder shape (Figure 5C,D). Cell counts indicated that the pLLP of yap1 morphant embryos had about 15% less cells than uninjected controls (p = 2.65E-12) (Figure 5E). Yet, they completed migration and deposited neuromasts. In order to confirm this essential role of Yap1 in controlling cell number in the pLLP, we generated yap1 mutants using TALEN-mediated mutagenesis. Like for amotl2a, we further analyzed two yap1 alleles with a frame shift leading to a premature STOP codon in the second exon (Figure 5F). The putative resulting truncated proteins would lack most of their functional domains including the Transcriptional Enhancer Activator Domain (TEAD) binding domain, the 2 WW motifs and the PDZ-binding domains (Figure 5G). Both alleles had identical phenotypes. yap1\u2212/\u2212 homozygous mutants embryos were morphologically normal (Figure 5H,I) with smaller and at times rounder pLLP (Figure 5J,K), a phenotype identical to that of the yap1 morphants. Cell counts confirmed that yap1\u2212/\u2212 pLLP also showed a decrease in cell number of 19% (p = 1.25E-05) (Figure 5\u2014figure supplement 1C). Interestingly, these embryos again developed into normal looking and fertile adult fish. MZyap1\u2212/\u2212 mutants also developed normally and were morphologically indistinguishable from controls. To determine at which stage Yap1 activity was required in the pLLP, we performed cell counts in MZyap1\u2212/\u2212 mutants when the pLLP starts to migrate (24 hpf), when it reaches the middle of the yolk extension (30 hpf) (Figure 5L,M), and at the end of the yolk extension (36 hpf). At 24 hpf, the pLLP of MZyap1\u2212/\u2212 mutants was already 15% smaller than related controls (p = 4.12E-08). This difference continued to increase with time to reach 21% at 30 hpf (p = 2.15E-10) and 27% at 36 hpf (p = 2.41E-14) (Figure 5N\u2013P). These results showed that Yap1 is required both before and during migration to establish the correct number of cells in the pLLP.\n\nA recent study reported that yap1 morphants show a reduced number of neuromasts (Loh et al., 2014). Given the reduced number of cells in the pLLP of yap1 morphants and mutants, we expected a similar result. Intriguingly, neither our morphants (not shown) nor our MZyap1\u2212/\u2212 mutants showed a decreased number of neuromasts (Figure 5\u2014figure supplement 1D). Furthermore, these neuromasts did not contain fewer cells (Figure 5\u2014figure supplement 1E). These results strongly suggested that compensatory mechanisms kick-in in the pLLP of yap1\u2212/\u2212 mutants to allow them to migrate to the tip of the tail while depositing a normal number of neuromasts consisting of a normal number of cells despite their smaller size. It was also reported that neuromasts of yap1 morphants contain fewer hair cells due to loss of prox1 expression in these embryos (Li et al., 2012). Intriguingly, neither the number of hair cells per neuromast (Figure 5\u2014figure supplement 1F\u2013H) nor the expression of prox1 in the pLLP (Figure 5\u2014figure supplement 1I\u2013L\u2032) was affected in our MZyap1\u2212/\u2212 mutants. These discrepancies are discussed below. Altogether, our results indicated that Yap1 activity is required for the pLLP to reach its normal cell number and size. This further supported the idea that the increase in proliferation upon loss of Amotl2a activity could be due to an increase of Yap1 activity.\n\n### Amotl2a inhibits Yap1 activity to limit proliferation in the pLLP\n\nWe reasoned that if an increase of Yap1 activity was the cause of the hyperplasia in the pLLP of amotl2a morphants and mutants, we should be able to suppress this phenotype by reducing Yap1 levels. The pLLP size of embryos co-injected with Yap1Mo and Amotl2aMo was indeed smaller than that of amotl2a morphants alone and was comparable to that of control embryos (Figure 6A\u2013D). Automated cell counts revealed that the number of cells in the pLLP of amotl2a;yap1 double morphants was significantly reduced as compared to amotl2a morphants (34% reduction, p = 1.53E-16) and was not significantly different from controls (p = 0.098) (Figure 6E). To confirm this result, we generated MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants. These mutants were morphologically indistinguishable from related controls. Here also, the increase in pLLP size in MZamotl2a\u2212/\u2212 was suppressed in the MZ double mutant embryos (Figure 6\u2014figure supplement 1A\u2013E). These observations were confirmed by automated cell counts: the 37% increase in MZamotl2a\u2212/\u2212 pLLP (p = 4.62E-11) was suppressed in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants and comparable to controls (p = 0.06). MZyap1\u2212/\u2212 mutants were, however, still lower than double mutants (\u221227%, p = 1.09E-11) (Figure 6\u2014figure supplement 1E). Together, these results demonstrated that the increased pLLP cell counts that resulted from the loss of Amotl2a function could be suppressed by an additional loss of Yap1 activity. This strongly suggested that the overproliferation in amotl2a\u2212/\u2212 mutants pLLP was in part mediated by Yap1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013D, L\u2013O) MIP of Z-stacks of pLLP in cldnb:gfp embryos injected as indicated. (E, P) Corresponding boxplots comparing pLLP cell counts. (F\u2013J\u2032\u2032) MIP of Z-stacks of pLLP in cldnb:gfp embryos stained with EdU and DAPI showing the EdU (right panels), cell membranes (middle panels), and merged channels (left panels). (K) Corresponding boxplot showing the EdU index in the leading and trailing regions of the pLLP in the indicated experimental conditions (Figure 6\u2014source data 1\u20133; Figure 6\u2014figure supplement 1, Figure 6\u2014source data 4).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The mutation of Yap1-binding domains in Amotl2a does not render it unstable. MIP of Z-stacks of pLLP in cldnb:gfp embryos with the indicated genotype (A\u2013D). (E) Corresponding boxplot comparing pLLP cell counts. (F) Western blot showing the stability of wild-type Amotl2a, Amotl2aFL (lane2) and Amotl2a forms carrying both PPEA-LATA (lane3) and single PPEA and LATA (lanes 4 and 5), respectively. \u03b1-tubulin staining shows equal protein loading (Figure 6\u2014source data 4).\n\nTherefore, we directly tested if the increased proliferation rate of amolt2a morphants was similarly suppressed in double morphants. As previously observed, the proliferation rate in amotl2a morphants was significantly increased in the trailing region as compared to controls (control vs Amotl2aMo: 0.27 \u00b1 0.01 and 0.40 \u00b1 0.01, p < 0.0001); and this increase was partially suppressed in embryos co-injected with Amotl2aMo and Yap1Mo (0.32 \u00b1 0.02, p = 0.003) (Figure 6F\u2013K). Altogether, these results strongly suggest that Amotl2a is limiting proliferation and cell number in the pLLP, at least in part, by inhibiting Yap1 activity.\n\nFinally, we wanted to test whether the physical interaction between Amotl2a and Yap1 was necessary for Amotl2a function. For this purpose, we attempted to rescue the amotl2a morphant phenotype with amotl2am (wild-type amotl2a modified to be insensitive to the Mo) and with amotl2amLP, which was mutated in the LPTY and PPEY motifs and thus could not interact with Yap1. While amotl2am could partially rescue the increase in cell counts of amotl2a morphants as shown above (p = 6.36E-08), amotl2amLP could not (p = 0.18) (Figure 6L\u2013P). We also checked that the stability of the two proteins were comparable. Since there was no antibody recognizing zebrafish Amotl2a, we took advantage of the myc-tagged versions of the proteins that we used in our Y2H assays. The two proteins had a comparable stability in yeast (Figure 6\u2014figure supplement 1F). Altogether, these results suggested that the physical interaction between Amotl2a and Yap1 is required for the proliferation-limiting activity of Amotl2a.\n\n### Amotl2a suppresses Lef1 activity to limit proliferation in the pLLP\n\nOur results so far indicated that the loss of Yap1 suppressed the increase in cell number in amotl2a mutants, possibly via a physical interaction between Amotl2a and Yap1. Yet, pLLP cell counts in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants were still higher than in MZyap1\u2212/\u2212 suggesting that additional factors mediated the hyperplasia in amotl2a mutant pLLPs. Given that Wnt/\u03b2-catenin signaling, via Lef1, promotes proliferation in the leading region of the pLLP (Gamba et al., 2010; Aman et al., 2011; McGraw et al., 2011; Valdivia et al., 2011; Matsuda et al., 2013) and that Amotl2a has been shown to physically interact with \u03b2-catenin and inhibit Wnt/\u03b2-catenin signaling during zebrafish gastrulation (Li et al., 2012), we tested if Wnt/\u03b2-catenin signaling could also mediate the increase in cell number upon loss of Amotl2a activity.\n\nWe first injected Amotl2aMo in tg(7xTCFXla.Siam:nlsmCherry)ia5 embryos that carry a Wnt reporter (Valdivia et al., 2011; Moro et al., 2012). Although the intensity of red fluorescence was not significantly increased upon Amotl2aMo injection (Figure 7\u2014figure supplement 1A\u2013E), we could not determine whether the number of cells expressing the reporter was increased because the red fluorescence was already present in most of the pLLP cells in control embryos (Figure 7\u2014figure supplement 1C,D), probably due to the stability of the cherry protein. Next, we tested whether the expression of a bona fide Wnt/\u03b2-catenin transcriptional target, such as lef1, was increased upon loss of Amotl2a activity. Both amotl2a morphants and mutant embryos showed a slight but significant expansion of the lef1 expression domain into the trailing region of the primordium as compared to their respective controls (Figure 7A\u2013E and Figure 7\u2014figure supplement 1F\u2013J). On the other hand, the expression of lef1 was not modified in MZyap1\u2212/\u2212 mutants (Figure 7\u2014figure supplement 1K\u2013N). This suggested that an increase in Wnt/\u03b2-catenin/Lef1 activity in the trailing region of the pLLP could also partially mediate the increase in cell number. We thus tested if suppressing Lef1 activity in amotl2a mutants would suppress this phenotype. For this purpose, we injected MZamotl2a\u2212/\u2212 mutant embryos with a previously published lef1 morpholino (Lef1Mo) and performed cell counts at mid-migration (Valdivia et al., 2011). While MZamotl2a\u2212/\u2212 mutants showed bigger primordia as expected (36%, p = 2.89E-09) (Figure 7G, see \u2018a\u2019 in N), lef1 morphants at this stage did not show a significant reduction in pLLP cell counts (p = 0.1) (Figure 7F,J and \u2018b\u2019 in N). In contrast, cell counts in Lef1Mo-injected MZamotl2a\u2212/\u2212 mutants were significantly reduced as compared to MZamotl2a\u2212/\u2212 mutants (\u221223%, p = 5.32E-08, Figure 7N \u2018c\u2019) and equivalent to controls (p = 0.28, Figure 7N \u2018d\u2019). Yet, they were still slightly higher than lef1 morphants (15%, p = 0.01) (Figure 7G,K and \u2018e\u2019 in N). These results suggested that the increased cell number in amotl2a\u2212/\u2212 mutants was Lef1-dependent. To confirm this, we tested if the difference in cell number in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 and MZyap1\u2212/\u2212(see above) was due to Lef1 activity. Indeed when we injected MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 with Lef1Mo, the number of cells in the pLLP was significantly lower than in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants (\u221219%, p = 0.001, Figure 7N \u2018f\u2019) and was not significantly different from that of MZyap1\u2212/\u2212 mutants (\u2018g\u2019 in Figure 7N, p = 0.07). Altogether, these results strongly suggested that Amotl2a limits the number of cells and thus the size of the pLLP by repressing both Yap1 and Lef1 proliferation-promoting activities (Figure 8), possibly by physically interacting with Yap1 (our data) and \u03b2-catenin, as previously shown in zebrafish (Li et al., 2012).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D\u2032) 30 hpf cldnb:gfp embryos with the indicated genetic background stained with a lef1 ISH probe and an anti-GFP antibody (B\u2032, D\u2032). (E) Boxplot showing the expansion of lef1 expression domain in MZamotl2a\u2212/\u2212 embryos. (F\u2013M) MIP of Z-stacks of pLLP in cldnb:gfp embryos with the indicated genotype, either uninjected (F\u2013I) or injected with a Lef1Mo (J\u2013M). (N) Corresponding boxplot comparing pLLP cell counts (Figure 7\u2014source data 1, 2; Figure 7\u2014figure supplement 1, Figure 7\u2014source data 3).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013D) MIP of confocal stacks of the pLLP in Tg(7xTCF-Xla.Sia:NLS-mCherry) embryos injected (B, D) or not injected (A, C) with the amotl2aMo and showing the green (membranes, left) and red (nuclear WNT reporter) channels. (E) Boxplot comparing the relative mean intensity of fluorescence in the red channel in the corresponding pLLP. (F\u2013I\u2032) Overview pictures (F, H) and close-up on the pLLP of 30 hpf cldb:gfp embryos injected (H, I, I\u2032) or not injected (F, G, G\u2032) with the Amotl2aMo and stained with a lef1 ISH probe and an anti-GFP antibody (G\u2032, I\u2032). Red arrows point to the pLLP (F, H). (J) Boxplot showing the expansion of lef1 expression domain in amotl2a morphants. (K\u2013N) Close-up on the pLLP of 30 hpf control or MZyap1\u2212/\u2212 cldb:gfp embryos stained with a lef1 ISH probe and an anti-GFP antibody (L, N). The relative lef1 expression domain is not different in MZyap1\u2212/\u2212 embryos (Figure 7\u2014source data 3).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/08201/elife-08201-fig8-v2.jpg)\n\n**Figure 8.:** Scheme summarizing the main regulatory pathways involved in proliferation control and organ formation in the pLLP. The red part corresponds to new findings from the present study. Dotted lines indicate hypothetical links.\n\n## Discussion\n\nIn the present study, we describe a novel mechanism underlying control of tissue size in developing vertebrate embryos. We show that the cell junction-associated Motin protein Amotl2a is required to limit proliferation in the pLLP and thus to control the size of this tissue during migration. We further show that hyperplastic pLLP do not generate bigger neuromasts but more neuromasts. Our results indicate that Amotl2a exerts its function by negatively regulating both the Hippo pathway effector Yap1 and the Wnt/\u03b2-catenin effector Lef1. Our data point to a new mechanism by which Motin proteins limit tissue size by repressing the Wnt/\u03b2-catenin pathway. In addition, while Motin proteins are known to physically interact with, and inhibit YAP/TAZ, this is to our knowledge the first in vivo report showing that Motins control tissue size by interacting with the Hippo pathway effector Yap1 in a living organism.\n\n### Control of proliferation and tissue size in the zebrafish pLLP\n\nEmbryonic development is associated with high proliferation rates ensuring proper organ formation. Yet, proliferation must remain under tight spatiotemporal control to ensure that a sufficient number of cells is produced, but not exceeded. In the pLLP, Wnt/\u03b2catenin signaling is required to maintain proliferating progenitors in the leading region to compensate for the loss of cells resulting from neuromast deposition (Gamba et al., 2010; Aman et al., 2011). This is essential for the pLLP to deposit a complete set of LL organs (McGraw et al., 2011; Valdivia et al., 2011). However, no mechanism has been proposed that restricts proliferation and growth in the pLLP. We show here that Amotl2a is essential to limit proliferation of the cells that assemble into proneuromasts in the trailing region of the pLLP. This leads us to propose that the size of the pLLP is controlled throughout migration by a balance between Wnt/\u03b2catenin-dependent mitogenic signals from the leading region and Amotl2a-dependent proliferation-restricting signals from the trailing region (Figure 8).\n\nWe further show that amotl2a is expressed downstream of FGF signaling in the trailing region of the pLLP. Yet, embryos lacking FGF signaling in the pLLP do not have larger primordia (Aman et al., 2011, and our own observations). This suggests that FGF has a mitogenic function in the pLLP in addition to promoting amotl2a expression, and thus, limiting proliferation. This is not surprising given that FGF signaling promotes proliferation in several contexts during vertebrate development (Thisse and Thisse, 2005; Aman et al., 2011). We propose that in FGF-deficient embryos, an increase in Yap1 and Lef1 activity resulting from decreased amotl2a expression might partially compensate for the absence of FGF-dependent proliferation.\n\nThe increase in cell number in the pLLP of amotl2a mutants does not lead to bigger neuromasts, but to one additional neuromast. While a recent study reported that the size of differentiated neuromasts depends on the canonical Wnt pathway at later stages (Wada et al., 2013), the mechanisms that dictate how many cells participate in forming a new rosette in the migrating pLLP are not known. Intriguingly, our results suggest that this number does not depend on the size of the pLLP itself. This is in agreement with the fact that smaller primordia, for example in lef1 mutants, also deposit fewer, but apparently not smaller, neuromasts (McGraw et al., 2011; Valdivia et al., 2011).\n\nFinally, we show that rosette assembly is slightly delayed in amotl2a morphants and mutants. At least two mechanisms could account for this delay. First, Motin proteins have been implicated in the formation of tight junctions in different contexts (Bratt et al., 2002; Sugihara-Mizuno et al., 2007; Zheng et al., 2009), although tight junctions do form in the absence of Amotl2a, their assembly might be challenged, leading to a delay in epithelial rosette assembly. Second, we show that lef1 expression is expanded upon loss of Amotl2a function. Interestingly, upon loss of Lef1 activity, rosettes assemble closer to the pLLP tip (McGraw et al., 2011; Matsuda et al., 2013). This has been attributed to the loss of the FGF pathway inhibitor Dusp6 downstream of Lef1 leading to a premature incorporation of leading cells into epithelial rosettes (McGraw et al., 2011; Matsuda et al., 2013). The expansion of lef1 expression into the trailing region upon loss of Amotl2a function could conversely explain the delay in rosette assembly. That this delay does not result in an increased distance between deposited neuromasts could be explained by the fact that one additional neuromast form in this context due to the increase in cell number.\n\n### Yap1 mutant pLL primordia are smaller\n\nWe show for the first time that the Hippo signaling pathway effector Yap1 is required for the pLLP to contain a sufficient number of cells. Since Yap1 is already required before migration starts, we propose that one of Amotl2a's functions is to maintain low Yap1 activity as rosettes assemble in the trailing region. In amotl2a mutants, Yap1 activity would fail to be repressed and would remain higher for a longer period of time leading to overproliferation. Our data do not allow us to determine, however, whether the canonical Hippo pathway is active in the pLLP to additionally regulate Yap1 activity. More work will be required to answer this interesting question.\n\nA paper recently reported that morpholino-mediated knock-down of Yap1 in zebrafish leads to a reduction of the number of neuromasts but not of the size of the pLLP (Loh et al., 2014). They also reported a failure of hair cell differentiation that they attributed to a reduction of expression of the Wnt-target gene prox1. Intriguingly, both our yap1 morphants and mutants showed significantly different phenotypes with a reduction of the size of the pLLP but not of the number of neuromasts deposited. In addition, neither prox1 expression nor the numbers of hair cells were affected in yap1\u2212/\u2212 mutants. One possible explanation for these discrepancies is that our yap1 mutation does not affect all yap1 transcripts. This is, however, unlikely since it lies in the TEAD-binding domain, which is probably essential to Yap1 function. On the other hand, the authors also reported increased apoptosis and activation of the p53 pathway, two processes that have been shown to lead to a reduction in the number of neuromasts (Aman et al., 2011). This could explain the discrepancies of phenotypes between the previously reported yap1 morphants and our newly generated yap1\u2212/\u2212 mutants.\n\n### How is amotl2a inhibiting Yap1 activity in the pLLP?\n\nOur findings that Amotl2a physically and genetically interacts with the Hippo pathway component Yap1 to control proliferation in the pLLP is in agreement with several studies showing that Motin proteins physically interact with YAP and TAZ, sequester them in the cytoplasm, and inhibit their proliferation-promoting transcriptional activity (Varelas et al., 2010; Chan et al., 2011; Wang et al., 2011; Zhao et al., 2011). Our results provide the first evidence that a similar mechanism could be involved in vivo during vertebrate development to control tissue and organ size. Antibodies recognizing Yap1 will be necessary to determine its localization in the pLLP cells. The commercial Yap1 antibodies we have tested did not cross-react with the zebrafish protein. Intriguingly, none of the known YAP/TAZ target genes we looked at, including ctgfs, cyr61, myc, cyclins, and prox1, showed differences in expression level in amotl2a morphants (data not shown).\n\nAlternatively, rather than sequestering Yap1 into the cytoplasm, Amotl2a could promote Yap1 degradation. Motins have indeed been shown to promote the phosphorylation of YAP/TAZ by LATS1/2, which would not only lead to their cytoplasmic retention but also to their degradation (Paramasivam et al., 2011). Although there is currently no evidence that the canonical Hippo pathway is active in the pLLP, Amotl2a could be involved in controlling Yap1 stability.\n\n### What is the link between amotl2a, Yap1, and Lef1 in the pLLP?\n\nOur results indicate that Amotl2a limits the number of cells and thus the size of the migrating pLLP by repressing the activity of both Lef1 and Yap1. This is in agreement with the fact that both Lef1 (Gamba et al., 2010; McGraw et al., 2011; Valdivia et al., 2011; Matsuda et al., 2013) and Yap1 (this paper) are required for establishing and maintaining the correct number of cells in the pLLP.\n\nTo our knowledge, a direct link between Motin proteins and the Wnt/\u03b2-catenin pathway has been described only once, with a physical interaction between zebrafish Amotl2a and \u03b2-catenin (Li et al., 2012). Although we did not detect \u03b2-catenin in our Y2H screen nor identified an interaction between Amotl2a and \u03b2-catenin in our Y2H assay (not shown), Amotl2a might be physically interacting with \u03b2-catenin in vivo in the pLLP cells thereby limiting its access to the nucleus.\n\nOur data suggest that Yap1 and Lef1 function at least in part independently downstream of Amotl2a since the pLLP of both yap1 single mutants and lef1 morphants has less cells than amotl2a;yap1 double mutants and Lef1Mo-injected amotl2a mutants, respectively. Yet, it is also possible that both pathways are partially interconnected downstream of Amotl2a. Several recent studies have indeed reported cross-regulations between Yap/Taz and Wnt/\u03b2-catenin signaling (Varelas et al., 2010; Fish et al., 2011; Heallen et al., 2011; Azzolin et al., 2012; Imajo et al., 2012; Barry et al., 2013; Azzolin et al., 2014; Piccolo et al., 2014). In particular, Yap1 and \u03b2-catenin have been shown to physically interact and mutually repress each other in the cytoplasm while rather promoting each other's activity in the nucleus. Further work will be required to precisely dissect potential cross-talks between Yap1 and Wnt/\u03b2-catenin in the pLLP.\n\n### Is Amotl2a linking proliferation to morphogenesis?\n\nOne particularly interesting property of YAP/TAZ is their capacity to sense and respond to changes in biophysical properties of cells including cell density, cell polarity, cell shape, tension forces, and substrate stiffness (Dupont et al., 2011; Halder et al., 2012; Aragona et al., 2013; Gaspar and Tapon, 2014; Rauskolb et al., 2014). Our results raise the question whether Yap1 responds to such changes in the pLLP, and to which extent the response depends on Amotl2a function. We show that the repressive function of Amotl2a on Yap1 coincides with the assembly of cells into rosettes. Interestingly, these cells undergo a number of changes including epithelialization, acquisition of a columnar shape, and apical constriction via acto-myosin contraction (Lecaudey et al., 2008; Ernst et al., 2012). In principle, Yap1 could respond to any of these changes and Amotl2a could act as a mediator. First, tight junction-associated Amotl2a in newly formed rosettes could recruit and inhibit Yap1. In addition, Motins, including Amotl2a (Hultin et al., 2014), can bind actin and this interaction has been shown to compete with the binding of Motin to YAP (Ernkvist et al., 2006; Chan et al., 2013; Dai et al., 2013; Gaspar and Tapon, 2014). It is thus tempting to propose that Amotl2a could link actomyosin-based cell shape changes such as columnarization and/or apical constriction during rosette assembly to Yap1 activity and proliferation.\n\nFinally, at low density in culture, cells are flat and spread and this morphology promotes nuclear YAP accumulation (Wada et al., 2011). In contrast at high density, cells are compact and tall and this is associated with cytoplasmic localization of YAP. In the pLLP, cells in the leading region are rather flat while cells in the trailing region, which assemble into rosettes, are more columnar (Lecaudey et al., 2008). Thus, in the primordium, more than the cell density, the assembly of cells into rosettes and the associated changes in cell shape could regulate the cytoplasmic localization of Yap1 in an Amotl2a-dependent manner. Such a mechanism would allow to couple proliferation rate to organogenesis. Upon loss of Amotl2a, in contrast, this coupling would be lost so that proneuromasts assemble but proliferation is not restricted, leading to hyperplastic LLP and additional sensory organs.\n\n## Materials and methods\n\n### Zebrafish lines, mRNA, and morpholino injection\n\nAdult zebrafish were maintained under standard conditions and embryos were staged according to Kimmel et al. (1995). Transgenic lines Tg(\u22128.0cldnb:lynEGFP)zf106 (cldnb:gfp), Tg(hsp70l:dnfgfr1-EGFP)pd1, Tg(hsp70l:fgf3-Myc)zf115, Tg(7xTCF-Xla.Siam:nlsmCherry)ia5 and mutant lines fgf3/liat21142 and fgf10/daetbvbo have been described previously (Herzog et al., 2004; Lee et al., 2005; Norton et al., 2005; Thisse and Thisse, 2005; Lecaudey et al., 2008; Ernst et al., 2012; Moro et al., 2012). Heat-shock was performed at 39\u00b0C for 15 min. Capped mRNAs were transcribed with the SP6 mMessage mMachine Kit (Ambion). Mo are described in the Supplementary file 1D. Amotl2aMo was co-injected with a p53Mo to overcome unspecific cell death (Gerety and Wilkinson, 2011) and both uninjected and p53Mo-injected embryos were used as controls.\n\n### Cloning of FL cDNA and mutant form of amotl2a, yap1, and taz\n\nFL amotl2a, amotl2a\u0394STOP, MoBS_Amotl2a, yap1, and taz were amplified by PCR from zebrafish embryo cDNA using the primer pairs indicated in the Supplementary file 1B. PCR products were further cloned into pCS2, pCS2-gfp, pCS2-TdT, pGADT7, or pGBKT7 vectors as indicated in the Supplementary file 1C.\n\n### TALEN-mediated mutagenesis and screening\n\nThe mutant lines amotl2afu45, amotl2afu46, yap1fu47, and yap1fu48 were generated using TALEN. The TALE repeat array plasmid kit was a gift from Daniel Voytas and Adam Bogdanove obtained via Addgene (kit #1000000024). TALE repeat arrays were assembled following the Golden Gate TALEN assembly protocol originally described in Cermak et al. (2011), modified by the Voytas lab and available on the Addgene website (https://www.addgene.org/static/cms/filer_public/98/5a/985a6117-7490-4001-8f6a-24b2cf7b005b/golden_gate_talen_assembly_v7.pdf). Target sites and the corresponding repeat-variable diresidue (RVD) sequences were chosen using the online tool MoJo Hand (http://talendesign.org/) in exon 2 and 3 of yap1 and amotl2a genes, respectively. The array plasmids were fused to the Fok1 endonuclease in the GoldyTALEN backbone. After linearization, mRNAs were transcribed using the T3 mMessage mMachine Kit (Ambion by Life Technologies GmbH, Darmstadt, Germany) according to the manufacturer's instructions. The two mRNAs corresponding to the left and right arms were then mixed in equal quantities and injected into embryos at the one-cell stage. 20\u201330 embryos at 48 hpf were collected from each clutch and gDNA was extracted. The target sites were amplified using primers generating a 350\u2013600 bp long PCR product (Supplementary file 1E). Efficiency of the TALEN pair was estimated by digesting the PCR product with the restriction site present in the spacer of the target site. If a significant amount of uncut PCR product was observed, the rest of the injected embryos were further grown to adulthood. The resulting mosaic adult fish were out-crossed and genomic DNA was prepared from 50 embryos to identify potential mutations using the same PCR and digestion as described above. F1 fish were finally genotyped by fin clipping. The uncut band (carrying the mutation) was further amplified and sent to sequence.\n\nTo obtain MZ mutants, heterozygous carriers were incrossed and the progeny were raised to adulthood. Homozygous wild-type and mutants were identified by fin-clipping. In all experiments with MZ mutants, control embryos originate from incrosses of these homozygous wild-type and are thus related to the MZ mutants in a way that they share the same \u2018grand-parents\u2019.\n\n### Whole-mount ISH and immunohistochemistry\n\nISH and immunofluorescence staining were performed according to standard procedures (Lecaudey et al., 2004). amotl2a, taz, and yap1 ISH probes were amplified by PCR from zebrafish embryo cDNA using the primers indicated in the Supplementary file 1A. PCR products were cloned into the pGEM-T vector (Promega GmbH, Germany) according to manufacturer's instructions. The probes for cxcr7b, cxcr4b, lef1, and prox1 were previously published (Glasgow and Tomarev, 1998; Dorsky et al., 1999; Thisse and Thisse, 2005; Valentin et al., 2007). The following antibodies were used: rabbit anti-GFP (1:500; Torrey Pines Biolabs, Secaucus, NJ, United States), mouse anti-GFP (1:500; JL8, Takara Bio Europe/Clontech, France), mouse anti-ZO1 (1:500; GmbH), mouse anti-HCS-1 (1:20, HCS-1 was deposited to the DSHB, Iowa city, IA, United States by Corwin, J), and Alexa dye-conjugated antibodies (1:500; Molecular Probes). Rhodamine-phalloidin (Life Technologies GmbH) was used at 1:100.\n\n### EdU (5-ethynyl-2\u2032-deoxyuridine) treatment\n\n28\u201330 hpf embryos were dechorionated, incubated with 10 mM EdU solution (Click-iT EdU, Life Technologies GmbH) for 20 min on ice. After washing, embryos were incubated at 28.5\u00b0C for 1 hr to allow EdU incorporation and treated with the Click-iT reaction solution following manufacturer's instructions.\n\n### Y2H screen and assay\n\nThe Y2H screen was performed by Hybrigenics (Paris, France) with the FL coding sequence of zebrafish amotl2a (aa 1\u2013721). 80 millions interactions were analyzed. The Y2H assay was performed using the Matchmaker system and the AH109 yeast strain (Clontech) according to the manufacturer's instructions. amotl2a was fused to the Gal4 DNA-binding domain in the pGBKT7 vector. Zebrafish yap1, yap1\u0394WW1,2 (WQDP and WLDP motifs mutated to AQDA and ALDA), taz and taz\u0394WW (WHDP motif mutated to AHDA) were fused to the Gal4 activation domain in the pGADT7 vector. All constructs fused to the DNA-binding domain were tested for autoactivation. To check for protein interactions, colonies were scraped off the plates, diluted to an OD600 of 0.4, patched on selective plates lacking histidine, and grown for 3\u20134 days.\n\n### Yeast cell lysates and Western blot\n\nYeast cell lysates were prepared according to the protocol from Kushnirov with some modifications (Kushnirov, 2000). Yeast cultures were grown to a logarithmic stage to reach an OD600 0.4\u20130.8. Cultures of 2 ml were harvested by centrifugation. After discarding the supernatant, the pellets were resuspended in 500 \u03bcl of 0.1 M NaOH, transferred to 2 ml eppendorf tubes, and incubated at room temperature for 10 min followed by centrifugation at 14,000 rpm for 2 min at room temperature. After carefully discarding the supernatant, the pellet was resuspended in 1\u00d7 sample buffer slightly modified from standard Laemmli (25 mM Tris pH6.8, 30% glycerol, 5% Sodium Dodecyl Sulfate (SDS), 1% bromophenol blue, and 5% \u03b2-mercaptoethanol) and dissolved by full speed shaking on a Thermoblock set at 37\u00b0C for 20\u201330 min. The samples were then boiled at 95\u00b0C for 5 min. The cell debris was removed by centrifugation at 14,000 rpm for 5 min at room temperature. The supernatant was transferred to a fresh eppendorf tube and stored at \u221220\u00b0C until loading.\n\n15 \u03bcl of each of the yeast lysates was electrophoresed on a 10% SDS polyacrylamide gel and transferred to polyvinylidene difluoride (PVDF) membrane (Millipore, by Merck Chemicals GmbH, Germany). The proteins were analyzed by Western blotting with the following antibodies:monoclonal mouse antibody 9E10 (anti-c-myc, Covance, by BioLegend, United Kingdom),monoclonal mouse antibody DM1A (anti-\u03b1-tubulin, Sigma-Aldrich Chemie GmbH, Germany).\n\n### Live imaging, image analysis, and statistical analysis\n\nImaging and image analysis were performed as previously described (Ernst et al., 2012). Quantifications of data are presented as boxplot in which the central line is the median of the group and the edges of the box are the 25th and 75th percentiles. The black vertical lines extend to the most extreme data points not considered outliers. In all cell count boxplots, each blue dot corresponds to one data point (one primordium). Statistical analyses were performed with GraphPad Prism6 and Matlab using the Welch's t-test. p values are indicated on each figure and/or in the result part. Differences in cell counts between groups are differences between mean values (and not between median values shown in the boxplots) and are expressed in percentage.\n\n### Image enhancement, cell segmentation, and automated cell counting\n\nAutomated cell counting was done using the GFP channel of cldnb:gfp transgenic embryos (Figure 3\u2014figure supplement 1A). To exclude that the delayed migration in amotl2a morphants would impact on the pLLP cell number, cell counts were done when the primordium had reached the middle of the yolk extension (\u2018mid-migration\u2019, Figure 2\u2014figure supplement 1A,C) both in control embryos (about 30 hpf) and in amotl2a morphants and mutants.\n\nBecause the cell membrane is a plane-like structure in three dimensions, we used anisotropic diffusion (Weickert, 1998) to enhance local consistency in structure and suppress noise (Figure 3\u2014figure supplement 1B). The diffusion tensor, which enhances plane-like structures, was constructed from the local Hessian matrix. We then computed the smallest eigenvalue of the local Hessian matrices, which is a good indicator of the cell membrane (Sato et al., 2000). The cell segmentation was done by watershed segmentation with h-minima transform (Soille, 2003) on the eigenvalue image. Finally, very small segments were filtered out: their regions are merged into neighboring segments by applying a second watershed segmentation (Figure 3\u2014figure supplement 1C). A number of publicly available tools, for example, \u2018Icy\u2019 (de Chaumont et al., 2012) or Matlab programs, can be used for these image-processing steps.\n\nTo generate a segmentation mask of the pLLP, the 3D images were smoothed with a small Gaussian kernel. An optimal threshold was estimated for converting the smoothed intensity image to a binary image (e.g., using the \u2018graythresh\u2019 function in Matlab), so that the intraclass variance of the two regions \u20180\u2019 and \u20181\u2019 is minimized. Based on this pLLP segmentation mask (Figure 3\u2014figure supplement 1D), we obtained the cell numbers by counting each segment that had more than 75% of its volume inside the mask. Visual monitoring of two experiments validated the accuracy of the segmentation (Figure 3\u2014figure supplement 1).\n",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "98eccb77-d663-445f-a2dd-95cabed2e6b4",
+      "submission_id": "37ca726f-faea-40e8-8693-2841db64a367",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tanya T Whitfield, University of Sheffield , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08201.043](https://doi.org/10.7554/eLife.08201.043)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cAmotl2a interacts with the Hippo pathway to control tissue size in zebrafish\u201d for peer review at eLife. Your submission has been evaluated by Janet Rossant (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Tanya Whitfield (Reviewing Editor) and Ajay Chitnis (peer reviewer).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs you will see, while Reviewer 2 is positive about the paper, Reviewers 1 and 3 have some significant concerns, which should be addressed in any resubmission and would require re-review.\n\nThe authors should pay particular attention to the following points. Please see the full reviews below for reference.\n\n1) The Yap mutant should be tested to show when Yap is required for proliferation in the lateral line primordium.\n\n2) Relevant literature (Loh et al., 2014) should be cited and discussed.\n\n3) The relationship to Wnt signalling in both mutants should be addressed.\n\n4) Care should be taken not to over interpret the data. In particular, the description of the degree of overproliferation and involvement of the Hippo kinase cascade should be toned down (including in the title and summary). In addition, the conclusions about the physical interaction between Amotl2a and Yap1 should be treated with more caution, unless the authors can demonstrate stability of the mutant Amotl2a protein. Please see comments from Reviewers 1 and 3.\n\nReviewer #1:\n\nThis is an interesting paper that examines control on tissue size in the zebrafish lateral line primordium. The manuscript is well written and the data are all very clear and well controlled, with thorough statistical analysis. All morpholino experiments have been repeated in mutants and give comparable results, so this study is a nice demonstration that morpholinos can be reliable in some contexts. The Discussion is very speculative, and includes various further hypotheses for mechanistic insight (such as sequestration of Yap by Amotl2 in the cytoplasm, relationship between Fgf, Amotl2 and Yap, and changes in cell shape affecting Yap activity) that are not tested.\n\n1) The further data mentioned in the Discussion (that Yap target genes are not affected in amotl2 morphants, and the different timing requirements for Amotl2 and Yap in proliferation in the primordium), do not fit easily with the authors' model. The authors suggest that Yap is required for proliferation in the primordium at earlier stages. Since they have Yap mutants available, this difference in timing requirement should be investigated and the data shown.\n\n2) The authors have omitted to cite another paper that deals with Yap expression and function in the zebrafish lateral line primordium (Loh et al., Science Reports 2014). There are some findings that are contradictory to the present manuscript, and these should be acknowledged and discussed. Firstly, Loh et al. find a reduced number of neuromasts in the yap1 morphant, whereas the current manuscript states that this is \u201cnot the case\u201d for their yap1 morphants (in the subsection \u201cControl of proliferation and tissue size in the zebrafish pLLP\u201d, last paragraph). The Loh et al. study also undertook a microarray study with their morphants, and reported changes in Wnt signalling pathway genes, whereas the current manuscript states that Wnt signalling is unaffected in their amotl2a morphants, but do not show the data (second paragraph of the aforementioned subsection). In order to address these discrepancies, and given the known importance of Wnt signalling in lateral line proliferation, the authors should show an analysis of Wnt signalling in both the amotl2a and yap1 mutants, and should cite and discuss the Loh et al. study.\n\n3) The overproliferation in the primordium is described in the manuscript as \u201cmassive\u201d (in the summary) or \u201cstrong\u201d (in the Introduction and subsection \u201cControl of proliferation and tissue size in the zebrafish pLLP\u201d), but this seems to me to be an overstatement. The estimation of cell increase in morphants and MZ mutants is measured as \u201calmost 40%\u201d (in the subsections \u201cAmotl2a is essential to restrict the number of cells in the pLLP, and thus to limit its size\u201d and \u201cTALEN-induced non-sense mutations in amotl2a phenocopy the amotl2a knock-down phenotype\u201d). As the authors have shown nicely, this is due to an increase in the proliferation index, but assuming there is no cell death, this only corresponds to one extra round of division in 40% of the cells in the primordium by the mid-migration point. The mutant data indicate that there is no difference in cell number per neuromast, and just one extra neuromast in the posterior line after migration (Figure 4). Would it not be more accurate to describe the overproliferation in the primordium as mild?\n\n4) The entire embryo in the images of the amotl2a MZ mutant appears to be significantly bigger than the controls (Figure 4E, N). Is this the case, or is this within the natural variation in size within the batch? Would the mutation be expected to have a systemic effect, given the expression pattern of the gene?\n\nReviewer #2:\n\nThe paper by Agarwala et al. describes the role of Amotl2a and the Hippo pathway in regulating the size of the pLLP. The paper is excellent. The experiments are well laid out and logical and the conclusions are well supported by the observations. The paper describes how FGF-dependent amotl2a expression in maturing proneuromasts regulates proliferation in a trailing zone to regulate the size of the pLLP. The observations are supported by experiments using both morpholino knock-down and mutants. The authors discuss the various interesting ways in which Amotl2a might conceivably regulate Yap1 function and how Amotl2a might link cellular morphogenesis, tension, shape etc. to proliferation. The authors are appropriately cautious about making strong conclusions about any specific mechanism, leaving these interesting open questions for future studies.\n\nI believe the paper offers insight that will be of great value not only to the community studying the fascinating posterior lateral line system but the broader scientific community that is interested in how growth is regulated in any organ system. I do not have any significant problems with the paper in its current form. I'd like to say that I had the opportunity to review an earlier paper describing this study at an earlier stage of development and the current study addresses all the previous concerns I had to tell a simpler and much more compelling story. I look forward to seeing the paper published.\n\nReviewer #3:\n\nIn this manuscript, Agawala et al. report a new in vivo function of amotl2a. The authors claim that this is the first report of involvement of Hippo pathway in size regulation in the LL system and that this report provides the \u201cfirst in vivo evidence that the Hippo/Motin interaction is essential to limit tissue during development\u201d.\n\nTo investigate the in vivo function of Motin proteins, the authors used zebrafish posterior lateral line primodium (pLLP) that allows dynamic cell behavioral analyses for organogenesis. Although most of the loss-of-function analyses were carried out by using morpholinos, they confirmed the phenotype by the TALEN induced mutants of amotl2a and YAP. They first showed that amotl2a expression is dependent on FGF signaling. They next showed that Amotl2a limits the pLLP size by restricting YAP mediated cell proliferation. Finally, based on the rescue experiment they concluded that restricting cell proliferation is mediated by the physical interaction of Amotl2a and YAP. Whereas the over-proliferation of pPPL in the amotl2a mutant is interesting, the mechanisms presented in the manuscript are mostly reported previously, e.g. FGF dependent expression of amotl2a and physical interaction of Amotl2a and YAP. Some of the conclusions are overstated. Indeed, there are alternative interpretations for the result of the rescue experiment as detailed below. Furthermore, more in depth analysis taking advantage of the zebrafish in vivo system would be necessary to publish this manuscript in this journal.\n\n1) The authors investigated whether physical interaction of YAP and Amotl2a is required for the Amotl2a function based on the rescue experiment of amotl2a morphant by the expression of mutant amotl2a without YAP binding sites. From the failure of the rescue the authors concluded: \u201cThis result indicated that the physical interaction between Amotl2a and Yap1 is required for the proliferation-limiting activity of Amotl2a\u201d. My concern is that the negative result (failure of rescue) even together with the evidence of the physical interaction does not fully support such a strong statement. The failure of rescue could be due to the instability of the mutant Amotl2a without YAP binding sites. The authors have to check the stability of the mutant Amotl2a protein. If the mutant Amotl2a is not less stable, overexpression of this protein could interfere with the interaction of endogenous Amotl2a and YAP and it might induce the dominant-negative phenotype.\n\n2) In the Abstract they concluded: \u201cWe further provide the first in vivo evidence that the Hippo/Motin interaction is essential to limit tissue size during development.\u201d Even if YAP is required for the limitation of pPPL size, it is premature to conclude this without presenting the activation status of the Hippo core kinase signaling. Amotl2a might inhibit YAP nuclear localization without involving the Hippo kinase cascade as previously suggested.\n\n3) There are some too strong statements with \u201cindicated\u201d but not fully supported data. For instance: \u201cThis indicated that Amotl2a might participate [\u2026]\u201d (in the second paragraph of the subsection \u201cAmotl2a is not essential for tight junction and proneuromast assembly in the pLLP\u201d). The third paragraph, as well as the last, of the Results section also need to be attenuated.\n",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf92304b-7aef-447b-b638-0aa991fea522",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C1",
+      "claim": "amotl2a is expressed in the pLLP throughout migration with reduced or no expression in the most leading and trailing domains.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining in situ hybridization (ISH) with Green Fluorescent Protein (GFP) immunostaining in cldnb:gfp transgenic embryos, we showed that amotl2a was expressed throughout migration (Figure 1A\u2013C) in most of the pLLP with reduced or no expression in the most leading and trailing domains (Figure 1D\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental ISH and immunostaining data shown in Figure 1A-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "0d64d6c3-9a75-484a-bbb2-5298ee2a30e6",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C2",
+      "claim": "amot, amotl1, and amotl2b are not expressed in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "The other motin genes amot, amotl1, and amotl2b were not expressed in the pLLP (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ISH data shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "58581b0f-49fa-4392-8e7a-ed4364fbd2d6",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C3",
+      "claim": "Amotl2a-TdT is present in the cytoplasm and strongly concentrated at the most apical, constricted part of cells in assembling proneuromasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Amotl2a-TdT was present in the cytoplasm and was strongly concentrated at the most apical, constricted part of the cells in assembling proneuromasts (Figure 1J\u2013K\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data showing Amotl2a-TdT localization in Figure 1J-K'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "2386e63b-ad53-4338-9f0b-caa493b371b8",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C4",
+      "claim": "Amotl2a-TdT appears as an apical ring in deposited neuromasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it appeared as an apical ring in deposited neuromasts (Figure 1L,L\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data in Figure 1L,L'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "71de210b-4cb2-4dee-bf68-07ebbc65cc03",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C5",
+      "claim": "FGF signaling is necessary for amotl2a expression in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "amotl2a expression was specifically lost in the pLLP of fgf3\u2212/\u2212;fgf10\u2212/\u2212 double mutants (Figure 1M\u2013R), upon expression of a dominant negative FGFR1 receptor (Figure 1\u2014figure supplement 1D\u2013I), and in embryos treated with the FGFR inhibitor SU5402 (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by loss-of-function experiments in FGF mutants and pharmacological inhibition shown in Figure 1M-R and Figure 1\u2014figure supplement 1D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "372ee2cc-3486-4d81-90ae-f3fbbd325f5d",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C6",
+      "claim": "FGF signaling is sufficient for amotl2a expression in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ectopic activation of FGF signaling using the Tg(hsp70l:fgf3-Myc)zf115 transgenic line led to an expansion of the amotl2a expression domain in the pLLP as compared to controls (Figure 1S\u2013X and Figure 1\u2014figure supplement 1J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gain-of-function experiments using FGF overexpression shown in Figure 1S-X and Figure 1\u2014figure supplement 1J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "88769811-7826-48fd-826e-9819504a55f2",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C7",
+      "claim": "Amotl2aMo efficiently blocks the translation of a fusion between the ATG region of amotl2a and GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "At low doses, Amotl2aMo did not lead to any obvious morphological defects (Figure 2\u2014figure supplement 1A\u2013D) (Wang et al., 2011) and efficiently blocked the translation of a fusion between the ATG region of amotl2a and GFP (MoBS_Amotl2a-GFP, Figure 2\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by morpholino validation experiments shown in Figure 2\u2014figure supplement 1E,F and cited from Wang et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "13ea5531-3ab2-4b11-8818-33c8ff2990d1",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C8",
+      "claim": "Amotl2a is not essential for tight junction assembly in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "While mature rosettes had similarly strong apical actin and ZO1 staining in morphant and control embryos (white arrows in Figure 2C\u2013F), the distance between the tip of the pLLP and the most recent fully assembled rosette (yellow arrows), appeared increased in amotl2a morphants (double arrowhead in Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ZO1 and phalloidin staining data shown in Figure 2A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "bf9a9ecc-49e7-4d2e-b5fe-768f1b10a096",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C9",
+      "claim": "Rosette assembly is slightly delayed in amotl2a morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "While mature rosettes had similarly strong apical actin and ZO1 staining in morphant and control embryos (white arrows in Figure 2C\u2013F), the distance between the tip of the pLLP and the most recent fully assembled rosette (yellow arrows), appeared increased in amotl2a morphants (double arrowhead in Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data showing increased distance to assembled rosettes in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "340554cc-afbc-4f57-9405-be921dfcfa16",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C10",
+      "claim": "Neuromasts are deposited normally in amotl2a morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, neuromasts were deposited normally (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data in Figure 2G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "5dbc2ece-ba20-40c7-914e-8277422d03ed",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C11",
+      "claim": "The pLLP of amotl2a morphant embryos migrates 35% slower than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the pLLP of amotl2a morphant embryos migrated 35% slower than controls (Figure 2I\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging and migration speed quantification shown in Figure 2I-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "76895f92-534a-42ef-8acb-37a1a39dad51",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C12",
+      "claim": "All amotl2a morphant primordia reach the tip of the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, all primordia reached the tip of the tail (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data in Figure 2G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "e0c21ff9-a19f-4555-bcb6-09a94be3ed60",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C13",
+      "claim": "Expression of cxcr4b and cxcr7b is not detectably affected in amotl2a morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the two G-protein-coupled receptors cxcr4b and cxcr7b was not detectably affected in morphants (Figure 2\u2014figure supplement 2), suggesting that a deregulation of their expression is unlikely to account for the decrease in migration speed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ISH data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "61956234-7b95-4f70-894b-f5dc1658ca1b",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C14",
+      "claim": "The size of amotl2a morphant pLLP is increased throughout the migration process.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the size of amotl2a morphant pLLP appeared obviously increased throughout the migration process (Figure 3A\u2013C, also Figure 2I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data in Figure 3A-C and Figure 2I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "aa7bb615-9e13-45dd-83de-8abdd059b6d8",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C15",
+      "claim": "The number of cells in amotl2a morphant pLLP is increased by 35\u201338% as compared to either uninjected or p53Mo-injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell counts indicated that the number of cells in amotl2a morphant pLLP was increased by 35\u201338% as compared to either uninjected or p53Mo-injected embryos (Figure 3E, p = 1.58E-40 and p = 9.53E-31, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by automated cell counting data shown in Figure 3E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "876d291b-9de9-4116-a90e-af6eecd60735",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C16",
+      "claim": "Co-injection of Amotl2aMo with amotl2am RNA partially rescues the morphant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-injection of Amotl2aMo with amotl2am RNA partially rescued the morphant phenotype (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 3D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "f16245c1-734a-4bb3-9b05-cf83bd9a7801",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C17",
+      "claim": "Overexpression of amotl2a at high concentration induces a moderate but significant decrease in cell number (-15%, p = 5.20E-07).",
+      "claim_type": "EXPLICIT",
+      "source": "While overexpression of amotl2a at the concentration used for the rescue experiment did not significantly reduce the number of cells in the pLLP (Figure 3F), injection at a higher concentration induced a moderate, but significant decrease in cell number (Figure 3\u2014figure supplement 2, \u221215%, p = 5.20E-07).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data from overexpression experiments shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "cd032fc9-f83c-4b7c-9fd4-6238f5649e19",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C18",
+      "claim": "There is a significant increase in the EdU index of about 15% in the pLLP of amotl2a morphants as compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant increase in the EdU index of about 15% in the pLLP of amotl2a morphants as compared to controls (Figure 3J, p < 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU proliferation assay data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "f0463de1-1f55-439b-ae93-f92262d09174",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C19",
+      "claim": "There is a 34% increase in proliferation in the trailing region of amotl2a morphant pLLP compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was no difference in the proliferation index in the leading region between morphants and controls, there was a 34% increase in the trailing region (Figure 3K, p < 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU proliferation assay data analyzed separately for leading and trailing regions shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "55f7e10a-7bd8-4278-99d2-1ca42ca199d7",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C20",
+      "claim": "Two TALEN-induced amotl2a alleles (fu45 and fu46) introduce a frame-shift and a premature STOP codon in the third exon.",
+      "claim_type": "EXPLICIT",
+      "source": "Among several identified amotl2a alleles, two were further analyzed that introduced a frame-shift and a premature STOP codon in the third exon (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data and schematic representation in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "e0ff2fc6-4552-4aa9-8ba6-692a48bcf7f4",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C21",
+      "claim": "Both amotl2a mutant alleles (fu45 and fu46) have identical phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both alleles had identical phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated based on phenotypic analysis of the two alleles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "a5ef2de7-3ec6-47db-980b-f8039a2d87a4",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C22",
+      "claim": "amotl2a\u2212/\u2212 homozygous mutants are morphologically indistinguishable from their siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "amotl2a\u2212/\u2212 homozygous mutants were morphologically indistinguishable from their siblings (Figure 4C\u2013F) but had larger primordia (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "330e290f-2486-476b-bffb-ece2f91fb207",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C23",
+      "claim": "amotl2a\u2212/\u2212 mutants have larger primordia than siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "amotl2a\u2212/\u2212 homozygous mutants were morphologically indistinguishable from their siblings (Figure 4C\u2013F) but had larger primordia (Figure 4G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data in Figure 4G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "d2619733-3385-44d4-9b16-dd18494c1099",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C24",
+      "claim": "Cell number in amotl2a\u2212/\u2212 mutant pLLP is increased by 21% compared to siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell count analyses revealed a significant increase in cell numbers of 21% in amotl2a\u2212/\u2212 mutants as compared to their siblings (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "dfb258bc-5c8f-45cf-86d3-b574ea84ba5b",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C25",
+      "claim": "pLLP migrates 32% slower in amotl2a\u2212/\u2212 mutants compared to controls (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition and as in morphants, pLLP migrated slower in amotl2a\u2212/\u2212 mutants as compared to controls (\u221232%, p < 0.0001, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by migration speed quantification data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "b138cc9a-9845-4811-894c-033ecee4acdc",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C26",
+      "claim": "Cell counts in MZamotl2a\u2212/\u2212 mutant pLLP are increased by 40% compared to controls (p = 1.18E-21).",
+      "claim_type": "EXPLICIT",
+      "source": "pLLP cell counts were further increased to 40% in MZamotl2a\u2212/\u2212 mutants as compared to controls (Figure 4J\u2013L, p = 1.18E-21), an increase similar to that quantified in amotl2a morphants (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data in Figure 4J-L with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "46aca6b2-6839-4601-a1c4-a3147cf5837e",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C27",
+      "claim": "Deposited neuromasts and interneuromast chains do not contain more cells at 48 hpf in amotl2a morphants compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither deposited neuromasts nor interneuromast chains comprised more cells at 48 hpf in morphants as compared to controls (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data in deposited structures shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "9dfcdaa5-de56-4bae-9445-c5a81eac9208",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C28",
+      "claim": "MZamotl2a\u2212/\u2212 mutant neuromasts contain the same number of cells as controls at 72 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, MZamotl2a\u2212/\u2212 mutant neuromasts also contained the same number of cells as controls at 72 hpf (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data in neuromasts shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "132cfdd0-fd31-4b82-b7df-581bfccffca3",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C29",
+      "claim": "There is on average one additional neuromast deposited in amotl2a morphants and mutants compared to control embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, there was on average one additional neuromast deposited in morphants (not shown) and mutants (Figure 4M\u2013O) as compared to control embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by neuromast counting data shown in Figure 4M-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "7c18e711-3a05-4786-98dd-b05571f9738a",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C30",
+      "claim": "Yap1 and Taz were identified as potential Amotl2a interaction-partners in a Y2H screen with scores A and B, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "25 proteins were identified as potential Amotl2a interaction-partners and were given a score ranging from A (very high confidence in the interaction) to D (moderate confidence in the interaction). The Hippo pathway effectors Yap1 and Taz were among the 10 strongest identified partners with an A and B score, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Y2H screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "a3e2e62e-e2ee-48c8-9fd1-2ea2c5967a47",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C31",
+      "claim": "The Selected Interaction Domain of Yap1 and Taz includes the evolutionarily conserved WW motifs (2 for Yap1 and 1 for Taz).",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed that in both cases, the amino acid (aa) sequence shared by all prey fragments (Selected Interaction Domain) included the evolutionarily conserved WW motifs (2 for Yap1 and 1 for Taz, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Y2H screen analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "8b45a637-869d-46bc-862c-da1bbc687435",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C32",
+      "claim": "Mutations of the WW motifs of Yap1 and Taz abolish the interaction with Amotl2a.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutations of the WW motifs of Yap1 and Taz abolished the corresponding interaction with Amotl2a (pink in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Y2H assay data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "74078181-02f6-4394-a5e4-2d24a7db50da",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C33",
+      "claim": "Mutations of the LPTY and PPEY motifs of Amotl2a abolish the interaction with WT Yap1 and Taz.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutations of the LPTY and PPEY motifs of Amotl2a, but not of either of them alone, abolished the interaction with WT Yap1 and Taz (green and yellow, respectively, in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Y2H assay data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "0f8cc545-c0b7-46af-93be-783e106f28b9",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C34",
+      "claim": "Zebrafish yap1 and taz are broadly expressed during development including in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes were broadly expressed during development including in the pLLP (Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ISH data shown in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "25904af2-b31a-48e8-9646-dd5299d12b6a",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C35",
+      "claim": "The pLLP of yap1 morphant embryos has about 15% less cells than uninjected controls (p = 2.65E-12).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell counts indicated that the pLLP of yap1 morphant embryos had about 15% less cells than uninjected controls (p = 2.65E-12) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 5E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "0ae67c0d-a2d4-4eb3-a568-8ca64d2151ac",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C36",
+      "claim": "yap1\u2212/\u2212 pLLP shows a decrease in cell number of 19% (p = 1.25E-05).",
+      "claim_type": "EXPLICIT",
+      "source": "Cell counts confirmed that yap1\u2212/\u2212 pLLP also showed a decrease in cell number of 19% (p = 1.25E-05) (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 5\u2014figure supplement 1C with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "03a7afb2-498d-4b29-a936-377921261864",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C37",
+      "claim": "At 24 hpf, the pLLP of MZyap1\u2212/\u2212 mutants is 15% smaller than related controls (p = 4.12E-08).",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hpf, the pLLP of MZyap1\u2212/\u2212 mutants was already 15% smaller than related controls (p = 4.12E-08).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell counting data at 24 hpf with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "8b40eba5-cc7d-4f4d-a6bf-7a4abe1bb003",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C38",
+      "claim": "At 30 hpf, the pLLP of MZyap1\u2212/\u2212 mutants is 21% smaller than related controls (p = 2.15E-10).",
+      "claim_type": "EXPLICIT",
+      "source": "This difference continued to increase with time to reach 21% at 30 hpf (p = 2.15E-10) and 27% at 36 hpf (p = 2.41E-14) (Figure 5N\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data at 30 hpf shown in Figure 5N-P with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "a6dae3a6-6c7c-4148-9cf0-fda0f34ceb5f",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C39",
+      "claim": "At 36 hpf, the pLLP of MZyap1\u2212/\u2212 mutants is 27% smaller than related controls (p = 2.41E-14).",
+      "claim_type": "EXPLICIT",
+      "source": "This difference continued to increase with time to reach 21% at 30 hpf (p = 2.15E-10) and 27% at 36 hpf (p = 2.41E-14) (Figure 5N\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data at 36 hpf shown in Figure 5N-P with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "7223be57-19a4-4c4b-b332-074a1551598c",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C40",
+      "claim": "MZyap1\u2212/\u2212 mutants do not show a decreased number of neuromasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, neither our morphants (not shown) nor our MZyap1\u2212/\u2212 mutants showed a decreased number of neuromasts (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by neuromast counting data shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "16cfaaac-6830-47d5-a062-87f84630d430",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C41",
+      "claim": "MZyap1\u2212/\u2212 mutant neuromasts do not contain fewer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these neuromasts did not contain fewer cells (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data in neuromasts shown in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "75691dc6-1b67-49d9-9b36-7468da9b098c",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C42",
+      "claim": "The number of hair cells per neuromast is not affected in MZyap1\u2212/\u2212 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, neither the number of hair cells per neuromast (Figure 5\u2014figure supplement 1F\u2013H) nor the expression of prox1 in the pLLP (Figure 5\u2014figure supplement 1I\u2013L\u2032) was affected in our MZyap1\u2212/\u2212 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by hair cell counting data shown in Figure 5\u2014figure supplement 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "f532dfb7-9fc4-4a31-ae8b-11d523fb3194",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C43",
+      "claim": "The expression of prox1 in the pLLP is not affected in MZyap1\u2212/\u2212 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, neither the number of hair cells per neuromast (Figure 5\u2014figure supplement 1F\u2013H) nor the expression of prox1 in the pLLP (Figure 5\u2014figure supplement 1I\u2013L\u2032) was affected in our MZyap1\u2212/\u2212 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ISH data for prox1 shown in Figure 5\u2014figure supplement 1I-L'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "98a9b998-aa77-47dc-a695-1fd9fcdef44d",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C44",
+      "claim": "The number of cells in the pLLP of amotl2a;yap1 double morphants is significantly reduced by 34% as compared to amotl2a morphants (p = 1.53E-16).",
+      "claim_type": "EXPLICIT",
+      "source": "Automated cell counts revealed that the number of cells in the pLLP of amotl2a;yap1 double morphants was significantly reduced as compared to amotl2a morphants (34% reduction, p = 1.53E-16) and was not significantly different from controls (p = 0.098) (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by automated cell counting data shown in Figure 6E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "90e89de1-5171-4999-9a3f-e89fc0d29090",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C45",
+      "claim": "The number of cells in the pLLP of amotl2a;yap1 double morphants is not significantly different from controls (p = 0.098).",
+      "claim_type": "EXPLICIT",
+      "source": "Automated cell counts revealed that the number of cells in the pLLP of amotl2a;yap1 double morphants was significantly reduced as compared to amotl2a morphants (34% reduction, p = 1.53E-16) and was not significantly different from controls (p = 0.098) (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by automated cell counting data shown in Figure 6E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "7574cdf3-afdb-4a63-b82c-08d92d0ee1dd",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C46",
+      "claim": "The 37% increase in MZamotl2a\u2212/\u2212 pLLP (p = 4.62E-11) is suppressed in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants and comparable to controls (p = 0.06).",
+      "claim_type": "EXPLICIT",
+      "source": "These observations were confirmed by automated cell counts: the 37% increase in MZamotl2a\u2212/\u2212 pLLP (p = 4.62E-11) was suppressed in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants and comparable to controls (p = 0.06).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by automated cell counting data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "f81864b9-79f0-45e5-9713-1ccf126dedfd",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C47",
+      "claim": "MZyap1\u2212/\u2212 mutants have 27% fewer cells than MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants (p = 1.09E-11).",
+      "claim_type": "EXPLICIT",
+      "source": "MZyap1\u2212/\u2212 mutants were, however, still lower than double mutants (\u221227%, p = 1.09E-11) (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 6\u2014figure supplement 1E with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "bdbfc536-47fa-4bbb-9028-75023341e476",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C48",
+      "claim": "The increased proliferation rate in the trailing region of amotl2a morphants is partially suppressed in embryos co-injected with Amotl2aMo and Yap1Mo (p = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed, the proliferation rate in amotl2a morphants was significantly increased in the trailing region as compared to controls (control vs Amotl2aMo: 0.27 \u00b1 0.01 and 0.40 \u00b1 0.01, p < 0.0001); and this increase was partially suppressed in embryos co-injected with Amotl2aMo and Yap1Mo (0.32 \u00b1 0.02, p = 0.003) (Figure 6F\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU proliferation assay data shown in Figure 6F-K with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "75803970-4dac-4a37-8c6f-dbfd616123a6",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C49",
+      "claim": "amotl2am can partially rescue the increase in cell counts of amotl2a morphants (p = 6.36E-08).",
+      "claim_type": "EXPLICIT",
+      "source": "While amotl2am could partially rescue the increase in cell counts of amotl2a morphants as shown above (p = 6.36E-08), amotl2amLP could not (p = 0.18) (Figure 6L\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 6L-P with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "22bca6ff-77d2-4c00-abc7-8f488ab837da",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C50",
+      "claim": "amotl2amLP cannot rescue the increase in cell counts of amotl2a morphants (p = 0.18).",
+      "claim_type": "EXPLICIT",
+      "source": "While amotl2am could partially rescue the increase in cell counts of amotl2a morphants as shown above (p = 6.36E-08), amotl2amLP could not (p = 0.18) (Figure 6L\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data shown in Figure 6L-P with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "bbbd6c86-4f2e-495d-a8e9-375a6a7c86ab",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C51",
+      "claim": "Wild-type Amotl2a and Amotl2a mutated in LPTY and PPEY motifs have comparable stability in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The two proteins had a comparable stability in yeast (Figure 6\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 6\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "8be290d2-03c1-4368-98c7-f5bf6a985f7e",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C52",
+      "claim": "Both amotl2a morphants and mutant embryos show a slight but significant expansion of the lef1 expression domain into the trailing region of the primordium as compared to their respective controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Both amotl2a morphants and mutant embryos showed a slight but significant expansion of the lef1 expression domain into the trailing region of the primordium as compared to their respective controls (Figure 7A\u2013E and Figure 7\u2014figure supplement 1F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ISH data for lef1 shown in Figure 7A-E and Figure 7\u2014figure supplement 1F-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "2c032a97-3f7b-41ac-9dd0-e0efec820621",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C53",
+      "claim": "The expression of lef1 is not modified in MZyap1\u2212/\u2212 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the expression of lef1 was not modified in MZyap1\u2212/\u2212 mutants (Figure 7\u2014figure supplement 1K\u2013N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ISH data for lef1 shown in Figure 7\u2014figure supplement 1K-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "fbd01d90-ad1d-4459-888e-59907e238b15",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C54",
+      "claim": "Cell counts in Lef1Mo-injected MZamotl2a\u2212/\u2212 mutants are significantly reduced by 23% as compared to MZamotl2a\u2212/\u2212 mutants (p = 5.32E-08).",
+      "claim_type": "EXPLICIT",
+      "source": "While MZamotl2a\u2212/\u2212 mutants showed bigger primordia as expected (36%, p = 2.89E-09) (Figure 7G, see 'a' in N), lef1 morphants at this stage did not show a significant reduction in pLLP cell counts (p = 0.1) (Figure 7F,J and 'b' in N). In contrast, cell counts in Lef1Mo-injected MZamotl2a\u2212/\u2212 mutants were significantly reduced as compared to MZamotl2a\u2212/\u2212 mutants (\u221223%, p = 5.32E-08, Figure 7N 'c') and equivalent to controls (p = 0.28, Figure 7N 'd').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 7N with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "cfb86f4a-9cf1-4011-9559-c18ae9357123",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C55",
+      "claim": "Cell counts in Lef1Mo-injected MZamotl2a\u2212/\u2212 mutants are equivalent to controls (p = 0.28).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cell counts in Lef1Mo-injected MZamotl2a\u2212/\u2212 mutants were significantly reduced as compared to MZamotl2a\u2212/\u2212 mutants (\u221223%, p = 5.32E-08, Figure 7N 'c') and equivalent to controls (p = 0.28, Figure 7N 'd').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 7N with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "d3ea366b-1b3a-4510-aa21-1124f707d8d2",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C56",
+      "claim": "When MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 is injected with Lef1Mo, the number of cells in the pLLP is significantly lower by 19% than in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants (p = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed when we injected MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 with Lef1Mo, the number of cells in the pLLP was significantly lower than in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants (\u221219%, p = 0.001, Figure 7N 'f') and was not significantly different from that of MZyap1\u2212/\u2212 mutants ('g' in Figure 7N, p = 0.07).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 7N with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "754937b3-af37-4873-ba1e-83a9774febee",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C57",
+      "claim": "When MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 is injected with Lef1Mo, the number of cells in the pLLP is not significantly different from that of MZyap1\u2212/\u2212 mutants (p = 0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed when we injected MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 with Lef1Mo, the number of cells in the pLLP was significantly lower than in MZamotl2a\u2212/\u2212;MZyap1\u2212/\u2212 double mutants (\u221219%, p = 0.001, Figure 7N 'f') and was not significantly different from that of MZyap1\u2212/\u2212 mutants ('g' in Figure 7N, p = 0.07).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 7N with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "315d09f8-def0-4279-adc3-ad9d152e4f43",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C58",
+      "claim": "The Hippo signaling pathway plays a major role in organ growth control.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Hippo signaling pathway plays a major role in organ growth control, how it senses and responds to increased cell density is still unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "cd052e7a-824e-488f-a65c-6a18d9cca3fe",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C59",
+      "claim": "The Hippo signaling pathway was first identified in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "First identified in Drosophila (Pan, 2007), the Hippo signaling pathway is highly conserved in vertebrates (Halder and Johnson, 2010; Pan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Pan, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "ccfd9655-7e0b-44f5-9c6f-9e44940a49c3",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C60",
+      "claim": "The Hippo signaling pathway is highly conserved in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "First identified in Drosophila (Pan, 2007), the Hippo signaling pathway is highly conserved in vertebrates (Halder and Johnson, 2010; Pan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Halder and Johnson, 2010 and Pan, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "31624c76-4d11-44bb-b283-c03b897c0c96",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C61",
+      "claim": "Contact inhibition of proliferation is largely mediated by the Hippo signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Contact inhibition of proliferation was found to be largely mediated by the Hippo signaling pathway (Zhao et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zhao et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "2aa76bb7-4ab0-42c6-a494-80eca18f75e7",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C62",
+      "claim": "AMOT, AMOTL1, and AMOTL2 are scaffold proteins associated with tight-junctions, required for tight junction integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "AMOT, AMOTL1, and AMOTL2 are scaffold proteins associated with tight-junctions, required for tight junction integrity (Bratt et al., 2002; Sugihara-Mizuno et al., 2007; Zheng et al., 2009) and endothelial cell migration (Troyanovsky et al., 2001; Bratt et al., 2005; Aase et al., 2007; Wang et al., 2011; Hultin et al., 2014; Moleirinho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bratt et al., 2002; Sugihara-Mizuno et al., 2007; Zheng et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "d20ad2e2-5fb7-4e37-bad1-363dbf41c617",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C63",
+      "claim": "Motin proteins are required for endothelial cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "AMOT, AMOTL1, and AMOTL2 are scaffold proteins associated with tight-junctions, required for tight junction integrity (Bratt et al., 2002; Sugihara-Mizuno et al., 2007; Zheng et al., 2009) and endothelial cell migration (Troyanovsky et al., 2001; Bratt et al., 2005; Aase et al., 2007; Wang et al., 2011; Hultin et al., 2014; Moleirinho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Troyanovsky et al., 2001; Bratt et al., 2005; Aase et al., 2007; Wang et al., 2011; Hultin et al., 2014; Moleirinho et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "d5654140-bf81-48d8-a358-b72003f16ec8",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C64",
+      "claim": "Motin proteins interact with YAP and TAZ via their PPxY motifs and the WW motifs of YAP and TAZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Motin proteins have further been shown to interact with YAP and TAZ via their PPxY motifs and the WW motifs of YAP and TAZ (Chan et al., 2011; Wang et al., 2011; Zhao et al., 2011; Hirate et al., 2013; Hong, 2013; Lucci et al., 2013; Yi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chan et al., 2011; Wang et al., 2011; Zhao et al., 2011; Hirate et al., 2013; Hong, 2013; Lucci et al., 2013; Yi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "df5b5602-41cb-4eb7-903e-999d692eb654",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C65",
+      "claim": "The physical interaction between Motin proteins and YAP/TAZ leads to the inhibition of YAP/TAZ via cytoplasmic retention, independent of the canonical Hippo pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, this physical interaction leads to the inhibition of YAP/TAZ via cytoplasmic retention, similar to, but independent of the canonical Hippo pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from cited literature about Motin-YAP/TAZ interactions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "2bd745a5-d1a5-4c60-b466-0cde7ae9392b",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C66",
+      "claim": "There is a competition between YAP/TAZ and F-actin to bind to Motin proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there is a competition between YAP/TAZ and F-actin to bind to Motin proteins (Mana-Capelli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mana-Capelli et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "6901139f-d328-4478-acb0-0674638d71a6",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C67",
+      "claim": "The pLL primordium consists of about 100 progenitors that delaminate from a cranial placode and migrate posteriorly towards the tip of the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The pLL primordium (pLLP) consists of about 100 progenitors that delaminate from a cranial placode and migrate posteriorly towards the tip of the tail (Metcalfe et al., 1985; Ghysen and Dambly-Chaudiere, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Metcalfe et al., 1985; Ghysen and Dambly-Chaudiere, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "9b06758c-c63d-4fd6-ba3a-b1aaeb03077d",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C68",
+      "claim": "Proneuromast assembly requires Fibroblast Growth Factor (FGF) signaling and the downstream effectors Shroom3 and Rock2a to activate non-muscle myosin and apical-constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "This assembly requires Fibroblast Growth Factor (FGF) signaling and the downstream effectors Shroom3 and Rock2a to activate non-muscle myosin and apical-constriction (Lecaudey et al., 2008; Nechiporuk and Raible, 2008; Ernst et al., 2012; Harding and Nechiporuk, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lecaudey et al., 2008; Nechiporuk and Raible, 2008; Ernst et al., 2012; Harding and Nechiporuk, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "c8954c5f-1eeb-43e5-8d1b-cd94f1ea7449",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C69",
+      "claim": "Wnt/\u03b2-catenin signaling promotes proliferation in the leading region of the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt/\u03b2-catenin signaling partially compensates for this loss by promoting proliferation in the leading region (Gamba et al., 2010; Aman et al., 2011; McGraw et al., 2011; Valdivia et al., 2011; Matsuda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gamba et al., 2010; Aman et al., 2011; McGraw et al., 2011; Valdivia et al., 2011; Matsuda et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "41660c35-7c5a-446b-bbf9-f5559e9e9507",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C70",
+      "claim": "Amotl2a has been reported to be expressed in the migrating pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the role of the Motin protein Angiomotin-like 2a (Amotl2a) that has been reported to be expressed in the migrating pLLP, to be a target of FGF signaling (Huang et al., 2007), to inhibit Wnt/\u03b2-catenin signaling during early zebrafish development (Li et al., 2012), and is a potential candidate to interact with the Hippo signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Huang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "39cfb4fc-dac3-4a15-a15f-29f2e933312b",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C71",
+      "claim": "Amotl2a is a target of FGF signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the role of the Motin protein Angiomotin-like 2a (Amotl2a) that has been reported to be expressed in the migrating pLLP, to be a target of FGF signaling (Huang et al., 2007), to inhibit Wnt/\u03b2-catenin signaling during early zebrafish development (Li et al., 2012), and is a potential candidate to interact with the Hippo signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Huang et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "8a3c5d3f-84d4-4125-a331-efe9a4d793c0",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C72",
+      "claim": "Amotl2a inhibits Wnt/\u03b2-catenin signaling during early zebrafish development.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the role of the Motin protein Angiomotin-like 2a (Amotl2a) that has been reported to be expressed in the migrating pLLP, to be a target of FGF signaling (Huang et al., 2007), to inhibit Wnt/\u03b2-catenin signaling during early zebrafish development (Li et al., 2012), and is a potential candidate to interact with the Hippo signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Li et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "4e3fcbc1-39bc-49f3-8448-388a738f8a04",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C73",
+      "claim": "Amotl2a limits proliferation in the trailing part of the pLLP by forming a ternary complex with Yap1 and \u03b2-catenin.",
+      "claim_type": "IMPLICIT",
+      "source": "This leads us to propose that Amotl2a, possibly by forming a ternary complex with Yap1 and \u03b2-catenin, limits proliferation in the trailing part of the pLLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed mechanism based on the authors' interpretation of their data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "ac6f33b6-f306-421d-9e38-35c91ac4c9bf",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C74",
+      "claim": "This is the first report of a mechanism that limits proliferation in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the first mechanism that limits proliferation in the pLLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated by the authors based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "ae36dcf8-9da8-48d1-8534-928351ae3885",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C75",
+      "claim": "This is the first report implicating the Hippo effector Yap1 in size control in the pLLP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we implicate the Hippo effector Yap1 in size control in the pLLP for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated by the authors based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "a89027f2-1f42-4c44-8313-d4ad3537a5cb",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C76",
+      "claim": "Motin proteins play a major role in limiting organ growth during development by negatively regulating Yap/Taz and Wnt/\u03b2-catenin activities in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results strongly suggest that Motin proteins play a major role in limiting organ growth during development by negatively regulating Yap/Taz and Wnt/\u03b2-catenin activities in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the authors' experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "1d61d75e-6b45-4154-aac6-ba839cf24c98",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C77",
+      "claim": "The physical interaction between Amotl2a and Yap1 is required for the proliferation-limiting activity of Amotl2a.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggested that the physical interaction between Amotl2a and Yap1 is required for the proliferation-limiting activity of Amotl2a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from rescue experiments with mutated Amotl2a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "1534d606-6624-428a-b9d6-bb205cf1776c",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C78",
+      "claim": "Amotl2a could link actomyosin-based cell shape changes such as columnarization and/or apical constriction during rosette assembly to Yap1 activity and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus tempting to propose that Amotl2a could link actomyosin-based cell shape changes such as columnarization and/or apical constriction during rosette assembly to Yap1 activity and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative proposal based on the authors' data and known properties of Motin proteins.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "b092efd6-912c-4376-ab75-d01518406850",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "claim_id": "C79",
+      "claim": "Loss of Amotl2a leads to uncoupling of proliferation from rosette assembly, resulting in hyperplastic pLLP and additional sensory organs.",
+      "claim_type": "IMPLICIT",
+      "source": "Such a mechanism would allow to couple proliferation rate to organogenesis. Upon loss of Amotl2a, in contrast, this coupling would be lost so that proneuromasts assemble but proliferation is not restricted, leading to hyperplastic LLP and additional sensory organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a mechanistic interpretation of the observed phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5948cd89-6e77-4730-aa5c-2074c03294b8",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Amotl2a is specifically expressed in the pLLP during migration with reduced expression in the leading and trailing domains, and localizes to the apical constricted regions of assembling proneuromasts and deposited neuromasts. Other motin family members (amot, amotl1, amotl2b) are not expressed in the pLLP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are supported by ISH and immunofluorescence data (Figure 1A-L'). The spatial expression pattern and subcellular localization are clearly documented with appropriate imaging techniques. The negative expression of other motin genes (C2) provides specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "a2a96c7c-7c96-43b1-ab5d-f1726e738192",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FGF signaling is both necessary and sufficient for amotl2a expression in the pLLP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by loss-of-function experiments (fgf3/fgf10 double mutants, dominant negative FGFR1, pharmacological inhibition) and gain-of-function experiments (FGF overexpression) shown in Figure 1M-X. The bidirectional genetic and pharmacological evidence strongly supports the regulatory relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "bdc2d228-c165-47ba-9054-5abaa6dd9a92",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Amotl2a is not essential for tight junction assembly or neuromast deposition, but rosette assembly is slightly delayed in amotl2a morphants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 are supported by morpholino validation (Figure 2\u2014figure supplement 1E,F) and ZO1/phalloidin staining (Figure 2A-H). The data show that while tight junctions form normally and neuromasts are deposited, there is an increased distance to the most recent assembled rosette, indicating a delay.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "4c892865-65f9-4bce-be79-9bcdfe05891e",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The pLLP migrates 35% slower in amotl2a morphants but still reaches the tip of the tail, and this is not due to altered expression of cxcr4b or cxcr7b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by time-lapse imaging and migration speed quantification (Figure 2I-M) and ISH data (Figure 2\u2014figure supplement 2). The migration defect is quantified with statistical significance, and the mechanistic exclusion of chemokine receptor misexpression is documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "2e92cdf1-196a-48fc-87e8-38a6d2f8ab2c",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of Amotl2a leads to increased pLLP size due to a 35-38% increase in cell number, which can be partially rescued by co-injection with morpholino-resistant amotl2a RNA. High-dose overexpression of amotl2a causes a moderate decrease in cell number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are supported by automated cell counting with strong statistical significance (Figure 3A-F, Figure 3\u2014figure supplement 2). The rescue experiment validates morpholino specificity, and the overexpression data suggest a dose-dependent effect. The automated counting algorithm is described in methods and validated in Figure 3\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "66455908-7a97-4711-a7b7-78e16816b04f",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Amotl2a restricts proliferation specifically in the trailing region of the pLLP, with a 34% increase in proliferation in this region in morphants while the leading region is unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by EdU proliferation assays with regional analysis (Figure 3G-K). The spatial specificity of the proliferation defect correlates with the expression pattern of amotl2a and provides mechanistic insight. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TALEN-generated amotl2a mutants (fu45 and fu46) phenocopy the morpholino phenotype with increased pLLP size (21% in zygotic, 40% in maternal-zygotic mutants) and reduced migration speed (32% slower), confirming the specificity of the morpholino results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 are supported by sequencing data (Figure 4A), cell counting (Figure 4I,J-L), and migration analysis (Figure 4\u2014figure supplement 1). The genetic validation with two independent alleles showing identical phenotypes strongly supports the morpholino findings. The MZ mutant phenotype matches the morphant phenotype in magnitude.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "ee21ad17-5304-47f2-8e31-17af5a5be296",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Loss of Amotl2a does not increase the size of deposited neuromasts or interneuromast chains but results in one additional neuromast being deposited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by cell counting in deposited structures at 48 and 72 hpf (Figure 4\u2014figure supplement 2A,B) and neuromast counting (Figure 4M-O). This suggests that the extra cells in the migrating pLLP are used to form an additional organ rather than larger organs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "daee0de6-21ff-48a0-ab2d-0a721825044f",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Amotl2a physically interacts with Yap1 and Taz via conserved WW motifs (in Yap1/Taz) and LPTY/PPEY motifs (in Amotl2a), as identified by Y2H screen and validated by mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by Y2H screen results and validation experiments (Figure 5A,B). The interaction is confirmed by reciprocal mutagenesis of the binding motifs, which abolishes the interaction. This provides strong molecular evidence for direct protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "2c16ffa8-595f-4059-a496-d0e91cf79651",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Yap1 is required for the pLLP to reach normal size, with yap1 morphants and mutants showing 15-27% reduction in cell number that increases over developmental time (15% at 24 hpf, 21% at 30 hpf, 27% at 36 hpf in MZyap1 mutants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by ISH data (Figure 5\u2014figure supplement 1A,B), morpholino knockdown (Figure 5C-E), and TALEN-generated mutants with time-course analysis (Figure 5F-P). The progressive reduction in cell number suggests Yap1 is required throughout pLLP development. Statistical significance is strong for all comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "eab2eac2-a63a-4d31-ac3c-cd1ce65c1712",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MZyap1 mutants do not show reduced neuromast number, neuromast cell number, hair cell number, or prox1 expression, contrasting with some previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by neuromast counting, cell counting, hair cell counting, and ISH data (Figure 5\u2014figure supplement 1D-L'). The authors explicitly note discrepancies with prior morpholino studies and discuss potential explanations. The genetic mutant data are more reliable than morpholino data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "57b0169a-f46a-4189-a7b0-2a7a1c70c8dc",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Reducing Yap1 levels suppresses the increased cell number in amotl2a morphants and mutants, with double morphants/mutants showing cell numbers comparable to controls, demonstrating genetic epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by automated cell counting in double morphants (Figure 6A-E) and double mutants (Figure 6\u2014figure supplement 1A-E) with strong statistical significance. The suppression is nearly complete, though MZyap1 mutants still have fewer cells than double mutants, suggesting additional factors contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "4ae6a749-14fb-471b-982c-02d8ce4f158e",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The increased proliferation in the trailing region of amotl2a morphants is partially suppressed by co-injection with Yap1Mo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by EdU proliferation assays in double morphants (Figure 6F-K) with statistical significance (p=0.003). The partial suppression is consistent with the cell counting data and suggests Yap1 mediates the proliferation phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "ff38b37b-a0ef-406d-83c8-e0deb5c38eab",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The physical interaction between Amotl2a and Yap1 is required for Amotl2a's proliferation-limiting function, as demonstrated by rescue experiments showing that wild-type amotl2a rescues the morphant phenotype but amotl2a mutated in the Yap1-binding motifs (LPTY/PPEY) does not, despite comparable protein stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 and C77 are supported by rescue experiments (Figure 6L-P) and Western blot analysis (Figure 6\u2014figure supplement 1F). The failure of the interaction-deficient mutant to rescue, combined with equal protein stability, strongly suggests the physical interaction is functionally required. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "f646dd0c-db00-4bf3-b318-d08936428db0",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Loss of Amotl2a causes expansion of lef1 expression into the trailing region of the pLLP, while lef1 expression is not affected in MZyap1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by ISH data in morphants, mutants, and MZyap1 mutants (Figure 7A-E, Figure 7\u2014figure supplement 1F-N). The spatial expansion is quantified and statistically significant. The lack of effect in yap1 mutants suggests Lef1 regulation is independent of Yap1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "c22d6ace-1575-41f6-acbd-421a9b27f5af",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Lef1 knockdown suppresses the increased cell number in amotl2a mutants and in amotl2a;yap1 double mutants, demonstrating that Lef1 mediates part of the hyperplasia phenotype independently of Yap1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by cell counting in Lef1Mo-injected mutants (Figure 7F-N) with strong statistical significance. The suppression in double mutants (C56-C57) demonstrates that Lef1 contributes to the phenotype even when Yap1 is absent, supporting independent pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "1837bab4-7ecf-496c-93e8-e16840a61686",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that Amotl2a limits proliferation in the pLLP by forming a ternary complex with Yap1 and \u03b2-catenin, potentially linking actomyosin-based cell shape changes during rosette assembly to proliferation control, and that loss of this coupling leads to hyperplastic pLLP and additional sensory organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C76, C78, and C79 are speculative mechanistic proposals based on the authors' data and prior literature. While the data support roles for both Yap1 and Lef1/\u03b2-catenin downstream of Amotl2a, the ternary complex model and the link to actomyosin are not directly demonstrated. The \u03b2-catenin interaction is cited from prior work (Li et al., 2012) but not validated here. These are reasonable hypotheses requiring further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "aa22bd68-85f1-486d-b321-1d1af1e89807",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This study reports the first mechanism limiting proliferation in the pLLP and the first implication of Yap1 in pLLP size control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by the comprehensive data presented showing Amotl2a's role in limiting proliferation and Yap1's role in size control. The novelty claims are reasonable given the literature review in the introduction and discussion. These represent significant advances in understanding pLLP development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    },
+    {
+      "id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116",
+      "content_id": "c5edf12b-f76d-4086-981c-e0075556ae8c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The introduction establishes the background knowledge about the Hippo pathway, Motin proteins, YAP/TAZ regulation, and the zebrafish lateral line system based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C72 are background claims supported by appropriate citations to the literature. These establish the context for the current study and are generally accepted knowledge in the field. The citations appear appropriate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:58:51.809015Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf92304b-7aef-447b-b638-0aa991fea522",
+      "result_id": "5948cd89-6e77-4730-aa5c-2074c03294b8"
+    },
+    {
+      "claim_id": "0d64d6c3-9a75-484a-bbb2-5298ee2a30e6",
+      "result_id": "5948cd89-6e77-4730-aa5c-2074c03294b8"
+    },
+    {
+      "claim_id": "58581b0f-49fa-4392-8e7a-ed4364fbd2d6",
+      "result_id": "5948cd89-6e77-4730-aa5c-2074c03294b8"
+    },
+    {
+      "claim_id": "2386e63b-ad53-4338-9f0b-caa493b371b8",
+      "result_id": "5948cd89-6e77-4730-aa5c-2074c03294b8"
+    },
+    {
+      "claim_id": "71de210b-4cb2-4dee-bf68-07ebbc65cc03",
+      "result_id": "a2a96c7c-7c96-43b1-ab5d-f1726e738192"
+    },
+    {
+      "claim_id": "372ee2cc-3486-4d81-90ae-f3fbbd325f5d",
+      "result_id": "a2a96c7c-7c96-43b1-ab5d-f1726e738192"
+    },
+    {
+      "claim_id": "88769811-7826-48fd-826e-9819504a55f2",
+      "result_id": "bdc2d228-c165-47ba-9054-5abaa6dd9a92"
+    },
+    {
+      "claim_id": "13ea5531-3ab2-4b11-8818-33c8ff2990d1",
+      "result_id": "bdc2d228-c165-47ba-9054-5abaa6dd9a92"
+    },
+    {
+      "claim_id": "bf9a9ecc-49e7-4d2e-b5fe-768f1b10a096",
+      "result_id": "bdc2d228-c165-47ba-9054-5abaa6dd9a92"
+    },
+    {
+      "claim_id": "340554cc-afbc-4f57-9405-be921dfcfa16",
+      "result_id": "bdc2d228-c165-47ba-9054-5abaa6dd9a92"
+    },
+    {
+      "claim_id": "5dbc2ece-ba20-40c7-914e-8277422d03ed",
+      "result_id": "4c892865-65f9-4bce-be79-9bcdfe05891e"
+    },
+    {
+      "claim_id": "76895f92-534a-42ef-8acb-37a1a39dad51",
+      "result_id": "4c892865-65f9-4bce-be79-9bcdfe05891e"
+    },
+    {
+      "claim_id": "e0c21ff9-a19f-4555-bcb6-09a94be3ed60",
+      "result_id": "4c892865-65f9-4bce-be79-9bcdfe05891e"
+    },
+    {
+      "claim_id": "61956234-7b95-4f70-894b-f5dc1658ca1b",
+      "result_id": "2e92cdf1-196a-48fc-87e8-38a6d2f8ab2c"
+    },
+    {
+      "claim_id": "aa7bb615-9e13-45dd-83de-8abdd059b6d8",
+      "result_id": "2e92cdf1-196a-48fc-87e8-38a6d2f8ab2c"
+    },
+    {
+      "claim_id": "876d291b-9de9-4116-a90e-af6eecd60735",
+      "result_id": "2e92cdf1-196a-48fc-87e8-38a6d2f8ab2c"
+    },
+    {
+      "claim_id": "f16245c1-734a-4bb3-9b05-cf83bd9a7801",
+      "result_id": "2e92cdf1-196a-48fc-87e8-38a6d2f8ab2c"
+    },
+    {
+      "claim_id": "cd032fc9-f83c-4b7c-9fd4-6238f5649e19",
+      "result_id": "66455908-7a97-4711-a7b7-78e16816b04f"
+    },
+    {
+      "claim_id": "f0463de1-1f55-439b-ae93-f92262d09174",
+      "result_id": "66455908-7a97-4711-a7b7-78e16816b04f"
+    },
+    {
+      "claim_id": "55f7e10a-7bd8-4278-99d2-1ca42ca199d7",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "e0ff2fc6-4552-4aa9-8ba6-692a48bcf7f4",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "a5ef2de7-3ec6-47db-980b-f8039a2d87a4",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "330e290f-2486-476b-bffb-ece2f91fb207",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "d2619733-3385-44d4-9b16-dd18494c1099",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "dfb258bc-5c8f-45cf-86d3-b574ea84ba5b",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "b138cc9a-9845-4811-894c-033ecee4acdc",
+      "result_id": "ce14218a-6f0e-45a3-bf97-ed557a67a8aa"
+    },
+    {
+      "claim_id": "46aca6b2-6839-4601-a1c4-a3147cf5837e",
+      "result_id": "ee21ad17-5304-47f2-8e31-17af5a5be296"
+    },
+    {
+      "claim_id": "9dfcdaa5-de56-4bae-9445-c5a81eac9208",
+      "result_id": "ee21ad17-5304-47f2-8e31-17af5a5be296"
+    },
+    {
+      "claim_id": "132cfdd0-fd31-4b82-b7df-581bfccffca3",
+      "result_id": "ee21ad17-5304-47f2-8e31-17af5a5be296"
+    },
+    {
+      "claim_id": "7c18e711-3a05-4786-98dd-b05571f9738a",
+      "result_id": "daee0de6-21ff-48a0-ab2d-0a721825044f"
+    },
+    {
+      "claim_id": "a3e2e62e-e2ee-48c8-9fd1-2ea2c5967a47",
+      "result_id": "daee0de6-21ff-48a0-ab2d-0a721825044f"
+    },
+    {
+      "claim_id": "8b45a637-869d-46bc-862c-da1bbc687435",
+      "result_id": "daee0de6-21ff-48a0-ab2d-0a721825044f"
+    },
+    {
+      "claim_id": "74078181-02f6-4394-a5e4-2d24a7db50da",
+      "result_id": "daee0de6-21ff-48a0-ab2d-0a721825044f"
+    },
+    {
+      "claim_id": "0f8cc545-c0b7-46af-93be-783e106f28b9",
+      "result_id": "2c16ffa8-595f-4059-a496-d0e91cf79651"
+    },
+    {
+      "claim_id": "25904af2-b31a-48e8-9646-dd5299d12b6a",
+      "result_id": "2c16ffa8-595f-4059-a496-d0e91cf79651"
+    },
+    {
+      "claim_id": "0ae67c0d-a2d4-4eb3-a568-8ca64d2151ac",
+      "result_id": "2c16ffa8-595f-4059-a496-d0e91cf79651"
+    },
+    {
+      "claim_id": "03a7afb2-498d-4b29-a936-377921261864",
+      "result_id": "2c16ffa8-595f-4059-a496-d0e91cf79651"
+    },
+    {
+      "claim_id": "8b40eba5-cc7d-4f4d-a6bf-7a4abe1bb003",
+      "result_id": "2c16ffa8-595f-4059-a496-d0e91cf79651"
+    },
+    {
+      "claim_id": "a6dae3a6-6c7c-4148-9cf0-fda0f34ceb5f",
+      "result_id": "2c16ffa8-595f-4059-a496-d0e91cf79651"
+    },
+    {
+      "claim_id": "7223be57-19a4-4c4b-b332-074a1551598c",
+      "result_id": "eab2eac2-a63a-4d31-ac3c-cd1ce65c1712"
+    },
+    {
+      "claim_id": "16cfaaac-6830-47d5-a062-87f84630d430",
+      "result_id": "eab2eac2-a63a-4d31-ac3c-cd1ce65c1712"
+    },
+    {
+      "claim_id": "75691dc6-1b67-49d9-9b36-7468da9b098c",
+      "result_id": "eab2eac2-a63a-4d31-ac3c-cd1ce65c1712"
+    },
+    {
+      "claim_id": "f532dfb7-9fc4-4a31-ae8b-11d523fb3194",
+      "result_id": "eab2eac2-a63a-4d31-ac3c-cd1ce65c1712"
+    },
+    {
+      "claim_id": "98a9b998-aa77-47dc-a695-1fd9fcdef44d",
+      "result_id": "57b0169a-f46a-4189-a7b0-2a7a1c70c8dc"
+    },
+    {
+      "claim_id": "90e89de1-5171-4999-9a3f-e89fc0d29090",
+      "result_id": "57b0169a-f46a-4189-a7b0-2a7a1c70c8dc"
+    },
+    {
+      "claim_id": "7574cdf3-afdb-4a63-b82c-08d92d0ee1dd",
+      "result_id": "57b0169a-f46a-4189-a7b0-2a7a1c70c8dc"
+    },
+    {
+      "claim_id": "f81864b9-79f0-45e5-9713-1ccf126dedfd",
+      "result_id": "57b0169a-f46a-4189-a7b0-2a7a1c70c8dc"
+    },
+    {
+      "claim_id": "bdbfc536-47fa-4bbb-9028-75023341e476",
+      "result_id": "4ae6a749-14fb-471b-982c-02d8ce4f158e"
+    },
+    {
+      "claim_id": "75803970-4dac-4a37-8c6f-dbfd616123a6",
+      "result_id": "ff38b37b-a0ef-406d-83c8-e0deb5c38eab"
+    },
+    {
+      "claim_id": "22bca6ff-77d2-4c00-abc7-8f488ab837da",
+      "result_id": "ff38b37b-a0ef-406d-83c8-e0deb5c38eab"
+    },
+    {
+      "claim_id": "bbbd6c86-4f2e-495d-a8e9-375a6a7c86ab",
+      "result_id": "ff38b37b-a0ef-406d-83c8-e0deb5c38eab"
+    },
+    {
+      "claim_id": "1d61d75e-6b45-4154-aac6-ba839cf24c98",
+      "result_id": "ff38b37b-a0ef-406d-83c8-e0deb5c38eab"
+    },
+    {
+      "claim_id": "8be290d2-03c1-4368-98c7-f5bf6a985f7e",
+      "result_id": "f646dd0c-db00-4bf3-b318-d08936428db0"
+    },
+    {
+      "claim_id": "2c032a97-3f7b-41ac-9dd0-e0efec820621",
+      "result_id": "f646dd0c-db00-4bf3-b318-d08936428db0"
+    },
+    {
+      "claim_id": "fbd01d90-ad1d-4459-888e-59907e238b15",
+      "result_id": "c22d6ace-1575-41f6-acbd-421a9b27f5af"
+    },
+    {
+      "claim_id": "cfb86f4a-9cf1-4011-9559-c18ae9357123",
+      "result_id": "c22d6ace-1575-41f6-acbd-421a9b27f5af"
+    },
+    {
+      "claim_id": "d3ea366b-1b3a-4510-aa21-1124f707d8d2",
+      "result_id": "c22d6ace-1575-41f6-acbd-421a9b27f5af"
+    },
+    {
+      "claim_id": "754937b3-af37-4873-ba1e-83a9774febee",
+      "result_id": "c22d6ace-1575-41f6-acbd-421a9b27f5af"
+    },
+    {
+      "claim_id": "4e3fcbc1-39bc-49f3-8448-388a738f8a04",
+      "result_id": "1837bab4-7ecf-496c-93e8-e16840a61686"
+    },
+    {
+      "claim_id": "a89027f2-1f42-4c44-8313-d4ad3537a5cb",
+      "result_id": "1837bab4-7ecf-496c-93e8-e16840a61686"
+    },
+    {
+      "claim_id": "1534d606-6624-428a-b9d6-bb205cf1776c",
+      "result_id": "1837bab4-7ecf-496c-93e8-e16840a61686"
+    },
+    {
+      "claim_id": "b092efd6-912c-4376-ab75-d01518406850",
+      "result_id": "1837bab4-7ecf-496c-93e8-e16840a61686"
+    },
+    {
+      "claim_id": "ac6f33b6-f306-421d-9e38-35c91ac4c9bf",
+      "result_id": "aa22bd68-85f1-486d-b321-1d1af1e89807"
+    },
+    {
+      "claim_id": "ae36dcf8-9da8-48d1-8534-928351ae3885",
+      "result_id": "aa22bd68-85f1-486d-b321-1d1af1e89807"
+    },
+    {
+      "claim_id": "315d09f8-def0-4279-adc3-ad9d152e4f43",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "cd052e7a-824e-488f-a65c-6a18d9cca3fe",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "ccfd9655-7e0b-44f5-9c6f-9e44940a49c3",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "31624c76-4d11-44bb-b283-c03b897c0c96",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "2aa76bb7-4ab0-42c6-a494-80eca18f75e7",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "d20ad2e2-5fb7-4e37-bad1-363dbf41c617",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "d5654140-bf81-48d8-a358-b72003f16ec8",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "df5b5602-41cb-4eb7-903e-999d692eb654",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "2bd745a5-d1a5-4c60-b466-0cde7ae9392b",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "6901139f-d328-4478-acb0-0674638d71a6",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "9b06758c-c63d-4fd6-ba3a-b1aaeb03077d",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "c8954c5f-1eeb-43e5-8d1b-cd94f1ea7449",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "41660c35-7c5a-446b-bbf9-f5559e9e9507",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "39cfb4fc-dac3-4a15-a15f-29f2e933312b",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    },
+    {
+      "claim_id": "8a3c5d3f-84d4-4125-a331-efe9a4d793c0",
+      "result_id": "323f63e2-4d63-44a0-b02f-9cdbfd5a8116"
+    }
+  ],
+  "comparisons": []
+}

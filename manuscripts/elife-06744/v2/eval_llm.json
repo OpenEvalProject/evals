@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C45",
+      "C46",
+      "C47",
+      "C69",
+      "C73"
+    ],
+    "result": "The crystal structure reveals a novel MutS sliding clamp conformation where the subunits tilt ~30\u00b0 across each other, the connector domains rotate ~160\u00b0, and the clamp domains cross over to create a new DNA channel. This ATP-induced conformation is proposed to be the MutS sliding clamp state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C36, C45, C46 are directly supported by crystallographic data at 4.7-7.6 \u00c5 resolution across multiple crystal forms (C31, C32). The conformational changes are validated by FRET experiments (C57-C68) showing ATP-dependent movements of labeled residues and DNA repositioning. The structural features (tilting, connector rotation, channel formation) are consistently observed and measured from the crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C88",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The MutS sliding clamp creates two distinct interfaces for MutL binding: interface 1 (~590 \u00c5\u00b2) between MutL and the ATPase/core domains of one MutS subunit, and interface 2 (~670 \u00c5\u00b2) between MutL and the repositioned connector domain of the other MutS subunit. Both interfaces are required for MutL binding and MMR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two interfaces are directly observed in the crystal structure (C41-C43, C86, C88). Validation includes: (1) site-specific crosslinking between residues 7.4 \u00c5 apart (C77, C78), (2) mutagenesis showing interface mutants abolish MMR function (C81, C82, C102), (3) SPR assays demonstrating reduced MutL binding for interface mutants (C100), and (4) complementation assays confirming in vivo defects (C81, C82). The simultaneous availability of both interfaces explains MutL specificity for the sliding clamp (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "FRET experiments validate that ATP induces conformational changes in MutS that reposition DNA from the mismatch-binding site to a new positively-charged channel. Residues 449 move closer together (50 \u00c5 to 43 \u00c5), connector domain residue 246 moves toward residue 798, and DNA moves away from residue 449 while approaching residue 336.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple FRET measurements with site-specifically labeled MutS variants provide converging evidence for the conformational changes (C57, C60, C63, C64). The observed FRET changes are quantified (1.5-fold reduction at position 449, >3.6-fold increase at position 336) and consistent with distances measured in the crystal structure (C59). The data demonstrate ATP-dependent DNA repositioning to the new channel (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C132",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "MutS loads MutL onto DNA through the sliding clamp conformation. SPR experiments show that crosslinked MutL greatly reduces MutS release from DNA compared to MutS alone, and mutations in the MutL DNA-binding groove (R266E, R162E/R266E/R316E) progressively abolish this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SPR data directly demonstrate that crosslinked MutL slows MutS release from DNA (C127, C130), with a single complex sufficient for the effect (C132). The DNA-binding groove mutations show dose-dependent effects: R266E reduces DNA binding and retention (C136, C137), while the triple mutant completely abolishes both (C138, C139). This provides strong evidence that MutL binds DNA when interacting with the MutS sliding clamp (C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C155"
+    ],
+    "result": "Stopped-flow FRET/FP experiments reveal a two-step mechanism: (1) MutS binds and kinks mismatched DNA, then (2) ATP triggers mismatch release and sliding clamp formation. When MutL is present, it loads onto DNA after mismatch release, keeping the complex bound while straightening the DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stopped-flow experiments clearly resolve two kinetically distinct events (C146): initial DNA kinking concurrent with binding (C142, C147), followed by a second event with increased FP but decreased FRET (C148, C149). The interpretation is supported by controls showing no kinking with homoduplex DNA (C143) and the observation that crosslinked MutL prevents complex dissociation (C150). The temporal separation of mismatch recognition and MutL loading is directly demonstrated (C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C167"
+    ],
+    "result": "MutL DNA-binding ability is essential for MMR function. DNA-binding mutants of MutL show reduced MutH activation in vitro and impaired MMR in vivo, demonstrating that loading of MutL onto DNA after mismatch recognition is required for downstream effector activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between MutL DNA binding and MutH activation is shown in biochemical assays (C156, C167). In vivo complementation assays demonstrate that DNA-binding mutants (R266E, R162E/R266E/R316E) have mutation rates similar to empty vector controls (C157, Table 2), establishing that MutL DNA binding is essential for MMR (C158). The convergence of in vitro and in vivo data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C194"
+    ],
+    "result": "Site-specific crosslinking between MutS D246C and MutL N131C, dependent on both mismatched DNA and ATP, was used to trap and crystallize a transient MMR-relevant complex. The complex crystallized in multiple space groups at 4.7-7.6 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crosslinking specificity is demonstrated experimentally (C28), requiring both mismatch and nucleotide (C29). The crystallization conditions are clearly stated (C30), and the resolution range across multiple crystal forms is documented (C31). The consistency of the structure across different crystal forms validates the approach (C32). This represents a successful methodological achievement for capturing a transient state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The MutS triple mutant (P595A/I597A/M759D) at interface 1 shows a slight ATPase defect but normal sliding clamp formation, yet cannot complement MMR function in vivo. This suggests the in vivo defect is due to impaired MutL interaction rather than catalytic dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is thorough: ATPase activity is measured (C83, Figure 3\u2014supplement 1B), sliding clamp formation is confirmed normal (C83, Figure 3\u2014supplement 1C), and comparison to other ATPase mutants that retain MMR function (C84) supports the interpretation that the defect is due to the MutL interface (C85). This control experiment strengthens the interface validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The crosslinked complex crystallizes with MutS dimers bound to MutL monomers in the apo-conformation, without nucleotide density in MutL. However, the interfaces sterically allow MutL dimerization, and gel filtration shows MutL can coelute with the S2/L2 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic observations are clear: MutL monomers in apo-conformation without nucleotide density (C107-C110). The steric compatibility with dimerization is shown structurally (C111, Figure 3\u2014supplement 1F), and gel filtration provides biochemical evidence for potential dimerization (C112, Figure 3\u2014supplement 2A). This addresses an important question about MutL stoichiometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The ATP-induced tilting motion in MutS is similar to conformational changes in ABC ATPases like RAD50, and was previously predicted. However, the crossing of clamp domains and DNA repositioning were unexpected. The mechanism of signal transmission differs from RAD50 due to sequence differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to ABC ATPases is well-supported by citations (C48, C49, C50, C53). The novelty of the clamp crossing and DNA repositioning is clearly stated (C51). The structural observations about the disordered loop and lack of conserved residues are documented (C54, C56), though the speculation about signal transmission (C55) is appropriately cautious. This contextualizes the findings within the broader ATPase family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "While the crystallized complex has symmetric MutL binding to both MutS subunits, a symmetric complex may not be necessary for MMR in vivo. The asymmetry of eukaryotic MMR proteins suggests a single heterodimeric MutL\u03b1 binds one MSH2/MSH6 heterodimer, with interface 2 on MSH2 and interface 1 on MSH6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about physiological stoichiometry (C113) is reasonable but not directly tested. The inference about eukaryotic complexes (C114, C115) is based on known asymmetry but lacks experimental validation in this study. The interface assignments (C116, C117, C118) are inferred from literature but not experimentally confirmed. This represents reasonable extrapolation but requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The transition from mismatch binding to sliding clamp likely involves multiple steps: sequential ATP binding to create asymmetric then symmetric nucleotide states, followed by two potentially uncoupled movements (subunit tilting and connector rearrangement). Non-hydrolyzable ATP analogs may cause tilting without connector movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The multi-step model is supported by citations to previous work (C173-C175, C178-C181), but the specific ordering and coupling of events (C176, C177) are speculative. The interpretation of ATP analog effects (C178, C179) is based on literature but not directly tested in this study. While the model is reasonable and consistent with available data, it requires further experimental validation to confirm the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The location where MutL loading onto DNA occurs is unclear\u2014it could happen at the mismatch site or after MutS has slid away from the mismatch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as an unresolved question (C185). Both possibilities are presented as speculation (C186, C187) without experimental data to distinguish between them. The stopped-flow experiments show temporal separation of events but do not resolve the spatial location of MutL loading. This represents an important open question for future investigation.",
+    "result_type": "MINOR"
+  }
+]

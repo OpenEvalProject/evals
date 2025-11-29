@@ -1,0 +1,2309 @@
+{
+  "submission": {
+    "id": "1cfe0a11-d9d2-4dbf-9ac3-c63b0c000311",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:57:02.906082Z",
+    "updated_at": "2025-11-29T04:57:02.906082Z"
+  },
+  "content": [
+    {
+      "id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "submission_id": "1cfe0a11-d9d2-4dbf-9ac3-c63b0c000311",
+      "content_type": "manuscript",
+      "content_text": "# The ER Stress Surveillance (ERSU) pathway regulates daughter cell ER protein aggregate inheritance\n\n## Authors\n\n- Francisco J Pi\u00f1a<sup>1</sup>\n- Maho Niwa<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences, Section of Molecular Biology Univeristy of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStress induced by cytoplasmic protein aggregates can have deleterious consequences for the cell, contributing to neurodegeneration and other diseases. Protein aggregates are also formed within the endoplasmic reticulum (ER), although the fate of ER protein aggregates, specifically during cell division, is not well understood. By simultaneous visualization of both the ER itself and ER protein aggregates, we found that ER protein aggregates that induce ER stress are retained in the mother cell by activation of the ER Stress Surveillance (ERSU) pathway, which prevents inheritance of stressed ER. In contrast, under conditions of normal ER inheritance, ER protein aggregates can enter the daughter cell. Thus, whereas cytoplasmic protein aggregates are retained in the mother cell to protect the functional capacity of daughter cells, the fate of ER protein aggregates is determined by whether or not they activate the ERSU pathway to impede transmission of the cortical ER during the cell cycle.\n\n## Introduction\n\nAsymmetric cell division is a mechanism that generates cells with different properties. Specifically, in Saccharomyces cerevisiae, asymmetric cell division allows daughter cell rejuvenation while ensuring that cellular damage is left behind in the mother cell (Henderson and Gottschling, 2008; Kaganovich et al., 2008; Spokoini et al., 2012; Gallagher et al., 2014; Nystrom and Liu, 2014; Zhou et al., 2014). Recent studies have revealed that cytoplasmic protein aggregates are retained in the mother cell, although the underlying mechanism(s) that establishes such an asymmetric mode of inheritance remains to be fully elucidated (Abbas et al., 2013). Furthermore, little is known about whether such asymmetric division is regulated during the cell cycle.\n\nThe endoplasmic reticulum (ER) is a gateway for the secretory pathway in eukaryotic cells. Proteins that are secreted or reside within the organelles of the secretory pathway initiate their journey when they are translocated into the membrane or lumen of the ER. In the unique oxidizing environment of the ER, nascent polypeptides undergo chaperone assisted folding and modifications, such as glycosylation and formation of disulfide bonds, to become mature active proteins before exiting from the ER (Mori, 2000; Rutkowski and Kaufman, 2004; Ron and Walter, 2007). In addition, the ER is a major site for lipid synthesis and storage of intracellular calcium (Mcmaster, 2001). Many of these ER functions must work in concert to satisfy cellular demands (Oakes and Papa, 2014). The unfolded protein response (UPR)-signaling pathway is a conserved response to ER stress and plays a critical role in maintaining ER function by up-regulating the transcription of genes coding for ER chaperones and protein-folding components (Cox et al., 1993; Mori et al., 1993; Ron and Walter, 2007; Wu et al., 2014). Importantly, the ER cannot be synthesized de novo and is generated only from existing ER. Given the critical function of the ER, it seems likely that cell cycle regulatory mechanisms must exist to ensure inheritance of a fully functional ER during cell division.\n\nRecently, we reported the existence of a cell cycle surveillance mechanism or \u2018checkpoint\u2019 in S. cerevisiae that safeguards the inheritance of functional ER by the daughter cell (Bicknell et al., 2007; Babour et al., 2010). Upon ER stress induction, activation of this ER Stress Surveillance (ERSU) pathway results in re-localization of the cytokinesis-associated septin complex away from the bud neck, leading to a block in ER inheritance and cytokinesis. We showed that the ERSU pathway is independent of the UPR and is mediated by the Slt2 Mitogen-Activated Protein Kinase (MAPK). In the absence of Slt2, cells do not exhibit the block in ER inheritance and the septin ring remains at the bud neck following exposure to ER stress, similar to normally dividing, unstressed cells. Ultimately, however, slt2\u0394 cells are not able to sustain their growth due to the transmission of the stressed ER into the daughter cell. In fact, preventing ER transmission into slt2\u0394 daughter cells by genetic or pharmacological inhibition of actin polymerization can restore growth. Importantly, while Slt2 MAPK is known to play a role in the cell wall integrity (CWI) pathway, we found that the ERSU and CWI pathways are completely distinct (Babour et al., 2010; Levin, 2011). The discovery of the ERSU pathway thus not only identified a novel cell cycle checkpoint that ensures the inheritance of functional ER but also raised a number of important questions about the underlying mechanisms.\n\nFurthermore, it is also unclear how the ER contents, including misfolded proteins, are segregated during the cell cycle. Under normal growth conditions, terminally misfolded proteins in the ER are retro-translocated into the cytoplasm and degraded by proteasomes in a process known as ER-associated degradation (ERAD) (Hampton, 2002; Bukau et al., 2006; Vembar and Brodsky, 2008; Smith et al., 2011; Thibault and Ng, 2012). When misfolded ER proteins are overexpressed or the ERAD function is diminished, the damaged proteins accumulate into large foci within the ER lumen. A recent study proposed that these large \u2018aggregate\u2019-like foci are selectively retained in the mother cell via a mechanism that depends on the lateral ER diffusion barrier established by the septin ring at the bud neck (Clay et al., 2014). Such lateral diffusion barriers between the mother and daughter yeast cells have been proposed to play pivotal roles in preventing undesirable materials, such as protein aggregates, from transferring to the daughter cells. While the exact mechanisms that establish the mother\u2013daughter diffusion barrier remain to be elucidated, the barrier was reported to be formed as soon as the new bud emerges and depends on the bud site selection component GTPase, Bud1 (Clay et al., 2014). This study thus presented an attractive model suggesting that ER protein aggregate inheritance is regulated similarly to that of large protein aggregates in the cytoplasm, such as Q-bodies, JUNQ (juxta-nuclear quality control compartment) and IPOD (insoluble protein deposit), which are actively retained in the mother to protect the daughter cell from toxicity of the protein aggregates (Kaganovich et al., 2008). However, a potentially unique feature of ER protein aggregate inheritance is that it could be affected by inheritance of the ER itself. To further our understanding of how ER protein aggregates are divided between mother and daughter cells, we investigated the distribution of ER protein aggregates in relation to the inheritance of the ER.\n\n## Results\n\n### ER inheritance drives the transmission of ER protein aggregates into the daughter cell\n\nTo investigate the distribution of both the ER and ER protein aggregates between the mother and daughter cell, we monitored the distribution of a mutant form of the vacuolar protein carboxypeptidase Y (CPY*) fused to mRFP in cells also expressing Hmg1-GFP, a well-characterized ER marker (Finger et al., 1993; Nishikawa et al., 2001; Spear and Ng, 2005; Clay et al., 2014). A single amino acid change in CPY* (G255R) leads to improper folding, and the protein accumulates in the ER (Finger et al., 1993). Expression of CPY*-mRFP was placed under the control of the galactose (GAL1) promoter and induced by incubation in galactose-containing media. After 2 hr of induction, CPY*-mRFP formed aggregate-like foci that co-localized with both the cortical ER (cER) and perinuclear ER (pnER) (Figure 1A). We quantitated and evaluated the number of CPY*-mRFP foci in individual cells according to the daughter cell (bud) size (Figure 1C). A small number (<20%) of cells with small bud size (less than 2 \u03bcm in length; classified as class I cells (Babour et al., 2010), transferred CPY* foci to the bud, while the majority of cells (\u223c80%) contained foci only in the mother (Figure 1C). In contrast, \u223c50\u201360% of class II (medium sized buds, larger than 2 \u03bcm in length) and class III (large buds with the nucleus and pnER in the bud) cells transferred CPY* foci to the bud (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig1-v1.jpg)\n\n**Figure 1.:** (A) Wild-type (WT) cells expressing galactose (Gal)-inducible CPY*-mRFP and the endoplasmic reticulum (ER) marker Hmg1-GFP were grown in 2% (w/v) Gal for 2 hr and then visualized by microscopy. Note that some Hmg1-GFP foci co-localized with CPY*-mRFP foci. (B) Cells expressing copper-inducible GFP-CFTR and the ER marker DsRed-HDEL were grown in copper-containing medium for 2 hr and then visualized. Note that DsRed-HDEL also co-localized with Cystic Fibrosis Transmembrane conductance Regulator (CFTR) foci. (C and D) Quantification of daughter cells containing CPY*-mRFP (C) or GFP-CFTR (D) foci at different stages of the cell cycle (small-budded cells, less than 2-\u00b5m length [class I]; medium-budded cells, greater than 2-\u00b5m length [class II], and large-budded cells containing nuclear ER [class III]). Error bars represent the standard deviation (SD) and were generated from at least three independent experiments with n > 100 cells. (E) CPY*-mRFP and GFP-CFTR foci are detergent insoluble and are present in the pellet fraction after detergent extraction. (T) Total, (S) supernatant, (P) pellet. These tests were previously utilized to characterize protein aggregates in cells (Alberti et al., 2010) and thus, we termed CPY*-mRFP and GFP-CFTR foci as aggregates throughout our study.\n\nWe also examined the inheritance of Cystic Fibrosis Transmembrane conductance Regulator (CFTR), which has been shown to form foci within the yeast ER (Fu and Sztul, 2003). In mammalian cells, a large proportion of newly synthesized wild-type (WT) CFTR is not properly folded and is ultimately degraded (Lukacs et al., 1994; Ward and Kopito, 1994; Jensen et al., 1995; Ward et al., 1995; Moyer et al., 1998; Gnann et al., 2004; Younger et al., 2006; Turnbull et al., 2007). Similarly, only a minor fraction of translated CFTR actually reaches the plasma membrane in yeast (Kiser et al., 2001; Zhang et al., 2001). GFP-CFTR foci were observed in the ER of cells expressing another well-characterized ER marker, DsRed-HDEL (Figure 1B). Significantly, most daughter cells, regardless of their class, inherited GFP-CFTR foci (Figure 1B,D).\n\nFoci formed after expression of CPY* in yeast are often referred to and treated as protein aggregates without biochemical characterization. Therefore, we subjected CPY* foci to a well-established detergent extraction test commonly used to characterize protein aggregates (Alberti et al., 2010). The crude cell extracts prepared from CPY*-mRFP- or GFP-CFTR-expressing cells were treated with or without detergent and then fractionated by differential centrifugation. The majority of CPY*-mRFP was found in the insoluble protein pellet fraction regardless of detergent pre-treatment (Figure 1E). Similar results were obtained for GFP-CFTR (Figure 1E). These data indicate that the CPY* and CFTR foci observed here meet the definition of protein aggregates according to previous studies (Simons et al., 1995; Sondheimer and Lindquist, 2000; Nishikawa et al., 2001; Alberti et al., 2010), and we therefore refer to CPY*-mRFP and GFP-CFTR foci as aggregates throughout this study.\n\nBecause both CPY*-mRFP and GFP-CFTR form aggregates in the ER, we tested whether the difference in their transmission to daughter cells might lie in the different effects of the aggregates on ER function. Previous studies have reported that expression of CPY*, but not CFTR, induces the UPR (Chaudhuri et al., 1995; Zhang et al., 2001). Indeed, we found that induction of CPY*-mRFP resulted in the expression of a UPR reporter (UPRE-GFP, Figure 2A, lane 3), and this was further increased upon treatment of cells with the glycosylation inhibitor tunicamycin (Tm), a well-characterized ER stress inducer (Figure 2A, lane 4) (Cox et al., 1993; Mori et al., 1993). We also asked whether CPY* aggregates activate the ERSU pathway, which functions to ensure the inheritance of functional cER (Babour et al., 2010). We found that a majority of the class I daughter cells did not inherit the cER under the ER stress condition evoked by CPY*-mRFP expression, and cER inheritance was also diminished in class II and III cells, but to a much lesser extent (Figure 2B,C). Additionally, the magnitude of the cER inheritance block caused by CPY*-mRFP expression was less than that induced by Tm treatment (Figure 2C,E,F). Finally, we found that 63% of class I, 73% of class II, and 60% of class III daughter cells containing the cER also contained CPY* aggregates (Figure 2G; yellow vs gray bars). Taken together, these data indicate that for CPY*-mRFP-expressing cells, more than 65% of buds that inherited ER also contained at least one CPY* aggregate (Figure 2\u2014figure supplement 1A). Conversely, 57% of buds without aggregates also lacked the ER (Figure 2G, light blue vs gray).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig2-v1.jpg)\n\n**Figure 2.:** (A) CPY*-mRFP expression activates the unfolded protein response (UPR) pathway. WT cells expressing CPY*-mRFP and the UPR reporter UPRE-GFP were incubated alone or with 1.0 \u03bcg/ml Tm, and GFP expression was quantified in individual cells. N > 100 cells per experiment; error bars (SD) were generated from at least three independent experiments. Dex: dextrose control medium, Gal; galactose-containing medium. (B) Quantitation of cortical ER (cER) in the buds of unstressed cells or cells treated with 0.5 or 1.0 \u03bcg/ml Tm for 3 hr cER inheritance was grouped by bud size: small-budded cells (class I), medium-budded cells (class II), and large-budded cells containing nuclear ER (class III). (C) CPY*-mRFP expression for 2 hr blocks cER inheritance. (D) GFP-CFTR expression for 2 hr in copper-containing media does not block cER inheritance. (E and F) Exposure to mild ER stress with 0.5 \u03bcg/ml Tm (E) blocks cER inheritance (induces the ER Stress Surveillance (ERSU) pathway) to a similar extent as does 1.0 \u03bcg/ml Tm (F). (G) Distribution (%) of cells at different stages of the cell cycle in which the daughter cells contain both cER and CPY*-mRFP aggregates (yellow), cER but not CPY*-mRFP aggregates (gray), and neither cER nor CPY*-mRFP aggregates (pale blue). Panel shows representative images of the most abundant cell types with CPY*-mRFP and Hmg1-GFP. (H) Same as G except that cells expressed GFP-CFTR and DsRed-HDEL. n > 100 cells were counted per experiment, repeated at least 3 times to generate error bars representing SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distribution of CPY*-mRFP aggregates per bud in all (Total), class I, and class II + III, and unstressed cells (without Tm). (B) cER inheritance by different classes of WT cells expressing CPY*-mRFP and left untreated or subjected to additional ER stress with Tm (1 \u03bcg/ml, 2 hr). (C) Percentage of daughter cells containing CPY*-mRFP aggregates following incubation with or without Tm. (D) Percentage of daughter cells containing cER and CPY*-mRFP aggregates (yellow), cER but no CPY*-mRFP aggregates (gray), and neither cER nor CPY*-mRFP aggregates (blue) for each class of cells. (E) Distribution of CPY*-mRFP aggregates per bud in all (Total), class I, and class II + III Tm-treated cells.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) cER inheritance by different classes of WT GFP-CFTR-expressing cells treated without or with Tm (1 \u03bcg/ml, 2 hr). GFP-CFTR expression was induced by incubation in copper-containing medium (Cu). Graphs (B) and (C) are the same as those in Figure 2D,F but are shown again for comparison. (D) Percentage of daughter cells containing GFP-CFTR aggregates following incubation with or without Tm. (E and F) Percentage of daughter cells containing cER and GFP-CFTR aggregates (yellow), cER but no GFP-CFTR aggregates (gray), and neither cER nor GFP-CFTR aggregates (blue) for each class of cells. Cells were untreated (E) or treated with 1 \u03bcg/ml Tm (F). (E) The graph shown is the same as Figure 2H and is presented for comparison. (G and H) Distribution of GFP-CFTR aggregates per bud in all (Total), class I, and class II + III cells untreated (G) or treated with Tm (H).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Two representative fields of cells expressing the ER marker Hmg1-GFP and treated with galactose (Gal) for 2 hr to induce expression of CPY*-mRFP. (B) Representative field of Hmg1-GFP-expressing cells treated with galactose (Gal) and Tm for 2 hr to induce expression of CPY*-mRFP. (C) Representative field of cells expressing the ER marker DsRed-HDEL and treated with 100 \u03bcM copper (Cu) and Tm for 2 hr to induce expression of GFP-CFTR.\n\nIn contrast to the findings in CPY*-expressing cells, we found that cER inheritance was not affected by expression of GFP-CFTR (Figure 2D) unless the cells were also subjected to Tm treatment (Figure 2\u2014figure supplement 2A\u2013C). Therefore, CFTR aggregation presented an opportunity to evaluate the transmission of ER protein aggregates independently of the ER inheritance block. Quantitation of the number of CFTR aggregates and cER in the mother and daughter cells showed that virtually all class I, II, and III daughter cells contained CFTR aggregates (Figure 2H: yellow and Figure 2\u2014figure supplement 2G), indicating no preferential retention of CFTR aggregates by the mother cells. Thus, although CPY* and CFTR both form ER protein aggregates in yeast cells, preferential retention of aggregates was only observed in the CPY*-expressing cells, which also displayed the cER inheritance block. Finally, the cER inheritance block and asymmetric distribution of CFTR aggregates was observed in GFP-CFTR-expressing cells after Tm treatment (Figure 2\u2014figure supplement 2D\u2013F,H), strengthening the relationship between ER inheritance and ER protein aggregate distribution.\n\n### ER protein aggregate inheritance by daughter cells parallels the ER stress levels\n\nRecently, it was reported that misfolded ER proteins were also retained in the mother cell when cells were exposed to relatively low levels of ER stress (0.5 \u03bcg/ml of Tm), as measured by Kar2sfGFP fluorescence recovery after photobleaching (FRAP) analysis (Clay et al., 2014). In our experiments, the moderate expression level of UPRE-GFP revealed that CPY*-mRFP aggregates induced a moderate level of ER stress (Figure 2A, lane 3) and also induced a mild block in ER inheritance compared with that induced by 0.5 \u03bcg/ml of Tm (compare Figure 2C,E,F, and Figure 2\u2014figure supplement 3A). Based on the previous report, we anticipated that CPY*-mRFP expression alone (which induced low/medium levels of ER stress) should result in retention of CPY* aggregates in the mother cells. We observed, however, that CPY*-mRFP aggregates were distributed in both mother and daughter cells (Figure 2G, Figure 2\u2014figure supplement 1A and Figure 2\u2014figure supplement 3A). We also examined the effect of the compounded ER stress by treating CPY* aggregate-expressing cells with Tm (Figure 2\u2014figure supplement 1B,E, and Figure 2\u2014figure supplement 3B). As anticipated, the combined ER stresses further decreased ER inheritance by the daughter cells (Figure 2\u2014figure supplement 1B). Notably, distribution of CPY* aggregates to the daughter cells was also further diminished in these cells (Figure 2\u2014figure supplement 1C\u2013E) and correlated with the reduced level of cER transmission (Figure 2\u2014figure supplement 1B). Likewise, distribution of CFTR aggregates to the daughter cells was only diminished in cells in which ER inheritance was blocked by Tm treatment (Figure 2\u2014figure supplement 2A,D, and Figure 2\u2014figure supplement 3C). Collectively, these data therefore demonstrate that the magnitude of the ER inheritance block is affected by the level of ER stress, and that preferential retention of CPY* or CFTR aggregates in the mother cell is not an intrinsic property of the protein aggregates themselves, but rather, is dictated by ER inheritance.\n\n### Aggregate inheritance is reduced in ERSU-deficient cells\n\nWe reasoned that if the ERSU pathway-dependent ER inheritance regulates the distribution of protein aggregates to the daughter cell, then cells lacking the ERSU pathway should also show diminished retention of protein aggregates in the mother cell. To test this, we examined the distribution of CFTR and CPY* aggregates in slt2\u0394 cells, which are incapable of blocking ER inheritance in response to ER stress. We reported previously that Tm (1 \u03bcg/ml) treatment does not block cER inheritance in slt2\u0394 cells (Babour et al., 2010) and this was also observed in slt2\u0394 cells when ER stress was induced by CPY* aggregate expression (Figure 3A +Gal and Figure 3\u2014figure supplement 1A; compare to Figure 2C for WT cells). Notably, entry of the cER into the daughter slt2\u0394 cells was paralleled by the entry of CPY* aggregates, which contrasts with the ERSU-dependent block in both cER and aggregate inheritance by WT daughter cells (Figure 3D,G, Figure 3\u2014figure supplement 1A for slt2\u0394 vs 2G, Figure 2\u2014figure supplement 3A for WT). As shown above, CFTR-expressing WT cells only exhibited a block in ER inheritance and CFTR aggregate transmission when treated with Tm (Figure 2\u2014figure supplement 2A,D, and Figure 2\u2014figure supplement 3C: Tm- vs Tm+). However, Tm treatment of CFTR-expressing slt2\u0394 cells failed to block either ER inheritance (Figure 3B,C, and Figure 3\u2014figure supplement 1B vs Figure 3\u2014figure supplement 1C) or CFTR aggregate entry into the daughter cell (Figure 3E,F,H, and Figure 3\u2014figure supplement 1D). Taken together, these data revealed that ER inheritance, which is ultimately regulated by the ERSU pathway, regulates protein aggregate transmission into the daughter cell.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig3-v1.jpg)\n\n**Figure 3.:** (A) cER inheritance was not blocked in slt2\u0394 cells upon ER stress induction with CPY*-mRFP for 2 hr. (Compare to cER inheritance in CPY*-mRFP expressed WT cells [Figure 2C]). (B) GFP-CFTR expression for 2 hr has no impact on cER inheritance in slt2\u0394 cells. (C) GFP-CFTR expression for 2 hr in the presence of 1 \u00b5g/ml Tm does not block cER inheritance in slt2\u0394 cells. (D) Distributions (%) of slt2\u0394 cells that contain cER and CPY*-mRFP aggregates in daughter cells (yellow), cER but not CPY* aggregates (gray), and no cER and no aggregates (light blue) in different stages of cell cycle. (E and F) Distributions (%) of slt2\u0394 cells that contain cER and GFP-CFTR aggregates in daughter cells (yellow), cER but not GFP-CFTR aggregates (gray), and no cER and no aggregates (light blue) in different stages of cell cycle treated with (F) or without (E) Tm (1.0 \u00b5g/ml). (G) Representative images of slt2\u0394 cells in class I, II, and III with CPY*-mRFP and Hmg1-GFP to mark the ER. (H) Representative images of slt2\u0394 cells in class I, II, and III with GFP-CFTR and DsRed-HDEL ER marker.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative field of Hmg1-GFP-expressing slt2\u0394 cells treated with galactose (Gal) for 2 hr to induce expression of CPY*-mRFP. (B) Representative field of DsRed-HDEL-expressing cells treated with 100 \u03bcM copper (Cu) for 2 hr to induce expression of GFP-CFTR. (C) Representative field of DsRed-HDEL-expressing cells treated with 100 \u03bcM copper (Cu) and Tm for 2 hr to induce expression of GFP-CFTR. Note that slt2\u0394 cells do not exhibit a block in ER inheritance under ER stress. (D) Distribution of CPY*-mRFP aggregates per bud in all (Total), class I, and class II + III cells.\n\n### A Bud1-dependent diffusion barrier is not involved in the ERSU pathway or ER protein aggregate inheritance\n\nAs described in the introduction, previous work has suggested that a diffusion barrier limiting transmission of the cER between mother and daughter cells is formed during bud emergence via the activity of the Ras-like GTP-binding protein, Bud1 (Clay et al., 2014). Therefore, we examined whether Bud1 deficiency affected either cER inheritance or the distribution of ER protein aggregates. We found that the cER inheritance behavior of bud1\u0394 cells and WT cells subjected to ER stress by treatment with Tm (Figure 4A) or expression of CPY*-mRFP (Figure 4B) was similar. Furthermore, transmission of CPY* aggregates was also similar in the two strains (Figure 4C). These data suggest that Bud1 is not involved in the distribution of ER protein aggregates (see \u2018Discussion\u2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig4-v1.jpg)\n\n**Figure 4.:** (A) cER inheritance is blocked to similar extents in WT and bud1\u0394 cells upon ER stress induction (1 \u03bcg/ml Tm for 3 hr). (B) bud1\u0394 cells display a normal block in ER inheritance upon exposure to ER stress induced by CPY*-mRFP expression for 2 hr. (C) Percentage of bud1\u0394 daughter cells containing CPY*-mRFP aggregates in class I, II, and III cells. (D) Distribution (%) of cells at different stages of the cell cycle in which daughter cells contain cER and CPY*-mRFP aggregates (yellow), cER but not CPY*-mRFP aggregates (gray), and neither cER nor CPY*-mRFP aggregates (light blue). (E) Distribution of CPY*-mRFP aggregates per bud in all, class I, and class II + III bud1\u0394 cells.\n\n### Activation of the ERSU pathway is dependent on the cell cycle phase\n\nIn the experiments described above, we noted that a significant population of class II and III daughter cells contained the cER even after Tm treatment (Figure 2B\u2013F). We considered that these cells might be incapable of inducing the ER inheritance block or that they may be daughter cells that had already inherited the cER before induction of ER stress. In both cases, one would expect that the retention of the stressed ER, and thus, of ER protein aggregates, in the mother cell would be limited only to cells with small daughter cells. To investigate these possibilities, we synchronized yeast cells in G1 by incubation with \u03b1-factor. After washing to remove \u03b1-factor, the cells were allowed to proceed normally through the cell cycle for either 20 min (Figure 5A; phase I cells) or 50 min (Figure 5B; phase II cells) before ER stress was induced by addition of Tm. To unambiguously identify the original mother cells present at the time of \u03b1-factor arrest, we fluorescently labeled cells by incubation with Texas Red (TR)-conjugated ConA (TR-ConA) during the \u03b1-factor treatment (Figure 5A,B). Thus, after washout of both \u03b1-factor and TR-ConA, newly emerging daughter cells will be TR-negative, while the mother cell remains TR-positive (Figure 5A\u2013C, and Figure 5\u2014figure supplements 2, 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig5-v1.jpg)\n\n**Figure 5.:** (A) ER stress was induced by treating synchronized WT cells (phase I: 20 min after \u03b1-factor release) with 1 \u03bcg/ml Tm. Cells were incubated with Texas Red (TR)-ConA during the \u03b1-factor treatment and then washed before exposure to Tm. Mother cells (TR-positive, arrows) can thus be distinguished from daughter cells emerging after induction of ER stress (TR-negative, arrowheads), as shown in the upper schematic. Cells were analyzed by DIC and fluorescence microscopy at the indicated times prior to and after addition of Tm. (B) As described for A, except that Tm was used to induce ER stress in phase II cells (50 min after \u03b1-factor release). Many cells underwent cytokinesis, as evident from the presence of unbudded TR-positive and TR-negative cells. (C) Quantification of TR-positive and TR-negative phase I (purple) and phase II (gray) cells at the time points indicated. (D) Quantification of cER inheritance by the daughters of phase I (E) and phase II (F) cells upon Tm treatment for the indicated times. (E and F) Hmg1-GFP-expressing phase I (E) and phase II (F) cells were treated as shown in A and B, and cER inheritance was evaluated at the indicated times. (G and H) UPR induction occurred regardless of the time of addition of Tm. HAC1 mRNA splicing was measured as an indicator of UPR induction in phase I (G) and phase II (H) cells. Northern blotting of HAC1 mRNA was performed at the indicated times after Tm treatment. Positions of the spliced and unspliced HAC1 mRNA are indicated.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Percentage of phase I (purple) and phase II (gray) cells that showed one bud or two buds after Tm treatment. Error bars indicate SD from three independent experiments.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) A schematic diagram of the experimental set-up for examination of phase I cells. WT cells were synchronized with \u03b1-factor, washed, and treated with 1 \u03bcg/ml Tm 20 min later (phase I: 20 min after \u03b1-factor release). (B) Representative fields of cells treated as in (A) and incubated with Texas Red (TR)-ConA during the \u03b1-factor treatment. Mother cells (TR-positive) can thus be distinguished from daughter cells emerging after induction of ER stress (TR-negative).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) A schematic diagram of the experimental set-up for examination of phase II cells. WT cells were synchronized with \u03b1-factor, washed, and treated with 1 \u03bcg/ml Tm 50 min later (phase II: 50 min after \u03b1-factor release). (B) Representative fields of cells treated as in (A) and incubated with Texas Red (TR)-ConA during the \u03b1-factor treatment. Mother cells (TR-positive) can thus be distinguished from daughter cells emerging after induction of ER stress (TR-negative). Many cells underwent cytokinesis, as evident from the presence of TR-positive and TR-negative cells at 110 and 230 min.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) A schematic diagram of the experiment shown in Figure 5E, shown again here for clarity. ER stress was induced by treating \u03b1-factor-synchronized Hmg1-GFP-expressing WT cells (phase I: 20 min after \u03b1-factor release) with 1 \u03bcg/ml Tm, and cER inheritance was evaluated at the indicated time points. Two representative cells at each time point are shown. For the 200 min time point (3 hr after addition of Tm), representative daughter cells containing only the pnER (85% of total cells) or both the pnER and cER (15% of total cells) are shown for comparison. Another set of representative cells is shown in Figure 5E. (B) Two representative fields of cells are shown for each time point.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (A) A schematic diagram of the experiment shown in Figure 5F, shown again here for clarity. ER stress was induced by treating \u03b1-factor-synchronized Hmg1-GFP-expressing WT cells (phase II: 50 min after \u03b1-factor release) with 1 \u03bcg/ml Tm, and cER inheritance was evaluated at the indicated time points. Cells underwent cytokinesis, as evident from the presence of unbudded cells at 110 min (also see Figure 5B,C). Two representative cells at each time point are shown. For the 230 min time point (3 hr after addition of Tm), representative daughter cells containing only the pnER (80% of total cells) or both the pnER and cER (20% of total cells) are shown for comparison. Another set of representative cells is shown in Figure 5F. (B) Two representative fields of cells are shown for each time point.\n\nWe found that phase I cells exhibited a cytokinesis block and did not undergo cell division at 80 min after \u03b1-factor release (1 hr after Tm addition; Figure 5A,C and Figure 5\u2014figure supplement 2). Even at 200 min after release (3 hr post-Tm), >85% of phase I cells remained undivided (Figure 5A,C; purple bars and Figure 5\u2014figure supplement 2). Furthermore, in most phase I cells, the cER remained in the mother cell (Figure 5D\u2013E and Figure 5\u2014figure supplement 4). In contrast, at 50 min after \u03b1-factor release (before induction of ER stress), almost all of the phase II daughter cells had already inherited the cER (Figure 5D,F and Figure 5\u2014figure supplement 5). After Tm addition, these cells underwent cytokinesis (cell division), and at 1 hr after Tm addition (110 min), \u223c50% of cells were derived from TR-positive mother cells, and the remaining \u223c50% were TR-negative and were derived from the first daughter cell that emerged after \u03b1-factor release (Figure 5B,C, 110 min gray bars and Figure 5\u2014figure supplement 3). After division, the number of cells with the cER in the daughter cell was small (Figure 5D,F; 110 min, and Figure 5\u2014figure supplement 5). The observed differences between phase I and phase II cells in cytokinesis and ER inheritance were not due to an inability of phase II cells to respond to Tm. Phase I and II cells showed similar degrees of UPR activation after ER stress, as reflected in the levels of spliced HAC1 mRNA resulting from activated Ire1 RNase-mediated mRNA cleavage (Figure 5G,H). Intriguingly, phase II cells exhibited a block in both cytokinesis and cER inheritance block at the second round of division, and the daughter cell arising from the first cell division did not further divide. Instead, we observed cells with two daughter cells. This was also observed for phase I cells in which the second daughter cell started to emerge after 3 hr of Tm treatment. At this point (Tm, 3 hr), \u223c13% of phase II and \u223c20% of phase I cells had two buds (Figure 5\u2014figure supplement 1). These results therefore demonstrate that cells in which the cER is already in the daughter cell at the time of ER stress induction proceed through cytokinesis once, but display blocks in both cytokinesis and cER inheritance in the next cell cycle.\n\n### Mother and daughter cells display similar levels of ER stress\n\nFinally, we considered that if ER protein aggregates are preferentially retained in the mother cell independently of the ERSU pathway, then the ER stress levels in the mother cell should also be elevated relative to the daughter cells. To test this, we used a FRAP assay with WT cells expressing Kar2/BiP-sfGFP reporter (a major ER chaperone fused to \u2018superfolder\u2019 GFP), which displays significantly better folding in the oxidizing ER luminal environment than GFP or EGFP (Pedelacq et al., 2006; Lai et al., 2010; Aronson et al., 2011; Lajoie et al., 2012). In both mammalian and yeast cells, Kar2/BiP binding to unfolded client proteins increases in response to ER stress, reducing its mobility within the ER lumen (Snapp et al., 2006). This can be monitored by the reduced rate of FRAP. Small areas of the cER or pnER (indicated by black rectangles in Figure 6) in the mother and daughter cell were photobleached and the rate of Kar2/BiP-sfGFP fluorescence recovery from the surrounding area was assessed. In the mother cell, the fluorescence recovery rate was significantly reduced by Tm treatment when compared with control DMSO-treated cells, and this was similar for both the cER and pnER (Figure 6A,B). However, there were no significant differences between the mother and daughter cell in recovery rates in either the cER or pnER under control or Tm-treated conditions (Figure 6A,B), indicating that the ER stress levels are identical in mother and daughter cells. Taken together, the data presented do not support the preferential retention of ER protein aggregates in the mother cell, but instead argue that ER inheritance regulates the fate of unfolded proteins and the inheritance of ER protein aggregates by the daughter cell.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06970/elife-06970-fig6-v1.jpg)\n\n**Figure 6.:** (A) Quantification of ER stress was performed by fluorescence recovery after photobleaching (FRAP) of cells labeled with the ER chaperone Kar2/BiP-sfGFP. Cells were exposed to DMSO or Tm (1 \u03bcg/ml) and then discrete regions of cER (indicated by the black rectangles) in mother (blue) and daughter (red) cells were photobleached and recovery was monitored. (B) Cells were treated as in A, except that FRAP was monitored in the indicated regions of the perinuclear ER (pnER; rectangles). cER and pnER stress, as indicated by the rate of FRAP, was comparable in untreated or Tm-treated mother and daughter cells. The results are the average of three independent experiments, each of which analyzed at least seven independent cells under both DMSO and Tm-treated conditions.\n\n## Discussion\n\nIn budding yeast, the decision of whether or not to transfer specific cellular components or organelles to the daughter cell is critical for the health of the new generation. Limiting the transmission of potentially harmful components ensures that the functional capacity of the new daughter cell is reset (Shcheprova et al., 2008; Liu et al., 2010; Peraza-Reyes et al., 2010; Hughes and Gottschling, 2012; Longo et al., 2012; Ouellet and Barral, 2012). A recent report demonstrated that ER-resident misfolded protein aggregates, such as a mutant form of carboxypeptidase (CPY*), were prevented from entering the daughter cell and were retained within the mother cell (Clay et al., 2014). The expression of certain misfolded proteins or protein aggregates, including CPY*, in the ER lumen induces ER stress (Spear and Ng, 2003), as also shown here. In turn, ER stress activates the ERSU pathway, which blocks ER transmission into the daughter cell (Babour et al., 2010). These observations raise important questions about the potential mechanism(s) underlying the lack of CPY* aggregates in the daughter cell. One explanation is that transmission is blocked concomitantly with the ERSU pathway-mediated block in ER inheritance. Alternatively, independent regulatory mechanisms may also control the segregation of ER protein aggregates. The results of our experiments described here unambiguously demonstrated that the ERSU pathway governs the location of ER protein aggregates.\n\nWe found that CPY*-mRFP aggregates alone activate both the UPR and the ERSU pathway (Figure 2A,C), although activation was significantly less robust than when induced by Tm (even at 0.5 \u03bcg/ml) and was more equivalent to a low/moderate level of ER stress (Figure 2E,F). We found that a majority of class I cells (83%) retained CPY*-mRFP aggregates in the mother and only 17% of daughter cells had inherited the aggregates. At face value, these numbers appear to indicate that CPY*-mRFP aggregates are retained in the mother cells. However, daughter cells lacking the inherited cER should not contain CPY*-mRFP aggregates (Figure 2G). In fact, ER stress induced by CPY*-mRFP aggregate expression blocked cER inheritance in a large population of the class I daughter cells. Thus, when the analysis was restricted to daughter cells that contain the cER, we found that 63% of these cER-positive daughter cells also contained CPY*-mRFP aggregates (Figure 2G). Even for cells with larger buds (class II or III), we observed that CPY*-mRFP localization was dictated by the presence of the cER in the daughter cell. Thus, we conclude that the cellular distribution of CPY*-mRFP aggregates is determined by the location of the cER. Our conclusions are further supported by the observations with GFP-CFTR; we found that GFP-CFTR aggregates did not activate the ERSU pathway, in agreement with the lack of UPR activation (Zhang et al., 2001). If a separate mechanism exists to retain ER protein aggregates in the mother cell irrespective or independently of the ER inheritance block, we would expect that GFP-CFTR aggregates should be retained in the mother cells. However, we found that GFP-CFTR aggregates entered the daughter cells effectively (Figure 2H), and there was no evidence for preferential retention of aggregates in the mother cell. Finally, further support for the hypothesis that the distribution of ER protein aggregates is dictated by the ER inheritance status came from our study of ERSU-deficient slt2\u0394 cells. These cells do not undergo a block in ER inheritance in response to ER stress and accordingly, slt2\u0394 daughter cells contained higher levels of CPY*-mRFP aggregates than do WT CPY*-mRFP-expressing daughter cells (Figure 3).\n\nOne notable difference in the behavior of CPY*-mRFP and GFP-CFTR aggregates was that only CPY*-mRFP aggregates induced the ERSU pathway (Figure 2C vs Figure 2D). The aggregates had similar biochemical behavior, as indicated by their detergent insolubility (Figure 1E). Interestingly, GFP-CFTR aggregates were present in almost all of the cER-positive small-budded cells (class I: <2-\u03bcm diameter, gray vs yellow bars in Figure 2H), whereas CPY*-mRFP aggregates were present in only about half of cER-positive small-budded cells (gray vs yellow bars in Figure 2G). A similar trend was found after treatment with Tm (Figure 2\u2014figure supplement 1D vs Figure 2G). These data suggest that GFP-CFTR aggregates behave like soluble proteins in the ER lumen, perhaps because of the lack of proteotoxicity. In this regard, analysis of GFP-CFTR aggregates could provide a unique opportunity to monitor the behavior of soluble non-toxic ER luminal proteins in live cells.\n\nWe found that the behavior of CPY*-mRFP and GFP-CFTR aggregates in bud1\u0394 cells and WT cells was indistinguishable, indicating that the mother\u2013daughter lateral diffusion barrier established by Bud1 does not play a significant role in either the cER inheritance block or the distribution of ER protein aggregates in response to ER stress. Our data differ from those in a previous study (Clay et al., 2014), which showed an increase in CPY*-GFP foci in bud1\u0394 daughter cells and thus suggested an important role for Bud1 in the retention of CPY*-GFP foci in the mother cell. Paradoxically, that study observed only one or two CPY*-GFP foci in WT daughter cells and up to six CPY*-GFP foci in bud1\u0394 daughter cells. Interestingly, Barral and colleagues argued that the greater abundance of CPY*-GFP foci in the bud1\u0394 daughter cells was due to increased transfer of the soluble form of CPY*-GFP from the mother and subsequent formation of CPY*-GFP aggregates in the daughter cell (Clay et al., 2014). However, there was no direct demonstration that soluble CPY*-GFP levels were in fact increased. During our analysis (n > 100 cells per experiment with at least three independent repeats), we never observed significant differences in the average number of CPY*-mRFP aggregates in WT and bud1\u0394 daughter cells, or even in WT and bud1\u0394 mother cells (data not shown). The reason for the different findings in the two studies is currently not clear. The ERSU pathway functions in at least two different yeast strain backgrounds (W303 and BY4741). Interestingly, bud1\u0394 mother cells appear to have a shorter replicative lifespan than WT mother cells under optimal stress-free growth conditions. If CPY* aggregates are retained in the WT mother cell in order to preserve ER proteostasis in the daughter cell and thus ensure its longevity, one may anticipate that bud1\u0394 mother cells, which contain fewer CPY* aggregates, would have better ER proteostasis and thus live longer than WT mother cells (Clay et al., 2014). Together with other data presented here, our finding that CPY*-mRFP aggregate distribution correlates with the lack of the ER inheritance block in bud1\u0394 cells strengthens the hypothesis that the ERSU pathway regulates the distribution of ER protein aggregates in yeast daughter cells.\n\nOur results suggest a potentially significant difference in the manner in which cells cope with cytoplasmic vs ER protein aggregates. To date, several distinct cytoplasmic protein aggregates have been reported: ubiquitinated cytoplasmic proteins associate with JUNQ, whereas insoluble proteins associate with IPOD upon proteasome inactivation (Kaganovich et al., 2008) or in the presence of amyloid proteins such as Huntingtin with extended polyQ. In cells with functional proteasomes, misfolded proteins dynamically form inclusion bodies called Q-body protein aggregates (Spokoini et al., 2012; Roth and Balch, 2013; Zhou et al., 2014). An interesting feature of these cytoplasmic protein aggregates is their differential subcellular localization; JUNQ associates with the ER/nucleus, IPOD is found next to the vacuole (Kaganovich et al., 2008; Ogrodnik et al., 2014; Polling et al., 2014), and Q-bodies are scattered throughout the cytoplasm (Spokoini et al., 2012; Escusa-Toret et al., 2013; Zhou et al., 2014). These protein aggregates are selectively retained in the mother cell, and a recent study has revealed an intriguing mechanism for retention of Q-body protein aggregates through association with the ER and eventually with the mitochondria (Zhou et al., 2014). We found that fluorescently tagged forms of both CPY* and CFTR aggregates appeared to be scattered throughout the ER. Ultimately, the ERSU pathway blocks ER inheritance and prevents transmission of ER protein aggregates into the daughter cell. The asymmetric distribution of cytosolic protein aggregates and large inclusions such as JUNQ and IPOD is protective and allows the daughter cells to be rejuvenated during each cell division. ER aggregates may similarly be prevented from entering the daughter cell. But during ER stress, ER aggregates are retained by the ERSU mechanism that prevents transfer of the stressed ER. Cytosolic protein aggregates have been reported to associate with the ER, raising the intriguing possibility that the ER functions as a central controller for the distribution of protein aggregates in the cell. Alternatively, the association of cytoplasmic protein aggregates with the ER may somehow induce ER stress and consequently, the ERSU pathway. In this scenario, the ERSU pathway may function as a master regulator for both the ER and cytoplasmic protein aggregates.\n\nMany of the cell cycle checkpoints that ensure accurate DNA replication and genome transmission are restricted to specific stages of the cell cycle (Rhind and Russell, 2012; Yasutis and Kozminski, 2013). By observing asynchronous populations of yeast cells, we found that both class II and class III cells exhibit the block in ER inheritance during ER stress, but it is less pronounced than in class I cells, as we described in our initial report. This finding suggests that ER stress must be recognized early in the cell cycle in order to induce the ERSU pathway. Significantly, ER transfer to the daughter cell had already taken place in many class II and III cells prior to encountering ER stress, and presumably, these populations contribute to the lower number of cells exhibiting the cER inheritance block. Using synchronized cells, we found that cells at later stages of the cell cycle, when the cER is already in the daughter cell at the time of exposure to ER stress, undergo cytokinesis for the first round of the cell cycle but exhibit a block in cER inheritance and cytokinesis during the second round. Thus, the ERSU pathway is effective only when ER stress is sensed at an early stage of the cell cycle and can be ignored until the second cell cycle if the cER was already present in the daughter cell.\n\nSuch a mode of ERSU pathway regulation of ER inheritance is rather unusual when compared to cell cycle checkpoints that regulate DNA replication and transmission (Vleugel et al., 2012; Hayashi and Karlseder, 2013). Failure to align chromosomes properly, for example, activates the spindle assembly checkpoint, leading to inhibition of the anaphase-promoting complex and induction of cell death (Chang and Barford, 2014). To our knowledge, the observation that class II and III cells with cER-containing daughter cells proceed normally through the first round of cytokinesis after ER stress, and that this \u2018error\u2019 is not corrected until the second round, is unprecedented. Results of the FRAP experiments indicate that ER stress was manifested within 30 min of stress induction in both class II or III daughter cells. Thus, these cells must somehow bypass the ERSU pathway-induced cytokinesis block in the first round of division but halt the cell cycle during the next round of cytokinesis. In the case of the replication checkpoints, it would not be possible to lose a chromosome at the first division and then recover during the second cell cycle. In contrast, a functionally stressed ER might be tolerated if the problem is resolved promptly in the next cell cycle. Currently, the molecular mechanisms dictating the decisions by class I, II, and III cells to proceed\u2014or not\u2014through cytokinesis are unknown; the answers to these and other questions raised here await further studies.\n\n## Materials and methods\n\n### FRAP assays\n\nCells expressing the Kar2/BiP-sfGFP reporter were grown to mid-log phase in filter-sterilized 0.5X YPD (0.5% yeast extract, 1% peptone, and 2% dextrose) and treated with Dimethyl Sulfoxide (DMSO) or tunicamycin (Tm 1 \u03bcg/ml) for 3 hr at 30\u00b0C. Cells were transferred to 1.6% agarose pads made with 0.5\u00d7 YPD \u00b1 1 \u03bcg/ml Tm and the pads were maintained at 30\u00b0C for the duration of the experiment. Photobleaching was achieved with one 0.2-s pulse from a 488-nm argon laser set to 50% power using an Applied Precision optical sectioning microscope (100\u00d7 1.65 Apo objective, immersion oil n = 1.78 [Cargille Laboratories]) with softWoRx version 3.3.6 (Applied Precision, Issaquah, WA). To compare multiple FRAP events on a single graph, we calculated the fluorescence recovery by determining the relative intensity of the bleached region compared with the unbleached region and defining the bleaching event as 0 and complete recovery as 1 for each photobleached cell. The average fluorescence recovery curves were obtained by averaging the fluorescence recovery values at the same time points for each strain. Images were acquired immediately before and at 6-s intervals after the photobleaching event.\n\n### ER inheritance assays\n\nCells (WT-MNY1037, slt2\u0394-MNY1043, bud1\u0394-MNY2112, these and all other yeast strains used in this study are described in Table 1) expressing Hmg1-GFP were treated with DMSO or Tm (1 \u03bcg/ml) unless otherwise indicated, for 3 hr during mid-log phase, imaged with fluorescence microscopy, and scored for the presence or absence of cER in class I, class II, and class III buds. An Axiovert 200M Carl Zeiss Micro-Imaging microscope with a 100\u00d7 1.3 NA objective was used as described previously (Babour et al., 2010).\n\n**Table 1.**\n Yeast strains used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain name</th>\n      <th>Genotype</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MNY1037</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1::HMG1-GFP:URA3, ade2-1, his3-11,15::UPRE-lacZ:HIS3</td>\n      <td>(Babour et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>MNY2215</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1, ade2-1, his3-11,15::HIS3, bar1\u0394::LEU2, DsRed-HDEL::ADE2</td>\n      <td>(Babour et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>MNY1000</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1, ade2-1, his3-11,15</td>\n      <td>(Cox et al., 1993)</td>\n    </tr>\n    <tr>\n      <td>MNY1002</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1::HMG1-GFP::URA3, ade2-1, his3-11, bar1\u0394::LEU2</td>\n      <td>(Bicknell et al., 2007)</td>\n    </tr>\n    <tr>\n      <td>MNY2119</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1, ade2-1, his3-11,15::UPRE-lacZ:HIS3 KAR2sfGFP::KanMX</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MNY2702</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1::4xUPRE-GFP::URA3, ade2-1, his3-11,15</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MNY1043</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1::HMG1-GFP:URA3, ade2-1, his3-11,15::UPRE-lacZ:HIS3 slt2\u0394::KanMX</td>\n      <td>(Babour et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>MNY2112</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1::HMG1-GFP:URA3, ade2-1, his3-11,15::UPRE-lacZ:HIS3 bud1\u0394::KanMX</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MNY2825</td>\n      <td>MATa, leu2-3,112, trp1-1, can1-100, ura3-1, ade2-1, his3-11,15::HIS3, bar1\u0394::LEU2, DsRed-HDEL::ADE2 slt2\u0394::KanMX</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### CPY*-mRFP and GFP-CFTR induction\n\nS. cerevisiae strains (WT-MNY1037, slt2\u0394-MNY1043, bud1\u0394-MNY2112) were transformed with pFJP10 (pRS425-GAL1-CPY*-mRFP, this and all other plasmids used in this study are described in Table 2). Cells were grown overnight on SCD-Leu with 4% raffinose. Cells were then diluted to OD 0.06, grown to OD 0.25, and then either 2% dextrose (\u00b11 \u03bcg/ml Tm) or 2% galactose (\u00b11 \u03bcg/ml Tm) was added. Cultures were further incubated at 30\u00b0C for 2 hr before cER inheritance, and CPY*-mRFP foci formation were analyzed by fluorescence microscopy. The yeast strains carrying DsRed-HDEL (WT-MNY2215, slt2\u0394-MNY2825) were transformed with pCU426CUP1/EGFP-CFTR (a gift from Dr Elizabeth Sztul [Fu and Sztul, 2003]). Cells were diluted to OD 0.06, grown to OD 0.25, and then 100 \u00b5M copper sulfate \u00b11 \u03bcg/ml Tm was added. Cultures were further incubated at 30\u00b0C for 2 hr before cER inheritance, and GFP-CFTR foci formation were analyzed by fluorescence microscopy.\n\n**Table 2.**\n Plasmids used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Plasmid name</th>\n      <th>Construct</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pFJP1</td>\n      <td>pFA6a-sfGFP-HDEL::KanMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>pRH1209</td>\n      <td>4XUPRE-GFP::URA3 (pJCI86-GFP)</td>\n      <td>(Cox et al., 1993)</td>\n    </tr>\n    <tr>\n      <td>pCU426CUP1/EGFP-CFTR</td>\n      <td>pRS426-CUP1-EGFP-CFTR</td>\n      <td>(Fu and Sztul, 2003)</td>\n    </tr>\n    <tr>\n      <td>pFJP10</td>\n      <td>pRS425-GAL1-CPY*-mRFP</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### UPRE-GFP strain construction\n\npRH1209 (4xUPRE-GFP::URA3) plasmid (a gift from Dr Randy Hampton) (Hampton et al., 1996) was digested with restriction enzyme StuI and transformed into yeast strain MNY1000 for genomic integration at the URA3 locus to generate strain MNY2702. MNY2702 was then transformed with pFJP10 to induce CPY*-mRFP expression as described above.\n\n### Synchronization\n\nYeast strain MNY1002 cells were treated with 50 ng/ml \u03b1\u2212factor for 2.5 hr, washed twice with an equal volume of fresh YPD containing 1 M sorbitol, diluted to OD 0.25, and then allowed to recover for either 20 min (phase I) or 50 min (phase II) before the addition of 1 \u03bcg/ml Tm. Cells were imaged at the indicated time points after Tm addition. For staining of synchronized cells, 200 \u03bcg/ml Texas Red-conjugated concanavalin A (TR-ConA, Sigma, St. Louis, MO) was added to the culture for the final 30 min of \u03b1\u2212factor treatment, and the culture was incubated in the dark at 30\u00b0C with shaking. The cells were washed to remove TR and \u03b1\u2212factor and then treated as described above, except that the TR-labeled cell cultures were maintained in the dark. Cells were collected and imaged by fluorescence microscopy at the indicated time points.\n\n### Northern blotting\n\nCells were synchronized as described above. At the appropriate time points, 20-ml aliquots of cells were collected and flash frozen in liquid nitrogen. Total RNA was extracted as described before (Chawla et al., 2011). Samples of 20 \u03bcg of total RNA were separated on a 4.5% agarose gel with 6.7% formaldehyde and transferred to a zeta-probe membrane (Bio-Rad, Hercules, United States) in 10\u00d7 SCC overnight. After UV-crosslinking, membranes were probed with a radiolabeled HAC1 DNA probe as described in (Chawla et al., 2011).\n\n### Kar2sfGFP strain construction\n\npFA6a-GFP::KanMX6 (a gift from Jurg Bahler and John Pringle, Addgene plasmid # 39292) (Bahler et al., 1998) was modified by replacing GFP with sfGFP-HDEL. sfGFP-HDEL was PCR amplified from plasmid psfGFP-HDEL (a gift from Dr Erik Snapp) and switched with GFP in pFA6a-GFP::Kanr to generate pFJP1 (pFA6a-sfGFP-HDEL::KanMX6). The plasmid was checked by sequencing. sfGFP-HDEL::KanMX6 was PCR amplified with primers FJP17 (ATAAATTAACAACCTTGAAGCTTCCAGCAGCAAAAATTTTTAACTATTTTATgaattcgagctcgtttaaac) and FJP37(CAGTCTCTATACTCTTCAATG) to tag KAR2 at the genomic locus of strain MNY1004 to generate strain MNY2119 using the Longtine method (Longtine et al., 1998).\n\n### Aggregation assay\n\nAliquots of 20 ml of cells were collected after 2 hr of induction, washed once with water, and flash frozen in liquid nitrogen. Protein extracts were prepared and the following detergent solubility test was performed (as described in [Alberti et al., 2010]) to characterize the CPY*-mRFP and GFP-CFTR foci observed under the microscope. The cell pellet was resuspended in 600 \u03bcl of lysis buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 2 mM ethylenediaminetetraacetic acid (EDTA), 5% glycerol) with protease inhibitors (5 mM phenylmethylsulphonyl fluoride [PMSF], aprotinin, leupeptin, pepstatin A), 50 mM N-ethylmaleimide (NEM), and 25 \u03bcM MG132, and then lysed with glass beads at 4\u00b0C. A sample of 300 \u03bcl of the lysate was mixed with 300 \u03bcl of cold detergent-lysis buffer (50 mM Tris, pH 7.0, 150 mM NaCl, 1% Triton X-100, 0.5% deoxycholate, 0.1% sodium dodecyl sulfate, (SDS) and vortexed for 10 s. The remaining 300 \u03bcl of sample was diluted with an additional 300 \u03bcl of lysis buffer. The crude lysates were centrifuged for 2 min at 800 rcf (4\u00b0C) to pellet the cell debris. Supernatant samples (250 \u03bcl each) were centrifuged in a TLA 100 rotor for 30 min at 80,000 rpm and 4\u00b0C using a TL Beckman ultracentrifuge. The pellet from the RIPA buffer lysate was resuspended in 250 \u03bcl of RIPA buffer. The pellet from the lysis buffer only was resuspended in 250 \u00b5l of lysis buffer (no detergent). Equal volumes of unfractionated (total), supernatant (S), and pellet (P) samples were incubated in sample buffer containing 2% SDS and 2% \u03b2-mercaptoethanol. CPY*-mRFP extracts were heated for 5 min at 95\u00b0C, and GFP-CFTR extracts were heated for 20 min at 37\u00b0C. Samples were analyzed by SDS-PAGE and Western blotting. CPY*-mRFP was detected with anti-mRFP rat monoclonal antibody (1:1000, cat # ABIN334653, Life Technologies, Carlsbad, CA, United States) and secondary HRP-conjugated anti-rat antibody (Bio-Rad). GFP-CFTR was detected with anti-GFP mouse monoclonal (1:1000, cat # 11814460001, Roche, Basel, Switzerland) and secondary HRP-conjugated anti-mouse antibody (Bio-Rad).\n",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6ca7e5ef-b6b2-46c6-ba5e-72c68f73fc2b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C1",
+      "claim": "Stress induced by cytoplasmic protein aggregates can have deleterious consequences for the cell, contributing to neurodegeneration and other diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Stress induced by cytoplasmic protein aggregates can have deleterious consequences for the cell, contributing to neurodegeneration and other diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the consequences of cytoplasmic protein aggregates, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "ce841a97-236b-4a1c-b965-eaf1143d26f3",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C2",
+      "claim": "ER protein aggregates that induce ER stress are retained in the mother cell by activation of the ER Stress Surveillance (ERSU) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneous visualization of both the ER itself and ER protein aggregates, we found that ER protein aggregates that induce ER stress are retained in the mother cell by activation of the ER Stress Surveillance (ERSU) pathway, which prevents inheritance of stressed ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from simultaneous visualization experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3ec7401f-a0e5-484e-9957-946b75201686",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C3",
+      "claim": "The ERSU pathway prevents inheritance of stressed ER.",
+      "claim_type": "EXPLICIT",
+      "source": "By simultaneous visualization of both the ER itself and ER protein aggregates, we found that ER protein aggregates that induce ER stress are retained in the mother cell by activation of the ER Stress Surveillance (ERSU) pathway, which prevents inheritance of stressed ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "cbce70d9-a4df-4b68-947b-285316f68b9e",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C4",
+      "claim": "Under conditions of normal ER inheritance, ER protein aggregates can enter the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, under conditions of normal ER inheritance, ER protein aggregates can enter the daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing CFTR aggregates entering daughter cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c86d86fe-fcc6-4765-bbe7-fc8298ab1961",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C5",
+      "claim": "Cytoplasmic protein aggregates are retained in the mother cell to protect the functional capacity of daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas cytoplasmic protein aggregates are retained in the mother cell to protect the functional capacity of daughter cells, the fate of ER protein aggregates is determined by whether or not they activate the ERSU pathway to impede transmission of the cortical ER during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to previous studies on cytoplasmic protein aggregates.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "a33fc899-68ea-49d7-a7df-208c7375d137",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C6",
+      "claim": "The fate of ER protein aggregates is determined by whether or not they activate the ERSU pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas cytoplasmic protein aggregates are retained in the mother cell to protect the functional capacity of daughter cells, the fate of ER protein aggregates is determined by whether or not they activate the ERSU pathway to impede transmission of the cortical ER during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "5e8af192-4f14-4962-940c-b15a38fd6501",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C7",
+      "claim": "Asymmetric cell division in Saccharomyces cerevisiae allows daughter cell rejuvenation while ensuring that cellular damage is left behind in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in Saccharomyces cerevisiae, asymmetric cell division allows daughter cell rejuvenation while ensuring that cellular damage is left behind in the mother cell (Henderson and Gottschling, 2008; Kaganovich et al., 2008; Spokoini et al., 2012; Gallagher et al., 2014; Nystrom and Liu, 2014; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "77cf9b67-6cc5-492a-813e-5d16e82fc7cc",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C8",
+      "claim": "Cytoplasmic protein aggregates are retained in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that cytoplasmic protein aggregates are retained in the mother cell, although the underlying mechanism(s) that establishes such an asymmetric mode of inheritance remains to be fully elucidated (Abbas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "10b67ec8-9737-4ea2-ac9f-a9d3926d7a37",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C9",
+      "claim": "The underlying mechanism(s) that establishes asymmetric inheritance of cytoplasmic protein aggregates remains to be fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that cytoplasmic protein aggregates are retained in the mother cell, although the underlying mechanism(s) that establishes such an asymmetric mode of inheritance remains to be fully elucidated (Abbas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "ace19853-1580-409d-bc50-b987158e01b6",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C10",
+      "claim": "Little is known about whether asymmetric division is regulated during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, little is known about whether such asymmetric division is regulated during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "1a05ea56-40b3-4731-9622-018fb40c8b7a",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C11",
+      "claim": "The endoplasmic reticulum (ER) is a gateway for the secretory pathway in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER) is a gateway for the secretory pathway in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ER function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "268a693a-19c5-436b-9336-74f98eede20a",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C12",
+      "claim": "Proteins that are secreted or reside within the organelles of the secretory pathway initiate their journey when they are translocated into the membrane or lumen of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins that are secreted or reside within the organelles of the secretory pathway initiate their journey when they are translocated into the membrane or lumen of the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about protein trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "837b5d33-a2b3-4b2f-bc5b-32ef6ae708ea",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C13",
+      "claim": "In the unique oxidizing environment of the ER, nascent polypeptides undergo chaperone assisted folding and modifications, such as glycosylation and formation of disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "In the unique oxidizing environment of the ER, nascent polypeptides undergo chaperone assisted folding and modifications, such as glycosylation and formation of disulfide bonds, to become mature active proteins before exiting from the ER (Mori, 2000; Rutkowski and Kaufman, 2004; Ron and Walter, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "842577ae-480b-43f6-931b-3eca774992d7",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C14",
+      "claim": "The ER is a major site for lipid synthesis and storage of intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ER is a major site for lipid synthesis and storage of intracellular calcium (Mcmaster, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "12b4029a-caab-4eea-98a2-b9721b82178d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C15",
+      "claim": "The unfolded protein response (UPR)-signaling pathway is a conserved response to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded protein response (UPR)-signaling pathway is a conserved response to ER stress and plays a critical role in maintaining ER function by up-regulating the transcription of genes coding for ER chaperones and protein-folding components (Cox et al., 1993; Mori et al., 1993; Ron and Walter, 2007; Wu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "8fdda7df-60be-4713-8c28-5d5ea5bbec9c",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C16",
+      "claim": "The UPR plays a critical role in maintaining ER function by up-regulating the transcription of genes coding for ER chaperones and protein-folding components.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded protein response (UPR)-signaling pathway is a conserved response to ER stress and plays a critical role in maintaining ER function by up-regulating the transcription of genes coding for ER chaperones and protein-folding components (Cox et al., 1993; Mori et al., 1993; Ron and Walter, 2007; Wu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "02de7422-2180-4265-84d3-93140b9aa1d3",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C17",
+      "claim": "The ER cannot be synthesized de novo and is generated only from existing ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the ER cannot be synthesized de novo and is generated only from existing ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ER biogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3a156d84-0594-4ab3-8bdc-81f6aac04fd0",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C18",
+      "claim": "Cell cycle regulatory mechanisms must exist to ensure inheritance of a fully functional ER during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the critical function of the ER, it seems likely that cell cycle regulatory mechanisms must exist to ensure inheritance of a fully functional ER during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the importance of ER function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "183a3139-8162-4301-ae17-92c2141c2f61",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C19",
+      "claim": "A cell cycle surveillance mechanism or 'checkpoint' exists in S. cerevisiae that safeguards the inheritance of functional ER by the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we reported the existence of a cell cycle surveillance mechanism or 'checkpoint' in S. cerevisiae that safeguards the inheritance of functional ER by the daughter cell (Bicknell et al., 2007; Babour et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c172a138-0c99-4e8b-8d22-98b5588b5530",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C20",
+      "claim": "Upon ER stress induction, activation of the ERSU pathway results in re-localization of the cytokinesis-associated septin complex away from the bud neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER stress induction, activation of this ER Stress Surveillance (ERSU) pathway results in re-localization of the cytokinesis-associated septin complex away from the bud neck, leading to a block in ER inheritance and cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "46a5e017-4e20-4d84-a46b-20bf0b8f1121",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C21",
+      "claim": "Activation of the ERSU pathway leads to a block in ER inheritance and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER stress induction, activation of this ER Stress Surveillance (ERSU) pathway results in re-localization of the cytokinesis-associated septin complex away from the bud neck, leading to a block in ER inheritance and cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "dd93759c-ec20-431d-aae0-6d04f6733142",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C22",
+      "claim": "The ERSU pathway is independent of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the ERSU pathway is independent of the UPR and is mediated by the Slt2 Mitogen-Activated Protein Kinase (MAPK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "efe7a0db-fbd7-4394-a7ec-43d76e30e5b9",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C23",
+      "claim": "The ERSU pathway is mediated by the Slt2 Mitogen-Activated Protein Kinase (MAPK).",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the ERSU pathway is independent of the UPR and is mediated by the Slt2 Mitogen-Activated Protein Kinase (MAPK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c4bebdd5-bf3b-4e09-aefd-8ec1f7229d41",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C24",
+      "claim": "In the absence of Slt2, cells do not exhibit the block in ER inheritance and the septin ring remains at the bud neck following exposure to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Slt2, cells do not exhibit the block in ER inheritance and the septin ring remains at the bud neck following exposure to ER stress, similar to normally dividing, unstressed cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c868c561-ccb9-4238-8845-9d160e58adae",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C25",
+      "claim": "slt2\u0394 cells are not able to sustain their growth due to the transmission of the stressed ER into the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, however, slt2\u0394 cells are not able to sustain their growth due to the transmission of the stressed ER into the daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3f8c5d53-4284-4e75-b1c2-b3f0fe859229",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C26",
+      "claim": "Preventing ER transmission into slt2\u0394 daughter cells by genetic or pharmacological inhibition of actin polymerization can restore growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, preventing ER transmission into slt2\u0394 daughter cells by genetic or pharmacological inhibition of actin polymerization can restore growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "fe1bb057-1be6-4fb6-85da-64837fa5a768",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C27",
+      "claim": "The ERSU and CWI pathways are completely distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while Slt2 MAPK is known to play a role in the cell wall integrity (CWI) pathway, we found that the ERSU and CWI pathways are completely distinct (Babour et al., 2010; Levin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work and other research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "8c2803c5-9db6-4eb3-b7ab-92be6abb5178",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C28",
+      "claim": "Under normal growth conditions, terminally misfolded proteins in the ER are retro-translocated into the cytoplasm and degraded by proteasomes in a process known as ER-associated degradation (ERAD).",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal growth conditions, terminally misfolded proteins in the ER are retro-translocated into the cytoplasm and degraded by proteasomes in a process known as ER-associated degradation (ERAD) (Hampton, 2002; Bukau et al., 2006; Vembar and Brodsky, 2008; Smith et al., 2011; Thibault and Ng, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b727bd71-e796-4577-ac60-920266cb5b44",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C29",
+      "claim": "When misfolded ER proteins are overexpressed or the ERAD function is diminished, the damaged proteins accumulate into large foci within the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "When misfolded ER proteins are overexpressed or the ERAD function is diminished, the damaged proteins accumulate into large foci within the ER lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ER protein aggregation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4ec35068-0097-4b1e-b276-444cad811255",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C30",
+      "claim": "Large 'aggregate'-like foci are selectively retained in the mother cell via a mechanism that depends on the lateral ER diffusion barrier established by the septin ring at the bud neck.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study proposed that these large 'aggregate'-like foci are selectively retained in the mother cell via a mechanism that depends on the lateral ER diffusion barrier established by the septin ring at the bud neck (Clay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "a89f8b6a-9eb3-4a3d-8f79-53f1ab5d6b80",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C31",
+      "claim": "The lateral diffusion barrier between mother and daughter yeast cells is formed as soon as the new bud emerges and depends on the bud site selection component GTPase, Bud1.",
+      "claim_type": "EXPLICIT",
+      "source": "While the exact mechanisms that establish the mother\u2013daughter diffusion barrier remain to be elucidated, the barrier was reported to be formed as soon as the new bud emerges and depends on the bud site selection component GTPase, Bud1 (Clay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "03e322f9-c5d5-4a29-9881-3cf4e0734a91",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C32",
+      "claim": "Large protein aggregates in the cytoplasm, such as Q-bodies, JUNQ and IPOD, are actively retained in the mother to protect the daughter cell from toxicity of the protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "This study thus presented an attractive model suggesting that ER protein aggregate inheritance is regulated similarly to that of large protein aggregates in the cytoplasm, such as Q-bodies, JUNQ (juxta-nuclear quality control compartment) and IPOD (insoluble protein deposit), which are actively retained in the mother to protect the daughter cell from toxicity of the protein aggregates (Kaganovich et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "cb2b9b74-ac4f-4802-b868-eb85b99aebd2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C33",
+      "claim": "After 2 hr of induction, CPY*-mRFP formed aggregate-like foci that co-localized with both the cortical ER (cER) and perinuclear ER (pnER).",
+      "claim_type": "EXPLICIT",
+      "source": "After 2 hr of induction, CPY*-mRFP formed aggregate-like foci that co-localized with both the cortical ER (cER) and perinuclear ER (pnER) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "32ee1b3f-c7e1-481f-b0d9-d146920bb896",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C34",
+      "claim": "A small number (<20%) of cells with small bud size (less than 2 \u03bcm in length; classified as class I cells) transferred CPY* foci to the bud, while the majority of cells (\u223c80%) contained foci only in the mother.",
+      "claim_type": "EXPLICIT",
+      "source": "A small number (<20%) of cells with small bud size (less than 2 \u03bcm in length; classified as class I cells (Babour et al., 2010), transferred CPY* foci to the bud, while the majority of cells (\u223c80%) contained foci only in the mother (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "af774831-2f0f-4f17-915a-58857bedbb9a",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C35",
+      "claim": "\u223c50\u201360% of class II (medium sized buds, larger than 2 \u03bcm in length) and class III (large buds with the nucleus and pnER in the bud) cells transferred CPY* foci to the bud.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, \u223c50\u201360% of class II (medium sized buds, larger than 2 \u03bcm in length) and class III (large buds with the nucleus and pnER in the bud) cells transferred CPY* foci to the bud (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "dc2ef1a6-3966-4fd9-b5e0-1e42878ce614",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C36",
+      "claim": "GFP-CFTR foci were observed in the ER of cells expressing DsRed-HDEL.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-CFTR foci were observed in the ER of cells expressing another well-characterized ER marker, DsRed-HDEL (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "23d172e5-913e-4551-9c70-72d64ffd3e35",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C37",
+      "claim": "Most daughter cells, regardless of their class, inherited GFP-CFTR foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, most daughter cells, regardless of their class, inherited GFP-CFTR foci (Figure 1B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1B and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "07d2dc0a-1c50-4b92-b003-239e589554e7",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C38",
+      "claim": "The majority of CPY*-mRFP was found in the insoluble protein pellet fraction regardless of detergent pre-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The crude cell extracts prepared from CPY*-mRFP- or GFP-CFTR-expressing cells were treated with or without detergent and then fractionated by differential centrifugation. The majority of CPY*-mRFP was found in the insoluble protein pellet fraction regardless of detergent pre-treatment (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "de225761-4b32-4394-ba4c-710a344c52ad",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C39",
+      "claim": "GFP-CFTR was found in the insoluble protein pellet fraction regardless of detergent pre-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained for GFP-CFTR (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "643c81d7-09f6-4141-a08f-678e2d4ea6c9",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C40",
+      "claim": "CPY*-mRFP and GFP-CFTR foci meet the definition of protein aggregates according to previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the CPY* and CFTR foci observed here meet the definition of protein aggregates according to previous studies (Simons et al., 1995; Sondheimer and Lindquist, 2000; Nishikawa et al., 2001; Alberti et al., 2010), and we therefore refer to CPY*-mRFP and GFP-CFTR foci as aggregates throughout this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by biochemical characterization and citations to previous studies defining protein aggregates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "a04b8771-cd9e-431e-b5b9-d55a5b42aee2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C41",
+      "claim": "Expression of CPY*, but not CFTR, induces the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported that expression of CPY*, but not CFTR, induces the UPR (Chaudhuri et al., 1995; Zhang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "bdc0198f-7ff6-49a3-92fc-6343dff5ca26",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C42",
+      "claim": "Induction of CPY*-mRFP resulted in the expression of a UPR reporter (UPRE-GFP).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that induction of CPY*-mRFP resulted in the expression of a UPR reporter (UPRE-GFP, Figure 2A, lane 3), and this was further increased upon treatment of cells with the glycosylation inhibitor tunicamycin (Tm), a well-characterized ER stress inducer (Figure 2A, lane 4) (Cox et al., 1993; Mori et al., 1993).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "119d1166-c69a-4268-8db2-edd5947009f0",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C43",
+      "claim": "A majority of the class I daughter cells did not inherit the cER under the ER stress condition evoked by CPY*-mRFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a majority of the class I daughter cells did not inherit the cER under the ER stress condition evoked by CPY*-mRFP expression, and cER inheritance was also diminished in class II and III cells, but to a much lesser extent (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "9c7e8bff-2038-4f0b-8674-830aa64b2c68",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C44",
+      "claim": "cER inheritance was diminished in class II and III cells upon CPY*-mRFP expression, but to a much lesser extent than class I cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a majority of the class I daughter cells did not inherit the cER under the ER stress condition evoked by CPY*-mRFP expression, and cER inheritance was also diminished in class II and III cells, but to a much lesser extent (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4711fe73-d310-42ac-852a-3fdf910034e0",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C45",
+      "claim": "The magnitude of the cER inheritance block caused by CPY*-mRFP expression was less than that induced by Tm treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the magnitude of the cER inheritance block caused by CPY*-mRFP expression was less than that induced by Tm treatment (Figure 2C,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2C, 2E, and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "da1c4ca8-0228-431e-a117-df559c6e32ab",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C46",
+      "claim": "63% of class I, 73% of class II, and 60% of class III daughter cells containing the cER also contained CPY* aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that 63% of class I, 73% of class II, and 60% of class III daughter cells containing the cER also contained CPY* aggregates (Figure 2G; yellow vs gray bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "79fbcd8c-ac8c-403a-abf4-d17e02c98896",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C47",
+      "claim": "For CPY*-mRFP-expressing cells, more than 65% of buds that inherited ER also contained at least one CPY* aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that for CPY*-mRFP-expressing cells, more than 65% of buds that inherited ER also contained at least one CPY* aggregate (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "db84514f-7a18-451e-9132-9f0fb7b081fd",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C48",
+      "claim": "57% of buds without CPY* aggregates also lacked the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, 57% of buds without aggregates also lacked the ER (Figure 2G, light blue vs gray).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "d939a59d-1759-4341-8c6f-d88c0596e19e",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C49",
+      "claim": "cER inheritance was not affected by expression of GFP-CFTR.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the findings in CPY*-expressing cells, we found that cER inheritance was not affected by expression of GFP-CFTR (Figure 2D) unless the cells were also subjected to Tm treatment (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "9e694e72-8811-4f2c-9064-bb644ee116a5",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C50",
+      "claim": "Virtually all class I, II, and III daughter cells contained CFTR aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the number of CFTR aggregates and cER in the mother and daughter cells showed that virtually all class I, II, and III daughter cells contained CFTR aggregates (Figure 2H: yellow and Figure 2\u2014figure supplement 2G), indicating no preferential retention of CFTR aggregates by the mother cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2H and Figure 2\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c25a4c03-7599-4d03-9af3-cbfa7189dcf7",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C51",
+      "claim": "There is no preferential retention of CFTR aggregates by the mother cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the number of CFTR aggregates and cER in the mother and daughter cells showed that virtually all class I, II, and III daughter cells contained CFTR aggregates (Figure 2H: yellow and Figure 2\u2014figure supplement 2G), indicating no preferential retention of CFTR aggregates by the mother cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the quantitative data showing CFTR aggregates in daughter cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3dc2aa44-5ff6-4219-b6f0-fda97714e074",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C52",
+      "claim": "The cER inheritance block and asymmetric distribution of CFTR aggregates was observed in GFP-CFTR-expressing cells after Tm treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the cER inheritance block and asymmetric distribution of CFTR aggregates was observed in GFP-CFTR-expressing cells after Tm treatment (Figure 2\u2014figure supplement 2D\u2013F,H), strengthening the relationship between ER inheritance and ER protein aggregate distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2D\u2013F,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "569d851e-1336-4d6f-be1a-25e0d8ba3cc1",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C53",
+      "claim": "CPY*-mRFP aggregates induced a moderate level of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, the moderate expression level of UPRE-GFP revealed that CPY*-mRFP aggregates induced a moderate level of ER stress (Figure 2A, lane 3) and also induced a mild block in ER inheritance compared with that induced by 0.5 \u03bcg/ml of Tm (compare Figure 2C,E,F, and Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and comparison with Tm treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b2e366c7-0b92-4721-981c-f525e1c82af6",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C54",
+      "claim": "CPY*-mRFP aggregates were distributed in both mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed, however, that CPY*-mRFP aggregates were distributed in both mother and daughter cells (Figure 2G, Figure 2\u2014figure supplement 1A and Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4630de96-8446-4d00-a619-8feb8a8a793d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C55",
+      "claim": "The combined ER stresses of CPY* expression and Tm treatment further decreased ER inheritance by the daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the combined ER stresses further decreased ER inheritance by the daughter cells (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b6f9ed1c-749e-4388-be10-f7aca45ade16",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C56",
+      "claim": "Distribution of CPY* aggregates to the daughter cells was further diminished in cells treated with both CPY* expression and Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, distribution of CPY* aggregates to the daughter cells was also further diminished in these cells (Figure 2\u2014figure supplement 1C\u2013E) and correlated with the reduced level of cER transmission (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1C\u2013E and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "02c90512-d3db-42a3-918b-22b45a4f3996",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C57",
+      "claim": "Distribution of CFTR aggregates to the daughter cells was only diminished in cells in which ER inheritance was blocked by Tm treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, distribution of CFTR aggregates to the daughter cells was only diminished in cells in which ER inheritance was blocked by Tm treatment (Figure 2\u2014figure supplement 2A,D, and Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2A,D, and Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "8c8f6f82-f74c-4ff8-9b83-2b5b1d83a0c7",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C58",
+      "claim": "The magnitude of the ER inheritance block is affected by the level of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data therefore demonstrate that the magnitude of the ER inheritance block is affected by the level of ER stress, and that preferential retention of CPY* or CFTR aggregates in the mother cell is not an intrinsic property of the protein aggregates themselves, but rather, is dictated by ER inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "540b1639-b6e3-4f05-9cfe-f0a0bf4aded2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C59",
+      "claim": "Preferential retention of CPY* or CFTR aggregates in the mother cell is not an intrinsic property of the protein aggregates themselves, but rather, is dictated by ER inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data therefore demonstrate that the magnitude of the ER inheritance block is affected by the level of ER stress, and that preferential retention of CPY* or CFTR aggregates in the mother cell is not an intrinsic property of the protein aggregates themselves, but rather, is dictated by ER inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c78391ef-0c5a-408c-ada7-9bfcf0fb72da",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C60",
+      "claim": "Tm (1 \u03bcg/ml) treatment does not block cER inheritance in slt2\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We reported previously that Tm (1 \u03bcg/ml) treatment does not block cER inheritance in slt2\u0394 cells (Babour et al., 2010) and this was also observed in slt2\u0394 cells when ER stress was induced by CPY* aggregate expression (Figure 3A +Gal and Figure 3\u2014figure supplement 1A; compare to Figure 2C for WT cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous work and experimental data shown in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "7c2727dd-9361-4744-b9f9-1e5615da3015",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C61",
+      "claim": "Entry of the cER into the daughter slt2\u0394 cells was paralleled by the entry of CPY* aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, entry of the cER into the daughter slt2\u0394 cells was paralleled by the entry of CPY* aggregates, which contrasts with the ERSU-dependent block in both cER and aggregate inheritance by WT daughter cells (Figure 3D,G, Figure 3\u2014figure supplement 1A for slt2\u0394 vs 2G, Figure 2\u2014figure supplement 3A for WT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in multiple figures comparing slt2\u0394 and WT cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "1442fb8b-41cb-400d-8371-6f2525da1bc3",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C62",
+      "claim": "Tm treatment of CFTR-expressing slt2\u0394 cells failed to block either ER inheritance or CFTR aggregate entry into the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Tm treatment of CFTR-expressing slt2\u0394 cells failed to block either ER inheritance (Figure 3B,C, and Figure 3\u2014figure supplement 1B vs Figure 3\u2014figure supplement 1C) or CFTR aggregate entry into the daughter cell (Figure 3E,F,H, and Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "6fc7deb1-1ba0-4806-93c2-776869601757",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C63",
+      "claim": "ER inheritance, which is ultimately regulated by the ERSU pathway, regulates protein aggregate transmission into the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data revealed that ER inheritance, which is ultimately regulated by the ERSU pathway, regulates protein aggregate transmission into the daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on slt2\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "d9271adf-94a0-4d97-8fae-1ae1e3d90853",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C64",
+      "claim": "The cER inheritance behavior of bud1\u0394 cells and WT cells subjected to ER stress by treatment with Tm or expression of CPY*-mRFP was similar.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cER inheritance behavior of bud1\u0394 cells and WT cells subjected to ER stress by treatment with Tm (Figure 4A) or expression of CPY*-mRFP (Figure 4B) was similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "915b5b9a-d39b-4673-be60-b20abaa71a34",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C65",
+      "claim": "Transmission of CPY* aggregates was similar in bud1\u0394 and WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, transmission of CPY* aggregates was also similar in the two strains (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "469d637f-74ed-456d-b53f-be31071a641d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C66",
+      "claim": "Bud1 is not involved in the distribution of ER protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Bud1 is not involved in the distribution of ER protein aggregates (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on bud1\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "af1c19d0-d75a-4a16-8d65-c2ee5a9fe4b1",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C67",
+      "claim": "A significant population of class II and III daughter cells contained the cER even after Tm treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiments described above, we noted that a significant population of class II and III daughter cells contained the cER even after Tm treatment (Figure 2B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figures 2B\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "7660a342-e200-4881-8262-6a5b20423959",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C68",
+      "claim": "Phase I cells exhibited a cytokinesis block and did not undergo cell division at 80 min after \u03b1-factor release (1 hr after Tm addition).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that phase I cells exhibited a cytokinesis block and did not undergo cell division at 80 min after \u03b1-factor release (1 hr after Tm addition; Figure 5A,C and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5A, 5C, and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4a696787-fe07-4c5f-9ac3-3c9521f90d63",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C69",
+      "claim": "At 200 min after release (3 hr post-Tm), >85% of phase I cells remained undivided.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at 200 min after release (3 hr post-Tm), >85% of phase I cells remained undivided (Figure 5A,C; purple bars and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5A, 5C, and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3385ce6d-a79b-4d38-8777-c3eb9813bb28",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C70",
+      "claim": "In most phase I cells, the cER remained in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in most phase I cells, the cER remained in the mother cell (Figure 5D\u2013E and Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5D\u2013E and Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "a1779d4f-fc9e-4101-a040-93c5007b962c",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C71",
+      "claim": "At 50 min after \u03b1-factor release (before induction of ER stress), almost all of the phase II daughter cells had already inherited the cER.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at 50 min after \u03b1-factor release (before induction of ER stress), almost all of the phase II daughter cells had already inherited the cER (Figure 5D,F and Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5D, 5F, and Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c0080cc3-a2fe-4747-9429-46c2c405597f",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C72",
+      "claim": "After Tm addition, phase II cells underwent cytokinesis (cell division), and at 1 hr after Tm addition (110 min), \u223c50% of cells were derived from TR-positive mother cells, and the remaining \u223c50% were TR-negative and were derived from the first daughter cell that emerged after \u03b1-factor release.",
+      "claim_type": "EXPLICIT",
+      "source": "After Tm addition, these cells underwent cytokinesis (cell division), and at 1 hr after Tm addition (110 min), \u223c50% of cells were derived from TR-positive mother cells, and the remaining \u223c50% were TR-negative and were derived from the first daughter cell that emerged after \u03b1-factor release (Figure 5B,C, 110 min gray bars and Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5B, 5C, and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "76462e08-bd25-45a5-ba61-9842c179be55",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C73",
+      "claim": "After division, the number of phase II cells with the cER in the daughter cell was small.",
+      "claim_type": "EXPLICIT",
+      "source": "After division, the number of cells with the cER in the daughter cell was small (Figure 5D,F; 110 min, and Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5D, 5F, and Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "bd569a92-8b9b-4552-a81b-8ca0d2e6d9f4",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C74",
+      "claim": "Phase I and II cells showed similar degrees of UPR activation after ER stress, as reflected in the levels of spliced HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase I and II cells showed similar degrees of UPR activation after ER stress, as reflected in the levels of spliced HAC1 mRNA resulting from activated Ire1 RNase-mediated mRNA cleavage (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5G and 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "dc2b32db-810b-4d19-bd72-b2e7f7bd78d7",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C75",
+      "claim": "Phase II cells exhibited a block in both cytokinesis and cER inheritance block at the second round of division.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, phase II cells exhibited a block in both cytokinesis and cER inheritance block at the second round of division, and the daughter cell arising from the first cell division did not further divide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data on synchronized cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "5b959a97-a265-439c-946c-8587c0465c26",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C76",
+      "claim": "At 3 hr of Tm treatment, \u223c13% of phase II and \u223c20% of phase I cells had two buds.",
+      "claim_type": "EXPLICIT",
+      "source": "At this point (Tm, 3 hr), \u223c13% of phase II and \u223c20% of phase I cells had two buds (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "1e3cc24b-c91f-4f06-b4d5-48474391867d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C77",
+      "claim": "Cells in which the cER is already in the daughter cell at the time of ER stress induction proceed through cytokinesis once, but display blocks in both cytokinesis and cER inheritance in the next cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "These results therefore demonstrate that cells in which the cER is already in the daughter cell at the time of ER stress induction proceed through cytokinesis once, but display blocks in both cytokinesis and cER inheritance in the next cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the synchronized cell experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "0a4b7a61-b47f-4409-84b8-f78f99bed06e",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C78",
+      "claim": "In the mother cell, the fluorescence recovery rate of Kar2/BiP-sfGFP was significantly reduced by Tm treatment when compared with control DMSO-treated cells, and this was similar for both the cER and pnER.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mother cell, the fluorescence recovery rate was significantly reduced by Tm treatment when compared with control DMSO-treated cells, and this was similar for both the cER and pnER (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP experimental data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "e4b31bfb-e964-4224-b477-185e1fc6db97",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C79",
+      "claim": "There were no significant differences between the mother and daughter cell in Kar2/BiP-sfGFP recovery rates in either the cER or pnER under control or Tm-treated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were no significant differences between the mother and daughter cell in recovery rates in either the cER or pnER under control or Tm-treated conditions (Figure 6A,B), indicating that the ER stress levels are identical in mother and daughter cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP experimental data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "79d2ddf4-828a-419d-b304-79b4378dbc5d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C80",
+      "claim": "The ER stress levels are identical in mother and daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were no significant differences between the mother and daughter cell in recovery rates in either the cER or pnER under control or Tm-treated conditions (Figure 6A,B), indicating that the ER stress levels are identical in mother and daughter cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the FRAP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c98485fa-6652-4528-b329-168f591616d1",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C81",
+      "claim": "The data do not support the preferential retention of ER protein aggregates in the mother cell, but instead argue that ER inheritance regulates the fate of unfolded proteins and the inheritance of ER protein aggregates by the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data presented do not support the preferential retention of ER protein aggregates in the mother cell, but instead argue that ER inheritance regulates the fate of unfolded proteins and the inheritance of ER protein aggregates by the daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "44e4c2ca-759d-4d18-b7a1-c93a8376012c",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C82",
+      "claim": "CPY*-mRFP aggregates alone activate both the UPR and the ERSU pathway, although activation was significantly less robust than when induced by Tm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CPY*-mRFP aggregates alone activate both the UPR and the ERSU pathway (Figure 2A,C), although activation was significantly less robust than when induced by Tm (even at 0.5 \u03bcg/ml) and was more equivalent to a low/moderate level of ER stress (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2A, 2C, 2E, and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "d990331b-cf98-465b-8b1b-5915d37ba42b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C83",
+      "claim": "When the analysis was restricted to daughter cells that contain the cER, 63% of these cER-positive daughter cells also contained CPY*-mRFP aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when the analysis was restricted to daughter cells that contain the cER, we found that 63% of these cER-positive daughter cells also contained CPY*-mRFP aggregates (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b869f312-0bb8-4cb5-b24e-b79c81e29d39",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C84",
+      "claim": "The cellular distribution of CPY*-mRFP aggregates is determined by the location of the cER.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the cellular distribution of CPY*-mRFP aggregates is determined by the location of the cER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on CPY* aggregate distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "f1cff3a4-5148-4fbc-b4cd-62b088c17b28",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C85",
+      "claim": "GFP-CFTR aggregates did not activate the ERSU pathway, in agreement with the lack of UPR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusions are further supported by the observations with GFP-CFTR; we found that GFP-CFTR aggregates did not activate the ERSU pathway, in agreement with the lack of UPR activation (Zhang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4a89eddb-ee4e-4931-981e-081f25650009",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C86",
+      "claim": "GFP-CFTR aggregates were present in almost all of the cER-positive small-budded cells (class I), whereas CPY*-mRFP aggregates were present in only about half of cER-positive small-budded cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GFP-CFTR aggregates were present in almost all of the cER-positive small-budded cells (class I: <2-\u03bcm diameter, gray vs yellow bars in Figure 2H), whereas CPY*-mRFP aggregates were present in only about half of cER-positive small-budded cells (gray vs yellow bars in Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figures 2G and 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "86e073f1-73f7-4ebc-9179-75ed8c27260f",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C87",
+      "claim": "GFP-CFTR aggregates behave like soluble proteins in the ER lumen, perhaps because of the lack of proteotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that GFP-CFTR aggregates behave like soluble proteins in the ER lumen, perhaps because of the lack of proteotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data on CFTR aggregate behavior.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "1e17754f-0b0f-414a-a9a6-918b35ba6962",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C88",
+      "claim": "The behavior of CPY*-mRFP and GFP-CFTR aggregates in bud1\u0394 cells and WT cells was indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the behavior of CPY*-mRFP and GFP-CFTR aggregates in bud1\u0394 cells and WT cells was indistinguishable, indicating that the mother\u2013daughter lateral diffusion barrier established by Bud1 does not play a significant role in either the cER inheritance block or the distribution of ER protein aggregates in response to ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on bud1\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "309f30a3-ab92-4b28-b3d8-f2ca200bfff0",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C89",
+      "claim": "The mother\u2013daughter lateral diffusion barrier established by Bud1 does not play a significant role in either the cER inheritance block or the distribution of ER protein aggregates in response to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the behavior of CPY*-mRFP and GFP-CFTR aggregates in bud1\u0394 cells and WT cells was indistinguishable, indicating that the mother\u2013daughter lateral diffusion barrier established by Bud1 does not play a significant role in either the cER inheritance block or the distribution of ER protein aggregates in response to ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on bud1\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "430eeb21-dd7f-47f5-ad3a-191a363cc04d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C90",
+      "claim": "bud1\u0394 mother cells have a shorter replicative lifespan than WT mother cells under optimal stress-free growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, bud1\u0394 mother cells appear to have a shorter replicative lifespan than WT mother cells under optimal stress-free growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a previous observation, likely from the Clay et al. 2014 study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "59d493a3-fbdf-46bb-9f85-c48014cb17b2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C91",
+      "claim": "Several distinct cytoplasmic protein aggregates have been reported: ubiquitinated cytoplasmic proteins associate with JUNQ, whereas insoluble proteins associate with IPOD upon proteasome inactivation or in the presence of amyloid proteins such as Huntingtin with extended polyQ.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, several distinct cytoplasmic protein aggregates have been reported: ubiquitinated cytoplasmic proteins associate with JUNQ, whereas insoluble proteins associate with IPOD upon proteasome inactivation (Kaganovich et al., 2008) or in the presence of amyloid proteins such as Huntingtin with extended polyQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3dd4f1b1-7d15-436d-a573-ae19fc8f8a08",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C92",
+      "claim": "In cells with functional proteasomes, misfolded proteins dynamically form inclusion bodies called Q-body protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells with functional proteasomes, misfolded proteins dynamically form inclusion bodies called Q-body protein aggregates (Spokoini et al., 2012; Roth and Balch, 2013; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "717c0210-b927-48af-a5f9-c0a600fc2c24",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C93",
+      "claim": "JUNQ associates with the ER/nucleus, IPOD is found next to the vacuole, and Q-bodies are scattered throughout the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting feature of these cytoplasmic protein aggregates is their differential subcellular localization; JUNQ associates with the ER/nucleus, IPOD is found next to the vacuole (Kaganovich et al., 2008; Ogrodnik et al., 2014; Polling et al., 2014), and Q-bodies are scattered throughout the cytoplasm (Spokoini et al., 2012; Escusa-Toret et al., 2013; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3b9f9b99-2b7c-438c-9740-c76340e8531d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C94",
+      "claim": "Cytoplasmic protein aggregates are selectively retained in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These protein aggregates are selectively retained in the mother cell, and a recent study has revealed an intriguing mechanism for retention of Q-body protein aggregates through association with the ER and eventually with the mitochondria (Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b90d32fd-fcef-4bb0-bfd8-be60e3a7cdf2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C95",
+      "claim": "A recent study has revealed an intriguing mechanism for retention of Q-body protein aggregates through association with the ER and eventually with the mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "These protein aggregates are selectively retained in the mother cell, and a recent study has revealed an intriguing mechanism for retention of Q-body protein aggregates through association with the ER and eventually with the mitochondria (Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "19fa4e16-29fb-4399-aa41-7df379fa7107",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C96",
+      "claim": "Fluorescently tagged forms of both CPY* and CFTR aggregates appeared to be scattered throughout the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that fluorescently tagged forms of both CPY* and CFTR aggregates appeared to be scattered throughout the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "78158e08-2eeb-4c11-88c9-008b7dc4e509",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C97",
+      "claim": "The ERSU pathway blocks ER inheritance and prevents transmission of ER protein aggregates into the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the ERSU pathway blocks ER inheritance and prevents transmission of ER protein aggregates into the daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "477813d2-69ab-45b9-83e1-8cb9a244efbf",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C98",
+      "claim": "The asymmetric distribution of cytosolic protein aggregates and large inclusions such as JUNQ and IPOD is protective and allows the daughter cells to be rejuvenated during each cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric distribution of cytosolic protein aggregates and large inclusions such as JUNQ and IPOD is protective and allows the daughter cells to be rejuvenated during each cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "bede2865-ceb3-495e-91d6-320c12248536",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C99",
+      "claim": "During ER stress, ER aggregates are retained by the ERSU mechanism that prevents transfer of the stressed ER.",
+      "claim_type": "EXPLICIT",
+      "source": "But during ER stress, ER aggregates are retained by the ERSU mechanism that prevents transfer of the stressed ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "0f62f30c-7d4f-4b7a-a2ee-40fd4811e055",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C100",
+      "claim": "Cytosolic protein aggregates have been reported to associate with the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytosolic protein aggregates have been reported to associate with the ER, raising the intriguing possibility that the ER functions as a central controller for the distribution of protein aggregates in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous research findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "41014060-ab3d-495f-b434-b29f716cabb1",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C101",
+      "claim": "The ER may function as a central controller for the distribution of protein aggregates in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytosolic protein aggregates have been reported to associate with the ER, raising the intriguing possibility that the ER functions as a central controller for the distribution of protein aggregates in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the data and previous research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "25376892-37a5-43fd-b6f2-0e175c553aea",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C102",
+      "claim": "The association of cytoplasmic protein aggregates with the ER may somehow induce ER stress and consequently, the ERSU pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the association of cytoplasmic protein aggregates with the ER may somehow induce ER stress and consequently, the ERSU pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "ee2fba7c-fdd9-46b5-b94a-0b0e2c02d94b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C103",
+      "claim": "The ERSU pathway may function as a master regulator for both the ER and cytoplasmic protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, the ERSU pathway may function as a master regulator for both the ER and cytoplasmic protein aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "cfc39606-5c0a-4074-b8aa-e3e1928b5e99",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C104",
+      "claim": "Many of the cell cycle checkpoints that ensure accurate DNA replication and genome transmission are restricted to specific stages of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the cell cycle checkpoints that ensure accurate DNA replication and genome transmission are restricted to specific stages of the cell cycle (Rhind and Russell, 2012; Yasutis and Kozminski, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "5ae1545f-c956-4dfe-a89d-0451477f1448",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C105",
+      "claim": "Both class II and III cells exhibit the block in ER inheritance during ER stress, but it is less pronounced than in class I cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By observing asynchronous populations of yeast cells, we found that both class II and class III cells exhibit the block in ER inheritance during ER stress, but it is less pronounced than in class I cells, as we described in our initial report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and reference to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "f5f2db98-dec1-427e-a485-35a063e05745",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C106",
+      "claim": "ER transfer to the daughter cell had already taken place in many class II and III cells prior to encountering ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that ER stress must be recognized early in the cell cycle in order to induce the ERSU pathway. Significantly, ER transfer to the daughter cell had already taken place in many class II and III cells prior to encountering ER stress, and presumably, these populations contribute to the lower number of cells exhibiting the cER inheritance block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on synchronized cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "98787373-c7b1-4e12-8afc-7e434c8f0fd7",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C107",
+      "claim": "ER stress must be recognized early in the cell cycle in order to induce the ERSU pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that ER stress must be recognized early in the cell cycle in order to induce the ERSU pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on synchronized cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3c6d45eb-60d1-4c23-8743-5f8adb5fb4be",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C108",
+      "claim": "Cells at later stages of the cell cycle, when the cER is already in the daughter cell at the time of exposure to ER stress, undergo cytokinesis for the first round of the cell cycle but exhibit a block in cER inheritance and cytokinesis during the second round.",
+      "claim_type": "EXPLICIT",
+      "source": "Using synchronized cells, we found that cells at later stages of the cell cycle, when the cER is already in the daughter cell at the time of exposure to ER stress, undergo cytokinesis for the first round of the cell cycle but exhibit a block in cER inheritance and cytokinesis during the second round.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on synchronized cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "be32e9c9-b0bf-432a-adb3-1ee3b40e94e3",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C109",
+      "claim": "The ERSU pathway is effective only when ER stress is sensed at an early stage of the cell cycle and can be ignored until the second cell cycle if the cER was already present in the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ERSU pathway is effective only when ER stress is sensed at an early stage of the cell cycle and can be ignored until the second cell cycle if the cER was already present in the daughter cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the synchronized cell experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "beffbafb-e0f2-41a7-b1a2-fb7d79047444",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C110",
+      "claim": "The observation that class II and III cells with cER-containing daughter cells proceed normally through the first round of cytokinesis after ER stress, and that this 'error' is not corrected until the second round, is unprecedented.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the observation that class II and III cells with cER-containing daughter cells proceed normally through the first round of cytokinesis after ER stress, and that this 'error' is not corrected until the second round, is unprecedented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "3d671f8c-f655-4a32-bd0f-8aab43dc143b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C111",
+      "claim": "ER stress was manifested within 30 min of stress induction in both class II or III daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Results of the FRAP experiments indicate that ER stress was manifested within 30 min of stress induction in both class II or III daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRAP experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "8e31d7f2-6c62-4ec8-8a2c-56b7018ad60b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C112",
+      "claim": "Class II and III cells must somehow bypass the ERSU pathway-induced cytokinesis block in the first round of division but halt the cell cycle during the next round of cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these cells must somehow bypass the ERSU pathway-induced cytokinesis block in the first round of division but halt the cell cycle during the next round of cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "1c9adf61-7c0d-4a98-905e-607b05c63e95",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C113",
+      "claim": "A functionally stressed ER might be tolerated if the problem is resolved promptly in the next cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a functionally stressed ER might be tolerated if the problem is resolved promptly in the next cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "129d4077-413b-4721-9b4b-69f825885490",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C114",
+      "claim": "A single amino acid change in CPY* (G255R) leads to improper folding, and the protein accumulates in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "A single amino acid change in CPY* (G255R) leads to improper folding, and the protein accumulates in the ER (Finger et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "25bb4700-c218-410d-acfb-0974f8be0a1e",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C115",
+      "claim": "In mammalian cells, a large proportion of newly synthesized wild-type (WT) CFTR is not properly folded and is ultimately degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, a large proportion of newly synthesized wild-type (WT) CFTR is not properly folded and is ultimately degraded (Lukacs et al., 1994; Ward and Kopito, 1994; Jensen et al., 1995; Ward et al., 1995; Moyer et al., 1998; Gnann et al., 2004; Younger et al., 2006; Turnbull et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b6dc7848-38f3-4bcc-906d-560976bc62c2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "claim_id": "C116",
+      "claim": "Only a minor fraction of translated CFTR actually reaches the plasma membrane in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only a minor fraction of translated CFTR actually reaches the plasma membrane in yeast (Kiser et al., 2001; Zhang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ERSU pathway, mediated by Slt2 MAPK and independent of the UPR, blocks ER inheritance and cytokinesis upon ER stress induction. In slt2\u0394 cells, this block is absent, leading to transmission of stressed ER to daughter cells and impaired growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 establish the ERSU pathway from prior work with appropriate citations. Claims C2, C3, and C6 represent the main findings of this study, supported by extensive experimental data throughout the manuscript showing that ER protein aggregates inducing ER stress are retained via ERSU pathway activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CPY*-mRFP and GFP-CFTR form detergent-insoluble aggregates in the ER. CPY* aggregates show cell cycle-dependent transmission to daughter cells (~80% retained in class I, ~50% transmitted in class II/III), while CFTR aggregates are transmitted to most daughter cells regardless of cell cycle stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 are well-supported by microscopy (Figures 1A-D) and biochemical fractionation data (Figure 1E). The differential behavior of CPY* vs CFTR aggregates is clearly documented with quantitative measurements and appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CPY*-mRFP expression induces UPR activation and blocks cER inheritance in a cell cycle-dependent manner, with the strongest block in class I cells. The magnitude of the block is moderate compared to tunicamycin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45, C53, and C82 are supported by UPR reporter data (Figure 2A) and quantitative cER inheritance measurements (Figures 2B-F). The comparison with tunicamycin provides appropriate context for the level of ER stress induced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "28f4a05f-3861-4322-a124-bc453411327f",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In CPY*-expressing cells, 63-73% of daughter cells containing cER also contain CPY* aggregates, and 57% of buds without aggregates lack ER. The cellular distribution of CPY* aggregates is determined by cER location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C83-C84 are supported by quantitative co-localization data (Figure 2G and supplements). The conclusion that aggregate distribution follows ER location is a reasonable inference from the strong correlation observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "b139671a-6301-4f11-9e43-c5e2237acbb8",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GFP-CFTR expression does not affect cER inheritance or activate the ERSU pathway. CFTR aggregates are present in virtually all daughter cells and behave like soluble ER luminal proteins, possibly due to lack of proteotoxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 and C85-C86 are well-supported by experimental data (Figures 2D, 2H). However, claim C87 about CFTR aggregates behaving like soluble proteins is speculative and based on inference rather than direct measurement of solubility or toxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "63350f38-01be-4366-aeef-cfe7b2c48e6d",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The magnitude of the ER inheritance block correlates with ER stress level. Combined CPY* expression and tunicamycin treatment further reduces both cER inheritance and aggregate transmission. Preferential retention of ER protein aggregates is dictated by ER inheritance rather than intrinsic aggregate properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 are supported by dose-response experiments with tunicamycin and CPY*/CFTR comparisons (Figure 2 supplements). The conclusion that aggregate retention is dictated by ER inheritance is well-supported by the totality of the data comparing CPY* and CFTR under various conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "757b66bf-69da-40f0-a8fc-e07a1e02b714",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In slt2\u0394 cells lacking functional ERSU pathway, neither CPY* expression nor tunicamycin treatment blocks cER inheritance, and both CPY* and CFTR aggregates enter daughter cells. This demonstrates that the ERSU pathway regulates protein aggregate transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 are strongly supported by experiments in slt2\u0394 cells (Figure 3 and supplements). The genetic evidence from ERSU-deficient cells provides critical support for the mechanistic model linking ER inheritance to aggregate distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "643c5e2a-5e1e-455f-9456-4260d4da3d9f",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The cER inheritance behavior and CPY* aggregate transmission in bud1\u0394 cells is similar to wild-type cells. The Bud1-dependent lateral diffusion barrier does not play a significant role in the ERSU pathway or ER protein aggregate distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 and C88-C89 are supported by experimental data (Figure 4). This result contradicts a previous model (Clay et al. 2014) and is important for understanding the mechanism. The data clearly show no difference between WT and bud1\u0394 cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "6bcaa32a-491a-4439-b254-e0d80c391dcb",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using synchronized cells, the study shows that ERSU pathway activation is cell cycle-dependent. Phase I cells (early cell cycle) exhibit strong cytokinesis and cER inheritance blocks. Phase II cells (with cER already in daughter) complete one division but block at the second round. ER stress must be recognized early in the cell cycle for effective ERSU activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C77 and C105-C109 are supported by comprehensive cell synchronization experiments (Figure 5 and supplements). The use of Texas Red labeling to track mother vs daughter cells is elegant. UPR activation is similar in both phases (C74), ruling out differential stress sensing. This is a novel finding about cell cycle checkpoint timing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "5209a1ca-0882-4a73-8dd8-2558eb4b94aa",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FRAP analysis of Kar2/BiP-sfGFP shows that ER stress levels are identical in mother and daughter cells. Tunicamycin treatment reduces fluorescence recovery rates equally in both cell types and in both cER and pnER.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 and C111 are supported by FRAP experiments (Figure 6). The data clearly show no difference in ER stress levels between mother and daughter cells, which argues against preferential retention of aggregates due to differential stress levels. The methodology is appropriate and the conclusion is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "95072afb-e3e7-4048-a34d-1c504124f173",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The main conclusion is that ER inheritance, regulated by the ERSU pathway, determines the fate of ER protein aggregates rather than preferential retention mechanisms. During ER stress, the ERSU pathway blocks ER transmission and thereby prevents aggregate inheritance by daughter cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C97, and C99 represent the central conclusion of the manuscript. This is well-supported by the convergence of multiple lines of evidence: CPY* vs CFTR comparisons, slt2\u0394 experiments, bud1\u0394 experiments, cell cycle synchronization, and FRAP analysis. The model is internally consistent and addresses alternative hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "60e216dc-4dd4-4147-910f-2178111bfdf2",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observation that phase II/III cells with cER-containing daughters proceed through one division before blocking in the second round is unprecedented. These cells bypass the ERSU-induced block initially but halt at the next cytokinesis, suggesting stressed ER might be tolerated if resolved in the next cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110 and C112 are supported by the synchronized cell data. Claim C113 is speculative but reasonable. This finding is novel and raises interesting questions about checkpoint mechanisms, though the molecular basis for this behavior remains unexplained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "eef25c54-78de-4db0-b866-0a5be8e67aa1",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work (Clay et al. 2014) proposed that ER protein aggregates are retained via a Bud1-dependent lateral diffusion barrier at the bud neck. This barrier forms when buds emerge and bud1\u0394 mother cells have shorter replicative lifespans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 and C90 accurately cite prior work. However, the current manuscript's data (C64-C66, C88-C89) contradict the proposed role of Bud1 in aggregate retention. The citation is accurate but the model is challenged by the new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "405fa147-5e12-4f2d-aa8d-5295c975426b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on asymmetric cell division and cytoplasmic protein aggregates: In S. cerevisiae, daughter cells are rejuvenated while damage is retained in mothers. Cytoplasmic aggregates (JUNQ, IPOD, Q-bodies) are retained in mothers through various mechanisms, though details remain unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 and C32, C91-C95, C98, C100 provide established background knowledge with appropriate citations. These claims accurately represent the state of the field and provide context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "f1437ed5-585f-4c11-bc9c-07e192e6be90",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on ER function and stress responses: The ER is essential for protein folding, secretion, lipid synthesis, and calcium storage. The UPR responds to ER stress. The ER cannot be synthesized de novo. Misfolded proteins are normally degraded by ERAD but can accumulate into foci when overexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 and C28-C29 provide accurate background on ER biology with appropriate citations. This establishes the rationale for why ER inheritance regulation would be important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "5e4caaad-e2da-40d1-bbcf-788a77d54fcb",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CPY*-mRFP and CFTR aggregates appear scattered throughout the ER when visualized by fluorescence microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C96 are observational descriptions supported by the microscopy images. This contrasts with the localized nature of some cytoplasmic aggregates and is relevant for understanding aggregate behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "a55b74db-85aa-4a29-9ddc-753f1aabfc79",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Many cell cycle checkpoints ensuring DNA replication and genome transmission are restricted to specific cell cycle stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 is accurate background knowledge with appropriate citations, providing context for the cell cycle-dependent nature of the ERSU pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "4050ec92-39e5-4959-8043-746812b5685b",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on CPY* and CFTR: CPY* has a G255R mutation causing misfolding and ER accumulation. In mammalian cells and yeast, most newly synthesized CFTR is misfolded and degraded, with only a minor fraction reaching the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C116 provide accurate background on the model proteins used, with appropriate citations. This establishes why these proteins form aggregates in the ER.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "26c6a51a-7ddb-44a5-a026-174cdf0439c6",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "General statements about protein aggregates: Cytoplasmic protein aggregates cause cellular stress contributing to disease. Cytoplasmic aggregates are retained in mother cells to protect daughter cell function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C5 are general statements establishing the importance of the research topic. These are well-established concepts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "c705a8eb-0692-4c3f-a02a-69751aea4bb4",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Under conditions of normal ER inheritance, ER protein aggregates can enter the daughter cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 is supported by the CFTR data showing aggregate transmission when ER inheritance is not blocked. This is a key finding that distinguishes ER aggregates from cytoplasmic aggregates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    },
+    {
+      "id": "a34085ae-e44b-4d28-a294-4722cbcbcd9e",
+      "content_id": "1e66b5ad-5915-4553-973b-639c41988784",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Speculative hypotheses: The ER may function as a central controller for protein aggregate distribution. Alternatively, cytoplasmic aggregate association with ER might induce ER stress and activate ERSU, making ERSU a master regulator for both ER and cytoplasmic aggregates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C103 are explicitly speculative hypotheses for future investigation. While interesting, they are not tested in this study and remain uncertain. The authors appropriately present these as possibilities rather than conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:57:02.906082Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce841a97-236b-4a1c-b965-eaf1143d26f3",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "3ec7401f-a0e5-484e-9957-946b75201686",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "a33fc899-68ea-49d7-a7df-208c7375d137",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "183a3139-8162-4301-ae17-92c2141c2f61",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "c172a138-0c99-4e8b-8d22-98b5588b5530",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "46a5e017-4e20-4d84-a46b-20bf0b8f1121",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "dd93759c-ec20-431d-aae0-6d04f6733142",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "efe7a0db-fbd7-4394-a7ec-43d76e30e5b9",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "c4bebdd5-bf3b-4e09-aefd-8ec1f7229d41",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "c868c561-ccb9-4238-8845-9d160e58adae",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "3f8c5d53-4284-4e75-b1c2-b3f0fe859229",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "fe1bb057-1be6-4fb6-85da-64837fa5a768",
+      "result_id": "ac1acbbc-46b4-4ebc-aedd-c066fa1ea683"
+    },
+    {
+      "claim_id": "cb2b9b74-ac4f-4802-b868-eb85b99aebd2",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "32ee1b3f-c7e1-481f-b0d9-d146920bb896",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "af774831-2f0f-4f17-915a-58857bedbb9a",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "dc2ef1a6-3966-4fd9-b5e0-1e42878ce614",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "23d172e5-913e-4551-9c70-72d64ffd3e35",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "07d2dc0a-1c50-4b92-b003-239e589554e7",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "de225761-4b32-4394-ba4c-710a344c52ad",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "643c81d7-09f6-4141-a08f-678e2d4ea6c9",
+      "result_id": "7f456cdb-8281-4f4b-9606-c74e2a198fbe"
+    },
+    {
+      "claim_id": "a04b8771-cd9e-431e-b5b9-d55a5b42aee2",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "bdc0198f-7ff6-49a3-92fc-6343dff5ca26",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "119d1166-c69a-4268-8db2-edd5947009f0",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "9c7e8bff-2038-4f0b-8674-830aa64b2c68",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "4711fe73-d310-42ac-852a-3fdf910034e0",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "569d851e-1336-4d6f-be1a-25e0d8ba3cc1",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "44e4c2ca-759d-4d18-b7a1-c93a8376012c",
+      "result_id": "4b5274e7-11ee-41f6-ab8d-12dfc0cd134c"
+    },
+    {
+      "claim_id": "da1c4ca8-0228-431e-a117-df559c6e32ab",
+      "result_id": "28f4a05f-3861-4322-a124-bc453411327f"
+    },
+    {
+      "claim_id": "79fbcd8c-ac8c-403a-abf4-d17e02c98896",
+      "result_id": "28f4a05f-3861-4322-a124-bc453411327f"
+    },
+    {
+      "claim_id": "db84514f-7a18-451e-9132-9f0fb7b081fd",
+      "result_id": "28f4a05f-3861-4322-a124-bc453411327f"
+    },
+    {
+      "claim_id": "d990331b-cf98-465b-8b1b-5915d37ba42b",
+      "result_id": "28f4a05f-3861-4322-a124-bc453411327f"
+    },
+    {
+      "claim_id": "b869f312-0bb8-4cb5-b24e-b79c81e29d39",
+      "result_id": "28f4a05f-3861-4322-a124-bc453411327f"
+    },
+    {
+      "claim_id": "d939a59d-1759-4341-8c6f-d88c0596e19e",
+      "result_id": "b139671a-6301-4f11-9e43-c5e2237acbb8"
+    },
+    {
+      "claim_id": "9e694e72-8811-4f2c-9064-bb644ee116a5",
+      "result_id": "b139671a-6301-4f11-9e43-c5e2237acbb8"
+    },
+    {
+      "claim_id": "c25a4c03-7599-4d03-9af3-cbfa7189dcf7",
+      "result_id": "b139671a-6301-4f11-9e43-c5e2237acbb8"
+    },
+    {
+      "claim_id": "f1cff3a4-5148-4fbc-b4cd-62b088c17b28",
+      "result_id": "b139671a-6301-4f11-9e43-c5e2237acbb8"
+    },
+    {
+      "claim_id": "4a89eddb-ee4e-4931-981e-081f25650009",
+      "result_id": "b139671a-6301-4f11-9e43-c5e2237acbb8"
+    },
+    {
+      "claim_id": "86e073f1-73f7-4ebc-9179-75ed8c27260f",
+      "result_id": "b139671a-6301-4f11-9e43-c5e2237acbb8"
+    },
+    {
+      "claim_id": "3dc2aa44-5ff6-4219-b6f0-fda97714e074",
+      "result_id": "63350f38-01be-4366-aeef-cfe7b2c48e6d"
+    },
+    {
+      "claim_id": "4630de96-8446-4d00-a619-8feb8a8a793d",
+      "result_id": "63350f38-01be-4366-aeef-cfe7b2c48e6d"
+    },
+    {
+      "claim_id": "b6f9ed1c-749e-4388-be10-f7aca45ade16",
+      "result_id": "63350f38-01be-4366-aeef-cfe7b2c48e6d"
+    },
+    {
+      "claim_id": "02c90512-d3db-42a3-918b-22b45a4f3996",
+      "result_id": "63350f38-01be-4366-aeef-cfe7b2c48e6d"
+    },
+    {
+      "claim_id": "8c8f6f82-f74c-4ff8-9b83-2b5b1d83a0c7",
+      "result_id": "63350f38-01be-4366-aeef-cfe7b2c48e6d"
+    },
+    {
+      "claim_id": "540b1639-b6e3-4f05-9cfe-f0a0bf4aded2",
+      "result_id": "63350f38-01be-4366-aeef-cfe7b2c48e6d"
+    },
+    {
+      "claim_id": "c78391ef-0c5a-408c-ada7-9bfcf0fb72da",
+      "result_id": "757b66bf-69da-40f0-a8fc-e07a1e02b714"
+    },
+    {
+      "claim_id": "7c2727dd-9361-4744-b9f9-1e5615da3015",
+      "result_id": "757b66bf-69da-40f0-a8fc-e07a1e02b714"
+    },
+    {
+      "claim_id": "1442fb8b-41cb-400d-8371-6f2525da1bc3",
+      "result_id": "757b66bf-69da-40f0-a8fc-e07a1e02b714"
+    },
+    {
+      "claim_id": "6fc7deb1-1ba0-4806-93c2-776869601757",
+      "result_id": "757b66bf-69da-40f0-a8fc-e07a1e02b714"
+    },
+    {
+      "claim_id": "d9271adf-94a0-4d97-8fae-1ae1e3d90853",
+      "result_id": "643c5e2a-5e1e-455f-9456-4260d4da3d9f"
+    },
+    {
+      "claim_id": "915b5b9a-d39b-4673-be60-b20abaa71a34",
+      "result_id": "643c5e2a-5e1e-455f-9456-4260d4da3d9f"
+    },
+    {
+      "claim_id": "469d637f-74ed-456d-b53f-be31071a641d",
+      "result_id": "643c5e2a-5e1e-455f-9456-4260d4da3d9f"
+    },
+    {
+      "claim_id": "1e17754f-0b0f-414a-a9a6-918b35ba6962",
+      "result_id": "643c5e2a-5e1e-455f-9456-4260d4da3d9f"
+    },
+    {
+      "claim_id": "309f30a3-ab92-4b28-b3d8-f2ca200bfff0",
+      "result_id": "643c5e2a-5e1e-455f-9456-4260d4da3d9f"
+    },
+    {
+      "claim_id": "af1c19d0-d75a-4a16-8d65-c2ee5a9fe4b1",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "7660a342-e200-4881-8262-6a5b20423959",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "4a696787-fe07-4c5f-9ac3-3c9521f90d63",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "3385ce6d-a79b-4d38-8777-c3eb9813bb28",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "a1779d4f-fc9e-4101-a040-93c5007b962c",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "c0080cc3-a2fe-4747-9429-46c2c405597f",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "76462e08-bd25-45a5-ba61-9842c179be55",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "bd569a92-8b9b-4552-a81b-8ca0d2e6d9f4",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "dc2b32db-810b-4d19-bd72-b2e7f7bd78d7",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "5b959a97-a265-439c-946c-8587c0465c26",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "1e3cc24b-c91f-4f06-b4d5-48474391867d",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "5ae1545f-c956-4dfe-a89d-0451477f1448",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "f5f2db98-dec1-427e-a485-35a063e05745",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "98787373-c7b1-4e12-8afc-7e434c8f0fd7",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "3c6d45eb-60d1-4c23-8743-5f8adb5fb4be",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "be32e9c9-b0bf-432a-adb3-1ee3b40e94e3",
+      "result_id": "6bcaa32a-491a-4439-b254-e0d80c391dcb"
+    },
+    {
+      "claim_id": "0a4b7a61-b47f-4409-84b8-f78f99bed06e",
+      "result_id": "5209a1ca-0882-4a73-8dd8-2558eb4b94aa"
+    },
+    {
+      "claim_id": "e4b31bfb-e964-4224-b477-185e1fc6db97",
+      "result_id": "5209a1ca-0882-4a73-8dd8-2558eb4b94aa"
+    },
+    {
+      "claim_id": "79d2ddf4-828a-419d-b304-79b4378dbc5d",
+      "result_id": "5209a1ca-0882-4a73-8dd8-2558eb4b94aa"
+    },
+    {
+      "claim_id": "3d671f8c-f655-4a32-bd0f-8aab43dc143b",
+      "result_id": "5209a1ca-0882-4a73-8dd8-2558eb4b94aa"
+    },
+    {
+      "claim_id": "c98485fa-6652-4528-b329-168f591616d1",
+      "result_id": "95072afb-e3e7-4048-a34d-1c504124f173"
+    },
+    {
+      "claim_id": "78158e08-2eeb-4c11-88c9-008b7dc4e509",
+      "result_id": "95072afb-e3e7-4048-a34d-1c504124f173"
+    },
+    {
+      "claim_id": "bede2865-ceb3-495e-91d6-320c12248536",
+      "result_id": "95072afb-e3e7-4048-a34d-1c504124f173"
+    },
+    {
+      "claim_id": "beffbafb-e0f2-41a7-b1a2-fb7d79047444",
+      "result_id": "60e216dc-4dd4-4147-910f-2178111bfdf2"
+    },
+    {
+      "claim_id": "8e31d7f2-6c62-4ec8-8a2c-56b7018ad60b",
+      "result_id": "60e216dc-4dd4-4147-910f-2178111bfdf2"
+    },
+    {
+      "claim_id": "1c9adf61-7c0d-4a98-905e-607b05c63e95",
+      "result_id": "60e216dc-4dd4-4147-910f-2178111bfdf2"
+    },
+    {
+      "claim_id": "4ec35068-0097-4b1e-b276-444cad811255",
+      "result_id": "eef25c54-78de-4db0-b866-0a5be8e67aa1"
+    },
+    {
+      "claim_id": "a89f8b6a-9eb3-4a3d-8f79-53f1ab5d6b80",
+      "result_id": "eef25c54-78de-4db0-b866-0a5be8e67aa1"
+    },
+    {
+      "claim_id": "430eeb21-dd7f-47f5-ad3a-191a363cc04d",
+      "result_id": "eef25c54-78de-4db0-b866-0a5be8e67aa1"
+    },
+    {
+      "claim_id": "5e8af192-4f14-4962-940c-b15a38fd6501",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "77cf9b67-6cc5-492a-813e-5d16e82fc7cc",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "10b67ec8-9737-4ea2-ac9f-a9d3926d7a37",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "ace19853-1580-409d-bc50-b987158e01b6",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "03e322f9-c5d5-4a29-9881-3cf4e0734a91",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "59d493a3-fbdf-46bb-9f85-c48014cb17b2",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "3dd4f1b1-7d15-436d-a573-ae19fc8f8a08",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "717c0210-b927-48af-a5f9-c0a600fc2c24",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "3b9f9b99-2b7c-438c-9740-c76340e8531d",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "b90d32fd-fcef-4bb0-bfd8-be60e3a7cdf2",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "477813d2-69ab-45b9-83e1-8cb9a244efbf",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "0f62f30c-7d4f-4b7a-a2ee-40fd4811e055",
+      "result_id": "405fa147-5e12-4f2d-aa8d-5295c975426b"
+    },
+    {
+      "claim_id": "1a05ea56-40b3-4731-9622-018fb40c8b7a",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "268a693a-19c5-436b-9336-74f98eede20a",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "837b5d33-a2b3-4b2f-bc5b-32ef6ae708ea",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "842577ae-480b-43f6-931b-3eca774992d7",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "12b4029a-caab-4eea-98a2-b9721b82178d",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "8fdda7df-60be-4713-8c28-5d5ea5bbec9c",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "02de7422-2180-4265-84d3-93140b9aa1d3",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "3a156d84-0594-4ab3-8bdc-81f6aac04fd0",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "8c2803c5-9db6-4eb3-b7ab-92be6abb5178",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "b727bd71-e796-4577-ac60-920266cb5b44",
+      "result_id": "f1437ed5-585f-4c11-bc9c-07e192e6be90"
+    },
+    {
+      "claim_id": "b2e366c7-0b92-4721-981c-f525e1c82af6",
+      "result_id": "5e4caaad-e2da-40d1-bbcf-788a77d54fcb"
+    },
+    {
+      "claim_id": "19fa4e16-29fb-4399-aa41-7df379fa7107",
+      "result_id": "5e4caaad-e2da-40d1-bbcf-788a77d54fcb"
+    },
+    {
+      "claim_id": "cfc39606-5c0a-4074-b8aa-e3e1928b5e99",
+      "result_id": "a55b74db-85aa-4a29-9ddc-753f1aabfc79"
+    },
+    {
+      "claim_id": "129d4077-413b-4721-9b4b-69f825885490",
+      "result_id": "4050ec92-39e5-4959-8043-746812b5685b"
+    },
+    {
+      "claim_id": "25bb4700-c218-410d-acfb-0974f8be0a1e",
+      "result_id": "4050ec92-39e5-4959-8043-746812b5685b"
+    },
+    {
+      "claim_id": "b6dc7848-38f3-4bcc-906d-560976bc62c2",
+      "result_id": "4050ec92-39e5-4959-8043-746812b5685b"
+    },
+    {
+      "claim_id": "6ca7e5ef-b6b2-46c6-ba5e-72c68f73fc2b",
+      "result_id": "26c6a51a-7ddb-44a5-a026-174cdf0439c6"
+    },
+    {
+      "claim_id": "c86d86fe-fcc6-4765-bbe7-fc8298ab1961",
+      "result_id": "26c6a51a-7ddb-44a5-a026-174cdf0439c6"
+    },
+    {
+      "claim_id": "cbce70d9-a4df-4b68-947b-285316f68b9e",
+      "result_id": "c705a8eb-0692-4c3f-a02a-69751aea4bb4"
+    },
+    {
+      "claim_id": "41014060-ab3d-495f-b434-b29f716cabb1",
+      "result_id": "a34085ae-e44b-4d28-a294-4722cbcbcd9e"
+    },
+    {
+      "claim_id": "25376892-37a5-43fd-b6f2-0e175c553aea",
+      "result_id": "a34085ae-e44b-4d28-a294-4722cbcbcd9e"
+    },
+    {
+      "claim_id": "ee2fba7c-fdd9-46b5-b94a-0b0e2c02d94b",
+      "result_id": "a34085ae-e44b-4d28-a294-4722cbcbcd9e"
+    }
+  ],
+  "comparisons": []
+}

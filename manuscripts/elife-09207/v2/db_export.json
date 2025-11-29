@@ -1,0 +1,1790 @@
+{
+  "submission": {
+    "id": "1ebe45b9-3a74-46b2-a436-9fdf87280001",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:07:08.918688Z",
+    "updated_at": "2025-11-29T05:07:08.918688Z"
+  },
+  "content": [
+    {
+      "id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "submission_id": "1ebe45b9-3a74-46b2-a436-9fdf87280001",
+      "content_type": "manuscript",
+      "content_text": "# SPOP mutation leads to genomic instability in prostate cancer\n\n## Authors\n\n- Gunther Boysen<sup>1</sup>\n- Christopher E Barbieri<sup>3</sup> \u2020\n- Davide Prandi<sup>5</sup>\n- Mirjam Blattner<sup>6</sup>\n- Sung-Suk Chae<sup>6</sup>\n- Arun Dahija<sup>6</sup>\n- Srilakshmi Nataraj<sup>6</sup>\n- Dennis Huang<sup>6</sup>\n- Clarisse Marotz<sup>6</sup>\n- Limei Xu<sup>6</sup>\n- Julie Huang<sup>6</sup>\n- Paola Lecca<sup>5</sup>\n- Sagar Chhangawala<sup>7</sup>\n- Deli Liu<sup>3</sup>\n- Pengbo Zhou<sup>6</sup>\n- Andrea Sboner<sup>6</sup>\n- Johann S de Bono<sup>2</sup>\n- Francesca Demichelis<sup>5</sup>\n- Yariv Houvras<sup>7</sup>\n- Mark A Rubin<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Department of Pathology and Laboratory Medicine Weill Cornell Medical College New York United States\n2. Division of Clinical Studies Institute of Cancer Research London United Kingdom\n3. Department of Urology Weill Cornell Medical College New York United States\n4. Sandra and Edward Meyer Cancer Center Weill Cornell Medical College New York United States\n5. Centre for Integrative Biology University of Trento Trento Italy\n6. Department of Pathology and Laboratory Medicine Weill Cornell Medical College New York United States\n7. Department of Surgery Weill Cornell Medical College New York United States\n8. HRH Prince Alwaleed Bin Talal Bin Abdulaziz Alsaud Institute for Computational Biomedicine Weill Cornell Medical College New York United States\n9. Department of Medicine Weill Cornell Medical College New York United States\n10. Institute for Precision Medicine, New York-Presbyterian Hospital Weill Cornell Medical College New York United States\n11. The Royal Marsden London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenomic instability is a fundamental feature of human cancer often resulting from impaired genome maintenance. In prostate cancer, structural genomic rearrangements are a common mechanism driving tumorigenesis. However, somatic alterations predisposing to chromosomal rearrangements in prostate cancer remain largely undefined. Here, we show that SPOP, the most commonly mutated gene in primary prostate cancer modulates DNA double strand break (DSB) repair, and that SPOP mutation is associated with genomic instability. In vivo, SPOP mutation results in a transcriptional response consistent with BRCA1 inactivation resulting in impaired homology-directed repair (HDR) of DSB. Furthermore, we found that SPOP mutation sensitizes to DNA damaging therapeutic agents such as PARP inhibitors. These results implicate SPOP as a novel participant in DSB repair, suggest that SPOP mutation drives prostate tumorigenesis in part through genomic instability, and indicate that mutant SPOP may increase response to DNA-damaging therapeutics.\n\n## Introduction\n\nGenomic instability is a fundamental feature of human cancer, and DNA repair defects resulting in impaired genome maintenance promote pathogenesis of many human cancers (Hanahan and Weinberg, 2011; Garraway and Lander, 2013). In prostate cancer, structural genomic rearrangements, including translocations (e.g., TMPRSS2-ERG) and copy number aberrations (e.g., 8q gain, 10q23/PTEN loss) are a key mechanism driving tumorigenesis (Visakorpi et al., 1995; Cher et al., 1996; Tomlins et al., 2005; Zhao et al., 2005; Liu et al., 2006; Demichelis et al., 2009; Beroukhim et al., 2010).\n\nWhole genome sequencing (WGS) has allowed an unprecedented insight into the alterations underlying cancer. Recently, WGS of treatment naive, clinically localized prostate cancer revealed a striking abundance of genomic rearrangements, in some samples comparable to the number of rearrangements in metastatic prostate cancer (Baca et al., 2013). Furthermore, the type (intrachromosomal vs interchromosomal) and complexity of rearrangements in these tumors shows remarkable heterogeneity, potentially suggesting distinct mechanisms of instability in different molecular classes of prostate cancer. However, somatic alterations underlying these phenomena remain unexplained.\n\nMutations in SPOP (Speckle-type POZ protein) occur in around 10% of prostate cancers and represent the most common non-synonymous mutations in primary prostate cancer (Barbieri et al., 2012). SPOP mutations define a distinct molecular class of prostate cancer; they are mutually exclusive with ETS rearrangements but display distinct patterns of somatic copy number alterations (SCNAs) (Barbieri et al., 2012).\n\nHere, we investigated somatic alterations associated with genomic rearrangements in prostate cancer. We show that SPOP mutation is an early event specifically associated with increased intrachromosomal genomic rearrangements. Mechanistically, in vitro and in vivo data suggest that SPOP participates in repair of DNA double strand breaks (DSB), and SPOP mutation impairs homology-directed repair (HDR), instead promoting error-prone non-homologous end joining (NHEJ).\n\n## Results\n\nTo nominate somatic events associated with structural genomic rearrangements in clinically localized prostate cancer, we examined WGS data from 55 treatment naive prostate cancers (Baca et al., 2013) (Figure 1A). This analysis revealed a bimodal distribution, with a more common, \u2018low-rearrangement\u2019 population, and a less frequent \u2018high-rearrangement\u2019 population primarily driven by intrachromosomal rearrangements (deletions, inversions, and tandem duplications), rather than balanced interchromosomal rearrangements (Figure 1B). We then analyzed the association between recurrent somatic alterations (point mutations and SCNAs) and number of rearrangements (Figure 1C; Figure 1\u2014figure supplements 1, 2). Several recurrent deletions, primarily on chromosomes 5q and 6q, were significantly associated with intrachromosomal genomic rearrangements (Figure 1\u2014figure supplement 1), and these were completely distinct compared to alterations associated with interchromosomal rearrangements (Figure 1\u2014figure supplement 2). Among recurrent point mutations, only a single lesion\u2014mutation in SPOP\u2014was significantly associated with increased rearrangements (Figure 1C). Consistent with increased intrachromosomal rearrangements, SCNA analysis revealed that SPOP mutant prostate cancers showed significantly higher total copy number alteration burden (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig1-v2.jpg)\n\n**Figure 1.:** (A) Distribution analysis of genomic rearrangements from 55 clinically localized prostate cancers distinguishes two subpopulations. (B) Increased total rearrangements are driven by intrachromosomal rather than interchromosomal rearrangements. 55 clinically localized prostate cancers ordered (right to left) according to total rearrangements; numbers of intrachromosomal and interchromosomal rearrangements are displayed. (C) Association of recurrent point mutations with intrachromosomal rearrangements. X-axis shows (\u2212log10) p-value. (D) SPOP mutant prostate cancers harbor increased total somatic copy number aberration (SCNA) burden. The fraction of altered genome, partitioned into bins covering a range from <0.01 to \u22650.5, is shown as a histogram for SPOP WT and SPOP mutant tumors. Inset: the percentage of altered genome is significantly increased in SPOP mutant prostate cancers (p = 0.0016, two-sample Wilcoxon-Mann-Whitney test). (E) Frequency of somatic copy number alterations in 430 clinically localized prostate cancers. SPOP-mutant cancers (orange) and SPOP-wild-type tumors (gray). Length of bars indicates the frequency of copy number alterations. (F) Clonality of selected alterations associated with genomic rearrangements, in 430 clinically localized prostate cancers.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cytobands undergoing deletion are labeled blue. X-axis shows (\u2212log10) p-value.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cytobands undergoing deletion are labeled blue, PM refers to recurrent point mutations. \u2018ERG rearrangement\u2019 was determined by FISH assay. X-axis shows (\u2212log10) p-value.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Blue indicates genomic deletion.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** No increased signal is detected with respect to the SPOP class.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** These data were generated based on a previously published algorithm to build tumor evolution paths (Baca et al., 2013; Prandi et al., 2014).\n\nSPOP mutation frequently co-occurs with specific SCNAs, designating a molecular class of prostate cancer (Barbieri et al., 2012; Blattner et al., 2014) (Figure 1\u2014figure supplement 3). Independent analysis of SCNAs from three publicly available data sets comprising 430 tumors (Baca et al., 2013; Barbieri et al., 2012; Consortium TCGA, 2015), including 47 SPOP mutant prostate cancers, confirmed that the rearrangement-associated deletions (Figure 1\u2014figure supplement 1) were those enriched in SPOP mutant prostate cancer (Figure 1E). When individually comparing SPOP mutations and associated deletions (CHD1 and MAP3K7), we did not observe significant differences in SCNA burden for any one lesion (Figure 1\u2014figure supplement 4). Analysis of clonality (Baca et al., 2013; Prandi et al., 2014) of specific lesions showed that SPOP mutations were highly clonal compared to loci in the associated deletion peaks, supporting that SPOP mutations precede deletions (Figure 1F). In addition, analysis of dependencies of the lesions supports SPOP mutations preceding CHD1 deletions; no lesions were predicted to precede SPOP mutation (Figure 1\u2014figure supplement 5). Together, these data nominate a distinct prostate cancer class characterized by early SPOP mutations and genomic instability. We posited that the SPOP mutation impacts genome maintenance and prioritized SPOP for functional studies.\n\nWe explored the functional role of SPOP in vivo, using zebrafish as a rapidly assessable vertebrate model system. SPOP is highly conserved (97.3% identical at the amino acid level between human and zebrafish, Figure 2\u2014figure supplement 1A). Knockdown of Spop by two different splice-blocking morpholinos (MO5, MO7) dramatically impaired brain and eye development as well as decreased overall body size (Figure 2A,B; Figure 2\u2014figure supplement 1F), resulted in gene expression changes consistent with p53 activation, and apoptosis measured by TUNEL assay (Figure 2C, Figure 2\u2014figure supplement 1E). Microinjection of human SPOP mRNA rescued these phenotypes, confirming specificity of the morpholino effects (Figure 2A\u2013C, Figure 2\u2014figure supplement 1F). To nominate signaling pathways impacted by Spop, we performed transcriptional profiling using RNA-seq on zebrafish with Spop knockdown and ectopic expression of wild-type SPOP (SPOP-wt) and SPOP-F133V, the most commonly mutated residue in prostate cancer (Figure 2D). Consistent with recently reported proteomic data (Theurillat et al., 2014) and heterodimerization between mutant and wild-type SPOP in our models (Figure 2\u2014figure supplement 2), transcriptional responses to SPOP-F133V compared with SPOP-wt and Spop morpholino showed a pattern consistent with dominant negative, selective loss of function; SPOP-F133V correlated with SPOP-wt for some gene sets (Cluster B) and correlated with Spop morpholino for others (Cluster A) (Figure 2D, Figure 2\u2014source data 1). Gene set enrichment analyses (GSEA) revealed gene sets involving DNA repair impacted by modulating SPOP function (Figure 2\u2014source data 2). Notably, the transcriptional response to F133V correlated highly with BRCA1 inactivation (Figure 2E). While SPOP has been previously proposed as involved in DNA damage and repair (DDR) signaling based on in vitro experiments (Zhang et al., 2014a), these results for the first time implicate a functional role for SPOP in DDR signaling in vivo and suggest this function is selectively impaired by prostate cancer-derived SPOP mutations. To test this hypothesis in human prostate cancers, we performed unsupervised hierarchical clustering of transcriptional data from 11 SPOP mutant and 53 SPOP wild-type tumors, based on the transcriptional signature of BRCA1 inactivation (MSigDB: M2748). We observed significant segregation of SPOP mutant tumors (p-value = 9.5e\u221207, Figure 2F) using this signature, with less robust segregation of tumors harboring CHD1 or MAP3K7 deletions co-occurring with SPOP mutation (Figure 2\u2014figure supplement 3). These data suggest that human prostate cancers with SPOP mutations show transcriptional effects similar to BRCA1 inactivation, consistent with a role for SPOP in DSB repair. Supporting this hypothesis, we observed a trend of mutual exclusivity between SPOP mutations and BRCA1 alterations in genomic data (p-value = 0.0496, Figure 2\u2014figure supplement 4).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig2-v2.jpg)\n\n**Figure 2.:** (A) Evaluation of SPOP function during zebrafish development. Phenotype of morpholino-mediated Spop knockdown (MO5) in zebrafish embryos at 70 hr post fertilization (hpf). Injection of human SPOP mRNA (250 pg) rescued the phenotype. (B) Quantification of the rescue of SPOP phenotype after ectopic expression of human SPOP mRNA. Results are represented as s.e.m. (C) Whole mount TUNEL assay to determine apoptosis in zebrafish embryos. Arrows point to apoptotic cells (brown). Shown are representative images. (D) Heatmap representation of gene expression differences in zebrafish embryos ectopically expressing SPOP-wt or SPOP-F133V compared to SPOP knockdown by morpholino (MO). The list of genes can be found in Figure 2\u2014figure supplement 3. Number of genes per block: A (198), B (429), C (223). (E) Gene set enrichment analysis (GSEA) of RNA sequencing data derived from zebrafish embryos expressing SPOP-wt or SPOP-F133V (24 hpf). Enrichment plot for the BRCA1 gene signature is shown. Molecular Signatures Database (MSigDB) systematic name indicated in brackets. (NES) Normalized Enrichment Score. (FDR) False Discovery Rate. (F) Dendrogram of human primary prostate cancer cases based on BRCA1 knockdown genes (MSigDB: M2748). Unsupervised clustering of RNA-seq data from human primary prostate cancer with wild-type (n = 53) or mutant SPOP (n = 11), performed on the BRCA1 knockdown gene signature (M2748) identified in zebrafish embryos by GSEA as shown in (E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Multiple protein sequence alignment of SPOP from Homo sapiens and zebrafish (Danio rerio) reveals 97.3% identity between humans and zebrafish on the amino acid level. (B) Schematic representation of zebrafish SPOP mRNA. Colored boxes indicate exons. MO5 and MO7 indicate the targeted sites of the SPOP-specific morpholinos. F1 and R5 indicate the sites were the primers bind, which were used to amplify exons 1\u20135 for molecular validation of morpholino efficiency. (C) Image of an agarose gel used to analyze zebrafish SPOP splice variants after morpholino treatment. (D) Propidium iodide-based cell cycle analyses of cells from zebrafish embryos (24 hr) treated with or without SPOP-specific morpholino. (E) Quantification of TUNEL-positive cells in the midbrain area of zebrafish embryos (24 hpf) treated with SPOP morpholino or in combination with WT-SPOP mRNA as shown in Figure 2C. (F) Example of zebrafish embryos (48 hpf) injected with a second splice-blocking morpholino (MO7). Rescue of the effects of MO7 on zebrafish development by coinjecting WT-SPOP mRNA. (G) qPCR-based validation of differentially expressed transcripts identified by RNA-seq.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) 22Rv1 cells transfected with SPOP wt and F133V constructs tagged with HA or myc underwent immunoprecipitation (IP) with anti-HA antibody followed by immunoblot for HA and myc. (B) Mouse prostate cells with Cre-inducible SPOP-F133V with a FLAG tag underwent immunoprecipitation (IP) with anti-FLAG antibody followed by immunoblot for SPOP. Upper band is flag-tagged mutant SPOP; lower band is endogenous SPOP.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Unsupervised clustering of RNA-seq data from human primary prostate cancer annotated for status of SPOP mutation, CHD1 deletion, and MAP3K7 deletion, performed on the BRCA-1 knockdown gene signature (M2748).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) SPOP mutation and somatic BRCA1 gene alterations are mutually exclusive in primary prostate cancer. The cBio portal oncoprint tool was used to graphically summarize the mutations in SPOP and genomic deletions and mutations in BRCA1 in 402 human prostate cancer samples. Samples with no alterations are not displayed. SPOP mutations and BRCA1 alterations are mutually exclusive (one-tail Fisher's test, p-value = 0.0496). (B) SPOP mutation and DNA repair pathway alterations in castration-resistant prostate cancer. The cBio portal oncoprint tool was used to graphically summarize the mutations in SPOP and mutations in BRCA2 and ATM in 150 metatstaic castration-resistant prostate cancer samples.\n\nConsistent with the hypothesis that SPOP is involved in DSB repair in prostate cells, SPOP forms nuclear foci in prostate cells after \u03b3-irradiation (Figure 3A) and stable expression of SPOP-wt conferred resistance to DSB-inducing agents cisplatin and camptothecin (CPT) (Figure 3\u2014figure supplement 1A,B). To further define the impact of SPOP mutation in response to DNA damage, we utilized primary prostate cells isolated from transgenic mice with Cre-dependent conditional expression of SPOP-F133V. After transduction with Tamoxifen-inducible Cre (Cre-ERT2), cells were treated with 4-OH tamoxifen or vehicle and exposed to ionizing radiation (IR) (Figure 3\u2014figure supplement 2). Spop localized in nuclear foci similar to human LNCaP cells in mouse prostate cells (MPCs) after IR, with no alteration in foci by expression of SPOP-F133V (Figure 3A, Figure 3\u2014figure supplement 1I). Induction of SPOP-F133V resulted in delayed recovery from IR-induced damage as measured by comet assay (Figure 3B). No differences were seen in apoptosis after IR, as measured by PARP cleavage (Figure 3\u2014figure supplement 2), subG1 events, or caspase-3 cleavage (data not shown). To functionally characterize how SPOP mutations affect response to DSB, we expressed SPOP-wt and SPOP-F133V in benign prostate epithelial cells (RWPE) and prostate cancer cells (22Rv1), and examined the induction, recognition, and resolution of CPT-induced DSBs. We found that DSB formation (measured by \u03b3H2AX foci and protein levels) was not affected by modulating SPOP function with siRNA, or expression of wildtype or mutant SPOP (Figure 3C, Figure 3\u2014figure supplement 1C,D). Furthermore, there were no observed differences in early DNA damage signaling events, such as phosphorylation of ATM, ATR, Chk1, and Chk2 (Figure 3\u2014figure supplement 1E\u2013H), indicating that SPOP did not affect initial induction and recognition of DSBs or initial steps in DDR signaling. Consistent with this, SPOP showed only limited co-localization with early markers of DSB (\u03b3H2AX, phospho-ATM) in irradiated prostate cells (Figure 3\u2014figure supplement 1I).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig3-v2.jpg)\n\n**Figure 3.:** (A) SPOP forms nuclear foci after induction of DNA damage by \u03b3-irradiation (3GY) in prostate cells derived from transgenic mice (MPC) and human LNCaP cells. Red represents nuclear Spop protein foci. Blue represents nuclear DNA stained with DAPI. (B) MPC expressing Cre-inducible SPOP-F133V was infected with tamoxifen-inducible Cre (CreERT2), and DNA damage was assessed after IR with comet assays. Inset: representative cells showing comet tails after IR. (C, D, E) Quantification of \u03b3H2AX, 53BP1, or RAD51 foci in RWPE cells overexpressing WT or F133V mutant SPOP after camptothecin (CPT) (1 \u03bcM) induced DNA damage. Time indicates the observation interval in minutes including double strand break (DSB) induction (0\u201360 min) and recovery (60\u2013180 min). Shown are the percentages of cells for each genotype with more than 5 foci per nucleus. Results are represented as s.e.m. (F) Representative pictures showing \u03b3H2AX, RAD51, or 53BP1 foci (red or green). Blue represents nuclear DNA stained with DAPI. (G) Quantification of Rad51 foci in \u03b3-irradiated (2GY) MPC with tamoxifen-inducible SPOP-F133V. Rad51 foci were counted 30 min post irradiation. (H) Representative pictures showing Rad51 foci in mouse prostate epithelial cells before and after \u03b3-irradiation (2GY). (I) Quantification of RAD51 foci in RWPE cells treated with siSPOP or control siRNA and subsequently exposed to CPT (1 \u03bcM, 1 hr).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Clonogenic assay measuring survival of stable SPOP-expressing 22Rv1 cells after CPT or cisplatin treatment. (C) Western blot for the DSB marker \u03b3H2AX using protein lysates from RWPE cells before and after CPT treatment (30 min) in RWPE cells either ectopically expressing SPOP-wt or -F133V or (D) treated with control (sicon) or SPOP targeting siRNA (siSPOP). (E\u2013H) Western blot for DNA damage signaling proteins using protein lysates from 22Rv1 (E, F) or RWPE (G, H) cells before and after CPT treatment (30 min). Cells either ectopically expressed SPOP-wt or SPOP-F133V or were treated with control (sicon) or SPOP-targeting siRNA (siSPOP). (I) Immunofluorescence-based partial colocalization of SPOP (red) and early DNA damage markers gH2AX or pATM (green). MPC-expressing Cre-inducible SPOP-F133V was transduced with tamoxifen-inducible Cre (CreERT2). MPC were treated with 4-OH tamoxifen or vehicle and exposed to ionizing radiation (3GY).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A-F) Quantification of 53BP1 and RAD51 foci in 22RV1 and RWPE cells ectopically expressing SPOP-wt or SPOP-F133V after camptothecin (CPT) (1 \u03bcM) or gamma irradiation (3GY)-induced DNA damage. Time indicates the observation interval in minutes including DSB induction (0\u201360 min) and recovery (60\u20131440 min). Shown are the percentages of cells for each genotype with more than 5 foci per nucleus. (G, H) Representative pictures of 53BP1 or RAD51 foci (green). Blue represents nuclear DNA stained with DAPI. (I) Quantification of 53BP1 foci in RWPE ectopically expressing SPOP-wt, SPOP-F102C or SPOP-F133V mutant SPOP after CPT (1 \u03bcM, 1 hr)-induced DNA damage. (J) Immunofluorescence staining of MYC-tagged SPOP in RWPE cells confirms nuclear localization. Blue indicates DAPI-stained DNA. Green foci indicate SPOP protein. Error bars represent s.e.m. (K) Propidium iodide-based cell cycle analyses of RWPE cells.\n\nWe next examined specific markers (53BP1, RAD51) of the two major DSB repair pathways, HDR and NHEJ. RAD51 is a component of the HDR pathway and a marker for engagement of the HDR machinery (Baumann et al., 1996). 53BP1 is a positive regulator of NHEJ that blocks 5\u2032-DNA-end resection and therefore functions at the intersection of HDR and NHEJ; if 53BP1 is not cleared from sites of DSB by HDR components, it promotes error prone NHEJ (Panier and Boulton, 2014). Strikingly, SPOP-F133V-expressing prostate cells showed delayed clearance of 53BP1 from sites of DSB (Figure 3D,F, Figure 3\u2014figure supplement 3A); similar effects were seen with another SPOP mutation (F102C) commonly observed in prostate cancer (Figure 3\u2014figure supplement 3I,J). Furthermore, SPOP-wt increased RAD51 foci formation compared to controls, while SPOP-F133V-expressing cells showed a dramatic decrease in RAD51 foci formation (Figure 3E,F, Figure 3\u2014figure supplement 3B), consistent with impairment of HDR. Induction of SPOP-F133V in primary MPCs similarly decreased Rad51 foci after IR (Figure 3G,H). Knockdown of SPOP also resulted in a decrease of RAD51 foci, suggesting a selective loss of function of SPOP-F133V in HDR (Figure 3I). We also observed decreased clearance of 53BP1 foci and decreased RAD51 foci formation in SPOP-F133V-expressing cells after gamma irradiation, indicating that this effect is not specific to one mechanism of DSB induction (Figure 3\u2014figure supplement 3C\u2013H). The observed changes in DSB repair were not accompanied by changes in the cell cycle distribution of cells expressing SPOP-wt or F133V under these conditions (Figure 3\u2014figure supplement 3K).\n\nWe next investigated the role of SPOP in DSB repair using the well established DR-GFP and Pem1-Ad2-EGFP reporter assays as functional readouts for HDR and NHEJ, respectively (Figure 4A,D) (Pierce et al., 1999; Seluanov et al., 2004). In the DR-GFP assay, knockdown of SPOP by siRNA decreased HDR competence in human epithelial cells to a similar level of BRCA1 knockdown (Figure 4B). Conversely, ectopically expressed SPOP-wt increased the HDR competence in these cells, with partial loss of this function by mutant SPOP (Figure 4C). In contrast, the Pem1-Ad2-EGFP NHEJ reporter assay indicated an increase of NHEJ activity in SPOP-F133V expressing epithelial cells, while both SPOP siRNA and BRCA1 siRNA increased NHEJ (Figure 4E,F). Taken together, these results suggest that SPOP promotes HDR, while somatic mutation in SPOP, as observed in prostate cancer with increased genomic rearrangements, impairs HDR and promotes error-prone NHEJ.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic overview of the DR-GFP assay used to measure homology-directed repair (HDR) activity. (B, C) Analysis of the HDR-activity in HEK 293 cells with siRNA knockdown of SPOP or BRCA1 and ectopically expressing SPOP-wt or SPOP-F133V. (D) Schematic overview of the Pem1-Ad2-EGFP assay used to measure NHEJ-activity. (E, F) Analysis of the NHEJ-activity in HEK 293 cells with siRNA knockdown of SPOP or BRCA1 and ectopically expressing SPOP-wt or SPOP-F133V. All results are represented as s.e.m.\n\nHuman cancers with underlying defects in HDR (such as BRCA1 inactivated breast and ovarian cancers) (Bryant et al., 2005; Farmer et al., 2005; Audeh et al., 2010; Tutt et al., 2010) show sensitivity to poly (ADP-ribose) polymerase 1 (PARP) inhibition. To test if SPOP inactivation conferred sensitivity to PARP inhibition after DSB induction, we utilized siRNA targeting SPOP in human prostate cancer cell lines (PC-3, LnCap, 22Rv1), followed by irradiation (5GY) and incubation with the PARP inhibitors olaparib or veliparib. Reduction of SPOP expression increased the sensitivity of these prostate cancer cells to both PARP inhibitors (Figure 5A\u2013C, Figure 5\u2014figure supplement 1B,C). To test if SPOP mutation also sensitizes to PARP inhibition, we treated MPCs (control vs tamoxifen-induced SPOP-F133V) with olaparib followed by IR\u2014expression of SPOP-F133V increased sensitivity to olaparib similar to loss of SPOP in human prostate cancer cell lines (Figure 5D). This was further confirmed in 22Rv1 cells ectopically expressing SPOP-F133V, which also showed an increased sensitivity to olaparib in viability assays, while cells ectopically expressing SPOP-wt were relatively resistant (Figure 5\u2014figure supplement 1A). We further confirmed these results in HEK293 cells stably overexpressing the two common SPOP mutants (Y87N, F133V) in clonogenic survival assays (Figure 5E,F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013D) Analysis of sensitivity to the PARP inhibitor olaparib in irradiated (5GY) prostate cancer (PC-3, LNCaP, 22Rv1) and mouse prostate epithelial cells (MPC) after SPOP knockdown (siSPOP) or tamoxifen-inducible SPOPF133V expression. BRCA1 knockdown (siBRCA1) and non-targeting siRNA (sictrl) served as positive or negative control. The IC50 of olaparib for each genotype is indicated in Molar (M). (E) Analysis of the sensitivity of most frequently occurring prostate-specific SPOP mutants Y87N and F133V to olaparib in clonogenic assays using HEK293 cells. (F) Representative examples from the clonogenic assay used to assess long-term survival in HEK293 cells stably expressing SPOP-wt or SPOP mutants. (G) Impact of SPOP mutation on induction of genomic instability in 22Rv1 cells after olaparib (1 \u03bcM) treatment as measured by comet assay. Increased genomic instability was measured by an increase in the tail moment. (H) Genomic instability in tamoxifen-inducible SPOP-F133V expressing mouse prostate cells after \u03b3-irradiation (15GY) with and without olaparib (1 \u03bcM) treatment as measured by comet assay. All results are represented as s.e.m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) In vitro drug sensitivity assay of 22Rv1 cells expressing SPOP-wt or SPOP-F133V. Cells were treated with the indicated concentrations of olaparib for 96 hr. LacZ was used as empty control expression vector. (B, C) In vitro drug sensitivity assay of 22Rv1 and PC-3 cells treated with control siRNA (sictrl), SPOP, or BRCA1 targeting siRNA (siSPOP, siBRCA1). After irradiation (5GY) cells were treated with the PARP-1 inhibitor veliparib for 96 hr. IC50 values for each genotype are indicated in Molar (M).\n\nTo determine if the altered sensitivity to PARP inhibitors was associated with increased DNA damage, consistent with impaired double-strand break repair, we performed single-cell gel electrophoresis (comet assay) in prostate cells treated with olaparib. The comet assay revealed an increase of genomic instability in SPOP-F133V RWPE cells after PARP inhibition, similar to SPOP (and BRCA1) knockdown with siRNA (Figure 5G). Similarly, primary MPCs expressing SPOP-F133V showed increased damage after olaparib treatment (Figure 5H). Taken together, these data argue that SPOP mutation confers sensitivity to PARP inhibition due to impaired error-free HDR DSB repair and an increase in error-prone NHEJ.\n\n## Discussion\n\nIn summary, here we report that SPOP, the substrate recognition component of an E3 ubiquitin ligase, is a regulator of the HDR-based DSB repair machinery. Using functional genetic approaches, we find that prostate-specific SPOP mutants deregulate DSB repair by promoting the error-prone NHEJ pathway (Figure 6). Importantly, after DSB induction, this loss of function leads to an increased sensitivity of mutant SPOP prostate cancer cells to PARP inhibition. These observations provide the first mechanism for the increased genomic instability of SPOP mutant prostate cancer, but also suggest that similar to other cancers with impaired HDR, this distinct class of cancer might benefit from treatment with clinically established DNA damaging therapeutics. This study therefore provides a rationale for hypothesis-based biomarker-driven clinical trials using PARP inhibitors or other DNA damaging agents in patients with prostate cancer.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09207/elife-09207-fig6-v2.jpg)\n\n**Figure 6.:** In prostate epithelial cells, SPOP-wt promotes error-free HR and maintains genome stability. SPOP mutation impairs HR repair and promotes error-prone NHEJ, leading to increased genomic instability.\n\nGenomic rearrangements represent critical events deregulating prostate cancer genomes and driving tumorigenesis, although among individual cancer samples, there is marked variability in number and character of structural rearrangements. Here, we identified a genomically unstable subclass of primary prostate cancer characterized by dramatically increased intrachromosomal rearrangements. This subset of clinically localized, treatment-naive prostate cancers display a degree of genomic instability previously thought only to occur in late stage, metastatic tumors. Importantly, increased rearrangements likely result in higher total SCNA burden, which is associated with more aggressive clinical behavior (Hieronymus et al., 2014; Lalonde et al., 2014).\n\nIncreased rearrangements were associated with mutations in SPOP, encoding the substrate-recognition component of an E3 ubiquitin ligase complex. SPOP mutations are the most common point mutations in prostate cancer, but their role in promoting prostate cancer pathogenesis remains unclear. SPOP mutations occur early in the history of prostate cancer, based on clonality analysis reported here and presence in the prostate cancer precursor high grade prostatic intraepithelial neoplasia (HG-PIN) (Barbieri et al., 2012), potentially consistent with a \u2018gatekeeper\u2019 role in genome maintenance.\n\nConsistent with increased intrachromosomal rearrangements in SPOP mutant cancers, in vivo data nominated a functional role for SPOP in DSB repair, similar to BRCA1. Interestingly, SPOP loss of function induced a developmental phenotype of neuronal degeneration and apoptosis; similar effects have been reported with other genes modulating DNA repair, including BRCA1 (Pulvers and Huttner, 2009).\n\nSPOP encodes the substrate recognition component of an E3 ubiquitin ligase, and here we identified a role for SPOP in regulating the HDR-based DSB repair machinery. Notably, many established components of the DNA damage response are components of enzymes regulating ubiquitylation (Ceol et al., 2011). A number of substrates have been reported as deregulated by prostate cancer-derived SPOP mutations, but the relevance of these in vitro findings to human prostate cancers is still unclear (Geng et al., 2013, 2014; An et al., 2014; Theurillat et al., 2014; Zhang et al., 2014b). In contrast, we focused on the phenotypes observed in human prostate cancers harboring SPOP mutations. Using functional genetic approaches, we find that prostate-specific SPOP mutants deregulate DSB repair by promoting the error-prone NHEJ pathway (Figure 4F).\n\nThe clinical importance of our findings is timely as potent PARP inhibitors, inducing synthetic lethality in cancers with alterations in DSB repair, are being evaluated and utilized in human cancers (Fong et al., 2009; Tutt et al., 2010; Schiewer and Knudsen, 2014). Here, we define a novel biomarker for increased genomic instability in clinically localized prostate cancer, provide the first mechanism by which SPOP mutations induce these alterations, and also suggest that similar to other cancers with impaired HDR, this distinct class of cancer may benefit from treatment with clinically established DNA damaging therapeutics, providing a rationale for genotype-based clinical trials.\n\n## Materials and methods\n\n### Human cell lines\n\nCells were purchased from ATCC and cultured according to the manufacturer's instructions. All cells were maintained with 1% penicillin/streptomycin (15140-122, Gibco, Grand Island, NY, United States). Cells were treated with camptothecin (C9911, Sigma-Aldrich, St. Louis, MO, United States), olaparib (AstraZeneca, United Kingdom), veliparib (Selleckchem, United Kingdom), or cisplatin (Sigma-Aldrich) at the indicated concentrations. For SPOP expression, lentiviral vectors (pLenti6/V5-Dest Gateway vector, V496-10, Invitrogen, Grand Island, NY, United States) coding for mutant or wild-type SPOP were used. Viruses were titrated to equalize infectivity and protein expression. Viral titers were measured by a p24 ELISA (Lenti-X p24 rapid titer kit, PT5002-2, Clontech, Mountain View, CA, United States). Viral transduction was performed by using Polybrene transfection reagent (TR-1003-G, Millipore, Billerica, MA, United States) at a final concentration of 8 ng/\u03bcl. Stable cell lines for WT or mutant SPOP were generated by pLenti viral transduction and subsequent selection by cell sorting for RFP using an Aria-II cell sorter (BD Biosciences, San Jose, CA, United States). Stable selection was monitored over time by confirming RFP- and MYC-tagged SPOP expression.\n\n### Primary mouse prostate cells from conditional SPOP-F133V transgenic mice\n\n#### Gene targeting\n\nAll mouse studies were approved by the WCMC IACUC under protocol 2012-0065. To generate mice conditionally expressing flag-myc tagged human SPOPF133V pBTGinv (kind gift from Dr Yu Chen) was used to clone the cDNA subsequently to two inverted loxP sites, as previously described by Chen et al. (2013). This vector, pBigT-invloxP-SPOPF133V-IRES-nlsEFP was cloned into Rosa26-Pam1 (Addgene 15036). Vector was targeted into ES cells derived from albino C57B6 mice and injected into C57B6 blastocysts. Cre induction of SPOP-F133V was confirmed in ES cells. R26F133V/+ mice were generated and confirmed though standard genotyping.\n\n#### Primary mouse prostate cell isolation\n\nMurine prostates were isolated from 10-week-old R26F133V/+ mice and primary MPC lines were generated as described by Lukacs et al. (2010). Digested tissue was immediately mixed with growth factor reduced matrigel, plated in 36 drops and covered with organoid media as described by Karthaus et al. (2014), for 3\u20134 days. After 3\u20134 day of 3D culture cells were plated onto collagen-coated plates and grown as 2D cultures.\n\n#### Cre-induction and sorting\n\nStable MPC cells were transduced with a retrovirus expressing Cre-ERT2 (kind gift from Yu Chen) followed by puromycin selection. Following 48-hr treatment of the MPC cells with 1 \u03bcM 4-hydroxytamoxifen (Sigma-Aldrich) or vehicle, cells were sorted for GFP positivity using FACSAria II cell sorter (BD Biosciences). Vehicle-treated cells were sorted through a similar process.\n\n### siRNA transfection\n\nReagents for siRNA knockdown of SPOP and BRCA1 were purchased from Dharmacon (Lafayette, CO, United States). The siGenome smartpools were used to target SPOP (M-017919-02-0005), BRCA1 (M-003461-02-0005) as well as non-targeting control (D-001206-13-05). The siRNA oligonucleotides were transfected with Lipofectamine 2000 at a final concentration of 50\u2013100 pmol and incubated for 48 hr.\n\n#### Immunofluorescence\n\nCells were cultured on gelatin (0.1%) coated coverslips in 12-well plates, treated with CPT (1 \u03bcM, 1 hr) and then recovered for 2 hr in medium without CPT. Cells were collected at indicated time points and fixed in 4% PFA for 20 min, permeabilized in PBS with 0.5% Triton X 100 (EMD, TX1568-1) and blocked in 1% BSA in 1\u00d7 PBS (P0195, Teknova, Hollister, CA, United States) for 30 min. Human prostate cells were then incubated in anti-Phospho (Ser139) H2AX (NBP1-64745, 1:500, Novus Biologicals, Littleton, CO, United States), anti-MYC-tag (clone 4A6, Millipore, 1:300), anti-RAD51 (PC130, 1:500, Calbiochem, United Kingdom), or anti-53BP1 (NB 100-904, Novus Biologicals, 1:500) primary antibodies followed by Alexa Fluor 555 or Alexa Fluor 488 labeled anti-mouse or anti-rabbit secondary antibodies (1:500) (A-21422, A-1101, Life Technologies). Mouse prostate epithelial cells were incubated in anti-phospho ATM (ab36810, 1:500, Abcam, United Kingdom), anti-Rad51 (Abcam, ab88572, 1:100), anti-\u03b3H2AX (Abcam, ab26350, 1:1000), and anti-SPOP (developed in the Rubin lab, 1:300). Pictures were taken on a Zeiss LSM 510 Laser Scanning Confocal Microscope.\n\n#### Immunoblot analysis\n\nCells were lysed as previously described (Barbieri et al., 2012). Proteins were quantified by BCA protein assay kit (23227, Thermo Scientific). 25\u201350 \u03bcg of total proteins were loaded onto a 4\u201315% gradient SDS-PAGE (Mini Protean TGX, 456-1084, Bio-Rad, Hercules, CA, United States) and subsequently transferred to PVDF membranes (Bio-Rad). Membranes were incubated with the following primary antibodies at the indicated dilutions: anti-SPOP rabbit monoclonal antibody (Epitomics), anti-MYC-tag (for SPOP) (Millipore, cat.no. 05-724, 1:1000), anti-phospho H2AX (pSer139) (NBP1-64745, Novus Biologicals, 1:1000), anti-total H2AX (NBP1-61896, Novus Biologicals, 1:1000), anti-RAD51 (ab133534, abcam, 1:1000), anti-BRCA1 (ab131360, abcam, 1:1000), anti-CHK1 (2G1D5, 1:1000, Cell Signaling, Danvers, MA, United States), anti phospho CHK1 (2348, Cell Signaling, 1:1000), anti-CHK2 (2662, Cell Signaling, 1:1000), anti-phospho CHK2 (2661, Cell Signaling, 1:1000), anti-ATR (Cell Signaling, 1:1000), anti-phospho ATR (2853, Cell Signaling, 1:1000), anti ATM (07-1286, Millipore, 1:1000), anti-phospho ATM (5883, Cell Signaling, 1:1000), anti-GAPDH (AB2302, Millipore, 1:5000). Primary antibodies were detected with HRP-conjugated anti-rabbit (32260, 1:10.000, Grand Island, NY, United States), anti-mouse (32230, Pierce, 1:10.000), anti-chicken (31401, Pierce, 1:5000) or HRP-conjugated streptavidin (18-152, Millipore, 1:5000).\n\n### In vitro drug sensitivity assay\n\nHuman prostate and mouse prostate\u2013epithelial cells (1000\u20135000) were seeded into 96-well microtiter plates (CLS3610-48EA, Sigma Aldrich). After irradiation (5GY) cells were treated with olaparib or veliparib in a concentration range of 0.0001 \u03bcM\u2013100 \u03bcM for 72\u201396 hr. DMSO was used as control. Cell viability was measured by using the CyQuant NF cell proliferation assay (Life Technologies, C35006) according to the manufacturer's instructions. Data normalization and nonlinear regression to calculate IC50 values was performed with Graph Pad Prism.\n\n#### Clonogenic survival assays\n\nStable SPOP-expressing HEK293 or 22Rv1 cells were treated with cisplatin (24 hr, concentration as indicated) or olaparib (1 \u03bcM, 4 days). 50 cells were seeded per well of a 12-well plate, grown for 10\u201312 days, fixed and stained with ethanol (10%) and crystal violet (0.09%). Colonies containing 50 cells or more were counted, and the drug cytotoxicity was calculated as the ratio of colonies formed after drug treatment relative to colonies from untreated cells.\n\n#### Single-cell gel electrophoresis\n\nSingle-cell gel electrophoresis (comet assay) was performed according to the manufacturer's instructions (Trevigen, Gaithersburg, MD, United States). 105 cells/ml were mixed with molten LM agarose in a ratio of 1:10 and spread on a comet slide. Cells were subsequently lysed and subjected to electrophoresis. Cells were fixed and stained with SYBR Green. Images were collected with a 20\u00d7 objective lens using a monochrome camera (CV-M4+CL, Jai, Japan) fitted in an Olympus BX51 microscope (Olympus, Center Valley, PA, United States). COMETscore v1.5 was used for image analysis, and 50\u2013100 individual cells were analyzed per condition. The results are shown as comet tail moments, which is a representation of the fluorescence intensity in the tail relative to the head.\n\n#### DR-GFP (HDR) and Pem1-Ad2-EGFP (NHEJ) reporter assay\n\nCells were electroporated using the cell line nucleofactor kit V (VCA-1003, Lonza, Allendale, NJ, United States) with positive control plasmids (pNZE) and combinations of HDR-(pDRGFP) or NHEJ-(pPEM1-Ad2-EGFP) reporter constructs and an expression vector for the restriction enzyme I-SceI as described previously (Pierce et al., 1999). All the plasmids used in the GFP-reporter assay were a kind gift of Maria Jasin, Memorial Sloan Kettering Cancer Center, New York. The GFP expression induced by the positive control plasmid was used to normalize the electroporation efficiency. Negative controls contained the reporter construct and empty expression vectors lacking I-SceI. Cells were grown for 48 hr and processed for further flow cytometry analysis.\n\n#### Flow cytometry\n\nCells were fixed in PFA (2% vol/vol in PBS), permeabilized in 0.5% Triton X 100, and blocked in 1% BSA. Cells were incubated overnight in mouse Alexa Fluor 647 labeled anti-MYC-Tag antibodies (clone 9B11, cat.no: 2233, Cell Signaling, 1:50). SPOP (MYC-tag) and GFP expression was quantified by the LSRII flow cytometer (BD Biosciences).\n\n#### Cell cycle analysis\n\nRWPE cells were transduced with LacZ, WT SPOP, or F133V SPOP lentiviral particles. Transduced cells were treated with Nocodazole (40 ng/ml) for 18 hr to synchronize cell cycle. Cell cycle distribution was determined by FACS 24 hr after culturing synchronized cells in normal growth media and labeling cells with propidium iodide (PI).\n\n#### Zebrafish\n\nWild-type zebrafish (strain AB/T) were maintained as described previously (Ceol et al., 2011). For functional studies, embryos were harvested at the one cell stage and yolk injected with SPOP-targeting morpholino (final 2\u20134 ng) or SPOP mRNA at the indicated concentrations. For phenotypical analysis, embryos were monitored for 5 days. RNA was isolated using Trizol reagent (15596-026, Life Technologies) at 24 hpf for RNA sequencing after dechorionating the embryos with pronase. For cell cycle analysis, embryos were homogenized and individual cells were stained with propidium iodide. All protocols were performed with prior approval of the WCMC IACUC (2011-0026).\n\n#### Zebrafish whole mount apoptosis assay\n\nEmbryos (24 hpf) were fixed in 4% PFA overnight. Embryos were than washed in PBS Tween (PBT) and Methanol, rehydrated in a series of Methanol-PBT dilutions (75% MeOH/25% PBT, 50% MeOH/50% PBT, 25% MeOH/75% PBT), and washed three times in PBT. Afterwards embryos were digested with PK (5 min, 10 \u03bcg/ml). PK digestion was followed by two PBT washes, a refixation in 4% PFA (20 min), and a postfixation in prechilled Ethanol:Acetic acid (2:1) (\u221220\u00b0C, 10 min). TUNEL staining was performed by using the ApopTag Peroxidase in situ apoptosis detection kit (S7100, Chemicon) according to the manufacturer's instructions. TUNEL-positive cells were labeled by incubating the embryos in 3-3\u2032-diaminobenzidine tetrahydrochloride (DAB).\n\n#### Morpholinos\n\nAntisense oligos (morpholinos) targeting Spop were synthesized by Gene Tools (Corvalis, OR, United States). Morpholino 5 (MO5) was targeted to the sequence flanking the border between intron 1 and exon 2. Morpholino 7 (MO7) was targeted to the sequence flanking the border between intron 2 and exon 3. Morpholino sequences are shown in Supplementary file 1. Morpholino antisense oligos were dissolved in water to a final concentration of 1 mM. Primers used to validate morpholino-induced splicing of Spop are shown in Supplementary file 1.\n\n#### Plasmids\n\nFor the generation of pLenti SPOP expression vectors, mutant or SPOP WT was TOPO TA-cloned from pCMV-SPOP vectors (Barbieri et al., 2012) into pLenti viral vectors (pLenti6/V5-Dest Gateway Vector, V496-10, Invitrogen). For SPOP mRNA, in vitro transcription SPOP cDNA was TOPO TA cloned into a pCR 8 TOPO TA Gateway entry vector by using the pCR 8/GW/TOPO TA cloning kit (K2500-20, Invitrogen). 3-way-gateway recombination was then performed by using LR clonase II (11791, Invitrogen) to recombine SPOP cDNA from the pCR 8 TOPO TA gateway middle entry vector into a pDestTol2pA2 attR4-R3 (#394) destination vector. The 5\u2032 entry clone was (p5E-CMV/SP6, #382) and the 3\u2032 entry clone was (p3E-poly A, #302). The final vector contains a SP6 site for subsequent in vitro mRNA transcription.\n\n#### In vitro mRNA transcription\n\nHuman SPOP mRNA for rescue experiments in the zebrafish was generated using the mMessage mMachine SP6 kit (AM1340, Life Technologies) according to the manufacturer's instructions. RNA was analyzed quantitatively and qualitatively using the Agilent 2100 bioanalyzer.\n\n#### RNA sequencing\n\nRNA was isolated from zebrafish embryos at 24 hpf using Trizol. 50 water- or morpholino-injected embryos were used. RNA libraries were created and sequenced using the GA2X or HighSeq genome analyzer (Illumina, United Kingdom) as described previously (Barbieri et al., 2012). The files first underwent quality control using FASTQC (v2_1.2.10). The vast majority of the reads from all the samples were of good quality (phred quality score >30). Therefore, no trimming or filtering of reads was required. The reads were then aligned with STAR (v2.3.0e) to zebrafish reference genome (Zv9).\n\n### Bioinformatic analyses\n\nGenomic analysis: SCNA profiles for 402 prostate cancers were obtained through processing of high-density oligonucleotide array data upon signal segmentation and then combined for genome-wide analysis for SPOP mutant and SPOP wild-type tumors. Clonality analysis for selected lesions was performed from sequencing data as in Baca et al. (2013).\n\nDifferential Gene Expression (DGE) and Gene Set Enrichment Analysis: After sorting and indexing, the aligned files were used with bedtools (v2.16.1) and Ensembl Zebrafish Transcriptome (v70) to generate read counts for genes for all samples. These read counts were used with DESeq (2_1.2.10) for differential expression. Orthology was also added to the differential expression table in this step. Read counts were also counts per million (cpm) normalized using EdgeR (v3.4.2) package and then pre-ranked using Log2 Fold Change. GSEA (v2-2.0.13) was run in pre-ranked mode to identify enriched signatures. Primers used for validation of the expression of selected genes are shown in Supplementary file 1.\n\n### Human samples\n\nClinically localized prostate cancers were selected for transcriptome sequencing as described (Barbieri et al., 2012). All samples were collected with informed consent of the patients and prior approval of the institutional review boards (IRB) of respective institutions. Additionally, the sequencing and data release of all transcriptome-sequenced samples was reviewed and approved by local IRB.\n\n#### Statistics\n\nThe results are represented as means of at least three experiments (standard error of the mean (s.e.m.) are indicated by error bars). Student's t-test was used to calculate the statistical significance of differences in the HR- and NHEJ-reporter assays. Fisher's exact test (two sided) was used to assess the statistical significance of differences in the foci assays. Nonlinear regression was performed to determine the IC50 values in the in vitro drug sensitivity assays.\n\n### Accession codes\n\nAll RNA-seq data are deposited in the NCBI sequencing read archive (SRA) under the accession number SRP063952.\n",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "b3168d61-f173-4ddc-a396-49de20c84685",
+      "submission_id": "1ebe45b9-3a74-46b2-a436-9fdf87280001",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaqu\u00edn M Espinosa, University of Colorado at Boulder , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09207.025](https://doi.org/10.7554/eLife.09207.025)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cSPOP mutation leads to genomic instability in prostate cancer\u201d for peer review at eLife. Your submission has been favorably evaluated by Charles Sawyers (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers considered this manuscript very well written, interesting, and potentially very important for a number of reasons. The manuscript describes the characterization of SPOP mutations in prostate cancers and reveals a new role for SPOP in the DNA damage repair response (DDR). While analyzing data on chromosomal rearrangements and mutational status of hundreds of prostate cancers, the authors make the interesting observation that \u2018high rearrangement\u2019 correlates with SPOP mutations. They go on to show that SPOP is involved in late steps of the DDR response, and that SPOP mutations impair homologous recombination (HR) and favor error-prone non-homologous end-joining (NEHJ), which could potentially explain the correlation between SPOP mutations and high frequency of rearrangements. This function resembles that of the DDR factor BRCA1. In fact, SPOP mutations also seem to be mutually exclusive with BRCA1 mutations. Finally, the authors show some data suggesting that SPOP mutations may sensitize cells to PARP inhibitors, which have been shown to be synthetic lethal with BRCA1 mutations.\n\nThe reviewers considered the manuscript to be potentially meritorious for publication in eLife after addressing some major concerns:\n\n1) The data supporting the conclusion that SPOP mutations sensitize cancer cells to PARP inhibitors is currently very weak, based solely on the analysis of RWPE primary prostate cells, RR2v1 prostate cancer cells and embryonic kidney cells (HEK) using artifact-prone overexpression experiments. The conclusion that SPOP mutations could be synthetic lethal with PARP inhibition could have profound implications in the clinic and therefore must be exhaustively tested by the authors. Toward this end, the following experiments are requested:\n\n1.1) PARP inhibitors should be tested in a dose-response experiment in prostate cancer cell lines expressing wild type or mutant SPOP. We recognize that this request may be challenging due to the limited number of prostate cancer cell lines but we would like to see if the prediction holds in whatever models may be available.\n\n1.2) The authors should establish an isogenic system using a prostate cancer cell line of choice currently expressing wild type SPOP and thus resistant to PARP inhibitors, and either knockdown or knock-out SPOP and demonstrate that SPOP depletion is sufficient to confer sensitivity.\n\n2) Can the authors account for the discrepancy between their data and the previously published work by Zhang et al. (Carcinogenesis 35: 1691, 2014)? This paper shows that SPOP is required for the DDR. Accordingly, Boysen et al. should also test whether SPOP localizes to DSBs following IR and they should more thoroughly present their own DDR data, even though their results were negative.\n\n3) The manuscript begins with examination of WGS data from 55 treatment na\u00efve prostate cancers and subsequent distribution into 2 chromosomal rearrangement populations \u2013 \u201clow-rearrangement\u201d and \u201chigh-rearrangement\u201d. The \u201chigh-rearrangement\u201d group was significantly associated with SPOP mutations, but also with recurrent deletions on 5q and 6q, containing the tumor suppressors CHD1 and MAP3K7. Because of clonality studies the authors pursue the role of SPOP mutations only. Though the data regarding contribution of SPOP mutation to DNA damage response and sensitivity to PARP inhibitors are convincing, no attempt is made to see whether losses at 5q and 6q contribute to this phenotype independently or cooperatively with SPOP mutation. 5q CNAs, specifically loss of CHD1, have been implicated in high chromosomal rearrangements, and MAP3K7 is also highly correlated with chromosomal rearrangements. Examining the 5q and 6q status of the patients in Figure 2F, either alone or in combination with SPOP mutant status would be informative and provide a clearer understanding of the contributions of these genes to the DNA damage phenotype (BRCA1 mutant gene set) of this subtype. It would be informative to see how these CNAs co-segregate.\n\n4) The paper does not provide a molecular mechanism. Specifically, recent studies by Theurillat et al. indicate that mutations in SPOP, an E3 substrate binding protein, results in upregulation of specific protein substrates (DEK, TRIM24, for example) via a dominant negative mechanism. But this new study by Boyser et al. does not provide a mechanism of disrupted HR. Is SPOP inhibiting the degradation of some critical substrate which is causing the transcriptional response consistent with BRCA1 inactivation? Can the authors provide any additional data in this regard?\n\nMinor comments [abridged]:\n\n1) The authors conclude that phosphorylation of ATR is not affected by SPOP mutations, but the blots in Figure 3\u2013figure supplement 1F and H are discordant in this sense. Please repeat with several biological replicates to define this issue.\n\n2) In the zebrafish experiments, SPOP knockdown leads to cell death concurrently with induction of p53 mRNA and induced expression of the p53 target genes MDM2 and CCNG1. The authors should comment on this, acknowledging that cell death could be due to p53 activation in this setting.\n\n3) A recent study indicates that a high percentage (15-20%) of metastatic CRPC have underlying mutations in DNA repair genes (BRCA2 and ATM most commonly). The authors show some TGCA data for BRCA1. Are these mutations in CRPC (i.e. BRCA2 and ATM) mutually exclusive with SPOP mutations?\n",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b92bc5d6-59e0-4454-8ac8-7fc8385dc639",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C1",
+      "claim": "Genomic instability is a fundamental feature of human cancer often resulting from impaired genome maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic instability is a fundamental feature of human cancer often resulting from impaired genome maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge in cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "f1e6347d-6e30-4cae-b1b5-7d20fc032f27",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C2",
+      "claim": "In prostate cancer, structural genomic rearrangements are a common mechanism driving tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In prostate cancer, structural genomic rearrangements are a common mechanism driving tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and is referenced in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "5b27c0ed-77a2-4eee-89f0-d2a380d739ce",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C3",
+      "claim": "SPOP is the most commonly mutated gene in primary prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that SPOP, the most commonly mutated gene in primary prostate cancer modulates DNA double strand break (DSB) repair, and that SPOP mutation is associated with genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work (Barbieri et al., 2012) mentioned in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "88c42c9b-1f22-4b9d-8172-066d6514a9d1",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C4",
+      "claim": "SPOP modulates DNA double strand break (DSB) repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that SPOP, the most commonly mutated gene in primary prostate cancer modulates DNA double strand break (DSB) repair, and that SPOP mutation is associated with genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript including zebrafish models, cell culture experiments, and reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8df09411-f7c3-4815-90e2-61708c5a35b0",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C5",
+      "claim": "SPOP mutation is associated with genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that SPOP, the most commonly mutated gene in primary prostate cancer modulates DNA double strand break (DSB) repair, and that SPOP mutation is associated with genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole genome sequencing data analysis showing increased rearrangements in SPOP mutant tumors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "78c80f25-d4f0-47c8-88c8-183d1e93cfc5",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C6",
+      "claim": "SPOP mutation results in a transcriptional response consistent with BRCA1 inactivation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, SPOP mutation results in a transcriptional response consistent with BRCA1 inactivation resulting in impaired homology-directed repair (HDR) of DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data from zebrafish and human prostate cancer samples showing enrichment of BRCA1 inactivation signature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "5000b730-441f-4d9d-9a9e-57da08cabe98",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C7",
+      "claim": "SPOP mutation results in impaired homology-directed repair (HDR) of DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, SPOP mutation results in a transcriptional response consistent with BRCA1 inactivation resulting in impaired homology-directed repair (HDR) of DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by DR-GFP reporter assays and RAD51 foci formation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "529989a8-6bb2-43be-8769-8b75ae32ac36",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C8",
+      "claim": "SPOP mutation sensitizes to DNA damaging therapeutic agents such as PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that SPOP mutation sensitizes to DNA damaging therapeutic agents such as PARP inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by drug sensitivity assays showing increased sensitivity to olaparib and veliparib in SPOP mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ff3c3d0d-ae6d-46f3-bf4f-cfda9514e726",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C9",
+      "claim": "Structural genomic rearrangements including translocations (e.g., TMPRSS2-ERG) and copy number aberrations (e.g., 8q gain, 10q23/PTEN loss) are a key mechanism driving tumorigenesis in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In prostate cancer, structural genomic rearrangements, including translocations (e.g., TMPRSS2-ERG) and copy number aberrations (e.g., 8q gain, 10q23/PTEN loss) are a key mechanism driving tumorigenesis (Visakorpi et al., 1995; Cher et al., 1996; Tomlins et al., 2005; Zhao et al., 2005; Liu et al., 2006; Demichelis et al., 2009; Beroukhim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "1c6c59b5-eada-4d21-ac69-9f0829cfba81",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C10",
+      "claim": "Whole genome sequencing of treatment naive, clinically localized prostate cancer revealed a striking abundance of genomic rearrangements, in some samples comparable to the number of rearrangements in metastatic prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, WGS of treatment naive, clinically localized prostate cancer revealed a striking abundance of genomic rearrangements, in some samples comparable to the number of rearrangements in metastatic prostate cancer (Baca et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Baca et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ee47f482-273f-4996-afa7-a71a9b9d4ba3",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C11",
+      "claim": "Mutations in SPOP occur in around 10% of prostate cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in SPOP (Speckle-type POZ protein) occur in around 10% of prostate cancers and represent the most common non-synonymous mutations in primary prostate cancer (Barbieri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbieri et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "e349fe1b-efbd-45d3-8dc0-9fb6347d9d3f",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C12",
+      "claim": "SPOP mutations represent the most common non-synonymous mutations in primary prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in SPOP (Speckle-type POZ protein) occur in around 10% of prostate cancers and represent the most common non-synonymous mutations in primary prostate cancer (Barbieri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbieri et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "c426dcff-b4f7-439a-bf6c-bf80aba74470",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C13",
+      "claim": "SPOP mutations define a distinct molecular class of prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "SPOP mutations define a distinct molecular class of prostate cancer; they are mutually exclusive with ETS rearrangements but display distinct patterns of somatic copy number alterations (SCNAs) (Barbieri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbieri et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ccaf3d55-42dd-4957-9b47-5c0ac6846712",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C14",
+      "claim": "SPOP mutations are mutually exclusive with ETS rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "SPOP mutations define a distinct molecular class of prostate cancer; they are mutually exclusive with ETS rearrangements but display distinct patterns of somatic copy number alterations (SCNAs) (Barbieri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbieri et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "830ee00b-19f0-4375-8f96-3be4de90c5fd",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C15",
+      "claim": "SPOP mutations display distinct patterns of somatic copy number alterations (SCNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "SPOP mutations define a distinct molecular class of prostate cancer; they are mutually exclusive with ETS rearrangements but display distinct patterns of somatic copy number alterations (SCNAs) (Barbieri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbieri et al., 2012 and by data presented in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d8263165-4271-4974-a0ff-95d79d4f4c13",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C16",
+      "claim": "SPOP mutation is an early event specifically associated with increased intrachromosomal genomic rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that SPOP mutation is an early event specifically associated with increased intrachromosomal genomic rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clonality analysis and association analysis from WGS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "76a14efc-bdd6-4b61-bc10-272b0b22cefe",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C17",
+      "claim": "SPOP participates in repair of DNA double strand breaks (DSB).",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, in vitro and in vivo data suggest that SPOP participates in repair of DNA double strand breaks (DSB), and SPOP mutation impairs homology-directed repair (HDR), instead promoting error-prone non-homologous end joining (NHEJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental approaches including foci formation assays, reporter assays, and comet assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ef7757f3-60f7-4add-9367-c26c6726aea0",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C18",
+      "claim": "SPOP mutation impairs homology-directed repair (HDR).",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, in vitro and in vivo data suggest that SPOP participates in repair of DNA double strand breaks (DSB), and SPOP mutation impairs homology-directed repair (HDR), instead promoting error-prone non-homologous end joining (NHEJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by DR-GFP reporter assays and RAD51 foci formation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "e796dcfc-6eaa-45e1-8548-19a75a2ef91e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C19",
+      "claim": "SPOP mutation promotes error-prone non-homologous end joining (NHEJ).",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, in vitro and in vivo data suggest that SPOP participates in repair of DNA double strand breaks (DSB), and SPOP mutation impairs homology-directed repair (HDR), instead promoting error-prone non-homologous end joining (NHEJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Pem1-Ad2-EGFP reporter assays and 53BP1 foci clearance experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "dc5ed651-dfaa-4cef-8c3f-763c8750ba1b",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C20",
+      "claim": "WGS data from 55 treatment naive prostate cancers revealed a bimodal distribution of genomic rearrangements, with a 'low-rearrangement' population and a 'high-rearrangement' population.",
+      "claim_type": "EXPLICIT",
+      "source": "To nominate somatic events associated with structural genomic rearrangements in clinically localized prostate cancer, we examined WGS data from 55 treatment naive prostate cancers (Baca et al., 2013) (Figure 1A). This analysis revealed a bimodal distribution, with a more common, 'low-rearrangement' population, and a less frequent 'high-rearrangement' population primarily driven by intrachromosomal rearrangements (deletions, inversions, and tandem duplications), rather than balanced interchromosomal rearrangements (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of WGS data from Baca et al., 2013 and shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "4805ec50-3af0-44e9-b9d3-6fdfa5b38b89",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C21",
+      "claim": "The 'high-rearrangement' population is primarily driven by intrachromosomal rearrangements (deletions, inversions, and tandem duplications), rather than balanced interchromosomal rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a bimodal distribution, with a more common, 'low-rearrangement' population, and a less frequent 'high-rearrangement' population primarily driven by intrachromosomal rearrangements (deletions, inversions, and tandem duplications), rather than balanced interchromosomal rearrangements (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "c5cf9739-c4a8-4f55-ad4a-3c51186ad8c5",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C22",
+      "claim": "Several recurrent deletions, primarily on chromosomes 5q and 6q, were significantly associated with intrachromosomal genomic rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recurrent deletions, primarily on chromosomes 5q and 6q, were significantly associated with intrachromosomal genomic rearrangements (Figure 1\u2014figure supplement 1), and these were completely distinct compared to alterations associated with interchromosomal rearrangements (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by association analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "b62f44a2-247a-4535-af69-9f25d8bb4a07",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C23",
+      "claim": "Alterations associated with intrachromosomal rearrangements were completely distinct compared to alterations associated with interchromosomal rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recurrent deletions, primarily on chromosomes 5q and 6q, were significantly associated with intrachromosomal genomic rearrangements (Figure 1\u2014figure supplement 1), and these were completely distinct compared to alterations associated with interchromosomal rearrangements (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8c64b778-3e1a-47cb-9f38-b2af8233c7ff",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C24",
+      "claim": "Among recurrent point mutations, only mutation in SPOP was significantly associated with increased rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Among recurrent point mutations, only a single lesion\u2014mutation in SPOP\u2014was significantly associated with increased rearrangements (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by association analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "dcf5b421-3df4-461c-af65-cba2854c34bf",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C25",
+      "claim": "SPOP mutant prostate cancers showed significantly higher total copy number alteration burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with increased intrachromosomal rearrangements, SCNA analysis revealed that SPOP mutant prostate cancers showed significantly higher total copy number alteration burden (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SCNA analysis shown in Figure 1D with p = 0.0016.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "6f853623-2206-4e92-9032-a3d9646ac017",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C26",
+      "claim": "The rearrangement-associated deletions were enriched in SPOP mutant prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent analysis of SCNAs from three publicly available data sets comprising 430 tumors (Baca et al., 2013; Barbieri et al., 2012; Consortium TCGA, 2015), including 47 SPOP mutant prostate cancers, confirmed that the rearrangement-associated deletions (Figure 1\u2014figure supplement 1) were those enriched in SPOP mutant prostate cancer (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SCNA analysis from three datasets shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "25ae1f86-08bb-4b2c-99ca-208a6242903c",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C27",
+      "claim": "SPOP mutations were highly clonal compared to loci in the associated deletion peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of clonality (Baca et al., 2013; Prandi et al., 2014) of specific lesions showed that SPOP mutations were highly clonal compared to loci in the associated deletion peaks, supporting that SPOP mutations precede deletions (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonality analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "f82a93bb-e50c-4a77-9033-99b2d8a33711",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C28",
+      "claim": "SPOP mutations precede CHD1 deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of clonality (Baca et al., 2013; Prandi et al., 2014) of specific lesions showed that SPOP mutations were highly clonal compared to loci in the associated deletion peaks, supporting that SPOP mutations precede deletions (Figure 1F). In addition, analysis of dependencies of the lesions supports SPOP mutations preceding CHD1 deletions; no lesions were predicted to precede SPOP mutation (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonality and dependency analysis shown in Figure 1F and Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "91cc2649-0094-4318-9ad9-11172a847730",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C29",
+      "claim": "No lesions were predicted to precede SPOP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, analysis of dependencies of the lesions supports SPOP mutations preceding CHD1 deletions; no lesions were predicted to precede SPOP mutation (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dependency analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "12160009-6462-486b-8614-0647ba5e7616",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C30",
+      "claim": "SPOP is highly conserved (97.3% identical at the amino acid level between human and zebrafish).",
+      "claim_type": "EXPLICIT",
+      "source": "SPOP is highly conserved (97.3% identical at the amino acid level between human and zebrafish, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein sequence alignment shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "fc23775f-b79d-4fa0-aed1-e8ecd31a6e5e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C31",
+      "claim": "Knockdown of Spop by morpholinos dramatically impaired brain and eye development as well as decreased overall body size in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Spop by two different splice-blocking morpholinos (MO5, MO7) dramatically impaired brain and eye development as well as decreased overall body size (Figure 2A,B; Figure 2\u2014figure supplement 1F), resulted in gene expression changes consistent with p53 activation, and apoptosis measured by TUNEL assay (Figure 2C, Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by zebrafish phenotype data shown in Figure 2A, 2B, and Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8daa2e0c-92d8-4f66-aaa5-474911e5c46b",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C32",
+      "claim": "Knockdown of Spop resulted in gene expression changes consistent with p53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Spop by two different splice-blocking morpholinos (MO5, MO7) dramatically impaired brain and eye development as well as decreased overall body size (Figure 2A,B; Figure 2\u2014figure supplement 1F), resulted in gene expression changes consistent with p53 activation, and apoptosis measured by TUNEL assay (Figure 2C, Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression analysis and TUNEL assay shown in Figure 2C and Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "c1ca0156-4dcf-4f39-a15b-59a5f29809fb",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C33",
+      "claim": "Knockdown of Spop resulted in apoptosis measured by TUNEL assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Spop by two different splice-blocking morpholinos (MO5, MO7) dramatically impaired brain and eye development as well as decreased overall body size (Figure 2A,B; Figure 2\u2014figure supplement 1F), resulted in gene expression changes consistent with p53 activation, and apoptosis measured by TUNEL assay (Figure 2C, Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL assay data shown in Figure 2C and Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "2e5a3cb6-f7fa-4fd5-812d-05f349a4ee0d",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C34",
+      "claim": "Microinjection of human SPOP mRNA rescued the phenotypes caused by Spop knockdown in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Microinjection of human SPOP mRNA rescued these phenotypes, confirming specificity of the morpholino effects (Figure 2A\u2013C, Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiments shown in Figure 2A-C and Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "b74625aa-b6a9-4378-872b-b6739b78e543",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C35",
+      "claim": "SPOP-F133V is the most commonly mutated residue in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "To nominate signaling pathways impacted by Spop, we performed transcriptional profiling using RNA-seq on zebrafish with Spop knockdown and ectopic expression of wild-type SPOP (SPOP-wt) and SPOP-F133V, the most commonly mutated residue in prostate cancer (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and is consistent with prior literature on SPOP mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "738c3f52-62a7-4769-9316-743446f4431e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C36",
+      "claim": "SPOP-F133V shows a pattern consistent with dominant negative, selective loss of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recently reported proteomic data (Theurillat et al., 2014) and heterodimerization between mutant and wild-type SPOP in our models (Figure 2\u2014figure supplement 2), transcriptional responses to SPOP-F133V compared with SPOP-wt and Spop morpholino showed a pattern consistent with dominant negative, selective loss of function; SPOP-F133V correlated with SPOP-wt for some gene sets (Cluster B) and correlated with Spop morpholino for others (Cluster A) (Figure 2D, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 2D and heterodimerization data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d9f28ce1-6348-49c5-82a7-fcccaf9a51f4",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C37",
+      "claim": "Mutant and wild-type SPOP heterodimerize.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recently reported proteomic data (Theurillat et al., 2014) and heterodimerization between mutant and wild-type SPOP in our models (Figure 2\u2014figure supplement 2), transcriptional responses to SPOP-F133V compared with SPOP-wt and Spop morpholino showed a pattern consistent with dominant negative, selective loss of function; SPOP-F133V correlated with SPOP-wt for some gene sets (Cluster B) and correlated with Spop morpholino for others (Cluster A) (Figure 2D, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoprecipitation data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "0def1bad-f10e-4b05-b5fa-3d1108b606f6",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C38",
+      "claim": "Gene set enrichment analyses revealed gene sets involving DNA repair impacted by modulating SPOP function.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analyses (GSEA) revealed gene sets involving DNA repair impacted by modulating SPOP function (Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GSEA analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "f5eecae5-78f8-4e31-a0f0-b319b9cfda56",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C39",
+      "claim": "The transcriptional response to SPOP-F133V correlated highly with BRCA1 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the transcriptional response to F133V correlated highly with BRCA1 inactivation (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "33da2e11-aa4f-4782-acdd-dbd1589a0235",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C40",
+      "claim": "Human prostate cancers with SPOP mutations show transcriptional effects similar to BRCA1 inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis in human prostate cancers, we performed unsupervised hierarchical clustering of transcriptional data from 11 SPOP mutant and 53 SPOP wild-type tumors, based on the transcriptional signature of BRCA1 inactivation (MSigDB: M2748). We observed significant segregation of SPOP mutant tumors (p-value = 9.5e\u221207, Figure 2F) using this signature, with less robust segregation of tumors harboring CHD1 or MAP3K7 deletions co-occurring with SPOP mutation (Figure 2\u2014figure supplement 3). These data suggest that human prostate cancers with SPOP mutations show transcriptional effects similar to BRCA1 inactivation, consistent with a role for SPOP in DSB repair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by unsupervised clustering analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "946c75d0-a97b-4a65-b228-6f28d27d2a7a",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C41",
+      "claim": "SPOP mutant tumors showed significant segregation based on BRCA1 inactivation signature (p-value = 9.5e\u221207).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant segregation of SPOP mutant tumors (p-value = 9.5e\u221207, Figure 2F) using this signature, with less robust segregation of tumors harboring CHD1 or MAP3K7 deletions co-occurring with SPOP mutation (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by unsupervised clustering analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "90c15106-b9eb-40a8-86cb-5b551683a71a",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C42",
+      "claim": "There is a trend of mutual exclusivity between SPOP mutations and BRCA1 alterations (p-value = 0.0496).",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this hypothesis, we observed a trend of mutual exclusivity between SPOP mutations and BRCA1 alterations in genomic data (p-value = 0.0496, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of genomic data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "3c59ae80-50b6-4938-a14a-6868cc243d43",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C43",
+      "claim": "SPOP forms nuclear foci in prostate cells after \u03b3-irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the hypothesis that SPOP is involved in DSB repair in prostate cells, SPOP forms nuclear foci in prostate cells after \u03b3-irradiation (Figure 3A) and stable expression of SPOP-wt conferred resistance to DSB-inducing agents cisplatin and camptothecin (CPT) (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "2c121987-fd7a-4d3d-a68a-6c3fa1371db7",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C44",
+      "claim": "Stable expression of SPOP-wt conferred resistance to DSB-inducing agents cisplatin and camptothecin (CPT).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the hypothesis that SPOP is involved in DSB repair in prostate cells, SPOP forms nuclear foci in prostate cells after \u03b3-irradiation (Figure 3A) and stable expression of SPOP-wt conferred resistance to DSB-inducing agents cisplatin and camptothecin (CPT) (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenic assays shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "997db655-0b09-4415-b8ac-ebdccab02529",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C45",
+      "claim": "Induction of SPOP-F133V resulted in delayed recovery from IR-induced damage as measured by comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of SPOP-F133V resulted in delayed recovery from IR-induced damage as measured by comet assay (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comet assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "174b4663-ca88-428e-afb8-8fb1d4e35a53",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C46",
+      "claim": "No differences were seen in apoptosis after IR in SPOP-F133V expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences were seen in apoptosis after IR, as measured by PARP cleavage (Figure 3\u2014figure supplement 2), subG1 events, or caspase-3 cleavage (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PARP cleavage data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "a324442a-fb8d-4e88-96f5-a894b7cf55c1",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C47",
+      "claim": "DSB formation was not affected by modulating SPOP function with siRNA, or expression of wildtype or mutant SPOP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DSB formation (measured by \u03b3H2AX foci and protein levels) was not affected by modulating SPOP function with siRNA, or expression of wildtype or mutant SPOP (Figure 3C, Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by \u03b3H2AX foci and Western blot data shown in Figure 3C and Figure 3\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "bb6c0d72-2cc4-4ca9-8952-0f9fda928467",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C48",
+      "claim": "There were no observed differences in early DNA damage signaling events (phosphorylation of ATM, ATR, Chk1, and Chk2) with SPOP modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there were no observed differences in early DNA damage signaling events, such as phosphorylation of ATM, ATR, Chk1, and Chk2 (Figure 3\u2014figure supplement 1E\u2013H), indicating that SPOP did not affect initial induction and recognition of DSBs or initial steps in DDR signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 3\u2014figure supplement 1E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d9f4c612-2211-4add-afe8-4f06bf053781",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C49",
+      "claim": "SPOP did not affect initial induction and recognition of DSBs or initial steps in DDR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there were no observed differences in early DNA damage signaling events, such as phosphorylation of ATM, ATR, Chk1, and Chk2 (Figure 3\u2014figure supplement 1E\u2013H), indicating that SPOP did not affect initial induction and recognition of DSBs or initial steps in DDR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of differences in early DNA damage signaling events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "b92317cf-4e59-472b-b91c-0c5136c191ee",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C50",
+      "claim": "SPOP showed only limited co-localization with early markers of DSB (\u03b3H2AX, phospho-ATM) in irradiated prostate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, SPOP showed only limited co-localization with early markers of DSB (\u03b3H2AX, phospho-ATM) in irradiated prostate cells (Figure 3\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "c1be3bfd-f070-4590-a677-7f2408412518",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C51",
+      "claim": "RAD51 is a component of the HDR pathway and a marker for engagement of the HDR machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined specific markers (53BP1, RAD51) of the two major DSB repair pathways, HDR and NHEJ. RAD51 is a component of the HDR pathway and a marker for engagement of the HDR machinery (Baumann et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Baumann et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "70214ce7-0804-4574-b201-990bf375987e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C52",
+      "claim": "53BP1 is a positive regulator of NHEJ that blocks 5\u2032-DNA-end resection and functions at the intersection of HDR and NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "53BP1 is a positive regulator of NHEJ that blocks 5\u2032-DNA-end resection and therefore functions at the intersection of HDR and NHEJ; if 53BP1 is not cleared from sites of DSB by HDR components, it promotes error prone NHEJ (Panier and Boulton, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Panier and Boulton, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "c41916d8-3158-41bc-b259-0e0fafaa9d6b",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C53",
+      "claim": "If 53BP1 is not cleared from sites of DSB by HDR components, it promotes error prone NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "53BP1 is a positive regulator of NHEJ that blocks 5\u2032-DNA-end resection and therefore functions at the intersection of HDR and NHEJ; if 53BP1 is not cleared from sites of DSB by HDR components, it promotes error prone NHEJ (Panier and Boulton, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Panier and Boulton, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "9237aa71-462e-4297-9df5-6725142a0a53",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C54",
+      "claim": "SPOP-F133V-expressing prostate cells showed delayed clearance of 53BP1 from sites of DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, SPOP-F133V-expressing prostate cells showed delayed clearance of 53BP1 from sites of DSB (Figure 3D,F, Figure 3\u2014figure supplement 3A); similar effects were seen with another SPOP mutation (F102C) commonly observed in prostate cancer (Figure 3\u2014figure supplement 3I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by 53BP1 foci data shown in Figure 3D, 3F, and Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8160478a-f220-4fd6-a3b9-e3125759a4f5",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C55",
+      "claim": "SPOP-wt increased RAD51 foci formation compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SPOP-wt increased RAD51 foci formation compared to controls, while SPOP-F133V-expressing cells showed a dramatic decrease in RAD51 foci formation (Figure 3E,F, Figure 3\u2014figure supplement 3B), consistent with impairment of HDR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RAD51 foci data shown in Figure 3E, 3F, and Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "b908978d-f433-4298-8c12-f5aeb1aeec80",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C56",
+      "claim": "SPOP-F133V-expressing cells showed a dramatic decrease in RAD51 foci formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SPOP-wt increased RAD51 foci formation compared to controls, while SPOP-F133V-expressing cells showed a dramatic decrease in RAD51 foci formation (Figure 3E,F, Figure 3\u2014figure supplement 3B), consistent with impairment of HDR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RAD51 foci data shown in Figure 3E, 3F, and Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "619e9bf6-7996-4bad-8e50-ed14ddd487eb",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C57",
+      "claim": "Induction of SPOP-F133V in primary mouse prostate cells decreased Rad51 foci after IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of SPOP-F133V in primary MPCs similarly decreased Rad51 foci after IR (Figure 3G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Rad51 foci data in mouse prostate cells shown in Figure 3G, 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "eceec2ed-1009-46a2-ad7d-914d15ee8c6a",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C58",
+      "claim": "Knockdown of SPOP resulted in a decrease of RAD51 foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of SPOP also resulted in a decrease of RAD51 foci, suggesting a selective loss of function of SPOP-F133V in HDR (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RAD51 foci data after siRNA knockdown shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "eafe8bdc-dd6d-4fe5-865d-0671b13c58d8",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C59",
+      "claim": "Knockdown of SPOP by siRNA decreased HDR competence in human epithelial cells to a similar level of BRCA1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In the DR-GFP assay, knockdown of SPOP by siRNA decreased HDR competence in human epithelial cells to a similar level of BRCA1 knockdown (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DR-GFP reporter assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "c1f33379-a367-416d-8b74-0830d6544ee1",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C60",
+      "claim": "Ectopically expressed SPOP-wt increased the HDR competence in human epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ectopically expressed SPOP-wt increased the HDR competence in these cells, with partial loss of this function by mutant SPOP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DR-GFP reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "fe137baa-c0fa-40b4-8ce0-fcf0e490f403",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C61",
+      "claim": "Mutant SPOP showed partial loss of HDR function.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ectopically expressed SPOP-wt increased the HDR competence in these cells, with partial loss of this function by mutant SPOP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DR-GFP reporter assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "e1a63069-ff9a-42ed-9395-a96338b49547",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C62",
+      "claim": "SPOP-F133V expressing epithelial cells showed an increase of NHEJ activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Pem1-Ad2-EGFP NHEJ reporter assay indicated an increase of NHEJ activity in SPOP-F133V expressing epithelial cells, while both SPOP siRNA and BRCA1 siRNA increased NHEJ (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Pem1-Ad2-EGFP reporter assay data shown in Figure 4E, 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "594eebe7-fcd0-4ec4-9435-38f679189d57",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C63",
+      "claim": "Both SPOP siRNA and BRCA1 siRNA increased NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Pem1-Ad2-EGFP NHEJ reporter assay indicated an increase of NHEJ activity in SPOP-F133V expressing epithelial cells, while both SPOP siRNA and BRCA1 siRNA increased NHEJ (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Pem1-Ad2-EGFP reporter assay data shown in Figure 4E, 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "94fb96da-4d91-42fd-9773-caf4fd74aca0",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C64",
+      "claim": "SPOP promotes HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that SPOP promotes HDR, while somatic mutation in SPOP, as observed in prostate cancer with increased genomic rearrangements, impairs HDR and promotes error-prone NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DR-GFP reporter assay and RAD51 foci data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "72431fcb-4563-40eb-951c-37f12a71aace",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C65",
+      "claim": "Human cancers with underlying defects in HDR (such as BRCA1 inactivated breast and ovarian cancers) show sensitivity to poly (ADP-ribose) polymerase 1 (PARP) inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Human cancers with underlying defects in HDR (such as BRCA1 inactivated breast and ovarian cancers) (Bryant et al., 2005; Farmer et al., 2005; Audeh et al., 2010; Tutt et al., 2010) show sensitivity to poly (ADP-ribose) polymerase 1 (PARP) inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "e4d641ef-6c7e-4cf1-abf6-89285a0934c0",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C66",
+      "claim": "Reduction of SPOP expression increased the sensitivity of prostate cancer cells to PARP inhibitors olaparib and veliparib.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if SPOP inactivation conferred sensitivity to PARP inhibition after DSB induction, we utilized siRNA targeting SPOP in human prostate cancer cell lines (PC-3, LnCap, 22Rv1), followed by irradiation (5GY) and incubation with the PARP inhibitors olaparib or veliparib. Reduction of SPOP expression increased the sensitivity of these prostate cancer cells to both PARP inhibitors (Figure 5A\u2013C, Figure 5\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by drug sensitivity assay data shown in Figure 5A\u2013C and Figure 5\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "214a55e7-4739-4201-9ec1-95ba47fc3df5",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C67",
+      "claim": "Expression of SPOP-F133V increased sensitivity to olaparib in mouse prostate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if SPOP mutation also sensitizes to PARP inhibition, we treated MPCs (control vs tamoxifen-induced SPOP-F133V) with olaparib followed by IR\u2014expression of SPOP-F133V increased sensitivity to olaparib similar to loss of SPOP in human prostate cancer cell lines (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by drug sensitivity assay data in mouse prostate cells shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "536fc3e8-4309-4dad-84bb-fb5910727768",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C68",
+      "claim": "22Rv1 cells ectopically expressing SPOP-F133V showed an increased sensitivity to olaparib in viability assays.",
+      "claim_type": "EXPLICIT",
+      "source": "This was further confirmed in 22Rv1 cells ectopically expressing SPOP-F133V, which also showed an increased sensitivity to olaparib in viability assays, while cells ectopically expressing SPOP-wt were relatively resistant (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "b7305dac-3c9b-4d97-83cf-c777a4406d0a",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C69",
+      "claim": "Cells ectopically expressing SPOP-wt were relatively resistant to olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "This was further confirmed in 22Rv1 cells ectopically expressing SPOP-F133V, which also showed an increased sensitivity to olaparib in viability assays, while cells ectopically expressing SPOP-wt were relatively resistant (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability assay data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "e0b74bec-3592-41e5-a728-3e5c836c5067",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C70",
+      "claim": "HEK293 cells stably overexpressing the two common SPOP mutants (Y87N, F133V) showed increased sensitivity to olaparib in clonogenic survival assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed these results in HEK293 cells stably overexpressing the two common SPOP mutants (Y87N, F133V) in clonogenic survival assays (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clonogenic survival assay data shown in Figure 5E, 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "fe1516df-4d76-4988-8409-bcb9741b4381",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C71",
+      "claim": "SPOP-F133V RWPE cells showed an increase of genomic instability after PARP inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if the altered sensitivity to PARP inhibitors was associated with increased DNA damage, consistent with impaired double-strand break repair, we performed single-cell gel electrophoresis (comet assay) in prostate cells treated with olaparib. The comet assay revealed an increase of genomic instability in SPOP-F133V RWPE cells after PARP inhibition, similar to SPOP (and BRCA1) knockdown with siRNA (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comet assay data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ae5b351d-7871-45f6-b30a-a658feca4005",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C72",
+      "claim": "Primary mouse prostate cells expressing SPOP-F133V showed increased damage after olaparib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, primary MPCs expressing SPOP-F133V showed increased damage after olaparib treatment (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comet assay data in mouse prostate cells shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "828206fb-118a-46fa-ba59-4961bbb71aaa",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C73",
+      "claim": "SPOP mutation confers sensitivity to PARP inhibition due to impaired error-free HDR DSB repair and an increase in error-prone NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data argue that SPOP mutation confers sensitivity to PARP inhibition due to impaired error-free HDR DSB repair and an increase in error-prone NHEJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of PARP inhibitor sensitivity assays, reporter assays, and comet assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d03fe9c6-2c81-4870-8647-31625dbf465a",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C74",
+      "claim": "SPOP is the substrate recognition component of an E3 ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, here we report that SPOP, the substrate recognition component of an E3 ubiquitin ligase, is a regulator of the HDR-based DSB repair machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SPOP function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "6361ae09-f7cb-4f71-912a-f51b95b4d2a9",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C75",
+      "claim": "SPOP is a regulator of the HDR-based DSB repair machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, here we report that SPOP, the substrate recognition component of an E3 ubiquitin ligase, is a regulator of the HDR-based DSB repair machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by multiple experimental approaches including reporter assays and foci formation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "03e33d1a-d35b-4f04-a7e2-6109869b4930",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C76",
+      "claim": "Prostate-specific SPOP mutants deregulate DSB repair by promoting the error-prone NHEJ pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional genetic approaches, we find that prostate-specific SPOP mutants deregulate DSB repair by promoting the error-prone NHEJ pathway (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NHEJ reporter assays and 53BP1 foci data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "150361b3-3288-4fec-9bad-07be4655a93a",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C77",
+      "claim": "After DSB induction, loss of SPOP function leads to an increased sensitivity of mutant SPOP prostate cancer cells to PARP inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, after DSB induction, this loss of function leads to an increased sensitivity of mutant SPOP prostate cancer cells to PARP inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PARP inhibitor sensitivity assays in multiple cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "2a20fb5e-8eb7-4049-b518-fe2b8ff703f0",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C78",
+      "claim": "Increased rearrangements likely result in higher total SCNA burden, which is associated with more aggressive clinical behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, increased rearrangements likely result in higher total SCNA burden, which is associated with more aggressive clinical behavior (Hieronymus et al., 2014; Lalonde et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hieronymus et al., 2014 and Lalonde et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "05dd7598-c9fb-4a90-932f-9c1955fd7616",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C79",
+      "claim": "SPOP mutations occur early in the history of prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "SPOP mutations occur early in the history of prostate cancer, based on clonality analysis reported here and presence in the prostate cancer precursor high grade prostatic intraepithelial neoplasia (HG-PIN) (Barbieri et al., 2012), potentially consistent with a 'gatekeeper' role in genome maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clonality analysis in this study and citation to Barbieri et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d9b2a74b-1766-4797-9d8b-307bac2550a6",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C80",
+      "claim": "SPOP mutations are present in the prostate cancer precursor high grade prostatic intraepithelial neoplasia (HG-PIN).",
+      "claim_type": "EXPLICIT",
+      "source": "SPOP mutations occur early in the history of prostate cancer, based on clonality analysis reported here and presence in the prostate cancer precursor high grade prostatic intraepithelial neoplasia (HG-PIN) (Barbieri et al., 2012), potentially consistent with a 'gatekeeper' role in genome maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barbieri et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "713e1661-5af8-4a99-b2b5-2da11837ae94",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C81",
+      "claim": "SPOP loss of function induced a developmental phenotype of neuronal degeneration and apoptosis in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SPOP loss of function induced a developmental phenotype of neuronal degeneration and apoptosis; similar effects have been reported with other genes modulating DNA repair, including BRCA1 (Pulvers and Huttner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by zebrafish phenotype data and TUNEL assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "f29039cd-b92a-4684-b2f6-8606b8ca6d15",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C82",
+      "claim": "Similar effects of neuronal degeneration and apoptosis have been reported with other genes modulating DNA repair, including BRCA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SPOP loss of function induced a developmental phenotype of neuronal degeneration and apoptosis; similar effects have been reported with other genes modulating DNA repair, including BRCA1 (Pulvers and Huttner, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pulvers and Huttner, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ec176985-b400-45dd-ba3d-eccc6aa6fd7e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C83",
+      "claim": "Many established components of the DNA damage response are components of enzymes regulating ubiquitylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, many established components of the DNA damage response are components of enzymes regulating ubiquitylation (Ceol et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ceol et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d4c3ade1-82c5-4bf0-b337-d4f0f3b06510",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "claim_id": "C84",
+      "claim": "This distinct class of cancer may benefit from treatment with clinically established DNA damaging therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we define a novel biomarker for increased genomic instability in clinically localized prostate cancer, provide the first mechanism by which SPOP mutations induce these alterations, and also suggest that similar to other cancers with impaired HDR, this distinct class of cancer may benefit from treatment with clinically established DNA damaging therapeutics, providing a rationale for genotype-based clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative based on the observed sensitivity to PARP inhibitors in preclinical models.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Analysis of WGS data from 55 treatment-naive prostate cancers revealed a bimodal distribution of genomic rearrangements, with a 'high-rearrangement' population driven primarily by intrachromosomal rearrangements. SPOP mutation was the only recurrent point mutation significantly associated with increased rearrangements, and SPOP mutant tumors showed significantly higher total copy number alteration burden (p=0.0016).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 are well-supported by WGS data analysis shown in Figure 1A-E. The bimodal distribution is clearly demonstrated, the association between SPOP mutation and increased rearrangements is statistically significant, and the increased SCNA burden in SPOP mutant cancers is supported by data from 430 tumors across three independent datasets with appropriate statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "e131016f-ecf6-4b69-b2c6-aab956069a05",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Clonality analysis demonstrated that SPOP mutations are highly clonal compared to associated deletion peaks, and dependency analysis supports that SPOP mutations precede CHD1 deletions with no lesions predicted to precede SPOP mutation, indicating SPOP mutation is an early event in prostate cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by clonality and dependency analyses shown in Figure 1F and Figure 1\u2014figure supplement 5. The temporal ordering is further supported by citation to established methods (Baca et al., 2013; Prandi et al., 2014) and presence of SPOP mutations in HG-PIN precursor lesions (C80). The convergent evidence from multiple analytical approaches supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d26177d2-b137-49c2-ba08-00a7d4f0e9ca",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In zebrafish, SPOP is highly conserved (97.3% identity with human), and morpholino-mediated knockdown dramatically impaired brain and eye development, decreased body size, induced p53 activation and apoptosis, with these phenotypes rescued by human SPOP mRNA injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are well-supported by zebrafish experimental data shown in Figure 2A-C and supplementary figures. The conservation is demonstrated by sequence alignment, the developmental phenotypes are clearly shown, and the rescue experiment with human SPOP mRNA confirms specificity of the morpholino effects. Two independent morpholinos (MO5, MO7) produced similar results, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "1dcb2cfe-c41c-4f98-89d5-70479506786e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNA-seq analysis in zebrafish expressing SPOP-F133V (the most common prostate cancer mutation) revealed a pattern consistent with dominant negative, selective loss of function, with heterodimerization between mutant and wild-type SPOP. Gene set enrichment analysis showed the transcriptional response to SPOP-F133V correlated highly with BRCA1 inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are supported by RNA-seq data (Figure 2D-E), heterodimerization experiments (Figure 2\u2014figure supplement 2), and GSEA analysis. The dominant negative pattern is demonstrated by differential correlation with wild-type vs morpholino for different gene clusters. The BRCA1 inactivation signature enrichment is statistically significant (NES: 4.5, FDR q: 0.019), providing strong support for the mechanistic link to DNA repair.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "70a70c65-1dba-4279-9666-1f1a174fcd20",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human prostate cancers with SPOP mutations show transcriptional effects similar to BRCA1 inactivation, with significant segregation of SPOP mutant tumors (p=9.5e-07) based on BRCA1 inactivation signature, and a trend toward mutual exclusivity between SPOP mutations and BRCA1 alterations (p=0.0496).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by unsupervised clustering analysis of 64 human prostate cancer samples (Figure 2F) and mutual exclusivity analysis (Figure 2\u2014figure supplement 4). The highly significant p-value for segregation (9.5e-07) provides strong statistical support. The mutual exclusivity trend (p=0.0496) is marginally significant but consistent with the hypothesis. Together, these data support the translation of zebrafish findings to human cancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d9572377-2c22-4db0-bb30-6d057f6b62c6",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SPOP forms nuclear foci after \u03b3-irradiation in prostate cells, and SPOP-wt expression conferred resistance to DSB-inducing agents. SPOP-F133V expression resulted in delayed recovery from IR-induced damage without affecting DSB formation, early DNA damage signaling (ATM, ATR, Chk1, Chk2 phosphorylation), or apoptosis, and showed limited co-localization with early DSB markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C50 are supported by multiple experimental approaches including immunofluorescence (Figure 3A), clonogenic assays (Figure 3\u2014figure supplement 1A,B), comet assays (Figure 3B), and Western blots (Figure 3\u2014figure supplement 1C-H, Figure 3\u2014figure supplement 2). The data consistently show SPOP involvement in DSB repair without affecting initial damage recognition or signaling, supporting a role in later repair pathway choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "0eeb8b93-278c-492a-ba8a-fb1df551331f",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SPOP-F133V-expressing cells showed delayed clearance of 53BP1 from DSB sites, while SPOP-wt increased RAD51 foci formation and SPOP-F133V dramatically decreased RAD51 foci formation. Similar effects were observed in primary mouse prostate cells and with SPOP knockdown, indicating selective loss of HDR function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are strongly supported by quantitative foci formation assays in multiple cell types (Figure 3D-I, Figure 3\u2014figure supplement 3). The data show consistent effects across human prostate cancer cells (22Rv1, RWPE), primary mouse prostate cells, and with different SPOP mutations (F133V, F102C). Statistical significance is demonstrated (p<0.0001 for multiple comparisons), and the bidirectional effects of overexpression vs knockdown support a specific role for SPOP in HDR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DR-GFP reporter assays showed that SPOP knockdown decreased HDR competence to levels similar to BRCA1 knockdown, while SPOP-wt overexpression increased HDR with partial loss of function by mutant SPOP. Conversely, Pem1-Ad2-EGFP assays showed SPOP-F133V increased NHEJ activity, while SPOP and BRCA1 knockdown also increased NHEJ, indicating SPOP promotes HDR and its mutation promotes error-prone NHEJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 are well-supported by functional reporter assays (Figure 4B,C,E,F). The DR-GFP and Pem1-Ad2-EGFP assays are established methods for measuring HDR and NHEJ, respectively. The data show consistent reciprocal effects on the two repair pathways, with SPOP-F133V behaving similarly to BRCA1 knockdown in promoting NHEJ over HDR. The convergence of multiple experimental approaches (foci formation, reporter assays) strongly supports the mechanistic conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8f56fe09-8c80-4db4-9d58-8588b2e6dd34",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Reduction of SPOP expression by siRNA increased sensitivity of prostate cancer cells (PC-3, LnCap, 22Rv1) to PARP inhibitors olaparib and veliparib after irradiation. Expression of SPOP-F133V increased sensitivity to olaparib in mouse prostate cells and 22Rv1 cells, while SPOP-wt expression conferred resistance. HEK293 cells overexpressing common SPOP mutants (Y87N, F133V) showed increased sensitivity to olaparib in clonogenic assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by drug sensitivity assays across multiple cell lines and experimental systems (Figure 5A-F, Figure 5\u2014figure supplement 1). The effects are consistent across different SPOP mutations, multiple PARP inhibitors, and various assay formats (viability, clonogenic survival). IC50 values are provided, and the bidirectional effects of knockdown vs overexpression of wild-type vs mutant SPOP support specificity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "abb60d1d-e327-4b17-8e3f-c7624a430d79",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comet assays revealed increased genomic instability in SPOP-F133V expressing cells and SPOP knockdown cells after PARP inhibition, similar to BRCA1 knockdown. Primary mouse prostate cells expressing SPOP-F133V showed increased damage after olaparib treatment, indicating SPOP mutation confers PARP inhibitor sensitivity due to impaired HDR and increased error-prone NHEJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by comet assay data (Figure 5G,H) demonstrating increased DNA damage in SPOP mutant cells treated with PARP inhibitors. This mechanistic link between impaired HDR, increased NHEJ (from reporter assays), and PARP inhibitor sensitivity is consistent with established principles of synthetic lethality in HDR-deficient cancers. The convergence of multiple lines of evidence (reporter assays, foci formation, drug sensitivity, comet assays) strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "a4a2dd02-7ea7-4ec3-895e-6a9ef51353d4",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SPOP modulates DNA double strand break repair and is a regulator of the HDR-based DSB repair machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17, and C75 represent the central finding of the manuscript and are supported by convergent evidence from multiple experimental systems: zebrafish models showing BRCA1-like transcriptional signatures, human tumor analysis showing BRCA1 signature enrichment, foci formation assays demonstrating altered RAD51 and 53BP1 dynamics, functional reporter assays showing impaired HDR and increased NHEJ, and PARP inhibitor sensitivity consistent with HDR deficiency. The breadth and consistency of evidence across multiple approaches strongly supports this major conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "61b1c9f7-3048-45cf-8081-bd448049c0a4",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SPOP mutation is associated with genomic instability, results in impaired homology-directed repair of DSB, and prostate-specific SPOP mutants deregulate DSB repair by promoting the error-prone NHEJ pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, C18, and C76 are supported by the combination of genomic analysis showing increased rearrangements in SPOP mutant tumors (Figure 1), functional assays demonstrating impaired HDR (decreased RAD51 foci, reduced DR-GFP reporter activity), and increased NHEJ (delayed 53BP1 clearance, increased Pem1-Ad2-EGFP reporter activity). The mechanistic link between SPOP mutation, altered DSB repair pathway choice, and genomic instability is well-established through multiple complementary approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "28d25fc4-1127-4c61-81f0-5a12ced393d9",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SPOP mutation sensitizes to DNA damaging therapeutic agents such as PARP inhibitors, and after DSB induction, loss of SPOP function leads to increased sensitivity of mutant SPOP prostate cancer cells to PARP inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C77 are supported by extensive drug sensitivity data across multiple cell lines, SPOP mutations, and PARP inhibitors (Figure 5A-F). The mechanistic basis for this sensitivity (impaired HDR leading to synthetic lethality with PARP inhibition) is well-established in the literature for BRCA1/2-deficient cancers, and the data here demonstrate SPOP mutant cancers phenocopy this deficiency. This represents a clinically actionable finding with potential therapeutic implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "8fa57e11-46b5-4a2b-bd8b-30e5694b3ac3",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SPOP mutation results in a transcriptional response consistent with BRCA1 inactivation in vivo, with the transcriptional response to SPOP-F133V correlating highly with BRCA1 inactivation in zebrafish, and human prostate cancers with SPOP mutations showing similar transcriptional effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C39, and C40 are supported by RNA-seq data from zebrafish (Figure 2E) and unsupervised clustering of human tumor transcriptomes (Figure 2F). The GSEA shows significant enrichment of BRCA1 inactivation signature (NES: 4.5, FDR q: 0.019), and human SPOP mutant tumors segregate significantly based on this signature (p=9.5e-07). This establishes a key mechanistic link between SPOP mutation and BRCA1-like phenotype, supporting the HDR deficiency model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "385b5335-a4b6-4a3b-b538-5de7d472e332",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Genomic instability is a fundamental feature of human cancer, and in prostate cancer, structural genomic rearrangements including translocations and copy number aberrations are a key mechanism driving tumorigenesis, with WGS revealing striking abundance of rearrangements in treatment-naive, localized prostate cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, and C10 represent established background knowledge supported by multiple citations to prior literature. These claims provide context for the current work and are appropriately referenced. While not novel findings of this study, they are accurately stated and well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SPOP is the most commonly mutated gene in primary prostate cancer, occurring in ~10% of cases, representing the most common non-synonymous mutations. SPOP mutations define a distinct molecular class that is mutually exclusive with ETS rearrangements and displays distinct patterns of somatic copy number alterations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C11-C15 are supported by citation to Barbieri et al., 2012 and confirmed by data presented in Figure 1. These represent established findings from prior work that provide important context for the current study. The mutual exclusivity and distinct SCNA patterns are confirmed in the current dataset, validating the prior observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "4100a8f0-cf81-4911-b949-34142768f28e",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "RAD51 is a component of the HDR pathway and marker for HDR engagement, while 53BP1 is a positive regulator of NHEJ that blocks 5\u2032-DNA-end resection and functions at the intersection of HDR and NHEJ, promoting error-prone NHEJ if not cleared by HDR components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 represent established knowledge about DSB repair pathways, appropriately cited to Baumann et al., 1996 and Panier and Boulton, 2014. These claims provide essential background for interpreting the foci formation experiments and are accurately stated. This is foundational knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "81e76980-bae5-46f5-bf81-f3c9f892c037",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Human cancers with underlying defects in HDR (such as BRCA1 inactivated breast and ovarian cancers) show sensitivity to PARP inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 represents well-established knowledge supported by multiple citations to landmark studies (Bryant et al., 2005; Farmer et al., 2005; Audeh et al., 2010; Tutt et al., 2010). This provides the rationale for testing PARP inhibitor sensitivity in SPOP mutant cells and is accurately stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "802879b1-dfce-4926-b0c4-5067bd9b00e8",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "SPOP is the substrate recognition component of an E3 ubiquitin ligase, and many established components of the DNA damage response are components of enzymes regulating ubiquitylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C83 represent established knowledge about SPOP function and the role of ubiquitylation in DNA damage response. C83 is supported by citation to Ceol et al., 2011. These provide important context for understanding how SPOP might mechanistically regulate DSB repair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "189d9008-0503-4e86-b838-c9e6b3df98ef",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Increased rearrangements likely result in higher total SCNA burden associated with more aggressive clinical behavior, SPOP mutations are present in HG-PIN precursor lesions, and similar effects of neuronal degeneration have been reported with other DNA repair genes including BRCA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C80, and C82 are supported by appropriate citations to prior literature (Hieronymus et al., 2014; Lalonde et al., 2014; Barbieri et al., 2012; Pulvers and Huttner, 2009). These provide important context linking the findings to clinical significance and comparing SPOP to other DNA repair genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "ab602f23-b7c7-444c-8c83-10ae975c13f1",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "SPOP loss of function induced a developmental phenotype of neuronal degeneration and apoptosis in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by zebrafish phenotype data (Figure 2A-C) showing impaired brain and eye development and TUNEL-positive apoptotic cells. While this is a novel observation, it serves primarily as a model system validation rather than a central finding about prostate cancer biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    },
+    {
+      "id": "d3d66698-e3b9-41f3-814e-4ec404c1cc04",
+      "content_id": "ad465928-3319-4077-afcc-f6714de437f0",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "This distinct class of cancer may benefit from treatment with clinically established DNA damaging therapeutics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is speculative and based on preclinical data showing PARP inhibitor sensitivity in cell lines and mouse models. While the mechanistic rationale is strong and consistent with BRCA1/2-deficient cancers, clinical benefit has not been demonstrated. The claim appropriately suggests this as a hypothesis for clinical testing rather than an established fact, but the evidence remains preclinical. Clinical trials would be needed to support this claim definitively.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:08.918688Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dc5ed651-dfaa-4cef-8c3f-763c8750ba1b",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "4805ec50-3af0-44e9-b9d3-6fdfa5b38b89",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "c5cf9739-c4a8-4f55-ad4a-3c51186ad8c5",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "b62f44a2-247a-4535-af69-9f25d8bb4a07",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "8c64b778-3e1a-47cb-9f38-b2af8233c7ff",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "dcf5b421-3df4-461c-af65-cba2854c34bf",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "6f853623-2206-4e92-9032-a3d9646ac017",
+      "result_id": "e70f91b6-73f7-4422-aba4-6a3d1c920ab4"
+    },
+    {
+      "claim_id": "25ae1f86-08bb-4b2c-99ca-208a6242903c",
+      "result_id": "e131016f-ecf6-4b69-b2c6-aab956069a05"
+    },
+    {
+      "claim_id": "f82a93bb-e50c-4a77-9033-99b2d8a33711",
+      "result_id": "e131016f-ecf6-4b69-b2c6-aab956069a05"
+    },
+    {
+      "claim_id": "91cc2649-0094-4318-9ad9-11172a847730",
+      "result_id": "e131016f-ecf6-4b69-b2c6-aab956069a05"
+    },
+    {
+      "claim_id": "d8263165-4271-4974-a0ff-95d79d4f4c13",
+      "result_id": "e131016f-ecf6-4b69-b2c6-aab956069a05"
+    },
+    {
+      "claim_id": "05dd7598-c9fb-4a90-932f-9c1955fd7616",
+      "result_id": "e131016f-ecf6-4b69-b2c6-aab956069a05"
+    },
+    {
+      "claim_id": "12160009-6462-486b-8614-0647ba5e7616",
+      "result_id": "d26177d2-b137-49c2-ba08-00a7d4f0e9ca"
+    },
+    {
+      "claim_id": "fc23775f-b79d-4fa0-aed1-e8ecd31a6e5e",
+      "result_id": "d26177d2-b137-49c2-ba08-00a7d4f0e9ca"
+    },
+    {
+      "claim_id": "8daa2e0c-92d8-4f66-aaa5-474911e5c46b",
+      "result_id": "d26177d2-b137-49c2-ba08-00a7d4f0e9ca"
+    },
+    {
+      "claim_id": "c1ca0156-4dcf-4f39-a15b-59a5f29809fb",
+      "result_id": "d26177d2-b137-49c2-ba08-00a7d4f0e9ca"
+    },
+    {
+      "claim_id": "2e5a3cb6-f7fa-4fd5-812d-05f349a4ee0d",
+      "result_id": "d26177d2-b137-49c2-ba08-00a7d4f0e9ca"
+    },
+    {
+      "claim_id": "b74625aa-b6a9-4378-872b-b6739b78e543",
+      "result_id": "1dcb2cfe-c41c-4f98-89d5-70479506786e"
+    },
+    {
+      "claim_id": "738c3f52-62a7-4769-9316-743446f4431e",
+      "result_id": "1dcb2cfe-c41c-4f98-89d5-70479506786e"
+    },
+    {
+      "claim_id": "d9f28ce1-6348-49c5-82a7-fcccaf9a51f4",
+      "result_id": "1dcb2cfe-c41c-4f98-89d5-70479506786e"
+    },
+    {
+      "claim_id": "0def1bad-f10e-4b05-b5fa-3d1108b606f6",
+      "result_id": "1dcb2cfe-c41c-4f98-89d5-70479506786e"
+    },
+    {
+      "claim_id": "f5eecae5-78f8-4e31-a0f0-b319b9cfda56",
+      "result_id": "1dcb2cfe-c41c-4f98-89d5-70479506786e"
+    },
+    {
+      "claim_id": "33da2e11-aa4f-4782-acdd-dbd1589a0235",
+      "result_id": "70a70c65-1dba-4279-9666-1f1a174fcd20"
+    },
+    {
+      "claim_id": "946c75d0-a97b-4a65-b228-6f28d27d2a7a",
+      "result_id": "70a70c65-1dba-4279-9666-1f1a174fcd20"
+    },
+    {
+      "claim_id": "90c15106-b9eb-40a8-86cb-5b551683a71a",
+      "result_id": "70a70c65-1dba-4279-9666-1f1a174fcd20"
+    },
+    {
+      "claim_id": "3c59ae80-50b6-4938-a14a-6868cc243d43",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "2c121987-fd7a-4d3d-a68a-6c3fa1371db7",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "997db655-0b09-4415-b8ac-ebdccab02529",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "174b4663-ca88-428e-afb8-8fb1d4e35a53",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "a324442a-fb8d-4e88-96f5-a894b7cf55c1",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "bb6c0d72-2cc4-4ca9-8952-0f9fda928467",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "d9f4c612-2211-4add-afe8-4f06bf053781",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "b92317cf-4e59-472b-b91c-0c5136c191ee",
+      "result_id": "d9572377-2c22-4db0-bb30-6d057f6b62c6"
+    },
+    {
+      "claim_id": "9237aa71-462e-4297-9df5-6725142a0a53",
+      "result_id": "0eeb8b93-278c-492a-ba8a-fb1df551331f"
+    },
+    {
+      "claim_id": "8160478a-f220-4fd6-a3b9-e3125759a4f5",
+      "result_id": "0eeb8b93-278c-492a-ba8a-fb1df551331f"
+    },
+    {
+      "claim_id": "b908978d-f433-4298-8c12-f5aeb1aeec80",
+      "result_id": "0eeb8b93-278c-492a-ba8a-fb1df551331f"
+    },
+    {
+      "claim_id": "619e9bf6-7996-4bad-8e50-ed14ddd487eb",
+      "result_id": "0eeb8b93-278c-492a-ba8a-fb1df551331f"
+    },
+    {
+      "claim_id": "eceec2ed-1009-46a2-ad7d-914d15ee8c6a",
+      "result_id": "0eeb8b93-278c-492a-ba8a-fb1df551331f"
+    },
+    {
+      "claim_id": "eafe8bdc-dd6d-4fe5-865d-0671b13c58d8",
+      "result_id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63"
+    },
+    {
+      "claim_id": "c1f33379-a367-416d-8b74-0830d6544ee1",
+      "result_id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63"
+    },
+    {
+      "claim_id": "fe137baa-c0fa-40b4-8ce0-fcf0e490f403",
+      "result_id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63"
+    },
+    {
+      "claim_id": "e1a63069-ff9a-42ed-9395-a96338b49547",
+      "result_id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63"
+    },
+    {
+      "claim_id": "594eebe7-fcd0-4ec4-9435-38f679189d57",
+      "result_id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63"
+    },
+    {
+      "claim_id": "94fb96da-4d91-42fd-9773-caf4fd74aca0",
+      "result_id": "5f332f14-b9f2-4111-a671-3c7d3a4c7b63"
+    },
+    {
+      "claim_id": "e4d641ef-6c7e-4cf1-abf6-89285a0934c0",
+      "result_id": "8f56fe09-8c80-4db4-9d58-8588b2e6dd34"
+    },
+    {
+      "claim_id": "214a55e7-4739-4201-9ec1-95ba47fc3df5",
+      "result_id": "8f56fe09-8c80-4db4-9d58-8588b2e6dd34"
+    },
+    {
+      "claim_id": "536fc3e8-4309-4dad-84bb-fb5910727768",
+      "result_id": "8f56fe09-8c80-4db4-9d58-8588b2e6dd34"
+    },
+    {
+      "claim_id": "b7305dac-3c9b-4d97-83cf-c777a4406d0a",
+      "result_id": "8f56fe09-8c80-4db4-9d58-8588b2e6dd34"
+    },
+    {
+      "claim_id": "e0b74bec-3592-41e5-a728-3e5c836c5067",
+      "result_id": "8f56fe09-8c80-4db4-9d58-8588b2e6dd34"
+    },
+    {
+      "claim_id": "fe1516df-4d76-4988-8409-bcb9741b4381",
+      "result_id": "abb60d1d-e327-4b17-8e3f-c7624a430d79"
+    },
+    {
+      "claim_id": "ae5b351d-7871-45f6-b30a-a658feca4005",
+      "result_id": "abb60d1d-e327-4b17-8e3f-c7624a430d79"
+    },
+    {
+      "claim_id": "828206fb-118a-46fa-ba59-4961bbb71aaa",
+      "result_id": "abb60d1d-e327-4b17-8e3f-c7624a430d79"
+    },
+    {
+      "claim_id": "88c42c9b-1f22-4b9d-8172-066d6514a9d1",
+      "result_id": "a4a2dd02-7ea7-4ec3-895e-6a9ef51353d4"
+    },
+    {
+      "claim_id": "76a14efc-bdd6-4b61-bc10-272b0b22cefe",
+      "result_id": "a4a2dd02-7ea7-4ec3-895e-6a9ef51353d4"
+    },
+    {
+      "claim_id": "6361ae09-f7cb-4f71-912a-f51b95b4d2a9",
+      "result_id": "a4a2dd02-7ea7-4ec3-895e-6a9ef51353d4"
+    },
+    {
+      "claim_id": "8df09411-f7c3-4815-90e2-61708c5a35b0",
+      "result_id": "61b1c9f7-3048-45cf-8081-bd448049c0a4"
+    },
+    {
+      "claim_id": "5000b730-441f-4d9d-9a9e-57da08cabe98",
+      "result_id": "61b1c9f7-3048-45cf-8081-bd448049c0a4"
+    },
+    {
+      "claim_id": "ef7757f3-60f7-4add-9367-c26c6726aea0",
+      "result_id": "61b1c9f7-3048-45cf-8081-bd448049c0a4"
+    },
+    {
+      "claim_id": "03e33d1a-d35b-4f04-a7e2-6109869b4930",
+      "result_id": "61b1c9f7-3048-45cf-8081-bd448049c0a4"
+    },
+    {
+      "claim_id": "529989a8-6bb2-43be-8769-8b75ae32ac36",
+      "result_id": "28d25fc4-1127-4c61-81f0-5a12ced393d9"
+    },
+    {
+      "claim_id": "150361b3-3288-4fec-9bad-07be4655a93a",
+      "result_id": "28d25fc4-1127-4c61-81f0-5a12ced393d9"
+    },
+    {
+      "claim_id": "78c80f25-d4f0-47c8-88c8-183d1e93cfc5",
+      "result_id": "8fa57e11-46b5-4a2b-bd8b-30e5694b3ac3"
+    },
+    {
+      "claim_id": "f5eecae5-78f8-4e31-a0f0-b319b9cfda56",
+      "result_id": "8fa57e11-46b5-4a2b-bd8b-30e5694b3ac3"
+    },
+    {
+      "claim_id": "33da2e11-aa4f-4782-acdd-dbd1589a0235",
+      "result_id": "8fa57e11-46b5-4a2b-bd8b-30e5694b3ac3"
+    },
+    {
+      "claim_id": "b92bc5d6-59e0-4454-8ac8-7fc8385dc639",
+      "result_id": "385b5335-a4b6-4a3b-b538-5de7d472e332"
+    },
+    {
+      "claim_id": "f1e6347d-6e30-4cae-b1b5-7d20fc032f27",
+      "result_id": "385b5335-a4b6-4a3b-b538-5de7d472e332"
+    },
+    {
+      "claim_id": "ff3c3d0d-ae6d-46f3-bf4f-cfda9514e726",
+      "result_id": "385b5335-a4b6-4a3b-b538-5de7d472e332"
+    },
+    {
+      "claim_id": "1c6c59b5-eada-4d21-ac69-9f0829cfba81",
+      "result_id": "385b5335-a4b6-4a3b-b538-5de7d472e332"
+    },
+    {
+      "claim_id": "5b27c0ed-77a2-4eee-89f0-d2a380d739ce",
+      "result_id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f"
+    },
+    {
+      "claim_id": "ee47f482-273f-4996-afa7-a71a9b9d4ba3",
+      "result_id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f"
+    },
+    {
+      "claim_id": "e349fe1b-efbd-45d3-8dc0-9fb6347d9d3f",
+      "result_id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f"
+    },
+    {
+      "claim_id": "c426dcff-b4f7-439a-bf6c-bf80aba74470",
+      "result_id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f"
+    },
+    {
+      "claim_id": "ccaf3d55-42dd-4957-9b47-5c0ac6846712",
+      "result_id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f"
+    },
+    {
+      "claim_id": "830ee00b-19f0-4375-8f96-3be4de90c5fd",
+      "result_id": "02d4a61a-fcc4-4c91-9e45-589b27e6ce1f"
+    },
+    {
+      "claim_id": "c1be3bfd-f070-4590-a677-7f2408412518",
+      "result_id": "4100a8f0-cf81-4911-b949-34142768f28e"
+    },
+    {
+      "claim_id": "70214ce7-0804-4574-b201-990bf375987e",
+      "result_id": "4100a8f0-cf81-4911-b949-34142768f28e"
+    },
+    {
+      "claim_id": "c41916d8-3158-41bc-b259-0e0fafaa9d6b",
+      "result_id": "4100a8f0-cf81-4911-b949-34142768f28e"
+    },
+    {
+      "claim_id": "72431fcb-4563-40eb-951c-37f12a71aace",
+      "result_id": "81e76980-bae5-46f5-bf81-f3c9f892c037"
+    },
+    {
+      "claim_id": "d03fe9c6-2c81-4870-8647-31625dbf465a",
+      "result_id": "802879b1-dfce-4926-b0c4-5067bd9b00e8"
+    },
+    {
+      "claim_id": "ec176985-b400-45dd-ba3d-eccc6aa6fd7e",
+      "result_id": "802879b1-dfce-4926-b0c4-5067bd9b00e8"
+    },
+    {
+      "claim_id": "2a20fb5e-8eb7-4049-b518-fe2b8ff703f0",
+      "result_id": "189d9008-0503-4e86-b838-c9e6b3df98ef"
+    },
+    {
+      "claim_id": "d9b2a74b-1766-4797-9d8b-307bac2550a6",
+      "result_id": "189d9008-0503-4e86-b838-c9e6b3df98ef"
+    },
+    {
+      "claim_id": "f29039cd-b92a-4684-b2f6-8606b8ca6d15",
+      "result_id": "189d9008-0503-4e86-b838-c9e6b3df98ef"
+    },
+    {
+      "claim_id": "713e1661-5af8-4a99-b2b5-2da11837ae94",
+      "result_id": "ab602f23-b7c7-444c-8c83-10ae975c13f1"
+    },
+    {
+      "claim_id": "d4c3ade1-82c5-4bf0-b337-d4f0f3b06510",
+      "result_id": "d3d66698-e3b9-41f3-814e-4ec404c1cc04"
+    }
+  ],
+  "comparisons": []
+}

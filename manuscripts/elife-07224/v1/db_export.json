@@ -1,0 +1,1702 @@
+{
+  "submission": {
+    "id": "f1c53351-6c39-4838-802f-c865979a0c46",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:23:09.288971Z",
+    "updated_at": "2025-11-29T04:23:09.288971Z"
+  },
+  "content": [
+    {
+      "id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "submission_id": "f1c53351-6c39-4838-802f-c865979a0c46",
+      "content_type": "manuscript",
+      "content_text": "# Irregular spiking of pyramidal neurons organizes as scale-invariant neuronal avalanches in the awake state\n\n## Authors\n\n- Timothy Bellay<sup>1</sup>\n- Andreas Klaus<sup>1</sup> ([ORCID: 0000-0002-4133-351X](https://orcid.org/0000-0002-4133-351X))\n- Saurav Seshadri<sup>1</sup>\n- Dietmar Plenz<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Section on Critical Brain Dynamics National Institute of Mental Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpontaneous fluctuations in neuronal activity emerge at many spatial and temporal scales in cortex. Population measures found these fluctuations to organize as scale-invariant neuronal avalanches, suggesting cortical dynamics to be critical. Macroscopic dynamics, though, depend on physiological states and are ambiguous as to their cellular composition, spatiotemporal origin, and contributions from synaptic input or action potential (AP) output. Here, we study spontaneous firing in pyramidal neurons (PNs) from rat superficial cortical layers in vivo and in vitro using 2-photon imaging. As the animal transitions from the anesthetized to awake state, spontaneous single neuron firing increases in irregularity and assembles into scale-invariant avalanches at the group level. In vitro spike avalanches emerged naturally yet required balanced excitation and inhibition. This demonstrates that neuronal avalanches are linked to the global physiological state of wakefulness and that cortical resting activity organizes as avalanches from firing of local PN groups to global population activity.\n\n## Introduction\n\nWhen the brain is not engaged in any particular sensory, cognitive, or motor task, cortical neurons nevertheless give rise to coordinated group activity. This so-called resting activity delineates functional networks (Fox and Raichle, 2007; Haimovici et al., 2013), modulates responses to sensory input (Arieli et al., 1996; Womelsdorf et al., 2012), predicts cortical responses (Luczak et al., 2009), and changes in disease or sleep deprived states (Greicius et al., 2004; Meisel et al., 2013). It is, therefore, crucial to identify and understand the dynamical constraints that determine coordinated neuronal group activity at rest in the awake (AW) state.\n\nResting activity, recorded from neuronal populations in vivo using the local field potential (LFP; Gireesh and Plenz, 2008; Petermann et al., 2009; Yu et al., 2011; Priesemann et al., 2013), functional magnetic resonance imaging (fMRI; Fraiman and Chialvo, 2012; Haimovici et al., 2013), the magnetoencephalogram (MEG; Palva et al., 2013; Shriki et al., 2013), or electrocorticogram (ECoG; Solovey et al., 2012), has been shown in rodents, non-human primates, and humans to be composed of activity cascades called neuronal avalanches. Neuronal avalanches identify a specific organization of activity patterns in which avalanche sizes distribute according to a power law with slope of \u22121.5, that is, the relative occurrences of avalanche sizes are constant (Beggs and Plenz, 2003). This scale-invariant organization, which transcends many spatial and temporal scales, is an indication that cortical dynamics reside at or close to a critical state in which interactions between local elements give rise to long-range spatial and long-term temporal fluctuations (Plenz and Thiagarajan, 2007; Chialvo, 2010; Beggs and Timme, 2012; Plenz, 2012; Markovi\u0107 and Gros, 2014; Plenz and Niebur, 2014). Predictions from the theory of criticality (Bertschinger and Natschlager, 2004; Nykter et al., 2008; Chialvo, 2010; Plenz and Niebur, 2014) and neural modeling (Beggs and Plenz, 2003; Kinouchi and Copelli, 2006; R\u00e4m\u00f6 et al., 2007; Shew et al., 2009; Tanaka et al., 2009; de Arcangelis and Herrmann, 2010) suggest that cortical networks that reside in such a fluctuation-dominated regime can improve various aspects of information processing, as was demonstrated experimentally in vitro (Shew et al., 2009, 2011; Yang et al., 2012; Shew and Plenz, 2012). Yet, further exploration of the origin and potential functional advantages of avalanche dynamics are limited by the ambiguity in the composition of the LFP, ECoG, MEG, and BOLD fMRI signals, with respect to their spatiotemporal and cellular origin as well as synaptic input and action potential (AP) output.\n\nIt is now well established that neuronal avalanches can emerge within cortex as demonstrated in vitro (Beggs and Plenz, 2003; Stewart and Plenz, 2006; Pasquale et al., 2008), and sensibly depend on the balance of fast synaptic excitation/inhibition (E/I) (Beggs and Plenz, 2003; Pasquale et al., 2008; Shew et al., 2009) and neuromodulators (Stewart and Plenz, 2006; Pasquale et al., 2008). However, it is currently not known how the scale-invariant, macroscopic organization of avalanches measured at the population level relates to the output of the principal cells of cortex, that is, AP firing in pyramidal neurons (PNs) and how this organization relates to the global physiological state of the animal. AP firing in PNs is commonly reported as spontaneous and irregular (Softky and Koch, 1993; Shadlen and Newsome, 1998) with low average correlation in firing between neurons during spontaneous activity and a high variability in evoked AP responses (Gawne and Richmond, 1993; Kerr et al., 2007; Sato et al., 2007; Poulet and Petersen, 2008; Ecker et al., 2010; Komiyama et al., 2010; Renart et al., 2010). Here, we show experimentally in vivo that ongoing fluctuations in AP firing in single cortical neurons amount to scale-invariant AP avalanches at the neuronal group level. The emergence of spike avalanches marks the AW state and is absent under anesthesia. Similarly, spike avalanches spontaneously organize in layer 2/3 PN groups from organotypic slice cultures and yet are sensitive to the E/I balance. We propose that critical dynamics govern the organization of resting activity in the awake animal from AP firing in individual PNs to the activity in large neuronal groups across cortex.\n\n## Results\n\n### Highest variability in firing in awake resting\n\nTo identify the relationship between AP firing and neuronal avalanches, which are primarily found in superficial layers of cortex (Stewart and Plenz, 2006; Petermann et al., 2009), we expressed the genetically encoded calcium indicator (GECI) YC2.60 (Yamada et al., 2011) in layer 2/3 (L2/3) PNs of rats using in utero electroporation at embryonic day 15.5 \u00b1 0.5 (Saito, 2006). Labeled mature neurons distributed throughout dorsolateral frontal and sensorimotor cortex. They exhibited PN morphology (Figure 1A), and their synaptic transmission was blocked by glutamate receptor antagonists (data not shown). To record ongoing AP activity in local PN groups, we performed 2-photon imaging (2-PI) of YC2.60-expressing PNs in head-restrained rats (Figure 1A,B; depth = 270 \u00b1 50 \u00b5m; cortical area = 0.15 \u00b1 0.05 mm2; 10\u201315 min per recording). Recordings were done under anesthesia (AN; 1\u20132% isoflurane), during wakening (WK; 5\u201320 min at 0% isoflurane), and in the awake state (AW; after >20 min at 0% isoflurane). Intracellular calcium transients produced fluorescence changes in visually identified somatic ROIs (Figure 1B), which were converted into ratiometric time courses (\u0394R/R) and then deconvolved to obtain an instantaneous firing rate estimate, \u03bb, for each neuron (Vogelstein et al., 2010) (see \u2018Materials and methods\u2019; Figure 1C,D). In control experiments, we showed (1) YC2.60 reliably and linearly reported AP activity at physiological temperature from single APs to AP bursts up to 28 Hz (Figure 1\u2014figure supplement 1A,B) and (2) \u03bb linearly recovered spike trains at different temporal resolutions (Figure 1\u2014figure supplement 2). We first recorded at a temporal resolution of \u0394t = 250 ms (n = 6 rats; 38 recordings; 15\u201330 active PNs/recording; >1 AP/min). Neuronal activity was stationary in \u03bb and in the average crosscorrelation, R, between ROIs (Figure 1E,F, respectively). Neurons fired on average more during AW compared to WK and AN (ANOVA, F(2,35) = 23.05, p < 0.001; probability density function (PDF) shown in Figure 1G). Under all three conditions, though, neurons fired irregular APs interspaced by relatively long periods of quiescence. This was quantified by three measures. First, \u03bb distributed exponentially for single neurons [log-likelihood ratio (LLR) comparison between power law vs exponential, >98% of ROIs in favor of exponential distribution, p < 0.05; Figure 2A, single distributions and average for one PN group; Figure 2B, averages over all PN groups]. Second, neurons tended to not fire at all within \u0394t (Figure 2A,B, left; arrow). The corresponding probability of quiescence, Pq (\u03bb < minimal \u03bb threshold, \u03bbthr, set to 0.5), was highest for AN and WK (Figure 2B, inset; ANOVA, F(2,35) = 23.05, p = 0.002). Both of these characteristics remained true for higher temporal resolutions despite the expected increase in \u03bb fluctuations (Figure 2B, right; additional n = 6 rats; n = 19 recordings; \u0394t = 167 and 88 ms during AW; LLR in favor of exponential, p < 0.05) and Pq (ANOVA, F(2,28) = 31.46, p < 0.001). Third, the normalized duration of quiescent times, IBInorm, between firing (i.e., \u03bb < \u03bbthr = 0.5) also distributed exponentially for all conditions (Figure 2A, right; Figure 2C; LLR: >98% of ROIs with p < 0.05). The corresponding CV was larger than 1 for all conditions, was significantly higher for AW than WK and AN (Figure 2C, left; inset, AW: 1.5 \u00b1 0.2; WK: 1.2 \u00b1 0.1; AN: 1.2 \u00b1 0.1; mean \u00b1 SD, F(2,35) = 25.66, p < 0.001), and increased further with temporal resolution (AW, Figure 2C, right; \u0394t = 167 ms, 1.9 \u00b1 0.4; \u0394t = 88 ms, 2.1 \u00b1 0.3, mean \u00b1 SD; F(2,28) = 15.48, p < 0.001). This irregularity was also robust to minimal AP activity: increasing \u03bbthr smoothly reduced the average firing rate \u03bbavg (data not shown), yet maintained a CV larger than 1 for all conditions and \u0394t (Figure 2\u2014figure supplement 1). CV values for single units (n = 26; average firing rate = 1.3 Hz; range: 0.1\u20136.2 Hz) recorded with chronic microelectrode arrays from superficial layers in the AW rat (Figure 1\u2014figure supplement 2) compared favorably with \u03bb results from our imaging analysis and ranged between 1.6 \u00b1 0.4 (\u0394t = 0.033 ms) and 1.3 \u00b1 0.3 (resampled at \u0394t = 250 ms), respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig1-v1.jpg)\n\n**Figure 1.:** (A) Z-stack side projection of YC2.60-expressing PNs in L2/3 in vivo. (B) Single imaging plane (dotted line in A) containing a group of PNs with significant changes in fluorescent intensity \u2206R/R over time (colored ROIs). (C) Time course of \u0394R/R for individual ROIs (from B). (D) Top: Binary raster display of instantaneous spike rate estimate \u03bb (\u03bbthr = 0.1). Middle: Expanded period showing color coded \u03bb amplitude. Bottom: Overplot of \u03bb time course for individual, color-coded ROIs. (E, F) Stationary firing rate estimate \u03bb and pairwise crosscorrelation Rnorm (normalized by the correlation during the first 30 s) over the course of acquisition. Firing rate increased from anesthetized to AW conditions but remained stable throughout the recording, suggesting that our measures were not affected by slow modulations of activity (Ecker et al., 2010). Shown are averages over all PN groups. (G) Distributions of the average firing rate estimate, \u03bbavg, for the three different states.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Using whole-cell patch recording of YC2.60-expressing PNs in cortical slice cultures, we confirmed that YC2.60 reliably resolved spontaneous single AP firing at physiological temperature (\u223c32\u00b0C), in line with previous reports (Yamada et al., 2011). Gray: Individual trials: Black: Average. Inset: Zoomed view of bar graph from 1 AP subpanel. Note the decay in \u0394R/R by \u223c2/3 within 1\u20132 s. Responses from single PN. (B) Peak and integral of instantaneous rate \u03bb as well as peak \u0394R/R linearly increase with the number of spontaneous APs/250 ms (n = 7 neurons). (C) Single movie data showing that the minimum reconstruction error of the deconvolution was found at decay time \u03c4 = 1.5 s (n = 39 ROIs).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Surrogate intracellular calcium traces (\u0394R/R; black) and corresponding \u03bb estimates (red) at three temporal resolutions \u0394t. \u0394R/R was derived by convolution of an in vivo spike train (bottom) with the instantaneous calcium response (\u03c4 = 1.5 s; 5% peak amplitude for one AP; for details see \u2018Materials and methods\u2019). (B) Peak \u03bb linearly increases with the number of APs/\u0394t.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig2-v1.jpg)\n\n**Figure 2.:** (A) Probability distributions of \u03bbnorm = \u03bb/\u03bbavg (left) and distribution of normalized quiescent time intervals, IBInorm = IBI/IBIavg, (right) in the AW state for a single neuronal group of PNs (\u0394t = 250 ms). Gray: distributions for individual ROIs, black: average. Dotted lines, \u03bbnorm = 1 and IBInorm = 1. The arrow is pointing at the relatively high-probability function value for \u03bbnorm << 1, that is, no spike within \u0394t = 250 ms. Note that the transition from \u2018no spike\u2019 to spiking is rather abrupt in the distribution, which indicates the high signal-to-noise ratio in our recorded data (cf. Figure 1\u2014figure supplement 1A,B). (B) Average \u03bbnorm distributions over all PN groups for all three conditions (left; AW; WK, waking; AN, anesthetized) and temporal resolutions (right). Inset: probability of quiescence Pq (number of recordings is indicated in parentheses). (C) Distribution of IBInorm for all three conditions (left) and temporal resolutions (right). Inset: Coefficient of variation (CV) for IBI (*p < 0.05). (D) Average autocorrelation function for \u03bb across PNs for all three conditions (left; \u0394t = 250 ms) and temporal resolutions (right). Inset: Power-law exponent \u03b2 (*p < 0.05). Note steeper power-law decay for AW indicating increased temporal clustering. (E) Distribution of pairwise crosscorrelation, R, in \u03bb for all PN groups and different states. Broken lines: Corresponding independent model by shuffling \u03bb for each ROI. (F) AW shows steeper distance decay in R when compared to AN indicating higher spatial clustering.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig2-figsupp1-v1.jpg)\n\nTo further differentiate the high irregularity encountered in the AW resting state from WK and AN conditions, we studied the temporal and spatial clustering of PN firing. Previous work on the AW resting state revealed temporal AP clustering during large intracellular membrane potential fluctuations (Poulet and Petersen, 2008) and spatial clustering of AP firing for L2/3 PNs (Greenberg et al., 2008) similar to the correlation profile found during tasks (Komiyama et al., 2010). Indeed, we found that \u03bb was more correlated in time during AW compared to WK and AN, as demonstrated by a significantly steeper decay in the autocorrelation for periods <10 s (Figure 2D, left; ANOVA, F(2,35) = 14.77, p < 0.001). On the other hand, correlated firing between pairs of neurons was weak, in line with the notion of an \u2018asynchronous state of cortex\u2019 (Poulet and Petersen, 2008; Ecker et al., 2010; Renart et al., 2010), and the average did not differ between states (AW: 0.06 \u00b1 0.06; WK: 0.05 \u00b1 0.04; AN: 0.06 \u00b1 0.04, mean \u00b1 SD; ANOVA, F(2,35) = 0.29, p = 0.75; Figure 2E). While neighboring neurons tended to be correlated more than distant neurons, in line with previous reports (Sato et al., 2007; Greenberg et al., 2008), this spatial profile was largely similar across all three states (Figure 2F).\n\n### Avalanches emerge from awake state neuronal firing\n\nIn the preceding section, we quantified how irregular spontaneous firing in individual PNs and their pairwise correlations change as the animal transitions from the AN to the AW state. None of these measures, though, allows us to identify neuronal avalanches, which reflect a scale-invariant relationship of neuronal group activities. In fact, we recently demonstrated that event rate and pairwise correlation R are insufficient to predict neuronal avalanches in cortical activity (Yu et al., 2011). In a first approach, we therefore identified spatiotemporal activity clusters in the neuronal population. This was done by concatenating firing events of neurons that co-occurred either within \u0394t or within consecutive periods of \u0394t (Figure 3A; gray areas) and separating clusters by quiescent periods of at least \u0394t, the original approach to identify avalanche dynamics (Beggs and Plenz, 2003). For a given neuronal population and 2-PI, this process has two free parameters: (1) the temporal resolution \u0394t, which is fixed by the scanning frame rate of 2-PI and (2) the activity threshold, \u03bbthr, of a firing event. In general, if \u03bbthr is low, most firing events will be concatenated into few large clusters. Similarly, if \u03bbthr is high, the few remaining firing events will group into few clusters. Thus, a maximal number of clusters is expected at an intermediate threshold \u2009\u2009\u03bbthrmax. We first studied this relationship in the AW state. Indeed, for a given recording at \u0394t, the cluster rate increased with \u03bbthr and was maximal at an intermediate threshold \u2009\u2009\u03bbthrmax (Figure 3B, arrows). As expected, \u2009\u2009\u03bbthrmax shifted towards smaller \u03bbthr values at higher temporal resolutions due to the improved resolution of fast \u03bb fluctuations. Next, we studied the cluster size s, that is, the sum of all firing events within a cluster normalized by the predicted cluster size limit \u039b, which is determined by the number of ROIs and their respective average firing rate (see \u2018Materials and methods\u2019). If the activity of neurons was rather independent from each other, as one might assume from the low average pairwise correlation in \u03bb (Figure 1), the distribution in cluster size should be close to an exponential function. On the other hand, if interactions between neurons contribute significantly to spontaneous firing, then the cluster size distribution deviates from an exponential function, and, in the case of avalanche dynamics, should follow a power law (Plenz and Thiagarajan, 2007). Importantly, we found that cluster sizes distributed according to a power law over approximately two orders of magnitude (Figure 3C: \u03b1 = 1.63 \u00b1 0.13, LLR = 25.7\u2013201.4 favors power law over exponential, p < 0.003 for all n = 10 experiments, \u0394t = 88 ms at individual \u03bbthrmax). To determine whether the AP activities in PN groups that resulted in power-law distributed cluster sizes were indeed a result of spatiotemporal correlations, we performed, as a control, time-shuffling of the corresponding \u03bb events. As shown in Figure 3D, time-shuffled \u03bb events did not yield power-law size distributions, and instead, cluster size distributions were better fit by an exponential (LLR = \u221266.6 to \u22126.9, favors exponential over power law, p < 0.05 for 7/10 experiments, \u0394t = 88 ms; thresholded at \u03bbthrmax obtained for each distribution individually).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig3-v1.jpg)\n\n**Figure 3.:** (A) Sketch of cluster formation at given \u0394t and chosen \u03bbthr = 1. Gray boxes delineate clusters of activity (i.e., consecutive time bins with \u03bb > \u03bbthr). (B) Maximal cluster rate at intermediate \u03bbthr for different \u0394t in the AW condition. Vertical arrows indicate the respective $\\lambda_{thr}=\\lambda_{thr}^{max}$ at which cluster rate is maximal. (C) Individual distributions of normalized cluster sizes, s, in AW (top; \u0394t = 88 ms, n = 10 recordings, threshold at $\u2009\\lambda_{thr}^{max}$). Dotted line, predicted cut-off at s = 1; dashed line, power law with \u03b1 = \u22121.5. (D) Corresponding distributions after shuffling \u03bb. Shuffling destroys spatiotemporal correlations in activity and abolishes the power law in cluster sizes. (E) Relationship between \u03b1 and branching ratio \u03c3 for all three temporal resolutions, \u0394t. Note the systematic change for increasing \u0394t as shown previously for avalanche dynamics based on the LFP. (F) Distribution of cluster lifetimes, T, for different \u0394t. Dashed line, slope = \u22122.\n\nFor LFP-based avalanche dynamics, it has consistently been shown that power-law exponent and branching ratio increase systematically with temporal resolution \u0394t (Beggs and Plenz, 2003; Petermann et al., 2009). Importantly, for critical avalanche dynamics and negligible finite-size effects, the temporal resolution for which the power-law exponent, \u03b1, is \u22121.5 yields a branching ratio, \u03c3, close to 1. As shown in Figure 3E, a similar relationship between \u03b1 and \u03c3 was also found empirically for AP avalanches in vivo. Furthermore, the temporal organization of neuronal avalanches, that is, the avalanche life time, was shown to distribute according to a power law with exponent close to \u22122 (experimentally: [Beggs and Plenz, 2003]; simulations and theory: [Harris, 1989; Eurich et al., 2002]). Similarly, we found that the cluster lifetime, T, distributed according to a power law with slope close to \u22122 (Figure 3F; \u0394t = 250 ms, slope \u03b3 = 1.7 \u00b1 0.1; \u0394t = 167 ms, \u03b3 = 1.9 \u00b1 0.2; \u0394t = 88 ms, \u03b3 = 2.2 \u00b1 0.2, LLR = 100.4\u2013344.1; p < 0.001). To study the robustness of the power-law size distributions with respect to threshold, we systematically varied \u03bbthr around \u2009\u03bbthrmax. In Figure 4, we show that the body of the distributions followed a power law up to the predicted cluster size limit (s = \u03bb/\u039b = 1 for the normalized distributions) beyond which a cut-off was observed. This cut-off was more pronounced at lower temporal resolutions and higher thresholds as shown previously for LFP-based avalanches (Yu et al., 2014). The threshold robustness and cut-off are in line with previous reports on avalanche dynamics in vitro (Beggs and Plenz, 2003) and in non-human primates (Petermann et al., 2009) and humans (Shriki et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) Cluster size distributions for \u0394t = 250, 167, and 88 ms (from left to right). The green distributions correspond to the respective thresholds, \u03bbthr = $\\lambda_{thr}^{max}$, at which the cluster rate was maximal.\n\nAvalanche dynamics were unique to the AW state (Figure 5). During AN, cluster size distributions at corresponding \u03bbthrmax (Figure 5\u2014figure supplement 1A) were slightly bimodal (Figure 5A, arrow), in line with a progressively worse fit to a power law for WK and AN compared to AW (Figure 5B; ANOVA, p < 0.05; cf. Figure 4, Figure 5\u2014figure supplement 1B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig5-v1.jpg)\n\n**Figure 5.:** (A) Overplot of size distributions for the anesthetized state (n = 22 recordings) showing a slight increase in the probability of large clusters (arrow). (B) Average KS distance, DKS, between individual PDFs and best-fit power-law distributions for all three states (*p < 0.05).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (B) Average cluster size distributions as a function of \u03bbthr for WK.\n\nAn alternative approach to obtain avalanches, in which periods of integrated population activity above a population threshold were extracted (Poil et al., 2012), also yielded power-law size distributions with exponent close to \u22121.5 and cut-off that were robust to changes in \u03bbthr (Figure 6A\u2013D). Similar to what was found when using the original definition of avalanches, cluster size distributions obtained by population thresholding deviated from avalanche dynamics under isoflurane anesthesia (Figure 5B, Figure 6E, p < 0.01; Kruskal\u2013Wallis test on Kolmogorov\u2013Smirnov distances, DKS). Furthermore, cluster size and lifetime were correlated, and the corresponding exponent scaled as suggested by the theory of critical systems (Sethna et al., 2001) (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig6-v1.jpg)\n\n**Figure 6.:** (A, B) Cluster size distributions for individual recordings (n = 12) following thresholding of the population rate vector at \u03bbthr = 1 (A) and 2.5 (B). Dashed line: slope = \u22121.5. (C) Rate-preserved shuffling of \u03bb in individual ROIs prior to calculation of population rate vector destroys the power law. (D) Power-law exponent, \u03b1, is relatively threshold-invariant. (E) Deviation from power-law dynamics at the population rate vector level increases with the transition from AW to AN (**p < 0.01).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Double logarithmic plot of avalanche duration and corresponding avalanche size for one local L2/3 PN group in vivo in the AW state. Duration and size scale according to a power law with exponent 1/c. In this example, c was found to be 0.75 based on regression analysis (red line). (B) For increasing temporal resolution, the scaling relationship between life time exponent and size exponent approaches c.\n\nTo summarize, ongoing AP firing of local groups of L2/3 PNs in the AW state displayed the five hallmarks of neuronal avalanche dynamics: first, a power law in size distributions with exponent close to \u22121.5; second, a critical branching parameter close to 1; third, threshold robustness; fourth, a lifetime distribution with exponent close to \u22122; and fifth, scaling of lifetimes and sizes. These results, for the first time, demonstrate the emergence of neuronal avalanches in the spiking of PN groups from superficial cortical layers in the AW animal.\n\n### AP avalanches in L2/3 PNs in vitro depend on the E/I balance\n\nLFP recordings in cortex slice cultures (Beggs and Plenz, 2003; Stewart and Plenz, 2007; Gireesh and Plenz, 2008) have shown avalanche dynamics to emerge spontaneously in superficial layers. Similarly, spike avalanches have been identified in extracellular unit recordings from dissociated cultures of hippocampus (Mazzoni et al., 2007) and cortex (Pasquale et al., 2008; Tetzlaff et al., 2010; Vincent et al., 2012), although the mesoscopic organization of the tissue was not preserved. Yet, these studies are limited by the unknown composition of the LFP population signal (see \u2018Introduction\u2019) and cell types recorded from. For extracellular unit activity, strongly bursting interneurons can dominate large spike clusters in the neuronal population, in which case heavy-tailed cluster size distributions reflect neuronal differences rather than neuronal interactions. In order to demonstrate that avalanche dynamics also capture spatiotemporal activity in L2/3 PNs in vitro, we conducted studies in GECI-expressing cortical slices, co-cultured with VTA to ensure proper maturation of superficial cortical layers (Gireesh and Plenz, 2008) (Figure 7A\u2013D). We recorded AP activity from local groups of L2/3 PNs in vitro (n = 15\u201380 ROIs) monitored with YC2.60 (\u0394t = 250 ms; n = 129 movies, n = 35 cultures; Figure 7B\u2013D) and compared the activity to conditions when GABAA (5 \u00b5M PTX, n = 8) or AMPA and NMDA-receptor mediated (0.5 \u00b5M DNQX, 5 \u00b5M AP5, n = 6) synaptic transmission were slightly reduced. Neuronal activity was stable throughout the recording for each condition (Figure 7\u2014figure supplement 1A,B). At the single neuron level, AP firing was irregular, in line with our in vivo results (Figure 7E,F; Figure 7\u2014figure supplement 1C,D). Temporal clustering was present under normal conditions (ACSF) but was reduced during disinhibition or disfacilitation (Figure 7G, PTX and DNQX/AP5, respectively). An intermediate level in correlated AP firing was found under normal conditions (Figure 7H). Correlations between neighboring and distant neurons were highly similar and as expected increased during disinhibition but decreased during disfacilitation (Figure 7H). As described in our in vivo results, the mean rate smoothly declined with increase in \u03bbthr (Figure 7\u2014figure supplement 1E), and the number of AP cascades of PN groups peaked in rate at an intermediate threshold \u03bbthr (Figure 7\u2014figure supplement 1F) for all three conditions. When processed at the corresponding \u03bbthrmax, cascade sizes under normal conditions distributed according to a power law that was robust to changes in \u03bbthr (Figure 7I, left). As expected, the power law was destroyed when spiking activity was shuffled (Figure 7I, right). As previously shown for LFP-based analysis (Plenz, 2012), AP-based cluster size distributions became strongly bimodal during pharmacological disinhibition and slightly bimodal during disfacilitation (Figure 7J, PTX and DNQX/AP5, respectively; Figure 7\u2014figure supplement 2). YC2.60, while being sensitive to single APs, tends to saturate for very strong spike bursts (Yamada et al., 2011). In contrast, the GECI GCaMP3 (Tian et al., 2009) naturally has a higher threshold for AP detection (>3 APs) but reports even strong bursts linearly (Yamada et al., 2011) (Figure 7\u2014figure supplement 3A,B). In line with our expectation of threshold invariance for LFP-based avalanches in the AW monkey (Petermann et al., 2009) and our YC2.60 measurements, we found that AP bursts measured with GCaMP3 were irregular at the single neuron level (Figure 7\u2014figure supplement 3C\u2013H), while AP cascades formed a clear power law (Figure 7\u2014figure supplement 3I,J; n = 9 cultures). These in vitro results demonstrate neuronal avalanches to describe the spatiotemporal spike activity in L2/3 PN groups, that is, sensitive to the balance of excitation and inhibition and can be detected using high-threshold GECIs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig7-v1.jpg)\n\n**Figure 7.:** (A) Organotypic cortex (ctx)-ventral tegmental area (vta) co-culture. YC2.60-expression in PNs from superficial (super) but not deep (deep) cortical layers. wm: white matter border location. (B) Single imaging plane containing a group of PNs with significant changes in R over time (colored ROIs). (C) Time course of \u0394R/R for individual ROIs. (D) Top: Binary raster display of instantaneous spike rate estimate \u03bb (\u03bbthr = 0.1). Middle: Expanded period showing \u03bb amplitudes. Bottom: Overplot of \u03bb time course for individual (color coded) ROIs. (E) Distributions of \u03bbnorm for different pharmacological conditions (ACSF, DNQX/AP5, PTX). Dotted line, \u03bbnorm = 1. (F) Distributions of IBInorm. Dotted line, IBInorm = 1. Inset: Pq (number of recordings is indicated; *p < 0.05). (G) Mean \u03bb autocorrelation function for individual PNs and different conditions. (H) Distance dependence of pairwise crosscorrelation in \u03bb and different conditions. (I) Left: Power-law distributions in s for different \u03bbthr (color scale) for normal condition (ACSF). Right: \u03bb shuffling destroys power-law organization for normal condition. (J) Probability distributions in s for different \u03bbthr (color scale) under PTX (left) and DNQX/AP5 (right). Dashed lines in I and J: slope = \u22121.5.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (C, D) Distribution of normalized \u03bb and IBIs for a single PN group (n = 42 ROIs). (E) Mean \u03bb rate smoothly decreases with increasing threshold. (F) Cluster rate as function of \u03bbthr shows peak at intermediate \u03bbthr.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Example of simultaneously recorded fluorescent intensity \u2206R/R over time for a subset of ROIs for all conditions using YC2.60 expressed in superficial cortical PNs. (B) Distributions of normalized cluster sizes for all conditions.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07224/elife-07224-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) GCaMP3 covers a wide dynamic range of spike bursts but fails to reliably capture burst sizes <3 APs. Loose-patch recordings combined with 2-PI of cortex slice cultures grown for \u223c2 weeks. Fluorescence traces triggered on spontaneously occurring AP bursts and sorted by the number of spontaneous APs/250 ms. Note the relative insensitivity of GCaMP3 to small bursts establishing a natural threshold of \u03bbthr in the data acquisition. Single PN. (B) Summary of change in fluorescent intensity \u0394F/F, which increases linearly with spontaneous APs/250 ms, but is undetectably low at sizes <3 APs (n = 8 cells; color codes). Broken lines: regression for individual neurons. (C) Average \u03bbnorm distribution for all ROIs. Vertical line, \u03bbnorm = 1. (D) Corresponding average distribution in normalized quiescent time intervals, IBInorm. Vertical line, IBInorm = 1. (E) Mean \u03bb autocorrelation function. Note the strong decay in autocorrelation demonstrating temporal correlations for up to 10 s. (F) CV in AP firing is much larger than 1 and independent of \u03bbthr. (G) Representative traces of changes in fluorescent intensity (\u0394F/F) simultaneously recorded over time from GCaMP3-expressing L2/3 PNs in vitro. Note the relatively sparse activity compared to YC2.60 recordings and large fluctuations in burst amplitudes. (H) Cluster rate as a function of \u03bbthr. (I) Cluster size distributions of individual cultures based on GCaMP3 recordings. (J) Average power-law distributions in normalized cluster size s for different \u03bbthr (color scale). Observed cascade sizes with the burst indicator GCaMP3 also follow a power law up to the cut-off of s = 1. Dashed line, slope = \u22121.5.\n\n## Discussion\n\nHere, we show that AP output from groups of PNs in superficial layers of cortex, while highly irregular at the single neuron level, assembles into scale-invariant neuronal avalanches at the local group level. In vivo, the emergence of avalanche organization in local pyramidal groups is linked to the AW state and is abolished under anesthesia. In vitro, this emergence occurs naturally and yet is sensitive to the balance of excitation and inhibition. To date, avalanche dynamics have been demonstrated in numerous population signals, such as the LFP, EEG, MEG, and BOLD fMRI. These population signals, however, are ambiguous as to their site of origin, their emergence from non-neuronal or neuronal elements, and their sensitivity to subthreshold and suprathreshold neuronal activities. Such ambiguities put into question whether computational benefits attributed to avalanche dynamics, or critical state dynamics in general (Shew and Plenz, 2012), extend to the local cortical microcircuit with computations taking place between PNs and local interneurons. Our results provide the first essential step in answering these functional questions at the local microcircuit level by demonstrating that, in the awake animal, local groups of PNs in layer 2/3 spontaneously exhibit highly variable AP clusters that organize as neuronal avalanches. By restricting our analysis to PNs, we avoid inflation of spike cluster from strongly firing interneurons and focus on the local output of a cortical microcircuit. The sensitivity of AP avalanches to anesthesia and the E/I balance demonstrates that PNs as well as interneurons are required to establish these dynamics. In light of the methodological and conceptual complexity of the current work, in what follows, we will first discuss methodological and technical aspects of our experimental design and avalanche analysis followed by a discussion of the concepts of criticality in the context of cortical AP activity at the microcircuit level.\n\n### Dynamic range and linear estimation of instantaneous firing rates using the GECI YC2.60\n\nGECIs derived from YC are fluorescence resonance energy transfer sensors, that is, the binding of calcium ions decreases fluorescence for short wavelengths while it increases fluorescence in the longer wavelength range (Nagai et al., 2004). The anti-correlated change at two wavelengths, captured in the ratiometric signal, increases the signal-to-noise ratio and naturally reduces global signal artifacts, such as those caused by movement of the animal. Our cell-attached recordings also demonstrate linear reporting of AP bursts, measured for up to 28 Hz (i.e., 7 APs/250 ms; Figure 1\u2014figure supplement 1B). This observation suggests that the estimation of AP burst strength in our recordings is only weakly effected by saturation (L\u00fctcke et al., 2010). The lack of impact of any potential saturation effect for YC2.60 on our main results was also demonstrated by our GCaMP3 in vitro recordings. GCaMP3 is relatively insensitive to small AP bursts and does not show saturation for relatively strong bursts, which introduces a natural \u03bbthr of \u223c3 APs in our data acquisition (Figure 7\u2014figure supplement 3A). To summarize, our choice of YC2.60 provided us with a GECI that exhibited an excellent dynamic range, that is, high signal-to-noise ratio, reasonable temporal resolution, high probability of single AP detection, and linear mapping of instantaneous firing rates up to \u223c20 Hz.\n\n### Thresholding of continuous firing rate estimates and estimation of avalanche measures at various temporal resolutions\n\nThe identification of neuronal avalanche dynamics has been found to be robust to a wide range of thresholds for local event detection. As demonstrated in awake non-human primates, the amplitude of the negative LFP (nLFP), which identifies local synchronization, monotonically increases with the number of extracellular spikes recorded at the same microelectrode (Petermann et al., 2009). Thus, when identifying nLFPs on the microelectrode array using a threshold, a high threshold includes activity from local neurons that fire strongly, whereas a low threshold also includes weak local neuronal activity. It was found that for LFP-based avalanches, the threshold to identify nLFPs can vary over many standard deviations of the ongoing LFP fluctuations, yet the essential power law in avalanche sizes is maintained, despite a large decline in the nLFP and cascade rates with increase in threshold (Petermann et al., 2009). A similar threshold robustness was found for human avalanche dynamics based on the MEG (Shriki et al., 2013) or BOLD signal in the fMRI signal (Tagliazucchi et al., 2012). This is in line with simulations demonstrating that thresholding does not affect avalanche size distributions (Lasse et al., 2009). Threshold independence allows large local events (which are less frequent than small events) to be properly identified for avalanche analysis even at low temporal resolutions. In the current study, by increasing the local firing threshold, we isolated strong, local events in time and space, thus allowing for concatenation of significant local events into avalanches. At higher temporal resolution, the firing threshold can be lower as even small local firing can be properly separated in time (cf. Figure 3B). As was shown in the original publication on avalanches, at a fixed spatial resolution, prolonging/shortening \u0394t increases/decreases concatenation leading to a systematic change in the power-law slope of avalanches' sizes while maintaining the power-law signature (Beggs and Plenz, 2003). Similarly, the distribution of ROIs within an imaging frame establishes a spatial sampling matrix and correspondingly, the power-law slope was found to change accordingly with change in the frame rate (cf. Figure 3E).\n\n### Spatial undersampling of cortical neuronal populations and the effect on avalanche parameters\n\nBoth our in vitro and in vivo recordings demonstrate avalanche dynamics to capture the organization of spontaneous spiking in a coarsely sampled sub-network of L2/3 PNs. The plane of imaging captured about 25\u201335 labeled PNs within a cortical area of 0.15 \u00b1 0.05 mm2. At a neuronal density of \u223c100,000/mm3 for L2/3 in the adult rat (Meyer et al., 2010), we therefore expect \u223c300 PNs within a focal plane. Thus, we are recording from \u223c10% of PNs within our field of view. Simulations of spike avalanches using a branching process (Ribeiro et al., 2010, 2014) or models of self-organized criticality (Priesemann et al., 2009) indicate that coarse spatial subsampling affects proper sampling of avalanche size distributions. Previous attempts to identify spike avalanches in the awake monkey found log-normal distributions, despite robust power laws in nLFP-based avalanches (Petermann et al., 2009). Such log-normal distributions have been suggested to indicate slightly subcritical dynamics in spike avalanches (Priesemann et al., 2014). However, our results demonstrate a power law in spike avalanches in the awake, but not anesthetized state, within our imaging frame. Because both states should be affected similarly from subsampling, we conclude that subsampling within our cortical field of view is not a major factor in our recordings to identify the power law in avalanche sizes. This could be because, in the above studies, the sampling density of spikes achieved by microelectrode arrays was orders of magnitudes lower than in the current study. On the other hand, because our cranial window only captured a small region of the cortex, we expect to see a cut-off in the avalanche size distribution, as reported in numerous experimental findings on avalanches based on the nLFP (Beggs and Plenz, 2003; Petermann et al., 2009; Yu et al., 2014) or MEG (Shriki et al., 2013) and simulations (Priesemann et al., 2009; Ribeiro et al., 2010; Priesemann et al., 2013; Ribeiro et al., 2014; Yu et al., 2014). Here, we show for the first time that this cut-off also holds for AP avalanches.\n\n### Irregular firing with CV > 1, \u2018noise\u2019, and neuronal avalanche dynamics\n\nTraditionally, irregular AP firing in individual PNs has been viewed as evidence that cortical dynamics are noisy and thus require averaging in time or across neurons to separate signal from noise (Softky and Koch, 1993; Shadlen and Newsome, 1998; London et al., 2010). Our results confirm that indeed single neuron firing is irregular in both the anesthetized and AW state. We found a lower firing rate, less irregularity, and less temporal clustering under anesthesia compared to the AW state. Yet, these differences did not specify any particular organization of the AW state, in particular, given that the average pairwise correlation between PNs did not differ between the two states. This latter finding suggested at first glance no difference in the average neuronal interactions. Only when temporally contingent spatial spike clusters in the neuronal population were taken into account, did the specific scale-invariant avalanche organization of the AW state become evident. Thus, irregularity of single neuron firing by itself does neither preclude nor determine avalanche dynamics.\n\nSeveral neuronal network simulations have demonstrated the coexistence of avalanche dynamics and highly irregular firing at the single neuron level. Using a stochastic model of spiking neurons, Benayoun et al. show the coexistence of irregularity and avalanche dynamics close to a critical transition (Benayoun et al., 2010). Recent deterministic network models that incorporate synaptic plasticity also demonstrate how such irregularity robustly co-exists with avalanche dynamics, even in the absence of stochasticity (Stepp et al., 2014), yet demonstratively at a phase transition, where the addition of a single spike led to exponentially deviating network trajectories. Several computational studies in non-leaky as well as leaky integrate and fire networks have demonstrated the emergence of spike avalanches at or near a phase transition, where irregular spikes form clusters whose size distributions follow a power law (Chen et al., 1995; Eurich et al., 2002; Levina et al., 2007, 2009; Millman et al., 2010). Thus, while irregular firing might be ubiquitous in many systems and during different brain states, it is in the AW state where irregularity combines with avalanche dynamics suggestive of a system residing near a phase transition. Our work, by providing detailed parameters on firing rate distributions, event count, interburst statistics, and correlations, should provide new experimental guidance to inform more realistic neuronal network models on critical spiking dynamics.\n\nComputational models of cortical networks typically derive irregular spiking by establishing a balance in fast E/I (Shadlen and Newsome, 1998; Renart et al., 2010), which allows inhibitory and excitatory currents to track each other closely in time, resulting in an active de-correlation in spiking (Renart et al., 2010). However, since independent, stationary Poisson processes are insufficient to explain the high variability of spiking (CV > 1) observed typically in vivo (Softky and Koch, 1993; Shadlen and Newsome, 1998), alternative mechanisms beyond external Poisson inputs (Brunel, 2000) have been proposed to further increase variability, such as intrinsic chaotic dynamics (Van Vreeswijk and Sompolinsky, 1996; Sussillo and Abbott, 2009; Ostojic, 2014), conductance-based synapses (Kumar et al., 2008), clustered network architecture (Litwin-Kumar and Doiron, 2012), external synchronous inputs (Stevens and Zador, 1998), and \u2018doubly stochastic\u2019 approaches using non-stationary Poisson processes (Churchland et al., 2010), among others. Our results confirm the high variability of single neuron firing in the AW state with CV > 1. We suggest that the significant increase in CV beyond 1 for the AW state (cf. Figure 2C) is in line with the general notion that critical systems operate in a fluctuation-dominated regime, that is, high irregularity encountered at the single neuron level in the AW state might arise from large fluctuations that naturally occur when system dynamics approach a critical point (Chialvo, 2010; Fraiman and Chialvo, 2012; Meisel et al., 2015).\n\n### The AW brain state and avalanche dynamics\n\nMost in vivo studies reporting avalanche dynamics have been conducted in the AW animal for example, non-human primates (Petermann et al., 2009; Yu et al., 2011) or AW human subjects (Fraiman and Chialvo, 2012; Palva et al., 2013; Shriki et al., 2013). However, it was not clear whether avalanches also arise under anesthesia. In fact, avalanche analysis in deeply anesthetized cats or rodents reveals typical deviations, such as unusually shallow power laws based on the LFP and log-normal distributions of extracellular unit clusters (Hahn et al., 2007; Ribeiro et al., 2010). In these latter studies, however, the effect of anesthesia was difficult to separate from technical aspects, such as subsampling, which can affect spike clusters. In the present study, we (1) increased the number of neurons typically recorded with microelectrodes within an area of 200 \u00d7 200 \u00b5m by 1\u20132 orders of magnitude using 2-PI, (2) extracted spike clusters from a well-defined population of PNs, (3) used an exceptionally sensitive GECI to identify even single spikes, and (4) transitioned the animal between the anesthetized and the AW state. This approach provided us with the necessary precision and sensitivity to demonstrate the increasing deviation from a power law in size distribution that occurs even under light anesthesia (cf. Figures 5B, 6E). Our results suggest that avalanche dynamics might provide a precise \u2018fingerprint\u2019 to delineate the transition from the anesthetized state to the fully AW state. This delineation might be helpful in further quantifying different aspects of the AW state. For example, when studying avalanche dynamics in normal subjects, the degree of sleep deprivation was found to correlate positively with deviations from avalanche dynamics (Meisel et al., 2013). Intracranial recordings in human subjects have also shown small changes in \u2018vigilance\u2019 with changes in avalanche dynamics (Priesemann et al., 2013).\n\n### Critical dynamics and near-critical dynamics\n\nAvalanche dynamics were originally defined by (1) cluster sizes in LFP activity in vitro that follow a power law with slope close to \u22121.5, (2) a power law in life time distribution with slope of \u22122, and (3) a critical branching parameter of 1 (Beggs and Plenz, 2003). All three aspects have been demonstrated in spike clusters from layer 2/3 PNs in the present study. Detailed correspondences with avalanche work include the cut-off in size distributions beyond system size, originally identified in the LFP (Klaus et al., 2011), and clearly visible in the steep drop in spike cluster distributions beyond system size in the present study (cf. Figures 3C, 4). We obtained a branching parameter slightly smaller than 1 at the power law slope of \u22121.5, which might be due to the small neuronal group size recorded from. We also confirmed recent demonstrations of scale-invariance based on the collapse of avalanche waveforms (Sethna et al., 2001; Papanikolaou et al., 2011; Friedman et al., 2012). These measures combined strongly suggest that AP output of PN groups reflects critical dynamics in the AW state.\n\nAvalanche measures have to be carefully evaluated for potential pitfalls. For example, power laws that arise from non-critical dynamics have been reported (Touboul and Destexhe, 2010), yet those power laws exhibit slopes of \u221210 to \u221250. In contrast, the slope of power laws for avalanche dynamics is typically more shallow than \u22122, that is, these distributions do not have a mean and display unbounded variance, that is, non-existing first and second moments. Similarly, the upper cut-off in avalanche size distributions has sometimes been included into statistical fits. However, this upper cut-off arises from finite-size effects and needs to be disregarded for fitting (Yu et al., 2014), otherwise, statistical tests (Langlois et al., 2014) can be misdirected to fit the cut-off only (Clauset et al., 2009; Dehghani et al., 2012).\n\nWhile our results clearly demonstrate that cortical dynamics approach a scale-invariant, that is, power-law organization in the AW state, the precise distance to the critical point is not known. In simulations, complex\u2013hierarchical modular architectures of cortical networks have been shown to support critical dynamics (Wang et al., 2011). Such architectures, however, when combined with near-critical dynamics, can \u2018trap\u2019 activity (Rubinov et al., 2011; Friedman and Landsberg, 2013) inducing heavy-tail size distributions approximating power laws, or in general, extend the region in which critical-like behavior is observed by establishing so-called Griffiths phases (Moretti and Mu\u00f1oz, 2013). Whether the layer 2/3 network can exhibit \u2018true\u2019 critical dynamics has also been called into question on the grounds that this would require a system to be placed exactly at the critical point, which is only possible for fine-tuned, \u2018conservative\u2019 systems (Juan et al., 2010). Cortical networks, while being critical in the long-term, could show subcritical transients. Subcritical dynamics have been invoked to explain findings from intracranial recordings in humans (Priesemann et al., 2013). In network simulations, a transition from subcritical to critical dynamics has been shown to benefit information processing (Tomen et al., 2014). Our results demonstrate that in the relatively fast transition from the anesthetized to the AW state, cortical dynamics more closely approaches or enters a critical regime. Finally, a dimension not employed in the current work is the specific temporal correlation structure of avalanches, which reveals scale-invariance and differs significantly from disinhibited or disfacilitated networks (Lombardi et al., 2012, 2014; Plenz, 2012).\n\n### In vitro results experimentally establish threshold-invariant avalanche dynamics in L2/3 PNs regulated by the E/I balance\n\nOur in vitro results for the first time demonstrate that avalanche dynamics also describe the organization of AP patterns in a well identified neuronal population, local groups of L2/3 PNs in isolated cortex preparations. This overcomes previous limitations of in vitro studies in which cell identities and signal composition were largely unknown. The dependency of L2/3 avalanches on a GABAA antagonists and glutamate antagonists supports theories that indeed the E/I balance is important to establish avalanche dynamics in cortical networks. Our findings further demonstrate that in isolated cortex, avalanche dynamics is the natural organization that describes PN spiking in the absence of any inputs. Our in vitro recordings resulted in the collection of spike activity over longer periods in time compared to in vivo. This allowed us to demonstrate that GECIs, such as GCaMP3, with a natural threshold for spike burst imaging and which are less prone to saturation can also be used for avalanche detection (Figure 7\u2014figure supplement 3), a direct experimental confirmation of simulations that showed thresholding does not affect avalanche size distributions (Lasse et al., 2009). Our in vitro results also provide additional benchmarks to which to compare in vivo avalanche dynamics. For example, pairwise correlations in vitro for avalanche dynamics are significantly higher compared to in vivo. While these values take an intermediate position compared to those found for the disinhibited or disfacilitated state (cf. Figure 7H), it is clear that absolute pairwise correlation values do not predict avalanche dynamics. Our findings transcend previous reports on the spontaneous formation of stable activity patterns in isolated cortical networks, such as the acute slice (Sanchez-Vives and McCormick, 2000; Beggs and Plenz, 2003; Cossart et al., 2003) and slice culture (Beggs and Plenz, 2003) or in vivo (Miller et al., 2014), which suggest the presence of \u2018attractor\u2019 states (Beggs and Plenz, 2004; Ikegaya et al., 2004; Miller et al., 2014). In fact, our work shows that AP patterns of L2/3 PNs form a specific subset of patterns in which sizes relate to each other in a scale-invariant manner.\n\n### Avalanche spike output and potential underlying subthreshold activity\n\nIt is expected that a strongly fluctuating yet specific spatiotemporal organization in spikes will translate into correspondingly precise inputs in nearby PNs. Fast, subthreshold fluctuations in the intracellular membrane potential have been shown to translate into precisely timed action potentials (Bryant and Segundo, 1976; Mainen and Sejnowski, 1995) and that such spike precision carries information about the input (Cecchi et al., 2000). It is, therefore, reasonable to expect that spike avalanches translate into fast voltage-fluctuations, which in turn generate precise spike outputs, thereby maintaining avalanche dynamics in the cortical microcircuit. Recent findings using voltage-sensitive dyes in layer 2/3 PNs indeed demonstrate neuronal avalanche dynamics to emerge in the AW mouse (Scott et al., 2014). Signals from voltage-sensitive dyes are proportional to the surface-to-volume ratio of the cellular compartment in which the dye is localized, and thus they preferentially report subthreshold intracellular membrane potential fluctuations (Plenz and Aertsen, 1993). This is in contrast to intracellular calcium reporters, which mainly report suprathreshold activity. Our study thus complements reports of neuronal avalanche dynamics in the input to PNs by demonstrating neuronal avalanches in the spike output of PNs in superficial layers in the AW state.\n\nThe emergence of neuronal avalanches at the neuronal group level does not exclude a role for critical dynamics at the cellular and subcellular level. The intermittent bursting behavior of single isolated neurons in response to stimulation (Gal et al., 2010; Marom and Wallach, 2011; Gal and Marom, 2013) suggests critical dynamics in the form of a low dimensional phase transition to control spike generation. Recent experimental demonstrations of critical slowing down as the membrane potential approaches spike threshold demonstrate critical dynamics to profoundly affect the AP generation (Meisel et al., 2015). Similarly, long-term fluctuations and power-law relationships have been reported for sodium channel gating (Toib et al., 1998). Thus, while spike avalanche dynamics emerge at the neuronal group level, the underlying mechanisms are likely to involve specific dynamical properties at the single cell and subcellular level.\n\n### Final conclusions\n\nThe identification of avalanches in the main excitatory cell type that constitutes the mammalian cortex establishes the strongest proof to date that avalanche dynamics provide the guiding principles for propagation of cortical activity. This finding should have a number of consequences for a cellular understanding of cortical network activity. First, optimization principles in information processing identified for avalanche dynamics at the population level of cortex should be directly applicable to the interaction of PNs (Beggs and Plenz, 2003; Bertschinger and Natschlager, 2004; Kinouchi and Copelli, 2006; R\u00e4m\u00f6 et al., 2007; Nykter et al., 2008; Shew et al., 2009; de Arcangelis and Herrmann, 2010; Shew et al., 2011). Specifically, local layer 2/3 networks should exhibit maximal dynamic range to process layer 4 inputs and maximize mutual information between patterns elicited in layer 4 and superficial layers. Second, the nature of spontaneous, irregular firing in PNs profoundly influences theories on cortical function. For example, when these fluctuations in firing are considered to reflect noise, spatiotemporal averaging over neuronal populations can be used to enhance response encoding at the expense of temporal precision and neuronal identity (Shadlen and Newsome, 1998; London et al., 2010; Renart et al., 2010). On the other hand, we demonstrated that fluctuations in single neuron firing, amount to a scale-invariant order in active neuronal groups, suggestive of critical dynamics guiding single neuron firing. Accordingly fluctuations that arise from long-range spatiotemporal correlations between neurons should not be averaged (Fraiman and Chialvo, 2012) but instead need to be taken into account, for example, for theories on cortical population coding (Averbeck et al., 2006). Finally, it is well known that resting or ongoing activity profoundly influences stimulus responses (Arieli et al., 1996; Sato et al., 2007; Luczak et al., 2009; Womelsdorf et al., 2012). For example, evoked visual responses correlate strongly with ongoing activity shortly preceding the stimulus (Arieli et al., 1996). Long-term temporal correlations have been soundly established at the population level, such as the EEG (Linkenkaer-Hansen et al., 2001) and ECoG (He et al., 2008). Our findings suggest that the occurrence of a single \u2018spontaneous\u2019 spike or spike burst in the AW state correlates with activity in other PNs over time and distance in cortex, as quantified by the scale-invariant correlation structure established by neuronal avalanches. We suggest that this will be of particular importance in the context of \u2018noise correlations\u2019, which capture the non-stimulus induced correlation structure and tend to affect the decoding capability of a neuronal population (Averbeck et al., 2006; Insabato et al., 2014).\n\nThe emergence of scale-invariant order from the interaction of local elements is a hallmark of systems at criticality (Plenz and Thiagarajan, 2007; Chialvo, 2010; Plenz and Niebur, 2014). By demonstrating such scale-invariance to exist at the neuron level, we suggest that neuronal avalanches provide a unifying framework of cell assembly formation in cortex that ranges from local groups of neurons to the global scale of the brain.\n\n## Materials and methods\n\nAll animal procedures were approved by the National Institute of Mental Health Animal Care and Use Committee and were carried out in accordance with National Institutes of Health guidelines.\n\n### In utero electroporation\n\nTimed-pregnant rats (Sprague Dawley, embryonic day 15.5 \u00b1 0.5, Taconic Farms) underwent a laparotomy (1.5\u20134 % isoflurane anesthesia) during which 5\u20138 \u00b5g of purified plasmid DNA (Endofree Maxiprep kit, Qiagen, Germantown, MD), consisting of Yellow Cameleon 2.60 (YC2.60) (Mikoshiba Lab, RIKEN, Japan; [Yamada et al., 2011]) or GCaMP3 (Tian et al., 2009) subcloned into a pCAG backbone, was pressure-injected through the uterine wall into the frontal ventricle of one hemisphere using a fine point glass capillary. DNA was electroporated into cells of the subventricular zone (Saito and Nakatsuji, 2001; Saito, 2006) using platinum tweezertrodes (5 mm diameter; 5 square pulses, 45 V amplitude, 50 ms duration; ECM-830, Harvard Apparatus, Holliston, MA), predominantly labeling PNs in superficial cortical layers 2 and 3 (L2/3; see [Saito, 2006]; Figure 1A).\n\n### Organotypic co-cultures\n\nIn utero electroporated pups (postnatal day [P] 1\u20133) were checked for expression of YC2.60 in dorsolateral cortex and used for the preparation of organotypic co-cultures, consisting of cortex and ventral tegmental area (VTA), as described previously (Gireesh and Plenz, 2008). In brief, coronal sections of cortex and midbrain were cut using a vibratome (VT100 S, Leica) under sterile conditions at 350 \u00b5m and 500 \u00b5m, respectively. Regions of cortex (up to 2 mm wide) containing all layers, and midbrain tissue containing the VTA, were excised and attached adjacent to each other on a glass coverslip. Co-cultures were grown under sterile conditions in standard culture medium in a roller tube arrangement and were used for electrophysiology and 2-photon imaging (2-PI) after 14\u201320 days in vitro (DIV).\n\n### Head bar implantation, habituation, and craniotomy\n\nFor 2-PI in the AW animal, in utero electroporated rats were first identified by transcranial YC2.60 fluorescence observation at P1\u20133. Animals expressing YC2.60 were fitted with a custom-made, T-shaped stainless steel head bar at \u223cP21. To this end, animals were anesthetized (isoflurane: 4% induction, 1.5\u20132% maintenance) and mounted in a stereotaxic frame. After a midline incision was made in the scalp, the skull surface was cleared of membranes; adhesive luting cement (C&B Metabond, Parkell, Inc., Edgewood, NY) was applied contralaterally to the YC2.60-expressing hemisphere, followed by attachment of the head bar using Grip cement (Dentsply International Inc., Milford, DE). Rats were given an analgesic (Ketoprofen, 5 mg/kg s.c) for up to 2 days post surgery. Rats were habituated to the recording condition for up to 5 sessions post surgery. In each session, the rat was briefly anesthetized (<5 min of 2\u20133% isoflurane) and installed in the head fixation apparatus, which consisted of a plastic tube which loosely confined the rat's limbs without restricting breathing, a platform and a custom-made steel beam, which screwed into the head bar at one end and a fixed post at the other end, allowing horizontal, vertical, and axial freedom of movement to position the rat's head under the 2-PI objective. After awakening, rats were left in the apparatus for 10\u201320 min per session. Rats became comfortable with the recording condition after 3\u20135 habituation sessions. On the day of imaging, rats were subjected to craniotomy and cranial window implantation. Rats were anesthetized (isoflurane: 4% induction, 1.5\u20132% maintenance) and mounted in a stereotaxic frame. The location of the craniotomy was determined by observation of transcranial YC2.60 fluorescence and was usually found within sensorimotor and frontal cortex (from bregma: AP 0.5 \u00b1 1.0 mm, ML 3.0 \u00b1 0.5 mm). A section of the skull (\u223c3\u20134 mm diameter) was removed using a dental drill and the underlying dura was resected. Care was taken not to damage any subdural blood vessels. The exposed brain was continuously irrigated with sterile saline. Finally, a glass coverslip was cut to the size of the craniotomy using a stylus, mounted on the opening using low melting point agarose (1\u20132% in sterile saline), and secured with Grip cement. Rats were given an analgesic (Ketoprofen, 5 mg/kg s.c) and allowed to recover for at least 3\u20136 hr before undergoing 2-PI.\n\n### 2-Photon imaging\n\nFor in vivo 2-PI, rats (P27\u201335) that had undergone head bar implantation, habituation, and craniotomy were anesthetized (isoflurane: 4% induction, 1\u20132% maintenance), head-fixed, and placed under a 2-photon microscope (25\u00d7 objective, 1.05 NA, 1000 MPE, Olympus, Center Valley, PA). YC2.60 was excited at 840 nm (Chameleon Vision II, Coherent, Santa Clara, CA), and cpVenus and ECFP fluorescent emission were collected using 460\u2013500 nm and 520\u2013560 nm bandpass filters, respectively, separated by a 505 nm dichroic mirror. Once an imaging field containing up to \u223c40 neurons was located, 5\u201315 min long movies were recorded at a temporal resolution, \u0394t, of \u223c250 ms. Higher temporal resolutions (167 and 88 ms) were achieved by 2\u00d7 and 4\u00d7 line skipping, respectively (Olympus Fluoview software). To obtain movies in the waking (WK) and AW animal, isoflurane was turned off. Movies recorded >5 min after turning off isoflurane were classified as WK, and subsequent movies (>20 min after turning off isoflurane) were classified as AW. During WK and AW conditions, the behavioral state of the animal was monitored with an infrared (IR) camera (c525, IR filter removed, Logitech, Newark, CA). Periods of animal movement (which were minimized by habituation) generated an easily identifiable artifact in the \u2206R/R calcium signal (see below) and were manually removed before analysis.\n\nFor in vitro 2-PI, cultures were submerged in oxygenated artificial cerebrospinal fluid (ACSF, bubbled with 95% O2 and 5% C02) containing (in mM) 124 NaCl, 3.5 KCl, 10 D-glucose, 26.2 NaHCO3, 0.3 NaH2PO4, 1 MgSO4, and 2 CaCl2 warmed to 32\u00b0C at a flow rate of 1 ml/min. Intracellular calcium dynamics of 15\u201380 spontaneously active PNs were imaged continuously within a 250 \u00b5m by 50\u2013100 \u00b5m wide region for 5\u201320 min with a temporal resolution \u0394t = \u223c250 ms.\n\n### Choice of GECI\n\nFor our experiments, we chose YC2.60 over related GECIs, such as D3cpv and YC3.60, for the following reasons. In general, single AP detection in vivo is still below 100% for yellow chameleons and related GECIs (L\u00fctcke et al., 2010; Margolis et al., 2012). We excluded D3cpv, which shows single AP sensitivity, due to its saturation for small AP bursts (Wallace et al., 2008). YC3.60 is an interesting alternative to YC2.60 due to its higher KD and shorter decay time constant (0.5 s in vivo at physiological temperature; 0.8 s in vitro at room temperature [Yamada et al., 2011]). While a short decay constant allows for higher temporal resolution in imaging, YC3.60 is about 50% less sensitive to single APs compared to YC2.60. Given the relatively low spontaneous AP rate for neurons in superficial cortical layers in vivo (for review see [Barth and Poulet, 2012]), we, therefore, opted for YC2.60 with its somewhat longer decay constant of \u223c1\u20132 s. Our observation of 4\u20135% \u0394R/R for single APs using YC2.60 in layer 2/3 (L2/3) PNs in vitro at 32\u00b0C is within the range reported for D3cpv in vitro (8.3% at room temperature) and in vivo (3.5%) (Wallace et al., 2008). It is also in line for YC2.60 single AP detection at 33\u00b0C in the acute slice, which shows a \u0394R/R of \u223c4\u20135% and a decay time constant of \u223c2 s for a 10 AP burst (Yamada et al., 2011). For YC3.60, sensitivity and decay time constant were shown to be similar in vivo (L\u00fctcke et al., 2010) and in vitro when measured at physiological temperature (Yamada et al., 2011). The range in similarities for YC GECIs suggests that our YC2.60 in vitro characterization at physiological temperature similarly predicts its performance in vivo. This is further supported by the insensitivity of coefficient of variation (CV) in our in vivo data to the changes in \u03bbthr < 1 (cf. Figure 2\u2014figure supplement 1), which is in line with the binary detection operation of single APs for that range (cf. Figure 1\u2014figure supplement 1A).\n\n### Calcium imaging analysis\n\nYC2.60-expressing PNs were visually identified either by high-average somatic fluorescence or high-somatic fluorescence CV, which captures relatively quiescent neurons with intermittent, sparse spiking activity and whose average somatic fluorescence remained low. Boxcar regions of interest (ROIs) were manually drawn around the somatic region of labeled neurons for which the nucleus was clearly visible within the cross-sectional somatic area. The boxcar was aligned with the outer perimeter of the neuron, and all pixels within the boxcar were taken for analysis. For YC2.60, the ratio, R, of cpVenus fluorescence to ECFP fluorescence was calculated for each ROI and each frame. The ratio measurement requires neuronal signals to be anti-correlated in the two wavelength bands, which allows for easy identification of non-signal artifact, for example, from small animal movements. A continuous function of fluorescence was calculated as \u2206R/R = (RROI \u2212 R0)/R0, where RROI denotes the average fluorescence ratio within the ROI. The baseline fluorescence ratio, R0, was defined as the median of R. \u2206R/R was low-pass filtered (Kampa et al., 2011) (3\u0394t; symmetrical Gaussian kernel), and the instantaneous firing rate estimate, \u03bb, in arbitrary units was obtained for each ROI using fast, non-negative deconvolution (Vogelstein et al., 2010) (OOPSI package, Matlab, MathWorks Inc., Natick, MA). The decay time constant of the non-negative deconvolution for YC2.60 was \u223c1\u20131.5 s, as estimated from simultaneous cell-attached recording and 2-PI (n = 8 neurons). This value was also obtained by minimizing the summed square error between R and a reconstructed R\u2032, made by convolving an exponential decaying kernel with \u03bb over the range of \u03c4 = \u0394t \u2212 15 \u00d7 \u0394t for neuronal populations recorded in vivo and in vitro (Figure 1\u2014figure supplement 1C) and is in line with previous reports (Yamada et al., 2011). The a priori rate estimate for spiking was set to 1 Hz based on a meta-study (Barth and Poulet, 2012), and lower rates were examined systematically in the form of thresholding on \u03bb (\u03bb > \u03bbthr). The standard deviation parameter was estimated for each \u2206R/R using calcium amplitudes less than 5% \u2206R/R, corresponding to the average amplitude for single spike detection of YC2.60. Deconvolution parameters were determined, first, from loose-patch recordings (Figure 1\u2014figure supplement 1A,B) and second, from minimizing the residual error in reconstructed \u0394R/R traces from \u03bb (Figure 1\u2014figure supplement 1C). Both methods yielded an optimal deconvolution time constant of \u223c1.5 s, in line with previous reports (Yamada et al., 2011).\n\nROIs with \u03bbavg < 0.016 (approx. less than 1 AP/min) were removed from the analysis (O'Connor et al., 2010). The average instantaneous spike rate estimate of \u03bb for each ROI was calculated for a range of \u03bbthr = 0.1 to 8 and included zero estimates for time bins \u0394t with \u03bb \u2264 \u03bbthr. The average burst strength of \u03bb was the mean of all bins with \u03bb > \u03bbthr. Interburst intervals (IBIs) were defined as consecutive bins of length \u0394t for which \u03bb \u2264 \u03bbthr. Pairwise crosscorrelations were calculated in Matlab (Mathworks Inc.) using the function corrcoef. All other analyses, unless stated otherwise, were performed in Matlab using custom routines.\n\n### Relationship between spontaneous AP bursts and intracellular calcium transients\n\nIn order to identify the relationship between the number of spontaneous APs and \u2206R/R (YC2.60) or \u2206F/F (GCaMP3), loose-patch, voltage-clamp recordings were performed in GECI-expressing PNs in organotypic cortex-VTA cultures (Gireesh and Plenz, 2008) at 14 DIV or later. Cultures were submerged in regular ACSF (flow rate, 1 ml/min) at 32\u00b0C. After forming a loose-patch on a visually identified YC2.60 (n = 8) or GCaMP3 (n = 8) labeled PN in L2/3, spontaneous, extracellular AP currents were recorded simultaneously with intracellular calcium transients using 2-PI. For each imaging frame with duration \u0394t = 250 ms, the number of spontaneous APs was correlated with \u2206R/R as well as the corresponding peak amplitude and integrated area of the firing rate estimate \u03bb (Figure 1\u2014figure supplement 1A,B). This relationship was also true for \u2206F/F (data not shown). To obtain comparable \u03bb and IBI distributions for neurons with different average rates, \u03bbavg, the normalized rate \u03bbnorm = \u03bb/\u03bbavg and normalized IBInorm = IBI/IBIavg were used.\n\n### Analysis of calcium transients from surrogate data for different temporal resolutions\n\nThe relationship of \u03bb and the real spike count for different temporal resolutions was evaluated using spike trains from 26 extracellularly recorded single units in superficial layers of somatosensory cortex from adult rat during the AW resting state in a separate experiment. For these recordings, we used a Neuronexus array with 8 short shanks and 4 electrodes per shank separated by 200 \u00b5m. The array was lowered into the cortex under visual control until the last electrode entered layer 1, anchored using dental cement, and the cranial opening was closed for chronic in vivo recordings. The array configuration and array insertion targeted unit activity from within the first 600\u2013800 \u00b5m of cortical depth, which largely covers superficial layers in the adult rat. Unit activity was sampled at 30 kHz and sorted offline (Offline sorter, Plexon, Dallas, TX). Simultaneous LFP recordings from the same electrodes demonstrated nLFP-based avalanche dynamics in the AW state, further supporting superficial layers as the main recording sites (see e.g., [Stewart and Plenz, 2006; Gireesh and Plenz, 2008]; data not shown).\n\nTo obtain surrogate calcium traces at different temporal resolutions, the following three steps were performed: (1) spike trains were convolved using an impulse function with instantaneous 5% peak amplitude and an exponential decay of 1.5 s, parameters obtained from 2-PI (Figure 1\u2014figure supplement 1). (2) The resulting calcium traces were sampled at 100 Hz, and uniform noise was added. The noise level for \u0394t = 250 ms was set to \u00b18%. Similar results were found for Gaussian noise. (3) Calcium traces were down-sampled to a final temporal resolution of \u0394t = 250, 167, or 88 ms. In order to simulate the lower signal-to-noise ratios for smaller \u0394t, which resulted from line skipping during in vivo imaging, we adjusted noise levels by a factor of \u221a2 and \u221a4 for \u0394t = 167 and 88 ms, respectively. From the resulting calcium traces (Figure 1\u2014figure supplement 2A), \u03bb was estimated using fast, non-negative spike deconvolution (Vogelstein et al., 2010). This analysis showed that the mapping of \u03bb to number of APs/\u0394t is linear and has the same slope (Figure 1\u2014figure supplement 2B; all R2 = 0.99).\n\n### Neuronal avalanche analysis\n\nSpatiotemporal clusters of L2/3 PN activity were defined by spiking activity in at least one ROI above a given threshold (\u03bb > \u03bbthr) within the same or consecutive time bins of duration \u2206t (Beggs and Plenz, 2003). By definition, a cluster is flanked by empty bins, that is, all ROI have \u03bb \u2265 \u03bbthr (Figure 3A). The value of \u2206t was determined by the temporal resolution of 2-PI. The value of \u03bbthr was chosen such that the number of cascades was maximized for a given recording (Poil et al., 2012) (Figure 3B). The size, s\u03bb, of a cluster was defined as the sum of \u03bb across all active neurons, i = 1,\u2026,k within the cluster, that is, $s_{\u03bb}=\\sumi=1k\u03bb^{i}$. We found that s\u03bb was proportional to the number of active neurons in a cluster, $s_{k}=\\sumi=1k1$, by a factor given by the average rate across all ROIs, $\\lambda_{avg}^{pop}$ (R2 = 0.98). Therefore, sk and s\u03bb provide similar information about avalanche sizes, as reported previously for nLFP-based avalanches (Beggs and Plenz, 2003). To compare across experiments with different number of neurons, N, (i.e., ROIs) cluster sizes s\u03bb were normalized by the predicted cluster size limit, $\u039b=N\\lambda_{avg}^{pop}$ (Klaus et al., 2011; Yu et al., 2014). For visualization, cluster size distributions were logarithmically binned (30 bins). Neuronal avalanches were defined by their distribution in cluster size that follows a power law with an exponent close to \u22121.5, up to the cluster size limit. The branching parameter \u03c3, the average ratio of the number of descendants to ancestors within a cascade (Beggs and Plenz, 2003), was estimated using participation counts from the first (ancestor) and subsequent (descendent) \u0394t bins within each cascade. Lifetime, T, was defined as the number of active time bins during the avalanche multiplied by \u0394t. A population thresholding approach on the instantaneous integrated population vector on \u03bb, \u03bbpop, has recently been introduced as an alternative method to obtain the distribution of cascade sizes (Poil et al., 2012). For a given \u03bbpop based on a chosen \u03bbthr, population thresholds were placed to search for the maximum number of cascade sizes. By including only those \u0394t bins whose member events sum above a minimum threshold, this method avoids issues in cascade concatenation when periods of empty \u0394t bins may be rare due to insufficient temporal resolution or when monitoring a high number of units.\n\n### Power-law parameter estimation and statistical analyses\n\nIf not stated otherwise, power-law exponents were estimated by minimizing the Kolmogorov\u2013Smirnov distance, DKS, between the cumulative distribution functions (CDFs) of the data, Cdata(s), and the power-law model, C\u03b1(s) (Klaus et al., 2011):\n\n$$\n\\alpha^=arg\u2009min\\alphaD_{KS},\n$$\n\nand\n\n$$\nD_{KS}=max_{s}|C_{data}(s)\u2212C_{\\alpha}(s)|.\n$$\n\nThe power-law model for smin <s <smax is given by $P_{\\alpha}(s)=cs^{\\alpha}$, where $c=(\\alpha+1)/(s_{max}^{\\alpha+1}\u2212s_{min}^{\\alpha+1})$ is the normalization constant. The corresponding CDF is then defined by $C_{\\alpha}(s)=\\int_{s_{min}}^{s}P_{\\alpha}(s)ds$. smin was set to the smallest observed avalanche size. The upper bound, smax, was set to the predicted cluster size limit $\u039b=N\\lambda_{avg}^{pop}$ at which cluster size distributions started to deviate from a power law (Figure 3C; see [Yu et al., 2014]). DKS was also used to compare the goodness of the power law fit across different conditions (Figure 5B; Figure 6E). For the comparison of the power law vs the exponential distribution, the log-likelihood ratio (LLR) was calculated and parameter estimates were obtained by likelihood maximization (Clauset et al., 2009; Klaus et al., 2011):\n\n$$\nLLR(x)=\u2009l(\\alpha|x)\u2212l(\\gamma|x),\n$$\n\nwhere $l(\\alpha|x)=\\sum_{i=1}^{n}lnP_{\\alpha}(x_{i})$ is the log-likelihood of observing the sample vector, x = x1,...,xn, assuming the power-law model P\u03b1(s), and $l(\\gamma|x)=\\sum_{i=1}^{n}lnP_{\\gamma}(x_{i})$ is the log-likelihood of observing x assuming an exponential model $P_{\\gamma}(s)=ce^{\u2212\\gammas}$ with c being the corresponding normalization constant. The LLR obtains positive values if the data are better fit by a power law compared to an exponential distribution, and negative values if the exponential distribution yields the better fit. The p-value for determining statistical significance is given by (Clauset et al., 2009; Klaus et al., 2011):\n\n$$\np=erfc(\\frac{|LLR|}{\\sqrt{2n\\sigma^{2}}}),\n$$\n\nwhere\n\n$$\n\\sigma^{2}=\\frac{1}{n}\\sumi=1n[(l(\\alpha|x_{i})\u2212l(\\alpha|x)/n)\u2212(l(\\gamma|x_{i})\u2212l(\\gamma|x)/n)]^{2}.\n$$\n\n### Statistical analysis\n\nOne-way analysis of variance (ANOVA) was used for multiple comparisons with Bonferroni post hoc test if not stated otherwise. Error bars and shaded areas around averages denote standard error of the mean.\n",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "cadf3a3d-7480-4111-97dc-63c9d25f7634",
+      "submission_id": "f1c53351-6c39-4838-802f-c865979a0c46",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, University Health Network, and University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07224.018](https://doi.org/10.7554/eLife.07224.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAvalanche dynamics emerge from irregular spiking of pyramidal neurons in the awake resting state\u201d for consideration at eLife. Your article has been favorably evaluated by Timothy Behrens (Senior editor) and three reviewers, one of whom, Frances Skinner, is a member of our Board of Reviewing Editors\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall, all of the reviewers felt that the work was novel, of superb methodological quality and potentially influential (in linking avalanche dynamics to a global physiological state and demonstrating in vivo the relation with spikes). However, it was strongly felt that extensive rewriting and presentation is needed to allow the work to be appreciated and understood more widely. Here are some specific suggestions and other details are provided below from reviews.\n\n1) Be clear about the uniqueness of the paper without overstating. That is, two aspects of avalanche dynamics are shown:\n\n(i) A first demonstration of avalanche dynamics linked to a global physiological state (wake vs. anesthetized);\n\n(ii) A first demonstration of relations between macroscopic avalanche dynamics and spikes, in-vivo. All previous reports relied on population activity measures, not spikes. (A couple of papers by the Chiappalone group, of Genova, did show relations of spiking activity to avalanche dynamics in-vitro, not in-vivo; but these dynamics, due to particular choice of binning in the analysis, were mostly related to activity within synchronized population bursts).\n\n2) Provide a bit more background and context for the work. In other words, explain things (i.e., background theoretical assumptions/limitations etc.) better for the general reader. Specifically, while many citations are provided (e.g., consider the multitude in the first paragraph), there are not straightforward explanations of how neuronal avalanches, power law and criticality are interlinked, and what this actually means in terms of brain functioning. For example, the \u201cbeing critical of criticality\u201d Beggs and Timme Frontiers 2012 article does a really nice job of these concepts. Perhaps an additional subsection in the Introduction could be written.\n\n3) Alternative interpretations should be mentioned and considered, and the potential functional implications of findings should be discussed, via additional paragraph(s) in the Discussion. This should include an explicit discussion on the meaning of the present results in the context of debates that concern whether-or-not actual information processing during tasks operates in a \u201ccritical\u201d regime.\n\n4) Overstatements should be removed. For example, in Abstract, reduce the tone where avalanche dynamics are attributed \u201coptimal\u201d for information processing. The results do not relate to \u201cfunction\u201d, but rather to an awake state. Assuming that other types of neurons (or pyr cells at other layers) have not been measured, do not over-state the relation of avalanche dynamics to pyramidal cells.\n\nReviewer #2:\n\n1) The manuscript \u201cAvalanche dynamics emerge from irregular spiking of pyramidal neurons in the awake resting state\u201d by Bellay et al. demonstrates that the spatial and temporal correlation of (suprathreshold) firing events in superficial layer pyramidal cells can be described as avalanches in the awake state to a larger degree than during anaesthetized and awaking states. The authors first show that their estimate of instantaneous firing (\u03bb) from calcium signals is linked to action potental firing (Figure 1) and they show that neurons fired irregular with long periods of quiescents in all states and showed largest variabilitiy (CV) during the awakening period (Figure 2). More importantly, the study reports that neural firing (indexed as \u03bb) showed only low correlations with somewhat more correlated firing during awakening that during the awake state. Interestingly, avalanche dynamics was more pronounced during the awake state (Figure 5\u2013figure supplement 1, with the so called avalanche life time distributions following a power law as described before). The authors also show in in vitro recordings that the temporal correlations are reduced (with inhibition) or enhanced (during disinhibition) but remained intact during moderate reductions of GABAa, AMPA or NMDA synaptic activity (Figure 7). Spatial clustering was absent in these in vitro recordings.\n\nThe manuscript convincingly demonstrates avalanche dynamics in superficial layer pyramidal cell firing that is state dependent with enhanced avalanche dynamics during the awake state. This insight follows from an extensive characterization for the temporal and spatial clustering of firing events from in-vivo calcium recordings. Methods, experimental approach are all state-of-the-art.\n\nHowever, the manuscript did not attempt to quantify why or how the avalanche dynamics is influencing information processing in the circuits. As such the study provides more of a proof of principle, using sophisticated tools, that temporal and spatial clustering's are evident in calcium imaged firing rate dynamics of large populations of neurons (as it is evident in all population metrics studied so far to my knowledge).\n\n2) If possible, the study would increase its appeal by showing how (in quantitative terms) e.g. a stimulus pulse, (or maybe a spontaneous bursting event) directly predicts some events/dynamics at later time points (or whether it predicts the awake state). Such an approach would help to identify whether there are actual information processing effects resulting from events that are characterized by avalanche dynamics.\n\n3) There are some aspects of the manuscript that deserve consideration and which are listed here:\n\nThe Title needs some clarification. In the text authors mention that avalanches depend on balance of excitation and inhibition. Since inhibitory neurons are not identified in the current work but seem to play a role, it seems a foregone conclusion to state that it is the firing of pyramidal cells that lead to avalanches as is suggested by the Title. Do the authors imply that avalanche dynamics would not be evident when recording interneuron activation patterns?\n\nAs far as I see the authors infer that distributions follow scale free power law behavior simply from the fact that the fits are significant and that shuffling of the data do not result in significant fits. While this may be the standard in the field I am worried that there are no alternative hypotheses offered or tested. Shouldn't a statistical test compare two functions in their degree of predicting the distribution? I ask this because it is one thing to describe the dynamics of the system as satisfying a scale free power law, but the interpretation and inferences would be different if other non-scale free functions describe the data in similar good ways. What would happen to the criticality perspective if future studies would show that the dynamics would follow only \u201csomewhat\u201d a power law, but that the fine scale dynamics can be as well described by scale specific function? This is probably not only unclear to \u2018non-technical\u2019 readers.\n\nThe authors estimate the relation of the inferred\u03bb-firing with actual firing rates measured with a Neuronexus array (in the subsection headed \u201cAnalysis of calcium transients from surrogate data from different temporal resolutions\u201d). It is crucial to add information on how likely this array records neurons from similar layers as in the calcium measurements. Are firing rates from L2/3 different between layers? What is the firing rate in VTA neurons and their relation to \u03bb. Some more explicit information on this would be helpful.\n\nReviewer #3:\n\nThe concept of neural avalanche dynamics was introduced by Beggs and Plenz over a decade ago, and continues to serve as a fruitful metaphor in analyses of experimental data and in development of theory. It is an appealing concept from both the mechanistic and functional aspects: providing clues for the origin of scale invariance in the statistics of neural network activity, as well as offering a point of view on the enrichment of network activity patterns by means of matched excitation-inhibition ratios.\n\nIn this paper Belly et al. provide convincing evidence for the occurrence of avalanche dynamics\u2014scale invariant cascades of neuronal spiking activities\u2014in the rat superficial cortical layers. Moreover, they show that these dynamics are affected by a global state of the animal\u2014anesthetized vs. awake\u2014and provide a nice link between single neuron irregular firing statistics and population statistics.\n\nI have one main comment that concerns paper's structure. I do not understand why the authors include in this paper the in-vitro results. They seem irrelevant to the point made, and even the authors themselves do not mention these results in the Abstract, nor discuss these data in the Discussion section. The only mentioned justification for the choice (i.e., showing that avalanches can arise solely from within cortex and sensitive to excitation-inhibition ratio) is somewhat weak given the wealth of cited in-vitro records showing exactly this (Beggs and Plenz, 2003, 2004; Shew et al., 2009; Pasquale et al., 2008; Stewart and Plenz, 2006). I do see how the in-vitro preparation helped calibrating the in vivo methodology (spiking activity and intracellular Ca dynamics), but this is described in the Methods section. Unless I missed something, the authors are encouraged to reconsider the inclusion of this section.\n",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1e90006d-34bb-43a3-ac6b-2772a03e6962",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C1",
+      "claim": "Spontaneous fluctuations in neuronal activity emerge at many spatial and temporal scales in cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous fluctuations in neuronal activity emerge at many spatial and temporal scales in cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cortical activity that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f4bc4920-7686-4c34-a019-bd9607e4802f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C2",
+      "claim": "Population measures found spontaneous fluctuations to organize as scale-invariant neuronal avalanches.",
+      "claim_type": "EXPLICIT",
+      "source": "Population measures found these fluctuations to organize as scale-invariant neuronal avalanches, suggesting cortical dynamics to be critical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references previous findings from the field, implicitly citing prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "d3891e66-785f-450d-a910-2b80a1aa0727",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C3",
+      "claim": "Scale-invariant neuronal avalanches suggest cortical dynamics to be critical.",
+      "claim_type": "EXPLICIT",
+      "source": "Population measures found these fluctuations to organize as scale-invariant neuronal avalanches, suggesting cortical dynamics to be critical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of scale-invariant avalanches.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "ee11d8de-feff-4a0c-943a-cb8fc1ecfc30",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C4",
+      "claim": "As the animal transitions from the anesthetized to awake state, spontaneous single neuron firing increases in irregularity.",
+      "claim_type": "EXPLICIT",
+      "source": "As the animal transitions from the anesthetized to awake state, spontaneous single neuron firing increases in irregularity and assembles into scale-invariant avalanches at the group level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "233a96b0-e33d-41be-89c0-bb68c505f6e3",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C5",
+      "claim": "As the animal transitions from the anesthetized to awake state, spontaneous single neuron firing assembles into scale-invariant avalanches at the group level.",
+      "claim_type": "EXPLICIT",
+      "source": "As the animal transitions from the anesthetized to awake state, spontaneous single neuron firing increases in irregularity and assembles into scale-invariant avalanches at the group level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "1269d886-fc18-4a63-a11b-9100f4bd110a",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C6",
+      "claim": "In vitro spike avalanches emerged naturally yet required balanced excitation and inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro spike avalanches emerged naturally yet required balanced excitation and inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from organotypic cultures shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "b01ebf08-87f0-43ab-8952-1d7c822d677e",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C7",
+      "claim": "Neuronal avalanches are linked to the global physiological state of wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that neuronal avalanches are linked to the global physiological state of wakefulness and that cortical resting activity organizes as avalanches from firing of local PN groups to global population activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings comparing anesthetized and awake states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "2c47dd93-9d0d-499b-aaf2-e52092ced7be",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C8",
+      "claim": "Cortical resting activity organizes as avalanches from firing of local PN groups to global population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that neuronal avalanches are linked to the global physiological state of wakefulness and that cortical resting activity organizes as avalanches from firing of local PN groups to global population activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing avalanche dynamics at the local PN group level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "e368028a-6bdd-45e3-95cb-221b32077102",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C9",
+      "claim": "Resting activity delineates functional networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called resting activity delineates functional networks (Fox and Raichle, 2007; Haimovici et al., 2013), modulates responses to sensory input (Arieli et al., 1996; Womelsdorf et al., 2012), predicts cortical responses (Luczak et al., 2009), and changes in disease or sleep deprived states (Greicius et al., 2004; Meisel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "e216f8c2-d1fc-4c4c-be1f-6adb97e70f27",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C10",
+      "claim": "Resting activity modulates responses to sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called resting activity delineates functional networks (Fox and Raichle, 2007; Haimovici et al., 2013), modulates responses to sensory input (Arieli et al., 1996; Womelsdorf et al., 2012), predicts cortical responses (Luczak et al., 2009), and changes in disease or sleep deprived states (Greicius et al., 2004; Meisel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "2fc69710-b518-4d3a-b988-12e9a08ac782",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C11",
+      "claim": "Resting activity predicts cortical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called resting activity delineates functional networks (Fox and Raichle, 2007; Haimovici et al., 2013), modulates responses to sensory input (Arieli et al., 1996; Womelsdorf et al., 2012), predicts cortical responses (Luczak et al., 2009), and changes in disease or sleep deprived states (Greicius et al., 2004; Meisel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "d68d3327-ba81-4064-9249-88110fc0d533",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C12",
+      "claim": "Resting activity changes in disease or sleep deprived states.",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called resting activity delineates functional networks (Fox and Raichle, 2007; Haimovici et al., 2013), modulates responses to sensory input (Arieli et al., 1996; Womelsdorf et al., 2012), predicts cortical responses (Luczak et al., 2009), and changes in disease or sleep deprived states (Greicius et al., 2004; Meisel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "c2b2f949-65bf-4163-b47d-5bc3d61a847f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C13",
+      "claim": "Resting activity recorded from neuronal populations in vivo using LFP has been shown to be composed of activity cascades called neuronal avalanches in rodents, non-human primates, and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting activity, recorded from neuronal populations in vivo using the local field potential (LFP; Gireesh and Plenz, 2008; Petermann et al., 2009; Yu et al., 2011; Priesemann et al., 2013), functional magnetic resonance imaging (fMRI; Fraiman and Chialvo, 2012; Haimovici et al., 2013), the magnetoencephalogram (MEG; Palva et al., 2013; Shriki et al., 2013), or electrocorticogram (ECoG; Solovey et al., 2012), has been shown in rodents, non-human primates, and humans to be composed of activity cascades called neuronal avalanches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "e689de72-7739-47ea-a7bb-864943832914",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C14",
+      "claim": "Neuronal avalanches identify a specific organization of activity patterns in which avalanche sizes distribute according to a power law with slope of \u22121.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal avalanches identify a specific organization of activity patterns in which avalanche sizes distribute according to a power law with slope of \u22121.5, that is, the relative occurrences of avalanche sizes are constant (Beggs and Plenz, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of neuronal avalanches supported by citation to the original work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "389341d9-df7a-4958-954c-67e6cb9cb99f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C15",
+      "claim": "Scale-invariant organization transcends many spatial and temporal scales and is an indication that cortical dynamics reside at or close to a critical state.",
+      "claim_type": "EXPLICIT",
+      "source": "This scale-invariant organization, which transcends many spatial and temporal scales, is an indication that cortical dynamics reside at or close to a critical state in which interactions between local elements give rise to long-range spatial and long-term temporal fluctuations (Plenz and Thiagarajan, 2007; Chialvo, 2010; Beggs and Timme, 2012; Plenz, 2012; Markovi\u0107 and Gros, 2014; Plenz and Niebur, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical work on criticality.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "0f356596-87b8-4db8-8d44-d3137ca75309",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C16",
+      "claim": "Cortical networks that reside in a fluctuation-dominated regime can improve various aspects of information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions from the theory of criticality (Bertschinger and Natschlager, 2004; Nykter et al., 2008; Chialvo, 2010; Plenz and Niebur, 2014) and neural modeling (Beggs and Plenz, 2003; Kinouchi and Copelli, 2006; R\u00e4m\u00f6 et al., 2007; Shew et al., 2009; Tanaka et al., 2009; de Arcangelis and Herrmann, 2010) suggest that cortical networks that reside in such a fluctuation-dominated regime can improve various aspects of information processing, as was demonstrated experimentally in vitro (Shew et al., 2009, 2011; Yang et al., 2012; Shew and Plenz, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical predictions and experimental demonstrations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "fe19a37a-5335-42cd-a4ac-6a23e9871654",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C17",
+      "claim": "Neuronal avalanches can emerge within cortex as demonstrated in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now well established that neuronal avalanches can emerge within cortex as demonstrated in vitro (Beggs and Plenz, 2003; Stewart and Plenz, 2006; Pasquale et al., 2008), and sensibly depend on the balance of fast synaptic excitation/inhibition (E/I) (Beggs and Plenz, 2003; Pasquale et al., 2008; Shew et al., 2009) and neuromodulators (Stewart and Plenz, 2006; Pasquale et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "18165372-44fe-4f76-8aee-f8c2b8336d2a",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C18",
+      "claim": "Neuronal avalanches depend on the balance of fast synaptic excitation/inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now well established that neuronal avalanches can emerge within cortex as demonstrated in vitro (Beggs and Plenz, 2003; Stewart and Plenz, 2006; Pasquale et al., 2008), and sensibly depend on the balance of fast synaptic excitation/inhibition (E/I) (Beggs and Plenz, 2003; Pasquale et al., 2008; Shew et al., 2009) and neuromodulators (Stewart and Plenz, 2006; Pasquale et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "8f808cc1-32a8-452d-b3cd-397251ae5bdd",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C19",
+      "claim": "AP firing in PNs is commonly reported as spontaneous and irregular.",
+      "claim_type": "EXPLICIT",
+      "source": "AP firing in PNs is commonly reported as spontaneous and irregular (Softky and Koch, 1993; Shadlen and Newsome, 1998) with low average correlation in firing between neurons during spontaneous activity and a high variability in evoked AP responses (Gawne and Richmond, 1993; Kerr et al., 2007; Sato et al., 2007; Poulet and Petersen, 2008; Ecker et al., 2010; Komiyama et al., 2010; Renart et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "753ba847-f735-4bfb-8a72-ff67de7e2916",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C20",
+      "claim": "There is low average correlation in firing between neurons during spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "AP firing in PNs is commonly reported as spontaneous and irregular (Softky and Koch, 1993; Shadlen and Newsome, 1998) with low average correlation in firing between neurons during spontaneous activity and a high variability in evoked AP responses (Gawne and Richmond, 1993; Kerr et al., 2007; Sato et al., 2007; Poulet and Petersen, 2008; Ecker et al., 2010; Komiyama et al., 2010; Renart et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "63c8f16c-fb45-42f5-b2a3-fb8901492bca",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C21",
+      "claim": "There is high variability in evoked AP responses.",
+      "claim_type": "EXPLICIT",
+      "source": "AP firing in PNs is commonly reported as spontaneous and irregular (Softky and Koch, 1993; Shadlen and Newsome, 1998) with low average correlation in firing between neurons during spontaneous activity and a high variability in evoked AP responses (Gawne and Richmond, 1993; Kerr et al., 2007; Sato et al., 2007; Poulet and Petersen, 2008; Ecker et al., 2010; Komiyama et al., 2010; Renart et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f3ae512e-ca75-43ce-8e06-c0fc7c86c161",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C22",
+      "claim": "Ongoing fluctuations in AP firing in single cortical neurons amount to scale-invariant AP avalanches at the neuronal group level.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show experimentally in vivo that ongoing fluctuations in AP firing in single cortical neurons amount to scale-invariant AP avalanches at the neuronal group level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "a9a60fe4-605a-4a07-acdf-5e3a43eaa3ae",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C23",
+      "claim": "The emergence of spike avalanches marks the AW state and is absent under anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of spike avalanches marks the AW state and is absent under anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing different brain states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "74513bfd-dbd2-4f0e-bc0f-38d4b13cdce3",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C24",
+      "claim": "Spike avalanches spontaneously organize in layer 2/3 PN groups from organotypic slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, spike avalanches spontaneously organize in layer 2/3 PN groups from organotypic slice cultures and yet are sensitive to the E/I balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from in vitro experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "e78bd78f-9af0-4cc4-b41f-be300018af16",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C25",
+      "claim": "Spike avalanches in organotypic slice cultures are sensitive to the E/I balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, spike avalanches spontaneously organize in layer 2/3 PN groups from organotypic slice cultures and yet are sensitive to the E/I balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from in vitro experiments with pharmacological manipulations shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "b4fa695b-28b6-40c9-a6e5-a64f5c519146",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C26",
+      "claim": "Critical dynamics govern the organization of resting activity in the awake animal from AP firing in individual PNs to the activity in large neuronal groups across cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that critical dynamics govern the organization of resting activity in the awake animal from AP firing in individual PNs to the activity in large neuronal groups across cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental findings and theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "73f3eb2f-6146-44b1-851a-47a383e55ecc",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C27",
+      "claim": "YC2.60-expressing mature neurons exhibited PN morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "They exhibited PN morphology (Figure 1A), and their synaptic transmission was blocked by glutamate receptor antagonists (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual observation shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "84f68cd6-1140-4331-b36e-fef06af333c8",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C28",
+      "claim": "Synaptic transmission in YC2.60-expressing neurons was blocked by glutamate receptor antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "They exhibited PN morphology (Figure 1A), and their synaptic transmission was blocked by glutamate receptor antagonists (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "16379443-a715-460e-b4ce-aeb3e5ea9b5a",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C29",
+      "claim": "YC2.60 reliably and linearly reported AP activity at physiological temperature from single APs to AP bursts up to 28 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, we showed (1) YC2.60 reliably and linearly reported AP activity at physiological temperature from single APs to AP bursts up to 28 Hz (Figure 1\u2014figure supplement 1A,B) and (2) \u03bb linearly recovered spike trains at different temporal resolutions (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiments shown in Figure 1\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "810c992c-0793-46d2-96fc-15b84ff53f04",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C30",
+      "claim": "\u03bb linearly recovered spike trains at different temporal resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, we showed (1) YC2.60 reliably and linearly reported AP activity at physiological temperature from single APs to AP bursts up to 28 Hz (Figure 1\u2014figure supplement 1A,B) and (2) \u03bb linearly recovered spike trains at different temporal resolutions (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiments shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "d8528740-ee12-4a81-a1af-08af9455ae47",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C31",
+      "claim": "Neuronal activity was stationary in \u03bb and in the average crosscorrelation, R, between ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity was stationary in \u03bb and in the average crosscorrelation, R, between ROIs (Figure 1E,F, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data shown in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "6a5661ef-5274-4f88-be43-c31789e1d506",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C32",
+      "claim": "Neurons fired on average more during AW compared to WK and AN.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons fired on average more during AW compared to WK and AN (ANOVA, F(2,35) = 23.05, p < 0.001; probability density function (PDF) shown in Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "64506d03-e06a-4f2f-b32c-2e7ff7379a24",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C33",
+      "claim": "Under all three conditions (AW, WK, AN), neurons fired irregular APs interspaced by relatively long periods of quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Under all three conditions, though, neurons fired irregular APs interspaced by relatively long periods of quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "5c5fc23a-c592-403f-a408-083fb35cf7a1",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C34",
+      "claim": "\u03bb distributed exponentially for single neurons in >98% of ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, \u03bb distributed exponentially for single neurons [log-likelihood ratio (LLR) comparison between power law vs exponential, >98% of ROIs in favor of exponential distribution, p < 0.05; Figure 2A, single distributions and average for one PN group; Figure 2B, averages over all PN groups].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "83550320-93fd-4ac2-a83c-c7b1024d3f46",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C35",
+      "claim": "Neurons tended to not fire at all within \u0394t.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, neurons tended to not fire at all within \u0394t (Figure 2A,B, left; arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the data in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f82af13b-1e80-47fa-8f8e-87e807e679ca",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C36",
+      "claim": "The probability of quiescence, Pq, was highest for AN and WK.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding probability of quiescence, Pq (\u03bb < minimal \u03bb threshold, \u03bbthr, set to 0.5), was highest for AN and WK (Figure 2B, inset; ANOVA, F(2,35) = 23.05, p = 0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "fb8509ac-d03a-4ef4-a8fb-ddd2a1dbc2da",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C37",
+      "claim": "The normalized duration of quiescent times, IBInorm, between firing distributed exponentially for all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the normalized duration of quiescent times, IBInorm, between firing (i.e., \u03bb < \u03bbthr = 0.5) also distributed exponentially for all conditions (Figure 2A, right; Figure 2C; LLR: >98% of ROIs with p < 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "159e7052-a864-4519-b7d7-19107323c572",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C38",
+      "claim": "The CV was larger than 1 for all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding CV was larger than 1 for all conditions, was significantly higher for AW than WK and AN (Figure 2C, left; inset, AW: 1.5 \u00b1 0.2; WK: 1.2 \u00b1 0.1; AN: 1.2 \u00b1 0.1; mean \u00b1 SD, F(2,35) = 25.66, p < 0.001), and increased further with temporal resolution (AW, Figure 2C, right; \u0394t = 167 ms, 1.9 \u00b1 0.4; \u0394t = 88 ms, 2.1 \u00b1 0.3, mean \u00b1 SD; F(2,28) = 15.48, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "ebd704f3-b835-49d4-9615-8ab0e4df7175",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C39",
+      "claim": "CV was significantly higher for AW than WK and AN.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding CV was larger than 1 for all conditions, was significantly higher for AW than WK and AN (Figure 2C, left; inset, AW: 1.5 \u00b1 0.2; WK: 1.2 \u00b1 0.1; AN: 1.2 \u00b1 0.1; mean \u00b1 SD, F(2,35) = 25.66, p < 0.001), and increased further with temporal resolution (AW, Figure 2C, right; \u0394t = 167 ms, 1.9 \u00b1 0.4; \u0394t = 88 ms, 2.1 \u00b1 0.3, mean \u00b1 SD; F(2,28) = 15.48, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "c3231678-0193-40c8-820d-05d50f6fc760",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C40",
+      "claim": "CV increased with temporal resolution in the AW state.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding CV was larger than 1 for all conditions, was significantly higher for AW than WK and AN (Figure 2C, left; inset, AW: 1.5 \u00b1 0.2; WK: 1.2 \u00b1 0.1; AN: 1.2 \u00b1 0.1; mean \u00b1 SD, F(2,35) = 25.66, p < 0.001), and increased further with temporal resolution (AW, Figure 2C, right; \u0394t = 167 ms, 1.9 \u00b1 0.4; \u0394t = 88 ms, 2.1 \u00b1 0.3, mean \u00b1 SD; F(2,28) = 15.48, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "44a28738-2789-468f-a057-e76372c29821",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C41",
+      "claim": "CV values for single units recorded with chronic microelectrode arrays from superficial layers in the AW rat ranged between 1.6 \u00b1 0.4 (\u0394t = 0.033 ms) and 1.3 \u00b1 0.3 (resampled at \u0394t = 250 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "CV values for single units (n = 26; average firing rate = 1.3 Hz; range: 0.1\u20136.2 Hz) recorded with chronic microelectrode arrays from superficial layers in the AW rat (Figure 1\u2014figure supplement 2) compared favorably with \u03bb results from our imaging analysis and ranged between 1.6 \u00b1 0.4 (\u0394t = 0.033 ms) and 1.3 \u00b1 0.3 (resampled at \u0394t = 250 ms), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from microelectrode recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "2f1542a7-a24f-4dc7-b5e5-6a55bad67987",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C42",
+      "claim": "\u03bb was more correlated in time during AW compared to WK and AN, as demonstrated by a significantly steeper decay in the autocorrelation for periods <10 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that \u03bb was more correlated in time during AW compared to WK and AN, as demonstrated by a significantly steeper decay in the autocorrelation for periods <10 s (Figure 2D, left; ANOVA, F(2,35) = 14.77, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "97d26251-f5d6-4e3f-8105-27549920d426",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C43",
+      "claim": "Correlated firing between pairs of neurons was weak.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, correlated firing between pairs of neurons was weak, in line with the notion of an 'asynchronous state of cortex' (Poulet and Petersen, 2008; Ecker et al., 2010; Renart et al., 2010), and the average did not differ between states (AW: 0.06 \u00b1 0.06; WK: 0.05 \u00b1 0.04; AN: 0.06 \u00b1 0.04, mean \u00b1 SD; ANOVA, F(2,35) = 0.29, p = 0.75; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis, data shown in Figure 2E, and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f5b3d066-212d-49de-ada1-4f7f87db426b",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C44",
+      "claim": "The average pairwise correlation did not differ between states (AW, WK, AN).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, correlated firing between pairs of neurons was weak, in line with the notion of an 'asynchronous state of cortex' (Poulet and Petersen, 2008; Ecker et al., 2010; Renart et al., 2010), and the average did not differ between states (AW: 0.06 \u00b1 0.06; WK: 0.05 \u00b1 0.04; AN: 0.06 \u00b1 0.04, mean \u00b1 SD; ANOVA, F(2,35) = 0.29, p = 0.75; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "0073fb70-77db-4268-afc4-ea107aedb6a8",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C45",
+      "claim": "Neighboring neurons tended to be correlated more than distant neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While neighboring neurons tended to be correlated more than distant neurons, in line with previous reports (Sato et al., 2007; Greenberg et al., 2008), this spatial profile was largely similar across all three states (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2F and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "07f550be-361f-479f-98dc-f377bbf8daac",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C46",
+      "claim": "The spatial profile of correlations was largely similar across all three states.",
+      "claim_type": "EXPLICIT",
+      "source": "While neighboring neurons tended to be correlated more than distant neurons, in line with previous reports (Sato et al., 2007; Greenberg et al., 2008), this spatial profile was largely similar across all three states (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "9c7102a8-53b8-4e69-a49f-6330f637553f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C47",
+      "claim": "Event rate and pairwise correlation R are insufficient to predict neuronal avalanches in cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we recently demonstrated that event rate and pairwise correlation R are insufficient to predict neuronal avalanches in cortical activity (Yu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "60d477b2-a384-4bcc-b5d3-4436713e08c5",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C48",
+      "claim": "The cluster rate increased with \u03bbthr and was maximal at an intermediate threshold \u03bbthrmax.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for a given recording at \u0394t, the cluster rate increased with \u03bbthr and was maximal at an intermediate threshold   \u03bbthrmax (Figure 3B, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "23613c6c-ff4b-4a71-a0af-534099ef86a2",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C49",
+      "claim": "\u03bbthrmax shifted towards smaller \u03bbthr values at higher temporal resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected,   \u03bbthrmax shifted towards smaller \u03bbthr values at higher temporal resolutions due to the improved resolution of fast \u03bb fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an expected result based on the improved temporal resolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "82dbe0c0-16d0-4688-91bf-a4a7bda65157",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C50",
+      "claim": "Cluster sizes distributed according to a power law over approximately two orders of magnitude in the AW state.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that cluster sizes distributed according to a power law over approximately two orders of magnitude (Figure 3C: \u03b1 = 1.63 \u00b1 0.13, LLR = 25.7\u2013201.4 favors power law over exponential, p < 0.003 for all n = 10 experiments, \u0394t = 88 ms at individual \u03bbthrmax).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f7f13340-5bdf-4df9-ad51-2bc158b1ec20",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C51",
+      "claim": "Time-shuffled \u03bb events did not yield power-law size distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3D, time-shuffled \u03bb events did not yield power-law size distributions, and instead, cluster size distributions were better fit by an exponential (LLR = \u221266.6 to \u22126.9, favors exponential over power law, p < 0.05 for 7/10 experiments, \u0394t = 88 ms; thresholded at \u03bbthrmax obtained for each distribution individually).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "6b3b2bee-78a2-427a-a166-7fb1750db38f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C52",
+      "claim": "For LFP-based avalanche dynamics, power-law exponent and branching ratio increase systematically with temporal resolution \u0394t.",
+      "claim_type": "EXPLICIT",
+      "source": "For LFP-based avalanche dynamics, it has consistently been shown that power-law exponent and branching ratio increase systematically with temporal resolution \u0394t (Beggs and Plenz, 2003; Petermann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "c8732876-3b6a-40c7-9b04-cd4c78df7c49",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C53",
+      "claim": "For critical avalanche dynamics and negligible finite-size effects, the temporal resolution for which the power-law exponent, \u03b1, is \u22121.5 yields a branching ratio, \u03c3, close to 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, for critical avalanche dynamics and negligible finite-size effects, the temporal resolution for which the power-law exponent, \u03b1, is \u22121.5 yields a branching ratio, \u03c3, close to 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation for critical dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "c0385f6b-2496-4165-a2ba-fecb9d52e422",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C54",
+      "claim": "A similar relationship between \u03b1 and \u03c3 was found empirically for AP avalanches in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3E, a similar relationship between \u03b1 and \u03c3 was also found empirically for AP avalanches in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "4a2a88f7-a129-4f22-8f1a-285503ff5913",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C55",
+      "claim": "The cluster lifetime, T, distributed according to a power law with slope close to \u22122.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that the cluster lifetime, T, distributed according to a power law with slope close to \u22122 (Figure 3F; \u0394t = 250 ms, slope \u03b3 = 1.7 \u00b1 0.1; \u0394t = 167 ms, \u03b3 = 1.9 \u00b1 0.2; \u0394t = 88 ms, \u03b3 = 2.2 \u00b1 0.2, LLR = 100.4\u2013344.1; p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "5d76d128-a707-46d6-8beb-28c2afe8cc21",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C56",
+      "claim": "The body of the distributions followed a power law up to the predicted cluster size limit.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4, we show that the body of the distributions followed a power law up to the predicted cluster size limit (s = \u03bb/\u039b = 1 for the normalized distributions) beyond which a cut-off was observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "a35985a2-3175-4d55-93e7-b7dcd0a9c03a",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C57",
+      "claim": "The cut-off in cluster size distributions was more pronounced at lower temporal resolutions and higher thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "This cut-off was more pronounced at lower temporal resolutions and higher thresholds as shown previously for LFP-based avalanches (Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 4 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "92ba6046-1cb8-497d-ab6b-d04cecd2d5ab",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C58",
+      "claim": "Avalanche dynamics were unique to the AW state.",
+      "claim_type": "EXPLICIT",
+      "source": "Avalanche dynamics were unique to the AW state (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "a0c8058f-548f-488c-b325-6a163f5ba326",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C59",
+      "claim": "During AN, cluster size distributions were slightly bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "During AN, cluster size distributions at corresponding \u03bbthrmax (Figure 5\u2014figure supplement 1A) were slightly bimodal (Figure 5A, arrow), in line with a progressively worse fit to a power law for WK and AN compared to AW (Figure 5B; ANOVA, p < 0.05; cf. Figure 4, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A and statistical analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "b0950cb7-a3a9-4df2-895e-cc5a7dfe78da",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C60",
+      "claim": "There was a progressively worse fit to a power law for WK and AN compared to AW.",
+      "claim_type": "EXPLICIT",
+      "source": "During AN, cluster size distributions at corresponding \u03bbthrmax (Figure 5\u2014figure supplement 1A) were slightly bimodal (Figure 5A, arrow), in line with a progressively worse fit to a power law for WK and AN compared to AW (Figure 5B; ANOVA, p < 0.05; cf. Figure 4, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "d4d2e865-3b52-4657-9216-64bc30b1619d",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C61",
+      "claim": "An alternative approach to obtain avalanches by extracting periods of integrated population activity above a population threshold also yielded power-law size distributions with exponent close to \u22121.5 and cut-off that were robust to changes in \u03bbthr.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative approach to obtain avalanches, in which periods of integrated population activity above a population threshold were extracted (Poil et al., 2012), also yielded power-law size distributions with exponent close to \u22121.5 and cut-off that were robust to changes in \u03bbthr (Figure 6A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6A\u2013D and citation to the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "74358aee-416d-4f67-abfe-56f17920182b",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C62",
+      "claim": "Cluster size distributions obtained by population thresholding deviated from avalanche dynamics under isoflurane anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was found when using the original definition of avalanches, cluster size distributions obtained by population thresholding deviated from avalanche dynamics under isoflurane anesthesia (Figure 5B, Figure 6E, p < 0.01; Kruskal\u2013Wallis test on Kolmogorov\u2013Smirnov distances, DKS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "25738594-b076-418a-b525-c76b5a80e9ba",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C63",
+      "claim": "Cluster size and lifetime were correlated, and the corresponding exponent scaled as suggested by the theory of critical systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cluster size and lifetime were correlated, and the corresponding exponent scaled as suggested by the theory of critical systems (Sethna et al., 2001) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6\u2014figure supplement 1 and citation to theory.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "d77bc5f3-f57f-4c4b-8bcc-d7e85517640f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C64",
+      "claim": "AP activity from local groups of L2/3 PNs in vitro was recorded using YC2.60.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded AP activity from local groups of L2/3 PNs in vitro (n = 15\u201380 ROIs) monitored with YC2.60 (\u0394t = 250 ms; n = 129 movies, n = 35 cultures; Figure 7B\u2013D) and compared the activity to conditions when GABAA (5 \u00b5M PTX, n = 8) or AMPA and NMDA-receptor mediated (0.5 \u00b5M DNQX, 5 \u00b5M AP5, n = 6) synaptic transmission were slightly reduced.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup for in vitro recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "db215411-7b64-45ad-befd-0945311a7bbf",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C65",
+      "claim": "Neuronal activity was stable throughout the recording for each condition in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity was stable throughout the recording for each condition (Figure 7\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "6b7e287b-4281-489b-ba4b-344033c7a6ee",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C66",
+      "claim": "At the single neuron level in vitro, AP firing was irregular, in line with in vivo results.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single neuron level, AP firing was irregular, in line with our in vivo results (Figure 7E,F; Figure 7\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7E,F and Figure 7\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "b183c35d-7e29-4be1-8e2f-76841cf88183",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C67",
+      "claim": "Temporal clustering was present under normal conditions (ACSF) but was reduced during disinhibition or disfacilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal clustering was present under normal conditions (ACSF) but was reduced during disinhibition or disfacilitation (Figure 7G, PTX and DNQX/AP5, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f664c2ce-aee7-4c68-8d09-e14100f59719",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C68",
+      "claim": "An intermediate level in correlated AP firing was found under normal conditions in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "An intermediate level in correlated AP firing was found under normal conditions (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "a785bc33-75cd-4227-b37c-2de5342da406",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C69",
+      "claim": "Correlations between neighboring and distant neurons were highly similar in vitro and increased during disinhibition but decreased during disfacilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations between neighboring and distant neurons were highly similar and as expected increased during disinhibition but decreased during disfacilitation (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f03898e7-3430-4ab7-bad0-b90cbae0fc91",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C70",
+      "claim": "Under normal conditions in vitro, cascade sizes distributed according to a power law that was robust to changes in \u03bbthr.",
+      "claim_type": "EXPLICIT",
+      "source": "When processed at the corresponding \u03bbthrmax, cascade sizes under normal conditions distributed according to a power law that was robust to changes in \u03bbthr (Figure 7I, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "1e281cd3-7288-4428-9d3d-56e961fe439b",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C71",
+      "claim": "The power law in cascade sizes was destroyed when spiking activity was shuffled in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the power law was destroyed when spiking activity was shuffled (Figure 7I, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "ef9cbcf3-d8c5-43b7-916b-15f2e36a7ff6",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C72",
+      "claim": "AP-based cluster size distributions became strongly bimodal during pharmacological disinhibition and slightly bimodal during disfacilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown for LFP-based analysis (Plenz, 2012), AP-based cluster size distributions became strongly bimodal during pharmacological disinhibition and slightly bimodal during disfacilitation (Figure 7J, PTX and DNQX/AP5, respectively; Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7J and Figure 7\u2014figure supplement 2, and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "2e329c34-9fc1-4f80-8914-358fabb03e04",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C73",
+      "claim": "YC2.60 tends to saturate for very strong spike bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "YC2.60, while being sensitive to single APs, tends to saturate for very strong spike bursts (Yamada et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "e44e7320-2dc3-421e-8262-6c2dad08bc4d",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C74",
+      "claim": "GCaMP3 naturally has a higher threshold for AP detection (>3 APs) but reports even strong bursts linearly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the GECI GCaMP3 (Tian et al., 2009) naturally has a higher threshold for AP detection (>3 APs) but reports even strong bursts linearly (Yamada et al., 2011) (Figure 7\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and data shown in Figure 7\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "8faab3be-b2bb-4b2e-b948-3081cbddd835",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C75",
+      "claim": "AP bursts measured with GCaMP3 were irregular at the single neuron level.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our expectation of threshold invariance for LFP-based avalanches in the AW monkey (Petermann et al., 2009) and our YC2.60 measurements, we found that AP bursts measured with GCaMP3 were irregular at the single neuron level (Figure 7\u2014figure supplement 3C\u2013H), while AP cascades formed a clear power law (Figure 7\u2014figure supplement 3I,J; n = 9 cultures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7\u2014figure supplement 3C\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "4dac77ce-f801-44bb-ab8e-4213fdb36e9b",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C76",
+      "claim": "AP cascades measured with GCaMP3 formed a clear power law.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our expectation of threshold invariance for LFP-based avalanches in the AW monkey (Petermann et al., 2009) and our YC2.60 measurements, we found that AP bursts measured with GCaMP3 were irregular at the single neuron level (Figure 7\u2014figure supplement 3C\u2013H), while AP cascades formed a clear power law (Figure 7\u2014figure supplement 3I,J; n = 9 cultures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7\u2014figure supplement 3I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "bf497d70-f8ed-4e2d-becd-2542cdf9d831",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C77",
+      "claim": "Neuronal avalanches describe the spatiotemporal spike activity in L2/3 PN groups in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vitro results demonstrate neuronal avalanches to describe the spatiotemporal spike activity in L2/3 PN groups, that is, sensitive to the balance of excitation and inhibition and can be detected using high-threshold GECIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the in vitro experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "a4920e81-894d-4daa-b8ba-9f1d8f8ecc70",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C78",
+      "claim": "Neuronal avalanches are sensitive to the balance of excitation and inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vitro results demonstrate neuronal avalanches to describe the spatiotemporal spike activity in L2/3 PN groups, that is, sensitive to the balance of excitation and inhibition and can be detected using high-threshold GECIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the pharmacological manipulation experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "7bb68bc8-6a62-44e0-ae9a-56394d484a6f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C79",
+      "claim": "Neuronal avalanches can be detected using high-threshold GECIs.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vitro results demonstrate neuronal avalanches to describe the spatiotemporal spike activity in L2/3 PN groups, that is, sensitive to the balance of excitation and inhibition and can be detected using high-threshold GECIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the GCaMP3 experiments shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "fd827c42-85be-4b11-9b5a-ec6fbf618a14",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C80",
+      "claim": "The identification of avalanches in the main excitatory cell type that constitutes the mammalian cortex establishes the strongest proof to date that avalanche dynamics provide the guiding principles for propagation of cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of avalanches in the main excitatory cell type that constitutes the mammalian cortex establishes the strongest proof to date that avalanche dynamics provide the guiding principles for propagation of cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "947accef-f09b-40f2-bbc7-2de7ed3f52cc",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C81",
+      "claim": "Local layer 2/3 networks should exhibit maximal dynamic range to process layer 4 inputs and maximize mutual information between patterns elicited in layer 4 and superficial layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, local layer 2/3 networks should exhibit maximal dynamic range to process layer 4 inputs and maximize mutual information between patterns elicited in layer 4 and superficial layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the findings and theoretical considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "3cf7e687-7bac-4708-b9dc-be93237e14af",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C82",
+      "claim": "Fluctuations in single neuron firing amount to a scale-invariant order in active neuronal groups, suggestive of critical dynamics guiding single neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we demonstrated that fluctuations in single neuron firing, amount to a scale-invariant order in active neuronal groups, suggestive of critical dynamics guiding single neuron firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "240e6161-5ed0-414d-bd7e-246c87d6288b",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C83",
+      "claim": "The occurrence of a single 'spontaneous' spike or spike burst in the AW state correlates with activity in other PNs over time and distance in cortex, as quantified by the scale-invariant correlation structure established by neuronal avalanches.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the occurrence of a single 'spontaneous' spike or spike burst in the AW state correlates with activity in other PNs over time and distance in cortex, as quantified by the scale-invariant correlation structure established by neuronal avalanches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the findings about avalanche dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "f9114339-075c-45bd-a435-3ac0a71986d0",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "claim_id": "C84",
+      "claim": "Neuronal avalanches provide a unifying framework of cell assembly formation in cortex that ranges from local groups of neurons to the global scale of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "By demonstrating such scale-invariance to exist at the neuron level, we suggest that neuronal avalanches provide a unifying framework of cell assembly formation in cortex that ranges from local groups of neurons to the global scale of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a833c264-0946-4a2e-ab17-0ab194f5365d",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "YC2.60-expressing neurons in layer 2/3 exhibited pyramidal neuron morphology and reliably reported action potential activity at physiological temperature from single APs to bursts up to 28 Hz, with linear recovery of spike trains at different temporal resolutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 provide converging evidence from morphological observation (C27), pharmacological validation (C28), and control experiments (C29-C30) demonstrating that YC2.60 is a suitable indicator for measuring pyramidal neuron activity. The data shown in Figure 1 and supplementary figures provide strong experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "d832126d-c148-4c75-b952-bfa4deac9f16",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single pyramidal neurons in layer 2/3 exhibit irregular firing characterized by exponentially distributed firing rates and interburst intervals, with coefficient of variation (CV) > 1 across all brain states (awake, waking, anesthetized), though CV was significantly higher in the awake state and increased with temporal resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C41 collectively demonstrate irregular single neuron firing patterns with robust statistical support (ANOVA tests, log-likelihood ratios) and data shown in Figure 2. The findings are consistent across multiple temporal resolutions and validated with independent microelectrode recordings (C41), providing strong convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "8041f2c4-9d1c-4061-ba08-83b8906e6e70",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Temporal correlations in firing rate (\u03bb) were significantly stronger in the awake state compared to waking and anesthetized states, while pairwise correlations between neurons remained weak across all states, with neighboring neurons showing slightly higher correlations than distant neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by statistical analyses (ANOVA) and data in Figure 2D-F. The findings align with prior literature on asynchronous cortical states (C43 cites previous work), and the spatial correlation profile is consistent across states, providing coherent evidence for state-dependent temporal but not spatial correlation changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "7c68b5f6-569d-4810-a8be-31dad73a8057",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the awake state, spatiotemporal activity clusters of pyramidal neurons exhibited power-law size distributions over approximately two orders of magnitude with exponent \u03b1 \u2248 -1.63, power-law lifetime distributions with slope close to -2, and a systematic relationship between power-law exponent and branching ratio consistent with critical dynamics. These power laws were destroyed by time-shuffling and showed characteristic cut-offs at the predicted system size limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C57 provide comprehensive evidence for neuronal avalanche dynamics in the awake state, supported by statistical analyses (log-likelihood ratios favoring power law over exponential, p < 0.003), control experiments with shuffled data (C51), and data shown in Figures 3-4. The multiple hallmarks of criticality (power-law sizes, lifetimes, branching ratios, threshold robustness, size-lifetime scaling) provide strong converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "1ba6fc6f-dc38-4c3e-94e1-d860c41167f7",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neuronal avalanche dynamics were unique to the awake state, with cluster size distributions deviating from power laws (becoming bimodal) during anesthesia and waking states. This state-dependence was robust to alternative methods of avalanche detection including population thresholding approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 demonstrate state-specificity of avalanche dynamics with statistical support (ANOVA, Kruskal-Wallis tests, p < 0.05) and data in Figures 5-6. The use of multiple analysis methods (C61) and consistent findings across approaches strengthen the conclusion that avalanche dynamics are specific to the awake state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "01189b2e-ce98-4dae-9b96-3d0eb7afcda7",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cluster size and lifetime were correlated with scaling exponents consistent with the theory of critical systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by data in Figure 6\u2014figure supplement 1 and citation to critical systems theory (Sethna et al., 2001). This provides additional evidence for critical dynamics beyond power-law distributions alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In vitro recordings from layer 2/3 pyramidal neurons in organotypic cultures showed that under normal conditions (ACSF), neurons exhibited irregular firing and cascade sizes distributed according to a power law robust to threshold changes. Pharmacological manipulation of excitation/inhibition balance (disinhibition with PTX or disfacilitation with DNQX/AP5) disrupted avalanche dynamics, producing bimodal cluster size distributions and altering temporal clustering and pairwise correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C72 provide comprehensive in vitro evidence that avalanche dynamics emerge naturally in isolated cortical tissue and depend on excitation/inhibition balance. The data in Figure 7 show power-law distributions under control conditions (C70), destruction by shuffling (C71), and disruption by pharmacological manipulations (C72), with appropriate controls for stability (C65) and consistency with in vivo findings (C66).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "15413fa7-1435-422f-8f3b-548a29b85bf7",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Neuronal avalanches can be detected using different genetically encoded calcium indicators with varying detection thresholds. While YC2.60 saturates for strong bursts, GCaMP3 has a higher detection threshold (>3 APs) but reports bursts linearly, and both indicators reveal power-law avalanche dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76, C79 demonstrate threshold-invariance of avalanche detection across different calcium indicators. The GCaMP3 validation experiments (Figure 7\u2014figure supplement 3) showing power-law distributions despite higher detection thresholds provide important methodological support and address potential concerns about indicator saturation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "7d096c71-bb2e-4feb-9ef5-9dd02fc3c8ec",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "As animals transition from anesthetized to awake state, spontaneous single neuron firing increases in irregularity and assembles into scale-invariant avalanches at the group level, demonstrating that neuronal avalanches are linked to the global physiological state of wakefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C7, C22-C23 represent the core finding of the study, supported by extensive experimental data across Figures 1-6 showing state-dependent changes in firing irregularity and emergence of avalanche dynamics specifically in the awake state. The convergence of single-neuron and population-level analyses provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "0f39fc29-1390-4700-bff5-9932379ec944",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In vitro spike avalanches emerged naturally in layer 2/3 pyramidal neuron groups from organotypic slice cultures and were sensitive to the balance of excitation and inhibition, demonstrating that avalanche dynamics describe spatiotemporal spike activity in identified pyramidal neuron populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C24-C25, C77-C78 are supported by comprehensive in vitro experiments (Figure 7) showing spontaneous emergence of avalanches and their disruption by pharmacological manipulation of E/I balance. This provides crucial evidence that avalanches arise from local circuit properties rather than requiring intact brain-wide connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "9da2a01b-822a-463f-87a6-7a2cf016fb91",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Critical dynamics govern the organization of resting activity in the awake animal from action potential firing in individual pyramidal neurons to activity in large neuronal groups across cortex, with irregular single neuron firing amounting to scale-invariant order at the group level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C26, C80, C82 represent the main conceptual conclusions of the study. These are well-supported by the experimental findings demonstrating multiple hallmarks of criticality (power laws, branching ratios, scaling relationships) at the pyramidal neuron level, though C26 includes speculative elements about the full extent across cortex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "b6d75170-3bb8-43ef-b193-1618b2a9420f",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Event rate and pairwise correlation are insufficient to predict neuronal avalanches in cortical activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by citation to previous work (Yu et al., 2011) and is consistent with the current findings showing that despite similar pairwise correlations across states (C44), avalanche dynamics differ dramatically between awake and anesthetized conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "ecaecd65-7d5b-471a-b3fe-f5812ca49eae",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For LFP-based avalanche dynamics, power-law exponent and branching ratio increase systematically with temporal resolution, and for critical dynamics with negligible finite-size effects, a power-law exponent of -1.5 yields a branching ratio close to 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 describe established theoretical expectations for critical avalanche dynamics, supported by citations to previous work (Beggs and Plenz, 2003; Petermann et al., 2009) and used as a framework for interpreting the current spike-based avalanche findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "928bb2e4-fbb6-46ca-ab23-39a723f18f1d",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that local layer 2/3 networks should exhibit maximal dynamic range for information processing, that single spontaneous spikes in the awake state correlate with activity in other pyramidal neurons over time and distance through scale-invariant correlation structures, and that neuronal avalanches provide a unifying framework for cell assembly formation from local to global scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81, C83-C84 are speculative proposals and predictions based on the experimental findings rather than directly tested hypotheses. While they are reasonable inferences from the data and theory, they represent future directions and interpretations rather than experimentally demonstrated results. The proposals are clearly marked as suggestions ('should exhibit', 'suggest that') in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "0bdf7604-4852-4fe1-b46c-df7f678b87d3",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Spontaneous fluctuations in neuronal activity emerge at many spatial and temporal scales in cortex and have been found to organize as scale-invariant neuronal avalanches, suggesting cortical dynamics to be critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent established background knowledge from the field, supported by the general scientific literature and implicitly citing prior work. These provide the conceptual foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    },
+    {
+      "id": "2e698573-5d81-4275-bc34-9bf85f251fbd",
+      "content_id": "ed505808-7a51-4c8d-ae70-5027efee5032",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work has established that resting activity has multiple functional roles (delineating networks, modulating sensory responses, predicting cortical responses, changing in disease), has been shown to organize as neuronal avalanches across species and recording modalities, and that pyramidal neurons exhibit irregular firing with low correlations and high response variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C21 represent well-established prior findings from the literature, appropriately cited throughout. These provide essential context for the current study's contributions and are accurately represented based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:09.288971Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "73f3eb2f-6146-44b1-851a-47a383e55ecc",
+      "result_id": "a833c264-0946-4a2e-ab17-0ab194f5365d"
+    },
+    {
+      "claim_id": "84f68cd6-1140-4331-b36e-fef06af333c8",
+      "result_id": "a833c264-0946-4a2e-ab17-0ab194f5365d"
+    },
+    {
+      "claim_id": "16379443-a715-460e-b4ce-aeb3e5ea9b5a",
+      "result_id": "a833c264-0946-4a2e-ab17-0ab194f5365d"
+    },
+    {
+      "claim_id": "810c992c-0793-46d2-96fc-15b84ff53f04",
+      "result_id": "a833c264-0946-4a2e-ab17-0ab194f5365d"
+    },
+    {
+      "claim_id": "d8528740-ee12-4a81-a1af-08af9455ae47",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "6a5661ef-5274-4f88-be43-c31789e1d506",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "64506d03-e06a-4f2f-b32c-2e7ff7379a24",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "5c5fc23a-c592-403f-a408-083fb35cf7a1",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "83550320-93fd-4ac2-a83c-c7b1024d3f46",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "f82af13b-1e80-47fa-8f8e-87e807e679ca",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "fb8509ac-d03a-4ef4-a8fb-ddd2a1dbc2da",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "159e7052-a864-4519-b7d7-19107323c572",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "ebd704f3-b835-49d4-9615-8ab0e4df7175",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "c3231678-0193-40c8-820d-05d50f6fc760",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "44a28738-2789-468f-a057-e76372c29821",
+      "result_id": "d832126d-c148-4c75-b952-bfa4deac9f16"
+    },
+    {
+      "claim_id": "2f1542a7-a24f-4dc7-b5e5-6a55bad67987",
+      "result_id": "8041f2c4-9d1c-4061-ba08-83b8906e6e70"
+    },
+    {
+      "claim_id": "97d26251-f5d6-4e3f-8105-27549920d426",
+      "result_id": "8041f2c4-9d1c-4061-ba08-83b8906e6e70"
+    },
+    {
+      "claim_id": "f5b3d066-212d-49de-ada1-4f7f87db426b",
+      "result_id": "8041f2c4-9d1c-4061-ba08-83b8906e6e70"
+    },
+    {
+      "claim_id": "0073fb70-77db-4268-afc4-ea107aedb6a8",
+      "result_id": "8041f2c4-9d1c-4061-ba08-83b8906e6e70"
+    },
+    {
+      "claim_id": "07f550be-361f-479f-98dc-f377bbf8daac",
+      "result_id": "8041f2c4-9d1c-4061-ba08-83b8906e6e70"
+    },
+    {
+      "claim_id": "60d477b2-a384-4bcc-b5d3-4436713e08c5",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "23613c6c-ff4b-4a71-a0af-534099ef86a2",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "82dbe0c0-16d0-4688-91bf-a4a7bda65157",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "f7f13340-5bdf-4df9-ad51-2bc158b1ec20",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "c0385f6b-2496-4165-a2ba-fecb9d52e422",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "4a2a88f7-a129-4f22-8f1a-285503ff5913",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "5d76d128-a707-46d6-8beb-28c2afe8cc21",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "a35985a2-3175-4d55-93e7-b7dcd0a9c03a",
+      "result_id": "7c68b5f6-569d-4810-a8be-31dad73a8057"
+    },
+    {
+      "claim_id": "92ba6046-1cb8-497d-ab6b-d04cecd2d5ab",
+      "result_id": "1ba6fc6f-dc38-4c3e-94e1-d860c41167f7"
+    },
+    {
+      "claim_id": "a0c8058f-548f-488c-b325-6a163f5ba326",
+      "result_id": "1ba6fc6f-dc38-4c3e-94e1-d860c41167f7"
+    },
+    {
+      "claim_id": "b0950cb7-a3a9-4df2-895e-cc5a7dfe78da",
+      "result_id": "1ba6fc6f-dc38-4c3e-94e1-d860c41167f7"
+    },
+    {
+      "claim_id": "d4d2e865-3b52-4657-9216-64bc30b1619d",
+      "result_id": "1ba6fc6f-dc38-4c3e-94e1-d860c41167f7"
+    },
+    {
+      "claim_id": "74358aee-416d-4f67-abfe-56f17920182b",
+      "result_id": "1ba6fc6f-dc38-4c3e-94e1-d860c41167f7"
+    },
+    {
+      "claim_id": "25738594-b076-418a-b525-c76b5a80e9ba",
+      "result_id": "01189b2e-ce98-4dae-9b96-3d0eb7afcda7"
+    },
+    {
+      "claim_id": "d77bc5f3-f57f-4c4b-8bcc-d7e85517640f",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "db215411-7b64-45ad-befd-0945311a7bbf",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "6b7e287b-4281-489b-ba4b-344033c7a6ee",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "b183c35d-7e29-4be1-8e2f-76841cf88183",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "f664c2ce-aee7-4c68-8d09-e14100f59719",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "a785bc33-75cd-4227-b37c-2de5342da406",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "f03898e7-3430-4ab7-bad0-b90cbae0fc91",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "1e281cd3-7288-4428-9d3d-56e961fe439b",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "ef9cbcf3-d8c5-43b7-916b-15f2e36a7ff6",
+      "result_id": "c96c74c2-e668-43b2-a96c-e4e0e1f84ed9"
+    },
+    {
+      "claim_id": "2e329c34-9fc1-4f80-8914-358fabb03e04",
+      "result_id": "15413fa7-1435-422f-8f3b-548a29b85bf7"
+    },
+    {
+      "claim_id": "e44e7320-2dc3-421e-8262-6c2dad08bc4d",
+      "result_id": "15413fa7-1435-422f-8f3b-548a29b85bf7"
+    },
+    {
+      "claim_id": "8faab3be-b2bb-4b2e-b948-3081cbddd835",
+      "result_id": "15413fa7-1435-422f-8f3b-548a29b85bf7"
+    },
+    {
+      "claim_id": "4dac77ce-f801-44bb-ab8e-4213fdb36e9b",
+      "result_id": "15413fa7-1435-422f-8f3b-548a29b85bf7"
+    },
+    {
+      "claim_id": "7bb68bc8-6a62-44e0-ae9a-56394d484a6f",
+      "result_id": "15413fa7-1435-422f-8f3b-548a29b85bf7"
+    },
+    {
+      "claim_id": "ee11d8de-feff-4a0c-943a-cb8fc1ecfc30",
+      "result_id": "7d096c71-bb2e-4feb-9ef5-9dd02fc3c8ec"
+    },
+    {
+      "claim_id": "233a96b0-e33d-41be-89c0-bb68c505f6e3",
+      "result_id": "7d096c71-bb2e-4feb-9ef5-9dd02fc3c8ec"
+    },
+    {
+      "claim_id": "b01ebf08-87f0-43ab-8952-1d7c822d677e",
+      "result_id": "7d096c71-bb2e-4feb-9ef5-9dd02fc3c8ec"
+    },
+    {
+      "claim_id": "f3ae512e-ca75-43ce-8e06-c0fc7c86c161",
+      "result_id": "7d096c71-bb2e-4feb-9ef5-9dd02fc3c8ec"
+    },
+    {
+      "claim_id": "a9a60fe4-605a-4a07-acdf-5e3a43eaa3ae",
+      "result_id": "7d096c71-bb2e-4feb-9ef5-9dd02fc3c8ec"
+    },
+    {
+      "claim_id": "1269d886-fc18-4a63-a11b-9100f4bd110a",
+      "result_id": "0f39fc29-1390-4700-bff5-9932379ec944"
+    },
+    {
+      "claim_id": "74513bfd-dbd2-4f0e-bc0f-38d4b13cdce3",
+      "result_id": "0f39fc29-1390-4700-bff5-9932379ec944"
+    },
+    {
+      "claim_id": "e78bd78f-9af0-4cc4-b41f-be300018af16",
+      "result_id": "0f39fc29-1390-4700-bff5-9932379ec944"
+    },
+    {
+      "claim_id": "bf497d70-f8ed-4e2d-becd-2542cdf9d831",
+      "result_id": "0f39fc29-1390-4700-bff5-9932379ec944"
+    },
+    {
+      "claim_id": "a4920e81-894d-4daa-b8ba-9f1d8f8ecc70",
+      "result_id": "0f39fc29-1390-4700-bff5-9932379ec944"
+    },
+    {
+      "claim_id": "2c47dd93-9d0d-499b-aaf2-e52092ced7be",
+      "result_id": "9da2a01b-822a-463f-87a6-7a2cf016fb91"
+    },
+    {
+      "claim_id": "b4fa695b-28b6-40c9-a6e5-a64f5c519146",
+      "result_id": "9da2a01b-822a-463f-87a6-7a2cf016fb91"
+    },
+    {
+      "claim_id": "fd827c42-85be-4b11-9b5a-ec6fbf618a14",
+      "result_id": "9da2a01b-822a-463f-87a6-7a2cf016fb91"
+    },
+    {
+      "claim_id": "3cf7e687-7bac-4708-b9dc-be93237e14af",
+      "result_id": "9da2a01b-822a-463f-87a6-7a2cf016fb91"
+    },
+    {
+      "claim_id": "9c7102a8-53b8-4e69-a49f-6330f637553f",
+      "result_id": "b6d75170-3bb8-43ef-b193-1618b2a9420f"
+    },
+    {
+      "claim_id": "6b3b2bee-78a2-427a-a166-7fb1750db38f",
+      "result_id": "ecaecd65-7d5b-471a-b3fe-f5812ca49eae"
+    },
+    {
+      "claim_id": "c8732876-3b6a-40c7-9b04-cd4c78df7c49",
+      "result_id": "ecaecd65-7d5b-471a-b3fe-f5812ca49eae"
+    },
+    {
+      "claim_id": "947accef-f09b-40f2-bbc7-2de7ed3f52cc",
+      "result_id": "928bb2e4-fbb6-46ca-ab23-39a723f18f1d"
+    },
+    {
+      "claim_id": "240e6161-5ed0-414d-bd7e-246c87d6288b",
+      "result_id": "928bb2e4-fbb6-46ca-ab23-39a723f18f1d"
+    },
+    {
+      "claim_id": "f9114339-075c-45bd-a435-3ac0a71986d0",
+      "result_id": "928bb2e4-fbb6-46ca-ab23-39a723f18f1d"
+    },
+    {
+      "claim_id": "1e90006d-34bb-43a3-ac6b-2772a03e6962",
+      "result_id": "0bdf7604-4852-4fe1-b46c-df7f678b87d3"
+    },
+    {
+      "claim_id": "f4bc4920-7686-4c34-a019-bd9607e4802f",
+      "result_id": "0bdf7604-4852-4fe1-b46c-df7f678b87d3"
+    },
+    {
+      "claim_id": "d3891e66-785f-450d-a910-2b80a1aa0727",
+      "result_id": "0bdf7604-4852-4fe1-b46c-df7f678b87d3"
+    },
+    {
+      "claim_id": "e368028a-6bdd-45e3-95cb-221b32077102",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "e216f8c2-d1fc-4c4c-be1f-6adb97e70f27",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "2fc69710-b518-4d3a-b988-12e9a08ac782",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "d68d3327-ba81-4064-9249-88110fc0d533",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "c2b2f949-65bf-4163-b47d-5bc3d61a847f",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "e689de72-7739-47ea-a7bb-864943832914",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "389341d9-df7a-4958-954c-67e6cb9cb99f",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "0f356596-87b8-4db8-8d44-d3137ca75309",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "fe19a37a-5335-42cd-a4ac-6a23e9871654",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "18165372-44fe-4f76-8aee-f8c2b8336d2a",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "8f808cc1-32a8-452d-b3cd-397251ae5bdd",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "753ba847-f735-4bfb-8a72-ff67de7e2916",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    },
+    {
+      "claim_id": "63c8f16c-fb45-42f5-b2a3-fb8901492bca",
+      "result_id": "2e698573-5d81-4275-bc34-9bf85f251fbd"
+    }
+  ],
+  "comparisons": []
+}

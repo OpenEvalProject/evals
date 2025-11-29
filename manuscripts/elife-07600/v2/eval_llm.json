@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14"
+    ],
+    "result": "The manuscript establishes that current high-throughput methods have failed to determine ncRNA tertiary structures at 1-nm resolution, creating a significant barrier in the field despite progress in secondary structure modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C14 collectively establish the motivation for the work by describing well-documented limitations in the field. These are supported by established knowledge and citations, providing appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "The MCM pipeline (integrating MOHCA-seq with M2 and Rosetta modeling) achieves consistent 1-nm accuracy for ncRNA 3D modeling, as demonstrated by 8.6 \u00c5 RMSD for P4-P6 (within 16.5 \u00c5 precision), successful blind prediction of the lariat-capping ribozyme, and superior performance compared to modeling without MOHCA-seq constraints (38.3 \u00c5 RMSD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C66-C68, C70-C71 are strongly supported by experimental data in Tables 1-2 and Figures 1F, 3A. The blind RNA-puzzle test (C4) provides rigorous validation. Control experiments without MOHCA-seq (C69-C70) demonstrate necessity of the method. The accuracy metrics are well-defined and consistently applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C79"
+    ],
+    "result": "MCM achieves 1-nm resolution modeling across diverse ncRNA structures: 7.6 \u00c5 for c-di-GMP riboswitch, 7.9 \u00c5 for glycine riboswitch, 11.9 \u00c5 for AdoCbl riboswitch, and 11.1-14.5 \u00c5 for class I ligase, with M2/Rosetta alone producing dramatically less accurate models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C79 are directly supported by quantitative RMSD data in Table 1 and Figure 3B-E. The consistent achievement of sub-15 \u00c5 accuracy across structurally diverse RNAs demonstrates generalizability. Statistical significance calculations (Table 1) and visual comparisons strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MOHCA-seq represents a methodological advance over MOHCA-gel by using commercially available reagents (2\u2032-NH2-2\u2032-dATP and ITCB-Fe(III)\u2022EDTA), eliminating specialized nucleotides and 2D gel electrophoresis, employing high-throughput sequencing for improved signal-to-noise, and enabling multiplexed analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30, C36-C38 describe the MOHCA-seq protocol with appropriate methodological detail. The advantages over MOHCA-gel are demonstrated by direct comparison (Figure 2F-G, C39). The use of commercially available reagents (C26) enhances reproducibility. The experimental protocol is sufficiently detailed for replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "MOHCA-seq detects reverse transcription stops at oxidative damage sites beyond radical source attachment positions, with RT-terminating events exceeding strand scission rates by many fold, enabling detection of correlated events invisible to MOHCA-gel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by experimental data in Figure 2B-E comparing CE and sequencing measurements. The quantification shows RT stops exceed strand scission by >6-fold (C34, Figure 2E). This unexpected finding is well-documented and explains the improved sensitivity of MOHCA-seq over MOHCA-gel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "MOHCA-seq produces dozens of proximity hits in single experiments (compared to few hits from MOHCA-gel), with COHCOA computational analysis isolating the signal by iteratively calculating and subtracting two-dimensional background arising from uncorrelated strand scission and RT-terminating profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by data in Figures 1-2 and Figure 1\u2014figure supplement 1. The COHCOA algorithm is described in detail in Materials and Methods. The comparison to MOHCA-gel (Figure 2F-G) demonstrates the substantial increase in data quality. The computational approach is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "MOHCA-seq data for P4-P6 RNA confirms five major helical elements and reveals nearly two dozen tertiary proximities including the J5/5a hinge, A-minor contact, and tetraloop-receptor docking, with features appearing consistently across different experimental conditions and nucleotide modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by MOHCA-seq data in Figures 1D-F and 2H-K, with validation from crystallographic and M2 data (C44). The robustness across conditions (C47-C48) is demonstrated in Figure 2\u2014figure supplements 1-2. The self-limiting reaction mechanism (C49) is supported by CE data and prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The MCM modeling protocol uses FARNA/Rosetta with pre-assembled helices from M2 data, applies smooth pseudo-energy constraints (0-30 \u00c5) for MOHCA-seq proximity pairs, generates >10,000 low-resolution models followed by full-atom refinement of the lowest-energy 1/6, and selects cluster centers as final predictions with precision estimated from intra-cluster RMSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C65 describe the computational modeling protocol in detail. The approach is well-justified, building on prior MOHCA-gel work (C51, C60) and protein modeling strategies (C62). The pseudo-energy potential is validated by correlation with distances (Figure 1\u2014figure supplement 2B). The clustering approach for model selection is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The lack of correlation between satisfied MOHCA-seq constraints and model accuracy suggests unsatisfied constraints arise from conformational fluctuations rather than systematic errors, with highly sampled modeling filtering out inconsistent constraints and recovering the expected relationship between MOHCA-seq signal intensity and pairwise distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by constraint satisfaction analysis in Table 2 and signal-distance correlations in Figure 1\u2014figure supplement 2B-C. The interpretation is reasonable and consistent with prior constraint-based modeling studies (citations provided). The ability to filter inconsistent constraints is a strength of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "For the AdoCbl riboswitch aptamer (RNA-puzzle 6), M2 data correctly identified secondary structure but could not disambiguate 3D structures (10 models with 12.1-32.8 \u00c5 RMSD), while full MCM resolved tertiary contacts and converged to 11.9 \u00c5 RMSD (13.9 \u00c5 precision), comparable to the best RNA-puzzle submission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by M2 data (Figure 3\u2014figure supplement 1), RNA-puzzle submission results (Figure 3\u2014figure supplement 4), and MCM modeling data (Figure 3D, Table 1). This demonstrates MCM's ability to select a single confident model where M2 alone was insufficient, addressing a key limitation identified in the introduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In a blind RNA-puzzle test, MCM detected errors in the lariat-capping ribozyme peripheral regions (P2.1, P4-P6) and improved accuracy from 17.0 \u00c5 (M2/Rosetta) to 11.2 \u00c5 (full MCM) for these regions, with global accuracy improving to 7.6-8.9 \u00c5 compared to 9.6 \u00c5 for the original submission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide rigorous validation through blind prediction. The improvement in accuracy after MCM refinement (C86-C87) is documented in Table 1 and Figure 3F. The blind nature of the test eliminates potential bias. This result strongly supports the method's ability to detect and correct structural errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MCM reveals that the ligand-free c-di-GMP riboswitch aptamer samples the ligand-bound docked conformation at nanometer resolution, with matching tertiary proximity fingerprints between states (Mg2+-dependent, disappearing without Mg2+), though modeling suggests the ligand-free state primarily adopts extended conformations with transient docking (9.8 \u00c5 vs 6.8 \u00c5 heterogeneity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C93-C101 are supported by MOHCA-seq data in Figure 4A-B showing matching proximity patterns between ligand-bound and ligand-free states. The Mg2+ control (C97) validates that signals are not artifacts. The modeling (C99-C101) provides visualization but the primary conclusions appropriately rely on experimental data. This extends prior SAXS/FRET studies with nucleotide-resolution information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The glycine riboswitch ligand-binding domain shows preformed six-helix secondary structure and tertiary proximities both within and across aptamers in the absence of glycine (Mg2+-dependent), with these proximities critically dependent on a leader sequence that stabilizes the K-turn linker, and modeling revealing substantially more conformational variance than the ligand-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 are supported by MOHCA-seq data in Figures 5A-B and 5D-E. The comparison with and without leader sequence (C108) provides mechanistic insight into the structural determinants of preformed structure. The Mg2+ control (C106) validates the signals. This reveals unexpected preformed tertiary structure in a riboswitch previously thought to undergo large conformational changes upon ligand binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "MCM reveals striking similarities between ligand-bound and ligand-free AdoCbl riboswitch aptamer states, with identical secondary structure and reduced but not absent tertiary proximities without ligand, with mutational analysis showing that a key A-minor contact is necessary for ligand binding but not global proximities, suggesting ligand-free proximities arise from conformational preferences encoded in junctions rather than direct tertiary contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 are supported by MOHCA-seq data in Figure 6A and mutational analysis in Figure 6C-D. The A124U/A125U mutant experiment (C114) provides mechanistic insight by separating ligand binding from global structure. The interpretation about junction-encoded preferences (C115) is a reasonable inference from the data. This resolves long-standing controversies about this riboswitch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "MCM reveals a loose structure for the HoxA9 IRES domain with a core four-way junction aligned by a pseudoknot (pk3-4), defined at 19.5 \u00c5 resolution, with modeling converging to similar structures with or without explicit pseudoknot constraints, representing the only technique able to resolve this heterogeneous 176-nt ncRNA's global structure in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C116-C122 are supported by M2 and MOHCA-seq data in Figure 7A-B and modeling in Figure 7C-D. The pseudoknot identification (C118) is independently supported by MOHCA-seq. The convergence of models with different secondary structures (C121) validates the resolution estimate. The claim about MCM being the only applicable technique (C122) is reasonable given the conformational heterogeneity. C123 is appropriately labeled as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "MCM offers a sequencing-based route to determining ncRNA 3D structure applicable to functionally important but potentially heterogeneous states, addressing a gap in understanding whether preformed tertiary structures are generally sampled in solution, though computational modeling of heterogeneous ensembles remains an open problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C89-C92 establish the significance and limitations of the work. The application to heterogeneous ligand-free states (demonstrated in results for riboswitches) supports C7. The acknowledgment that ensemble modeling is an open problem (C92) is appropriate and honest about limitations. The conclusions are appropriately based primarily on experimental data rather than modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript establishes the historical context and current state-of-the-art in ncRNA structure determination, including the achievements and limitations of classical biochemical approaches, recent advances in chemical mapping and M2 methods, the RNA-puzzles framework for rigorous benchmarking, and the specific limitations of the prior MOHCA-gel method that motivated development of MOHCA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C23 provide comprehensive background supported by appropriate citations. The description of RNA-puzzles (C15-C20) establishes the rigorous benchmarking framework used in the study. The limitations of MOHCA-gel (C21-C23) justify the need for MOHCA-seq. This contextual information is well-documented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "A few weak signals in proximity maps not predicted by crystal structures may be caused by perturbations from radical source attachment or conformational dynamics of the RNA or ~11 \u00c5 benzyl-thiourea linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is appropriately labeled as speculation. While the proposed explanations are plausible, no direct experimental evidence is provided to distinguish between these possibilities. The authors appropriately acknowledge this uncertainty and note that the modeling can filter out inconsistent constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "MCM models of the HoxA9 IRES domain provide fiducial landmarks for upcoming cryo-EM studies with the ribosome and other partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is appropriately labeled as speculation about future utility. The statement is reasonable given that the models define the global structure of the isolated domain, which would provide useful starting points for interpreting cryo-EM data of complexes. The models are made publicly available.",
+    "result_type": "MINOR"
+  }
+]

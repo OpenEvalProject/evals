@@ -1,0 +1,1974 @@
+{
+  "submission": {
+    "id": "ee9fed3c-8ca7-4feb-8ce4-06f0d7014e43",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:39:01.355894Z",
+    "updated_at": "2025-11-29T03:39:01.355894Z"
+  },
+  "content": [
+    {
+      "id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "submission_id": "ee9fed3c-8ca7-4feb-8ce4-06f0d7014e43",
+      "content_type": "manuscript",
+      "content_text": "# Constraint and divergence of global gene expression in the mammalian embryo\n\n## Authors\n\n- Noah Spies<sup>1</sup>\n- Cheryl L Smith<sup>1</sup>\n- Jesse M Rodriguez<sup>3</sup>\n- Julie C Baker<sup>2</sup>\n- Serafim Batzoglou<sup>3</sup>\n- Arend Sidow<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Pathology Stanford University School of Medicine Stanford United States\n2. Department of Genetics Stanford University School of Medicine Stanford United States\n3. Department of Computer Science Stanford University Stanford United States\n4. Biomedical Informatics Program Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe effects of genetic variation on gene regulation in the developing mammalian embryo remain largely unexplored. To globally quantify these effects, we crossed two divergent mouse strains and asked how genotype of the mother or of the embryo drives gene expression phenotype genomewide. Embryonic expression of 331 genes depends on the genotype of the mother. Embryonic genotype controls allele-specific expression of 1594 genes and a highly overlapping set of cis-expression quantitative trait loci (eQTL). A marked paucity of trans-eQTL suggests that the widespread expression differences do not propagate through the embryonic gene regulatory network. The cis-eQTL genes exhibit lower-than-average evolutionary conservation and are depleted for developmental regulators, consistent with purifying selection acting on expression phenotype of pattern formation genes. The widespread effect of maternal and embryonic genotype in conjunction with the purifying selection we uncovered suggests that embryogenesis is an important and understudied reservoir of phenotypic variation.\n\n## Introduction\n\nMulticellular animals develop via complex pattern formation processes that unfold during embryogenesis, with gene regulation playing a central role. Surprisingly, the impact of genetic variation on gene regulation and the relative importance of the genetic mechanisms underlying regulatory variation in mammalian embryogenesis remain undefined. There are four broad categories of genetic mechanisms of gene expression regulation: imprinting, parental effects, cis-regulation, and trans-regulation. All of these are potentially subject to natural selection and provide genetic windows into the forces that shape gene regulatory evolution. Here, we quantify their impact and relevance in mammalian embryogenesis by asking which of these genetic mechanisms reveal evolutionary divergence or constraint since the last common ancestor of two distantly related mouse strains, C57BL/6 (B6) and Cast/Ei (Cast).\n\nGenomic imprinting is a well-studied form of parent-of-origin-dependent gene expression that produces strongly biased allelic expression patterns in offspring according to the parental source of the inherited allele. The progeny's imprinted gene expression patterns result from epigenetic modifications put in place in the previous generation and reflect the particular genetic architecture at these specialized loci. A recent genome-wide survey estimated that fewer than 200 genes are imprinted in mice and humans (Babak et al., 2008). Imprinting is thought to play a critical role in early embryonic and placental development in mammals and has been shown to influence post-natal health and behavior [Reviewed in Peters (2014)].\n\nRelated to but distinct from imprinting is the concept of parental effects. Parental effects produce phenotypic variation that depends, directly or indirectly, on the genotype of either the mother or father, rather than that of the offspring. Therefore, the resulting phenotypic patterns lag a generation behind the genetic transmission of the causal variants. The most well-studied parental genetic effects are caused by deposition of maternal transcripts into the egg prior to fertilization, resulting in differences in early embryonic development depending on the genotype of the mother. Certain genes have also been shown to respond to maternal influence after birth through genetically defined maternal behaviors (Weaver et al., 2004). Because of the small contribution, through the sperm, of the paternal transcriptome to the fertilized zygote, and because of the stronger maternal contribution to child rearing in most model organisms, parental effects are typically thought of as synonymous with maternal effects, although true paternal effects are known to exist (Rando, 2012).\n\nMaternal effects have been shown to be important during embryonic development, leading to differences in the birth weight of mice depending on the genotype of the mother (Cowley et al., 1989; Wolf et al., 2011). However, neither the causal molecular mechanism for these effects in the mother nor the responding genes in the embryo have been identified and few studies to date have discriminated between prenatal and postnatal effects. Maternal effects likely contribute to the heritability of complex traits but have been confounded with family structure in mouse as well as human studies (Mott et al., 2014).\n\nGenetic variants affecting gene expression are classified into cis or trans, depending on whether they act on the gene copy on the same chromatid (cis) or on both chromatids equally (trans). Regulatory variants near their target genes usually act in cis, by modifying the activity of a promoter or enhancer, but very occasionally act in trans if they affect a gene product that regulates a nearby locus. One approach to quantifying cis and trans regulation in model organisms involves assaying gene expression in two parental lines compared to allele-specific expression (ASE) in the hybrids (Wittkopp et al., 2004) and asking whether alleles are regulated differently in the parentals compared to the hybrids. In adult flies and mice, these analyses have demonstrated that cis and trans regulatory variants frequently target the same genes, often with opposite, compensatory effects on the target's expression (McManus et al., 2010; Goncalves et al., 2012). Recent genome-wide studies of ASE patterns across many individuals have demonstrated the ability of high-throughput sequencing methods to directly identify genes with cis-regulatory variants (Montgomery et al., 2010; Pickrell et al., 2010).\n\nAnother method to quantify cis- and trans-regulatory variation is analysis of expression quantitative trait loci (eQTL) (Schadt et al., 2003). eQTL are identified as genetic loci whose genotypes correlate with gene expression changes across a number of genetically heterogeneous individuals. Genome-wide eQTL studies have demonstrated that the strongest genetic variation in expression regulation generally occurs in variants located proximally to their target genes, presumably acting in cis. While typically fewer in number, trans-regulatory variants affect both alleles of each target gene and can affect expression of many genes simultaneously, resulting in a large aggregate effect.\n\nASE and eQTL approaches have been applied widely in adult tissues in humans and model organisms. However, these approaches have not yet been applied to understand the global relationship between genetic variation and gene expression during mammalian embryogenesis, and while imprinting has been studied extensively, the contribution of maternal effects on mammalian embryonic gene expression has never been addressed. For several reasons, it is likely that patterns of regulatory divergence differ between embryos and adults. First, eQTL studies have demonstrated dynamic trans-regulatory variation during Caenorhabditis elegans larval development (Francesconi and Lehner, 2014). Second, recent studies in flies and fish have demonstrated higher expression of more ancient conserved genes as well as more conserved gene expression patterns during embryogenesis compared to the adult (Domazet-Lo\u0161o and Tautz, 2010; Kalinka et al., 2010). This suggests that the number of cis- as well as trans-eQTL should be lower in embryos compared to adult.\n\nHere, we quantify evolutionary gene regulatory divergence between B6 and Cast during embryogenesis, addressing each of the four regulatory architectures. We focus on embryonic day 11.5 (E11.5), which is equivalent to roughly 40 days of gestation in human. It is a time characterized by organogenesis, rapid growth of the brain and limbs, increasingly complex and localized pattern formation, and consequently substantial constraints on allowable phenotypic variation. An ASE/eQTL hybrid approach facilitates quantifying the different types of regulation and their effects on expression variation, revealing unique and important features of gene regulatory architecture during mammalian embryonic development.\n\n## Results\n\nFor this study, we chose two inbred strains derived from geographically separate subspecies of Mus musculus: C57BL/6J (B6), the classic inbred mouse reference strain, which was derived from European mice, and CAST/EiJ (Cast), which was derived from the Southeast Asian Mus musculus castaneus. Inbreeding caused random subsets of alleles segregating in their ancestral populations to become fixed, and as a consequence the two strains exhibit one single nucleotide polymorphism (SNP) difference every 120 bp on average (Keane et al., 2011).\n\nWe collected 16 E11.5 F1 embryos obtained from reciprocal crosses between B6 and Cast (Figure 1). We profiled genome-wide gene expression using a 3\u2032-biased RNA sequencing method, 3SEQ (Beck et al., 2010), in order to maximize SNP coverage in the 3\u2032 UTRs, where the average SNP density is \u223c1 SNP per 170 bp (compared to 1 SNP per 265 bp in the coding sequence). Mapping of reads separately against the Cast (Keane et al., 2011) and B6 genomes allowed us to eliminate reference mapping bias (Figure 2\u2014figure supplement 1) as the average fraction of reads supporting the B6 allele (B6 allele fraction, \u2018BAF\u2019) was 0.502. Overall, out of a possible 6917 genes with sufficient reads covering SNPs, 1594 (23%) showed significant ASE (p < 0.01, paired t-test, Bonferroni corrected; Figure 2A,B). We next backcrossed F1 mice (derived from female B6 by male Cast crosses) with B6 parentals to obtain N2 embryos. We harvested 154 N2s at E11.5, performed 3SEQ, and quantified ASE in the approximately 50% of embryos that were heterozygous at each gene. There was excellent agreement between average BAF estimates from F1s and N2s (Figure 2C; rho = 0.77).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig1-v2.jpg)\n\n**Figure 1.:** (A) Reciprocal crosses of B6 and Cast parents were used to generate F1 hybrid embryos. (B) F1 hybrid adults were backcrossed to B6 to generate N2 embryos via reciprocal crosses of B6 females with F1 males and F1 females with B6 males. Chromosomal regions inherited from a B6 parent are black and Cast regions are red. (C) Example genotypes at a controlling genetic locus, its corresponding target gene, and resulting gene expression levels for different types of gene regulatory variation assayed. Allele-specific expression (ASE) and imprinting are measured by allele-specific read counts, whereas other types measure total gene expression levels. X: X chromosome; Y: Y chromosome; m: mitochondrial DNA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig2-v2.jpg)\n\n**Figure 2.:** B6 allele fraction (BAF) for (A) non-ASE gene Stmn4, (B) ASE gene Ascc1. Each point represents a single embryo, grouped by cross (F1 embryos on left, N2 embryos on right). Cross mother is listed first. Bars are mean BAF and 95% confidence intervals. (C) Correlation of average BAF between F1 and N2 embryos. Significant ASE genes (called using union of F1 and N2 data) are red. Point size corresponds to relative expression level. (D) Transition from fetal (Hbb-bh1, Hbb-y) to adult (Hbb-b2, Hbb-b1) beta-globins, shown as fraction of total expression of all beta-globins, averaged across individuals by time point (somite number). (E and F) Divergent temporal regulation for B6 and Cast alleles of Hbb-b1 (E) and Hbb-b2 (F) in heterozygous N2 mice. (G and H) BAF for imprinted genes Igf2 (G) and H13 (H). (I) Significantly imprinted genes (red, with 95% confidence intervals; n = 31) clearly separate from non-imprinted genes (gray, n = 8261; Figure 2\u2014figure supplement 2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Histogram of BAF across genes with SNP coverage, in 0.01 increments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** ASE time courses for top eight genes (A-H) exhibiting significant dependence of ASE on somite number. Left panel, BAF; right panel, normalized expression. Only heterozygous embryos are shown in the left panels.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Magnification of the clusters close to points (1,0) and (0,1) in the context of the same plot shown in Figure 1I, where BAF is plotted as a function of the direction of the cross. Mother's strain is listed first according to convention. (B) Plot of the average difference in BAF between the two reciprocal crosses, for each of the F1 and N2 crosses. Each gene is a point. For each gene, for F1 embryos, average BAF of embryos from CastxB6 cross was subtracted from average BAF of embryos from B6xCast cross. For N2 embryos, only embryos heterozygous at the assayed gene are considered; for each gene, average BAF of embryos from F1xB6 cross is subtracted from average BAF of embryos from B6xF1 cross. Significantly imprinted genes, where the two crosses give a large difference, are in red near (1,1) or (\u22121,\u22121). If imprinting were not usually Boolean (either fully on or off) but rather a quantitative phenomenon in which different tissues respond differently to the imprint or change the imprint, the significant genes would reside in the tails of a continuous distribution and not be so clearly separated from the bulk of the non-imprinted genes.\n\nTo quantify developmental progression for each embryo at the time of harvest, we counted the number of somites, which form every 90\u2013120 min (Saga and Takeda, 2001) and ranged from 42 to 57 in our embryos. Of the 7712 genes with moderate expression of at least 5 reads per million (RPM), 1796 genes showed significant correlation between total expression and somite number (q < 0.05, Spearman correlation). Genes changing over this developmental time course were enriched for a number of gene ontology (GO) categories indicative of important developmental processes occurring at E11.5, including synaptogenesis (q = 2.2 \u00d7 10\u22128, GOrilla) and eye lens formation (q = 5.8 \u00d7 10\u22127). A third significant GO category, blood microparticles (q = 9.6 \u00d7 10\u22127), includes the globins, which are beginning to undergo the transition from fetal to adult form over the developmental time period we assayed (Noordermeer and de Laat, 2008) (Figure 2D).\n\nBy correlating ASE with somite number, we identified twelve genes that show significant differential regulation between B6 and Cast alleles as a function of developmental timing (q < 0.10, Spearman rho). Globins and functionally related genes were well represented in this set, which included both major (Hbb-b1) and minor (Hbb-b2) adult beta globins. Both genes increase in absolute level and relative expression compared to fetal beta globins (Figure 2D; Figure 2\u2014figure supplement 2), but the B6 allele of the major form is delayed compared to the Cast allele (Figure 2E; rho = 0.86, q < 10\u221214), whereas the opposite occurs for the minor form (Figure 2F; rho = \u22120.51, q = 0.02). By the end of our time course, the alleles are equally expressed (Figure 2E,F). Transferrin also increases in absolute expression but the Cast allele is delayed compared to the B6 allele (rho = \u22120.46, q = 0.02; Figure 2\u2014figure supplement 2). These results suggest that compensatory mechanisms have evolved in one or both strains to keep the overall regulatory dynamic of oxygen physiology stable during this important switching period.\n\nComparison of embryos from either side of the reciprocal cross allowed us to identify parent-of-origin dependent ASE patterns indicative of imprinting. Consistent with previous studies in mouse embryos (Babak et al., 2008), we found a total of 31 genes with significant imprinting (Figure 2G\u2013I; p < 0.01, binomial test, Bonferroni corrected), all of which had been previously identified. We note that the clear separation of most of the imprinted loci from the noise of the bulk of all expressed genes, with few exceptions (Figure 2I; Figure 2\u2014figure supplement 3), suggests that most imprinting generally acts uniformly across the embryo, as expected from the methylation-based mechanism that sets the expression state of the regulated allele pre-zygotically (Reik et al., 1987).\n\nImprinting is not the only molecular mechanism that results from the mother\u2013offspring resource allocation conflict in mammals (Moore and Haig, 1991). To explore other genetically-encoded parental effects, we took advantage of the backcross design, in which N2 offspring have genotypically distinct parents. We identified a large number (n = 331) of embryonically expressed genes whose total expression levels differed significantly depending on the genetic background of the mother (Mann Whitney U test, p < 0.01, Bonferroni corrected), irrespective of the genotype of the embryo (Figure 3A,B; Supplementary file 1). For example, Angptl4 expression increases 52% from an average of 107 RPM in embryos with an F1 mother to an average of 163 RPM in embryos with a B6 mother (Figure 3C). As for the magnitude of the effect, these maternal effect target genes exhibited up to a 3.5-fold (e.g., Polm: 2.5\u201311-fold at a 95% confidence interval) difference in total expression level depending on genotype of the mother.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig3-v2.jpg)\n\n**Figure 3.:** (A) Quantile\u2013quantile (qq) plot for maternal effect target genes (black circles), compared to cis-expression quantitative trait loci (eQTL) (gray circles). (B) Expression by embryo for the top 20 maternal effect target genes, separated by maternal genotype. For each gene, samples are grouped by F1 mother (left) and B6 mother (right). (C) Total expression for Angptl4 for embryos grouped by embryonic genotype and maternal genotype. Error bars indicate mean and 95% confidence intervals.\n\nWe were able to exclude a number of alternative mechanisms to explain these maternal effects. All F1s used for the backcross were derived from B6 female by Cast male matings, and therefore all N2 embryos carry the B6 mitochondrial genome, ruling out a confounding mitochondrial effect. The maternal effects were unchanged when considering sex, X chromosome genotype, litter, and developmental stage. Furthermore, for the vast majority of genes with SNP coverage, we were able to verify that maternal effect target genes were not imprinted or the result of contamination by maternally expressed transcripts. We found that maternal genotype by itself was a better predictor of the maternal effects than maternal genotype in conjunction with embryonic genotype at any of the imprinted loci, indicating that the maternal effects were not the result of trans effects downstream of imprinted genes. To exclude the possibility of a batch effect in our 3SEQ data, we used quantitative RT-PCR (qPCR) to confirm 4 genes as maternal effect target genes.\n\nThe most significant of the maternal effect target genes, Angptl4 (Figure 3C; p = 8 \u00d7 10\u221213 by 3SEQ, p = 1 \u00d7 10\u221211 by qPCR), functions in lipid metabolism and energy homeostasis, suggestive of a role in responding to the placental nutrient supply (Yoshida et al., 2002). Similarly, Gpx3 (Figure 3B; p = 5 \u00d7 10\u221212 by 3SEQ, p = 6.6 \u00d7 10\u22124 by qPCR), a glutathione peroxidase, is an antioxidant enzyme that acts in fat and glucose metabolism and has been associated with obesity and type 2 diabetes in mouse and human (Lee et al., 2008; Chung et al., 2009). Both of these genes are transcriptionally regulated by the peroxisome proliferator-activated receptor PPAR\u03b3.\n\nTo examine how genetic variation carried by the embryo itself affects gene expression phenotype, we performed eQTL analyses by correlating expression levels of each measurably expressed gene (\u2018target\u2019) with N2 embryo genotypes (either B6/Cast or B6/B6) at each recombination-defined locus (\u2018controlling locus\u2019). Genotyping and recombination analysis based on the expressed SNPs (Figure 4A) divided the autosomes into 986 marker region blocks, each separated by one or more recombination events that define candidate controlling loci. We tested every controlling locus for correlation with gene expression of every gene. At a genome-wide significance level of q < 0.01, we identified a total of 1034 eQTL.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example N2 embryo data used to call recombination events for chromosome 2. Each point represents BAF for a single gene. The HMM calls green regions as heterozygous, blue regions as homozygous, with two recombination events occurring in the short intervening white regions. Only genes with sufficient read coverage of single nucleotide polymorphisms (SNPs) are shown as points; genes with under 20 SNP reads are still genotyped, based on neighboring genes. (B) Overview of all eQTL, arranged by genomic position, shaded by log10 p-value. cis-eQTL, along the diagonal, show the only appreciable signal. (C) Predicted BAF from transformed expression levels in heterozygotes and homozygotes (x-axis) correlate with BAF measured by ASE (y-axis).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** qq plots from random forest model that simultaneously considers age (number of somites) and genotype. Left, all gene\u2013marker pairs; right, gene\u2013marker pairs only in trans.\n\n1017 of these eQTL (98%) mapped close to the target gene (Figure 4B), suggesting cis-regulation as the underlying mechanism. A gene's difference in expression between heterozygotes and homozygotes could accurately predict its allelic ratio as assayed by ASE (Figure 4C). This high correlation (rho = 0.58, n = 4821; rho = 0.70 when considering only the n = 1000 genes with the highest allele-specific read coverage) provides a systematic validation of the large effect of embryonic cis-regulatory polymorphisms on expression phenotype. Note that our study has sufficient power to identify substantial numbers of eQTL when performing this all\u2013loci\u2013by\u2013all\u2013genes analysis. If, instead, we were focused specifically on only studying cis-regulation, we could have increased our power to identify cis-eQTL by only comparing genes to their nearby loci, thereby reducing the number of statistical tests being performed.\n\nIn contrast to the large number of cis-eQTL, we found few trans-eQTL regardless of FDR cutoff (Figure 5A). After the top 3 (each comprising a controlling locus\u2013target gene pair, e.g., Figure 5B), significance drops off rapidly compared to background, unlike for the cis-eQTL (Figure 5C). To explore this lack of trans effects further, we reasoned that a set of genes with a high prior probability of having downstream effects might be enriched for trans-controlling loci. Our cis-eQTL/ASE loci comprise a large set of such candidates because differences in expression levels of a gene product may propagate to downstream targets (Yvert et al., 2003). However, we found that neither strong cis-eQTL nor ASE loci are enriched for trans-eQTL. Finally, application of a random forest model (Michaelson et al., 2010; Francesconi and Lehner, 2014) that simultaneously considers developmental progression (number of somites) and genotype also did not enrich for trans-eQTL (Figure 4\u2014figure supplement 1). We estimate that the number of comparable trans-eQTL is about 1% that of cis-eQTL.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05538/elife-05538-fig5-v2.jpg)\n\n**Figure 5.:** (A) Number of cis-eQTL (black) and trans-eQTL (red) as a function of FDR. Dashed line indicates number of false positive eQTL expected. (B) eQTL for Pop1, the most significant trans-eQTL target (vertical blue line). Candidate controlling loci are shown across the x-axis in genome order; only the peak on Chr14 is significant. Chromosomes are shaded in alternating background colors. (C) qq plot for all gene\u2013marker pairs (black) and gene\u2013marker pairs only in trans (red). Gray straight lines are y = x, x axis is expected p-values based on permutations. (D) Trans-eQTL hotspots, shown as the distribution of significant target genes per marker region (p < 0.005) across all marker regions (red) or only marker regions containing the top 50% of ASE genes (blue). Gray shows the expected distribution if there were no hotspots. (E and F) Comparison of our study with that of eQTL in adult tissues as a function of FDR. (E), Trans-eQTL as a proportion of total eQTL. (F), total number of eQTL. GeneNetwork sample ID indicated in parentheses. (G) Evolutionary constraint (GERP score) in coding regions (CDS) for the most significant (red; n = 1347) and non-significant (blue; n = 3726) cis-eQTL genes.\n\nBecause a trans-regulatory effect is potentially distributed over several target loci, we asked whether there was evidence for \u2018hotspots\u2019, or controlling loci whose genotypes correlate with small expression differences at numerous target genes (Brem et al., 2002; Schadt et al., 2003). Permutation tests revealed a significant signal (p < 10\u221224 KS test, Figure 5D) in support of hotspots, but no specific candidates. Reinforcing the above result that ASE genes do not act as trans-controlling loci, strong ASE genes were not substantially more likely to act as hotspots than weaker ASE genes (Figure 5D; p = 0.20, KS test). Therefore, at this stage of embryogenesis, we found no evidence for downstream propagation of genetically controlled expression level differences.\n\nWe hypothesized that the paucity of trans-eQTL was due to increased evolutionary constraint of regulatory networks during embryonic development. Since trans-eQTL have previously been found to have weaker effects than cis-eQTL (Montgomery and Dermitzakis, 2011), an alternative hypothesis is that we were simply underpowered to find trans-eQTL. To distinguish these possibilities, we obtained genotype and expression data from previously published eQTL studies performed in adult mouse tissues (Wang et al., 2006; Yang et al., 2006; Chen et al., 2008). After sampling individuals to match the same number of total eQTL found at an FDR of 0.05, we found that all previously published studies conducted in adult tissues showed a substantially higher proportion of trans-eQTL than did our embryos (Figure 5E,F). This result was robust to varying the sample size from the previously published data, to whether p-values or FDR was used to assess significance, and to varying the thresholds for comparing proportions of trans-eQTL across the ranked eQTL. Based on this result and our high power to detect cis-eQTL even at low FDR, we conclude that embryonic trans-eQTL are subject to elevated selective constraint compared to adult tissues.\n\nIf cis-regulatory divergence in embryos is strongly buffered and does not lead to downstream trans-regulatory effects, why does embryogenesis tolerate such a large number of cis-effects in the first place? We hypothesized that divergent cis-regulation between strains occurs preferentially in genes with lower evolutionary constraint. In support of this hypothesis, ASE genes were significantly depleted of GO categories related to organ development (p = 6 \u00d7 10\u22125, q = 0.05), as well as gene regulation (p = 1 \u00d7 10\u22124, q = 0.07), and transcription factors (p = 3 \u00d7 10\u22125, q = 0.03), demonstrating constraints on variation in core regulatory genes. Furthermore, we found that evolutionary constraint at the DNA sequence level (Cooper et al., 2005; Davydov et al., 2010) was lowest in the most significant cis-eQTL (Figure 5G; rho = \u22120.14, p = 6 \u00d7 10\u221213; n = 2788). Similarly, ASE magnitude of effect correlated negatively with evolutionary constraint (rho = \u22120.10, p = 9 \u00d7 10\u22128, n = 2612), whereas cis-eQTL in adult mouse tissues showed no correlation (|rho| < 0.05). Thus, the strong enrichment for cis-eQTL/ASE in less conserved genes is unique to embryos.\n\n## Discussion\n\nWe have performed the first, to our knowledge, comprehensive global analysis of the effects of genetic variation on mammalian gene expression during embryogenesis. Our experimental design allowed us to simultaneously assay the effects of genetic variation on imprinting, maternal effects, cis-regulation, and trans-regulation. Supporting the high quality of our data and analytical methods, we found good agreement between related measurements of cis-regulatory variation when comparing ASE in F1 embryos (sequenced at high coverage) with ASE in N2 embryos (sequencing many individuals), and when comparing ASE with cis-eQTL.\n\nOur two mouse strains exhibit SNPs at 17.7 million sites, about sixfold more than the heterozygosity in African humans (1000 Genomes Project Consortium, 2012). The vast majority of these polymorphisms have accumulated as a result of genetic drift (Kimura, 1983) over the time since the present-day European and Southeast Asian M. musculus populations were separated from their common ancestral population. Of the small subset of polymorphisms that affect molecular function, some may produce an advantageous phenotype subject to positive selection, some are deleterious to organismal fitness and are therefore subject to purifying selection, and yet others are selectively neutral (subject to drift). Missense polymorphisms are severely underrepresented genome-wide and exhibit lower derived allele frequencies relative to other genomic sites (1000 Genomes Project Consortium, 2012), reflecting the global predominance of purifying selection. This signal of purifying selection is weaker but still substantial for noncoding gene regulatory sites (ENCODE Project Consortium, 2007).\n\nGiven these known dynamics, our study sheds light on the microevolution of gene regulation. Gene expression divergence of the type we quantified in this work occurs as a result of polymorphisms in regulatory regions or in expressed regulatory gene products. The former manifests as cis-effects, the latter as trans-effects. Because we focused on embryonic gene expression, two competing hypotheses as to what patterns we might find were plausible. Under the first hypothesis, the substantial DNA sequence divergence between mouse strains would be reflected in many expression differences. The alternative hypothesis is that few expression changes would be detected between strains. This hypothesis is suggested by the developmental hourglass model (Domazet-Lo\u0161o and Tautz, 2010; Kalinka et al., 2010), which posits that gene expression patterns are most highly conserved in the middle of embryonic development (the so-called \u2018phylotypic stage\u2019).\n\nIn support of the first hypothesis, we found substantial numbers of significant eQTL, demonstrating that a sizeable subset of all segregating polymorphisms causes expression changes. However, we found that nearly all acted in cis, rather than trans. This depletion of trans-regulatory variation is substantially stronger than that observed across several adult mouse tissues. In contrast to adult tissues, eQTL acting in our embryos were correlated with lower DNA sequence conservation, supporting the conclusion that evolutionary constraint on gene expression regulation is markedly stronger during mammalian embryogenesis than in the adult. In addition, the identified cis-expression changes do not themselves cause detectable trans-effects. These findings support the idea of the developmental hourglass model (Domazet-Lo\u0161o and Tautz, 2010; Kalinka et al., 2010) while suggesting that substantial neutral divergence of molecular phenotype (gene expression) can accumulate in the form of cis-regulatory variation even under strong evolutionary constraint at the organismal (embryonic) level.\n\nPrevious studies have shown enrichment for trans-regulation when using an eQTL model that considers both genotype and stage during C. elegans larval development. Perhaps because of the nearness of our embryos to the mouse phylotypic stage, or because of fundamental differences between mice and worms, we found that incorporating developmental timing (i.e., somite number) into our eQTL model did not alter the balance between cis- and trans-regulation. Somite number was, however, correlated with significant changes in ASE, indicating differential developmental timing of gene expression between the Cast and B6 strains. In particular, we found that alleles of several hemoglobin-related genes, including the adult beta globins and transferrin, were expressed at differing levels between the strains at early stages of the fetal-to-adult hemoglobin transition, but then equalize by the end of our developmental time course. These results demonstrate our ability to identify subtle tissue-specific expression differences between strains, despite sequencing from whole embryos containing a mix of tissues.\n\nIt is formally possible that some of the significant eQTL identified here act in trans, even though their target genes are located in genomic proximity. However, the good agreement between eQTL and ASE suggests that the majority of our local eQTL are indeed cis-eQTL. Furthermore, because there is no reason to believe that the proportion of locally-situated but trans-acting eQTL is higher in embryos than in adults, it does not materially alter our conclusions if a small number of our local eQTL do act in trans.\n\nBecause of the large number of embryos collected and individually sequenced for our study, we were able to accurately quantify ASE mean and standard deviation for thousands of genes. When stratifying embryos by side of cross, we found that nearly all imprinted genes showed very strong allelic bias, meaning that the epigenetically silenced allele is expressed at only low levels across the embryo. Consistent with previous studies that found few genes exhibiting tissue-specific imprinting [apart from those found in the extra-embryonic tissues; reviewed in Prickett and Oakey (2012)], we observed no weak allelic bias that might result from averaging effects across tissues.\n\nIn addition to the clear signature of parent-of-origin-dependent allelic expression, we also found strong maternal effects on total gene expression levels for hundreds of genes. Whereas most previous studies have employed F1 intercrosses in which parental genotypes are indistinguishable, we used a backcross design, enabling us to track the potentially important sources of genetic variance contributed by the parents. The observed maternal effects are restricted to pre-natal influences and separate from imprinting and mitochondrial effects.\n\nOur results demonstrate that the genotype of the mother plays an important role in regulating gene expression, not just after birth, as has been previously suggested, but also during embryogenesis, affecting the expression of hundreds of genes (Bult and Lynch, 1997; Weaver et al., 2004; Wolf et al., 2011). The implications of this finding are significant for human genetic twin, familial, and genome-wide association studies. What is usually thought of as familial environment [e.g., Grundberg et al. (2012)] may have a substantial heritable genetic component exerting an effect not on the generation carrying it but on the offspring.\n\nParental genetic influences on offspring phenotype have been implicated in growth regulation and adult-onset obesity- and diabetes-related diseases but the gene targets of such effects have not been identified (Jarvis et al., 2005). While we cannot rule out an epigenetic or RNA-mediated mechanism underlying this regulation, it is more likely acting through the placenta's role of transmitting nutrients, hormones or other factors to the embryo. This hypothesis is supported by the known functions of the most significant target gene, Angptl4, which responds to lipid metabolism and energy homeostasis, and participates in angiogenesis (Koster et al., 2005; Scott et al., 2012). We hypothesize that these maternal effect target genes continue to be expressed differently depending on maternal genotype, and may be at least partly responsible for the previously observed effect of maternal genotype on pre-natal growth (Cowley et al., 1989; Wolf et al., 2011).\n\nIn summary, using our hybrid ASE/eQTL approach we were able to assay all four types of genetic variation in gene expression regulation. We found that cis-regulatory variation caused the largest divergence in overall gene expression in mouse embryos, affecting over 1000 genes with up to sevenfold differences in expression levels between the strains. These cis-regulatory variants did not translate into trans-regulatory divergence, and we identified only \u223c10 trans-eQTL genomewide. Imprinting affected the allelic balance of dozens of genes, generally resulting in complete or nearly complete silencing of the inactive allele. Finally, we identified over 300 maternal effect target genes. The number of maternal effect targets, and their overall significance, are only slightly more modest than cis-regulatory effects, but nonetheless substantial, with approximately 1/3 as many genes involved, and maximal effect size of up to 3.5-fold difference or approximately 1/2 as large. Given this context, it is clear that maternal effects can play a substantial genetic role in determining embryonic gene expression patterns. We speculate that maternal effects contribute to evolutionary divergence, allowing expression heterogeneity in the embryo to build as a result of differences in the adult mother, where gene regulatory networks show less evolutionary constraint than in the developing embryo.\n\n## Materials and methods\n\n### Mouse strains and crosses\n\n6-week old mice were purchased from The Jackson Laboratory. All \u2018Materials and methods\u2019 were carried out in accordance with the Administrative Panel on Laboratory Animal Care protocol and the institutional guidelines set by the Veterinary Service Center at Stanford University.\n\nThe inbred strain C57BL/6J and wild-derived inbred strain CAST/EiJ were used in reciprocal crosses (Figure 1). C57BL/6J females were crossed with CAST/EiJ males to generate (B6 \u00d7 Cast)F1 hybrid embryos (n = 8), and CAST/EiJ females were crossed with C57BL/6J males to generate (Cast \u00d7 B6)F1 hybrid embryos (n = 8). (B6 \u00d7 Cast)F1 progeny were backcrossed to C57BL/6J in reciprocal crosses to generate 154 N2 embryos (F1 \u00d7 B6 = 65 and B6 \u00d7 F1 = 89). Individual embryos from 2 litters from each side of the F1 cross (2 B6 \u00d7 Cast and 2 Cast \u00d7 B6), and 12 F1 \u00d7 B6 litters and 18 B6 \u00d7 F1 litters from the N2 cross were analyzed.\n\nFor all crosses, following identification of a vaginal plug on the morning after mating (E0.5), males were removed; pregnant females were housed separately.\n\nWhole embryos were harvested at E11.5 and dissected to remove all embryonic membrane and placental material. Somite numbers were recorded for each embryo at the time of dissection.\n\n### Library preparation and sequencing\n\nTo isolate total RNA, individual embryos were homogenized in Trizol reagent (GibcoBRL/Invitrogen, Grand Island, NY) and RNA was extracted per manufacturer's directions. Poly(A)+ RNA was isolated using the Qiagen Oligotex Mini kit and 3SEQ libraries were constructed as described (Beck et al., 2010). For the N2 embryos, oligo(dT) and PCR primers were barcoded with Illumina multiplexing sequences. F1 data were produced in several sequencing batches, first on an Illumina GAIIx sequencer producing 76 bp or 80 bp reads, then on an Illumina HiSeq 2000 sequencer producing 101 bp reads. N2 data were produced only on the HiSeq 2000. Libraries from 12 individually barcoded N2 samples were pooled in equimolar amounts and sequenced in a single flow-cell lane to produce single-end 101 bp reads.\n\n### Read preprocessing\n\nPrior to read mapping, 3\u2032 poly(A) sequences likely to be derived from the mRNA poly(A) tail were trimmed using a procedure that tolerated some amount of sequencing error: we computed a score si for each position i in the read which was equal to the sum of the quality scores of each A after position i minus three times the sum of the quality scores of each non-A after position i. All bases after the highest-scoring position were trimmed if this would result in trimming at least 3 bases.\n\nThe first 18 bases and the last 7 bases of the HiSeq F1 reads were trimmed to make them the same length as the GAIIx reads. This was done to avoid read length being a confounding factor when analyzing ASE in F1. Only poly(A) stretches were trimmed from the N2 data.\n\n### Read alignment and filtering\n\nA M. m. castaneus genome was created in silico by applying the high-quality Cast SNPs (Keane et al., 2011) to the reference C57BL/6 genome mm9. For B6, we used the mm9 genome. For each of these two reference genomes, a transcriptome was computed using RefSeq annotations, including spliced transcripts of all genes separated by 200 nucleotides, and each spliced transcriptome was added to its reference genome sequence. Bowtie2 (Langmead and Salzberg, 2012) was used to map all reads to the composite genomes (Cast or B6 including spliced transcripts) with settings \u2018-k 200 \u2013score-min L,0,-0.10 \u2013rdg 2,2 \u2013rfg 2,2 \u2013mp 1,1\u2019. These settings recovered up to 200 sub-optimal genomic hits, allowing us to stringently filter reads derived from repetitive regions of the genome as follows: If the difference in edit distance (1 for each mismatch and 2 for each indel) between a read's best alignment and its second-best alignment was within 3, the read was discarded. Reads were also filtered out unless all best alignments in the composite genome corresponded to the same genomic position (e.g., if a read aligned equally well to an intergenic region and to a splice junction in the transcriptome). Each aligned read was then consolidated into a single genomic alignment, including intronic splice gaps.\n\nAfter filtering, each F1 dataset had an average of 15.8 million mapped reads, and each N2 dataset had an average of 1.2 million reads.\n\n### Expression quantification\n\nGene expression was quantified using only reads mapping to exons. Read counts were typically normalized by the total number of sequenced reads per library, multiplied by 1 \u00d7 106, resulting in RPM. For the eQTL analyses, genes were removed if over 5% of the mapped reads were filtered based on the second-best hit criteria above. Genes were also discarded if they matched the retrotransposed genes list compiled by UCSC (Kent et al., 2002). In the F1s, there were 13,574 genes with detectable expression (13,469 across N2s), 7554 of which passed the analysis threshold of 5 RPM (7712 in N2s).\n\nWe found Xist expression followed a bimodal distribution, and used this to identify females (robust Xist expression) and males (little or no Xist expression). All 5 genes significantly different between males and females, including Xist and its antisense transcript Tsix, were located on the X or Y chromosomes. At E11.5, embryos are just beginning sexual differentiation, so the small number of sex-specifically expressed genes is unsurprising. Because of the small number of affected genes, as well as the repetitiveness of the sex chromosomes, subsequent analyses were restricted to genes and marker loci on autosomes.\n\n### Genotyping\n\nGenes were assigned a preliminary genotype based on the proportion of B6-supporting reads, either \u2018unknown\u2019 if <20 SNP-covering reads were found, or homozygous or heterozygous otherwise. For each chromosome, preliminary genotypes were then fed through a Hidden Markov Model (HMM) that penalized transitions between the heterozygous and homozygous states. The HMM in effect smoothed the genotypes and allowed us to infer genotypes for unknown genes falling between confidently genotyped genes. A post-processing step assigned the \u2018unknown\u2019 genotype to genes with low read coverage falling near putative recombination sites, typically affecting only a small number of genes for each chromosome.\n\nWe combined adjacent genes with identical genotypes across all embryos into a total of 986 marker regions across the 19 autosomes. A more aggressive combining, allowing up to 5 recombination events across all N2 embryos, resulted in 286 marker regions. Downstream analyses used the consensus genotype in each embryo, assigning the unknown genotype where the number of homozygous and heterozygous embryos was close to equal.\n\n### GO\n\nGO enrichment analyses were performed with GOrilla (Eden et al., 2009), which enables easy visual inspection of results, and depletion analyses were performed using a hypergeometric test. Only expressed genes (or those with allele-specific read coverage) were considered.\n\n### ASE\n\nTo avoid the possibility of small insertions and deletions causing misalignment around SNPs, ASE was quantified using only high quality annotated SNPs that were at least 50 bp from an annotated Cast indel of any quality, based on the published mouse polymorphism resource (Keane et al., 2011). For reads covering multiple SNPs, each SNP received 1/n votes for a given genotype (Cast, B6 or other), to account for the low percentage of SNP positions with sequencing errors. For example, a read covering 3 SNPs, 2 of which match B6 alleles and 1 that matches neither the B6 nor Cast allele, would contribute 0.67 read votes to the B6 expression total. A read covering only a single SNP matching the Cast allele, would contribute a full 1 read vote to the Cast expression.\n\nBecause F1 and N2 ASE estimates largely agreed, ASE significance was estimated from the 170 pooled samples. Significance was assessed by subtracting the B6 read votes from the Cast read votes, and then normalizing the differences based on library-size. This was necessary because the F1 samples were sequenced to substantially more depth than the N2 samples.\n\nA paired t-test was then applied to test for significance of these differences against 0. This simple approach takes full advantage of the magnitude of difference between the alleles as well as the variance in allelic expression across the large number of samples sequenced in this study. We found that p-values calculated from the paired t-test correlated well with those derived by resampling, but were somewhat conservative. Hence, our estimates of ASE are likely to be slight underestimates. Additionally, genes were only called significant if their average BAF was less than 0.45 or greater than 0.55.\n\n### Maternal effect target genes\n\nMaternal effect target genes were identified by comparing expression normalized by library size from embryos with B6/B6 mothers to expression values from embryos with B6/Cast F1 mothers. We used a Mann\u2013Whitney U test to calculate the significance of this difference.\n\nBecause all F1 mothers used for the N2 backcross were derived from the B6 \u00d7 Cast side of the cross, all N2 embryos had B6 mitochondria. Maternal effects are similar in significance and direction when restricting analyses to only female embryos with two B6 X chromosomes, or when averaging expression across individuals in each litter. Furthermore, the effects are consistent across somite numbers, even for genes that change expression during development.\n\n### qPCR\n\nTo exclude batch effects as a potential cause of maternal effects, we used qPCR to validate candidate maternal effect target genes on an orthogonal platform. 0.5 \u03bcg total RNA per sample was reverse-transcribed into cDNA using Oligo(dT)20 primer and Superscript III (Invitrogen) in 20 \u03bcl reactions, according to the manufacturer's instructions. Following reverse transcription, each sample was treated with RNase H. 48.48 microfluidic dynamic array IFC chips (Fluidigm) were used to analyze the expression of 26 candidate maternal effect target genes and 15 control reference genes in 93 N2 samples. 1 \u03bcl of cDNA was pre-amplified using 2\u00d7 Taqman PreAmp Master Mix (Lifetech) and 50 nM of each primer pair in 5 \u03bcl reaction volume, according to the manufacturer's instructions. The cycling program was 10 min at 95\u00b0C followed by 10 cycles of 15 s at 95\u00b0C and 1 min at 60\u00b0C. Following pre-amplification, each reaction was diluted fivefold. RT-qPCR on the dynamic array chips was conducted on the BioMark system (Fluidigm). 5 \u03bcl sample pre-mix containing 2.5 \u03bcl of SsoFast EvaGreen Supermix with Low ROX (Bio-Rad), 0.25 \u03bcl of DNA Binding Dye Sample Loading Reagent (Fluidigm) and 2.25 \u03bcl of diluted pre-amplification samples, as well as 5 \u03bcl assay mix containing 2.5 \u03bcl of Assay Loading Reagent (Fluidigm), 2.25 \u03bcl EB Buffer (Qiagen) and 0.25 \u03bcl of 100 \u03bcM primer pairs (500 nM in the final reaction) were mixed on the chip using the IFC controller MX (Fluidigm). The thermal cycle was 60 s at 95\u00b0C followed by 30 cycles of 5 s at 96\u00b0C and 20 s at 60\u00b0C. A dissociation curve was also drawn for each primer pair.\n\nThe following eight control genes were chosen based on high consistency between Fluidigm chips: Smarcc2, Rnf216, Nxf1, Cnpy3, Pmvk, Trmt1, Fam149b, Farp1. These genes were used to normalize expression of the candidate maternal effect target genes using the standard curve method. Significance of the maternal effect was calculated using the Mann\u2013Whitney U test on the normalized expression values using a Bonferroni-corrected p = 0.05 cutoff. Because of low consistency between Fluidigm chips, we were only able to validate four maternal effect candidate genes.\n\n### eQTL\n\nBetween-sample read count comparisons showed some evidence of batch effects across N2 embryos, primarily at the level of sequencing lane. To control for these batch effects, we used PEER (Stegle et al., 2012) to normalize for both unknown covariates as well as the following known batch effects: embryo sex, sequencing lane, and somite count. For each gene and for each marker region, we performed a Wilcoxon rank-sum test comparing PEER-normalized expression in heterozygous and homozygous embryos. We found that the total number of significant eQTL was substantially higher using PEER-normalized read counts compared to simple library-normalized read counts, although the fraction of trans-eQTL was not significantly different. Results were also consistent when replacing the non-parametric ranksum test with the parametric t-test.\n\nTo remove the effects of correlated markers, downstream analyses used the most significant marker region on each chromosome for each target gene. To estimate false discovery rates, marker\u2013sample assignments were permuted and eQTL were called using an identical procedure to the unpermuted data. Cis-eQTL were defined as those eQTL for which the marker region resides on the same chromosome as the target gene, and trans-eQTL were thus defined as the eQTL for which the marker region is on a different chromosome as the target gene. While this is a conservative definition of trans-eQTL, we found no evidence of trans-eQTL residing on the same chromosome as the target gene.\n\n### ASE vs eQTL comparison\n\nWe estimated expected ASE (BAFpred) from total expression levels using the following transformation for each gene:\n\n$$\nBAF_{pred}=\\frac{BAF_{exp}}{2\\times(1\u2212BAF_{exp})},\u2009where\u2009BAF_{exp}=\\frac{\\mu_{B6/B6}}{\\mu_{B6/B6}+\\mu_{B6/BCast}},\n$$\n\nand \u03bcg are the mean total expression levels across all mice with genotype g at the gene of interest. The BAFpred transformation is required to estimate \u03bcCast/Cast from \u03bcB6/B6 and \u03bcB6/Cast. Because of variance in the estimation of \u03bcg, the predicted BAF can be larger than 1.0.\n\n### eQTL comparison with previous studies\n\nWe reanalyzed six previously published mouse eQTL datasets available from GeneNetwork (Wang et al., 2003). Array-normalized data were batch-normalized using PEER, then compared to genotype data provided by GeneNetwork. Because these previous studies used an intercross model with three possible genotypes, eQTL were called using a linear regression, analogous to the t-test in our backcross experiment.\n\n### Random forests\n\neQTL were also mapped using a random forest method (Michaelson et al., 2010). We used the normalized read counts as input to the random forest, and included marker genotype, sex, side of the cross, sequencing lane, and number of somites as predictors. For 5 N2 embryos, no somite count was recorded, and hence the total number of input samples is 149 instead of 154. Genotypes were coded as 0.5 for heterozygous B6/Cast, 1.0 for homozygous B6/B6, and 0.75 for missing genotypes. False discovery rates were calculated as above using permuted input data after identifying the best markers per chromosome. We found results were similar when using the variable selection frequency method (Michaelson et al., 2010) or the mean decrease in prediction accuracy method (Francesconi and Lehner, 2014).\n\n### Conservation\n\nWe found GERP scores broadly correlated among upstream, UTR, coding and downstream gene regions, and therefore show only the average coding sequence GERP score. We performed a Spearman correlation test to examine the hypothesis that GERP score is associated with cis-eQTL p-value and ASE effect size, although for clarity Figure 5G focuses only on the most extreme genes. Because the set of very lowly expressed genes is enriched for low GERP scores, we filtered out the lowest expressed genes in each tissue. We used RNA-seq data previously published (Merkin et al., 2012) for muscle, liver and brain to filter out lowly expressed genes in those tissue comparisons. The strength of the associations with GERP scores for our ASE and cis-eQTL as well as previously published cis-eQTL is robust to all but the most extreme changes in filtering cutoff.\n",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "d94fc1c8-3685-4b62-8d2d-c2fe3ee829d7",
+      "submission_id": "ee9fed3c-8ca7-4feb-8ce4-06f0d7014e43",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne C Ferguson-Smith, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05538.013](https://doi.org/10.7554/eLife.05538.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cConstraint and divergence of global gene expression in the mammalian embryo\u201d for consideration at eLife. Your article has been evaluated by Chris Ponting (Senior editor), a Reviewing editor and three reviewers.\n\nAs listed below, the reviewers have communicated quite detailed major concerns about the manuscript. We would like to provide the opportunity for you to address each of the points raised and to provide an extensively revised manuscript before making a final decision. The Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nMajor concerns:\n\n1) The title is provocative, without obvious follow-up. \u2018Convergence\u2019 and \u2018divergence\u2019 has implications about genetic selection and systems properties. The reviewers expected a definition of what these concepts mean in this context, how the study design would address these questions, and then interpretation of how the results provide insight. This was not evident in this manuscript. The primary reference seems to be in the Introduction, where two definitions of divergence are provided: first, it refers to changes in embryonic development resulting from genotype-specific differences in maternal transcripts present in mature oocytes at fertilization, and second, divergence here seems to be differences in regulatory control between embryos and adults. Both have been extensively studied, first to understand the maternal:zygotic transition in gene expression patterns, and second to characterize differentiation of cells, organs, and tissues. Resolving these and other forms of direct (genetic) and indirect (epigenetic, social factors is beyond the scope of the present study design, except with weak ad hoc arguments.\n\n2A) No mention about whether sex of embryos was determined, and results analyzed separately for males and females. Considerable literature shows that sex affects expression of many genes. If the authors have evidence that embryo sex is not important in this context, evidence and arguments need to be presented (see also comment 10 below).\n\nB) Apparently RNAs from whole embryos were analyzed. But as the authors acknowledge, organogenesis is active at E11.5. So why study whole embryos rather than specific organs and tissues?\n\nC) Paternal stress is an established factor affecting offspring phenotypes and molecular features. Typically these paternal factors are controlled by removing males from mating cages immediately after fertilization. Alternatively, in vitro fertilization is sometimes used. Regardless, these kinds of factors needed to be controlled in order to make strong conclusions about the nature of maternal effects.\n\n3) The aspect of the paper that we found disappointing was the analysis of gene expression dynamics. The reviewers considered that the authors could get much more from this dataset. For example, they don't test for interactions between genotype and time/stage (somite number, this could be done quite easily even using PEER) and there is no consideration of non-motonic time trends etc. In short, we think the authors could likely find much more about how genetic variation influences expression dynamics by implementing something similar to the ideas of Francesconi (Nat 2014).\n\n4) The next recommendation would be to try and get more from the comparison of ASE and eQTLs. The correlation is weak (R^2 =\u223c34% variance explained). What is the explanation for this? Biological or technical? Likely there is something interesting to say biological here about the causes of the differences between the hybrids and the recombinants.\n\n5) In general, the results are not too surprising; for example, the observation (Results, third paragraph) that the expression of key developmental genes changes through development is to be expected, we are not sure this warrants a main text figure. Moreover, a significant number of eQTL have been found in other tissues/cell lines in mammals (multiple papers from the Dermitzakis and Pritchard labs), the majority of which have been shown to regulate gene expression in cis, so the novelty of this part of the manuscript is small.\n\n6) Care must be taken when defining cis-regulatory variants identified from previous RNA-seq studies (Montgomery et al.; Pickrell et al.), as you have done in the Introduction. In particular, these studies focused on correlating variants near the gene of interest with its expression across individuals. In a number of cases, it was shown that the effect size of the eQTL was correlated with allele-specific expression levels, strongly suggesting that many variants act in cis. However, in most previous eQTL studies, variants that act in cis have typically been defined as variants that are proximal to the gene of interest. Some clarification of this subtle, but important distinction, would be useful here.\n\n7) When you mention, in the Introduction, that, at E11.5, gastrulation has already occurred, and the embryo is already composed of multiple different cell types, how much of a concern is it that, across N2 embryos, the rate of development may differ (perhaps because of the genetic background), which might lead to heterogeneity in the composition of cell types profiled across embryos?\n\n8) Results, second paragraph: Why was a paired t-test as opposed to a binomial test (perhaps with a beta prior to model over-dispersion) employed here? The latter seems a much more natural approach given the data.\n\n9) Results, fourth paragraph: It would be interesting to study the overall expression levels of the genes considered here in a homogeneous genetic background (i.e., in the F0s). In particular, this would allow one to study how the expression of Hbb-b1 and Hbb-b2 differed during development\u2014is it also the case that, in BL6, Hbb-b1 increases in expression during development while Hbb-b2 decreases? This would provide additional mechanistic insight and provide support for the compensatory mechanism alluded to in the last sentence.\n\n10) Figure 3 and Results: What explains the strange patterns in Figure 3B where there seems to be a bimodal pattern of expression (for both alleles) for a subset of the genes (e.g., Zkscan5, Polm, Eif2ak and Rhob)? Is this related to differences in developmental stage and/or sex? To explore the latter, could the expression of genes on the X or Y chromosome be used to sex the embryos? More generally, this is a strange pattern, which provides some concern about the robustness of the selection of these genes as those that display strong maternal effects.\n\n11) Figure 5 and Results: The comparison with previous studies is somewhat troubling. In particular, how were the data normalized to ensure the results were comparable (e.g., batch effects/control for potential confounding factors)? Also, a p-value cutoff, rather than an FDR cutoff, should be used to ensure results are comparable across studies (since the null distribution will differ). Without more information, it is difficult to assess the significance of this result.\n\n12) Results: What functional categories were enriched for in the ASE genes? Also, for the enrichment analysis, did the background control for gene expression levels (i.e., were only expressed genes considered)?\n",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcc1ed93-639e-4446-a273-5473978b26fe",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C1",
+      "claim": "C57BL/6J (B6) and CAST/EiJ (Cast) mouse strains exhibit one single nucleotide polymorphism (SNP) difference every 120 bp on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Inbreeding caused random subsets of alleles segregating in their ancestral populations to become fixed, and as a consequence the two strains exhibit one single nucleotide polymorphism (SNP) difference every 120 bp on average (Keane et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Keane et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "2692e291-df26-4d9e-ad46-7901c210df99",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C2",
+      "claim": "16 E11.5 F1 embryos were collected from reciprocal crosses between B6 and Cast.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected 16 E11.5 F1 embryos obtained from reciprocal crosses between B6 and Cast (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "6ccea25c-04d8-4e5d-859b-ff8e55d551f6",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C3",
+      "claim": "The average SNP density in 3\u2032 UTRs is approximately 1 SNP per 170 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "We profiled genome-wide gene expression using a 3\u2032-biased RNA sequencing method, 3SEQ (Beck et al., 2010), in order to maximize SNP coverage in the 3\u2032 UTRs, where the average SNP density is \u223c1 SNP per 170 bp (compared to 1 SNP per 265 bp in the coding sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a measurement in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "42c92172-030b-49ed-b432-4d848f9d7152",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C4",
+      "claim": "The average SNP density in coding sequences is 1 SNP per 265 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "We profiled genome-wide gene expression using a 3\u2032-biased RNA sequencing method, 3SEQ (Beck et al., 2010), in order to maximize SNP coverage in the 3\u2032 UTRs, where the average SNP density is \u223c1 SNP per 170 bp (compared to 1 SNP per 265 bp in the coding sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a measurement in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "088df0b2-55a2-4752-83fa-4e6b085e8509",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C5",
+      "claim": "The average fraction of reads supporting the B6 allele (B6 allele fraction, 'BAF') was 0.502.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping of reads separately against the Cast (Keane et al., 2011) and B6 genomes allowed us to eliminate reference mapping bias (Figure 2\u2014figure supplement 1) as the average fraction of reads supporting the B6 allele (B6 allele fraction, 'BAF') was 0.502.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement from sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "948c768a-36ce-48b5-8f01-36534a6f79a8",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C6",
+      "claim": "1594 genes (23% of 6917 genes with sufficient reads covering SNPs) showed significant allele-specific expression (ASE).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, out of a possible 6917 genes with sufficient reads covering SNPs, 1594 (23%) showed significant ASE (p < 0.01, paired t-test, Bonferroni corrected; Figure 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of sequencing data with specified significance threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "be445d5c-9f7c-458f-a72b-b56b90ec52bc",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C7",
+      "claim": "154 N2 embryos were harvested at E11.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We next backcrossed F1 mice (derived from female B6 by male Cast crosses) with B6 parentals to obtain N2 embryos. We harvested 154 N2s at E11.5, performed 3SEQ, and quantified ASE in the approximately 50% of embryos that were heterozygous at each gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "4feb69ee-49cd-4a6c-a586-0e620c5f9f86",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C8",
+      "claim": "There was excellent agreement between average BAF estimates from F1s and N2s with a correlation of rho = 0.77.",
+      "claim_type": "EXPLICIT",
+      "source": "There was excellent agreement between average BAF estimates from F1s and N2s (Figure 2C; rho = 0.77).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis of measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "216f76b9-f12e-4523-9433-bba0585a1928",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C9",
+      "claim": "Somites form every 90\u2013120 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify developmental progression for each embryo at the time of harvest, we counted the number of somites, which form every 90\u2013120 min (Saga and Takeda, 2001) and ranged from 42 to 57 in our embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saga and Takeda, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "bd9e9afa-0b67-4b21-b029-86dc9dd34dcb",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C10",
+      "claim": "Somite numbers ranged from 42 to 57 in the embryos studied.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify developmental progression for each embryo at the time of harvest, we counted the number of somites, which form every 90\u2013120 min (Saga and Takeda, 2001) and ranged from 42 to 57 in our embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from experimental samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "6633806b-6666-48cc-8214-eaa53a6f5cc1",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C11",
+      "claim": "1796 genes showed significant correlation between total expression and somite number out of 7712 genes with moderate expression of at least 5 reads per million (RPM).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 7712 genes with moderate expression of at least 5 reads per million (RPM), 1796 genes showed significant correlation between total expression and somite number (q < 0.05, Spearman correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "10ebd999-5db8-43e6-93e3-eb937ac3fac5",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C12",
+      "claim": "Genes changing over the developmental time course were enriched for synaptogenesis (q = 2.2 \u00d7 10\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "Genes changing over this developmental time course were enriched for a number of gene ontology (GO) categories indicative of important developmental processes occurring at E11.5, including synaptogenesis (q = 2.2 \u00d7 10\u22128, GOrilla) and eye lens formation (q = 5.8 \u00d7 10\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology enrichment analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1d8f3a7f-425d-412f-8b25-e68c0d02ff9c",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C13",
+      "claim": "Genes changing over the developmental time course were enriched for eye lens formation (q = 5.8 \u00d7 10\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "Genes changing over this developmental time course were enriched for a number of gene ontology (GO) categories indicative of important developmental processes occurring at E11.5, including synaptogenesis (q = 2.2 \u00d7 10\u22128, GOrilla) and eye lens formation (q = 5.8 \u00d7 10\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology enrichment analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1ad1af94-065f-49a4-83e6-32a40c79180d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C14",
+      "claim": "Genes changing over the developmental time course were enriched for blood microparticles (q = 9.6 \u00d7 10\u22127), which includes the globins.",
+      "claim_type": "EXPLICIT",
+      "source": "A third significant GO category, blood microparticles (q = 9.6 \u00d7 10\u22127), includes the globins, which are beginning to undergo the transition from fetal to adult form over the developmental time period we assayed (Noordermeer and de Laat, 2008) (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology enrichment analysis with statistical significance and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "9c643944-b0d3-4028-ad0c-38993f3ce5a0",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C15",
+      "claim": "Twelve genes show significant differential regulation between B6 and Cast alleles as a function of developmental timing.",
+      "claim_type": "EXPLICIT",
+      "source": "By correlating ASE with somite number, we identified twelve genes that show significant differential regulation between B6 and Cast alleles as a function of developmental timing (q < 0.10, Spearman rho).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis with specified significance threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "3e6dda96-5945-4d96-beb9-0da66b51ff51",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C16",
+      "claim": "The B6 allele of the major adult beta globin (Hbb-b1) is delayed compared to the Cast allele (rho = 0.86, q < 10\u221214).",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes increase in absolute level and relative expression compared to fetal beta globins (Figure 2D; Figure 2\u2014figure supplement 2), but the B6 allele of the major form is delayed compared to the Cast allele (Figure 2E; rho = 0.86, q < 10\u221214), whereas the opposite occurs for the minor form (Figure 2F; rho = \u22120.51, q = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis of allele-specific expression over developmental time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "7e3f2080-3c69-4489-af2b-cd7acede57c5",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C17",
+      "claim": "The Cast allele of the minor adult beta globin (Hbb-b2) is delayed compared to the B6 allele (rho = \u22120.51, q = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes increase in absolute level and relative expression compared to fetal beta globins (Figure 2D; Figure 2\u2014figure supplement 2), but the B6 allele of the major form is delayed compared to the Cast allele (Figure 2E; rho = 0.86, q < 10\u221214), whereas the opposite occurs for the minor form (Figure 2F; rho = \u22120.51, q = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis of allele-specific expression over developmental time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "f8869335-3a9f-4482-b6aa-c2733f5e74fb",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C18",
+      "claim": "By the end of the time course, the B6 and Cast alleles of both major and minor adult beta globins are equally expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of our time course, the alleles are equally expressed (Figure 2E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from expression data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "f685054b-8608-4306-ba22-f5142adf49b5",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C19",
+      "claim": "Transferrin increases in absolute expression but the Cast allele is delayed compared to the B6 allele (rho = \u22120.46, q = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Transferrin also increases in absolute expression but the Cast allele is delayed compared to the B6 allele (rho = \u22120.46, q = 0.02; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis of allele-specific expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "8d0a9432-4ac2-473f-b87f-eb918fb35a31",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C20",
+      "claim": "Compensatory mechanisms have evolved in one or both strains to keep the overall regulatory dynamic of oxygen physiology stable during the fetal-to-adult hemoglobin switching period.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that compensatory mechanisms have evolved in one or both strains to keep the overall regulatory dynamic of oxygen physiology stable during this important switching period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed expression patterns of globin genes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "82c247ec-e322-44ed-a908-e334ac487df4",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C21",
+      "claim": "31 genes with significant imprinting were found (p < 0.01, binomial test, Bonferroni corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies in mouse embryos (Babak et al., 2008), we found a total of 31 genes with significant imprinting (Figure 2G\u2013I; p < 0.01, binomial test, Bonferroni corrected), all of which had been previously identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis with specified significance threshold and comparison to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "5eb8594f-90bf-400c-8440-6b3d8b281abd",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C22",
+      "claim": "All 31 imprinted genes identified had been previously identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies in mouse embryos (Babak et al., 2008), we found a total of 31 genes with significant imprinting (Figure 2G\u2013I; p < 0.01, binomial test, Bonferroni corrected), all of which had been previously identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with existing literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "60312c76-9c5c-4d3d-8667-ff9d8eeb76d5",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C23",
+      "claim": "Most imprinting generally acts uniformly across the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the clear separation of most of the imprinted loci from the noise of the bulk of all expressed genes, with few exceptions (Figure 2I; Figure 2\u2014figure supplement 3), suggests that most imprinting generally acts uniformly across the embryo, as expected from the methylation-based mechanism that sets the expression state of the regulated allele pre-zygotically (Reik et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data distribution pattern and supported by citation to methylation mechanism",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "9456203c-cf64-4cec-a876-f26e4f3d0be4",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C24",
+      "claim": "331 embryonically expressed genes have total expression levels that differ significantly depending on the genetic background of the mother (Mann Whitney U test, p < 0.01, Bonferroni corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "To explore other genetically-encoded parental effects, we took advantage of the backcross design, in which N2 offspring have genotypically distinct parents. We identified a large number (n = 331) of embryonically expressed genes whose total expression levels differed significantly depending on the genetic background of the mother (Mann Whitney U test, p < 0.01, Bonferroni corrected), irrespective of the genotype of the embryo (Figure 3A,B; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis with specified significance threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1487e3c3-0fbe-497c-be4c-57d60c509dac",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C25",
+      "claim": "Angptl4 expression increases 52% from an average of 107 RPM in embryos with an F1 mother to an average of 163 RPM in embryos with a B6 mother.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Angptl4 expression increases 52% from an average of 107 RPM in embryos with an F1 mother to an average of 163 RPM in embryos with a B6 mother (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement of gene expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "3d8325b8-72b1-4c3b-979b-cb3f626bc49b",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C26",
+      "claim": "Maternal effect target genes exhibited up to a 3.5-fold difference in total expression level depending on genotype of the mother.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the magnitude of the effect, these maternal effect target genes exhibited up to a 3.5-fold (e.g., Polm: 2.5\u201311-fold at a 95% confidence interval) difference in total expression level depending on genotype of the mother.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement with confidence interval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "00f00eaf-9a53-4285-bb02-2a10e9f68f84",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C27",
+      "claim": "All N2 embryos carry the B6 mitochondrial genome.",
+      "claim_type": "EXPLICIT",
+      "source": "All F1s used for the backcross were derived from B6 female by Cast male matings, and therefore all N2 embryos carry the B6 mitochondrial genome, ruling out a confounding mitochondrial effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the breeding design",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "5efcdfca-1c4a-426e-b9fd-652adecf6a90",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C28",
+      "claim": "The maternal effects were unchanged when considering sex, X chromosome genotype, litter, and developmental stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The maternal effects were unchanged when considering sex, X chromosome genotype, litter, and developmental stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis controlling for potential confounding variables",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "0a234d05-9bf1-4147-8476-aaae07d7d9c8",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C29",
+      "claim": "Maternal effect target genes were not imprinted or the result of contamination by maternally expressed transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for the vast majority of genes with SNP coverage, we were able to verify that maternal effect target genes were not imprinted or the result of contamination by maternally expressed transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis to exclude alternative explanations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "e0c17734-db55-40d0-a6b9-34132df54ea0",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C30",
+      "claim": "Maternal genotype by itself was a better predictor of the maternal effects than maternal genotype in conjunction with embryonic genotype at any of the imprinted loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that maternal genotype by itself was a better predictor of the maternal effects than maternal genotype in conjunction with embryonic genotype at any of the imprinted loci, indicating that the maternal effects were not the result of trans effects downstream of imprinted genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "2094150f-b587-49f5-8724-7e99634fbcef",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C31",
+      "claim": "Four genes were confirmed as maternal effect target genes using quantitative RT-PCR (qPCR).",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude the possibility of a batch effect in our 3SEQ data, we used quantitative RT-PCR (qPCR) to confirm 4 genes as maternal effect target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Independent validation using orthogonal method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "21f86473-0051-4f68-ba2e-d4095347db61",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C32",
+      "claim": "Angptl4 functions in lipid metabolism and energy homeostasis, suggestive of a role in responding to the placental nutrient supply.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant of the maternal effect target genes, Angptl4 (Figure 3C; p = 8 \u00d7 10\u221213 by 3SEQ, p = 1 \u00d7 10\u221211 by qPCR), functions in lipid metabolism and energy homeostasis, suggestive of a role in responding to the placental nutrient supply (Yoshida et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known function from literature and inference about role",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "ae8d085b-b30a-4e45-8535-620d0ecc0141",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C33",
+      "claim": "Gpx3 is an antioxidant enzyme that acts in fat and glucose metabolism and has been associated with obesity and type 2 diabetes in mouse and human.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Gpx3 (Figure 3B; p = 5 \u00d7 10\u221212 by 3SEQ, p = 6.6 \u00d7 10\u22124 by qPCR), a glutathione peroxidase, is an antioxidant enzyme that acts in fat and glucose metabolism and has been associated with obesity and type 2 diabetes in mouse and human (Lee et al., 2008; Chung et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known function from literature citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "c838fa0a-b117-4b4d-843f-4ddf963efd91",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C34",
+      "claim": "Both Angptl4 and Gpx3 are transcriptionally regulated by the peroxisome proliferator-activated receptor PPAR\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these genes are transcriptionally regulated by the peroxisome proliferator-activated receptor PPAR\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of known regulatory relationship",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "0061f993-459f-4792-817c-76baf429185a",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C35",
+      "claim": "Genotyping and recombination analysis based on expressed SNPs divided the autosomes into 986 marker region blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping and recombination analysis based on the expressed SNPs (Figure 4A) divided the autosomes into 986 marker region blocks, each separated by one or more recombination events that define candidate controlling loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of computational analysis of genotype data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "6a127621-a4a3-4ac7-89a9-60633597087d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C36",
+      "claim": "At a genome-wide significance level of q < 0.01, a total of 1034 eQTL were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "At a genome-wide significance level of q < 0.01, we identified a total of 1034 eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis with specified significance threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "07c26928-6ce3-4391-a599-557e798f3ba7",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C37",
+      "claim": "1017 of the 1034 eQTL (98%) mapped close to the target gene, suggesting cis-regulation as the underlying mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "1017 of these eQTL (98%) mapped close to the target gene (Figure 4B), suggesting cis-regulation as the underlying mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of eQTL genomic locations and inference about mechanism",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "bb4c8eb7-9b60-4db9-84ee-a973c64f94cf",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C38",
+      "claim": "A gene's difference in expression between heterozygotes and homozygotes could accurately predict its allelic ratio as assayed by ASE (rho = 0.58, n = 4821).",
+      "claim_type": "EXPLICIT",
+      "source": "A gene's difference in expression between heterozygotes and homozygotes could accurately predict its allelic ratio as assayed by ASE (Figure 4C). This high correlation (rho = 0.58, n = 4821; rho = 0.70 when considering only the n = 1000 genes with the highest allele-specific read coverage) provides a systematic validation of the large effect of embryonic cis-regulatory polymorphisms on expression phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis between two measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "adf894bd-7617-4630-b25b-9997d3249bad",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C39",
+      "claim": "When considering only the n = 1000 genes with the highest allele-specific read coverage, the correlation between predicted and measured allelic ratio is rho = 0.70.",
+      "claim_type": "EXPLICIT",
+      "source": "This high correlation (rho = 0.58, n = 4821; rho = 0.70 when considering only the n = 1000 genes with the highest allele-specific read coverage) provides a systematic validation of the large effect of embryonic cis-regulatory polymorphisms on expression phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis on subset of data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "830082a9-3ce9-4de9-943e-a9c8bcdad982",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C40",
+      "claim": "Few trans-eQTL were found regardless of FDR cutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the large number of cis-eQTL, we found few trans-eQTL regardless of FDR cutoff (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of eQTL analysis across multiple significance thresholds",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "de788f69-be44-4bfb-be2c-db4f20e55e68",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C41",
+      "claim": "After the top 3 trans-eQTL, significance drops off rapidly compared to background, unlike for the cis-eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "After the top 3 (each comprising a controlling locus\u2013target gene pair, e.g., Figure 5B), significance drops off rapidly compared to background, unlike for the cis-eQTL (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from statistical analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "edd37c81-9118-4ac2-b021-b0d38ae2722c",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C42",
+      "claim": "Neither strong cis-eQTL nor ASE loci are enriched for trans-eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that neither strong cis-eQTL nor ASE loci are enriched for trans-eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "476dd483-79f4-40e3-a523-56f5eed14651",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C43",
+      "claim": "Application of a random forest model that simultaneously considers developmental progression (number of somites) and genotype did not enrich for trans-eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, application of a random forest model (Michaelson et al., 2010; Francesconi and Lehner, 2014) that simultaneously considers developmental progression (number of somites) and genotype also did not enrich for trans-eQTL (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of alternative statistical modeling approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "c90840af-7ef4-4911-9863-f1bf172056d7",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C44",
+      "claim": "The number of comparable trans-eQTL is about 1% that of cis-eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that the number of comparable trans-eQTL is about 1% that of cis-eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative estimate from data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "2111a65b-d67d-4b75-a2a1-fcc744315109",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C45",
+      "claim": "Permutation tests revealed a significant signal (p < 10\u221224 KS test) in support of trans-eQTL hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Permutation tests revealed a significant signal (p < 10\u221224 KS test, Figure 5D) in support of hotspots, but no specific candidates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical permutation test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "3ce84a07-d682-4ace-92a9-7298ec7a046d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C46",
+      "claim": "Strong ASE genes were not substantially more likely to act as hotspots than weaker ASE genes (p = 0.20, KS test).",
+      "claim_type": "EXPLICIT",
+      "source": "Reinforcing the above result that ASE genes do not act as trans-controlling loci, strong ASE genes were not substantially more likely to act as hotspots than weaker ASE genes (Figure 5D; p = 0.20, KS test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "e6d81ef5-32a6-403f-9cf0-8aa0f97997f1",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C47",
+      "claim": "At E11.5 stage of embryogenesis, there is no evidence for downstream propagation of genetically controlled expression level differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, at this stage of embryogenesis, we found no evidence for downstream propagation of genetically controlled expression level differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from multiple lines of analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1b0927f5-26ff-45a2-b781-daeb8b34617d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C48",
+      "claim": "All previously published eQTL studies conducted in adult tissues showed a substantially higher proportion of trans-eQTL than embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "After sampling individuals to match the same number of total eQTL found at an FDR of 0.05, we found that all previously published studies conducted in adult tissues showed a substantially higher proportion of trans-eQTL than did our embryos (Figure 5E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative analysis with published datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "79d7a82b-6b81-4986-99f6-9db5b1dca276",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C49",
+      "claim": "The result that embryos have fewer trans-eQTL than adult tissues was robust to varying the sample size from the previously published data, to whether p-values or FDR was used to assess significance, and to varying the thresholds for comparing proportions of trans-eQTL across the ranked eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was robust to varying the sample size from the previously published data, to whether p-values or FDR was used to assess significance, and to varying the thresholds for comparing proportions of trans-eQTL across the ranked eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sensitivity analysis of comparative results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "4c312c1c-86ba-4ee4-990f-f99724806e1b",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C50",
+      "claim": "Embryonic trans-eQTL are subject to elevated selective constraint compared to adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this result and our high power to detect cis-eQTL even at low FDR, we conclude that embryonic trans-eQTL are subject to elevated selective constraint compared to adult tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from comparative analysis and power considerations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "e95e183c-7d8d-46f9-bb6f-b883f4911628",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C51",
+      "claim": "ASE genes were significantly depleted of GO categories related to organ development (p = 6 \u00d7 10\u22125, q = 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, ASE genes were significantly depleted of GO categories related to organ development (p = 6 \u00d7 10\u22125, q = 0.05), as well as gene regulation (p = 1 \u00d7 10\u22124, q = 0.07), and transcription factors (p = 3 \u00d7 10\u22125, q = 0.03), demonstrating constraints on variation in core regulatory genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology depletion analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "58e6a51d-9822-4f49-b37a-e93e4e64ed72",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C52",
+      "claim": "ASE genes were significantly depleted of GO categories related to gene regulation (p = 1 \u00d7 10\u22124, q = 0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, ASE genes were significantly depleted of GO categories related to organ development (p = 6 \u00d7 10\u22125, q = 0.05), as well as gene regulation (p = 1 \u00d7 10\u22124, q = 0.07), and transcription factors (p = 3 \u00d7 10\u22125, q = 0.03), demonstrating constraints on variation in core regulatory genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology depletion analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "ca9f11aa-0ec4-4316-a770-041550641472",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C53",
+      "claim": "ASE genes were significantly depleted of GO categories related to transcription factors (p = 3 \u00d7 10\u22125, q = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, ASE genes were significantly depleted of GO categories related to organ development (p = 6 \u00d7 10\u22125, q = 0.05), as well as gene regulation (p = 1 \u00d7 10\u22124, q = 0.07), and transcription factors (p = 3 \u00d7 10\u22125, q = 0.03), demonstrating constraints on variation in core regulatory genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene ontology depletion analysis with statistical significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "3bc75632-ae5c-4f59-9032-65cfce1ad3cb",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C54",
+      "claim": "Evolutionary constraint at the DNA sequence level was lowest in the most significant cis-eQTL (rho = \u22120.14, p = 6 \u00d7 10\u221213; n = 2788).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that evolutionary constraint at the DNA sequence level (Cooper et al., 2005; Davydov et al., 2010) was lowest in the most significant cis-eQTL (Figure 5G; rho = \u22120.14, p = 6 \u00d7 10\u221213; n = 2788).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis between conservation scores and eQTL significance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "eb9cf2e4-a185-489b-a516-10a60191441a",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C55",
+      "claim": "ASE magnitude of effect correlated negatively with evolutionary constraint (rho = \u22120.10, p = 9 \u00d7 10\u22128, n = 2612).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ASE magnitude of effect correlated negatively with evolutionary constraint (rho = \u22120.10, p = 9 \u00d7 10\u22128, n = 2612), whereas cis-eQTL in adult mouse tissues showed no correlation (|rho| < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "7567f144-c182-42f3-b70c-852c1b733ad6",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C56",
+      "claim": "cis-eQTL in adult mouse tissues showed no correlation with evolutionary constraint (|rho| < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ASE magnitude of effect correlated negatively with evolutionary constraint (rho = \u22120.10, p = 9 \u00d7 10\u22128, n = 2612), whereas cis-eQTL in adult mouse tissues showed no correlation (|rho| < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis on published data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "66ece2a4-6e59-4c5b-b73e-7903eab34f26",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C57",
+      "claim": "The strong enrichment for cis-eQTL/ASE in less conserved genes is unique to embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the strong enrichment for cis-eQTL/ASE in less conserved genes is unique to embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from comparative analysis between embryonic and adult data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "b6f7ec0d-8152-4eaf-a12a-c519e603830d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C58",
+      "claim": "The two mouse strains exhibit SNPs at 17.7 million sites, about sixfold more than the heterozygosity in African humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our two mouse strains exhibit SNPs at 17.7 million sites, about sixfold more than the heterozygosity in African humans (1000 Genomes Project Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison with human data from cited source",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "33b9c899-c684-40f4-8dbc-df1f332fe77e",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C59",
+      "claim": "Missense polymorphisms are severely underrepresented genome-wide and exhibit lower derived allele frequencies relative to other genomic sites, reflecting the global predominance of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Missense polymorphisms are severely underrepresented genome-wide and exhibit lower derived allele frequencies relative to other genomic sites (1000 Genomes Project Consortium, 2012), reflecting the global predominance of purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known pattern from literature and interpretation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "b838d7c0-f0ee-4723-9d45-03cd29379350",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C60",
+      "claim": "The signal of purifying selection is weaker but still substantial for noncoding gene regulatory sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal of purifying selection is weaker but still substantial for noncoding gene regulatory sites (ENCODE Project Consortium, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known pattern from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "2e4e1d0a-6454-47e7-87a0-52b57a5e5319",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C61",
+      "claim": "Substantial neutral divergence of molecular phenotype (gene expression) can accumulate in the form of cis-regulatory variation even under strong evolutionary constraint at the organismal (embryonic) level.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the idea of the developmental hourglass model (Domazet-Lo\u0161o and Tautz, 2010; Kalinka et al., 2010) while suggesting that substantial neutral divergence of molecular phenotype (gene expression) can accumulate in the form of cis-regulatory variation even under strong evolutionary constraint at the organismal (embryonic) level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of evolutionary theory",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "a1971430-309c-4781-8212-f3f64f474b98",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C62",
+      "claim": "Incorporating developmental timing (somite number) into the eQTL model did not alter the balance between cis- and trans-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps because of the nearness of our embryos to the mouse phylotypic stage, or because of fundamental differences between mice and worms, we found that incorporating developmental timing (i.e., somite number) into our eQTL model did not alter the balance between cis- and trans-regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of statistical modeling with developmental stage as covariate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "640d239a-3ba1-4337-a3c1-b82b156ea451",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C63",
+      "claim": "Somite number was correlated with significant changes in ASE, indicating differential developmental timing of gene expression between the Cast and B6 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Somite number was, however, correlated with significant changes in ASE, indicating differential developmental timing of gene expression between the Cast and B6 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis and interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "a59d79b1-9d6c-47e0-bbe2-e173786739e5",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C64",
+      "claim": "Alleles of several hemoglobin-related genes, including the adult beta globins and transferrin, were expressed at differing levels between the strains at early stages of the fetal-to-adult hemoglobin transition, but then equalize by the end of the developmental time course.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found that alleles of several hemoglobin-related genes, including the adult beta globins and transferrin, were expressed at differing levels between the strains at early stages of the fetal-to-adult hemoglobin transition, but then equalize by the end of our developmental time course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from time-course expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "0a8ecd8a-540d-497c-ac50-cdc9a86d1df7",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C65",
+      "claim": "The good agreement between eQTL and ASE suggests that the majority of local eQTL are indeed cis-eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the good agreement between eQTL and ASE suggests that the majority of our local eQTL are indeed cis-eQTL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from correlation between two independent measurements",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "60f6e956-af9f-433e-bd10-ed22aabdcbca",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C66",
+      "claim": "Nearly all imprinted genes showed very strong allelic bias, meaning that the epigenetically silenced allele is expressed at only low levels across the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the large number of embryos collected and individually sequenced for our study, we were able to accurately quantify ASE mean and standard deviation for thousands of genes. When stratifying embryos by side of cross, we found that nearly all imprinted genes showed very strong allelic bias, meaning that the epigenetically silenced allele is expressed at only low levels across the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from allele-specific expression measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "44eab613-15b4-4926-b6b1-157fe2fc37ec",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C67",
+      "claim": "The genotype of the mother plays an important role in regulating gene expression during embryogenesis, affecting the expression of hundreds of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the genotype of the mother plays an important role in regulating gene expression, not just after birth, as has been previously suggested, but also during embryogenesis, affecting the expression of hundreds of genes (Bult and Lynch, 1997; Weaver et al., 2004; Wolf et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from maternal effect analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "569310d6-0a91-4a1f-916e-fdcc3efb9373",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C68",
+      "claim": "What is usually thought of as familial environment may have a substantial heritable genetic component exerting an effect not on the generation carrying it but on the offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "The implications of this finding are significant for human genetic twin, familial, and genome-wide association studies. What is usually thought of as familial environment [e.g., Grundberg et al. (2012)] may have a substantial heritable genetic component exerting an effect not on the generation carrying it but on the offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about implications of maternal effects findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1e4e1597-b670-4d1a-9c5b-a8334a2f0f34",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C69",
+      "claim": "The maternal effect is more likely acting through the placenta's role of transmitting nutrients, hormones or other factors to the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot rule out an epigenetic or RNA-mediated mechanism underlying this regulation, it is more likely acting through the placenta's role of transmitting nutrients, hormones or other factors to the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about mechanism based on gene functions",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "183b8bb9-8d31-4e8b-ad1a-59a266d3dc90",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C70",
+      "claim": "Maternal effect target genes may be at least partly responsible for the previously observed effect of maternal genotype on pre-natal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that these maternal effect target genes continue to be expressed differently depending on maternal genotype, and may be at least partly responsible for the previously observed effect of maternal genotype on pre-natal growth (Cowley et al., 1989; Wolf et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis connecting current findings to previous observations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "0e92f3c4-8c7f-4161-b323-8309e16f96b1",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C71",
+      "claim": "cis-regulatory variation caused the largest divergence in overall gene expression in mouse embryos, affecting over 1000 genes with up to sevenfold differences in expression levels between the strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, using our hybrid ASE/eQTL approach we were able to assay all four types of genetic variation in gene expression regulation. We found that cis-regulatory variation caused the largest divergence in overall gene expression in mouse embryos, affecting over 1000 genes with up to sevenfold differences in expression levels between the strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from multiple analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "e25e2079-1974-4710-991c-8521371b02fd",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C72",
+      "claim": "Only approximately 10 trans-eQTL were identified genomewide.",
+      "claim_type": "EXPLICIT",
+      "source": "These cis-regulatory variants did not translate into trans-regulatory divergence, and we identified only \u223c10 trans-eQTL genomewide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of eQTL analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "e9a043dc-d8d6-4a6c-a9b7-07c30f1e60aa",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C73",
+      "claim": "Imprinting affected the allelic balance of dozens of genes, generally resulting in complete or nearly complete silencing of the inactive allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Imprinting affected the allelic balance of dozens of genes, generally resulting in complete or nearly complete silencing of the inactive allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of imprinting analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "4800c203-64d5-46d8-bf53-807fe07300b7",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C74",
+      "claim": "The number of maternal effect targets is approximately 1/3 as many genes as cis-regulatory effects, with maximal effect size of up to 3.5-fold difference or approximately 1/2 as large.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of maternal effect targets, and their overall significance, are only slightly more modest than cis-regulatory effects, but nonetheless substantial, with approximately 1/3 as many genes involved, and maximal effect size of up to 3.5-fold difference or approximately 1/2 as large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of effect sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "5e808a63-3fcb-45c7-a5b6-802d6a708906",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C75",
+      "claim": "Maternal effects can play a substantial genetic role in determining embryonic gene expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this context, it is clear that maternal effects can play a substantial genetic role in determining embryonic gene expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from magnitude of maternal effects observed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "9bc05988-e0e8-4371-bf91-e12ab16f8f4c",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C76",
+      "claim": "Maternal effects contribute to evolutionary divergence, allowing expression heterogeneity in the embryo to build as a result of differences in the adult mother, where gene regulatory networks show less evolutionary constraint than in the developing embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that maternal effects contribute to evolutionary divergence, allowing expression heterogeneity in the embryo to build as a result of differences in the adult mother, where gene regulatory networks show less evolutionary constraint than in the developing embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis about evolutionary implications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "63c219a1-2684-4bb5-bc88-ecab6c30838d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C77",
+      "claim": "E11.5 is equivalent to roughly 40 days of gestation in human.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on embryonic day 11.5 (E11.5), which is equivalent to roughly 40 days of gestation in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of developmental stage equivalence",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "2ac6eb8b-e313-409d-964a-34a6fbe66bec",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C78",
+      "claim": "E11.5 is a time characterized by organogenesis, rapid growth of the brain and limbs, increasingly complex and localized pattern formation, and consequently substantial constraints on allowable phenotypic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a time characterized by organogenesis, rapid growth of the brain and limbs, increasingly complex and localized pattern formation, and consequently substantial constraints on allowable phenotypic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of developmental stage based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "e6c21aad-e59a-4de7-ae83-e19dd7f5f262",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C79",
+      "claim": "Fewer than 200 genes are imprinted in mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent genome-wide survey estimated that fewer than 200 genes are imprinted in mice and humans (Babak et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimate from cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "a595a31c-83d5-41bb-8f54-a5b1f4cf4d99",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C80",
+      "claim": "Imprinting is thought to play a critical role in early embryonic and placental development in mammals and has been shown to influence post-natal health and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Imprinting is thought to play a critical role in early embryonic and placental development in mammals and has been shown to influence post-natal health and behavior [Reviewed in Peters (2014)].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of known roles from review article",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1b76655a-ffa9-4097-a407-8a14edf1b897",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C81",
+      "claim": "Maternal effects have been shown to be important during embryonic development, leading to differences in the birth weight of mice depending on the genotype of the mother.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal effects have been shown to be important during embryonic development, leading to differences in the birth weight of mice depending on the genotype of the mother (Cowley et al., 1989; Wolf et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known findings from cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "7474823a-3767-429d-9124-fd7e453de5fa",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C82",
+      "claim": "Neither the causal molecular mechanism for maternal effects in the mother nor the responding genes in the embryo have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither the causal molecular mechanism for these effects in the mother nor the responding genes in the embryo have been identified and few studies to date have discriminated between prenatal and postnatal effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gaps in existing knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "db0b8955-003d-4bb3-912e-3e5e7f53777a",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C83",
+      "claim": "Maternal effects likely contribute to the heritability of complex traits but have been confounded with family structure in mouse as well as human studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal effects likely contribute to the heritability of complex traits but have been confounded with family structure in mouse as well as human studies (Mott et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological challenges from cited literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "14d8f29c-c806-4292-bf94-f188aaeace9c",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C84",
+      "claim": "In adult flies and mice, cis and trans regulatory variants frequently target the same genes, often with opposite, compensatory effects on the target's expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult flies and mice, these analyses have demonstrated that cis and trans regulatory variants frequently target the same genes, often with opposite, compensatory effects on the target's expression (McManus et al., 2010; Goncalves et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known pattern from cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "3c887eac-f060-431b-9f16-f69f27ac2f70",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C85",
+      "claim": "High-throughput sequencing methods can directly identify genes with cis-regulatory variants through genome-wide studies of ASE patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent genome-wide studies of ASE patterns across many individuals have demonstrated the ability of high-throughput sequencing methods to directly identify genes with cis-regulatory variants (Montgomery et al., 2010; Pickrell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known capability from cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "f9528e27-0ad8-44a3-a985-cb99cb7c460d",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C86",
+      "claim": "The strongest genetic variation in expression regulation generally occurs in variants located proximally to their target genes, presumably acting in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide eQTL studies have demonstrated that the strongest genetic variation in expression regulation generally occurs in variants located proximally to their target genes, presumably acting in cis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known pattern from eQTL studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "db040c71-5066-4b96-8767-b8849e2b363a",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C87",
+      "claim": "trans-regulatory variants affect both alleles of each target gene and can affect expression of many genes simultaneously, resulting in a large aggregate effect.",
+      "claim_type": "EXPLICIT",
+      "source": "While typically fewer in number, trans-regulatory variants affect both alleles of each target gene and can affect expression of many genes simultaneously, resulting in a large aggregate effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known characteristics of trans-regulation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "bdbb1c94-6b2a-4cac-b28b-245ff36905cd",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C88",
+      "claim": "eQTL studies have demonstrated dynamic trans-regulatory variation during Caenorhabditis elegans larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "First, eQTL studies have demonstrated dynamic trans-regulatory variation during Caenorhabditis elegans larval development (Francesconi and Lehner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known finding from cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "ea3b9604-e3fb-4215-9b04-59328f525f82",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C89",
+      "claim": "Recent studies in flies and fish have demonstrated higher expression of more ancient conserved genes as well as more conserved gene expression patterns during embryogenesis compared to the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, recent studies in flies and fish have demonstrated higher expression of more ancient conserved genes as well as more conserved gene expression patterns during embryogenesis compared to the adult (Domazet-Lo\u0161o and Tautz, 2010; Kalinka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known findings from cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "1fa6bb36-c240-459a-aee9-546ccb13b6fc",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C90",
+      "claim": "The number of cis- as well as trans-eQTL should be lower in embryos compared to adult.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the number of cis- as well as trans-eQTL should be lower in embryos compared to adult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on previous findings about conservation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "ab4a9c9d-3693-4845-82ad-5596bd19b825",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C91",
+      "claim": "C57BL/6J (B6) is the classic inbred mouse reference strain, which was derived from European mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For this study, we chose two inbred strains derived from geographically separate subspecies of Mus musculus: C57BL/6J (B6), the classic inbred mouse reference strain, which was derived from European mice, and CAST/EiJ (Cast), which was derived from the Southeast Asian Mus musculus castaneus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of strain origin",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "8a5d625a-b673-4cd8-aea2-5227163b0995",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C92",
+      "claim": "CAST/EiJ (Cast) was derived from the Southeast Asian Mus musculus castaneus.",
+      "claim_type": "EXPLICIT",
+      "source": "For this study, we chose two inbred strains derived from geographically separate subspecies of Mus musculus: C57BL/6J (B6), the classic inbred mouse reference strain, which was derived from European mice, and CAST/EiJ (Cast), which was derived from the Southeast Asian Mus musculus castaneus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of strain origin",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "5e477326-0f2f-4c62-8db4-d74709e59c27",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C93",
+      "claim": "Each F1 dataset had an average of 15.8 million mapped reads.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering, each F1 dataset had an average of 15.8 million mapped reads, and each N2 dataset had an average of 1.2 million reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequencing depth measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "2a11be43-89db-49bf-a00b-32b4ad0a0d13",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C94",
+      "claim": "Each N2 dataset had an average of 1.2 million mapped reads.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering, each F1 dataset had an average of 15.8 million mapped reads, and each N2 dataset had an average of 1.2 million reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequencing depth measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "409d753d-953e-4c63-a7d7-59f66a2c2ffb",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C95",
+      "claim": "In the F1s, there were 13,574 genes with detectable expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the F1s, there were 13,574 genes with detectable expression (13,469 across N2s), 7554 of which passed the analysis threshold of 5 RPM (7712 in N2s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Count of expressed genes from sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "6b563826-9c6e-4205-b6d7-cdd21ffdfce7",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C96",
+      "claim": "In the N2s, there were 13,469 genes with detectable expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the F1s, there were 13,574 genes with detectable expression (13,469 across N2s), 7554 of which passed the analysis threshold of 5 RPM (7712 in N2s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Count of expressed genes from sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "eca8fda6-f89b-4f3f-a90b-1df296cf41dc",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C97",
+      "claim": "7554 genes in F1s passed the analysis threshold of 5 RPM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the F1s, there were 13,574 genes with detectable expression (13,469 across N2s), 7554 of which passed the analysis threshold of 5 RPM (7712 in N2s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Count of genes meeting expression threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "25acf2e0-03f2-4f50-ad1c-3d8529b4880f",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C98",
+      "claim": "7712 genes in N2s passed the analysis threshold of 5 RPM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the F1s, there were 13,574 genes with detectable expression (13,469 across N2s), 7554 of which passed the analysis threshold of 5 RPM (7712 in N2s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Count of genes meeting expression threshold",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "4017ecb8-a901-41bc-b7dc-ad434c1795ba",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C99",
+      "claim": "All 5 genes significantly different between males and females were located on the X or Y chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "All 5 genes significantly different between males and females, including Xist and its antisense transcript Tsix, were located on the X or Y chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of sex-specific expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "490ae00d-c5fe-42c7-9cb6-92719d193aec",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "claim_id": "C100",
+      "claim": "At E11.5, embryos are just beginning sexual differentiation, so the small number of sex-specifically expressed genes is unsurprising.",
+      "claim_type": "EXPLICIT",
+      "source": "At E11.5, embryos are just beginning sexual differentiation, so the small number of sex-specifically expressed genes is unsurprising.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on developmental biology knowledge",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "70b3c4af-0d7e-435d-ac6a-541197da60a6",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used two divergent mouse strains (B6 and Cast) with high SNP density (~1 SNP per 120 bp genome-wide), collected 16 F1 embryos from reciprocal crosses, and employed 3SEQ RNA sequencing to maximize SNP coverage in 3' UTRs. The mapping approach eliminated reference bias, achieving an average B6 allele fraction of 0.502.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C91-C92 describe the experimental design and strain characteristics. The SNP density is supported by citation (C1), sample collection is clearly stated (C2), sequencing methodology and SNP densities are quantified (C3-C4), and the lack of mapping bias is demonstrated by the near-perfect 0.502 allele fraction (C5). These foundational methodological claims are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "b3689ee5-3a33-49c7-830f-0acc82b67947",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identified 1594 genes (23%) with significant allele-specific expression (ASE) in F1 embryos. ASE measurements showed excellent agreement between F1 and N2 embryos (rho=0.77) and strong correlation with cis-eQTL predictions (rho=0.58 overall, rho=0.70 for high-coverage genes), validating that most local eQTL act in cis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, C38-C39, C65 collectively demonstrate robust ASE detection with appropriate statistical testing (Bonferroni-corrected paired t-test, p<0.01) and strong internal validation through correlation between independent measurements (F1 vs N2, ASE vs eQTL). The convergence of multiple lines of evidence strongly supports the identification and validation of cis-regulatory effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "fbefaaab-0150-47f1-9b70-d943455577e2",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using 154 N2 embryos with somite counts ranging from 42-57 (forming every 90-120 minutes), the study identified 1796 genes whose expression correlated with developmental progression. These genes were enriched for developmental processes including synaptogenesis (q=2.2\u00d710\u207b\u2078), eye lens formation (q=5.8\u00d710\u207b\u2077), and blood microparticles/globins (q=9.6\u00d710\u207b\u2077).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C9-C14 describe developmental staging and time-course analysis. The somite counting provides quantitative developmental staging (C9-C10, supported by citation), and the correlation analysis with appropriate multiple testing correction (q<0.05 Spearman) identifies developmentally regulated genes (C11). The GO enrichment results (C12-C14) are statistically significant and biologically coherent with E11.5 developmental processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Twelve genes showed significant differential allelic regulation as a function of developmental timing (q<0.10). The B6 and Cast alleles of adult beta globins (Hbb-b1 and Hbb-b2) exhibited opposite temporal delays but converged to equal expression by the end of the time course, suggesting compensatory mechanisms maintain stable oxygen physiology during the fetal-to-adult hemoglobin transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20, C63-C64 describe temporal ASE dynamics. The statistical analysis (Spearman correlation with somite number) is appropriate, with strong effect sizes for Hbb-b1 (rho=0.86, q<10\u207b\u00b9\u2074) and weaker but significant effects for Hbb-b2 (rho=-0.51, q=0.02) and transferrin (C19). The observation of convergence (C18) and the inference of compensatory mechanisms (C20) are reasonable given the coordinated but opposite temporal patterns in functionally related genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "5a5e54a9-bdeb-49f8-85ee-b0f6adcae87f",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study identified 31 imprinted genes (p<0.01, binomial test, Bonferroni corrected), all previously known. Nearly all showed very strong allelic bias with clear separation from non-imprinted genes, suggesting imprinting acts uniformly across the embryo, consistent with methylation-based mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C66, C73 describe imprinting results. The statistical approach is appropriate (binomial test with Bonferroni correction), and the finding that all 31 genes were previously identified (C22) serves as validation. The observation of uniform strong bias (C23, C66) with clear separation from background (referenced in figures) supports the methylation-based mechanism interpretation. This is confirmatory rather than novel discovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Maternal genotype significantly affects expression of 331 embryonic genes (Mann-Whitney U test, p<0.01, Bonferroni corrected), with effect sizes up to 3.5-fold. The effects were validated by qPCR for 4 genes, remained after controlling for confounders (sex, X chromosome, litter, developmental stage, mitochondrial genome), and were not explained by imprinting or maternal transcript contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31, C67, C74-C75 describe maternal effects. The statistical analysis is rigorous with appropriate corrections (C24), effect sizes are substantial (C26), and multiple alternative explanations were systematically excluded (C27-C30). Independent validation by qPCR (C31) strengthens confidence despite the modest number validated. The backcross design enables clean separation of maternal from embryonic genotype effects. This represents a major finding with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "68e3aa2b-f88e-4219-9e82-bf7e430873a4",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Top maternal effect genes Angptl4 and Gpx3 function in lipid/glucose metabolism and are regulated by PPAR\u03b3, suggesting maternal effects act through placental transmission of nutrients or hormones. These genes may contribute to previously observed maternal genotype effects on prenatal growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32-C34, C69-C70 propose mechanistic interpretations. While the gene functions are well-established from literature (C32-C34), the mechanistic inferences (C69) are explicitly speculative (\"more likely,\" \"cannot rule out\"), and the connection to prenatal growth (C70) is hypothetical (\"may be at least partly responsible\"). The biological plausibility is reasonable, but these remain untested hypotheses requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "079c9067-e6f3-482b-8fbf-febda69bed3b",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "eQTL analysis using 986 marker regions identified 1034 significant eQTL (q<0.01), of which 1017 (98%) mapped near target genes, indicating cis-regulation. This represents the largest source of expression divergence, affecting over 1000 genes with up to 7-fold differences between strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37, C71 describe eQTL mapping results. The computational approach (genotyping, recombination analysis, correlation testing with genome-wide significance threshold) is standard and appropriate. The overwhelming predominance of local/cis-eQTL (98%) is consistent with the ASE validation (C38-C39) and represents a robust finding. The magnitude of effects (up to 7-fold) is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Very few trans-eQTL were detected (~10 genome-wide, ~1% of cis-eQTL), with significance dropping rapidly after the top 3. Neither strong cis-eQTL/ASE genes nor alternative modeling approaches (random forest with developmental timing) enriched for trans-eQTL. Permutation tests showed evidence for hotspots but no specific candidates, and ASE genes were not enriched as hotspot loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47, C72 describe the paucity of trans-eQTL. Multiple analytical approaches converge on this conclusion: standard eQTL mapping (C40-C41), enrichment analysis (C42), random forest modeling (C43), quantitative estimates (C44), and hotspot analysis (C45-C46). The consistency across methods and the contrast with adult tissues (addressed in other claims) strongly support this as a real biological phenomenon rather than a power issue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "90f51914-1239-4439-89b2-4b2a2bfa78aa",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparison with published adult tissue eQTL studies showed embryos have substantially fewer trans-eQTL than adult tissues across multiple datasets. This result was robust to variations in sample size, significance metrics (p-values vs FDR), and thresholds, leading to the conclusion that embryonic trans-eQTL are subject to elevated selective constraint compared to adult tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe comparative analysis with adult tissues. The reanalysis of published datasets with matched sample sizes and consistent methodology is appropriate. The robustness analysis (C49) addresses potential confounders. Combined with high power to detect cis-eQTL (demonstrated elsewhere), this supports the constraint interpretation (C50) over a power limitation explanation. The inference is well-reasoned given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "c6c0eabe-105c-491e-bff6-2c0bda94e785",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ASE genes were significantly depleted for GO categories related to organ development (p=6\u00d710\u207b\u2075), gene regulation (p=1\u00d710\u207b\u2074), and transcription factors (p=3\u00d710\u207b\u2075). Evolutionary constraint (GERP scores) was lowest in the most significant cis-eQTL (rho=-0.14, p=6\u00d710\u207b\u00b9\u00b3) and negatively correlated with ASE magnitude (rho=-0.10, p=9\u00d710\u207b\u2078), a pattern unique to embryos compared to adult tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 link regulatory variation to evolutionary constraint. The GO depletion analysis shows appropriate statistical testing, though C52 has marginal significance (q=0.07). The correlation between cis-eQTL significance/ASE magnitude and low conservation (C54-C55) is statistically robust with large sample sizes. The contrast with adult tissues (C56-C57) strengthens the interpretation that embryonic constraint is unique. This represents strong evidence for purifying selection on embryonic regulatory networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "8d65d17e-8c20-4777-8abc-146f652e1394",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The B6 and Cast strains exhibit 17.7 million SNPs (6-fold more than African human heterozygosity). While missense polymorphisms show strong purifying selection genome-wide, and regulatory sites show weaker but substantial selection, the findings suggest substantial neutral divergence in gene expression can accumulate via cis-regulatory variation even under strong organismal-level constraint during embryogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide evolutionary context and interpretation. The SNP count and human comparison (C58) are data-based with citation. The statements about selection on missense and regulatory variants (C59-C60) represent established knowledge from literature. The synthesis (C61) connecting these observations to the developmental hourglass model is a reasonable interpretation of the combined findings (high cis-variation, low trans-variation, constraint on developmental genes).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "c5cdcb30-f09e-4641-94c7-fd2ea35ce7d2",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Incorporating developmental timing (somite number) into the eQTL model did not alter the balance between cis- and trans-regulation, unlike findings in C. elegans larval development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 describes a negative result from modeling with developmental stage as a covariate. The analysis was performed (random forest model shown in supplementary figure), and the lack of enrichment for trans-eQTL is clearly stated. This negative result is important for interpretation and is appropriately reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "8901008f-43b1-4645-b2de-865917eb4493",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Maternal effects have significant implications for human genetic studies, as what is typically considered familial environment may have a substantial heritable genetic component affecting offspring. Maternal effects may contribute to evolutionary divergence by allowing expression heterogeneity to build in embryos through differences in adult mothers, where regulatory networks show less constraint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68, C76, C83 present broader implications and evolutionary speculation. While the maternal effects data are solid (addressed in other results), these claims extend beyond the data to implications for human studies (C68) and evolutionary theory (C76). C83 notes that maternal effects are confounded with family structure in existing studies, which is a valid methodological concern. However, the evolutionary speculation (C76) and human implications (C68) are not directly tested and represent hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "44082ed6-ea67-4370-ba90-7396ec98efe8",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on E11.5 developmental stage, imprinting, maternal effects, and eQTL studies, including established knowledge about developmental constraints, prior findings in other organisms, and methodological capabilities of ASE/eQTL approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C90 represent background knowledge and literature context. These are appropriately cited and accurately represent established findings from prior work. They provide necessary context for interpreting the current study but are not novel findings. The prediction in C90 (fewer eQTL in embryos) is tested by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    },
+    {
+      "id": "6f0b0645-b87f-4745-a64b-5442396b74ca",
+      "content_id": "3314495c-e01b-404d-83ca-913fa5b519e1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Sequencing yielded an average of 15.8 million reads per F1 sample and 1.2 million per N2 sample. Approximately 13,500 genes showed detectable expression, with ~7,600 passing the 5 RPM analysis threshold. Only 5 genes showed sex-specific expression, all on sex chromosomes, consistent with early sexual differentiation at E11.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C100 describe sequencing depth, gene detection, and sex effects. These are straightforward data summaries with appropriate quality metrics. The observation of minimal sex-specific expression (C99-C100) is biologically reasonable for E11.5 and serves as a quality control, confirming the developmental stage. These are standard methodological details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:39:01.355894Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bcc1ed93-639e-4446-a273-5473978b26fe",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "2692e291-df26-4d9e-ad46-7901c210df99",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "6ccea25c-04d8-4e5d-859b-ff8e55d551f6",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "42c92172-030b-49ed-b432-4d848f9d7152",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "088df0b2-55a2-4752-83fa-4e6b085e8509",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "ab4a9c9d-3693-4845-82ad-5596bd19b825",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "8a5d625a-b673-4cd8-aea2-5227163b0995",
+      "result_id": "70b3c4af-0d7e-435d-ac6a-541197da60a6"
+    },
+    {
+      "claim_id": "948c768a-36ce-48b5-8f01-36534a6f79a8",
+      "result_id": "b3689ee5-3a33-49c7-830f-0acc82b67947"
+    },
+    {
+      "claim_id": "4feb69ee-49cd-4a6c-a586-0e620c5f9f86",
+      "result_id": "b3689ee5-3a33-49c7-830f-0acc82b67947"
+    },
+    {
+      "claim_id": "bb4c8eb7-9b60-4db9-84ee-a973c64f94cf",
+      "result_id": "b3689ee5-3a33-49c7-830f-0acc82b67947"
+    },
+    {
+      "claim_id": "adf894bd-7617-4630-b25b-9997d3249bad",
+      "result_id": "b3689ee5-3a33-49c7-830f-0acc82b67947"
+    },
+    {
+      "claim_id": "0a8ecd8a-540d-497c-ac50-cdc9a86d1df7",
+      "result_id": "b3689ee5-3a33-49c7-830f-0acc82b67947"
+    },
+    {
+      "claim_id": "be445d5c-9f7c-458f-a72b-b56b90ec52bc",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "216f76b9-f12e-4523-9433-bba0585a1928",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "bd9e9afa-0b67-4b21-b029-86dc9dd34dcb",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "6633806b-6666-48cc-8214-eaa53a6f5cc1",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "10ebd999-5db8-43e6-93e3-eb937ac3fac5",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "1d8f3a7f-425d-412f-8b25-e68c0d02ff9c",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "1ad1af94-065f-49a4-83e6-32a40c79180d",
+      "result_id": "fbefaaab-0150-47f1-9b70-d943455577e2"
+    },
+    {
+      "claim_id": "9c643944-b0d3-4028-ad0c-38993f3ce5a0",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "3e6dda96-5945-4d96-beb9-0da66b51ff51",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "7e3f2080-3c69-4489-af2b-cd7acede57c5",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "f8869335-3a9f-4482-b6aa-c2733f5e74fb",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "f685054b-8608-4306-ba22-f5142adf49b5",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "8d0a9432-4ac2-473f-b87f-eb918fb35a31",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "640d239a-3ba1-4337-a3c1-b82b156ea451",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "a59d79b1-9d6c-47e0-bbe2-e173786739e5",
+      "result_id": "fc43ecff-07b5-4005-bbbd-d1447c38fea0"
+    },
+    {
+      "claim_id": "82c247ec-e322-44ed-a908-e334ac487df4",
+      "result_id": "5a5e54a9-bdeb-49f8-85ee-b0f6adcae87f"
+    },
+    {
+      "claim_id": "5eb8594f-90bf-400c-8440-6b3d8b281abd",
+      "result_id": "5a5e54a9-bdeb-49f8-85ee-b0f6adcae87f"
+    },
+    {
+      "claim_id": "60312c76-9c5c-4d3d-8667-ff9d8eeb76d5",
+      "result_id": "5a5e54a9-bdeb-49f8-85ee-b0f6adcae87f"
+    },
+    {
+      "claim_id": "60f6e956-af9f-433e-bd10-ed22aabdcbca",
+      "result_id": "5a5e54a9-bdeb-49f8-85ee-b0f6adcae87f"
+    },
+    {
+      "claim_id": "e9a043dc-d8d6-4a6c-a9b7-07c30f1e60aa",
+      "result_id": "5a5e54a9-bdeb-49f8-85ee-b0f6adcae87f"
+    },
+    {
+      "claim_id": "9456203c-cf64-4cec-a876-f26e4f3d0be4",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "1487e3c3-0fbe-497c-be4c-57d60c509dac",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "3d8325b8-72b1-4c3b-979b-cb3f626bc49b",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "00f00eaf-9a53-4285-bb02-2a10e9f68f84",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "5efcdfca-1c4a-426e-b9fd-652adecf6a90",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "0a234d05-9bf1-4147-8476-aaae07d7d9c8",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "e0c17734-db55-40d0-a6b9-34132df54ea0",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "2094150f-b587-49f5-8724-7e99634fbcef",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "44eab613-15b4-4926-b6b1-157fe2fc37ec",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "4800c203-64d5-46d8-bf53-807fe07300b7",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "5e808a63-3fcb-45c7-a5b6-802d6a708906",
+      "result_id": "a8de2d0d-1ae0-4ac1-9cd4-952752b07e31"
+    },
+    {
+      "claim_id": "21f86473-0051-4f68-ba2e-d4095347db61",
+      "result_id": "68e3aa2b-f88e-4219-9e82-bf7e430873a4"
+    },
+    {
+      "claim_id": "ae8d085b-b30a-4e45-8535-620d0ecc0141",
+      "result_id": "68e3aa2b-f88e-4219-9e82-bf7e430873a4"
+    },
+    {
+      "claim_id": "c838fa0a-b117-4b4d-843f-4ddf963efd91",
+      "result_id": "68e3aa2b-f88e-4219-9e82-bf7e430873a4"
+    },
+    {
+      "claim_id": "1e4e1597-b670-4d1a-9c5b-a8334a2f0f34",
+      "result_id": "68e3aa2b-f88e-4219-9e82-bf7e430873a4"
+    },
+    {
+      "claim_id": "183b8bb9-8d31-4e8b-ad1a-59a266d3dc90",
+      "result_id": "68e3aa2b-f88e-4219-9e82-bf7e430873a4"
+    },
+    {
+      "claim_id": "0061f993-459f-4792-817c-76baf429185a",
+      "result_id": "079c9067-e6f3-482b-8fbf-febda69bed3b"
+    },
+    {
+      "claim_id": "6a127621-a4a3-4ac7-89a9-60633597087d",
+      "result_id": "079c9067-e6f3-482b-8fbf-febda69bed3b"
+    },
+    {
+      "claim_id": "07c26928-6ce3-4391-a599-557e798f3ba7",
+      "result_id": "079c9067-e6f3-482b-8fbf-febda69bed3b"
+    },
+    {
+      "claim_id": "0e92f3c4-8c7f-4161-b323-8309e16f96b1",
+      "result_id": "079c9067-e6f3-482b-8fbf-febda69bed3b"
+    },
+    {
+      "claim_id": "830082a9-3ce9-4de9-943e-a9c8bcdad982",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "de788f69-be44-4bfb-be2c-db4f20e55e68",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "edd37c81-9118-4ac2-b021-b0d38ae2722c",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "476dd483-79f4-40e3-a523-56f5eed14651",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "c90840af-7ef4-4911-9863-f1bf172056d7",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "2111a65b-d67d-4b75-a2a1-fcc744315109",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "3ce84a07-d682-4ace-92a9-7298ec7a046d",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "e6d81ef5-32a6-403f-9cf0-8aa0f97997f1",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "e25e2079-1974-4710-991c-8521371b02fd",
+      "result_id": "13c2d3ad-bd0d-4812-bd7b-fee1f8428e2e"
+    },
+    {
+      "claim_id": "1b0927f5-26ff-45a2-b781-daeb8b34617d",
+      "result_id": "90f51914-1239-4439-89b2-4b2a2bfa78aa"
+    },
+    {
+      "claim_id": "79d7a82b-6b81-4986-99f6-9db5b1dca276",
+      "result_id": "90f51914-1239-4439-89b2-4b2a2bfa78aa"
+    },
+    {
+      "claim_id": "4c312c1c-86ba-4ee4-990f-f99724806e1b",
+      "result_id": "90f51914-1239-4439-89b2-4b2a2bfa78aa"
+    },
+    {
+      "claim_id": "e95e183c-7d8d-46f9-bb6f-b883f4911628",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "58e6a51d-9822-4f49-b37a-e93e4e64ed72",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "ca9f11aa-0ec4-4316-a770-041550641472",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "3bc75632-ae5c-4f59-9032-65cfce1ad3cb",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "eb9cf2e4-a185-489b-a516-10a60191441a",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "7567f144-c182-42f3-b70c-852c1b733ad6",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "66ece2a4-6e59-4c5b-b73e-7903eab34f26",
+      "result_id": "c6c0eabe-105c-491e-bff6-2c0bda94e785"
+    },
+    {
+      "claim_id": "b6f7ec0d-8152-4eaf-a12a-c519e603830d",
+      "result_id": "8d65d17e-8c20-4777-8abc-146f652e1394"
+    },
+    {
+      "claim_id": "33b9c899-c684-40f4-8dbc-df1f332fe77e",
+      "result_id": "8d65d17e-8c20-4777-8abc-146f652e1394"
+    },
+    {
+      "claim_id": "b838d7c0-f0ee-4723-9d45-03cd29379350",
+      "result_id": "8d65d17e-8c20-4777-8abc-146f652e1394"
+    },
+    {
+      "claim_id": "2e4e1d0a-6454-47e7-87a0-52b57a5e5319",
+      "result_id": "8d65d17e-8c20-4777-8abc-146f652e1394"
+    },
+    {
+      "claim_id": "a1971430-309c-4781-8212-f3f64f474b98",
+      "result_id": "c5cdcb30-f09e-4641-94c7-fd2ea35ce7d2"
+    },
+    {
+      "claim_id": "569310d6-0a91-4a1f-916e-fdcc3efb9373",
+      "result_id": "8901008f-43b1-4645-b2de-865917eb4493"
+    },
+    {
+      "claim_id": "9bc05988-e0e8-4371-bf91-e12ab16f8f4c",
+      "result_id": "8901008f-43b1-4645-b2de-865917eb4493"
+    },
+    {
+      "claim_id": "db0b8955-003d-4bb3-912e-3e5e7f53777a",
+      "result_id": "8901008f-43b1-4645-b2de-865917eb4493"
+    },
+    {
+      "claim_id": "63c219a1-2684-4bb5-bc88-ecab6c30838d",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "2ac6eb8b-e313-409d-964a-34a6fbe66bec",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "e6c21aad-e59a-4de7-ae83-e19dd7f5f262",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "a595a31c-83d5-41bb-8f54-a5b1f4cf4d99",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "1b76655a-ffa9-4097-a407-8a14edf1b897",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "7474823a-3767-429d-9124-fd7e453de5fa",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "14d8f29c-c806-4292-bf94-f188aaeace9c",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "3c887eac-f060-431b-9f16-f69f27ac2f70",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "f9528e27-0ad8-44a3-a985-cb99cb7c460d",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "db040c71-5066-4b96-8767-b8849e2b363a",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "bdbb1c94-6b2a-4cac-b28b-245ff36905cd",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "ea3b9604-e3fb-4215-9b04-59328f525f82",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "1fa6bb36-c240-459a-aee9-546ccb13b6fc",
+      "result_id": "44082ed6-ea67-4370-ba90-7396ec98efe8"
+    },
+    {
+      "claim_id": "5e477326-0f2f-4c62-8db4-d74709e59c27",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "2a11be43-89db-49bf-a00b-32b4ad0a0d13",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "409d753d-953e-4c63-a7d7-59f66a2c2ffb",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "6b563826-9c6e-4205-b6d7-cdd21ffdfce7",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "eca8fda6-f89b-4f3f-a90b-1df296cf41dc",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "25acf2e0-03f2-4f50-ad1c-3d8529b4880f",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "4017ecb8-a901-41bc-b7dc-ad434c1795ba",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    },
+    {
+      "claim_id": "490ae00d-c5fe-42c7-9cb6-92719d193aec",
+      "result_id": "6f0b0645-b87f-4745-a64b-5442396b74ca"
+    }
+  ],
+  "comparisons": []
+}

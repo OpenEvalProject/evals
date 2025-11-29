@@ -1,0 +1,1985 @@
+{
+  "submission": {
+    "id": "137c658b-8a64-477f-848a-fb8a8a50031d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:09:14.227573Z",
+    "updated_at": "2025-11-29T04:09:14.227573Z"
+  },
+  "content": [
+    {
+      "id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "submission_id": "137c658b-8a64-477f-848a-fb8a8a50031d",
+      "content_type": "manuscript",
+      "content_text": "# The unfolded protein response is required for dendrite morphogenesis\n\n## Authors\n\n- Xing Wei<sup>1</sup>\n- Audrey S Howell<sup>1</sup>\n- Xintong Dong<sup>1</sup>\n- Caitlin A Taylor<sup>1</sup>\n- Roshni C Cooper<sup>1</sup>\n- Jianqi Zhang<sup>3</sup>\n- Wei Zou<sup>4</sup>\n- David R Sherwood<sup>4</sup>\n- Kang Shen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States\n2. Neuroscience Program Stanford University School of Medicine Stanford United States\n3. Division of Biostatistics, Department of Preventive Medicine University of Southern California Los Angeles United States\n4. Department of Biology Duke University Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrecise patterning of dendritic fields is essential for the formation and function of neuronal circuits. During development, dendrites acquire their morphology by exuberant branching. How neurons cope with the increased load of protein production required for this rapid growth is poorly understood. Here we show that the physiological unfolded protein response (UPR) is induced in the highly branched Caenorhabditis elegans sensory neuron PVD during dendrite morphogenesis. Perturbation of the IRE1 arm of the UPR pathway causes loss of dendritic branches, a phenotype that can be rescued by overexpression of the ER chaperone HSP-4 (a homolog of mammalian BiP/ grp78). Surprisingly, a single transmembrane leucine-rich repeat protein, DMA-1, plays a major role in the induction of the UPR and the dendritic phenotype in the UPR mutants. These findings reveal a significant role for the physiological UPR in the maintenance of ER homeostasis during morphogenesis of large dendritic arbors.\n\n## Introduction\n\nThe organization of dendritic arbors is fundamental to the shape and connectivity of the nervous system (Ram\u00f3n y Cajal, 1911; Wassle et al., 1981). Complex and type specific dendritic arbors are pivotal for many neurons to receive appropriate inputs from their receptive fields and to function properly in a neural circuit (MacNeil and Masland, 1998). During development, dendrites acquire their morphology by precisely regulated branch morphogenesis, which requires extracellular interactions and intracellular signaling pathways (Jan and Jan, 2010). For example, several diffusive or cell-surface molecules play instructive roles in guiding the growth and patterning of dendritic arbors. The diffusible chemoattractant Semaphorin 3A instructs the dendritic extension of cortical pyramidal neurons toward the pial surface (Polleux et al., 2000) while the graded expression of transmembrane Semaphorin 1A regulates the precise targeting of the dendrites of projection neurons in the Drosophila olfactory system (Komiyama et al., 2007). In the mammalian retina, a number of neuronal homotypic adhesion molecules, including Sdk1, Sdk2 and Cntn2, restrict dendritic arbors of amacrine cells and retinal ganglion cells in specific sublaminae in the inner plexiform layer (Yamagata and Sanes, 2008, 2012; Sanes and Zipursky, 2010). Moreover, one common feature for dendrite development is that the sister branches from the same neuron avoid each other, while coexist with the branches of their neighboring neurons. This self-avoidance phenomenon has been elegantly elucidated by the function of two classes of highly diversified, contact-mediated repulsive molecules: Down syndrome cell adhesion molecules in Drosophila and protocadherins in vertebrates (Schmucker et al., 2000; Wojtowicz et al., 2004; Matthews et al., 2007; Lefebvre et al., 2012).\n\nThese extrinsic cues must trigger intracellular signaling transduction that leads to cytoskeletal rearrangement as well as membrane biogenesis and trafficking (Hanus and Ehlers, 2008). For example, early endosome small G-protein RAB5 facilitates dendrite branching in Drosophila class IV da neurons (Satoh et al., 2008). Large cells with highly branched dendrites such as Purkinje cells accommodate the biosynthesis demand with a large soma containing extensive Golgi apparatus and abundant mitochondria (Herndon, 1963). Molecularly, the secretory pathway components including Sec23, Sar1, and Rab1 are particularly required for dendrite growth compared with axon development in the highly branched mammalian and Drosophila neurons (Ye et al., 2007). As part of the biosynthetic pathway, the production of membrane proteins requires protein folding in the endoplasmic reticulum (ER). It is currently unclear whether protein folding pathways play a role in the increased protein production required for dendrite development.\n\nIn the ER, a highly conserved protein quality control pathway, the unfolded protein response (UPR), maintains the ER homeostasis by adjusting the ER folding capacity upon detection of unfolded proteins (Schroder and Kaufman, 2005; Ron and Walter, 2007; Walter and Ron, 2011; Worby and Dixon, 2014). In higher eukaryotes, three proteins sense the ER stress and activate the UPR: the protein kinase (PKR)-like ER kinase (PERK), the activating transcription factor 6 (ATF6) and the inositol-requiring enzyme 1 (IRE1). Conserved in all eukaryotes, IRE1 contains an ER luminal domain, which is involved in the recognition of misfolded proteins in the ER, and cytoplasmic kinase and endoribonuclease domains, which can activate downstream pathways (Credle et al., 2005; Gardner and Walter, 2011) (Figure 1\u2014figure supplement 1A). Activated IRE1 mediates the non-conventional splicing of an intron from the X box binding protein 1 (XBP1/HAC1) mRNA (Cox and Walter, 1996), and the IRE1-spliced XBP1 acts as a transcription factor to up-regulate the expression of ER chaperones such as BiP and other target genes to relieve the ER stress (Travers et al., 2000; Lee et al., 2003).\n\nIn the nematode Caenorhabditis elegans, the multidendritic polymodal nociceptive neuron PVD has an elaborate and organized dendritic arbor (Figure 1A,B). PVD's largely orthogonally arranged secondary (2\u00b0), tertiary (3\u00b0) and quaternary (4\u00b0) branches form repeated structural units resembling menorahs (Smith et al., 2012). During development, PVD grows its entire dendrite arbor that spans 800 \u03bcm along the body of the animal in just 24 hr (Smith et al., 2010), suggestive of a high level of biosynthesis during the growth phase of this cell. The formation of PVD dendrites requires a single transmembrane leucine rich repeat (LRR) protein DMA-1, which acts cell autonomously in PVD to promote dendrite branching and stabilization (Liu and Shen, 2012). The elaborate dendritic branch pattern is instructed by hypodermal derived ligands SAX-7/L1CAM and MNR-1. Subcellularly localized stripes of SAX-7/L1CAM, together with MNR-1 form a tripartite receptor\u2013ligand complex and guide the growth and branching of the PVD dendritic arbor (Dong et al., 2013; Salzberg et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon showing the PVD dendritic arbor. The dash-boxed region is magnified to show the PVD soma (asterisk), axon, primary dendrite (1\u00b0), secondary dendrite (2\u00b0), tertiary dendrite (3\u00b0) and quaternary dendrite (4\u00b0). (B) Representative wild type (WT) dendritic morphology of PVD neuron expressing membrane associated mCherry (wyIs581). Starting from the cell body, the anterior and the posterior sections of the primary dendrite are divided into 8 and 4 equal segments, respectively, indicated by dashed lines. Anterior, left; dorsal, top. Asterisk, cell body; arrowhead, quaternary (4\u00b0) dendrite. Scale bars, 50 \u03bcm. (C) Quantification of the number of quaternary (4\u00b0) branches in each segment in WT. The position of cell body is indicated by the black line. Error bars show mean \u00b1 s.e.m., n = 10. (D to G) Defective PVD dendritic morphogenesis in ire-1 (ok799) mutants (D and E) is rescued by expressing ire-1 cell-autonomously (F and G). (H and I) Representative dendritic morphology of FLP neurons labeled by cytoplasmic GFP in wild-type (H) and ire-1 (ok799) mutants (I). Asterisks, cell bodies; arrows, secondary branches; arrowheads, tertiary branches. Scale bar, 20 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cartoon showing the IRE-1 dependent UPR pathway. Two missense mutations in wy762 and wy782 are shown by asterisks (B) IRE-1 contains a luminal domain (blue), trans-membrane (TM) domain (black line), a linker (yellow), a S/T kinase domain (red) and an endoribonuclease domain (green). Two missense mutations (wy762 and wy782) are shown by asterisks and the deleted fragment in the null mutation ok799 is illustrated by the gray bar.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative dendritic morphology of PVD neuron expressing membrane associated GFP (wyIs378) in two ire-1 alleles wy762 (A) and wy782 (B) isolated from forward genetic screen. Asterisks, cell bodies; scale bar, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Asterisks, cell bodies. Scale bar, 50 \u03bcm.\n\nUsing two ire-1 mutant alleles that we isolated from a dendrite morphology screen, we reveal that the physiological UPR is induced and required in the PVD neuron during dendrite morphogenesis. The IRE-1/XBP-1/BiP molecular cascade of the UPR pathway governs dendritic branching by regulating the folding and processing of DMA-1. Surprisingly, our evidence indicates that among many cell surface molecules required for dendrite formation, DMA-1 is largely responsible for the induction of the UPR.\n\n## Results\n\n### Loss of ire-1 cause dendrite morphogenesis defects in highly branched neurons\n\nWe visualized the PVD neurons using a membrane associated mCherry or GFP marker expressed under the control of a cell-specific promoter (ser2prom3::myr-mCherry or ser2prom3::myr-GFP). From a forward genetic screen for mutations that alter the PVD dendritic morphology, we identified two loss-of-function mutations, wy762 and wy782. Both alleles cause dramatic loss of dendritic branches, especially in the distal dendrites of PVD (Figure 1\u2014figure supplement 2). Mapping and cloning of these two alleles showed that each allele contains a single point mutation in the ire-1 (inositol-requiring 1 protein kinase) gene. In addition, a known null deletion allele of ire-1, ok799 (Henis-Korenblit et al., 2010) showed indistinguishable phenotype in PVD compared with that of wy762 and wy782 (Figure 1D). The complexity of the menorahs nearest to the cell body appeared unaffected in these mutants (Figure 1E), as did the morphology of PVD axon (data not shown).\n\nInterestingly, in the entire nervous system of C. elegans, the only other pair of highly branched neurons in the head region, FLP also showed severe dendritic arbor defects in ire-1 mutants (Figure 1H,I). Other neurons with fewer dendritic or axonal branches such as IL2, VC and ADL did not show branching defects in ire-1 mutants (data not shown). Together, these results suggest that ire-1 is required for establishing highly branched dendrites.\n\nTo investigate where IRE-1 functions to regulate dendritic development, we generated transgenic mosaic animals. In the ire-1 mutant background, expression of IRE-1 with a PVD-specific promoter (ser2prom3) fully restored the distal branch number and complexity of the whole dendritic arbor (Figure 1F,G) indicating that IRE-1 functions cell-autonomously in PVD to regulate dendrite morphogenesis. Expressing ire-1 cDNA did not cause overbranching in wild-type animals (Figure 1\u2014figure supplement 3B).\n\n### Lack of folding capacity in the ER contributes to dendritic defect of PVD in ire-1 mutants\n\nIRE1 is conserved in all eukaryotes and contains an ER luminal domain for recognizing misfolded proteins in the ER, and a cytoplasmic kinase and an endoribonuclease domain, which lead to the non-conventional cytoplasmic splicing of xbp-1 (Figure 1\u2014figure supplement 1A). One missense mutation (wy782) of ire-1 is a substitution of a conserved residue in the kinase domain while another missense mutation (wy762) is a substitution of a conserved residue in the endoribonuclease domain (Figure 1\u2014figure supplement 1), indicating both domains might be required for dendrite morphogenesis. Since these two domains are required for splicing of the xbp-1 mRNA, we reasoned that the neurons should be able to bypass the requirement of IRE-1 if a spliced form xbp-1 was provided in PVD. Consistent with this hypothesis, PVD-specific expression of spliced xbp-1 cDNA in ire-1 mutants rescued the loss of distal dendrite branches phenotype. In contrast, expression of unspliced xbp-1 genomic DNA at the same concentration did not rescue branching defect (Figure 2A\u2013D). Expressing spliced xbp-1 cDNA did not cause overbranching in wild type animals (Figure 1\u2014figure supplement 3C). These data offer compelling evidence that XBP-1 functions downstream of IRE-1 to establish complex dendritic arbor in PVD. Hence, the IRE-1 arm of the UPR pathway is likely involved in dendrite morphogenesis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig2-v2.jpg)\n\n**Figure 2.:** Expressing xbp-1 cDNA in PVD rescues the defective dendritic morphogenesis in ire-1 mutants (A and B) while expressing xbp-1 genomic DNA in PVD does not (C and D). (E and F) Expressing ER chaperone HSP-4 in PVD rescues the dendritic defect in ire-1 mutants. Anterior, left; dorsal, top. Asterisks, cell bodies. Scale bar, 50 \u03bcm. Error bars show mean \u00b1 s.e.m., n = 10.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Defective dendritic branching in ire-1 mutants (A) cannot be rescued by overexpressing another ER chaperone HSP-3 (B) or a cytoplasmic chaperone DAF-21 in PVD (C). No detectable PVD branching defect in hsp-4(gk514) single mutant (D). Asterisks, cell bodies. Scale bar, 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** No PVD dendritic arbor defects are shown in xbp-1 null mutant (B) compared to ire-1 mutant (A) while in xbp-1 background, conditional knockout xrn-1 induced by somatic CRISPR phenocopied the subtle ire-1 like phenotype (C). Asterisks, cell bodies. Scale bar, 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** No PVD dendritic arbor defects was shown in atf-6 (A) or pek-1 (B) null mutants while xbp-1 pek-1 double mutant showed ire-1 like phenotype with low-penetrance (C). Asterisks, cell bodies. Scale bar, 50 \u03bcm.\n\nBecause of the well-established role of the IRE-1/XBP-1 pathway in enhancing protein folding capacity in the ER, we hypothesized that IRE-1/XBP-1 upregulates specific ER chaperones to promote dendrite morphogenesis. We searched the PVD-specific gene profiling data (Smith et al., 2010) and found that two abundant ER chaperones of the Hsp70 family (homologous to mammalian grp78/BiP), HSP-3 and HSP-4, are enriched in PVD and therefore might be the targets of XBP-1 in PVD neurons (Urano et al., 2002). Consistent with this idea, overexpression of hsp-4 in PVD restored normal dendritic branches in ire-1 mutants (Figure 2E,F). However, overexpression of hsp-3 or daf-21 (a cytoplasmic chaperone of the Hsp90 family) did not rescue the phenotype (Figure 2\u2014figure supplement 1B,C). Furthermore, hsp-4 single mutant did not show the dendritic arbor defects (Figure 2\u2014figure supplement 1D), indicating other ER chaperones or co-chaperones functioning in parallel with HSP-4. These results indicate that the dendritic defect in the ire-1 mutants is likely due to lack of specific chaperones in the ER.\n\nImportantly, xbp-1 mutant (Figure 2\u2014figure supplement 2B) did not show the dendritic arbor defects. This suggests that other pathways downstream of IRE-1 but independent of XBP-1 can play redundant roles in dendrite morphogenesis. During ER stress, Ire1 can promote the degradation of mRNAs encoding some ER proteins to maintain homeostasis through regulated Ire1-dependent decay (RIDD) (Hollien and Weissman, 2006; Hollien et al., 2009). The RIDD pathway has been shown to affect cell fate in various organisms, such as photoreceptor development in Drosophila (Coelho et al., 2013; Maurel et al., 2014). We next investigated whether the RIDD pathway functions in parallel with XBP-1 to regulate dendrite morphogenesis. mRNA degradation is initiated by internal cleavage mediated by RIDD, and the resulting RNA fragments would be subject to degradation by cytoplasmic 5\u2032-3\u2032 mRNA degradation machinery. However, all null mutants of the RIDD pathway components are lethal and difficult to examine dendrite phenotypes. Therefore, we used somatic clustered regularly interspaced short palindromic repeat (CRISPR) to create mosaic viable and conditional knock out of various genes (Jinek et al., 2012; Cong et al., 2013; Shen et al., 2014). Using this method, we found that in the xbp-1 mutant background, somatic knockout of xrn-1, which encodes a 5\u2032-3\u2032 exoribonuclease and is a key component of the 5\u2032-3\u2032 mRNA degradation pathway (Newbury and Woollard, 2004), phenocopied the ire-1 dendritic phenotype in PVD neurons in about 10% of the animals (Figure 2\u2014figure supplement 2C). Somatic CRISPR is intrinsically mosaic and often generates low-penetrance phenotypes compared with viable null alleles. These results indicate that the RIDD pathway functions in parallel to the XBP-1 to regulate dendrite branching of PVD.\n\nWe also examined mutations in the other two arms of the UPR pathway, ATF-6 and PERK/PEK-1, and found that they did not show any dendrite morphogenesis phenotype in PVD (Figure 2\u2014figure supplement 3A,B). However, xbp-1 pek-1 double mutant showed a low-penetrance (about 25%) ire-1-like phenotype (Figure 2\u2014figure supplement 3C). This suggests that the ER homeostasis mediated by other UPR pathways also contribute to dendrite morphogenesis.\n\n### DMA-1 is a key target of the IRE-1 UPR pathway in PVD dendrite morphogenesis\n\nWe next asked which protein(s) are potential targets of the IRE-1 UPR pathway in PVD executing dendrite morphogenesis. The severe decrease of distal dendritic branches of PVD in ire-1 mutants is reminiscent of dma-1 mutants. DMA-1 is a single transmembrane leucine-rich repeat (LRR) protein prominently expressed in PVD, and mutations in dma-1 result in severely reduced dendritic branching and complexity (Liu and Shen, 2012) (Figure 3\u2014figure supplement 1A). DMA-1 acts in PVD as a receptor to recognize the SAX-7/L1CAM and MNR-1 ligand complex in the surrounding skin cell to promote branching and precisely pattern the dendritic arbor (Dong et al., 2013; Salzberg et al., 2013). We reasoned that the folding of DMA-1 might require IRE-1. Consistent with this hypothesis, ire-1 dma-1 double mutants showed a phenotype that is indistinguishable from the dma-1 single mutant phenotype, suggesting that these two molecules function in the same genetic pathway in dendrite morphogenesis (Figure 3\u2014figure supplement 1B). Furthermore, hsp-4 overexpression in ire-1 dma-1 double mutants was not able to rescue the dendritic arbor defect (Figure 3\u2014figure supplement 1C), suggesting that DMA-1 might be a target of HSP-4.\n\nAs a single transmembrane protein, DMA-1 is synthesized in the ER and delivered to the plasma membrane through the secretory pathway. In wild type animals, GFP-tagged DMA-1 was detected on all the PVD dendritic processes and at the cortex of the cell body as diffusive fluorescence. In addition, numerous discrete intracellular puncta were found in the cell body and along the dendrites, which presumably represent the membrane trafficking organelles that carry DMA-1 (Figure 3B) (Liu and Shen, 2012). In ire-1 mutants, the punctate DMA-1::GFP in the cell body was lost (Figure 3E). Instead, the somatic DMA-1::GFP in the ire-1 mutants co-localized with an general ER marker, cytochrome b5 (cb5) (Rolls et al., 2002) (Figure 3G). Moreover, the diffuse DMA-1::GFP signal on the distal dendrites was dramatically reduced in the ire-1 mutant while the signal on the proximal dendrites in ire-1 mutants was the same as in wild type (Figure 3H,J,K). These observations suggest that DMA-1 is trapped in the ER and is not delivered to the distal dendrite plasma membrane, leading to the distal dendritic phenotype. Consistent with this hypothesis, overexpression of the ER chaperone HSP-4, restored the DMA-1::GFP subcellular localization in ire-1 mutants to the normal distribution (Figure 3J,K). Taken together, these data suggest that ER chaperones such as HSP-4 help to fold DMA-1, which is required for the plasma membrane localization of DMA-1 and dendrite branching.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of PVD in a young adult animal showing three representative subcellular regions: CB (cell body), P (proximal), and D (distal) dendrites. (B to G) Subcellular localization of DMA-1::GFP and general ER marker cb5::mCherry in PVD cell bodies in wild-type animals (B to D) and ire-1 mutants (E to G). (H to J) DMA-1::GFP subcellular localization in WT (H), ire-1 (I) and ire-1 mutants expressing HSP-4 (J). Top panels: cell body; middle panels: proximal menorahs; bottom panels: distal menorahs. The morphology of the dendritic menorah is shown by cytoplasmic mCherry. Arrowheads, DMA-1::GFP puncta; brackets, tertiary branches (without puncta) used for measuring diffuse DMA-1:GFP. (K) Quantification of diffuse DMA-1:GFP (normalized to cytoplasmic mCherry) on tertiary branches in (H to J). Error bars show mean \u00b1 s.e.m., n = 50\u201360. ns, not significant; **p < 0.01 (two-way ANOVA and post hoc Sidak's multiple comparisons test). Scale bars, 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Severe PVD dendritic branching defect in dma-1 mutants. (B) ire-1;dma-1 double mutants show a similar dendritic phenotype to dma-1 single mutants. (C) Overexpression of hsp-4 in ire-1;dma-1 double mutants cannot rescue the dendritic arbor defect. Asterisks, cell bodies. Scale bar, 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Arrows indicating the general ER marker in PVD distal branches. Scale bar, 5 \u03bcm.\n\nTo further understand why the dendrite loss in the ire-1 mutants was restricted to the distal dendrites, we investigated where the synthesis and folding of membrane proteins took place in PVD. This is an important question because the existence of local translation in dendrites might provide a source of DMA-1 production (Holt and Schuman, 2013; Tom Dieck et al., 2014). Since HSP-4 is capable of folding DMA-1, we first examined the subcellular localization of HSP-4 and found that HSP-4::GFP was exclusively localized in the PVD soma (Figure 3\u2014figure supplement 2A,D), co-localizing with a rough ER marker TRAM (Figure 3\u2014figure supplement 2G\u2013I), HSP-4's ER localization pattern is consistent with the observation that its mammalian homolog BiP is localized in rough ER (Bole et al., 1989; Lai et al., 2010).These data suggests that the main protein synthesis and folding capacity for DMA-1 is likely in the cell body. In ire-1 mutants, lack of the upregulation of hsp-4 by spliced XBP-1 results in less DMA-1 in the secretory pathway and insufficient diffusion of DMA-1 to the distal region might be responsible for the specific loss of distal dendrites.\n\nIf the ire-1 phenotype was the result of diminished DMA-1 levels in the distal dendrites, we reasoned two potential outcomes of DMA-1 overexpression in ire-1 mutants. The increased expression of DMA-1 might reach the plasma membrane and rescue the ire-1 phenotype. Alternatively, the DMA-1 overexpression might increase the protein-folding load and exacerbate the already strained protein folding machinery and lead to a more severe dendrite defect. Interestingly, we observed both effects: about 70% of animals showed efficient rescue of the dendritic arbor (Figure 4B,D), while about 25% of animals showed a more severe phenotype, with the loss of proximal branches in addition to the distal ones (Figure 4C,D). We hypothesized that in the absence of IRE-1, the remaining protein folding capacity is at a critical level where overexpression of DMA-1 can produce functional or misfolded proteins, possibly depending on the slightly variable levels of endogenous chaperones in individual animals (Burga et al., 2011). Consistent with the hypothesis, high level of chaperon HSP-4 expression together with DMA-1 decreased the percentage of dma-1-like phenotype, in a dose-dependent manner (Figure 4D). To further test this hypothesis, we separated the transgenic animals into the phenotypically rescued animals and the severely defective animals based on their dendrite morphology, we found that there was much less accumulation or aggregation of DMA-1::GFP in the PVD cell bodies with the rescued morphology compared to more severely defective animals (Figure 4\u2014figure supplement 1A\u2013G). Together, these rescuing results argue that the insufficient level of functional DMA-1 due to decreased protein folding capacity accounts for a large part of PVD dendritic defect in the ire-1 mutants.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative defective PVD dendritic arbor in ire-1 mutants. (B and C) Overexpressing DMA-1 in PVD in ire-1 mutants rescues the dendritic defect (WT-like) (B) or causes a more severe phenotype with fewer branches (dma-1-like) (C). Asterisks, cell bodies; Scale bar, 50 \u03bcm. (D) Proportions of different phenotypes in different transgenic rescue strains with overexpression of dma-1 and/or supplementation of different doses of HSP-4 chaperon. n > 120. **p < 0.01, \u03c72 test with Sidak's multiple comparison correction.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In the same trangene (wyEx7338) bearing dma-1::GFP expression in ire-1 mutants, there is much less accumulation or aggregation of DMA-1::GFP in the PVD cell bodies with the rescued \u2018WT-like\u2019 PVD morphology (A to C) compared with more severely defective \u2018dma-1 like\u2019 animals (D to F). (G) Quantification of the DMA-1::GFP intensity in the cell bodies (normalized to cytoplasmic mCherry) in (A to F). Error bars show mean \u00b1 s.e.m. n = 20. **p < 0.01, t-test. Scale bar, 5 \u03bcm.\n\n### The UPR activity in the PVD neuron is correlated with dendritic branching during development\n\nWe have shown that the UPR machinery is required for dendrite morphogenesis in PVD. However, it is not clear whether the dendritic branching activates the UPR in PVD during development. To answer this question, we designed a UPR activity reporter which contains the genomic fragment of xbp-1 fused with a GFP in frame followed by an SL2::mCherry cassette (Figure 5A). Upon UPR activation, the intron in genomic xbp-1 DNA will be spliced out by IRE-1, leading to the production of XBP-1::GFP (Iwawaki et al., 2004). The SL2::mCherry cassette permits the bicistronic expression of XBP-1::GFP and mCherry (Spieth et al., 1993), and its function is similar to the viral IRES sequence in mammalian system. The whole reporter is driven by a PVD specific promoter (Pdes-2). The XBP-1::GFP intensity indicates the endogenous UPR activity in PVD while the intensity of mCherry is used to normalize to transgene expression levels among different animals. Consistent with the requirement of IRE-1 to activate XBP-1, the XBP-1::GFP intensity in PVD neurons was diminished in ire-1 mutants compared with wild-type animals (Figure 6\u2014figure supplement 1A,D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig5-v2.jpg)\n\n**Figure 5.:** (A) Design of the PVD-specific UPR activity reporter. The xbp-1 genomic DNA is fused with GFP followed by an SL2::mCherry cassette, which permits the bicistronic expression of XBP-1::GFP and mCherry. The reporter is driven by a PVD specific promoter. The XBP-1::GFP brightness indicates the UPR activity while the intensity of mCherry is used to normalize to transgene expression levels. (B to J) The PVD UPR activity in L3 stage (B to D), L4 stage (E to G) and adult stage (H to J). Arrowheads, nuclei of PVD. Scale bar, 5 \u03bcm. (K) Quantification of the normalized UPR activity in PVD in (B to J). Error bars show mean \u00b1 s.e.m. n = 30\u201350. **p < 0.01, Kruskal\u2013Wallis one-way test and post hoc Dunn's test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The UPR activity is indicated by nuclear HIS-24::GFP brightness (driven by the hsp-4 promoter) while the PVD neuron is labeled and identified by cytoplasmic mCherry. The UPR activity of PVD is shown in L3 stage (A to C), L4 stage (D to F) and adult stage (G to I). Arrowheads, nuclei of PVD. Scale bar, 5 \u03bcm. (J) Quantification of the UPR activity in PVD in (A to I). a.u., arbitrary unit. Error bars show mean \u00b1 s.e.m. **p < 0.01, Kruskal\u2013Wallis one-way test and post hoc Dunn's test.\n\nPVD neurons are derived postembryonically during the mid-L2 larval stage (Sulston and Horvitz, 1977), and starting from the late L2/early L3, 2\u00b0 branches begin to form followed by extension of 3\u00b0 branches in the L3 stage. Dendrite morphogenesis is completed in the early L4 stage after 4\u00b0 branches have sprouted from the 3\u00b0 branches to form a network of menorah-shaped processes (Smith et al., 2010). Using this PVD specific UPR activity reporter, we observed XBP-1::GFP in the nucleus of PVD starting at the L3 stage. The normalized XBP-1::GFP intensity increased between L3 and late L4 animals, coincidental with the stage of rapid dendrite branch addition. The XBP-1::GFP intensity subsequently decreased in mid-adult animals (Figure 5B\u2013K). We verified this result by using another UPR activity reporter (Phsp-4::HIS-24::GFP). As an ER chaperone, HSP-4 is a transcriptional target of activated XBP-1 (Calfon et al., 2002; Urano et al., 2002), and its transcriptional level shows tight correlation with activation of the UPR with high sensitivity (Iwawaki et al., 2004). We used the hsp-4 promoter to drive the expression of the C. elegans H1 histone, HIS-24 fused with GFP to detect the UPR activity in PVD neurons labeled with cytoplasmic mCherry. We found that the HIS-24::GFP signal became clearly detectable in L3 and further increased in L4 animals during which the menorahs form. The GFP fluorescence is dramatically downregulated in adult animals, (Figure 5\u2014figure supplemental 1). Taken together, these results suggest that the UPR activity occurs most strongly during the time of PVD dendritic branching.\n\n### DMA-1 is largely responsible for the activation of the UPR in PVD\n\nThe next question we wanted to address was how the UPR in PVD is induced during dendrite morphogenesis. The rapid dendritic growth of PVD requires high level of biosynthesis of plasma membrane proteins and efficient folding of them in the ER. PVDs are one of the only two pairs of highly branched neurons in C. elegans. Several transcription factors have been implicated in the cell fate determination of PVD. We considered two possibilities for the induction of the UPR activity in PVD neuron. In a \u2018top down\u2019 cell fate model, the enhanced UPR might be part of the cell fate decision controlled by transcription factors. Alternatively, the UPR might be induced because of the protein folding demand, in particular, maybe due to the translation of DMA-1, an essential membrane molecule for PVD dendrite branching (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig6-v2.jpg)\n\n**Figure 6.:** (A) Diagrams showing two possible models for the activation of the UPR in PVD. (B to J) The PVD UPR activity in WT (B to D), dma-1 mutants (E to G) and WT with overexpession of dma-1 (H to J). Scale bar, 5 \u03bcm. (K) Quantification of the normalized UPR activity in PVD in (B to J) and other mutants in (Figure 6\u2014figure supplement 1D\u2013L). Error bars show mean \u00b1 s.e.m. ns, not significant, **p < 0.01, *p < 0.05, Kruskal\u2013Wallis one-way test and post hoc Dunn's test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The PVD UPR activity in WT (A to C), ire-1 (D to F), hpo-30 (G to I) and kpc-1 mutants (J to L). UPR activity is indicated by XBP-1::GFP brightness while the intensity of mCherry is used to normalize for transgene expression level. Scale bar, 5 \u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The UPR activity is indicated by nuclear HIS-24::GFP brightness (regulated by hsp-4 promoter) while the intensity of cytoplasmic mCherry is used to normalize for transgene expression level. The UPR activity of PVD is shown in WT (A to C), ire-1 (D to F) and dma-1 (G to I) animals. Arrowheads, nuclei of PVD. Arrow, PDE cell body occasionally labeled in this strain. Scale bar, 5 \u03bcm. (J) Quantification of the normalized UPR activity in PVD in (A to I). Error bars show mean \u00b1 s.e.m. **p < 0.01, Kruskal\u2013Wallis one-way test and post hoc Dunn's test.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** The UPR activity in WT (A to C) and dma-1 mutants (D to F). UPR activity is measured by XBP-1::GFP brightness while the intensity of mCherry is used to normalize for transgene expression level. Scale bar, 5 \u03bcm. (G) Quantification of the normalized UPR activity in PVC in (A to F). Error bars show mean \u00b1 s.e.m. n = 20. NS, not significant, t-test.\n\nTo distinguish these models, we first tested this PVD specific UPR activity reporter in dma-1 knockout mutants and we found that the normalized XBP-1::GFP fluorescence level was significantly lower compared with wild type (Figure 6B,E,K), suggesting that a functional dma-1 gene is required to turn on the UPR activity in PVD. Conversely, overexpression of dma-1 cDNA in PVD leads to an increase of UPR activity (Figure 6H,K). Consistently, in dma-1 mutants, another UPR activity reporter, Phsp4::HIS-24::GFP also showed dramatic decrease in PVD neurons (Figure 6\u2014figure supplement 2).\n\nThese surprising results argue that DMA-1 is necessary for UPR induction in PVD, despite the fact that there must be many membrane proteins necessary to build dendrites. To test whether DMA-1's role in UPR induction is specific, we asked if mutations in other membrane proteins required for PVD dendrite morphogenesis also result in a decrease in UPR activation. Deletion mutations in kpc-1 (a Kex2/subtilisin-like proprotein convertase and a Furin homolog) (Schroeder et al., 2013) and hpo-30 (a claudin homolog) (Smith et al., 2013) cause severe reduction of PVD dendrites. While both of these gene products are processed in ER, neither mutation causes reduced UPR reporter activity in PVD (Figure 6K and Figure 6\u2014figure supplement 1G\u2013L). In addition, this reporter also showed activity in the unbranched neuron PVC, indicating that there might be UPR activity that is unrelated to branched dendrite morphogenesis. Nevertheless, the dma-1 mutation did not change the UPR activity in PVC (Figure 6\u2014figure supplement 3). These results demonstrate that the activation of UPR in PVD specifically depends on DMA-1 production.\n\n### Coexpression of HSP-4 and DMA-1 induces ectopic branches more efficiently\n\nSurveying morphological phenotypes of other types of neurons, we found that the dendritic arbor defects in ire-1 mutants were restricted to PVD and FLP the only two pairs of highly branched neurons in the C. elegans nervous system (Figure 1I). Coincidentally, only PVD and FLP showed sustained expression of DMA-1(Liu and Shen, 2012). These observations suggest that the establishment of a complex dendritic arbor not only requires instructive cell surface molecules but also physiological UPR to increase the protein folding capacity and maintain cellular homeostasis. Since PVD and FLP are also the largest neurons in worms with complicated dendritic arbor, we wondered if the UPR is particularly activated in these large cells. To directly test this idea, we examine the PVD morphology in dpy-5 ire-1 double mutants. dpy-5 mutants have reduced body length (about two third of that of wild type) due to bearing a deletion in the cuticle procollagen DPY-5 gene (Thacker et al., 2006) and correspondingly reduced PVD size (Figure 7\u2014figure supplement 1B). Interestingly, the defective PVD phenotype of ire-1 was dramatically rescued with some animals showing wild type morphology (Figure 7\u2014figure supplement 1C\u2013E), indicating the UPR is particularly required for neurons with large and complicated dendritic arbors.\n\nTo further test this hypothesis, we determined the sufficiency of UPR activation to induce ectopic branches in neurons that normally do not branch extensively. The sensory neuron PDE shares the same lineage with PVD and does not express detectable levels of dma-1. The cell body of PDE is positioned close to the PVD's and has a single processes running adjacent to the PVD dendrites. Consequently, the extracellular environment for PDE including the molecular ligands for DMA-1 is similar to that of PVD (Figure 7A,B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig7-v2.jpg)\n\n**Figure 7.:** (A) Diagram showing the PDE neuron (in red) which is located close to the PVD cell body and has a simple processes running adjacent to the PVD dendrites. Orthogonal ectopic branching (in orange) at a stereotyped position in the PDE commissure, reminiscent in location and direction to PVD tertiary branching. (B to D) Representative dendritic morphology of PDE neurons expressing cytoplasmic GFP in wild-type (B), a strain with expression of dma-1 (C) and a strain with co-expression of dma-1 and hsp-4 in PDE (D). Scale bar, 20 \u03bcm. Arrows, orthogonal ectopic branches. (E) More dramatic ectopic branching in the same strain co-expressing dma-1 and hsp-4 in PDE. (F) No ectopic branching in the same strain co-expressing hpo-30 and hsp-4 in PDE. (G) Percentages of PDE ectopic branching in strains expressing hsp-4 only, dma-1 only, and dma-1 with hsp-4. n > 100. **p < 0.01, \u03c72 test with Sidak correction. (H) Length of PDE ectopic branches in the strains expressing dma-1 only, and dma-1 with hsp-4. **p < 0.01, Mann Whitney U-test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A). Defective dendritic branch in ire-1 mutants (B). Reduced body length and smaller PVD size in dpy-5 mutants. (C). dpy-5 ire-1 double mutants showing partially rescued PVD morphology. (D). Some dpy-5 ire-1 double mutants showing wild-type PVD morphology. (E). Quantification of numbers of secondary branches per 100 \u03bcm in (A\u2013D). Asterisks, cell bodies. Scale bar, 50 \u03bcm. **p < 0.01, one-way ANOVA and post hoc Sidak's multiple comparisons test.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06963/elife-06963-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Representative morphology of PDE neurons expressing cytoplasmic mCherry in wild-type (A) and a strain with ectopic expression of dma-1 in PDE (D). In these animals, the UPR activity is indicated by Phsp-4::HIS-24::GFP reporter in (B) and (E). Asterisks, PDE nuclei. Arrow, orthogonal ectopic branch of PDE. Scale bar, 5 \u03bcm. (G) Quantification of the UPR activity in PDE in (A to F). a.u., arbitrary unit. Error bars show mean \u00b1 s.e.m. **p < 0.01, Mann Whitney U-test.\n\nOverexpression of dma-1 in PDE resulted in ectopic orthogonal branches that were similar to the PVD tertiary level branches (Figure 7C) (Liu and Shen, 2012). However, the low efficiency of ectopic branch induction (21% of animals bearing transgene) suggests there might be other intrinsic mechanisms that are necessary to establish exuberant branches. Notably, increasing the ER folding capacity by expressing HSP-4 together with DMA-1 in PDE induced ectopic branches more efficiently (47% of animals) while expressing other PVD-branching cell surface molecules such as HPO-30 with HSP-4 did not induce any ectopic branches (Figure 7D\u2013G). Further, these ectopic branches were more branched and significantly longer than overexpressing DMA-1 alone (Figure 7H), and the Phsp-4::HIS-24::gfp reporter also showed increased UPR activity in PVD (Figure 7\u2014figure supplement 2). These data support our model that the UPR is required for highly branched dendrites.\n\n## Discussion\n\n### The unfolded protein response is an intrinsic requirement for highly branched neurons\n\nConserved in all eukaryotes, the UPR pathway plays significant roles in dealing with cellular stress and balancing homeostasis and apoptosis (Walter and Ron, 2011). Failure to mitigate the ER stress and reestablish homeostasis correlates with cell death, playing a central role in numerous human diseases such as pancreatic \u03b2-cell loss in diabetes (Fonseca et al., 2011), retinal degeneration triggered by misfolded proteins in retinal dystrophies (Lin and Lavail, 2010) and dopaminergic neuron degeneration in Parkinson disease models (Valdes et al., 2014). In addition, under other biological conditions involving intense ER functions such as viral infection (Dimcheff et al., 2003) or pathogen defense (Richardson et al., 2010), the UPR is activated to relieve the ER stress. In the nervous system, several reports indicate normal regulatory roles of the IRE-1. For example, IRE-1 was shown to be involved in trafficking cell surface molecules such as AMPA receptor in cultured cells (Vandenberghe et al., 2005) or glutamate receptor GLR-1 in C. elegans interneurons (Shim et al., 2004), and rhodopsins in Drosophila photoreceptors (Coelho et al., 2013).\n\nHowever, to the best of our knowledge, the role of the UPR pathway in the development of the nervous system is poorly understood except in a few isolated cases. For example, a different arm of the UPR, PERK1, was recently shown to be required for the olfactory receptor choice in mammalian olfactory sensory neurons through a feedback loop (Dalton et al., 2013). Our results on the IRE-1/XBP-1/BiP/DMA-1 molecular cascade regulating dendrite morphogenesis in PVD neurons provide another clear example that UPR is directly involved in the development of neuronal cell morphology. More importantly, these results provide a link between dendrite morphogenesis and cellular homeostasis. First, only highly branched neurons such as PVD and FLP require the UPR to establish their dendritic arbors; second, the UPR activity in PVD is correlated with the development of dendrites; finally the induction of UPR is dependent on the expression of a pivotal molecule for dendritic branching DMA-1 in a homeostatic manner. Thus, in addition to the instructive extracellular cues required for complex branch formation and guidance, intrinsic mechanisms are also required.\n\n### The UPR and secretory pathways are critical for dendrite morphogenesis\n\nThe secretory and endocytic pathways constitute the main membrane trafficking pathway in cell (Sallese et al., 2006; Brandizzi and Barlowe, 2013). In order to form dendrites, membrane and transmembrane proteins need to be synthesized and delivered to the growing dendritic arbor. It is therefore not surprising that molecular components, in these pathways such as the early endosome protein RAB-5 are involved in dendrite morphogenesis (Satoh et al., 2008). Interestingly, one previous study showed that secretory pathway mutants preferentially alter dendrite morphology and not axon extension (Ye et al., 2007). Similarly, we found that the dendrite but not axon morphogenesis is specifically compromised in the ire-1 mutants, suggesting that specific molecular program and membrane trafficking pathways are required for dendrite development. Thus, our studies add weight to the idea that different molecular and trafficking pathways are utilized during dendrite morphogenesis and axon extension.\n\n### The UPR for dendrite morphogenesis is largely triggered by A single transmemebrane protein\n\nThe physiological functions of the UPR have been best demonstrated in highly differentiated cells that produce specific types of proteins in large amounts. One best-characterized example is the requirement of IRE1 and XBP1 for differentiation of B cells into plasma cells, where the UPR is activated to accommodate the secretion of large amounts of immunoglobulins (Reimold et al., 2001). In these cells, the ER and secretory system are highly specialized for antibody biosynthesis, which accounts for half of the total protein production in these cells (Askonas, 1975). In Ig heavy chain knockout mice, the UPR activity was diminished in B cells, indicating that the production of immunoglobulins in B cells is required for induction of the UPR (Iwakoshi et al., 2003). Another example is in the mammalian olfactory sensory neurons. Olfactory receptor (OR) genes are among the most highly transcribed G-protein-coupled receptors (GPCRs) in these neurons and trigger the UPR feedback loop required for specific OR choice (Dalton et al., 2013).\n\nIn contrast to these specialized cell types, a large number of diverse proteins and lipids are required in a developing neuron to establish its dendritic arbor. Many of these proteins are folded and processed in the ER. Surprisingly, our results suggest that among these proteins, a single transmembrane protein, DMA-1, appears to be largely responsible for the activation of the UPR pathway in PVD during dendritic development. The characteristics of the DMA-1-like LRR proteins including their non-globular flexible solenoid like structure, repetitive amino acid sequences and high content of hydrophobic leucines, might make them particularly challenging to fold and assemble properly (Freiberg et al., 2004). These characteristics may trigger the UPR in these cells and thus make this system required for dendrite morphogenesis. Other evidence also supports the notion that specific proteins have higher folding demands. For example, although IRE-1 has been shown to function in the normal secretory pathway (Safra et al., 2013), the protein trafficking defect in ire-1 mutants is not general. It has been shown that for several different membrane-spanning proteins including Golgi-resident mannosidase, a TWK-type potassium channel, a single transmembrane synaptic vesicle protein synaptobrevin and a vesicular monoamine transporter CAT-1, their subcellular localizations in ire-1 mutants were unaffected in interneurons (Shim et al., 2004). These results suggest that DMA-1 is specifically regulated by the UPR pathway in the PVD neuron.\n\nTogether, these findings indicate that certain proteins are intrinsically more challenging for folding and specific cell types have to employ the UPR pathway to accommodate the influx of these proteins and maintain homeostasis in the ER.\n\n## Materials and methods\n\n### Strains and genetics\n\nStrains were grown at 20\u00b0C on NGM agar plates seeded with Escherichia coli OP50 except the UPR mutants and UPR reporter strains growing at 16\u00b0C. The wild-type strain was C.\u2009 elegans N2 Bristol. The following mutant alleles and transgenes were used in this study:\n\nLGI: dma-1(wy686), kpc-1(gk8) dpy-5 (e907); LGII: ire-1(ok799), hsp-4(gk514); LGIII: xbp-1(tm2482) wyIs592 [ser2prom3::myrGFP, odr-1::dsRed]; LGIV: wyIs581[ser2prom3::myr-mCherry, odr-1::dsRed]; LGV: hpo-30(ok2047); LGX: atf-6(ok551), pek-1(ok275), qyIs369[ser2prom3::dma-1::GFP,unc-119+]), wyIs378[ser2prom3::myrGFP, Prab3::mCherry, odr-1::dsRed].\n\n### Isolation and mapping of mutants\n\nThe wy762 and wy782 alleles were isolated from an F2 semiclonal screen of 3000 haploid genomes in the strain containing wyIs378 (Dong et al., 2013). Based on SNIP-SNP mapping and whole genome sequencing (Sarin et al., 2008), we got the missense mutation information on ire-1 locus and verified by Sanger sequencing and complementation test with the null allele.\n\n### Molecular cloning\n\nExpression clones were made in the pSM vector, a derivative of pPD49.26 (A Fire) with extra cloning sites (a kind gift from S McCarroll and CI Bargmann). The ser2prom3 (PVD) and Pdat-1 (PDE) promoters were used for cell-specific expression. cDNAs of ire-1, xbp-1(long isoform), hsp-3 and his-24 were amplified from cDNA library while genomic DNAs of xbp-1, hsp-4, cb5 (C31E10.7) and tram-1 were amplified from genomic templates. The XBP-1 UPR reporter construct was driven by Pdes-2 (PVD), containing xbp-1 genomic DNA fused with GFPnovo2 (Arakawa et al., 2008) followed by gpd-2 SL2::mCherry (from pBALU12) (Tursun et al., 2009). For hsp-4 transcriptional activity reporter, the 1.1 kb 5\u2032 upstream of hsp-4 ATG was cloned, driving HIS-24 fused with GFPnovo2. For HSP-4::GFP, GFPnovo2 was inserted right before the C-terminus HDEL sequence of genomic HSP-4. For somatic CRISPR, two DNA templates of xrn-1 sgRNA were 5\u2032- GATATCGCTCCGATGTCCAT-3\u2032 and 5\u2032- AACGTGACGTCATCGTCATT-3\u2032, under the control of U6 promoter as in (Chen et al., 2013).\n\n### Germline transformation\n\nThe transgenic extrachromosomal arrays were generated via injection using standard microinjection techniques (Mello and Fire, 1995).\n\nFor rescue experiments, wyEx7329[ser2prom3::ire-1 (40 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)]; wyEx7332[ser2prom3::xbp-1(cDNA) (20 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)]; wyEx6502[ser2prom3::xbp-1(genomic DNA) (40 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)]; wyEx6816[ser2prom3::hsp-4 (50 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)]; wyEx7333[ser2prom3::hsp-3 (50 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)]; wyEx7335[ser2prom3::daf-21 (50 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)].\n\nFor ER markers and chaperone co-labeling, wyEx8074[ser2prom3::cb5::mCherry PCR fusion product (20 ng/\u03bcl), ser2prom3::hsp-4::GFPnovo2::HDEL (10 ng/\u03bcl), pBluescript (30 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)]; wyEx8075[Pdes-2::tagBFP::TRAM (15 ng/\u03bcl), ser2prom3::hsp-4::GFPnovo2::HDEL (10 ng/\u03bcl), pBluescript (30 ng/\u03bcl), odr-1::dsRed(90 ng/\u03bcl)].\n\nFor DMA-1 overexpression experiment, in wyIs581 background, wyEx7338[ser2prom3::dma-1::GFP (50 ng/\u03bcl), pBluescript (60 ng/\u03bcl), Pmyo-2::mCherry(1.5 ng/\u03bcl)];\n\nFor HSP-4 dose-dependent rescue experiments, with wyEx7338 and wyIs581, wyEx7859[ser2prom3::hsp-4 (30 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(60 ng/\u03bcl), pBluescript (60 ng/\u03bcl)]; wyEx7770[ser2prom3::hsp-4 (60 ng/\u03bcl), pBluescript (30 ng/\u03bcl), odr-1::dsRed(60 ng/\u03bcl)].\n\nFor the UPR activity reporter, wyEx6766[Pdes-2::xbp-1(genomic)::GFPnovo2::SL2-mCherry (80 ng), Punc-122::dsRed(30 ng/\u03bcl), pBluescript (30 ng/\u03bcl)]; wyEx6812[ser2prom3::dma-1 (50 ng/\u03bcl), odr-1::dsRed(60 ng/\u03bcl), pBluescript (60 ng/\u03bcl)] For UPR activation experiment with hsp-4 transcriptional reporter, with wyIs581, wyEx7820[Phsp-4::HIS-24::GFPnovo2 (20 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(70 ng/\u03bcl)].\n\nFor somatic CRISPR, in xbp-1 (tm2482) background, wyEx7862[Phsp-16.2::Cas9 (50 ng/\u03bcl), PU6::xrn-1-sgRNA1 temp (30 ng/\u03bcl), PU6::xrn-1-sgRNA2 temp (30 ng/\u03bcl),odr-1::GFP(40 ng/\u03bcl)].\n\nFor PDE ectopic branching experiments, wyEx7035 [Pdat-1::hsp-4 (40 ng/\u03bcl), Pdat-1::GFP (20 ng/\u03bcl), odr-1::dsRed(60 ng/\u03bcl), pBluescript (30 ng/\u03bcl)] injected into wyEx4287 strain with overexpression of dma-1 in PDE (Liu and Shen, 2012); wyEx8063[Pdat-1::GFP (20 ng/\u03bcl), Pdat-1::hsp-4 (40 ng/\u03bcl), Pdat-1::hpo-30 (30 ng/\u03bcl), odr-1::dsRed (90 ng/\u03bcl)];\n\nFor PDE UPR reporter experiments, wyEx8049[Phsp-4::HIS-24::GFPnovo2 (20 ng/\u03bcl), Pdat-1::mCherry (2 ng/\u03bcl), pBluescript (60 ng/\u03bcl), odr-1::dsRed(70 ng/\u03bcl)]; then use this line to ectopic express dma-1 in PDE, wyEx8065 [Pdat-1::dma-1::BFP (50 ng/\u03bcl), Pdat-1::mCherry (20 ng/\u03bcl), pBluescript (30 ng/\u03bcl), odr-1::GFP(20 ng/\u03bcl)].\n\nwyEx4280 was used for FLP labeling (Liu and Shen, 2012).\n\n### Somatic xrn-1 CRISPR\n\nFollowing the protocol in (Shen et al., 2014) with some modifications, we first synchronized the culture by allowing 100\u2013150 adult worms containing transgenic arrays (raised at 20\u00b0C) to lay eggs for 3 hr on seeded NGM plates. The eggs were heat-shocked at 33\u00b0C for 2 hr and then shifted to 20\u00b0C. After 60 hr, the PVD morphology was checked at the young adult stage.\n\n### Microscopy\n\nImages of fluorescently tagged fusion proteins were captured in live C. elegans using Plan-Apochromat 40\u00d7/1.3NA objective for whole PVD morphology and 63\u00d7/1.4NA for subcellular localization of fluorescent proteins on a Zeiss LSM710 confocal microscope (Carl Zeiss, Germany). Animals were immobilized on 2% agarose pad using 10 mM levamisole (Sigma\u2013Aldrich, St. Louis, MO) and oriented anterior to the left and dorsal up. Z-stacks were collected and the maximum intensity projection was used for additional analysis. For analyzing DMA-1::GFP intensity on tertiary dendrites (middle and bottom panels in Figure 3H\u2013J), XBP-1::GFP intensity during development (Figure 5B\u2013J) and HIS-24::GFP UPR activity reporter (Figure 5\u2014figure supplement 1, Figure 6\u2014figure supplement 2 and Figure 7\u2014figure supplement 2), images were acquired using a Zeiss Axio Observer Z1 microscope equipped with a Plan-Apochromat 63\u00d7/1.4NA objective, Yokogawa spinning disk head (Japan), 488 nm and 561 nm diode lasers (Coherent, Santa Clara, CA), and a Hamamatsu ImagEm EMCCD camera (Japan) driven by MetaMorph (Molecular Devices, Sunnyvale, CA).\n\n### Images quantification\n\nFor 4\u00b0 dendrite number counting, two PVD images (labeled by wyIs581) from late L4 or young adults were stitched together in Adobe Photoshop (San Jose, CA). The general shape and location of the primary dendrite (the \u2018backbone\u2019) was recognized by a model-based neurite fiber tracing method (Peng et al., 2008). Then the length of primary dendrite was determined by tracing the backbone and calculating the distance between adjacent identified pixels. Finally, the anterior part from cell body was divided into 8 equal segments while the posterior part was divided into 4 equal segments (written in custom Matlab scripts (Mathworks, Natick, MA)). It should be noted that the length of each anterior segment is not equal to each posterior segment. The numbers of 4\u00b0 dendrites whose secondary dendrites grew in each segment were counted manually.\n\nFor 2\u00b0 dendrite number counting, two PVD images (labeled by wyIs581 or wyIs592) from late L4 or young adults were stitched together in Photoshop. Then the length of primary dendrite was determined manually by tracing the backbone and calculating the distance between adjacent identified pixels. The 2\u00b0 dendrite number in each animal was counted manually, and this number was divided by the length of PVD primary dendrite (per 100 \u03bcm).\n\nFor measuring DMA-1::GFP intensity on 3\u00b0 dendrites, we chose menorahs around the vulva region as \u2018Proximal\u2019 to avoid numerous puncta in dendrites close to cell body and chose menorahs around the middle point of anterior primary dendrite as \u2018Distal\u2019 to make sure we could get T-like branches in this region in ire-1 mutants. Two channel images were combined together by ImageJ (Wayne Rasband), and a 2-pixel wide line was drawn along the tertiary branches (avoiding obvious puncta) and then the mean intensity values of two separated channels along this line were measured. After subtracting the background signal, the DMA-1::GFP signal was normalized to cytoplasmic mCherry. 3\u20135 tertiary branches were chosen for each spinning-disk image.\n\nTo quantify the UPR activity, for different genotypes, the XBP-1::GFP or HIS-24:GFP mean intensity in the nucleus (after background subtraction) measured with ImageJ was normalized to the mean intensity of cytoplasmic mCherry in the same region using custom written Python (Python Software Foundation, Beaverton, OR) scripts. HIS-24::GFP intensity (Figure 5\u2014figure supplement 1 and Figure 7\u2014figure supplement 2) was measured and quantified without normalization to cytoplasmic mCherry.\n\nAll custom matlab and Python codes are provided in the Source code 1.\n\n### Statistical analysis\n\nIn comparisons of measurements such as fluorescence intensity or length of ectopic branches, we first tested for normality using a D'Agostino-Pearson test (alpha = 0.05). For data sets with normal distribution, we applied a two-tailed Student's t test for comparisons of two groups (Figure 6\u2014figure supplement 3G and Figure 4\u2014figure supplement 1G). Comparisons involving multiple groups with multiple factors used two-way ANOVA and post hoc Sidak's multiple comparisons test (Figure 3K). For data sets without normal distribution, we applied a two-tailed Mann\u2013Whitney U-test for comparisons of two groups (Figure 7H and Figure 7\u2014figure supplement 2G). Comparisons involving multiple groups used Kruskal\u2013Wallis one-way test and post hoc Dunn's test (Figures 5K, 6K, Figure 5\u2014figure supplement 1J and Figure 6\u2014figure supplement 2J). To compare variables such as proportions we used \u03c72 test with Sidak correction for multiple comparisons (Figure 4D and Figure 7F). All statistical tests were performed in Graphpad Prism (San Diego, CA) or in R (R Development Core Team).\n",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "86854e2b-d2c2-4bd0-b6a6-7a36bd2c8fc3",
+      "submission_id": "137c658b-8a64-477f-848a-fb8a8a50031d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06963.026](https://doi.org/10.7554/eLife.06963.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe Unfolded Protein Response is Required for Dendrite Morphogenesis\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript is focused on characterizing the role that IRE1, a central component of the unfolded protein response, plays in dendrite arborization in C. elegans. The contribution of IRE-1 or the UPR in general to dendrite patterning has not been described, despite mounting evidence that ER homeostasis is defective in many neurodegenerative disorders. Studies in this manuscript therefore represent the first direct demonstration for a role of IRE-1 in dendrite patterning. The authors convincingly demonstrate that IRE-1 is required for dendrite patterning in PVD, and that this function likely involves protein quality control of DMA-1. While this is of general interest and the ire-1 phenotypes are clear, there remain some issues that should be clarified.\n\nMajor concerns:\n\n1) One weakness of the study concerns the sufficiency of dma-1 triggered UPR in PDE morphogenesis (Figure 7). The authors show that overexpression of dma-1 and hsp-4 can cause abnormal shape of PDE. However, the data do not convincingly or directly show that this is due to changes in UPR or ER folding capacity. Does this ectopic expression induce changes in the XBP-1 reporter? Is the degree of ectopic branching correlating with dma-1 protein folding or protein localization? Simply based on the data, the PDE morphological changes can also be due to signaling induced by ectopic dma-1 expression. Since the authors find kpc-1 and hpo-30 are not responsible for triggering UPR in PVD, they should include ectopic expression of either gene as control for the specificity of dma-1.\n\n2) DMA overexpression in IRE mutants sometimes enhances IRE phenotypes, sometimes suppresses. Can the authors provide any additional insight as to what might determine this outcome?\n\n3) Figure 5: the induction of XBP-1::GFP based on fluorescent intensity seems subtle. The image in L4 (panel E) is hardly different from that of L3. Is this due to poor folding of GFP? The data could be strengthened by including analyses of mRNA splicing of their xbp-1 reporter.\n\n4) It would be appropriate and straightforward for the authors to include additional genetic and transgenic controls for the rescue experiments. Specifically, please include transgene expression alone.\n\n5) A tighter connection to cell size seems to be necessary given that the major assertion of the paper is that the UPR is particularly required for neurons with a large dendritic tree. For example, are there genetic manipulations of cell size that are independent of UPR that might be used to suppress the sensitivity to UPR stress in these large neurons?\n",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3392ef59-202e-4129-9e33-7b81f028252b",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C1",
+      "claim": "The PVD neuron in Caenorhabditis elegans is a multidendritic polymodal nociceptive neuron with an elaborate and organized dendritic arbor.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nematode Caenorhabditis elegans, the multidendritic polymodal nociceptive neuron PVD has an elaborate and organized dendritic arbor (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by Figure 1A,B showing the PVD dendritic structure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "15950c2c-b0e7-49a2-b07b-b68d253ac8c5",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C2",
+      "claim": "PVD's secondary, tertiary and quaternary branches form repeated structural units resembling menorahs.",
+      "claim_type": "EXPLICIT",
+      "source": "PVD's largely orthogonally arranged secondary (2\u00b0), tertiary (3\u00b0) and quaternary (4\u00b0) branches form repeated structural units resembling menorahs (Smith et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the text with citation to Smith et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "fe7ff731-4c57-432b-8b38-fffc7ab690d8",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C3",
+      "claim": "During development, PVD grows its entire dendrite arbor spanning 800 \u03bcm along the body in just 24 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, PVD grows its entire dendrite arbor that spans 800 \u03bcm along the body of the animal in just 24 hr (Smith et al., 2010), suggestive of a high level of biosynthesis during the growth phase of this cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Smith et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "0cec1531-9b9e-4ab8-bdd6-7299fbdbba97",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C4",
+      "claim": "The rapid growth of PVD dendrites suggests a high level of biosynthesis during the growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, PVD grows its entire dendrite arbor that spans 800 \u03bcm along the body of the animal in just 24 hr (Smith et al., 2010), suggestive of a high level of biosynthesis during the growth phase of this cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the rapid growth rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "b63411c5-6df0-45d9-8765-aba797c5386c",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C5",
+      "claim": "DMA-1 acts cell autonomously in PVD to promote dendrite branching and stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of PVD dendrites requires a single transmembrane leucine rich repeat (LRR) protein DMA-1, which acts cell autonomously in PVD to promote dendrite branching and stabilization (Liu and Shen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citation to Liu and Shen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "4ca33b96-2e56-4c06-9aca-0d4733b8f3f1",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C6",
+      "claim": "SAX-7/L1CAM and MNR-1 form a tripartite receptor-ligand complex with DMA-1 to guide PVD dendritic arbor growth and branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellularly localized stripes of SAX-7/L1CAM, together with MNR-1 form a tripartite receptor\u2013ligand complex and guide the growth and branching of the PVD dendritic arbor (Dong et al., 2013; Salzberg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citations to Dong et al., 2013 and Salzberg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "58ea14f2-ef87-472d-ae10-44d9112e926c",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C7",
+      "claim": "Two ire-1 mutant alleles (wy762 and wy782) were isolated from a forward genetic screen for mutations that alter PVD dendritic morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "From a forward genetic screen for mutations that alter the PVD dendritic morphology, we identified two loss-of-function mutations, wy762 and wy782.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text describing the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "fe8748a7-dd13-43de-992d-0ac0105c1abe",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C8",
+      "claim": "Both ire-1 alleles (wy762 and wy782) cause dramatic loss of dendritic branches, especially in the distal dendrites of PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Both alleles cause dramatic loss of dendritic branches, especially in the distal dendrites of PVD (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "6ff2e569-b8ae-4778-b84a-d07666fbc2a4",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C9",
+      "claim": "The ire-1 null deletion allele ok799 shows an indistinguishable phenotype in PVD compared to wy762 and wy782.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a known null deletion allele of ire-1, ok799 (Henis-Korenblit et al., 2010) showed indistinguishable phenotype in PVD compared with that of wy762 and wy782 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation and supported by Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "093fb3e8-bc2e-478f-ac66-683ec322f35a",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C10",
+      "claim": "The complexity of the menorahs nearest to the cell body is unaffected in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The complexity of the menorahs nearest to the cell body appeared unaffected in these mutants (Figure 1E), as did the morphology of PVD axon (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and supported by Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "ebc7f8c4-d39d-4cf2-83b0-506217ae691c",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C11",
+      "claim": "The morphology of PVD axon is unaffected in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The complexity of the menorahs nearest to the cell body appeared unaffected in these mutants (Figure 1E), as did the morphology of PVD axon (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "35ccc810-72b7-419c-9081-01f4dbad4da5",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C12",
+      "claim": "FLP neurons show severe dendritic arbor defects in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the entire nervous system of C. elegans, the only other pair of highly branched neurons in the head region, FLP also showed severe dendritic arbor defects in ire-1 mutants (Figure 1H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and supported by Figure 1H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "2a2712f8-027d-4441-b755-ec3d4036b241",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C13",
+      "claim": "Other neurons with fewer dendritic or axonal branches (IL2, VC, ADL) do not show branching defects in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Other neurons with fewer dendritic or axonal branches such as IL2, VC and ADL did not show branching defects in ire-1 mutants (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "c927f2e0-b371-4166-a17f-682e92115d17",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C14",
+      "claim": "ire-1 is required for establishing highly branched dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that ire-1 is required for establishing highly branched dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "15d19f7a-7f07-497e-a15a-dfcaeea3e776",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C15",
+      "claim": "IRE-1 functions cell-autonomously in PVD to regulate dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ire-1 mutant background, expression of IRE-1 with a PVD-specific promoter (ser2prom3) fully restored the distal branch number and complexity of the whole dendritic arbor (Figure 1F,G) indicating that IRE-1 functions cell-autonomously in PVD to regulate dendrite morphogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and supported by rescue experiments shown in Figure 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "ea75433a-35ba-458f-9cf4-5a97f036d346",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C16",
+      "claim": "Expressing ire-1 cDNA does not cause overbranching in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing ire-1 cDNA did not cause overbranching in wild-type animals (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and supported by Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "87c7e022-8d94-4fa9-85c2-84fb508c68b2",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C17",
+      "claim": "IRE1 is conserved in all eukaryotes and contains an ER luminal domain for recognizing misfolded proteins, and cytoplasmic kinase and endoribonuclease domains.",
+      "claim_type": "EXPLICIT",
+      "source": "IRE1 is conserved in all eukaryotes and contains an ER luminal domain for recognizing misfolded proteins in the ER, and a cytoplasmic kinase and an endoribonuclease domain, which lead to the non-conventional cytoplasmic splicing of xbp-1 (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and illustrated in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "743c8999-ee83-4d25-a54f-cf63044b7e10",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C18",
+      "claim": "The wy782 missense mutation is a substitution of a conserved residue in the kinase domain of ire-1.",
+      "claim_type": "EXPLICIT",
+      "source": "One missense mutation (wy782) of ire-1 is a substitution of a conserved residue in the kinase domain while another missense mutation (wy762) is a substitution of a conserved residue in the endoribonuclease domain (Figure 1\u2014figure supplement 1), indicating both domains might be required for dendrite morphogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "4670dec9-5863-4ead-ae3a-c344b336daff",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C19",
+      "claim": "The wy762 missense mutation is a substitution of a conserved residue in the endoribonuclease domain of ire-1.",
+      "claim_type": "EXPLICIT",
+      "source": "One missense mutation (wy782) of ire-1 is a substitution of a conserved residue in the kinase domain while another missense mutation (wy762) is a substitution of a conserved residue in the endoribonuclease domain (Figure 1\u2014figure supplement 1), indicating both domains might be required for dendrite morphogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "0932987e-4a6f-4d0c-9afa-86d57877922e",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C20",
+      "claim": "Both the kinase and endoribonuclease domains of IRE-1 might be required for dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "One missense mutation (wy782) of ire-1 is a substitution of a conserved residue in the kinase domain while another missense mutation (wy762) is a substitution of a conserved residue in the endoribonuclease domain (Figure 1\u2014figure supplement 1), indicating both domains might be required for dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the location of the mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "51358866-8e75-450b-8d5b-9eebb242e625",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C21",
+      "claim": "The kinase and endoribonuclease domains of IRE-1 are required for splicing of xbp-1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these two domains are required for splicing of the xbp-1 mRNA, we reasoned that the neurons should be able to bypass the requirement of IRE-1 if a spliced form xbp-1 was provided in PVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "33baf877-aee5-43e7-9da2-e947c105ffc1",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C22",
+      "claim": "PVD-specific expression of spliced xbp-1 cDNA in ire-1 mutants rescues the loss of distal dendrite branches phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, PVD-specific expression of spliced xbp-1 cDNA in ire-1 mutants rescued the loss of distal dendrite branches phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly and shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "ce37247c-1656-429f-ba5b-9dca98ea4a5d",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C23",
+      "claim": "Expression of unspliced xbp-1 genomic DNA does not rescue the branching defect in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of unspliced xbp-1 genomic DNA at the same concentration did not rescue branching defect (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "a8026f46-1672-4af8-acf1-af7a3b3b4df2",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C24",
+      "claim": "Expressing spliced xbp-1 cDNA does not cause overbranching in wild type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing spliced xbp-1 cDNA did not cause overbranching in wild type animals (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and supported by Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "c8824188-ab17-426a-af4d-8259c3c1fc39",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C25",
+      "claim": "XBP-1 functions downstream of IRE-1 to establish complex dendritic arbor in PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "These data offer compelling evidence that XBP-1 functions downstream of IRE-1 to establish complex dendritic arbor in PVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "e3927332-a048-4c22-bc2e-4dccb0ede8ed",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C26",
+      "claim": "The IRE-1 arm of the UPR pathway is likely involved in dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the IRE-1 arm of the UPR pathway is likely involved in dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the genetic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "01b6c435-eb95-4bfe-b266-7a773acce5f2",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C27",
+      "claim": "HSP-3 and HSP-4 are ER chaperones of the Hsp70 family homologous to mammalian grp78/BiP.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched the PVD-specific gene profiling data (Smith et al., 2010) and found that two abundant ER chaperones of the Hsp70 family (homologous to mammalian grp78/BiP), HSP-3 and HSP-4, are enriched in PVD and therefore might be the targets of XBP-1 in PVD neurons (Urano et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citations to Smith et al., 2010 and Urano et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "af9d5942-902e-48de-afba-1beeb3e33c8b",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C28",
+      "claim": "HSP-3 and HSP-4 are enriched in PVD neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched the PVD-specific gene profiling data (Smith et al., 2010) and found that two abundant ER chaperones of the Hsp70 family (homologous to mammalian grp78/BiP), HSP-3 and HSP-4, are enriched in PVD and therefore might be the targets of XBP-1 in PVD neurons (Urano et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citation to Smith et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "6d1bc277-af4c-4741-911a-01861c18f5d6",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C29",
+      "claim": "Overexpression of hsp-4 in PVD restores normal dendritic branches in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, overexpression of hsp-4 in PVD restored normal dendritic branches in ire-1 mutants (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "cf42474f-0e3d-4cb3-86f3-d757f91eb366",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C30",
+      "claim": "Overexpression of hsp-3 does not rescue the dendritic phenotype in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, overexpression of hsp-3 or daf-21 (a cytoplasmic chaperone of the Hsp90 family) did not rescue the phenotype (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "de717378-fbfa-4468-8606-b3073aba0ead",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C31",
+      "claim": "Overexpression of daf-21 does not rescue the dendritic phenotype in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, overexpression of hsp-3 or daf-21 (a cytoplasmic chaperone of the Hsp90 family) did not rescue the phenotype (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "7e195e79-b5e9-40ad-a5d1-a47c7ca0507e",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C32",
+      "claim": "hsp-4 single mutant does not show dendritic arbor defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hsp-4 single mutant did not show the dendritic arbor defects (Figure 2\u2014figure supplement 1D), indicating other ER chaperones or co-chaperones functioning in parallel with HSP-4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "93a0ab9e-7815-4a8a-a4d7-a3e694403313",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C33",
+      "claim": "Other ER chaperones or co-chaperones function in parallel with HSP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hsp-4 single mutant did not show the dendritic arbor defects (Figure 2\u2014figure supplement 1D), indicating other ER chaperones or co-chaperones functioning in parallel with HSP-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the lack of phenotype in hsp-4 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8725df76-b021-4244-818f-352604a39745",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C34",
+      "claim": "The dendritic defect in ire-1 mutants is likely due to lack of specific chaperones in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the dendritic defect in the ire-1 mutants is likely due to lack of specific chaperones in the ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "fe357d00-c87a-469f-9bc9-cd7c50cca5ad",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C35",
+      "claim": "xbp-1 mutant does not show dendritic arbor defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, xbp-1 mutant (Figure 2\u2014figure supplement 2B) did not show the dendritic arbor defects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "b58261bc-9836-4f91-938c-6f3aca3f60a9",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C36",
+      "claim": "Other pathways downstream of IRE-1 but independent of XBP-1 can play redundant roles in dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that other pathways downstream of IRE-1 but independent of XBP-1 can play redundant roles in dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the lack of phenotype in xbp-1 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "5aaf4911-2741-4ab3-abe5-d99a6fbbce5a",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C37",
+      "claim": "In the xbp-1 mutant background, somatic knockout of xrn-1 phenocopies the ire-1 dendritic phenotype in about 10% of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we found that in the xbp-1 mutant background, somatic knockout of xrn-1, which encodes a 5\u2032-3\u2032 exoribonuclease and is a key component of the 5\u2032-3\u2032 mRNA degradation pathway (Newbury and Woollard, 2004), phenocopied the ire-1 dendritic phenotype in PVD neurons in about 10% of the animals (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation and shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "1391b773-6d8e-4ae4-b643-e2533f47bea2",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C38",
+      "claim": "The RIDD pathway functions in parallel to XBP-1 to regulate dendrite branching of PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the RIDD pathway functions in parallel to the XBP-1 to regulate dendrite branching of PVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the somatic CRISPR experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "4968c529-de3b-49d9-a594-c17e8131e057",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C39",
+      "claim": "atf-6 and pek-1 mutants do not show dendrite morphogenesis phenotype in PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined mutations in the other two arms of the UPR pathway, ATF-6 and PERK/PEK-1, and found that they did not show any dendrite morphogenesis phenotype in PVD (Figure 2\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "71a45e03-33c4-4648-9001-cb5ccf156ed7",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C40",
+      "claim": "xbp-1 pek-1 double mutant shows a low-penetrance ire-1-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "However, xbp-1 pek-1 double mutant showed a low-penetrance (about 25%) ire-1-like phenotype (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8fa7e0e1-0037-43d2-a656-cb7d6bd7cee4",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C41",
+      "claim": "ER homeostasis mediated by other UPR pathways also contributes to dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the ER homeostasis mediated by other UPR pathways also contribute to dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the double mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "93d0479a-8702-4ed0-9d73-714cce4fa2ad",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C42",
+      "claim": "The severe decrease of distal dendritic branches of PVD in ire-1 mutants is reminiscent of dma-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The severe decrease of distal dendritic branches of PVD in ire-1 mutants is reminiscent of dma-1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "d68cf4b5-29c6-40c5-a46d-fbcf988ea75f",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C43",
+      "claim": "DMA-1 is a single transmembrane leucine-rich repeat protein prominently expressed in PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "DMA-1 is a single transmembrane leucine-rich repeat (LRR) protein prominently expressed in PVD, and mutations in dma-1 result in severely reduced dendritic branching and complexity (Liu and Shen, 2012) (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation to Liu and Shen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "77e63a05-eb38-4e75-8efc-f95036eb7f69",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C44",
+      "claim": "Mutations in dma-1 result in severely reduced dendritic branching and complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "DMA-1 is a single transmembrane leucine-rich repeat (LRR) protein prominently expressed in PVD, and mutations in dma-1 result in severely reduced dendritic branching and complexity (Liu and Shen, 2012) (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "47df0a8d-5207-450e-b519-759d0d787e13",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C45",
+      "claim": "DMA-1 acts in PVD as a receptor to recognize the SAX-7/L1CAM and MNR-1 ligand complex.",
+      "claim_type": "EXPLICIT",
+      "source": "DMA-1 acts in PVD as a receptor to recognize the SAX-7/L1CAM and MNR-1 ligand complex in the surrounding skin cell to promote branching and precisely pattern the dendritic arbor (Dong et al., 2013; Salzberg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citations to Dong et al., 2013 and Salzberg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "bf5b9936-41b8-45b1-883c-aaea090a6b01",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C46",
+      "claim": "ire-1 dma-1 double mutants show a phenotype indistinguishable from the dma-1 single mutant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, ire-1 dma-1 double mutants showed a phenotype that is indistinguishable from the dma-1 single mutant phenotype, suggesting that these two molecules function in the same genetic pathway in dendrite morphogenesis (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8a28bdfb-a3b1-4cd3-89f4-2472c25a11ff",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C47",
+      "claim": "ire-1 and dma-1 function in the same genetic pathway in dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, ire-1 dma-1 double mutants showed a phenotype that is indistinguishable from the dma-1 single mutant phenotype, suggesting that these two molecules function in the same genetic pathway in dendrite morphogenesis (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the double mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "169f5a5a-6919-4944-b071-42e3527096a6",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C48",
+      "claim": "hsp-4 overexpression in ire-1 dma-1 double mutants is not able to rescue the dendritic arbor defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hsp-4 overexpression in ire-1 dma-1 double mutants was not able to rescue the dendritic arbor defect (Figure 3\u2014figure supplement 1C), suggesting that DMA-1 might be a target of HSP-4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "eba2477e-f0e6-4f0f-9105-55c4339bfd94",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C49",
+      "claim": "DMA-1 might be a target of HSP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, hsp-4 overexpression in ire-1 dma-1 double mutants was not able to rescue the dendritic arbor defect (Figure 3\u2014figure supplement 1C), suggesting that DMA-1 might be a target of HSP-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the lack of rescue.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "b4a52262-2435-40bd-9931-19aa6515f183",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C50",
+      "claim": "In wild type animals, GFP-tagged DMA-1 is detected on all PVD dendritic processes and at the cortex of the cell body as diffusive fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type animals, GFP-tagged DMA-1 was detected on all the PVD dendritic processes and at the cortex of the cell body as diffusive fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "dbadcc6e-83e7-468b-ba59-f36f8e303a55",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C51",
+      "claim": "In wild type animals, numerous discrete intracellular puncta of DMA-1::GFP are found in the cell body and along the dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, numerous discrete intracellular puncta were found in the cell body and along the dendrites, which presumably represent the membrane trafficking organelles that carry DMA-1 (Figure 3B) (Liu and Shen, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "3b795063-71f4-4360-a89d-b31b68df5bb4",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C52",
+      "claim": "In ire-1 mutants, the punctate DMA-1::GFP in the cell body is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In ire-1 mutants, the punctate DMA-1::GFP in the cell body was lost (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "6c196f37-dbba-47c5-9b69-98cf269a2522",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C53",
+      "claim": "In ire-1 mutants, somatic DMA-1::GFP co-localizes with the general ER marker cytochrome b5.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the somatic DMA-1::GFP in the ire-1 mutants co-localized with an general ER marker, cytochrome b5 (cb5) (Rolls et al., 2002) (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation and shown in Figure 3G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "80e5bbdd-212f-4d4f-81d0-7db33bc790ae",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C54",
+      "claim": "The diffuse DMA-1::GFP signal on the distal dendrites is dramatically reduced in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the diffuse DMA-1::GFP signal on the distal dendrites was dramatically reduced in the ire-1 mutant while the signal on the proximal dendrites in ire-1 mutants was the same as in wild type (Figure 3H,J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3H,J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "5027e6b8-d50a-4f73-af92-6759434675da",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C55",
+      "claim": "The diffuse DMA-1::GFP signal on the proximal dendrites in ire-1 mutants is the same as in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the diffuse DMA-1::GFP signal on the distal dendrites was dramatically reduced in the ire-1 mutant while the signal on the proximal dendrites in ire-1 mutants was the same as in wild type (Figure 3H,J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3H,J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "1e9a87a3-f9a9-4b36-9417-19bdb4bae7e3",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C56",
+      "claim": "DMA-1 is trapped in the ER and is not delivered to the distal dendrite plasma membrane in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that DMA-1 is trapped in the ER and is not delivered to the distal dendrite plasma membrane, leading to the distal dendritic phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the localization data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "6949f23e-aafb-40d3-a593-5e4bf7f1c952",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C57",
+      "claim": "Overexpression of HSP-4 restores the DMA-1::GFP subcellular localization in ire-1 mutants to the normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, overexpression of the ER chaperone HSP-4, restored the DMA-1::GFP subcellular localization in ire-1 mutants to the normal distribution (Figure 3J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3J,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "c3117b46-ea66-481a-a4a4-e9c260cbb67b",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C58",
+      "claim": "ER chaperones such as HSP-4 help to fold DMA-1, which is required for the plasma membrane localization of DMA-1 and dendrite branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that ER chaperones such as HSP-4 help to fold DMA-1, which is required for the plasma membrane localization of DMA-1 and dendrite branching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the localization and rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "7854048f-cd41-46aa-8769-f68ad324d6b5",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C59",
+      "claim": "HSP-4::GFP is exclusively localized in the PVD soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HSP-4 is capable of folding DMA-1, we first examined the subcellular localization of HSP-4 and found that HSP-4::GFP was exclusively localized in the PVD soma (Figure 3\u2014figure supplement 2A,D), co-localizing with a rough ER marker TRAM (Figure 3\u2014figure supplement 2G\u2013I), HSP-4's ER localization pattern is consistent with the observation that its mammalian homolog BiP is localized in rough ER (Bole et al., 1989; Lai et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "5d9e4f71-c622-422c-9451-ca89e238429e",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C60",
+      "claim": "HSP-4::GFP co-localizes with the rough ER marker TRAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HSP-4 is capable of folding DMA-1, we first examined the subcellular localization of HSP-4 and found that HSP-4::GFP was exclusively localized in the PVD soma (Figure 3\u2014figure supplement 2A,D), co-localizing with a rough ER marker TRAM (Figure 3\u2014figure supplement 2G\u2013I), HSP-4's ER localization pattern is consistent with the observation that its mammalian homolog BiP is localized in rough ER (Bole et al., 1989; Lai et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citations and shown in Figure 3\u2014figure supplement 2G-I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "6c3e0688-2dff-46da-83d1-9a96745175f9",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C61",
+      "claim": "The main protein synthesis and folding capacity for DMA-1 is likely in the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggests that the main protein synthesis and folding capacity for DMA-1 is likely in the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the localization of HSP-4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "2126c5d4-48ee-40de-ade9-7b9edc639391",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C62",
+      "claim": "In ire-1 mutants, lack of upregulation of hsp-4 by spliced XBP-1 results in less DMA-1 in the secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In ire-1 mutants, lack of the upregulation of hsp-4 by spliced XBP-1 results in less DMA-1 in the secretory pathway and insufficient diffusion of DMA-1 to the distal region might be responsible for the specific loss of distal dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors to explain the distal dendrite phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "3aec3fb7-4599-424b-92b2-463ea2085316",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C63",
+      "claim": "About 70% of animals overexpressing DMA-1 in ire-1 mutants show efficient rescue of the dendritic arbor.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed both effects: about 70% of animals showed efficient rescue of the dendritic arbor (Figure 4B,D), while about 25% of animals showed a more severe phenotype, with the loss of proximal branches in addition to the distal ones (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 4B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "b3e1c1bc-b0bb-44b9-bea9-3dc5482b70b4",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C64",
+      "claim": "About 25% of animals overexpressing DMA-1 in ire-1 mutants show a more severe phenotype with loss of proximal branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed both effects: about 70% of animals showed efficient rescue of the dendritic arbor (Figure 4B,D), while about 25% of animals showed a more severe phenotype, with the loss of proximal branches in addition to the distal ones (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "46e607d0-b927-4a1c-96a9-f58bf231f04b",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C65",
+      "claim": "High level of HSP-4 expression together with DMA-1 decreases the percentage of dma-1-like phenotype in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the hypothesis, high level of chaperon HSP-4 expression together with DMA-1 decreased the percentage of dma-1-like phenotype, in a dose-dependent manner (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "05580d36-e93f-46c1-b5f0-433a993b72f7",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C66",
+      "claim": "There is much less accumulation or aggregation of DMA-1::GFP in PVD cell bodies with rescued morphology compared to more severely defective animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To further test this hypothesis, we separated the transgenic animals into the phenotypically rescued animals and the severely defective animals based on their dendrite morphology, we found that there was much less accumulation or aggregation of DMA-1::GFP in the PVD cell bodies with the rescued morphology compared to more severely defective animals (Figure 4\u2014figure supplement 1A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 4\u2014figure supplement 1A-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "efa41d9c-63cc-43c9-b98e-6b53717a7296",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C67",
+      "claim": "The insufficient level of functional DMA-1 due to decreased protein folding capacity accounts for a large part of PVD dendritic defect in ire-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these rescuing results argue that the insufficient level of functional DMA-1 due to decreased protein folding capacity accounts for a large part of PVD dendritic defect in the ire-1 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "2a0a2f00-e62a-42c6-8231-0f704a0a3864",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C68",
+      "claim": "PVD neurons are derived postembryonically during the mid-L2 larval stage.",
+      "claim_type": "EXPLICIT",
+      "source": "PVD neurons are derived postembryonically during the mid-L2 larval stage (Sulston and Horvitz, 1977), and starting from the late L2/early L3, 2\u00b0 branches begin to form followed by extension of 3\u00b0 branches in the L3 stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citation to Sulston and Horvitz, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "1e5e1067-561c-4c89-a552-3d408b70b224",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C69",
+      "claim": "Dendrite morphogenesis in PVD is completed in the early L4 stage after 4\u00b0 branches have sprouted.",
+      "claim_type": "EXPLICIT",
+      "source": "Dendrite morphogenesis is completed in the early L4 stage after 4\u00b0 branches have sprouted from the 3\u00b0 branches to form a network of menorah-shaped processes (Smith et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citation to Smith et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "aa0e54d9-5df6-4625-ae78-2e2baa538b27",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C70",
+      "claim": "XBP-1::GFP is observed in the nucleus of PVD starting at the L3 stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this PVD specific UPR activity reporter, we observed XBP-1::GFP in the nucleus of PVD starting at the L3 stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "abd3b217-bb12-4ef7-ae03-c0944749e62f",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C71",
+      "claim": "The normalized XBP-1::GFP intensity increases between L3 and late L4 animals, coincidental with the stage of rapid dendrite branch addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized XBP-1::GFP intensity increased between L3 and late L4 animals, coincidental with the stage of rapid dendrite branch addition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "435361ac-8a0d-4960-84a4-72eef3531f94",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C72",
+      "claim": "The XBP-1::GFP intensity decreases in mid-adult animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The XBP-1::GFP intensity subsequently decreased in mid-adult animals (Figure 5B\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 5B-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "cdfaaad3-3f89-43f1-98cb-4fcef8259d78",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C73",
+      "claim": "HSP-4 is a transcriptional target of activated XBP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "As an ER chaperone, HSP-4 is a transcriptional target of activated XBP-1 (Calfon et al., 2002; Urano et al., 2002), and its transcriptional level shows tight correlation with activation of the UPR with high sensitivity (Iwawaki et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citations to Calfon et al., 2002 and Urano et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "90d2260c-5d2d-4be4-a29a-0e884340ac0e",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C74",
+      "claim": "The HIS-24::GFP signal becomes clearly detectable in L3 and further increases in L4 animals during which the menorahs form.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the HIS-24::GFP signal became clearly detectable in L3 and further increased in L4 animals during which the menorahs form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "d63f0c22-c470-4830-a803-c85b11139ba0",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C75",
+      "claim": "The HIS-24::GFP fluorescence is dramatically downregulated in adult animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP fluorescence is dramatically downregulated in adult animals, (Figure 5\u2014figure supplemental 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "88b9991d-afd4-460a-a89c-22cd48752132",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C76",
+      "claim": "The UPR activity occurs most strongly during the time of PVD dendritic branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the UPR activity occurs most strongly during the time of PVD dendritic branching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the developmental time course data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "e63afd20-b290-48ca-90d0-36a06665fee4",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C77",
+      "claim": "The normalized XBP-1::GFP fluorescence level in dma-1 knockout mutants is significantly lower compared with wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish these models, we first tested this PVD specific UPR activity reporter in dma-1 knockout mutants and we found that the normalized XBP-1::GFP fluorescence level was significantly lower compared with wild type (Figure 6B,E,K), suggesting that a functional dma-1 gene is required to turn on the UPR activity in PVD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 6B,E,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "22b13f36-efdf-44c3-929c-52a16235b920",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C78",
+      "claim": "A functional dma-1 gene is required to turn on the UPR activity in PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish these models, we first tested this PVD specific UPR activity reporter in dma-1 knockout mutants and we found that the normalized XBP-1::GFP fluorescence level was significantly lower compared with wild type (Figure 6B,E,K), suggesting that a functional dma-1 gene is required to turn on the UPR activity in PVD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the reporter data in dma-1 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8a11daa4-00d5-4f97-ab75-ebfa2838d16d",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C79",
+      "claim": "Overexpression of dma-1 cDNA in PVD leads to an increase of UPR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overexpression of dma-1 cDNA in PVD leads to an increase of UPR activity (Figure 6H,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 6H,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "413c2516-c31e-44ea-8de6-5773a92ab8d7",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C80",
+      "claim": "In dma-1 mutants, the Phsp4::HIS-24::GFP UPR activity reporter shows dramatic decrease in PVD neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in dma-1 mutants, another UPR activity reporter, Phsp4::HIS-24::GFP also showed dramatic decrease in PVD neurons (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "7962ef66-d103-4cc2-8a45-075037a6d922",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C81",
+      "claim": "DMA-1 is necessary for UPR induction in PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "These surprising results argue that DMA-1 is necessary for UPR induction in PVD, despite the fact that there must be many membrane proteins necessary to build dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the reporter data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8777c9b3-ef44-4816-b29c-2c42b0cf5783",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C82",
+      "claim": "Deletion mutations in kpc-1 and hpo-30 cause severe reduction of PVD dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion mutations in kpc-1 (a Kex2/subtilisin-like proprotein convertase and a Furin homolog) (Schroeder et al., 2013) and hpo-30 (a claudin homolog) (Smith et al., 2013) cause severe reduction of PVD dendrites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citations to Schroeder et al., 2013 and Smith et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "fa749f20-40b1-4a20-b8bf-5c41aa5c7b03",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C83",
+      "claim": "Neither kpc-1 nor hpo-30 mutations cause reduced UPR reporter activity in PVD.",
+      "claim_type": "EXPLICIT",
+      "source": "While both of these gene products are processed in ER, neither mutation causes reduced UPR reporter activity in PVD (Figure 6K and Figure 6\u2014figure supplement 1G\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 6K and Figure 6\u2014figure supplement 1G-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "f78e3548-0657-492e-82a2-402bcd9f2221",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C84",
+      "claim": "The UPR reporter shows activity in the unbranched neuron PVC.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this reporter also showed activity in the unbranched neuron PVC, indicating that there might be UPR activity that is unrelated to branched dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "5cafbfb3-6e35-4d6c-ae50-63e382388913",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C85",
+      "claim": "The dma-1 mutation does not change the UPR activity in PVC.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the dma-1 mutation did not change the UPR activity in PVC (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "bb5e888f-6bbc-4ee9-9746-28a356c5ac02",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C86",
+      "claim": "The activation of UPR in PVD specifically depends on DMA-1 production.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the activation of UPR in PVD specifically depends on DMA-1 production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from the specificity experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "62c472d0-8f67-49e2-b62d-fcb2791473ae",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C87",
+      "claim": "The dendritic arbor defects in ire-1 mutants are restricted to PVD and FLP, the only two pairs of highly branched neurons in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Surveying morphological phenotypes of other types of neurons, we found that the dendritic arbor defects in ire-1 mutants were restricted to PVD and FLP the only two pairs of highly branched neurons in the C. elegans nervous system (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "fa0627e1-be5c-42f6-8606-f7d51edcd37d",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C88",
+      "claim": "Only PVD and FLP show sustained expression of DMA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Coincidentally, only PVD and FLP showed sustained expression of DMA-1(Liu and Shen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citation to Liu and Shen, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "083473ef-7085-4e1b-a81f-22ff833521bb",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C89",
+      "claim": "The defective PVD phenotype of ire-1 is dramatically rescued in dpy-5 ire-1 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the defective PVD phenotype of ire-1 was dramatically rescued with some animals showing wild type morphology (Figure 7\u2014figure supplement 1C\u2013E), indicating the UPR is particularly required for neurons with large and complicated dendritic arbors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 7\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8ba19d8e-4532-4036-8573-3892a2eb00e3",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C90",
+      "claim": "The UPR is particularly required for neurons with large and complicated dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the defective PVD phenotype of ire-1 was dramatically rescued with some animals showing wild type morphology (Figure 7\u2014figure supplement 1C\u2013E), indicating the UPR is particularly required for neurons with large and complicated dendritic arbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on the rescue in smaller animals.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "b542dfb1-7fa1-4d39-8a4d-16b273a5fb34",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C91",
+      "claim": "Overexpression of dma-1 in PDE results in ectopic orthogonal branches similar to PVD tertiary level branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of dma-1 in PDE resulted in ectopic orthogonal branches that were similar to the PVD tertiary level branches (Figure 7C) (Liu and Shen, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly with citation and shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "ec18c454-6009-412d-817d-eb1ea8749ee6",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C92",
+      "claim": "Expressing HSP-4 together with DMA-1 in PDE induces ectopic branches more efficiently (47% of animals) than DMA-1 alone (21% of animals).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, increasing the ER folding capacity by expressing HSP-4 together with DMA-1 in PDE induced ectopic branches more efficiently (47% of animals) while expressing other PVD-branching cell surface molecules such as HPO-30 with HSP-4 did not induce any ectopic branches (Figure 7D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 7D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "d44f2ab1-836a-4a80-9ffb-034b08d1b751",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C93",
+      "claim": "Expressing HPO-30 with HSP-4 in PDE does not induce any ectopic branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, increasing the ER folding capacity by expressing HSP-4 together with DMA-1 in PDE induced ectopic branches more efficiently (47% of animals) while expressing other PVD-branching cell surface molecules such as HPO-30 with HSP-4 did not induce any ectopic branches (Figure 7D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 7D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "e00d03ea-bc48-4a39-90a8-fdd944703f31",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C94",
+      "claim": "Ectopic branches induced by co-expression of DMA-1 and HSP-4 in PDE are more branched and significantly longer than those from DMA-1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these ectopic branches were more branched and significantly longer than overexpressing DMA-1 alone (Figure 7H), and the Phsp-4::HIS-24::gfp reporter also showed increased UPR activity in PVD (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly and shown in Figure 7H and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "ca9737bb-bd8b-4d23-a45d-9b97b8ccb02f",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C95",
+      "claim": "The physiological UPR is induced in PVD during dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the physiological unfolded protein response (UPR) is induced in the highly branched Caenorhabditis elegans sensory neuron PVD during dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "8847b53e-5b8b-4a5f-bcf6-67bbd7091fdf",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C96",
+      "claim": "Perturbation of the IRE1 arm of the UPR pathway causes loss of dendritic branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of the IRE1 arm of the UPR pathway causes loss of dendritic branches, a phenotype that can be rescued by overexpression of the ER chaperone HSP-4 (a homolog of mammalian BiP/ grp78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "35ceb3d3-7bc9-4421-997d-093d0ce8112f",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C97",
+      "claim": "The dendritic phenotype caused by perturbation of IRE1 can be rescued by overexpression of HSP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of the IRE1 arm of the UPR pathway causes loss of dendritic branches, a phenotype that can be rescued by overexpression of the ER chaperone HSP-4 (a homolog of mammalian BiP/ grp78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "9b00bd0b-bd17-47f0-b94d-7c70e4ce1b81",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C98",
+      "claim": "DMA-1 plays a major role in the induction of the UPR and the dendritic phenotype in UPR mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a single transmembrane leucine-rich repeat protein, DMA-1, plays a major role in the induction of the UPR and the dendritic phenotype in the UPR mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "9966a1ed-d151-4f1a-b36d-e2c2ce182212",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "claim_id": "C99",
+      "claim": "The physiological UPR plays a significant role in the maintenance of ER homeostasis during morphogenesis of large dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal a significant role for the physiological UPR in the maintenance of ER homeostasis during morphogenesis of large dendritic arbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a conclusion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f952ca62-db43-4607-bb8d-861c64dac95c",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Loss of ire-1 function causes dramatic loss of dendritic branches specifically in highly branched neurons (PVD and FLP) but not in neurons with fewer branches. IRE-1 functions cell-autonomously in PVD to regulate dendrite morphogenesis, and both the kinase and endoribonuclease domains are required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent ire-1 alleles (wy762, wy782, ok799) show consistent dendritic phenotypes (C7-C9), with specific loss of distal branches in PVD (C8) and defects in FLP (C12) but not in less branched neurons (C13). Cell-autonomous rescue experiments (C15) and domain-specific mutations (C18-C20) provide strong genetic evidence. The phenotype specificity and rescue data are well-documented with quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "XBP-1 functions downstream of IRE-1 in the UPR pathway to establish complex dendritic arbors in PVD. Expression of spliced xbp-1 cDNA, but not unspliced genomic DNA, rescues the ire-1 mutant phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The rescue experiments show clear specificity: spliced xbp-1 cDNA rescues the phenotype (C22) while unspliced genomic DNA does not (C23), and overexpression does not cause overbranching in wild-type (C24). This demonstrates that XBP-1 acts downstream of IRE-1's splicing activity (C25-C26). The genetic epistasis is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "802043cc-77f2-4430-a5ea-952d42d55b13",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ER chaperone HSP-4 (BiP/grp78 homolog) is enriched in PVD and its overexpression rescues the dendritic defects in ire-1 mutants, indicating that lack of specific ER chaperones causes the dendritic phenotype. HSP-3 and DAF-21 overexpression do not rescue, suggesting specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "HSP-4 overexpression specifically rescues ire-1 mutants (C29), while HSP-3 and DAF-21 do not (C30-C31), demonstrating specificity. The lack of phenotype in hsp-4 single mutants (C32) suggests redundancy with other chaperones (C33). The gene expression data (C28) and rescue specificity support the conclusion that ER folding capacity is limiting (C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "f26232d9-b359-4536-a93f-2c1eaa417221",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RIDD pathway functions in parallel to XBP-1 to regulate dendrite branching. While xbp-1 mutants show no dendritic defects, somatic knockout of xrn-1 in the xbp-1 background phenocopies the ire-1 phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The lack of phenotype in xbp-1 mutants (C35) is surprising given the rescue by spliced xbp-1. The somatic CRISPR experiment shows only 10% penetrance (C37), which is acknowledged as low due to mosaicism. While this suggests RIDD pathway involvement (C38), the low penetrance and technical limitations of somatic CRISPR make this conclusion less certain. Additional validation would strengthen this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "37600da4-53cc-4720-82a3-5e448e474c9a",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Other UPR pathways (ATF-6 and PEK-1) contribute to dendrite morphogenesis. While single mutants show no phenotype, xbp-1 pek-1 double mutants show low-penetrance ire-1-like phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The single mutants show no phenotype (C39), but the double mutant shows only 25% penetrance (C40). This low penetrance makes it difficult to draw strong conclusions about the contribution of these pathways (C41). The result suggests some involvement but requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "f20988d9-bada-4e20-afdc-96784133a1d9",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DMA-1 and IRE-1 function in the same genetic pathway. The ire-1 dma-1 double mutant phenotype is indistinguishable from dma-1 single mutants, and HSP-4 overexpression cannot rescue the double mutant, suggesting DMA-1 is a target of HSP-4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic epistasis experiment shows non-additive phenotypes (C46), indicating the genes function in the same pathway (C47). The failure of HSP-4 to rescue the double mutant (C48) supports the model that DMA-1 is downstream of HSP-4 (C49). The similarity between ire-1 and dma-1 phenotypes (C42-C44) strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "e34abd48-7868-45c1-b74f-6b8efeb46817",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In ire-1 mutants, DMA-1 is trapped in the ER and not delivered to distal dendrite plasma membranes. DMA-1::GFP shows altered localization in ire-1 mutants (loss of puncta, colocalization with ER markers, reduced distal signal), which is restored by HSP-4 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple lines of evidence support ER retention: loss of trafficking puncta (C52), colocalization with ER marker cb5 (C53), dramatic reduction in distal dendrites (C54) while proximal signal is maintained (C55). HSP-4 overexpression restores normal localization (C57). The quantification in Figure 3K provides statistical support. This demonstrates that ER chaperones are required for DMA-1 trafficking (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "d4cef100-3312-4997-b95a-c640141d2b24",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HSP-4 is exclusively localized to the PVD soma in the rough ER, suggesting that the main protein synthesis and folding capacity for DMA-1 is in the cell body. This explains why distal dendrites are specifically affected in ire-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "HSP-4::GFP localization is clearly restricted to the soma (C59) and colocalizes with rough ER marker TRAM (C60), consistent with mammalian BiP localization. This supports the inference that protein folding occurs in the cell body (C61), providing a mechanistic explanation for the distal dendrite phenotype (C62). The logic is sound and supported by the localization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "007bd2cd-7723-47aa-a012-b8bc9fa87ea1",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Overexpression of DMA-1 in ire-1 mutants produces two outcomes: rescue (70%) or more severe phenotype (25%). Co-expression with HSP-4 increases rescue efficiency in a dose-dependent manner, and rescued animals show less DMA-1 accumulation in cell bodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The bimodal outcome of DMA-1 overexpression (C63-C64) is well-documented and explained by variable folding capacity. The dose-dependent rescue by HSP-4 (C65) and correlation with reduced DMA-1 accumulation (C66) provide strong support for the protein folding model (C67). The quantification in Figure 4D shows statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "e9436b28-bd35-4da4-a7b7-c74736001b0f",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "UPR activity in PVD, measured by XBP-1::GFP and HIS-24::GFP reporters, increases during dendrite morphogenesis (L3-L4 stages) and decreases in adults, correlating with the timing of dendritic branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Two independent UPR reporters (XBP-1::GFP and HIS-24::GFP) show consistent temporal patterns (C70-C72, C74-C75), with peak activity during L4 when dendrites form (C68-C69). The correlation between UPR activity and dendrite development is well-documented (C76). The quantification in Figures 5K and Figure 5\u2014supplement 1J provides statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "e9c912d6-1523-41ed-86bc-73d954b27369",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "DMA-1 is necessary for UPR induction in PVD. Loss of dma-1 significantly reduces UPR reporter activity, while overexpression increases it, demonstrating that DMA-1 production drives UPR activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple UPR reporters (XBP-1::GFP and HIS-24::GFP) show consistent reduction in dma-1 mutants (C77, C80) and increase with overexpression (C79). The bidirectional effect strongly supports the conclusion that DMA-1 is necessary for UPR induction (C78, C81). The quantification in Figure 6K shows statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "374c9d6a-2d27-4c4d-8392-26b2bb40fe86",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The activation of UPR in PVD specifically depends on DMA-1 production. Other ER-processed proteins required for dendrite morphogenesis (KPC-1, HPO-30) do not affect UPR reporter activity, and dma-1 mutation does not affect UPR in other neurons (PVC).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The specificity controls are well-designed: kpc-1 and hpo-30 mutants show dendritic defects but no UPR reduction (C82-C83), and dma-1 does not affect UPR in PVC (C84-C85). This demonstrates that DMA-1 specifically drives UPR in PVD (C86). The cell-type and protein specificity strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "4d95d2f4-262d-49a3-b0fa-7b00209af9bb",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The UPR is particularly required for neurons with large and complicated dendritic arbors. ire-1 defects are restricted to PVD and FLP (the only highly branched neurons expressing DMA-1), and the phenotype is rescued in smaller dpy-5 animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation between dendritic complexity, DMA-1 expression, and ire-1 requirement is compelling (C87-C88). The rescue in dpy-5 mutants with smaller neurons (C89) provides functional evidence that UPR requirement scales with cell size (C90). This is a key insight linking cell size, protein production, and UPR necessity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "2cf9a3cc-d3e7-47c5-96fd-fe3605ac8f49",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Co-expression of DMA-1 and HSP-4 in PDE neurons induces ectopic branches more efficiently (47%) than DMA-1 alone (21%), and these branches are longer and more complex. HPO-30 with HSP-4 does not induce branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The gain-of-function experiment in PDE shows that increasing ER folding capacity enhances DMA-1's ability to induce branches (C92). The specificity control with HPO-30 (C93) and the quantification of branch length (C94) strengthen the conclusion. This demonstrates sufficiency of the UPR/DMA-1 pathway for branch induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "832a1498-fa60-4b73-898e-ad0475bb1b04",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PVD is a multidendritic nociceptive neuron in C. elegans with an elaborate menorah-shaped dendritic arbor that grows rapidly (800 \u03bcm in 24 hours) during development, suggesting high biosynthetic demand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established characteristics of PVD neurons (C1-C3) supported by prior literature and Figure 1. The inference about high biosynthesis (C4) is reasonable given the rapid growth rate, though it remains an inference rather than direct measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "0ba1323d-3d52-4843-940b-dfdc157f310f",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DMA-1 acts cell-autonomously in PVD and forms a tripartite receptor-ligand complex with SAX-7/L1CAM and MNR-1 to guide dendritic arbor growth and branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established findings from prior work (Liu and Shen 2012; Dong et al. 2013; Salzberg et al. 2013) that provide essential background for the current study (C5-C6). The citations are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "21d7d636-32c5-4458-be47-83dbba01bca1",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "IRE1 is conserved in all eukaryotes and contains an ER luminal domain for recognizing misfolded proteins, and cytoplasmic kinase and endoribonuclease domains that mediate xbp-1 splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is well-established background knowledge about the UPR pathway (C17), appropriately cited and illustrated in Figure 1\u2014supplement 1A. This provides necessary context for interpreting the genetic results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    },
+    {
+      "id": "6793f2de-c5c3-4008-9c96-06381758d022",
+      "content_id": "52c0653a-8bc9-4e50-9a88-0d4c8dcf67a3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The physiological UPR is induced in PVD during dendrite morphogenesis, and perturbation of the IRE1 pathway causes loss of dendritic branches that can be rescued by HSP-4 overexpression. DMA-1 plays a major role in UPR induction and the dendritic phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims from the abstract (C95-C99) are well-supported by the detailed experimental results described in other claim groups. They accurately represent the major findings of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:09:14.227573Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "58ea14f2-ef87-472d-ae10-44d9112e926c",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "fe8748a7-dd13-43de-992d-0ac0105c1abe",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "6ff2e569-b8ae-4778-b84a-d07666fbc2a4",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "093fb3e8-bc2e-478f-ac66-683ec322f35a",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "ebc7f8c4-d39d-4cf2-83b0-506217ae691c",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "35ccc810-72b7-419c-9081-01f4dbad4da5",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "2a2712f8-027d-4441-b755-ec3d4036b241",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "c927f2e0-b371-4166-a17f-682e92115d17",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "15d19f7a-7f07-497e-a15a-dfcaeea3e776",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "ea75433a-35ba-458f-9cf4-5a97f036d346",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "743c8999-ee83-4d25-a54f-cf63044b7e10",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "4670dec9-5863-4ead-ae3a-c344b336daff",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "0932987e-4a6f-4d0c-9afa-86d57877922e",
+      "result_id": "f952ca62-db43-4607-bb8d-861c64dac95c"
+    },
+    {
+      "claim_id": "51358866-8e75-450b-8d5b-9eebb242e625",
+      "result_id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4"
+    },
+    {
+      "claim_id": "33baf877-aee5-43e7-9da2-e947c105ffc1",
+      "result_id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4"
+    },
+    {
+      "claim_id": "ce37247c-1656-429f-ba5b-9dca98ea4a5d",
+      "result_id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4"
+    },
+    {
+      "claim_id": "a8026f46-1672-4af8-acf1-af7a3b3b4df2",
+      "result_id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4"
+    },
+    {
+      "claim_id": "c8824188-ab17-426a-af4d-8259c3c1fc39",
+      "result_id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4"
+    },
+    {
+      "claim_id": "e3927332-a048-4c22-bc2e-4dccb0ede8ed",
+      "result_id": "a7c60dc7-4b2d-4ff5-a925-2a789e868cf4"
+    },
+    {
+      "claim_id": "01b6c435-eb95-4bfe-b266-7a773acce5f2",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "af9d5942-902e-48de-afba-1beeb3e33c8b",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "6d1bc277-af4c-4741-911a-01861c18f5d6",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "cf42474f-0e3d-4cb3-86f3-d757f91eb366",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "de717378-fbfa-4468-8606-b3073aba0ead",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "7e195e79-b5e9-40ad-a5d1-a47c7ca0507e",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "93a0ab9e-7815-4a8a-a4d7-a3e694403313",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "8725df76-b021-4244-818f-352604a39745",
+      "result_id": "802043cc-77f2-4430-a5ea-952d42d55b13"
+    },
+    {
+      "claim_id": "fe357d00-c87a-469f-9bc9-cd7c50cca5ad",
+      "result_id": "f26232d9-b359-4536-a93f-2c1eaa417221"
+    },
+    {
+      "claim_id": "b58261bc-9836-4f91-938c-6f3aca3f60a9",
+      "result_id": "f26232d9-b359-4536-a93f-2c1eaa417221"
+    },
+    {
+      "claim_id": "5aaf4911-2741-4ab3-abe5-d99a6fbbce5a",
+      "result_id": "f26232d9-b359-4536-a93f-2c1eaa417221"
+    },
+    {
+      "claim_id": "1391b773-6d8e-4ae4-b643-e2533f47bea2",
+      "result_id": "f26232d9-b359-4536-a93f-2c1eaa417221"
+    },
+    {
+      "claim_id": "4968c529-de3b-49d9-a594-c17e8131e057",
+      "result_id": "37600da4-53cc-4720-82a3-5e448e474c9a"
+    },
+    {
+      "claim_id": "71a45e03-33c4-4648-9001-cb5ccf156ed7",
+      "result_id": "37600da4-53cc-4720-82a3-5e448e474c9a"
+    },
+    {
+      "claim_id": "8fa7e0e1-0037-43d2-a656-cb7d6bd7cee4",
+      "result_id": "37600da4-53cc-4720-82a3-5e448e474c9a"
+    },
+    {
+      "claim_id": "93d0479a-8702-4ed0-9d73-714cce4fa2ad",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "d68cf4b5-29c6-40c5-a46d-fbcf988ea75f",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "77e63a05-eb38-4e75-8efc-f95036eb7f69",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "47df0a8d-5207-450e-b519-759d0d787e13",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "bf5b9936-41b8-45b1-883c-aaea090a6b01",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "8a28bdfb-a3b1-4cd3-89f4-2472c25a11ff",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "169f5a5a-6919-4944-b071-42e3527096a6",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "eba2477e-f0e6-4f0f-9105-55c4339bfd94",
+      "result_id": "f20988d9-bada-4e20-afdc-96784133a1d9"
+    },
+    {
+      "claim_id": "b4a52262-2435-40bd-9931-19aa6515f183",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "dbadcc6e-83e7-468b-ba59-f36f8e303a55",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "3b795063-71f4-4360-a89d-b31b68df5bb4",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "6c196f37-dbba-47c5-9b69-98cf269a2522",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "80e5bbdd-212f-4d4f-81d0-7db33bc790ae",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "5027e6b8-d50a-4f73-af92-6759434675da",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "1e9a87a3-f9a9-4b36-9417-19bdb4bae7e3",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "6949f23e-aafb-40d3-a593-5e4bf7f1c952",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "c3117b46-ea66-481a-a4a4-e9c260cbb67b",
+      "result_id": "e34abd48-7868-45c1-b74f-6b8efeb46817"
+    },
+    {
+      "claim_id": "7854048f-cd41-46aa-8769-f68ad324d6b5",
+      "result_id": "d4cef100-3312-4997-b95a-c640141d2b24"
+    },
+    {
+      "claim_id": "5d9e4f71-c622-422c-9451-ca89e238429e",
+      "result_id": "d4cef100-3312-4997-b95a-c640141d2b24"
+    },
+    {
+      "claim_id": "6c3e0688-2dff-46da-83d1-9a96745175f9",
+      "result_id": "d4cef100-3312-4997-b95a-c640141d2b24"
+    },
+    {
+      "claim_id": "2126c5d4-48ee-40de-ade9-7b9edc639391",
+      "result_id": "d4cef100-3312-4997-b95a-c640141d2b24"
+    },
+    {
+      "claim_id": "3aec3fb7-4599-424b-92b2-463ea2085316",
+      "result_id": "007bd2cd-7723-47aa-a012-b8bc9fa87ea1"
+    },
+    {
+      "claim_id": "b3e1c1bc-b0bb-44b9-bea9-3dc5482b70b4",
+      "result_id": "007bd2cd-7723-47aa-a012-b8bc9fa87ea1"
+    },
+    {
+      "claim_id": "46e607d0-b927-4a1c-96a9-f58bf231f04b",
+      "result_id": "007bd2cd-7723-47aa-a012-b8bc9fa87ea1"
+    },
+    {
+      "claim_id": "05580d36-e93f-46c1-b5f0-433a993b72f7",
+      "result_id": "007bd2cd-7723-47aa-a012-b8bc9fa87ea1"
+    },
+    {
+      "claim_id": "efa41d9c-63cc-43c9-b98e-6b53717a7296",
+      "result_id": "007bd2cd-7723-47aa-a012-b8bc9fa87ea1"
+    },
+    {
+      "claim_id": "2a0a2f00-e62a-42c6-8231-0f704a0a3864",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "1e5e1067-561c-4c89-a552-3d408b70b224",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "aa0e54d9-5df6-4625-ae78-2e2baa538b27",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "abd3b217-bb12-4ef7-ae03-c0944749e62f",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "435361ac-8a0d-4960-84a4-72eef3531f94",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "cdfaaad3-3f89-43f1-98cb-4fcef8259d78",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "90d2260c-5d2d-4be4-a29a-0e884340ac0e",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "d63f0c22-c470-4830-a803-c85b11139ba0",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "88b9991d-afd4-460a-a89c-22cd48752132",
+      "result_id": "e9436b28-bd35-4da4-a7b7-c74736001b0f"
+    },
+    {
+      "claim_id": "e63afd20-b290-48ca-90d0-36a06665fee4",
+      "result_id": "e9c912d6-1523-41ed-86bc-73d954b27369"
+    },
+    {
+      "claim_id": "22b13f36-efdf-44c3-929c-52a16235b920",
+      "result_id": "e9c912d6-1523-41ed-86bc-73d954b27369"
+    },
+    {
+      "claim_id": "8a11daa4-00d5-4f97-ab75-ebfa2838d16d",
+      "result_id": "e9c912d6-1523-41ed-86bc-73d954b27369"
+    },
+    {
+      "claim_id": "413c2516-c31e-44ea-8de6-5773a92ab8d7",
+      "result_id": "e9c912d6-1523-41ed-86bc-73d954b27369"
+    },
+    {
+      "claim_id": "7962ef66-d103-4cc2-8a45-075037a6d922",
+      "result_id": "e9c912d6-1523-41ed-86bc-73d954b27369"
+    },
+    {
+      "claim_id": "8777c9b3-ef44-4816-b29c-2c42b0cf5783",
+      "result_id": "374c9d6a-2d27-4c4d-8392-26b2bb40fe86"
+    },
+    {
+      "claim_id": "fa749f20-40b1-4a20-b8bf-5c41aa5c7b03",
+      "result_id": "374c9d6a-2d27-4c4d-8392-26b2bb40fe86"
+    },
+    {
+      "claim_id": "f78e3548-0657-492e-82a2-402bcd9f2221",
+      "result_id": "374c9d6a-2d27-4c4d-8392-26b2bb40fe86"
+    },
+    {
+      "claim_id": "5cafbfb3-6e35-4d6c-ae50-63e382388913",
+      "result_id": "374c9d6a-2d27-4c4d-8392-26b2bb40fe86"
+    },
+    {
+      "claim_id": "bb5e888f-6bbc-4ee9-9746-28a356c5ac02",
+      "result_id": "374c9d6a-2d27-4c4d-8392-26b2bb40fe86"
+    },
+    {
+      "claim_id": "62c472d0-8f67-49e2-b62d-fcb2791473ae",
+      "result_id": "4d95d2f4-262d-49a3-b0fa-7b00209af9bb"
+    },
+    {
+      "claim_id": "fa0627e1-be5c-42f6-8606-f7d51edcd37d",
+      "result_id": "4d95d2f4-262d-49a3-b0fa-7b00209af9bb"
+    },
+    {
+      "claim_id": "083473ef-7085-4e1b-a81f-22ff833521bb",
+      "result_id": "4d95d2f4-262d-49a3-b0fa-7b00209af9bb"
+    },
+    {
+      "claim_id": "8ba19d8e-4532-4036-8573-3892a2eb00e3",
+      "result_id": "4d95d2f4-262d-49a3-b0fa-7b00209af9bb"
+    },
+    {
+      "claim_id": "b542dfb1-7fa1-4d39-8a4d-16b273a5fb34",
+      "result_id": "2cf9a3cc-d3e7-47c5-96fd-fe3605ac8f49"
+    },
+    {
+      "claim_id": "ec18c454-6009-412d-817d-eb1ea8749ee6",
+      "result_id": "2cf9a3cc-d3e7-47c5-96fd-fe3605ac8f49"
+    },
+    {
+      "claim_id": "d44f2ab1-836a-4a80-9ffb-034b08d1b751",
+      "result_id": "2cf9a3cc-d3e7-47c5-96fd-fe3605ac8f49"
+    },
+    {
+      "claim_id": "e00d03ea-bc48-4a39-90a8-fdd944703f31",
+      "result_id": "2cf9a3cc-d3e7-47c5-96fd-fe3605ac8f49"
+    },
+    {
+      "claim_id": "3392ef59-202e-4129-9e33-7b81f028252b",
+      "result_id": "832a1498-fa60-4b73-898e-ad0475bb1b04"
+    },
+    {
+      "claim_id": "15950c2c-b0e7-49a2-b07b-b68d253ac8c5",
+      "result_id": "832a1498-fa60-4b73-898e-ad0475bb1b04"
+    },
+    {
+      "claim_id": "fe7ff731-4c57-432b-8b38-fffc7ab690d8",
+      "result_id": "832a1498-fa60-4b73-898e-ad0475bb1b04"
+    },
+    {
+      "claim_id": "0cec1531-9b9e-4ab8-bdd6-7299fbdbba97",
+      "result_id": "832a1498-fa60-4b73-898e-ad0475bb1b04"
+    },
+    {
+      "claim_id": "b63411c5-6df0-45d9-8765-aba797c5386c",
+      "result_id": "0ba1323d-3d52-4843-940b-dfdc157f310f"
+    },
+    {
+      "claim_id": "4ca33b96-2e56-4c06-9aca-0d4733b8f3f1",
+      "result_id": "0ba1323d-3d52-4843-940b-dfdc157f310f"
+    },
+    {
+      "claim_id": "87c7e022-8d94-4fa9-85c2-84fb508c68b2",
+      "result_id": "21d7d636-32c5-4458-be47-83dbba01bca1"
+    },
+    {
+      "claim_id": "ca9737bb-bd8b-4d23-a45d-9b97b8ccb02f",
+      "result_id": "6793f2de-c5c3-4008-9c96-06381758d022"
+    },
+    {
+      "claim_id": "8847b53e-5b8b-4a5f-bcf6-67bbd7091fdf",
+      "result_id": "6793f2de-c5c3-4008-9c96-06381758d022"
+    },
+    {
+      "claim_id": "35ceb3d3-7bc9-4421-997d-093d0ce8112f",
+      "result_id": "6793f2de-c5c3-4008-9c96-06381758d022"
+    },
+    {
+      "claim_id": "9b00bd0b-bd17-47f0-b94d-7c70e4ce1b81",
+      "result_id": "6793f2de-c5c3-4008-9c96-06381758d022"
+    },
+    {
+      "claim_id": "9966a1ed-d151-4f1a-b36d-e2c2ce182212",
+      "result_id": "6793f2de-c5c3-4008-9c96-06381758d022"
+    }
+  ],
+  "comparisons": []
+}

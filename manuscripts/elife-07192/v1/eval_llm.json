@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior to this study, optogenetic techniques enabled precise stimulation and artifact-free recording, and several studies suggested optical stimulation could support closed-loop control, but no approach yet permitted feedback control of neuronal firing levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C24-C26 establish the state of the field prior to this work through citations and general knowledge. The claims are consistent with each other and supported by appropriate references to prior literature, establishing the gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C119"
+    ],
+    "result": "The optoclamp is a feedback control technology that provides continuous, real-time adjustments of bidirectional optical stimulation to precisely control population firing levels in dissociated cortical networks over timescales from seconds to days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, and C119 describe the core technology and are supported by extensive experimental data throughout Figures 2-6 demonstrating successful control across multiple timescales, preparations, and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Evoked population firing rates were positively correlated with the excitatory control variable UC and negatively correlated with the inhibitory control variable UH, with monotonic relationships indicating their applicability as closed-loop control signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are directly supported by data in Figure 1B showing clear monotonic relationships between control variables and firing rates, with specific saturation points quantified. This establishes the foundation for using these variables in feedback control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Synaptic blockade strongly affected spontaneous firing levels, but optogenetic input could compensate for depressed excitatory transmission in CNQX- and AP5-treated networks, while bicuculline greatly reduced the dynamic range of evoked activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by data in Figure 1B-C showing quantified changes in firing rates under different pharmacological conditions and demonstrating that optogenetic stimulation can restore firing ranges during excitatory blockade but not during GABAergic blockade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Open-loop stimuli lost effectiveness throughout 60-s trials causing significant drift in evoked activity levels, likely due to network adaptation for ChR2R and chloride accumulation plus pump desensitization for eNpHR3.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by data in Figure 1D-E showing temporal decay of stimulus effectiveness. The mechanistic explanations are reasonable inferences supported by citations to prior work on opsin properties (Mattis et al., 2011; Raimondo et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PI control achieved successful firing rate clamping in over 90% of trials (71/77) with mean RMS tracking error of 0.14 \u00b1 0.091 Hz/unit, with tracking error increasing with target rate and settling time averaging 7.83 \u00b1 6.07 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are directly supported by quantitative data in Figure 2 and supplements, providing specific success rates, error metrics, and timing parameters with appropriate statistical measures across multiple cultures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Functional PI control was achieved within specific parameter ranges (K < 1.0, 1.0 s < Ti < 10 s, 0.5 s < \u03c4 < 10 s), with unstable dynamics or significant target offsets occurring outside these bounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by systematic parameter sweep data in Figure 2\u2014figure supplements 3-5, demonstrating the functional parameter space and showing instability outside these ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Control signals were highly variable across networks even for the same target rate, likely reflecting heterogeneous network properties, and open-loop replay of successful control signals failed to control firing, demonstrating the necessity of real-time feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by data in Figures 2C and 4 showing high variability in control signals and complete failure of open-loop replay. The inference about heterogeneity is reasonable and supported by citation to Wagenaar et al., 2006.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Control performance during AMPAergic and NMDAergic blockade was equivalent to drug-free conditions except at high target rates, but reliable control was not possible during GABAergic blockade, likely due to destabilizing effects of bicuculline consistent with its role in circuit instability diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by data in Figure 2\u2014figure supplement 6 showing successful control during CNQX/AP5 treatment but failure during bicuculline treatment. The mechanistic interpretation is reasonable and supported by citations to epilepsy literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "During extended control periods, the controller made rapid second-to-second adjustments while slower minute-to-minute changes occurred, likely reflecting short-term synaptic depression and cellular excitability changes, allowing the control signal to serve as a readout of network excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by data in Figure 3 showing multi-timescale control dynamics. The mechanistic interpretation is a reasonable inference from the observed temporal patterns, and the analogy to voltage clamp is conceptually sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Different stimulus waveforms (square, triangular, sinusoidal, PRBS, continuous) all permitted successful closed-loop control but significantly affected peak firing correlation and synchrony, demonstrating that the optoclamp controls population firing levels while leaving higher-order statistics unconstrained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by data in Figure 4 with statistical tests showing significant differences in correlation (P = 6.5 \u00d7 10\u207b\u00b2\u2074) and synchrony (P = 10\u207b\u00b2\u00b2) across waveforms. The conclusion about controlling only firing levels is a valid inference from these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "On-off control successfully held firing rates at six of seven targets over 12-hr epochs, with stimulation frequency better correlated to the difference between target and pre-clamp firing rate (R\u00b2 = 0.63) than target rate alone (R\u00b2 = 0.52), suggesting the method can study network dynamics over developmental timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by data in Figure 5 and supplements showing long-term control and correlation analysis. However, C75 is speculative about future applications rather than a demonstrated result, though it's a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Both excitatory and inhibitory on-off control better preserved spontaneous activity correlations than PI control, though periodic correlation structure emerged for targets requiring higher excitatory stimulation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by data in Figure 5E and Figure 5\u2014figure supplement 2C comparing correlation structures across control methods. The observation of periodic structure at higher stimulation rates is clearly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Previous studies showed homeostatic changes following chronic activity manipulation with drugs, but no homeostatic changes were observed following prolonged activity changes during on-off feedback control, suggesting altered synaptic transmission and altered spiking may have distinct effects on homeostatic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 establish prior findings through citations. Claims C80-C81 are supported by data in Figure 5 and supplements showing absence of homeostatic changes when firing was clamped without drugs. The inference about distinct effects is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The controller effectively clamped firing rates to pre-drug levels during CNQX, AP5, or bicuculline treatment, yet homeostatic changes in spiking levels were observed following drug removal despite maintained firing rates during treatment, indicating that changes in firing rate are not required to drive compensatory alterations in network excitability and that homeostatic alterations are triggered directly by suppressed synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are supported by extensive data in Figure 6 showing successful clamping and subsequent homeostatic changes. Claims C89-C90 represent key mechanistic conclusions that are well-supported by the experimental design of decoupling firing from neurotransmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "On-off control has been used to show that upward synaptic scaling is directly induced via reductions in AMPA receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by citation to Fong et al., 2015, which used the optoclamp method. This represents validation of the technique by independent application to a specific mechanistic question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "For >75% of thalamocortical units in vivo, the controller effectively clamped firing over varying target ranges with RMS tracking error of 2.0 \u00b1 0.8 Hz and settling time of 3.3 \u00b1 3.2 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by data in Figure 7B-D showing successful in vivo control with quantified performance metrics. The higher error compared to in vitro is appropriately attributed to single-cell vs. population measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The optical power required for successful control varied greatly across cells (spanning nearly two orders of magnitude at 16 Hz), open-loop stimuli resulted in highly variable firing, and locking optical power significantly increased RMS tracking error (+204-238%, p < 10\u207b\u00b9\u2074), indicating continuous stimulus updates are required for precise in vivo control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by data in Figure 7E and supplements showing high variability in required power, poor open-loop performance, and significant degradation when control signals were locked. The statistical tests strongly support the necessity of continuous updates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Parameter sweeps showed that increasing \u03c4 increased RMS error (+57%, p = 1.4 \u00d7 10\u207b\u2076) while lowering \u03c4 decreased error (-46.9%, p = 1.2 \u00d7 10\u207b\u00b9\u2070), and reducing Ti decreased error (-18%, p = 0.011), indicating that low-latency feedback and short integral time constant improve in vivo control performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by systematic parameter sweep data in Figure 7\u2014figure supplement 3 with appropriate statistical tests. The conclusion about optimal parameters is well-supported by the quantitative comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Controlled firing exhibited CVISI close to 1 (1.31 \u00b1 0.33), indicating Poisson-like spiking, while spontaneous activity had significantly elevated CVISI (1.72 \u00b1 0.43, p = 0.043), suggesting optogenetic feedback control can mimic alert, Poisson-like spiking statistics in anesthetized animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 establish context through citations. Claims C109-C111 are supported by data in Figure 7F showing quantified CVISI values with statistical comparison. The inference about mimicking alert states is reasonable given the known differences between awake and anesthetized firing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Vibrissa deflections evoked stimulus-locked spike trains during closed-loop control with no significant performance degradation (p = 0.09 for firing rate, p = 0.73 for RMS error), and the FWHM of spike-triggered averages for optical power and whisker position differed by more than an order of magnitude (0.46 \u00b1 0.2 s vs 18.3 \u00b1 5.5 ms, p = 0.0079), demonstrating that optogenetic feedback control can control baseline firing state without distorting fine-scale temporal structure of sensory-evoked spike trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by data in Figure 8 showing maintained sensory responses during control with appropriate statistical tests. The spike-triggered average analysis clearly demonstrates separation of timescales, supporting the conclusion about preserved temporal structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C120"
+    ],
+    "result": "All previous closed-loop optogenetic methods used physiological measurements to trigger static stimuli without corrective action, while the optoclamp continuously updates stimulus parameters in real-time, providing a foundation for true closed-loop optical control of neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by citations to prior work and represents a fair assessment of the field. Claim C120 is somewhat speculative about future impact but is a reasonable inference given the demonstrated capabilities of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Even with the same controller and target firing rate, successful control required vastly different optical stimulation intensities across experiments and preparations, suggesting closed-loop regulation may be a requirement rather than a benefit for evoking consistent activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by data in Figure 9 showing orders-of-magnitude variation in required light intensity across preparations. The conclusion that closed-loop control is necessary rather than optional is a strong inference well-supported by this variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on feedback control principles and prior applications in neuroscience, including voltage clamp as the most broadly applied feedback control method, and the importance of firing rate in neural coding and homeostatic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C23 establish background knowledge and context through general principles and citations to prior literature. These are appropriately supported by references and represent accurate characterization of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The optoclamp can decouple neuronal firing levels from ongoing changes in network excitability due to multi-hour neurotransmission blockade in vitro and from vibrissal sensory drive in vivo, revealing that changes in firing levels are not required to induce homeostatic alterations and that background thalamic activity can be controlled without corrupting sensory-evoked spike train structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C28-C30 represent the major biological findings enabled by the optoclamp technology. These are well-supported by data in Figures 6 and 8, demonstrating successful decoupling in both experimental contexts with appropriate controls and analysis.",
+    "result_type": "MAJOR"
+  }
+]

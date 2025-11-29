@@ -1,0 +1,680 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Wss1 binds SUMO through multiple interaction sites including the WLM domain and two SUMO-interacting motifs (SIM1 and SIM2). Both N-terminal and C-terminal fragments of Wss1 can bind SUMO beads, and complete inhibition requires triple mutation of both SIMs and the WLM active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from pull-down experiments with SUMO beads showing that Wss1 binds SUMO through multiple sites. The systematic mutagenesis approach (C2-C4) demonstrates that SIM1, SIM2, and WLM all contribute to SUMO binding, with competition experiments (C6) confirming specificity. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The WLM domain of Wss1 binds the C-terminus of SUMO, as demonstrated by enhanced binding to SUMO-phosphonic acid (SUMO-PA) compared to native SUMO. This interaction is zinc-dependent and specific for SUMO over ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 demonstrate that the WLM domain binds the SUMO C-terminus through experiments with SUMO-PA (C8-C11), which mimics the transition state of metalloprotease substrates. The zinc-dependence (C9) and specificity for SUMO over Ub-PA (C12) are well-documented. The inference about C-terminal binding (C10-C11) is reasonable given the SUMO-PA design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Wss1 preferentially binds high molecular weight SUMO chains through its SIM motifs, with both SIM1 and SIM2 required for efficient chain binding, while the WLM domain is dispensable for this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by amylose pull-down experiments showing preferential binding to HMW-SUMO chains. The differential requirements for SIMs versus WLM (C14-C15) are clearly demonstrated and consistent with the known role of SIMs in recognizing SUMO chains. The data are internally consistent with earlier findings on individual SUMO binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Recombinant Wss1 lacks protease activity under standard conditions but undergoes autocatalytic cleavage when refolded in the presence of ssDNA. The cleavage occurs at V189 and requires the WLM metalloprotease domain, with ssDNA polymer (not individual nucleotides) serving as the cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 provide strong evidence for DNA-dependent activation of Wss1 protease activity. The sequencing data identifying the cleavage site (C21), the requirement for WLM domain (C22), and the specificity for ssDNA polymer (C23-C24) are well-documented. The observation that recombinant protein lacks activity (C16) is consistent with prior literature (C18) and provides context for the activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Addition of ssDNA to refolded Wss1 induces measurable protein cleavage after 3 hours, which is inhibited by the metalloprotease inhibitor OPA. The cleavage pattern differs from refolding experiments, suggesting multiple pathways of Wss1 activation depending on experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 document time-dependent cleavage with appropriate controls (OPA inhibition, C26). The observation of different cleavage patterns (C27) and the inference of condition-dependent pathways (C28) are reasonable given the data, though the mechanistic basis for these differences remains unclear. The results are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Treatment of Wss1 with OPA induces disulfide-linked protein oligomerization, suggesting that Wss1 is regulated by a cysteine-switch mechanism where a regulatory cysteine coordinates the active site zinc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 provide experimental evidence for OPA-induced oligomerization that is thiol-sensitive. However, claims C31-C32 are largely speculative hypotheses about the mechanism. While the cysteine-switch hypothesis is reasonable given the data and literature precedent (C32), direct evidence for cysteine-zinc coordination is lacking. The oligomerization data support the overall model but don't definitively prove the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Thiram, a thiol-reactive compound, efficiently induces Wss1 self-cleavage with the same pattern as DNA-induced cleavage. Thiram inhibits OPA-induced oligomerization, suggesting it targets the same regulatory cysteine involved in zinc binding. APMA produces similar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide strong evidence for chemical activation of Wss1 by thiol-reactive compounds. The identical cleavage patterns (C34) and inhibition of OPA-induced oligomerization (C36) support the cysteine-switch model. The inference that thiram targets the zinc-binding cysteine (C37) is reasonable but indirect. The APMA data (C38) provide additional support for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Thiram accelerates DNA-dependent Wss1 self-cleavage, while thiols (particularly glutathione) inhibit it. This suggests that intracellular thiols may prevent spontaneous Wss1 activation by DNA, while oxidative stress could activate Wss1 by depleting thiols and increasing ssDNA lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide clear experimental evidence for opposing effects of thiram and thiols on DNA-dependent cleavage. The inference about cellular regulation (C45) is reasonable, though the speculation about oxidative stress (C46) extends beyond the data. The results are consistent with the cysteine-switch model and provide insight into potential cellular regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Wss1 is not a SUMO isopeptidase. While it binds polysumoylated substrates, it fails to cleave SUMO1-FP or linear His6-Ub-SUMO-HA substrates and does not produce the low molecular weight SUMO species expected from chain disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 provide strong negative evidence against the previously reported isopeptidase activity (C47). Multiple substrate types were tested (C50-C51) with consistent negative results. The observation that Wss1 doesn't produce expected disassembly products (C49) further supports this conclusion. This contradicts prior literature but is well-documented here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Wss1 treatment increases the intensity of high molecular weight SUMO that can penetrate the gel, likely by generating SUMO species that enter the gel matrix more easily through metalloprotease-dependent proteolysis. SUMO chains accelerate thiram-induced Wss1 auto-proteolysis, suggesting HMW-SUMO stimulates Wss1 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 document an unexpected effect of Wss1 on SUMO chain mobility. The inference that Wss1 generates smaller SUMO species (C54) is reasonable given the correlation with auto-proteolysis and OPA inhibition. The acceleration of Wss1 cleavage by SUMO chains (C55) is well-documented, though the mechanism (oligomerization, C56) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Wss1 expression reduces ubiquitylated SUMO species in cells independently of its metalloprotease activity, suggesting competition with STUbL for binding SUMOylated proteins rather than proteolytic removal of ubiquitin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide evidence that Wss1 affects STUbL substrates through a non-proteolytic mechanism. The independence from metalloprotease activity (C59) is clearly demonstrated. The inference about competition with STUbL (C60) is reasonable but speculative. The data are consistent but don't definitively prove the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Wss1 promotes sumoylation of cellular proteins and catalyzes SUMO chain formation in vitro. Both Wss1 and the WLM* mutant auto-sumoylate, with this E3-like ligase activity resulting from SIM-dependent juxtaposition of E2~SUMO and acceptor SUMO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 document a novel SUMO ligase activity of Wss1. The in vitro and cellular data (C61-C63) are consistent and well-controlled. The mechanistic explanation (C64) based on SIM-dependence and literature on SUMO ligase mechanisms is reasonable, though the exact mechanism remains to be fully elucidated. This is a major unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The WLM* mutant shows higher SUMO ligase activity than wild-type Wss1. Increasing OPA concentration promotes sumoylation of WT-Wss1 but not WLM*, suggesting that extraction of zinc from the metalloprotease active site enhances Wss1-dependent sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 provide evidence that zinc removal enhances SUMO ligase activity. The differential effects of OPA on WT versus WLM* (C66-C67) and convergence at high OPA (C68) are well-documented. The inference about zinc extraction promoting sumoylation (C69) is reasonable given the data, though the exact mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "OPA induces disulfide-linked Wss1 oligomerization. In the absence of zinc, the regulatory cysteine 226 induces intermolecular disulfide crosslinks, multiplying SUMO-binding sites and increasing SUMO ligase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide clear evidence for OPA-induced oligomerization that is disulfide-linked. However, claim C72 is largely speculative, inferring the role of C226 without direct mutagenesis data. The model is consistent with the data but not definitively proven. The connection between oligomerization and enhanced ligase activity is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Wss1 is a SUMO-targeted minigluzincin-like metalloprotease regulated by a cysteine-switch mechanism. In its latent form, it binds and promotes SUMO chain elongation, while upon DNA-binding activation it self-cleaves and processes HMW-SUMO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide a comprehensive summary of the in vitro characterization. The structural classification (C73) is supported by modeling data. The dual activities (ligase in latent form, protease upon activation, C74-C75) are well-documented throughout the results. The proposed functional model (C76) integrates multiple lines of evidence, though some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mass spectrometry identification of Wss1-interacting proteins revealed over 50 partners, with the majority involved in DNA repair and RNA polymerase regulation. Surprisingly, a third of hits were proteins involved in intracellular transport and membrane processes. The most abundant interactors were Doa1 and Cdc48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 document a comprehensive proteomic analysis. The identification of DNA repair proteins (C79) is consistent with known Wss1 function, while the membrane/transport proteins (C80) represent an unexpected finding. The identification of Doa1 and Cdc48 as top hits (C81) is well-documented and leads to subsequent mechanistic studies. The data quality and analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Wss1 forms a ternary 1:1:1 complex with Cdc48 and its cofactor Doa1. Using purified recombinant proteins, Wss1 can bind Cdc48 and Doa1 separately, and the binding of Wss1 to Doa1 is specific among Cdc48 cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 provide strong biochemical evidence for ternary complex formation. The use of purified recombinant proteins (C85-C87) eliminates concerns about indirect interactions. The stoichiometry determination (C86) and specificity for Doa1 (C87) are well-documented. The data are internally consistent and support the proposed complex architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Within the Wss1/Doa1/Cdc48 complex, the N-terminus of Wss1 binds the PFU domain of Doa1, while the SHP and VIM motifs of Wss1 interact with the N-terminus of Cdc48. NMR structure determination and mutagenesis identified R218, R219, and F152 as key residues for Cdc48 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide detailed mapping of protein-protein interactions. The NMR structure (C90) and structure-based mutagenesis (C91-C92) represent rigorous approaches. The functional validation by mutagenesis (C92) confirms the structural predictions. The data are of high quality and provide molecular-level insight into complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The Wss1/Doa1/Cdc48 ternary complex binds SUMO but not ubiquitin, suggesting mutually exclusive binding of Wss1 and Ub to Doa1. This may be explained if the N-terminus of Wss1 adopts a Ub-like beta-grasp fold and competes with Ub for the Doa1 PFU domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide clear experimental evidence for SUMO specificity of the ternary complex, contrasting with the known Ub-specificity of Doa1/Cdc48 (C93). The inference about mutually exclusive binding (C95) is reasonable. However, claim C96 is speculative, proposing a Ub-like fold for Wss1 N-terminus without direct structural evidence. The model is plausible but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Wss1 is a Cdc48 cofactor that redirects the Doa1/Cdc48 complex from ubiquitin to SUMO substrates. The Wss1/Doa1/Cdc48 ternary complex is SUMO-specific, in contrast to the Npl4/Ufd1/Cdc48 complex which binds both Ub and SUMO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide a clear summary of the complex's specificity. The demonstration that Wss1 redirects Doa1/Cdc48 to SUMO (C99) is well-supported by pull-down experiments. The observation of limited SUMO binding by Doa1 alone (C100) is interesting. The comparison to Npl4/Ufd1/Cdc48 (C101-C102) provides important context for understanding distinct Cdc48 pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Wss1 expression results in marked buildup of HMW-SUMO conjugates and two major species at 120 and 140 kD. This effect requires SUMO-binding (not protease activity) and is independent of known SUMO ligases. Siz1 is responsible for most basal sumoylation, and Wss1 expression partially rescues siz1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 document Wss1's SUMO ligase activity in cells. The requirement for SIM2 but not WLM activity (C104) is clearly demonstrated. The independence from known SUMO ligases (C105-C106) supports direct Wss1 activity. The rescue of siz1\u0394 (C107-C108) provides functional validation. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The major 120 kD sumoylated species is mono-sumoylated Cdc48, as demonstrated by TAP-tag shift and confirmed by anti-TAP western blot. Sumoylation of Cdc48 by Wss1 requires SIM2 and Cdc48 binding, suggesting E3-like activity requiring specific Wss1/substrate interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 provide strong evidence for Cdc48 as a Wss1 substrate. The TAP-tag shift approach (C110-C111) is elegant and definitive. The requirement for both SIM2 and Cdc48 binding (C112-C113) demonstrates specificity. The inference about E3-like activity (C114) is well-supported by the mutagenesis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In vitro, Cdc48 (but not Doa1) is sumoylated by Wss1 and WLM*, with WLM* showing higher activity. In cells, Wss1 promotes binding of HMW-SUMO to Cdc48 in a Wss1-dependent manner, as demonstrated by pull-down and TEV cleavage experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 provide convergent in vitro and cellular evidence for Wss1-mediated Cdc48 sumoylation and HMW-SUMO recruitment. The in vitro reconstitution (C115-C116) validates the cellular observations. The TEV cleavage experiments (C120) elegantly demonstrate that HMW-SUMO is bound to Cdc48. The Wss1-dependence (C121) is clearly shown with the F2R mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In the absence of genotoxic stress, Wss1 sumoylates proteins with which it interacts through SIM2-dependent E3-like activity that is reproduced in vitro. Wss1 promotes binding of HMW-SUMO by Cdc48, which may be related to Wss1 cellular function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 provide a summary of Wss1's ligase activity under non-stress conditions. The SIM2-dependence (C123) and in vitro reconstitution validate the cellular observations. The connection to Cdc48-mediated HMW-SUMO binding (C124) suggests a functional role, though the exact physiological significance remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Wss1 suppresses the temperature sensitivity of smt3-331 cells, requiring both SUMO binding via SIM2 and an intact protease domain, but not Cdc48 binding. Wss1 induces a significant decrease in HMW-SUMO in smt3-331 cells, correlating with cell survival, suggesting Wss1 protease is directly involved in metabolizing toxic HMW-SUMO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 provide strong genetic and biochemical evidence for Wss1's role in processing toxic HMW-SUMO. The mutagenesis analysis (C126) clearly defines functional requirements. The correlation between HMW-SUMO levels and survival (C130) supports the model. The inference about direct involvement in HMW-SUMO metabolism (C131) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cycloheximide chase experiments show that endogenous Wss1 processes specific very-HMW-SUMO and minimizes SUMO degradation in smt3-331 cells. In WSS1 cells, very-HMW-SUMO decreases with accumulation of intermediate-HMW-SUMO, while in wss1\u0394 cells, very-HMW-SUMO is most stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 provide detailed kinetic analysis of SUMO metabolism. The differential stability of SUMO pools in WSS1 versus wss1\u0394 cells (C133-C135) clearly demonstrates Wss1's role in processing very-HMW-SUMO. The inference about minimizing SUMO degradation (C136) is supported by the quantitative data showing less total SUMO loss in WSS1 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Neither ts-suppression nor clearing of HMW-SUMO by Wss1 require binding to Cdc48. Wss1 acts as a HMW-SUMO-processing protease in smt3-331 but not in SMT3 strain, suggesting specific activation in smt3-331 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 document the Cdc48-independence of Wss1's protease function in smt3-331 cells, contrasting with its ligase activity. The differential activity in smt3-331 versus SMT3 strains (C139) is well-documented. The speculation about specific activation (C140) is reasonable given the data but requires further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "In smt3-331 cells, exogenously expressed Wss1 and WLM* are greatly decreased in WSS1 compared to wss1\u0394 cells, with \u0394SIM2-Wss1 remaining stable, suggesting SUMO-dependent Wss1 degradation. This indicates Wss1 undergoes autoproteolytic activation and degradation stimulated by HMW-SUMO interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 provide evidence for SUMO-dependent Wss1 degradation in cells. The differential stability of mutants (C141-C142) clearly demonstrates SUMO-dependence. The inference about autoproteolytic activation (C143) is consistent with in vitro data. The cycloheximide chase data (C144) provide kinetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "wss1\u0394 increases Cdc48 protein levels in smt3-331 but not SMT3 cells, with only WT Wss1 able to reduce Cdc48 levels. This suggests Wss1 degrades itself and Cdc48 in smt3-331 cells, requiring protease domain, SUMO-interaction, and Cdc48 binding. The degradation of Cdc48 appears to be collateral damage from Wss1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 document Wss1-dependent Cdc48 degradation in smt3-331 cells. The genetic and complementation data are clear. However, the interpretation as 'collateral damage' (C149) is speculative. The hypothesis that F2R-Wss1 is a better suppressor due to lack of Cdc48 degradation (C150) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "4-NQO treatment induces significant reduction of Wss1 and WLM* proteins while leaving \u0394SIM2 unchanged in WSS1 cells. Cdc48 and WLM* are stable in wss1\u0394 cells treated with 4-NQO, suggesting DNA damage activates Wss1 and promotes its own and Cdc48 degradation in a SUMO-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 provide evidence for DNA damage-induced Wss1 activation in cells. The differential stability of mutants (C151) and the requirement for endogenous Wss1 (C153) clearly demonstrate SUMO-dependent activation. The cycloheximide chase data (C152) confirm protein destabilization rather than transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Wss1 complexes isolated from 4-NQO-treated cells contain SUMO-conjugates (except \u0394SIM2) and ubiquitylated proteins (except F2R). The WLM* complex shows the highest level of ubiquitinylated species. The majority of Ub-conjugates appear to be bound to Cdc48 rather than being mixed Ub-SUMO chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160 characterize the composition of cellular Wss1 complexes. The differential binding patterns of mutants (C154-C155) are informative. The inference that Ub-conjugates are bound to Cdc48 (C156, C160) is reasonable given the correlation with Cdc48 binding. The failure to detect Ub-SUMO chain cleavage activity (C159) contradicts prior literature but is consistent with earlier findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Isolated WT Wss1 complexes show partial fragmentation of Cdc48 and Wss1, and accumulate intermediate-size sumoylated species from HMW-SUMO proteolysis. This proteolysis is inhibited by OPA but not by NEM or PMSF, indicating metalloprotease activity. The WLM* complex shows no degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C165 provide direct evidence for Wss1 metalloprotease activity in isolated cellular complexes. The inhibitor profile (C163-C164) clearly indicates metalloprotease activity. The lack of activity in WLM* complexes (C165) confirms the requirement for the protease domain. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Both Cdc48 and Wss1 are processed in WT complexes through OPA-sensitive, proteasome-independent metalloprotease activity. Wss1 undergoes stepwise truncation, first at V189 (25 kD fragment) then near the SHP box (20 kD fragment). This self-processing reflects protease activation and may represent a general regulatory mechanism for WLM proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C172 provide detailed characterization of Wss1 self-processing. The inhibitor profile (C166-C167) confirms metalloprotease activity. The identification of cleavage sites (C169-C171) provides molecular detail. The inference about protease activation (C172) is reasonable. The speculation about a general WLM regulatory mechanism (C173) is supported by sequence conservation but requires validation in other family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C174",
+      "C175"
+    ],
+    "result": "Wss1 self-cleavage produces an N-terminal activated protease and a C-terminal fragment containing SIMs and VIM motifs that probably still bridges Cdc48 and SUMO-substrates. These mechanisms could serve for spatiotemporal control of substrate processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C174-C175 are largely speculative, proposing a model for how self-cleavage regulates Wss1 function. While the domain organization after cleavage is clear (C174), there is no direct evidence that the fragments remain associated or that the C-terminal fragment continues to bridge Cdc48 and substrates. The hypothesis about spatiotemporal control (C175) is plausible but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DNA damage or a defective SUMO pathway triggers activation of Wss1 metalloprotease, resulting in Wss1 self-processing and degradation of associated proteins. Because Wss1 proteolysis in cells is SUMO-dependent, Wss1 acts as a SUMO-targeted metalloprotease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C177 and C39-C41 provide a comprehensive summary of Wss1 activation and function. The evidence for DNA damage and SUMO pathway defects triggering activation is strong throughout the manuscript. The SUMO-dependence of cellular proteolysis is well-documented. The designation as a 'SUMO-targeted metalloprotease' accurately captures the protein's function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The wss1\u0394 tdp1\u0394 double mutant is very sick and sensitive to CPT, partially rescued by reducing Top1 levels and completely rescued by expressing WT Wss1. This indicates that in the absence of Tdp1, Wss1 protease becomes critically important for Top1cc processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C185 provide strong genetic evidence for Wss1's role in Top1cc processing. The synthetic lethality (C182), partial rescue by Top1 reduction (C183), and complete rescue by Wss1 expression (C184) clearly demonstrate functional importance. The inference about critical importance in tdp1\u0394 cells (C185) is well-supported. This confirms and extends prior work (C181).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "wss1\u0394 tdp1\u0394 mutants exhibit significant increases in sumoylated proteins (total and chromatin-bound). Wss1 protects cells from UV-induced DNA damage and Top1cc toxicity, suggesting a major function is clearing toxic HMW-SUMO from chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C189 provide evidence for SUMO accumulation in double mutants and protection by Wss1. The SUMO accumulation data (C186) are clear. The protective effects against UV and Top1cc (C187-C188) are well-documented. The inference about clearing toxic HMW-SUMO (C189) integrates multiple lines of evidence and represents a key conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "In wss1\u0394 cells, Top1 is sumoylated in a reaction requiring SUMO but not Cdc48 binding. In wss1\u0394 tdp1\u0394 cells, Wss1 expression reduces Top1 and sumoylated Top1 levels, while WLM* expression causes severe growth defects and strong accumulation of SUMO-Top1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C193 provide direct evidence for Top1 as a Wss1 substrate. The TEV cleavage experiments (C191) elegantly demonstrate that SUMO conjugates are bound to Top1. The differential effects of WT versus WLM* (C192-C193) clearly demonstrate the importance of protease activity. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "Wss1 suppresses CPT-sensitivity of wss1\u0394 tdp1\u0394 cells. Unexpectedly, \u0394SIM2 also suppresses, while F2R has weaker effects, suggesting Wss1 overexpression can compensate for low SUMO binding and, to a lesser extent, Cdc48 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C196 document suppression of CPT sensitivity by Wss1 and mutants. The unexpected suppression by \u0394SIM2 (C195) is interesting and suggests that high expression can overcome SUMO-binding defects. The inference about compensation (C196) is reasonable, though the mechanism remains unclear. The data suggest complex dose-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C197",
+      "C198"
+    ],
+    "result": "Wss1 functionally interacts with Top1, and this interaction is essential for clearing Top1-associated SUMO conjugates produced in Tdp1-deficient cells. In vivo evidence confirms Wss1 is directly involved in cleaving Top1cc complexes in a SUMO-dependent fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C198 provide a summary of Wss1's role in Top1cc processing. The functional interaction (C197) is well-supported by genetic and biochemical data. The confirmation of direct involvement in Top1cc cleavage (C198) integrates multiple lines of evidence and validates prior work by Stingele et al. The SUMO-dependence is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "GFP-Wss1 shows nuclear staining with occasional single foci in normal cells. In tdp1\u0394 cells, GFP-Wss1 shows multiple foci, likely reflecting multiple DNA damage sites. Treatment with 4-NQO also induces multiple foci. The foci are not observed with \u0394SIM2, suggesting SUMO-dependent targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C202 document Wss1 localization to nuclear foci under stress conditions. The increase in foci in tdp1\u0394 cells (C200) and with 4-NQO treatment (C201) is consistent with DNA damage-induced recruitment. The SUMO-dependence (C202) is clearly demonstrated with the \u0394SIM2 mutant. The inference about DNA damage sites (C200) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "In tdp1\u0394 cells, stimulating Top1 expression results in accumulation of Wss1-GFP within the vacuole, with ~2-fold increase in fluorescence by FACS. Many cells contain ~200 nm fluorescent punctate structures suggesting activation of the autophagic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C205 document an unexpected vacuolar localization of Wss1 under stress. The microscopy and FACS data (C203-C204) are clear. The inference about autophagy (C205) is reasonable given the vesicle morphology but requires validation with autophagy markers. This represents a novel and potentially important finding linking Wss1 to vacuolar degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C206",
+      "C207"
+    ],
+    "result": "Wss1 translocation to the vacuole is observed in 4-NQO-treated cells and smt3-331 mutant. Though preliminary, these results support a role for the vacuole in Wss1 function in SUMO-dependent DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C206-C207 extend the vacuolar localization findings to other stress conditions. The observation in multiple contexts (C206) strengthens the finding. The authors appropriately note the preliminary nature (C207) and the need for further investigation. The connection to SUMO-dependent DDR is reasonable but requires mechanistic validation.",
+    "result_type": "MAJOR"
+  }
+]

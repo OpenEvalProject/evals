@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors describe the current state and limitations of correlated mutation analysis (CMA) methods, noting that while these methods are increasingly powerful for predicting protein contacts, they require large MSAs and only a small number of top-ranking predictions are reliable. Historically, all CMA methods have relied exclusively on amino acid MSAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 accurately describe established knowledge about the field of CMA. These are well-documented limitations supported by the cited literature and represent the motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors review prior work on CMA methods, including the assumption that compensatory mutations occur at spatially close positions, sources of false positives (indirect interactions and common ancestry), and the development of methods like DCA, PSICOV, and Gremlin that remove transitive correlations. These newer methods achieve ~80% accuracy for top 0.1% predictions but drop to ~50% for top 1%, require large MSAs, and identify only ~25% of contacts in 100-residue proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C21 accurately summarize prior work with appropriate citations. The quantitative performance metrics and limitations are properly attributed to published studies (Mao et al., 2015; Faure et al., 2008), providing context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C50"
+    ],
+    "result": "The authors propose a novel premise that correlations strong at the amino acid level but weak at the codon level are more likely to reflect direct protein contacts, while correlations strong at both levels more likely reflect DNA/RNA interactions or common ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C24, C50 present the key conceptual premise but it remains an assumption without direct experimental validation. While the premise is illustrated in Figure 1 and tested indirectly through improved predictions, the biological mechanism is not demonstrated. Alternative explanations for why codon-level correlations might differ are not thoroughly explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C49"
+    ],
+    "result": "The authors demonstrate that combining amino acid and codon MSA data significantly improves contact prediction performance for OMES, MI, DCA, and PSICOV methods, but not for MIp. Removing the APC correction from PSICOV and including codon data yielded the best overall method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C25-C27, C29, C49 are well-supported by data in Figure 2 showing consistent improvements across multiple methods. The exception of MIp is explained by overlap between APC correction and codon data effects (C28-C31). Statistical significance is demonstrated in C35 with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors infer that there is overlap between background noise reduced by the APC term and codon data, with codon data being more advantageous for PSICOV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide a reasonable mechanistic explanation for why MIp shows no improvement and why PSICOV performs best without APC when codon data is included. This inference is supported by the empirical results in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors optimize the power parameter \u03b1 that determines relative weights of amino acid and codon correlations, finding method-dependent optimal values (\u03b1=2.5 for DCA and MI, \u03b1=1.7 for OMES, \u03b1=11.2 for PSICOV) that are stable across cross-validation, yielding improvements of 3.9%, 4.2%, 17.6%, and 1.13% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C69-C74 describe a systematic optimization with appropriate cross-validation (Figure 3A, Figure 3\u2014figure supplement 1). The stability analysis demonstrates the parameters are not overfit, though the high variance for PSICOV (C74) is appropriately noted and explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C84"
+    ],
+    "result": "The improvement achieved by incorporating codon data is statistically significant, with 81 out of 114 MSAs showing improved accuracy for DCA, as assessed by Wilcoxon signed-rank and sign tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C84 demonstrate statistical rigor with appropriate non-parametric tests shown in Figure 3B. The use of two complementary tests (one considering magnitude, one only direction) strengthens the conclusion of significant improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C63",
+      "C77"
+    ],
+    "result": "The authors compare two contact definitions and find that the C\u03b2-based definition (\u22648\u00c5) identifies a higher proportion of true physical contacts (30%) compared to the 'All' definition (10%), making it superior for identifying direct contacts when amino acid and codon data are combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C63, C77 are supported by systematic analysis of 2481 high-resolution structures (Figure 2\u2014figure supplement 2). The C\u03b2-based definition is shown to be more selective for true physical contacts (<3.5\u00c5), validating its use in the study and following CASP conventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors find that maximum improvement from combining amino acid and codon data occurs at specific inter-residue distances (5.5\u00c5 for PSICOV and DCA, 7\u00c5 for OMES, 4.5\u00c5 for MI), with improvement decreasing dramatically beyond ~10\u00c5 for DCA and OMES, supporting that the method works best for identifying true physical contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by systematic analysis across distance thresholds (Figure 4). The distance-dependence provides additional validation that the method preferentially identifies direct physical interactions rather than long-range correlations, consistent with the underlying premise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C82"
+    ],
+    "result": "Using Kex1\u0394p as a case study, the authors demonstrate that incorporating codon data enables prediction of long-range contacts between distant secondary structure elements (e.g., Thr148-Phe185, Ala186-Leu208, Leu190-Leu368) that are not predicted without codon data, with predictions being more spread throughout the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48, C53, C82 provide concrete examples supported by Figure 5 and Figure 5\u2014figure supplement 1. The case study effectively illustrates the practical value of the method for structure prediction by identifying long-range contacts that are most informative for determining protein fold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The proposed scoring scheme can be applied to different CMA methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is demonstrated by successful application to five different methods (OMES, MI, MIp, DCA, PSICOV), showing the generalizability of the approach across different correlation measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors suggest future work should examine alternative scoring schemes and test applications to protein-protein interaction prediction and machine learning feature selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C54-C55 appropriately identify limitations and future directions. These are reasonable suggestions for extending the work, acknowledging that the current scoring scheme may not be optimal and the approach may have broader applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "The authors describe their data collection and analysis methodology, including collection of 114 MSAs from Pfam with >2000 sequences and 200-500 residues, retrieval of coding sequences, alignment procedures, contact definitions, accuracy calculations using AUC, and validation using high-resolution crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68, C75-C76, C78-C81, C83 provide comprehensive methodological details with appropriate citations. The methods are clearly described and follow established practices in the field. The dataset size (114 MSAs, 86 for PSICOV) is substantial for validation.",
+    "result_type": "MINOR"
+  }
+]

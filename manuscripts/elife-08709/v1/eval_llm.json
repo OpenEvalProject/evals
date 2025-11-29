@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The Pikp-HMA domain selectively interacts with AVR-Pik alleles in yeast and in vitro, with binding affinities ranging from 31 nM (AVR-PikD) to no detectable binding (AVR-PikC). AVR-PikE and AVR-PikA show intermediate binding with apparent Kd values of 367 nM and 710 nM respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 provide converging evidence from multiple orthogonal assays (Y2H, analytical gel filtration, SPR) demonstrating selective binding of Pikp-HMA to AVR-Pik alleles. The quantitative binding data from SPR (C36-C39) is consistent with qualitative Y2H results (C31-C33) and gel filtration data (C34-C35), establishing a clear hierarchy of binding affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The crystal structure of the Pikp-HMA/AVR-PikD complex was solved at 1.6 \u00c5 resolution, revealing that AVR-PikD primarily interacts with one Pikp-HMA monomer (87.5% of buried surface area) through an intimate interface burying 18.7% of the effector's surface. Pikp-HMA adopts the canonical HMA fold but lacks metal binding, while AVR-PikD contains a \u03b2-sandwich structure with an N-terminal extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C53 describe the crystal structure determination and analysis with appropriate resolution (1.6 \u00c5) and detailed structural characterization. The structural data is internally consistent and provides quantitative metrics (buried surface areas, r.m.s.d. values) that support the described protein-protein interface. The absence of metal binding in Pikp-HMA is supported by both structural observation and sequence analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AVR-PikD shares structural homology with other effector proteins including AVR-Piz-t (r.m.s.d. 2.33 \u00c5) and ToxB from Pyrenophora tritici-repentis, despite having essentially no sequence identity. The structural similarity is limited to the \u03b2-sandwich fold, with the N-terminal extension of AVR-PikD being unique.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by structural comparison data using PDBeFold. The r.m.s.d. values and alignment statistics provide quantitative support for the structural similarity claims. The observation of structural conservation despite sequence divergence is a well-established phenomenon in protein evolution and is appropriately documented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "AVR-PikDHis46 is bound in a pocket on Pikp-HMA through specific hydrogen bonds/salt bridges with Ser218 and Glu230, with additional van der Waals interactions from Val232.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe specific molecular interactions at the binding interface supported by high-resolution structural data (Figure 3\u2014figure supplement 3). The detailed atomic-level interactions are consistent with the 1.6 \u00c5 resolution structure and provide the molecular basis for subsequent mutagenesis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Structure-guided mutations in AVR-PikD differentially affect binding to Pikp-HMA: His46Glu, Arg64Ala, and Asp66Arg abolish binding, while Ile49Glu and Pro47Ala/Gly48Asp maintain binding with Kd values of 99 nM and 83 nM respectively. Ala67Asp shows intermediate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 demonstrate structure-function relationships through rational mutagenesis validated by both Y2H and SPR assays. The results are internally consistent between the two methods and align with predictions from the crystal structure. The quantitative SPR data provides robust support for the differential effects of mutations on binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Rice cultivar K60 (Pikp+) shows differential resistance to M. oryzae expressing different AVR-Pik variants: resistant to AVR-PikD, intermediate to AVR-PikE, and susceptible to AVR-PikDHis46Glu, AVR-PikDArg64Ala, and AVR-PikDAsp66Arg mutants, but resistant to AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 demonstrate that in vitro binding correlates with in planta resistance phenotypes. The pathogenicity assays are appropriately controlled (Nipponbare as susceptible control) and RT-PCR confirms effector expression. The correlation between binding affinity and resistance phenotype provides strong functional validation of the structural and biochemical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Co-expression of Pikp-1, Pikp-2, and AVR-PikD is required for cell death in N. benthamiana, with no significant response from individual proteins, protein pairs, or co-expression with other AVR-Pik alleles (AVR-PikE, AVR-PikA, AVR-PikC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 establish the specificity of the Pikp immune response through systematic testing of all protein combinations. The requirement for all three components (Pikp-1, Pikp-2, and AVR-PikD) and the lack of response with other AVR-Pik alleles demonstrates allele-specific recognition. Western blots confirm protein expression, addressing potential concerns about negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "AVR-PikD mutations that abolish binding to Pikp-HMA (His46Glu, Arg64Ala, Asp66Arg, Ala67Asp) fail to elicit cell death in N. benthamiana when co-expressed with Pikp-1 and Pikp-2, while mutations maintaining binding (Ile49Glu, Pro47Ala/Gly48Asp) still promote cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide functional validation in the heterologous N. benthamiana system that correlates with in vitro binding data and rice resistance phenotypes. The correlation between binding affinity and cell death response across multiple mutants provides strong evidence for direct recognition as the mechanism of immune activation. Note that Ala67Asp shows a discrepancy between N. benthamiana (no response) and rice (resistance), which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "AVR-PikD is the ancestral AVR-Pik allele with His46 being unique to this variant. The His46Asn polymorphism (giving AVR-PikE) is sufficient to prevent cell death in N. benthamiana, limit resistance in rice, and reduce binding affinity by an order of magnitude (from 31 nM to 367 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 integrate phylogenetic analysis with functional data to propose an evolutionary model of pathogen evasion. The single amino acid change at position 46 shows consistent effects across all assays (in vitro binding, rice resistance, N. benthamiana cell death), providing strong evidence for this residue as a key determinant of recognition specificity. The phylogenetic claim (C75) is supported by citation to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Amino acid variation between Pik-1 alleles is concentrated in the HMA domain, with key differences at positions 230 (Glu in Pikp-1, Val in Pikm-1 and Pik*-1) and 222 (Val in Pikp-1, Ala in Pikm-1 and Pik*-1) that directly interact with or are adjacent to AVR-PikDHis46.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by sequence analysis and structural mapping. The identification of polymorphic residues at the binding interface provides a structural basis for understanding allele-specific recognition patterns. However, the authors appropriately note that these differences alone do not fully explain the recognition specificities of different Pik alleles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Recognition of effectors by rice NLRs occurs through direct binding to HMA domains, which can be positioned at different locations within NLR proteins (between CC and NB-ARC in Pik-1, after LRR in RGA5 and RRS1), suggesting that integrated domain position is flexible while maintaining recognition function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 synthesize findings from the current study with prior work on RGA5 and RRS1 to propose a general principle about integrated domain function in NLRs. The claims are appropriately supported by citations and the current structural data. This represents a conceptual advance in understanding NLR architecture and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Rice blast disease causes significant global food security impacts, with potential loss of rice to feed 212-742 million people annually and up to 100% yield loss in infected areas. Rice is a staple food for more than half the world's population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the agricultural and societal importance of the research through citations to prior literature. These background claims appropriately contextualize the significance of understanding rice blast resistance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "NLRs are conserved plant immune receptors with multi-domain architecture (CC/TIR, NB-ARC, LRR) that detect pathogen effectors, often functioning in pairs with one NLR containing integrated domains that directly bind effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 provide established background on NLR biology supported by extensive citations. These claims accurately summarize the current understanding of NLR structure and function, providing necessary context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Approximately 100 rice NLRs confer resistance to M. oryzae (23 cloned), but only six cognate effectors have been identified. The RGA4/RGA5 and Pik-1/Pik-2 NLR pairs recognize effectors through HMA domains positioned at different locations within the NLR architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 establish the specific background for the rice-M. oryzae system through citations to prior work. These claims accurately represent the state of knowledge and identify the gap (lack of structural information) that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Both AVR-Pik and Pik-1 HMA domains exhibit polymorphisms between isolates and cultivars. The AVR-PikD/Pikp-1 interaction is thought to be ancestral, with Pikp cultivars resistant to AVR-PikD but susceptible to other AVR-Pik alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 establish the co-evolutionary context for the study through citations to prior work. These claims provide important background on allele specificity that motivates the structural and functional analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior to this study, AVR-Piz-t was the only M. oryzae effector with known structure, and no structural information existed for rice NLR domains or for direct effector-NLR recognition complexes from any plant system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 establish the novelty of the structural work by documenting the absence of prior structural information. These claims are verifiable through literature searches and appropriately identify the knowledge gap addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Pikp-HMA shows closest structural homology to yeast Ccc2A HMA domain (r.m.s.d. 1.58 \u00c5 over 72 residues). Unlike typical HMA domains that bind metals via conserved Cys residues, Pikp-HMA lacks these conserved residues and does not bind metal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by structural comparison and sequence analysis. The loss of metal-binding function in Pikp-HMA represents a functional divergence from canonical HMA domains, consistent with its role in protein-protein recognition rather than metal transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Protein structures have been deposited in the PDB with accession numbers 5a6p (Pikp-HMA) and 5a6w (Pikp-HMA/AVR-PikD complex).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 documents data deposition, which is verifiable and represents good scientific practice for reproducibility. The PDB accession numbers allow independent validation of the structural findings.",
+    "result_type": "MINOR"
+  }
+]

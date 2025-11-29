@@ -1,0 +1,1976 @@
+{
+  "submission": {
+    "id": "c32e8ded-a864-43ad-ab4b-99ed8b87d96b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:55:05.559309Z",
+    "updated_at": "2025-11-29T03:55:05.559309Z"
+  },
+  "content": [
+    {
+      "id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "submission_id": "c32e8ded-a864-43ad-ab4b-99ed8b87d96b",
+      "content_type": "manuscript",
+      "content_text": "# A distinct p53 target gene set predicts for response to the selective p53\u2013HDM2 inhibitor NVP-CGM097\n\n## Authors\n\n- S\u00e9bastien Jeay<sup>1</sup> \u2020\n- Swann Gaulis<sup>1</sup>\n- St\u00e9phane Ferretti<sup>1</sup>\n- Hans Bitter<sup>2</sup>\n- Moriko Ito<sup>1</sup>\n- Th\u00e9r\u00e8se Valat<sup>1</sup>\n- Masato Murakami<sup>1</sup>\n- Stephan Ruetz<sup>1</sup>\n- Daniel A Guthy<sup>1</sup>\n- Caroline Rynn<sup>3</sup>\n- Michael R Jensen<sup>1</sup>\n- Marion Wiesmann<sup>1</sup>\n- Joerg Kallen<sup>4</sup>\n- Pascal Furet<sup>5</sup>\n- Fran\u00e7ois Gessier<sup>5</sup>\n- Philipp Holzer<sup>5</sup>\n- Keiichi Masuya<sup>5</sup>\n- Jens W\u00fcrthner<sup>6</sup>\n- Ensar Halilovic<sup>7</sup>\n- Francesco Hofmann<sup>1</sup>\n- William R Sellers<sup>2</sup>\n- Diana Graus Porta<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Disease Area Oncology Novartis Institutes for BioMedical Research Basel Switzerland\n2. Disease Area Oncology Novartis Institutes for BioMedical Research Cambridge United States\n3. Metabolism and Pharmacokinetics Novartis Institutes for BioMedical Research Basel Switzerland\n4. Center of Proteomic Chemistry Novartis Institutes for BioMedical Research Basel Switzerland\n5. Global Discovery Chemistry Novartis Institutes for BioMedical Research Basel Switzerland\n6. Translational Clinical Oncology Novartis Institutes for BioMedical Research Basel Switzerland\n7. Translational Clinical Oncology Novartis Institutes for BioMedical Research Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiomarkers for patient selection are essential for the successful and rapid development of emerging targeted anti-cancer therapeutics. In this study, we report the discovery of a novel patient selection strategy for the p53\u2013HDM2 inhibitor NVP-CGM097, currently under evaluation in clinical trials. By intersecting high-throughput cell line sensitivity data with genomic data, we have identified a gene expression signature consisting of 13 up-regulated genes that predicts for sensitivity to NVP-CGM097 in both cell lines and in patient-derived tumor xenograft models. Interestingly, these 13 genes are known p53 downstream target genes, suggesting that the identified gene signature reflects the presence of at least a partially activated p53 pathway in NVP-CGM097-sensitive tumors. Together, our findings provide evidence for the use of this newly identified predictive gene signature to refine the selection of patients with wild-type p53 tumors and increase the likelihood of response to treatment with p53\u2013HDM2 inhibitors, such as NVP-CGM097.\n\n## Introduction\n\nTP53 is a tumor suppressor gene that functions to prevent cancer by allowing cells to recover from various stress insults such as DNA damage or by triggering their elimination when the extent of the damage is beyond repair. In its normal state, the p53 transcription factor acts in response to oncogenic or other stress signals to induce or repress a variety of target genes involved in cell cycle control, apoptosis, DNA repair, and cellular senescence (Vogelstein et al., 2000; Harris and Levine, 2005). In normal cells, the levels of p53 protein are tightly regulated by the E3 ubiquitin ligase HDM2 that targets p53 for ubiquitin-dependent proteasome degradation (Haupt et al., 1997; Kubbutat et al., 1997; Marine and Lozano, 2010). In addition, HDM2 binding to p53 blocks its transactivation domain preventing p53 transcriptional activation of its target genes (Momand et al., 1992). HDM2 is itself a p53 target gene and hence acts as part of a negative feedback loop which maintains low cellular concentrations of both partners under non-stressed conditions (Picksley and Lane, 1993; Wu et al., 1993; Freedman et al., 1999; Michael and Oren, 2003; Bond et al., 2005).\n\nApproximately, 50% of all tumors display inactivating mutations in p53 (Hainaut and Hollstein, 2000) leading to its partial or complete loss of function (Vogelstein et al., 2000; Levine and Oren, 2009). In many cancers where TP53 is not mutated, the function of the p53 pathway is often compromised through other mechanisms, including HDM2 gain of function by amplification and/or overexpression (Bond et al., 2005; Vousden and Lane, 2007; Brown et al., 2009; Wade et al., 2010). In these instances blocking the interaction between p53 and HDM2 is hypothesized to stabilize p53 leading to pathway activation and growth arrest and/or apoptosis in cancer. Based on this hypothesis and the structural elucidation of the p53\u2013HDM2 interaction, several HDM2 small molecule inhibitors have been developed and are now in clinical trials. Indeed, prior work has shown that in human cancer cell lines or xenografts such inhibitors can elicit potent anti-tumor effects as a result of induction of cell cycle growth arrest and an apoptotic response (Poyurovsky and Prives, 2006; Brown et al., 2009; Cheok et al., 2011).\n\nHere, we describe a novel and highly specific p53\u2013HDM2 inhibitor, NVP-CGM097, currently in phase I clinical testing (NCT01760525) and a close analog NVP-CFC218 that are both based on an isoquinolinone scaffold. In order to identify patients most likely to respond to inhibitors of HDM2, we sought to develop patient selection biomarkers based on large-scale cancer cell line profiling. The analysis of sensitivity profiles across 356 cell lines led to the confirmation that p53 mutant cancer cells fail to respond to HDM2 inhibitors. However, among wild-type p53 cancer cells sensitivity was heterogeneous and not solely associated with HDM2 gene amplification. Using an unbiased discovery approach, the expression of 13 genes (including HDM2) was found to have robust and superior predictive value for response compared to p53 wild-type status alone. This novel 13-gene signature was validated both in vitro and in vivo, and has the potential to improve the selection strategy of patients bearing p53 wild-type tumors who are most likely to respond to treatment with NVP-CGM097. Surprisingly, all 13 genes were p53 target genes suggesting that cells harboring at least partially activated p53 are those that are most susceptible to further p53 activation upon disruption of the p53\u2013HDM2 interaction.\n\n## Results\n\n### Activity of NVP-CGM097 and NVP-CFC218 in biochemical and cellular assays\n\nNVP-CGM097 and NVP-CFC218 are substituted 1,2-dihydroisoquinolinone derivatives that were designed to mimic three key hydrophobic interactions made by p53 residues Phe19, Trp23, and Leu26 in the HDM2 pocket (Kussie et al., 1996; Garc\u00eda-Echeverr\u00eda et al., 2000; Furet et al., 2012) (Figure 1A). The dihydroisoquinolinone core occupies the center of the cleft and allows for the positioning of appropriate substituents in this sub-pocket (manuscript in preparation).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig1-v3.jpg)\n\n**Figure 1.:** (A) Chemical structure of NVP-CGM097 and NVP-CFC218. (B) In vitro activity of NVP-CFC218 and NVP-CGM097 in TR-FRET binding assay (a) and cellular proliferation assay in human cancer cell lines (b). Data are expressed as concentration causing 50% inhibition and shown as mean \u00b1 SD from multiple (n \u2265 8) independent experiments. (c) Selectivity is determined by the ratio of GI50 obtained using the HCT-116 p53-null and the HCT-116 p53WT isogenic pair of cell lines. (d) Selectivity is determined by the ratio of GI50 obtained using SAOS-2 (p53-null) and SJSA-1 (p53WT and HDM2-amplified) osteosarcoma pair of cell lines. (C and D) Scatter plot showing IC50 values expressed in \u03bcM of NVP-CFC218 in cell viability assays of p53 wild-type cell lines (C) and p53 mutated cell lines (D), colored by their response to NVP-CFC218. The data used to generate these plots, as well as cell line identity is available in Figure 1\u2014source data 1. (E) Contingency table indicating the total number of sensitive and insensitive cell lines to NVP-CFC218. The p-value of 5.1 \u00d7 10\u221223 shows a significant association between sensitivity to NVP-CFC218 and TP53 wild-type status. (F) Main enriched compound target p-values from the Global Compound Selectivity Analysis. p-values are minus log10 transformed. The red color refers to compounds that are more selective in the wild-type p53 (p53WT) strata than in the mutated p53 (p53MUT) strata. The blue color indicates the reverse profile. Brighter colors indicate which target classes pass the 0.25 FDR cut-off. The length of each red/blue segment corresponds to the proportion of p53WT selective/p53MUT selective compounds in each target class.\n\nThe ability of NVP-CFC218 and NVP-CGM097 to disrupt the p53\u2013HDM2 and p53\u2013HDMX complexes was assessed in purified biochemical assays using time-resolved fluorescence resonance energy transfer (TR-FRET) to detect interactions between the N-terminal portion of HDM2 (amino acid 2 to 188) or HDMX (amino acid 2 to 185) and the human p53-derived peptide (amino acid 18 to 26). Both NVP-CFC218 and NVP-CGM097 displaced the p53 peptide from the surface of HDM2 with IC50 values of 1.6 \u00b1 0.2 nM and 1.7 \u00b1 0.1 nM, respectively. In contrast, both compounds were substantially less active against HDMX with IC50 values of 1300 \u00b1 100 nM and 2000 \u00b1 300 nM. These data show that NVP-CFC218 and NVP-CGM097 are specific inhibitors of the p53\u2013HDM2 interaction (Figure 1B).\n\nIn measures of cellular viability, NVP-CFC218 and NVP-CGM097 elicited strong anti-proliferative effects in the HCT116 p53WT cell line and showed 34- and 35-fold selectivity, respectively, compared to an isogenic HCT116 cell line in which the TP53 gene was deleted by homozygous recombination. Similarly, both compounds blocked proliferation of the osteosarcoma HDM2-amplified SJSA-1 cell line with 56- and 58-fold selectivity, respectively, compared to a control p53-null osteosarcoma SAOS-2 cell line (Figure 1B). These results indicate that NVP-CGM097 and NVP-CFC218 inhibit cell proliferation in a p53-dependent manner with a comparable potency and selectivity in vitro.\n\n### Pharmacological activity of p53\u2013HDM2 inhibitors in cancer cell lines\n\nIn order to investigate the activity of HDM2 inhibitors in preclinical models of cancer and to ultimately identify biomarkers predictive of response, we tested the anti-proliferative activity of NVP-CFC218 in a panel of 477 cell lines from the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012). After quality control and manual curation of the dose response curves, a total of 356 cell lines met the cell viability quality criteria for NVP-CFC218 and were used for subsequent analyses. Cell lines were partitioned into sensitive and insensitive groups based on compound potency (IC50). A rank-order plot of IC50s for NVP-CFC218 showed a natural cut-off of 4 \u03bcM, which was used to categorize cell lines. Forty seven cell lines were categorized as sensitive and 309 cell lines as insensitive. For the sensitive cell lines, the maximal compound effect level (Amax) was \u2264 \u221250% (Figure 1C,D, Figure 1\u2014source data 1). As expected, based on the mechanism of action of NVP-CFC218, most of the sensitive cell lines harbored wild-type p53 (n = 43) and this association was statistically significant by Fisher's exact test (p-value = 5.1 \u00d7 10\u221223) (Figure 1E). Moreover, repeat cell proliferation assays with the four sensitive cell lines bearing mutations in TP53 showed them to be insensitive (P12-ICHIKAWA, KBMC-2, and Hs 294T with IC50 > 8 \u00b5M) or the reported mutation did not lead to complete p53 loss of function (NCI-H2122 carries both Q16L and C176F p53 mutations which are categorized as neutral and partially deleterious mutations by SIFT, respectively).\n\nA parallel, unbiased orthogonal analysis of cell line sensitivities to over 2000 compounds, grouped by their mechanism of action (or main target), revealed that p53\u2013HDM2 inhibitors including NVP-CFC218 were the most selectively enriched compound class in the p53 wild-type cell line set as compared to the p53 mutant set, with both a false discovery rate (FDR) and a p-value below the cut-offs of 0.25 and 0.05, respectively (Figure 1F).\n\nInterestingly, among all p53 wild-type cell lines for which compound data were available, 57% scored insensitive to NVP-CFC218 (Figure 1C). These results suggest that a patient selection strategy based only on the p53 status of the tumor will not optimally enrich for patients with a high likelihood of responding to this targeted therapy. Hence, there is a need for more sensitive and predictive biomarkers for p53\u2013HDM2 inhibitors.\n\n### Establishing a predictive model for p53\u2013HDM2 inhibitor sensitivity in cell lines\n\nWe utilized a similar approach as described previously (Barretina et al., 2012) to identify molecular correlates of compound sensitivity to NVP-CFC218. We first applied a variance filter to remove half of the genes with the lowest variance, yielding 9053 genes. The group of sensitive cell lines (n = 47) was then compared to the group of most insensitive ones for which IC50 and Amax of NVP-CFC218 was \u22658 \u03bcM and \u2264 \u221250%, respectively (n = 204). To build a predictive model, we used bootstrapping, whereby the cell lines were randomly split into training and testing sets. Within each bootstrapped data split where 2/3 of the data was used for training and 1/3 for testing, we used the Wilcoxon uni-variate test to select features that were significantly differentially expressed between sensitive and insensitive lines. Using the selected features, a na\u00efve Bayes classifier was trained to predict sensitivity status. The number of features selected varied from 5 to 100 and for each, 20 bootstrapped data splits were conducted. We then assessed the classifier performance based on accuracy, sensitivity, and specificity of the predictions on the test data.\n\nThe classification accuracy, averaged over twenty bootstraps, was generally higher than 80% with a maximum of \u223c93% when 17 genes were selected (Figure 2A, red dot). The average classification accuracy with the fewest features within 1 SEM of the maximum was when 13 genes were selected. Class-level performance metrics, such as sensitivity and specificity, also showed that the 13-gene solution performed similarly to the optimum or optimally (Figure 2\u2014figure supplement 1; Figure 2\u2014source data 1). Sensitivity was the highest for the 13-gene solution, while the highest specificity was observed with 17 genes. However, the 13-gene solution was within 1 SEM of the best specificity. Thus, the 13-gene classifier was found to be the optimal solution, yielding the following performance statistics: 93% accuracy (\u00b12.3%), 87% sensitivity (\u00b110%), and 94% specificity (\u00b12.8%).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig2-v3.jpg)\n\n**Figure 2.:** (A) Prediction accuracy estimation by bootstrapping analysis upon increasing feature set size. Estimates are averaged over 20 bootstrapping repeats. The maximum accuracy is observed for 17 features (red dot). Sensitivity and specificity are shown in Figure 2\u2014figure supplement 1. The averaged data used to generate the accuracy, sensitivity and specificity plots is available in Figure 2\u2014source data 1. (B) Feature occurrence frequencies of 13 feature selections in 100 bootstrapping repeats. Fifty five features were selected at least once. The 13 most frequently occurring features (red dots) were selected more than 30 times. (C) ROC curves for the three predictive models under comparison, i.e., the p53 mutation status, the 215-feature and the 13-gene signature models. (D) Precision-Recall plot for the 13-gene signature. Five curves are typically shown since cross-validation was repeated five times. (E) Performance estimates of the three compared predictive models: AUC (Area Under the Curve, from the ROC curve shown in C), Sensitivity (fraction of correctly predicted sensitive cell lines), Specificity (fraction of correctly predicted insensitive cell lines), PPV (positive predicted value, fraction of sensitive cell lines predicted as such), and NPV (negative predictive value, fraction of insensitive cell lines predicted as such). Measures are averaged over the 5 iterations of 5-fold cross-validations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Estimates are averaged over 20 bootstrapping repeats. Maximum sensitivity is observed for 13 features (sensitivity plot, red dot). Maximum specificity is observed for 17 features (specificity plot, red dot).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The measures of prediction accuracy are calculated restricted to the wild-type TP53 subset of CCLE cell lines (n=68). (A) ROC curves for the 215-feature set and the 13-gene signature predictive models. (B) Precision-Recall plot for the 13-gene signature. Five curves are typically shown since cross-validation was repeated 5 times. (C) Performance estimates of the 13-gene signature and TP53 mutation status as predictive models.\n\nAfter determining the number of genes to include in the model and assessing the prediction accuracy, we next wanted to select the 13 genes to include in our final model. To this end, we ran 100 bootstraps, selecting 13 genes based on the training set within each bootstrap, and tabulated the number of times each gene was selected. Fifty five different features were selected at least once and the top 13 features were selected more than 30 times. The 11 most frequent features were selected in more than 70 of the 100 bootstrapped selections, and the 9 most frequent ones appeared in more than 90 selections (Figure 2B).\n\nThe 13 top-ranking genes were strongly enriched in known p53 transcriptional target genes (Table 1). Specifically, 12 out of the 13 expression features were genes whose expression has been shown to be regulated by p53 (Barak et al., 1993; el-Deiry et al., 1993; Miyashita et al., 1994; Okamoto and Beach, 1994; Varmeh-Ziaie et al., 1997; Tanaka et al., 2000; Adimoolam and Ford, 2002; Liu and Chen, 2002; Tan and Chu, 2002; Budanov et al., 2004; He and Sun, 2007; Kawase et al., 2008; Xiong et al., 2011). Since no annotation for the 13th signature member was available at the time of the signature development, and to be consistent with the bootstrapping results, we replaced the 13th signature member by the 14th most frequently selected feature, TNFRSF10B, another p53 transcriptional target (Wu et al., 1997). Interestingly, all genes of the final gene signature were up-regulated in the sensitive cell lines (Table 1), implying that prior to compound treatment, a subset of p53 target genes is transcriptionally activated in the NVP-CFC218-sensitive cell lines.\n\n**Table 1.**\n 13-gene signature selected for the sensitivity prediction to p53\u2013HDM2 inhibitors\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Features</th>\n      <th>Fold change</th>\n      <th>Wilcoxon p-value</th>\n      <th>Proposed function in p53 pathway</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Expr. HDM2</td>\n      <td>2.18</td>\n      <td>3.09 \u00d7 10\u221214</td>\n      <td>Negative feedback loop</td>\n    </tr>\n    <tr>\n      <td>Expr. CDKN1A</td>\n      <td>3.88</td>\n      <td>3.76 \u00d7 10\u221211</td>\n      <td>Cell cycle/senescence</td>\n    </tr>\n    <tr>\n      <td>Expr. ZMAT3</td>\n      <td>2.81</td>\n      <td>1.20 \u00d7 10\u221210</td>\n      <td>Positive feedback loop</td>\n    </tr>\n    <tr>\n      <td>Expr. DDB2</td>\n      <td>2.55</td>\n      <td>1.22 \u00d7 10\u221210</td>\n      <td>DNA repair</td>\n    </tr>\n    <tr>\n      <td>Expr. FDXR</td>\n      <td>2.42</td>\n      <td>1.08 \u00d7 10\u221209</td>\n      <td>Apoptosis</td>\n    </tr>\n    <tr>\n      <td>Expr. RPS27L</td>\n      <td>1.97</td>\n      <td>1.23 \u00d7 10\u221209</td>\n      <td>Positive feedback loop</td>\n    </tr>\n    <tr>\n      <td>Expr. BAX</td>\n      <td>2.12</td>\n      <td>1.84 \u00d7 10\u221209</td>\n      <td>Apoptosis</td>\n    </tr>\n    <tr>\n      <td>Expr. RRM2B</td>\n      <td>2.06</td>\n      <td>4.25 \u00d7 10\u221209</td>\n      <td>DNA repair</td>\n    </tr>\n    <tr>\n      <td>Expr. SESN1</td>\n      <td>2.27</td>\n      <td>1.04 \u00d7 10\u221208</td>\n      <td>Oxidative stress</td>\n    </tr>\n    <tr>\n      <td>Expr. CCNG1</td>\n      <td>1.69</td>\n      <td>4.81 \u00d7 10\u221208</td>\n      <td>Cell cycle</td>\n    </tr>\n    <tr>\n      <td>Expr. XPC</td>\n      <td>1.62</td>\n      <td>1.56 \u00d7 10\u221207</td>\n      <td>DNA repair</td>\n    </tr>\n    <tr>\n      <td>Expr. TNFRSF10B</td>\n      <td>1.91</td>\n      <td>3.30 \u00d7 10\u221206</td>\n      <td>Apoptosis</td>\n    </tr>\n    <tr>\n      <td>Expr. AEN</td>\n      <td>1.46</td>\n      <td>3.30 \u00d7 10\u221206</td>\n      <td>Apoptosis</td>\n    </tr>\n  </tbody>\n</table>\n\n_Expr: gene-level expression values generated by the Affymetrix GeneChip technology with the HG-U133 plus 2 arrays, summarized according to the RMA normalization method._\n\n### Comparing the 13-gene signature to p53 mutation at predicting p53\u2013HDM2 inhibition sensitivity\n\nAfter having initially restricted the analysis to gene expression, we evaluated all feature types, including copy number and mutation status in addition to gene expression. The same two-class comparison as before yielded a total of 215 significant features from multiple types. The TP53 mutation status was the feature most associated with response to NVP-CFC218 (p-value = 2.46 \u00d7 10\u221226), with an odds-ratio of 0.013.\n\nTo further evaluate the 13-gene signature model, we compared its prediction performance to that of both \u2018TP53 mutation status\u2019 and a na\u00efve Bayes classifier trained on the \u2018215-feature set\u2019. We compared ROC (receiver operating characteristic) curves based on the predictions made on the test sets across 5 cross-validation runs for the models based on the 215-feature set, the 13-gene signature and the predictions given by TP53 mutation status\u00a0(i.e. the presence of a TP53\u00a0mutation predicts insensitivity, while a wild-type genotype predicts sensitivity). The AUC for the 13-gene signature was higher than for 215-feature set model: 0.947 vs 0.855 (Figures 2C\u00a0and\u00a0E). Furthermore, the precision\u2013recall curves for the 13-gene signature showed that an 80% true sensitive prediction rate could be achieved while recalling more than 90% of the truly NVP-CFC218-sensitive cell lines (Figures 2D\u00a0and\u00a0E). The class-level performance measures showed that the 13-gene signature provided a substantial improvement in predicting response to NVP-CFC218 in particular when performance was evaluated by positive predictive value (PPV) (Figure 2E): 76% for the \u201813-gene signature\u2019 vs 59% for the \u2018215-feature set\u2019 vs 63% for \u2018TP53 mutation status\u2019. The enrichment of response when using the 13-gene signature and associated predictive model as a sample stratification strategy was also strongly significant when compared to the baseline response rate without prior stratification, estimated from the NVP-CFC218 sensitivity data as 19%.\n\nAdditionally in a p53 wild-type background (n=68), the 13-gene signature was compared to the p53 mutation model (Figure 2\u2014figure supplement 2). Since in this comparison, the p53 model does not predict any insensitive cell lines, no AUC or NPV can be calculated. The table in Figure 2\u2014figure supplement 2C shows a sensitivity of 94.9%, a specificity of 79.2%, a PPV of 88.7%,\u00a0and a NPV of 90% for the 13-gene signature. In comparison, p53 mutation model has a sensitivity of 100%, a specificity of 0%, and a PPV of 63.2%.\u00a0As before, the 13-gene model outperforms the p53 mutation model in terms of PPV (Figure 2\u2014figure supplement 2C).\n\nThus, these results show that the 13-gene signature provides an improvement in response prediction to drug treatment over both the TP53 mutation status and the larger signature consisting of 215 significant features.\u00a0Moreover, these results suggest that the 13-gene signature\u00a0has utility in TP53 wild-type genetic backgrounds.\n\n### Predicting HDM2 inhibitor sensitivity in independent cell lines and primary tumors\n\nThe predictive value of the 13-gene signature was subsequently tested in a second, independent data set of cell lines representative\u00a0of multiple cancer types representative of the lineages included in the first proliferation screen. Cells were assayed for their sensitivity to both p53\u2013HDM2 inhibitors NVP-CGM097 (n = 52) and NVP-CFC218 (n = 38) in in vitro proliferation assays. Because of the manual assay format differing slightly from the high-throughput assay, the cut-off for sensitivity was fixed at IC50 \u2264 3 \u00b5M for both p53\u2013HDM2 inhibitors and predictions of sensitivity for every cell line were derived using the 13-gene signature. As expected, cells that were indeed sensitive or insensitive to NVP-CGM097 were similarly sensitive or insensitive to NVP-CFC218, except for one cell line (COLO-829) (Figure 3\u2014source data 1).\n\nOverall, 36/52 and 26/38 cell lines were predicted to be sensitive to NVP-CGM097 and NVP-CFC218, respectively, while 27/52 and 23/38 were truly sensitive (Figure 3A,B). While we observed a slight decrease in specificity relative to the bootstrap estimate, sensitivity measures were 89% and 91% (Figure 3C), respectively, which is comparable to the sensitivity estimate obtained by bootstrapping the predictive model training data (87.3% \u00b1 10.4%, see Figure 2\u2014source data 1). Noticeably, PPV values for both drugs were higher than basal response rate (Figure 3C). Taken together these data validate the 13-gene signature as a robust predictor for sensitivity to both NVP-CGM097 and NVP-CFC218 p53\u2013HDM2 inhibitors in an external sample set.\u00a0We also determined the performance of the 13-gene signature in pre-selected cells based upon the presence of wild-type p53. As shown in Figure 3\u2014figure supplement 1, 35/42 and 25/30 wild-type p53 cell lines were predicted to be sensitive to NVP-CGM097 and NVP-CFC218, respectively, while 25/35 and 21/25 were truly sensitive. PPV values were moderately higher than the basal response rate by 5 to 7%, and the relatively small number of insensitive p53WT cell lines in this external set greatly impaired the specificity and NPV values (Figure 3\u2014figure supplement 1C).\u00a0Taken together, these results indicate the 13-gene signature to be a better predictive feature than TP53 mutation status in unselected cell lines. In addition, our results in both the discovery (Figure 2) and the validation sets (Figure 3) suggest the 13-gene\u00a0signature may improve the response rate in wild-type p53 pre-selected cell lines .\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig3-v3.jpg)\n\n**Figure 3.:** A total of 52 or 38 cell lines were tested against NVP-CGM097 (A) or NVP-CFC218 (B), respectively, in a 3-day proliferation assay. Sensitivity call for each compound was applied according to a cut-off of 3 \u00b5M. Cells that were predicted as sensitive are shown in pink, while the ones predicted as insensitive are shown in blue. The data used to generate the waterfall plots and cell line details are available in Figure 3\u2014source data 1. Performance values of the 13-gene signature were derived from this experiment, and are shown in (C).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The same visualization as in Figure 3 is shown restricted to the wild-type p53 cell lines. A total of 42 or 30 p53WT cell lines were tested against NVP-CGM097 (A) or NVP-CFC218 (B), respectively, in a 3-day proliferation assay. The data used to generate the waterfall plots and cell line details are available in\u00a0Figure 3\u2014source data 1. Performance values of the 13-gene signature were derived from this experiment, and are shown in (C).\n\nGiven the role of p53 in responding to cellular stress, an obvious concern would be that this signature might simply be reflective of cells undergoing cellular stress during in vitro culture. In order to exclude this possibility, we assessed the presence of the signature in primary human tumor samples. For this purpose, we used the 13-gene signature, associated with the na\u00efve Bayes predictive model trained on cell line data, to interrogate a collection of \u223c21,300 human tumor samples for which the whole genome expression profiles are available. Here, we reasoned that the proportion of samples of any given lineage that scored positively for the signature would be a measure of the concordance between cell line expression data and primary human tumor data. The specific proportion of any given lineage among primary human tumor samples scoring positive for the presence of the 13-gene signature (Figure 4A) was found to be very similar to the lineage proportions of signature positive, sensitive cell lines in the CCLE (Figure 4B), as probed by the NVP-CFC218 chemical sensitivity experiment described above. These data suggest that the 13-gene signature is not likely an artifact of the in vitro culture. In keeping with this observation, the 13-gene signature identified a fraction of predicted sensitive human primary tumor samples within our patient-derived tumor xenograft (PDX) collection (n = 503) (Figure 4C), thus allowing the selection of models for further in vivo validation of its predictive power. In summary, these analyses provide an estimation of the prevalence of 13-gene signature positivity across various cancer indications and underscore additional cancer types with high signature positivity, such as hepatocellular carcinoma and renal cell carcinoma that may have been underrepresented in the in vitro cell line profiling approach.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig4-v3.jpg)\n\n**Figure 4.:** (A) Fraction of human primary tumors predicted sensitive by the 13-gene signature. Samples are grouped by primary site. Expression data from 21,300 human primary tumors were compiled and only primary sites consisting of more than 50 samples were included in the analysis. The primary site nomenclature is based on the COSMIC Classification System. (B) Correlation between the fraction of human primary tumor samples predicted sensitive and the observed sensitivity ratio in the CCLE cell line data. (C) Correlation between the sensitivity predictions from the human primary tumor sample collection and the patient-derived tumor xenograft model collection. Human primary tumor samples, patient-derived tumor xenografts, and CCLE cell lines are organized by lineage. The dashed line corresponds to the identity line.\n\n### Predicting sensitivity to NVP-CGM097 in patient-derived tumor xenograft models\n\nTo further assess the predictive performance of the 13-gene signature, tumor response in vivo was tested across a set of PDX models from indications identified from the predictions described above (Figure 4C).\n\nThese in vivo experiments were performed with NVP-CGM097, owing to its superior pharmacokinetic properties and oral bioavailability as compared to NVP-CFC218 (Table 2). First, the pharmacodynamic effects and optimal daily dose of NVP-CGM097 were determined in the cell line-derived SJSA-1 osteosarcoma xenograft model that harbors an amplification of the HDM2 gene. A single oral dose of NVP-CGM097, 100 mg/kg, led to stabilization of p53 and elevation of p53 target genes such as CDKN1A (p21) at the mRNA level (Figure 5A, left) and at the protein level (Figure 5A, right). Treatment of SJSA-1 xenografted tumors with NVP-CGM097 led to dose-dependent tumor growth inhibition with 65% tumor regression at 100 mg/kg daily (Figure 5B, left) and was well tolerated as measured by body weight (Figure 5B, right). The anti-tumor activity of NVP-CGM097 correlated well with a dose-dependent induction in tumors of p21 and HDM2 at the mRNA level and/or protein levels (Figure 5C,D). Thus, based on these results, the dose and schedule chosen for the follow up in vivo validation of the 13-gene signature was established at 100 mg/kg NVP-CGM097 given orally, once daily.\n\n**Table 2.**\n PK parameters of NVP-CFC218 and NVP-CGM097 in preclinical species\n\n\n<table>\n  <thead>\n    <tr>\n      <th>PK parameters</th>\n      <th>Mouse</th>\n      <th>Rat</th>\n      <th>Dog</th>\n      <th>Monkey</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"5\">NVP-CFC218</td>\n    </tr>\n    <tr>\n      <td>CL (mL/min.kg)</td>\n      <td>9</td>\n      <td>12 \u00b1 1</td>\n      <td>3 \u00b1 1</td>\n      <td>11 \u00b1 2</td>\n    </tr>\n    <tr>\n      <td>Vss (L/kg)</td>\n      <td>3.1</td>\n      <td>8.0 \u00b1 1.8</td>\n      <td>3.6 \u00b1 0.5</td>\n      <td>2.1 \u00b1 0.3</td>\n    </tr>\n    <tr>\n      <td>t1/2app. (h)</td>\n      <td>3.6</td>\n      <td>9.3 \u00b1 1.9</td>\n      <td>14.4 \u00b1 0.7</td>\n      <td>2.6 \u00b1 0.3</td>\n    </tr>\n    <tr>\n      <td>AUCinf (\u00b5M.h) i.v.*</td>\n      <td>2.80</td>\n      <td>2.21 \u00b1 0.21</td>\n      <td>8.08 \u00b1 1.68</td>\n      <td>2.37 \u00b1 0.31</td>\n    </tr>\n    <tr>\n      <td>AUCinf (\u00b5M.h) p.o.*</td>\n      <td>1.20</td>\n      <td>1.07 \u00b1 0.34</td>\n      <td>5.74 \u00b1 0.68</td>\n      <td>0.34 \u00b1 0.05</td>\n    </tr>\n    <tr>\n      <td>Cmax (\u00b5M) p.o.*</td>\n      <td>0.094</td>\n      <td>0.075 \u00b1 0.023</td>\n      <td>0.240 \u00b1 0.043</td>\n      <td>0.077 \u00b1 0.014</td>\n    </tr>\n    <tr>\n      <td>Tmax p.o. (h)</td>\n      <td>2.0</td>\n      <td>4.0 \u00b1 1.4</td>\n      <td>3.3 \u00b1 1.2</td>\n      <td>1.0 \u00b1 0.1</td>\n    </tr>\n    <tr>\n      <td>Oral BA (%F)</td>\n      <td>43</td>\n      <td>49 \u00b1 15</td>\n      <td>71 \u00b1 8</td>\n      <td>14 \u00b1 2</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">NVP-CGM097</td>\n    </tr>\n    <tr>\n      <td>CL (mL/min.kg)</td>\n      <td>5</td>\n      <td>7 \u00b1 1</td>\n      <td>3 \u00b1 1</td>\n      <td>4 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>Vss (L/kg)</td>\n      <td>2.6</td>\n      <td>6.4 \u00b1 0.4</td>\n      <td>3.8 \u00b1 0.4</td>\n      <td>2.0 \u00b1 0.4</td>\n    </tr>\n    <tr>\n      <td>t1/2app. (h)</td>\n      <td>6.4</td>\n      <td>12.1 \u00b1 1.1</td>\n      <td>14.2 \u00b1 1.8</td>\n      <td>8.3 \u00b1 0.9</td>\n    </tr>\n    <tr>\n      <td>AUCinf (\u00b5M.h) i.v.*</td>\n      <td>4.70</td>\n      <td>3.66 \u00b1 0.27</td>\n      <td>9.44 \u00b1 1.43</td>\n      <td>6.59 \u00b1 0.74</td>\n    </tr>\n    <tr>\n      <td>AUCinf (\u00b5M.h) p.o.*</td>\n      <td>3.34</td>\n      <td>2.97 \u00b1 0.40</td>\n      <td>7.08 \u00b1 1.05</td>\n      <td>3.73 \u00b1 0.78</td>\n    </tr>\n    <tr>\n      <td>Cmax (\u00b5M) p.o.*</td>\n      <td>0.207</td>\n      <td>0.134 \u00b1 0.016</td>\n      <td>0.250 \u00b1 0.030</td>\n      <td>0.363 \u00b1 0.020</td>\n    </tr>\n    <tr>\n      <td>Tmax p.o. (h)</td>\n      <td>4.0</td>\n      <td>4.5 \u00b1 1.9</td>\n      <td>2.7 \u00b1 1.2</td>\n      <td>1.3 \u00b1 0.6</td>\n    </tr>\n    <tr>\n      <td>Oral BA (%F)</td>\n      <td>71</td>\n      <td>81 \u00b1 11</td>\n      <td>75 \u00b1 11</td>\n      <td>57 \u00b1 12</td>\n    </tr>\n  </tbody>\n</table>\n\n_Mouse (n = 1 per time point) and rat (n = 3 per time point) were treated either with a single dose of the indicated compound at 1 mg/kg i.v. or 3 mg/kg p.o. Dog and monkey (n = 3 per time-point) were treated either with a single dose of the indicated compound at 0.1 mg/kg i.v. or 0.3 mg/kg p.o.*AUC and Cmax values are shown dose-normalized to 1 mg/kg._\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig5-v3.jpg)\n\n**Figure 5.:** (A) PK/PD relationship. Mice (n = 3/time-point) bearing established subcutaneous SJSA-1 xenografts received vehicle or a single oral dose of 100 mg/kg NVP-CGM097. Levels of NVP-CGM097 were measured in plasma and in tumor at 7 different time-points within 48 hr following the dose. As a pharmacodynamic readout, the p53 target gene p21 mRNA (left panel) and protein (right panel) levels were assessed in the tumor samples by qRT-PCR and reverse phase protein array at 7 time-points within 48 hr following NVP-CGM097 single dose. Data are plotted as mean \u00b1 SEM. (B) In vivo anti-tumor activity of NVP-CGM097. Mice (n = 6/dosing group) bearing established subcutaneous SJSA-1 xenografts received vehicle or 25, 50, or 100 mg/kg of an oral suspension of NVP-CGM097 daily. Tumor volumes were calipered throughout the study, and data are plotted as mean \u00b1 SEM (left panel). The body-weight (BW) is expressed as the percentage change in BW relative to day 0 (initiation of treatment). Data are plotted as mean \u00b1 SEM (right panel). *, p < 0.05 vs vehicle control. (C and D) Tumor pharmacodynamics effects of NVP-CGM097. Tumor samples were retrieved 3 hr post-last dose at the end of the efficacy study described in (B). Tumor p21 mRNA levels were assessed by qRT-PCR and data are plotted as mean \u00b1 SEM (C). Tumor samples were retrieved and paraffin-embedded 3 hr post-last dose at the end of the efficacy experiment described in (B). p21 and HDM2 protein levels were assessed by immunohistochemistry (D).\n\nA total of 55 PDX models were used for these studies. NVP-CGM097 sensitivity was predicted for this sample set using the 13-gene signature (see \u2018Materials and Methods\u2019 section for the specificities of these predictions and Figure 6\u2014source data 2). As shown in Figure 6A and Figure 6\u2014source data 1, 27/55 human primary xenograft tumor models were predicted to be sensitive to NVP-CGM097, and of these 27 models, 19 were truly sensitive, resulting in a PPV of 70%, improving the basal response rate of 49% (Figure 6C). Moreover, 28/55 in vivo models were predicted to be insensitive, and 20/28 were found to indeed be truly insensitive, leading to a significant NPV of 71% (Figure 6C). Also, Sensitivity and Specificity features were comparable to the predictive model performance estimated on cell lines by the bootstrapping protocol (Figure 6C; Figure 2\u2014source data 1). We also determined the performance of the 13-gene signature in tumors pre-selected based upon the presence of wild-type p53. As shown in Figure 6B, 21/33 wild-type p53 human PDX models were predicted to be sensitive to NVP-CGM097 and of these, 18 were truly sensitive, resulting in a PPV of 86%, again significantly improving the basal response rate of 70% (Figure 6C). In addition, 12/33 models were predicted to be insensitive to the drug, and 7/12 were found to be truly insensitive, leading to a significant NPV of 58% (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig6-v3.jpg)\n\n**Figure 6.:** PDX models were established by subcutaneous implantation in nude mice of surgical tumor tissues from treatment-naive cancer patients. 55 PDX models of multiple cancer types were used for the study: melanoma (n\u00a0=\u00a019), colorectal cancer (n\u00a0=\u00a017), liposarcoma (n\u00a0=\u00a03), renal cell carcinoma (n\u00a0=\u00a03), hepatocellular carcinoma (n\u00a0=\u00a07), breast cancer (n\u00a0=\u00a01), pancreatic cancer (n\u00a0=\u00a02), and lung cancer (n\u00a0=\u00a03). Tumor-bearing mice (n = 4/dosing group/model) received vehicle or 100 mg/kg of NVP-CGM097 daily for 4 weeks. The response is reported as percentage change in tumor volume at a given day of treatment relative to day 0 (start of treatment). The cut-off used for sensitivity to NVP-CGM097 was based on RECIST adapted for full tumor volume measurement. The sensitivity call was made at the maximum effect time-point during the treatment period. Sensitivity predictions for each PDX model were generated using the 13-gene signature (Figure 6\u2014source data 2). (A) Waterfall plot showing the tumor response to NVP-CGM097 for all the PDX models in the study (n = 55), color-coded by the prediction output. (B) The same visualization as in (A) is shown restricted to the wild-type p53 PDX models (n = 33). The data used to generate the waterfall plots and PDX model details are available in Figure 6\u2014source data 1. Performance values of the 13-gene signature were derived from this experiment and are shown in (C).\n\nIn conclusion, the in vitro predictive model performance shown in Figure 2 and Figure 2\u2014source data 1 was confirmed in vivo using PDX models. The results further validate the 13-gene signature as a better predictor for response to p53\u2013HDM2 inhibitors as compared to a selection strategy solely based on p53 mutation status. Notably, the findings described here support the use of p53\u2013HDM2 inhibitor sensitivity predictive model in either non-selected tumors or wild-type p53 pre-selected tumors.\n\n## Discussion\n\nIn this study, we have identified a novel 13-gene signature that robustly predicts sensitivity to p53\u2013HDM2 inhibitors, such as NVP-CGM097. This novel 13-gene signature has a superior predictive value as compared to p53 wild-type status alone and importantly, when applied to p53 wild-type pre-selected tumors, it provides a further enrichment of the drug response rate.\n\nThe newly discovered close analogs, NVP-CGM097 and NVP-CFC218 (Figure 1A), are both members of a novel chemical class (dihydroisoquinolinones) which differs from Nutlin analogs (e.g., Nutlin 3a and RO5045337/RG7112) or other p53\u2013HDM2 inhibitors currently being tested in the clinic (e.g., RO5503781/RG7388, SAR405838/MI-773, AMG 232, DS3032b) (Masuya et al., 2014, manuscript in preparation). As to compare with Nutlin 3a, NVP-CGM097 and NVP-CFC218 show differences in binding mode within the p53 binding site of HDM2 (Jeay et al., 2014; Valat et al., 2014, manuscript in preparation), which allows better in vitro and in vivo on-target potency, more favorable drug-like properties, and improved in vivo behavior of this compound family (Ferretti et al., 2014; Jeay et al., 2014). NVP-CGM097 and NVP-CFC218 were first tested in cell-free assays, where both were shown to selectively inhibit p53\u2013HDM2 binding. In cells, consistent with their mechanism of action (Cheok et al., 2011) and in line with their highly selective nature, both compounds showed comparable anti-proliferation effects in HCT-116 and SJSA-1 wild-type p53-expressing cell lines. The isogenic HCT-116 p53-null cells and the osteosarcoma SAOS-2 p53 null cells remained insensitive to NVP-CGM097 and NVP-CFC218 with IC50s \u2265 10 \u00b5M. Furthermore, in cell viability assays, using 356 cancer cell lines from the CCLE representative of various tumor types (Barretina et al., 2012), NVP-CFC218 was shown to inhibit proliferation of about 13.2% of the cancer cell lines tested at relevant concentrations (Figure 1B). As expected, 91.5% (43/47) of NVP-CFC218-sensitive cells expressed wild-type p53, consistent with its mechanism of action (Figure 1C,E). Importantly, the sensitivity of 3/4 of these cells bearing mutations in TP53 couldn't be reproduced (P12-ICHIKAWA, KBMC-2 and Hs 294T with IC50 > 8 \u00b5M), while the sensitivity of the NCI-H2122 TP53 mutant cell line was confirmed in repeat cell proliferation assays. Interestingly, the reported p53 mutations in NCI-H2122 cells (i.e., Q16L and C176F p53) are categorized as being only partially deleterious, suggesting the p53 pathway remains partially functional in these cells. In line with the strong association of p53 mutation with lack of sensitivity to NVP-CFC218, sensitivity response comparison to over 2000 compounds, grouped by their mechanism of action, showed that wild-type p53 cell lines in the CCLE were most sensitive to p53\u2013HDM2 inhibitors, including NVP-CFC218 (Figure 1F).\n\nInterestingly, 57% (57/100) of the p53 wild-type cell lines for which compound sensitivity data were available, scored insensitive to NVP-CFC218 (Figure 1C and\u00a0E). These results indicate that the selection of tumors based only on their p53 mutation status may not be optimal in order to tailor patient selection towards maximal response rate. With the aim to discover more sensitive biomarkers for patient selection, an in vitro predictive model was developed based on the integrative analysis of the genomic features of this panel of 356 cancer cell lines and their association with sensitivity to NVP-CFC218 (Barretina et al., 2012). A 13-gene signature was found to be the optimal solution at predicting p53\u2013HDM2 inhibition from gene expression (Figure 2). A further outcome of these studies identified p53 mutation status as being a strong predictor for insensitivity to NVP-CFC218 among about 40,000 input features containing genomic, lineage, and gene expression features, confirming in an unbiased manner the underlying hypothesis for this specific mechanism of action. In addition, a broader set of 215 newly discovered significant features were identified as being correlated to NVP-CFC218 sensitivity. Interestingly, HDM2 expression was found as the second ranked significant feature (after p53 mutation) confirming its correlation with sensitivity to p53\u2013HDM2 inhibitors in an unbiased manner. However, HDM2 amplification was not revealed by the modeling, most likely because of the low representation of HDM2-amplified cell lines in CCLE. Surprisingly, 13/14 of the top most significant expression features corresponded to well-known p53 target genes and their up-regulated expression was found associated with increased sensitivity to NVP-CFC218 (Table 1). The 14th feature, unannotated at the time of this work, was found to be RPL22L1, previously described as having a central role in \u03b1\u03b2 T lymphocytes development, together with its highly homologous paralog RPL22, by up-regulating p53 in a tissue-specific manner (Anderson et al., 2007; Zhang et al., 2013). The positive predictive value of this 13-gene signature was found to outperform both the p53 mutation feature alone and the 215 significant feature-set (76% vs 63% and 59%, respectively) (Figure 2E). Furthermore, comparable performances were found in an additional set of independent cell lines tested for their sensitivity to NVP-CGM097 and NVP-CFC218, validating the predictive power of the 13-gene signature in vitro (Figure 3).\n\nThis cell line-derived 13-gene signature was demonstrated to be suitable for the identification of human primary tumors predicted to be sensitive to a p53\u2013HDM2 inhibitor across a set of about 21,300 human tumor samples and across a collection of 503 patient-derived tumor xenograft models, with available genome-wide expression data. Interestingly, the prevalence of the 13-gene signature was found to be quite variable within the multiple lineages tested (Figure 4A). Importantly, however, the lineage-specific proportion of samples scoring positive for the 13-gene signature was strikingly comparable to the proportion of sensitive cell lines to NVP-CFC218, in a given lineage. Furthermore, the application of the signature across a large set of human tumor samples revealed new indications of potential interest for the development of p53\u2013HDM2 inhibitors, such as renal cell carcinoma and hepatocellular carcinoma (Figure 4C), that had been previously missed due to their under-representation in the set of CCLE cell lines tested. The ability of the 13-gene signature to differentiate signature-positive from signature-negative patient-derived tumor xenografts, allowed testing its in vivo predictive value across a set of these models. In line with the in vitro findings, the 13-gene signature was found to greatly outperform the random response rate to NVP-CGM097 in vivo, independently upon whether the xenograft models were pre-selected or not for their p53 mutation status (Figure 6; Figure 6\u2014source data 1).\n\nMany research efforts have been devoted to the characterization of molecular mechanisms conferring gene-specific regulation within the p53 network (Vousden and Prives, 2009). It has been observed that in proliferating cells, minimal activity of p53 can lead to basal expression of some of its target genes, such as p21 (Tang et al., 1998), through mechanisms involving basal promoter-specific recruitment of transcription initiation components (Espinosa and Emerson, 2001; Espinosa et al., 2003). In a more recent study from Allen et al. (2014), using Global Run-On sequencing, gene-specific regulatory mechanisms affecting a number of key survival and apoptotic genes within the p53 network were uncovered. The authors imply that some p53 target genes can be \u2018primed\u2019 to be switched on even before the p53 protein is activated, leading to a rapid transcription of these genes following p53 activation (Allen et al., 2014). Some of these p53 target genes, such as CDKN1A, HDM2, CCNG1, DDB2, FDXR, BAX, TNFRSF10B, and AEN, were found to be within the top most transcribed genes following Nutlin-3 treatment (Allen et al., 2014) and coincidently are all included in the 13-gene signature described in Table 1. Taking together, these observations strongly suggest that the p53 target gene set contained within the predictive 13-gene signature is representative of an underlying activated p53 pathway that renders cancer cell lines and patient-derived tumor xenografts sensitive to p53\u2013HDM2 inhibitors. Thus, it is reasonable to think that the 13-gene signature discovered here is best at predicting sensitivity to p53\u2013HDM2 inhibitors, since it not only discriminates mutant p53 from wild-type p53 tumors, but also tumors that have an intact p53 gene but a silent p53 pathway from those that are p53 wild-type and bear an activated pathway. We postulate that the latter may be more prone to quickly induce a robust p53-dependent transcriptional response upon exposure to p53\u2013HDM2 inhibitors, thus being more sensitive to this specific anti-cancer therapy.\n\nAltogether, this work highlights the power of a biomarker discovery approach based on large-scale data generation and unbiased data analysis, followed by robust validation using various independent samples sets. Furthermore, the finding that the 13-gene signature corresponds to a set of p53 target genes and that its positivity reflects activity of the p53 pathway, demonstrates the intimate relationship between the biomarker set and the mechanism of action of the targeted therapy, hence its potentially broad applicability to any selective p53\u2013HDM2 inhibitor for optimal patient selection. On these bases, we are currently evaluating the 13-gene signature in a Phase I clinical trial (NCT01760525), in cancer patients bearing p53 wild-type tumors treated with NVP-CGM097.\n\n## Materials and methods\n\n### Chemical entities\n\nNVP-CFC218 and NVP-CGM097 were synthesized by Global Discovery Chemistry (NIBR, Novartis, Basel, Switzerland). For in vitro studies, 10 mM stock solutions were prepared in 100% dimethyl sulfoxide (DMSO). For in vivo experiments, NVP-CGM097 was formulated immediately before each oral administration in a suspension of 0.5% hydroxy-propyl-methyl-cellulose (HPMC).\n\n### Biochemical assay\n\nNVP-CFC218 and NVP-CGM097 biochemical activity against the p53\u2013HDM2 and p53\u2013HDMX interactions was assessed in a TR-FRET assay. Standard assay conditions consisted of 60 \u03bcl total in PBS buffer containing 125 mM NaCl, 0.001% Novexin, 0.01% Gelatin, 0.2% Pluronic F-127, 1 mM DTT, and 1.7% final DMSO. Both NVP-CFC218 and NVP-CGM097 were added at different concentrations to 0.1 nM biotinylated HDM2 (amino acids 2-188) or 0.1 nM HDMX (amino acids 2-185), 0.1 nM Europium-labeled streptavidin and 10 nM Cy5-p53 peptide (Cy5-p53 amino acids 18\u201326). After incubation at room temperature for 30 min, samples were measured on a GeniosPro reader (Tecan). FRET assay readout was calculated from the raw data of the two distinct fluorescence signals measured in time resolved mode (fluorescence 665 nm/fluorescence 620 nm \u00d7 1000). IC50 values were calculated by curve fitting using XLfit (Fit Model #205).\n\n### Cell lines and in vitro pharmacologic cell line profiling\n\nThe isogenic HCT-116 p53-null cell line was obtained from Horizon (Cambridge, UK). All other cell lines were obtained from ATCC (American Type Culture Collection), DSMZ (Deutsche Sammlung von Mikroorganismen und Zellkulturen), and HSRRB (Health Science Research Resources Bank) and cultured in RPMI or Dulbecco's modified Eagle's medium plus 10% FBS (Invitrogen, Carlsbad, CA) at 37\u00b0C, 5% CO2. Cell line identities were confirmed using a 48-variant SNP panel. Effects of NVP-CFC218 and NVP-CGM097 on cellular growth and loss of viability shown in Figure 1B were measured using the YOPRO assay (Invitrogen) and IC50 values were calculated by curve fitting using XLfit (Fit Model #201). A detailed description of the high-throughput cell viability assays can be found in the report of Barretina et al. (2012).\n\n### Global compound selectivity analysis\n\nTo identify compounds to which wild-type p53 cell lines were selectively responsive as compared to non-wild-type p53 cell lines across the CCLE, we used the high-throughput cell line profiling described above and reported in Barretina et al. (2012). First, a selected compound sensitivity metric was log2 transformed and a selectivity score was computed by multiplying the metric Z-score by the absolute value of the metric. We then performed a Wilcoxon test opposing the two groups of cell lines and corrected for multiple testing using Benjamini and Hochberg FDR, followed by an enrichment analysis by the compound's main target. To this end, compounds were grouped into target classes, and Fisher's exact tests were performed with compounds considered as significantly differentially responsive when the FDR was below 0.25. The cut-off for the FDR is lenient as this is used for enrichment purposes. Finally, we corrected the p-values obtained from enrichment analysis for multiple testing.\n\n### Genomic and genetic characterization of CCLE cell lines\n\nThe genomic and genetic characterization of a panel of cancer-relevant cell lines was undertaken mostly as described (Barretina et al., 2012). Briefly, gene-level expression values were generated with the HG-U133 plus 2 array (Affymetrix GeneChip technology) and summarized according to the RMA normalization method; gene-level chromosome copy number values were obtained with the Affymetrix SNP6.0 technology and processed using the Affymetrix apt software and expressed as log2 transformed ratios to a collection of HapMap reference normal samples; gene-level genetic alterations (point-mutations, insertions, deletions, and complex alterations) were compiled from the Sanger center COSMIC data and internal sources including Exome Capture Sequencing of 1600 cancer-related genes; pathway-level expression values were generated as referenced in the GeneGo Metacore knowledge base; cell line lineage (cell line tissue of origin); gene-level \u2018tumor suppressor status\u2019 was generated by integrating the genetic alteration, copy number, and expression information. Such genomic and genetic data were assembled in a matrix that covers a total of about 40,000 genomic features and were used to test their association with cell line chemical sensitivity to NVP-CFC218.\n\n### Affymetrix GeneChip RMA normalization\n\nAll Affymetrix GeneChip Human Genome U133 Plus 2.0 arrays were pre-processed with a custom chip definition file (Entrez Gene-centric custom CDF version 16 from the University of Michigan) using the RMA (robust multi-array average) summarization/normalization algorithm (Irizarry et al., 2003; Dai et al., 2005). A set of pre-computed reference quantiles and probe effects was input to the algorithm for normalization of Affymetrix arrays in an approach known as the Extrapolation Strategy or refRMA (Goldstein, 2006; Katz et al., 2007). The reference quantiles and probe effects were defined from a compendium of publically available arrays representing a broad diversity of oncology indications (through the expO data set but not exclusively) and human body normal tissues (GEO series accessions GSE5764, GSE6338, GSE2109, GSE28504, GSE6764, GSE7307, GSE32317, GSE7753, GSE8507, GSE7904, GSE8671, GSE8762, GSE4107, GSE4183, GSE8977, GSE20238, GSE20596, GSE13911, GSE10282, GSE9829, GSE9843, GSE7553, GSE9891, GSE9899, GSE6004 and GSE4237). The RefPlus R package was used to that aim (Harbron et al., 2007).\n\n### Predictive modeling of p53\u2013HDM2 inhibition chemical sensitivity in vitro\n\nTo define the most accurate and parsimonious predictive model from CCLE expression data, a bootstrapping protocol was used first which is described in the \u2018Results\u2019 section. All calculations were done with R-3.0.2 using principally e1071 and caret R libraries.\n\nThe broader, 215-feature set, that discriminates NVP-CFC218 sensitive from insensitive cell lines, was obtained as follows: Wilcoxon signed-rank tests or Fisher's exact tests were used to compare the genomic features of the sensitive to insensitive groups. Features having continuous values (gene expression and copy number, pathway expression features) were subjected to Wilcoxon sum rank test, while those having discrete values (genetic alteration, tumor suppressor status, and lineage features) to Fisher's exact test. Significant features passed a local (by feature type) FDR of 0.25. Irrespective of the FDR, a minimum or maximum number of features per feature type were also required. To minimize the impact of the high degree of correlation among the features on the feature selection step, the feature data were clustered before statistical testing by Affinity Propagation method (Frey and Dueck, 2007) to only keep features representing the most variability.\n\nTo compare sensitivity prediction accuracies of the 13-gene signature to both, the 215-feature set and TP53 mutation, na\u00efve Bayes probabilistic models were then built from the respective feature sets. The performances of classifications were evaluated with 5 repeats of 5-fold cross-validations of the train data. To transform the naive Bayes probabilities into a sensitive or insensitive class-level prediction, a threshold was defined as the probability maximizing the sensitivity and specificity. The entire and nearly identical procedure is described in more details in Barretina et al. (2012).\n\n### Predictive modeling of p53\u2013HDM2 inhibition chemical sensitivity of human primary tumors and patient-derived tumor xenograft models\n\nThe human primary tumor sample collection and the patient-derived tumor xenograft model collection (PDX) consist of about 21,300 and 500 samples, respectively, for which gene expression profiles, generated with Affymetrix technology (Human Genome U133 plus 2.0 array), are available. The samples of the collection were internally annotated with controlled vocabulary for pathology, histology, and primary site using the COSMIC Classification System (Forbes et al., 2008), and were submitted for sensitivity prediction (Figure 6\u2014source data 2). The associated GeneChip data were gathered from both public (GEO, ArrayExpress) and internal sources, and RMA normalized as described above. The na\u00efve Bayes model, used to predict NVP-CFC218 sensitivity, was trained on the 251 CCLE expression data restricted to the 13-gene signature features.\n\nPDX predictions of NVP-CFC218 sensitivity under the 13-gene signature were undertaken almost as described above. However, to account for the latest NVP-CFC218 pharmacological characterization on cell lines and to take advantage of a larger training data set, the na\u00efve Bayes classifier was trained on a wider cell line compendium (634 cell lines, 77 and 557 of which being NVP-CFC218-sensitive and NVP-CFC218-insensitive, respectively). Moreover, the na\u00efve Bayes-predictive model probability threshold, above which a xenograft tumor model is predicted as sensitive to p53\u2013HDM2 inhibition, was also further set to 0.2 (optimizing for PPV/Precision at the cost of Sensitivity/Recall).\n\n### In vivo studies in mice\n\nAll animal studies were conducted in accordance to procedures covered by permit number 1975 issued by the Kantonales Veterin\u00e4ramt Basel-Stadt and strictly adhered to the Eidgen\u00f6ssisches Tierschutzgesetz and the Eidgen\u00f6ssische Tierschutzverordnung. All animals were allowed to adapt for 4 days and housed in a pathogen-controlled environment (5 mice/Type III cage) with access to food and water ad libitum and were identified with transponders.\n\n#### SJSA-1-derived tumor model\n\n3.0 \u00d7 106 SJSA-1 osteosarcoma cells were implanted subcutaneously in nude mice (Harlan, Germany). Treatment was initiated when tumors reached 150\u2013200 mm3 volume. Tumor response is reported as percentage change in tumor volume at last day of treatment relative to start of treatment. The body-weight is reported as the percentage change relative to day 0.\n\n#### Patient-derived tumor xenografts (PDX) models\n\nSurgical tumor tissues from treatment-naive cancer patients were implanted in the right flank of Harlan nude mice. All samples were anonymized and obtained with informed consent and under the approval of the institutional review boards of the tissue providers and Novartis. PDX models were histologically characterized and genetically profiled using various technology platforms after serial passages in mice. External diagnosis was independently confirmed by in-house pathologists. The p53 mutation status was determined for each PDX model by both RNA and DNA deep sequencing technologies. Efficacy studies and tumor response were measured as above. The cut-off used for sensitivity to NVP-CGM097 was based on RECIST adapted to tumor volume: models considered to be sensitive either displayed a complete response (full regression) or a partial response (>50% decrease in tumor volume) or a stable disease (between 50% decrease and 35% increase in tumor volume). In vivo models showing a progressive disease (>35% increase in tumor volume) were considered as non-responsive to NVP-CGM097 treatment. The sensitivity call was made at the maximum effect time-point during the treatment period, to avoid a call that could be due, for example, to the appearance of resistance mechanism(s) following treatment with NVP-CGM097.\n\n### Pharmacodynamic marker evaluation in tumor\n\n#### p21 (CDKN1A) mRNA expression\n\nTotal RNA was purified using the QIAshredder and RNeasy Mini Kit (Qiagen, Valencia, CA). The quantitative reverse transcriptase polymerase chain reaction (qRT-PCR) for p21 was performed in triplicates using the One-Step RT qPCR Master Mix Plus (Eurogentec, Seraing, Belgium), with either control primers and primers for human p21 (Hs00355782_m1, Applied Biosystems, Carlsbad, CA), namely TaqMan Gene Expression kit assays (20x probe dye FAM [or VIC]-TAMRA [or MGB]; Applied Biosystems).\n\n#### p21 protein expression\n\nZeptoMARK chips, reagents, and protocols (Zeptosens, Bayer Technology Services, Germany) were used for the reverse phase protein microarray measurements (RPPA). Total protein was extracted from tumor samples with NP40-based lysis buffer. The primary anti-p21 antibody was from CST, Danvers, MA (#2947) and the secondary Alexa Fluor 647-labeled antibody was from Invitrogen (#Z25305). Fluorescence imaging of assay signals was performed with the ZeptoREADER instrument (Zeptosens). Microarray images were analyzed with the ZeptoVIEW Pro 2.0 software (Zeptosens).\n\n### Immunochemistry\n\nImmunohistochemistry has been performed on a Ventana Discovery XT automated immunostainer. SJSA-1 xenograft tumors were collected and a 3- to 4-mm slice was cut out of the middle of the tumor, fixed in neutral buffered formalin and embedded in paraffin. 3 \u03bcm sections were processed for immunohistochemistry (IHC). Primary antibodies used were mouse monoclonal anti-p21 antibody (#M7202, Dako, Carpenteria, CA) and mouse monoclonal anti-HDM2 antibody (#965, Santa-Cruz Biotechnology, Santa-Cruz, CA). Sections were subsequently stained using the labeled polymer system Simple Stain Mouse MAX PO (M) from the N-Histofine Mousestain Kit (Nichirei Bioscience Inc., Japan) and DAB substrate from the DABMap Kit omitting the SA-HRP solution (Ventana/Roche Diagnostics, Mannheim, Germany). Counterstaining of sections was done using hematoxylin (Ventana/Roche Diagnostics).\n",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "b3b7d1fa-efcf-4bab-aec1-730f5b75a38e",
+      "submission_id": "c32e8ded-a864-43ad-ab4b-99ed8b87d96b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaquin M Espinosa, University of Colorado Boulder , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06498.020](https://doi.org/10.7554/eLife.06498.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your work entitled \"A distinct p53 target gene set predicts for response to NVP-CGM097, a novel and selective p53-HDM2 inhibitor\" for consideration at eLife. Your article has been favorably evaluated by Sean Morrison (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript by Jeay et al. reports the discovery of a 13-gene signature that can predict the sensitivity of tumor cell lines and patient-derived tumor xenografts to small molecule inhibitors of the p53-MDM2 interaction with great accuracy, sensitivity and specificity. The manuscript is conceptually simple yet of very high impact.\n\nThe current manuscript not only reports the discovery of two novel inhibitors of the p53-MDM2 interaction, but also describes an experimental tour-de-force to identify the much-needed biomarker. These efforts lead the authors to identify a 13-gene signature that can predict the cellular response in vitro and in vivo, including patient-derived xenografts, with great accuracy, sensitivity and specificity. Remarkably, the gene signature is composed of 13 known direct transcriptional targets of p53 whose expression is strongly elevated in cell lines and tumors prior to MDM2 inhibition. This indicates that the sensitive cell lines harbor a more transcriptionally active form of p53 that 'primes' a fraction of its transcriptional program in proliferating cancer cells. This finding counters the prevalent notion that sensitivity is defined by MDM2 amplification, which would result in very low levels of active p53.\n\nAlthough the paper does not make great mechanistic insights into p53 biology, its broad applicability makes it of very high impact. If this biomarker works in the clinic, it is likely to profoundly change the course of the current clinical trials and future use of MDM2 inhibitors in cancer therapy. Accordingly, the reviewers agreed on recommending resubmission of a revised manuscript addressing the following major points:\n\n1) It seems like p53WT (mutational status) is a good predictive marker for this compound, why is this information not taken into account when building the naive Bayes classifier? Can the prediction improve when p53 mutational status is taken into account as part of the gene signature? Why not try to build a gene signature based on p53 wild type that is sensitive or insensitive to this compound? It seems like the validation steps of the gene signature are built on the logic that p53 wild type could be used as a feature, as the independent in vitro validation was only performed on the p53WT cell lines, and the PDX models were enriched with p53WT models.\n\n2) The gene selection method based on the Wilcoxon test seems to be a little bit primitive. There are better and more advanced feature selection methods (like lasso type or machine learning approaches). Have the authors tried different approaches and come to the conclusions with the same set of genes? Have the authors tested with different machine learning approaches (e.g. SVM?)\n\n3) The fold-change of the 13 selected genes seems to be modest, some of them even less than 2 fold. Can these changes be validated by other experimental approaches like RT-PCR? It seems like the training of the classifier is based on the full ~52,000 probe sets, not genes. Have the authors found multiple probe sets representing the same genes ranked high in the feature selection step? This may strengthen the inclusion of these genes.\n\n4) How is this gene signature going to translate into a biomarker test in a clinical trial? The hardest part is the RMA normalization of a new sample. In the validation steps, both in vitro and in vivo gene expression profiles were normalized as a batch, and the expression values are normalized with the training set? This is unclear, and how will the authors envision normalizing patient samples? As in a clinical trial, patients will be tested individually, not by batch, therefore, getting the gene expression values normalized to the same scale with the training model needs careful consideration. This is not clearly described in the text.\n\n5) Finally, in the training and testing in vitro cell lines, many of the sensitive cell lines are from the hematopoetic cell lineages, but none of this cell lineage is represented in the PDX Models. How would this affect the predictions of the classifier?\n",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8d069d8d-3f1d-47b4-8ec0-be8557269278",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C1",
+      "claim": "NVP-CGM097 is a p53-HDM2 inhibitor currently under evaluation in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "By intersecting high-throughput cell line sensitivity data with genomic data, we have identified a gene expression signature consisting of 13 up-regulated genes that predicts for sensitivity to NVP-CGM097 in both cell lines and in patient-derived tumor xenograft models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states NVP-CGM097 is currently under evaluation in clinical trials, and the introduction mentions NCT01760525.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "04ec41db-dba4-43d9-b4ac-f9216499bfe0",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C2",
+      "claim": "A 13-gene expression signature predicts sensitivity to NVP-CGM097 in cell lines and patient-derived tumor xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "By intersecting high-throughput cell line sensitivity data with genomic data, we have identified a gene expression signature consisting of 13 up-regulated genes that predicts for sensitivity to NVP-CGM097 in both cell lines and in patient-derived tumor xenograft models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the discovery of a 13-gene signature with predictive value, supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "073ba6db-704e-493d-a812-3489118b9f1f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C3",
+      "claim": "The 13 genes in the signature are known p53 downstream target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these 13 genes are known p53 downstream target genes, suggesting that the identified gene signature reflects the presence of at least a partially activated p53 pathway in NVP-CGM097-sensitive tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract and results section explicitly state that the 13 genes are known p53 target genes, supported by citations in Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "90ff7572-2388-4046-9a09-8070f62868a9",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C4",
+      "claim": "The 13-gene signature reflects the presence of at least a partially activated p53 pathway in NVP-CGM097-sensitive tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these 13 genes are known p53 downstream target genes, suggesting that the identified gene signature reflects the presence of at least a partially activated p53 pathway in NVP-CGM097-sensitive tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides this interpretation based on the identity of the genes as p53 targets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "01db7e30-2fe9-45db-93f6-23ad77705230",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C5",
+      "claim": "TP53 is a tumor suppressor gene that prevents cancer by allowing cells to recover from stress insults or triggering their elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "TP53 is a tumor suppressor gene that functions to prevent cancer by allowing cells to recover from various stress insults such as DNA damage or by triggering their elimination when the extent of the damage is beyond repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "991a22f9-bae1-41af-b870-df062db8bf8f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C6",
+      "claim": "The p53 transcription factor induces or represses target genes involved in cell cycle control, apoptosis, DNA repair, and cellular senescence in response to stress signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In its normal state, the p53 transcription factor acts in response to oncogenic or other stress signals to induce or repress a variety of target genes involved in cell cycle control, apoptosis, DNA repair, and cellular senescence (Vogelstein et al., 2000; Harris and Levine, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "78b00f11-c212-4952-9263-81dd7b6500c4",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C7",
+      "claim": "p53 protein levels are tightly regulated by the E3 ubiquitin ligase HDM2 through ubiquitin-dependent proteasome degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal cells, the levels of p53 protein are tightly regulated by the E3 ubiquitin ligase HDM2 that targets p53 for ubiquitin-dependent proteasome degradation (Haupt et al., 1997; Kubbutat et al., 1997; Marine and Lozano, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with supporting citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "db4133eb-cd1c-4528-8167-c012acffbaa0",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C8",
+      "claim": "HDM2 binding to p53 blocks its transactivation domain preventing p53 transcriptional activation of target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HDM2 binding to p53 blocks its transactivation domain preventing p53 transcriptional activation of its target genes (Momand et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "9105dc4d-c3ed-4397-8e8d-19cce0bf7695",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C9",
+      "claim": "HDM2 is itself a p53 target gene and acts as part of a negative feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "HDM2 is itself a p53 target gene and hence acts as part of a negative feedback loop which maintains low cellular concentrations of both partners under non-stressed conditions (Picksley and Lane, 1993; Wu et al., 1993; Freedman et al., 1999; Michael and Oren, 2003; Bond et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "c08ed606-c6bb-46be-899e-327cf91e1b8a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C10",
+      "claim": "Approximately 50% of all tumors display inactivating mutations in p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately, 50% of all tumors display inactivating mutations in p53 (Hainaut and Hollstein, 2000) leading to its partial or complete loss of function (Vogelstein et al., 2000; Levine and Oren, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "7f76240b-b062-4b19-bf14-be96da7cac50",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C11",
+      "claim": "In many cancers where TP53 is not mutated, the p53 pathway function is often compromised through mechanisms including HDM2 gain of function by amplification and/or overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cancers where TP53 is not mutated, the function of the p53 pathway is often compromised through other mechanisms, including HDM2 gain of function by amplification and/or overexpression (Bond et al., 2005; Vousden and Lane, 2007; Brown et al., 2009; Wade et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "c3ecbab7-7cfb-4ef9-a259-97e03a46b32a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C12",
+      "claim": "Blocking the interaction between p53 and HDM2 is hypothesized to stabilize p53 leading to pathway activation and growth arrest and/or apoptosis in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In these instances blocking the interaction between p53 and HDM2 is hypothesized to stabilize p53 leading to pathway activation and growth arrest and/or apoptosis in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "29bc16c4-9dbd-4e19-8258-54deb51f534c",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C13",
+      "claim": "Several HDM2 small molecule inhibitors have been developed and are now in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this hypothesis and the structural elucidation of the p53\u2013HDM2 interaction, several HDM2 small molecule inhibitors have been developed and are now in clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "165ec29d-48f4-4808-b22f-b1f2603c68ea",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C14",
+      "claim": "HDM2 inhibitors can elicit potent anti-tumor effects through induction of cell cycle growth arrest and apoptotic response in human cancer cell lines or xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, prior work has shown that in human cancer cell lines or xenografts such inhibitors can elicit potent anti-tumor effects as a result of induction of cell cycle growth arrest and an apoptotic response (Poyurovsky and Prives, 2006; Brown et al., 2009; Cheok et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with supporting citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "38992fc3-7c48-4350-91f1-d02d85a01fd8",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C15",
+      "claim": "NVP-CGM097 is currently in phase I clinical testing (NCT01760525).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a novel and highly specific p53\u2013HDM2 inhibitor, NVP-CGM097, currently in phase I clinical testing (NCT01760525) and a close analog NVP-CFC218 that are both based on an isoquinolinone scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "f4acea25-cad5-4ced-9034-a21163a71a23",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C16",
+      "claim": "NVP-CGM097 and NVP-CFC218 are both based on an isoquinolinone scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a novel and highly specific p53\u2013HDM2 inhibitor, NVP-CGM097, currently in phase I clinical testing (NCT01760525) and a close analog NVP-CFC218 that are both based on an isoquinolinone scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "2dd0663e-d0de-4e38-a5e5-18dc6008e3ec",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C17",
+      "claim": "The analysis of sensitivity profiles across 356 cell lines confirmed that p53 mutant cancer cells fail to respond to HDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of sensitivity profiles across 356 cell lines led to the confirmation that p53 mutant cancer cells fail to respond to HDM2 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction and supported by data in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "c62ae73f-e001-4b8d-a6a9-8090f451e7d2",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C18",
+      "claim": "Among wild-type p53 cancer cells, sensitivity to HDM2 inhibitors was heterogeneous and not solely associated with HDM2 gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "However, among wild-type p53 cancer cells sensitivity was heterogeneous and not solely associated with HDM2 gene amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction and supported by data in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "1daa4dc4-14d2-4b44-898c-f9a855dc1693",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C19",
+      "claim": "The expression of 13 genes (including HDM2) has robust and superior predictive value for response compared to p53 wild-type status alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an unbiased discovery approach, the expression of 13 genes (including HDM2) was found to have robust and superior predictive value for response compared to p53 wild-type status alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction and supported by data in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "a7995a70-032e-4b35-ae27-51f54cc70fa1",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C20",
+      "claim": "All 13 genes in the signature are p53 target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, all 13 genes were p53 target genes suggesting that cells harboring at least partially activated p53 are those that are most susceptible to further p53 activation upon disruption of the p53\u2013HDM2 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction and supported by Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "edaec442-b461-4c1c-8bfb-5e3c463edf65",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C21",
+      "claim": "Cells harboring at least partially activated p53 are most susceptible to further p53 activation upon disruption of the p53-HDM2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, all 13 genes were p53 target genes suggesting that cells harboring at least partially activated p53 are those that are most susceptible to further p53 activation upon disruption of the p53\u2013HDM2 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an interpretation in the introduction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "be4a3e21-197f-4eca-9efd-281dfdc2fca8",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C22",
+      "claim": "NVP-CGM097 and NVP-CFC218 are substituted 1,2-dihydroisoquinolinone derivatives designed to mimic three key hydrophobic interactions made by p53 residues Phe19, Trp23, and Leu26 in the HDM2 pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "NVP-CGM097 and NVP-CFC218 are substituted 1,2-dihydroisoquinolinone derivatives that were designed to mimic three key hydrophobic interactions made by p53 residues Phe19, Trp23, and Leu26 in the HDM2 pocket (Kussie et al., 1996; Garc\u00eda-Echeverr\u00eda et al., 2000; Furet et al., 2012) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "38e8b8e2-fe9d-44b3-8b33-f594d18b0cc4",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C23",
+      "claim": "NVP-CFC218 displaced the p53 peptide from HDM2 with an IC50 value of 1.6 \u00b1 0.2 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NVP-CFC218 and NVP-CGM097 displaced the p53 peptide from the surface of HDM2 with IC50 values of 1.6 \u00b1 0.2 nM and 1.7 \u00b1 0.1 nM, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "efd0f258-cfec-49c7-af7c-77f809e4ffc6",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C24",
+      "claim": "NVP-CGM097 displaced the p53 peptide from HDM2 with an IC50 value of 1.7 \u00b1 0.1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NVP-CFC218 and NVP-CGM097 displaced the p53 peptide from the surface of HDM2 with IC50 values of 1.6 \u00b1 0.2 nM and 1.7 \u00b1 0.1 nM, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "efddbf5f-1395-4068-a6ba-2c4626192496",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C25",
+      "claim": "NVP-CFC218 was substantially less active against HDMX with an IC50 value of 1300 \u00b1 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both compounds were substantially less active against HDMX with IC50 values of 1300 \u00b1 100 nM and 2000 \u00b1 300 nM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d25a005b-71a0-4f73-b9d9-f8729f7c477e",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C26",
+      "claim": "NVP-CGM097 was substantially less active against HDMX with an IC50 value of 2000 \u00b1 300 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both compounds were substantially less active against HDMX with IC50 values of 1300 \u00b1 100 nM and 2000 \u00b1 300 nM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d444255b-e766-4bcc-b1a6-cac4f33b74c9",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C27",
+      "claim": "NVP-CFC218 and NVP-CGM097 are specific inhibitors of the p53-HDM2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that NVP-CFC218 and NVP-CGM097 are specific inhibitors of the p53\u2013HDM2 interaction (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated based on the biochemical assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "524348af-e745-48c1-9567-117e75b967f8",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C28",
+      "claim": "NVP-CFC218 showed 34-fold selectivity in HCT116 p53WT cells compared to isogenic HCT116 p53-null cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NVP-CFC218 and NVP-CGM097 elicited strong anti-proliferative effects in the HCT116 p53WT cell line and showed 34- and 35-fold selectivity, respectively, compared to an isogenic HCT116 cell line in which the TP53 gene was deleted by homozygous recombination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "458d29e5-9ea2-42f1-9559-80d17ac7ffdc",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C29",
+      "claim": "NVP-CGM097 showed 35-fold selectivity in HCT116 p53WT cells compared to isogenic HCT116 p53-null cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NVP-CFC218 and NVP-CGM097 elicited strong anti-proliferative effects in the HCT116 p53WT cell line and showed 34- and 35-fold selectivity, respectively, compared to an isogenic HCT116 cell line in which the TP53 gene was deleted by homozygous recombination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "e281db2e-603e-4240-9367-84819bbcd65a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C30",
+      "claim": "NVP-CFC218 blocked proliferation of SJSA-1 cells with 56-fold selectivity compared to SAOS-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, both compounds blocked proliferation of the osteosarcoma HDM2-amplified SJSA-1 cell line with 56- and 58-fold selectivity, respectively, compared to a control p53-null osteosarcoma SAOS-2 cell line (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "31397974-56f8-4eea-8a2f-e4a9b72ebdda",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C31",
+      "claim": "NVP-CGM097 blocked proliferation of SJSA-1 cells with 58-fold selectivity compared to SAOS-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, both compounds blocked proliferation of the osteosarcoma HDM2-amplified SJSA-1 cell line with 56- and 58-fold selectivity, respectively, compared to a control p53-null osteosarcoma SAOS-2 cell line (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "9ee55965-abc6-455b-8d62-eee40dcf5c72",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C32",
+      "claim": "NVP-CGM097 and NVP-CFC218 inhibit cell proliferation in a p53-dependent manner with comparable potency and selectivity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that NVP-CGM097 and NVP-CFC218 inhibit cell proliferation in a p53-dependent manner with a comparable potency and selectivity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the cellular assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "8c03a927-8e0f-4ccd-915a-bdb002d272aa",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C33",
+      "claim": "A total of 356 cell lines met quality criteria for NVP-CFC218 testing after quality control and manual curation.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control and manual curation of the dose response curves, a total of 356 cell lines met the cell viability quality criteria for NVP-CFC218 and were used for subsequent analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "61499a08-a6c6-4b57-8478-dc333492289b",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C34",
+      "claim": "A cut-off of 4 \u03bcM IC50 was used to categorize cell lines as sensitive or insensitive to NVP-CFC218.",
+      "claim_type": "EXPLICIT",
+      "source": "A rank-order plot of IC50s for NVP-CFC218 showed a natural cut-off of 4 \u03bcM, which was used to categorize cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "2c3459ee-52f1-467f-b40c-928763daca98",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C35",
+      "claim": "Forty seven cell lines were categorized as sensitive to NVP-CFC218 and 309 as insensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty seven cell lines were categorized as sensitive and 309 cell lines as insensitive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d82a152d-3a68-4ced-9343-a71d0d9290cb",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C36",
+      "claim": "For sensitive cell lines, the maximal compound effect level (Amax) was \u2264 \u221250%.",
+      "claim_type": "EXPLICIT",
+      "source": "For the sensitive cell lines, the maximal compound effect level (Amax) was \u2264 \u221250% (Figure 1C,D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "ecaa6caf-90c8-4d67-adc8-17534eaca01a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C37",
+      "claim": "Most of the NVP-CFC218-sensitive cell lines harbored wild-type p53 (n = 43).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, based on the mechanism of action of NVP-CFC218, most of the sensitive cell lines harbored wild-type p53 (n = 43) and this association was statistically significant by Fisher's exact test (p-value = 5.1 \u00d7 10\u221223) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d29f9643-553c-4652-81d0-bd126bd557e8",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C38",
+      "claim": "The association between wild-type p53 and NVP-CFC218 sensitivity was statistically significant (p-value = 5.1 \u00d7 10\u221223).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, based on the mechanism of action of NVP-CFC218, most of the sensitive cell lines harbored wild-type p53 (n = 43) and this association was statistically significant by Fisher's exact test (p-value = 5.1 \u00d7 10\u221223) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "38f1db92-a6e6-47d3-bbe0-5bd62debdbb6",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C39",
+      "claim": "p53-HDM2 inhibitors were the most selectively enriched compound class in p53 wild-type cell lines compared to p53 mutant cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A parallel, unbiased orthogonal analysis of cell line sensitivities to over 2000 compounds, grouped by their mechanism of action (or main target), revealed that p53\u2013HDM2 inhibitors including NVP-CFC218 were the most selectively enriched compound class in the p53 wild-type cell line set as compared to the p53 mutant set, with both a false discovery rate (FDR) and a p-value below the cut-offs of 0.25 and 0.05, respectively (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "68bacec6-860e-46cd-b75c-afaac409632a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C40",
+      "claim": "57% of p53 wild-type cell lines scored insensitive to NVP-CFC218.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, among all p53 wild-type cell lines for which compound data were available, 57% scored insensitive to NVP-CFC218 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "5ef31d85-31d2-4063-a6b7-c2ff1fd2d46d",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C41",
+      "claim": "A patient selection strategy based only on p53 status will not optimally enrich for patients with high likelihood of responding to p53-HDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a patient selection strategy based only on the p53 status of the tumor will not optimally enrich for patients with a high likelihood of responding to this targeted therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an interpretation of the data showing heterogeneous response in p53 wild-type cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "8fc7233b-cd34-4883-a4bb-9323ba7de816",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C42",
+      "claim": "The 13-gene classifier yielded 93% accuracy (\u00b12.3%), 87% sensitivity (\u00b110%), and 94% specificity (\u00b12.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the 13-gene classifier was found to be the optimal solution, yielding the following performance statistics: 93% accuracy (\u00b12.3%), 87% sensitivity (\u00b110%), and 94% specificity (\u00b12.8%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "9a03cc7c-71ce-431d-b5a2-ba1947977265",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C43",
+      "claim": "12 out of 13 expression features in the signature are genes whose expression has been shown to be regulated by p53.",
+      "claim_type": "EXPLICIT",
+      "source": "The 13 top-ranking genes were strongly enriched in known p53 transcriptional target genes (Table 1). Specifically, 12 out of the 13 expression features were genes whose expression has been shown to be regulated by p53 (Barak et al., 1993; el-Deiry et al., 1993; Miyashita et al., 1994; Okamoto and Beach, 1994; Varmeh-Ziaie et al., 1997; Tanaka et al., 2000; Adimoolam and Ford, 2002; Liu and Chen, 2002; Tan and Chu, 2002; Budanov et al., 2004; He and Sun, 2007; Kawase et al., 2008; Xiong et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results with supporting citations and shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "e378cd7f-69c9-4beb-9388-fc1e09f052cb",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C44",
+      "claim": "All genes of the final gene signature were up-regulated in the sensitive cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all genes of the final gene signature were up-regulated in the sensitive cell lines (Table 1), implying that prior to compound treatment, a subset of p53 target genes is transcriptionally activated in the NVP-CFC218-sensitive cell lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "02e186c3-5a22-42d1-a7aa-20181589d6b6",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C45",
+      "claim": "Prior to compound treatment, a subset of p53 target genes is transcriptionally activated in NVP-CFC218-sensitive cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all genes of the final gene signature were up-regulated in the sensitive cell lines (Table 1), implying that prior to compound treatment, a subset of p53 target genes is transcriptionally activated in the NVP-CFC218-sensitive cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an interpretation of the up-regulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "a3195a9c-34b3-41e9-a11b-00b9effdd213",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C46",
+      "claim": "The AUC for the 13-gene signature was 0.947 compared to 0.855 for the 215-feature set model.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC for the 13-gene signature was higher than for 215-feature set model: 0.947 vs 0.855 (Figures 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d180376d-309e-4a92-ae43-a4acf58b165f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C47",
+      "claim": "An 80% true sensitive prediction rate could be achieved while recalling more than 90% of truly NVP-CFC218-sensitive cell lines using the 13-gene signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the precision\u2013recall curves for the 13-gene signature showed that an 80% true sensitive prediction rate could be achieved while recalling more than 90% of the truly NVP-CFC218-sensitive cell lines (Figures 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "90a329a7-aaca-4503-9996-fb9f95264144",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C48",
+      "claim": "The 13-gene signature provided a positive predictive value (PPV) of 76% compared to 59% for the 215-feature set and 63% for TP53 mutation status.",
+      "claim_type": "EXPLICIT",
+      "source": "The class-level performance measures showed that the 13-gene signature provided a substantial improvement in predicting response to NVP-CFC218 in particular when performance was evaluated by positive predictive value (PPV) (Figure 2E): 76% for the '13-gene signature' vs 59% for the '215-feature set' vs 63% for 'TP53 mutation status'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "89f5f4fc-5fe9-4d4d-90d2-3b2ee62fabc7",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C49",
+      "claim": "The 13-gene signature provides an improvement in response prediction over both TP53 mutation status and the 215-feature signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results show that the 13-gene signature provides an improvement in response prediction to drug treatment over both the TP53 mutation status and the larger signature consisting of 215 significant features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4795ff77-efa0-45a8-b976-2b80145763be",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C50",
+      "claim": "The 13-gene signature has utility in TP53 wild-type genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these results suggest that the 13-gene signature has utility in TP53 wild-type genetic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the analysis restricted to p53 wild-type cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d0a406ec-99fa-4509-a423-c645dee638de",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C51",
+      "claim": "Cells that were sensitive or insensitive to NVP-CGM097 were similarly sensitive or insensitive to NVP-CFC218, except for one cell line (COLO-829).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cells that were indeed sensitive or insensitive to NVP-CGM097 were similarly sensitive or insensitive to NVP-CFC218, except for one cell line (COLO-829) (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "69712a0d-8b3b-45e8-bdef-e2e490f5bb22",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C52",
+      "claim": "36/52 cell lines were predicted to be sensitive to NVP-CGM097 while 27/52 were truly sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 36/52 and 26/38 cell lines were predicted to be sensitive to NVP-CGM097 and NVP-CFC218, respectively, while 27/52 and 23/38 were truly sensitive (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "25d7fe70-2136-4a41-8d19-7d1a30420863",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C53",
+      "claim": "26/38 cell lines were predicted to be sensitive to NVP-CFC218 while 23/38 were truly sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 36/52 and 26/38 cell lines were predicted to be sensitive to NVP-CGM097 and NVP-CFC218, respectively, while 27/52 and 23/38 were truly sensitive (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "43d9cb93-72b4-4fbd-87a5-bf20a316974a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C54",
+      "claim": "Sensitivity measures for the 13-gene signature were 89% for NVP-CGM097 and 91% for NVP-CFC218 in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed a slight decrease in specificity relative to the bootstrap estimate, sensitivity measures were 89% and 91% (Figure 3C), respectively, which is comparable to the sensitivity estimate obtained by bootstrapping the predictive model training data (87.3% \u00b1 10.4%, see Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "18921bc4-0fef-49e1-8a92-ceb83f91910d",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C55",
+      "claim": "PPV values for both NVP-CGM097 and NVP-CFC218 were higher than basal response rate in the validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticeably, PPV values for both drugs were higher than basal response rate (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "9fbad765-df8b-42ec-9865-d8a9042d95e9",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C56",
+      "claim": "The 13-gene signature is not likely an artifact of in vitro culture.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the 13-gene signature is not likely an artifact of the in vitro culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the comparison of primary tumor and cell line data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "f66c5028-d23d-426e-9005-f57c30f22666",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C57",
+      "claim": "The 13-gene signature identified a fraction of predicted sensitive human primary tumor samples within the patient-derived tumor xenograft (PDX) collection (n = 503).",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with this observation, the 13-gene signature identified a fraction of predicted sensitive human primary tumor samples within our patient-derived tumor xenograft (PDX) collection (n = 503) (Figure 4C), thus allowing the selection of models for further in vivo validation of its predictive power.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4164b44b-16c9-43cb-a0be-43d3f3778051",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C58",
+      "claim": "A single oral dose of NVP-CGM097 at 100 mg/kg led to stabilization of p53 and elevation of p53 target genes such as CDKN1A (p21) in SJSA-1 xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "A single oral dose of NVP-CGM097, 100 mg/kg, led to stabilization of p53 and elevation of p53 target genes such as CDKN1A (p21) at the mRNA level (Figure 5A, left) and at the protein level (Figure 5A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "75e3c42b-49d4-4efa-8f92-b50b4594d65f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C59",
+      "claim": "Treatment of SJSA-1 xenografted tumors with NVP-CGM097 led to dose-dependent tumor growth inhibition with 65% tumor regression at 100 mg/kg daily.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of SJSA-1 xenografted tumors with NVP-CGM097 led to dose-dependent tumor growth inhibition with 65% tumor regression at 100 mg/kg daily (Figure 5B, left) and was well tolerated as measured by body weight (Figure 5B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4c906179-2bca-402d-befc-7a8ca38aa77b",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C60",
+      "claim": "NVP-CGM097 treatment was well tolerated as measured by body weight in SJSA-1 xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of SJSA-1 xenografted tumors with NVP-CGM097 led to dose-dependent tumor growth inhibition with 65% tumor regression at 100 mg/kg daily (Figure 5B, left) and was well tolerated as measured by body weight (Figure 5B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "57633857-4370-4e35-b602-0a87ca35152c",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C61",
+      "claim": "The anti-tumor activity of NVP-CGM097 correlated with dose-dependent induction of p21 and HDM2 in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-tumor activity of NVP-CGM097 correlated well with a dose-dependent induction in tumors of p21 and HDM2 at the mRNA level and/or protein levels (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "ab8cef1d-3a94-491d-8df8-d52794736c8a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C62",
+      "claim": "27/55 human primary xenograft tumor models were predicted to be sensitive to NVP-CGM097, and of these 27 models, 19 were truly sensitive, resulting in a PPV of 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6A and Figure 6\u2014source data 1, 27/55 human primary xenograft tumor models were predicted to be sensitive to NVP-CGM097, and of these 27 models, 19 were truly sensitive, resulting in a PPV of 70%, improving the basal response rate of 49% (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 6A and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "845173a7-9f97-4b1d-b3af-db9eb3fa9a6e",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C63",
+      "claim": "28/55 in vivo models were predicted to be insensitive to NVP-CGM097, and 20/28 were truly insensitive, leading to an NPV of 71%.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 28/55 in vivo models were predicted to be insensitive, and 20/28 were found to indeed be truly insensitive, leading to a significant NPV of 71% (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "69f3a7de-d53c-468a-a139-0524db244720",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C64",
+      "claim": "21/33 wild-type p53 human PDX models were predicted to be sensitive to NVP-CGM097 and of these, 18 were truly sensitive, resulting in a PPV of 86%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6B, 21/33 wild-type p53 human PDX models were predicted to be sensitive to NVP-CGM097 and of these, 18 were truly sensitive, resulting in a PPV of 86%, again significantly improving the basal response rate of 70% (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "c0f7aa92-2fff-44c0-bd7f-5050dd0878ae",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C65",
+      "claim": "The in vitro predictive model performance was confirmed in vivo using PDX models.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the in vitro predictive model performance shown in Figure 2 and Figure 2\u2014source data 1 was confirmed in vivo using PDX models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the PDX validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "f78eb88d-c5cc-4c33-bfa3-7c81a83645e5",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C66",
+      "claim": "The 13-gene signature is a better predictor for response to p53-HDM2 inhibitors compared to a selection strategy solely based on p53 mutation status.",
+      "claim_type": "EXPLICIT",
+      "source": "The results further validate the 13-gene signature as a better predictor for response to p53\u2013HDM2 inhibitors as compared to a selection strategy solely based on p53 mutation status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion from the validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "7a9a562d-3879-4737-b711-4ad009533c16",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C67",
+      "claim": "NVP-CGM097 and NVP-CFC218 differ from Nutlin analogs and other p53-HDM2 inhibitors in binding mode within the p53 binding site of HDM2.",
+      "claim_type": "EXPLICIT",
+      "source": "As to compare with Nutlin 3a, NVP-CGM097 and NVP-CFC218 show differences in binding mode within the p53 binding site of HDM2 (Jeay et al., 2014; Valat et al., 2014, manuscript in preparation), which allows better in vitro and in vivo on-target potency, more favorable drug-like properties, and improved in vivo behavior of this compound family (Ferretti et al., 2014; Jeay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the discussion with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "61c5aebd-0249-46aa-81e4-1fabb95d7530",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C68",
+      "claim": "Some p53 target genes can be 'primed' to be switched on even before the p53 protein is activated, leading to rapid transcription following p53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors imply that some p53 target genes can be 'primed' to be switched on even before the p53 protein is activated, leading to a rapid transcription of these genes following p53 activation (Allen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "7c2511d1-8c9a-4e1b-8e64-68bb11391a07",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C69",
+      "claim": "CDKN1A, HDM2, CCNG1, DDB2, FDXR, BAX, TNFRSF10B, and AEN were found to be within the top most transcribed genes following Nutlin-3 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these p53 target genes, such as CDKN1A, HDM2, CCNG1, DDB2, FDXR, BAX, TNFRSF10B, and AEN, were found to be within the top most transcribed genes following Nutlin-3 treatment (Allen et al., 2014) and coincidently are all included in the 13-gene signature described in Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "de33286c-d285-4106-8435-d373384f9279",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C70",
+      "claim": "The p53 target gene set within the predictive 13-gene signature is representative of an underlying activated p53 pathway that renders cancer cells sensitive to p53-HDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking together, these observations strongly suggest that the p53 target gene set contained within the predictive 13-gene signature is representative of an underlying activated p53 pathway that renders cancer cell lines and patient-derived tumor xenografts sensitive to p53\u2013HDM2 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an interpretation in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "a5af6df3-e2d1-46c4-89a6-b0c4421d237b",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C71",
+      "claim": "The 13-gene signature discriminates mutant p53 from wild-type p53 tumors and also tumors with a silent p53 pathway from those with an activated pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is reasonable to think that the 13-gene signature discovered here is best at predicting sensitivity to p53\u2013HDM2 inhibitors, since it not only discriminates mutant p53 from wild-type p53 tumors, but also tumors that have an intact p53 gene but a silent p53 pathway from those that are p53 wild-type and bear an activated pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an interpretation in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4d65ed74-1777-460a-a567-725b00d70a1d",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C72",
+      "claim": "Tumors with p53 wild-type and an activated pathway may be more prone to quickly induce a robust p53-dependent transcriptional response upon exposure to p53-HDM2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the latter may be more prone to quickly induce a robust p53-dependent transcriptional response upon exposure to p53\u2013HDM2 inhibitors, thus being more sensitive to this specific anti-cancer therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a postulate in the discussion.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "a69b68e2-a50f-4047-b34c-897a34683c60",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C73",
+      "claim": "The 13-gene signature is currently being evaluated in a Phase I clinical trial (NCT01760525) in cancer patients bearing p53 wild-type tumors treated with NVP-CGM097.",
+      "claim_type": "EXPLICIT",
+      "source": "On these bases, we are currently evaluating the 13-gene signature in a Phase I clinical trial (NCT01760525), in cancer patients bearing p53 wild-type tumors treated with NVP-CGM097.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "2b349b66-3b65-4df8-a2ed-08cb73c23801",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C74",
+      "claim": "The 13-gene signature's positivity reflects activity of the p53 pathway, demonstrating the relationship between the biomarker set and the mechanism of action of the targeted therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the finding that the 13-gene signature corresponds to a set of p53 target genes and that its positivity reflects activity of the p53 pathway, demonstrates the intimate relationship between the biomarker set and the mechanism of action of the targeted therapy, hence its potentially broad applicability to any selective p53\u2013HDM2 inhibitor for optimal patient selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "30404a9f-0bec-4747-9e21-ea58f4cc9dff",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C75",
+      "claim": "The 13-gene signature has potentially broad applicability to any selective p53-HDM2 inhibitor for optimal patient selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the finding that the 13-gene signature corresponds to a set of p53 target genes and that its positivity reflects activity of the p53 pathway, demonstrates the intimate relationship between the biomarker set and the mechanism of action of the targeted therapy, hence its potentially broad applicability to any selective p53\u2013HDM2 inhibitor for optimal patient selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "b0ed9918-efd9-40b7-b6a9-961ccef1409c",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C76",
+      "claim": "NVP-CGM097 has superior pharmacokinetic properties and oral bioavailability compared to NVP-CFC218.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vivo experiments were performed with NVP-CGM097, owing to its superior pharmacokinetic properties and oral bioavailability as compared to NVP-CFC218 (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "df38c4ff-8ced-4de4-97ab-75e7fbee6f08",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C77",
+      "claim": "The dose and schedule chosen for in vivo validation was 100 mg/kg NVP-CGM097 given orally, once daily.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, based on these results, the dose and schedule chosen for the follow up in vivo validation of the 13-gene signature was established at 100 mg/kg NVP-CGM097 given orally, once daily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "712bc885-27c5-4368-ab44-2f8917cca9d0",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C78",
+      "claim": "A total of 55 PDX models were used for in vivo validation studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 55 PDX models were used for these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "fd5380d6-4bab-4f52-a934-d974f7558dcf",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C79",
+      "claim": "The 13-gene signature revealed new indications of potential interest for p53-HDM2 inhibitors, such as renal cell carcinoma and hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the application of the signature across a large set of human tumor samples revealed new indications of potential interest for the development of p53\u2013HDM2 inhibitors, such as renal cell carcinoma and hepatocellular carcinoma (Figure 4C), that had been previously missed due to their under-representation in the set of CCLE cell lines tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "ef875179-1b02-4184-8bd8-5edf5bf620c5",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C80",
+      "claim": "The basal response rate to NVP-CGM097 in all PDX models was 49%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6A and Figure 6\u2014source data 1, 27/55 human primary xenograft tumor models were predicted to be sensitive to NVP-CGM097, and of these 27 models, 19 were truly sensitive, resulting in a PPV of 70%, improving the basal response rate of 49% (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "3712cf16-bd42-4b1c-a090-53095bcb1a5b",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C81",
+      "claim": "The basal response rate to NVP-CGM097 in wild-type p53 PDX models was 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6B, 21/33 wild-type p53 human PDX models were predicted to be sensitive to NVP-CGM097 and of these, 18 were truly sensitive, resulting in a PPV of 86%, again significantly improving the basal response rate of 70% (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "1d4e0043-49d9-480a-9f76-a7d470b0753d",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C82",
+      "claim": "The enrichment of response when using the 13-gene signature was strongly significant compared to the baseline response rate of 19% without prior stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of response when using the 13-gene signature and associated predictive model as a sample stratification strategy was also strongly significant when compared to the baseline response rate without prior stratification, estimated from the NVP-CFC218 sensitivity data as 19%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "1eec8423-4844-40ee-b491-a7fdf3f6aaf1",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C83",
+      "claim": "The maximum classification accuracy was observed when 17 genes were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "The classification accuracy, averaged over twenty bootstraps, was generally higher than 80% with a maximum of \u223c93% when 17 genes were selected (Figure 2A, red dot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "99492e92-7325-45e3-9c62-db795904b0d9",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C84",
+      "claim": "The average classification accuracy with the fewest features within 1 SEM of the maximum was when 13 genes were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "The average classification accuracy with the fewest features within 1 SEM of the maximum was when 13 genes were selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "5a1cc0ec-5190-4597-b6a8-1069b8150901",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C85",
+      "claim": "Fifty five different features were selected at least once in 100 bootstrapped selections, and the top 13 features were selected more than 30 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifty five different features were selected at least once and the top 13 features were selected more than 30 times.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "01c961ea-c50c-48cc-9bb9-fb062848e163",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C86",
+      "claim": "The 11 most frequent features were selected in more than 70 of the 100 bootstrapped selections.",
+      "claim_type": "EXPLICIT",
+      "source": "The 11 most frequent features were selected in more than 70 of the 100 bootstrapped selections, and the 9 most frequent ones appeared in more than 90 selections (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "921367d9-fcef-42bc-98be-446c3b8d5699",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C87",
+      "claim": "The 9 most frequent features appeared in more than 90 of the 100 bootstrapped selections.",
+      "claim_type": "EXPLICIT",
+      "source": "The 11 most frequent features were selected in more than 70 of the 100 bootstrapped selections, and the 9 most frequent ones appeared in more than 90 selections (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4b9e9213-cb6d-4814-a29b-ef0f406b6ab9",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C88",
+      "claim": "The 13th signature member was replaced by the 14th most frequently selected feature, TNFRSF10B, another p53 transcriptional target.",
+      "claim_type": "EXPLICIT",
+      "source": "Since no annotation for the 13th signature member was available at the time of the signature development, and to be consistent with the bootstrapping results, we replaced the 13th signature member by the 14th most frequently selected feature, TNFRSF10B, another p53 transcriptional target (Wu et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "0ad7892c-bc07-4aaf-8b49-1903f9353b6b",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C89",
+      "claim": "TP53 mutation status was the feature most associated with response to NVP-CFC218 (p-value = 2.46 \u00d7 10\u221226) with an odds-ratio of 0.013.",
+      "claim_type": "EXPLICIT",
+      "source": "The TP53 mutation status was the feature most associated with response to NVP-CFC218 (p-value = 2.46 \u00d7 10\u221226), with an odds-ratio of 0.013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d4e3b60b-c623-475e-ac28-4a1cc502e4a5",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C90",
+      "claim": "The cut-off for sensitivity to NVP-CGM097 in the independent validation set was fixed at IC50 \u2264 3 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the manual assay format differing slightly from the high-throughput assay, the cut-off for sensitivity was fixed at IC50 \u2264 3 \u00b5M for both p53\u2013HDM2 inhibitors and predictions of sensitivity for every cell line were derived using the 13-gene signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "990f19ef-8c59-4a59-9f34-85c1fce9428f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C91",
+      "claim": "The cut-off for sensitivity to NVP-CFC218 in the independent validation set was fixed at IC50 \u2264 3 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the manual assay format differing slightly from the high-throughput assay, the cut-off for sensitivity was fixed at IC50 \u2264 3 \u00b5M for both p53\u2013HDM2 inhibitors and predictions of sensitivity for every cell line were derived using the 13-gene signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "12581d42-9a62-489e-8873-54058e02dfab",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C92",
+      "claim": "Sensitivity measures for the 13-gene signature in the validation set were comparable to the sensitivity estimate obtained by bootstrapping the predictive model training data (87.3% \u00b1 10.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed a slight decrease in specificity relative to the bootstrap estimate, sensitivity measures were 89% and 91% (Figure 3C), respectively, which is comparable to the sensitivity estimate obtained by bootstrapping the predictive model training data (87.3% \u00b1 10.4%, see Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "dcaeaf20-dd0f-40bf-85ec-1356cf3dc81f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C93",
+      "claim": "The proportion of samples scoring positive for the 13-gene signature was found to be quite variable within multiple lineages tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the prevalence of the 13-gene signature was found to be quite variable within the multiple lineages tested (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "21409285-08bb-4b88-a045-4eccedd2fc74",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C94",
+      "claim": "The lineage-specific proportion of samples scoring positive for the 13-gene signature was strikingly comparable to the proportion of sensitive cell lines to NVP-CFC218 in a given lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, the lineage-specific proportion of samples scoring positive for the 13-gene signature was strikingly comparable to the proportion of sensitive cell lines to NVP-CFC218, in a given lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "f4ea09cb-e0fb-4eac-856d-eb8c352d47ab",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C95",
+      "claim": "Sensitivity and Specificity features of the 13-gene signature in PDX models were comparable to the predictive model performance estimated on cell lines by the bootstrapping protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Sensitivity and Specificity features were comparable to the predictive model performance estimated on cell lines by the bootstrapping protocol (Figure 6C; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the results and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "61e2ec36-92f3-4d93-8795-c451f0de9a99",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "claim_id": "C96",
+      "claim": "The dihydroisoquinolinone core of NVP-CGM097 and NVP-CFC218 occupies the center of the HDM2 cleft and allows for positioning of appropriate substituents in this sub-pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The dihydroisoquinolinone core occupies the center of the cleft and allows for the positioning of appropriate substituents in this sub-pocket (manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1bd80066-7453-4082-9445-4925d0942371",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NVP-CGM097 and NVP-CFC218 are novel, highly specific p53-HDM2 inhibitors based on an isoquinolinone scaffold. Both compounds selectively disrupt the p53-HDM2 interaction with IC50 values of ~1.7 nM for HDM2, while showing >1000-fold lower activity against HDMX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide biochemical data demonstrating nanomolar potency against HDM2 and selectivity over HDMX. The structural design rationale (C22, C96) is supported by citations. The compounds' specificity is well-characterized through multiple orthogonal assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "81da7037-e61b-46ce-85e6-33068d2248e7",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NVP-CGM097 and NVP-CFC218 demonstrate p53-dependent cellular activity with 34-58-fold selectivity in isogenic cell line pairs comparing p53 wild-type versus p53-null cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide quantitative selectivity data from two independent isogenic cell line systems (HCT116 and SJSA-1/SAOS-2 pairs). The consistent selectivity across both systems and compounds (C32) strongly supports p53-dependent mechanism of action.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4866a7fc-6628-45d1-9248-398ae232675d",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Large-scale cell line profiling (356 cell lines) revealed that while p53 wild-type status is significantly associated with NVP-CFC218 sensitivity (p=5.1\u00d710\u207b\u00b2\u00b3), 57% of p53 wild-type cell lines remain insensitive, indicating p53 status alone is insufficient for patient selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 provide comprehensive profiling data with appropriate statistical analysis. The observation that 57% of p53-WT cells are insensitive (C40) is critical and well-documented. The orthogonal compound class enrichment analysis (C39) provides independent validation of the p53-dependency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A 13-gene expression signature was identified through bootstrapped feature selection, achieving 93% accuracy, 87% sensitivity, and 94% specificity. All 13 genes are p53 target genes that are up-regulated in sensitive cell lines, suggesting pre-existing p53 pathway activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C83-C88 describe rigorous statistical methodology with bootstrapping validation. The enrichment for p53 target genes (C43) is well-documented with citations in Table 1. The interpretation that up-regulation reflects pre-existing p53 activation (C45) is reasonable given the data, though somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4b48a7e5-80ab-41bb-9494-98ccbd033462",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The 13-gene signature outperforms both TP53 mutation status and a larger 215-feature model in predicting drug response, with superior positive predictive value (76% vs 63% vs 59%) and AUC (0.947 vs 0.855).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 provide direct comparative performance metrics with appropriate statistical measures (AUC, PPV, precision-recall). The superiority of the 13-gene signature is demonstrated across multiple performance metrics. Claim C89 confirms TP53 mutation as the single most associated feature, validating the biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "d9b48336-b1df-422c-839d-136af6d30e2a",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 13-gene signature has utility in TP53 wild-type genetic backgrounds for further stratification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by Figure 2\u2014figure supplement 2 showing performance in p53-WT backgrounds. The signature provides meaningful stratification (PPV 88.7% vs baseline 63.2%) even within p53-WT tumors, addressing the key clinical need identified in C40-C41.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Independent validation in 52 cell lines for NVP-CGM097 and 38 for NVP-CFC218 confirmed the 13-gene signature's predictive performance with sensitivity of 89-91%, comparable to bootstrap estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 provide validation data in an independent cell line set. The sensitivity measures (C54, C92) are consistent with training set estimates. The slight decrease in specificity is acknowledged. The concordance between NVP-CGM097 and NVP-CFC218 responses (C51) validates the shared mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "0758bf1f-f726-41a7-98d8-be73c32d7695",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Application of the 13-gene signature to ~21,300 primary human tumor samples showed lineage-specific prevalence comparable to cell line sensitivity patterns, suggesting the signature is not an artifact of in vitro culture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 demonstrate concordance between primary tumor signature prevalence and cell line sensitivity across lineages (Figure 4A-B). This cross-validation between primary and cultured samples (C56) provides strong evidence against culture artifacts. The large sample size (C57) enhances confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "ca764e09-e43b-4e55-bc4e-b2d67b5b89ee",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The 13-gene signature revealed new indications of potential interest for p53-HDM2 inhibitors, including renal cell carcinoma and hepatocellular carcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by Figure 4C showing signature prevalence across tumor types. The identification of underrepresented indications in CCLE is a valid discovery from the primary tumor analysis. However, this represents hypothesis generation rather than validated therapeutic efficacy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "ec6875ce-e45f-421c-8190-5d525976d2b8",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NVP-CGM097 demonstrated dose-dependent anti-tumor activity in SJSA-1 xenografts with 65% tumor regression at 100 mg/kg daily, correlating with p53 stabilization and induction of p53 target genes (p21, HDM2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide comprehensive pharmacodynamic and efficacy data in a well-characterized model. The correlation between drug exposure, target engagement (p53/p21 induction), and tumor response is well-documented. The dose selection rationale (C76-C77) based on PK and PD is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "01be9c7d-43f5-41f6-8651-38e7134aa067",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In 55 patient-derived xenograft models, the 13-gene signature achieved 70% PPV and 71% NPV, improving upon the 49% baseline response rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 provide in vivo validation data with appropriate performance metrics. The improvement over baseline (C80) is statistically meaningful. The sample size (C78) is adequate for validation. The balanced performance in both PPV and NPV indicates robust predictive capability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "cb7ed366-0106-4543-9b6d-2e27948804a4",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In p53 wild-type PDX models (n=33), the 13-gene signature achieved 86% PPV, significantly improving upon the 70% baseline response rate in this pre-selected population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 demonstrates the signature's utility even in p53-WT pre-selected tumors, addressing the key clinical question. The 16% improvement in PPV over baseline (C81) is clinically meaningful and validates the signature's added value beyond p53 mutation testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "8b27a14a-d416-4858-a1d4-6aaaba6ba99e",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The in vivo PDX validation confirmed the in vitro predictive model performance and validated the 13-gene signature as superior to p53 mutation status alone for predicting response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C95 summarize the validation results. The consistency between in vitro bootstrap estimates and in vivo PDX performance (C95, Figure 6C) is strong evidence for model robustness. The superiority over p53 mutation alone is demonstrated across multiple validation sets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "85eada0c-b8f4-4fd8-a342-a0ab94572fc5",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 13-gene signature enrichment was strongly significant compared to the 19% baseline response rate without stratification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 provides important context for the clinical utility of the signature. The comparison to unstratified baseline (19%) demonstrates substantial enrichment. However, the manuscript should clarify how this 19% baseline was calculated from the NVP-CFC218 data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The 13-gene signature predicts sensitivity to NVP-CGM097 in both cell lines and PDX models. All genes are p53 target genes, suggesting the signature reflects at least partially activated p53 pathway in sensitive tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C19-C21 are well-supported by the comprehensive validation data across cell lines and PDX models. The interpretation that the signature reflects activated p53 (C4, C21) is reasonable given all genes are documented p53 targets (C3, C20), though this remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "84e5fb22-e276-4432-902c-7a676c3f2b40",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A patient selection strategy based only on p53 status will not optimally enrich for patients with high likelihood of responding to p53-HDM2 inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is strongly supported by the observation that 57% of p53-WT cells are insensitive (C40) and the superior performance of the 13-gene signature over p53 mutation status across multiple validation sets. This is a key clinical conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "4fa1066d-5395-4cb3-90b9-9530005d1cc2",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The 13-gene signature likely identifies tumors with 'primed' p53 target genes that can rapidly respond to p53-HDM2 inhibition, discriminating not only mutant from wild-type p53 but also silent from activated p53 pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 cite external work (Allen et al., 2014) showing gene priming, and C69 notes overlap with the signature. However, C70-C72 represent mechanistic interpretations and postulates not directly tested in this study. While plausible and consistent with the data, these claims require additional experimental validation of the 'priming' hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "374ff814-8489-409c-a087-e72f5b5b6d2f",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "NVP-CGM097 and NVP-CFC218 differ from Nutlin analogs in binding mode within the HDM2 pocket, allowing improved potency and drug-like properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by citations to structural studies (Jeay et al., 2014; Valat et al., 2014). The superior PK properties are documented in Table 2 (C76). However, direct head-to-head comparison data with Nutlin would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "e146b92f-0367-4390-93fa-c4f9741f37c0",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The 13-gene signature is being evaluated in a Phase I clinical trial (NCT01760525) and has potentially broad applicability to any selective p53-HDM2 inhibitor for patient selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 states an ongoing clinical trial, which is verifiable. Claim C74 correctly summarizes the mechanistic basis for the signature. Claim C75 regarding broad applicability is reasonable given the mechanism-based nature of the signature, though validation with other HDM2 inhibitors would be needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "b5c687ac-ed25-42c4-978f-a25e2f95c312",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background on p53 biology, HDM2 regulation, and the rationale for HDM2 inhibition as cancer therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C14 provide well-established background information supported by appropriate citations to the literature. These are standard knowledge claims that provide context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    },
+    {
+      "id": "ece3428a-4bdb-4a45-80f3-8129756f94f0",
+      "content_id": "a230d66e-65b7-445e-935d-3432c7d3d481",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Analysis of 356 cell lines confirmed p53 mutant cells fail to respond to HDM2 inhibitors, while wild-type p53 cells show heterogeneous sensitivity not solely associated with HDM2 amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 are supported by the profiling data (C33-C40). The confirmation of p53-dependency (C17) validates the mechanism. The heterogeneity in p53-WT cells (C18) is a key observation motivating the signature development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:55:05.559309Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8d069d8d-3f1d-47b4-8ec0-be8557269278",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "38992fc3-7c48-4350-91f1-d02d85a01fd8",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "f4acea25-cad5-4ced-9034-a21163a71a23",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "be4a3e21-197f-4eca-9efd-281dfdc2fca8",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "38e8b8e2-fe9d-44b3-8b33-f594d18b0cc4",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "efd0f258-cfec-49c7-af7c-77f809e4ffc6",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "efddbf5f-1395-4068-a6ba-2c4626192496",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "d25a005b-71a0-4f73-b9d9-f8729f7c477e",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "d444255b-e766-4bcc-b1a6-cac4f33b74c9",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "61e2ec36-92f3-4d93-8795-c451f0de9a99",
+      "result_id": "1bd80066-7453-4082-9445-4925d0942371"
+    },
+    {
+      "claim_id": "524348af-e745-48c1-9567-117e75b967f8",
+      "result_id": "81da7037-e61b-46ce-85e6-33068d2248e7"
+    },
+    {
+      "claim_id": "458d29e5-9ea2-42f1-9559-80d17ac7ffdc",
+      "result_id": "81da7037-e61b-46ce-85e6-33068d2248e7"
+    },
+    {
+      "claim_id": "e281db2e-603e-4240-9367-84819bbcd65a",
+      "result_id": "81da7037-e61b-46ce-85e6-33068d2248e7"
+    },
+    {
+      "claim_id": "31397974-56f8-4eea-8a2f-e4a9b72ebdda",
+      "result_id": "81da7037-e61b-46ce-85e6-33068d2248e7"
+    },
+    {
+      "claim_id": "9ee55965-abc6-455b-8d62-eee40dcf5c72",
+      "result_id": "81da7037-e61b-46ce-85e6-33068d2248e7"
+    },
+    {
+      "claim_id": "8c03a927-8e0f-4ccd-915a-bdb002d272aa",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "61499a08-a6c6-4b57-8478-dc333492289b",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "2c3459ee-52f1-467f-b40c-928763daca98",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "d82a152d-3a68-4ced-9343-a71d0d9290cb",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "ecaa6caf-90c8-4d67-adc8-17534eaca01a",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "d29f9643-553c-4652-81d0-bd126bd557e8",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "38f1db92-a6e6-47d3-bbe0-5bd62debdbb6",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "68bacec6-860e-46cd-b75c-afaac409632a",
+      "result_id": "4866a7fc-6628-45d1-9248-398ae232675d"
+    },
+    {
+      "claim_id": "8fc7233b-cd34-4883-a4bb-9323ba7de816",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "9a03cc7c-71ce-431d-b5a2-ba1947977265",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "e378cd7f-69c9-4beb-9388-fc1e09f052cb",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "02e186c3-5a22-42d1-a7aa-20181589d6b6",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "1eec8423-4844-40ee-b491-a7fdf3f6aaf1",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "99492e92-7325-45e3-9c62-db795904b0d9",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "5a1cc0ec-5190-4597-b6a8-1069b8150901",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "01c961ea-c50c-48cc-9bb9-fb062848e163",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "921367d9-fcef-42bc-98be-446c3b8d5699",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "4b9e9213-cb6d-4814-a29b-ef0f406b6ab9",
+      "result_id": "fa41ffa5-6a72-4a16-931e-af0a6d2b6b1f"
+    },
+    {
+      "claim_id": "a3195a9c-34b3-41e9-a11b-00b9effdd213",
+      "result_id": "4b48a7e5-80ab-41bb-9494-98ccbd033462"
+    },
+    {
+      "claim_id": "d180376d-309e-4a92-ae43-a4acf58b165f",
+      "result_id": "4b48a7e5-80ab-41bb-9494-98ccbd033462"
+    },
+    {
+      "claim_id": "90a329a7-aaca-4503-9996-fb9f95264144",
+      "result_id": "4b48a7e5-80ab-41bb-9494-98ccbd033462"
+    },
+    {
+      "claim_id": "89f5f4fc-5fe9-4d4d-90d2-3b2ee62fabc7",
+      "result_id": "4b48a7e5-80ab-41bb-9494-98ccbd033462"
+    },
+    {
+      "claim_id": "0ad7892c-bc07-4aaf-8b49-1903f9353b6b",
+      "result_id": "4b48a7e5-80ab-41bb-9494-98ccbd033462"
+    },
+    {
+      "claim_id": "4795ff77-efa0-45a8-b976-2b80145763be",
+      "result_id": "d9b48336-b1df-422c-839d-136af6d30e2a"
+    },
+    {
+      "claim_id": "d0a406ec-99fa-4509-a423-c645dee638de",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "69712a0d-8b3b-45e8-bdef-e2e490f5bb22",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "25d7fe70-2136-4a41-8d19-7d1a30420863",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "43d9cb93-72b4-4fbd-87a5-bf20a316974a",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "18921bc4-0fef-49e1-8a92-ceb83f91910d",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "d4e3b60b-c623-475e-ac28-4a1cc502e4a5",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "990f19ef-8c59-4a59-9f34-85c1fce9428f",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "12581d42-9a62-489e-8873-54058e02dfab",
+      "result_id": "3c90ef05-a1ee-45f4-a279-489ae5a9a217"
+    },
+    {
+      "claim_id": "9fbad765-df8b-42ec-9865-d8a9042d95e9",
+      "result_id": "0758bf1f-f726-41a7-98d8-be73c32d7695"
+    },
+    {
+      "claim_id": "f66c5028-d23d-426e-9005-f57c30f22666",
+      "result_id": "0758bf1f-f726-41a7-98d8-be73c32d7695"
+    },
+    {
+      "claim_id": "dcaeaf20-dd0f-40bf-85ec-1356cf3dc81f",
+      "result_id": "0758bf1f-f726-41a7-98d8-be73c32d7695"
+    },
+    {
+      "claim_id": "21409285-08bb-4b88-a045-4eccedd2fc74",
+      "result_id": "0758bf1f-f726-41a7-98d8-be73c32d7695"
+    },
+    {
+      "claim_id": "fd5380d6-4bab-4f52-a934-d974f7558dcf",
+      "result_id": "ca764e09-e43b-4e55-bc4e-b2d67b5b89ee"
+    },
+    {
+      "claim_id": "b0ed9918-efd9-40b7-b6a9-961ccef1409c",
+      "result_id": "ec6875ce-e45f-421c-8190-5d525976d2b8"
+    },
+    {
+      "claim_id": "df38c4ff-8ced-4de4-97ab-75e7fbee6f08",
+      "result_id": "ec6875ce-e45f-421c-8190-5d525976d2b8"
+    },
+    {
+      "claim_id": "4164b44b-16c9-43cb-a0be-43d3f3778051",
+      "result_id": "ec6875ce-e45f-421c-8190-5d525976d2b8"
+    },
+    {
+      "claim_id": "75e3c42b-49d4-4efa-8f92-b50b4594d65f",
+      "result_id": "ec6875ce-e45f-421c-8190-5d525976d2b8"
+    },
+    {
+      "claim_id": "4c906179-2bca-402d-befc-7a8ca38aa77b",
+      "result_id": "ec6875ce-e45f-421c-8190-5d525976d2b8"
+    },
+    {
+      "claim_id": "57633857-4370-4e35-b602-0a87ca35152c",
+      "result_id": "ec6875ce-e45f-421c-8190-5d525976d2b8"
+    },
+    {
+      "claim_id": "ab8cef1d-3a94-491d-8df8-d52794736c8a",
+      "result_id": "01be9c7d-43f5-41f6-8651-38e7134aa067"
+    },
+    {
+      "claim_id": "845173a7-9f97-4b1d-b3af-db9eb3fa9a6e",
+      "result_id": "01be9c7d-43f5-41f6-8651-38e7134aa067"
+    },
+    {
+      "claim_id": "712bc885-27c5-4368-ab44-2f8917cca9d0",
+      "result_id": "01be9c7d-43f5-41f6-8651-38e7134aa067"
+    },
+    {
+      "claim_id": "ef875179-1b02-4184-8bd8-5edf5bf620c5",
+      "result_id": "01be9c7d-43f5-41f6-8651-38e7134aa067"
+    },
+    {
+      "claim_id": "69f3a7de-d53c-468a-a139-0524db244720",
+      "result_id": "cb7ed366-0106-4543-9b6d-2e27948804a4"
+    },
+    {
+      "claim_id": "3712cf16-bd42-4b1c-a090-53095bcb1a5b",
+      "result_id": "cb7ed366-0106-4543-9b6d-2e27948804a4"
+    },
+    {
+      "claim_id": "c0f7aa92-2fff-44c0-bd7f-5050dd0878ae",
+      "result_id": "8b27a14a-d416-4858-a1d4-6aaaba6ba99e"
+    },
+    {
+      "claim_id": "f78eb88d-c5cc-4c33-bfa3-7c81a83645e5",
+      "result_id": "8b27a14a-d416-4858-a1d4-6aaaba6ba99e"
+    },
+    {
+      "claim_id": "f4ea09cb-e0fb-4eac-856d-eb8c352d47ab",
+      "result_id": "8b27a14a-d416-4858-a1d4-6aaaba6ba99e"
+    },
+    {
+      "claim_id": "1d4e0043-49d9-480a-9f76-a7d470b0753d",
+      "result_id": "85eada0c-b8f4-4fd8-a342-a0ab94572fc5"
+    },
+    {
+      "claim_id": "04ec41db-dba4-43d9-b4ac-f9216499bfe0",
+      "result_id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13"
+    },
+    {
+      "claim_id": "073ba6db-704e-493d-a812-3489118b9f1f",
+      "result_id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13"
+    },
+    {
+      "claim_id": "90ff7572-2388-4046-9a09-8070f62868a9",
+      "result_id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13"
+    },
+    {
+      "claim_id": "1daa4dc4-14d2-4b44-898c-f9a855dc1693",
+      "result_id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13"
+    },
+    {
+      "claim_id": "a7995a70-032e-4b35-ae27-51f54cc70fa1",
+      "result_id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13"
+    },
+    {
+      "claim_id": "edaec442-b461-4c1c-8bfb-5e3c463edf65",
+      "result_id": "9e9f87dd-a13d-4580-b804-a1b6bc006c13"
+    },
+    {
+      "claim_id": "5ef31d85-31d2-4063-a6b7-c2ff1fd2d46d",
+      "result_id": "84e5fb22-e276-4432-902c-7a676c3f2b40"
+    },
+    {
+      "claim_id": "61c5aebd-0249-46aa-81e4-1fabb95d7530",
+      "result_id": "4fa1066d-5395-4cb3-90b9-9530005d1cc2"
+    },
+    {
+      "claim_id": "7c2511d1-8c9a-4e1b-8e64-68bb11391a07",
+      "result_id": "4fa1066d-5395-4cb3-90b9-9530005d1cc2"
+    },
+    {
+      "claim_id": "de33286c-d285-4106-8435-d373384f9279",
+      "result_id": "4fa1066d-5395-4cb3-90b9-9530005d1cc2"
+    },
+    {
+      "claim_id": "a5af6df3-e2d1-46c4-89a6-b0c4421d237b",
+      "result_id": "4fa1066d-5395-4cb3-90b9-9530005d1cc2"
+    },
+    {
+      "claim_id": "4d65ed74-1777-460a-a567-725b00d70a1d",
+      "result_id": "4fa1066d-5395-4cb3-90b9-9530005d1cc2"
+    },
+    {
+      "claim_id": "7a9a562d-3879-4737-b711-4ad009533c16",
+      "result_id": "374ff814-8489-409c-a087-e72f5b5b6d2f"
+    },
+    {
+      "claim_id": "a69b68e2-a50f-4047-b34c-897a34683c60",
+      "result_id": "e146b92f-0367-4390-93fa-c4f9741f37c0"
+    },
+    {
+      "claim_id": "2b349b66-3b65-4df8-a2ed-08cb73c23801",
+      "result_id": "e146b92f-0367-4390-93fa-c4f9741f37c0"
+    },
+    {
+      "claim_id": "30404a9f-0bec-4747-9e21-ea58f4cc9dff",
+      "result_id": "e146b92f-0367-4390-93fa-c4f9741f37c0"
+    },
+    {
+      "claim_id": "01db7e30-2fe9-45db-93f6-23ad77705230",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "991a22f9-bae1-41af-b870-df062db8bf8f",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "78b00f11-c212-4952-9263-81dd7b6500c4",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "db4133eb-cd1c-4528-8167-c012acffbaa0",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "9105dc4d-c3ed-4397-8e8d-19cce0bf7695",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "c08ed606-c6bb-46be-899e-327cf91e1b8a",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "7f76240b-b062-4b19-bf14-be96da7cac50",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "c3ecbab7-7cfb-4ef9-a259-97e03a46b32a",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "29bc16c4-9dbd-4e19-8258-54deb51f534c",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "165ec29d-48f4-4808-b22f-b1f2603c68ea",
+      "result_id": "b5c687ac-ed25-42c4-978f-a25e2f95c312"
+    },
+    {
+      "claim_id": "2dd0663e-d0de-4e38-a5e5-18dc6008e3ec",
+      "result_id": "ece3428a-4bdb-4a45-80f3-8129756f94f0"
+    },
+    {
+      "claim_id": "c62ae73f-e001-4b8d-a6a9-8090f451e7d2",
+      "result_id": "ece3428a-4bdb-4a45-80f3-8129756f94f0"
+    }
+  ],
+  "comparisons": []
+}

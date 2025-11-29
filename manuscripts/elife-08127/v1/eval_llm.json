@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C12",
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "result": "The estimation framework from Bushdid et al. (2014) is statistically inconsistent, producing estimates that vary systematically and dramatically (over 25 orders of magnitude) with arbitrary experimental parameters such as sample size, number of tests, and significance threshold. The authors demonstrate that with ~100 additional subjects, the framework would conclude all possible stimuli are discriminable, while with more conservative statistical criteria, it would conclude fewer than 5000 stimuli are discriminable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C8, C11-C12, C73, C76-C77 are strongly supported by systematic reanalysis shown in Figure 3 and Table 2. The authors successfully reproduced the original analysis (C21) and then demonstrated the fragility through parameter variation. The code is publicly available (C24), enhancing reproducibility. The demonstration of inconsistency is mathematically sound and empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The estimate violates the statistical principle of consistency because it changes systematically with sample size and significance threshold rather than converging to a stable value. This inconsistency allows the framework to produce any estimate within the allowed range, from the smallest to largest possible values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 correctly describe established statistical principles (consistency of estimators) and appropriately apply them to critique the framework. Figure 1 illustrates the concept clearly. The application of these principles to the Bushdid et al. framework is logically sound and well-demonstrated through the empirical analysis in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C49",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Equation 1 from Bushdid et al. (2014) is mathematically equivalent to the Hamming bound from coding theory, which provides an upper bound, not a lower bound as claimed in the original paper. Therefore, the calculation supports the claim that humans can discriminate at most one trillion olfactory stimuli, not at least one trillion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49, C111-C112 correctly identify Equation 1 as the Hamming bound, which is well-established in coding theory as an upper bound. The mathematical reasoning in C114-C116 is sound: for worst-case d=N=30, the correct answer is 1 (or 4), while Equation 1 gives ~4500, confirming it's an upper bound. This is a fundamental mathematical error in the interpretation of the original result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The correct lower bound is given by the Gilbert-Varshamov bound (without the factor of 2 in Equation 1), which sensibly reaches z=1 for worst-case discrimination ability, unlike the upper bound which gives several thousand even for anosmics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 correctly identify the Gilbert-Varshamov bound as the appropriate lower bound from coding theory. The mathematical reasoning is sound: the lower bound correctly reaches z=1 for d=N (C121), while the upper bound gives thousands (C122), confirming the bounds are correctly identified. Figure 6B visualizes this appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C81"
+    ],
+    "result": "The critical methodological flaw is using hypothesis testing to derive point estimates. Bushdid et al. (2014) converted discrimination data into binary 'significantly discriminable' outcomes, which acts as a strong nonlinear threshold that exaggerates small differences and makes the derived parameter d systematically dependent on sample size and significance criterion \u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75, C78, C81 identify a fundamental statistical error: using hypothesis tests (designed to assess evidence strength) to make point estimates. The explanation in C69 and C74 correctly identifies why this creates problems: each data point becomes a binary outcome dependent on sample size and test specificity. When fed into the geometrically exploding Equation 1 (C75), this produces extreme fragility. This is a valid statistical critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The sphere-packing framework is only valid if the geometry of the investigator-designed stimulus space aligns with the geometry of perceptual space (i.e., the mapping is homeomorphic). Bushdid et al. (2014) assumed each molecule is an independent olfactory primary without providing evidence for this homeomorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 correctly identify the conceptual requirement for sphere-packing approaches: the stimulus space must map homeomorphically to perceptual space. The color vision analogy (C87) effectively illustrates when this works. Claims C92-C93 correctly note that Bushdid et al. assumed independence without evidence. This is a valid conceptual critique, though the authors acknowledge remaining 'agnostic' about conceptual soundness (C10) to focus on statistical issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The estimate depends geometrically on the library size C with an exponent of ~30, leading to absurd results: doubling C increases the estimate by 2^30, and using a library of 2000 chemicals yields 10^41 discriminable stimuli (one per carbon atom on Earth). This reveals a fundamental problem with treating each molecule as an independent dimension without considering perceptual redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by Figure 5, which clearly shows the geometric dependence. The calculations are mathematically correct. Claims C104-C106 appropriately question where perceptual redundancy constrains the framework. This effectively demonstrates reductio ad absurdum: the framework produces physically implausible results, revealing its unsoundness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors conclude there is no evidence for the original claim that humans can discriminate at least one trillion olfactory stimuli. The framework is fundamentally unsound and cannot settle the question of how many olfactory stimuli humans can discriminate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9, C83-C85 represent the main conclusions, which are well-supported by the preceding analysis. The demonstration of statistical inconsistency (Result 1), misidentification of bounds (Result 3), methodological flaws (Result 5), and absurd scaling behavior (Result 7) collectively support the conclusion that the framework is unsound. The claim that 'one could pick almost any number in advance' (C84) is directly demonstrated in Figure 3 and Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C24"
+    ],
+    "result": "The authors successfully reproduced the original analysis from Bushdid et al. (2014) using the raw supplementary data, with code publicly available for verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by Figure 2, which matches the original figures from Bushdid et al. (2014). Claim C24 provides the code repository, enhancing reproducibility. This establishes that the authors correctly understood and implemented the original framework before critiquing it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The reanalysis assumes that performance in hypothetical new subjects would be similar to performance in the original subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 explicitly states this assumption, which is reasonable for demonstrating the framework's sensitivity to sample size. This is a standard assumption for power analysis and sensitivity analysis. The assumption is clearly stated and appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C40",
+      "C41",
+      "C46",
+      "C47",
+      "C48",
+      "C54",
+      "C55"
+    ],
+    "result": "The framework is based on an analogy to color vision, where the number of discriminable colors is estimated by dividing the stimulus space size by the minimally discriminable distance. For olfaction, Bushdid et al. (2014) defined a discrete high-dimensional stimulus space of mixtures and attempted to derive a critical distance d from psychophysical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C48, C54-C55 accurately describe the framework from Bushdid et al. (2014) and the sphere-packing approach. These are primarily descriptive claims about the methodology, supported by citations to the original paper and illustrated in Figure 4. The description is accurate and provides necessary context for the critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The exact number of d-spanning spheres that can be packed in a discrete space has only been computed for a few specific cases; in general, only bounds can be reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 correctly state established knowledge from coding theory and sphere packing. This is accurate background information that supports the argument that Equation 1 provides a bound rather than an exact answer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A robust estimate of d requires a steep psychometric curve where the derived d varies minimally over a wide range of threshold choices. The authors explored thresholding the fraction discriminated and concluded it does not suffice for deriving a robust d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe an alternative approach to deriving d and explain why it fails. This is supported by Figure 4\u2014figure supplement 2. The reasoning is sound: without a steep psychometric curve, the choice of threshold becomes arbitrary. This supports the broader argument about the framework's fragility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "A meaningful estimate should not require vigorous defense of specific arbitrary experimental parameter choices to maintain a particular order-of-magnitude range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 articulates a reasonable principle for evaluating estimate robustness. This is a valid statistical and scientific principle that supports the critique of the framework's sensitivity to arbitrary parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors propose an alternative framework using perceptual mapping methods (PCA, MDS, NMF) to create data-driven maps of perceptual space, then applying sphere-packing to those maps rather than to experimenter-defined stimulus spaces. This could reveal intrinsic olfactory dimensions and provide more conservative estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C130 propose an alternative approach with potential benefits. While the proposed methods (C128) are established in other fields and the logic is sound (C123-C124), this is primarily a suggestion for future work rather than a demonstrated result. The advantages are plausible but not empirically validated in this manuscript. The proposal is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C136"
+    ],
+    "result": "The data from Bushdid et al. (2014) cannot be used to create perceptual maps because each mixture is tested only once, providing no serial comparisons to anchor stimuli relative to each other. Future experiments would require serial repetition of mixtures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133, C135-C136 correctly identify a limitation of the Bushdid et al. experimental design for perceptual mapping. The reasoning is sound: perceptual mapping requires multiple comparisons of the same stimuli to establish relative distances. This is a valid observation about data requirements for the proposed alternative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Using hypothesis testing to count data points exhibiting a property may be common practice and often has benign consequences in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 speculate about common research practices and their typical consequences. These are presented as speculation (C79 uses 'may not be uncommon,' C80 uses 'may amount to') without empirical evidence. While plausible, these claims are not substantiated and serve primarily as rhetorical context for the critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Subject performance could worsen with a larger molecular library, and the denominator of Equation 1 might grow proportionally with the numerator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are explicitly speculative (the authors 'acknowledge that we cannot know in advance'). While this is a reasonable possibility, it is not demonstrated. The authors use this speculation to set up the reductio ad absurdum argument in Result 7, but these specific claims are not supported by data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Bushdid et al. (2014) proposed that humans can discriminate between at least a trillion olfactory stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 accurately cites the claim from Bushdid et al. (2014). This is a straightforward citation that establishes the target of the critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The framework has methodological problems of statistical origin that are independent of conceptual validity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 accurately describes the authors' approach: focusing on statistical problems while remaining agnostic about conceptual issues. This is supported by the structure of the paper, which demonstrates statistical inconsistency before addressing conceptual concerns about the stimulus space geometry.",
+    "result_type": "MINOR"
+  }
+]

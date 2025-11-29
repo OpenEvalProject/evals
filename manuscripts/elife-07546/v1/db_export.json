@@ -1,0 +1,1356 @@
+{
+  "submission": {
+    "id": "ce4d1572-5281-46ce-8bea-02413468742e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:53:40.662703Z",
+    "updated_at": "2025-11-29T04:53:40.662703Z"
+  },
+  "content": [
+    {
+      "id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "submission_id": "ce4d1572-5281-46ce-8bea-02413468742e",
+      "content_type": "manuscript",
+      "content_text": "# Correction: Structural basis for the prion-like MAVS filaments in antiviral innate immunity\n\n## Authors\n\n- Hui Xu<sup>1</sup>\n- Xiaojing He<sup>3</sup>\n- Hui Zheng<sup>1</sup>\n- Lily J Huang<sup>1</sup>\n- Fajian Hou<sup>2</sup>\n- Zhiheng Yu<sup>4</sup>\n- Michael Jason de la Cruz<sup>4</sup>\n- Brian Borkowski<sup>1</sup>\n- Xuewu Zhang<sup>3</sup> \u2020\n- Zhijian J Chen<sup>2</sup> \u2020\n- Qiu-Xing Jiang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell Biology University of Texas Southwestern Medical Center Dallas United States\n2. Department of Molecular Biology University of Texas Southwestern Medical Center Dallas United States\n3. Department of Pharmacology University of Texas Southwestern Medical Center Dallas United States\n4. CryoEM Shared Resources, Janelia Farm Research Campus, Howard Hughes Medical Institute Ashburn United States\n5. Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Introduction\n\nMitochondrial antiviral signaling (MAVS) protein forms prion-like aggregates mediated by the N-terminal caspase activation and recruitment domain (CARD) and activates antiviral signaling cascades. Purified MAVS CARD from culture cells self-assembles into filaments. Previously, we reported a low-resolution cryoEM structure of MAVS CARD filament, which exhibits a C3 symmetry with a rotation of \u221253.6\u00b0 and an axial rise of 16.8 \u00c5 for every unit in the filament (Xu et al., 2014). Recently, a cryoEM reconstruction of MAVS CARD filaments at 3.6 \u00c5 resolution was reported with a C1 helical symmetry of a rotation of \u2212101.1\u00b0 and an axial rise of 5.1 \u00c5 per subunit (Wu et al., 2014). The differences in these two models were carefully analyzed recently (Egelman, 2014), which suggested that the helical ambiguity in helical reconstruction was not fully resolved in our previous analysis (Xu et al., 2014). We recently collected a new dataset at higher resolutions. Using a newly developed method for analysis of helical filaments (Clemens et al., 2015), we obtained a 4.2 \u00c5 resolution reconstruction of MAVS CARD filaments purified from mammalian cells under native conditions. The new model shows that the MAVS CARD filament exhibits a C1 helical symmetry in agreement with Wu et al. (2014).\n\n## Results and discussion\n\nCryoEM images of Flag-tagged MAVS CARD (residues 1\u2013100) protein, which was expressed in HEK293T cells and purified as described previously (Xu et al., 2014), were collected using automated data acquisition in a Titan Krios with a Falcon II direct electron detector (Figure 1A; see \u2018Materials and methods\u2019 section for detail). Fourier transforms of motion-corrected raw images showed Thon rings up to \u223c3 \u00c5 (Figure 1B\u2013C). After CTF fitting, the selected raw images were phase-flipped, and individual filaments were selected interactively using EMAN2 Helixboxer (Ludtke et al., 1999). Selected filaments were segmented using individual boxes that had 90% overlap between neighboring ones. Segmented filament images were high-pass filtered at 120 \u00c5 to suppress the low-resolution variations in optical density across individual images as well as the contribution of low-resolution noise to particle alignment. The filament datasets were processed using a customized version of Relion 1.2 (Scheres, 2012; Clemens et al., 2015). This \u2018helical\u2019 Relion implemented the Iterative Helical Real Space Reconstruction (IHRSR) method (Egelman, 2010) within the framework of Relion 1.2. For 3D classification and auto-refinement, the helical symmetry was refined by the re-implemented IHRSR module hsearch and applied in real space to the 3D volume by the re-implemented IHRSR module himpose. The helically symmetrized volume was masked and used as the reference volume in the next iteration (Clemens et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07546/elife-07546-fig1-v1.jpg)\n\n**Figure 1.:** (A) A representative EM image after motion correction. (B) The power spectrum of a motion-corrected image showing Thon rings up to \u223c3 \u00c5 (bottom arrow), with the CTF fittings (white concentric rings) exhibited as white flat annuli over the power spectrum. The CTF fitting was done with CTFFIND4. (C) The quality of the CTF fitting was evaluated by comparing the rotationally averaged amplitudes from the Thon rings (green trace) with the averaged amplitudes of the fitted CTF function (dashed yellow trace). The Thon rings are visible to \u223c3 \u00c5, and the fitting is good to at least \u223c4 \u00c5\u00a0(top arrow in B). (D) Representative class averages of the new dataset showing some fine structural features. The classification was done with Relion 2D classification. (E) Summed power spectra of filaments with less than 5\u00b0 of out-of-plane tilt in the last step of refinement. Layer lines 9 and 32 (meridional) are labeled (yellow arrows). The contrast is enhanced to show layer line 32. The middle portion of the power spectrum is shown as a zoomed-in view to the top with layer lines 4 and 9 labeled. (F) Summed power of projections from the C1 map along 360 different directions normal to its helical axis.\n\nParticle images were first subjected to reference-free 2D classification and images in good classes showing fine structural details were selected for 3D classification and refinement (Figure 1D). 15,600 out of 27,915 boxed filament segments were used to calculate the final refined map. The summed power spectrum of those filaments showing less than 5\u00b0 of out-of-plane tilting in the final refinement step (Figure 1E) was calculated and compared with the summed power of the C1 map projections from 360 different directions normal to its helical axis (Figure 1F), and the layerline patterns were similar.\n\nDue to possible symmetry ambiguity, we tested two sets of starting parameters for helical reconstruction (see \u2018Materials and methods\u2019 section for detail). Reference models of C1 and C3 symmetries were calculated from our SPIDER-based analysis using sorted fractions of filament particles from the four datasets in our previous paper (Xu et al., 2014). They were filtered to 60 \u00c5 and then refined against the new dataset in helical Relion. We found that the new dataset converged better to the C1 symmetry. To reduce model bias, we also calculated a reconstruction by imposing the C1 symmetry for the first five runs of refinement to a C3 model obtained from our original analysis (Xu et al., 2014). The initial C1 symmetry parameters of a twist angle (\u0394\u03a6) = \u2212101.25\u00b0 and an axial rise (\u0394z) = 4.75 \u00c5 (from our old datasets and adjusted to 4.95 \u00c5 due to the change of the imaging system) were derived from the corresponding selection rule defined by indexing the power spectrum. After the fifth run, the refinement was continued to optimize the helical parameters and converged to (\u0394\u03a6 = \u2212101.21\u00b0 and \u0394z = 5.06 \u00c5) (Figure 2A), close to the C1 symmetry reported by Wu et al. (2014). The final map has an overall resolution of 4.18 \u00c5, estimated from the gold-standard Fourier Shell Correlation (FSC) calculated between two maps that were refined independently against the top and bottom halves of the dataset (Figure 2B; see \u2018Materials and methods\u2019 section). To examine the resolution with an independent method, we generated a B-factor weighted map based on the PDB model from Wu et al. (2014) (PDB ID: 3J6J), and used it to calculate FSC against the experimental map. A 0.5 threshold found an estimated resolution of 4.25 \u00c5 (Figure 2C), close to the one estimated by using two halves of experimental data (Figure 2B). The new map showed clear grooves in \u03b1-helices and multiple bulky side chains (Figure 2D, Video 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07546/elife-07546-fig2-v1.jpg)\n\n**Figure 2.:** (A) A side view of the cryoEM map with an atomic model of human MAVS CARD docked as a rigid body (blue: atomic model of residues 1\u201397, PDB: 3J6J). The N- and C- termini face the periphery of the filament. (B) Gold-standard Fourier Shell Correlation (FSC) curve between maps calculated from the top and bottom two halves of the selected data. The dashed line points to the estimated resolution of 4.18 \u00c5 at FSC = 0.143. (C) FSC between the segmented cryoEM map of one CARD and the map calculated from the atomic model (PDB: 3J6J, residues 1\u201397). The 0.5 thresholding yielded an estimated resolution of 4.25 \u00c5. (D) Zoomed-in views of the six \u03b1-helices with side chains shown as stick models and superimposed with the EM density (grey mesh).\n\n![Video 1.](https://cdn.elifesciences.org/articles/07546/elife-07546-media1.mp4.jpg)\n\nThe crystal structure of MAVS CARD (Potter et al., 2008) was docked into the density by rigid-body fitting. While the six \u03b1-helices of the crystal structure of MAVS CARD monomer (PDB: 2VGQ, residues 3\u201393) fitted into the EM map well, multiple bulky side chains and those residues in the loop between H4 and H5 needed adjustment. The atomic model reported previously (PDB: 3J6J, residues 1\u201397, Wu et al., 2014) fit into the density well except for some unoccupied densities next to the N- and C-termini of the docked CARD model (Figure 2A,D). These extra densities may be due to the residues from the N-terminal Flag tag and the additional three residues at the C-terminus of the protein used for preparing the cryoEM specimens; these extra residues are not present in the protein sequence shown in the atomic models.\n\nFrom the high resolution C1 map, each MAVS CARD monomer interacts with six nearby monomers using three types of intermolecular interfaces (I, II and III) (Figure 3A; Wu et al., 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07546/elife-07546-fig3-v1.jpg)\n\n**Figure 3.:** (A) A model of the MAVS CARD filament based on the cryoEM map, showing three helical turns. Each MAVS CARD interacts with six nearest neighbors: two neighbors along the helical trajectory (grey and yellow), and four neighbors between helical turns (grey and cyan, grey and orange). (B, C) Details of interactions at type I and II interfaces. Residues at the interfaces are shown as stick models. (D) The segmented cryoEM map with two MAVS CARD molecules and a magnified view of type II interface with clear EM density for W56 and R43. (E) Important residues at type III interface shown as stick models.\n\nAt interface I, the positive and negative charges are distributed at two opposite ends of each CARD subunit, indicating that this interface is mainly mediated by electrostatic interactions (Figure 3B). The positively charged residues R37 and R41 in H3, R64 and R65 in the loop between H4 and H5 from one CARD molecule (grey in Figure 3B) are in close proximity to the negatively charged residues D23 in the loop between H1b and H2 and E26 in H2 of another CARD molecule (cyan in Figure 3B). Compared with the wild-type MAVS, which potently induced IFN\u03b2 in a dose-dependent manner, D23A showed significantly decreased activity and mutations of other charged residues (E26, R37, R41, R64 and R65) at the interface to alanine or residues with reversed charge almost completely abolished MAVS activity (Xu et al., 2014).\n\nIn the crystal structure of MAVS CARD, the aromatic chain of W56 adopts two alternative conformations, with a major conformer (60% occupancy) exposed to solvent and stacked against the ring structure of residue F16 in immediate vicinity (Potter et al., 2008). In the cryoEM map, the density of one conformer is resolved (Figures 2D, 3D) and there appears density corresponding to the side chain of R43 from an adjacent CARD (Figure 3D), suggesting a possible cation\u2013pi interaction between these two residues, as reported previously (Wu et al., 2014). Alanine substitution of R43 almost completely abolished MAVS activity (Xu et al., 2014). Besides W56, the ring structures of residues F16 and Y30 also appear to be important for filament assembly. Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity, while substitutions with different ring-containing residues to these positions, such as F16H, W56F, W56Y, Y30F and Y30H, were able to largely retain MAVS activity (Xu et al., 2014). Another residue involved in stabilizing the interface is R52, whose replacement by alanine significantly decreased its activity (Xu et al., 2014).\n\nInterface III mediates the interactions between adjacent monomers along the helical trajectory. Close to the central pore of the helical filament, residue L48 from each MAVS CARD monomer contributes to the formation of a hydrophobic core with G50 and A44 in close proximity (Figure 3A, top view and Figure 3E). Substitution of L48 with charged residues (D or K), but not alanine, completely abolished MAVS activity in HEK293T cells (Xu et al., 2014). It is interesting to note that L48 is not conserved, and is R or Q in MAVS from multiple other species. The filaments might need to rearrange in order to accommodate such substitutions. The small side chain or hydrophobicity of A44 may be important for the packing at this hydrophobic interface because its mutation to T impaired MAVS CARD filament formation in vitro (Xu et al., 2014). Charged residues R37, R41, D40 and D53 are located at the outer rim of the filament forming electrostatic interactions together with charged residues at type I interface. Single alanine substitution of these residues almost completely abolished MAVS activity (Xu et al., 2014).\n\nOverall, the loss-of-function mutation data are consistent with both the C1 map reported here and the C3 map obtained previously (Xu et al., 2014). However, although key residues involved in the interactions are almost identical in the two models, the detailed interactions at the interfaces are different according to the two maps, indicating that mutagenesis analyses alone cannot distinguish one model from the other.\n\n### Conclusions\n\nMAVS CARD filaments from our new dataset converged to almost the same C1 symmetry as reported by Wu et al. (2014), not the C3 symmetry as we reported previously (Xu et al., 2014). The heterogeneity of the samples and the limited resolution of images were likely among the factors that led to the exclusion of the C1 model in the original analysis. We wish to correct this mistake and apologize for any confusion it might have caused. We stand by all other data in the paper, including in vitro mapping of the oligomerization interface, cell-based mutational analyses, super-resolution SIM imaging of MAVS aggregates in virus-infected cells, and the crystal structures. These experiments for the first time identified most of the key residues involved in MAVS polymerization, leading to an extensive mapping of the molecular surfaces for forming the MAVS filament.\n\n## Materials and methods\n\n### Sample preparation\n\nFlag-MAVS CARD (1\u2013100) expressed in HEK293T cells was purified in a buffer containing 50 mM NaCl. Freshly purified protein was processed for EM experiments to minimize bending and overlapping of filaments on cryoEM grids. To prepare cryo-EM specimens, 2.5 \u03bcl freshly purified MAVS CARD (0.1 mg/ml) filaments in suspension were applied to a glow-discharged Quantifoil R2/2 holey carbon grid (Quantifoil Micro Tools GmbH, Jena, Germany) coated with a thin carbon film and plunge-frozen inside a Vitrobot (FEI, Hillsboro, OR).\n\n### Data collection and analysis\n\nMovie data were collected in a FEI Titan Krios microscope equipped with a Falcon II detector at the HHMI Janelia Farm Research Campus. The microscope was equipped with a Cs corrector (Cs = 0.01 mm) and operated at 300 kV. EPU (FEI) was run to control automatic data collection across multiple preselected holes in the holey grids. Images were taken using a defocus range of \u22122.5 to \u22124.0 microns at a nominal magnification of 59,000\u00d7, which corresponds to a calibrated pixel size of 1.05 \u00c5 at the specimen level. Images were taken with a total dose of 35 e\u2212/\u00c52 distributed over 16 frames. The movie data were processed using the program dosefgpu_driftcorr (Li et al., 2013). Frames 3\u201312 of every movie were summed together as the corrected image (Figure 1A). The carbon-support of our filaments made the motion between consecutive frames very small (mostly less than 2 pixels) and we therefore did not do motion correction for individual filaments (polishing) in Relion. We started with 27,916 filaments. After 2D classification, 15,600 filaments were selected. During the 3D classification into two different classes, there was a negligible fraction of the filaments conforming to a different volume with poor alignment statistics. We therefore kept all 15,600 filaments for final map calculation, which correspond to \u223c80,000 images of individual CARD units.\n\nIn order to calculate a gold-standard FSC from truly independent datasets, we divided the 15,600 filaments into the top and bottom two halves. These two datasets had negligible overlap. Two separate C1 models were generated using the SPIDER-based method from a small sorted fraction (\u223c13%) of filaments out of our old datasets as described before (Xu et al., 2014), and imposed with diagonally varied symmetry parameters (5.22 \u00c5, \u2212102.2\u00b0) and (4.82 \u00c5, \u2212100.2\u00b0), respectively. These two models were used as initial models and separately refined against the two half datasets in helical Relion. The two refinements converged to almost the same symmetry parameters, (5.05 \u00c5, \u2212101.25\u00b0) and (5.08 \u00c5, \u2212101.20\u00b0), respectively. The two volumes were post-processed in EMAN2 and aligned in CHIMERA. The map calculated from the top half of the dataset was rotated \u22122.4\u00b0 and shifted by \u22121.05 pixels before being compared with the one from the bottom half to calculate a gold-standard FSC using e2proc3d.py in EMAN2. The calculations in the final refinement steps were done in the largemem nodes of the STAMPEDE supercomputer at the Texas Advanced Computer Center (TACC) in Austin, Texas. Molecular modeling was done in CHIMERA and Coot (Emsley et al., 2010).\n\n## Funding\n\n<table>\n  <thead>\n    <tr>\n      <th>Funder</th>\n      <th>Grant reference</th>\n      <th>Author</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>National Institutes of Health</td>\n      <td>R01GM088745</td>\n      <td>Hui Xu, Brian Borkowski, Qiu-Xing Jiang</td>\n    </tr>\n    <tr>\n      <td>National Institutes of Health</td>\n      <td>R01GM093271</td>\n      <td>Hui Xu, Brian Borkowski, Qiu-Xing Jiang</td>\n    </tr>\n    <tr>\n      <td>National Institutes of Health</td>\n      <td>R01GM088197</td>\n      <td>Xiaojing He, Xuewu Zhang</td>\n    </tr>\n    <tr>\n      <td>National Institutes of Health</td>\n      <td>1S10RR027972</td>\n      <td>Qiu-Xing Jiang</td>\n    </tr>\n    <tr>\n      <td>American Heart Association</td>\n      <td>12IRG9400019</td>\n      <td>Qiu-Xing Jiang</td>\n    </tr>\n    <tr>\n      <td>Welch</td>\n      <td>I-1684, I-1389, and I-1702</td>\n      <td>Hui Zheng, Qiu-Xing Jiang, Hui Xu, Zhijian J Chen, Xuewu Zhang</td>\n    </tr>\n    <tr>\n      <td>Cancer Prevention Research Institute of Texas</td>\n      <td>RP120474</td>\n      <td>Hui Xu, Qiu-Xing Jiang</td>\n    </tr>\n    <tr>\n      <td>National Institutes of Health</td>\n      <td>R01AI093967</td>\n      <td>Zhijian J Chen</td>\n    </tr>\n    <tr>\n      <td>Howard Hughes Medical Institute</td>\n      <td></td>\n      <td>Zhiheng Yu, Michael Jason de la Cruz, Zhijian J Chen</td>\n    </tr>\n    <tr>\n      <td>National Institutes of Health</td>\n      <td>C06RR30414</td>\n      <td>Hui Xu, Hui Zheng, Lily J Huang, Brian Borkowski, Qiu-Xing Jiang</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a8d097ee-13cf-468e-948d-8f44aee6ba1a",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C1",
+      "claim": "MAVS protein forms prion-like aggregates mediated by the N-terminal caspase activation and recruitment domain (CARD).",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial antiviral signaling (MAVS) protein forms prion-like aggregates mediated by the N-terminal caspase activation and recruitment domain (CARD) and activates antiviral signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established background information in the introduction without specific experimental data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "cbd051e0-5ffe-409c-b26f-bb3b2e016869",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C2",
+      "claim": "MAVS activates antiviral signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial antiviral signaling (MAVS) protein forms prion-like aggregates mediated by the N-terminal caspase activation and recruitment domain (CARD) and activates antiviral signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established background information in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "a8327fe3-e292-4b8a-a3bf-59a924e927cf",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C3",
+      "claim": "Purified MAVS CARD from culture cells self-assembles into filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified MAVS CARD from culture cells self-assembles into filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "411da5a1-58c2-415a-a5e2-64f49f52c2d3",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C4",
+      "claim": "A low-resolution cryoEM structure of MAVS CARD filament was previously reported with C3 symmetry with a rotation of \u221253.6\u00b0 and an axial rise of 16.8 \u00c5 for every unit in the filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported a low-resolution cryoEM structure of MAVS CARD filament, which exhibits a C3 symmetry with a rotation of \u221253.6\u00b0 and an axial rise of 16.8 \u00c5 for every unit in the filament (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a prior publication by the authors (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "2e1e8c08-1999-440d-97c9-de41e756c298",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C5",
+      "claim": "A cryoEM reconstruction of MAVS CARD filaments at 3.6 \u00c5 resolution was reported with a C1 helical symmetry of a rotation of \u2212101.1\u00b0 and an axial rise of 5.1 \u00c5 per subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a cryoEM reconstruction of MAVS CARD filaments at 3.6 \u00c5 resolution was reported with a C1 helical symmetry of a rotation of \u2212101.1\u00b0 and an axial rise of 5.1 \u00c5 per subunit (Wu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a publication by Wu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "18615c5c-f611-4cea-a4a6-cf4c2baf3ace",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C6",
+      "claim": "The helical ambiguity in helical reconstruction was not fully resolved in the previous analysis by Xu et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in these two models were carefully analyzed recently (Egelman, 2014), which suggested that the helical ambiguity in helical reconstruction was not fully resolved in our previous analysis (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references an analysis by Egelman, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "f8e80e7c-6b39-40df-b84c-d274cff1130b",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C7",
+      "claim": "A 4.2 \u00c5 resolution reconstruction of MAVS CARD filaments purified from mammalian cells under native conditions was obtained using a newly developed method for analysis of helical filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a newly developed method for analysis of helical filaments (Clemens et al., 2015), we obtained a 4.2 \u00c5 resolution reconstruction of MAVS CARD filaments purified from mammalian cells under native conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript and references the method from Clemens et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "5f62a9ac-7e62-4509-8fdc-846fcce4ed37",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C8",
+      "claim": "The new model shows that the MAVS CARD filament exhibits a C1 helical symmetry in agreement with Wu et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The new model shows that the MAVS CARD filament exhibits a C1 helical symmetry in agreement with Wu et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental reconstruction data and references Wu et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "546bad6c-5ce8-410a-bacb-49fdd2e1598d",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C9",
+      "claim": "CryoEM images of Flag-tagged MAVS CARD (residues 1\u2013100) protein were collected using automated data acquisition in a Titan Krios with a Falcon II direct electron detector.",
+      "claim_type": "EXPLICIT",
+      "source": "CryoEM images of Flag-tagged MAVS CARD (residues 1\u2013100) protein, which was expressed in HEK293T cells and purified as described previously (Xu et al., 2014), were collected using automated data acquisition in a Titan Krios with a Falcon II direct electron detector (Figure 1A; see 'Materials and methods' section for detail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "e8b33811-ce7a-4cff-8b12-b5541e6f7043",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C10",
+      "claim": "Fourier transforms of motion-corrected raw images showed Thon rings up to \u223c3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourier transforms of motion-corrected raw images showed Thon rings up to \u223c3 \u00c5 (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "dd1d7d57-0dd0-47c8-ac6c-20a7ad251463",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C11",
+      "claim": "15,600 out of 27,915 boxed filament segments were used to calculate the final refined map.",
+      "claim_type": "EXPLICIT",
+      "source": "15,600 out of 27,915 boxed filament segments were used to calculate the final refined map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing for the final map calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "4d57eef5-5c3b-41fc-a5d9-51da041ed265",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C12",
+      "claim": "The new dataset converged better to the C1 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the new dataset converged better to the C1 symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "f0a943de-b98c-45d4-bfb1-3acf3f29c75d",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C13",
+      "claim": "The refinement converged to helical parameters of \u0394\u03a6 = \u2212101.21\u00b0 and \u0394z = 5.06 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "After the fifth run, the refinement was continued to optimize the helical parameters and converged to (\u0394\u03a6 = \u2212101.21\u00b0 and \u0394z = 5.06 \u00c5) (Figure 2A), close to the C1 symmetry reported by Wu et al. (2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the refinement data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "1e177b87-81fa-4712-8d1a-89a6d7a8f486",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C14",
+      "claim": "The final map has an overall resolution of 4.18 \u00c5, estimated from the gold-standard Fourier Shell Correlation (FSC) calculated between two maps that were refined independently against the top and bottom halves of the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The final map has an overall resolution of 4.18 \u00c5, estimated from the gold-standard Fourier Shell Correlation (FSC) calculated between two maps that were refined independently against the top and bottom halves of the dataset (Figure 2B; see 'Materials and methods' section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the FSC analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "cd161bba-0de9-43ce-b8b1-27eb6b8f785b",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C15",
+      "claim": "A B-factor weighted map based on the PDB model from Wu et al. (2014) (PDB ID: 3J6J) yielded an estimated resolution of 4.25 \u00c5 at 0.5 FSC threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the resolution with an independent method, we generated a B-factor weighted map based on the PDB model from Wu et al. (2014) (PDB ID: 3J6J), and used it to calculate FSC against the experimental map. A 0.5 threshold found an estimated resolution of 4.25 \u00c5 (Figure 2C), close to the one estimated by using two halves of experimental data (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the FSC analysis shown in Figure 2C and comparison with Figure 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "665f6d36-1862-4d07-8884-e153768c4140",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C16",
+      "claim": "The new map showed clear grooves in \u03b1-helices and multiple bulky side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The new map showed clear grooves in \u03b1-helices and multiple bulky side chains (Figure 2D, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural features visible in Figure 2D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "39ade184-415d-4873-8cb3-bac25f9f2b66",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C17",
+      "claim": "The six \u03b1-helices of the crystal structure of MAVS CARD monomer (PDB: 2VGQ, residues 3\u201393) fitted into the EM map well.",
+      "claim_type": "EXPLICIT",
+      "source": "While the six \u03b1-helices of the crystal structure of MAVS CARD monomer (PDB: 2VGQ, residues 3\u201393) fitted into the EM map well, multiple bulky side chains and those residues in the loop between H4 and H5 needed adjustment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fitting of the crystal structure into the cryoEM map.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "2a03ff90-47b0-4e2d-a0b9-aeb1f11551d7",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C18",
+      "claim": "Multiple bulky side chains and those residues in the loop between H4 and H5 needed adjustment when fitting the crystal structure into the EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "While the six \u03b1-helices of the crystal structure of MAVS CARD monomer (PDB: 2VGQ, residues 3\u201393) fitted into the EM map well, multiple bulky side chains and those residues in the loop between H4 and H5 needed adjustment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fitting analysis of the crystal structure into the cryoEM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "13275a30-e450-4f4c-a47c-b5e8563b07ed",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C19",
+      "claim": "The atomic model reported previously (PDB: 3J6J, residues 1\u201397, Wu et al., 2014) fit into the density well except for some unoccupied densities next to the N- and C-termini of the docked CARD model.",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic model reported previously (PDB: 3J6J, residues 1\u201397, Wu et al., 2014) fit into the density well except for some unoccupied densities next to the N- and C-termini of the docked CARD model (Figure 2A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the fitting of the Wu et al. model into the new cryoEM map, as shown in Figures 2A and 2D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "6355458b-5c63-4c81-93f6-97e114eef0a6",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C20",
+      "claim": "The extra densities next to the N- and C-termini may be due to the residues from the N-terminal Flag tag and the additional three residues at the C-terminus of the protein used for preparing the cryoEM specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "These extra densities may be due to the residues from the N-terminal Flag tag and the additional three residues at the C-terminus of the protein used for preparing the cryoEM specimens; these extra residues are not present in the protein sequence shown in the atomic models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known composition of the protein construct used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "fa71ead0-6218-40ae-bd78-5f9d5e5907ec",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C21",
+      "claim": "Each MAVS CARD monomer interacts with six nearby monomers using three types of intermolecular interfaces (I, II and III).",
+      "claim_type": "EXPLICIT",
+      "source": "From the high resolution C1 map, each MAVS CARD monomer interacts with six nearby monomers using three types of intermolecular interfaces (I, II and III) (Figure 3A; Wu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural analysis of the high-resolution C1 map shown in Figure 3A and referenced to Wu et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "d8737a7a-1b5d-4627-90c7-e8df508b0254",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C22",
+      "claim": "Interface I is mainly mediated by electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "At interface I, the positive and negative charges are distributed at two opposite ends of each CARD subunit, indicating that this interface is mainly mediated by electrostatic interactions (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the charge distribution observed in the structure shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "ca49a31a-5a56-4280-a758-35b0a4032fb0",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C23",
+      "claim": "The positively charged residues R37 and R41 in H3, R64 and R65 in the loop between H4 and H5 from one CARD molecule are in close proximity to the negatively charged residues D23 in the loop between H1b and H2 and E26 in H2 of another CARD molecule at interface I.",
+      "claim_type": "EXPLICIT",
+      "source": "The positively charged residues R37 and R41 in H3, R64 and R65 in the loop between H4 and H5 from one CARD molecule (grey in Figure 3B) are in close proximity to the negatively charged residues D23 in the loop between H1b and H2 and E26 in H2 of another CARD molecule (cyan in Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "94181562-87c2-4b3a-b4f5-ba006e863b54",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C24",
+      "claim": "D23A mutation showed significantly decreased activity compared with wild-type MAVS.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the wild-type MAVS, which potently induced IFN\u03b2 in a dose-dependent manner, D23A showed significantly decreased activity and mutations of other charged residues (E26, R37, R41, R64 and R65) at the interface to alanine or residues with reversed charge almost completely abolished MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "17a2c7ce-b5d4-41bc-bfef-4992283498cf",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C25",
+      "claim": "Mutations of charged residues E26, R37, R41, R64 and R65 at interface I to alanine or residues with reversed charge almost completely abolished MAVS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the wild-type MAVS, which potently induced IFN\u03b2 in a dose-dependent manner, D23A showed significantly decreased activity and mutations of other charged residues (E26, R37, R41, R64 and R65) at the interface to alanine or residues with reversed charge almost completely abolished MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "6d78fdb5-2d81-4227-a6b3-ade01457c227",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C26",
+      "claim": "In the crystal structure of MAVS CARD, the aromatic chain of W56 adopts two alternative conformations, with a major conformer (60% occupancy) exposed to solvent and stacked against the ring structure of residue F16 in immediate vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of MAVS CARD, the aromatic chain of W56 adopts two alternative conformations, with a major conformer (60% occupancy) exposed to solvent and stacked against the ring structure of residue F16 in immediate vicinity (Potter et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure from Potter et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "2f54bc4a-8fe6-4e13-bcc4-f91858c3327e",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C27",
+      "claim": "In the cryoEM map, the density of one conformer of W56 is resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cryoEM map, the density of one conformer is resolved (Figures 2D, 3D) and there appears density corresponding to the side chain of R43 from an adjacent CARD (Figure 3D), suggesting a possible cation\u2013pi interaction between these two residues, as reported previously (Wu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the cryoEM density shown in Figures 2D and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "d67ed1bc-4336-44f2-848d-e3d1fe157599",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C28",
+      "claim": "There appears density corresponding to the side chain of R43 from an adjacent CARD in the cryoEM map, suggesting a possible cation\u2013pi interaction between R43 and W56.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cryoEM map, the density of one conformer is resolved (Figures 2D, 3D) and there appears density corresponding to the side chain of R43 from an adjacent CARD (Figure 3D), suggesting a possible cation\u2013pi interaction between these two residues, as reported previously (Wu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the cryoEM density shown in Figure 3D and inference about the interaction, with reference to Wu et al., 2014.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "e71954dd-f06b-492a-8df5-00f961eb178d",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C29",
+      "claim": "Alanine substitution of R43 almost completely abolished MAVS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitution of R43 almost completely abolished MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "525b0ae9-0caa-42b6-946c-8d853667df48",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C30",
+      "claim": "Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity, while substitutions with different ring-containing residues to these positions, such as F16H, W56F, W56Y, Y30F and Y30H, were able to largely retain MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "0128ded2-464b-4cdc-92c3-5edf2a8fb01f",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C31",
+      "claim": "Substitutions with different ring-containing residues to positions F16, W56, and Y30, such as F16H, W56F, W56Y, Y30F and Y30H, were able to largely retain MAVS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single alanine substitution of F16, W56 or Y30 almost completely abolished MAVS activity, while substitutions with different ring-containing residues to these positions, such as F16H, W56F, W56Y, Y30F and Y30H, were able to largely retain MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "d91a05e6-ede5-40eb-bd1e-43144cc0ef84",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C32",
+      "claim": "R52 is involved in stabilizing interface II.",
+      "claim_type": "EXPLICIT",
+      "source": "Another residue involved in stabilizing the interface is R52, whose replacement by alanine significantly decreased its activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data showing that R52A mutation decreased activity.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "c458f51e-01bd-4354-9284-a018342a5e96",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C33",
+      "claim": "Replacement of R52 by alanine significantly decreased MAVS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Another residue involved in stabilizing the interface is R52, whose replacement by alanine significantly decreased its activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "0200f6ce-b3b7-4f59-8fc3-cfdb892916e0",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C34",
+      "claim": "Interface III mediates the interactions between adjacent monomers along the helical trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface III mediates the interactions between adjacent monomers along the helical trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural analysis of the filament.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "ccc5278c-097c-4dc0-8dd7-53d2d33a018b",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C35",
+      "claim": "Residue L48 from each MAVS CARD monomer contributes to the formation of a hydrophobic core with G50 and A44 in close proximity at interface III.",
+      "claim_type": "EXPLICIT",
+      "source": "Close to the central pore of the helical filament, residue L48 from each MAVS CARD monomer contributes to the formation of a hydrophobic core with G50 and A44 in close proximity (Figure 3A, top view and Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural analysis shown in Figures 3A and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "83a1fc1d-9630-4f60-abe9-f5fc126e8cef",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C36",
+      "claim": "Substitution of L48 with charged residues (D or K), but not alanine, completely abolished MAVS activity in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of L48 with charged residues (D or K), but not alanine, completely abolished MAVS activity in HEK293T cells (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "b0e6d078-7467-4f6e-b713-0466d17d86c4",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C37",
+      "claim": "L48 is not conserved, and is R or Q in MAVS from multiple other species.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that L48 is not conserved, and is R or Q in MAVS from multiple other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison across species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "4a5d134e-a1fa-498a-913b-fa40e155d08d",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C38",
+      "claim": "The filaments might need to rearrange in order to accommodate substitutions at L48.",
+      "claim_type": "EXPLICIT",
+      "source": "The filaments might need to rearrange in order to accommodate such substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural constraints and sequence variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "6d8ee82c-c1fa-4ec6-9d1e-7b1d51395223",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C39",
+      "claim": "The small side chain or hydrophobicity of A44 may be important for the packing at the hydrophobic interface because its mutation to T impaired MAVS CARD filament formation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The small side chain or hydrophobicity of A44 may be important for the packing at this hydrophobic interface because its mutation to T impaired MAVS CARD filament formation in vitro (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on functional data from Xu et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "a00119c1-5d40-42b2-9d27-d2c54038b76d",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C40",
+      "claim": "Charged residues R37, R41, D40 and D53 are located at the outer rim of the filament forming electrostatic interactions together with charged residues at type I interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Charged residues R37, R41, D40 and D53 are located at the outer rim of the filament forming electrostatic interactions together with charged residues at type I interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural analysis of the filament.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "bbd7f779-553a-4458-97df-0a558defd929",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C41",
+      "claim": "Single alanine substitution of R37, R41, D40 and D53 almost completely abolished MAVS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single alanine substitution of these residues almost completely abolished MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "69ae1efe-6328-4cab-8e04-a141bc16ede7",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C42",
+      "claim": "The loss-of-function mutation data are consistent with both the C1 map reported here and the C3 map obtained previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the loss-of-function mutation data are consistent with both the C1 map reported here and the C3 map obtained previously (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of the mutation data with both structural models.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "d3aa7972-c278-4b04-9f78-20482aee460c",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C43",
+      "claim": "Although key residues involved in the interactions are almost identical in the two models, the detailed interactions at the interfaces are different according to the two maps.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although key residues involved in the interactions are almost identical in the two models, the detailed interactions at the interfaces are different according to the two maps, indicating that mutagenesis analyses alone cannot distinguish one model from the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of the C1 and C3 models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "1e34903b-37d1-41c8-921a-ccc870294c15",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C44",
+      "claim": "Mutagenesis analyses alone cannot distinguish the C1 model from the C3 model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although key residues involved in the interactions are almost identical in the two models, the detailed interactions at the interfaces are different according to the two maps, indicating that mutagenesis analyses alone cannot distinguish one model from the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of the two models and the mutation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "e0cd322b-f651-4e83-95f5-14cad0deef81",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C45",
+      "claim": "MAVS CARD filaments from the new dataset converged to almost the same C1 symmetry as reported by Wu et al. (2014), not the C3 symmetry as reported previously by Xu et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "MAVS CARD filaments from our new dataset converged to almost the same C1 symmetry as reported by Wu et al. (2014), not the C3 symmetry as we reported previously (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the new experimental data and analysis presented in this manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "519cdc04-1bea-41af-99bc-1faa5f7256e2",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C46",
+      "claim": "The heterogeneity of the samples and the limited resolution of images were likely among the factors that led to the exclusion of the C1 model in the original analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneity of the samples and the limited resolution of images were likely among the factors that led to the exclusion of the C1 model in the original analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for the error in the original analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "ece951ad-c607-47ee-bf7d-873460ea45ef",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C47",
+      "claim": "The in vitro mapping of the oligomerization interface, cell-based mutational analyses, super-resolution SIM imaging of MAVS aggregates in virus-infected cells, and the crystal structures from the original paper remain valid.",
+      "claim_type": "EXPLICIT",
+      "source": "We stand by all other data in the paper, including in vitro mapping of the oligomerization interface, cell-based mutational analyses, super-resolution SIM imaging of MAVS aggregates in virus-infected cells, and the crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement affirming the validity of other data from the original paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "98036925-7b50-40aa-81cc-79a2845fe5e4",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C48",
+      "claim": "The experiments in the original paper for the first time identified most of the key residues involved in MAVS polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments for the first time identified most of the key residues involved in MAVS polymerization, leading to an extensive mapping of the molecular surfaces for forming the MAVS filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contribution of the original paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "1c4d8fc6-c14e-42bc-9cd8-3cca8f51a16a",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C49",
+      "claim": "The experiments in the original paper led to an extensive mapping of the molecular surfaces for forming the MAVS filament.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments for the first time identified most of the key residues involved in MAVS polymerization, leading to an extensive mapping of the molecular surfaces for forming the MAVS filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contribution of the original paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "4a8be17c-99d4-4b8f-8581-2d982d3ba6e7",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C50",
+      "claim": "Flag-MAVS CARD (1\u2013100) was expressed in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Flag-MAVS CARD (1\u2013100) expressed in HEK293T cells was purified in a buffer containing 50 mM NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "ff9b06fd-baf0-4909-b5f8-7f36994b519a",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C51",
+      "claim": "Flag-MAVS CARD (1\u2013100) was purified in a buffer containing 50 mM NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Flag-MAVS CARD (1\u2013100) expressed in HEK293T cells was purified in a buffer containing 50 mM NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "fecc38be-87cb-4fb1-b44a-47afa5e26145",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C52",
+      "claim": "Freshly purified protein was processed for EM experiments to minimize bending and overlapping of filaments on cryoEM grids.",
+      "claim_type": "EXPLICIT",
+      "source": "Freshly purified protein was processed for EM experiments to minimize bending and overlapping of filaments on cryoEM grids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "91adfd29-7195-4b44-90a9-fda8174b8bf4",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C53",
+      "claim": "Movie data were collected in a FEI Titan Krios microscope equipped with a Falcon II detector at the HHMI Janelia Farm Research Campus.",
+      "claim_type": "EXPLICIT",
+      "source": "Movie data were collected in a FEI Titan Krios microscope equipped with a Falcon II detector at the HHMI Janelia Farm Research Campus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "2962b938-c4ba-4239-9209-b9f9094f386d",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C54",
+      "claim": "The microscope was equipped with a Cs corrector (Cs = 0.01 mm) and operated at 300 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "The microscope was equipped with a Cs corrector (Cs = 0.01 mm) and operated at 300 kV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "66c98230-7514-4dd9-b9f9-30e980d7d987",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C55",
+      "claim": "Images were taken using a defocus range of \u22122.5 to \u22124.0 microns at a nominal magnification of 59,000\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were taken using a defocus range of \u22122.5 to \u22124.0 microns at a nominal magnification of 59,000\u00d7, which corresponds to a calibrated pixel size of 1.05 \u00c5 at the specimen level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "de8ac2e6-359b-423f-819d-d4f97c89db3c",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C56",
+      "claim": "The nominal magnification of 59,000\u00d7 corresponds to a calibrated pixel size of 1.05 \u00c5 at the specimen level.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were taken using a defocus range of \u22122.5 to \u22124.0 microns at a nominal magnification of 59,000\u00d7, which corresponds to a calibrated pixel size of 1.05 \u00c5 at the specimen level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "becc55c1-f010-41b9-915f-6edba36416db",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C57",
+      "claim": "Images were taken with a total dose of 35 e\u2212/\u00c52 distributed over 16 frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were taken with a total dose of 35 e\u2212/\u00c52 distributed over 16 frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "0f159f9d-6966-4fad-a50f-e4baab94b1c4",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C58",
+      "claim": "Frames 3\u201312 of every movie were summed together as the corrected image.",
+      "claim_type": "EXPLICIT",
+      "source": "Frames 3\u201312 of every movie were summed together as the corrected image (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data processing method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "a19b9330-13d6-43c1-b727-cad899883cb8",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C59",
+      "claim": "The motion between consecutive frames was very small (mostly less than 2 pixels) due to the carbon-support of the filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The carbon-support of our filaments made the motion between consecutive frames very small (mostly less than 2 pixels) and we therefore did not do motion correction for individual filaments (polishing) in Relion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "4432109d-4ebe-48ab-b729-416d80803bfa",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C60",
+      "claim": "Motion correction for individual filaments (polishing) in Relion was not performed.",
+      "claim_type": "EXPLICIT",
+      "source": "The carbon-support of our filaments made the motion between consecutive frames very small (mostly less than 2 pixels) and we therefore did not do motion correction for individual filaments (polishing) in Relion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "bf786944-59f4-483e-beed-47acf5ff0c32",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C61",
+      "claim": "The analysis started with 27,916 filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We started with 27,916 filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "2bc6d183-f5cc-40d3-9923-89e66c4dcb29",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C62",
+      "claim": "After 2D classification, 15,600 filaments were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "After 2D classification, 15,600 filaments were selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "96106f2b-c94f-4540-b8dc-2a548accb52c",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C63",
+      "claim": "During the 3D classification into two different classes, there was a negligible fraction of the filaments conforming to a different volume with poor alignment statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "During the 3D classification into two different classes, there was a negligible fraction of the filaments conforming to a different volume with poor alignment statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "1c3fd467-e50c-40b7-82e1-2b69e55f1727",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C64",
+      "claim": "All 15,600 filaments were kept for final map calculation, which correspond to \u223c80,000 images of individual CARD units.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore kept all 15,600 filaments for final map calculation, which correspond to \u223c80,000 images of individual CARD units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "50d9ce3c-7d73-479f-894e-7729e2840a4a",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C65",
+      "claim": "The 15,600 filaments were divided into the top and bottom two halves to calculate a gold-standard FSC from truly independent datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to calculate a gold-standard FSC from truly independent datasets, we divided the 15,600 filaments into the top and bottom two halves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "ca9d2510-12cd-4a37-a4fd-4156a7a11ab6",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C66",
+      "claim": "The two half datasets had negligible overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "These two datasets had negligible overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "1d581324-bd20-4a4c-b1ee-01937468d49a",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C67",
+      "claim": "Two separate C1 models were generated using the SPIDER-based method from a small sorted fraction (\u223c13%) of filaments out of the old datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Two separate C1 models were generated using the SPIDER-based method from a small sorted fraction (\u223c13%) of filaments out of our old datasets as described before (Xu et al., 2014), and imposed with diagonally varied symmetry parameters (5.22 \u00c5, \u2212102.2\u00b0) and (4.82 \u00c5, \u2212100.2\u00b0), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "7d1e8659-26ec-49a7-8d6f-9836f662717a",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C68",
+      "claim": "The two refinements converged to almost the same symmetry parameters, (5.05 \u00c5, \u2212101.25\u00b0) and (5.08 \u00c5, \u2212101.20\u00b0), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The two refinements converged to almost the same symmetry parameters, (5.05 \u00c5, \u2212101.25\u00b0) and (5.08 \u00c5, \u2212101.20\u00b0), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "7b9475d9-5e75-4586-9b3c-4f83961702fb",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "claim_id": "C69",
+      "claim": "Wild-type MAVS potently induced IFN\u03b2 in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the wild-type MAVS, which potently induced IFN\u03b2 in a dose-dependent manner, D23A showed significantly decreased activity and mutations of other charged residues (E26, R37, R41, R64 and R65) at the interface to alanine or residues with reversed charge almost completely abolished MAVS activity (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on functional data from the previous study (Xu et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f27f676-fa48-4895-aba0-12d20193f119",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors obtained a 4.2 \u00c5 resolution cryoEM reconstruction of MAVS CARD filaments that converged to C1 helical symmetry (\u0394\u03a6 = \u2212101.21\u00b0, \u0394z = 5.06 \u00c5), in agreement with Wu et al. (2014) and correcting their previous C3 symmetry assignment. The map shows clear structural features including grooves in \u03b1-helices and bulky side chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C16 and C45 provide converging evidence for the C1 symmetry determination through multiple independent validation methods: gold-standard FSC (C14), model-based FSC (C15), convergence from different starting parameters (C12-C13), and visible structural features (C16). The resolution estimates from two independent methods agree (4.18 \u00c5 vs 4.25 \u00c5), supporting the quality of the reconstruction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "49420772-285e-4e9a-9b68-a1d4cbb18577",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structure of MAVS CARD monomer fits well into the cryoEM map with the six \u03b1-helices docking appropriately, though some side chains and loop regions required adjustment. The Wu et al. (2014) atomic model (PDB: 3J6J) fits the density well except for extra densities at termini likely corresponding to the Flag tag and C-terminal residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 describe consistent model fitting results with reasonable explanations for discrepancies (Flag tag and extra residues). The good fit of the Wu et al. model (C19) provides independent validation of the C1 symmetry determination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "440d1be6-7372-4abb-abff-2ae5ebe5e139",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Interface I between MAVS CARD monomers is primarily mediated by electrostatic interactions, with positively charged residues (R37, R41, R64, R65) from one monomer interacting with negatively charged residues (D23, E26) from another. Mutagenesis data from prior work shows that alanine substitutions or charge reversals at these positions significantly decrease or abolish MAVS activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 and C69 are mutually consistent, with structural observations (C22-C23) supported by functional mutagenesis data from the prior study (C24-C25). The charge distribution pattern observed in the structure (C22-C23) provides a mechanistic explanation for the mutagenesis results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "011e9c2b-6894-4c51-98f3-011304f36d3e",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Interface II involves aromatic residues (F16, W56, Y30) and a possible cation-pi interaction between R43 and W56. The cryoEM map resolves density for one W56 conformer and adjacent R43. Mutagenesis data shows that alanine substitutions of these aromatic residues or R43 abolish activity, while ring-containing substitutions retain function, and R52 also contributes to interface stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 provide consistent structural and functional evidence for Interface II. The observation of W56 and R43 density (C27-C28) supports the proposed cation-pi interaction, and the mutagenesis pattern (C30-C31) showing that ring structure is important but specific identity is not, validates the structural interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "76b6f341-99d1-4ace-834b-2da8712b7a06",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Interface III mediates interactions along the helical trajectory through a hydrophobic core formed by L48, G50, and A44, with charged residues (R37, R41, D40, D53) at the outer rim. Mutagenesis shows that charged substitutions at L48 (but not alanine) abolish activity, though L48 is not conserved across species. Alanine substitutions of the outer rim charged residues also abolish activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 describe Interface III with structural observations (C35, C40) validated by mutagenesis data (C36, C39, C41). The observation that L48 varies across species (C37) with the speculation about rearrangement (C38) adds nuance but doesn't undermine the core finding about the hydrophobic interface.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "2cbfc01e-d5d3-4952-9516-96ad0990f4d4",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The loss-of-function mutagenesis data are consistent with both the C1 and C3 models, as key residues are nearly identical between models though detailed interactions differ. Mutagenesis alone cannot distinguish between the two models. Sample heterogeneity and limited image resolution likely contributed to the original incorrect C3 assignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C46 provide an honest assessment of the limitations of mutagenesis data for distinguishing structural models and acknowledge the factors that led to the original error. This is internally consistent and represents appropriate scientific self-correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "3f10d4ba-0d2f-4a6b-8d58-1affdf2e4bc4",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work reported conflicting symmetries for MAVS CARD filaments: Xu et al. (2014) reported C3 symmetry (\u221253.6\u00b0, 16.8 \u00c5) while Wu et al. (2014) reported C1 symmetry (\u2212101.1\u00b0, 5.1 \u00c5). Analysis by Egelman (2014) suggested helical ambiguity was not fully resolved in the Xu et al. study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 accurately cite prior work and provide the context for this correction. These are factual statements about published literature that establish the motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "874d2d03-b85e-43c4-9892-904b7fa35607",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors affirm that other data from their original paper remain valid, including in vitro oligomerization mapping, cell-based mutagenesis, super-resolution imaging, and crystal structures. These experiments identified key residues in MAVS polymerization and mapped molecular surfaces for filament formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C49 are assertions about the validity of prior work without presenting new data in this manuscript. While the mutagenesis data cited throughout are consistent with the new structure, the authors cannot fully validate all prior experiments without re-examination. This represents their professional judgment rather than demonstrated evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors used Flag-MAVS CARD (1-100) expressed in HEK293T cells, collected cryoEM data on a Titan Krios with Falcon II detector, processed 27,916 initial filaments down to 15,600 after classification, and used gold-standard FSC with independent half-datasets. Multiple starting models converged to similar C1 symmetry parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C68 describe comprehensive methodological details that are internally consistent and follow appropriate cryoEM practices including gold-standard FSC validation (C65-C66), testing multiple starting models (C67-C68), and proper data processing workflows. The convergence of different starting models to the same symmetry (C68) provides additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    },
+    {
+      "id": "1c99bbf6-72a7-4878-9b31-82ab2ec17391",
+      "content_id": "82587ec1-9cee-470f-8f6b-5f7dc6e72032",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MAVS protein forms prion-like aggregates through its N-terminal CARD domain and activates antiviral signaling. Purified MAVS CARD self-assembles into filaments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent established background knowledge from prior literature. These are well-accepted facts in the field that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:53:40.662703Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8e80e7c-6b39-40df-b84c-d274cff1130b",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "5f62a9ac-7e62-4509-8fdc-846fcce4ed37",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "546bad6c-5ce8-410a-bacb-49fdd2e1598d",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "e8b33811-ce7a-4cff-8b12-b5541e6f7043",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "dd1d7d57-0dd0-47c8-ac6c-20a7ad251463",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "4d57eef5-5c3b-41fc-a5d9-51da041ed265",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "f0a943de-b98c-45d4-bfb1-3acf3f29c75d",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "1e177b87-81fa-4712-8d1a-89a6d7a8f486",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "cd161bba-0de9-43ce-b8b1-27eb6b8f785b",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "665f6d36-1862-4d07-8884-e153768c4140",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "e0cd322b-f651-4e83-95f5-14cad0deef81",
+      "result_id": "9f27f676-fa48-4895-aba0-12d20193f119"
+    },
+    {
+      "claim_id": "39ade184-415d-4873-8cb3-bac25f9f2b66",
+      "result_id": "49420772-285e-4e9a-9b68-a1d4cbb18577"
+    },
+    {
+      "claim_id": "2a03ff90-47b0-4e2d-a0b9-aeb1f11551d7",
+      "result_id": "49420772-285e-4e9a-9b68-a1d4cbb18577"
+    },
+    {
+      "claim_id": "13275a30-e450-4f4c-a47c-b5e8563b07ed",
+      "result_id": "49420772-285e-4e9a-9b68-a1d4cbb18577"
+    },
+    {
+      "claim_id": "6355458b-5c63-4c81-93f6-97e114eef0a6",
+      "result_id": "49420772-285e-4e9a-9b68-a1d4cbb18577"
+    },
+    {
+      "claim_id": "fa71ead0-6218-40ae-bd78-5f9d5e5907ec",
+      "result_id": "440d1be6-7372-4abb-abff-2ae5ebe5e139"
+    },
+    {
+      "claim_id": "d8737a7a-1b5d-4627-90c7-e8df508b0254",
+      "result_id": "440d1be6-7372-4abb-abff-2ae5ebe5e139"
+    },
+    {
+      "claim_id": "ca49a31a-5a56-4280-a758-35b0a4032fb0",
+      "result_id": "440d1be6-7372-4abb-abff-2ae5ebe5e139"
+    },
+    {
+      "claim_id": "94181562-87c2-4b3a-b4f5-ba006e863b54",
+      "result_id": "440d1be6-7372-4abb-abff-2ae5ebe5e139"
+    },
+    {
+      "claim_id": "17a2c7ce-b5d4-41bc-bfef-4992283498cf",
+      "result_id": "440d1be6-7372-4abb-abff-2ae5ebe5e139"
+    },
+    {
+      "claim_id": "7b9475d9-5e75-4586-9b3c-4f83961702fb",
+      "result_id": "440d1be6-7372-4abb-abff-2ae5ebe5e139"
+    },
+    {
+      "claim_id": "6d78fdb5-2d81-4227-a6b3-ade01457c227",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "2f54bc4a-8fe6-4e13-bcc4-f91858c3327e",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "d67ed1bc-4336-44f2-848d-e3d1fe157599",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "e71954dd-f06b-492a-8df5-00f961eb178d",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "525b0ae9-0caa-42b6-946c-8d853667df48",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "0128ded2-464b-4cdc-92c3-5edf2a8fb01f",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "d91a05e6-ede5-40eb-bd1e-43144cc0ef84",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "c458f51e-01bd-4354-9284-a018342a5e96",
+      "result_id": "011e9c2b-6894-4c51-98f3-011304f36d3e"
+    },
+    {
+      "claim_id": "0200f6ce-b3b7-4f59-8fc3-cfdb892916e0",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "ccc5278c-097c-4dc0-8dd7-53d2d33a018b",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "83a1fc1d-9630-4f60-abe9-f5fc126e8cef",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "b0e6d078-7467-4f6e-b713-0466d17d86c4",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "4a5d134e-a1fa-498a-913b-fa40e155d08d",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "6d8ee82c-c1fa-4ec6-9d1e-7b1d51395223",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "a00119c1-5d40-42b2-9d27-d2c54038b76d",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "bbd7f779-553a-4458-97df-0a558defd929",
+      "result_id": "76b6f341-99d1-4ace-834b-2da8712b7a06"
+    },
+    {
+      "claim_id": "69ae1efe-6328-4cab-8e04-a141bc16ede7",
+      "result_id": "2cbfc01e-d5d3-4952-9516-96ad0990f4d4"
+    },
+    {
+      "claim_id": "d3aa7972-c278-4b04-9f78-20482aee460c",
+      "result_id": "2cbfc01e-d5d3-4952-9516-96ad0990f4d4"
+    },
+    {
+      "claim_id": "1e34903b-37d1-41c8-921a-ccc870294c15",
+      "result_id": "2cbfc01e-d5d3-4952-9516-96ad0990f4d4"
+    },
+    {
+      "claim_id": "519cdc04-1bea-41af-99bc-1faa5f7256e2",
+      "result_id": "2cbfc01e-d5d3-4952-9516-96ad0990f4d4"
+    },
+    {
+      "claim_id": "411da5a1-58c2-415a-a5e2-64f49f52c2d3",
+      "result_id": "3f10d4ba-0d2f-4a6b-8d58-1affdf2e4bc4"
+    },
+    {
+      "claim_id": "2e1e8c08-1999-440d-97c9-de41e756c298",
+      "result_id": "3f10d4ba-0d2f-4a6b-8d58-1affdf2e4bc4"
+    },
+    {
+      "claim_id": "18615c5c-f611-4cea-a4a6-cf4c2baf3ace",
+      "result_id": "3f10d4ba-0d2f-4a6b-8d58-1affdf2e4bc4"
+    },
+    {
+      "claim_id": "ece951ad-c607-47ee-bf7d-873460ea45ef",
+      "result_id": "874d2d03-b85e-43c4-9892-904b7fa35607"
+    },
+    {
+      "claim_id": "98036925-7b50-40aa-81cc-79a2845fe5e4",
+      "result_id": "874d2d03-b85e-43c4-9892-904b7fa35607"
+    },
+    {
+      "claim_id": "1c4d8fc6-c14e-42bc-9cd8-3cca8f51a16a",
+      "result_id": "874d2d03-b85e-43c4-9892-904b7fa35607"
+    },
+    {
+      "claim_id": "4a8be17c-99d4-4b8f-8581-2d982d3ba6e7",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "ff9b06fd-baf0-4909-b5f8-7f36994b519a",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "fecc38be-87cb-4fb1-b44a-47afa5e26145",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "91adfd29-7195-4b44-90a9-fda8174b8bf4",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "2962b938-c4ba-4239-9209-b9f9094f386d",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "66c98230-7514-4dd9-b9f9-30e980d7d987",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "de8ac2e6-359b-423f-819d-d4f97c89db3c",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "becc55c1-f010-41b9-915f-6edba36416db",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "0f159f9d-6966-4fad-a50f-e4baab94b1c4",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "a19b9330-13d6-43c1-b727-cad899883cb8",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "4432109d-4ebe-48ab-b729-416d80803bfa",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "bf786944-59f4-483e-beed-47acf5ff0c32",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "2bc6d183-f5cc-40d3-9923-89e66c4dcb29",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "96106f2b-c94f-4540-b8dc-2a548accb52c",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "1c3fd467-e50c-40b7-82e1-2b69e55f1727",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "50d9ce3c-7d73-479f-894e-7729e2840a4a",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "ca9d2510-12cd-4a37-a4fd-4156a7a11ab6",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "1d581324-bd20-4a4c-b1ee-01937468d49a",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "7d1e8659-26ec-49a7-8d6f-9836f662717a",
+      "result_id": "9f2c99f1-a6c3-4aa3-8be1-5182bf40118c"
+    },
+    {
+      "claim_id": "a8d097ee-13cf-468e-948d-8f44aee6ba1a",
+      "result_id": "1c99bbf6-72a7-4878-9b31-82ab2ec17391"
+    },
+    {
+      "claim_id": "cbd051e0-5ffe-409c-b26f-bb3b2e016869",
+      "result_id": "1c99bbf6-72a7-4878-9b31-82ab2ec17391"
+    },
+    {
+      "claim_id": "a8327fe3-e292-4b8a-a3bf-59a924e927cf",
+      "result_id": "1c99bbf6-72a7-4878-9b31-82ab2ec17391"
+    }
+  ],
+  "comparisons": []
+}

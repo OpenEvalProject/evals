@@ -1,0 +1,2288 @@
+{
+  "submission": {
+    "id": "c345c0a2-f2ba-46f7-8064-e0e2c8bb9d4f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:12:37.102478Z",
+    "updated_at": "2025-11-29T05:12:37.102478Z"
+  },
+  "content": [
+    {
+      "id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "submission_id": "c345c0a2-f2ba-46f7-8064-e0e2c8bb9d4f",
+      "content_type": "manuscript",
+      "content_text": "# Differential interaction forces govern bacterial sorting in early biofilms\n\n## Authors\n\n- Enno R Oldewurtel<sup>1</sup> ([ORCID: 0000-0002-2813-0259](https://orcid.org/0000-0002-2813-0259))\n- Nadzeya Kouzel<sup>1</sup>\n- Lena Dewenter<sup>1</sup>\n- Katja Henseler<sup>1</sup>\n- Berenike Maier<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physics University of Cologne Cologne Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial biofilms can generate micro-heterogeneity in terms of surface structures. However, little is known about the associated changes in the physics of cell\u2013cell interaction and its impact on the architecture of biofilms. In this study, we used the type IV pilus of Neisseria gonorrhoeae to test whether variation of surface structures induces cell-sorting. We show that the rupture forces between pili are fine-tuned by post-translational modification. Bacterial sorting was dependent on pilus post-translational modification and pilus density. Active force generation was necessary for defined morphologies of mixed microcolonies. The observed morphotypes were in remarkable agreement with the differential strength of adhesion hypothesis proposing that a tug-of-war among surface structures of different cells governs cell sorting. We conclude that in early biofilms the density and rupture force of bacterial surface structures can trigger cell sorting based on similar physical principles as in developing embryos.\n\n## Introduction\n\nPhysical interactions and in particular mechanical forces are involved in sorting of different cell types. These requirements have been established in the field of embryonic development (Gonzalez-Rodriguez et al., 2012). Cells must divide, change shape, adhere to each other, migrate, disperse, or cluster. To complete these processes, they modulate their physical properties including rigidity, position, motility, and strength of adhesion (Fagotto, 2014). The development of bacterial biofilms resembles eukaryotic development in various aspects including genetic programs that are controlled by master regulators (Monds and O'Toole, 2009). However, it is unclear to which extent physical forces are involved in determining the architecture of biofilms.\n\nAn early approach for understanding cell sorting on the basis of physical interactions was the differential adhesion hypothesis (Steinberg, 1963). This hypothesis states that a population of cells will sort into spatially separated subpopulations, if the strength of cell\u2013cell adhesion differs between cell types. The biophysical explanation for this sorting is the tendency of cell clusters to minimize their surface, similar to the minimization of surface tension in liquids. Depending on the strength of cohesion between cells of the same kind and the strength of adhesion between different kinds of cells, the model predicts perfect mixing, encasement, partial segregation, and full segregation of cells (Steinberg, 1963; Graner and Glazier, 1992). Some of these morphotypes have been observed experimentally (Steinberg and Takeichi, 1994; Foty and Steinberg, 2004). Recent experiments indicate that equilibrium descriptions are not sufficient for describing the process of cell sorting during development; they provide evidence that active force generation by cells is involved (Landsberg et al., 2009; Gonzalez-Rodriguez et al., 2012; Kashef and Franz, 2015; Mao and Baum, 2015). In particular, the differential interfacial tension hypothesis introduces cortical contractility in addition to adhesion (Brodland and Chen, 2000). Interestingly, Harris proposed another hypothesis, the differential strength of adhesion hypothesis (DSAH) (Harris, 1976). He envisions a tug-of-war of cells actively moving along each other by retractions of cellular extensions pulling the cell body into the direction of the strongest and least breakable bonds. Cells with lower bond strength would be squeezed outward to the peripheral layer.\n\nSorting of cells also occurs during bacterial biofilm development. Cell\u2013cell interactions and biofilm architecture are often governed by cell appendages with polymeric organization. One of the most ubiquitous appendages is the type IV pilus (T4P) (Berry and Pelicic, 2015). It mediates surface attachment, surface motility, and its retraction can generate high mechanical force (Maier and Wong, 2015; Maier, 2013). The T4P is a helical polymer consisting mainly of the major subunit PilE (Craig et al., 2004). The major subunit can be post-translationally modified by O-linked glycosylation or by phosphoform-modifications. Cell sorting based on T4P has been observed in different experimental setups. Vibrio cholerae can express a T4P-like system and generate toxin co-regulated pili. Cells lacking the major pilin of the toxin co-regulated pilus did not integrate into wt microcolonies (Kirn et al., 2000). Mutations in the major pilin subunits induced different pilus morphology and affected the size of pilus bundles. However, cell sorting based on these mutations was not reported (Kirn et al., 2000). Differential fluorescence labeling of Pseudomonas aeruginosa showed that cells with T4P-dependent motility form a cap on top of non-motile stalks formed by cells that lacked the gene for the major pilin subunit (Klausen et al., 2003). Swarming of P. aeruginosa is generated by a single flagellum, but moderated by polar T4P (Anyan et al., 2014). When T4P production was suppressed, swarming motility increased considerably, most likely due to reduced cellular clustering mediated by pili. When piliated and non-piliated cells were co-cultured, non-piliated cells dominated the swarm edge. Neisseria meningitidis upregulates expression of a phosphotransferase that is required for phospho-form modification of the major pilin upon attachment to endothelial host cells (Chamot-Rooke et al., 2011). Simulations of pilus bundling suggest post-translational modifications affecting the physical interactions between T4P (Chamot-Rooke et al., 2011). All of these studies imply that T4P can generate a rich diversity of sorting phenomena. However, in contrast to embryonic development, the biophysical basis underlying cell sorting in bacterial biofilms remains elusive.\n\nHere, we test the hypothesis that the physical interactions between bacteria govern the morphology of mixed bacterial cell clusters. The T4P of Neisseria gonorrhoeae (gonococcus) was used as a model system for systematic variation of cell\u2013cell interactions. We genetically engineered strains with different densities of pili and their abilities to generate force. Moreover, the breakage-force between pili of different cells could be fine-tuned by replacing a gene responsible for pilin post-translational modification. We found that on agar plates, where the dynamics are mostly determined by steric interactions caused by cell division, cells with the lowest pilus density and cells with the lowest pilus-breakage force sorted towards the colony boundary. Sorting was prominent at the front of expanding colonies but within the bulk of the colony sorting was incomplete. In liquid environment where cells actively move by pilus retractions, sorting correlating with pilus density and pilus-breakage force was nearly complete and the resulting morphotypes followed the DSAH. Active pilus retraction was essential for cell sorting, suggesting that the cells sort by a tug-of-war between cells.\n\n## Results\n\n### The T4P as a tool for controlling bacterial cell\u2013cell interactions\n\nN. gonorrhoeae and their type IV pili served as a model system for addressing the hypothesis that mechanical interactions control sorting and morphology of mixed clusters (aka microcolonies). Gonococci are peritrichously piliated, that is, they generate pili at random locations (Holz et al., 2010). Because T4P are necessary for microcolony formation, variation in the breakage force between pili directly affects cell\u2013cell interactions. There is preliminary evidence that gonococcal microcolonies show surface tension-like behavior. Microcolonies formed by gonococci with retractile pili are spherical (Higashi et al., 2009). Upon fusion, two microcolonies rapidly form a sphere with larger radius as expected for liquid drops (Dewenter et al., 2015). Importantly, the retraction of T4P generates mechanical force (Maier et al., 2002). Multiple pili can coordinate through a tug-of-war mechanism leading to surface motility (Marathe et al., 2014). Hence, cell movement inside clusters is conceivable. These properties could support cell sorting as proposed by the DSAH (Harris, 1976).\n\nTo test the hypothesis of segregation of cells depending on receptor\u2013ligand pair densities, we engineered gonococcal strains with different pilus densities. To start with, we generated a gonococcal strain that had the gene for the major pilin subunit, pilE, replaced by gfpmut3 and kan (pilE::gfpmut3 kan), henceforth called P\u2212 green strain (Table 1). This strain did not form clusters nor did it interact with piliated bacteria. Thus, within our detection limit, the P\u2212 green bacteria show no interactions. Next, we used a strain with three copies of the pilE gene, P++ (igA1::pilE pilE ermC). This strain contains two copies of the pilE gene in addition to the native copy, increasing the pilus density compared to the wild type (Holz et al., 2010). Since the pilins are unaltered, the rupture forces between individual pili are expected to be equal to the wt forces. However, since the density of pili is higher, the total attractive force between two bacteria is higher.\n\n**Table 1.**\n Strains used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Relevant genotype</th>\n      <th>Source/Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>VD300</td>\n      <td>wild type, opa- selected</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Ng105 P+ green</td>\n      <td>igA1::PpilE gfpmut3 ermC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng106 P+ red</td>\n      <td>lctP: PpilE mcherry aadA:aspC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng081 P\u2212 green</td>\n      <td>pilE::PpilE gfpmut3 kan</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng095 G\u2212 green</td>\n      <td>pglF::PpilE gfpmut3 kan</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng109 P++</td>\n      <td>igA1::pilE pilE ermC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng110 P++ red</td>\n      <td>igA1::pilE pilE ermC; lctP: PpilE mcherry aadA:aspC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng118 Q\u2212 green</td>\n      <td>pilQ::m-Tn3cm; igA1::PpilE gfpmut3 ermC; recA6ind(tetM);</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng116 P+ red*</td>\n      <td>lctP: PpilE mcherry aadA:aspC; recA6ind(tetM);</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng119 T\u2212 green</td>\n      <td>pilT::m-Tn3cm; igA1::PpilE gfpmut3 ermC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng120 T\u2212 red</td>\n      <td>pilT::m-Tn3cm; lctP: PpilE mcherry aadA:aspC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Ng121 T\u2212G\u2212 green</td>\n      <td>pilT::m-Tn3cm; pglF::PpilE gfpmut3 kan</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the next step, we investigated the effect of pilin post-translational modification on the breakage force between pili. Wt gonococci bear a disaccharide composed of a hexose residue linked to a proximal 2,4-diacetamido-2,4,6-trideoxyhexose (HexDATDH) at serine 63 (Hegge et al., 2004). PglF is involved in membrane translocation of lipid-attached carbohydrates (Hegge et al., 2004). Deletion of pglF strongly reduces O-linked pilin glycosylation. Hence, we generated strain G\u2212 green by replacing pglF with gfpmut3 (Table 1).\n\nWhen interfering with the post-translational modification of the pilins, we expect that the rupture force between pili is affected. We used laser tweezers for measuring the rupture forces, employing a previously established assay (Dewenter et al., 2015). The surface was coated with a crude pilus preparation extracted from the strain of interest. Subsequently, single bacteria (monococci) were caught in a laser trap and held close to the T4P-coated surface (Figure 1A). The forces applied by the optical trap kept the cell body at the center of the trap. Type IV pili can generate very large force by retraction when they bind to surfaces (Maier et al., 2002). Binding of T4P to the pilus-coated surface and subsequent retraction led to a deflection of the cell body. Upon breakage of the bond between the retracting pilus and the pili on the surface, the cell body is pulled back into the center of the laser trap. Thus, the maximum force between pili attached to the bacterium and the pili attached to the surface can be measured. Henceforth, we will call this force rupture force. The distribution of rupture forces of wt bacteria pulling on wt pili was in agreement with a Gaussian distribution with a maximum at Fwt/wt = (39 \u00b1 1) pN (Figure 1B). The distribution of rupture forces generated by G\u2212 green was shifted to higher values of FG\u2212/G\u2212 = (46 \u00b1 1) pN. Most interestingly, the force generated by G\u2212 green onto the surface coated with wt pili, FG\u2212/wt = (25 \u00b1 1) pN, was considerably lower than the interaction forces between pili of the same kind. Moreover, we monitored the frequency at which bacteria pulled onto the pilus-coated surface and found no significant difference between the strains (Figure 1C), confirming that pilus\u2013pilus rupture force and not the frequency of pilus retractions was responsible for the altered cell\u2013cell interaction in response to the loss of pilin glycosylation. Taken together, we found that FG\u2212/G\u2212 > Fwt/wt > FG\u2212/wt.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig1-v2.jpg)\n\n**Figure 1.:** (A) Principle of force measurement. The surface was coated with pili. A single monococcus was trapped in an optical trap. One or multiple pili can bind to pili at the surface. When they retract they deflect the bacterium from the center of the laser trap. The deflection is proportional to the force acting on the bond between the bacterium-associated pili and the pili at the surface. When the bond between the pili is ruptured, the bacterium moved back to the center of the trap. For each retraction event, the maximum force generated prior to rupture was registered as the rupture force. (B) Distribution of rupture forces. Full lines: Gaussian fit for F < 65 pN. For F > 65 pN, the linear regime is exceeded and forces are overestimated. (C) Distribution of retraction frequencies. Gray bars: wt bacteria on surface coated with wt pili. Red line: G\u2212 green bacteria on surface coated with G\u2212 green pili. Green line: G\u2212 green bacteria on surface coated with wt pili.\n\nIn summary, the breakage force between gonococci is fine-tuned by post-translational modification of pilin. Together with mutants of varying T4P density, our T4P toolbox will enable us to test how mechanical forces between cells affect cell sorting.\n\n### Bacteria with lowest density of pili segregate to the front of expanding microcolonies\n\nWe developed a tool for directly visualizing the spatio-temporal dynamics of segregation between different strains. Gonococci were inoculated onto agar plates at a density low enough to ensure microcolonies arising from individual bacteria. Time-lapse microscopy was used for following the dynamics of their off-spring. This way, we ensured that the population was clonal at the start of the experiment. New clones inside these populations with modifications in T4P were generated as follows. N. gonorrhoeae are naturally competent for transformation, which is the import and inheritable integration of DNA from the environment (Burton and Dubnau, 2010). Transformation allows for fluorescent labeling in conjunction with manipulation of genes affecting T4P. A control strain was generated which became fluorescent without affecting piliation by integrating the fluorescence reporter into a non-essential gene (igA1::gfpmut3 ermC), henceforth called P+ green strain (Figure 2A). Genomic DNA (gDNA) from this strain was isolated and applied onto an agar plate. Each cell of the expanding wt colony can integrate gfpmut3 ermC into the igA1 locus and become fluorescent with a certain probability. Since the fluorescent marker was inheritably integrated, all progeny of a single transformant was fluorescent (Video 1). In Figure 2B, the first P+ green cell was detected at 5 hr. As expected for range expansion experiments (Hallatschek et al., 2007), little mixing between P+ green and wt was observed. Instead, P+ green formed a sector. This observation suggests that the mobility of the bacteria in this assay was mostly determined by steric interactions caused by cell division. We note that T4P-mediated surface motility was observed only within 1\u20133 bacterial diameters at the expanding front (Video 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig2-v2.jpg)\n\n**Figure 2.:** (A) Strategy for visualization of a new clone. Genomic DNA (gDNA) from strain P+ green in which gfpmut3 recombines into igA1 is spread on the agar surface. When a single bacterium imports and integrates the DNA, then the bacterium becomes fluorescent. Type IV pilus (T4P) is unaffected. (B) Time-lapse of de novo occurring P+ green clone (orange) within an expanding wt colony. Scale bar: 10 \u00b5m. The arrow denotes the time point when fluorescence is detectable.\n\n![Video 1.](https://cdn.elifesciences.org/articles/10811/elife-10811-media1.avi.jpg)\n\n**Video 1.:** Chromosomal DNA from strain P+ green is spread on the agar surface. Upon import and integration of DNA into a single bacterium, pili are lost and the bacterium becomes fluorescent. Time-lapse (\u0394t = 15 min) of de novo occurring P+ green clone within an expanding colony. Brightfield image and fluorescence images were merged.\n\n![Video 2.](https://cdn.elifesciences.org/articles/10811/elife-10811-media2.avi.jpg)\n\n**Video 2.:** P+ green bacteria were inoculated onto an agar plate. Images were acquired at \u0394t = 10 s. Bacteria residing within the bulk of the microcolony were immobile at this time scale. At the front, individual bacteria are motile. This motility depends on active T4P retraction and was not observed for non-piliated bacteria. Scale bar: 10 \u00b5m.\n\nNext, we investigated whether loss of T4P caused segregation. gDNA from the P\u2212 green strain was isolated and applied onto an agar plate. The replacement of the pilin gene by gfpmut3 resulted in loss of pili and gain of fluorescence (Figure 3A). P\u2212 bacteria arising close to the expanding front were expelled from the bulk of the colony and their offspring spread rapidly along the front, encircling the entire colony (Figure 3C,D, Video 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig3-v2.jpg)\n\n**Figure 3.:** (A) Strategy for visualization of pilus-loss in a single bacterium. gDNA from strain P\u2212 green in which pilE is replaced by gfpmut3 is spread on the agar surface. Upon import and integration of DNA into a single bacterium, pili are lost and the bacterium becomes fluorescent. (B) Strategy for visualization of reduction of pilus-density. gDNA from P+ green strain is spread on the agar surface. Integration of DNA into a single hyperpiliated P++ bacterium carrying two additional copies of pilE in the igA1 locus led to the pilus density decreasing to wt level and to the acquisition of fluorescence. (C) Time-lapse of de novo occurring P\u2212 green clone (orange) within an expanding colony. Scale bar: 50 \u00b5m. (D) Detail of (C). Scale bar: 10 \u00b5m. (E) Time-lapse of de novo occurring P+ green clone (orange) within an expanding colony of P++. Scale bar: 50 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/10811/elife-10811-media3.avi.jpg)\n\n**Video 3.:** Chromosomal DNA from strain P\u2212 green in which pilE is replaced by gfpmut3 is spread on the agar surface. Upon import and integration of DNA into a single bacterium, pili are lost and the bacterium becomes fluorescent. Time-lapse (\u0394t = 15 min) of de novo occurring P\u2212 green clone within an expanding colony. Brightfield image and fluorescence images were merged.\n\nFurthermore, we assessed whether reduction of pilus density (i.e., the average number of pili per cell) leads to a segregation of variants. DNA from P+ green cells was isolated and spread onto an agar plate (Figure 3B). Hyperpiliated P++ gonococci were seeded onto the plate. The integration of DNA from P+ green into this strain replaces the two additional pilE copies by a gfpmut3 gene, and as a consequence, the pilus density reduces to wt level. We found that the P+ green cells residing close to the expanding front were expelled from the colony and encased the P++ colony (Figure 3E).\n\nSo far, the experiments showed that cell sorting occurred at the front of the expanding microcolonies but sorting was incomplete when considering the entire microcolony. We analyzed how the probability that P\u2212 green gonococci moved towards the front was dependent on their location within the colony. For systematic analysis of the dynamics of a de novo occurring P\u2212 green clone and its offspring, we automatically detected the contour of a sector of fluorescent bacteria generated by a single variant (Figure 5\u2014figure supplement 1). The location of the fluorescent pixel closest to the expanding front was determined as a function of time (Figure 4A). P\u2212 green bacteria residing directly at the front remained at the front and tended to form blebs (Figure 3C). P\u2212 green bacteria closer than 3 \u00b5m to the front showed a probability of more than 50% to move towards the front (Figure 4C). At times, hopping of gonococci to the front was observed (e.g., red line in Figure 4A). This probability decreased as a function of distance. In contrast, the control strain P+ green only showed a probability of 50% of residing and staying at the front (Figure 4B,C), which decreased as a function of distance and stayed significantly below the P\u2212 green probability for reaching the front.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig4-v2.jpg)\n\n**Figure 4.:** (A) Location of the bacterium closest to the front of the P\u2212 green subpopulation as a function of time. (7 out of 148 traces are shown.) (B) Location of the bacterium closest to the front of the P+ green subpopulation as a function of time. (6 out of 307 traces are shown.) (C) Probability that the offspring moves towards the front as a function of its distance from the front for P\u2212 green (red) and P+ green (black). Error bars: standard deviation of three independent experiments weighted with the number of traces per experiment.\n\nOur data show a strongly increased probability of reaching the front for non-piliated bacteria. T4P are responsible for cell\u2013cell interaction in gonococcal colonies. Thus, the mobility of P\u2212 gonococci within a P+ colony might be increased. To this end, we measured the spatial variance \u03c32 of all offspring of a single P\u2212 green transformant compared to the variance of the offspring of a single P+ green transformant (Figure 5) inside growing microcolonies. The variance is expected to increase because bacteria are both mobile, but also increase in number within the colony. By rescaling to the size of the microcolony, we found that the variance still increased (Figure 5\u2014figure supplement 1C,D), suggesting that bacteria are mobile.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig5-v2.jpg)\n\n**Figure 5.:** gDNA from P\u2212 green was spread on the agar plate and wt cells were seeded. (A) Fluorescence time lapse. Yellow lines: front of the expanding colony. Red outlines: boundaries of sectors formed by the offspring of a single transformant. Scale bar: 10 \u00b5m. Spatial variance $\\sigma^{2}=\\sigma_{x}^{2}+\\sigma_{y}^{2}\u00a0\u00a0$ of three sectors as a function of (B) time and (C) number of offspring (fluorescent bacteria per sector). The colors correspond to the colors of the numbers at 8.75 hr. (D) Average variance of P\u2212 green (red) and P+ green (black) within the colony as a function of the number of offspring N. Error bars: standard error as obtained from >50 sectors for each condition.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Time-lapse in brightfield of a single cell growing into a colony. (B) Local intensity variance of the same cells. (C) Time-lapse of the same colony in brightfield keeping the proportion of colony radius to sub-image constant. Contour lines of emerging fluorescent patches are labeled in red. The last column shows all contour lines normalized by the colony radius and superimposed onto a unit-circle. (D) Fluorescence images showing contour of segmentation. The last column shows a superposition of all preceding contour lines (green) onto the fluorescence image of the final time-point. (E) Increase of fluorescence Itot over time normalized by the fit parameter of single cell fluorescence I0. The solid line is a fit onto the data. The dashed line gives the inferred number of fluorescent bacteria. The inset shows Itot normalized by I0 and N, that is, the normalized intensity per fluorescent bacterium. All scale bars: 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) pilQ deletion strain PQ\u2212 green was inoculated at low density with a higher density of P+ red*. (B) Zoom of (A). Scale bar: 20 \u00b5m. Arrows depict PQ\u2212 green bacteria that later spread ring-like along the expanding front.\n\nNext, we tested whether the mobility of P\u2212 green within a wt microcolony was increased. For this analysis, only variants that are not touching the front are analyzed (Figure 5A\u2013C). Colony 2 (green) shows an example of a sector touching the front at t = 7.5 hr. Later time points of such sectors were automatically removed from the analysis. As expected, the variance increased as a function of time (Figure 5B). Different growth rates might obscure the effect of differential physical interactions on cell. Hence, the generation time of gonococci expressing different amounts of the major pilin pilE, which results in varying densities of pili per cell (Long et al., 2001; Holz et al., 2010) (Table 2, \u2018Materials and methods\u2019), was measured. The level of pilin expression strongly affected the growth rate. The P+ green strain had a generation time of tg = 49 \u00b1 3 min. The non-piliated P\u2212 green strain had a significantly lower generation time (tg = 41 \u00b1 1 min), whereas the growth rate of the hyperpiliated P++ red strain showed an increased generation time (tg = 56 \u00b1 4 min). In our mobility analysis, we compensated for different generation times, by comparing the variance of P\u2212 green with P+ green as a function of the number of offspring (Figure 5C,D). We found that the variance of the P\u2212 green cells increases more strongly as a function of the number of offspring than the variance of P+ green cells, indicating an increased mobility of P\u2212 green within a colony of wt bacteria.\n\n**Table 2.**\n Generation times\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Generation time</th>\n      <th>Total number of evaluated colonies</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ig:A1:PpilE gfpmut3 ermC (P+ green)</td>\n      <td>48.6\u00a7 \u00b1 2.7\u2020 min</td>\n      <td>76</td>\n    </tr>\n    <tr>\n      <td>igA1::pilE pilE ermC; lctP: PpilE mcherry aadA:aspC (P++ red)</td>\n      <td>55.6 \u00b1 3.7 min</td>\n      <td>33</td>\n    </tr>\n    <tr>\n      <td>pilE::gfpmut3 kan (P\u2212 green)</td>\n      <td>41.1 \u00b1 0.8 min</td>\n      <td>84</td>\n    </tr>\n    <tr>\n      <td>pglF::PpilE gfpmut3 kan (G\u2212 green)</td>\n      <td>49.7 \u00b1 2.0 min</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>pilQ::m-Tn3cm; igA1::PpilE gfpmut3 ermC; recA6ind(tetM) (PQ\u2212 green)</td>\n      <td>51.1 \u00b1 0.3 min</td>\n      <td>280</td>\n    </tr>\n    <tr>\n      <td>lctP: PpilE mcherry aadA:aspC; recA6ind(tetM) (P+ red*)</td>\n      <td>49.4 \u00b1 0.6 min</td>\n      <td>211</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u00a7Average value of results obtained from at least three independent experiments. Each experiment comprises the analysis of several individual colonies.\u2020Corrected sample standard deviation from at least three independent experiments._\n\nFurthermore, segregation of strains with different pilus densities but similar growth rates was assessed. We generated the gonococcal strain PQ\u2212 green with a deletion of pilQ. Since the PilQ proteins form the pore through which the pilus is exported, this results in a P\u2212 phenotype. The generation time of PQ\u2212 green was slightly higher than the piliated strain P+ red*. We inoculated non-piliated PQ\u2212 green bacteria at a low density together with a higher density of piliated P+ red* bacteria (Figure 5\u2014figure supplement 2A,B). Similar to P\u2212 green, the PQ\u2212 green close to the front of the expanding colony was expelled from P+ red* (Figure 5\u2014figure supplement 2A). Once reaching the front, PQ\u2212 green expanded along the front and encircled the bulk of P+ red* cells. This control experiment confirms that loss of pili induces segregation independently of decreased generation time.\n\nIn summary, bacteria with the lowest pilus density segregate to the front of mixed expanding microcolonies. The sorting efficiency strongly depends on the location of the less piliated clone, with highly efficient sorting close to the front.\n\n### Bacteria with post-translationally modified pili dominate the front of expanding colonies\n\nPilin glycosylation reduces the rupture force between pili (Figure 1). In the context of the DSAH, we predict that bacteria with glycosylated pili segregate to the front of an expanding microcolony. In strain G\u2212 green, the gene encoding for the flippase, pglF (Aas et al., 2007), was replaced by a gene encoding for a green fluorescent protein (pglF::gfpmut3 kan). Deletion of pglF reduces pilin glycosylation severely (Aas et al., 2007). Importantly, the generation time of tg = 50 \u00b1 2 min of this strain was comparable to the wild-type strain with reporter (Table 2). If cell sorting was observed, then we could attribute it to altered pilus\u2013pilus interactions.\n\ngDNA of G\u2212 green was spread onto an agar plate and individual wt cells were inoculated. Wt gonococci that integrated the fluorescence reporter simultaneously lost the glycosylation of their pili. The sectors formed by G\u2212 green bacteria could not be discerned from sectors formed by P+ green. Therefore, we inverted the scenario by inoculating G\u2212 green gonococci together with gDNA from wt bacteria onto an agar plate (Figure 6A). G\u2212 green gonococci that incorporated the extracellular DNA simultaneously lost their fluorescence and gained the ability to glycosylate their pili. Here, glycosylated (wt) bacteria segregated at the front of the expanding colony (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig6-v2.jpg)\n\n**Figure 6.:** (A) Strategy for visualization of gain of glycosylation in a single bacterium. gDNA from wt is spread on the agar surface. Upon import and integration of wt DNA into a single G\u2212 green bacterium, both the fluorescence is lost and pilus glycosylation is gained. (B) Time-lapse of de novo occurring wt clone within an expanding G\u2212 green colony. Full yellow line: front of the microcolony obtained from the brightfield image. Scale bar: 10 \u00b5m.\n\nWe conclude that gain of O-linked pilin glycosylation causes segregation of gonococci. The bacteria with glycosylated pili dominate the front of the expanding colony. The underlying cause of sorting is most likely the difference in pilus\u2013pilus rupture forces.\n\n### Variation of pilus density and pilin post-translational modification cause cell sorting in liquid\n\nThe agar plate assay described above is highly useful for visualizing the spatio-temporal dynamics of mixed microcolonies. However, cell sorting is restricted to the expanding front, most likely because the cell mobility is low within the bulk of the colony. We used a complementary assay for characterizing the degree of cell sorting. In liquid environment, T4P retractions ensure rapid cell movement and microcolonies assemble, disassemble, and change their shape within minutes (Dewenter et al., 2015). Therefore, cell sorting based on different physical interactions can be investigated neglecting any potential segregation resulting from different growth rates.\n\nWe mixed bacteria with different T4P and fluorescent markers in liquid and used confocal microscopy for imaging. As control, a suspension of P+ red and P+ green was used. They formed spherical and well-mixed microcolonies (Figure 7A, Video 4).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig7-v2.jpg)\n\n**Figure 7.:** Confocal stacks of gonococci mixed in a liquid and incubated on a glass surface for (3\u20135) hr. (A) P+ red was mixed with P+ green, (B) P+ red and P\u2212 green, (C) P++ red and P+ green, (D) P+ red and G\u2212 green. Scale bar: 10 \u00b5m.\n\n![Video 4.](https://cdn.elifesciences.org/articles/10811/elife-10811-media4.avi.jpg)\n\nWhen P+ red and P\u2212 green were mixed, the wt bacteria formed spherical microcolonies (Figure 7B, Video 5), while the P\u2212 green bacteria did not show interaction amongst themselves or with wt bacteria.\n\n![Video 5.](https://cdn.elifesciences.org/articles/10811/elife-10811-media5.avi.jpg)\n\nBoth the DAH and the DSAH predict that if cells with different densities of the same adhesins are mixed, then the cells with higher density will be surrounded by cells with lower density. To test this hypothesis in our bacterial model system, P++ red and P+ green were mixed. We found that P+ green formed a shell surrounding P++ red (Figure 7C, Video 6). This behavior is consistent with stronger physical interactions among P++ bacteria due to their high-pilus density, lower interactions among P+ bacteria due to lower pilus density, and intermediate interactions at the interface between P++ red and P+ green.\n\n![Video 6.](https://cdn.elifesciences.org/articles/10811/elife-10811-media6.avi.jpg)\n\nThe pglF-deletion strain G\u2212 green showed differential rupture forces, namely FG\u2212/G\u2212 > Fwt/wt > Fwt/G\u2212 (Figure 1). In a mix of P+ red and G\u2212 green, P+ red formed crescents surrounding G\u2212 green (Figure 7D, Video 7). This morphotype agrees remarkably well with the prediction of the DAH (Steinberg, 1963).\n\n![Video 7.](https://cdn.elifesciences.org/articles/10811/elife-10811-media7.avi.jpg)\n\nWe conclude that bacteria sort dependent on pilus density and pilin post-translational modification. The morphologies of the mixed colonies can be inferred from the rupture forces between the pili.\n\n### Active force generation by T4P is required for the defined morphology of mixed clusters\n\nAll experimental results show that bacterial cell sorting can be explained on the basis of pilus\u2013pilus rupture forces. Cell sorting on agar plates where motility is low hints on the importance of cell mobility for sorting. The observation of almost complete sorting in liquid environment is in agreement with both the passive DAH and the DSAH, the latter includes cellular force generation. We addressed the role of force generation in cell sorting, by transferring T4P-related mutations into a pilT\u2212 background (T\u2212). pilT encodes for the T4P retraction ATPase PilT and is essential for pilus retraction (Wolfgang et al., 1998). In T\u2212 cells, T4P can form, but cannot retract, nor generate force. As a consequence, bacteria are unable to perform active movement.\n\nT\u2212 red and T\u2212 green were mixed and imaged with confocal microscopy (Figure 8A). Unlike wt gonococci, the clusters did not round up to form spherical microcolonies. Furthermore, red and green bacteria did not mix, but only grew into separate clusters. Similarly, inhibition of glycosylation in one strain did not change the morphologies in a mix of T\u2212G\u2212 green and T\u2212 red cells (Figure 8B) nor did they resemble the shape predicted by the DAH and the DSAH.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig8-v2.jpg)\n\n**Figure 8.:** Confocal stacks of gonococci deficient in active force generation by T4P retraction were mixed in a liquid and incubated on a glass surface for (3\u20135) hr. (A) T\u2212 red was mixed with T\u2212 green, (B) T\u2212 red, and T\u2212G\u2212 green. Scale bar: 10 \u00b5m.\n\nWe conclude that active force generation by T4P is required for the cluster morphology predicted by the DAH and the DSAH.\n\n## Discussion\n\nIn this study, we systematically investigated the effect of physical interactions between bacterial cells on sorting and cluster morphology. We demonstrate that type IV pili of the gonococcus are a versatile system for studying bacterial sorting.\n\n### The DSAH predicts the morphologies of mixed microcolonies\n\nThe differential adhesion hypothesis, by Malcom Steinberg, predicts the morphologies of cell-clusters formed by two types of cells with different surface adhesins (Steinberg, 1963). The morphologies we observed in liquid culture are in accordance with the predicted ones. However, active pilus retraction was required for generating these well-defined morphologies. Recently, we provided evidence that gonococci move over surfaces by a tug-of-war of multiple pili (Marathe et al., 2014). Therefore, it is likely that bacteria within microcolonies employ a tug-of-war mechanism for segregation (Figure 9). Based on the pilus\u2013pilus rupture forces, all four morphotyes shown in Figure 7 can be explained. Bacteria with the same composition and number of pili exhibit equal net rupture forces between all cells. Accordingly, we found well-mixed aggregates. Bacteria without pili show no interaction amongst themselves or with wt bacteria, in agreement with Fwt/P\u2212 \u2248 FP\u2212/P\u2212 \u2248 0. Co-incubation of hyperpiliated P++ and wt led to the formation of a sphere of P++ in the center and a fully surrounding shell of P+ in agreement with FP++/P++ > FP++/wt > Fwt/wt. Finally, a mix of P+ and glycosylation-inhibited G\u2212 bacteria with FG\u2212/G\u2212 > Fwt/wt > FG\u2212/wt formed a sphere of G\u2212 bacteria and with a crescent of P+ partially surrounding it. To conclude, the mixed morphologies coincide with the prediction of the DSAH (Harris, 1976).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/10811/elife-10811-fig9-v2.jpg)\n\n**Figure 9.:** Pili form contacts between bacteria. For simplicity, only single pilus\u2013pilus bonds between bacteria are shown. Pili continuously elongate and retract. During retraction, they generate force on an attached object. When pili bind to other pili and retract they generate force on each other. The probability of bond rupture increases with force. Since the rupture force between G\u2212 and G\u2212 pili is larger than between wt and G\u2212 pili, the latter bond is more likely to rupture. Pilus retraction pulls the cell body in the direction in which the strongest, least breakable bonds are formed. Cells whose bonds are most easily broken are squeezed outward to the peripheral layer.\n\nAdding to the above, active forces have been shown to be important for cell sorting during embryonic development. In developing tissues, cortical contractile forces and cell adhesion act antagonistically, opposing each other with contraction tending to minimize and adhesion to maximize the contact area (Fagotto, 2014). In comparison, the cell body in our bacterial system can be considered as a point-object and the forces of pilus retraction are always attractive.\n\n### Naturally occurring variation of pilus\u2013pilus interactions are likely to induce sorting in gonococcal biofilms\n\nCell sorting as a consequence of variations in density and post-translational modification is very likely to affect the biology of pathogenic Neisseria species. Neisserial populations generate micro-heterogeneity via phase and antigenic variation of T4P-associated genes (Rotman and Seifert, 2014). The detection of multiple antigenic variants in the sequence of the major pilin after 2 days of biofilm growth highlights this (Kouzel et al., 2015). Apart from the pilin gene, other genes affecting post-translational modification and pilus density are phase-variable (Marri et al., 2010). We propose that phase and antigenic variation trigger cell sorting and thereby affect the architecture of biofilms.\n\n### Conclusion\n\nWe have tested the hypothesis that differential physical interactions between bacteria cause cell sorting in early biofilms. We generated a toolbox of gonococcal type IV pili with varying pilus density and pilus\u2013pilus rupture forces. The morphotypes of mixed microcolonies were in remarkable agreement with the predictions of the DSAH proposing that cells sort on the basis of differential net rupture forces. Likewise to embryonic development, our findings suggest mechanical forces govern cell sorting in early biofilm formation.\n\n## Materials and methods\n\n### Bacterial growth conditions\n\nN. gonorrrhoeae was grown overnight at 37\u00b0C and 5% CO2 on agar plates containing gonococcal base agar (10 g/l Bacto agar [BD Biosciences, Bedford, MA, USA], 5 g/l NaCl [Roth, Darmstadt, Germany], 4 g/l K2HPO4 [Roth], 1 g/l KH2PO4 [Roth], 15 g/l Bacto Proteose Peptone No. 3 [BD], 0.5 g/l soluble starch [Sigma\u2013Aldrich, St. Louis, MO, USA]), and the following supplements: 1 g/l D-Glucose (Roth), 0.1 g/l L-glutamine (Roth), 0.289 g/l L-cysteine-HCL \u00d7 H20 (Roth), 1 mg/l thiamine pyrophosphate (Sigma\u2013Aldrich), 0.2 mg/l Fe(NO3)3 (Sigma\u2013Aldrich), 0.03 mg/l thiamine HCl (Roth), 0.13 mg/l 4-aminobenzoic acid (Sigma\u2013Aldrich), 2.5 mg/l \u03b2-nicotinamide adenine dinucleotide (Roth), and 0.1 mg/l vitamin B12 (Sigma\u2013Aldrich). Before each experiment, gonococcal colonies were resuspended in GC-medium.\n\n### Strain constructions\n\nAll strains in this study were generated into the same VD300 background by transformation with either newly created plasmids or gDNA of existing strains.\n\nThe strains with the fluorescent reporter in the igA1 locus were constructed as follows: the promoter region of pilE (PpilE) with a SacI restriction site was amplified from gDNA of gonococcal strain MS11 using primers NK83 and NK135. gfpmut3 with a SacI restriction site was amplified from the pAM239 using primers NK134 and NK133. A PCR fusion between PpilE and gfpmut3 was generated using NK83 and NK133. The product was inserted into SacI site of p2/16/1 (Wolfgang et al., 2000), resulting in pIga::PpilE gfpmut3. This plasmid was used to introduce the gfpmut3 ermC alleles into the iga locus of strain VD300, generating strain Ng105 iga::PpilE gfpmut3 ermC.\n\nThe mcherry fluorescent reporter strains were constructed using an integration vector for insertion of alleles between lctP and aspC on the gonococcal chromosome, following a previously reported approach (Mehr and Seifert, 1997). aspC was amplified from chromosomal DNA using NK63 and NK64 introducing an engineered MCS at 5\u2032 end and a HindIII at 3\u2032 end. lctP was amplified using NK61 and NK62 introducing a HindIII restriction site at the 5\u2032 end and a MCS at 3\u2032 end. The fragments were fused with primers NK61 and NK64 and inserted into HindIII site of pUP6, resulting in pLA. The aminoglycoside-3\u2032 adenyltransferase (aadA) gene, encoding for a streptomycin/spectinomycin adenyltransferase, was amplified from R100.1 plasmid with primers NK 59 and NK 60 and cloned into a unique SacI site in the MCS of pLA, resulting in pLAS. PpilE was amplified using NK23 and NK46 generating a FseI restriction site. mcherry was amplified from pSP64 with NK19 and NK51 generating a PacI restriction site. The PCR fusion between PpilE and mcherry, amplified with NK46 and NK51, was inserted between FseI and PacI sites of pLAS resulting in pLAS::PpilE mcherry.\n\nThis plasmid was used to introduce the mcherry aadA alleles between lctP and aspC of strain VD300, generating strain Ng106 lctP:mcherry aadA:aspC. Furthermore, this plasmid was used to introduce mcherry into strain N400 (Freitag et al., 1995), finally yielding strain Ng116 recA6ind(tetM); lctP: PpilE mcherry aadA:aspC. Finally, the plasmid was introduced in Ng109 igA1::pilE pilE ermC, which in turn was generated by transformation with gDNA of N400 pilE+++ (Holz et al., 2010), yielding strain Ng110 igA1::pilE pilE ermC; lctp: PpilE mcherry aadA:aspC.\n\nThe Ng081 pilE::PpilE gfpmut3 kan strain was constructed using a PCR fragment that contains fluorescent gene reporter with a selectable drug marker flanked by ends of the target gene. Individual fragments were amplified using the primers listed in Table 3 by PCR either from chromosomal DNA of gonococcal strain MS11 or from plasmid pIga::PpilE gfpmut3. The 5\u2032 flanking region of pilE and the region of gfp were amplified from DNA from plasmid pIga::PpilE gfpPmut3 with primers KH1a and KH4. The kanamycin selectable marker was amplified from plasmid pUP6 using KH5 and KH6. The 3\u2032 flanking region of pilE was amplified from chromosomal DNA using KH7 and KH8. The amplified fragments were fused yielding the final fragment pilE::gfpmut3 kan, which was used for transformation.\n\n**Table 3.**\n Primers used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primers</th>\n      <th>Sequence 5\u2032\u20133\u2032</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>KH1a</td>\n      <td>ATGCCGTCTGAATTCCGACCCAATCAACACACC</td>\n    </tr>\n    <tr>\n      <td>KH4</td>\n      <td>GTTCAATCATATGTGACCTCCTCTATTTGTATAGTTCATCC</td>\n    </tr>\n    <tr>\n      <td>KH5</td>\n      <td>TAGAGGAGGTCACATATGATTGAACAAGATGGATTGC</td>\n    </tr>\n    <tr>\n      <td>KH6</td>\n      <td>TCACTTACCGTCAGAAGAACTCGTCAAGAAGG</td>\n    </tr>\n    <tr>\n      <td>KH7</td>\n      <td>TTCTTCTGACGGTAAGTGATTTCCCACGG</td>\n    </tr>\n    <tr>\n      <td>KH8</td>\n      <td>ATGCCGTCTGAACGCACCGATATAGGGTTTG</td>\n    </tr>\n    <tr>\n      <td>KH34</td>\n      <td>AAAAAGAATTCATGCCGTCTGAAGCAAAATCGACCTGCACCATCTGAT</td>\n    </tr>\n    <tr>\n      <td>KH35</td>\n      <td>CGGGTGTGTTGATTGGGTCGGTTTTGATGTCCGGTCGGCGGC</td>\n    </tr>\n    <tr>\n      <td>KH36</td>\n      <td>GCCGCCGACCGGACATCAAAACCGACCCAATCAACACACCCG</td>\n    </tr>\n    <tr>\n      <td>KH37</td>\n      <td>GAACCGACATAGAAGTAGTCAGGATGATTTTCAGAAGAACTCGTCAAGAAGGCG</td>\n    </tr>\n    <tr>\n      <td>KH38</td>\n      <td>CCTTCTTGACGAGTTCTTCTGAAAATCATCCTGACTACTTCTATGTCGGTTC</td>\n    </tr>\n    <tr>\n      <td>KH39</td>\n      <td>AAAGGATCCATGCCGTCTGAACATCAAAAGCGGGCGGGGG</td>\n    </tr>\n    <tr>\n      <td>NK83</td>\n      <td>TTGAGTCTTCCGACCCAATCAACACACCCGATAC</td>\n    </tr>\n    <tr>\n      <td>N135</td>\n      <td>AGTTCTTCTCCTTTACGCATAAAATTACTCCTAATTGAAAGGG</td>\n    </tr>\n    <tr>\n      <td>N134</td>\n      <td>TTTCAATTAGGAGTAATTTTATGCGTAAAGGAGAAGAACTTTTCAC</td>\n    </tr>\n    <tr>\n      <td>NK133</td>\n      <td>TTGAGCTCCTATTTGTATAGTTCATCCATGCC</td>\n    </tr>\n    <tr>\n      <td>NK19</td>\n      <td>TTAGGAGTAATTTTATGGTGAGCAAGGG</td>\n    </tr>\n    <tr>\n      <td>NK23</td>\n      <td>TCGCCCTTGCTCACCATAAAATTACTC</td>\n    </tr>\n    <tr>\n      <td>NK46</td>\n      <td>CATTGGCCGGCCTTCCGACCCAATCAACACACC</td>\n    </tr>\n    <tr>\n      <td>NK51</td>\n      <td>CATTAATTAATTACTTGTACAGCTCGTCCATGCC</td>\n    </tr>\n    <tr>\n      <td>NK60</td>\n      <td>TTCGGTCTCCACGCATCGTCAG</td>\n    </tr>\n    <tr>\n      <td>NK61</td>\n      <td>TTTAAGCTTATGGCACTTTTCCTCAGCATATTCCC</td>\n    </tr>\n    <tr>\n      <td>NK62</td>\n      <td>GAGCTCTTAATTAAATGCATGGCCGGCCCTAGAGGAAGAAAATCATTGCCGCGAC</td>\n    </tr>\n    <tr>\n      <td>NK63</td>\n      <td>GGCCGGCCATGCATTTAATTAAGAGCTCATGTTCTTCAAGCACATCGAAGCC</td>\n    </tr>\n    <tr>\n      <td>NK64</td>\n      <td>TTTAAGCTTTTACAAGACTTTCACGATGCTTTCGC</td>\n    </tr>\n    <tr>\n      <td>NK65</td>\n      <td>TTTTAATTAAATGCGTAAAGGAGAAGAACT TTTCACTGG</td>\n    </tr>\n    <tr>\n      <td>NK66</td>\n      <td>GTAAGGCCGGCCCTATTTGTATAGTTCATCCATGCCATGTGTAATC</td>\n    </tr>\n  </tbody>\n</table>\n\nThe Ng095 pglF::PpilE gfpmut3 kan strain was constructed using a PCR fragment that contains fluorescent gene reporter with a selectable drug marker flanked by ends of the target gene. Individual fragments were amplified using the primers listed in Table 3 by PCR either from chromosomal DNA of gonococcal strain VD300 or from plasmid pIga::PpilE gfpmut3. The 5\u2032 2flanking region of pglF was amplified from chromosomal DNA with primers KH34 and KH35. PpilE was generated using the PCR from chromosomal DNA with KH36 and N135. The gfpmut3 reporter gene was amplified from plasmid pIga::PpilE gfpmut3 with N134 and KH4. The kanamycin selectable marker was amplified from plasmid pIga::PpilE gfpmut3 using KH5 and KH37. The 3\u2032 flanking region of pglF including start of pglB was amplified from chromosomal DNA using KH38 and KH39. The amplified fragments were fused yielding the final fragment pglF::gfpPmut3-kan, which was used for transformation.\n\nStrains Ng119, Ng120, and Ng121 were generated as follows. gDNA of GT17 pilT::m-Tn3cm was used to transform P+ green, P+ red, and G\u2212 green, respectively, yielding T\u2212 green, T\u2212 red, and T\u2212G\u2212 green.\n\nStrains Ng118 and Ng116 were generated as follows. The plasmid pIga::PpilE gfpmut3 was used to transform N400 (Freitag et al., 1995), yielding P+ red*. The resulting N400 igA1::PpilE gfpmut3 ermC was then transformed with gDNA of Ng055 pilQ::m-Tn3cm, yielding PQ\u2212 green.\n\nDirect DNA sequencing of PCR products derived from gonococcal transformants was performed by GATC Biotech AG (Konstanz, Germany) to verify the insertions and the absence of any other alterations.\n\n### Colony growth and single-cell transformation on agar\n\ngDNA was isolated with the DNeasy Blood & Tissue kit (Qiagen, Hilden, Germany) from strains that already carry the genes for the fluorescent protein in the locus of interest. Individual colonies of non-fluorescent and fluorescent bacteria were picked from overnight plates and highly diluted in GC-medium yielding a gonococcal suspension with mainly dark and a few fluorescent bacteria. The latter served as a control to analyze the generation time via the rate of fluorescence increase. 4 \u00b5l gDNA solution and 1 \u00b5l gonococcal suspension were mixed and immediately used to inoculate a drop onto the center of a GC-plate. The drop was allowed to dry and the plate was mounted onto an inverted epi-fluorescence microscope (Nikon Ti-E, Japan) equipped with a motorized stage and a custom-built thermo-box. The plate is held in a custom-built chamber with a glass bottom to allow for imaging and CO2 supply, keeping the plate under an atmosphere of 37\u00b0C and 5.9% CO2. Time-lapse imaging was done employing a 40\u00d7/0.6 long-working distance air objective (Nikon) capturing images every 15 min over a grid of 120 different positions yielding an imaging area of 2.3 by 2.5 mm.\n\n### Range expansion\n\nP+ red and PQ\u2212 green colonies were grown overnight on GC-plates. A small suspension with mostly P+ red and a few PQ\u2212 green was mixed in GC-medium. A spot of 5 \u00b5l of the suspension was used to inoculate GC-plates, yielding a fully close front of bacteria. The range expansion of growing P+ red competing with PQ\u2212 green was monitored using the time-lapse microscopy described for the single-cell transformation assay on agar. It should be noted that the higher number of cells in a range expansion inevitably leads to the presence of stochastically varied non-piliated cells. In order to decrease this effect and focus on piliated red cells and non-piliated green cells, strains in a recAind background were employed, which highly reduces the chance of spontaneously occurring P\u2212 cells (Criss et al., 2005).\n\n### Image analysis\n\nTime-lapse epi-fluorescence microscopy under an atmosphere with enriched CO2 at 37\u00b0C allowed to take videos of gonococcal micro-colonies growing from individual cells (Figure 5\u2014figure supplement 1A). The transformation of gDNA could be visualized by detection of fluorescence resulting from the expression of fluorescent proteins (Figure 5\u2014figure supplement 1D). The recorded videos were processed as follows:\n\nImages were taken over a grid of 120 positions. A normalized, smoothed, average of the images of all positions at the beginning of the experiment is used to correct for inhomogeneous illumination. At the beginning only single cells are present, hence only the average illumination is visible in the average image. All positions of a single time-point were stitched together. High local intensity variance in windows of 5\u00d7 5 pixels served as indicator for the presence of a growing microcolony, that is, there is a high variation of dark and bright pixels for colonies, but only small variance for pixels without colonies (Figure 5\u2014figure supplement 1B). Thresholding the local variance image gives a binary image indicating the growing colonies. The binary image was further processed by binary dilations, to ensure connected segmentations of colonies, which was followed by binary erosions to reduce any segments due to noise, but, also, to shrink the contour of the segment of a colony, such that the contour lies more on top of the bacteria at the front. After filling the holes in all binary segments, the contour pixels were defined to be the pixels that are affected by a further binary erosion. A circle fit on the contour pixels of each individual segment gives the information of center and radius of the colony. The centers of all circles were tracked to find regions of interests (ROIs) of growing microcolonies that have not yet grown into another colony. Fluorescence was segmented as follows: the stitched fluorescence image was convolved with a gaussian kernel of 11 \u00d7 11 px with \u03c3 = 1.5 px. The local intensity background of each ROI was found and subtracted. Thresholding of the background corrected fluorescence inside every ROI allowed to segment the patches of fluorescent bacteria (Figure 5\u2014figure supplement 1).\n\nThe radii of the colony turned out to grow exponentially for at least 10 hr. Further image analysis was restricted to this time-period. Given the center and radius of the growing colony at any time, all Cartesian coordinates can be transformed into polar coordinates. The exponential growth of the radius of the colony implies that all distances inside the colony should, also, grow in the same exponential fashion. This can be illustrated by normalizing the polar coordinates by the radius. Figure 5\u2014figure supplement 1C,D show a row of brightfield and fluorescence images, with the circle fit of the colony to fill always the same proportion of the sub-image. As a result, the scale bar shrinks in time, while the apparent colony size stays constant. Due to this normalization, the apparent position of segmented patches, also, stays roughly constant. The last column in (b) shows a superposition of all time-points of the normalized coordinates onto a unit-circle at the top, and a superposition of all time-points without normalization at the bottom onto the final fluorescence image. Due to the clear separation of clonal normalized coordinates, a manual selection of areas inside the unit-circle allowed to easily define all coordinates resulting from the same clone.\n\nThe spatial variance \u03c32 can now be calculated using the information of background-corrected intensities and the Cartesian and polar coordinates for each individual clone for all time-points. To this end, the total variance \u03c32, the orthogonal variances \u03c3x2 and \u03c3y2 in Cartesian coordinates are expressed as follows:\n\n$$\n\\sigma^{2}=\\sigma_{x}^{2}+\\sigma_{y}^{2},\n$$\n\n\n\n$$\n\\sigma_{x}^{2}=\\sumi=1Nx_{i}^{2}\\frac{I_{i}}{I_{tot}}\u2212(\\sumi=1Nx_{i}\\frac{I_{i}}{I_{tot}})^{2},\n$$\n\n\n\n$$\n\\sigma_{y}^{2}=\\sumi=1Ny_{i}^{2}\\frac{I_{i}}{I_{tot}}\u2212(\\sumi=1Ny_{i}\\frac{I_{i}}{I_{tot}})^{2},\n$$\n\n\n\n$$\nI_{tot}=\\sumi=1NI_{i}.\n$$\n\nOur experiment runs during the exponential growth phase. Following a transformation event, the number of fluorescent proteins per cell generated by the offspring of a single transformant is expected to increase and eventually saturate at an equilibrium concentration. Thus, before saturation, the overall fluorescence initially increases more quickly, but then tends to increase exponentially (Figure 5\u2014figure supplement 1E). In our experiments, a fraction of the growing colonies originated from initially fluorescent cells. These colonies expressed the fluorescent reporter at its equilibrium concentration right from the start of the experiment and the rate of fluorescence increase was used to measure the generation time.\n\nThe development of the total fluorescence Itot of each clone is used to deduce the number of bacteria within a clonal patch. To this end, the rate of fluorescence increase Itot(t) can be modeled assuming a constant rate increasing the fluorescence per cell, kprod, and degradation of fluorescence, kdeg, with N being the number of fluorescent cells:\n\n$$\n\\frac{dI_{tot}}{dt}=k_{prod}N\u2212k_{deg}I_{tot}.\n$$\n\nThus, the total fluorescence with I0 being the equilibrium intensity of a single cell can be fitted as follows:\n\n$$\nI_{tot}(t)=I_{0}N(t\u2212t_{0})(1\u2212e^{\u22122k_{deg}(t\u2212t_{0})}),\n$$\n\nwhere: $N(t)=2^{t/\\tau_{growth}}$\n\nI0, t0, and kdeg are fit parameters. The value for \u03c4growth is taken from the rate of fluorescence increase of those growing colonies, which were fluorescent right from the beginning of the experiment. These colonies expressed the fluorescent reporter at or close to its equilibrium concentration and the rate of fluorescence increase was used to measure the generation time, \u03c4growth. The model Itot(t) fits well onto the data (Figure 5\u2014figure supplement 1E), such that the time at which the clone arose, t0, together with the generation time, \u03c4growth, allows to estimate the number of fluorescent bacteria N(t \u2212 t0).\n\n### Confocal microscopy\n\nGonococcal microcolonies were cultivated at 37\u00b0C in ibidi \u00b5-Slides I0.8 Luer. For microcolony development in a continuous-flow chamber, GC-medium with 1% IsoVitaleX was used. Bacteria from overnight plates of each strain were re-suspended in GC to an optical density at 600 nm (OD600) of 0.1 and two hundred microliters of each culture were inoculated into flow chambers and left for 1 hr at 37\u00b0C to allow attachment to the glass surface. After 1 hr, the flow was resumed and pumped through the flow cells at a flow rate of 3 ml/hr for each channel (0.2 mm/s) by using a peristaltic pump (model 205U; Watson Marlow, Calmouth, UK).\n\nGonococcal microcolonies in aqueous environment were visualized by using a Confocal Laser Scanning Microscope (Nikon Ti-E C1). Images were obtained using a 60\u00d7/1.2 water objective (Nikon) (pinhole size of 60 \u00b5m). Dual fluorescence emission was observed using an argon-ion laser with 488 nm for green fluorescent protein and a 543-nm filter of HeNe laser for mCherry fluorescence. To avoid cross-talk between colors, the images were acquired sequentially, each only with corresponding laser excitation. From each fluidic channel, five to six image stacks were acquired randomly down through the channel. 3D visualization of image was done using ImageJ.\n\n### Measurement of pilus\u2013pilus rupture force\n\nThe optical tweezers were assembled on a Zeiss Axiovert 200 microscope as described previously (Clausen et al., 2009; Anderson et al., 2014). The assay was modified for measuring the force generated by a single surface-attached bacterium as a function of time (Anderson et al., 2014; Dewenter et al., 2015). The trap was calibrated by power spectrum analysis of the Brownian motion of individual monococci assuming a bacterial diameter of 1 \u00b5m and was found to have a stiffness of 0.14 pN/nm \u00b1 10%. The position of trapped bacteria was detected at 20 kHz using a quadrant photodiode and the sample stage was movable via a combined piezo and electric motor.\n\nWe selected for monococci, that is, round bacteria since force measurement could be performed with higher accuracy than with diplococci. Using the drag force method, we found that the linear force range of the optical trap was d = 450 nm when gonococci were trapped. Therefore, the maximum force we detected was F = 65 pN. The retraction experiments were performed in a sealed chamber using a low-density suspension of gonococci, allowing for undisturbed measurement of single bacteria over a period of minutes. During the experiment, a single bacterium was trapped near the surface using the optical tweezers. Retraction of surface-bound pili resulted in deflection of the bacterium from the center of the optical trap as measured by the four-quadrant photodiode. The force acting on a bacterium is proportional to its deflection and was calculated using the calibration described above. After several minutes, a detrimental effect of the optical trap on the bacterium became apparent and it was abandoned.\n",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "8a56ebe3-9176-4fb7-ab82-eeffb57b46c1",
+      "submission_id": "c345c0a2-f2ba-46f7-8064-e0e2c8bb9d4f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roberto Kolter, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10811.024](https://doi.org/10.7554/eLife.10811.024)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cDifferential interaction forces govern bacterial sorting in early biosfilms\u201d for peer review at eLife. Your submission has been favorably evaluated by Naama Barkai (Senior Editor), and two reviewers, one of whom, Roberto Kolter is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThis is a resubmitted manuscript that was previously rejected. In our rejection letter we acknowledged that there was a very interesting story that had been poorly presented. In the revised version the authors have extensively revised their presentation. Indeed, they followed our recommendations very well. For one, they now start with presentation of the theory and proceed to use the Neisseria pili system to test it. They also have removed a lot of the results they had previously presented on phase variation because they detracted and confused more that they contributed to the main aim. Thus, we feel that the new version is much improved. The data that are now included are otherwise the same as before and they remain strong. Our main comments are that the paper needs editing. In particular, parts of the Discussion are redundant with the Results section (the parts that merely summarize the results again without additional discussion, e.g. the second and third paragraphs of the subsection \u201cDifferential physical interactions drive cell sorting\u201d). These parts should be removed. Also, we think there was an error in the equations in the subsection \u201cImage analysis\u201d (one of the equation still seems incorrect; please see attachment).\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The previous decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \u201cGenetic variation alters pilus\u2013pilus interaction force and governs gonococcal cell sorting\u201d for consideration at eLife. Your full submission has been evaluated by Naama Barkai (Senior Editor), and two reviewers, one of whom, Roberto Kolter, is a member of our Board of Reviewing Editors, and the decision was reached after discussions involving all three. Based on our discussions we regret to inform you that your work in its current format will not be considered further for publication in eLife.\n\nHowever, the reviewers all agreed that the main problem with the manuscript was in its presentation and that, indeed, the results were of significance but that their importance was hidden. The work addresses a fundamental question (though this was not obvious until the last part of the manuscript), it uses an innovative approach to address this question and it provides conclusive results and answers. Thus, we would be willing to reconsider a completely re-written manuscript, where the hypothesis is presented first and then its test. You should note that if you decide to re-submit, the manuscript would be treated as a brand new submission and would undergo the full process of review.\n\nAll three reviewers found the structure of the manuscript very confusing. It was not until the end that it became evident that the work tested theoretical predictions of how differential cell\u2013cell interaction forces drive spatial arrangement of progeny cells. By making this key link to the theoretical predictions only in the Discussion, the significance of the work is almost completely lost. In addition, the emphasis on the pathogen and antigenic and phase variation are such that the importance of the actual work is diminished. In our opinion, the solution is a complete overhaul of the manuscript to make it hypothesis driven. First present the theoretical predictions and then build on that to present the results of how cell\u2013cell interaction forces influence segregation. The model system is a great tool but should not be the focus of the paper.\n\nReviewer #1 (Roberto Kolter):\n\nThe authors present a nice set of experiments that allow them to conclude that cell\u2013cell interaction forces (which vary as a consequence of presence/absence/modification of type IV pili in the gonococcus) leads to cells \u201csegregating\u201d or \u201csorting\u201d. From my perspective the experiments have been well carried out. A very important control was carried out in using cells that were mutated for the ability to vary their pili and sectoring was shown to be reduced. This is critical to me because the observed reduction (rather than complete lack) of segregation already indicates that a major contributor to segregation is indeed simply where the cells are and thus defines where their progeny will be located. So the while the forces of the cell\u2013cell interactions are contributing to the segregation patterns observed, they are not the sole factor. This greatly dampens the claims regarding the biology of this pathogen in particular. But most importantly, from my perspective, while the finding that pilus\u2013pilus interaction forces influence segregation is very \u201cneat\u201d, it is really not a great insight regarding the biology of the organism. The contribution, as currently presented, seems to be more appropriate for a more specialized journal. However, if the results were to be presented differently, first posing the importance of how theory predicts that interaction forces between cells (in general) should lead to cell progeny segregation and only after that proceed to present the findings, this could be an important contribution. This work is not so much about this pathogen in particular but in general for all biological situations where cell\u2013cell interactions might influence the spatial arrangements of progeny cells. This significance in almost completely lost in the current format.\n\nReviewer #2:\n\n1) In general, I found the text hard to read. This was a consequence of two aspects. First, I often did not get a good understanding of where the text was heading \u2013 I understood the content but did not understand the direction of the writing (for example in the third and fourth paragraphs of the Introduction). The second and related point is that the authors sometimes provided pieces of information at a moment where I did not yet know why this piece of information is relevant. One example: In the first paragraph of the subsection \u201cSpatio-temporal dynamics of a variant with reduced pilus density within an expanding colony\u201d the authors start discussing transformation, but it only becomes clear later that transformation plays a role in this study. I realize that my points concern writing style, which is a matter of personal preference \u2013 but I wanted to mention this in case it is useful for preparing a revised version. In short, a major re-write would be necessary.\n\n2) The Introduction and the Results are very difficult to read. For example, the Results say that the experimentally determined interaction forces explain the observed spatial arrangement \u2013 but this is only true if one has the theoretical predictions in mind. Without knowing about these predictions at this point, it is not possible to see how exactly the interaction forces can explain the spatial arrangement. The authors do mention a link between interaction forces and spatial arrangement at the end of the Introduction and in the Results section (subsection \u201cInteraction force between pilus-variants\u201d). However, these statements are vague and understood only much later that these explanations are on solid theoretical ground.\n\n3) Related to the point above, the main focus of the manuscript did not become immediately clear to me. Initially, the focus seemed to be on phase variation and type IV pili, but later the main focus shifted on fundamental questions about how differential cell\u2013cell adhesion drives spatial arrangement of cells in a multi-cell context. I would find it easier if the study would just have one main focus.\n\n4) Also related to the two previous points: because the link to the theoretical predictions (and therefore to the fundamental question) only comes so late in the manuscript, it did not become clear to me how much is already known about the link between interaction forces and spatial arrangement. Are there many other studies that address this issue? What are the main knowledge gaps? I would welcome more presentation of this early on in the manuscript.\n\n5) As the authors show, the positioning of the mutants with fewer pili at the front of the expanding colony is probably a consequence of both their increased growth rate and of altered cell\u2013cell interacting forces. Given that the manuscript focuses on the impact of interacting forces on spatial structure, it would seem important to try to estimate the relative importance of these two effects.\n",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e6351d8-11c9-40ae-a8d1-c474a90a9717",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C1",
+      "claim": "Bacterial biofilms can generate micro-heterogeneity in terms of surface structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial biofilms can generate micro-heterogeneity in terms of surface structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract without specific experimental data or citations provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "005bd32a-f455-45e7-97f5-2590a407b157",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C2",
+      "claim": "The rupture forces between pili are fine-tuned by post-translational modification.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the rupture forces between pili are fine-tuned by post-translational modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6ad6578c-2166-49fb-b29d-30aebe79aefd",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C3",
+      "claim": "Bacterial sorting was dependent on pilus post-translational modification and pilus density.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial sorting was dependent on pilus post-translational modification and pilus density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figures 3, 6, and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "12e936b3-c786-454e-9d95-0dc9f363c993",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C4",
+      "claim": "Active force generation was necessary for defined morphologies of mixed microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Active force generation was necessary for defined morphologies of mixed microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experiments with pilT deletion mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "dbf84519-6094-4f5f-b2f8-0d9a3606296c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C5",
+      "claim": "The observed morphotypes were in remarkable agreement with the differential strength of adhesion hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed morphotypes were in remarkable agreement with the differential strength of adhesion hypothesis proposing that a tug-of-war among surface structures of different cells governs cell sorting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental observations with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "5a5e7f43-170f-4b46-8c67-e1370258cb45",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C6",
+      "claim": "In early biofilms the density and rupture force of bacterial surface structures can trigger cell sorting based on similar physical principles as in developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in early biofilms the density and rupture force of bacterial surface structures can trigger cell sorting based on similar physical principles as in developing embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement based on the experimental results and comparison with embryonic development literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "82114a62-a3b0-4c7c-9d6b-0e2b5056ea9d",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C7",
+      "claim": "Physical interactions and mechanical forces are involved in sorting of different cell types in embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Physical interactions and in particular mechanical forces are involved in sorting of different cell types. These requirements have been established in the field of embryonic development (Gonzalez-Rodriguez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "44a66df1-8df5-41af-aded-86f7f16b53c9",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C8",
+      "claim": "Cells must divide, change shape, adhere to each other, migrate, disperse, or cluster during embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells must divide, change shape, adhere to each other, migrate, disperse, or cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about embryonic development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b342d775-6d1e-483c-812e-a069177c84ca",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C9",
+      "claim": "Cells modulate their physical properties including rigidity, position, motility, and strength of adhesion during development.",
+      "claim_type": "EXPLICIT",
+      "source": "To complete these processes, they modulate their physical properties including rigidity, position, motility, and strength of adhesion (Fagotto, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "13234098-99da-4f1a-961a-38792abf488c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C10",
+      "claim": "The development of bacterial biofilms resembles eukaryotic development in various aspects including genetic programs controlled by master regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of bacterial biofilms resembles eukaryotic development in various aspects including genetic programs that are controlled by master regulators (Monds and O'Toole, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ac54b100-49cd-4e22-802f-f5e7270e0d8e",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C11",
+      "claim": "It is unclear to which extent physical forces are involved in determining the architecture of biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear to which extent physical forces are involved in determining the architecture of biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "2d8c84a8-a527-4f21-be80-eb74ed4d61a8",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C12",
+      "claim": "The differential adhesion hypothesis states that a population of cells will sort into spatially separated subpopulations if the strength of cell\u2013cell adhesion differs between cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis states that a population of cells will sort into spatially separated subpopulations, if the strength of cell\u2013cell adhesion differs between cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the differential adhesion hypothesis from Steinberg, 1963.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "2522b35a-685b-4405-89ab-fd118a1e6223",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C13",
+      "claim": "The biophysical explanation for cell sorting is the tendency of cell clusters to minimize their surface, similar to the minimization of surface tension in liquids.",
+      "claim_type": "EXPLICIT",
+      "source": "The biophysical explanation for this sorting is the tendency of cell clusters to minimize their surface, similar to the minimization of surface tension in liquids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism underlying the differential adhesion hypothesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "315b0720-e780-40f1-a382-3d6614db33de",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C14",
+      "claim": "The differential adhesion model predicts perfect mixing, encasement, partial segregation, and full segregation of cells depending on the strength of cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the strength of cohesion between cells of the same kind and the strength of adhesion between different kinds of cells, the model predicts perfect mixing, encasement, partial segregation, and full segregation of cells (Steinberg, 1963; Graner and Glazier, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "e1ea9cf5-618d-450a-b2ef-e6786dd9175a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C15",
+      "claim": "Some morphotypes predicted by the differential adhesion hypothesis have been observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these morphotypes have been observed experimentally (Steinberg and Takeichi, 1994; Foty and Steinberg, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "025f4162-5e41-4ddf-b755-9ddb88b73a85",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C16",
+      "claim": "Equilibrium descriptions are not sufficient for describing the process of cell sorting during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments indicate that equilibrium descriptions are not sufficient for describing the process of cell sorting during development; they provide evidence that active force generation by cells is involved (Landsberg et al., 2009; Gonzalez-Rodriguez et al., 2012; Kashef and Franz, 2015; Mao and Baum, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "8e9d7b2b-a2fb-4d09-a063-01f154a61120",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C17",
+      "claim": "Active force generation by cells is involved in cell sorting during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments indicate that equilibrium descriptions are not sufficient for describing the process of cell sorting during development; they provide evidence that active force generation by cells is involved (Landsberg et al., 2009; Gonzalez-Rodriguez et al., 2012; Kashef and Franz, 2015; Mao and Baum, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "a743f8a7-7fc4-4975-b821-692ce9fc1cc9",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C18",
+      "claim": "The differential interfacial tension hypothesis introduces cortical contractility in addition to adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the differential interfacial tension hypothesis introduces cortical contractility in addition to adhesion (Brodland and Chen, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "88705c8b-d912-4f44-8fc5-0a18b7f8e638",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C19",
+      "claim": "Harris proposed the differential strength of adhesion hypothesis (DSAH).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Harris proposed another hypothesis, the differential strength of adhesion hypothesis (DSAH) (Harris, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Harris's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ac0447ff-c4ca-41cb-ae15-ffd8102d1b58",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C20",
+      "claim": "The DSAH envisions a tug-of-war of cells actively moving along each other by retractions of cellular extensions pulling the cell body into the direction of the strongest and least breakable bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "He envisions a tug-of-war of cells actively moving along each other by retractions of cellular extensions pulling the cell body into the direction of the strongest and least breakable bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the DSAH from Harris, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ea97411b-bf31-41f5-b88a-874fd84118d2",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C21",
+      "claim": "Cells with lower bond strength would be squeezed outward to the peripheral layer according to the DSAH.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with lower bond strength would be squeezed outward to the peripheral layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the DSAH from Harris, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "678f48d8-f39d-47ff-8d37-58f0ce34b4eb",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C22",
+      "claim": "Sorting of cells occurs during bacterial biofilm development.",
+      "claim_type": "EXPLICIT",
+      "source": "Sorting of cells also occurs during bacterial biofilm development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about bacterial biofilms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "9f25f93e-f45e-4f57-9f1f-94d283d958e0",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C23",
+      "claim": "Cell\u2013cell interactions and biofilm architecture are often governed by cell appendages with polymeric organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell\u2013cell interactions and biofilm architecture are often governed by cell appendages with polymeric organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial biofilms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "a4e310ea-d2e1-4577-a021-28f1971af694",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C24",
+      "claim": "The type IV pilus (T4P) is one of the most ubiquitous appendages.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most ubiquitous appendages is the type IV pilus (T4P) (Berry and Pelicic, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "88913687-4f2f-4e48-82ad-dea812a89fc4",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C25",
+      "claim": "T4P mediates surface attachment, surface motility, and its retraction can generate high mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "It mediates surface attachment, surface motility, and its retraction can generate high mechanical force (Maier and Wong, 2015; Maier, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "41845e10-6a19-44bc-a600-d2953637757e",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C26",
+      "claim": "The T4P is a helical polymer consisting mainly of the major subunit PilE.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4P is a helical polymer consisting mainly of the major subunit PilE (Craig et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ded83080-9c91-4895-afab-b8bcabcab107",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C27",
+      "claim": "The major subunit of T4P can be post-translationally modified by O-linked glycosylation or by phosphoform-modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The major subunit can be post-translationally modified by O-linked glycosylation or by phosphoform-modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about T4P.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "50971a75-4a75-4d57-a53e-8dbc5abaa8fe",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C28",
+      "claim": "Cell sorting based on T4P has been observed in different experimental setups.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell sorting based on T4P has been observed in different experimental setups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by the examples that follow.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "8f977997-a354-4067-8996-541e691fb238",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C29",
+      "claim": "Vibrio cholerae cells lacking the major pilin of the toxin co-regulated pilus did not integrate into wt microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Vibrio cholerae can express a T4P-like system and generate toxin co-regulated pili. Cells lacking the major pilin of the toxin co-regulated pilus did not integrate into wt microcolonies (Kirn et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d12ff5ea-d413-492d-9e26-b19276415947",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C30",
+      "claim": "Mutations in the major pilin subunits induced different pilus morphology and affected the size of pilus bundles in V. cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the major pilin subunits induced different pilus morphology and affected the size of pilus bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kirn et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d26b0b6b-613e-47e3-9da6-4b57c4961daa",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C31",
+      "claim": "Cell sorting based on mutations in major pilin subunits was not reported in V. cholerae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cell sorting based on these mutations was not reported (Kirn et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what was not observed in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "3088a880-6f08-4343-b230-8a0badd707a7",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C32",
+      "claim": "Pseudomonas aeruginosa cells with T4P-dependent motility form a cap on top of non-motile stalks formed by cells that lacked the gene for the major pilin subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential fluorescence labeling of Pseudomonas aeruginosa showed that cells with T4P-dependent motility form a cap on top of non-motile stalks formed by cells that lacked the gene for the major pilin subunit (Klausen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "801458f0-8e3f-48f8-a4e4-55a166edd920",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C33",
+      "claim": "Swarming of P. aeruginosa is generated by a single flagellum, but moderated by polar T4P.",
+      "claim_type": "EXPLICIT",
+      "source": "Swarming of P. aeruginosa is generated by a single flagellum, but moderated by polar T4P (Anyan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7d489cb2-5696-43bb-a52a-05de0fd0de79",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C34",
+      "claim": "When T4P production was suppressed in P. aeruginosa, swarming motility increased considerably, most likely due to reduced cellular clustering mediated by pili.",
+      "claim_type": "EXPLICIT",
+      "source": "When T4P production was suppressed, swarming motility increased considerably, most likely due to reduced cellular clustering mediated by pili.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Anyan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b41bb406-0c88-4409-b3db-3aeeed5ffe44",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C35",
+      "claim": "When piliated and non-piliated P. aeruginosa cells were co-cultured, non-piliated cells dominated the swarm edge.",
+      "claim_type": "EXPLICIT",
+      "source": "When piliated and non-piliated cells were co-cultured, non-piliated cells dominated the swarm edge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Anyan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "a88024ed-822b-4ac3-b4f2-9082f1d5db6a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C36",
+      "claim": "Neisseria meningitidis upregulates expression of a phosphotransferase that is required for phospho-form modification of the major pilin upon attachment to endothelial host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Neisseria meningitidis upregulates expression of a phosphotransferase that is required for phospho-form modification of the major pilin upon attachment to endothelial host cells (Chamot-Rooke et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "0cdc401a-d128-4df0-b069-7b85d3bdd389",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C37",
+      "claim": "Simulations of pilus bundling suggest post-translational modifications affecting the physical interactions between T4P.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of pilus bundling suggest post-translational modifications affecting the physical interactions between T4P (Chamot-Rooke et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d4de78ae-bab1-4423-8fe2-1438b7e8201a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C38",
+      "claim": "T4P can generate a rich diversity of sorting phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these studies imply that T4P can generate a rich diversity of sorting phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6f773102-73c4-4925-80c8-b814074a3733",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C39",
+      "claim": "The biophysical basis underlying cell sorting in bacterial biofilms remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to embryonic development, the biophysical basis underlying cell sorting in bacterial biofilms remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "40fdfeac-e9bc-4871-b1d6-f3768016fe83",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C40",
+      "claim": "Gonococci are peritrichously piliated, generating pili at random locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Gonococci are peritrichously piliated, that is, they generate pili at random locations (Holz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "bad2c4df-428e-451f-a9e3-e998198af518",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C41",
+      "claim": "T4P are necessary for microcolony formation in N. gonorrhoeae.",
+      "claim_type": "EXPLICIT",
+      "source": "Because T4P are necessary for microcolony formation, variation in the breakage force between pili directly affects cell\u2013cell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about N. gonorrhoeae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "4b69ba49-146c-4244-9c10-abbab40a0cb0",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C42",
+      "claim": "Microcolonies formed by gonococci with retractile pili are spherical.",
+      "claim_type": "EXPLICIT",
+      "source": "Microcolonies formed by gonococci with retractile pili are spherical (Higashi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b595de6c-e58c-45ab-a34d-66eef3458207",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C43",
+      "claim": "Upon fusion, two gonococcal microcolonies rapidly form a sphere with larger radius as expected for liquid drops.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon fusion, two microcolonies rapidly form a sphere with larger radius as expected for liquid drops (Dewenter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d7f7052b-5421-40ec-8642-fc3f4417ba04",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C44",
+      "claim": "The retraction of T4P generates mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the retraction of T4P generates mechanical force (Maier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d2e7f6a6-1a1e-4446-8242-32df18984dc0",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C45",
+      "claim": "Multiple pili can coordinate through a tug-of-war mechanism leading to surface motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple pili can coordinate through a tug-of-war mechanism leading to surface motility (Marathe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "75e265d4-2800-41e8-a428-dd0df48622c6",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C46",
+      "claim": "The P\u2212 green strain (pilE::gfpmut3 kan) did not form clusters nor did it interact with piliated bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain did not form clusters nor did it interact with piliated bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "4b0c5cad-c9e7-40f6-9b00-8c10b27764bd",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C47",
+      "claim": "The P++ strain (igA1::pilE pilE ermC) contains two copies of the pilE gene in addition to the native copy, increasing the pilus density compared to the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain contains two copies of the pilE gene in addition to the native copy, increasing the pilus density compared to the wild type (Holz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and the strain construction.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "99130ea7-83be-422f-b541-f36e7fabce2f",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C48",
+      "claim": "The rupture forces between individual pili of the P++ strain are expected to be equal to the wt forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the pilins are unaltered, the rupture forces between individual pili are expected to be equal to the wt forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the fact that the pilin sequence is unchanged.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d5caa188-ea03-4eaf-9a78-9ae46b194827",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C49",
+      "claim": "The total attractive force between two P++ bacteria is higher than wt due to higher pilus density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the density of pili is higher, the total attractive force between two bacteria is higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the increased pilus density.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b8322a88-d211-41ab-b32b-7d5b2a3de81b",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C50",
+      "claim": "Wt gonococci bear a disaccharide composed of a hexose residue linked to a proximal 2,4-diacetamido-2,4,6-trideoxyhexose (HexDATDH) at serine 63.",
+      "claim_type": "EXPLICIT",
+      "source": "Wt gonococci bear a disaccharide composed of a hexose residue linked to a proximal 2,4-diacetamido-2,4,6-trideoxyhexose (HexDATDH) at serine 63 (Hegge et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "83acfdf3-b18b-4f04-9606-5c65687f564e",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C51",
+      "claim": "PglF is involved in membrane translocation of lipid-attached carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "PglF is involved in membrane translocation of lipid-attached carbohydrates (Hegge et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "3873d6fb-89bd-4978-b31d-00b0ac8f7e9a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C52",
+      "claim": "Deletion of pglF strongly reduces O-linked pilin glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of pglF strongly reduces O-linked pilin glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hegge et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "1a38cd64-fdfb-4f61-a12e-8537f7422b33",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C53",
+      "claim": "The distribution of rupture forces of wt bacteria pulling on wt pili was in agreement with a Gaussian distribution with a maximum at Fwt/wt = (39 \u00b1 1) pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of rupture forces of wt bacteria pulling on wt pili was in agreement with a Gaussian distribution with a maximum at Fwt/wt = (39 \u00b1 1) pN (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7236e37e-591e-4f67-a618-97d72037a2fe",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C54",
+      "claim": "The distribution of rupture forces generated by G\u2212 green was shifted to higher values of FG\u2212/G\u2212 = (46 \u00b1 1) pN.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of rupture forces generated by G\u2212 green was shifted to higher values of FG\u2212/G\u2212 = (46 \u00b1 1) pN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "cbc45cea-c153-4c93-91a9-55b77860d63e",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C55",
+      "claim": "The force generated by G\u2212 green onto the surface coated with wt pili, FG\u2212/wt = (25 \u00b1 1) pN, was considerably lower than the interaction forces between pili of the same kind.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, the force generated by G\u2212 green onto the surface coated with wt pili, FG\u2212/wt = (25 \u00b1 1) pN, was considerably lower than the interaction forces between pili of the same kind.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d5bbc86a-6d3a-438c-b10b-a90207ac6e62",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C56",
+      "claim": "There was no significant difference in the frequency at which bacteria pulled onto the pilus-coated surface between the strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we monitored the frequency at which bacteria pulled onto the pilus-coated surface and found no significant difference between the strains (Figure 1C), confirming that pilus\u2013pilus rupture force and not the frequency of pilus retractions was responsible for the altered cell\u2013cell interaction in response to the loss of pilin glycosylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "bbd94e14-dcfd-4343-ae7f-480d876afa0e",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C57",
+      "claim": "FG\u2212/G\u2212 > Fwt/wt > FG\u2212/wt.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we found that FG\u2212/G\u2212 > Fwt/wt > FG\u2212/wt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the force measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "30da4463-980a-4b1a-a9e2-7ee14fc130f3",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C58",
+      "claim": "The breakage force between gonococci is fine-tuned by post-translational modification of pilin.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the breakage force between gonococci is fine-tuned by post-translational modification of pilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the force measurements in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7b68c51c-f269-49af-bbd0-f68d23ffd7bb",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C59",
+      "claim": "N. gonorrhoeae are naturally competent for transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "N. gonorrhoeae are naturally competent for transformation, which is the import and inheritable integration of DNA from the environment (Burton and Dubnau, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "38e43991-c4ec-43f3-bce0-226d42c35fdd",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C60",
+      "claim": "Little mixing between P+ green and wt was observed in range expansion experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for range expansion experiments (Hallatschek et al., 2007), little mixing between P+ green and wt was observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 2B and Video 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "27cf0fe7-f0c0-4643-8c18-8b46986496b4",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C61",
+      "claim": "P+ green formed a sector in the expanding colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, P+ green formed a sector.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 2B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7c7d67d2-467f-49af-b9d0-0125c9122ea7",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C62",
+      "claim": "The mobility of the bacteria in the agar plate assay was mostly determined by steric interactions caused by cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the mobility of the bacteria in this assay was mostly determined by steric interactions caused by cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of sector formation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ad07a346-809a-45a9-b880-1e8478d6343c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C63",
+      "claim": "T4P-mediated surface motility was observed only within 1\u20133 bacterial diameters at the expanding front.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that T4P-mediated surface motility was observed only within 1\u20133 bacterial diameters at the expanding front (Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b78bba59-baa3-44d6-b7ab-8d7679f71908",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C64",
+      "claim": "P\u2212 bacteria arising close to the expanding front were expelled from the bulk of the colony and their offspring spread rapidly along the front, encircling the entire colony.",
+      "claim_type": "EXPLICIT",
+      "source": "P\u2212 bacteria arising close to the expanding front were expelled from the bulk of the colony and their offspring spread rapidly along the front, encircling the entire colony (Figure 3C,D, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3C,D and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "da881673-5948-4ce1-9b03-be6802fcb200",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C65",
+      "claim": "P+ green cells residing close to the expanding front were expelled from the P++ colony and encased the P++ colony.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the P+ green cells residing close to the expanding front were expelled from the colony and encased the P++ colony (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "771ebf5b-7a20-4427-ae8b-ef9b433c108e",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C66",
+      "claim": "Cell sorting occurred at the front of the expanding microcolonies but sorting was incomplete when considering the entire microcolony.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, the experiments showed that cell sorting occurred at the front of the expanding microcolonies but sorting was incomplete when considering the entire microcolony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observations from the agar plate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "1f0a5227-695d-4f89-9d49-e6ada2e32b88",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C67",
+      "claim": "P\u2212 green bacteria residing directly at the front remained at the front and tended to form blebs.",
+      "claim_type": "EXPLICIT",
+      "source": "P\u2212 green bacteria residing directly at the front remained at the front and tended to form blebs (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "10900188-798e-4752-a626-ee48aa503a97",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C68",
+      "claim": "P\u2212 green bacteria closer than 3 \u00b5m to the front showed a probability of more than 50% to move towards the front.",
+      "claim_type": "EXPLICIT",
+      "source": "P\u2212 green bacteria closer than 3 \u00b5m to the front showed a probability of more than 50% to move towards the front (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "cb6c131e-8cc8-4da7-8dd2-b885b865bf65",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C69",
+      "claim": "The control strain P+ green only showed a probability of 50% of residing and staying at the front.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the control strain P+ green only showed a probability of 50% of residing and staying at the front (Figure 4B,C), which decreased as a function of distance and stayed significantly below the P\u2212 green probability for reaching the front.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "e17db54a-cb21-4cd6-8a7f-a8d44214d5bb",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C70",
+      "claim": "The P+ green strain had a generation time of tg = 49 \u00b1 3 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The P+ green strain had a generation time of tg = 49 \u00b1 3 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "c5e932d4-b103-47d9-9ce3-109000a7d941",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C71",
+      "claim": "The non-piliated P\u2212 green strain had a significantly lower generation time (tg = 41 \u00b1 1 min).",
+      "claim_type": "EXPLICIT",
+      "source": "The non-piliated P\u2212 green strain had a significantly lower generation time (tg = 41 \u00b1 1 min), whereas the growth rate of the hyperpiliated P++ red strain showed an increased generation time (tg = 56 \u00b1 4 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "e6231276-1b7f-46a2-a68d-de0eb57aebd8",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C72",
+      "claim": "The hyperpiliated P++ red strain showed an increased generation time (tg = 56 \u00b1 4 min).",
+      "claim_type": "EXPLICIT",
+      "source": "The non-piliated P\u2212 green strain had a significantly lower generation time (tg = 41 \u00b1 1 min), whereas the growth rate of the hyperpiliated P++ red strain showed an increased generation time (tg = 56 \u00b1 4 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "3fd8f237-ae08-4806-a6dd-abae67959a2d",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C73",
+      "claim": "The variance of the P\u2212 green cells increases more strongly as a function of the number of offspring than the variance of P+ green cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the variance of the P\u2212 green cells increases more strongly as a function of the number of offspring than the variance of P+ green cells, indicating an increased mobility of P\u2212 green within a colony of wt bacteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "2b0e0756-3a07-47d6-94ec-71c18d13de5a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C74",
+      "claim": "The generation time of PQ\u2212 green was slightly higher than the piliated strain P+ red*.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation time of PQ\u2212 green was slightly higher than the piliated strain P+ red*.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d86075c4-287f-47d8-91b1-296737abe121",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C75",
+      "claim": "PQ\u2212 green close to the front of the expanding colony was expelled from P+ red*.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to P\u2212 green, the PQ\u2212 green close to the front of the expanding colony was expelled from P+ red* (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "e2cec821-f261-495a-801b-78e2dcb1361b",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C76",
+      "claim": "Once reaching the front, PQ\u2212 green expanded along the front and encircled the bulk of P+ red* cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once reaching the front, PQ\u2212 green expanded along the front and encircled the bulk of P+ red* cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6d5dff4e-17af-409e-b2d0-5ddbbf34ea40",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C77",
+      "claim": "Loss of pili induces segregation independently of decreased generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "This control experiment confirms that loss of pili induces segregation independently of decreased generation time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the PQ\u2212 green experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7333857b-c182-434c-99e4-c28dfe9b4bb9",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C78",
+      "claim": "Bacteria with the lowest pilus density segregate to the front of mixed expanding microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, bacteria with the lowest pilus density segregate to the front of mixed expanding microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observations from the agar plate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "80d03b20-e8ca-4b9c-b057-eed0d0b102c6",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C79",
+      "claim": "The sorting efficiency strongly depends on the location of the less piliated clone, with highly efficient sorting close to the front.",
+      "claim_type": "EXPLICIT",
+      "source": "The sorting efficiency strongly depends on the location of the less piliated clone, with highly efficient sorting close to the front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "05b3d94b-d86b-4ebd-9d41-27dcb70d8cef",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C80",
+      "claim": "The generation time of G\u2212 green (tg = 50 \u00b1 2 min) was comparable to the wild-type strain with reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the generation time of tg = 50 \u00b1 2 min of this strain was comparable to the wild-type strain with reporter (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "75d9f173-c68f-4c29-95d9-a77a61448088",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C81",
+      "claim": "Glycosylated (wt) bacteria segregated at the front of the expanding G\u2212 green colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, glycosylated (wt) bacteria segregated at the front of the expanding colony (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "5e14e2b5-42e9-4efb-901d-1bab63c3f82c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C82",
+      "claim": "Gain of O-linked pilin glycosylation causes segregation of gonococci.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that gain of O-linked pilin glycosylation causes segregation of gonococci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiment shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "0d6dbe0f-b998-4261-b8de-ef79a6b44e2c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C83",
+      "claim": "The bacteria with glycosylated pili dominate the front of the expanding colony.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacteria with glycosylated pili dominate the front of the expanding colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiment shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "357567cb-1164-4fd8-ac88-4906fdfc05f0",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C84",
+      "claim": "The underlying cause of sorting is most likely the difference in pilus\u2013pilus rupture forces.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying cause of sorting is most likely the difference in pilus\u2013pilus rupture forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the force measurements and sorting observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "96fb805b-4042-4f47-9121-90d2c3d5d7db",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C85",
+      "claim": "In liquid environment, T4P retractions ensure rapid cell movement and microcolonies assemble, disassemble, and change their shape within minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In liquid environment, T4P retractions ensure rapid cell movement and microcolonies assemble, disassemble, and change their shape within minutes (Dewenter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7dd05685-2fdd-4db2-9122-520ab4ad0ddf",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C86",
+      "claim": "P+ red and P+ green formed spherical and well-mixed microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "As control, a suspension of P+ red and P+ green was used. They formed spherical and well-mixed microcolonies (Figure 7A, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 7A and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "83439adb-003c-4272-8acc-f2156e265e24",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C87",
+      "claim": "When P+ red and P\u2212 green were mixed, the wt bacteria formed spherical microcolonies while the P\u2212 green bacteria did not show interaction amongst themselves or with wt bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "When P+ red and P\u2212 green were mixed, the wt bacteria formed spherical microcolonies (Figure 7B, Video 5), while the P\u2212 green bacteria did not show interaction amongst themselves or with wt bacteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 7B and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "cb6539db-02fc-4e94-810c-598d25628d2a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C88",
+      "claim": "P+ green formed a shell surrounding P++ red when mixed.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis in our bacterial model system, P++ red and P+ green were mixed. We found that P+ green formed a shell surrounding P++ red (Figure 7C, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 7C and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "57f6d3fe-891d-40e5-aae2-8444e7288909",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C89",
+      "claim": "This behavior is consistent with stronger physical interactions among P++ bacteria due to their high-pilus density, lower interactions among P+ bacteria due to lower pilus density, and intermediate interactions at the interface between P++ red and P+ green.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is consistent with stronger physical interactions among P++ bacteria due to their high-pilus density, lower interactions among P+ bacteria due to lower pilus density, and intermediate interactions at the interface between P++ red and P+ green.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed morphology based on the pilus densities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "3fa93d78-02c3-48fc-af26-9ec75362c88a",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C90",
+      "claim": "In a mix of P+ red and G\u2212 green, P+ red formed crescents surrounding G\u2212 green.",
+      "claim_type": "EXPLICIT",
+      "source": "In a mix of P+ red and G\u2212 green, P+ red formed crescents surrounding G\u2212 green (Figure 7D, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 7D and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "832c4cb1-65ee-4fd7-a4b0-63842bb72114",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C91",
+      "claim": "The morphotype of P+ red and G\u2212 green agrees remarkably well with the prediction of the DAH.",
+      "claim_type": "EXPLICIT",
+      "source": "This morphotype agrees remarkably well with the prediction of the DAH (Steinberg, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the observed morphology with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "28df9529-6005-4eb5-9188-9c5de75d7593",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C92",
+      "claim": "Bacteria sort dependent on pilus density and pilin post-translational modification.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that bacteria sort dependent on pilus density and pilin post-translational modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the liquid culture experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "7dee601b-3f62-47e0-99e0-def0913b9acc",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C93",
+      "claim": "The morphologies of the mixed colonies can be inferred from the rupture forces between the pili.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphologies of the mixed colonies can be inferred from the rupture forces between the pili.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the correlation between force measurements and observed morphologies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d931ef98-1b56-4fe9-857e-1eab36ddffd2",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C94",
+      "claim": "pilT encodes for the T4P retraction ATPase PilT and is essential for pilus retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "pilT encodes for the T4P retraction ATPase PilT and is essential for pilus retraction (Wolfgang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "49e3db7a-db80-4d78-9780-88b1b54980c9",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C95",
+      "claim": "In T\u2212 cells, T4P can form, but cannot retract, nor generate force.",
+      "claim_type": "EXPLICIT",
+      "source": "In T\u2212 cells, T4P can form, but cannot retract, nor generate force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about pilT mutants.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "cf557d2a-9652-4b18-947d-9022b7583724",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C96",
+      "claim": "T\u2212 bacteria are unable to perform active movement.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, bacteria are unable to perform active movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the inability to retract pili.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "f51a2165-c729-40cd-b259-c947437c0829",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C97",
+      "claim": "Unlike wt gonococci, the T\u2212 red and T\u2212 green clusters did not round up to form spherical microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "T\u2212 red and T\u2212 green were mixed and imaged with confocal microscopy (Figure 8A). Unlike wt gonococci, the clusters did not round up to form spherical microcolonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "2c07cd06-af68-448f-95ae-62003079fab7",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C98",
+      "claim": "Red and green T\u2212 bacteria did not mix, but only grew into separate clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, red and green bacteria did not mix, but only grew into separate clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "fcb339f0-52db-455d-997b-3e7bd6a72f1b",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C99",
+      "claim": "Inhibition of glycosylation in one strain did not change the morphologies in a mix of T\u2212G\u2212 green and T\u2212 red cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, inhibition of glycosylation in one strain did not change the morphologies in a mix of T\u2212G\u2212 green and T\u2212 red cells (Figure 8B) nor did they resemble the shape predicted by the DAH and the DSAH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "f5081d9c-3472-409f-a1ff-3d79c68a4b82",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C100",
+      "claim": "Active force generation by T4P is required for the cluster morphology predicted by the DAH and the DSAH.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that active force generation by T4P is required for the cluster morphology predicted by the DAH and the DSAH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiments with pilT mutants shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "eae8049e-8c45-4f61-8127-a3032d1c796c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C101",
+      "claim": "The morphologies observed in liquid culture are in accordance with the predicted ones by the differential adhesion hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential adhesion hypothesis, by Malcom Steinberg, predicts the morphologies of cell-clusters formed by two types of cells with different surface adhesins (Steinberg, 1963). The morphologies we observed in liquid culture are in accordance with the predicted ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental observations with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "bdc58df0-11c8-4e49-9a66-42dc932f8421",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C102",
+      "claim": "Active pilus retraction was required for generating well-defined morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, active pilus retraction was required for generating these well-defined morphologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiments with pilT mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ca02d6ef-2d9c-4ea7-b49a-bc6235ff9806",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C103",
+      "claim": "Gonococci move over surfaces by a tug-of-war of multiple pili.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we provided evidence that gonococci move over surfaces by a tug-of-war of multiple pili (Marathe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "613648cb-5116-46f9-9467-f6850069b457",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C104",
+      "claim": "It is likely that bacteria within microcolonies employ a tug-of-war mechanism for segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that bacteria within microcolonies employ a tug-of-war mechanism for segregation (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on prior work and the current observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "1045af55-85d1-4c21-a17f-45941497993f",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C105",
+      "claim": "Bacteria with the same composition and number of pili exhibit equal net rupture forces between all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria with the same composition and number of pili exhibit equal net rupture forces between all cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of the pili.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d6adffc7-6f56-4674-a595-c7670dc4008c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C106",
+      "claim": "Well-mixed aggregates were found for bacteria with equal net rupture forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found well-mixed aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observations for P+ red and P+ green.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "f03b6b67-6361-4f32-b5c7-7ae244fe84bf",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C107",
+      "claim": "Bacteria without pili show no interaction amongst themselves or with wt bacteria, in agreement with Fwt/P\u2212 \u2248 FP\u2212/P\u2212 \u2248 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria without pili show no interaction amongst themselves or with wt bacteria, in agreement with Fwt/P\u2212 \u2248 FP\u2212/P\u2212 \u2248 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observations for P+ red and P\u2212 green.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b558c1db-041c-4f48-931c-4317e28a0d0d",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C108",
+      "claim": "Co-incubation of hyperpiliated P++ and wt led to the formation of a sphere of P++ in the center and a fully surrounding shell of P+ in agreement with FP++/P++ > FP++/wt > Fwt/wt.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-incubation of hyperpiliated P++ and wt led to the formation of a sphere of P++ in the center and a fully surrounding shell of P+ in agreement with FP++/P++ > FP++/wt > Fwt/wt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observations for P++ red and P+ green.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b3735c9a-1620-4256-b69e-d832ef2fd5c9",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C109",
+      "claim": "A mix of P+ and glycosylation-inhibited G\u2212 bacteria with FG\u2212/G\u2212 > Fwt/wt > FG\u2212/wt formed a sphere of G\u2212 bacteria and with a crescent of P+ partially surrounding it.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a mix of P+ and glycosylation-inhibited G\u2212 bacteria with FG\u2212/G\u2212 > Fwt/wt > FG\u2212/wt formed a sphere of G\u2212 bacteria and with a crescent of P+ partially surrounding it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observations for P+ red and G\u2212 green.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "580c4bc0-9517-4aa8-ab7b-e0fc7b5362aa",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C110",
+      "claim": "The mixed morphologies coincide with the prediction of the DSAH.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, the mixed morphologies coincide with the prediction of the DSAH (Harris, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of observations with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d0640c20-6529-45ae-a796-5df7af9c80ce",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C111",
+      "claim": "Active forces have been shown to be important for cell sorting during embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding to the above, active forces have been shown to be important for cell sorting during embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established knowledge in embryonic development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "69a1a1fc-dfa9-4d70-bb05-a56f3ebc52de",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C112",
+      "claim": "In developing tissues, cortical contractile forces and cell adhesion act antagonistically, opposing each other with contraction tending to minimize and adhesion to maximize the contact area.",
+      "claim_type": "EXPLICIT",
+      "source": "In developing tissues, cortical contractile forces and cell adhesion act antagonistically, opposing each other with contraction tending to minimize and adhesion to maximize the contact area (Fagotto, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b5124fa0-5dfa-4063-9a9d-0fec6cddf22c",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C113",
+      "claim": "The cell body in the bacterial system can be considered as a point-object and the forces of pilus retraction are always attractive.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the cell body in our bacterial system can be considered as a point-object and the forces of pilus retraction are always attractive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between bacterial and eukaryotic systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "9d9e56fe-afd7-425f-950c-3fa489aec1e2",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C114",
+      "claim": "Cell sorting as a consequence of variations in density and post-translational modification is very likely to affect the biology of pathogenic Neisseria species.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell sorting as a consequence of variations in density and post-translational modification is very likely to affect the biology of pathogenic Neisseria species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6eef8af6-87ee-47f1-a476-8fd086996102",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C115",
+      "claim": "Neisserial populations generate micro-heterogeneity via phase and antigenic variation of T4P-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neisserial populations generate micro-heterogeneity via phase and antigenic variation of T4P-associated genes (Rotman and Seifert, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "ee84012c-e3b3-499e-83be-652c585c8217",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C116",
+      "claim": "Multiple antigenic variants in the sequence of the major pilin were detected after 2 days of biofilm growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of multiple antigenic variants in the sequence of the major pilin after 2 days of biofilm growth highlights this (Kouzel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6a349259-75df-4c61-9d61-306676c81159",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C117",
+      "claim": "Apart from the pilin gene, other genes affecting post-translational modification and pilus density are phase-variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from the pilin gene, other genes affecting post-translational modification and pilus density are phase-variable (Marri et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "c49b776f-fde0-4665-8c80-a5efecf71f43",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C118",
+      "claim": "Phase and antigenic variation trigger cell sorting and thereby affect the architecture of biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that phase and antigenic variation trigger cell sorting and thereby affect the architecture of biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental findings and prior knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "9ff07051-06ff-4f96-8961-8d493968eb95",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C119",
+      "claim": "Differential physical interactions between bacteria cause cell sorting in early biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "We have tested the hypothesis that differential physical interactions between bacteria cause cell sorting in early biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the hypothesis tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "5971b52c-bc7f-4301-af20-b02786a4e047",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "claim_id": "C120",
+      "claim": "Mechanical forces govern cell sorting in early biofilm formation, similar to embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise to embryonic development, our findings suggest mechanical forces govern cell sorting in early biofilm formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "45aa8cad-f40d-4e26-bb2b-723d57344574",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Post-translational modification of pili by glycosylation fine-tunes the rupture forces between pili. Wild-type pili show rupture forces of 39\u00b11 pN, glycosylation-deficient (G\u2212) pili show higher forces (46\u00b11 pN for G\u2212/G\u2212 interactions), and heterotypic interactions show lower forces (25\u00b11 pN for G\u2212/wt). The frequency of pilus retractions was not significantly different between strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 provide quantitative force measurements from optical tweezers experiments (Figure 1B) showing differential rupture forces based on glycosylation status. Claim C56 provides a critical control showing retraction frequency is unchanged, confirming that force differences are due to altered pilus-pilus interactions rather than retraction dynamics. The measurements are internally consistent and support the conclusion in C58.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "fe5d22c5-a2b2-4b96-9fcf-232945f4eac2",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Engineered strains with varying pilus densities were created: P\u2212 (no pili), P++ (hyperpiliated with three pilE copies), and wild-type. The P++ strain is expected to have higher total attractive force due to increased pilus density, though individual pilus rupture forces should be unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 describe the genetic construction and phenotypes of strains with altered pilus density, supported by strain construction details and citations. Claims C48-C49 are logical inferences based on the unchanged pilin sequence in P++ (thus unchanged individual pilus forces) but increased pilus number (thus increased total force). These are reasonable predictions that set up subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "656a04a7-680f-4cbe-81ae-ce6ecb027556",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In expanding colonies on agar plates, bacteria with lower pilus density (P\u2212) segregate to the colony front. P\u2212 bacteria within 3 \u03bcm of the front show >50% probability of moving toward the front, compared to 50% for P+ controls. Similarly, P+ cells segregate to the front when mixed with hyperpiliated P++ cells. Sorting efficiency is highest near the expanding front.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 describe quantitative observations from time-lapse microscopy (Figures 3-4) showing position-dependent segregation of less-piliated cells to the colony front. The probability analysis (C68-C69) provides statistical support. Claims C78-C79 appropriately summarize these findings. The spatial dependence of sorting efficiency is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6f695c5e-80b9-47ed-b19c-d0ea8979f02f",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pilus density affects bacterial generation time: P+ green (49\u00b13 min), P\u2212 green (41\u00b11 min), and P++ red (56\u00b14 min). Despite faster growth of P\u2212 cells, their increased spatial variance as a function of offspring number indicates increased mobility within colonies. Control experiments with PQ\u2212 (similar generation time to P+) confirm that segregation is independent of growth rate differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 provide generation time measurements (Table 2) showing pilus density inversely correlates with growth rate. Claim C73 presents variance analysis (Figure 5D) demonstrating increased P\u2212 mobility after accounting for growth differences. Claim C77 describes a critical control (PQ\u2212 strain) that decouples piliation from growth rate, confirming segregation is not simply due to faster growth. The analysis appropriately addresses a major confounding variable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "db955e70-6d96-4fb6-974d-b5b176bf5acc",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bacteria with glycosylated pili (wild-type) segregate to the front of expanding colonies of glycosylation-deficient (G\u2212) bacteria. The G\u2212 strain has a comparable generation time (50\u00b12 min) to wild-type, indicating that sorting is due to differences in pilus-pilus rupture forces rather than growth rate differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 describe experiments (Figure 6) showing segregation based on glycosylation status with matched generation times, eliminating growth rate as a confounding factor. Claim C84 appropriately infers that the differential rupture forces measured earlier (C53-C57) are the likely mechanism. The experimental design directly tests the role of post-translational modification in sorting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In liquid culture, bacteria sort into distinct morphologies based on pilus density and glycosylation: P+/P+ form mixed spheres, P+/P\u2212 show no interaction, P++/P+ form core-shell structures, and P+/G\u2212 form partial engulfment (crescents). These morphologies correlate with measured rupture forces and match predictions of the differential adhesion hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 describe confocal microscopy observations (Figure 7, Videos 4-7) of distinct morphologies for different strain combinations. Claim C91 notes agreement with DAH predictions, and C92-C93 appropriately conclude that sorting depends on pilus properties and correlates with rupture forces. The four morphotypes provide systematic evidence linking physical forces to spatial organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Active force generation by T4P retraction is required for defined cluster morphologies. pilT deletion mutants (T\u2212) that cannot retract pili form irregular, non-spherical clusters without sorting, even when glycosylation is varied. This demonstrates that passive adhesion alone is insufficient for the observed morphologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 establish the pilT mutant phenotype (inability to retract pili/generate force) based on prior work. Claims C97-C99 describe experimental observations (Figure 8) showing loss of defined morphologies in T\u2212 strains. Claims C100 and C102 appropriately conclude that active force generation is necessary. This is a critical experiment distinguishing between passive (DAH) and active (DSAH) mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The observed morphotypes in liquid culture are in remarkable agreement with predictions of the differential strength of adhesion hypothesis (DSAH). Each strain combination produces morphologies consistent with the relative rupture forces: equal forces yield mixing, zero forces yield no interaction, and intermediate force hierarchies yield core-shell or partial engulfment structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C109 systematically relate each observed morphology to the measured force relationships, showing internal consistency between force measurements and spatial organization. Claims C5, C101, and C110 conclude agreement with DSAH predictions. The requirement for active force generation (previous result) supports DSAH over passive DAH. The comprehensive matching of predictions to observations across multiple strain combinations provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "b6f5270a-2bcf-4f66-a3b6-e5ef57391980",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bacterial sorting in early biofilms is governed by differential physical interactions determined by pilus density and post-translational modification. Mechanical forces control cell sorting based on similar physical principles as in developing embryos, though the bacterial system involves only attractive forces from pilus retraction rather than the balance of adhesion and cortical contractility seen in eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions of the study, synthesizing results from force measurements, agar plate sorting, liquid culture morphologies, and pilT mutant experiments. The evidence collectively demonstrates that physical forces govern bacterial sorting. The comparison to embryonic development is appropriately qualified (C113) by noting differences in force types. The conclusions are well-supported by the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "d0ef323a-f9a6-4a2c-911a-8f6814eabde1",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In control experiments with isogenic P+ strains, little mixing occurs during range expansion on agar plates, with fluorescent transformants forming sectors. Mobility is primarily determined by steric interactions from cell division, with T4P-mediated motility limited to 1-3 bacterial diameters at the expanding front. Sorting is incomplete in the bulk of colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 describe control experiments (Figure 2, Videos 1-2) establishing baseline behavior without differential pilus properties. The sector formation is consistent with range expansion theory (C60 cites Hallatschek et al., 2007). Claim C66 appropriately notes that sorting is spatially restricted, which is important context for interpreting the main results. These controls are essential for validating the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "77a4262f-aeab-4d97-9961-6707c6f35773",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A pilQ deletion strain (PQ\u2212) with slightly higher generation time than piliated controls still shows segregation to the colony front, confirming that pilus loss induces segregation independently of growth rate effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 describe a control experiment (Figure 5\u2014supplement 2) using a different genetic approach to eliminate pili while controlling for growth rate. This provides independent confirmation that segregation is due to pilus loss rather than growth rate differences, strengthening the conclusions about the role of physical interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "e5bc55e0-ff00-40ef-b4ea-9c08fe8ef9d5",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Bacteria likely employ a tug-of-war mechanism for segregation within microcolonies, similar to their surface motility. Unlike eukaryotic development where cortical contractility and adhesion act antagonistically, bacterial pilus retraction forces are always attractive, with the cell body acting as a point-object.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 cites prior work on tug-of-war motility. Claim C104 reasonably infers this mechanism operates in microcolonies based on the requirement for active force generation. Claim C113 appropriately distinguishes the bacterial system from eukaryotic development. These are reasonable mechanistic interpretations supported by the experimental evidence, though direct visualization of the tug-of-war in microcolonies is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "65f0b05c-fba8-4114-97a3-1011b2f98a56",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cell sorting based on pilus variation is likely biologically relevant for pathogenic Neisseria species, which naturally generate micro-heterogeneity through phase and antigenic variation of T4P-associated genes. The authors propose that this variation triggers cell sorting and affects biofilm architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C115-C117 cite prior work establishing that Neisseria populations naturally vary pilus properties. Claims C114 and C118 propose biological relevance but are speculative (C114 explicitly uses \"very likely\" and C118 is labeled as speculation). While the proposal is reasonable given the experimental findings, direct evidence that natural variation causes sorting in vivo is not provided. This represents an important hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes the context by reviewing prior work on cell sorting in embryonic development (differential adhesion hypothesis, differential interfacial tension hypothesis, differential strength of adhesion hypothesis) and bacterial biofilms (T4P-mediated sorting in various species). The biophysical basis for bacterial sorting remains unclear despite observations in multiple systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize established knowledge from the literature, appropriately cited throughout. They provide necessary background for understanding the study's motivation and significance. The claims accurately represent prior work and identify the knowledge gap the study addresses. This is standard introductory material that contextualizes the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    },
+    {
+      "id": "6bec3a91-1ec6-4e54-b307-0739bb19f015",
+      "content_id": "4ef5e10d-2e3c-49cf-b874-b09bfd83f01f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "N. gonorrhoeae serves as an appropriate model system because gonococci are peritrichously piliated, T4P are necessary for microcolony formation, microcolonies show liquid-like behavior, T4P retraction generates mechanical force, and the bacteria are naturally competent for transformation. Wild-type gonococci have glycosylated pili, and deletion of pglF reduces glycosylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the properties of the model system, supported by citations to prior work (C40, C42-C45, C50-C52, C59) and established knowledge (C41). They justify the choice of N. gonorrhoeae as a model and provide necessary background on pilus biology and genetic manipulation. This information is essential for understanding the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:12:37.102478Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "005bd32a-f455-45e7-97f5-2590a407b157",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "1a38cd64-fdfb-4f61-a12e-8537f7422b33",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "7236e37e-591e-4f67-a618-97d72037a2fe",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "cbc45cea-c153-4c93-91a9-55b77860d63e",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "d5bbc86a-6d3a-438c-b10b-a90207ac6e62",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "bbd94e14-dcfd-4343-ae7f-480d876afa0e",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "30da4463-980a-4b1a-a9e2-7ee14fc130f3",
+      "result_id": "45aa8cad-f40d-4e26-bb2b-723d57344574"
+    },
+    {
+      "claim_id": "75e265d4-2800-41e8-a428-dd0df48622c6",
+      "result_id": "fe5d22c5-a2b2-4b96-9fcf-232945f4eac2"
+    },
+    {
+      "claim_id": "4b0c5cad-c9e7-40f6-9b00-8c10b27764bd",
+      "result_id": "fe5d22c5-a2b2-4b96-9fcf-232945f4eac2"
+    },
+    {
+      "claim_id": "99130ea7-83be-422f-b541-f36e7fabce2f",
+      "result_id": "fe5d22c5-a2b2-4b96-9fcf-232945f4eac2"
+    },
+    {
+      "claim_id": "d5caa188-ea03-4eaf-9a78-9ae46b194827",
+      "result_id": "fe5d22c5-a2b2-4b96-9fcf-232945f4eac2"
+    },
+    {
+      "claim_id": "b78bba59-baa3-44d6-b7ab-8d7679f71908",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "da881673-5948-4ce1-9b03-be6802fcb200",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "1f0a5227-695d-4f89-9d49-e6ada2e32b88",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "10900188-798e-4752-a626-ee48aa503a97",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "cb6c131e-8cc8-4da7-8dd2-b885b865bf65",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "7333857b-c182-434c-99e4-c28dfe9b4bb9",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "80d03b20-e8ca-4b9c-b057-eed0d0b102c6",
+      "result_id": "656a04a7-680f-4cbe-81ae-ce6ecb027556"
+    },
+    {
+      "claim_id": "e17db54a-cb21-4cd6-8a7f-a8d44214d5bb",
+      "result_id": "6f695c5e-80b9-47ed-b19c-d0ea8979f02f"
+    },
+    {
+      "claim_id": "c5e932d4-b103-47d9-9ce3-109000a7d941",
+      "result_id": "6f695c5e-80b9-47ed-b19c-d0ea8979f02f"
+    },
+    {
+      "claim_id": "e6231276-1b7f-46a2-a68d-de0eb57aebd8",
+      "result_id": "6f695c5e-80b9-47ed-b19c-d0ea8979f02f"
+    },
+    {
+      "claim_id": "3fd8f237-ae08-4806-a6dd-abae67959a2d",
+      "result_id": "6f695c5e-80b9-47ed-b19c-d0ea8979f02f"
+    },
+    {
+      "claim_id": "6d5dff4e-17af-409e-b2d0-5ddbbf34ea40",
+      "result_id": "6f695c5e-80b9-47ed-b19c-d0ea8979f02f"
+    },
+    {
+      "claim_id": "05b3d94b-d86b-4ebd-9d41-27dcb70d8cef",
+      "result_id": "db955e70-6d96-4fb6-974d-b5b176bf5acc"
+    },
+    {
+      "claim_id": "75d9f173-c68f-4c29-95d9-a77a61448088",
+      "result_id": "db955e70-6d96-4fb6-974d-b5b176bf5acc"
+    },
+    {
+      "claim_id": "5e14e2b5-42e9-4efb-901d-1bab63c3f82c",
+      "result_id": "db955e70-6d96-4fb6-974d-b5b176bf5acc"
+    },
+    {
+      "claim_id": "0d6dbe0f-b998-4261-b8de-ef79a6b44e2c",
+      "result_id": "db955e70-6d96-4fb6-974d-b5b176bf5acc"
+    },
+    {
+      "claim_id": "357567cb-1164-4fd8-ac88-4906fdfc05f0",
+      "result_id": "db955e70-6d96-4fb6-974d-b5b176bf5acc"
+    },
+    {
+      "claim_id": "7dd05685-2fdd-4db2-9122-520ab4ad0ddf",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "83439adb-003c-4272-8acc-f2156e265e24",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "cb6539db-02fc-4e94-810c-598d25628d2a",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "57f6d3fe-891d-40e5-aae2-8444e7288909",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "3fa93d78-02c3-48fc-af26-9ec75362c88a",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "832c4cb1-65ee-4fd7-a4b0-63842bb72114",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "28df9529-6005-4eb5-9188-9c5de75d7593",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "7dee601b-3f62-47e0-99e0-def0913b9acc",
+      "result_id": "b2cf6883-dd3b-42f1-9ed3-932e41f31190"
+    },
+    {
+      "claim_id": "d931ef98-1b56-4fe9-857e-1eab36ddffd2",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "49e3db7a-db80-4d78-9780-88b1b54980c9",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "cf557d2a-9652-4b18-947d-9022b7583724",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "f51a2165-c729-40cd-b259-c947437c0829",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "2c07cd06-af68-448f-95ae-62003079fab7",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "fcb339f0-52db-455d-997b-3e7bd6a72f1b",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "f5081d9c-3472-409f-a1ff-3d79c68a4b82",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "bdc58df0-11c8-4e49-9a66-42dc932f8421",
+      "result_id": "6d2ce35b-470e-49cd-bac8-6152f33e0fc4"
+    },
+    {
+      "claim_id": "dbf84519-6094-4f5f-b2f8-0d9a3606296c",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "eae8049e-8c45-4f61-8127-a3032d1c796c",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "1045af55-85d1-4c21-a17f-45941497993f",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "d6adffc7-6f56-4674-a595-c7670dc4008c",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "f03b6b67-6361-4f32-b5c7-7ae244fe84bf",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "b558c1db-041c-4f48-931c-4317e28a0d0d",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "b3735c9a-1620-4256-b69e-d832ef2fd5c9",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "580c4bc0-9517-4aa8-ab7b-e0fc7b5362aa",
+      "result_id": "778335e8-be6a-4151-9c5f-2b7c0fcf4ffb"
+    },
+    {
+      "claim_id": "6ad6578c-2166-49fb-b29d-30aebe79aefd",
+      "result_id": "b6f5270a-2bcf-4f66-a3b6-e5ef57391980"
+    },
+    {
+      "claim_id": "5a5e7f43-170f-4b46-8c67-e1370258cb45",
+      "result_id": "b6f5270a-2bcf-4f66-a3b6-e5ef57391980"
+    },
+    {
+      "claim_id": "9ff07051-06ff-4f96-8961-8d493968eb95",
+      "result_id": "b6f5270a-2bcf-4f66-a3b6-e5ef57391980"
+    },
+    {
+      "claim_id": "5971b52c-bc7f-4301-af20-b02786a4e047",
+      "result_id": "b6f5270a-2bcf-4f66-a3b6-e5ef57391980"
+    },
+    {
+      "claim_id": "38e43991-c4ec-43f3-bce0-226d42c35fdd",
+      "result_id": "d0ef323a-f9a6-4a2c-911a-8f6814eabde1"
+    },
+    {
+      "claim_id": "27cf0fe7-f0c0-4643-8c18-8b46986496b4",
+      "result_id": "d0ef323a-f9a6-4a2c-911a-8f6814eabde1"
+    },
+    {
+      "claim_id": "7c7d67d2-467f-49af-b9d0-0125c9122ea7",
+      "result_id": "d0ef323a-f9a6-4a2c-911a-8f6814eabde1"
+    },
+    {
+      "claim_id": "ad07a346-809a-45a9-b880-1e8478d6343c",
+      "result_id": "d0ef323a-f9a6-4a2c-911a-8f6814eabde1"
+    },
+    {
+      "claim_id": "771ebf5b-7a20-4427-ae8b-ef9b433c108e",
+      "result_id": "d0ef323a-f9a6-4a2c-911a-8f6814eabde1"
+    },
+    {
+      "claim_id": "2b0e0756-3a07-47d6-94ec-71c18d13de5a",
+      "result_id": "77a4262f-aeab-4d97-9961-6707c6f35773"
+    },
+    {
+      "claim_id": "d86075c4-287f-47d8-91b1-296737abe121",
+      "result_id": "77a4262f-aeab-4d97-9961-6707c6f35773"
+    },
+    {
+      "claim_id": "e2cec821-f261-495a-801b-78e2dcb1361b",
+      "result_id": "77a4262f-aeab-4d97-9961-6707c6f35773"
+    },
+    {
+      "claim_id": "ca02d6ef-2d9c-4ea7-b49a-bc6235ff9806",
+      "result_id": "e5bc55e0-ff00-40ef-b4ea-9c08fe8ef9d5"
+    },
+    {
+      "claim_id": "613648cb-5116-46f9-9467-f6850069b457",
+      "result_id": "e5bc55e0-ff00-40ef-b4ea-9c08fe8ef9d5"
+    },
+    {
+      "claim_id": "b5124fa0-5dfa-4063-9a9d-0fec6cddf22c",
+      "result_id": "e5bc55e0-ff00-40ef-b4ea-9c08fe8ef9d5"
+    },
+    {
+      "claim_id": "9d9e56fe-afd7-425f-950c-3fa489aec1e2",
+      "result_id": "65f0b05c-fba8-4114-97a3-1011b2f98a56"
+    },
+    {
+      "claim_id": "6eef8af6-87ee-47f1-a476-8fd086996102",
+      "result_id": "65f0b05c-fba8-4114-97a3-1011b2f98a56"
+    },
+    {
+      "claim_id": "ee84012c-e3b3-499e-83be-652c585c8217",
+      "result_id": "65f0b05c-fba8-4114-97a3-1011b2f98a56"
+    },
+    {
+      "claim_id": "6a349259-75df-4c61-9d61-306676c81159",
+      "result_id": "65f0b05c-fba8-4114-97a3-1011b2f98a56"
+    },
+    {
+      "claim_id": "c49b776f-fde0-4665-8c80-a5efecf71f43",
+      "result_id": "65f0b05c-fba8-4114-97a3-1011b2f98a56"
+    },
+    {
+      "claim_id": "82114a62-a3b0-4c7c-9d6b-0e2b5056ea9d",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "44a66df1-8df5-41af-aded-86f7f16b53c9",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "b342d775-6d1e-483c-812e-a069177c84ca",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "13234098-99da-4f1a-961a-38792abf488c",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "ac54b100-49cd-4e22-802f-f5e7270e0d8e",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "2d8c84a8-a527-4f21-be80-eb74ed4d61a8",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "2522b35a-685b-4405-89ab-fd118a1e6223",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "315b0720-e780-40f1-a382-3d6614db33de",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "e1ea9cf5-618d-450a-b2ef-e6786dd9175a",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "025f4162-5e41-4ddf-b755-9ddb88b73a85",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "8e9d7b2b-a2fb-4d09-a063-01f154a61120",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "a743f8a7-7fc4-4975-b821-692ce9fc1cc9",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "88705c8b-d912-4f44-8fc5-0a18b7f8e638",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "ac0447ff-c4ca-41cb-ae15-ffd8102d1b58",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "ea97411b-bf31-41f5-b88a-874fd84118d2",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "678f48d8-f39d-47ff-8d37-58f0ce34b4eb",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "9f25f93e-f45e-4f57-9f1f-94d283d958e0",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "a4e310ea-d2e1-4577-a021-28f1971af694",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "88913687-4f2f-4e48-82ad-dea812a89fc4",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "41845e10-6a19-44bc-a600-d2953637757e",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "ded83080-9c91-4895-afab-b8bcabcab107",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "50971a75-4a75-4d57-a53e-8dbc5abaa8fe",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "8f977997-a354-4067-8996-541e691fb238",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "d12ff5ea-d413-492d-9e26-b19276415947",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "d26b0b6b-613e-47e3-9da6-4b57c4961daa",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "3088a880-6f08-4343-b230-8a0badd707a7",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "801458f0-8e3f-48f8-a4e4-55a166edd920",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "7d489cb2-5696-43bb-a52a-05de0fd0de79",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "b41bb406-0c88-4409-b3db-3aeeed5ffe44",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "a88024ed-822b-4ac3-b4f2-9082f1d5db6a",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "0cdc401a-d128-4df0-b069-7b85d3bdd389",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "d4de78ae-bab1-4423-8fe2-1438b7e8201a",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "6f773102-73c4-4925-80c8-b814074a3733",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "d0640c20-6529-45ae-a796-5df7af9c80ce",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "69a1a1fc-dfa9-4d70-bb05-a56f3ebc52de",
+      "result_id": "bf4e307b-709c-4394-a1cb-ca77b1ff3066"
+    },
+    {
+      "claim_id": "40fdfeac-e9bc-4871-b1d6-f3768016fe83",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "bad2c4df-428e-451f-a9e3-e998198af518",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "4b69ba49-146c-4244-9c10-abbab40a0cb0",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "b595de6c-e58c-45ab-a34d-66eef3458207",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "d7f7052b-5421-40ec-8642-fc3f4417ba04",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "d2e7f6a6-1a1e-4446-8242-32df18984dc0",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "b8322a88-d211-41ab-b32b-7d5b2a3de81b",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "83acfdf3-b18b-4f04-9606-5c65687f564e",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "3873d6fb-89bd-4978-b31d-00b0ac8f7e9a",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    },
+    {
+      "claim_id": "7b68c51c-f269-49af-bbd0-f68d23ffd7bb",
+      "result_id": "6bec3a91-1ec6-4e54-b307-0739bb19f015"
+    }
+  ],
+  "comparisons": []
+}

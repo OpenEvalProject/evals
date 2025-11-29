@@ -1,0 +1,1650 @@
+{
+  "submission": {
+    "id": "56bb89cd-cbf4-447e-9638-7be01b76945d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:05:09.074453Z",
+    "updated_at": "2025-11-29T05:05:09.074453Z"
+  },
+  "content": [
+    {
+      "id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "submission_id": "56bb89cd-cbf4-447e-9638-7be01b76945d",
+      "content_type": "manuscript",
+      "content_text": "# The molecular mechanism of nuclear transport revealed by atomic-scale measurements\n\n## Authors\n\n- Loren E Hough<sup>2</sup> ([ORCID: 0000-0002-1104-0126](https://orcid.org/0000-0002-1104-0126))\n- Kaushik Dutta<sup>3</sup> ([ORCID: 0000-0002-9653-3842](https://orcid.org/0000-0002-9653-3842))\n- Samuel Sparks<sup>1</sup>\n- Deniz B Temel<sup>1</sup>\n- Alia Kamal<sup>2</sup>\n- Jaclyn Tetenbaum-Novatt<sup>2</sup>\n- Michael P Rout<sup>2</sup> \u2020\n- David Cowburn<sup>1</sup> ([ORCID: 0000-0001-6770-7172](https://orcid.org/0000-0001-6770-7172)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Albert Einstein College of Medicine Bronx United States\n2. The Rockefeller University New York United States\n3. New York Structural Biology Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNuclear pore complexes (NPCs) form a selective filter that allows the rapid passage of transport factors (TFs) and their cargoes across the nuclear envelope, while blocking the passage of other macromolecules. Intrinsically disordered proteins (IDPs) containing phenylalanyl-glycyl (FG)-rich repeats line the pore and interact with TFs. However, the reason that transport can be both fast and specific remains undetermined, through lack of atomic-scale information on the behavior of FGs and their interaction with TFs. We used nuclear magnetic resonance spectroscopy to address these issues. We show that FG repeats are highly dynamic IDPs, stabilized by the cellular environment. Fast transport of TFs is supported because the rapid motion of FG motifs allows them to exchange on and off TFs extremely quickly through transient interactions. Because TFs uniquely carry multiple pockets for FG repeats, only they can form the many frequent interactions needed for specific passage between FG repeats to cross the NPC.\n\n## Introduction\n\nNuclear pore complexes (NPCs) are the sole mediators of bi-directional nucleocytoplasmic trafficking. Transport is rapid and reversible, with the entire process of transport factor (TF) docking, passage and release across the NPC taking only a few milliseconds (Strawn et al., 2004; Hulsmann et al., 2012). The NPC consists of a \u223c30-nm diameter central channel filled with phenylalanyl-glycyl-repeat-rich nucleoporins (FG Nups) which provide the selective filter. Depletion or deletion of the FG Nups results in leaky, non-selective barriers (Strawn et al., 2004; Di Nunzio et al., 2012; Hulsmann et al., 2012; Funasaka et al., 2013). Moreover, the FG domains in isolation facilitate selective passage of TFs through nanopores (Jovanovic-Talisman et al., 2009; Kowalczyk et al., 2011) or accumulation in hydrogels (Frey et al., 2006; Frey and G\u00f6rlich, 2007; Schmidt and Gorlich, 2015).\n\nIt is generally accepted that TF interaction with FG repeats reduce the diffusional barrier to enable selective transport (Vasu and Forbes, 2001; Rout et al., 2003; Suntharalingam and Wente, 2003; Zeitler and Weis, 2004), though the molecular mechanism of TF passage through the NPC remains largely unknown. TFs may alter the properties of the FG permeability barrier. Mesoscale observations of TF-FG repeat interactions in vitro have shown that TFs can change the height of FG brushes on planar surfaces (Lim et al., 2007; Eisele et al., 2010; Kapinos et al., 2014; Wagner et al., 2015), modulate the transport of inert cargo (Lowe et al., 2015), assemble with FG Nups into large assemblies (Lowe et al., 2015), and inhibit amyloid hydrogel formation observed for some FG Nups (Milles et al., 2013). Whether these behaviors arise from changes in FG structure or as a result of the multivalent FG-TF interaction remains undetermined, as do their contributions to in vivo nuclear transport.\n\nSeveral mesoscale models have attempted to explain how FG Nups prevent the passage of most macromolecules while allowing selective transport of TFs alone and with their cargo. The FG Nups have been proposed to form a selective barrier due to their reversible inter-chain cohesion (hydrogel [Frey et al., 2006; Frey and G\u00f6rlich, 2007; Ader et al., 2010] and bundle models [Gamini et al., 2014]), entropic exclusion (virtual gating model) (Rout et al., 2000, 2003; Lim et al., 2006), collapse upon TF binding (reduction in dimensionality model) (Peters, 2005), or a combination thereof (forest model) (Yamada et al., 2010). These models differ in their predictions of FG behavior on their own (ranging from highly mobile to fully self-associated) and upon binding of TFs. For example, the hydrogel, forest and reduction in dimensionality models invoke large changes in FG Nup behavior upon TF interaction (Lim et al., 2007; Eisele et al., 2010; Kapinos et al., 2014; Wagner et al., 2015). Crucially, none of these models or current observations fully explains how transport can be both selective and rapid, as is seen in vivo.\n\nThese conflicting models of the mechanism of NPC selectivity remain (Schmidt and Gorlich, 2015) because of a lack of atomic-scale experimental data describing FG Nup behaviors and interactions. Therefore, we used nuclear magnetic resonance (NMR) techniques to provide a rich readout of FG Nup behaviors at atomic detail (Figure 1A). We defined a minimal system including FG attachment, FG repeat type, and TF interaction, the essential features necessary to recapitulate selective transport in vitro (Jovanovic-Talisman et al., 2009; Kowalczyk et al., 2011). We measured the physical state of FG repeats with and without TFs bound. Because environment strongly affects intrinsically disordered proteins (IDPs), including FG Nups (Uversky, 2009; Wang et al., 2011; Tetenbaum-Novatt et al., 2012; Phillip and Schreiber, 2013), we mimicked the normal environment of NPCs using Xenopus egg extract, the best characterized environment for in vitro nuclear transport measurements (Dabauvalle et al., 1991). In addition, we tested the following: cytoplasm of living Escherichia coli using in cell NMR (Serber et al., 2005); E. coli high speed lysate (Tetenbaum-Novatt et al., 2012); and buffer alone, the latter lacking crowding agents or competitors and being the milieu in which these proteins have been most studied previously (Frey et al., 2006; Lim et al., 2006; Ader et al., 2010; Yamada et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-v3.jpg)\n\n**Figure 1.:** (A) Our experimental approach includes key features of the NPC; a mixture of FG flavors, attachment at one end, and both specific (TF) and non-specific interactions with the cellular milieu. For example, our largest construct (FG-N-FSFG-K-tet) contains two fragments from Nsp1 (FG-N, turquoise; FSFG-K, green; full-length Nsp1 also shown with residue numbering), a separator (white) and the tetramerization domain of p53 (yellow). NMR analysis is performed on this construct and its variants, in milieu of various types; changes in position or intensity of peaks (bottom right) indicate changes in structure or interactions of the FG motifs. (B) Deviations of chemical shift values in cell (Escherichia coli) from predicted (colored bars) showing that FG-N and FSFG-K fragments are fully disordered, with no propensity for secondary structure. Also shown are standard errors of the mean (gray bars) and positions of FG motifs in the sequence (gray columns). Chemical shift values expected for an \u03b1-helix or \u03b2-sheet are approximately \u22124 and +4 ppm, respectively, as shown in the small insets. (C) The FG-N and FSFG-K constructs show significant interactions with the cellular milieu and exhibit very rapid motions. The upper panels show the ratio of R2/R1 indicative of overall motion and effects of multiple environments (chemical exchange) in cell (E. coli), compared to buffer A. The heteronuclear nuclear overhauser effect (nOe) is shown in lower panels, indicative of backbone motions. Gray columns indicate the locations of the FG motifs. Full experimental details and interpretations are available in \u2018Materials and methods\u2019 and Figure 1\u2014figure supplements 1\u20134.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The most generally accepted indicator of propensity for secondary structure is the differences in deviations of 13C shifts of C\u03b1 and C\u03b2's (e.g., Spera and Bax, 1991; Wishart and Sykes, 1994; Wishart and Case, 2001, illustrated in e.g., Fushman et al., 1998; McDonnell et al., 1999; Mittag and Forman-Kay, 2007), with \u03b1-helical segments showing a value of \u223c +4, and \u03b2 sheets a value of \u223c \u22124. However, the standard deviations of the underlying reference values have not been widely available until recently (Tamiola et al., 2010). In the above panels, the observed values of the difference of deviations for each residues is shown in blue (-\u25cf) while the range of the calculated standard errors is shown in red ( -- ). Values which are ambiguous or missing because of overlaps are indicated by an open circle ( O ). Panels are (A) FSFG-K in cell; (B) FSFG-K in buffer A; (C) same as B but those \u2018degenerate\u2019 sequences otherwise unassigned, are duplicated at the additional positions; for example, in this case the sequence surrounding P397 was most similar to that of P282 (ATSKPAFSF and ATSKPALEH) and the P282 values are used at position P397 for the 13C\u03b1 and 13C\u03b2 assignments; (D) assignments of B extended; (E) FG-N in cell; (F) sequence duplicated values of E; (G) FG-N in buffer D; (H) Sequence extended values of set G. The data presented indicate no significant runs of deviation of the \u0394\u03b4 shift value, and none exceeding the standard deviations of the measurements. All conclusions in the paper are based on specific assignment, or grouped assignments in the case of overlaps and extended assignment, and do not rely on specific assignment in ambiguous/overlapped cases. When in cell assignments were ambiguous, and in buffer assignments were consistent with in cell observation, the in buffer assignments for specific residues were used.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Upper: 15N[1H] relaxation data for FG-N and FSFG-K in respectively E. coli cell, and in buffer A (\u2018in vitro\u2019). Measurements were at 900 MHz (red), 800 MHz (blue), and 500 MHz (black). For those with dual field measurements, the ratio at the two fields is shown in purple. The nOe is used to analyze rapid backbone motion in the panel below, and data will be further examined in future work. Lower: derived rotational correlation times, \u03c4n, for the N-H bond vector from the heteronuclear nOe. Data indicate that the field dependence of the observed nOe for FG-N in cell (red and black in low left above) is almost solely from the expected field dependence of the expected correlation, since the derived \u03c4n's are very similar (purple and cyan in left below). The in buffer average values, \u223c0.9 ns, are similar for the two constructs, consistent with their similar chemical shift and dynamic light scattering properties (Figure 1, Figure 4G). The measured errors for the FG-N are greater than those of the FSFG-K set, predominantly because accurate estimates of peak heights are more difficult in the presence of overlaps in the spectra. Although there appears to be some significant sequence dependence in the data for FSFG-K in-buffer (green, right), the S/N in the FG-N case obscures whether this is present there also. Sequence dependence of the \u03c4n may arise from local restriction by immediately adjacent side chains. Values of \u03c4n in cell are increased modestly (to \u223c1.17 ns) for both constructs and are assumed to reflect partial restriction of fast internal motions (Neuhaus and Williamson, 2000).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** HSQC spectra of FSFG-K in buffer A adjusted to the indicated pH's. In buffer, fast solvent exchange of significant number of peaks is apparent as expected (Croke et al., 2008, 2011; Burz et al., 2012). The His6 tag signal titrates with the pH change and is circled at the lower right of each panel.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Stability of size for FG-N (left) and FSFG-K (right) in buffer A by dynamic light scattering. The raw decay times are used so no interpretive models are applied. FG-N shows a sharp transition to a gel-like state after about 7 hr. Protein concentrations 8 mg/ml. For detailed methods see \u2018Dynamic Light Scattering\u2019.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Left panel: freshly made cells (grown as \u2018Materials and methods\u2019); induced at OD 0.8 for 200 m were spun and resuspended in buffer E. Right panel: purified and concentrated FG-N was buffer exchanged directly from 8 M urea to buffer A. All spectrometer conditions remained constant between scans. Samples were contained in 5 mm Shigemi NMR tubes. The spectra are 1-D traces from the first block of HSQC spectra initiated at the listed times.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** All R2 data were collected at 25\u00b0C with 140 \u03bcM 15N-labeled FSFG-K in buffer A with the following delays: 0, 32.64, 65.28, 97.92, 130.56, 163.20, 195.84, 228.48, 261.12, and 326.40 ms. The concentrations of the different additives are as follows: E. coli lysate (Wang et al., 2011; Latham and Kay, 2014) 230 mg/ml; BSA 205 mg/ml Glycerol (Li et al., 2009; Wang et al., 2011) 60% wt/wt; PVP-10 (Li et al., 2008, 2009) 111 mg/ml; Trehalose (Lins et al., 2004; Chakrabortee et al., 2010) 154 mg/ml. Sequence-dependent fluctuation is seen only with lysate or with BSA, indicating non-specific rapid interactions, in contrast to changes of viscosity (Serber et al., 2005; Li et al., 2009; Wang et al., 2011), solvation (Lim and Deng, 2009; Xue and Skrynnikov, 2011; Kim et al., 2013), or packing (Li et al., 2009; Uversky, 2009; Milles et al., 2013). The E. coli lysate concentration is comparable to the estimated in vivo total concentration (Cayley et al., 1991). Interaction with BSA is consistent with previous observations (Parks et al., 1983; Higuchi et al., 1994; Clarkson et al., 1996; Fielding et al., 2005; Simard et al., 2006).\n\nWe studied Nsp1, the most tested and characterized FG Nup which has been shown in vitro to mimic transport faithfully (Jovanovic-Talisman et al., 2009; Hulsmann et al., 2012). We focused on two segments of Nsp1 for which there is a consensus that they prototypically represent the extreme flavors and behaviors of FG Nups (Yamada et al., 2010); (i) the N-terminal segment of low charge (Asn-rich) and irregularly spaced FG repeats observed to be highly cohesive and form amyloid hydrogels under certain conditions (FG-N) (Ader et al., 2010) and (ii) the central segment of significant charge (Lys-rich) with regular FSFG repeats typically observed to be highly soluble (FSFG-K) (Patel et al., 2007; Yamada et al., 2010). The isolated N-terminal domain forms selective hydrogels in vitro (Ader et al., 2010) and is able to replace Nup98-FG domain in reconstituted Xenopus nuclei to provide the primary barrier enabling selective transport (Hulsmann et al., 2012). We studied these fragments individually and in combination in a wide range of constructs and conditions, including where the FG repeats are tethered to mimic their arrangement in the NPC (Alber et al., 2007) (Table 1, Figure 1\u2014figure supplement 1).\n\n**Table 1.**\n FG constructs prepared\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Abbreviation used in text</th>\n      <th>Simple structure</th>\n      <th>Sequence</th>\n      <th>Number of residues / monomer</th>\n      <th>MW</th>\n      <th>Nsp 1 ref start number</th>\n      <th>Data Figure</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FSFG-K</td>\n      <td>M-Nsp1(274\u2013397)</td>\n      <td>MDNKTTNTTPSFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPFSFGAKPDENKASATSKPA</td>\n      <td>125</td>\n      <td>13,070</td>\n      <td>274</td>\n      <td>1, 1S1,1S2</td>\n    </tr>\n    <tr>\n      <td>FSFG-K</td>\n      <td>M-Nsp1(274\u2013397)-LEHHHHHH</td>\n      <td>MDNKTTNTTPSFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPAFSFGAKPDENKASATSKPALEHHHHHH</td>\n      <td>133</td>\n      <td>14,135</td>\n      <td>274</td>\n      <td>1, 2, 1S1-6, 2S1-2</td>\n    </tr>\n    <tr>\n      <td>FG-N</td>\n      <td>MGT-Nsp1(48\u2013172)-SHMHHHHHH</td>\n      <td>MGTSAPNNTNNANSSITPAFGSNNTGNTAFGNSNPTSNVFGSNNSTTNTFGSNSAGTSLFGSSSAQQTKSNGTAGGNTFGSSSLFNNSTNSNTTKPAFGGLNFGGGNNTTPSSTGNANTSNNLFGATASHMHHHHHH</td>\n      <td>137</td>\n      <td>13,649</td>\n      <td>48</td>\n      <td>1, 1S1-2,1S4-5, 2S1</td>\n    </tr>\n    <tr>\n      <td>(FG-N)-(FSFG-K)-Tet-6His</td>\n      <td>MGT-Nsp1(48\u2013172)-ASATSKPA-Nsp1(284\u2013397)-SHMGEYFTLQIRGRERFEMFRELNEALELKDAQAHMHHHHHH</td>\n      <td>MGTSAPNNTNNANSSITPAFGSNNTGNTAFGNSNPTSNVFGSNNSTTNTFGSNSAGTSLFGSSSAQQTKSNGTAGGNTFGSSSLFNNSTNSNTTKPAFGGLNFGGGNNTTPSSTGNANTSNNLFGATAASATSKPAFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPAFSFGAKPDENKASATSKPASHMGEYFTLQIRGRERFEMFRELNEALELKDAQAHMHHHHHH</td>\n      <td>292</td>\n      <td>30,235</td>\n      <td>48, 284</td>\n      <td>3, 4</td>\n    </tr>\n    <tr>\n      <td>FSFG-K</td>\n      <td>MGTSATSKPA-Nsp1(284\u2013397)-SHHHHHH</td>\n      <td>MGTSATSKPAFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPAFSFGAKPDENKASATSKPASHHHHHH</td>\n      <td>131</td>\n      <td>13,721</td>\n      <td>284</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>(FSFG-K)-(FSFG-K)-Tet-6His</td>\n      <td>MGTSATSKPA-Nsp1(284\u2013397)-ATSKPA-Nsp1(284\u2013397)-SHMGEYFTLQIRGRERFEMFRELNEALELKDAQAHMHHHHHH</td>\n      <td>MGTSATSKPAFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPAFSFGAKPDENKASATSKPASATSKPAFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPAFSFGAKPDENKASATSKPASHMGEYFTLQIRGRERFEMFRELNEALELKDAQAHMHHHHHH</td>\n      <td>287</td>\n      <td>30,504</td>\n      <td>284</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>(FG-N)-(FG-N)-Tet-6His</td>\n      <td>MGCT-Nsp1(48\u2013172)-Nsp1(48\u2013172)-SHMGEYFTLQIRGRERFEMFRELNEALELKDAQAHMHHHHHH</td>\n      <td>MGCTSAPNNTNNANSSITPAFGSNNTGNTAFGNSNPTSNVFGSNNSTTNTFGSNSAGTSLFGSSSAQQTKSNGTAGGNTFGSSSLFNNSTNSNTTKPAFGGLNFGGGNNTTPSSTGNANTSNNLFGATASAPNNTNNANSSITPAFGSNNTGNTAFGNSNPTSNVFGSNNSTTNTFGSNSAGTSLFGSSSAQQTKSNGTAGGNTFGSSSLFNNSTNSNTTKPAFGGLNFGGGNNTTPSSTGNANTSNNLFGATASHMGEYFTLQIRGRERFEMFRELNEALELKDAQAHMHHHHHH</td>\n      <td>296</td>\n      <td>29,927</td>\n      <td>48</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>(FG-N)-(FSFG-K)-6His</td>\n      <td>MGT-Nsp1(48\u2013172)-ASATSKPA-Nsp1(284\u2013397)-SHHHHHH</td>\n      <td>MGTSAPNNTNNANSSITPAFGSNNTGNTAFGNSNPTSNVFGSNNSTTNTFGSNSAGTSLFGSSSAQQTKSNGTAGGNTFGSSSLFNNSTNSNTTKPAFGGLNFGGGNNTTPSSTGNANTSNNLFGATAASATSKPAFSFGAKSDENKAGATSKPAFSFGAKPEEKKDDNSSKPAFSFGAKSNEDKQDGTAKPAFSFGAKPAEKNNNETSKPAFSFGAKSDEKKDGDASKPAFSFGAKPDENKASATSKPASHHHHHH</td>\n      <td>257</td>\n      <td>25,955</td>\n      <td>48, 284</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\n### The cellular milieu maintains FG Nups as highly dynamic IDPs\n\nFG Nups were fully disordered and highly dynamic in all cellular milieu tested. In NMR measurements, the degree of secondary structure is correlated with the difference between the 13C chemical shift values of the \u03b1 and \u03b2 carbons relative to random coil values for each residue (Schwarzinger et al., 2001; Tamiola et al., 2010). The degree of secondary structure quantified in this way is near zero for all residues in FG-N and FSFG-K constructs in all conditions tested (Figure 1B, Figure 1\u2014figure supplement 1) (Eliezer, 2009). This behavior of intrinsic disorder, judged from chemical shifts, is strikingly robust, being seen under a wide variety of conditions and also (for FSFG-K constructs) in buffers of varying pH (Figure 1\u2014figure supplement 3).\n\nOur observations in cellular milieux are in contrast to the behavior of the constructs containing the FG-N domain in buffer alone (Hulsmann et al., 2012). Under these conditions, dynamic light scattering and NMR measurements indicate that FG-N forms a hydrogel-like material (Figure 1\u2014figure supplement 4). The in buffer behavior of our construct is consistent with extensive previous observations of \u03b2-sheet formation and aggregation of the N-terminal domain of Nsp1 (FG-N) (Frey et al., 2006; Frey and G\u00f6rlich, 2007; Ader et al., 2010; Labokha et al., 2013). However, when FG-N constructs are observed by NMR inside a living cell, or in the presence of cell lysates or mimics, there is no appearance of high molecular weight components\u2014NMR spectra of FG-N constructs in living E. coli did not change with time over more than 24 hr (Figure 1\u2014figure supplement 5). These data indicate that the cellular milieu is a strong inhibitor of intermolecular FG repeat aggregation. The state of FG repeats in our system is therefore highly dynamic, as has been reported in vivo (Mattheyses et al., 2010).\n\nTo understand the differences between protein structure and dynamics in cellular mimics as compared to buffer, we measured spin relaxation parameters (R1, R2, nOe) which quantify the motion and interactions of the residues on timescales of \u03bcs to ms (R1, R2,) and ps to ns (nOe). NMR relaxation properties of FG Nups are significantly different between buffer alone and a protein-rich environment (Figure 1C). We measured large increases in R2/R1, indicative of transient spectral changes on interaction between the constructs and the cellular milieu (Figure 1C, Figure 1\u2014figure supplement 2). The increases in R2/R1 were not seen upon increasing viscosity or crowding by inert agents (Figure 1\u2014figure supplement 6), indicating that these changes result from weak binding of the FG repeats to the proteinaceous milieu as suggested by previous studies (Tetenbaum-Novatt et al., 2012). The phenylalanines and their adjacent residues show the primary interactions, with the greatest increases in R2/R1, while the spacer sequences remained relatively unaffected. The nuclear Overhauser effect (nOe) data show that the FG-N are highly mobile and flexible (Figure 1C, Figure 1\u2014figure supplement 2), indicating no sequence-specific compaction, folding, or molten globule formation (Uversky, 2009; Theillet et al., 2014). The cellular milieu is thus in a state of constant, non-specific, dynamic interaction with the FG repeats.\n\nOur results suggest that interactions of FG repeats with the cellular milieu stabilize the unfolded state by engaging the hydrophobic phenylalanines in transient interactions that decrease their contact with the water, reducing the driving force for hydrophobic collapse and amyloid formation. This is consistent with previous work that demonstrated that mutation of the Fs to more hydrophilic residues inhibits aggregation (Frey et al., 2006). Thus, exchange with the cellular milieu maintains the FG Nups in a highly dynamic, disordered state by inhibiting the intramolecular interactions that lead to aggregation in buffer.\n\n### Random fuzzy interactions with transport factors\n\nWe used the atomic-level readout of our system to interrogate key aspects of FG Nup-TF interactions that have previously been inaccessible. It has long been established using crystallographic, computational, and NMR approaches that FG residues bind to hydrophobic pockets on TFs (reviewed in Stewart, 2006). However, the dynamics of this interaction and the behavior of the spacer regions between FG residues upon TF binding have remained uninterrogated, leading to proposals ranging from remaining disordered to significant structural rearrangements (Rout et al., 2003; Peters, 2005; Frey et al., 2006; Lim and Deng, 2009). Our assays provide a direct readout of the dynamics of the interaction and the state of the linker regions upon TF binding (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig2-v3.jpg)\n\n**Figure 2.:** (A) Overlay of spectra with varying concentrations of Kap95 (0, 6.125, 12.5, 25, 50 \u03bcM) in the presence of [U-15N] FSFG-K (25 \u03bcM) in Xenopus egg extract, showing only the FG motifs strongly interact with the TF. Several peaks represent overlapping similar sequences with indistinguishable attenuation. (B) Superimposed values of attenuation ((1 \u2212 I)/Io) on addition of Kap95 across the sequence; increased attenuation indicates a stronger interaction propensity for that residue (positions of FG motifs in the sequence are indicated by gray columns).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For each of FSFG-GK and FG-N's interactions with Kap95, we demonstrated reversibility as follows. The spectra below can be cartooned as arising from the following, where the upper left panel represents the solution of an FG Nup. Addition of TFs (red) at high concentration forms a substantial amount of complex (upper right). Addition of more FG Nup at the same concentration as upper left results in reversibility of a portion of the complex formed, and spectra identical to those formed by direct addition of TF in smaller amounts (lower panels). If the complex was irreversible, then the dilution from the right upper complex, would lead to a summation of the upper two figures for the right lower, and would not show the intermediate chemical shifts seen. (A) HSQC spectra of complexes of FSFG-K and Kap95, illustrating the formation of the same complex (lower spectra) by either admixture of the components (lower left) or dilution of the TF concentration from a higher value to the final by addition of FSFG-K (lower right). At upper left, the region of the S, F residues of FSFG-K 50 \u03bcM is shown in the absence of Kap95 in buffer C. On makeup to 100 \u03bcM Kap95, the resulting spectrum is at the upper right. Dilution with additional FSFG-K produces the spectra at the lower right. The lower spectra superimpose the starting spectrum (upper left, red) and the complex spectrum (azure). (B) HSQC spectra of complexes of FG-N and Kap95 components (lower left) or dilution of the TF concentration from a higher value to the final by addition of FG-N (lower right) in buffer A. At upper left, the region of the N and F residues of FG-N 50 \u03bcM is shown in the absence of Kap95. On addition of Kap95 to 0.5 molar equivalence (25 \u03bcM), the resulting spectrum is at the upper right. Dilution with additional FG-N produces the spectra at the lower right. The lower right spectra superimpose the starting spectrum (upper left, blue) and the complex spectrum (green).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Observed values of 15N R2 for FSFG-K at various concentrations, in the presence of 20 \u03bcM Kap95. Experimental details in \u2018NMR analysis\u2019 in \u2018Materials and methods\u2019. The 15N R2 values and their standard errors of the mean are plotted vs the log10 of the 15N FGFG-K concentration all in the presence of 20 \u03bcM Kap95 for the residue types of the FSFG motif. The values of 15N R2 are shown in green at the extreme right axis for free FSFG-K. The derived value fitted for the equation of Section S2.3 is shown as the dotted line with \u2018X\u2019 marks. The fitted values of Kd and Rb for the derived line are 36.1 \u03bcM and 25.5 s\u22121. The apparent Kd is then equivalent to 216 \u03bcM for each FSFG site in FSFG-K. Lines connect the observed or calculated values.\n\nMany previous in vitro observations of FG-TF interactions lacked demonstration of reversibility and showed strong affinities (Frey and G\u00f6rlich, 2009; Tetenbaum-Novatt et al., 2012; Labokha et al., 2013; Kapinos et al., 2014), incompatible with the rapid transport rates observed in vivo. By monitoring the recovery of the NMR spectral characteristics on dilution of Kap95, the interacting TF, we showed that the FG repeat-TF interactions are fully reversible in our system (Figure 2\u2014figure supplement 1).\n\nWe used measured changes in amide resonances peak position and intensity as a function of Kap95 concentration using 2D Heteronuclear Single Quantum Coherence (HSQC) experiments (Figure 2A). Each (non-proline) residue contributes a peak, with the amide proton resonance frequency on the x-axis and nitrogen resonance frequency on the y-axis. The signal intensity of each peak is sensitive to the mobility and environment of that residue; upon binding to a TF, the effects of slower motion and of differing environment result in the signal of the corresponding peak decreasing. Strikingly, although the phenylalanine repeats themselves are attenuated upon Kap95 interaction, the majority of peaks are minimally affected, showing that the corresponding residues remain disordered and dynamic (Figure 2A). The spacer regions are thus highly mobile even within the interacting state. An extreme of this observation is seen for K332, which shows no attenuation (left subpanel in Figure 2A, lowest trace Figure 2C), and thus this residue remains flexible both in free and when bound to TF. When we examined attenuation as a function of residue number, we observed a striking periodic pattern of minimal attenuation for most residues and significant attenuation for FG repeats (Figure 2B). The degree of signal attenuation falls off relatively uniformly at both sides of each FG repeat, consistent with the transient binding of individual FG residues, with the remaining residues remaining fully disordered and highly dynamic. The minimally attenuated residues include those that have previously been implicated in forming phase changes of the FG repeat regions (Ader et al., 2010). We did not observe any major state change of spacers resulting from TF addition, such as caused by the formation or breakage of secondary structure, or gel/sol transitions (Ader et al., 2010; Labokha et al., 2013).\n\nWe observe that the binding interface between FG Nups and TFs at each interacting site is small\u2014just the 2\u20134 residues surrounding the FG repeat itself\u2014and the residues that do not interact directly with the TF sites remain highly mobile and dynamic. The size of the binding interface is consistent with other known transient interactions (Clackson and Wells, 1995; Morrison et al., 2003; Tompa et al., 2009; Dixon et al., 2011; Ozbabacan et al., 2011). We estimated a minimum effective affinity of Kap95 for the FSFG-K from a titration observing 15N R2 (Figure 2\u2014figure supplement 2) (Su et al., 2007). The true Kd is greater than 36 \u03bcM, fully consistent with rapid, reversible transport.\n\nInteraction or binding while remaining primarily disordered is highly unusual, as many functional IDPs are believed to adopt significant secondary structure formation upon interaction (Wright and Dyson, 2009; Uversky and Dunker, 2013), which we do not see here. This behavior is reminiscent of that proposed for random fuzzy complexes, in which one partner remains dynamically disordered and transient interactions predominate during selective recognition (Sigalov, 2011; Fuxreiter and Tompa, 2012).\n\n### FG repeat behavior is largely independent of packing\n\nMany observations suggest that there are multiple transport routes across the NPC, with FG Nups arranged in a variety of geometries (Akey and Radermacher, 1993; Goldberg and Allen, 1996; Gant et al., 1998; Kiseleva et al., 2004; Alber et al., 2007; Burns and Wente, 2012; Laba et al., 2014). Thus, because the NPC contains a large number of FG Nups in different arrangements to each other, we investigated the common features of the effects of local packing and attachment on FG repeats (Figure 3, Table 1). We designed chimeric proteins containing the FG domains in homotypic and heterotypic combinations. Some constructs included the tetramerization domain of p53, allowing us to form complexes that mimic the attachment of the FG domains to the NPC. We found essentially no change in chemical shifts and only modest changes in linewidth upon attachment to the p53 tetramerization domain (Figure 3). Any ordered protein of this size (\u223c120 kDa) would be invisible using our NMR experiments, demonstrating that FG Nups remain dynamic IDPs even in large complexes, as previously measured for other large IDPs (Kosol et al., 2013). Notably, our largest constructs have a diameter measured by dynamic light scattering of 13 nm (Figure 3B), a significant fraction of the 30-nm diameter of the NPC. Our results reveal that the behavior of a given FG repeat is not affected strongly by the number or type of other FG repeats surrounding it (i.e., no \u2018emergent properties\u2019). Our results also strongly indicate that there are no significant FG\u2013FG interactions, as interactions between different types of FGs should impact their average environment. However, we cannot completely exclude that extremely weak, dynamic interactions can occur between FG repeats, and indeed such interactions may modulate the long distance distribution of FG repeat regions in the NPC. The FG Nups thus remain a highly dynamic fluid even at sizes, arrangements, and packing densities commensurate with the NPC. We observed the same pattern of rapid exchange of the FG residues with TF binding sites while the spacer regions remain highly mobile in all environments studied and with all constructs tested, showing the robustness of our findings (Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig3-v3.jpg)\n\n**Figure 3.:** (A) 1H[15N] Heteronuclear Single Quantum Coherence (HSQC) spectra of the FG-N-FSFG-K-tet sequence (Tables 1 and 2) (MW 120 kDa) in the unbound (orange) and Kap95-bound (blue) states with Xenopus egg extract as the milieu. Peaks that undergo signal attenuation in the Kap95-bound spectrum indicate binding of those residues to Kap95. Typically, we observe that it is the FG residues (pink boxes), but not intervening spacer residues (no boxes), that attenuate upon binding to the transport factor Kap95; however, there are four FG repeats that are minimally attenuated (blue boxes), and a small number of spacer residues that are attenuated (purple boxes). (B) Schematic of the construct used, labeled as in (A). Very small chemical shift changes are observable for a few sites, consistent with rapid exchange into multiple inhomogeneous sites.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013F) We developed a wide range of constructs containing fragments from Nsp1 (turquoise and green, numbering in Figure 1) and the small tetramerization domain from p53 (yellow). Schematics illustrate the different constructs as studied within the cellular milieu (blue circles) which vary both in total molecular weight, crowding of the FG repeats via tetramerization, and composition of FG fragments (homotypic or heterotypic). Below each schematic is the HSQC spectrum of the glycine region of the represented construct observed in cell (E. coli). All constructs are tabulated in Table 1. \u2018M\u2019 identifies apparent 15N-labeled metabolites which are variable in intensity from preparation to preparation. (G) Dynamic light scattering of three representative constructs in buffer, showing homogeneity and consistency with expected size of constructs.\n\nWhile all overall behaviors are similar between FG-N and FSFG-K segments, in monomers or in tetramers, there are some intriguing differences. For example, in constructs where both FG types are present (Figure 4), not all FG-N phenylalanine residues are completely attenuated. This may be evidence for specificity of certain FG repeat types to binding particular TFs.\n\n## Discussion\n\n### FG Nups remain dynamic and disordered in their functional states\n\nThe FG repeats fill the central channel of the NPC to form a barrier to non-specific macromolecular diffusion (Patel et al., 2007; Tetenbaum-Novatt and Rout, 2010). We show that, even when densely packed and in mixed flavors as in the NPC, the FG repeat regions studied here remain fully disordered and highly dynamic. The two domains studied represent the extreme behaviors observed for FG Nups in vitro (Patel et al., 2007; Ader et al., 2010; Yamada et al., 2010): FSFG-K is highly soluble and non-cohesive, while FG-N in buffer is highly cohesive, a prototypical hydrogel-forming FG Nup. It is clearly possible to make FG repeats aggregate (Figure 1\u2014figure supplements 4, 5) (Ader et al., 2010), as has been demonstrated for many proteins (Goldschmidt et al., 2010). However, our data are inconsistent with any such hydrogel state in cellular milieu (Frey et al., 2006; Labokha et al., 2013). Re-arrangements of internal non-covalent crosslinks within hydrogels are on slow (second to minute) timescales, long enough to form a solid gel resistant to deformation, and too slow for solution NMR analysis (Ader et al., 2010). Instead of such a highly internally interacting, slowly moving gel, our results demonstrate that FG repeat regions form a highly dynamic phase, consistent with the rapid rates of nuclear transport. A highly dynamic, fluid state for FG repeats in vivo is in agreement with measurements of the living NPC (Atkinson et al., 2013). FG Nups do not appear to form a molten globule or collapsed state, as has also been proposed (Yamada et al., 2010), instead behaving as a fully disordered IDP (Rout et al., 2003; Lim et al., 2006; Lim and Deng, 2009; Atkinson et al., 2013). Our results also allow us to distinguish their IDP class (Uversky, 2011; van der Lee et al., 2014). FG repeats do not appear to populate more folded states either inter- or intra-molecularly upon interaction with either TFs or other FG Nups (Wright and Dyson, 2009; Yamada et al., 2010; Han et al., 2012; Kato et al., 2012). Instead, FG repeats lack any secondary structure, even when interacting with cognate binding partners, indicating that IDP mobility may be a key ingredient in nuclear transport.\n\n### Non-TF interactions of FG repeats\n\nOur results highlight the importance of the cellular environment for determining the behavior of the FG Nups because multiple weak interactions with cellular components stabilize the FG Nups in a disordered state. We propose that the selectivity of the NPC is thus maintained by both non-specific and specific cellular interactions, consistent with recent work demonstrating that FG permeability barrier is modulated by TFs (Lim et al., 2007; Eisele et al., 2010; Milles et al., 2013; Kapinos et al., 2014; Lowe et al., 2015; Wagner et al., 2015). We show that the modulation of permeability of FG brush behavior by TFs is not a result of structural changes of the FG Nups, but must result instead from the rapid, multivalent interactions of TFs with FG repeats (Tetenbaum-Novatt et al., 2012; Schleicher et al., 2014).\n\nOur data, strongly supporting that FG repeats are highly dynamic tethered IDPs, imply that they must form entropic bristles (i.e., strongly sterically hindered regions) around their tether site (the central channel of the NPC) (Rout et al., 2003; Strawn et al., 2004; Lim et al., 2006, 2007; Lim and Deng, 2009; Tetenbaum-Novatt and Rout, 2010). This hindrance increases with increasing size of the passing macromolecules; hence, small proteins can pass more easily than large ones (Tetenbaum-Novatt and Rout, 2010). These larger nonspecific macromolecules interact with the FG repeats with insufficient frequency to overcome the entropic barrier of the FG repeats' polymer bristle structure, thus being effectively excluded (Tetenbaum-Novatt and Rout, 2010; Ma et al., 2012). TFs, however, have sufficient interaction frequency to do so\u2014the original tenet of the \u2018virtual gating\u2019 idea, now delineated at the atomic scale by these results. In summary, the FG repeat regions, crowded around and within the central channel, may set up an entropic barrier that excludes macromolecules from their vicinity while permitting the approach of small molecules; however, macromolecules that interact with the FG repeats (such as TFs) can overcome this barrier (Rout et al., 2003; Lim et al., 2007) by their multiple and frequent interactions with FG Nups. We are pursuing experiments which we hope in the near future will gage the precise nature and magnitude of the exclusion mechanism.\n\n### Extremely fast on and off rates provide an explanation for rapid transport\n\nOur results suggest that FG disorder is critical to the speed of selective nucleocytoplasmic transport. Selectivity is determined by the free energy gain upon TF-NPC binding, with the off rate (and so speed of transport) constrained by koff = Kd\u00b7kon. For a given selectivity (Kd), the residence time within the NPC is constrained by the off rate. IDPs are able to engage far more rapidly than most ordered proteins (Zhou, 2012), allowing for high on and off rates while maintaining selectivity. For FGs in particular, several key lines of evidence indicate that the interaction of FG Nups with TFs is extraordinarily rapid, that is, each FG motif is in extremely fast exchange with TFs. We have directly shown that the binding interface is only 2\u20134 amino acids (the FG repeat itself). The buried surface area of this interaction is <1000 \u00c52, consistent with other known transient interactions (Clackson and Wells, 1995; Tompa et al., 2009; Dixon et al., 2011). The spacer regions remain highly mobile and the degree of signal attenuation falls off relatively uniformly at both sides of each FG repeat (Figure 2B), fully consistent with the transient binding of individual FG residues. Within the NPC, a TF is able to rapidly diffuse, engaging transiently with multiple FG motifs across different FG Nups. The association rate of TFs with individual FG motifs is very fast because the FGs move very rapidly and the TF has multiple binding pockets available for interaction (Bayliss et al., 2000, 2002; Bednenko et al., 2003; Isgro and Schulten, 2005, 2007; Liu and Stewart, 2005). Taken together, these results indicate that the dynamics of FG-TF interaction are extraordinarily rapid. As a result, the interaction can be strong enough to be selective, and yet remain extremely fast, allowing rapid transit through the NPC.\n\nIn essence, it is the quantity, rather than quality, of interactions possible per molecule with FG repeats that distinguishes a TF from other macromolecules (Figure 5). Transient non-specific interactions of the FG repeats with their milieu help maintain the disordered and dynamic nature of the barrier. Given the low sequence and structural complexity of the FG repeats, such non-specific interactions are to be expected but are not strong enough for these non-specific macromolecules to overcome the FG Nups' diffusion barrier (Rout et al., 2003). In contrast, TFs bind specifically to the FG motifs through pockets tuned for this purpose (Stewart, 2003, 2006) while leaving the spacers between the motifs highly mobile. The fact that the spacers\u2014and the FG repeats as a whole\u2014remain fully mobile even when interacting with a TF also means that the barrier to non-specific passage formed by a dense fluid of FG repeats in the NPC remains fully intact, regardless of even large TF fluxes (a significant issue with models that invoke state changes, which our results and model circumvent).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10027/elife-10027-fig5-v3.jpg)\n\n**Figure 5.:** Specific conclusions from our results, as discussed in the main text, are illustrated with (A) details from a docked molecular simulation of the TF Kap95 (purple) and the FG repeat region FSFG-K, rendered in Chimera (see \u2018Materials and methods\u2019), and (B) a diagrammatic view of the molecules involved. FG repeat (green; an ensemble of disordered conformers is illustrated in A). Phe (orange), Phe-binding pockets (B, orange circles), TF (pink), non-specific macromolecule (B, blue).\n\nWhile the FG repeats show little evidence of changed behavior upon oligomerization or TF interaction, it is likely that their structured attachment sites and diversity of flavors produce modulation of composition within the NPC. These variations are potentially important for the organization of alternate transport pathways (Strawn et al., 2004; Terry and Wente, 2007; Yamada et al., 2010). Our approach and its future extensions will thus be a powerful tool for the detailed characterization of these different nuclear transport pathways. The NPC is a biological example of the idiom \u2018many hands make light work\u2019; the combined effect of many weak, transient interactions provides a specific multifunctional transport system, which allows for the simultaneous passage of hundreds of different macromolecules with a wide range of sizes and for robustness to significant alterations in the cell (Wente and Rout, 2010; Adams and Wente, 2013; Tran et al., 2014).\n\n## Materials and methods\n\nProteins (Table 1) were expressed in BL21DE3 Gold cells using expression plasmids pET24a or pRSFDuet.\n\nProtein concentration was determined by BCA analysis (Pierce Co.), except for Kap95 determined by OD280 based on standard amino acid content. IPTG was from Gold Biotechnology. Bovine Serum Albumin (BSA), Pepstatin, PMSF, Protease Inhibitor Cocktail are from Sigma. Xenopus egg extract was the generous gift of Takashi Onikubo and David Shechter. Lyophilized coli extract was prepared by modification of the preciously described method (Tetenbaum-Novatt et al., 2012) using E. coli BL21 Gold cells grown in LB to OD600 of 0.8, resuspended in Buffer A + 18 mg/l PMSF +0.4 mg/l pepstatin A, lysed by passing through a Microfluidizer, and centrifuged at 112,000 g for 30\u2019 at 4\u00b0C.\n\n### Expression constructs and protein production\n\nThe FG-N, and FSFG-K segments were derived as previously described (Tetenbaum-Novatt et al., 2012) with the following modifications. Expression plasmids (pET24a, pRSFDuet) containing FG Nup fragments were transformed into BL21DE3 Gold cells (Agilent). Cells containing pET24a or pRSF constructs were grown to OD600 of 0.8, induced with 1 mM IPTG and harvested after 2\u20134 hr. The cells' periplasm was removed by osmotic shock (Magnusdottir et al., 2009), and lysed under denaturing conditions (8 M urea). Urea was maintained throughout the purification for FG-N, whereas FSFG-K had 8 M urea in the lysis, 3 M urea in the first wash, and no urea in the remaining washes and elution. Proteins were purified on Talon resin in 20 mM HEPES, 150 mM KCl, 2 mM MgCl2, (Buffer A, at pH 7.0), with protease inhibitor cocktail (PIC), PMSF, and pepstatin. Kap95 was prepared as previously described (Tetenbaum-Novatt et al., 2012) [U-15N] and [U-13C, 15N] materials were prepared using M9 media containing 15NH4Cl and [U-13C] glucose (Cambridge Isotopes Limited, MA) as needed. The tetramerization domain of p53 was used to provide intramolecular crowding by construction of fusions with the tetramerization segment (Poon et al., 2007). As with all our constructs, the preparation was analyzed by size exclusion chromatography (SEC) to ensure that we were examining un-aggregated protein of the correct size and quantity (data not shown) and confirmed by dynamic light scattering.\n\n### NMR measurements\n\nExperiments were conducted on Bruker spectrometers at 700 MHz and 298 K unless otherwise indicated. In cell NMR methods used the general procedures developed for STINT-NMR (Burz et al., 2006a, 2006b, 2012), and other IDP studies. Assignment of resonances used the standard triple resonance approach as in Sattler et al. (1999); Muralidharan et al. (2006); Tait et al. (2010); Lemak et al. (2011); Kalinina et al. (2012), including HNCO, HNCACO, HNCACM, CBCACINH, HNCA, HNCOCA, CCCONH, and HCCONH. Assignments were conducted in cell (E. coli)/buffer E and in buffer A, for the sets tabulated in Table 2, and were confirmed in other buffers by examination of HSQCs. Relaxation methods used standard procedures (Barbato et al., 1992; Ferrage et al., 2006, 2009, 2010). No corrections were applied for possible changes of fast exchange with solvent water, as described for R2(CPMG) (Kim et al., 2013) for the following reasons. The observed changes for the IDP \u03b1-synuclein are less than two fold, and sequence-independent for a change of pH from 7.4 to 6.2 (Figure 1; Kim et al., 2013) while for FG Nups we observe up to c. sixfold sequence dependent variation of R2. Secondly, the same sequence dependent variations of R2 are seen in buffered E. coli extracts, with controlled pH (Figure 1\u2014figure supplement 6). \u2018Titration\u2019 experiments were conducted at 800 or 700 MHz in buffers indicated, by preparation of separate samples for each change of concentration of Kap95.\n\n**Table 2.**\n Sequence assignments filed with BRMB (Ulrich et al., 2008)\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>FGFG-K in cell E. coli expression</td>\n      <td>25,182</td>\n    </tr>\n    <tr>\n      <td>FSFG-K in buffer</td>\n      <td>25,183</td>\n    </tr>\n    <tr>\n      <td>FG-N in cell E. coli expression</td>\n      <td>25,184</td>\n    </tr>\n    <tr>\n      <td>FG-N in buffer</td>\n      <td>25,185</td>\n    </tr>\n  </tbody>\n</table>\n\nTitration experiments for 15N R2 were conducted at 500 MHz in buffer A, by preparing separate samples. Kap95 was fixed at 20 \u03bcM and 15N FSFG-K concentration was varied from 12.5 \u03bcM to 1200 \u03bcM. Each sample was prepared by addition of standard volumes of stocks to obtain the concentrations. No additional normalization was used. Each R2 data acquisition used 6 delay points. For FSFG:Kap95 molar ratio of 1:1 and 0.625:1 the following delay times were used 0, 32.64, 65.28, 97.92, 130.56, 163.2 ms. For FSFG:Kap95 molar ratio of 4:1 the following delay times were used 0, 81.6, 163.2, 244.8, 326.4, 408 ms. For FSFG:Kap95 molar ratio of 7:1 the following delay times were used 0, 81.6, 163.2, 244.8, 326.4, 489.6 ms. For FSFG:Kap95 molar ratios of 60:1, 28.75:1 and 11:1 the following delay times were used 0, 81.6, 163.2, 326.4, 489.6, 652.8 ms. The same delays were used for an FSFG-N alone and the R2 values obtained provided the value of R2 free (R2(0)) in the binding equation. The numbers of scans were optimized for S/N for each sample and total acquisition time per sample was \u223c<13 hr.\n\n### NMR analysis\n\nThe chemical shifts and their standard deviations (Tamiola et al., 2010) were used in the standard equation (Schwarzinger et al., 2001) to derive deviations from predicted shift values for the sequences of the assigned proteins. The values for these for \u0394\u03b413C\u03b1- \u0394\u03b4 13C\u03b2 are shown in Figure 1\u2014figure supplement 1.\n\nFor NMR relaxation analysis, we derive approximate correlation times for ps/ns, associated with the different correlation times for hetero nuclear nOe by a direct calculation method that, in part, normalizes across different observation fields/frequencies, avoiding any complexities of spectral density analysis (for example, Wirmer et al., 2006), of the unverified applicability of a \u2018Model Free\u2019 approach (Buevich et al., 2001), and of analysis of simulated molecular dynamics which may not be generally applicable to all IDPs (Kleckner and Foster, 2011; Xue and Skrynnikov, 2011).\n\nThe apparent correlation times for motion of backbone amides was derived from use of the heteronuclear 15N[1H] nOe using the standard dipolar treatment (Neuhaus and Williamson, 2000), ignoring chemical shift anisotropy contributions. For this pair, the field independent form from the standard formulae (p 135 in Nicholas et al., 2010) is given by\n\n$$\nO_{noe}=0.782804\u2212\\frac{(0.010000683009+0.5132297763(f_{h}\\tau_{n})^{2})}{(0.002123332299+0.1102575629(f_{h}\\tau_{n})^{2}+(f_{h}\\tau_{n})^{4})},\n$$\n\nwhere fH is the 1H frequency (Hertz) and $\\tau_{n}$ is the apparent correlation time for the ns motion associated with direct dipolar relaxation (Neuhaus and Williamson, 2000; Cavanagh et al., 2007). We use here $\\tau_{n}$ to discriminate from the overall correlation time for folded protein motion usually denoted as $\\tau_{c}$.\n\n$\\tau_{n}$ may be directly obtained as\n\n$$\n\\tau_{n=}\\sqrt{\\frac{[(\u2212(2.418830739.10^{30}O_{noe}+2.02824096.10^{31}(0.005729037113O_{noe}^{2}+0.07341631796O_{noe}+0.2024235645)^{1/2}+8.516066166.10^{30}]}{(4.056481921.10^{30}O_{noe}\u22123.175430273.10^{31}(}}/f_{h}.\n$$\n\n#### Analysis of titration data\n\nThe data of Figure 2 do not fit readily in most models of NMR titration for protein/protein interactions (Goldflam et al., 2012), especially for IDPs, where an intermediate folded form is frequent (for example, Luna et al., 2014; Sugase et al., 2007) In the case of slow exchange, it would be expected that at least part of the FG Nup sequence would show multiple peaks associated with some mobility in the \u2018bound\u2019 form. In the case of intermediate exchange, a very significant change in line shape associated with the exchange contribution to 1H R2 would be expected. Since neither of these is observed, the spectra are interpreted as arising from fast exchange, with a minimal averaged chemical shift perturbation. This likely arises from multiple interaction sites and of ligand poses with a small average shift change, which does not exclude substantial shifts on interaction of individual sites or poses. The \u2018bound\u2019 form with comparable rotational tumbling to that of Kap95 would be expected to be broadened beyond detection for a \u03c4c of \u223c60 ns. The 1H line widths are only moderately increased suggesting modest 1H Rex contributions. On this basis, and subject to further investigation of exchange phenomena (for example, Feeney et al., 1979; Kleckner and Foster, 2011; Lepre et al., 2013; van Dongen et al., 2002) and of models of interaction (Parks et al., 1983; Fielding et al., 2005; Simard et al., 2006; Wong et al., 2009), we analyze the data as\n\n$$\nR_{obs}=R_{0}(1\u2212f)+R_{b}f,\n$$\n\nwhere R refers to observed, free (0) and bound (b) 15N R2's, and f is the degree of occupancy on the TF for the specific residue (Fushman et al., 1997; Su et al., 2007). Note that the above equation assumes that any Rex additional contribution is negligible. This is justified if we assume that the actual kex is very large, that is, fast (Equation 17b in Lepre et al., 2004). The back calculation of Kd below then reflects a lower bound value subject to more precise, future determination of Rex terms. The relation of Robs to concentrations of FG Nup and TF then permits analysis of apparent equilibrium constants after Cantor and Schimmel (1980), as\n\n$$\nR_{obs}\u2212R_{0}=R_{b}((K_{d}+L+T_{f})\u2212((K_{d}+L+T_{f})^{2}\u22124LT_{f}))^{1/2}/2L,\n$$\n\nwhere Tf is the concentration of transport factor, and L is the concentration of FSFG-K. From the observed data, Figure 2\u2014figure supplement 2, the individual values of Kd and Rb are approximately determined. We used two methods which provided the same results within expected precision and experimental error. Using a MATLAB (Mathworks, Natick, MA) script, we produced a grid and found the minimum of conventional \u03c72 with the unknowns Rb and Kd. The resulting grid was smooth with a single minimum (data not shown). In parallel, we used Prism Version 6.05 (GraphPad Software Inc, La Jolla, CA) with the above equation to obtain nonlinear regression curve fitting (Motulsky and Brown, 2006) to the data deriving Rb and Kd. Since our assumptions of limited exchange contribution, site number equivalence of L and Tf, and homogenous sites are significant simplifications, we then concentrate on the value of Kd as a limiting lower value of the gross dissociation constant, estimated as 36$\\pm$ 6 \u03bcM. Per site of FSFG-K, for the six nominally equivalent FSFG motifs, this would be equivalent to an estimated lower value for a single site Kd of 216 \u03bcM. Using Prism, we also derived sequence-specific apparent Kd assuming that the FSFG residues sense \u2018different' equilibria. The values obtained\u2013in \u03bcM (Std. Error) were Fsfg 31(6), fSfg 55(15), fsFg 44(9), and fsfG 17(6). The narrow range of values supports the assumption that Rex contributions are modest, since contributions are expected to be highly sequence dependent.\n\n### Dynamic light scattering\n\nDynamic Light Scattering (DLS) measurements were made on a Dynapro Plate Reader (Wyatt Instruments, Santa Barbara, CA) at 298 K, in a 384 well plate with typically triplicate samples. Curves in Figure 4G are summations from instrument measurements. The mass-weighted averaged radii (and standard errors of the mean) are 2.46 (0.15) nm; 2.63 (0.14) nm; 6.47 (0.30) nm for FG-N, FSFG-K and FG-N-FSFG-K-tet, respectively. Concentrations used were 8, 4, and 2 mg/ml. Concentration dependencies were small. For the distribution curves the Dynapro software DYNAMICS 7.1.0.25 was used to analyze the experimental correlations with multiple 1 s runs, standard filtering including exclusions of <1% mass peaks, and regularization using the coil setting (Hanlon et al., 2010). The resulting binned regularized data was extracted and for each protein was summed across wells by scaled Gaussian summation at the peak position and width of the log-scale time base.\n\nNote that cumulant analysis (Koppel, 1972) is not practical for multi-component systems with a large dynamic range. In each case the peak in the 1\u201310 nm regions represent >99% of the scattering mass. Averages and standard errors of the mean were calculated by pooling each mass-weighted average per well.\n\nFigure 2\u2014figure supplement 4 shows raw decay time data from DLS for FG\u2013N and FSFG-K constructs in standard buffer A, 8 mg/ml. The vertical axis represents the % of mass having a specific decay time, with period in hours after start shown in the NE axis. The presentation of decay time avoids any issue of model for specific molecular shape or density or validity of the Raleigh-Debye approximation (Berne and Pecora, 2000). Data are pooled from a triplicate reading using the setting indicated above.\n\n### Buffers used\n\nA: 20 mM HEPES, 150 mM KCl, 2 mM MgCl2, pH 6.5 unless otherwise noted;B: Xenopus egg extract: protein egg extract prepared according to (Shechter et al., 2004) containing 31 mg/ml protein and was diluted with buffer A (3 + 10 v + v) with a final pH of 6.5;C: E. coli lysate: lyophilized protein from high-speed spin dissolved in buffer A, at a final concentration of 30 mg/ml;D: Buffer A plus 100 mg/ml BSA;E: 20 mM Tris pH 7.5, 150 mM NaCl (Burz et al., 2006).\n\n### Manipulated docking of IDP interaction with Kap95 (Figure 4)\n\nHADDOCK, a rigid body docking algorithm (Dominguez et al., 2003), was used to combine Kap95 and FSFG-K into possible orientations to provide a molecular representation of our findings. Specifically, the crystal structure of Kap95 (3ND2) and a random conformations of FSFG-K was used as inputs and the FSFG-K repeat residues and residues on Kap95 identified by Isgro et al. (Isgro and Schulten, 2005) were chosen as active residues. Models were subsequently altered and images were rendered using Chimera (Yang et al., 2012).\n",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "bc2eca72-dc56-4e3e-9c83-4e556e49baab",
+      "submission_id": "56bb89cd-cbf4-447e-9638-7be01b76945d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10027.018](https://doi.org/10.7554/eLife.10027.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cThe molecular mechanism of nuclear transport revealed by atomic scale measurements\u201d for peer review at eLife. Your submission has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom, Volker D\u00f6tsch, is a member of our Board of Reviewing Editors. The other two reviewers, Masahiro Shirakawa and Miquel Pons, have agreed to share their identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe paper describes the physicochemical properties and functions of a major region of Nsp1 protein, one of the major components of Nuclear Pore Complex (NPC). The region mainly consists of phenylalanine-glycyl (FG) repeats (FG Nups) and spacer amino acid sequences between them. It is thought to be an intrinsically denatured protein (IDP) region, and bundles of them function as a filter for transporter factors and barriers for non-specific diffusion, as a polymer brush. The authors show that FG Nups maintain IDP properties even at high concentration or when forming multimeric architectures or under the cellular milieu, by smart use of solution NMR. They also showed that the FG repeats of FG Nups selectively interact with transporter factors, but these interactions seem to cause no structural change on FG Nups, because both kon and koff are small, and thus each contact time is too short to induce conformational changes. Thus, although in general IDPs are believed to adopt secondary structure upon interaction, FG Nups interact as if they are in random and dynamic conformation. This property is used to explain how transporter factors pass through the filter rapidly. This seems to be the most interesting finding reported in this manuscript.\n\nEssential revisions:\n\n1) The components of the \u201ccellular milieu\u201d preventing aggregation seem to be present in Xenopus egg extracts, inside E. coli cells and in E.coli high speed spin. The last condition is described as based on \u201clyophilized protein\u201d. Can it be defined more specifically? Why such a high protein concentration is needed (230 mg/ml Figure 1\u2013figure supplement 6)? Presumably that exceeds that of the intact E. coli cytoplasm. Could it be that other non-protein components (e.g. lipids) also play a role? The FGGF sequence forms the core of the Unique Lipid Binding Region (ULBR) in the intrinsically disordered domain of c-Src.\n\n2) Normally, the influence of proteins in the cellular environment is investigated by repeating the experiments in the presence of BSA or other inert proteins. The authors report control experiments for general viscosity effects but such a protein specific experiment is missing.\n\n3) In the pH dependent spectra, in addition to the attenuation due to solvent exchange, there is at least one residue that is titrating. Could it be from the His tag? Please confirm.\n\n4) The periodic change in R2 around FG repeats in vitro and the equivalent change in signal attenuation in the presence of Kap95 is interpreted assuming that exchange contributions are negligible. In the absence of \u201crescuing\u201d interactions, clustering of FX regions is certainly occurring (it is much easier than intermolecular interactions and those are readily observed as hydrogel formation). Therefore it is not impossible that the observed signal attenuation or R2 effects are caused by a decrease in the exchange rate between intramolecular FG\u2013FG interactions. Otherwise, why is the R2 periodicity not observed in NOEs? The discussion on analysis of the titration data could probably be expanded. It raises some questions about the derived Kd values.\n\n5) Some clarification on Figure 2\u2013figure supplement 2 is necessary. It seems that each point (e.g. FSFG) is the average R2 of all distinguishable sites and that the error bars are the standard deviation of the R2 values of individual sites. This should be clarified. Normally standard deviations refer to multiple measurements on the same site.\n\nIf individual sites are measured and the interaction is non-cooperative, then the measured Kd would be the one for each site and it is unclear how the estimate of 216 \u03bcM per site is derived. Please clarify.\n\n6) Please define \u201cattenuation\u201d used in Figure 2 (e.g 1\u2013Ia/Ib). Because the spectra are from independent samples, there is probably some normalization.\n\n7) What is the mechanism for larger proteins to be excluded from passing and smaller proteins being allowed to pass the nuclear pore? Is it just steric hindrance that is overcome by specific and weak interactions of the transport factors? While the paper focuses mainly on the interaction with the TFs, more discussion of the model of excluding all other proteins would be helpful.\n",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9b0e240b-dbe9-4fce-92a3-18086130f9fa",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C1",
+      "claim": "Nuclear pore complexes (NPCs) form a selective filter that allows the rapid passage of transport factors (TFs) and their cargoes across the nuclear envelope, while blocking the passage of other macromolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear pore complexes (NPCs) form a selective filter that allows the rapid passage of transport factors (TFs) and their cargoes across the nuclear envelope, while blocking the passage of other macromolecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citations throughout the manuscript and general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "99103cf0-792c-4be5-88bc-18048052360b",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C2",
+      "claim": "Intrinsically disordered proteins (IDPs) containing phenylalanyl-glycyl (FG)-rich repeats line the pore and interact with TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered proteins (IDPs) containing phenylalanyl-glycyl (FG)-rich repeats line the pore and interact with TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by multiple citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "04708a78-493c-4116-8265-3c9e67105c4d",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C3",
+      "claim": "FG repeats are highly dynamic IDPs, stabilized by the cellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that FG repeats are highly dynamic IDPs, stabilized by the cellular environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR measurements showing disorder and dynamics in cellular milieu, as shown in Figure 1 and related data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "7dc4e114-6296-4c28-9b06-d5917a31a2a0",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C4",
+      "claim": "The rapid motion of FG motifs allows them to exchange on and off TFs extremely quickly through transient interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast transport of TFs is supported because the rapid motion of FG motifs allows them to exchange on and off TFs extremely quickly through transient interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by NMR relaxation data showing rapid dynamics and titration experiments showing fast exchange kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "3e177d78-6ed6-4d26-bf24-17851406cedc",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C5",
+      "claim": "TFs uniquely carry multiple pockets for FG repeats, allowing them to form the many frequent interactions needed for specific passage between FG repeats to cross the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TFs uniquely carry multiple pockets for FG repeats, only they can form the many frequent interactions needed for specific passage between FG repeats to cross the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural knowledge of TFs and the multivalent binding data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "56f1e30c-a742-4eae-851d-011517923932",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C6",
+      "claim": "The entire process of transport factor (TF) docking, passage and release across the NPC takes only a few milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Transport is rapid and reversible, with the entire process of transport factor (TF) docking, passage and release across the NPC taking only a few milliseconds (Strawn et al., 2004; Hulsmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "eed720d1-66d7-4858-859c-b4d53be85350",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C7",
+      "claim": "The NPC consists of a \u223c30-nm diameter central channel filled with phenylalanyl-glycyl-repeat-rich nucleoporins (FG Nups) which provide the selective filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPC consists of a \u223c30-nm diameter central channel filled with phenylalanyl-glycyl-repeat-rich nucleoporins (FG Nups) which provide the selective filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about the NPC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "f174d521-f713-4afd-8751-91e02d2ff363",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C8",
+      "claim": "Depletion or deletion of the FG Nups results in leaky, non-selective barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion or deletion of the FG Nups results in leaky, non-selective barriers (Strawn et al., 2004; Di Nunzio et al., 2012; Hulsmann et al., 2012; Funasaka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "12728d7e-4ff7-44cd-9fdf-7087e5ecefab",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C9",
+      "claim": "FG domains in isolation facilitate selective passage of TFs through nanopores.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the FG domains in isolation facilitate selective passage of TFs through nanopores (Jovanovic-Talisman et al., 2009; Kowalczyk et al., 2011) or accumulation in hydrogels (Frey et al., 2006; Frey and G\u00f6rlich, 2007; Schmidt and Gorlich, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "68053309-d7ca-4901-8917-98a82d8e6841",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C10",
+      "claim": "TF interaction with FG repeats reduces the diffusional barrier to enable selective transport.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally accepted that TF interaction with FG repeats reduce the diffusional barrier to enable selective transport (Vasu and Forbes, 2001; Rout et al., 2003; Suntharalingam and Wente, 2003; Zeitler and Weis, 2004), though the molecular mechanism of TF passage through the NPC remains largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generally accepted view in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "b49fcb7f-1a55-45a8-9f4a-139f127246c8",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C11",
+      "claim": "TFs can change the height of FG brushes on planar surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesoscale observations of TF-FG repeat interactions in vitro have shown that TFs can change the height of FG brushes on planar surfaces (Lim et al., 2007; Eisele et al., 2010; Kapinos et al., 2014; Wagner et al., 2015), modulate the transport of inert cargo (Lowe et al., 2015), assemble with FG Nups into large assemblies (Lowe et al., 2015), and inhibit amyloid hydrogel formation observed for some FG Nups (Milles et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "848d586f-aae5-4c47-ac6a-717d2f9bc2ce",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C12",
+      "claim": "FG-N and FSFG-K fragments are fully disordered, with no propensity for secondary structure in E. coli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations of chemical shift values in cell (Escherichia coli) from predicted (colored bars) showing that FG-N and FSFG-K fragments are fully disordered, with no propensity for secondary structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by NMR chemical shift data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "f067588f-2acc-4d6b-80d9-f6e42fc13fd8",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C13",
+      "claim": "FG-N and FSFG-K constructs show significant interactions with the cellular milieu and exhibit very rapid motions.",
+      "claim_type": "EXPLICIT",
+      "source": "The FG-N and FSFG-K constructs show significant interactions with the cellular milieu and exhibit very rapid motions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by R2/R1 ratios and nOe data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "f7c4c928-8fca-4a4f-b787-57c5839df3c6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C14",
+      "claim": "FG Nups were fully disordered and highly dynamic in all cellular milieu tested.",
+      "claim_type": "EXPLICIT",
+      "source": "FG Nups were fully disordered and highly dynamic in all cellular milieu tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by NMR chemical shift and relaxation measurements in various cellular environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "3ab3ad72-898f-40b0-b919-67a50ca6c77b",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C15",
+      "claim": "The degree of secondary structure is near zero for all residues in FG-N and FSFG-K constructs in all conditions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of secondary structure quantified in this way is near zero for all residues in FG-N and FSFG-K constructs in all conditions tested (Figure 1B, Figure 1\u2014figure supplement 1) (Eliezer, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from NMR chemical shift data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "cac6ee06-1ef8-4468-9bc2-9d508b07a4a1",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C16",
+      "claim": "FG-N forms a hydrogel-like material in buffer alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, dynamic light scattering and NMR measurements indicate that FG-N forms a hydrogel-like material (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dynamic light scattering and NMR data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "8eb99ab7-ae11-4c9f-834d-95e047a63724",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C17",
+      "claim": "When FG-N constructs are observed by NMR inside a living cell, or in the presence of cell lysates or mimics, there is no appearance of high molecular weight components.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when FG-N constructs are observed by NMR inside a living cell, or in the presence of cell lysates or mimics, there is no appearance of high molecular weight components\u2014NMR spectra of FG-N constructs in living E. coli did not change with time over more than 24 hr (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in NMR spectra over time shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "fece2b91-597b-40df-8f09-64471b625161",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C18",
+      "claim": "The cellular milieu is a strong inhibitor of intermolecular FG repeat aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the cellular milieu is a strong inhibitor of intermolecular FG repeat aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that FG-N does not aggregate in cellular milieu but does in buffer alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "d87c51fe-1b5b-4493-abff-6dc5f3a76228",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C19",
+      "claim": "The state of FG repeats in the experimental system is highly dynamic, as has been reported in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The state of FG repeats in our system is therefore highly dynamic, as has been reported in vivo (Mattheyses et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' NMR data and cited previous in vivo observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "7c78f547-181e-4163-b1e3-05fd2c887d34",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C20",
+      "claim": "NMR relaxation properties of FG Nups are significantly different between buffer alone and a protein-rich environment.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR relaxation properties of FG Nups are significantly different between buffer alone and a protein-rich environment (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the R2/R1 and nOe data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "ce84e05a-7aaf-4069-895a-686e1c37c4ee",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C21",
+      "claim": "Large increases in R2/R1 were measured, indicative of transient spectral changes on interaction between the constructs and the cellular milieu.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured large increases in R2/R1, indicative of transient spectral changes on interaction between the constructs and the cellular milieu (Figure 1C, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from NMR relaxation experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "7da38771-730b-434e-af11-c8dedf6c8877",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C22",
+      "claim": "The increases in R2/R1 were not seen upon increasing viscosity or crowding by inert agents.",
+      "claim_type": "EXPLICIT",
+      "source": "The increases in R2/R1 were not seen upon increasing viscosity or crowding by inert agents (Figure 1\u2014figure supplement 6), indicating that these changes result from weak binding of the FG repeats to the proteinaceous milieu as suggested by previous studies (Tetenbaum-Novatt et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by control experiments with various crowding agents in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "996e7f6b-8943-44b1-b063-046853dabc87",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C23",
+      "claim": "The phenylalanines and their adjacent residues show the primary interactions with the cellular milieu, with the greatest increases in R2/R1, while the spacer sequences remained relatively unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenylalanines and their adjacent residues show the primary interactions, with the greatest increases in R2/R1, while the spacer sequences remained relatively unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the sequence-specific R2/R1 data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "143ba282-1f02-4a37-8290-eacd8c51a3d8",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C24",
+      "claim": "The nuclear Overhauser effect (nOe) data show that the FG-N are highly mobile and flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear Overhauser effect (nOe) data show that the FG-N are highly mobile and flexible (Figure 1C, Figure 1\u2014figure supplement 2), indicating no sequence-specific compaction, folding, or molten globule formation (Uversky, 2009; Theillet et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from nOe experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "879d3807-0a5d-48b6-b731-8949dcdaa37d",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C25",
+      "claim": "The cellular milieu is in a state of constant, non-specific, dynamic interaction with the FG repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular milieu is thus in a state of constant, non-specific, dynamic interaction with the FG repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the R2/R1 and nOe data showing transient interactions without structural changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "25b29b8c-f6b6-413f-8bd9-3ea9679666de",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C26",
+      "claim": "Interactions of FG repeats with the cellular milieu stabilize the unfolded state by engaging the hydrophobic phenylalanines in transient interactions that decrease their contact with water.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that interactions of FG repeats with the cellular milieu stabilize the unfolded state by engaging the hydrophobic phenylalanines in transient interactions that decrease their contact with the water, reducing the driving force for hydrophobic collapse and amyloid formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the observed data and previous knowledge about hydrophobic interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "1aba4493-6b80-471e-a226-6774c646e0dd",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C27",
+      "claim": "Mutation of the Fs to more hydrophilic residues inhibits aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work that demonstrated that mutation of the Fs to more hydrophilic residues inhibits aggregation (Frey et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "dd43ffdf-a0a1-4ba1-b25b-5013cd0df133",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C28",
+      "claim": "Exchange with the cellular milieu maintains the FG Nups in a highly dynamic, disordered state by inhibiting the intramolecular interactions that lead to aggregation in buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, exchange with the cellular milieu maintains the FG Nups in a highly dynamic, disordered state by inhibiting the intramolecular interactions that lead to aggregation in buffer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of FG Nup behavior in cellular milieu versus buffer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "4ce8d9ca-0165-46e2-ad49-0f62b3041010",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C29",
+      "claim": "FG residues bind to hydrophobic pockets on TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been established using crystallographic, computational, and NMR approaches that FG residues bind to hydrophobic pockets on TFs (reviewed in Stewart, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "5a67874f-d6c7-4a5f-9c5f-99bbd72f69e6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C30",
+      "claim": "The FG repeat-TF interactions are fully reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "By monitoring the recovery of the NMR spectral characteristics on dilution of Kap95, the interacting TF, we showed that the FG repeat-TF interactions are fully reversible in our system (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dilution experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "205c13d6-9e9e-4b63-8480-6d78b28d9ef2",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C31",
+      "claim": "Although the phenylalanine repeats themselves are attenuated upon Kap95 interaction, the majority of peaks are minimally affected, showing that the corresponding residues remain disordered and dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, although the phenylalanine repeats themselves are attenuated upon Kap95 interaction, the majority of peaks are minimally affected, showing that the corresponding residues remain disordered and dynamic (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the HSQC titration data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "60141942-b663-4bee-893f-19b59ac8c796",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C32",
+      "claim": "The spacer regions are highly mobile even within the interacting state.",
+      "claim_type": "EXPLICIT",
+      "source": "The spacer regions are thus highly mobile even within the interacting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the minimal attenuation of spacer region peaks upon TF binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "58c306cd-c393-47d1-8509-aff47ca263b6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C33",
+      "claim": "K332 shows no attenuation and thus this residue remains flexible both in free and when bound to TF.",
+      "claim_type": "EXPLICIT",
+      "source": "An extreme of this observation is seen for K332, which shows no attenuation (left subpanel in Figure 2A, lowest trace Figure 2C), and thus this residue remains flexible both in free and when bound to TF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the NMR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "14609c4c-fce7-478d-a55d-af6ea17cfccb",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C34",
+      "claim": "A striking periodic pattern of minimal attenuation for most residues and significant attenuation for FG repeats was observed when examining attenuation as a function of residue number.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined attenuation as a function of residue number, we observed a striking periodic pattern of minimal attenuation for most residues and significant attenuation for FG repeats (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the attenuation plot in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "8f0582a0-144d-4a8d-94dd-e8e4558807a8",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C35",
+      "claim": "The degree of signal attenuation falls off relatively uniformly at both sides of each FG repeat, consistent with the transient binding of individual FG residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of signal attenuation falls off relatively uniformly at both sides of each FG repeat, consistent with the transient binding of individual FG residues, with the remaining residues remaining fully disordered and highly dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the attenuation data and interpreted as evidence for transient binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "59260747-4ce4-474a-b04a-a1058f5cdd91",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C36",
+      "claim": "No major state change of spacers resulting from TF addition was observed, such as caused by the formation or breakage of secondary structure, or gel/sol transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any major state change of spacers resulting from TF addition, such as caused by the formation or breakage of secondary structure, or gel/sol transitions (Ader et al., 2010; Labokha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the NMR data, indicating no structural changes upon TF binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "d28755ce-7faf-4c64-b1f1-05d8b3e52b98",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C37",
+      "claim": "The binding interface between FG Nups and TFs at each interacting site is small\u2014just the 2\u20134 residues surrounding the FG repeat itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the binding interface between FG Nups and TFs at each interacting site is small\u2014just the 2\u20134 residues surrounding the FG repeat itself\u2014and the residues that do not interact directly with the TF sites remain highly mobile and dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localized attenuation pattern around FG repeats in the NMR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "7550d60a-4c24-4c45-8cd6-cce59d9614e5",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C38",
+      "claim": "The size of the binding interface is consistent with other known transient interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the binding interface is consistent with other known transient interactions (Clackson and Wells, 1995; Morrison et al., 2003; Tompa et al., 2009; Dixon et al., 2011; Ozbabacan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on transient protein interactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "3dee7544-e4f7-446d-b014-a2b918f25fd6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C39",
+      "claim": "A minimum effective affinity of Kap95 for the FSFG-K was estimated from a titration observing 15N R2, with the true Kd greater than 36 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated a minimum effective affinity of Kap95 for the FSFG-K from a titration observing 15N R2 (Figure 2\u2014figure supplement 2) (Su et al., 2007). The true Kd is greater than 36 \u03bcM, fully consistent with rapid, reversible transport.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from R2 titration experiments shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "3c8f4fc3-184d-4f09-ba1a-1fc7c7181677",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C40",
+      "claim": "Interaction or binding while remaining primarily disordered is highly unusual, as many functional IDPs are believed to adopt significant secondary structure formation upon interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction or binding while remaining primarily disordered is highly unusual, as many functional IDPs are believed to adopt significant secondary structure formation upon interaction (Wright and Dyson, 2009; Uversky and Dunker, 2013), which we do not see here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contrasts the observed behavior with typical IDP behavior cited in the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "8c9f07e5-a58b-462a-b8ba-99313ea0e64d",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C41",
+      "claim": "The behavior of FG Nups is reminiscent of that proposed for random fuzzy complexes, in which one partner remains dynamically disordered and transient interactions predominate during selective recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is reminiscent of that proposed for random fuzzy complexes, in which one partner remains dynamically disordered and transient interactions predominate during selective recognition (Sigalov, 2011; Fuxreiter and Tompa, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data in the context of existing theoretical frameworks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "cfc08392-8718-4fb3-9d03-589817219095",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C42",
+      "claim": "There are multiple transport routes across the NPC, with FG Nups arranged in a variety of geometries.",
+      "claim_type": "EXPLICIT",
+      "source": "Many observations suggest that there are multiple transport routes across the NPC, with FG Nups arranged in a variety of geometries (Akey and Radermacher, 1993; Goldberg and Allen, 1996; Gant et al., 1998; Kiseleva et al., 2004; Alber et al., 2007; Burns and Wente, 2012; Laba et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "9c7aabd2-99c8-432d-ba93-47a87c9c15ee",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C43",
+      "claim": "Essentially no change in chemical shifts and only modest changes in linewidth were found upon attachment to the p53 tetramerization domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We found essentially no change in chemical shifts and only modest changes in linewidth upon attachment to the p53 tetramerization domain (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the NMR spectra comparing monomeric and tetrameric constructs shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "c2c26e5f-61bd-48fb-b618-982b52e3f9f3",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C44",
+      "claim": "FG Nups remain dynamic IDPs even in large complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Any ordered protein of this size (\u223c120 kDa) would be invisible using our NMR experiments, demonstrating that FG Nups remain dynamic IDPs even in large complexes, as previously measured for other large IDPs (Kosol et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of NMR signals for the large tetrameric constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "b1f4a600-8efb-43b4-8fcd-1c61535aab3f",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C45",
+      "claim": "The largest constructs have a diameter measured by dynamic light scattering of 13 nm, a significant fraction of the 30-nm diameter of the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our largest constructs have a diameter measured by dynamic light scattering of 13 nm (Figure 3B), a significant fraction of the 30-nm diameter of the NPC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by dynamic light scattering shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "09ccae0a-3834-4c93-a1cc-97dc1019dad5",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C46",
+      "claim": "The behavior of a given FG repeat is not affected strongly by the number or type of other FG repeats surrounding it.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that the behavior of a given FG repeat is not affected strongly by the number or type of other FG repeats surrounding it (i.e., no 'emergent properties').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing NMR data of different constructs with varying FG compositions and arrangements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "24a7f32c-e472-4a19-b114-88f937f38b51",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C47",
+      "claim": "There are no significant FG\u2013FG interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also strongly indicate that there are no significant FG\u2013FG interactions, as interactions between different types of FGs should impact their average environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of chemical shift changes when different FG types are combined.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "83f8ac39-3868-4f64-85b3-b4fd8dff5493",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C48",
+      "claim": "Extremely weak, dynamic interactions may occur between FG repeats, and such interactions may modulate the long distance distribution of FG repeat regions in the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot completely exclude that extremely weak, dynamic interactions can occur between FG repeats, and indeed such interactions may modulate the long distance distribution of FG repeat regions in the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement acknowledging limitations of the measurements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "815b1f5c-e643-4ea9-b6cc-a596f77cd9a6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C49",
+      "claim": "The FG Nups remain a highly dynamic fluid even at sizes, arrangements, and packing densities commensurate with the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The FG Nups thus remain a highly dynamic fluid even at sizes, arrangements, and packing densities commensurate with the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the NMR data on various constructs including large tetrameric assemblies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "eb8e1132-a655-4ab8-ae00-9409291fb6b2",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C50",
+      "claim": "The same pattern of rapid exchange of the FG residues with TF binding sites while the spacer regions remain highly mobile was observed in all environments studied and with all constructs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the same pattern of rapid exchange of the FG residues with TF binding sites while the spacer regions remain highly mobile in all environments studied and with all constructs tested, showing the robustness of our findings (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown across multiple constructs and conditions in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "b7d349fe-c441-400f-b16d-d7a74bb32211",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C51",
+      "claim": "Even when densely packed and in mixed flavors as in the NPC, the FG repeat regions studied remain fully disordered and highly dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, even when densely packed and in mixed flavors as in the NPC, the FG repeat regions studied here remain fully disordered and highly dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by NMR data on various constructs including tetrameric assemblies with mixed FG types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "16515d27-ec7e-4b77-ad27-fe8cb42724d6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C52",
+      "claim": "FSFG-K is highly soluble and non-cohesive, while FG-N in buffer is highly cohesive, a prototypical hydrogel-forming FG Nup.",
+      "claim_type": "EXPLICIT",
+      "source": "The two domains studied represent the extreme behaviors observed for FG Nups in vitro (Patel et al., 2007; Ader et al., 2010; Yamada et al., 2010): FSFG-K is highly soluble and non-cohesive, while FG-N in buffer is highly cohesive, a prototypical hydrogel-forming FG Nup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by previous work cited and confirmed by the authors' observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "67d0df32-683e-42b5-bde0-99ac9a38245a",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C53",
+      "claim": "The data are inconsistent with any hydrogel state in cellular milieu.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clearly possible to make FG repeats aggregate (Figure 1\u2014figure supplements 4, 5) (Ader et al., 2010), as has been demonstrated for many proteins (Goldschmidt et al., 2010). However, our data are inconsistent with any such hydrogel state in cellular milieu (Frey et al., 2006; Labokha et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the NMR data showing no aggregation in cellular milieu.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "74bbed8c-0f25-44d0-8b20-34cded5a9fea",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C54",
+      "claim": "Re-arrangements of internal non-covalent crosslinks within hydrogels are on slow (second to minute) timescales, long enough to form a solid gel resistant to deformation, and too slow for solution NMR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-arrangements of internal non-covalent crosslinks within hydrogels are on slow (second to minute) timescales, long enough to form a solid gel resistant to deformation, and too slow for solution NMR analysis (Ader et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of hydrogel dynamics and NMR timescales, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "5cebf228-3ba5-4223-b730-6bcca439d0d3",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C55",
+      "claim": "FG repeat regions form a highly dynamic phase, consistent with the rapid rates of nuclear transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of such a highly internally interacting, slowly moving gel, our results demonstrate that FG repeat regions form a highly dynamic phase, consistent with the rapid rates of nuclear transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the NMR data showing rapid dynamics and compared to known transport rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "b26a2422-4e3f-4186-86a1-252addc6a84e",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C56",
+      "claim": "A highly dynamic, fluid state for FG repeats in vivo is in agreement with measurements of the living NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "A highly dynamic, fluid state for FG repeats in vivo is in agreement with measurements of the living NPC (Atkinson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous in vivo measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "a4f22177-f0b7-4430-aaa0-ac4f62d86af1",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C57",
+      "claim": "FG Nups do not appear to form a molten globule or collapsed state, instead behaving as a fully disordered IDP.",
+      "claim_type": "EXPLICIT",
+      "source": "FG Nups do not appear to form a molten globule or collapsed state, as has also been proposed (Yamada et al., 2010), instead behaving as a fully disordered IDP (Rout et al., 2003; Lim et al., 2006; Lim and Deng, 2009; Atkinson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the NMR data showing no evidence of compaction or secondary structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "71d58b56-8c29-46f6-8765-e66a68c7a056",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C58",
+      "claim": "FG repeats do not appear to populate more folded states either inter- or intra-molecularly upon interaction with either TFs or other FG Nups.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also allow us to distinguish their IDP class (Uversky, 2011; van der Lee et al., 2014). FG repeats do not appear to populate more folded states either inter- or intra-molecularly upon interaction with either TFs or other FG Nups (Wright and Dyson, 2009; Yamada et al., 2010; Han et al., 2012; Kato et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the chemical shift data showing no secondary structure formation upon binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "2fb5ee90-da6f-4ad1-af4c-d605be813ef1",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C59",
+      "claim": "IDP mobility may be a key ingredient in nuclear transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, FG repeats lack any secondary structure, even when interacting with cognate binding partners, indicating that IDP mobility may be a key ingredient in nuclear transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the observed dynamics and disorder.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "8ff008a3-19f9-4f8d-b5a9-ebfd15fdc4c1",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C60",
+      "claim": "The importance of the cellular environment for determining the behavior of the FG Nups is highlighted because multiple weak interactions with cellular components stabilize the FG Nups in a disordered state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight the importance of the cellular environment for determining the behavior of the FG Nups because multiple weak interactions with cellular components stabilize the FG Nups in a disordered state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing FG Nup behavior in cellular milieu versus buffer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "711be5ec-6909-472a-9a8c-18a03487dc0c",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C61",
+      "claim": "The selectivity of the NPC is maintained by both non-specific and specific cellular interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the selectivity of the NPC is thus maintained by both non-specific and specific cellular interactions, consistent with recent work demonstrating that FG permeability barrier is modulated by TFs (Lim et al., 2007; Eisele et al., 2010; Milles et al., 2013; Kapinos et al., 2014; Lowe et al., 2015; Wagner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic proposal based on the authors' data and cited previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "027d35b2-3672-4982-abc0-f2e03f2e2ef6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C62",
+      "claim": "The modulation of permeability of FG brush behavior by TFs is not a result of structural changes of the FG Nups, but must result instead from the rapid, multivalent interactions of TFs with FG repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the modulation of permeability of FG brush behavior by TFs is not a result of structural changes of the FG Nups, but must result instead from the rapid, multivalent interactions of TFs with FG repeats (Tetenbaum-Novatt et al., 2012; Schleicher et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the lack of structural changes observed upon TF binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "3150f84a-c805-4118-a453-a9129cc009c0",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C63",
+      "claim": "FG repeats being highly dynamic tethered IDPs implies that they must form entropic bristles around their tether site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, strongly supporting that FG repeats are highly dynamic tethered IDPs, imply that they must form entropic bristles (i.e., strongly sterically hindered regions) around their tether site (the central channel of the NPC) (Rout et al., 2003; Strawn et al., 2004; Lim et al., 2006, 2007; Lim and Deng, 2009; Tetenbaum-Novatt and Rout, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic inference based on polymer physics principles applied to the observed IDP behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "4bd2a6b8-85a4-44cc-8230-45db2f783b79",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C64",
+      "claim": "The entropic hindrance increases with increasing size of the passing macromolecules; hence, small proteins can pass more easily than large ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This hindrance increases with increasing size of the passing macromolecules; hence, small proteins can pass more easily than large ones (Tetenbaum-Novatt and Rout, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on polymer physics principles and cited previous work.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "7be18b2e-d5b0-4c3b-97b8-4c8d974e2a57",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C65",
+      "claim": "Larger nonspecific macromolecules interact with the FG repeats with insufficient frequency to overcome the entropic barrier of the FG repeats' polymer bristle structure, thus being effectively excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "These larger nonspecific macromolecules interact with the FG repeats with insufficient frequency to overcome the entropic barrier of the FG repeats' polymer bristle structure, thus being effectively excluded (Tetenbaum-Novatt and Rout, 2010; Ma et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on the observed weak interactions and polymer physics.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "25540ecf-5db6-4e55-b3f9-261bdf7623f6",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C66",
+      "claim": "TFs have sufficient interaction frequency to overcome the entropic barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "TFs, however, have sufficient interaction frequency to do so\u2014the original tenet of the 'virtual gating' idea, now delineated at the atomic scale by these results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observed multivalent, rapid interactions of TFs with FG repeats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "0ead6a45-697d-451c-8d1d-a8761b958a5f",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C67",
+      "claim": "FG disorder is critical to the speed of selective nucleocytoplasmic transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that FG disorder is critical to the speed of selective nucleocytoplasmic transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the observed dynamics and binding kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "c0e0dded-d268-4944-8cff-26d5ea436aaa",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C68",
+      "claim": "IDPs are able to engage far more rapidly than most ordered proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs are able to engage far more rapidly than most ordered proteins (Zhou, 2012), allowing for high on and off rates while maintaining selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited knowledge about IDP binding kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "bbdb9250-200e-41b3-bdc3-48edd0fbbdbf",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C69",
+      "claim": "The interaction of FG Nups with TFs is extraordinarily rapid, with each FG motif in extremely fast exchange with TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "For FGs in particular, several key lines of evidence indicate that the interaction of FG Nups with TFs is extraordinarily rapid, that is, each FG motif is in extremely fast exchange with TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the NMR data showing fast exchange kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "72984383-eb5b-475d-bdfa-d835179d1c0c",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C70",
+      "claim": "The binding interface is only 2\u20134 amino acids (the FG repeat itself).",
+      "claim_type": "EXPLICIT",
+      "source": "We have directly shown that the binding interface is only 2\u20134 amino acids (the FG repeat itself).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed from the localized attenuation in NMR titration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "016e57f2-3b81-42e1-a093-18175794ee7d",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C71",
+      "claim": "The buried surface area of the FG-TF interaction is <1000 \u00c52, consistent with other known transient interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The buried surface area of this interaction is <1000 \u00c52, consistent with other known transient interactions (Clackson and Wells, 1995; Tompa et al., 2009; Dixon et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the small binding interface and compared to cited literature values.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "8f3c2110-2549-4834-9ccf-ee38e0148a69",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C72",
+      "claim": "Within the NPC, a TF is able to rapidly diffuse, engaging transiently with multiple FG motifs across different FG Nups.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the NPC, a TF is able to rapidly diffuse, engaging transiently with multiple FG motifs across different FG Nups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed rapid, transient interactions and multivalent binding capacity of TFs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "d7afb257-51c2-4997-a9a8-7a7082546eba",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C73",
+      "claim": "The association rate of TFs with individual FG motifs is very fast because the FGs move very rapidly and the TF has multiple binding pockets available for interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The association rate of TFs with individual FG motifs is very fast because the FGs move very rapidly and the TF has multiple binding pockets available for interaction (Bayliss et al., 2000, 2002; Bednenko et al., 2003; Isgro and Schulten, 2005, 2007; Liu and Stewart, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observed dynamics and structural knowledge of TFs from cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "48486554-6dbb-495f-bdc2-6432f7ab506b",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C74",
+      "claim": "The dynamics of FG-TF interaction are extraordinarily rapid.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that the dynamics of FG-TF interaction are extraordinarily rapid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from multiple lines of NMR evidence showing fast exchange and rapid dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "e0cfb9f4-8e94-47ca-9e02-0e109e06eec9",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C75",
+      "claim": "The interaction can be strong enough to be selective, and yet remain extremely fast, allowing rapid transit through the NPC.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the interaction can be strong enough to be selective, and yet remain extremely fast, allowing rapid transit through the NPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on the measured affinity and kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "db34a9b4-3cc4-4757-9510-58bb8881cc8c",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C76",
+      "claim": "It is the quantity, rather than quality, of interactions possible per molecule with FG repeats that distinguishes a TF from other macromolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, it is the quantity, rather than quality, of interactions possible per molecule with FG repeats that distinguishes a TF from other macromolecules (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key mechanistic conclusion based on the multivalent binding observed and illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "309ba946-394b-4449-844e-1481047f1603",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C77",
+      "claim": "Transient non-specific interactions of the FG repeats with their milieu help maintain the disordered and dynamic nature of the barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient non-specific interactions of the FG repeats with their milieu help maintain the disordered and dynamic nature of the barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the R2/R1 data showing interactions with cellular milieu that prevent aggregation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "883475c5-80ba-4825-b992-625e746c1989",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C78",
+      "claim": "Non-specific interactions are not strong enough for non-specific macromolecules to overcome the FG Nups' diffusion barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the low sequence and structural complexity of the FG repeats, such non-specific interactions are to be expected but are not strong enough for these non-specific macromolecules to overcome the FG Nups' diffusion barrier (Rout et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak, transient nature of non-specific interactions observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "084d5fe8-82c7-4e5d-b0b3-fd97715df6fa",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C79",
+      "claim": "TFs bind specifically to the FG motifs through pockets tuned for this purpose while leaving the spacers between the motifs highly mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TFs bind specifically to the FG motifs through pockets tuned for this purpose (Stewart, 2003, 2006) while leaving the spacers between the motifs highly mobile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the NMR data and supported by structural knowledge from citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "aaf7f507-1091-45af-8816-d7463e823c55",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C80",
+      "claim": "The barrier to non-specific passage formed by a dense fluid of FG repeats in the NPC remains fully intact, regardless of even large TF fluxes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the spacers\u2014and the FG repeats as a whole\u2014remain fully mobile even when interacting with a TF also means that the barrier to non-specific passage formed by a dense fluid of FG repeats in the NPC remains fully intact, regardless of even large TF fluxes (a significant issue with models that invoke state changes, which our results and model circumvent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic conclusion based on the observed maintenance of disorder upon TF binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "94ecff9d-2985-433c-8e79-43c471b22bd3",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C81",
+      "claim": "Nsp1 is the most tested and characterized FG Nup which has been shown in vitro to mimic transport faithfully.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied Nsp1, the most tested and characterized FG Nup which has been shown in vitro to mimic transport faithfully (Jovanovic-Talisman et al., 2009; Hulsmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "ddf22c00-7965-4c79-9265-6e9a142d2175",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "claim_id": "C82",
+      "claim": "The isolated N-terminal domain of Nsp1 forms selective hydrogels in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolated N-terminal domain forms selective hydrogels in vitro (Ader et al., 2010) and is able to replace Nup98-FG domain in reconstituted Xenopus nuclei to provide the primary barrier enabling selective transport (Hulsmann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a11692d-febb-450e-868a-c8c651c6af7a",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FG Nups (FG-N and FSFG-K) remain fully disordered and highly dynamic in cellular milieu, with no secondary structure formation. NMR chemical shift analysis shows near-zero secondary structure, while relaxation data (R2/R1, nOe) reveal rapid dynamics and transient, non-specific interactions with the cellular environment, particularly at phenylalanine residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C25 provide converging NMR evidence (chemical shifts, R2/R1 ratios, nOe measurements) demonstrating that FG Nups remain disordered and dynamic in cellular conditions. The data are internally consistent across multiple measurements and control experiments (C22) rule out viscosity/crowding effects, supporting the interpretation of specific weak interactions with the cellular milieu.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "87f02c9b-9ada-4145-90f1-9308039ed7fb",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cellular milieu prevents FG-N aggregation and hydrogel formation that occurs in buffer alone. While FG-N forms hydrogels in buffer (demonstrated by DLS and NMR), no aggregation is observed in cellular environments over 24+ hours. The authors propose that transient interactions with cellular components stabilize the disordered state by engaging hydrophobic phenylalanines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 provide direct experimental evidence contrasting FG-N behavior in buffer versus cellular milieu. The mechanistic interpretation (C26, C28) is reasonable given the data, though it remains somewhat inferential. The consistency with previous mutagenesis studies (C27) strengthens the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FG Nup-TF interactions are reversible and highly localized. NMR titration experiments show that only FG motifs and 2-4 adjacent residues interact with Kap95, while spacer regions remain disordered and mobile. The binding interface is small (2-4 amino acids), and no major structural changes occur upon TF binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C37 and C70 are directly supported by HSQC titration data showing selective attenuation of FG residues with periodic patterns. Reversibility is demonstrated experimentally (C30, Figure 2\u2014supplement 1). The localized binding interface is clearly observed in the attenuation patterns, providing strong evidence for the transient, small-interface interaction model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "d84e1a98-9354-4470-a128-a77d9bb5d20c",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The affinity of Kap95 for FSFG-K is weak (Kd > 36 \u03bcM), with a small buried surface area (<1000 \u0172), consistent with rapid, reversible transport and other known transient protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is based on R2 titration experiments with appropriate analysis acknowledging this as a lower bound estimate. The buried surface area estimate (C71) is inferred from the small binding interface but is consistent with cited literature on transient interactions. The weak affinity is appropriate for the proposed rapid transport mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FG Nup behavior is independent of oligomerization state, packing density, and FG repeat composition. Tetrameric constructs up to 120 kDa (13 nm diameter) remain dynamic IDPs with no emergent properties or significant FG-FG interactions, maintaining the same interaction patterns with TFs across all constructs and conditions tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 demonstrate robustness across multiple constructs with varying sizes, compositions, and oligomerization states. NMR data show minimal chemical shift changes upon tetramerization (C43), and DLS confirms appropriate sizes (C45). The consistency of TF binding patterns across all constructs (C50) strongly supports the lack of emergent properties. However, C48 appropriately acknowledges that very weak interactions cannot be completely excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "e1946c03-e327-436a-8c9b-6e1040b04e25",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "FG Nups do not form hydrogels, molten globules, or collapsed states in cellular milieu, instead forming a highly dynamic phase consistent with rapid nuclear transport. The data are inconsistent with models invoking slow gel-like rearrangements or significant structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 provide a clear rejection of alternative models based on the NMR data showing rapid dynamics incompatible with hydrogel timescales (C54). The conclusion is strengthened by agreement with in vivo measurements (C56) and the absence of secondary structure formation (C57-C58). The reasoning is sound given the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "028e524a-cb0f-4bdb-a815-7e891efc6684",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The extraordinarily rapid dynamics of FG-TF interactions enable both selectivity and speed in nuclear transport. IDPs can engage more rapidly than ordered proteins, and the fast exchange of FG motifs with TF binding pockets allows TFs to rapidly diffuse through the NPC while maintaining selective interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C67-C75 present a mechanistic model well-supported by the NMR data showing fast exchange kinetics, small binding interfaces, and maintained disorder. The reasoning connecting rapid IDP dynamics to transport speed is logical and supported by cited literature on IDP binding kinetics (C68). The model coherently explains how selectivity and speed can coexist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "53d04321-c381-4c7d-965b-442cbdaef6c5",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Transport factors are distinguished from other macromolecules by the quantity rather than quality of FG interactions. TFs carry multiple binding pockets that enable frequent, multivalent interactions with FG repeats while leaving spacer regions mobile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C76, and C79 present a key mechanistic insight supported by the observed binding patterns and structural knowledge of TFs. The multivalent binding model is consistent with the NMR data showing localized FG interactions and mobile spacers. This provides a clear explanation for TF selectivity based on interaction frequency rather than individual binding strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "01774794-8000-46c4-bd25-0801ffb9e8fd",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NPC selectivity is maintained by both non-specific interactions (stabilizing FG disorder) and specific TF-FG interactions (enabling selective passage). Non-specific interactions are too weak for non-TF macromolecules to overcome the diffusion barrier, while the barrier remains intact even during TF passage because FG repeats remain mobile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 and C77-C80 present a comprehensive model integrating non-specific and specific interactions. The model is well-supported by the R2/R1 data showing cellular interactions (C77), the weak affinity measurements (C78), and the maintained disorder upon TF binding (C80). The reasoning is internally consistent and addresses how selectivity is maintained during transport.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "e585c89a-055b-4011-81fd-6710be9ba2a7",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FG repeats form entropic bristles that create a size-dependent barrier to macromolecule passage. Non-specific macromolecules lack sufficient interaction frequency to overcome this entropic barrier, while TFs can overcome it through their multiple, frequent interactions with FG motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 present the 'virtual gating' model now supported by atomic-scale data. The entropic bristle model is a reasonable inference from the observed IDP dynamics and polymer physics principles. While the model is somewhat inferential, it is well-grounded in the experimental data and provides a coherent explanation for size selectivity and TF-specific passage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "a32dc654-129c-4aa8-8b7b-525ae513847d",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FG Nup-TF interactions represent an unusual case of binding while remaining disordered, resembling 'random fuzzy complexes' where one partner remains dynamically disordered during interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 appropriately contextualize the observed behavior within the IDP literature. The characterization as unusual is justified by comparison to typical IDP behavior (C40), and the fuzzy complex framework (C41) provides a useful theoretical context for the observations. The classification is well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "5ba78592-3e00-435b-afac-dbc666f0dce4",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the role of NPCs, FG Nups, and TFs in nuclear transport, including transport timescales, NPC structure, and previous observations of FG-TF interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C11, C29, C42, C81-C82 provide established background knowledge supported by appropriate citations. These claims set the context for the study and are well-supported by the literature. They are not novel findings but necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "58756fbd-45fb-482b-bf86-f07a436dcf91",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Summary claims stating that FG repeats are highly dynamic IDPs stabilized by cellular environment, and that IDP mobility may be key to nuclear transport function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19, and C59 are high-level summary statements well-supported by the detailed experimental results grouped in other result categories. These represent the main conclusions of the work and are appropriately supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "93c4b591-81a4-423e-91df-0b674647ec8c",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors acknowledge they cannot completely exclude extremely weak, dynamic FG-FG interactions that might modulate long-distance distribution of FG repeats in the NPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C48 is an appropriate acknowledgment of experimental limitations. The authors correctly note that very weak interactions below their detection threshold cannot be ruled out. This represents good scientific practice in acknowledging uncertainty rather than overclaiming.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    },
+    {
+      "id": "21d0e303-9c76-4f1b-a211-0a21c8d2951c",
+      "content_id": "ad458bc4-6443-49e4-b6fe-6c4beedbb367",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The two FG Nup domains studied (FSFG-K and FG-N) represent extreme behaviors observed in vitro, with FSFG-K being highly soluble and FG-N being cohesive and hydrogel-forming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by citations to previous work and confirmed by the authors' observations. This establishes the rationale for studying these particular constructs as representative of the range of FG Nup behaviors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:09.074453Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "848d586f-aae5-4c47-ac6a-717d2f9bc2ce",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "f067588f-2acc-4d6b-80d9-f6e42fc13fd8",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "f7c4c928-8fca-4a4f-b787-57c5839df3c6",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "3ab3ad72-898f-40b0-b919-67a50ca6c77b",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "7c78f547-181e-4163-b1e3-05fd2c887d34",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "ce84e05a-7aaf-4069-895a-686e1c37c4ee",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "7da38771-730b-434e-af11-c8dedf6c8877",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "996e7f6b-8943-44b1-b063-046853dabc87",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "143ba282-1f02-4a37-8290-eacd8c51a3d8",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "879d3807-0a5d-48b6-b731-8949dcdaa37d",
+      "result_id": "6a11692d-febb-450e-868a-c8c651c6af7a"
+    },
+    {
+      "claim_id": "cac6ee06-1ef8-4468-9bc2-9d508b07a4a1",
+      "result_id": "87f02c9b-9ada-4145-90f1-9308039ed7fb"
+    },
+    {
+      "claim_id": "8eb99ab7-ae11-4c9f-834d-95e047a63724",
+      "result_id": "87f02c9b-9ada-4145-90f1-9308039ed7fb"
+    },
+    {
+      "claim_id": "fece2b91-597b-40df-8f09-64471b625161",
+      "result_id": "87f02c9b-9ada-4145-90f1-9308039ed7fb"
+    },
+    {
+      "claim_id": "25b29b8c-f6b6-413f-8bd9-3ea9679666de",
+      "result_id": "87f02c9b-9ada-4145-90f1-9308039ed7fb"
+    },
+    {
+      "claim_id": "1aba4493-6b80-471e-a226-6774c646e0dd",
+      "result_id": "87f02c9b-9ada-4145-90f1-9308039ed7fb"
+    },
+    {
+      "claim_id": "dd43ffdf-a0a1-4ba1-b25b-5013cd0df133",
+      "result_id": "87f02c9b-9ada-4145-90f1-9308039ed7fb"
+    },
+    {
+      "claim_id": "5a67874f-d6c7-4a5f-9c5f-99bbd72f69e6",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "205c13d6-9e9e-4b63-8480-6d78b28d9ef2",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "60141942-b663-4bee-893f-19b59ac8c796",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "58c306cd-c393-47d1-8509-aff47ca263b6",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "14609c4c-fce7-478d-a55d-af6ea17cfccb",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "8f0582a0-144d-4a8d-94dd-e8e4558807a8",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "59260747-4ce4-474a-b04a-a1058f5cdd91",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "d28755ce-7faf-4c64-b1f1-05d8b3e52b98",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "72984383-eb5b-475d-bdfa-d835179d1c0c",
+      "result_id": "bd79f01a-edf3-41a3-9fec-fa4ecff53d31"
+    },
+    {
+      "claim_id": "3dee7544-e4f7-446d-b014-a2b918f25fd6",
+      "result_id": "d84e1a98-9354-4470-a128-a77d9bb5d20c"
+    },
+    {
+      "claim_id": "016e57f2-3b81-42e1-a093-18175794ee7d",
+      "result_id": "d84e1a98-9354-4470-a128-a77d9bb5d20c"
+    },
+    {
+      "claim_id": "9c7aabd2-99c8-432d-ba93-47a87c9c15ee",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "c2c26e5f-61bd-48fb-b618-982b52e3f9f3",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "b1f4a600-8efb-43b4-8fcd-1c61535aab3f",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "09ccae0a-3834-4c93-a1cc-97dc1019dad5",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "24a7f32c-e472-4a19-b114-88f937f38b51",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "815b1f5c-e643-4ea9-b6cc-a596f77cd9a6",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "eb8e1132-a655-4ab8-ae00-9409291fb6b2",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "b7d349fe-c441-400f-b16d-d7a74bb32211",
+      "result_id": "892c413c-c4fa-4ec9-b4eb-f66c1cdb3c23"
+    },
+    {
+      "claim_id": "67d0df32-683e-42b5-bde0-99ac9a38245a",
+      "result_id": "e1946c03-e327-436a-8c9b-6e1040b04e25"
+    },
+    {
+      "claim_id": "74bbed8c-0f25-44d0-8b20-34cded5a9fea",
+      "result_id": "e1946c03-e327-436a-8c9b-6e1040b04e25"
+    },
+    {
+      "claim_id": "5cebf228-3ba5-4223-b730-6bcca439d0d3",
+      "result_id": "e1946c03-e327-436a-8c9b-6e1040b04e25"
+    },
+    {
+      "claim_id": "b26a2422-4e3f-4186-86a1-252addc6a84e",
+      "result_id": "e1946c03-e327-436a-8c9b-6e1040b04e25"
+    },
+    {
+      "claim_id": "a4f22177-f0b7-4430-aaa0-ac4f62d86af1",
+      "result_id": "e1946c03-e327-436a-8c9b-6e1040b04e25"
+    },
+    {
+      "claim_id": "71d58b56-8c29-46f6-8765-e66a68c7a056",
+      "result_id": "e1946c03-e327-436a-8c9b-6e1040b04e25"
+    },
+    {
+      "claim_id": "7dc4e114-6296-4c28-9b06-d5917a31a2a0",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "0ead6a45-697d-451c-8d1d-a8761b958a5f",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "c0e0dded-d268-4944-8cff-26d5ea436aaa",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "bbdb9250-200e-41b3-bdc3-48edd0fbbdbf",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "8f3c2110-2549-4834-9ccf-ee38e0148a69",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "d7afb257-51c2-4997-a9a8-7a7082546eba",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "48486554-6dbb-495f-bdc2-6432f7ab506b",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "e0cfb9f4-8e94-47ca-9e02-0e109e06eec9",
+      "result_id": "028e524a-cb0f-4bdb-a815-7e891efc6684"
+    },
+    {
+      "claim_id": "3e177d78-6ed6-4d26-bf24-17851406cedc",
+      "result_id": "53d04321-c381-4c7d-965b-442cbdaef6c5"
+    },
+    {
+      "claim_id": "db34a9b4-3cc4-4757-9510-58bb8881cc8c",
+      "result_id": "53d04321-c381-4c7d-965b-442cbdaef6c5"
+    },
+    {
+      "claim_id": "084d5fe8-82c7-4e5d-b0b3-fd97715df6fa",
+      "result_id": "53d04321-c381-4c7d-965b-442cbdaef6c5"
+    },
+    {
+      "claim_id": "8ff008a3-19f9-4f8d-b5a9-ebfd15fdc4c1",
+      "result_id": "01774794-8000-46c4-bd25-0801ffb9e8fd"
+    },
+    {
+      "claim_id": "711be5ec-6909-472a-9a8c-18a03487dc0c",
+      "result_id": "01774794-8000-46c4-bd25-0801ffb9e8fd"
+    },
+    {
+      "claim_id": "027d35b2-3672-4982-abc0-f2e03f2e2ef6",
+      "result_id": "01774794-8000-46c4-bd25-0801ffb9e8fd"
+    },
+    {
+      "claim_id": "309ba946-394b-4449-844e-1481047f1603",
+      "result_id": "01774794-8000-46c4-bd25-0801ffb9e8fd"
+    },
+    {
+      "claim_id": "883475c5-80ba-4825-b992-625e746c1989",
+      "result_id": "01774794-8000-46c4-bd25-0801ffb9e8fd"
+    },
+    {
+      "claim_id": "aaf7f507-1091-45af-8816-d7463e823c55",
+      "result_id": "01774794-8000-46c4-bd25-0801ffb9e8fd"
+    },
+    {
+      "claim_id": "3150f84a-c805-4118-a453-a9129cc009c0",
+      "result_id": "e585c89a-055b-4011-81fd-6710be9ba2a7"
+    },
+    {
+      "claim_id": "4bd2a6b8-85a4-44cc-8230-45db2f783b79",
+      "result_id": "e585c89a-055b-4011-81fd-6710be9ba2a7"
+    },
+    {
+      "claim_id": "7be18b2e-d5b0-4c3b-97b8-4c8d974e2a57",
+      "result_id": "e585c89a-055b-4011-81fd-6710be9ba2a7"
+    },
+    {
+      "claim_id": "25540ecf-5db6-4e55-b3f9-261bdf7623f6",
+      "result_id": "e585c89a-055b-4011-81fd-6710be9ba2a7"
+    },
+    {
+      "claim_id": "3c8f4fc3-184d-4f09-ba1a-1fc7c7181677",
+      "result_id": "a32dc654-129c-4aa8-8b7b-525ae513847d"
+    },
+    {
+      "claim_id": "8c9f07e5-a58b-462a-b8ba-99313ea0e64d",
+      "result_id": "a32dc654-129c-4aa8-8b7b-525ae513847d"
+    },
+    {
+      "claim_id": "9b0e240b-dbe9-4fce-92a3-18086130f9fa",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "99103cf0-792c-4be5-88bc-18048052360b",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "56f1e30c-a742-4eae-851d-011517923932",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "eed720d1-66d7-4858-859c-b4d53be85350",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "f174d521-f713-4afd-8751-91e02d2ff363",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "12728d7e-4ff7-44cd-9fdf-7087e5ecefab",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "68053309-d7ca-4901-8917-98a82d8e6841",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "b49fcb7f-1a55-45a8-9f4a-139f127246c8",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "4ce8d9ca-0165-46e2-ad49-0f62b3041010",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "cfc08392-8718-4fb3-9d03-589817219095",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "94ecff9d-2985-433c-8e79-43c471b22bd3",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "ddf22c00-7965-4c79-9265-6e9a142d2175",
+      "result_id": "5ba78592-3e00-435b-afac-dbc666f0dce4"
+    },
+    {
+      "claim_id": "04708a78-493c-4116-8265-3c9e67105c4d",
+      "result_id": "58756fbd-45fb-482b-bf86-f07a436dcf91"
+    },
+    {
+      "claim_id": "d87c51fe-1b5b-4493-abff-6dc5f3a76228",
+      "result_id": "58756fbd-45fb-482b-bf86-f07a436dcf91"
+    },
+    {
+      "claim_id": "2fb5ee90-da6f-4ad1-af4c-d605be813ef1",
+      "result_id": "58756fbd-45fb-482b-bf86-f07a436dcf91"
+    },
+    {
+      "claim_id": "83f8ac39-3868-4f64-85b3-b4fd8dff5493",
+      "result_id": "93c4b591-81a4-423e-91df-0b674647ec8c"
+    },
+    {
+      "claim_id": "16515d27-ec7e-4b77-ad27-fe8cb42724d6",
+      "result_id": "21d0e303-9c76-4f1b-a211-0a21c8d2951c"
+    }
+  ],
+  "comparisons": []
+}

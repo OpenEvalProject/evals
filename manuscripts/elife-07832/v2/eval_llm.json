@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The study addresses a gap in understanding where and how reward signals interact with the perceptual decision-making pathway. While effective perceptual decisions require combining sensory information with reward knowledge (C1), the specific stages and mechanisms of this interaction remain unknown (C2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and motivation for the study. C1 represents established knowledge in the field, while C2 identifies a clear gap that justifies the experimental approach. Both are well-supported by the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C25",
+      "C26"
+    ],
+    "result": "Microstimulation of V5/MT neurons was less effective in shifting perceptual choices toward the neurons' preferred direction when available reward was larger. This effect was significant both for normalized shifts (median 0.67 vs 0.88, p<0.001) and raw shifts (median 0.0064\u00b0 vs 0.0093\u00b0, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The core experimental finding is well-supported by statistical analyses across 28 significant sites in two animals (C25, C26). The data in Figures 5 and 6 provide clear visual and quantitative evidence. The use of both normalized and raw measures strengthens the conclusion, and the effect survives Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Bounded accumulation modeling revealed that reward affects both sensory representation (parameter k increased significantly in large reward trials, p<0.001 for both animals) and integration stages (parameter B decreased significantly, p<0.007 and p<0.001). This dual effect explains the interaction between reward and microstimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model fitting results in Table 1 provide strong statistical support for effects on both parameters k and B. The logic connecting these parameter changes to the observed microstimulation effects is sound, based on the model structure shown in Figure 4. However, the model is simplified and makes assumptions about how microstimulation signals are integrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Performance improved significantly in large reward trials compared to small reward trials, as indicated by steeper psychometric function slopes (p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is supported by statistical testing of pooled data across sites (Figure 3). The result is consistent with existing literature on reward effects on performance and provides important context for interpreting the microstimulation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "In a control experiment using visual perturbation (\u0394dx) that mimicked microstimulation effects, performance improved with large rewards (p<0.001), but there was no significant interaction between reward and the \u0394dx-induced shift (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control experiment (Figure 7) provides critical evidence against the alternative explanation that animals adopt a compensatory strategy on microstimulation trials. The \u0394dx trials were overtly cued by color change, yet animals did not adjust their responses differentially by reward condition, supporting the interpretation that the microstimulation-reward interaction reflects genuine sensory modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "According to the bounded accumulation model, increases in either parameter k (stimulus sensitivity) or B (distance to bounds) can improve performance, but they make different predictions about microstimulation effects. An increase in B should not affect microstimulation shift size, while an increase in k should decrease it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These theoretical predictions (Figure 4C-F) are logically derived from the model structure and provide the framework for interpreting the experimental results. The reasoning is sound given the model assumptions, though the model itself is simplified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Discrimination thresholds correlated with stimulus eccentricity, and raw microstimulation effects correlated with thresholds. Raw reward modulation correlated with eccentricity and overall microstimulation effect, but these correlations disappeared when normalized by threshold, indicating the reward effect is constant as a fraction of discrimination threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analyses in Figure 8 are appropriately conducted and interpreted. The disappearance of correlations after normalization (C32, C33) is an important control showing that the reward effect scales with task difficulty, supporting the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Performance fluctuations across sessions did not correlate with reward effect size, and the reward modulation of microstimulation remained significant in both good and bad performance epochs (p<0.001 for both).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-series analysis (Figure 8\u2014figure supplement 1) provides important controls against the alternative explanation that task engagement fluctuations drive the observed effects. The persistence of the reward effect across different performance states strengthens the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Electrical microstimulation of V5/MT biased choices toward the preferred direction in 28 of 48 sites (58%), replicating previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This replication of prior work (Krug et al., 2013) establishes that the microstimulation manipulation was effective. The statistical testing (\u03c7\u00b2 likelihood-ratio test, p<0.05) is appropriate, and the success rate is consistent with previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "When both choices are associated with larger rewards, distance to both decision bounds decreases (as found here and by Rorie et al., 2010). This would impair accuracy due to increased noise effects, but the reciprocal increase in stimulus sensitivity (parameter k) balances this, resulting in net performance improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation reconciles the seemingly contradictory effects on parameters B and k, explaining how performance improves despite decreased distance-to-bound. The logic is sound and consistent with theoretical understanding of the bounded accumulation model (citations to Bogacz et al., 2006, 2007).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction establishes the theoretical framework by reviewing prior work on reward signals in decision-making, the bounded accumulation model, the role of different cortical areas (V1, V5/MT, LIP), and the effects of microstimulation and BOLD signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work through appropriate citations. They establish the necessary background for understanding the current study's contribution. The characterization of previous findings appears accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Previous studies found reward effects only at the integration stage in perceptual decision-making tasks, but other task types showed reward modulation of sensory cortex activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize the state of the literature, distinguishing between findings in perceptual decision-making tasks (C39) versus other task types (C40). The citations appear appropriate, though the authors acknowledge limitations of BOLD-fMRI studies (C12).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The source of reward signals affecting sensory cortex may be prefrontal cortex, anterior cingulate cortex, amygdala, serotonergic neurons from dorsal raphe nucleus, or dopaminergic reward-predicting neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about potential neural sources, appropriately qualified with 'may' (C41, C42). While based on known functions of these regions, the current study does not test these possibilities. The speculation is reasonable but unsupported by the present data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Area V5/MT has a specific role in 3D depth processing and contains specialized connectivity for combining depth and motion signals. The SFM cylinder stimulus used portrays two transparent surfaces of moving dots that generate a percept of a rotating cylinder, with binocular disparities defining rotation direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the rationale for targeting V5/MT and the properties of the visual stimulus. They are well-supported by citations (C43, C44, C47) and established principles of binocular vision (C46). The stimulus description is clear and matches Video 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study used two adult male rhesus macaque monkeys, with V5/MT identified by established physiological criteria. Microstimulation consisted of 20 \u00b5A biphasic pulses at 200 Hz, applied on half the trials during the 2000 ms stimulus presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated and appropriately documented. The criteria for identifying V5/MT (C49) are well-established and properly cited. The microstimulation parameters (C51) are within standard ranges used in the field.",
+    "result_type": "MINOR"
+  }
+]

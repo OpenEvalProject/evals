@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A genome-wide siRNA screen was performed using 18,045 genes in duplicate with a novel dual-marker SEMG cell line that reports both ciliogenesis (Smo-EGFP) and cell cycle phase (mCherry-Geminin), measuring 31 parameters across 559,395 values. This represents the first genome-wide high-content screen for ciliogenesis with methodological improvements including cell cycle filtering to reduce false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C32 provide clear experimental design details with specific numbers. Claims C26-C29 describe the validated cell line system. Claims C74-C76 appropriately characterize the novelty and improvements. The screen design is well-documented with appropriate controls (C26, Figure 1C) and the dual-marker approach addresses a known confound (C24-C25, C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "A Random Forest classifier trained on 244 positive (SYSCILIA gold standard) and 1,802 negative (metabolome/housekeeping genes) examples, incorporating features from the siRNA screen, centriole biogenesis data, and GTEx expression profiles, identified 591 high-confidence ciliary genes (FDR<0.1) from 16,431 screened genes, including 14/25 known JS genes and 438 novel candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The machine learning approach is well-described (C33-C35, C77) with appropriate training/test set separation (C36-C37). Performance metrics show significant enrichment (C37: p<1.08\u00d710\u207b\u00b2\u2075, C44: p<6.50\u00d710\u207b\u2074\u00b2) and validation against independent data (Cildb). The authors acknowledge limitations including bias toward known factors (C79) and data loss from multi-source integration (C78). The 56% capture rate of known JS genes (C40-C42) is reasonable given the screen's focus on ciliogenesis rather than signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Functional enrichment analysis of the CILIOGENESIS dataset showed significant enrichment for ciliary-related terms (microtubule cytoskeleton, centrosome, ciliogenesis) in true positives, while false negatives were enriched for signaling pathways (Sonic hedgehog, photoreceptor maintenance), suggesting the screen is biased toward structural ciliogenesis genes rather than signaling functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C83-C84 report enrichment analysis results with appropriate statistical thresholds (FDR<0.05). The interpretation (C85) logically follows from the data and is consistent with the acknowledged limitation (C82) that the screen may be underpowered for signaling genes. This provides important context for interpreting the gene list.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C5"
+    ],
+    "result": "Intersection of the 591 CILIOGENESIS genes with exome data from 145 unsolved JS cases reduced 5,485 total variants to 179 variants (96.7% reduction), with KIAA0586 being the only gene with variants in more than two families, leading to identification of six families with KIAA0586 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The filtering strategy is clearly described (C47-C48) with specific numbers and achieves substantial variant reduction. The identification of KIAA0586 as the sole recurrently mutated gene (C49) provides strong prioritization rationale. The approach successfully addresses the stated problem (C46) of unsolved JS cases. However, the fact that only one gene was identified also highlights that most cases remain unexplained (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Six families from the initial 145-patient cohort carried biallelic KIAA0586 mutations: four with compound heterozygous mutations (all sharing the c.428del frameshift, M1) and two with homozygous mutations. All mutations were validated by Sanger sequencing or qPCR and segregated with disease in a recessive pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide detailed genetic findings with proper validation methods. The recurrent M1 mutation in all compound heterozygous cases (C52) is a strong finding. Segregation analysis (C53) supports pathogenicity. The conclusions about compound heterozygous (C54) and homozygous (C56) inheritance are well-supported by the data, though the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The M1 mutation (c.428del) has a carrier frequency of ~0.36% (1/300) in the general population based on ESP, ExAC, and 1000 Genomes data. In a Mediterranean JS cohort (n=163), M1 was found in 5.21% of alleles (17/326) versus 0.37% in ethnically matched controls (p<0.0001, OR=13.51), with second pathogenic variants identified in 8/15 (57%) of M1 carriers after comprehensive sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Population frequency data (C57-C60) is derived from multiple large databases with consistent results. The enrichment in JS patients (C61-C62) is highly significant with appropriate statistical testing and matched controls. The 57% success rate in finding second mutations (C63) is reasonable given technical limitations, though it leaves some cases incompletely explained. The high carrier frequency explains why this gene was previously missed (C92-C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Functional analysis of splice site mutations M2 and M3 by RT-PCR and Sanger sequencing of patient-derived mRNA showed that M2 causes exon 9 skipping and M3 activates a cryptic splice acceptor 16bp downstream, both resulting in frameshifted transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe direct experimental validation of predicted splice effects at the RNA level using appropriate methods (RT-PCR, Sanger sequencing) on patient samples. This provides strong evidence that these mutations are loss-of-function, supporting their pathogenicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Patients with KIAA0586 mutations presented with classical JS features including the molar tooth sign, hypotonia, ataxia, developmental delay, and intellectual disability, without the skeletal malformations or lethality observed in Talpid3-null animal models. Additional features in subsets included breathing abnormalities, seizures, macrocephaly, and ophthalmological defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Clinical descriptions (C67-C69) are based on direct evaluation by specialists and supported by imaging data (Figure 3). The phenotype is consistent across multiple families. The absence of lethality and skeletal defects distinguishes the human phenotype from animal models (C66, C91), which is appropriately noted and discussed (C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "KIAA0586 shows ubiquitous tissue expression by RT-PCR. Western blot analysis of patient fibroblasts showed undetectable KIAA0586 protein in affected individuals, reduced but detectable levels in heterozygous carriers, and reduced levels in RPE1 cells after siRNA knockdown, confirming antibody specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression analysis (C70) and protein quantification (C71-C72) are supported by appropriate methods and figures (Figure 4). The siRNA control (C73) validates antibody specificity. The absence of detectable protein in patients supports loss-of-function pathogenesis. However, the analysis is limited to two families and the antibody validation could be more extensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C80",
+      "C81"
+    ],
+    "result": "KIAA0586 mutations represent a relatively high-frequency cause of JS (~5% in Mediterranean cohort), but combining the CILIOGENESIS dataset with 145 exomes identified only this single recurrently mutated gene, suggesting few commonly mutated JS genes remain to be discovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The 5% frequency in the Mediterranean cohort (C61) supports C10, but this is a selected population and may not generalize. The speculation about few remaining common genes (C81) is based on limited evidence (C80) - failure to find more genes could reflect limitations of the approach rather than their absence. The screen's bias against signaling genes (C82, C85) and incomplete coverage (C78) suggest caution in this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C66",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "KIAA0586 is the human orthologue of Talpid3, which functions in early ciliogenesis including centriolar satellite dispersal and basal body docking. Talpid3 forms ring-like structures at centriole distal ends and is required for ciliary vesicle formation. Loss-of-function in mouse/chick causes absent cilia, vascular defects, and embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C66, C86-C91 are all supported by appropriate citations to prior literature. This provides important biological context for interpreting the human mutations. The contrast between animal lethality and human viability (C67, C99) is appropriately discussed as potentially reflecting partial function retention in human mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "KIAA0586 was likely missed in previous analyses due to: (1) nomenclature differences between human and mouse genes complicating automated curation, (2) predominantly compound heterozygous mutations precluding homozygosity mapping, and (3) the relatively high frequency of M1 (1/300) causing it to be deprioritized in variant filtering. The M1 carrier frequency is comparable to CEP290 c.2991+1655A>G (~1/500) but lower than TMEM216 in Ashkenazi Jews (~1/100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The explanations (C92-C94) are logical and consistent with the data. The compound heterozygous inheritance pattern (C93) is documented (C51-C52). The carrier frequency comparison (C95-C96) is supported by citations and provides useful context. These factors plausibly explain why KIAA0586 was not identified earlier despite being relatively common.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Screening 800 individuals with nephronophthisis and retinopathy identified four M1 carriers (close to the expected 0.36% population frequency) with no convincing second mutations, suggesting KIAA0586 mutations may be specific to JS rather than other ciliopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 describe a negative result in a different ciliopathy cohort. The M1 frequency matches population expectations, and absence of second mutations argues against KIAA0586 involvement in this phenotype. This is appropriate phenotype specificity analysis, though the sample size and depth of sequencing are not fully detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Human survival with KIAA0586 mutations, despite mouse/chick lethality with null alleles, may reflect partial function retention. Supporting this: M4 affects only transcripts T4-T5 (potentially sparing others), M4 homozygotes exist in population databases (frequency 0.002), and M7 affects only 3/6 transcripts though no protein was detected in patient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation (C99) is reasonable but not definitively proven. Evidence for M4 (C100-C101) shows it's found in homozygotes in the population, but their health status is unknown. The M7 data (C102-C103) is contradictory - it supposedly affects only some transcripts but no protein is detected, which doesn't support partial function. The hypothesis requires functional studies or complementation experiments to be conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C104"
+    ],
+    "result": "The study contributes the CILIOGENESIS dataset of 591 candidate genes for future ciliopathy gene discovery and demonstrates that cell-based screening can complement exome sequencing for human mutation identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CILIOGENESIS dataset (C11, C38-C39) is a concrete deliverable with 438 novel candidates (C43). The successful identification of KIAA0586 (C104) demonstrates proof-of-concept for the integrated approach, though the yield of one gene from 145 cases (C80) suggests limitations. The dataset's value will depend on future validation of additional candidates.",
+    "result_type": "MAJOR"
+  }
+]

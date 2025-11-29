@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Subjects demonstrate trial-by-trial adjustment of speed-accuracy trade-off (SAT) in multisensory decision-making. Increasing visual coherence led to faster, more accurate choices in both visual-only and combined conditions (C13, C14). However, at 70% coherence, combined condition choices were significantly less accurate than visual-only (p < 0.002), violating predictions of a constant SAT across interleaved conditions (C15, C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide converging evidence for trial-by-trial SAT adjustment. The key observation that combined-modality trials show lower accuracy than visual-only trials at the same coherence (C15), despite providing more total evidence, directly contradicts a fixed-bound diffusion model and supports flexible SAT adjustment. The statistical test is appropriate (Wilcoxon signed-rank) and significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Subjects achieve higher reward rates in multisensory conditions compared to unimodal conditions by combining evidence across modalities. Reward rate was significantly greater when both sensory modalities were presented than for either modality alone (W = 0, p < 0.002) across all subjects (C17, C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are well-supported by statistical analysis shown in Figure 1B. The Wilcoxon signed-rank test is appropriate for comparing paired conditions across subjects, and the result (W = 0, p < 0.002) indicates all subjects showed the predicted pattern. This confirms multisensory integration benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Human subjects achieve near-optimal reward rates in multisensory decision-making, with all but one subject exceeding 90% of the optimal reward rate. This performance is significantly better than random choice strategies, which cause a 25-30% drop in reward rate (W = 55, p < 0.002) (C2, C19, C20, C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C21 are supported by model-based analysis comparing subject performance to optimized diffusion model bounds. The comparison to random choice provides an important baseline. However, the 'optimal' reward rate depends on model assumptions (number of free parameters, treatment of biases), which are addressed in robustness analyses (C23-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Near-optimal reward rate performance is robust to different modeling assumptions. With accumulation costs of 0.1-0.2, median reward rates rise to 95.4% and 95.1% of optimum (C23). Using parametric bounds yields 94.5% (C24). Even removing choice biases maintains ~90% optimality (87.8-88.7%) (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 demonstrate robustness through sensitivity analyses varying key assumptions. The analyses appropriately test whether conclusions depend on specific modeling choices. Figure 2B shows consistent patterns across assumptions. This strengthens the main finding of near-optimal performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C46"
+    ],
+    "result": "Deviations from optimal SAT can be explained by incomplete gradient-based learning. Gradient-based learning predicts faster convergence along steeper gradients (C28, C29). Data show strong curvature and near-optimal bounds for vestibular/combined conditions, but low curvature and suboptimal bounds for visual conditions (C30, C31), matching predictions of prematurely terminated gradient ascent (C32). The quadratic approximation of reward rate loss is validated (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C33, C46 present a coherent explanation for observed deviations from optimality. The relationship between curvature and bound distance (Figure 3B) matches theoretical predictions of gradient-based learning. The validation of the quadratic approximation (Figure 3C) supports the analytical framework. However, this remains an inference about the learning mechanism rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Subjects set bounds below optimal levels, contradicting predictions from inter-trial interval uncertainty or bound fluctuation theories. Previous work predicts bounds should be set above optimal due to asymmetric reward rate loss (C34-C36), but data show subjects consistently set bounds below optimum (C37, C38), making faster and less accurate decisions than predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by Figure 4B showing all subjects below optimal bound levels. This contradicts prior findings from single-modality tasks (C37 cites Simen et al., 2009; Bogacz et al., 2010). The observation is robust but the explanation remains unclear\u2014the authors rule out existing theories but don't provide a definitive alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Speed-accuracy trade-off remained stable after feedback removal, suggesting incomplete learning during initial training is reflected equally across all analyzed trials (C26, C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by observation of behavioral stability. This is important for interpreting the incomplete learning hypothesis, as it suggests the analyzed trials reflect a stable learned strategy rather than ongoing learning dynamics. However, quantitative evidence for stability is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Near-optimal reward rates can be achieved with remarkably different joint tunings of reaction times and choice accuracy, as evidenced by discrepancies between observed behavior and reward rate-maximizing predictions across subjects (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by the observation that subjects achieve ~90-95% optimal reward rates despite different speed-accuracy combinations than the model predicts (illustrated in Figure 1A for subject B2). This reflects the relatively flat reward rate surface near the optimum, allowing multiple strategies to achieve similar performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The neural mechanisms underlying rapid trial-by-trial SAT changes likely involve neural population codes or urgency signals rather than slow synaptic changes. Possible mechanisms include bounded neural activity in lateral intraparietal cortex (C40), modality-dependent urgency signals (C42, C43), or orchestrated changes in multiple neural mechanisms (C44, C45). Slow connectivity changes are unlikely given the rapid trial-by-trial adjustments (C3, C4, C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3-C4, C40-C45 are largely speculative about neural mechanisms. While the behavioral evidence for rapid trial-by-trial changes (C3) is solid, the proposed neural mechanisms (C4, C42-C43, C45) are inferences based on prior literature from different experimental contexts. The authors appropriately acknowledge these as possibilities rather than demonstrated mechanisms. Direct neural evidence in this multisensory context is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Seven subjects (aged 23-38 years) performed a reaction-time heading discrimination task with three coherence levels; three subjects completed a follow-up with six coherence levels. The inter-trial interval averaged 6 seconds (C47-C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe basic experimental methods. These are factual descriptions of the study design and are appropriately documented. The inter-trial interval (C49) is important for reward rate calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The modified diffusion model used separate bounds per modality and coherence (7 or 13 parameters) to maximize flexibility for reward rate optimization (C50, C51). Alternative parametric bounds yielded qualitatively comparable results (C52). Model fitting used posterior sampling and gradient ascent (C53), with 50 random restarts for reward rate maximization to avoid local maxima (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe the modeling approach. The methods are clearly documented and appropriate. The use of multiple random restarts (C54) is good practice for optimization. The comparison of model variants (C52) supports robustness of conclusions. These are standard computational methods appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work establishes that subjects optimize speed-accuracy trade-offs in unimodal tasks (C1, C11), animals accumulate evidence near-optimally (C6), diffusion models effectively describe SAT (C7-C9), instructed SAT changes are captured by bound changes (C10), and humans can optimally accumulate evidence across modalities (C12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12 summarize established prior work with appropriate citations. These provide the theoretical and empirical foundation for the current study. The claims accurately represent the cited literature and establish the context for extending SAT optimization analysis to multisensory decision-making.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Previous work suggests human decision makers incur an accumulation cost of 0.1-0.2 reward units per second, possibly related to mental effort (Drugowitsch et al., 2012) (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 appropriately cites prior work on accumulation costs. This parameter is used in sensitivity analyses (C23) to test robustness of the main findings. The citation is accurate and the parameter range is used appropriately in the current analysis.",
+    "result_type": "MINOR"
+  }
+]

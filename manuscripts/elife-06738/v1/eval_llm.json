@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript establishes the anatomical and functional context of the entorhinal cortex (EC) based on prior literature. The EC serves as an interface between hippocampus and neocortex, with rodent subdivisions (MEC/LEC) showing distinct connectivity and functional properties. However, the mapping of these rodent subregions to human EC remains controversial, with conflicting evidence for mediolateral versus anteroposterior organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to established literature (C1-C24, C57-C62). The authors accurately summarize prior work on EC anatomy, connectivity, and function across species. The identification of controversy regarding human homologues (C18, C61) appropriately motivates the current study. All claims are appropriately attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Model-based connectivity analysis reveals that the EC shows differential connectivity with anterior-temporal (AT) and posterior-medial (PM) networks along both mediolateral and anteroposterior axes. Lateral EC connects more strongly to AT network (p=0.015), while anterior EC also shows preferential AT connectivity (p=0.01). Posterior and medial EC do not show differential connectivity between networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses are appropriate (repeated-measures ANOVA with post-hoc t-tests) with adequate sample size (n=22) and significant p-values (C25-C30). The finding of anteroposterior organization contradicts some prior studies (C18) but is consistent with primate anatomy (C16, C24). The null results for posterior and medial EC (C27, C30) are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Data-driven connectivity analysis using Laplacian Eigenmaps reveals two dominant modes of functional connectivity change in EC. The primary mode extends along the anteroposterior axis from posterior to anterior EC, while the secondary mode is approximately perpendicular. These patterns are reproducible across task-based and resting-state data (R=0.99 and R=0.98, p<0.001), suggesting task-independent organization. The posterior cluster is located more medially/dorsally while the anterior cluster is more lateral/ventral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data-driven approach (ConGrads/Laplacian Eigenmaps) provides unbiased evidence for EC organization (C31-C32, C37-C38). Validation in independent HCP resting-state data (n=60) with high reproducibility (C33, C35-C36) strongly supports the findings. The claim of task-independence (C34) is reasonably inferred from cross-dataset replication, though direct within-subject task vs. rest comparison would be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Whole-brain connectivity analysis shows that the anterior-lateral EC (alEC) cluster connects preferentially to medial-prefrontal and orbitofrontal cortex (AT system regions), while the posterior-medial EC (pmEC) cluster connects to occipital and posterior-parietal cortex (PM system regions). The pmEC also shows increased frontal connectivity. These patterns match known rodent LEC/MEC connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The whole-volume connectivity maps (C39-C41) provide convergent evidence with the model-based analysis. The correspondence with rodent connectivity patterns (C42) is appropriately cited (Kerr et al., 2007) and supports the translational interpretation. However, the claim relies on group-level contrasts without reported statistical thresholds or correction methods in the text, though figures suggest FWE correction was applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Signal-to-noise ratio (SNR) analysis reveals no difference in temporal SNR between alEC and pmEC (p=0.83), but spatial SNR differs significantly (p<0.001) due to higher mean signal in pmEC. Spatial standard deviation does not differ (p=0.144). Mean signal subtraction during preprocessing makes it unlikely that signal intensity differences affected connectivity results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SNR analysis (C43-C46) appropriately addresses potential confounds from signal quality differences. The statistical tests are valid and the reasoning about preprocessing (C47) is sound. However, the large t-value for mean signal difference (T(21)=38) suggests a substantial difference that could potentially affect results despite mean subtraction, warranting the additional motion scrubbing analysis performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Motion scrubbing analysis, excluding time periods with head movements >0.5mm, had minimal effects on results. Pre- and post-scrubbing results showed correlations near 1.0 (gradient one: R>0.996; gradient two: R>0.88; all p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motion scrubbing control analysis (C48-C49) appropriately addresses concerns about head motion artifacts. The high correlations demonstrate robustness of findings. However, the lower correlation for gradient two (R=0.88-0.93) compared to gradient one (R>0.99) suggests the secondary mode may be somewhat more susceptible to motion artifacts, though still highly reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Homologous connectivity between corresponding EC regions across hemispheres exceeded non-homologous connectivity, even when comparing adjacent non-homologous regions within the same hemisphere (T(21)=4.05, p=0.0006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This analysis (C50) provides important validation that the identified clusters represent functionally distinct subregions rather than arbitrary divisions. The within-hemisphere comparison is particularly strong evidence, as it controls for interhemispheric distance effects. The statistical test is appropriate and significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Independent functional validation using spatial vs. non-spatial stimuli shows that posterior EC responds more to scenes than objects, while anterior EC shows the opposite pattern. ROI analysis confirms the anterior-lateral cluster is more sensitive to objects than the posterior-medial cluster (T(20)=4.9, p=0.0001). This dissociation is specific to the first dominant mode clusters, not the second mode (T(20)=-0.26, p=0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional validation in an independent dataset (n=21) with different task (C51-C54) provides strong convergent evidence. The significant dissociation (p=0.0001) between alEC and pmEC for object vs. scene processing aligns with rodent LEC/MEC functional properties. The null result for second-mode clusters (C54) appropriately demonstrates specificity. Statistical tests are valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C63"
+    ],
+    "result": "Integration of model-based connectivity, data-driven connectivity, and functional sensitivity analyses across three independent datasets provides converging evidence that the human homologue of rodent MEC maps predominantly to posterior EC, while rodent LEC maps to anterior EC, with an anterior-lateral to posterior-medial organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This main conclusion (C55-C56, C63) is well-supported by convergent evidence from multiple complementary methods and three independent datasets. The combination of connectivity patterns matching known rodent anatomy (C39-C42) and functional dissociations matching rodent physiology (C51-C53) provides strong support. However, the claims are appropriately qualified as 'predominantly' and 'suggest' rather than definitive, acknowledging limitations of cross-species inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Independent confirmation by Maass et al. (2015) using high-resolution fMRI found preferential connectivity of PRC and proximal subiculum to anterior-lateral EC, while posterior-medial EC connected more to PHC and distal subiculum, consistent with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citation to Maass et al. (2015) provides important independent replication (C64-C66). However, this appears to be a concurrent study rather than prior work, and the temporal relationship is unclear. The convergent findings strengthen confidence in the results, though the claim of 'confirmation' may overstate the relationship if studies were conducted simultaneously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The second dominant mode of connectivity change, oriented approximately perpendicular to the first, might reflect bands of intra-entorhinal projections known to cross the LEC/MEC boundary in rodents and primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of a second perpendicular mode is well-documented (C67), but the interpretation as intra-entorhinal projection bands (C68) is speculative. The authors appropriately use 'might reflect' to indicate uncertainty. The anatomical citations (Canto et al., 2008; Chrobak and Amaral, 2007) support the existence of such projections, but functional connectivity does not directly measure anatomical projections, and alternative explanations are not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The findings confirm three of four traditional criteria for cortical area definition (Van Essen, 1985): topographic organization, connectivity, and functional properties, lacking only cyto- and myeloarchitectonic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C69) appropriately contextualizes the findings within established frameworks for defining cortical areas. The three criteria are indeed demonstrated: topographic organization (C31-C38), connectivity (C25-C42), and functional properties (C51-C54). The acknowledgment that cytoarchitectonic data is lacking is appropriate and honest about study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Previous neuroimaging studies reporting mediolateral differences in human EC can be explained by partial overlap with the anteroposterior organization identified here. Posterior coronal slices contain exclusively MEC homologue, while anterior slices contain mostly LEC homologue. Improved mapping should lead to increased effect sizes and more accurate interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reinterpretation of prior studies (C70-C71) is reasonable given the current findings and appropriately cites the relevant work (Schultz et al., 2012; Khan et al., 2014; Reagh and Yassa, 2014). The claims about slice composition (C72-C73) are logical inferences from the spatial distributions shown. The prediction about improved mapping (C74) is speculative but reasonable. However, direct reanalysis of prior data would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study employed rigorous methodology including high-field 7T fMRI with sub-millimeter resolution, three independent datasets (navigation task n=22, resting-state n=60, spatial/non-spatial stimulation n=21), advanced preprocessing including ICA-based denoising, manual EC segmentation based on anatomical landmarks, and both model-based and data-driven connectivity analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C75-C91) are clearly documented and appropriate. The use of 7T fMRI with high resolution (0.9mm) is well-suited for studying small structures like EC. The sample sizes are adequate for fMRI studies. The preprocessing pipeline including FIX denoising is state-of-art. The manual segmentation based on established anatomical landmarks (Insausti et al., 1998; Frank\u00f3 et al., 2014) is appropriate. The ConGrads method is properly cited (Haak et al., 2014). However, some details are missing (e.g., exact FWE correction thresholds for whole-brain analyses).",
+    "result_type": "MINOR"
+  }
+]

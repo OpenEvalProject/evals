@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C45"
+    ],
+    "result": "The authors obtained a 4.2 \u00c5 resolution cryoEM reconstruction of MAVS CARD filaments that converged to C1 helical symmetry (\u0394\u03a6 = \u2212101.21\u00b0, \u0394z = 5.06 \u00c5), in agreement with Wu et al. (2014) and correcting their previous C3 symmetry assignment. The map shows clear structural features including grooves in \u03b1-helices and bulky side chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 and C45 provide converging evidence for the C1 symmetry determination through multiple independent validation methods: gold-standard FSC (C14), model-based FSC (C15), convergence from different starting parameters (C12-C13), and visible structural features (C16). The resolution estimates from two independent methods agree (4.18 \u00c5 vs 4.25 \u00c5), supporting the quality of the reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The crystal structure of MAVS CARD monomer fits well into the cryoEM map with the six \u03b1-helices docking appropriately, though some side chains and loop regions required adjustment. The Wu et al. (2014) atomic model (PDB: 3J6J) fits the density well except for extra densities at termini likely corresponding to the Flag tag and C-terminal residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe consistent model fitting results with reasonable explanations for discrepancies (Flag tag and extra residues). The good fit of the Wu et al. model (C19) provides independent validation of the C1 symmetry determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C69"
+    ],
+    "result": "Interface I between MAVS CARD monomers is primarily mediated by electrostatic interactions, with positively charged residues (R37, R41, R64, R65) from one monomer interacting with negatively charged residues (D23, E26) from another. Mutagenesis data from prior work shows that alanine substitutions or charge reversals at these positions significantly decrease or abolish MAVS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C69 are mutually consistent, with structural observations (C22-C23) supported by functional mutagenesis data from the prior study (C24-C25). The charge distribution pattern observed in the structure (C22-C23) provides a mechanistic explanation for the mutagenesis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Interface II involves aromatic residues (F16, W56, Y30) and a possible cation-pi interaction between R43 and W56. The cryoEM map resolves density for one W56 conformer and adjacent R43. Mutagenesis data shows that alanine substitutions of these aromatic residues or R43 abolish activity, while ring-containing substitutions retain function, and R52 also contributes to interface stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 provide consistent structural and functional evidence for Interface II. The observation of W56 and R43 density (C27-C28) supports the proposed cation-pi interaction, and the mutagenesis pattern (C30-C31) showing that ring structure is important but specific identity is not, validates the structural interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Interface III mediates interactions along the helical trajectory through a hydrophobic core formed by L48, G50, and A44, with charged residues (R37, R41, D40, D53) at the outer rim. Mutagenesis shows that charged substitutions at L48 (but not alanine) abolish activity, though L48 is not conserved across species. Alanine substitutions of the outer rim charged residues also abolish activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 describe Interface III with structural observations (C35, C40) validated by mutagenesis data (C36, C39, C41). The observation that L48 varies across species (C37) with the speculation about rearrangement (C38) adds nuance but doesn't undermine the core finding about the hydrophobic interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "The loss-of-function mutagenesis data are consistent with both the C1 and C3 models, as key residues are nearly identical between models though detailed interactions differ. Mutagenesis alone cannot distinguish between the two models. Sample heterogeneity and limited image resolution likely contributed to the original incorrect C3 assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C46 provide an honest assessment of the limitations of mutagenesis data for distinguishing structural models and acknowledge the factors that led to the original error. This is internally consistent and represents appropriate scientific self-correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior work reported conflicting symmetries for MAVS CARD filaments: Xu et al. (2014) reported C3 symmetry (\u221253.6\u00b0, 16.8 \u00c5) while Wu et al. (2014) reported C1 symmetry (\u2212101.1\u00b0, 5.1 \u00c5). Analysis by Egelman (2014) suggested helical ambiguity was not fully resolved in the Xu et al. study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 accurately cite prior work and provide the context for this correction. These are factual statements about published literature that establish the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors affirm that other data from their original paper remain valid, including in vitro oligomerization mapping, cell-based mutagenesis, super-resolution imaging, and crystal structures. These experiments identified key residues in MAVS polymerization and mapped molecular surfaces for filament formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C49 are assertions about the validity of prior work without presenting new data in this manuscript. While the mutagenesis data cited throughout are consistent with the new structure, the authors cannot fully validate all prior experiments without re-examination. This represents their professional judgment rather than demonstrated evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors used Flag-MAVS CARD (1-100) expressed in HEK293T cells, collected cryoEM data on a Titan Krios with Falcon II detector, processed 27,916 initial filaments down to 15,600 after classification, and used gold-standard FSC with independent half-datasets. Multiple starting models converged to similar C1 symmetry parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C68 describe comprehensive methodological details that are internally consistent and follow appropriate cryoEM practices including gold-standard FSC validation (C65-C66), testing multiple starting models (C67-C68), and proper data processing workflows. The convergence of different starting models to the same symmetry (C68) provides additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "MAVS protein forms prion-like aggregates through its N-terminal CARD domain and activates antiviral signaling. Purified MAVS CARD self-assembles into filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent established background knowledge from prior literature. These are well-accepted facts in the field that provide context for the study.",
+    "result_type": "MINOR"
+  }
+]

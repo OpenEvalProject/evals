@@ -1,0 +1,1918 @@
+{
+  "submission": {
+    "id": "da72bceb-a316-404c-b8e9-301abec0e828",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:28:59.137101Z",
+    "updated_at": "2025-11-29T04:28:59.137101Z"
+  },
+  "content": [
+    {
+      "id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "submission_id": "da72bceb-a316-404c-b8e9-301abec0e828",
+      "content_type": "manuscript",
+      "content_text": "# Genome-wide DNA hypomethylation and RNA:DNA hybrid accumulation in Aicardi\u2013Gouti\u00e8res syndrome\n\n## Authors\n\n- Yoong Wearn Lim<sup>1</sup>\n- Lionel A Sanz<sup>1</sup>\n- Xiaoqin Xu<sup>1</sup>\n- Stella R Hartono<sup>1</sup>\n- Fr\u00e9d\u00e9ric Ch\u00e9din<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology University of California, Davis Davis United States\n2. Genome Center University of California, Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAicardi\u2013Gouti\u00e8res syndrome (AGS) is a severe childhood inflammatory disorder that shows clinical and genetic overlap with systemic lupus erythematosus (SLE). AGS is thought to arise from the accumulation of incompletely metabolized endogenous nucleic acid species owing to mutations in nucleic acid-degrading enzymes TREX1 (AGS1), RNase H2 (AGS2, 3 and 4), and SAMHD1 (AGS5). However, the identity and source of such immunogenic nucleic acid species remain undefined. Using genome-wide approaches, we show that fibroblasts from AGS patients with AGS1-5 mutations are burdened by excessive loads of RNA:DNA hybrids. Using MethylC-seq, we show that AGS fibroblasts display pronounced and global loss of DNA methylation and demonstrate that AGS-specific RNA:DNA hybrids often occur within DNA hypomethylated regions. Altogether, our data suggest that RNA:DNA hybrids may represent a common immunogenic form of nucleic acids in AGS and provide the first evidence of epigenetic perturbations in AGS, furthering the links between AGS and SLE.\n\n## Introduction\n\nAicardi\u2013Gouti\u00e8res syndrome (AGS) is a severe inflammatory encephalopathy characterized by neurological dysfunction, psychomotor retardation, seizures, unexplained fevers, joint stiffness, basal ganglia calcification, and chilblain skin lesions (Rice et al., 2007b). Despite its rarity, AGS has captured the attention of the scientific community due to its clinical, molecular, and genetic overlap with another, common, systemic autoimmune disorder, systemic lupus erythematosus (SLE) (Rice et al., 2007a, 2007b; Ravenscroft et al., 2011) (Gunther et al., 2015). Both diseases are characterized, and to a large extent driven, by excessive expression of interferon alpha, a potent anti-viral cytokine associated with heightened innate immune response and inflammation (Crow, 2011). AGS is a monogenic disorder caused by mutations in any one of the six AGS genes. The AGS genes encode for the 3\u2032 to 5\u2032 single-stranded DNA exonuclease TREX1 (AGS1) (Crow et al., 2006a), the RNA:DNA hybrid-specific ribonuclease H2 subunits (RNase H2A, B and C, corresponding to AGS4, 2 and 3, respectively) (Crow et al., 2006b), the 3\u2032 to 5\u2032 exonuclease and dNTP hydrolase SAMHD1 (AGS5) (Rice et al., 2009; Goldstone et al., 2011), and the RNA adenosine deaminase ADAR1 (AGS6) (Rice et al., 2012). Recently, gain-of-function mutations in the cytosolic double-stranded RNA receptor gene IFIH1 have also been shown to be associated with AGS (Rice et al., 2014). Interestingly, mutations in TREX1 and the RNASEH2 genes have also been implicated in SLE, further illustrating the genetic link between AGS and SLE (Lee-Kirsch et al., 2007; Gunther et al., 2015). Given the role of AGS enzymes in DNA and RNA metabolism, the innate immune response in AGS is thought to be triggered by the accumulation of incompletely metabolized endogenous nucleic acid elements (Crow and Rehwinkel, 2009). However, the identity and source of such immunogenic nucleic acid elements remain undefined.\n\nWhile genetically well defined, the potential contribution of epigenetic deregulation to AGS has not been addressed. Characterizing putative epigenetic deregulation in AGS is all the more justified given that DNA hypomethylation, either spontaneous or caused by drug exposure, triggers increased B cell autoreactivity and the development of drug-induced and idiopathic human lupus (Richardson, 1986; Quddus et al., 1993; Yung et al., 1995; Jeffries et al., 2011; Absher et al., 2013; Zhang et al., 2013). Furthermore, loss of DNA methylation, albeit modest and restricted to specific autoimmunity-related genes, was reported in SLE patients (Richardson et al., 1990; Ballestar et al., 2006; Javierre et al., 2010; Jeffries et al., 2011; Absher et al., 2013), raising the question of whether the same epigenetic deregulation is shared in AGS.\n\nTo uncover the mechanism driving inflammatory responses in AGS, we sought to identify transcriptional, genetic, and epigenetic perturbations shared among AGS subtypes. For this, we extensively profiled a series of primary fibroblast cells from AGS patients with mutations in AGS1, AGS2, and AGS4 and AGS5 using high-throughput sequencing technologies. Transcriptional profiling via RNA-seq showed that AGS fibroblasts are characterized by an activated antiviral, immune response with a characteristic interferon signature. Genome-wide profiling of RNA:DNA hybrid formation revealed that AGS cells accumulate excessive loads of RNA:DNA hybrids. Whole-genome DNA methylation profiling further indicated that AGS genomes experience global loss of DNA methylation. Our data therefore provide the first evidence that TREX1, RNASEH2, and SAMHD1 mutations share common molecular abnormalities including genome-wide DNA hypomethylation and accumulation of RNA:DNA hybrid species.\n\n## Results\n\n### Primary AGS fibroblasts show heightened immunomodulatory transcriptional responses\n\nWe first performed RNA-seq to ascertain transcriptional signatures of AGS using primary fibroblasts from four patients with mutations in AGS1, AGS2, AGS4, or AGS5, and an age-matched healthy control (see Supplementary file for detailed genotype information). We identified a total of 98 and 209 genes that were significantly up- and down-regulated, respectively, in at least one AGS sample (Figure 1A; Figure 1\u2014figure supplement 1A; Supplementary file 2). AGS down-regulated genes significantly associated with ontologies linked to cell adhesion and the extracellular matrix (Supplementary file 2). These ontologies may be relevant to the skin lesions often observed in AGS and SLE patients (Rice et al., 2007b). Genes involved in inflammation, immune responses, chemokine signaling pathways, and sensing of viral nucleic acids were up-regulated in AGS patient cells. Genes for the major pro-inflammatory cytokine IL1\u03b2 (Zhao et al., 2013b) and the CXCL5 and CXCL6 chemokines were up-regulated in several AGS patients (Figure 1A,B). Additional immune signaling genes (IL-33, CXCL3, CXCL1, IL-8, CCL11) were significantly up-regulated in at least one AGS sample (Supplementary file 2) and gene ontology analysis of AGS deregulated genes identified cytokine and chemokine signaling pathways as one of weakly enriched terms (Figure 1\u2014figure supplement 1B). These observations are indicative of a heightened immunomodulatory and chemotactic response previously identified in multiple autoimmune conditions, including SLE (Tuller et al., 2013). Genes involved in anti-viral responses (RSAD2, OASL, IGF2BP1, BST2), in particular interferon-inducible genes, were also up-regulated in multiple AGS samples (Figure 1A,B). Additional interferon-inducible genes (IFI6, IF44L, ISG15) described previously as representing an interferon signature in SLE (Baechler et al., 2003) and AGS (Rice et al., 2013) showed up-regulation in at least one AGS sample (Supplementary file 2). AGS fibroblasts thus exhibit an activated immune, inflammatory, and anti-viral state, underscoring the systemic nature of the disease and indicating that fibroblasts are an appropriate cell type to study AGS.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig1-v2.jpg)\n\n**Figure 1.:** (A) RNA-seq heatmap showing log2 expression level of genes up-regulated in at least two Aicardi\u2013Gouti\u00e8res syndrome (AGS) samples. Two biological replicates are shown for each sample. Immune-related genes are marked with green dots. (B) Gene expression changes between AGS samples and control were measured for five immune-related genes by real time reverse-transcription PCR (RT-qPCR). Y-axis represents fold change in gene expression, normalized to GAPDH gene, relative to the control sample. SDHA is another housekeeping gene used as control. Each value is the average of at least two technical replicates. Error bars represent SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Heatmap showing log2 expression level of genes down-regulated in at least two AGS samples. (B) Pathways analysis of differentially regulated genes.\n\n### Accumulation of ribonucleotides in genomic DNA is unique to RNASEH2-deficient AGS patients\n\nWhile it is likely that dysfunction in AGS enzymes results in an accumulation of incompletely metabolized immunogenic nucleic acid species (Crow and Rehwinkel, 2009), the identity and source of these molecules remain unclear. RNase H2 generally degrades RNA:DNA hybrids (Cerritelli and Crouch, 2009) and is specifically responsible for removing single ribonucleotides that are misincorporated during DNA replication (Reijns et al., 2012). We therefore determined whether ribonucleotide accumulation is a common feature of AGS. For this, we treated genomic DNA from AGS and control primary fibroblasts with purified human RNase H2 and measured the presence of resulting nicks by DNA polymerase I-dependent nick translation in the presence of [\u03b1-32P] dCTP. Genomic DNA from wild-type and RNase H2A-deficient (rnh201\u0394) yeast cells that readily incorporate ribonucleotides (Nick McElhinny et al., 2010) was used as a control. Relative to wild-type, rnh201\u0394 yeast cells showed a fourfold to fivefold increase in ribonucleotide accumulation (Figure 2A,B), consistent with prior results (Nick McElhinny et al., 2010). Cells from two patients mutated in RNASEH2B (AGS2) showed a twofold to threefold increase in labeling (Figure 2A,C). Cells from two patients mutated in the catalytic RNase H2A subunit (AGS4) showed a pronounced 10\u201325-fold increase in ribonucleotides (Figure 2A,C). Thus, as observed in yeast (Nick McElhinny et al., 2010) and mouse (Reijns et al., 2012) models, a reduction of human RNase H2 activity leads to elevated levels of ribonucleotides in genomic DNA. By contrast, no significant increase in ribonucleotide loads could be detected in patients mutated in TREX1 (AGS1) or SAMHD1 (AGS5) (Figure 2A,B). Thus, while aberrant accumulation of ribonucleotides may contribute to the severity of the disease in RNase H2-defective AGS patients, it is unlikely to represent a common form of disease-causing nucleic acids in AGS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig2-v2.jpg)\n\n**Figure 2.:** (A) Genomic DNA was treated with RNase H2 to reveal the presence of ribonucleotides as single-strand nicks. An untreated control was used to reveal background single-stranded breaks in genomic DNA preparations. The intensity of labeling after gel electrophoresis was measured. (B, C) Relative ribonucleotide loads are reported as fold-increase of radiolabel incorporation of RNase H2-treated over untreated sample. At least three independent replicates were performed and the error bars indicate SEM.\n\n### RNA:DNA hybrids accumulate in AGS patients\n\nTo identify other species of RNA:DNA hybrids that may be accumulating in AGS, we performed DRIP-seq, a technique originally developed to profile R-loop formation genome-wide (Ginno et al., 2012). R-loops are long RNA:DNA hybrid structures that form co-transcriptionally upon re-annealing of the RNA transcript to the template DNA strand, forcing the non-template strand into a single-stranded state. R-loops are enriched at the 5\u2032- and 3\u2032-ends of human genes where they play roles in epigenetic control and transcription regulation (Ginno et al., 2012, 2013). DRIP-seq revealed that AGS and control fibroblasts share a total of 15,897 DRIP peaks representing approximately 141 megabases of genomic space (Figure 3A,C, Figure 3\u2014figure supplement 1A,B). Consistent with prior studies, 32% of these peaks mapped to promoters or gene ends, which represents a strong enrichment over expected genomic distribution and further indicates that gene ends correspond to R-loop formation hotspots (Ginno et al., 2013). Our high-coverage DRIP-seq data also revealed that 56% of the R-loop signal mapped onto gene bodies, suggesting that RNA\u2013DNA entanglements during transcription are prevalent (Figure 3\u2014figure supplement 1C). By contrast, only 15.6% of common R-loop peaks mapped to intergenic regions, consistent with a predominant genic origin for R-loop formation (Figure 3\u2014figure supplement 1C). Overall, common DRIP peaks showed strong overlap with GC skew (Figure 3B), a key sequence determinant that favors co-transcriptional R-loop formation (Ginno et al., 2013). The observation that AGS samples display R-loop formation over expected R-loop forming, GC-skewed, regions indicates that canonical R-loop formation is not significantly altered in AGS patients (Figure 3\u2014figure supplement 1A,B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig3-v2.jpg)\n\n**Figure 3.:** (A) All genomic loci overlapping with a DRIP peak in at least one sample are stacked vertically; the position of each peak in a stack is constant horizontally across samples. Each patient subtype or control occupies a vertical bar, as labeled. Each bar corresponds to merged data sets from two independent samples. Common peaks (i.e., form in control and at least one AGS sample) are represented in blue. Control-unique DRIP peaks are shown in pink; lack of DRIP signal over a given peak in any sample is shown as black. AGS-unique peaks are colored orange, yellow, green, and red in AGS1, 2, 4, and 5, respectively. Brackets on the right side demarcate common and AGS-specific peaks, respectively. (B, C) Graphs showing the % overlap between DRIP peaks and blocks of GC skew (B); and the total size of DRIP peaks in each category (C). Color codes are as described for (A). (D) Enrichment or depletion of AGS-unique DRIP peaks over different genomic features is shown relative to common DRIP peaks. * indicates p < 0.002 and fold change >20% relative to common peaks. (E\u2013G) Representative examples of AGS-specific DRIP peaks over an intergenic region (E), a truncated long interspersed nuclear elements (LINE) element (F) and a truncated long terminal repeats (LTR) element (G).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative screenshot of the broad genomic landscape of R-loop formation over a 2-Mb region. DRIP-seq signal is represented by the accumulation of sequence reads along the genomic sequence. Each sample is color-coded as indicated. CpG islands are indicated together with the positions of genes along the region. (B) A representative screenshot of R-loops formed at the 5\u2032- and 3\u2032-end of the DACT1 gene. (C) Pie chart depicting the distribution of common DRIP peaks at different genomic regions. (D) Percent length overlap of common and AGS-unique peaks over different genomic features. *p < 0.002 and fold change >20% relative to common peaks.\n\nDespite the relative agreement between AGS and control R-loop profiles over a broad set of common peaks, a large excess of DRIP peaks (33,781 in total) was observed specifically in AGS cells (Figure 3A). These novel peaks of RNA:DNA hybrids were in many cases unique to each patient sub-type. While a small number of DRIP peaks were also unique to the control sample, AGS-specific DRIP peaks in each AGS subtype were both threefold to fourfold greater in numbers, and when combined, occupied a three to four times larger genomic space than control-specific peaks (Figure 3C). On average, AGS-specific DRIP peaks occupied an additional 23.8 megabases of DNA sequence. This indicates that all AGS subtypes are burdened by higher loads of RNA:DNA hybrids in their genomes.\n\nUnlike common DRIP peaks, AGS-specific DRIP peaks were threefold to sevenfold less likely to overlap with GC skew (Figure 3B), suggesting that they may originate according to a non-canonical mechanism. Additionally, AGS-specific DRIP peaks were depleted at transcription start sites (TSSs) and transcription termination sites (TTSs) (Figure 3D), where R-loops are typically observed (Ginno et al., 2013). In contrast, AGS2- and AGS4-specific peaks were significantly enriched over intergenic portions of the human genome (Figure 3D,E). AGS1- and AGS5-specific DRIP peaks were instead enriched over gene body regions (Figure 3D, Figure 3\u2014figure supplement 1D). Interestingly, all AGS-specific DRIP peaks were significantly enriched in repeat classes corresponding to long interspersed nuclear elements (LINE) and long terminal repeats (LTR) retrotransposons (Figure 3D,F,G, Figure 3\u2014figure supplement 1D). Analysis of the overlap of AGS-specific DRIP peaks with human-specific, retrotransposition-competent, LINE-1 elements failed to reveal any significant trend (data not shown). Therefore, whether the reported enrichment of AGS-specific DRIP peaks over LINE and LTR repeats carries biological significance or is simply a reflection of the increased repeat content of intergenic and intronic space remains to be determined. Altogether, our results indicate that AGS mutations in TREX1, RNASEH2A, RNASEH2B, and SAMHD1 are associated with the accumulation of RNA:DNA hybrids over repeat-rich intergenic and gene body regions.\n\n### AGS patients show pronounced genome-wide DNA hypomethylation\n\nThe observation that RNA:DNA hybrids accumulate over intergenic regions is surprising given that they are normally maintained in a transcriptionally quiescent state owing to the deposition of silencing epigenetic marks such as DNA methylation (Yoder et al., 1997). To determine if DNA methylation patterns were altered in AGS, we performed MethylC-seq (Lister et al., 2009) to profile DNA methylation at low coverage (3.21\u20137.82 X coverage) across the same set of primary fibroblasts studied above (Supplementary file 1). All AGS cells displayed significant, global, DNA hypomethylation (Figure 4A). AGS2 and 4 cells showed profound DNA hypomethylation, with a \u223c20% reduction in genomic methylation levels overall. AGS1 and 5 showed a more moderate, but still highly significant, 5\u201310% reduction in DNA methylation. This reduction affected TSSs and TTSs (Figure 4B,C; Figure 4\u2014figure supplement 1A) and spread along the lengths of entire chromosomes (Figure 4D), significantly impacting nearly all genomic compartments, including genic, intergenic, and repeat regions (Figure 4E). Analysis of repeat classes further revealed that LINE and LTR elements were significantly hypomethylated in all AGS subtypes (Figure 4F). Pyrosequencing assays targeting human-specific LINE-1 elements also revealed a small but significant decrease in DNA methylation over 4 CpG sites carried at the LINE-1 5\u2032-UTR promoter (Figure 4\u2014figure supplement 1B). SINE elements, satellite repeats, and other repeat types were significantly hypomethylated in AGS2 and 4 but not always in AGS1 and 5 (Figure 4F). This profound reduction in DNA methylation was not caused by any detectable deregulation in the expression of genes encoding for the DNA methylation machinery or of components of a putative DNA de-methylation system (Figure 4\u2014figure supplement 1C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig4-v2.jpg)\n\n**Figure 4.:** (A) Circos plot depicting DNA methylation along human chromosomes. Each tick mark is colored according to the average percent methylation across a 2 Mb genomic region (see color legend). (B, C) Metaplots of DNA methylation around transcription start site (TSS) (B) and transcription termination site (TTS) (C). (D) Percent methylation along chromosome 17. (E, F) Violin plots depicting methylation levels at different genomic (E) and repeat (F) regions. p-values are relative to control. **p < 1e-9, *p < 0.01.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Percent methylation of lymphoblastoid cells around TSS, as determined by reduced representation bisulfite sequencing (RRBS). AGS2 LCLs are significantly hypomethylated (p < 2.2 \u00d7 10\u221216). (B) Percent methylation of control and AGS fibroblasts at four CpG sites, as surveyed by LINE-1 pyrosequencing. (C) Gene expression levels (measured by RNA-seq) for a range of genes involved in the control of DNA methylation are shown for control and a variety of AGS fibroblasts.\n\nTo further characterize the DNA hypomethylation observed in AGS cells, we employed a Hidden Markov Model (HMM) to annotate highly and partially methylated domains (HMDs and PMDs, respectively) (Schroeder et al., 2011). PMDs in control fibroblasts were generally shared by AGS fibroblasts but not by embryonic stem (ES) cells (Figure 5A; Figure 5\u2014figure supplement 1A), consistent with the notion that they represent fibroblast-specific PMDs. AGS2 and AGS4 fibroblasts displayed broader PMDs than the control cells, while the size of PMD regions in AGS1 and AGS5 cells was relatively unchanged (Figure 5A; Figure 5\u2014figure supplement 1A). Analysis of the chromatin features associated with PMDs showed that common PMDs resided within silenced genomic regions enriched for Lamin-B1, a component of the nuclear lamina, and the silencing mark histone H3 Lysine 9 trimethylation (H3K9me3), as described previously (Berman et al., 2012). Common PMDs were also strongly depleted for the H3K27me3 mark, a modification associated with facultative heterochromatin and silencing over developmental genes (Figure 5B, Figure 5\u2014figure supplement 1B). Interestingly, AGS-specific PMDs, while still associated with Lamin-B1 and to some extent with H3K9me3, were enriched for H3K27me3, particularly over regions corresponding normally to large H3K27me3 blocks (Figure 5B,C). This suggests that the DNA hypomethylation observed in AGS is particularly associated with regions of silenced, condensed chromatin.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig5-v2.jpg)\n\n**Figure 5.:** (A) Venn diagram displaying partially methylated domains (PMDs) in AGS4 and control fibroblasts compared to embryonic stem (ES) cells. (B) Location analysis of PMDs over regions marked by H3K9me3, Lamin-B1, and H3K27me3, shown as fold change relative to genome average (represented by the dotted horizontal line). Stars indicate the p-value of the deviation from the genome average. (C) Genome browser screenshot showing overlap of AGS-specific PMDs with H3K27me3. (D) Percent DRIP peaks (common or AGS-unique) in highly methylated domains (HMDs) and PMDs. The pie charts break down AGS2/4 PMDs to common and unique PMDs. (E) Genome browser screenshot showing overlap between AGS2/4 PMDs with AGS2/4 DRIP-seq peaks. (F) Percent DNA methylation of AGS-unique DRIP peaks measured in control and AGS fibroblasts (as indicated at the bottom of the graph). *p < 7.18e-11, ns = not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Venn diagrams representing the overlap between PMDs identified in ES cells (blue), control cells (green), and AGS samples (orange). The respective sizes of PMDs in each cell type are shown below. (B) A representative genome browser screenshot showing that common fibroblast PMDs are depleted for H3K27me3 and enriched for Lamin-B1.\n\nWe next determined if the regions that became hypomethylated also corresponded to regions that accumulated RNA:DNA hybrids in DRIP-seq analysis. In AGS1 and AGS5 fibroblasts, which showed only moderate DNA hypomethylation and limited additional PMDs, DRIP peaks, whether common or AGS-unique, mostly landed in HMD regions (Figure 5D). This is consistent with AGS1- and AGS5-specific DRIP peaks being enriched over gene body regions (Figure 3D) since gene body regions are typically highly methylated (Lister et al., 2009). In sharp contrast, nearly half of the AGS-unique DRIP peaks in AGS2 and AGS4 fibroblasts landed on PMD regions while only 10\u201315% of common DRIP peaks matched to PMDs in these two samples. Furthermore, two-thirds of these PMD-contained AGS-unique DRIP peaks matched to AGS-specific PMDs (Figure 5D,E). Consistent with this, the DNA methylation levels measured over AGS1-, AGS2-, and AGS4- (but not AGS5) unique DRIP peaks were significantly lower in their own respective samples compared to the DNA methylation levels of that same regions measured in control (Figure 5F). Thus, our data show a remarkable agreement between regions that accumulate RNA:DNA hybrids in the AGS2, AGS4, and to a lesser extent AGS1 subtypes and regions that undergo DNA hypomethylation.\n\n### RNASEH2 depletion triggers DNA hypomethylation\n\nTo determine if the loss of DNA methylation observed in AGS patient cells could be directly due to AGS mutations, we focused on RNASEH2A since AGS4 fibroblasts displayed profound DNA hypomethylation (Figure 4). We employed a lentivirus-mediated CRISPR/Cas method to knockout exon 6 in RNASEH2A (RNASEH2A KO) in a HeLa cell line harboring a silent green fluorescent protein (GFP) reporter gene (HeLa-GFP) (Poleshko et al., 2010). As a control, we treated the same cell line with a CRISPR vector containing a scramble guide sequence (scramble). Effective gene knockout was validated by PCR genotyping (not shown) and by Western blots (Figure 6A). To further validate the knockout, we measured the DNA damage response in RNASEH2A KO and scramble cells using an antibody against gamma H2AX. As expected from previous reports (Reijns et al., 2012; Gunther et al., 2015), we observed higher levels of gamma H2AX in RNASEH2A KO cells (Figure 6B), indicative of an activated DNA damage signaling.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig6-v2.jpg)\n\n**Figure 6.:** (A) Western blot using an anti-RNase H2A antibody shows successful gene knockout in HeLa-GFP cells. Scramble cells were generated with a CRISPR vector carrying a scrambled guide RNA sequence. Tubulin was used as a loading control. (B) Immunocytochemistry confirms elevated DNA damage response in RNASEH2A KO cells; DAPI (blue), gamma H2AX antibody (green). (C) Bright field and green fluorescent protein (GFP) microscopy images of RNASEH2A KO and scramble control cells. Knockout of the RNASEH2A gene triggers the reactivation of the silent GFP reporter in HeLa-GFP cells. (D) (Top) Western blot showing GFP expression in HeLa-GFP cells (RNASEH2A KO and scramble); (bottom) bar graph quantification of Western blot. (E) Bisulfite methylation sequencing for two different LINE-1 loci in RNASEH2A KO and scramble control cells. Black and white circles represent methylated and unmethylated CpG sites, respectively. Missing bubbles indicate that a CpG site is absent from the sequence of that particular molecule. The coordinates for each fragment analyzed are indicated at top. (F) Quantification of percent methylation at each CpG sites surveyed in panel E. p-value was calculated using a paired Wilcoxon test with the alternative hypothesis that RNASEH2A KO is less methylated than scramble.\n\nCompared to scramble, RNASEH2A KO cells showed a clear increase in the number and brightness of GFP-positive cells (Figure 6C). GFP expression in RNASEH2A KO cells was 14-fold higher than in scramble cells, as measured by Western blot (Figure 6D), demonstrating reactivation of the GFP reporter gene. To survey DNA methylation levels in RNASEH2A KO and scramble cells, we focused on two 5\u2032-UTR portions common to LINE-1 elements and performed DNA methylation sequencing after sodium bisulfite treatment. RNASEH2A KO cells showed significant DNA hypomethylation relative to scramble (Figure 6E,F). This suggests a direct effect of RNASEH2A deficiency in triggering DNA hypomethylation and gene reactivation at least for the loci studied here.\n\n## Discussion\n\nOne of the key observations from this study is that primary fibroblasts from all four AGS subtypes studied here experienced global loss of DNA methylation. While additional samples encompassing other AGS mutations subtypes will need to be studied to confirm this trend, this observation nonetheless reinforces the similarities between AGS and SLE, although the DNA hypomethylation reported here is stronger than that previously reported in SLE. In AGS, DNA hypomethylation was found to affect every genomic compartment, including genic and intergenic regions, unique and repeated sequences (Figure 4). In AGS2 and AGS4, where the effect was most marked, the DNA hypomethylation led to the formation of AGS-specific PMDs in addition to those normally observed in fibroblasts (Lister et al., 2009). Similar to previously characterized PMDs in somatic tissues and cancer samples, common fibroblasts PMDs described here overlapped with inactive, late-replicating, heterochromatic regions associated with H3K9me3 and Lamin-B1 (Hawkins et al., 2010; Berman et al., 2012). Interestingly, AGS-specific PMDs, but not common PMDs, were also enriched over regions marked by H3K27me3, a mark of facultative heterochromatin associated with developmental silencing (Figure 5). This suggests that silent, condensed genomic regions, may in fact be intrinsically prone to becoming PMDs, and that this tendency is made worse by AGS2 and AGS4 mutations. Our data further indicate that RNase H2 defects directly drive these epigenetic perturbations given that we could recapitulate DNA hypomethylation at a subset of LINE-1 sequences and trigger the reactivation of a silent GFP reporter by knocking out RNASEH2A (Figure 6). While the precise mechanism responsible for DNA hypomethylation in AGS remains to be elucidated, it is worth noting that defects in TREX1, RNase H2, and SAMHD1 all trigger the DNA damage response and are associated with increased genomic instability (Yang et al., 2007; Reijns et al., 2012; Clifford et al., 2014; Kretschmer et al., 2015). RNase H2 in fact associates with the DNA replication fork through the PCNA (proliferating cell nuclear antigen) clamp (Bubeck et al., 2011) and TREX1 was found to translocate to the nucleus upon replication stress where it might be involved in processing aberrant DNA replication intermediates (Yang et al., 2007). It is therefore possible that the replication stress caused by AGS mutations indirectly results in defects in replication-coupled, DNMT1-mediated DNA methylation maintenance (Figure 7) (Law and Jacobsen, 2010). In support of this notion, a recent report shows that the PCNA clamp unloads from the lagging strand of stalled DNA replication forks (Yu et al., 2014). Given that the DNMT1 maintenance DNA methyltransferase binds to PCNA (Leonhardt et al., 1992) and requires PCNA binding for efficient activity (Schermelleh et al., 2007), it is plausible that replication stress may lead to inefficient DNA methylation maintenance, particularly in silent, compact regions of the genome such as heterochromatic regions. An analogous mechanism was proposed to account for how defective DNA replication may trigger epigenetic instability by uncoupling DNA synthesis from histone recycling (Sarkies et al., 2010). Interestingly, 5-aza-2\u2032-deoxycytidine, a drug best known as a DNA-demethylating agent, in fact causes genome-wide DNA damage (Karpf et al., 1999; Palii et al., 2008; Orta et al., 2013). Finally, pronounced DNA hypomethylation is also known to cause genomic instability (Jackson-Grusby et al., 2001; Chen et al., 2007; Liao et al., 2015) suggesting a possible positive feedback loop that may link and amplify defects in either pathways (Figure 7). It will be interesting to further investigate the connections between DNA replication stress, DNA hypomethylation, and epigenetic instability in the context of AGS or of other diseases associated with epigenetic aberrations such as cancers.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08007/elife-08007-fig7-v2.jpg)\n\n**Figure 7.:** See \u2018Discussion\u2019 for details.\n\nUnderstanding if and how DNA hypomethylation contributes to autoimmunity in AGS and SLE is more than ever a priority. One possibility is that DNA hypomethylation results in altered gene expression profiles. However, our RNA-seq characterization only identified a modest number of up- and down-regulated genes that were enriched for ontologies reflecting the biology of the disease itself, such as immunomodulatory genes (Figure 1). There is therefore no evidence for a global alteration of transcriptional profiles as a result of the DNA hypomethylation in AGS. This is consistent with the general absence of direct connections between DNA hypomethylation and gene reactivation (Bestor et al., 2015), including in extremely hypomethylated mouse ES cells (Li et al., 1992; Tsumura et al., 2006). It remains possible, however, that DNA hypomethylation may enable the transcription of normally silent and methylated retrotransposable elements. DNA methylation is indeed the primary silencing force ensuring retrotransposon control in somatic cells (Walsh et al., 1998; Yoder and Bestor, 1998). If correct, this could lead to the reactivation of endogenous retroviral-like particles, which if detected by innate immune sensors, could in turn induce the anti-viral IFN\u03b1 cytokine, a hallmark of AGS and SLE (Volkman and Stetson, 2014). Here, we showed that the DNA hypomethylation observed in AGS samples affected LTR, LINE, and to a lower extent, SINE repeated DNA elements (Figure 4). However, methylation pyrosequencing focused on human-specific LINE-1s showed that the extent of DNA hypomethylation at these elements, while significant, was minimal and that they in fact remained mostly methylated (Figure 4\u2014figure supplement 1B). Likewise mining of our RNA-seq data sets or targeted real-time reverse-transcription PCR (RT-qPCR) assays aimed at the LINE-1 mRNA transcript failed to provide convincing evidence for LINE-1 transcriptional reactivation (data not shown). Finally, Western blots aimed at detecting the LINE-1 Orf1p protein were negative for AGS fibroblasts even though the protein was easily detected in Ntera2 control cells (data not shown). Altogether, while we can't rule out that LINE-1, or other retroelements, undergo reactivation in AGS cells, particularly in other cell types or at earlier time points during development, the evidence suggests that the DNA hypomethylation observed in AGS primary fibroblasts is not accompanied by LINE-1 reactivation.\n\nThe second major observation from this study is that all AGS subtypes tested here exhibit large accumulation of RNA:DNA hybrid species (Figure 3). RNA:DNA hybrids therefore represent candidate immunogenic nucleic acids in AGS. In contrast, ribonucleotide incorporation in genomic DNA was only observed in RNase H2-mutated samples (Figure 2). Our DRIP-seq profiling reveals that AGS2- and AGS4-specific RNA:DNA hybrids map to the intergenic space, away from traditional R-loop hotspots including genes, promoters, and terminators. AGS1- and AGS5-specific RNA:DNA hybrids were by contrast enriched over gene body regions (Figure 3D). All AGS-unique RNA:DNA hybrid peaks showed a lower overlap with GC skew, an important sequence determinant of R-loop formation (Figure 3B), suggesting that these hybrids may occur by a mechanism distinct from the well-accepted \u2018thread back\u2019 R-loop mechanism (Aguilera and Garcia-Muse, 2012). AGS-specific DRIP peaks were enriched in LINE-1 and LTR-containing sequences. This enrichment is intriguing in light of the proposed roles of SAMHD1, RNase H2, and TREX1 in the control of retroelement transposition (Stetson et al., 2008; Zhao et al., 2013a; Volkman and Stetson, 2014), although, as discussed above, we did not find convincing evidence for transposon reactivation here. Alternatively, it is possible that enrichment of AGS-specific RNA:DNA hybrids over LINE-1-rich regions simply reflects the fact that they map preferentially to intergenic and intronic regions. One possible clue as to the origin of AGS-specific DRIP peaks stems from the fact that a large fraction of such peaks in AGS2 and AGS4 samples overlap with AGS-specific PMDs in these two subtypes (Figure 5). Direct measurements in fact show that AGS-specific DRIP peaks are significantly hypomethylated in AGS1, AGS2, and AGS4 (Figure 5). Thus, the two main features observed in AGS samples, excessive RNA:DNA hybrid formation and DNA hypomethylation, often overlap, strongly supporting a link between both changes in cis. One possible explanation for this overlap is that regions experiencing DNA hypomethylation as a result of AGS mutations may undergo spurious transcription that lead to co-transcriptional R-loop formation (Figure 7). Another non-exclusive possibility is based on the proposition that PMD regions may result from DNA damage and inefficient maintenance DNA methylation (see above). It was recently described that RNA transcripts may serve as a template for the repair of double-strand DNA breaks upon hybridization to DNA via Rad52, a key member of the homologous recombination pathway. Interestingly, RNase H2 activity was shown to block the formation of these RNA:DNA hybrids (Keskin et al., 2014). It is therefore possible that some of the DNA breaks caused by AGS mutations and replication stress are repaired according to a pathway prone to RNA:DNA hybrid formation (Figure 7). While speculative, this model may also account for the lack of overlap with GC skew since those hybrids are thought to be mediated by Rad52 and not to arise co-transcriptionally. Experiments aimed at testing this proposal will be important.\n\nOne key unanswered question concerns the manner in which RNA:DNA hybrids trigger an immune response. The cGAS-STING pathway activates the interferon response upon sensing of not only cytosolic DNA (Sun et al., 2013), but also RNA:DNA hybrids (Mankan et al., 2014). Interestingly, several studies reported that multiple dsDNA break repair proteins can sense damaged DNA and induce a STING-mediated type I IFN response (Zhang et al., 2011; Kondo et al., 2013; Hartlova et al., 2015), thereby highlighting previously underappreciated links between the DNA damage response and innate immune signaling. Besides STING, it is worth noting that the endosomal receptor TLR9 has also been identified as an RNA:DNA hybrid sensor (Rigby et al., 2014) in addition to its canonical role in sensing unmethylated CpG-rich DNA (Hemmi et al., 2000). It is therefore possible that AGS mutations-induced DNA hypomethylation also contributes to the increased interferon response in AGS (Figure 7). Interestingly, treatment of colon adenocarcinoma with 5-aza-2\u2032-deoxycytidine, which causes DNA damage and DNA demethylation, triggers a prominent interferon response (Karpf et al., 1999). Future work will be necessary to dissect the pathways by which unmethylated DNA and RNA:DNA hybrids may be sensed to trigger the innate immune response characteristic of AGS, and by extension, SLE patients.\n\n## Materials and methods\n\n### Detection of incorporated ribonucleotides by nick translation assays\n\nDetection of incorporated ribonucleotides was performed as previously described (Hiller et al., 2012). Briefly, 200 ng of human primary fibroblasts or yeast genomic DNA (wild-type and RNASEH2-deficient) was treated with 20 nM of purified recombinant human RNase H2 (Loomis et al., 2014) or water in RNase H2 reaction buffer (50 mM Tris-HCl pH 8, 60 mM KCl, 10 mM MgCl2, 0.01% BSA (Bovine Serum Albumin), 0.01% Triton) at 37\u00b0C for 1 hr. 20 \u03bcM of unlabeled dATP, dGTP and dTTP, plus 3.7 \u00d7 105 Bq [\u03b1-32P]-dCTP (PerkinElmer, Santa Clara, CA) and 5 U of Escherichia coli DNA polymerase I (New England Biolabs, Inc., Ipswich, MA) were added and the reaction was incubated at 16\u00b0C for 30 min and was run on a 1% TAE (Tris-acetate-EDTA) agarose gel. Visualization was performed using a Storm PhosphorImager, and bands were quantified using ImageQuant (GE Healthcare, United Kingdom). Relative ribonucleotide loads were calculated by dividing the radiolabel incorporation in the RNase H2-treated sample over the untreated sample. Experiments were performed at least in triplicate.\n\n### DRIP-seq\n\nDRIP-seq was performed on primary fibroblasts as previously described (Ginno et al., 2012). Sequencing reads were trimmed with FastqMcf (Aronesty, 2011) before mapping to the hg19 reference genome using BWA 0.6.1 (Li and Durbin, 2009). Peak calling was first performed by MACS 1.4.2 (Zhang et al., 2008) using input library as control. DRIP peaks were further assigned onto restriction fragments using BEDtools (Quinlan and Hall, 2010). For control and each AGS subtype, DRIP peaks from two independent samples were merged into one sample for downstream analysis. All overlap analysis was performed using BEDTools (Quinlan and Hall, 2010). GC skew annotation was according to low stringency SkewR peaks as previously described (Ginno et al., 2013). The enrichment or depletion of AGS-unique DRIP peaks over different genomic regions was measured as fold-change of percent base-pair overlap of AGS-unique DRIP peaks relative to common DRIP peaks. The statistical significance of enrichment or depletion of AGS-unique DRIP peaks over a specific genomic feature was measured as follows: for each AGS-unique peak, 500 shuffled peaks of equal lengths were extracted from the common peak set and their overlap with various genomic features was recorded as % length overlap. The significance of the difference in overlap between observed (AGS unique) and expected (shuffled) was calculated using empirical p-values according to the Monte Carlo method.\n\n### Whole-genome bisulfite sequencing (MethylC-seq)\n\n2 \u03bcg of genomic DNA was sheared by sonication down to 100\u2013500 bp in size. Sequencing libraries were constructed as described before (Schroeder et al., 2011). We then performed bisulfite treatment using EZ DNA methylation-direct kit (Zymo Research, Irvine, CA) following manufacturer's instructions. 50 ng of bisulfite-treated DNA was amplified for 15 cycles using Pfu Cx Turbo Hotstart DNA polymerase (Agilent Technologies, Santa Clara, CA), and the quality of the library was checked on a 2100 Agilent Bioanalyzer prior to sequencing on an Illumina HiSeq 2000. Sequencing reads were trimmed as described in DRIP-seq. Mapping was performed using Bismark 0.7.7 (Krueger and Andrews, 2011), and percent methylation was called using custom Perl script, combind_strand_meth.pl. C to T conversion rate was determined as the ratio of converted C in CHG and CHH context relative to the total number of CHG and CHH. CpG coverage was calculated as the average number of reads over CpG sites in the genome. Both C to T conversion rate and CpG coverage are reported in Supplementary file 1. To ensure good coverage and eliminate PCR bias, CpG sites with coverage below 4\u00d7 or more than 99.9th percentile were discarded. Circos plot was generated using Circos 0.62\u20131 (Krzywinski et al., 2009). TSS and TTS metaplots were generated using custom Perl script, wig_to_metaplot_lowmem.pl. Methylation levels at different genomic regions were calculated BEDtools (Quinlan and Hall, 2010). Wilcoxon paired test was performed using R with the alternative hypothesis that the AGS samples are less methylated than the control. PMDs and HMDs were called using StochHMM, a HMM-based software (Lott and Korf, 2014) as previously described (Schroeder et al., 2013) with modifications: PMDs were trained using random 25-kb regions with 25\u201355% methylation and HMDs were trained using random 25-kb regions with 60\u2013100% methylation. H3K27me3 and H3K9me3 data sets were obtained from ENCODE normal human dermal fibroblasts (NHDF-Ad). The lamin B1 data set was obtained from Gene Expression Omnibus (GSE49341).\n\n### Reduced representation bisulfite sequencing\n\nReduced representation bisulfite sequencing (RRBS) library was prepared according to the Myers lab protocol (Varley et al., 2013) prior to sequencing on an Illumina HiSeq 2000. Sequencing reads were trimmed with Trim Galore 0.3.3 (Krueger, 2014) and mapped to hg19 genome using Bismark 0.7.7 (Krueger and Andrews, 2011). TSS metaplot was generated using wig_to_metaplot_lowmem.pl.\n\n### RNA-seq\n\nRNA-seq libraries were constructed using the Illumina TruSeq kit prior to sequencing on an Illumina HiSeq 2000. Raw reads were trimmed as before and mapped to the hg19 genome using TopHat 2.0.5 (Trapnell et al., 2009). Read counts for each gene were calculated using HTSeq. Pearson's correlation between each pair of biological replicates was calculated by comparing every gene's log2 normalized read count (Supplementary file 4). Differential gene expression was identified using DESeq (Anders and Huber, 2010) using fold change > 2 and FDR (false discovery rate) < 0.1. Pathway analysis was performed using DAVID (Huang da et al., 2009).\n\n### Data access\n\nDRIP-seq, MethylC-seq, RRBS, and RNA-seq data are available at the Gene Expression Omnibus (GEO) database, under the accession number GSE57353. Custom Perl scripts are available at https://github.com/ywlim/Perl.\n\n### RT-qPCR\n\nTotal RNA was extracted from 80% confluent primary fibroblasts using TRI reagent (Life Technologies, Grand Island, NY) and Direct-zol RNA miniprep kit (Zymo Research). RNA was reverse transcribed to first strand cDNA using iScript Reverse Transcription Supermix for RT-qPCR (Bio-Rad, Hercules, CA). cDNA was cleaned up using DNA clean and concentrator (Zymo Research) and resuspended in 10 \u03bcl water. For RT-qPCR, 5 \u03bcl of 1:50 dilution of the cDNA was used per well in a 20 \u03bcl reaction, along with 2 \u03bcl of 10 \u03bcM primer sets and 10 \u03bcl of SsoAdvanced Universal SYBR Green Supermix (Bio-Rad). Reactions were run in duplicate at least on a CFX96 Touch Real-Time PCR Detection System (Bio-Rad) with the following protocol: 95\u00b0C (2 min), 40 cycles of 95\u00b0C (10 s) and 60\u00b0C (15 s). Quantification was calculated using the CFX Manager software (Bio-Rad). Primer sequences are listed on Supplementary file 3.\n\n### CRISPR/Cas knockout of RNASEH2A\n\nRNASEH2A guide RNA sequence was designed using E-CRISP (http://www.e-crisp.org/) and the corresponding oligonucleotides (top: CACCGTTGGATACTGATTATGGCTC; bottom: AAACGAGCCATAATCAGTATCCAAC) and scramble oligonucleotides (top: CACCGGCACTACCAGAGCTAACTCA; bottom: AAACTGAGTTAGCTCTGGTAGTGCC) were purchased from Life Technologies. The oligonucleotides were annealed and ligated into lentiCRISPR v2 (Addgene plasmid 52961) at the BsmBI restriction site. The resulting lentiCRISPR-RNASEH2A and lentiCRISPR-scramble plasmids were transformed into DH10B cells and purified using Qiagen Plasmid Midi Kit. To produce lentivirus carrying the CRISPR plasmids, 5 \u03bcg lentiCRISPR-RNASEH2A or lentiCRISPR-scramble, 4 \u03bcg psPAX2, and 1.5 \u03bcg of pMD2.G were transfected into HEK293T cells on a 10-cm plate using Turbofect (Life Technologies) following manufacturer's protocol. Viral supernatant was collected 48 hr later, filter sterilized with a 0.45-\u03bcm filter (Millipore, Billerica MA), and 1 ml of it was used to infect HeLa-GFP cells on a 6-well plate. 1 \u03bcg/ml puromycin was added 24 hr later. 22 days later, HeLa-GFP-RNASEH2A KO and HeLa-GFP-scramble cells were imaged using GFP microscopy. Whole-cell protein was extracted and Western blot was performed using antibodies against RNase H2A (1:1000, ProSci) or GFP (1:500, UC Davis/NIH NeuroMab Facility, Davis, CA), and tubulin (1:1000, Sigma\u2013Aldrich, St. Louis, MO). Immunocytochemistry was performed on the same cells using antibody against \u03b3H2AX (1:150, Abcam, United Kingdom).\n\n### LINE-1 bisulfite sequencing\n\n600 ng of genomic DNA was bisulfite converted using EZ DNA methylation-direct kit (Zymo Research) and eluted in 30 \u03bcl elution buffer. 1 \u03bcl of it was then PCR amplified using two sets of LINE-1 primers (Supplementary file 3) (95\u00b0C for 4 min, 20 cycles of 95\u00b0C, 55\u00b0C and 72\u00b0C for 30 s each, 72\u00b0C for 4 min). PCR products were gel purified and cloned into pDRIVE cloning vector using Qiagen PCR cloning kit (Qiagen, Valencia, CA) and the resulting vectors were transformed into DH10B cells. Miniprep was performed using QIAprep Spin Miniprep Kit (Qiagen) and 16 clones were sequenced for each LINE-1 locus. Percent methylation at each CG site was the ratio of unconverted (CG) vs the sum of unconverted and converted (TG) molecules.\n",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b88e6c78-183b-44f4-81af-6da8f4a1acc5",
+      "submission_id": "da72bceb-a316-404c-b8e9-301abec0e828",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bing Ren, University of California, San Diego School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08007.018](https://doi.org/10.7554/eLife.08007.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cGenome-wide DNA hypomethylation and RNA:DNA hybrid accumulation in Aicardi-Gouti\u00e8res syndrome\u201d for peer review at eLife. Your submission has been favorably evaluated by James Manley (Senior editor), and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals responsible for the peer review of your submission have agreed to reveal their identity: Bing Ren (Reviewing editor); Paula Vertino (peer reviewer #3). A further reviewer remains anonymous.\n\nThe Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe work reports a number of interesting findings linking mutations of AGS1-5 to the symptoms displayed by a class of rare genetic disorders. Overall, the manuscript is well written, with most conclusions well supported by evidence presented. However, a number of over-interpretations or over-statements were made, where causal relationships were drawn based on insufficient data. The authors are encouraged to thoroughly revise the manuscript by toning down the statements or provide more objective statements.\n\nEssential revisions:\n\n1) Thoroughly revise the conclusions, where unwarranted causal relationship was drawn, as noted by both reviewers #2 and #3 (below). For example, \u201cThis study identifies global epigenetic perturbations and accumulation of RNA:DNA hybrids as two novel hallmarks that may drive the powerful immune response responsible for...\u201d\n\n2) Provide clearer description of the datasets. For example, provide information upfront regarding the WGBS sequence depth and resolution.\n\n3) The RNAseq data only weakly support the idea of immune activation as a phenptype that is enriched in AGS fibroblasts. There were nearly as many downregulated genes...any patterns there? The data should be fully discussed.\n\n4) The data in Figure 3E, F seem to suggest that the accumulation of RNA:DNA hybrids is confined to retroelements, and further, to specific classes (LINE,LTR) implying some specificity to the effect. Please discuss this trend and biological implications.\n\n5) The Drip-seq data need to be better presented so that a reader can fully appreciate how the patterns change, and the spatial relationship to other genomic features (see Reviewer #3 comment below).\n\n6) The DNA methylation data and RNA-DNA hybrid datasets also need to be presented more clearly, so that the spatial relationship between DNA methylation changes and accumulation of RNA:DNA hybrid can be better appreciated.\n\n7) Experiments from the RNASEH2A k/o fibroblasts have revealed only a modest impact of RNASEH2A KO on DNA methylation at certain retroelements. Deeper analysis of this cell system would allow the investigator to determine the hierarchical nature of the genomic phenomena observed, and strength the causality statement.\n\n8) Proper statistics needs to be used and documented when the enrichment/depletion characteristics and overlapping features are discussed.\n\nReviewer #1:\n\nAicardi-Gouti\u00e8res Syndrome (AGS) is caused by mutations in several genes involved in ribonucleotide metabolism and is characterized by an overt native immuneresponse, but the molecular causes of the symptoms remain unidentified. In this study, the authors profiled transcriptome, DNA methylome and RNA-DNA hybrids in fibroblasts from patients with AGS, and identified global DNA hypo-methylation and increased RNA:DNA hybrids as the most likely drivers of the inflammatory response in AGS patients. Importantly they highlight a potential epigenetic contribution to this syndrome (hypomethylation) specifically the reactivation of retrotransposon elements in the human genome, due to genome hypomethylation in the cells. The results are pretty compelling and the conclusions are well supported by the data provided.\n\n1) Figure 1. It appears that for some genes, the normalized RNA-seq data for some of the samples (AGS4-P2, AGS5-P2, AGS2-P1) varies a lot between replicates in the same patient. Could you provide information showing the correlation between replicates?\n\n2) Figure 3A) This figure is confusing. It would help to explain how the right hand vertical axis corresponds to the left hand vertical axis. Figure 3C is much more easily interpretable and a cleaner presentation of the data.\n\n3) The authors show that in AGS2 and AGS4 patients, regions containing RNA:DNA hybrids largely correspond with hypomethylated regions, but this is not true in AGS1 and AGS5 patients. Additionally, the authors mention that AGS1 and AGS5 patients have decrease hypomethylation. Patients AGS2 and AGS4 have RNASEH2a/2b mutations, and the authors show how RNASEH2a mutations trigger DNA hypomethylation. Is it possible to show the same for the RNASEH2b mutation corresponding with the AGS2 patient?\n\n4) Figure 6E/F) By focusing on only two LINE elements it seems too small of a set to \u201csuggest a direct role of RNASEH2a in triggering DNA hypomethylation.\u201d Perhaps you can suggest that it plays a role at these LINE elements. It is likely that if you focused on other areas you could see hypermethylation. Additionally in Figure 6E/F on cpg13, there are four reads supporting 50 % methylation level in the scramble, and two reads supporting a 0% methylation level in the KO. There are too few reads covering this cpg to make any claims regarding changes in methylation at cpg13.\n\nReviewer #2:\n\nThe study focuses on a potential mechanism connecting genetic mutations in TREX1, RNase H2 and SAMHD1 to inflammation-related problems in Aicardi-Gouti\u00e8res syndrome (AGS) in children. AGS involves the accumulation of incompletely metabolized nucleic acids resulting from the mutations. In this study, a variety of epigenome and transcriptome profiling, and a cutting-edge genetic engineering method are used to identify the source of immunogenic nucleic acids. The main conclusion is global epigenetic alterations and accumulation of RNA-DNA hybrids are involved in AGS, both shown here for the first time, and these alterations may drive immune responses that cause the inflammation.\n\nOverall this is a novel study that provides a new evidence of two types of molecular changes that are variably associated with AGS, as shown in fibroblasts from AGS patients and controls.\n\nThe main issue I see with this manuscript is the overstatement of causality where only modest associations are shown. For example, I would agree with \u201cThis study identifies global epigenetic perturbations and accumulation of RNA:DNA hybrids as two novel hallmarks\u201d but do not see adequate support for the remainder of the conclusion \u201cthat may drive the powerful immune response responsible for...\u201d I also suggest adding additional caveat/caution about the first phrase as this study analyzed a very limited number of AGS samples, and they are heterogeneous in terms of the underlying mutation. Another example of overstatement is \u201cour results indicate that AGS mutations in TREX1, RNASEH2A, RNASEH2B, and SAMHD1 lead to the accumulation of RNA:DNA hybrids over retrotransposon-rich intergenic regions.\u201d The data do not support \u201clead to\u201d, but perhaps better described as \u201cassociated with\u201d.\n\nThe WGBS data is quite interesting and the Circos display allows a reasonable visual comparison and highlights global differences. I have minor concerns about the data. The coverage is quite low, 3x to 7x, which defeats the main benefit of this method, base resolution. While the overall conclusion is probably correct, it would be better for the reader to know this is very low pass sequencing upfront, rather than putting it in a supplemental table only. It is also not clear how the C to T conversion was calculated. I could not find an explanation in the table or methods.\n\nReviewer #3:\n\nThe manuscript by Lim et al. makes some very interesting observations regarding the molecular basis of Aicardi-Goutieres syndrome, an autoimmune disorder of uncertain molecular origin despite well described loss of function mutations in several nucleic acid processing enzymes. The authors find that loss of function of AGS genes is associated, to varying degrees, with widespread hypomethylation of DNA as well as the selective accumulation of RNA:DNA hybrids in intergenic regions and over repetitive elements, and modest changes in gene expression. How these three observations are molecularly linked is less clear. The manuscript is well written and the experiments appropriately controlled. For the most part (exceptions noted below, the conclusions drawn are supported by the data provided.\n\n1) The authors appear to favor the idea that RNA:DNA hybrid accumulation is the culprit behind activation of the immune response in AGS cells, though the data at hand are such that a direct causal link cannot be established. How this might be achieved is unclear, but the Discussion proposes a number of \u2018sensing\u2019 mechanisms, some of which would require a mechanism in cis (e.g. detection of hybrids as they are formed) whereas others (TLR, GAS-STING etc. ) require cytoplasmic accumulation of duplexes. Is there any evidence in the AGS fibroblasts or in the RNASeH2 K/O fibroblasts of non-genomic accumulation of DNA:RNA duplexes in AGS cells?\n\n2) The RNAseq data only weakly support the idea of immune activation as a phenptype that is enriched in AGS fibroblasts. There were nearly as many downregulated genes...any patterns there? The data should be fully discussed.\n\n3) The DNA damage known to accompany defects in the AGS genes is proposed as intermediates that could mediate and/or cause the RNA:DNA hybrids or DNA hypomethylation. Do RNA:DNA hybrids accumulate at the sites of ectopic DNA damage ? This is something that could be addressed in the RNAseH2 k/o cells which exhibit by co-localization studies with gamma H2Ax.\n\n4) It is suggested that the relationship of RNA:DNA hybrid accumulation to retroelements might be circumstantial, due to the enrichment of these structures in intragenic regions... however, the data in Figure 3E, F, if representative, seem to suggest the opposite; that the accumulation of RNA:DNA hybrids is confined to retroelements, and further, to specific classes (LINE,LTR) implying some specificity to the effect. Are the unique drip seq signals by and large confined to retroelements as shown in Figure 3E, F? Is it possible that you are detecting some intermediate in piRNA-mediated transposon silencing?\n\n5) The Drip-seq data are presented in a very general way (as total # of peaks, distance covered etc.) making it difficult to fully appreciate how the patterns change, and the spatial relationship to other genomic features. Both and increase in burden and size is implied. Statements like \u201c...Drip-seq peaks were 3-4 fold larger in size\u201d are unclear. Do you mean that existing Drip-seq peaks in control cells spread / expand laterally in AGS cells, or is the trend for new peaks to form in patient cells? Figure 3D \u2013 the \u2018raw\u2019 data on common and unique sites would be more informative rather than \u201cfold change\u201d e.g. what fraction of common and unique peaks overlap each genomic feature? This would provide not only a comparison between unique and common sites, but also an indication of the relative distribution of Dripseq peaks across genomic features in each setting.\n\n6) Likewise, it is hard to appreciate the spatial relationship between DNA methylation changes and accumulation of RNA:DNA hybrids, given that the former are very broad and might encompass multiple retroelements some of which change and others that don't. If one looks specifically at those AGS specific DRIP-seq peaks, what fraction are overlapping retroelements, and what is the average DNA methylation level of these in control and AGS cells?\n\n7) The lack of overlap between AGS unique DRIP seq peaks and regions of GC skew/ annotated TSSs is taken as an indication that the aberrant RNA:DNA hybrids detected do not arise co-transcriptionally. Barring a direct test of the role of transcription on RNA: DNA hybrids in AGS cells, I'm not sure one can rule out a transcription-dependent mechanism at this juncture.\n\n8) The authors interpret the data from the RNASEH2A k/o fibroblasts as evidence that \u201c...RNAse H2 defects directly drive these epigenetic perturbations\u201d. Thus far they have only observed a modest impact on DNA methylation at certain retroelements. Whether there is a measurable global (bulk) effect on DNA methylation as in AGS cells is not clear, nor has the impact on RNA:DNA hybrid formation been studied. This could be a powerful system as it might allow the investigator to determine the hierarchical nature of the genomic phenomena observed.\n\n9) Why/what are the missing bubbles in the bisulfite sequencing data in Figure 6E? Depending on the nature of these CpGs (unmethylated/methylated) would change the magnitude of the methylation change significantly.\n",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15fcd2ba-162c-4db1-aab5-0a503dc20f0f",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C1",
+      "claim": "Aicardi\u2013Gouti\u00e8res syndrome (AGS) is a severe childhood inflammatory disorder that shows clinical and genetic overlap with systemic lupus erythematosus (SLE).",
+      "claim_type": "EXPLICIT",
+      "source": "Aicardi\u2013Gouti\u00e8res syndrome (AGS) is a severe childhood inflammatory disorder that shows clinical and genetic overlap with systemic lupus erythematosus (SLE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about AGS that draws from established scientific knowledge about the disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5981e122-3db7-4983-b86a-0ee59f766fd3",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C2",
+      "claim": "AGS is thought to arise from the accumulation of incompletely metabolized endogenous nucleic acid species owing to mutations in nucleic acid-degrading enzymes TREX1 (AGS1), RNase H2 (AGS2, 3 and 4), and SAMHD1 (AGS5).",
+      "claim_type": "EXPLICIT",
+      "source": "AGS is thought to arise from the accumulation of incompletely metabolized endogenous nucleic acid species owing to mutations in nucleic acid-degrading enzymes TREX1 (AGS1), RNase H2 (AGS2, 3 and 4), and SAMHD1 (AGS5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current scientific understanding of AGS etiology based on prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b8316ba8-63be-4373-8f88-53214a7daf92",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C3",
+      "claim": "Fibroblasts from AGS patients with AGS1-5 mutations are burdened by excessive loads of RNA:DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genome-wide approaches, we show that fibroblasts from AGS patients with AGS1-5 mutations are burdened by excessive loads of RNA:DNA hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by DRIP-seq experimental data presented in the manuscript showing accumulation of RNA:DNA hybrids in AGS samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "40a00b4e-5a0e-4f04-b9c1-a3ba06ac07ba",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C4",
+      "claim": "AGS fibroblasts display pronounced and global loss of DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using MethylC-seq, we show that AGS fibroblasts display pronounced and global loss of DNA methylation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MethylC-seq experimental data showing DNA hypomethylation across AGS samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "f9cba857-bdcf-49a1-bc16-062f1c5e2481",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C5",
+      "claim": "AGS-specific RNA:DNA hybrids often occur within DNA hypomethylated regions.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrate that AGS-specific RNA:DNA hybrids often occur within DNA hypomethylated regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the overlap analysis between DRIP-seq peaks and DNA methylation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "58a061db-acff-4085-b717-7a887313cc8d",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C6",
+      "claim": "AGS is a severe inflammatory encephalopathy characterized by neurological dysfunction, psychomotor retardation, seizures, unexplained fevers, joint stiffness, basal ganglia calcification, and chilblain skin lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Aicardi\u2013Gouti\u00e8res syndrome (AGS) is a severe inflammatory encephalopathy characterized by neurological dysfunction, psychomotor retardation, seizures, unexplained fevers, joint stiffness, basal ganglia calcification, and chilblain skin lesions (Rice et al., 2007b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature describing AGS clinical features.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b0b0845b-f9c4-4000-b4e0-1281b876ef41",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C7",
+      "claim": "Both AGS and SLE are characterized and driven by excessive expression of interferon alpha.",
+      "claim_type": "EXPLICIT",
+      "source": "Both diseases are characterized, and to a large extent driven, by excessive expression of interferon alpha, a potent anti-viral cytokine associated with heightened innate immune response and inflammation (Crow, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on AGS and SLE pathology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "9c9ec4cf-c723-452d-b9a9-4a897a3aed28",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C8",
+      "claim": "AGS is a monogenic disorder caused by mutations in any one of the six AGS genes.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS is a monogenic disorder caused by mutations in any one of the six AGS genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about the genetic basis of AGS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "aca09d1b-78c7-46c3-960e-d9f3a2ceb93d",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C9",
+      "claim": "The AGS genes encode for TREX1 (AGS1), RNase H2 subunits (AGS2, 3, and 4), SAMHD1 (AGS5), and ADAR1 (AGS6).",
+      "claim_type": "EXPLICIT",
+      "source": "The AGS genes encode for the 3\u2032 to 5\u2032 single-stranded DNA exonuclease TREX1 (AGS1) (Crow et al., 2006a), the RNA:DNA hybrid-specific ribonuclease H2 subunits (RNase H2A, B and C, corresponding to AGS4, 2 and 3, respectively) (Crow et al., 2006b), the 3\u2032 to 5\u2032 exonuclease and dNTP hydrolase SAMHD1 (AGS5) (Rice et al., 2009; Goldstone et al., 2011), and the RNA adenosine deaminase ADAR1 (AGS6) (Rice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature identifying AGS genes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "06cb72a7-9546-4467-86cb-5cc3fc9c93a1",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C10",
+      "claim": "Gain-of-function mutations in the cytosolic double-stranded RNA receptor gene IFIH1 have been shown to be associated with AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, gain-of-function mutations in the cytosolic double-stranded RNA receptor gene IFIH1 have also been shown to be associated with AGS (Rice et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on IFIH1 mutations in AGS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "12155869-78c2-4d13-812c-a9b8690c8ae0",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C11",
+      "claim": "Mutations in TREX1 and the RNASEH2 genes have been implicated in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutations in TREX1 and the RNASEH2 genes have also been implicated in SLE, further illustrating the genetic link between AGS and SLE (Lee-Kirsch et al., 2007; Gunther et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on genetic links between AGS and SLE.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "dad4fe21-b6f6-49e7-b36e-e7f290e82325",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C12",
+      "claim": "DNA hypomethylation triggers increased B cell autoreactivity and the development of drug-induced and idiopathic human lupus.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterizing putative epigenetic deregulation in AGS is all the more justified given that DNA hypomethylation, either spontaneous or caused by drug exposure, triggers increased B cell autoreactivity and the development of drug-induced and idiopathic human lupus (Richardson, 1986; Quddus et al., 1993; Yung et al., 1995; Jeffries et al., 2011; Absher et al., 2013; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature on DNA hypomethylation in lupus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "44b7528d-9332-4ce1-ab34-ef507b7db3cf",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C13",
+      "claim": "Loss of DNA methylation, albeit modest and restricted to specific autoimmunity-related genes, was reported in SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, loss of DNA methylation, albeit modest and restricted to specific autoimmunity-related genes, was reported in SLE patients (Richardson et al., 1990; Ballestar et al., 2006; Javierre et al., 2010; Jeffries et al., 2011; Absher et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature on DNA methylation in SLE.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ba9faa26-7206-4c94-8a29-c25b1e0fb55d",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C14",
+      "claim": "AGS fibroblasts are characterized by an activated antiviral, immune response with a characteristic interferon signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional profiling via RNA-seq showed that AGS fibroblasts are characterized by an activated antiviral, immune response with a characteristic interferon signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data presented in the manuscript showing upregulation of immune and interferon-related genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "bde11635-6697-40ce-bc56-f3316a9c0694",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C15",
+      "claim": "A total of 98 and 209 genes were significantly up- and down-regulated, respectively, in at least one AGS sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 98 and 209 genes that were significantly up- and down-regulated, respectively, in at least one AGS sample (Figure 1A; Figure 1\u2014figure supplement 1A; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis and referenced figures showing differential gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ff845413-e626-42ef-a5c0-2226965ed5ec",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C16",
+      "claim": "AGS down-regulated genes significantly associated with ontologies linked to cell adhesion and the extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS down-regulated genes significantly associated with ontologies linked to cell adhesion and the extracellular matrix (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ea029936-0c05-4512-b806-002e88e81a07",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C17",
+      "claim": "Genes involved in inflammation, immune responses, chemokine signaling pathways, and sensing of viral nucleic acids were up-regulated in AGS patient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes involved in inflammation, immune responses, chemokine signaling pathways, and sensing of viral nucleic acids were up-regulated in AGS patient cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing upregulation of immune-related genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "85ee5008-00b5-40eb-9ecf-5154161aebb4",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C18",
+      "claim": "Genes for the major pro-inflammatory cytokine IL1\u03b2 and the CXCL5 and CXCL6 chemokines were up-regulated in several AGS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes for the major pro-inflammatory cytokine IL1\u03b2 (Zhao et al., 2013b) and the CXCL5 and CXCL6 chemokines were up-regulated in several AGS patients (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data and referenced figures showing gene expression changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "90310a91-c394-4a0d-9246-fc96926a734f",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C19",
+      "claim": "Genes involved in anti-viral responses (RSAD2, OASL, IGF2BP1, BST2), in particular interferon-inducible genes, were up-regulated in multiple AGS samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes involved in anti-viral responses (RSAD2, OASL, IGF2BP1, BST2), in particular interferon-inducible genes, were also up-regulated in multiple AGS samples (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data and referenced figures showing upregulation of antiviral genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "27e505a9-7bdf-470c-9fd1-4a88fc36c8d9",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C20",
+      "claim": "RNase H2 generally degrades RNA:DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "RNase H2 generally degrades RNA:DNA hybrids (Cerritelli and Crouch, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on RNase H2 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5d436375-0f14-4634-bafb-a3d6c938c210",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C21",
+      "claim": "RNase H2 is specifically responsible for removing single ribonucleotides that are misincorporated during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "and is specifically responsible for removing single ribonucleotides that are misincorporated during DNA replication (Reijns et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on RNase H2 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "9f336a2d-346b-4408-8547-00fb8891f2ec",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C22",
+      "claim": "Cells from two patients mutated in RNASEH2B (AGS2) showed a twofold to threefold increase in ribonucleotide labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from two patients mutated in RNASEH2B (AGS2) showed a twofold to threefold increase in labeling (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from nick translation assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "09b8eed9-585f-4a6c-9b5f-9be60be1c433",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C23",
+      "claim": "Cells from two patients mutated in the catalytic RNase H2A subunit (AGS4) showed a pronounced 10\u201325-fold increase in ribonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from two patients mutated in the catalytic RNase H2A subunit (AGS4) showed a pronounced 10\u201325-fold increase in ribonucleotides (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from nick translation assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "9ee7a216-d309-494a-a5ac-e87cc44ea8cd",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C24",
+      "claim": "No significant increase in ribonucleotide loads could be detected in patients mutated in TREX1 (AGS1) or SAMHD1 (AGS5).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, no significant increase in ribonucleotide loads could be detected in patients mutated in TREX1 (AGS1) or SAMHD1 (AGS5) (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from nick translation assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b64b9ab2-9277-4c69-a4ca-4f2568bb8453",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C25",
+      "claim": "AGS and control fibroblasts share a total of 15,897 DRIP peaks representing approximately 141 megabases of genomic space.",
+      "claim_type": "EXPLICIT",
+      "source": "DRIP-seq revealed that AGS and control fibroblasts share a total of 15,897 DRIP peaks representing approximately 141 megabases of genomic space (Figure 3A,C, Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis and referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8a7d1954-e71f-4754-915d-099349785766",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C26",
+      "claim": "32% of common DRIP peaks mapped to promoters or gene ends, which represents a strong enrichment over expected genomic distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior studies, 32% of these peaks mapped to promoters or gene ends, which represents a strong enrichment over expected genomic distribution and further indicates that gene ends correspond to R-loop formation hotspots (Ginno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis and comparison to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "315716a9-ae99-48ca-a0c7-95f8a6133f5d",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C27",
+      "claim": "56% of the R-loop signal mapped onto gene bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our high-coverage DRIP-seq data also revealed that 56% of the R-loop signal mapped onto gene bodies, suggesting that RNA\u2013DNA entanglements during transcription are prevalent (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8f8c48b5-5559-40ac-bcdc-4ab70a016eb1",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C28",
+      "claim": "Only 15.6% of common R-loop peaks mapped to intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, only 15.6% of common R-loop peaks mapped to intergenic regions, consistent with a predominant genic origin for R-loop formation (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5fec7673-252a-4f18-9823-4fd6945be84a",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C29",
+      "claim": "Common DRIP peaks showed strong overlap with GC skew.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, common DRIP peaks showed strong overlap with GC skew (Figure 3B), a key sequence determinant that favors co-transcriptional R-loop formation (Ginno et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis and a citation to prior literature on GC skew and R-loops.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "bcceb3a0-7795-4115-8b3d-4c48eb54303c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C30",
+      "claim": "A large excess of DRIP peaks (33,781 in total) was observed specifically in AGS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relative agreement between AGS and control R-loop profiles over a broad set of common peaks, a large excess of DRIP peaks (33,781 in total) was observed specifically in AGS cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ca34f665-403d-4d8e-acc1-3c7352fec01c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C31",
+      "claim": "AGS-specific DRIP peaks in each AGS subtype were both threefold to fourfold greater in numbers and occupied a three to four times larger genomic space than control-specific peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "While a small number of DRIP peaks were also unique to the control sample, AGS-specific DRIP peaks in each AGS subtype were both threefold to fourfold greater in numbers, and when combined, occupied a three to four times larger genomic space than control-specific peaks (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "25b0ada8-7ca3-43d2-8f8d-03639b3b8892",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C32",
+      "claim": "On average, AGS-specific DRIP peaks occupied an additional 23.8 megabases of DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, AGS-specific DRIP peaks occupied an additional 23.8 megabases of DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ca204934-f6d9-4030-b566-08dc136a153e",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C33",
+      "claim": "AGS-specific DRIP peaks were threefold to sevenfold less likely to overlap with GC skew than common DRIP peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike common DRIP peaks, AGS-specific DRIP peaks were threefold to sevenfold less likely to overlap with GC skew (Figure 3B), suggesting that they may originate according to a non-canonical mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis and includes an inference about mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ea30b894-da54-48fd-b31d-acada229bb13",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C34",
+      "claim": "AGS-specific DRIP peaks were depleted at transcription start sites (TSSs) and transcription termination sites (TTSs).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, AGS-specific DRIP peaks were depleted at transcription start sites (TSSs) and transcription termination sites (TTSs) (Figure 3D), where R-loops are typically observed (Ginno et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in Figure 3D and comparison to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "3f6a8595-b0d6-4213-b165-e8938e0c0431",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C35",
+      "claim": "AGS2- and AGS4-specific peaks were significantly enriched over intergenic portions of the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AGS2- and AGS4-specific peaks were significantly enriched over intergenic portions of the human genome (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "6ebaf2f0-b4f9-4ff3-baff-0882a44a3fda",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C36",
+      "claim": "AGS1- and AGS5-specific DRIP peaks were enriched over gene body regions.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS1- and AGS5-specific DRIP peaks were instead enriched over gene body regions (Figure 3D, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "9e0cb956-3181-4608-8d0b-aa8d2fecb9c7",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C37",
+      "claim": "All AGS-specific DRIP peaks were significantly enriched in repeat classes corresponding to long interspersed nuclear elements (LINE) and long terminal repeats (LTR) retrotransposons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all AGS-specific DRIP peaks were significantly enriched in repeat classes corresponding to long interspersed nuclear elements (LINE) and long terminal repeats (LTR) retrotransposons (Figure 3D,F,G, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DRIP-seq data analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "d835eddc-08b2-4a21-b565-a5e4f9310e55",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C38",
+      "claim": "All AGS cells displayed significant, global, DNA hypomethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "All AGS cells displayed significant, global, DNA hypomethylation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MethylC-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "440824b0-ba4f-461a-90f4-adbf82613f89",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C39",
+      "claim": "AGS2 and 4 cells showed profound DNA hypomethylation, with a \u223c20% reduction in genomic methylation levels overall.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS2 and 4 cells showed profound DNA hypomethylation, with a \u223c20% reduction in genomic methylation levels overall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "da466ba6-fd74-4f0e-95df-16a19fa00e83",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C40",
+      "claim": "AGS1 and 5 showed a more moderate, but still highly significant, 5\u201310% reduction in DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS1 and 5 showed a more moderate, but still highly significant, 5\u201310% reduction in DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "27475faa-2f0a-4ebf-addc-1259cbb85980",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C41",
+      "claim": "The reduction in DNA methylation affected TSSs and TTSs and spread along the lengths of entire chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction affected TSSs and TTSs (Figure 4B,C; Figure 4\u2014figure supplement 1A) and spread along the lengths of entire chromosomes (Figure 4D), significantly impacting nearly all genomic compartments, including genic, intergenic, and repeat regions (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ab65263a-3b9c-4bf2-bc33-698d9b511618",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C42",
+      "claim": "LINE and LTR elements were significantly hypomethylated in all AGS subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of repeat classes further revealed that LINE and LTR elements were significantly hypomethylated in all AGS subtypes (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "c2e64cef-3416-4bab-97b0-1a3180e42611",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C43",
+      "claim": "Pyrosequencing assays targeting human-specific LINE-1 elements revealed a small but significant decrease in DNA methylation over 4 CpG sites carried at the LINE-1 5\u2032-UTR promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyrosequencing assays targeting human-specific LINE-1 elements also revealed a small but significant decrease in DNA methylation over 4 CpG sites carried at the LINE-1 5\u2032-UTR promoter (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pyrosequencing data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8b87faa4-20e3-4f9c-ad41-8059896ce22e",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C44",
+      "claim": "SINE elements, satellite repeats, and other repeat types were significantly hypomethylated in AGS2 and 4 but not always in AGS1 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "SINE elements, satellite repeats, and other repeat types were significantly hypomethylated in AGS2 and 4 but not always in AGS1 and 5 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "bf9aaf8b-ee45-49f4-bde3-197ceba458f1",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C45",
+      "claim": "The profound reduction in DNA methylation was not caused by any detectable deregulation in the expression of genes encoding for the DNA methylation machinery or of components of a putative DNA de-methylation system.",
+      "claim_type": "EXPLICIT",
+      "source": "This profound reduction in DNA methylation was not caused by any detectable deregulation in the expression of genes encoding for the DNA methylation machinery or of components of a putative DNA de-methylation system (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "08aeed42-506f-4182-82f7-f0bf8dcb0cf7",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C46",
+      "claim": "PMDs in control fibroblasts were generally shared by AGS fibroblasts but not by embryonic stem (ES) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PMDs in control fibroblasts were generally shared by AGS fibroblasts but not by embryonic stem (ES) cells (Figure 5A; Figure 5\u2014figure supplement 1A), consistent with the notion that they represent fibroblast-specific PMDs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis shown in the referenced figures and includes an inference about cell-type specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "3fe7041b-4b82-4db3-a171-6f289f87780c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C47",
+      "claim": "AGS2 and AGS4 fibroblasts displayed broader PMDs than the control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS2 and AGS4 fibroblasts displayed broader PMDs than the control cells, while the size of PMD regions in AGS1 and AGS5 cells was relatively unchanged (Figure 5A; Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "a182da22-ed98-488a-a9de-9f5826d646fa",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C48",
+      "claim": "Common PMDs resided within silenced genomic regions enriched for Lamin-B1 and the silencing mark histone H3 Lysine 9 trimethylation (H3K9me3).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the chromatin features associated with PMDs showed that common PMDs resided within silenced genomic regions enriched for Lamin-B1, a component of the nuclear lamina, and the silencing mark histone H3 Lysine 9 trimethylation (H3K9me3), as described previously (Berman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of chromatin features overlapping with PMDs and a citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "dbe4c7c7-26f6-414a-afc4-0b2a07e059e7",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C49",
+      "claim": "Common PMDs were strongly depleted for the H3K27me3 mark.",
+      "claim_type": "EXPLICIT",
+      "source": "Common PMDs were also strongly depleted for the H3K27me3 mark, a modification associated with facultative heterochromatin and silencing over developmental genes (Figure 5B, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of chromatin features shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "55904eec-d69a-4dfd-adc0-a16c8119f7b5",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C50",
+      "claim": "AGS-specific PMDs, while still associated with Lamin-B1 and to some extent with H3K9me3, were enriched for H3K27me3, particularly over regions corresponding normally to large H3K27me3 blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AGS-specific PMDs, while still associated with Lamin-B1 and to some extent with H3K9me3, were enriched for H3K27me3, particularly over regions corresponding normally to large H3K27me3 blocks (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of chromatin features shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "6f8107c2-efcd-47c8-be83-4e7ad88d8954",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C51",
+      "claim": "In AGS1 and AGS5 fibroblasts, DRIP peaks, whether common or AGS-unique, mostly landed in HMD regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In AGS1 and AGS5 fibroblasts, which showed only moderate DNA hypomethylation and limited additional PMDs, DRIP peaks, whether common or AGS-unique, mostly landed in HMD regions (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by overlap analysis between DRIP-seq and methylation data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "68ff79c2-ec3e-4afe-8c30-6d3577824997",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C52",
+      "claim": "Nearly half of the AGS-unique DRIP peaks in AGS2 and AGS4 fibroblasts landed on PMD regions while only 10\u201315% of common DRIP peaks matched to PMDs in these two samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, nearly half of the AGS-unique DRIP peaks in AGS2 and AGS4 fibroblasts landed on PMD regions while only 10\u201315% of common DRIP peaks matched to PMDs in these two samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by overlap analysis between DRIP-seq and methylation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "84953088-6a34-42aa-975d-51874885f017",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C53",
+      "claim": "Two-thirds of PMD-contained AGS-unique DRIP peaks matched to AGS-specific PMDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two-thirds of these PMD-contained AGS-unique DRIP peaks matched to AGS-specific PMDs (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by overlap analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "931a1531-c16e-4ed9-a901-ca355348973d",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C54",
+      "claim": "The DNA methylation levels measured over AGS1-, AGS2-, and AGS4- (but not AGS5) unique DRIP peaks were significantly lower in their own respective samples compared to the DNA methylation levels of that same regions measured in control.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the DNA methylation levels measured over AGS1-, AGS2-, and AGS4- (but not AGS5) unique DRIP peaks were significantly lower in their own respective samples compared to the DNA methylation levels of that same regions measured in control (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by methylation analysis of DRIP peak regions shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "9081444f-986e-4326-81ad-8de497920324",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C55",
+      "claim": "RNASEH2A KO cells showed higher levels of gamma H2AX, indicative of an activated DNA damage signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from previous reports (Reijns et al., 2012; Gunther et al., 2015), we observed higher levels of gamma H2AX in RNASEH2A KO cells (Figure 6B), indicative of an activated DNA damage signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunocytochemistry data shown in Figure 6B and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5198ddc5-0739-4f3a-b0b4-9c61d29d6cbe",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C56",
+      "claim": "Knockout of the RNASEH2A gene triggers the reactivation of the silent GFP reporter in HeLa-GFP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to scramble, RNASEH2A KO cells showed a clear increase in the number and brightness of GFP-positive cells (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "77637620-6984-4cb9-8ff7-00cd373549b6",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C57",
+      "claim": "GFP expression in RNASEH2A KO cells was 14-fold higher than in scramble cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression in RNASEH2A KO cells was 14-fold higher than in scramble cells, as measured by Western blot (Figure 6D), demonstrating reactivation of the GFP reporter gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "d8b3f54b-916d-4f3e-a24e-1fc34d752077",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C58",
+      "claim": "RNASEH2A KO cells showed significant DNA hypomethylation relative to scramble at two 5\u2032-UTR portions common to LINE-1 elements.",
+      "claim_type": "EXPLICIT",
+      "source": "RNASEH2A KO cells showed significant DNA hypomethylation relative to scramble (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by bisulfite sequencing data shown in Figure 6E and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "f497132f-221e-4319-830d-c31b3be56975",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C59",
+      "claim": "RNASEH2A deficiency has a direct effect in triggering DNA hypomethylation and gene reactivation at least for the loci studied.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a direct effect of RNASEH2A deficiency in triggering DNA hypomethylation and gene reactivation at least for the loci studied here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the CRISPR knockout experiments showing DNA hypomethylation and GFP reactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "cf82ee97-9f16-4cb2-ad96-704833e1bafe",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C60",
+      "claim": "The DNA hypomethylation reported in AGS is stronger than that previously reported in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "While additional samples encompassing other AGS mutations subtypes will need to be studied to confirm this trend, this observation nonetheless reinforces the similarities between AGS and SLE, although the DNA hypomethylation reported here is stronger than that previously reported in SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the magnitude of DNA hypomethylation observed in this study to prior reports in SLE.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "2d7f5c00-ef90-4a23-9715-467638ed745c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C61",
+      "claim": "In AGS2 and AGS4, the DNA hypomethylation led to the formation of AGS-specific PMDs in addition to those normally observed in fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In AGS2 and AGS4, where the effect was most marked, the DNA hypomethylation led to the formation of AGS-specific PMDs in addition to those normally observed in fibroblasts (Lister et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MethylC-seq data analysis and a citation to prior literature on fibroblast PMDs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5b1f84b7-4b9c-4030-8783-1bbeb2811066",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C62",
+      "claim": "AGS-specific PMDs, but not common PMDs, were enriched over regions marked by H3K27me3, a mark of facultative heterochromatin associated with developmental silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AGS-specific PMDs, but not common PMDs, were also enriched over regions marked by H3K27me3, a mark of facultative heterochromatin associated with developmental silencing (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chromatin feature analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "02c7db93-f313-4923-b37c-ed519320800a",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C63",
+      "claim": "Silent, condensed genomic regions may be intrinsically prone to becoming PMDs, and this tendency is made worse by AGS2 and AGS4 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that silent, condensed genomic regions, may in fact be intrinsically prone to becoming PMDs, and that this tendency is made worse by AGS2 and AGS4 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observation that AGS-specific PMDs overlap with silenced chromatin regions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "2254ed21-2ef5-452b-9c0e-64800b46183a",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C64",
+      "claim": "Defects in TREX1, RNase H2, and SAMHD1 all trigger the DNA damage response and are associated with increased genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "While the precise mechanism responsible for DNA hypomethylation in AGS remains to be elucidated, it is worth noting that defects in TREX1, RNase H2, and SAMHD1 all trigger the DNA damage response and are associated with increased genomic instability (Yang et al., 2007; Reijns et al., 2012; Clifford et al., 2014; Kretschmer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature on DNA damage in AGS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "97c553ec-1d49-4ab8-9925-9d715daa3d36",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C65",
+      "claim": "RNase H2 associates with the DNA replication fork through the PCNA (proliferating cell nuclear antigen) clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "RNase H2 in fact associates with the DNA replication fork through the PCNA (proliferating cell nuclear antigen) clamp (Bubeck et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on RNase H2 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b07b5414-1d58-4b3e-978e-b316638e4bd7",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C66",
+      "claim": "TREX1 was found to translocate to the nucleus upon replication stress where it might be involved in processing aberrant DNA replication intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "and TREX1 was found to translocate to the nucleus upon replication stress where it might be involved in processing aberrant DNA replication intermediates (Yang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on TREX1 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "1a5a1e2b-de5c-4b39-9b5e-50e13e532252",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C67",
+      "claim": "The replication stress caused by AGS mutations may indirectly result in defects in replication-coupled, DNMT1-mediated DNA methylation maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that the replication stress caused by AGS mutations indirectly results in defects in replication-coupled, DNMT1-mediated DNA methylation maintenance (Figure 7) (Law and Jacobsen, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanistic proposal based on known connections between replication and DNA methylation maintenance.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b33eae1d-6654-4ad9-9599-b1b082994af9",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C68",
+      "claim": "The PCNA clamp unloads from the lagging strand of stalled DNA replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this notion, a recent report shows that the PCNA clamp unloads from the lagging strand of stalled DNA replication forks (Yu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on PCNA behavior at stalled forks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ef5be667-924d-4a96-8f9e-cd510d92f151",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C69",
+      "claim": "The DNMT1 maintenance DNA methyltransferase binds to PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the DNMT1 maintenance DNA methyltransferase binds to PCNA (Leonhardt et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on DNMT1-PCNA interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "57bd86f7-a7fb-4589-a588-9edba31f9728",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C70",
+      "claim": "DNMT1 requires PCNA binding for efficient activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and requires PCNA binding for efficient activity (Schermelleh et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on DNMT1 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "f1865f29-f675-4457-8157-f435ffdc1eba",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C71",
+      "claim": "Replication stress may lead to inefficient DNA methylation maintenance, particularly in silent, compact regions of the genome such as heterochromatic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "it is plausible that replication stress may lead to inefficient DNA methylation maintenance, particularly in silent, compact regions of the genome such as heterochromatic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic proposal connecting replication stress to DNA hypomethylation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "a016a8c2-7757-45d9-81f0-402cfa3afc57",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C72",
+      "claim": "5-aza-2\u2032-deoxycytidine causes genome-wide DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 5-aza-2\u2032-deoxycytidine, a drug best known as a DNA-demethylating agent, in fact causes genome-wide DNA damage (Karpf et al., 1999; Palii et al., 2008; Orta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature on 5-aza-2\u2032-deoxycytidine effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "9345f5ed-3fc0-4ed1-9aa9-6241b6b6af1a",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C73",
+      "claim": "Pronounced DNA hypomethylation causes genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, pronounced DNA hypomethylation is also known to cause genomic instability (Jackson-Grusby et al., 2001; Chen et al., 2007; Liao et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature on DNA hypomethylation and genomic instability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "b517eff9-6390-4ce7-922a-ad9791f1b846",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C74",
+      "claim": "There may be a positive feedback loop that links and amplifies defects in DNA replication stress and DNA hypomethylation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a possible positive feedback loop that may link and amplify defects in either pathways (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative proposal about a feedback mechanism based on the bidirectional relationship between DNA damage and hypomethylation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ab516663-5be5-4c48-b85d-a7be3e00a1d3",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C75",
+      "claim": "RNA-seq characterization only identified a modest number of up- and down-regulated genes that were enriched for ontologies reflecting the biology of the disease itself, such as immunomodulatory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our RNA-seq characterization only identified a modest number of up- and down-regulated genes that were enriched for ontologies reflecting the biology of the disease itself, such as immunomodulatory genes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5aebe76c-53c5-4155-95b4-27b19a054737",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C76",
+      "claim": "There is no evidence for a global alteration of transcriptional profiles as a result of the DNA hypomethylation in AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "There is therefore no evidence for a global alteration of transcriptional profiles as a result of the DNA hypomethylation in AGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNA-seq data showing limited transcriptional changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "0d7c0dc7-c5b9-4056-a015-27089da570ca",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C77",
+      "claim": "There is a general absence of direct connections between DNA hypomethylation and gene reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the general absence of direct connections between DNA hypomethylation and gene reactivation (Bestor et al., 2015), including in extremely hypomethylated mouse ES cells (Li et al., 1992; Tsumura et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on DNA methylation and gene expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "4c998248-893d-4d1a-bf21-4bdef945aeb9",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C78",
+      "claim": "DNA methylation is the primary silencing force ensuring retrotransposon control in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA methylation is indeed the primary silencing force ensuring retrotransposon control in somatic cells (Walsh et al., 1998; Yoder and Bestor, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on DNA methylation and transposon silencing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "cdceed5a-339d-40cf-a480-578296fad6ab",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C79",
+      "claim": "The cGAS-STING pathway activates the interferon response upon sensing of cytosolic DNA and RNA:DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "The cGAS-STING pathway activates the interferon response upon sensing of not only cytosolic DNA (Sun et al., 2013), but also RNA:DNA hybrids (Mankan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on cGAS-STING pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "f63f7123-e6bb-45a3-857b-e9361330ef26",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C80",
+      "claim": "Multiple dsDNA break repair proteins can sense damaged DNA and induce a STING-mediated type I IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, several studies reported that multiple dsDNA break repair proteins can sense damaged DNA and induce a STING-mediated type I IFN response (Zhang et al., 2011; Kondo et al., 2013; Hartlova et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on DNA damage sensing and interferon response.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "69b99de5-98f5-4455-920c-518773a48128",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C81",
+      "claim": "The endosomal receptor TLR9 has been identified as an RNA:DNA hybrid sensor in addition to its canonical role in sensing unmethylated CpG-rich DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides STING, it is worth noting that the endosomal receptor TLR9 has also been identified as an RNA:DNA hybrid sensor (Rigby et al., 2014) in addition to its canonical role in sensing unmethylated CpG-rich DNA (Hemmi et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on TLR9 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "95e001bb-1063-4b3c-8188-5123b732479f",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C82",
+      "claim": "AGS mutations-induced DNA hypomethylation may contribute to the increased interferon response in AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that AGS mutations-induced DNA hypomethylation also contributes to the increased interferon response in AGS (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative proposal about how DNA hypomethylation might contribute to interferon response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ed0abf72-7be6-4084-8660-02cf3b87e50c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C83",
+      "claim": "Treatment of colon adenocarcinoma with 5-aza-2\u2032-deoxycytidine triggers a prominent interferon response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, treatment of colon adenocarcinoma with 5-aza-2\u2032-deoxycytidine, which causes DNA damage and DNA demethylation, triggers a prominent interferon response (Karpf et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on 5-aza-2\u2032-deoxycytidine effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "584fc369-f2fa-47d7-8900-615b5c8f69ac",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C84",
+      "claim": "R-loops are long RNA:DNA hybrid structures that form co-transcriptionally upon re-annealing of the RNA transcript to the template DNA strand, forcing the non-template strand into a single-stranded state.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops are long RNA:DNA hybrid structures that form co-transcriptionally upon re-annealing of the RNA transcript to the template DNA strand, forcing the non-template strand into a single-stranded state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about R-loops based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "16d09fe2-80a9-4852-82c3-c605ba647ffb",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C85",
+      "claim": "R-loops are enriched at the 5\u2032- and 3\u2032-ends of human genes where they play roles in epigenetic control and transcription regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops are enriched at the 5\u2032- and 3\u2032-ends of human genes where they play roles in epigenetic control and transcription regulation (Ginno et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on R-loop function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "507c6e8b-7c1c-48a9-83c9-f5cf6984e430",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C86",
+      "claim": "RNA transcripts may serve as a template for the repair of double-strand DNA breaks upon hybridization to DNA via Rad52.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently described that RNA transcripts may serve as a template for the repair of double-strand DNA breaks upon hybridization to DNA via Rad52, a key member of the homologous recombination pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reflects recent findings in the literature about RNA-templated DNA repair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "0386473c-1c3b-4ad4-9164-40132f181ee5",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C87",
+      "claim": "RNase H2 activity was shown to block the formation of RNA:DNA hybrids during Rad52-mediated DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNase H2 activity was shown to block the formation of these RNA:DNA hybrids (Keskin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature on RNase H2 and DNA repair.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "dd4073d5-eff0-4807-a5e7-5b368ac6c3e2",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C88",
+      "claim": "Some of the DNA breaks caused by AGS mutations and replication stress may be repaired according to a pathway prone to RNA:DNA hybrid formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that some of the DNA breaks caused by AGS mutations and replication stress are repaired according to a pathway prone to RNA:DNA hybrid formation (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanistic proposal about how RNA:DNA hybrids might form during DNA repair in AGS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "7be6256d-80fb-43a6-b512-76af2d673d48",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C89",
+      "claim": "Regions experiencing DNA hypomethylation as a result of AGS mutations may undergo spurious transcription that leads to co-transcriptional R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this overlap is that regions experiencing DNA hypomethylation as a result of AGS mutations may undergo spurious transcription that lead to co-transcriptional R-loop formation (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanistic proposal about how DNA hypomethylation might lead to RNA:DNA hybrid formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "876c7e7b-c0df-417b-bc05-1755e336d9e5",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C90",
+      "claim": "AGS fibroblasts exhibit an activated immune, inflammatory, and anti-viral state.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS fibroblasts thus exhibit an activated immune, inflammatory, and anti-viral state, underscoring the systemic nature of the disease and indicating that fibroblasts are an appropriate cell type to study AGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the RNA-seq data showing upregulation of immune and inflammatory genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "5dbbb38f-7715-4667-97dc-c2fde721bca2",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C91",
+      "claim": "Fibroblasts are an appropriate cell type to study AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "AGS fibroblasts thus exhibit an activated immune, inflammatory, and anti-viral state, underscoring the systemic nature of the disease and indicating that fibroblasts are an appropriate cell type to study AGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that fibroblasts show disease-relevant phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "bcb8380a-1cb6-41e1-9af9-f7b7622d10bc",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C92",
+      "claim": "Aberrant accumulation of ribonucleotides may contribute to the severity of the disease in RNase H2-defective AGS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while aberrant accumulation of ribonucleotides may contribute to the severity of the disease in RNase H2-defective AGS patients, it is unlikely to represent a common form of disease-causing nucleic acids in AGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observation that only RNase H2-deficient cells accumulate ribonucleotides.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "1afd5dfa-7894-4d9a-b8bf-cad93e81a8c4",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C93",
+      "claim": "Ribonucleotide accumulation is unlikely to represent a common form of disease-causing nucleic acids in AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while aberrant accumulation of ribonucleotides may contribute to the severity of the disease in RNase H2-defective AGS patients, it is unlikely to represent a common form of disease-causing nucleic acids in AGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that ribonucleotide accumulation is specific to RNase H2-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "ff7a1ae0-98a1-494c-ad9e-39dfc8392418",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C94",
+      "claim": "All AGS subtypes are burdened by higher loads of RNA:DNA hybrids in their genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that all AGS subtypes are burdened by higher loads of RNA:DNA hybrids in their genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the DRIP-seq data showing excess AGS-specific peaks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "44b90b79-cfab-4503-9159-5663a3f9f6dc",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C95",
+      "claim": "AGS-specific RNA:DNA hybrids may originate according to a non-canonical mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike common DRIP peaks, AGS-specific DRIP peaks were threefold to sevenfold less likely to overlap with GC skew (Figure 3B), suggesting that they may originate according to a non-canonical mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative inference based on the lack of GC skew overlap.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8108e34d-4acc-4d86-88fa-9dfba5d5fcad",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C96",
+      "claim": "AGS mutations in TREX1, RNASEH2A, RNASEH2B, and SAMHD1 are associated with the accumulation of RNA:DNA hybrids over repeat-rich intergenic and gene body regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results indicate that AGS mutations in TREX1, RNASEH2A, RNASEH2B, and SAMHD1 are associated with the accumulation of RNA:DNA hybrids over repeat-rich intergenic and gene body regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the DRIP-seq data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "76ccb098-5858-4788-bf7c-1cb886a3e098",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C97",
+      "claim": "The two main features observed in AGS samples, excessive RNA:DNA hybrid formation and DNA hypomethylation, often overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show a remarkable agreement between regions that accumulate RNA:DNA hybrids in the AGS2, AGS4, and to a lesser extent AGS1 subtypes and regions that undergo DNA hypomethylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the overlap analysis between DRIP-seq and methylation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "fe9b0138-a7b8-41e6-bdd8-216617fe3afc",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C98",
+      "claim": "TREX1, RNase H2, and SAMHD1 mutations share common molecular abnormalities including genome-wide DNA hypomethylation and accumulation of RNA:DNA hybrid species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore provide the first evidence that TREX1, RNASEH2, and SAMHD1 mutations share common molecular abnormalities including genome-wide DNA hypomethylation and accumulation of RNA:DNA hybrid species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the combined DRIP-seq and MethylC-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "86506430-c8ea-4dfb-903a-cc04125f58ea",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C99",
+      "claim": "This study provides the first evidence of epigenetic perturbations in AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data suggest that RNA:DNA hybrids may represent a common immunogenic form of nucleic acids in AGS and provide the first evidence of epigenetic perturbations in AGS, furthering the links between AGS and SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the novel DNA methylation findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "1d2b52ea-2ae5-4b70-9623-0652c0f9144f",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "claim_id": "C100",
+      "claim": "RNA:DNA hybrids may represent a common immunogenic form of nucleic acids in AGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data suggest that RNA:DNA hybrids may represent a common immunogenic form of nucleic acids in AGS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observation that all AGS subtypes accumulate RNA:DNA hybrids.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eb4508e2-fe67-42e9-a062-448795b33b9c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AGS is a severe inflammatory disorder with clinical and genetic overlap with SLE, caused by mutations in nucleic acid-degrading enzymes, and both diseases are characterized by excessive interferon alpha expression. DNA hypomethylation has been implicated in lupus pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 establish the background knowledge about AGS and SLE based on established literature and prior citations. These definitional and contextual claims are well-supported by multiple literature citations and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AGS fibroblasts display an activated antiviral and immune response with interferon signature, with 98 genes up-regulated and 209 down-regulated, including inflammatory cytokines and chemokines. However, only a modest number of genes were differentially expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19, C75, C90-C91 are supported by RNA-seq data presented in Figure 1 and supplementary files. The transcriptional profiling shows clear upregulation of immune and interferon-related genes, though the authors acknowledge the changes are modest in scope. The data support the conclusion that fibroblasts are appropriate for studying AGS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ribonucleotide accumulation in genomic DNA is specific to RNase H2-deficient AGS patients (AGS2 and AGS4), with 2-3 fold increase in AGS2 and 10-25 fold increase in AGS4, but not detected in AGS1 or AGS5. This suggests ribonucleotides are unlikely to be a common disease-causing nucleic acid species across all AGS subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24, C92-C93 are supported by nick translation assay data shown in Figure 2. The experimental approach is appropriate and includes proper controls (yeast wild-type and rnh201\u0394). The conclusion that ribonucleotide accumulation is specific to RNase H2 mutations is well-supported, though sample sizes are limited (n=2 patients per subtype).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "0f61255e-9a1d-404f-ae71-fa86ac035785",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All AGS subtypes accumulate excessive RNA:DNA hybrids genome-wide, with 33,781 AGS-specific DRIP peaks occupying an additional 23.8 megabases. AGS-specific peaks differ from canonical R-loops: they show reduced GC skew overlap, are depleted at TSS/TTS, enriched in intergenic regions (AGS2/4) or gene bodies (AGS1/5), and enriched in LINE and LTR retrotransposons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C37, C94-C96 are supported by comprehensive DRIP-seq data shown in Figure 3 and supplements. The analysis includes appropriate controls and statistical testing. The observation that AGS-specific peaks differ from canonical R-loops (reduced GC skew, different genomic distribution) is well-documented. However, the mechanistic interpretation (C95) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "208a0679-4aae-43f4-8891-408c9abe51fd",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All AGS fibroblasts display significant global DNA hypomethylation, with AGS2/4 showing profound ~20% reduction and AGS1/5 showing moderate 5-10% reduction. The hypomethylation affects all genomic compartments including LINE and LTR elements, and is not caused by deregulation of DNA methylation machinery genes. This represents the first evidence of epigenetic perturbations in AGS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38-C45, C60-C61, C98-C99 are supported by MethylC-seq data shown in Figure 4 and supplements. The genome-wide methylation analysis is comprehensive and includes appropriate validation by pyrosequencing (C43). The coverage is modest (3.21-7.82X) but sufficient for genome-wide trends. The claim of being 'first evidence' (C99) is supported as no prior AGS methylation studies are cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AGS2 and AGS4 fibroblasts display broader partially methylated domains (PMDs) than controls, with AGS-specific PMDs enriched for H3K27me3 marks (unlike common PMDs), suggesting silent condensed genomic regions are prone to becoming PMDs and this tendency is worsened by AGS2/4 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50, C62-C63 are supported by MethylC-seq analysis and chromatin feature overlap shown in Figure 5. The HMM-based PMD calling is appropriate. The enrichment of AGS-specific PMDs over H3K27me3 regions is well-documented. However, the mechanistic interpretation (C63) is speculative and acknowledged as such by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AGS-specific RNA:DNA hybrids often occur within DNA hypomethylated regions. In AGS2/4, nearly half of AGS-unique DRIP peaks land in PMD regions (vs 10-15% for common peaks), with two-thirds matching AGS-specific PMDs. DNA methylation levels at AGS1/2/4-unique DRIP peaks are significantly lower than in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C54, C97 are supported by integrated analysis of DRIP-seq and MethylC-seq data shown in Figure 5. The overlap analysis is quantitative and shows clear enrichment of AGS-specific DRIP peaks in hypomethylated regions, particularly for AGS2/4. This represents a key finding linking the two main molecular abnormalities observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "10240bf5-0a4f-4a24-b6ec-1e3de6d7fcb7",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 knockout of RNASEH2A in HeLa cells causes DNA damage (elevated \u03b3H2AX), triggers 14-fold reactivation of a silent GFP reporter, and induces significant DNA hypomethylation at LINE-1 elements, suggesting a direct effect of RNASEH2A deficiency on DNA hypomethylation and gene reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are supported by CRISPR knockout experiments shown in Figure 6, including Western blots, immunocytochemistry, microscopy, and bisulfite sequencing. The experiments include appropriate scramble controls. However, the conclusion of 'direct effect' (C59) is somewhat overstated as the experiments were limited to specific loci and a single cell line, and the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8da20431-9361-4d25-bffe-21efa6d438cd",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There is no evidence for global alteration of transcriptional profiles as a result of DNA hypomethylation in AGS, consistent with the general absence of direct connections between DNA hypomethylation and gene reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by the RNA-seq data showing only modest transcriptional changes despite profound DNA hypomethylation. This negative result is important and consistent with prior literature (C77). However, the analysis may be limited by the specific cell type and developmental stage studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that replication stress caused by AGS mutations may indirectly result in defective DNMT1-mediated DNA methylation maintenance, potentially through PCNA clamp unloading at stalled forks. A positive feedback loop may link DNA damage and hypomethylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C74 represent a mechanistic model based on integration of prior literature (C64-C70, C72-C73) with the current findings. While the model is plausible and well-reasoned, it remains speculative (C67, C71, C74) and lacks direct experimental validation in the current study. The proposed mechanism requires further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "118001ec-436f-4afb-b7cb-880764d583c1",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNA:DNA hybrids may represent a common immunogenic form of nucleic acids in AGS. DNA hypomethylation may contribute to interferon response through sensing by cGAS-STING or TLR9 pathways, which can detect RNA:DNA hybrids and unmethylated DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C83, C100 propose mechanisms for how the observed molecular abnormalities trigger immune responses. While the pathways cited are well-established (C79-C81, C83), the specific connection to AGS pathology remains speculative (C82, C100). The study demonstrates accumulation of RNA:DNA hybrids and DNA hypomethylation but does not directly test their immunogenic potential or pathway involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    },
+    {
+      "id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b",
+      "content_id": "3d8b88bf-34d8-42b8-98f1-734dc2fbf6fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose two potential mechanisms for RNA:DNA hybrid accumulation in AGS: (1) DNA breaks may be repaired via Rad52-mediated pathways prone to RNA:DNA hybrid formation, or (2) hypomethylated regions may undergo spurious transcription leading to co-transcriptional R-loop formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C89 present mechanistic hypotheses for RNA:DNA hybrid formation. While based on established R-loop biology (C84-C85) and recent findings about RNA-templated repair (C86-C87), both proposed mechanisms (C88-C89) are speculative and lack direct experimental support in the current study. These remain testable hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:59.137101Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "15fcd2ba-162c-4db1-aab5-0a503dc20f0f",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "5981e122-3db7-4983-b86a-0ee59f766fd3",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "58a061db-acff-4085-b717-7a887313cc8d",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "b0b0845b-f9c4-4000-b4e0-1281b876ef41",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "9c9ec4cf-c723-452d-b9a9-4a897a3aed28",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "aca09d1b-78c7-46c3-960e-d9f3a2ceb93d",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "06cb72a7-9546-4467-86cb-5cc3fc9c93a1",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "12155869-78c2-4d13-812c-a9b8690c8ae0",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "dad4fe21-b6f6-49e7-b36e-e7f290e82325",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "44b7528d-9332-4ce1-ab34-ef507b7db3cf",
+      "result_id": "eb4508e2-fe67-42e9-a062-448795b33b9c"
+    },
+    {
+      "claim_id": "ba9faa26-7206-4c94-8a29-c25b1e0fb55d",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "bde11635-6697-40ce-bc56-f3316a9c0694",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "ff845413-e626-42ef-a5c0-2226965ed5ec",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "ea029936-0c05-4512-b806-002e88e81a07",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "85ee5008-00b5-40eb-9ecf-5154161aebb4",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "90310a91-c394-4a0d-9246-fc96926a734f",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "ab516663-5be5-4c48-b85d-a7be3e00a1d3",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "876c7e7b-c0df-417b-bc05-1755e336d9e5",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "5dbbb38f-7715-4667-97dc-c2fde721bca2",
+      "result_id": "fcbea6d9-0139-472b-aaae-7c26c59ac43d"
+    },
+    {
+      "claim_id": "27e505a9-7bdf-470c-9fd1-4a88fc36c8d9",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "5d436375-0f14-4634-bafb-a3d6c938c210",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "9f336a2d-346b-4408-8547-00fb8891f2ec",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "09b8eed9-585f-4a6c-9b5f-9be60be1c433",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "9ee7a216-d309-494a-a5ac-e87cc44ea8cd",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "bcb8380a-1cb6-41e1-9af9-f7b7622d10bc",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "1afd5dfa-7894-4d9a-b8bf-cad93e81a8c4",
+      "result_id": "d9799e58-2d43-42d3-844e-5aa7a68d2d3b"
+    },
+    {
+      "claim_id": "b8316ba8-63be-4373-8f88-53214a7daf92",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "b64b9ab2-9277-4c69-a4ca-4f2568bb8453",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "8a7d1954-e71f-4754-915d-099349785766",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "315716a9-ae99-48ca-a0c7-95f8a6133f5d",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "8f8c48b5-5559-40ac-bcdc-4ab70a016eb1",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "5fec7673-252a-4f18-9823-4fd6945be84a",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "bcceb3a0-7795-4115-8b3d-4c48eb54303c",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "ca34f665-403d-4d8e-acc1-3c7352fec01c",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "25b0ada8-7ca3-43d2-8f8d-03639b3b8892",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "ca204934-f6d9-4030-b566-08dc136a153e",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "ea30b894-da54-48fd-b31d-acada229bb13",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "3f6a8595-b0d6-4213-b165-e8938e0c0431",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "6ebaf2f0-b4f9-4ff3-baff-0882a44a3fda",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "9e0cb956-3181-4608-8d0b-aa8d2fecb9c7",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "ff7a1ae0-98a1-494c-ad9e-39dfc8392418",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "44b90b79-cfab-4503-9159-5663a3f9f6dc",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "8108e34d-4acc-4d86-88fa-9dfba5d5fcad",
+      "result_id": "0f61255e-9a1d-404f-ae71-fa86ac035785"
+    },
+    {
+      "claim_id": "40a00b4e-5a0e-4f04-b9c1-a3ba06ac07ba",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "d835eddc-08b2-4a21-b565-a5e4f9310e55",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "440824b0-ba4f-461a-90f4-adbf82613f89",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "da466ba6-fd74-4f0e-95df-16a19fa00e83",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "27475faa-2f0a-4ebf-addc-1259cbb85980",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "ab65263a-3b9c-4bf2-bc33-698d9b511618",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "c2e64cef-3416-4bab-97b0-1a3180e42611",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "8b87faa4-20e3-4f9c-ad41-8059896ce22e",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "bf9aaf8b-ee45-49f4-bde3-197ceba458f1",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "cf82ee97-9f16-4cb2-ad96-704833e1bafe",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "2d7f5c00-ef90-4a23-9715-467638ed745c",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "fe9b0138-a7b8-41e6-bdd8-216617fe3afc",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "86506430-c8ea-4dfb-903a-cc04125f58ea",
+      "result_id": "208a0679-4aae-43f4-8891-408c9abe51fd"
+    },
+    {
+      "claim_id": "08aeed42-506f-4182-82f7-f0bf8dcb0cf7",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "3fe7041b-4b82-4db3-a171-6f289f87780c",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "a182da22-ed98-488a-a9de-9f5826d646fa",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "dbe4c7c7-26f6-414a-afc4-0b2a07e059e7",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "55904eec-d69a-4dfd-adc0-a16c8119f7b5",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "5b1f84b7-4b9c-4030-8783-1bbeb2811066",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "02c7db93-f313-4923-b37c-ed519320800a",
+      "result_id": "1d307e08-fd27-4ba7-8cc0-f9b0f49118c4"
+    },
+    {
+      "claim_id": "f9cba857-bdcf-49a1-bc16-062f1c5e2481",
+      "result_id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c"
+    },
+    {
+      "claim_id": "6f8107c2-efcd-47c8-be83-4e7ad88d8954",
+      "result_id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c"
+    },
+    {
+      "claim_id": "68ff79c2-ec3e-4afe-8c30-6d3577824997",
+      "result_id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c"
+    },
+    {
+      "claim_id": "84953088-6a34-42aa-975d-51874885f017",
+      "result_id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c"
+    },
+    {
+      "claim_id": "931a1531-c16e-4ed9-a901-ca355348973d",
+      "result_id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c"
+    },
+    {
+      "claim_id": "76ccb098-5858-4788-bf7c-1cb886a3e098",
+      "result_id": "c4255953-ca5e-433c-bd6f-a1dd90a8713c"
+    },
+    {
+      "claim_id": "9081444f-986e-4326-81ad-8de497920324",
+      "result_id": "10240bf5-0a4f-4a24-b6ec-1e3de6d7fcb7"
+    },
+    {
+      "claim_id": "5198ddc5-0739-4f3a-b0b4-9c61d29d6cbe",
+      "result_id": "10240bf5-0a4f-4a24-b6ec-1e3de6d7fcb7"
+    },
+    {
+      "claim_id": "77637620-6984-4cb9-8ff7-00cd373549b6",
+      "result_id": "10240bf5-0a4f-4a24-b6ec-1e3de6d7fcb7"
+    },
+    {
+      "claim_id": "d8b3f54b-916d-4f3e-a24e-1fc34d752077",
+      "result_id": "10240bf5-0a4f-4a24-b6ec-1e3de6d7fcb7"
+    },
+    {
+      "claim_id": "f497132f-221e-4319-830d-c31b3be56975",
+      "result_id": "10240bf5-0a4f-4a24-b6ec-1e3de6d7fcb7"
+    },
+    {
+      "claim_id": "5aebe76c-53c5-4155-95b4-27b19a054737",
+      "result_id": "8da20431-9361-4d25-bffe-21efa6d438cd"
+    },
+    {
+      "claim_id": "0d7c0dc7-c5b9-4056-a015-27089da570ca",
+      "result_id": "8da20431-9361-4d25-bffe-21efa6d438cd"
+    },
+    {
+      "claim_id": "2254ed21-2ef5-452b-9c0e-64800b46183a",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "97c553ec-1d49-4ab8-9925-9d715daa3d36",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "b07b5414-1d58-4b3e-978e-b316638e4bd7",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "1a5a1e2b-de5c-4b39-9b5e-50e13e532252",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "b33eae1d-6654-4ad9-9599-b1b082994af9",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "ef5be667-924d-4a96-8f9e-cd510d92f151",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "57bd86f7-a7fb-4589-a588-9edba31f9728",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "f1865f29-f675-4457-8157-f435ffdc1eba",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "a016a8c2-7757-45d9-81f0-402cfa3afc57",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "9345f5ed-3fc0-4ed1-9aa9-6241b6b6af1a",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "b517eff9-6390-4ce7-922a-ad9791f1b846",
+      "result_id": "8462b048-dc81-4f2e-ab4a-5fa2855f80db"
+    },
+    {
+      "claim_id": "4c998248-893d-4d1a-bf21-4bdef945aeb9",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "cdceed5a-339d-40cf-a480-578296fad6ab",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "f63f7123-e6bb-45a3-857b-e9361330ef26",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "69b99de5-98f5-4455-920c-518773a48128",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "95e001bb-1063-4b3c-8188-5123b732479f",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "ed0abf72-7be6-4084-8660-02cf3b87e50c",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "1d2b52ea-2ae5-4b70-9623-0652c0f9144f",
+      "result_id": "118001ec-436f-4afb-b7cb-880764d583c1"
+    },
+    {
+      "claim_id": "584fc369-f2fa-47d7-8900-615b5c8f69ac",
+      "result_id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b"
+    },
+    {
+      "claim_id": "16d09fe2-80a9-4852-82c3-c605ba647ffb",
+      "result_id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b"
+    },
+    {
+      "claim_id": "507c6e8b-7c1c-48a9-83c9-f5cf6984e430",
+      "result_id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b"
+    },
+    {
+      "claim_id": "0386473c-1c3b-4ad4-9164-40132f181ee5",
+      "result_id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b"
+    },
+    {
+      "claim_id": "dd4073d5-eff0-4807-a5e7-5b368ac6c3e2",
+      "result_id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b"
+    },
+    {
+      "claim_id": "7be6256d-80fb-43a6-b512-76af2d673d48",
+      "result_id": "1efc5ce3-9e5d-46d2-9a32-191dd63a3c7b"
+    }
+  ],
+  "comparisons": []
+}

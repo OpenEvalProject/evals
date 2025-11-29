@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors developed and characterized destabilizing domains (DDs) as engineered proteins whose folding state can be controlled by small molecule ligands (Shield-1 for FKBP-derived DDs, trimethoprim for ecDHFR-derived DDs). These DDs are unfolded in the absence of ligand, are recognized by cellular quality control machinery, and can be rapidly toggled between folded and unfolded states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C49 describe the DD system with strong support from prior published work (multiple citations to Egeler et al., 2011; Iwamoto et al., 2010; Miyazaki et al., 2012) and current experimental data. The methodology is well-established and the experimental setup (stable cell lines, FACS sorting) is clearly described with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Unfolded DD elicits a robust transcriptional response distinct from HSR and erUPR. At 405 min post-S1 withdrawal, 759 genes were up-regulated and 909 down-regulated (FDR <0.05). This response differs from HSR (791 up, 579 down at 135 min) and erUPR induced by tunicamycin (2403 up, 2659 down at 405 min). Specific genes like Mdm2 and Psmb3 were uniquely induced by unfolded DD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C56, C66-C71 are well-supported by mRNA-seq data shown in Figures 1B-D and supplementary files. The statistical analysis uses appropriate FDR cutoffs (<0.05), multiple timepoints, and proper controls (heat shock, tunicamycin). RT-qPCR validation (Figure 2) confirms key findings. The magnitude and temporal dynamics of the response are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C133"
+    ],
+    "result": "The cellular response to unfolded DD is dose-dependent. Lower DD-GFP expression levels (3-fold lower) induced the same genes but with less pronounced changes in mRNA levels. The degree of mRNA induction correlated with protein expression level. The ecDHFR-derived DD elicited similar but less pronounced changes compared to FKBP-derived DD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C133 are supported by RT-qPCR data comparing two cell lines with different DD-GFP expression levels (Figure 2, Figure 2\u2014figure supplement 1A-B). The correlation between expression level and response magnitude is demonstrated. Testing with ecDHFR-DD provides orthogonal validation that the response is not specific to one DD variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Gene enrichment and pathway analysis revealed that genes induced by unfolded DD but not HSR or erUPR are enriched for 'intracellular protein traffic', 'cell cycle', 'ubiquitin-proteasome pathway', and 'p53 pathway'. Early-response genes (135 min) are enriched for 'protein folding' and 'p53 pathway', while late-response genes (405 min) are enriched for 'ubiquitin-proteasome pathway'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65, C72-C81 are supported by systematic gene enrichment analysis using DAVID and hierarchical clustering (Figure 3A, Supplementary files 3-4). The p-values are reported for all enrichment analyses and meet significance thresholds. The temporal distinction between early and late response genes adds mechanistic insight. However, the analysis relies on computational tools whose accuracy depends on annotation databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C95"
+    ],
+    "result": "The cellular response to unfolded DD is mechanistically distinct from HSR and erUPR. Only 105 genes overlap between 787 DD-induced and 826 HSR-induced genes (p=3.00e-7), suggesting limited but statistically significant overlap. There is no significant overlap with erUPR genes. However, 90 genes overlap with 508 p53-induced genes in response to DNA damage (p=1.07e-13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86, C95 are supported by Venn diagram analysis (Figure 4A) with hypergeometric statistical tests. The p-values indicate the overlaps are non-random but limited. The comparison with published p53 target genes (Kenzelmann Broz et al., 2013) is appropriate. However, the conclusion of 'mechanistic distinction' is somewhat overstated\u2014limited overlap doesn't prove completely distinct mechanisms, only that they're not identical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Treatment with proteasome inhibitor bortezomib induced 583 genes with only 65 overlapping with unfolded DD-induced genes (p=2.42e-1, not significant). This suggests unfolded DD creates cellular stress distinct from simple proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by mRNA-seq comparison with bortezomib treatment (Figure 4\u2014figure supplement 1, Supplementary file 5). The lack of significant overlap (p=0.242) appropriately distinguishes the DD response from proteasome inhibition alone. This is an important control addressing whether the response is simply due to proteasome overload.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Detailed gene-by-gene comparison reveals distinct transcriptional programs. Of the top 50 genes induced by unfolded DD at 135 min, only 2 overlap with early HSR and 15 with late HSR. Unfolded DD uniquely induces genes for aggresome formation (Hdac6, Vcp/p97, dynein genes), autophagy (Ulk1, Atg2a/b, cathepsins), proteasome subunits (16/39 genes), UPS components (ubiquitin ligases, deubiquitinases), and apoptosis (Fas, Apaf1, Bak1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94, C141-C145 are supported by heatmap analysis (Figure 4B-F) showing gene-specific responses. The proteasome subunit analysis (Figure 4F) is particularly compelling: 16/39 up-regulated by DD vs. 3/39 down-regulated by HSR. The specific gene lists provide molecular detail beyond pathway enrichment. However, the functional significance of these specific gene inductions requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C146"
+    ],
+    "result": "Unfolded protein in either nucleus or cytosol engages the p53 network. p53 protein levels rose at 45 and 135 min following S1 withdrawal, then declined by 405 min. p53 accumulated in nuclei, and p53 target genes (Mdm2, Cdkn1a) showed corresponding temporal induction patterns. This p53-dependent arm is a key difference between the DD response and HSR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C96-C99, C146 are strongly supported by multiple complementary approaches: immunoblotting (Figure 5A), immunofluorescence with quantification (Figure 5B-C), and mRNA-seq/RT-qPCR of p53 targets (Figure 2). The temporal correlation between p53 protein levels and target gene expression is consistent. Statistical analysis of immunofluorescence data confirms significance. This is a well-validated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "p53 activation by unfolded DD is not due to DNA damage or oxidative stress. DNA damage markers (phospho-KAP1, phospho-Chk1, phospho-RPA32, \u03b3-H2AX) were not induced. ATM/ATR kinase inhibitors did not affect the response. No reactive oxygen species signal was detected by CM-H2DCFDA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are supported by immunoblotting for DNA damage markers (Figure 5\u2014figure supplement 1B), RT-qPCR with ATM/ATR inhibitors (Figure 5\u2014figure supplement 1C), and flow cytometry for ROS (Figure 5\u2014figure supplement 1D). These controls effectively rule out indirect mechanisms of p53 activation. The use of MMS as positive control for DNA damage is appropriate. This strengthens the conclusion that p53 responds directly to unfolded protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C148",
+      "C149"
+    ],
+    "result": "The cellular response involves multiple transcription factors beyond p53. RNAi knockdown of p53 diminished induction of p53 targets (Mdm2, Cdkn1a, Eda2r) but not other genes (Ubc, Zfand2a, Gclm). Hsf1 knockdown affected heat shock proteins (Hspa1b, Hsph1, Dnajb1), while Nrf2 knockdown affected oxidative stress genes (Hmox, Osgin, Sqstm1/p62). This suggests at least one additional unidentified transcription factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111, C148-C149 are supported by RT-qPCR following siRNA knockdown (Figure 5D, Figure 5\u2014figure supplement 2A-B). The differential effects of p53, Hsf1, and Nrf2 knockdown on different gene subsets demonstrate multiple pathways. However, the knockdown efficiency is not quantified for all experiments, and incomplete knockdown could affect interpretation. The conclusion of an 'additional unidentified factor' is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C153",
+      "C154",
+      "C160",
+      "C161"
+    ],
+    "result": "The cellular response is strikingly different in nucleus vs. cytosol. Nuclear DD-GFP was degraded faster than cytosolic DD-GFP. Nuclear unfolded protein primarily induced p53-dependent genes (Cdkn1a, Gadd45a, Mdm2, DNA polymerase kappa, Trp53inp1). Cytosolic unfolded protein strongly induced chaperones (Hsp90aa1, Hspa1b, Dnajb1), proteasome subunits, QC proteins (Bag3, Zfand2a, p62), and ubiquitin genes (Ubb, Ubc). This suggests compartment-specific protein QC surveillance pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C112-C116, C153-C154, C160-C161 are supported by RT-qPCR comparing nuclear vs. cytosolic DD responses (Figure 6B-C, Figure 6\u2014figure supplement 1C) and flow cytometry showing differential degradation kinetics (Figure 6\u2014figure supplement 1B). The compartment-specific responses are clearly demonstrated. However, the interpretation that p53 is 'responsible for protein QC surveillance in the nucleus' (C154) is somewhat speculative\u2014p53 responds to nuclear unfolded protein, but causality for QC function is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C135"
+    ],
+    "result": "Cells mounting the response to unfolded DD pay a replicative fitness cost. Time of exposure to unfolded DD inversely correlated with replicative fitness in co-culture competition assays. Even 45 min exposure caused significant reduction in DD-GFP cell population. After 405 min, the ratio changed from 61:39 to 51:49 (DD-GFP:control). Cells expressing 3-fold lower DD levels showed no fitness defect. p53 knockdown reduced the replicative phenotype, while Hsf1 or Nrf2 knockdown had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C123, C135 are supported by co-culture competition assays measured by flow cytometry (Figure 7A, Figure 7\u2014figure supplement 1A-C). The dose-dependence (low DD expression shows no defect) strengthens the conclusion. The p53 knockdown rescue partially implicates p53 in the fitness cost. However, the fitness cost is relatively modest (10% change in ratio after 405 min), and the biological significance is unclear. The mechanism linking transcriptional response to reduced proliferation is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C124",
+      "C125",
+      "C126",
+      "C136"
+    ],
+    "result": "The cellular response to unfolded DD provides cross-protection against subsequent proteotoxic stress. Cells pre-exposed to unfolded DD were strongly protected from arsenite and MG132 toxicity in co-culture assays. The observed protection exceeded the expected additive effect of the two stresses, indicating a fitness benefit from mounting the transcriptional response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C124-C126, C136 are supported by co-culture cross-protection assays (Figure 7B, Figure 7\u2014figure supplement 1D). The comparison between observed and expected (additive) effects is appropriate and shows statistically significant protection (p<0.001). This demonstrates functional consequence of the transcriptional response. However, the mechanism of cross-protection is not investigated\u2014it's unclear which induced genes confer protection. The 'expected' calculation assumes independence, which may not be valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C158"
+    ],
+    "result": "Only 3 of 16 proteasome subunit genes induced by unfolded DD (Psmb3, Psmc3, Psmd13) are direct p53 targets based on published ChIP-seq data. This suggests p53 plays a central role in nuclear protein QC surveillance but acts both directly and indirectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is supported by comparison with published p53 ChIP-seq data (Kenzelmann Broz et al., 2013). However, claim C158 that 'p53 may play a central role in nuclear protein QC surveillance' is speculative. The data show p53 responds to nuclear unfolded protein and some p53 targets are induced, but direct evidence for a QC surveillance function (e.g., affecting protein degradation, preventing aggregation) is lacking. The inference is reasonable but requires additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The cellular response to unfolded protein is proposed to be a central component of protein quality control networks that may influence human pathologies including neurodegenerative diseases and cancer. The previously unappreciated role of p53 in protein QC surveillance might explain the inverse correlation between neurodegenerative diseases and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C7-C8, C168-C174 are largely speculative. While the citations establish that protein misfolding is linked to disease (C168-C171, C173), the connection between the specific DD response characterized here and human pathology is not tested. Claim C174 proposing p53's role in QC as a mechanistic basis for disease anticorrelation is pure speculation without supporting data. These are reasonable hypotheses for future work but are not supported by the current study. The cross-protection data (C6) provides some functional relevance, but extrapolation to disease is premature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C128",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C150",
+      "C151"
+    ],
+    "result": "The HSR is conventionally assumed to respond to unfolded proteins in cytosol and nucleus alike, but the perturbations used (heat shock) are fundamentally different from discrete unfolded protein. Heat shock causes many proteins to unfold and affects all cellular molecules. The p53 core domain unfolds with t1/2=9 min at 37\u00b0C, possibly explaining p53's absence from HSR at elevated temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C128, C137-C140 are supported by citations and logical reasoning about the nature of heat shock. Claim C150 about p53 unfolding kinetics is supported by citation (Friedler et al., 2003). Claim C151 is speculative but reasonable given the biophysical data. This contextualizes why the DD response differs from HSR and provides a plausible explanation for p53's differential involvement. However, the hypothesis about p53 instability at elevated temperature could be directly tested but wasn't.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The mechanism of response initiation is unclear. Rapid ubiquitylation of unfolded DD might temporarily deplete cellular ubiquitin, potentially stabilizing surveillance transcription factors (similar to mitoUPR with ATFS-1 or Nrf2/Keap1). However, ubiquitin should equilibrate between nucleus and cytosol, so ubiquitin depletion alone cannot explain compartment-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134, C162-C167 are mechanistic speculation. Claim C162 about DD ubiquitylation is supported by prior work (citations), but claims C163-C167 about ubiquitin depletion as a mechanism are hypothetical. The logic in C166-C167 correctly identifies that ubiquitin depletion cannot explain compartment-specific responses, effectively ruling out this mechanism. However, no alternative mechanism is tested. This represents an important gap in understanding how cells detect unfolded protein and initiate the response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C127",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C152",
+      "C155",
+      "C156",
+      "C157",
+      "C159"
+    ],
+    "result": "Background and context claims about cellular stress responses, protein quality control, and prior work on HSR, erUPR, mitoUPR, and destabilizing domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C34, C127, C129-C132, C152, C155-C157, C159 are background information supported by appropriate citations to established literature. These provide necessary context but are not novel findings of this study. The citations appear accurate and relevant. Claim C17 acknowledges gaps in current knowledge, which is appropriate. These claims establish the rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

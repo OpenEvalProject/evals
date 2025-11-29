@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study targeted 29 maternal-effect genes in 55 wild C. elegans strains using RNAi feeding in liquid culture with at least 8 replicate wells per strain-gene combination. Embryonic lethality was quantified using the DevStaR image analysis algorithm and modeled using a generalized linear model accounting for strain, gene, strain-by-gene interaction, and experimental variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 describe the experimental design and methodology. The approach is well-documented with appropriate replication (\u22658 wells per condition), validated image analysis (DevStaR, C22-C23), and appropriate statistical modeling (C24). The methodology is sound and adequately powered for detecting genetic variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Extensive variation in embryonic lethality was observed among strains, with both general strain effects and significant gene-specific strain-by-gene interactions. The statistical model showed all terms were highly significant, with strain and strain-by-gene interaction terms each explaining approximately half of the heritable variation (together accounting for 31% of total deviance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 present the core statistical findings from the factorial analysis shown in Table 1. The data demonstrate significant variation at multiple levels with appropriate statistical support (all p < 10^-15). The partitioning of variance between informational and gene-specific modifiers is quantitatively supported by the deviance analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C56",
+      "C57",
+      "C112",
+      "C123",
+      "C124"
+    ],
+    "result": "Each of the 29 targeted genes revealed cryptic genetic variation, with all genes showing significant strain-by-gene interaction coefficients. This demonstrates that wild C. elegans populations harbor pervasive genetic modifiers of embryonic gene perturbations that can dramatically influence penetrance in aggregate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C56-C57, C112, C123-C124 represent the central finding of pervasive CGV. The claim that all 29 genes showed significant interactions (C56) is directly supported by the statistical analysis (Table 1, p < 10^-15 for strain-by-gene term). The inference that this represents pervasive CGV in natural populations is well-justified by the systematic nature of the screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C127"
+    ],
+    "result": "Dramatic variation in germline RNAi sensitivity was observed among strains. Most strains showed moderately reduced penetrance relative to N2, while CB4856 and QX1211 showed consistently weak penetrance. The ppw-1 mutation partially but not completely explains RNAi resistance, indicating genetic complexity with multiple alleles affecting germline RNAi in wild populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44, C127 describe variation in RNAi sensitivity (informational modifiers). The data in Figure 2 clearly show strain variation. The ppw-1 experiment (C41-C42) provides genetic evidence that CB4856's resistance is not solely due to ppw-1, supporting genetic complexity (C43-C44). However, the claim of 'many alleles' (C44) is somewhat inferential from limited genetic dissection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Most wild strains (51 of 55) showed complete sensitivity to somatic RNAi on tba-2, demonstrating dsRNA uptake capability. The rrf-1 mutant and four somatically-resistant wild strains exhibited embryonic lethality on germline-expressed genes, confirming tissue-specific action of modifier variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 establish that RNAi machinery is functional and that modifier variation acts tissue-specifically. The tba-2 control experiment is well-designed to distinguish somatic from germline RNAi effects. The rrf-1 mutant provides appropriate positive control evidence (C47-C49). The tissue-specificity conclusion (C51) is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Genomic heritability analysis revealed high polygenicity for most perturbations, with 19 of 29 genes showing heritability estimates >0.60 (12 genes >0.80), indicating variation due to common alleles at many loci. Six genes (emb-30, mel-32, mex-3, mom-5, par-3, sur-6) showed low heritability, suggesting fewer loci or rarer alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C76 describe the polygenic architecture using genomic heritability estimates (Table 2). The methodology (EMMA mixed models accounting for kinship) is appropriate for this analysis. The interpretation that high heritability indicates common alleles at many loci is standard, though the inference about low-heritability genes (C76) is somewhat speculative without additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cryptic genetic modifiers exhibit low developmental pleiotropy, with low phenotypic correlations between perturbations even for genes with known interactions. Gene pairs with known physical/genetic interactions showed no elevated correlations (\u03c7\u00b2=2.30, p=0.13), and even par network genes showed limited correlation despite forming functional complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C66 establish low pleiotropy through correlation analysis. The statistical test for known interactors (C59) and specific examples from the par network (C60-C63) provide strong evidence. The inference of low pleiotropy (C65-C66) is well-supported, though the mechanistic explanation via redundancy (C67) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "GWAS identified 19 SNPs/haplotype blocks significantly associated with phenotypes (Bonferroni-corrected threshold) across 9 of 29 genes, with many additional suggestive associations. Introgression validation confirmed that chromosome II variants modify lsy-22 and pkc-3 perturbation effects, with distinct modifiers for each gene (R\u00b2=0.03 between associated SNPs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 describe GWAS results and experimental validation. The introgression experiment (C80-C86, Figure 3) provides strong validation of GWAS predictions for two genes, demonstrating that the associations represent genuine causal variants. The statistical evidence is appropriate with Bonferroni correction. The validation strengthens confidence in other GWAS hits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Analysis of 129 SNPs with p<10\u207b\u2074 across 15 gene phenotypes revealed that most CGV detectable by GWAS is caused by extragenic modifiers, with only one SNP (in mel-28) located within a targeted gene locus, though mel-28 phenotype also associated with other genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 characterize the nature of detected modifiers. The observation that only 1 of 129 associated SNPs lies within targeted genes (C90) strongly supports the extragenic modifier conclusion (C92). However, this could also reflect limited power to detect cis-acting variants or the specific nature of RNAi perturbations rather than a general property of CGV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Analysis of published expression data for 29 target genes in 5 strains showed that only 5 genes had significant expression variation, while 28 showed significant gene-specific lethality variation. Lower target gene expression was weakly correlated with less severe (not more severe) RNAi phenotypes (20/29 genes, p=0.06), suggesting gene-specific modifiers act beyond target gene expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 test whether expression variation explains modifier effects. The analysis appropriately uses published data and finds opposite correlation to a prior study (C93-C94). The weak correlation (p=0.06, C97) and mismatch between genes with expression vs. phenotypic variation (C95-C96) support the conclusion (C98), though the analysis is limited to 5 strains and may lack power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "GWAS mapping identified few SNPs associated with multiple phenotypes, with no shared associations among 4 polarity genes (par-2, -4, -6, pkc-3) despite known functional relationships. This discrete genotype-phenotype association pattern further indicates low developmental pleiotropy, where variants affecting one perturbation have no detectable effects under others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 extend the low pleiotropy finding to GWAS results. The lack of shared associations among functionally related genes (C100) provides independent support for low pleiotropy beyond correlation analysis. The inference (C101-C102) is well-justified, though limited GWAS power could also explain lack of shared associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A chromosome IV haplotype block (~10 kb) was significantly associated with lethality phenotypes for rpn-9, rpn-10 (both proteasome subunits predicted to interact), and also car-1, mom-5, and skn-1 (which has a role in proteasome-mediated protein homeostasis), suggesting functional relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 describe a shared GWAS association supporting known biology. The rpn-9/rpn-10 co-association (C103) validates a known interaction (C104), while the additional associations with skn-1 (C105-C106) suggest broader proteasome-related effects. This represents a rare case of pleiotropy that makes biological sense, strengthening confidence in the GWAS results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "pkc-3 and rfc-3 modifier phenotypes were associated with SNPs on both chromosomes III and X (R\u00b2=0.26 between loci), implicating at least two interacting cryptic alleles and providing independent evidence for a relationship between these genes with no previously reported interactions or shared functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 identify a novel gene relationship through co-association at two unlinked loci. The logic that two independent associations (low LD, R\u00b2=0.26) suggest epistasis and functional relationship (C110-C111) is sound. However, this is hypothesis-generating rather than definitive evidence of interaction, as the associations could be coincidental or reflect complex genetic architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Gene-specific modifiers, which explain as much variation as informational modifiers, represent cryptic genetic variation in developmental processes. These could act via network bypasses revealing variation in developmental network structure, or through gene-specific effects on knockdown extent resulting in variable residual gene activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29, C52-C55 define and interpret gene-specific modifiers. While the statistical evidence for gene-specific effects is strong (C52, Table 1), the mechanistic interpretations (C54-C55) are speculative. The study does not directly test these mechanisms, and both could contribute. The classification as 'cryptic variation in developmental processes' (C53) is reasonable but somewhat circular.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The low pleiotropy of cryptic alleles may be explained by high redundancy in processes like zygote polarization (allowing shared function of some factors and specificity of others) or by purifying selection depleting pleiotropic alleles over evolutionary time as they are more likely to be deleterious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 propose evolutionary/mechanistic explanations for low pleiotropy. Both explanations are plausible and supported by citations (C67, C69-C70), but neither is directly tested. The redundancy explanation (C67-C68) is reasonable for the par network but may not generalize. The selection explanation (C69-C70) is a general principle but requires additional evidence to confirm it applies here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background context establishing that embryogenesis is essential yet evolves, that genetic background affects gene disruption phenotypes, that CGV accumulates and can be released by perturbations, and that C. elegans embryogenesis may favor accumulation of conditionally-functional mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background knowledge and theoretical framework. These are well-supported by citations and represent established concepts in the field. The speculative elements (C2, C12, C15, C17) are appropriately qualified with 'may' and provide motivation for the study rather than claims to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Discussion claims contextualizing findings: the approach explores distinct genotypic space from conventional screens, CGV is 'cryptic' because effects are magnified under perturbation despite strains showing variation in other phenotypes under normal conditions, and the findings have implications for disease genetics, evolution, and model organism biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C131 interpret and contextualize the findings. The methodological distinction from conventional screens (C113-C114) is valid. The definition of 'cryptic' (C115-C119) is appropriate given low baseline lethality (C116) but variation in other traits (C117). The broader implications (C125-C126, C129-C131) are reasonable extrapolations, though speculative, and appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

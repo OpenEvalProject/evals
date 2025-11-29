@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Rats (n=14) were trained on the Poisson Clicks auditory evidence accumulation task, achieving ~90% correct on easy trials with a median accumulation time constant of 810 ms. Performance increased with stimulus duration and reverse correlation analysis showed clicks throughout the stimulus contributed to decisions, consistent with gradual evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 provide converging behavioral and modeling evidence that rats use a gradual accumulation strategy. The psychometric curves (C54), chronometric analysis (C56), reverse correlation (C57), and model fits (C58, C55) all consistently support long time constant integration of evidence throughout the stimulus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Bilateral FOF inactivation with 75 ng muscimol per side produced a significant 10.3% performance decrement on accumulation trials (p=0.018) but had no effect on side LED trials, indicating the impairment was specific to evidence accumulation and not a general motor deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C87-C89 demonstrate a dose-dependent, task-specific effect of bilateral FOF inactivation. The preservation of side LED performance (C60) is a critical control showing the deficit is not simply motor. The initial 300 ng dose preventing task performance (C87) and subsequent use of 75 ng (C88) shows appropriate dose optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Bilateral FOF inactivation reduced the accumulation time constant from +0.8 s to -0.24 s (leaky accumulation) while lapse rate remained unchanged. Bootstrapping analysis confirmed only \u03bb and \u00de parameters changed significantly, with the 1-parameter \u03bb model being most parsimonious by BIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C94-C97 provide rigorous computational evidence that bilateral FOF inactivation specifically impairs the time constant of accumulation. The bootstrapping validation (C94-C96) and model comparison (C97) strengthen confidence that the primary effect is on integration time constant rather than lapse rate or other parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Unilateral FOF inactivation produced a profound ipsilateral bias (52\u00b17% bias) on accumulation trials that was highly reproducible (87% of sessions showed positive bias) but had no effect on side LED trials, indicating a lateralized decision-making impairment rather than a motor deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C90-C92 demonstrate a robust, lateralized effect of unilateral FOF inactivation. The high reproducibility (C91), large effect size (C90), and preservation of side LED performance (C92) provide strong evidence for a specific role in lateralized decision processes rather than motor execution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Model-based analysis of unilateral FOF inactivation showed the post-categorization bias model best fit the data (\u03baC=0.52), outperforming biased input gain, accumulator shift, and biased noise models. Cross-validation and Metropolis-Hastings sampling confirmed this interpretation, with the 1-parameter post-categorization model having lowest AIC and BIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C98-C100 provide comprehensive model comparison evidence. The leave-one-session-out cross-validation (C98), 8-parameter Metropolis-Hastings analysis (C99), and information criteria comparison (C100) all converge on the post-categorization bias as the best explanation, suggesting FOF is in the output pathway rather than the accumulator itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C74",
+      "C75"
+    ],
+    "result": "FOF inactivation impairments are best explained as an impairment in the premotor output pathway of an evidence accumulator with a long time constant (>240 ms). The FOF is either directly involved in accumulation or is a requisite component in the output pathway that transforms accumulated evidence into orienting decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C44-C45, and C74-C75 synthesize the bilateral and unilateral inactivation results with computational modeling to propose a specific functional role for FOF. The convergence of evidence from different experimental manipulations and modeling approaches (bilateral showing time constant change, unilateral showing post-categorization bias) supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C101",
+      "C102"
+    ],
+    "result": "Unilateral PPC inactivation produced minimal effects on accumulation trials (4.2\u00b12.4% bias, p>0.1), approximately 10\u00d7 smaller than FOF effects. There was no correlation between PPC muscimol dose and bias magnitude (p>0.09), contrasting sharply with the strong dose-response relationship in FOF (r=0.85, p<10\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C101-C102 demonstrate a striking dissociation between PPC and FOF effects. The lack of dose-response relationship for PPC (C101) is particularly compelling evidence that the minimal effect is not due to insufficient inactivation, especially when contrasted with the strong FOF dose-response (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Bilateral PPC inactivation (150 ng per side) produced only a 3.6% decrease in performance on accumulation trials (p<0.02), an effect not substantially larger than unilateral inactivation, arguing against hemispheric compensation as an explanation for the minimal PPC effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 provides a critical control experiment. The fact that bilateral inactivation produces no greater effect than unilateral inactivation rules out the possibility that the intact hemisphere compensates for the inactivated one, strengthening the conclusion that PPC plays a minimal role in this task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C103"
+    ],
+    "result": "Unilateral PPC inactivation produced a strong ipsilateral bias on free-choice trials (t\u2082\u2086=3.70, p=0.001) that was highly reproducible (85% of sessions), while producing no bias on intermixed accumulation trials (p=0.329), demonstrating task-specific PPC involvement in internally-guided but not evidence-guided decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C103 demonstrate a double dissociation: PPC inactivation affects free-choice but not accumulation trials, while FOF inactivation affects both. The within-session comparison (C71) is particularly strong evidence, as it controls for all subject-specific and session-specific variables. The high reproducibility (C103) strengthens confidence in this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "FOF inactivation produced ipsilateral bias on both free-choice trials (t\u2082\u2084=3.86, p=0.001) and accumulation trials (t\u2082\u2084=4.85, p<0.001) but not side LED trials (p=0.117), showing FOF involvement in both internally-guided and evidence-guided decisions but not simple visually-cued responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 establish that FOF, unlike PPC, is involved in multiple decision types. The preservation of side LED performance continues to rule out simple motor explanations. This contrasts with PPC's selective involvement in free-choice trials, suggesting different functional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Combined bilateral FOF and unilateral PPC inactivation produced a significant 15.1% ipsilateral bias (p<0.0012), suggesting PPC has a weak influence on choice during auditory evidence accumulation that is normally overridden by stronger FOF signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide evidence for a hierarchical relationship between PPC and FOF. The emergence of a PPC effect only when FOF is bilaterally inactivated (C72) supports the interpretation that PPC has a real but weak influence that is normally masked by FOF (C73). This is a well-designed experiment to test for masked effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study demonstrates distinct roles for FOF and PPC: FOF is essential for decisions guided by auditory evidence accumulation, while PPC plays a minimal role in evidence-guided decisions but a strong role in internally-guided decisions. These findings provide important constraints on the neural circuitry underlying evidence accumulation decisions in rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C47-C51 synthesize the main findings into an overall conclusion. The convergence of evidence from multiple experimental manipulations (bilateral, unilateral, combined inactivations; accumulation vs. free-choice trials) and computational modeling strongly supports this double dissociation between FOF and PPC functional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Neither FOF nor PPC appears likely to play a major causal role in the gradual evidence accumulation process per se, based on the pattern of inactivation effects and computational modeling results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the computational modeling showing FOF inactivation affects the output pathway (post-categorization bias for unilateral, time constant change for bilateral) rather than the accumulation process itself, and PPC showing minimal effects on evidence-guided decisions. However, the bilateral FOF result showing time constant change (C63) creates some tension with this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Evidence accumulation is a core decision-making process implicated across multiple decision types (value-based, social, economic, gambling, memory-based, numerical, visual search, and perceptual decisions), but the causal roles of brain regions showing neural correlates of accumulation have not been determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C18 establish the scientific context and motivation. These are well-supported by extensive citations to prior literature. The breadth of decision types (C10-C17) justifies the characterization as a 'core' process (C18), and the gap in causal understanding (C2) motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Neural correlates of evidence accumulation have been reported in multiple interconnected primate brain regions (PPC, prefrontal cortex, FEF, striatum, superior colliculus), but the specific roles of these regions in evidence-driven decisions have not been distinguished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 summarize prior primate literature establishing neural correlates across multiple brain regions. The citations support each regional claim (C19-C23), and the statement about undetermined specific roles (C24) is accurate and motivates the causal manipulation approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Rat FOF and PPC have neural correlates of accumulating evidence similar to those in primates, with neurons showing ramping activity correlated with momentary evidence strength. The Poisson Clicks task allows detailed quantitative modeling of accumulation and decision processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C25-C28 establish that the rat model is appropriate for studying evidence accumulation, with neural correlates similar to primates (C26-C28, supported by Hanks et al., 2015). The task properties (C25) enable the computational modeling that is central to the study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "FOF and PPC share properties suggesting causal roles in evidence-driven decisions: both have delay activity correlating with short-term memory, play causal roles in memory for orienting acts, receive multisensory inputs, and are reciprocally connected. FOF additionally projects to superior colliculus, positioning it to influence motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C41 establish the anatomical and functional properties that motivated studying these regions. The citations support the individual properties (C29-C40), and the synthesis (C41) logically follows. These provide strong a priori justification for the experimental focus on FOF and PPC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study used bilateral cannula implantation in FOF and PPC of 14 male Long-Evans rats, with muscimol inactivation during task performance. A total of 26,521 trials from 161 infusions were analyzed across five inactivation types, with appropriate control trials (side LED, single-sided, free-choice) comprising 10-25% of trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C78-C86 describe the experimental methods. The sample sizes (C52, C86), control procedures (C78), and trial types (C83-C85) are clearly documented. The within-subject design with multiple control trial types is methodologically strong, allowing dissociation of motor, sensory, and decision-related effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "FOF inactivations produced no observable effects outside the behavioral task, with infused animals appearing normal in home cages both immediately after infusion and after the behavioral session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 provides an important control observation showing the inactivations were specific to task-related functions rather than producing general behavioral impairments. This observation, combined with preserved side LED performance, argues against non-specific effects of muscimol.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "It is possible that the decision itself (categorization of graded accumulator value into discrete choice) could occur in the FOF, as suggested by the post-categorization bias pattern from unilateral inactivations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is explicitly speculative ('it is possible'). While the post-categorization bias model (C65) is the best fit to unilateral inactivation data, this doesn't definitively prove that categorization occurs in FOF\u2014only that FOF is in the output pathway after categorization. Additional experiments would be needed to localize the categorization process itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Decisions with shorter processing times (<240 ms) may involve circuits that bypass FOF, potentially through direct auditory cortex to striatum connections, as suggested by the finding that FOF is required for long time constant (>240 ms) accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is speculative, extrapolating from the finding that bilateral FOF inactivation reduces time constant to -240 ms (C63). While the logic is reasonable\u2014if FOF is required for long time constant accumulation, shorter accumulation might use different circuits\u2014this remains untested. The citation to Znamenskiy and Zador (2013) provides anatomical plausibility but not functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The rat findings parallel primate literature showing prefrontal/FEF inactivations produce strong choice biases while PPC/LIP inactivations have minimal effects on instructed trials but affect free-choice trials. Possible alternative explanations include that PPC accumulation signals may relate to confidence rather than choice, or that prior microstimulation effects in PPC may have been due to activating fibers of passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C119 contextualize the findings within primate literature. The parallels between rat and primate results (C106-C111) are well-supported by citations and strengthen the translational relevance. The discussion of alternative interpretations (C113-C119) is appropriately speculative, acknowledging that the functional role of PPC accumulation signals remains unclear.",
+    "result_type": "MINOR"
+  }
+]

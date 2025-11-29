@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The histone-fold domain of H2A, particularly the \u03b12 helix (M4 region), is the primary determinant for SWR1 activation, rather than the C-terminal \u03b1-C helix. Systematic domain swapping between H2A and H2A.Z shows that M4 interchange causes ~90% reduction in activity, while M6 and \u03b1-C regions have minimal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hybrid nucleosome approach (C21-C26) provides systematic, quantitative evidence with clear dose-response curves showing differential effects of domain swaps. The M4 domain's dramatic effect (~90% reduction) is reproducible and internally consistent across multiple constructs. The experimental design appropriately controls for position effects by testing individual domains (C24-C26), and the conclusion (C27) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "SWR1 activation occurs at a post-recruitment step rather than through differential binding affinity, as H2A.Z-nucleosomes show only slightly decreased binding affinity but fail to activate SWR1 even under saturating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding affinity data (C28, Figure 1-supplement 1) combined with prior work showing no activation at saturation (C29) provides converging evidence for post-recruitment activation. However, the 'data not shown' reference for saturating conditions weakens reproducibility. The logic is sound but would benefit from showing the saturation data explicitly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In vivo validation shows that residue G47 in the H2A \u03b12 helix facilitates SWR1 activation, with G47K mutants showing 37-46% reduction in H2A.Z incorporation at gene promoters, though the M4 region also has essential functions independent of SWR1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo ChIP-PCR data (C36-C37) quantitatively support G47's role with appropriate controls (P49A shows no reduction, C35). The lethality of full M4 interchange (C30) combined with viability of G47K/P49A mutants (C34) logically supports the dual-function interpretation (C31). However, the ChIP data would benefit from statistical analysis (error bars shown but no p-values) and more biological replicates beyond technical replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SWR1 contacts nucleosomal DNA at superhelix location 2 (SHL2) on the linker-distal face, and a 6-nucleotide region (\u221217 to \u221222 from dyad) is critical for histone exchange. DNA gaps in this region block activity without affecting SWR1 binding, indicating post-recruitment activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hydroxyl radical footprinting (C41-C42, Figure 2) provides direct biochemical evidence for SHL2 contact. The systematic DNA gap scanning (C45-C46, Figure 3) rigorously maps the critical region with appropriate positive/negative controls. The overlap between footprint and gap-sensitive regions (C47) strengthens the conclusion. The binding control (C50, Figure 3-supplement 1) rules out recruitment defects. The experimental logic is sound and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SWR1-mediated H2A.Z replacement occurs without nucleosome repositioning on the strongly positioned 601 sequence, as demonstrated by both native gel mobility assays and single-nucleotide resolution hydroxyl radical footprinting, distinguishing SWR1 from sliding remodelers like INO80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual-method approach (native PAGE mobility in C54 and hydroxyl radical footprinting in C56) provides orthogonal, high-resolution evidence. The INO80 positive control (C55) validates that the assay can detect repositioning. The single-nucleotide resolution mapping (Figure 4C) is rigorous and shows no positional shift across AA, AZ, and ZZ states. This is a clean, well-controlled result that definitively distinguishes SWR1's mechanism from other remodelers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "SWR1 contacts the nucleosome at SHL2 on the linker-distal side of the dyad, a location used by other remodelers but from a unique orientation, which may reflect the distinct requirements of histone exchange versus nucleosome sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The footprinting data (C62, Figure 2) directly demonstrates linker-distal contact, distinguishing SWR1 from other remodelers (C61). The comparison to other remodelers (C58-C59, C43) is appropriately cited. However, C60 (Swr1 ATPase contacts SHL2) is speculative inference by analogy rather than direct evidence, though reasonable. The unique orientation is well-supported, but mechanistic interpretation (C63) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Two alternative mechanisms are proposed for histone exchange: transient DNA translocation without propagation, or local ATP-driven DNA conformational changes at SHL2 that destabilize H2A-H2B contacts with DNA or the H3-H4 tetramer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative mechanistic models (C67-C68 marked as SPECULATION). While the structural constraints (C64-C65) are established knowledge and the logical requirement to disrupt interactions (C66) is sound, neither proposed mechanism is directly tested. The models are reasonable hypotheses for future work but lack experimental validation in this manuscript. This represents interpretation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In vivo, SWR1 binding to the +1 nucleosome flanked by a nucleosome-free region would orient the enzyme to preferentially replace the H2A-H2B dimer on the NFR-distal side, consistent with genome-wide sub-nucleosomal mapping showing H2A.Z enrichment at the NFR-distal face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about orientation (C69) logically follows from SWR1's preference for long linker DNA (established in C12, C40). The speculation about preferential replacement (C70) is supported by independent genome-wide data (C71, Rhee et al. 2014). While C70 is speculative, the supporting citation provides orthogonal validation. This represents a well-supported integration of in vitro mechanism with in vivo genomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SWR1 recognizes unique structural features of the H2A nucleosome through the \u03b12 helix and loop 2 (surface-exposed) and potentially the \u03b11 helix (buried, possibly allosteric). The conserved G47 residue creates an ~8 \u00c5 cleft that would be filled by lysine in H2A.Z, potentially serving as a recognition feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural analysis (C76, C78-C79) is based on established crystal structures and is sound. However, the functional interpretations are largely speculative: the \u03b11 helix acting by allostery (C77) and the cleft serving as a recognition feature (C80) lack direct experimental validation. The modeling of lysine filling the cleft (C81) is structural inference. While these are reasonable hypotheses consistent with the data, they require direct structural or mutagenesis studies for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C39",
+      "C40",
+      "C43",
+      "C51",
+      "C61",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background context establishing H2A.Z biology, SWR1 mechanism, and prior knowledge about chromatin remodelers, including the gap in understanding how canonical nucleosomes activate SWR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established prior work appropriately cited throughout (C1, C8-C17, C39-C40, C43, C51, C61, C72-C74) and accurate framing of the knowledge gap (C6, C18, C53). The citations appear appropriate and the background accurately represents the field. This provides essential context but does not constitute new results from this study.",
+    "result_type": "MINOR"
+  }
+]

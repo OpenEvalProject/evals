@@ -1,0 +1,2077 @@
+{
+  "submission": {
+    "id": "83ca3ff2-da73-4a24-b699-5d2bbab174fb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:48:50.411483Z",
+    "updated_at": "2025-11-29T04:48:50.411483Z"
+  },
+  "content": [
+    {
+      "id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "submission_id": "83ca3ff2-da73-4a24-b699-5d2bbab174fb",
+      "content_type": "manuscript",
+      "content_text": "# DNA damage induces nuclear actin filament assembly by Formin-2 and Spire-1/2 that promotes efficient DNA repair\n\n## Authors\n\n- Brittany J Belin<sup>1</sup>\n- Terri Lee<sup>1</sup>\n- R Dyche Mullins<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Physiology Course Marine Biological Laboratory Woods Hole United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nActin filaments assemble inside the nucleus in response to multiple cellular perturbations, including heat shock, protein misfolding, integrin engagement, and serum stimulation. We find that DNA damage also generates nuclear actin filaments\u2014detectable by phalloidin and live-cell actin probes\u2014with three characteristic morphologies: (i) long, nucleoplasmic filaments; (ii) short, nucleolus-associated filaments; and (iii) dense, nucleoplasmic clusters. This DNA damage-induced nuclear actin assembly requires two biologically and physically linked nucleation factors: Formin-2 and Spire-1/Spire-2. Formin-2 accumulates in the nucleus after DNA damage, and depletion of either Formin-2 or actin's nuclear import factor, importin-9, increases the number of DNA double-strand breaks (DSBs), linking nuclear actin filaments to efficient DSB clearance. Nuclear actin filaments are also required for nuclear oxidation induced by acute genotoxic stress. Our results reveal a previously unknown role for nuclear actin filaments in DNA repair and identify the molecular mechanisms creating these nuclear filaments.\n\n## Introduction\n\nActin was first identified in muscle over seventy years ago (Straub, 1942) and has been established as a component of non-muscle cells for nearly half a century (Hatano and Oosawa, 1966). Subsequent work revealed how actin filaments help organize the cytoplasm of all eukaryotic cells, supporting many fundamental biological processes, including: motility, division, phagocytosis, endocytosis, and membrane trafficking. The first reports of actin inside the nucleus of a cell appeared forty years ago (LeStourgeon et al., 1975), and since that time, actin has been found in the nuclei of many different cell types, linked to a variety of nuclear processes (Pederson and Aebi, 2002).\n\nRecent work has identified the molecular mechanisms that control the nuclear concentration of actin, uncovering new roles for the actin-binding proteins profilin and cofilin as co-factors for actin's nucleocytoplasmic transport. The nuclear export factor exportin-6 (XPO6) binds profilin-actin complexes in the nucleus\u2014as well as a handful of other actin-binding proteins\u2014and shuttles them into the cytoplasm (St\u00fcven et al., 2003; Bohnsack et al., 2006). Conversely, nuclear import of actin is regulated by importin-9 (IPO9), which transports cofilin\u2013actin complexes from the cytoplasm into the nucleus (Dopie et al., 2012).\n\nIn many organisms, the export factor XPO6 is not expressed in the oocytes of, and so the germinal vesicles contain a high concentration of actin (St\u00fcven et al., 2003). In Xenopus laevis oocytes, this germinal vesicle actin forms a filamentous mesh that protects nucleoli from gravity-induced aggregation (Feric and Brangwynne, 2013). Actin filaments associated with germinal vesicles of starfish oocytes facilitate nuclear envelope breakdown and form a contractile net that facilitates chromosome capture during mitosis (L\u00e9n\u00e1rt et al., 2005; Mori et al., 2014). Several studies have also implicated nuclear actin filaments in oocyte transcription (reviewed in Belin and Mullins, 2013).\n\nIn contrast, most somatic cells express some amount of XPO6, and therefore, have a much lower concentration of actin in the nucleus than in the cytoplasm. Also, unlike Xenopus germinal vesicles, mammalian somatic nuclei contain relatively small amounts of filamentous actin (Belin et al., 2013), suggesting that monomeric actin may play an important role. Monomers of actin and several actin-related proteins (Arps), for example, are conserved components of chromatin-remodeling complexes (Farrants, 2008), and nuclear actin monomers inhibit the activity of the serum-responsive transcriptional co-activator MRTF (myotonin-related transcription factor) (Vartiainen et al., 2007; Mouilleron et al., 2008). Many reports have also linked actin to the regulation of RNA polymerases, although there are conflicting data on whether this activity depends on monomers or filaments (Belin and Mullins, 2013).\n\nFunctions for filamentous actin in somatic cell nuclei are slowly beginning to emerge. Serum stimulation of quiescent fibroblasts (Baarlink et al., 2013) and integrin engagement in spreading cells (Plessner et al., 2015) induce transient (<60 s) bursts of nuclear actin polymerization, driven by the nucleation activity of formin-family proteins mDia1 and mDia2. These short-lived filaments appear to promote activity of the transcriptional co-activator MRTF by depleting monomeric actin from the nucleus. Serum stimulation also activates the actin-severing protein MICAL-2, which reversibly oxidizes actin monomers, rendering them incapable of inhibiting MRTF-dependent transcription (Lundquist et al., 2014). Environmental stresses also promote actin assembly in somatic cell nuclei. Heat shock, dimethyl sulfoxide (DMSO), depletion of ATP, and oxidative stress all induce formation of nuclear filament bundles that contain large amounts of cofilin (Fukui, 1978, Fukui and Katsumaru, 1980; Iida et al., 1992; Pendleton et al., 2003; Kim et al., 2009). In addition to its function as a co-factor for nuclear import, cofilin appears to play a structural role in these cofilin\u2013actin rods, which are highly oxidized and appear to be held together by intermolecular disulfide bonds between cofilin molecules (Pfannstiel et al., 2001; Bernstein et al., 2012; Zhang et al., 2013). Little is known about the physiological role of these cofilin\u2013actin rods but they sense and perhaps regulate the reducing potential of the nucleus (Bernstein et al., 2012; Munsie et al., 2012).\n\nMany functions proposed for nuclear actin have been controversial, due in part to a lack of molecular tools for visualizing and perturbing actin inside the nucleus without affecting cytoplasmic actin (Belin et al., 2013). The discovery of actin's nuclear import and export factors, along with the recent identification of some of the molecular mechanisms that create nuclear actin filaments, now enable us to make more specific perturbations of actin inside the nucleus. In addition, we and others have developed fluorescent probes that enable us to visualize actin monomers and filaments in the nuclei of live cells (Baarlink et al., 2013; Belin et al., 2013; Plessner et al., 2015).\n\nUsing these recently developed tools, we discovered that DNA damage induced by various genotoxic agents triggers formation of actin filaments inside the nucleus of mammalian cells. These filaments promote efficient repair of DNA double-strand breaks (DSBs) and are required for a DNA damage-associated burst of oxidation in the nucleus. DNA damage-induced nuclear actin structures differ in both composition and mechanism of assembly from those triggered by serum stimulation or by non-specific cell stresses. Specifically, we find that the actin regulators Formin-2 (FMN2) and Spire-1/2 nucleate nuclear actin assembly in response to DNA damage. Homologs of Formin-2 and Spire-1/2 interact directly (Quinlan et al., 2007; Vizcarra et al., 2011; Montaville et al., 2014) and collaborate to form functional actin networks in mouse and Drosophila oocytes. Murine oocyte FMN2 and Spire are required for migration of meiotic spindles to the cortex, extrusion of polar bodies, and radial transport of vesicles (Schuh and Ellenberg, 2008; Schuh, 2011). In Drosophila, homologs of FMN2 (Cappuccino) and Spire collaborate to build actin networks required for oocyte polarity (Quinlan et al., 2005; Bor et al., 2015). We suggest that DNA damage-induced nuclear actin filaments may facilitate movement of chromatin and repair factors after DNA damage.\n\n## Results\n\n### DNA damage induces formation of nuclear actin filaments\n\nPreviously, we developed and validated a fluorescent probe, Utr230-EGFP-3\u00d7NLS (Utr230-EN), capable of imaging actin filaments inside nuclei of live cells (Belin et al., 2013). In mammalian tissue culture cells, the distribution of Utr230-EN exhibits one of three basic patterns: (i) accumulation on cytoplasmic stress fibers and diffuse localization throughout the nucleoplasm (\u223c53% of cells); (ii) cytoplasmic stress fibers and punctate structures in the nucleoplasm (\u223c40% of cells); and (iii) primarily cytoplasmic localization to stress fibers and/or aggregates at the nuclear periphery (\u223c7% of cells) (Figure 1\u2014figure supplement 1). Further analysis revealed that the punctate nucleoplasmic structures recognized by Utr230-EN are endogenous structures that contain short (<0.5 \u00b5m) actin filaments (Belin et al., 2013) (Figure 1A). To characterize these nuclear actin filaments, we performed an immunofluorescence screen to test for co-localization with various nuclear landmarks; among the co-localization candidates, we selected was Rap1, a marker for telomeres. We did not detect significant co-localization of nuclear actin with intact telomeres in HeLa cells, but when we uncapped the telomeres using MT-hTer-47A RNAi (Marusic et al., 1997; Li et al., 2004), we reproducibly observed the formation of larger nuclear actin structures, including the formation of long (>1 \u00b5m) filaments (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig1-v2.jpg)\n\n**Figure 1.:** (A) Localization of Utr230-EGFP-NLS (Utr230-EN) in unstressed HeLa cells. (B) Utr230-EN localization after induction of DNA damage via: 50 J/m-s UV exposure, 120-min incubation in media supplemented with 0.01% methyl methanosulfonate (MMS), 120-min incubation in media supplemented with 50 pg/ml neocarzinostatin (NCS), or 1 week post-transfection with telomere uncapping reagent MT-hTer-47A. (C) Percentage of cells with long (>1 micron) nuclear filaments after treatment with telomere uncapping reagent MT-hTer-47A (47A) for 5\u20137 days. N = 83\u201390 cells. (D) Average number of long nuclear filaments per cell after treatment with telomere uncapping reagent 47A for 5\u20137 days. N = 83\u201390 cells. (E) Percentage of cells with long (>1 micron) nuclear filaments after incubation in 0.01% MMS for 120\u2032. N = 87\u2013118 cells. (F) Average number of long nuclear filaments per cell incubation in 0.01% MMS for 120\u2032. N = 87\u2013118 cells. (G) Comparison of length distributions of long nuclear filaments after treatment with either 47A for 5\u20137 days or 120\u2032 in 0.01% MMS. Open circles indicate outliers. N = 94\u201395 filaments. (H) Utr230-EN localization after 120 minute incubation in 0.01% MMS including several classes of nuclear filaments, listed from top to bottom: elongated nucleoplasmic, clustered, peri- and intra-nucleolar. Nuclear filaments are indicated with yellow arrows. (I) Co-localization of peri-nucleolar filaments with an antibody detecting nucleolar protein fibrillarin. Asterisks indicate p-values < 10E-3 (**) or 10E-4 (***) for all panels.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The subcellular distribution of Utr230-EN (diffuse nuclear and cytoplasmic, filamentous nuclear and cytoplasmic, or cytoplasmic only) in untreated cells and cells treated with 0.01% or 0.05% MMS for 120\u2032. N = 206\u2013311 cells.\n\nUncapped telomeres resemble double-strand DNA breaks, so we hypothesized that nuclear actin assembly might be triggered as part of a more general DNA damage response. To test this idea, we damaged HeLa cell DNA using a variety of genotoxic agents: incubation with 0.01% methyl methanesulfonate (MMS); incubation with 50 pg/ml neocarzinostatin (NCS); or exposure to 50 J/m-s ultraviolet radiation. These various treatments all triggered assembly of actin filaments in the nucleus (Figure 1B). We compared nuclear actin filaments generated by telomere uncapping with those induced by genotoxic agents by counting the fraction of cells that contain nuclear filaments longer than 1 \u00b5m as well as the mean length of these long nuclear filaments in cells treated with either MT-hTer-47A for 5\u20137 days or 0.01% MMS for 2 hr. The fraction of cells with long filaments; the mean filament length; and the standard deviation of filament length were similar after the two treatments (Figure 1C\u2013G). Further analysis of nuclear filaments induced by MMS revealed the formation of three distinct classes of nuclear actin structure: (i) elongated nucleoplasmic filaments (>1 \u00b5m); (ii) amorphous, nucleoplasmic clusters; and (iii) nucleolus-associated filaments (Figure 1H). The third class of structures includes both peri- and intra-nucleolar filaments, as judged by co-localization with the nucleolus marker, fibrillarin (Figure 1I).\n\nTo verify that DNA damage-induced nuclear actin filaments are endogenous structures, and not artifacts produced by expression of the Utr230-EN probe, we visualized them using other probes for filamentous actin. In HeLa cells not expressing Utr230-EN, fluorescent derivatives of phalloidin faintly but reproducibly detected all three classes of DNA damage-induced nuclear filaments (Figure 2A). Detecting fluorescent phalloidin in the nucleus following DNA damage, however, presented technical challenges. High concentrations of fluorescent phalloidin bound to actin filaments in the cytoplasm swamp the much smaller signal from the nucleus. For example, the faint phalloidin fluorescence coming from the nucleus was difficult to detect by confocal microscopy, in part due to the relatively low light throughput of the pinholes. Wide-field deconvolution microscopy provided much more signal and enabled us to more easily observe the faint signal from phalloidin-bound filaments in the nucleus.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig2-v2.jpg)\n\n**Figure 2.:** (A) Faint detection of elongated nuclear actin filaments in the nucleoplasm and peri- and intra-nucleolar regions after 0.01% MMS treatment by phalloidin in untransfected cells. Arrows indicate locations of nuclear filaments, including elongated nucleoplasmic filaments (top two rows) and phalloidin staining of intra-nucleolar (third row) and peri-nucleolar (bottom row) structures. (B) Detection of elongated nuclear actin filaments after 0.01% MMS treatment by nuclear-targeted variants of three common live-cell actin reporters: Utr230-EN, Lifeact-EGFP-NLS (Lifeact-EN), and F-tractin-EGFP-NLS (F-tractin-EN). (C) Percentage of cells containing phalloidin-stainable nuclear filaments before and after MMS treatment within cell lines expressing actin reporters shown in (B). N values are as shown. (D) Distribution of the number of phalloidin-stainable nuclear filaments per cell after MMS treatment within cell lines expressing actin reporters shown in (B). Closed circles indicate outliers. (E) Distributions of lengths of long (>1 micron) phalloidin-stainable nuclear filaments per cell after MMS treatment within cell lines expressing actin reporters shown in (B). N = 82\u2013100 filaments. Open circles indicate outliers. (F) Scatter plot depicting the number of Utr230-EN detected nuclear filaments per cell as a function of the concentration of Utr230-EN in the nucleus following treatment with 0.01% MMS for 120 minute. N = 206 cells. (G) Scatter plot depicting the number of Lifeact-EN detected nuclear filaments per cell as a function of the concentration of Lifeact-EN in the nucleus following treatment with 0.01% MMS for 120\u2032. N = 214 cells.\n\nWe also detected DNA damage-induced nuclear actin filaments using Enhanced Green Fluorescent Protein (EGFP) fusions of the actin-binding peptides Lifeact and F-tractin (Schell et al., 2001; Riedl et al., 2008) targeted to the nucleus (Figure 2B). Using these probes, however, we detected filaments in a smaller fraction of 0.01% MMS-treated cells than in our Utr230-EN cell line. This is likely due to the fact that the higher fluorescence baseline of Lifeact-EN and F-tractin-EN in the nucleus obscures filaments (Figure 2B), and this is consistent with a parallel study in which we observed much higher levels of diffuse fluorescence from Lifeact- and F-tractin-based probes in the cytoplasm compared to Utr230 (Belin et al., 2015). To test this interpretation, we calculated the percentage of cells with phalloidin-stainable nuclear filaments in untransfected cells and cell lines expressing Utr230-, Lifeact-, or F-tractin-EN. In all cases, \u223c5% of untreated cells contain phalloidin-stainable nuclear actin, whereas after induction of DNA damage by 0.01% or 0.05% MMS incubation, the percent of cells with phalloidin-stainable nuclear actin increases to \u223c15% and \u223c20%, respectively (Figure 2C). Thus, the low frequency of cells with nuclear filaments detected by Lifeact- and F-tractin-EN does not correlate with fewer cells containing phalloidin-stainable nuclear actin. These results indicate that the DNA damage-induced nuclear filaments recognized by Utr230-EN are endogenous structures and that expression of nucleus-targeted actin probes does not significantly perturb nuclear actin assembly.\n\nWhen we limited our analysis to cells that contain large (>1 \u00b5m) nuclear actin structures, we observed\u2014by all of our labeling methods\u2014that the average number of actin structures per nucleus also increases significantly after DNA damage. We noticed, however, that the distribution filaments per nucleus is skewed toward both higher filament counts and longer filament lengths in cells expressing Lifeact-EN or Utr230-EN (Figure 2D,E). In the Lifeact-EN cell line, high filament density in the nucleus correlates with higher Lifeact-EN expression levels, suggesting that Lifeact stabilizes filaments or enhances polymerization rate (Figure 2G). The number of filaments per nucleus, however, does not correlate with Utr230-EN expression level (Figure 2F), suggesting that this probe does not promote filament formation in the same way as Lifeact. It is possible that Utr230-EN expression enhances the DNA damage response or that the effect of this probe on nuclear filament stability saturates at very low concentrations, below those required for live-cell imaging. Given the poor contrast of the F-tractin-EN and Lifeact-EN probes and the concentration-dependent stabilizing effects of Lifeact-EN, we regard Utr230-EN as the best available tool for imaging nuclear actin filaments generated by DNA damage.\n\n### Nuclear actin polymerization is required for efficient clearance of double-strand DNA breaks\n\nMany DNA repair proteins have been identified by their effects on the kinetics of DSB detection and clearance. To determine whether nuclear actin plays a role in DNA repair, we compared the number of DSBs induced by MMS in cells with different concentrations of nuclear actin. Initially, we quantified DSBs by expressing a fluorescently tagged fragment of 53BP1, a commonly used live-cell marker for DSBs (Dimitrova et al., 2008). In our hands, however, the number of fluorescent foci generated by this 53BP1 reporter correlates directly with the expression level of the construct, making it unsuitable for quantitative studies (Figure 3\u2014figure supplement 1A). Instead, we quantified DSBs by immunofluorescence, using antibodies against either 53BP1 or histone variant pS139 H2AX. This method yielded consistent DSB counts across multiple replicate samples treated with the same dose of MMS (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig3-v2.jpg)\n\n**Figure 3.:** (A) Double-strand break (DSB) sites detected by 53BP1 immunofluorescence after 30\u2032, 60\u2032, 90\u2032, and 120\u2032 incubations in 0.01% MMS. (B) Average number of DSB foci detected by 53BP1 immunofluorescence per cell after stable shRNA knockdown of the nuclear actin import factors, importin-9 (IPO9) or cofilin, after 0.01% MMS incubation. N = 125\u2013172 cells per condition. (C) Average number of DSB foci detected by gamma H2AX immunofluorescence per cell after stable shRNA IPO9 knockdown following 0.01% MMS incubation. N = 182\u2013241 cells per condition. (D) Partial rescue of control DSB foci levels after IPO9 knockdown by overexpression of wild-type actin-NLS-P2A-mCherry but not non-polymerizing R62D mutant of actin-NLS-P2A-mCherry. N = 118\u2013150 cells per condition. (E) Full rescue of non-Target control DSB foci levels after IPO9 knockdown by overexpression of wild-type actin-NLS-P2A-mCherry but not non-polymerizing R62D mutant of actin-NLS-P2A-mCherry. N = 262\u2013291 cells per condition. (F) Comparison of the distributions of long (>1 micron) nuclear filaments per cell and 53BP1 foci counts. N = 206 cells. (G) Co-localization assays between Utr230-EN and DSBs after 120\u2032 incubation in 0.01% MMS. Asterisks indicate p-values < 10E-2 (*), 10E-3 (**), or 10E-4 (***) for all panels.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Scatter plot comparing the number of 53BP1-mTagBFP2 foci per cell and 53BP1-mTagBFP2 expression level following treatment with 0.01% MMS for 120\u2032. N = 354 cells. (B) Localization of Utr230-EN after 0.01% MMS treatment following transient siRNA knockdown of exportin-6 (XPO6) or IPO9. (C) Quantification of elongated nuclear filament formation after increasing doses of MMS in IPO9, XPO6, and control siRNA knockdown lines. N = 126\u2013150 cells. (D) Quantification of DSBs per cell detected by 53BP1 antibody after increasing doses of MMS in IPO9, XPO6, and control knockdown cell lines. N = 126\u2013150 cells. Asterisks indicate p-values < 10E-2 (*) or 10E-3 (**).\n\nTo modulate the concentration of actin in the nucleus, we knocked down expression of either the nuclear import factor, IPO9, or the nuclear export factor, XPO6. For these experiments, we employed siRNAs previously validated in human cells (Bohnsack et al., 2006; Dopie et al., 2012; Belin et al., 2013). Knocking down expression of XPO6 increased the fraction of cells with detectable nuclear actin structures as well as the average number of nuclear structures in each cell. This increase occurred in both untreated cells and cells treated with MMS. Conversely, cells from which IPO9 had been depleted lacked detectable nuclear actin structures, regardless of whether they were treated with MMS (Figure 3\u2014figure supplement 1B,C). Loss of XPO6 had no effect on the number of DSB foci generated by MMS treatment. Loss of IPO9, however, significantly increased the number of DSBs per cell, judged using antibodies against 53BP1 (Figure 3B, Figure 3\u2014figure supplement 1D) or pH2AX (Figure 3C). We also observed an increase in the number of DSB foci when we depleted nuclear actin by knocking down its nuclear import co-factor, cofilin (Figure 3B).\n\nTo verify that IPO9 knockdown affects the number of DSB foci by decreasing the concentration of actin in the nucleus rather than by some other, off-target effect, we attempted to rescue the phenotype by expressing actin targeted to the nucleus by an IPO9-independent mechanism. In these experiments, we expressed either: an mCherry-3\u00d7NLS control construct; wild-type actin fused to mCherry-3\u00d7NLS; or a non-polymerizing R62D actin mutant fused to mCherry-3\u00d7NLS. Overexpressing wild-type actin-mCherry-NLS\u2014but not the R62D mutant actin construct\u2014decreased the number of DSB foci but did not completely rescue the loss of IPO9 (Figure 3D). We figured that the partial rescue could be due to the fact that fluorescent actin fusions cannot be incorporated into some actin filaments, particularly those generated by formin-family nucleation factors (Chen et al., 2012). We, therefore, modified our rescue constructs by inserting a 2A-peptide site to produce bicistronic expression of both a 3\u00d7NLS-tagged actin and an mCherry expression reporter (Kim et al., 2011; Huss and Lansford, 2014). Overexpression of this non-fluorescent, wild-type actin-NLS, but not the R62D mutant, resulted in a complete rescue of DSB foci counts (Figure 3E). These results indicate that nuclear actin polymerization is required for efficient DSB clearance and suggested that nuclear actin filaments may be generated by a formin-family actin nucleator.\n\nFinally, we asked whether the number of nuclear actin filaments correlates with the severity of DNA damage by comparing nuclear filaments and 53BP1 foci in the same cells. Surprisingly, we found no correlation between the numbers of nuclear actin filaments and DSBs (Figure 3F) and we observed only limited overlap between the 53BP1 and nuclear actin signals for all classes of DNA damage-induced filaments (Figure 3G). More detailed analysis of our co-localization data revealed that, out of 198 filaments found in nuclei of cells treated with 0.01% MMS for 2 hr, only 22 (11.1%) overlap or lie adjacent to 53BP1 foci. We cannot, however, rule out the possibility that some fraction of the observed overlap represents a functional interaction. One way to address this possibility would be to simultaneously track DSBs and nuclear actin filaments in live cells, but this would require a more reliable live-cell DSB marker. Given that expression of our fluorescent protein-tagged 53BP1 derivative is correlated with higher foci counts (Figure 3\u2014figure supplement 1A), which may include numerous spuriously detected loci, we found this tool to be unsuitable for quantitative live-cell imaging.\n\n### DNA damage-induced filaments do not contain cofilin and are not affected by knockdown of mDia1 or mDia2\n\nWe hypothesized that the DNA damage-induced nuclear actin structures we observe might be created by the same mechanisms that produce cofilin\u2013actin rods in response to cell stress (Fukui, 1978; Iida et al., 1992) or nuclear actin filaments in response to serum stimulation (Baarlink et al., 2013). The molecular mechanisms that produce cofilin\u2013actin rods are not well understood, but as their name suggests, they contain the actin-binding protein cofilin (Munsie et al., 2012). Due to the poor performance of commercially available antibodies in immunofluorescence, we raised our own polyclonal antibody against human cofilin in rabbit (Covance) capable of labeling nuclear cofilin\u2013actin rods induced by treatment of cells with 10% DMSO. In contrast to the nuclear filaments generated by DMSO, the nuclear actin structures triggered by 0.01% MMS contained no detectable cofilin (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cofilin antibody staining in cells expressing Utr230-EN and treated with either 10% DMSO for 30\u2032 or 0.01% MMS for 120\u2032. (B) Average number of nuclear actin filaments per cell after 120\u2032 0.01% MMS treatment in cells stably expressing mDia1, mDia2, or non-Target control hairpins. N = 115\u2013128 cells per condition. (C) Distribution of nuclear actin filament classes after 120\u2032 0.01% MMS treatment in cells stably expressing mDia1, mDia2, or non-Target control hairpins. N = 115\u2013128 cells per condition.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Western blots in whole-cell lysate of knockdown lines generated using stably expressed Mission shRNA constructs (Sigma). The RNAi Consortium Number (TRCN) for shRNA constructs is shown. Images have been enhanced for contrast.\n\nNuclear actin filaments generated in response to serum stimulation require the activity of formin-family actin nucleators, mDia1 and mDia2 (Baarlink et al., 2013). To test whether mDia1 or mDia2 contribute to the production of DNA damage-induced actin filaments, we knocked down their expression using shRNAs. Compared to cells treated with a non-target hairpin, we found no effect of knocking down either mDia1 or mDia2 on the abundance or morphology of nuclear filaments produced by MMS treatment (Figure 4B,C; Figure 4\u2014figure supplement 1). We conclude that DNA damage-induced filaments represent a biologically and biochemically distinct class of nuclear actin structures.\n\n### Formin-2 is required for nuclear actin polymerization in response to DNA damage\n\nTo identify candidate regulators of DNA damage-induced nuclear actin assembly, we sifted through a list of mammalian proteins found by Matsuoka et al. (2007) to be phosphorylated in response to DNA damage. This list contains many proteins not previously associated with DNA repair, including several known actin regulators. One such protein is the actin nucleator Formin-2 (FMN2). In addition to its phosphorylation, the expression of FMN2 is upregulated in response to both ultraviolet radiation and hypoxia (Yamada et al., 2013a). To test whether FMN2 is involved in nuclear actin assembly, we used shRNAs to deplete it from cells expressing the Utr230-EN nuclear actin probe (Figure 5\u2014figure supplement 1). When we induce DNA damage with 0.01% MMS, depletion of FMN2 completely inhibits nuclear actin assembly. Both the average number of elongated filaments and the distribution of filament types are nearly identical between MMS-treated, FMN2-knockdown cells and untreated controls expressing a non-target hairpin (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig5-v2.jpg)\n\n**Figure 5.:** (A) Average number of nuclear actin filaments per cell after 120\u2032 0.01% MMS treatment in cells stably expressing Formin-2 (FMN2) or non-Target control hairpins. N = 117\u2013151 cells per condition. (B) Distribution of nuclear actin filament classes after 120\u2032 0.01% MMS treatment in cells stably expressing FMN2 or non-Target control hairpins. N = 117\u2013151 cells per condition. (C) Rescue of FMN2 hairpin in (A) by overexpression of hairpin-resistant mutant of mCherry-FMN2. N = 105\u2013127 cells per condition. (D) Rescue of FMN2 hairpin in (B) by overexpression of hairpin-resistant mutant of mCherry-FMN2. N = 105\u2013127 cells per condition. (E) Knockdown of FMN2 via stably selected hairpins increases the number of DSB foci after 0.01% MMS incubation. N = 238\u2013323 cells per condition. (F) Rescue of control DSB foci levels after knockdown of FMN2 by overexpression of hairpin-resistant mutant of mCherry-FMN2. N = 229\u2013264 cells per condition. Asterisks indicate p-values < 10E-2 (*) or 10E-4 (***) for all panels.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Western blots in whole-cell lysate of knockdown lines generated using stably expressed Mission shRNA constructs (Sigma). The RNAi Consortium Number (TRCN) for shRNA constructs is shown. Images have been enhanced for contrast.\n\nTo verify the specificity of our hairpin RNA constructs, we attempted to rescue FMN2 knockdown by overexpressing an mCherry-FMN2 variant containing seven silent, hairpin-resistant mutations. Ectopic expression of this mCherry-FMN2 mutant completely restored the number and morphology of the actin structures generated by MMS treatment (Figure 5C,D). As with IPO9 knockdown, we found that FMN2 knockdown produces a significant increase in DSB foci observed following MMS treatment. The increase in 53BP1 foci was also rescued by overexpression of hairpin-resistant mCherry-FMN2 (Figure 5E,F). Since FMN2 homologs from other vertebrate organisms interact with Spire-family actin nucleators, we knocked down human Spire family members Spire-1 and Spire2 and determined their effect on DNA damage-induced filament assembly (Figure 6\u2014figure supplement 2). Knocking down Spire-1 or Spire-2 individually has little effect on DNA damage-induced filament formation (Figure 6\u2014figure supplement 1), but knocking down expression of both proteins at the same time produces the same effect as knocking down FMN2, ablating MMS-induced nuclear filament formation (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig6-v2.jpg)\n\n**Figure 6.:** (A) Distribution of nuclear actin filament classes after 120\u2032 0.01% MMS treatment in cells both stably expressing either Spire-1 (SPIR1) or non-Target control hairpins and transiently transfected with either Spire2 (SPIR2) or non-Target control siRNA. N = 111\u2013185 cells per condition. (B) Average number of nuclear actin filaments per cell for knockdown conditions described in (A). Asterisks indicate p-values < 10E-3 (**) or 10E-4 (***).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Average number of nuclear actin filaments per cell after 120\u2032 0.01% MMS treatment in cells stably expressing Spire-1 or non-Target control hairpins. N = 178\u2013224 cells per condition. (B) Distribution of nuclear actin filament classes after 120\u2032 0.01% MMS treatment in cells stably expressing Spire-1 or non-Target control hairpins. N = 178\u2013224 cells per condition. (C, D) Repeat of (A, B) for Spire-2 knockdown. N = 112\u2013149.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Western blots in whole-cell lysate of knockdown lines generated using stably expressed Mission shRNA constructs (Sigma) or Silencer Select siRNAs (Life Technologies). The RNAi Consortium Number (TRCN) for shRNA constructs and product ID for siRNAs are shown. Images have been enhanced for contrast. Only knockdown reagents yielding a successful knockdown (Spire1 shRNA 219870 and Spire2 siRNA s39068) were used for analysis.\n\nPrevious work revealed that human FMN2 translocates from the cytoplasm into the nucleus in response to hypoxia (Yamada et al., 2013b). To determine whether DNA damage also induces nuclear translocation, we imaged subcellular distribution of mCherry-FMN2 before and after incubation with 0.01% and 0.05% MMS. We observed that this DNA-damaging agent produces a dose-dependent nuclear accumulation of FMN2 (Figure 7A,B; Figure 7\u2014figure supplement 1), consistent with a direct role for FMN2 in the assembly of actin filaments in the nucleus following DNA damage. To better understand the nuclear accumulation of FMN2, we searched for a potential nuclear localization sequence (NLS) in human FMN2 using the online bioinformatics tool, cNLS-Mapper (Kosugi et al., 2009). We identified two putative NLS regions near the N-terminus of FMN2, beginning at amino acids 6 and 411 of the NCBI reference sequence, accession number NP_064450.3 (Figure 7C). To determine whether these regions are functional NLSs, we fused each to an EGFP reporter and expressed it in HeLa cells. Both sequences were sufficient to drive accumulation of EGFP in the nucleus, with stronger nuclear targeting observed for EGFP-NLS2 (Figure 7D,E). Mutation of NLS2 at three positively charged residues, K414A/R415A/R416A, efficiently blocks nuclear accumulation of mCherry-FMN2 in response to DNA damage (Figure 7F).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig7-v2.jpg)\n\n**Figure 7.:** (A) Localization of transiently expressed mCherry-FMN2 in untreated cells and after 120\u2032 incubation in 0.01% or 0.05% MMS. (B) Average ratio of nuclear vs cytoplasmic integrated fluorescence intensity of mCherry-FMN2 in untreated cells and after 0.01% and 0.05% MMS. N = 71\u201394 cells per condition. (C) Domain organization of human FMN2 including two putative nuclear localization sequence (NLS) sites identified using cNLS Mapper (Kosugi et al., 2009). (D) Localization of EGFP fused to each putative NLS. (E) Nucleocytoplasmic ratio of EGFP fused to each putative NLS. N = 140\u2013165 cells. (F) Nucleocytoplasmic ratio of the K414A/R415A/R416A NLS2 mutant mCherry-FMN2 before and after 0.05% MMS treatment. N = 108\u2013115 cells. Asterisks indicate p-values < 10E-3 (**) or 10E-4 (***) for all panels.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Examples of mCherry-FMN2 localization in (A) untreated cells and cells treated with (B) 0.01% MMS for 120\u2032 or (C) 0.05% MMS for 120\u2032.\n\n### Nucleolar size decreases during the DNA damage response\n\nTo determine whether nucleolus-associated actin filaments are involved in regulating a DNA damage-specific change in nucleolar morphology, we labeled nucleoli using fibrillarin and measured (i) the number of nucleoli per cell and (ii) nucleolar area after MMS treatment (Figure 8). We performed these experiments in both control cells expressing a non-target hairpin and an IPO9 shRNA knockdown line. Surprisingly, while the average number of nucleoli is constant, induction of DNA damage decreases nucleolar size by an average of \u223c20%. Equivalent decreases in nucleolar area were observed in both control and IPO9 knockdown cells, however, indicating that the nucleolar area reduction is nuclear actin-independent.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig8-v2.jpg)\n\n**Figure 8.:** (A) Localization by immunofluorescence of heterochromatin marker H3K9me3 and nucleolar marker fibrillarin in untreated cells stably expressing non-Target and IPO9 hairpins. (B) Repeat of (A) following 0.01% MMS incubation for 120\u2032. (C) Distribution of nucleolar areas (in pixels) before (N = 2313 nucleoli) and after 0.01% MMS incubation (N = 2299 nucleoli) in IPO9 knockdown cells. (D) Distribution of nucleolar areas (in pixels) before (N = 2094 nucleoli) and after 0.01% MMS incubation (N = 2180 nucleoli) in control cells. (E) Distribution of average numbers of nucleoli per cell before (N = 406 cells) and after 0.01% MMS incubation (N = 386 cells) in IPO9 knockdown cells. (F) Distribution of average numbers of nucleoli per cell before (N = 375 cells) and after 0.01% MMS incubation (N = 411 cells) in control cells. (G) Box plots comparing distributions shown in (C, D). Asterisks indicate p-values < 10E-4 (***). (H) Bar plots comparing averages from distributions shown in (E, F).\n\n### Actin regulates nuclear oxidation after acute DNA damage\n\nIn some cases, DNA damage has been shown to result in changes in the oxidative state of the nucleus, and it has been recently shown that oxidative stress can activate a subset of DNA-repair signaling cascades independently of DNA damage (Guo et al., 2010; Ditch and Paull, 2012). Oxidative pathways also regulate previously studied cases of stress-induced nuclear actin polymerization (Pfannstiel et al., 2001; Bernstein et al., 2012; Lundquist et al., 2014). To assess whether oxidative signaling is involved in regulation of nuclear actin filaments induced by MMS, we generated a construct containing the redox-sensing fluorophore roGFP2 fused with 3\u00d7NLS (roGFP2-NLS) (Lohman and Remington, 2008). roGFP2 is variant of Green Fluorescent Protein (GFP) engineered to introduce 2 cysteines to the interior of the GFP beta barrel, and it has been extensively used to measure oxidation changes in live cells (Merksamer et al., 2008; Al-Mehdi et al., 2012). The roGFP2 excitation spectrum contains 2 peaks, at 488 nm and at 405 nm. In the oxidized form of roGFP2, excitation at 405 nm is increased and excitation at 488 nm is decreased, relative to the reduced form. Thus, the ratio of emission intensities following excitation of roGFP2 at these wavelengths under different conditions can be used to measure the relative oxidation state.\n\nWe used roGFP2-NLS to measure nuclear oxidation levels and found that treatment with 0.01% MMS generates an oxidative burst in the nucleus (Figure 9A). Depletion of nuclear actin by IPO9 knockdown has no effect at this MMS dosage (Figure 9B). Curiously, however, when the MMS treatment was increased to 0.05%, IPO9 knockdown abolished nuclear oxidation; we observed the same result following knockdown of FMN2 (Figure 9C\u2013E). We measured the distribution of classes of nuclear actin filaments at MMS doses ranging from 0.01% to 0.05%, and found that increased MMS levels correlate with increases in the fraction of cells containing clustered bodies of nuclear filaments (Figure 9F). These results suggest that clustered filaments may participate in regulating the nuclear redox state.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/07735/elife-07735-fig9-v2.jpg)\n\n**Figure 9.:** (A) False-colored images of roGFP2-NLS signal (ratio of emission intensities after 488-nm and 405-nm excitation) after 120\u2032 in 0.01% MMS in non-Target control and IPO9 knockdown cell lines. (B) Average roGFP2-NLS signal integrated across the nuclear area in non-Target control or IPO9 hairpin lines in untreated and 0.01% MMS-treated cells. N = 108\u2013144 cells per condition. (C) False-colored images of roGFP2-NLS signal (ratio of emission intensities after 488-nm and 405-nm excitation) after 120\u2032 in 0.05% MMS in non-Target control and IPO9 knockdown cell lines. (D) Average roGFP2-NLS signal in nuclei of non-Target control or IPO9 hairpin lines in untreated and 0.05% MMS-treated cells. N = 106\u2013124 cells per condition. (E) Average roGFP2-NLS signal in the nuclei of cells stably expressing non-Target or FMN2 shRNA in untreated cells and cells treated with 0.01% or 0.05% MMS for 120\u2032. N = 109\u2013162 cells. (F) Distribution of nuclear actin filament classes after incubation in MMS concentrations from 0.01% to 0.05% for 120\u2032. N = 95\u2013159 cells per condition. Asterisks indicate p-values < 10E-3 (**) or 10E-4 (***) for all panels.\n\n## Discussion\n\nBiochemical, cell biological, and genomic studies have revealed many ancient and important connections between actin family proteins and DNA (Belin and Mullins, 2013), but we still know little about the functions of actin inside the nucleus. For example, many chromatin-remodeling complexes contain monomeric actin or Arps as subunits, but the contribution these subunits make to chromatin remodeling remains poorly understood. In addition, cellular stresses such as ATP and nutrient deprivation, heat shock, and various chemical toxins induce the assembly of cytoplasmic actin bundles as well as cofilin\u2013actin rods in the nucleus. Although they are thought to sense reactive oxygen species (Bernstein et al., 2012), the precise function of nuclear cofilin\u2013actin rods remains unclear. One of the most convincing functions proposed for nuclear actin is regulation of the actin-binding transcription factor MRTF. In this example, serum stimulation of quiescent cells induces assembly of actin filaments in both the cytoplasm and the nucleus (Baarlink et al., 2013). Assembly of filaments in the cytoplasm drives MRTF into the nucleus, while the assembly of filaments inside the nucleus depletes monomeric actin from this compartment and relieves its inhibitory effect on MRTF (Vartiainen et al., 2007). This mechanism relies on the nucleation activity of Diaphanous-family formins, mDia1 and mDia2, and highlights the existence of a stable pool of polymerizable actin monomers inside the nucleus.\n\nWe have uncovered another, previously unknown signaling pathway that generates actin filaments inside the nucleus, one that relies on the Cappuccino-family formin, FMN2, and two Spire-family actin regulators, Spire-1 and Spire-2. In response to DNA damage, these nucleation factors create a variety of actin structures in the nucleus, including long nucleoplasmic filaments, nucleolus-associated filaments, and amorphous clusters. These may represent functionally distinct species or possibly different time points in the evolution of a single structure. Regardless, as judged by the number of 53BP1 foci, nuclear actin assembly promotes clearance of double-strand DNA breaks. In contrast to the role of nuclear actin in MRTF function, however, filament formation appears to be more important than monomer depletion in the response to DNA damage. A functional role specific to filaments is supported by the fact that removing all actin (monomer and polymer) from the nucleus has the same effect on MMS-induced 53BP1 foci as simply inhibiting filament formation by depleting the nucleation factor, FMN2. If monomer depletion were the primary function of DNA damage-induced filaments, then IPO9 knockdown would not have the same effect on DNA repair as filament inhibition.\n\nLittle work has been done on human FMN2, but mouse and Drosophila FMN2 homologs are relatively well studied. The nucleation activity of the Drosophila FMN2 homolog, Cappuccino, is regulated by intramolecular contacts between a C-terminal region near the actin-nucleating domain and an N-terminal sequence (Bor et al., 2012). This autoinhibitory interaction is structurally distinct from the DID/DAD interaction that regulates activity of the Diaphanous-family formins. We have identified two nuclear-localization sites in the N-terminus of human FMN2, which also contains two previously discovered DNA damage-induced phosphorylation sites. If human FMN2 is also autoinhibited by an interaction between N- and C-terminal regions, it is possible that DNA damage-induced phosphorylation promotes both nuclear translocation and actin nucleation.\n\nNuclear actin filaments could potentiate the DNA damage response by several mechanisms: (1) altering mobility or organization of chromatin; (2) recruiting or delivering repair factors to sites of damage; or (3) binding and sequestering nuclear factors that would otherwise inhibit DNA repair. The third possibility is consistent with the minimal co-localization we observe between nuclear actin filaments and 53BP1 foci. Recent studies, however, have also demonstrated that DNA damage alters the mobility of DNA loci, perhaps facilitating their interaction with DNA repair proteins that are expressed at extremely low concentrations (Dimitrova et al., 2008; Min\u00e9-Hattab and Rothstein, 2013). One attractive possibility is that myosin motors in the nucleus may drive clustering of repair components or DSB sites to facilitate homologous recombination. This would be analogous to the role of FMN2/Spire-generated actin filaments in generating contractile structures that link cargo vesicles in mouse oocytes.\n\nThe DNA damage-induced recruitment of actin filaments to nucleoli is somewhat mysterious. We initially hypothesized that the nucleolar filaments may regulate some DNA damage-specific change in nucleolar morphology, analogous to the role of actin filaments in germinal vesicles of Xenopus oocytes. Although we observed a 20% decrease in average nucleolar area after MMS treatment, depleting nuclear actin by knocking down IPO9 had no measurable effect on this phenomenon. Given that nucleoli are the sites of rRNA transcription, we speculate that nuclear actin filaments may play a role in rRNA production or export, perhaps promoting stress-induced changes in translation. Clarifying the potential nucleolar functions of actin will require the identification of more nucleolus-associated actin-binding proteins.\n\nIn addition to filamentous structures, DNA damage also induces formation of amorphous actin clusters in the nucleus. The number and size of these clusters increases with increasing doses of genotoxic agents, suggesting that they may be related to pre-apoptotic signaling. Consistent with this idea, we found that blocking nuclear filament assembly inhibits nuclear oxidation induced by high concentrations of MMS. Several prior studies suggested that actin acts as a sensor of cellular oxidation levels. For example, in the yeast Saccharomyces cerevisiae, cellular oxidation triggers formation of amorphous \u2018actin bodies\u2019 generated by intermolecular disulfide bonds (Farah and Amberg, 2007, 2011). Similar sensing of nuclear oxidation has also been proposed for nuclear cofilin\u2013actin rods, which contain disulfide-linked cofilin oligomers (Bernstein et al., 2012). While more work will be required to determine whether DNA damage-induced nuclear filament clusters are also oxidation sensors, we demonstrate clearly that actin can alter the nuclear redox state. Given that all previously observed cases of nuclear actin assembly are connected to oxidation, we suggest that nuclear actin may be an important mediator of redox signaling.\n\nTogether with other recent studies, our work reveals that multiple cellular signals can trigger assembly of a variety of actin structures in the nucleus, each with a unique morphology, function, and regulatory mechanism. One common theme, however, appears to be a link between the state of actin in the nucleus and the state of actin in the cytoplasm. For example, both serum stimulation (Vartiainen et al., 2007; Baarlink et al., 2013) and DNA damage (Zuchero et al., 2012; and unpublished observations) induce a dramatic increase in cytoplasmic actin polymerization. In both cases, this cytoplasmic actin polymerization correlates with nuclear accumulation of formin-family actin nucleators. We, therefore, speculate that changes in the actin monomer/polymer ratio in the cytoplasm may facilitate nuclear accumulation of actin regulators, coordinating the cytoplasmic and nuclear responses to stimuli.\n\n## Materials and methods\n\n### Molecular biology\n\nWe used pEGFP-C1 or pmCherry-C1 (Clontech, Mountain View, CA, United States) as the host vector for all EGFP fusions, with N-terminal EGFP fusions inserted into the unique AgeI and NheI sites. Lifeact and all NLS sequences were cloned directly using annealing primers purchased from Elim Biopharmaceuticals. F-tractin and 3\u00d7NLS-peptide 2A inserts were synthesized and inserted into backbone vectors using custom cloning services from GenScript. Human actin was subcloned from cDNA purchased from GE Dharmacon (formerly Open Biosystems). 53BP1 fragment was subcloned from Addgene plasmid #19835 (Dimitrova et al., 2008) and was provided by Beth Cimini. mCherry-FMN2 was provided by Sonia Rocha and includes the following N-terminal insertion in comparison to the NCBI human FMN2 reference sequence (accession number NP_064450.3): AGATCTCATTCGATTCGCACGGTGGAGATTAAAGTCCCCGAGATAGAGGAAACGTTTTTCGCGCCCAGGTTCAGCGAGGAGCCGCGCGGGGGCAGAGGGGGCGGCGGCGGCGGGCGGGGAGCCAGGCCCGAGCTGCGTTCTGCGCAGCCATTGGTGGGCGCCGCACTCTGCACTGAGCATGTTCGCGCCCCGCCGGCCCCTAGCCGCAGCCGCAGCCGCAGCGACGGCAGCCACGGGAGCCGCCGCGCATTATGCAAAGCGGCGGCAGATGCGAGCGGGGCCAGCCGGGCGCGCGTCGGCCTCCCCTCCCAGCGGCTCCCCCCGCCGCCGCCTGACTCTCCCGGGAGACTCCCTAGGCCCGGGATTGCACC. roGFP2 was a gift from Philip Merksamer and Ferroz Papa. Lentiviral packaging vectors were provided by John James. Mutagenesis of mCherry-FMN2 was performed using a Q5 polymerase site-directed mutagenesis (SDM) kit according to the manufacturer's protocol, modified to include the Q5 High GC Enhancer and an extension temperature of 75\u00b0C (New England Biolabs, NEB). Primer sequences for SDM were generated using the companion NEB primer design tool. All new constructs generated for this study are being made available on Addgene.\n\n### Cell culture\n\nHeLa cells and HEK293T lentivirus-generating cells (ATCC) were cultured in Dulbecco's modified Eagle's medium supplemented with 10% Fetal Bovine Serum (FBS, Atlas Biologicals, Fort Collins, CO, United States), 2 mM L-glutamine and penicillin\u2013streptomycin (UCSF Cell Culture facility) at 37\u00b0C with 5% CO2. For transient transfection of non-knockdown constructs in HeLa cells, cells were transfected using Lipofectamine LTX (Life Technologies) according to the manufacturer's protocol. All transient transfections were performed 24\u201372 hr prior to data collection. Stable cell lines of Utr230-EGFP-NLS were generated as described in Belin et al. (2013). For knockdown constructs, lentiviral packaging vectors pMDG.2 and pCMV\u22068.91 were co-transfected with shRNA vectors into HEK293T cells using GeneJuice (EMD Millipore) as described in James and Vale, 2012. Lentiviral particles were harvested 2 and 3 days following transfection, sterile-filtered using 0.2-\u03bcm Steriflip filter units (EMD Millipore) and either used immediately or stored long-term at \u221280\u00b0C.\n\n### Knockdown reagents\n\nMock siRNA and Silencer Select siRNAs directed against human IPO9, XPO6, and Spire2 were purchased from Life Technologies. Transient reverse transfection was performed using Lipofectamine RNAiMAX (Life Technologies) according to the manufacturer's protocol. At 8\u201324 hr following transient transfection, the cell medium was replaced. Cells were split into flasks and/or fibronectin coverslips 3 days after transfection and were either fixed for imaging or lysed for Western blotting at 5 days following transfection. Non-Target shRNA and Mission shRNAs directed against mDia1, mDia2, cofilin, FMN2, Spire-1, and IPO9 were purchased as bacterial glycerol stocks from Sigma, and lentiviral particles were generated as described above. HeLa cells were transduced with lentiviral particles and split after 8\u201316 hr into media supplemented with 0.3 \u03bcg/ml puromycin (Thermo Fisher Scientific) for stable selection. All knockdown constructs were pre-validated by qRT-PCR using the SuperScript III Platinum SYBR Green One-Step qRT-PCR kit (Life-Technologies) and run on a Stratagene Mx3005P RT-PCR thermocycler (UCSF Center for Advanced Technology). RNA was insolated using the TRIzol Plus RNA Purification Kit according to the manufacturer's instructions (Life Technologies). qRT-PCR primers were designed using Primer BLAST (NIH). Knockdowns verified by qRT-PCR were subsequently validated by Western blotting (performed as described in Belin et al., 2013 but modified to include 1\u00d7 Detector Block [KPL/Sera Care Life Sciences] as the primary antibody diluent).\n\n### Antibodies\n\nOur cofilin antibody was generated in rabbit by Covance from purified human cofilin; sera from inoculated rabbits rather than purified antibody was used in immunofluorescence assays. Commercial primary antibodies used in this study follow: anti-tubulin (Sigma, Cat. No. T29026), anti-fibrillarin (Abcam, Cat. No. ab4566), H3K9me3 (Abcam, Cat. No. ab8898), anti-53BP1 (Novus Biologicals, Cat. No. NB100-305), anti-H2AX pS139 (Millipore, Cat. No. 05\u2013636, Clone JBW301), IPO9 (Abcam, Cat. No. ab52605), mDia2 (ECM Biosciences, Cat. No. DP3491), mDia1 (BD Biosciences, Cat. No. 610848), FMN2 (Abnova, Cat. No. H00056776-A01), Spire-1 (Aviva Systems Biology, Cat. No. OAAB12896), Spire2 (ThermoFisher\u2014Pierce, Cat. No. PA5-24099).\n\n### DNA damage assays\n\nFor telomere uncapping assays, MT-hTer-47A shRNA cell lines were was generated as described in Stohr and Blackburn (2008) and cells were fixed for imaging one week after initial infection. For global DNA damage induction via UV, cells were washed three times in calcium- and magnesium-free Phosphate-Buffered Saline (PBS). The PBS was removed and cells were exposed to 50 J/m-s UV in a hybridization oven. After exposure, cells were washed once and complete medium was added. UV-treated cells were then incubated at 37\u00b0C with 5% CO2 for 6 hr and then fixed for imaging. For neocarzinostatin (NCS; Sigma) treatment, NCS was added to complete medium to a final concentration of 50 pg/ml. Cells were washed in PBS and NCS-supplemented media was added; cells were then incubated at 37\u00b0C with 5% CO2 for 6 hr and fixed for imaging. For methyl methanosulfonate (MMS; Sigma) treatment, MMS was added to complete medium at a final concentration of either 0.01% or 0.05% vol/vol. Cells were washed in PBS and MMS-supplemented media was added; cells were then incubated at 37\u00b0C with 5% CO2 for 2 hr or as indicated before fixation for imaging.\n\n### Immunofluorescence and staining\n\nCells were passaged onto glass coverslips coated with 10 \u03bcg/ml fibronectin (Invitrogen) and cultured overnight to 30\u201360% confluence. Coverslips were fixed at room temperature for 15\u201330 min in 4% paraformaldehyde (prepared from 16% solution from Electron Microscopy Sciences) in PBS (UCSF Cell Culture Facility). Cells were permeabilized in 0.1% Triton-X-100 (Sigma) in PBS for 3\u20135 min and blocked in 1\u00d7 blocking buffer (abcam)/PBS at room temperature for 60 min. Primary antibody incubations were performed for 60 min at room temperature or overnight (anti-53BP1) in 1\u00d7 blocking buffer (abcam)/PBS. Cells were incubated in Alexa Fluor-labeled secondary antibodies (Invitrogen) in 1X blocking buffer (abcam)/PBS for 30 min at room temperature and mounted on slides Fluoromount G with DAPI (Affymetrix eBioscience). For phalloidin staining, cells were fixed as above and stained for 15 min in 0.1% Triton/PBS with 100 \u03bcM Alexa Fluor 568-phalloidin (Invitrogen).\n\n### Microscopy and image analysis\n\nImages were acquired using a DeltaVision RT system (Applied Precision) with a Photometrics CoolSnapHQ camera using a 100\u00d7 1.40 NA UPlanSApo objective (Olympus). Images were processed for contrast enhancement and background noise reduction using ImageJ (National Institutes of Health). All image analysis was performed using custom ImageJ macros (see Source code 1). All figures and statistical analyses were generated in R. Reported p-values are the results of a two-tailed t-test.\n",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "42c7fed7-abfc-4310-8655-33dd7e2c919f",
+      "submission_id": "83ca3ff2-da73-4a24-b699-5d2bbab174fb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pekka Lappalainen, University of Helsinki , Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07735.020](https://doi.org/10.7554/eLife.07735.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cFormin-2 and Spire-1/2 create nuclear actin filaments that promote efficient DNA repair during the DNA damage response\u201d for peer review at eLife. Your submission has been favorably evaluated by Randy Schekman (Senior Editor) and three peer reviewers, one of whom, Pekka Lappalainen, is a member of our Board of Reviewing Editors, and another is Robert Grosse.\n\nThe reviewers have discussed their reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe three reviewers found the findings presented in the manuscript important and of significant interest, both in the cytoskeleton and chromatin fields. Although a majority of the experiments appear to be of good technical quality, a few additional experiments/data analyses would significantly strengthen the study. Furthermore, as described below, there are several additional points that should be addressed by revising the manuscript text/figures.\n\n1) The data in Figure 1B should be carefully quantified to confirm the conclusions presented in the text (each of the treatments were claimed to trigger nuclear actin filament assembly that was indistinguishable from that produced by telomere uncapping).\n\n2) The data presented in Figure 2 are not particularly convincing. If possible, the authors should provide better quality images or alternatively perform more sophisticated data analysis including, for example, quantification of the average lengths of the nuclear filaments/bundles visualized by phalloidin alone or by the other probes.\n\n3) The authors should also more precisely discuss why only 15-20 % of the cells have detectable nuclear actin filaments following MSS treatment.\n\n4) The possible role of FMN2-assemled nuclear actin filaments in regulation of nuclear oxidation following DNA damage should be tested to better link the data presented in Figure 9 to the study. This could be performed by FMN2 RNAi studies, which would be preferentially combined with rescue experiments using wild-type FMN2 and the mutant FMN2 (K414A/R415A/R416A), which does not accumulate to the nucleus.\n",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8a75d6b0-7999-4178-8ff1-6cd988a4cc6b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C1",
+      "claim": "Actin was first identified in muscle over seventy years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin was first identified in muscle over seventy years ago (Straub, 1942)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Straub, 1942",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "89119781-7d11-475c-89b5-459318cae766",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C2",
+      "claim": "Actin has been established as a component of non-muscle cells for nearly half a century.",
+      "claim_type": "EXPLICIT",
+      "source": "has been established as a component of non-muscle cells for nearly half a century (Hatano and Oosawa, 1966)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hatano and Oosawa, 1966",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "c42ff161-53d5-4868-adec-ff0eadeae13b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C3",
+      "claim": "The first reports of actin inside the nucleus of a cell appeared forty years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The first reports of actin inside the nucleus of a cell appeared forty years ago (LeStourgeon et al., 1975)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to LeStourgeon et al., 1975",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "dc963251-4252-479e-b68f-c1d92caa5d0b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C4",
+      "claim": "Actin has been found in the nuclei of many different cell types, linked to a variety of nuclear processes.",
+      "claim_type": "EXPLICIT",
+      "source": "actin has been found in the nuclei of many different cell types, linked to a variety of nuclear processes (Pederson and Aebi, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pederson and Aebi, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "e006c100-9f2a-4bd4-a4fd-dffa79268be7",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C5",
+      "claim": "The nuclear export factor exportin-6 (XPO6) binds profilin-actin complexes in the nucleus and shuttles them into the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear export factor exportin-6 (XPO6) binds profilin-actin complexes in the nucleus\u2014as well as a handful of other actin-binding proteins\u2014and shuttles them into the cytoplasm (St\u00fcven et al., 2003; Bohnsack et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to St\u00fcven et al., 2003 and Bohnsack et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "9545d8ef-55c0-4000-8f16-e191fa0e6039",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C6",
+      "claim": "Nuclear import of actin is regulated by importin-9 (IPO9), which transports cofilin\u2013actin complexes from the cytoplasm into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, nuclear import of actin is regulated by importin-9 (IPO9), which transports cofilin\u2013actin complexes from the cytoplasm into the nucleus (Dopie et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dopie et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "f24963d6-bd0f-4441-b505-d2fe28914fdf",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C7",
+      "claim": "In many organisms, the export factor XPO6 is not expressed in the oocytes, and so the germinal vesicles contain a high concentration of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In many organisms, the export factor XPO6 is not expressed in the oocytes of, and so the germinal vesicles contain a high concentration of actin (St\u00fcven et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to St\u00fcven et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "852148cd-51a6-4c81-86a4-523e449d7c12",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C8",
+      "claim": "In Xenopus laevis oocytes, germinal vesicle actin forms a filamentous mesh that protects nucleoli from gravity-induced aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus laevis oocytes, this germinal vesicle actin forms a filamentous mesh that protects nucleoli from gravity-induced aggregation (Feric and Brangwynne, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Feric and Brangwynne, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "cda35889-7403-4487-8aea-c1c8339da679",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C9",
+      "claim": "Actin filaments associated with germinal vesicles of starfish oocytes facilitate nuclear envelope breakdown and form a contractile net that facilitates chromosome capture during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin filaments associated with germinal vesicles of starfish oocytes facilitate nuclear envelope breakdown and form a contractile net that facilitates chromosome capture during mitosis (L\u00e9n\u00e1rt et al., 2005; Mori et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to L\u00e9n\u00e1rt et al., 2005 and Mori et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "e9351f4e-cff3-479a-91d9-dc6943b0bcc5",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C10",
+      "claim": "Most somatic cells express some amount of XPO6, and therefore, have a much lower concentration of actin in the nucleus than in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most somatic cells express some amount of XPO6, and therefore, have a much lower concentration of actin in the nucleus than in the cytoplasm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about XPO6 function and its expression patterns",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "a2117242-b87d-4e61-8485-867951eafda8",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C11",
+      "claim": "Mammalian somatic nuclei contain relatively small amounts of filamentous actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, unlike Xenopus germinal vesicles, mammalian somatic nuclei contain relatively small amounts of filamentous actin (Belin et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Belin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "e38a888e-5901-406d-8ad9-52b70cc7cbfe",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C12",
+      "claim": "Monomers of actin and several actin-related proteins (Arps) are conserved components of chromatin-remodeling complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Monomers of actin and several actin-related proteins (Arps), for example, are conserved components of chromatin-remodeling complexes (Farrants, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farrants, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "24b1def5-9964-473a-9e61-b9f856399fb2",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C13",
+      "claim": "Nuclear actin monomers inhibit the activity of the serum-responsive transcriptional co-activator MRTF.",
+      "claim_type": "EXPLICIT",
+      "source": "nuclear actin monomers inhibit the activity of the serum-responsive transcriptional co-activator MRTF (myotonin-related transcription factor) (Vartiainen et al., 2007; Mouilleron et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vartiainen et al., 2007 and Mouilleron et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "979c0141-c5c7-42ba-8a62-7651fb4a8eca",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C14",
+      "claim": "Serum stimulation of quiescent fibroblasts and integrin engagement in spreading cells induce transient (<60 s) bursts of nuclear actin polymerization, driven by the nucleation activity of formin-family proteins mDia1 and mDia2.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum stimulation of quiescent fibroblasts (Baarlink et al., 2013) and integrin engagement in spreading cells (Plessner et al., 2015) induce transient (<60 s) bursts of nuclear actin polymerization, driven by the nucleation activity of formin-family proteins mDia1 and mDia2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baarlink et al., 2013 and Plessner et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d3dd55e7-0274-4863-aab5-197235253e35",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C15",
+      "claim": "Short-lived nuclear actin filaments induced by serum stimulation appear to promote activity of the transcriptional co-activator MRTF by depleting monomeric actin from the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "These short-lived filaments appear to promote activity of the transcriptional co-activator MRTF by depleting monomeric actin from the nucleus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the described mechanism",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "48ba8593-5997-4395-a83c-afa223f65298",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C16",
+      "claim": "Serum stimulation activates the actin-severing protein MICAL-2, which reversibly oxidizes actin monomers, rendering them incapable of inhibiting MRTF-dependent transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum stimulation also activates the actin-severing protein MICAL-2, which reversibly oxidizes actin monomers, rendering them incapable of inhibiting MRTF-dependent transcription (Lundquist et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lundquist et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "7a9021f9-7d27-4c79-bfef-d81f5858676a",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C17",
+      "claim": "Heat shock, dimethyl sulfoxide (DMSO), depletion of ATP, and oxidative stress all induce formation of nuclear filament bundles that contain large amounts of cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat shock, dimethyl sulfoxide (DMSO), depletion of ATP, and oxidative stress all induce formation of nuclear filament bundles that contain large amounts of cofilin (Fukui, 1978, Fukui and Katsumaru, 1980; Iida et al., 1992; Pendleton et al., 2003; Kim et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "e1cc9690-19ad-4b98-9c68-f5274548f104",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C18",
+      "claim": "Cofilin\u2013actin rods are highly oxidized and appear to be held together by intermolecular disulfide bonds between cofilin molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "cofilin\u2013actin rods, which are highly oxidized and appear to be held together by intermolecular disulfide bonds between cofilin molecules (Pfannstiel et al., 2001; Bernstein et al., 2012; Zhang et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pfannstiel et al., 2001, Bernstein et al., 2012, and Zhang et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "fca4e977-8163-4d88-b251-55d34048b228",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C19",
+      "claim": "Cofilin\u2013actin rods sense and perhaps regulate the reducing potential of the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Little is known about the physiological role of these cofilin\u2013actin rods but they sense and perhaps regulate the reducing potential of the nucleus (Bernstein et al., 2012; Munsie et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bernstein et al., 2012 and Munsie et al., 2012, with speculative element",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "4d186e0b-ee26-4460-a290-54f0e9e1a268",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C20",
+      "claim": "DNA damage induced by various genotoxic agents triggers formation of actin filaments inside the nucleus of mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these recently developed tools, we discovered that DNA damage induced by various genotoxic agents triggers formation of actin filaments inside the nucleus of mammalian cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d5f8846c-6505-4893-a4db-fa3cf78e76ba",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C21",
+      "claim": "DNA damage-induced nuclear actin filaments have three characteristic morphologies: long, nucleoplasmic filaments; short, nucleolus-associated filaments; and dense, nucleoplasmic clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin filaments assemble inside the nucleus in response to multiple cellular perturbations, including heat shock, protein misfolding, integrin engagement, and serum stimulation. We find that DNA damage also generates nuclear actin filaments\u2014detectable by phalloidin and live-cell actin probes\u2014with three characteristic morphologies: (i) long, nucleoplasmic filaments; (ii) short, nucleolus-associated filaments; and (iii) dense, nucleoplasmic clusters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and observations in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "4bbb8e81-62b8-4b52-b289-f0e1cce2065b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C22",
+      "claim": "DNA damage-induced nuclear actin assembly requires Formin-2 and Spire-1/Spire-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This DNA damage-induced nuclear actin assembly requires two biologically and physically linked nucleation factors: Formin-2 and Spire-1/Spire-2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing knockdown effects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "a13ee316-68b9-4cac-ba24-56209adb99ca",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C23",
+      "claim": "Formin-2 accumulates in the nucleus after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Formin-2 accumulates in the nucleus after DNA damage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data showing FMN2 nuclear translocation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "429a6215-fde3-487c-bd88-6dee753f59e0",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C24",
+      "claim": "Depletion of either Formin-2 or actin's nuclear import factor, importin-9, increases the number of DNA double-strand breaks (DSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "depletion of either Formin-2 or actin's nuclear import factor, importin-9, increases the number of DNA double-strand breaks (DSBs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing increased 53BP1 foci counts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "15abc473-dcd9-4f53-b471-132d4ea78dfa",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C25",
+      "claim": "Nuclear actin filaments are required for efficient DSB clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "linking nuclear actin filaments to efficient DSB clearance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that depletion of nuclear actin increases DSB numbers",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "be52c88d-c8ad-4fe6-9173-78af9f2edf40",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C26",
+      "claim": "Nuclear actin filaments are required for nuclear oxidation induced by acute genotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear actin filaments are also required for nuclear oxidation induced by acute genotoxic stress",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by roGFP2 oxidation measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "f8d62c8c-e52b-4e8c-8c0d-10b5f036b6d8",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C27",
+      "claim": "Telomere uncapping using MT-hTer-47A RNAi reproducibly induces the formation of larger nuclear actin structures, including long (>1 \u00b5m) filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "but when we uncapped the telomeres using MT-hTer-47A RNAi (Marusic et al., 1997; Li et al., 2004), we reproducibly observed the formation of larger nuclear actin structures, including the formation of long (>1 \u00b5m) filaments (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "bdccf7ab-cf38-440c-adef-47998465b986",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C28",
+      "claim": "UV exposure at 50 J/m-s induces nuclear actin filament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These various treatments all triggered assembly of actin filaments in the nucleus (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "dac2ce1e-4b29-4ac3-ab15-dd43acab6972",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C29",
+      "claim": "Incubation with 0.01% methyl methanesulfonate (MMS) induces nuclear actin filament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These various treatments all triggered assembly of actin filaments in the nucleus (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1b49741c-8f91-45c2-a0b1-dce7abd8177c",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C30",
+      "claim": "Incubation with 50 pg/ml neocarzinostatin (NCS) induces nuclear actin filament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These various treatments all triggered assembly of actin filaments in the nucleus (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "c4fb050a-8025-4ee4-b228-84b09cb89d5b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C31",
+      "claim": "The fraction of cells with long filaments, the mean filament length, and the standard deviation of filament length were similar after telomere uncapping and MMS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of cells with long filaments; the mean filament length; and the standard deviation of filament length were similar after the two treatments (Figure 1C\u2013G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data in Figures 1C-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "f930c6db-695f-45ae-92ae-81e5d4b18684",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C32",
+      "claim": "DNA damage-induced nuclear actin structures include elongated nucleoplasmic filaments (>1 \u00b5m), amorphous nucleoplasmic clusters, and nucleolus-associated filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of nuclear filaments induced by MMS revealed the formation of three distinct classes of nuclear actin structure: (i) elongated nucleoplasmic filaments (>1 \u00b5m); (ii) amorphous, nucleoplasmic clusters; and (iii) nucleolus-associated filaments (Figure 1H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1b8f0c13-3296-434c-8429-8a56da2c4100",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C33",
+      "claim": "Nucleolus-associated filaments include both peri- and intra-nucleolar filaments, as judged by co-localization with the nucleolus marker, fibrillarin.",
+      "claim_type": "EXPLICIT",
+      "source": "The third class of structures includes both peri- and intra-nucleolar filaments, as judged by co-localization with the nucleolus marker, fibrillarin (Figure 1I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-localization data shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "9273fbe2-6207-4d60-9d2a-a64000430304",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C34",
+      "claim": "Fluorescent derivatives of phalloidin faintly but reproducibly detect all three classes of DNA damage-induced nuclear filaments in HeLa cells not expressing Utr230-EN.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells not expressing Utr230-EN, fluorescent derivatives of phalloidin faintly but reproducibly detected all three classes of DNA damage-induced nuclear filaments (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phalloidin staining data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "94216dc7-994c-4d46-a38f-ca2b4ef97c24",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C35",
+      "claim": "DNA damage-induced nuclear actin filaments can be detected using Enhanced Green Fluorescent Protein (EGFP) fusions of the actin-binding peptides Lifeact and F-tractin targeted to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected DNA damage-induced nuclear actin filaments using Enhanced Green Fluorescent Protein (EGFP) fusions of the actin-binding peptides Lifeact and F-tractin (Schell et al., 2001; Riedl et al., 2008) targeted to the nucleus (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "21d0588e-3d9b-4ec9-a2e2-441bef50a59b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C36",
+      "claim": "Approximately 5% of untreated cells contain phalloidin-stainable nuclear actin.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, \u223c5% of untreated cells contain phalloidin-stainable nuclear actin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative data from phalloidin staining experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "46da1aaa-6f75-4b9a-ade7-96521d3525e5",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C37",
+      "claim": "After induction of DNA damage by 0.01% or 0.05% MMS incubation, the percent of cells with phalloidin-stainable nuclear actin increases to approximately 15% and 20%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas after induction of DNA damage by 0.01% or 0.05% MMS incubation, the percent of cells with phalloidin-stainable nuclear actin increases to \u223c15% and \u223c20%, respectively (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "2ae7b367-5497-4fee-ad58-bd3f763729f0",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C38",
+      "claim": "Expression of nucleus-targeted actin probes does not significantly perturb nuclear actin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the DNA damage-induced nuclear filaments recognized by Utr230-EN are endogenous structures and that expression of nucleus-targeted actin probes does not significantly perturb nuclear actin assembly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of phalloidin staining in transfected and untransfected cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "88fe01b7-40c3-4f8b-ba57-04ac9a64b17a",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C39",
+      "claim": "In the Lifeact-EN cell line, high filament density in the nucleus correlates with higher Lifeact-EN expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Lifeact-EN cell line, high filament density in the nucleus correlates with higher Lifeact-EN expression levels, suggesting that Lifeact stabilizes filaments or enhances polymerization rate (Figure 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 2G",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "930636cd-81a3-49c0-9535-0460185d60bd",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C40",
+      "claim": "The number of filaments per nucleus does not correlate with Utr230-EN expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of filaments per nucleus, however, does not correlate with Utr230-EN expression level (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "2afb48e4-2640-4284-8365-ad13f2f95299",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C41",
+      "claim": "Utr230-EN is the best available tool for imaging nuclear actin filaments generated by DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the poor contrast of the F-tractin-EN and Lifeact-EN probes and the concentration-dependent stabilizing effects of Lifeact-EN, we regard Utr230-EN as the best available tool for imaging nuclear actin filaments generated by DNA damage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative evaluation of different probes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "017212a9-ed55-4178-861b-3911ba3be28c",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C42",
+      "claim": "Knocking down expression of IPO9 significantly increases the number of DSBs per cell after MMS treatment, as judged using antibodies against 53BP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of IPO9, however, significantly increased the number of DSBs per cell, judged using antibodies against 53BP1 (Figure 3B, Figure 3\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "fa206aa2-0f45-42db-8cbf-f2d8111531e8",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C43",
+      "claim": "Knocking down expression of IPO9 significantly increases the number of DSBs per cell after MMS treatment, as judged using antibodies against pH2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of IPO9, however, significantly increased the number of DSBs per cell, judged using antibodies against 53BP1 (Figure 3B, Figure 3\u2014figure supplement 1D) or pH2AX (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "002da235-be95-46b9-81f2-bf04a98e68b3",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C44",
+      "claim": "Depletion of nuclear actin by knocking down cofilin increases the number of DSB foci.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed an increase in the number of DSB foci when we depleted nuclear actin by knocking down its nuclear import co-factor, cofilin (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "69fe14b4-6ad4-4912-817a-e8f99215f5dc",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C45",
+      "claim": "Overexpressing wild-type actin-mCherry-NLS, but not the R62D mutant actin construct, decreases the number of DSB foci but does not completely rescue the loss of IPO9.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing wild-type actin-mCherry-NLS\u2014but not the R62D mutant actin construct\u2014decreased the number of DSB foci but did not completely rescue the loss of IPO9 (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "467283ee-8077-4630-b1a9-b27f81910e29",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C46",
+      "claim": "Overexpression of non-fluorescent, wild-type actin-NLS, but not the R62D mutant, results in a complete rescue of DSB foci counts after IPO9 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of this non-fluorescent, wild-type actin-NLS, but not the R62D mutant, resulted in a complete rescue of DSB foci counts (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "3a5d3b9c-8289-4634-bae7-2c5ed2f02f30",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C47",
+      "claim": "Nuclear actin polymerization is required for efficient DSB clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that nuclear actin polymerization is required for efficient DSB clearance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from rescue experiments showing that polymerization-competent actin rescues DSB phenotype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "b242bb66-c2f2-4fe7-acf9-96c7cab10ea6",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C48",
+      "claim": "There is no correlation between the numbers of nuclear actin filaments and DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found no correlation between the numbers of nuclear actin filaments and DSBs (Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "5e668c64-23bf-4518-ba68-d71645a3aa36",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C49",
+      "claim": "Only limited overlap exists between the 53BP1 and nuclear actin signals for all classes of DNA damage-induced filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed only limited overlap between the 53BP1 and nuclear actin signals for all classes of DNA damage-induced filaments (Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-localization data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "b8c6e5bc-d2a0-4a99-9a64-ce5413ccc4b5",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C50",
+      "claim": "Out of 198 filaments found in nuclei of cells treated with 0.01% MMS for 2 hr, only 22 (11.1%) overlap or lie adjacent to 53BP1 foci.",
+      "claim_type": "EXPLICIT",
+      "source": "More detailed analysis of our co-localization data revealed that, out of 198 filaments found in nuclei of cells treated with 0.01% MMS for 2 hr, only 22 (11.1%) overlap or lie adjacent to 53BP1 foci",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative co-localization analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d4f86ebc-a3cf-4fc9-9293-de38bf39189d",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C51",
+      "claim": "Nuclear actin structures triggered by 0.01% MMS contain no detectable cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the nuclear filaments generated by DMSO, the nuclear actin structures triggered by 0.01% MMS contained no detectable cofilin (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "73bf433c-0444-43bb-b96d-984b1b9b3cc8",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C52",
+      "claim": "Knocking down mDia1 or mDia2 has no effect on the abundance or morphology of nuclear filaments produced by MMS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to cells treated with a non-target hairpin, we found no effect of knocking down either mDia1 or mDia2 on the abundance or morphology of nuclear filaments produced by MMS treatment (Figure 4B,C; Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figures 4B and 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "5c1083b9-5672-43fa-a175-d7555b3ffcaa",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C53",
+      "claim": "DNA damage-induced filaments represent a biologically and biochemically distinct class of nuclear actin structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that DNA damage-induced filaments represent a biologically and biochemically distinct class of nuclear actin structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differences in composition and nucleation factors compared to other nuclear actin structures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "46d0fac3-f763-4b1a-8975-a8add51a79ac",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C54",
+      "claim": "Formin-2 (FMN2) is phosphorylated in response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "This list contains many proteins not previously associated with DNA repair, including several known actin regulators. One such protein is the actin nucleator Formin-2 (FMN2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Matsuoka et al. (2007) findings",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "20117ac1-9ebc-4ff6-ba30-47204ba5110a",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C55",
+      "claim": "The expression of FMN2 is upregulated in response to both ultraviolet radiation and hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its phosphorylation, the expression of FMN2 is upregulated in response to both ultraviolet radiation and hypoxia (Yamada et al., 2013a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yamada et al., 2013a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "87ac35bd-faf2-4ad0-bd31-a82e1b8eb85b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C56",
+      "claim": "Depletion of FMN2 completely inhibits nuclear actin assembly when DNA damage is induced with 0.01% MMS.",
+      "claim_type": "EXPLICIT",
+      "source": "When we induce DNA damage with 0.01% MMS, depletion of FMN2 completely inhibits nuclear actin assembly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from FMN2 knockdown experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "008c13ec-aeb9-492f-ac36-6d5bc193c99d",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C57",
+      "claim": "Both the average number of elongated filaments and the distribution of filament types are nearly identical between MMS-treated, FMN2-knockdown cells and untreated controls expressing a non-target hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the average number of elongated filaments and the distribution of filament types are nearly identical between MMS-treated, FMN2-knockdown cells and untreated controls expressing a non-target hairpin (Figure 5A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figures 5A and 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "688ac078-b9f7-4d6e-8c06-4ec16cf3c170",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C58",
+      "claim": "Ectopic expression of hairpin-resistant mCherry-FMN2 mutant completely restores the number and morphology of the actin structures generated by MMS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of this mCherry-FMN2 mutant completely restored the number and morphology of the actin structures generated by MMS treatment (Figure 5C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figures 5C and 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d0274b41-f79c-429c-8921-e914f1890351",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C59",
+      "claim": "FMN2 knockdown produces a significant increase in DSB foci observed following MMS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As with IPO9 knockdown, we found that FMN2 knockdown produces a significant increase in DSB foci observed following MMS treatment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from FMN2 knockdown experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "3c33b9aa-8b04-4425-8fe4-03ed13717c0a",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C60",
+      "claim": "The increase in 53BP1 foci after FMN2 knockdown is rescued by overexpression of hairpin-resistant mCherry-FMN2.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in 53BP1 foci was also rescued by overexpression of hairpin-resistant mCherry-FMN2 (Figure 5E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figures 5E and 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "37f527c8-3696-4cd6-a9ba-464e8725af0f",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C61",
+      "claim": "Knocking down Spire-1 or Spire-2 individually has little effect on DNA damage-induced filament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down Spire-1 or Spire-2 individually has little effect on DNA damage-induced filament formation (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "af142d84-ee0e-488c-9813-141559e29f70",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C62",
+      "claim": "Knocking down expression of both Spire-1 and Spire-2 at the same time produces the same effect as knocking down FMN2, ablating MMS-induced nuclear filament formation.",
+      "claim_type": "EXPLICIT",
+      "source": "but knocking down expression of both proteins at the same time produces the same effect as knocking down FMN2, ablating MMS-induced nuclear filament formation (Figure 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "2ac8c4f8-ce3a-44cd-a334-d52ffba24640",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C63",
+      "claim": "Human FMN2 translocates from the cytoplasm into the nucleus in response to hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work revealed that human FMN2 translocates from the cytoplasm into the nucleus in response to hypoxia (Yamada et al., 2013b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yamada et al., 2013b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "caf6405d-475e-458f-b82f-cca930234265",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C64",
+      "claim": "DNA damage produces a dose-dependent nuclear accumulation of FMN2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that this DNA-damaging agent produces a dose-dependent nuclear accumulation of FMN2 (Figure 7A,B; Figure 7\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figures 7A, 7B, and Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "5dc027d4-29fe-45be-a0b5-f17a88569f70",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C65",
+      "claim": "Two putative NLS regions exist near the N-terminus of FMN2, beginning at amino acids 6 and 411 of the NCBI reference sequence, accession number NP_064450.3.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two putative NLS regions near the N-terminus of FMN2, beginning at amino acids 6 and 411 of the NCBI reference sequence, accession number NP_064450.3 (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Identified using bioinformatics tool cNLS-Mapper",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "454c1ad1-7e84-4f14-8e3d-852f46bfcd14",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C66",
+      "claim": "Both NLS sequences identified in FMN2 are sufficient to drive accumulation of EGFP in the nucleus, with stronger nuclear targeting observed for EGFP-NLS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sequences were sufficient to drive accumulation of EGFP in the nucleus, with stronger nuclear targeting observed for EGFP-NLS2 (Figure 7D,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 7D and 7E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "caf09173-6ab7-4a7b-8102-16fcd40a22e4",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C67",
+      "claim": "Mutation of NLS2 at three positively charged residues, K414A/R415A/R416A, efficiently blocks nuclear accumulation of mCherry-FMN2 in response to DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of NLS2 at three positively charged residues, K414A/R415A/R416A, efficiently blocks nuclear accumulation of mCherry-FMN2 in response to DNA damage (Figure 7F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "a5891282-fe58-4dc7-aa35-14eb08705fd6",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C68",
+      "claim": "Induction of DNA damage decreases nucleolar size by an average of approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, while the average number of nucleoli is constant, induction of DNA damage decreases nucleolar size by an average of \u223c20%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative measurements of nucleolar area",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "55c60f43-711b-4d35-b3c7-ec240bfabeb0",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C69",
+      "claim": "Equivalent decreases in nucleolar area are observed in both control and IPO9 knockdown cells after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Equivalent decreases in nucleolar area were observed in both control and IPO9 knockdown cells, however, indicating that the nucleolar area reduction is nuclear actin-independent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative measurements in control and IPO9 knockdown cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d85a404f-8f68-4f81-bd5f-758a6e8d06c1",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C70",
+      "claim": "The nucleolar area reduction after DNA damage is nuclear actin-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Equivalent decreases in nucleolar area were observed in both control and IPO9 knockdown cells, however, indicating that the nucleolar area reduction is nuclear actin-independent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that IPO9 knockdown does not affect nucleolar size changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1520ca4b-75ea-4736-b15e-65610e6287ff",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C71",
+      "claim": "Treatment with 0.01% MMS generates an oxidative burst in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We used roGFP2-NLS to measure nuclear oxidation levels and found that treatment with 0.01% MMS generates an oxidative burst in the nucleus (Figure 9A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by roGFP2-NLS measurements shown in Figure 9A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "07b2e16b-74ab-42dd-929a-93cc247b260c",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C72",
+      "claim": "Depletion of nuclear actin by IPO9 knockdown has no effect on nuclear oxidation at 0.01% MMS dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of nuclear actin by IPO9 knockdown has no effect at this MMS dosage (Figure 9B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by roGFP2-NLS measurements shown in Figure 9B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "69344d33-ee08-400b-b9b4-705399158341",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C73",
+      "claim": "When MMS treatment is increased to 0.05%, IPO9 knockdown abolishes nuclear oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, however, when the MMS treatment was increased to 0.05%, IPO9 knockdown abolished nuclear oxidation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by roGFP2-NLS measurements at higher MMS concentration",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "2d8412df-6f15-4740-9c1a-8bfafc2c8ede",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C74",
+      "claim": "FMN2 knockdown abolishes nuclear oxidation at 0.05% MMS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed the same result following knockdown of FMN2 (Figure 9C\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by roGFP2-NLS measurements shown in Figures 9C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "83cf9c62-6c6a-4bc0-adb7-9e642fc8490f",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C75",
+      "claim": "Increased MMS levels correlate with increases in the fraction of cells containing clustered bodies of nuclear filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the distribution of classes of nuclear actin filaments at MMS doses ranging from 0.01% to 0.05%, and found that increased MMS levels correlate with increases in the fraction of cells containing clustered bodies of nuclear filaments (Figure 9F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 9F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "266390e0-0fea-4555-98a7-e5a5a94fea9d",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C76",
+      "claim": "Clustered filaments may participate in regulating the nuclear redox state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that clustered filaments may participate in regulating the nuclear redox state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from correlation between clustered filaments and oxidation effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1c000964-64be-4bd0-92c3-b717a234635f",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C77",
+      "claim": "Homologs of Formin-2 and Spire-1/2 interact directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologs of Formin-2 and Spire-1/2 interact directly (Quinlan et al., 2007; Vizcarra et al., 2011; Montaville et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quinlan et al., 2007, Vizcarra et al., 2011, and Montaville et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "6f64d7c2-d070-4656-91e0-ac3e53e2d76b",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C78",
+      "claim": "Homologs of Formin-2 and Spire collaborate to form functional actin networks in mouse and Drosophila oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologs of Formin-2 and Spire-1/2 interact directly (Quinlan et al., 2007; Vizcarra et al., 2011; Montaville et al., 2014) and collaborate to form functional actin networks in mouse and Drosophila oocytes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from cited studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "99978c8b-21cb-451c-918d-50278cb08738",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C79",
+      "claim": "Murine oocyte FMN2 and Spire are required for migration of meiotic spindles to the cortex, extrusion of polar bodies, and radial transport of vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Murine oocyte FMN2 and Spire are required for migration of meiotic spindles to the cortex, extrusion of polar bodies, and radial transport of vesicles (Schuh and Ellenberg, 2008; Schuh, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schuh and Ellenberg, 2008 and Schuh, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "7f2f3730-59e5-4008-8a96-b6c7dc0af9a8",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C80",
+      "claim": "In Drosophila, homologs of FMN2 (Cappuccino) and Spire collaborate to build actin networks required for oocyte polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, homologs of FMN2 (Cappuccino) and Spire collaborate to build actin networks required for oocyte polarity (Quinlan et al., 2005; Bor et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quinlan et al., 2005 and Bor et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "430855cb-e764-458d-a815-ed6fe735f123",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C81",
+      "claim": "DNA damage-induced nuclear actin filaments may facilitate movement of chromatin and repair factors after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that DNA damage-induced nuclear actin filaments may facilitate movement of chromatin and repair factors after DNA damage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative suggestion based on the observed role in DNA repair",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d83e7345-9abd-49b6-b88e-6e8435fa741a",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C82",
+      "claim": "The nucleation activity of the Drosophila FMN2 homolog, Cappuccino, is regulated by intramolecular contacts between a C-terminal region near the actin-nucleating domain and an N-terminal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleation activity of the Drosophila FMN2 homolog, Cappuccino, is regulated by intramolecular contacts between a C-terminal region near the actin-nucleating domain and an N-terminal sequence (Bor et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bor et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "41c23829-9cc5-4cb9-ab3b-3af562f61a02",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C83",
+      "claim": "The autoinhibitory interaction in Cappuccino is structurally distinct from the DID/DAD interaction that regulates activity of the Diaphanous-family formins.",
+      "claim_type": "EXPLICIT",
+      "source": "This autoinhibitory interaction is structurally distinct from the DID/DAD interaction that regulates activity of the Diaphanous-family formins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about formin regulation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "8687079d-6a41-4dd2-aa92-0c1ef8f2e2aa",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C84",
+      "claim": "If human FMN2 is autoinhibited by an interaction between N- and C-terminal regions, it is possible that DNA damage-induced phosphorylation promotes both nuclear translocation and actin nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "If human FMN2 is also autoinhibited by an interaction between N- and C-terminal regions, it is possible that DNA damage-induced phosphorylation promotes both nuclear translocation and actin nucleation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on analogy to Drosophila homolog",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "35b0d071-87c6-467c-9210-97cb708337c5",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C85",
+      "claim": "Nuclear actin filaments could potentiate the DNA damage response by altering mobility or organization of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear actin filaments could potentiate the DNA damage response by several mechanisms: (1) altering mobility or organization of chromatin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1ccd1677-75a0-4959-9b9c-d9065747cc33",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C86",
+      "claim": "Nuclear actin filaments could potentiate the DNA damage response by recruiting or delivering repair factors to sites of damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear actin filaments could potentiate the DNA damage response by several mechanisms: (1) altering mobility or organization of chromatin; (2) recruiting or delivering repair factors to sites of damage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "a34845fb-2b6d-47ad-b00a-14c33479a5ed",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C87",
+      "claim": "Nuclear actin filaments could potentiate the DNA damage response by binding and sequestering nuclear factors that would otherwise inhibit DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear actin filaments could potentiate the DNA damage response by several mechanisms: (1) altering mobility or organization of chromatin; (2) recruiting or delivering repair factors to sites of damage; or (3) binding and sequestering nuclear factors that would otherwise inhibit DNA repair",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism proposed by authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1e5ef50a-012b-46ca-93f8-279c681f8fa2",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C88",
+      "claim": "DNA damage alters the mobility of DNA loci, perhaps facilitating their interaction with DNA repair proteins that are expressed at extremely low concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies, however, have also demonstrated that DNA damage alters the mobility of DNA loci, perhaps facilitating their interaction with DNA repair proteins that are expressed at extremely low concentrations (Dimitrova et al., 2008; Min\u00e9-Hattab and Rothstein, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dimitrova et al., 2008 and Min\u00e9-Hattab and Rothstein, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "211147b2-6fa2-4395-8799-190e33b3d0c7",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C89",
+      "claim": "Myosin motors in the nucleus may drive clustering of repair components or DSB sites to facilitate homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "One attractive possibility is that myosin motors in the nucleus may drive clustering of repair components or DSB sites to facilitate homologous recombination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis proposed by authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "e886cf78-272e-4dad-8c03-cc887c1557a6",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C90",
+      "claim": "Nuclear actin filaments may play a role in rRNA production or export.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that nucleoli are the sites of rRNA transcription, we speculate that nuclear actin filaments may play a role in rRNA production or export, perhaps promoting stress-induced changes in translation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on nucleolar localization",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "bc6fd486-35f6-4e76-a80c-123d617a77be",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C91",
+      "claim": "In the yeast Saccharomyces cerevisiae, cellular oxidation triggers formation of amorphous 'actin bodies' generated by intermolecular disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the yeast Saccharomyces cerevisiae, cellular oxidation triggers formation of amorphous 'actin bodies' generated by intermolecular disulfide bonds (Farah and Amberg, 2007, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Farah and Amberg, 2007 and 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "67fffeb3-8615-46e8-8b21-94233b5e4ca6",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C92",
+      "claim": "Nuclear cofilin\u2013actin rods contain disulfide-linked cofilin oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar sensing of nuclear oxidation has also been proposed for nuclear cofilin\u2013actin rods, which contain disulfide-linked cofilin oligomers (Bernstein et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bernstein et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "a5bf9ea5-4a27-4c73-a060-dd3f66789fcd",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C93",
+      "claim": "Actin can alter the nuclear redox state.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate clearly that actin can alter the nuclear redox state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing effects of actin depletion on nuclear oxidation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "eeda3896-25ce-40bd-874b-80086d5463a6",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C94",
+      "claim": "All previously observed cases of nuclear actin assembly are connected to oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that all previously observed cases of nuclear actin assembly are connected to oxidation, we suggest that nuclear actin may be an important mediator of redox signaling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of literature and current findings",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "ee7dea45-b7c5-4b27-8d04-0dd0ecdbea47",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C95",
+      "claim": "Nuclear actin may be an important mediator of redox signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that all previously observed cases of nuclear actin assembly are connected to oxidation, we suggest that nuclear actin may be an important mediator of redox signaling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative suggestion based on observed connections to oxidation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "26ead24d-98ce-4db1-885f-bd0e961da2ca",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C96",
+      "claim": "Multiple cellular signals can trigger assembly of a variety of actin structures in the nucleus, each with a unique morphology, function, and regulatory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with other recent studies, our work reveals that multiple cellular signals can trigger assembly of a variety of actin structures in the nucleus, each with a unique morphology, function, and regulatory mechanism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on current and prior studies",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "f5af2578-419b-44a5-be2d-729d869b2b8d",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C97",
+      "claim": "Both serum stimulation and DNA damage induce a dramatic increase in cytoplasmic actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both serum stimulation (Vartiainen et al., 2007; Baarlink et al., 2013) and DNA damage (Zuchero et al., 2012; and unpublished observations) induce a dramatic increase in cytoplasmic actin polymerization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and unpublished observations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "1641aceb-4ee8-4f1b-b7cb-e4248854b1e4",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C98",
+      "claim": "Cytoplasmic actin polymerization correlates with nuclear accumulation of formin-family actin nucleators.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, this cytoplasmic actin polymerization correlates with nuclear accumulation of formin-family actin nucleators",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observations from current and prior studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "387305ab-1249-4e8b-90d3-562725faa8c0",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "claim_id": "C99",
+      "claim": "Changes in the actin monomer/polymer ratio in the cytoplasm may facilitate nuclear accumulation of actin regulators, coordinating the cytoplasmic and nuclear responses to stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, speculate that changes in the actin monomer/polymer ratio in the cytoplasm may facilitate nuclear accumulation of actin regulators, coordinating the cytoplasmic and nuclear responses to stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on observed correlations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5ca195a-4670-4ecc-9e05-0604cab4807e",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Historical context of actin research is established, documenting its discovery in muscle (1942), identification in non-muscle cells (1966), and first reports in the nucleus (1975), with subsequent findings linking nuclear actin to various nuclear processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide well-documented historical context supported by appropriate citations. These are established facts in the field that provide necessary background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "b481fdff-4613-4017-a706-a083e3d39a22",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nuclear actin concentration is regulated by nucleocytoplasmic transport factors: XPO6 exports profilin-actin complexes from the nucleus, while IPO9 imports cofilin-actin complexes into the nucleus. XPO6 is not expressed in oocytes of many organisms, leading to high nuclear actin concentrations in germinal vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 describe established mechanisms of nuclear actin regulation supported by appropriate citations to prior work. These provide essential background for understanding the experimental manipulations used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "993a2f79-28e7-4a65-b087-8c3fe44adce1",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nuclear actin filaments in oocytes serve structural and functional roles: in Xenopus laevis oocytes, germinal vesicle actin forms a filamentous mesh protecting nucleoli from gravity-induced aggregation, while in starfish oocytes, actin filaments facilitate nuclear envelope breakdown and chromosome capture during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by citations to prior work and provide relevant biological context for nuclear actin functions in specialized cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "e900b17e-0934-484c-8122-275f1f469834",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Somatic cells express XPO6 and consequently have lower nuclear actin concentrations than cytoplasmic concentrations, with mammalian somatic nuclei containing relatively small amounts of filamentous actin compared to Xenopus germinal vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 establish the baseline state of nuclear actin in somatic cells, which is the experimental system used in this study. C10 is a logical inference from established XPO6 function, and C11 is supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "9cafb50c-a20d-4589-b38c-dab60b90c9d6",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Monomeric nuclear actin has established functions: actin and Arps are conserved components of chromatin-remodeling complexes, and nuclear actin monomers inhibit the transcriptional co-activator MRTF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 describe well-established functions of monomeric nuclear actin supported by appropriate citations, providing context for understanding nuclear actin biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "98c82b4b-5b08-4f2d-8b6e-16b1b53b0c37",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Serum stimulation and integrin engagement induce transient nuclear actin polymerization via mDia1/mDia2, which promotes MRTF activity by depleting nuclear monomeric actin. Additionally, serum stimulation activates MICAL-2, which oxidizes actin monomers to prevent MRTF inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 describe established mechanisms of nuclear actin regulation in response to serum stimulation, supported by appropriate citations. These provide important context for distinguishing DNA damage-induced nuclear actin assembly from other pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "03acf3b7-1360-40d1-9d58-f4bf3df9cb93",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Various cellular stresses induce formation of nuclear cofilin-actin rods, which are highly oxidized structures held together by intermolecular disulfide bonds between cofilin molecules and may sense or regulate nuclear reducing potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe established stress-induced nuclear actin structures supported by multiple citations. The speculative element in C19 is appropriately qualified and provides context for the redox experiments in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNA damage induced by various genotoxic agents (telomere uncapping, UV, MMS, NCS) triggers formation of nuclear actin filaments with three characteristic morphologies: long nucleoplasmic filaments (>1 \u03bcm), nucleolus-associated filaments (both peri- and intra-nucleolar), and dense nucleoplasmic clusters. Telomere uncapping and MMS treatment produce similar filament characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C27-C33 describe the core discovery of DNA damage-induced nuclear actin filaments, supported by experimental data in Figures 1B-I. The characterization of three distinct morphologies is well-documented with imaging and quantitative analysis. The comparison between telomere uncapping and MMS treatment (C31) provides validation that the phenomenon is not agent-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "904aa35e-9648-4b35-bed9-5b045d8df100",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DNA damage-induced nuclear actin filaments are endogenous structures detectable by multiple methods (phalloidin, Utr230-EN, Lifeact-EN, F-tractin-EN). Approximately 5% of untreated cells contain phalloidin-stainable nuclear actin, increasing to ~15-20% after MMS treatment. Utr230-EN is the optimal probe as it does not correlate with filament number and does not show concentration-dependent effects like Lifeact-EN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 provide rigorous validation that the observed structures are endogenous and not artifacts of the detection method. The comparison of multiple probes (Figure 2) and demonstration that phalloidin detects filaments in untransfected cells (C34, C36-C37) is convincing. The analysis of probe-dependent effects (C39-C40) appropriately identifies Utr230-EN as the best tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "0d51249c-436f-4b2a-8f41-626668707b41",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nuclear actin polymerization is required for efficient DSB clearance. Knockdown of IPO9 or cofilin (which deplete nuclear actin) significantly increases DSB foci detected by 53BP1 and pH2AX antibodies. Rescue with wild-type actin-NLS, but not polymerization-defective R62D mutant, restores normal DSB clearance, demonstrating that actin polymerization (not just monomers) is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 establish a functional role for nuclear actin in DNA repair through loss-of-function (IPO9/cofilin knockdown) and rescue experiments (Figure 3B-E). The use of the R62D polymerization-defective mutant (C45-C46) provides strong evidence that filament formation, not just nuclear actin concentration, is important. The complete rescue with non-fluorescent actin-NLS (C46) addresses potential artifacts from fluorescent protein fusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "cbce0e34-00e0-44f4-ba79-d194c1dc63dc",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nuclear actin filaments do not directly colocalize with DSB sites: there is no correlation between filament numbers and DSB numbers per cell, and only 11.1% (22/198) of filaments overlap or lie adjacent to 53BP1 foci after MMS treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 provide important negative results showing limited spatial correlation between nuclear actin filaments and DSB markers (Figure 3F-G). The quantitative analysis (C50) is appropriately detailed. However, the authors acknowledge they cannot rule out functional interactions at non-overlapping sites, which is a reasonable caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "c3a59881-1c7c-485d-9108-3d60aa149b14",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DNA damage-induced nuclear actin filaments are biochemically distinct from other nuclear actin structures: they contain no detectable cofilin (unlike DMSO-induced rods) and their formation is unaffected by mDia1/mDia2 knockdown (unlike serum-induced filaments).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 establish that DNA damage-induced filaments represent a distinct class of nuclear actin structures through negative results (Figure 4A-C). The lack of cofilin (C51) distinguishes them from stress-induced rods, and independence from mDia1/mDia2 (C52) distinguishes them from serum-induced filaments. These comparisons are well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Formin-2 (FMN2) is required for DNA damage-induced nuclear actin assembly. FMN2 is phosphorylated and upregulated in response to DNA damage. FMN2 knockdown completely abolishes MMS-induced nuclear filament formation, and this phenotype is rescued by hairpin-resistant mCherry-FMN2. FMN2 knockdown also increases DSB foci, which is rescued by mCherry-FMN2 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 identify FMN2 as a key nucleation factor through knockdown and rescue experiments (Figure 5). The complete loss of nuclear filaments upon FMN2 depletion (C56-C57) and rescue with hairpin-resistant construct (C58) provide strong evidence. The parallel effects on DSB clearance (C59-C60) link FMN2 function to DNA repair.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "b9fc6054-b5a1-40c2-92df-1cdb3017dd48",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Spire-1 and Spire-2 function redundantly in DNA damage-induced nuclear actin assembly. Individual knockdown of Spire-1 or Spire-2 has little effect, but simultaneous knockdown of both proteins abolishes MMS-induced nuclear filament formation, similar to FMN2 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 demonstrate functional redundancy between Spire-1 and Spire-2 through single and double knockdown experiments (Figure 6, Figure 6\u2014figure supplement 1). The requirement for double knockdown to observe a phenotype (C62) is consistent with redundant function and is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "841d5d1a-3432-4997-bacf-6f2c41723230",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FMN2 translocates to the nucleus in response to DNA damage in a dose-dependent manner. Two functional NLS sequences were identified near the N-terminus (amino acids 6 and 411), with NLS2 showing stronger nuclear targeting. Mutation of NLS2 (K414A/R415A/R416A) blocks DNA damage-induced nuclear accumulation of FMN2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 characterize the mechanism of FMN2 nuclear translocation through imaging (Figure 7A-B), bioinformatics prediction (C65), and functional validation of NLS sequences (Figure 7D-F). The dose-dependent nuclear accumulation (C64) and blocking by NLS2 mutation (C67) provide strong mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "0794a9e3-24c1-487e-9909-2170d7a49bce",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DNA damage induces a ~20% decrease in nucleolar size, but this reduction is independent of nuclear actin, as equivalent decreases occur in both control and IPO9 knockdown cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe a DNA damage-induced change in nucleolar morphology that is independent of nuclear actin (Figure 8). The comparison between control and IPO9 knockdown cells (C69) appropriately demonstrates independence from nuclear actin. This negative result helps define the specificity of nuclear actin functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Nuclear actin filaments regulate nuclear oxidation in a dose-dependent manner. At 0.01% MMS, nuclear oxidation occurs independently of nuclear actin (IPO9 knockdown has no effect), but at 0.05% MMS, IPO9 or FMN2 knockdown abolishes nuclear oxidation. Higher MMS doses correlate with increased clustered filament formation, suggesting clustered filaments may regulate nuclear redox state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 reveal a dose-dependent role for nuclear actin in regulating oxidation using roGFP2-NLS measurements (Figure 9A-E). The differential effects at different MMS concentrations (C72-C74) are intriguing and well-documented. The correlation with clustered filaments (C75) supports the speculation about their role in redox regulation (C76), though this remains to be mechanistically proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "bcd09fe6-266f-4de5-a6b0-2d145f9e1eb8",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "FMN2 and Spire homologs interact directly and collaborate to form functional actin networks in mouse and Drosophila oocytes, where they are required for meiotic spindle migration, polar body extrusion, vesicle transport, and oocyte polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 provide relevant biological context from prior work on FMN2/Spire function in oocytes, supported by appropriate citations. This background helps interpret the current findings in somatic cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "52352332-69ff-4def-95ea-22c68e2197f7",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Proposed mechanisms by which nuclear actin filaments may facilitate DNA repair include: altering chromatin mobility/organization, recruiting/delivering repair factors, sequestering inhibitory factors, or enabling myosin-driven clustering of repair components or DSB sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81, C85-C87, C89 are explicitly speculative hypotheses about mechanisms. While these are reasonable possibilities based on the data, they remain untested. The lack of colocalization between filaments and DSBs (C48-C50) makes direct recruitment mechanisms less likely, but other mechanisms remain plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "efeaa970-8c16-4c1e-8804-8b966876de43",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The Drosophila FMN2 homolog Cappuccino is regulated by autoinhibitory intramolecular contacts distinct from Diaphanous-family formins. If human FMN2 has similar regulation, DNA damage-induced phosphorylation may promote both nuclear translocation and actin nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is supported by citation, and C83 represents established knowledge. However, C84 is explicitly conditional speculation about human FMN2 regulation. While the hypothesis is reasonable given the Drosophila data and the identified phosphorylation sites, it remains untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "daa4b714-b1b1-48f9-9aeb-202e88d8a72a",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "DNA damage alters the mobility of DNA loci, potentially facilitating interactions with DNA repair proteins expressed at low concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 describes prior work supported by appropriate citations, providing relevant context for potential mechanisms of nuclear actin function in DNA repair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "77638a87-813a-4980-bf6c-5c0857c9fd28",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Nuclear actin filaments may play a role in rRNA production or export, potentially promoting stress-induced changes in translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is explicitly speculative, based on the nucleolar localization of some filaments. However, the finding that nucleolar size changes are actin-independent (C68-C70) suggests nucleolar actin filaments may have functions distinct from gross morphological changes. This hypothesis requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "9496f3dd-558f-4fd1-93be-30dc6158efc0",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "In yeast and mammalian cells, oxidation triggers formation of actin structures containing disulfide bonds: yeast form amorphous 'actin bodies' with intermolecular disulfide bonds, while mammalian nuclear cofilin-actin rods contain disulfide-linked cofilin oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 describe established connections between oxidation and actin structures from prior work, supported by appropriate citations. This provides context for the oxidation experiments in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "2b8b5693-3667-4597-bbb2-a84227cb0d59",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Nuclear actin can alter the nuclear redox state, and given that all previously observed cases of nuclear actin assembly are connected to oxidation, nuclear actin may be an important mediator of redox signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is supported by the roGFP2 data showing that actin depletion affects nuclear oxidation (C73-C74). Claims C94-C95 synthesize current and prior findings to propose a broader role for nuclear actin in redox signaling. While C95 is somewhat speculative, it is appropriately qualified and supported by the pattern of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "d3d1c402-e4f7-47b0-81c0-ff45c6e8392d",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Multiple cellular signals trigger assembly of diverse nuclear actin structures, each with unique morphology, function, and regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is a summary conclusion integrating the current findings with prior work. The current study demonstrates that DNA damage-induced filaments are distinct from serum-induced and stress-induced structures (C51-C53), supporting this broader conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    },
+    {
+      "id": "db12af4a-80ab-48e7-9dc7-c611d44f5d00",
+      "content_id": "c2a14512-9954-49b3-8ea5-00176e582750",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Both serum stimulation and DNA damage induce cytoplasmic actin polymerization that correlates with nuclear accumulation of formin-family nucleators, suggesting that changes in cytoplasmic actin monomer/polymer ratio may facilitate nuclear accumulation of actin regulators, coordinating cytoplasmic and nuclear responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C97 is supported by citations and unpublished observations. Claim C98 describes a correlation observed in current and prior studies. However, C99 is explicitly speculative about the mechanism linking cytoplasmic and nuclear actin dynamics. While this is an interesting hypothesis, the causal relationship and mechanism remain to be established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:48:50.411483Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8a75d6b0-7999-4178-8ff1-6cd988a4cc6b",
+      "result_id": "c5ca195a-4670-4ecc-9e05-0604cab4807e"
+    },
+    {
+      "claim_id": "89119781-7d11-475c-89b5-459318cae766",
+      "result_id": "c5ca195a-4670-4ecc-9e05-0604cab4807e"
+    },
+    {
+      "claim_id": "c42ff161-53d5-4868-adec-ff0eadeae13b",
+      "result_id": "c5ca195a-4670-4ecc-9e05-0604cab4807e"
+    },
+    {
+      "claim_id": "dc963251-4252-479e-b68f-c1d92caa5d0b",
+      "result_id": "c5ca195a-4670-4ecc-9e05-0604cab4807e"
+    },
+    {
+      "claim_id": "e006c100-9f2a-4bd4-a4fd-dffa79268be7",
+      "result_id": "b481fdff-4613-4017-a706-a083e3d39a22"
+    },
+    {
+      "claim_id": "9545d8ef-55c0-4000-8f16-e191fa0e6039",
+      "result_id": "b481fdff-4613-4017-a706-a083e3d39a22"
+    },
+    {
+      "claim_id": "f24963d6-bd0f-4441-b505-d2fe28914fdf",
+      "result_id": "b481fdff-4613-4017-a706-a083e3d39a22"
+    },
+    {
+      "claim_id": "852148cd-51a6-4c81-86a4-523e449d7c12",
+      "result_id": "993a2f79-28e7-4a65-b087-8c3fe44adce1"
+    },
+    {
+      "claim_id": "cda35889-7403-4487-8aea-c1c8339da679",
+      "result_id": "993a2f79-28e7-4a65-b087-8c3fe44adce1"
+    },
+    {
+      "claim_id": "e9351f4e-cff3-479a-91d9-dc6943b0bcc5",
+      "result_id": "e900b17e-0934-484c-8122-275f1f469834"
+    },
+    {
+      "claim_id": "a2117242-b87d-4e61-8485-867951eafda8",
+      "result_id": "e900b17e-0934-484c-8122-275f1f469834"
+    },
+    {
+      "claim_id": "e38a888e-5901-406d-8ad9-52b70cc7cbfe",
+      "result_id": "9cafb50c-a20d-4589-b38c-dab60b90c9d6"
+    },
+    {
+      "claim_id": "24b1def5-9964-473a-9e61-b9f856399fb2",
+      "result_id": "9cafb50c-a20d-4589-b38c-dab60b90c9d6"
+    },
+    {
+      "claim_id": "979c0141-c5c7-42ba-8a62-7651fb4a8eca",
+      "result_id": "98c82b4b-5b08-4f2d-8b6e-16b1b53b0c37"
+    },
+    {
+      "claim_id": "d3dd55e7-0274-4863-aab5-197235253e35",
+      "result_id": "98c82b4b-5b08-4f2d-8b6e-16b1b53b0c37"
+    },
+    {
+      "claim_id": "48ba8593-5997-4395-a83c-afa223f65298",
+      "result_id": "98c82b4b-5b08-4f2d-8b6e-16b1b53b0c37"
+    },
+    {
+      "claim_id": "7a9021f9-7d27-4c79-bfef-d81f5858676a",
+      "result_id": "03acf3b7-1360-40d1-9d58-f4bf3df9cb93"
+    },
+    {
+      "claim_id": "e1cc9690-19ad-4b98-9c68-f5274548f104",
+      "result_id": "03acf3b7-1360-40d1-9d58-f4bf3df9cb93"
+    },
+    {
+      "claim_id": "fca4e977-8163-4d88-b251-55d34048b228",
+      "result_id": "03acf3b7-1360-40d1-9d58-f4bf3df9cb93"
+    },
+    {
+      "claim_id": "4d186e0b-ee26-4460-a290-54f0e9e1a268",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "d5f8846c-6505-4893-a4db-fa3cf78e76ba",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "f8d62c8c-e52b-4e8c-8c0d-10b5f036b6d8",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "bdccf7ab-cf38-440c-adef-47998465b986",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "dac2ce1e-4b29-4ac3-ab15-dd43acab6972",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "1b49741c-8f91-45c2-a0b1-dce7abd8177c",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "c4fb050a-8025-4ee4-b228-84b09cb89d5b",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "f930c6db-695f-45ae-92ae-81e5d4b18684",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "1b8f0c13-3296-434c-8429-8a56da2c4100",
+      "result_id": "66c21b5f-fd88-4976-b2e1-e5f41c91dc80"
+    },
+    {
+      "claim_id": "9273fbe2-6207-4d60-9d2a-a64000430304",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "94216dc7-994c-4d46-a38f-ca2b4ef97c24",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "21d0588e-3d9b-4ec9-a2e2-441bef50a59b",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "46da1aaa-6f75-4b9a-ade7-96521d3525e5",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "2ae7b367-5497-4fee-ad58-bd3f763729f0",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "88fe01b7-40c3-4f8b-ba57-04ac9a64b17a",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "930636cd-81a3-49c0-9535-0460185d60bd",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "2afb48e4-2640-4284-8365-ad13f2f95299",
+      "result_id": "904aa35e-9648-4b35-bed9-5b045d8df100"
+    },
+    {
+      "claim_id": "017212a9-ed55-4178-861b-3911ba3be28c",
+      "result_id": "0d51249c-436f-4b2a-8f41-626668707b41"
+    },
+    {
+      "claim_id": "fa206aa2-0f45-42db-8cbf-f2d8111531e8",
+      "result_id": "0d51249c-436f-4b2a-8f41-626668707b41"
+    },
+    {
+      "claim_id": "002da235-be95-46b9-81f2-bf04a98e68b3",
+      "result_id": "0d51249c-436f-4b2a-8f41-626668707b41"
+    },
+    {
+      "claim_id": "69fe14b4-6ad4-4912-817a-e8f99215f5dc",
+      "result_id": "0d51249c-436f-4b2a-8f41-626668707b41"
+    },
+    {
+      "claim_id": "467283ee-8077-4630-b1a9-b27f81910e29",
+      "result_id": "0d51249c-436f-4b2a-8f41-626668707b41"
+    },
+    {
+      "claim_id": "3a5d3b9c-8289-4634-bae7-2c5ed2f02f30",
+      "result_id": "0d51249c-436f-4b2a-8f41-626668707b41"
+    },
+    {
+      "claim_id": "b242bb66-c2f2-4fe7-acf9-96c7cab10ea6",
+      "result_id": "cbce0e34-00e0-44f4-ba79-d194c1dc63dc"
+    },
+    {
+      "claim_id": "5e668c64-23bf-4518-ba68-d71645a3aa36",
+      "result_id": "cbce0e34-00e0-44f4-ba79-d194c1dc63dc"
+    },
+    {
+      "claim_id": "b8c6e5bc-d2a0-4a99-9a64-ce5413ccc4b5",
+      "result_id": "cbce0e34-00e0-44f4-ba79-d194c1dc63dc"
+    },
+    {
+      "claim_id": "d4f86ebc-a3cf-4fc9-9293-de38bf39189d",
+      "result_id": "c3a59881-1c7c-485d-9108-3d60aa149b14"
+    },
+    {
+      "claim_id": "73bf433c-0444-43bb-b96d-984b1b9b3cc8",
+      "result_id": "c3a59881-1c7c-485d-9108-3d60aa149b14"
+    },
+    {
+      "claim_id": "5c1083b9-5672-43fa-a175-d7555b3ffcaa",
+      "result_id": "c3a59881-1c7c-485d-9108-3d60aa149b14"
+    },
+    {
+      "claim_id": "46d0fac3-f763-4b1a-8975-a8add51a79ac",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "20117ac1-9ebc-4ff6-ba30-47204ba5110a",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "87ac35bd-faf2-4ad0-bd31-a82e1b8eb85b",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "008c13ec-aeb9-492f-ac36-6d5bc193c99d",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "688ac078-b9f7-4d6e-8c06-4ec16cf3c170",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "d0274b41-f79c-429c-8921-e914f1890351",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "3c33b9aa-8b04-4425-8fe4-03ed13717c0a",
+      "result_id": "b7e4ddb3-ba29-48ab-ae2c-c872654a695d"
+    },
+    {
+      "claim_id": "37f527c8-3696-4cd6-a9ba-464e8725af0f",
+      "result_id": "b9fc6054-b5a1-40c2-92df-1cdb3017dd48"
+    },
+    {
+      "claim_id": "af142d84-ee0e-488c-9813-141559e29f70",
+      "result_id": "b9fc6054-b5a1-40c2-92df-1cdb3017dd48"
+    },
+    {
+      "claim_id": "2ac8c4f8-ce3a-44cd-a334-d52ffba24640",
+      "result_id": "841d5d1a-3432-4997-bacf-6f2c41723230"
+    },
+    {
+      "claim_id": "caf6405d-475e-458f-b82f-cca930234265",
+      "result_id": "841d5d1a-3432-4997-bacf-6f2c41723230"
+    },
+    {
+      "claim_id": "5dc027d4-29fe-45be-a0b5-f17a88569f70",
+      "result_id": "841d5d1a-3432-4997-bacf-6f2c41723230"
+    },
+    {
+      "claim_id": "454c1ad1-7e84-4f14-8e3d-852f46bfcd14",
+      "result_id": "841d5d1a-3432-4997-bacf-6f2c41723230"
+    },
+    {
+      "claim_id": "caf09173-6ab7-4a7b-8102-16fcd40a22e4",
+      "result_id": "841d5d1a-3432-4997-bacf-6f2c41723230"
+    },
+    {
+      "claim_id": "a5891282-fe58-4dc7-aa35-14eb08705fd6",
+      "result_id": "0794a9e3-24c1-487e-9909-2170d7a49bce"
+    },
+    {
+      "claim_id": "55c60f43-711b-4d35-b3c7-ec240bfabeb0",
+      "result_id": "0794a9e3-24c1-487e-9909-2170d7a49bce"
+    },
+    {
+      "claim_id": "d85a404f-8f68-4f81-bd5f-758a6e8d06c1",
+      "result_id": "0794a9e3-24c1-487e-9909-2170d7a49bce"
+    },
+    {
+      "claim_id": "1520ca4b-75ea-4736-b15e-65610e6287ff",
+      "result_id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4"
+    },
+    {
+      "claim_id": "07b2e16b-74ab-42dd-929a-93cc247b260c",
+      "result_id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4"
+    },
+    {
+      "claim_id": "69344d33-ee08-400b-b9b4-705399158341",
+      "result_id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4"
+    },
+    {
+      "claim_id": "2d8412df-6f15-4740-9c1a-8bfafc2c8ede",
+      "result_id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4"
+    },
+    {
+      "claim_id": "83cf9c62-6c6a-4bc0-adb7-9e642fc8490f",
+      "result_id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4"
+    },
+    {
+      "claim_id": "266390e0-0fea-4555-98a7-e5a5a94fea9d",
+      "result_id": "26b64af4-fc26-402c-8c35-2b8d59dfa9c4"
+    },
+    {
+      "claim_id": "1c000964-64be-4bd0-92c3-b717a234635f",
+      "result_id": "bcd09fe6-266f-4de5-a6b0-2d145f9e1eb8"
+    },
+    {
+      "claim_id": "6f64d7c2-d070-4656-91e0-ac3e53e2d76b",
+      "result_id": "bcd09fe6-266f-4de5-a6b0-2d145f9e1eb8"
+    },
+    {
+      "claim_id": "99978c8b-21cb-451c-918d-50278cb08738",
+      "result_id": "bcd09fe6-266f-4de5-a6b0-2d145f9e1eb8"
+    },
+    {
+      "claim_id": "7f2f3730-59e5-4008-8a96-b6c7dc0af9a8",
+      "result_id": "bcd09fe6-266f-4de5-a6b0-2d145f9e1eb8"
+    },
+    {
+      "claim_id": "430855cb-e764-458d-a815-ed6fe735f123",
+      "result_id": "52352332-69ff-4def-95ea-22c68e2197f7"
+    },
+    {
+      "claim_id": "35b0d071-87c6-467c-9210-97cb708337c5",
+      "result_id": "52352332-69ff-4def-95ea-22c68e2197f7"
+    },
+    {
+      "claim_id": "1ccd1677-75a0-4959-9b9c-d9065747cc33",
+      "result_id": "52352332-69ff-4def-95ea-22c68e2197f7"
+    },
+    {
+      "claim_id": "a34845fb-2b6d-47ad-b00a-14c33479a5ed",
+      "result_id": "52352332-69ff-4def-95ea-22c68e2197f7"
+    },
+    {
+      "claim_id": "211147b2-6fa2-4395-8799-190e33b3d0c7",
+      "result_id": "52352332-69ff-4def-95ea-22c68e2197f7"
+    },
+    {
+      "claim_id": "d83e7345-9abd-49b6-b88e-6e8435fa741a",
+      "result_id": "efeaa970-8c16-4c1e-8804-8b966876de43"
+    },
+    {
+      "claim_id": "41c23829-9cc5-4cb9-ab3b-3af562f61a02",
+      "result_id": "efeaa970-8c16-4c1e-8804-8b966876de43"
+    },
+    {
+      "claim_id": "8687079d-6a41-4dd2-aa92-0c1ef8f2e2aa",
+      "result_id": "efeaa970-8c16-4c1e-8804-8b966876de43"
+    },
+    {
+      "claim_id": "1e5ef50a-012b-46ca-93f8-279c681f8fa2",
+      "result_id": "daa4b714-b1b1-48f9-9aeb-202e88d8a72a"
+    },
+    {
+      "claim_id": "e886cf78-272e-4dad-8c03-cc887c1557a6",
+      "result_id": "77638a87-813a-4980-bf6c-5c0857c9fd28"
+    },
+    {
+      "claim_id": "bc6fd486-35f6-4e76-a80c-123d617a77be",
+      "result_id": "9496f3dd-558f-4fd1-93be-30dc6158efc0"
+    },
+    {
+      "claim_id": "67fffeb3-8615-46e8-8b21-94233b5e4ca6",
+      "result_id": "9496f3dd-558f-4fd1-93be-30dc6158efc0"
+    },
+    {
+      "claim_id": "a5bf9ea5-4a27-4c73-a060-dd3f66789fcd",
+      "result_id": "2b8b5693-3667-4597-bbb2-a84227cb0d59"
+    },
+    {
+      "claim_id": "eeda3896-25ce-40bd-874b-80086d5463a6",
+      "result_id": "2b8b5693-3667-4597-bbb2-a84227cb0d59"
+    },
+    {
+      "claim_id": "ee7dea45-b7c5-4b27-8d04-0dd0ecdbea47",
+      "result_id": "2b8b5693-3667-4597-bbb2-a84227cb0d59"
+    },
+    {
+      "claim_id": "26ead24d-98ce-4db1-885f-bd0e961da2ca",
+      "result_id": "d3d1c402-e4f7-47b0-81c0-ff45c6e8392d"
+    },
+    {
+      "claim_id": "f5af2578-419b-44a5-be2d-729d869b2b8d",
+      "result_id": "db12af4a-80ab-48e7-9dc7-c611d44f5d00"
+    },
+    {
+      "claim_id": "1641aceb-4ee8-4f1b-b7cb-e4248854b1e4",
+      "result_id": "db12af4a-80ab-48e7-9dc7-c611d44f5d00"
+    },
+    {
+      "claim_id": "387305ab-1249-4e8b-90d3-562725faa8c0",
+      "result_id": "db12af4a-80ab-48e7-9dc7-c611d44f5d00"
+    }
+  ],
+  "comparisons": []
+}

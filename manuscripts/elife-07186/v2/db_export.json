@@ -1,0 +1,2062 @@
+{
+  "submission": {
+    "id": "8e7ff106-2cde-477a-a5b0-324bca6f3f6e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:52:30.264831Z",
+    "updated_at": "2025-11-29T03:52:30.264831Z"
+  },
+  "content": [
+    {
+      "id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "submission_id": "8e7ff106-2cde-477a-a5b0-324bca6f3f6e",
+      "content_type": "manuscript",
+      "content_text": "# Receptor tyrosine kinases modulate distinct transcriptional programs by differential usage of intracellular pathways\n\n## Authors\n\n- Harish N Vasudevan<sup>1</sup>\n- Pierre Mazot<sup>1</sup>\n- Fenglei He<sup>1</sup>\n- Philippe Soriano<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Developmental and Regenerative Biology Icahn School of Medicine at Mount Sinai New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nReceptor tyrosine kinases (RTKs) signal through shared intracellular pathways yet mediate distinct outcomes across many cell types. To investigate the mechanisms underlying RTK specificity in craniofacial development, we performed RNA-seq to delineate the transcriptional response to platelet-derived growth factor (PDGF) and fibroblast growth factor (FGF) signaling in mouse embryonic palatal mesenchyme cells. While the early gene expression profile induced by both growth factors is qualitatively similar, the late response is divergent. Comparing the effect of MEK (Mitogen/Extracellular signal-regulated kinase) and PI3K (phosphoinositide-3-kinase) inhibition, we find the FGF response is MEK dependent, while the PDGF response is PI3K dependent. Furthermore, FGF promotes proliferation but PDGF favors differentiation. Finally, we demonstrate overlapping domains of PDGF-PI3K signaling and osteoblast differentiation in the palate and increased osteogenesis in FGF mutants, indicating this differentiation circuit is conserved in vivo. Our results identify distinct responses to PDGF and FGF and provide insight into the mechanisms encoding RTK specificity.\n\n## Introduction\n\nReceptor tyrosine kinases (RTKs) signal through a shared set of intracellular pathways, including extracellular signal-related kinase (ERK) and phosphatidylinositol 3-kinase (PI3K), yet the in vivo functions directed by different RTKs can be quite distinct, raising the question of how specific cellular responses are elicited (Lemmon and Schlessinger, 2010). Several models have been put forth to explain how RTKs encode specificity (Hunter, 2000; Simon, 2000; Pawson, 2004; Volinsky and Kholodenko, 2013). In concept, distinct responses may be encoded by modulation of individual pathways downstream of receptor activation, with each pathway regulating a specific outcome. Alternatively, many cellular responses may require integration from multiple input pathways, and signal specificity could arise from this unique combination of pathways. Analysis of mice harboring point mutations to disrupt binding of specific effector proteins to RTKs suggests both these models may apply in vivo; platelet-derived growth factor (PDGF) Receptor \u03b1 (Pdgfra) mutants display effector-specific phenotypes in line with the former model (Klinghoffer et al., 2002), but PDGF Receptor \u03b2 (Pdgfrb) mediated outcomes require combined output across multiple pathways, consistent with the latter model (Tallquist et al., 2003). In addition, quantitative differences in the duration and magnitude of signal induction provide an added layer of regulatory complexity (Marshall, 1995). At the transcriptional level, one outcome of RTK activation is the expression of immediate early genes (IEGs) (Cochran et al., 1983; Lau and Nathans, 1987). Studies in cell culture have suggested IEGs constitute a generic readout of RTK activation with minimal specificity at the receptor or intracellular effector level (Fambrough et al., 1999), but genetic experiments in mice indicate a degree of IEG specificity (Schmahl et al., 2007). Therefore, a central goal remains to delineate RTK responsive transcriptional programs, identify the key signaling parameters encoding their regulation, and determine how these gene expression profiles dictate cellular decisions.\n\nMany components of RTK signaling play important roles in mammalian craniofacial development (Bentires-Alj et al., 2006; Newbern et al., 2008; Fantauzzo and Soriano, 2015). In particular, PDGF and FGF signaling are both essential for midface development. In mice, loss of Pdgfra (Soriano, 1997) or its ligands Pdgfa and Pdgfc (Ding et al., 2004) results in facial clefting, and mice harboring a mutation abrogating PI3K binding to PDGFR\u03b1 mirror these craniofacial phenotypes, implicating PI3K as the main effector of PDGFR\u03b1 signaling (Klinghoffer et al., 2002). In addition, both Pdgfra (Wnt1-Cre; Pdgfrafl/fl) (Tallquist and Soriano, 2003) and FGF receptor 1 (Wnt1-Cre; Fgfr1) (Trokovic et al., 2003; Wang et al., 2013) neural crest conditional mutants exhibit cleft face, indicating both pathways are required for normal development of the neural crest derived facial skeleton. At the intracellular pathway level, previous work has implicated ERK as a key effector downstream of FGF signaling (Lanner and Rossant, 2010). Furthermore, mutations in both PDGF and FGF signaling have been linked to craniofacial syndromes in humans (Choi et al., 2009; Miraoui and Marie, 2010; Rattanasopha et al., 2012). Interestingly, chimeric receptor experiments in mice have shown that the intracellular domain of Fgfr1 cannot compensate for Pdgfra during development, suggesting these two receptors transmit biologically distinct signals in vivo (Hamilton et al., 2003). The midface thus offers a unique opportunity to interrogate the mechanisms of signal specificity between these two RTKs in a developmentally relevant system.\n\nGiven the requirement for PDGF and FGF signaling in the development of the neural crest derived midface, we sought to compare the gene expression programs regulated by these two RTKs. The architecture of the transcriptional response to RTK activation consists of three stereotypic waves: an IEG response involving core transcriptional regulators (Fos, Jun, Egr), a delayed response playing a feedback role (phosphatases, RNA-binding proteins), and a late sustained response determining cellular outcome (Amit et al., 2007; Avraham and Yarden, 2011). However, the degree of conservation between genes regulated in each wave across different RTK families is unclear. Furthermore, although classic feedback regulators of mitogen-activated protein kinase (MAPK) pathways have been described, such as dual-specificity phosphatases (DUSPs) for ERK and c-Jun N-terminal kinase (JNK) (Li et al., 2007; Owens and Keyse, 2007), the extent of effector-dependent transcription genome-wide is not well characterized.\n\nIn the present work, we compare the transcriptional response to PDGF and FGF signaling in E13.5 mouse embryonic palatal mesenchyme (MEPM) cells. Although both PDGF and FGF are required in the neural crest for craniofacial development, we find distinct transcriptional programs, effector dependencies, and cellular outcomes in response to each RTK. While many genes in the early wave are shared across the two RTKs, FGF induces a quantitatively stronger response than PDGF. In addition, the feedback control provided by the delayed transcriptional wave displays distinct characteristics in response to PDGF and FGF. By exploring the effect of MEK/ERK and PI3K inhibition on these RTK-regulated gene expression profiles, we find PDGF-mediated transcription displays greater PI3K dependence, while FGF-mediated gene expression programs predominantly require ERK activity. This relationship is conserved at the level of cellular outcome, with FGF driving proliferation but PDGF promoting PI3K-dependent differentiation. Finally, we show overlapping domains of PI3K signaling, PDGF target gene expression, and skeletal differentiation during palatogenesis in vivo, a process perturbed in Fgfr1 conditional mutants. Taken together, our studies suggest unique roles for PDGF and FGF during development of the facial skeleton, and more broadly, demonstrate that distinct transcriptional responses to RTK signaling are encoded through qualitative and quantitative differences in intracellular pathway activation.\n\n## Results\n\n### PDGF and FGF have distinct patterns of effector activation and transcriptional responses in E13.5 MEPMs\n\nSince neural crest conditional loss of either Fgfr1 or Pdgfra leads to clefting, we chose to perform RNA-seq on E13.5 MEPMs treated with either PDGFA or FGF1 + heparin to identify the gene expression programs regulated by each signaling pathway (Figure 1A). MEPMs express many essential markers of the palatal mesenchyme and have been previously used to study responses to many pathways (Bush and Soriano, 2010; Iwata et al., 2012; Fantauzzo and Soriano, 2014), including PDGF and FGF (Vasudevan and Soriano, 2014). We performed RNA-seq at 1 and 4 hr following ligand treatment in order to characterize both the early and late responses to PDGF and FGF signaling (Supplementary File 1). In the samples submitted for sequencing, both PDGF and FGF induced a robust phospho-ERK (pERK) response at 15 min (Figure 1\u2014figure supplement 1A), and MEPMs generated from Pdgfra-GFP (Hamilton et al., 2003) and Fgfr1-CFP (to be described elsewhere) knockin reporter embryos display expression of each receptor at the protein level in all cells (Figure 1\u2014figure supplement 1B), further validating MEPMs as a suitable system to study RTK responses.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig1-v2.jpg)\n\n**Figure 1.:** (A) Mouse embryonic palatal mesenchyme (MEPM) cells were dissected from E13.5 embryos, passaged twice, and then serum starved overnight prior to stimulation with either PDGFAA or FGF1 + heparin. (B) Expression of all genes with FPKM (fragments per kilobase of exon per million reads mapped) >1 at 1 hr (11,217 genes) and (B') 4 hr (11,266 genes). Genes colored blue are significantly increased with fibroblast growth factor (FGF) treatment and genes colored red are significantly increased with platelet-derived growth factor (PDGF) treatment. Values plotted on log2 scale. (C) Fold change (FC) comparison for all differentially expressed (DE) genes at (C) 1 hr or (C') 4 hr (compared to serum starved sample) shows high correlation between the transcriptional response to each growth factor at 1 hr but low correlation at 4 hr. (D) Protein\u2013protein interaction (PPI) network for all genes upregulated at 1 hr contains many classic immediate early genes (such as AP-1 components, Myc, and Srf). Genes are colored based on their primary reported role in transcriptional regulation (22, 23), with orange squares representing activators and gray circles representing repressors. (E) FC (compared to untreated sample) for selected genes upregulated at 1 hr. Genes in bold are induced >1.5-fold in response to the indicated growth factor. Although both PDGF and FGF regulate many shared targets, the induction in response to FGF exhibits greater magnitude (Fos, Fosb, Junb, Atf3, Egr1, Egr2) and longer duration (Fos, Fosb, Jun, Junb, Egr1, Egr2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) In the samples submitted for RNA-seq, both PDGF and FGF induce robust pERK responses at 15 minutes. (B) MEPMs derived from either Pdgfra-GFP or Fgfr1-CFP knockin reporter embryos express each receptor in all cells, confirming MEPMs are a homogenous cell population at the level of PDGF and FGF receptor expression. (C) Principal component analysis (PCA) reveals distinct responses to PDGF and FGF signaling, with the first principal component (51.29% of variance) segregating conditions based on ligand treatment and the second principal component (12.61% of variance) separating samples based on duration of stimulation. (D) Gene ontology analysis (molecular function) on genes induced at 1 hr reveals an overrepresentation of transcription factors and MAP kinase phosphatases (DUSPs). (E) Validation of selected transcription factors by qPCR confirms greater magnitude and duration of induction by FGF compared to PDGF.\n\nWe first plotted the expression of all genes with FPKM (fragments per kilobase of exon per million reads mapped) values >1 at both 1 hr (Figures 1B and 4 hr (Figure 1B'); although only a small number of genes are differentially regulated between the 1-hr PDGF and 1-hr FGF samples (Cuffdiff q < 0.1, Supplementary File 2; Trapnell et al., 2010), the difference in the response to these two growth factors is much greater at 4 hr. Consistent with this observation, visualization of all replicates by principal component analysis (PCA) (Figure 1\u2014figure supplement 1C) revealed that the 1-hr PDGF and 1-hr FGF samples cluster together, but the 4-hr FGF replicates are distinctly separate from the 4-hr PDGF samples. Comparing the stimulated MEPMs to untreated cells, genes differentially regulated at 1 hr by either PDGF or FGF (Supplementary File 2) show high correlation (r2 = 0.8173, Figure 1C), but by 4 hr, the two RTK signals are divergent (r2 = 0.2881, Figure 1C'). In addition, the genes regulated by PDGF at 1 hr (n = 40) form a subset of those genes regulated by FGF at 1 hr (n = 159), further highlighting the similarity within the early response to both growth factors. Gene ontology analysis (Huang et al., 2009) of the genes induced at 1 hr revealed an enrichment of transcription factors and MAP kinase phosphatases downstream of both RTKs (Figure 1\u2014figure supplement 1D, p < 0.001), similar to previous descriptions of the response to RTK activation (Amit et al., 2007; Avraham and Yarden, 2011). To better visualize the organization of these targets, we constructed a protein\u2013protein interaction (PPI) network from the genes regulated at 1 hr; in constructing this network, we only included direct interactions between proteins (path length = 1) and excluded predicted interactions (Berger et al., 2007; Chen et al., 2012). The resulting network contains 25 upregulated genes (out of 113 total induced genes), including many classic components of the IEG response, such as activator protein-1 (AP-1) subunits (Fos, Jun) and their regulators (Zfp36, Atf3) as well as Myc, Egr1-4, and Srf (Figure 1D). Closer inspection revealed that many shared target genes within this network are regulated to both a stronger magnitude and longer duration following FGF treatment compared to PDGF treatment (Figure 1E). Indeed, Fos, Fosb, Jun, and Junb all exhibit differences in signal magnitude and/or duration in response to FGF, as validated by qPCR (Figure 1\u2014figure supplement 1E). In sum, the two RTKs induce a similar gene expression profile at 1 hr (Figure 1C), as evidenced by the high-correlation coefficient and overlap between genes differentially regulated by PDGF and FGF at 1 hr. However, FGF drives a quantitatively stronger early response with many transcription factors showing both a stronger magnitude and greater duration of induction in response to FGF compared to PDGF (Figure 1E), which may explain in part the divergent gene expression profiles observed at 4 hr.\n\n### Differential roles for the delayed transcriptional response in regulation of signaling downstream of FGF and PDGF\n\nGiven the importance of MEK/ERK and PI3K/Akt signaling downstream of these RTKs during development (Klinghoffer et al., 2002; Corson et al., 2003; Lanner and Rossant, 2010; Fantauzzo and Soriano, 2014), we analyzed pERK and pAkt activation following FGF and PDGF stimulation in MEPMs (Figure 2A). Consistent with the stronger response to FGF treatment in the gene expression data, the FGF-induced pERK response displays both a higher magnitude and longer duration of activation compared to the PDGF-induced pERK signal. In contrast, both FGF and PDGF induce similar patterns of pAkt activation, but the magnitude of the PDGF-pAkt induction is slightly greater. The FGF-pERK signal is apparent up to 6 hr following growth factor treatment (Figure 2\u2014figure supplement 1A), and increasing the dose of PDGFA ligand did not alter the kinetics of pERK activation (Figure 2\u2014figure supplement 1B). To better understand differences in the response to PDGF and FGF, we performed gene ontology analysis for the molecular function of genes that are differentially expressed (DE) between 4-hr PDGF treatment and 4-hr FGF treatment (Figure 2B, p < 0.001) (Huang et al., 2009). The top results for genes enriched following FGF treatment are sets associated with modulation of signaling, such as protein kinases and GTPase regulators, which may function as activators of Ras to promote MEK/ERK signaling. Transcriptional feedback regulation of RTK signaling is well established, particularly the role of DUSPs providing negative feedback for MAPK signaling (Amit et al., 2007; Li et al., 2007; Owens and Keyse, 2007). Indeed, many DUSPs (MAPK phosphatases) are induced in response to both PDGF and FGF treatment at 1 hr (Figure 1\u2014figure supplement 1D), but FGF alone induces the expression of kinases and GTPase regulators at 4 hr, suggesting a distinct role for the FGF response in regulating MEK/ERK activity. We, thus, performed Western blots in the presence of cycloheximide following both PDGF and FGF treatment to determine the effect of inhibiting protein synthesis (and consequently, the delayed transcriptional response) on ERK activation. Consistent with previous work exploring the role of DUSP-mediated negative feedback (Amit et al., 2007), cycloheximide treatment increased the duration of the PDGF-pERK response (Figure 2C). However, we observed the opposite effect of cycloheximide treatment on the FGF-pERK response (Figure 2C'), suggesting a positive feedforward loop in which FGF induces the expression of kinases and GEFs to modulate the ERK response in addition to activating ERK directly. To further explore the architecture of the late FGF response, we constructed a PPI network from genes increased at 4-hr FGF stimulation compared to 4-hr PDGF treatment. The FGF network (Figure 2\u2014figure supplement 1C) contains Prkca as a highly connected node, which is interesting given reported roles for protein kinase C (PKC) in facilitating a sustained pERK response (Bhalla et al., 2002; Santos et al., 2007) as well as its importance downstream of FGF in skeletal development (Miraoui and Marie, 2010). We found that inhibition of PKC decreased both the initial pulse and sustained activation of the FGF-mediated pERK response in MEPMs (Figure 2\u2014figure supplement 1C'), consistent with its potential function as a hub within the FGF response network. In addition, many of the kinases and GEFs transcriptionally regulated by FGF have reported roles in positively modifying MEK/ERK signaling (Figure 2\u2014figure supplement 1D), which may explain in part the residual pERK response to FGF in the presence of PKC inhibition. Collectively, these data support a model in which the balance between positive and negative transcriptional loops is critical for determining patterns of pERK response to different RTKs (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig2-v2.jpg)\n\n**Figure 2.:** (A) Signaling time course shows a more robust phospho-ERK (pERK) response to FGF (blue) than PDGF (red) and a similar pAkt response to both growth factors. (B) Gene ontology analysis (molecular function) of genes DE between the 4-hr PDGF and 4-hr FGF conditions indicates enrichment for kinases and GTPase regulators in response to FGF signaling. (C) Cycloheximide treatment has opposite effects on pERK duration following (C) PDGF and (C') FGF stimulation, indicating the delayed transcriptional response (dependent on protein synthesis and thus inhibited by cycloheximide) can provide both negative and positive signals to modulate pERK kinetics. (D) Model depicting loops that regulate the duration of the pERK wave in response to receptor tyrosine kinase (RTK) signaling includes both negative (dual-specificity phosphatases [DUSPs]) and positive (kinases, GEFs) components from the delayed transcriptional response. Western blot quantification plotted as mean \u00b1 SEM, n = 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Long timecourse of PDGF and FGF treatment followed by Western blot for pERK and pAkt shows the FGF mediated pERK response persists up to 6 hours following growth factor stimulation. (B) The duration of the pERK response to PDGFA treatment does not change with increasing ligand dosage, indicating 30 ng/mL is a saturating dose for pERK duration. (C) PPI network constructed from genes differentially expressed at 4 hours following FGF treatment reveals Prkca as a highly connected node, suggesting Protein Kinase C as a regulator of the pERK driven FGF response. (C') Inhibition of PKC abolishes both the initial pulse and sustained wave of pERK in response to FGF treatment. (D) Many candidate kinases and GEFs, such as Prkca (Bhalla et al., 2002), Stk40 (Li et al., 2010), Trib1 (Kiss-Toth et al., 2004), Sgk1 (Won et al., 2009), Vav3 (Caloca et al., 2003), and Bcar3 (Gotoh, et al. 2000), have reported roles in positively modifying MEK/ERK signaling. Prkca\n\n### The FGF transcriptional response is primarily MEK/ERK dependent, while the PDGF response shows greater PI3K usage\n\nThe differences in signaling pathway activation following PDGF and FGF stimulation led us to consider how inhibition of these pathways affected the two RTK-mediated transcriptional programs. Thus, we analyzed the effector dependence of the transcriptional response by performing RNA-seq in cells stimulated with either PDGF or FGF in the presence of PD325901 (MEK inhibitor) or LY294002 (PI3K inhibitor) (Supplementary File 1). PCA on all thirteen sequenced conditions (Figure 3\u2014figure supplement 1A) segregates the samples based on growth factor treatment along PC1 (44.57% of the variance) and on inhibitor treatment along PC2 (17.72% of the variance). Similarly, the correlation matrix for all sampled replicates mimics the PCA, with the 4 hr FGF and 4 hr FGF + LY showing a gene expression profile distinct from all other samples (Figure 3\u2014figure supplement 1B). We next directly tested the effect of pathway inhibition on both the shared gene expression program induced by the two RTKs at 1 hr (113 genes total) and the genes regulated between FGF and PDGF treatment at 4 hr. Globally, FGF target genes show greater MEK/ERK dependence than PI3K dependence, while PDGF responsive genes exhibit the opposite relationship (Supplementary File 3) mirroring the reported signaling requirements for each RTK. This trend is apparent at 1 hr (Figure 3A, A') and striking for genes DE at 4 hr, where 52% of FGF responsive genes are MEK/ERK dependent (Figure 3B) but only 22% were PI3K dependent (Figure 3B'). This dependence is inverted for PDGF, where 9% are MEK/ERK dependent (Figure 3C) but 28% are PI3K dependent (Figure 3C'). Strikingly, MEK inhibition increases the expression of PDGF targets (Figure 3C) but not FGF targets (Figure 3B), while PI3K inhibition increases the expression of FGF responsive genes (Figure 3A', B'), suggesting the FGF-ERK and PDGF-PI3K relationships are important for both gene induction and repression. These intracellular pathway dependencies are independent of the magnitude of induction/repression, as varying the FC threshold did not affect the PDGF-PI3K or FGF-ERK relationships (Figure 3\u2014figure supplement 1C, D').\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig3-v2.jpg)\n\n**Figure 3.:** (A) Volcano plots visualizing the effect of (A) MEK (Mitogen/Extracellular signal-regulated kinase) inhibition and (A') phosphatidylinositol 3-kinase (PI3K) inhibition on the shared set of 113 genes upregulated at 1 hr reveal that FGF (blue points) shows increased dependence on MEK/extracellular signal-related kinase (ERK) signaling, while PDGF (red points) utilizes PI3K to a greater degree. X-axis plotted as log2([1 hr ligand + inhibitor]/[1 hr ligand]). (B) Genes with increased expression at 4-hr FGF treatment show higher dependence on (B) MEK/ERK activity compared to (B') PI3K. (C) In contrast, genes with increased expression at 4-hr PDGF treatment show greater usage of (C') PI3K compared to (C) MEK/ERK. X-axis plotted as log2([4 hr ligand + inhibitor]/[4 hr ligand]). Data analyzed using two sample t-test, and genes at p < 0.1 are colored significant. Black points represent genes not significant at this threshold in all plots. (D) A core set of MEK/ERK (20 genes) and PI3K (16 genes) are dependent on these pathways downstream of both PDGF and FGF. (D') A minority of genes can be activated through either MEK/ERK or PI3K signaling in response to PDGF or FGF, indicating a degree of plasticity in intracellular pathway usage. (E) Scatter plot comparing effect of MEK/ERK and PI3K inhibition on all 4 hr DE genes reflects FGF-ERK and PDGF-PI3K dependencies. Data plotted as log2([4 hr ligand + inhibitor]/[4 hr ligand]) and capped at \u00b15 for visualization. (E') 52% of FGF target genes at 4 hr are repressed by MEK/ERK inhibition, while 28% of PDGF responsive genes are repressed by PI3K inhibition. Interestingly, 12% of genes are repressed by MEK/ERK inhibition and \u2018superinduced\u2019 by PI3K inhibition, indicating crosstalk between these pathways. Furthermore, 43% of PDGF responsive genes and 34% of FGF responsive genes are not significantly affected by either inhibitor, which suggests either combinatorial requirement of MEK and PI3K or alternate intracellular pathways drive expression of these genes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) PCA of all 13 conditions highlights effects of ligand stimulation and inhibitor treatment, with the first principal component (44.57% of variance) segregating conditions based on ligand treatment and the second principal component (17.72% of variance) separating samples based on inhibitor treatment. (B) Correlation matrix comparing the effect of inhibitor treatment across all PDGF and FGF stimulated replicates indicates distinct effects for PD and LY treatment. (C) The FGF-ERK and PDGF-PI3K relationships occur independently of FC threshold selection, indicating there is not a specific effect for ERK or PI3K inhibition based on magnitude. The number of genes repressed in the FGF-PD condition is greater than the number of the genes in the FGF-LY condition for all thresholds, while PDGF shows greater PI3K dependence than FGF, both MEK/ERK and PI3K signaling are utilized by PDGF across all thresholds. A subset of genes show significant \u2018superinduction\u2019 in the presence of inhibitor treatment, particularly for PI3K inhibition downstream of FGF. Each point on the x-axis represents a different threshold, and the value on the y-axis indicates the number of genes with a log2 ratio greater than that threshold. (D) The FGF-ERK and PDGF-PI3K relationships at 4 hr are also conserved independently of FC threshold selection. For any given threshold, (D) PI3K inhibition represses more PDGF target genes and MEK/ERK inhibition induces more PDGF target genes. Similarly, (D') MEK/ERK inhibition has a stronger repressive effect on FGF target genes than PI3K inhibition at all thresholds.\n\nWe then considered the degree of overlap between ERK and PI3K targets. At 1 hr, many shared target genes show similar ERK or PI3K dependence, possibly constituting a core pathway specific gene set (Figure 3D). On the other hand, cross-comparison of PI3K- and ERK-dependent genes reveals some overlap (Figure 3D'), underscoring a degree of plasticity in pathway usage downstream of different RTKs. When directly comparing the effect of MEK and PI3K inhibition at 4 hr (Figure 3E), the crosstalk between FGF targets is particularly striking, as a large number of genes repressed by MEK inhibition were regulated (both positively and negatively) by PI3K inhibition. Furthermore, while 23% of PDGF targets are specifically PI3K dependent, only 5% of FGF targets are repressed by PI3K alone (Figure 3E'). Instead, many FGF-PI3K targets are also repressed by MEK inhibition (77%), and conversely, a number of FGF-ERK targets are induced by PI3K inhibition (23%), indicating the effect of PI3K inhibition downstream of FGF involves crosstalk with ERK signaling.\n\n### Inhibition of intracellular effector activation leads to induction of alternate signaling pathways\n\nWe were intrigued by the subset of genes exhibiting significantly increased expression (\u2018superinduction\u2019) following inhibitor treatment at both 1 and 4 hr. Both RTKs show increased Jun expression in response to PD325901, while FGF and LY294002 treatment upregulates many classic ERK targets such as Fos, Fosb, and Dusp6 (Supplementary File 3), suggesting this \u2018superinduction\u2019 may reflect compensatory activation of other intracellular pathways. Many such examples of crosstalk between ERK and PI3K have been documented (Mendoza et al., 2011). Thus, we assayed the activation of these pathways following MEK inhibition with PD325901 and PI3K inhibition with LY294002. We found striking induction of pJNK upon pERK inhibition by PD325901 downstream of both FGF (Figure 4A) and PDGF (Figure 4B) stimulation. Interestingly, a moderate change in pAkt induction following PDGF treatment and MEK inhibition seems apparent, although this induction was not observed at the dose used for the RNA-seq experiment (1 \u03bcM PD325901). Next, we investigated the effect of PI3K inhibition with LY294002. We found that FGF-mediated pERK induction increased with LY294002 treatment (Figure 4A'), but PDGF treatment did not produce this increase in pERK signal (Figure 4B'), consistent with changes observed at the level of target gene expression. At the inhibitor doses used in the RNA-seq experiment (1 \u03bcM PD325901, 10 \u03bcM LY294002), both PDGF and FGF significantly induce JNK activation in the presence of MEK inhibition, while only FGF activates ERK when PI3K is inhibited (Figure 4C, C'). Finally, we performed qPCR for a subset of target genes to confirm their response to pathway inhibition. Fos, Fosb, and Junb exhibit \u2018superinduction\u2019 downstream of FGF specifically in response to PI3K inhibition, confirming these genes are indeed MEK/ERK dependent and providing further evidence that LY294002-mediated induction of pERK can drive transcriptional changes (Figure 4D). Similarly, Jun is \u2018superinduced\u2019 in the presence of PD325901 downstream of both RTKs. There is a modest increase in Jun induction following FGF treatment with PI3K inhibition, likely reflecting the compensatory induction of pERK in this condition and consequent crosstalk between ERK and JNK signaling. In addition, Fos induction is increased with LY294002 treatment even in the absence of growth factor, which may reflect a degree of growth factor independent crosstalk between PI3K and ERK. However, this effect synergizes with ligand treatment, indicating this compensation across intracellular pathways is at least partially dependent on receptor activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig4-v2.jpg)\n\n**Figure 4.:** (A) PD325901 dose response Western blots reveal induction of pJNK as pERK is progressively inhibited downstream of FGF signaling. (A') Similarly, LY294002 dose response Western blots reveal increased pERK signal as pAkt is inhibited. (B) Inhibitor dose response Western blots in response to PDGF signaling show activation of c-Jun N-terminal kinase (JNK) in response to MEK/ERK inhibition but (B') no activation of ERK following PI3K inhibition. (C) Quantification of effector activation in response to FGF (blue) or PDGF (red) at the doses used in the RNA-seq experiment reflects (C) increased pJNK activation when MEK/ERK signaling is inhibited and (C') increased pERK induction when PI3K activity is blocked. Data plotted as mean \u00b1 SEM, n = 3 and compared using two sample, unpaired t-test to baseline of 100% (no change). *p < 0.05; **p < 0.001. (D) Gene expression reflects the crosstalk observed at the signaling level, as verified by qPCR for selected target genes. Canonical ERK targets such as Fos, Fosb, and Junb are \u2018superinduced\u2019 upon LY treatment, while the JNK target Jun is \u2018superinduced\u2019 with PD treatment. Interestingly, a degree of \u2018superinduction\u2019 is observed in the presence of inhibitor prior to growth factor addition, which may reflect RTK-independent crosstalk between intracellular pathways. Data plotted as mean \u00b1 SEM, n = 3.\n\n### FGF drives MEK/ERK-dependent cell proliferation, and PDGF promotes PI3K-dependent cell differentiation\n\nWe next investigated the functional consequence of these differential effector activation patterns and transcriptional programs in response to PDGF and FGF signaling. Gene ontology for biological processes (Huang et al., 2009) enriched in genes differentially regulated by PDGF and FGF at 4 hr revealed an FGF-mediated proliferation program and a PDGF-regulated differentiation circuit (Figure 5A, p < 0.001). Interestingly, we also observed enrichment for regulators of Wnt signaling in the 4-hr PDGF condition, consistent with reports of antagonism between Wnt and FGF as regulating the balance between differentiation and proliferation in skeletal development (Mansukhani et al., 2005). We further identified a set of differentiation genes (Id1, Id2, Id3, Mef2c, Atoh8) in the PPI network constructed from genes regulated by PDGF treatment at 4 hr (Figure 5\u2014figure supplement 1A) and confirmed these genes by qPCR (Figure 5\u2014figure supplement 1A'). In line with PDGF directing a skeletal differentiation program, the Id genes (Maeda et al., 2004; Kee and Bronner-Fraser, 2005) and Mef2c (Verzi et al., 2007) are required for craniofacial skeleton development in vivo. In addition, mouse genome informatics mammalian phenotype analysis to determine overrepresented mouse phenotypes (Chen et al., 2013) identifies abnormal craniofacial bone development as the most enriched phenotype in the 4-hr PDGF target genes (Figure 5\u2014figure supplement 1B, B'). Plotting the expression of these FGF-proliferation and PDGF-differentiation genes emphasizes the distinct responses of these gene sets to these two growth factors (Figure 5B). Furthermore, many proliferation genes are reduced upon MEK inhibition and induced upon PI3K inhibition, while the opposite is apparent for differentiation genes, consistent with the FGF-ERK and PDGF-PI3K dependencies observed globally at the transcriptional level.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig5-v2.jpg)\n\n**Figure 5.:** (A) Gene ontology analysis of genes DE between the 4-hr FGF and 4-hr PDGF conditions shows enrichment for regulators of cell proliferation in genes upregulated by FGF treatment. In contrast, genes implicated in skeletal differentiation are overrepresented in the genes more highly expressed following PDGF treatment (B) Genes associated with cell proliferation are strongly upregulated by FGF treatment, while genes associated with cell differentiation are increased following PDGF stimulation. In addition, MEK inhibition represses many proliferation genes but induces differentiation genes, while PI3K inhibition has the opposite effect. Genes ordered by decreasing ratio of FGF:PDGF expression. (C) FGF induces a significantly more robust proliferation response than PDGF in MEPMs, although PDGF does promote a modest response compared to starved cells (0.1% FBS). Quantification plotted as mean \u00b1 SEM, n = 3. Two tailed, unpaired t-test: *p < 0.05; **p < 0.005 (D) PDGF, but not FGF, treatment promotes alkaline phosphatase (AP) (osteoblast marker) positive cells. Furthermore, PD treatment drives AP staining, while LY treatment abolishes AP staining independent of growth factor stimulation. AP staining performed 8 hr following ligand treatment.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A). The PPI network for the genes upregulated at 4 hr following PDGF treatment shows a concentration of genes involved in controlling cell differentiation (Id1, Id2, Id3, Atoh8, Mef2c), suggesting a PDGF-mediated differentiation program in MEPMs. (A') Validation of genes in the PDGF target PPI network by qPCR confirmed these genes are increased following PDGF stimulation compared to FGF treatment. (B) Genes with higher expression at 4 hr following PDGF treatment show enrichment for craniofacial and skeletal phenotypes in mice, consistent with the enrichment for differentiation genes in the 4-hr PDGF condition. The top 10 terms are shown, and selected genes with craniofacial phenotypes are listed. (B') Heatmap displaying expression of genes associated with craniofacial phenotypes and exhibiting increased expression at 4 hr PDGF stimulation. Many of these genes show increased expression upon MEK inhibition and decreased expression upon PI3K inhibition, consistent with a PDGF-PI3K-differentiation circuit. (C) Crystal violet assay demonstrates that a full FGF response (blue lines) requires both MEK/ERK and PI3K activity, although the effect of MEK/ERK inhibition is significantly greater. In contrast, the PDGF-mediated effect (red lines) on cell viability requires both MEK/ERK and PI3K activity, suggesting these pathways are utilized somewhat equally downstream of PDGF signaling. Data plotted as mean \u00b1 SEM, n = 3. (D) Cleaved Caspase-3 staining reveals that inhibition of FGF-mediated MEK/ERK signaling leads to significantly greater apoptosis, while both MEK and PI3K inhibition downstream of PDGF signaling leads to cell death. Data plotted as mean \u00b1 SEM, with cell percentages quantified across three fields of view for three biological replicates. CC3: Cleaved Caspase-3. *p < 0.1; **p < 0.01.\n\nTo directly assay cell proliferation, we performed BrdU labeling at 4 hr following either FGF or PDGF treatment in E13.5 MEPMs; while PDGF induces a modest response compared to serum-starved cells, we found a significantly greater proliferative response to FGF (Figure 5C). Crystal violet staining for cell viability confirms a greater effect of FGF than PDGF as well as the importance of MEK/ERK activity for this response (Figure 5\u2014figure supplement 1C). Furthermore, the PDGF-dependent effect on cell viability is significantly greater at day 3 compared to the 0.1% fetal bovine serum (FBS) treated cells, underscoring the role of PDGF in cell survival/growth in the absence of other growth factors. We next measured apoptosis following PDGF and FGF treatment in the presence of both inhibitors (Figure 5\u2014figure supplement 1D). Consistent with the cell viability results and phospho-JNK induction patterns, MEK inhibition following FGF stimulation results in a greater increase in apoptosis than inhibition of FGF-mediated PI3K signaling; in contrast, PI3K inhibition has a greater effect than MEK inhibition downstream of PDGF stimulation, although inhibiting either pathway results in increased apoptosis. Finally, we tested cell differentiation by alkaline phosphatase (AP) staining, a marker of osteoblast differentiation (Wu et al., 2008). PDGF-treated MEPMs display a robust AP response, while FGF-treated cells show a striking lack of AP positive cells (Figure 5D). In addition, MEK/ERK inhibition increases AP staining, but PI3K inhibition represses osteoblast differentiation (Figure 5D). These experiments suggest the following model: FGF drives cell proliferation and represses cell differentiation in a MEK/ERK-dependent manner, while PDGF facilitates cell differentiation, at the expense of reduced proliferation, in a PI3K-dependent manner.\n\n### The FGF repressed, PI3K-dependent differentiation circuit is conserved during mouse craniofacial development\n\nFinally, we sought to investigate the FGF-ERK-proliferation and PDGF-PI3K-differentiation axes in vivo. We first examined the expression pattern of Fgfr1 in relation to Dusp6 (ERK-specific), Dusp1 (JNK-specific), and Dusp10 (JNK-specific) in the E13.5 palate by in situ hybridization (Figure 6\u2014figure supplement 1A). Although Dusp1 and Dusp10 are primarily epithelial, Fgfr1 and Dusp6 are co-expressed in the anterior palatal mesenchyme, consistent with previous work implicating ERK in proliferation within this region (Bush and Soriano, 2010). Similarly, immunohistochemistry (IHC) revealed pERK is scattered in the anterior palatal mesenchyme, with some epithelial staining (Figure 6\u2014figure supplement 1B). However, cell proliferation along the anterior\u2013posterior axis is relatively uniform in the E13.5 palate (Bush and Jiang, 2012), complicating assignment of the observed expression patterns to a spatially restricted proliferation program. We next explored the relationship between PI3K signaling and osteoblast differentiation. Whole mount IHC for pAkt at E13.5 demonstrates expression restricted to the developing upper lip and middle to posterior palate, overlapping with AP in these structures (Figure 6A). We further assayed the pattern of Runx2 expression (Figure 6B) in comparison to Pdgfra, Id1, and Id3 in the E13.5 palate (Figure 6B'), finding shared domains of expression and exclusion in the palate. Taken together, this correlation between PI3K activity, the Id genes, and regions of osteoblast differentiation supports the existence of a spatially restricted PDGF-PI3K-differentiation axis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig6-v2.jpg)\n\n**Figure 6.:** (A) At E13.5, pAkt and AP domains co-localize in the middle to posterior secondary palate (red arrowhead) as well as in the developing upper lip (open arrowhead). (B) Domain of Runx2 (osteoblast marker) expression overlaps with (B\u2019) Pdgfra, Id1, and Id3 expression in the middle to posterior palate (red arrowhead), with expression excluded along the midline (black arrowhead). (C) Frontal sections from neural crest conditional Fgfr1 mutants (Wnt1-Cre; Fgfr1fl/fl) exhibit increased AP staining in the developing midface at E14.5, supporting an in vivo role for FGF-mediated repression of osteoblast differentiation (red arrowhead) (n = 3). (D) FGF and PDGF signaling use different signaling pathways to instruct divergent cellular outcomes. FGF drives cell proliferation and represses cell differentiation in an ERK-dependent manner, consistent with a greater percentage of the FGF target genes being MEK/ERK dependent (50%) than PI3K dependent (20%). In contrast, PDGF promotes cell differentiation in a PI3K-dependent manner, and PDGF target genes show greater PI3K dependence (30%) than MEK/ERK dependence (10%). Furthermore, inhibition of PI3K signaling leads to an FGF specific induction of pERK (green) and consequently increased transcription of ERK targets such as Fos, Fosb, and Junb. On the other hand, MEK/ERK inhibition leads to pJNK induction (orange) and transcription of Jun, indicating multiple crosstalk mechanisms across different intracellular pathways in response to RTK activation. PP: primary palate; PS: palatal shelf; T: tongue; UL: upper lip.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07186/elife-07186-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) In situ hybridization for Fgfr1, Dusp6, Dusp1, and Dusp10 in the E13.5 palate indicates no obvious spatial correlation between receptor expression and putative domains of ERK and JNK activity. Fgfr1 and Dusp6 show enrichment in the anterior palatal mesenchyme (red arrowhead) and epithelium (black arrowhead), while Dusp1 and Dusp10 expression are primarily epithelial (black arrowhead). (B) Immunohistochemistry for pERK reveals broad expression in both the E13.5 anterior palatal mesenchyme (red arrowhead) and epithelium (black arrowhead). E: epithelium; M: mesenchyme; PS: palatal shelf; T: tongue.\n\nIn MEPMs, FGF drives proliferation and represses differentiation. One prediction from this observation is that Fgfr1 mutants would have decreased repression of this program, and consequently, increased differentiation in the midface. We, therefore, performed AP staining on neural crest conditional Fgfr1 mutants (Wnt1-Cre; Fgfr1fl/fl) at E14.5 to investigate defects in osteoblast differentiation. We observed an increased domain of AP in the maxillary region of Fgfr1 conditional mutants compared to heterozygous controls (Figure 6C). Collectively, these results suggest the FGF repressed, PI3K-dependent differentiation program identified in MEPMs is conserved in vivo.\n\n## Discussion\n\nOur studies show that PDGF and FGF signaling in MEPMs regulate different gene expression programs and phenotypic outputs, with PDGF mainly promoting cell differentiation through PI3K and FGF favoring cell proliferation through ERK. Although the initial wave of gene expression shows high overlap, FGF elicits a quantitatively stronger response in terms of both signal magnitude and duration, which is reinforced by a positive signal from the delayed transcriptional wave in response to FGF but not PDGF. Furthermore, FGF-responsive genes are predominantly ERK dependent, while PDGF targets exhibit greater PI3K dependence genome-wide, relationships mimicked at the level of cellular outcome. Finally, we observed correlation between PDGF-PI3K signaling and osteoblast differentiation at E13.5 as well as increased AP staining in Fgfr1 mutants, indicating the differentiation circuit repressed by FGF signaling in MEPMs is functional in vivo.\n\nThe architecture of the transcriptional response to RTK signaling has been well described as three stereotypic waves: an IEG response, a delayed wave providing feedback control, and a late wave determining cellular outcome (Amit et al., 2007; Avraham and Yarden, 2011). In MEPMs, the magnitude and duration of the IEG wave is much stronger in response to FGF compared to PDGF, suggesting one level of specificity may be achieved through quantitative differences in IEG induction. Indeed, transient and sustained pERK induction, resulting in distinct magnitudes of Fos mRNA expression, drive binary responses in c-Fos abundance and activity at the protein level (Murphy et al., 2002; Nakakuki et al., 2010), delineating one mechanism through which quantitative differences lead to a thresholded \u2018ON-OFF\u2019 response in downstream transcriptional activity. Thus, in addition to the observed PDGF-PI3K and FGF-ERK relationships, distinct patterns of IEG transcription factor expression may also contribute to the divergent gene expression profiles at later time points.\n\nWhile inhibition of the delayed transcriptional response prolongs the PDGF-pERK wave, the opposite effect is observed on FGF-pERK induction. This result is consistent with the diversity of feedback and feedforward regulation on the RTK response (Avraham and Yarden, 2011; Volinsky and Kholodenko, 2013). In addition to transcriptional feedback, many other mechanisms, including ligand identity and receptor endocytosis (Francavilla et al., 2013), contribute toward specifying the signaling response to RTK activation. The complexity of this regulation underscores the intricate balance between positive and negative control systems, and it will be critical to determine how these regulatory mechanisms interact to produce the desired developmental outcomes.\n\nGiven the pleiotropic roles of RTKs, a central question involves how a common set of signal transduction modules specifies distinct outcomes. Our study supports a model in which differential intracellular pathway activation is responsible for the distinct transcriptional responses and cellular processes mediated by RTK signaling in MEPMs (Figure 6D). Pathway activation downstream of a single RTK can be affected by many parameters, such as receptor expression level (Traverse et al., 1994; Tallquist et al., 2003), suggesting that even a single receptor can regulate multiple downstream outputs and transcriptional programs across different contexts. The role of quantitative differences in the pERK response leading to distinct cellular outcomes is well characterized in PC12 neurons (Marshall, 1995), and the transcriptional response to the proliferative program mediated by sustained pERK activation in 3T3 fibroblasts has been reported (Yamamoto et al., 2006). Building on these studies, the MEPM RNA-seq data provide insight into the differences in gene expression following both transient and sustained pERK induction as well as qualitatively specific target genes downstream of MEK/ERK and PI3K signaling, with the added advantage of profiling these responses within a system requiring these pathways for normal development. It is important to note that mRNA levels alone (as measured by RNA-seq) are not the only level of specificity in the transcriptional response, for example, differential cofactor recruitment can also specify distinct gene expression programs in response to FGF and PDGF signaling (Vasudevan and Soriano, 2014). Further work is necessary to identify the precise mechanisms regulating the activity of individual RTK target genes.\n\nAlthough we focused on MEK/ERK and PI3K signaling based on their reported roles downstream of PDGF and FGF during development (Klinghoffer et al., 2002; Corson et al., 2003), many other intracellular pathways are activated by RTKs, such as JNK, p38, Src, PLC\u03b3, and PKC (Lemmon and Schlessinger, 2010). As previously reported in other contexts (Bhalla et al., 2002; Santos et al., 2007), we found the FGF-pERK induction was dependent on PKC activity, and we further identified crosstalk in the presence of pathway inhibition between ERK, PI3K, and JNK. In addition, a subset of genes (34% FGF, 43% PDGF) are not affected by MEK/ERK or PI3K inhibition, suggesting they either lie downstream of other intracellular pathways or require inhibition of both ERK and PI3K. Thus, while our studies demonstrate PI3K is necessary for differentiation and ERK is necessary for proliferation in MEPMs, the high connectivity across intracellular pathways suggests no single pathway in isolation is sufficient to drive transcriptional responses and cellular outcomes in their entirety. Rather, integrated output from multiple effector pathways likely contributes to the ultimate cellular outcome, and instead of the existence of linear PDGF-PI3K-differentiation and FGF-ERK-proliferation axes, we favor a model in which multiple signaling events converge on PI3K to promote differentiation and ERK to drive proliferation in the midface.\n\nThe finding that effector inhibition increased the induction of many RTK target genes was surprising given their presumed primary function as positive effectors of signaling. The \u2018superinduction\u2019 of these transcriptional responses was due at least in part to compensatory activation of other pathways: inhibition of pERK downstream of both RTKs resulted in increased pJNK induction while inhibition of PI3K downstream of FGF, but not PDGF, resulted in increased pERK activation. This observation has implications for both genetic studies in mice and any system in which effector inhibition is used as an experimental or therapeutic agent. First, allelic series experiments in which adaptor binding is abrogated in order to abolish specific effector cascades may result in induction of alternate signaling pathways, complicating assignment of developmental function to a single intracellular pathway. Indeed, mice harboring a PI3K binding site mutation at the PDGFR\u03b1 locus show increased SHP2 binding and altered pERK activation (Klinghoffer et al., 2002). Second, chemical inhibition of these effectors may prime activation of other pathways, facilitating alternate signaling mechanisms and cellular outcomes. Many examples of such crosstalk between ERK and PI3K (Mendoza et al., 2011; Sun and Bernards, 2014) as well as ERK and JNK (Lopez-Bergami et al., 2007) have been described downstream of RTK signaling in cancer. The MEPM RNA-seq data provide a transcriptional signature for this crosstalk, offering an additional readout to measure activation of these pathways. However, it is important to caution that these responses likely vary based on cellular context, and although the core target genes and effector dependencies may be conserved, extrapolating this framework to other systems requires careful validation.\n\nIn comparing our gene expression studies to mouse craniofacial development in vivo, we found co-localization of pAkt and AP in the upper lip and middle to posterior palate at E13.5 as well as overlapping domains of Runx2 and Id gene expression, indicating the PDGF-PI3K axis identified in MEPMs is correlated with osteoblast differentiation in the midface. It is interesting to note that the distribution of Pdgfra mRNA expression compared to pAkt activity and AP staining is not strictly one-to-one; we speculate other factors such as ligand distribution, availability of intracellular signaling proteins, and input from other pathways may contribute toward the spatially restricted domains of osteoblast differentiation. We further observed elevated AP expression in Fgfr1 conditional mutants at E14.5, consistent with FGF-mediated repression of osteoblast differentiation. Many functions have been ascribed to FGF signaling in skeletogenesis (Ornitz and Marie, 2002), and a combination of parameters is likely responsible for the multiplicity of observed roles, such as ligand identity (Francavilla et al., 2013) and cellular context. During palatogenesis, Fgfr1 mutants have been previously reported to exhibit proliferation defects and increased BMP (Bone Morphogenetic Protein) signaling (Wang et al., 2013), supporting the notion that FGF drives proliferation and represses differentiation in this system. In addition, the facial clefting phenotypes associated with neural crest conditional loss of RAF, MEK, or ERK (Newbern et al., 2008) suggest that the FGF-ERK axis is functionally relevant in vivo.\n\nOne important point merits further discussion: Are PI3K and ERK induction interpreted the same independently of the stimulus driving effector activity? There is evidence to suggest this is indeed the case, as IGF (Insulin-like growth factor 1)-mediated PI3K/Akt activation is a key regulator of osteoblast differentiation in mesenchymal stem cells (Xian et al., 2012), consistent with the PI3K-mediated differentiation outcome in MEPMs. However, this interpretation is likely restricted in large part by cellular context, as MEK/ERK signaling functions as a positive regulator of differentiation in embryonic stem cells (Ying et al., 2008), in contrast to the role of MEK/ERK signaling in MEPMs. In skeletal differentiation, our findings of a MEK/ERK-mediated proliferation program and PI3K-mediated differentiation program are in line with previous work analyzing the role of these effectors (Mansukhani et al., 2005; Raucci et al., 2008; Miraoui and Marie, 2010). In addition, a FGF-PKC-AP-1 signaling axis in calvarial osteoblasts has been reported (Miraoui et al., 2010), consistent with the MEPM data linking FGF to a robust AP-1 response and FGF-mediated pERK activation to PKC signaling. Delineating the hierarchy between these signals and pathways and determining the exact combinations sufficient to specify particular outcomes will be key questions for future studies. The present work provides a roadmap of the gene expression profiles underlying these cellular behaviors and a transcriptomic view of how two different RTKs lead to distinct outcomes.\n\n## Materials and methods\n\n### Mouse strains\n\nAll animal experiments were approved by the Institutional Animal Care and Use Committee at the Icahn School of Medicine at Mount Sinai. Wild-type C57B/6 mice were used to generate E13.5 MEPMs for RNA-seq. Pdgfratm11(EGFP)Sor (Hamilton et al., 2003), referred to as Pdgfra-GFP in the text, were maintained on a C57BL/6 background, and FGFR1-CFP mice (to be described elsewhere), FGFR1tm5.1Sor mice (Hoch and Soriano, 2006), referred to as Fgfr1fl/fl in the text, and Tg(Wnt1-Cre)11Rth mice (Danielian et al., 1998), referred to as Wnt1-Cre in the text, were all maintained on a 129S4 background.\n\n### Tissue culture\n\nPrimary MEPM cells were isolated from E13.5 secondary palatal shelves (day of plug: E0.5) as previously described (Fantauzzo and Soriano, 2014; Vasudevan and Soriano, 2014). Cells were grown in Dulbecco's modified Eagle\u2019s medium (GIBCO; Invitrogen, Carlsbad, CA) with 10% fetal bovine serum (FBS; HyClone Laboratories, Logan, UT), 50 U/mL penicillin (GIBCO), 50 \u03bcg/mL streptomycin (GIBCO), and 2 mM L-glutamine (GIBCO). Cells were split twice to passage 2 for all experiments included in this study, and serum starvation was conducted in same media as above but with 0.1% FBS instead of 10% FBS. BrdU assays (Bush and Soriano, 2010; Vasudevan and Soriano, 2014) and AP staining (Wu et al., 2008) were performed as described previously.\n\n### RNA-seq\n\nPassage 2 E13.5 MEPMs were serum starved overnight in 0.1% FBS and then treated with either 30 ng/mL PDGFAA (R&D Systems, Minneapolis, MN) or 50 ng/mL FGF1 (Peprotech, Rocky Hill, NJ) + 1 \u03bcg/mL heparin (Sigma-Aldrich, St. Louis, MO) for the desired duration. When pathway inhibitors were used, cells were pretreated with either 1 \u03bcM PD325901 or 10 \u03bcM LY294002 for 30 min prior to growth factor addition. MEPMs generated from independent litters were used for each set of replicates, and RNA was collected using RNeasy Mini Kit (Qiagen Inc., Valencia, CA) according to manufacturer's protocol before submission to the Mount Sinai Genomics Core (http://icahn.mssm.edu/departments-and-institutes/genomics/about/resources/genomics-core-facility), where RNA was poly-A selected, libraries generated, and sequenced on Illumina HiSeq 2000. Between 25 and 40 million reads per sample were obtained and mapped to the mouse genome (version mm10) using TopHat (Kim et al., 2013). Genes were tested for differential expression by Cuffdiff and considered significant at q <0.1 (Trapnell et al., 2010). Data for untreated, 1-hr PDGF, and 1-hr FGF treated MEPMs are publicly available at the Gene Expression Omnibus (GEO), Accession GSE61755 (42). Data for 4 hr PDGF, 4 hr FGF, 1 hr PDGF + PD325901, 1 hr PDGF + LY294002, 4 hr PDGF + PD325901, 4 hr PDGF + LY294002, 1 hr FGF + PD325901, 1 hr FGF + LY294002, 4 hr FGF + PD325901, and 4 hr FGF + LY294002 samples are publicly available at the GEO, Accession GSE66484.\n\n### RT-qPCR\n\nE13.5 MEPMs were serum starved overnight in 0.1% FBS and then treated with desired growth factors and/or inhibitors as for RNA-seq. Total RNA was collected with the RNeasy Mini Kit (Qiagen Inc.). First-strand cDNA was then synthesized using a ratio of 2:1 random primers: Oligo(dT) with SuperScript II RT (Invitrogen). qPCR was performed using a Bio-Rad iQ5 Multicolor Real-Time PCR Detection System and analyzed with iQ5 Optical System Software (version 2.0; Bio-Rad, Hercules, CA). Reactions were performed with PerfeCTa SYBR Green FastMix for iQ (Quanta Biosciences Inc., Gaithersburg, MD) using 10 \u03bcM primers (Integrated DNA Technologies Inc., Coralville, IA). A list of qPCR primers used is available in Supplementary File 5. The following cycling protocol was used: step 1: 95\u00b0C for 3 min; step 2: 95\u00b0C for 10 s; step 3: 60\u00b0 for 40 s; repeat to step 2 39\u00d7 (total of 40 cycles), and a melting curve analysis was performed. In addition, PCR products were run on a 1.0% agarose gel to ensure correct amplicon size. \u03b22m was used as an endogenous control.\n\n### Western blot\n\nMEPMs were serum starved overnight and treated as for RNA-seq and then washed 3\u00d7 in ice-cold PBS (Phosphate-buffered saline) before being harvested in NP-40 lysis buffer (20 mM Tris\u2013HCl pH 8, 150 mM NaCl, 10%glycerol, 1% Nonidet P-40, 2 mM EDTA (Ethylenediaminetetraacetic acid), 1\u00d7 complete Mini protease inhibitor cocktail [Roche Applied Science, Indianapolis, IN], 1 mM PMSF (Phenylmethanesulfonylfluoride), 10 mM NaF, 1 mM Na3VO4, and 25 mM \u03b2-glycerophosphate). Total cell lysates were sonicated briefly and then collected by centrifugation. Lysates were then resuspended in Laemmli buffer containing 10% \u03b2-mercaptoethanol, heated at 95\u00b0C for 5 min, and separated by SDS-polyacrylamide gel electrophoresis.\n\nThe following inhibitors were used: LY294002 (Sigma-Aldrich), PD325901 (Stemgent, Cambridge, MA), cycloheximide (Fisher Scientific, Waltham, MA), and Bim I (Santa Cruz Biotechnology, Dallas, TX).\n\nThe following antibodies were used: anti-phospho MAPK p42/p44 (9201; Cell Signaling Technologies, Danvers, MA; 1:1000), anti-pAkt (9271; Cell Signaling Technologies; 1:1000), and anti-pJNK (4671; Cell Signaling Technologies; 1:1000). The anti-\u03b2 tubulin E7 antibody (1:1000) developed by M. Klymkowsky was obtained from the Developmental Studies Hybridoma Bank developed under the auspices of the NICHD and maintained by The University of Iowa, Department of Biology, Iowa City, IA.\n\n### Immunofluorescence\n\nImmunofluorescence was performed as described previously (Vasudevan and Soriano, 2014). Briefly, cells were fixed in 4% formaldehyde at room temperature, blocked in 10% donkey serum, stained with primary antibody, and detected with secondary antibody, all for 1 hr at room temperature. The following antibodies were used: Anti-Cleaved Caspase-3 (CST9661; Cell Signaling Technology; 1:400). The anti-BrdU (G3G4, 1:500) developed by S. Kaufman was obtained from the Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA.\n\n### IHC\n\nIHC was performed as described previously (Fantauzzo and Soriano, 2014). For whole mounts, embryos were dissected onto ice-cold PBS, fixed overnight in 4:1 methanol:DMSO, cleared in 4:1:1 methanol:DMSO:H2O2, and stored in 100% methanol. For sections, embryos were fixed overnight in 4% paraformaldehyde (PFA) and embedded in paraffin. Staining was done with primary antibody overnight and a goat anti-rabbit IgG peroxidase-conjugated secondary antibody (Jackson ImmunoResearch Laboratories Inc., West Grove, PA). Detection was performed using the Vector Laboratories SK-4100 kit (Vector Laboratories Inc., Burlingame, CA).\n\n### In situ hybridization\n\nEmbryos were dissected in ice-cold PBS and fixed overnight in 4% PFA and embedded in paraffin or optimal cutting temperature compound for sectioning. In situ hybridization was performed according to standard protocols (He and Soriano, 2013; Vasudevan and Soriano, 2014). A list of probe sequences is provided in Supplementary File 5.\n\n### Data analysis\n\nGeneration of heatmaps, PCA, and other analysis were performed through custom code in R. PCA was done using the \u2018prcomp\u2019 function on centered, median normalized data, and correlation matrix was constructed using the \u2018cor\u2019 function on log2(FPKM + 1) transformed data. Hierarchical clustering and heatmaps were generated using the \u2018heatmap.2\u2019 and \u2018hclust\u2019 functions. Pearson's correlation was used in the correlation matrix, and Euclidean distance was used as a distance metric for hierarchical clustering. PPI networks were constructed using the Expression2Kinase software (Chen et al., 2012) based on an updated version of Genes2Networks (Berger et al., 2007), only direct connections (path length = 1) were considered, and all published PPI databases except predicted PPIs were included. Networks were visualized and formatted in yEd (www.yworks.com). For Gene ontology analysis (Huang et al., 2009), only those terms at a significance threshold of p <0.001 were included. Redundant GO terms comprising an identical or fully shared subset of genes were removed. A full list of GO results is provided in Supplementary File 4.\n",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "866aeeee-3a65-4525-8e83-14b8dc2b5e00",
+      "submission_id": "8e7ff106-2cde-477a-a5b0-324bca6f3f6e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07186.019](https://doi.org/10.7554/eLife.07186.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cReceptor tyrosine kinases modulate distinct transcriptional programs by differential usage of intracellular pathways\u201d for consideration at eLife. Your article has been favorably evaluated by Fiona Watt (Senior editor), Marianne Bronner (Reviewing editor), and three reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this study, the authors took advantage of palatal mesenchymal cells in which both FGF and PDGF signaling utilize receptor tyrosine kinase (RTK) to regulate downstream target genes during palatogenesis. To investigate the mechanisms underlying RTK specificity in craniofacial development, the authors performed detailed FGF and PDGF responsive gene analyses. They show that FGF signaling favors cell proliferation through activation of ERK whereas PDGF signaling mainly promotes cell differentiation through PI3K. Their results show that PDGF requires PI3K and affects differentiation while FGF depends on MEK/ERK and promotes proliferation. Furthermore although the FGF response was shown to be quantitatively stronger, there was considerable interconnectivity across the intracellular pathways which urges caution with respect to general effector inhibitor experiments and conclusions. The study is carefully done. Some further experimentation, described below, would strengthen the results.\n\n1) The interpretations seem too focussed on the differences in MEK and PI3K signaling as explaining the changes in transcription between 1h and 4h. For example, in the Results section it is concluded: \u201cIn sum, both RTKs induce a qualitatively similar gene expression program at 1 hour, but FGF drives a quantitatively stronger early response, resulting in divergent gene expression profiles at 4 hours.\u201d This seems to be jumping the gun, as much of the evidence comes later in the Results. What is meant by \u2018similar\u2019 gene expression programs at early stages? Perhaps there are some differences in early transcription factor expression that contribute to the greater divergence at 4h. A network of induced genes is shown in Figure 1, but are these the only ones? It would be useful to have a list of the differentially expressed genes at 1h, and some explicit discussion on this point.\n\n2) Although the PDGF-PI3K/Akt signaling axis and FGF-MEK/ERK signaling are known to be important for craniofacial development, this concern is outweighed by the novelty of the comparative systematic transcriptional analyses of PDGF and FGF signaling in the palatal mesenchyme under the same experimental conditions. Some deeper analyses of the respective Fgfr1 or Pdgfra mutants (either null or conditional as appropriate) would strengthen the authors' interpretations and conclusions in vivo. The RTK pathway intersection the authors observed in MEPM cells could easily be thoroughly validated in the background of the respective mutants.\n\n3) In the experiment where the authors inhibited pERK by using PD325901, the authors found activation of pJNK. It would be helpful to know if there are any changes in apoptotic activity in PD325901-treated MEPMs.\n\n4) In reviewing the Pdgfra expression pattern, it is clear that Pdgfra is localized throughout the palatal mesenchyme (Figure 6B') whereas the condensation of palatal mesenchyme and osteogenic differentiation is mainly located in the nasal region of the palatal shelf (Figure 6B). What is the functional significance of PDGF signaling in the oral region of the palatal shelf? Is PI3K activation only restricted to the nasal region where osteogenic differentiation will occur?\n\n5) The tissue orientation in Figure 6C is not clear. In general, palatal shelves should have fused at E14.5 in the control sample. Here, both control and Fgfr1 mutant samples show that palatal shelves are blocked by the tongue.\n",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e1f28472-1673-4ca4-b8d7-bd7a9fbb6dd9",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C1",
+      "claim": "Receptor tyrosine kinases (RTKs) signal through shared intracellular pathways yet mediate distinct outcomes across many cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor tyrosine kinases (RTKs) signal through shared intracellular pathways yet mediate distinct outcomes across many cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about RTK biology that is supported by established scientific knowledge and is the premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "9a1ff3e3-ab14-4fdd-8b8b-c8c11776f60a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C2",
+      "claim": "The early gene expression profile induced by both PDGF and FGF is qualitatively similar.",
+      "claim_type": "EXPLICIT",
+      "source": "While the early gene expression profile induced by both growth factors is qualitatively similar, the late response is divergent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing high correlation at 1 hour between PDGF and FGF responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "ba5fb47f-3fd9-4491-b0ab-537073c465cf",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C3",
+      "claim": "The late transcriptional response to PDGF and FGF is divergent.",
+      "claim_type": "EXPLICIT",
+      "source": "While the early gene expression profile induced by both growth factors is qualitatively similar, the late response is divergent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing low correlation at 4 hours between PDGF and FGF responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "25bb7048-e7b1-4d60-b04a-77aacfac1f9d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C4",
+      "claim": "The FGF response is MEK dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the effect of MEK (Mitogen/Extracellular signal-regulated kinase) and PI3K (phosphoinositide-3-kinase) inhibition, we find the FGF response is MEK dependent, while the PDGF response is PI3K dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with MEK inhibitor treatment showing that FGF target genes are predominantly MEK/ERK dependent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "1e9bc468-55a2-40e1-bb7a-511239b98102",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C5",
+      "claim": "The PDGF response is PI3K dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the effect of MEK (Mitogen/Extracellular signal-regulated kinase) and PI3K (phosphoinositide-3-kinase) inhibition, we find the FGF response is MEK dependent, while the PDGF response is PI3K dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with PI3K inhibitor treatment showing that PDGF target genes show greater PI3K dependence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4fb2f328-3fd9-4a47-a30a-8158e2f25509",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C6",
+      "claim": "FGF promotes proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, FGF promotes proliferation but PDGF favors differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by BrdU labeling experiments showing significantly greater proliferative response to FGF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "ef566e4e-d053-471a-a201-d816a7d11c97",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C7",
+      "claim": "PDGF favors differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, FGF promotes proliferation but PDGF favors differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by alkaline phosphatase staining showing PDGF-treated MEPMs display robust AP response indicating osteoblast differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "40a7635b-7c9e-4cb6-adf2-48be1dc7e25a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C8",
+      "claim": "There are overlapping domains of PDGF-PI3K signaling and osteoblast differentiation in the palate.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate overlapping domains of PDGF-PI3K signaling and osteoblast differentiation in the palate and increased osteogenesis in FGF mutants, indicating this differentiation circuit is conserved in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by whole mount IHC showing pAkt and AP domains co-localize in the middle to posterior secondary palate and developing upper lip.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "905e266c-1646-43ba-9c68-6c0a7f50858d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C9",
+      "claim": "FGF mutants show increased osteogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate overlapping domains of PDGF-PI3K signaling and osteoblast differentiation in the palate and increased osteogenesis in FGF mutants, indicating this differentiation circuit is conserved in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AP staining on neural crest conditional Fgfr1 mutants showing increased domain of AP in the maxillary region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "ceaaf4dc-97c7-407b-81d2-0b09ca746a64",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C10",
+      "claim": "The differentiation circuit is conserved in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate overlapping domains of PDGF-PI3K signaling and osteoblast differentiation in the palate and increased osteogenesis in FGF mutants, indicating this differentiation circuit is conserved in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the in vitro MEPM data combined with in vivo observations of pAkt/AP co-localization and Fgfr1 mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "32a1dd6e-0319-481b-a299-8ac39737234e",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C11",
+      "claim": "Loss of Pdgfra results in facial clefting in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, loss of Pdgfra (Soriano, 1997) or its ligands Pdgfa and Pdgfc (Ding et al., 2004) results in facial clefting, and mice harboring a mutation abrogating PI3K binding to PDGFR\u03b1 mirror these craniofacial phenotypes, implicating PI3K as the main effector of PDGFR\u03b1 signaling (Klinghoffer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Soriano, 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4e49c9bc-52f3-49d2-8808-a20a30bceff8",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C12",
+      "claim": "Loss of Pdgfa and Pdgfc results in facial clefting in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, loss of Pdgfra (Soriano, 1997) or its ligands Pdgfa and Pdgfc (Ding et al., 2004) results in facial clefting, and mice harboring a mutation abrogating PI3K binding to PDGFR\u03b1 mirror these craniofacial phenotypes, implicating PI3K as the main effector of PDGFR\u03b1 signaling (Klinghoffer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Ding et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "a98fce5d-dbf1-4985-be36-f7d37eb3b47a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C13",
+      "claim": "Mice harboring a mutation abrogating PI3K binding to PDGFR\u03b1 mirror craniofacial phenotypes of Pdgfra loss.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, loss of Pdgfra (Soriano, 1997) or its ligands Pdgfa and Pdgfc (Ding et al., 2004) results in facial clefting, and mice harboring a mutation abrogating PI3K binding to PDGFR\u03b1 mirror these craniofacial phenotypes, implicating PI3K as the main effector of PDGFR\u03b1 signaling (Klinghoffer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Klinghoffer et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "8d38b657-e75a-4319-802b-52e0f66baf7b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C14",
+      "claim": "PI3K is the main effector of PDGFR\u03b1 signaling in craniofacial development.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, loss of Pdgfra (Soriano, 1997) or its ligands Pdgfa and Pdgfc (Ding et al., 2004) results in facial clefting, and mice harboring a mutation abrogating PI3K binding to PDGFR\u03b1 mirror these craniofacial phenotypes, implicating PI3K as the main effector of PDGFR\u03b1 signaling (Klinghoffer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that PI3K binding site mutation phenocopies Pdgfra loss, as cited from Klinghoffer et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "049427a3-3c15-4cef-857b-f3eabdb5365d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C15",
+      "claim": "Pdgfra neural crest conditional mutants exhibit cleft face.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both Pdgfra (Wnt1-Cre; Pdgfrafl/fl) (Tallquist and Soriano, 2003) and FGF receptor 1 (Wnt1-Cre; Fgfr1) (Trokovic et al., 2003; Wang et al., 2013) neural crest conditional mutants exhibit cleft face, indicating both pathways are required for normal development of the neural crest derived facial skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Tallquist and Soriano, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "81d7f30a-b317-4067-8d3e-5a9a99d31808",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C16",
+      "claim": "Fgfr1 neural crest conditional mutants exhibit cleft face.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both Pdgfra (Wnt1-Cre; Pdgfrafl/fl) (Tallquist and Soriano, 2003) and FGF receptor 1 (Wnt1-Cre; Fgfr1) (Trokovic et al., 2003; Wang et al., 2013) neural crest conditional mutants exhibit cleft face, indicating both pathways are required for normal development of the neural crest derived facial skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Trokovic et al., 2003; Wang et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "648a3ccb-97ef-4ae2-bab5-1d3ea38e39d4",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C17",
+      "claim": "Both PDGF and FGF pathways are required for normal development of the neural crest derived facial skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both Pdgfra (Wnt1-Cre; Pdgfrafl/fl) (Tallquist and Soriano, 2003) and FGF receptor 1 (Wnt1-Cre; Fgfr1) (Trokovic et al., 2003; Wang et al., 2013) neural crest conditional mutants exhibit cleft face, indicating both pathways are required for normal development of the neural crest derived facial skeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that conditional loss of either receptor results in cleft face phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "55e0e6b3-4ff9-4cec-8422-364c19112be7",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C18",
+      "claim": "ERK is a key effector downstream of FGF signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "At the intracellular pathway level, previous work has implicated ERK as a key effector downstream of FGF signaling (Lanner and Rossant, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Lanner and Rossant, 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "6f5d3080-6908-46f8-b10f-d04807e9bc7b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C19",
+      "claim": "Mutations in both PDGF and FGF signaling have been linked to craniofacial syndromes in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutations in both PDGF and FGF signaling have been linked to craniofacial syndromes in humans (Choi et al., 2009; Miraoui and Marie, 2010; Rattanasopha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published work (Choi et al., 2009; Miraoui and Marie, 2010; Rattanasopha et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "cf7e7e35-5b38-4196-8524-a1d21c14f5ec",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C20",
+      "claim": "The intracellular domain of Fgfr1 cannot compensate for Pdgfra during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, chimeric receptor experiments in mice have shown that the intracellular domain of Fgfr1 cannot compensate for Pdgfra during development, suggesting these two receptors transmit biologically distinct signals in vivo (Hamilton et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Hamilton et al., 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "d4a32d13-b4d7-4859-9884-64b20b8d266a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C21",
+      "claim": "PDGF and FGF receptors transmit biologically distinct signals in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, chimeric receptor experiments in mice have shown that the intracellular domain of Fgfr1 cannot compensate for Pdgfra during development, suggesting these two receptors transmit biologically distinct signals in vivo (Hamilton et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from chimeric receptor experiments cited from Hamilton et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "dff011f9-8afb-4d2c-8b7f-01f46dae7125",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C22",
+      "claim": "Both PDGF and FGF induce a robust pERK response at 15 min in MEPMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the samples submitted for sequencing, both PDGF and FGF induced a robust phospho-ERK (pERK) response at 15 min (Figure 1\u2014figure supplement 1A), and MEPMs generated from Pdgfra-GFP (Hamilton et al., 2003) and Fgfr1-CFP (to be described elsewhere) knockin reporter embryos display expression of each receptor at the protein level in all cells (Figure 1\u2014figure supplement 1B), further validating MEPMs as a suitable system to study RTK responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "07624f98-a0a3-4972-b73f-8f7f7840d05a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C23",
+      "claim": "MEPMs express PDGFR\u03b1 at the protein level in all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the samples submitted for sequencing, both PDGF and FGF induced a robust phospho-ERK (pERK) response at 15 min (Figure 1\u2014figure supplement 1A), and MEPMs generated from Pdgfra-GFP (Hamilton et al., 2003) and Fgfr1-CFP (to be described elsewhere) knockin reporter embryos display expression of each receptor at the protein level in all cells (Figure 1\u2014figure supplement 1B), further validating MEPMs as a suitable system to study RTK responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence imaging data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4b7a0483-6b8f-40f8-ab40-b9f886b183fa",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C24",
+      "claim": "MEPMs express FGFR1 at the protein level in all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the samples submitted for sequencing, both PDGF and FGF induced a robust phospho-ERK (pERK) response at 15 min (Figure 1\u2014figure supplement 1A), and MEPMs generated from Pdgfra-GFP (Hamilton et al., 2003) and Fgfr1-CFP (to be described elsewhere) knockin reporter embryos display expression of each receptor at the protein level in all cells (Figure 1\u2014figure supplement 1B), further validating MEPMs as a suitable system to study RTK responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence imaging data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "de179060-d371-4b68-8b4f-90a48f73295a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C25",
+      "claim": "Only a small number of genes are differentially regulated between 1-hr PDGF and 1-hr FGF samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We first plotted the expression of all genes with FPKM (fragments per kilobase of exon per million reads mapped) values >1 at both 1 hr (Figures 1B and 4 hr (Figure 1B'); although only a small number of genes are differentially regulated between the 1-hr PDGF and 1-hr FGF samples (Cuffdiff q < 0.1, Supplementary File 2; Trapnell et al., 2010), the difference in the response to these two growth factors is much greater at 4 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data analyzed with Cuffdiff showing few differentially expressed genes at 1 hour.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "38818cde-28af-4b0d-ac7a-98dd4edbe69a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C26",
+      "claim": "The difference in the transcriptional response to PDGF and FGF is much greater at 4 hr than at 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We first plotted the expression of all genes with FPKM (fragments per kilobase of exon per million reads mapped) values >1 at both 1 hr (Figures 1B and 4 hr (Figure 1B'); although only a small number of genes are differentially regulated between the 1-hr PDGF and 1-hr FGF samples (Cuffdiff q < 0.1, Supplementary File 2; Trapnell et al., 2010), the difference in the response to these two growth factors is much greater at 4 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing greater divergence at 4 hours compared to 1 hour.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "2eb4d92a-2604-4d62-b794-a6e66cbdfc29",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C27",
+      "claim": "The 1-hr PDGF and 1-hr FGF samples cluster together in principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, visualization of all replicates by principal component analysis (PCA) (Figure 1\u2014figure supplement 1C) revealed that the 1-hr PDGF and 1-hr FGF samples cluster together, but the 4-hr FGF replicates are distinctly separate from the 4-hr PDGF samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "82c06cf0-112d-45a5-a85c-b6b0e88963ff",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C28",
+      "claim": "The 4-hr FGF replicates are distinctly separate from the 4-hr PDGF samples in principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, visualization of all replicates by principal component analysis (PCA) (Figure 1\u2014figure supplement 1C) revealed that the 1-hr PDGF and 1-hr FGF samples cluster together, but the 4-hr FGF replicates are distinctly separate from the 4-hr PDGF samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "98dc7155-5091-4aa1-b615-f371aff3340c",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C29",
+      "claim": "Genes differentially regulated at 1 hr by either PDGF or FGF show high correlation (r2 = 0.8173).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the stimulated MEPMs to untreated cells, genes differentially regulated at 1 hr by either PDGF or FGF (Supplementary File 2) show high correlation (r2 = 0.8173, Figure 1C), but by 4 hr, the two RTK signals are divergent (r2 = 0.2881, Figure 1C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "2569d1e1-bcc3-4887-ad9e-33668070ff97",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C30",
+      "claim": "By 4 hr, the PDGF and FGF signals are divergent (r2 = 0.2881).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the stimulated MEPMs to untreated cells, genes differentially regulated at 1 hr by either PDGF or FGF (Supplementary File 2) show high correlation (r2 = 0.8173, Figure 1C), but by 4 hr, the two RTK signals are divergent (r2 = 0.2881, Figure 1C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "67586d0c-fdb0-4608-9a1b-23c46fe196ee",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C31",
+      "claim": "The genes regulated by PDGF at 1 hr (n = 40) form a subset of those genes regulated by FGF at 1 hr (n = 159).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the genes regulated by PDGF at 1 hr (n = 40) form a subset of those genes regulated by FGF at 1 hr (n = 159), further highlighting the similarity within the early response to both growth factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing overlap between PDGF and FGF regulated genes at 1 hour.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "a023f978-c76d-4707-8ee3-4c38a46a5e4e",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C32",
+      "claim": "Genes induced at 1 hr show enrichment of transcription factors and MAP kinase phosphatases downstream of both RTKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis (Huang et al., 2009) of the genes induced at 1 hr revealed an enrichment of transcription factors and MAP kinase phosphatases downstream of both RTKs (Figure 1\u2014figure supplement 1D, p < 0.001), similar to previous descriptions of the response to RTK activation (Amit et al., 2007; Avraham and Yarden, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "5af9573d-6b6d-4b42-bcb3-b2f85788cb8d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C33",
+      "claim": "Many shared target genes are regulated to both a stronger magnitude and longer duration following FGF treatment compared to PDGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection revealed that many shared target genes within this network are regulated to both a stronger magnitude and longer duration following FGF treatment compared to PDGF treatment (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4664f74d-4136-46a0-8a35-d183b9ed6aa2",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C34",
+      "claim": "Fos, Fosb, Jun, and Junb all exhibit differences in signal magnitude and/or duration in response to FGF compared to PDGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Fos, Fosb, Jun, and Junb all exhibit differences in signal magnitude and/or duration in response to FGF, as validated by qPCR (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR validation shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "659d2a58-6300-4ff5-a3a7-8d36f445d9c1",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C35",
+      "claim": "The FGF-induced pERK response displays both a higher magnitude and longer duration of activation compared to the PDGF-induced pERK signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the stronger response to FGF treatment in the gene expression data, the FGF-induced pERK response displays both a higher magnitude and longer duration of activation compared to the PDGF-induced pERK signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot time course data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "30ecd3ff-cd9f-49f4-b668-03834ab2334f",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C36",
+      "claim": "Both FGF and PDGF induce similar patterns of pAkt activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both FGF and PDGF induce similar patterns of pAkt activation, but the magnitude of the PDGF-pAkt induction is slightly greater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot time course data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "fb1d44b6-4ae8-4999-bc32-7e64ee29c279",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C37",
+      "claim": "The magnitude of the PDGF-pAkt induction is slightly greater than FGF-pAkt induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both FGF and PDGF induce similar patterns of pAkt activation, but the magnitude of the PDGF-pAkt induction is slightly greater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Western blot time course data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "39b233a3-70b6-4fb2-8e32-d1beb1f3b59d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C38",
+      "claim": "The FGF-pERK signal is apparent up to 6 hr following growth factor treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The FGF-pERK signal is apparent up to 6 hr following growth factor treatment (Figure 2\u2014figure supplement 1A), and increasing the dose of PDGFA ligand did not alter the kinetics of pERK activation (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot time course data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "5627677c-84b0-4ad7-8145-79dc225777a9",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C39",
+      "claim": "Increasing the dose of PDGFA ligand did not alter the kinetics of pERK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The FGF-pERK signal is apparent up to 6 hr following growth factor treatment (Figure 2\u2014figure supplement 1A), and increasing the dose of PDGFA ligand did not alter the kinetics of pERK activation (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot dose response data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "39bd0245-02a9-488b-8de2-726bafe8c702",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C40",
+      "claim": "Genes enriched following FGF treatment at 4 hr include protein kinases and GTPase regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "The top results for genes enriched following FGF treatment are sets associated with modulation of signaling, such as protein kinases and GTPase regulators, which may function as activators of Ras to promote MEK/ERK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "d0b0fb51-6e2d-433a-819c-0597c8a48e6e",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C41",
+      "claim": "Many DUSPs (MAPK phosphatases) are induced in response to both PDGF and FGF treatment at 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many DUSPs (MAPK phosphatases) are induced in response to both PDGF and FGF treatment at 1 hr (Figure 1\u2014figure supplement 1D), but FGF alone induces the expression of kinases and GTPase regulators at 4 hr, suggesting a distinct role for the FGF response in regulating MEK/ERK activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "6b6c4472-dc06-4c85-ad5d-3e0b2a0da626",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C42",
+      "claim": "FGF alone induces the expression of kinases and GTPase regulators at 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many DUSPs (MAPK phosphatases) are induced in response to both PDGF and FGF treatment at 1 hr (Figure 1\u2014figure supplement 1D), but FGF alone induces the expression of kinases and GTPase regulators at 4 hr, suggesting a distinct role for the FGF response in regulating MEK/ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4f07b114-9f77-4c78-9a49-9192a3c1740d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C43",
+      "claim": "Cycloheximide treatment increased the duration of the PDGF-pERK response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work exploring the role of DUSP-mediated negative feedback (Amit et al., 2007), cycloheximide treatment increased the duration of the PDGF-pERK response (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data with cycloheximide treatment shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "eabf35b4-e07a-4db3-a67c-ab050c36a5d1",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C44",
+      "claim": "Cycloheximide treatment decreased the duration of the FGF-pERK response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed the opposite effect of cycloheximide treatment on the FGF-pERK response (Figure 2C'), suggesting a positive feedforward loop in which FGF induces the expression of kinases and GEFs to modulate the ERK response in addition to activating ERK directly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data with cycloheximide treatment shown in Figure 2C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "ca5665ee-5146-4c57-adfe-ddf4b390cd53",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C45",
+      "claim": "FGF induces the expression of kinases and GEFs to modulate the ERK response through a positive feedforward loop.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed the opposite effect of cycloheximide treatment on the FGF-pERK response (Figure 2C'), suggesting a positive feedforward loop in which FGF induces the expression of kinases and GEFs to modulate the ERK response in addition to activating ERK directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the cycloheximide experiment results and gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "840e6c13-25c6-4778-a75f-6c946bbae580",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C46",
+      "claim": "Prkca is a highly connected node in the FGF response network.",
+      "claim_type": "EXPLICIT",
+      "source": "The FGF network (Figure 2\u2014figure supplement 1C) contains Prkca as a highly connected node, which is interesting given reported roles for protein kinase C (PKC) in facilitating a sustained pERK response (Bhalla et al., 2002; Santos et al., 2007) as well as its importance downstream of FGF in skeletal development (Miraoui and Marie, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PPI network analysis shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "b40eb08e-8193-4ba3-bf47-86e20ec4c0f6",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C47",
+      "claim": "Inhibition of PKC decreased both the initial pulse and sustained activation of the FGF-mediated pERK response in MEPMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibition of PKC decreased both the initial pulse and sustained activation of the FGF-mediated pERK response in MEPMs (Figure 2\u2014figure supplement 1C'), consistent with its potential function as a hub within the FGF response network.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data with PKC inhibitor shown in Figure 2\u2014figure supplement 1C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "3c7b4ccf-1ae0-4e97-a057-0c9efac8b64d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C48",
+      "claim": "FGF target genes show greater MEK/ERK dependence than PI3K dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, FGF target genes show greater MEK/ERK dependence than PI3K dependence, while PDGF responsive genes exhibit the opposite relationship (Supplementary File 3) mirroring the reported signaling requirements for each RTK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "ed153328-f670-419e-a110-e1391f757fee",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C49",
+      "claim": "PDGF responsive genes exhibit greater PI3K dependence than MEK/ERK dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, FGF target genes show greater MEK/ERK dependence than PI3K dependence, while PDGF responsive genes exhibit the opposite relationship (Supplementary File 3) mirroring the reported signaling requirements for each RTK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4e455400-3b39-4a73-ac54-0dc2bac78786",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C50",
+      "claim": "52% of FGF responsive genes at 4 hr are MEK/ERK dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is apparent at 1 hr (Figure 3A, A') and striking for genes DE at 4 hr, where 52% of FGF responsive genes are MEK/ERK dependent (Figure 3B) but only 22% were PI3K dependent (Figure 3B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with MEK inhibitor shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "58a4927d-dd96-419c-8cdd-335bddc2faa0",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C51",
+      "claim": "22% of FGF responsive genes at 4 hr are PI3K dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is apparent at 1 hr (Figure 3A, A') and striking for genes DE at 4 hr, where 52% of FGF responsive genes are MEK/ERK dependent (Figure 3B) but only 22% were PI3K dependent (Figure 3B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with PI3K inhibitor shown in Figure 3B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "62e9e94e-723d-4a2a-a32f-64b121b84dcf",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C52",
+      "claim": "9% of PDGF responsive genes at 4 hr are MEK/ERK dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This dependence is inverted for PDGF, where 9% are MEK/ERK dependent (Figure 3C) but 28% are PI3K dependent (Figure 3C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with MEK inhibitor shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "93877a4a-f404-4858-ad5c-62c79fc438ca",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C53",
+      "claim": "28% of PDGF responsive genes at 4 hr are PI3K dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This dependence is inverted for PDGF, where 9% are MEK/ERK dependent (Figure 3C) but 28% are PI3K dependent (Figure 3C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with PI3K inhibitor shown in Figure 3C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "6af949a4-3d92-426d-9a1a-03fc4dba5291",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C54",
+      "claim": "MEK inhibition increases the expression of PDGF targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, MEK inhibition increases the expression of PDGF targets (Figure 3C) but not FGF targets (Figure 3B), while PI3K inhibition increases the expression of FGF responsive genes (Figure 3A', B'), suggesting the FGF-ERK and PDGF-PI3K relationships are important for both gene induction and repression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with MEK inhibitor shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4be7205f-44bf-4aaa-aac1-1c2622db2e7b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C55",
+      "claim": "PI3K inhibition increases the expression of FGF responsive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, MEK inhibition increases the expression of PDGF targets (Figure 3C) but not FGF targets (Figure 3B), while PI3K inhibition increases the expression of FGF responsive genes (Figure 3A', B'), suggesting the FGF-ERK and PDGF-PI3K relationships are important for both gene induction and repression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with PI3K inhibitor shown in Figure 3A' and 3B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "1fe0033f-de49-46f9-9957-3adb29f8a628",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C56",
+      "claim": "The FGF-ERK and PDGF-PI3K relationships are important for both gene induction and repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, MEK inhibition increases the expression of PDGF targets (Figure 3C) but not FGF targets (Figure 3B), while PI3K inhibition increases the expression of FGF responsive genes (Figure 3A', B'), suggesting the FGF-ERK and PDGF-PI3K relationships are important for both gene induction and repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that pathway inhibition can both decrease and increase gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "6f301909-5f35-4383-92ac-b274759f0c49",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C57",
+      "claim": "Many shared target genes at 1 hr show similar ERK or PI3K dependence, constituting a core pathway specific gene set.",
+      "claim_type": "EXPLICIT",
+      "source": "At 1 hr, many shared target genes show similar ERK or PI3K dependence, possibly constituting a core pathway specific gene set (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "814def3f-a3a9-4cdb-b984-bf412a5f24b4",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C58",
+      "claim": "There is overlap between PI3K- and ERK-dependent genes, indicating plasticity in pathway usage downstream of different RTKs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, cross-comparison of PI3K- and ERK-dependent genes reveals some overlap (Figure 3D'), underscoring a degree of plasticity in pathway usage downstream of different RTKs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors shown in Figure 3D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "77296408-199c-42f1-b550-b7048b8d6a39",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C59",
+      "claim": "A large number of FGF target genes repressed by MEK inhibition are regulated by PI3K inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "When directly comparing the effect of MEK and PI3K inhibition at 4 hr (Figure 3E), the crosstalk between FGF targets is particularly striking, as a large number of genes repressed by MEK inhibition were regulated (both positively and negatively) by PI3K inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data comparing MEK and PI3K inhibition shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "361bee23-00f2-42cc-ba07-25277bbd0f5a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C60",
+      "claim": "23% of PDGF targets are specifically PI3K dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while 23% of PDGF targets are specifically PI3K dependent, only 5% of FGF targets are repressed by PI3K alone (Figure 3E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 3E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "b5b737ef-cd34-441a-975d-3eb30534f2c8",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C61",
+      "claim": "Only 5% of FGF targets are repressed by PI3K alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while 23% of PDGF targets are specifically PI3K dependent, only 5% of FGF targets are repressed by PI3K alone (Figure 3E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 3E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "a71162af-b945-4d64-9a83-8aac3325309f",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C62",
+      "claim": "77% of FGF-PI3K targets are also repressed by MEK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, many FGF-PI3K targets are also repressed by MEK inhibition (77%), and conversely, a number of FGF-ERK targets are induced by PI3K inhibition (23%), indicating the effect of PI3K inhibition downstream of FGF involves crosstalk with ERK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "2a3946b2-f6d4-49ce-afb0-b3178bd267f3",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C63",
+      "claim": "23% of FGF-ERK targets are induced by PI3K inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, many FGF-PI3K targets are also repressed by MEK inhibition (77%), and conversely, a number of FGF-ERK targets are induced by PI3K inhibition (23%), indicating the effect of PI3K inhibition downstream of FGF involves crosstalk with ERK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "42d75867-1c46-418a-aad6-1ac918b4df38",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C64",
+      "claim": "The effect of PI3K inhibition downstream of FGF involves crosstalk with ERK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, many FGF-PI3K targets are also repressed by MEK inhibition (77%), and conversely, a number of FGF-ERK targets are induced by PI3K inhibition (23%), indicating the effect of PI3K inhibition downstream of FGF involves crosstalk with ERK signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that PI3K and MEK inhibition have overlapping effects on FGF target genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4c6cbe09-0f8a-499b-94a1-ec06588320d8",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C65",
+      "claim": "Both RTKs show increased Jun expression in response to PD325901 (MEK inhibitor).",
+      "claim_type": "EXPLICIT",
+      "source": "Both RTKs show increased Jun expression in response to PD325901, while FGF and LY294002 treatment upregulates many classic ERK targets such as Fos, Fosb, and Dusp6 (Supplementary File 3), suggesting this 'superinduction' may reflect compensatory activation of other intracellular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with MEK inhibitor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "f87eb915-8c1b-4757-957f-e99efafbb98a",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C66",
+      "claim": "FGF and LY294002 treatment upregulates classic ERK targets such as Fos, Fosb, and Dusp6.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RTKs show increased Jun expression in response to PD325901, while FGF and LY294002 treatment upregulates many classic ERK targets such as Fos, Fosb, and Dusp6 (Supplementary File 3), suggesting this 'superinduction' may reflect compensatory activation of other intracellular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with PI3K inhibitor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "d6b2d183-bd2a-4d3c-b448-d5cf9939c585",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C67",
+      "claim": "Superinduction of genes following inhibitor treatment may reflect compensatory activation of other intracellular pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RTKs show increased Jun expression in response to PD325901, while FGF and LY294002 treatment upregulates many classic ERK targets such as Fos, Fosb, and Dusp6 (Supplementary File 3), suggesting this 'superinduction' may reflect compensatory activation of other intracellular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation of gene superinduction with pathway inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4ece0e66-80c3-4d4f-9269-31a5100891ba",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C68",
+      "claim": "PD325901 induces pJNK upon pERK inhibition downstream of both FGF and PDGF stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found striking induction of pJNK upon pERK inhibition by PD325901 downstream of both FGF (Figure 4A) and PDGF (Figure 4B) stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "9068036a-3e79-40e0-b2ec-760c9727f50d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C69",
+      "claim": "FGF-mediated pERK induction increased with LY294002 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that FGF-mediated pERK induction increased with LY294002 treatment (Figure 4A'), but PDGF treatment did not produce this increase in pERK signal (Figure 4B'), consistent with changes observed at the level of target gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "fb5722d7-a610-43d2-bb8c-e69b6335366b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C70",
+      "claim": "PDGF treatment did not produce an increase in pERK signal with LY294002 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that FGF-mediated pERK induction increased with LY294002 treatment (Figure 4A'), but PDGF treatment did not produce this increase in pERK signal (Figure 4B'), consistent with changes observed at the level of target gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 4B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "43d55732-dd97-493a-acf9-8233cf920769",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C71",
+      "claim": "Both PDGF and FGF significantly induce JNK activation in the presence of MEK inhibition at the doses used in the RNA-seq experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "At the inhibitor doses used in the RNA-seq experiment (1 \u03bcM PD325901, 10 \u03bcM LY294002), both PDGF and FGF significantly induce JNK activation in the presence of MEK inhibition, while only FGF activates ERK when PI3K is inhibited (Figure 4C, C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot quantification shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4a4e8fae-f87b-45f4-afd4-b77c76550484",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C72",
+      "claim": "Only FGF activates ERK when PI3K is inhibited at the doses used in the RNA-seq experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "At the inhibitor doses used in the RNA-seq experiment (1 \u03bcM PD325901, 10 \u03bcM LY294002), both PDGF and FGF significantly induce JNK activation in the presence of MEK inhibition, while only FGF activates ERK when PI3K is inhibited (Figure 4C, C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot quantification shown in Figure 4C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4edea808-50de-414d-8dcd-6e3f02523e4d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C73",
+      "claim": "Fos, Fosb, and Junb exhibit superinduction downstream of FGF specifically in response to PI3K inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Fos, Fosb, and Junb exhibit 'superinduction' downstream of FGF specifically in response to PI3K inhibition, confirming these genes are indeed MEK/ERK dependent and providing further evidence that LY294002-mediated induction of pERK can drive transcriptional changes (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "025c223a-1392-46f1-830c-6710680ef456",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C74",
+      "claim": "Jun is superinduced in the presence of PD325901 downstream of both RTKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Jun is 'superinduced' in the presence of PD325901 downstream of both RTKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "9f724a8d-0aa8-4e13-8cbd-c0d61867923f",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C75",
+      "claim": "Gene ontology analysis reveals an FGF-mediated proliferation program.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology for biological processes (Huang et al., 2009) enriched in genes differentially regulated by PDGF and FGF at 4 hr revealed an FGF-mediated proliferation program and a PDGF-regulated differentiation circuit (Figure 5A, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "0b1c2104-cb54-4f97-bee4-f3987db163a0",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C76",
+      "claim": "Gene ontology analysis reveals a PDGF-regulated differentiation circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology for biological processes (Huang et al., 2009) enriched in genes differentially regulated by PDGF and FGF at 4 hr revealed an FGF-mediated proliferation program and a PDGF-regulated differentiation circuit (Figure 5A, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "dc9b9758-b6d0-4df3-963a-17cee83dd573",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C77",
+      "claim": "There is enrichment for regulators of Wnt signaling in the 4-hr PDGF condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observed enrichment for regulators of Wnt signaling in the 4-hr PDGF condition, consistent with reports of antagonism between Wnt and FGF as regulating the balance between differentiation and proliferation in skeletal development (Mansukhani et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene ontology analysis and cited literature (Mansukhani et al., 2005).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "5929b1d1-30dc-4e2b-8452-3d4b25503b73",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C78",
+      "claim": "Id1, Id2, Id3, Mef2c, and Atoh8 are differentiation genes regulated by PDGF treatment at 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We further identified a set of differentiation genes (Id1, Id2, Id3, Mef2c, Atoh8) in the PPI network constructed from genes regulated by PDGF treatment at 4 hr (Figure 5\u2014figure supplement 1A) and confirmed these genes by qPCR (Figure 5\u2014figure supplement 1A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PPI network analysis and qPCR validation shown in Figure 5\u2014figure supplement 1A and 1A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "3b9146a1-ceca-4016-8b50-625058e50987",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C79",
+      "claim": "The Id genes are required for craniofacial skeleton development in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with PDGF directing a skeletal differentiation program, the Id genes (Maeda et al., 2004; Kee and Bronner-Fraser, 2005) and Mef2c (Verzi et al., 2007) are required for craniofacial skeleton development in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published work (Maeda et al., 2004; Kee and Bronner-Fraser, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "a36dcf83-dd0a-45ed-86eb-7103f3903918",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C80",
+      "claim": "Mef2c is required for craniofacial skeleton development in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with PDGF directing a skeletal differentiation program, the Id genes (Maeda et al., 2004; Kee and Bronner-Fraser, 2005) and Mef2c (Verzi et al., 2007) are required for craniofacial skeleton development in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work (Verzi et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "e08b606c-e736-49b7-8cf5-7de2592ce870",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C81",
+      "claim": "Abnormal craniofacial bone development is the most enriched phenotype in the 4-hr PDGF target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mouse genome informatics mammalian phenotype analysis to determine overrepresented mouse phenotypes (Chen et al., 2013) identifies abnormal craniofacial bone development as the most enriched phenotype in the 4-hr PDGF target genes (Figure 5\u2014figure supplement 1B, B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mammalian phenotype analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "c2d8a59b-6df9-4043-bfbf-214f92cf8348",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C82",
+      "claim": "Many proliferation genes are reduced upon MEK inhibition and induced upon PI3K inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many proliferation genes are reduced upon MEK inhibition and induced upon PI3K inhibition, while the opposite is apparent for differentiation genes, consistent with the FGF-ERK and PDGF-PI3K dependencies observed globally at the transcriptional level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "178292ff-240b-4232-a1f0-1483d8e48d02",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C83",
+      "claim": "Differentiation genes are induced upon MEK inhibition and reduced upon PI3K inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many proliferation genes are reduced upon MEK inhibition and induced upon PI3K inhibition, while the opposite is apparent for differentiation genes, consistent with the FGF-ERK and PDGF-PI3K dependencies observed globally at the transcriptional level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "85b1b287-67df-4b1a-bcd8-f9498b332988",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C84",
+      "claim": "FGF induces a significantly more robust proliferation response than PDGF in MEPMs.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly assay cell proliferation, we performed BrdU labeling at 4 hr following either FGF or PDGF treatment in E13.5 MEPMs; while PDGF induces a modest response compared to serum-starved cells, we found a significantly greater proliferative response to FGF (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by BrdU labeling data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "1b9221e9-5a95-4cf9-85ad-b068bad613e3",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C85",
+      "claim": "PDGF induces a modest proliferation response compared to serum-starved cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly assay cell proliferation, we performed BrdU labeling at 4 hr following either FGF or PDGF treatment in E13.5 MEPMs; while PDGF induces a modest response compared to serum-starved cells, we found a significantly greater proliferative response to FGF (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by BrdU labeling data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "a43f66ba-08c5-4fca-90fa-902c9f91e9e3",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C86",
+      "claim": "PDGF, but not FGF, treatment promotes alkaline phosphatase (osteoblast marker) positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PDGF-treated MEPMs display a robust AP response, while FGF-treated cells show a striking lack of AP positive cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by alkaline phosphatase staining shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "bce2a34c-7d6d-4a57-9d92-303b041540cd",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C87",
+      "claim": "MEK/ERK inhibition increases AP staining.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MEK/ERK inhibition increases AP staining, but PI3K inhibition represses osteoblast differentiation (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by alkaline phosphatase staining with inhibitors shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "f692c886-ac2e-4b09-9357-7f0e16ab78c0",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C88",
+      "claim": "PI3K inhibition represses osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MEK/ERK inhibition increases AP staining, but PI3K inhibition represses osteoblast differentiation (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by alkaline phosphatase staining with inhibitors shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "2ad4bde7-b001-49a3-9d9a-ccb84fb2fd35",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C89",
+      "claim": "FGF drives cell proliferation and represses cell differentiation in a MEK/ERK-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments suggest the following model: FGF drives cell proliferation and represses cell differentiation in a MEK/ERK-dependent manner, while PDGF facilitates cell differentiation, at the expense of reduced proliferation, in a PI3K-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from multiple experimental results including BrdU labeling, AP staining, and pathway inhibitor experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "739848ba-5c4d-47e8-9321-d1cd55c03eee",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C90",
+      "claim": "PDGF facilitates cell differentiation, at the expense of reduced proliferation, in a PI3K-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments suggest the following model: FGF drives cell proliferation and represses cell differentiation in a MEK/ERK-dependent manner, while PDGF facilitates cell differentiation, at the expense of reduced proliferation, in a PI3K-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from multiple experimental results including BrdU labeling, AP staining, and pathway inhibitor experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "606d1362-c542-43d1-b08d-532af53b214b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C91",
+      "claim": "Fgfr1 and Dusp6 are co-expressed in the anterior palatal mesenchyme at E13.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Dusp1 and Dusp10 are primarily epithelial, Fgfr1 and Dusp6 are co-expressed in the anterior palatal mesenchyme, consistent with previous work implicating ERK in proliferation within this region (Bush and Soriano, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "49f39556-7add-4f61-bcb8-290ed1e25038",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C92",
+      "claim": "pAkt and AP domains co-localize in the middle to posterior secondary palate at E13.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole mount IHC for pAkt at E13.5 demonstrates expression restricted to the developing upper lip and middle to posterior palate, overlapping with AP in these structures (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole mount IHC shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "9c4b4de7-8cb0-45c7-95af-ac07a9202d78",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C93",
+      "claim": "pAkt and AP domains co-localize in the developing upper lip at E13.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole mount IHC for pAkt at E13.5 demonstrates expression restricted to the developing upper lip and middle to posterior palate, overlapping with AP in these structures (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole mount IHC shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "b4970f49-f2f4-41d5-87e6-6005619a37c3",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C94",
+      "claim": "The domain of Runx2 expression overlaps with Pdgfra, Id1, and Id3 expression in the middle to posterior palate at E13.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We further assayed the pattern of Runx2 expression (Figure 6B) in comparison to Pdgfra, Id1, and Id3 in the E13.5 palate (Figure 6B'), finding shared domains of expression and exclusion in the palate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 6B and 6B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "7f863ac5-0d77-4bd8-8004-d4e64c7cc32b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C95",
+      "claim": "Neural crest conditional Fgfr1 mutants exhibit increased AP staining in the developing midface at E14.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Frontal sections from neural crest conditional Fgfr1 mutants (Wnt1-Cre; Fgfr1fl/fl) exhibit increased AP staining in the developing midface at E14.5, supporting an in vivo role for FGF-mediated repression of osteoblast differentiation (red arrowhead) (n = 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AP staining on Fgfr1 mutant sections shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "b2bf55cc-6628-4fe9-bc05-d1c44ed0dbc4",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C96",
+      "claim": "50% of FGF target genes at 4 hr are MEK/ERK dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF drives cell proliferation and represses cell differentiation in an ERK-dependent manner, consistent with a greater percentage of the FGF target genes being MEK/ERK dependent (50%) than PI3K dependent (20%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "8b2da170-29ca-44d1-b7be-d7f4180fa58b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C97",
+      "claim": "20% of FGF target genes at 4 hr are PI3K dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF drives cell proliferation and represses cell differentiation in an ERK-dependent manner, consistent with a greater percentage of the FGF target genes being MEK/ERK dependent (50%) than PI3K dependent (20%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "e7127504-f98a-4a8e-8a20-3f499cd7b390",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C98",
+      "claim": "30% of PDGF target genes at 4 hr are PI3K dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PDGF promotes cell differentiation in a PI3K-dependent manner, and PDGF target genes show greater PI3K dependence (30%) than MEK/ERK dependence (10%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "c9e5ebe8-bccc-4e57-ac97-f954b46f1be8",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C99",
+      "claim": "10% of PDGF target genes at 4 hr are MEK/ERK dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PDGF promotes cell differentiation in a PI3K-dependent manner, and PDGF target genes show greater PI3K dependence (30%) than MEK/ERK dependence (10%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data with pathway inhibitors as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "fc7f23af-1f98-49f7-93c8-b57b00319fed",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C100",
+      "claim": "Inhibition of PI3K signaling leads to an FGF specific induction of pERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of PI3K signaling leads to an FGF specific induction of pERK (green) and consequently increased transcription of ERK targets such as Fos, Fosb, and Junb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot and qPCR data as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "e43f606f-a292-4431-8289-3dce36bd89a3",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C101",
+      "claim": "PI3K inhibition leads to increased transcription of ERK targets such as Fos, Fosb, and Junb downstream of FGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of PI3K signaling leads to an FGF specific induction of pERK (green) and consequently increased transcription of ERK targets such as Fos, Fosb, and Junb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "c23e8f61-5b4b-4e4f-b341-685f19827db8",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C102",
+      "claim": "MEK/ERK inhibition leads to pJNK induction.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, MEK/ERK inhibition leads to pJNK induction (orange) and transcription of Jun, indicating multiple crosstalk mechanisms across different intracellular pathways in response to RTK activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "0ee5aaa8-073a-49d3-87d3-1a617d9c8680",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C103",
+      "claim": "MEK/ERK inhibition leads to transcription of Jun.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, MEK/ERK inhibition leads to pJNK induction (orange) and transcription of Jun, indicating multiple crosstalk mechanisms across different intracellular pathways in response to RTK activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data as summarized in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "65dd539a-2961-44ed-8315-cd7f9adae25d",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "claim_id": "C104",
+      "claim": "There are multiple crosstalk mechanisms across different intracellular pathways in response to RTK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, MEK/ERK inhibition leads to pJNK induction (orange) and transcription of Jun, indicating multiple crosstalk mechanisms across different intracellular pathways in response to RTK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation of compensatory pathway activation upon inhibitor treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PDGF and FGF induce similar early transcriptional responses at 1 hour but divergent late responses at 4 hours. At 1 hour, only a small number of genes are differentially regulated between PDGF and FGF (high correlation r\u00b2=0.8173), with PDGF-regulated genes forming a subset of FGF-regulated genes. By 4 hours, the responses are divergent (low correlation r\u00b2=0.2881), confirmed by PCA showing 1-hour samples clustering together while 4-hour samples separate distinctly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C25-C31 provide converging evidence from RNA-seq correlation analysis, PCA, and differential expression analysis. The quantitative correlation coefficients, PCA clustering patterns, and gene overlap data consistently support both the early similarity and late divergence. The statistical thresholds (q<0.1) and multiple analytical approaches strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "f0b06f63-fa9b-4133-9ebf-071d268957d3",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FGF induces quantitatively stronger responses than PDGF in both gene expression and signaling. Many shared target genes (Fos, Fosb, Jun, Junb) show greater magnitude and longer duration of induction following FGF treatment. At the protein level, FGF-induced pERK displays higher magnitude and longer duration (up to 6 hours) compared to PDGF, while both growth factors induce similar pAkt patterns with slightly greater PDGF-pAkt magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 are supported by multiple complementary datasets: RNA-seq showing differential gene expression magnitudes, qPCR validation of key transcription factors, and Western blot time courses demonstrating differential pERK and pAkt kinetics. The dose-response experiments (C39) confirm the kinetic differences are not due to ligand concentration. The convergence of transcriptional and protein-level data strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "75656b47-6ebd-43c8-9699-92f4c64001cd",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FGF and PDGF responses show differential dependence on intracellular signaling pathways. FGF target genes are predominantly MEK/ERK dependent (52% at 4 hours) with lower PI3K dependence (22%), while PDGF responsive genes show the opposite pattern with greater PI3K dependence (28%) than MEK/ERK dependence (9%). This differential pathway usage is consistent across time points and mirrors reported signaling requirements for each RTK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C48-C53 are supported by RNA-seq experiments with specific pathway inhibitors (PD325901 for MEK, LY294002 for PI3K). The quantitative percentages are derived from systematic analysis of differentially expressed genes under inhibitor treatment. The threshold-independent nature of these relationships (Figure 3\u2014supplement 1C,D') strengthens the conclusion. However, the specific percentages vary slightly between claims (C50-53 vs C96-99), suggesting some analytical variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "046f3833-2f38-4305-b3fd-b019024256e9",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MEK and PI3K pathways regulate both gene induction and repression in a growth factor-specific manner. MEK inhibition increases expression of PDGF targets but not FGF targets, while PI3K inhibition increases expression of FGF responsive genes. This bidirectional regulation suggests the FGF-ERK and PDGF-PI3K relationships are important for both positive and negative gene regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by RNA-seq data showing that pathway inhibition can both decrease and increase gene expression depending on the growth factor context. The observation that inhibitors can induce rather than only repress gene expression is unexpected but well-documented in the volcano plots (Figure 3). The inference in C56 is reasonable given the bidirectional effects, though the mechanistic basis for repression requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "c26527be-d0a7-45da-9f01-0e2a4611a576",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The delayed transcriptional response provides differential feedback control for PDGF and FGF signaling. Both growth factors induce DUSPs (negative regulators) at 1 hour, but FGF uniquely induces kinases and GTPase regulators at 4 hours. Cycloheximide experiments reveal opposite effects: prolonging PDGF-pERK duration (consistent with DUSP-mediated negative feedback) but shortening FGF-pERK duration, suggesting a positive feedforward loop involving kinases and GEFs. PKC is a key hub in the FGF network, with PKC inhibition decreasing both initial and sustained FGF-pERK activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 are supported by gene ontology analysis, cycloheximide experiments, PPI network analysis, and PKC inhibitor studies. The cycloheximide experiments provide functional evidence for the differential feedback mechanisms. The PKC inhibitor data (C47) supports the network analysis predictions (C46). However, the positive feedforward loop inference (C45) is based primarily on the cycloheximide result and gene expression data; direct mechanistic validation of how induced kinases/GEFs sustain pERK would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pathway crosstalk is extensive, particularly downstream of FGF signaling. At 1 hour, many shared target genes show similar ERK or PI3K dependence, constituting a core pathway-specific gene set, but overlap between PI3K- and ERK-dependent genes indicates plasticity. At 4 hours, FGF shows striking crosstalk: 77% of FGF-PI3K targets are also repressed by MEK inhibition, and 23% of FGF-ERK targets are induced by PI3K inhibition, indicating the effect of PI3K inhibition downstream of FGF involves crosstalk with ERK signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 are supported by systematic comparison of MEK and PI3K inhibitor effects in RNA-seq experiments. The quantitative overlap percentages (C62, C63) are derived from direct comparison of inhibitor effects. The inference of crosstalk (C64) is well-supported by the extensive overlap in gene regulation patterns. The Venn diagrams (Figure 3D, D', E, E') provide clear visualization of these relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "d9a4267f-bf09-4f60-974b-d457c8503744",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inhibition of one signaling pathway leads to compensatory activation of alternative pathways. MEK inhibition with PD325901 induces pJNK downstream of both PDGF and FGF, while PI3K inhibition with LY294002 specifically increases FGF-mediated pERK but not PDGF-pERK. At the transcriptional level, this manifests as 'superinduction' of target genes: Jun is superinduced by MEK inhibition downstream of both RTKs, while Fos, Fosb, and Junb are superinduced by PI3K inhibition specifically downstream of FGF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C74 are supported by Western blot dose-response experiments, quantification at RNA-seq doses, and qPCR validation. The Western blots clearly show compensatory pathway activation (pJNK induction with MEK inhibition, pERK induction with PI3K inhibition downstream of FGF). The qPCR data (C73, C74) confirm that these signaling changes translate to transcriptional responses. The growth factor-specific nature of PI3K inhibition effects (C69-C72) is well-documented and consistent with the differential pathway dependencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "770e7fec-31e3-4481-8138-7046d38362c6",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FGF and PDGF drive distinct cellular outcomes: FGF promotes MEK/ERK-dependent proliferation while PDGF favors PI3K-dependent differentiation. Gene ontology analysis reveals FGF-mediated proliferation programs and PDGF-regulated differentiation circuits including skeletal development genes (Id1, Id2, Id3, Mef2c, Atoh8). Functionally, FGF induces significantly greater BrdU incorporation than PDGF, while PDGF uniquely promotes alkaline phosphatase-positive osteoblast differentiation. MEK/ERK inhibition increases differentiation (AP staining) but decreases proliferation, while PI3K inhibition has opposite effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C75-C90 are supported by converging evidence from gene ontology analysis, BrdU proliferation assays, alkaline phosphatase differentiation assays, and pathway inhibitor experiments. The functional assays directly demonstrate the predicted cellular outcomes from the transcriptional data. The pathway inhibitor effects on both proliferation and differentiation are consistent with the proposed model. However, the model (C89-C90) represents an inference that integrates multiple observations; while well-supported, it simplifies complex biology and alternative mechanisms may contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "bbb20253-e466-4862-a457-1249c13b409b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PDGF-PI3K signaling and osteoblast differentiation show overlapping spatial domains in vivo during palatogenesis. At E13.5, pAkt and alkaline phosphatase domains co-localize in the middle to posterior secondary palate and developing upper lip. The osteoblast marker Runx2 shows overlapping expression with Pdgfra, Id1, and Id3 in the middle to posterior palate, suggesting the differentiation circuit is conserved in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C10, C92-C94 are supported by whole mount immunohistochemistry for pAkt and AP, and in situ hybridization for Runx2, Pdgfra, Id1, and Id3. The spatial co-localization of PI3K activity (pAkt), differentiation markers (AP, Runx2), and PDGF target genes (Id1, Id3) provides strong correlative evidence. However, the inference that this represents a conserved differentiation circuit (C10) requires caution\u2014spatial correlation does not prove functional causation, and other factors may contribute to the observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "ccc25225-fda8-423a-999d-2a4ddba8c356",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Neural crest conditional Fgfr1 mutants exhibit increased osteogenesis in the developing midface. At E14.5, Fgfr1 conditional mutants (Wnt1-Cre; Fgfr1fl/fl) show increased alkaline phosphatase staining in the maxillary region, supporting an in vivo role for FGF-mediated repression of osteoblast differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C95 are supported by alkaline phosphatase staining on frontal sections from Fgfr1 conditional mutants (n=3). The increased AP staining is consistent with the in vitro finding that FGF represses differentiation. However, the interpretation requires caution: (1) the sample size is small (n=3), (2) Fgfr1 mutants have complex phenotypes including proliferation defects and altered BMP signaling (as noted in Discussion), and (3) increased AP could reflect altered cell fate specification, delayed development, or compensatory mechanisms rather than simply loss of FGF-mediated repression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "b92d3bfd-4867-4ecd-88d4-44df6c19b228",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MEPMs are a suitable system for studying RTK responses, as both PDGF and FGF induce robust pERK responses at 15 minutes, and MEPMs express both PDGFR\u03b1 and FGFR1 at the protein level in all cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by Western blot data showing pERK induction and fluorescence imaging of receptor reporter mice (Pdgfra-GFP and Fgfr1-CFP). The uniform receptor expression confirms MEPMs are a homogeneous population for studying these RTK responses. This validation is important for interpreting the RNA-seq results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "3b59951a-82cd-4ef0-87a7-e63c39ee06c2",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genes induced at 1 hour downstream of both PDGF and FGF show enrichment for transcription factors and MAP kinase phosphatases, similar to previous descriptions of RTK activation responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by gene ontology analysis (p<0.001) and is consistent with established RTK biology. This represents a confirmatory finding that validates the experimental system and provides context for the novel findings regarding differential responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "64926949-eb39-487d-9249-f12c9de67110",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Genes enriched following FGF treatment at 4 hours include protein kinases and GTPase regulators that may function as activators of Ras to promote MEK/ERK signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by gene ontology analysis showing enrichment of these functional categories. The inference about Ras activation is reasonable given the known roles of GTPase regulators, though direct functional validation would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "1a9dcd9c-d873-496f-b6d0-1cfccfcb3ba4",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PDGF target genes are enriched for regulators of craniofacial skeleton development. The Id genes and Mef2c are required for craniofacial skeleton development in vivo, and abnormal craniofacial bone development is the most enriched phenotype in 4-hour PDGF target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by citations to published genetic studies and mammalian phenotype analysis of PDGF target genes. This provides biological context linking the in vitro transcriptional findings to known developmental functions, though it represents integration of prior knowledge rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "f8945e8f-d01a-4edc-af76-9b61b8c76d0c",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Fgfr1 and Dusp6 are co-expressed in the anterior palatal mesenchyme at E13.5, consistent with previous work implicating ERK in proliferation within this region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is supported by in situ hybridization data and is consistent with prior work. However, the authors note that cell proliferation is relatively uniform along the anterior-posterior axis at E13.5, complicating assignment of the expression patterns to a spatially restricted proliferation program. This represents a correlative observation that requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "2c1f2cba-5f9e-44b6-ba4e-07909406af27",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Receptor tyrosine kinases signal through shared intracellular pathways yet mediate distinct outcomes across many cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a well-established principle in RTK biology supported by extensive prior literature. It serves as the premise and motivation for the study rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "05fc26ba-758f-4377-ab63-cb4b3d749918",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior genetic studies in mice and humans establish the importance of PDGF and FGF signaling in craniofacial development. Loss of Pdgfra, Pdgfa/c, or Fgfr1 in neural crest results in facial clefting. PI3K is implicated as the main effector of PDGFR\u03b1 signaling, while ERK is a key effector downstream of FGF. Mutations in both pathways are linked to human craniofacial syndromes, and chimeric receptor experiments suggest these RTKs transmit biologically distinct signals in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 are supported by citations to published literature. These represent established prior knowledge that provides context and motivation for the current study. The citations appear appropriate, though the inference that PI3K is the 'main' effector (C14) and that receptors transmit 'biologically distinct' signals (C21) represent interpretations of prior work that may oversimplify complex biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    },
+    {
+      "id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b",
+      "content_id": "9da0de1e-5300-4314-9c95-18a7d60f5810",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Summary model integrating pathway dependencies and crosstalk mechanisms. FGF target genes are 50% MEK/ERK dependent and 20% PI3K dependent, while PDGF target genes are 30% PI3K dependent and 10% MEK/ERK dependent. PI3K inhibition leads to FGF-specific pERK induction and increased transcription of ERK targets (Fos, Fosb, Junb), while MEK/ERK inhibition leads to pJNK induction and Jun transcription, indicating multiple crosstalk mechanisms across intracellular pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C104 represent a summary model integrating findings from multiple experiments. The percentages differ slightly from earlier claims (C50-53), suggesting some analytical variability or different inclusion criteria. The model is well-supported by the Western blot and qPCR data showing compensatory pathway activation. However, the inference of 'multiple crosstalk mechanisms' (C104) is reasonable but somewhat vague\u2014the specific molecular mechanisms underlying the crosstalk are not fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:30.264831Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9a1ff3e3-ab14-4fdd-8b8b-c8c11776f60a",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "ba5fb47f-3fd9-4491-b0ab-537073c465cf",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "de179060-d371-4b68-8b4f-90a48f73295a",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "38818cde-28af-4b0d-ac7a-98dd4edbe69a",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "2eb4d92a-2604-4d62-b794-a6e66cbdfc29",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "82c06cf0-112d-45a5-a85c-b6b0e88963ff",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "98dc7155-5091-4aa1-b615-f371aff3340c",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "2569d1e1-bcc3-4887-ad9e-33668070ff97",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "67586d0c-fdb0-4608-9a1b-23c46fe196ee",
+      "result_id": "a0c2e2a6-1eb8-4e90-a513-2032d0b40980"
+    },
+    {
+      "claim_id": "5af9573d-6b6d-4b42-bcb3-b2f85788cb8d",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "4664f74d-4136-46a0-8a35-d183b9ed6aa2",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "659d2a58-6300-4ff5-a3a7-8d36f445d9c1",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "30ecd3ff-cd9f-49f4-b668-03834ab2334f",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "fb1d44b6-4ae8-4999-bc32-7e64ee29c279",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "39b233a3-70b6-4fb2-8e32-d1beb1f3b59d",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "5627677c-84b0-4ad7-8145-79dc225777a9",
+      "result_id": "f0b06f63-fa9b-4133-9ebf-071d268957d3"
+    },
+    {
+      "claim_id": "25bb7048-e7b1-4d60-b04a-77aacfac1f9d",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "1e9bc468-55a2-40e1-bb7a-511239b98102",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "3c7b4ccf-1ae0-4e97-a057-0c9efac8b64d",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "ed153328-f670-419e-a110-e1391f757fee",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "4e455400-3b39-4a73-ac54-0dc2bac78786",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "58a4927d-dd96-419c-8cdd-335bddc2faa0",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "62e9e94e-723d-4a2a-a32f-64b121b84dcf",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "93877a4a-f404-4858-ad5c-62c79fc438ca",
+      "result_id": "75656b47-6ebd-43c8-9699-92f4c64001cd"
+    },
+    {
+      "claim_id": "6af949a4-3d92-426d-9a1a-03fc4dba5291",
+      "result_id": "046f3833-2f38-4305-b3fd-b019024256e9"
+    },
+    {
+      "claim_id": "4be7205f-44bf-4aaa-aac1-1c2622db2e7b",
+      "result_id": "046f3833-2f38-4305-b3fd-b019024256e9"
+    },
+    {
+      "claim_id": "1fe0033f-de49-46f9-9957-3adb29f8a628",
+      "result_id": "046f3833-2f38-4305-b3fd-b019024256e9"
+    },
+    {
+      "claim_id": "d0b0fb51-6e2d-433a-819c-0597c8a48e6e",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "6b6c4472-dc06-4c85-ad5d-3e0b2a0da626",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "4f07b114-9f77-4c78-9a49-9192a3c1740d",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "eabf35b4-e07a-4db3-a67c-ab050c36a5d1",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "ca5665ee-5146-4c57-adfe-ddf4b390cd53",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "840e6c13-25c6-4778-a75f-6c946bbae580",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "b40eb08e-8193-4ba3-bf47-86e20ec4c0f6",
+      "result_id": "c26527be-d0a7-45da-9f01-0e2a4611a576"
+    },
+    {
+      "claim_id": "6f301909-5f35-4383-92ac-b274759f0c49",
+      "result_id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67"
+    },
+    {
+      "claim_id": "814def3f-a3a9-4cdb-b984-bf412a5f24b4",
+      "result_id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67"
+    },
+    {
+      "claim_id": "77296408-199c-42f1-b550-b7048b8d6a39",
+      "result_id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67"
+    },
+    {
+      "claim_id": "a71162af-b945-4d64-9a83-8aac3325309f",
+      "result_id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67"
+    },
+    {
+      "claim_id": "2a3946b2-f6d4-49ce-afb0-b3178bd267f3",
+      "result_id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67"
+    },
+    {
+      "claim_id": "42d75867-1c46-418a-aad6-1ac918b4df38",
+      "result_id": "4a6b7b56-5940-4db3-a7f5-54cdc1fd6e67"
+    },
+    {
+      "claim_id": "4c6cbe09-0f8a-499b-94a1-ec06588320d8",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "f87eb915-8c1b-4757-957f-e99efafbb98a",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "d6b2d183-bd2a-4d3c-b448-d5cf9939c585",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "4ece0e66-80c3-4d4f-9269-31a5100891ba",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "9068036a-3e79-40e0-b2ec-760c9727f50d",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "fb5722d7-a610-43d2-bb8c-e69b6335366b",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "43d55732-dd97-493a-acf9-8233cf920769",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "4a4e8fae-f87b-45f4-afd4-b77c76550484",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "4edea808-50de-414d-8dcd-6e3f02523e4d",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "025c223a-1392-46f1-830c-6710680ef456",
+      "result_id": "d9a4267f-bf09-4f60-974b-d457c8503744"
+    },
+    {
+      "claim_id": "4fb2f328-3fd9-4a47-a30a-8158e2f25509",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "ef566e4e-d053-471a-a201-d816a7d11c97",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "9f724a8d-0aa8-4e13-8cbd-c0d61867923f",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "0b1c2104-cb54-4f97-bee4-f3987db163a0",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "dc9b9758-b6d0-4df3-963a-17cee83dd573",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "5929b1d1-30dc-4e2b-8452-3d4b25503b73",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "c2d8a59b-6df9-4043-bfbf-214f92cf8348",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "178292ff-240b-4232-a1f0-1483d8e48d02",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "85b1b287-67df-4b1a-bcd8-f9498b332988",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "1b9221e9-5a95-4cf9-85ad-b068bad613e3",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "a43f66ba-08c5-4fca-90fa-902c9f91e9e3",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "bce2a34c-7d6d-4a57-9d92-303b041540cd",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "f692c886-ac2e-4b09-9357-7f0e16ab78c0",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "2ad4bde7-b001-49a3-9d9a-ccb84fb2fd35",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "739848ba-5c4d-47e8-9321-d1cd55c03eee",
+      "result_id": "770e7fec-31e3-4481-8138-7046d38362c6"
+    },
+    {
+      "claim_id": "40a7635b-7c9e-4cb6-adf2-48be1dc7e25a",
+      "result_id": "bbb20253-e466-4862-a457-1249c13b409b"
+    },
+    {
+      "claim_id": "ceaaf4dc-97c7-407b-81d2-0b09ca746a64",
+      "result_id": "bbb20253-e466-4862-a457-1249c13b409b"
+    },
+    {
+      "claim_id": "49f39556-7add-4f61-bcb8-290ed1e25038",
+      "result_id": "bbb20253-e466-4862-a457-1249c13b409b"
+    },
+    {
+      "claim_id": "9c4b4de7-8cb0-45c7-95af-ac07a9202d78",
+      "result_id": "bbb20253-e466-4862-a457-1249c13b409b"
+    },
+    {
+      "claim_id": "b4970f49-f2f4-41d5-87e6-6005619a37c3",
+      "result_id": "bbb20253-e466-4862-a457-1249c13b409b"
+    },
+    {
+      "claim_id": "905e266c-1646-43ba-9c68-6c0a7f50858d",
+      "result_id": "ccc25225-fda8-423a-999d-2a4ddba8c356"
+    },
+    {
+      "claim_id": "7f863ac5-0d77-4bd8-8004-d4e64c7cc32b",
+      "result_id": "ccc25225-fda8-423a-999d-2a4ddba8c356"
+    },
+    {
+      "claim_id": "dff011f9-8afb-4d2c-8b7f-01f46dae7125",
+      "result_id": "b92d3bfd-4867-4ecd-88d4-44df6c19b228"
+    },
+    {
+      "claim_id": "07624f98-a0a3-4972-b73f-8f7f7840d05a",
+      "result_id": "b92d3bfd-4867-4ecd-88d4-44df6c19b228"
+    },
+    {
+      "claim_id": "4b7a0483-6b8f-40f8-ab40-b9f886b183fa",
+      "result_id": "b92d3bfd-4867-4ecd-88d4-44df6c19b228"
+    },
+    {
+      "claim_id": "a023f978-c76d-4707-8ee3-4c38a46a5e4e",
+      "result_id": "3b59951a-82cd-4ef0-87a7-e63c39ee06c2"
+    },
+    {
+      "claim_id": "39bd0245-02a9-488b-8de2-726bafe8c702",
+      "result_id": "64926949-eb39-487d-9249-f12c9de67110"
+    },
+    {
+      "claim_id": "3b9146a1-ceca-4016-8b50-625058e50987",
+      "result_id": "1a9dcd9c-d873-496f-b6d0-1cfccfcb3ba4"
+    },
+    {
+      "claim_id": "a36dcf83-dd0a-45ed-86eb-7103f3903918",
+      "result_id": "1a9dcd9c-d873-496f-b6d0-1cfccfcb3ba4"
+    },
+    {
+      "claim_id": "e08b606c-e736-49b7-8cf5-7de2592ce870",
+      "result_id": "1a9dcd9c-d873-496f-b6d0-1cfccfcb3ba4"
+    },
+    {
+      "claim_id": "606d1362-c542-43d1-b08d-532af53b214b",
+      "result_id": "f8945e8f-d01a-4edc-af76-9b61b8c76d0c"
+    },
+    {
+      "claim_id": "e1f28472-1673-4ca4-b8d7-bd7a9fbb6dd9",
+      "result_id": "2c1f2cba-5f9e-44b6-ba4e-07909406af27"
+    },
+    {
+      "claim_id": "32a1dd6e-0319-481b-a299-8ac39737234e",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "4e49c9bc-52f3-49d2-8808-a20a30bceff8",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "a98fce5d-dbf1-4985-be36-f7d37eb3b47a",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "8d38b657-e75a-4319-802b-52e0f66baf7b",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "049427a3-3c15-4cef-857b-f3eabdb5365d",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "81d7f30a-b317-4067-8d3e-5a9a99d31808",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "648a3ccb-97ef-4ae2-bab5-1d3ea38e39d4",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "55e0e6b3-4ff9-4cec-8422-364c19112be7",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "6f5d3080-6908-46f8-b10f-d04807e9bc7b",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "cf7e7e35-5b38-4196-8524-a1d21c14f5ec",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "d4a32d13-b4d7-4859-9884-64b20b8d266a",
+      "result_id": "05fc26ba-758f-4377-ab63-cb4b3d749918"
+    },
+    {
+      "claim_id": "b2bf55cc-6628-4fe9-bc05-d1c44ed0dbc4",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "8b2da170-29ca-44d1-b7be-d7f4180fa58b",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "e7127504-f98a-4a8e-8a20-3f499cd7b390",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "c9e5ebe8-bccc-4e57-ac97-f954b46f1be8",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "fc7f23af-1f98-49f7-93c8-b57b00319fed",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "e43f606f-a292-4431-8289-3dce36bd89a3",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "c23e8f61-5b4b-4e4f-b341-685f19827db8",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "0ee5aaa8-073a-49d3-87d3-1a617d9c8680",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    },
+    {
+      "claim_id": "65dd539a-2961-44ed-8315-cd7f9adae25d",
+      "result_id": "9044d6de-7e2f-4916-8d78-29dc5a53fb3b"
+    }
+  ],
+  "comparisons": []
+}

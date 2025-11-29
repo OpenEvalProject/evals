@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9"
+    ],
+    "result": "LIMK1 contains a conserved CC palmitoyl-motif at Cys7/Cys8 that is palmitoylated in neurons. Palmitoylation increases during spine development (DIV8-20) and is robust in adult rat forebrain. The palmitoylation inhibitor 2-Bromopalmitate reduces LIMK1 palmitoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C9 provide converging evidence from bioinformatics (C1), ABE assays in HEK cells (C2), developmental time course in neurons (C3), adult brain tissue (C4), and pharmacological inhibition (C9). The ABE assay is the gold standard for detecting palmitoylation, and the CCSS mutant serves as an appropriate negative control. The temporal correlation with spine development is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "Palmitoylation targets LIMK1 to dendritic spines and anchors it there by limiting diffusion. Wild-type LIMK1 is enriched in spines while CCSS-LIMK1 is not. FRAP experiments show that CCSS mutation decreases the stable fraction of LIMK1 in spines. Both genetic mutation and pharmacological inhibition with 2-Br produce similar effects on spine targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are well-supported by complementary approaches: immunocytochemistry (C5), FRAP analysis (C6-C7), and pharmacological validation (C10-C11). The convergence of genetic and pharmacological approaches strengthens the conclusion. However, C8 notes that protein-protein interactions also contribute to LIMK1 anchoring, suggesting palmitoylation is necessary but not solely sufficient. The FRAP data convincingly demonstrate reduced anchoring of CCSS-LIMK1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "LIMK1's N-terminal 15 amino acids containing the CC palmitoyl-motif are necessary and sufficient for spine targeting. Deletion mutants lacking kinase and PDZ domains still localize to spines if they retain the N-terminus. Single cysteine mutants (C7S, C8S) and lipid-modified variants (Myr-CCSS, Myr-SC, Myr-CS) fail to target to spines, indicating that dual palmitoylation at the intact CC motif is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide systematic structure-function analysis. The minimal motif experiment (C13) is particularly compelling, showing that 15 amino acids are sufficient to target GFP to spines. The failure of single cysteine mutants (C14) and various lipid-modified constructs (C15-C16) to rescue spine targeting strongly supports the requirement for dual palmitoylation. This is a rigorous dissection of the targeting determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C77"
+    ],
+    "result": "LIMK1 is present in PSD fractions while LIMK2 is absent, despite 70% kinase domain identity. A chimeric protein with LIMK1's N-terminal 15 amino acids fused to LIMK2 targets LIMK2 to spines, demonstrating that LIMK1's palmitoyl-motif accounts for differential localization and potentially explains why LIMK1 loss causes spine-specific phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C77 provide biochemical fractionation data (C18-C19) and a gain-of-function chimera experiment (C20) that elegantly demonstrates sufficiency of the LIMK1 motif. The high sequence similarity between LIMK1 and LIMK2 kinase domains (C77) makes the differential localization particularly striking and strengthens the conclusion that the N-terminal motif is the key determinant. This explains a long-standing puzzle in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C37"
+    ],
+    "result": "Loss of palmitoyl-LIMK1 impairs spine actin turnover. LIMK1 knockdown increases the stable fraction of GFP-actin in spines without affecting recovery kinetics. This phenotype is rescued by wild-type LIMK1 but not CCSS-LIMK1. Acute loss does not affect spine number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 and C37 describe a well-controlled shRNA knockdown/rescue experiment with appropriate controls (C22-C24). The FRAP analysis of GFP-actin (C25-C28) uses two independent analytical methods that give consistent results (C26). The rescue specificity (C27) is compelling. However, the interpretation (C29-C30) is counterintuitive\u2014LIMK1 loss increases stable actin rather than decreasing it. The authors acknowledge this in the Discussion but the molecular mechanism remains unclear. The result is solid but mechanistic understanding is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Palmitoyl-LIMK1 is required for activity-dependent spine enlargement. Glutamate uncaging induces spine enlargement in control neurons but this is significantly attenuated in LIMK1 knockdown neurons. The phenotype is rescued by wild-type LIMK1 but not CCSS-LIMK1. LIMK1 knockdown also reduces spine growth success and increases spine shrinkage frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 and C71-C76 describe sophisticated two-photon glutamate uncaging experiments in organotypic slices. The structural plasticity data (C31, C33, C35) are complemented by electrophysiological measurements (C32, C75-C76) showing coordinated functional changes. The rescue specificity (C35) is strong evidence for palmitoylation-dependence. The detailed analysis of individual spine responses (C71-C74) adds rigor. Statistical comparisons use appropriate non-parametric tests. This is a technically demanding set of experiments executed well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Prolonged LIMK1 knockdown (5 days) significantly reduces dendritic spine density and excitatory synapse number. Both deficits are rescued by wild-type LIMK1 but not CCSS-LIMK1, suggesting that prolonged loss of palmitoyl-LIMK1 leads to spine instability and synapse loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 show time-dependent effects of LIMK1 loss. The distinction between acute (C37, no effect on spine number) and chronic (C38, reduced spine density) loss is important and well-documented. The synaptic puncta analysis (C39) using pre- and postsynaptic markers is rigorous. The rescue specificity (C40) is consistent with other results. However, the causal link between impaired actin turnover and eventual spine loss is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Palmitoylation controls LIMK1 activation in neurons but not intrinsic enzymatic activity. In vitro, PAK3 phosphorylates wild-type and CCSS-LIMK1 similarly, and both phosphorylate cofilin equally. However, in neurons, T508 phosphorylation of wild-type LIMK1 is ~10-fold higher than CCSS-LIMK1. Single cysteine mutants and lipid-modified variants are also poorly phosphorylated, indicating that spine targeting via dual palmitoylation, not membrane association per se, controls LIMK1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 reveal a striking context-dependent effect of palmitoylation. The in vitro data (C42-C43) establish that CCSS mutation doesn't impair LIMK1's catalytic activity or its ability to be phosphorylated by PAK3, ruling out structural defects (C44-C45). The dramatic difference in neuronal phosphorylation (C46) is compelling. The systematic analysis of various mutants (C47-C48) strengthens the conclusion that dual palmitoylation-mediated spine targeting is required (C49). This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PAK and CaMKII, but not ROCK, are required for LIMK1 phosphorylation in hippocampal neurons. The data suggest a pathway where CaMKII triggers Rac/Cdc42 activation, recruiting active PAK to phosphorylate palmitoyl-LIMK1 on the spine membrane. This dual-control mechanism (localization + activation) ensures spatially precise actin regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 use pharmacological inhibitors to dissect the upstream pathway. The differential effects of PAK vs ROCK inhibition (C50-C51) identify PAK as the key activator (C52), consistent with prior literature. CaMKII requirement (C53) links to activity-dependent plasticity. However, C54 involves significant inference about the Rac/Cdc42 pathway that isn't directly tested here. Claims C55-C56 are synthetic conclusions that are well-supported by the collective data, though C56's speculation about subspine regulation is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Background context establishing the importance of dendritic spines in learning/memory and cognitive disorders, the role of actin dynamics in spine regulation, the challenge of achieving spatial specificity with diffusible proteins, the function of palmitoylation in protein localization, and the known roles of LIMK1 and PAK3 in spine morphology and cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C70 are primarily literature-based context claims supported by appropriate citations. These establish the rationale for the study. C67-C68 correctly cite prior work on LIMK1 and PAK3 knockout/mutation phenotypes. C69-C70 accurately describe known biochemistry. These claims provide essential background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

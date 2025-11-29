@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C91",
+      "C92"
+    ],
+    "result": "The study used two divergent mouse strains (B6 and Cast) with high SNP density (~1 SNP per 120 bp genome-wide), collected 16 F1 embryos from reciprocal crosses, and employed 3SEQ RNA sequencing to maximize SNP coverage in 3' UTRs. The mapping approach eliminated reference bias, achieving an average B6 allele fraction of 0.502.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C91-C92 describe the experimental design and strain characteristics. The SNP density is supported by citation (C1), sample collection is clearly stated (C2), sequencing methodology and SNP densities are quantified (C3-C4), and the lack of mapping bias is demonstrated by the near-perfect 0.502 allele fraction (C5). These foundational methodological claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C38",
+      "C39",
+      "C65"
+    ],
+    "result": "The study identified 1594 genes (23%) with significant allele-specific expression (ASE) in F1 embryos. ASE measurements showed excellent agreement between F1 and N2 embryos (rho=0.77) and strong correlation with cis-eQTL predictions (rho=0.58 overall, rho=0.70 for high-coverage genes), validating that most local eQTL act in cis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C38-C39, C65 collectively demonstrate robust ASE detection with appropriate statistical testing (Bonferroni-corrected paired t-test, p<0.01) and strong internal validation through correlation between independent measurements (F1 vs N2, ASE vs eQTL). The convergence of multiple lines of evidence strongly supports the identification and validation of cis-regulatory effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Using 154 N2 embryos with somite counts ranging from 42-57 (forming every 90-120 minutes), the study identified 1796 genes whose expression correlated with developmental progression. These genes were enriched for developmental processes including synaptogenesis (q=2.2\u00d710\u207b\u2078), eye lens formation (q=5.8\u00d710\u207b\u2077), and blood microparticles/globins (q=9.6\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9-C14 describe developmental staging and time-course analysis. The somite counting provides quantitative developmental staging (C9-C10, supported by citation), and the correlation analysis with appropriate multiple testing correction (q<0.05 Spearman) identifies developmentally regulated genes (C11). The GO enrichment results (C12-C14) are statistically significant and biologically coherent with E11.5 developmental processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C63",
+      "C64"
+    ],
+    "result": "Twelve genes showed significant differential allelic regulation as a function of developmental timing (q<0.10). The B6 and Cast alleles of adult beta globins (Hbb-b1 and Hbb-b2) exhibited opposite temporal delays but converged to equal expression by the end of the time course, suggesting compensatory mechanisms maintain stable oxygen physiology during the fetal-to-adult hemoglobin transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20, C63-C64 describe temporal ASE dynamics. The statistical analysis (Spearman correlation with somite number) is appropriate, with strong effect sizes for Hbb-b1 (rho=0.86, q<10\u207b\u00b9\u2074) and weaker but significant effects for Hbb-b2 (rho=-0.51, q=0.02) and transferrin (C19). The observation of convergence (C18) and the inference of compensatory mechanisms (C20) are reasonable given the coordinated but opposite temporal patterns in functionally related genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C66",
+      "C73"
+    ],
+    "result": "The study identified 31 imprinted genes (p<0.01, binomial test, Bonferroni corrected), all previously known. Nearly all showed very strong allelic bias with clear separation from non-imprinted genes, suggesting imprinting acts uniformly across the embryo, consistent with methylation-based mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C66, C73 describe imprinting results. The statistical approach is appropriate (binomial test with Bonferroni correction), and the finding that all 31 genes were previously identified (C22) serves as validation. The observation of uniform strong bias (C23, C66) with clear separation from background (referenced in figures) supports the methylation-based mechanism interpretation. This is confirmatory rather than novel discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C67",
+      "C74",
+      "C75"
+    ],
+    "result": "Maternal genotype significantly affects expression of 331 embryonic genes (Mann-Whitney U test, p<0.01, Bonferroni corrected), with effect sizes up to 3.5-fold. The effects were validated by qPCR for 4 genes, remained after controlling for confounders (sex, X chromosome, litter, developmental stage, mitochondrial genome), and were not explained by imprinting or maternal transcript contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31, C67, C74-C75 describe maternal effects. The statistical analysis is rigorous with appropriate corrections (C24), effect sizes are substantial (C26), and multiple alternative explanations were systematically excluded (C27-C30). Independent validation by qPCR (C31) strengthens confidence despite the modest number validated. The backcross design enables clean separation of maternal from embryonic genotype effects. This represents a major finding with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C69",
+      "C70"
+    ],
+    "result": "Top maternal effect genes Angptl4 and Gpx3 function in lipid/glucose metabolism and are regulated by PPAR\u03b3, suggesting maternal effects act through placental transmission of nutrients or hormones. These genes may contribute to previously observed maternal genotype effects on prenatal growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C34, C69-C70 propose mechanistic interpretations. While the gene functions are well-established from literature (C32-C34), the mechanistic inferences (C69) are explicitly speculative (\"more likely,\" \"cannot rule out\"), and the connection to prenatal growth (C70) is hypothetical (\"may be at least partly responsible\"). The biological plausibility is reasonable, but these remain untested hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C71"
+    ],
+    "result": "eQTL analysis using 986 marker regions identified 1034 significant eQTL (q<0.01), of which 1017 (98%) mapped near target genes, indicating cis-regulation. This represents the largest source of expression divergence, affecting over 1000 genes with up to 7-fold differences between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C71 describe eQTL mapping results. The computational approach (genotyping, recombination analysis, correlation testing with genome-wide significance threshold) is standard and appropriate. The overwhelming predominance of local/cis-eQTL (98%) is consistent with the ASE validation (C38-C39) and represents a robust finding. The magnitude of effects (up to 7-fold) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C72"
+    ],
+    "result": "Very few trans-eQTL were detected (~10 genome-wide, ~1% of cis-eQTL), with significance dropping rapidly after the top 3. Neither strong cis-eQTL/ASE genes nor alternative modeling approaches (random forest with developmental timing) enriched for trans-eQTL. Permutation tests showed evidence for hotspots but no specific candidates, and ASE genes were not enriched as hotspot loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47, C72 describe the paucity of trans-eQTL. Multiple analytical approaches converge on this conclusion: standard eQTL mapping (C40-C41), enrichment analysis (C42), random forest modeling (C43), quantitative estimates (C44), and hotspot analysis (C45-C46). The consistency across methods and the contrast with adult tissues (addressed in other claims) strongly support this as a real biological phenomenon rather than a power issue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Comparison with published adult tissue eQTL studies showed embryos have substantially fewer trans-eQTL than adult tissues across multiple datasets. This result was robust to variations in sample size, significance metrics (p-values vs FDR), and thresholds, leading to the conclusion that embryonic trans-eQTL are subject to elevated selective constraint compared to adult tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe comparative analysis with adult tissues. The reanalysis of published datasets with matched sample sizes and consistent methodology is appropriate. The robustness analysis (C49) addresses potential confounders. Combined with high power to detect cis-eQTL (demonstrated elsewhere), this supports the constraint interpretation (C50) over a power limitation explanation. The inference is well-reasoned given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ASE genes were significantly depleted for GO categories related to organ development (p=6\u00d710\u207b\u2075), gene regulation (p=1\u00d710\u207b\u2074), and transcription factors (p=3\u00d710\u207b\u2075). Evolutionary constraint (GERP scores) was lowest in the most significant cis-eQTL (rho=-0.14, p=6\u00d710\u207b\u00b9\u00b3) and negatively correlated with ASE magnitude (rho=-0.10, p=9\u00d710\u207b\u2078), a pattern unique to embryos compared to adult tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 link regulatory variation to evolutionary constraint. The GO depletion analysis shows appropriate statistical testing, though C52 has marginal significance (q=0.07). The correlation between cis-eQTL significance/ASE magnitude and low conservation (C54-C55) is statistically robust with large sample sizes. The contrast with adult tissues (C56-C57) strengthens the interpretation that embryonic constraint is unique. This represents strong evidence for purifying selection on embryonic regulatory networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The B6 and Cast strains exhibit 17.7 million SNPs (6-fold more than African human heterozygosity). While missense polymorphisms show strong purifying selection genome-wide, and regulatory sites show weaker but substantial selection, the findings suggest substantial neutral divergence in gene expression can accumulate via cis-regulatory variation even under strong organismal-level constraint during embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide evolutionary context and interpretation. The SNP count and human comparison (C58) are data-based with citation. The statements about selection on missense and regulatory variants (C59-C60) represent established knowledge from literature. The synthesis (C61) connecting these observations to the developmental hourglass model is a reasonable interpretation of the combined findings (high cis-variation, low trans-variation, constraint on developmental genes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Incorporating developmental timing (somite number) into the eQTL model did not alter the balance between cis- and trans-regulation, unlike findings in C. elegans larval development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 describes a negative result from modeling with developmental stage as a covariate. The analysis was performed (random forest model shown in supplementary figure), and the lack of enrichment for trans-eQTL is clearly stated. This negative result is important for interpretation and is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C76",
+      "C83"
+    ],
+    "result": "Maternal effects have significant implications for human genetic studies, as what is typically considered familial environment may have a substantial heritable genetic component affecting offspring. Maternal effects may contribute to evolutionary divergence by allowing expression heterogeneity to build in embryos through differences in adult mothers, where regulatory networks show less constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68, C76, C83 present broader implications and evolutionary speculation. While the maternal effects data are solid (addressed in other results), these claims extend beyond the data to implications for human studies (C68) and evolutionary theory (C76). C83 notes that maternal effects are confounded with family structure in existing studies, which is a valid methodological concern. However, the evolutionary speculation (C76) and human implications (C68) are not directly tested and represent hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript provides extensive background on E11.5 developmental stage, imprinting, maternal effects, and eQTL studies, including established knowledge about developmental constraints, prior findings in other organisms, and methodological capabilities of ASE/eQTL approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 represent background knowledge and literature context. These are appropriately cited and accurately represent established findings from prior work. They provide necessary context for interpreting the current study but are not novel findings. The prediction in C90 (fewer eQTL in embryos) is tested by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Sequencing yielded an average of 15.8 million reads per F1 sample and 1.2 million per N2 sample. Approximately 13,500 genes showed detectable expression, with ~7,600 passing the 5 RPM analysis threshold. Only 5 genes showed sex-specific expression, all on sex chromosomes, consistent with early sexual differentiation at E11.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 describe sequencing depth, gene detection, and sex effects. These are straightforward data summaries with appropriate quality metrics. The observation of minimal sex-specific expression (C99-C100) is biologically reasonable for E11.5 and serves as a quality control, confirming the developmental stage. These are standard methodological details.",
+    "result_type": "MINOR"
+  }
+]

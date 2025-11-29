@@ -1,0 +1,1793 @@
+{
+  "submission": {
+    "id": "27453acb-32ee-446f-b6b2-408389bb52ea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:08:57.354037Z",
+    "updated_at": "2025-11-29T04:08:57.354037Z"
+  },
+  "content": [
+    {
+      "id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "submission_id": "27453acb-32ee-446f-b6b2-408389bb52ea",
+      "content_type": "manuscript",
+      "content_text": "# Functional topography of the human entorhinal cortex\n\n## Authors\n\n- Tobias Navarro Schr\u00f6der<sup>1</sup> ([ORCID: 0000-0001-6498-1846](https://orcid.org/0000-0001-6498-1846)) \u2020\n- Koen V Haak<sup>1</sup>\n- Nestor I Zaragoza Jimenez<sup>1</sup>\n- Christian F Beckmann<sup>1</sup>\n- Christian F Doeller<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Donders Institute for Brain, Cognition and Behaviour Radboud University Nijmegen Netherlands\n2. Department of Cognitive Neuroscience Radboud University Medical Centre Nijmegen Netherlands\n3. Oxford Centre for Functional MRI of the Brain University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite extensive research on the role of the rodent medial and lateral entorhinal cortex (MEC/LEC) in spatial navigation, memory and related disease, their human homologues remain elusive. Here, we combine high-field functional magnetic resonance imaging at 7 T with novel data-driven and model-based analyses to identify corresponding subregions in humans based on the well-known global connectivity fingerprints in rodents and sensitivity to spatial and non-spatial information. We provide evidence for a functional division primarily along the anteroposterior axis. Localising the human homologue of the rodent MEC and LEC has important implications for translating studies on the hippocampo-entorhinal memory system from rodents to humans.\n\n## Introduction\n\nThe entorhinal cortex (EC)\u2014defining the interface between the hippocampus and the neocortex (Munoz and Insausti, 2005)\u2014plays a pivotal role in the integration of different sensory inputs into higher order mnemonic representations (Eichenbaum et al., 2007; Moser and Moser, 2013). In rodents\u2014and on the basis of cytoarchitectonics\u2014the EC is typically (Kerr et al., 2007; Canto et al., 2008; Van Strien et al., 2009) subdivided into two major subregions, the medial- and the lateral entorhinal cortex (MEC and LEC, respectively). The MEC receives inputs about spatial information from parahippocampal cortex (PHC) and the LEC receives item-related information from perirhinal cortex (PRC) (Van Strien et al., 2009; Deshmukh and Knierim, 2011; Ranganath and Ritchey, 2012; Knierim et al., 2013). Similar functional roles of the PHC and PRC have been described in humans (Epstein and Kanwisher, 1998; Davachi et al., 2003; Eichenbaum et al., 2007; Ekstrom and Bookheimer, 2007; Litman et al., 2009; Duarte et al., 2011; Staresina et al., 2011; Martin et al., 2013; Vilberg and Davachi, 2013) and relate to distinct visual processing streams (Kravitz et al., 2011). The differential input pattern into the rodent LEC and MEC also dovetails with a cell-type specific functional specialisation (Eichenbaum and Lipton, 2008). The MEC contains a high proportion of head-direction and grid cells, whose activity is modulated by running direction and spatial location, respectively (Hafting et al., 2005; Sargolini et al., 2006). In contrast, cells in the LEC respond to individual objects in the environment rather than to specific locations (Deshmukh and Knierim, 2011; Tsao et al., 2013; Knierim et al., 2013).\n\nDespite a wealth of data and marked differences in structure and function of the rodent MEC and LEC evidence for their human homologue remains elusive. This hampers translational studies, which is particularly relevant in the case of Alzheimer's disease (AD) with AD pathology starting in the EC (Braak and Braak, 1992). Within the EC, the vulnerability to AD-related pathology is not homogeneously distributed and differs between medial and lateral strips in humans, which has been related to similar findings in the rodent MEC and LEC, respectively (Khan et al., 2014). However, the localization of the human homologue of the rodent MEC and LEC remains unclear. A source of considerable confusion is the fact that \u2018MEC\u2019 and \u2018LEC\u2019 are referring to cytoarchitectonically defined areas and not to anatomical locations. Hence, they do not circumscribe strips of medial and lateral EC. Rather, the MEC is located medially in the septal (posterior) part of the EC and the LEC is located laterally in the temporal (anterior) part of the EC in rodents (Van Strien et al., 2009). Furthermore, tracing studies on PHC and PRC pathways in non-human primates suggest a dominant anterior-posterior division (Suzuki and Amaral, 1994; Insausti and Amaral, 2008), as do single-unit recordings that show activity consistent with the rodent LEC in the anterior EC in primates (Killian et al., 2012). In contrast, neuroimaging studies on memory in healthy participants (Schultz et al., 2012; Reagh and Yassa, 2014) and participants with preclinical AD (Khan et al., 2014) suggest that the rodent MEC and LEC map on medial and lateral strips of EC in humans.\n\nTo resolve this discrepancy in the literature, one needs to investigate the relatively small EC (25\u201330 mm2 in humans) (Krimer et al., 1997) with high anatomical precision. An earlier study investigated entorhinal connectivity with high-resolution functional magnetic resonance imaging (fMRI), but averaged signal changes over the entire region (Lacy and Stark, 2012). To achieve higher resolution imaging, here we leveraged high-field, sub-millimetre fMRI at 7 T and sought to identify the human homologue of the rodent MEC and LEC by informing our analysis by well-known functional and structural properties of the EC. Specifically, it has been shown that MEC and LEC exhibit differential connectivity with cortical regions (Witter and Groenewegen, 1989; Kerr et al., 2007; Van Strien et al., 2009). The differential fingerprints of anatomical connectivity should lead to differences in functional connectivity identifiable with fMRI (Johansen-Berg et al., 2004; Buckner et al., 2013; Wang et al., 2014). To test patterns of functional connectivity, we measured whole-brain activity while participants performed a virtual reality task with spatial and non-spatial components and validated the results in publicly available resting-state data from the WU-Minn Human Connectome Project (Van Essen et al., 2013; Smith et al., 2013) (HCP\u2014www.humanconnectome.org). In addition, differential sensitivity to spatial and non-spatial stimuli could provide converging evidence to identify the human homologue of the rodent MEC and LEC, which we tested in a third, independent dataset. A complementary approach to the global network perspective presented here is given by Maass et al. (Maass et al., 2015) who scrutinized the fine-grained connectivity pattern of medial temporal lobe regions with the EC.\n\n## Results\n\nA recent model on cortical memory networks (Ranganath and Ritchey, 2012) posits that an anterior-temporal (AT) system converges on the PRC and a posterior-medial (PM) system on the PHC. Based on studies in rodents, the two networks are hypothesised to connect to either the LEC or the MEC, respectively (Witter and Groenewegen, 1989; Kerr et al., 2007; Van Strien et al., 2009). Studies in non-human primates predict that the entorhinal projections of the two systems show a strong anteroposterior division (Suzuki and Amaral, 1994). In order to test this prediction and to elucidate the role of the EC, we first applied a model-based approach on fMRI data acquired while participants were performing a virtual-reality navigation task to directly mimic studies in rodents (see \u2018Materials and methods\u2019 for details). This task targeted all entorhinal systems, because it involved both navigation-related spatial components and processing of non-spatial stimuli.\n\nWe created spherical regions-of-interest (ROIs) with 4 mm radius around coordinates pertaining to either of the networks (Libby et al., 2012; Ranganath and Ritchey, 2012) (see Table 1), as well as ROIs for both the medial and lateral half, and anterior and posterior half of the EC to ensure comparable number of voxels per parcel and therefore comparable signal-to-noise ratio (SNR) properties. Then we computed seed-based connectivity from the two neocortical networks to either sets of EC ROIs, see Figure 1. We found a main effect of network on entorhinal connectivity (repeated-measures ANOVA: F(1,21) = 10.0, p = 0.005). Post-hoc t-tests revealed that the lateral parts of EC connected stronger to the AT compared to the PM network (T(21) = 2.6, p = 0.015; medial parts of EC: T(21) = \u22120.2 p = 0.83). However, in contrast to previous suggestions, we additionally observed a connectivity difference along the anteroposterior axis (repeated-measures ANOVA: main effect of network, F(1,21) = 13.2, p = 0.001) and post-hoc t-tests showed that the anterior parts of EC connected more with the AT compared to the PM network (T(21) = 2.7: p = 0.01; posterior EC: T(21) = \u22120.49, p = 0.63).\n\n**Table 1.**\n Selection of regions associated with the posterior-medial (PM) and the anterior-temporal (AT) system (Libby et al., 2012).The coordinates of the PM system reflect peak voxel coordinates of a seed-based connectivity contrast of right parahippocampal cortex > right perirhinal cortex connectivity reported by Libby et al. (Libby et al., 2012). The coordinates of the AT system reflect peak voxel coordinates of a seed-based connectivity contrast of right perirhinal cortex > right parahippocampal cortex connectivity. Coordinates are in MNI space.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">Left hemisphere</th>\n      <th colspan=\"3\">Left hemisphere</th>\n    </tr>\n    <tr>\n      <th>x</th>\n      <th>y</th>\n      <th>z</th>\n      <th>x</th>\n      <th>y</th>\n      <th>z</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">PM System</td>\n    </tr>\n    <tr>\n      <td>Medial posterior occipital cortex (BA 18)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>14</td>\n      <td>\u221272</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Occipital pole (BA 17)</td>\n      <td>\u221216</td>\n      <td>\u221296</td>\n      <td>22</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Parahippocampal cortex</td>\n      <td>\u221212</td>\n      <td>\u221242</td>\n      <td>\u22128</td>\n      <td>22</td>\n      <td>\u221232</td>\n      <td>\u22128</td>\n    </tr>\n    <tr>\n      <td>Posterior cingulate cortex (BA 29)</td>\n      <td>\u22124</td>\n      <td>\u221246</td>\n      <td>4</td>\n      <td>10</td>\n      <td>\u221244</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Posterior hippocampus</td>\n      <td>\u221220</td>\n      <td>\u221230</td>\n      <td>\u22122</td>\n      <td>18</td>\n      <td>\u221236</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Posterior thalamus</td>\n      <td>\u221220</td>\n      <td>\u221234</td>\n      <td>0</td>\n      <td>22</td>\n      <td>\u221230</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Retrosplenial cortex (BA 30)</td>\n      <td>\u221216</td>\n      <td>\u221252</td>\n      <td>\u22124</td>\n      <td>22</td>\n      <td>\u221246</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td colspan=\"7\">AT System</td>\n    </tr>\n    <tr>\n      <td>Dorsolateral prefrontal cortex (BA 9)</td>\n      <td>\u221224</td>\n      <td>60</td>\n      <td>24</td>\n      <td>18</td>\n      <td>58</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Dorsomedial prefrontal cortex (BA 8)</td>\n      <td>\u22122</td>\n      <td>\u221260</td>\n      <td>34</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Frontal polar cortex (BA 10)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>40</td>\n      <td>60</td>\n      <td>\u22122</td>\n    </tr>\n    <tr>\n      <td>Lateral precentral gyrus (BA 6)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>54</td>\n      <td>4</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Medial prefrontal cortex (BA 8)</td>\n      <td>\u22122</td>\n      <td>\u221260</td>\n      <td>34</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Orbitofrontal cortex (BA 11/47)</td>\n      <td>\u22126</td>\n      <td>16</td>\n      <td>\u221222</td>\n      <td>8</td>\n      <td>22</td>\n      <td>\u221220</td>\n    </tr>\n    <tr>\n      <td>Postcentral gyrus (BA 4)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>62</td>\n      <td>\u221210</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>Posterior superior temporal gyrus (BA 22)</td>\n      <td>\u221262</td>\n      <td>\u221234</td>\n      <td>14</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Rostrolateral prefrontal cortex (BA 10)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>38</td>\n      <td>60</td>\n      <td>\u221212</td>\n    </tr>\n    <tr>\n      <td>Temporal polar cortex (BA 38)</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>34</td>\n      <td>22</td>\n      <td>\u221236</td>\n    </tr>\n    <tr>\n      <td>Ventrolateral prefrontal cortex (BA 44/45)</td>\n      <td>\u221256</td>\n      <td>6</td>\n      <td>18</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the AT and PM system. Spherical regions-of-interest (ROIs) were centred on MNI coordinates associated with either of the two systems (Libby et al., 2012), normalised to the group-specific template of the navigation study and then masked to include only gray matter voxels. The AT system included medial-prefrontal and orbitofrontal regions, whereas the PM system included occipital and posterior-parietal regions, see Table 1 for all selected regions. (B) Right parasagittal slice showing voxel-wise seed-based connectivity of the PM system restricted to the EC. Note the PM peak. (C) Right parasagittal slice showing voxel-wise seed-based connectivity of the AT system restricted to the EC. Note a peak in the anterior-lateral EC. (D) ROI-based connectivity estimates. Left panel: Connectivity strength (partial correlation coefficient) of anterior (left) and posterior EC (right) is plotted separately for the AT system (red) and the PM system (blue). The systems differ in their entorhinal connectivity: the anterior EC connects stronger to the AT compared to the PM network. Right panel: Connectivity strength with lateral (left) and posterior EC (right) is plotted separately for the AT system (red) and the PM system (blue). Lateral EC connected stronger to the AT compared to the PM network. Error bars show S.E.M. over subjects. See Figure 1\u2014figure supplement 1 for additional slices.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the AT and PM system. (B) Top row: left parasagittal slice showing connectivity with the PM network. Bottom rows: coronal slices showing connectivity with the PM network. (C) Top row: left parasagittal slice showing connectivity with the PM network. Bottom rows: coronal slices showing connectivity with the PM network.\n\nIn a second step, we wanted to overcome potential limitations of the seed-based analysis. For example, the selected volume and location of neocortical seed regions could introduce biases (e.g., spatial proximity of the seeds) and imperfect normalisation procedures could affect the results particularly in the frontal lobes where projections from both the rodent LEC and MEC are neighbouring (Kerr et al., 2007). In addition, manual subdivision of the EC along cardinal axes likely misrepresents cytoarchitectonic boundaries. Therefore, we adopted a complementary approach to trace the dominant modes of functional connectivity change within the EC in a fully data-driven manner (Haak et al., 2014) (see \u2018Materials and methods\u2019). In brief, for every voxel in the EC, we determined its functional connectivity fingerprint with respect to the rest of cortex and used these fingerprints to compute the pair-wise similarities among all voxels within the ROI. The ensuing (voxels-by-voxels) similarity matrix was then fed to the Laplacian Eigenmaps (LE) algorithm (Belkin and Niyogi, 2003), which has previously also been successfully applied to trace changes in white-matter tractography (Johansen-Berg et al., 2004; Cerliani et al., 2012) and resting-state fMRI connectivity (Haak et al., 2014). The LE algorithm projects the high-dimensional, voxel-wise connectivity data onto a series of one-dimensional vectors, with the requirement that the similarities among the connectivity fingerprints are maximally preserved (in the vein of e.g., multidimensional scaling). These vectors represent multiple, spatially overlapping maps (as revealed by colour-coding the EC voxels according to the vectors' values) and are sorted according to how well they preserve the similarities among the original, high-dimensional connectivity fingerprints. Thus, the first vector represents the dominant mode of connectivity change in the EC, the second represents the second-dominant mode, and so on.\n\nApplied to the fMRI data acquired while subjects performed the virtual-reality task, we observed that the dominant mode of functional connectivity change extended along the long-axis of the EC, approximately from the posterior to the anterior end (Figure 2 and Figure 2\u2014figure supplement 1), while the orientation of the second was largely perpendicular (Figure 3 and Figure 3\u2014figure supplement 1). Both modes of connectivity change could also be reliably detected using an independent resting-state fMRI dataset (60 subjects of the WU-Minn Human Connectome Project; see \u2018Materials and methods\u2019), suggesting that the organization of EC functional connectivity is largely task-independent (Figure 4). Both the first and second-dominant modes of functional connectivity change were highly reproducible across resting-state sessions (Pearson's R = 0.99, p < 0.001 and Pearson's R = 0.98, p < 0.001, for the dominant and second-dominant modes, respectively).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig2-v1.jpg)\n\n**Figure 2.:** (A) Dominant mode of functional connectivity change at the group-level (Spearman's R = 0.53). Similar colours indicate similar connectivity with the rest of the brain. (B) 3D rendering of the two clusters derived from the dominant mode of functional connectivity change (displayed in red and blue) and the outlines of the group-specific template. Upper panel: right side view. Lower panel: top view (see Figure 2\u2014figure supplement 1 for coronal views of the two clusters). (C) Upper panel: Map shows results of a non-parametric randomisation test of the spatial and non-spatial stimulation experiment restricted to the EC for display purposes (see Figure 2\u2014figure supplement 2 for whole-brain maps). The \u2018scenes > objects\u2019 contrast is displayed in blue to light-blue, the \u2018scenes < objects\u2019 contrast in red to yellow. Note that voxels in pmEC are sensitive to scenes, whereas voxels in alEC are sensitive to objects. Lower panel: The clusters from panel B exhibit antagonistic responses to spatial and non-spatial stimuli. Beta estimates for the contrast \u2018scenes > objects\u2019 (averaged across participants) are shown for clusters A and B. T(20) = 4.9, p = 0.0001. Error bars show S.E.M. over participants. (D) Whole-volume functional connectivity with clusters A and B. Regions connecting more with cluster A (p < 0.05, FWE corrected), such as occipital and posterior-parietal cortex that form part of the PM system are shown in blue. Regions connecting more with cluster B (p < 0.05, FWE corrected), such as medial-prefrontal and orbitofrontal cortex which form part of the AT system are displayed in red.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Top: sagittal slice. Dashed lines indicate position of the coronal slices shown below. Bottom: The posterior slice (left) exclusively contains cluster A. In the middle slice cluster A is located dorsomedially, proximal to the hippocampus and cluster B is located ventrolaterally, distal to the hippocampus. The anterior slice (right) contains mostly cluster B. A = anterior; P = posterior.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Left parasagittal slice showing peak effects of two contrasts on the data from the spatial and non-spatial stimulation experiment. The \u2018scenes > objects\u2019 contrast is displayed in blue-lightblue, the \u2018scenes < objects\u2019 contrast in red-yellow. Note that voxels in the posterior EC are sensitive to scenes, whereas voxels in the anterior EC are sensitive to objects. (B) Coronal slice anterior-posterior location indicated by dashed line in (A). Note the medial peak in the medial temporal lobe for the \u2018scenes > objects\u2019 contrast and the lateral peak for the \u2018scenes < objects\u2019 contrast. Images are thresholded at T > 2 for display purposes.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Bar plots of the ratio between the mean signal intensity and signal standard deviation across voxels. The SNR across voxels was higher in the pmEC than the alEC (T(21) = 15.2721, p < 0.001). This was associated with a larger signal in the pmEC (mean signal alEC = 4.97; mean signal pmEC = 7.76; T(21) = 38, p < 0.001) in the absence of differences in spatial standard deviation (T(21) = 1.5, p = 0.144). Note, that mean signal was subtracted from time-series prior to all connectivity analyses (see \u2018Materials and methods\u2019), which makes it unlikely that signal intensity differences affected the connectivity results. (B) Bar plots of the ratio between the mean signal intensity and the signal standard deviation across time. Temporal SNR (tSNR) did not differ between alEC and pmEC (T(21) = 0.2, p = 0.83). Error bars show S.E.M. over participants.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Connectivity between subregions identified using the data-driven connectivity analysis. Connectivity reflects partial Pearson correlation coefficients after Fisher Z transformation. Laterality is indicated by the last letter: left = \u2018l\u2019, right = \u2018r\u2019. (B) Connectivity for three conditions. \u2018non-hom\u2019 refers to non-homologous connectivity, \u2018contra\u2019 refers to contralateral connectivity and \u2018hom\u2019 refers to homologous connectivity. Note that homologous connectivity (across hemispheres) exceeded connectivity with the neighbouring non-homologous region in the same hemisphere (T(21) = 4.05, p = 0.0006). Connectivity between non-homologous regions was strongest within hemispheres (T(21) = 3.66, p = 0.0015). Error bars show S.E.M. over participants. *p < 0.05.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig3-v1.jpg)\n\n**Figure 3.:** (A) Second-dominant mode of functional connectivity change at the group-level (Spearman's R = 0.28). Similar colours indicate similar connectivity with the rest of the brain. (B) 3D rendering of the two clusters derived from the second-dominant mode of functional connectivity change (displayed in red and blue) and the outlines of the group-specific template. Upper panel: right side view. Lower panel: top view (see Figure 3\u2014figure supplement 1 for coronal views of the two clusters). (C) The clusters shown in panel B exhibit no antagonistic responses to spatial and non-spatial stimuli. Beta estimates for the contrast \u2018scenes > objects\u2019 (averaged across participants) are shown for cluster A and B (T(20) = \u22120.26, p = 0.8). Error bars show S.E.M. over participants. (D) Regions connecting more with cluster A (p < 0.05, FWE corrected) are shown in blue. Regions connecting more with cluster B (p < 0.05, FWE corrected) are shown in red. Cluster A connected more with most of the neocortex.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top: sagittal slice. Dashed lines indicate position of the coronal slices shown below. Bottom: All three coronal slices contain both clusters. Cluster A is located ventrally, distal to the hippocampus and cluster B dorsally, proximal to the hippocampus. A = anterior; P = posterior.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig4-v1.jpg)\n\n**Figure 4.:** Results of analysis of the first 60 participants of the WU-Minn Human Connectome Project (HCP), acquired on two different days (Smith et al., 2013). Top row: day one. Bottom row: day two. (A, C) The dominant mode of functional connectivity change follows an anteroposterior trajectory. (B, D). The second-dominant mode of functional connectivity change follows a mediolateral trajectory. Both modes were highly reproducible across different scanning days (dominant mode: Pearson's R = 0.99 p < 0.001, second-dominant mode: R = 0.98; p < 0.001). Topology preservation\u2014dominant mode, day one: Spearman's R = 0.62; day two: R = 0.61; second-dominant mode, day one: R = 0.44; day two: R = 0.46.\n\nFurthermore, in order to identify the potential human homologues of the rodent LEC and MEC, we clustered the vectors representing the dominant and second-dominant modes of functional connectivity change (separately) through a median-split approach (see \u2018Materials and methods\u2019). Hence, each cluster comprises 50% of voxels in the EC. 3D-rendering of the two clusters derived from the dominant mode of connectivity change revealed a consistent topology across hemispheres (Figure 2B, Video 1). One division contained the posterior EC (Figure 2\u2014figure supplement 1\u2014displayed in blue). The other division included most of the anterior EC (Figure 2\u2014figure supplement 1\u2014displayed in red). In addition to the dominant anterior-posterior distinction, the posterior cluster was located more medially (and to some extent more dorsally) and the anterior cluster was located more laterally (and to some extent more ventrally). Hereafter, we refer to the clusters as posterior-medial EC (\u2018pmEC\u2019) and anterior-lateral EC (\u2018alEC\u2019), respectively, consistent with Maass et al. (Maass et al., 2015). Clusters derived from the second-dominant mode were less consistent across hemispheres, but showed an approximately orthogonal orientation relative to the first (Figure 3 and Figure 3\u2014figure supplement 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/06738/elife-06738-media1.avi.jpg)\n\nIf the two clusters (i.e., EC halves) derived from the dominant mode of functional connectivity change correspond to the homologues of the rodent LEC and MEC, their whole-brain connectivity profiles should correspond to the known connectivity profiles in rodents and resemble the AT and PM system proposed by Ranganath and Ritchey (Ranganath and Ritchey, 2012). To test this hypothesis, we computed whole-volume connectivity maps of the two clusters. Group-level contrasts showed peaks in the medial-prefrontal and orbitofrontal cortex for the alEC, regions associated with the AT system. In contrast, occipital and posterior-parietal cortex was dominated by connectivity with the pmEC, areas associated with the PM system (Ranganath and Ritchey, 2012). In addition, the pmEC showed increased connectivity with frontal regions (see Figure 2D). These findings are in line with the patterns of reciprocal connections of the rodent LEC and MEC, respectively (Kerr et al., 2007). Notably, this was not the case for the connectivity maps of the two clusters derived from the second-dominant mode of connectivity change (Figure 3D) that were widely dominated by only one of the clusters.\n\nFurthermore, we examined both spatial and temporal SNR (tSNR) of the alEC and the pmEC (Figure 2\u2014figure supplement 3). tSNR did not differ between alEC and pmEC (T(21) = 0.2, p = 0.83) but spatial SNR did (T(21) = 9.7, p < 0.001). This was associated with higher signal in the pmEC compared to the alEC (mean signal: alEC = 4.97; mean signal pmEC = 7.76; T(21) = 38, p < 0.001) in the absence of differences in spatial standard deviation (T(21) = 1.5, p = 0.144). Note, that mean signal was subtracted from time-series prior to all connectivity analyses (see \u2018Materials and methods\u2019), which makes it unlikely that signal intensity differences affected the connectivity results.\n\nWe used an independent component analysis (ICA)-based method for data cleaning (see \u2018Materials and methods\u2019) that has been shown to efficiently remove residual effects of head motion. However, we additionally repeated the data-driven connectivity analysis after excluding time periods with large head movements (motion scrubbing [Power et al., 2012, 2015]). Motion scrubbing had only minimal effects on the results. Pearson correlation coefficients of the pre- and post scrubbing results were close to 1 and highly significant (gradient one: left R = 0.9964, right R = 0.9958; gradient two: left = 0.9348, right = 0.8816; all p values <0.001).\n\nWe also tested if the alEC and pmEC exhibited stronger connectivity with their potential homologue region in the contralateral hemisphere compared to each other. Here we observed that homologous connectivity indeed exceeded non-homologous connectivity (Figure 2\u2014figure supplement 4). Importantly, this was also the case if non-homologous connectivity was assessed within the same hemisphere, between adjacent parts of the EC (T(21) = 4.05, p = 0.0006).\n\nFinally, studies on rodent electrophysiology (Deshmukh and Knierim, 2011; Knierim et al., 2013) predict that the LEC and its human homologue should respond preferentially to non-spatial stimuli, whereas the MEC and its human homologue should be involved in processing spatial information. We tested this prediction by conducting a second fMRI study at 7 T in which an independent group of participants was presented with spatial (pictures of scenes) and non-spatial stimuli (pictures of objects), see \u2018Materials and methods\u2019 for details. We contrasted fMRI responses to spatial and non-spatial stimuli. Here, we observed higher responses to spatial than non-spatial stimuli in the posterior EC, while the inverse contrast (objects vs scenes) showed higher responses in the anterior EC (Figure 2C). ROI analyses using the clusters derived from the dominant mode of connectivity change revealed that the anterior-lateral cluster showed higher sensitivity to non-spatial stimuli compared to the PM cluster (T(20) = 4.9, p = 0.0001, Figure 2C). This dissociation was not present for the clusters that were derived from the second-dominant mode of connectivity change within the EC (T(20) = \u22120.26, p = 0.8; Figure 3C).\n\nIn sum, our results suggest that the human homologue of the rodent MEC maps predominantly on the human posterior parts of the EC, while the homologue of the rodent LEC maps predominantly on the anterior parts of the EC.\n\n## Discussion\n\nThe EC, in concert with the hippocampus, plays a crucial role in memory and learning (Eichenbaum et al., 2007) and is the core of the brain's navigational system (Moser and Moser, 2013). While the shape and location of the EC differs between rodents and primates (Witter and Groenewegen, 1989), the anatomical organisation and connectivity patterns are largely conserved across species (Canto et al., 2008). However, translational studies on EC subregions faced the problem of identifying homologous regions across species. For example, recent neuroimaging studies on mnemonic processing (Schultz et al., 2012; Reagh and Yassa, 2014) and Alzheimer's pathology (Khan et al., 2014) directly related medial and lateral strips of EC in humans to the rodent MEC and LEC. However, the anatomical locations of these cytoarchitectonically defined regions in rodents differ along more than only the mediolateral axis. More specifically, the LEC is situated more anterior-ventrally, whereas the MEC is situated more posterior-dorsally in rodents (Van Strien et al., 2009). Therefore, it is unlikely that medial and lateral strips of EC in humans correspond to the rodent MEC and LEC, respectively. Furthermore, in primates the characteristic projections from the PRC and PHC strongly map onto the anteroposterior axis (Suzuki and Amaral, 1994). Here, we leveraged the distinct connectivity fingerprints and functional roles (such as complementary computation of scene and object information) of the rodent LEC and MEC to find their human homologues with fMRI with three complementary methods and three independent datasets. Both model-based and data-driven connectivity analyses, as well as sensitivity to non-spatial vs spatial stimuli provide evidence for an anterior-lateral and a PM localisation of the homologues of the rodent LEC and MEC, respectively. Maass et al confirmed these findings in a study with two high-resolution, high-field fMRI datasets by focusing on local connectivity between regions of the medial temporal lobes. They found preferential connectivity of PRC and proximal subiculum to anterior-lateral parts of the EC, whereas posterior-medial parts of the EC were more connected to PHC and distal subiculum. This corresponds well with our findings (Figure 2\u2014figure supplement 1). In line with the present study, Maass et al (Maass et al., 2015) report local connectivity fingerprints of the human anterior-lateral and posterior-medial EC that mimicked those of the rodent LEC and MEC, respectively.\n\nIn addition to the change in functional connectivity from PM to anterior-lateral, our data-driven connectivity analysis also revealed a second organisation structure approximately perpendicular to the first (Figure 3\u2014figure supplement 1), which might reflect bands of intra-entorhinal projections that are known to cross the LEC/MEC boundary in a roughly orthogonal orientation in rodents (Canto et al., 2008) and in primates (Chrobak and Amaral, 2007).\n\nThe selective sensitivity to spatial and non-spatial information, or \u2018context vs content\u2019 more broadly (Knierim et al., 2013), points towards fundamental difference in computations of the LEC and MEC. How to characterise those differences most accurately remains an open question (Knierim et al., 2013), but our results can help to inform future studies on the role of the human alEC and pmEC in higher-level cognition.\n\nNotably, the present findings confirm three out of four complementary criteria for the definition of cortical areas that have traditionally been advocated (Van Essen, 1985), namely topographic organization, connectivity and functional properties (the fourth one being cyto- and myeloarchitectonic organization).\n\nPrevious neuroimaging studies in humans reported differences between medial and lateral aspects of EC that mimicked differences between the rodent MEC and LEC and assumed that both subregions are present on coronal slices of the EC (Schultz et al., 2012; Khan et al., 2014; Reagh and Yassa, 2014), that is, that the MEC and LEC correspond to medial and lateral strips of the EC. In light of our findings, these reports could be explained by a partial overlap of the medial and lateral divisions with the pmEC and the alEC, respectively. For example, we noticed a mediolateral difference of responses to spatial and non-spatial stimuli on some coronal slices (Figure 2\u2014figure supplement 2B). However, our results suggest that coronal slices through the most posterior EC exclusively harbour the human homologue of the rodent MEC. Similarly, anterior slices appear to contain mostly the homologue of the rodent LEC. Hence, improved mapping of homologous regions between rodents and humans should lead to increased effect sizes and more accurate interpretations.\n\nIn summary, the present findings can help to inform future translational research on the role of entorhinal subregions in fields ranging from clinical neuroscience, such as on the early progression of Alzheimer's disease, to cognitive neuroscience, for example, nature and mechanisms of different forms of memory and their integration into higher order representations (Eichenbaum and Lipton, 2008).\n\n## Materials and methods\n\n### Participants\n\n#### Navigation experiment\n\n26 participants took part in the study (11 females, age 19\u201336, mean 23 years). 22 entered the analysis and 4 were excluded due to excessive movement (number of instantaneous movements [Power et al., 2012] > 0.5 mm exceeded the mean plus 1 standard deviation). Materials and methods were approved by the local research ethics committee (CMO University Duisburg-Essen, Germany and CMO region Arnhem-Nijmegen, NL). Written informed consent was obtained from each participant for data analysis and publication of the study results.\n\n#### Resting-state dataset\n\nThe resting-state dataset consisted of the first 60 participants (41 females, age ranges: 4 between 22 and 25 years, 23 between 26 and 30 years and 33 between 31 and 35 years) of the WU-Minn Human Connectome Project (HCP) (Van Essen et al., 2013). The experiments were performed in accordance with relevant guidelines and regulations and all experimental protocol was approved by the Institutional Review Board (IRB) (IRB # 201204036; Title: \u2018Mapping the Human Connectome: Structure, Function, and Heritability\u2019). Written informed consent was obtained from each participant for data analysis and publication of the study results.\n\n#### Spatial and non-spatial stimulation\n\n21 participants (13 females, age 20\u201354, mean age 26 years) participated in the experiment. None of the participants participated in more than one experiment. Materials and methods were approved by the local research ethics committee (CMO University Duisburg-Essen, Germany and CMO region Arnhem-Nijmegen, NL). Written informed consent was obtained from each participant for data analysis and publication of the study results.\n\n### FMRI acquisition\n\n#### Navigation experiment\n\nBlood-oxygenation-level-dependent T2*-weighted functional images were acquired on a 7 T Siemens MAGNETOM scanner (Siemens Healthcare, Erlangen, Germany) using a three dimensional echo-planar imaging (3D EPI) pulse sequence (Poser et al., 2010) on a 32-channel surface coil: TR = 2.7 s, TE = 20 ms, flip angle = 14\u00b0, slice thickness = 0.92 mm, slice oversampling = 8.3%, in-plane resolution = 0.9^2 mm, field of view (FoV) = 210 mm in each direction, 96 slices, phase encoding acceleration factor = 4, 3D acceleration factor = 2. The first five volumes of the main scan were discarded to allow for T1 equilibration. A field map using a gradient echo sequence was recorded for distortion correction of the acquired EPI images.\n\n#### Resting-state dataset\n\nParticipants underwent four resting-state scanning sessions recorded on two days, each comprising 15 min multi-band accelerated (TR = 0.72 s) fMRI. The two scans from each day were concatenated into scans of 30 min. Each day one scan had a left-right phase encoding direction and the other a right-left phase encoding direction and concatenating the two scans allowed for correcting the ensuing opposing field inhomogeneities. Whole-brain images were acquired at 2 mm isotropic resolution and all data are publicly available. For details see Van Essen et al (Van Essen et al., 2013; Smith et al., 2013).\n\n#### Spatial and non-spatial stimulation\n\nThe same 7 T Siemens MAGNETOM scanner was used as for the navigation experiment. Procedures and acquisition parameters were the same unless described otherwise. TR = 2.1 s, TE = 25 ms, flip angle = 13\u00b0, slice oversampling = 10%, in-plane resolution = 1.5^2 mm, FoV = 224 mm in each direction, 80 slices, Phase Encoding acceleration factor = 3, 3D acceleration factor = 2. To allow for T1 equilibration, three (N = 11) or seven (N = 5) dummy volumes were discarded before the main scan.\n\n### Experimental tasks\n\n#### Navigation experiment\n\nParticipants performed an object-location memory task while freely navigating a 3D, virtual environment task adapted from Doeller et al. (Doeller et al, 2008; Doeller et al., 2010) (Figure 5A). In this self-paced task participants collected and replaced six everyday objects within a virtual arena. They collected each object from its associated location once during an initial trial, by running over it. In each subsequent trial they saw an image (cue) of one of the objects in the upper part of the screen and had to move to the object's associated location and press a button (replace phase). After this response, the object appeared in its associated position and participants collected it again (feedback phase). After an average of 3 trials (range 2\u20134 trials), a fixation cross on a grey background was presented for 4 s (inter-trial-interval, ITI). Next to the spatial aspects of the navigation task, non-spatial task components were present approximately half of the time. Therefore, the task engaged functions associated with both the PM and the AT network, respectively. Each scanning session was subdivided into EPI acquisition blocks of 210 volumes. Participants underwent an average of 5 blocks (\u00b11). Task-related effects from the navigation experiment are subject of another report.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06738/elife-06738-fig5-v1.jpg)\n\n**Figure 5.:** (A) Navigation experiment. First person view of the virtual arena that participants navigated freely to perform the object-location memory task. (B) Spatial and non-spatial stimulation. Left: An example stimulus of a \u2018non-spatial\u2019 object. Right: An example stimulus of a \u2018spatial\u2019 scene.\n\n#### Spatial and non-spatial stimulation\n\nParticipants were presented with pictures of spatial and non-spatial stimuli (see Figure 5B) and gave a trial-by-trial animacy judgement. Images of objects (non-spatial) and 12 images of scenes (spatial)\u2014as well as 24 images of two categories of animate stimuli not considered in the analyses\u2014were resized to 400 \u00d7 400 pixels and shown in grey shading and matched on their low-level features (luminance, contrast and spatial frequency) through the use of the SHINE toolbox (Spectrum, Histogram and Intensity Normalization and Equalization [Willenbockel et al., 2010]). Single stimuli were presented for 2 s followed by an ITI of variable duration (mean 5 s, range 1.5\u201310 s). The scanning sessions were subdivided into two runs of four blocks each, with a duration of approximately 27 min in duration per run.\n\n### Data pre-processing\n\n#### Navigation experiment\n\nData pre-processing was implemented through the use of the automatic analysis library (Cusack et al., 2015) (http://automaticanalysis.org/). Pre-processing included motion correction in SPM8 (http://www.fil.ion.ucl.ac.uk/spm), data de-noising with the FIX artifact removal procedure implemented in FSL 5.0.4 (http://fsl.fmrib.ox.ac.uk/fsl/) that has been trained manually on 10 of the 22 participants and nonlinear normalisation to a group-specific EPI template with the Advanced Neuroimaging Toolbox (Avants et al., 2011) (ANTS; http://www.picsl.upenn.edu/ANTS/). The use of a group-specific EPI template was feasible because of the anatomical detail provided by the sub-millimetre images. In addition, this rendered the registration to structural images unnecessary, which poses an additional source of noise because of regional differences in distortion of the 7 Tesla EPIs. The functional data were smoothed with a full-width at half-maximum (FWHM) Gaussian kernel of 2.5 mm3 (roughly 2.5 times the voxel size) to increase the SNR and improve ICA-based data de-noising with the FIX procedure (see above) while maintaining high spatial resolution for connectivity analyses. Correction for residual motion artefacts was performed with an ICA-based method, which has been shown to outperform motion scrubbing and spike-regression methods both in terms of reproducibility of resting-state networks and conservation of temporal degrees of freedom (Pruim et al., 2015a; Pruim et al., 2015b). In addition, brain extraction, tissue segmentation and high-pass filtering with a 128-s cut-off were carried out with FSL.\n\n#### Resting-state dataset\n\nThe publicly available data were pre-processed as described in Smith et al. (2013), which included correction for spatial distortions and head motion, registration to the T1 weighted structural image, resampling to 2 mm Montreal Neurological Institute (MNI) space, global intensity normalization, high-pass filtering with a cut-off at 2000s, and the FIX artefact removal procedure. Additionally, we smoothed the images with a 6 mm3 FWHM kernel and converted the time-series of each voxel to percent signal change by subtracting and dividing by their mean amplitude value over time.\n\n#### Spatial and non-spatial stimulation\n\nThe same pre-processing procedure was used as for the navigation experiment, unless described otherwise below. Since the voxel size was larger and only univariate analyses were conducted, we did not perform data de-noising with the FIX procedure. The functional data were smoothed with a FWHM kernel of 5 mm3 (roughly 2.5 times the voxel size) to increase the SNR.\n\n### ROI definitions\n\nFor the 7 Tesla experiments (navigation experiment and spatial and non-spatial stimulation experiment), an EC ROI was manually defined with ITK Snap 3.2 (Yushkevich et al., 2006) (http://www.itksnap.org) on the group-specific high-resolution mean EPI template from the navigation experiment. Manual segmentation on the group-specific EPI template circumvented registration problems between structural images and partly distorted functional images. Based on anatomical landmarks as described by Insausti et al., (1998) and Frank\u00f3 et al., (2014), the posterior border of the EC was set to \u223c1.5 mm posterior to the gyrus intralimbicus, the anterior border to \u223c1.5 mm posterior to the limen insulae, the lateral border to the midpoint of the medial bank of the collateral sulcus and the medial border to the hippocampal fissure at the level of the uncus. A medial EC and a lateral EC ROI of roughly equal volume were created by dividing the main ROI mediolaterally (which roughly corresponded to a proximo-distal division in relation to the hippocampus) on consecutive coronal slices along the entire anteroposterior axis. An anterior EC and a posterior EC ROI of roughly equal volume were created by dividing the main ROI mid-way between the most anterior and the most posterior coronal slice of the EC.\n\nFor the \u2018model-based\u2019 analysis, one ROI mask was created for the PM system and another one for the AT system. For this purpose we placed spheres of 4 mm radius on MNI coordinates associated with each system by Libby et al., (Libby et al., 2012) (see Table 1 for the selected coordinates). For the control analysis using the resting-state fMRI data from the Human Connectome Project, a probabilistic entorhinal ROI was generated using the Freesurfer toolbox (Augustinack et al., 2013). Freesurfer's cortical reconstruction algorithm (\u2018recon-all\u2019) was used on a T1 weighted MNI template image to generate an ROI mask of the EC with a probability threshold of 90% that was binarized and converted to NiFTI file format.\n\n### Seed-based connectivity analysis\n\nFor the quantification of the model-based analyses of connectivity between the AT and PM networks and the manually segmented medial and lateral or anterior and posterior EC, singular-value decomposition (SVD) and subtraction of the mean was performed on the voxel-wise time-series within each ROI. Next, functional connectivity was estimated by means of partial correlation analysis between the time-series of groups of ROIs. Finally, Pearson's partial correlation coefficients were Fisher-Z transformed and used for across-subject comparisons (Figure 1D). For the estimation of voxel-wise connectivity maps we used the \u2018dual_regression\u2019 function implemented in FSL 5.0.4 (http://fsl.fmrib.ox.ac.uk/fsl/). This involved using the time-series of pairs of seed regions as regressors in a GLM to estimate functional connectivity to voxels in a target region (Figure 1B, Figure 1C and Figure 1\u2014figure supplement 1) or to the rest of the brain (Figure 2D and Figure 3D). Finally, group-level statistics were computed with non-parametric randomisation tests (FSL 5.0.4, http://fsl.fmrib.ox.ac.uk/fsl/) and threshold-free cluster enhancement for null-hypothesis testing and the computation of p-value maps (Figure 2D and Figure 3D). All connectivity analyses were restricted to gray matter voxels.\n\n### Data-driven connectivity analysis\n\nTo overcome limitations of the seed-based connectivity analysis, we employed ConGrads (Haak et al., 2014), which allows for tracing the dominant modes of functional connectivity change within a pre-specified region of the brain in a fully data-driven manner. First, the fMRI time series from the EC were rearranged into a time-by-voxels matrix, which was also done for the fMRI time series of all gray-matter voxels outside the EC. For reasons of stability and computational tractability, we losslessly reduced the dimensionality of the data outside the EC using SVD. We determined the connectivity fingerprints of each voxel inside the EC by computing the correlation between the voxel-wise time series and the SVD-transformed data, and then used the \u03b72 coefficient to quantify the similarities among the voxel-wise fingerprints (Cohen et al., 2008). Next, we fed the ensuing similarity-matrix to the LE algorithm (Belkin and Niyogi, 2003), resulting in a series of vectors that represent the dominant modes of functional connectivity change. The LE algorithm and variants thereof have previously been successfully applied to trace changes in probabilistic tractography connectivity (Johansen-Berg et al., 2004; Cerliani et al., 2012), while in the context of resting-state fMRI, ConGrads has been shown to generate highly reproducible results in regions such as the human motor strip, both across sessions and participants (Haak et al., 2014). Note that group-level results were obtained by running the LE algorithm on the average of the individual similarity matrices and that the analysis was performed separately for left and right hemispheric EC ROIs.\n\nTo quantify how well the ensuing modes of connectivity change preserved the order of the similarities among the original, high-dimensional connectivity fingerprints (topology preservation) we used Spearman's rank correlation coefficient. Because the LE algorithm maximizes topology preservation, we report the correlation coefficients without p-values.\n\nClustering was performed on the high-resolution data from the navigation experiment by grouping voxels above and below the median value of each mode of functional connectivity change, which resulted in two equally sized clusters per mode of connectivity change. For the ROI analyses on the data of the spatial and non-spatial stimulation experiment, the clusters were warped into MNI space.\n\n### SNR estimation\n\ntSNR was determined by dividing the mean signal within a region by the standard deviation of that signal over time. Conversely, spatial SNR was determined by dividing the mean signal within a region by the standard deviation of the signal across voxels. This was done for each time point and spatial SNR was then averaged over time.\n\n### Motion scrubbing\n\nFirst, we determined time points where instantaneous movement (Power et al., 2012, 2015) exceeded a threshold of 0.5 mm. Then we excluded these time points (volumes) including the one preceding and the two thereafter from subsequent analyses. Hence, per instantaneous movement above threshold, four volumes were removed. On average this resulted in 121 volumes being removed from participant's time-series (range: 4\u2013300).\n\n### Univariate fMRI analyses\n\nThe data from the spatial and non-spatial stimulation experiment were analysed in native (subject-specific) space with general linear models that included regressors of interest for object and scene trials. Six movement regressors were included to account for movement-related noise. The regressors were convolved with the canonical hemodynamic response function and fitted to the time-series at each voxel in a whole-brain analysis. Single-subject contrast images were first normalised to a group-specific template and then to the MNI space. Group-level statistics were computed with non-parametric randomisation tests (FSL 5.0.4, http://fsl.fmrib.ox.ac.uk/fsl/) on the contrast images (objects vs scenes and scenes vs objects) using variance smoothing with a 5 mm3 kernel\u2014to improve the estimation of the variance that feeds into the final t-statistic.\n",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "3fb81155-ff9c-43fa-9584-23f03d2c53cb",
+      "submission_id": "27453acb-32ee-446f-b6b2-408389bb52ea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Eichenbaum, Boston University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06738.016](https://doi.org/10.7554/eLife.06738.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFunctional topography of the human entorhinal cortex\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this well written and interesting study, the authors used 7 Tesla ultra-high field functional magnetic resonance imaging to identify functional subdivisions of the human EC through the analysis of preferred connectivity with parahippocampal and perirhinal cortices. Aside from a solidly supported hypothesis on how connectional patterns might allow the definition of functionally different domains in the human entorhinal cortex, the authors addressed intrinsic connectivity of the EC. This study, as well as its counterpart study by Maass et al., should be welcomed and heralded as an important step forward to our understanding of how to functionally divide EC in humans.\n\n1) Like its counterpart paper, the study falls into a well-known trap of comparative anatomical studies in that chosen nomenclatures are taken to have implications that have never been intended, neither implicit nor explicit. How to define an area in the brain is one problem, how to find the homologue of an area defined in one species in a second species is another question. The authors take an originally cytoarchitectonically defined subdivision of EC into LEC and MEC as the starting point, adding connectivity patterns as the defining second criterion. They then look for connection patterns in the human and find two regions as well. That supports the conclusion that the functional homologues of LEC and MEC can be defined in humans based on the data available (Discussion). In the same sentence it is clearly stated that the LEC homologue is situated anterolateral, while the MEC homologue is to be found at a posteromedial position. Unfortunately, then the trap snaps; the authors then claim that this position is different from that in the rodent since LEC means lateral and MEC means medial. Although they are correct that the given names indicate a position, this is a rather unfortunate interpretation/nomenclature, because in the rodent and in several other species MEC has a posteromedial preferred position and LEC an anterolateral. Maybe a bit less extreme as in the monkey and human, but not all that different. Several papers on the primate brain, including both monkey and human data, unfortunately make the same mistake and assume that all that has a lateral position in EC is LEC and all with a medial position is MEC. The authors correctly conclude that this is likely incorrect, but do not make this explicit and therefore add to the confusion.\n\nA few examples of sentences that add to the confusion instead of clarifying it:\n\nIn the Introduction: \u201cFurthermore, the two subregions differ not only in structure and function, but also in their vulnerability to Alzheimer's disease-related pathology (Khan et al., 2013)\u201d. In Khan et al. 2013, the authors indeed use LEC to describe AD pathology, but they actually describe pathology in a longitudinal strip of EC that likely encompasses both LEC and MEC, both when one looks at cytoarchitectonics as well as monkey connectivity studies.\n\nIn the Results section: \u201cBased on studies in rodents, the two networks are hypothesised to connect to either the LEC or the MEC, respectively. Studies in non-human primates, however, predict that the two systems project to the anterior and posterior EC, respectively. In order to test both of these predictions\u2026\u201d Here the authors implicitly assume that LEC and MEC are two entities different from alEC and pmEC.\n\nIn the Discussion: \u201cHere, we show that a simple correspondence of MEC/LEC to the mediolateral axis in humans is not valid.\u201d This sentence, although literally true, implicitly contradicts the authors' own concluding statement that the functional homologue can be determined based on the outcome.\n\nAlso in the Discussion: \u201cPrevious neuroimaging studies in humans reported differences between medial and lateral entorhinal cortex that mimicked differences between the rodent MEC and LEC. In light of our findings, these reports could be explained by a partial overlap of the medial and lateral divisions with the pmEC and the alEC, respectively.\u201d Again, medial and lateral are here used as pure topological indicators, not as functional, hodological or cytoarchitural definition, so using LEC and MEC is confusing.\n\nTherefore, we strongly suggest that the authors start off with defining areas as alEC and pmEC, and state that other human studies used LEC and MEC to indicate lateral and medial strips of EC. In the remainder of the manuscript they should only use LEC and MEC when is clear that these are defined, not just indicating a position. This would lead and support their statement in the Discussion: \u201cHowever, the anatomical organisation and connectivity patterns are largely conserved across species and the characteristic projections from the PRC and PHC rather map on the anteroposterior axis in primates.\u201d\n\n2) The paper can be improved by adding a few simple analyses that can hopefully illustrate the results in a clear manner. Below are potential technical issues that the authors should address. These issues, described in more detail below, should be straightforward to deal with in the revision:\n\nA) The study elegantly demonstrates that pmEC and alEC show different patterns of whole-brain connectivity with extended posterior medial (PM) and anterior temporal (AT) neocortical networks. If we understand the methods, the authors used a single ROI for the entire PM network and one for the entire AT network. At least for illustrative purposes, it would be useful to present separate results for each sphere and each EC ROI. Ideally they could show a correlation matrix with the 4 EC ROIs (well, actually 8, as described in my next point) in columns and the individual PM and then AT ROI spheres in rows. Hopefully, on a quick scan of the matrix, readers will be able to see differences in the connectivity profiles of the anterior lateral and posterior medial EC ROIs.\n\nB) I did not see any mention of laterality. I might have missed it, but if the authors collapsed across hemispheres, I'd like them to consider also presenting results with separate left and right hemisphere ROIs. Doing so would provide a natural internal replication, because one would expect more extensive contralateral connectivity within the alEC regions and within the pmEC regions than between alEC and pmEC.\n\nC) Along the same lines as the first 2 points, it appears that the first set of a priori ROI analyses separately examine medial and lateral EC ROIs and anterior and posterior EC ROIs. If the authors planned to investigate both axes, wouldn't it make sense to include all 4 ROIs in a single factorial analysis with anterior-posterior and medial-lateral factors? If the analysis revealed an interaction, it would strengthen the case that the functional organization of the EC cuts across both axes.\n\n3) It might also help to present whole-brain maps (preferably on a surface rendering) for the contrast between anterior-lateral and posterior-medial ROI connectivity, so that readers can see which regions show differential connectivity. Alternatively, it might be preferable to show single-region connectivity maps.\n\n4A) In general, motion artifact is always a concern with functional connectivity analyses (summarized in Power et al., 2015), and more so when one considers that the EC is typically a site with significant signal dropout. It is surprising that these issues are not raised in the paper. We would like to know whether the pmEC and alEC (either defined arbitrarily or using the ConGrads approach) have different spatial or temporal SNR values.\n\nB) Also, the authors used ICA to deal with residual motion artifact, but it is not clear that ICA will adequately remove the effects of transient motion spikes while preserving the rest of the timeseries. It would be reassuring if the authors can replicate the results of at least one of the functional connectivity analyses by using motion scrubbing/censoring instead of ICA correction (see Power et al., 2015).\n\n5A) The ConGrads analysis is not clear. Giving the authors the benefit of the doubt (more so if they can present the simple analyses suggested above), but a better and simpler explanation of this method is needed. It sounds like a promising approach, but given that the method is not in widespread use, readers may be put off by the brief explanation.\n\nB) As a related issue, the meaning of the two \u201cconnectopies\u201d was difficult to figure out. It sounds like what the authors are saying is that there are two connectivity gradients, one anterior-posterior, and one that is lateral-medial. If so, it would be nice for the authors to spell this out, and to simplify the corresponding caption text for Figure 2 and Figure 3. Also, if the algorithm is pulling out two connectivity gradients, could the relationship be more simply and intuitively captured by a single al-to-pm gradient. If it does not distort the actual patterns in the data, the authors should consider somehow merging the two connectopies to create simple alEC and pmEC ROIs. At present, it is difficult for the reader to look at the figures and see a figure that convincingly depicts the functional topography that is described in the text.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cFunctional topography of the human entorhinal cortex\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and one of the original reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below.\n\nIn the revised manuscript, the authors have carefully addressed the comments about potential confusion in nomenclature when comparing the human brain to the non-human primate and rodent brain, in particular with respect to the subdivisions of EC. The manuscript has improved significantly, however there are still two remaining issues.\n\nFirst, the authors suggested to change their initially chosen nomenclature from anterolateral to posteromedial EC into temporal to septal EC. Though understandable, the choice is very counterintuitive, since the septotemporal nomenclature is typically used for the non-primate hippocampus where one tip of the hippocampus is topologically associated with the septal complex. This is not the case in the primate, and therefore, most authors elected to use an anterior-posterior nomenclature. I strongly urge the authors to maintain this convention, irrespective of their valid argument that the AP axis does not completely reflect the tilted orientation of the hippocampal and parahippocampal regions in the human. From what is said in the Results, it is clear that the authors seem ambivalent about their newly introduced nomenclature.\n\nIn addition, in view of the fact that this study nicely complements another study on subdivisions of the human EC by Maass et al., this provides a unique and important opportunity to establish a consistent human terminology for the entorhinal cortex. To really imprint a new terminology, this is the likely one and only chance to do so; it would be great if the two papers concur on a common terminology. Knowing the two author groups are in touch, the implementation of a common terminology should be feasible and highly welcome.\n",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef660928-566e-4a11-820c-754b06f4cbf3",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C1",
+      "claim": "The entorhinal cortex (EC) defines the interface between the hippocampus and the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The entorhinal cortex (EC)\u2014defining the interface between the hippocampus and the neocortex (Munoz and Insausti, 2005)\u2014plays a pivotal role in the integration of different sensory inputs into higher order mnemonic representations (Eichenbaum et al., 2007; Moser and Moser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Munoz and Insausti, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "a194a3c0-72a8-499e-89e4-49d790796baf",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C2",
+      "claim": "The entorhinal cortex plays a pivotal role in the integration of different sensory inputs into higher order mnemonic representations.",
+      "claim_type": "EXPLICIT",
+      "source": "The entorhinal cortex (EC)\u2014defining the interface between the hippocampus and the neocortex (Munoz and Insausti, 2005)\u2014plays a pivotal role in the integration of different sensory inputs into higher order mnemonic representations (Eichenbaum et al., 2007; Moser and Moser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eichenbaum et al., 2007 and Moser and Moser, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "ae6c42d4-8dfe-45a3-9057-fce7f39f54e6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C3",
+      "claim": "In rodents, the EC is typically subdivided into two major subregions, the medial- and the lateral entorhinal cortex (MEC and LEC, respectively), based on cytoarchitectonics.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents\u2014and on the basis of cytoarchitectonics\u2014the EC is typically (Kerr et al., 2007; Canto et al., 2008; Van Strien et al., 2009) subdivided into two major subregions, the medial- and the lateral entorhinal cortex (MEC and LEC, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kerr et al., 2007; Canto et al., 2008; Van Strien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "34caca92-ad0c-4e69-a550-8011e74f3d38",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C4",
+      "claim": "The MEC receives inputs about spatial information from parahippocampal cortex (PHC).",
+      "claim_type": "EXPLICIT",
+      "source": "The MEC receives inputs about spatial information from parahippocampal cortex (PHC) and the LEC receives item-related information from perirhinal cortex (PRC) (Van Strien et al., 2009; Deshmukh and Knierim, 2011; Ranganath and Ritchey, 2012; Knierim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Van Strien et al., 2009; Deshmukh and Knierim, 2011; Ranganath and Ritchey, 2012; Knierim et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "7434dd3a-7adc-4124-84eb-30b104c01921",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C5",
+      "claim": "The LEC receives item-related information from perirhinal cortex (PRC).",
+      "claim_type": "EXPLICIT",
+      "source": "The MEC receives inputs about spatial information from parahippocampal cortex (PHC) and the LEC receives item-related information from perirhinal cortex (PRC) (Van Strien et al., 2009; Deshmukh and Knierim, 2011; Ranganath and Ritchey, 2012; Knierim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Van Strien et al., 2009; Deshmukh and Knierim, 2011; Ranganath and Ritchey, 2012; Knierim et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "dd944e4d-9de2-4790-bb03-719004232db0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C6",
+      "claim": "Similar functional roles of the PHC and PRC have been described in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar functional roles of the PHC and PRC have been described in humans (Epstein and Kanwisher, 1998; Davachi et al., 2003; Eichenbaum et al., 2007; Ekstrom and Bookheimer, 2007; Litman et al., 2009; Duarte et al., 2011; Staresina et al., 2011; Martin et al., 2013; Vilberg and Davachi, 2013) and relate to distinct visual processing streams (Kravitz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to human studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "de982d42-8010-4bd4-a1fa-b4d9ec77e6d6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C7",
+      "claim": "The functional roles of PHC and PRC relate to distinct visual processing streams.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar functional roles of the PHC and PRC have been described in humans (Epstein and Kanwisher, 1998; Davachi et al., 2003; Eichenbaum et al., 2007; Ekstrom and Bookheimer, 2007; Litman et al., 2009; Duarte et al., 2011; Staresina et al., 2011; Martin et al., 2013; Vilberg and Davachi, 2013) and relate to distinct visual processing streams (Kravitz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kravitz et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "631bb7e1-b60d-4c14-9359-481a1578241e",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C8",
+      "claim": "The MEC contains a high proportion of head-direction and grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The MEC contains a high proportion of head-direction and grid cells, whose activity is modulated by running direction and spatial location, respectively (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hafting et al., 2005 and Sargolini et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "7c489bfd-0575-410d-a7df-c0b07f0ab1ec",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C9",
+      "claim": "Grid cell activity is modulated by spatial location.",
+      "claim_type": "EXPLICIT",
+      "source": "The MEC contains a high proportion of head-direction and grid cells, whose activity is modulated by running direction and spatial location, respectively (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hafting et al., 2005 and Sargolini et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "06e74339-a623-4a9b-97a5-511d97599bae",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C10",
+      "claim": "Head-direction cell activity is modulated by running direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The MEC contains a high proportion of head-direction and grid cells, whose activity is modulated by running direction and spatial location, respectively (Hafting et al., 2005; Sargolini et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hafting et al., 2005 and Sargolini et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "16f131ca-9862-4efa-ac0f-354a20c47547",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C11",
+      "claim": "Cells in the LEC respond to individual objects in the environment rather than to specific locations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells in the LEC respond to individual objects in the environment rather than to specific locations (Deshmukh and Knierim, 2011; Tsao et al., 2013; Knierim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Deshmukh and Knierim, 2011; Tsao et al., 2013; Knierim et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "d3a0bb6a-5332-4937-8ffe-d29771b956f0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C12",
+      "claim": "AD pathology starts in the EC.",
+      "claim_type": "EXPLICIT",
+      "source": "This hampers translational studies, which is particularly relevant in the case of Alzheimer's disease (AD) with AD pathology starting in the EC (Braak and Braak, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Braak and Braak, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "fda37d8a-80d7-4eb3-a6c8-f6f61c3a4b8e",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C13",
+      "claim": "Within the EC, the vulnerability to AD-related pathology is not homogeneously distributed and differs between medial and lateral strips in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the EC, the vulnerability to AD-related pathology is not homogeneously distributed and differs between medial and lateral strips in humans, which has been related to similar findings in the rodent MEC and LEC, respectively (Khan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Khan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "7928d3ff-cc4d-4b01-be9a-38aa5a5adeec",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C14",
+      "claim": "The MEC is located medially in the septal (posterior) part of the EC in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the MEC is located medially in the septal (posterior) part of the EC and the LEC is located laterally in the temporal (anterior) part of the EC in rodents (Van Strien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Van Strien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "f2f1c50a-6bd2-459a-a1a3-3e53bfcc56ce",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C15",
+      "claim": "The LEC is located laterally in the temporal (anterior) part of the EC in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the MEC is located medially in the septal (posterior) part of the EC and the LEC is located laterally in the temporal (anterior) part of the EC in rodents (Van Strien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Van Strien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "9799d06f-08be-4182-9bbe-c884b5a1b1f6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C16",
+      "claim": "Tracing studies on PHC and PRC pathways in non-human primates suggest a dominant anterior-posterior division.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, tracing studies on PHC and PRC pathways in non-human primates suggest a dominant anterior-posterior division (Suzuki and Amaral, 1994; Insausti and Amaral, 2008), as do single-unit recordings that show activity consistent with the rodent LEC in the anterior EC in primates (Killian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Suzuki and Amaral, 1994 and Insausti and Amaral, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "1cfd6c3b-5ac7-4901-a317-99546fe50ce6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C17",
+      "claim": "Single-unit recordings show activity consistent with the rodent LEC in the anterior EC in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, tracing studies on PHC and PRC pathways in non-human primates suggest a dominant anterior-posterior division (Suzuki and Amaral, 1994; Insausti and Amaral, 2008), as do single-unit recordings that show activity consistent with the rodent LEC in the anterior EC in primates (Killian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Killian et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "bfa43999-cc19-42e5-ad44-2c0bab632a14",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C18",
+      "claim": "Neuroimaging studies on memory in healthy participants suggest that the rodent MEC and LEC map on medial and lateral strips of EC in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neuroimaging studies on memory in healthy participants (Schultz et al., 2012; Reagh and Yassa, 2014) and participants with preclinical AD (Khan et al., 2014) suggest that the rodent MEC and LEC map on medial and lateral strips of EC in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schultz et al., 2012 and Reagh and Yassa, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "ed5a2740-94e3-41e1-8dc7-7978c54b68d5",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C19",
+      "claim": "The EC is 25\u201330 mm2 in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve this discrepancy in the literature, one needs to investigate the relatively small EC (25\u201330 mm2 in humans) (Krimer et al., 1997) with high anatomical precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Krimer et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "1cec934f-9dcb-46ec-b20c-477db421f102",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C20",
+      "claim": "MEC and LEC exhibit differential connectivity with cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it has been shown that MEC and LEC exhibit differential connectivity with cortical regions (Witter and Groenewegen, 1989; Kerr et al., 2007; Van Strien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Witter and Groenewegen, 1989; Kerr et al., 2007; Van Strien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "1d11bc5e-f86d-462b-9d39-b2153ee74fb0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C21",
+      "claim": "Differential fingerprints of anatomical connectivity should lead to differences in functional connectivity identifiable with fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential fingerprints of anatomical connectivity should lead to differences in functional connectivity identifiable with fMRI (Johansen-Berg et al., 2004; Buckner et al., 2013; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Johansen-Berg et al., 2004; Buckner et al., 2013; Wang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "30c1bed1-1ffb-407e-b02d-7bee1201d2a0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C22",
+      "claim": "A recent model on cortical memory networks posits that an anterior-temporal (AT) system converges on the PRC and a posterior-medial (PM) system on the PHC.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent model on cortical memory networks (Ranganath and Ritchey, 2012) posits that an anterior-temporal (AT) system converges on the PRC and a posterior-medial (PM) system on the PHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ranganath and Ritchey, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "928cb38c-3e67-4ab1-bf37-718d41c95959",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C23",
+      "claim": "Based on studies in rodents, the two networks are hypothesised to connect to either the LEC or the MEC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on studies in rodents, the two networks are hypothesised to connect to either the LEC or the MEC, respectively (Witter and Groenewegen, 1989; Kerr et al., 2007; Van Strien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Witter and Groenewegen, 1989; Kerr et al., 2007; Van Strien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "81045ccd-a28f-48dd-a56d-e27194bb1d1a",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C24",
+      "claim": "Studies in non-human primates predict that the entorhinal projections of the two systems show a strong anteroposterior division.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in non-human primates predict that the entorhinal projections of the two systems show a strong anteroposterior division (Suzuki and Amaral, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suzuki and Amaral, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "091b8bab-5b58-4d09-9abc-e2064ef821b6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C25",
+      "claim": "There was a main effect of network on entorhinal connectivity (repeated-measures ANOVA: F(1,21) = 10.0, p = 0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a main effect of network on entorhinal connectivity (repeated-measures ANOVA: F(1,21) = 10.0, p = 0.005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from the navigation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "b58a15b3-c6e6-47a7-92a5-017f05f7bf8c",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C26",
+      "claim": "The lateral parts of EC connected stronger to the AT compared to the PM network (T(21) = 2.6, p = 0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "Post-hoc t-tests revealed that the lateral parts of EC connected stronger to the AT compared to the PM network (T(21) = 2.6, p = 0.015; medial parts of EC: T(21) = \u22120.2 p = 0.83).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from the navigation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "2f25ff7b-6e27-4e5d-9d2a-148111df6926",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C27",
+      "claim": "Medial parts of EC did not show differential connectivity between AT and PM networks (T(21) = \u22120.2 p = 0.83).",
+      "claim_type": "EXPLICIT",
+      "source": "Post-hoc t-tests revealed that the lateral parts of EC connected stronger to the AT compared to the PM network (T(21) = 2.6, p = 0.015; medial parts of EC: T(21) = \u22120.2 p = 0.83).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from the navigation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "17073d5c-026f-423d-9e5f-276fbd8a39d6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C28",
+      "claim": "There was a connectivity difference along the anteroposterior axis (repeated-measures ANOVA: main effect of network, F(1,21) = 13.2, p = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to previous suggestions, we additionally observed a connectivity difference along the anteroposterior axis (repeated-measures ANOVA: main effect of network, F(1,21) = 13.2, p = 0.001) and post-hoc t-tests showed that the anterior parts of EC connected more with the AT compared to the PM network (T(21) = 2.7: p = 0.01; posterior EC: T(21) = \u22120.49, p = 0.63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from the navigation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "4e2ef20b-412c-42d1-ad63-91389cce2a2e",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C29",
+      "claim": "The anterior parts of EC connected more with the AT compared to the PM network (T(21) = 2.7: p = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to previous suggestions, we additionally observed a connectivity difference along the anteroposterior axis (repeated-measures ANOVA: main effect of network, F(1,21) = 13.2, p = 0.001) and post-hoc t-tests showed that the anterior parts of EC connected more with the AT compared to the PM network (T(21) = 2.7: p = 0.01; posterior EC: T(21) = \u22120.49, p = 0.63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from the navigation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "a6c553b3-ba6d-4fea-baa2-3db1af783660",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C30",
+      "claim": "Posterior EC did not show differential connectivity between AT and PM networks (T(21) = \u22120.49, p = 0.63).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to previous suggestions, we additionally observed a connectivity difference along the anteroposterior axis (repeated-measures ANOVA: main effect of network, F(1,21) = 13.2, p = 0.001) and post-hoc t-tests showed that the anterior parts of EC connected more with the AT compared to the PM network (T(21) = 2.7: p = 0.01; posterior EC: T(21) = \u22120.49, p = 0.63).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental data from the navigation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "c2b20417-e691-4db0-a88c-f6c43ffde0ec",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C31",
+      "claim": "The dominant mode of functional connectivity change extended along the long-axis of the EC, approximately from the posterior to the anterior end.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to the fMRI data acquired while subjects performed the virtual-reality task, we observed that the dominant mode of functional connectivity change extended along the long-axis of the EC, approximately from the posterior to the anterior end (Figure 2 and Figure 2\u2014figure supplement 1), while the orientation of the second was largely perpendicular (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data-driven connectivity analysis results shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "fefd7c64-4987-4067-85fa-ea5ca4ec7ec8",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C32",
+      "claim": "The orientation of the second-dominant mode of connectivity change was largely perpendicular to the first.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to the fMRI data acquired while subjects performed the virtual-reality task, we observed that the dominant mode of functional connectivity change extended along the long-axis of the EC, approximately from the posterior to the anterior end (Figure 2 and Figure 2\u2014figure supplement 1), while the orientation of the second was largely perpendicular (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data-driven connectivity analysis results shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "fdd16c94-7a9b-46dd-baa8-7cc82e9ddc99",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C33",
+      "claim": "Both modes of connectivity change could be reliably detected using an independent resting-state fMRI dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Both modes of connectivity change could also be reliably detected using an independent resting-state fMRI dataset (60 subjects of the WU-Minn Human Connectome Project; see 'Materials and methods'), suggesting that the organization of EC functional connectivity is largely task-independent (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of independent resting-state data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "0c1dfac9-f868-47af-8050-cf954bbfb94f",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C34",
+      "claim": "The organization of EC functional connectivity is largely task-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Both modes of connectivity change could also be reliably detected using an independent resting-state fMRI dataset (60 subjects of the WU-Minn Human Connectome Project; see 'Materials and methods'), suggesting that the organization of EC functional connectivity is largely task-independent (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the reproducibility of connectivity patterns across task and resting-state data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "76c1b7dc-b5ba-43fa-aab1-125c4ebe9b76",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C35",
+      "claim": "The first dominant mode of functional connectivity change was highly reproducible across resting-state sessions (Pearson's R = 0.99, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the first and second-dominant modes of functional connectivity change were highly reproducible across resting-state sessions (Pearson's R = 0.99, p < 0.001 and Pearson's R = 0.98, p < 0.001, for the dominant and second-dominant modes, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of resting-state data reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "33f0bb41-fa34-41cb-9a4a-db12629ac5c6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C36",
+      "claim": "The second-dominant mode of functional connectivity change was highly reproducible across resting-state sessions (Pearson's R = 0.98, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the first and second-dominant modes of functional connectivity change were highly reproducible across resting-state sessions (Pearson's R = 0.99, p < 0.001 and Pearson's R = 0.98, p < 0.001, for the dominant and second-dominant modes, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of resting-state data reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "c56fda5f-8d44-44a7-8a6f-d01c3ea98172",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C37",
+      "claim": "One division contained the posterior EC and the other division included most of the anterior EC.",
+      "claim_type": "EXPLICIT",
+      "source": "3D-rendering of the two clusters derived from the dominant mode of connectivity change revealed a consistent topology across hemispheres (Figure 2B, Video 1). One division contained the posterior EC (Figure 2\u2014figure supplement 1\u2014displayed in blue). The other division included most of the anterior EC (Figure 2\u2014figure supplement 1\u2014displayed in red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 3D rendering and visualization shown in Figure 2B, Video 1, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "dc03f439-877a-4c9d-b083-ee8dcd5b5217",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C38",
+      "claim": "The posterior cluster was located more medially (and to some extent more dorsally) and the anterior cluster was located more laterally (and to some extent more ventrally).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the dominant anterior-posterior distinction, the posterior cluster was located more medially (and to some extent more dorsally) and the anterior cluster was located more laterally (and to some extent more ventrally).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by spatial analysis of cluster locations from the data-driven connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "5e3be74e-ebe8-44b3-9766-4514e598d73f",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C39",
+      "claim": "Group-level contrasts showed peaks in the medial-prefrontal and orbitofrontal cortex for the alEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Group-level contrasts showed peaks in the medial-prefrontal and orbitofrontal cortex for the alEC, regions associated with the AT system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-volume connectivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "0a24c346-9e50-441d-bae0-b71aa390b4f7",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C40",
+      "claim": "Occipital and posterior-parietal cortex was dominated by connectivity with the pmEC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, occipital and posterior-parietal cortex was dominated by connectivity with the pmEC, areas associated with the PM system (Ranganath and Ritchey, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-volume connectivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "8f8b5abf-42af-4773-a3ff-69793e936e07",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C41",
+      "claim": "The pmEC showed increased connectivity with frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the pmEC showed increased connectivity with frontal regions (see Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by connectivity analysis results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "1ec4b432-62b4-4e99-b7fc-fce770cad53b",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C42",
+      "claim": "These findings are in line with the patterns of reciprocal connections of the rodent LEC and MEC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in line with the patterns of reciprocal connections of the rodent LEC and MEC, respectively (Kerr et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with known rodent connectivity patterns cited from Kerr et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "199bc2fb-9a3a-4d17-92f4-de8ef17a13ff",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C43",
+      "claim": "tSNR did not differ between alEC and pmEC (T(21) = 0.2, p = 0.83).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we examined both spatial and temporal SNR (tSNR) of the alEC and the pmEC (Figure 2\u2014figure supplement 3). tSNR did not differ between alEC and pmEC (T(21) = 0.2, p = 0.83) but spatial SNR did (T(21) = 9.7, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of SNR data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "9b6c8818-2f9f-4aec-ae64-539014cb2ca6",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C44",
+      "claim": "Spatial SNR differed between alEC and pmEC (T(21) = 9.7, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we examined both spatial and temporal SNR (tSNR) of the alEC and the pmEC (Figure 2\u2014figure supplement 3). tSNR did not differ between alEC and pmEC (T(21) = 0.2, p = 0.83) but spatial SNR did (T(21) = 9.7, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of SNR data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "37c9e63f-a326-4354-b69c-1652553be964",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C45",
+      "claim": "Signal was higher in the pmEC compared to the alEC (mean signal: alEC = 4.97; mean signal pmEC = 7.76; T(21) = 38, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "This was associated with higher signal in the pmEC compared to the alEC (mean signal: alEC = 4.97; mean signal pmEC = 7.76; T(21) = 38, p < 0.001) in the absence of differences in spatial standard deviation (T(21) = 1.5, p = 0.144).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of signal intensity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "ae7a46c3-b458-4f23-8203-97a569e07530",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C46",
+      "claim": "There were no differences in spatial standard deviation between alEC and pmEC (T(21) = 1.5, p = 0.144).",
+      "claim_type": "EXPLICIT",
+      "source": "This was associated with higher signal in the pmEC compared to the alEC (mean signal: alEC = 4.97; mean signal pmEC = 7.76; T(21) = 38, p < 0.001) in the absence of differences in spatial standard deviation (T(21) = 1.5, p = 0.144).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of signal variability data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "67c4d629-7289-4ebb-957d-f3cfbaa65e2d",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C47",
+      "claim": "Mean signal was subtracted from time-series prior to all connectivity analyses, which makes it unlikely that signal intensity differences affected the connectivity results.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, that mean signal was subtracted from time-series prior to all connectivity analyses (see 'Materials and methods'), which makes it unlikely that signal intensity differences affected the connectivity results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the preprocessing procedure described in the methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "e3458070-3ad3-4082-b5f5-930838e772b7",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C48",
+      "claim": "Motion scrubbing had only minimal effects on the results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we additionally repeated the data-driven connectivity analysis after excluding time periods with large head movements (motion scrubbing [Power et al., 2012, 2015]). Motion scrubbing had only minimal effects on the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of results before and after motion scrubbing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "6b6e60a2-e263-4119-adb2-8fe785f6d757",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C49",
+      "claim": "Pearson correlation coefficients of the pre- and post scrubbing results were close to 1 and highly significant (gradient one: left R = 0.9964, right R = 0.9958; gradient two: left = 0.9348, right = 0.8816; all p values <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation coefficients of the pre- and post scrubbing results were close to 1 and highly significant (gradient one: left R = 0.9964, right R = 0.9958; gradient two: left = 0.9348, right = 0.8816; all p values <0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of results before and after motion scrubbing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "f45738af-2917-45bf-b748-bc69fa1dec3a",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C50",
+      "claim": "Homologous connectivity exceeded non-homologous connectivity (T(21) = 4.05, p = 0.0006).",
+      "claim_type": "EXPLICIT",
+      "source": "Here we observed that homologous connectivity indeed exceeded non-homologous connectivity (Figure 2\u2014figure supplement 4). Importantly, this was also the case if non-homologous connectivity was assessed within the same hemisphere, between adjacent parts of the EC (T(21) = 4.05, p = 0.0006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of connectivity patterns shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "84683a4b-d0ae-4310-bbda-11c1bd55d9e0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C51",
+      "claim": "Higher responses to spatial than non-spatial stimuli were observed in the posterior EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed higher responses to spatial than non-spatial stimuli in the posterior EC, while the inverse contrast (objects vs scenes) showed higher responses in the anterior EC (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by univariate fMRI analysis results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "37a502c9-6448-48a6-9d87-a6f7c622a36f",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C52",
+      "claim": "The inverse contrast (objects vs scenes) showed higher responses in the anterior EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed higher responses to spatial than non-spatial stimuli in the posterior EC, while the inverse contrast (objects vs scenes) showed higher responses in the anterior EC (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by univariate fMRI analysis results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "48d00188-59ae-4cb3-bbe1-de9e3fa8bd67",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C53",
+      "claim": "The anterior-lateral cluster showed higher sensitivity to non-spatial stimuli compared to the PM cluster (T(20) = 4.9, p = 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "ROI analyses using the clusters derived from the dominant mode of connectivity change revealed that the anterior-lateral cluster showed higher sensitivity to non-spatial stimuli compared to the PM cluster (T(20) = 4.9, p = 0.0001, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROI analysis results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "3d3af132-5c65-4a7d-8250-10779a37c51b",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C54",
+      "claim": "This dissociation was not present for the clusters that were derived from the second-dominant mode of connectivity change within the EC (T(20) = \u22120.26, p = 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "This dissociation was not present for the clusters that were derived from the second-dominant mode of connectivity change within the EC (T(20) = \u22120.26, p = 0.8; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROI analysis results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "ba321661-d0e3-4b9b-982d-fe50c5538a24",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C55",
+      "claim": "The human homologue of the rodent MEC maps predominantly on the human posterior parts of the EC.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our results suggest that the human homologue of the rodent MEC maps predominantly on the human posterior parts of the EC, while the homologue of the rodent LEC maps predominantly on the anterior parts of the EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of connectivity and functional sensitivity analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "79b3e6a8-7280-4627-ac38-e476f32761cb",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C56",
+      "claim": "The homologue of the rodent LEC maps predominantly on the anterior parts of the EC.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our results suggest that the human homologue of the rodent MEC maps predominantly on the human posterior parts of the EC, while the homologue of the rodent LEC maps predominantly on the anterior parts of the EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of connectivity and functional sensitivity analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "bfbbe208-8284-46a9-9629-fff13b2c50db",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C57",
+      "claim": "The EC, in concert with the hippocampus, plays a crucial role in memory and learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The EC, in concert with the hippocampus, plays a crucial role in memory and learning (Eichenbaum et al., 2007) and is the core of the brain's navigational system (Moser and Moser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eichenbaum et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "ea47d76d-66c1-4cb5-a1f3-e156c747f814",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C58",
+      "claim": "The EC is the core of the brain's navigational system.",
+      "claim_type": "EXPLICIT",
+      "source": "The EC, in concert with the hippocampus, plays a crucial role in memory and learning (Eichenbaum et al., 2007) and is the core of the brain's navigational system (Moser and Moser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Moser and Moser, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "de854266-fccd-4781-8eb5-b016e9bca222",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C59",
+      "claim": "The anatomical organisation and connectivity patterns of the EC are largely conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "While the shape and location of the EC differs between rodents and primates (Witter and Groenewegen, 1989), the anatomical organisation and connectivity patterns are largely conserved across species (Canto et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Witter and Groenewegen, 1989 and Canto et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "e2be84f9-a604-49bd-921b-effa83482089",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C60",
+      "claim": "The shape and location of the EC differs between rodents and primates.",
+      "claim_type": "EXPLICIT",
+      "source": "While the shape and location of the EC differs between rodents and primates (Witter and Groenewegen, 1989), the anatomical organisation and connectivity patterns are largely conserved across species (Canto et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Witter and Groenewegen, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "336f1026-5130-4944-973d-9a3687743c95",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C61",
+      "claim": "It is unlikely that medial and lateral strips of EC in humans correspond to the rodent MEC and LEC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the anatomical locations of these cytoarchitectonically defined regions in rodents differ along more than only the mediolateral axis. More specifically, the LEC is situated more anterior-ventrally, whereas the MEC is situated more posterior-dorsally in rodents (Van Strien et al., 2009). Therefore, it is unlikely that medial and lateral strips of EC in humans correspond to the rodent MEC and LEC, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the anatomical differences between rodent and human EC organization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "8e41eb4d-4c33-4273-b488-d5f1ea6cd700",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C62",
+      "claim": "In primates the characteristic projections from the PRC and PHC strongly map onto the anteroposterior axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in primates the characteristic projections from the PRC and PHC strongly map onto the anteroposterior axis (Suzuki and Amaral, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Suzuki and Amaral, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "e03b99a5-5e96-4042-9d23-3c107072761e",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C63",
+      "claim": "Both model-based and data-driven connectivity analyses, as well as sensitivity to non-spatial vs spatial stimuli provide evidence for an anterior-lateral and a PM localisation of the homologues of the rodent LEC and MEC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we leveraged the distinct connectivity fingerprints and functional roles (such as complementary computation of scene and object information) of the rodent LEC and MEC to find their human homologues with fMRI with three complementary methods and three independent datasets. Both model-based and data-driven connectivity analyses, as well as sensitivity to non-spatial vs spatial stimuli provide evidence for an anterior-lateral and a PM localisation of the homologues of the rodent LEC and MEC, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main findings from multiple analyses across three datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "07bbbfd9-8da2-442e-bedc-4e05f1017187",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C64",
+      "claim": "Maass et al confirmed these findings in a study with two high-resolution, high-field fMRI datasets by focusing on local connectivity between regions of the medial temporal lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Maass et al confirmed these findings in a study with two high-resolution, high-field fMRI datasets by focusing on local connectivity between regions of the medial temporal lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Maass et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "75320c02-e522-41d5-b265-7de1fbef913a",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C65",
+      "claim": "Maass et al found preferential connectivity of PRC and proximal subiculum to anterior-lateral parts of the EC.",
+      "claim_type": "EXPLICIT",
+      "source": "They found preferential connectivity of PRC and proximal subiculum to anterior-lateral parts of the EC, whereas posterior-medial parts of the EC were more connected to PHC and distal subiculum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to findings from Maass et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "a4e3522f-db43-4b03-8cab-895e99c1f397",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C66",
+      "claim": "Posterior-medial parts of the EC were more connected to PHC and distal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "They found preferential connectivity of PRC and proximal subiculum to anterior-lateral parts of the EC, whereas posterior-medial parts of the EC were more connected to PHC and distal subiculum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to findings from Maass et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "8352772e-f2b8-4b4e-8aa9-cd417d7d9f68",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C67",
+      "claim": "The data-driven connectivity analysis revealed a second organisation structure approximately perpendicular to the first.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the change in functional connectivity from PM to anterior-lateral, our data-driven connectivity analysis also revealed a second organisation structure approximately perpendicular to the first (Figure 3\u2014figure supplement 1), which might reflect bands of intra-entorhinal projections that are known to cross the LEC/MEC boundary in a roughly orthogonal orientation in rodents (Canto et al., 2008) and in primates (Chrobak and Amaral, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data-driven connectivity analysis results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "47406d26-bbab-4eca-8e27-49934cebad33",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C68",
+      "claim": "The second organisation structure might reflect bands of intra-entorhinal projections that are known to cross the LEC/MEC boundary in a roughly orthogonal orientation in rodents and in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the change in functional connectivity from PM to anterior-lateral, our data-driven connectivity analysis also revealed a second organisation structure approximately perpendicular to the first (Figure 3\u2014figure supplement 1), which might reflect bands of intra-entorhinal projections that are known to cross the LEC/MEC boundary in a roughly orthogonal orientation in rodents (Canto et al., 2008) and in primates (Chrobak and Amaral, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on comparison with known anatomical projections cited from Canto et al., 2008 and Chrobak and Amaral, 2007.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "3a0f6b95-b942-4a6f-ad61-3fc67c877ee0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C69",
+      "claim": "The present findings confirm three out of four complementary criteria for the definition of cortical areas: topographic organization, connectivity and functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the present findings confirm three out of four complementary criteria for the definition of cortical areas that have traditionally been advocated (Van Essen, 1985), namely topographic organization, connectivity and functional properties (the fourth one being cyto- and myeloarchitectonic organization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with established criteria for cortical area definition cited from Van Essen, 1985.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "77560621-2abb-4f93-a213-01eda15d5cd9",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C70",
+      "claim": "Previous neuroimaging studies in humans reported differences between medial and lateral aspects of EC that mimicked differences between the rodent MEC and LEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous neuroimaging studies in humans reported differences between medial and lateral aspects of EC that mimicked differences between the rodent MEC and LEC and assumed that both subregions are present on coronal slices of the EC (Schultz et al., 2012; Khan et al., 2014; Reagh and Yassa, 2014), that is, that the MEC and LEC correspond to medial and lateral strips of the EC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schultz et al., 2012; Khan et al., 2014; Reagh and Yassa, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "f3f24930-abd8-4ece-a341-7387b4bdd798",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C71",
+      "claim": "These reports could be explained by a partial overlap of the medial and lateral divisions with the pmEC and the alEC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of our findings, these reports could be explained by a partial overlap of the medial and lateral divisions with the pmEC and the alEC, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the current findings to explain previous results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "f6be11e1-14b8-4032-869d-d4a270c70cb3",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C72",
+      "claim": "Coronal slices through the most posterior EC exclusively harbour the human homologue of the rodent MEC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results suggest that coronal slices through the most posterior EC exclusively harbour the human homologue of the rodent MEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the spatial distribution of the pmEC cluster.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "c0c052df-500f-4975-a59d-0da8d1537680",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C73",
+      "claim": "Anterior slices appear to contain mostly the homologue of the rodent LEC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, anterior slices appear to contain mostly the homologue of the rodent LEC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the spatial distribution of the alEC cluster.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "234951c6-c1d3-466e-80e5-cd903cd62893",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C74",
+      "claim": "Improved mapping of homologous regions between rodents and humans should lead to increased effect sizes and more accurate interpretations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, improved mapping of homologous regions between rodents and humans should lead to increased effect sizes and more accurate interpretations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative prediction based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "bae7c0c1-d975-4048-bbbf-f20ee337b6b8",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C75",
+      "claim": "26 participants took part in the navigation experiment study.",
+      "claim_type": "EXPLICIT",
+      "source": "26 participants took part in the study (11 females, age 19\u201336, mean 23 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "66caee1c-b739-4c36-b2e2-70f4b5ca9fa0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C76",
+      "claim": "22 participants entered the analysis and 4 were excluded due to excessive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "22 entered the analysis and 4 were excluded due to excessive movement (number of instantaneous movements [Power et al., 2012] > 0.5 mm exceeded the mean plus 1 standard deviation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the study design and data quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "6dfa627d-f44c-4e92-8a2b-b5d5150a1ca5",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C77",
+      "claim": "The resting-state dataset consisted of the first 60 participants of the WU-Minn Human Connectome Project (HCP).",
+      "claim_type": "EXPLICIT",
+      "source": "The resting-state dataset consisted of the first 60 participants (41 females, age ranges: 4 between 22 and 25 years, 23 between 26 and 30 years and 33 between 31 and 35 years) of the WU-Minn Human Connectome Project (HCP) (Van Essen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the dataset used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "043bf1c7-bf50-4db4-b96d-3309d1699cd1",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C78",
+      "claim": "21 participants participated in the spatial and non-spatial stimulation experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "21 participants (13 females, age 20\u201354, mean age 26 years) participated in the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "5856be78-a07e-4650-9656-0645af101fe0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C79",
+      "claim": "Blood-oxygenation-level-dependent T2*-weighted functional images were acquired on a 7 T Siemens MAGNETOM scanner using a three dimensional echo-planar imaging (3D EPI) pulse sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood-oxygenation-level-dependent T2*-weighted functional images were acquired on a 7 T Siemens MAGNETOM scanner (Siemens Healthcare, Erlangen, Germany) using a three dimensional echo-planar imaging (3D EPI) pulse sequence (Poser et al., 2010) on a 32-channel surface coil: TR = 2.7 s, TE = 20 ms, flip angle = 14\u00b0, slice thickness = 0.92 mm, slice oversampling = 8.3%, in-plane resolution = 0.9^2 mm, field of view (FoV) = 210 mm in each direction, 96 slices, phase encoding acceleration factor = 4, 3D acceleration factor = 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the imaging methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "95794501-648a-469c-bfbc-52b4da3d43ba",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C80",
+      "claim": "Participants performed an object-location memory task while freely navigating a 3D, virtual environment task adapted from Doeller et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants performed an object-location memory task while freely navigating a 3D, virtual environment task adapted from Doeller et al. (Doeller et al, 2008; Doeller et al., 2010) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a factual statement about the experimental task, with reference to Figure 5A and citations to Doeller et al., 2008 and Doeller et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "405914c9-e8b0-4223-a180-056100edd119",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C81",
+      "claim": "Participants were presented with pictures of spatial and non-spatial stimuli and gave a trial-by-trial animacy judgement.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were presented with pictures of spatial and non-spatial stimuli (see Figure 5B) and gave a trial-by-trial animacy judgement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a factual statement about the experimental task, with reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "b6f20913-5750-403d-9067-1f9a3f84f26f",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C82",
+      "claim": "Data pre-processing included motion correction in SPM8, data de-noising with the FIX artifact removal procedure implemented in FSL 5.0.4, and nonlinear normalisation to a group-specific EPI template with the Advanced Neuroimaging Toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-processing included motion correction in SPM8 (http://www.fil.ion.ucl.ac.uk/spm), data de-noising with the FIX artifact removal procedure implemented in FSL 5.0.4 (http://fsl.fmrib.ox.ac.uk/fsl/) that has been trained manually on 10 of the 22 participants and nonlinear normalisation to a group-specific EPI template with the Advanced Neuroimaging Toolbox (Avants et al., 2011) (ANTS; http://www.picsl.upenn.edu/ANTS/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "3ec1fe42-e2f8-42ae-9666-5d4ee3b1700c",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C83",
+      "claim": "The functional data were smoothed with a full-width at half-maximum (FWHM) Gaussian kernel of 2.5 mm3.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional data were smoothed with a full-width at half-maximum (FWHM) Gaussian kernel of 2.5 mm3 (roughly 2.5 times the voxel size) to increase the SNR and improve ICA-based data de-noising with the FIX procedure (see above) while maintaining high spatial resolution for connectivity analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "c7711a8f-9078-4636-9c37-d82b5eab65ca",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C84",
+      "claim": "An EC ROI was manually defined with ITK Snap 3.2 on the group-specific high-resolution mean EPI template from the navigation experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 7 Tesla experiments (navigation experiment and spatial and non-spatial stimulation experiment), an EC ROI was manually defined with ITK Snap 3.2 (Yushkevich et al., 2006) (http://www.itksnap.org) on the group-specific high-resolution mean EPI template from the navigation experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the ROI definition methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "7689ddb4-e0f3-4f9b-833d-f451b8d687d8",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C85",
+      "claim": "The posterior border of the EC was set to \u223c1.5 mm posterior to the gyrus intralimbicus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on anatomical landmarks as described by Insausti et al., (1998) and Frank\u00f3 et al., (2014), the posterior border of the EC was set to \u223c1.5 mm posterior to the gyrus intralimbicus, the anterior border to \u223c1.5 mm posterior to the limen insulae, the lateral border to the midpoint of the medial bank of the collateral sulcus and the medial border to the hippocampal fissure at the level of the uncus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the ROI definition methodology, based on anatomical landmarks from Insausti et al., 1998 and Frank\u00f3 et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "be65e607-d6c1-4d5a-ae67-aa9ed6499e2b",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C86",
+      "claim": "Functional connectivity was estimated by means of partial correlation analysis between the time-series of groups of ROIs.",
+      "claim_type": "EXPLICIT",
+      "source": "For the quantification of the model-based analyses of connectivity between the AT and PM networks and the manually segmented medial and lateral or anterior and posterior EC, singular-value decomposition (SVD) and subtraction of the mean was performed on the voxel-wise time-series within each ROI. Next, functional connectivity was estimated by means of partial correlation analysis between the time-series of groups of ROIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the connectivity analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "67e0ebba-5cf4-4296-ab18-50c7ac6e8132",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C87",
+      "claim": "ConGrads allows for tracing the dominant modes of functional connectivity change within a pre-specified region of the brain in a fully data-driven manner.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome limitations of the seed-based connectivity analysis, we employed ConGrads (Haak et al., 2014), which allows for tracing the dominant modes of functional connectivity change within a pre-specified region of the brain in a fully data-driven manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the ConGrads method, with citation to Haak et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "b1021cd9-47ab-4a33-b996-cfa4ce4bf343",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C88",
+      "claim": "The LE algorithm maximizes topology preservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the LE algorithm maximizes topology preservation, we report the correlation coefficients without p-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the Laplacian Eigenmaps algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "d7852115-39c9-4e60-854a-304db9385c1c",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C89",
+      "claim": "Clustering was performed on the high-resolution data from the navigation experiment by grouping voxels above and below the median value of each mode of functional connectivity change.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering was performed on the high-resolution data from the navigation experiment by grouping voxels above and below the median value of each mode of functional connectivity change, which resulted in two equally sized clusters per mode of connectivity change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the clustering methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "cc4a8ba7-4c33-4189-ba3d-f6aee4478852",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C90",
+      "claim": "tSNR was determined by dividing the mean signal within a region by the standard deviation of that signal over time.",
+      "claim_type": "EXPLICIT",
+      "source": "tSNR was determined by dividing the mean signal within a region by the standard deviation of that signal over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the SNR calculation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "9ccde2db-96d7-4e8b-9568-c67f35934c2c",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "claim_id": "C91",
+      "claim": "Spatial SNR was determined by dividing the mean signal within a region by the standard deviation of the signal across voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, spatial SNR was determined by dividing the mean signal within a region by the standard deviation of the signal across voxels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the SNR calculation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "93c0968c-fb04-4806-973a-a8db566e2da4",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the anatomical and functional context of the entorhinal cortex (EC) based on prior literature. The EC serves as an interface between hippocampus and neocortex, with rodent subdivisions (MEC/LEC) showing distinct connectivity and functional properties. However, the mapping of these rodent subregions to human EC remains controversial, with conflicting evidence for mediolateral versus anteroposterior organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by extensive citations to established literature (C1-C24, C57-C62). The authors accurately summarize prior work on EC anatomy, connectivity, and function across species. The identification of controversy regarding human homologues (C18, C61) appropriately motivates the current study. All claims are appropriately attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Model-based connectivity analysis reveals that the EC shows differential connectivity with anterior-temporal (AT) and posterior-medial (PM) networks along both mediolateral and anteroposterior axes. Lateral EC connects more strongly to AT network (p=0.015), while anterior EC also shows preferential AT connectivity (p=0.01). Posterior and medial EC do not show differential connectivity between networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical analyses are appropriate (repeated-measures ANOVA with post-hoc t-tests) with adequate sample size (n=22) and significant p-values (C25-C30). The finding of anteroposterior organization contradicts some prior studies (C18) but is consistent with primate anatomy (C16, C24). The null results for posterior and medial EC (C27, C30) are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Data-driven connectivity analysis using Laplacian Eigenmaps reveals two dominant modes of functional connectivity change in EC. The primary mode extends along the anteroposterior axis from posterior to anterior EC, while the secondary mode is approximately perpendicular. These patterns are reproducible across task-based and resting-state data (R=0.99 and R=0.98, p<0.001), suggesting task-independent organization. The posterior cluster is located more medially/dorsally while the anterior cluster is more lateral/ventral.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data-driven approach (ConGrads/Laplacian Eigenmaps) provides unbiased evidence for EC organization (C31-C32, C37-C38). Validation in independent HCP resting-state data (n=60) with high reproducibility (C33, C35-C36) strongly supports the findings. The claim of task-independence (C34) is reasonably inferred from cross-dataset replication, though direct within-subject task vs. rest comparison would be stronger.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "b89246be-6a36-44b6-a639-44fb7fce97ca",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Whole-brain connectivity analysis shows that the anterior-lateral EC (alEC) cluster connects preferentially to medial-prefrontal and orbitofrontal cortex (AT system regions), while the posterior-medial EC (pmEC) cluster connects to occipital and posterior-parietal cortex (PM system regions). The pmEC also shows increased frontal connectivity. These patterns match known rodent LEC/MEC connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The whole-volume connectivity maps (C39-C41) provide convergent evidence with the model-based analysis. The correspondence with rodent connectivity patterns (C42) is appropriately cited (Kerr et al., 2007) and supports the translational interpretation. However, the claim relies on group-level contrasts without reported statistical thresholds or correction methods in the text, though figures suggest FWE correction was applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "7fc8e888-29ab-43c6-b1a9-6fcea8431ae0",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Signal-to-noise ratio (SNR) analysis reveals no difference in temporal SNR between alEC and pmEC (p=0.83), but spatial SNR differs significantly (p<0.001) due to higher mean signal in pmEC. Spatial standard deviation does not differ (p=0.144). Mean signal subtraction during preprocessing makes it unlikely that signal intensity differences affected connectivity results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SNR analysis (C43-C46) appropriately addresses potential confounds from signal quality differences. The statistical tests are valid and the reasoning about preprocessing (C47) is sound. However, the large t-value for mean signal difference (T(21)=38) suggests a substantial difference that could potentially affect results despite mean subtraction, warranting the additional motion scrubbing analysis performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "8be7b6fe-f340-4f78-aee6-43ca0d360e0b",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Motion scrubbing analysis, excluding time periods with head movements >0.5mm, had minimal effects on results. Pre- and post-scrubbing results showed correlations near 1.0 (gradient one: R>0.996; gradient two: R>0.88; all p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The motion scrubbing control analysis (C48-C49) appropriately addresses concerns about head motion artifacts. The high correlations demonstrate robustness of findings. However, the lower correlation for gradient two (R=0.88-0.93) compared to gradient one (R>0.99) suggests the secondary mode may be somewhat more susceptible to motion artifacts, though still highly reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "f0c1ff04-3670-41d6-97ea-5a6e9bc35b40",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Homologous connectivity between corresponding EC regions across hemispheres exceeded non-homologous connectivity, even when comparing adjacent non-homologous regions within the same hemisphere (T(21)=4.05, p=0.0006).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This analysis (C50) provides important validation that the identified clusters represent functionally distinct subregions rather than arbitrary divisions. The within-hemisphere comparison is particularly strong evidence, as it controls for interhemispheric distance effects. The statistical test is appropriate and significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "fa172e58-0b44-4beb-a290-1c72e8cc1d50",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Independent functional validation using spatial vs. non-spatial stimuli shows that posterior EC responds more to scenes than objects, while anterior EC shows the opposite pattern. ROI analysis confirms the anterior-lateral cluster is more sensitive to objects than the posterior-medial cluster (T(20)=4.9, p=0.0001). This dissociation is specific to the first dominant mode clusters, not the second mode (T(20)=-0.26, p=0.8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional validation in an independent dataset (n=21) with different task (C51-C54) provides strong convergent evidence. The significant dissociation (p=0.0001) between alEC and pmEC for object vs. scene processing aligns with rodent LEC/MEC functional properties. The null result for second-mode clusters (C54) appropriately demonstrates specificity. Statistical tests are valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "9681ab53-f8f0-497b-8228-c82a988a5faa",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Integration of model-based connectivity, data-driven connectivity, and functional sensitivity analyses across three independent datasets provides converging evidence that the human homologue of rodent MEC maps predominantly to posterior EC, while rodent LEC maps to anterior EC, with an anterior-lateral to posterior-medial organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This main conclusion (C55-C56, C63) is well-supported by convergent evidence from multiple complementary methods and three independent datasets. The combination of connectivity patterns matching known rodent anatomy (C39-C42) and functional dissociations matching rodent physiology (C51-C53) provides strong support. However, the claims are appropriately qualified as 'predominantly' and 'suggest' rather than definitive, acknowledging limitations of cross-species inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "c3455013-14ad-4990-aa9c-662f6f7d9305",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Independent confirmation by Maass et al. (2015) using high-resolution fMRI found preferential connectivity of PRC and proximal subiculum to anterior-lateral EC, while posterior-medial EC connected more to PHC and distal subiculum, consistent with the current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The citation to Maass et al. (2015) provides important independent replication (C64-C66). However, this appears to be a concurrent study rather than prior work, and the temporal relationship is unclear. The convergent findings strengthen confidence in the results, though the claim of 'confirmation' may overstate the relationship if studies were conducted simultaneously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "6c64462c-9197-477e-a2a9-db602b429c9a",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The second dominant mode of connectivity change, oriented approximately perpendicular to the first, might reflect bands of intra-entorhinal projections known to cross the LEC/MEC boundary in rodents and primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The observation of a second perpendicular mode is well-documented (C67), but the interpretation as intra-entorhinal projection bands (C68) is speculative. The authors appropriately use 'might reflect' to indicate uncertainty. The anatomical citations (Canto et al., 2008; Chrobak and Amaral, 2007) support the existence of such projections, but functional connectivity does not directly measure anatomical projections, and alternative explanations are not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "79bbe771-bfb2-49fa-be2f-f8028e25838f",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings confirm three of four traditional criteria for cortical area definition (Van Essen, 1985): topographic organization, connectivity, and functional properties, lacking only cyto- and myeloarchitectonic organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C69) appropriately contextualizes the findings within established frameworks for defining cortical areas. The three criteria are indeed demonstrated: topographic organization (C31-C38), connectivity (C25-C42), and functional properties (C51-C54). The acknowledgment that cytoarchitectonic data is lacking is appropriate and honest about study limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "391329d5-14cb-42fc-a9f0-9f6e4cc7108e",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous neuroimaging studies reporting mediolateral differences in human EC can be explained by partial overlap with the anteroposterior organization identified here. Posterior coronal slices contain exclusively MEC homologue, while anterior slices contain mostly LEC homologue. Improved mapping should lead to increased effect sizes and more accurate interpretations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reinterpretation of prior studies (C70-C71) is reasonable given the current findings and appropriately cites the relevant work (Schultz et al., 2012; Khan et al., 2014; Reagh and Yassa, 2014). The claims about slice composition (C72-C73) are logical inferences from the spatial distributions shown. The prediction about improved mapping (C74) is speculative but reasonable. However, direct reanalysis of prior data would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    },
+    {
+      "id": "a60fc0aa-be06-48a0-8087-194b31d5eb20",
+      "content_id": "6fb55ec9-f9fc-4a83-a32a-669198fe4c09",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study employed rigorous methodology including high-field 7T fMRI with sub-millimeter resolution, three independent datasets (navigation task n=22, resting-state n=60, spatial/non-spatial stimulation n=21), advanced preprocessing including ICA-based denoising, manual EC segmentation based on anatomical landmarks, and both model-based and data-driven connectivity analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims (C75-C91) are clearly documented and appropriate. The use of 7T fMRI with high resolution (0.9mm) is well-suited for studying small structures like EC. The sample sizes are adequate for fMRI studies. The preprocessing pipeline including FIX denoising is state-of-art. The manual segmentation based on established anatomical landmarks (Insausti et al., 1998; Frank\u00f3 et al., 2014) is appropriate. The ConGrads method is properly cited (Haak et al., 2014). However, some details are missing (e.g., exact FWE correction thresholds for whole-brain analyses).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:08:57.354037Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ef660928-566e-4a11-820c-754b06f4cbf3",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "a194a3c0-72a8-499e-89e4-49d790796baf",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "ae6c42d4-8dfe-45a3-9057-fce7f39f54e6",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "34caca92-ad0c-4e69-a550-8011e74f3d38",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "7434dd3a-7adc-4124-84eb-30b104c01921",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "dd944e4d-9de2-4790-bb03-719004232db0",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "de982d42-8010-4bd4-a1fa-b4d9ec77e6d6",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "631bb7e1-b60d-4c14-9359-481a1578241e",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "7c489bfd-0575-410d-a7df-c0b07f0ab1ec",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "06e74339-a623-4a9b-97a5-511d97599bae",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "16f131ca-9862-4efa-ac0f-354a20c47547",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "d3a0bb6a-5332-4937-8ffe-d29771b956f0",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "fda37d8a-80d7-4eb3-a6c8-f6f61c3a4b8e",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "7928d3ff-cc4d-4b01-be9a-38aa5a5adeec",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "f2f1c50a-6bd2-459a-a1a3-3e53bfcc56ce",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "9799d06f-08be-4182-9bbe-c884b5a1b1f6",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "1cfd6c3b-5ac7-4901-a317-99546fe50ce6",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "bfa43999-cc19-42e5-ad44-2c0bab632a14",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "ed5a2740-94e3-41e1-8dc7-7978c54b68d5",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "1cec934f-9dcb-46ec-b20c-477db421f102",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "1d11bc5e-f86d-462b-9d39-b2153ee74fb0",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "30c1bed1-1ffb-407e-b02d-7bee1201d2a0",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "928cb38c-3e67-4ab1-bf37-718d41c95959",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "81045ccd-a28f-48dd-a56d-e27194bb1d1a",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "bfbbe208-8284-46a9-9629-fff13b2c50db",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "ea47d76d-66c1-4cb5-a1f3-e156c747f814",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "de854266-fccd-4781-8eb5-b016e9bca222",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "e2be84f9-a604-49bd-921b-effa83482089",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "336f1026-5130-4944-973d-9a3687743c95",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "8e41eb4d-4c33-4273-b488-d5f1ea6cd700",
+      "result_id": "93c0968c-fb04-4806-973a-a8db566e2da4"
+    },
+    {
+      "claim_id": "091b8bab-5b58-4d09-9abc-e2064ef821b6",
+      "result_id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48"
+    },
+    {
+      "claim_id": "b58a15b3-c6e6-47a7-92a5-017f05f7bf8c",
+      "result_id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48"
+    },
+    {
+      "claim_id": "2f25ff7b-6e27-4e5d-9d2a-148111df6926",
+      "result_id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48"
+    },
+    {
+      "claim_id": "17073d5c-026f-423d-9e5f-276fbd8a39d6",
+      "result_id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48"
+    },
+    {
+      "claim_id": "4e2ef20b-412c-42d1-ad63-91389cce2a2e",
+      "result_id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48"
+    },
+    {
+      "claim_id": "a6c553b3-ba6d-4fea-baa2-3db1af783660",
+      "result_id": "983f23f1-fba9-4c4f-b5cc-b385c756ac48"
+    },
+    {
+      "claim_id": "c2b20417-e691-4db0-a88c-f6c43ffde0ec",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "fefd7c64-4987-4067-85fa-ea5ca4ec7ec8",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "fdd16c94-7a9b-46dd-baa8-7cc82e9ddc99",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "0c1dfac9-f868-47af-8050-cf954bbfb94f",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "76c1b7dc-b5ba-43fa-aab1-125c4ebe9b76",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "33f0bb41-fa34-41cb-9a4a-db12629ac5c6",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "c56fda5f-8d44-44a7-8a6f-d01c3ea98172",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "dc03f439-877a-4c9d-b083-ee8dcd5b5217",
+      "result_id": "f45589c6-e6ba-43e5-80c9-45aa8c29a8be"
+    },
+    {
+      "claim_id": "5e3be74e-ebe8-44b3-9766-4514e598d73f",
+      "result_id": "b89246be-6a36-44b6-a639-44fb7fce97ca"
+    },
+    {
+      "claim_id": "0a24c346-9e50-441d-bae0-b71aa390b4f7",
+      "result_id": "b89246be-6a36-44b6-a639-44fb7fce97ca"
+    },
+    {
+      "claim_id": "8f8b5abf-42af-4773-a3ff-69793e936e07",
+      "result_id": "b89246be-6a36-44b6-a639-44fb7fce97ca"
+    },
+    {
+      "claim_id": "1ec4b432-62b4-4e99-b7fc-fce770cad53b",
+      "result_id": "b89246be-6a36-44b6-a639-44fb7fce97ca"
+    },
+    {
+      "claim_id": "199bc2fb-9a3a-4d17-92f4-de8ef17a13ff",
+      "result_id": "7fc8e888-29ab-43c6-b1a9-6fcea8431ae0"
+    },
+    {
+      "claim_id": "9b6c8818-2f9f-4aec-ae64-539014cb2ca6",
+      "result_id": "7fc8e888-29ab-43c6-b1a9-6fcea8431ae0"
+    },
+    {
+      "claim_id": "37c9e63f-a326-4354-b69c-1652553be964",
+      "result_id": "7fc8e888-29ab-43c6-b1a9-6fcea8431ae0"
+    },
+    {
+      "claim_id": "ae7a46c3-b458-4f23-8203-97a569e07530",
+      "result_id": "7fc8e888-29ab-43c6-b1a9-6fcea8431ae0"
+    },
+    {
+      "claim_id": "67c4d629-7289-4ebb-957d-f3cfbaa65e2d",
+      "result_id": "7fc8e888-29ab-43c6-b1a9-6fcea8431ae0"
+    },
+    {
+      "claim_id": "e3458070-3ad3-4082-b5f5-930838e772b7",
+      "result_id": "8be7b6fe-f340-4f78-aee6-43ca0d360e0b"
+    },
+    {
+      "claim_id": "6b6e60a2-e263-4119-adb2-8fe785f6d757",
+      "result_id": "8be7b6fe-f340-4f78-aee6-43ca0d360e0b"
+    },
+    {
+      "claim_id": "f45738af-2917-45bf-b748-bc69fa1dec3a",
+      "result_id": "f0c1ff04-3670-41d6-97ea-5a6e9bc35b40"
+    },
+    {
+      "claim_id": "84683a4b-d0ae-4310-bbda-11c1bd55d9e0",
+      "result_id": "fa172e58-0b44-4beb-a290-1c72e8cc1d50"
+    },
+    {
+      "claim_id": "37a502c9-6448-48a6-9d87-a6f7c622a36f",
+      "result_id": "fa172e58-0b44-4beb-a290-1c72e8cc1d50"
+    },
+    {
+      "claim_id": "48d00188-59ae-4cb3-bbe1-de9e3fa8bd67",
+      "result_id": "fa172e58-0b44-4beb-a290-1c72e8cc1d50"
+    },
+    {
+      "claim_id": "3d3af132-5c65-4a7d-8250-10779a37c51b",
+      "result_id": "fa172e58-0b44-4beb-a290-1c72e8cc1d50"
+    },
+    {
+      "claim_id": "ba321661-d0e3-4b9b-982d-fe50c5538a24",
+      "result_id": "9681ab53-f8f0-497b-8228-c82a988a5faa"
+    },
+    {
+      "claim_id": "79b3e6a8-7280-4627-ac38-e476f32761cb",
+      "result_id": "9681ab53-f8f0-497b-8228-c82a988a5faa"
+    },
+    {
+      "claim_id": "e03b99a5-5e96-4042-9d23-3c107072761e",
+      "result_id": "9681ab53-f8f0-497b-8228-c82a988a5faa"
+    },
+    {
+      "claim_id": "07bbbfd9-8da2-442e-bedc-4e05f1017187",
+      "result_id": "c3455013-14ad-4990-aa9c-662f6f7d9305"
+    },
+    {
+      "claim_id": "75320c02-e522-41d5-b265-7de1fbef913a",
+      "result_id": "c3455013-14ad-4990-aa9c-662f6f7d9305"
+    },
+    {
+      "claim_id": "a4e3522f-db43-4b03-8cab-895e99c1f397",
+      "result_id": "c3455013-14ad-4990-aa9c-662f6f7d9305"
+    },
+    {
+      "claim_id": "8352772e-f2b8-4b4e-8aa9-cd417d7d9f68",
+      "result_id": "6c64462c-9197-477e-a2a9-db602b429c9a"
+    },
+    {
+      "claim_id": "47406d26-bbab-4eca-8e27-49934cebad33",
+      "result_id": "6c64462c-9197-477e-a2a9-db602b429c9a"
+    },
+    {
+      "claim_id": "3a0f6b95-b942-4a6f-ad61-3fc67c877ee0",
+      "result_id": "79bbe771-bfb2-49fa-be2f-f8028e25838f"
+    },
+    {
+      "claim_id": "77560621-2abb-4f93-a213-01eda15d5cd9",
+      "result_id": "391329d5-14cb-42fc-a9f0-9f6e4cc7108e"
+    },
+    {
+      "claim_id": "f3f24930-abd8-4ece-a341-7387b4bdd798",
+      "result_id": "391329d5-14cb-42fc-a9f0-9f6e4cc7108e"
+    },
+    {
+      "claim_id": "f6be11e1-14b8-4032-869d-d4a270c70cb3",
+      "result_id": "391329d5-14cb-42fc-a9f0-9f6e4cc7108e"
+    },
+    {
+      "claim_id": "c0c052df-500f-4975-a59d-0da8d1537680",
+      "result_id": "391329d5-14cb-42fc-a9f0-9f6e4cc7108e"
+    },
+    {
+      "claim_id": "234951c6-c1d3-466e-80e5-cd903cd62893",
+      "result_id": "391329d5-14cb-42fc-a9f0-9f6e4cc7108e"
+    },
+    {
+      "claim_id": "bae7c0c1-d975-4048-bbbf-f20ee337b6b8",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "66caee1c-b739-4c36-b2e2-70f4b5ca9fa0",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "6dfa627d-f44c-4e92-8a2b-b5d5150a1ca5",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "043bf1c7-bf50-4db4-b96d-3309d1699cd1",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "5856be78-a07e-4650-9656-0645af101fe0",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "95794501-648a-469c-bfbc-52b4da3d43ba",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "405914c9-e8b0-4223-a180-056100edd119",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "b6f20913-5750-403d-9067-1f9a3f84f26f",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "3ec1fe42-e2f8-42ae-9666-5d4ee3b1700c",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "c7711a8f-9078-4636-9c37-d82b5eab65ca",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "7689ddb4-e0f3-4f9b-833d-f451b8d687d8",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "be65e607-d6c1-4d5a-ae67-aa9ed6499e2b",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "67e0ebba-5cf4-4296-ab18-50c7ac6e8132",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "b1021cd9-47ab-4a33-b996-cfa4ce4bf343",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "d7852115-39c9-4e60-854a-304db9385c1c",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "cc4a8ba7-4c33-4189-ba3d-f6aee4478852",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    },
+    {
+      "claim_id": "9ccde2db-96d7-4e8b-9568-c67f35934c2c",
+      "result_id": "a60fc0aa-be06-48a0-8087-194b31d5eb20"
+    }
+  ],
+  "comparisons": []
+}

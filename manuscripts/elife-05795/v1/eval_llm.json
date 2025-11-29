@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Alanine scanning mutagenesis of the Cdc6 Walker B motif reveals that E224 is the only residue essential for viability, with E224A, E224G, E224L, and E224Q mutations causing lethality. Double and triple mutations that also alter D223 suppress the lethality of E224 mutations, restoring viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 are well-supported by systematic mutational analysis shown in Figure 1C and Figure 1\u2014figure supplement 1. The data clearly demonstrate that only E224 mutations cause lethality among single Walker B residue substitutions, and that D223 co-mutation rescues viability. The identification of intragenic suppressors is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The cdc6-E224Q mutant causes G1 arrest when wild-type Cdc6 is depleted, indicating a block in DNA replication initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by flow cytometry data in Figure 1F showing accumulation of cells with 1C DNA content after wild-type Cdc6 depletion. The G1 arrest phenotype is consistent with a defect in DNA replication initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cdc6-E224Q and Cdc6-NQ mutants lack ATPase activity in vitro. While wild-type Cdc6 increases ORC ATPase activity 4-5 fold, the mutants suppress even basal ORC ATPase activity. The NQ mutant restores viability without restoring ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by ATPase assay data in Figure 2B. The quantitative measurements clearly show loss of ATPase activity in both mutants, and the comparison with viability data (Figure 1) demonstrates that the NQ suppressor restores viability without restoring enzymatic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cdc6-E224Q and Cdc6-NQ mutants can load MCM onto DNA in vitro, though less efficiently than wild-type. The E224Q mutant shows increased Cdt1 retention and is more stably retained in pre-RC complexes, suggesting accumulation of loading intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by MCM loading assays in Figure 2C and 2D. The data show salt-resistant MCM loading by mutant proteins, increased Cdt1 retention by E224Q, and differential stability of Cdc6 variants in complexes. These observations are consistent with defective progression through loading intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "While ORC-Cdc6-E224Q complexes lack ATPase activity, substantial ATPase activity appears after MCM and Cdt1 addition, at about two-thirds the wild-type level, suggesting MCM ATPase activity can support double hexamer loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by ATPase assay data in Figure 2B and 2E. The measurements clearly show that MCM addition restores ATPase activity to the E224Q mutant complex, though C70 includes speculative interpretation about sufficiency for loading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Cryo-EM analysis shows that the MCM double hexamer loaded by ORC-Cdc6-E224Q has the characteristic four-layered architecture identical to that loaded by wild-type ORC-Cdc6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by cryo-EM data in Figure 2F. The structural analysis demonstrates that the mutant Cdc6 loads properly structured double hexamers, validating that the mutant is competent for MCM loading despite lacking ATPase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cdc6-E224Q accumulates OCCM and OCM intermediate complexes in the presence of ATP that are not seen with wild-type Cdc6, suggesting that Cdc6 ATP hydrolysis promotes Cdc6 and Cdt1 release from the pre-RC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by EM data in Figure 2\u2014figure supplement 1. The accumulation of normally transient intermediates with the E224Q mutant provides strong evidence that ATP hydrolysis is required for progression through the loading pathway and release of loading factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "All three ATPase-defective Cdc6 mutants (E224Q, NQ, and NQMN) promote MCM binding to origins in vivo as measured by ChIP at ARS305.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by ChIP data in Figure 3C. The data clearly show MCM recruitment to origins by all mutants tested, demonstrating that Cdc6 ATPase activity is not required for MCM loading in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "Continual expression of Cdc6-E224Q causes G1 arrest, but if the mutant protein is degraded after MCM loading (by glucose repression at 120 min), cells enter S-phase and replicate DNA, indicating that many origins can initiate replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by flow cytometry and Western blot data in Figure 4A and 4B. The conditional rescue experiment clearly demonstrates that the block to replication is due to persistent presence of the mutant protein rather than failure to load MCM, a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Cdc6-E224G behaves as a null mutant when continually expressed, causing G1 arrest. However, when the mutant is degraded after MCM loading, cells enter S-phase and replicate DNA, demonstrating that E224G loads functional MCM in vivo but blocks subsequent replication steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by flow cytometry and Western blot data in Figure 5A and 5B. The phenotype parallels that of E224Q, providing independent validation that Cdc6 ATPase activity is required for a post-loading step rather than MCM loading itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106"
+    ],
+    "result": "Mutation of the sensor 1 residue N263 to alanine or leucine is lethal and dominant negative when overexpressed. Like E224 mutants, cdc6-N263A causes G1 arrest that is rescued by degradation of the mutant protein after MCM loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 and C106 are supported by data in Figure 5\u2014figure supplement 2. The N263 mutants phenocopy E224 mutants, extending the findings to another ATPase-defective mutation and strengthening the conclusion about the role of Cdc6 ATPase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C124"
+    ],
+    "result": "Cdc6 ATP hydrolysis is essential for DNA replication initiation but not for MCM loading. The essential role of Cdc6 ATPase is to disengage Cdc6 from the pre-RC after MCM loading to allow subsequent steps in helicase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This central conclusion (claims C3-C10, C107-C111, C124) is strongly supported by the convergence of multiple lines of evidence: in vitro MCM loading by ATPase-defective mutants (Figure 2), in vivo MCM recruitment (Figure 3), G1 arrest with continual mutant expression, and rescue by mutant degradation (Figures 4-5). The model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Multiple intragenic suppressors of E224 mutations were identified, all of which also mutate D223. The NQMD suppressor restores viability without restoring ATPase activity, suggesting that conformational changes can compensate for loss of ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by mutational data in Figure 1 and ATPase assays in Figure 2B. The systematic identification of suppressors and demonstration that they restore viability without ATPase activity provides important mechanistic insight, though C118 includes speculative interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Mutations in putative R-finger residues (R270, R274) and sensor 2 residue (R332) do not cause growth defects, indicating these residues are not essential for Cdc6 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by mutational analysis data in Figure 5\u2014figure supplement 1. The negative results help define which AAA+ motifs are functionally important in Cdc6, though the lack of phenotype limits mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MCM ATP hydrolysis can drive double hexamer formation in vitro with Cdc6-E224Q, albeit less efficiently than with wild-type Cdc6. However, blocking Cdc6 ATP hydrolysis in vivo prevents MCM activation, suggesting in vitro reactions do not capture all essential aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by comparison of in vitro (Figure 2) and in vivo (Figures 4-5) data. The discrepancy between in vitro loading and in vivo replication block is an important observation, though C114 is speculative about the mechanistic basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The role of Cdc6 ATPase in DNA replication initiation is similar to bacterial helicase loaders, where DnaC ATP hydrolysis is not required for DnaB loading but is required for DnaC release. This reveals broad conservation of helicase loading mechanisms across kingdoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by comparison with cited literature on bacterial systems. The parallel between eukaryotic and bacterial helicase loading mechanisms is a valid and important conclusion, though it relies on analogy rather than direct experimental evidence in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "While recent work suggests Cdc6 ATPase performs a quality control function in vitro, this is likely not its primary role in vivo, as blocking quality control should not cause lethality given the high efficiency of helicase loading mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C123 present an argument against the quality control model based on reasoning about expected phenotypes. While the logic is reasonable, the claims are largely speculative (C122-C123) and do not provide direct experimental evidence against the quality control function. The argument is plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background information on DNA replication initiation, pre-RC assembly, Cdc6 as an AAA+ ATPase, and previous conflicting reports on the role of Cdc6 ATPase activity in yeast viability and MCM loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 provide established background knowledge and literature context, supported by appropriate citations. These claims accurately represent prior work and set up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C66",
+      "C74",
+      "C75",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Methodological background and prior findings: salt-resistant MCM loading assay principles, ATP binding requirements, ATP-\u03b3-S trapping of intermediates, Cdc6 protein stability, and previous in vitro MCM loading studies with conflicting conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C66, C74-C75, C129-C133 provide methodological context and accurately cite previous literature. These establish the experimental framework and highlight the controversy the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Summary statement that Cdc6-E224Q lacks ATPase activity, is defective in Cdc6 release from the pre-RC, but can promote dhMCM loading onto DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is a valid summary of biochemical findings from Figure 2 data, integrating multiple experimental observations into a coherent conclusion about the mutant's properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "Control experiments showing that cells lacking CDC6 arrest in G1 with eventual sub-G1 DNA content (reductional mitosis), wild-type Cdc6 supports normal cell cycle progression, and continual expression of wild-type Cdc6 or Cdc6-NQ does not cause arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 and C87 describe essential control experiments shown in Figure 4A, 4B, and Figure 4\u2014figure supplement 1. These controls validate the experimental system and demonstrate specificity of the E224Q phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C67",
+      "C70",
+      "C104",
+      "C105",
+      "C120"
+    ],
+    "result": "Interpretive statements about ATP binding vs. hydrolysis, mechanistic coupling, and AAA+ protein conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C67, C70, C104-C105, and C120 are reasonable interpretations supported by the data and established AAA+ protein mechanisms, though some include speculative elements. The inferences are logical given the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C65",
+      "C71",
+      "C90",
+      "C91"
+    ],
+    "result": "Citations to recent literature showing that Cdc6-E224G is defective in dissociating from pre-RC, that MCM ATPase activity is necessary for efficient double hexamer loading, and that Cdc6-E224G and Cdc6-N263A can load MCM in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C71, C90-C91 accurately represent findings from cited recent literature (Coster et al., 2014; Kang et al., 2014) that are relevant to interpreting the current results.",
+    "result_type": "MINOR"
+  }
+]

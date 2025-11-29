@@ -1,0 +1,2160 @@
+{
+  "submission": {
+    "id": "d3467fcd-2bfe-49c7-a489-9b4fdab14ed3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:36:26.820575Z",
+    "updated_at": "2025-11-29T04:36:26.820575Z"
+  },
+  "content": [
+    {
+      "id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "submission_id": "d3467fcd-2bfe-49c7-a489-9b4fdab14ed3",
+      "content_type": "manuscript",
+      "content_text": "# Lessons from Fraxinus, a crowd-sourced citizen science game in genomics\n\n## Authors\n\n- Ghanasyam Rallapalli<sup>1</sup>\n- Diane GO Saunders<sup>3</sup>\n- Kentaro Yoshida<sup>4</sup>\n- Anne Edwards<sup>5</sup>\n- Carlos A Lugo<sup>6</sup>\n- Steve Collin<sup>7</sup>\n- Bernardo Clavijo<sup>8</sup>\n- Manuel Corpas<sup>9</sup>\n- David Swarbreck<sup>10</sup>\n- Matthew Clark<sup>11</sup>\n- J Allan Downie<sup>12</sup>\n- Sophien Kamoun<sup>13</sup> ([ORCID: 0000-0002-0290-0315](https://orcid.org/0000-0002-0290-0315))\n- Dan MacLean<sup>15</sup> \u2020\n\n### Affiliations\n\n1. The Sainsbury Laboratory Norwich United Kingdom\n2. Facebook Fraxinus - Ash Dieback Game Community Online United Kingdom\n3. The Sainsbury Laboratory Norwich United Kingdom ; John Innes Centre Norwich United Kingdom and The Genome Analysis Centre Norwich United Kingdom\n4. The Sainsbury Laboratory Norwich United Kingdom\n5. John Innes Centre Norwich United Kingdom\n6. The Sainsbury Laboratory Norwich United Kingdom\n7. Norfolk Wildlife Trust Norwich United Kingdom\n8. The Genome Analysis Centre Norwich United Kingdom\n9. The Genome Analysis Centre Norwich United Kingdom\n10. The Genome Analysis Centre Norwich United Kingdom\n11. The Genome Analysis Centre Norwich United Kingdom\n12. John Innes Centre Norwich United Kingdom\n13. The Sainsbury Laboratory Norwich United Kingdom\n14. Coopermatic Ltd Team Cooper Sheffield United Kingdom\n15. The Sainsbury Laboratory Norwich United Kingdom dan.maclean@tsl.ac.uk\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn 2013, in response to an epidemic of ash dieback disease in England the previous year, we launched a Facebook-based game called Fraxinus to enable non-scientists to contribute to genomics studies of the pathogen that causes the disease and the ash trees that are devastated by it. Over a period of 51 weeks players were able to match computational alignments of genetic sequences in 78% of cases, and to improve them in 15% of cases. We also found that most players were only transiently interested in the game, and that the majority of the work done was performed by a small group of dedicated players. Based on our experiences we have built a linear model for the length of time that contributors are likely to donate to a crowd-sourced citizen science project. This model could serve a guide for the design and implementation of future crowd-sourced citizen science initiatives.\n\n## Introduction\n\nAsh dieback is a disease caused by the fungal pathogen Hymenoscyphus fraxineus, and it has devastated populations of ash trees (Fraxinus excelsior) across Europe in recent years. When ash dieback was discovered in the wild in the east of England for the first time, in 2012, the present authors set up the OpenAshDieBack (OADB) project as a crowdsourcing platform to allow scientists across the world to contribute to the genomic analysis of the pathogen and the host (MacLean et al., 2013). Subsequently, we developed and released Fraxinus, a Facebook-based game, to allow non-specialists to improve genetic variant predictions from DNA sequence data arising from the OADB project (MacLean, 2013).\n\nDNA sequence alignment is a hard problem that seeks to arrange two or more genome sequences in order to identify regions of similarity. When short fragments are being aligned with a longer sequence, the longer sequence is often considered to be a reference sequence that should not be altered. The process of alignment requires the best overall match between the two sequences to be found first: this \u2018global alignment\u2019 is then followed by a finer-grained \u2018local alignment\u2019 that involves modifying the short sequences by, for example, inserting small gaps or deleting short stretches of the sequence.\n\nAlignment is a computationally intensive process, and many computer programs (e.g., BWA aligner [Li and Durbin, 2009]) have been devised that implement and optimize alignments according to various measures of similarity. A straightforward measure is percent identity (in which the number of identical nucleotides in the alignment is calculated as a proportion of whole alignment length). Once the alignment process is complete, any differences between the two sequences can be considered a genetic variation. These differences can be single nucleotide polymorphisms (SNPs), in which a single nucleotide differs, or insertion\u2013deletion polymorphisms (INDELs), in which longer stretches are different. Software like SAMTools (Li et al., 2009) can identify the variants from alignments.\n\nCitizen-science projects are an excellent opportunity to engage the public in science and to harness the human intelligence of large numbers of non-specialists to make progress on inherently difficult research tasks. The citizen-science approach has been used in astronomy (Lintott et al., 2008), protein folding (Cooper et al., 2010), and genetics (Kawrykow et al., 2012; Curtis, 2014; Ranard et al., 2014). However, computational approaches to the identification of genetic variants can be error-prone, and it has been shown that the pattern-recognition skills of humans can improve DNA sequence alignments (Kawrykow et al., 2012). Therefore, we created Fraxinus to improve the automated alignments produced by computational approaches.\n\nOver the first year, Fraxinus was loaded with variant calls based on cDNA-sequence reads generated from four different samples collected at locations in Norfolk in the UK: Kenninghall Wood (KW1), Ashwellthorpe Wood (AT1 and AT2), and Upton Broad and Marshes (UB1) (Saunders et al., 2014). The game presented the player with a pre-selected small section of genome sequence from the KW1 reference strain and rows of sequence from one of the other test variants (MacLean, 2013), with each DNA sequence represented as a string of colored leaves. The game provided tools that allow the player to shift the sequence relative to the reference and to edit the sequence in such a way as to introduce deletions or gaps. The aim of the game for the player was to produce the best alignment, allowing her/him to claim the puzzle as their own and score points. The game was played in Facebook and took advantage of the player's social network to invite new players. The wider social network was used to encourage the replay of puzzles. We stored player names, scores, and the resulting alignments for later analysis. Here, we describe the Fraxinus game, the results of alignment comparisons, the response the game received, and details of parameters fitted to replicate player dynamics.\n\n## Results and discussion\n\nThe BWA aligner (Li and Durbin, 2009) and SAMTools (Li et al., 2009) were used to identify SNPs and INDELs in AT1, AT2 and UB1 against the common reference KW1 (see \u2018Materials and methods\u2019). Initially a data set of 1000 SNPs and 160 INDELs were loaded into Fraxinus (Table 1). For ease of playing, we limited the maximum number of sequences per puzzle to 20 (Figure 1\u2014figure supplement 1A): in total 10,087 puzzles were created from the 1160 variants. Fraxinus was released on 13 August 2013 and by 4 August 2014 (51 weeks) had received 63,132 visits from 25,614 unique addresses in 135 countries (Table 2, Figure 1\u2014figure supplement 2). Most of these were from the UK (57%), followed by the US, Canada, France, and Germany.\n\n**Table 1.**\n Number of variants and derived puzzles used in Fraxinus version 1\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Fungal sample</th>\n      <th colspan=\"2\">SNP</th>\n      <th colspan=\"2\">INDEL</th>\n    </tr>\n    <tr>\n      <th>Variants</th>\n      <th>Puzzles</th>\n      <th>Variants</th>\n      <th>Puzzles</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ashwellthorpe1</td>\n      <td>250</td>\n      <td>2937</td>\n      <td>53</td>\n      <td>521</td>\n    </tr>\n    <tr>\n      <td>Ashwellthorpe2</td>\n      <td>353</td>\n      <td>1121</td>\n      <td>51</td>\n      <td>170</td>\n    </tr>\n    <tr>\n      <td>Upton broad and marshes1</td>\n      <td>397</td>\n      <td>4964</td>\n      <td>56</td>\n      <td>374</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>1000</td>\n      <td>9022</td>\n      <td>160</td>\n      <td>1065</td>\n    </tr>\n  </tbody>\n</table>\n\n_SNP, single nucleotide polymorphisms; INDEL, insertion\u2013deletion polymorphism._\n\n**Table 2.**\n Details about player visits and contributions made to Fraxinus\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Description</th>\n      <th>Details</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Start date</td>\n      <td>2013-08-12</td>\n    </tr>\n    <tr>\n      <td>Date until</td>\n      <td>2014-08-04</td>\n    </tr>\n    <tr>\n      <td>Game duration in days</td>\n      <td>358</td>\n    </tr>\n    <tr>\n      <td>Total number of visits</td>\n      <td>63,132</td>\n    </tr>\n    <tr>\n      <td>Total number of players</td>\n      <td>25,614</td>\n    </tr>\n    <tr>\n      <td>Mean new visits % per day</td>\n      <td>26.7</td>\n    </tr>\n    <tr>\n      <td>Mean visit duration in minutes</td>\n      <td>25.3</td>\n    </tr>\n    <tr>\n      <td>Total time contributed in days</td>\n      <td>924</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the first 6 months, when the first batch of puzzles was retired, we received 154,038 alignment answers, with an approximate log-normal distribution of answers for 10,087 puzzles (Figure 1\u2014figure supplement 1B). Each puzzle was played on average by 11.48 (standard deviation 7.08) players, and not all alignment answers were informative (we received 3.6 empty alignments per puzzle; Supplementary file 1, Table S1). We compared 7620 selected puzzles for differences in player and software alignments: in 4701 (61.7%) puzzles the alignments from all the high-scoring players differed from the computational alignment (Figure 1A). A further 2765 (36.3%) of the player alignment answers were identical to those from software. And with the exception of 154 puzzles (2%), the high-scoring players converged on the same answer (Figure 1A). Most puzzles had replicate analyses; 6834 (89.7%) had two or more high-scoring players (Figure 1\u2014figure supplement 1C). Together, these results indicate a high accuracy of alignment across puzzles and endorse the notion that replay leads to useful replication.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig1-v1.jpg)\n\n**Figure 1.:** (A) Number of puzzles (y-axis) vs percentage of high-scoring players who produce alignments different to the alignment produced by the BWA mem software (x-axis): in 4701 of these puzzles, the alignments produced by all of the high-scoring players were different to the alignment produced by the software (rightmost column; difference = 100%); in 2765 of puzzles, the alignments produced by all of the high-scoring players were the same as the alignment produced by the software (leftmost column; difference = 0%). Only a small number of puzzles (154) were between these two extremes (see lower panel, which expands the y-axis for differences between 5% and 95%). (B) Single nucleotide polymorphism (SNP) and insertion\u2013deletion polymorphism (INDEL) puzzles presented separately and color coded with a heat map depicting the percent of read alignments contributing to the difference between player and software. (C) Comparison of alignments from the 4701 puzzles that had all high-scoring players aligned different to the software: the left panel is based on percent identity between sequences; the right panel is based on the Fraxinus game score (see Fraxinus game setup in \u2018Materials and methods\u2019).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A number of reads per puzzle are presented for all puzzles (left) and selected puzzles for analysis (right). (B) Density plot of all submitted answers and log-normal fit of the distribution. (C) A number high-scoring players per puzzle are presented for all puzzles (left) and selected puzzles for analysis (right).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig1-figsupp2-v1.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Reads covering the variant base in red box are selected, while the reads in black box are ignored.\n\nIn total, in 57,834 cases, the player alignment differed from the alignment produced by the computational method. In 15.26% of these cases, the players achieved a higher percent identity; in 6.37% of cases, the computational method achieved a higher percent identity; and the percent identities were equal for the remaining 78.37% of alignments (Figure 1C). Players aligned a higher proportion of INDELs (85.4% of 822) differently to software than SNPs (58.8% of 6798; Figure 1B). Players scored higher in 29% of INDEL alignments, with software scoring better in only 4% of alignments. For SNPs players scored better in 12% of puzzles with software scoring better in 7% (Supplementary file 1, Table S2).\n\nThe series of steps involved in these solutions is not yet recorded by Fraxinus, but previous work on the FoldIt game has shown that recording and sharing protein-folding recipes allow rapid development of novel algorithms (Khatib et al., 2011); we are hopeful that similar improvements will be possible with Fraxinus.\n\nMost of the visitors to the Fraxinus game were interested only casually and did not play beyond either the introduction or tutorial (Table 3). Only 7357 (28.72%) of players answered puzzles and, more surprisingly, 49 players (0.7%) contributed to half of the answers (74,356 answers) that we received (Figure 2A). New players and returning players devoted an average of 12.5 min and 29.7 min per visit, respectively (Figure 2\u2014figure supplement 1A). On average, each returning player made 2.3 visits per day, thereby contributing 70 min of game play per day; this indicates that the players were spending sufficient time to go through the process of realignment and are probably now experts in the alignment process.\n\n**Table 3.**\n Details about categories of players visiting Fraxinus\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Description</th>\n      <th>No. of players</th>\n      <th>Percent</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Viewed introduction</td>\n      <td>6115</td>\n      <td>23.87</td>\n    </tr>\n    <tr>\n      <td>Completed tutorial and scanned puzzles</td>\n      <td>7958</td>\n      <td>31.07</td>\n    </tr>\n    <tr>\n      <td>Attempted puzzles</td>\n      <td>4184</td>\n      <td>16.33</td>\n    </tr>\n    <tr>\n      <td>Scored puzzles</td>\n      <td>7357</td>\n      <td>28.72</td>\n    </tr>\n    <tr>\n      <td>Total players</td>\n      <td>25,614</td>\n      <td>100</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cumulative contribution by players is plotted against player rank (based on the number of useful answers the player contributed): the ten best players contributed 25% of useful answers. (B) Percent of new visits received daily to Fraxinus vs date, with dashed red lines representing press releases and dashed blue lines representing mention on social media. (C) Number of usable (black line) and empty (orange line) tasks provided by players vs date. Press releases led to prominent peaks in the number of empty tasks and less prominent peaks in the number of usable tasks. (D) Cumulative contribution (by all players) vs date: 88% of the answers were provided within the first month (red dot).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Box plot of mean visit duration in minutes presented for NPs and RPs. (B) Daily NP (black bars) and RP (orange line) player numbers visiting the Fraxinus game page. (C) Same as B, presented in log\u2013log scale for both NPs and RPs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Cumulative percent of players joining on press release dates plotted against number of days they are active. (B) Box plot of number of useful tasks performed by players joining on either press release date (News) and remaining dates (Control). As majority of players joined within the first month, players who joined after 15 September 2013 were taken in to account for this box plot.\n\nAs a high-profile project, a number of media-wide publicity events were organized to increase awareness of the game. There were clear peaks of new visitors (mean 151.4) on dates with publicity (Figure 2B) with events in traditional media having a much stronger impact than social media alone (Supplementary file 1, Table S3). The number of returning players showed only a small increase (mean 2.6 returning per publicity event; Figure 2\u2014figure supplement 1B). Most (62%) players joining on a press release date played only on that day, and 97.5% of all players played for 10 days or less (Figure 2\u2014figure supplement 2A). However, new players were more motivated, if they joined on a press release date and submitted 6.8 times more answers on average than those joining on other dates (Figure 2\u2014figure supplement 2B). A marked increase in empty answers was also observed on press release dates (Figure 2C), indicating that new players joining on these days have contributed to more empty answers than useful answers. This suggests that care need to be taken in assuming that all time contributed by players is equally productive. In total, 88% of all answers were provided by players who joined within the first 30 days (Figure 2D). Therefore, most of the analysis in Fraxinus was carried out within the first few months by players enthused by the initial publicity, with some benefit resulting from subsequent publicity.\n\nThe number of daily visits followed a power law distribution, (Figure 3\u2014figure supplement 1) in the period presented. The power law distribution is also followed by new players and returning players (Figure 2\u2014figure supplement 1C). There were very few players who visited regularly (Figure 3\u2014figure supplement 2). There are 33 players who were active on 60 or more days, while 8 of these were active for over 200 days (Supplementary file 1, Table S4), with one player being active for 332 out of 350 days, since joining. The distribution indicates that we can expect a surprisingly long life for Fraxinus in the order of years (Figure 3A). Despite appearing contradictory to the observation that most answers were submitted in the first few months, a small number of players are visiting frequently, although this is likely to decline in the future.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig3-v1.jpg)\n\n**Figure 3.:** (A) Actual data showing number of players on each day (y-axis) vs time in days since game release (x-axis) for Fraxinus. The observed distribution of players visiting the game page daily is fitted to a linear model on log scales. (B) The enthusiasm of players decreases irrespective of their success at the game. The mean number of tasks completed per day (y-axis) is plotted against the number of days, the players were active (x-axis) for groups of players in similar score groups (color coded based on their scores); contribution decreases over time for all groups. (C) Predictions from a model that predicts work done (measured in computation hours; y-axis) as a function of days since game release (x-axis) for six different scenarios: Fraxinus with press releases at and after launch (black); with a press release at launch, but no subsequent press releases (orange); each player recruits three new players (NPs) over a period of 3 months (purple); each player recruits 10 NPs over a period of 3 months (green); each player recruits three NPs on first day (blue); and each player recruits 10 NPs on first day (red).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Daily game page visits are presented along the game time line. (B) Same as A, presented in log\u2013log scale. (C) Daily average visit duration per session presented along the game time line.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Traditional press releases (red lines) and social network mentions (blue lines) are marked.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07460/elife-07460-fig3-figsupp3-v1.jpg)\n\nWe examined whether success at the game affected longevity of contribution. The mean puzzles contributed per day for groups with different total game scores decreased in a linear fashion for all scoring bins, indicating that players' enthusiasm for the puzzles or cause decreased over time, irrespective of their success at the game (Figure 3B). Using these demographic parameters as a base, we developed a simple model to predict the productivity of any proposed crowdsourcing project. The model returns the number of players contributing to a project per day, based on an initial expected cohort of players, a returning player rate, and a new player rate. We can then calculate the work ultimately done for a task that takes a given amount of time to learn and execute. Our model is formulated as a decreasing power law relationship (\u2018Materials and methods\u2019) and allows for arbitrary increase in players as per those observed on press release days. The model accordingly recapitulates the observed result from Fraxinus (Figure 3C). Predicted work time in the model was 935.53 days, while the actual total visit time was 924 days. Similarly, by modeling the impact of press releases, we predicted 150.11 days of additional play; the actual figure was 142.14 days.\n\nTo apply the model and ultimately estimate the work from potential studies, it is important to estimate the size of the initial player cohort and the returning/new player rate. One approach would be to use the actual number of players and returning/new player rate, as measured during the early stages of the project, as estimates. Our experience with Fraxinus has been one of constantly decreasing player numbers, in spite of repeated press releases (Figure 3C), and the parameters of our player demographic distribution and the interest in our game have not been such that we received increases in player numbers after the initial release. Fraxinus was a very front-loaded game that did not hold the interest or grow beyond the initial crowd we reached via the media.\n\nSimilar decaying trends were also observed with other citizen science projects hosted on Zooniverse (Ponciano et al., 2014; Sauermann and Franzoni, 2015) and for web searches for trending terms (such as \u2018Ebola\u2019; Figure 3\u2014figure supplement 3), which suggests that the decay in interest observed in crowdsourcing games is similar to that in other topics like the news. This situation is not inevitable; it is possible for the player cohort to grow over time, if the slope of the power law expression in positive player numbers can increase. In practice, this is equivalent to the number of active or new players exceeding those leaving. This could be achieved by an enthusiastic \u2018viral\u2019 growth spread, and the results from the model in this case are similar to those from SIR (susceptible, infected, and recovered) or rumor-spreading models (Zhao et al., 2013). However, a viral strategy does not result in unlimited growth of player numbers, when the potential audience is saturated; instead, the amount of work performed begins to decline (Figure 3C). The work obtained by a viral strategy does not exceed that by a front-loaded strategy unless somewhat unrealistic growth rate is assumed (e.g., each player invites ten more players on the first day, and there is no restriction on the total available players; Figure 3C).\n\nA smaller amount of work than that seen in the front-loaded strategy is done if the players are allowed to defer inviting friends over a time period. We allowed a random time delay of up to 3 months between joining and inviting new players and saw that the overall work was less than if invitation took place in the first 3 days. It is clear that by having a large initial cohort and not adopting a viral strategy, we maximized the work expected from Fraxinus. By applying our model to a proposed crowdsourcing project, it is possible to balance resources (such as public outreach, time taken to analyze data, and initial cohorts of contributors) in order to make the most of potential contributors and to determine whether the approach is likely to be feasible and worthwhile.\n\n### Conclusions\n\nFraxinus posed a problem that non-specialists were able to positively contribute to. From the patterns of access and return, we observed that the amount of work done is limited to a surprisingly small fraction of contributors, particularly in view to the number of people who have volunteered effort. In the case of Fraxinus, we have been able to build up a small community of skilled users who are willing to collaborate and contribute to our goals. However, it is clear that scientists wishing to take advantage of crowdsourcing for citizen-science projects must be extremely focused to get value out. Our model of the human computing power that is available for a citizen-science project provides a guide for the design and implementation of future projects.\n\n## Materials and methods\n\n### Fungal materials and sequences\n\nKenninghall Wood1 (KW1) is an isolate of H. fraxineus that was collected and isolated from Kenninghall Wood, Norfolk, UK. KW1 DNA was isolated, and 251 bp paired-end genomic library sequenced using Illumina Miseq. KW1 draft version1 (v1) of genome was assembled using ABySS 1.3.4. Further details of KW1 library preparation and genome assembly can be found from Saunders et al. (2014). Three samples of infected ash branches collected from Ashwellthorpe wood (AT) and Upton broad and Marshes (UB) are referred to as AT1, AT2, and UB1, respectively. RNA was isolated from pith material of infected branches using an RNeasy Plant Mini kit (Qiagen, Manchester, UK). RNA-seq library was prepared using Illumina Truseq kit with 200 bp insert size. Paired-end RNA-seq was carried out on Illumina GAII with read length of 76 bp.\n\n### Variant detection\n\nPaired-end RNA-seq libraries from three samples AT1, AT2, and UB1 were used for variant detection against the KW1 version1 genome assembly. Paired-end RNA-seq reads were aligned to KW1 v1 contigs using BWA (Li and Durbin, 2009) mem (v0.7.4) with default settings. SAMTools (Li et al., 2009) (v0.1.17) was used to generate sorted BAM files; mpileup and bcftools (view -vcN) commands were used to generate variants. Sequence reads with mapping quality scores less than 20 were ignored in variant selection. Variants called at positions where reference base was unknown were excluded. Positions selected to load on Fraxinus version 1 must have had a minimum coverage of 10. All RNA-seq sequences, BAM, and variant VCF files generated in this study were submitted to the European Nucleotide Archive (ENA) (http://www.ebi.ac.uk/ena) under accession number PRJEB7998.\n\n### Fraxinus game setup\n\nThe Fraxinus game interface presents a 21 base reference at the top, and nucleotides are displayed in leaf shape with following colors\u2014green (A), red (T), yellow (G), orange (C), and gray (N). Puzzles were populated with 2\u201320 reads to be aligned by players. The following scoring scheme was employed with integer values: match score = 5, mismatch score = \u22123, gap opening score = \u22125, and gap extension score = \u22122. Upon joining each new player was taken to an introduction on ash dieback and its impact and subsequently to a tutorial that explains how game play can progress. Players completing the tutorial were awarded one point. Players were then presented with a game index page listing various options, such as choosing a puzzle to solve, the leader board top players, leader board of friends, and any notification. For each puzzle, players needed to realign the reads against a reference sequence, score as high as they could, and then submit their answer. Players received a point for each answer they submitted and an additional point for submitting the answer with the highest score. If another player beat their score and submitted an answer with a new highest score, they would then get the additional point transferred from the previous player along with a point for submission of answer\u2014this event is referred as \u2018stealing\u2019. However, if a player matched a previous high score, they did not receive the bonus point. Therefore, we credited only the first player, who provided the highest scoring alignment. Players did not get an extra point for improving their own score on a game, until someone else had \u2018stolen\u2019 the puzzle (by getting a higher score). Each answer submitted by players was stored in a database for subsequent analysis. Player activities, such as accessing the introduction, completion of the tutorial, puzzles accessed, and answers submitted, were stored in a database.\n\n### Variants included in Fraxinus game\n\nWe selected 1000 SNP variants and 160 INDEL variants from the RNA-seq analysis of three infected samples (Table 1). Variant position and 10 bases on either side were used to extract sequence read information from BWA alignment BAM file. Extracted reads were used to generate one or more puzzles with a maximum of 20 reads per puzzle; resulting in 9022 puzzles from 1000 SNP variants and 1065 puzzles from 160 INDEL variants. The game database was uploaded with generated puzzles that included reference sequence name, 21 base reference sequence hosting the variant, variant position, and details of reads included to realign. Alignment positions were randomly scrambled for included reads, so that players could realign, independent of the information from software alignments.\n\n### Puzzle alignment comparison\n\nFor 10,087 puzzles, we received 154,038 answers, of which 35,921 puzzles were empty. Further details on the number of answers are provided in Supplementary file 1, Table S1. As reads were selected with in the 21 base window (10 bases either side of the variant position), there were reads that did not cover the variant allele and led to misalignments by the player within the window (Figure 1\u2014figure supplement 3). Therefore, we focused our comparison using only reads covering the variant allele according to software alignments and restricted our analysis to 7620 puzzles carrying these reads. The absolute match/mismatch score ratio used in our game is 1.67 (5/3) expected a conservation of 50% between read and the reference and is higher than 0.33, 0.5, and 1, which are used for 99%, 95%, and 75% conservation between reference and read sequences (States et al., 1991). Therefore, to be comparable between the alignments by players and software, we realigned the BWA alignments using the scoring system employed in Fraxinus game (BWA options -A 5 -B 3 -O 5 -E 2). Player alignments were stored in CIGAR format (Li et al., 2009) with associated alignment start position. However, player alignment start position was set to start of the read, regardless of whether a read was soft clipped or not. So this has been corrected in the analysis. Each puzzle reference nucleotide position was taken randomly from software read alignment information. Therefore, reference sequence position information was corrected from the selected input variants data. For initial comparison of puzzles, position-corrected player alignment CIGARs were compared with BWA CIGAR strings from score adjusted BWA realignments. Then alignments were categorized as similar or different to software based on all high-scoring player outcomes for each puzzle. For each puzzle, the percent of high-scoring players aligned different software was calculated, in addition to percent of reads contributing to the difference. Database dump, data analysis scripts, and source are made available at the authors github (repository Fraxinus version1 data analysis).\n\n### Read alignment comparison\n\nPuzzles, which had all the high-scoring player alignments different to software, were selected, and individual read alignments from these puzzles were extracted and compared to the software read alignments. Individual read alignments were compared in two ways: (1) by calculating percent identity between read and the reference; (2) by calculating the alignment score employed in the Fraxinus game. Both percentage and score calculations for alignments were computed for the bases with in the 21 base game window and for whole read alignments. Any gaps opened and extended were considered as a mismatch in calculating percent identity between read and reference. Alignment score calculation within the game window was normalized per base to be comparable between software and player alignments.\n\n### Game page visit analysis\n\nWe used Google Analytics (GA) to record visits and study daily activity to the game page. The open source Ruby API for GA (Google api ruby client samples) was used to extract analytics information regularly. Extracted data included details, such as daily number of player visits, number of new players and returning players, percent new players and returning players, number of new players and returning players, mean duration of daily visit, and mean duration of visit by each player type. We extracted information about geographical distribution of the visits and number of players from each country. Player activity information from 12 August 2013 to 4 August 2014 (358 days) was used to generate reports about the trend of player visits and duration of visits by player type and player geographical distribution. GA uses persistent cookies to identify each player, which may result in an overestimation of number of unique players, especially if the cookies are deleted from the machine. From the comparison of number players registered in the Fraxinus game database and number of players counted from GA, we found that on average 7.25% of additional number of players were recorded by GA. Based on the number of new players and returning players visiting from the Fraxinus database, we estimated that each returning player visits 2.28 times per day. Based on the mean duration of new and returning player visit length, we estimated that 12.5 min was the duration by new players and 29.65 min was the duration spent by each returning player per visit.\n\n### Impact of press releases\n\nTo asses the impact of press releases, players joining on or up to 3 days from a press release date were selected, and the total number of useful answers provided by them until 4 August 2014 was pooled. Similar analysis was done for players joining on remaining dates to compute control day player contributions. To calculate number of new and returning players resulting from press releases, the numbers of new and returning players from the selected dates were subtracted by the mean of respective player numbers from 10 previous days.\n\n### Human contribution estimation\n\nWe used the data from Fraxinus to combine the play parameters into an equation that can calculate the productivity of a crowdsourcing project. A number of new players and returning players visiting Fraxinus daily were used to fit a power law relationship of y = axb; where y = player number, a = cohort of players on day 1, x = time since release, and b = rate of decay of players. We have fit separate equations for the number of new players, NP = ax\u22121.303; and the number of returning players, RP = (a/5x)\u22120.764. A parameter z was included to increase the value of NP at arbitrary points to simulate the effect of media or outreach attention. The actual work done by a crowdsourcing project depends on the time taken to complete each task and can be calculated,\n\n$$\nW=\\frac{H\u2212E}{T},\n$$\n\nwhere W = Total human computation contribution, H = human computation time, E = education cost (total number of players * tutorial length), T = task length. And H is calculated using following equation,\n\n$$\nH=NC_{i}T_{n}+\\sumd=2fNT_{n}(C_{n}+C_{i}d^{\\alpha})+ET_{r}(C_{r}C_{i}d^{\\beta}),\n$$\n\nCi = initial cohort of players (5000), Cr = fraction of the cohort of players returning (1/5), Cn = new players joining due to press release as a function of time, d = day of game, f = end day (358), Tn = mean processing time contributed by a new player in minutes (12.5 min), Tr = mean processing time contributed by a returning player in minutes (70 min), \u03b1 = rate of decay of new players (\u22121.303), \u03b2 = rate of decay of returning players (\u22120.764), N = effectiveness of time contributed by new players (1), E = effectiveness of time contributed by returning players (1).\n\nWe provide code implementing the model as used in these analyses at http://nbviewer.ipython.org/github/shyamrallapalli/fraxinus_version1_data_analysis/blob/master/fraxinus_visits_model/Players-nonplayers.ipynb.\n",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "d8429de3-fa2d-4edf-9a58-e2c733128d20",
+      "submission_id": "d3467fcd-2bfe-49c7-a489-9b4fdab14ed3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07460.017](https://doi.org/10.7554/eLife.07460.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cFraxinus: a citizen science DNA alignment game where players beat software & reveal a winning strategy for crowdsourcing\u201d for consideration at eLife. Your article has been favourably evaluated by three reviewers, but needs to be revised in response to the following comments from the referees before we can reach a final decision on publication.\n\nSummary:\n\nThe paper, through the analysis of data arising from the platform game Fraxinus, proposes a linear model that predicts the likely outcomes of crowdsourcing projects. The authors, by means of a descriptive analysis, show a case in which the crowd shows higher performances than the machine. Predicting the outcomes of a crowdsourcing project is certainly an interesting topic whose implications are relevant not only for scientists themselves, but also for R&D managers, administrators of granting agencies, and policy makers. The article describes a novel crowdsourcing project and provides relevant insights for crowdsourcing in bioscience. Nonetheless, there is considerable scope for the manuscript to be improved.\n\nEssential revisions:\n\n1) The title of this paper describes Fraxinus as \u201ca citizen science DNA alignment game where players beat machines\u201d and the Abstract states that Fraxinus players \u201cmatched or improved computational alignments in 94% of cases\u201d. However, it turns out that only 15% of the time players gained a higher percent identity (and in 78% of alignments the percent identity was equal). Therefore, the claims in the title and Abstract need to be toned down.\n\nThe authors should also slightly shorten the paragraph containing the comparison of performances between the crowd and the machine. This topic, despite its relevance, has been already addressed by literature (e.g. Cooper at al. 2010).\n\n2) In the Abstract the authors claim that their model will provide a framework for the design and implementation of future citizen-science initiatives. However, the paper just provides limited hints of such a framework. The authors should consider extending this section. The authors should also consider adding a paragraph about the generalizability of the model, possibly containing evidences of its goodness (e.g. through the prediction of the outcomes of other crowdsourcing project).\n\n3) Many key concepts necessary to describe multiple sequence alignments and genetic variant predictions are explained only brief. Please supply more detailed descriptions for the benefit of readers who are not familiar with these concepts.\n\n4) The authors should explain their model more fully. In particular, they should better explain the model assumptions (e.g. why press releases only influence the behavior of new players?) and the implications of these assumptions. Crowston and Fagnot (2008), Panciera, Halfaker and Terveen (2009), and Jackson and colleagues (2015WP) develop dynamic models of virtual collaboration that may be useful in thinking about this issue.\n\n5) The authors should consider a refinement of their model to address the following points:\n\nResults and Discussion, first paragraph: The authors claim that 49 players (0.7%) contributed to half of the total answers. However, the authors do not consider this information when they developed their model.\n\nSimilarly, they write (Results and Discussion, fifth paragraph) that not all time contributed by players is equally productive. However, they make this assumption in their model. The authors should explain the reasons of these choices.\n\nA number of recent studies (e.g. Sauermann and Franzoni 2015) describes user's contribution pattern and highlights that the idea of a homogenous group of participants is far from reality. The authors should consider these contributions to refine their model.\n\nUsing Google Analytics persistent cookies may generate a bias in assessing both the number of new players (overestimation) and the number of returning players (underestimation). The authors should describe how they took into account this bias in their computation.\n\n6) Concerning the results, it would be good to have a justification for the parameters used. Why do you choose a 21 nt game window? Do you try the game with a longer window? Could you expect better results if a longer window is used? In the same sense, the alignments are compared in two ways; by calculating the percent identity and by computing an alignment score. With respect to the measure of identity, why the authors did not use \u2018standard\u2019 measures such as Sum of Pairs, and Total Column metrics? What about comparing the score of the alignments using the score functions reported by state of the art MSA algorithms?\n\n7) It is not clear to the reader what software/computational method the players are being compared to, especially in the figures and tables. Please explicitly the software/computational method in the captions of the relevant figures and tables.\n\n8) The section \u2018Human contribution estimation\u2019 needs some revision. If the formulae given in this section are standard formulae taken from the literature, please supply references. And if these formulae are not standard formulae, please supply more information about how they were derived.\n\n9) Please consider adding the following references and discussing them in the text at the appropriate place:\n\nOpen-Phylo: a customizable crowd-computing platform for multiple sequence alignment Genome Biology 14, R116 (2013). This paper seems to have a lot of common features with the study presented here, and it can be used for comparison purposes.\n\nAlgorithm discovery by protein folding game players PNAS 108, 18949-18953 (2011). This paper could be used to develop the idea that the alignment strategies used by players could be implemented in algorithms for potential improvements.\n\nIt would be useful to be explicit about the relationship between the present work and previous publications (MacLean et al., GigaScience, 2013; MacLean et al., eLife, 2013).\n",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "45bed7a1-0525-4067-a9a8-5cf34205aa73",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C1",
+      "claim": "Ash dieback is a disease caused by the fungal pathogen Hymenoscyphus fraxineus.",
+      "claim_type": "EXPLICIT",
+      "source": "Ash dieback is a disease caused by the fungal pathogen Hymenoscyphus fraxineus, and it has devastated populations of ash trees (Fraxinus excelsior) across Europe in recent years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established fact about the disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "0a261f09-767b-4483-9e2b-d50247c3c122",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C2",
+      "claim": "Hymenoscyphus fraxineus has devastated populations of ash trees (Fraxinus excelsior) across Europe in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "Ash dieback is a disease caused by the fungal pathogen Hymenoscyphus fraxineus, and it has devastated populations of ash trees (Fraxinus excelsior) across Europe in recent years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual observation about the impact of the disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "a199ac8b-4ac1-4097-b3df-13782cb8f047",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C3",
+      "claim": "Ash dieback was discovered in the wild in the east of England for the first time in 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "When ash dieback was discovered in the wild in the east of England for the first time, in 2012, the present authors set up the OpenAshDieBack (OADB) project as a crowdsourcing platform to allow scientists across the world to contribute to the genomic analysis of the pathogen and the host (MacLean et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific historical fact cited with a reference to MacLean et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "0e871976-8417-4d03-a615-975347c603d6",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C4",
+      "claim": "The OpenAshDieBack (OADB) project was set up as a crowdsourcing platform to allow scientists across the world to contribute to the genomic analysis of the pathogen and the host.",
+      "claim_type": "EXPLICIT",
+      "source": "When ash dieback was discovered in the wild in the east of England for the first time, in 2012, the present authors set up the OpenAshDieBack (OADB) project as a crowdsourcing platform to allow scientists across the world to contribute to the genomic analysis of the pathogen and the host (MacLean et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the OADB project with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8a253e73-1b47-4976-8250-3bc00f2a0867",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C5",
+      "claim": "Fraxinus is a Facebook-based game developed to allow non-specialists to improve genetic variant predictions from DNA sequence data arising from the OADB project.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we developed and released Fraxinus, a Facebook-based game, to allow non-specialists to improve genetic variant predictions from DNA sequence data arising from the OADB project (MacLean, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and platform of the Fraxinus game with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "1a9d6f9a-fd98-45f3-9358-337bc03c3a60",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C6",
+      "claim": "DNA sequence alignment is a hard problem that seeks to arrange two or more genome sequences in order to identify regions of similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA sequence alignment is a hard problem that seeks to arrange two or more genome sequences in order to identify regions of similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about DNA sequence alignment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2da9c6d8-dddb-44cd-bd0e-7105fc086235",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C7",
+      "claim": "When short fragments are being aligned with a longer sequence, the longer sequence is often considered to be a reference sequence that should not be altered.",
+      "claim_type": "EXPLICIT",
+      "source": "When short fragments are being aligned with a longer sequence, the longer sequence is often considered to be a reference sequence that should not be altered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes standard practice in sequence alignment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "c03bfd8a-766f-4393-a57c-aabf7966ffec",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C8",
+      "claim": "The process of alignment requires the best overall match between the two sequences to be found first through 'global alignment' followed by 'local alignment' that involves modifying the short sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of alignment requires the best overall match between the two sequences to be found first: this 'global alignment' is then followed by a finer-grained 'local alignment' that involves modifying the short sequences by, for example, inserting small gaps or deleting short stretches of the sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard two-step alignment process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "3495ee99-1ac2-42ca-981e-3ecaa8f96bbe",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C9",
+      "claim": "Alignment is a computationally intensive process.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment is a computationally intensive process, and many computer programs (e.g., BWA aligner [Li and Durbin, 2009]) have been devised that implement and optimize alignments according to various measures of similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of alignment with citation to BWA aligner.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "868f3fa1-d528-4c2a-ae54-33875515f671",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C10",
+      "claim": "Many computer programs have been devised that implement and optimize alignments according to various measures of similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment is a computationally intensive process, and many computer programs (e.g., BWA aligner [Li and Durbin, 2009]) have been devised that implement and optimize alignments according to various measures of similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with BWA aligner cited as an example.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "d18d60ba-ef22-491c-8ad4-b0654c0aa9b9",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C11",
+      "claim": "Percent identity is a straightforward measure of alignment similarity in which the number of identical nucleotides in the alignment is calculated as a proportion of whole alignment length.",
+      "claim_type": "EXPLICIT",
+      "source": "A straightforward measure is percent identity (in which the number of identical nucleotides in the alignment is calculated as a proportion of whole alignment length).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines a standard metric used in sequence alignment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "1d8353fd-bf8c-4b59-b14a-41014e16a394",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C12",
+      "claim": "Once the alignment process is complete, any differences between the two sequences can be considered a genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the alignment process is complete, any differences between the two sequences can be considered a genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of alignment results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "6b303174-8436-4c3c-b2c1-fb6cdd2308ed",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C13",
+      "claim": "Genetic variations can be single nucleotide polymorphisms (SNPs), in which a single nucleotide differs, or insertion\u2013deletion polymorphisms (INDELs), in which longer stretches are different.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences can be single nucleotide polymorphisms (SNPs), in which a single nucleotide differs, or insertion\u2013deletion polymorphisms (INDELs), in which longer stretches are different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines two types of genetic variations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "1b91c185-1676-40c3-b8ac-55377008cbd5",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C14",
+      "claim": "Software like SAMTools can identify the variants from alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Software like SAMTools (Li et al., 2009) can identify the variants from alignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the capability of SAMTools with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "bdc87cc8-0d72-4748-8815-3a332834c745",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C15",
+      "claim": "Citizen-science projects are an excellent opportunity to engage the public in science and to harness the human intelligence of large numbers of non-specialists to make progress on inherently difficult research tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Citizen-science projects are an excellent opportunity to engage the public in science and to harness the human intelligence of large numbers of non-specialists to make progress on inherently difficult research tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about citizen science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "fc2f611b-50ff-4d3e-bc31-24887c8fc3c6",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C16",
+      "claim": "The citizen-science approach has been used in astronomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The citizen-science approach has been used in astronomy (Lintott et al., 2008), protein folding (Cooper et al., 2010), and genetics (Kawrykow et al., 2012; Curtis, 2014; Ranard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lintott et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "762b36d2-081d-4053-877c-a2c49eba076f",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C17",
+      "claim": "The citizen-science approach has been used in protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "The citizen-science approach has been used in astronomy (Lintott et al., 2008), protein folding (Cooper et al., 2010), and genetics (Kawrykow et al., 2012; Curtis, 2014; Ranard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cooper et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "69a51738-b314-4a21-9179-f3d090063b3d",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C18",
+      "claim": "The citizen-science approach has been used in genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The citizen-science approach has been used in astronomy (Lintott et al., 2008), protein folding (Cooper et al., 2010), and genetics (Kawrykow et al., 2012; Curtis, 2014; Ranard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kawrykow et al., 2012; Curtis, 2014; Ranard et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b9c250d6-12ad-49b9-9ca7-a31706854f4a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C19",
+      "claim": "Computational approaches to the identification of genetic variants can be error-prone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, computational approaches to the identification of genetic variants can be error-prone, and it has been shown that the pattern-recognition skills of humans can improve DNA sequence alignments (Kawrykow et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5a313331-5d69-4586-9087-19837a2c5ee3",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C20",
+      "claim": "The pattern-recognition skills of humans can improve DNA sequence alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, computational approaches to the identification of genetic variants can be error-prone, and it has been shown that the pattern-recognition skills of humans can improve DNA sequence alignments (Kawrykow et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kawrykow et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "1c3bc84a-7339-465f-b053-6f8df74aab7e",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C21",
+      "claim": "Fraxinus was created to improve the automated alignments produced by computational approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we created Fraxinus to improve the automated alignments produced by computational approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the purpose of creating Fraxinus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "734d5b0a-100d-45a1-8a37-57ee15c99284",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C22",
+      "claim": "Over the first year, Fraxinus was loaded with variant calls based on cDNA-sequence reads generated from four different samples collected at locations in Norfolk in the UK: Kenninghall Wood (KW1), Ashwellthorpe Wood (AT1 and AT2), and Upton Broad and Marshes (UB1).",
+      "claim_type": "EXPLICIT",
+      "source": "Over the first year, Fraxinus was loaded with variant calls based on cDNA-sequence reads generated from four different samples collected at locations in Norfolk in the UK: Kenninghall Wood (KW1), Ashwellthorpe Wood (AT1 and AT2), and Upton Broad and Marshes (UB1) (Saunders et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in Fraxinus with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8677fe8b-b17f-4991-b1a1-ee83b36117b1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C23",
+      "claim": "The Fraxinus game presented the player with a pre-selected small section of genome sequence from the KW1 reference strain and rows of sequence from one of the other test variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The game presented the player with a pre-selected small section of genome sequence from the KW1 reference strain and rows of sequence from one of the other test variants (MacLean, 2013), with each DNA sequence represented as a string of colored leaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the game interface with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "877b7064-dca9-44d7-a5bd-20c63f0dbad4",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C24",
+      "claim": "In the Fraxinus game, each DNA sequence was represented as a string of colored leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "The game presented the player with a pre-selected small section of genome sequence from the KW1 reference strain and rows of sequence from one of the other test variants (MacLean, 2013), with each DNA sequence represented as a string of colored leaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the visual representation in the game.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "be417222-8ca1-4e58-81ce-15ffcf8ba1ab",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C25",
+      "claim": "The Fraxinus game provided tools that allow the player to shift the sequence relative to the reference and to edit the sequence in such a way as to introduce deletions or gaps.",
+      "claim_type": "EXPLICIT",
+      "source": "The game provided tools that allow the player to shift the sequence relative to the reference and to edit the sequence in such a way as to introduce deletions or gaps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functionality provided to players.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "489a0976-8dc9-484f-84a5-82b5850d8442",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C26",
+      "claim": "The aim of the game for the player was to produce the best alignment, allowing her/him to claim the puzzle as their own and score points.",
+      "claim_type": "EXPLICIT",
+      "source": "The aim of the game for the player was to produce the best alignment, allowing her/him to claim the puzzle as their own and score points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the game objective.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "f9679d08-877d-4e84-91bf-b54eceda4ebe",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C27",
+      "claim": "The Fraxinus game was played in Facebook and took advantage of the player's social network to invite new players.",
+      "claim_type": "EXPLICIT",
+      "source": "The game was played in Facebook and took advantage of the player's social network to invite new players.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the platform and social features of the game.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "db5aacc8-e5c9-44a1-9c02-c9896b3b7e18",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C28",
+      "claim": "The wider social network was used to encourage the replay of puzzles in Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "The wider social network was used to encourage the replay of puzzles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the game design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "e837d729-e20d-4341-a46f-ad3c72eac56c",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C29",
+      "claim": "Player names, scores, and the resulting alignments were stored for later analysis in Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "We stored player names, scores, and the resulting alignments for later analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5dad32d6-dbdf-4f5c-88fb-151f23ab4350",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C30",
+      "claim": "BWA aligner and SAMTools were used to identify SNPs and INDELs in AT1, AT2 and UB1 against the common reference KW1.",
+      "claim_type": "EXPLICIT",
+      "source": "The BWA aligner (Li and Durbin, 2009) and SAMTools (Li et al., 2009) were used to identify SNPs and INDELs in AT1, AT2 and UB1 against the common reference KW1 (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "3d8637ed-0588-4bcb-8346-724b610fa221",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C31",
+      "claim": "Initially a data set of 1000 SNPs and 160 INDELs were loaded into Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially a data set of 1000 SNPs and 160 INDELs were loaded into Fraxinus (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in text and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "c2869882-bbab-41dd-add3-cd9f00a9b071",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C32",
+      "claim": "The maximum number of sequences per puzzle was limited to 20 for ease of playing.",
+      "claim_type": "EXPLICIT",
+      "source": "For ease of playing, we limited the maximum number of sequences per puzzle to 20 (Figure 1\u2014figure supplement 1A): in total 10,087 puzzles were created from the 1160 variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a design decision with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "ce3f915f-0501-4a45-ae1f-18cf24170ed9",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C33",
+      "claim": "In total 10,087 puzzles were created from the 1160 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "For ease of playing, we limited the maximum number of sequences per puzzle to 20 (Figure 1\u2014figure supplement 1A): in total 10,087 puzzles were created from the 1160 variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the data preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "002a91d1-73ec-4fbf-bcdc-81fdda6683ec",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C34",
+      "claim": "Fraxinus was released on 13 August 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Fraxinus was released on 13 August 2013 and by 4 August 2014 (51 weeks) had received 63,132 visits from 25,614 unique addresses in 135 countries (Table 2, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific date stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "f49de528-f9de-452e-a816-52f625a3f2b1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C35",
+      "claim": "By 4 August 2014 (51 weeks after release), Fraxinus had received 63,132 visits from 25,614 unique addresses in 135 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Fraxinus was released on 13 August 2013 and by 4 August 2014 (51 weeks) had received 63,132 visits from 25,614 unique addresses in 135 countries (Table 2, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about game usage supported by Table 2 and a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "4ebde5c7-ecbc-495b-8e6e-256281ddd166",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C36",
+      "claim": "Most visits to Fraxinus were from the UK (57%), followed by the US, Canada, France, and Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these were from the UK (57%), followed by the US, Canada, France, and Germany.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about the geographic distribution of players.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5d0a4c9c-a867-4e31-a888-3aa564e36c90",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C37",
+      "claim": "In the first 6 months, when the first batch of puzzles was retired, Fraxinus received 154,038 alignment answers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first 6 months, when the first batch of puzzles was retired, we received 154,038 alignment answers, with an approximate log-normal distribution of answers for 10,087 puzzles (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player contributions with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "105fc592-3150-4a07-993c-f03a01babd2d",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C38",
+      "claim": "The alignment answers for 10,087 puzzles had an approximate log-normal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first 6 months, when the first batch of puzzles was retired, we received 154,038 alignment answers, with an approximate log-normal distribution of answers for 10,087 puzzles (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical characterization of the data distribution with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "9ce342aa-43d8-4345-afcf-c108fd30bfa2",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C39",
+      "claim": "Each puzzle was played on average by 11.48 (standard deviation 7.08) players.",
+      "claim_type": "EXPLICIT",
+      "source": "Each puzzle was played on average by 11.48 (standard deviation 7.08) players, and not all alignment answers were informative (we received 3.6 empty alignments per puzzle; Supplementary file 1, Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about player engagement per puzzle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8137c6fb-f125-4a06-956f-3f18eb9117eb",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C40",
+      "claim": "Not all alignment answers were informative, with an average of 3.6 empty alignments per puzzle.",
+      "claim_type": "EXPLICIT",
+      "source": "Each puzzle was played on average by 11.48 (standard deviation 7.08) players, and not all alignment answers were informative (we received 3.6 empty alignments per puzzle; Supplementary file 1, Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about the quality of submissions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "a7b2f059-f004-4d7b-9375-fca0ed340a70",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C41",
+      "claim": "In 4701 (61.7%) of 7620 selected puzzles, the alignments from all the high-scoring players differed from the computational alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared 7620 selected puzzles for differences in player and software alignments: in 4701 (61.7%) puzzles the alignments from all the high-scoring players differed from the computational alignment (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the comparison analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8cc628e9-7eff-4909-ab98-018b47fb72c1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C42",
+      "claim": "In 2765 (36.3%) of the player alignment answers, the alignments were identical to those from software.",
+      "claim_type": "EXPLICIT",
+      "source": "A further 2765 (36.3%) of the player alignment answers were identical to those from software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data from the comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "c53f6106-f923-45d6-b758-dbd43c4dc414",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C43",
+      "claim": "With the exception of 154 puzzles (2%), the high-scoring players converged on the same answer.",
+      "claim_type": "EXPLICIT",
+      "source": "And with the exception of 154 puzzles (2%), the high-scoring players converged on the same answer (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player consensus with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "443ea242-71f7-4f39-940f-cb4c105ce12f",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C44",
+      "claim": "6834 (89.7%) of puzzles had two or more high-scoring players.",
+      "claim_type": "EXPLICIT",
+      "source": "Most puzzles had replicate analyses; 6834 (89.7%) had two or more high-scoring players (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about replication with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5848c5b0-1b19-454d-8491-8253055002fd",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C45",
+      "claim": "The results indicate a high accuracy of alignment across puzzles and endorse the notion that replay leads to useful replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate a high accuracy of alignment across puzzles and endorse the notion that replay leads to useful replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "39a22688-aa5f-4123-a98b-84a93ca6298a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C46",
+      "claim": "In 15.26% of 57,834 cases where player alignment differed from the computational method, the players achieved a higher percent identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, in 57,834 cases, the player alignment differed from the alignment produced by the computational method. In 15.26% of these cases, the players achieved a higher percent identity; in 6.37% of cases, the computational method achieved a higher percent identity; and the percent identities were equal for the remaining 78.37% of alignments (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the comparison analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "845278b8-60d1-4268-8933-4a9382c3c1c9",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C47",
+      "claim": "In 6.37% of cases where player alignment differed from the computational method, the computational method achieved a higher percent identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, in 57,834 cases, the player alignment differed from the alignment produced by the computational method. In 15.26% of these cases, the players achieved a higher percent identity; in 6.37% of cases, the computational method achieved a higher percent identity; and the percent identities were equal for the remaining 78.37% of alignments (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the comparison analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "f694c585-5dab-44cb-b94b-a30d7529bc96",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C48",
+      "claim": "The percent identities were equal for 78.37% of alignments where player alignment differed from the computational method.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, in 57,834 cases, the player alignment differed from the alignment produced by the computational method. In 15.26% of these cases, the players achieved a higher percent identity; in 6.37% of cases, the computational method achieved a higher percent identity; and the percent identities were equal for the remaining 78.37% of alignments (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data from the comparison analysis with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "1353eb55-0e65-4aa1-ae18-d1bc4e7ba75b",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C49",
+      "claim": "Players aligned a higher proportion of INDELs (85.4% of 822) differently to software than SNPs (58.8% of 6798).",
+      "claim_type": "EXPLICIT",
+      "source": "Players aligned a higher proportion of INDELs (85.4% of 822) differently to software than SNPs (58.8% of 6798; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data comparing player performance on different variant types with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "9655f5a3-cb00-4934-bbb1-5b6df90531f3",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C50",
+      "claim": "Players scored higher in 29% of INDEL alignments, with software scoring better in only 4% of alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Players scored higher in 29% of INDEL alignments, with software scoring better in only 4% of alignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about relative performance on INDELs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "92158552-4608-4922-8a7a-1312e08e75a1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C51",
+      "claim": "For SNPs players scored better in 12% of puzzles with software scoring better in 7%.",
+      "claim_type": "EXPLICIT",
+      "source": "For SNPs players scored better in 12% of puzzles with software scoring better in 7% (Supplementary file 1, Table S2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about relative performance on SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "da1cdf67-384f-4b3b-a040-30ef34e6383a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C52",
+      "claim": "The series of steps involved in solutions is not yet recorded by Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "The series of steps involved in these solutions is not yet recorded by Fraxinus, but previous work on the FoldIt game has shown that recording and sharing protein-folding recipes allow rapid development of novel algorithms (Khatib et al., 2011); we are hopeful that similar improvements will be possible with Fraxinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the current system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "3f66815e-8f6c-46a3-bbea-c724e31c2bf5",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C53",
+      "claim": "Previous work on the FoldIt game has shown that recording and sharing protein-folding recipes allow rapid development of novel algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "The series of steps involved in these solutions is not yet recorded by Fraxinus, but previous work on the FoldIt game has shown that recording and sharing protein-folding recipes allow rapid development of novel algorithms (Khatib et al., 2011); we are hopeful that similar improvements will be possible with Fraxinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Khatib et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5e046e22-b663-479f-b8d4-2fc9912fdb9d",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C54",
+      "claim": "Similar improvements to those seen in FoldIt will be possible with Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "The series of steps involved in these solutions is not yet recorded by Fraxinus, but previous work on the FoldIt game has shown that recording and sharing protein-folding recipes allow rapid development of novel algorithms (Khatib et al., 2011); we are hopeful that similar improvements will be possible with Fraxinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "d38d3432-9fc8-4e2a-bb4c-af34441872e8",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C55",
+      "claim": "Most of the visitors to the Fraxinus game were interested only casually and did not play beyond either the introduction or tutorial.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the visitors to the Fraxinus game were interested only casually and did not play beyond either the introduction or tutorial (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of player behavior data with table reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "893ca9c4-442b-4e9f-8be5-64ce2e78b770",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C56",
+      "claim": "Only 7357 (28.72%) of players answered puzzles.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 7357 (28.72%) of players answered puzzles and, more surprisingly, 49 players (0.7%) contributed to half of the answers (74,356 answers) that we received (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player engagement with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "80e7fc84-ae84-4584-bae0-ee833e6bb935",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C57",
+      "claim": "49 players (0.7%) contributed to half of the answers (74,356 answers) received.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 7357 (28.72%) of players answered puzzles and, more surprisingly, 49 players (0.7%) contributed to half of the answers (74,356 answers) that we received (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data showing concentration of contributions with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "12b7eaa6-b06e-42b7-ba26-dfb83a398449",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C58",
+      "claim": "New players devoted an average of 12.5 min per visit.",
+      "claim_type": "EXPLICIT",
+      "source": "New players and returning players devoted an average of 12.5 min and 29.7 min per visit, respectively (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player engagement time with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "e08f8b06-e870-4839-9c3d-8e3849146c56",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C59",
+      "claim": "Returning players devoted an average of 29.7 min per visit.",
+      "claim_type": "EXPLICIT",
+      "source": "New players and returning players devoted an average of 12.5 min and 29.7 min per visit, respectively (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player engagement time with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5aef99a3-f70c-44be-bc92-a0af42d80f44",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C60",
+      "claim": "On average, each returning player made 2.3 visits per day, thereby contributing 70 min of game play per day.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, each returning player made 2.3 visits per day, thereby contributing 70 min of game play per day; this indicates that the players were spending sufficient time to go through the process of realignment and are probably now experts in the alignment process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about returning player behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "44e556b0-15f0-4901-8e8a-b813679d6244",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C61",
+      "claim": "Returning players were spending sufficient time to go through the process of realignment and are probably now experts in the alignment process.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, each returning player made 2.3 visits per day, thereby contributing 70 min of game play per day; this indicates that the players were spending sufficient time to go through the process of realignment and are probably now experts in the alignment process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the time spent data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "41e932be-b851-4ec4-898d-750c67759074",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C62",
+      "claim": "There were clear peaks of new visitors (mean 151.4) on dates with publicity.",
+      "claim_type": "EXPLICIT",
+      "source": "There were clear peaks of new visitors (mean 151.4) on dates with publicity (Figure 2B) with events in traditional media having a much stronger impact than social media alone (Supplementary file 1, Table S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about the impact of publicity with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "950177be-3e0c-4883-9983-722ca398f031",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C63",
+      "claim": "Events in traditional media had a much stronger impact than social media alone on new visitor numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "There were clear peaks of new visitors (mean 151.4) on dates with publicity (Figure 2B) with events in traditional media having a much stronger impact than social media alone (Supplementary file 1, Table S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative observation about different types of publicity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "753116b9-e29e-4984-bc17-4ebac1a5ddf4",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C64",
+      "claim": "The number of returning players showed only a small increase (mean 2.6 returning per publicity event).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of returning players showed only a small increase (mean 2.6 returning per publicity event; Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about the limited impact of publicity on returning players with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "7a1ea352-e756-4902-80aa-1511708a086d",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C65",
+      "claim": "Most (62%) players joining on a press release date played only on that day.",
+      "claim_type": "EXPLICIT",
+      "source": "Most (62%) players joining on a press release date played only on that day, and 97.5% of all players played for 10 days or less (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player retention with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "19facb21-71c5-423c-b082-3c5bc3255df5",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C66",
+      "claim": "97.5% of all players played for 10 days or less.",
+      "claim_type": "EXPLICIT",
+      "source": "Most (62%) players joining on a press release date played only on that day, and 97.5% of all players played for 10 days or less (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player retention with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "d72d2d7a-4fd7-4329-bb8a-0c4ae133df94",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C67",
+      "claim": "New players were more motivated if they joined on a press release date and submitted 6.8 times more answers on average than those joining on other dates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, new players were more motivated, if they joined on a press release date and submitted 6.8 times more answers on average than those joining on other dates (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about the impact of press releases on player productivity with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2e71fa45-9845-488b-8a80-8c2d60af0712",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C68",
+      "claim": "A marked increase in empty answers was observed on press release dates.",
+      "claim_type": "EXPLICIT",
+      "source": "A marked increase in empty answers was also observed on press release dates (Figure 2C), indicating that new players joining on these days have contributed to more empty answers than useful answers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "659994af-29ed-4d4d-8370-b182cc873f29",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C69",
+      "claim": "New players joining on press release dates have contributed to more empty answers than useful answers.",
+      "claim_type": "EXPLICIT",
+      "source": "A marked increase in empty answers was also observed on press release dates (Figure 2C), indicating that new players joining on these days have contributed to more empty answers than useful answers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data pattern with figure reference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "e1e45cde-dd5a-4c00-a3e4-217260a7e906",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C70",
+      "claim": "Care need to be taken in assuming that all time contributed by players is equally productive.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that care need to be taken in assuming that all time contributed by players is equally productive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation about empty answers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "082eebfe-21d8-460a-a08e-d9d4521efacb",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C71",
+      "claim": "88% of all answers were provided by players who joined within the first 30 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 88% of all answers were provided by players who joined within the first 30 days (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about the temporal distribution of contributions with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "bb9cfa26-4eba-43f5-88c3-84e7b11f747a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C72",
+      "claim": "Most of the analysis in Fraxinus was carried out within the first few months by players enthused by the initial publicity, with some benefit resulting from subsequent publicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, most of the analysis in Fraxinus was carried out within the first few months by players enthused by the initial publicity, with some benefit resulting from subsequent publicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the temporal patterns in the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "59971d34-73da-4037-94a7-927fac08e77e",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C73",
+      "claim": "The number of daily visits followed a power law distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of daily visits followed a power law distribution, (Figure 3\u2014figure supplement 1) in the period presented.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical characterization of the data with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8d3384cf-9612-4fe2-a9b2-c8386938cbf1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C74",
+      "claim": "The power law distribution is also followed by new players and returning players.",
+      "claim_type": "EXPLICIT",
+      "source": "The power law distribution is also followed by new players and returning players (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical characterization of player types with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "bc807c67-331e-4c0f-9546-811ab7317f42",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C75",
+      "claim": "There were very few players who visited regularly.",
+      "claim_type": "EXPLICIT",
+      "source": "There were very few players who visited regularly (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b4f8ca8d-996c-4259-8557-67f1c9a74a37",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C76",
+      "claim": "There are 33 players who were active on 60 or more days.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 33 players who were active on 60 or more days, while 8 of these were active for over 200 days (Supplementary file 1, Table S4), with one player being active for 332 out of 350 days, since joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about highly engaged players.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5b69c563-ef32-48f3-8d2e-48faf3d6cf18",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C77",
+      "claim": "8 players were active for over 200 days.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 33 players who were active on 60 or more days, while 8 of these were active for over 200 days (Supplementary file 1, Table S4), with one player being active for 332 out of 350 days, since joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about highly engaged players.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "06808240-ae54-4265-a06c-299b7d471958",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C78",
+      "claim": "One player was active for 332 out of 350 days since joining.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 33 players who were active on 60 or more days, while 8 of these were active for over 200 days (Supplementary file 1, Table S4), with one player being active for 332 out of 350 days, since joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data about the most engaged player.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b010b657-0383-4204-89d5-8661670a93bf",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C79",
+      "claim": "The distribution indicates that we can expect a surprisingly long life for Fraxinus in the order of years.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution indicates that we can expect a surprisingly long life for Fraxinus in the order of years (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on the power law distribution with figure reference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "fdc0f349-b91e-4ea4-94d6-a35ced6968e1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C80",
+      "claim": "A small number of players are visiting frequently, although this is likely to decline in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite appearing contradictory to the observation that most answers were submitted in the first few months, a small number of players are visiting frequently, although this is likely to decline in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation with a speculative prediction.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "cc19ba39-6893-428a-9e5b-7cbfec8fc1b2",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C81",
+      "claim": "The mean number of tasks completed per day decreases over time for all score groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean puzzles contributed per day for groups with different total game scores decreased in a linear fashion for all scoring bins, indicating that players' enthusiasm for the puzzles or cause decreased over time, irrespective of their success at the game (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantitative data about player behavior over time with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "79e7e13f-1e23-4fe3-882f-02af3f56c7c7",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C82",
+      "claim": "Players' enthusiasm for the puzzles or cause decreased over time, irrespective of their success at the game.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean puzzles contributed per day for groups with different total game scores decreased in a linear fashion for all scoring bins, indicating that players' enthusiasm for the puzzles or cause decreased over time, irrespective of their success at the game (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the declining contribution pattern with figure reference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "ef1c5e07-7d6d-4ca2-96b9-7099a3d46044",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C83",
+      "claim": "A simple model was developed to predict the productivity of any proposed crowdsourcing project using demographic parameters from Fraxinus as a base.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these demographic parameters as a base, we developed a simple model to predict the productivity of any proposed crowdsourcing project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the development of a predictive model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "fedb531f-e668-4bfa-8cae-3d587aed5017",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C84",
+      "claim": "The model returns the number of players contributing to a project per day, based on an initial expected cohort of players, a returning player rate, and a new player rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The model returns the number of players contributing to a project per day, based on an initial expected cohort of players, a returning player rate, and a new player rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inputs and outputs of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "520b883c-e567-4761-a86b-c9e6f48ac637",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C85",
+      "claim": "The model is formulated as a decreasing power law relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is formulated as a decreasing power law relationship ('Materials and methods') and allows for arbitrary increase in players as per those observed on press release days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical form of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "180935b0-9ffc-4a02-8b83-d6579109b1a6",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C86",
+      "claim": "The model allows for arbitrary increase in players as per those observed on press release days.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is formulated as a decreasing power law relationship ('Materials and methods') and allows for arbitrary increase in players as per those observed on press release days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "9de535ac-0b03-4e75-8dd5-554dc997c496",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C87",
+      "claim": "The model recapitulates the observed result from Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "The model accordingly recapitulates the observed result from Fraxinus (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the model against actual data with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "153e8b52-d93c-46e7-9317-9e80af86f0e5",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C88",
+      "claim": "Predicted work time in the model was 935.53 days, while the actual total visit time was 924 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted work time in the model was 935.53 days, while the actual total visit time was 924 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of model prediction to actual data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "3dd7c6cd-1421-48f9-ae20-30c1f551d624",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C89",
+      "claim": "By modeling the impact of press releases, the model predicted 150.11 days of additional play; the actual figure was 142.14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, by modeling the impact of press releases, we predicted 150.11 days of additional play; the actual figure was 142.14 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of model prediction to actual data for press releases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "e72b0b8c-1a9c-42ff-8174-856c672c22bb",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C90",
+      "claim": "The experience with Fraxinus has been one of constantly decreasing player numbers, in spite of repeated press releases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experience with Fraxinus has been one of constantly decreasing player numbers, in spite of repeated press releases (Figure 3C), and the parameters of our player demographic distribution and the interest in our game have not been such that we received increases in player numbers after the initial release.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary observation about the overall trend with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "5d69d068-e717-4251-9426-2c352b0d7e87",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C91",
+      "claim": "The parameters of player demographic distribution and the interest in Fraxinus have not been such that increases in player numbers were received after the initial release.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experience with Fraxinus has been one of constantly decreasing player numbers, in spite of repeated press releases (Figure 3C), and the parameters of our player demographic distribution and the interest in our game have not been such that we received increases in player numbers after the initial release.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the player engagement pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "3eae2894-0605-4813-9826-fbff56760daf",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C92",
+      "claim": "Fraxinus was a very front-loaded game that did not hold the interest or grow beyond the initial crowd reached via the media.",
+      "claim_type": "EXPLICIT",
+      "source": "Fraxinus was a very front-loaded game that did not hold the interest or grow beyond the initial crowd we reached via the media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary characterization of the game's engagement pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b903a48a-6c57-4cee-bf6f-61e45b32f94c",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C93",
+      "claim": "Similar decaying trends were observed with other citizen science projects hosted on Zooniverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar decaying trends were also observed with other citizen science projects hosted on Zooniverse (Ponciano et al., 2014; Sauermann and Franzoni, 2015) and for web searches for trending terms (such as 'Ebola'; Figure 3\u2014figure supplement 3), which suggests that the decay in interest observed in crowdsourcing games is similar to that in other topics like the news.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ponciano et al., 2014 and Sauermann and Franzoni, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b4203f5c-89f3-4c83-a187-c72076c4f5e7",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C94",
+      "claim": "Similar decaying trends were observed for web searches for trending terms (such as 'Ebola').",
+      "claim_type": "EXPLICIT",
+      "source": "Similar decaying trends were also observed with other citizen science projects hosted on Zooniverse (Ponciano et al., 2014; Sauermann and Franzoni, 2015) and for web searches for trending terms (such as 'Ebola'; Figure 3\u2014figure supplement 3), which suggests that the decay in interest observed in crowdsourcing games is similar to that in other topics like the news.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation with figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "da2f7548-22d1-4c14-830d-8ecdfb882ce2",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C95",
+      "claim": "The decay in interest observed in crowdsourcing games is similar to that in other topics like the news.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar decaying trends were also observed with other citizen science projects hosted on Zooniverse (Ponciano et al., 2014; Sauermann and Franzoni, 2015) and for web searches for trending terms (such as 'Ebola'; Figure 3\u2014figure supplement 3), which suggests that the decay in interest observed in crowdsourcing games is similar to that in other topics like the news.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the comparison of different decay patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "c501e60b-4954-4ab0-8e56-7289e1187111",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C96",
+      "claim": "It is possible for the player cohort to grow over time if the slope of the power law expression in positive player numbers can increase.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation is not inevitable; it is possible for the player cohort to grow over time, if the slope of the power law expression in positive player numbers can increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical possibility based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "a3bbab09-2200-4ebe-8e51-abba8764d088",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C97",
+      "claim": "Growth in player cohort is equivalent to the number of active or new players exceeding those leaving.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, this is equivalent to the number of active or new players exceeding those leaving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical equivalence statement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2d9dd679-4092-427f-85ce-695e9b0442d1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C98",
+      "claim": "Growth could be achieved by an enthusiastic 'viral' growth spread.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be achieved by an enthusiastic 'viral' growth spread, and the results from the model in this case are similar to those from SIR (susceptible, infected, and recovered) or rumor-spreading models (Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical possibility with citation to similar models.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2731f29f-8282-4524-8ed0-8b5ade2a9e45",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C99",
+      "claim": "The results from the model in the case of viral growth are similar to those from SIR (susceptible, infected, and recovered) or rumor-spreading models.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be achieved by an enthusiastic 'viral' growth spread, and the results from the model in this case are similar to those from SIR (susceptible, infected, and recovered) or rumor-spreading models (Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other models with citation to Zhao et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "527dc91a-68b1-4606-9f46-3a96b87ee131",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C100",
+      "claim": "A viral strategy does not result in unlimited growth of player numbers when the potential audience is saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a viral strategy does not result in unlimited growth of player numbers, when the potential audience is saturated; instead, the amount of work performed begins to decline (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the model with figure reference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "58511d4c-a666-4ee6-9345-4bcaf15d2d44",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C101",
+      "claim": "When the potential audience is saturated in a viral strategy, the amount of work performed begins to decline.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a viral strategy does not result in unlimited growth of player numbers, when the potential audience is saturated; instead, the amount of work performed begins to decline (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the model with figure reference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2d424692-1840-4b69-b60b-cbbb5ca47c42",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C102",
+      "claim": "The work obtained by a viral strategy does not exceed that by a front-loaded strategy unless somewhat unrealistic growth rate is assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "The work obtained by a viral strategy does not exceed that by a front-loaded strategy unless somewhat unrealistic growth rate is assumed (e.g., each player invites ten more players on the first day, and there is no restriction on the total available players; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from model comparisons with figure reference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b69dd690-41c4-4d34-a827-ab96b5c59de9",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C103",
+      "claim": "A smaller amount of work than that seen in the front-loaded strategy is done if the players are allowed to defer inviting friends over a time period.",
+      "claim_type": "EXPLICIT",
+      "source": "A smaller amount of work than that seen in the front-loaded strategy is done if the players are allowed to defer inviting friends over a time period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from model simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "7e6653f5-2cd2-470c-8632-a09143777c0a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C104",
+      "claim": "When a random time delay of up to 3 months between joining and inviting new players was allowed, the overall work was less than if invitation took place in the first 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We allowed a random time delay of up to 3 months between joining and inviting new players and saw that the overall work was less than if invitation took place in the first 3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8b667eb0-ecab-436b-a2f9-2419b6a0c73b",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C105",
+      "claim": "By having a large initial cohort and not adopting a viral strategy, the work expected from Fraxinus was maximized.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that by having a large initial cohort and not adopting a viral strategy, we maximized the work expected from Fraxinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "f21ef66c-5c32-4877-ad07-c3a42e8e42dd",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C106",
+      "claim": "By applying the model to a proposed crowdsourcing project, it is possible to balance resources in order to make the most of potential contributors.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying our model to a proposed crowdsourcing project, it is possible to balance resources (such as public outreach, time taken to analyze data, and initial cohorts of contributors) in order to make the most of potential contributors and to determine whether the approach is likely to be feasible and worthwhile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "7a191061-cc20-4e95-9ec4-e14207adcf58",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C107",
+      "claim": "The model can be used to determine whether a crowdsourcing approach is likely to be feasible and worthwhile.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying our model to a proposed crowdsourcing project, it is possible to balance resources (such as public outreach, time taken to analyze data, and initial cohorts of contributors) in order to make the most of potential contributors and to determine whether the approach is likely to be feasible and worthwhile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2a3a3c2b-9a32-4a9a-ae7f-a8974a78fef5",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C108",
+      "claim": "Fraxinus posed a problem that non-specialists were able to positively contribute to.",
+      "claim_type": "EXPLICIT",
+      "source": "Fraxinus posed a problem that non-specialists were able to positively contribute to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion about the game's success.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "55356600-c34d-47a5-b2e5-c1554dfa1429",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C109",
+      "claim": "The amount of work done is limited to a surprisingly small fraction of contributors, particularly in view to the number of people who have volunteered effort.",
+      "claim_type": "EXPLICIT",
+      "source": "From the patterns of access and return, we observed that the amount of work done is limited to a surprisingly small fraction of contributors, particularly in view to the number of people who have volunteered effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary observation about contribution patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "c9eab8f1-3233-4107-b339-73f55b35e667",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C110",
+      "claim": "A small community of skilled users who are willing to collaborate and contribute to the goals was built up through Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Fraxinus, we have been able to build up a small community of skilled users who are willing to collaborate and contribute to our goals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an outcome of the project.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "2a4d79f5-2ee4-48ab-b34d-bfa159bcebaf",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C111",
+      "claim": "Scientists wishing to take advantage of crowdsourcing for citizen-science projects must be extremely focused to get value out.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that scientists wishing to take advantage of crowdsourcing for citizen-science projects must be extremely focused to get value out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "17672a1b-37bf-4794-b293-52de5c92bf0e",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C112",
+      "claim": "The model of the human computing power that is available for a citizen-science project provides a guide for the design and implementation of future projects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model of the human computing power that is available for a citizen-science project provides a guide for the design and implementation of future projects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the model for future work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "0fdf3c57-b2f3-4f08-bb06-9c75a5bb8786",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C113",
+      "claim": "Over a period of 51 weeks players were able to match computational alignments of genetic sequences in 78% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a period of 51 weeks players were able to match computational alignments of genetic sequences in 78% of cases, and to improve them in 15% of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data from the abstract summarizing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "977a3428-b9d2-45d2-b037-4977465a289d",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C114",
+      "claim": "Over a period of 51 weeks players were able to improve computational alignments of genetic sequences in 15% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a period of 51 weeks players were able to match computational alignments of genetic sequences in 78% of cases, and to improve them in 15% of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data from the abstract summarizing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "e60b9109-26b5-4ab1-9c85-0bb62eccfa22",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C115",
+      "claim": "Most players were only transiently interested in the game.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that most players were only transiently interested in the game, and that the majority of the work done was performed by a small group of dedicated players.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "e670e481-109f-443f-83dd-22096135a105",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C116",
+      "claim": "The majority of the work done was performed by a small group of dedicated players.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that most players were only transiently interested in the game, and that the majority of the work done was performed by a small group of dedicated players.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "1d80e174-2581-467c-ae85-a0a3d39f75d1",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C117",
+      "claim": "A linear model for the length of time that contributors are likely to donate to a crowd-sourced citizen science project was built based on experiences with Fraxinus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our experiences we have built a linear model for the length of time that contributors are likely to donate to a crowd-sourced citizen science project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a key outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "0c73ca92-eebc-4033-a370-449f63ea632a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "claim_id": "C118",
+      "claim": "The model could serve a guide for the design and implementation of future crowd-sourced citizen science initiatives.",
+      "claim_type": "EXPLICIT",
+      "source": "This model could serve a guide for the design and implementation of future crowd-sourced citizen science initiatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the intended application.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Fraxinus game was loaded with 1000 SNPs and 160 INDELs from four fungal samples, generating 10,087 puzzles. Over 51 weeks, the game received 63,132 visits from 25,614 unique addresses in 135 countries, with most visits from the UK (57%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C36 provide consistent quantitative data about the game setup and usage metrics, supported by Tables 1-2 and figures. The data sources are clearly described in the methods section, and the numbers are internally consistent across claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the first 6 months, 154,038 alignment answers were received with a log-normal distribution. Of 7,620 selected puzzles, 61.7% had all high-scoring players produce alignments different from computational methods, while 36.3% matched software alignments. High-scoring players converged on the same answer in 98% of puzzles, with 89.7% having two or more high-scoring players.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 present quantitative results about player alignment performance with consistent percentages and counts. The data is supported by Figure 1 and supplementary tables. The high convergence rate (98%) among high-scoring players provides strong evidence for reliability of player contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "a977c778-fc26-45f8-b146-337d2a6af1ec",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When comparing 57,834 cases where player alignments differed from computational methods, players achieved higher percent identity in 15.26% of cases, software was better in 6.37%, and both were equal in 78.37% of cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48, C113-C114 provide consistent quantitative comparisons between player and software performance, supported by Figure 1C. The percentages sum to 100%, indicating complete accounting of cases. The finding that players matched or exceeded software in ~93% of differing cases is a key result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "3d5ec78c-9da7-41af-89d2-c58b70c4215a",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Players aligned a higher proportion of INDELs (85.4%) differently from software compared to SNPs (58.8%). For INDELs, players scored higher in 29% of alignments versus software's 4%, while for SNPs players scored better in 12% versus software's 7%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 present consistent comparative data showing players performed particularly well on INDEL alignments relative to SNPs, supported by Figure 1B and Supplementary Table S2. The differential performance by variant type is a meaningful finding about human pattern recognition capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "82c84a9c-d89c-4e45-b2c1-73536bef35b3",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Most visitors were only casually interested, with only 28.72% (7,357) of players answering puzzles. Remarkably, just 49 players (0.7%) contributed half of all answers (74,356), indicating highly concentrated contribution from a small dedicated group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C115-C116 present consistent data about player engagement patterns supported by Table 3 and Figure 2A. The extreme concentration of contributions (0.7% of players providing 50% of work) is a striking and well-documented finding about citizen science participation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "12d89692-83f2-4f90-90a7-22b880ce15cc",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "New players devoted an average of 12.5 minutes per visit while returning players spent 29.7 minutes. Returning players made 2.3 visits per day, contributing 70 minutes of gameplay daily, suggesting they became experts in the alignment process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide quantitative engagement metrics supported by Figure 2\u2014figure supplement 1A. The calculation that 2.3 visits \u00d7 29.7 min \u2248 70 min is mathematically consistent. However, C61's inference about expertise is reasonable but not directly validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "ca03e7d1-8475-4daa-86ef-a5056319e80b",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Press releases generated clear peaks of new visitors (mean 151.4), with traditional media having stronger impact than social media. However, 62% of players joining on press release dates played only that day, and 97.5% played for 10 days or less. Press releases also led to marked increases in empty answers, suggesting not all contributed time was equally productive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 present consistent data about publicity impact supported by Figure 2B-C and supplementary materials. The finding that press releases increased both useful and empty answers is well-documented. The conclusion about variable productivity (C70) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "f838179c-49cc-4772-a2ec-c8f74f0d1be9",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "88% of all answers were provided by players who joined within the first 30 days, indicating most analysis was carried out in the first few months by players enthused by initial publicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 present temporal distribution data supported by Figure 2D. The finding that the vast majority of work occurred early in the project timeline is clearly documented and represents an important observation about citizen science project dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "266de26c-f63e-4f0c-9d92-3ea118a7421d",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Daily visits followed a power law distribution for both new and returning players. While very few players visited regularly, 33 players were active for 60+ days, 8 for over 200 days, and one player was active for 332 out of 350 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 describe the statistical distribution of player engagement supported by Figure 3\u2014figure supplements 1-2 and Supplementary Table S4. The power law characterization and specific counts of highly engaged players are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "c82c53c0-1497-4b25-b881-e18484ed5e27",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mean number of tasks completed per day decreased linearly over time for all score groups, indicating that players' enthusiasm decreased over time irrespective of their success at the game.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 present data about declining engagement over time supported by Figure 3B. The finding that success at the game did not prevent declining enthusiasm is an important observation about motivation in citizen science projects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "a8b13035-0631-425e-8094-83fb75c22680",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A power law model was developed to predict crowdsourcing project productivity based on initial player cohort, returning player rate, and new player rate. The model successfully recapitulated Fraxinus results, predicting 935.53 days of work versus actual 924 days, and 150.11 days from press releases versus actual 142.14 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89, C117 describe model development and validation. The close agreement between predicted and actual values (within ~1-6%) provides strong validation. However, the abstract (C117) describes it as a 'linear model' while the text describes it as a 'power law relationship' (C85), which is inconsistent terminology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Fraxinus experienced constantly decreasing player numbers despite repeated press releases, characterizing it as a 'front-loaded' game. Similar decaying trends were observed in other Zooniverse citizen science projects and web searches for trending terms like 'Ebola', suggesting the decay pattern is similar to news interest cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C95 characterize the overall engagement pattern and compare it to other projects. The comparison to Zooniverse projects is supported by citations (Ponciano et al., 2014; Sauermann and Franzoni, 2015), and the Ebola search trend comparison is shown in Figure 3\u2014figure supplement 3. The inference about similarity to news cycles is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "8629544e-c1b6-4bb5-93f1-de507def18b2",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Model simulations explored viral growth strategies, showing that player cohorts could grow if new/active players exceed those leaving. However, viral strategies do not result in unlimited growth when audiences saturate, and do not exceed front-loaded strategies unless unrealistic growth rates are assumed. Delayed invitation timing reduces overall work compared to immediate invitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C105 present model-based explorations of alternative strategies supported by Figure 3C. The simulations systematically compare different recruitment scenarios. The conclusions about viral strategy limitations are supported by the modeling results, though these are theoretical explorations rather than empirical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "53e85220-64a5-4410-a6b0-04cbe8ad3795",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model can be applied to proposed crowdsourcing projects to balance resources and determine feasibility, serving as a guide for design and implementation of future citizen science initiatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106-C107, C112, C118 make forward-looking statements about the model's utility for future projects. While the model successfully recapitulated Fraxinus data, its generalizability to other citizen science projects with different characteristics has not been validated. The utility claims are reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "ca6fe882-e62b-4ac6-95c7-8da98e514276",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Fraxinus successfully engaged non-specialists in meaningful contributions, building a small community of skilled users. However, work was concentrated in a surprisingly small fraction of contributors, requiring scientists to be extremely focused to extract value from crowdsourcing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111 present summary conclusions about the project's outcomes. These are supported by the empirical findings about player performance (C41-C51) and contribution concentration (C56-C57). The recommendation about focus (C111) is a reasonable inference from the observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    },
+    {
+      "id": "dbb907ae-60ab-481b-8f18-1804e5ae36bd",
+      "content_id": "ed7b4631-240c-4119-a812-d67596c0cbe1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The series of steps involved in player solutions is not yet recorded by Fraxinus. Previous work on FoldIt showed that recording and sharing solution recipes enables rapid algorithm development, and similar improvements may be possible with Fraxinus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 acknowledge a current limitation (C52) and cite relevant prior work (C53, supported by Khatib et al., 2011). However, C54's speculation about future improvements is appropriately hedged ('we are hopeful') and represents a limitation/future direction rather than a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:36:26.820575Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "734d5b0a-100d-45a1-8a37-57ee15c99284",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "5dad32d6-dbdf-4f5c-88fb-151f23ab4350",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "3d8637ed-0588-4bcb-8346-724b610fa221",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "c2869882-bbab-41dd-add3-cd9f00a9b071",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "ce3f915f-0501-4a45-ae1f-18cf24170ed9",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "002a91d1-73ec-4fbf-bcdc-81fdda6683ec",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "f49de528-f9de-452e-a816-52f625a3f2b1",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "4ebde5c7-ecbc-495b-8e6e-256281ddd166",
+      "result_id": "d2f26063-94aa-48ee-920f-0a4dcdb0ade2"
+    },
+    {
+      "claim_id": "5d0a4c9c-a867-4e31-a888-3aa564e36c90",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "105fc592-3150-4a07-993c-f03a01babd2d",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "9ce342aa-43d8-4345-afcf-c108fd30bfa2",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "8137c6fb-f125-4a06-956f-3f18eb9117eb",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "a7b2f059-f004-4d7b-9375-fca0ed340a70",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "8cc628e9-7eff-4909-ab98-018b47fb72c1",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "c53f6106-f923-45d6-b758-dbd43c4dc414",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "443ea242-71f7-4f39-940f-cb4c105ce12f",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "5848c5b0-1b19-454d-8491-8253055002fd",
+      "result_id": "dc1b28b4-2eab-409d-bc2d-c7014b8f2d8b"
+    },
+    {
+      "claim_id": "39a22688-aa5f-4123-a98b-84a93ca6298a",
+      "result_id": "a977c778-fc26-45f8-b146-337d2a6af1ec"
+    },
+    {
+      "claim_id": "845278b8-60d1-4268-8933-4a9382c3c1c9",
+      "result_id": "a977c778-fc26-45f8-b146-337d2a6af1ec"
+    },
+    {
+      "claim_id": "f694c585-5dab-44cb-b94b-a30d7529bc96",
+      "result_id": "a977c778-fc26-45f8-b146-337d2a6af1ec"
+    },
+    {
+      "claim_id": "0fdf3c57-b2f3-4f08-bb06-9c75a5bb8786",
+      "result_id": "a977c778-fc26-45f8-b146-337d2a6af1ec"
+    },
+    {
+      "claim_id": "977a3428-b9d2-45d2-b037-4977465a289d",
+      "result_id": "a977c778-fc26-45f8-b146-337d2a6af1ec"
+    },
+    {
+      "claim_id": "1353eb55-0e65-4aa1-ae18-d1bc4e7ba75b",
+      "result_id": "3d5ec78c-9da7-41af-89d2-c58b70c4215a"
+    },
+    {
+      "claim_id": "9655f5a3-cb00-4934-bbb1-5b6df90531f3",
+      "result_id": "3d5ec78c-9da7-41af-89d2-c58b70c4215a"
+    },
+    {
+      "claim_id": "92158552-4608-4922-8a7a-1312e08e75a1",
+      "result_id": "3d5ec78c-9da7-41af-89d2-c58b70c4215a"
+    },
+    {
+      "claim_id": "d38d3432-9fc8-4e2a-bb4c-af34441872e8",
+      "result_id": "82c84a9c-d89c-4e45-b2c1-73536bef35b3"
+    },
+    {
+      "claim_id": "893ca9c4-442b-4e9f-8be5-64ce2e78b770",
+      "result_id": "82c84a9c-d89c-4e45-b2c1-73536bef35b3"
+    },
+    {
+      "claim_id": "80e7fc84-ae84-4584-bae0-ee833e6bb935",
+      "result_id": "82c84a9c-d89c-4e45-b2c1-73536bef35b3"
+    },
+    {
+      "claim_id": "e60b9109-26b5-4ab1-9c85-0bb62eccfa22",
+      "result_id": "82c84a9c-d89c-4e45-b2c1-73536bef35b3"
+    },
+    {
+      "claim_id": "e670e481-109f-443f-83dd-22096135a105",
+      "result_id": "82c84a9c-d89c-4e45-b2c1-73536bef35b3"
+    },
+    {
+      "claim_id": "12b7eaa6-b06e-42b7-ba26-dfb83a398449",
+      "result_id": "12d89692-83f2-4f90-90a7-22b880ce15cc"
+    },
+    {
+      "claim_id": "e08f8b06-e870-4839-9c3d-8e3849146c56",
+      "result_id": "12d89692-83f2-4f90-90a7-22b880ce15cc"
+    },
+    {
+      "claim_id": "5aef99a3-f70c-44be-bc92-a0af42d80f44",
+      "result_id": "12d89692-83f2-4f90-90a7-22b880ce15cc"
+    },
+    {
+      "claim_id": "44e556b0-15f0-4901-8e8a-b813679d6244",
+      "result_id": "12d89692-83f2-4f90-90a7-22b880ce15cc"
+    },
+    {
+      "claim_id": "41e932be-b851-4ec4-898d-750c67759074",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "950177be-3e0c-4883-9983-722ca398f031",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "753116b9-e29e-4984-bc17-4ebac1a5ddf4",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "7a1ea352-e756-4902-80aa-1511708a086d",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "19facb21-71c5-423c-b082-3c5bc3255df5",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "d72d2d7a-4fd7-4329-bb8a-0c4ae133df94",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "2e71fa45-9845-488b-8a80-8c2d60af0712",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "659994af-29ed-4d4d-8370-b182cc873f29",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "e1e45cde-dd5a-4c00-a3e4-217260a7e906",
+      "result_id": "ca03e7d1-8475-4daa-86ef-a5056319e80b"
+    },
+    {
+      "claim_id": "082eebfe-21d8-460a-a08e-d9d4521efacb",
+      "result_id": "f838179c-49cc-4772-a2ec-c8f74f0d1be9"
+    },
+    {
+      "claim_id": "bb9cfa26-4eba-43f5-88c3-84e7b11f747a",
+      "result_id": "f838179c-49cc-4772-a2ec-c8f74f0d1be9"
+    },
+    {
+      "claim_id": "59971d34-73da-4037-94a7-927fac08e77e",
+      "result_id": "266de26c-f63e-4f0c-9d92-3ea118a7421d"
+    },
+    {
+      "claim_id": "8d3384cf-9612-4fe2-a9b2-c8386938cbf1",
+      "result_id": "266de26c-f63e-4f0c-9d92-3ea118a7421d"
+    },
+    {
+      "claim_id": "bc807c67-331e-4c0f-9546-811ab7317f42",
+      "result_id": "266de26c-f63e-4f0c-9d92-3ea118a7421d"
+    },
+    {
+      "claim_id": "b4f8ca8d-996c-4259-8557-67f1c9a74a37",
+      "result_id": "266de26c-f63e-4f0c-9d92-3ea118a7421d"
+    },
+    {
+      "claim_id": "5b69c563-ef32-48f3-8d2e-48faf3d6cf18",
+      "result_id": "266de26c-f63e-4f0c-9d92-3ea118a7421d"
+    },
+    {
+      "claim_id": "06808240-ae54-4265-a06c-299b7d471958",
+      "result_id": "266de26c-f63e-4f0c-9d92-3ea118a7421d"
+    },
+    {
+      "claim_id": "cc19ba39-6893-428a-9e5b-7cbfec8fc1b2",
+      "result_id": "c82c53c0-1497-4b25-b881-e18484ed5e27"
+    },
+    {
+      "claim_id": "79e7e13f-1e23-4fe3-882f-02af3f56c7c7",
+      "result_id": "c82c53c0-1497-4b25-b881-e18484ed5e27"
+    },
+    {
+      "claim_id": "ef1c5e07-7d6d-4ca2-96b9-7099a3d46044",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "fedb531f-e668-4bfa-8cae-3d587aed5017",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "520b883c-e567-4761-a86b-c9e6f48ac637",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "180935b0-9ffc-4a02-8b83-d6579109b1a6",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "9de535ac-0b03-4e75-8dd5-554dc997c496",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "153e8b52-d93c-46e7-9317-9e80af86f0e5",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "3dd7c6cd-1421-48f9-ae20-30c1f551d624",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "1d80e174-2581-467c-ae85-a0a3d39f75d1",
+      "result_id": "a8b13035-0631-425e-8094-83fb75c22680"
+    },
+    {
+      "claim_id": "e72b0b8c-1a9c-42ff-8174-856c672c22bb",
+      "result_id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c"
+    },
+    {
+      "claim_id": "5d69d068-e717-4251-9426-2c352b0d7e87",
+      "result_id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c"
+    },
+    {
+      "claim_id": "3eae2894-0605-4813-9826-fbff56760daf",
+      "result_id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c"
+    },
+    {
+      "claim_id": "b903a48a-6c57-4cee-bf6f-61e45b32f94c",
+      "result_id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c"
+    },
+    {
+      "claim_id": "b4203f5c-89f3-4c83-a187-c72076c4f5e7",
+      "result_id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c"
+    },
+    {
+      "claim_id": "da2f7548-22d1-4c14-830d-8ecdfb882ce2",
+      "result_id": "b758266a-f45c-44ef-a5a1-ba7000e4db0c"
+    },
+    {
+      "claim_id": "c501e60b-4954-4ab0-8e56-7289e1187111",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "a3bbab09-2200-4ebe-8e51-abba8764d088",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "2d9dd679-4092-427f-85ce-695e9b0442d1",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "2731f29f-8282-4524-8ed0-8b5ade2a9e45",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "527dc91a-68b1-4606-9f46-3a96b87ee131",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "58511d4c-a666-4ee6-9345-4bcaf15d2d44",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "2d424692-1840-4b69-b60b-cbbb5ca47c42",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "b69dd690-41c4-4d34-a827-ab96b5c59de9",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "7e6653f5-2cd2-470c-8632-a09143777c0a",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "8b667eb0-ecab-436b-a2f9-2419b6a0c73b",
+      "result_id": "8629544e-c1b6-4bb5-93f1-de507def18b2"
+    },
+    {
+      "claim_id": "f21ef66c-5c32-4877-ad07-c3a42e8e42dd",
+      "result_id": "53e85220-64a5-4410-a6b0-04cbe8ad3795"
+    },
+    {
+      "claim_id": "7a191061-cc20-4e95-9ec4-e14207adcf58",
+      "result_id": "53e85220-64a5-4410-a6b0-04cbe8ad3795"
+    },
+    {
+      "claim_id": "17672a1b-37bf-4794-b293-52de5c92bf0e",
+      "result_id": "53e85220-64a5-4410-a6b0-04cbe8ad3795"
+    },
+    {
+      "claim_id": "0c73ca92-eebc-4033-a370-449f63ea632a",
+      "result_id": "53e85220-64a5-4410-a6b0-04cbe8ad3795"
+    },
+    {
+      "claim_id": "2a3a3c2b-9a32-4a9a-ae7f-a8974a78fef5",
+      "result_id": "ca6fe882-e62b-4ac6-95c7-8da98e514276"
+    },
+    {
+      "claim_id": "55356600-c34d-47a5-b2e5-c1554dfa1429",
+      "result_id": "ca6fe882-e62b-4ac6-95c7-8da98e514276"
+    },
+    {
+      "claim_id": "c9eab8f1-3233-4107-b339-73f55b35e667",
+      "result_id": "ca6fe882-e62b-4ac6-95c7-8da98e514276"
+    },
+    {
+      "claim_id": "2a4d79f5-2ee4-48ab-b34d-bfa159bcebaf",
+      "result_id": "ca6fe882-e62b-4ac6-95c7-8da98e514276"
+    },
+    {
+      "claim_id": "da1cdf67-384f-4b3b-a040-30ef34e6383a",
+      "result_id": "dbb907ae-60ab-481b-8f18-1804e5ae36bd"
+    },
+    {
+      "claim_id": "3f66815e-8f6c-46a3-bbea-c724e31c2bf5",
+      "result_id": "dbb907ae-60ab-481b-8f18-1804e5ae36bd"
+    },
+    {
+      "claim_id": "5e046e22-b663-479f-b8d4-2fc9912fdb9d",
+      "result_id": "dbb907ae-60ab-481b-8f18-1804e5ae36bd"
+    }
+  ],
+  "comparisons": []
+}

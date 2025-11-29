@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C17",
+      "C18"
+    ],
+    "result": "BAC transgenes containing MS2-yellow reporter genes with various combinations of primary and shadow enhancers for hb, kni, and sna were constructed and validated. Wild-type transgenes containing both enhancers recapitulate endogenous expression patterns, while removal of both enhancers eliminates detectable transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe the experimental design, C17 shows validation against endogenous patterns with appropriate citations and imaging data (Figure 1D-I, Videos 1-3), and C18 demonstrates that enhancer deletions are functionally complete (Figure 1\u2014figure supplement 1). The methodology is well-documented and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C13",
+      "C14"
+    ],
+    "result": "The hunchback enhancers exhibit spatially-dependent behavior: they function sub-additively in anterior regions with saturating Bicoid levels (20-40% EL) but additively in central regions (40-50% EL) where Bicoid levels diminish. Removal of the shadow enhancer has no effect in anterior regions but reduces expression in central regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by quantitative data in Figure 2A,B showing clear spatial differences in enhancer behavior. The transition from sub-additive to additive behavior correlates with the Bicoid gradient, supported by multiple measurements across embryonic positions. Statistical quantification with error bars strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C12"
+    ],
+    "result": "The knirps enhancers exhibit super-additive behavior during early nc14, where combined expression exceeds the sum of individual enhancers, then transition to simple additive behavior during later nc14 as expression levels decrease twofold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by temporal data in Figure 2C,D showing quantitative measurements at different developmental stages. The transition from super-additive to additive behavior is clearly documented with appropriate error bars and multiple embryo replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C32"
+    ],
+    "result": "Individual kni enhancers are significantly weaker than hb enhancers, producing ~15 elongating Pol II complexes compared to ~50 for the proximal hb enhancer, representing a fourfold difference in expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by calibrated quantitative measurements shown in Figure 3A,B. The absolute Pol II counts were calibrated using previous methods (Garcia et al., 2013), providing a rigorous basis for comparing enhancer strengths across different genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C15",
+      "C41"
+    ],
+    "result": "Both snail enhancers are strong (~40 Pol II complexes each) and exhibit striking sub-additive behavior, with the wild-type transgene producing significantly lower expression than the transgene containing only the shadow enhancer. This demonstrates that strong enhancers can interfere with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by data in Figure 3C showing high Pol II counts for individual enhancers and paradoxical reduction in expression when both are present. This counterintuitive result is well-documented and represents a key finding about enhancer interference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C51",
+      "C52",
+      "C16"
+    ],
+    "result": "The authors propose that weak enhancers function additively due to infrequent promoter interactions, while strong enhancers behave sub-additively due to competition for promoter access. This hypothesis explains the observed differences between kni (weak, additive) and hb/sna (strong, sub-additive) enhancer pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C51-C52 synthesize the experimental observations into a coherent model. The correlation between enhancer strength (measured by Pol II counts) and additivity behavior is consistently observed across all three genes (hb, kni, sna), providing strong support for this mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A mathematical model of enhancer-promoter interactions predicts that weak enhancers (infrequent interactions, kon/koff << 1) function additively, while strong enhancers (frequent interactions) compete for promoter access resulting in sub-additive behavior. The model explains how enhancers of different transcriptional efficiencies can interfere with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C61-C66 describe a coherent mathematical framework (Figure 4) that qualitatively explains the experimental observations. The model makes testable predictions about the relationship between interaction strength and additivity. However, the model is not quantitatively fit to data, and parameters are not experimentally measured, limiting its predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "To explain super-additive behavior of kni enhancers, the model would need to incorporate a state where both enhancers simultaneously interact with the promoter, forming a more potent transcriptional complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 propose an extension to the model but acknowledge this mechanism is not included in the current framework. This is speculative and not experimentally tested. The super-additive behavior of kni is observed (C28-C29) but the mechanistic explanation remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45"
+    ],
+    "result": "The proximal sna enhancer may have a topological advantage in blocking the distal enhancer, or may mediate less efficient transcription, or its removal may eliminate associated repression elements, thereby explaining why deletion increases expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43 and C45 propose multiple alternative hypotheses for the sna paradox but do not distinguish between them experimentally. While the observation of increased expression upon proximal enhancer deletion is well-supported (C40), the mechanistic explanation remains speculative with multiple non-exclusive possibilities cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C26"
+    ],
+    "result": "For hb, the switch from sub-additive to additive behavior occurs at the posterior border where Bicoid levels diminish, suggesting enhancers function additively only when operating below peak capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by the spatial data in Figure 2A,B showing the transition correlates with position along the Bicoid gradient. Claim C26 represents a reasonable inference from the data, though the concept of 'peak capacity' is not independently measured. The correlation is clear but causation is inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C56"
+    ],
+    "result": "Stress conditions might reduce enhancer performance to foster additive behavior, and the value of multiple enhancers may only be revealed when their activities are compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54 and C56 are speculative hypotheses about the functional significance of shadow enhancers under stress. While C54 cites Perry et al., 2010 for stress effects on sna, the current study does not test stress conditions. These represent interesting hypotheses for future work but are not directly supported by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Different enhancers and promoters lead to similar Pol II elongation rates of approximately 2 kb/min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by published data (Garcia et al., 2013) and unpublished results from the authors. This supports the interpretation that differences in transcriptional output are not due to elongation rate differences but rather to initiation frequency or efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C59",
+      "C60"
+    ],
+    "result": "Qualitative inspection shows that removal of individual enhancers does not dramatically alter overall expression patterns. Hb was examined during nc13 when both enhancers are active but before later stripe enhancers activate in nc14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 describes qualitative observations from video data, while C59-C60 define the experimental timing window with appropriate citations. These methodological details are well-documented and the qualitative assessment is reasonable, though quantitative analysis (Figure 2) reveals more subtle differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Despite differences in enhancer strength and Pol II numbers, the overall output of transcripts and rate of transcript production are essentially identical for all gap genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by citation to Little et al., 2013. This contextualizes the findings by showing that different regulatory strategies (strong vs. weak enhancers, additive vs. sub-additive) can achieve similar transcriptional outputs, highlighting the complexity of gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Enhancer-promoter interaction parameters likely vary between different enhancers and are modulated in time and space during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is a reasonable inference supported by the observed temporal changes in kni enhancer behavior (C28-C31) and spatial changes in hb behavior (C20-C25). The claim is appropriately hedged ('likely') and supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Multiple enhancers need not function in a simple additive manner, highlighting the complexity of gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a well-supported conclusion from the entire study. The data clearly demonstrate non-additive behaviors (sub-additive for hb and sna, super-additive for kni) across multiple genes, challenging simple models of enhancer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background context on enhancer biology: Multiple enhancers are common in metazoan genes, shadow enhancers are thought to improve precision and reliability, and there is limited prior evidence for additive enhancer function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide literature context with appropriate citations. These establish the background and motivation for the study. The claims accurately represent prior work, though C7 notes that the function of shadow enhancers improving precision is a hypothesis ('thought to') rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The kni gene is regulated by an intronic enhancer and a distal 5' enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citation to Perry et al., 2011 and is consistent with the experimental design shown in Figure 1C. This provides necessary background for interpreting the kni results.",
+    "result_type": "MINOR"
+  }
+]

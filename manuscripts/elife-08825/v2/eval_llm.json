@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors derived a novel normative model for decision-making in unstable environments based on Bayesian principles. The model defines belief as log posterior odds and updates it based on sensory evidence (LLR) and a prior expectation (\u03c8) that depends on hazard rate H. For H=0 (perfect stability), the model reduces to perfect accumulation; for H=0.5, history is irrelevant; for high H, accumulation is limited to facilitate change detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C11-C19 collectively establish the theoretical foundation of the normative model with clear mathematical definitions and limiting cases. The derivation is based on established Bayesian principles (C11) with appropriate citations, and the special cases (C17, C18, C19) provide internal consistency checks. The model formulation is mathematically sound and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The normative model exhibits two key dynamical regimes: (1) when beliefs are uncertain (L\u22480), it acts as a leaky accumulator with leak rate directly dependent on H; (2) when beliefs are certain (|L|>>0), it approaches a stabilizing boundary whose height depends on H. This boundary suspends but does not terminate accumulation, unlike absorbing boundaries in traditional models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 describe the model's key dynamical properties with appropriate mathematical approximations (Equation 3) and contrasts with existing models. The characterization of two regimes is well-supported by the mathematical derivations and figures (Figures 1B, 2A,C). The distinction from traditional models (C26, C28) is clearly articulated with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The normative model predicts a trade-off between identifying steady signals and detecting changes that depends on both evidence strength and expected hazard rate H. For weak evidence, the trade-off is most severe, with the model optimizing for either change detection (high H) or signal identification (low H). As evidence strength increases, performance improves for both conditions and the trade-off diminishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe a key prediction of the model that is well-supported by the mathematical framework and illustrated in Figure 2E,G. This trade-off is a natural consequence of the model's dynamics and represents a testable prediction that is later validated in the empirical sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed a continuous-time version of the model based on optimal filtering for Markov jump processes. For \u03bb=0, it reduces to perfect integration; for L\u22480, it becomes an Ornstein-Uhlenbeck process (leaky integration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 establish the continuous-time formulation with appropriate citations to the mathematical literature (Zakai, Liptser & Shiryaev, Crisan & Rozovskii). The limiting cases provide consistency checks analogous to the discrete-time model. The derivation appears mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In the triangles task, subjects adapted to different hazard rates, with subjective H estimates strongly correlated with objective H (r=0.721, p<0.0001). However, subjects systematically misestimated extreme hazard rates, with estimates tending toward H\u22480.5. The normative model provided good fits to choice data (McFadden's r\u00b2=0.895\u00b10.016) and outperformed a block-independent model (\u0394BIC=-23.721\u00b19.671, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C49 provide strong statistical evidence for learning and use of hazard rates in the triangles task. The correlation between subjective and objective H (C46), the regression slopes (C47), and model comparison statistics (C43) are all well-documented. The systematic bias toward H\u22480.5 (C48, C49) is an important finding that persisted even with extended learning, suggesting a genuine cognitive constraint rather than insufficient experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the triangles task, subjects' choice dynamics reflected key predictions of the normative model: (1) hazard-dependent biases when certainty was high (Spearman's r=0.890, p<0.0001); (2) hazard-dependent leak patterns including damped oscillations for high H; (3) a strong trade-off between change detection and steady signal identification that depended on both hazard rate and evidence strength, with the trade-off most severe for weak evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 demonstrate that subjects' behavior matched specific qualitative predictions of the normative model. The hazard-dependent biases (C50), leak patterns (C51), and trade-offs (C53-C56) are all supported by statistical tests and figures. The control analysis showing that the block-independent model did not predict these dynamics (C52) strengthens the interpretation that subjects were using learned hazard rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Direct estimates of the mapping from beliefs to priors in the triangles task matched normative model predictions for all H-groups (Hotelling's t-test, p>0.05 for all groups). Two suboptimal models\u2014a leaky accumulator without stabilizing boundaries and a perfect accumulator with stabilizing boundaries\u2014provided worse fits than the normative model (34/48 subjects for both, p<0.0001 and p=0.007 respectively) and failed to capture key aspects of the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide strong evidence that the full normative model (with both leak and boundary) better describes human behavior than simpler alternatives. The direct estimation of belief-to-prior mappings (C57, C58) and the model comparison statistics (C59, C61) are well-documented. The specific failures of each suboptimal model (C60, C62) are identified with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In the dots-reversal task, subjects adapted to different hazard rates, with 12/13 subjects showing appropriate sensitivity to objective \u03bb (p<0.05). The normative model performed well (McFadden's r\u00b2=0.385\u00b10.055) and outperformed a block-independent model (\u0394BIC=-4.790\u00b11.216, p<0.0005). However, like in the triangles task, subjects systematically overestimated low values and underestimated high values of \u03bb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 demonstrate learning and adaptation in the dots-reversal task with appropriate statistical evidence. The model fit quality (C68) and comparison to the block-independent model (C67) are well-documented. The systematic bias in hazard rate estimation (C70) replicates the finding from the triangles task, strengthening the conclusion that this is a general feature of human learning in these contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In the dots-reversal task, choice dynamics reflected normative model predictions: for high-coherence trials, strong evidence dominated with >90% accuracy within 500ms regardless of hazard rate; for low-coherence trials, integration times were strongly hazard-dependent, with accuracy worse for low-hazard conditions immediately after change-points (7.1\u00b111.1% vs 40.3\u00b12.8%, p<0.01) but better at longer durations (83.6\u00b13.6% vs 69.9\u00b18.3%, p<0.0005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 demonstrate the predicted trade-off between change detection and signal identification in the dots-reversal task. The statistical evidence is strong, with appropriate tests and error bars. The pattern of results\u2014strong evidence dominates regardless of hazard rate (C71), while weak evidence shows hazard-dependent dynamics (C72-C75)\u2014matches the normative model's predictions and parallels findings from the triangles task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Direct measurement of leak dependence in the dots-reversal task showed that best-fitting leaks depended on both hazard rate (p<0.0005) and motion coherence (p<0.0001), with pairwise differences not differing from normative model predictions (p>0.05 for both comparisons). The normative model outperformed both a leaky-integrator model (10/13 subjects, p<0.05) and a bounded-accumulator model (9/13 subjects, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide strong evidence that the full normative model captures the joint dependence of leak on both hazard rate and evidence strength. The statistical tests are appropriate, and the model comparisons demonstrate that both components (leak and boundary) are necessary to fully account for the data. The consistency with normative predictions (C78) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors establish the context and motivation for their work by noting that while normative models exist for learning in dynamic environments, they have not been applied to faster decision processes. Standard sequential-sampling models (SPRT, drift-diffusion) are normative only under restricted conditions (known start time, perfect stability), and perfect integration can be problematic for detecting signal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10 establish the background and motivation with appropriate citations to the literature. The characterization of existing models and their limitations is accurate and well-supported by citations. This provides clear justification for the novel contribution of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C95"
+    ],
+    "result": "The triangles task required 48 subjects to make trial-by-trial choices about which of two triangles generated a star position, with the correct source changing at a hazard rate that was constant within blocks but varied across blocks (0.05-0.95). Subjects were never instructed about hazard rates. In a subset of sessions, learning was facilitated with trial-by-trial feedback at the beginning and end of blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C95 provide a clear description of the triangles task design. The task is well-designed to test the model's predictions, with appropriate manipulation of hazard rates and control over feedback. The sample size (48 subjects) is reasonable for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C96"
+    ],
+    "result": "The dots-reversal task was a novel version of the random-dot motion task in which 13 subjects judged the final direction of motion after within-trial direction changes occurring at either 0.1 Hz or 2.0 Hz. Motion coherence was fixed within trials at either high or low values, and subjects received feedback after each trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C96 provide a clear description of the dots-reversal task design. The task is well-designed to test the model on a different timescale (within-trial vs. across-trial accumulation) and with different stimulus properties. The sample size (13 subjects) is smaller than the triangles task but reasonable given the within-subject design with multiple trials per condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors derived a normative model based on Bayesian principles for inferring changes in generative processes, incorporating change detection into sequential-sampling decision models. Unlike previous models, this formulation casts adaptation directly in the context of evidence accumulation. Human subjects made decisions on two tasks consistent with the model's adaptive, hazard-dependent accumulation process, learning hazard rates imperfectly but using them normatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 summarize the main contributions and findings of the work. These claims are well-supported by the detailed theoretical development and empirical results presented in earlier sections. The characterization of the model's novelty (C82, C83) is accurate, and the summary of empirical findings (C84-C86) is consistent with the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that deviations from optimality in human decisions can be interpreted as different hazard-dependent set-points of an inherent trade-off between sensitivity to change and steady-state signals. They speculate that prior expectations about environmental instability might provide new insights into previous findings of leaky accumulation, urgency signals, and other deviations from perfect integration, which might reflect normative adjustments to expected instabilities rather than computational limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C93 present interpretations and speculations about the broader implications of the findings. While the framework for interpreting deviations from optimality (C87) is well-supported by the current results, the speculations about reinterpreting previous findings (C88-C93) are not directly tested in this work. These are reasonable hypotheses that would require additional empirical work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "In the normative model, the adaptive accumulation process can be suspended by the non-linear dynamics of the accumulation process itself, not by an extrinsically imposed decision rule like an absorbing decision boundary, potentially providing a new perspective on speed-accuracy trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 highlights an important conceptual distinction between the normative model and traditional sequential-sampling models. This is well-supported by the mathematical development showing how the stabilizing boundary emerges from the model's dynamics rather than being imposed externally. However, the implications for speed-accuracy trade-offs are speculative and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Human subject protocols were approved by the University of Pennsylvania Internal Review Board.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 documents ethical approval for the research. This is a standard methodological detail that is appropriately reported.",
+    "result_type": "MINOR"
+  }
+]

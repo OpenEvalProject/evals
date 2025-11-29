@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C64",
+      "C71",
+      "C136",
+      "C138"
+    ],
+    "result": "In Oncopeltus fasciatus, Toll signaling is only required to polarize BMP signaling, not to directly specify ventral cell fates. BMP signaling patterns the entire DV axis by repressing ventral cell fates, and repression of BMP signaling alone is sufficient to induce mesoderm even without Toll.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C64, C92, and C94 provide strong experimental evidence from double knockdown experiments showing that ventral genes (twi, sog) can be activated without Toll when BMP is removed. Claims C61-C65 demonstrate that BMP loss causes complete ventralization. Claims C66-C71 show that loss of BMP inhibition (sog/tsg KD) causes complete dorsalization. Together, these data support that BMP is epistatic to Toll and patterns the entire axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C135"
+    ],
+    "result": "In Oncopeltus, BMP signaling negatively regulates its own antagonist sog through transcriptional repression, a regulatory feature not observed in other insects but characteristic of spiders and vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are directly supported by experimental data showing sog expansion upon dpp knockdown and sog suppression upon tsg knockdown (Figures 2E,G,I-K,M-O). Claims C75-C77 provide comparative context showing this is absent in holometabolous insects but present in other animals, supporting the ancestral nature of this regulatory logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C49",
+      "C50",
+      "C116",
+      "C120",
+      "C132",
+      "C154"
+    ],
+    "result": "A theoretical reaction-diffusion model reveals that the BMP/sog network in Oncopeltus has self-regulatory properties through a Turing instability mechanism, and shallow Toll signaling gradients are sufficient to initiate axis formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 demonstrate through mathematical modeling that the system exhibits Turing instability and that weak NF-\u03baB/Dorsal gradients produce sharp BMP patterns. Claims C118-C119 show the model correctly reproduces experimental knockdown phenotypes. The model is based on experimentally validated regulatory interactions (C48, C73-C74) and represents a minimal self-organizing system (C132, C154).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C123",
+      "C124",
+      "C125",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C203"
+    ],
+    "result": "The Oncopeltus patterning model can explain classical embryonic twinning experiments in hemipteran insects upon egg fragmentation, with the model reproducing both the twinning phenomenon and the orientation of twin embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C131 demonstrate through modeling that the shallow Toll gradient extending into the dorsal half allows pattern re-initiation after egg splitting, producing scaled twin patterns. Claim C131 shows the predicted embryo orientation matches Sander's experimental observations. The mechanism depends on the broad Toll gradient (C110, C134) and self-organizing BMP/sog dynamics (C127-C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C48"
+    ],
+    "result": "In Oncopeltus, sog expression is initially activated ubiquitously in a Toll-independent manner, then enhanced ventrally by Toll signaling and repressed dorsally by BMP signaling, creating a dynamic regulatory pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by temporal expression analysis (Figures 5P-W) showing uniform early sog expression that becomes ventrally enhanced. Claim C48 synthesizes the three regulatory inputs. The Toll-independent activation is demonstrated by uniform sog in early Toll1 KD embryos (C99), while ventral enhancement by Toll is shown by loss of this enhancement in later Toll1 KD stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "Knockdown of Toll signaling components in Oncopeltus leads to dorsalized phenotypes that closely resemble those produced by knockdown of sog and tsg, indicating Toll acts primarily through regulation of BMP inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide experimental evidence from Toll1 knockdown showing loss of ventral markers, uniform high pMAD, and dorsalization (Figures 3E,J; 4J-L; 5E-G). Claim C85 explicitly compares these phenotypes to sog/tsg knockdowns. Claims C82 and C84 extend this to other Toll pathway components, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C195"
+    ],
+    "result": "Expression analysis of cactus genes in Oncopeltus reveals that Toll signaling forms a broad, shallow gradient encompassing 60-80% of the embryonic circumference, extending from ventral to dorsal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide direct experimental evidence from in situ hybridization showing cact3 expression in a broad ventral domain (Figure 7E-J) that is Toll-dependent. Claim C110 synthesizes this into an inference about Toll gradient shape. Claim C195 explicitly states this interpretation. The use of cact as a proxy for Toll activity is justified by comparative data (C102-C103, C190-C194).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C163",
+      "C180"
+    ],
+    "result": "The BMP signaling pattern in Oncopeltus is characterized by a flat plateau of high signaling on the dorsal side with a sharp transition to absent signaling ventrally, lacking the peaked dorsal distribution seen in other insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide experimental evidence from pMAD immunostaining (Figure 3, Figure 3\u2014supplement 1) showing dorsal accumulation with flat distribution. Claim C163 describes the sharp transition zone. Claim C60 explicitly compares to other insects. Claims C180-C181 relate this simple pattern to the DV fate map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93"
+    ],
+    "result": "In Oncopeltus, Toll signaling has an additional role in anteroposterior axis specification beyond its DV patterning function, as evidenced by AP shifts in marker gene expression after Toll but not BMP knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 provide experimental evidence showing msh expression shifts after Toll1/dl1 knockdown but not after tsg knockdown (Figure 6). Claim C93 shows similar AP effects in double knockdowns. Claim C90 synthesizes this into the conclusion about dual Toll function. Claim C91 provides comparative support from another hemipteran.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Oncopeltus exhibits an unusual strong anti-BMP function of Tsg, contrasting with the pro-BMP or Sog-independent functions observed in other insects, where Sog can only inhibit BMP in the presence of Tsg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 is supported by experimental data showing dorsalization upon tsg knockdown similar to sog knockdown (Figures 2, 3). Claims C168-C171 provide comparative context from other insects showing different Tsg functions. Claim C172 synthesizes the inference that Sog requires Tsg for BMP inhibition in Oncopeltus. The similar phenotypes of sog and tsg knockdowns strongly support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Molecular markers for different DV regions were identified in Oncopeltus blastoderm embryos, including ventral markers (twi, sim, sog), but no specific dorsal markers were found among known holometabolous genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are directly supported by in situ hybridization data (Figure 2A-C) with cited references establishing these as DV markers. Claims C56-C57 report negative results from systematic screening of known dorsal genes (Figure 2\u2014supplement 1). This establishes the molecular toolkit used throughout the study and motivates the use of pMAD as a dorsal marker.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C72"
+    ],
+    "result": "Knockdown of dpp or tld in Oncopeltus causes complete ventralization with massive expansion of ventral markers around the entire embryonic circumference, demonstrating that BMP signaling restricts ventral cell fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are directly supported by experimental data showing loss of pMAD and expansion of twi/sog upon dpp knockdown (Figures 2E-G, 3B,G). Claim C72 shows similar ventralization with tld knockdown (Figure 2Q-S), supporting the interpretation that BMP ligands are sequestered by Sog in the absence of Tld. The phenotypes are quantified in Figure 2\u2014supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Knockdown of sog or tsg in Oncopeltus causes elevated and uniform pMAD distribution with complete loss of mesoderm and mesectoderm markers, indicating dorsalization and loss of DV polarity that persists through development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are directly supported by experimental data showing uniform high pMAD and loss of ventral markers upon sog/tsg knockdown (Figures 2I-K,M-O, 3C,D,H,I). Claim C70 shows this persists through later development (Figure 4G-I). The uniformly high pMAD levels matching dorsal wild-type levels (C67) support the dorsalization interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C177"
+    ],
+    "result": "Patterning in Oncopeltus is initiated when NF-\u03baB/Dorsal-dependent enhancement of sog expression exceeds a threshold, with the homogeneous steady state undergoing a Turing instability at this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C174 provides experimental evidence from incomplete sog knockdowns showing asymmetric pMAD without ventral gene expression (Figure 2\u2014supplement 2). Claims C173 and C175 draw the inference about threshold requirements. Claim C177 demonstrates through mathematical analysis that the model exhibits Turing instability at a threshold (Figure 9). The experimental and theoretical results converge on the threshold mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C42",
+      "C43"
+    ],
+    "result": "Within Holometabola, an evolutionary trend shows that more basally branching lineages have increased reliance on BMP signaling while Toll signaling importance is reduced, though ventral-most regions remain Toll-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by comparative data presented in Figure 1 and cited references. Claims C42-C43 synthesize the two common themes across holometabolous insects. This provides the evolutionary context motivating the study of Oncopeltus as a hemimetabolous insect. The claims are well-supported by the cited comparative literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Among well-studied DV patterning systems, Oncopeltus is most similar to vertebrates in having BMP repression of chordin/sog, but represents a simpler minimal network lacking additional modulators like ADMP and Sizzled found in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 establish the comparison to vertebrates based on shared regulatory features and twinning phenomena. Claims C150-C151 describe the additional complexity in vertebrates. Claims C152-C153 provide genomic evidence that Oncopeltus lacks these additional components yet still shows appropriate scaling in simulations. Claim C154 synthesizes the conclusion about Oncopeltus as a minimal system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C206",
+      "C207",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The authors propose an evolutionary scenario where Toll signaling evolved from a uniform immune function to a polarized DV patterning role through mild polarization and weak transcriptional inputs on sog, potentially driven by the need for egg immunity in terrestrial insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C206-C207, and C209-C211 are explicitly speculative evolutionary hypotheses (marked as SPECULATION in evidence_type). While they are logically consistent with the findings and supported by knowledge of Toll's immune function (C8, C208), they represent inferences about evolutionary history that cannot be directly tested with the presented data. The scenario is plausible but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C187",
+      "C188"
+    ],
+    "result": "The transcriptional feedback of BMP on sog expression in Oncopeltus creates a situation where the size of the sog expression domain becomes largely independent from NF-\u03baB/Dorsal, decoupling input and output patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 describe the key consequence of the BMP-sog feedback loop. Claims C187-C188 demonstrate through modeling that this feedback leads to decoupling of Toll (input) and BMP (output) patterns (Figures 9, 11). This is supported by experimental observations showing that sog domain size is determined by BMP dynamics rather than fixed by the Toll gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "In Oncopeltus, unlike Drosophila and Tribolium, Sog-mediated BMP transport does not enhance dorsal BMP signaling levels, and the negative feedback of BMP on sog may prohibit formation of sharp BMP signaling peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C162 is supported by comparison of pMAD levels in wild-type and knockdown embryos (Figure 3). Claims C163-C164 describe the flat BMP profile observed experimentally and in simulations (Figures 8, 9). Claim C165 provides a mechanistic interpretation based on modeling results. Claim C166 provides comparative support from vertebrates. The convergence of experimental and modeling data supports this conclusion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors developed a four-channel ultrasonic microphone array system to localize vocalizations from socially interacting mice. The system estimates sound source location by partitioning vocal signals into time-frequency snippets (5 ms long, 2 kHz wide), finding the location that best explains time delays between microphone pairs, and averaging multiple estimates. Video and audio data are synchronously recorded, and mouse positions are automatically tracked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C35-C41 provide a comprehensive description of the microphone array system development and methodology. The technical details are clearly specified (snippet dimensions, synchronous recording, tracking), and the approach is based on established methods (modified from Zhang et al. 2008). The methodology is internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C29"
+    ],
+    "result": "The microphone array system was validated using female-urine-elicited USVs from individual male mice with virtual mice simulations. The system achieved 97.0% accuracy at MPI threshold of 0.95, with median localization error of 3.87 cm. Sound source estimates clustered around the mouse's head, with 63.0% of signals localized within 5 cm of the actual mouse position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C56 and C29 provide comprehensive validation data with appropriate controls (virtual mice at random positions). Statistical analyses are reported with correlation coefficients and p-values (C45: r = -0.66, p < 10\u207b\u2075). The validation approach is rigorous, using known sound sources and quantifying both accuracy and precision. The trade-off between accuracy and assignment rate (C47-C49) is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A restrictive control simulation with close proximity (virtual mouse within 10 cm radius) showed 89.5% accuracy with 40.4% of signals assigned. This validates the system's ability to distinguish vocalizations even when mice are in close proximity, as occurs during natural social interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe an important control that addresses the realistic scenario where mice vocalize in close proximity. The reduced assignment rate (40.4% vs higher rates in less restrictive conditions) demonstrates the conservative approach to avoid incorrect assignments. This control is well-motivated by prior knowledge (C57) and strengthens confidence in the system's performance during actual social interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In groups of 2 males and 2 females recorded for 5 hours, the system detected 255,396 vocal signals, localized 199,288, and assigned 37,371 to individual mice. Males vocalized in the presence of females (confirming prior work), and females produced 18% of assigned vocalizations, indicating both sexes vocally contribute during opposite-sex interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 report the main experimental findings with clear quantitative data. The experimental design is appropriate (C60-C61: isolation housing to maximize social information exchange). The finding that females produce 18% of vocalizations (C66) is a major discovery supported by direct observation (C65) and represents a significant departure from prior assumptions. The data pipeline from detection to assignment is transparent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Analysis of assigned versus unassigned vocalizations showed no temporal or spatial bias in vocalization assignment. Assigned vocalizations occurred when the sound source was close to one mouse, while unassigned vocalizations occurred when two mice were equidistant from the estimated source, indicating that ambiguity in source was the major reason for exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 address potential selection bias in the assignment process. The analyses (temporal distribution C68, spatial distribution C69, relative distance analysis C71) systematically rule out systematic biases. The interpretation (C72) that ambiguity drives non-assignment is well-supported by the distance distribution data (C71) and demonstrates methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Male and female vocalizations showed striking temporal correlation: when males vocalized, female vocalization probability peaked (0.19 Hz, p < 10\u207b\u00b2\u00b2), and vice versa (male peak: 0.78 Hz, p < 5\u00d710\u207b\u2075). Overall, 61% of female vocalizations and 24% of male vocalizations occurred within 1 s of the opposite sex vocalizing, suggesting coordinated vocal behavior and potential exchange of social information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 report a major finding with strong statistical support. The temporal correlation is quantified with appropriate statistics (ANOVA with reported F-values and p-values in C75-C76, permutation tests in C77). The asymmetry (61% vs 24%) is interesting and well-documented. The interpretation (C80) is appropriately cautious ('may be indicative'). Random permutation controls strengthen the conclusion that the correlation is not due to chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "During vocal sequences (male-initiated), the vocal pair moved significantly faster (p < 10\u207b\u2076) and was significantly closer (p < 10\u207b\u2076) at sequence onset than before or after, with males positioned significantly behind females (p < 0.001). This behavior resembles courtship chases. Non-vocal pairs showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 provide detailed behavioral characterization with appropriate statistical tests (one-way ANOVA, chi-square with Tukey post-hoc comparisons). The comparison between vocal and non-vocal pairs (C82, C84) serves as an internal control. The spatial analysis (C85) with both female-centered and male-centered perspectives is thorough. The interpretation as chase behavior (C87) is supported by citation and behavioral data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Female-initiated vocal sequences showed similar behavioral patterns to male-initiated sequences: vocal pairs moved fastest at sequence onset (p < 10\u207b\u2076), were significantly closer (p < 10\u207b\u2076), and males were positioned behind females (p < 0.001). Non-vocal pairs showed no significant changes, indicating both male- and female-initiated sequences occur during similar behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91, C93 demonstrate that the behavioral pattern is consistent regardless of which sex initiates the vocal sequence. The statistical analyses parallel those for male-initiated sequences with similar significance levels. This symmetry strengthens the conclusion that vocal interactions are bidirectional and occur during a specific behavioral context (chases).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Each male chased each female (median=113 chases) and vocally interacted with each female (median=111 interactions). Male-initiated vocal interactions strongly correlated with chase time (r=0.74, p<10\u207b\u2075) and number of chases (r=0.55, p<0.003). Vocal interaction rate was significantly higher inside chases than outside (p<10\u207b\u00b2\u00b9), with 47.2% occurring during chases. Similar patterns were observed for female-initiated interactions (r=0.80, p<10\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 establish a strong quantitative link between vocal interactions and chase behavior. The correlations are robust with high significance levels. The comparison of rates inside vs. outside chases (C99, C101) with Mann-Whitney U-tests is appropriate. The consistency between male- and female-initiated patterns strengthens the conclusion. The interpretation (C102) that both sexes actively participate is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A control simulation with close proximity showed 7% error rate. If only males vocalized, only 244 female vocalizations would be expected from misassignment, but 1,743 were observed (>7\u00d7 expected errors). This analysis confirms that females genuinely vocalize and vocally interact with males during courtship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide a critical control analysis addressing the alternative hypothesis that female vocalizations are misassigned male vocalizations. The calculation is straightforward and the observed count far exceeds what would be expected from the error rate alone. This strongly supports the conclusion that females are genuinely vocalizing, not that the system is making systematic errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C34"
+    ],
+    "result": "During chases, male speed did not differ between vocal interaction and non-vocal interaction chases (p>0.25), but female speed was significantly slower during vocal interaction chases (28 cm/s vs 51 cm/s, p<10\u207b\u00b9\u2070). Vocal interaction chases were longer in duration (3.28s vs 2.38s, p<10\u207b\u2075). This suggests females drive the speed reduction and that female vocal interaction may signal receptivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 and C34 provide strong evidence for differential female behavior during vocal interactions. The statistical tests (Mann-Whitney U-tests) are appropriate for the data. The lack of male speed difference (C106) serves as an important control, isolating the effect to female behavior. The interpretation regarding receptivity (C109, C34) is cautious ('may function') and consistent with literature on receptive behavior in other species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The microphone array system revealed that female mice vocally interact with males during courtship, with males and females jointly increasing vocalization rates during chases. Vocal interactions were observed between all male-female pairs and predominantly occurred during chases. Female participation may signal increased receptivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C30-C33 summarize the main findings of the study. These are well-supported by the detailed analyses in other claim groups (temporal correlation, behavioral context, speed analysis). The conclusions represent a major advance in understanding mouse vocal communication during courtship. The interpretation regarding receptivity (C8) is appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C128",
+      "C129"
+    ],
+    "result": "Prior work attributed courtship vocalizations to males, despite evidence that both sexes produce indistinguishable vocalizations. Females rarely vocalized with anesthetized/devocalized males but vocalized at high rates during same-sex interactions, suggesting females may vocalize during intact male-female encounters. The similarity of vocalizations across sexes left open the possibility that some male-attributed USVs were actually from females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C23-C27, C128-C129 accurately summarize prior knowledge and identify the gap that motivated this study. The citations support the statements about prior beliefs and evidence. The logical inference (C26, C129) that females might vocalize with intact males is reasonable given the evidence from same-sex interactions. This provides appropriate context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Female mice possess neural circuitry for USVs, as lesions to the vomeronasal organ unmask this behavior. The current findings expand this observation by showing the behavior can be triggered in unaltered females. The majority of female vocalizations occur during vocal exchanges with males, suggesting female vocal behavior may depend on a vocally competent partner and that information from multiple modalities is necessary to activate social neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 integrate current findings with prior neurobiological work. The citation (C130) supports the existence of neural circuitry. The interpretation (C132-C133) that female vocalization depends on a vocally competent partner is reasonable given the absence of vocalizations with anesthetized/devocalized males and the high rate during vocal exchanges. The speculation about multimodal information (C133) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The association between vocal interactions and courtship chases implies vocal exchanges may be involved in affiliation. Female vocal participation may indicate receptivity or encourage male competition. In rats and hamsters, female vocalizations are modulated by estrous state and signal receptivity. The current results strengthen this argument, as female speed during chases was slower when she vocalized, similar to receptive females in other species that slow down to permit male approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 place the findings in broader comparative context with appropriate citations. The interpretation regarding affiliation (C141) and receptivity (C142-C143, C147) is supported by the speed data (C145) and parallels with other species (C144, C146). The speculation (C147) is appropriately cautious ('may facilitate'). The comparative framework strengthens the biological interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "In courtship displays across species, both partners' behavior is critical. Female responsiveness modulates male mating behavior throughout the animal kingdom. Examples include Drosophila males modulating song in response to female position/motion, and human females' non-verbal displays modulating male approach. Vocal interactions during courtship occur across species and are important for territorial defense or maintaining affiliation, particularly between mated pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 provide appropriate comparative context from diverse species with supporting citations. The examples (Drosophila C136-C137, humans C138) illustrate the general principle of behavioral interdependence during courtship. This contextualizes the mouse findings within broader principles of courtship communication. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The presence of multiple vocalizing mice has hindered determining the specific role of vocalizations in social behaviors. Acoustic features are likely inadequate for identifying which mouse emitted a sound. Previous studies assumed a single vocalizer or prevented one mouse from vocalizing, but both approaches overlook vocal contributions from multiple individuals and cannot detect vocal exchanges. The ability to track each animal's vocal behavior is crucial for determining USV function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 identify methodological limitations in prior work with appropriate citations (C113-C114). The critique (C115-C116) is fair and well-reasoned. The conclusion (C117) logically follows and motivates the development of the microphone array system. This provides strong justification for the technical innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C127"
+    ],
+    "result": "Microphone arrays have been used to study acoustic features of many species, determine animal numbers in dense terrain, and map territory boundaries. The current system was specifically designed to link vocal and social behaviors of mice with high resolution and accuracy in a laboratory environment. The findings illustrate the utility of the microphone array for clarifying the function of vocalizations in mouse social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121, C127 appropriately position the technical contribution relative to prior microphone array applications. The citations support the statements about prior uses. The distinction (C121) that this system is optimized for laboratory behavioral studies is clear. The conclusion (C127) is supported by the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Group size influences individual animal behavior. In various species, males' full vocal repertoire only occurs with multiple males present. Mouse vocal behavior and social interaction patterns differ significantly between complex social groups and dyads. In the current study with 2 males and 2 females, all mice vocalized and vocal exchanges occurred between all male-female pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 justify the experimental design (groups of 4 mice) with appropriate citations. The rationale that group housing reveals behaviors not seen in dyads is well-supported by prior work (C123-C125). The finding (C126) that all pairs engaged in vocal interactions validates this approach and demonstrates the value of studying more complex social contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Social interactions are essential for reproductive success and survival, supported by information exchange through multiple sensory modalities over various timescales. Capturing details of information exchange is critical for understanding how social information supports motivated behavior and for illuminating social interaction deficits like autism. The microphone array system allows unprecedented access to social interaction details in freely behaving mice, revealing temporally precise and behaviorally meaningful vocal communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C154 provide broader context for the significance of the work with appropriate citations. The statements about social interactions (C148-C150) are well-established. The connection to understanding social deficits (C151-C152) is reasonable though speculative. The conclusion (C153-C154) appropriately summarizes the contribution and is supported by the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on mouse ultrasonic vocalizations: USVs occur during mating, are stimulated by female urine in males, and females prefer vocalizing males. Most studies use pairs of mice, but mice occupy diverse territories and can live in large groups with complex social dynamics. USVs have no visible movements and are inaudible to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 provide appropriate background information with supporting citations. These establish the biological context and prior knowledge about mouse USVs. The statements are factual and well-supported by the cited literature. This background motivates the study and provides context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C110"
+    ],
+    "result": "During courtship, males attract females with elaborate behaviors including ultrasonic vocalizations in mice. Mice produce USVs in many social contexts including territory establishment, resident-intruder interactions, pup care, juvenile play, social reunion, and mating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C110 provide general background on courtship behavior and USV contexts with appropriate citations. These are well-established facts that provide context for the study. The statements are accurate and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

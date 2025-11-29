@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C34",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "KAP1 is necessary for both establishment and maintenance of HCMV latency in HSC. KAP1 depletion in CD34+ HSC led to 10-35-fold increases in viral gene expression and massive release of infectious viral particles, while KAP1 was not essential for lytic replication in permissive MRC5 cells. Complementation with wild-type KAP1 restored latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide strong experimental evidence from multiple approaches (knockdown before and after infection, complementation experiments) demonstrating KAP1's essential role in HCMV latency. The data show consistent effects across multiple viral genes (UL122, UL123, UL54, UL94) and include appropriate controls (MRC5 cells, complementation). Statistical significance is reported (p<0.05, p<0.01) with multiple biological replicates (n=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C84"
+    ],
+    "result": "HCMV latency in CD34+ HSC involves KAP1 recruitment to 28 major regions on the viral genome, which recruits SETDB1, HP1\u03b1, and induces H3K9me3 heterochromatin marks. These repressive marks spread to key lytic genes (MIEP, OriLyt, UL112) but are absent from latency-associated genes (UL138, LUNA). KAP1 depletion eliminates these heterochromatin marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by comprehensive ChIP-seq and ChIP-PCR data (Figures 2A-D) identifying specific KAP1 binding sites and demonstrating co-localization with SETDB1, HP1\u03b1, and H3K9me3. The spatial distribution of marks is consistent with known heterochromatin spreading mechanisms (C19, Groner et al., 2010). Loss of marks upon KAP1 depletion (C40) supports a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C92"
+    ],
+    "result": "During lytic HCMV infection, KAP1 remains associated with the viral genome but is phosphorylated on S824, which prevents recruitment of SETDB1 and HP1\u03b1. This phosphorylated form (pS824KAP1) was detected in 100% of lytically infected cells but not in latently infected HSC, distinguishing latent from lytic states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 provide strong evidence from multiple experimental approaches (ChIP, immunofluorescence, Western blot) across different cell types (mDCs, MRC5, CD34+) and viral strains (TB40-E, AD169). The consistent detection of KAP1 binding without SETDB1/HP1\u03b1/H3K9me3 in lytic infection, combined with specific pS824KAP1 detection only in IE-positive cells, supports the phosphorylation switch model. The use of MRP1 as a latency marker (C50, Weekes et al., 2013) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C95"
+    ],
+    "result": "mTOR is responsible for KAP1 S824 phosphorylation during HCMV lytic replication. mTOR inhibitors (rapamycin, Torin1) suppressed pS824KAP1 in infected cells, while ATM inhibition had no effect. mTOR localized to the nucleus, formed foci in infected cells, and associated with the HCMV genome at the same sites as pS824KAP1. Recombinant mTOR directly phosphorylated KAP1 on S824 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 provide multiple lines of evidence: pharmacological inhibition (C53-C55), subcellular localization (C58-C59), ChIP demonstrating mTOR-viral genome association (C60), and direct in vitro kinase activity (C57). The exclusion of ATM (C51) and specificity for S824 over S473 (C56) strengthen the conclusion. However, the mechanism of mTOR targeting to viral DNA remains unclear, and the role of viral factors in this process is inferred but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C88"
+    ],
+    "result": "HCMV can be forced out of latency by pharmacological activation of ATM with chloroquine. Chloroquine treatment of latently infected CD34+ HSC induced viral RNA (100-fold), DNA (5-fold), and infectious particle production (10,000 PFU/ml). This effect required ATM (blocked by KU55933) but not mTOR (not blocked by Torin1), and required functional KAP1 that could be phosphorylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C74 provide comprehensive evidence from multiple experiments with appropriate controls. The specificity is demonstrated by: (1) ATM inhibitor blocking the effect (C65), (2) mTOR inhibitor not blocking it (C64), (3) no effect in KAP1-depleted cells (C73), (4) no effect with S824A mutant (C73), (5) restoration with wild-type KAP1 (C74), and (6) no effect in MRC5 cells where replication is KAP1-independent (C72). Multiple doses were more effective than single doses (C66-C67), and pS824KAP1 was detected only in IE-positive cells (C68, C70). The experiments were replicated with cells from three independent donors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "KAP1 depletion or ATM activation alone is insufficient for full HCMV reactivation, but synergizes with NF-\u03baB activation by TNF\u03b1. TNF\u03b1 alone did not induce viral transcription, but combined with chloroquine increased viral RNA by another 10-fold, DNA by 2-fold, and virion production by 10-fold, without triggering HSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 demonstrate clear synergy between KAP1 phosphorylation and NF-\u03baB activation, with appropriate controls showing no effect of TNF\u03b1 alone. The maintenance of CD34 expression (C82) confirms cells remained undifferentiated. However, the molecular mechanism of synergy is inferred rather than directly demonstrated. The model (C83) is reasonable but speculative regarding the sequential nature of chromatin opening followed by transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Chloroquine-induced ATM activation triggers HCMV reactivation from latently infected monocytes isolated from seropositive individuals. Treatment induced intracellular viral DNA accumulation and infectious particle release without triggering monocyte differentiation into dendritic cells or macrophages, as verified by surface marker expression (CD1a, CD14, CD80, CD86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 extend the findings from cultured CD34+ cells to primary monocytes from naturally infected individuals, strengthening clinical relevance. The verification that cells did not differentiate (C76) is important for interpreting the mechanism. However, the experiments used pooled monocyte populations rather than single-cell analysis, so the proportion of latently infected cells that reactivated is unclear. The data are from three donors, providing reasonable biological replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "KAP1 phosphorylation and inactivation during HCMV infection is spatially restricted to viral DNA-associated KAP1 molecules. pS824KAP1 was detected only in IE-positive cells, and KAP1 retained its ability to repress a chromosomal TetO-GFP reporter in virus-infected cells, suggesting mTOR is targeted specifically to the HCMV genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide evidence for spatial compartmentalization through the TetO-GFP repression assay (Figure 5\u2014supplement 1B) and IE-specific pS824KAP1 detection. The inference that mTOR is targeted to viral DNA (C98) is supported by mTOR ChIP data (C60). However, the mechanism of mTOR targeting remains unclear, and the possibility of differential KAP1 pools or local concentration effects is not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In KSHV latency, KAP1, HP1, and H3K9me3 are enriched at viral promoters, and upon lytic reactivation, KAP1 dissociates from the viral genome with loss of HP1 and H3K9me3. This correlates with KAP1 S824 phosphorylation mediated by viral kinase vPK and decreased KAP1 sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C89-C91) describe prior work on KSHV, not new findings from this manuscript. They are appropriately cited and accurately represent the literature. This provides important context for comparing HCMV and KSHV mechanisms, highlighting that HCMV differs in that phosphorylated KAP1 remains genome-associated (C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "The mechanism of KAP1 recruitment to HCMV DNA likely involves KRAB-ZFPs or viral factors. KAP1 recruitment was lost when the KRAB-binding RBCC domain was deleted, suggesting KRAB-ZFP involvement. However, 28 KAP1 peaks without a common DNA motif suggest multiple DNA-binding proteins are involved, and viral factors may contribute to targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 provides evidence that the KRAB-binding domain is required, but this experiment is described as \"not illustrated\" and lacks methodological details. The inference that multiple KRAB-ZFPs are involved (C106) is reasonable given 28 peaks without common motifs, but no specific KRAB-ZFPs are identified. The hypothesis about viral factor involvement (C109) is purely speculative based on analogy to KSHV. This represents an important gap requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "HCMV latency is cell type-specific (limited to HSC and myeloid lineage) and strain-specific (clinical isolates like TB40-E but not laboratory strains like AD169). A latency-specific gene product may counter mTOR-mediated KAP1 phosphorylation in HSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 accurately summarizes established knowledge about HCMV latency specificity with appropriate citations. However, claim C102 is purely speculative, proposing that a latency-specific gene product blocks mTOR or induces a KAP1 phosphatase. No experimental evidence is provided for this hypothesis. While the speculation is reasonable given the observations, it remains untested and represents a direction for future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Rapamycin treatment in transplant recipients is associated with reduced CMV complications, which may result from preventing viral reactivation by blocking mTOR-mediated KAP1 phosphorylation. However, rapamycin did not prevent HCMV reactivation from dendritic cells in vitro, possibly because KAP1 phosphorylation was already established before DC maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 accurately cites clinical observations (Andrassy et al., 2012; Sab\u00e9 et al., 2012), but the mechanistic interpretation (C111) is speculative. The manuscript's findings suggest a plausible mechanism but do not directly test rapamycin effects on latency establishment or maintenance in vivo. The explanation for the discrepancy with Glover et al., 2014 (C113) is speculative and not experimentally tested. This represents a reasonable hypothesis requiring clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Pharmacological manipulation to force HCMV out of latency suggests therapeutic strategies combining ATM/NF-\u03baB activation with approaches to kill infected cells, particularly for ex vivo treatment of transplants to purge latently infected cells before engraftment in high-risk HCMV-negative recipients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C114-C115) are speculative therapeutic proposals based on the experimental findings. While the underlying science is sound, no experiments testing these therapeutic approaches are presented. The ex vivo treatment concept (C115) is more feasible than systemic treatment (C114), but neither has been validated. Safety concerns (potential for inducing viral reactivation) and efficacy questions (whether reactivated cells can be effectively eliminated) remain unaddressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background information on HCMV biology: HCMV causes serious disease in immunocompromised individuals and congenital infections. The virus establishes latency in HSC with transcriptional silencing and episomal maintenance, and reactivates upon differentiation to dendritic cells with changes in chromatin marks from repressive (H3K9me3, HP1) to active (acetylation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2, C6-C13) accurately summarize established knowledge about HCMV with appropriate citations. They provide essential background context but are not novel findings from this study. The information is well-supported by the cited literature and represents accepted understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on KAP1 biology: KAP1 is a transcriptional co-repressor that binds KRAB-ZFPs and recruits SETDB1 and HP1 to induce H3K9me3 and heterochromatin formation. KAP1 activity is regulated by sumoylation (enhances SETDB1 recruitment) and S824 phosphorylation by ATM (reduces activity). KAP1 functions on episomal DNA and influences EBV and KSHV replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C14-C23) accurately summarize established knowledge about KAP1 with appropriate citations to primary literature. They provide essential mechanistic background for understanding the study's findings. The information about KAP1 function on episomal DNA (C22) and effects on other herpesviruses (C23) is particularly relevant for justifying the investigation of KAP1 in HCMV latency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The findings that KAP1 is involved in both establishment and maintenance of HCMV latency corroborate the absence of DNA methylation on latent HCMV genomes, and reveal that virus exits latency when KAP1 S824 phosphorylation blocks SETDB1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C85-C86) represent interpretive summaries of the major findings. C85 appropriately connects the findings to prior observations about lack of DNA methylation (Hummel et al., 2007), supporting a model of reversible chromatin-based silencing. C86 accurately summarizes the phosphorylation switch mechanism demonstrated in the study. Both are well-supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Prior work showed that both mTORC1 and mTORC2 are activated during lytic HCMV replication, resulting in phosphorylation of 4E-BP1 and S6K, which enhances viral protein translation and minimizes cellular stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C93-C94) accurately summarize prior literature on mTOR activation during HCMV infection with appropriate citations. This background information contextualizes the novel finding that KAP1 is another mTOR substrate (C95). The information is well-established and provides important context for the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Spatial compartmentalization of KAP1 phosphorylation has precedent in DNA damage responses, and mTOR has been observed at sites of HCMV assembly, supporting the model of targeted mTOR recruitment to viral DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C99-C100) cite relevant prior work (White et al., 2006; Clippinger and Alwine, 2012) to support the plausibility of spatially restricted KAP1 phosphorylation. The citations are appropriate and strengthen the interpretation of the findings, though they do not directly demonstrate the mechanism in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C107",
+      "C108"
+    ],
+    "result": "Background on KAP1 recruitment mechanisms: KAP1 is classically tethered to genomic loci by KRAB-ZFPs. In KSHV, the viral protein LANA tethers sumoylated KAP1 to the Rta promoter, and upon hypoxia, KAP1 is de-sumoylated and released, activating HIF-1\u03b1 and viral gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C103, C107-C108) accurately describe established mechanisms of KAP1 recruitment and regulation with appropriate citations. The KSHV example (C107-C108) provides important context for considering how KAP1 might be recruited to HCMV DNA and how its activity might be regulated, supporting the analogy drawn in speculative claim C109.",
+    "result_type": "MINOR"
+  }
+]

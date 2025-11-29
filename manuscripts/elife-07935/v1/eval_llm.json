@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The synthetic toggle switch in budding yeast exhibits bistability and stable cellular memory at intermediate ATc concentrations, with cells maintaining phenotypic states for over 260 hours and 80 cell divisions. The system shows hysteresis with cells converging to history-independent states at extreme ATc concentrations, and displays non-exponential switching kinetics approaching the critical transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 collectively demonstrate the toggle switch's bistable behavior through experimental data (Figures 1B,C) and prior characterization. The observation of stable memory for >260 hours (C23) with non-exponential kinetics (C26) is well-documented in the figures, though the speculation about metastable states (C26) remains unconfirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Phenotypic states in the toggle switch lose resilience to directional perturbations (IPTG changes) near the critical transition. Far from the transition (2 ng/ml ATc), IPTG perturbations cause minimal switching (~0%), while close to the transition (8 ng/ml ATc), the same perturbation causes the majority of cells to switch states, with switching persisting after perturbation removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C28-C34 are strongly supported by experimental data in Figures 2C,D showing dose-dependent loss of resilience. The control experiments (C34) demonstrating ~0.5% spontaneous switching validate that observed switching is perturbation-induced. The correlation between perturbation severity and switching fraction (C33) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The toggle switch exhibits loss of resilience to generic perturbations (heat, salt, ethanol, glucose) near the critical transition. At 2 ng/ml ATc, these perturbations cause minimal switching, while at 8 ng/ml ATc, nearly complete switching occurs despite negligible spontaneous switching in controls. The switching probability increases with perturbation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C36-C39 are well-supported by experimental data in Figures 3A,B and supplementary figures. The observation that multiple mechanistically distinct perturbations all induce switching near the critical transition is a key finding. The dose-response relationship (C39) is documented in Figure 3\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Generic perturbations do not cause loss of resilience in the transition from the high RFP state. Salt, ethanol, and heat stresses actually stabilize the RFP state by increasing RFP output. Phenotypic states only lose resilience to perturbations that push the system toward the alternative state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by data in Figure 3\u2014figure supplement 3, demonstrating directional specificity of the loss of resilience. This is an important control showing that not all perturbations cause switching in all directions, which strengthens the mechanistic interpretation that perturbations must push toward the alternative state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The loss of resilience is driven by a shrinking basin of attraction near the critical transition. A single linear separatrix in log-log GFP-RFP space accurately predicts switching fractions for eight different perturbations at a given ATc concentration. The basin boundary moves closer to the stable fixed point as ATc increases from 2 to 8 ng/ml.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C60-C63 are well-supported by the basin boundary analysis in Figure 4. The mathematical model (C46, Figure 4\u2014figure supplement 1) justifies the linear separatrix assumption. The predictive success across diverse perturbations (C47, C62) is impressive and validates the basin of attraction mechanism. However, the assumption of equal promoter strengths should be experimentally verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Traditional early warning indicators based on local stability fail to predict the critical transition in this gene network. The mean GFP of unswitched cells remains approximately constant across ATc concentrations showing loss of resilience, and there is no increase in population variation (coefficient of variation) approaching the critical transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by data in Figures 5A,B,C showing constant mean fluorescence and no increase in CV. This negative result is important as it demonstrates that commonly proposed early warning indicators do not apply to this system, highlighting the distinction between local and global stability measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The yeast GAL network, modified to enhance memory by constitutive GAL80 expression, exhibits loss of resilience to glucose and ethanol perturbations but not to salt or heat perturbations near its critical transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C53-C55 are supported by experimental data in Figure 6. The use of GAL80 overexpression to enhance memory (C54) is appropriately justified by citation. The selective loss of resilience to glucose and ethanol but not salt/heat (C55) parallels findings in the toggle switch, though the mechanistic basis for this selectivity could be better explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The E. coli lac operon shows loss of resilience to both directional perturbations and ethanol stress. Loss of resilience approaching a phenotypic switch may be a general property of multistable gene networks, and generic perturbations can cause widespread loss of cellular memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by data in Figure 6\u2014figure supplement 1 for the lac operon. The generalization to multistable networks (C57-C58) is reasonable given observations in three different systems (toggle switch, GAL network, lac operon) across two species, though more examples would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Gillespie simulations reveal that the degree of switching depends on both perturbation intensity and duration, with the minimum duration for dramatic perturbations approximately equal to the cell division time. Not all perturbations induce switching; those that stabilize the current state induce negligible switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by simulation results in Figure 4\u2014figure supplements 3 and 4. These computational results complement the experimental findings and provide mechanistic insights into perturbation dynamics. However, the simulations use a simplified phenomenological model, and experimental validation of the duration-dependence would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The theoretical framework from complex systems predicts that basins of attraction shrink as stable and unstable fixed points approach one another near critical transitions, leading to loss of resilience. Systems far from critical transitions return to their original state after perturbations, while those near transitions may switch to alternative stable states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C27 establish the theoretical foundation from prior work on complex systems (cited appropriately). These concepts are well-established in the literature and provide the conceptual framework for the experimental work. The application to gene networks is the novel contribution of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "For robust cellular memory in natural contexts, low rates of stochastic switching are insufficient; memory must also be robust against environmental perturbations. Many forms of cellular memory will become destabilized near critical transitions given the inevitability of multiple environmental fluctuations over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 represent important conceptual conclusions drawn from the experimental findings. These inferences are well-supported by the data showing that states with negligible spontaneous switching can still lose resilience to perturbations. The broader implications for cellular memory (C73) are reasonable extrapolations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Microorganisms exhibit history-dependent phenotypic responses that can be retained after stimulus removal and are critical for survival. Natural gene networks like the yeast GAL network and B. subtilis sporulation can exist in multiple phenotypic states depending on history. Phenotypic memory often results from feedback loops within cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C12 establish the biological context and are supported by appropriate citations to prior work. These are well-established facts in the field that motivate the current study. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The mechanism by which perturbations induce switching may involve shifts in the stability landscape and/or increases in noisy gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 are explicitly speculative (\"Part of the answer is certainly...\" and \"It is also possible...\"). While these are reasonable hypotheses, they lack experimental support in the manuscript. Future work distinguishing between these mechanisms would be valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The perturbations in the experiments lasted 24 hours, corresponding to approximately 3-8 cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 accurately describes the experimental design. This is a straightforward methodological detail that is important for interpreting the results and comparing to the simulation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The strains used in this study (toggle switch, GAL80-inducible, and LacY-YFP fusion strains) have been previously characterized in cited publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 appropriately cite prior characterization of the strains used. This establishes that the biological systems are well-validated, though independent verification of key properties would strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Brief environmental perturbations can dramatically increase the rate of phenotypic switching from highly stable memory states into alternative states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a summary statement of the main finding, well-supported by the collective experimental evidence from the toggle switch, GAL network, and lac operon experiments. This represents the core contribution of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Traditional measures of cellular memory based on state lifetime would classify all tested conditions as stable with high memory, despite their differential resilience to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is an important inference highlighting the inadequacy of traditional memory metrics. It is supported by the observation of negligible spontaneous switching (C34) across conditions that show vastly different responses to perturbations. This conceptual point is central to the manuscript's contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Glucose-induced switching can be understood through catabolite repression of the GAL1 upstream activation sequence, which shuts down expression of the entire toggle switch system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 provides a mechanistic explanation for glucose effects, supported by citations to prior work on the toggle switch system. This is a reasonable interpretation, though direct experimental verification of the proposed mechanism would strengthen the claim.",
+    "result_type": "MINOR"
+  }
+]

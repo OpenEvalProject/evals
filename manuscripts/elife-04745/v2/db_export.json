@@ -1,0 +1,1979 @@
+{
+  "submission": {
+    "id": "cee74170-270b-4cf3-8521-a38dac9b85fa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:30:31.187664Z",
+    "updated_at": "2025-11-29T03:30:31.187664Z"
+  },
+  "content": [
+    {
+      "id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "submission_id": "cee74170-270b-4cf3-8521-a38dac9b85fa",
+      "content_type": "manuscript",
+      "content_text": "# RNA chaperones buffer deleterious mutations in E. coli\n\n## Authors\n\n- Marina Rudan<sup>1</sup>\n- Dominique Schneider<sup>2</sup>\n- Tobias Warnecke<sup>4</sup> \u2020\n- Anita Krisko<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Mediterranean Institute for Life Sciences Split Croatia\n2. Laboratoire Adaptation et Pathog\u00e9nie des Microorganismes Universit\u00e9 Grenoble Alpes Grenoble France\n3. Centre National de la Recherche Scientifique Grenoble France\n4. Molecular Systems Group, MRC Clinical Sciences Centre Imperial College London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBoth proteins and RNAs can misfold into non-functional conformations. Protein chaperones promote native folding of nascent polypeptides and refolding of misfolded species, thereby buffering mutations that compromise protein structure and function. Here, we show that RNA chaperones can also act as mutation buffers that enhance organismal fitness. Using competition assays, we demonstrate that overexpression of select RNA chaperones, including three DEAD box RNA helicases (DBRHs) (CsdA, SrmB, RhlB) and the cold shock protein CspA, improves fitness of two independently evolved Escherichia coli mutator strains that have accumulated deleterious mutations during short- and long-term laboratory evolution. We identify strain-specific mutations that are deleterious and subject to buffering when introduced individually into the ancestral genotype. For DBRHs, we show that buffering requires helicase activity, implicating RNA structural remodelling in the buffering process. Our results suggest that RNA chaperones might play a fundamental role in RNA evolution and evolvability.\n\n## Introduction\n\nProtein chaperones can buffer the effects of mutations that affect protein stability and/or folding, as evidenced by the release of cryptic genetic variation upon inhibition of Hsp90 (Rutherford and Lindquist, 1998; Queitsch et al., 2002; Rohner et al., 2013), increased enzyme evolvability in Escherichia coli strains overexpressing GroEL (Tokuriki and Tawfik, 2009), accelerated rates of evolution in habitual chaperone clients (Bogumil and Dagan, 2010; Warnecke and Hurst, 2010; Williams and Fares, 2010), lower mutational penetrance in Caenorhabditis elegans larvae with higher Hsp90 titres during embryonic development (Burga et al., 2011), and increased fitness of E. coli mutator strains following GroEL overexpression (Fares et al., 2002). Whether RNA chaperones play a similarly pervasive role in buffering mutations that affect RNA structure or folding, however, has not been addressed empirically.\n\nRNA misfolding is common (Herschlag, 1995) and frequently produces long-lived alternate structures (Downs and Cech, 1996) that require the assistance of RNA-binding proteins for timely resolution. Like their protein-folding counterparts, RNA chaperones can promote orderly structural transitions towards and subsequently stabilize the native fold or\u2014as exemplified by classic work on the Neurospora crassa CYT-19 protein (Mohr et al., 2002; Bhaskaran and Russell, 2007)\u2014facilitate the refolding of misfolded species (Russell, 2008). Of particular interest in this regard are DEAD box RNA helicases (DBRHs), which can alleviate folding errors by unwinding short RNA helices, thus enabling renewed exploration of the folding landscape (Pan and Russell, 2010). By the same token, DBRH activity may also counteract mutations that precipitate a deleterious increase in RNA stability. Many DBRHs, including RhlB (a component of the E. coli degradosome [Py et al., 1996]) and the eukaryotic translation initiation factor eIF4A are involved in the folding and unfolding of diverse RNAs and might therefore act as broad-spectrum mutation buffers.\n\n## Results\n\n### Overexpression of DBRHs enhances fitness of a low-fitness strain\n\nWe tested whether DBRHs buffer deleterious mutations in vivo using a fitness rescue paradigm (Fares et al., 2002). Briefly, an E. coli strain propagated under conditions of weak selection is expected to accumulate deleterious mutations and experience a concomitant decline in fitness compared with its ancestor. Similarly, strains adapting to a novel environment will accumulate not only beneficial but also deleterious mutations, which may hitchhike along with beneficial alleles and can be exposed as deleterious in the old environment (Fares et al., 2002). In both scenarios, buffering can be inferred if (over)expression of a candidate chaperone leads to a greater fitness gain in the low-fitness evolved strain compared with its ancestor. We therefore performed pairwise competition experiments (Lenski, 1991) between the E. coli REL606 strain, which is the ancestor of the long-term evolution experiment (LTEE), and two evolved mutS mutator strains that were sampled from a lineage after \u223c20,000 (20k) and \u223c40,000 (40k) generations of adaptation to a minimal glucose-limited medium (Sniegowski et al., 1997) (Figure 1A). Performing 24-hr competitions in the alternative LB medium, we observed reduced fitness relative to the REL606 ancestor for the 40k but not for the 20k genotype (Figure 1B). Reduced fitness in the 40k strain cannot be proximately attributed to the mutS mutation, which underlies the mutator phenotype; this mutation arose \u223c3000 generations into the LTEE (Sniegowski et al., 1997) and is already present in the 20k strain. Thus, the mutation(s) responsible for reduced fitness emerged later.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig1-v2.jpg)\n\n**Figure 1.:** (A) Relationships between strains used in different competition assays. Short names of competed strains are given in bold; gen.: generations. (B) Relative fitness of the 20k and 40k genotypes, each competed against their REL606 ancestor. (C) Relative fitness of ancestral and evolved genotypes overexpressing one of three DEAD box RNA helicases (DBRHs) compared with identical strains carrying the empty control plasmid. E166K, E157K, and E158K: competitions in the 40k background where plasmids carried mutated versions of the respective DBRH. In each case, the central glutamic acid residue of the DEAD motif has been recoded to lysine, compromising the helicase activity. Bar heights indicate mean relative fitness across four biological replicates, with each mean derived by averaging over four technical replicates. Error bars represent standard errors of the mean. **p < 0.01, *p < 0.05 (one-sample t-test). Additional results for competitions terminated in mid-exponential phase (after 2 hr) are shown in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig1-figsupp1-v2.jpg)\n\nHaving established the presence, in the 40k strain, of deleterious mutations potentially amenable to buffering, we introduced plasmids carrying a specific E. coli DBRH gene (either csdA, rhlB, or srmB) into each of the three genetic backgrounds (ancestor, 20k, and 40k). We then competed each transformed strain against a strain of the same genotype but bearing an empty control plasmid. Whereas overexpression in the ancestral and 20k backgrounds had limited effects on competitive fitness, overexpression of either DBRH enhanced fitness of the mutationally compromised 40k genotype (Figure 1C). For each DBRH tested, fitness gains were abolished when we introduced mutations that rendered the respective helicase domain catalytically inactive (Figure 1C), suggesting that helicase and therefore RNA remodelling activities are essential for buffering.\n\n### RNA chaperones buffer distinct mutations in a second low-fitness strain\n\nProtein chaperones like GroEL and Hsp90 target misfolded substrates by recognizing exposed hydrophobic patches that are buried in the native state (Hartl et al., 2011). This generic mechanism allows buffering to occur across a broad range of substrates, differentiating these chaperones from gene- or pathway-specific suppressors. To determine whether DBRH-mediated buffering encompasses diverse target substrates, we performed the same suite of fitness rescue experiments in a second, independently evolved strain. This MG1655-derived mutH deletion (\u0394mutH) strain was sampled after a shorter period of laboratory evolution (\u223c500 generations) but also exhibited reduced fitness compared with its ancestor (Figure 2A) and experienced fitness gains upon DBRH overexpression (Figure 2B). We confirmed that fitness effects were not directly related to the mutH deletion by deleting mutH in the ancestral MG1655 background de novo. Fitness of the de novo \u0394mutH strain was not reduced compared with the deletion-free ancestor (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig2-v2.jpg)\n\n**Figure 2.:** (A) Relative fitness of the evolved and de novo-constructed \u0394mutH strains, each competed against their MG1655 ancestor. (B) Relative fitness of ancestral, evolved, and de novo \u0394mutH genotypes overexpressing one of three DEAD box RNA helicases compared with identical strains carrying the empty control plasmid. E166K, E157K, and E158K, bar heights and error bars are as described in Figure 1. **p < 0.01, *p < 0.05 (one-sample t-test). Additional results for competitions terminated in the mid-exponential phase (after 2 hr) are shown in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig2-figsupp1-v2.jpg)\n\nTo rule out buffering of identical mutations across strains, we sequenced the genomes of the evolved \u0394mutH strain and its laboratory ancestor. As expected, we found significantly fewer mutations in the evolved \u0394mutH compared with the 40k strain (Table 1, Supplementary files 1\u20133). More importantly, there were no identical point mutations or indels in the two evolved strains, implying buffering of independent mutations. This might be indicative of a general rather than gene- or pathway-specific buffering mechanism and is consistent with DBRHs being broad-spectrum catalysts of RNA remodelling that recognize and target misfolded substrates through a non-specific mechanism of action (Jarmoskaite et al., 2014).\n\n**Table 1.**\n Number of mutations in evolved mutator strains compared with their respective ancestors\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>SNPs (CDS/total)*</th>\n      <th>Small indels\u2020 (CDS/total)</th>\n      <th>Large deletions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>20k</td>\n      <td>667/755</td>\n      <td>86/129</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>40k</td>\n      <td>1163/1291</td>\n      <td>128/183</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Evolved \u0394mutH</td>\n      <td>12/12</td>\n      <td>0/2</td>\n      <td>0\u2021</td>\n    </tr>\n  </tbody>\n</table>\n\n_*CDS, coding sequence; SNP, single-nucleotide polymorphism.\u2020\u22644 bp.\u2021Excluding the mutH deletion itself._\n\n### Pinpointing individual deleterious mutations buffered by RNA chaperones\n\nTo lay the groundwork for unravelling the molecular basis of buffering, we sought to identify mutations that are individually deleterious and whose effects on fitness are ameliorated by chaperone overexpression. In the absence of strong a priori candidates for DBRH-mediated buffering\u2014neither strain harboured mutations in known structural RNAs (Supplementary files 2, 3)\u2014the evolved \u0394mutH strain, carrying only 12 point mutations (Table 1), affords us the rare opportunity to pinpoint such mutations systematically.\n\nUsing a recombineering approach (see \u2018Materials and methods\u2019), we individually introduced each mutation located in a gene of known function (N = 7, five mutations are located in y-genes) into the MG1655 genome. We then competed each of these strains, isogenic except for a single mutation, against MG1655. Only one strain, carrying a mutation in the lamB gene, exhibited both reduced fitness and evidence for buffering (Figure 3A). Although primarily known for its role in maltose uptake, lamB is a more general glycoporin that becomes derepressed under glucose-limiting conditions to maximize sugar uptake (Death et al., 1993). LamB deletion mutants are outcompeted by reference strains when grown on glucose (Death et al., 1993), suggesting a possible cause of fitness loss in our strain. Growth phase-related fitness patterns were mirrored by the evolved \u0394mutH strain (Figure 2\u2014figure supplement 1) consistent with lamB being a dominant driver of fitness loss in this strain.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig3-v2.jpg)\n\n**Figure 3.:** (A) Relative fitness of strains carrying single point mutations introduced into the relevant ancestral background competed against the respective ancestor. The mutations correspond to those listed in Supplementary files 2, 3 for the respective genes. Initial screening for fitness defects involved two biological replicates (grey diamonds). For the two mutations where the initial screen suggested a measurable fitness deficit, lamB and rplSsyn, all competitions were carried out in quadruplicate. Bar heights and error bars are as described in Figure 1. **p < 0.01, *p < 0.05 (one-sample t-test). OE: overexpression; EP: empty plasmid. Additional results for competitions terminated in mid-exponential phase (after 2 hr) are shown in Figure 3\u2014figure supplements 1, 2. (B) Linear Feynman graph of the lamB region that harbours the mutation in the evolved \u0394mutH strain (highlighted in grey). We predicted RNA secondary structure for the entire malK-lamB-malM transcription unit (RegulonDB identifier: ECK120009315) and its mutated counterpart using RNAfold (Lorenz et al., 2011). The malK-lamB-malM operon contains a repetitive extragenic palindromic (REP) element downstream of lamB, which prevents premature degradation of the lamB cistron following cleavage from malM. Resolution of this REP element as part of regulated degradation was previously shown to require RhlB (Khemici and Carpousis, 2004). However, comparison of predicted minimum free energy structures between wild type and mutant malK-lamB-malM transcripts suggested structural changes that do not interfere with REP element formation but rather lead to decreased positional entropy at the local level, as highlighted here.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** OE: overexpression; EP: empty plasmid.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** OE: overexpression; EP: empty plasmid.\n\nFor the 40k strain, where the large number of mutations precludes comprehensive analysis, we focused on two mutations in the essential ribosomal protein gene rplS\u2014one synonymous (rplSsyn) and one non-synonymous (rplSnonsyn, Supplementary file 2). Both mutations are present in the 40k but not in the 20k strain. As demonstrated for rplA and rpsT in Salmonella typhimurium (Lind et al., 2010), synonymous mutations in ribosomal protein genes can strongly compromise fitness, indicating the presence of selective constraints unrelated to amino acid composition. Moreover, fitness costs of mutations in rplA/rpsT correlated with changes in predicted mRNA free energy, albeit weakly (Lind et al., 2010). We therefore performed competitions between the REL606 ancestor and strains carrying either the rplSsyn or rplSnonsyn mutation. These competitions revealed a deleterious effect of rplSsyn, buffered by DBRH overexpression (Figure 3A). In contrast to lamB, growth phase-specific buffering patterns in rplSsyn did not echo observations in the 40k strain (Figure 3\u2014figure supplement 2; Figure 1\u2014figure supplement 1), consistent with the presence of multiple fitness-relevant mutations in the latter.\n\nThese results establish that RNA chaperones buffer individual deleterious mutations although the mechanisms of buffering remain, at this point, unresolved. We consider likely mechanisms of buffering and appropriate experimental follow-ups in the \u2018Discussion\u2019.\n\n### Fitness gains upon overexpression of cspA suggest diverse mechanisms of buffering\n\nBuffering of mutations that affect RNA structure and folding may be mechanistically diverse, rather than limited to a DBRH model where helicase activity catalyses the local rupture of helices and enables structural remodelling. To explore mechanistic diversity in buffering, we considered the cold shock protein CspA. By binding with low specificity to single-stranded RNA, CspA can prevent the formation of unwanted secondary structure and thereby narrow the RNA folding landscape (Jiang and Hou, 1997)\u2014a mechanism of action reminiscent of the ubiquitous protein chaperone DnaK (Hsp70), which cycles on and off nascent polypeptide chains to allow ordered stepwise folding (Hartl et al., 2011). We found that overexpression of CspA is associated with fitness gains in both low-fitness genotypes but not in the corresponding ancestral strains (Figure 4). By contrast, overexpression of a mutant version of CspA with severely reduced nucleic acid-binding activity (Hilier et al., 1998) did not confer fitness benefits upon overexpression (Figure 4). Buffering occurs although CspA levels are relatively low compared with overexpressed DBRHs (\u223cfourfold and \u223ctwofold reduced relative abundance compared with CsdA and RhlB/SrmB, respectively, Figure 5), likely because CspA is subject to negative autoregulation (Bae et al., 1997).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig4-v2.jpg)\n\n**Figure 4.:** Relative fitness of REL606- and MG1655-derived strains overexpressing CspA compared with strains of the same genotype carrying the empty control plasmid. F20L: competitions in the 40k and evolved \u0394mutH backgrounds, respectively, where plasmids carried a mutated version of the cspA gene yielding a protein with compromised nucleic acid binding ability (Hilier et al., 1998). Bar heights and error bars are as described in Figure 1. **p < 0.01, *p < 0.05 (one-sample t-test). Additional results for competitions terminated in mid-exponential phase (after 2 hr) and competitions involving the lamB mutant in the evolved \u0394mutH strain and the rplSsyn mutant in the 40k strain are shown in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** OE: overexpression; EP: empty plasmid.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative Western blot for evolved \u0394mutH strains overexpressing one of the focal RNA chaperones. Molecular weights (from nucleotide sequence): CspA, 7.403 kD; RhlB, 47.126 kD; SrmB, 49.914 kD; CsdA, 70.546 kD. (B) Representative Coomassie-stained SDS-PAGE gel. (C) Relative chaperone levels are defined as the ratio of Western blot intensity to Coomassie intensity (see \u2018Materials and methods\u2019). The lowest ratio detected across triplicate experiments in all strains was set to one. Comparing these ratios between strains overexpressing different RNA chaperones gives a semi-quantitative indication of relative chaperone abundances. For example, CsdA levels in CsdA-overexpressing cells are \u223cfourfold higher than CspA levels in CspA-overexpressing cells. Note that this metric does not allow conclusions about the absolute fraction of total protein that is occupied by each chaperone in the different strains.\n\nThese results show that buffering can be mediated by RNA chaperones that interact with their substrates in mechanistically distinct ways. Interestingly, cold shock proteins and DBRHs have been suggested to work together, with helicases opening double-stranded structures and cold shock proteins binding to the single-stranded end products, their combined activities preventing the formation of unfavourable structures (Hunger et al., 2006). Overexpression of different RNA chaperones, including the proteins considered here, might therefore benefit identical RNA target species.\n\n## Discussion\n\nElucidating in greater detail how different chaperones interact with wild-type and mutant RNAs will be critical to elucidate the molecular basis of buffering and how it relates to altered RNA secondary and tertiary structure. Here, we demonstrate that buffering by RNA chaperones occurs at the organismal level, establish that helicase and nucleic acid-binding activity are required for buffering by DBRHs and CspA, respectively, and identify individual mutations that are amenable to buffering. These mutations, located in lamB and rplS, constitute valuable assets to establish the precise molecular mechanism(s) of buffering in the future.\n\nAlthough this study was not designed to resolve molecular mechanism, it is nonetheless useful, if primarily to guide future work, to contemplate potential causes of fitness loss, and how buffering might occur. In particular, we wanted to know whether mutations in lamB and rplS stand out amongst other mutations in their predicted effect on RNA structure. Several metrics that quantify mutational impact on RNA secondary structure do indeed suggest comparatively severe effects for rplSsyn (e.g., the correlation of base pairing probabilities, Supplementary file 2). Similarly, of all the mutations in the evolved \u0394mutH strain, the lamB mutation is predicted to have the most severe repercussions for local RNA structure as measured by maximum local base pair distance (dmax, Supplementary file 3, Figure 3B). However, these correlates should be interpreted with caution. Existing measures of RNA structural change, however accurate, will only indicate how disruptive a given mutation is to the RNA structure but not whether the resulting defect can be rescued by chaperone activity, or whether it matters at the organismal level. Consequently, we would not necessarily anticipate a robust relationship between fitness loss, buffering, and indicators of RNA structural change. More mundanely, we cannot quantify the reliability of any (structural) predictor without a larger set of experimentally characterized mutations that are both deleterious and amenable to buffering. In short, while suggestive, these findings do not conclusively implicate RNA structure as the vehicle for fitness loss.\n\nProvided deleterious effects arise at the level of RNA structure, RNA chaperone activity might be beneficial through stabilizing (CspA), destabilizing, or remodelling (DBRHs) affected structures in the focal transcript or through changing how these transcripts interact with other RNAs or RNA-binding proteins (Pan and Russell, 2010). Considering lamB, one possibility is that an increase in local stability caused by the mutation (Figure 3B) introduces a translational roadblock that is resolved by RNA chaperone activity. Alternatively, one might envisage a more complex scenario, where the non-synonymous lamB mutation gives rise to a dominant negative protein product and RNA chaperone overexpression ameliorates fitness defects by facilitating degradation of the mRNA, thus reducing levels of mutant LamB protein. Both of these mechanisms are speculative, and endorsing either one (or a third or fourth option) would be premature. Rather, competing mechanistic hypotheses will have to be confirmed or debunked through targeted follow-up experiments. For example, a logical first step to eliminate one of the hypotheses above would be to measure LamB levels (predicted to increase and decrease upon chaperone overexpression, respectively). In designing insightful follow-up studies, a few issues deserve wider consideration.\n\nFirst, buffering might be direct (involving interactions between the RNA chaperones and the mutant RNA) or indirect (involving interactions between the RNA chaperone and other components of the cell, which in turn lead to buffering). In addition to dissecting specific chaperone\u2013RNA interactions, it will therefore be important to establish system-level effects of RNA chaperone overexpression.\n\nSecond, both synonymous and non-synonymous mutations can affect RNA structure so that non-synonymous mutations (like the one found in lamB) should not be discarded a priori as unlikely candidates for buffering by RNA chaperones; deleterious consequences might arise at the RNA level even though the amino acid change is selectively neutral. Conversely, synonymous mutations can affect translation kinetics and protein folding (Plotkin and Kudla, 2011) and therefore have fitness repercussions at the protein level. As a corollary, some mutations might be amenable to buffering by both protein and RNA chaperones. For example, the former might rescue misfolded proteins, whereas the latter removes translational roadblocks that predispose to misfolding. Elucidating to what extent protein and RNA chaperones have orthogonal buffering capacities will therefore be an important future objective.\n\nThird, as is the case for protein chaperones, buffering by RNA chaperones is almost certain to occur through a range of mechanisms, so that identifying general principles of buffering in the face of mechanistic plurality will be a key challenge. Our findings should provide a strong impetus to meet this challenge and embark on further investigations with the ultimate aim to unravel the ramifications of mechanistically diverse chaperoning activity for RNA biogenesis, evolution, and evolvability. Encouragingly, recent advances in probing RNA secondary structures and RNA\u2013protein interactions at high throughput have rendered the transcriptome-wide dissection of RNA chaperone-mediated buffering a realistic prospect for the not too distant future.\n\n## Materials and methods\n\n### Bacterial strains, plasmids, and growth conditions\n\nThe strains used here were derived either from the E. coli K12 MG1655 strain by laboratory evolution and P1 transduction and/or transformation, or from the REL606 strain and its descendants in the LTEE (Sniegowski et al., 1997). All strains used are listed in Supplementary file 4, and their relationships and experimental derivation are illustrated in Figures 6, 7. Sequences of cspA, rhlB, srmB, and csdA inserted into pCA24N::Cam were obtained from the ASKA collection (http://www.shigen.nig.ac.jp/ecoli/strain/). For strain construction and subsequent experiments, bacteria were grown in LB at 37\u00b0C. To distinguish competitors during competition assays, cells were plated onto TA solid medium (Lenski, 1991).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig6-v2.jpg)\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04745/elife-04745-fig7-v2.jpg)\n\n**Figure 7.:** *Resequencing of the MG1655 laboratory strain revealed a single difference to the NC000913 reference genome, an intergenic dinucleotide insertion at position 4296380 (AC \u2192 ACGC).\n\n### Mutant proteins\n\nMutations in the DEAD domain of E. coli DBRHs abolish or severely reduce helicase activity, as demonstrated for the E. coli DBRHs RhlB (Vanzo et al., 1998), DbpA (Elles and Uhlenbeck, 2008), and CsdA (Turner et al., 2007). Here, we used DBRH mutants in which the central glutamic acid residue has been recoded to yield lysine, a change known to abolish RhlB ATPase activity, which is required for helicase activity (Vanzo et al., 1998). Mutations in the nucleic acid-binding domain of CspA were previously evaluated for their impact on both nucleic acid binding and protein stability (Hilier et al., 1998). The F20L mutation was found to only weakly affect protein stability but strongly reduce nucleic acid binding (Hilier et al., 1998) and was therefore chosen for our study. Plasmids carrying the mutated genes were constructed by and purchased from DNA2.0.\n\n### Competition assays\n\nWe performed pairwise competition experiments to estimate the relative fitness of two competing E. coli strains as previously described (Lenski, 1991). Briefly, the two competitors were grown separately, mixed at an initial ratio of 1:1 and diluted 100-fold in the competition environment (LB supplemented with the relevant antibiotics for plasmid maintenance). Initial and final densities (after either 24 or 2 hr) were estimated by diluting and spreading the cells on indicator TA (tetrazolium and arabinose) plates, which allow the competitors to be distinguished through an arabinose-utilization marker, which is neutral under the conditions utilized (Lenski, 1988). Relative fitness was calculated as\n\n$$\nw=ln(A_{f}/A_{i})/ln(B_{f}/B_{i}),\n$$\n\nwhere A and B are the densities of the two competitors, and i and f represent initial and final densities, respectively. We used one-sample t-tests to evaluate whether mean relative fitness differed from the null expectation of one.\n\n### Genome sequencing\n\nDNA was extracted from the MG1655 ancestor and the evolved \u0394mutH strain using the standard phenol\u2013chloroform extraction procedure followed by ethanol precipitation. Libraries (100bp paired end reads) were prepared using the TruSeq DNA PCR-Free LT Sample Prep Kit (Illumina, San Diego, CA), with median insert size of 487 bp (ancestor) and 495 bp (evolved \u0394mutH), for subsequent sequencing on the Illumina HiSeq 2000 platform using the TruSeq v3 reagent kit. Sequencing yielded 7365202 and 6504588 read pairs for the ancestral and evolved strains, respectively. The genomes of the REL606-derived 20k (REL8602A) and 40k (REL10953) clones were previously sequenced on the Illumina Genome Analyzer platform using a single lane of single-end 36bp reads per genome.\n\n### Mutation identification\n\nTo identify genomic differences in the MG1655-derived strains, we closely followed the approach adopted by Tenaillon et al. (2012). To detect single-nucleotide polymorphisms (SNPs) and short indels, paired end reads were first aligned to the reference genome (NC000913) using bwa mem (version 0.7.6a, arXiv:1303.3997). Subsequently, duplicate reads were removed using samtools (version 0.1.19), and only those with non-zero mapping quality and no suboptimal alignments were considered further. SNPs and indels were then called using the mpileup function in samtools, requiring a minimum base quality of 30. Mutations were validated by visual inspection of read mappings in the Integrated Genome Viewer. Non-reference alleles had to be present at a frequency of p > 0.75 to be considered bona fide mutations. To ensure that we did not miss pertinent SNPs/indels in non-unique regions present in structural RNAs, we repeated the above procedure without filters on mapping quality and including suboptimal alignments. We identified no additional candidate mutations. Screening for larger deletions and duplications was performed by computing per-base coverage using the genomeCoverageBed function in bedtools (version 2.17.0) (Quinlan and Hall, 2010), subsequent smoothing across 250bp windows, normalizing by GC content, and applying a rolling filter to control for long-range effects, as previously described (Tenaillon et al., 2012). This approach confirmed the mutH deletion in the mutator strain. We found no other large deletions. Similarly, no duplications were detected after visually inspecting neighbouring regions with unusual differences in coverage (>1.5-fold). All candidate regions were found to be due to local drop-offs in neighbouring regions rather than excess coverage in focal windows. For REL606-derived strains, candidate genomic differences compared with the ancestral genome were identified using the PALOMA (Vallenet et al., 2012) and BRESEQ (Barrick et al., 2009) pipelines. Sequencing data for the MG1655-derived strains and the 20k strain have been deposited in the European Nucleotide Archive (accession no. PRJEB7107). Sequencing data for the REL606-derived 40k clone was previously deposited in the National Center for Biotechnology Information Sequence Read Archive (accession no. SRR1536189).\n\n### Introduction of point mutations into ancestral genetic backgrounds\n\nAll point mutations detected in the evolved \u0394mutH strain that were located in a gene of known function (i.e., not located in a y-gene) were individually introduced into the ancestral MG1655 background using a recombineering approach (Sawitzke et al., 2013). Briefly, we designed single-stranded oligonucleotides, \u223c70 nt in length, that were complementary to the region of interest and carried the desired point mutation (Supplementary file 5). They were transformed by electroporation into the TB56 (Ara+) and TB62 (Ara\u2212) strains supplemented with pSIM6. In both TB56 and TB62 (kindly provided by Tobias Bergmiller), the native mutS promoter has been replaced with an ara promoter. In the presence of 0.2% arabinose, the strains have wild-type MutS levels, whereas in the presence of 0.2% glucose, MutS expression is repressed. Growing strains in LB medium supplemented with 0.2% glucose therefore increases the likelihood that oligo-born mutations are fixed due to impaired mismatch repair. Following electroporation, cells were grown overnight at 32\u00b0C on LB agar plates supplemented with 0.2% arabinose, and the presence of mutations was confirmed by sequencing target regions from individual colonies on an ABI PRISM 310 Genetic Analyzer using the Big Dye Terminator 1.1 Cycle Sequencing kit (Life Technologies, Carlsbad, CA). The primers used for sequencing are listed in Supplementary file 5.\n\n### Determination of relative chaperone levels\n\nExponentially growing evolved \u0394mutH strains overexpressing one of the four RNA chaperone proteins (CspA, RhlB, SrmB or CsdA) were pelleted by centrifugation and resuspended in UTCDTT buffer containing 8 M urea, 2 M thiourea, 4% CHAPS and 10 mM DTT supplemented with a mixture of protease inhibitors containing aprotinin bestatin, leupeptin, pepstatin A, E-64 and AEBSFxHCL, EDTA-free (Life Technologies). Cells were incubated for 2 hr at room temperature followed by a 20-min centrifugation step at 12,000\u00d7g. Protein concentrations were determined using the Bradford assay (Bradford, 1976). For each sample, 15 \u03bcg of total protein extract was loaded onto an SDS-PAGE gel with a 6% stacking and 20% resolving gel. 6X-His tagged CspA, RhlB, SrmB, and CsdA were detected by Western blotting using a mouse monoclonal anti-6X His tag antibody (Abcam, United Kingdom) followed by a goat anti-mouse polyclonal antibody conjugated to HRP (Abcam). Proteins were visualized on autoradiographic film using the Amersham ECL Advance chemiluminescence detection system (GE Healthcare Life Sciences, United Kingdom). We used ImageJ (Collins, 2007) to quantify the intensity of each chaperone band on the Western blot and normalized this intensity by the amount of total protein loaded into each lane (detected by Coomassie staining of the SDS-PAGE gel and subsequent quantification with ImageJ). This normalized abundance allows comparing relative chaperone levels across experiments (Figure 5C).\n",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "62ddfebc-30f8-4542-a8ac-b0c7fb117d96",
+      "submission_id": "cee74170-270b-4cf3-8521-a38dac9b85fa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04745.021](https://doi.org/10.7554/eLife.04745.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRNA chaperones buffer deleterious mutations in E. coli\u201d for consideration at eLife. Your article has been favorably evaluated by Detlef Weigel (Senior editor), a Reviewing editor, and two reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments.\n\nThe conclusion of the paper is highly interesting: that RNA chaperones may buffer mutations that could impact on mRNA folding. The possible implication is that this way hidden genetic variability can be maintained in the genome and become effecting under certain (e.g. stress) conditions by compensating the function of RNA chaperones, e.g. by over-loading their functions. This role of chaperone was previously reported and extensively discussed in the context of protein mutations, but not in the context of RNA mutation.\n\nStronger evidence that this is indeed the case, however, is required. The main issue raised is that the mutations described were not characterized in the context of RNA stability. Therefore, it is difficult to interpret the experiment. If you decide to submit a substantially revised version of the manuscript, a minimal set of experiments required to better support your conjecture has to include: (1) the identification of at least one mutation in the original strain predicted to affect RNA stability (using computational tools), (2) the demonstration that it has a detrimental effect on fitness when in isolation, and (3) evidence that it is being buffered by RNA chaperones.\n\nAdditional comments:\n\n1) Given the overall conclusion of the work, that overexpression of RNA chaperone proteins confers a fitness benefit by assisting with RNA folding or structural rearrangements in the mutated strains, it seems important to evaluate whether any of the mutations in known or suspected structured RNAs. This question is especially intriguing for the \u0394mutH because it has such a small number of mutations, and all of the SNPs are in coding sequence. This could be done computationally.\n\n2) The data presentation does not allow a direct comparison, but the impression upon comparing parts B and C of Figure 1 is that, upon over-expression of some DBRHs , the evolved 40k strain grows faster than the ancestral strain (RhlB and CsdA; or the latter and SrmB, in Figure 2). Is that the case? If so, how can this be accounted for?\n\n3) Fitness was determined by competitions: cultures were grown for 24 hours, as default. It's unclear to which growth phase the fitness effects relate to: is it most exponential growth, or stationary phase as well. Further, given the different growth rates of the different strains, it could may well be that some were subjected to growth only and other to growth + stationary phase survival. Many, I'd say, most mutations have conflicting effects on growth vs. survival in stationary phase. It could therefore be that the actual buffering effects would be different, possibly much larger, if competitions were perfumed under a defined phase\u2014exponential growth on one hand, and survival at stationary phase on the other. This should be clarified by performing competition experiment in well-defined conditions (e.g. maintaining cells in log phase).\n\n4) \u201cRelative fitness was calculated as the ratio of the competitors' growth rates during competition.\u201d The method relates to counting the ratio of CFUs on tetrazolium plates, so how would growth rates be derived from that; especially, when no data is available as number of generations within the 24 hours growth (or growth phase, see above)?\n\n5) \u201cThe arabinose-utilization marker, which is neutral under the conditions utilized\u201d. Was this tested, or assumed? Many markers do affect growth rates.\n\n6) An empty vector control is missing.\n\n7) The supplementary tables listing the mutations are not very informative. The genes and positions of the mutations should be specified.\n\n8) The expression levels of the RNA chaperones are not reported. It is interesting that overexpression of CspA restores fitness to the same level as overexpression of the ATP-dependent DEAD-box proteins, but this result cannot be fully evaluated without knowing whether the different proteins were expressed at comparable levels.\n\n9) The sentence: \u201cRNA chaperones can promote orderly structural transitions towards and subsequently stabilize the native fold or\u2014as exemplified by classic work on the Neurospora crassa CYT-19 protein\u2014facilitate the re-folding of misfolded species (reviewed in Bogumil, 2010).\u201d This reference seems to be incorrect here.\n\n10) In the subsection headed \u201cMutant proteins\u201d, the sentence: \u201cHere, we used DBRH mutants in which the central glutamic acid residue has been recoded to yield lysine, a change known to abolish RhlB helicase activity (Vanzo, 1998).\u201d In Vanzo, 1998, helicase activity was not measured. Instead, it was shown that RNaseE-dependent ATPase activity is compromised for this mutant. It is certainly expected that the mutation will also result in a loss of helicase activity, which depends on ATPase activity, but the connections to previous work should be clarified.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cRNA chaperones buffer deleterious mutations in E. coli\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior editor), a Reviewing editor, and two reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAs you can see from the reviews, both reviewers appreciated the additional data and discussion provided in the revised manuscript and agreed that the paper is improved. There is also an agreement that you nicely illustrated the core finding\u2014that the slow growth phenotypes of these strains can be rescued with overexpression of DEAD-box proteins, known RNA-dependent ATPases (and one RNA-binding protein that lacks ATPase activity)\u2014and that this finding is interesting.\n\nHowever, both reviewers also agreed that the mechanism(s) of rescue is not at all understood, and that you haven't convincingly proved that it has to do with buffering mRNA stability.\n\nWhat we would like to ask you is to relate to these points specifically in the manuscript. Currently, the Discussion is very short, and it can easily be extended to a real section where you can discuss and relate to the all the points raised by the reviewers (in particular the points raised by reviewer #1).\n\nIt may also be interesting (but not necessary) to relate to protein chaperones. Would you expect mutations that would also be buffered this way at the protein level? What do you think would be more important?\n\nReviewer #1:\n\nThe authors have done a significant amount of work, and provided new data. The overall picture remains, however, enigmatic, and possibly even more confusing than it had been prior to the addition of these new data. Specifically, there is still no clear indication that the mutations in the evolved lines relate to RNA stability/folding, and are thereby buffered by RNA chaperones.\n\nThe puzzling points that cast doubt on this interpretation are several:\n\n1) There is not even a single overlapping mutation between the two evolved lines. This may suggest a non-specific buffering mechanism, but then on the other hand, as with protein chaperones, RNA chaperones are likely to have some obligatory 'clients', and other RNAs that are highly dependent on chaperone action. However, none of the identified mutations is in known structural RNAs.\n\n2) Making isogenic strains is probably the most rigorous test possible, and the authors took this avenue. Sadly, however, the results are not supporting the hypothesis. Only one out 7 mutations tested (in lamB) exhibited both reduced fitness and evidence for buffering. But this mutation involves an amino acid exchange.\n\n3) The synonymous mutation in rplS is more convincing, as it was shown to be deleterious and compensated by DRBH over-expresssion. However, then authors' assumption that fitness effects of synonymous mutations indicate the presence of selective constraints beyond the protein level is wrong. Synonymous mutations have been shown to affect the rate and outcome of protein folding, and thus the yield of soluble, function protein.\n\nOverall, as I said, I'm sorry to say that the additional data cast in my view more doubts on the paper's main conclusion.\n\nReviewer #2:\n\nThe authors have addressed my major concerns. The work demonstrates that mutations in the evolved strains are reduced in growth and this reduction can be 'buffered' by overexpression of proteins that function as ATP-dependent or ATP-independent RNA chaperones. It is interesting that both mutations that confer fitness defects individually are in coding regions. While one is a missense mutation, the other one is synonymous, suggesting a role of the chaperone proteins in regulating the lifetime or translatability of the mRNA. The work raises very interesting questions on the roles of RNA chaperones in the functions of mRNAs, which will presumably spur future work.\n",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42efcc7e-9452-49f1-a55e-72fe975919eb",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C1",
+      "claim": "Protein chaperones can buffer the effects of mutations that affect protein stability and/or folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein chaperones can buffer the effects of mutations that affect protein stability and/or folding, as evidenced by the release of cryptic genetic variation upon inhibition of Hsp90 (Rutherford and Lindquist, 1998; Queitsch et al., 2002; Rohner et al., 2013), increased enzyme evolvability in Escherichia coli strains overexpressing GroEL (Tokuriki and Tawfik, 2009), accelerated rates of evolution in habitual chaperone clients (Bogumil and Dagan, 2010; Warnecke and Hurst, 2010; Williams and Fares, 2010), lower mutational penetrance in Caenorhabditis elegans larvae with higher Hsp90 titres during embryonic development (Burga et al., 2011), and increased fitness of E. coli mutator strains following GroEL overexpression (Fares et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research demonstrating protein chaperone buffering effects",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "f82fc219-b18b-4336-b2d1-366b6c73cfcf",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C2",
+      "claim": "Inhibition of Hsp90 releases cryptic genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein chaperones can buffer the effects of mutations that affect protein stability and/or folding, as evidenced by the release of cryptic genetic variation upon inhibition of Hsp90 (Rutherford and Lindquist, 1998; Queitsch et al., 2002; Rohner et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rutherford and Lindquist 1998, Queitsch et al. 2002, and Rohner et al. 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ce770d48-5e0e-49c5-87fb-5d68e2f7e8f7",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C3",
+      "claim": "Overexpression of GroEL increases enzyme evolvability in Escherichia coli strains.",
+      "claim_type": "EXPLICIT",
+      "source": "increased enzyme evolvability in Escherichia coli strains overexpressing GroEL (Tokuriki and Tawfik, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tokuriki and Tawfik 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "972c135f-d95f-406f-8f72-5edc5c5a52b8",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C4",
+      "claim": "Habitual chaperone clients exhibit accelerated rates of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "accelerated rates of evolution in habitual chaperone clients (Bogumil and Dagan, 2010; Warnecke and Hurst, 2010; Williams and Fares, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bogumil and Dagan 2010, Warnecke and Hurst 2010, and Williams and Fares 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8478e7a2-0dd5-46fa-addd-a2d50c6d7b56",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C5",
+      "claim": "Caenorhabditis elegans larvae with higher Hsp90 titres during embryonic development show lower mutational penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "lower mutational penetrance in Caenorhabditis elegans larvae with higher Hsp90 titres during embryonic development (Burga et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burga et al. 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "aa9bbd4d-ddaa-44be-a8ac-00af0a338aa5",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C6",
+      "claim": "GroEL overexpression increases fitness of E. coli mutator strains.",
+      "claim_type": "EXPLICIT",
+      "source": "increased fitness of E. coli mutator strains following GroEL overexpression (Fares et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fares et al. 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "b40f5bb1-ca97-41e9-b59a-b7a84e62b7d8",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C7",
+      "claim": "RNA misfolding is common.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA misfolding is common (Herschlag, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Herschlag 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "69e114c9-bbb0-4375-9e16-2b53c54b05ea",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C8",
+      "claim": "RNA misfolding frequently produces long-lived alternate structures.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA misfolding is common (Herschlag, 1995) and frequently produces long-lived alternate structures (Downs and Cech, 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Downs and Cech 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "166950da-81e6-412a-91d0-019ad3ca5394",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C9",
+      "claim": "Long-lived alternate RNA structures require the assistance of RNA-binding proteins for timely resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "frequently produces long-lived alternate structures (Downs and Cech, 1996) that require the assistance of RNA-binding proteins for timely resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the citation to Downs and Cech 1996 about long-lived alternate structures",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "4f5f1521-8273-48d2-b2af-19756f1a473f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C10",
+      "claim": "RNA chaperones can promote orderly structural transitions towards and stabilize the native fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Like their protein-folding counterparts, RNA chaperones can promote orderly structural transitions towards and subsequently stabilize the native fold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of RNA chaperone function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ed0d2a83-915b-4283-a9f0-e26ab9cb8dd4",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C11",
+      "claim": "The Neurospora crassa CYT-19 protein facilitates the refolding of misfolded RNA species.",
+      "claim_type": "EXPLICIT",
+      "source": "as exemplified by classic work on the Neurospora crassa CYT-19 protein (Mohr et al., 2002; Bhaskaran and Russell, 2007)\u2014facilitate the refolding of misfolded species (Russell, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mohr et al. 2002, Bhaskaran and Russell 2007, and Russell 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "081afff0-0904-494a-82fb-56ba5c8c7aa1",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C12",
+      "claim": "DEAD box RNA helicases can alleviate folding errors by unwinding short RNA helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest in this regard are DEAD box RNA helicases (DBRHs), which can alleviate folding errors by unwinding short RNA helices, thus enabling renewed exploration of the folding landscape (Pan and Russell, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pan and Russell 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "fcb65de4-2191-46bd-9d92-a2b1cf40f1a2",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C13",
+      "claim": "DBRH activity may counteract mutations that precipitate a deleterious increase in RNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "By the same token, DBRH activity may also counteract mutations that precipitate a deleterious increase in RNA stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the mechanism of DBRH activity",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "300f2ff5-e73f-417a-98f8-44f09d30e80f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C14",
+      "claim": "RhlB is a component of the E. coli degradosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Many DBRHs, including RhlB (a component of the E. coli degradosome [Py et al., 1996])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Py et al. 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "199f1b06-f3f0-4f23-8a2c-ccba9a59e44a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C15",
+      "claim": "Many DBRHs are involved in the folding and unfolding of diverse RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Many DBRHs, including RhlB (a component of the E. coli degradosome [Py et al., 1996]) and the eukaryotic translation initiation factor eIF4A are involved in the folding and unfolding of diverse RNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about DBRH function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "a88fe591-b244-460b-9191-30babd80e54a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C16",
+      "claim": "Many DBRHs might act as broad-spectrum mutation buffers.",
+      "claim_type": "EXPLICIT",
+      "source": "Many DBRHs, including RhlB (a component of the E. coli degradosome [Py et al., 1996]) and the eukaryotic translation initiation factor eIF4A are involved in the folding and unfolding of diverse RNAs and might therefore act as broad-spectrum mutation buffers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on the diverse RNA targets of DBRHs",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8fc9e005-6ca2-4f07-8015-0811e1fe5c88",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C17",
+      "claim": "The 40k strain has reduced fitness relative to the REL606 ancestor in LB medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing 24-hr competitions in the alternative LB medium, we observed reduced fitness relative to the REL606 ancestor for the 40k but not for the 20k genotype (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "4d795ff4-6660-42a0-9023-8f8901da5899",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C18",
+      "claim": "The 20k strain does not have reduced fitness relative to the REL606 ancestor in LB medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing 24-hr competitions in the alternative LB medium, we observed reduced fitness relative to the REL606 ancestor for the 40k but not for the 20k genotype (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "96d20485-89f5-4509-bb6e-f196a232785b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C19",
+      "claim": "Reduced fitness in the 40k strain cannot be proximately attributed to the mutS mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced fitness in the 40k strain cannot be proximately attributed to the mutS mutation, which underlies the mutator phenotype; this mutation arose \u223c3000 generations into the LTEE (Sniegowski et al., 1997) and is already present in the 20k strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the fact that the mutS mutation is present in the 20k strain which does not show reduced fitness, supported by citation to Sniegowski et al. 1997",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "cdfa59ee-9d51-4c68-aff4-9f018178c15a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C20",
+      "claim": "The mutS mutation arose approximately 3000 generations into the LTEE.",
+      "claim_type": "EXPLICIT",
+      "source": "this mutation arose \u223c3000 generations into the LTEE (Sniegowski et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sniegowski et al. 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "3a78fc72-60c4-4e4c-8d69-bfdf482eeba4",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C21",
+      "claim": "The mutation(s) responsible for reduced fitness in the 40k strain emerged after 20,000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mutation(s) responsible for reduced fitness emerged later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that the 20k strain does not show reduced fitness but the 40k strain does",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "f55fc141-b57d-4e0c-b8ce-ccc875f6bebc",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C22",
+      "claim": "Overexpression of CsdA enhances fitness of the 40k genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression in the ancestral and 20k backgrounds had limited effects on competitive fitness, overexpression of either DBRH enhanced fitness of the mutationally compromised 40k genotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "a9549a8a-e4f3-4415-973d-5ef370e2aca9",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C23",
+      "claim": "Overexpression of RhlB enhances fitness of the 40k genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression in the ancestral and 20k backgrounds had limited effects on competitive fitness, overexpression of either DBRH enhanced fitness of the mutationally compromised 40k genotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "c0055a3a-1484-44f1-bde4-b13c989b4f75",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C24",
+      "claim": "Overexpression of SrmB enhances fitness of the 40k genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression in the ancestral and 20k backgrounds had limited effects on competitive fitness, overexpression of either DBRH enhanced fitness of the mutationally compromised 40k genotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "1b96ee72-5f12-409a-b0cf-db2b2697aa4d",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C25",
+      "claim": "Overexpression of DBRHs in the ancestral background has limited effects on competitive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression in the ancestral and 20k backgrounds had limited effects on competitive fitness, overexpression of either DBRH enhanced fitness of the mutationally compromised 40k genotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ed773dfd-4585-4b90-b1ef-f2eece0ff0c9",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C26",
+      "claim": "Overexpression of DBRHs in the 20k background has limited effects on competitive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas overexpression in the ancestral and 20k backgrounds had limited effects on competitive fitness, overexpression of either DBRH enhanced fitness of the mutationally compromised 40k genotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "849f62f8-b485-4ca7-ace2-127be7418f8c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C27",
+      "claim": "Fitness gains from DBRH overexpression are abolished when the helicase domain is rendered catalytically inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "For each DBRH tested, fitness gains were abolished when we introduced mutations that rendered the respective helicase domain catalytically inactive (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "7c2f3c95-28e4-4388-8d6c-e3b3a454e3f8",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C28",
+      "claim": "Helicase activity is essential for DBRH-mediated buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "For each DBRH tested, fitness gains were abolished when we introduced mutations that rendered the respective helicase domain catalytically inactive (Figure 1C), suggesting that helicase and therefore RNA remodelling activities are essential for buffering.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that catalytically inactive helicases do not provide fitness gains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "1f1174b2-03ba-454e-9fac-1d768019d184",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C29",
+      "claim": "RNA remodelling activities are essential for DBRH-mediated buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "For each DBRH tested, fitness gains were abolished when we introduced mutations that rendered the respective helicase domain catalytically inactive (Figure 1C), suggesting that helicase and therefore RNA remodelling activities are essential for buffering.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the requirement for helicase activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "6f0f50f4-abcc-43e0-89a1-d1813a95c893",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C30",
+      "claim": "The evolved \u0394mutH strain exhibits reduced fitness compared with its ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "This MG1655-derived mutH deletion (\u0394mutH) strain was sampled after a shorter period of laboratory evolution (\u223c500 generations) but also exhibited reduced fitness compared with its ancestor (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "d8cfe8fb-9f90-4fe9-98db-e1e78cf61338",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C31",
+      "claim": "The evolved \u0394mutH strain experienced fitness gains upon DBRH overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "This MG1655-derived mutH deletion (\u0394mutH) strain was sampled after a shorter period of laboratory evolution (\u223c500 generations) but also exhibited reduced fitness compared with its ancestor (Figure 2A) and experienced fitness gains upon DBRH overexpression (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "90a3941d-deee-49c8-8398-0b97208a9d72",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C32",
+      "claim": "Fitness effects of the evolved \u0394mutH strain are not directly related to the mutH deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that fitness effects were not directly related to the mutH deletion by deleting mutH in the ancestral MG1655 background de novo. Fitness of the de novo \u0394mutH strain was not reduced compared with the deletion-free ancestor (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing that de novo \u0394mutH does not have reduced fitness",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "7fc8eaa8-0dbd-44bd-a2ca-aa724597a82d",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C33",
+      "claim": "The de novo \u0394mutH strain does not have reduced fitness compared with the deletion-free ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitness of the de novo \u0394mutH strain was not reduced compared with the deletion-free ancestor (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "6b1efec5-daee-4b08-91e6-bdb2262cbcfa",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C34",
+      "claim": "The evolved \u0394mutH strain has significantly fewer mutations than the 40k strain.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found significantly fewer mutations in the evolved \u0394mutH compared with the 40k strain (Table 1, Supplementary files 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "2d6c9175-9e82-4d37-ad01-64885bf61f2a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C35",
+      "claim": "There are no identical point mutations or indels in the evolved \u0394mutH and 40k strains.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, there were no identical point mutations or indels in the two evolved strains, implying buffering of independent mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "23a155f5-a1e5-4451-bd08-91353e14f6ba",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C36",
+      "claim": "The absence of identical mutations in the two evolved strains implies buffering of independent mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, there were no identical point mutations or indels in the two evolved strains, implying buffering of independent mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that different mutations are buffered in the two strains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "efd6c196-7e7f-49b4-a861-31069fafc11c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C37",
+      "claim": "The absence of identical mutations might be indicative of a general rather than gene- or pathway-specific buffering mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be indicative of a general rather than gene- or pathway-specific buffering mechanism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on the observation of buffering of different mutations",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "b92ce74c-bff5-40fb-a38f-cc35e9fc96e8",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C38",
+      "claim": "DBRHs are broad-spectrum catalysts of RNA remodelling that recognize and target misfolded substrates through a non-specific mechanism of action.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be indicative of a general rather than gene- or pathway-specific buffering mechanism and is consistent with DBRHs being broad-spectrum catalysts of RNA remodelling that recognize and target misfolded substrates through a non-specific mechanism of action (Jarmoskaite et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jarmoskaite et al. 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "39f91aab-8f24-423c-82c3-14205fa46b85",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C39",
+      "claim": "The 20k strain has 667 SNPs in coding sequences and 755 total SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "f6aea58e-c62d-493d-afe1-c9edea5da1b5",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C40",
+      "claim": "The 20k strain has 86 small indels in coding sequences and 129 total small indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "3d8eb8b3-3903-461b-907a-145c5f1660b1",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C41",
+      "claim": "The 20k strain has 1 large deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "9cd59688-2203-4a3a-8675-ebbad98d116a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C42",
+      "claim": "The 40k strain has 1163 SNPs in coding sequences and 1291 total SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "39db4696-1fff-4889-8dc7-9266dc301b2b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C43",
+      "claim": "The 40k strain has 128 small indels in coding sequences and 183 total small indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "024bb371-d898-40a8-94fa-d2a7a345a2a2",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C44",
+      "claim": "The 40k strain has 4 large deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "df28bec5-b730-4be9-b110-a1fde1ee8b38",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C45",
+      "claim": "The evolved \u0394mutH strain has 12 SNPs in coding sequences and 12 total SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "b82c5802-5124-4bb4-8d43-715930f7cf49",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C46",
+      "claim": "The evolved \u0394mutH strain has 0 small indels in coding sequences and 2 total small indels.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8b942397-5111-4ec2-b8f9-d5b25e41f34a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C47",
+      "claim": "The evolved \u0394mutH strain has no large deletions excluding the mutH deletion itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Number of mutations in evolved mutator strains compared with their respective ancestors",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ac627781-bef6-4c4c-9fa3-5fc96964fd21",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C48",
+      "claim": "Neither evolved strain harboured mutations in known structural RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of strong a priori candidates for DBRH-mediated buffering\u2014neither strain harboured mutations in known structural RNAs (Supplementary files 2, 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data in Supplementary files 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "03bcceae-2880-489f-874b-9cc61319850f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C49",
+      "claim": "The evolved \u0394mutH strain carries only 12 point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "the evolved \u0394mutH strain, carrying only 12 point mutations (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "6f3d689c-a999-444c-bf29-b392b624007b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C50",
+      "claim": "A strain carrying a mutation in the lamB gene exhibits reduced fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one strain, carrying a mutation in the lamB gene, exhibited both reduced fitness and evidence for buffering (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "6182b701-e311-4b34-9bd7-aa14a1e356b6",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C51",
+      "claim": "A strain carrying a mutation in the lamB gene shows evidence for buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one strain, carrying a mutation in the lamB gene, exhibited both reduced fitness and evidence for buffering (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "e6ac83e6-a927-4125-a0e5-5c2748edf41f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C52",
+      "claim": "lamB is primarily known for its role in maltose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Although primarily known for its role in maltose uptake, lamB is a more general glycoporin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about lamB function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "bde4eb71-1759-4e55-b8ed-2e9e38260064",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C53",
+      "claim": "lamB is a more general glycoporin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although primarily known for its role in maltose uptake, lamB is a more general glycoporin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about lamB function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "d4bdb590-67d9-4dc8-9dde-674503763655",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C54",
+      "claim": "lamB becomes derepressed under glucose-limiting conditions to maximize sugar uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "lamB is a more general glycoporin that becomes derepressed under glucose-limiting conditions to maximize sugar uptake (Death et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Death et al. 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "0f79423b-e254-42ab-a8d4-9a22bb2124d2",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C55",
+      "claim": "LamB deletion mutants are outcompeted by reference strains when grown on glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "LamB deletion mutants are outcompeted by reference strains when grown on glucose (Death et al., 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Death et al. 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "d9af0509-1b59-40a8-b94f-fc634a398bea",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C56",
+      "claim": "Growth phase-related fitness patterns in the lamB mutant are mirrored by the evolved \u0394mutH strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth phase-related fitness patterns were mirrored by the evolved \u0394mutH strain (Figure 2\u2014figure supplement 1) consistent with lamB being a dominant driver of fitness loss in this strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "659ff510-e91c-4f5a-bea0-7f7f46cc20f1",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C57",
+      "claim": "lamB is a dominant driver of fitness loss in the evolved \u0394mutH strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth phase-related fitness patterns were mirrored by the evolved \u0394mutH strain (Figure 2\u2014figure supplement 1) consistent with lamB being a dominant driver of fitness loss in this strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the similarity in fitness patterns between the lamB mutant and the evolved \u0394mutH strain",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "d7849155-d090-4c77-a8f6-404b2e55277c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C58",
+      "claim": "The rplSsyn mutation is deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "These competitions revealed a deleterious effect of rplSsyn, buffered by DBRH overexpression (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8f19b340-bf06-45b2-8715-148c93ef29cb",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C59",
+      "claim": "The rplSsyn mutation is buffered by DBRH overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "These competitions revealed a deleterious effect of rplSsyn, buffered by DBRH overexpression (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ab8eb7ca-5bfd-44ab-9637-2b605d398a9f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C60",
+      "claim": "Growth phase-specific buffering patterns in rplSsyn do not echo observations in the 40k strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to lamB, growth phase-specific buffering patterns in rplSsyn did not echo observations in the 40k strain (Figure 3\u2014figure supplement 2; Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 2 and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "2f059e90-9899-4634-acde-e1c90bcfdcb7",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C61",
+      "claim": "The 40k strain contains multiple fitness-relevant mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to lamB, growth phase-specific buffering patterns in rplSsyn did not echo observations in the 40k strain (Figure 3\u2014figure supplement 2; Figure 1\u2014figure supplement 1), consistent with the presence of multiple fitness-relevant mutations in the latter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the difference in buffering patterns between rplSsyn and the 40k strain",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "fb813144-a02f-4d8c-b43a-3ed4270448ca",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C62",
+      "claim": "RNA chaperones buffer individual deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results establish that RNA chaperones buffer individual deleterious mutations although the mechanisms of buffering remain, at this point, unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing buffering of lamB and rplSsyn mutations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "77d16497-3f7a-4ecf-a112-956d21e34bfd",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C63",
+      "claim": "Overexpression of CspA is associated with fitness gains in both low-fitness genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpression of CspA is associated with fitness gains in both low-fitness genotypes but not in the corresponding ancestral strains (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "18832e7d-b9ae-4a2a-8d4b-18bb9236839a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C64",
+      "claim": "Overexpression of CspA is not associated with fitness gains in the corresponding ancestral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpression of CspA is associated with fitness gains in both low-fitness genotypes but not in the corresponding ancestral strains (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "0d07a20e-8973-4e7c-8c41-03d7d755de15",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C65",
+      "claim": "Overexpression of a mutant version of CspA with severely reduced nucleic acid-binding activity does not confer fitness benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, overexpression of a mutant version of CspA with severely reduced nucleic acid-binding activity (Hilier et al., 1998) did not confer fitness benefits upon overexpression (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4 and citation to Hilier et al. 1998",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "90c4fcf7-8c8d-435b-96db-9a1f0a78c0eb",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C66",
+      "claim": "CspA levels are relatively low compared with overexpressed DBRHs.",
+      "claim_type": "EXPLICIT",
+      "source": "Buffering occurs although CspA levels are relatively low compared with overexpressed DBRHs (\u223cfourfold and \u223ctwofold reduced relative abundance compared with CsdA and RhlB/SrmB, respectively, Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "dea12490-cdba-4373-999b-239edc194b60",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C67",
+      "claim": "CspA levels are approximately fourfold reduced compared with CsdA.",
+      "claim_type": "EXPLICIT",
+      "source": "Buffering occurs although CspA levels are relatively low compared with overexpressed DBRHs (\u223cfourfold and \u223ctwofold reduced relative abundance compared with CsdA and RhlB/SrmB, respectively, Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "acae8992-c135-4e62-9a60-372276992c00",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C68",
+      "claim": "CspA levels are approximately twofold reduced compared with RhlB/SrmB.",
+      "claim_type": "EXPLICIT",
+      "source": "Buffering occurs although CspA levels are relatively low compared with overexpressed DBRHs (\u223cfourfold and \u223ctwofold reduced relative abundance compared with CsdA and RhlB/SrmB, respectively, Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "264eb8e8-9a7e-4620-bc62-2ba045ccc327",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C69",
+      "claim": "CspA is subject to negative autoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "likely because CspA is subject to negative autoregulation (Bae et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bae et al. 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "f153ef7b-e3e8-494a-9efa-b43978fe7935",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C70",
+      "claim": "CspA can prevent the formation of unwanted secondary structure by binding with low specificity to single-stranded RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "By binding with low specificity to single-stranded RNA, CspA can prevent the formation of unwanted secondary structure and thereby narrow the RNA folding landscape (Jiang and Hou, 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang and Hou 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "5acacd82-e56f-4cc3-86ef-bb6f9888305c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C71",
+      "claim": "CspA narrows the RNA folding landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "By binding with low specificity to single-stranded RNA, CspA can prevent the formation of unwanted secondary structure and thereby narrow the RNA folding landscape (Jiang and Hou, 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang and Hou 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "fac8047d-2971-4e01-b61e-0b6c3128b28c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C72",
+      "claim": "The mechanism of action of CspA is reminiscent of the ubiquitous protein chaperone DnaK (Hsp70).",
+      "claim_type": "EXPLICIT",
+      "source": "By binding with low specificity to single-stranded RNA, CspA can prevent the formation of unwanted secondary structure and thereby narrow the RNA folding landscape (Jiang and Hou, 1997)\u2014a mechanism of action reminiscent of the ubiquitous protein chaperone DnaK (Hsp70), which cycles on and off nascent polypeptide chains to allow ordered stepwise folding (Hartl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the similarity in mechanisms between CspA and DnaK, supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "9920b11f-94af-4d1e-ad4c-07762b0d4d33",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C73",
+      "claim": "DnaK (Hsp70) cycles on and off nascent polypeptide chains to allow ordered stepwise folding.",
+      "claim_type": "EXPLICIT",
+      "source": "which cycles on and off nascent polypeptide chains to allow ordered stepwise folding (Hartl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hartl et al. 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "3e449a15-13b9-4a53-a63a-fbce45b69bdc",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C74",
+      "claim": "Buffering can be mediated by RNA chaperones that interact with their substrates in mechanistically distinct ways.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that buffering can be mediated by RNA chaperones that interact with their substrates in mechanistically distinct ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that both DBRHs and CspA can buffer mutations through different mechanisms",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "87f611df-f9d9-46cc-ae81-0346f3d4a892",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C75",
+      "claim": "Cold shock proteins and DBRHs have been suggested to work together.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cold shock proteins and DBRHs have been suggested to work together, with helicases opening double-stranded structures and cold shock proteins binding to the single-stranded end products, their combined activities preventing the formation of unfavourable structures (Hunger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hunger et al. 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "2ee54a2b-54d9-48b9-b44e-4325fadc496e",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C76",
+      "claim": "Overexpression of different RNA chaperones might benefit identical RNA target species.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of different RNA chaperones, including the proteins considered here, might therefore benefit identical RNA target species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on the potential cooperation between cold shock proteins and DBRHs",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "06899c77-4635-4ee1-a30a-b5e721cb07c6",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C77",
+      "claim": "Buffering by RNA chaperones occurs at the organismal level.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that buffering by RNA chaperones occurs at the organismal level",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fitness competition experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "71b41f48-a8ba-4803-b1de-f3d9fa07808b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C78",
+      "claim": "Helicase activity is required for buffering by DBRHs.",
+      "claim_type": "EXPLICIT",
+      "source": "establish that helicase and nucleic acid-binding activity are required for buffering by DBRHs and CspA, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments with catalytically inactive helicases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "423baadf-d58c-4b0f-a461-9a1a7e7ff04d",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C79",
+      "claim": "Nucleic acid-binding activity is required for buffering by CspA.",
+      "claim_type": "EXPLICIT",
+      "source": "establish that helicase and nucleic acid-binding activity are required for buffering by DBRHs and CspA, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments with mutant CspA with reduced nucleic acid-binding activity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "3276ccc9-e62d-45b0-908a-653d550f9bbb",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C80",
+      "claim": "Mutations in lamB and rplS are amenable to buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "and identify individual mutations that are amenable to buffering. These mutations, located in lamB and rplS, constitute valuable assets to establish the precise molecular mechanism(s) of buffering in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing buffering of these mutations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "b01f98db-c3df-4ab6-b46e-6ee72c81ebde",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C81",
+      "claim": "The rplSsyn mutation has comparatively severe effects on RNA secondary structure as measured by the correlation of base pairing probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Several metrics that quantify mutational impact on RNA secondary structure do indeed suggest comparatively severe effects for rplSsyn (e.g., the correlation of base pairing probabilities, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational predictions in Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "5f37d415-a7c7-4831-916f-d637480276fe",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C82",
+      "claim": "The lamB mutation is predicted to have the most severe repercussions for local RNA structure as measured by maximum local base pair distance among all mutations in the evolved \u0394mutH strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, of all the mutations in the evolved \u0394mutH strain, the lamB mutation is predicted to have the most severe repercussions for local RNA structure as measured by maximum local base pair distance (dmax, Supplementary file 3, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational predictions in Supplementary file 3 and Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8e14d1c9-53b0-46f6-b50e-bc1f45608291",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C83",
+      "claim": "Protein chaperones like GroEL and Hsp90 target misfolded substrates by recognizing exposed hydrophobic patches that are buried in the native state.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein chaperones like GroEL and Hsp90 target misfolded substrates by recognizing exposed hydrophobic patches that are buried in the native state (Hartl et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hartl et al. 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "2595a3a6-6121-419f-abb5-2587a5162fec",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C84",
+      "claim": "The generic mechanism of recognizing exposed hydrophobic patches allows protein chaperones to buffer across a broad range of substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This generic mechanism allows buffering to occur across a broad range of substrates, differentiating these chaperones from gene- or pathway-specific suppressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about protein chaperone function",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "028db7da-8576-4a84-965f-25b4566525f6",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C85",
+      "claim": "Synonymous mutations in ribosomal protein genes can strongly compromise fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated for rplA and rpsT in Salmonella typhimurium (Lind et al., 2010), synonymous mutations in ribosomal protein genes can strongly compromise fitness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lind et al. 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "e9515f85-9f86-4a35-a04f-d4d96afd03ba",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C86",
+      "claim": "Fitness costs of mutations in rplA/rpsT correlate with changes in predicted mRNA free energy, albeit weakly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, fitness costs of mutations in rplA/rpsT correlated with changes in predicted mRNA free energy, albeit weakly (Lind et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lind et al. 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ae188495-3426-4e19-be80-e0e9b7cf1cc9",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C87",
+      "claim": "Mutations in the DEAD domain of E. coli DBRHs abolish or severely reduce helicase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the DEAD domain of E. coli DBRHs abolish or severely reduce helicase activity, as demonstrated for the E. coli DBRHs RhlB (Vanzo et al., 1998), DbpA (Elles and Uhlenbeck, 2008), and CsdA (Turner et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vanzo et al. 1998, Elles and Uhlenbeck 2008, and Turner et al. 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "4d089664-30a7-4fe7-a3e1-a72a85eed659",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C88",
+      "claim": "Recoding the central glutamic acid residue of the DEAD motif to lysine abolishes RhlB ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used DBRH mutants in which the central glutamic acid residue has been recoded to yield lysine, a change known to abolish RhlB ATPase activity, which is required for helicase activity (Vanzo et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vanzo et al. 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "70e9063b-108f-4450-9e4e-b37b01838a2f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C89",
+      "claim": "The F20L mutation in CspA only weakly affects protein stability but strongly reduces nucleic acid binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The F20L mutation was found to only weakly affect protein stability but strongly reduce nucleic acid binding (Hilier et al., 1998) and was therefore chosen for our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hilier et al. 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "aef308fd-d3d2-4212-91ed-04d5cf8aad98",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C90",
+      "claim": "Overexpression of select RNA chaperones improves fitness of two independently evolved Escherichia coli mutator strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Using competition assays, we demonstrate that overexpression of select RNA chaperones, including three DEAD box RNA helicases (DBRHs) (CsdA, SrmB, RhlB) and the cold shock protein CspA, improves fitness of two independently evolved Escherichia coli mutator strains that have accumulated deleterious mutations during short- and long-term laboratory evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from competition assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "0fbd74a4-f7e8-4b7c-b728-8cd30ac2666a",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C91",
+      "claim": "The two independently evolved mutator strains have accumulated deleterious mutations during short- and long-term laboratory evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "improves fitness of two independently evolved Escherichia coli mutator strains that have accumulated deleterious mutations during short- and long-term laboratory evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome sequencing data and fitness measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "3dd4007e-565d-4e0a-a190-ac5f8e031bbb",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C92",
+      "claim": "RNA chaperones might play a fundamental role in RNA evolution and evolvability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that RNA chaperones might play a fundamental role in RNA evolution and evolvability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion based on the experimental findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8b391fb8-9156-4ca2-ba8e-13bf810b05d8",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C93",
+      "claim": "The malK-lamB-malM operon contains a repetitive extragenic palindromic (REP) element downstream of lamB.",
+      "claim_type": "EXPLICIT",
+      "source": "The malK-lamB-malM operon contains a repetitive extragenic palindromic (REP) element downstream of lamB, which prevents premature degradation of the lamB cistron following cleavage from malM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about the malK-lamB-malM operon structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "22a66557-3e51-4f6f-ae9b-0e327b7485d1",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C94",
+      "claim": "The REP element downstream of lamB prevents premature degradation of the lamB cistron following cleavage from malM.",
+      "claim_type": "EXPLICIT",
+      "source": "The malK-lamB-malM operon contains a repetitive extragenic palindromic (REP) element downstream of lamB, which prevents premature degradation of the lamB cistron following cleavage from malM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about REP element function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "67931e34-1a82-4c79-8c49-5760380d968b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C95",
+      "claim": "Resolution of the REP element as part of regulated degradation requires RhlB.",
+      "claim_type": "EXPLICIT",
+      "source": "Resolution of this REP element as part of regulated degradation was previously shown to require RhlB (Khemici and Carpousis, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khemici and Carpousis 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "476a5315-860b-4c08-9799-f83be0bb71cc",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C96",
+      "claim": "The lamB mutation leads to decreased positional entropy at the local level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparison of predicted minimum free energy structures between wild type and mutant malK-lamB-malM transcripts suggested structural changes that do not interfere with REP element formation but rather lead to decreased positional entropy at the local level, as highlighted here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational predictions of RNA secondary structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "be60d006-fe06-442f-9320-95a4cd92f6dc",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "claim_id": "C97",
+      "claim": "The lamB mutation does not interfere with REP element formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparison of predicted minimum free energy structures between wild type and mutant malK-lamB-malM transcripts suggested structural changes that do not interfere with REP element formation but rather lead to decreased positional entropy at the local level, as highlighted here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational predictions of RNA secondary structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b20ae423-f2f0-462e-86df-2c593f2fab71",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The 40k strain exhibits reduced fitness relative to the REL606 ancestor in LB medium, while the 20k strain does not. This fitness reduction in the 40k strain is not attributable to the mutS mutation (present in both strains), indicating that deleterious mutations emerged between 20,000 and 40,000 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are well-supported by experimental fitness competition data (Figure 1B) and logical inference. The observation that the mutS mutation is present in both 20k and 40k strains but only 40k shows reduced fitness provides strong evidence that additional deleterious mutations accumulated after 20,000 generations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Overexpression of three DEAD box RNA helicases (CsdA, RhlB, SrmB) enhances fitness of the mutationally compromised 40k genotype but has limited effects in ancestral and 20k backgrounds. This buffering effect requires helicase activity, as catalytically inactive mutants abolish fitness gains, implicating RNA remodelling as essential for buffering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 are strongly supported by experimental data (Figure 1C) showing fitness gains in 40k but not ancestral/20k backgrounds, and by the critical control experiment demonstrating that catalytically inactive helicases lose buffering capacity. This establishes both specificity and mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "fa0231b7-a858-4dfd-a8d7-f6819e3bf438",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An independently evolved \u0394mutH strain exhibits reduced fitness compared to its MG1655 ancestor and experiences fitness gains upon DBRH overexpression. Control experiments confirm that fitness effects are not directly related to the mutH deletion itself, as a de novo \u0394mutH strain shows no fitness reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are well-supported by experimental data (Figures 2A, 2B). The critical control using de novo \u0394mutH demonstrates that the mutH deletion itself does not cause fitness loss, strengthening the conclusion that accumulated mutations during evolution are responsible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "04f86a85-265e-47d7-990c-7e44f541260c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The evolved \u0394mutH strain has significantly fewer mutations than the 40k strain, and importantly, no identical point mutations or indels exist between the two evolved strains. This suggests buffering of independent mutations and is consistent with a general rather than gene-specific buffering mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by genome sequencing data (Table 1). However, C37 is speculative inference, and C38 relies on citation. While the absence of shared mutations is suggestive of general buffering, this conclusion would benefit from additional experimental validation of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genome sequencing reveals the mutational burden in evolved strains: the 20k strain has 755 total SNPs and 129 small indels; the 40k strain has 1291 total SNPs and 183 small indels; the evolved \u0394mutH strain has only 12 total SNPs and 2 small indels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47 are directly supported by genome sequencing data presented in Table 1. These are straightforward descriptive results from sequencing analysis with appropriate methodology described in Materials and Methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "164a8b32-762a-4243-81e8-a0963de3154b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neither evolved strain harbored mutations in known structural RNAs. Systematic introduction of individual mutations from the evolved \u0394mutH strain (carrying only 12 point mutations) into the ancestral background identified a mutation in lamB that exhibits both reduced fitness and evidence for buffering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by genome sequencing data and experimental fitness competitions (Figure 3A). The systematic approach of testing individual mutations is methodologically sound, and the identification of lamB as a buffered mutation is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The lamB gene encodes a general glycoporin that becomes derepressed under glucose-limiting conditions. Growth phase-related fitness patterns in the lamB mutant mirror those of the evolved \u0394mutH strain, consistent with lamB being a dominant driver of fitness loss in this strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by citations to prior work. Claims C56-C57 are supported by experimental data (Figure 2\u2014figure supplement 1) showing parallel fitness patterns. The inference that lamB is a dominant driver is reasonable given the mirrored patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "a53a0a4e-3ce5-4bd6-b688-3724b9768de7",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A synonymous mutation in the ribosomal protein gene rplS (rplSsyn) is deleterious and buffered by DBRH overexpression. Growth phase-specific buffering patterns in rplSsyn differ from those in the 40k strain, consistent with the presence of multiple fitness-relevant mutations in the 40k strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by experimental data (Figure 3A). Claims C60-C61 are supported by comparison of fitness patterns across figures. The inference about multiple mutations in 40k is reasonable given the large number of mutations identified by sequencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "7257f4d2-411f-4837-a513-acd3abaceab3",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RNA chaperones buffer individual deleterious mutations at the organismal level. Helicase activity is required for buffering by DBRHs, and nucleic acid-binding activity is required for buffering by CspA. Mutations in lamB and rplS are amenable to buffering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C77-C80 synthesize the major findings and are well-supported by the experimental data showing buffering of specific mutations (lamB, rplSsyn) and the requirement for catalytic activity. These represent the core conclusions of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "33664928-0391-4829-978c-20f913f1de02",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Overexpression of the cold shock protein CspA is associated with fitness gains in both low-fitness genotypes but not in ancestral strains. A mutant version of CspA with severely reduced nucleic acid-binding activity does not confer fitness benefits upon overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by experimental data (Figure 4). The control experiment with the F20L mutant CspA demonstrates that nucleic acid-binding activity is essential for buffering, paralleling the helicase activity requirement for DBRHs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "b63dd487-f44f-45b2-9c8a-30f6467d8cfc",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CspA levels are relatively low compared with overexpressed DBRHs (approximately fourfold reduced compared to CsdA and twofold reduced compared to RhlB/SrmB), likely because CspA is subject to negative autoregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by Western blot data (Figure 5). Claim C69 is supported by citation. The observation that buffering occurs despite lower CspA levels is interesting and suggests high efficiency of this chaperone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "fae56959-c60f-42c8-97af-ad471f652631",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CspA prevents the formation of unwanted secondary structure by binding with low specificity to single-stranded RNA, thereby narrowing the RNA folding landscape\u2014a mechanism reminiscent of the protein chaperone DnaK (Hsp70). This demonstrates that buffering can be mediated by RNA chaperones with mechanistically distinct modes of action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by citations to prior work establishing CspA and DnaK mechanisms. Claim C74 is a reasonable inference from the experimental demonstration that both DBRHs (helicase-based) and CspA (binding-based) can buffer mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "2da2b2b8-02cc-4802-bb16-d8aba1b76841",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cold shock proteins and DBRHs have been suggested to work together, with helicases opening double-stranded structures and cold shock proteins binding to single-stranded products. Overexpression of different RNA chaperones might therefore benefit identical RNA target species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is supported by citation, but C76 is speculative. While the hypothesis is plausible given the complementary mechanisms, the current study does not directly test whether different chaperones buffer the same target RNAs. This would require additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "126f7649-8438-469f-a84d-588e7a8f324c",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Computational predictions suggest that the rplSsyn mutation has comparatively severe effects on RNA secondary structure (measured by correlation of base pairing probabilities), and the lamB mutation is predicted to have the most severe repercussions for local RNA structure (measured by maximum local base pair distance) among all mutations in the evolved \u0394mutH strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C82 are supported by computational predictions (Supplementary files 2, 3; Figure 3B). However, the authors themselves note that these correlates should be interpreted with caution and do not conclusively implicate RNA structure as the vehicle for fitness loss. The predictive value of these metrics for buffering is unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "34a2d21d-88ac-42c5-b1e7-ea2e7ee339e7",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Overexpression of select RNA chaperones (three DBRHs and CspA) improves fitness of two independently evolved E. coli mutator strains that accumulated deleterious mutations during laboratory evolution. These results suggest that RNA chaperones might play a fundamental role in RNA evolution and evolvability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are well-supported by the comprehensive experimental data from competition assays and genome sequencing. Claim C92 is a speculative conclusion but is reasonable given the demonstrated buffering capacity. The broader evolutionary implications would benefit from additional investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "27a0b6ef-6304-41d6-8d3a-93f5be835ebc",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The malK-lamB-malM operon contains a REP element downstream of lamB that prevents premature degradation and requires RhlB for resolution. Computational analysis suggests the lamB mutation leads to decreased positional entropy at the local level without interfering with REP element formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C95 are supported by citations and established knowledge. Claims C96-C97 are based on computational predictions of RNA secondary structure. While suggestive, the authors acknowledge in the Discussion that the mechanism of buffering remains unresolved and these structural predictions require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work has established that protein chaperones can buffer mutations affecting protein stability and folding, as evidenced by multiple experimental systems including Hsp90 inhibition, GroEL overexpression, and studies in various organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 accurately summarize prior work on protein chaperone buffering, supported by appropriate citations. These claims establish the conceptual framework and motivation for investigating whether RNA chaperones play a similar role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "35af717a-39c7-4bd1-889f-1e52e1890a4d",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "RNA misfolding is common and produces long-lived alternate structures requiring RNA-binding proteins for resolution. RNA chaperones, including DEAD box RNA helicases, can promote proper folding and alleviate folding errors by unwinding RNA helices, potentially counteracting mutations that increase RNA stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 are supported by citations to prior work establishing RNA misfolding and chaperone mechanisms. Claim C13 is speculative but represents a reasonable hypothesis that motivates the experimental work. This background appropriately frames the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ff3ab255-5490-47d9-a7d7-b5f60b503a2f",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Many DBRHs, including RhlB (a component of the E. coli degradosome) and eIF4A, are involved in folding and unfolding diverse RNAs and might therefore act as broad-spectrum mutation buffers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by citation. Claim C15 is based on established knowledge. Claim C16 is a speculative hypothesis that motivates the study. This represents appropriate framing of the research question based on prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    },
+    {
+      "id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8",
+      "content_id": "291a85de-c911-435f-94a4-ed6b228e75e5",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background information on protein chaperone mechanisms, synonymous mutations in ribosomal protein genes, and the effects of DEAD domain mutations on helicase activity provides context for the experimental design and interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 are supported by appropriate citations to prior work. These claims provide necessary background for understanding the experimental approach (e.g., choice of mutations to test, design of catalytically inactive controls) and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:30:31.187664Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8fc9e005-6ca2-4f07-8015-0811e1fe5c88",
+      "result_id": "b20ae423-f2f0-462e-86df-2c593f2fab71"
+    },
+    {
+      "claim_id": "4d795ff4-6660-42a0-9023-8f8901da5899",
+      "result_id": "b20ae423-f2f0-462e-86df-2c593f2fab71"
+    },
+    {
+      "claim_id": "96d20485-89f5-4509-bb6e-f196a232785b",
+      "result_id": "b20ae423-f2f0-462e-86df-2c593f2fab71"
+    },
+    {
+      "claim_id": "cdfa59ee-9d51-4c68-aff4-9f018178c15a",
+      "result_id": "b20ae423-f2f0-462e-86df-2c593f2fab71"
+    },
+    {
+      "claim_id": "3a78fc72-60c4-4e4c-8d69-bfdf482eeba4",
+      "result_id": "b20ae423-f2f0-462e-86df-2c593f2fab71"
+    },
+    {
+      "claim_id": "f55fc141-b57d-4e0c-b8ce-ccc875f6bebc",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "a9549a8a-e4f3-4415-973d-5ef370e2aca9",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "c0055a3a-1484-44f1-bde4-b13c989b4f75",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "1b96ee72-5f12-409a-b0cf-db2b2697aa4d",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "ed773dfd-4585-4b90-b1ef-f2eece0ff0c9",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "849f62f8-b485-4ca7-ace2-127be7418f8c",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "7c2f3c95-28e4-4388-8d6c-e3b3a454e3f8",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "1f1174b2-03ba-454e-9fac-1d768019d184",
+      "result_id": "f5392754-387a-4bf5-beff-f0a0ce7b9d96"
+    },
+    {
+      "claim_id": "6f0f50f4-abcc-43e0-89a1-d1813a95c893",
+      "result_id": "fa0231b7-a858-4dfd-a8d7-f6819e3bf438"
+    },
+    {
+      "claim_id": "d8cfe8fb-9f90-4fe9-98db-e1e78cf61338",
+      "result_id": "fa0231b7-a858-4dfd-a8d7-f6819e3bf438"
+    },
+    {
+      "claim_id": "90a3941d-deee-49c8-8398-0b97208a9d72",
+      "result_id": "fa0231b7-a858-4dfd-a8d7-f6819e3bf438"
+    },
+    {
+      "claim_id": "7fc8eaa8-0dbd-44bd-a2ca-aa724597a82d",
+      "result_id": "fa0231b7-a858-4dfd-a8d7-f6819e3bf438"
+    },
+    {
+      "claim_id": "6b1efec5-daee-4b08-91e6-bdb2262cbcfa",
+      "result_id": "04f86a85-265e-47d7-990c-7e44f541260c"
+    },
+    {
+      "claim_id": "2d6c9175-9e82-4d37-ad01-64885bf61f2a",
+      "result_id": "04f86a85-265e-47d7-990c-7e44f541260c"
+    },
+    {
+      "claim_id": "23a155f5-a1e5-4451-bd08-91353e14f6ba",
+      "result_id": "04f86a85-265e-47d7-990c-7e44f541260c"
+    },
+    {
+      "claim_id": "efd6c196-7e7f-49b4-a861-31069fafc11c",
+      "result_id": "04f86a85-265e-47d7-990c-7e44f541260c"
+    },
+    {
+      "claim_id": "b92ce74c-bff5-40fb-a38f-cc35e9fc96e8",
+      "result_id": "04f86a85-265e-47d7-990c-7e44f541260c"
+    },
+    {
+      "claim_id": "39f91aab-8f24-423c-82c3-14205fa46b85",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "f6aea58e-c62d-493d-afe1-c9edea5da1b5",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "3d8eb8b3-3903-461b-907a-145c5f1660b1",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "9cd59688-2203-4a3a-8675-ebbad98d116a",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "39db4696-1fff-4889-8dc7-9266dc301b2b",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "024bb371-d898-40a8-94fa-d2a7a345a2a2",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "df28bec5-b730-4be9-b110-a1fde1ee8b38",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "b82c5802-5124-4bb4-8d43-715930f7cf49",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "8b942397-5111-4ec2-b8f9-d5b25e41f34a",
+      "result_id": "2528cfa6-aaa8-4647-9ac3-c78075b28c06"
+    },
+    {
+      "claim_id": "ac627781-bef6-4c4c-9fa3-5fc96964fd21",
+      "result_id": "164a8b32-762a-4243-81e8-a0963de3154b"
+    },
+    {
+      "claim_id": "03bcceae-2880-489f-874b-9cc61319850f",
+      "result_id": "164a8b32-762a-4243-81e8-a0963de3154b"
+    },
+    {
+      "claim_id": "6f3d689c-a999-444c-bf29-b392b624007b",
+      "result_id": "164a8b32-762a-4243-81e8-a0963de3154b"
+    },
+    {
+      "claim_id": "6182b701-e311-4b34-9bd7-aa14a1e356b6",
+      "result_id": "164a8b32-762a-4243-81e8-a0963de3154b"
+    },
+    {
+      "claim_id": "e6ac83e6-a927-4125-a0e5-5c2748edf41f",
+      "result_id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b"
+    },
+    {
+      "claim_id": "bde4eb71-1759-4e55-b8ed-2e9e38260064",
+      "result_id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b"
+    },
+    {
+      "claim_id": "d4bdb590-67d9-4dc8-9dde-674503763655",
+      "result_id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b"
+    },
+    {
+      "claim_id": "0f79423b-e254-42ab-a8d4-9a22bb2124d2",
+      "result_id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b"
+    },
+    {
+      "claim_id": "d9af0509-1b59-40a8-b94f-fc634a398bea",
+      "result_id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b"
+    },
+    {
+      "claim_id": "659ff510-e91c-4f5a-bea0-7f7f46cc20f1",
+      "result_id": "a21d4a8d-3dee-4fd7-97fe-69c8356b797b"
+    },
+    {
+      "claim_id": "d7849155-d090-4c77-a8f6-404b2e55277c",
+      "result_id": "a53a0a4e-3ce5-4bd6-b688-3724b9768de7"
+    },
+    {
+      "claim_id": "8f19b340-bf06-45b2-8715-148c93ef29cb",
+      "result_id": "a53a0a4e-3ce5-4bd6-b688-3724b9768de7"
+    },
+    {
+      "claim_id": "ab8eb7ca-5bfd-44ab-9637-2b605d398a9f",
+      "result_id": "a53a0a4e-3ce5-4bd6-b688-3724b9768de7"
+    },
+    {
+      "claim_id": "2f059e90-9899-4634-acde-e1c90bcfdcb7",
+      "result_id": "a53a0a4e-3ce5-4bd6-b688-3724b9768de7"
+    },
+    {
+      "claim_id": "fb813144-a02f-4d8c-b43a-3ed4270448ca",
+      "result_id": "7257f4d2-411f-4837-a513-acd3abaceab3"
+    },
+    {
+      "claim_id": "06899c77-4635-4ee1-a30a-b5e721cb07c6",
+      "result_id": "7257f4d2-411f-4837-a513-acd3abaceab3"
+    },
+    {
+      "claim_id": "71b41f48-a8ba-4803-b1de-f3d9fa07808b",
+      "result_id": "7257f4d2-411f-4837-a513-acd3abaceab3"
+    },
+    {
+      "claim_id": "423baadf-d58c-4b0f-a461-9a1a7e7ff04d",
+      "result_id": "7257f4d2-411f-4837-a513-acd3abaceab3"
+    },
+    {
+      "claim_id": "3276ccc9-e62d-45b0-908a-653d550f9bbb",
+      "result_id": "7257f4d2-411f-4837-a513-acd3abaceab3"
+    },
+    {
+      "claim_id": "77d16497-3f7a-4ecf-a112-956d21e34bfd",
+      "result_id": "33664928-0391-4829-978c-20f913f1de02"
+    },
+    {
+      "claim_id": "18832e7d-b9ae-4a2a-8d4b-18bb9236839a",
+      "result_id": "33664928-0391-4829-978c-20f913f1de02"
+    },
+    {
+      "claim_id": "0d07a20e-8973-4e7c-8c41-03d7d755de15",
+      "result_id": "33664928-0391-4829-978c-20f913f1de02"
+    },
+    {
+      "claim_id": "90c4fcf7-8c8d-435b-96db-9a1f0a78c0eb",
+      "result_id": "b63dd487-f44f-45b2-9c8a-30f6467d8cfc"
+    },
+    {
+      "claim_id": "dea12490-cdba-4373-999b-239edc194b60",
+      "result_id": "b63dd487-f44f-45b2-9c8a-30f6467d8cfc"
+    },
+    {
+      "claim_id": "acae8992-c135-4e62-9a60-372276992c00",
+      "result_id": "b63dd487-f44f-45b2-9c8a-30f6467d8cfc"
+    },
+    {
+      "claim_id": "264eb8e8-9a7e-4620-bc62-2ba045ccc327",
+      "result_id": "b63dd487-f44f-45b2-9c8a-30f6467d8cfc"
+    },
+    {
+      "claim_id": "f153ef7b-e3e8-494a-9efa-b43978fe7935",
+      "result_id": "fae56959-c60f-42c8-97af-ad471f652631"
+    },
+    {
+      "claim_id": "5acacd82-e56f-4cc3-86ef-bb6f9888305c",
+      "result_id": "fae56959-c60f-42c8-97af-ad471f652631"
+    },
+    {
+      "claim_id": "fac8047d-2971-4e01-b61e-0b6c3128b28c",
+      "result_id": "fae56959-c60f-42c8-97af-ad471f652631"
+    },
+    {
+      "claim_id": "9920b11f-94af-4d1e-ad4c-07762b0d4d33",
+      "result_id": "fae56959-c60f-42c8-97af-ad471f652631"
+    },
+    {
+      "claim_id": "3e449a15-13b9-4a53-a63a-fbce45b69bdc",
+      "result_id": "fae56959-c60f-42c8-97af-ad471f652631"
+    },
+    {
+      "claim_id": "87f611df-f9d9-46cc-ae81-0346f3d4a892",
+      "result_id": "2da2b2b8-02cc-4802-bb16-d8aba1b76841"
+    },
+    {
+      "claim_id": "2ee54a2b-54d9-48b9-b44e-4325fadc496e",
+      "result_id": "2da2b2b8-02cc-4802-bb16-d8aba1b76841"
+    },
+    {
+      "claim_id": "b01f98db-c3df-4ab6-b46e-6ee72c81ebde",
+      "result_id": "126f7649-8438-469f-a84d-588e7a8f324c"
+    },
+    {
+      "claim_id": "5f37d415-a7c7-4831-916f-d637480276fe",
+      "result_id": "126f7649-8438-469f-a84d-588e7a8f324c"
+    },
+    {
+      "claim_id": "aef308fd-d3d2-4212-91ed-04d5cf8aad98",
+      "result_id": "34a2d21d-88ac-42c5-b1e7-ea2e7ee339e7"
+    },
+    {
+      "claim_id": "0fbd74a4-f7e8-4b7c-b728-8cd30ac2666a",
+      "result_id": "34a2d21d-88ac-42c5-b1e7-ea2e7ee339e7"
+    },
+    {
+      "claim_id": "3dd4007e-565d-4e0a-a190-ac5f8e031bbb",
+      "result_id": "34a2d21d-88ac-42c5-b1e7-ea2e7ee339e7"
+    },
+    {
+      "claim_id": "8b391fb8-9156-4ca2-ba8e-13bf810b05d8",
+      "result_id": "27a0b6ef-6304-41d6-8d3a-93f5be835ebc"
+    },
+    {
+      "claim_id": "22a66557-3e51-4f6f-ae9b-0e327b7485d1",
+      "result_id": "27a0b6ef-6304-41d6-8d3a-93f5be835ebc"
+    },
+    {
+      "claim_id": "67931e34-1a82-4c79-8c49-5760380d968b",
+      "result_id": "27a0b6ef-6304-41d6-8d3a-93f5be835ebc"
+    },
+    {
+      "claim_id": "476a5315-860b-4c08-9799-f83be0bb71cc",
+      "result_id": "27a0b6ef-6304-41d6-8d3a-93f5be835ebc"
+    },
+    {
+      "claim_id": "be60d006-fe06-442f-9320-95a4cd92f6dc",
+      "result_id": "27a0b6ef-6304-41d6-8d3a-93f5be835ebc"
+    },
+    {
+      "claim_id": "42efcc7e-9452-49f1-a55e-72fe975919eb",
+      "result_id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302"
+    },
+    {
+      "claim_id": "f82fc219-b18b-4336-b2d1-366b6c73cfcf",
+      "result_id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302"
+    },
+    {
+      "claim_id": "ce770d48-5e0e-49c5-87fb-5d68e2f7e8f7",
+      "result_id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302"
+    },
+    {
+      "claim_id": "972c135f-d95f-406f-8f72-5edc5c5a52b8",
+      "result_id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302"
+    },
+    {
+      "claim_id": "8478e7a2-0dd5-46fa-addd-a2d50c6d7b56",
+      "result_id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302"
+    },
+    {
+      "claim_id": "aa9bbd4d-ddaa-44be-a8ac-00af0a338aa5",
+      "result_id": "8ac5adc5-ff67-45c9-9275-e6c0ac247302"
+    },
+    {
+      "claim_id": "b40f5bb1-ca97-41e9-b59a-b7a84e62b7d8",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "69e114c9-bbb0-4375-9e16-2b53c54b05ea",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "166950da-81e6-412a-91d0-019ad3ca5394",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "4f5f1521-8273-48d2-b2af-19756f1a473f",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "ed0d2a83-915b-4283-a9f0-e26ab9cb8dd4",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "081afff0-0904-494a-82fb-56ba5c8c7aa1",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "fcb65de4-2191-46bd-9d92-a2b1cf40f1a2",
+      "result_id": "35af717a-39c7-4bd1-889f-1e52e1890a4d"
+    },
+    {
+      "claim_id": "300f2ff5-e73f-417a-98f8-44f09d30e80f",
+      "result_id": "ff3ab255-5490-47d9-a7d7-b5f60b503a2f"
+    },
+    {
+      "claim_id": "199f1b06-f3f0-4f23-8a2c-ccba9a59e44a",
+      "result_id": "ff3ab255-5490-47d9-a7d7-b5f60b503a2f"
+    },
+    {
+      "claim_id": "a88fe591-b244-460b-9191-30babd80e54a",
+      "result_id": "ff3ab255-5490-47d9-a7d7-b5f60b503a2f"
+    },
+    {
+      "claim_id": "8e14d1c9-53b0-46f6-b50e-bc1f45608291",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    },
+    {
+      "claim_id": "2595a3a6-6121-419f-abb5-2587a5162fec",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    },
+    {
+      "claim_id": "028db7da-8576-4a84-965f-25b4566525f6",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    },
+    {
+      "claim_id": "e9515f85-9f86-4a35-a04f-d4d96afd03ba",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    },
+    {
+      "claim_id": "ae188495-3426-4e19-be80-e0e9b7cf1cc9",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    },
+    {
+      "claim_id": "4d089664-30a7-4fe7-a3e1-a72a85eed659",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    },
+    {
+      "claim_id": "70e9063b-108f-4450-9e4e-b37b01838a2f",
+      "result_id": "ef2e1adf-39ec-49ee-a76b-a104b14aa9a8"
+    }
+  ],
+  "comparisons": []
+}

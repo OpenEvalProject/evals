@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed a biophysically-inspired computational model of coupled theta-gamma oscillations in auditory cortex. The model consists of theta-generating (PINTH) and gamma-generating (PING) modules with interconnected excitatory and inhibitory neurons, inspired by cortical architecture and previous biophysical models. The model produces activity in theta (6-8 Hz) and gamma (25-45 Hz) ranges with sparse, weakly synchronous firing patterns consistent with cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 collectively describe the model architecture and its basic properties. The model design is well-grounded in prior work (multiple citations) and produces physiologically plausible activity patterns. The model parameters are detailed in the methods section, and the basic oscillatory behavior matches empirical observations from human auditory cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The model exhibits theta phase-locking to speech envelope without power increase, and gamma oscillations follow sentence onsets. Theta-gamma phase-amplitude coupling is present and depends critically on the feedforward connection from theta to gamma modules\u2014removing this connection eliminates the coupling, demonstrating that common input alone is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 describe the model's dynamic response to speech and cross-frequency coupling properties. These results are supported by simulation data shown in figures, match experimental observations (with citations), and include appropriate control simulations that demonstrate the necessity of the theta-gamma connection. The control experiments strengthen the causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The theta network accurately detects syllable boundaries in continuous speech. Theta bursts align closely with syllable boundaries (within 50 ms of syllable onset), and the model outperforms both a linear-nonlinear predictor and the Mermelstein algorithm. The model maintains above-chance performance even with 2-3x speech compression and adapts to different speech rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 demonstrate syllable boundary detection performance. The results are supported by quantitative comparisons with benchmark algorithms using statistical tests (p < 10^-12), acoustic analysis of the TIMIT corpus, and compression experiments. The model's performance is evaluated on a separate test set from the training data, which is appropriate methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The intact model achieves 58% accuracy in decoding syllables from continuous speech using spike patterns (vs. 10% chance), which drops significantly when using spike counts alone. Both control models (undriven theta and uncoupled theta-gamma) show poor decoding performance. Cross-speaker decoding reaches 24% accuracy, with peak performance for syllables of 100-300 ms duration. Performance degrades but remains above chance with 2-3x speech compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 present syllable decoding results with appropriate statistical support (p-values < 10^-12 for key comparisons). The use of control models strengthens causal claims about the importance of theta-gamma coupling. Cross-speaker generalization and compression resilience tests are appropriate for assessing model robustness. However, the 24% cross-speaker accuracy (vs. 10% chance) is modest, suggesting limited generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "For stimulus classification, phase-partitioned coding (using theta phase) performs nearly as well as time-partitioned coding (using stimulus timing) for windows of 80-240 ms, while spike count coding performs considerably worse. The model results match experimental data both qualitatively and quantitatively. Removing either the input-to-theta or theta-to-gamma connection eliminates this advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe classifier analysis results comparing different neural codes. The results are supported by statistical tests (p < 10^-12), comparison with experimental data from Kayser et al. 2012, and appropriate control simulations. The match between model and experimental data strengthens the model's validity, though the analysis methods are adapted from prior work rather than novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Mutual information analysis shows that spike phase provides additional (non-redundant) information beyond spike count or time-partitioned codes. The information gain from phase increases with window size and when combined with either spike count or spike timing. These results replicate experimental data from monkey auditory cortex and are not reproduced by control models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present mutual information results with statistical support (p < 10^-12) and comparison to experimental data (Kayser et al. 2009). The use of bias correction methods (shuffling, quadratic extrapolation, bootstrapping) is appropriate for MI estimation. The failure of control models to reproduce the pattern strengthens the claim that theta-gamma coupling is necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The theta-gamma connection enhances both the reliability and temporal precision of the spike phase code in gamma neurons. The full network architecture boosts encoding capacity in ways that closely match actual neurons from primate auditory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 synthesize conclusions from the encoding analyses (C64-C73). These inferences are well-supported by the preceding results showing improved decoding performance and information content when theta-gamma coupling is intact, and by quantitative/qualitative matches with experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model demonstrates that theta oscillations can predict syllable boundaries online as accurately as offline algorithms, providing an endogenous time reference. Gamma networks can use this theta reference to encode phonemic information. The central finding is that gamma networks efficiently encode temporal patterns only when entrained by theta rhythm driven by syllable boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 present the main conclusions synthesized from the syllable detection (C50-C56) and decoding results (C57-C76). These conclusions are well-supported by the data, though they represent inferences about mechanism rather than direct observations. The control experiments strengthen the causal claims about theta-gamma coupling necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model exhibits sophisticated spectral and encoding properties matching neurophysiological evidence, including theta-gamma phase-amplitude coupling at spike and LFP levels. The model produces denser gamma spiking immediately after theta bursts at syllable onset, validating that more encoding occurs during early syllable phases when more information needs extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 describe model validation against experimental observations. The results are supported by comparisons to multiple experimental studies (with citations) and show both qualitative and quantitative matches. The phase-amplitude coupling and temporal dynamics align with known cortical properties, strengthening the model's biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model shows resilience to speech compression: theta bursts signal syllable boundaries at 2x compression (degrading at higher rates), and syllable decoding remains twice chance level even for compressed speech, mimicking human performance limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 address model robustness to speech rate variation. The results are supported by compression experiments and comparison to human behavioral data (C86 citation). However, the model is purely bottom-up and lacks top-down linguistic processes that likely contribute to human compression resilience, which the authors acknowledge as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The main findings are that theta oscillations flexibly track syllabic rhythm and organize gamma neuron responses into a code enabling syllable identification. Both theta tracking of speech fluctuations and theta-gamma coupling are critical for accurate speech encoding. Cortical oscillations can be a key instrument of speech de-multiplexing, parsing, and encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 state the primary findings from the abstract. These are well-supported by the detailed results in C41-C88, including syllable boundary detection (C50-C56), decoding performance (C57-C63), and control experiments demonstrating necessity of theta-gamma coupling (C48-C49, C59, C68, C73). The conclusions are appropriately qualified as demonstrating what oscillations 'can' do rather than claiming this is the only mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors compare their model to prior work (G\u00fctig & Sompolinsky 2009, Hopfield 2004) and argue their approach has advantages: it achieves accurate encoding without requiring explicit memory processes or extremely precise single-spike timing, instead using theta phase to enable permanent integration over long speech segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C94 present comparisons to prior models and claims about advantages. While the descriptions of prior work appear accurate (C90, C92 with citations), the critiques (C91) and claimed advantages (C93-C94) are somewhat subjective. The model does show good performance, but whether the mechanism is truly more biologically plausible than alternatives requires more direct experimental validation than provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Theta oscillations act as both a syllable-scale integration buffer and precise neural timer. The theta oscillator flexibly entrains to syllabic contours (3-7 Hz) and signals boundaries. Theta neurons parallel experimental observations of onset-responsive neurons in A1, providing an endogenous time reference. They discharge at regular landmarks (syllable boundaries) and tie together gamma activity into linguistically relevant chunks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 characterize the functional role of theta in the model. These are supported by model results (C52-C56, C96) and comparisons to experimental data (C97 with citations). The functional interpretations (C98, C100) are reasonable inferences from the model behavior, though they represent mechanistic hypotheses rather than proven facts about biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors acknowledge model limitations: it is purely bottom-up and lacks top-down predictions that play significant roles in speech perception. However, theta activity in the model has intrinsic temporal predictive properties (driven by modulations but resilient to variations), and performs above chance in cross-speaker decoding, showing flexibility in 3-9 Hz range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 discuss model limitations and partial solutions. The limitation acknowledgment (C105-C106) is appropriate and supported by citations. The claims about theta's predictive function (C109) and cross-speaker performance (C110) are supported by model results (C60-C62). This represents honest assessment of model scope and capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The model provides direct evidence that theta-gamma coupled oscillations can viably de-multiplex speech and analyze complex sensory scenes at multiple timescales. By tying gamma spiking to syllable boundaries, theta enables decoding individual syllables in continuous streams. The model demonstrates computational value of neural oscillations for parsing based on temporal properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 present the main conclusions. These are well-supported by the comprehensive modeling results (C41-C88) showing syllable detection, decoding performance, and necessity of theta-gamma coupling. However, 'direct evidence' (C111) is somewhat strong\u2014this is computational modeling evidence, not direct experimental manipulation of oscillations in biological systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes background on speech structure, the need for de-multiplexing and parsing, and the theoretical proposal that cortical oscillations in distinct frequency ranges could handle these processes. Prior work proposed but never causally demonstrated that theta-gamma coupling could enable hierarchical combination of syllabic and phonemic computations. Previous models addressed only isolated aspects (gamma only, or no oscillations, or no sensory parsing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide background and motivation from prior work. These are appropriately supported by numerous citations to established literature. The characterization of the gap in prior work (C3, C26-C28) provides clear motivation for the current study. These are primarily literature review claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors speculate about evolutionary implications: the theta rhythm might have been incorporated as a speech-parsing tool during language evolution, and syllable length may have optimized to match auditory cortex parsing capacity, providing ideal temporal format for interfacing with hippocampal memory or motor routines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 are explicitly speculative evolutionary hypotheses. While the analogy to hippocampal theta (C101) has some support, the evolutionary claims (C102-C104) are not testable with the current model and lack direct evidence. These represent interesting hypotheses for future work but should not be considered supported results.",
+    "result_type": "MINOR"
+  }
+]

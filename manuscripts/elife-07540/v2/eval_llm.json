@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Circular RNAs are pervasively expressed across eukaryotes, can exceed cognate mRNA levels, but their function remains largely unknown despite being recognized for decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11-C13 establish the context of circular RNA biology based on well-cited literature. These background claims accurately represent the state of the field and are supported by appropriate citations to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C14",
+      "C42",
+      "C43",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Current models propose that circular RNA biogenesis involves backsplicing facilitated by inverted repeats in mammals, but these models are insufficient for lower eukaryotes that lack such repetitive sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C14, C42-C43, and C58-C61 accurately summarize prior work on circular RNA biogenesis mechanisms. The claims are well-supported by citations and correctly identify the gap in understanding for organisms lacking inverted repeats, which motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Circular RNA in S. pombe is generated through an exon-containing lariat precursor, as demonstrated by detection of lariat intermediates and the double lariat byproduct in dbr1\u0394 yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C15-C17, C19-C23 present the core biochemical evidence for the lariat precursor model. The detection of exon-containing lariats (C16), the branched byproduct after RNase R treatment (C21-C23), and quantification of isoforms (C19-C20) provide strong converging evidence. The computational prediction showing lack of flanking base pairing (C15) supports the need for an alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C44",
+      "C66",
+      "C67"
+    ],
+    "result": "Systematic splice site mutagenesis demonstrates that lariat production is necessary for efficient circular RNA biogenesis, with the downstream branch point being essential and the upstream 5' splice site being important despite cryptic splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32, C44, C66-C67 describe comprehensive mutagenesis experiments showing that specific splice sites are required for circularization. The plasmid system recapitulates endogenous splicing patterns (C24-C25), and deletion experiments demonstrate necessity of branch points and splice sites (C26-C29). The pub1 validation (C30-C31) extends findings beyond mrps16. However, cryptic splicing complicates some interpretations (C29, C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C48",
+      "C69"
+    ],
+    "result": "Exon skipping is not sufficient for detectable circular RNA production, as demonstrated by testing 14 genes with stable exon-skipping events that produce lariat precursors but no circular RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C48, C69 demonstrate that lariat precursor formation alone is insufficient for circularization. The systematic testing of known exon-skipping genes (C69) with negative results for circular RNA (C33) provides strong evidence. The observation that uncircularized exons are smaller (C48) suggests additional regulatory factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Exon length has a systematic effect on circular RNA biogenesis, with a 90 nt deletion causing >80-fold reduction in circularization efficiency, and comprehensive mutagenesis revealing a strong relationship between exon size and circularization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C70-C73 establish exon length as a key determinant of circularization. The statistical comparison (C35), targeted deletion experiment (C37-C38, C70), and controls ruling out technical artifacts (C71) and alternative explanations (C72-C73) provide robust evidence. The high-throughput mutagenesis (C39) confirms the systematic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "No primary sequence motif required for circularization was identified, but deletions affecting predicted secondary structure at the 3' end of the exon showed enhanced circularization, suggesting RNA structure may influence the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41, C77-C79 describe analysis of deletion library outliers. While the data show that specific deletions affecting predicted hairpin structures enhance circularization (C77-C78), the inability to predict circularization efficiency computationally (C79) and lack of identified sequence motifs (C40) limit the strength of conclusions about structure's role. The mechanism remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The qRNA-seq library was validated to predominantly contain circular RNA species, with linear RNA depleted ~40-fold and lariat precursor depleted ~300,000-fold after RNase R treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 describe critical quality control experiments for the high-throughput mutagenesis approach. The qPCR validation showing depletion of contaminating species (C74-C75) and consistency between primer pairs (C76) demonstrates the technical soundness of the sequencing approach used to measure circularization efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The discovered mechanism for circular RNA biogenesis through exon-containing lariat precursors may account for circularization in genes lacking flanking intronic secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 represent the main conclusions of the study. C9 is directly supported by the comprehensive mutagenesis data. C10 is a reasonable inference given that the mechanism operates in S. pombe genes lacking inverted repeats, though broader applicability requires further validation in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors speculate that lariat production may not be strictly necessary but serves to position splice sites and prevent competing splicing, and that different mechanisms may operate in organisms with different intronic architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C46, C52-C56 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are reasonable given the data, they lack direct experimental support. The speculation about evolutionary origins (C56) and mechanistic details (C46, C55) represents discussion rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Published RNA-seq data shows a ~3-4 fold global increase in circular RNA in dbr1\u0394 S. pombe compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 cites published work but the authors note in the manuscript that analysis of mrps16 specifically showed high variation and failed to reach statistical significance due to low read counts. This undermines confidence in the global trend for individual genes, though the cited study may have sufficient power for genome-wide analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Circular RNAs have been identified in S. cerevisiae genes that produce exon-skipped isoforms, and substitution of the SUS1 gene with linear cDNA causes phenotypic defects, suggesting potential functional roles for circular RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 cite prior work to suggest the lariat mechanism may extend to other yeasts and that circular RNAs may be functional. However, the connection between the SUS1 phenotype and circular RNA (rather than alternative splicing) is speculative and not directly tested. This represents suggestive but not conclusive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "The authors selected mrps16 as a model system because it is the most highly expressed circular RNA in S. pombe, and note that prior studies have observed correlations between exon skipping and circular RNA but without biochemical evidence or global relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C62-C65, C68 provide methodological justification and literature context. These claims accurately represent prior work and explain the rationale for the experimental system. The citations are appropriate and the characterization of the literature gap (C65) is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Exon-skipped transcripts for mrps16 can compose up to 5% of all detected mrps16 transcripts in S. pombe mutants deficient in Dis3, representing a >30-fold increase over wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 cites published RNA-seq data to explain why exon-skipped transcripts are not detected in wild-type cells despite producing lariat precursors. This provides important context for understanding the experimental system and is appropriately supported by citation.",
+    "result_type": "MINOR"
+  }
+]

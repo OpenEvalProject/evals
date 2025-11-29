@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The original manuscript used an incorrect value for Avogadro's number (6.022 \u00d7 10^22 instead of 6.022 \u00d7 10^23) in calculating enzymatic rates. This error affected all plots in the original paper, and the corrected calculations show Vmax values approximately an order of magnitude lower than previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 clearly document a computational error in the original work. The error is straightforward (wrong exponent in Avogadro's number), and the magnitude of the correction (order of magnitude decrease in Vmax) is mathematically consistent with a 10-fold error in the constant. This is a transparent correction of a calculation error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Correcting Avogadro's number shifts the optimal carboxysome permeability from kc = 6 \u00d7 10^-3 cm/s to kc = 10^-3 cm/s (a 6-fold decrease), makes the optimal permeability peak lower and broader, and causes carbonic anhydrase to saturate at lower HCO3\u2212 transport values. For high permeabilities (kc > 0.1 cm/s), CO2 concentration is an order of magnitude lower after correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C40-C42 describe consistent effects of the correction on optimal carboxysome permeability. The 6-fold shift in optimal permeability and order-of-magnitude changes in CO2 concentration at high permeabilities are mathematically consistent with the 10-fold correction in Avogadro's number. The phase space analysis in Figure 2 provides visual support for these quantitative changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C38"
+    ],
+    "result": "After correction, decreasing the diffusion constant in the carboxysome has much less effect on the phase space plot, particularly at optimal or larger carboxysome permeability (kc \u2265 10^-3 cm/s), where the effect is very little.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C38 consistently describe reduced sensitivity to diffusion changes after the correction. Figure 2\u2014figure supplement 1 provides visual evidence comparing different diffusion constants. The finding that diffusion effects are minimal at optimal permeability is logically consistent with the corrected enzymatic rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The correction reduces the effect of facilitated CO2 uptake, with nearly no effect at the optimal permeability (kc = 10^-3 cm/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 describe reduced facilitated uptake effects after correction. Figure 2\u2014figure supplement 2 shows the comparison between conditions with and without facilitated uptake (\u03b1 = 0 vs \u03b1 = 1 cm/s), supporting the claim that differences are minimal at optimal permeability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37"
+    ],
+    "result": "Figure 3 plotted at the new optimal permeability shows very little change from the previous version, and the correction does not affect the conclusion that carbonic anhydrase organization within the carboxysome has no effect on resulting concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C37 indicate that certain conclusions remain unchanged despite the correction. The statement that Figure 3 shows little change when plotted at the new optimal permeability is reasonable, as the system is still at its optimum. Figure 3\u2014figure supplement 1 supports the claim about carbonic anhydrase organization having no effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The correction does not affect the fundamental conclusion that an optimal carboxysome permeability exists or what causes it, but changes its absolute value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 appropriately distinguishes between qualitative conclusions (existence of optimal permeability) and quantitative values (the specific optimal value). This is consistent with the correction affecting rate constants but not the underlying physical principles governing the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "For Table 3, parameters were updated to reflect optimal conditions: flux changed from jc = 0.7 cm/s to jc = 0.6 cm/s and permeability from kc = 6 \u00d7 10^-3 cm/s to kc = 10^-3 cm/s, maintaining cytosolic HCO3\u2212 at 30 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 document parameter updates for consistency with the corrected optimal permeability. The changes are modest and maintain the target cytosolic HCO3\u2212 concentration, which is appropriate for comparing corrected results under equivalent physiological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C91"
+    ],
+    "result": "The conversion from picomoles/s to molecules/s used the incorrect Avogadro's number, resulting in a corrected flux of 2 \u00d7 10^8 molecules/s and a transporter density requirement of ~10^4 transporters/\u03bcm^2, which is about an order of magnitude larger than ATP synthase complexes on spinach thylakoid membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C91 describe the propagation of the Avogadro's number error to flux calculations. The order-of-magnitude increase in calculated transporter density (from 10^3 to 10^4 per \u03bcm^2) is mathematically consistent with the 10-fold correction. The comparison to ATP synthase provides biological context for evaluating the plausibility of the corrected value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Correcting Avogadro's number lowers the calculated rates of carboxylation and oxygenation, resulting in only ~0.03% of concentrated inorganic carbon being fixed into 3-phosphoglycerate and many fewer 2-phosphoglycolate molecules produced than previously estimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C72 describe reduced fixation rates after correction. The very low percentage of carbon fixation (0.03%) compared to leakage (>99.9%) is concerning and suggests either the model has limitations or cyanobacteria operate under extreme energetic constraints. However, the calculations appear internally consistent with the corrected enzymatic rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C93",
+      "C94"
+    ],
+    "result": "Recalculated cell replication times are 7-21 hr for higher flux (Table 3) and 11-35 hr for lower flux (Table 4), both consistent with cyanobacteria division times, though the higher flux rate provides a better match.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 and C93-C94 present recalculated replication times that are now more biologically plausible than the original 1-2 hr estimate. The ranges overlap with known cyanobacteria division times, providing validation for the corrected model. The preference for the higher flux rate is appropriately stated as a better match rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C95"
+    ],
+    "result": "After correction, CO2 scavenging is negligible compared to HCO3\u2212 uptake and CO2 uptake for all permeabilities shown, only contributing more than CO2 uptake when CO2 is a very small percentage of external carbon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 and C95 consistently describe reduced CO2 scavenging effects after correction. Figure 5 provides visual evidence showing scavenging contributions are negligibly small across the parameter range tested. This represents a significant change from the original conclusions about scavenging importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "With corrected Avogadro's number, CO2 concentration is significantly lower in all but the optimal permeability case, making the error rate drastically higher and the effect of optimal permeability on CO2 concentration much larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe increased importance of optimal permeability after correction. Figure 6 shows error rates for different cellular organizations, supporting the claim that non-optimal configurations result in much higher oxygenation error rates. This strengthens the biological significance of achieving optimal permeability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Figure 2 uses three lines to demarcate key physiological boundaries: RuBisCO half-saturation (dark blue), 99% carboxylation efficiency at 260 \u03bcM O2 (light blue), and carbonic anhydrase saturation (red).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe the figure legend and interpretation of phase space boundaries. These are methodological descriptions that define how to read the phase space plots and are clearly supported by the figure caption and visual elements in Figure 2.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2152 @@
+{
+  "submission": {
+    "id": "db26fec0-e3b1-44b0-a17d-f47fca5da6d5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:23:40.095384Z",
+    "updated_at": "2025-11-29T04:23:40.095384Z"
+  },
+  "content": [
+    {
+      "id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "submission_id": "db26fec0-e3b1-44b0-a17d-f47fca5da6d5",
+      "content_type": "manuscript",
+      "content_text": "# On the dimensionality of odor space\n\n## Authors\n\n- Markus Meister<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThere is great interest in understanding human olfactory experience from a principled and quantitative standpoint. The comparison is often made to color vision, where a solid framework with a three-dimensional perceptual space enabled a rigorous search for the underlying neural pathways, and the technological development of lifelike color display devices. A recent, highly publicized report claims that humans can discriminate at least 1 trillion odors, which exceeds by many orders of magnitude the known capabilities of color discrimination. This claim is wrong. I show that the failure lies in the mathematical method used to infer the size of odor space from a limited experimental sample. Further analysis focuses on establishing how many dimensions the perceptual odor space has. I explore the dimensionality of physical, neural, and perceptual spaces, drawing on results from bacteria to humans, and propose some experimental approaches to better estimate the number of discriminable odors.\n\n## Introduction\n\nThe perceptual space for human color vision has three dimensions. Experimental proof of this dates to the 17th century, when it was found that every color sensation can be matched by mixing together three primary lights, but not if only two lights are available (Mollon, 2003). Therefore every color sensation can be fully characterized by three numbers, namely the intensity of the primaries that match it. We now know that color vision is based on three kinds of cone photoreceptors in the retina that differ in their sensitivity to the wavelength spectrum of light. Any pattern of excitation among cones can be matched by an appropriate mix of three primary lights, and this is the basis for RGB color display devices. Cone signals get processed by several circuits in the retina and beyond. This system ultimately has limited resolution, and in practice human subjects can distinguish about 1\u20132 million different colors (Masaoka et al., 2013). Clearly, a quantitative understanding of color perception has both energized the search for the underlying neural circuits and made possible the design of image display technologies that mimic reality.\n\nOne would like to achieve a similarly satisfying understanding of human smell. Human olfaction begins with the binding of odor molecules to olfactory receptors, of which there exist \u223c400 types (Malnic et al., 2004). It is believed that these receptor types all differ in their relative sensitivity to various odorants. Two odors can only be distinguished if they cause different patterns of activity among these types. Thus the neural space of odors at the very input to the olfactory system would seem to have 400 dimensions, many more than encountered in the color system. But what is the perceptual space for odors? The exact analog of the early color mixing experiments has not been done, but from a quantitative analysis of perceptual similarities it has been argued that the space of odors is dominated by just one or two dimensions (Secundo et al., 2014), much fewer than the 400 dimensions at the level of sensory receptors. Similarly the number of discriminable odors is thought to be only 10,000, although this estimate is largely anecdotal (Gilbert, 2008). Clearly there is a paradox that remains to be resolved pitting the perceptual space of human smell against the receptor space.\n\nOn this background, a recent article claims that \u2018Humans can discriminate one trillion odors\u2019 (Bushdid et al., 2014). If correct, this would dramatically reorient thinking in this field. Not least, such a result would dash any realistic hopes for olfactory displays that can mix any odor sensation from a small number of primaries. The result was nominated for \u2018Breakthrough of the Year 2014\u2019 and heavily promoted to the popular press. By now many people \u2018know\u2019 that humans discriminate a trillion odors, and that our color vision system pales miserably in comparison.\n\nRemarkably, these claims were based on an experimental study in which humans discriminated successfully only 148 pairs of odors. Clearly some mathematical method was needed to extrapolate from that number to trillions. Here I show that this mathematical method fails, and as a result the claims are without any basis. We will see that the data on human olfaction are equally consistent with a trillion discriminable odors and with just 10 (and anything in between). Moreover, if the same method were applied to human color vision, one would conclude that humans can distinguish at least 1027 colors, in dramatic conflict with experimental evidence. Beyond correcting the erroneous claims, the analysis of failure in the Bushdid et al. study yields useful insights about the nature of the olfactory code. I follow with some suggestions for an approach to estimate the number of distinguishable odors.\n\n## Results\n\n### How not to estimate the number of discriminable stimuli\n\nThe reader is encouraged to read the original report by Bushdid et al. (2014). The following is a brief summary of the procedures used in that study. The space of all possible odor stimuli is huge. There are likely several hundred thousand distinct chemicals that smell. Any mixture of those chemicals is a point in odor space. The goal is to find how many of those mixtures produce distinct sensations. What is the largest collection of odors such that any one is discriminable from all the others?\n\nThe reported experiments were limited to a subspace spanned by 128 substances. From these primary odors the authors made mixtures by drawing a number (N) of primary odors and mixing those in equal parts. Each primary odor is either present or absent in the mixture. Some of these mixtures are very similar to each other, for example if they share 29 of the 30 primary components. Others are very different, for example when they share none of the primary components. For any two mixtures the number of unshared components can be defined as their \u2018distance\u2019. The authors assume that the ability of humans to discriminate two odors improves systematically with this distance.\n\nThe next step is to determine the critical distance at which two odors become discriminable. The authors probe this systematically by making pairs of mixtures with N components of which M are unshared, and testing those for discrimination by human subjects. Indeed they find that the probability of discrimination increases with M (Figure 3B of Bushdid et al., 2014). They define the critical distance D as that separation M at which 50% of the mixture pairs are discriminable.\n\nWith these assumptions, two odors closer than D tend to smell the same, whereas two odors separated by more than D will smell different. To determine how many discriminable odors there are, the authors ask how many regions of diameter D can fit in the original 128-dimensional odor space. This is analogous to the problem of packing spheres in high-dimensional spaces and the authors compute the number of packable spheres of diameter D by methods of combinatorics (Figure 3D of Bushdid et al., 2014). This yielded the \u2018one trillion\u2019 in the title of their paper.\n\n### Failure on a simple model with three odor responses\n\nGiven a novel analysis method, it can be instructive to test it on a \u2018simplest possible\u2019 model, for which the desired answer is known and the calculations are easy. In the present context we need a model of olfactory processing that treats mixtures of many components, can compare pairs of such mixtures, and exhibits a clear performance limit in their discrimination. Imagine a toy microbe that lives in an environment with many odors and has receptors to sense all of them. Pure odors are either attractants (providing a sensory input of +1) or repellents (\u22121). Following the procedure of Bushdid et al. (2014), we choose at random 128 of those as primary odors and combine them to make mixtures containing 30 odors. The microbe responds to a mixture by simply summing the sensory input from the component odors. If the sum is less than \u22122 it says \u2018yuck\u2019; if it is greater than +2 it says \u2018yum\u2019; and from \u22122 to +2 it says \u2018meh\u2019. Two odor mixtures are discriminable if the microbe responds differently to them.\n\nNow we make odor mixtures that share a certain number of odors and plot the fraction of discriminable mixtures vs the odor overlap (Figure 1A, compare to Figure 3B of Bushdid et al., 2014). We find that the critical value of 50% discriminability is reached when the mixtures share 15 of the odors. This leads to an estimate of \u223c9\u00b71011 discriminable odors (Figure 1B,C, see Figure 3D of Bushdid et al., 2014). So by the standards of the proposed analysis, this toy microbe can also discriminate 1 trillion odors. Yet we know by construction that it recognizes only three classes of odors. Thus one can produce at most three odors such that each can be discriminated from all the others.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07865/elife-07865-fig1-v1.jpg)\n\n**Figure 1.:** (A) This 3-state olfactory system counts how many odors in the mixture are attractants vs repellents, and converts the result into three response categories (see text). Two odor mixtures are discriminable if they cause different responses. A numerical simulation of the response to many odor mixtures yields the fraction of discriminable mixtures as a function of the number of odors, O, that they share. Mean \u00b1 SD over 1000 repeats using different random assignments of the primary odors. Horizontal dashes: criterion for critical distance (50% discriminable pairs). Vertical dashes: critical distance D = 30 \u2212 O = 15. (B) Points in odor space separated by a distance D cause different responses at least half the time. Counting how many such points exist in the space is like trying to pack spheres of diameter D to fill the space as efficiently as possible. (C) The number of such spheres in 128-dimensional space as a function of the discriminable overlap O among 30-odor mixtures, computed by the formula given in Bushdid et al. (2014). The value O = 15 from panel (A) yields \u223c9 \u00d7 1011 spheres.\n\nOne gets the sense that something is amiss with the analysis procedure of Bushdid et al. If it fails so dramatically on a crude toy model of odor integration, should one trust it on more complex sensory systems? Nevertheless it is instructive to evaluate the procedure on a more realistic case. For example, the toy microbe actually has a name for each odor in the space (one of three possible names) whereas the human subjects were not asked to name the odor. Furthermore, for any given mixture pair the microbe's response is deterministic, whereas humans varied in their response. Thus I will now test the analysis on a system in which one can more exactly replicate the human psychophysics methods used in the reported odor discrimination tests.\n\n### Failure on the color vision system\n\nA prominent claim in Bushdid et al. (2014) is that olfaction vastly outperforms color vision in terms of discriminable stimuli. Specifically the authors compare their own estimate of a trillion discriminable odors to the literature's estimates of \u223c1 million discriminable colors. However, studies of color vision used a very different procedure to determine the number of distinct sensations (more on this below). Here I ask what number the authors' methods would produce. Fortunately we know enough about the rules and mechanisms of color perception to simulate this with great confidence, so there is no need to actually perform new color discrimination trials.\n\nThe space of all colored lights has infinite dimensions. Each light is characterized by its wavelength spectrum S(\u03bb), which specifies how much power exists at each wavelength \u03bb. Because the wavelength can take on any positive real value, the S(\u03bb) are functions of a continuous variable, and thus have infinite dimensions. However, as introduced above, the sensory space of human color vision has only 3 dimensions (Wandell, 1995). For each of the three cone types in the retina, the excitation is determined by the rate of photon absorption by its visual pigment. In turn, that rate is a linear function of the spectrum of the light, namely the projection of the light spectrum onto the absorption spectrum of the pigment. If two lights are mixed together, the resulting excitation is the sum of the effects of the individual lights. Therefore human color vision begins by projecting the infinite space of lights down onto a subspace of just 3 dimensions, spanned by the three cone excitations. This subspace has been probed extensively in psychophysical experiments. Typically the subject is shown two lights side-by-side and asked whether they appear different. By systematic probing of the 3-dimensional space one finds there are upward of 1 million discriminable lights, in the sense that any two of them will look different in a pairwise comparison (Masaoka et al., 2013).\n\nFor the purpose of simulation, I will therefore consider a space with three axes: R, G, and B (Figure 2A), corresponding to the three cone excitations. For simplicity, the three variables will range from 0 (dark) to 1 (bright), so the space is a unit cube. Every physical light stimulus is projected onto a vector in this unit cube. The color vision system adds some noise to that vector along each of the 3 dimensions. As a result, two lights are discriminable if their vectors are separated by more than the noise. The level of noise is chosen so that a difference of 0.01 along any dimension is discriminable, which gives 1 million discriminable vectors in the unit cube.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07865/elife-07865-fig2-v1.jpg)\n\n**Figure 2.:** (A) The RGB color cube with three of the 128 primary colors represented by vectors from the origin. Tick marks represent just noticeable differences, for example, along the R-axis. (B) The fraction of discriminable 30-light mixtures as a function of their overlap. Mean \u00b1 SD over 1000 repeats using different random assignments of the 128 lights. 30 lights per mixture, 20 mixture pairs per class, 26 subjects per pair. Horizontal dashes: criterion for critical distance. Vertical dashes: critical distance. (C) As in panel B but with the mixture components drawn at random from all possible directions in the space rather than from a preselected set of 128 primaries. The results are almost identical.\n\nNow one can implement the procedures of Bushdid et al. (2014): Choose at random 128 primary lights in this space and make them of equal intensity. Then produce mixtures of 30 lights from those primaries; design different classes of mixtures that vary in the number of shared components. Within each mixture class, present pairs of stimuli to the model and ask whether they can be discriminated, following an \u2018odd-man-out\u2019 procedure. Plot the fraction of discriminable pairs against the mixture overlap. Find the overlap at which that fraction is 50%, and take the number of unshared components as the critical distance D for discrimination. Compute how many spheres of size D fit in the original 128-dimensional space.\n\nFrom this simulation, I find that all 30-light mixtures are discriminable if they differ by as little as one component (Figure 2B). This is to be expected. Each of the primary lights has a vector length of 1/30 (see \u2018Materials and methods\u2019). This means that a single unshared component can separate the two mixture vectors by more than 1/30 in the RGB space. But a separation of just 1/100 along any axis is discriminable. So the critical distance D = 1. From this one calculates there are more than 1027 discriminable colors in the 128-dimensional space probed here (Figure 1C, see Figures 3D and S1B of Bushdid et al., 2014).\n\nActually, the number of discriminable colors by this argument is much higher, even infinite. To drop down to the 50% discriminability criterion used by the authors in defining D, we have to make much larger mixtures of \u223c60 lights that differ by just one component. The number of possible mixtures of that kind is about 1037. Furthermore, there is no reason to limit the starting space to just 128 primary lights. There is an infinity of spectra that are physically achievable lights, so we could have started with a subspace of arbitrarily high dimensionality. One can simulate infinite dimensionality by choosing for each of the mixtures a different random set of 30 normalized vectors from the cube (again maintaining the specified overlap among mixture pairs). As shown in Figure 2C, the critical distance under those conditions is still 1. Thus the methods of Bushdid et al. (2014) would conclude that humans can discriminate an infinite number of colors. That is much bigger than 1 trillion, so color vision would still win over smell, at least by the internal logic of this analysis. However, the number is also much bigger than the known experimental result, a few million. We can conclude that the analysis method fails the \u2018positive control test\u2019, namely the application to a related problem with known solution.\n\n### Humans can discriminate at least 10 odors\n\nGiven that the analysis of Bushdid et al. can vastly overestimate the number of discriminable stimuli, one wonders whether the human odor discrimination data in that report could equally be explained by a much smaller number of odor percepts. That is indeed the case.\n\nLet us consider a simple model of odor processing in which there is a very large number of odor stimuli and a large number of associated odor receptors. However, I will suppose that the nervous system ultimately projects all those odors onto a neural representation with a single dimension, and we can use the vectors on the unit circle for that (Figure 3A). So the 128 primary odors map onto 128 unit vectors with random angles. Furthermore, we will suppose that a mixture of odors gets mapped into the sum vector of all the components, normalized again to unit length. Finally, the angle of this vector gets corrupted by some perceptual noise. Two vectors around the circle will be discriminable if they are separated by more than the noise.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07865/elife-07865-fig3-v1.jpg)\n\n**Figure 3.:** (A) Left: Each primary odor gets mapped into a unit vector (e.g., red, green, blue). Mixtures of odors get mapped into the normalized sum vector (gray). Right: When a subject sniffs an odor vial, the odor angle is corrupted by Gaussian noise and a value is drawn from that distribution. Here three vials were presented, two (A and C) containing the identical odor and a third (B) a different odor. This produced response variables xA, xB, and xC. On this trial, xB and xC are closest to each other, so the subject (incorrectly) identifies A as the odd odor. (B) Discriminability of odor mixtures under this model (compare to Bushdid et al., 2014, Figure 2C). Mixtures were simulated according to the reported procedure with 10, 20, or 30 components and varying overlap. Each mixture pair was presented to 26 subjects, and the fraction of correct identification determined across subjects. Box-and-whisker plot shows the distribution of that fraction with percentiles 10, 25, 50, 75, 90. Average over 1000 repeats of the procedure with different random numbers. Red dashes: chance performance. Black dashes: criterion for discriminability (14/26 correct). (C) Fraction of discriminable mixtures as a function of their overlap (compare to Bushdid et al., 2014, Figure 3D). This is the fraction of mixture pairs in each class that exceeds 50% correct identification across subjects (above the black line in panel B). Lines are mean \u00b1 SD. Symbols are data from Bushdid et al. (2014). The model used Gaussian noise with a SD of 0.4 radians.\n\nThis encoding model can simulate the reported human subject experiments in detail (Figure 3B,C): For every \u2018odd-man-out\u2019 trial, three mixtures are presented to the model, of which two are identical and the third is a different target mixture. The model maps all three onto the unit circle, adds noise to each, and asks which two are closest to each other. Then it reports the more distant one as the odd odor. If that corresponds to the target odor, it is a \u2018correct\u2019 decision (Figure 3A). Qualitatively, mixtures that share a large fraction of components produce sum vectors at nearby angles, which makes them less discriminable because of the perceptual noise (Figure 3B, compare to Figure 2C of Bushdid et al., 2014). Again one can compute the fraction of discriminable odor mixture pairs, namely those correctly identified in >50% of all trials.\n\nIn Figure 3C, I plot the results of this simulation along with the published data (from Figure 3B of Bushdid et al., 2014). The model has a single parameter, namely the amount of perceptual noise; nothing else is adjustable. With a noise value of 0.4 (SD of the Gaussian noise measured in radians) the fit to the data is quite good. Almost all the data points are within the 1 SD error bars. At noise = 0.3 the model does somewhat better than the humans, at noise = 0.5 somewhat worse.\n\nFor a noise value of 0.4, how many mutually discriminable stimuli are there? We should use the standard of Bushdid et al. (2014) for discriminability of an odor pair: 50% correct identification in the \u2018odd-man-out\u2019 odor test. With that criterion, one can place at most 10 vectors around the unit circle such that each is discriminable from its neighbors. Therefore, the published measurements are consistent with a model in which humans can distinguish just 10 olfactory stimuli from each other.\n\nMany of us have experienced more than 10 different smells, so these experiments did not come close to exploring the richness of human olfactory experience. Why is the lower bound from this odor psychophysics study so weak? Actually, the result is just about expected from the effort expended. To confirm that 10 odors are mutually discriminable by brute force one has to compare each odor to every other one. The authors did 260 pairwise comparisons, of which only about half were discriminable. So one expects to find evidence for about $\\sqrt{148}$ distinct odors, close to what was obtained.\n\nThe ring model of Figure 3 assumes that odor percepts lie in a 1-dimensional space. If one allows for higher numbers of dimensions, then the predicted number of discriminable odors increases, approximately exponentially with the dimensionality of the perceptual space (L Abbott, E Schaffer, and R Axel, personal communication). Since we do not know the dimensionality of odor space, the results of Bushdid et al. (2014) are equally consistent with 10 or a trillion discriminable odors or anything in between. In other words, the experiments fail to distinguish alternative hypotheses for the number of discriminable odors, even absurd ones that are clearly incorrect.\n\n### Where is the flaw?\n\nIn the following discussion I will use the term \u2018percept\u2019 to strictly mean the internal state of the sensory system at the stage where discrimination decisions are made. For us humans two things have the same percept when they look or smell the same. I will extend the term to toy models, bacteria and mice, without presuming that those creatures engage in the more contemplative aspects of perception. Two stimuli may be physically distinct, yet cause the same percept, and thus become indiscriminable, as is the case for many color spectra. Two stimuli can even be distinct at the level of sensory receptors, and still produce the same percept, as in cases to be discussed below.\n\nThe failure of the method in Bushdid et al. (2014) occurs after the sphere-packing estimate (Figure 1B). It involves a step that is never mentioned but implicit in the procedure: the assignment of odor percepts to the different spheres in stimulus space. There are at least two problems that can lead to enormous overestimates of the number of discriminable odors, First, the authors assume that every one of the spheres packed into the space corresponds to a different odor percept. But this is unwarranted. The measurement of critical distance for discrimination only ensures that neighboring spheres correspond to different percepts, it says nothing about more distant spheres. Thus the same odor percept may recur over and over again for physically distinct odor mixtures.\n\nThe situation can be understood already in 2 dimensions. Figure 4A shows a set of close-packed pennies on the desktop. Every penny is different in color from its neighbors. More importantly every penny in the whole space has a different color from every other penny. If the pennies correspond to odor percepts one could legitimately say that this organism discriminates as many odors as there are pennies. However, there are many other ways to color close-packed pennies so that no adjacent ones have the same color. In fact, three colors are sufficient (Figure 4B), so just three percepts could account for an infinite number of spheres in a 2-dimensional odor space.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07865/elife-07865-fig4-v1.jpg)\n\n**Figure 4.:** (A) All colors different. (B) Three colors suffice. (C) Progression of colors in one dimension only.\n\nOne might object that this is an esoteric arrangement: What kind of olfactory system would produce this strange periodic recurrence of the same percept? However, there is a perfectly natural color progression that also provides enormous savings of colors. In the arrangement of Figure 4C the percept stays the same along one dimension of the space and varies along the orthogonal dimension, yet all neighboring spheres are distinct. The number of pennies one can pack this way goes as the square of the number of colors available. In 128-dimensional space, the number of hyperspheres one can pack this way will go as the 128th power of the number of percepts.\n\nSo the key logical flaw is the assumption that all the close-packed hyperspheres produce different odor percepts. One can trace this back to the unstated assumption that the odors should systematically become more discriminable at greater distances in this space, and equally in every direction. Here I showed that there is a simple and natural way to violate that assumption, namely if the percept depends only on a single function of the coordinates. Then the odors become more discriminable with distance along one dimension, but remain indiscriminable along all other dimensions. More generally, if the percepts live in some low-dimensional space (as is the case, e.g., for color vision and for the hearing of pure tones) and then one embeds that space in 128 dimensions, this will produce a similarly efficient labeling of the close-packed spheres. This is what causes the astronomical overestimates in the analysis of Bushdid et al. (2014) when applied to the three model simulations above.\n\nThe above arguments cannot fully explain the results obtained with the model of the 3-state microbe. Here there are only three possible percepts (\u2018yum\u2019, \u2018yuck\u2019, and \u2018meh\u2019) that can be used to paint the hyperspheres. Yet, in 128-dimensional space every sphere has at least 256 nearest neighbors. Clearly it is impossible to distinguish a sphere from all its nearest neighbors with just three colors. This brings us to a second weakness of the method: the definition of the critical distance D. This is taken as the distance at which 50% of odor mixture pairs are discriminable. In other words, two points separated by D in odor space only need to produce a different percept 50% of the time. So when assigning percepts to the spheres in 128-dimensional space, we merely have to ensure that each sphere is distinct from 50% of its neighbors. That can be done trivially with just two colors, painting alternating spheres white and black. That makes every sphere different from 50% of all its neighbors. The 3-percept microbe can do a bit better, which is why discriminability rises to almost 2/3 at large distances (Figure 1A).\n\nWould it help to raise the criterion for discriminability to a higher percentage of mixture pairs? If one raises it to 90% then 10 odor percepts are sufficient to color the entire space of spheres. A popular estimate for the number of discriminable odors (though without solid scientific basis, as reviewed in Bushdid et al., 2014) is around 10,000. To ensure that a sphere-coloring system uses at least 10,000 odors, one would need to raise the criterion for discriminability in the definition of D to 99.99%. So there needs to be a data point in Figure 3B of Bushdid et al. (2014) with an ordinate of 99.99%. This would require human subjects to perform several tens of thousands of pairwise comparisons in just one mixture class, a truly extraordinary experimental effort.\n\n## Discussion\n\n### How to proceed?\n\nThe arguments above illustrate that the mathematical method for exploring sensory spaces advocated in Bushdid et al. (2014) does not work. Fundamentally the extrapolation presumes that the space of odor percepts has at least 128 dimensions. Furthermore, the 128 primary odors chosen must represent \u2018orthogonal\u2019 directions in that space, so that the percept varies with distance in the same manner and independently along each of these dimensions. Nothing in the report suggests why we should believe this, and the assumptions seem implausible a priori. Violation of those assumptions, for example if the true dimensionality of odor space is much less than 128, leads to dramatic failure of the estimate. How can one do better?\n\nTo obtain the number of discriminable odors, we need to determine the largest set of stimuli such that every stimulus can be discriminated from every other one, not just from nearest neighbors. Classic studies of color vision and tone hearing have achieved that. For color vision, the answer is approximately n = 1 million. How can one come to that conclusion without doing n2 discrimination tests? This is possible only by taking advantage of the systematic structure of the perceptual space. For example, if light A looks more red than light B and B looks more red than C, then one can trust that A will look more red than C. The same applies in tone hearing: If tone A sounds lower than tone B, and B sounds lower than C, then A will sound lower than C. This transitivity of discrimination means that it is sufficient to measure discrimination of neighboring stimuli to ensure mutual discrimination of all stimuli in the set, which reduces the experimental burden from order(n2) down to order(n). Effectively these studies work in a low-dimensional subspace of all stimuli (R, G, B for lights; frequency and amplitude for pure tones), within which the progression of the percepts is monotonic, such that transitivity applies. So success of these percept-counting studies relied entirely on recognizing early on that the perceptual space is low-dimensional.\n\n### The dimensionality of odor space\n\nHow to apply those insights to olfaction? Clearly one needs to first answer \u2018how many dimensions span the perceptual space of odors\u2019? The number of 400 human odorant receptor types certainly sets an upper bound on the dimensionality of the perceptual space. And one commonly hears the argument: \u2018Why would Nature make so many receptors, unless it is to discriminate all possible patterns of activation\u2019? However, there may be another explanation: We need this many receptors simply to sense the molecules of interest, not to disambiguate all possible mixtures of those molecules.\n\nThe bacterium Escherichia coli illustrates this idea: It has five different chemoreceptor proteins with different ligand spectra. In principle, E. coli could therefore analyze odor mixtures in 5-dimensional space and react differently to every possible mixture. But it doesn't. The outputs of all five receptors readily converge on a single variable, namely the concentration of the CheY signaling molecule (Grebe and Stock, 1998). This single variable controls the bacterium's locomotor decisions, so we may identify it with the odor percept in the present use of the term. E. coli projects the 5-dimensional receptor space onto a 1-dimensional perceptual space of attraction/repulsion. Why then does it need five receptors, including different receptor proteins for aspartate and for serine, both amino acids? Presumably it is difficult to make a generic amino acid receptor with high sensitivity. Both the amino and the carboxyl ends of the molecule vary in their charge distribution depending on pH, and a single binding pocket directed at these regions would not offer sufficient affinity under all conditions. Instead, the two receptor proteins focus on other more stable portions of the ligand, but those are also unique between serine and aspartate.\n\nThe same arguments apply to odorants in the human nose. The molecules of interest are there at micromolar concentrations or less, in a mucus soup of other components at millimolar concentration. To sense the odorants separately from the mucus, a receptor needs to bind them with high affinity. That means many contact sites between binding pocket and ligand, which in turn leads to selectivity for the shape of the ligand. Even if the olfactory system just wanted to distinguish odors along one dimension (attractive/repulsive), it would be impossible to make a receptor that is selective just for the attractants. Instead Nature makes many receptors that are each selective for small groups of related molecules and then combines their signals appropriately using the nervous system.\n\nIn this picture the dimensionality of receptor space is determined by molecular principles involving the number of ligands of interest, their relevant concentrations, the energetics of ligand binding, and the design limitations of protein structures. The dimensionality of perceptual space, on the other hand, is governed by behavioral and ecological constraints: the nature of olfactory cues in the environment, the kinds of decisions the animal makes based on odorants, and the need to associate new odors with unusual events. There is no principled reason that this perceptual space should have the same dimensionality as the receptor space. And we have the neural circuits of the olfactory system to create an arbitrary map from one space onto the other.\n\nAnother sensory system serves to illustrate this difference between receptor space and perceptual space: touch. Every hair follicle on our skin contains a sensitive mechanoreceptor, several million altogether (Zimmerman et al., 2014). This makes us highly sensitive to touch: we can reliably detect the bending of an individual hair almost anywhere on the body. But clearly we cannot discriminate all patterns of bent hairs. Brushing across your head twice in a row feels very much the same, even though it is certain to cause two different patterns of activity among the touch receptors. As for E. coli chemotaxis, there is a benefit to detecting many possible sensory inputs, but no need to discriminate all possible patterns of those inputs.\n\nBeyond arguments by analogy, some recent studies of human olfaction suggest that the perceptual space for odors may have rather few dimensions. Furthermore, the dominant axes of this perceptual space can be related systematically to the physical characteristics of odorous molecules (Secundo et al., 2014). Another relevant observation is that mixtures containing many (>20) diverse odorants tend to smell alike, even if they don't share any molecular components (Weiss et al., 2012), a phenomenon that has been termed \u2018olfactory white\u2019, in analogy to the \u2018white\u2019 percept associated with a mix of many colored lights. This suggests that the dimensionality of odor percepts may be around 20 or less. Table 1 summarizes the number of dimensions of various spaces discussed here.\n\n**Table 1.**\n Number of dimensions of various spaces involved in sensory discrimination\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Toy microbe</th>\n      <th>Ring model</th>\n      <th>Human color</th>\n      <th>E. coli smell</th>\n      <th>Human smell</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Stimuli</td>\n      <td>\u221e</td>\n      <td>\u221e</td>\n      <td>\u221e</td>\n      <td>\u221e</td>\n      <td>\u221e</td>\n    </tr>\n    <tr>\n      <td>Receptors</td>\n      <td>\u221e</td>\n      <td>\u221e</td>\n      <td>3</td>\n      <td>5</td>\n      <td>\u223c400</td>\n    </tr>\n    <tr>\n      <td>Percepts</td>\n      <td>1</td>\n      <td>1</td>\n      <td>3</td>\n      <td>1</td>\n      <td>1\u201320?</td>\n    </tr>\n  </tbody>\n</table>\n\n_The symbol \u221e stands for \u2018very large or infinite\u2019._\n\nA useful experimental approach might then be to rigorously measure the dimensionality of perceptual space at least at one point. For example, choose N primary odors, and consider arbitrary mixtures of those as the odor space. Define the \u2018white point\u2019 as the mixture of all those odors at half concentration, that is, the odor vector w = (0.5,\u2026,0.5). How does odor perception vary as the stimulus deviates a little from this point? To first order, the discriminability d between the white odor at w and an odor at w + x will vary as a quadratic form of the deviation vector x, namely: d = xT S x. We want to know the sensitivity matrix S. By definition it is positive definite and symmetric, and thus has N(N + 1)/2 unknown components. So one needs to measure the just-discriminable-distance along N(N + 1)/2 directions from the white point. Clearly this is an experimental challenge, but it seems plausible at least for N = 20. If so, then the structure of the matrix S can reveal the dimensionality: In particular, if it has just a few large eigenvalues, those identify the relevant directions in odor space. By contrast, if all eigenvalues are comparable, then the perceptual space has dimensions higher than N.\n\nAnimal studies can play an important role here. Mice are readily trained to distinguish odors, even closely related mixtures. More importantly, they offer an opportunity to stimulate the receptor neurons directly, by optogenetic activation of the olfactory bulb (Spors et al., 2012). In a suitably engineered animal one could drive arbitrary activation patterns of the different olfactory receptor types by shining patterned light onto the glomeruli in the olfactory bulb. This approach promises several benefits in a study of odor dimensions: First, it does away with the tedium of olfactory stimulation, such as mixing dozens of vapors, switching valves, flushing tubes, and waiting for odors to dissipate. Using light, a different combination of receptors can be driven with millisecond precision and at high repetition rates. Also, this method allows patterns of stimulation that may not ever occur with natural odorants; one could then test if the perceptual space differs from receptor space, and is shaped to the ecology of real odors.\n\nIn a way, one can think of the olfactory bulb surface as a retina for the smell system. Olfactory objects produce spatio-temporal patterns on this surface, and the downstream neural circuits are busy identifying, discriminating, or learning those spatio-temporal patterns. The optogenetic approach simply takes the analogy one step further by using light as a stimulus. At the same time, there is a parallel effort ongoing in vision science to determine the dimensionality of human pattern vision. It is clear already that the number of dimensions is much lower than the number of receptors on the retina. One can make pairs of visual images that have very different effects on the retina, but look the same to human subjects (Freeman and Simoncelli, 2011). And a systematic approach to measuring dimensionality of pattern vision is beginning to yield results (JD Victor, personal communication). Based on these developments, I suggest that pursuing the analogy of smell to pattern vision will be more fruitful than the analogy to color vision.\n\nRegardless of approach though, determining the dimensionality of the space of odor percepts is a precondition to estimating the number of distinct percepts. The recognition that color space is three-dimensional has had enormous impact in science, art, and technology, as anyone reading this on a color monitor will confirm. The search for a similar basis set for odors has fascinated scientists, engineers, and perfumers for some time (Gilbert, 2008). Even proving that a low-dimensional basis does not exist would be a major advance.\n\n## Materials and methods\n\nAll simulations and graphics were produced with Igor (Wavemetrics, Tigard, OR). Annotated code is available as a supplement to this article (Source Code 1). Simulation of the three models (Figures 1\u20133) followed the same process as the human odor tests performed in Bushdid et al. (2014):Selection of the 128 primary stimuli. These were drawn at random from the stimulus space. Figure 1: binary distribution over (\u22121, +1). Figure 2: Uniform distribution of R, G, and B over [0, 1], followed by normalization to a length of 1/30. Figure 3: Uniform distribution on the unit circle. These are conservative choices, in that a random set of primaries does not cover the stimulus space particularly well, and thus will produce mixtures that occupy only a portion of the space. This will therefore underestimate the number of discriminable stimuli. By contrast Bushdid et al. chose odors that were \u2018well distributed in both perceptual and physicochemical stimulus space\u2019.Creation of mixtures. Pairs of mixtures containing N primaries of which O are shared were created by choosing at random 2N-O components from the set of primaries, summing the first N to mixture 1, and the last N to mixture 2. For every class of mixtures (i.e., combination of N and O), 20 mixture pairs were created. The rules for combining the stimulus values in a mixture were as follows: Figure 1: Simple addition of the binary stimulus values. Figure 2: Addition of the primary vectors. Figure 3: Addition of the unit vectors followed by normalization to unit length. This normalization emulates the elimination of odor intensity cues in Bushdid et al. (2014).Discrimination test. Every pair of mixtures was presented to the model to determine whether it was discriminable or not. Figure 1: The model classifies every mixture of N = 30 odors into the percepts \u2018yum\u2019, \u2018meh\u2019, or \u2018yuck\u2019 depending on whether the sum of stimulus values is >2, from 2 to \u22122, or <\u22122 respectively. Two mixtures that fall into different classes are discriminable. Figure 2: The model performs an odd-man-out discrimination test among three samples as done for human subjects in Bushdid et al. (2014). Two of the samples contain mixture 1 and the third contains mixture 2. Perceptual noise was simulated by adding a Gaussian random variable to each of the three coordinates of the mixture vectors. The resulting three sample vectors are inspected and the two with the smallest distance are declared to be the same. For every mixture, this is performed 26 times, with different draws from the noise distribution. A mixture pair is declared discriminable if the model gives the correct response on >50% (14 or more) of those trials (note chance performance is 1/3). In Bushdid et al. (2014) these 26 trials were performed by 26 different human subjects. There was some indication that different subjects had different abilities, but the analysis merged them all. In my simulation, all trials were done with the same amount of perceptual noise. The noise magnitude was chosen so that stimuli separated by a distance of 0.01 are just discriminable. This leads to \u223c1 million distinct percepts in the RGB stimulus space, a conservative choice, because the empirical estimates of that number are somewhat larger. Figure 3: This followed the same odd-man-out procedure as for Figure 2. Perceptual noise was simulated by adding a Gaussian random variable to the angle of the mixture vector (Figure 3A).Discriminability of mixture classes. For each class of mixtures I computed what fraction of the 20 were discriminable (by the criteria in 3), and plotted this against the mixture overlap (Figures 1A, 2B,C, 3C). To estimate the reliability of the simulation, the entire procedure was repeated 1000 times (with different random numbers) and the plots show the mean and standard deviation of the outcome. Figure 3C shows my simulation along with the data from the Bushdid et al.'s human experiments.Estimating the number of discriminable stimuli. From the graph of discriminability vs overlap, the critical distance D was taken to be the number of unshared stimuli that allows 50% discriminability in that class of mixtures. The number of regions of diameter D that can fit into the stimulus space was computed using the formula presented in Bushdid et al. (2014) (Figure 1C). If there are C primaries total and N primaries per mixture, then the number S of such regions is claimed to be\n\n$$\nS=\\frac{(CN)}{\\sumR=0D/2(NR)(C\u2212NR)}.\n$$\n",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "4cf201f3-2205-4ce8-ab93-5fc7f7f221f6",
+      "submission_id": "db26fec0-e3b1-44b0-a17d-f47fca5da6d5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Borst, Max Planck Institute of Neurobiology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07865.009](https://doi.org/10.7554/eLife.07865.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cOn the dimensionality of odor space\u201d for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom is on our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Axel Borst (Reviewing editor); Fr\u00e9d\u00e9ric Theunissen (peer reviewer). A further reviewer remains anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Meister re-analyzes a paper by Bushdid et al., 2014, that claims that humans can discriminate one trillion odors. He shows by different methods that the claim is substantially flawed. To make this point, Meister uses different approaches. In the most immediately convincing approach, he constructs a model organism with 3 different percepts and shows that, subjected to the identical test performed by Bushdid et al., one concludes that the organism can discriminate one trillion odors: however, we know by construction that it only has three odor percepts. I repeated the model simulations myself just to confirm these results. Meister further analyzes the method and demonstrates convincingly that the mistake \u2018in depth\u2019 made by Bushdid et al. is that it equates the number of discriminable odor mixtures with the number of volumes that can be packed in high-dimensional odor space as calculated from the average minimal distance in odor space: it is never shown that each of these mixtures represents a unique percept in perceptual space. In the final chapter, he discusses how to measure the dimensionality of perceptual odor space, making an argument that the large number of odorant receptors might exist in order to sense the large number of different odor molecules, rather than to discriminate each one of them from each other. He furthermore advocates for using an optogenetic approach in rodents to avoid a lot of problems associated with producing and handling odorant mixtures.\n\nThe paper is well written and the toy examples intuitively demonstrate the flaw. All reviewers really enjoyed reading the manuscript and found it to be a very nice contribution worth being published in eLife. However, there are some remarks made by the reviewers that should be addressed before the paper can be published.\n\nEssential revisions:\n\n1) The issue requires great clarity and consistency of definitions. In particular, it concerns a number of different spaces: the space of chemical stimuli, the space(s) of neural activity, \u201cperceptual\u201d space and \u201caction/behavioral\u201d space. Meister sometimes interchanges terminology in such a way that a straight line of thought becomes hard to trace. For example, are \u201cpercepts\u201d and \u201cdiscriminable stimuli\u201d the same thing? In the bacterial example, Meister calls the reactions alternatively \u201cresponses\u201d and \u201cpercepts\u201d. This quibbling about words does not change the bottom-line of Meister's argumentation, but non-defined terminology weakens it by exposing it to potential counter-arguments. The reviewers suggest to clearly define all the important words used throughout.\n\n2) The next comment concerns Meister introducing perceptual space for color vision as being 3 dimensional, and those dimensions as being defined by the response spectra of the 3 types of cones found in trichromatic primates. But is this not a shortcut between stimulus-, neural- and perceptual spaces? The dimensions of color perception are, by some classical definitions at least, hue, lightness and saturation. In this space, colors live in a sort of spindle-shaped subspace in which perceptual hue, for example, seems to loop back onto itself, making the mapping between stimulus (say wavelength spectrum) and percept non-trivial (technically speaking, non-homeomorphic). The 3-dimensional space that Meister considers is a neural space, defined by photoreceptor subtypes, and not directly the perceptual space of color or hue. Both happen to be low dimensional, which is probably not a coincidence, and this does not change anything to the importance of quantifying humans' perceptual abilities for color discrimination; but the distinction is important because of the non-trivial nature of the mapping between these different spaces. In fact the topology-of-perceptual-space argument is related to that used by Meister in his Figure 4 and corresponding text. We suggest rewording, so as not to weaken the otherwise valid criticisms. Also, color vision in many animals starts with many more cone types (up to 12 in some southern seas crustaceans). No one really knows how fine or structured color discrimination is in those brains. In the same vein, some human cultures name colors in ways that differ dramatically from ours. The general issue of color perception is thus potentially more complex still, and nothing indicates that the geometry of odor-perception space has much to do with that of color-perception space. Finally there is a great deal of O.R. gene polymorphism among humans, presumably increasing local variance in particular regions of odor-perception space. All this to say that, even though Bushdid et al. made regrettable methodological mistakes, the existence of a relatively simple and well-bounded solution to the problem of trichromatic vision does not guarantee the existence of similar solutions to the problem of color vision in general, or to olfaction. The critique should therefore focus better on the mathematical/statistical mistakes of Bushdid et al.\n\n3) The third point concerns the bacterial example (\u201cFailure on a simple 3-percept model\u201d). Here, we have a split opinion. While two reviewers actually like the example as it is, one reviewer says the following: \u201cI understand the aim of the example; I understand the need to illustrate the fundamental difficulty of bounding an estimate with small samples; but this particular example ends up looking like a specious construct, based on a trick. The trick is to map all possible discriminable items into three classes (so called: yuck, meh and yum), which Meister calls alternatively \u2018responses\u2019 and \u2018percepts\u2019. But ignoring for an instant that bacteria probably lack perceptual abilities, the only reason why the discriminating ability of the bacterium is so low is because of a definition that need does not apply to a real nervous system. While I understand the goal of this chapter, I think it is too facetious to be convincing.\u201d We leave it up to the author to decide.\n",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0b868d3e-f3f8-45cc-b99a-5ed83537a62f",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C1",
+      "claim": "The perceptual space for human color vision has three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The perceptual space for human color vision has three dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about color vision, supported by historical experimental evidence mentioned in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "c95b81da-8c04-474a-897f-044e7f0293b9",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C2",
+      "claim": "Experimental proof that color vision has three dimensions dates to the 17th century.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental proof of this dates to the 17th century, when it was found that every color sensation can be matched by mixing together three primary lights, but not if only two lights are available (Mollon, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mollon, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "2c788d2a-b96a-45b9-a1ab-2f0f9a6eb428",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C3",
+      "claim": "Every color sensation can be matched by mixing together three primary lights, but not if only two lights are available.",
+      "claim_type": "EXPLICIT",
+      "source": "it was found that every color sensation can be matched by mixing together three primary lights, but not if only two lights are available (Mollon, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mollon, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "cc413a06-a6a6-450d-925c-560af96885a5",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C4",
+      "claim": "Every color sensation can be fully characterized by three numbers, namely the intensity of the primaries that match it.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore every color sensation can be fully characterized by three numbers, namely the intensity of the primaries that match it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the three-primary mixing result.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "5179153c-f9eb-421c-a43e-5579566ba74b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C5",
+      "claim": "Color vision is based on three kinds of cone photoreceptors in the retina that differ in their sensitivity to the wavelength spectrum of light.",
+      "claim_type": "EXPLICIT",
+      "source": "We now know that color vision is based on three kinds of cone photoreceptors in the retina that differ in their sensitivity to the wavelength spectrum of light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the biological basis of color vision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "686c1eb7-0000-4337-836d-6875c2952d5e",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C6",
+      "claim": "Any pattern of excitation among cones can be matched by an appropriate mix of three primary lights.",
+      "claim_type": "EXPLICIT",
+      "source": "Any pattern of excitation among cones can be matched by an appropriate mix of three primary lights, and this is the basis for RGB color display devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about color vision and display technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "e8e2fc11-3007-4228-b0d6-a01b8fbb96e4",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C7",
+      "claim": "Human subjects can distinguish about 1\u20132 million different colors.",
+      "claim_type": "EXPLICIT",
+      "source": "in practice human subjects can distinguish about 1\u20132 million different colors (Masaoka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Masaoka et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "e8562541-5745-406e-bd06-238722820d58",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C8",
+      "claim": "Humans have approximately 400 types of olfactory receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Human olfaction begins with the binding of odor molecules to olfactory receptors, of which there exist \u223c400 types (Malnic et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Malnic et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "d3b4d9c8-8a36-4fe1-ae35-e08834b03ca8",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C9",
+      "claim": "All olfactory receptor types differ in their relative sensitivity to various odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is believed that these receptor types all differ in their relative sensitivity to various odorants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a belief, indicating it is based on current scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "ceb0e973-aa59-4aad-94e5-afe166f80eda",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C10",
+      "claim": "Two odors can only be distinguished if they cause different patterns of activity among receptor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Two odors can only be distinguished if they cause different patterns of activity among these types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the understanding of sensory discrimination.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "478a1714-61ee-43b0-ada3-81693a057cd8",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C11",
+      "claim": "The neural space of odors at the input to the olfactory system has 400 dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the neural space of odors at the very input to the olfactory system would seem to have 400 dimensions, many more than encountered in the color system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the number of receptor types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "93dd53ab-d546-4493-9982-3317d46629e6",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C12",
+      "claim": "The space of odors is dominated by just one or two dimensions based on perceptual similarities analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "from a quantitative analysis of perceptual similarities it has been argued that the space of odors is dominated by just one or two dimensions (Secundo et al., 2014), much fewer than the 400 dimensions at the level of sensory receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Secundo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "570435c6-7c03-4167-9dee-e65787f350ef",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C13",
+      "claim": "The number of discriminable odors is thought to be only 10,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly the number of discriminable odors is thought to be only 10,000, although this estimate is largely anecdotal (Gilbert, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilbert, 2008, though noted as anecdotal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "7c66babe-9087-4f6b-932f-d78f740a6682",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C14",
+      "claim": "Bushdid et al. (2014) claimed that humans can discriminate one trillion odors.",
+      "claim_type": "EXPLICIT",
+      "source": "a recent article claims that 'Humans can discriminate one trillion odors' (Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct citation of the claim from Bushdid et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "d357d5b5-9d10-4619-a819-9325ca122270",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C15",
+      "claim": "The claim that humans can discriminate one trillion odors was based on experiments where humans discriminated successfully only 148 pairs of odors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, these claims were based on an experimental study in which humans discriminated successfully only 148 pairs of odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data from Bushdid et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "44069c70-3507-4f74-b9f4-a2f7364e8ac3",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C16",
+      "claim": "The mathematical method used by Bushdid et al. to extrapolate from 148 discriminated odor pairs to trillions fails.",
+      "claim_type": "EXPLICIT",
+      "source": "Here I show that this mathematical method fails, and as a result the claims are without any basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the manuscript, supported by the analyses presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "6e80ef3a-dc4e-411a-bbe6-ebf40e359a09",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C17",
+      "claim": "The data on human olfaction are equally consistent with a trillion discriminable odors and with just 10.",
+      "claim_type": "EXPLICIT",
+      "source": "We will see that the data on human olfaction are equally consistent with a trillion discriminable odors and with just 10 (and anything in between).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the analyses in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "c164c674-886c-48c5-b96c-096d63e5393f",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C18",
+      "claim": "If the same method were applied to human color vision, one would conclude that humans can distinguish at least 10^27 colors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if the same method were applied to human color vision, one would conclude that humans can distinguish at least 1027 colors, in dramatic conflict with experimental evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulation in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "119b651c-b4db-45cb-bfd4-52c2a4938270",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C19",
+      "claim": "Bushdid et al. made mixtures by drawing a number (N) of primary odors from 128 substances and mixing those in equal parts.",
+      "claim_type": "EXPLICIT",
+      "source": "From these primary odors the authors made mixtures by drawing a number (N) of primary odors and mixing those in equal parts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure from Bushdid et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "c65eab67-3074-46be-b6d3-8edae1751ad3",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C20",
+      "claim": "Bushdid et al. assumed that the ability of humans to discriminate two odors improves systematically with the distance between mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors assume that the ability of humans to discriminate two odors improves systematically with this distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption in the Bushdid et al. analysis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "9ab3bdf8-ddae-41e3-a062-7a94209af320",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C21",
+      "claim": "Bushdid et al. found that the probability of discrimination increases with the number of unshared components M.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed they find that the probability of discrimination increases with M (Figure 3B of Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references data from Bushdid et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "e670b1b4-f4b4-40ff-939c-4b174088da58",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C22",
+      "claim": "Bushdid et al. defined the critical distance D as the separation M at which 50% of mixture pairs are discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "They define the critical distance D as that separation M at which 50% of the mixture pairs are discriminable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the definition used in Bushdid et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "c44b3ad5-c7d6-426d-9c5c-01ca66228d77",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C23",
+      "claim": "A toy microbe model with three response states ('yuck', 'yum', 'meh') yields an estimate of approximately 9\u00d710^11 discriminable odors using the Bushdid et al. method.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to an estimate of \u223c9\u00b71011 discriminable odors (Figure 1B,C, see Figure 3D of Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "5141da57-5866-4d7d-ad18-bf98a61a6a67",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C24",
+      "claim": "The toy microbe model recognizes only three classes of odors by construction.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet we know by construction that it recognizes only three classes of odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the model construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "fc687e33-bb4d-4aad-8876-4b099fd40062",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C25",
+      "claim": "At most three odors can be produced such that each can be discriminated from all the others in the toy microbe model.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus one can produce at most three odors such that each can be discriminated from all the others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the three-state nature of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "186f9223-2119-4882-99c2-3f2672e087f2",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C26",
+      "claim": "The space of all colored lights has infinite dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The space of all colored lights has infinite dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fact that light spectra are continuous functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "373ff890-13b4-4135-985b-787b4de91a9c",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C27",
+      "claim": "Each light is characterized by its wavelength spectrum S(\u03bb), which specifies how much power exists at each wavelength \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "Each light is characterized by its wavelength spectrum S(\u03bb), which specifies how much power exists at each wavelength \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the physical characterization of light.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "87a60fbe-051f-4f14-bb9c-e1061aa770dd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C28",
+      "claim": "The sensory space of human color vision has only 3 dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as introduced above, the sensory space of human color vision has only 3 dimensions (Wandell, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wandell, 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "41ab9abc-39e3-4129-8d7e-9f30fcdc8899",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C29",
+      "claim": "For each cone type in the retina, the excitation is determined by the rate of photon absorption by its visual pigment.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the three cone types in the retina, the excitation is determined by the rate of photon absorption by its visual pigment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cone photoreceptor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "6a8013af-1585-4e4a-a7fd-737d5f83f68d",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C30",
+      "claim": "The photon absorption rate is a linear function of the spectrum of the light.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, that rate is a linear function of the spectrum of the light, namely the projection of the light spectrum onto the absorption spectrum of the pigment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about photoreceptor physics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "daf8d8f7-80f9-4f82-9465-9c17540cdf08",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C31",
+      "claim": "When two lights are mixed together, the resulting cone excitation is the sum of the effects of the individual lights.",
+      "claim_type": "EXPLICIT",
+      "source": "If two lights are mixed together, the resulting excitation is the sum of the effects of the individual lights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the linearity of light mixing in color vision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "6f69860e-0727-4ba1-8ae9-989bf13bbaef",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C32",
+      "claim": "Human color vision begins by projecting the infinite space of lights down onto a subspace of just 3 dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore human color vision begins by projecting the infinite space of lights down onto a subspace of just 3 dimensions, spanned by the three cone excitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the properties of cone photoreceptors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "d65fbdce-9ad8-4c3d-915a-1eb7dc5ae700",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C33",
+      "claim": "There are upward of 1 million discriminable lights in human color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "By systematic probing of the 3-dimensional space one finds there are upward of 1 million discriminable lights, in the sense that any two of them will look different in a pairwise comparison (Masaoka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Masaoka et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "4c251253-0395-47f0-b6d8-1959fcd16b1b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C34",
+      "claim": "In the color vision simulation, a difference of 0.01 along any dimension is discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of noise is chosen so that a difference of 0.01 along any dimension is discriminable, which gives 1 million discriminable vectors in the unit cube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter choice in the simulation described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "e85ae247-cebf-4493-ac7d-13209a7f4240",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C35",
+      "claim": "In the color vision simulation, all 30-light mixtures are discriminable if they differ by as little as one component.",
+      "claim_type": "EXPLICIT",
+      "source": "From this simulation, I find that all 30-light mixtures are discriminable if they differ by as little as one component (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the simulation shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "a8837789-d45a-4718-8048-48f0de7af3c5",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C36",
+      "claim": "Each primary light in the color simulation has a vector length of 1/30.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the primary lights has a vector length of 1/30 (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "0b528121-f587-4e27-85e5-5a58cc23bab1",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C37",
+      "claim": "A single unshared component can separate two mixture vectors by more than 1/30 in the RGB space.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that a single unshared component can separate the two mixture vectors by more than 1/30 in the RGB space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the vector length of primary lights.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "077788b8-5fe2-4c40-8edb-013ea6d8c045",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C38",
+      "claim": "The critical distance D = 1 in the color vision simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "So the critical distance D = 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "ba11eeb7-12d0-4d92-ab8b-5b4d0b063904",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C39",
+      "claim": "Using the Bushdid et al. method on color vision yields more than 10^27 discriminable colors in the 128-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "From this one calculates there are more than 1027 discriminable colors in the 128-dimensional space probed here (Figure 1C, see Figures 3D and S1B of Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated using the Bushdid et al. formula on the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "92279d6f-a1a4-4790-a143-fbf5e6a4b548",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C40",
+      "claim": "The methods of Bushdid et al. would conclude that humans can discriminate an infinite number of colors when not limiting the starting space to 128 primary lights.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the methods of Bushdid et al. (2014) would conclude that humans can discriminate an infinite number of colors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulation with infinite dimensionality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "86d65b44-3dc4-4370-88df-ad7446532498",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C41",
+      "claim": "The analysis method of Bushdid et al. fails the 'positive control test' when applied to color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "We can conclude that the analysis method fails the 'positive control test', namely the application to a related problem with known solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the color vision simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "218bac37-460d-47be-ade1-81ead551cc18",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C42",
+      "claim": "The human odor discrimination data in Bushdid et al. could be explained by as few as 10 odor percepts.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the analysis of Bushdid et al. can vastly overestimate the number of discriminable stimuli, one wonders whether the human odor discrimination data in that report could equally be explained by a much smaller number of odor percepts. That is indeed the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the ring model simulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "520abfaf-eb9a-477d-8619-75890e706f1e",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C43",
+      "claim": "A one-dimensional ring model with Gaussian noise of 0.4 radians fits the Bushdid et al. data well.",
+      "claim_type": "EXPLICIT",
+      "source": "With a noise value of 0.4 (SD of the Gaussian noise measured in radians) the fit to the data is quite good. Almost all the data points are within the 1 SD error bars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C comparing model to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "a130c4bf-4729-4d96-9315-04ab600ea630",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C44",
+      "claim": "For a noise value of 0.4, at most 10 vectors can be placed around the unit circle such that each is discriminable from its neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "For a noise value of 0.4, how many mutually discriminable stimuli are there? We should use the standard of Bushdid et al. (2014) for discriminability of an odor pair: 50% correct identification in the 'odd-man-out' odor test. With that criterion, one can place at most 10 vectors around the unit circle such that each is discriminable from its neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the ring model with the specified noise level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "9520f090-d054-4565-a112-242d57c5b746",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C45",
+      "claim": "The published measurements are consistent with a model in which humans can distinguish just 10 olfactory stimuli from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the published measurements are consistent with a model in which humans can distinguish just 10 olfactory stimuli from each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the ring model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "fbd0ac26-e53e-4f70-9224-0bde94dd2ff6",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C46",
+      "claim": "The experiments in Bushdid et al. did not come close to exploring the richness of human olfactory experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of us have experienced more than 10 different smells, so these experiments did not come close to exploring the richness of human olfactory experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on common experience and the analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "e77de0d2-10c6-4616-b8c2-b944e419235e",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C47",
+      "claim": "To confirm that 10 odors are mutually discriminable by brute force, one has to compare each odor to every other one.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that 10 odors are mutually discriminable by brute force one has to compare each odor to every other one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about the requirements for exhaustive discrimination testing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "24b1e6ab-7901-45df-90d0-a867883d599a",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C48",
+      "claim": "Bushdid et al. did 260 pairwise comparisons, of which only about half were discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors did 260 pairwise comparisons, of which only about half were discriminable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the Bushdid et al. experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "1e33c68b-97a7-475b-b372-8d2f589555e8",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C50",
+      "claim": "If one allows for higher numbers of dimensions in odor space, the predicted number of discriminable odors increases approximately exponentially with the dimensionality.",
+      "claim_type": "EXPLICIT",
+      "source": "If one allows for higher numbers of dimensions, then the predicted number of discriminable odors increases, approximately exponentially with the dimensionality of the perceptual space (L Abbott, E Schaffer, and R Axel, personal communication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on personal communication with other researchers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "7db9aed9-6a84-498b-8bc4-c440ee56a4f3",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C51",
+      "claim": "The results of Bushdid et al. are equally consistent with 10 or a trillion discriminable odors or anything in between.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we do not know the dimensionality of odor space, the results of Bushdid et al. (2014) are equally consistent with 10 or a trillion discriminable odors or anything in between.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis showing the method's inability to distinguish hypotheses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "bee1bb14-cfb0-495e-aaba-d8d22f7e92a0",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C52",
+      "claim": "The experiments in Bushdid et al. fail to distinguish alternative hypotheses for the number of discriminable odors.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the experiments fail to distinguish alternative hypotheses for the number of discriminable odors, even absurd ones that are clearly incorrect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "88e30dae-a74d-47d0-ad14-037784d40286",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C53",
+      "claim": "The failure of the Bushdid et al. method occurs in the implicit assignment of odor percepts to different spheres in stimulus space.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of the method in Bushdid et al. (2014) occurs after the sphere-packing estimate (Figure 1B). It involves a step that is never mentioned but implicit in the procedure: the assignment of odor percepts to the different spheres in stimulus space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an analysis of where the method fails.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "370feb8d-8a90-4c3c-afe9-5779b99773fd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C54",
+      "claim": "Bushdid et al. assume that every one of the spheres packed into the space corresponds to a different odor percept.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the authors assume that every one of the spheres packed into the space corresponds to a different odor percept. But this is unwarranted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of an implicit assumption in the Bushdid et al. method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "d3152340-dd5b-45b8-9cd6-633de12f994a",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C55",
+      "claim": "The measurement of critical distance for discrimination only ensures that neighboring spheres correspond to different percepts.",
+      "claim_type": "EXPLICIT",
+      "source": "The measurement of critical distance for discrimination only ensures that neighboring spheres correspond to different percepts, it says nothing about more distant spheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical analysis of what the critical distance measurement implies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "107b313a-291b-4ac5-8c96-139943865e6d",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C56",
+      "claim": "The same odor percept may recur over and over again for physically distinct odor mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the same odor percept may recur over and over again for physically distinct odor mixtures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical possibility that violates the Bushdid et al. assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "dccdb032-8fad-4707-8342-f6d15ac9e6d9",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C57",
+      "claim": "Three colors are sufficient to color close-packed pennies in 2D so that no adjacent ones have the same color.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, three colors are sufficient (Figure 4B), so just three percepts could account for an infinite number of spheres in a 2-dimensional odor space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4B and is a known result from graph theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "6b90e47e-5206-46ce-85c6-08fe32a76324",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C58",
+      "claim": "If the percept depends only on a single function of the coordinates, odors become more discriminable with distance along one dimension but remain indiscriminable along all other dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here I showed that there is a simple and natural way to violate that assumption, namely if the percept depends only on a single function of the coordinates. Then the odors become more discriminable with distance along one dimension, but remain indiscriminable along all other dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the penny coloring example in Figure 4C.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "887200bf-ca77-4bbe-ae35-daa52afc7897",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C59",
+      "claim": "If percepts live in some low-dimensional space embedded in 128 dimensions, this produces efficient labeling of close-packed spheres.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, if the percepts live in some low-dimensional space (as is the case, e.g., for color vision and for the hearing of pure tones) and then one embeds that space in 128 dimensions, this will produce a similarly efficient labeling of the close-packed spheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization from the specific examples analyzed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "16be911d-826a-4830-b821-0dc364240ac0",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C60",
+      "claim": "The definition of critical distance D as 50% discriminability is a weakness of the Bushdid et al. method.",
+      "claim_type": "EXPLICIT",
+      "source": "This brings us to a second weakness of the method: the definition of the critical distance D. This is taken as the distance at which 50% of odor mixture pairs are discriminable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of a methodological weakness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "a77c87dd-e3e8-4237-855d-2e2282ad1748",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C61",
+      "claim": "Two points separated by D in odor space only need to produce a different percept 50% of the time according to the Bushdid et al. definition.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, two points separated by D in odor space only need to produce a different percept 50% of the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a restatement of the Bushdid et al. definition of critical distance.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "2f5ba0a0-04d3-43cf-b655-6bb2b9c4720b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C62",
+      "claim": "Just two colors (white and black) can paint alternating spheres such that every sphere is different from 50% of its neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "That can be done trivially with just two colors, painting alternating spheres white and black. That makes every sphere different from 50% of all its neighbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical demonstration of how the 50% criterion can be satisfied with minimal percepts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "daf926b7-be68-4e56-988d-f3907e633092",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C63",
+      "claim": "To ensure that a sphere-coloring system uses at least 10,000 odors, one would need to raise the criterion for discriminability to 99.99%.",
+      "claim_type": "EXPLICIT",
+      "source": "A popular estimate for the number of discriminable odors (though without solid scientific basis, as reviewed in Bushdid et al., 2014) is around 10,000. To ensure that a sphere-coloring system uses at least 10,000 odors, one would need to raise the criterion for discriminability in the definition of D to 99.99%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on graph coloring requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "cbaf22dd-b983-4735-8d14-732c77d5c9ad",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C64",
+      "claim": "The mathematical method for exploring sensory spaces advocated in Bushdid et al. does not work.",
+      "claim_type": "EXPLICIT",
+      "source": "The arguments above illustrate that the mathematical method for exploring sensory spaces advocated in Bushdid et al. (2014) does not work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript, supported by multiple analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "20127943-44a3-4c78-8448-4a1af7355419",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C65",
+      "claim": "The extrapolation in Bushdid et al. presumes that the space of odor percepts has at least 128 dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Fundamentally the extrapolation presumes that the space of odor percepts has at least 128 dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of an implicit assumption in the Bushdid et al. method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "07c22289-7bb6-4887-b110-410837f42cd0",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C66",
+      "claim": "The 128 primary odors chosen in Bushdid et al. must represent 'orthogonal' directions in perceptual space for their method to work.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the 128 primary odors chosen must represent 'orthogonal' directions in that space, so that the percept varies with distance in the same manner and independently along each of these dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of what assumptions are required for the Bushdid et al. method to be valid.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "85bbdb77-8d6d-4917-9ea4-f7c7aee08859",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C67",
+      "claim": "Violation of the high-dimensionality assumption leads to dramatic failure of the estimate in Bushdid et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Violation of those assumptions, for example if the true dimensionality of odor space is much less than 128, leads to dramatic failure of the estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulations in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "3e0fcbc4-b543-433e-883e-778b66566011",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C68",
+      "claim": "Classic studies of color vision obtained the number of discriminable colors (approximately 1 million) without doing n^2 discrimination tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Classic studies of color vision and tone hearing have achieved that. For color vision, the answer is approximately n = 1 million. How can one come to that conclusion without doing n2 discrimination tests?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how classic color vision studies were conducted.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "5a19d193-406e-4681-a24a-7f4df9eca88a",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C69",
+      "claim": "Success in counting discriminable stimuli is possible by taking advantage of the systematic structure of the perceptual space.",
+      "claim_type": "EXPLICIT",
+      "source": "This is possible only by taking advantage of the systematic structure of the perceptual space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how classic discrimination studies achieved efficiency.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "7f865cde-bead-4a3b-af4c-81fd3809873b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C70",
+      "claim": "Transitivity of discrimination applies in color vision and tone hearing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if light A looks more red than light B and B looks more red than C, then one can trust that A will look more red than C. The same applies in tone hearing: If tone A sounds lower than tone B, and B sounds lower than C, then A will sound lower than C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about perceptual discrimination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "a1c0f5e1-df01-47a1-b0c6-f5480d320e0a",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C71",
+      "claim": "Transitivity of discrimination reduces the experimental burden from order(n^2) down to order(n).",
+      "claim_type": "EXPLICIT",
+      "source": "This transitivity of discrimination means that it is sufficient to measure discrimination of neighboring stimuli to ensure mutual discrimination of all stimuli in the set, which reduces the experimental burden from order(n2) down to order(n).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of transitivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "d167c311-080b-4db1-9de1-79faf3232643",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C72",
+      "claim": "Success of percept-counting studies relied on recognizing that the perceptual space is low-dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "So success of these percept-counting studies relied entirely on recognizing early on that the perceptual space is low-dimensional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of why classic studies succeeded.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "88427b94-d405-4a5e-845a-41e1cbb906fd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C73",
+      "claim": "One needs to first answer 'how many dimensions span the perceptual space of odors' to properly study olfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "How to apply those insights to olfaction? Clearly one needs to first answer 'how many dimensions span the perceptual space of odors'?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "4ccd033e-9ebb-4ac7-94b9-7475f5542cfb",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C74",
+      "claim": "The number of 400 human odorant receptor types sets an upper bound on the dimensionality of the perceptual space.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of 400 human odorant receptor types certainly sets an upper bound on the dimensionality of the perceptual space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the structure of the sensory system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "819ea488-5d1c-4f1a-9b6f-23bfd7b4a1c4",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C75",
+      "claim": "We may need many receptors simply to sense the molecules of interest, not to disambiguate all possible mixtures of those molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there may be another explanation: We need this many receptors simply to sense the molecules of interest, not to disambiguate all possible mixtures of those molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in the manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "64ce9688-9ebf-47ba-895c-de022d2acd5d",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C76",
+      "claim": "E. coli has five different chemoreceptor proteins with different ligand spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterium Escherichia coli illustrates this idea: It has five different chemoreceptor proteins with different ligand spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli chemotaxis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "a0f70c5a-b5d7-4e74-8aee-91043090b3fe",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C77",
+      "claim": "The outputs of all five E. coli receptors converge on a single variable, the concentration of the CheY signaling molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The outputs of all five receptors readily converge on a single variable, namely the concentration of the CheY signaling molecule (Grebe and Stock, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grebe and Stock, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "eba2b2d9-6638-46ae-8ef9-468ad3a9a9b1",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C78",
+      "claim": "E. coli projects the 5-dimensional receptor space onto a 1-dimensional perceptual space of attraction/repulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli projects the 5-dimensional receptor space onto a 1-dimensional perceptual space of attraction/repulsion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the convergence onto CheY concentration.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "2e27f7ed-c0d9-44e1-9d70-c3ff344f8121",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C79",
+      "claim": "It is difficult to make a generic amino acid receptor with high sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably it is difficult to make a generic amino acid receptor with high sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about molecular constraints on receptor design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "1a7910a5-acdf-4172-babe-98a4695211b2",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C80",
+      "claim": "Odorants in the human nose are present at micromolar concentrations or less, in a mucus soup of other components at millimolar concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecules of interest are there at micromolar concentrations or less, in a mucus soup of other components at millimolar concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about the chemical environment in the nose.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "bb467016-cbc3-4ebf-bfa6-45e99f5b570f",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C81",
+      "claim": "To sense odorants separately from mucus, a receptor needs to bind them with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "To sense the odorants separately from the mucus, a receptor needs to bind them with high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the concentration differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "bdc67e5e-1945-4827-b8c1-cc1ac226a6a1",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C82",
+      "claim": "High affinity binding means many contact sites between binding pocket and ligand, which leads to selectivity for the shape of the ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "That means many contact sites between binding pocket and ligand, which in turn leads to selectivity for the shape of the ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about molecular binding principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "fa0933ec-fc17-4315-bf6a-17cfea868edd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C83",
+      "claim": "Even if the olfactory system just wanted to distinguish odors along one dimension, it would be impossible to make a receptor that is selective just for the attractants.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if the olfactory system just wanted to distinguish odors along one dimension (attractive/repulsive), it would be impossible to make a receptor that is selective just for the attractants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about constraints on receptor design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "2a1133f5-d887-4d70-a861-b5a468dce608",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C84",
+      "claim": "Nature makes many receptors that are each selective for small groups of related molecules and then combines their signals using the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead Nature makes many receptors that are each selective for small groups of related molecules and then combines their signals appropriately using the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how the olfactory system is organized.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "9aa7879c-69f5-42b4-89d6-b4ed6cd51c8d",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C85",
+      "claim": "The dimensionality of receptor space is determined by molecular principles involving the number of ligands, their concentrations, binding energetics, and protein design limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this picture the dimensionality of receptor space is determined by molecular principles involving the number of ligands of interest, their relevant concentrations, the energetics of ligand binding, and the design limitations of protein structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about what determines receptor space dimensionality.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "48072fa0-0140-4106-b465-a710b130864a",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C86",
+      "claim": "The dimensionality of perceptual space is governed by behavioral and ecological constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimensionality of perceptual space, on the other hand, is governed by behavioral and ecological constraints: the nature of olfactory cues in the environment, the kinds of decisions the animal makes based on odorants, and the need to associate new odors with unusual events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about what determines perceptual space dimensionality.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "c572faa7-ee88-4524-941a-c495f39c2c93",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C87",
+      "claim": "There is no principled reason that perceptual space should have the same dimensionality as receptor space.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no principled reason that this perceptual space should have the same dimensionality as the receptor space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument based on the different constraints on each space.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "28df11ee-f8e4-4d33-b610-f98a2e4be139",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C88",
+      "claim": "Every hair follicle on human skin contains a sensitive mechanoreceptor, several million altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "Every hair follicle on our skin contains a sensitive mechanoreceptor, several million altogether (Zimmerman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zimmerman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "ac61d336-27cf-47ae-a1cc-fb7ca23656c6",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C89",
+      "claim": "Humans can reliably detect the bending of an individual hair almost anywhere on the body.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes us highly sensitive to touch: we can reliably detect the bending of an individual hair almost anywhere on the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about human touch sensitivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "0c32cf1e-1e4d-4bc1-8a59-4d3299066e08",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C90",
+      "claim": "Humans cannot discriminate all patterns of bent hairs.",
+      "claim_type": "EXPLICIT",
+      "source": "But clearly we cannot discriminate all patterns of bent hairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common experience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "9c3303ec-6e38-4c2a-9c92-b75e4c872727",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C91",
+      "claim": "Brushing across your head twice in a row feels very much the same, even though it causes two different patterns of activity among touch receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Brushing across your head twice in a row feels very much the same, even though it is certain to cause two different patterns of activity among the touch receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common experience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "da011905-859c-4b6c-937d-383c53f2e7fa",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C92",
+      "claim": "Recent studies suggest that the perceptual space for odors may have rather few dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond arguments by analogy, some recent studies of human olfaction suggest that the perceptual space for odors may have rather few dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about recent research trends.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "427722ce-25fb-4ead-9bff-adb7e75f5f25",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C93",
+      "claim": "The dominant axes of perceptual odor space can be related systematically to the physical characteristics of odorous molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the dominant axes of this perceptual space can be related systematically to the physical characteristics of odorous molecules (Secundo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Secundo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "892d0215-e7d1-4fc6-9e4f-3e42f337959c",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C94",
+      "claim": "Mixtures containing many (>20) diverse odorants tend to smell alike, even if they don't share any molecular components.",
+      "claim_type": "EXPLICIT",
+      "source": "Another relevant observation is that mixtures containing many (>20) diverse odorants tend to smell alike, even if they don't share any molecular components (Weiss et al., 2012), a phenomenon that has been termed 'olfactory white', in analogy to the 'white' percept associated with a mix of many colored lights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weiss et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "d11183fa-f86e-47a6-93fb-34a92f9be911",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C95",
+      "claim": "The dimensionality of odor percepts may be around 20 or less.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the dimensionality of odor percepts may be around 20 or less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the olfactory white phenomenon.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "87d17a68-54b0-4716-8348-fd1fdc207885",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C96",
+      "claim": "Mice are readily trained to distinguish odors, even closely related mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice are readily trained to distinguish odors, even closely related mixtures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mouse behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "53d2b06e-66c7-4daa-8a62-6077455277b1",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C97",
+      "claim": "Mice offer an opportunity to stimulate receptor neurons directly by optogenetic activation of the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, they offer an opportunity to stimulate the receptor neurons directly, by optogenetic activation of the olfactory bulb (Spors et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Spors et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "1655976c-2e61-44ac-a078-a4b6739904df",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C98",
+      "claim": "Using optogenetics, arbitrary activation patterns of different olfactory receptor types can be driven by shining patterned light onto the glomeruli in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "In a suitably engineered animal one could drive arbitrary activation patterns of the different olfactory receptor types by shining patterned light onto the glomeruli in the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal for a future experimental approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "a6ae5089-3d32-46d1-ac8d-e47b7b0bc87b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C99",
+      "claim": "Optogenetic stimulation allows patterns of stimulation that may not ever occur with natural odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this method allows patterns of stimulation that may not ever occur with natural odorants; one could then test if the perceptual space differs from receptor space, and is shaped to the ecology of real odors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the capabilities of the proposed optogenetic approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "f2c46909-1b83-4cef-b2b0-7659273b9b6b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C100",
+      "claim": "The olfactory bulb surface can be thought of as a retina for the smell system.",
+      "claim_type": "EXPLICIT",
+      "source": "In a way, one can think of the olfactory bulb surface as a retina for the smell system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy proposed by the author.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "5f42af6f-e23d-4f67-b17e-f6659c0de3e8",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C101",
+      "claim": "Olfactory objects produce spatio-temporal patterns on the olfactory bulb surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory objects produce spatio-temporal patterns on this surface, and the downstream neural circuits are busy identifying, discriminating, or learning those spatio-temporal patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about olfactory processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "7015caa6-9d6a-4c98-bbd0-e33a95fdaf72",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C102",
+      "claim": "The number of dimensions in human pattern vision is much lower than the number of receptors on the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear already that the number of dimensions is much lower than the number of receptors on the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "fd67121f-014a-464e-b1d2-04764b5eb87d",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C103",
+      "claim": "Pairs of visual images can have very different effects on the retina but look the same to human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "One can make pairs of visual images that have very different effects on the retina, but look the same to human subjects (Freeman and Simoncelli, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Freeman and Simoncelli, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "338b9738-7b2f-4a72-bf67-4844c2d42e9b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C104",
+      "claim": "A systematic approach to measuring dimensionality of pattern vision is beginning to yield results.",
+      "claim_type": "EXPLICIT",
+      "source": "And a systematic approach to measuring dimensionality of pattern vision is beginning to yield results (JD Victor, personal communication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on personal communication with JD Victor.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "3dbe8ebc-cd09-4f07-9992-fa9e0375ff94",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C105",
+      "claim": "Pursuing the analogy of smell to pattern vision will be more fruitful than the analogy to color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these developments, I suggest that pursuing the analogy of smell to pattern vision will be more fruitful than the analogy to color vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "049aa886-8a07-44e5-93ed-f9cd3e8eda59",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C106",
+      "claim": "Determining the dimensionality of the space of odor percepts is a precondition to estimating the number of distinct percepts.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of approach though, determining the dimensionality of the space of odor percepts is a precondition to estimating the number of distinct percepts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "5c478121-992d-4d2a-b40e-ea5303f69357",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C107",
+      "claim": "The recognition that color space is three-dimensional has had enormous impact in science, art, and technology.",
+      "claim_type": "EXPLICIT",
+      "source": "The recognition that color space is three-dimensional has had enormous impact in science, art, and technology, as anyone reading this on a color monitor will confirm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the impact of color science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "931e3f03-f127-4493-afce-618b55f35397",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C108",
+      "claim": "The search for a basis set for odors has fascinated scientists, engineers, and perfumers for some time.",
+      "claim_type": "EXPLICIT",
+      "source": "The search for a similar basis set for odors has fascinated scientists, engineers, and perfumers for some time (Gilbert, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilbert, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "31c8c0d3-b050-46b4-915a-26b2daffba6f",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "claim_id": "C109",
+      "claim": "Even proving that a low-dimensional basis for odors does not exist would be a major advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Even proving that a low-dimensional basis does not exist would be a major advance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an opinion about the value of future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2188df3c-404c-4cfe-8654-f065c2d3c25c",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Bushdid et al. method fails when applied to a toy microbe model with only three odor response states ('yuck', 'yum', 'meh'). The method estimates ~9\u00d710^11 discriminable odors for this system, yet by construction the model can only distinguish three classes of odors, meaning at most three odors can be mutually discriminated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 demonstrate through simulation that the Bushdid method produces an estimate of ~9\u00d710^11 discriminable odors for a system that by construction has only 3 discriminable states. This provides clear evidence that the method fails (C16), as the estimate exceeds the true value by many orders of magnitude. The simulation is well-defined and the logical contradiction is unambiguous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "396546db-85dc-4a8f-a059-a739c7983988",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When the Bushdid et al. method is applied to human color vision through simulation, it estimates >10^27 discriminable colors in 128-dimensional space, or infinite colors when not limiting to 128 primaries. This contradicts the known experimental result of ~1 million discriminable colors, demonstrating that the method fails the 'positive control test'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C41 provide a comprehensive simulation of color vision with well-established parameters (C28, C33, C34). The simulation follows the Bushdid procedure exactly and yields estimates (C39, C40) that exceed known empirical values by >20 orders of magnitude. The color vision system is sufficiently well-characterized that this simulation constitutes a valid positive control, and the dramatic failure (C41) strongly supports the claim that the Bushdid method is fundamentally flawed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "4499520c-5f1c-4914-a66b-41d1408cf387",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A one-dimensional ring model with Gaussian noise (SD = 0.4 radians) fits the Bushdid et al. human odor discrimination data well, yet this model predicts only 10 mutually discriminable odors. This demonstrates that the published measurements are consistent with humans distinguishing as few as 10 olfactory stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 show that a simple 1D model with a single adjustable parameter (noise level) fits the Bushdid data within 1 SD error bars while predicting only 10 discriminable odors. This provides strong evidence (C42, C45) that the original data cannot distinguish between vastly different hypotheses about odor discrimination capacity. The model is clearly specified and the fit quality is documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "11cc1616-c33c-40ce-8ca9-d485a5291bdd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Bushdid et al. data are equally consistent with a trillion discriminable odors, just 10, or anything in between, because the number of discriminable odors increases exponentially with the unknown dimensionality of odor space. The experiments fail to distinguish between alternative hypotheses for the number of discriminable odors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 logically follow from the demonstrations in the toy microbe (3 odors), ring model (10 odors), and color vision (>10^27 colors) simulations. Since all these vastly different systems can be made consistent with the Bushdid data by varying dimensionality, and the true dimensionality of odor space is unknown, the conclusion (C17, C51, C52) that the data cannot distinguish hypotheses is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "48d1f483-82c0-499d-9896-0a270247f1a9",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Bushdid et al. method fails because it implicitly assumes every close-packed sphere in stimulus space corresponds to a different odor percept. However, the critical distance measurement only ensures neighboring spheres differ, not distant ones. The same percept can recur for physically distinct mixtures, as demonstrated by the fact that three colors suffice to color close-packed circles in 2D, or that percepts varying along one dimension can efficiently label spheres in high-dimensional space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 provide a clear logical analysis of the implicit assumption in the Bushdid method (C54) and why it is unwarranted (C55). The penny-coloring examples (C57) and one-dimensional variation example (C58) are mathematically sound demonstrations that far fewer percepts than spheres can satisfy the neighbor-discrimination criterion. This analysis correctly identifies a fundamental flaw in the extrapolation method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "f6ff2fb0-0f55-46b7-abd7-e71e64942c40",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The definition of critical distance D as 50% discriminability is a weakness because it only requires that spheres differ from 50% of neighbors. Just two colors (alternating black and white) can satisfy this criterion. To ensure at least 10,000 discriminable odors, the discriminability criterion would need to be raised to 99.99%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 identify a second fundamental flaw in the method. The mathematical argument (C62) that two colors suffice for 50% neighbor discrimination is sound, and the calculation (C63) that 99.99% discriminability would be needed for 10,000 odors follows from graph coloring theory. This demonstrates that the 50% threshold is far too permissive for the intended inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "9451df9f-19dc-46b3-b45c-7b4c20f01554",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Bushdid et al. mathematical method does not work because it fundamentally presumes the odor percept space has at least 128 dimensions with orthogonal primary odors. Violation of these assumptions, such as if the true dimensionality is much less than 128, leads to dramatic failure of the estimate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 synthesize the findings from the three simulation studies. The identification of implicit assumptions (C65, C66) is well-supported by the analysis, and the demonstration that violating these assumptions causes dramatic failure (C67) is directly shown by the toy microbe, ring model, and color vision simulations. This represents a valid summary conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "905e745e-1b73-478f-8502-9c51b606ebaf",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Bushdid et al. experiments did not explore the richness of human olfactory experience. To confirm 10 mutually discriminable odors requires comparing each to every other (45 comparisons), but the authors did 260 pairwise comparisons with only ~130 discriminable, yielding evidence for approximately \u221a148 \u2248 12 distinct odors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 provide factual information about the experimental design, and C46 draws a reasonable inference. The calculation that ~130 discriminable pairs out of 260 total suggests evidence for approximately \u221a130 \u2248 11-12 distinct odors is mathematically sound, supporting the conclusion that the experiments provided weak constraints on odor discrimination capacity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "ce60ad0d-957f-45b2-9c80-6992276caa98",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Classic color vision studies determined ~1 million discriminable colors without n\u00b2 discrimination tests by exploiting the systematic, low-dimensional structure of perceptual space and transitivity of discrimination. This reduces experimental burden from O(n\u00b2) to O(n). Success required recognizing early that color space is low-dimensional, suggesting that determining odor space dimensionality should be the first priority for olfaction research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 accurately describe how classic psychophysics studies achieved efficiency through transitivity (C70, C71) and low-dimensional structure (C72). The recommendation (C73) logically follows from this analysis. These are well-established principles in sensory psychophysics, and the inference that they should guide olfaction research is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 400 human odorant receptor types set an upper bound on perceptual space dimensionality, but many receptors may be needed simply to sense molecules of interest with sufficient affinity and selectivity, not to disambiguate all mixtures. E. coli illustrates this: it has 5 chemoreceptors but projects onto 1-dimensional attraction/repulsion space. Receptor space dimensionality is determined by molecular constraints while perceptual space dimensionality is governed by behavioral/ecological constraints, so there is no principled reason they should match.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The E. coli example (C76-C78) is well-supported by citation and provides a clear case where receptor number exceeds perceptual dimensions. The molecular arguments (C79-C84) about affinity, selectivity, and binding constraints are biochemically sound. The distinction between constraints on receptor vs. perceptual space (C85-C87) is logically coherent and supported by the examples provided. This represents a well-reasoned hypothesis about why receptor number may not predict perceptual dimensionality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "ff458562-4952-46d9-b48a-eba733674a43",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Human touch provides an analogy: millions of mechanoreceptors (hair follicles) enable detection of individual hair bending, yet humans cannot discriminate all patterns of bent hairs, as brushing hair twice produces the same sensation despite different receptor activation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 provide a valid analogy supporting the distinction between receptor space and perceptual space. The factual claim about mechanoreceptors (C88) is supported by citation, and the observations about discrimination limits (C90-C91) are based on common experience and are plausible. This effectively illustrates the principle that high receptor dimensionality does not imply high perceptual dimensionality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "4d6ddc6a-e807-4abb-9a7c-86fa46d29bcd",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Recent studies suggest human odor perceptual space may have few dimensions, with dominant axes relating systematically to physical molecular characteristics. The 'olfactory white' phenomenon\u2014where mixtures of >20 diverse odorants smell alike despite sharing no components\u2014suggests dimensionality may be around 20 or less.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 are supported by appropriate citations (Secundo et al. 2014, Weiss et al. 2012). The inference (C95) that olfactory white suggests \u226420 dimensions is reasonable by analogy to color vision, though it represents an upper bound estimate rather than a precise measurement. The logic is sound even if the exact number remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mice can be trained to distinguish odors and offer opportunities for optogenetic stimulation of olfactory bulb glomeruli to drive arbitrary receptor activation patterns. This approach could test whether perceptual space differs from receptor space and is shaped by odor ecology. The olfactory bulb surface can be thought of as a 'retina for smell' producing spatio-temporal patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C97 about mouse capabilities are supported by citations and established knowledge. However, C98-C99 describe proposed future experiments that have not been performed, making them speculative. The analogy to a retina (C100-C101) is conceptually interesting but remains a proposal rather than demonstrated result. While the experimental approach is reasonable, it represents future work rather than current evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "42da7a1f-f4ed-4a60-8373-ea7d3df915d9",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In pattern vision, perceptual dimensionality is much lower than retinal receptor number. Pairs of images can have different retinal effects yet look identical. Systematic approaches to measuring pattern vision dimensionality are beginning to yield results, suggesting that pursuing the analogy of smell to pattern vision will be more fruitful than the analogy to color vision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 are supported by established knowledge and citation (Freeman and Simoncelli 2011). The statement about ongoing work (C104) is attributed to personal communication. The recommendation (C105) is a reasonable inference based on the parallels drawn between olfaction and pattern vision (both having high receptor dimensionality but potentially lower perceptual dimensionality), though it remains a suggestion for future research direction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "237a6897-ecfc-4c51-97f2-062fb04cda25",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Determining the dimensionality of odor percept space is a precondition to estimating the number of distinct percepts. The recognition that color space is three-dimensional had enormous impact in science, art, and technology. The search for a basis set for odors has fascinated researchers for some time, and even proving that a low-dimensional basis does not exist would be a major advance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is a logical conclusion well-supported by the entire analysis showing that dimensionality is the critical unknown parameter. Claims C107-C108 are supported by established knowledge and citation. Claim C109 represents a reasonable opinion about the value of future research. Together these claims provide appropriate context and motivation for the recommended research direction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "44d95e58-feb3-4cec-83a9-5b593c9798ab",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Human color vision has a three-dimensional perceptual space, established since the 17th century through color-matching experiments showing that three primary lights are necessary and sufficient. This is based on three cone photoreceptor types, and humans can distinguish about 1-2 million different colors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 present well-established facts about color vision supported by appropriate citations (Mollon 2003, Masaoka et al. 2013) and general knowledge. These provide essential background for the manuscript's comparative analysis and positive control test. The claims are internally consistent and represent accepted scientific knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "faf336dd-0a1d-41f7-afe0-482d79ea126b",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Human olfaction involves ~400 receptor types that differ in sensitivity to odorants. Two odors are only distinguishable if they cause different receptor activation patterns, suggesting a 400-dimensional neural space at the input level. However, perceptual similarity analysis suggests odor space is dominated by 1-2 dimensions, and the number of discriminable odors is thought to be only 10,000 (though this is largely anecdotal).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 provide appropriate background on olfaction supported by citations (Malnic et al. 2004, Secundo et al. 2014, Gilbert 2008). The apparent paradox between 400-dimensional receptor space and low-dimensional perceptual space sets up the manuscript's central question. The caveat that the 10,000 estimate is anecdotal (C13) appropriately acknowledges uncertainty in prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "b38aef13-c5ce-4c42-aa85-03dacaaac433",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Bushdid et al. (2014) claimed humans can discriminate one trillion odors based on experiments where humans successfully discriminated only 148 pairs of odors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 accurately describe the Bushdid et al. study being critiqued. These factual statements about the prior work are verifiable from the cited paper and provide necessary context for the critique. The stark contrast between 148 tested pairs and the trillion-odor claim highlights the magnitude of the extrapolation being questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    },
+    {
+      "id": "2a9e99c3-bb4c-4eb8-90bc-76500482e68f",
+      "content_id": "1472b958-1ede-4134-bd3f-f949d25eba20",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Bushdid et al. created odor mixtures from 128 primary substances, varying the number of shared components between mixture pairs. They assumed discrimination ability improves systematically with the distance (number of unshared components) between mixtures, and found that discrimination probability increases with unshared components M. They defined critical distance D as the separation at which 50% of mixture pairs are discriminable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 accurately describe the methodology of Bushdid et al. (2014) based on the cited paper. These descriptions are necessary for understanding the critique and are presented factually. The characterization of their assumptions and definitions is accurate and provides the foundation for analyzing where the method fails.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:23:40.095384Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44069c70-3507-4f74-b9f4-a2f7364e8ac3",
+      "result_id": "2188df3c-404c-4cfe-8654-f065c2d3c25c"
+    },
+    {
+      "claim_id": "c44b3ad5-c7d6-426d-9c5c-01ca66228d77",
+      "result_id": "2188df3c-404c-4cfe-8654-f065c2d3c25c"
+    },
+    {
+      "claim_id": "5141da57-5866-4d7d-ad18-bf98a61a6a67",
+      "result_id": "2188df3c-404c-4cfe-8654-f065c2d3c25c"
+    },
+    {
+      "claim_id": "fc687e33-bb4d-4aad-8876-4b099fd40062",
+      "result_id": "2188df3c-404c-4cfe-8654-f065c2d3c25c"
+    },
+    {
+      "claim_id": "c164c674-886c-48c5-b96c-096d63e5393f",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "186f9223-2119-4882-99c2-3f2672e087f2",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "373ff890-13b4-4135-985b-787b4de91a9c",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "87a60fbe-051f-4f14-bb9c-e1061aa770dd",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "41ab9abc-39e3-4129-8d7e-9f30fcdc8899",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "6a8013af-1585-4e4a-a7fd-737d5f83f68d",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "daf8d8f7-80f9-4f82-9465-9c17540cdf08",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "6f69860e-0727-4ba1-8ae9-989bf13bbaef",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "d65fbdce-9ad8-4c3d-915a-1eb7dc5ae700",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "4c251253-0395-47f0-b6d8-1959fcd16b1b",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "e85ae247-cebf-4493-ac7d-13209a7f4240",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "a8837789-d45a-4718-8048-48f0de7af3c5",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "0b528121-f587-4e27-85e5-5a58cc23bab1",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "077788b8-5fe2-4c40-8edb-013ea6d8c045",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "ba11eeb7-12d0-4d92-ab8b-5b4d0b063904",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "92279d6f-a1a4-4790-a143-fbf5e6a4b548",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "86d65b44-3dc4-4370-88df-ad7446532498",
+      "result_id": "396546db-85dc-4a8f-a059-a739c7983988"
+    },
+    {
+      "claim_id": "218bac37-460d-47be-ade1-81ead551cc18",
+      "result_id": "4499520c-5f1c-4914-a66b-41d1408cf387"
+    },
+    {
+      "claim_id": "520abfaf-eb9a-477d-8619-75890e706f1e",
+      "result_id": "4499520c-5f1c-4914-a66b-41d1408cf387"
+    },
+    {
+      "claim_id": "a130c4bf-4729-4d96-9315-04ab600ea630",
+      "result_id": "4499520c-5f1c-4914-a66b-41d1408cf387"
+    },
+    {
+      "claim_id": "9520f090-d054-4565-a112-242d57c5b746",
+      "result_id": "4499520c-5f1c-4914-a66b-41d1408cf387"
+    },
+    {
+      "claim_id": "6e80ef3a-dc4e-411a-bbe6-ebf40e359a09",
+      "result_id": "11cc1616-c33c-40ce-8ca9-d485a5291bdd"
+    },
+    {
+      "claim_id": "1e33c68b-97a7-475b-b372-8d2f589555e8",
+      "result_id": "11cc1616-c33c-40ce-8ca9-d485a5291bdd"
+    },
+    {
+      "claim_id": "7db9aed9-6a84-498b-8bc4-c440ee56a4f3",
+      "result_id": "11cc1616-c33c-40ce-8ca9-d485a5291bdd"
+    },
+    {
+      "claim_id": "bee1bb14-cfb0-495e-aaba-d8d22f7e92a0",
+      "result_id": "11cc1616-c33c-40ce-8ca9-d485a5291bdd"
+    },
+    {
+      "claim_id": "88e30dae-a74d-47d0-ad14-037784d40286",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "370feb8d-8a90-4c3c-afe9-5779b99773fd",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "d3152340-dd5b-45b8-9cd6-633de12f994a",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "107b313a-291b-4ac5-8c96-139943865e6d",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "dccdb032-8fad-4707-8342-f6d15ac9e6d9",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "6b90e47e-5206-46ce-85c6-08fe32a76324",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "887200bf-ca77-4bbe-ae35-daa52afc7897",
+      "result_id": "48d1f483-82c0-499d-9896-0a270247f1a9"
+    },
+    {
+      "claim_id": "16be911d-826a-4830-b821-0dc364240ac0",
+      "result_id": "f6ff2fb0-0f55-46b7-abd7-e71e64942c40"
+    },
+    {
+      "claim_id": "a77c87dd-e3e8-4237-855d-2e2282ad1748",
+      "result_id": "f6ff2fb0-0f55-46b7-abd7-e71e64942c40"
+    },
+    {
+      "claim_id": "2f5ba0a0-04d3-43cf-b655-6bb2b9c4720b",
+      "result_id": "f6ff2fb0-0f55-46b7-abd7-e71e64942c40"
+    },
+    {
+      "claim_id": "daf926b7-be68-4e56-988d-f3907e633092",
+      "result_id": "f6ff2fb0-0f55-46b7-abd7-e71e64942c40"
+    },
+    {
+      "claim_id": "cbaf22dd-b983-4735-8d14-732c77d5c9ad",
+      "result_id": "9451df9f-19dc-46b3-b45c-7b4c20f01554"
+    },
+    {
+      "claim_id": "20127943-44a3-4c78-8448-4a1af7355419",
+      "result_id": "9451df9f-19dc-46b3-b45c-7b4c20f01554"
+    },
+    {
+      "claim_id": "07c22289-7bb6-4887-b110-410837f42cd0",
+      "result_id": "9451df9f-19dc-46b3-b45c-7b4c20f01554"
+    },
+    {
+      "claim_id": "85bbdb77-8d6d-4917-9ea4-f7c7aee08859",
+      "result_id": "9451df9f-19dc-46b3-b45c-7b4c20f01554"
+    },
+    {
+      "claim_id": "fbd0ac26-e53e-4f70-9224-0bde94dd2ff6",
+      "result_id": "905e745e-1b73-478f-8502-9c51b606ebaf"
+    },
+    {
+      "claim_id": "e77de0d2-10c6-4616-b8c2-b944e419235e",
+      "result_id": "905e745e-1b73-478f-8502-9c51b606ebaf"
+    },
+    {
+      "claim_id": "24b1e6ab-7901-45df-90d0-a867883d599a",
+      "result_id": "905e745e-1b73-478f-8502-9c51b606ebaf"
+    },
+    {
+      "claim_id": "3e0fcbc4-b543-433e-883e-778b66566011",
+      "result_id": "ce60ad0d-957f-45b2-9c80-6992276caa98"
+    },
+    {
+      "claim_id": "5a19d193-406e-4681-a24a-7f4df9eca88a",
+      "result_id": "ce60ad0d-957f-45b2-9c80-6992276caa98"
+    },
+    {
+      "claim_id": "7f865cde-bead-4a3b-af4c-81fd3809873b",
+      "result_id": "ce60ad0d-957f-45b2-9c80-6992276caa98"
+    },
+    {
+      "claim_id": "a1c0f5e1-df01-47a1-b0c6-f5480d320e0a",
+      "result_id": "ce60ad0d-957f-45b2-9c80-6992276caa98"
+    },
+    {
+      "claim_id": "d167c311-080b-4db1-9de1-79faf3232643",
+      "result_id": "ce60ad0d-957f-45b2-9c80-6992276caa98"
+    },
+    {
+      "claim_id": "88427b94-d405-4a5e-845a-41e1cbb906fd",
+      "result_id": "ce60ad0d-957f-45b2-9c80-6992276caa98"
+    },
+    {
+      "claim_id": "4ccd033e-9ebb-4ac7-94b9-7475f5542cfb",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "819ea488-5d1c-4f1a-9b6f-23bfd7b4a1c4",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "64ce9688-9ebf-47ba-895c-de022d2acd5d",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "a0f70c5a-b5d7-4e74-8aee-91043090b3fe",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "eba2b2d9-6638-46ae-8ef9-468ad3a9a9b1",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "2e27f7ed-c0d9-44e1-9d70-c3ff344f8121",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "1a7910a5-acdf-4172-babe-98a4695211b2",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "bb467016-cbc3-4ebf-bfa6-45e99f5b570f",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "bdc67e5e-1945-4827-b8c1-cc1ac226a6a1",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "fa0933ec-fc17-4315-bf6a-17cfea868edd",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "2a1133f5-d887-4d70-a861-b5a468dce608",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "9aa7879c-69f5-42b4-89d6-b4ed6cd51c8d",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "48072fa0-0140-4106-b465-a710b130864a",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "c572faa7-ee88-4524-941a-c495f39c2c93",
+      "result_id": "4b1227da-4b12-47b6-b6d1-2588a7fbabdd"
+    },
+    {
+      "claim_id": "28df11ee-f8e4-4d33-b610-f98a2e4be139",
+      "result_id": "ff458562-4952-46d9-b48a-eba733674a43"
+    },
+    {
+      "claim_id": "ac61d336-27cf-47ae-a1cc-fb7ca23656c6",
+      "result_id": "ff458562-4952-46d9-b48a-eba733674a43"
+    },
+    {
+      "claim_id": "0c32cf1e-1e4d-4bc1-8a59-4d3299066e08",
+      "result_id": "ff458562-4952-46d9-b48a-eba733674a43"
+    },
+    {
+      "claim_id": "9c3303ec-6e38-4c2a-9c92-b75e4c872727",
+      "result_id": "ff458562-4952-46d9-b48a-eba733674a43"
+    },
+    {
+      "claim_id": "da011905-859c-4b6c-937d-383c53f2e7fa",
+      "result_id": "4d6ddc6a-e807-4abb-9a7c-86fa46d29bcd"
+    },
+    {
+      "claim_id": "427722ce-25fb-4ead-9bff-adb7e75f5f25",
+      "result_id": "4d6ddc6a-e807-4abb-9a7c-86fa46d29bcd"
+    },
+    {
+      "claim_id": "892d0215-e7d1-4fc6-9e4f-3e42f337959c",
+      "result_id": "4d6ddc6a-e807-4abb-9a7c-86fa46d29bcd"
+    },
+    {
+      "claim_id": "d11183fa-f86e-47a6-93fb-34a92f9be911",
+      "result_id": "4d6ddc6a-e807-4abb-9a7c-86fa46d29bcd"
+    },
+    {
+      "claim_id": "87d17a68-54b0-4716-8348-fd1fdc207885",
+      "result_id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1"
+    },
+    {
+      "claim_id": "53d2b06e-66c7-4daa-8a62-6077455277b1",
+      "result_id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1"
+    },
+    {
+      "claim_id": "1655976c-2e61-44ac-a078-a4b6739904df",
+      "result_id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1"
+    },
+    {
+      "claim_id": "a6ae5089-3d32-46d1-ac8d-e47b7b0bc87b",
+      "result_id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1"
+    },
+    {
+      "claim_id": "f2c46909-1b83-4cef-b2b0-7659273b9b6b",
+      "result_id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1"
+    },
+    {
+      "claim_id": "5f42af6f-e23d-4f67-b17e-f6659c0de3e8",
+      "result_id": "29e1b6ad-34c2-4d67-88ea-7781ccaf2ca1"
+    },
+    {
+      "claim_id": "7015caa6-9d6a-4c98-bbd0-e33a95fdaf72",
+      "result_id": "42da7a1f-f4ed-4a60-8373-ea7d3df915d9"
+    },
+    {
+      "claim_id": "fd67121f-014a-464e-b1d2-04764b5eb87d",
+      "result_id": "42da7a1f-f4ed-4a60-8373-ea7d3df915d9"
+    },
+    {
+      "claim_id": "338b9738-7b2f-4a72-bf67-4844c2d42e9b",
+      "result_id": "42da7a1f-f4ed-4a60-8373-ea7d3df915d9"
+    },
+    {
+      "claim_id": "3dbe8ebc-cd09-4f07-9992-fa9e0375ff94",
+      "result_id": "42da7a1f-f4ed-4a60-8373-ea7d3df915d9"
+    },
+    {
+      "claim_id": "049aa886-8a07-44e5-93ed-f9cd3e8eda59",
+      "result_id": "237a6897-ecfc-4c51-97f2-062fb04cda25"
+    },
+    {
+      "claim_id": "5c478121-992d-4d2a-b40e-ea5303f69357",
+      "result_id": "237a6897-ecfc-4c51-97f2-062fb04cda25"
+    },
+    {
+      "claim_id": "931e3f03-f127-4493-afce-618b55f35397",
+      "result_id": "237a6897-ecfc-4c51-97f2-062fb04cda25"
+    },
+    {
+      "claim_id": "31c8c0d3-b050-46b4-915a-26b2daffba6f",
+      "result_id": "237a6897-ecfc-4c51-97f2-062fb04cda25"
+    },
+    {
+      "claim_id": "0b868d3e-f3f8-45cc-b99a-5ed83537a62f",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "c95b81da-8c04-474a-897f-044e7f0293b9",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "2c788d2a-b96a-45b9-a1ab-2f0f9a6eb428",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "cc413a06-a6a6-450d-925c-560af96885a5",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "5179153c-f9eb-421c-a43e-5579566ba74b",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "686c1eb7-0000-4337-836d-6875c2952d5e",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "e8e2fc11-3007-4228-b0d6-a01b8fbb96e4",
+      "result_id": "44d95e58-feb3-4cec-83a9-5b593c9798ab"
+    },
+    {
+      "claim_id": "e8562541-5745-406e-bd06-238722820d58",
+      "result_id": "faf336dd-0a1d-41f7-afe0-482d79ea126b"
+    },
+    {
+      "claim_id": "d3b4d9c8-8a36-4fe1-ae35-e08834b03ca8",
+      "result_id": "faf336dd-0a1d-41f7-afe0-482d79ea126b"
+    },
+    {
+      "claim_id": "ceb0e973-aa59-4aad-94e5-afe166f80eda",
+      "result_id": "faf336dd-0a1d-41f7-afe0-482d79ea126b"
+    },
+    {
+      "claim_id": "478a1714-61ee-43b0-ada3-81693a057cd8",
+      "result_id": "faf336dd-0a1d-41f7-afe0-482d79ea126b"
+    },
+    {
+      "claim_id": "93dd53ab-d546-4493-9982-3317d46629e6",
+      "result_id": "faf336dd-0a1d-41f7-afe0-482d79ea126b"
+    },
+    {
+      "claim_id": "570435c6-7c03-4167-9dee-e65787f350ef",
+      "result_id": "faf336dd-0a1d-41f7-afe0-482d79ea126b"
+    },
+    {
+      "claim_id": "7c66babe-9087-4f6b-932f-d78f740a6682",
+      "result_id": "b38aef13-c5ce-4c42-aa85-03dacaaac433"
+    },
+    {
+      "claim_id": "d357d5b5-9d10-4619-a819-9325ca122270",
+      "result_id": "b38aef13-c5ce-4c42-aa85-03dacaaac433"
+    },
+    {
+      "claim_id": "119b651c-b4db-45cb-bfd4-52c2a4938270",
+      "result_id": "2a9e99c3-bb4c-4eb8-90bc-76500482e68f"
+    },
+    {
+      "claim_id": "c65eab67-3074-46be-b6d3-8edae1751ad3",
+      "result_id": "2a9e99c3-bb4c-4eb8-90bc-76500482e68f"
+    },
+    {
+      "claim_id": "9ab3bdf8-ddae-41e3-a062-7a94209af320",
+      "result_id": "2a9e99c3-bb4c-4eb8-90bc-76500482e68f"
+    },
+    {
+      "claim_id": "e670b1b4-f4b4-40ff-939c-4b174088da58",
+      "result_id": "2a9e99c3-bb4c-4eb8-90bc-76500482e68f"
+    }
+  ],
+  "comparisons": []
+}

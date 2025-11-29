@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Subjects demonstrated blindsight behavior: they reported seeing 62.4\u00b13.62% of targets with 86.6\u00b12.54% accuracy on seen trials, while on unseen trials they achieved 50.7\u00b16.4% accuracy (significantly above 12.5% chance, p<0.001), with correct localization being the dominant response at all eight locations even when targets were reported as unseen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide converging behavioral evidence for blindsight with appropriate statistical testing. The above-chance performance on unseen trials (C10) with statistical significance, combined with the confusion matrix showing correct localization as dominant even on unseen trials (C11), strongly supports the blindsight phenomenon. Response time data (C12-C15) further characterizes the behavioral differences across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Multivariate decoding of target location from MEG/EEG signals revealed four temporal stages: (1) chance-level decoding from 0-115ms, (2) above-chance decoding peaking at 147ms from 115-162ms, (3) reduced but significant decoding from 162-271ms, and (4) sustained above-chance decoding from 271-800ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe the temporal dynamics of location decoding with appropriate statistical tests (all p<0.0001 for above-chance periods). The four-stage temporal pattern is clearly defined with specific time windows and quantitative decoding probabilities. This provides the foundational result for subsequent analyses comparing seen and unseen conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Even on 'Unseen-Incorrect' trials where behavioral responses were wrong, spatial information remained decodable above chance in the late time window (0.143\u00b10.005, p<0.01), indicating that unconscious spatial information persists for up to 800ms despite the traditional view that unconscious perception is transient and short-lived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 demonstrate a striking extension of blindsight: above-chance neural decoding even when behavioral performance fails. The statistical significance (C20) combined with the interpretation extending traditional blindsight concepts (C21-C22) and challenging prior assumptions about unconscious perception duration (C23-C24) is well-supported by the data, though the interpretation represents a strong inference from the decoding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Seen-Correct and Unseen-Correct trials showed identical decoding during the first three stages but diverged in the fourth stage (271-800ms), with Seen-Correct trials showing higher classification probability (0.162\u00b10.009) than Unseen-Correct trials (0.155\u00b10.009, p=0.014), a difference that survived correction for chance responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 establish the key temporal divergence between conscious and unconscious processing. The statistical testing is appropriate (C28), and the correction for chance responses (C29) addresses a potential confound. The effect size is modest but consistent, and the temporal specificity (divergence only in the fourth stage) is theoretically important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The fourth time window where location decoding differed between seen and unseen trials corresponds to the timing of N2 and P3 event-related potentials, with MEG magnetometers showing differences in the N2 window and EEG electrodes showing differences in the P3 window with appropriate topography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 connect the decoding results to traditional ERP/ERF components associated with consciousness. The temporal correspondence (C30) and the specific sensor-level differences (C31-C32) with appropriate topography provide converging evidence linking the multivariate decoding approach to established consciousness markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Control analyses demonstrated that location decoding was stimulus-based rather than motor-based: classification of responses on target-absent trials was at chance, and EOG-based decoding showed a different temporal pattern (starting ~250ms, lower amplitude ~14%), did not discriminate seen from unseen trials, suggesting eye movements did not dominate the decoding results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide critical control analyses addressing potential confounds. The target-absent trial analysis (C33) rules out motor preparation artifacts, while the EOG analysis (C34-C35) addresses eye movement contributions. These controls strengthen confidence that the main decoding results reflect genuine stimulus processing rather than artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Cross-condition generalization revealed asymmetry: classifiers trained on Unseen-Correct trials generalized fully to Seen-Correct trials, but classifiers trained on Seen-Correct trials showed reduced performance on Unseen-Correct trials in both the third (178-225ms, p=0.017) and fourth (272-800ms, p=0.032) time windows, indicating that seen trials contain the same information as unseen trials plus additional unique information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 demonstrate a theoretically critical asymmetry with appropriate statistical testing. The cross-generalization approach is methodologically sound for testing whether conscious and unconscious representations differ qualitatively or quantitatively. The asymmetry pattern strongly supports the interpretation that conscious perception involves additional neural codes (C40), though alternative explanations (e.g., signal strength differences) cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Source localization revealed two main stages: an early stage (~100-200ms) where location information was confined to occipital, ventral visual, and parietal regions, and a later stage (>250ms) where information became distributed to prefrontal and anterior cingulate cortex, with pericalcarine and superior parietal cortices showing decodable information by 115ms, superior frontal cortex by 194ms, and rostral medial frontal cortex by 365ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe the spatial-temporal progression of location information with statistical support. The two-stage pattern (early focal, late distributed) is consistent with hierarchical processing models. However, MEG/EEG source localization has inherent spatial resolution limitations, so the precise anatomical claims should be interpreted cautiously. The temporal progression is more reliable than the exact spatial localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Region-based cross-condition generalization showed that only superior frontal and superior parietal cortices demonstrated the asymmetry between seen and unseen trials, with superior frontal showing the effect in the fourth time window (p=0.038) and superior parietal showing it across multiple time windows (second: p=0.026, third: p=0.036, fourth: p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 identify specific brain regions showing consciousness-related coding differences with appropriate statistical testing. The superior parietal cortex showing asymmetry across multiple time windows (C48-C51) is particularly compelling. However, the effect sizes are modest, and the spatial resolution limitations of MEG/EEG source reconstruction should be considered when interpreting the anatomical specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Above-chance classification was achieved in all tested regions including superior parietal, rostral middle frontal, and superior frontal regions, but there is no specific region uniquely dedicated to encoding consciously perceived information; instead, better encoding on seen trials occurs in the same regions (superior parietal and superior frontal cortex) that also contain location information on unseen-correct trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide an important negative result (no consciousness-specific region) combined with a positive finding (quantitative enhancement in shared regions). This interpretation is well-supported by the data showing above-chance decoding in multiple regions (C52) but asymmetry only in specific regions (C46). The conclusion challenges localizationist views of consciousness while supporting distributed network models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Temporal generalization analysis revealed that up to 272ms, decoding was restricted to the diagonal for both conditions (suggesting feedforward processing), but beyond 272ms, classifiers generalized more broadly. Surprisingly, unseen trials showed longer Classification Endurance than seen trials in both forward (382ms vs 201ms, p<0.005) and backward (159ms vs 78ms, p<0.05) directions, with forward CE constant for seen trials but linearly decreasing for unseen trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 describe complex temporal dynamics with comprehensive ANOVA results (C57) and specific contrasts. The counterintuitive finding that unseen information shows longer temporal persistence (C59-C61) is statistically well-supported and theoretically important. The interaction with time (C62) adds nuance. However, the interpretation of what longer generalization means (stable vs. decaying representation) requires careful consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The temporal generalization patterns suggest that conscious perception involves a series of about four distinct processing stages (each ~160ms duration) with sharp transitions, while unconscious information lingers in a single representational state that decays slowly. This supports a model where conscious access involves dynamic routing through sequential processors, while failure to reach threshold at any stage causes information to linger and decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C68 present a specific mechanistic interpretation of the temporal generalization data. While the data patterns (high decoding with limited off-diagonal generalization for seen trials, square pattern for unseen trials) are established, the inference of exactly four discrete stages (C64) and the specific mechanistic model (C67-C68) represents a strong interpretation that goes beyond what the data directly demonstrate. Alternative models could potentially explain the same patterns. The interpretation is plausible and theoretically motivated but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study demonstrates four main findings: (1) location can be decoded from MEG/EEG for up to 800ms regardless of visibility, (2) seen and unseen stimuli are initially encoded identically but diverge after ~270ms with selective amplification on seen trials, (3) asymmetrical generalization indicates conscious trials contain additional neural codes beyond those present on unconscious trials, localized to superior parietal and frontal cortex, and (4) conscious information undergoes representational transformations with limited generalization beyond ~160ms while unconscious information generalizes longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 summarize the main experimental findings with appropriate connections to prior literature (C71, C75). These summary claims accurately reflect the supported results from the detailed analyses. The four main findings are well-established by the data, though some interpretive elements (e.g., the exact nature of the 'additional codes' in C72) involve inference beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C80"
+    ],
+    "result": "The observed ~160ms processing duration is compatible with conscious percepts being locked to theta (~4-7Hz) or high delta (~1-3Hz) rhythms, suggesting conscious information enters a series of computational stages betrayed by theta/delta-like peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76 and C80 connect the temporal dynamics findings to oscillatory mechanisms. While the temporal correspondence is noted (C76 with supporting citations), the mechanistic link to theta/delta rhythms (C80) is speculative ('seems plausible'). The current study did not directly measure or manipulate oscillatory activity, so this interpretation, while theoretically motivated, goes beyond the data and represents a hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Unconscious information fails to be sequentially dispatched through serial processing stages and remains in a fixed representational state where it slowly decays, consistent with behavioral priming studies showing unconscious information persists for hundreds of milliseconds to seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 interpret the temporal generalization results for unconscious processing with support from prior behavioral literature (C82). The interpretation that unconscious information remains in a fixed state (C81) is consistent with the square temporal generalization pattern, though alternative explanations exist. The connection to priming literature (C82) provides converging evidence for the persistence claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The results are incompatible with theories proposing identical codes for conscious and unconscious information distinguished only by metacognitive tags, but fit with theories proposing conscious episodes involve amplification of sensory information through reverberating loops and distributed representation in parietal and prefrontal cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 evaluate the results against competing theoretical frameworks with appropriate citations. The asymmetrical generalization results (C36-C40) directly contradict identical-code theories (C83), while the amplification, distributed coding, and temporal dynamics support workspace-like theories (C84). This theoretical evaluation is well-grounded in the empirical findings, though it represents interpretation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The results converge with intracranial recordings during binocular rivalry showing late neural activity in higher cortical areas reflects subjective perception, with decodable activity for object identity found in temporal and prefrontal cortex, suggesting prefrontal cortex is a candidate for integrated perception of unified conscious scenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 connect the current findings to invasive recording studies with appropriate citations. The convergence with single-neuron studies (C85-C86) strengthens confidence in the MEG/EEG results despite lower spatial resolution. The inference about prefrontal cortex as an integration site (C87) is plausible given its involvement in both location and identity coding, though this represents an interpretive extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "While some studies suggest removing report requirements reduces late ERP correlates of consciousness, those studies often involved dual tasks known to affect ERPs and conscious access. In passive attentive paradigms and various neurophysiological studies, late activity including P3b correlates with conscious perception, suggesting the current findings may generalize to other conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C92 address the debate about report-related confounds through literature review. The citations to conflicting findings (C88) and methodological critiques (C89) are appropriate, as are citations supporting late correlates (C90-C91). However, the speculation about generalizability (C92, explicitly cautious) goes beyond the current data. The current study itself involves explicit report on every trial, so it cannot directly resolve the report debate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study included 17 right-handed healthy adults (10 men, 19-30 years), with 5 subjects excluded for calibration failure (reporting >85% targets as seen even at maximum masking), resulting in 12 subjects for analysis with mask intensity calibrated individually (range 0-227, mean 131.46, SE=19.76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 report participant demographics and exclusion criteria. The exclusion of subjects who couldn't achieve ~50% unseen trials (C94) is appropriate for the study design. The sample size of 12 is modest but reasonable for within-subject MEG/EEG designs. Individual calibration (C95) is methodologically sound for achieving the target visibility levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The experimental design used a tilted line segment (0.33\u00b0 visual angle, 45\u00b0 tilt) presented for ~33ms at one of eight locations arranged circularly (2.85\u00b0 radius, 45\u00b0 separation, 22.5\u00b0 offset from meridians), followed immediately by a 400ms mask.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe the stimulus parameters in detail. The design is appropriate for studying spatial location with sufficient angular separation between positions. The brief presentation (33ms) followed by masking is standard for consciousness studies. The circular arrangement with offset from meridians is well-specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Analysis used linear SVM (C=1) with calibrated posterior probabilities, 15-fold cross-validation, FreeSurfer parcellation into 68 regions (Desikan-Killiany atlas), and minimum-norm source estimation with fixed cortical orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 describe the analysis pipeline. The methods are standard for MEG/EEG decoding studies. The 15-fold cross-validation (C102) is appropriate for the sample size. The source localization approach (C103-C104) is reasonable though has known spatial resolution limitations. The use of calibrated probabilities (C101) is important for interpreting classification outputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The introduction establishes that consciousness research divides into state and access branches, that seen/unseen paradigms have yielded convergent findings but face criticisms regarding stimulus differences and performance confounds, and describes theoretical predictions from the Global Neuronal Workspace model about amplification and re-encoding in prefrontal-parietal networks during conscious access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context with appropriate citations to establish the research framework. These are primarily literature review claims that accurately represent prior work and theoretical positions. They set up the motivation for the current study's approach of using blindsight conditions and multivariate decoding to address methodological concerns.",
+    "result_type": "MINOR"
+  }
+]

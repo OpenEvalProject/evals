@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Phosphate starvation induces physiological changes in rice, including reduced shoot biomass, altered root-to-shoot ratio, and decreased root Pi concentration, which are rapidly reversed upon Pi resupply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 provide converging physiological evidence that Pi starvation effectively induces stress responses in rice. The measurements of biomass (C16-C18), Pi concentration (C20-C21), and recovery dynamics (C22-C23) are internally consistent and supported by appropriate statistical tests and figure references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Phosphate starvation induces widespread transcriptional changes in rice roots, with gradual increases in differentially expressed genes over time and rapid reversal upon Pi resupply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe the transcriptional response to Pi starvation using RNA-seq data with appropriate statistical thresholds (FDR < 0.05). The temporal dynamics and recovery patterns are well-documented across multiple time points with biological replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Phosphate starvation induces 175 high-confidence differentially methylated regions (DMRs) in rice roots, predominantly hypermethylated, enriched near genes, overlapping with transposable elements (especially MITEs), and associated with genes involved in phosphate homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 describe the identification and characterization of PSI DMRs using rigorous statistical criteria (FDR < 0.01, requiring 7 of 9 replicates). The characterization of DMR properties (size, location, TE overlap, gene associations) is well-supported by multiple analyses and appropriate figures. The enrichment for phosphate homeostasis genes provides biological coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Phosphate starvation induces 341 DMRs in rice shoots, with more than 30 conserved regions showing changes in both roots and shoots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 extend the DMR analysis to shoot tissue. However, the lower number of replicates (n=3) and less stringent FDR cutoff (< 0.05 vs < 0.01 for roots) are appropriately acknowledged. The identification of conserved DMRs across tissues strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Among PSI DMRs associated with differentially expressed genes, the majority are hypermethylated in the CHH context and overlap with TEs, while hypomethylated DMRs less frequently overlap with TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide detailed characterization of the relationship between DMRs and gene expression. The clustering analysis and context-specific methylation patterns are well-documented. The high percentage of hypermethylated DMRs overlapping with TEs (80 of 81) provides strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Changes in gene transcription occur prior to changes in DNA methylation in response to phosphate starvation, with transcription changes appearing after 3-7 days and methylation changes requiring \u226521 days. Upon Pi resupply, transcription rapidly returns to normal while methylation changes persist longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 establish the temporal hierarchy between transcription and methylation changes using comprehensive time-course data. The statistical analyses (Cuffdiff FDR < 0.05 for transcription, t-test FDR < 0.05 for methylation) are appropriate. This temporal relationship is critical for establishing causality and represents a major finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "After 31 days of Pi resupply, the majority of PSI DMRs return toward Pi-sufficient levels, but 14 DMRs show persistent methylation changes, preferentially in the CHH context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 demonstrate that most stress-induced methylation changes are transient. The identification of 14 persistent DMRs using appropriate statistical criteria (t-test, FDR < 0.05) and the context-specific analysis (CHH enrichment) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "In panicle tissue generated post-stress, 36 PSI DMRs were identified, but no significant differences in methylation were observed between stressed and recovered plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 examine methylation in newly generated tissue. The lack of persistent methylation differences in panicles (tissue generated during recovery) provides evidence against stable mitotic transmission to new tissues, though the statistical analysis is appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "No evidence of transgenerational inheritance of phosphate starvation-induced DNA methylation changes was observed in the progeny of stressed plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 address transgenerational inheritance using progeny from stressed and non-stressed parents (n=5 per condition). The lack of significant differences (t-test, FDR < 0.05) and the reset to Pi-sufficient levels in progeny provide strong evidence against meiotic transmission of stress-induced methylation changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The majority of phosphate starvation-induced DMRs are independent of DCL3a, with only 11 of 175 PSI DMRs showing DCL3a-dependence. DCL3a-dependent DMRs include regions associated with SPX1, SPX2, and MGD2, with SPX2 showing dramatic transcriptional changes in DCL3a RNAi plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 use DCL3a RNAi plants to dissect the methylation pathway. The RNA-seq confirmation of knockdown (C69-C71), the genome-wide methylation analysis (C72-C75), and the identification of DCL3a-dependent PSI DMRs (C76-C78) are well-supported. The dramatic effect on SPX2 expression (69-fold decrease, C79-C80) is notable, though the mechanism remains unclear as acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Phosphate starvation has a very limited effect on DNA methylation in Arabidopsis, with only 2 DMRs identified (at relaxed stringency FDR < 0.2) associated with MGD3 and Atcopeg1, showing transient hypermethylation in the CHH context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 demonstrate species-specific differences in methylation responses. The robust transcriptional response (C82-C84) confirms effective Pi starvation, while the minimal methylation changes (C85-C91) contrast sharply with rice. The use of relaxed statistical criteria (FDR < 0.2) is appropriately acknowledged, and the transient nature of changes is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Phosphate starvation induces widespread, species-specific changes in DNA methylation that occur after transcriptional changes, are mostly DCL3a-independent, can be partially propagated through mitosis but not meiosis, and may function to silence TEs near stress-induced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C9 represent the major conclusions of the study, integrating findings from multiple result groups. The temporal hierarchy (C3), DCL3a-independence (C4), mitotic heritability (C5), lack of meiotic transmission (C6), species-specificity (C7-C8), and proposed mechanism (C9) are all well-supported by the comprehensive experimental evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The species-specific differences in DNA methylation responses to Pi starvation between rice and Arabidopsis may be due to differential TE content in their genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is explicitly speculative ('could primarily be due to'), and while C93 provides supporting evidence from prior literature about TE content and methylation levels, this remains a hypothesis rather than a tested conclusion. The correlation is plausible but not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The RDR6-RdDM pathway may mediate hypermethylation of TEs near highly induced PSI genes to maintain localized TE suppression in transcriptionally active genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 propose a mechanistic model. While C96 is supported by citations, C97 is explicitly stated as a hypothesis ('we hypothesize'), and C98 is an interpretation ('may act to maintain'). The DCL3a-independence of most hypermethylated DMRs supports this model, but direct experimental validation of RDR6-RdDM involvement is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C35",
+      "C94",
+      "C95"
+    ],
+    "result": "Background knowledge claims about DNA methylation, phosphorus biology, and plant stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15, C19, C35, C94-C95 represent established scientific knowledge appropriately cited or stated as background. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

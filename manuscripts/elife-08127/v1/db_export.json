@@ -1,0 +1,2281 @@
+{
+  "submission": {
+    "id": "9adcdb47-508e-40ab-9b42-984fbc56e384",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:24:05.698497Z",
+    "updated_at": "2025-11-29T04:24:05.698497Z"
+  },
+  "content": [
+    {
+      "id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "submission_id": "9adcdb47-508e-40ab-9b42-984fbc56e384",
+      "content_type": "manuscript",
+      "content_text": "# The number of olfactory stimuli that humans can discriminate is still unknown\n\n## Authors\n\n- Richard C Gerkin<sup>1</sup> \u2020\n- Jason B Castro<sup>2</sup>\n\n### Affiliations\n\n1. School of Life Sciences Arizona State University Tempe United States\n2. Department of Psychology Bates College Lewiston United States\n3. Program in Neuroscience Bates College Lewiston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt was recently proposed (Bushdid et al., 2014) that humans can discriminate between at least a trillion olfactory stimuli. Here we show that this claim is the result of a fragile estimation framework capable of producing nearly any result from the reported data, including values tens of orders of magnitude larger or smaller than the one originally reported in (Bushdid et al., 2014). Additionally, the formula used to derive this estimate is well-known to provide an upper bound, not a lower bound as reported. That is to say, the actual claim supported by the calculation is in fact that humans can discriminate at most one trillion olfactory stimuli. We conclude that there is no evidence for the original claim.\n\n## Introduction\n\nA recent paper (Bushdid et al., 2014) proposed that humans can discriminate between at least a trillion olfactory stimuli. Using that paper's methods to reanalyze the data it presented, we show that this estimate is problematically fragile. Specifically, it varies systematically and sensitively (over tens of orders of magnitude, in both directions), for very modest changes in incidental experimental and analysis parameters against which a result ought to be robust. Had the experiment enlisted \u223c 100 additional subjects similar to the original ones, the same analysis would have concluded that all possible stimuli are discriminable (i.e., that each of the more than 1029 olfactory stimuli possible in their framework are mutually discriminable). By contrast, if the same experimental data were analyzed using moderately more conservative statistical criteria, it would have concluded that there are fewer than 5000 discriminable olfactory stimuli\u2014no larger than the folk wisdom value that the new estimate purports to replace.\n\nTherefore, under this framework, data describing the same underlying perceptual abilities admit a wide range of extremely disparate (varying over 25 orders of magnitude), yet unobjectionable alternative conclusions (including both the largest and smallest possible estimates allowed by the analysis framework). We conclude that the framework is unsound: there may be trillions of discriminable olfactory stimuli, or more, or fewer, but the framework does not provide the means for settling this question. Here we first demonstrate the framework's fragility, and then explain the sources of that fragility. For most of this paper, we remain agnostic about whether the framework is conceptually sound, to highlight the fact that it has strictly methodological problems of a statistical origin that do not depend on the validity of a competing set of assumptions.\n\nWe also show that the formula used to derive the estimated number of discriminable stimuli, given an estimated perceptual limen, yields an upper bound, not a lower bound, meaning that any estimate derived here or in (Bushdid et al., 2014), under any assumptions, is a maximum and not a minimum. In other words, the original paper in fact supports the conclusion that humans can discriminate at most one trillion olfactory stimuli (or more or fewer, due to the problem described above), a rather uninspiring claim. In a concluding section, we explore possibilities for improving the estimate.\n\n### Problems with the estimate\n\nThe first main concern is that the estimated number of discriminable stimuli depends steeply, systematically, and non-asymptotically on choices of arbitrary experimental parameters, among them the number of subjects enrolled, the number of discrimination tests performed, and the threshold for statistical significance. We show below that the order of magnitude claim of \u2018one trillion olfactory stimuli\u2019 requires that those parameters assume a very narrow set of values. Certainly, the precise value of an estimate may change as additional data are collected, but the estimate should not change in expectation; it should not be possible to make an estimate arbitrarily large (or small), simply by collecting more (or less) data. Similarly, the estimate itself should not become arbitrarily small or large with adjustment of a significance criterion. Estimates that scale systematically with such incidental parameter choices are considered statistically inconsistent (Figure 1). It is the inconsistency of the present estimate that produces a tremendously large space of extremely different, yet unobjectionable alternative conclusions that can be reached about the number of discriminable olfactory stimuli.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig1-v1.jpg)\n\n**Figure 1.:** An estimator is consistent if the resulting estimate asymptotically converges (in expectation) as sample size increases (black line). Uncertainty in the estimate (gray area) may shrink with sample size, but the estimate itself should not systematically change with sample size, and should converge on the truth. Estimators without this property are termed inconsistent (the blue line is a relevant example), and are considered unreliable, as the resulting estimate can be heavily biased by the sample size. If the estimate has a minimum and maximum allowed value (see Equation 1), an especially inconsistent estimator can even produce any estimate within that range.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For each possible value of the number of tests T conducted per mixture class, there is a cumulative distribution of the fraction f of those tests that will be correctly discriminated, under the null hypothesis of chance $(\\frac{1}{3})$ responding. The choice of significance threshold \u03b1 determines the fraction correct required to reject the null hypothesis, and thus count as \u2018significantly discriminating\u2019 in the framework. For a given value of \u03b1 (0.05 shown here, and used in [Bushdid et al., 2014]), the fraction correctly discriminated required to reach this threshold varies greatly with T. Rejecting the null hypothesis can thus be very easy or very hard depending on T (or the number of subjects S, not shown), or on \u03b1.\n\nTo illustrate that we can correctly recapitulate the analysis undertaken in (Bushdid et al., 2014), Figure 2 shows our reproduction (using raw supplementary data from [Bushdid et al., 2014]) of two critical figures from that paper (Bushdid et al., 2014), from which its main conclusion was drawn. See Table 1 for definitions of parameters used here and in (Bushdid et al., 2014). Figure 3 and Table 2 quantify the fragility of this conclusion, by generating estimates using the same framework under trivial alternative scenarios in which different numbers of subjects (or mixtures) were used, or different choices of statistical threshold (\u03b1) were used for assessing discriminability. Thus, we produced all values shown here by analyzing the data from (Bushdid et al., 2014), using the methods described therein, and varying only parameters. Code to reproduce these and all subsequent analyses is available at http://github.com/rgerkin/trillion, documented at http://nbviewer.ipython.org/github/rgerkin/trillion/blob/master/journal.ipynb.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig2-v1.jpg)\n\n**Figure 2.:** Compare to Figures 3, 4 in that publication. (A): Discriminability vs mixture overlap, expressed as a percentage of the mixture size N. From this analysis, (Bushdid et al., 2014) derives $\\frac{d\u2212N}{N}\u223c51%$ (vertical dashed line) as the critical value of mixture overlap at which 50% of mixtures achieve \u2018significant discriminability\u2019. (B): Estimated number of discriminable mixtures z vs mixture overlap (expressed as a percentage of N) allowing discrimination. The plot is obtained by regression and interpolation of results in A combined with Equation 1, with colors corresponding to values of N as shown in A. For a value of $\u223c51%$as derived in A, one obtains the \u2018trillions\u2019 figure reported in (Bushdid et al., 2014).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This reproduces Figure 2B from (Bushdid et al., 2014), and can be subsequently used to reproduce Figure 3A and ultimately Figure 3C from (Bushdid et al., 2014). Similar reconstructions, using alternative parameter choices, were used as basis for the findings presented in Figure 3A here. Analogous reconstructions of Figures 2C, 3B,D from (Bushdid et al., 2014) (not shown) were used to generate Figure 3B here.\n\n**Table 1.**\n Definitions of parameters\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>z</td>\n      <td>Estimated number of discriminable olfactory stimuli</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>Number of distinct compounds available to make mixtures</td>\n    </tr>\n    <tr>\n      <td>N</td>\n      <td>Number of distinct compounds in a mixture</td>\n    </tr>\n    <tr>\n      <td>O</td>\n      <td>Number of distinct compounds shared by a mixture pair</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>Number of distinct compounds in one mixture of a pair that are not shared by the other. (D=N\u2212O)</td>\n    </tr>\n    <tr>\n      <td>class</td>\n      <td>All mixture pairs with the same value of N and D.</td>\n    </tr>\n    <tr>\n      <td>d</td>\n      <td>The value of D for which mixture pairs of a given N are more likely than not to be discriminable at a rate significantly above chance.</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig3-v1.jpg)\n\n**Figure 3.:** (A): Heat map showing alternative conclusions reached for different choices of T, the number of mixture pairs per class to test, and application of alternative significance threshold \u03b1 for discriminability, with the data from (Bushdid et al., 2014). Asterisks (*) show the parameter regime (T = 20 mixtures, $\\alpha=0.05$) used in (Bushdid et al., 2014). Other values on each axis are chosen in a geometric progression around those parameters. The contour in the lower right labeled \u2018All\u2019 demarcates a regime in which one will conclude that the largest possible number of mixture stimuli (i.e., all $z(d=0)=(12830)>10^{29}$ of them) are discriminable (see Equation 1). The contour in the upper left labeled \u2018smallest possible\u2019 demarcates a regime in which one will conclude that the smallest possible number of stimuli are discriminable, that is, only $z(d=N=30)<5000$ of them. The contour labeled \u2018colors\u2019 demarcates a regime in which one concludes that the number of discriminable olfactory stimuli is the same order of magnitude as the number of discriminable colors. (B): Heat map similar to left, only with number of subjects on the vertical axis. A choice of $\\alpha=0.025$ is necessary to obtain the estimate that (Bushdid et al., 2014) reports for this analysis. (C): Colorscale for A and B, with reference landmarks.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Dependence of the estimate (for mixtures of N = 30) on sample size. Black shows dependence on the number of subjects S enrolled in the study, Red shows dependence on the number of mixtures T tested per mixture class. Once the number of mixtures or subjects tested is $\u223c150$ (by no means an unusually large sample size), the conclusion that all possible $(CN)$ mixtures are discriminable is guaranteed, in contradiction with experimental results. (B) Dependence of the estimate on the significance threshold \u03b1 with (red) and without (black) a correction for multiple comparisons. (Bushdid et al., 2014) did not correct for multiple comparisons.\n\n**Table 2.**\n Estimates of z, the number of discriminable olfactory stimuli, for different possible parameters values, for the C = 128, N = 30 case used in (Bushdid et al., 2014)\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">A</th>\n    </tr>\n    <tr>\n      <th># Discriminable stimuli (z)</th>\n      <th>Significance threshold (\u03b1)</th>\n      <th># Tests per class (T)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2.02\u00d71012</td>\n      <td>0.05*</td>\n      <td>20*</td>\n    </tr>\n    <tr>\n      <td>4.56\u00d7103\u2020</td>\n      <td>0.05*</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>1.54\u00d71029\u2021</td>\n      <td>0.05*</td>\n      <td>185</td>\n    </tr>\n    <tr>\n      <td>8.94\u00d7103</td>\n      <td>0.001</td>\n      <td>20*</td>\n    </tr>\n    <tr>\n      <td>1.79\u00d7104</td>\n      <td>0.01</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\n_This recapitulates selected points from Figure 3.* Indicates that the parameter value was used in (Bushdid et al., 2014). We assume here that new subjects perform similarly to the original subjects.Note that 4.56\u00d7103 (\u2020) and 1.54\u00d71029 (\u2021) are the smallest and largest possible values allowed by the framework from (Bushdid et al., 2014)._\n\nIn Bushdid et al., 2014's experimental framework, there are three sets of experiments, varying in the number of distinct molecular components N per mixture tested. We consider the N = 30 case (without loss of generality) for which there are $\u223c10^{29}$ possible olfactory stimuli, and for which the smallest possible number of discriminable stimuli is $\u223c4500$ (see Equation 1 below). Figure 3 and Table 2 thus demonstrate that (1) there is a regime of reasonable parameter choices for which one concludes that all possible olfactory stimuli (i.e., all $\u223c10^{29}$ of them) are discriminable; and (2) there is another regime of reasonable parameter choices for which one concludes that the smallest possible number of stimuli (i.e., only $\u223c4500$) are discriminable. The only assumption required to obtain these estimates is that performance in new subjects is similar to performance in the original subjects.\n\nThe fragility of the conclusion results from the claim in (Bushdid et al., 2014) that a modest (if very interesting) correlation\u2014between the discriminability of a pair of mixtures and the overlap (fraction of shared components) of those mixtures\u2014is evidence that a particular degree of mixture overlap defines a boundary that partitions the discriminable from the indiscriminable in a very high-dimensional space. Below, we explore the consequences of this decision, and its implications for calculating the number of discriminable olfactory stimuli.\n\n### Explanation of the problems with the estimate\n\n#### Recap of the basic framework\n\nThe framework's logic is built on an analogy to color vision, where estimating the number of discriminable colors requires knowing only two numbers: the size of the stimulus space (that is, the range of visible wavelengths), and the minimally discriminable distance between a typical pair of stimuli (Figure 4). Dividing the first number by the second amounts to asking how many discriminable intervals can be \u2018packed\u2019 into the stimulus space, with that number providing an estimate of the number of discriminable color stimuli.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig4-v1.jpg)\n\n**Figure 4.:** (A): Hypothetical example showing a range of visible wavelengths. Relative to a reference stimulus (thick vertical tick mark), extremely distant stimuli (green circle) in this space are easy to discriminate, whereas extremely close stimuli (red circle) may be impossible to discriminate, as they are beyond the resolution of color vision. At some critical inter-stimulus distance, d, stimuli will be \u2018just discriminable\u2019 (black circle). A typical stimulus pair on the space, separated by distance D, will tend to be discriminable if $D>d$, and indiscriminable if $D<d$. (B): This partitioning into discriminable and indiscriminable sets is captured in the sigmoidal shape of the psychometric curve plotting discriminability vs distance. Knowing that an interval of length d on the space will tend to span \u2018just discriminable\u2019 stimuli, one can calculate how many such intervals, z, can be \u2018packed\u2019 onto the space to estimate the number of discriminable colors.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A): Left, A sharply sigmoidal relationship in which discriminability changes dramatically and categorically at a critical inter-stimulus distance, d. In all panels, d is the value of the inter-stimulus distance D at which a threshold fraction of stimulus pairs are discriminable. In the left panels, this threshold is set at 0.5. Right, The resulting value of d is nearly invariant to the choice of threshold. (B): Same as above, only for a less sharply sigmoidal data set. There is still a narrow regime in which d is largely invariant to choice of threshold. (C): Same as above, only for a weakly sigmoidal data set. Here, there is no principled means for choosing the d that is characteristic of discriminability relationships for stimuli. The data in C do not support an interpretation in which there is defensible characteristic \u2018length scale\u2019 for inter-stimulus distances.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A): To explore this possibility, the fraction discriminated vs percent mixture overlap is plotted here. This is analogous to Figure 2, except plotting fraction discriminated directly (as in Figure 4\u2014figure supplement 1), instead of fraction significantly discriminable. The threshold (50%) and the procedure for computing mixture overlap at that threshold are as in Figure 2A. Derived from data in (Bushdid et al., 2014) as for Figure 2. (B): The thick red line shows the critical distance d that would result from the data in (Bushdid et al., 2014) for a range of \u2018fraction discriminated\u2019 thresholds between 100% (perfect discrimination), and 33.3% (chance discrimination). The curve was obtained by regression on plots like that in Figure 4\u2014figure supplement 2, by analogy to Figure 2 and (Bushdid et al., 2014). Note that d exhibits a nearly constant-slope relationship with threshold, meaning the data are not defined by a characteristic length scale, much like in Figure 4\u2014figure supplement 1C. The thick black curve shows the relationship between z and the chosen threshold. This relationship was obtained directly from d, using Equation 1, as in (Bushdid et al., 2014). The thin red lines correspond to the same calculation for d but using data for only a single subject (one per line), showing similar sensitivity to the choice of threshold. The absence of a robust d for any individual subject argues that the group data are not simply explained by averaging across a population with well-defined, but diverse values of d. Note that very modest and reasonable alternative choices for the threshold result in extremely disparate estimates. The vertical axis is bounded by the smallest and largest possible number of discriminable stimuli allowed by the framework. The dashed lines are a visual guide to specific (threshold, z) pairs. (C): Box and whisker plots showing the median and inter-quartile range for z when restricting the analysis to individual subjects. Note that the worst performing subjects under one threshold can discriminate many more stimuli than the best performing subjects under a slightly more liberal threshold (compare best subject using a 60% threshold vs worst subject using a 40% threshold). Therefore, it is impossible to report with any confidence the number of discriminable stimuli using this approach. In the main text, we show that the actual framework used in (Bushdid et al., 2014) is nominally employed to make a more principled choice of threshold; however it merely cloaks the arbitrariness of the threshold choice, but does not eliminate it.\n\nBecause olfactory stimuli do not have obvious physical dimensions analogous to wavelength, olfaction is not amenable to an identical calculation. Instead, (Bushdid et al., 2014) established a theoretical framework that yielded a similar calculation based upon the same underlying idea. (Bushdid et al., 2014) proposed to divide the size of a investigator-determined olfactory stimulus space by a data-determined variable representing resolution in this space. Instead of being continuous, one dimensional, and defined by some intrinsic stimulus variable like wavelength, the olfactory stimulus space was defined to be the discrete, high-dimensional space spanned by all mixtures containing N = 30 different components (molecules) that could be assembled from a library of C = 128 molecules; (Bushdid et al., 2014) also considers the N = 10 and N = 20 cases, which we ignore in this section with no loss of generality. This space of possible mixture stimuli is astronomically large $(CN)$, owing to the proverbial \u2018combinatorial explosion\u2019, and each point in the space corresponds to a specific multi-component mixture.\n\nOne definition of distance between stimuli in this space is the number of components D by which the stimuli differ. For example, nearest neighbors would be stimuli sharing all components but one $(D=1)$, and the most distant points in this space would be stimuli differing in all components $(D=N)$.\n\n(Bushdid et al., 2014) showed that discriminability of a stimulus pair tends to increase with the distance D between the stimuli in that pair (Figure 2A), and then argued for the existence of a special distance d corresponding to the D at which stimuli are \u2018just discriminable\u2019. In other words, for $D>d$ stimuli should more often than not be considered discriminable and for $D<d$ they should more often than not be considered indiscriminable. By calculating d, one could in turn readily calculate the number of stimuli within a distance $D\\leqd$ of a typical point in the stimulus space using the provided formulas. Geometrically, the set of stimuli with distance $D\\leqd$ from a reference stimulus corresponds to a filled \u2018ball\u2019 of stimuli indiscriminable from the reference stimulus at its center. Conversely, the reference stimulus should be discriminable from stimuli outside the ball. We could thus count the number z of non-overlapping balls that can be packed into the stimulus space, as proposed in (Bushdid et al., 2014), by analogy to the example for color vision:\n\n$$\nz(d)=\\frac{(CN)}{ball(d/2)}\n$$\n\nwhere \u2018ball\u2019 is defined as:\n\n$$\nball(r)=\\sumx=0r(Nx)(C\u2212Nx)\n$$\n\nEquation 1 produces the final estimate z of the number of discriminable stimuli. Note that while this has been interpreted as \u2018the answer\u2019 to the sphere packing problem in high dimensions, it is in fact only a best-case scenario (an upper bound). The exact number of d-spanning spheres that can be packed in a discrete space defined by a particular C and N has in fact only been computed for a few specific, modest cases of these values. In general, it is only possible to report bounds for these values. This is discussed at more length in the section. \u2018An upper or a lower bound?\u2019, below, as well in the supplemental materials.\n\nC and N are fixed by experimenter choices, and d\u2014the resolution-like term\u2014is the only quantity derived from data that is related to measured psychophysical performance. Note that for C = 128, N = 30, as used in (Bushdid et al., 2014), the largest and smallest possible values this equation can produce are $\u223c1.5\\times10^{29}$ (for d = 0) and $\u223c4500$ (for d = N), respectively. Assuming this framework is conceptually unproblematic (but see Meister, 2015), the only question becomes: How do we derive d from the data?\n\n### Derivation of the critical parameter d\n\n#### Thresholding the fraction discriminated\n\nA classic psychometric curve (Figure 4B), showing discriminability as a function of inter-stimulus distance D, admits a few plausible ways to derive d. The simplest is to use a discriminability threshold, such that d corresponds to the distance D at which the \u2018fraction correct\u2019 reaches a certain value. In (Bushdid et al., 2014)'s three-alternative forced-choice experiments, chance responding would produce a fraction correct of $\\frac{1}{3}$, so the appropriate threshold would be somewhere between $\\frac{1}{3}$ and 1. This threshold choice would be arbitrary\u2014we might say that a fraction correct of $\\frac{1}{2}$ reflects discriminability, or alternatively we might choose $\\frac{2}{3}$ or any other value between $\\frac{1}{3}$ and 1.\n\nIf the psychometric curve is sufficiently steep near some value of D (Figure 4\u2014figure supplement 1A represents an ideal case) then the derived d will vary minimally over a wide range of choices for the threshold. In this scenario, we might be confident that the d we derive is a truly meaningful measure of resolution\u2014it would be robust. If not (Figure 4\u2014figure supplement 1C), it will be very fragile. We explored this approach (Figure 4\u2014figure supplement 2), and concluded that it does not suffice for deriving a robust d.\n\n### Thresholding the fraction significantly discriminable\n\nThe approach actually used in (Bushdid et al., 2014) is instead to apply a threshold not to the fraction discriminated (explored in Figure 4\u2014figure supplement 2), but to the fraction significantly discriminable. In other words, determine for which subjects (or alternatively, for which classes of mixtures) the fraction discriminated is significantly greater than $\\frac{1}{3}$, i.e., for which subjects the null hypothesis of chance discrimination can be rejected. To facilitate visualization of this step, (Bushdid et al., 2014) re-plotted the summary data (fraction correctly discriminated) as fraction significantly discriminable (Figure 2A). This view of the data provides a linear relationship between distance D and the fraction significantly discriminable, which holds across all the values of N tested. The relationship is much steeper than for fraction discriminable (compare Figure 2 and Figure 4\u2014figure supplement 2) because this hypothesis-testing step acts as a strong non-linear threshold that exaggerates otherwise small differences in the data. An arbitrary choice of threshold is required; (Bushdid et al., 2014) chose a threshold of 50% significantly discriminable, and computed d from the fraction significantly discriminable using linear regression and interpolation.\n\nVarying the threshold (i.e., 50%) itself (not shown), would change the computed d (and consequently z), but this is not the largest issue. By introducing a hypothesis-testing step, the d derived from Figure 2 now varies systematically with the number of subjects enrolled in the study (and the number of mixtures tested), and with the choice of significance criterion \u03b1. This is because each data point used to compute d becomes the binary result of a hypothesis test, each of which depends critically on sample size and test specificity. Because d is then fed into an expression (Equation 1) that explodes geometrically, the result is a recipe for producing any of a range of estimates for z that one might choose. If one enlists more subjects or slackens the significance criterion, a very large (even the largest possible) number will be obtained. If one enlists fewer subjects or makes the significance criterion more strict, a very small (even the smallest possible) number will be obtained. Figure 3\u2014figure supplement 1 shows the explicit dependence of the estimate on each of these quantities alone. Naturally, these can be varied in tandem too, with even more dramatic consequences, as described above (Figure 3 and Table 2).\n\nA hypothesis test is meant to assess the strength of evidence for or against a hypothesis (often against a null hypothesis), not to make a point estimate. However, it may not be uncommon for researchers to use hypothesis testing in the manner done in (Bushdid et al., 2014)\u2014to count the number or fraction of data points exhibiting a certain property. In many cases this may amount to a venial statistical sin with (hopefully) benign consequences. But that is unfortunately not the case in (Bushdid et al., 2014), due in part to the extremely steep dependence of z on d guaranteed by Equation 1.\n\nIf one claims that an estimate is meaningful, it is fair to ask how vigorously would one have to defend a specific choice of arbitrary experimental parameters to defend a particular order-of-magnitude range around that estimate. Unfortunately, the systematic sensitivities exhibited here severely undermine the plausibility and relevance of the estimate reported in (Bushdid et al., 2014). Due to these sensitivities, one could pick almost any number of discriminable stimuli in advance, and affirm this number using these or similar data. Ultimately, the absence of a robust d to characterize the data is an insurmountable obstacle for the framework.\n\n## Building the stimulus space\n\n### The structure of the stimulus space\n\nOne might ask: what is the right way to calculate d in order to obtain a robust estimate of the number of discriminable stimuli? Before heading down this road and devising alternative statistical approaches, it is worth first clearly articulating the assumptions of a framework in which a single variable plays such a special role. Under what conditions is it sensible to expect that plugging a single data-derived number (d) into Equation 1 will produce a meaningful estimate of the number of discriminable olfactory stimuli?\n\nTo gain some intuition into this, we can ask the analogous question in the simplified visual system example (Figure 4) that was used as the principal motivation for the procedure. The \u2018sphere packing\u2019 calculation in this case naturally involves measuring the resolution of perception in terms of the stimulus, but its validity is not a consequence of this measurement alone. Rather, the procedure in Figure 4 is sensible because the thing we are calling an independent stimulus dimension (wavelength) is respected as such by perception: we encounter monotonically changing, non-redundant percepts as we move from one extreme of the stimulus space to the other. If we didn't\u2014say, if the same percept \u2018blue\u2019 were experienced for several non-overlapping disjoint intervals\u2014the sphere packing formulation would fall apart. We might observe that on average discriminability improves with distance, but this would not be evidence of a characteristic length scale that partitions stimulus pairs into discriminable vs indiscriminable sets.\n\nThus the sphere-packing framework is valid only if the underlying geometry of stimulus space (that the investigator has designed) aligns with the geometry of perceptual space (as implemented in neural circuitry). Formally, the map from stimulus space to perceptual space needs to be homeomorphic, or nearly so. See (Meister, 2015) for further insight on this issue.\n\n### Redundancy in the stimulus space\n\nInstead of providing evidence for this homeomorphism, it was assumed in (Bushdid et al., 2014) for the purposes of calculation that each component of the molecular library (of size C = 128 in [Bushdid et al., 2014]) spanned an informative additional dimension for perception to explore: each molecule in the library is treated as an olfactory primary that is independent of all the others. This is the assumption, codified in the numerator of Equation 1, that allows for a massive space of potential discriminable stimuli. Indeed, the guaranteed runaway growth of the numerator as molecules are added to the C-sized library was offered in (Bushdid et al., 2014) as an argument for why the reported \u2018trillion\u2019 figure is an underestimate\u2014after all, C could always be higher.\n\nIt is worthwhile to quantify the behavior of the estimate as C changes. First, the estimate depends geometrically on C, with a power law exponent of \u223c30 (Figure 5, blue line). In other words, if the chemical library were doubled, the estimate z would increase by a factor of 230 under constant performance. If the component library were increased to the size of a standard flavor and fragrance catalog (\u223c2000 chemicals), the estimate would increase to z\u223c1041, implying a unique olfactory percept for each carbon atom on earth.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig5-v1.jpg)\n\n**Figure 5.:** The number of possible stimuli z that can be assembled by choosing N = 30distinct molecules from a library of size C increases geometrically with C (black line). If a library of a different size had been used, and similar subject performance resulted, the estimated number of discriminable stimuli z would grow along a similar trajectory (blue line). Even if performance deteriorated as C increased, the estimate could never fall below the red line, which represents worst-case performance (d = N). This results from the combinatorial explosion inherent in Equation 1.\n\nSubjects' performance could become worse when mixtures are drawn from this larger, more complete library, and we acknowledge that we cannot know in advance what the newly calculated resolution d would be on the new stimulus space. In other words, as the numerator of Equation 1 increased, its denominator (given by Equation 2) might conveniently grow proportionally. Let us therefore assume that with a library of sufficient size, so many mixtures become indiscriminable that the resolution becomes as poor as the framework allows, with d = N. Even in this edge case, if only mixtures differing in all components were \u2018just discriminable\u2019, we would still calculate $10^{21}$ discriminable stimuli. If C is increased to $10^{6}$, the smallest possible number of discriminable percepts (under the assumption of worst measurable performance, as above) is $10^{61}$, or 10 million trillion unique olfactory percepts for every carbon atom on earth (Figure 5, red line). One may object that the inflation of C here is an unfair critique, as the perceptual redundancy of molecules must at some point provide an important constraint on the size of the artificially constructed stimulus space. Indeed, it has been reported that as few as thirty components are required to imbue most mixtures with a common smell, even when there is no component overlap between the mixtures (Weiss et al., 2012). But this is the essence of the problem with Equation 1: where does that point lie, and why wasn't the constraint important to consider for the original C = 128 molecular library?\n\n### An upper or a lower bound?\n\nEven if one takes the estimate of d to be unimpeachable, the formula used to derive z does not provide a lower bound as reported in (Bushdid et al., 2014). This much is suggested by the worst-case behavior of Equation 1 as C grows. After all, worst case behavior should correspond to z = 1. If one cannot discriminate anything (maximal d), then there is only one percept. Examining Equation 1 more closely, we see that it is a variant of the so-called Hamming bound for constant weight codes (MacWilliams and Sloane, 1977). which is well-known to be an upper bound for an identically formulated problem in the theory of error-correcting codes. It is, as suggested in (Bushdid et al., 2014), an estimate derived from a hypothetical sphere-packing approach to filling the stimulus space, but it is the largest possible value for the correct answer, not the smallest. Hence, according to the Hamming bound, for $d=N=30$ the upper bound on the number of discriminable stimuli is 4561, and we know the correct answer to be 1 (or 4, depending on conventions, see the Supplemental Materials). Since the upper bound exceeds the correct answer, Equation 1, while not particularly tight as an upper bound, is nonetheless not wrong, so long as we acknowledge that it is an upper and not a lower bound. The same applies for all other values of d, including the one derived from the data in (Bushdid et al., 2014).\n\nThus Equation 1, as used in (Bushdid et al., 2014), provides no insight into the lower bound for z, with a lower bound being required to overturn conventional wisdom about the number of discriminable stimuli. Instead, to obtain a lower bound one must dispense with the factor of 2 in Equation 1, yielding Levenshtein's constant weight version of the so-called Gilbert-Varshamov bound for error-correcting codes ([Levenshtein, 1971; MacWilliams and Sloane, 1977; Jiang and Vardy, 2004],see Supplemental Materials). A plot of the lower bound obtained in this manner is shown in Figure 6B, along with the reconstructed upper bounds from (Bushdid et al., 2014) a, showing the true bounded interval for z. Intuitively, this corrected lower bound reaches z = 1 for worst-case d, implying sensibly that anosmics cannot discriminate any stimuli. In contrast, the upper bound (reported as a lower bound in 1) is on the order of several thousand for worst case d, showing that it cannot be a lower bound d; this can also be confirmed in Figure 4 of (Bushdid et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08127/elife-08127-fig6-v1.jpg)\n\n**Figure 6.:** (A): Number of discriminable olfactory stimuli as a function of the estimated difference limen (the fractional mixture overlap allowing discrimination). This is simply the behavior of Equation 1 as a function of d, for the three values of N used in (Bushdid et al., 2014); the red dot (in both A and C) corresponds to the value reported in (Bushdid et al., 2014). The smallest possible estimate (thousands of stimuli) is indicated by the dotted line running the length of the abscissa (note also the y-intercept). As described in the text and in the supplement, this graph in fact shows the behavior of the upper bound (the so-called Hamming bound) for the mathematical problem of sphere packing. Compare with Figure 3D in (Bushdid et al., 2014). (B): Same plot as in A, only using the lower-bound for the same calculation. (C): Upper and lower bounds of the sphere packing problem for the N = 30case (green lines from A and B, respectively. The dark gray bar shows the range of defensible estimates under the sphere-packing framework, using the d calculated in (Bushdid et al., 2014). Using that d, the number of discriminable stimuli may be as small as \u223c10,000, and is guaranteed to be no larger than \u223c1 trillion. Since the estimate of d is also fragile (Figure 3), the data may in fact support any value in the shaded gray area.\n\n### Avenues for improving the estimate\n\nIf one is seeking a conservative estimate of the number of discriminable stimuli in a perceptual space whose organization and intrinsic dimensionality are poorly understood, it is arguably more appropriate to use a model that accounts for the data with the smallest number of dimensions. The massive estimates possible in the framework of (Bushdid et al., 2014) are an immediate consequence of a definition of dimensionality driven by experimenter designation, not data.\n\nWe therefore propose an alternative framework: use experimental data to create a working map of the perceptual space, and then apply the sphere-packing framework to that map, rather than to a map of the stimulus space. In cognitive science, psychometrics, and marketing, subject responses to stimuli are used to create maps of the underlying perceptual (or conceptual) representations of those stimuli. These maps are characterized by the attribute that pairs of items which are considered intuitively to be perceptually near (rated similar or difficult to discriminate) are nearer to one another on the map than pairs of items which are perceptually more distant (rated dissimilar or easy to discriminate). There are many algorithms for generating such maps, many of which have been used before in olfaction, including variants of PCA (Zarzo and Stanton, 2006; Khan et al., 2007; Koulakov et al., 2011), non-negative matrix factorization (NMF, [Castro et al., 2013]), and multi-dimensional scaling (Mamlouk et al., 2003). While there are open questions in the generation of these maps (e.g., how many dimensions should they have?), they all have the virtue that their accuracy can be checked (e.g., by examining the correlation between subjects' indications of item pair dissimilarity and the distance between that pair on the map), and thus the maps can be improved. Developing these maps may also have the collateral benefit of revealing stimulus dimensions intrinsic to olfaction (if any), which could constrain the experimental choice of a resolution to measure.\n\nUnfortunately, it is difficult if not impossible to create these maps from the data discussed here, because each mixture of a tested pair is used only once in (Bushdid et al., 2014), in that pair alone, and never in any other pairs. Thus, there are no serial comparisons of the same mixture that could be used to anchor a stimulus on the map relative to a stimulus against which it was not directly compared experimentally. Thus, there is no way to compute distances between stimuli that do not appear together in a tested pair. In other words, the structure of the perceptual space is severely under-determined by the data. In future experiments such serial repetition of already-tested mixtures would be required to build up a data set to which the proposed method could be applied.\n",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "b4f66b07-0f35-4c74-8c1a-00d8a8361d93",
+      "submission_id": "9adcdb47-508e-40ab-9b42-984fbc56e384",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Borst, Max Planck Institute of Neurobiology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08127.016](https://doi.org/10.7554/eLife.08127.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe number of olfactory stimuli that humans can discriminate is still unknown\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and two reviewers, one of who, Alexander Borst, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision. Based on the two reviews below and our discussions, we will be pleased to accept your work for publication.\n\nReviewer #1:\n\nThis is a timely study shedding light from an interesting statistical angle on the paper by Bushdid et al., published in 2014. As the authors demonstrate, the formula used in the previous account poses an upper bound, not a lower bound, on the number of discriminable odorants. Furthermore, the formula used depends in a very sensitive way on various factors like the number of participants and the number of test odors used. In conclusion, the statement from the previous study is untenable.\n\nReviewer #2:\n\nThis manuscript is a critique of the methods used in a recent paper by Bushdid et al. in which the authors purport that humans can discriminate between at least a trillion odors. Gherkin and Castro here dissect methodically the reasons why this conclusion is unwarranted and provide a limpid assessment of the mistakes made in the original study. (The critique is carefully limited to methodological issues, and makes no statement as to whether the initial claim might eventually be shown to be true or not.)\n\nThis paper is a treasure of clarity and thoroughness. The points made in the main manuscript are further expanded in an appendix, and the suggestion to improve the estimate via constructing a \u201ccontinuous\u201d perceptual map of odors is excellent.\n\n[Editors\u2019 note: minor issues and corrections have not been included, so there is not an accompanying Author response.]\n",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "43022322-fe44-4387-8453-aa1656109a4b",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C1",
+      "claim": "Bushdid et al. (2014) proposed that humans can discriminate between at least a trillion olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently proposed (Bushdid et al., 2014) that humans can discriminate between at least a trillion olfactory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bushdid et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a1b8dabf-0c5d-4fa0-9ab2-34cbc28a7529",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C2",
+      "claim": "The estimate of one trillion discriminable olfactory stimuli is the result of a fragile estimation framework capable of producing nearly any result from the reported data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that this claim is the result of a fragile estimation framework capable of producing nearly any result from the reported data, including values tens of orders of magnitude larger or smaller than the one originally reported in (Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors present data and analysis showing the framework produces widely varying estimates (Figure 3, Table 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3fdb9c4d-23b4-4641-9041-17a9e7e31f4d",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C3",
+      "claim": "The formula used to derive the estimate provides an upper bound, not a lower bound as reported in Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the formula used to derive this estimate is well-known to provide an upper bound, not a lower bound as reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to the Hamming bound from coding theory and mathematical analysis of Equation 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "fd48057e-d9e3-4174-85ae-e0bc0a1fb57f",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C4",
+      "claim": "The actual claim supported by the calculation is that humans can discriminate at most one trillion olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "That is to say, the actual claim supported by the calculation is in fact that humans can discriminate at most one trillion olfactory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the inference that the formula provides an upper bound rather than a lower bound.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "eee9026a-8264-430a-b8ff-85add73197cf",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C5",
+      "claim": "There is no evidence for the original claim that humans can discriminate at least one trillion olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that there is no evidence for the original claim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the authors' analysis showing the fragility of the estimation framework and the misidentification of the bound type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "2c18a3a5-58ab-46a6-a5d8-c263822f7b28",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C6",
+      "claim": "If the experiment enlisted approximately 100 additional subjects similar to the original ones, the same analysis would have concluded that all possible stimuli are discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "Had the experiment enlisted \u223c 100 additional subjects similar to the original ones, the same analysis would have concluded that all possible stimuli are discriminable (i.e., that each of the more than 1029 olfactory stimuli possible in their framework are mutually discriminable).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through reanalysis of the data with varying numbers of subjects (Figure 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c905c600-321d-4d7f-b026-ef66ad6bad3e",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C7",
+      "claim": "If the experimental data were analyzed using moderately more conservative statistical criteria, it would have concluded that there are fewer than 5000 discriminable olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, if the same experimental data were analyzed using moderately more conservative statistical criteria, it would have concluded that there are fewer than 5000 discriminable olfactory stimuli\u2014no larger than the folk wisdom value that the new estimate purports to replace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through reanalysis with different significance thresholds (Figure 3, Table 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "b42f3820-b74a-46fb-b306-1189e12fe854",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C8",
+      "claim": "Data describing the same underlying perceptual abilities admit a wide range of extremely disparate conclusions varying over 25 orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, under this framework, data describing the same underlying perceptual abilities admit a wide range of extremely disparate (varying over 25 orders of magnitude), yet unobjectionable alternative conclusions (including both the largest and smallest possible estimates allowed by the analysis framework).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the range of estimates shown in Figure 3 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "4a560313-43c0-4afb-8298-11dccd932775",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C9",
+      "claim": "The framework for estimating discriminable olfactory stimuli is unsound.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the framework is unsound: there may be trillions of discriminable olfactory stimuli, or more, or fewer, but the framework does not provide the means for settling this question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the demonstrated fragility and inconsistency of the estimation framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "2060b965-29af-4cfe-830f-f415482a5bf2",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C10",
+      "claim": "The framework has strictly methodological problems of a statistical origin that do not depend on the validity of a competing set of assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "For most of this paper, we remain agnostic about whether the framework is conceptually sound, to highlight the fact that it has strictly methodological problems of a statistical origin that do not depend on the validity of a competing set of assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors demonstrate statistical problems independent of conceptual issues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3bdb3201-568a-49cb-ad96-89013afd36de",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C11",
+      "claim": "The estimated number of discriminable stimuli depends steeply, systematically, and non-asymptotically on choices of arbitrary experimental parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The first main concern is that the estimated number of discriminable stimuli depends steeply, systematically, and non-asymptotically on choices of arbitrary experimental parameters, among them the number of subjects enrolled, the number of discrimination tests performed, and the threshold for statistical significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through systematic variation of these parameters (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "ab5c0b95-432e-474e-864a-dce422a4a43f",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C12",
+      "claim": "The order of magnitude claim of 'one trillion olfactory stimuli' requires that experimental parameters assume a very narrow set of values.",
+      "claim_type": "EXPLICIT",
+      "source": "We show below that the order of magnitude claim of 'one trillion olfactory stimuli' requires that those parameters assume a very narrow set of values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3 where the trillion estimate only appears in a narrow parameter regime.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "fb004dab-4b3e-49d9-af72-c2af1d76b3da",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C13",
+      "claim": "An estimate should not change in expectation as additional data are collected.",
+      "claim_type": "EXPLICIT",
+      "source": "Certainly, the precise value of an estimate may change as additional data are collected, but the estimate should not change in expectation; it should not be possible to make an estimate arbitrarily large (or small), simply by collecting more (or less) data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle of statistical consistency, which is established knowledge in statistics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "0eb4102c-68f3-40a1-826c-94d632efa0ec",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C14",
+      "claim": "The estimate should not become arbitrarily small or large with adjustment of a significance criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the estimate itself should not become arbitrarily small or large with adjustment of a significance criterion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle of robust statistical estimation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c934e020-ea2c-494d-93d4-49bb2b9869f4",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C15",
+      "claim": "Estimates that scale systematically with incidental parameter choices are considered statistically inconsistent.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates that scale systematically with such incidental parameter choices are considered statistically inconsistent (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established statistical knowledge, illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6454d0ec-3ae6-4a60-a262-dd3dc40512a7",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C16",
+      "claim": "The inconsistency of the present estimate produces a tremendously large space of extremely different, yet unobjectionable alternative conclusions about the number of discriminable olfactory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the inconsistency of the present estimate that produces a tremendously large space of extremely different, yet unobjectionable alternative conclusions that can be reached about the number of discriminable olfactory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the demonstrated inconsistency and the wide range of estimates produced.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c84227dd-634d-430b-8344-bd24de475ce3",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C17",
+      "claim": "A consistent estimator produces estimates that asymptotically converge in expectation as sample size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimator is consistent if the resulting estimate asymptotically converges (in expectation) as sample size increases (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the definition of statistical consistency, illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "fc4fa195-33b1-47e7-9cd6-9499c101a3bd",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C18",
+      "claim": "Uncertainty in an estimate may shrink with sample size, but the estimate itself should not systematically change with sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncertainty in the estimate (gray area) may shrink with sample size, but the estimate itself should not systematically change with sample size, and should converge on the truth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a property of consistent estimators, illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a7d313cf-0770-4493-82af-529ed04f89b4",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C19",
+      "claim": "Estimators without the property of consistency are termed inconsistent and are considered unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimators without this property are termed inconsistent (the blue line is a relevant example), and are considered unreliable, as the resulting estimate can be heavily biased by the sample size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established statistical knowledge, illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "f70a66c5-a2f9-4a65-b155-a0a423d9a68c",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C20",
+      "claim": "An especially inconsistent estimator can produce any estimate within the allowed range if the estimate has a minimum and maximum allowed value.",
+      "claim_type": "EXPLICIT",
+      "source": "If the estimate has a minimum and maximum allowed value (see Equation 1), an especially inconsistent estimator can even produce any estimate within that range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the properties of inconsistent estimators and demonstrated in the analysis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "0ec44378-6d88-40d5-b0dd-0823cdcfc263",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C21",
+      "claim": "The authors correctly recapitulated the analysis undertaken in Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate that we can correctly recapitulate the analysis undertaken in (Bushdid et al., 2014), Figure 2 shows our reproduction (using raw supplementary data from [Bushdid et al., 2014]) of two critical figures from that paper (Bushdid et al., 2014), from which its main conclusion was drawn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The reproduction is shown in Figure 2, which matches the original figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3d6b7691-1556-46af-a28a-f0a4988134c5",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C24",
+      "claim": "Code to reproduce the analyses is available at http://github.com/rgerkin/trillion.",
+      "claim_type": "EXPLICIT",
+      "source": "Code to reproduce these and all subsequent analyses is available at http://github.com/rgerkin/trillion, documented at http://nbviewer.ipython.org/github/rgerkin/trillion/blob/master/journal.ipynb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors explicitly state the availability of their code.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3739756e-8010-4bac-8364-2c0c1042091c",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C27",
+      "claim": "The only assumption required to obtain these estimates is that performance in new subjects is similar to performance in the original subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The only assumption required to obtain these estimates is that performance in new subjects is similar to performance in the original subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state this assumption explicitly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "932aab55-5ce7-414b-b579-1357ea8f4316",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C28",
+      "claim": "The fragility of the conclusion results from the claim that a modest correlation between discriminability and mixture overlap is evidence that a particular degree of mixture overlap defines a boundary partitioning discriminable from indiscriminable stimuli in a very high-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "The fragility of the conclusion results from the claim in (Bushdid et al., 2014) that a modest (if very interesting) correlation\u2014between the discriminability of a pair of mixtures and the overlap (fraction of shared components) of those mixtures\u2014is evidence that a particular degree of mixture overlap defines a boundary that partitions the discriminable from the indiscriminable in a very high-dimensional space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation of the source of the problem in the original framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "934ec3af-3a18-43ff-af97-1a4c59e30950",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C29",
+      "claim": "The framework's logic is built on an analogy to color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework's logic is built on an analogy to color vision, where estimating the number of discriminable colors requires knowing only two numbers: the size of the stimulus space (that is, the range of visible wavelengths), and the minimally discriminable distance between a typical pair of stimuli (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated explicitly and illustrated in Figure 4.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "52f4ffbd-a30b-4ee3-938d-0174c8633b28",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C30",
+      "claim": "Dividing the size of the stimulus space by the minimally discriminable distance amounts to asking how many discriminable intervals can be 'packed' into the stimulus space.",
+      "claim_type": "EXPLICIT",
+      "source": "Dividing the first number by the second amounts to asking how many discriminable intervals can be 'packed' into the stimulus space, with that number providing an estimate of the number of discriminable color stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the logic of the sphere-packing approach explained by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "db8350a5-fcb8-4800-90c6-11d4102b0d5c",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C31",
+      "claim": "Olfactory stimuli do not have obvious physical dimensions analogous to wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "Because olfactory stimuli do not have obvious physical dimensions analogous to wavelength, olfaction is not amenable to an identical calculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of olfactory stimuli compared to visual stimuli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "e39d2a0a-15b6-45da-a07d-dcdfc9d8f8c2",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C32",
+      "claim": "Bushdid et al. (2014) established a theoretical framework that yielded a similar calculation based upon the same underlying idea as the color vision analogy.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, (Bushdid et al., 2014) established a theoretical framework that yielded a similar calculation based upon the same underlying idea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "fb714cb6-9760-4a33-9b3d-e092dec45275",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C33",
+      "claim": "Bushdid et al. (2014) proposed to divide the size of an investigator-determined olfactory stimulus space by a data-determined variable representing resolution in this space.",
+      "claim_type": "EXPLICIT",
+      "source": "(Bushdid et al., 2014) proposed to divide the size of a investigator-determined olfactory stimulus space by a data-determined variable representing resolution in this space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "054e4d13-81cb-4a0a-a58b-5bc003a7d504",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C34",
+      "claim": "The olfactory stimulus space was defined to be the discrete, high-dimensional space spanned by all mixtures containing N=30 different components that could be assembled from a library of C=128 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of being continuous, one dimensional, and defined by some intrinsic stimulus variable like wavelength, the olfactory stimulus space was defined to be the discrete, high-dimensional space spanned by all mixtures containing N = 30 different components (molecules) that could be assembled from a library of C = 128 molecules",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "55274706-65b0-44dd-b810-0f23f0557bbe",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C35",
+      "claim": "Bushdid et al. (2014) also considered the N=10 and N=20 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "(Bushdid et al., 2014) also considers the N = 10 and N = 20 cases, which we ignore in this section with no loss of generality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "9c012cae-10f4-47c4-9d67-00911c8e1a2a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C37",
+      "claim": "One definition of distance between stimuli in the olfactory stimulus space is the number of components D by which the stimuli differ.",
+      "claim_type": "EXPLICIT",
+      "source": "One definition of distance between stimuli in this space is the number of components D by which the stimuli differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the definition used in the framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "24daa448-05eb-4f29-8166-633a7e3899d2",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C40",
+      "claim": "Bushdid et al. (2014) showed that discriminability of a stimulus pair tends to increase with the distance D between the stimuli in that pair.",
+      "claim_type": "EXPLICIT",
+      "source": "(Bushdid et al., 2014) showed that discriminability of a stimulus pair tends to increase with the distance D between the stimuli in that pair (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from Bushdid et al. (2014) and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "064ddbb6-fbb0-4602-a9d6-da163d388aa7",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C41",
+      "claim": "Bushdid et al. (2014) argued for the existence of a special distance d corresponding to the D at which stimuli are 'just discriminable'.",
+      "claim_type": "EXPLICIT",
+      "source": "and then argued for the existence of a special distance d corresponding to the D at which stimuli are 'just discriminable'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6ae39bf0-9d6a-4070-8c13-409afeacbf18",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C46",
+      "claim": "The reference stimulus should be discriminable from stimuli outside the ball.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the reference stimulus should be discriminable from stimuli outside the ball.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the definition of the ball and the threshold d.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "825f0284-ea38-427f-98f3-71af45508b1f",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C47",
+      "claim": "One could count the number z of non-overlapping balls that can be packed into the stimulus space.",
+      "claim_type": "EXPLICIT",
+      "source": "We could thus count the number z of non-overlapping balls that can be packed into the stimulus space, as proposed in (Bushdid et al., 2014), by analogy to the example for color vision",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the sphere-packing approach proposed in Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "8839dff0-7ed6-474e-8d81-bac6a3cf885d",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C48",
+      "claim": "Equation 1 produces the final estimate z of the number of discriminable stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation 1 produces the final estimate z of the number of discriminable stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated explicitly in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "8138f59d-4a81-487b-94e9-b5078e0d10fd",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C49",
+      "claim": "Equation 1 has been interpreted as 'the answer' to the sphere packing problem in high dimensions, but it is in fact only a best-case scenario (an upper bound).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that while this has been interpreted as 'the answer' to the sphere packing problem in high dimensions, it is in fact only a best-case scenario (an upper bound).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of sphere packing problems in coding theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "89d7f9fa-e5c3-4f95-b48f-fa780a45a25b",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C50",
+      "claim": "The exact number of d-spanning spheres that can be packed in a discrete space defined by a particular C and N has only been computed for a few specific, modest cases of these values.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact number of d-spanning spheres that can be packed in a discrete space defined by a particular C and N has in fact only been computed for a few specific, modest cases of these values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge from the theory of sphere packing and error-correcting codes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "4978d02d-2b17-4817-a818-bd91e421c0bb",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C51",
+      "claim": "In general, it is only possible to report bounds for the number of d-spanning spheres that can be packed.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, it is only possible to report bounds for these values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge from the theory of sphere packing and error-correcting codes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "f2d9bf31-6448-4fef-bd32-807320ca32ef",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C54",
+      "claim": "C and N are fixed by experimenter choices.",
+      "claim_type": "EXPLICIT",
+      "source": "C and N are fixed by experimenter choices",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "74157ef8-9ce2-42da-9d6c-78e763a2900a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C55",
+      "claim": "d is the only quantity derived from data that is related to measured psychophysical performance.",
+      "claim_type": "EXPLICIT",
+      "source": "and d\u2014the resolution-like term\u2014is the only quantity derived from data that is related to measured psychophysical performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "bf437d3b-f77e-4328-ab03-73e6919e7427",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C56",
+      "claim": "A classic psychometric curve showing discriminability as a function of inter-stimulus distance D admits a few plausible ways to derive d.",
+      "claim_type": "EXPLICIT",
+      "source": "A classic psychometric curve (Figure 4B), showing discriminability as a function of inter-stimulus distance D, admits a few plausible ways to derive d.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 4B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c7f0c7e1-38e8-47d8-bd1c-014345cdcf87",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C57",
+      "claim": "The simplest way to derive d is to use a discriminability threshold, such that d corresponds to the distance D at which the 'fraction correct' reaches a certain value.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest is to use a discriminability threshold, such that d corresponds to the distance D at which the 'fraction correct' reaches a certain value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed method for deriving d.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "975457a4-4b84-4826-880f-1a26b61f1050",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C61",
+      "claim": "If the psychometric curve is sufficiently steep near some value of D, then the derived d will vary minimally over a wide range of choices for the threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "If the psychometric curve is sufficiently steep near some value of D (Figure 4\u2014figure supplement 1A represents an ideal case) then the derived d will vary minimally over a wide range of choices for the threshold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a653a6c3-c09e-40a1-81ea-6a2272ef771a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C62",
+      "claim": "If the psychometric curve is sufficiently steep, we might be confident that the d we derive is a truly meaningful measure of resolution\u2014it would be robust.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, we might be confident that the d we derive is a truly meaningful measure of resolution\u2014it would be robust.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the conditions for a robust estimate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "53b2a8af-f9f3-4f08-8a25-33d7b4426fd6",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C63",
+      "claim": "The authors explored the approach of thresholding the fraction discriminated and concluded that it does not suffice for deriving a robust d.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored this approach (Figure 4\u2014figure supplement 2), and concluded that it does not suffice for deriving a robust d.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion from the analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "084e3a72-035c-46fd-a07b-d290fa18432a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C64",
+      "claim": "The approach actually used in Bushdid et al. (2014) is to apply a threshold to the fraction significantly discriminable, not to the fraction discriminated.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach actually used in (Bushdid et al., 2014) is instead to apply a threshold not to the fraction discriminated (explored in Figure 4\u2014figure supplement 2), but to the fraction significantly discriminable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6cca0287-9df2-4ce6-bb8e-048980e7e09f",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C66",
+      "claim": "Bushdid et al. (2014) re-plotted the summary data as fraction significantly discriminable to facilitate visualization.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate visualization of this step, (Bushdid et al., 2014) re-plotted the summary data (fraction correctly discriminated) as fraction significantly discriminable (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is cited from Bushdid et al. (2014) and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "8665ff47-c278-46a6-9582-0d7f4e4bb943",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C67",
+      "claim": "The view of data as fraction significantly discriminable provides a linear relationship between distance D and the fraction significantly discriminable, which holds across all the values of N tested.",
+      "claim_type": "EXPLICIT",
+      "source": "This view of the data provides a linear relationship between distance D and the fraction significantly discriminable, which holds across all the values of N tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "b4efd9c8-c08d-45da-8abb-1d53e2119db2",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C68",
+      "claim": "The relationship between distance D and fraction significantly discriminable is much steeper than for fraction discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship is much steeper than for fraction discriminable (compare Figure 2 and Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing Figure 2 and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "8903ed39-b8b7-43f3-8fd4-162b18a4f38e",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C69",
+      "claim": "The hypothesis-testing step acts as a strong non-linear threshold that exaggerates otherwise small differences in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "because this hypothesis-testing step acts as a strong non-linear threshold that exaggerates otherwise small differences in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effect of the hypothesis-testing step.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "b07d66e3-fded-4757-a3b7-8f1e745d426a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C70",
+      "claim": "Bushdid et al. (2014) chose a threshold of 50% significantly discriminable.",
+      "claim_type": "EXPLICIT",
+      "source": "An arbitrary choice of threshold is required; (Bushdid et al., 2014) chose a threshold of 50% significantly discriminable",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "05d60269-347b-41d2-85fc-f16097d3aed7",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C71",
+      "claim": "Bushdid et al. (2014) computed d from the fraction significantly discriminable using linear regression and interpolation.",
+      "claim_type": "EXPLICIT",
+      "source": "and computed d from the fraction significantly discriminable using linear regression and interpolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "d4dbf537-42e7-4c8d-91bf-bc1f0dd25caa",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C72",
+      "claim": "Varying the threshold of 50% itself would change the computed d (and consequently z).",
+      "claim_type": "EXPLICIT",
+      "source": "Varying the threshold (i.e., 50%) itself (not shown), would change the computed d (and consequently z), but this is not the largest issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the sensitivity of the estimate to the threshold.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "cf234b89-3b00-4b6b-b593-b1fb93988f9c",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C73",
+      "claim": "By introducing a hypothesis-testing step, the d derived from Figure 2 now varies systematically with the number of subjects enrolled in the study and the number of mixtures tested.",
+      "claim_type": "EXPLICIT",
+      "source": "By introducing a hypothesis-testing step, the d derived from Figure 2 now varies systematically with the number of subjects enrolled in the study (and the number of mixtures tested), and with the choice of significance criterion \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "917dd3ec-5c36-4142-9e13-f741d18d3bd9",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C74",
+      "claim": "Each data point used to compute d becomes the binary result of a hypothesis test, each of which depends critically on sample size and test specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because each data point used to compute d becomes the binary result of a hypothesis test, each of which depends critically on sample size and test specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of why the estimate varies with sample size and significance criterion.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "ed5bb84a-a713-4ce9-a706-0055708e0869",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C75",
+      "claim": "Because d is fed into an expression (Equation 1) that explodes geometrically, the result is a recipe for producing any of a range of estimates for z that one might choose.",
+      "claim_type": "EXPLICIT",
+      "source": "Because d is then fed into an expression (Equation 1) that explodes geometrically, the result is a recipe for producing any of a range of estimates for z that one might choose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the geometric dependence of z on d.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "052058ab-7f87-4cbe-91da-33031b173e55",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C76",
+      "claim": "If one enlists more subjects or slackens the significance criterion, a very large (even the largest possible) number will be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "If one enlists more subjects or slackens the significance criterion, a very large (even the largest possible) number will be obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a7417a80-dc85-42b6-a598-213cc23d7a7e",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C77",
+      "claim": "If one enlists fewer subjects or makes the significance criterion more strict, a very small (even the smallest possible) number will be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "If one enlists fewer subjects or makes the significance criterion more strict, a very small (even the smallest possible) number will be obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "f6848052-da1a-463e-b0fa-814229c19e0b",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C78",
+      "claim": "A hypothesis test is meant to assess the strength of evidence for or against a hypothesis, not to make a point estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothesis test is meant to assess the strength of evidence for or against a hypothesis (often against a null hypothesis), not to make a point estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the purpose of hypothesis testing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "e3af32c6-e85a-429c-b840-d6dffac3d525",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C79",
+      "claim": "It may not be uncommon for researchers to use hypothesis testing to count the number or fraction of data points exhibiting a certain property.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it may not be uncommon for researchers to use hypothesis testing in the manner done in (Bushdid et al., 2014)\u2014to count the number or fraction of data points exhibiting a certain property.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about common research practices.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "240ac21f-9d58-48cf-ae27-bc6494668b4a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C80",
+      "claim": "In many cases, using hypothesis testing to count data points may amount to a venial statistical sin with benign consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases this may amount to a venial statistical sin with (hopefully) benign consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the typical consequences of this practice.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "ffda558a-3477-432b-b024-12dd3a7103b6",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C81",
+      "claim": "The use of hypothesis testing to count data points in Bushdid et al. (2014) has severe consequences due to the extremely steep dependence of z on d guaranteed by Equation 1.",
+      "claim_type": "EXPLICIT",
+      "source": "But that is unfortunately not the case in (Bushdid et al., 2014), due in part to the extremely steep dependence of z on d guaranteed by Equation 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about why the problem is severe in this case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "12fd0e91-c4dc-4f23-8409-676e49d5b281",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C82",
+      "claim": "If one claims that an estimate is meaningful, it is fair to ask how vigorously one would have to defend a specific choice of arbitrary experimental parameters to defend a particular order-of-magnitude range around that estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "If one claims that an estimate is meaningful, it is fair to ask how vigorously would one have to defend a specific choice of arbitrary experimental parameters to defend a particular order-of-magnitude range around that estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle for evaluating the robustness of estimates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "abeeb470-68be-4ed9-ae64-0240c81c316b",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C83",
+      "claim": "The systematic sensitivities exhibited severely undermine the plausibility and relevance of the estimate reported in Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the systematic sensitivities exhibited here severely undermine the plausibility and relevance of the estimate reported in (Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the demonstrated sensitivities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6bc38bc5-8d24-4d35-a58d-fb4832610ae8",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C84",
+      "claim": "Due to the sensitivities, one could pick almost any number of discriminable stimuli in advance, and affirm this number using these or similar data.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these sensitivities, one could pick almost any number of discriminable stimuli in advance, and affirm this number using these or similar data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the fragility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "e0c90f5c-e138-4014-9a45-5ebdda840d55",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C85",
+      "claim": "The absence of a robust d to characterize the data is an insurmountable obstacle for the framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the absence of a robust d to characterize the data is an insurmountable obstacle for the framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the fundamental problem with the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "ab918bdc-fd4f-4f54-8975-e5a0883dfa5b",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C86",
+      "claim": "The sphere-packing calculation naturally involves measuring the resolution of perception in terms of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'sphere packing' calculation in this case naturally involves measuring the resolution of perception in terms of the stimulus, but its validity is not a consequence of this measurement alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the sphere-packing approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c2dda234-9847-445b-8068-65cd5f610b39",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C87",
+      "claim": "The sphere-packing procedure is sensible because the independent stimulus dimension (wavelength) is respected as such by perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the procedure in Figure 4 is sensible because the thing we are calling an independent stimulus dimension (wavelength) is respected as such by perception: we encounter monotonically changing, non-redundant percepts as we move from one extreme of the stimulus space to the other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of why the sphere-packing approach works for color vision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "7c0e63d4-dc3f-462b-bed7-61c90f05515f",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C88",
+      "claim": "If the same percept were experienced for several non-overlapping disjoint intervals, the sphere packing formulation would fall apart.",
+      "claim_type": "EXPLICIT",
+      "source": "If we didn't\u2014say, if the same percept 'blue' were experienced for several non-overlapping disjoint intervals\u2014the sphere packing formulation would fall apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical scenario illustrating when the approach would fail.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "27744ee9-1e69-480a-af1b-96cc615dcb36",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C89",
+      "claim": "One might observe that on average discriminability improves with distance, but this would not be evidence of a characteristic length scale that partitions stimulus pairs into discriminable vs indiscriminable sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We might observe that on average discriminability improves with distance, but this would not be evidence of a characteristic length scale that partitions stimulus pairs into discriminable vs indiscriminable sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what would constitute insufficient evidence for the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "77ce632e-e3a1-499c-b075-deceb41d1cde",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C90",
+      "claim": "The sphere-packing framework is valid only if the underlying geometry of stimulus space aligns with the geometry of perceptual space.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the sphere-packing framework is valid only if the underlying geometry of stimulus space (that the investigator has designed) aligns with the geometry of perceptual space (as implemented in neural circuitry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a condition for the validity of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "e3cf8fcf-6d53-4929-a5b5-835e0f246a75",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C91",
+      "claim": "Formally, the map from stimulus space to perceptual space needs to be homeomorphic, or nearly so.",
+      "claim_type": "EXPLICIT",
+      "source": "Formally, the map from stimulus space to perceptual space needs to be homeomorphic, or nearly so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a formal mathematical condition for the framework's validity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "cab1974d-e578-4764-8da5-17bf52fb2b2e",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C92",
+      "claim": "It was assumed in Bushdid et al. (2014) that each component of the molecular library spanned an informative additional dimension for perception to explore.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of providing evidence for this homeomorphism, it was assumed in (Bushdid et al., 2014) for the purposes of calculation that each component of the molecular library (of size C = 128 in [Bushdid et al., 2014]) spanned an informative additional dimension for perception to explore: each molecule in the library is treated as an olfactory primary that is independent of all the others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "9ddfced4-e7c8-45d7-93ca-81a14764ddde",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C93",
+      "claim": "The assumption that each molecule is an independent olfactory primary is codified in the numerator of Equation 1 and allows for a massive space of potential discriminable stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the assumption, codified in the numerator of Equation 1, that allows for a massive space of potential discriminable stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c84aa166-4c0e-4399-a4ef-70a06ce78cfc",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C94",
+      "claim": "The guaranteed runaway growth of the numerator as molecules are added to the C-sized library was offered in Bushdid et al. (2014) as an argument for why the reported 'trillion' figure is an underestimate.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the guaranteed runaway growth of the numerator as molecules are added to the C-sized library was offered in (Bushdid et al., 2014) as an argument for why the reported 'trillion' figure is an underestimate\u2014after all, C could always be higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "d606e5fe-c850-4c20-8691-a87a936a2d6e",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C95",
+      "claim": "The estimate depends geometrically on C, with a power law exponent of approximately 30.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the estimate depends geometrically on C, with a power law exponent of \u223c30 (Figure 5, blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "301abadd-167b-4dab-8932-9a8761940634",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C96",
+      "claim": "If the chemical library were doubled, the estimate z would increase by a factor of 2^30 under constant performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, if the chemical library were doubled, the estimate z would increase by a factor of 230 under constant performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the geometric dependence on C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a313e861-f445-4fe9-87bd-d8f0db15fc90",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C97",
+      "claim": "If the component library were increased to the size of a standard flavor and fragrance catalog (approximately 2000 chemicals), the estimate would increase to z\u224810^41.",
+      "claim_type": "EXPLICIT",
+      "source": "If the component library were increased to the size of a standard flavor and fragrance catalog (\u223c2000 chemicals), the estimate would increase to z\u223c1041",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the geometric dependence on C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "442abfcc-db2c-4533-a7ba-db4663112325",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C98",
+      "claim": "An estimate of z\u224810^41 would imply a unique olfactory percept for each carbon atom on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "implying a unique olfactory percept for each carbon atom on earth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to illustrate the magnitude of the estimate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "d3991214-0237-4336-b685-7c9d2fcf4424",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C99",
+      "claim": "Subjects' performance could become worse when mixtures are drawn from a larger, more complete library.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects' performance could become worse when mixtures are drawn from this larger, more complete library, and we acknowledge that we cannot know in advance what the newly calculated resolution d would be on the new stimulus space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about what might happen with a larger library.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c56e1c03-accd-4d1a-8013-c6dd2e48ecf7",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C100",
+      "claim": "As the numerator of Equation 1 increased, its denominator might conveniently grow proportionally.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, as the numerator of Equation 1 increased, its denominator (given by Equation 2) might conveniently grow proportionally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a possible compensating effect.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "f1412f1f-8dce-4f74-b102-782c154bff9b",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C103",
+      "claim": "10^61 discriminable percepts would be 10 million trillion unique olfactory percepts for every carbon atom on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "or 10 million trillion unique olfactory percepts for every carbon atom on earth (Figure 5, red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison to illustrate the magnitude of the estimate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "9e6c7dc3-b8cd-414d-91c2-f290e3bff8ab",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C104",
+      "claim": "One may object that the inflation of C is an unfair critique, as the perceptual redundancy of molecules must at some point provide an important constraint on the size of the artificially constructed stimulus space.",
+      "claim_type": "EXPLICIT",
+      "source": "One may object that the inflation of C here is an unfair critique, as the perceptual redundancy of molecules must at some point provide an important constraint on the size of the artificially constructed stimulus space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anticipated objection to the authors' argument.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "32a9b3b4-e692-4434-aaf3-dd77887d12b9",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C105",
+      "claim": "It has been reported that as few as thirty components are required to imbue most mixtures with a common smell, even when there is no component overlap between the mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been reported that as few as thirty components are required to imbue most mixtures with a common smell, even when there is no component overlap between the mixtures (Weiss et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Weiss et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "0486f0af-1db5-4488-b7ef-500b3d75b0a8",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C106",
+      "claim": "The essence of the problem with Equation 1 is: where does the point of perceptual redundancy lie, and why wasn't the constraint important to consider for the original C=128 molecular library?",
+      "claim_type": "EXPLICIT",
+      "source": "But this is the essence of the problem with Equation 1: where does that point lie, and why wasn't the constraint important to consider for the original C = 128 molecular library?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' argument about a fundamental problem with the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c348253d-3059-4d07-b549-2a88ab1d4319",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C107",
+      "claim": "The formula used to derive z does not provide a lower bound as reported in Bushdid et al. (2014), even if one takes the estimate of d to be unimpeachable.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if one takes the estimate of d to be unimpeachable, the formula used to derive z does not provide a lower bound as reported in (Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is argued based on analysis of Equation 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3feedf5b-619c-4f76-b8d5-73205e66e114",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C108",
+      "claim": "The worst-case behavior of Equation 1 as C grows suggests it does not provide a lower bound.",
+      "claim_type": "EXPLICIT",
+      "source": "This much is suggested by the worst-case behavior of Equation 1 as C grows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavior shown in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "47265d5e-b0df-491f-984a-a0ff618ebdeb",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C109",
+      "claim": "Worst case behavior should correspond to z=1.",
+      "claim_type": "EXPLICIT",
+      "source": "After all, worst case behavior should correspond to z = 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical principle about what worst-case should mean.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "80291603-fe35-4933-b56a-29b7c7a0dc07",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C110",
+      "claim": "If one cannot discriminate anything (maximal d), then there is only one percept.",
+      "claim_type": "EXPLICIT",
+      "source": "If one cannot discriminate anything (maximal d), then there is only one percept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the meaning of maximal d.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "8d194b8f-f2a3-4dc0-a54b-9a63ed557dbe",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C111",
+      "claim": "Equation 1 is a variant of the Hamming bound for constant weight codes.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining Equation 1 more closely, we see that it is a variant of the so-called Hamming bound for constant weight codes (MacWilliams and Sloane, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge from coding theory, cited from MacWilliams and Sloane, 1977.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "085d20fb-476d-44be-b8d5-5a4d2acaf3de",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C112",
+      "claim": "The Hamming bound for constant weight codes is well-known to be an upper bound for an identically formulated problem in the theory of error-correcting codes.",
+      "claim_type": "EXPLICIT",
+      "source": "which is well-known to be an upper bound for an identically formulated problem in the theory of error-correcting codes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge from coding theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "30daeff9-6200-4a43-a95b-05c4317c60a9",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C114",
+      "claim": "The correct answer for the number of discriminable stimuli when d=N=30 is 1 (or 4, depending on conventions).",
+      "claim_type": "EXPLICIT",
+      "source": "and we know the correct answer to be 1 (or 4, depending on conventions, see the Supplemental Materials).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact from coding theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "55abbc33-7767-46df-818e-a20109f63e25",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C115",
+      "claim": "Since the upper bound exceeds the correct answer, Equation 1, while not particularly tight as an upper bound, is nonetheless not wrong, so long as we acknowledge that it is an upper and not a lower bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the upper bound exceeds the correct answer, Equation 1, while not particularly tight as an upper bound, is nonetheless not wrong, so long as we acknowledge that it is an upper and not a lower bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the correct interpretation of Equation 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "dc834a10-4b04-4b70-8170-834b366aaf2a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C116",
+      "claim": "The same interpretation (that Equation 1 provides an upper bound) applies for all other values of d, including the one derived from the data in Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The same applies for all other values of d, including the one derived from the data in (Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference extending the conclusion to all values of d.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "135e27b4-9193-48ba-8d36-a96af0f549c5",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C117",
+      "claim": "Equation 1, as used in Bushdid et al. (2014), provides no insight into the lower bound for z.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Equation 1, as used in (Bushdid et al., 2014), provides no insight into the lower bound for z",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about what Equation 1 can and cannot tell us.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "e7a281ff-8244-489b-bdbf-db2f58ce8416",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C118",
+      "claim": "A lower bound is required to overturn conventional wisdom about the number of discriminable stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "with a lower bound being required to overturn conventional wisdom about the number of discriminable stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what would be needed to support the original claim.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "b1a75eef-08b3-453f-beab-ed70daeace4d",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C119",
+      "claim": "To obtain a lower bound one must dispense with the factor of 2 in Equation 1, yielding Levenshtein's constant weight version of the Gilbert-Varshamov bound for error-correcting codes.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, to obtain a lower bound one must dispense with the factor of 2 in Equation 1, yielding Levenshtein's constant weight version of the so-called Gilbert-Varshamov bound for error-correcting codes ([Levenshtein, 1971; MacWilliams and Sloane, 1977; Jiang and Vardy, 2004],see Supplemental Materials).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge from coding theory, cited from multiple sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "d8c28945-8614-45ef-b412-c6a8263eddd8",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C120",
+      "claim": "A plot of the lower bound obtained using the Gilbert-Varshamov bound is shown in Figure 6B, along with the reconstructed upper bounds from Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of the lower bound obtained in this manner is shown in Figure 6B, along with the reconstructed upper bounds from (Bushdid et al., 2014) a, showing the true bounded interval for z.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "43a913c5-1c70-4452-ac26-7590f28450d4",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C121",
+      "claim": "The corrected lower bound reaches z=1 for worst-case d, implying sensibly that anosmics cannot discriminate any stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, this corrected lower bound reaches z = 1 for worst-case d, implying sensibly that anosmics cannot discriminate any stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the behavior of the corrected lower bound.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "033ee249-0f32-4428-8880-30b85b7f1b0a",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C122",
+      "claim": "The upper bound (reported as a lower bound in Bushdid et al. 2014) is on the order of several thousand for worst case d, showing that it cannot be a lower bound.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the upper bound (reported as a lower bound in 1) is on the order of several thousand for worst case d, showing that it cannot be a lower bound d; this can also be confirmed in Figure 4 of (Bushdid et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the analysis and can be confirmed in the original paper.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "bcae0004-8e4f-46bf-b40a-755f40a20d64",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C123",
+      "claim": "If one is seeking a conservative estimate of the number of discriminable stimuli in a perceptual space whose organization and intrinsic dimensionality are poorly understood, it is arguably more appropriate to use a model that accounts for the data with the smallest number of dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "If one is seeking a conservative estimate of the number of discriminable stimuli in a perceptual space whose organization and intrinsic dimensionality are poorly understood, it is arguably more appropriate to use a model that accounts for the data with the smallest number of dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed principle for improving the estimate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "b1639ec8-6918-47f7-a194-4e69891f3b77",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C124",
+      "claim": "The massive estimates possible in the framework of Bushdid et al. (2014) are an immediate consequence of a definition of dimensionality driven by experimenter designation, not data.",
+      "claim_type": "EXPLICIT",
+      "source": "The massive estimates possible in the framework of (Bushdid et al., 2014) are an immediate consequence of a definition of dimensionality driven by experimenter designation, not data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the source of the problem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "4b0de0bf-aea4-44a9-b405-140fd0def9ce",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C125",
+      "claim": "The authors propose an alternative framework: use experimental data to create a working map of the perceptual space, and then apply the sphere-packing framework to that map.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose an alternative framework: use experimental data to create a working map of the perceptual space, and then apply the sphere-packing framework to that map, rather than to a map of the stimulus space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' proposed alternative approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "037bbb02-9eca-4d06-8135-c7c9b94f6d52",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C126",
+      "claim": "In cognitive science, psychometrics, and marketing, subject responses to stimuli are used to create maps of the underlying perceptual (or conceptual) representations of those stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In cognitive science, psychometrics, and marketing, subject responses to stimuli are used to create maps of the underlying perceptual (or conceptual) representations of those stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about methods used in these fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "1eb9ffd4-d971-4ad9-acf0-14229d23f2d4",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C127",
+      "claim": "Perceptual maps are characterized by the attribute that pairs of items which are considered intuitively to be perceptually near are nearer to one another on the map than pairs of items which are perceptually more distant.",
+      "claim_type": "EXPLICIT",
+      "source": "These maps are characterized by the attribute that pairs of items which are considered intuitively to be perceptually near (rated similar or difficult to discriminate) are nearer to one another on the map than pairs of items which are perceptually more distant (rated dissimilar or easy to discriminate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the properties of perceptual maps.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "4b8887a6-c872-471e-a2e3-0a0e7645d84c",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C128",
+      "claim": "There are many algorithms for generating perceptual maps, many of which have been used before in olfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "There are many algorithms for generating such maps, many of which have been used before in olfaction, including variants of PCA (Zarzo and Stanton, 2006; Khan et al., 2007; Koulakov et al., 2011), non-negative matrix factorization (NMF, [Castro et al., 2013]), and multi-dimensional scaling (Mamlouk et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple sources about methods used in olfaction research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a8536c16-8e8a-4644-ad49-42dc5e60c564",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C129",
+      "claim": "While there are open questions in the generation of perceptual maps, they all have the virtue that their accuracy can be checked.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are open questions in the generation of these maps (e.g., how many dimensions should they have?), they all have the virtue that their accuracy can be checked (e.g., by examining the correlation between subjects' indications of item pair dissimilarity and the distance between that pair on the map), and thus the maps can be improved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of perceptual mapping approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "f4f85d1f-f5dd-4049-841b-cad9f4450e7d",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C130",
+      "claim": "Developing perceptual maps may have the collateral benefit of revealing stimulus dimensions intrinsic to olfaction, which could constrain the experimental choice of a resolution to measure.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing these maps may also have the collateral benefit of revealing stimulus dimensions intrinsic to olfaction (if any), which could constrain the experimental choice of a resolution to measure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential benefits of the proposed approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "df91be85-5b45-43ce-9fdc-2f2ce54f7ddc",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C131",
+      "claim": "It is difficult if not impossible to create perceptual maps from the data in Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, it is difficult if not impossible to create these maps from the data discussed here",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the limitations of the available data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6ad31015-f8b3-4297-97de-a2191b3607ac",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C132",
+      "claim": "Each mixture of a tested pair is used only once in Bushdid et al. (2014), in that pair alone, and never in any other pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "because each mixture of a tested pair is used only once in (Bushdid et al., 2014), in that pair alone, and never in any other pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design in Bushdid et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "15de0c56-ec7d-4fb2-8e06-1d578372f1a6",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C133",
+      "claim": "There are no serial comparisons of the same mixture that could be used to anchor a stimulus on the map relative to a stimulus against which it was not directly compared experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there are no serial comparisons of the same mixture that could be used to anchor a stimulus on the map relative to a stimulus against which it was not directly compared experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c4336646-401e-4895-a6b2-e86312eb98ed",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C135",
+      "claim": "The structure of the perceptual space is severely under-determined by the data in Bushdid et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the structure of the perceptual space is severely under-determined by the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the limitations of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "a61801ad-ff58-48a8-9766-594d87363e58",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "claim_id": "C136",
+      "claim": "In future experiments, serial repetition of already-tested mixtures would be required to build up a data set to which the proposed method could be applied.",
+      "claim_type": "EXPLICIT",
+      "source": "In future experiments such serial repetition of already-tested mixtures would be required to build up a data set to which the proposed method could be applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future experimental design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eae161d1-98a9-433d-a5da-f6fc677a94af",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The estimation framework from Bushdid et al. (2014) is statistically inconsistent, producing estimates that vary systematically and dramatically (over 25 orders of magnitude) with arbitrary experimental parameters such as sample size, number of tests, and significance threshold. The authors demonstrate that with ~100 additional subjects, the framework would conclude all possible stimuli are discriminable, while with more conservative statistical criteria, it would conclude fewer than 5000 stimuli are discriminable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C6-C8, C11-C12, C73, C76-C77 are strongly supported by systematic reanalysis shown in Figure 3 and Table 2. The authors successfully reproduced the original analysis (C21) and then demonstrated the fragility through parameter variation. The code is publicly available (C24), enhancing reproducibility. The demonstration of inconsistency is mathematically sound and empirically validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "4062061d-5771-4d46-ae12-d53841fc5f06",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The estimate violates the statistical principle of consistency because it changes systematically with sample size and significance threshold rather than converging to a stable value. This inconsistency allows the framework to produce any estimate within the allowed range, from the smallest to largest possible values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 correctly describe established statistical principles (consistency of estimators) and appropriately apply them to critique the framework. Figure 1 illustrates the concept clearly. The application of these principles to the Bushdid et al. framework is logically sound and well-demonstrated through the empirical analysis in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Equation 1 from Bushdid et al. (2014) is mathematically equivalent to the Hamming bound from coding theory, which provides an upper bound, not a lower bound as claimed in the original paper. Therefore, the calculation supports the claim that humans can discriminate at most one trillion olfactory stimuli, not at least one trillion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C49, C111-C112 correctly identify Equation 1 as the Hamming bound, which is well-established in coding theory as an upper bound. The mathematical reasoning in C114-C116 is sound: for worst-case d=N=30, the correct answer is 1 (or 4), while Equation 1 gives ~4500, confirming it's an upper bound. This is a fundamental mathematical error in the interpretation of the original result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "ec6fd76f-c64e-451e-89c5-10f01cf338ca",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The correct lower bound is given by the Gilbert-Varshamov bound (without the factor of 2 in Equation 1), which sensibly reaches z=1 for worst-case discrimination ability, unlike the upper bound which gives several thousand even for anosmics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C122 correctly identify the Gilbert-Varshamov bound as the appropriate lower bound from coding theory. The mathematical reasoning is sound: the lower bound correctly reaches z=1 for d=N (C121), while the upper bound gives thousands (C122), confirming the bounds are correctly identified. Figure 6B visualizes this appropriately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "cd193788-eaef-4897-9cf0-464b62e0e1c8",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The critical methodological flaw is using hypothesis testing to derive point estimates. Bushdid et al. (2014) converted discrimination data into binary 'significantly discriminable' outcomes, which acts as a strong nonlinear threshold that exaggerates small differences and makes the derived parameter d systematically dependent on sample size and significance criterion \u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C75, C78, C81 identify a fundamental statistical error: using hypothesis tests (designed to assess evidence strength) to make point estimates. The explanation in C69 and C74 correctly identifies why this creates problems: each data point becomes a binary outcome dependent on sample size and test specificity. When fed into the geometrically exploding Equation 1 (C75), this produces extreme fragility. This is a valid statistical critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "28beb49e-eeeb-409b-a0de-45a16630d6f0",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The sphere-packing framework is only valid if the geometry of the investigator-designed stimulus space aligns with the geometry of perceptual space (i.e., the mapping is homeomorphic). Bushdid et al. (2014) assumed each molecule is an independent olfactory primary without providing evidence for this homeomorphism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 correctly identify the conceptual requirement for sphere-packing approaches: the stimulus space must map homeomorphically to perceptual space. The color vision analogy (C87) effectively illustrates when this works. Claims C92-C93 correctly note that Bushdid et al. assumed independence without evidence. This is a valid conceptual critique, though the authors acknowledge remaining 'agnostic' about conceptual soundness (C10) to focus on statistical issues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "ee25a185-b413-4fba-a59d-efd9f57d8271",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The estimate depends geometrically on the library size C with an exponent of ~30, leading to absurd results: doubling C increases the estimate by 2^30, and using a library of 2000 chemicals yields 10^41 discriminable stimuli (one per carbon atom on Earth). This reveals a fundamental problem with treating each molecule as an independent dimension without considering perceptual redundancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 are supported by Figure 5, which clearly shows the geometric dependence. The calculations are mathematically correct. Claims C104-C106 appropriately question where perceptual redundancy constrains the framework. This effectively demonstrates reductio ad absurdum: the framework produces physically implausible results, revealing its unsoundness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "4a8678ed-97fb-4acd-ba86-2cdd9f7a54ee",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors conclude there is no evidence for the original claim that humans can discriminate at least one trillion olfactory stimuli. The framework is fundamentally unsound and cannot settle the question of how many olfactory stimuli humans can discriminate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C9, C83-C85 represent the main conclusions, which are well-supported by the preceding analysis. The demonstration of statistical inconsistency (Result 1), misidentification of bounds (Result 3), methodological flaws (Result 5), and absurd scaling behavior (Result 7) collectively support the conclusion that the framework is unsound. The claim that 'one could pick almost any number in advance' (C84) is directly demonstrated in Figure 3 and Table 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "024ab99a-f9f6-4866-b168-e0cd743827cf",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors successfully reproduced the original analysis from Bushdid et al. (2014) using the raw supplementary data, with code publicly available for verification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by Figure 2, which matches the original figures from Bushdid et al. (2014). Claim C24 provides the code repository, enhancing reproducibility. This establishes that the authors correctly understood and implemented the original framework before critiquing it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "af44e0c0-818d-4bff-965a-da45e613c1a9",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The reanalysis assumes that performance in hypothetical new subjects would be similar to performance in the original subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 explicitly states this assumption, which is reasonable for demonstrating the framework's sensitivity to sample size. This is a standard assumption for power analysis and sensitivity analysis. The assumption is clearly stated and appropriate for the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "2ee791d6-50e6-4a0d-996c-d16a005355c0",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The framework is based on an analogy to color vision, where the number of discriminable colors is estimated by dividing the stimulus space size by the minimally discriminable distance. For olfaction, Bushdid et al. (2014) defined a discrete high-dimensional stimulus space of mixtures and attempted to derive a critical distance d from psychophysical data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C48, C54-C55 accurately describe the framework from Bushdid et al. (2014) and the sphere-packing approach. These are primarily descriptive claims about the methodology, supported by citations to the original paper and illustrated in Figure 4. The description is accurate and provides necessary context for the critique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "3dae71d4-24cc-44cb-bb77-a6b82737feed",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The exact number of d-spanning spheres that can be packed in a discrete space has only been computed for a few specific cases; in general, only bounds can be reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 correctly state established knowledge from coding theory and sphere packing. This is accurate background information that supports the argument that Equation 1 provides a bound rather than an exact answer.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "0fdf626d-5990-46c4-9d07-71f623f55e09",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A robust estimate of d requires a steep psychometric curve where the derived d varies minimally over a wide range of threshold choices. The authors explored thresholding the fraction discriminated and concluded it does not suffice for deriving a robust d.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 describe an alternative approach to deriving d and explain why it fails. This is supported by Figure 4\u2014figure supplement 2. The reasoning is sound: without a steep psychometric curve, the choice of threshold becomes arbitrary. This supports the broader argument about the framework's fragility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6a40b643-4278-43d4-971a-99c5b9e45368",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A meaningful estimate should not require vigorous defense of specific arbitrary experimental parameter choices to maintain a particular order-of-magnitude range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 articulates a reasonable principle for evaluating estimate robustness. This is a valid statistical and scientific principle that supports the critique of the framework's sensitivity to arbitrary parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "6849bb71-68f5-4c99-9d06-7441cd9eb101",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose an alternative framework using perceptual mapping methods (PCA, MDS, NMF) to create data-driven maps of perceptual space, then applying sphere-packing to those maps rather than to experimenter-defined stimulus spaces. This could reveal intrinsic olfactory dimensions and provide more conservative estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C123-C130 propose an alternative approach with potential benefits. While the proposed methods (C128) are established in other fields and the logic is sound (C123-C124), this is primarily a suggestion for future work rather than a demonstrated result. The advantages are plausible but not empirically validated in this manuscript. The proposal is reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "59dac5a9-19ce-4ebc-9470-049175af2374",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The data from Bushdid et al. (2014) cannot be used to create perceptual maps because each mixture is tested only once, providing no serial comparisons to anchor stimuli relative to each other. Future experiments would require serial repetition of mixtures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C131-C133, C135-C136 correctly identify a limitation of the Bushdid et al. experimental design for perceptual mapping. The reasoning is sound: perceptual mapping requires multiple comparisons of the same stimuli to establish relative distances. This is a valid observation about data requirements for the proposed alternative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "7641671a-0f12-4183-adb3-a9d18218365f",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Using hypothesis testing to count data points exhibiting a property may be common practice and often has benign consequences in other contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 speculate about common research practices and their typical consequences. These are presented as speculation (C79 uses 'may not be uncommon,' C80 uses 'may amount to') without empirical evidence. While plausible, these claims are not substantiated and serve primarily as rhetorical context for the critique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "0a4e4cbb-9b61-47eb-a670-8158fd63a7f7",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Subject performance could worsen with a larger molecular library, and the denominator of Equation 1 might grow proportionally with the numerator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C100 are explicitly speculative (the authors 'acknowledge that we cannot know in advance'). While this is a reasonable possibility, it is not demonstrated. The authors use this speculation to set up the reductio ad absurdum argument in Result 7, but these specific claims are not supported by data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "18b5e7e4-956d-4654-bc96-a97a27affa98",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Bushdid et al. (2014) proposed that humans can discriminate between at least a trillion olfactory stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 accurately cites the claim from Bushdid et al. (2014). This is a straightforward citation that establishes the target of the critique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    },
+    {
+      "id": "c4349b0c-0028-4990-8939-a84a5b212ade",
+      "content_id": "a6b2900c-03fd-4272-abf0-007e63994152",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The framework has methodological problems of statistical origin that are independent of conceptual validity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 accurately describes the authors' approach: focusing on statistical problems while remaining agnostic about conceptual issues. This is supported by the structure of the paper, which demonstrates statistical inconsistency before addressing conceptual concerns about the stimulus space geometry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:24:05.698497Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a1b8dabf-0c5d-4fa0-9ab2-34cbc28a7529",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "2c18a3a5-58ab-46a6-a5d8-c263822f7b28",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "c905c600-321d-4d7f-b026-ef66ad6bad3e",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "b42f3820-b74a-46fb-b306-1189e12fe854",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "3bdb3201-568a-49cb-ad96-89013afd36de",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "ab5c0b95-432e-474e-864a-dce422a4a43f",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "cf234b89-3b00-4b6b-b593-b1fb93988f9c",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "052058ab-7f87-4cbe-91da-33031b173e55",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "a7417a80-dc85-42b6-a598-213cc23d7a7e",
+      "result_id": "eae161d1-98a9-433d-a5da-f6fc677a94af"
+    },
+    {
+      "claim_id": "fb004dab-4b3e-49d9-af72-c2af1d76b3da",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "0eb4102c-68f3-40a1-826c-94d632efa0ec",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "c934e020-ea2c-494d-93d4-49bb2b9869f4",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "6454d0ec-3ae6-4a60-a262-dd3dc40512a7",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "c84227dd-634d-430b-8344-bd24de475ce3",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "fc4fa195-33b1-47e7-9cd6-9499c101a3bd",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "a7d313cf-0770-4493-82af-529ed04f89b4",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "f70a66c5-a2f9-4a65-b155-a0a423d9a68c",
+      "result_id": "4062061d-5771-4d46-ae12-d53841fc5f06"
+    },
+    {
+      "claim_id": "3fdb9c4d-23b4-4641-9041-17a9e7e31f4d",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "fd48057e-d9e3-4174-85ae-e0bc0a1fb57f",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "8138f59d-4a81-487b-94e9-b5078e0d10fd",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "c348253d-3059-4d07-b549-2a88ab1d4319",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "3feedf5b-619c-4f76-b8d5-73205e66e114",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "47265d5e-b0df-491f-984a-a0ff618ebdeb",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "80291603-fe35-4933-b56a-29b7c7a0dc07",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "8d194b8f-f2a3-4dc0-a54b-9a63ed557dbe",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "085d20fb-476d-44be-b8d5-5a4d2acaf3de",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "30daeff9-6200-4a43-a95b-05c4317c60a9",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "55abbc33-7767-46df-818e-a20109f63e25",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "dc834a10-4b04-4b70-8170-834b366aaf2a",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "135e27b4-9193-48ba-8d36-a96af0f549c5",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "e7a281ff-8244-489b-bdbf-db2f58ce8416",
+      "result_id": "3470a40b-66ae-4477-8786-2e3dbb19f9d7"
+    },
+    {
+      "claim_id": "b1a75eef-08b3-453f-beab-ed70daeace4d",
+      "result_id": "ec6fd76f-c64e-451e-89c5-10f01cf338ca"
+    },
+    {
+      "claim_id": "d8c28945-8614-45ef-b412-c6a8263eddd8",
+      "result_id": "ec6fd76f-c64e-451e-89c5-10f01cf338ca"
+    },
+    {
+      "claim_id": "43a913c5-1c70-4452-ac26-7590f28450d4",
+      "result_id": "ec6fd76f-c64e-451e-89c5-10f01cf338ca"
+    },
+    {
+      "claim_id": "033ee249-0f32-4428-8880-30b85b7f1b0a",
+      "result_id": "ec6fd76f-c64e-451e-89c5-10f01cf338ca"
+    },
+    {
+      "claim_id": "084e3a72-035c-46fd-a07b-d290fa18432a",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "6cca0287-9df2-4ce6-bb8e-048980e7e09f",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "8665ff47-c278-46a6-9582-0d7f4e4bb943",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "b4efd9c8-c08d-45da-8abb-1d53e2119db2",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "8903ed39-b8b7-43f3-8fd4-162b18a4f38e",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "b07d66e3-fded-4757-a3b7-8f1e745d426a",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "05d60269-347b-41d2-85fc-f16097d3aed7",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "d4dbf537-42e7-4c8d-91bf-bc1f0dd25caa",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "cf234b89-3b00-4b6b-b593-b1fb93988f9c",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "917dd3ec-5c36-4142-9e13-f741d18d3bd9",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "ed5bb84a-a713-4ce9-a706-0055708e0869",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "f6848052-da1a-463e-b0fa-814229c19e0b",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "ffda558a-3477-432b-b024-12dd3a7103b6",
+      "result_id": "cd193788-eaef-4897-9cf0-464b62e0e1c8"
+    },
+    {
+      "claim_id": "932aab55-5ce7-414b-b579-1357ea8f4316",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "ab918bdc-fd4f-4f54-8975-e5a0883dfa5b",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "c2dda234-9847-445b-8068-65cd5f610b39",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "7c0e63d4-dc3f-462b-bed7-61c90f05515f",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "27744ee9-1e69-480a-af1b-96cc615dcb36",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "77ce632e-e3a1-499c-b075-deceb41d1cde",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "e3cf8fcf-6d53-4929-a5b5-835e0f246a75",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "cab1974d-e578-4764-8da5-17bf52fb2b2e",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "9ddfced4-e7c8-45d7-93ca-81a14764ddde",
+      "result_id": "28beb49e-eeeb-409b-a0de-45a16630d6f0"
+    },
+    {
+      "claim_id": "d606e5fe-c850-4c20-8691-a87a936a2d6e",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "301abadd-167b-4dab-8932-9a8761940634",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "a313e861-f445-4fe9-87bd-d8f0db15fc90",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "442abfcc-db2c-4533-a7ba-db4663112325",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "9e6c7dc3-b8cd-414d-91c2-f290e3bff8ab",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "32a9b3b4-e692-4434-aaf3-dd77887d12b9",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "0486f0af-1db5-4488-b7ef-500b3d75b0a8",
+      "result_id": "ee25a185-b413-4fba-a59d-efd9f57d8271"
+    },
+    {
+      "claim_id": "eee9026a-8264-430a-b8ff-85add73197cf",
+      "result_id": "4a8678ed-97fb-4acd-ba86-2cdd9f7a54ee"
+    },
+    {
+      "claim_id": "4a560313-43c0-4afb-8298-11dccd932775",
+      "result_id": "4a8678ed-97fb-4acd-ba86-2cdd9f7a54ee"
+    },
+    {
+      "claim_id": "abeeb470-68be-4ed9-ae64-0240c81c316b",
+      "result_id": "4a8678ed-97fb-4acd-ba86-2cdd9f7a54ee"
+    },
+    {
+      "claim_id": "6bc38bc5-8d24-4d35-a58d-fb4832610ae8",
+      "result_id": "4a8678ed-97fb-4acd-ba86-2cdd9f7a54ee"
+    },
+    {
+      "claim_id": "e0c90f5c-e138-4014-9a45-5ebdda840d55",
+      "result_id": "4a8678ed-97fb-4acd-ba86-2cdd9f7a54ee"
+    },
+    {
+      "claim_id": "0ec44378-6d88-40d5-b0dd-0823cdcfc263",
+      "result_id": "024ab99a-f9f6-4866-b168-e0cd743827cf"
+    },
+    {
+      "claim_id": "3d6b7691-1556-46af-a28a-f0a4988134c5",
+      "result_id": "024ab99a-f9f6-4866-b168-e0cd743827cf"
+    },
+    {
+      "claim_id": "3739756e-8010-4bac-8364-2c0c1042091c",
+      "result_id": "af44e0c0-818d-4bff-965a-da45e613c1a9"
+    },
+    {
+      "claim_id": "934ec3af-3a18-43ff-af97-1a4c59e30950",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "52f4ffbd-a30b-4ee3-938d-0174c8633b28",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "db8350a5-fcb8-4800-90c6-11d4102b0d5c",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "e39d2a0a-15b6-45da-a07d-dcdfc9d8f8c2",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "fb714cb6-9760-4a33-9b3d-e092dec45275",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "054e4d13-81cb-4a0a-a58b-5bc003a7d504",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "55274706-65b0-44dd-b810-0f23f0557bbe",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "9c012cae-10f4-47c4-9d67-00911c8e1a2a",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "24daa448-05eb-4f29-8166-633a7e3899d2",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "064ddbb6-fbb0-4602-a9d6-da163d388aa7",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "6ae39bf0-9d6a-4070-8c13-409afeacbf18",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "825f0284-ea38-427f-98f3-71af45508b1f",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "8839dff0-7ed6-474e-8d81-bac6a3cf885d",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "f2d9bf31-6448-4fef-bd32-807320ca32ef",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "74157ef8-9ce2-42da-9d6c-78e763a2900a",
+      "result_id": "2ee791d6-50e6-4a0d-996c-d16a005355c0"
+    },
+    {
+      "claim_id": "89d7f9fa-e5c3-4f95-b48f-fa780a45a25b",
+      "result_id": "3dae71d4-24cc-44cb-bb77-a6b82737feed"
+    },
+    {
+      "claim_id": "4978d02d-2b17-4817-a818-bd91e421c0bb",
+      "result_id": "3dae71d4-24cc-44cb-bb77-a6b82737feed"
+    },
+    {
+      "claim_id": "bf437d3b-f77e-4328-ab03-73e6919e7427",
+      "result_id": "0fdf626d-5990-46c4-9d07-71f623f55e09"
+    },
+    {
+      "claim_id": "c7f0c7e1-38e8-47d8-bd1c-014345cdcf87",
+      "result_id": "0fdf626d-5990-46c4-9d07-71f623f55e09"
+    },
+    {
+      "claim_id": "975457a4-4b84-4826-880f-1a26b61f1050",
+      "result_id": "0fdf626d-5990-46c4-9d07-71f623f55e09"
+    },
+    {
+      "claim_id": "a653a6c3-c09e-40a1-81ea-6a2272ef771a",
+      "result_id": "0fdf626d-5990-46c4-9d07-71f623f55e09"
+    },
+    {
+      "claim_id": "53b2a8af-f9f3-4f08-8a25-33d7b4426fd6",
+      "result_id": "0fdf626d-5990-46c4-9d07-71f623f55e09"
+    },
+    {
+      "claim_id": "12fd0e91-c4dc-4f23-8409-676e49d5b281",
+      "result_id": "6a40b643-4278-43d4-971a-99c5b9e45368"
+    },
+    {
+      "claim_id": "bcae0004-8e4f-46bf-b40a-755f40a20d64",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "b1639ec8-6918-47f7-a194-4e69891f3b77",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "4b0de0bf-aea4-44a9-b405-140fd0def9ce",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "037bbb02-9eca-4d06-8135-c7c9b94f6d52",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "1eb9ffd4-d971-4ad9-acf0-14229d23f2d4",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "4b8887a6-c872-471e-a2e3-0a0e7645d84c",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "a8536c16-8e8a-4644-ad49-42dc5e60c564",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "f4f85d1f-f5dd-4049-841b-cad9f4450e7d",
+      "result_id": "6849bb71-68f5-4c99-9d06-7441cd9eb101"
+    },
+    {
+      "claim_id": "df91be85-5b45-43ce-9fdc-2f2ce54f7ddc",
+      "result_id": "59dac5a9-19ce-4ebc-9470-049175af2374"
+    },
+    {
+      "claim_id": "6ad31015-f8b3-4297-97de-a2191b3607ac",
+      "result_id": "59dac5a9-19ce-4ebc-9470-049175af2374"
+    },
+    {
+      "claim_id": "15de0c56-ec7d-4fb2-8e06-1d578372f1a6",
+      "result_id": "59dac5a9-19ce-4ebc-9470-049175af2374"
+    },
+    {
+      "claim_id": "c4336646-401e-4895-a6b2-e86312eb98ed",
+      "result_id": "59dac5a9-19ce-4ebc-9470-049175af2374"
+    },
+    {
+      "claim_id": "a61801ad-ff58-48a8-9766-594d87363e58",
+      "result_id": "59dac5a9-19ce-4ebc-9470-049175af2374"
+    },
+    {
+      "claim_id": "e3af32c6-e85a-429c-b840-d6dffac3d525",
+      "result_id": "7641671a-0f12-4183-adb3-a9d18218365f"
+    },
+    {
+      "claim_id": "240ac21f-9d58-48cf-ae27-bc6494668b4a",
+      "result_id": "7641671a-0f12-4183-adb3-a9d18218365f"
+    },
+    {
+      "claim_id": "d3991214-0237-4336-b685-7c9d2fcf4424",
+      "result_id": "0a4e4cbb-9b61-47eb-a670-8158fd63a7f7"
+    },
+    {
+      "claim_id": "c56e1c03-accd-4d1a-8013-c6dd2e48ecf7",
+      "result_id": "0a4e4cbb-9b61-47eb-a670-8158fd63a7f7"
+    },
+    {
+      "claim_id": "43022322-fe44-4387-8453-aa1656109a4b",
+      "result_id": "18b5e7e4-956d-4654-bc96-a97a27affa98"
+    },
+    {
+      "claim_id": "2060b965-29af-4cfe-830f-f415482a5bf2",
+      "result_id": "c4349b0c-0028-4990-8939-a84a5b212ade"
+    }
+  ],
+  "comparisons": []
+}

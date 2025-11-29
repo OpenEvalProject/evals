@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the biological context and technical limitations motivating the development of SeqZip. Many genes produce multiple transcript isoforms through alternative splicing, with regions of alternative splicing often separated by >500 nt. Existing high-throughput sequencing technologies cannot readily retain connectivity information between distant sequences within individual mRNA molecules due to read length limitations and RT processivity constraints, requiring inference of full-length transcripts from short overlapping reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 are primarily citations to prior work (Pan et al., Wang et al., Brown et al., Djebali et al., Schmucker et al., Fededa et al., Sharon et al., Garber et al., etc.) establishing known facts about alternative splicing prevalence, isoform complexity, and technical limitations of existing methods. These background claims are well-supported by the cited literature and provide appropriate context for the study. The logical inferences about limitations (C14, C16, C17) follow directly from the cited technical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "SeqZip is a novel method for profiling multiple distant (>1000 nt) sites of alternative splicing within individual RNA molecules using DNA oligonucleotides called 'ligamers' (40-60 nt) that hybridize to exon boundaries and are joined by T4 RNA ligase 2 (Rnl2). The method does not require reverse transcription, avoids RT processivity and template-switching limitations, compresses sequence space, and accurately reports spliced isoform abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C30 describe the core SeqZip methodology. The method description is clear and internally consistent (C18-C26). The key advantages\u2014no RT step (C27), avoiding RT limitations (C28-C29), and quantitative accuracy (C30)\u2014are subsequently demonstrated experimentally in the Results section (e.g., C51, C86-C87). The method design is logical and the claims about its capabilities are validated by experimental data presented later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "SeqZip was applied as proof-of-principle to test proposed connectivity relationships among alternatively spliced exons in mouse Fibronectin (Fn1) and to define the molecular diversity of fly Dscam1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 accurately describe the two main applications of SeqZip presented in the manuscript. Both applications are extensively documented with experimental data in subsequent sections (Fn1: C52-C67, Figures 3D-F; Dscam1: C68-C110, Figures 4-7). These represent the primary biological findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "T4 RNA ligase 2 (Rnl2) was identified as the optimal ligase for SeqZip. Rnl2 catalyzes RNA-templated DNA-DNA ligation more actively than T4 DNA ligase, produces <1/7 as much non-templated product, and cannot ligate DNA oligos on DNA templates (eliminating genomic DNA contamination). SplintR ligase produces more non-templated ligation than Rnl2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 describe the ligase selection process. The experimental comparison is shown in Figure 2A with clear quantitative data (C36-C40). The superiority of Rnl2 over T4 DNA ligase and SplintR is demonstrated experimentally (C37-C38, C41, Figure 2A and Figure 2\u2014figure supplement 1). Independent validation by Larman et al. 2014 (C42) provides additional support. The logic for selecting Rnl2 is sound and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Rnl2 can join multiple ligamers that loop out sections of RNA template when adjacently hybridized. Initial ligamer designs condensed 244 nt of target RNA to 104 nt DNA (>2-fold compression), with subsequent designs achieving >49-fold compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe the sequence compression capability of SeqZip. C43 is supported by experimental data in Figure 2B showing ligation products only when ligamers are adjacent. The compression ratios (C44-C46) are directly calculated from the experimental designs and represent a key technical advantage of the method. The progression from 2-fold to 49-fold compression demonstrates optimization of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Trans-templated (intermolecular) SeqZip products were only detected at high RNA concentrations (\u226510 nM), while cis-templated products were detected down to 0.01 nM. Even at 50 nM, cis products predominated. Standard SeqZip conditions use RNA concentrations where most mRNAs are <1 nM to minimize trans-hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 address a critical potential artifact\u2014trans-hybridization between different RNA molecules. The concentration-dependent experiments (Figure 2C) clearly demonstrate that trans products require much higher concentrations than cis products (C47-C48). The predominance of cis products even at high concentrations (C49) and the optimization of conditions to minimize trans events (C50) show careful experimental design to avoid this artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "SeqZip product ratios accurately paralleled input RNA ratios over a 100-fold dynamic range (100:1 to 1:100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 demonstrates the quantitative accuracy of SeqZip. The experiment (Figure 2D) directly tests whether ligation product abundance reflects input RNA abundance across a wide range. This is essential for using SeqZip to measure isoform expression levels and is a key validation of the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SeqZip was validated on human CD45 alternative splicing, achieving ~3-fold sequence compression (132-260 nt vs 365-848 nt for RT-PCR). Both RT-PCR and SeqZip accurately reported expected CD45 isoform abundances in Jurkat and U-937 cells, with SeqZip maintaining quantitative accuracy despite different numbers of ligation events required for different isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the first biological validation of SeqZip using CD45. The known isoform patterns in Jurkat and U-937 cells (C52-C53, cited to prior work) provide a benchmark. The experimental data (Figure 3B) show that SeqZip achieves sequence compression (C54) and produces results matching RT-PCR and expectations (C55). Critically, C56 demonstrates that quantitative accuracy is maintained even when different isoforms require different numbers of ligation events, addressing a potential concern about the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SeqZip and PacBio sequencing were used to test proposed coordination between mouse Fn1 EDA and V region splicing (separated by 813 nt). Neither method found evidence for coordination between EDA inclusion/exclusion and V region splice site choice. Observed frequencies of EDA+V combinations were not statistically different from frequencies expected for independent events, supporting autonomous splicing of these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 describe the Fn1 coordination analysis. The prior hypothesis (C57, Fededa et al. 2005) is tested using both SeqZip and PacBio (C63-C65). The >5-fold sequence compression by SeqZip (C60) addresses the technical challenges of analyzing these distant regions. Both methods independently show no evidence of coordination (C65-C66), with statistical analysis supporting independence (C66). The conclusion (C67) is well-supported by the data and consistent with Chauhan et al. 2004. The unexpected finding about +/\u2212 cells (C64) is noted but doesn't affect the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Drosophila Dscam1 can potentially produce 38,016 mRNA isoforms through alternative splicing of four exon clusters. Previous studies suggest all isoforms can be generated with stochastic exon incorporation. However, RT-PCR analysis of Dscam1 is confounded by long stretches of sequence identity in constitutive exons and sequence similarity among variants, which promote template switching during RT and PCR, generating artifactual novel isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 establish the Dscam1 context and technical challenges. The isoform potential (C68) is a straightforward calculation. Prior findings (C69-C70) are appropriately cited. The technical challenges (C71-C73) are well-documented in the literature (Judo et al., Houseley and Tollervey) and provide strong motivation for using SeqZip, which avoids RT and reduces sequence homology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SeqZip dramatically reduces regions of sequence identity and introduces exon-specific codes, greatly decreasing template switching potential compared to RT-based methods. An RT-based triple-read sequencing method showed 34-55% template-switched isoforms. Reanalysis of published CAMSeq control data revealed template-switched isoforms and 5386-5914 additional unexplained isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 demonstrate the template-switching problem in RT-based methods and SeqZip's solution. The sequence compression and barcode introduction (C74-C75, Figure 4B-C) are design features that logically reduce template switching (C76). The experimental validation using triple-read sequencing (C77, Figure 4\u2014figure supplement 1B) shows substantial template switching (34-55%). The reanalysis of CAMSeq data (C78-C79) reveals similar problems in a published method, strengthening the case for SeqZip. However, the large number of unexplained isoforms in CAMSeq (C79) raises questions about that method's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SeqZip greatly diminishes template switching. In control reactions with differentially barcoded ligamer pools, none of 50,475 reads showed template switching. In S2 cell RNA, only 17 of 111,242 reads (0.015%) corresponded to template-switched isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide strong experimental evidence that SeqZip minimizes template switching. The differential barcoding strategy (Figure 5A-B) is clever and allows unambiguous detection of template switching. The complete absence of template switching in controls (C80) and extremely low rate in biological samples (C81, 0.015% vs 34-55% for RT methods) demonstrate a major advantage of SeqZip. This is a key validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Ligamer specificity was assessed by calculating hybridization energies. Cognate ligamer-exon pairs had \u0394G\u00b0 < -67 kcal/mol, with near-cognate pairs \u226512 kcal/mol higher. In control experiments, only 1.3% of alignments contained near-cognate ligamers. SeqZip accurately reported input Dscam1 isoform abundances over 3 orders of magnitude, proving highly quantitative for the majority of isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 address ligamer specificity and quantitative accuracy. The thermodynamic calculations (C83-C84, Figure 5\u2014figure supplement 1) show good separation between cognate and near-cognate binding. The low rate of near-cognate ligation (C85, 1.3%) demonstrates high specificity, though the authors appropriately note caution for very low abundance products. The quantitative accuracy over 3 orders of magnitude (C86, Figure 5C) is excellent and validates SeqZip for measuring isoform abundance (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SeqZip analysis of Dscam1 using 97 ligamers reduced median sequence size from 1734 nt to 356 nt (~5-fold compression), enabling full sequencing with 250 bp paired-end MiSeq reads. Analysis of S2 cells and embryos yielded 449,113-946,110 high-confidence alignments per sample, detecting 8397 of 18,612 possible isoforms across all samples. Isoform abundances were highly correlated between technical (r=0.8-0.95) and biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe the large-scale Dscam1 analysis. The sequence compression (C88-C89) enables high-throughput sequencing. The read depth (C90) is substantial. Detection of 8397 isoforms (C91, 45% of possible) is impressive given the complexity. The high correlation between replicates (C92, Figure 6\u2014figure supplement 1) demonstrates reproducibility and validates the quantitative nature of SeqZip. This represents a comprehensive characterization of Dscam1 diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "All 97 exons in the Dscam1 ligamer set were detected except exon 6.11, which is thought to be an unused pseudo-exon. The absence of exon 6.11 reads provides additional evidence for SeqZip specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide an elegant validation of SeqZip specificity. The failure to detect exon 6.11, which is known to be unused (C94, multiple citations), demonstrates that SeqZip does not generate false positives from near-cognate binding (C95). This is a strong argument for the method's specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Individual exon use patterns in S2 cells measured by SeqZip were directly comparable to CAMSeq data (r=0.87, p<2.2\u00d710\u207b\u00b9\u2076), with two exceptions: exon 6.47 was detected by CAMSeq but not SeqZip, and exon 9.31 was more abundant in SeqZip data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 compares SeqZip to the published CAMSeq method. The high correlation (r=0.87) demonstrates general agreement between methods (Figure 7\u2014figure supplement 1). The two discrepancies are honestly reported and could reflect either technical differences or the template-switching issues identified in CAMSeq. This comparison validates SeqZip against an independent method while acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Dscam1 isoform diversity increases with developmental complexity: S2 cells showed least diversity, 4-6 hr embryos intermediate, and 14-16 hr embryos greatest diversity. Cluster 4 and 9 usage patterns change during development while cluster 6 remains static. S2 cells show a hemocyte-characteristic pattern (low exon 4.2/4.9, high exon 9.6/9/13/30/31). Hemocyte-associated isoforms are most abundant in all samples, but other isoforms emerge during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C107 describe developmental changes in Dscam1 expression. The increasing diversity with development (C97-C99, Figure 6B) is clearly shown. The differential behavior of clusters (C100, cited to prior work) is confirmed. The hemocyte signature in S2 cells (C101-C103) is consistent with their macrophage-like nature. The developmental emergence of non-hemocyte isoforms (C104-C107, Figure 7) provides new insights into Dscam1 regulation. These findings are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Statistical analysis of exon combination frequencies showed no significant differences between expected and observed frequencies for S2 cells and 4-6 hr embryos. For 14-16 hr embryos, 17 of 371 exon 4:9 combinations (4.6%) and 14 of 2004 exon 4:6:9 combinations (0.7%) fell outside expected range (q<0.05), but 99.3% of combinations were consistent with independent exon choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 address the key biological question of exon choice coordination. The statistical analysis (Figure 7, Supplementary file 4) is appropriate. The lack of coordination in S2 cells and 4-6 hr embryos (C108) is clear. The small number of deviations in 14-16 hr embryos (C109-C110) could reflect weak coordination or cellular heterogeneity. The conclusion that 99.3% of combinations are consistent with independence strongly supports stochastic exon choice, consistent with prior studies. The statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The hypothesis that promoter-proximal regions affect distal alternative splicing was first reported for Fn1. One explanation is promoter-dependent polymerase speed affecting exon inclusion. Neither microarrays nor short sequencing reads preserve long-range connectivity, but SeqZip does. The authors conclude that apparent coordination between Fn1 EDA and V regions is due to independent response to external influences, not dependent coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 provide context and interpretation for the Fn1 results. The historical context (C113-C114) is appropriately cited. The technical limitations of other methods (C115) and SeqZip's advantage (C116) are established. The conclusion (C117) follows logically from the experimental data (C65-C66) showing no coordination and is consistent with Chauhan et al. 2004. This distinguishes between dependent and independent coordination, an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Flies with 4752 Dscam1 isoforms show normal neurite formation, while those with 1152 isoforms show defects, supporting the view that molecular diversity, not specific sequences, is essential for function. Dscam is expressed in hemocytes where isoform diversity is implicated in pathogen opsonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 provide biological context for Dscam1 function. These are appropriately cited to prior work (Hattori et al., Watson et al., Dong et al.) and establish the functional importance of isoform diversity. This context motivates the comprehensive characterization of Dscam1 diversity performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The four Dscam1 exon clusters span >4300 nt in full-length mRNAs, with clusters 4, 6, and 9 spanning >1700 nt, making connectivity analysis nearly impossible with current high-throughput technologies. Many exon variants arose from duplication events and are highly similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 establish the technical challenge of analyzing Dscam1. The distances (C123-C124) are factual descriptions supported by citations. The sequence similarity from duplication (C125, Lee et al. 2010) compounds the template-switching problem. These claims effectively motivate why SeqZip is particularly valuable for Dscam1 analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1289 @@
+{
+  "submission": {
+    "id": "f132787d-78e3-4c14-a1d7-8ed075540b1a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:21:25.999725Z",
+    "updated_at": "2025-11-29T04:21:25.999725Z"
+  },
+  "content": [
+    {
+      "id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "submission_id": "f132787d-78e3-4c14-a1d7-8ed075540b1a",
+      "content_type": "manuscript",
+      "content_text": "# Noise promotes independent control of gamma oscillations and grid firing within recurrent attractor networks\n\n## Authors\n\n- Lukas Solanka<sup>1</sup>\n- Mark CW van Rossum<sup>2</sup>\n- Matthew F Nolan<sup>1</sup> ([ORCID: 0000-0003-1062-6501](https://orcid.org/0000-0003-1062-6501)) \u2020\n\n### Affiliations\n\n1. Centre for Integrative Physiology University of Edinburgh Edinburgh United Kingdom\n2. Institute for Adaptive and Neural Computation Edinburgh United Kingdom\n3. Neuroinformatics Doctoral Training Centre, School of Informatics University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural computations underlying cognitive functions require calibration of the strength of excitatory and inhibitory synaptic connections and are associated with modulation of gamma frequency oscillations in network activity. However, principles relating gamma oscillations, synaptic strength and circuit computations are unclear. We address this in attractor network models that account for grid firing and theta-nested gamma oscillations in the medial entorhinal cortex. We show that moderate intrinsic noise massively increases the range of synaptic strengths supporting gamma oscillations and grid computation. With moderate noise, variation in excitatory or inhibitory synaptic strength tunes the amplitude and frequency of gamma activity without disrupting grid firing. This beneficial role for noise results from disruption of epileptic-like network states. Thus, moderate noise promotes independent control of multiplexed firing rate- and gamma-based computational mechanisms. Our results have implications for tuning of normal circuit function and for disorders associated with changes in gamma oscillations and synaptic strength.\n\n## Introduction\n\nCognitive processes are mediated by computations in neural circuits and are often associated with gamma frequency oscillations in circuit activity. Gamma activity and cognitive performance often co-vary within tasks and between individuals, while cognitive deficits in psychiatric disorders such as autism and schizophrenia are linked to altered gamma frequency network dynamics (Uhlhaas and Singer, 2012; Spellman and Gordon, 2014). Such disorders are also linked to changes in the efficacy of excitatory glutamatergic and inhibitory GABAergic synapses (Rubenstein and Merzenich, 2003; Lewis et al., 2012). A critical and unresolved issue is the mechanistic relationship between gamma oscillations, the strength of excitation and inhibition, and circuit computations. On the one hand, neural codes based on firing rates may be sufficient for circuit computations (Shadlen and Newsome, 1994; Histed and Maunsell, 2014). In this scenario gamma oscillations might index circuit activation, but would not be required for computation. Evidence that rate coded computations and gamma oscillations arise from shared circuit mechanisms could be interpreted to support this view (Lundqvist et al., 2010; Pastoll et al., 2013), which predicts that when synaptic properties of a circuit are altered then gamma activity and the output of the rate-coded computation will co-vary. Alternatively, gamma oscillations, while sharing cellular substrates with rate-coded computations, may nevertheless support independent or multiplexed computational modes. For example, according to the communication through coherence hypothesis, tuning of gamma frequency activity may facilitate selective interactions between distant brain regions (Fries, 2009). In this scenario independent control of rate coded computation and gamma activity would be beneficial, for example by allowing tuning of coherence without disrupting multiplexed rate-coded computations. However, it is unclear how this could be achieved in circuits where gamma and rate-coded computations share common synaptic mechanisms, as this would require variation in synaptic properties to differentially affect gamma activity and the rate coded computation.\n\nWe address these issues using a model that accounts, through a common synaptic mechanism, for gamma oscillations and spatial computation by neurons in layer 2 of the medial entorhinal cortex (MEC) (Pastoll et al., 2013). The rate-coded firing of grid cells in the MEC is a well-studied feature of neural circuits for spatial cognition (Moser and Moser, 2013). During exploration of an environment individual grid cells are active at multiple locations that together follow a hexagonal grid-like organization. At the same time MEC circuits generate periods of activity in the high gamma frequency range (60\u2013120 Hz) nested within a slower theta (8\u201312 Hz) frequency network oscillation (Chrobak and Buzs\u00e1ki, 1998). Analysis of spatial correlations in grid firing, of manipulations to grid circuits, and recording of grid cell membrane potential in behaving animals, collectively point towards continuous two-dimensional network attractor states as explanations for grid firing (Bonnevie et al., 2013; Domnisoru et al., 2013; Schmidt-Hieber and H\u00e4usser, 2013; Yoon et al., 2013). In layer II of the MEC, which has the highest known density of grid cells (Sargolini et al., 2006), stellate cells that project to the dentate gyrus of the hippocampus are the major population of excitatory neurons (Gatome et al., 2010). These excitatory (E) neurons do not appear to influence one another directly but instead interact via intermediate inhibitory (I) neurons (Dhillon and Jones, 2000; Couey et al., 2013; Pastoll et al., 2013). Models that explicitly incorporate this recurrent E-I-E connectivity can account for grid firing through velocity-dependent update of network attractor states (Pastoll et al., 2013). When these models are implemented with excitable spiking neurons they also account for theta-nested gamma frequency network oscillations (Pastoll et al., 2013). The influence in these, or other classes of attractor network models, of the strength of E to I or I to E connections on gamma oscillations and grid firing, or other attractor computations, has not been systematically investigated.\n\nWe find that while gamma oscillations and grid firing are both sensitive to the strength of excitatory and inhibitory connections, their relationship differs. Although their underlying synaptic substrates are identical, gamma activity nevertheless provides little information about grid firing or the presence of underlying network attractor states. Thus, gamma activity is not a good predictor of rate-coded computation. Unexpectedly, we find the range of E- and I- synaptic strengths that support gamma and grid firing is massively increased by moderate intrinsic noise through a mechanism involving suppression of seizure-like events. In the presence of moderate noise differences in synaptic strength can tune the amplitude and frequency of gamma across a wide range with little effect on grid firing. We obtain similar results in implementations of E-I models in which connectivity is probabilistic and in models extended to include additional I to I and E to E connections. Our results suggest constraints for extrapolation of differences in gamma activity to mechanisms for cognition, identify noise as a critical factor for successful circuit computation, and suggest that tuning of excitatory or inhibitory synaptic strength could be used to control gamma-dependent processes multiplexed within circuits carrying out rate coded computations.\n\n## Results\n\nTo systematically explore relationships between strengths of excitatory and inhibitory synapses, computations and gamma activity, we initially take advantage of models that account for both grid firing and theta-nested gamma oscillations through E-I-E interactions (Pastoll et al., 2013). In these models a layer of E cells sends synaptic connections to a layer of I cells, which in turn feedback onto the E cell layer (Figure 1A). For attractor dynamics to emerge the strength of E and I connections are set to depend on the relative locations of neurons in network space (Figure 1B). While suitable connectivity could arise during development through spike timing-dependent synaptic plasticity (Widloski and Fiete, 2014), here the connection profiles are fixed (Pastoll et al., 2013). To vary the strength of excitatory or inhibitory connections in the network as a whole we scale the strength of all connections relative to a maximum conductance value (gE or gI for excitation and inhibition respectively) (Figure 1B). We also consider networks in which the connection probability, rather than its strength, varies according to the relative position of neurons in the network (Figure 1\u2014figure supplement 1). Each E and I cell is implemented as an exponential integrate and fire neuron and so its membrane potential approximates the dynamics of a real neuron, as opposed to models in which synaptic input directly updates a spike rate parameter. Addition of noise to a single E or I cell increases variability in its membrane potential trajectory approximating that seen in vivo (Figure 1C) (Domnisoru et al., 2013; Pastoll et al., 2013; Schmidt-Hieber and H\u00e4usser, 2013). Given that all neurons in the model are implemented as exponential integrate-and-fire neurons and that in total the model contains >1.5 million synaptic connections, we optimized a version of the model to enable relatively fast simulation and automated extraction and analysis of generated data (see \u2018Materials and methods\u2019). In this way the effect on grid firing of 31 \u00d7 31 combinations of gE and gI could be evaluated typically using >50 nodes on a computer cluster in approximately 1 week.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic of populations of excitatory cells (E cells, red) and inhibitory cells (I cells, blue) on a twisted torus of size 34 \u00d7 30 neurons. The synaptic coupling between the two populations was parameterized by the inter-population peak synaptic conductances gE (E \u2192 I synapses) and gI (I \u2192 E synapses). (B) Top: Plots illustrate peak synaptic conductances of E (red) and I (blue) synapses as a function of the distance between pre- and post-synaptic neurons. Bottom: Distributions of synaptic weights from all I cells onto an E cell in the model (left) and from all E cells onto an I-cell (right). Parameters gI and gE determine maximal values of these distributions. (C) Examples of the membrane potential of an isolated E cell during two consecutive theta cycles in networks without noise (white noise input current standard deviation \u03c3 = 0 pA), with an intermediate amount of noise (\u03c3 = 150 pA) and with noise levels doubled (\u03c3 = 300 pA). Theta signal is illustrated in grey.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Output (top) and input (bottom) synaptic weights of an E (left) and I (right) neuron in the middle of the twisted torus in a network in which synaptic weights are scaled according to the synaptic profile functions from Figure 1B. (B) Same as (A), but synaptic weights are constant and the probability of connection between a pair of neurons is scaled according to the synaptic profile functions in Figure 1B.\n\n### Intrinsic noise increases the range of synaptic strengths that support grid firing\n\nWhat happens to grid firing patterns when the strengths of excitatory and/or inhibitory synaptic connections in the model are modified? To address this we first evaluated grid firing while simulating exploration within a circular environment with a network from which noise sources were absent (Figure 2A). When we reduce the strength of connections from I cells by threefold and increase the strength of connections from E cells by threefold we find that grid firing is abolished (Figure 2Ab vs Figure 2Aa). Exploring the parameter space of gE and gI more systematically reveals a relatively restricted region that supports grid firing (Figure 2D and Supplementary file 1A\u2013D). Rather than the required gI and gE being proportional to one another, this region is shifted towards low values of gI and high gE. Thus, the ability of recurrently connected networks to generate grid fields requires specific tuning of synaptic connection strengths.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Example spatial firing fields (left) and spatial autocorrelation plots (right) of E and I cells for networks without noise (A; \u03c3 = 0 pA), with noise level set to \u03c3 = 150 pA (B), and noise level set to \u03c3 = 300 pA (C) and with the strengths of recurrent synaptic connections indicated by arrows in (D\u2013F). Maximal firing rate is indicated to the top right of each spatial firing plot. The range of spatial autocorrelations is normalized between 0 and 1. (D\u2013F) Gridness score as a function of gE and gI for networks with each noise level. Each item in the color plot is an average gridness score of four simulation runs. Arrows indicate the positions of grid field and autocorrelation examples from simulations illustrated in (A\u2013C). Simulations that did not finish in a specified time interval (5 hr) are indicated by white color. (G) Difference between gridness scores of networks with \u03c3 = 150 pA and networks with \u03c3 = 0 pA plotted as a function of gE and gI. (H) Gridness score plotted as a function of the standard deviation of intrinsic noise. Each noise level comprises simulations from a neighborhood of gE and gI surrounding a center point in the parameter space (center included) indicated by arrows in (D\u2013F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Example spatial firing fields (left) and spatial autocorrelation plots (right) of E and I cells for networks without noise (A; \u03c3 = 0 pA), with noise set to \u03c3 = 150 pA (B), and noise set to \u03c3 = 300 pA (C) and with the strengths of recurrent synaptic connections indicated by arrows in (D\u2013F). Maximal firing rate is indicated in the top right of each spatial firing plot. The range of spatial autocorrelations is normalized between 0 and 1. (D\u2013F) Gridness score as a function of gE and gI for networks with each noise level. Each item in the color plot is an average gridness score of two simulation runs. Arrows indicate the positions of grid field and autocorrelation examples from simulations illustrated in (A\u2013C). Simulations that did not finish in a specified time interval (5 hr) are indicated by white color.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Spatial information of E (top) and I (bottom) cells as a function of gE and gI in networks from Figure 2. (B) Same as (A), but the color plots show spatial sparsity of E and I cells. Black lines indicate the region from Figure 2D\u2013F where the gridness score = 0.5.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Colour plots show gridness score as a function of gE and gI for networks without noise (A), with noise standard deviation \u03c3 = 150 pA (B), and \u03c3 = 300 pA (C). Data are from simulations of networks with feedback inhibition only (E-I networks; Figure 2). Black lines indicate the region from Figure 2D\u2013F where the gridness score of E cells = 0.5.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Examples of firing fields of E and I cells. Gridness score and maximal firing rate of the firing field is indicated in the top left and right parts of each firing field, respectively. (B) Distributions of spatial sparsity (left), spatial information (centre) and gridness score (right) of 100 randomly selected cells from each population of neurons. Each simulation run was repeated 10 times with different random seeds. Network parameters were gE = 3 nS and gI = 1 nS. Each I cell received connections from three randomly selected neurons with a place like spatial firing field. Properties of place cells: rmax = 100 Hz, \u03c3field = 80 cm (cf. Appendix 1).\n\nBecause neural activity in the brain is noisy (Shadlen and Newsome, 1994; Faisal et al., 2008), we wanted to know if the ability of the circuit to compute location is affected by noise intrinsic to each neuron (Figure 1C). Given that continuous attractor networks are often highly sensitive to noise (Zhang, 1996; Eliasmith, 2005), we expected that intrinsic noise would reduce the parameter space in which computation is successful. In contrast, when we added noise with standard deviation of 150 pA to the intrinsic dynamics of each neuron, we found that both configurations from Figure 2Aa,b now supported grid firing patterns (Figure 2Ba,b). When we considered the full space of E and I synaptic strengths in the presence of this moderate noise we now found a much larger region that supports grid firing (Figure 2E and Supplementary file 1E\u2013H). This region has a crescent-like shape, with arms of relatively high gI and low gE, and low gI and high gE. Thus, while tuning of gI and gE continues to be required for grid firing, moderate noise massively increases the range of gE and gI over which grid fields are generated.\n\nWhen intrinsic noise was increased further, to 300 pA, the parameter space that supports grid firing was reduced in line with our initial expectations (Figure 2Ca,b,F and Supplementary file 1I\u2013L). To systematically explore the range of gE and gI over which the network is most sensitive to the beneficial effects of noise we subtracted grid scores for simulations with 150 pA noise from scores with deterministic simulations (Figure 2G). This revealed that the unexpected beneficial effect of noise was primarily in the region of the parameter space where recurrent inhibition was strong. In this region, increasing noise above a threshold led to high grid scores, while further increases in noise progressively impaired grid firing (Figure 2H). In probabilistically connected networks, the range of gE and gI supporting grid firing was reduced, but the shape of the parameter space and dependence on noise was similar to the standard networks (Figure 2\u2014figure supplement 1), indicating that the dependence of grid firing on gE and gI, and the effects of noise, are independent of the detailed implementation of the E-I attractor networks.\n\nHow closely does the firing of I cells in the simulated networks correspond to inhibitory activity in behaving animals, and to what extent is the pattern of I cell firing affected by gE, gI and noise? While there is little data on the spatial firing of interneurons in the MEC, recent evidence indicates that the majority of parvalbumin positive interneurons have firing fields with significant spatial stability, but low spatial sparsity and grid scores compared to excitatory grid cells (Buetfering et al., 2014). A possible interpretation of these data is that parvalbumin positive cells are unlikely to fulfill the roles of I cells predicted in E-I models. However, in networks that we evaluate here in which E cells have grid firing fields in the presence of moderate noise, I cell firing fields also have a much lower spatial information content and spatial sparsity than the corresponding E cell firing fields (E cells: spatial sparsity 0.788 \u00b1 0.061, spatial information: 1.749 \u00b1 0.32 bits/spike; I cells: spatial sparsity 0.239 \u00b1 0.018, spatial information 0.243 \u00b1 0.024 bits/spike; p < 10\u221216 for comparisons of both spatial sparsity and information; paired t-test; data range is indicated as mean \u00b1 standard deviation) (Figure 2A\u2013C and Figure 2\u2014figure supplement 2). Spatial autocorrelograms of simulated I cell firing fields also do not contain the six hexagonally organized peaks that are characteristic of grid fields (Figure 2A\u2013C). Nevertheless, I cell spatial autocorrelograms produce positive grid scores (0.39 \u00b1 0.16; Figure 2\u2014figure supplement 3), although these are reduced compared to scores for the E cells in the same networks (E cells: 0.796 \u00b1 0.157; p < 10\u221216; paired t-test; mean \u00b1 SD) and in many networks are below the threshold considered previously to qualify as grid like (cf. Figure 4B of Buetfering et al., 2014). When we evaluated the dependence of I cell spatial firing on gE, gI and noise, it appeared to be similar to that of E cells (Figure 2\u2014figure supplement 3). To assess whether grid scores of I cells can be reduced further in E-I networks while maintaining grid firing by E cells, we investigated networks in which uncorrelated spatial input is applied to each I cell (Figure 2\u2014figure supplement 4). In these simulations E cells had grid scores of 0.57 \u00b1 0.25, spatial sparsity of 0.78 \u00b1 0.03 and spatial information of 1.69 \u00b1 0.18 bits/spike, whereas I cells had grid scores of 0.16 \u00b1 0.2 (p < 10\u221216, paired t-test), spatial sparsity of 0.21 \u00b1 0.01 (p < 10\u221216, paired t-test) and spatial information of 0.2 \u00b1 0.01 bits/spike (p < 10\u221216, paired t-test; range of all data sets is mean \u00b1 SD). Thus, spatial firing of I cells has a similar dependence on noise, gE and gI to grid cells, conventional indices of spatial firing are nevertheless much lower for I cells in E-I networks compared to E cells, and grid firing by E cells in E-I networks is relatively robust to disruption of the rotational symmetry of I cell firing fields.\n\nTogether these simulations demonstrate that attractor circuit computations that generate grid firing fields require specific tuning of gE and gI. In the absence of noise grid firing is supported in relatively restricted regions of parameter space. Optimal levels of noise, which produce single cell membrane potential fluctuations of a similar amplitude to experimental observations (Domnisoru et al., 2013; Pastoll et al., 2013; Schmidt-Hieber and H\u00e4usser, 2013), promote grid firing by reducing the sensitivity of grid computations to the strength of recurrent synaptic connections, particularly when inhibition is relatively strong and excitation is weak.\n\n### Differential sensitivity of gamma oscillations and grid firing to the strength of E and I synapses\n\nIs the sensitivity of gamma frequency oscillations to synaptic strength and to noise similar to that of grid firing? To evaluate gamma activity we recorded synaptic currents from single E and I cells across multiple theta cycles (Figure 3A\u2013C). For the network configurations illustrated in Figure 2Aa,b and in which intrinsic noise is absent, we observed synaptic events entrained to theta cycles (Figure 3Aa,b). However, the timing and amplitude of synaptic events typically differed between theta cycles and no consistent gamma rhythm was apparent. In contrast, in the presence of noise with standard deviation 150 pA we observed nested gamma frequency synaptic activity with timing that was consistent between theta cycles (Figure 3Ba). In this condition the frequency of the gamma oscillations was reduced and their amplitude increased by raising gI and lowering gE (Figure 3Bb). With a further increase in noise to 300 pA, gamma activity remained entrained to theta cycles, but became less ordered (Figure 3Ca,b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Examples of inhibitory (red) and excitatory (blue) synaptic currents recorded respectively from excitatory and inhibitory neurons from simulations highlighted by arrows in panels (D\u2013F). (D\u2013F) Top: Correlation value at the first local maximum of the autocorrelation of inhibitory synaptic currents (I \u2192 E cells, 25 randomly selected E cells), plotted as a function of gE and gI, for networks without noise (D), with noise level set to \u03c3 = 150 pA (E), and noise level set to \u03c3 = 300 pA (F). Each point is an average over five simulation trials. In these simulations velocity and place cell inputs were disabled. The duration of simulations was 10 s. Bottom: Frequency corresponding to the peaks of the autocorrelation functions for simulations in the top panels. Black lines in (E) indicate the region from Figure 2E where the gridness score = 0.5. (G) Scatter plots show gridness score as a function of gamma oscillation strength (top) and frequency (bottom) for simulations with noise absent (green), with an intermediate level of noise (red) and highest simulated noise level (blue). Each dot represents data from a single network configuration. (H) Top: Gamma oscillation strength plotted as a function of standard deviation of the noise current. Grey color indicates simulations with gE = 3 nS, gI = 1 nS (A). Red color indicates simulations with gE = 1 nS, gI = 3 nS (B). Bottom: Frequency corresponding to the detected autocorrelation peak.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Examples of inhibitory (red) and excitatory (blue) synaptic currents recorded respectively from excitatory and inhibitory neurons from simulations highlighted by arrows in panels (D\u2013F). (D\u2013F) Top: Correlation value at the first local maximum of an autocorrelation of inhibitory synaptic currents (I \u2192 E cells, 25 randomly selected E cells), plotted as a function of gE and gI, for networks without noise (D), with noise set to \u03c3 = 150 pA (E), and noise set to \u03c3 = 300 pA (F). Each point is an average over five simulation trials. In these simulations velocity and place cell inputs were disabled. The duration of simulations was 10 s. Bottom: Frequency corresponding to the peaks of the autocorrelation functions for simulations in the top panels. Black lines in (E) indicate the region from Figure 2\u2014figure supplement 1 where the gridness score = 0.5.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013C) The plots show relationships between grid field computations (gridness score) and the power of nested gamma oscillations for deterministic networks (A), networks with moderate noise (B) and networks with the highest simulated noise level (C). Noise level is indicated by \u03c3. The strength of the oscillation was obtained by computing autocorrelation functions of inhibitory currents impinging onto 25 randomly selected E cells in the network and detecting their first local maxima. The correlation value at the first local maximum is plotted on the abscissa. Color coding determines the values of gE and gI, as shown in the 2D colorbar.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A\u2013C) The plots show relationships between grid field computations (gridness score) and the frequency of gamma oscillations for deterministic networks (A), networks with moderate noise (B) and networks with the highest simulated noise level (C). Noise level is indicated by \u03c3. The frequency of the oscillation was obtained by computing autocorrelation functions of inhibitory currents impinging onto 25 randomly selected E cells in the network and detecting their first local maxima. The time lag at the first local maximum yielded the frequency of the oscillation, which is plotted on the abscissa. Color coding determines the values of gE and gI, as shown in the 2D colorbar.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Amplitude (top) and frequency (bottom) of detected gamma oscillations for simulations in which gridness score is greater than 0.5, in deterministic networks (A), networks with an intermediate level of noise (B) and in networks with the highest simulated level of noise (C). The data in this figure are from simulations in Figure 3.\n\nTo explore gamma activity across a wider range of gI and gE we automated quantification of the strength and frequency of oscillatory input to E cells (see \u2018Materials and methods\u2019). In the absence of noise gamma frequency activity only occurred for a narrow range of gI and gE (Figure 3D). Strikingly, following addition of moderate noise the region of parameter space that supports gamma activity was massively expanded (Figure 3E). Within this space, the amplitude of gamma increased with increasing inhibition, whereas the frequency was reduced. As noise is increased further the amplitude and frequency of gamma oscillations are reduced (Figure 3F). We found a similar dependence of gamma oscillations on noise, gE and gI in networks with probabilistic connectivity (Figure 3\u2014figure supplement 1). Thus, intrinsic noise modifies the amplitude and frequency of nested gamma oscillations.\n\nTo determine whether there is a systematic relationship between values of gE and gI that generate gamma and grid firing we compared the gridness score and gamma scores for each circuit configuration (Figure 3G, Figure 3\u2014figure supplements 2, 3). We found this relationship to be complex and highly sensitive to noise. However, we did not find any evidence for strong linear relationships between gamma amplitude or gamma frequency and grid score (R2 < 0.12 for all comparisons), while gamma amplitude and frequency provided only modest amounts of information about grid scores (0.27 < MIC < 0.33 and 0.27 < MIC < 0.37 respectively). The relationship between noise intensity and gamma differed from that for grid computations. Whereas, grids emerged above a sharp noise threshold (Figure 2H), for the same regions in parameter space the frequency and amplitude of gamma oscillations varied smoothly as a function of noise (Figure 3H). Thus, neither the frequency nor the power of gamma appears to be a good predictor of grid firing.\n\nWhen we considered only regions of parameter space that generate robust grid fields (grid score >0.5), we found circuits generating almost the complete observed range of gamma amplitudes (0.02 < autocorrelation peak < 0.59) and frequencies (31 Hz < frequency < 102 Hz) (Figure 3\u2014figure supplement 4). For example, considering the crescent shaped region of E-I space that supports grid firing in the presence of intermediate noise (the region within the isocline in Figure 3E), when gI is high and gE low then the amplitude of gamma is relatively low and the frequency high. Moving towards the region where gI is high and gE is low, the amplitude of gamma is increased and the frequency is reduced. Thus, variation of synaptic strength across this region of E-I space can be used to tune the properties of gamma activity while maintaining the ability of the network to generate grid fields.\n\nTogether these data indicate that an optimal level of noise promotes emergence of gamma oscillations, while the properties of oscillations may depend on the relative strength of synaptic connections. The relationship between gamma and synaptic strength differs to that for grid computations. Strikingly, while gamma activity provides relatively little information about grid firing, differential sensitivity of gamma and grid firing to gE and gI provides a mechanism for circuits to tune gamma frequency activity while maintaining the ability to compute rate coded grid firing fields.\n\n### Noise promotes attractor computation by opposing seizures\n\nGiven the emergence of a large parameter space that supports grid firing following introduction of moderate noise, we were interested to understand how noise influences the dynamics of the E-I circuits. One possibility is that in networks that fail to generate grid firing fields network attractor states form, but their activity bumps are unable to track movement. In this scenario disrupted grid firing would reflect incorrect control of network activity by velocity signals. Alternatively, deficits in grid firing may reflect failure of network attractor states to emerge. To distinguish these possibilities we investigated formation of activity bumps in network space over the first 10 s following initialization of each network (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig4-v2.jpg)\n\n**Figure 4.:** (A) Examples of snapshots of network activity of E cells from simulations in which velocity and place cell inputs are inactivated. Each row shows a simulation trial with a value of gE and gI highlighted by an arrow in panel (B). The corresponding probability of bump formation (P(bumps)) and the maximal firing rate is indicated to the left and right, respectively. (B) Color plots show probability of bump formation (P(bumps)), for the simulated range of gE and gI and the three simulated noise levels. Each color point is an average of five 10 s simulation runs. Arrows show positions in the parameter space of examples in (A). Black lines indicate the regions where the gridness score = 0.5 (cf. Figure 2D\u2013F). (C) Relationship between gridness score computed from the grid field simulation runs (Figure 2D\u2013F) and the probability of bump formation (B). (D) Relationship between gamma oscillation strength (Figure 3D\u2013F) and the probability of bump formation (B). Each color in (C and D) represents one noise level and each dot in the scatter plots corresponds to simulations of a single pair of values of gE and gI.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic of the bump attractor drift estimation procedure. The first 500 ms of a simulation trial are used to initialize the bump attractor. Onset of theta modulated input current was at 500 ms. The estimated centers of bump attractors measured by the least squares fit of symmetric Gaussians were at 1 s (initial position) and 9 s (final position). The drift was then estimated as the distance on twisted torus between the initial and final position. Simulation time was 10 s. (B) Color plots show bump attractor drifts averaged over five simulation trials, for the simulated ranges of excitatory and inhibitory synaptic strengths and levels of noise. Networks without noise can form stable bump attractors in a subset of their parameter region. Networks with noise suffer from attractor drift in majority of the parameter region. Black lines in (B) indicate the region from Figure 2D\u2013F where gridness score = 0.5.\n\nOur analysis suggests that the deficit in grid firing in deterministic compared to noisy networks reflects a failure of attractor states to emerge. For deterministic simulation of the points in parameter space considered in Figure 2Aa, which are able to generate grid patterns, we found that a single stable bump of activity emerged over the first 2.5 s of simulated time (Figure 4Aa). In contrast, for deterministic simulation of the point considered in 2Ab, which in deterministic simulations did not generate grid patterns, a single stable bump fails to emerge (Figure 4Ab). Quantification across the wider space of gE and gI values (see \u2018Materials and methods\u2019) indicated that when gI is low there is a high probability of bump formation as well as grid firing, whereas when gI is high the probability of both is reduced (Figure 4B). In contrast to the deterministic condition, for circuits with intrinsically noisy neurons activity bumps emerged in the first 1.25 s following initialization of the network (Figure 4Ac\u2013e) and the area of parameter space that supported bump formation was much larger than that supporting grid firing (Figure 4B). Plotting gridness scores as a function of bump probability indicated that bump formation was necessary, although not sufficient for grid formation (Figure 4C), while plotting the first autocorrelation peak as a function of bump probability supported our conclusion that grid computation and gamma activity are not closely related (Figure 4D). Together, these data indicate that noise promotes formation of attractor bumps in network activity and in deterministic simulations the failure of the circuit to generate attractor states largely accounts for disrupted grid firing.\n\nIn noisy networks the presence of low grid scores for networks with high bump scores (Figure 4C) is explained by sensitivity of these network configurations to noise-induced drift. This is illustrated by the region of parameter space from Figure 2Ab, where gI is relatively high and gE relatively low, and which in deterministic simulations fails to generate bumps or grids. With moderate noise, this point generates bumps that show little drift (Figure 4Ac), whereas as noise is increased further the bump begins to drift (Figure 4Ae). In contrast, at the point illustrated in Figure 2Aa, which forms grids and bumps in the presence or absence of noise, activity bumps are relatively stable in each condition (Figure 4Aa,d), although drift increases with greater noise (Figure 4\u2014figure supplement 1). Thus, intrinsic noise has two opposing effects on bump formation. For much of the parameter space we consider moderate noise promotes emergence of bumps and grids, while across all of parameter space noise reduces bump stability leading to deterioration of grids.\n\nTo investigate how addition of noise promotes emergence of network attractor states we investigated the dynamics of neurons in the simulated circuits. We focus initially on the point in parameter space identified in Figure 2Ab, where grids are found in the presence of moderate noise, and bumps are found when noise is moderate or high. When we examined times of action potentials generated by all neurons in this circuit, we find that in the absence of noise the network generates hyper-synchronous seizure-like states at the start of each theta cycle (Figure 5A and Figure 5\u2014figure supplement 1A). The number of E cells active on each theta cycle differs, but their activity is typically restricted to the rising phase of theta, and there is no consistent structure in the pattern of activated neurons. The number of simultaneously active I cells is also greatest at the start of each theta cycle. The I-cells continue to fire over the theta cycle, but their synchronization declines. When moderate noise is added to the circuit only a subset of E-cells are active on each theta cycle, forming an activity bump (Figure 5B and Figure 5\u2014figure supplement 1B). The I-cells are active at gamma frequency and the formation of an activity bump in the E-cell population is reflected by an inverted bump in the I-cell population activity (Figure 5B). With increased noise there is a similar overall pattern of activity, but spike timing becomes more variable, causing the bumps to drift and reducing the degree of synchronization at gamma frequencies (Figure 5C and Figure 5\u2014figure supplement 1C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) Raster plots show activity of all neurons in the excitatory (red) and inhibitory (blue) populations for the duration of two theta cycles (top), along with the average population firing rates for both populations (center and bottom; calculated with a sliding rectangular window with 2 ms duration and 0.5 ms time step), for networks where noise is absent (A; \u03c3 = 0), with noise set to \u03c3 = 150 pA (B), and with noise set to \u03c3 = 300 pA (C). Simulations were performed in the absence of animal movement and place cell input; gE = 1 nS and gI = 3 nS. (D) Maximal average population firing rate of E cells estimated from the whole simulation run (10 s; 500 ms at the beginning of the simulation excluded) for each simulated level of noise. Each point is an average of maxima from five simulation runs. (E) Probability of the maximal population-average firing rate during each theta cycle exceeding 300 Hz, that is, at least 60% of E cells firing synchronously within a time period of 2 ms in the parameter space of gE and gI when \u03c3 = 0 pA. Black lines indicate regions where gridness score equals 0.5. (F) Scatter plots show the relationship between gridness score and the maximal firing rate during the simulation (left) and the probability of the maximal population-average firing rate during each theta cycle exceeding 300 Hz (right).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Top: Mean maximal firing rate per theta cycle (average over five trials), outlining the average activity during theta cycles, in the parameter space of gE and gI. Center and bottom: Raster plots (center) and population-average firing rates (bottom) of all cells in selected locations of the E-I parameter space during 16 consecutive \u03b8 cycles. Action potentials and firing rates of E and I cells are colored red and blue, respectively. An arrow highlights the position in the parameter space.\n\nTo determine whether these changes in network dynamics are seen across wider regions of parameter space we first quantified the presence of seizure like events from the maximum population firing rate in any 2 ms window over 10 s of simulation time (E-ratemax). Strikingly, we found that in the absence of noise epochs with highly synchronized activity were found for almost all combinations of gE and gI, whereas these seizure-like events were absent in simulations where noise was present (Figure 5D). Interestingly, while grids emerge in deterministic networks in regions of E-I space where E-ratemax is relatively low, there is a substantial region of parameter space in which E-ratemax is >400 Hz, but grids are nevertheless formed. It is possible that seizure-like states may be rare in this region of parameter space and so do not interfere sufficiently with attractor dynamics to prevent grid firing. To test this we calculated for each combination of gE and gI the proportion of theta cycles having events with population-average rate >300 Hz (PE-rate > 300). For values of gE and gI where grid fields are present PE-rate > 300 was relatively low, indicating that seizure-like events are indeed rare (Figure 5E). Consistent with this, when we plotted grid score as a function of PE-rate > 300, we found that PE-rate > 300 was relatively informative about the gridness score in networks without noise (MIC = 0.624) and a low value of PE-rate > 300 was necessary for grid firing (Figure 5F). In contrast, E-ratemax was less informative of grid firing (0.392 \u2264 MIC \u22640.532) and a wide range of values were consistent with grid firing (Figure 5F). Thus, while grid firing is compatible with occasional seizure-like events, when seizure-like events occur on the majority of theta cycles then grid firing is prevented.\n\nBecause seizure-like events tend to initiate early on the depolarizing phase of each theta cycle, we asked if synchronization by theta frequency drive plays a role in their initiation. When theta frequency input was replaced with a constant input with the same mean amplitude, the power of gamma oscillations was still dependent on the levels of noise and changes in gE and gI (Figure 6\u2014figure supplement 1). However, in contrast to simulations with theta frequency input (Figure 5D,E), noise-free networks without theta exhibited hyper-synchronous firing only when gE was <0.5 nS (Figure 6A) and generated grid firing fields almost in the complete range of gE and gI (Figure 6D,G). Addition of noise in the absence of theta had mostly detrimental effects on grid firing (Figure 6E,F,H,I and Figure 6\u2014figure supplement 2). Interestingly, with intermediate levels of noise, the subregion with high gridness scores (>0.5) retained its crescent-like shape (Figure 6E,H), but was smaller when compared to the networks with theta frequency inputs (size of regions with and without theta: 488/961 vs 438/961), while the range of gamma frequencies present was much lower than in networks containing theta drive. Together, these data indicate that moderate noise prevents emergence of seizure like states by disrupting synchronization of the attractor network by the shared theta frequency drive. In networks with moderate noise theta drive promotes grid firing and enables a wide range of gamma frequencies to be generated without disrupting grid firing.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) Maximal average population firing rate of E cells estimated from the whole simulation run (10 s; 500 ms at the beginning of the simulation excluded) for each simulated level of noise indicated by \u03c3, in networks with theta frequency inputs replaced with a constant input with the same mean amplitude. Each point is an average of maxima from five simulation trials. Black lines indicate the regions from (G\u2013H) where gridness score = 0.5. (D\u2013F) Example spatial firing fields (left) and autocorrelation plots (right) for the specific values of gE and gI indicated by arrows in (G\u2013I), corresponding to the three simulated noise levels. Maximal firing rate is indicated at the top right of each spatial firing plot. The range of spatial autocorrelations is normalized between 0 and 1. (G\u2013I) Gridness score as a function of gE and gI, for each simulated level of noise. Each item in the color plot is an average gridness score of three simulation runs of 600 s duration. Arrows indicate the positions of grid field and autocorrelation examples from simulations illustrated in (D\u2013F). Simulations that did not finish in a specified time interval (5 hr) are indicated by white color.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013C) Amplitude (top) and frequency (bottom) of detected gamma oscillations (\u2018Materials and methods\u2019) in deterministic networks (A), networks with an intermediate level of noise (B) and in networks with the highest simulated level of noise (C). Each point is an average of five simulation runs. Data are from the same simulation set. White color indicates simulation runs in which no autocorrelation peaks were detected (cf. \u2018Materials and methods\u2019).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The plot shows a difference between gridness scores of networks with \u03c3 = 150 pA and networks with \u03c3 = 0 pA plotted as a function of gE and gI when theta inputs were replaced with a constant input with an equal mean amplitude.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Average firing rate of all E cells during simulations of animal movement as a function of gE and gI. Black lines outline the region from Figure 2D\u2013F where gridness score = 0.5. (B) Relationship between gridness score and firing frequency of E cells.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A\u2013C) Bump attractor speed as a function of the strength of the velocity current for the three simulated levels of noise. 10 simulation runs were performed for each level of noise (blue markers). In each run the speed of the bump was calculated in response to the injected velocity input and the data were used to fit a linear relationship using an estimation procedure outlined in Appendix 1 (black line). (D\u2013F) Slope of the estimated velocity gain of the attractor networks as a function of gE and gI for all simulated levels of noise. (G\u2013I) Same as in (D\u2013F) but the plots show error of fit for the estimated linear relationships. Arrows show locations of the data plotted in (A\u2013C). Black lines in (D\u2013I) indicate the region from Figure 2D\u2013F where gridness score = 0.5.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** (A) Illustration of the procedure to estimate the difference between the bump position induced by place cells and actual estimated position of the bump state, by using a sliding window with 250 ms duration and 125 ms time step. The resulting distance from the reset position, in one simulation run, was then an average over all sliding windows. (B) Color plots show the effectivity of place cell mechanism for an average of five simulation runs with 10 s duration. Place cells are most effective in networks with an intermediate amount of noise. Black lines in (B) indicate the region from Figure 2D\u2013F where gridness score = 0.5.\n\nOur analysis points towards suppression of seizure-like events as the mechanism by which moderate noise promotes grid firing, while interactions between noise and theta appear important for the capacity to multiplex grid firing with a wide range of gamma frequencies. However, we wanted to know if other factors might contribute to these beneficial roles of noise. Grid fields may also fail to form if overall activity levels are too low, in which case neurons with grid fields instead encode head direction (Bonnevie et al., 2013). This observation is unlikely to explain our results as the mean firing rate of E cells in networks that generated grid firing fields (grid score >0.5, networks with gE or gI set to 0 excluded) was in fact lower than the firing rate of networks without grid fields (1.2; 1.0; 1.0 Hz grid fields vs 3.0; 2.7; 1.2 Hz no grid fields, in networks with \u03c3 = 0; 150; 300 pA respectively). There was also no systematic relationship between grid score and firing frequency (Figure 6\u2014figure supplement 3). We also wanted to know if other properties of grid fields vary as a function of gE and gI. Parameters used to calibrate velocity integration by the grid network varied very little with changes in gE and gI (Figure 6\u2014figure supplement 4), whereas drift increased with gI (Figure 4\u2014figure supplement 1) and place cell input was most effective in opposing attractor drift in noisy networks with high gridness scores (Figure 6\u2014figure supplement 5). These data are consistent with suppression of seizure like events as the mechanism by which noise promotes grid firing, while interactions between noise and theta frequency inputs profoundly influence the dynamics of attractor networks that generate grid fields.\n\n### Recurrent inhibition increases the frequency of gamma activity and promotes grid firing\n\nOur analysis so far focuses on E-I attractor networks as simple models of grid firing that are compatible with the finding that synaptic interactions between stellate cells in layer 2 of the MEC are mediated via inhibitory interneurons (Dhillon and Jones, 2000; Couey et al., 2013; Pastoll et al., 2013). However, there is evidence that interneurons active during theta-nested gamma activity make connections to one another as well as to stellate cells (Pastoll et al., 2013). To establish whether this recurrent inhibition substantially modifies our conclusions from simpler E-I networks, we extended the E-I model to also include synapses between interneurons (see \u2018Materials and methods\u2019). In the resulting E-I-I networks, in the absence of noise, grid firing emerges across a much larger region of parameter space compared to E-I networks (Figure 7A, Figure 7\u2014figure supplements 1\u20134). However, as in E-I networks occasional seizure like activity was present across a wide range of gE and gI (Figure 7\u2014figure supplement 5), and gamma frequency activity was largely absent (Figure 7D,G). Following addition of noise with standard deviation of 150 pA to E-I-I networks, grid firing was maintained, seizure like activity was abolished, and gamma like activity emerged (Figure 7B,E,H and Figure 7\u2014figure supplement 5). Increasing the noise amplitude to 300 pA reduced grid firing and interfered with the emergence of gamma oscillations (Figure 7C,F,I and Figure 7\u2014figure supplements 1\u20135). Importantly, just as in E-I networks, the presence of moderate noise in E-I-I networks enables tuning of gamma activity by varying gE and gI while maintaining the ability of the networks to generate grid firing fields. Gamma activity had a higher frequency in E-I-I compared to E-I networks, with a greater proportion of the parameter space supporting gamma frequencies >80 Hz. This higher frequency gamma is similar to fast gamma observed experimentally in the MEC (cf. Chrobak and Buzs\u00e1ki, 1998; Colgin et al., 2009; Pastoll et al., 2013). Thus, by including additional features of local circuits in layer 2 of the MEC, E-I-I models may more closely recapitulate experimental observations. Nevertheless, E-I-I networks maintain the ability, in the presence of moderate noise, for variation in gE and gI to tune gamma oscillations without interfering with grid firing.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013C) Gridness score as a function of gE and gI for networks without noise (A; \u03c3 = 0 pA), with noise level set to \u03c3 = 150 pA (B), and noise level set to \u03c3 = 300 pA (C). Simulations that did not finish in a specified time interval (5 hr) are indicated by white color. (D\u2013F) Examples of inhibitory (red) and excitatory (blue) synaptic currents recorded respectively from excitatory and inhibitory neurons from simulations highlighted by arrows in panels (G\u2013I). (G\u2013I) Top: Correlation value at the first local maximum of an autocorrelation of inhibitory synaptic currents (I \u2192 E cells, 25 randomly selected E cells), plotted as a function of gE and gI, for networks without noise (G), with noise level set to \u03c3 = 150 pA (H), and noise level set to \u03c3 = 300 pA (I). Each point is an average over five simulation trials. In these simulations velocity and place cell inputs were disabled. The duration of simulations was 10 s. Bottom: Frequency corresponding to the peaks of the autocorrelation functions for simulations in the top panels. Black lines in (H) indicate the regions from (B) where gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013C) Example spatial firing fields (left) and spatial autocorrelation plots (right) for networks with gE = 3 nS and gI = 1 nS (A) and networks with gE = 1 nS and gI = 3 nS (B), corresponding to the three simulated noise levels indicated by \u03c3. Maximal firing rate is indicated to the top right of each spatial firing plot. Range of spatial autocorrelations is normalized between 0 and 1.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Examples of E cell population firing rate snapshots from simulations in which velocity and place cell inputs are inactivated. Each row shows a simulation trial with a value of gE and gI highlighted by an arrow in panel (B). The corresponding probability of bump formation (P(bumps)) is indicated to the left. Maximal firing rate for each set of snapshots is indicated to the right. (B) Color plots show probability of bump formation (P(bumps)), for the simulated range of gE and gI and the three simulated noise levels. Each color point is an average of five 10 s simulation runs. Black lines in (B) indicate the region from Figure 7A\u2013C where gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Schematic of the bump attractor drift estimation procedure. The first 500 ms of a simulation trial are used to initialize the bump attractor. Onset of theta modulated input current was at 500 ms. The estimated centers of bump attractors measured by the least squares fit of symmetric Gaussians were at 1 s (initial position) and 9 s (final position). The drift was then estimated as the distance on twisted torus between the initial and final position. Simulation time was 10 s. (B) Color plots show bump attractor drifts averaged over five simulation trials, for the simulated ranges of excitatory and inhibitory synaptic strengths and levels of noise. Networks without noise can form stable bump attractors in a subset of their parameter region. Networks with noise suffer from attractor drift in the majority of the parameter region. Black lines in (B) indicate the region from Figure 7A\u2013C where gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** (A\u2013C) Bump attractor speed as a function of the strength of the velocity current for the three simulated levels of noise indicated by \u03c3. Values of gE and gI are indicated by arrows in (D\u2013I). 10 simulation runs were performed for each level of noise (blue markers). In each run the speed of the bump was calculated in response to the injected velocity input and the data were used to fit a linear relationship using an estimation procedure outlined in Appendix 1 (black line). (D\u2013F) Slope of the estimated velocity gain of the attractor networks as a function of gE and gI for all simulated levels of noise. (G\u2013I) Same as in (D\u2013F) but the plots show error of fit for the estimated linear relationships. Arrows in (D\u2013I) show locations of the data plotted in (A\u2013C). Black lines in (D\u2013I) indicate the region from Figure 7A\u2013C where gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp5-v2.jpg)\n\n**Figure 7\u2014figure supplement 5.:** (A\u2013C) Raster plots show activity of all neurons in the excitatory (red) and inhibitory (blue) populations for the duration of two theta cycles (top), along with the average population firing rates for both populations (center and bottom; calculated with a sliding rectangular window with 2 ms duration and 0.5 ms time step), for networks where noise is absent (A; \u03c3 = 0), with noise set to \u03c3 = 150 pA (B), and with noise set to \u03c3 = 300 pA (C). Simulations were performed in the absence of animal movement and place cell input; gE = 1 nS and gI = 3 nS. (D) Maximal average population firing rate of E cells estimated from the whole simulation run (10 s; 500 ms at the beginning of the simulation excluded) for each simulated level of noise. Each point is an average of maxima from five simulation runs. (E) Probability of the maximal population-average firing rate during each theta cycle exceeding 300 Hz, that is, at least 60% of E cells firing synchronously within a time period of 2 ms, in the parameter space of gE and gI when \u03c3 = 0 pA. Black lines indicate the regions from Figure 7A\u2013C where gridness score equals 0.5. (F) Scatter plots show the relationship between gridness score and the maximal firing rate during the simulation (left) and the probability of the maximal population-average firing rate during each theta cycle exceeding 300 Hz (right).\n\n![Figure 7\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp6-v2.jpg)\n\n**Figure 7\u2014figure supplement 6.:** (A\u2013C) Example firing fields (left) and spatial autocorrelation plots (right) for the strengths of recurrent synaptic connections indicated by arrows in (D\u2013F) for networks without noise (A; \u03c3 = 0 pA), with noise set to \u03c3 = 150 pA (B), and noise set to \u03c3 = 300 pA (C). (D\u2013F) Gridness score as a function of gE and gI for networks with each noise level. Each item in the color plot is an average gridness score of two simulation runs. Arrows indicate the positions of grid field and autocorrelation examples from simulations illustrated in (A\u2013C).\n\n![Figure 7\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp7-v2.jpg)\n\n**Figure 7\u2014figure supplement 7.:** (A\u2013C) Examples of inhibitory (red) and excitatory (blue) synaptic currents recorded respectively from excitatory and inhibitory neurons from simulations highlighted by arrows in panels (D\u2013F). (D\u2013F) Top: Correlation value at the first local maximum of an autocorrelation of inhibitory synaptic currents (I \u2192 E cells, 25 randomly selected E cells), plotted as a function of gE and gI, for networks without noise (D), with noise set to \u03c3 = 150 pA (E), and noise set to \u03c3 = 300 pA (F). Each point is an average over five simulation trials. In these simulations velocity and place cell inputs were disabled. The duration of simulations was 10 s. Bottom: Frequency corresponding to the peaks of the autocorrelation functions for simulations in the top panels. Black lines in (E) indicate the region from Figure 7\u2014figure supplement 6 where the gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp8-v2.jpg)\n\n**Figure 7\u2014figure supplement 8.:** (A) Examples of E cell population firing rate snapshots from simulations in which velocity and place cell inputs are inactivated. Each row shows a simulation trial with a value of gE and gI highlighted by an arrow in panel (B). The corresponding probability of bump formation (P(bumps)) is indicated to the left. Maximal firing rate for each row is indicated to the right. (B) Color plots show probability of bump formation (P(bumps)), for the simulated range of gE and gI and the three simulated noise levels indicated by \u03c3. Each color point is an average of five 10 s simulation runs. Arrows show positions in the parameter space of examples in (A). Black lines indicate the region from Figure 7\u2014figure supplement 6 where the gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp9-v2.jpg)\n\n**Figure 7\u2014figure supplement 9.:** (A\u2013C) Raster plots show activity of all neurons in the excitatory (red) and inhibitory (blue) populations for the duration of two theta cycles (top), along with the average population firing rates for both populations (center and bottom; calculated with a sliding rectangular window with 2 ms duration and 0.5 ms time step), for networks where noise is absent (A; \u03c3 = 0), with noise set to \u03c3 = 150 pA (B), and with noise set to \u03c3 = 300 pA (C). Simulations were performed in the absence of animal movement and place cell input; gE = 1 nS and gI = 3 nS. (D) Maximal average population firing rate of E cells estimated from the whole simulation run (10 s; 500 ms at the beginning of the simulation excluded) for each simulated level of noise. Each point is an average of maxima from five simulation runs. (E) Probability of the maximal population-average firing rate during each theta cycle exceeding 300 Hz, that is, at least 60% of E cells firing synchronously within a time period of 2 ms in the parameter space of gE and gI when \u03c3 = 0 pA. (F) Scatter plots show the relationship between gridness score and the maximal firing rate during the simulation (left) and the probability of the maximal population-average firing rate during each theta cycle exceeding 300 Hz (right). Black lines in (D and E) indicate the region from Figure 7\u2014figure supplement 6 where the gridness score = 0.5.\n\n![Figure 7\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/06444/elife-06444-fig7-figsupp10-v2.jpg)\n\n**Figure 7\u2014figure supplement 10.:** Since the presence of bump attractors is necessary for grid computation, we tested whether networks with only structured E-E connections can generate activity bumps. We used the Gaussian fitting procedure (cf. \u2018Materials and methods\u2019) to estimate the presence of bump attractors in these networks. (A) Probability of bump formation as a function of the E-E synaptic scaling factor (gE \u2192 E) and the width of the synaptic profile (\u03c3E \u2192 E). Arrow highlights the position in the parameter space corresponding to the raster plots (center) and network activity snapshots (bottom) for E and I cells. Firing rate in the network activity color plots are in the range of 0 (dark blue) to the maximum firing rate indicated to the right of the plot (dark red). In these networks gE = 1 nS and gI = 0.1 nS. (B) Same as (A) but gE = 3 nS and gI = 1 nS. (C) Same as (A) and (B) but in these simulations the synaptic scaling factor of E-E connections and the width of the synaptic profile were fixed (gE \u2192 E = 3 nS and \u03c3E \u2192 E = 0.0833) and gE and gI varied in the range of 0\u20136 nS. Simulations that produced excessive spiking activity and did not finish in a specified time limit (3 hr) are indicated by white color. Many networks suffer from runaway excitation and inhibition (A) or generate only background synaptic activity characterized by low firing rates of E and I cells (B and C). The Gaussian fitting procedure used to estimate the probability of bump formation can nevertheless yield a high bump score due to the fact that this procedure can also give a high score to intermittent pockets of activity (A) or pockets of background activity of E cells (B and C). This activity, however, is not stable enough to generate grid firing fields.\n\nFinally, we asked if addition of synaptic connections between excitatory cells modifies the relationship between gamma, noise, gE and gI. While the E-I model is consistent with the connectivity between stellate cells in layer 2 of the MEC, adjacent pyramidal cells may also have grid firing properties. Unlike stellate cells, pyramidal cells interact with one another directly via excitatory connections and indirectly via inhibitory interneurons (Couey et al., 2013). To assess the impact of E-E connections, we first extended the E-I model to allow each E cell to excite other E cells that are nearby in neuron space. The dependence of grid firing, gamma oscillations, and bump formation on noise, gE and gI was similar to E-I networks (Figure 7\u2014figure supplements 6\u20139). We also attempted to evaluate networks in which E-E connections were structured, but E-I and I-E connections were uniformly distributed. However, in these networks we were unable to identify parameters that support formation of stable activity bumps (Figure 7\u2014figure supplement 10). This is consistent with instability of simpler network attractors based on E-E connections (Seung et al., 2000).\n\n## Discussion\n\nWe investigated the relationship between rate coded spatial computations and nested gamma oscillations in attractor network models of grid firing. While in the models we consider rate coding and gamma oscillations share the same neural substrate, that is projections from a population of E cells to an I cell population, which in turn projects back to the E cell population, we find that their sensitivity to variations in excitatory and inhibitory synaptic strengths nevertheless differs. A moderate level of noise promotes generation of both grid fields and nested gamma oscillations, primarily by the disruption of epileptic-like firing of E and I cells in the network. When the strength of E or I connections is varied in the presence of moderate noise a wide range of gamma frequency and power can be obtained without affected grid firing. Thus, noise can be beneficial for computations performed by the nervous system, while the frequency and power of multiplexed gamma oscillations can be tuned independently of rate-coded grid computations, suggesting a mechanism for differential control of multiplexed neural codes.\n\nOur results suggest a novel beneficial role for noise. In general noise in the nervous system is believed to distort the fidelity of transmitted signals (Faisal et al., 2008). Exceptions are stochastic resonance phenomena in which noise promotes detection of small amplitude signals by individual neurons (Longtin et al., 1991; Benzi et al., 1999; Shu et al., 2003), improvements in signal coding through desynchronization of neuronal populations (Hunsberger et al., 2014) and emergence of stochastic weak synchronization in interneuron networks (Tiesinga and Jose, 2000). The beneficial role for noise that we identify here differs from these phenomena in that it emerges through interactions between populations of neurons and because the grid cell attractor network performs a computation\u2014generation of a spatial code from velocity inputs\u2014rather than propagating input signals. We find that by opposing emergence of hyper-sychronous seizure-like states noise allows the network to generate stable bump attractor states. Noise prevents the seizure-like states by desynchronizing neuronal responses to common theta input. We were able to identify this role for noise because spiking and synaptic dynamics are explicitly represented in the simulated network. These dynamics are absent from other attractor network models of grid firing (Fuhs and Touretzky, 2006; Guanella et al., 2007; Burak and Fiete, 2009). They are also absent from other models of theta-nested gamma oscillations that simulate two-dimensional dynamical systems of E and I populations with theta modulated inputs to the network (Onslow et al., 2014). Thus, intrinsic cellular and synaptic dynamics in conjunction with noise sources may be important in accounting for computations and oscillatory activity in neural networks.\n\nThe distinct control of rate coded grid computations and gamma oscillations by noise, gE and gI was independent of the detailed implementation of the E-I models we considered and was maintained in more complex models incorporating I-I and E-E coupling. Current available experimental data appears to be insufficient to distinguish between these different models. For example, our analysis of interneuron firing indicates that while E-I models predict that interneurons will have spatial firing fields, they have lower spatial information content, spatial sparsity and grid scores than E cells and therefore may be difficult to detect in existing experimental datasets and with current analysis tools. Thus, evidence previously interpreted to argue against E-I based mechanisms for grid firing may in fact not distinguish these from other possible mechanisms. Indeed, we found that grid firing by E cells can be maintained during spatial input that distorts the spatial firing pattern of I cells (Figure 2\u2014figure supplement 4). While these simulations establish in principle that E-I based attractor networks can generate grid outputs even when spatial firing of many E and I cells in the network is not clearly grid-like, the extent to which these networks can account for additional details of experimental observations, for example weak periodic patterns in the spatial autocorrelation of the firing fields of some PV interneurons (cf. Buetfering et al., 2014, Figure 4a), is not yet clear. Our results are consistent with local synaptic connections, in addition to those between E cells and I cells, having important functional roles. For example addition of synapses between interneurons to E-I networks causes an overall increase in the frequency of gamma activity and in the stability of grid firing. Nevertheless, we find that in these modified networks moderate noise still enables variation in gE and gI to tune gamma oscillations independently from grid firing.\n\nAn intriguing aspect of our results is that they suggest novel approaches to suppressing seizures and to promoting normal cognitive function. Seizures have previously been suggested to result from deficits in inhibition or from alterations in intrinsic excitability of neurons (Lerche et al., 2001; Treiman, 2001). We show that seizures can be induced when these properties are held constant simply by reducing levels of noise within a circuit. A future experimental challenge for dissecting the contribution of intrinsic noise to seizures will be to target biological noise sources. In the brain noise arises from ion channel gating and from background synaptic activity. It is therefore difficult to manipulate noise sources without also affecting intrinsic excitability or excitation-inhibition balance. However, it may be feasible to add noise to circuits through transcranial magnetic stimulation (Ruzzoli et al., 2010). In this case our simulations predict that addition of noise may restore epileptic circuits to normal activity. This mechanism may explain why focal electrical stimulation of the entorhinal cortex in patients with seizures leads to an enhancement of memory performance (Suthana et al., 2012).\n\nWhile correlations between gamma oscillations and various cognitive and pathological brain states are well established, the proposed computational roles of gamma oscillations have been difficult to reconcile with rate-coded representations with which they co-exist. We were able to address this issue directly by analyzing a circuit in which gamma oscillations and rate-coded computations arise from a shared mechanism. Rather than gamma serving as an index of rate-coded computation, we find instead that there is a substantial parameter space across which rate-coded computation is stable, while the amplitude and frequency of theta-nested gamma oscillations varies. Our analysis leads to several new and testable predictions. First, tuning of recurrent synaptic connections could be used to modify gamma oscillations without affecting rate-coded computation. If multiple networks of the kind we simulate here correspond to grid modules providing input to downstream neurons in the hippocampus (Stensola et al., 2012), then adjusting gE or gI would alter gamma frequency with minimal effect on the grid firing pattern of each module. If the downstream neurons integrate input at the gamma time scale, then this should lead to re-mapping of their place representation in the absence of any change in either the strength of their synaptic inputs or the information they receive from upstream grid cells. Adjustment of gE and gI could be achieved dynamically through actions of neuromodulators (Marder, 2012), or on slower developmental time scales (Widloski and Fiete, 2014). Second, subtle differences in gamma could be a sensitive index of network pathology at stages before deficits in rate coded computation are apparent. If cognitive deficits in psychiatric disorders reflect a failure of rate coded computation, then our analysis predicts that a change in noise within a circuit, in addition to synaptic modification, may be necessary for deficits to emerge. From this perspective it is intriguing that seizure phenotypes are often associated with disorders such as autism (Deykin and MacMahon, 1979). Alternatively, cognitive deficits may result from a failure to coordinate gamma frequency synchronization of circuits that converge on downstream targets. In this case we expect cognitive deficits to be phenocopied by manipulations that affect gamma frequency or power without influencing rate-coded computations (Sigurdsson et al., 2010; Spellman and Gordon, 2014).\n\nIn conclusion, our systematic exploration of three dimensions of parameter space (gE, gI and intrinsic noise) illustrates the complexity of relationships between rate-coded computation, gamma frequency oscillations and underlying cellular and molecular mechanisms. Our results highlight the challenges in straightforward interpretation of experiments in which these parameters are correlated to one another, (cf. Wang and Krystal, 2014). While there are parallels to investigations of pace-making activity in invertebrate circuits (Marder and Taylor, 2011), which demonstrate that many parameter combinations can account for higher order behavior, there are also critical differences in that the models we describe account for multiplexing of rate-coded computation and oscillatory activity, while the number of neurons and connections in the simulated circuit is much larger. Future experimentation will be required to test our model predictions for unexpected beneficial roles of noise and for control of gamma oscillations independently from grid firing by modulating the strength of excitatory and inhibitory synaptic connections.\n\n## Materials and methods\n\nThe model comprised a network of exponential integrate and fire neurons (Fourcaud-Trocm\u00e9 et al., 2003) implemented as a custom-made module of the NEST simulator (Gewaltig and Diesmann, 2007). The network investigated in the majority of simulations (Figures 1\u20136) is modified from that in Pastoll et al. (2013) and consists of excitatory (E) and inhibitory (I) populations of neurons that were arranged on a twisted torus with dimensions of 34 \u00d7 30 neurons. In networks where connection strengths were generated probabilistically instead of in an all-to-all way, the synaptic weights from E to I cells and vice versa were constant, while the probability of connection between the pre- and post-synaptic neuron was drawn according to Figure 1B. In addition, some networks also included direct uniform recurrent inhibition between I cells (Figure 7; referred to as E-I-I networks) or direct structured recurrent excitation between E cells (Figure 7\u2014figure supplements 6\u201310). When recurrent excitation was present, synaptic weights between E cells followed the connectivity profile in which the strongest connection was between cells that were close to each other in network space (Figure 1B) and the weights between E and I cells were generated either according to synaptic profiles from Figure 1B (Figure 7\u2014figure supplements 6\u20139) or the E-I connectivity was uniform with a probability of connection of 0.1 (Figure 7\u2014figure supplement 10). E and I cells also received the theta current drive which was the sum of a constant amplitude positive current and a current with sinusoidal waveform (8 Hz). The constant component of the drive was required to activate the circuit, while the theta drive frequency was chosen to reflect the frequency of theta oscillations in behaving animals. The amplitude (cf. Appendix 1) was chosen to produce theta modulation of I cell firing similar to that observed in behaving animals (cf. Chrobak and Buzs\u00e1ki, 1998) and ex-vivo models of theta-nested gamma activity (cf. Pastoll et al., 2013). In order to oppose drift of the activity bump in networks that simulated exploration of the arena E cells received input from cells with place-like firing fields simulated as Poisson spiking generators with their instantaneous firing rate modeled as a Gaussian function of the animal position. Full details of the connectivity and network parameters are in Appendix 1.\n\nIn all simulations the networks were parameterized by the standard deviation of noise (\u03c3) injected independently into each E and I cell and by synaptic scaling parameters (gE and gI). Noise was sampled from a Gaussian distribution with standard deviation either set to \u03c3 = 0, 150 or 300 pA, or alternatively in the range of 0\u2013300 pA in steps of 10 pA (Figures 2H, 3H). The peaks of the synaptic profile functions (Figure 1B) were determined by the gE and gI parameters that appropriately scaled the maximal conductance values of the excitatory and inhibitory connections respectively.\n\nGridness scores were estimated by simulating exploration in a circular arena with a diameter of 180 cm. For each value of gE and gI the simulations consisted of two phases. In the first phase, animal movement with constant speed and direction (vertically from bottom to top) was simulated in order to calibrate the gain of the velocity input to achieve 60 cm spacing between grid fields in the network. In the second phase, the calibrated velocity input gains were used during a simulation of realistic animal movements with duration of 600 s (Hafting et al., 2005). Each simulation was repeated 1\u20134 times. For each trial, gridness score was then estimated from an E or I cell located at position (0, 0) on the twisted torus. In simulations where interneurons received uncorrelated spatial inputs (Figure 2\u2014figure supplement 4), gridness scores were estimated from 100 randomly selected E and I cells on the twisted torus.\n\nFor the analysis of bump attractor properties and gamma oscillations a separate set of simulations were run. For each value of gE, gI and noise level, there were five trials of 10 s duration during which the velocity and place cell inputs were deactivated. For each trial spiking activity of all cells was recorded. In addition, inhibitory synaptic currents of 25 randomly selected E cells were saved and used for further analysis.\n\nThe strength and frequency of gamma oscillations were estimated from the inhibitory synaptic currents recorded from E cells. The currents were first band-pass filtered between 20 and 200 Hz. For each trace, its autocorrelation function was computed and the first local maximum was detected using a peak detection algorithm which was based on calculating the points in the autocorrelation function where the first difference of the signal changed sign from positive to negative and thus approximated the points where the first derivative was zero and the second derivative was negative. The strength and frequency of gamma oscillations was estimated from the correlation value and lag at the position of the first local maximum respectively.\n\nProperties of bump attractors were estimated by fitting symmetric Gaussian functions onto successive snapshots of firing rates of each cell in the E population. For each snapshot this procedure yielded the position of the bump center and its width. The probability of bump formation was then estimated as a proportion of population-activity snapshots that were classified as bump attractors, that is, those fitted Gaussian functions whose width did not exceed the shorter side of the twisted torus. Other properties of bump attractors were estimated by analyzing successive positions of the bump attractor centers. Action potential raster plots of E and I populations (Figure 5A\u2013C, Figure 5\u2014figure supplement 1 and Figure 7\u2014figure supplement 10) show neuron indices that are flattened in a row-wise manner with respect to the two-dimensional twisted torus. Data points with white color in Figure 5D,E and Figure 5\u2014figure supplement 1A have been excluded from analysis since the maximal firing rate of E cells exceeded 500 Hz/2 ms window.\n\nThe calculation of the maximal information coefficient (MIC) for the relationship between gridness score, gamma and bump scores was estimated by applying the MIC measure using the minepy package (Albanese et al., 2013). Calculations of spatial information were carried out according to (Skaggs et al., 1996). Spatial sparsity was calculated by following the procedure outlined in (Buetfering et al., 2014). All other data analysis and simulations were performed in Python.\n",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "fcc490db-86ac-49b5-ae41-57590d3e73cd",
+      "submission_id": "f132787d-78e3-4c14-a1d7-8ed075540b1a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, University Health Network , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06444.043](https://doi.org/10.7554/eLife.06444.043)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for choosing to send your work entitled \u201cNoise promotes independent control of gamma oscillations and grid firing within a recurrent attractor network\u201d for consideration at eLife. Your full submission has been evaluated by Eve Marder (Senior editor) and three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the decision was reached after discussions between the reviewers. Based on our discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife at this time.\n\nWhile all the reviewers felt that the work was intriguing and could be of interest to the gamma oscillation, noise and grid cell community, there was concern that the present model was not consistent with existing experimental data. Specifically, discrepancies regarding inhibitory cell connectivity and recent experimental work (Buetfering et al., 2014) need to be addressed. It was felt that this would require re-doing and/or performing additional simulations to determine whether results remained the same. Further detailed comments for consideration are provided below. While you may choose to resubmit a revised manuscript, please note that substantial progress to address the reviewers' concerns is required for a subsequent review to be considered.\n\nReviewer #1:\n\nThe authors study the noise-sensitivity of a model previously introduced in a Neuron paper. The connectivity is different from other models for grid cells because there is no recurrent excitation; rather the stellate cells interact via inhibitory cells. To obtain nice oscillations it is helpful that cells have similar firing rates, however to encode information in the level of activity it is necessary that cells have different firing rates. The authors determine under what conditions both can be achieved simultaneously and find that there is an optimal noise level. The mechanism described bears some resemblance to study of an interneuron network by Tiesinga and Jose (2000) wherein noise reduces the effects of heterogeneity in firing rate on the level of gamma synchronization and increases the range of conductances for which oscillations are obtained, but at the price of neurons not firing on each cycle, similar to the results shown in the manuscript. The results are nice and I found the paper interesting.\n\nIn Figures 2 and 4 place fields are shown. I presume they are from E cells. What do the place fields for I cells look like? Does this conform to experimental data?\n\nFrom the Neuron paper I gather that there is no recurrent excitation, but what is the evidence for the absence of mutual inhibition?\n\nThe neurons are connected all to all. Would an actual stochastic connectivity according to a probability that is scaled to the conductance pattern shown in Figure 1B, also work and provide the appropriate noise level?\n\nThe authors focus on varying synaptic strength gI and gE, which shows the robustness of oscillations/attractor states, but I would expect that synaptic strength of the network in vivo would not vary that much over time, or could that happen through synaptic plasticity effects? It would be nice to discuss the relevance of the conductance range investigated.\n\nReviewer #2:\n\nI have only one major comment. This work is largely based on this lab's prior finding that layer II stellate cells do not show recurrent connectivity. This was a problem for standard attractor model connectivity, so the authors conceived the E-I-E attractor model. I think this is great. But, it remains possible that layer II pyramidal cells do show recurrent connectivity, which would support the standard attractor models. There is now controversy which cell types correspond to grid cells, and thus far the published (recent Neuron paper from Brecht's lab) and unpublished (David Roland's poster at SfN from the Moser lab) data suggest that both cell types in layer II are grid cells. Since pyramidal cells might/probably show recurrent connectivity, I would like to know if the same principles about noise emphasized by this paper would also apply to more standard E\u2013E attractor models. I wouldn't ask the authors to explicitly model this, but do the authors have any insight about this that they could add to the Discussion? This is especially relevant to their very broad discussion about the beneficial role of noise in neural computation in general and the protective role of noise against seizures. Most cortical circuits have recurrent excitatory connectivity. Perhaps the authors could address more standard E\u2013E attracter that contains global inhibition in their discussion.\n\nReviewer #3:\n\nThe authors created a recurrent attractor network, and investigated how noise affected synaptic activity at gamma frequencies and grid firing. Their recurrent attractor network incorporates E-I-E connectivity to produce grid firing through a velocity-dependent update of network attractor states, and also produce theta-nested gamma frequencies. They found that noise can increase the range of synaptic strengths with which gamma activity and grid computations are produced, and that synaptic gamma frequency and amplitude can be modulated independently from the grid firing.\n\nIn general, the manuscript was well-written, and the results logically follow from their model. However, fundamental questions about the model itself are important to consider. Recently, Buetfering and colleagues found that parvalbumin-positive (PV+) interneurons in the medial entorhinal cortex (MEC) integrate input form grid cells with various phases, and exhibited low spatial sparsity and no spatial periodicity (Buetfering et al., 2014. Nat Neurosci 17(5):710\u2013718.). This argues against a scenario in which fast-spiking interneurons mediate grid cell phase-dependent recurrent inhibition in the MEC \u2013 a necessary component of the authors' recurrent attractor network model, where the activity bump in the E-cell population is reflected by an inverted bump in I-cell population activity. This discrepancy needs to be addressed.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \u201cNoise promotes independent control of gamma oscillations and grid firing within recurrent attractor networks\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and two additional reviewers.\n\nThe manuscript has been significantly improved and only minor revisions are required. Once you have addressed these trailing issues, the manuscript should be acceptable without further review.\n\nReviewer #1 Minor Comments:\n\nI have one minor question, in their new Figure 2, they show unimodal spatial autocorrelation images of the I cells. This does occur in the Buetfering paper Figure 4A, but there are also a few with a weak periodic pattern (lower right panel of Figure 4A, grid score 0.18). Can this be found in the simulations as well?\n\nReviewer #2 (General assessment and major comments (Required)):\n\nThe authors responded to my comments adequately. In addition to the initial goal of exploring conductance parameters from E-I and I-E, the manuscript now provides substantially additional simulations to support E-I-E attractor models in general.\n\nIn their rebuttal the authors defend against the criticism that experimental data has not shown grid firing fields in inhibitory neurons. This criticism manifests from Buettfering et al., 2014 who report that PV interneurons do not show grid firing patterns. The authors have completed additional analyses and expanded their discussion to argue that these experimental data are no inconsistent with E-I models. (1) I cells in their model are weakly tuned grid cells (often below the gridness threshold used by Buettfering). (2) New simulations show that I cells show less grid-like activity when they are connected to uncorrelated grid cells. (3) The authors point out that Buetfering et al., 2014 only examine PV interneurons, and thus, other interneurons could exhibit grid firing fields. Overall I find these arguments convincing (especially #2), which fuel the debate about the structure of plausible E-I models and lead to new predictions (non-spatially correlated input to I cells, and/or other interneuron classes show grid properties). Close examination of experimental data show clear grids and not-so-clear grids (Krupic, Burgess, and O'Keefe, 2012) which may to correspond to firing on different theta phases (Newman and Hasselmo, 2014), similar to many interneuron classes in CA1 of the hippocampus.\n\nThe authors add I\u2013I connectivity, consistent with their experimental data, and the model is robust. This suggestion and implementation has strengthened the manuscript.\n\nMy concern about E\u2013E models has been addressed. While I do believe E\u2013E models are still possible the authors correctly argue that this issue is far from settled. We do not yet have a clear understanding of MEC microcircuits, especially intralaminar connections that may or may not be needed for grid cell generation. However, the authors add additional simulations of E-E-I models, which provide similar results to the E-I models.\n\nReviewer #3:\n\nOverall, we think that the authors have addressed our concerns. In particular, the additional simulations and discussions about how their findings relate to Buetfering et al. (2014), examining the effect of recurrent inhibition (I\u2013I) has made the paper much stronger, and tying their results into some experimentally testable predictions.\n\nThe general results showing how different mechanisms could control grid activity and gamma oscillations are interesting, although a bit more of an explanation of the precise mechanisms of their gamma oscillation is needed (i.e., first paragraph of Discussion).\n",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1c0c2460-6359-4428-b850-0fd7d5363127",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C1",
+      "claim": "Cognitive processes are mediated by computations in neural circuits and are often associated with gamma frequency oscillations in circuit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognitive processes are mediated by computations in neural circuits and are often associated with gamma frequency oscillations in circuit activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the relationship between cognitive processes, neural computations, and gamma oscillations, representing established knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "5f76bf30-5bae-461f-a595-a46c61efe9c2",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C2",
+      "claim": "Gamma activity and cognitive performance often co-vary within tasks and between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma activity and cognitive performance often co-vary within tasks and between individuals, while cognitive deficits in psychiatric disorders such as autism and schizophrenia are linked to altered gamma frequency network dynamics (Uhlhaas and Singer, 2012; Spellman and Gordon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Uhlhaas and Singer, 2012 and Spellman and Gordon, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "74e746f4-8422-4649-93c4-fc5ce15783b0",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C3",
+      "claim": "Cognitive deficits in psychiatric disorders such as autism and schizophrenia are linked to altered gamma frequency network dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma activity and cognitive performance often co-vary within tasks and between individuals, while cognitive deficits in psychiatric disorders such as autism and schizophrenia are linked to altered gamma frequency network dynamics (Uhlhaas and Singer, 2012; Spellman and Gordon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Uhlhaas and Singer, 2012 and Spellman and Gordon, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "fe0a5289-facf-4d91-afa3-98e59273e659",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C4",
+      "claim": "Psychiatric disorders are linked to changes in the efficacy of excitatory glutamatergic and inhibitory GABAergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Such disorders are also linked to changes in the efficacy of excitatory glutamatergic and inhibitory GABAergic synapses (Rubenstein and Merzenich, 2003; Lewis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rubenstein and Merzenich, 2003 and Lewis et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "c21e509e-f46b-47ab-ab59-596d51fd7c8d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C5",
+      "claim": "Rate coded computations and gamma oscillations arise from shared circuit mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence that rate coded computations and gamma oscillations arise from shared circuit mechanisms could be interpreted to support this view (Lundqvist et al., 2010; Pastoll et al., 2013), which predicts that when synaptic properties of a circuit are altered then gamma activity and the output of the rate-coded computation will co-vary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lundqvist et al., 2010 and Pastoll et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "5b904c4a-b6fe-4de3-9153-d134f36f359d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C6",
+      "claim": "The rate-coded firing of grid cells in the MEC is a well-studied feature of neural circuits for spatial cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate-coded firing of grid cells in the MEC is a well-studied feature of neural circuits for spatial cognition (Moser and Moser, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moser and Moser, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "77b5098d-ba16-4805-8882-10cb8981ba2e",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C7",
+      "claim": "During exploration of an environment individual grid cells are active at multiple locations that together follow a hexagonal grid-like organization.",
+      "claim_type": "EXPLICIT",
+      "source": "During exploration of an environment individual grid cells are active at multiple locations that together follow a hexagonal grid-like organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of grid cells based on experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "9712ff0f-eb94-432b-a32f-715d4f36dcf5",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C8",
+      "claim": "MEC circuits generate periods of activity in the high gamma frequency range (60\u2013120 Hz) nested within a slower theta (8\u201312 Hz) frequency network oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time MEC circuits generate periods of activity in the high gamma frequency range (60\u2013120 Hz) nested within a slower theta (8\u201312 Hz) frequency network oscillation (Chrobak and Buzs\u00e1ki, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chrobak and Buzs\u00e1ki, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "8770ee1e-723e-4357-9110-45d72b9db923",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C9",
+      "claim": "Analysis of spatial correlations in grid firing, of manipulations to grid circuits, and recording of grid cell membrane potential in behaving animals, collectively point towards continuous two-dimensional network attractor states as explanations for grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of spatial correlations in grid firing, of manipulations to grid circuits, and recording of grid cell membrane potential in behaving animals, collectively point towards continuous two-dimensional network attractor states as explanations for grid firing (Bonnevie et al., 2013; Domnisoru et al., 2013; Schmidt-Hieber and H\u00e4usser, 2013; Yoon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bonnevie et al., 2013; Domnisoru et al., 2013; Schmidt-Hieber and H\u00e4usser, 2013; Yoon et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "750c6e82-27b9-4384-8207-314a683a8be7",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C10",
+      "claim": "In layer II of the MEC, stellate cells that project to the dentate gyrus of the hippocampus are the major population of excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In layer II of the MEC, which has the highest known density of grid cells (Sargolini et al., 2006), stellate cells that project to the dentate gyrus of the hippocampus are the major population of excitatory neurons (Gatome et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sargolini et al., 2006 and Gatome et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "33792274-5fa6-432b-8e21-17a3ed0c211a",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C11",
+      "claim": "Excitatory neurons in layer II of the MEC do not appear to influence one another directly but instead interact via intermediate inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These excitatory (E) neurons do not appear to influence one another directly but instead interact via intermediate inhibitory (I) neurons (Dhillon and Jones, 2000; Couey et al., 2013; Pastoll et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dhillon and Jones, 2000; Couey et al., 2013; Pastoll et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "d481d48b-c431-4550-97d4-31f58652e6fe",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C12",
+      "claim": "Models that explicitly incorporate recurrent E-I-E connectivity can account for grid firing through velocity-dependent update of network attractor states.",
+      "claim_type": "EXPLICIT",
+      "source": "Models that explicitly incorporate this recurrent E-I-E connectivity can account for grid firing through velocity-dependent update of network attractor states (Pastoll et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pastoll et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "95fa7e1b-f593-4752-87cf-67f3ec0f35fc",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C13",
+      "claim": "When E-I-E models are implemented with excitable spiking neurons they also account for theta-nested gamma frequency network oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "When these models are implemented with excitable spiking neurons they also account for theta-nested gamma frequency network oscillations (Pastoll et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pastoll et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "424e60c4-8a07-4126-9cad-dc9de1371bdd",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C14",
+      "claim": "Moderate intrinsic noise massively increases the range of synaptic strengths supporting gamma oscillations and grid computation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that moderate intrinsic noise massively increases the range of synaptic strengths supporting gamma oscillations and grid computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "a1714db0-d2ac-4dd0-824f-8abfb8965c9f",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C15",
+      "claim": "With moderate noise, variation in excitatory or inhibitory synaptic strength tunes the amplitude and frequency of gamma activity without disrupting grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "With moderate noise, variation in excitatory or inhibitory synaptic strength tunes the amplitude and frequency of gamma activity without disrupting grid firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "57168d77-8e08-4270-a60c-9b23cfa645fc",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C16",
+      "claim": "The beneficial role for noise results from disruption of epileptic-like network states.",
+      "claim_type": "EXPLICIT",
+      "source": "This beneficial role for noise results from disruption of epileptic-like network states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "33050a4d-abe7-44a2-8800-78434bf355b3",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C17",
+      "claim": "Moderate noise promotes independent control of multiplexed firing rate- and gamma-based computational mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, moderate noise promotes independent control of multiplexed firing rate- and gamma-based computational mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "2ef5f00e-31bf-437c-ab05-8c47561938f5",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C18",
+      "claim": "In the absence of noise grid firing is supported in relatively restricted regions of parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of noise grid firing is supported in relatively restricted regions of parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "9f8b585b-9c08-40e0-9053-5920fbf59cf8",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C19",
+      "claim": "Optimal levels of noise promote grid firing by reducing the sensitivity of grid computations to the strength of recurrent synaptic connections, particularly when inhibition is relatively strong and excitation is weak.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal levels of noise, which produce single cell membrane potential fluctuations of a similar amplitude to experimental observations (Domnisoru et al., 2013; Pastoll et al., 2013; Schmidt-Hieber and H\u00e4usser, 2013), promote grid firing by reducing the sensitivity of grid computations to the strength of recurrent synaptic connections, particularly when inhibition is relatively strong and excitation is weak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2 and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "bf8433ec-dd21-4cf5-8ec4-f41a1ff60d97",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C20",
+      "claim": "In networks that generate grid firing fields in the presence of moderate noise, I cell firing fields have a much lower spatial information content and spatial sparsity than the corresponding E cell firing fields.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in networks that we evaluate here in which E cells have grid firing fields in the presence of moderate noise, I cell firing fields also have a much lower spatial information content and spatial sparsity than the corresponding E cell firing fields (E cells: spatial sparsity 0.788 \u00b1 0.061, spatial information: 1.749 \u00b1 0.32 bits/spike; I cells: spatial sparsity 0.239 \u00b1 0.018, spatial information 0.243 \u00b1 0.024 bits/spike; p < 10\u221216 for comparisons of both spatial sparsity and information; paired t-test; data range is indicated as mean \u00b1 standard deviation) (Figure 2A\u2013C and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "7e46f71a-8b82-4cc4-be9b-b9732e623478",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C21",
+      "claim": "Spatial autocorrelograms of simulated I cell firing fields do not contain the six hexagonally organized peaks that are characteristic of grid fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial autocorrelograms of simulated I cell firing fields also do not contain the six hexagonally organized peaks that are characteristic of grid fields (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual inspection of autocorrelograms in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "4506dcc2-534e-47aa-80e2-eb812b770c76",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C22",
+      "claim": "I cell spatial autocorrelograms produce positive grid scores (0.39 \u00b1 0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, I cell spatial autocorrelograms produce positive grid scores (0.39 \u00b1 0.16; Figure 2\u2014figure supplement 3), although these are reduced compared to scores for the E cells in the same networks (E cells: 0.796 \u00b1 0.157; p < 10\u221216; paired t-test; mean \u00b1 SD) and in many networks are below the threshold considered previously to qualify as grid like (cf. Figure 4B of Buetfering et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "05ced972-c1d1-4ebf-a0db-6364c4ee6183",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C23",
+      "claim": "The dependence of I cell spatial firing on gE, gI and noise appears to be similar to that of E cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When we evaluated the dependence of I cell spatial firing on gE, gI and noise, it appeared to be similar to that of E cells (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "863028a7-59ab-4c57-9e1b-eb3447d024c7",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C24",
+      "claim": "In E-I networks with uncorrelated spatial input to each I cell, E cells had grid scores of 0.57 \u00b1 0.25, spatial sparsity of 0.78 \u00b1 0.03 and spatial information of 1.69 \u00b1 0.18 bits/spike.",
+      "claim_type": "EXPLICIT",
+      "source": "In these simulations E cells had grid scores of 0.57 \u00b1 0.25, spatial sparsity of 0.78 \u00b1 0.03 and spatial information of 1.69 \u00b1 0.18 bits/spike, whereas I cells had grid scores of 0.16 \u00b1 0.2 (p < 10\u221216, paired t-test), spatial sparsity of 0.21 \u00b1 0.01 (p < 10\u221216, paired t-test) and spatial information of 0.2 \u00b1 0.01 bits/spike (p < 10\u221216, paired t-test; range of all data sets is mean \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data from simulations with uncorrelated spatial input to I cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "25e51369-9e26-4b0d-8441-fe354c68d4e5",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C25",
+      "claim": "In E-I networks with uncorrelated spatial input to each I cell, I cells had grid scores of 0.16 \u00b1 0.2, spatial sparsity of 0.21 \u00b1 0.01 and spatial information of 0.2 \u00b1 0.01 bits/spike.",
+      "claim_type": "EXPLICIT",
+      "source": "In these simulations E cells had grid scores of 0.57 \u00b1 0.25, spatial sparsity of 0.78 \u00b1 0.03 and spatial information of 1.69 \u00b1 0.18 bits/spike, whereas I cells had grid scores of 0.16 \u00b1 0.2 (p < 10\u221216, paired t-test), spatial sparsity of 0.21 \u00b1 0.01 (p < 10\u221216, paired t-test) and spatial information of 0.2 \u00b1 0.01 bits/spike (p < 10\u221216, paired t-test; range of all data sets is mean \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative data from simulations with uncorrelated spatial input to I cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "0bb4422c-760d-4558-aaf6-4221a522ad74",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C26",
+      "claim": "Grid firing by E cells in E-I networks is relatively robust to disruption of the rotational symmetry of I cell firing fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, spatial firing of I cells has a similar dependence on noise, gE and gI to grid cells, conventional indices of spatial firing are nevertheless much lower for I cells in E-I networks compared to E cells, and grid firing by E cells in E-I networks is relatively robust to disruption of the rotational symmetry of I cell firing fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulations with uncorrelated spatial input to I cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "19f8b448-f5f8-469f-9543-3ce7aaef7f38",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C27",
+      "claim": "Attractor circuit computations that generate grid firing fields require specific tuning of gE and gI.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these simulations demonstrate that attractor circuit computations that generate grid firing fields require specific tuning of gE and gI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "d3cf5c75-5af3-4bc9-822c-363c2a0a440d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C28",
+      "claim": "In the absence of noise, gamma frequency activity only occurred for a narrow range of gI and gE.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of noise gamma frequency activity only occurred for a narrow range of gI and gE (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "93c56927-3bf8-49cd-83ce-bb04aaa46123",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C29",
+      "claim": "Following addition of moderate noise the region of parameter space that supports gamma activity was massively expanded.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, following addition of moderate noise the region of parameter space that supports gamma activity was massively expanded (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "40273214-a739-4d3f-b81a-cbf9df3c2954",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C30",
+      "claim": "Within the parameter space supporting gamma activity, the amplitude of gamma increased with increasing inhibition, whereas the frequency was reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this space, the amplitude of gamma increased with increasing inhibition, whereas the frequency was reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "bde8c0ac-c3c3-4763-92e2-72dc06d19a90",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C31",
+      "claim": "As noise is increased further the amplitude and frequency of gamma oscillations are reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "As noise is increased further the amplitude and frequency of gamma oscillations are reduced (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "2728ef10-1fd5-4390-b2b7-78d455856f7a",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C32",
+      "claim": "There is no strong linear relationship between gamma amplitude or gamma frequency and grid score.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not find any evidence for strong linear relationships between gamma amplitude or gamma frequency and grid score (R2 < 0.12 for all comparisons), while gamma amplitude and frequency provided only modest amounts of information about grid scores (0.27 < MIC < 0.33 and 0.27 < MIC < 0.37 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of the relationship between gamma and grid scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "645f5a67-8d0a-4410-87e9-cfad7da98ae5",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C33",
+      "claim": "Neither the frequency nor the power of gamma appears to be a good predictor of grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neither the frequency nor the power of gamma appears to be a good predictor of grid firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the relationship between gamma and grid scores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "bdea3b3f-7276-4f1c-a7ab-a0decdf3669e",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C34",
+      "claim": "Circuits generating robust grid fields (grid score >0.5) can generate almost the complete observed range of gamma amplitudes (0.02 < autocorrelation peak < 0.59) and frequencies (31 Hz < frequency < 102 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "When we considered only regions of parameter space that generate robust grid fields (grid score >0.5), we found circuits generating almost the complete observed range of gamma amplitudes (0.02 < autocorrelation peak < 0.59) and frequencies (31 Hz < frequency < 102 Hz) (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "22c7eab4-52c4-4d3a-8aa1-7169a955d627",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C35",
+      "claim": "Variation of synaptic strength across the region of E-I space that supports grid firing can be used to tune the properties of gamma activity while maintaining the ability of the network to generate grid fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, variation of synaptic strength across this region of E-I space can be used to tune the properties of gamma activity while maintaining the ability of the network to generate grid fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "9a99f51a-8f04-46c4-8643-89d62a00f441",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C36",
+      "claim": "For deterministic simulation of points in parameter space that are able to generate grid patterns, a single stable bump of activity emerged over the first 2.5 s of simulated time.",
+      "claim_type": "EXPLICIT",
+      "source": "For deterministic simulation of the points in parameter space considered in Figure 2Aa, which are able to generate grid patterns, we found that a single stable bump of activity emerged over the first 2.5 s of simulated time (Figure 4Aa).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4Aa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "ab2c5022-88f4-43bd-a3c8-b559aa5013e6",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C37",
+      "claim": "For deterministic simulation of points in parameter space that did not generate grid patterns, a single stable bump fails to emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for deterministic simulation of the point considered in 2Ab, which in deterministic simulations did not generate grid patterns, a single stable bump fails to emerge (Figure 4Ab).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4Ab.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "a5dbba01-12d8-4e5f-9a43-3e95fcdaed9a",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C38",
+      "claim": "When gI is low there is a high probability of bump formation as well as grid firing, whereas when gI is high the probability of both is reduced in deterministic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification across the wider space of gE and gI values (see 'Materials and methods') indicated that when gI is low there is a high probability of bump formation as well as grid firing, whereas when gI is high the probability of both is reduced (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "65d8703b-a905-40ca-bd6c-87b0a3e7201d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C39",
+      "claim": "For circuits with intrinsically noisy neurons activity bumps emerged in the first 1.25 s following initialization of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the deterministic condition, for circuits with intrinsically noisy neurons activity bumps emerged in the first 1.25 s following initialization of the network (Figure 4Ac\u2013e) and the area of parameter space that supported bump formation was much larger than that supporting grid firing (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4Ac-e and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "31c6163c-9e9f-45f0-bbc8-69d1179b9af4",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C40",
+      "claim": "Bump formation is necessary, although not sufficient for grid formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting gridness scores as a function of bump probability indicated that bump formation was necessary, although not sufficient for grid formation (Figure 4C), while plotting the first autocorrelation peak as a function of bump probability supported our conclusion that grid computation and gamma activity are not closely related (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "0fd2989f-e2d5-4197-9d55-a3dc89d63f6a",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C41",
+      "claim": "Noise promotes formation of attractor bumps in network activity and in deterministic simulations the failure of the circuit to generate attractor states largely accounts for disrupted grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that noise promotes formation of attractor bumps in network activity and in deterministic simulations the failure of the circuit to generate attractor states largely accounts for disrupted grid firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "d7a59068-9d3a-4cde-9cf8-46dda76f81e3",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C42",
+      "claim": "In noisy networks the presence of low grid scores for networks with high bump scores is explained by sensitivity of these network configurations to noise-induced drift.",
+      "claim_type": "EXPLICIT",
+      "source": "In noisy networks the presence of low grid scores for networks with high bump scores (Figure 4C) is explained by sensitivity of these network configurations to noise-induced drift.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the data shown in Figure 4C and Figure 4Ac-e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "04607ebe-6bf1-4123-833f-6a4dfa146e89",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C43",
+      "claim": "Intrinsic noise has two opposing effects on bump formation: moderate noise promotes emergence of bumps and grids, while across all of parameter space noise reduces bump stability leading to deterioration of grids.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, intrinsic noise has two opposing effects on bump formation. For much of the parameter space we consider moderate noise promotes emergence of bumps and grids, while across all of parameter space noise reduces bump stability leading to deterioration of grids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "09c2e92a-154d-4611-8eb4-8ca27a9fb69f",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C44",
+      "claim": "In the absence of noise the network generates hyper-synchronous seizure-like states at the start of each theta cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined times of action potentials generated by all neurons in this circuit, we find that in the absence of noise the network generates hyper-synchronous seizure-like states at the start of each theta cycle (Figure 5A and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "76848d51-1e2f-488b-9cb4-edb494cc7070",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C45",
+      "claim": "When moderate noise is added to the circuit only a subset of E-cells are active on each theta cycle, forming an activity bump.",
+      "claim_type": "EXPLICIT",
+      "source": "When moderate noise is added to the circuit only a subset of E-cells are active on each theta cycle, forming an activity bump (Figure 5B and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "dc22c4e5-c6d5-44e9-a2e0-454a7bfc8d08",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C46",
+      "claim": "With increased noise there is a similar overall pattern of activity, but spike timing becomes more variable, causing the bumps to drift and reducing the degree of synchronization at gamma frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "With increased noise there is a similar overall pattern of activity, but spike timing becomes more variable, causing the bumps to drift and reducing the degree of synchronization at gamma frequencies (Figure 5C and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5C and Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "8092e047-0632-496b-b10c-537450c900d2",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C47",
+      "claim": "In the absence of noise epochs with highly synchronized activity were found for almost all combinations of gE and gI, whereas these seizure-like events were absent in simulations where noise was present.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that in the absence of noise epochs with highly synchronized activity were found for almost all combinations of gE and gI, whereas these seizure-like events were absent in simulations where noise was present (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "09c42043-e170-402b-b0cc-1d239d936840",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C48",
+      "claim": "For values of gE and gI where grid fields are present, the proportion of theta cycles having events with population-average rate >300 Hz was relatively low, indicating that seizure-like events are rare.",
+      "claim_type": "EXPLICIT",
+      "source": "For values of gE and gI where grid fields are present PE-rate > 300 was relatively low, indicating that seizure-like events are indeed rare (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "7be677f2-6728-42d1-9cd6-0d75ad3a4eb6",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C49",
+      "claim": "While grid firing is compatible with occasional seizure-like events, when seizure-like events occur on the majority of theta cycles then grid firing is prevented.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while grid firing is compatible with occasional seizure-like events, when seizure-like events occur on the majority of theta cycles then grid firing is prevented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "4e6d0084-f2b3-4336-a403-99234928be37",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C50",
+      "claim": "Moderate noise prevents emergence of seizure like states by disrupting synchronization of the attractor network by the shared theta frequency drive.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that moderate noise prevents emergence of seizure like states by disrupting synchronization of the attractor network by the shared theta frequency drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "38424936-94c8-4b03-974b-2a8318f98fd3",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C51",
+      "claim": "In networks with moderate noise theta drive promotes grid firing and enables a wide range of gamma frequencies to be generated without disrupting grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "In networks with moderate noise theta drive promotes grid firing and enables a wide range of gamma frequencies to be generated without disrupting grid firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "b08af9e8-3b64-4567-9372-17452dce3b70",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C52",
+      "claim": "In E-I-I networks, in the absence of noise, grid firing emerges across a much larger region of parameter space compared to E-I networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the resulting E-I-I networks, in the absence of noise, grid firing emerges across a much larger region of parameter space compared to E-I networks (Figure 7A, Figure 7\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7A and Figure 7\u2014figure supplements 1\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "fe9cf31a-2dcd-4fd8-88f8-6c65e4ebebe7",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C53",
+      "claim": "In E-I-I networks, as in E-I networks occasional seizure like activity was present across a wide range of gE and gI, and gamma frequency activity was largely absent in the absence of noise.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as in E-I networks occasional seizure like activity was present across a wide range of gE and gI (Figure 7\u2014figure supplement 5), and gamma frequency activity was largely absent (Figure 7D,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7D, G and Figure 7\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "0e83fe75-9736-443c-ae7d-67ff3e52dca1",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C54",
+      "claim": "Following addition of noise with standard deviation of 150 pA to E-I-I networks, grid firing was maintained, seizure like activity was abolished, and gamma like activity emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "Following addition of noise with standard deviation of 150 pA to E-I-I networks, grid firing was maintained, seizure like activity was abolished, and gamma like activity emerged (Figure 7B,E,H and Figure 7\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7B, E, H and Figure 7\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "89de7e31-836d-4855-9258-8dba88a2b171",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C55",
+      "claim": "Gamma activity had a higher frequency in E-I-I compared to E-I networks, with a greater proportion of the parameter space supporting gamma frequencies >80 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma activity had a higher frequency in E-I-I compared to E-I networks, with a greater proportion of the parameter space supporting gamma frequencies >80 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of gamma frequency data in E-I and E-I-I networks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "305a4bca-eb9f-491d-8b8a-59a6a7d4b948",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C56",
+      "claim": "E-I-I networks maintain the ability, in the presence of moderate noise, for variation in gE and gI to tune gamma oscillations without interfering with grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, E-I-I networks maintain the ability, in the presence of moderate noise, for variation in gE and gI to tune gamma oscillations without interfering with grid firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "554d86ab-d2c9-497e-8eee-be12af6ae2e1",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C57",
+      "claim": "While gamma oscillations and grid firing are both sensitive to the strength of excitatory and inhibitory connections, their relationship differs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that while gamma oscillations and grid firing are both sensitive to the strength of excitatory and inhibitory connections, their relationship differs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "049b4ec8-ee0b-45f0-bed6-295dc0e173d3",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C58",
+      "claim": "Gamma activity provides little information about grid firing or the presence of underlying network attractor states.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their underlying synaptic substrates are identical, gamma activity nevertheless provides little information about grid firing or the presence of underlying network attractor states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "c4395703-58d0-4bdc-a1dd-0c288680e1c8",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C59",
+      "claim": "Gamma activity is not a good predictor of rate-coded computation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, gamma activity is not a good predictor of rate-coded computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "826293b2-1081-431d-ac19-90a9648734f8",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C60",
+      "claim": "The range of E- and I- synaptic strengths that support gamma and grid firing is massively increased by moderate intrinsic noise through a mechanism involving suppression of seizure-like events.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we find the range of E- and I- synaptic strengths that support gamma and grid firing is massively increased by moderate intrinsic noise through a mechanism involving suppression of seizure-like events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in Figures 2, 3, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "e9767176-bfac-4590-b524-93a37cb2a5cf",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C61",
+      "claim": "In the presence of moderate noise differences in synaptic strength can tune the amplitude and frequency of gamma across a wide range with little effect on grid firing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of moderate noise differences in synaptic strength can tune the amplitude and frequency of gamma across a wide range with little effect on grid firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "98cfe541-0c3b-49f1-8f7a-41981a14ee28",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C62",
+      "claim": "The model comprises a network of exponential integrate and fire neurons implemented as a custom-made module of the NEST simulator.",
+      "claim_type": "EXPLICIT",
+      "source": "The model comprised a network of exponential integrate and fire neurons (Fourcaud-Trocm\u00e9 et al., 2003) implemented as a custom-made module of the NEST simulator (Gewaltig and Diesmann, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational implementation of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "2e8ffafc-5541-4c83-839c-3b66325d11d8",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "claim_id": "C63",
+      "claim": "The network consists of excitatory (E) and inhibitory (I) populations of neurons that were arranged on a twisted torus with dimensions of 34 \u00d7 30 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The network investigated in the majority of simulations (Figures 1\u20136) is modified from that in Pastoll et al. (2013) and consists of excitatory (E) and inhibitory (I) populations of neurons that were arranged on a twisted torus with dimensions of 34 \u00d7 30 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the network model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36bea7e7-dd7c-4b5c-86cf-d7d3a7d6dc95",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge linking cognitive processes to gamma oscillations and synaptic changes in psychiatric disorders, citing prior work suggesting shared circuit mechanisms for rate-coded computations and gamma oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 represent well-established background knowledge supported by appropriate citations to prior literature (Uhlhaas and Singer 2012, Spellman and Gordon 2014, Rubenstein and Merzenich 2003, Lewis et al. 2012, Lundqvist et al. 2010, Pastoll et al. 2013). These claims provide context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "d877115f-db51-42fd-a7d8-3caa3f20f41e",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes established properties of grid cells in the medial entorhinal cortex (MEC), including their hexagonal firing patterns, theta-nested gamma oscillations, attractor network mechanisms, and E-I-E circuit architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C13 summarize well-established experimental findings about grid cells and MEC circuits, supported by extensive citations (Moser and Moser 2013, Chrobak and Buzs\u00e1ki 1998, Bonnevie et al. 2013, Domnisoru et al. 2013, Schmidt-Hieber and H\u00e4usser 2013, Yoon et al. 2013, Sargolini et al. 2006, Gatome et al. 2010, Dhillon and Jones 2000, Couey et al. 2013, Pastoll et al. 2013). These provide essential background for the computational modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "b7cb334e-a6ea-42b3-83bf-7db13fe5dc7d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Moderate intrinsic noise massively increases the range of excitatory (gE) and inhibitory (gI) synaptic strengths that support grid firing, particularly when inhibition is strong and excitation is weak, while grid firing requires specific tuning of gE and gI in the absence of noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, C18, C19, and C27 are directly supported by systematic computational simulations shown in Figure 2. The data demonstrate a restricted parameter space for grid firing without noise (Figure 2D) that expands dramatically with moderate noise (\u03c3=150 pA, Figure 2E), particularly in regions with high gI and low gE. Statistical comparisons and quantitative metrics support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "bd8e2f8f-e951-49e5-a595-ee80f86cde6e",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Moderate intrinsic noise massively expands the parameter space supporting gamma oscillations, with gamma amplitude increasing and frequency decreasing as inhibition increases, while further increases in noise reduce both gamma amplitude and frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 are supported by data in Figure 3D-F showing gamma oscillation properties across the gE-gI parameter space at different noise levels. The narrow range supporting gamma without noise (Figure 3D) expands dramatically with moderate noise (Figure 3E), and the relationships between gI, gamma amplitude, and frequency are clearly demonstrated. Higher noise levels (Figure 3F) show reduced gamma activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "626f9803-96fd-4293-b2af-82c7062dd5df",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gamma oscillation amplitude and frequency are poor predictors of grid firing, with no strong linear relationship between them. However, circuits generating robust grid fields can produce a wide range of gamma frequencies and amplitudes, allowing independent tuning of gamma properties while maintaining grid computation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 and C57-C59 are supported by quantitative analyses showing weak correlations (R\u00b2<0.12) and modest mutual information (MIC<0.37) between gamma properties and grid scores (Figure 3G, Figure 3\u2014figure supplements 2-4). The data demonstrate that robust grid fields (score>0.5) can coexist with gamma frequencies from 31-102 Hz and a wide range of amplitudes, supporting the conclusion of independent control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "63c296b9-c9b1-4d8d-8149-775666ddafb1",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Noise promotes formation of stable activity bumps in network space, which are necessary but not sufficient for grid firing. In deterministic networks, failure to form bumps accounts for disrupted grid firing, while in noisy networks, excessive noise causes bump drift that degrades grid patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 are supported by systematic analysis of bump formation shown in Figure 4. The data demonstrate that deterministic networks fail to form bumps in high gI regions (Figure 4Ab, 4B), while moderate noise promotes bump formation (Figure 4Ac-e, 4B). The relationship between bump probability and grid scores (Figure 4C) confirms bumps are necessary but not sufficient. Drift analysis (Figure 4\u2014figure supplement 1) supports the dual role of noise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Moderate noise prevents seizure-like hypersynchronous states by disrupting synchronization of the attractor network by theta frequency drive. Without noise, networks generate seizure-like activity across most of the gE-gI parameter space, which prevents grid firing when occurring on the majority of theta cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 and C16 are strongly supported by data in Figure 5. Raster plots show hypersynchronous activity without noise (Figure 5A) that is abolished by moderate noise (Figure 5B). Quantification across parameter space (Figure 5D-E) demonstrates seizure-like events occur broadly without noise but are absent with noise. The relationship between seizure frequency and grid scores (Figure 5F) confirms that frequent seizures prevent grid firing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "ee309f51-13c2-48c5-bd7c-6215e5ae366d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In networks with moderate noise, theta drive promotes grid firing and enables generation of a wide range of gamma frequencies without disrupting grid firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by comparison of networks with and without theta drive (Figure 6). Networks without theta show reduced seizure activity (Figure 6A) but also reduced grid firing and a narrower range of gamma frequencies compared to networks with theta drive. The data demonstrate theta's beneficial role in noisy networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "9d4a7a07-56b9-4b68-b727-d5f6a8766504",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "E-I-I networks (with recurrent inhibition between interneurons) show a larger parameter space supporting grid firing without noise compared to E-I networks, but still exhibit seizure-like activity and lack gamma oscillations. Addition of moderate noise maintains grid firing, abolishes seizures, and produces higher frequency gamma oscillations (>80 Hz) while preserving the ability to tune gamma independently of grid firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by systematic comparison of E-I-I networks (Figure 7) with E-I networks (Figures 2-5). The data show expanded grid firing parameter space without noise (Figure 7A), presence of seizure activity (Figure 7\u2014figure supplement 5), and emergence of higher frequency gamma with moderate noise (Figure 7E, H). The preservation of independent gamma tuning is demonstrated across the parameter space.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "83222f10-e360-470c-872d-7d3176e3dd4d",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Inhibitory (I) cells in the simulated E-I networks have much lower spatial information content, spatial sparsity, and grid scores compared to excitatory (E) cells, with spatial autocorrelograms lacking clear hexagonal organization. Grid firing by E cells is relatively robust to disruption of I cell spatial firing patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 are supported by quantitative analysis of I cell firing properties (Figure 2A-C, Figure 2\u2014figure supplements 2-4). Statistical comparisons show highly significant differences (p<10\u207b\u00b9\u2076) between E and I cell spatial properties. Simulations with uncorrelated spatial input to I cells (Figure 2\u2014figure supplement 4) demonstrate that E cell grid firing can be maintained even when I cell spatial structure is disrupted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "e3b8eb84-adc4-4e90-9897-fbcadcc06e16",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Moderate intrinsic noise massively increases the range of excitatory and inhibitory synaptic strengths supporting both gamma oscillations and grid firing through suppression of seizure-like events, enabling independent control of multiplexed firing rate-based and gamma-based computational mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61, and C17 represent the main conclusions of the study, integrating findings from multiple analyses (Figures 2-5). The mechanism (seizure suppression) is demonstrated in Figure 5, the expanded parameter space is shown in Figures 2-3, and the independent control is established through weak correlations between gamma and grid properties (Figure 3G, supplements). This represents a synthesis of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    },
+    {
+      "id": "781c54d1-99e8-488d-a905-9dbd26fb8338",
+      "content_id": "21abe828-08a0-4725-84a7-18da0849ee21",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The computational model consists of exponential integrate-and-fire neurons implemented in NEST simulator, arranged on a twisted torus with dimensions of 34\u00d730 neurons for excitatory and inhibitory populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe the basic model architecture and are supported by the Materials and methods section and citations to the NEST simulator (Gewaltig and Diesmann, 2007) and exponential integrate-and-fire neurons (Fourcaud-Trocm\u00e9 et al., 2003). These are standard computational neuroscience methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:21:25.999725Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1c0c2460-6359-4428-b850-0fd7d5363127",
+      "result_id": "36bea7e7-dd7c-4b5c-86cf-d7d3a7d6dc95"
+    },
+    {
+      "claim_id": "5f76bf30-5bae-461f-a595-a46c61efe9c2",
+      "result_id": "36bea7e7-dd7c-4b5c-86cf-d7d3a7d6dc95"
+    },
+    {
+      "claim_id": "74e746f4-8422-4649-93c4-fc5ce15783b0",
+      "result_id": "36bea7e7-dd7c-4b5c-86cf-d7d3a7d6dc95"
+    },
+    {
+      "claim_id": "fe0a5289-facf-4d91-afa3-98e59273e659",
+      "result_id": "36bea7e7-dd7c-4b5c-86cf-d7d3a7d6dc95"
+    },
+    {
+      "claim_id": "c21e509e-f46b-47ab-ab59-596d51fd7c8d",
+      "result_id": "36bea7e7-dd7c-4b5c-86cf-d7d3a7d6dc95"
+    },
+    {
+      "claim_id": "5b904c4a-b6fe-4de3-9153-d134f36f359d",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "77b5098d-ba16-4805-8882-10cb8981ba2e",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "9712ff0f-eb94-432b-a32f-715d4f36dcf5",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "8770ee1e-723e-4357-9110-45d72b9db923",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "750c6e82-27b9-4384-8207-314a683a8be7",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "33792274-5fa6-432b-8e21-17a3ed0c211a",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "d481d48b-c431-4550-97d4-31f58652e6fe",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "95fa7e1b-f593-4752-87cf-67f3ec0f35fc",
+      "result_id": "d877115f-db51-42fd-a7d8-3caa3f20f41e"
+    },
+    {
+      "claim_id": "424e60c4-8a07-4126-9cad-dc9de1371bdd",
+      "result_id": "b7cb334e-a6ea-42b3-83bf-7db13fe5dc7d"
+    },
+    {
+      "claim_id": "a1714db0-d2ac-4dd0-824f-8abfb8965c9f",
+      "result_id": "b7cb334e-a6ea-42b3-83bf-7db13fe5dc7d"
+    },
+    {
+      "claim_id": "2ef5f00e-31bf-437c-ab05-8c47561938f5",
+      "result_id": "b7cb334e-a6ea-42b3-83bf-7db13fe5dc7d"
+    },
+    {
+      "claim_id": "9f8b585b-9c08-40e0-9053-5920fbf59cf8",
+      "result_id": "b7cb334e-a6ea-42b3-83bf-7db13fe5dc7d"
+    },
+    {
+      "claim_id": "19f8b448-f5f8-469f-9543-3ce7aaef7f38",
+      "result_id": "b7cb334e-a6ea-42b3-83bf-7db13fe5dc7d"
+    },
+    {
+      "claim_id": "d3cf5c75-5af3-4bc9-822c-363c2a0a440d",
+      "result_id": "bd8e2f8f-e951-49e5-a595-ee80f86cde6e"
+    },
+    {
+      "claim_id": "93c56927-3bf8-49cd-83ce-bb04aaa46123",
+      "result_id": "bd8e2f8f-e951-49e5-a595-ee80f86cde6e"
+    },
+    {
+      "claim_id": "40273214-a739-4d3f-b81a-cbf9df3c2954",
+      "result_id": "bd8e2f8f-e951-49e5-a595-ee80f86cde6e"
+    },
+    {
+      "claim_id": "bde8c0ac-c3c3-4763-92e2-72dc06d19a90",
+      "result_id": "bd8e2f8f-e951-49e5-a595-ee80f86cde6e"
+    },
+    {
+      "claim_id": "2728ef10-1fd5-4390-b2b7-78d455856f7a",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "645f5a67-8d0a-4410-87e9-cfad7da98ae5",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "bdea3b3f-7276-4f1c-a7ab-a0decdf3669e",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "22c7eab4-52c4-4d3a-8aa1-7169a955d627",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "554d86ab-d2c9-497e-8eee-be12af6ae2e1",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "049b4ec8-ee0b-45f0-bed6-295dc0e173d3",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "c4395703-58d0-4bdc-a1dd-0c288680e1c8",
+      "result_id": "626f9803-96fd-4293-b2af-82c7062dd5df"
+    },
+    {
+      "claim_id": "9a99f51a-8f04-46c4-8643-89d62a00f441",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "ab2c5022-88f4-43bd-a3c8-b559aa5013e6",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "a5dbba01-12d8-4e5f-9a43-3e95fcdaed9a",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "65d8703b-a905-40ca-bd6c-87b0a3e7201d",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "31c6163c-9e9f-45f0-bbc8-69d1179b9af4",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "0fd2989f-e2d5-4197-9d55-a3dc89d63f6a",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "d7a59068-9d3a-4cde-9cf8-46dda76f81e3",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "04607ebe-6bf1-4123-833f-6a4dfa146e89",
+      "result_id": "63c296b9-c9b1-4d8d-8149-775666ddafb1"
+    },
+    {
+      "claim_id": "09c2e92a-154d-4611-8eb4-8ca27a9fb69f",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "76848d51-1e2f-488b-9cb4-edb494cc7070",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "dc22c4e5-c6d5-44e9-a2e0-454a7bfc8d08",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "8092e047-0632-496b-b10c-537450c900d2",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "09c42043-e170-402b-b0cc-1d239d936840",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "7be677f2-6728-42d1-9cd6-0d75ad3a4eb6",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "4e6d0084-f2b3-4336-a403-99234928be37",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "57168d77-8e08-4270-a60c-9b23cfa645fc",
+      "result_id": "bfc0eb39-55bc-4bd3-919c-04e02de3b2bd"
+    },
+    {
+      "claim_id": "38424936-94c8-4b03-974b-2a8318f98fd3",
+      "result_id": "ee309f51-13c2-48c5-bd7c-6215e5ae366d"
+    },
+    {
+      "claim_id": "b08af9e8-3b64-4567-9372-17452dce3b70",
+      "result_id": "9d4a7a07-56b9-4b68-b727-d5f6a8766504"
+    },
+    {
+      "claim_id": "fe9cf31a-2dcd-4fd8-88f8-6c65e4ebebe7",
+      "result_id": "9d4a7a07-56b9-4b68-b727-d5f6a8766504"
+    },
+    {
+      "claim_id": "0e83fe75-9736-443c-ae7d-67ff3e52dca1",
+      "result_id": "9d4a7a07-56b9-4b68-b727-d5f6a8766504"
+    },
+    {
+      "claim_id": "89de7e31-836d-4855-9258-8dba88a2b171",
+      "result_id": "9d4a7a07-56b9-4b68-b727-d5f6a8766504"
+    },
+    {
+      "claim_id": "305a4bca-eb9f-491d-8b8a-59a6a7d4b948",
+      "result_id": "9d4a7a07-56b9-4b68-b727-d5f6a8766504"
+    },
+    {
+      "claim_id": "bf8433ec-dd21-4cf5-8ec4-f41a1ff60d97",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "7e46f71a-8b82-4cc4-be9b-b9732e623478",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "4506dcc2-534e-47aa-80e2-eb812b770c76",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "05ced972-c1d1-4ebf-a0db-6364c4ee6183",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "863028a7-59ab-4c57-9e1b-eb3447d024c7",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "25e51369-9e26-4b0d-8441-fe354c68d4e5",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "0bb4422c-760d-4558-aaf6-4221a522ad74",
+      "result_id": "83222f10-e360-470c-872d-7d3176e3dd4d"
+    },
+    {
+      "claim_id": "826293b2-1081-431d-ac19-90a9648734f8",
+      "result_id": "e3b8eb84-adc4-4e90-9897-fbcadcc06e16"
+    },
+    {
+      "claim_id": "e9767176-bfac-4590-b524-93a37cb2a5cf",
+      "result_id": "e3b8eb84-adc4-4e90-9897-fbcadcc06e16"
+    },
+    {
+      "claim_id": "33050a4d-abe7-44a2-8800-78434bf355b3",
+      "result_id": "e3b8eb84-adc4-4e90-9897-fbcadcc06e16"
+    },
+    {
+      "claim_id": "98cfe541-0c3b-49f1-8f7a-41981a14ee28",
+      "result_id": "781c54d1-99e8-488d-a905-9dbd26fb8338"
+    },
+    {
+      "claim_id": "2e8ffafc-5541-4c83-839c-3b66325d11d8",
+      "result_id": "781c54d1-99e8-488d-a905-9dbd26fb8338"
+    }
+  ],
+  "comparisons": []
+}

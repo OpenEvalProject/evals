@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C33",
+      "C34",
+      "C38"
+    ],
+    "result": "Deleterious mutations slow the rate of antigenic evolution and increase the average size of antigenic mutations that successfully establish. Model simulations show that increases in deleterious mutation rate (\u03bb) and decreases in fitness cost (sd) increase fitness variance, which in turn slows adaptive evolution and increases the characteristic size of beneficial mutations that fix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C22, C23, C33, C34, and C38 are supported by model simulations shown in Figures 1D and 1E, which demonstrate the predicted effects of deleterious mutations on antigenic evolution tempo and punctuation. The results are consistent with established population genetics theory (C36, C37) and are derived from mathematically sound epidemiological models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The model predicts three distinct molecular pathways for antigenic cluster transitions: (1) a 'jackpot' combination of large antigenic mutations in low-load backgrounds, (2) sequential accumulation of two antigenic mutations, and (3) reassortment-mediated purging of deleterious mutations. Phylogenetic analyses of influenza sequences from 1992-2004 reveal patterns consistent with each pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C5 are supported by model predictions (C46-C49, Figures 2A-D) and phylogenetic evidence (C52-C61, Figures 4A-C). The BE92-WU95 transition exemplifies pathway 1, WU95-SY97 exemplifies pathway 2, and SY97-FU02 exemplifies pathway 3. However, C54 acknowledges that alternative explanations exist for failed establishment of early 145K clades, and the genetic background hypothesis requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A phylodynamic model incorporating both antigenic and deleterious mutations reproduces key features of influenza A/H3N2 evolution: spindly HA phylogeny with low-load viruses on the trunk, co-circulation of antigenic variants, prevalence levels of 10-180 cases per 100,000, and annual attack rates of 2-10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C63-C73 are supported by phylodynamic simulations shown in Figures 6 and 7. The model successfully reproduces empirical patterns including the spindly phylogeny (C63, C64), antigenic co-circulation (C66), realistic prevalence and attack rates (C67, C68), and tMRCA dynamics (C73). The mechanistic explanation\u2014that trunk lineages require both low mutation load and high susceptible host numbers (C69-C72)\u2014is well-supported by the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Control simulations demonstrate that neither deleterious mutations alone nor antigenic mutations alone can reproduce influenza's characteristic evolutionary dynamics. Simulations without deleterious mutations yield explosive diversity (Figures 8A-B), while simulations without antigenic mutations yield excessive genetic diversity and low attack rates (Figures 9A-B, 10E-F).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 and C83-C86 are supported by control simulations shown in Figures 8, 9, and 10. The results demonstrate that the interaction between deleterious and antigenic mutations is necessary to reproduce influenza's spindly phylogeny and high attack rates (C85, C86). The finding that simulations without deleterious mutations yield explosive diversity is consistent with prior modeling work (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Parameter sensitivity analyses show that deleterious mutation rates (\u03bb) of 0.10-0.15 best reproduce empirical tMRCA values and attack rates, while a broad range of fitness cost values (sd) yield dynamics consistent with influenza A/H3N2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by systematic parameter exploration shown in Figure 10. The analyses demonstrate that \u03bb \u2265 0.10 consistently reproduces empirical attack rates (C80), \u03bb = 0.10-0.15 best matches tMRCA values (C81), and multiple sd values yield consistent dynamics (C82). However, the manuscript acknowledges substantial uncertainty in parameter estimates, particularly for \u03bb and sd.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "At epidemiological equilibrium, the virus population has a mean net reproductive rate R=1, with fitness variation arising from differences in deleterious mutation loads. Antigenic mutants experience three possible fates (rapid loss, transient circulation, or successful establishment) depending on their antigenic size and genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are supported by mathematical derivations in the Materials and Methods section and model simulations shown in Figures 1A-C and 2. The deleterious mutation-selection balance (C132) follows from standard epidemiological SIR dynamics, and the three fates of antigenic mutants (C28) are demonstrated in Figure 1B. The dependence on genetic background (C29) is consistent with population genetics theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Deleterious mutation accumulation dampens the invasion dynamics of large antigenic mutants, preventing them from burning out during establishment as might otherwise be expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by model simulations shown in Figure 3, which compare invasion dynamics with and without deleterious mutations. The result demonstrates an important consequence of deleterious mutations for cluster transition dynamics, though it is a secondary finding relative to the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C108",
+      "C109"
+    ],
+    "result": "The deleterious mutation model provides a more plausible mechanistic explanation for influenza's evolutionary features than alternative models (epochal evolution, generalized cross-immunity, canalization) because deleterious mutations are empirically documented and the model reproduces high attack rates without invoking additional processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by model results (Figures 7A, 10B) and comparison with alternative models. The argument that deleterious mutations are empirically documented (C11, C12, C14) strengthens the claim. However, the evaluation relies partly on criticisms of alternative models (C87-C99) rather than direct experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The model's predictions are consistent with observed differences in antigenic evolution across influenza types and host species. Influenza B evolves less punctuated than H3N2 (consistent with lower mutation rate), H1N1 evolves slower than H3N2 (consistent with weaker antigenic selection), and swine H3N2 evolves antigenically slower than human H3N2 (consistent with ecological differences).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 are supported by citations to empirical studies documenting these patterns. The model's predictions are qualitatively consistent with observed differences, though the manuscript acknowledges that multiple factors (mutation rate, selection pressure, spatial ecology) contribute to these patterns. The consistency provides external validation for the model framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C21"
+    ],
+    "result": "Prior phylogenetic analyses indicate that influenza A/H3N2 and other RNA viruses carry significant deleterious mutation loads, with purifying selection insufficient to immediately eliminate deleterious mutations from circulating populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C15, C17, and C21 are supported by multiple citations to prior phylogenetic studies (Fitch et al. 1997, Pybus et al. 2007, Strelkowa and L\u00e4ssig 2012). The evidence includes excess nonsynonymous substitutions on tip branches and heightened dN/dS ratios on external branches. This establishes the empirical foundation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Influenza A/H3N2 undergoes punctuated antigenic evolution with single amino acid changes of large effect occurring every 2-6 years. The model posits that this slow, punctuated nature reflects the requirement for large antigenic mutations to occur in good genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by citations to empirical antigenic analyses (Smith et al. 2004, Koel et al. 2013). Claims C44-C45 represent the model's interpretation of these patterns, which is supported by the modeling results (C2, C3, C22, C23). The interpretation is logically consistent with the model predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Receptor binding avidity is an important non-antigenic phenotype affecting viral fitness, with changes in binding avidity frequently altering antigenicity. Successful cluster transitions may preferentially involve mutations simultaneously affecting both phenotypes, consistent with the observation that most cluster-transition mutations fall near the receptor binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 and C116 are supported by citations to empirical work (Hensley et al. 2009, Koel et al. 2013). However, C115 is speculative, as indicated by the use of 'may' and the evidence type 'SPECULATION'. While the speculation is reasonable and consistent with available data, it lacks direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Recent prediction models for influenza evolution rely on fitness variation in the virus population. Successfully predicting cluster transitions will require characterizing both antigenic effects and relative fitness mediated by non-antigenic phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by citations to recent prediction studies (Neher et al. 2014, \u0141uksza and L\u00e4ssig 2014). Claims C130-C131 represent implications of the current work for future prediction efforts. While C131 is somewhat speculative about future research needs, it follows logically from the model results demonstrating the importance of genetic background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C134"
+    ],
+    "result": "The deleterious mutation-selection balance follows a Poisson distribution with mean \u03bb/sd. Within-host fitness costs of 0.103-0.132 translate to transmission fitness costs of 0.002-0.018 (mean sd = 0.008) based on within-host viral dynamics modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C132 is mathematically supported by derivations in Materials and Methods. However, C134 relies on a rough mapping between within-host viral load and transmission rates (assuming transmission \u221d log(viral load)), which the authors acknowledge has limitations. The parameter estimation involves multiple assumptions and approximations, introducing substantial uncertainty. The authors appropriately explore a range of sd values in sensitivity analyses (Figure 10C-D).",
+    "result_type": "MINOR"
+  }
+]

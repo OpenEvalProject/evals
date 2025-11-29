@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Wild-type HeLa cells show a broad distribution of metaphase plate positions (median R=0.98) that narrows sharply at anaphase onset (median R=1.02). In 2:1 cells (asymmetric centriole distribution), metaphase plates are initially asymmetric (median R=1.12, 42.9% with R>1.15) but correct to symmetric positions before anaphase (median R=1.03). Time-lapse imaging directly demonstrates this centering process over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C23-C26 provide converging quantitative evidence from tracking experiments showing metaphase plate centering. The data demonstrate both the initial asymmetry in 2:1 cells and the correction process before anaphase, with appropriate statistical analysis (Mann-Whitney U test, p<0.0001). The time-lapse data in C26 directly visualizes the centering mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The spindle assembly checkpoint (SAC) provides time for metaphase plate centering in 2:1 cells. Anaphase onset is delayed by 12 minutes in 2:1 cells (p=0.003), resulting in twice the metaphase duration. This delay depends on the SAC (Mad2 depletion or Mps1 inhibition eliminates the delay). Prolonging metaphase with MG132 allows plate centering, while acute SAC inhibition produces a bimodal distribution with 47% of cells entering anaphase with asymmetric spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide strong evidence linking SAC activity to metaphase plate centering through multiple complementary approaches: timing measurements (C28-C30), genetic depletion (C31), proteasome inhibition (C32), and acute kinase inhibition (C33). The statistical analyses are appropriate and the bimodal distribution in C33 is particularly compelling evidence for the SAC's role in providing time for correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Loss of a single centriole creates an imbalance in microtubule minus-end stability between spindle poles. In 2:1 cells, over 50% show unequal minus-end stability (vs. 25% in control cells), with the 2-centriole pole typically having more stable minus-ends. This correlates with asymmetric centrobin localization (daughter centriole-specific) but not with polar ejection force, TPX-2, Aurora-A, or other centrosome proteins. Stabilizing microtubules (KIF2a/MCAK depletion or taxol treatment) reduces spindle asymmetry and eliminates spindle rotation observed in >70% of 2:1 cells. MG132 treatment equalizes minus-end stability as plates center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C49 systematically rule out alternative mechanisms (polar ejection force, Aurora-A activity) while establishing microtubule stability differences through cold-stable assays (C39-C41), drug treatments (C43-C46), and correlation with centrobin localization (C36-C37). The convergence of multiple experimental approaches (depletion, stabilization, time-course) strongly supports the conclusion that minus-end stability differences drive asymmetric plate positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "2:1 cells form amphitelic kinetochore-microtubule attachments with normal inter-kinetochore distances, intra-kinetochore distances, and oscillatory movements. However, 22% of 2:1 cells (vs. <10% controls) have SKAP-negative kinetochores indicating partially unstable attachments. These SKAP-negative kinetochores are symmetrically distributed and disappear with taxol treatment or MG132-induced metaphase prolongation, suggesting delayed stabilization rather than complete attachment failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 provide detailed characterization of kinetochore attachments using multiple markers (inter-kinetochore distance, intra-kinetochore distance, SKAP, Mad2). The key finding is the increased proportion of SKAP-negative kinetochores (C55) despite normal gross attachment parameters (C50-C53), indicating a subtle defect. The rescue by microtubule stabilization (C57-C58) supports the interpretation that this reflects delayed stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Acute laser ablation of a single daughter centriole in metaphase cells recapitulates the asymmetric plate positioning seen in Sas-6-depleted cells (R increases from 1.06 to 1.16). However, laser ablation has more severe effects, causing reduced inter-kinetochore distances (1.03 to 0.95 \u03bcm, p=0.001) and prolonged metaphase arrest, suggesting that acute loss has stronger effects than gradual loss during spindle assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide important validation that the phenotype is not an off-target effect of Sas-6 depletion. The laser ablation experiments (C60-C61) confirm the causal relationship between centriole loss and plate asymmetry. The comparison between acute and gradual loss (C63) is appropriately cautious, acknowledging potential differences in severity while confirming the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The SAC in 2:1 cells responds to unstable kinetochore-microtubule attachments rather than lack of attachment or tension defects. Aurora-B inhibition allows 2:1 cells to enter anaphase with asymmetric spindles (median R=1.18, p=7.57\u00d710\u207b\u2076), indicating that stabilizing kinetochore-microtubules satisfies the SAC. Similarly, KIF2a/MCAK depletion allows asymmetric anaphase entry (median R=1.08), rescues anaphase timing, and restores SKAP loading, but does not override SAC responses to unattached kinetochores or tension defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74 establish the nature of the SAC signal through complementary pharmacological (Aurora-B inhibition) and genetic (KIF2a/MCAK depletion) approaches. The key evidence is the differential response: both treatments satisfy the SAC in 2:1 cells but not in cells with unattached kinetochores or monopolar spindles (C64-C65, C74), indicating a distinct type of attachment defect. The statistical analyses are robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Entry into anaphase with an asymmetric metaphase plate position causes asymmetric cell divisions. KIF2a/MCAK/Sas-6-depleted 2:1 cells undergo asymmetric divisions with 50% producing daughter cells differing by >20% in volume (never observed in controls). This is not due to spindle mispositioning (C79-C80). Acute Mps1 inhibition in early metaphase 2:1 cells causes asymmetric divisions in 45% of cases, while inhibition in late metaphase (after plate centering) produces symmetric divisions. Laser ablation with Mps1 inhibition produces asymmetric divisions in 67% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 establish the functional consequence of asymmetric plate positioning through multiple experimental approaches. The key evidence is the timing-dependent effect of Mps1 inhibition (C82): only cells with asymmetric plates at anaphase entry divide asymmetrically. The exclusion of spindle mispositioning as a cause (C79-C80) and validation with laser ablation (C83) strengthen the conclusion. The quantitative measurements of daughter cell size are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "Cells actively center the metaphase plate before anaphase onset through a SAC-dependent mechanism that responds to subtle kinetochore-microtubule stability defects. This centering is not merely a consequence of establishing stable bipolar attachments (KIF2a/MCAK/Sas-6 2:1 cells fail to center despite stable attachments). The process depends on regulation of microtubule dynamics and is essential for symmetric cell divisions. This represents a more sensitive SAC than previously assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C97 synthesize the major conclusions from the experimental data. The evidence for active centering (C85) comes from time-lapse imaging (C26). The SAC dependence (C86) is established by multiple experiments (C28-C33). The distinction from bipolar attachment (C93) is demonstrated by KIF2a/MCAK depletion experiments (C68-C72). The conclusion about SAC sensitivity (C87-C88) is supported by SKAP data (C55-C59) and differential responses to perturbations (C64-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that the SAC responds to partial microtubule occupancy defects at kinetochores, where kinetochores bind sufficient microtubules for amphitelic attachment and tension but not the full complement required for SKAP loading. This would allow the SAC to indirectly probe metaphase plate position by detecting microtubule stability imbalances within the spindle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 present a mechanistic model supported by the experimental data. The key evidence is that KIF2a/MCAK depletion satisfies the SAC in 2:1 cells but not in cells with unattached kinetochores or tension defects (C107), combined with the SKAP data showing partial occupancy (C108). While C109-C110 are explicitly speculative, they are well-grounded in the experimental observations and represent a reasonable interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C105",
+      "C106"
+    ],
+    "result": "The asymmetric position of the metaphase plate, rather than spindle mispositioning, is the source of asymmetric cell divisions in KIF2a/MCAK-depleted 2:1 cells. These cells have normal spindle positioning but misplace the cytokinetic furrow only when the metaphase plate is asymmetric, indicating that metaphase plate position plays a fine-tuning role in cytokinetic furrow positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C105-C106 establish the mechanism of asymmetric division through careful measurement of spindle position (C95) and correlation with plate position (C105). The inference that plate position is causal (C96, C106) is supported by the timing experiments showing that only cells with asymmetric plates at anaphase divide asymmetrically (C82). This distinguishes the mechanism from previously described spindle positioning defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Sas-6 depletion for 24 hours creates cells with asymmetric centriole distributions (2:2, 1:1, or 2:1 configurations). In 2:1 cells, the oldest centriole most often gives rise to a daughter centriole, likely due to limiting Sas-6 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe the experimental system used throughout the study. Sas-6's role in centriole duplication is well-established (C19), and the resulting centriole configurations are documented by imaging (C21). The inference about which centriole duplicates (C22) is based on intensity measurements, though the data are not shown. This is a minor methodological detail that supports the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate that metaphase plate position may play a crucial role in asymmetric cell divisions that depend on asymmetric spindles in anaphase, such as in Drosophila neuroblasts. Breaking the symmetry of a centered metaphase plate could provide an internal spatial reference point for controlled asymmetric divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 are explicitly speculative extensions of the findings to other systems. While C101 correctly describes the progression in fly neuroblasts (established knowledge), the proposed role of metaphase plate position (C99-C100) is a hypothesis that requires testing in those systems. The speculation is reasonable given the findings but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Chromosome alignment in the middle of the bipolar spindle is a conserved feature of metazoan cell divisions, including in asymmetrically dividing cells. Previous work showed that asymmetric centriole numbers lead to asymmetric metaphase plate positions in algae and nematodes, and that equatorial positioning is not merely a consequence of bipolar attachments. However, the reason for this positioning and whether cells respond to asymmetry was unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8-C14 accurately summarize established knowledge and prior work that motivated the current study. The citations are appropriate and the characterization of the field's understanding is accurate. This provides essential context but does not constitute a novel finding of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior work established that proper spindle positioning ensures symmetric cell divisions through dynein-dependent cortical forces in anaphase, and that cytokinetic furrow positioning is determined by centrosome position, spindle midzone signals, and chromosome-stabilized midzone microtubules in different organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 and C102-C104 accurately cite and describe relevant prior work on spindle positioning and cytokinetic furrow positioning. These are well-established findings from the literature that provide context for the current study's findings. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C111"
+    ],
+    "result": "Differences in cell size have been linked to cell fate, and the SAC acts in a graded manner with respect to the number of unattached kinetochores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C111 cite established knowledge from the literature with appropriate references. These provide context for the significance of the findings (C98) and comparison to related SAC properties (C111). These are accurate statements of prior knowledge.",
+    "result_type": "MINOR"
+  }
+]

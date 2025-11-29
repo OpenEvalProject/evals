@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Ligand-free K63-Ub2 exists in both open and closed states, as demonstrated by paramagnetic relaxation enhancement (PRE) NMR measurements. Large inter-subunit PREs were observed that cannot be explained by known open-state structures alone, indicating the presence of closed states comprising approximately 70% of the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PRE NMR data (C47) show large inter-subunit interactions that are incompatible with open-state structures (C48), providing direct evidence for closed states (C49, C50). Multiple controls validate the measurements: different paramagnetic probes give similar results (C45, C46), binding affinities remain unchanged (C39), and inter-molecular contributions are negligible at working concentrations (C43, C44). The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C98"
+    ],
+    "result": "SAXS analysis supports the existence of closed states in ligand-free K63-Ub2. The experimental paired-distance distribution is narrower than predicted for open-state structures, with Dmax values smaller than calculated for known open structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS data (C52-C55) independently corroborate the PRE findings, showing that experimental measurements are inconsistent with open-state-only models. The ability to recapitulate experimental SAXS data by combining closed (70%) and open (30%) states with \u03c7\u00b2 = 1.24 (C98) provides quantitative validation. However, SAXS has limited resolution for distinguishing multiple closed states (acknowledged in C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Ensemble refinement against PRE data reveals that the closed state of K63-Ub2 comprises multiple conformations (at least four conformers) representing approximately 70% of the total population. A single-conformer model cannot satisfy the experimental PRE constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic grid search varying conformer number and population (C58, C59) provides rigorous quantitative support. The Q-factor of 0.22 and correlation coefficient of 0.94 (C61) indicate excellent agreement with experimental data. Cross-validation between N25C and K48C sites (C62, free Q-factor = 0.46) strengthens confidence in the ensemble model. The determination of ~70% closed-state population is well-justified through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C107",
+      "C110"
+    ],
+    "result": "Two distinct closed-state conformations (C1 and C2) were identified through structural analysis, utilizing different binding interfaces with buried surface areas of 284\u00b1140 \u0172 and 201\u00b160 \u0172, respectively. These states correspond closely to known ligand-bound structures: C1 resembles ZnF4-bound K63-Ub2 (RMSD 3.93 \u00c5) and C2 resembles NZF-bound structures (RMSD 1.68 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spherical coordinate projection (C64) provides clear visualization of two distinct clusters. The structural correspondence with known ligand-bound structures (C67-C69) is compelling evidence for the biological relevance of these states. Quantitative metrics (buried surface areas C66, RMSD values C68-C69) support the distinction between C1 and C2. The 3:1 ratio prediction (C70) shows reasonable agreement with experimental PREs despite some discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C73",
+      "C74",
+      "C75",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "K63-Ub2 recognizes target proteins through a conformational selection mechanism where ligands select and stabilize one of the preexisting conformational states (open, C1, or C2). The similarity between ligand-free and ligand-bound structures supports this mechanism, though some induced fit may occur during binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural similarity between ligand-free ensemble structures and ligand-bound crystal structures (C111, C67-C69) provides strong support for conformational selection. Thermodynamic analysis showing that binding free energy changes can be accounted for by conformational energy changes (C112, C113) further validates this mechanism. The acknowledgment of potential induced fit (C74) appropriately recognizes limitations. This is a well-supported mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The E64RP mutation in the proximal unit destabilizes the closed state, reducing its population by approximately 50% while maintaining similar ensemble structures. PRE magnitude decreases by ~50% while the PRE profile remains similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutation was rationally designed based on structural analysis (C76) to perturb the conformational equilibrium without directly affecting ligand binding. The PRE data (C79, C80) clearly show reduced magnitude with preserved profile, supporting the interpretation of population shift rather than structural change. Chemical shift perturbations (C77, C78) are consistent with altered conformational equilibrium. The experimental design is sound and the interpretation is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The E64RP mutation modulates binding affinities in a manner consistent with conformational selection: binding to open-state ligand tUIM increases 4-fold (KD: 9.7\u21922.2 \u03bcM), while binding to closed-state ligands weakens (NZF: 12.2\u219217.8 \u03bcM; ZnF4: 384\u21921200 \u03bcM). Importantly, enthalpy changes remain identical, indicating entropic origin of affinity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding affinity measurements are rigorous with appropriate replicates (C84-C91). The mutation is distant from binding interfaces (C83), ruling out direct effects on binding. The identical enthalpy values (C90) provide critical evidence that affinity changes are entropic, consistent with conformational population shifts rather than altered binding interactions. This is a key result supporting the conformational selection mechanism. The use of both ITC and NMR titration methods strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Thermodynamic analysis indicates that upon E64RP mutation, the closed-state population decreases from ~70% to ~35%, with C1 state dropping from ~52.5% to ~22.5% and C2 state from ~17.5% to ~12.5%. This population shift accounts for the observed changes in binding free energies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thermodynamic calculations (C93-C95) are internally consistent and account for the observed binding affinity changes. The differential effects on C1 versus C2 states (C96, C97) are supported by both PRE and binding data, with C1 showing larger decreases consistent with the mutation's structural position. The quantitative agreement between conformational energy changes and binding free energy changes validates the conformational selection model. The reasoning is sound and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C104",
+      "C105"
+    ],
+    "result": "The finding that ~70% of ligand-free K63-Ub2 exists in closed states contradicts many previous structural studies but agrees with a recent smFRET study reporting ~75% closed-state population. This study provides the first detailed structural characterization of these closed states using PRE NMR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement with independent smFRET data (C104) strengthens confidence in the ~70% closed-state population (C99, C105). The acknowledgment of disagreement with prior literature (C100) is appropriate and honest. The current study advances beyond smFRET by providing atomic-level structural details and distinguishing multiple closed states (C108). This represents a significant advance in understanding K63-Ub2 structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The quaternary dynamics of K63-Ub2 enables specific recognition in diverse signaling pathways: the open state recognizes Rap80 tUIM for DNA damage repair, C2 closed state recognizes TAB2/TAB3 NZF for NF-\u03baB activation, and C1 closed state recognizes A20 ZnF4 for NF-\u03baB termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional assignments (C118-C120) are well-supported by the structural correspondence between ensemble states and ligand-bound structures, combined with known biological functions from literature. The binding studies with all three ligands provide experimental validation. This represents a coherent model linking structure, dynamics, and function. The claim is appropriately supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C102",
+      "C115",
+      "C116",
+      "C117",
+      "C121"
+    ],
+    "result": "The conformational selection mechanism observed for K63-Ub2 may extend to other polyubiquitin linkages and lengths. Different linkages dictate distinct quaternary arrangements that encode specific cellular signals, with polyubiquitins existing as combinations of diubiquitin quaternary structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C7, C121) are explicitly speculative extrapolations from K63-Ub2 findings to other systems. While the reasoning is plausible and supported by citations showing closed states exist for other linkages (C115), direct experimental evidence for the conformational selection mechanism in other linkages is not provided. The claims about how linkages dictate quaternary arrangements (C117) are reasonable inferences but require validation. This represents an important hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background information on ubiquitin biology, polyubiquitin linkages, and their functions, including the ubiquitination machinery (E1, E2, E3, DUBs), linkage-specific functions, and prior structural characterizations of K63-Ub2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge appropriately cited from literature (C11, C13-C31). They set the context for the study and are well-supported by the cited references. This is standard background material that accurately represents the field's understanding prior to this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C106",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion of how the findings relate to prior work, including consistency with ubiquitin monomer dimerization data, comparison with K48-Ub2, explanation for why only open states were previously crystallized, and limitations of other techniques (smFRET, SAXS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims appropriately discuss the relationship between current findings and prior work. The consistency with ubiquitin dimerization (C101) and K48-Ub2 behavior (C103) strengthens the biological plausibility. The explanation for crystallographic bias (C106) is speculative but reasonable. The discussion of technical limitations (C108, C109) appropriately acknowledges what different methods can and cannot reveal.",
+    "result_type": "MINOR"
+  }
+]

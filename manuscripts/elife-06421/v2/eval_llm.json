@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The MCAK C-terminal (CT) domain binds to the motor domain in solution and induces dimerization. The CT domain binds to two motor domains cooperatively, forming a complex with a stoichiometry of two motors to one CT domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 provide converging evidence from multiple biochemical techniques (pulldown assays, gel filtration, SEC-MALS) demonstrating that the CT domain binds the motor domain and induces dimerization with a 2:1 motor:CT stoichiometry. The measured molecular weight (~91.5 kDa) matches the predicted mass for two motors plus one CT domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The affinity of the CT domain for the motor domain is approximately 1.1 \u03bcM as measured by intrinsic fluorescence spectroscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 reports a direct measurement of binding affinity using intrinsic fluorescence spectroscopy. The authors acknowledge this measurement represents the sum of motor dimerization and CT binding affinities due to cooperative binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C55"
+    ],
+    "result": "The crystal structure of the MCAK motor domain bound to the CT domain peptide reveals that one CT domain binds asymmetrically at the interface between two motor domains, stabilizing the dimer through specific interactions involving Glu711 and Glu712.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 and C55 describe the crystal structure at 3 \u00c5 resolution with detailed molecular interactions. The structure provides atomic-level evidence for the binding mode, showing specific hydrogen bonds and the asymmetric binding geometry. The crystallographic data quality is documented in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The neck linker region of MCAK exhibits conformational flexibility around Arg258 and can adopt at least two distinct states. The CT domain binding may regulate this conformational change necessary for catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide structural evidence comparing the current structure with the mouse MCAK structure, showing the neck linker in different conformations. Claim C54 is appropriately presented as speculation ('possible') based on the structural observations and prior functional data (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C66",
+      "C67"
+    ],
+    "result": "Glu711 and Glu712 are critical and conserved residues for the CT domain-motor interaction. Mutation of these residues to alanine abolishes binding, while mutations at Arg716 or Ile718 do not affect binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60, C66-C67 provide structure-guided mutagenesis validation. The predictions from the crystal structure (C56) are confirmed experimentally (C57-C58), and sequence conservation analysis (C60) supports functional importance across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Ser715 is a conserved residue critical for CT domain-motor binding. A phosphomimetic mutation (S715E) abolishes binding, suggesting that phosphorylation at this site by Aurora A or Plk1 could regulate the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 demonstrate that Ser715 is conserved (C61), reported to be phosphorylated (C62), and that the S715E mutation prevents binding (C63-C64). The structural interpretation (C65) provides a mechanistic explanation for how phosphorylation would disrupt binding through electrostatic repulsion and steric hindrance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Full-length MCAK contains a second dimerization region independent of the CT domain, as MCAKS715E (which cannot bind CT to motor) remains dimeric in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 provide gel filtration evidence that MCAKS715E elutes similarly to wild-type MCAK, indicating it remains dimeric despite loss of CT-motor interaction. This logically demonstrates an additional dimerization interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The microtubule depolymerase activity of full-length MCAKS715E appears similar to wild-type MCAK in bulk depolymerization assays, though the CT domain may have additional indirect regulatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 reports similar depolymerase activity, but the authors acknowledge significant limitations of the bulk assay (C71) that may mask differences in microtubule binding affinity, diffusion, or end targeting. Claim C72 is appropriately speculative. The assay cannot distinguish between different mechanisms that might yield similar overall rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Engineering a disulfide crosslink between the CT domain (E712C) and motor domain (Cys287) under oxidizing conditions creates a covalent complex where one CT domain is crosslinked to one of two motor domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe the engineered crosslinking system with SDS-PAGE and gel filtration evidence. The observation that only one motor is crosslinked per CT domain (C74-C75) is consistent with the 2:1 stoichiometry determined by SEC-MALS and provides an orthogonal validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Binding of the CT domain to the motor domain and binding to microtubules are mutually exclusive. Covalent attachment of the CT domain to the motor reduces microtubule binding, and only CT-free motor cosediments with microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide systematic evidence using the engineered crosslinking system. Under reducing conditions (CT not bound), MCAKE712C binds microtubules normally (C78, C81). Under oxidizing conditions (CT covalently bound), binding is reduced ~50% (C79, C82), and only non-crosslinked motor binds microtubules (C83-C84). This demonstrates mutual exclusivity (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The CT domain specifically competes with microtubules for MCAK binding through an allosteric mechanism. Free CT domain reduces the affinity of MCAKS715E for microtubules, while the inactive CTS715E mutant does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide direct competition experiments showing that wild-type CT domain, but not CTS715E, reduces MCAK binding to microtubules. Claims C89-C90 synthesize the evidence to propose an allosteric regulatory mechanism, which is well-supported by the cumulative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Covalent attachment of the CT domain to the motor domain strongly inhibits MCAK depolymerase activity. Displacement of the CT domain is necessary for full microtubule depolymerization activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 demonstrate that under reducing conditions (no crosslink), the motor depolymerizes microtubules normally (C91-C92), but under oxidizing conditions (covalent CT attachment), depolymerase activity is reduced (C93-C94). The authors appropriately account for the ~50% non-crosslinked fraction when calculating specific activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The microtubule lattice itself, rather than the acidic E-hook tails of tubulin, triggers the release of the CT domain from the motor. Subtilisin-treated microtubules lacking tubulin tails still displace the CT domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 use subtilisin-treated microtubules to distinguish between lattice and E-hook effects. The CT domain is displaced even when \u03b2-tubulin tails are removed (C96), and further removal of \u03b1-tubulin tails has no additional effect (C97), demonstrating the lattice itself triggers CT release (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Both the CT domain of MCAK and the C-terminal E-hooks of tubulin cooperatively reduce the affinity of MCAK for microtubules. MCAKS715E shows 10-fold higher affinity for microtubules, and removal of tubulin E-hooks increases wild-type MCAK affinity but not MCAKS715E affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide systematic cosedimentation data showing that MCAKS715E has ~10-fold higher microtubule affinity (C99), and that removing tubulin E-hooks increases wild-type MCAK affinity to the level of MCAKS715E (C100-C101). This demonstrates cooperative regulation by both the CT domain and E-hooks (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In cells, GFP-MCAKS715E shows reduced targeting to microtubule plus ends and increased accumulation on the microtubule lattice compared to wild-type GFP-MCAK, which robustly targets to ends and colocalizes with EB3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 provide cellular imaging data confirming the in vitro observations. The altered localization of MCAKS715E (C103) validates the functional importance of the CT domain in controlling MCAK targeting. Claim C105 appropriately suggests the CT domain may be the electrostatic tether for end targeting, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MCAK undergoes long-range conformational changes during the soluble-to-microtubule-bound transition. In solution, MCAK adopts a compact structure with the CT domain bound to the motor domains. Upon microtubule binding, the CT domain is allosterically displaced, representing a structural intermediate in the catalytic cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 state the main conclusions, which are supported by the cumulative structural, biochemical, and functional data. Claims C106-C108 provide the mechanistic model synthesizing all results. The evidence for allosteric displacement (mutual exclusivity of CT and microtubule binding, lattice-triggered release) strongly supports this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "MCAK regulation by its CT domain shares similarities with Kinesin-1 auto-inhibition (tail binding at motor interface, reduced microtubule affinity) but differs in key aspects: MCAK CT binds asymmetrically, does not inhibit ATPase in solution, and is relieved by microtubules rather than cargo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C115-C121 provide a comparative analysis with Kinesin-1. The structural comparison (C115-C117) is based on the crystal structure data. The functional differences (C118-C120) are supported by the current data and cited literature. The conclusion about conserved but distinct regulation (C121) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The MCAK CT domain binding motif 'EEXXS' is conserved across species and in Kif2a, but not in Kif2b, which uses an alternate regulatory mechanism involving binding partners like Cep170.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C110-C113 provide sequence alignment data showing conservation of the binding motif in MCAK and Kif2a but not Kif2b. The functional interpretation for Kif2b (C112-C113) is supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C53",
+      "C114"
+    ],
+    "result": "Background knowledge about MCAK and kinesin-13 family members, including their roles in microtubule dynamics, localization, regulation by phosphorylation, and prior evidence for conformational changes and long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C26, C53, and C114 represent established knowledge from the literature, appropriately cited. These provide context for the current work and are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The MCAK CT domain binds asymmetrically to the motor dimer, unlike the symmetric binding of the Kinesin-1 tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is a direct structural observation from the crystal structure comparing MCAK to Kinesin-1. The asymmetric binding is evident from the crystallographic data showing the peptide does not sit on a twofold axis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Covalent attachment of the CT domain to the motor domain would prevent conformational rearrangement of the neck region and may decrease depolymerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is presented as speculation based on structural observations. This prediction is subsequently validated by the experimental data in C93-C94 showing reduced depolymerase activity with covalent CT attachment.",
+    "result_type": "MINOR"
+  }
+]

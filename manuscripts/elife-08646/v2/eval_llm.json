@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "SSB-coated ssDNA molecules undergo reversible salt-induced condensation in the presence of free SSB, with fluorescence intensity remaining constant during condensation, indicating protein redistribution rather than dissociation. In the absence of free SSB, condensation is still reversible but accompanied by partial protein dissociation (20% at 100 mM, 60% at 400 mM NaOAc).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide direct experimental evidence from TIRF microscopy showing reversible condensation with and without free protein. The fluorescence intensity data (C29) supports redistribution over dissociation in steady-state conditions, while the reversibility experiments (C32-C35) demonstrate both the dynamic nature and quantify protein loss in the absence of free SSB. The displacement experiment (C30-C31) validates the fluorescence-based measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The observed 13-fold condensation of SSB-coated ssDNA (from 6.5 \u03bcm to 0.5 \u03bcm) exceeds the expected ~2-fold change based on SSB site size transitions (43 to 70 nucleotides), indicating that simple binding mode changes cannot account for the observed condensation. This contradicts expectations from previous AFM studies showing only 1.6-fold changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C70-C72 provide converging evidence from ensemble titrations and single-molecule measurements. The site size measurements (C36) are consistent with known SSB binding modes, but the length measurements (C39) demonstrate a discrepancy that cannot be explained by site size alone (C40, C72). The comparison to previous AFM work (C70-C71) strengthens the conclusion that a novel condensation mechanism is at play.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mg(OAc)2 induces condensation of SSB-coated ssDNA that plateaus at 1-2 mM, producing complexes as short as those formed at much higher monovalent salt concentrations. Under physiologically relevant conditions (considering E. coli intracellular glutamate concentrations), the condensed state likely represents the physiological conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C43 provide direct experimental evidence for Mg2+-induced condensation. Claim C42 establishes the physiological context through citation to previous work on E. coli osmolality regulation. Claim C44 is a reasonable inference connecting the experimental observations to physiological relevance, though it remains somewhat speculative without direct in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C66",
+      "C77"
+    ],
+    "result": "SSB eliminates hysteresis in force-extension curves of ssDNA (except at 750 mM NaOAc), indicating that SSB-coated ssDNA is always at equilibrium without kinetically trapped intermediates. This demonstrates that the observed condensation is due to reversible equilibrium folding driven by SSB reorganization rather than secondary structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 provide direct experimental evidence from magnetic tweezers showing absence of hysteresis with SSB. The exception at 750 mM (C46-C47) is consistent with partial SSB dissociation observed in other experiments. Claims C66 and C77 provide the mechanistic interpretation that is well-supported by the hysteresis data. The logic connecting absence of hysteresis to equilibrium behavior and ruling out secondary structure is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C76"
+    ],
+    "result": "The extent of salt-induced condensation is force-dependent, with TIRF microscopy measurements corresponding to forces of 0.1-0.5 pN. Wild-type SSB recapitulates the condensation behavior observed with fluorescently labeled SSB variants, confirming that condensation is intrinsic to SSB-ssDNA and not an artifact of fluorescent labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide direct measurements and reasonable inference about shear forces in TIRF. Claims C52 and C76 are critical controls demonstrating that the fluorescent modifications do not cause the observed condensation. The qualitative agreement between SSBf and wild-type SSB across different experimental approaches strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SSB binding to ssDNA exhibits an isoenergetic landscape across physiological salt concentrations (25-250 mM NaOAc), with total energy contribution remaining constant at ~3100 kBT (~11 kBT per tetramer). This implies homeostasis in SSB-ssDNA energetics, making absolute intracellular salt concentration relatively unimportant for SSB function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide quantitative energy measurements from force spectroscopy that are internally consistent and agree with previous work (C56). Claims C67-C68 present the isoenergetic interpretation, which is well-supported by the data. Claim C69 proposes a mechanism involving microscopic binding mode changes, which is reasonable speculation based on the data but remains unproven. The biological interpretation (C68) is a significant inference that requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C94"
+    ],
+    "result": "RecO binding to SSB-coated ssDNA causes ~10% condensation across all forces and contributes ~250 kBT (~1.2 kBT per SSB tetramer) without introducing hysteresis. The absence of hysteresis suggests RecO functions primarily in trans to promote annealing rather than in cis to permit secondary structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C94 provide direct experimental measurements of RecO effects. Claim C58 presents a mechanistic interpretation based on the absence of hysteresis and known RecO function. The inference is logical but somewhat speculative, as the trans vs. cis distinction is not directly demonstrated. The energy contribution is modest but measurable and consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C95"
+    ],
+    "result": "RecOR (RecO + RecR) induces severe hysteresis in force-extension curves, contributing ~2000 kBT (~10 kBT per SSB tetramer) from bridging interactions. This energy is equivalent to SSB binding energy itself, indicating RecOR bridges distant SSB tetramers and modulates SSB binding mode while serving as a scaffold for long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61, and C95 provide direct experimental measurements. Claims C60, C62, and C63 present mechanistic interpretations that are well-supported by the data. The equivalence of RecOR bridging energy to SSB binding energy (C62) is a significant finding. The conclusion that RecOR both modulates binding mode and bridges distant sites (C63) is supported by the combination of condensation and hysteresis observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C73",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The macroscopic condensation likely occurs through SSB octamer formation (dimers of tetramers) rather than single tetramers binding distant sites, as condensation is greatest under SSB65 binding mode conditions. This is supported by established octamer formation at physiological salt concentrations and SSB's ability to undergo intersegmental transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 present speculation about mechanism with C65 providing some supporting inference from the data. Claims C73, C78-C79 cite established SSB properties that support the octamer hypothesis. Claim C80 is highly speculative about the dynamic nature of the condensed state. While the octamer mechanism is plausible and supported by prior literature, the current data do not definitively distinguish between octamer-mediated bridging and other mechanisms. Direct structural or biochemical evidence for octamers in the condensed state is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The observed SSB-ssDNA condensation is consistent with early ultracentrifugation data and suggests SSB functions as an organizational scaffold similar to chromatin, with regulation likely controlled by the C-terminal tail and its many interacting proteins that may modulate compaction/decompaction states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 provides supporting evidence from prior work. Claims C82-C83 present an interesting analogy to chromatin that is supported by the data but remains somewhat speculative. Claims C84-C85 extrapolate from the RecOR findings to other SSB-binding proteins, which is reasonable speculation but lacks direct experimental support. The organizational scaffold model is compelling but requires additional validation with other SSB-interacting proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RecO/RecOR may facilitate homology-dependent annealing and RecA nucleation by bridging distant sites to reduce search space, slowing SSB diffusion to increase ssDNA exposure lifetime, and creating microscopic gaps through SSB phasing that expose ssDNA segments for RecA binding or allow micro-homology annealing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is supported by citations and current data. Claim C87 presents a reasonable inference about functional consequences. Claim C88 is supported by prior work. Claims C89-C91 are largely speculative mechanisms that, while consistent with the data and biologically plausible, lack direct experimental validation in this study. These represent testable hypotheses for future work rather than established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on SSB: SSB is essential for DNA maintenance, binds ssDNA with variable footprints (30-70 nt) reflecting different binding modes, protects ssDNA, and exhibits salt-dependent cooperativity. Previous EM and AFM studies showed ~2-fold length changes corresponding to binding mode transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide established background knowledge supported by appropriate citations. These claims set the context for the current work and are well-established in the literature. The prior structural studies (C12-C14) are particularly important as they establish the baseline expectations that the current work exceeds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on SSB-interacting proteins: Multiple proteins interact with SSB's C-terminal tail to modulate SSB-ssDNA complexes. RecO catalyzes annealing and promotes RecA-dependent recombination with RecR and RecF. RecR enhances RecO's affinity for SSB but neither displaces SSB. RecOR must act through conformational changes in SSB-ssDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C27 provide essential background on RecO/RecR function supported by appropriate citations. Claim C27 presents a logical inference from the lack of direct RecA-SSB/RecO/RecR interactions that is well-supported by prior work. This background establishes the rationale for studying RecOR effects on SSB-ssDNA condensation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Methodological note: SSBAF488 maintains high affinity for ssDNA and is suitable for single-molecule imaging, while SSBf is suitable for ensemble measurements due to large fluorescence enhancement upon binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe the properties of the fluorescent SSB variants used in the study, supported by citations to prior characterization work. These are important methodological details that justify the use of these reagents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Summary of main findings: SSB-coated ssDNA exhibits intramolecular condensation exceeding expectations from binding mode transitions. SSB engages in long-range reversible interactions under high-salt conditions. RecO and RecOR further condense the complex, with RecOR functioning to alter long-range interactions by modulating wrapping and bridging distant sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the main findings that are supported by the detailed experimental results in other claim groups. These represent the key conclusions of the paper and are well-supported by the totality of the evidence presented.",
+    "result_type": "MAJOR"
+  }
+]

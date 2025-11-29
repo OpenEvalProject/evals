@@ -1,0 +1,2282 @@
+{
+  "submission": {
+    "id": "98c8f61f-2d91-4a55-adbc-75fbaf1d14e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:01:10.534308Z",
+    "updated_at": "2025-11-29T04:01:10.534308Z"
+  },
+  "content": [
+    {
+      "id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "submission_id": "98c8f61f-2d91-4a55-adbc-75fbaf1d14e9",
+      "content_type": "manuscript",
+      "content_text": "# Structure of a type IV pilus machinery in the open and closed state\n\n## Authors\n\n- Vicki AM Gold<sup>1</sup> \u2020\n- Ralf Salzer<sup>2</sup>\n- Beate Averhoff<sup>2</sup>\n- Werner K\u00fchlbrandt<sup>1</sup>\n\n### Affiliations\n\n1. Department of Structural Biology Max Planck Institute of Biophysics Frankfurt am Main Germany\n2. Molecular Microbiology and Bioenergetics, Institute of Molecular Biosciences Goethe University Frankfurt Frankfurt am Main Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nProteins of the secretin family form large macromolecular complexes, which assemble in the outer membrane of Gram-negative bacteria. Secretins are major components of type II and III secretion systems and are linked to extrusion of type IV pili (T4P) and to DNA uptake. By electron cryo-tomography of whole Thermus thermophilus cells, we determined the in situ structure of a T4P molecular machine in the open and the closed state. Comparison reveals a major conformational change whereby the N-terminal domains of the central secretin PilQ shift by \u223c30 \u00c5, and two periplasmic gates open to make way for pilus extrusion. Furthermore, we determine the structure of the assembled pilus.\n\n## Introduction\n\nSecretins form multimeric pores through the outer membrane of Gram-negative bacteria (Averhoff, 2009; Korotkov et al., 2011; Burkhardt et al., 2012). They are the central secretion conduits for proteins and virulence factors in type II and III secretion systems (T2SS/T3SS) and are essential for extrusion of type IV pili (T4P) (Martin et al., 1993) and transport of some bacteriophages (Korotkov et al., 2011). In addition, secretins are key components of DNA transport systems, which mediate uptake of free DNA from the environment, referred to as natural transformation (Schwarzenlander et al., 2009). The ability to take up DNA is one of the major mechanisms of horizontal gene transfer (Domingues et al., 2012) and enables organisms to adapt rapidly to changing environments (Averhoff, 2009). This process is also fundamental for adaptation of pathogenic bacteria to human hosts and the acquisition of multi-drug resistance (Domingues et al., 2012).\n\nIn many Gram-negative bacteria, such as Thermus, and also in many major human pathogens such as Neisseria, Pseudomonas, and Vibrio, DNA uptake is linked to the T4P machinery (Wolfgang et al., 1998; Graupner et al., 2000; Seitz and Blokesch, 2013) (Figure 1). To investigate the structure and function of this system, we chose the thermophilic bacterium Thermus thermophilus HB27, which exhibits the highest transformation rates known to date (Koyama et al., 1986), and due to the thermostability of its proteins is a convenient model for structural studies.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig1-v2.jpg)\n\n**Figure 1.:** The type IV pilus machinery is a heterooligomer, formed from at least 10 different proteins. The PilQ secretin (orange) forms a channel in the outer membrane for secretion of the pilus-forming protein PilA4 (green), which is processed by the prepillin peptidase PilD (grey) (Friedrich et al., 2002; Schwarzenlander et al., 2009). The membrane protein PilW (light orange) plays a role in DNA transport, PilQ assembly, and pilus extrusion (Rumszauer et al., 2006; Schwarzenlander et al., 2009). The dimeric complex PilC (red) is located in the inner membrane and is essential for pilus formation (Friedrich et al., 2002; Karuppiah et al., 2010). PilM (light brown), PilN (dark brown), and PilO (beige) are suggested to form the inner membrane assembly platform and connect the periplasmic and cytoplasmic sides of the complex (Rumszauer et al., 2006; Schwarzenlander et al., 2009; Karuppiah and Derrick, 2011; Karuppiah et al., 2013). The cytoplasmic ATPases PilF (bright yellow) and PilT1/PilT2 (pale yellow) drive pilus extension and retraction, respectively (indicated with red arrows) (Rose et al., 2011; Salzer et al., 2014b).\n\nPili are several micron-long flexible filaments (Craig and Li, 2008) that can generate forces of over 100 pN (Maier et al., 2004). T4P are grouped together in a class based on the production and secretion of the major pilin protein PilA4 (Thermus nomenclature), thousands of copies of which form the helical pilus (Craig et al., 2004; Schwarzenlander et al., 2009). The T4P is the only known bacterial pilus that can be retracted rapidly (Maier et al., 2004) to enable motility and adherence (Merz et al., 2000), major contributors to bacterial virulence (Hahn, 1997). Assembly and disassembly of the pilus is driven by the AAA-ATPases (ATPases associated with diverse cellular activities) PilF (extension) and PilT1/PilT2 (retraction) (Salzer et al., 2014b). It has been suggested that mature PilA4 assembles into pili extending from the inner membrane by action of PilF (Collins et al., 2013; Salzer et al., 2014b). The outer membrane channel of the T4P machinery is formed by the dodacemeric \u223c1 MDa secretin complex PilQ (Burkhardt et al., 2011) (Figure 1). Other proteins, in particular PilM, PilN, and PilO, are hypothesized to be a central part of the pilus assembly platform and may couple the cytoplasmic and periplasmic sides of the T4P machinery (Karuppiah et al., 2013). Some proteins of the complex have been implicated to play a dual role in both pilus assembly and natural competence (Friedrich et al., 2002; Averhoff and Friedrich, 2003; Friedrich et al., 2003; Rumszauer et al., 2006). Recent results indicate that T4P themselves are not directly involved in DNA uptake (Burkhardt et al., 2012; Salzer et al., 2014a).\n\nT4P are essential for pathogenesis by mediating adhesion, biofilm formation, and twitching motility (Burrows, 2012). Thus, both secretins and T4P play important roles in virulence of different pathogenic bacteria, which has fostered their use as new targets for drug development (Baron, 2010). To date, there is no information on the in situ structure of either the T4P machinery or DNA translocator. Determining structures of T4P complexes in whole bacterial cells is therefore of paramount importance and will enable further study of bacterial resistance and disease. Electron cryo-tomography (cryoET) has the unique ability to determine protein structures in cells at molecular resolution. We have applied cryoET to whole T. thermophilus HB27 cells, in order to visualize the T4P machinery in situ. We determine the helical structure of the pilus and find that the secretin complex PilQ is a central dynamic component of this system. CryoET and subtomogram averaging of the T4P machinery with and without pili reveal a \u223c30 \u00c5 conformational change as the gates in the complex open.\n\n## Results and discussion\n\nT. thermophilus has an unusual cell architecture with deep surface clefts, formed by invaginations of the outer membrane (Figure 2A). By cryoET, these clefts are seen to be constrictions that run around the cell body (Figure 2D). Distal to the most polar outer membrane ring, numerous fibrous and straight pili extend from the cell (Figure 2A\u2013D). The pili are clearly associated with large protein complexes crossing the \u223c70 nm periplasm (Figure 2B,C). This distribution is in line with previous fluorescence and electron microscopy data, which demonstrate the polar localization of PilQ (Seitz and Blokesch, 2013) and pili (Salzer et al., 2014c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Tomographic slices through T. thermophilus cells show invaginations in the outer membrane and large protein complexes crossing the periplasm (white arrowheads), which are associated with pili. Scale bar = 500 nm in A, 100 nm in B and C. (D) Volume rendering shows the distribution of pili (multi-coloured), protruding from the outer membrane (pale yellow). A concentric invagination of the outer membrane is indicated (white arrowheads).\n\nThe periplasm of T. thermophilus cells is extraordinarily wide (Quintela et al., 1995; Castan et al., 2002) and too dense to select subvolumes for subtomogram averaging reliably. Therefore, cells were treated with 100 mM ethylenediaminetetraacetic acid (EDTA) and pipetted in order to render the outer membrane leaky (Caston et al., 1988). This had the desired effect of depleting the periplasm of most small proteins. Sample preparation by this method also removed the pilus from the complex, the empty T4P machinery was nonetheless still clearly visible (Figure 3A,B). We determined by subtomogram averaging the structure of the entire complex and found features distinct from those of the T2SS and T3SS secretins (Marlovits et al., 2006; Hodgkinson et al., 2009; Reichow et al., 2010). The resolution obtained by averaging \u223c4000 particle subvolumes was \u223c35 \u00c5 (Figure 3\u2014figure supplement 1), most likely limited by the inherent flexibility of the complex (Burkhardt et al., 2011) and the difficulty of correcting precisely the contrast transfer function (CTF) for thick specimens.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Tomographic slices of T. thermophilus cells show large protein complexes crossing the periplasm in the absence of pili (white arrowheads). Scale bars = 100 nm. (C) Resulting subtomogram average (left panel) and its 2D projection (centre) are compared to the previously determined projection map of isolated and stained PilQ (right panel) (Burkhardt et al., 2011). The contrast of the stained PilQ has been inverted. This image was originally published in The Journal of Biological Chemistry. Janin Burkhardt, Janet Vonck, and Beate Averhoff. Structure and Function of PilQ, a Secretin of the DNA Transporter from the Thermophilic Bacterium T. thermophilus HB27. JBC. 2011; 286:9977\u20139984, the American Society for Biochemistry and Molecular Biology. The putative N0\u2013N5 domains of PilQ (Burkhardt et al., 2012) are marked. (D) 3D surface rendering of the average reveals that PilQ has a periplasmic vestibule closed at both ends by two gates. Additional protein densities distinct from PilQ (green arrowheads; C1 = proximal to the cytoplasmic membrane, P1 = central periplasmic ring 1, P2 = central periplasmic ring 2) are also shown. OM, outer membrane; PG, peptidoglycan; CM, cytoplasmic membrane.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Resolution estimates were based on conventional Fourier shell correlation (FSC) measurements and the 0.5 criterion in IMOD. Calculations for the closed state of the T4P machinery (orange, 35 \u00c5), open state with pilus extended (yellow, 45 \u00c5), and the pilus (green, 32 \u00c5) are shown.\n\nSubtomogram average maps show the central protein channel (\u223c35 nm long and \u223c15 nm wide) made up of several ring-shaped domains inserted into the outer membrane (Figure 3C, left panel). We compared a 2D projection of the channel part of the subtomogram average with projections of purified, negatively stained PilQ only (Burkhardt et al., 2011) (Figure 3C, central and right panels). PilQ was seen to consist of a C-terminal trapezoid \u2018cone structure\u2019 with staggered rings in the N-terminal domain (Burkhardt et al., 2011), in excellent agreement with our in situ structure. Moreover, the new cryoET structure shows additional protein densities extending from the putative N0 domain of PilQ through the peptidoglycan layer (P1 and P2) to the cytoplasmic membrane (C1) (Figure 3D). Candidate proteins include PilW, which is associated with the inner and outer membranes and is essential for the outer membrane localization of PilQ (Rumszauer et al., 2006), and PilO/PilN heterodimers that could connect PilQ to the ATPases by PilM in the cytoplasm (Karuppiah and Derrick, 2011; Karuppiah et al., 2013) (Figure 1). These proteins are most likely connected to one another by flexible domains that are not well contrasted in the subtomogram average. A longitudinal slice through the complex reveals that PilQ has two gates, which are closed in the absence of a pilus (Figure 3C, left panel and Figure 3D, right panel). Gate 1 is formed by the \u2018cone\u2019 in the outer membrane and gate 2 by the N1 domain at the base of PilQ, enclosing an empty periplasmic vestibule (Figure 3D, right panel). The C-terminal \u2018cone\u2019 has been shown to form a sodium dodecyl sulfate (SDS)-stable sub-domain (Burkhardt et al., 2011), thus, it is plausible that gate 1 is responsible for maintaining the integrity of the cell membrane in the closed state. A second gate formed by the N-terminal domains has not been observed in other secretins (Korotkov et al., 2011). The N-terminus of PilQ forms an unusual \u03b2\u03b2\u03b2\u03b1\u03b2\u03b2 fold, different from the conserved ring-building \u03b2\u03b1\u03b2\u03b2\u03b1 folds (Burkhardt et al., 2012). Thus, we hypothesize that this motif may form part of gate 2.\n\nTo determine the structure of the T4P machinery in the open state, the pipetting step during sample preparation was omitted (\u2018Materials and methods\u2019), which reduced the shearing forces and kept the assembled pilus intact (Figure 4A,B). Close inspection of the pilus shows a periodic structure (Figure 4C), which was suitable for subtomogram averaging. Since the ice surrounding the pili was thin (\u223c100 nm), it was possible to apply CTF-correction. The structure of the pilus was determined at \u223c32 \u00c5 resolution by averaging 740 subvolumes (Figure 3\u2014figure supplement 1). Power spectra calculated from a single tomographic slice or from the subtomogram average revealed a repeat distance of \u223c4.9 nm (Figure 4C, lower panels). The T. thermophilus pilus forms a right-handed helix of \u223c3 nm diameter (Figure 4D), which is different from the previously determined electron cryo-microscopy structure of the isolated Neisseria gonorrhoeae T4P (Craig et al., 2006). Diameters of pili can vary considerably and pilin proteins have limited sequence similarity (Craig and Li, 2008), which likely accounts for this difference. The result may prompt a reassessment of the functional roles of different T4P in cells. Due to the more challenging sample preparation method, the structure of the open T4P machinery with the pilus extended was determined from only \u223c300 particles at \u223c45 \u00c5 resolution (Figure 3\u2014figure supplement 1). This resolution is sufficient to reveal the central protein channel complex with the \u223c3 nm pilus protein density in the centre (Figure 4E). An extensive conformational change is evident that shifts PilQ domains N0\u2013N3 away from N4/N5 by \u223c30 \u00c5 towards the cytoplasmic membrane. This change opens the periplasmic vestibule to make way for the pilus (Figures 4E, 5A,B and Video 1). The shape and dimensions of the pore change from a tapered form ranging in width from \u223c4 nm (at N5) to \u223c8 nm (at N2/N3) in the closed state (Figure 3C), to a roughly constant 7 nm-wide channel in the open state (Figure 4E). In comparison, the closed state of Neisseria meningitidis PilQ is \u223c9 nm wide tapering to a point (Collins et al., 2004), which would be sufficient to accommodate the wider Neisseria pilus (Collins et al., 2003; Craig et al., 2006) after a comparably large conformational change. Additional conformational changes and shifts also occur in protein densities P1, P2, and C1 (Figure 5A). In the open state, we observe an extra protein density in the cytoplasm (Figure 4E, yellow arrowheads and Video 1), which we speculate could be PilF, linked to the inner membrane platform via PilM (Karuppiah and Derrick, 2011) (Figure 1). Homologous proteins have been shown to interact with the cytoplasmic ATPases, stimulating their activity (Lu et al., 2013, 2014). Because EDTA treatment caused a depletion of periplasmic protein, we cannot exclude the possibility that some proteins may have been removed from the T4P machinery. However, we also averaged complexes from a tomogram of the two cells shown in Figure 2, which contained both open (with pili) and closed (without pili) complexes and where the periplasmic protein density was considerably higher. These subtomogram averages (Figure 5\u2014figure supplement 1) show clearly that the same large conformational changes occur in the T4P machinery, irrespective of the degree of periplasmic protein depletion, and hence of the effect of EDTA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) Tomographic slices show close-up views of the T4P machinery with assembled pili (white arrowheads). Scale bar = 50 nm. (C) Upper panel, a tomographic slice of the pilus shows that the structure is periodic. Scale bar = 20 nm. A slice through the subtomogram average (inset) shows the repeat more clearly. Scale bar = 5 nm. Lower panels, power spectra of the tomographic slice (left) and the average (right) depict layer lines (orange arrows) at a distance of 1/(49 \u00c5) from the equator (green arrow), corresponding to a helical pitch of 4.9 nm. The contrast has been inverted. (D) Subtomogram average of the \u223c3 nm wide T. thermophilus pilus (green, top panel), compared to the previously determined \u223c6 nm wide structure from N. gonorrhoeae (blue, bottom panel, EMDB 1236) (Craig et al., 2006). (E) Subtomogram average (left panel) and 3D surface rendering (right panel) of the T4P machinery in the open state with the central pilus (green). The putative N0\u2013N5 (Burkhardt et al., 2012) domains of PilQ are marked. Additional protein densities distinct from PilQ (green arrowheads; C1 = proximal to the cytoplasmic membrane, P1 = central periplasmic ring 1, P2 = central periplasmic ring 2) are also shown. Compared to the closed state of the complex, additional protein densities (left panel, yellow arrowheads) are visible in the cytoplasm. See Video 1 for details. OM, outer membrane; PG, peptidoglycan; CM, cytoplasmic membrane.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) Comparisons between the PilQ components of the T4P machinery reveal large conformational changes whereby both gates open and domains N0\u2013N3 (now shown in blue for both states) shift by \u223c30 \u00c5 towards the cytoplasm on pilus extrusion. Green arrowheads indicate additional protein densities (C1 = proximal to the cytoplasmic membrane, P1 = central periplasmic ring 1, P2 = central periplasmic ring 2). In (B) the structure of the T4P has been docked into the open state. OM, outer membrane; PG, peptidoglycan; CM, cytoplasmic membrane. (C and D) Docking subtomogram averages (purple) into the tomographic volume of a cell reveals the distribution of the closed T4P machinery in situ with respect to the outer membrane (pale yellow) and cytoplasmic membrane (blue). See Video 2 for details. (E) Averaged histogram of nearest-neighbour distance between protein complexes, calculated from 9 cells, with a total of 332 data points. Error bars indicate the standard deviation of the frequency distribution for each minimal distance.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07380/elife-07380-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Subtomogram averages were calculated for the open and closed state of the T4P machinery from the tomogram shown in Figure 2A\u2013C, where the periplasm contains high-protein levels. The resolution of the subtomogram averages is limited due to the low number of protein complexes available from a single tomogram. Therefore, data for PilQ and protein P2 (green arrowhead) only are shown, which indicate essentially the same large conformational change in domains N0\u2013N3 (blue) as seen in Figure 5A,B.\n\n![Video 1.](https://cdn.elifesciences.org/articles/07380/elife-07380-media1.mov.jpg)\n\n**Video 1.:** The video was generated by morphing the two subtomogram averages in ImageJ.\n\nDocking the structures of the closed complex back into the tomographic volume reveals their three-dimensional distribution in the cell (Figure 5C,D and Video 2). We find that the T4P machinery tends to be tightly packed, with an inter-particle distance of 30\u201340 nm (Figure 5E). When the pili were depleted by pipetting, each cell contained on average 33 \u00b1 19 closed complexes. However, T. thermophilus assembles \u223c6 pili per cell (Salzer et al., 2014a, 2015), suggesting that \u223c80% of the complexes are not involved in pilus formation under standard growth conditions (Salzer et al., 2014c). We speculate that these idle complexes may form a second class of transporter, which may be active in DNA uptake or protein secretion.\n\n![Video 2.](https://cdn.elifesciences.org/articles/07380/elife-07380-media2.mov.jpg)\n\n**Video 2.:** The video shows the rendered tomographic volume of a T. thermophilus cell. The outer membrane (pale yellow), peptidoglycan (orange), and cytoplasmic membrane (blue) are shown with the closed T4P complexes (purple).\n\nTaken together, our results demonstrate that the DNA translocator protein PilQ forms a dynamic central component of the T4P machinery in T. thermophilus. The length of the complex across the wide periplasm may be an adaptation to the thermophilic environment that Thermus thrives in. However, core components of the T4P machinery are conserved in bacteria (Nudleman and Kaiser, 2004), and thus, we speculate that the overall architecture may be similar. Our findings will enable further structure-function studies of the proteins that comprise this elaborate and important macromolecular machine.\n\n## Materials and methods\n\n### Strains and culture conditions\n\nT. thermophilus HB27 was grown in TM+ medium (8 g/l tryptone, 4 g/l yeast extract, 3 g/l NaCl, 0.6 mM MgCl2 0.17 CaCl2) (Oshima and Imahori, 1971). Cells from a 24-hr pre-culture were transferred onto TM+ plates (containing 2% [wt/vol] agar) and incubated under humid conditions for 48 hr at 68\u00b0C.\n\n### Sample preparation\n\nTo determine the structure of the closed complex, cubes of agar with growing T. thermophilus cells were cut out and placed into buffer containing 20 mM Tris pH 7.4, 100 mM EDTA and gently agitated for 1 hr at room temperature. Samples were mixed 1:1 with 10 nm protein A-gold (Aurion, Wageningen, The Netherlands) as fiducial markers and applied to glow-discharged R2/2 Cu 300 mesh holey carbon-coated support grids (Quantifoil, Jena, Germany) by gentle pipetting. For the structure of the open complex, cells were treated with EDTA as above, then protein A-gold was added and grids dipped into the solution without the pipetting step. Grids were blotted for \u223c4 s in a humidified atmosphere and plunge-frozen in liquid ethane in a home-made device. Grids were maintained under liquid nitrogen and transferred into the electron microscope at liquid nitrogen temperature.\n\n### CryoET\n\nTomograms were typically collected from +60\u00b0 to \u221260\u00b0 at tilt steps of 2\u00b0 and 5\u20137 \u03bcm underfocus, using either a Tecnai Polara or Titan Krios microscope (FEI, Hillsboro, USA), both equipped with field-emission guns operating at 300 kV and Quantum energy filters (Gatan, Pleasanton, USA) operated at a slit width of 20 eV. Both instruments were fitted with K2 Summit direct electron detector cameras (Gatan, Pleasanton, USA). Dose fractionated data (3\u20135 frames per projection image) were collected using Digital Micrograph (Gatan, Pleasanton, USA) at a nominal magnification of 34,000\u00d7 (corresponding to a pixel size of 0.66 nm) in the Polara or at 33,000\u00d7 (corresponding to a pixel size of 0.42 nm) in the Krios. The total dose per tomogram was \u223c140e\u2212/\u00c52. Tomograms were aligned using gold fiducial markers and volumes reconstructed by weighted back-projection using the IMOD software (Boulder Laboratory, Boulder, USA) (Kremer et al., 1996). Contrast was enhanced by non-linear anisotropic diffusion (NAD) filtering in IMOD (Frangakis and Hegerl, 2001). Segmentation was performed using AMIRA (FEI, Hillsboro, USA).\n\n### Subtomogram averaging\n\nData collected at 34,000\u00d7 and 8 \u03bcm underfocus on the Tecnai Polara were used to calculate the subtomogram averages shown in Figure 5\u2014figure supplement 1. Subtomogram averages of the T4P machinery shown in all other figures were calculated from data collected at 33,000\u00d7 and 7 \u03bcm underfocus on the Titan Krios microscope. Coordinates corresponding to the outer membrane and inner membrane domains of the complex were marked manually in IMOD (Kremer et al., 1996). Subvolumes from twice-binned tomograms were then extracted from NAD filtered (Frangakis and Hegerl, 2001) data and an initial alignment and averaging performed in SPIDER (Frank et al., 1996). This average was used as a reference for alignment and refinement using PEET (Nicastro et al., 2006). We have previously shown that T. thermophilus PilQ is a dodecamer by biochemical analysis (Burkhardt et al., 2011), which is supported by single-particle electron microscopy of N. meningitidis PilQ (Collins et al., 2003, 2004). Therefore, 12-fold symmetry was applied to the core complex by 30\u00b0 (360\u00b0/12 subunits) rotation of each subvolume prior to the alignment search. The final averages were obtained from 3984 particles for the closed complex and 312 particles for the open complex, using a mask drawn around PilQ. Any duplicates due to oversampling were removed in PEET (Nicastro et al., 2006). Due to the larger sample size, data for the closed complex were replaced by unfiltered tomograms. For 2D comparisons between states (Figure 3C, left panel and Video 1), the NAD filtered version with low-contrast noise removed is shown. For the pilus, 740 subvolumes of \u223c2 nm length were selected in IMOD (Kremer et al., 1996), from unbinned CTF-corrected tomograms collected at 5 \u03bcm underfocus on the Titan Krios microscope. Subvolumes were aligned and averaged with a cylindrical mask and any duplicates due to oversampling were removed in PEET (Nicastro et al., 2006). Resolution estimates were obtained using conventional \u2018even/odd\u2019 Fourier shell correlation (FSC), applying the 0.5 FSC criterion. A mask was drawn around the protein to exclude membrane and peptidoglycan from this estimate. The averages in Figure 5\u2014figure supplement 1 were smoothed by Gaussian filtering in UCSF Chimera, which was used to draw all surface views and remove low-contrast background noise using the \u2018hide dust\u2019 tool (Pettersen et al., 2004). The morph shown in Video 1 was produced in ImageJ (Schneider et al., 2012). All subtomogram averages were uploaded to the EMDataBank (http://www.emdatabank.org) with ID codes 3021 (closed state, filtered), 3022 (closed state, unfiltered), 3023 (open state, filtered) and 3024 (pilus).\n\n### Calculation of power spectra\n\nImages of pili were cut out of a twice-binned tomographic slice and the unbinned subtomogram average (shown in Figure 4C) using helixboxer in EMAN2 (Tang et al., 2007). Power spectra were then calculated using the Iterative Helical Real Space Reconstruction (IHRSR++) software (Egelman, 2007).\n\n### Calculation of the distribution of PilQ complexes in the closed state\n\nThe distance between PilQ complexes was determined with a MATLAB (Mathworks, California, USA) script (Gold et al., 2014). The centroid coordinates of complexes selected for subtomogram averaging were loaded into MATLAB and the distances calculated in an iterative for for-loop according to Pythagoras' theorem. This was performed for 332 closed PilQ complexes, combined from 9 different cells. Averaged histograms were calculated to depict the mean frequency of occurrence for each minimal distance. To account for the different numbers of PilQ complexes in each data set, the mean frequency was calculated as a percentage.\n",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "67de601b-71c9-407a-83a3-453154499297",
+      "submission_id": "98c8f61f-2d91-4a55-adbc-75fbaf1d14e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Harvard Medical School, Howard Hughes Medical Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07380.012](https://doi.org/10.7554/eLife.07380.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStructure of a type IV pilus machinery in the open and closed state\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editor and another Jan L\u00f6we (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe short report titled \u201cStructure of a type IV pilus machinery in the open and closed state\u201d by Gold et al. describes the structure of a type IV secretion pore in two different states, bound and unbound to the pilus using cryo-electron tomography and sub-tomogram averaging. The message of the manuscript is straightforward. Although true molecular interpretation of the reported results will have to await studies at much higher resolutions, it is valuable to get an initial overview of what is happening in cells. The work presented is a very good example of what is currently possible.\n\nA general concern of the reviewers was that only someone with considerable background in this field can follow the description and relate it to what is known from high resolution studies of components\u2014e.g., the crystallographic studies the assembly platform (Karuppiah, et al.), secretion complex (Burckhardt, et al.), and fiber (Karuppiah, et al. and Craig, et al.). As the authors point out, the complex depicted in Figure 3C closely resembles that seen by Burckhardt, et al., but with some interesting structural differences. We therefore request a revised version that addresses the following points and that will allow a structural biologist, who does not know about bacterial pili, to understand the key points.\n\nA) It would be helpful to use consistent terminology when introducing complexes and concepts. For example, the authors first introduce \u201csecretins,\u201d followed by reference to \u201cthe T4P system\u201d and \u201cthe T4P machinery.\u201d The molecular constituents of the T4P system/machinery/complex should be clearly delineated. Does T4P refer to the PilQ secretin complex alone (please see the Introduction), or is it meant to include both PilQ and PilMNO? Are PilMNO couplers, or parts of the complex? A cartoon of the model currently supported by the literature would be helpful.\n\nB) Is the multi-ring structure, N0-N5, thought to be composed only of domains of the single protein (PilQ) or are there other components specific to particular rings. That is, do the authors think that the \u201cgate closure\u201d is a conformational change in PilQ itself or rather a redistribution of another protein?\n\nC) Related to B). A major finding of the paper is a substantial conformational transition between the open and closed T4P machinery. (i) Since there are no atomic structures fitted into the cryoEM density presented, the importance of gate 2 in recognising the growing pilus is speculative. The entire paragraph should be reworded with more caution. (ii) The closed data set comes from EDTA-treated, pipetted, pilus-deficient cells, while the open set comes from non-pipetted, pilus-positive complexes. Comparison of the average number of pili to the average number of complexes suggests, as the authors write, that 80% of complexes are not associated with pili. Do these pilus-free complexes resemble the \u201cclosed\u201d complexes seen in the pipetted, EDTA-treated cells?\n\nD) To obtain the open state, the authors use strong EDTA treatment of cells to deplete the periplasm for the open state. This is an unnatural state for the pore proteins. Without this treatment, the signal to noise ratio is low in the tomograms, but the pore proteins can nonetheless be identified even without it (Figure 2B-C). Did the authors attempt to carry out subtomogram averaging from these native data? What was the result? It would be interesting to know the result, even just from an image processing perspective.\n\nE) Related to D). The authors should introduce a caveat in the Results section that some molecules associated with the secretion pore may have been removed by the EDTA treatment and not make such strong points about \u201cin situ\u201d structures: the periplasm has been shrunk and emptied, at least partially.\n\nF) The authors comment that T. thermophilus was chosen due to its high transformation rate and convenient thermostability (Introduction). Could the authors comment on how their in situ findings might be generalized to other bacterial species that do not have unusually deep surface clefts or an \u201cextraordinarily wide\u201d periplasm (as stated in the Results and Discussion section)? Is it possible that these characteristics are responsible for exaggerated structural dynamics that more readily facilitate DNA uptake and thus the higher transformation rate?\n\nG) Some slightly more technical points:\n\ni) The IMOD reconstruction showing the pilus does not show strong features. It is hard to see repeats in Figure 4C. Would it be possible to see a Fourier transform with a peak? The pili emanating from cells in Figure 2 are fairly long. Did the authors try to get 2D averages from the cryoEM images? If there is a repeat, then it should be easily visible from a few images. The issue is important because there are such strong differences from the pili of N. gonorrhoeae. In Neisseria, would one expect the T4P channel to be that much wider? Does it use other proteins or just more of them with more than 12-fold symmetry? Independent alignment and averaging of the present data should be tried, perhaps using the 0.143 FSC criterion.\n\nii) Is there any independent verification that T4P channels have 12-fold symmetry? The authors make heavy use of the symmetry, but it seems from the MS that they are relying on someone else's result.\n\niii) How confident can we be of the correspondence between the rings in the image from subtomogram averaging and the rings in the projection from negative staining of PilQ (Figure 3C)? The spacings seem rather different. Could other components contribute to the rings in the intact sheath?\n",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3b12c26c-bda2-4b5e-a230-fb8b65266787",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C1",
+      "claim": "Secretins form large macromolecular complexes which assemble in the outer membrane of Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins of the secretin family form large macromolecular complexes, which assemble in the outer membrane of Gram-negative bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by established scientific knowledge about secretin proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "6e79d866-e3fe-4a53-b3be-b03ee0648f91",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C2",
+      "claim": "Secretins are major components of type II and III secretion systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretins are major components of type II and III secretion systems and are linked to extrusion of type IV pili (T4P) and to DNA uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "590d0c6f-004a-4e35-8b92-fd5b10d6ddfa",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C3",
+      "claim": "Secretins are linked to extrusion of type IV pili (T4P).",
+      "claim_type": "EXPLICIT",
+      "source": "Secretins are major components of type II and III secretion systems and are linked to extrusion of type IV pili (T4P) and to DNA uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "8c4fed25-0582-408a-bd65-deb84370f20d",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C4",
+      "claim": "Secretins are linked to DNA uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretins are major components of type II and III secretion systems and are linked to extrusion of type IV pili (T4P) and to DNA uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "be9e1330-1c73-480a-bf7c-be7bb1f5557a",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C5",
+      "claim": "The in situ structure of a T4P molecular machine was determined in the open and closed state by electron cryo-tomography of whole Thermus thermophilus cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By electron cryo-tomography of whole Thermus thermophilus cells, we determined the in situ structure of a T4P molecular machine in the open and the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "586c40dc-3bd8-439b-85e4-2244b504e1ab",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C6",
+      "claim": "The N-terminal domains of the central secretin PilQ shift by approximately 30 \u00c5 during the conformational change between closed and open states.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison reveals a major conformational change whereby the N-terminal domains of the central secretin PilQ shift by \u223c30 \u00c5, and two periplasmic gates open to make way for pilus extrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by structural data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "276847df-b48b-4bc8-b481-cc4b77b090b9",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C7",
+      "claim": "Two periplasmic gates open to make way for pilus extrusion during the conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison reveals a major conformational change whereby the N-terminal domains of the central secretin PilQ shift by \u223c30 \u00c5, and two periplasmic gates open to make way for pilus extrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by structural data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "08a0217e-a70a-4e0c-ba88-459d97f5a56b",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C8",
+      "claim": "The structure of the assembled pilus was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we determine the structure of the assembled pilus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by structural data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "9775de0c-6526-4b14-b42d-35c08f01a4b1",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C9",
+      "claim": "Secretins form multimeric pores through the outer membrane of Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretins form multimeric pores through the outer membrane of Gram-negative bacteria (Averhoff, 2009; Korotkov et al., 2011; Burkhardt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "2498d102-4fae-4df3-84ad-4816da8e682c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C10",
+      "claim": "Secretins are the central secretion conduits for proteins and virulence factors in type II and III secretion systems.",
+      "claim_type": "EXPLICIT",
+      "source": "They are the central secretion conduits for proteins and virulence factors in type II and III secretion systems (T2SS/T3SS) and are essential for extrusion of type IV pili (T4P) (Martin et al., 1993) and transport of some bacteriophages (Korotkov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "856c1b7f-6488-4de2-ba63-a278ac96b0b4",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C11",
+      "claim": "Secretins are essential for extrusion of type IV pili (T4P).",
+      "claim_type": "EXPLICIT",
+      "source": "They are the central secretion conduits for proteins and virulence factors in type II and III secretion systems (T2SS/T3SS) and are essential for extrusion of type IV pili (T4P) (Martin et al., 1993) and transport of some bacteriophages (Korotkov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Martin et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "b9231f53-5923-4c2b-9cc3-1e8f6e99e66f",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C12",
+      "claim": "Secretins are involved in transport of some bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "They are the central secretion conduits for proteins and virulence factors in type II and III secretion systems (T2SS/T3SS) and are essential for extrusion of type IV pili (T4P) (Martin et al., 1993) and transport of some bacteriophages (Korotkov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Korotkov et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "80645333-2f4d-4885-a4f9-ac241f08a582",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C13",
+      "claim": "Secretins are key components of DNA transport systems which mediate uptake of free DNA from the environment, referred to as natural transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, secretins are key components of DNA transport systems, which mediate uptake of free DNA from the environment, referred to as natural transformation (Schwarzenlander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schwarzenlander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "fad18136-389f-4ad4-a7c6-6496dd8e5f36",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C14",
+      "claim": "The ability to take up DNA is one of the major mechanisms of horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to take up DNA is one of the major mechanisms of horizontal gene transfer (Domingues et al., 2012) and enables organisms to adapt rapidly to changing environments (Averhoff, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Domingues et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "5d90226c-1302-4ac2-a790-7048889c59d7",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C15",
+      "claim": "DNA uptake enables organisms to adapt rapidly to changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to take up DNA is one of the major mechanisms of horizontal gene transfer (Domingues et al., 2012) and enables organisms to adapt rapidly to changing environments (Averhoff, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Averhoff, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "601a4f1f-3bc8-4c66-bb7c-a04d1a207ed7",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C16",
+      "claim": "Natural transformation is fundamental for adaptation of pathogenic bacteria to human hosts and the acquisition of multi-drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is also fundamental for adaptation of pathogenic bacteria to human hosts and the acquisition of multi-drug resistance (Domingues et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Domingues et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "c200557a-7d7f-4ff7-8648-27c3268e3ab4",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C17",
+      "claim": "In many Gram-negative bacteria such as Thermus, Neisseria, Pseudomonas, and Vibrio, DNA uptake is linked to the T4P machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "In many Gram-negative bacteria, such as Thermus, and also in many major human pathogens such as Neisseria, Pseudomonas, and Vibrio, DNA uptake is linked to the T4P machinery (Wolfgang et al., 1998; Graupner et al., 2000; Seitz and Blokesch, 2013) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wolfgang et al., 1998; Graupner et al., 2000; Seitz and Blokesch, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "b06a0db5-7513-4550-be94-c7cfc58ba2bf",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C18",
+      "claim": "Thermus thermophilus HB27 exhibits the highest transformation rates known to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the structure and function of this system, we chose the thermophilic bacterium Thermus thermophilus HB27, which exhibits the highest transformation rates known to date (Koyama et al., 1986), and due to the thermostability of its proteins is a convenient model for structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Koyama et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "9d956536-374e-4e88-9374-62fe0c6ac442",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C19",
+      "claim": "Thermus thermophilus HB27 is a convenient model for structural studies due to the thermostability of its proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the structure and function of this system, we chose the thermophilic bacterium Thermus thermophilus HB27, which exhibits the highest transformation rates known to date (Koyama et al., 1986), and due to the thermostability of its proteins is a convenient model for structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known thermostability of proteins from thermophilic organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "4be329db-ca0c-4151-a152-dedfeac71a8c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C20",
+      "claim": "The type IV pilus machinery is a heterooligomer formed from at least 10 different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The type IV pilus machinery is a heterooligomer, formed from at least 10 different proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and illustrated in the figure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "fd48898b-5267-4000-8c09-dbae7dde6ba1",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C21",
+      "claim": "The PilQ secretin forms a channel in the outer membrane for secretion of the pilus-forming protein PilA4.",
+      "claim_type": "EXPLICIT",
+      "source": "The PilQ secretin (orange) forms a channel in the outer membrane for secretion of the pilus-forming protein PilA4 (green), which is processed by the prepillin peptidase PilD (grey) (Friedrich et al., 2002; Schwarzenlander et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and supported by citations to Friedrich et al., 2002; Schwarzenlander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "830a0f3b-335c-45c6-ac17-f136882c854c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C22",
+      "claim": "PilA4 is processed by the prepillin peptidase PilD.",
+      "claim_type": "EXPLICIT",
+      "source": "The PilQ secretin (orange) forms a channel in the outer membrane for secretion of the pilus-forming protein PilA4 (green), which is processed by the prepillin peptidase PilD (grey) (Friedrich et al., 2002; Schwarzenlander et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and supported by citations to Friedrich et al., 2002; Schwarzenlander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "a417a7c6-8d26-4a9d-8007-e87976e658b1",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C23",
+      "claim": "The membrane protein PilW plays a role in DNA transport, PilQ assembly, and pilus extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane protein PilW (light orange) plays a role in DNA transport, PilQ assembly, and pilus extrusion (Rumszauer et al., 2006; Schwarzenlander et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and supported by citations to Rumszauer et al., 2006; Schwarzenlander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "1aa49354-c20d-4732-9847-c98799d13974",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C24",
+      "claim": "The dimeric complex PilC is located in the inner membrane and is essential for pilus formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric complex PilC (red) is located in the inner membrane and is essential for pilus formation (Friedrich et al., 2002; Karuppiah et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and supported by citations to Friedrich et al., 2002; Karuppiah et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "88bd1b48-6b05-4c70-ad3c-d56850f00293",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C25",
+      "claim": "PilM, PilN, and PilO are suggested to form the inner membrane assembly platform and connect the periplasmic and cytoplasmic sides of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "PilM (light brown), PilN (dark brown), and PilO (beige) are suggested to form the inner membrane assembly platform and connect the periplasmic and cytoplasmic sides of the complex (Rumszauer et al., 2006; Schwarzenlander et al., 2009; Karuppiah and Derrick, 2011; Karuppiah et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and supported by citations to Rumszauer et al., 2006; Schwarzenlander et al., 2009; Karuppiah and Derrick, 2011; Karuppiah et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "2af7edaf-b157-4b64-a559-56f7891560da",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C26",
+      "claim": "The cytoplasmic ATPases PilF and PilT1/PilT2 drive pilus extension and retraction, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytoplasmic ATPases PilF (bright yellow) and PilT1/PilT2 (pale yellow) drive pilus extension and retraction, respectively (indicated with red arrows) (Rose et al., 2011; Salzer et al., 2014b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption and supported by citations to Rose et al., 2011; Salzer et al., 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "462a57c5-13a8-41d1-b2aa-109d8c03d67c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C27",
+      "claim": "Pili are several micron-long flexible filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Pili are several micron-long flexible filaments (Craig and Li, 2008) that can generate forces of over 100 pN (Maier et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Craig and Li, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "2bf0cd56-c39d-4d9e-a26f-14ca78267633",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C28",
+      "claim": "T4P can generate forces of over 100 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Pili are several micron-long flexible filaments (Craig and Li, 2008) that can generate forces of over 100 pN (Maier et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maier et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "86a2902c-7851-4866-a8dc-33f97a4ebde6",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C29",
+      "claim": "T4P are grouped together in a class based on the production and secretion of the major pilin protein PilA4.",
+      "claim_type": "EXPLICIT",
+      "source": "T4P are grouped together in a class based on the production and secretion of the major pilin protein PilA4 (Thermus nomenclature), thousands of copies of which form the helical pilus (Craig et al., 2004; Schwarzenlander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Craig et al., 2004; Schwarzenlander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "cf1ddc4f-c033-4a84-a750-1af5e561b56e",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C30",
+      "claim": "Thousands of copies of PilA4 form the helical pilus.",
+      "claim_type": "EXPLICIT",
+      "source": "T4P are grouped together in a class based on the production and secretion of the major pilin protein PilA4 (Thermus nomenclature), thousands of copies of which form the helical pilus (Craig et al., 2004; Schwarzenlander et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Craig et al., 2004; Schwarzenlander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "4f8c4ac3-8fca-41bd-8a21-5dd1e8547181",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C31",
+      "claim": "T4P is the only known bacterial pilus that can be retracted rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4P is the only known bacterial pilus that can be retracted rapidly (Maier et al., 2004) to enable motility and adherence (Merz et al., 2000), major contributors to bacterial virulence (Hahn, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maier et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "8eaacb39-5d09-4648-a57b-770530548d9d",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C32",
+      "claim": "T4P retraction enables motility and adherence.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4P is the only known bacterial pilus that can be retracted rapidly (Maier et al., 2004) to enable motility and adherence (Merz et al., 2000), major contributors to bacterial virulence (Hahn, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Merz et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "52c260de-61ec-4713-b5e9-b82416e555b3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C33",
+      "claim": "Motility and adherence are major contributors to bacterial virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4P is the only known bacterial pilus that can be retracted rapidly (Maier et al., 2004) to enable motility and adherence (Merz et al., 2000), major contributors to bacterial virulence (Hahn, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hahn, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "31ec9bc8-69f5-4353-80d5-cdee9f515427",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C34",
+      "claim": "Assembly and disassembly of the pilus is driven by the AAA-ATPases PilF (extension) and PilT1/PilT2 (retraction).",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly and disassembly of the pilus is driven by the AAA-ATPases (ATPases associated with diverse cellular activities) PilF (extension) and PilT1/PilT2 (retraction) (Salzer et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Salzer et al., 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "e3216683-cd1d-4714-88b3-46dc405f5c65",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C35",
+      "claim": "Mature PilA4 assembles into pili extending from the inner membrane by action of PilF.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that mature PilA4 assembles into pili extending from the inner membrane by action of PilF (Collins et al., 2013; Salzer et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Collins et al., 2013; Salzer et al., 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f86fbe7c-fb99-4a27-a17d-bbad7fcee7d5",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C36",
+      "claim": "The outer membrane channel of the T4P machinery is formed by the dodecameric approximately 1 MDa secretin complex PilQ.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer membrane channel of the T4P machinery is formed by the dodacemeric \u223c1 MDa secretin complex PilQ (Burkhardt et al., 2011) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burkhardt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "6151c8d1-2b3b-465a-a1ac-aeb435089b39",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C37",
+      "claim": "PilM, PilN, and PilO are hypothesized to be a central part of the pilus assembly platform and may couple the cytoplasmic and periplasmic sides of the T4P machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Other proteins, in particular PilM, PilN, and PilO, are hypothesized to be a central part of the pilus assembly platform and may couple the cytoplasmic and periplasmic sides of the T4P machinery (Karuppiah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Karuppiah et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "02e780c5-54f2-493c-b019-6a5ab9e62c05",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C38",
+      "claim": "Some proteins of the T4P complex have been implicated to play a dual role in both pilus assembly and natural competence.",
+      "claim_type": "EXPLICIT",
+      "source": "Some proteins of the complex have been implicated to play a dual role in both pilus assembly and natural competence (Friedrich et al., 2002; Averhoff and Friedrich, 2003; Friedrich et al., 2003; Rumszauer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Friedrich et al., 2002; Averhoff and Friedrich, 2003; Friedrich et al., 2003; Rumszauer et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "af343d01-6659-4771-95b2-96f9a4cabe7a",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C39",
+      "claim": "T4P themselves are not directly involved in DNA uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent results indicate that T4P themselves are not directly involved in DNA uptake (Burkhardt et al., 2012; Salzer et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burkhardt et al., 2012; Salzer et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "7a843398-487e-48ad-ac70-d8c509ea2e94",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C40",
+      "claim": "T4P are essential for pathogenesis by mediating adhesion, biofilm formation, and twitching motility.",
+      "claim_type": "EXPLICIT",
+      "source": "T4P are essential for pathogenesis by mediating adhesion, biofilm formation, and twitching motility (Burrows, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burrows, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "55ee4b56-e73e-4ee1-9c46-a327d331c050",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C41",
+      "claim": "Both secretins and T4P play important roles in virulence of different pathogenic bacteria, which has fostered their use as new targets for drug development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both secretins and T4P play important roles in virulence of different pathogenic bacteria, which has fostered their use as new targets for drug development (Baron, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Baron, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "94eecba4-8ab0-4883-9ffa-53fd0de3f30b",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C42",
+      "claim": "There is no information on the in situ structure of either the T4P machinery or DNA translocator prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is no information on the in situ structure of either the T4P machinery or DNA translocator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "ce7405ae-da31-4882-b964-75df9affdaa3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C43",
+      "claim": "Electron cryo-tomography has the unique ability to determine protein structures in cells at molecular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron cryo-tomography (cryoET) has the unique ability to determine protein structures in cells at molecular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the capabilities of cryoET.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "9d4bba1d-0f25-4cc9-9773-04d8b61cdad9",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C44",
+      "claim": "T. thermophilus has an unusual cell architecture with deep surface clefts formed by invaginations of the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "T. thermophilus has an unusual cell architecture with deep surface clefts, formed by invaginations of the outer membrane (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "20e29295-98fd-4f61-9b26-03fd31b51638",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C45",
+      "claim": "By cryoET, the clefts in T. thermophilus are seen to be constrictions that run around the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "By cryoET, these clefts are seen to be constrictions that run around the cell body (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "afbfe3d8-ba96-431c-8134-1043a15c4229",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C46",
+      "claim": "Numerous fibrous and straight pili extend from the cell distal to the most polar outer membrane ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Distal to the most polar outer membrane ring, numerous fibrous and straight pili extend from the cell (Figure 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "c4630611-f97f-44b1-ac14-98fe9c77bbde",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C47",
+      "claim": "The pili are clearly associated with large protein complexes crossing the approximately 70 nm periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The pili are clearly associated with large protein complexes crossing the \u223c70 nm periplasm (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "98cfb837-06c3-49df-a095-fbc91a997b18",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C48",
+      "claim": "The distribution of pili and PilQ is in line with previous fluorescence and electron microscopy data demonstrating polar localization.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution is in line with previous fluorescence and electron microscopy data, which demonstrate the polar localization of PilQ (Seitz and Blokesch, 2013) and pili (Salzer et al., 2014c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Seitz and Blokesch, 2013 and Salzer et al., 2014c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "53a04566-0222-457d-8ce7-21a610a5db14",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C49",
+      "claim": "The periplasm of T. thermophilus cells is extraordinarily wide.",
+      "claim_type": "EXPLICIT",
+      "source": "The periplasm of T. thermophilus cells is extraordinarily wide (Quintela et al., 1995; Castan et al., 2002) and too dense to select subvolumes for subtomogram averaging reliably.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Quintela et al., 1995; Castan et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f4d58612-9f9f-4056-a2eb-7f62e29a8526",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C50",
+      "claim": "The periplasm of T. thermophilus is too dense to select subvolumes for subtomogram averaging reliably.",
+      "claim_type": "EXPLICIT",
+      "source": "The periplasm of T. thermophilus cells is extraordinarily wide (Quintela et al., 1995; Castan et al., 2002) and too dense to select subvolumes for subtomogram averaging reliably.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' observations during data analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "1ac5c4a9-9e0f-461d-8930-5b79c1e2801b",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C51",
+      "claim": "Cells were treated with 100 mM EDTA and pipetted to render the outer membrane leaky.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cells were treated with 100 mM ethylenediaminetetraacetic acid (EDTA) and pipetted in order to render the outer membrane leaky (Caston et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used, supported by a citation to Caston et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "b107d32c-b6c4-4527-88fc-9a6c90e521ce",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C52",
+      "claim": "EDTA treatment and pipetting depleted the periplasm of most small proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This had the desired effect of depleting the periplasm of most small proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "9b480ffd-3a7a-4d53-ab25-27fe04ca6351",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C53",
+      "claim": "Sample preparation by EDTA treatment and pipetting removed the pilus from the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample preparation by this method also removed the pilus from the complex, the empty T4P machinery was nonetheless still clearly visible (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "66b40456-1752-4638-a4d5-1b7722f505f7",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C54",
+      "claim": "The structure of the entire T4P complex was determined by subtomogram averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined by subtomogram averaging the structure of the entire complex and found features distinct from those of the T2SS and T3SS secretins (Marlovits et al., 2006; Hodgkinson et al., 2009; Reichow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the data and comparison to cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "29addf7d-f67c-4d66-b547-bf3d0611c363",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C55",
+      "claim": "The T4P machinery has features distinct from those of the T2SS and T3SS secretins.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined by subtomogram averaging the structure of the entire complex and found features distinct from those of the T2SS and T3SS secretins (Marlovits et al., 2006; Hodgkinson et al., 2009; Reichow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to structures cited from Marlovits et al., 2006; Hodgkinson et al., 2009; Reichow et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "114e9752-2ed9-4969-b005-24cb7db16ef7",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C56",
+      "claim": "The resolution obtained by averaging approximately 4000 particle subvolumes was approximately 35 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution obtained by averaging \u223c4000 particle subvolumes was \u223c35 \u00c5 (Figure 3\u2014figure supplement 1), most likely limited by the inherent flexibility of the complex (Burkhardt et al., 2011) and the difficulty of correcting precisely the contrast transfer function (CTF) for thick specimens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "57327f74-df19-4383-94ef-cb80c4181e2d",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C57",
+      "claim": "The resolution is most likely limited by the inherent flexibility of the complex and the difficulty of correcting precisely the contrast transfer function for thick specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution obtained by averaging \u223c4000 particle subvolumes was \u223c35 \u00c5 (Figure 3\u2014figure supplement 1), most likely limited by the inherent flexibility of the complex (Burkhardt et al., 2011) and the difficulty of correcting precisely the contrast transfer function (CTF) for thick specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known limitations of the technique and a citation to Burkhardt et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "5f51fa88-4706-4d10-bac4-aeaf94d82068",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C58",
+      "claim": "Subtomogram average maps show the central protein channel is approximately 35 nm long and approximately 15 nm wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtomogram average maps show the central protein channel (\u223c35 nm long and \u223c15 nm wide) made up of several ring-shaped domains inserted into the outer membrane (Figure 3C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "7e264b95-e373-4711-9850-27830b555594",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C59",
+      "claim": "The central protein channel is made up of several ring-shaped domains inserted into the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtomogram average maps show the central protein channel (\u223c35 nm long and \u223c15 nm wide) made up of several ring-shaped domains inserted into the outer membrane (Figure 3C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "3d05e0cf-0076-4767-912a-a7f0a5e21bd2",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C60",
+      "claim": "A 2D projection of the channel part of the subtomogram average was compared with projections of purified, negatively stained PilQ.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared a 2D projection of the channel part of the subtomogram average with projections of purified, negatively stained PilQ only (Burkhardt et al., 2011) (Figure 3C, central and right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C, with reference to Burkhardt et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "4c4f288a-0dd5-4398-9961-68a74945bfcc",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C61",
+      "claim": "PilQ consists of a C-terminal trapezoid 'cone structure' with staggered rings in the N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "PilQ was seen to consist of a C-terminal trapezoid 'cone structure' with staggered rings in the N-terminal domain (Burkhardt et al., 2011), in excellent agreement with our in situ structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burkhardt et al., 2011 and comparison to the current data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f321bf8d-58e0-4d1a-91ba-97792e62f5ee",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C62",
+      "claim": "The in situ structure of PilQ is in excellent agreement with the structure of purified, negatively stained PilQ.",
+      "claim_type": "EXPLICIT",
+      "source": "PilQ was seen to consist of a C-terminal trapezoid 'cone structure' with staggered rings in the N-terminal domain (Burkhardt et al., 2011), in excellent agreement with our in situ structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between the current data and Burkhardt et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "a96a3504-99df-4071-89b8-add1e9eae935",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C63",
+      "claim": "The cryoET structure shows additional protein densities extending from the putative N0 domain of PilQ through the peptidoglycan layer to the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the new cryoET structure shows additional protein densities extending from the putative N0 domain of PilQ through the peptidoglycan layer (P1 and P2) to the cytoplasmic membrane (C1) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "0b28aa06-2a1c-4c81-8299-572e9a00acf3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C64",
+      "claim": "Candidate proteins for the additional densities include PilW and PilO/PilN heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Candidate proteins include PilW, which is associated with the inner and outer membranes and is essential for the outer membrane localization of PilQ (Rumszauer et al., 2006), and PilO/PilN heterodimers that could connect PilQ to the ATPases by PilM in the cytoplasm (Karuppiah and Derrick, 2011; Karuppiah et al., 2013) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from known protein functions cited from Rumszauer et al., 2006; Karuppiah and Derrick, 2011; Karuppiah et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "fabc368b-2960-4203-8adc-e74041820a1f",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C65",
+      "claim": "These proteins are most likely connected to one another by flexible domains that are not well contrasted in the subtomogram average.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are most likely connected to one another by flexible domains that are not well contrasted in the subtomogram average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that connections are not visible in the structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "fc7f718f-69f2-4fd3-a43e-5cfc349a7ce3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C66",
+      "claim": "A longitudinal slice through the complex reveals that PilQ has two gates which are closed in the absence of a pilus.",
+      "claim_type": "EXPLICIT",
+      "source": "A longitudinal slice through the complex reveals that PilQ has two gates, which are closed in the absence of a pilus (Figure 3C, left panel and Figure 3D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f26ca2d9-b881-40c6-bd04-aa7c417d96e7",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C67",
+      "claim": "Gate 1 is formed by the 'cone' in the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Gate 1 is formed by the 'cone' in the outer membrane and gate 2 by the N1 domain at the base of PilQ, enclosing an empty periplasmic vestibule (Figure 3D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "6a4f18ed-183c-458b-b7f0-236c1d2a5721",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C68",
+      "claim": "Gate 2 is formed by the N1 domain at the base of PilQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Gate 1 is formed by the 'cone' in the outer membrane and gate 2 by the N1 domain at the base of PilQ, enclosing an empty periplasmic vestibule (Figure 3D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "05de0346-51f7-4f15-b6e7-68a59dea90b5",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C69",
+      "claim": "The two gates enclose an empty periplasmic vestibule.",
+      "claim_type": "EXPLICIT",
+      "source": "Gate 1 is formed by the 'cone' in the outer membrane and gate 2 by the N1 domain at the base of PilQ, enclosing an empty periplasmic vestibule (Figure 3D, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "64672557-1f26-4b30-a9af-1d3a8e242ac4",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C70",
+      "claim": "The C-terminal 'cone' has been shown to form an SDS-stable sub-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal 'cone' has been shown to form a sodium dodecyl sulfate (SDS)-stable sub-domain (Burkhardt et al., 2011), thus, it is plausible that gate 1 is responsible for maintaining the integrity of the cell membrane in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burkhardt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "152ed98d-aa30-481d-aa9f-cbb1d1d81c5f",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C71",
+      "claim": "It is plausible that gate 1 is responsible for maintaining the integrity of the cell membrane in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal 'cone' has been shown to form a sodium dodecyl sulfate (SDS)-stable sub-domain (Burkhardt et al., 2011), thus, it is plausible that gate 1 is responsible for maintaining the integrity of the cell membrane in the closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the SDS-stable nature of the cone structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "0e433511-4772-4793-a6ab-316aba8ccd9b",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C72",
+      "claim": "A second gate formed by the N-terminal domains has not been observed in other secretins.",
+      "claim_type": "EXPLICIT",
+      "source": "A second gate formed by the N-terminal domains has not been observed in other secretins (Korotkov et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Korotkov et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "53587a29-83cb-4822-810e-dc1e023a7211",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C73",
+      "claim": "The N-terminus of PilQ forms an unusual \u03b2\u03b2\u03b2\u03b1\u03b2\u03b2 fold, different from the conserved ring-building \u03b2\u03b1\u03b2\u03b2\u03b1 folds.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminus of PilQ forms an unusual \u03b2\u03b2\u03b2\u03b1\u03b2\u03b2 fold, different from the conserved ring-building \u03b2\u03b1\u03b2\u03b2\u03b1 folds (Burkhardt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Burkhardt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f2e7e8fd-2399-44d6-a816-a2de248498ad",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C74",
+      "claim": "The unusual \u03b2\u03b2\u03b2\u03b1\u03b2\u03b2 fold may form part of gate 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesize that this motif may form part of gate 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural features observed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "61865898-fc4d-480f-a001-2d7e45cc18e8",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C75",
+      "claim": "To determine the structure of the T4P machinery in the open state, the pipetting step during sample preparation was omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the structure of the T4P machinery in the open state, the pipetting step during sample preparation was omitted ('Materials and methods'), which reduced the shearing forces and kept the assembled pilus intact (Figure 4A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "dddd8bc9-c4ef-4f68-acbd-fadf455282c5",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C76",
+      "claim": "Omitting the pipetting step reduced the shearing forces and kept the assembled pilus intact.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the structure of the T4P machinery in the open state, the pipetting step during sample preparation was omitted ('Materials and methods'), which reduced the shearing forces and kept the assembled pilus intact (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "dd92077a-6671-4f3d-b4e2-336e1b305672",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C77",
+      "claim": "Close inspection of the pilus shows a periodic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Close inspection of the pilus shows a periodic structure (Figure 4C), which was suitable for subtomogram averaging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "40173ed1-6193-4dd4-85a7-8c8cdafeb0f6",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C78",
+      "claim": "The ice surrounding the pili was thin (approximately 100 nm), making it possible to apply CTF-correction.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the ice surrounding the pili was thin (\u223c100 nm), it was possible to apply CTF-correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the sample conditions that enabled a specific analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "d74324b4-6060-4ba4-8724-d86e60e4c945",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C79",
+      "claim": "The structure of the pilus was determined at approximately 32 \u00c5 resolution by averaging 740 subvolumes.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the pilus was determined at \u223c32 \u00c5 resolution by averaging 740 subvolumes (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "4e7459ea-1228-416a-8afc-608706f4c796",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C80",
+      "claim": "Power spectra calculated from a single tomographic slice or from the subtomogram average revealed a repeat distance of approximately 4.9 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Power spectra calculated from a single tomographic slice or from the subtomogram average revealed a repeat distance of \u223c4.9 nm (Figure 4C, lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "c981bb4c-7003-437f-8c45-9ddea26ca74a",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C81",
+      "claim": "The T. thermophilus pilus forms a right-handed helix of approximately 3 nm diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The T. thermophilus pilus forms a right-handed helix of \u223c3 nm diameter (Figure 4D), which is different from the previously determined electron cryo-microscopy structure of the isolated Neisseria gonorrhoeae T4P (Craig et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "44c1ddaa-8587-4846-968f-0e3390bf43c3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C82",
+      "claim": "The T. thermophilus pilus structure is different from the previously determined electron cryo-microscopy structure of the isolated Neisseria gonorrhoeae T4P.",
+      "claim_type": "EXPLICIT",
+      "source": "The T. thermophilus pilus forms a right-handed helix of \u223c3 nm diameter (Figure 4D), which is different from the previously determined electron cryo-microscopy structure of the isolated Neisseria gonorrhoeae T4P (Craig et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison to the structure cited from Craig et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "438ce79d-7e15-41d2-bcef-5aff9eea7252",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C83",
+      "claim": "Diameters of pili can vary considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "Diameters of pili can vary considerably and pilin proteins have limited sequence similarity (Craig and Li, 2008), which likely accounts for this difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Craig and Li, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "bf5be690-18be-44a4-b34a-86dce0913247",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C84",
+      "claim": "Pilin proteins have limited sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Diameters of pili can vary considerably and pilin proteins have limited sequence similarity (Craig and Li, 2008), which likely accounts for this difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Craig and Li, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "e77e36e7-2cf4-4a94-bbca-0d6e9503feb1",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C85",
+      "claim": "The variation in pilus diameter and limited sequence similarity likely accounts for the difference between T. thermophilus and N. gonorrhoeae pilus structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Diameters of pili can vary considerably and pilin proteins have limited sequence similarity (Craig and Li, 2008), which likely accounts for this difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known structural variation and the citation to Craig and Li, 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "791460d2-5d07-4117-b1d1-5a96f8eb0b49",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C86",
+      "claim": "The structure of the open T4P machinery with the pilus extended was determined from approximately 300 particles at approximately 45 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the more challenging sample preparation method, the structure of the open T4P machinery with the pilus extended was determined from only \u223c300 particles at \u223c45 \u00c5 resolution (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "3b8b654a-0799-418e-9ce1-89670379f0a7",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C87",
+      "claim": "The resolution of approximately 45 \u00c5 is sufficient to reveal the central protein channel complex with the approximately 3 nm pilus protein density in the centre.",
+      "claim_type": "EXPLICIT",
+      "source": "This resolution is sufficient to reveal the central protein channel complex with the \u223c3 nm pilus protein density in the centre (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "2f627b87-48b6-4337-87b0-1c7a83e46938",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C88",
+      "claim": "An extensive conformational change shifts PilQ domains N0\u2013N3 away from N4/N5 by approximately 30 \u00c5 towards the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "An extensive conformational change is evident that shifts PilQ domains N0\u2013N3 away from N4/N5 by \u223c30 \u00c5 towards the cytoplasmic membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figures 4E and 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "c966bed6-29ee-43c7-9449-290315e302df",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C89",
+      "claim": "The conformational change opens the periplasmic vestibule to make way for the pilus.",
+      "claim_type": "EXPLICIT",
+      "source": "This change opens the periplasmic vestibule to make way for the pilus (Figures 4E, 5A,B and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 4E, 5A,B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "67345bd4-580e-47a9-a5e1-f3e91ab43954",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C90",
+      "claim": "The shape and dimensions of the pore change from a tapered form ranging in width from approximately 4 nm to approximately 8 nm in the closed state, to a roughly constant 7 nm-wide channel in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape and dimensions of the pore change from a tapered form ranging in width from \u223c4 nm (at N5) to \u223c8 nm (at N2/N3) in the closed state (Figure 3C), to a roughly constant 7 nm-wide channel in the open state (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 3C and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "8ffea8e3-810c-44eb-91df-1c6cfdef101d",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C91",
+      "claim": "The closed state of Neisseria meningitidis PilQ is approximately 9 nm wide tapering to a point.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the closed state of Neisseria meningitidis PilQ is \u223c9 nm wide tapering to a point (Collins et al., 2004), which would be sufficient to accommodate the wider Neisseria pilus (Collins et al., 2003; Craig et al., 2006) after a comparably large conformational change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Collins et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "864ea474-d2ea-4fee-8d0c-482505b09fde",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C92",
+      "claim": "The closed state of N. meningitidis PilQ would be sufficient to accommodate the wider Neisseria pilus after a comparably large conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the closed state of Neisseria meningitidis PilQ is \u223c9 nm wide tapering to a point (Collins et al., 2004), which would be sufficient to accommodate the wider Neisseria pilus (Collins et al., 2003; Craig et al., 2006) after a comparably large conformational change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison to cited structures from Collins et al., 2003; Craig et al., 2006.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "432c492f-57b8-4aa4-a9fa-60a4bb84ee61",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C93",
+      "claim": "Additional conformational changes and shifts occur in protein densities P1, P2, and C1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional conformational changes and shifts also occur in protein densities P1, P2, and C1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f9cc2d19-2aff-4216-9c3b-b9dde319f1ed",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C94",
+      "claim": "In the open state, an extra protein density is observed in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open state, we observe an extra protein density in the cytoplasm (Figure 4E, yellow arrowheads and Video 1), which we speculate could be PilF, linked to the inner membrane platform via PilM (Karuppiah and Derrick, 2011) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4E and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "7cc13bd6-ab44-4c71-ad7a-1637f12d14fa",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C95",
+      "claim": "The extra protein density in the cytoplasm could be PilF, linked to the inner membrane platform via PilM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open state, we observe an extra protein density in the cytoplasm (Figure 4E, yellow arrowheads and Video 1), which we speculate could be PilF, linked to the inner membrane platform via PilM (Karuppiah and Derrick, 2011) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation and a citation to Karuppiah and Derrick, 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "038fe41e-f0c7-4875-bf19-ad58d48cb1ea",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C96",
+      "claim": "Homologous proteins have been shown to interact with the cytoplasmic ATPases, stimulating their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologous proteins have been shown to interact with the cytoplasmic ATPases, stimulating their activity (Lu et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lu et al., 2013, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "68e8b5c3-8a4e-4bec-94be-6e645aaf249c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C97",
+      "claim": "EDTA treatment may have removed some proteins from the T4P machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Because EDTA treatment caused a depletion of periplasmic protein, we cannot exclude the possibility that some proteins may have been removed from the T4P machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a potential limitation of the experimental method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "df65a2e4-006d-4be6-999b-1c3bc613f684",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C98",
+      "claim": "Subtomogram averages from cells with both open and closed complexes show the same large conformational changes occur in the T4P machinery, irrespective of the degree of periplasmic protein depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also averaged complexes from a tomogram of the two cells shown in Figure 2, which contained both open (with pili) and closed (without pili) complexes and where the periplasmic protein density was considerably higher. These subtomogram averages (Figure 5\u2014figure supplement 1) show clearly that the same large conformational changes occur in the T4P machinery, irrespective of the degree of periplasmic protein depletion, and hence of the effect of EDTA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "c849af96-8e0e-46e6-bf5f-18d733d222b0",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C99",
+      "claim": "Docking the structures of the closed complex back into the tomographic volume reveals their three-dimensional distribution in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Docking the structures of the closed complex back into the tomographic volume reveals their three-dimensional distribution in the cell (Figure 5C,D and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5C,D and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "b1d4af1c-38ae-40fc-8ec7-a3be1e5285f4",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C100",
+      "claim": "The T4P machinery tends to be tightly packed, with an inter-particle distance of 30\u201340 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the T4P machinery tends to be tightly packed, with an inter-particle distance of 30\u201340 nm (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "34a1104e-7394-4d50-aa27-85650fc9b626",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C101",
+      "claim": "When the pili were depleted by pipetting, each cell contained on average 33 \u00b1 19 closed complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "When the pili were depleted by pipetting, each cell contained on average 33 \u00b1 19 closed complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "4ba6279f-07c5-40bb-b523-79ba20d231d8",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C102",
+      "claim": "T. thermophilus assembles approximately 6 pili per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, T. thermophilus assembles \u223c6 pili per cell (Salzer et al., 2014a, 2015), suggesting that \u223c80% of the complexes are not involved in pilus formation under standard growth conditions (Salzer et al., 2014c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Salzer et al., 2014a, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "2564fd31-7453-4005-abcb-2ce83bde4f03",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C103",
+      "claim": "Approximately 80% of the complexes are not involved in pilus formation under standard growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, T. thermophilus assembles \u223c6 pili per cell (Salzer et al., 2014a, 2015), suggesting that \u223c80% of the complexes are not involved in pilus formation under standard growth conditions (Salzer et al., 2014c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the number of complexes versus the number of pili, supported by a citation to Salzer et al., 2014c.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "e3f046d5-8672-4997-af50-6d25317f96df",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C104",
+      "claim": "The idle complexes may form a second class of transporter, which may be active in DNA uptake or protein secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that these idle complexes may form a second class of transporter, which may be active in DNA uptake or protein secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that most complexes are not involved in pilus formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "5c84f3e1-297a-4a29-9a94-3d2f7ff986d8",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C105",
+      "claim": "The DNA translocator protein PilQ forms a dynamic central component of the T4P machinery in T. thermophilus.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate that the DNA translocator protein PilQ forms a dynamic central component of the T4P machinery in T. thermophilus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "58a04a83-8051-4341-8e03-1f876d65d4db",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C106",
+      "claim": "The length of the complex across the wide periplasm may be an adaptation to the thermophilic environment that Thermus thrives in.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the complex across the wide periplasm may be an adaptation to the thermophilic environment that Thermus thrives in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional significance of the observed structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "d3e89f00-4dee-4366-b09f-b3b328afd2a1",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C107",
+      "claim": "Core components of the T4P machinery are conserved in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, core components of the T4P machinery are conserved in bacteria (Nudleman and Kaiser, 2004), and thus, we speculate that the overall architecture may be similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nudleman and Kaiser, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "7cd37639-4310-472c-bd33-a28d812a5213",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C108",
+      "claim": "The overall architecture of the T4P machinery may be similar across bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, core components of the T4P machinery are conserved in bacteria (Nudleman and Kaiser, 2004), and thus, we speculate that the overall architecture may be similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the conservation of core components cited from Nudleman and Kaiser, 2004.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "e5a91790-62c4-4fdb-8540-0dcd681e7e64",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C109",
+      "claim": "T. thermophilus HB27 was grown in TM+ medium.",
+      "claim_type": "EXPLICIT",
+      "source": "T. thermophilus HB27 was grown in TM+ medium (8 g/l tryptone, 4 g/l yeast extract, 3 g/l NaCl, 0.6 mM MgCl2 0.17 CaCl2) (Oshima and Imahori, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method, supported by a citation to Oshima and Imahori, 1971.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "a8f09854-e698-41c8-932a-2b4758e615e3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C110",
+      "claim": "Cells from a 24-hr pre-culture were transferred onto TM+ plates and incubated under humid conditions for 48 hr at 68\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells from a 24-hr pre-culture were transferred onto TM+ plates (containing 2% [wt/vol] agar) and incubated under humid conditions for 48 hr at 68\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "ac499fa3-dbdc-4645-b1a6-083ab4deeef9",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C111",
+      "claim": "Tomograms were typically collected from +60\u00b0 to \u221260\u00b0 at tilt steps of 2\u00b0 and 5\u20137 \u03bcm underfocus.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomograms were typically collected from +60\u00b0 to \u221260\u00b0 at tilt steps of 2\u00b0 and 5\u20137 \u03bcm underfocus, using either a Tecnai Polara or Titan Krios microscope (FEI, Hillsboro, USA), both equipped with field-emission guns operating at 300 kV and Quantum energy filters (Gatan, Pleasanton, USA) operated at a slit width of 20 eV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "ed0be5e9-c4ea-4e6f-ab23-36f6ce6cf30a",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C112",
+      "claim": "Both microscopes were fitted with K2 Summit direct electron detector cameras.",
+      "claim_type": "EXPLICIT",
+      "source": "Both instruments were fitted with K2 Summit direct electron detector cameras (Gatan, Pleasanton, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "cf63e729-b533-4fa1-aea3-dece56f4d2c0",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C113",
+      "claim": "The total dose per tomogram was approximately 140e\u2212/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The total dose per tomogram was \u223c140e\u2212/\u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "6557d175-863e-429c-ad36-4de74b39be0e",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C114",
+      "claim": "Tomograms were aligned using gold fiducial markers and volumes reconstructed by weighted back-projection using the IMOD software.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomograms were aligned using gold fiducial markers and volumes reconstructed by weighted back-projection using the IMOD software (Boulder Laboratory, Boulder, USA) (Kremer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method, supported by a citation to Kremer et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "c744aec5-8a5a-4994-9ba8-93a523119431",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C115",
+      "claim": "Contrast was enhanced by non-linear anisotropic diffusion (NAD) filtering in IMOD.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast was enhanced by non-linear anisotropic diffusion (NAD) filtering in IMOD (Frangakis and Hegerl, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method, supported by a citation to Frangakis and Hegerl, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "e5994972-e5b0-4aa0-accc-a8781ccb77ac",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C116",
+      "claim": "T. thermophilus PilQ is a dodecamer.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that T. thermophilus PilQ is a dodecamer by biochemical analysis (Burkhardt et al., 2011), which is supported by single-particle electron microscopy of N. meningitidis PilQ (Collins et al., 2003, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burkhardt et al., 2011; Collins et al., 2003, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "f5a8d230-5caf-46ee-a35e-86a27522fc83",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C117",
+      "claim": "12-fold symmetry was applied to the core complex by 30\u00b0 rotation of each subvolume prior to the alignment search.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, 12-fold symmetry was applied to the core complex by 30\u00b0 (360\u00b0/12 subunits) rotation of each subvolume prior to the alignment search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "948e66b3-c46d-43de-be0d-c98dd30391e5",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C118",
+      "claim": "The final averages were obtained from 3984 particles for the closed complex and 312 particles for the open complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The final averages were obtained from 3984 particles for the closed complex and 312 particles for the open complex, using a mask drawn around PilQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "885b9191-3932-4084-93c0-5bffc686776d",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C119",
+      "claim": "For the pilus, 740 subvolumes of approximately 2 nm length were selected from unbinned CTF-corrected tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "For the pilus, 740 subvolumes of \u223c2 nm length were selected in IMOD (Kremer et al., 1996), from unbinned CTF-corrected tomograms collected at 5 \u03bcm underfocus on the Titan Krios microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "70a33c25-6415-4138-9abb-8e202b4e14b3",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "claim_id": "C120",
+      "claim": "Resolution estimates were obtained using conventional 'even/odd' Fourier shell correlation (FSC), applying the 0.5 FSC criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Resolution estimates were obtained using conventional 'even/odd' Fourier shell correlation (FSC), applying the 0.5 FSC criterion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The closed state structure of the T4P machinery was determined by electron cryo-tomography and subtomogram averaging at ~35 \u00c5 resolution from ~4000 particles. The structure reveals PilQ as a ~35 nm long, ~15 nm wide channel with ring-shaped domains, two closed gates (gate 1 in the outer membrane cone and gate 2 at the N1 domain base), and additional protein densities (P1, P2, C1) extending through the periplasm to the cytoplasmic membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C54, C56, C58-C63, C66-C69 collectively provide strong structural evidence for the closed state. The resolution (~35 \u00c5 from ~4000 particles), dimensional measurements, gate identification, and comparison with purified PilQ structures converge to support this result. The structure is validated by agreement with prior biochemical data (C60-C62) and is visualized in multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "d1080a46-0a41-418f-a12a-589881055edd",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The structure of the assembled T. thermophilus pilus was determined at ~32 \u00c5 resolution by subtomogram averaging of 740 subvolumes. The pilus forms a right-handed helix of ~3 nm diameter with a helical repeat of ~4.9 nm, which differs from the previously determined N. gonorrhoeae T4P structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 and C8 provide comprehensive structural characterization of the pilus. The modified sample preparation (C75-C76), periodic structure observation (C77), CTF correction capability (C78), resolution determination (C79), helical parameters (C80-C81), and comparison to other structures establish this as a well-supported finding with appropriate methodological detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "54cae3d5-2937-4401-9517-6a7b9ed72160",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The open state structure of the T4P machinery with pilus extended was determined at ~45 \u00c5 resolution from ~300 particles, revealing a major conformational change where PilQ domains N0-N3 shift ~30 \u00c5 toward the cytoplasmic membrane, opening two periplasmic gates and changing the pore from a tapered 4-8 nm channel to a constant 7 nm-wide channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90, C6-C7, and C93 describe the open state structure and conformational changes. Despite lower resolution and fewer particles than the closed state, the ~45 \u00c5 resolution is stated as sufficient to reveal key features (C87). The ~30 \u00c5 shift and gate opening are clearly documented in multiple figures and represent the major finding of the manuscript. Additional validation from cells without EDTA depletion (C98) strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "be298423-12bd-4ad1-aa23-0a5f632c4a96",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The same large conformational changes in the T4P machinery occur irrespective of the degree of periplasmic protein depletion, as demonstrated by subtomogram averages from cells containing both open and closed complexes with higher periplasmic protein density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 addresses a critical control experiment validating that EDTA treatment (C51-C52, C97) did not artifactually cause the observed conformational changes. This independent verification from cells with minimal treatment strengthens the conclusion that the open/closed states represent genuine biological conformations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "047a3bbc-6566-4c1a-b20f-84417bfc9ad8",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Additional protein densities (P1, P2, C1) distinct from PilQ are observed in the structure, with candidate proteins including PilW and PilO/PilN heterodimers. An extra cytoplasmic density in the open state is speculated to be PilF. These proteins are likely connected by flexible domains not well-resolved in the averages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 and C94-C95 identify additional densities but rely heavily on speculation and inference from prior literature rather than direct identification. While the densities are observed (supporting their existence), the protein assignments remain hypothetical. The authors appropriately acknowledge this uncertainty with cautious language ('candidate proteins,' 'speculate,' 'most likely').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "0f243cd7-4b6b-47ea-a684-618889e6b64d",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The T4P machinery is tightly packed with 30-40 nm inter-particle distances, with cells containing on average 33\u00b119 closed complexes. Since T. thermophilus assembles ~6 pili per cell, ~80% of complexes are not involved in pilus formation and may form a second class of transporter active in DNA uptake or protein secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C101 provide quantitative spatial distribution data that is well-supported. However, C102-C104 involve significant speculation about the function of 'idle' complexes. While the calculation that ~80% of complexes lack pili is valid (C103), the inference that these form a distinct functional class (C104) is speculative and lacks direct experimental support. The authors appropriately present this as speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "b935cc6e-273a-4b39-932e-d4612e8d4d74",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gate 1 is formed by an SDS-stable C-terminal cone structure and may maintain membrane integrity in the closed state. Gate 2, formed by N-terminal domains with an unusual \u03b2\u03b2\u03b2\u03b1\u03b2\u03b2 fold not observed in other secretins, may involve this unique structural motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70 and C72-C73 cite prior structural and comparative data. However, C71 and C74 are explicitly speculative ('plausible,' 'hypothesize') about the functional roles of these gates. While the structural observations are supported, the functional interpretations remain hypothetical and would require additional experimental validation such as mutagenesis or functional assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "3ef37b6a-6903-47b8-b1ab-675a6e10e8a4",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T. thermophilus cells exhibit unusual architecture with deep surface clefts formed by outer membrane invaginations that run around the cell body. Numerous pili extend from the cell distal to the most polar outer membrane ring and are associated with large protein complexes crossing the ~70 nm periplasm, consistent with polar localization observed in prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 describe cellular architecture and pilus distribution observed by cryoET. These observations are directly visualized in Figure 2 and are consistent with prior fluorescence and electron microscopy data (C48). The findings provide important cellular context for the structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "cd593bd0-b963-46c9-8157-4a6b1fa7d91c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The extraordinarily wide and dense periplasm of T. thermophilus required EDTA treatment and pipetting to deplete periplasmic proteins for reliable subtomogram averaging. This treatment removed the pilus from the complex but allowed visualization of the empty T4P machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 describe methodological challenges and solutions. The wide periplasm is supported by citations (C49), the density issue is an observational inference (C50), and the EDTA treatment method is established (C51). The effects of treatment (C52-C53) are directly observed. This methodological development was essential for obtaining the closed state structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "794494d5-6eb9-4c70-b1a1-014739ac449c",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The T4P machinery has features distinct from T2SS and T3SS secretins. The T. thermophilus pilus structure differs from N. gonorrhoeae T4P, likely due to considerable variation in pilus diameters and limited pilin sequence similarity. Similar conformational changes may occur in N. meningitidis PilQ to accommodate its wider pilus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C82 establish structural differences through direct comparison to cited structures. Claims C83-C85 provide reasonable explanations for observed differences based on established knowledge of pilus diversity. Claims C91-C92 make comparative inferences about other systems that are logically sound given the structural data and cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "6ba53afb-37d0-493d-ac95-be29f3f02e58",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The resolution of ~35 \u00c5 for the closed state structure is limited by the inherent flexibility of the complex and difficulty in precisely correcting the contrast transfer function for thick specimens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 report the achieved resolution and provide reasonable technical explanations for the limitation. The flexibility of the complex is supported by prior work (Burkhardt et al., 2011), and CTF correction challenges for thick specimens are well-established in the cryoET field. The resolution is appropriate for the biological conclusions drawn.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "73f9f758-d801-4e83-8e23-49dcfcc08a0b",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PilQ forms a dynamic central component of the T4P machinery in T. thermophilus. The length of the complex across the wide periplasm may be an adaptation to the thermophilic environment. The overall architecture may be similar across bacteria due to conservation of core T4P machinery components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is a well-supported conclusion from the structural data. Claims C106 and C108 are appropriately presented as speculation ('may be') about broader implications. Claim C107 cites conservation of core components, providing a reasonable basis for the speculation about architectural similarity. The authors appropriately distinguish demonstrated findings from speculative interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context: secretins form outer membrane complexes in Gram-negative bacteria and are components of T2SS, T3SS, T4P, and DNA uptake systems. T4P machinery consists of multiple proteins including PilQ, PilA4, and various ATPases. T4P are important for bacterial virulence, motility, and natural transformation. Prior to this study, no in situ structural information existed for T4P machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C43 provide established background knowledge supported by extensive citations to prior literature. These claims establish the biological importance and prior state of knowledge, justifying the current study. The claims are appropriately cited and represent accurate summaries of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    },
+    {
+      "id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54",
+      "content_id": "7016607e-6d1f-4037-851d-13eccc96e983",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details: T. thermophilus HB27 was cultured under specific conditions, tomograms were collected using Tecnai Polara or Titan Krios microscopes with specific parameters, data were processed using IMOD and PEET software with 12-fold symmetry applied based on prior biochemical evidence, and resolution was estimated using FSC with 0.5 criterion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C120 describe experimental methods with appropriate detail and citations. The application of 12-fold symmetry (C116-C117) is justified by prior biochemical analysis. The methods are standard for the field and adequately described for reproducibility. These methodological claims support the validity of the structural results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:01:10.534308Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be9e1330-1c73-480a-bf7c-be7bb1f5557a",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "66b40456-1752-4638-a4d5-1b7722f505f7",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "114e9752-2ed9-4969-b005-24cb7db16ef7",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "5f51fa88-4706-4d10-bac4-aeaf94d82068",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "7e264b95-e373-4711-9850-27830b555594",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "3d05e0cf-0076-4767-912a-a7f0a5e21bd2",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "4c4f288a-0dd5-4398-9961-68a74945bfcc",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "f321bf8d-58e0-4d1a-91ba-97792e62f5ee",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "a96a3504-99df-4071-89b8-add1e9eae935",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "fc7f718f-69f2-4fd3-a43e-5cfc349a7ce3",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "f26ca2d9-b881-40c6-bd04-aa7c417d96e7",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "6a4f18ed-183c-458b-b7f0-236c1d2a5721",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "05de0346-51f7-4f15-b6e7-68a59dea90b5",
+      "result_id": "3f9fc9e3-1741-48b5-bb92-a26b961d9068"
+    },
+    {
+      "claim_id": "61865898-fc4d-480f-a001-2d7e45cc18e8",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "dddd8bc9-c4ef-4f68-acbd-fadf455282c5",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "dd92077a-6671-4f3d-b4e2-336e1b305672",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "40173ed1-6193-4dd4-85a7-8c8cdafeb0f6",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "d74324b4-6060-4ba4-8724-d86e60e4c945",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "4e7459ea-1228-416a-8afc-608706f4c796",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "c981bb4c-7003-437f-8c45-9ddea26ca74a",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "08a0217e-a70a-4e0c-ba88-459d97f5a56b",
+      "result_id": "d1080a46-0a41-418f-a12a-589881055edd"
+    },
+    {
+      "claim_id": "791460d2-5d07-4117-b1d1-5a96f8eb0b49",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "3b8b654a-0799-418e-9ce1-89670379f0a7",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "2f627b87-48b6-4337-87b0-1c7a83e46938",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "c966bed6-29ee-43c7-9449-290315e302df",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "67345bd4-580e-47a9-a5e1-f3e91ab43954",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "586c40dc-3bd8-439b-85e4-2244b504e1ab",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "276847df-b48b-4bc8-b481-cc4b77b090b9",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "432c492f-57b8-4aa4-a9fa-60a4bb84ee61",
+      "result_id": "54cae3d5-2937-4401-9517-6a7b9ed72160"
+    },
+    {
+      "claim_id": "df65a2e4-006d-4be6-999b-1c3bc613f684",
+      "result_id": "be298423-12bd-4ad1-aa23-0a5f632c4a96"
+    },
+    {
+      "claim_id": "0b28aa06-2a1c-4c81-8299-572e9a00acf3",
+      "result_id": "047a3bbc-6566-4c1a-b20f-84417bfc9ad8"
+    },
+    {
+      "claim_id": "fabc368b-2960-4203-8adc-e74041820a1f",
+      "result_id": "047a3bbc-6566-4c1a-b20f-84417bfc9ad8"
+    },
+    {
+      "claim_id": "f9cc2d19-2aff-4216-9c3b-b9dde319f1ed",
+      "result_id": "047a3bbc-6566-4c1a-b20f-84417bfc9ad8"
+    },
+    {
+      "claim_id": "7cc13bd6-ab44-4c71-ad7a-1637f12d14fa",
+      "result_id": "047a3bbc-6566-4c1a-b20f-84417bfc9ad8"
+    },
+    {
+      "claim_id": "c849af96-8e0e-46e6-bf5f-18d733d222b0",
+      "result_id": "0f243cd7-4b6b-47ea-a684-618889e6b64d"
+    },
+    {
+      "claim_id": "b1d4af1c-38ae-40fc-8ec7-a3be1e5285f4",
+      "result_id": "0f243cd7-4b6b-47ea-a684-618889e6b64d"
+    },
+    {
+      "claim_id": "34a1104e-7394-4d50-aa27-85650fc9b626",
+      "result_id": "0f243cd7-4b6b-47ea-a684-618889e6b64d"
+    },
+    {
+      "claim_id": "4ba6279f-07c5-40bb-b523-79ba20d231d8",
+      "result_id": "0f243cd7-4b6b-47ea-a684-618889e6b64d"
+    },
+    {
+      "claim_id": "2564fd31-7453-4005-abcb-2ce83bde4f03",
+      "result_id": "0f243cd7-4b6b-47ea-a684-618889e6b64d"
+    },
+    {
+      "claim_id": "e3f046d5-8672-4997-af50-6d25317f96df",
+      "result_id": "0f243cd7-4b6b-47ea-a684-618889e6b64d"
+    },
+    {
+      "claim_id": "64672557-1f26-4b30-a9af-1d3a8e242ac4",
+      "result_id": "b935cc6e-273a-4b39-932e-d4612e8d4d74"
+    },
+    {
+      "claim_id": "152ed98d-aa30-481d-aa9f-cbb1d1d81c5f",
+      "result_id": "b935cc6e-273a-4b39-932e-d4612e8d4d74"
+    },
+    {
+      "claim_id": "0e433511-4772-4793-a6ab-316aba8ccd9b",
+      "result_id": "b935cc6e-273a-4b39-932e-d4612e8d4d74"
+    },
+    {
+      "claim_id": "53587a29-83cb-4822-810e-dc1e023a7211",
+      "result_id": "b935cc6e-273a-4b39-932e-d4612e8d4d74"
+    },
+    {
+      "claim_id": "f2e7e8fd-2399-44d6-a816-a2de248498ad",
+      "result_id": "b935cc6e-273a-4b39-932e-d4612e8d4d74"
+    },
+    {
+      "claim_id": "9d4bba1d-0f25-4cc9-9773-04d8b61cdad9",
+      "result_id": "3ef37b6a-6903-47b8-b1ab-675a6e10e8a4"
+    },
+    {
+      "claim_id": "20e29295-98fd-4f61-9b26-03fd31b51638",
+      "result_id": "3ef37b6a-6903-47b8-b1ab-675a6e10e8a4"
+    },
+    {
+      "claim_id": "afbfe3d8-ba96-431c-8134-1043a15c4229",
+      "result_id": "3ef37b6a-6903-47b8-b1ab-675a6e10e8a4"
+    },
+    {
+      "claim_id": "c4630611-f97f-44b1-ac14-98fe9c77bbde",
+      "result_id": "3ef37b6a-6903-47b8-b1ab-675a6e10e8a4"
+    },
+    {
+      "claim_id": "98cfb837-06c3-49df-a095-fbc91a997b18",
+      "result_id": "3ef37b6a-6903-47b8-b1ab-675a6e10e8a4"
+    },
+    {
+      "claim_id": "53a04566-0222-457d-8ce7-21a610a5db14",
+      "result_id": "cd593bd0-b963-46c9-8157-4a6b1fa7d91c"
+    },
+    {
+      "claim_id": "f4d58612-9f9f-4056-a2eb-7f62e29a8526",
+      "result_id": "cd593bd0-b963-46c9-8157-4a6b1fa7d91c"
+    },
+    {
+      "claim_id": "1ac5c4a9-9e0f-461d-8930-5b79c1e2801b",
+      "result_id": "cd593bd0-b963-46c9-8157-4a6b1fa7d91c"
+    },
+    {
+      "claim_id": "b107d32c-b6c4-4527-88fc-9a6c90e521ce",
+      "result_id": "cd593bd0-b963-46c9-8157-4a6b1fa7d91c"
+    },
+    {
+      "claim_id": "9b480ffd-3a7a-4d53-ab25-27fe04ca6351",
+      "result_id": "cd593bd0-b963-46c9-8157-4a6b1fa7d91c"
+    },
+    {
+      "claim_id": "29addf7d-f67c-4d66-b547-bf3d0611c363",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "44c1ddaa-8587-4846-968f-0e3390bf43c3",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "438ce79d-7e15-41d2-bcef-5aff9eea7252",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "bf5be690-18be-44a4-b34a-86dce0913247",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "e77e36e7-2cf4-4a94-bbca-0d6e9503feb1",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "8ffea8e3-810c-44eb-91df-1c6cfdef101d",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "864ea474-d2ea-4fee-8d0c-482505b09fde",
+      "result_id": "794494d5-6eb9-4c70-b1a1-014739ac449c"
+    },
+    {
+      "claim_id": "57327f74-df19-4383-94ef-cb80c4181e2d",
+      "result_id": "6ba53afb-37d0-493d-ac95-be29f3f02e58"
+    },
+    {
+      "claim_id": "114e9752-2ed9-4969-b005-24cb7db16ef7",
+      "result_id": "6ba53afb-37d0-493d-ac95-be29f3f02e58"
+    },
+    {
+      "claim_id": "5c84f3e1-297a-4a29-9a94-3d2f7ff986d8",
+      "result_id": "73f9f758-d801-4e83-8e23-49dcfcc08a0b"
+    },
+    {
+      "claim_id": "58a04a83-8051-4341-8e03-1f876d65d4db",
+      "result_id": "73f9f758-d801-4e83-8e23-49dcfcc08a0b"
+    },
+    {
+      "claim_id": "d3e89f00-4dee-4366-b09f-b3b328afd2a1",
+      "result_id": "73f9f758-d801-4e83-8e23-49dcfcc08a0b"
+    },
+    {
+      "claim_id": "7cd37639-4310-472c-bd33-a28d812a5213",
+      "result_id": "73f9f758-d801-4e83-8e23-49dcfcc08a0b"
+    },
+    {
+      "claim_id": "3b12c26c-bda2-4b5e-a230-fb8b65266787",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "6e79d866-e3fe-4a53-b3be-b03ee0648f91",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "590d0c6f-004a-4e35-8b92-fd5b10d6ddfa",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "8c4fed25-0582-408a-bd65-deb84370f20d",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "9775de0c-6526-4b14-b42d-35c08f01a4b1",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "2498d102-4fae-4df3-84ad-4816da8e682c",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "856c1b7f-6488-4de2-ba63-a278ac96b0b4",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "b9231f53-5923-4c2b-9cc3-1e8f6e99e66f",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "80645333-2f4d-4885-a4f9-ac241f08a582",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "fad18136-389f-4ad4-a7c6-6496dd8e5f36",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "5d90226c-1302-4ac2-a790-7048889c59d7",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "601a4f1f-3bc8-4c66-bb7c-a04d1a207ed7",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "c200557a-7d7f-4ff7-8648-27c3268e3ab4",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "b06a0db5-7513-4550-be94-c7cfc58ba2bf",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "9d956536-374e-4e88-9374-62fe0c6ac442",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "4be329db-ca0c-4151-a152-dedfeac71a8c",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "fd48898b-5267-4000-8c09-dbae7dde6ba1",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "830a0f3b-335c-45c6-ac17-f136882c854c",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "a417a7c6-8d26-4a9d-8007-e87976e658b1",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "1aa49354-c20d-4732-9847-c98799d13974",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "88bd1b48-6b05-4c70-ad3c-d56850f00293",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "2af7edaf-b157-4b64-a559-56f7891560da",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "462a57c5-13a8-41d1-b2aa-109d8c03d67c",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "2bf0cd56-c39d-4d9e-a26f-14ca78267633",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "86a2902c-7851-4866-a8dc-33f97a4ebde6",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "cf1ddc4f-c033-4a84-a750-1af5e561b56e",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "4f8c4ac3-8fca-41bd-8a21-5dd1e8547181",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "8eaacb39-5d09-4648-a57b-770530548d9d",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "52c260de-61ec-4713-b5e9-b82416e555b3",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "31ec9bc8-69f5-4353-80d5-cdee9f515427",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "e3216683-cd1d-4714-88b3-46dc405f5c65",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "f86fbe7c-fb99-4a27-a17d-bbad7fcee7d5",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "6151c8d1-2b3b-465a-a1ac-aeb435089b39",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "02e780c5-54f2-493c-b019-6a5ab9e62c05",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "af343d01-6659-4771-95b2-96f9a4cabe7a",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "7a843398-487e-48ad-ac70-d8c509ea2e94",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "55ee4b56-e73e-4ee1-9c46-a327d331c050",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "94eecba4-8ab0-4883-9ffa-53fd0de3f30b",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "ce7405ae-da31-4882-b964-75df9affdaa3",
+      "result_id": "647f75bb-a3f3-4f0e-b09c-f3d457c58845"
+    },
+    {
+      "claim_id": "e5a91790-62c4-4fdb-8540-0dcd681e7e64",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "a8f09854-e698-41c8-932a-2b4758e615e3",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "ac499fa3-dbdc-4645-b1a6-083ab4deeef9",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "ed0be5e9-c4ea-4e6f-ab23-36f6ce6cf30a",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "cf63e729-b533-4fa1-aea3-dece56f4d2c0",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "6557d175-863e-429c-ad36-4de74b39be0e",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "c744aec5-8a5a-4994-9ba8-93a523119431",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "e5994972-e5b0-4aa0-accc-a8781ccb77ac",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "f5a8d230-5caf-46ee-a35e-86a27522fc83",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "948e66b3-c46d-43de-be0d-c98dd30391e5",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "885b9191-3932-4084-93c0-5bffc686776d",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    },
+    {
+      "claim_id": "70a33c25-6415-4138-9abb-8e202b4e14b3",
+      "result_id": "7e9b32f9-cb16-48d7-a9db-60d66d679e54"
+    }
+  ],
+  "comparisons": []
+}

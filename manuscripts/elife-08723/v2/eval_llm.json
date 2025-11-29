@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C36",
+      "C38"
+    ],
+    "result": "The dependent process model (DPM), where the initial state of the braking process depends on the current state of the execution process, provides a substantially better fit to reactive stopping behavioral data than independent or interactive race models. This is demonstrated through superior fits to RT distributions and stop probability curves, as well as lower AIC and BIC values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide converging quantitative evidence from model fits (RT distributions, stop probability curves, AIC/BIC comparisons) that the DPM outperforms alternative models. The sample size (N=60) is adequate, statistical comparisons are appropriate, and the results consistently favor the DPM across multiple metrics. The conclusion (C19, C36, C38) that reactive braking depends on execution state is well-supported by these model comparison results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C29",
+      "C30"
+    ],
+    "result": "No-go decisions are best captured by drift rate modulation of the execution process, where decreasing go trial probability reduces the drift rate such that the decision boundary is not reached. The drift modulation model provided the best fit to both reactive and proactive task data compared to onset delay and boundary modulation alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C29 provide quantitative model comparison evidence (AIC/BIC) showing drift modulation outperforms alternative mechanisms in both tasks. The mechanistic interpretation (C30) follows logically from the model structure. The consistency across two independent tasks strengthens the conclusion. However, the authors acknowledge (C46, C55) that subjects may use multiple strategies, introducing some uncertainty about whether drift modulation is the exclusive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The dependent process model with drift modulation accounts for fMRI BOLD responses in corticobasal ganglia regions during the proactive task. Specifically, thalamus showed an interaction between go trial probability and decision type consistent with drift modulation predictions, while right IFG and bilateral SMA also showed predicted interaction patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide statistical evidence from fMRI ROI analysis with appropriate corrections (q<0.05, k>40). The thalamus interaction (C33) is the strongest evidence for the drift modulation model predictions. The sample size (N=20) is modest for fMRI but adequate given the within-subject design. The cross-validation approach for ROI definition (described in methods) avoids circular inference. However, the authors acknowledge (C56) that BOLD patterns share some characteristics with onset modulation predictions, suggesting the evidence is not entirely unambiguous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C20"
+    ],
+    "result": "Changing feedback structure from baseline to caution condition promoted more cautious responding, resulting in more successful stopping at later stop signal delays and slower reaction times on go trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 report behavioral effects with appropriate statistical tests (t-tests with p<0.05 and p<0.001). Claim C20 provides the specific statistics (t(59)=-2.18, p=0.03 for stopping; t(59)=-0.53, p<0.001 for RT). The sample size (N=60) is adequate and the within-subject design is appropriate. The manipulation successfully induced the intended behavioral change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "In the proactive task, participants successfully used probabilistic color cues to make go/no-go decisions, with no-go probability scaling monotonically with cued go probability and faster RTs with higher go certainty. Proactive task RTs were much faster than reactive task RTs, confirming subjects were not relying on the delayed stop signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe basic behavioral validation of the proactive task with visual evidence from figures. The monotonic scaling (C23) and RT patterns (C24) demonstrate task comprehension. The RT comparison (C25) is critical for validating that the proactive task elicits fundamentally different decisions than the reactive task. These are straightforward descriptive results well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "There was no significant effect of feedback manipulation (baseline vs. caution) on proactive task performance, but a small significant correlation (r=0.35, p<0.006, r\u00b2=0.06) was found between reactive stopping ability and proactive decisions across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 reports null effects with appropriate statistics (F-tests, p>0.05). Claim C27 provides a significant but weak correlation with appropriate statistics. The interpretation (C28) that reactive performance explains ~6% of proactive variance is mathematically correct from r\u00b2. This modest correlation supports the model's prediction of separable but convergent control signals. The sample size (N=60 for behavioral study) provides adequate power for detecting this correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "EMG validation confirmed minimal covert movements during no-go trials (<1% of trials showed suprathreshold muscle activity), and whole-brain fMRI analysis identified 24 clusters with differential modulation during no-go versus go responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 provides quantitative validation that no-go trials were not contaminated by covert movements, which is critical for interpreting the fMRI results. The low percentage (<1%) with specific statistics (mean=0.71%, max=4%) in 14 subjects with viable EMG is convincing. Claim C68 reports the whole-brain fMRI results with appropriate multiple comparison correction (q<0.05, k>40). These are methodological validation results that support the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Both reactive and proactive tasks produced RT distributions that were more normally distributed and lacked positive skew, consistent with dynamic bias in the execution process. Parameter estimates showed stronger dynamic bias influence in the proactive than reactive task, suggesting differential recruitment of gain adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 describes an observed pattern in RT distributions that justifies the model's dynamic bias assumption. Claims C51-C52 report parameter estimate comparisons between tasks. These observations are consistent with the model structure and provide face validity. However, the evaluation is somewhat qualitative (\"appeared more normal\") and the mechanistic interpretation about differential gain adaptation (C52) is inferential rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13"
+    ],
+    "result": "Background claims about basal ganglia pathways and inhibitory control mechanisms, including the roles of hyperdirect, direct, and indirect pathways, their anatomical convergence at GPi, and the interaction between proactive and reactive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C6-C11, C13) represent established knowledge from prior literature, supported by appropriate citations. They provide the theoretical framework and motivation for the current study. Claims C1-C2 are stated as general principles in the abstract. Claims C6-C10 cite multiple prior studies. Claim C11 states anatomical facts. Claim C13 cites specific electrophysiological evidence. These are appropriately characterized as prior knowledge rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C53"
+    ],
+    "result": "Discussion of prior work on basal ganglia circuitry, including rodent electrophysiology showing STN activity and striatal neuron dynamics during stopping, arkypallidal pathways, concurrent direct/indirect pathway activation, and previous computational modeling approaches to proactive control and decision thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C40-C46, C48-C49, C53) cite and accurately describe prior literature to contextualize the current findings. They are appropriately used to discuss how the current model relates to previous work. The citations appear appropriate and the descriptions are consistent with the cited work. These represent accurate characterization of prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C47",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Interpretive claims about the relationship between the dependent process model and basal ganglia circuitry, differences from oculomotor control, mechanistic implications of drift rate modulation, potential reconciliation with cortical onset delays, individual differences in strategy, and the overall conclusion that reactive and proactive control arise from convergent but separable signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims (C37, C39, C47, C54-C58) represent reasonable inferences from the data and model fits. Claims C37 and C58 connect the model to known anatomy. Claim C39 suggests differences between manual and oculomotor control based on model comparisons. Claim C47 describes model properties. Claims C54-C56 acknowledge limitations and alternative interpretations. Claim C57-C58 state the main conclusions. These interpretations are generally well-supported by the data, though some (C39, C54, C56) are speculative and appropriately qualified by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Methodological details about participant recruitment, task parameters, and imaging acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C59-C66) describe basic methodological details that are clearly stated in the methods section. They include sample sizes, demographics, task timing parameters, and imaging specifications. These are factual descriptions of the experimental procedures and are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "It remains unclear whether signals from direct, indirect, and hyperdirect pathways converge on the same GPi neurons or run in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C12 explicitly states an open question in the field that the current study does not resolve. This is appropriately characterized as uncertain and motivates the study, but is not a result that can be evaluated as supported or unsupported by the current work.",
+    "result_type": "MINOR"
+  }
+]

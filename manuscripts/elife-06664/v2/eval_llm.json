@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Recent technological advances in cryo-EM, including direct electron detectors and improved software, have enabled high-resolution structure determination for samples ranging from 170 kDa to 4 MDa. These advances include direct electron detection that dramatically increases signal-to-noise ratio, high frame rate cameras enabling motion correction, and computational approaches for data classification and refinement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13 collectively describe well-established advances in cryo-EM technology supported by multiple citations to published literature. The claims accurately represent the state of the field and are appropriately attributed to prior work with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C70"
+    ],
+    "result": "High-resolution cryo-EM structure determination is extremely computationally intensive, requiring processing times exceeding 1000 CPU-hours, which may represent a bottleneck for many potential users who lack access to high-performance computing clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C15, and C70 establish the computational challenge that motivates the study. The claim about >1000 CPU-hours is supported by citation to a published survey (Scheres, 2014), and the inference about computational bottlenecks is reasonable given these requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors developed and made publicly available an 'off-the-shelf' computing environment on Amazon EC2 called 'EM-packages-in-the-Cloud' that provides cryo-EM software packages (Relion, FREALIGN, EMAN2, Sparx, Spider, EMAN, XMIPP) and enables creation of computing clusters with 16-480+ CPUs using STARcluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C38, C64, C66-C69 describe the software environment developed by the authors. The claims are supported by the methods and data presented, including specific AMI names, software versions, and documentation availability. This represents a concrete deliverable of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C43",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Amazon's EC2 infrastructure provides cloud computing resources that have been utilized by biotechnology companies and academic researchers for various scientific applications. AWS offers spot instances at 80-90% discount from on-demand pricing ($0.25-$0.35/hr vs $2.80/hr for r3.8xlarge instances), and STARcluster enables automated cluster creation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23, C43, C61-C63 describe AWS infrastructure and pricing. The claims about prior use by companies and researchers are supported by citations. The pricing data reflects AWS rates at the time of publication. The technical details about STARcluster are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Analysis of global spot instance availability over 90 days revealed that 49.8% of r3.8xlarge instances were available below $0.35/hr (12.5% of on-demand price), and 82.2% were available at $0.65/hr (76.5% discount), indicating spot instances provide dependable, cost-effective access to computing resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present data from the authors' analysis of spot instance pricing across 9 AWS regions over 90 days. The data are shown in Figure 2 and Figure 2\u2014figure supplement 1. The conclusion about dependability is reasonably supported by the high availability percentages, though 'dependable' could be better quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "Using a publicly available 80S yeast ribosome dataset (EMPIAR 10002), the authors processed 62,022 particles through 2D classification, 3D classification into 4 classes, and refinement of 32,533 particles to obtain a 4.6 \u00c5 resolution structure. The complete workflow required 1266 CPU-hours and cost $99.64 on Amazon EC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31, C49-C57, C60 describe the complete cryo-EM processing workflow with specific parameters. The 4.6 \u00c5 resolution is supported by Figure 3 showing the structure and FSC curve. The cost and CPU-hour data are experimental measurements. The structure was deposited as EMDB 2858, providing independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C58",
+      "C59"
+    ],
+    "result": "Performance benchmarking across cluster sizes (16-480 CPUs) showed that 256 CPUs provided fastest processing and highest speedup for both 3D classification and refinement, while 128 and 64 CPUs were most cost-effective for classification and refinement respectively. Relion exhibited near-perfect performance for clusters \u226464 CPUs. STARcluster boot times were \u226410 minutes with no job wait times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36, C58-C59 present performance benchmarking data shown in Figure 4. The speedup analysis is compared to theoretical limits using Amdahl's Law. The cost-effectiveness analysis appropriately considers speedup per dollar. Boot time data include error bars (n=5). The conclusions are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C65"
+    ],
+    "result": "Based on the 80S ribosome results and extrapolation from published CPU-hour requirements, the authors estimate that high-resolution cryo-EM structures could be determined on Amazon EC2 for $50-$1500 per structure, with 3D refinement alone costing $12.65-$379.03 depending on spot instance prices and required CPU-hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C37, C65 present cost estimates based on extrapolation from one dataset and published CPU-hour requirements. While the extrapolation methodology is reasonable, the wide cost range ($50-$1500) reflects substantial uncertainty. The estimates depend on spot instance availability, dataset complexity, and processing efficiency, which may vary significantly. Additional validation with diverse datasets would strengthen these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C74",
+      "C75"
+    ],
+    "result": "Amazon's EC2 infrastructure offers a viable computing environment for cryo-EM, providing immediate, cost-effective access to hundreds of CPUs with no geographic restrictions. The power of cloud-based solutions stems from high scalability and reasonable cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C36, C74, C75 present the main conclusion that AWS is viable for cryo-EM. This is supported by the successful 4.6 \u00c5 structure determination, performance benchmarking data, cost analysis, and spot instance availability analysis. The conclusion is appropriately qualified with 'may offer' acknowledging some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Government-funded high-performance clusters have limitations including application review times up to one month, potentially missing appropriate software, CPU-hour limits requiring reapplication, which can all be circumvented by using Amazon's EC2 infrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39, C71-C73 describe limitations of government-funded clusters. C39 is supported only by personal communication rather than systematic data. C71-C72 are general knowledge claims that may vary by institution. C73's claim that 'all problems can be circumvented' is overstated\u2014AWS has its own limitations (cost variability, spot instance interruptions, data transfer requirements) not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cloud-based approaches have the potential to impact cryo-EM image processing by providing new users immediate access to high-performance clusters and allowing existing labs to increase productivity, potentially helping make high-resolution cryo-EM a routine structural biology tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42 are explicitly speculative ('we believe,' 'may help') about future impact. While the demonstrated capabilities support the potential for impact, these are forward-looking statements rather than demonstrated results. The actual adoption and impact would require longitudinal assessment of community usage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Technical details about AWS instances: spot instance interruptions cause Relion calculations to abort but data is preserved in EBS volumes; r3.8xlarge instances have 32 vCPUs but only 16 physical cores (2 vCPUs per physical CPU), providing performance between 16 and 32 CPU machines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe technical aspects of AWS infrastructure and spot instance behavior. These are based on documented AWS specifications and the authors' experience. The performance characterization of hyperthreading (C48) is a reasonable inference from the architecture, though specific benchmarking data would strengthen this claim.",
+    "result_type": "MINOR"
+  }
+]

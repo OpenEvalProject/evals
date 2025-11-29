@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study examined over 100 inbred mouse strains fed a high-fat, high-sucrose diet and observed a >30-fold variation in hepatic triglyceride accumulation. Hepatic TG was positively correlated with liver weight and total cholesterol but negatively correlated with phospholipids, suggesting that neutral lipid accumulation contributes to enlarged livers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C35-C39 provide consistent evidence of substantial genetic variation in hepatic steatosis across mouse strains. The correlations are statistically significant with appropriate p-values, and the interpretation that neutral lipids contribute to liver enlargement is reasonable given the data. Sample sizes appear adequate across 113 strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Plasma ALT activities varied widely among strains and positively correlated with hepatic TG levels. However, histological examination and immune cell marker expression indicated absence of significant inflammation or steatohepatitis after 8 weeks on the HF/HS diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 consistently show elevated ALT correlating with hepatic TG but without histological or molecular evidence of inflammation. The lack of increased immune cell markers (CD45, CD68, and others) supports the conclusion that steatosis occurred without progression to steatohepatitis at this timepoint. However, the histology data is noted as 'data not shown', which limits independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Hepatic TG content showed poor correlation with plasma TG but strong positive correlations with plasma cholesterol, insulin, glucose, and insulin resistance (HOMA-IR). Hepatic TG correlated with plasma glycerol but not free fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 report multiple correlations with appropriate statistical tests and highly significant p-values. The associations with insulin resistance and metabolic parameters are consistent with known NAFLD pathophysiology. The correlation patterns suggest lipolysis in adipose tissue contributes to hepatic steatosis. All p-values remain significant even after conservative Bonferroni correction as noted in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Hepatic TG levels showed robust correlation with overall adiposity and with subcutaneous, gonadal, and mesenteric fat depots, but not with retroperitoneal fat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 demonstrate strong statistical associations (r=0.59, p=6.70\u00d710\u207b\u00b3\u2075 for adiposity) between hepatic steatosis and specific fat depots. The depot-specific associations are interesting and suggest differential contributions of fat depots to hepatic steatosis. Statistical significance is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Transcriptomic analysis identified genes in liver and adipose tissue correlated with hepatic TG levels, including Cd36 (highest correlation in liver), c-Jun, Prkcb, Cd53, Hcst, Hoxa5, Lrrfip1, Adrb3, and Lipa, many of which have been previously implicated in lipid metabolism or inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C71 report gene expression correlations with hepatic TG and cite supporting literature for the biological relevance of these genes. The correlations are statistically significant and the genes identified have plausible mechanistic connections to NAFLD. The integration with prior literature strengthens the findings, though these are correlative observations requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Pathway enrichment analysis of genes correlated with hepatic TG revealed enrichment of mitochondrial genes (predominantly higher in steatotic livers), extracellular matrix components, and complement/coagulation cascade in liver, and enrichment of cell cycle, immune response, and inflammatory pathways in adipose tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 report pathway enrichment analysis with appropriate statistical corrections (adjusted p-values). The enrichment of mitochondrial genes (1.57-fold, p=1.99\u00d710\u207b\u2075) and other pathways is statistically significant. The interpretation that inflammation in adipose tissue contributes to NAFLD is reasonable but somewhat speculative given the correlative nature of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "GWAS identified one genome-wide significant locus on chromosome 7 (p=1.15\u00d710\u207b\u2076) containing 17 genes, which remained significant after conditioning on adiposity or insulin resistance. Three additional suggestive loci on chromosomes 3, 9, and 11 passed 5% FDR threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C78-C82 report GWAS findings with appropriate statistical thresholds (1% and 5% FDR). The conditional analysis (C80) strengthens the conclusion that the chromosome 7 locus has an independent effect on hepatic steatosis. The use of ~200,000 SNPs and FDR correction is appropriate for this study design. However, the abstract claims 'three loci' (C3) while the results describe one genome-wide significant and three suggestive loci, which is a minor inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Integration of transcriptomic and GWAS data identified Gde1 and Knop1 as high-confidence candidate genes at the chromosome 7 locus, both having significant cis-eQTLs and expression correlating with hepatic TG. Gde1 encodes a glycerophosphodiester phosphodiesterase not previously implicated in TG metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C83-C89 describe a systematic approach to prioritize candidate genes using cis-eQTL analysis and expression-trait correlations. The identification of Gde1 as a novel candidate is well-supported by the integration of genetic and transcriptomic data. The correlation of Gde1 expression with hepatic TG in liver (r=0.35, p=1.5\u00d710\u207b\u2074) and adipose (r=-0.21, p=1.6\u00d710\u207b\u00b3) provides strong evidence for its candidacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Functional validation through adenoviral overexpression and shRNA knockdown of Gde1 in mice confirmed its causal role in hepatic steatosis. Overexpression increased liver weight (40%), hepatic fat content, and specifically TG accumulation, while knockdown decreased hepatic TG. The direction of effects was consistent with HMDP observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C92-C100 provide strong functional validation of Gde1. The bidirectional manipulation (overexpression and knockdown) with consistent opposite effects on hepatic TG strongly supports causality. Statistical significance is reported (p=4.7\u00d710\u207b\u2075 for liver weight, p=0.014 for TG in overexpression; p=0.011 for TG in knockdown). Sample sizes (n=7-12) are adequate. The compensatory changes in lipogenic gene expression are interesting but require further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors hypothesize that Gde1 increases TG production by generating glycerol-3-phosphate, which can be converted through GPAT, lipin, and DGAT to form TG. Tissue-specific regulation of Gde1 may explain opposite correlations in liver versus adipose tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C116-C126 present a mechanistic hypothesis about Gde1 function. While the biochemical pathway is well-established (C119-C122), the specific role of Gde1-derived glycerol-3-phosphate in hepatic TG accumulation remains speculative (C8, C118, C123-C124). The hypothesis is plausible and supported by ENCODE data (C126), but direct biochemical evidence (e.g., measuring glycerol-3-phosphate levels, flux studies) is not provided. The down-regulation of lipogenic genes (C96, C98) seems inconsistent with increased TG synthesis, suggesting alternative mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Metabolomic analysis revealed that hepatic TG levels were negatively correlated with plasma arginine and ornithine, positively correlated with citrulline, TMANO, creatine, and creatinine. FMO5 expression correlated with hepatic TG content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 report metabolite correlations with hepatic TG. The arginine correlation is strong (r=-0.53, p=9.85\u00d710\u207b\u00b9\u00b2), while others are weaker but statistically significant. However, several correlations (ornithine, citrulline, TMANO, creatine, creatinine) have modest r values (~0.18-0.25) and p-values near 0.03, which may not survive multiple testing correction despite the authors' note that corrections were not applied for hypothesis-driven analyses. The biological interpretation requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Gut microbiota analysis showed no significant associations between bacterial taxa and hepatic TG levels at 5% FDR, though specific genera (Coprococcus, Oscillospira, Blautia, Allobaculum, Ruminococcus) were associated with other hepatic lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 report negative findings for hepatic TG but positive associations with other lipid species. The use of 5% FDR threshold is appropriate for multiple testing. The lack of association with hepatic TG is clearly stated, and the associations with cholesterol and phospholipids are properly qualified. Sample size (237 mice, 100 strains) is adequate for microbiome analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The enrichment of mitochondrial genes in steatotic livers suggests disrupted mitochondrial bioenergetics may contribute to NAFLD pathobiology. The inverse relationship between arginine and hepatic TG may reflect increased arginine degradation, potentially affecting gut barrier function and promoting inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C133 present interpretations and hypotheses based on the enrichment and metabolomics data. While the enrichment of mitochondrial genes is well-documented (C72-C73), the mechanistic interpretation (C127) is speculative. The arginine hypothesis (C130, C133) is plausible and supported by cited literature (C131-C132), but the authors note that Arg1 and Nos3 expression did not correlate with hepatic TG, suggesting post-transcriptional regulation. These interpretations require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "The introduction provides background on NAFLD, including its definition, prevalence, progression, pathogenesis (two-hit hypothesis), genetic contributions, and current treatment approaches, establishing the rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C34 present established knowledge about NAFLD from the literature, appropriately cited throughout. These claims provide context and rationale for the study. The citations appear appropriate and the characterization of NAFLD, its prevalence, and genetic contributions is consistent with the field. The discussion of the two-hit hypothesis and the DGAT2 paradox (C20-C23) provides important conceptual framing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Among missense variants in chromosome 7 candidate genes, only the Q117R substitution in Syt7 was predicted to be deleterious. Syt7 ablation has been shown to affect insulin and glucagon secretion in pancreatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 report computational prediction of variant effects and cite literature on Syt7 function. The PROVEAN prediction is a standard approach for assessing variant deleteriousness. However, this finding is not pursued further, and Syt7 is not prioritized as a candidate gene, suggesting the authors did not find this evidence compelling enough to warrant functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Studies in humans and mice have implicated Coprococcus and Oscillospira in obesity, NASH, and gut barrier function, though these microbes were not significantly associated with hepatic TG in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 cite literature on the role of specific microbes in metabolic disease. These claims provide context for the microbiome findings but acknowledge that the current study did not find significant associations with hepatic TG. The citations appear appropriate and the interpretation is appropriately cautious.",
+    "result_type": "MINOR"
+  }
+]

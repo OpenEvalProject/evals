@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors improved the perturbation biology method by developing PERA for automated extraction of prior information from pathway databases, incorporating prior information as soft restraints through a probabilistic error model, and scaling up the implementation to handle larger numbers of proteomic and phenotypic nodes. The resulting models can predict cellular responses to thousands of untested perturbations through computational simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C31-C33 describe specific methodological improvements that are well-documented in the methods section. Claims C4-C5, C27, C29-C30, C34 describe the capabilities of the improved method, which are demonstrated through the experimental results and cross-validation analyses presented in the paper. The technical implementation details and mathematical formulations are provided in the Materials and Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors performed systematic perturbation experiments in RAF-inhibitor resistant melanoma cells (SkMel-133, BRAFV600E mutant with PTEN and CDKN2A deletions) using combinations of 12 targeted drugs, generating 89 unique perturbation conditions. They measured 138 proteomic entities using RPPA and phenotypic responses (cell viability and cell cycle progression), ultimately including 82 proteomic entities, 12 activity nodes, and 5 phenotypic nodes (99 total nodes) in the network models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C44-C48, C52-C53 describe the experimental design and data collection, which are well-documented with specific numbers and methods. The cell line characterization (C36), perturbation design (C44-C46), measurement techniques (C47-C48), and data filtering (C52) are all clearly described in the Methods section and supported by supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Hierarchical clustering analysis of the proteomic response map revealed that each targeted drug induces a distinct proteomic response, drugs targeting the same pathway lead to overlapping responses, and functionally related proteins respond similarly to targeted agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are directly supported by the clustering analysis shown in Figure 2B and the supplementary figures. The hierarchical clustering clearly demonstrates distinct drug signatures and pathway-specific response patterns. The clustering-guided pathway analysis (Figure 2\u2014figure supplements 1-3) provides additional support for the functional relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors extracted a prior information network containing 154 interactions from pathway databases and integrated it with experimental data to generate 4000 distinct executable network model solutions. The average model contains 202 unique interactions (127 activating, 75 inhibitory), of which 89 interactions from the prior model conform to experimental data and are included in the average model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C60-C61 describe the network modeling results with specific quantitative details. The prior information extraction is documented in the methods (PERA algorithm), and the model generation using BP-guided decimation is described. Figure 4\u2014figure supplement 4 shows the overlap between prior and inferred interactions, supporting C61.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C38"
+    ],
+    "result": "Leave-11-out cross-validation demonstrated that network inference with prior information significantly improved predictive power compared to inference without prior information. The cumulative correlation coefficient between predicted and experimental responses increased from 0.72 to 0.84 for RAFi (p = 1\u00d710\u207b\u00b3) and from 0.71 to 0.81 for AKTi (p = 5.7\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 and C38 describe the cross-validation methodology and quantitative results with statistical significance. Figure 3 shows the correlation plots and statistical comparisons. The p-values are provided for the improvement in prediction quality, and the methodology is clearly described. The results demonstrate both predictive power and the benefit of incorporating prior information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The network models recapitulate many known interactions in pathways important in melanoma tumorigenesis (e.g., PI3K/AKT and ERK) and nominate previously unidentified interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the subnetwork diagrams in Figure 4C-E, which show known pathway interactions. The statement about novel interactions is supported by the fact that 113 interactions in the average model (202 total - 89 from priors) are not in the prior model, though specific validation of these novel interactions is not provided in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C39"
+    ],
+    "result": "Model simulations expanded the response map by three orders of magnitude, from a few thousand experimental data points to millions of predicted responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C39 are supported by the description of the simulation approach and Figure 5C and Figure 5\u2014figure supplement 1. The paper describes simulating ~70,000 unique perturbation conditions across 4000 models, leading to ~2.8 billion total predicted readouts, which represents a clear expansion from the ~7,700 experimental data points (89 conditions \u00d7 87 measurements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C7",
+      "C40",
+      "C67"
+    ],
+    "result": "In silico perturbations predicted that c-Myc co-targeting with BRAF, MEK, and cyclin D1 leads to the strongest G1-arrest response. The models indicated that c-Myc links multiple pathways (ERK, PI3K/AKT) to regulation of cell cycle arrest, consistent with its known role in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C7, C40, and C67 describe key predictions from the model simulations. These are supported by Figures 5D-H, 6A, and Table 1, which show the predicted G1-arrest responses to various perturbation combinations. The isobolograms in Figure 6A demonstrate the synergistic predictions for c-Myc co-targeting. The connection to multiple pathways (C67) is supported by the model structure and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C8",
+      "C68"
+    ],
+    "result": "JQ1, a BET bromodomain inhibitor that negatively affects c-Myc transcription, reduces c-Myc expression in SkMel-133 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C8, and C68 are supported by the Western blot data in Figure 6B (third gel), which shows reduced c-Myc protein levels in response to JQ1 treatment. The mechanism of JQ1 action (BRD4 inhibition affecting c-Myc transcription) is supported by citation to Delmore et al., 2011.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C42",
+      "C43",
+      "C9"
+    ],
+    "result": "Combinations of JQ1 with MEKi or RAFi synergistically induced G1-arrest and decreased cell viability in RAFi-resistant SkMel-133 cells, confirming the model predictions and overcoming drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C42-C43, and C9 are supported by multiple experimental results: flow cytometry data showing synergistic G1-arrest (Figure 6C-D, 84% G1-arrest for JQ1+RAFi vs 46% for RAFi alone and 51% for JQ1 alone), and cell viability assays showing synergistic reduction in viability (Figure 6E-F). The combination index calculations (CI85 = 0.46 for MEKi, CI85 = 0.47 for RAFi) quantitatively demonstrate synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Flow cytometry analysis showed that 51% and 46% of melanoma cells are in G1-stage 24 hr after treatment with JQ1 (500 nM) and RAFi (200 nM) respectively, compared to 39% in untreated cells. The combination of JQ1 and RAFi increased G1-arrest to 84%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 provide specific quantitative data from flow cytometry experiments shown in Figure 6C-D. The percentages are clearly stated and the synergistic effect is evident from the data. Error bars are provided indicating biological replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Single agent MEKi (50 nM) induced strong G1-arrest (88% G1-stage), and the combination with JQ1 arrested 92% of cells in G1-stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by the data in Figure 6\u2014figure supplement 3, which shows the flow cytometry results for MEKi alone and in combination with JQ1. The percentages are clearly stated with error bars from biological replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "SkMel-133 cells showed considerable sensitivity to single agent JQ1 (IC50 = 200 nM), similar to other BRAFV600E melanoma cell lines. When combined with JQ1 (120 nM), cell viability was reduced by 50% with 120 nM RAFi, whereas single agent RAFi IC50 was >1 \u03bcM. Similarly, when combined with 5 nM MEKi, viability was reduced by 50% with 100 nM JQ1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by the cell viability dose-response curves in Figure 6E and the quantitative data in Table 2. The IC50 values are clearly stated, and the comparison to published data for other cell lines (C100) is supported by citation to Segura et al., 2013. The synergistic reduction in IC50 values demonstrates overcoming resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "At higher doses (IC80), JQ1 showed strong synergy with both MEKi (CI85 = 0.46) and RAFi (CI85 = 0.47). At intermediate doses, JQ1 synergized with RAFi (CI50 = 0.65) and had near additive interaction with MEKi (CI50 = 0.85). Both combinations significantly improved maximal effect level (Amax), reducing cell viability beyond levels achieved by single agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by the combination index analysis in Figure 6F and the dose-response curves in Figure 6E. The CI values are quantitatively calculated using the Chou-Talalay method, and the improvement in Amax is evident from the dose-response curves. The distinction between synergy at high doses and near-additive effects at intermediate doses is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "In SkMel-133 cells, the cell viability IC50s for RAFi and MEKi are at least one order of magnitude higher than the doses required to reduce phosphorylation of immediate downstream targets by 50%, demonstrating drug resistance. When combined with JQ1, the concentrations of RAFi/MEKi sufficient to reduce cell viability by 50% are in the range of MEK and ERK phosphorylation IC50s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by the Western blot data in Figure 6B showing dose-dependent inhibition of phosphorylation, and the quantitative comparison in Table 2. The data clearly show that single agent RAFi/MEKi require much higher concentrations for phenotypic effects than for target inhibition, but the combination with JQ1 brings these into alignment, demonstrating overcoming of resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C77",
+      "C78",
+      "C76"
+    ],
+    "result": "The authors propose an anti-cancer strategy of co-targeting a specific upstream alteration (e.g., BRAFV600E) and a general downstream point of vulnerability (e.g., c-Myc) to prevent or overcome resistance to targeted drugs. This upstream-downstream combination may have dual advantages of generality in overcoming resistance and avoidance of toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C77-C78, and C76 represent the main therapeutic hypothesis proposed by the authors. While the experimental data in SkMel-133 cells support the efficacy of the JQ1+RAFi/MEKi combination (C42-C43, C69-C70, C101-C106), the generalizability of this strategy to other resistance mechanisms, cell lines, or tumor types is not experimentally demonstrated. The hypothesis about toxicity advantages (C78) is speculative without in vivo data. The authors acknowledge this limitation, stating the hypothesis needs testing in other cell lines and mouse models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "This study is claimed to be the first demonstration of combined inhibition of a BET bromodomain protein and a protein kinase molecule to overcome drug resistance in solid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by the experimental data showing synergistic effects of JQ1 with RAFi/MEKi in melanoma cells (a solid tumor model). The authors cite an independent study (C73, Fiskus et al., 2014) showing similar synergy in AML (a hematological cancer), supporting the novelty claim for solid tumors. However, the claim relies on the authors' knowledge of the literature at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The scale and predictive power of the models were beyond the reach of previously available network modeling methods, representing substantial progress in experimental design, data acquisition, and probabilistic network inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is supported by the comparison to previous modeling approaches (C24-C26) and the demonstrated improvements: 20-fold increase in data points compared to previous work, incorporation of prior information, improved cross-validation performance (C57-C59), and ability to generate millions of predictions from thousands of experimental measurements. The technical advances in BP-guided decimation and PERA are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors provide extensive background on drug resistance in cancer, particularly in melanoma with BRAFV600E mutations, including the clinical problem of resistance, mechanisms of resistance, response rates to targeted therapies, and limitations of current combination approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C22, C88-C93 represent background knowledge and context for the study. These claims are well-supported by citations to published literature and represent established knowledge in the field. The specific statistics (e.g., ~50% of melanomas have BRAFV600E, >50% response rates, ~7 months to resistance) are supported by cited clinical trial data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors propose that system-wide models covering interactions between tens to hundreds of signaling entities can describe and predict cellular response to multiple interventions, addressing limitations of previous modeling approaches (de novo quantitative models with limited interactions, qualitative models lacking quantitative predictions, and physicochemical models lacking cell-type specificity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe the rationale for the modeling approach and are supported by citations to previous modeling work. The limitations of prior approaches are documented in the cited literature, and the current study demonstrates that the proposed approach addresses these limitations through the cross-validation results (C57-C59) and the scale of predictions generated (C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C75"
+    ],
+    "result": "G1-arrest is a promising strategy for controlling melanoma growth, various genomic alterations associated with G1/S transition are involved in tumor progression, and c-Myc is a multifunctional transcription factor with a central role in cell cycle progression receiving inputs from diverse signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C75 represent established biological knowledge supported by citations to published literature (Solit et al., 2006; Rother and Jones, 2009; Dang, 2012). These provide biological context for why G1-arrest and c-Myc are relevant therapeutic targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "An independent study showed that the combination of JQ1 affecting c-Myc levels and a FLT3 tyrosine kinase inhibitor was synergistic in overcoming resistance to the FLT3 TKI in acute myeloid leukemia cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by citation to Fiskus et al., 2014. This provides independent validation of the general strategy of combining BET-BRD inhibitors with kinase inhibitors to overcome resistance, though in a different cancer type (hematological vs. solid tumor).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "JQ1 has poor in vivo efficacy with low metabolic stability and bioavailability (maximum blood concentration 0.84 \u03bcM in mice), but other BET-BRD inhibitors (I-BET-762, I-BET-151, OTX015, TEN-010, CPI-0610) have more promising pharmacokinetic properties and are in clinical trials for various cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by citations to published pharmacokinetic data (Dawson et al., 2011) and factual information about ongoing clinical trials with specific ClinicalTrials.gov identifiers. This provides important context about the translational potential and limitations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors conclude that model-based predictions provide comprehensive testable hypotheses on complex signaling mechanisms relevant to novel therapies, and speculate that more comprehensive data and improved databases will lead to higher predictive power, with potential applications to personalized medicine and genomically informed clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87, C108-C109 represent conclusions and speculations about the broader impact and future potential of the method. While C85 is supported by the demonstrated predictive power in this study, claims C86-C87 and C108-C109 are speculative about future improvements and applications. The potential for personalized medicine applications requires additional validation in diverse biological contexts and clinical settings.",
+    "result_type": "MINOR"
+  }
+]

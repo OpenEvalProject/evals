@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12"
+    ],
+    "result": "Old mice (18-22 months) have fewer total CD4+ T-cells in secondary lymphoid organs compared to adult mice (8-12 weeks), primarily due to loss of naive (CD44lo) T-cells, while memory phenotype (CD44hi) CD4+ T-cells increase with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, and C12 are directly supported by experimental data shown in Figure 1A-C with appropriate statistical testing (Mann-Whitney, p<0.05). The findings are consistent with expected thymic involution and are supported by prior literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CD4+ T-cells in old mice exhibit higher CD5 expression compared to adult mice, indicating increased intrinsic affinity for self-pMHC. CD5 serves as a validated surrogate marker for tonic TCR-pMHC interaction strength, with an inverse relationship observed between CD5 and CD3 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C16, C17, and C18 are well-supported by experimental data in Figure 1D-E with statistical significance (p<0.05). The use of CD5 as a surrogate marker is validated by multiple prior publications (C14), and the inverse CD5-CD3 relationship provides internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Cells with high CD5 expression show increased BrdU incorporation in both adult and old mice, consistent with tonic TCR engagement driving homeostatic proliferation. While the frequency of BrdU+ cells is higher in old mice, the absolute number of BrdU+CD4+ T-cells does not significantly increase due to overall CD4+ T-cell decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by experimental data in Figure 1F-G. The correlation between CD5 expression and BrdU incorporation is demonstrated, and the statistical analysis appropriately accounts for both frequency and absolute numbers. The conclusion about increased clonal representation of high self-pMHC affinity cells is a reasonable inference from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C32",
+      "C33"
+    ],
+    "result": "Old mice have more CD4+ T-cells that bind individual foreign-pMHC specificities (E641:I-Ab, OVA:I-Ab, MCC:I-Ek) compared to adult mice, indicating that remaining CD4+ T-cells bind foreign pMHC more promiscuously despite overall compartment contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C32, and C33 are supported by tetramer enrichment data shown in Figure 2 with statistical significance (p<0.05 to p<0.0001). The use of multiple pMHC specificities strengthens the conclusion that this is not unique to a single antigen. The dump tetramer gating method is appropriately validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Old mice show increased numbers of CD4+ T-cells binding multiple distinct pMHC specificities simultaneously (dual binders), with higher numbers of naive cells binding OVA+MCC and memory cells binding E641+OVA or OVA+MCC, demonstrating that the CD4+ T-cell compartment becomes polyspecific over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by experimental data in Figure 2J-L and supplementary figures with statistical significance. The two-color tetramer analysis combined with dump gating provides rigorous methodology to identify dual-binding cells. The conclusion of increased polyspecificity is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CD5 levels on adult tetramer-bound CD4+ T-cell populations directly correlate with their fold expansion over the lifespan (r\u00b2=0.82, p=0.01), and BrdU incorporation mirrors the rank order of CD5 expression (OVA>E641>MCC), establishing a predictive link between self-pMHC affinity, homeostatic proliferation, and clonal expansion with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C48 are strongly supported by correlation analysis in Figure 4A-D with appropriate statistical testing (linear regression, ANOVA). The correlation coefficient (r\u00b2=0.82) indicates a strong relationship, and the consistency between CD5 levels and BrdU incorporation across multiple pMHC specificities strengthens the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "The frequency of E641:I-Ab-bound CD4 single positive (CD4SP) thymocytes is higher in old mice compared to adults, while OVA and MCC-bound CD4SP frequencies do not differ. Given constant thymic output as a function of size, this suggests more E641-binders leave the thymus of old mice daily, indicating age-related changes in thymic selection impact CD4+ T-cell compartment composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 are supported by data in Figure 3 (p<0.05 for E641, ns for OVA/MCC). However, C42 and C44 involve inferences complicated by the acknowledged confound of mature CD4+ T-cell recirculation into the thymus (C43), which increases from ~10% to ~20% in old mice. The authors cannot resolve CD4SPs from recirculating mature cells, making the interpretation of thymic output uncertain. Additional experiments would be needed to definitively establish the contribution of altered thymic selection versus recirculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "The CD4+ T-cell compartment preferentially accumulates promiscuous constituents with age as a consequence of higher affinity TCR interactions with self-pMHC. Unlike CD8+ T-cells, CD4+ T-cells show increased foreign-pMHC binding capacity despite compartment contraction, with CD5 levels having predictive value for identifying populations with long-term clonal advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49, C58, C61, and C62 represent the major conclusions synthesized from multiple experimental findings. These are well-supported by the combined data on CD5 expression, tetramer binding, correlation analyses, and BrdU incorporation. The contrast with CD8+ T-cells is appropriately cited to prior literature (C10). The conclusions are logical inferences from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study employs E641:I-Ab (immunodominant WNV peptide), OVA:I-Ab (subdominant), and MCC:I-Ek (alloreactive) tetramers as experimental tools, with selection justified by WNV's age-related lethality, OVA's subdominance based on immunization responses and pMHC stability, and alloreactive cells' broader self-pMHC selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C25-C28 describe methodological choices supported by appropriate citations and experimental validation (Figure 2 supplements 2, 4). The characterization of OVA as subdominant is supported by immunization data, though C26 notes data \"not shown\" for SDS stability. The rationale for each tetramer choice is scientifically sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "His-tag enrichment yields more E641-bound adult cells than anti-PE/APC beads and likely detects T-cells binding tetramers with lower avidity, addressing the limitation that tetramers cannot detect all CD4+ T-cells responding to class II pMHC via weak TCR-pMHC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by comparative data in Figure 2G and supplement 3E, with C30 appropriately cited to prior work (Sabatino et al., 2011). The inference in C31 about detecting lower avidity binders is logical based on the enrichment method's properties. This methodological improvement strengthens the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C43"
+    ],
+    "result": "Dual tetramer-binding CD4SP thymocytes were not detected in the small number of enriched samples, which is unsurprising given that dual binders average <10% of peripheral populations. Additionally, mature CD4+ T-cell recirculation into the thymus increases from ~10% in adult to ~20% in old mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by experimental observations and data in Figure 2 supplement 6. C43 is appropriately cited to prior work (Hale et al., 2006). These observations provide important context for interpreting the thymic data and acknowledge limitations in distinguishing CD4SPs from recirculating mature cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Age-related thymic changes, including decreased cortical thymic epithelial cells, altered antigen processing, and reduced tissue-restricted antigen expression on medullary TECs, could increase competition for positively and negatively selecting pMHC, favoring higher TCR affinity for self-pMHC and restricting negative selection to produce a CD4+ T-cell compartment with broader binding capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C54 are primarily speculative mechanistic explanations (C50-C52 explicitly marked as speculation) supported by citations to prior work. While C53 cites experimental evidence from other studies about limiting thymic selection, C54's inference that age-related changes would produce the observed phenotype is logical but not directly tested in this manuscript. These represent reasonable hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "T-cells can productively rearrange two TCR\u03b1 subunits and express two TCRs that increase reactivity to self- and allo-pMHC, though whether T-cells expressing two TCRs increase over time remains unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is appropriately cited to prior work (Ni et al., 2014), while C56 explicitly identifies this as an unexplored question. This represents an important consideration for interpreting the polyspecificity findings and identifies a direction for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior work established a link between higher self-pMHC affinity and CD4+ T-cell memory pool residence in adult mice. This study extends these observations to old mice, with the relationship between self-pMHC affinity and clonal fitness being analogous to how TCR-pMHC affinity influences clonal fitness in polyclonal responses to cognate antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C60 appropriately cite prior work (Mandl et al., 2013) and are supported by correlation data in Figure 4. C59 draws a reasonable analogy to cognate antigen responses supported by appropriate citations. The extension to old mice represents a novel contribution building on established principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "While increased binding capacity may compensate for decreased CD4+ T-cell numbers, the consequences remain unclear. A population with higher self-pMHC affinity and broader binding capacity poses risks that could explain increased age-related autoimmune diseases like rheumatoid arthritis and giant cell arteritis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 are explicitly speculative (marked as speculation in evidence_type) about functional implications and clinical relevance. While C64 cites relevant autoimmune disease literature (Weyand et al., 2003; Mohan et al., 2011), the causal link between the observed CD4+ T-cell changes and autoimmune disease is hypothetical and not tested in this study. This represents an important direction for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background context from prior literature establishes that thymic development limits TCR affinity for self-pMHC, peripheral space constrains T-cell numbers, aging increases infection susceptibility and decreases vaccine responsiveness, TCR diversity contracts with thymic involution, and CD8+ T-cells binding foreign class I pMHC decrease over the lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 represent established knowledge from prior literature, appropriately cited throughout. These provide essential context for the study's rationale and highlight the novelty of examining CD4+ T-cells, which show contrasting behavior to CD8+ T-cells regarding foreign-pMHC binding capacity with age.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "The increase in memory phenotype CD4+ T-cells with aging could be due to prior antigen experience and/or homeostatic proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is appropriately marked as speculative reasoning supported by citations to prior work. This represents a reasonable interpretation of the observed increase in CD44hi cells, acknowledging that the relative contributions of antigen experience versus homeostatic proliferation cannot be distinguished in this experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Methodological details include mouse sources (NIA and Jackson Laboratory), class II pMHC monomer generation using baculovirus expression vectors with leucine zippers, and two-color tetramer enrichment methodology to reduce false-positives based on the principle that TCR-pMHC binding produces diagonal fluorescence patterns while non-specific binding falls off-diagonal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe methodological details that are clearly stated and appropriately cited. The two-color tetramer approach (C68-C69) is well-established in prior literature and provides rigorous methodology for distinguishing specific TCR-pMHC interactions from non-specific binding. These methods are appropriate for the study's objectives.",
+    "result_type": "MINOR"
+  }
+]

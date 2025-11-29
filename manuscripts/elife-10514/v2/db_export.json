@@ -1,0 +1,1551 @@
+{
+  "submission": {
+    "id": "c31532cd-be07-4689-88b5-8dd49bcaf767",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:05:04.444458Z",
+    "updated_at": "2025-11-29T05:05:04.444458Z"
+  },
+  "content": [
+    {
+      "id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "submission_id": "c31532cd-be07-4689-88b5-8dd49bcaf767",
+      "content_type": "manuscript",
+      "content_text": "# The primary \u03c3 factor in Escherichia coli can access the transcription elongation complex from solution in vivo\n\n## Authors\n\n- Seth R Goldman<sup>1</sup>\n- Nikhil U Nair<sup>1</sup>\n- Christopher D Wells<sup>1</sup>\n- Bryce E Nickels<sup>2</sup> \u2020\n- Ann Hochschild<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Microbiology and Immunobiology Harvard Medical School Boston United States\n2. Department of Genetics, Waksman Institute Rutgers University New Brunswick United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe \u03c3 subunit of bacterial RNA polymerase (RNAP) confers on the enzyme the ability to initiate promoter-specific transcription. Although \u03c3 factors are generally classified as initiation factors, \u03c3 can also remain associated with, and modulate the behavior of, RNAP during elongation. Here we establish that the primary \u03c3 factor in Escherichia coli, \u03c370, can function as an elongation factor in vivo by loading directly onto the transcription elongation complex (TEC) in trans. We demonstrate that \u03c370 can bind in trans to TECs that emanate from either a \u03c370-dependent promoter or a promoter that is controlled by an alternative \u03c3 factor. We further demonstrate that binding of \u03c370 to the TEC in trans can have a particularly large impact on the dynamics of transcription elongation during stationary phase. Our findings establish a mechanism whereby the primary \u03c3 factor can exert direct effects on the composition of the entire transcriptome, not just that portion that is produced under the control of \u03c370-dependent promoters.\n\n## Introduction\n\nThe \u03c3 subunit of bacterial RNA polymerase (RNAP) is an essential initiation factor that specifies the recognition of promoter sequences in the context of the RNAP holoenzyme (Feklistov et al., 2014). All bacteria contain a primary \u03c3 factor that directs transcription from the major class of bacterial promoters; in addition, most bacteria contain multiple alternative \u03c3 factors that direct transcription from specialized promoters in response to stress or alterations in growth state (Gruber and Gross, 2003; Osterberg et al., 2011; Guo and Gross, 2014). Among the best-studied primary \u03c3 factors is Escherichia coli \u03c370, which recognizes promoters that are defined by two conserved hexameric DNA sequence elements termed the \u221210 and the \u221235 elements (consensus sequences: TATAAT and TTGACA, respectively). Members of the \u03c370 family share a conserved 4-domain architecture, with domain 2 contacting the \u221210 element and domain 4 contacting the \u221235 element (Gross et al., 1998; Paget and Helmann, 2003; Feklistov et al., 2014; Paget, 2015). E. coli also has six alternative \u03c3 factors, five of which are members of the \u03c370 family and recognize similarly positioned promoter elements using the counterparts of \u03c370 domains 2 and 4. Most alternative \u03c3 factors exhibit highly restricted promoter specificity (Koo et al., 2009b; Rhodius et al., 2013). Thus, genes that are responsive to disparate physiological inputs often carry two or more promoters that are recognized by distinct \u03c3 factors (Wade et al., 2006; Gama-Castro et al., 2008; Cho et al., 2014).\n\nAlthough \u03c3 factors were historically identified as promoter specificity factors, it has become clear that their roles are not limited to the initiation phase of transcription. In particular, multiple studies have shown that the release of \u03c3 from the transcription complex is not required for entry into the elongation phase of transcription (reviewed in Mooney et al., 2005; Perdue and Roberts, 2011). Furthermore, the functional properties of a transcription elongation complex (TEC) containing \u03c3 differ from the properties of a TEC that does not contain \u03c3. For example, TEC-associated \u03c370 can induce transcription pausing by engaging promoter \u221210-like sequence elements within transcribed regions (Ring et al., 1996; Brodolin et al., 2004; Nickels et al., 2004; Hatoum and Roberts, 2008; Deighan et al., 2011; Perdue and Roberts, 2011), a phenomenon that was first uncovered in the context of the bacteriophage \u03bb late gene promoter (reviewed in Roberts et al., 1998; Perdue and Roberts, 2011). This pausing occurs due to an interaction between the \u221210-like element and domain 2 of TEC-associated \u03c370 (the same domain of \u03c370 that binds the promoter \u221210 element during transcription initiation). In addition, the presence or absence of \u03c3 can alter the accessibility of the TEC to elongation factors, including the \u03bb Q protein and RfaH (Roberts et al., 1998; Nickels et al., 2002, 2006; Sevostyanova et al., 2008), and can influence the ability of RNAP to reinitiate transcription at certain promoters (Bar-Nahum and Nudler, 2001).\n\nInitial-transcribed-region \u221210-like elements, such as those associated with the \u03bb late promoters and the late promoters of other lambdoid phages, induce early elongation pausing because they are recognized by TECs that have not yet released the \u03c370 that was used during initiation (Marr et al., 2001; Mukhopadhyay et al., 2001; Nickels et al., 2004; Kapanidis et al., 2005). In prior work, we showed that such promoter-proximal \u03c370-dependent pause elements also function to inhibit \u03c370 loss during the earliest stages of elongation, increasing the \u03c370 content of downstream TECs (Deighan et al., 2011). This effect can be detected using a template that carries a second pause element positioned downstream of a promoter-proximal pause element; specifically, the presence of the promoter-proximal pause element facilitates the retention of \u03c370 in the TEC and thus substantially enhances the extent of pausing induced by the downstream pause element both in vitro and in vivo (Deighan et al., 2011).\n\nAlthough promoter \u221210-like elements that induce transcription pausing can be recognized by a \u03c370 subunit that has been retained in the TEC after promoter escape, in vitro studies have established that transcribed region \u221210-like elements can also be recognized by a \u03c370 subunit that was not present during initiation, but rather joined the TEC by loading in trans during elongation. Thus, it has been shown that the efficiency of pausing induced by transcribed region \u221210-like elements can be increased in vitro by increasing the concentration of free \u03c370 in the transcription reactions (Mooney and Landick, 2003; Sevostyanova et al., 2008; Deighan et al., 2011; Sevostyanova et al., 2011). A key question that emerges from these in vitro findings is whether or not cellular conditions permit \u03c370 to gain access to the TEC through this \u2018trans-acting pathway\u2019 in vivo. Here we address this question by employing an assay that enables us to measure the extent of TEC pausing induced by a \u221210-like element within a transcribed region in vivo. We find that the extent of pausing induced by a transcribed-region \u221210-like element is sensitive to the intracellular concentration of \u03c370, indicating that \u03c370 can gain access to the TEC in trans. We further establish that \u03c370 can gain access to the TEC in trans and engage \u221210-like elements within transcribed regions that are expressed under the control of either a \u03c370-dependent promoter or a promoter that is recognized by an alternative \u03c3 factor. In addition, we show that the extent of TEC pausing mediated by \u03c370 trans loading varies as a function of growth-phase. Our findings imply that distinct \u03c3 factors can control initiation and elongation on the same transcription unit in vivo, and that the functional consequences of \u03c370 trans loading vary as a function of growth state.\n\n## Results\n\n### Detection of \u03c370 trans loading on a \u03c370-dependent transcription unit in vivo\n\nTo determine whether or not \u03c370 can bind in trans to the TEC in vivo, we took advantage of the fact that TEC-associated \u03c370 can induce transcription pausing by engaging transcribed-region \u221210-like elements. We therefore sought to determine whether or not the efficiency of pausing induced by a transcribed-region \u221210-like element was sensitive to the concentration of \u03c370 present in vivo. To do this, we introduced into E. coli cells a plasmid carrying a \u03c370-dependent promoter, \u03bbPR\u2032, fused to a transcribed region containing a \u221210-like element that has the potential to induce \u03c370-dependent pausing at a nascent RNA length of \u223c35 nt (Deighan et al., 2011) (Figure 1A, top); the transcription unit also contains an intrinsic terminator element (positioned to terminate transcription after the synthesis of an \u223c116 nt transcript). Pausing induced by the \u221210-like element on this template in vitro is sensitive to the concentration of free \u03c370 in the transcription reactions (Deighan et al., 2011); furthermore, because the template lacks a promoter-proximal \u221210-like element, engagement of the pause element by \u03c370 that is retained during the transition from initiation to elongation contributes minimally to the observed pausing (Deighan et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10514/elife-10514-fig1-v2.jpg)\n\n**Figure 1.:** (A) Top: schematic of DNA template carrying \u03bbPR', transcribed-region consensus extended \u201310 element (wild-type or mutant) and terminator (see \u2018Materials and methods\u2019 for the \u03bbPR\u2032 promoter sequence). Transcribed-region sequences that are complementary to the LNA probe are underlined (grey bar) and the positions corresponding to pause sites are indicated. middle Analysis of RNA transcripts in vivo by LNA probe-hybridization. RNA was isolated from MG1655 cells harvested at an OD600 of 0.8\u20131.0 (see \u2018Materials and methods\u2019). Pausing is quantified by dividing the signal in the \u223c35-nt pause RNA band by the sum of this signal and the signal in the terminated (full-length) band; this ratio is expressed as a percentage (relative abundance). Mean and SEM of six independent measurements are shown. Asterisks (*) designate values that were too low (<approximately threefold above background) for accurate quantification. M, 10-nt RNA ladder. bottom Analysis of \u03c370 levels by Western blot. Amount of soluble \u03c370 is normalized to the amount in cells carrying the experimental template (wt) and a vector that does not direct \u03c370 over-production. Mean and SEM of three independent measurements are shown. (B) Top: schematic of DNA template carrying \u03bbPR\u2032, initial-transcribed-region \u03c370-dependent pause element, transcribed-region consensus \u221210 element and terminator. middle Analysis of RNA transcripts in vivo by locked-nucleic-acid (LNA) probe-hybridization, as in panel A. bottom Analysis of \u03c370 levels by Western blot.\n\nWe tested whether or not the efficiency of pausing at a nascent RNA length of \u223c35 nt on this template was sensitive to the concentration of \u03c370 present in vivo by introducing into the cells a second plasmid that did or did not direct the production of excess \u03c370. To detect nascent RNAs associated with paused TECs (pause RNAs) and full-length terminated transcripts produced from this template, we isolated total RNA and used Northern blotting with a locked-nucleic-acid (LNA) probe, as described previously (Deighan et al., 2011). We quantified the extent of pausing by dividing the signal associated with a pause RNA by the sum of this signal and the signal associated with the full-length terminated transcript (hereafter termed relative abundance). We found that the relative abundance of a \u223c35-nt pause RNA (see Deighan et al., 2011) increased \u223cfivefold when \u03c370 was overproduced by a factor of \u223c7, compared to that observed in cells containing chromosomally encoded \u03c370 only (Figure 1A). Furthermore, the \u223c35-nt pause RNA was barely detected with or without excess \u03c370 using a control template carrying base-pair substitutions that disrupt sequence-specific recognition of the transcribed-region \u221210-like element by \u03c370 region 2 (Deighan et al., 2011) (Figure 1A). We conclude that pausing of the TEC under the control of a \u221210-like element within a transcribed region is sensitive to the intracellular concentration of \u03c370, suggesting that \u03c370 can access the TEC in trans, in vivo.\n\nNext, we investigated whether or not \u03c370 trans loading could augment the effect of a promoter-proximal pause element on the \u03c370 content of downstream TECs. To do this, we used LNA probe-hybridization to detect transcripts produced from the template shown in Figure 1B. This \u03bbPR\u2032 template bears the same \u221210-like element as the template shown in Figure 1A, but in addition carries a promoter-proximal \u221210-like element (positioned between +1 and +6) that induces \u03c370-dependent pausing at a nascent RNA length of \u223c16 nt. Consistent with previous findings (Deighan et al., 2011), the presence of the promoter-proximal \u221210-like element resulted in a substantial increase (\u223cninefold) in the relative abundance of the \u223c35-nt pause species (compare Figure 1A,B). Nonetheless, when \u03c370 was overproduced, the relative abundance of the \u223c35-nt pause species increased further (\u223c1.5 fold; Figure 1B, middle and bottom panels), indicating that the effect of the promoter-proximal \u221210-like element on the \u03c370 content of downstream TECs is not saturating.\n\n### Detection of \u03c370 trans loading on a transcription unit expressed under the control of an alternative sigma factor in vitro and in vivo\n\nWe next sought to determine whether or not free \u03c370 can bind to TECs on a transcription unit controlled by an alternative \u03c3 factor. To address this possibility we generated a new template that carried a promoter recognized by RNAP holoenzyme carrying \u03c328, an alternative \u03c3 factor that controls the expression of genes involved in flagellar synthesis (Chilcott and Hughes, 2000; Koo et al., 2009a). This \u03c328 dependent promoter (Ptar) was fused to the same transcribed region sequences that are present on the \u03bbPR\u2032 template shown in Figure 1A starting at position +6 (including the \u221210-like element; Figure 2A). We first performed in vitro transcription experiments to determine whether or not \u03c370 could access the TEC and induce pausing on this template. We formed open complexes on Ptar using RNAP holoenzyme containing \u03c328 and then allowed a single round of transcription to occur in the absence or presence of excess \u03c370. We monitored the RNA content of each reaction at three time points after the initiation of transcription. Addition of \u03c370 to the transcription reactions resulted in the appearance of a cluster of RNAs \u223c35-nt in length (Figure 2, compare lanes 4\u20136 with lanes 1\u20133). These RNAs were not observed when reactions were performed using a control template carrying disruptive base-pair substitutions within the transcribed-region \u221210-like element (Figure 2B, lanes 7\u201312). A set of reactions performed in the presence of \u03c370 but in the absence of \u03c328 confirmed that appearance of the cluster of \u223c35-nt RNAs is strictly dependent on transcription that initiates from Ptar under the control of \u03c328 (Figure 2B, lanes 13\u201315). In addition, the distribution of RNA species within this cluster closely resembles that within a similar cluster produced when reactions were performed using the \u03bbPR\u2032 template (Figure 1A) and RNAP holoenzyme containing \u03c370 (Figure 2B, lanes 16\u201318). We conclude that the \u223c35-nt RNAs are pause RNAs that arise due to the ability of \u03c370 to bind TECs generated via transcription initiating at Ptar under the control of \u03c328. These findings therefore indicate that free \u03c370 can bind to TECs on a \u03c328-controlled transcription unit in vitro.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10514/elife-10514-fig2-v2.jpg)\n\n**Figure 2.:** (A). Schematic of DNA template carrying Ptar, transcribed-region consensus \u221210 element (wild-type or mutant) and terminator. Template positions corresponding to pause sites are indicated. Note that the pause sites and terminated transcripts emanating from the Ptar promoter are located one base closer to the transcription start site (+1) than on the \u03bbPR\u2032 template (Figure 1A). (See \u2018Materials and methods\u2019 for the Ptar promoter sequence.) (B). Analysis of RNA transcripts in vitro. Single-round in vitro transcription reactions were performed with reconstituted RNA polymerase (RNAP) holoenzyme containing \u03c328 (lanes 1\u201312), RNAP core enzyme (lanes 13\u201315) or reconstituted RNAP holoenzyme containing \u03c370 (lanes 16\u201318) and three different templates: Ptar with a wild-type (wt) transcribed-region \u221210 element (lanes 1\u20136 & 13\u201315) or a mutated (mut) transcribed-region \u221210 element (lanes 7\u201312) and \u03bbPR\u2032 with a wild-type transcribed-region \u221210 element (lanes 16\u201318). The reactions were performed as a time course with samples taken at 1, 6 and 18 min after transcription was initiated; these reactions were performed in the absence of transcript cleavage factors GreA and GreB, resulting in a characteristic pattern of long-lived pause species (Deighan et al., 2011). Where indicated, excess \u03c370 (1 \u03bcM) was added with the \u2018start mix\u2019 after open complex formation. RNAs associated with paused transcription elongation complexes (TECs) (pause) and terminated transcripts (full length) are labeled. The asterisk (*) indicates a shorter terminated transcript that is the result of transcription initiating under the control of the transcribed-region \u221210 element when the \u03c370-containing holoenzyme is present in the reaction.\n\nWe then sought to determine whether or not \u03c370 can bind to TECs on a \u03c328-controlled transcription unit in vivo. For this experiment we introduced into cells three compatible plasmids. The first plasmid carried either the wild-type Ptar template or a mutant Ptar template with base-pair substitutions that disrupt sequence-specific recognition of the transcribed-region \u221210-like element by \u03c370. The second plasmid did or did not direct the production of excess \u03c370 and the third plasmid did or did not direct the production of excess \u03c328. We isolated total RNA and soluble protein from cells and used LNA probe-hybridization to detect transcripts emanating from the Ptar promoter (Figure 3A, top) and Western blotting to assess the concentrations of \u03c370 (Figure 3A, middle) and \u03c328 (Figure 3A, bottom). We found that transcripts emanating from Ptar were detected only in cells carrying the plasmid that directed the synthesis of excess \u03c328 (Figure 3A, compare lanes 2\u20135 with lane 6). Furthermore, in the presence of excess \u03c328 but in the absence of excess \u03c370, we detected a small amount of an RNA species that migrated between the 30-nt and 40-nt RNA markers (Figure 3A, lane 2). This RNA species was similar in size to the \u223c35-nt pause RNA detected by LNA probe-hybridization with the \u03bbPR\u2032 template in vivo (Figure 1A) and to the cluster of \u223c35-nt pause RNAs produced from the Ptar template in vitro in the presence of excess \u03c370 (Figure 2B, lanes 4\u20136). We found that the relative abundance of this \u223c35-nt RNA was increased \u223csevenfold when \u03c370 was overproduced by a factor of \u223c3 (Figure 3A, compare lanes 2 and 3). In addition, the \u223c35-nt RNA was not detected in cells containing the mutant Ptar template carrying base-pair substitutions in the transcribed-region \u221210-like element (Figure 3A, lanes 4 and 5).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10514/elife-10514-fig3-v2.jpg)\n\n**Figure 3.:** (A). top Detection of RNA transcripts in vivo from the templates shown in Figure 2A by LNA probe-hybridization. Transcribed-region sequences that are complementary to the LNA probe are as in Figure 1A. RNA was isolated from MG1655 cells harvested at an OD600 of 0.8\u20131.0. Pausing is quantified by dividing the signal in the \u223c35-nt pause RNA band by the sum of this signal and the signal in the terminated (full-length) band. Mean and SEM of three independent measurements are shown. Asterisks (*) designate values that were too low for accurate quantification. M, 10-nt RNA ladder. middle Analysis of \u03c370 levels by Western blot. Amount of soluble \u03c370 is normalized to the amount in cells carrying the experimental template (wt) and a vector that does not direct \u03c370 over-production. Mean and SEM of three independent measurements are shown. bottom Analysis of \u03c328 levels by Western blot. (B). Analysis of RNAP-associated transcripts produced from the wild-type Ptar template. RNA was isolated from the lysate fraction (lys) or the immunoprecipitated fraction (IP) of SG110 cells (OD600 \u223c0.5) and analyzed by LNA probe-hybridization. The cells contained a vector directing the synthesis of \u03c328, as well as a vector that did or did not direct \u03c370 overproduction.\n\nNext, we sought to determine whether or not the \u223c35-nt RNA species produced under the control of the Ptar promoter was RNAP-associated, as would be expected for a pause RNA. To carry out this experiment, we used a strain carrying a chromosomal rpoC-3xFLAG gene, encoding the RNAP \u03b2\u2032 subunit with a C-terminal 3xFLAG tag, which enables us to isolate RNAP-associated transcripts by immunoprecipitating RNAP with an antibody against FLAG. We introduced into this strain the plasmid carrying the wild-type Ptar template, the plasmid directing the production of excess \u03c370 or the corresponding empty vector, and the plasmid directing the production of excess \u03c328. We isolated RNA from cell lysates (Figure 3B, lys) or from 3\u00d7FLAG-tagged TECs immunoprecipitated with an antibody against FLAG (Figure 3B, IP) and used LNA probe-hybridization to detect transcripts emanating from the Ptar promoter. The results indicate that a major fraction of the \u223c35-nt RNA species, but not the full-length terminated transcript, was immunoprecipitated with an antibody against FLAG whether the cells lacked or contained plasmid encoded overproduced \u03c370 (Figure 3B). Thus, we conclude that a major fraction of the \u223c35-nt RNA species, but not the full-length terminated transcript, is RNAP-associated.\n\nTaken together, the results of Figure 3 establish that the appearance of the \u223c35-nt RNA depends both on the presence of \u03c328 and on an intact \u221210-like element, that the relative abundance of the \u223c35-nt RNA is increased upon overproduction of \u03c370, and that the \u223c35-nt RNA is RNAP-associated. We therefore conclude that the \u223c35-nt RNA produced from the Ptar template in vivo represents a pause RNA that arises due to the ability of \u03c370 to bind TECs generated under the control of \u03c328. Furthermore, our ability to detect \u03c370-dependent pause species produced under the control of a promoter that is recognized by an alternative \u03c3 factor enables us unambiguously to identify pausing that is mediated by trans-loaded \u03c370. Thus, our findings establish that \u03c370 can access the TEC in trans, in vivo.\n\n### Effect of growth phase on the extent of \u03c370-dependent pausing due to trans loaded \u03c370\n\nAlthough experiments using the Ptar template revealed that \u03c370 trans loading is detectable even in the absence of \u03c370 overproduction, we found that during the exponential phase of growth the extent of pausing due to chromosomally encoded trans-loaded \u03c370 appeared to be low (Figures 3A and 4A; the relative abundance of the \u223c35-nt RNA was <5%). However, when we harvested RNA from stationary phase cells containing the Ptar template, we found that the relative abundance of the \u223c35-nt RNA was \u223c50% (Figure 4A, lane 3), which was reduced to \u223c10% when the transcribed-region \u221210-like element was mutated (Figure 4A, lane 5). Furthermore, like those detected during exponential phase, the \u223c35-nt RNAs detected from the Ptar template during stationary phase were RNAP-associated (Figure 4\u2014figure supplement 1A). Thus, the \u223c35-nt RNAs detected during both exponential phase and stationary phase exhibit hallmarks of a \u03c370-dependent pause species (stable association with RNAP and sensitivity to mutations in the transcribed region \u221210-like element). We conclude that the relative abundance of pause RNAs that arise due to \u03c370 trans loading varies with growth-phase.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10514/elife-10514-fig4-v2.jpg)\n\n**Figure 4.:** (A). Detection of RNA transcripts in vivo from the templates shown in Figure 2A by LNA probe-hybridization. Transcribed-region sequences that are complementary to the LNA probe are as in Figure 1A. RNA was isolated from SG110 cells harvested at an OD600 of \u223c0.5 (log) or \u223c2.5 (sta). Pausing is quantified by dividing the signal in the \u223c35-nt pause RNA band by the sum of this signal and the signal in the terminated (full-length) band. Mean and SEM of six independent measurements are shown. Asterisks (*) designate values that were too low for accurate quantification. M, 10-nt RNA ladder. (B). top Detection of RNA transcripts derived from the wt template in vivo after treatment with rifampicin. bottom Percent of transcript remaining relative to T = 0 at indicated time points after addition of rifampicin. Mean and SEM of ten (log, 1 m), eight (sta, 1 m), or six (log and sta, 3 m) independent measurements are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10514/elife-10514-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** RNA was isolated from the lysate fraction (lys) or the immunoprecipitated fraction (IP) of SG110 cells (OD600 \u223c2.5) and analyzed by LNA probe-hybridization. The cells contained a vector directing the synthesis of \u03c328. (B). Analysis of \u03c370 levels by Western blot. Relative quantification of \u03c370 (top) is normalized to the abundance of rpoA (\u03b1) in each sample (bottom). Mean and SEM of six independent measurements are shown.\n\nTo investigate the basis for the growth phase-dependent change in the abundance of the pause RNAs that arise due to \u03c370 trans loading, we first performed Western blot analysis to compare the amounts of \u03c370 in exponential and stationary phase cells. The results indicated that the cell extracts prepared from exponential and stationary phase cultures contained comparable amounts of \u03c370 (Figure 4\u2014figure supplement 1B). We conclude that the growth phase-dependent increase in the abundance of the \u223c35-nt pause RNAs is not a consequence of an increase in the total cellular concentration of \u03c370. (We note that these data do not exclude the possibility that growth phase-dependent changes in the amount of free \u03c370 available to bind the TEC contribute to changes in the abundance of the pause RNAs that arise due to \u03c370 trans loading.)\n\nWe next used the RNAP inhibitor rifampicin to analyze the half-life of pause RNAs that arise due to \u03c370 trans loading during exponential phase or stationary phase. To do this, we isolated RNA from cells either just before or 1 and 3 min after rifampicin treatment and used LNA-probe hybridization to measure the decay of the \u223c35-nt RNAs and full-length transcripts. We found that the half-life of the \u223c35-nt pause RNA was greater in stationary phase than in exponential phase (Figure 4B). In addition, the full-length terminated transcript was at least as stable in stationary phase as in exponential phase (Figure 4B), excluding the possibility that the increase in the relative abundance of the pause RNA might simply reflect a destabilization of the full-length transcript in stationary phase. Thus, our findings indicate that the extent of pausing on the Ptar template due to trans-loaded \u03c370 varies with growth phase, at least in part, due to an increase in the half-life of the pause.\n\n## Discussion\n\nHere we show that the primary \u03c3 factor of E. coli can act as a classical elongation factor and engage the TEC in trans, in vivo, inducing transcription pausing by binding transcribed-region promoter-like elements (Figures 1, 3 and 4). Furthermore, we find that the extent of pausing due to trans-loaded \u03c370 varies with growth phase, becoming most prominent during the stationary phase of growth (Figure 4). We demonstrate that \u03c370 trans loading can occur in vivo regardless of whether the TEC was generated through initiation at a \u03c370-dependent promoter (Figure 1) or a promoter that is recognized by an alternative \u03c3 factor (Figures 3, 4). Our findings indicate that at least two distinct \u03c3 factors can influence the functional properties of a transcription complex during the transcription cycle in vivo: one during initiation and one (or more) during elongation.\n\n### Dual pathways for \u03c370 to associate with the TEC in vivo\n\nThe results presented here, coupled with prior work (Shimamoto et al., 1986; Ring et al., 1996; Bar-Nahum and Nudler, 2001; Mukhopadhyay et al., 2001; Brodolin et al., 2004; Nickels et al., 2004; Wade and Struhl, 2004; Kapanidis et al., 2005; Raffaelle et al., 2005; Reppas et al., 2006; Mooney et al., 2009; Deighan et al., 2011) define two pathways whereby \u03c370 can access the TEC in vivo, a pathway that operates in cis and a pathway that operates in trans (Figure 5). The cis-acting pathway depends on retention in the TEC of the \u03c370 that was used during initiation, with the extent of \u03c370 retention being modulated by the sequence of the initial transcribed region (Figure 5A) (Deighan et al., 2011). Thus, the cis-acting (retention) pathway is necessarily restricted to transcription units controlled by \u03c370-dependent promoters. In contrast, the trans-acting pathway identified in this study, which can be functionally defined by its sensitivity to the intracellular concentration of \u03c370, is potentially operative on all transcription units (Figure 5B). Moreover, the two pathways can function in concert. Thus, we found that \u03c370 trans loading can increase the \u03c370 content of TECs generated under the control of a \u03c370-dependent promoter even in the presence of an initial-transcribed-region \u03c370-dependent pause element that augments \u03c370 retention.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10514/elife-10514-fig5-v2.jpg)\n\n**Figure 5.:** (A). Cis-acting pathway (Deighan et al., 2011). The retention in the TEC of the \u03c370 that was used during initiation enables pausing at transcribed-region \u221210-like elements on transcription units that are expressed under the control of \u03c370-dependent promoters. Presence of an initial-transcribed-region \u03c370-dependent \u221210-like element increases the \u03c370 content of downstream TECs and increases the efficiency of pausing at a second \u03c370-dependent pause element further downstream. Promoter, grey rectangle; \u03c370-dependent pause elements, black rectangles; RNA, wavy red line. (B). Trans-acting pathway. Binding of \u03c370 to TECs that have lost the \u03c3 factor used during initiation (here,\u00a0\u03c328) increases the efficiency of pausing at a transcribed-region \u03c370-dependent pause element. Promoter, blue rectangle; \u03c370-dependent pause element, black rectangle; RNA, wavy red line.\n\nThe use of a transcription unit expressed under the control of an alternative \u03c3 factor enabled us to analyze the trans-acting pathway independent of the cis-acting pathway. We found that the effects of trans-loaded \u03c370 on pausing varied with growth phase. In particular, pausing mediated by chromosomally encoded trans-loaded \u03c370 was detectable during the exponential phase of growth and this pausing became more prominent during stationary phase. Our experiments revealed that this increase in the relative abundance of the pause species during stationary phase was explained at least in part by an increase in pause half-life in stationary phase cells as compared to exponentially growing cells. We speculate that this increase in pause half-life might be due to a drop in the intracellular NTP concentrations as nutrients are depleted and the cells enter stationary phase (Buckstein et al., 2008).\n\nIt is intriguing to consider our findings in light of a prior report of growth-phase dependent changes in the ability of purified RNAP holoenzyme to retain \u03c370 during transcription elongation as assayed in vitro (Bar-Nahum and Nudler, 2001). In particular, the authors of this study found that RNAP holoenzyme purified from stationary phase cells produced a substantially higher fraction of \u03c370-containing TECs than did RNAP holoenzyme purified from exponentially growing cells, possibly suggesting that the stationary phase RNAP core enzyme binds \u03c370 more tightly.\n\nWe note that the effect of growth phase on the relative abundance of pause RNAs may not be limited to \u03c370\u2013dependent pausing. In fact, our experiments revealed a potential pause species that was detectable above background in stationary phase cells even when the transcribed-region \u221210-like element was mutated (Figure 4A, lane 5). We suggest that this RNA arises due to the presence of an overlapping consensus pause element that is recognized by the core RNAP (G\u201310Y\u20131G+1; see Figure 2A) (Herbert et al., 2006; Larson et al., 2014; Vvedenskaya et al., 2014) and is not disrupted by the mutations in the \u221210-like element.\n\n### \u03c3 cross regulation\n\nTwo or more different \u03c3 factors often control the expression of a given gene by directing initiation from distinct upstream promoters (Wade et al., 2006; Gama-Castro et al., 2008; Cho et al., 2014). Our findings illustrate another mechanism whereby the combined input of multiple \u03c3 factors can modulate gene expression. Specifically, we show that distinct \u03c3 factors can direct initiation and modulate elongation on the same transcription unit. Such \u2018\u03c3 cross regulation\u2019 might enable the cell to integrate signals transmitted via \u03c370 and an alternative \u03c3 factor to modulate gene expression within a single transcription unit under the control of a non \u03c370\u2013dependent promoter. In principle there are several ways that \u03c370 trans loading might modulate gene expression. First, as shown here, \u03c370 trans loading can cause the TEC to pause, which is expected to influence transcription output directly in a manner that depends on pause half-life (and, as suggested by our results shown in Figure 4, may become particularly relevant in stationary phase). \u03c370\u2013dependent pausing might also influence gene expression indirectly, by facilitating engagement of regulatory factors, influencing formation of RNA secondary structures, or influencing translation (Roberts et al., 1998; Wickiser et al., 2005; Landick, 2006; Pan and Sosnick, 2006; Lemay et al., 2011; Perdrizet et al., 2012; Larson et al., 2014; Nechooshtan et al., 2014; Belogurov and Artsimovitch, 2015). Second, \u03c370 trans loading might impede the accessibility of the TEC to other elongation factors such as NusG or RfaH, which share the same primary binding site on RNAP (Sevostyanova et al., 2008; Mooney et al., 2009).\n\nFuture work will be required to investigate the extent to which \u03c370 trans loading contributes to gene expression through these or other mechanisms. In this regard, the application of sequencing-based methodologies such as native elongating transcript sequencing (NET-seq) (Churchman and Weissman, 2011; Larson et al., 2014; Vvedenskaya et al., 2014) and chromatin immunoprecipitation sequencing (ChIP-seq) (Myers et al., 2015) should enable the identification of transcription units that manifest growth phase-dependent pausing attributable to trans loaded \u03c370. Nevertheless, our findings add to a growing body of evidence that the functions of \u03c3 are not limited to the initiation phase of transcription. Furthermore, they establish a mechanism whereby the primary \u03c3 factor can extend its reach by exerting direct effects on the composition of the entire transcriptome, not just that portion that is produced under the control of \u03c370-dependent promoters.\n\n## Materials and methods\n\n### Strains\n\nAll experiments were performed in E. coli strain MG1655 or SG110 (Vvedenskaya et al., 2014) in which the chromosomal rpoC gene is fused to a 3xFLAG epitope tag-encoding sequence.\n\n### Plasmids\n\nPlasmids used in this study are listed in Table 1. Promoter sequences are as follows. \u03bbPR\u2032 : TTGACTtattgaataaaattgggTAAATTtgactcA and Ptar: TAAAGTTTcccccctccttGCCGATAAcgagatcA, where the \u221210 and \u221235 elements and the +1 nucleotide are capitalized.\n\n**Table 1.**\n Plasmids\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Plasmid</th>\n      <th>Description</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pLHN12-His</td>\n      <td>pT7-His6-rpoD</td>\n      <td>(Panaghie et al., 2000)</td>\n    </tr>\n    <tr>\n      <td>pET15b-His-fliA</td>\n      <td>pT7-His6-fliA</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pFW11tet-PR\u2032_+19</td>\n      <td>\u03bbPR\u2032 promoter and native \u03c370-dependent pause element with a second \u03c370-dependent pause element located 19 bp downstream of the +1 transcription start site. The tR\u2032 intrinsic terminator is positioned to terminate transcription \u223c116 bp downstream of +1.</td>\n      <td>(Deighan et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>pFW11tet-mutPR\u2032_+19</td>\n      <td>Same as pFW11tet-PR\u2032_+19 but with A+2 G/T+6 G mutations in the native \u03c370-dependent pause element.</td>\n      <td>(Deighan et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>pFW11tet-Ptar_+19 (pNUN175)</td>\n      <td>Same as pFW11tet-PR\u2032_+19 except that the promoter (up to and including +1) has been replaced with the \u03c328-dependent Ptar promoter.</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pFW11tet-Ptar_mut+19 (pNUN176)</td>\n      <td>Same as pFW11tet-Ptar_+19 but with mutations in the pause element.</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pBR-fliA</td>\n      <td>pSG585-fliA</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pSG585</td>\n      <td>colE1 origin plasmid with lacUV5 upstream of multiple cloning site</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pNUN191</td>\n      <td>pCDFlacMUT3-rpoD</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pCDFlacMUT3</td>\n      <td>pCDFlac with attenuated \u221235 element (AATACA)</td>\n      <td>This work</td>\n    </tr>\n    <tr>\n      <td>pCDFlac</td>\n      <td>derivative of pCDF-1b into which the lacUV5 promoter has been inserted</td>\n      <td>(Montero-Diez et al., 2013)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell growth\n\nSingle colonies of E. coli strains bearing the appropriate plasmids were used to inoculate individual 5 ml aliquots of LB broth (Miller) (10 g tryptone, 5 g yeast extract, 10 g NaCl per liter) (EMD-Millipore, Billerica, MA) containing antibiotics (spectinomyin [50 \u03bcg/ml] and streptomycin [25 \u03bcg/ml] were used together to maintain vectors bearing the aadA1 [SmR] allele; carbenicillin [100 \u03bcg/ml]; chloramphenicol [25 \u03bcg/ml]) in 18 \u00d7 150 mm glass culture tubes which were incubated, rolling, overnight at 37\u00b0C. Aliquots of these cultures were diluted 1:100 into 25 ml of LB containing antibiotics and IPTG (1 mM) in 125 ml DeLong flasks with Morton-style closures (Bellco Glass, Vineland, NJ), shaken at 37\u00b0C on an orbital platform shaker at 220\u2013250 RPM. For the experiments shown in Figure 4, cultures were grown as described above, except that cells were initially back-diluted into a volume of 75 ml of media containing antibiotics and IPTG, mixed, and then 25 ml aliquots were transferred into each of two 125 ml flasks. One aliquot was used for each harvest time-point.\n\n### RNA isolation\n\n#### Standard method (Figure 1 and Figure 3)\n\nWhen cultures reached an OD600 between 0.8 and 1.0, 5 ml aliquots were harvested into 50 ml Oakridge tubes containing 15 ml of RNAlater solution (Life Technologies, Grand Island, NY) and mixed several times by inversion. Cell suspensions in RNAlater were incubated overnight at 4\u00b0C. Cells suspended in RNAlater were centrifuged at 17,000 \u00d7 g for 20 min at 4\u00b0C; the supernatant was decanted and residual liquid carefully removed by pipetting. 1 ml of Tri-reagent (Molecular Research Center, Cincinnati, OH) was added to each tube and pellets were dispersed by vortexing. Cell suspensions in Tri-reagent were transferred to 1.7 ml low binding tubes (BioExcell; Worldwide Medical Products, Bristol, PA), incubated at 70\u00b0C for 10 min, centrifuged at 21,000 \u00d7 g at 4\u00b0C for 10 min, and the supernatants were recovered into fresh tubes. 200 \u03bcl of chloroform was added to each tube and mixed by vigorous shaking for 15 s. Phases were separated by centrifugation at 21,000 \u00d7 g at 4\u00b0C for 15 min. 500 \u03bcl of the upper, aqueous phase was recovered and transferred to a fresh tube to which 167 \u03bcl of 100% ethanol was added. Subsequent removal of RNA >200 nt and recovery of RNA <200 nt was performed using the mirVana microRNA Isolation kit (Life Technologies) according to the manufacturer's protocol. After elution from mirVana columns, eluents were concentrated by ethanol precipitation and resuspended directly into formamide loading dye (95% deionized formamide, 18 mM EDTA, and 0.025% SDS, xylene cyanol, bromophenol blue, amaranth).\n\n#### Rapid harvest method (Figure 4) for RNA stability measurements\n\nAt T = 0 (log phase: OD600 \u223c0.5 after 3hr growth; stationary phase: OD600 \u223c2.5 after 21hr growth), a 2 ml aliquot was withdrawn from each culture and transferred to a 2 ml microcentrifuge tube and cells were immediately pelleted by centrifugation at 10,000 \u00d7 g for 30 s at 37\u00b0C. Supernatants were decanted and pellets placed immediately onto dry ice. To facilitate rapid handling, the dry ice and microcentrifuge were placed adjacent to the platform shaker in the 37\u00b0C environmental room and the microcentrifuge was allowed to equilibrate to ambient temperature prior to use. After the T = 0 pellets were frozen, rifampicin (50 mg/ml in DMSO) was added to the remaining culture volume to a final concentration of 1 mg/ml. Rapid harvest was performed as described for the T = 0 fraction. The post-rifampicin time-points refer to when the cell pellets were placed on dry ice. Pellets were stored at \u221280\u00b0C until needed. Frozen cell pellets were resuspended directly into 200 \u03bcl of Tri-reagent, heated at 60\u00b0C for 10 min, cleared of debris by centrifugation at 21,000 \u00d7 g at 4\u00b0C for 10 min, and the supernatants were recovered into fresh tubes. 40 \u03bcl of chloroform was added to each tube and mixed by vigorous shaking for 15 s. Phases were separated by centrifugation at 21,000 \u00d7 g at 4\u00b0C for 15 min and 100 \u03bcl of the upper, aqueous phase was recovered. 33 \u03bcl of 100% ethanol was mixed with the recovered aqueous phase, the mixture was applied to a mirVana spin cartridge, and flowthrough collected after centrifugation at 10,000 \u00d7 g at room temperature for 1 min. RNA was precipitated from the flowthrough by addition of 1 \u03bcl of 10 mg/ml glycogen and 240 \u03bcl of 100% ethanol followed by incubation at \u221220\u00b0C for 12\u201318 hr. Pellets were resuspended directly into formamide loading dye (see above).\n\n#### Method for isolation of RNAP-associated RNA (Figure 3B and Figure 4\u2014figure supplement 1B)\n\nAfter cell cultures reached an OD600 of \u223c0.5 (log phase) or \u223c2.5 (stationary phase), a 10 ml volume of cell culture was centrifuged at 8000 \u00d7 g for 5 min at ambient temperature. Supernatants were decanted and pellets frozen on dry ice. Cell lysis and RNA isolation were performed as described by Vvedenskaya et al. (2014).\n\n### LNA probe labeling\n\n50 pmol of LNA probe (5\u2032 agCaaAttAacCc 3\u2032), where LNA bases are capitalized; Exiqon, Woburn, MA) was incubated in a 25 \u03bcl volume with 5 \u03bcl \u03b3-32P-ATP (EasyTide; Perkin Elmer, Waltham, MA), 2.5 \u03bcl 10X T4 PNK buffer, 13.5 \u03bcl nuclease free water (Life Technologies), and 2 \u03bcl T4 PNK (NEB, Ipswich, MA) at 37\u00b0C for 1 hr followed by 95\u00b0C for 10 min. Labeled probe was separated from unincorporated radiolabeled nucleotide using a size-exclusion spin column (SigmaSpin; Sigma\u2013Aldrich, St. Louis, MO).\n\n### Detection of pause RNAs and full-length RNAs in vivo by LNA hybridization\n\nRNAs generated in vivo were detected by hybridization as described in (Pall and Hamilton, 2008; Goldman et al., 2009; Deighan et al., 2011) using a 5\u2032 radiolabeled LNA probe. RNA was loaded onto 0.4 mm thick 20% denaturing polyacrylamide slab gels cast and equilibrated in 50 mM MOPS (pH 7 with NaOH), transferred to neutral nylon membrane (Whatman Nytran N; GE Healthcare Life Sciences, Piscataway, NJ) using a semi-dry electroblotting apparatus (Biorad, Hercules, CA) operating at 20V for 25 min using chilled 20 mM MOPS (pH 7 with NaOH) as conductive medium. RNA was crosslinked to the membrane using 157 mM N-(3-dimethylaminopropyl)-N\u2032-ethylcarbodiimide hydrochloride (EDC) (Sigma\u2013Aldrich) in 0.97% 1-methylimidazole (pH 8) (Alfa Aesar, Ward Hill, MA) (as described in Pall and Hamilton, 2008) for 80 min at 55\u00b0C. Crosslinking solution was rinsed from the membrane by immersion in 20 mM MOPS (pH 7 with NaOH) at 25\u00b0C, the membrane was placed onto nylon hybridization mesh, the membrane-mesh stack was placed into a 70 \u00d7 150 mm hybridization bottle at 50\u00b0C and 50 ml of pre-hybridization solution (5\u00d7 SSC, 5% SDS, 2\u00d7 Denhardt's solution, 40 \u03bcg/ml sheared salmon sperm DNA solution [Life Technologies], 20 mM Na2HPO4 [pH 7.2] in diethylpyrocarbonate (DEPC) treated water) at 50\u00b0C was added. The hybridization bottle was rotated in a hybrization oven at 50\u00b0C for 30 min, the solution was decanted and replaced by a 50 ml portion of pre-warmed hybridization solution that had been thoroughly mixed with the entire volume of the radiolabeled LNA probe prepared above. The bottle was then returned to the 50\u00b0C oven for 16 hr. The membrane was washed twice for 10 min in non-stringent wash buffer (3\u00d7 SSC, 5% SDS, 10\u00d7 Denhardt's solution, 20 mM Na2HPO4 [pH 7.2] in DEPC treated water), twice for 30 min in non-stringent wash buffer, and once for 5 min in stringent wash buffer (1\u00d7 SSC, 1% SDS, in DEPC treated water) before it was blotted dry, wrapped in plastic film, and radiolabeled bands were visualized by storage phosphor screen (GE Healthcare) and phosphorimagery (Storm 830 imager or Typhoon 9400 variable mode imager, GE Healthcare). All wash buffers were equilibrated to 55\u00b0C prior to use. Hybridization oven was operated at 50\u00b0C throughout.\n\n### Protein isolation for immunoblotting\n\nWith the exception of Figure 4\u2014figure supplement 1B, protein isolation for immunoblotting was performed as follows. 1 ml of cell suspensions was pelleted by centrifugation at 10,000 \u00d7 g for 2 min at ambient temperature, supernatants were carefully removed by vacuum aspiration and pellets were immediately frozen on dry ice before being stored at \u221280\u00b0C. To extract soluble protein, cell pellets were thawed on ice for \u223c30 s and resuspended by pipetting in lysis solution normalized to 50 \u03bcl per 1 ml of OD600 = 0.6. Lysis solution consisted of 1 ml B-PER reagent (Thermo Scientific Pierce, Rockland, IL), 1/4 protease inhibitor tablet (Comlete-mini [EDTA-free]; Roche, Indianapolis, IN), 2 \u03bcl 0.5M EDTA (pH 8), 2 \u03bcl lysozyme (50 mg/ml), 120 \u03bcl TurboDNase (Life Technologies), and 200 \u03bcl 10\u00d7 TurboDNase buffer. Lysis mixture was incubated 10 min on ice. Lysates were centrifuged at 21,000 \u00d7 g for 10 min at 4\u00b0C to pellet insoluble material. 40 \u03bcl of clarified supernatant was then mixed with an equal volume of 2\u00d7 loading buffer prepared by mixing 500 \u03bcl 4\u00d7 NuPAGE LDS sample buffer (Life Technologies), 50 \u03bcl \u03b2-mercaptoethanol and 450 \u03bcl water. Samples were heated at 70\u00b0C for 2 min and centrifuged at 21,000 \u00d7 g for 2 min at ambient temperature prior to electrophoresis.\n\nFor the experiment of Figure 4\u2014figure supplement 1B, total cellular protein was isolated as follows. Cell pellets, obtained and stored as described above, were resuspended directly into 50 \u03bcl per 1 ml of OD600 = 0.6 of 1\u00d7 Laemmli SDS sample buffer (pH 7.4) and heated 90\u00b0C for 5 min. Debris was pelleted by centrifugation at 21,000 \u00d7 g for 5 min and the supernatants were transferred to fresh tubes and analyzed by gel electrophoresis.\n\n### Immunoblotting\n\nWith the exception of Figure 4\u2014figure supplement 1B, immunoblots were performed as follows. 10 \u03bcl of each soluble protein sample was loaded onto a 4\u201312% gradient NuPAGE Novex Bis-Tris precast gel (Life Technologies) and run in 1X NuPAGE MOPS SDS running buffer until the dye front exited the gel. The gel cassette was then opened and the gel was equilibrated into transfer buffer (192 mM glycine, 25 mM Tris, 10% methanol) for 5\u201310 min. PVDF membrane (Immobilon-FL; EMD-Millpore) was wetted in 100% methanol and equilibrated into transfer buffer prior to transfer-stack assembly. Semi-dry electro transfer was performed using a Trans-Blot SD apparatus (Bio-Rad) operating at 10V for 1 hr. After transfer, membranes were placed into blocking solution (5% non-fat dry milk in 1\u00d7 PBS) and gently agitated at ambient temperature for 30 min. Blocking solution was decanted and replaced with 10 ml of a 1:5000 dilution of affinity purified mouse monoclonal antibody recognizing \u03c370 (clone 2G10; Neoclone, Madison, WI) or \u03c328 (clone 1RF18; Neoclone) in blocking solution and gently agitated for 1 hr as above. The primary antibody solution was decanted and the membrane washed quickly in 10 sequential portions of blocking solution containing 0.1% TWEEN-20. Goat anti-mouse IRDye 680LT secondary antibody (Li-Cor Biosciences, Lincoln, NE) was diluted 1:20,000 into 20 ml of blocking solution containing 0.1% TWEEN-20 and 0.02% SDS and 10 ml was added to the membrane which was then incubated and washed as above except that the membrane was kept in the dark during incubation and several quick washes in 1\u00d7 PBS were performed to remove residual milk prior to imaging. Data was acquired using an Odyssey Classic infra-red imager (Li-Cor Biosciences). For the blot shown in Figure 4\u2014figure supplement 1B, total cellular protein was electrophoresed and transferred as above except that nitrocellulose membrane (Protran NC, GE Healthcare) was used. Detection of protein was performed using a 1:20,000 dilution of Goat anti-Mouse HRP conjugated secondary antibody, ECL reagents (SuperSignal West, Pierce) and a ChemiDoc XRS + instrument (Bio-Rad). Quantification was performed using ImageLab software.\n\n### Proteins\n\nHis-tagged \u03c370 and \u03c328 were purified from BL21(DE3) cells transformed with pLHN12-His and pET15b-His-fliA, respectively, as described previously (Panaghie et al., 2000). E. coli core RNAP was purchased from Epicentre (Madison, WI). Holoenzymes were formed by mixing core RNAP and a twofold molar excess of \u03c370 or a fivefold molar excess of \u03c328 in transcription buffer (20 mM Tris\u2013HCl pH 8.0, 0.1 mM EDTA, 100 mM K-acetate, 100 \u03bcg/ml BSA, 10 mM DTT, 5% glycerol, and 0.025% Tween-20) and incubating at 37\u00b0C for 10 min.\n\n### In vitro transcription assays\n\nLinear transcription templates were synthesized by PCR using plasmid DNAs (pFW11tet-Ptar_+19, pFW11tet-Ptar_mut+19 or pFW11tet-mutPR\u2032_+19) as template and oligonucleotides that anneal to sequences \u223c100 bp upstream of the +1 transcription start site (5\u2032 CCTATAAAAATAGGCGTATCACGAG 3\u2032) and \u223c135 bp downstream of the transcription termination site ( 5\u2032 CAGGGTTTTCCCAGTCACGACGTTG 3\u2032). 20 nM PCR template was mixed with 15 nM of the appropriate RNAP holoenzyme or RNAP core enzyme in transcription buffer containing 200 \u03bcM ATP, 200 \u03bcM GTP, 200 \u03bcM CTP, 25 \u03bcM UTP (supplemented with 0.5 \u03bcCi/\u03bcL [\u03b1-32P]-UTP; Perkin Elmer), and 0.5 units/\u03bcl Murine RNase Inhibitor (NEB) for 5 min at 37\u00b0C to form open complexes. A single round of transcription was initiated by adding MgCl2 (4 mM final concentration) and rifampicin (10 \u00b5g/ml final concentration), as described previously (Grayhack et al., 1985; Shankar et al., 2007; Hollands et al., 2012). When present, excess \u03c370 was added together with the MgCl2 and rifampicin to a final concentration of 1 \u03bcM. Aliquots of the reaction were removed at 1, 6, and 18 min and mixed with 1.2 \u00d7 stop buffer (600 mM Tris\u2013HCl pH 8.0, 12 mM EDTA, and 100 \u03bcg/mL Ambion Yeast RNA [Life Technologies]). Samples were extracted with acid phenol:chloroform and RNA transcripts were recovered by ethanol precipitation and resuspended in gel loading buffer (95% formamide,18 mM EDTA, 0.025% SDS, 0.025% xylene cyanol, 0.025% bromophenol blue, 0.025% amaranth). Samples were heated at 95\u00b0C for 5 min, cooled to room temperature, and run on 12% TBE-Urea polyacrylamide gels (UreaGel system; National Diagnostics, Atlanta, GA). Autoradiography of gels was performed using storage phosphor screens and a Typhoon 9400 variable mode imager (GE Healthcare) and quantified using ImageQuant software.\n",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "b8933c3d-446d-4294-ac3a-13514ab00d23",
+      "submission_id": "c31532cd-be07-4689-88b5-8dd49bcaf767",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10514.010](https://doi.org/10.7554/eLife.10514.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \u201cThe primary \u03c3 factor in Escherichia coli can access the transcription elongation complex from solution in vivo\u201d for consideration at eLife. Your full submission has been evaluated by Richard Losick (Senior Editor), a member of the Board of Reviewing Editors, and three peer reviewers, one of whom, Lucia Rothman-Denes, has agreed to reveal her identity.\n\nWe regret to inform you that your work will not be considered further for publication in eLife. The decision was reached after discussions between the reviewers.\n\nAs you can see from the individual reviews, two of the reviewers were reasonably enthusiastic about your study but one felt the paper fell short of the stated aims. All three reviewers were concerned about the relevance of the \u03c370 overproduction. If this critique can be addressed by additional experiments that identify physiological conditions where \u03c370 levels increase dramatically or examine the effects of an alternative \u03c3 factor on transcription elongation initiated from a \u03c370-dependent promoter you might consider sending the manuscript back to eLife.\n\nReviewer #1:\n\nThis brief paper is a \u201cproof-of-concept\u201d study that establishes the potential for loading of \u03c370 in trans at sites downstream of transcription start sites to regulate transcript elongation in vivo. The authors demonstrate that \u03c370 loads in trans at a \u221210-like element downstream of the \u03bbPR promoter in vivo, that it increases pausing at this site, that \u03c370 can load downstream even when the transcript is initiated at a promoter directed by an alternative holoenzyme (Es28; thus establishing that \u03c370 really is loading in trans), that the level of the resulting pause increases in a \u03c370 concentration-dependent manner (further evidence that the effect is exerted in trans), and that the total fraction of transcripts that pause is additive with the effect in cis of a \u03c3 binding site in the initial transcribed region. The effects are small at natural concentrations of \u03c370 but quite strong when \u03c370 is overproduced. The experiments are well-designed, the results are clear, and the description is precise. These are important findings, building on a proposal from the Landick lab about 10 years ago from experiments with a \u03c3 factor fused to core RNAP. The potential that specific operons are regulated by either free \u03c370 or other \u03c3 factors at entry sites within the coding regions of operons is enticing. A few ideas for improvements in presentation are listed below, but otherwise the paper is ready to go.\n\n1) It is not clear to me why Figure 5 is presented after the cartoon/summary slide in the Discussion. It seems like it would make more sense to present Figure 5 as Figure 4, just after Figure 3, in the Results section, before the summary slide in the Discussion section. The experiment pictured in Figure 5 is, after all, an important Result. Its presentation in the Discussion makes it seem like an afterthought.\n\n2) Although the technical quality of the paper is high, the importance of \u03c3 binding in trans to transcription in native operons at levels of \u03c3 that exist in nature awaits further studies. The amount of pausing induced by native levels of \u03c370 appears to be fairly low, and there is no nutritional/environmental condition to my knowledge when \u03c370 is overproduced. This should be acknowledged in a more forthright manner, but some potential conditions when such a phenomenon might influence transcription might be expanded on. For example, most of the alternative \u03c3 factors are induced naturally, some to quite high levels, and one could imagine that binding sites for these \u03c3s at strategic positions in the transcribed region might transiently influence elongation in trans.\n\n3) Another direction for the future that might be introduced in the Discussion to add to the impact of the present study would be a genome-wide analysis of the transcriptome following induction of one or more \u03c3s. These might turn up candidates for further exploration of in trans effects of \u03c3 binding at natural levels of \u03c3.\n\nReviewer #2:\n\nThe Hochschild and Nickels labs have previously shown that the initial-transcribed sequences, sequences that lead to pausing of RNA polymerase due to interactions of \u03c370 region 2 with \u221210 -like sequences, affect the content of \u03c370 in transcription elongation complexes (TECs) in vivo. In addition, they showed that increases in the concentration of \u03c370 increased the efficiency of pausing in vitro.\n\nIn this manuscript, they test the in vivo effect of changes in the intracellular concentration of \u03c370 on the proportion of TECs that contain \u03c370. The results presented indicate that in vivo increases in the concentration of \u03c370 lead to increases of its content in TECs whether the TECs originate from \u03c370 or \u03c328-dependent promoters. The results provide further evidence to the growing appreciation of the role of \u03c3 factors as a component of the elongation machinery with its implications such as: 1) the ability to affect directly the behavior of the elongation complex through pausing with possible consequences for regulating translation, 2) the ability to compete with or recruit other elongation factors, or 3) trans-regulation of elongation complexes originating from alternative \u03c3 factor-dependent promoters.\n\nRequiring clarification:\n\nThe experiment in Figure 1 is performed at a 6\u20137 fold increase in the concentration of \u03c370 over wild-type conditions. Under what experimental conditions is that increase expected in the absence of over-production? Or how sensitive is the response to increases in the concentration of \u03c370.\n\nReviewer #3:\n\nThe manuscript by Goldman et al. aims at demonstrating the action of the E. coli primary transcription initiation \u03c3 factor, \u03c370, upon transcript elongation, both in vitro and in vivo. Unfortunately, the manuscript under review falls far short of its stated aim and cannot be recommended for publication in eLife in its current form.\n\nIt is a generally accepted view in the transcription field that shortly after synthesis of 30\u201350 nt-long RNA by a bacterial RNA polymerase, the initiation/\u03c3 factor is released from the transcription complex, likely in competition with nascent RNA and/or elongation factors, such as NusG. Apart from the promoter-proximal \u03c370-dependent pausing, no convincing data exists pointing to the larger role of initiation factor during the elongation phase of transcription. Goldman et al. do not go beyond this already established fact (by focusing on promoter-proximal pausing), nor do they add any new information or nuance to the subject matter. In fact the experiments reported in the manuscript are fairly limited in scope whereas their interpretations are rather over-reaching.\n\nAll the experiments reported by Goldman et al. focus on promoter-proximal transcription events, in fact the entire length of the templates used both in vitro and in vivo is \u223c116 bp (from the start site to terminator). These offer no new insights into the \u03c370-dependent pausing per se, while the trans-loading onto early elongation complexes formed by \u03c328-containing holoenzymes is a fairly trivial observation. The significance of the manuscript's \u201cfindings\u201d is dramatically overstated: e.g. the \u201ccontrol\u201d of elongation by \u03c370 in vitro is not quantified in terms of elongation rate, pausing efficiency or pause half-life, instead the reader is presented with a (phosphor)image (Figure 2) s/he can only eyeball. Based on such eyeballing this reviewer concludes that the \u03c370 effects on elongation are minimal (judging by the apparent \u201camount\u201d of full-length product) and limited to the induction of promoter-proximal arrest or termination in a small fraction of complexes. These complexes are labeled as \u201cpause\u201d on Figure 2 without any merit: there is no apparent time-decay (escape from the pause site), and no discernable escape from these \u201cpauses\u201d for up to 18 min (lanes 6 and 18). Moreover, it was not determined whether or not the shorter transcripts were still associated with RNA polymerase (which would distinguish paused/arrested complexes from terminated ones). As such, all that can be asserted from these experiments is the changes in RNA length. The same applies to the in vivo experiments reported by Goldman et al. Physical loading of \u03c370 onto elongation complexes has not been demonstrated either in vivo or in vitro which in turn means that Goldman et al. should limit their conclusions to a simple correlation between the concentration of \u03c370 and the abundance of the short transcripts produced from a handful of artificial templates.\n\nThe technical aspect of the work reported by Goldman et al. is confusing. This is especially evident in the description of their in vitro experiments: the authors claim to initiate transcription in vitro by adding together MgCl2 (which supplies catalytic Mg2+) and rifampicin (which inhibits transcription initiation by restricting nascent RNA synthesis to the first 3\u20134 nt) to the pre-formed open complexes. In single-round transcription assays, rifampicin is routinely added after the elongation complex is stalled (by selective NTP deprivation) in proximity to the promoter (and is no longer sensitive to it) to prevent re-initiation. As described by Goldman et al. the single-round assay would be a no-round one and the transcripts depicted in Figure 2 could not have been obtained as described in the Materials and methods.\n\nFurthermore, in order to make such assays quantitative the radioactively labeled nucleotide is usually supplied at the initiation stage and is incorporated into a defined length of RNA (essentially an end-labeling). This nucleotide is later removed (e.g. by gel-filtration) or diluted to negligible levels by the excess of the unlabeled one in the chase/extension mix. This way the amount of radioactivity in RNA is practically length-independent, enabling quantitative kinetic analysis of pausing, termination, etc. In contrast, in experiments described by Goldman et al. both labeled and un-labeled UTP are present in the reaction mix together from the start and no measure is mentioned that was taken to remove/dilute P32-labeled one. This makes the amount of radioactivity in the transcript dependent on its length and sequence (more radioactivity is incorporated as the transcript grows) rendering any quantitative interpretation of the data impractical.\n\nThe conclusions Goldman et al. derive from their in vivo experiments call for greater scope and technical sophistication of experimentation than the ones employed (i.e. monitoring the levels of transcripts produced from 2 short artificial templates by LNA hybridization and of 2 proteins by Western blotting). High-throughput/deep sequencing and mass-spectrometry allow for much more rigorous and quantitative monitoring of the proposed control \u03c370 exerts over various stages of transcription in vivo (and incidentally of the impact its overexpression would have on the proteome outside its own concentration). These methods are presently accessible and affordable enough to make the approach chosen by Goldman et al. seem somewhat myopic in scope, and archaic in design.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your work entitled \u201cThe primary \u03c3 factor in Escherichia coli can access the transcription elongation complex from solution in vivo\u201d for peer review at eLife. Your submission has been favorably evaluated by Richard Losick (Senior Editor), a Reviewing Editor, and three reviewers, one of whom, Lucia Rothman-Denes, has agreed to reveal her identity.\n\nThe reviewers discussed the reviews with one another and all felt the manuscript has significantly improved over the first submission. The Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nPrevious in vitro experiments showed that \u03c370 increases the efficiency of pausing at \u221210-like elements when supplied from solution (trans-loading). This study demonstrates that trans-loading occurs in vivo; \u03c370 can associate with a transcription complex initiated from an upstream \u03c328-dependent promoter and affect pausing of the complex, particularly in stationary phase.\n\nEssential revisions:\n\n1) The reviewers were not able to reach a consensus on whether genome-wide ChIP-seq and transcriptome-wide RNASeq studies were needed to address the physiological significance of trans-loading. The authors should discuss whether trans-loading is just an accidental process or plays a meaningful role in the cell and what approaches will be needed to address the biological significance of trans-loading in the future.\n\n2) In experiments designed to compare the level of transcripts originating from plasmids in exponentially growing cells with those in stationary phase no effort was made to ascertain whether the plasmid levels (copy numbers) remained equal at the two growth stages (most likely were not). The authors should determine copy number under the two conditions or explain why this is not a valid concern.\n\n3) Figure 2A: Sequences upstream of +1 should be added up to the \u221235 element, since these determine the appearance of the (*) transcript.\n\n4) Figure 4A. Figure heading needs to be corrected: top lane is template; second lane is growth phase.\n",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ec54677b-46eb-411a-8370-1959ee9d611b",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C1",
+      "claim": "The \u03c3 subunit of bacterial RNA polymerase (RNAP) confers on the enzyme the ability to initiate promoter-specific transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c3 subunit of bacterial RNA polymerase (RNAP) confers on the enzyme the ability to initiate promoter-specific transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field of bacterial transcription, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "bd05e757-1810-4ce1-86a2-b39b1a1f6dfc",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C2",
+      "claim": "\u03c3 factors are generally classified as initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although \u03c3 factors are generally classified as initiation factors, \u03c3 can also remain associated with, and modulate the behavior of, RNAP during elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the historical classification of \u03c3 factors in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "0f80ce13-ac25-4281-9181-4886086fd8e5",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C3",
+      "claim": "\u03c3 can remain associated with and modulate the behavior of RNAP during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although \u03c3 factors are generally classified as initiation factors, \u03c3 can also remain associated with, and modulate the behavior of, RNAP during elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research in the field as indicated by the context of the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "84433eda-26c6-460d-8116-562b22936b07",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C4",
+      "claim": "The primary \u03c3 factor in Escherichia coli, \u03c370, can function as an elongation factor in vivo by loading directly onto the transcription elongation complex (TEC) in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we establish that the primary \u03c3 factor in Escherichia coli, \u03c370, can function as an elongation factor in vivo by loading directly onto the transcription elongation complex (TEC) in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "dae2c095-94cb-4bca-a258-8cf211c003aa",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C5",
+      "claim": "\u03c370 can bind in trans to TECs that emanate from a \u03c370-dependent promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that \u03c370 can bind in trans to TECs that emanate from either a \u03c370-dependent promoter or a promoter that is controlled by an alternative \u03c3 factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "d988f332-a964-4523-89ab-68d50b457236",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C6",
+      "claim": "\u03c370 can bind in trans to TECs that emanate from a promoter that is controlled by an alternative \u03c3 factor.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that \u03c370 can bind in trans to TECs that emanate from either a \u03c370-dependent promoter or a promoter that is controlled by an alternative \u03c3 factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figures 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "df1e8418-1657-4b40-a178-adefd088595b",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C7",
+      "claim": "Binding of \u03c370 to the TEC in trans can have a particularly large impact on the dynamics of transcription elongation during stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that binding of \u03c370 to the TEC in trans can have a particularly large impact on the dynamics of transcription elongation during stationary phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "bb9cd395-563d-4a58-9b9b-34d3b7a6727a",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C8",
+      "claim": "The primary \u03c3 factor can exert direct effects on the composition of the entire transcriptome, not just that portion that is produced under the control of \u03c370-dependent promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings establish a mechanism whereby the primary \u03c3 factor can exert direct effects on the composition of the entire transcriptome, not just that portion that is produced under the control of \u03c370-dependent promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that \u03c370 can bind to TECs initiated by alternative \u03c3 factors.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "8a3763b5-e414-4fae-8f70-4e4ae5b60359",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C9",
+      "claim": "All bacteria contain a primary \u03c3 factor that directs transcription from the major class of bacterial promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "All bacteria contain a primary \u03c3 factor that directs transcription from the major class of bacterial promoters; in addition, most bacteria contain multiple alternative \u03c3 factors that direct transcription from specialized promoters in response to stress or alterations in growth state (Gruber and Gross, 2003; Osterberg et al., 2011; Guo and Gross, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "19a7432f-7c1b-440a-bf35-f23e892f63ad",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C10",
+      "claim": "Most bacteria contain multiple alternative \u03c3 factors that direct transcription from specialized promoters in response to stress or alterations in growth state.",
+      "claim_type": "EXPLICIT",
+      "source": "All bacteria contain a primary \u03c3 factor that directs transcription from the major class of bacterial promoters; in addition, most bacteria contain multiple alternative \u03c3 factors that direct transcription from specialized promoters in response to stress or alterations in growth state (Gruber and Gross, 2003; Osterberg et al., 2011; Guo and Gross, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "717c77aa-bc9d-474a-b93b-3d268936593c",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C11",
+      "claim": "Escherichia coli \u03c370 recognizes promoters that are defined by two conserved hexameric DNA sequence elements termed the \u221210 and the \u221235 elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the best-studied primary \u03c3 factors is Escherichia coli \u03c370, which recognizes promoters that are defined by two conserved hexameric DNA sequence elements termed the \u221210 and the \u221235 elements (consensus sequences: TATAAT and TTGACA, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of bacterial transcription.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "980b18ce-eff4-47d1-957c-573f0257a31f",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C12",
+      "claim": "The consensus sequence of the \u221210 element is TATAAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the best-studied primary \u03c3 factors is Escherichia coli \u03c370, which recognizes promoters that are defined by two conserved hexameric DNA sequence elements termed the \u221210 and the \u221235 elements (consensus sequences: TATAAT and TTGACA, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "16105007-1aaf-49c1-b3d8-381918a1b3a6",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C13",
+      "claim": "The consensus sequence of the \u221235 element is TTGACA.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the best-studied primary \u03c3 factors is Escherichia coli \u03c370, which recognizes promoters that are defined by two conserved hexameric DNA sequence elements termed the \u221210 and the \u221235 elements (consensus sequences: TATAAT and TTGACA, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "5c290450-d43a-4ea9-8ace-70b6776ce44a",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C14",
+      "claim": "Members of the \u03c370 family share a conserved 4-domain architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the \u03c370 family share a conserved 4-domain architecture, with domain 2 contacting the \u221210 element and domain 4 contacting the \u221235 element (Gross et al., 1998; Paget and Helmann, 2003; Feklistov et al., 2014; Paget, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "0920d583-16b6-45de-a643-f04b475a95c8",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C15",
+      "claim": "Domain 2 of \u03c370 contacts the \u221210 element.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the \u03c370 family share a conserved 4-domain architecture, with domain 2 contacting the \u221210 element and domain 4 contacting the \u221235 element (Gross et al., 1998; Paget and Helmann, 2003; Feklistov et al., 2014; Paget, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "ac5ad450-3bab-4dae-b7f2-eac97590740e",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C16",
+      "claim": "Domain 4 of \u03c370 contacts the \u221235 element.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the \u03c370 family share a conserved 4-domain architecture, with domain 2 contacting the \u221210 element and domain 4 contacting the \u221235 element (Gross et al., 1998; Paget and Helmann, 2003; Feklistov et al., 2014; Paget, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "a03bebb4-a73b-4339-bc16-a4b913b4edda",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C17",
+      "claim": "E. coli has six alternative \u03c3 factors.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli also has six alternative \u03c3 factors, five of which are members of the \u03c370 family and recognize similarly positioned promoter elements using the counterparts of \u03c370 domains 2 and 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "eaa7c7e0-8ba2-4138-af9d-c6da7e892338",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C18",
+      "claim": "Five of E. coli's alternative \u03c3 factors are members of the \u03c370 family.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli also has six alternative \u03c3 factors, five of which are members of the \u03c370 family and recognize similarly positioned promoter elements using the counterparts of \u03c370 domains 2 and 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "f08004ab-8002-40fa-abfc-54c22824acd7",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C19",
+      "claim": "Most alternative \u03c3 factors exhibit highly restricted promoter specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most alternative \u03c3 factors exhibit highly restricted promoter specificity (Koo et al., 2009b; Rhodius et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "ba8d3f4c-6be2-4309-906b-a64684a33708",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C20",
+      "claim": "Genes that are responsive to disparate physiological inputs often carry two or more promoters that are recognized by distinct \u03c3 factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, genes that are responsive to disparate physiological inputs often carry two or more promoters that are recognized by distinct \u03c3 factors (Wade et al., 2006; Gama-Castro et al., 2008; Cho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "94ed8bd4-3291-4948-afd4-08ded7bc1c59",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C21",
+      "claim": "The release of \u03c3 from the transcription complex is not required for entry into the elongation phase of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, multiple studies have shown that the release of \u03c3 from the transcription complex is not required for entry into the elongation phase of transcription (reviewed in Mooney et al., 2005; Perdue and Roberts, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "d03f8208-41cf-467c-b8b5-6601ae256735",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C22",
+      "claim": "The functional properties of a transcription elongation complex (TEC) containing \u03c3 differ from the properties of a TEC that does not contain \u03c3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the functional properties of a transcription elongation complex (TEC) containing \u03c3 differ from the properties of a TEC that does not contain \u03c3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the subsequent examples and citations provided in the text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "1f14fdff-4746-44b5-985f-2be6df584817",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C23",
+      "claim": "TEC-associated \u03c370 can induce transcription pausing by engaging promoter \u221210-like sequence elements within transcribed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TEC-associated \u03c370 can induce transcription pausing by engaging promoter \u221210-like sequence elements within transcribed regions (Ring et al., 1996; Brodolin et al., 2004; Nickels et al., 2004; Hatoum and Roberts, 2008; Deighan et al., 2011; Perdue and Roberts, 2011), a phenomenon that was first uncovered in the context of the bacteriophage \u03bb late gene promoter (reviewed in Roberts et al., 1998; Perdue and Roberts, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "a1b1373c-e132-4991-921e-e3fa0a139569",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C24",
+      "claim": "\u03c370-dependent pausing occurs due to an interaction between the \u221210-like element and domain 2 of TEC-associated \u03c370.",
+      "claim_type": "EXPLICIT",
+      "source": "This pausing occurs due to an interaction between the \u221210-like element and domain 2 of TEC-associated \u03c370 (the same domain of \u03c370 that binds the promoter \u221210 element during transcription initiation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research establishing the mechanism of \u03c370-dependent pausing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "f5559f98-eef6-4c24-9bcb-369ab72fa82b",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C25",
+      "claim": "The presence or absence of \u03c3 can alter the accessibility of the TEC to elongation factors, including the \u03bb Q protein and RfaH.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence or absence of \u03c3 can alter the accessibility of the TEC to elongation factors, including the \u03bb Q protein and RfaH (Roberts et al., 1998; Nickels et al., 2002, 2006; Sevostyanova et al., 2008), and can influence the ability of RNAP to reinitiate transcription at certain promoters (Bar-Nahum and Nudler, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "af27e2d3-e0e6-42f5-b71d-dd015f44e6d5",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C26",
+      "claim": "The presence or absence of \u03c3 can influence the ability of RNAP to reinitiate transcription at certain promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence or absence of \u03c3 can alter the accessibility of the TEC to elongation factors, including the \u03bb Q protein and RfaH (Roberts et al., 1998; Nickels et al., 2002, 2006; Sevostyanova et al., 2008), and can influence the ability of RNAP to reinitiate transcription at certain promoters (Bar-Nahum and Nudler, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "eaf99de8-2ea2-4e59-8447-3145194dc2f1",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C27",
+      "claim": "Initial-transcribed-region \u221210-like elements induce early elongation pausing because they are recognized by TECs that have not yet released the \u03c370 that was used during initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial-transcribed-region \u221210-like elements, such as those associated with the \u03bb late promoters and the late promoters of other lambdoid phages, induce early elongation pausing because they are recognized by TECs that have not yet released the \u03c370 that was used during initiation (Marr et al., 2001; Mukhopadhyay et al., 2001; Nickels et al., 2004; Kapanidis et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "675e75c7-5567-4d45-ad28-a925e978c2d7",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C28",
+      "claim": "Promoter-proximal \u03c370-dependent pause elements function to inhibit \u03c370 loss during the earliest stages of elongation, increasing the \u03c370 content of downstream TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior work, we showed that such promoter-proximal \u03c370-dependent pause elements also function to inhibit \u03c370 loss during the earliest stages of elongation, increasing the \u03c370 content of downstream TECs (Deighan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "7cb19110-02b8-4768-924e-51a2cb693a25",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C29",
+      "claim": "The presence of a promoter-proximal pause element facilitates the retention of \u03c370 in the TEC and substantially enhances the extent of pausing induced by a downstream pause element both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect can be detected using a template that carries a second pause element positioned downstream of a promoter-proximal pause element; specifically, the presence of the promoter-proximal pause element facilitates the retention of \u03c370 in the TEC and thus substantially enhances the extent of pausing induced by the downstream pause element both in vitro and in vivo (Deighan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "22ee532e-c30e-4c43-9394-27d344ec1901",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C30",
+      "claim": "In vitro studies have established that transcribed region \u221210-like elements can be recognized by a \u03c370 subunit that was not present during initiation, but rather joined the TEC by loading in trans during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although promoter \u221210-like elements that induce transcription pausing can be recognized by a \u03c370 subunit that has been retained in the TEC after promoter escape, in vitro studies have established that transcribed region \u221210-like elements can also be recognized by a \u03c370 subunit that was not present during initiation, but rather joined the TEC by loading in trans during elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the subsequent citations to in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "7a563323-28c8-49c7-8987-04458cd4c1ab",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C31",
+      "claim": "The efficiency of pausing induced by transcribed region \u221210-like elements can be increased in vitro by increasing the concentration of free \u03c370 in the transcription reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it has been shown that the efficiency of pausing induced by transcribed region \u221210-like elements can be increased in vitro by increasing the concentration of free \u03c370 in the transcription reactions (Mooney and Landick, 2003; Sevostyanova et al., 2008; Deighan et al., 2011; Sevostyanova et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "49ff554e-9293-4415-b7da-140944b22971",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C32",
+      "claim": "The relative abundance of a \u223c35-nt pause RNA increased approximately fivefold when \u03c370 was overproduced by a factor of approximately 7.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative abundance of a \u223c35-nt pause RNA (see Deighan et al., 2011) increased \u223cfivefold when \u03c370 was overproduced by a factor of \u223c7, compared to that observed in cells containing chromosomally encoded \u03c370 only (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "526dee2a-972f-40ec-98a2-7071248b5e87",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C33",
+      "claim": "The \u223c35-nt pause RNA was barely detected with or without excess \u03c370 using a control template carrying base-pair substitutions that disrupt sequence-specific recognition of the transcribed-region \u221210-like element by \u03c370 region 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the \u223c35-nt pause RNA was barely detected with or without excess \u03c370 using a control template carrying base-pair substitutions that disrupt sequence-specific recognition of the transcribed-region \u221210-like element by \u03c370 region 2 (Deighan et al., 2011) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "e65f26b9-6971-4955-a11c-c8cb66dfa2ae",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C34",
+      "claim": "Pausing of the TEC under the control of a \u221210-like element within a transcribed region is sensitive to the intracellular concentration of \u03c370.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that pausing of the TEC under the control of a \u221210-like element within a transcribed region is sensitive to the intracellular concentration of \u03c370, suggesting that \u03c370 can access the TEC in trans, in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing increased pausing with \u03c370 overproduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "a6aa2d2c-9204-4444-bd19-7a6d31976979",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C35",
+      "claim": "The presence of the promoter-proximal \u221210-like element resulted in a substantial increase (approximately ninefold) in the relative abundance of the \u223c35-nt pause species.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Deighan et al., 2011), the presence of the promoter-proximal \u221210-like element resulted in a substantial increase (\u223cninefold) in the relative abundance of the \u223c35-nt pause species (compare Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "ae2dc9fe-4d4e-443e-9f06-fce122368df7",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C36",
+      "claim": "When \u03c370 was overproduced, the relative abundance of the \u223c35-nt pause species increased further (approximately 1.5 fold) on the template with a promoter-proximal pause element.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, when \u03c370 was overproduced, the relative abundance of the \u223c35-nt pause species increased further (\u223c1.5 fold; Figure 1B, middle and bottom panels), indicating that the effect of the promoter-proximal \u221210-like element on the \u03c370 content of downstream TECs is not saturating.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "5e18ddbb-aceb-4637-83a0-b246fbc0a03f",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C37",
+      "claim": "The effect of the promoter-proximal \u221210-like element on the \u03c370 content of downstream TECs is not saturating.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, when \u03c370 was overproduced, the relative abundance of the \u223c35-nt pause species increased further (\u223c1.5 fold; Figure 1B, middle and bottom panels), indicating that the effect of the promoter-proximal \u221210-like element on the \u03c370 content of downstream TECs is not saturating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that \u03c370 overproduction further increases pausing even in the presence of a promoter-proximal pause element.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "c8964b09-2303-4b28-beff-6bd450b8a36f",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C38",
+      "claim": "\u03c328 is an alternative \u03c3 factor that controls the expression of genes involved in flagellar synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this possibility we generated a new template that carried a promoter recognized by RNAP holoenzyme carrying \u03c328, an alternative \u03c3 factor that controls the expression of genes involved in flagellar synthesis (Chilcott and Hughes, 2000; Koo et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "f9226954-0716-4f98-b212-b0b75344d2d0",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C39",
+      "claim": "Addition of \u03c370 to in vitro transcription reactions using a \u03c328-dependent promoter resulted in the appearance of a cluster of RNAs approximately 35-nt in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of \u03c370 to the transcription reactions resulted in the appearance of a cluster of RNAs \u223c35-nt in length (Figure 2, compare lanes 4\u20136 with lanes 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "3a6a7ba9-8c5a-48a8-ae94-38577f34637f",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C40",
+      "claim": "The approximately 35-nt RNAs were not observed when reactions were performed using a control template carrying disruptive base-pair substitutions within the transcribed-region \u221210-like element.",
+      "claim_type": "EXPLICIT",
+      "source": "These RNAs were not observed when reactions were performed using a control template carrying disruptive base-pair substitutions within the transcribed-region \u221210-like element (Figure 2B, lanes 7\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "00cdfcae-a585-4099-be6e-54975df3810e",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C41",
+      "claim": "Appearance of the cluster of approximately 35-nt RNAs is strictly dependent on transcription that initiates from Ptar under the control of \u03c328.",
+      "claim_type": "EXPLICIT",
+      "source": "A set of reactions performed in the presence of \u03c370 but in the absence of \u03c328 confirmed that appearance of the cluster of \u223c35-nt RNAs is strictly dependent on transcription that initiates from Ptar under the control of \u03c328 (Figure 2B, lanes 13\u201315).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "61ef093b-92c1-4af1-8ca7-e944aea8f03e",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C42",
+      "claim": "Free \u03c370 can bind to TECs on a \u03c328-controlled transcription unit in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the \u223c35-nt RNAs are pause RNAs that arise due to the ability of \u03c370 to bind TECs generated via transcription initiating at Ptar under the control of \u03c328. These findings therefore indicate that free \u03c370 can bind to TECs on a \u03c328-controlled transcription unit in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the in vitro experimental data showing \u03c370-dependent pausing on \u03c328-initiated transcripts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "c23dd568-58de-4730-953e-da7ff12c0b41",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C43",
+      "claim": "Transcripts emanating from Ptar were detected only in cells carrying the plasmid that directed the synthesis of excess \u03c328.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that transcripts emanating from Ptar were detected only in cells carrying the plasmid that directed the synthesis of excess \u03c328 (Figure 3A, compare lanes 2\u20135 with lane 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "65e9bfb9-6b2d-4eef-aba9-c2abcb4126a3",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C44",
+      "claim": "In the presence of excess \u03c328 but in the absence of excess \u03c370, a small amount of an RNA species that migrated between the 30-nt and 40-nt RNA markers was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the presence of excess \u03c328 but in the absence of excess \u03c370, we detected a small amount of an RNA species that migrated between the 30-nt and 40-nt RNA markers (Figure 3A, lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "2a36b956-2b41-4ca9-8bd5-4c3c5e91471e",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C45",
+      "claim": "The relative abundance of the approximately 35-nt RNA from the Ptar template was increased approximately sevenfold when \u03c370 was overproduced by a factor of approximately 3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative abundance of this \u223c35-nt RNA was increased \u223csevenfold when \u03c370 was overproduced by a factor of \u223c3 (Figure 3A, compare lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "18f756b8-863d-46f2-a0ea-aec4e42386ba",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C46",
+      "claim": "The approximately 35-nt RNA was not detected in cells containing the mutant Ptar template carrying base-pair substitutions in the transcribed-region \u221210-like element.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the \u223c35-nt RNA was not detected in cells containing the mutant Ptar template carrying base-pair substitutions in the transcribed-region \u221210-like element (Figure 3A, lanes 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "371892b2-aa91-4d9d-8247-2ff5b1c15169",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C47",
+      "claim": "A major fraction of the approximately 35-nt RNA species, but not the full-length terminated transcript, was immunoprecipitated with an antibody against FLAG.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that a major fraction of the \u223c35-nt RNA species, but not the full-length terminated transcript, was immunoprecipitated with an antibody against FLAG whether the cells lacked or contained plasmid encoded overproduced \u03c370 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "e5dbc4a1-5759-428c-af4c-07de0292b17c",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C48",
+      "claim": "A major fraction of the approximately 35-nt RNA species is RNAP-associated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that a major fraction of the \u223c35-nt RNA species, but not the full-length terminated transcript, is RNAP-associated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the immunoprecipitation data showing co-precipitation with FLAG-tagged RNAP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "3c2b0c44-c791-4e11-ae4d-7fee06073288",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C49",
+      "claim": "\u03c370 can access the TEC in trans, in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the \u223c35-nt RNA produced from the Ptar template in vivo represents a pause RNA that arises due to the ability of \u03c370 to bind TECs generated under the control of \u03c328. Furthermore, our ability to detect \u03c370-dependent pause species produced under the control of a promoter that is recognized by an alternative \u03c3 factor enables us unambiguously to identify pausing that is mediated by trans-loaded \u03c370. Thus, our findings establish that \u03c370 can access the TEC in trans, in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the experimental data from Figures 1-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "4860cfd9-9a1c-4ee3-9de3-dafa82e0859d",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C50",
+      "claim": "During the exponential phase of growth the extent of pausing due to chromosomally encoded trans-loaded \u03c370 appeared to be low (relative abundance of the approximately 35-nt RNA was <5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Although experiments using the Ptar template revealed that \u03c370 trans loading is detectable even in the absence of \u03c370 overproduction, we found that during the exponential phase of growth the extent of pausing due to chromosomally encoded trans-loaded \u03c370 appeared to be low (Figures 3A and 4A; the relative abundance of the \u223c35-nt RNA was <5%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3A and 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "91765219-0360-423d-bd9f-b95b08181100",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C51",
+      "claim": "When RNA was harvested from stationary phase cells containing the Ptar template, the relative abundance of the approximately 35-nt RNA was approximately 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we harvested RNA from stationary phase cells containing the Ptar template, we found that the relative abundance of the \u223c35-nt RNA was \u223c50% (Figure 4A, lane 3), which was reduced to \u223c10% when the transcribed-region \u221210-like element was mutated (Figure 4A, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "363a6f20-061a-4a51-8f3b-dd1d71f150fc",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C52",
+      "claim": "The relative abundance of the approximately 35-nt RNA from the mutant Ptar template in stationary phase was reduced to approximately 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we harvested RNA from stationary phase cells containing the Ptar template, we found that the relative abundance of the \u223c35-nt RNA was \u223c50% (Figure 4A, lane 3), which was reduced to \u223c10% when the transcribed-region \u221210-like element was mutated (Figure 4A, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "14ed05e9-aabf-43d3-bc16-474dc8221b47",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C53",
+      "claim": "The approximately 35-nt RNAs detected from the Ptar template during stationary phase were RNAP-associated.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, like those detected during exponential phase, the \u223c35-nt RNAs detected from the Ptar template during stationary phase were RNAP-associated (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "59d30795-9435-45a8-a655-13d5d8bda75d",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C54",
+      "claim": "The relative abundance of pause RNAs that arise due to \u03c370 trans loading varies with growth-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the relative abundance of pause RNAs that arise due to \u03c370 trans loading varies with growth-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of exponential and stationary phase data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "d8fc8565-5c3f-49cb-8db4-8252af840a7d",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C55",
+      "claim": "The cell extracts prepared from exponential and stationary phase cultures contained comparable amounts of \u03c370.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the cell extracts prepared from exponential and stationary phase cultures contained comparable amounts of \u03c370 (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "053ddd4f-3c1d-480a-a2de-841990dd22f0",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C56",
+      "claim": "The growth phase-dependent increase in the abundance of the approximately 35-nt pause RNAs is not a consequence of an increase in the total cellular concentration of \u03c370.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the growth phase-dependent increase in the abundance of the \u223c35-nt pause RNAs is not a consequence of an increase in the total cellular concentration of \u03c370.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Western blot data showing comparable \u03c370 levels in exponential and stationary phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "e695271f-478c-47a7-8087-5c6ffa0d894a",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C57",
+      "claim": "The half-life of the approximately 35-nt pause RNA was greater in stationary phase than in exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the half-life of the \u223c35-nt pause RNA was greater in stationary phase than in exponential phase (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B using rifampicin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "9a8adf8b-b05b-4126-a8ed-e7cdeae7fe41",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C58",
+      "claim": "The full-length terminated transcript was at least as stable in stationary phase as in exponential phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the full-length terminated transcript was at least as stable in stationary phase as in exponential phase (Figure 4B), excluding the possibility that the increase in the relative abundance of the pause RNA might simply reflect a destabilization of the full-length transcript in stationary phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "d7bd94e7-6ede-4705-ad2e-36e0a5c1e9b2",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C59",
+      "claim": "The extent of pausing on the Ptar template due to trans-loaded \u03c370 varies with growth phase, at least in part, due to an increase in the half-life of the pause.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings indicate that the extent of pausing on the Ptar template due to trans-loaded \u03c370 varies with growth phase, at least in part, due to an increase in the half-life of the pause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rifampicin chase experiments showing differential pause RNA stability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "a4357502-273e-4b1b-ac9a-5255f6a9a847",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C60",
+      "claim": "At least two distinct \u03c3 factors can influence the functional properties of a transcription complex during the transcription cycle in vivo: one during initiation and one (or more) during elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that at least two distinct \u03c3 factors can influence the functional properties of a transcription complex during the transcription cycle in vivo: one during initiation and one (or more) during elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that \u03c328 directs initiation while \u03c370 can bind in trans during elongation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "2d56929e-d4e5-41e3-86ce-ec36c248db24",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C61",
+      "claim": "There are two pathways whereby \u03c370 can access the TEC in vivo: a pathway that operates in cis and a pathway that operates in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here, coupled with prior work (Shimamoto et al., 1986; Ring et al., 1996; Bar-Nahum and Nudler, 2001; Mukhopadhyay et al., 2001; Brodolin et al., 2004; Nickels et al., 2004; Wade and Struhl, 2004; Kapanidis et al., 2005; Raffaelle et al., 2005; Reppas et al., 2006; Mooney et al., 2009; Deighan et al., 2011) define two pathways whereby \u03c370 can access the TEC in vivo, a pathway that operates in cis and a pathway that operates in trans (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the current study's data combined with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "221b5928-d28d-4efa-b462-87b429fd3300",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C62",
+      "claim": "The cis-acting pathway depends on retention in the TEC of the \u03c370 that was used during initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The cis-acting pathway depends on retention in the TEC of the \u03c370 that was used during initiation, with the extent of \u03c370 retention being modulated by the sequence of the initial transcribed region (Figure 5A) (Deighan et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by prior work cited and illustrated in Figure 5A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "5b30bcbb-4407-4949-9a1b-8b205707b79b",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C63",
+      "claim": "The cis-acting (retention) pathway is necessarily restricted to transcription units controlled by \u03c370-dependent promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cis-acting (retention) pathway is necessarily restricted to transcription units controlled by \u03c370-dependent promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of the cis-acting pathway.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "35979217-1b44-438a-b657-548440937167",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C64",
+      "claim": "The trans-acting pathway is potentially operative on all transcription units.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the trans-acting pathway identified in this study, which can be functionally defined by its sensitivity to the intracellular concentration of \u03c370, is potentially operative on all transcription units (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the demonstration that \u03c370 can bind in trans to TECs initiated by alternative \u03c3 factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "88b42908-fb97-4a56-8265-b1c4e3be4a04",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C65",
+      "claim": "The cis-acting and trans-acting pathways can function in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the two pathways can function in concert.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data showing that \u03c370 trans loading can augment pausing even when a promoter-proximal pause element is present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "5d153026-47a7-4241-9d2b-9d8c1eb1c671",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C66",
+      "claim": "\u03c370 trans loading can increase the \u03c370 content of TECs generated under the control of a \u03c370-dependent promoter even in the presence of an initial-transcribed-region \u03c370-dependent pause element that augments \u03c370 retention.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we found that \u03c370 trans loading can increase the \u03c370 content of TECs generated under the control of a \u03c370-dependent promoter even in the presence of an initial-transcribed-region \u03c370-dependent pause element that augments \u03c370 retention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "148520d7-670a-4eb1-8293-8be0ba4303ac",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C67",
+      "claim": "Pausing mediated by chromosomally encoded trans-loaded \u03c370 was detectable during the exponential phase of growth and this pausing became more prominent during stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the effects of trans-loaded \u03c370 on pausing varied with growth phase. In particular, pausing mediated by chromosomally encoded trans-loaded \u03c370 was detectable during the exponential phase of growth and this pausing became more prominent during stationary phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "a0b35a09-a606-4519-a42f-b035627f687f",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C68",
+      "claim": "The increase in pause half-life in stationary phase might be due to a drop in the intracellular NTP concentrations as nutrients are depleted and the cells enter stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this increase in pause half-life might be due to a drop in the intracellular NTP concentrations as nutrients are depleted and the cells enter stationary phase (Buckstein et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation about NTP concentrations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "495c1757-a41a-46e3-814f-93ec4fb6d661",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C69",
+      "claim": "RNAP holoenzyme purified from stationary phase cells produced a substantially higher fraction of \u03c370-containing TECs than did RNAP holoenzyme purified from exponentially growing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the authors of this study found that RNAP holoenzyme purified from stationary phase cells produced a substantially higher fraction of \u03c370-containing TECs than did RNAP holoenzyme purified from exponentially growing cells, possibly suggesting that the stationary phase RNAP core enzyme binds \u03c370 more tightly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a prior study being discussed in the context of the current results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "78e2ac5d-e536-449b-9769-46f3577a749f",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C70",
+      "claim": "A potential pause species was detectable above background in stationary phase cells even when the transcribed-region \u221210-like element was mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the effect of growth phase on the relative abundance of pause RNAs may not be limited to \u03c370\u2013dependent pausing. In fact, our experiments revealed a potential pause species that was detectable above background in stationary phase cells even when the transcribed-region \u221210-like element was mutated (Figure 4A, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "cbb7101f-182a-4d74-a020-5aa95a4069f4",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C71",
+      "claim": "The pause RNA detected with the mutated \u221210-like element arises due to the presence of an overlapping consensus pause element that is recognized by the core RNAP (G\u201310Y\u20131G+1).",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this RNA arises due to the presence of an overlapping consensus pause element that is recognized by the core RNAP (G\u201310Y\u20131G+1; see Figure 2A) (Herbert et al., 2006; Larson et al., 2014; Vvedenskaya et al., 2014) and is not disrupted by the mutations in the \u221210-like element.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculative reasoning supported by citations about core RNAP pause elements.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "35ca25e8-2731-41b6-b4d2-1b9e550b26d4",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C72",
+      "claim": "\u03c370 trans loading might enable the cell to integrate signals transmitted via \u03c370 and an alternative \u03c3 factor to modulate gene expression within a single transcription unit under the control of a non \u03c370\u2013dependent promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Such '\u03c3 cross regulation' might enable the cell to integrate signals transmitted via \u03c370 and an alternative \u03c3 factor to modulate gene expression within a single transcription unit under the control of a non \u03c370\u2013dependent promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the potential biological significance of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "bb4a0b74-61d4-47ec-8559-e7dce68686a0",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C73",
+      "claim": "\u03c370 trans loading can cause the TEC to pause, which is expected to influence transcription output directly in a manner that depends on pause half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle there are several ways that \u03c370 trans loading might modulate gene expression. First, as shown here, \u03c370 trans loading can cause the TEC to pause, which is expected to influence transcription output directly in a manner that depends on pause half-life (and, as suggested by our results shown in Figure 4, may become particularly relevant in stationary phase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data and general knowledge about transcription pausing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "9cc370cb-ba80-4eff-aa47-b7c333a15238",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C74",
+      "claim": "\u03c370\u2013dependent pausing might influence gene expression indirectly, by facilitating engagement of regulatory factors, influencing formation of RNA secondary structures, or influencing translation.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c370\u2013dependent pausing might also influence gene expression indirectly, by facilitating engagement of regulatory factors, influencing formation of RNA secondary structures, or influencing translation (Roberts et al., 1998; Wickiser et al., 2005; Landick, 2006; Pan and Sosnick, 2006; Lemay et al., 2011; Perdrizet et al., 2012; Larson et al., 2014; Nechooshtan et al., 2014; Belogurov and Artsimovitch, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "10bc5618-2161-406b-8b38-8c529f21b2a3",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C75",
+      "claim": "\u03c370 trans loading might impede the accessibility of the TEC to other elongation factors such as NusG or RfaH, which share the same primary binding site on RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, \u03c370 trans loading might impede the accessibility of the TEC to other elongation factors such as NusG or RfaH, which share the same primary binding site on RNAP (Sevostyanova et al., 2008; Mooney et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "2e456014-dad8-4e15-9f5a-43739b3d6d47",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C76",
+      "claim": "All experiments were performed in E. coli strain MG1655 or SG110.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in E. coli strain MG1655 or SG110 (Vvedenskaya et al., 2014) in which the chromosomal rpoC gene is fused to a 3xFLAG epitope tag-encoding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the strains used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "9b567e0a-dda2-4de5-bbd7-5761bd7d4112",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "claim_id": "C77",
+      "claim": "In strain SG110, the chromosomal rpoC gene is fused to a 3xFLAG epitope tag-encoding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in E. coli strain MG1655 or SG110 (Vvedenskaya et al., 2014) in which the chromosomal rpoC gene is fused to a 3xFLAG epitope tag-encoding sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the strain construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9a20b987-3c78-442c-a18a-49b3feb73f2d",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about bacterial \u03c3 factors, including their role in transcription initiation, the existence of primary and alternative \u03c3 factors, their structural features, and prior evidence that \u03c3 can remain associated with elongation complexes and modulate their behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C31 and C38 represent well-established background knowledge supported by appropriate citations to prior literature. These claims provide the necessary context for understanding the novel findings of the study and are consistently supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "8132a62f-df08-4466-a7c1-2c76dbf17b04",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "\u03c370 can bind in trans to TECs emanating from \u03c370-dependent promoters in vivo, as demonstrated by the sensitivity of transcription pausing to intracellular \u03c370 concentration on a \u03bbPR' template lacking a promoter-proximal pause element.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are well-supported by experimental data in Figure 1A showing ~5-fold increase in pause RNA abundance upon \u03c370 overproduction, with appropriate negative controls using mutated -10-like elements. The conclusion that \u03c370 can access TECs in trans (C34, C5) is logically inferred from the concentration-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "92e5db3c-bd43-44d1-b149-b78bb2b903f9",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03c370 trans loading can augment the \u03c370 content of TECs even when a promoter-proximal pause element is present, indicating that the cis-acting retention pathway is not saturating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C66 are supported by Figure 1B data showing ~1.5-fold additional increase in pause RNA upon \u03c370 overproduction even with a promoter-proximal pause element present. The conclusion that the retention pathway is not saturating is appropriately inferred from this additive effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "322cf357-4aa7-45e4-b3c5-4a64a5034c82",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Free \u03c370 can bind to TECs on a \u03c328-controlled transcription unit in vitro, as demonstrated by the appearance of ~35-nt pause RNAs dependent on both \u03c328-initiated transcription and an intact -10-like element.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are well-supported by in vitro transcription data in Figure 2 showing \u03c370-dependent pause RNA formation on \u03c328-initiated transcripts, with appropriate controls demonstrating dependence on both \u03c328 and the -10-like element. The conclusion of trans loading in vitro is appropriately inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "688f45a9-6994-4058-b1db-1c1870585c19",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03c370 can access TECs in trans in vivo on transcription units controlled by alternative \u03c3 factors, as demonstrated by \u03c328-dependent transcription showing \u03c370 concentration-dependent pausing at -10-like elements, with pause RNAs being RNAP-associated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are strongly supported by Figure 3 data showing: (1) \u03c328-dependent transcription, (2) ~7-fold increase in pause RNA with \u03c370 overproduction, (3) dependence on intact -10-like element, and (4) immunoprecipitation demonstrating RNAP association. This provides unambiguous evidence for trans loading in vivo (C49, C6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The extent of \u03c370 trans loading-mediated pausing varies with growth phase, being low (~5%) during exponential phase but dramatically increased (~50%) during stationary phase, with pause RNAs remaining RNAP-associated in both conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54, C7, and C67 are well-supported by Figure 4A data showing dramatic growth phase-dependent differences in pause RNA abundance on the Ptar template, with appropriate controls demonstrating -10-element dependence and RNAP association. The ~10-fold difference between growth phases is substantial and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "099ba4f3-3a8e-4847-b3c6-ead1a3622f3e",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The growth phase-dependent increase in pause RNA abundance is not due to changes in total cellular \u03c370 concentration, as exponential and stationary phase cells contain comparable amounts of \u03c370.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by Western blot data in Figure 4\u2014figure supplement 1B showing similar \u03c370 levels in both growth phases. However, the authors appropriately note this does not exclude changes in free \u03c370 availability, which is a reasonable caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "167f155d-4a7e-4beb-9eae-335cce1e029a",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The growth phase-dependent variation in \u03c370 trans loading-mediated pausing is explained, at least in part, by increased pause half-life in stationary phase compared to exponential phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by rifampicin chase experiments in Figure 4B showing differential stability of pause RNAs between growth phases, with full-length transcripts remaining stable. The conclusion that pause half-life contributes to growth phase effects is appropriately qualified as partial explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "2407d993-732e-4a9a-a024-1a1e55519135",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two distinct pathways enable \u03c370 to access TECs in vivo: a cis-acting retention pathway restricted to \u03c370-dependent promoters, and a trans-acting pathway operative on all transcription units. These pathways can function in concert, enabling \u03c370 to influence the entire transcriptome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 and C8 represent the major conceptual framework supported by the combined experimental evidence. The distinction between cis and trans pathways is logically sound, supported by the differential experimental designs, and appropriately integrates prior literature. The conclusion about transcriptome-wide effects (C8) is a reasonable inference from trans loading on alternative \u03c3-initiated transcripts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "812b649d-9e6d-4b16-9782-531414207fec",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that increased pause half-life in stationary phase might result from decreased intracellular NTP concentrations as nutrients are depleted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 is explicitly speculative and supported only by a citation about NTP concentration changes. While this is a reasonable hypothesis consistent with known effects of NTP concentration on pausing, it remains untested in this study and requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "94d551aa-b6cd-4bff-8a42-c3b476791ab7",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work found that RNAP holoenzyme from stationary phase cells produces more \u03c370-containing TECs than exponential phase RNAP, possibly due to tighter \u03c370 binding by stationary phase core enzyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 accurately represents findings from cited prior work (Bar-Nahum and Nudler, 2001) and is appropriately contextualized as relevant to the current findings. This is a proper citation of prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "c80ed80c-f439-4154-b02d-d2483f7bf138",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A potential pause species detected in stationary phase with mutated -10-like element may arise from a core RNAP-recognized consensus pause element (G-10Y-1G+1) that overlaps with the -10-like element.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is supported by data in Figure 4A showing residual pausing with the mutant template. However, claim C71 is explicitly speculative, and while the proposed core RNAP pause element is supported by citations, its role here is not experimentally validated. Alternative explanations are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "173ff91a-ebe5-45af-9364-0d4fbd85242b",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose multiple potential mechanisms by which \u03c370 trans loading might modulate gene expression, including direct effects through pausing and indirect effects through competition with other elongation factors or influences on RNA structure and translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C75 are explicitly speculative proposals for future investigation. While C73 is partially supported by the demonstrated pausing effects, claims C72, C74, and C75 represent untested hypotheses. These are appropriately framed as possibilities requiring further work, but lack experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    },
+    {
+      "id": "23b388c9-2803-47f7-a783-b8a4f830ea17",
+      "content_id": "571f42bb-5fa9-40d7-a3af-36e7e2ce5356",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "All experiments were performed in E. coli strains MG1655 or SG110, with SG110 carrying a chromosomal rpoC-3xFLAG fusion for immunoprecipitation studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are straightforward methodological details that are clearly stated and appropriate for the experimental designs employed. The use of FLAG-tagged RNAP enables the immunoprecipitation experiments shown in Figures 3B and 4\u2014figure supplement 1A.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:04.444458Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ec54677b-46eb-411a-8370-1959ee9d611b",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "bd05e757-1810-4ce1-86a2-b39b1a1f6dfc",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "0f80ce13-ac25-4281-9181-4886086fd8e5",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "8a3763b5-e414-4fae-8f70-4e4ae5b60359",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "19a7432f-7c1b-440a-bf35-f23e892f63ad",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "717c77aa-bc9d-474a-b93b-3d268936593c",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "980b18ce-eff4-47d1-957c-573f0257a31f",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "16105007-1aaf-49c1-b3d8-381918a1b3a6",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "5c290450-d43a-4ea9-8ace-70b6776ce44a",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "0920d583-16b6-45de-a643-f04b475a95c8",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "ac5ad450-3bab-4dae-b7f2-eac97590740e",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "a03bebb4-a73b-4339-bc16-a4b913b4edda",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "eaa7c7e0-8ba2-4138-af9d-c6da7e892338",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "f08004ab-8002-40fa-abfc-54c22824acd7",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "ba8d3f4c-6be2-4309-906b-a64684a33708",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "94ed8bd4-3291-4948-afd4-08ded7bc1c59",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "d03f8208-41cf-467c-b8b5-6601ae256735",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "1f14fdff-4746-44b5-985f-2be6df584817",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "a1b1373c-e132-4991-921e-e3fa0a139569",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "f5559f98-eef6-4c24-9bcb-369ab72fa82b",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "af27e2d3-e0e6-42f5-b71d-dd015f44e6d5",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "eaf99de8-2ea2-4e59-8447-3145194dc2f1",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "675e75c7-5567-4d45-ad28-a925e978c2d7",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "7cb19110-02b8-4768-924e-51a2cb693a25",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "22ee532e-c30e-4c43-9394-27d344ec1901",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "7a563323-28c8-49c7-8987-04458cd4c1ab",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "c8964b09-2303-4b28-beff-6bd450b8a36f",
+      "result_id": "9a20b987-3c78-442c-a18a-49b3feb73f2d"
+    },
+    {
+      "claim_id": "49ff554e-9293-4415-b7da-140944b22971",
+      "result_id": "8132a62f-df08-4466-a7c1-2c76dbf17b04"
+    },
+    {
+      "claim_id": "526dee2a-972f-40ec-98a2-7071248b5e87",
+      "result_id": "8132a62f-df08-4466-a7c1-2c76dbf17b04"
+    },
+    {
+      "claim_id": "e65f26b9-6971-4955-a11c-c8cb66dfa2ae",
+      "result_id": "8132a62f-df08-4466-a7c1-2c76dbf17b04"
+    },
+    {
+      "claim_id": "dae2c095-94cb-4bca-a258-8cf211c003aa",
+      "result_id": "8132a62f-df08-4466-a7c1-2c76dbf17b04"
+    },
+    {
+      "claim_id": "a6aa2d2c-9204-4444-bd19-7a6d31976979",
+      "result_id": "92e5db3c-bd43-44d1-b149-b78bb2b903f9"
+    },
+    {
+      "claim_id": "ae2dc9fe-4d4e-443e-9f06-fce122368df7",
+      "result_id": "92e5db3c-bd43-44d1-b149-b78bb2b903f9"
+    },
+    {
+      "claim_id": "5e18ddbb-aceb-4637-83a0-b246fbc0a03f",
+      "result_id": "92e5db3c-bd43-44d1-b149-b78bb2b903f9"
+    },
+    {
+      "claim_id": "5d153026-47a7-4241-9d2b-9d8c1eb1c671",
+      "result_id": "92e5db3c-bd43-44d1-b149-b78bb2b903f9"
+    },
+    {
+      "claim_id": "f9226954-0716-4f98-b212-b0b75344d2d0",
+      "result_id": "322cf357-4aa7-45e4-b3c5-4a64a5034c82"
+    },
+    {
+      "claim_id": "3a6a7ba9-8c5a-48a8-ae94-38577f34637f",
+      "result_id": "322cf357-4aa7-45e4-b3c5-4a64a5034c82"
+    },
+    {
+      "claim_id": "00cdfcae-a585-4099-be6e-54975df3810e",
+      "result_id": "322cf357-4aa7-45e4-b3c5-4a64a5034c82"
+    },
+    {
+      "claim_id": "61ef093b-92c1-4af1-8ca7-e944aea8f03e",
+      "result_id": "322cf357-4aa7-45e4-b3c5-4a64a5034c82"
+    },
+    {
+      "claim_id": "c23dd568-58de-4730-953e-da7ff12c0b41",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "65e9bfb9-6b2d-4eef-aba9-c2abcb4126a3",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "2a36b956-2b41-4ca9-8bd5-4c3c5e91471e",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "18f756b8-863d-46f2-a0ea-aec4e42386ba",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "371892b2-aa91-4d9d-8247-2ff5b1c15169",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "e5dbc4a1-5759-428c-af4c-07de0292b17c",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "3c2b0c44-c791-4e11-ae4d-7fee06073288",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "d988f332-a964-4523-89ab-68d50b457236",
+      "result_id": "688f45a9-6994-4058-b1db-1c1870585c19"
+    },
+    {
+      "claim_id": "4860cfd9-9a1c-4ee3-9de3-dafa82e0859d",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "91765219-0360-423d-bd9f-b95b08181100",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "363a6f20-061a-4a51-8f3b-dd1d71f150fc",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "14ed05e9-aabf-43d3-bc16-474dc8221b47",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "59d30795-9435-45a8-a655-13d5d8bda75d",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "df1e8418-1657-4b40-a178-adefd088595b",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "148520d7-670a-4eb1-8293-8be0ba4303ac",
+      "result_id": "295f86fc-2e39-439a-8ebb-7ff79fe11f88"
+    },
+    {
+      "claim_id": "d8fc8565-5c3f-49cb-8db4-8252af840a7d",
+      "result_id": "099ba4f3-3a8e-4847-b3c6-ead1a3622f3e"
+    },
+    {
+      "claim_id": "053ddd4f-3c1d-480a-a2de-841990dd22f0",
+      "result_id": "099ba4f3-3a8e-4847-b3c6-ead1a3622f3e"
+    },
+    {
+      "claim_id": "e695271f-478c-47a7-8087-5c6ffa0d894a",
+      "result_id": "167f155d-4a7e-4beb-9eae-335cce1e029a"
+    },
+    {
+      "claim_id": "9a8adf8b-b05b-4126-a8ed-e7cdeae7fe41",
+      "result_id": "167f155d-4a7e-4beb-9eae-335cce1e029a"
+    },
+    {
+      "claim_id": "d7bd94e7-6ede-4705-ad2e-36e0a5c1e9b2",
+      "result_id": "167f155d-4a7e-4beb-9eae-335cce1e029a"
+    },
+    {
+      "claim_id": "a4357502-273e-4b1b-ac9a-5255f6a9a847",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "2d56929e-d4e5-41e3-86ce-ec36c248db24",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "221b5928-d28d-4efa-b462-87b429fd3300",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "5b30bcbb-4407-4949-9a1b-8b205707b79b",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "35979217-1b44-438a-b657-548440937167",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "88b42908-fb97-4a56-8265-b1c4e3be4a04",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "bb9cd395-563d-4a58-9b9b-34d3b7a6727a",
+      "result_id": "2407d993-732e-4a9a-a024-1a1e55519135"
+    },
+    {
+      "claim_id": "a0b35a09-a606-4519-a42f-b035627f687f",
+      "result_id": "812b649d-9e6d-4b16-9782-531414207fec"
+    },
+    {
+      "claim_id": "495c1757-a41a-46e3-814f-93ec4fb6d661",
+      "result_id": "94d551aa-b6cd-4bff-8a42-c3b476791ab7"
+    },
+    {
+      "claim_id": "78e2ac5d-e536-449b-9769-46f3577a749f",
+      "result_id": "c80ed80c-f439-4154-b02d-d2483f7bf138"
+    },
+    {
+      "claim_id": "cbb7101f-182a-4d74-a020-5aa95a4069f4",
+      "result_id": "c80ed80c-f439-4154-b02d-d2483f7bf138"
+    },
+    {
+      "claim_id": "35ca25e8-2731-41b6-b4d2-1b9e550b26d4",
+      "result_id": "173ff91a-ebe5-45af-9364-0d4fbd85242b"
+    },
+    {
+      "claim_id": "bb4a0b74-61d4-47ec-8559-e7dce68686a0",
+      "result_id": "173ff91a-ebe5-45af-9364-0d4fbd85242b"
+    },
+    {
+      "claim_id": "9cc370cb-ba80-4eff-aa47-b7c333a15238",
+      "result_id": "173ff91a-ebe5-45af-9364-0d4fbd85242b"
+    },
+    {
+      "claim_id": "10bc5618-2161-406b-8b38-8c529f21b2a3",
+      "result_id": "173ff91a-ebe5-45af-9364-0d4fbd85242b"
+    },
+    {
+      "claim_id": "2e456014-dad8-4e15-9f5a-43739b3d6d47",
+      "result_id": "23b388c9-2803-47f7-a783-b8a4f830ea17"
+    },
+    {
+      "claim_id": "9b567e0a-dda2-4de5-bbd7-5761bd7d4112",
+      "result_id": "23b388c9-2803-47f7-a783-b8a4f830ea17"
+    }
+  ],
+  "comparisons": []
+}

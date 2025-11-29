@@ -1,0 +1,1470 @@
+{
+  "submission": {
+    "id": "dd75555e-698d-4773-b0d1-a85c19d7a241",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:43:59.316993Z",
+    "updated_at": "2025-11-29T03:43:59.316993Z"
+  },
+  "content": [
+    {
+      "id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "submission_id": "dd75555e-698d-4773-b0d1-a85c19d7a241",
+      "content_type": "manuscript",
+      "content_text": "# Quality control of transcription start site selection by nonsense-mediated-mRNA decay\n\n## Authors\n\n- Christophe Malabat<sup>1</sup>\n- Frank Feuerbach<sup>1</sup>\n- Laurence Ma<sup>2</sup>\n- Cosmin Saveanu<sup>1</sup>\n- Alain Jacquier<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institut Pasteur, UMR3525, G\u00e9n\u00e9tique des Interactions Macromol\u00e9culaires Centre National de la Recherche Scientifique Paris France\n2. Plate-Forme G\u00e9nomique Institut Pasteur Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nNonsense-mediated mRNA decay (NMD) is a translation-dependent RNA quality-control pathway targeting transcripts such as messenger RNAs harboring premature stop-codons or short upstream open reading frame (uORFs). Our transcription start sites (TSSs) analysis of Saccharomyces cerevisiae cells deficient for RNA degradation pathways revealed that about half of the pervasive transcripts are degraded by NMD, which provides a fail-safe mechanism to remove spurious transcripts that escaped degradation in the nucleus. Moreover, we found that the low specificity of RNA polymerase II TSSs selection generates, for 47% of the expressed genes, NMD-sensitive transcript isoforms carrying uORFs or starting downstream of the ATG START codon. Despite the low abundance of this last category of isoforms, their presence seems to constrain genomic sequences, as suggested by the significant bias against in-frame ATGs specifically found at the beginning of the corresponding genes and reflected by a depletion of methionines in the N-terminus of the encoded proteins.\n\n## Introduction\n\nRecent advances in sequencing technologies led to the detection of a wealth of new RNA transcripts and revealed that eukaryotic genomes are pervasively transcribed. In human cells, roughly 75% of the genome gives rise to RNA transcripts of various length but only an estimated 2% corresponds to protein-coding messenger RNAs (mRNAs) (Djebali et al., 2012). Even in a compact genome such as the budding yeast Saccharomyces cerevisiae (S. cerevisiae), hundreds of such pervasive non-coding RNAs (ncRNAs) were identified in addition to the stable ncRNAs such as transfer RNAs (tRNAs), small nucleolar RNAs (sn(o)RNAs), and ribosomal RNA (rRNAs) (Neil et al., 2009; Xu et al., 2009; van Dijk et al., 2011; Geisler et al., 2012).\n\nYeast ncRNAs are transcribed from nucleosome-free regions (NFRs) present throughout the genome, most often at gene promoters and terminators, and part of these RNAs represent by-products of divergent transcription initiation (Neil et al., 2009; Xu et al., 2009). Different mechanisms of RNA quality control prevent their accumulation in wild-type cells. In the nucleus, transcription from bidirectional promoters is restricted by early termination-coupled RNA degradation pathways (Arigo et al., 2006; Thiebaut et al., 2006; Almada et al., 2013; Ntini et al., 2013). In the yeast S. cerevisiae, degradation-coupled transcription termination of pervasive transcripts relies on the Nrd1-Nab3-Sen1 (NNS) complex, which interacts with the carboxy-terminal domain (CTD) of the RNA polymerase II (RNAPII) phosphorylated on serine 5 and triggers termination upon recognition of short sequences on the nascent RNA (Arigo et al., 2006; Thiebaut et al., 2006; Gudipati et al., 2008; Vasiljeva et al., 2008; Schulz et al., 2013). Early termination of these transcripts (named CUTs for cryptic unstable transcripts) is coupled with the recruitment of the Trf4-Air2-Mtr4 (TRAMP) complex and the Rrp6-containing nuclear RNA-exosome for rapid degradation (Wyers et al., 2005; Davis and Ares, 2006; Tudek et al., 2014). However, a significant proportion of the pervasive transcripts can escape this early nuclear quality-control step and be exported to the cytoplasm where they are targeted for degradation by the cytoplasmic 5\u2032-3\u2032 exonuclease Xrn1 (XUT; van Dijk et al., 2011). Some pervasive transcripts seem to be immune enough to both surveillance pathways to be detectable in wild-type cells and are called SUTs (stable unannotated transcripts; Xu et al., 2009). The distinction between these different classes of transcripts is not very stringent. Their behavior can be similar, as illustrated by the fact that in the absence of Xrn1p the average levels of SUTs and CUTs increase by 7.9-fold and 3.6-fold respectively (van Dijk et al., 2011). What makes pervasive transcripts (XUTs in the first instance) highly sensitive to Xrn1p-dependent cytoplasmic degradation remains to be determined but may be linked to the presence of small spurious open reading frames (ORF) in these transcripts that will make them substrates for the nonsense-mediated mRNA decay (NMD) as has been recently demonstrated for a new class of unannotated transcripts (Smith et al., 2014).\n\nOriginally described more than two decades ago as a quality-control pathway targeting for degradation mRNAs containing a premature termination codon (Leeds et al., 1991), NMD is a translation-coupled quality-control pathway affecting cytoplasmic transcripts with restricted coding capacities (for a review see Kervestin and Jacobson, 2012). NMD targets include mRNAs harboring \u2018upstream open reading frames\u2019 (uORFs) (He et al., 2003; Arribere and Gilbert, 2013) and unspliced or incorrectly spliced transcripts exported to the cytoplasm (Sayani et al., 2008; Kawashima et al., 2014) accounting for roughly 10\u201315% of mRNAs in yeast as well as in human cells (Kervestin and Jacobson, 2012 and references therein). This number may be an underestimate since recent studies underscored the structural heterogeneity of most mRNAs at both their 5\u2032 and 3\u2032 -ends (Ozsolak et al., 2010; Arribere and Gilbert, 2013; Pelechano et al., 2013; Waern and Snyder, 2013).\n\nTranscript heterogeneity at the 5\u2032-end is particularly relevant for NMD targeting since the use of different transcription start sites (TSSs) will generate, for a given gene, mRNAs with different 5\u2032-UTRs that may include uORFs. Although NMD targets were previously analysed genome-wide using NMD-deficient strains of S. cerevisiae, the techniques used to perform these analyses (He et al., 2003; Kawashima et al., 2014; Smith et al., 2014) did not allow monitoring such individual transcript isoforms and were thus susceptible to have missed a large number of transcripts degraded by this pathway. In order to address this question in a global and systematic manner, we used a modified 5\u2032-RACE approach (Hashimoto et al., 2009; Arribere and Gilbert, 2013) to perform a genome-wide analysis of TSSs in wild-type S. cerevisiae cells as well as in cells deficient for nuclear and NMD RNA quality-control pathways. Minor transcript isoforms targeted for degradation by NMD were identified for almost half of yeast protein-coding genes, underscoring the low specificity of TSS selection by RNAPII. In particular, our study revealed for the majority of protein-coding genes the use of TSSs downstream the ATG start codons. This phenomenon has the potential to generate N-terminally truncated proteins if the first ATG encountered by ribosomes translating this 5\u2032 truncated transcript is in the right reading frame. Such an undesirable outcome seems, however, to be counteracted by the significant depletion of in-frame relative to out-of-frame ATGs at the beginning of protein-coding genes in yeast. This bias increases the probability of such transcripts to have very short coding regions and be efficiently degraded by NMD.\n\nOur analysis also showed that NMD restricts the accumulation of cryptic transcripts initiating inside transcribed ORFs as a consequence of altered chromatin structure and provides a fail-safe control mechanism for the removal of pervasive transcripts that escaped degradation by the nuclear quality-control pathway, reminiscent of what has been previously shown for some unspliced pre-mRNAs (Sayani and Chanfreau, 2012). This includes not only a large fraction of the XUTs and SUTs but also a fraction of the CUTs and previously unannotated transcripts, which accumulate to substantial levels only when both pathways are inactive.\n\n## Results\n\n### TSS sequencing technique\n\nTo identify TSSs genome-wide and with high specificity we used a modified genomic 5\u2032-RACE approach (Hashimoto et al., 2009; Arribere and Gilbert, 2013) that we called TSS sequencing, which involves a biotin purification step and allows the selective enrichment of the 5\u2032-ends of capped transcripts (see Figure 1A and \u2018Materials and methods\u2019). We evaluated the \u2018false-discovery\u2019 rate of the method for the identification of TSSs (that is, the proportion of sequencing reads not actually mapping to the 5\u2032-end of capped RNAs) by comparing libraries made using samples treated or not with the tobacco acid pyrophosphatase (TAP), which is required for efficient and specific ligation of the biotinylated primer to the 5\u2032-end of capped-RNAs. To extend this analysis to transcripts that are unstable in wild-type cells, we prepared libraries using RNAs extracted from upf1\u2206rrp6\u2206 double mutant strains. To minimize polymerase chain reaction (PCR) amplification biases and provide an internal control, the S. cerevisiae poly(A)+ RNAs, treated or not with TAP, were mixed with an equal amount of TAP-treated poly(A)+ RNAs from Schizosaccharomyces pombe just prior to the ligation step. After normalization using the S. pombe sequencing reads and removal of the ribosomal DNA ones, these experiments generated 2,844,877 reads when TAP was used compared with 72,435 reads when TAP was omitted. The ratio between these two numbers provides an upper limit for the false-discovery rate of TSS identification of 2.5%. Analysis of the cumulative 5\u2032-end read counts per nucleotide around the start codon for all protein-coding genes showed that, genome-wide, 77% (2,190,211) of the reads obtained for TAP-treated samples could be mapped within a 200 nucleotide region upstream of the start codons with a maximum at around 30 nucleotides upstream from ATGs, while only 22% mapped to the same region when this treatment was omitted (Figure 1B). However, even in the latter case, the number of mapped reads also peaked at around 30 nucleotides upstream of the ATGs, suggesting that a substantial proportion of these sequences likely correspond to genuine TSSs even though they were generated in the absence of TAP treatment. These data suggest that the real false-discovery rate for TSS is substantially less than 2.5%.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic view of the methodology used to produce the transcription start site (TSS) sequence-tag libraries (RNA molecules are in blue, DNA molecules in red). (B) All protein-coding genes were aligned on the A of their annotated ATG start codon and the distribution of the TSSs read counts was computed for each position in a window from \u2212200 to +200 nucleotides for samples treated (blue curve) or not (red curve) with tobacco acid pyrophosphatase (TAP). The insert within the figure shows a zoomed view of the \u2212100 to +50 nucleotide region. (C) Correlation between two biologically independent replicates (replicate 1: library L5p_03.WT, replicate 2: library L5p_04.WT; see Table 1). The Pearson's correlation value (\u03c1) between the read counts of the 174,151 TSSs identified in the two data sets is indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Correlation between two data sets generated in our laboratory months apart (A) and between our data and those published by Pelechano et al. (2013) (B). The Pearson's correlation value (\u03c1) between the two data sets is indicated.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Consensus sequence around all the identified TSSs generated using the Web-LOGO algorithm (Crooks et al., 2004). The site of transcription initiation (the TSS) is labeled +1 while the preceding nucleotide position is labeled \u22121. (B) Percentage of mismatches between the actual genomic sequence and the first base (red squares) or all the other bases (blue dots) of the complementary DNAs (cDNAs) after alignment of the TSS reads on the genome. A, G, C, and T on the bottom line correspond to the genomic sequence. A strong percentage of mismatches (\u223c60%) was observed specifically for the first cDNA position when pyrimidines are encoded on the genome at the corresponding location. In 80% of the cases, these mismatches consisted of a pyrimidine to A mismatch. (C) As in (A) but taking into account only the TSSs for which a pyrimidine to A mismatch at the 5\u2032-end of the cDNAs was observed. The vertical arrows pointing to an A indicate the fact that the +1 nucleotide position, a pyrimidine in the genome, corresponds to a mismatched A at the first position of the cDNA. Up to 30% of the cDNA 5\u2032-ends mapping on a pyrimidine actually conform to this consensus. Note that the presence of a conserved A at position \u22127 while it is located at position \u22128 in the general consensus and the presence of the pyrimidine to A mismatch suggests that transcription may not start at the pyrimidine but rather at the following A. Indeed, if one would remove the base at the 5\u2032-end of the cDNA reads and align these to the genome, they would then perfectly conform to the general consensus, including the A at position \u22128, suggesting that an extra A is added at the 5\u2032-end of the transcript during its synthesis. (D) Schematic model depicting how a one nucleotide \u2018backward-shift\u2019 relative to the template occurring during the transcription of the first three consecutive As might lead to the incorporation of four As at the beginning of the transcript. This scenario is supported by the fact that for TSSs mapped at PyAAA sequences, the corresponding transcripts carried three or four As at about equal frequencies, which suggests that this \u2018one nucleotide back-shifting\u2019 phenomenon occurs about half of the time when transcription initiates on this particular motif.\n\n### Repeatability and reproducibility of TSS sequencing\n\nTo estimate the repeatability of the experiment, two independent biological replicates were generated in parallel from wild-type cells and sequenced on different lanes of an Illumina HiSeq 2500 sequencer. The number of reads mapping to the same genomic position were highly correlated (Figure 1C; Pearson's correlation coefficient (\u03c1) = 0.89, see also Table 1). When we compared data sets for the wild-type strain generated months apart in our laboratory (reproducibility test), we observed lower correlation coefficients (\u03c1 = 0.71) likely reflecting biological variation inherent to samples prepared at different moments (Figure 1\u2014figure supplement 1A). However, the correlation between data generated within our lab is still higher than the correlation between our data and results previously published by Pelechano et al. (2013) (\u03c1 = 0.58; Figure 1\u2014figure supplement 1B) or Arribere and Gilbert (\u03c1 = 0.48; Arribere and Gilbert, 2013) as well as between these two sets of data (\u03c1 = 0.55).\n\n**Table 1.**\n Libraries generated and analysed in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Library</th>\n      <th>Genotype</th>\n      <th>Total reads count</th>\n      <th>Unique reads count</th>\n      <th>Unique reads count mapped on S. cerevisiae genome</th>\n      <th>Unique reads count mapped on S. pombe genome</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"6\">TSS-sequencing</td>\n    </tr>\n    <tr>\n      <td>L5p_01</td>\n      <td>WT</td>\n      <td>8,650,655</td>\n      <td>5,862,245</td>\n      <td>5,631,307</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_01</td>\n      <td>upf1\u2206</td>\n      <td>9,624,626</td>\n      <td>7,161,842</td>\n      <td>6,733,121</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_01</td>\n      <td>rrp6\u2206</td>\n      <td>10,949,693</td>\n      <td>7,640,701</td>\n      <td>7,155,101</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_01</td>\n      <td>upf1\u2206rrp6\u2206</td>\n      <td>10,839,311</td>\n      <td>7,681,910</td>\n      <td>7,231,052</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_02</td>\n      <td>WT</td>\n      <td>10,139,398</td>\n      <td>4,207,854</td>\n      <td>3,949,042</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_02</td>\n      <td>upf1\u2206</td>\n      <td>10,607,408</td>\n      <td>4,325,398</td>\n      <td>4,067,154</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_02</td>\n      <td>rrp6\u2206</td>\n      <td>22,861,396</td>\n      <td>10,269,822</td>\n      <td>9,711,133</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_02</td>\n      <td>upf1\u2206rrp6\u2206</td>\n      <td>13,803,020</td>\n      <td>6,526,805</td>\n      <td>6,207,357</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_03</td>\n      <td>WT</td>\n      <td>11,525,631</td>\n      <td>4,670,586</td>\n      <td>4,343,264</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_03</td>\n      <td>upf1\u2206</td>\n      <td>9,832,590</td>\n      <td>3,338,679</td>\n      <td>3,122,942</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_03</td>\n      <td>rrp6\u2206</td>\n      <td>11,811,879</td>\n      <td>5,228,409</td>\n      <td>4,905,881</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_03</td>\n      <td>upf1\u2206rrp6\u2206</td>\n      <td>17,157,244</td>\n      <td>7,897,030</td>\n      <td>7,430,231</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_04</td>\n      <td>WT</td>\n      <td>13,282,069</td>\n      <td>10,019,742</td>\n      <td>6,032,695</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_04</td>\n      <td>upf1\u2206</td>\n      <td>14,162,741</td>\n      <td>10,872,408</td>\n      <td>6,724,910</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_04</td>\n      <td>set2\u2206</td>\n      <td>14,714,187</td>\n      <td>11,048,398</td>\n      <td>6,591,345</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_04</td>\n      <td>upf1\u2206set2\u2206</td>\n      <td>16,958,167</td>\n      <td>12,121,894</td>\n      <td>8,081,113</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_05</td>\n      <td>WT</td>\n      <td>11,270,824</td>\n      <td>4,446,988</td>\n      <td>4,172,618</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_05</td>\n      <td>upf1\u2206</td>\n      <td>12,093,631</td>\n      <td>4,599,307</td>\n      <td>4,323,962</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_05</td>\n      <td>set2\u2206</td>\n      <td>18,047,134</td>\n      <td>7,132,585</td>\n      <td>6,724,933</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_05</td>\n      <td>upf1\u2206set2\u2206</td>\n      <td>12,719,564</td>\n      <td>5,637,310</td>\n      <td>5,333,480</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_06</td>\n      <td>WT</td>\n      <td>12,253,253</td>\n      <td>4,800,799</td>\n      <td>4,463,020</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_06</td>\n      <td>upf1\u2206</td>\n      <td>10,481,413</td>\n      <td>3,402,317</td>\n      <td>3,181,752</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_06</td>\n      <td>set2\u2206</td>\n      <td>12,179,190</td>\n      <td>4,448,762</td>\n      <td>4,167,876</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_06</td>\n      <td>upf1\u2206set2\u2206</td>\n      <td>14,269,228</td>\n      <td>5,584,019</td>\n      <td>5,227,982</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>L5p_07</td>\n      <td>upf1\u2206rrp6\u2206 + TAP</td>\n      <td>8,890,286</td>\n      <td>2,973,612</td>\n      <td>1,621,712</td>\n      <td>1,134,673</td>\n    </tr>\n    <tr>\n      <td>L5p_07</td>\n      <td>upf1\u2206rrp6\u2206 \u2212 TAP</td>\n      <td>13,836,172</td>\n      <td>3,214,470</td>\n      <td>149,092</td>\n      <td>2,700,018</td>\n    </tr>\n    <tr>\n      <td>L5p_08</td>\n      <td>upf1\u2206rrp6\u2206 + TAP</td>\n      <td>9,689,188</td>\n      <td>2,768,418</td>\n      <td>1,341,975</td>\n      <td>1,209,108</td>\n    </tr>\n    <tr>\n      <td>L5p_08</td>\n      <td>upf1\u2206rrp6\u2206 \u2212 TAP</td>\n      <td>9,765,672</td>\n      <td>2,390,794</td>\n      <td>82,685</td>\n      <td>2,074,096</td>\n    </tr>\n    <tr>\n      <td>L5p_09</td>\n      <td>upf1\u2206set2\u2206 + TAP</td>\n      <td>11,885,938</td>\n      <td>3,793,668</td>\n      <td>1,976,161</td>\n      <td>1,555,818</td>\n    </tr>\n    <tr>\n      <td>L5p_09</td>\n      <td>upf1\u2206set2\u2206 \u2212 TAP</td>\n      <td>11,105,585</td>\n      <td>2,936,749</td>\n      <td>117,202</td>\n      <td>2,552,264</td>\n    </tr>\n    <tr>\n      <td>L5p_10</td>\n      <td>upf1\u2206set2\u2206 + TAP</td>\n      <td>11,665,986</td>\n      <td>3,797,708</td>\n      <td>1,343,091</td>\n      <td>2,147,100</td>\n    </tr>\n    <tr>\n      <td>L5p_10</td>\n      <td>upf1\u2206set2\u2206 \u2212 TAP</td>\n      <td>11,000,429</td>\n      <td>2,476,135</td>\n      <td>59,450</td>\n      <td>2,145,439</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">RNAseq</td>\n    </tr>\n    <tr>\n      <td>LT_01</td>\n      <td>WT</td>\n      <td>8,104,047</td>\n      <td>7,257,423</td>\n      <td>6,634,522</td>\n      <td>1,761,046</td>\n    </tr>\n    <tr>\n      <td>LT_01</td>\n      <td>upf1\u2206</td>\n      <td>11,137,269</td>\n      <td>10,129,315</td>\n      <td>9,257,158</td>\n      <td>2,440,195</td>\n    </tr>\n    <tr>\n      <td>LT_01</td>\n      <td>xrn1\u2206</td>\n      <td>11,619,211</td>\n      <td>10,631,126</td>\n      <td>9,737,924</td>\n      <td>2,310,274</td>\n    </tr>\n    <tr>\n      <td>LT_01</td>\n      <td>upf1\u2206xrn1\u2206</td>\n      <td>7,947,627</td>\n      <td>7,299,151</td>\n      <td>6,645,353</td>\n      <td>1,678,281</td>\n    </tr>\n    <tr>\n      <td>LT_02</td>\n      <td>WT</td>\n      <td>34,611,003</td>\n      <td>27,825,118</td>\n      <td>22,658,503</td>\n      <td>3,635,624</td>\n    </tr>\n    <tr>\n      <td>LT_02</td>\n      <td>upf1\u2206</td>\n      <td>29,379,233</td>\n      <td>24,421,717</td>\n      <td>19,815,913</td>\n      <td>2,966,963</td>\n    </tr>\n    <tr>\n      <td>LT_02</td>\n      <td>xrn1\u2206</td>\n      <td>26,816,267</td>\n      <td>22,686,420</td>\n      <td>18,245,251</td>\n      <td>2,493,471</td>\n    </tr>\n    <tr>\n      <td>LT_02</td>\n      <td>upf1\u2206xrn1\u2206</td>\n      <td>25,466,016</td>\n      <td>21,800,532</td>\n      <td>16,996,728</td>\n      <td>2,436,568</td>\n    </tr>\n  </tbody>\n</table>\n\n### TSS consensus sequences\n\nThe complementary DNA (cDNA) sequences were aligned with the genomic sequence (allowing one mismatch in the seed sequence; see \u2018Materials and methods\u2019). Analysis of the TSSs and their surrounding sequences using the Web-LOGO algorithm (Crooks et al., 2004) identified a consensus sequence around TSSs (Figure 1\u2014figure supplement 2A) similar to the previously reported one derived from a smaller data set (Zhang and Dietrich, 2005). In particular, we observed a very strong bias to start at a purine (88% of mapped TSSs), usually following a pyrimidine (76% of the mapped TSSs), and the enrichment for an A at position \u22128 relative to the TSS (A(N)6PyPu consensus). Surprisingly, 58% of TSS reads starting with a pyrimidine when aligned on the genome (12% of the mapped TSSs) show a mismatch at their first nucleotide, most of the time an A instead of the encoded pyrimidine (Figure 1\u2014figure supplement 2B). Moreover, in 32% of these cases the surrounding genomic sequences exhibited a specific consensus, A(N)6PyAAA (where the underlined base is the mapped TSS; Figure 1\u2014figure supplement 2C). These observations suggest that, in these cases, transcription actually initiates on the A following the pyrimidine and that an additional A is added at the 5\u2032-end of the transcript, possibly by a back-tracking mechanism as proposed in the model described in Figure 1\u2014figure supplement 2D. This may also apply to other TSSs mapped on a pyrimidine and showing a mismatched first nucleotide. It thus appears from this observation that, even though 12% of the TSSs mapped on a pyrimidine, transcription initiation actually occurred on a pyrimidine in less than 5% of cases (42% of non-mismatched cDNAs out of 12% of cDNAs aligned on a pyrimidine).\n\n### The nuclear and cytoplasmic RNA degradation pathways cooperate in the removal of pervasive transcripts\n\nTo assess the relative contributions of the cytoplasmic NMD and nuclear RNA control pathways in shaping the yeast transcriptome, the genes encoding Upf1, an RNA helicase essential for NMD, or Rrp6, a nuclear exosome catalytic subunit, were deleted (He et al., 2003; Wyers et al., 2005). Since, for a given gene, several closely spaced TSSs can be identified (Pelechano et al., 2013), we used a peak-calling procedure to define, in three biological replicates, TSS clusters corresponding to transcript isoforms with closely spaced 5\u2032-ends (TSSCs; see \u2018Materials and methods\u2019). This analysis allowed us to identify 17,812 TSSCs, among which 5927 could be assigned to 5\u2032-ends of mRNAs corresponding to 5231 ORFs (O category in Supplementary file 1), as previously defined (Pelechano et al., 2013). Among the remaining TSSCs, 502 and 3644 were assigned to stable ncRNAs or repeated sequences (F category in Supplementary file 1) and previously described pervasive transcripts respectively (C, X and S categories for CUTs, XUTs and SUTs in Supplementary file 1; Neil et al., 2009; Xu et al., 2009; van Dijk et al., 2011).\n\nIn contrast to mRNA-TSSCs, the majority of which were unaffected in the absence of Upf1, Rrp6 or both (Figure 2A) and, as expected (Wyers et al., 2005), CUT-TSSCs were strongly stabilized in the absence of Rrp6 (Figure 2B; 79% stabilized significantly, as determined using the moderated estimation of fold change and dispersion function of DESeq2\u2014Love et al., 2014; see \u2018Materials and methods\u2019). In contrast, only 23% of the CUT-TSSCs increased significantly in the absence of Upf1. The opposite situation was observed for XUTs and SUTs, which were more sensitive to the cytoplasmic NMD quality-control pathway (28% vs 52% significantly stabilized in the absence of Rrp6 or Upf1, respectively; Figure 2C,D and Supplementary file 1). Collectively, 39% and 54% of the pervasive transcripts (CUTs, SUTs and XUTs) were significantly sensitive to the absence of Upf1 in a wild-type or rrp6\u2206 background, respectively, indicating that NMD targets about half of the pervasive transcripts. The absence of both Rrp6 and Upf1 had an additive effect on the stabilization of pervasive transcripts. In the double mutant, 76% and 92% of the XUTs/SUTs and CUTs, respectively, were significantly stabilized, suggesting that NMD provides a fail-safe control mechanism for pervasive transcripts that escaped degradation in the nucleus, reminiscent of what has been previously shown for some unspliced pre-mRNAs (Sayani and Chanfreau, 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig2-v2.jpg)\n\n**Figure 2.:** Frequency distribution of the ratios of transcription start site clusters (TSSCs) read counts in upf1\u2206 (red), rrp6\u2206 (blue), or upf1\u2206rrp6\u2206 (purple) compared with wild-type (WT) for mRNAs (A), cryptic unstable transcripts (CUTs) (B), Xrn1-sensitive transcripts (XUTs) (C) and stable unannotated transcripts (SUTs) (D). The dashed vertical lines mark a twofold increase in TSSC read counts in the various mutants relative to the wild-type. The number of identified TSSCs and of features to which they were assigned is indicated for each transcript class. Note that CUTs, XUTs and SUTs constituting overlapping transcript populations, when a TSSC was assigned to a pervasive transcript annotated in more than one of these classes, we arbitrarily associated the corresponding TSSC in priority to CUTs, then to XUTs and finally to SUTs.\n\n### XUTs and SUTs carry short spurious ORFs that target them for degradation by NMD\n\nThe accumulation of XUTs in the absence of Upf1 suggests that these transcripts, originally described as Xrn1-sensitive (van Dijk et al., 2011), may be primarily targeted for degradation by NMD. We tested this hypothesis by performing northern blot hybridization for three XUTs (Figure 3A) and genome-wide transcriptome analyses of wild-type, upf1\u2206, xrn1\u2206, and upf1\u2206xrn1\u2206 cells (Figure 3B\u2013D). Since the absence of Xrn1 leads to the accumulation of decapped RNAs (Hsu and Stevens, 1993), we could not use the TSS sequencing methodology applied for the other mutants and we thus used, for this particular experiment, a classical RNA sequencing approach for transcript quantification (see \u2018Materials and methods\u2019). Moreover, since the absence of Xrn1 affects the overall cellular mRNA content (Sun et al., 2013), an aliquot of a S. pombe culture was added to the cell pellet before RNA extraction to provide an independent internal control for normalization of the results. After having verified that the overall quantifications with \u2018RNAseq\u2019 gave results similar to those obtained by TSS sequencing for the wild-type and upf1\u2206 strains (Figure 3B and Supplementary file 2), we used the former technique to analyse the genome-wide effect of the XRN1 deletion. Consistent with previous reports (van Dijk et al., 2011; Sun et al., 2013), deletion of XRN1 resulted in a global increase of mRNAs, XUTs and SUTs compared with the wild-type (Figure 3C,D). In contrast to mRNAs, the extent to which XUTs and SUTs were stabilized in xrn1\u2206 was very similar to the one observed in upf1\u2206 cells (Figure 3C,D). Furthermore, deleting XRN1 in an upf1\u2206 background had almost no additional stabilizing effect on XUTs and SUTs, in contrast to mRNAs. This epistatic relationship observed between xrn1\u2206 and upf1\u2206 for the stabilization of XUTs and SUTs is consistent with these transcripts being primarily targeted by NMD, and with Xrn1 acting as a downstream effector of this pathway.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig3-v2.jpg)\n\n**Figure 3.:** (A) Northern blot analysis of three different Xrn1-sensitive transcripts (XUTs) in wild-type (WT), upf1\u2206, xrn1\u2206, and upf1\u2206xrn1\u2206 cells. ACT1 was used as a loading control. (B) Frequency distribution of the ratios of transcription start site clusters (TSSCs) read counts between upf1\u2206 and wild-type cells obtained with two different methods for library preparation and normalization procedures. \u2018TSSCs\u2019 refers to data obtained using the protocol developed to identify TSSs and \u2018RNAseq\u2019 to the protocol used to obtain the whole transcriptome (see \u2018Materials and methods\u2019). Only reads corresponding to annotated mRNAs, XUTs and SUTs were included in the analysis (see Supplementary file 2). (C) and (D) Frequency distribution of the ratios of read counts for upf1\u2206 (red), xrn1\u2206 (blue) or upf1\u2206xrn1\u2206 (purple) compared with wild-type for mRNAs and XUTs and SUTs respectively. The vertical dashed lines mark a twofold increase in read counts.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Comparison of ORF and 3\u2032-UTR sizes for mRNAs (blue), stable unannotated transcripts (SUTs) (red), and Xrn1-sensitive transcripts (XUTs) (green). The 5\u2032- and 3\u2032-ends were determined for all classes of transcripts using previously published data (Xu et al., 2009; van Dijk et al., 2011; Pelechano et al., 2013). For SUTs and XUTs, we took into account for the analysis the size of the first potential ORF found after the 5\u2032-end and the distance between the end of the transcript and the stop codon of this potential ORF. The median size of these ORFs was 14 amino acids for XUTs and SUTs, compared with 401 for annotated ORFs. The rightmost and uppermost panel displays the frequency distribution of the different features according to the size of their 3\u2032-UTRs and to the size of their ORF respectively. (B) Box plots illustrating the distribution of the size of 3\u2032-UTRs for XUTs and SUTs sensitive (red) or not (blue) to NMD.\n\nIn contradiction to the fact that XUTs and SUTs have been designated as \u2018non-coding\u2019, the strong effect NMD inactivation had on these transcripts indicates that they must, at some point, be translated. Indeed, all XUTs and SUTs carry spurious ORFs (Figure 3\u2014figure supplement 1A) and some of them have been identified in ribosomal profiling experiments and shown to encode short peptides (Ingolia et al., 2009; Smith et al., 2014). However, the high sensitivity to NMD of XUTs and SUTs compared with mRNAs suggests the presence of specific features. Assuming that the first encountered ORF is translated, XUTs and SUTs carry, on average, much shorter ORFs and longer 3\u2032-UTRs than mRNAs (Figure 3\u2014figure supplement 1A). The presence of both a long 3\u2032-UTR and a short ORF increases NMD efficiency in budding yeast (Decourty et al., 2014) and thus explain why these transcripts are efficiently targeted for degradation by this pathway. Furthermore, the few XUTs and SUTs found not to be sensitive to NMD have on average significantly shorter 3\u2032-UTRs (Figure 3\u2014figure supplement 1B), which is in agreement with the recently published observation that, in ribosomal profiling experiments, the length of RNA downstream of the ribosome protected region is significantly longer for NMD-sensitive compared with NMD-insensitive unannotated RNA transcripts (Smith et al., 2014).\n\n### Identification of additional pervasive transcripts\n\nAmongst the 17,812 TSSCs identified in this study, 7739 could not be assigned to previously annotated transcripts (ORFs, stable ncRNAs or pervasive transcripts) and were only detected in mutants cells (Figure 4). These newly identified transcripts, expressed at low levels (Figure 4\u2014figure supplement 1), originated from intergenic regions (3011 \u2018intergenic-TSSCs\u2019 originating from 1843 intergenic regions) as well as from within mRNA transcribed regions either in sense (2978 \u2018B-TSSCs\u2019 within 1889 mRNAs) or in antisense orientation (1750 \u2018A-TSSCs\u2019 antisense to 1186 mRNAs; Supplementary file 1). While \u2018B-TSSCs\u2019 were sensitive to upf1\u2206 and almost not affected by the deletion of RRP6 (Figure 4C and Figure 4\u2014figure supplement 1), \u2018intergenic\u2019 and \u2018A-TSSCs\u2019 were affected by the two mutations (Figure 4A,B and Figure 4\u2014figure supplement 1). Furthermore, the absence of both Rrp6 and Upf1 had an additive effect on the accumulation of these last two classes, as is the case for previously identified pervasive transcripts. Combining these two mutations might sometimes even have a synergistic and not only an additive effect, since some of these transcripts were readily detectable only in the upf1\u2206rrp6\u2206 double mutant (e.g., the transcript found antisense to MAL12/32 in Figure 4E). Analysis of individual TSSs signatures for these three classes of previously unannotated transcripts using the Web-LOGO algorithm (Crooks et al., 2004) yielded a consensus sequence almost indistinguishable from the one obtained for individual TSSs assigned to known mRNAs or previously identified pervasive transcripts (Figure 4\u2014figure supplement 2), suggesting that the underlying DNA sequence plays an important role in TSS selection by the scanning polymerase.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Frequency distribution of the ratios of transcription start site clusters (TSSCs) read counts in upf1\u2206 (red), rrp6\u2206 (blue) or upf1\u2206rrp6\u2206 (purple) compared with wild-type for transcripts initiating within intergenic regions\u2014\u2018intergenic TSSCs\u2019 (A), from within an mRNA transcribed region but antisense to the mRNA\u2014A-TSSCs (B) or within an mRNA transcribed region, but in the sense orientation with respect to the mRNA\u2014B-TSSCs (C). (D) Schematic representation of the various classes of TSSCs described above. The small blue and orange vertical bars represent individual TSSs within TSSCs (dashed lines). (E) Northern blot analysis of poly(A)+ RNA from wild-type, upf1\u2206, rrp6\u2206 and upf1\u2206rrp6\u2206. The category to which the transcripts belong is indicated on the right. ACT1 was used as a loading control.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Box plots illustrating the distribution of read counts for the different classes of transcription start site clusters (TSSCs) identified in this study for wild-type (WT) (grey), upf1\u2206 (red), rrp6\u2206 (blue), and upf1\u2206rrp6\u2206 (purple) cells.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Consensus sequences around the TSSs generated using the Web-LOGO algorithm (Crooks et al., 2004) for the different categories of TSS clusters (TSSCs) identified in this study: mRNAs (A), cryptic unstable transcripts (CUTs) (B), Xrn1-sensitive transcripts (XUTs) (C), stable unannotated transcripts (SUTs) (D), 'intergenic' transcripts (E), A intragenic (F) and B intragenic (G) transcripts. The numbers of reads and TSSs are indicated.\n\n### Co-transcriptional histone modifications and NMD cooperate to restrict the accumulation of internally initiated transcripts\n\nEven though transcripts initiated inside ORFs are expected to be targeted for degradation by NMD due to the presence of short spurious ORFs, the high number of internally initiated transcripts (\u2018A and B-TSSCs\u2019) identified in cells lacking UPF1 was surprising. The synthesis of such transcripts is normally repressed within transcribed regions unless the proper chromatin structure cannot be re-established in the wake of RNAPII (Smolle and Workman, 2013). In particular, histone methylation by Set2 was shown to be a key determinant of this repression. We therefore analysed the impact of SET2 deletion on \u2018A\u2019 and \u2018B\u2019 TSSCs identified in the upf1\u2206 strain. While deletion of SET2 had little effect on the internal TSSCs identified in the single upf1\u2206 mutant, it revealed new Set2-sensitive \u2018A\u2019 and \u2018B\u2019 TSSCs (Figure 5 and Supplementary file 3). As expected and in contrast to A-TSSCs and B-TSSCs, deletion of SET2 had no global effect on ORF TSSCs and only a marginal effect on CUTs, XUTs and SUTs or \u2018intergenic\u2019 TSSCs (Figure 5\u2014figure supplement 1). In agreement with the observed enrichment in Set2-catalyzed H3K36 methylation towards the 3\u2032 end of ORFs (Pokholok et al., 2005), the \u2018A\u2019 and \u2018B\u2019 TSSCs more sensitive to Set2 were located further away from the mRNA 5\u2032-ends (Figure 6A\u2013C). Analysis of the sequence surrounding individual TSSs from these TSSCs identified a pattern almost identical to the one found for ORF-TSSs (Figure 6\u2014figure supplement 1), confirming that they corresponded to bona fide transcription initiation events. However, unlike the TSSs associated with other features identified in this study, the \u2018B\u2019 TSSs were not associated with a strong NFR (Figure 6\u2014figure supplement 2). Instead, analysing the nucleosome density around these TSSs revealed the presence of a weak NFR surrounded by two well-positioned nucleosomes. This particular pattern might explain the high sensitivity of \u2018B\u2019 TSSs to mutations affecting chromatin structure, such as the deletion of the Set2 histone methyl-transferase (Smolle and Workman, 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig5-v2.jpg)\n\n**Figure 5.:** (A) Frequency distribution of the ratios of TSS clusters (TSSCs) read counts in upf1\u2206set2\u2206 compared with upf1\u2206 cells for the intragenic A-TSSCs. The comparison was performed for all the TSSCs (blue line) and for the ones identified in a single upf1\u2206 mutant (red line). (B) As in (A) but for B-TSSCs.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013G) Frequency distribution of the ratios of TSSC read counts in upf1\u2206 (red), set2\u2206 (green) or upf1\u2206 set2\u2206 (orange) compared with wild-type for mRNAs (A), cryptic unstable transcripts (CUTs) (B), Xrn1-sensitive transcripts (XUTs) (C), stable unannotated transcripts (SUTs) (D), \u2018intergenic\u2019 (E), \u2018A-\u2019 (F) and B-TSSCs (G). The dashed vertical lines mark a twofold (log2 = 1) increase in TSS counts in the mutants relative to the wild-type. The numbers of identified TSSCs and of features to which they were assigned is indicated for each class.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig6-v2.jpg)\n\n**Figure 6.:** (A) Visualization of the TSS reads at the YIL136w and YMR114c loci in the wild-type (WT; black), upf1\u2206 (red), set2\u2206 (green), and upf1\u2206set2\u2206 (orange) cells. The blue arrows represent ORFs and the horizontal red bar the position of the probes used for the Northern blots displayed on the right. Arrowheads in the right panel indicate the position of the full-length and internally initiated (B1, B2, and B) transcripts. (B) and (C) Frequency distribution of A-TSSCs and B-TSSCs read counts respectively in upf1\u2206set2\u2206 vs upf1\u2206 according to the distance from their associated mRNA TSS. Blue and red lines are for TSSCs sensitive and insensitive to the deletion of SET2 respectively. (D) Frequency distribution of read counts for the A- (blue) and B- (red) TSSCs in upf1\u2206set2\u2206 compared to set2\u2206 cells.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The numbers of reads and TSSs are indicated.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Average nucleosome density retrieved from Kaplan et al. (2009) plotted as a function of the distance of individual TSSs for TSSs belonging to the different categories of TSS clusters (TSSCs) identified in this study: mRNAs (A), cryptic unstable transcripts (CUTs) (B), Xrn1-sensitive transcripts (XUTs) (C), stable unannotated transcripts (SUTs) (D), 'intergenic' transcripts (E), A intragenic (F) and B intragenic (G) transcripts.\n\nImportantly, 55% of the A-TSSCs and 40% of the B-TSSCs, whether repressed by Set2 or not, were sensitive to Upf1 (i.e., increased significantly in upf1\u2206set2\u2206 compared with set2\u2206 cells; Figure 6D and Supplementary file 3), revealing NMD to be an important quality-control mechanism to eliminate internally initiated transcripts.\n\n### Almost half of the coding genes produced transcript isoforms sensitive to NMD\n\nIn contrast to their strong impact on the steady state levels of a variety of pervasive transcripts, including previously unannotated ones, inactivation of nuclear and/or cytoplasmic RNA quality-control pathways had a relatively minor global effect on the steady state levels of coding transcripts (Figure 2).\n\nConsistent with previously reported data (He et al., 2003; Wyers et al., 2005), the effect on mRNAs was larger upon deletion of UPF1 (with 17% of the mRNAs-TSSCs showing a significant increase in the absence of Upf1) than upon deletion of RRP6 and deletion of both genes simultaneously did not show any additive effect (Figure 2A). Yet, due to the mRNA 5\u2032-end heterogeneity, analysing individual TSSs gave a different picture. Indeed, transcript isoforms in which TSSs where followed by uORFs were, globally, stabilized in the absence of UPF1, while those in which the annotated start codon was the first ATG downstream the TSS were mostly unaffected (Figure 7A, solid lines; Figure 7B). A large fraction of these NMD-sensitive transcripts corresponded to minor isoforms, explaining why NMD had only a weak effect on the overall mRNA-TSSC levels (Figure 2A). Yet, for 1129 out of the 5231 active genes (22%), a fraction of their transcript isoforms carried at least one uORF and was significantly sensitive to NMD. Isoforms carrying more than one uORF appeared even more sensitive to NMD (Figure 7A), suggesting that the first AUGs of uORFs containing transcripts are not always efficiently used for translation initiation, likely because they are not in a favorable context (Arribere and Gilbert, 2013).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig7-v2.jpg)\n\n**Figure 7.:** (A) Genes were aligned by their start codon and the log2 of ratios of TSS reads for upf1\u2206 vs wild-type was plotted for TSSs upstream or downstream (iTSSs) the annotated ATG start codons, as depicted in the right panel. The main open reading frames (ORFs) are represented by large blue arrows and upstream ORFs (uORFs) or small internal out-of-frame ORFs by small orange arrows. The thin blue arrows indicate the TSSs. (B) The curve represents the probability at each nucleotide position that the distributions of reads corresponding to the red and blue curves shown in A are the same. The dashed red line marks the 0.05 p-value. (C) Genes were aligned by their annotated start codons (A of the ATG at position +1) and the cumulative TSS read counts per nucleotide (smoothed over 11 nucleotides) was plotted for the wild-type (black) and upf1\u2206 (red) cells. Inset: Magnification of the +1 to +50 region. The p-value < 2.2 \u00d7 10\u221216 is the probability (ANOVA test) that the distributions of the values, per nucleotide, for the red and black curves are the same within the +1 to +50 nucleotides interval.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) As for Figure 7C but without smooting. (B) Genes were aligned by their annotated start codons and the total number of transcription start sites (TSSs) per nucleotide was plotted for the wild-type (black) and upf1\u2206 (red) cells. (C) Zoom of panel (B) for the region \u221220 to +50 nucleotides around the annotated start codons (upper panel). Note that A and G of the start codon are frequently used for transcription initiation and iTSSs display periodicity of three nucleotides. This periodicity can be explained by the fact that RNA polymerase II transcription initiates preferentially at purines (R) (Zhang and Dietrich, 2005), which are enriched at the first position of codons as previously reported (Mackiewicz et al., 1999) and depicted in the middle and bottom panels.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Transcription start sites downstream of annotated ATGs (iConsensus sequences around the iTSSs generated using the Web-LOGO algorithm (Crooks et al., 2004). To avoid a potential bias due to the presence of the ATG start codon in all genes, only iTSSs mapping at least four nucleotides from the start codon were used for this analysis. The numbers of reads and TSSs are indicated.\n\nUnexpectedly, another important category of transcript isoforms found to be sensitive to NMD corresponded to TSSs mapping downstream to the annotated ORF ATG (here called iTSSs; Supplementary file 4). Only observed after TAP treatment (see insert in Figure 1B), these iTSSs must correspond to genuine capped-RNAs. We considered genes as having iTSSs (3327 genes; 64% of the expressed genes) if they contained at least four iTSS reads, which accounted for 99% of all iTTS reads. A fraction of transcript isoforms initiated at iTSSs followed by an out-of-frame ATG and significantly stabilized in the absence of Upf1 could be identified for 1821 out of the 5231 expressed genes (35%, Figure 7A,B). In contrast to the weak overall effects observed for TSSs located directly upstream of the start codon, the mean expression level of iTSSs significantly increased in the upf1\u2206 strain relative to the wild-type (Figure 7C, and Figure 7\u2014figure supplement 1). Note that RNAPII transcription initiating preferentially at purines, the A and G of the annotated start codons are quite frequently used as sites of transcription initiation and the first nucleotide of codons are preferential sites of internal initiation because these positions are enriched in purines (Figure 7\u2014figure supplement 1B,C; Mackiewicz et al., 1999). The consensus sequence for the iTSSs was not different from the general consensus sequence for RNAPII transcription initiation (Figure 7\u2014figure supplement 2).\n\nAltogether, transcript isoforms significantly stabilized in NMD-deficient cells, either because they carry a uORF or because they initiated at an out-of-frame iTSS, were found in 2437 genes; that is, 47% of the 5231 expressed genes.\n\nIn transcripts initiated at iTSSs, the first encountered ATGs are most of the time out-of-frame relative to the main ORF (Figure 8A). The first ORFs of the corresponding transcripts are thus short and followed by a long 3\u2032-UTR, making them excellent NMD substrates. This bias towards out-of-frame ATGs was specifically observed at the beginning of genes for which iTSSs were identified (Figure 8B,C). This correlated with a significantly lower frequency of methionine in the N-terminal part of the corresponding proteins (Figure 8D), even though methionines were found to be globally underrepresented at the beginning of all yeast proteins. The frequent use of iTSSs by RNAPII thus does not generally result in the production of truncated proteins and tends to generate transcripts that are sensitive to NMD.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/06722/elife-06722-fig8-v2.jpg)\n\n**Figure 8.:** (A) Cumulative total number of transcription start sites (TSSs) per nucleotide in upf1\u2206 cells for TSSs directly followed by the annotated ATGs (blue line) or a upstream open reading frame (uORF) (red line) and for TSSs downstream the annotated ATGs (iTSSs) and followed by an out-of-frame ATG (red dashed line) or by an in-frame ATG (blue dashed line). (B) Proportion of in-phase ATGs (+1 frame) following an annotated start codon, binned over nine nucleotides, for protein-coding genes with (red; 3327 genes) or without (blue; 1904 genes) iTSS reads in upf1\u2206, as defined in the text. The dashed line indicates the expected value for a random distribution. Genes with iTSSs reads are significantly depleted of in-frame ATGs relative to all ATGs in the first 100 nucleotides when compared with genes without iTSSs reads (p-value = 3.13 10\u22125; ANOVA). (C) Proportion (log2) along the ORFs of in-frame codons, normalized over the regions downstream the first 300 nucleotides of genes, for all codons (binned over nine nucleotides) for the two sets of genes defined in B. The ATG codon is in red. (D) Frequency of methionines per amino acid position along the ORFs for the two sets of genes defined in (B). The p-values (ANOVA method) for the difference in methionine composition over the regions between 0\u2013100 and 100\u20131000 nucleotides are indicated on the figure.\n\n## Discussion\n\n### Genome-wide identification of TSSs\n\nWe describe here the use of a modified 5\u2032-RACE technique to identify the 5\u2032-ends of capped RNA, which map RNAPII TSSs. The method, which includes a streptavidin-biotin purification step, is highly specific and can be applied to any eukaryotic organism. Our results provide the most comprehensive genome-wide identification of TSSs in budding yeast, not only for mRNAs but also for a wide range of pervasive transcripts, including previously non-annotated ones. This was made possible by combining this highly specific TSS determination technique with the use of mutants affecting both the nuclear exosome and the cytoplasmic NMD pathway.\n\nDetailed analyses of the sequencing reads and the corresponding upstream genomic sequences extended and validated the previously identified sequence consensus surrounding TSSs in S. cerevisiae (A(N)6PyPu; Figure 1\u2014figure supplement 2A and Figure 4\u2014figure supplement 2, and Zhang and Dietrich 2005). Importantly, this consensus sequence was observed for the TSSs of all the different classes of transcripts identified in this study. Note that 1,775,474 sites in the genome conform to this consensus but only 85,714 (4.8%) were used as TSSs.\n\nWe also identified cases in which transcription started on what appears to be a \u2018slippery\u2019 sequence (PyAAA), which resulted in the incorporation of an additional non-encoded A at the 5\u2032-end of the transcripts. The simplest explanation for this observation is that the very short nascent RNA formed after two or three nucleotide incorporation is able to shift back by one nucleotide, probably together with the RNAPII, before transcription resumes (Figure 1\u2014figure supplement 2D), suggesting that the ternary complex formed by the transcribing polymerase, the RNA moiety and chromatin is rather labile at this early stage of transcription.\n\n### Role of nonsense-mediated RNA decay in removal of pervasive and cryptic transcripts\n\nOur analyses of TSSs in NMD-deficient cells revealed the prevalent role of this cytoplasmic RNA quality-control pathway in eliminating pervasive transcripts. We found that 52% of the SUTs and XUTs were significantly stabilized in upf1\u2206 cells when using the TSSCs from the TSS-sequencing experiments (see Supplementary file 1). When using the RNAseq approach, this proportion was even higher (70%; see Supplementary file 2), possibly because of the overall higher sequence read counts for a given transcript, which provides more power to statistical analyses. Since NMD is a translation-coupled RNA degradation pathway, the stabilizing effect seen upon UPF1 deletion on pervasive transcripts indicated that once these transcripts reached the cytoplasm they associate with the translation machinery. Indeed, once they reached the cytoplasm the pervasive transcripts (being capped and poly-adenylated) cannot be distinguished from normal mRNAs and associate with the translation machinery. However, since they usually have short ORFs followed by relatively long 3\u2032 UTR regions (Figure 3\u2014figure supplement 1), a hallmark of NMD substrates in yeast (Decourty et al., 2014), they will be targeted for degradation by this RNA quality-control pathway. This is supported by the identification of pervasive transcripts (mainly XUTs and SUTs) in ribosomal profiling experiments performed in wild-type cells and the recent discovery of a new class of unannotated transcripts (uRNAs) associated with polyribosomes and encoding short peptides (Ingolia et al., 2009; Smith et al., 2014).\n\nThe association of so-called \u2018non-coding\u2019 transcripts with the translation machinery and their ensuing high sensitivity to NMD has also been observed in multicellular organisms. In mouse embryonic stem cells, many long non-coding RNAs (lncRNAs) were found to be associated with translating ribosomes and an estimated 17.4% of lncRNAs were found to be upregulated in the absence of UPF1, compared with only 4% for protein-coding genes (Ingolia et al., 2014; Smith et al., 2014).\n\nOur results also showed that XUTs, originally described as Xrn1-sensitive transcripts (van Dijk et al., 2011), are in fact primarily targeted by NMD by virtue of their poor coding capacities, with the Xrn1 exonuclease acting as a downstream effector of this pathway. Thus, we propose to redefine the various classes of pervasive transcripts identified in yeast into transcripts primarily degraded in the cytoplasm (SUTs and XUTs) and transcripts more sensitive to the nuclear exosome (CUTs) even though each of these degradation pathways similarly affect some transcripts and can show a synergic effect (see below).\n\nOur analysis also revealed the prevalent role of NMD in the removal of cryptic transcripts initiating from intragenic promoters either in sense (here called B) or in antisense orientation (here called A). The strong impact of NMD inactivation on these transcripts indicated that they are exported to the cytoplasm and associate with the translation machinery, as is the case for the pervasive transcripts (see above). Even though we cannot rule out an indirect effect of the UPF1 deletion on chromatin structure, the high number of intragenic transcripts (whether sense or antisense) identified in the upf1\u2206 single mutant suggests that the inhibition of transcription initiation by transcription-coupled chromatin modifications is not fully efficient and thus that some of these transcripts are produced as part of the normal transcription cycle in wild-type cells, with NMD playing an important role to eliminate them.\n\n### Cooperation between nuclear and cytoplasmic RNA quality-control pathways\n\nDeletions of UPF1 and RRP6 had an additive effect on the accumulation of CUTs, SUTs and XUTs. However, a number of pervasive transcripts, in particular \u2018A\u2019 and \u2018intergenic\u2019 ones, were stabilized to substantial levels only when both the nuclear and the cytoplasmic RNA quality-control pathways were compromised, suggesting that they can act synergistically.\n\nTwo mechanisms of transcription termination have been reported in yeast. One depends on the cleavage and poly-adenylation complex (CPF-CFI/II), which generates the poly-adenylated mRNAs that get exported and translated in the cytoplasm, and another, which involves the NNS complex and is shared by CUTs and sn(o)RNAs precursors (see \u2018Introduction\u2019). However, the demarcation between the two modes of termination is far from being strict as some terminators can often be recognized by both pathways depending on their distance from the TSS (Porrua et al., 2012). In the early phase of transcription elongation the RNAPII CTD repeats are mainly phosphorylated at Ser5, which favor recruitment of the NNS complex; while transcription proceeds, Ser2 gets phosphorylated at the expense of Ser5, promoting the recruitment of the CPF-CFI/II complex (Ahn et al., 2004; Kim et al., 2004). For some pervasive transcripts, these two termination pathways may compete and generate transcripts terminated by the NNS pathways and degraded by the nuclear exosome, as well as transcripts terminated by the CPF-CFI/II pathway and exported to the cytoplasm where they are targeted for degradation by the NMD. The produced RNAs would thus accumulate to detectable levels only when both RNA quality-control pathways are inactivated. Since the nuclear exosome has recently been shown to act with the NNS complex to promote early transcription termination at specific targets in S. cerevisiae (Fox et al., 2015), we cannot rule out that in wild-type or upf1\u2206 cells transcription will normally be terminated by the NNS complex and the synthesized transcripts degraded by the nuclear exosome, while in rrp6\u2206 cells transcription will proceed until the polymerase encounters the next CPF-CFI/II termination signal giving rise to longer transcripts exported to the cytoplasm and targeted for degradation by the NMD.\n\n### NMD removes numerous transcripts arising from the low specificity of transcription initiation\n\nNMD was previously shown to target a few hundred uORF-containing mRNAs (He et al., 2003; Guan et al., 2006; Johansson et al., 2007; Arribere and Gilbert, 2013). However, the use of NMD-deficient cells allowed us to identify 22% of the active genes for which a fraction of their transcript isoforms carried at least one uORF and were significantly sensitive to NMD. Moreover, 35% of the expressed genes generated transcript isoforms initiating at iTSSs and significantly stabilized in the absence of Upf1 (see Figure 7A,B). Some transcripts initiated at iTSSs were previously described in wild-type cells and shown to allow the synthesis of N-terminal variants of proteins exhibiting differential stabilities or localizations (Wu and Tzagoloff, 1987; Gammie et al., 1999; Arribere and Gilbert, 2013; Pelechano et al., 2013) but their number was vastly underestimated, probably because of their sensitivity to NMD (see Figure 7C). These two observations reveal an important role for NMD in getting rid of numerous undesired transcripts, the majority of which likely resulted from the low specificity of TSS selection by RNAPII. Yet, we cannot rule out that some of these transcripts have a biological function. For example, the use of alternative TSSs giving rise to transcripts with very different sensitivity to NMD could be used for regulatory purposes, in a way similar to that described for some genes of the nucleotide biosynthetic pathway (Kuehner and Brow, 2008; Thiebaut et al., 2008).\n\nAltogether, transcript isoforms carrying a uORF or starting at an iTSS and targeted by NMD constituted the major transcript isoforms for only 446 mRNAs and minor transcript isoforms for almost half of the expressed genes. Therefore, although not quantitatively impacting the overall mRNA levels substantially (Figures 2A, 7C), NMD affects qualitatively a large fraction of the mRNA transcription units. NMD also has a strong impact on the accumulation of pervasive and cryptic transcripts and thus appears as a major player shaping the yeast transcriptome. In addition, we observed that transcripts initiated at iTSSs are significantly depleted in ATGs in the +1 frame, precluding the synthesis of N-terminally truncated proteins and ensuring their efficient NMD degradation. It thus suggests that this phenomenon might be important enough to have imposed an evolutionary constraint on the methionine content of the N-terminus of the yeast proteins.\n\n## Materials and methods\n\n### Yeast strains and culture\n\nAll the strains are a derivative of BY4741 and were obtained directly from the Euroscarf deletion collection (http://web.uni-frankfurt.de/fb15/mikro/euroscarf/) or generated by crossing with a can1\u2206 derivative of BY4741 (LMA1057, see Table 2). Cells were grown to mid-exponential phase in YPD-rich medium at 30\u00b0C in a microturbidostat as previously described (Decourty et al., 2008), harvested by centrifugation and the pellet was frozen in liquid nitrogen.\n\n**Table 2.**\n Yeast strains used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Genotype</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BY4741</td>\n      <td>Mat a, his3\u22061, ura3\u22060, leu2\u22060, met15\u22060</td>\n      <td>(Brachmann et al., 1998)</td>\n    </tr>\n    <tr>\n      <td>LMA1057/3401</td>\n      <td>BY4741 can1\u2206</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA1774/2759</td>\n      <td>BY4741 can1\u2206, upf1\u2206::HIS3MX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA1676/3405</td>\n      <td>BY4741 can1\u2206, rrp6\u2206::hphMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA1772</td>\n      <td>BY4741 can1\u2206, upf1\u2206::KANMX6, rrp6\u2206::HPHMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA1790</td>\n      <td>BY4741 can1\u2206, upf1\u2206::KANMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA2758</td>\n      <td>BY4741 can1\u2206</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA2760</td>\n      <td>BY4741 can1\u2206, xrn1\u2206::KANMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA2762</td>\n      <td>BY4741 can1\u2206, xrn1\u2206::KANMX6, upf1\u2206::HIS3MX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA2921/3403</td>\n      <td>BY4741 can1\u2206, set2\u2206::KANMX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA2922</td>\n      <td>BY4741 can1\u2206, set2\u2206::KANMX6, upf1\u2206::HIS3MX6</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LMA3409</td>\n      <td>BY4741 can1\u2206, upf1\u2206::HIS3MX6, rrp6\u2206::HPHMX6</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### RNA extraction and analysis\n\nTotal RNA was extracted using the hot acid phenol protocol (Collart and Oliviero, 2001). Poly(A)+-RNA were obtained by two successive rounds of purification using oligo (dT)25 magnetic beads (New England Biolabs, Ipswich, MA) following the manufacturer's protocol. Northern blots were carried out on poly(A)+-RNA as described in Neil et al. (2009) using 32P-labeled riboprobes except for ACT1 for which a 32P-labeled oligonucleotide was used.\n\n### Library preparation\n\nApproximately 500 ng of poly(A)+-RNA was mixed with 10 units of Antarctic phosphatase (New England Biolabs) in a final volume of 50 \u03bcl. After 1 hr at 37\u00b0C, the reaction was treated with phenol/chloroform and ethanol precipitated. The RNA pellet was resuspended in 44 \u03bcl of water and 10 units (1 \u03bcl) of TAP (Epicentre, Madison, WI) and 5 \u03bcl of 10\u00d7 TAP buffer was added. The reaction was incubated 1 hr at 37\u00b0C followed by phenol/chloroform extraction and ethanol precipitation. The RNA pellet was resuspended in 5 \u03bcl of water. Next, the RNAs were ligated overnight at 16\u00b0C with 50 pmoles of the biotinylated oligonucleotide 3041 (Table 3) in a 20 \u03bcl reaction containing 10 units (1 \u03bcl) of T4 RNA ligase I (New England Biolabs) and ATP at a final concentration of 1 mM. RNAs were subsequently fragmented by incubation for 10 min at 70\u00b0C after addition of 5 \u03bcl of a 50 mM ZnCl2, 50 mM Tris-HCl pH7.4 solution. The reaction was stopped by the addition of 1 \u03bcl EDTA 0.5 M and biotinylated RNA were purified using streptavidin magnetic beads according to the manufacturer's protocol (Dynabeads, MyOne streptavidin C1, Life Technologies, Carlsbad, CA). After washing, the beads were resuspended in 20 \u03bcl of water and the bound RNAs eluted by incubation for 5 min at 90\u00b0C. This fraction is enriched for 5\u2032-ends of capped RNA molecules. Note that the supernatant of the first step of the purification procedure containing RNA fragments corresponding to the body and the 3\u2032-end of the gene not attached to the biotinylated oligonucleotide can be recovered and used to prepare independent libraries. This RNA population can be further fractionated using oligo (dT)25 magnetic beads to enrich for 3\u2032-end of RNA molecules. The \u223c18.5 \u03bcl eluate from the streptavidin beads was mixed with 50 pmoles of oligonucleotide 3038 (see Table 3), heat denatured for 5 min at 70\u00b0C and slowly cooled down to 30\u00b0C in a Biorad iCycler PCR machine. Once the temperature had reached 30\u00b0C, 6 \u03bcl of 5\u00d7 RT buffer, 1.5 \u03bcl of a 10 mM dNTPs solution, 1.5 \u03bcl of RNasin (Promega), 180 ng of actinomycin D, 300 units of RevertAid reverse transcriptase (Thermo Scientific, Waltham, MA), and water qsp 30 \u03bcl were added. The reaction was incubated 10 min at 30\u00b0C, followed by 40 min at 42\u00b0C, 10 min at 55\u00b0C, 10 min at 60\u00b0C and 15 min at 75\u00b0C. RNAs were then degraded by incubation for 10 min at 75\u00b0C after the addition of 3 \u03bcl of 1 N NaOH. The reaction was quenched by the addition of 3 \u03bcl of 1 N HCl and precipitated by the addition of 3 volumes of 100% ethanol and 0.1 volume of 3 M sodium acetate pH 5.2. The precipitated cDNA was subjected to 5 cycles of PCR amplification in 20 \u03bcl with Phusion DNA polymerase (Thermo Scientific) using Illumina (San Diego, CA) multiplexing PCR primer 1.0 and 2.0 followed by an additional 6 to 8 cycles of amplification using Illumina multiplexing PCR primer 1.0 and one PCR primer index. The reaction was purified with Agencourt AmPure XP beads (Beckman Coulter, Indianapolis, IN) following manufacturer's instructions at a 1.8 \u00d7 concentration and eluted in 20 \u03bcl water. Libraries were quantified using Qubit (Life Technologies) and sequenced on an Illumina HiSeq 2000 or 2500 with 50 or 100 bases single-end reads. To validate our method for the identification of TSSs, we compared libraries made with or without treatment of the RNAs with TAP. 500 ng of poly(A)+-RNA obtained by purification with oligo (dT)25 magnetic beads starting from S. cerevisiae or S. pombe (used as an internal reference for normalization) were dephosphorylated using Antarctic phosphatase as described. Then, S. pombe RNAs and one half of the RNAs extracted from S. cerevisiae were treated with TAP. The second half of S. cerevisiae RNAs was mock treated. Before ligation with the biotinylated oligonucleotide 3041, each half of S. cerevisiae RNAs was mixed with an equivalent quantity of calf intestinal alkaline phosphatase (CIP)/TAP-treated RNAs from S. pombe. The subsequent steps of the library preparation were identical to the ones described above.\n\n**Table 3.**\n Oligonucleotides used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Sequence 5\u2032-3\u2032</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ACT1-1407\u2212</td>\n      <td>ACACTTGTGGTGAACGATAGATGG</td>\n      <td>P32 labelled probe</td>\n    </tr>\n    <tr>\n      <td>YMR114c-839+</td>\n      <td>ATCGAGGTGTAAAGGGTG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-YMR114C-1068\u2212*</td>\n      <td>TAATACGACTCACTATAGGGCCTCTGGAGTCTTTCTGG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>YIL136w-1013+</td>\n      <td>ACTGGTGGTCTGGATGG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-YIL136w(+)115\u2212*</td>\n      <td>TAATACGACTCACTATAGGGTGCCACTAATTTACTCCG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>NEL025c-35+</td>\n      <td>AACAAATGCCAAGTCGGGAC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-NEL025c-263\u2212*</td>\n      <td>TAATACGACTCACTATAGGGAAACGTTTGGTAAGAACTC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>SUT093_fwd</td>\n      <td>GAGTCCAGCGTCTCTACAC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-SUT093_rev*</td>\n      <td>TAATACGACTCACTATAGGGGACTTAATTGTCGTTGCTAGGAC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>SUT338_fwd</td>\n      <td>GAAAGACCGAAGGTGAAGAG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-SUT338_rev*</td>\n      <td>TAATACGACTCACTATAGGGGTGGTACAGCCCTGTGTTCC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>SUT779_fwd</td>\n      <td>AACGAGGGAACTAGCCAG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-SUT779_rev*</td>\n      <td>TAATACGACTCACTATAGGGCTCTTCATCATCTGTGGAG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>TPO2(+)131\u2212</td>\n      <td>GTATGTAGAAATGTCCGACG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-TPO2-1798+*</td>\n      <td>TAATACGACTCACTATAGGGGTAAGGGCTTGAGAC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>MAL12/32-1723\u2212</td>\n      <td>GATTCTACCTTCCCATGG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-MAL12/32-1161+*</td>\n      <td>TAATACGACTCACTATAGGGTCAAGGTCAGGAGATAGG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>XUT3F5-fwd</td>\n      <td>AGGAAAATGGGACTACAG</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>T7-XUT3F5-rev*</td>\n      <td>TAATACGACTCACTATAGGGTGTAAAAGGGCACAGTC</td>\n      <td>Synthesis of probe</td>\n    </tr>\n    <tr>\n      <td>3041\u2020</td>\n      <td>5BioTEG/CTTTCCCTACACGACGCTCTTCCGATCTNNNNCGCGrCrGrNrN</td>\n      <td>Ligation with TAP treated RNA</td>\n    </tr>\n    <tr>\n      <td>3118\u2020</td>\n      <td>5BioTEG/CTTTCCCTACACGACGCTCTTCCGATCTNNNNGCCGrCrGrNrN</td>\n      <td>Ligation with fragmented RNA</td>\n    </tr>\n    <tr>\n      <td>3038\u2020</td>\n      <td>GTTCAGACGTGTGCTCTTCCGATCTNNNNNN</td>\n      <td>Reverse transcription</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The sequence in bold face corresponds to the T7 promoter sequence.\u2020The sequence in bold face corresponds to the tag used to identify the 5\u2032 end of the cDNAs. r stands for ribonucleotide._\n\nFor analysis of the xrn1\u2206 mutant compared with the upf1\u2206 mutant, since the absence of Xrn1 leads to the accumulation of decapped RNAs (Hsu and Stevens, 1993), we had to modify the protocol used for library preparation. Instead of the CIP/TAP treatment before ligation with the biotinylated oligonucleotide 3118, RNA was fragmented with ZnCl2 and subsequently phosphorylated with T4 polynucleotide kinase (Thermo scientific). The subsequent steps of library preparation were identical to the ones described above for the 5\u2032-end. Moreover, since the absence of Xrn1 affects the overall mRNA content (Sun et al., 2013), an aliquot of a S. pombe culture was added to the cell pellet before RNA extraction for library preparation to provide an independent internal control for normalization.\n\n### Data analyses\n\n#### Illumina reads treatments\n\nDuplicated reads, identified using the random sequence tags within the ligated oligonucleotides (oligonucleotides 3041 and 3118 in Table 3) were first filtered out. Then reads corresponding to the 5\u2032-ends of cDNA fragments were extracted using the tag present in the added oligonucleotide (see Table 3) for all the unique reads. After removal of the tag, the resulting reads were mapped using bowtie (version 2.2.3 with the following parameters: \u2013N 1 \u2013p 1 \u2013\u2013no-unal \u2013D 15 \u2013R 2 \u2013L 22 \u2013I S,1,1.15) and a compilation of S. cerevisiae genome (S288C reference sequence, Release 64 obtained from the Saccharomyces Genome Database (SGD) [http://www.yeastgenome.org/]) and S. pombe genome (ASM294 reference sequence, v2.19 obtained from PomBase [http://www.pombase.org/]) as reference genomes.\n\n#### Mapped reads processing\n\nFor libraries L5p_01 to L5p_10 (see Table 1) used for TSS sequencing, the 5\u2032-end positions of the resulting mapped reads were used as TSS positions and extracted to wig files. For samples of the libraries LT_01 and LT_02, used for RNAseq, reads corresponding to the whole transcripts and full read coverage were extracted to wig files.\n\n#### Peak calling\n\nLibraries L5p_01 to L5p_03 and L5p_04 to L5p_06 were regrouped into clusters (TSSCs) using the peak calling method described in Neil et al. (2009). Parameters were optimized by maximizing the number of ORFs assigned to only one TSSC while minimizing the number of ORFs not assigned to any TSSC. As parameters, we finally chose a threshold of four reads in at least one of the samples used for the clustering and a maximum distance between two consecutive TSSs within a cluster of 50 nucleotides. For library L5p_01 to L5p_03, TSSCs were generated with the code TSSC_upf1_rrp6 (Supplementary file 1). For library L5p_04 to L5p_06, TSSCs were generated with the code TSSC_upf1_set2 (Supplementary file 3).\n\n#### Differential expression\n\nTSSCs and transcript differential expression were calculated using DESeq2 (Love et al., 2014) within the SARTools pipeline (https://github.com/PF2-pasteur-fr/SARTools). For TSSCs, the mean TSS read counts in the region 50 to 10 nucleotides upstream of the ATG of each non-dubious ORF were used as an internal standard for size factor determination. For transcripts, the S. pombe transcripts read counts were used as the internal standard for size factor determination.\n\n#### Identification of TSSCs\n\nTSSCs were assigned to annotations and sorted in a defined class according to their relative positions to the linked features. TSSCs overlapping the 5\u2032-UTR mRNA sequences in the sense orientation were assigned to mRNAs (O-TSSCs in Supplementary files 1, 3). TSSCs mapped within the ORF or the 3\u2032-UTR sequences and in the sense orientation were called B-TSSCs. TSSCs overlapping an mRNA sequence but in the antisense orientation were called A-TSSCs. C, S, X, and F TSSCs (Supplementary files 1, 3) correspond to TSSCs overlapping in the sense orientation with the 5\u2032-end or found within CUTs, SUTs, XUTs and stable ncRNAs and transposable elements, respectively. All other TSSCs were classified as intergenic (I in Supplementary files 1, 3). CUTs, XUTs, and SUTs constituting overlapping transcript populations, when a TSSC was assigned to a pervasive transcript annotated in more than one of these classes we arbitrarily associated the corresponding TSSC in priority to CUTs, then to XUTs and finally to SUTs. mRNA coordinates were extracted from data of Pelechano et al. (2013). ORFs, tRNAs, rRNAs, small nuclear RNAs (snRNAs), and sn(o)RNAs coordinates were retrieved from the SGD (http://www.yeastgenome.org/). CUT and SUT coordinates were retrieved from Xu et al. (2009), while XUT coordinates were from van Dijk et al. (2011). We also used the CUTs described in Neil et al. (2009). ORF ATG coordinates were corrected for 150 of them identified as misannotated by Park et al. (2014).\n\n#### Filtering of TSSCs\n\nFalse positive TSSCs were filtered out using two criteria: the signal to noise ratio (SNR) and TSS accuracy.\n\nSNR was defined as the log2 of the ratios of read counts of TAP samples vs no-TAP samples. For TSSC_upf1_rrp6 we used libraries L5p_07 and L5p_08 and for TSSC_upf1_set2 we used libraries L5p_09 and L5p_10. We choose a SNR limit of 0.55.\n\nTSS accuracy was defined as the proportion of TSSs within a TSSC mapped on a purine preceded by a pyrimidine vs the total count of TSSs mapped within the TSSC. We choose a minimum TSS accuracy of 80%.\n\n#### Distribution of individual TSSs around start codons\n\nIndividual TSS counts and read counts were used to determine the repartition of the TSSs around the ATGs of annotated ORFs (\u2212200 to +100 nucleotides around ORFs ATGs). We used the ORF ATG positions retrieved from the SGD and corrected as described above in the \u2018Identification of TSSCs\u2019 section.\n\n#### Identification of ORFs following individual TSSs\n\nFor each TSS identified in the region from \u2212200 to +100 nucleotides around ORF ATGs, we looked for the two subsequent ATGs. When the TSS was upstream of the annotated ATG start codon, we determined whether or not it was the first encountered one. When the TSS was within the ORF, we determined whether the ATGs were in the same phase as the natural ORF or not.\n\n#### Determination of ORF and 3\u2032-UTR sizes for the different features\n\nFor mRNAs, ORF start, ORF end and 3\u2032-end coordinates obtained, as described above in the \u2018Identification of TSSCs\u2019 section, were used to calculate the sizes of the ORF and the 3\u2032-UTR. For XUTs and SUTs, ORF start was determined as the coordinate of the first ATG after the annotated start obtained in Xu et al. (2009) and van Dijk et al. (2011). ORF ends were determined as the coordinate of the first in phase stop codon encountered after the previously selected ATG start codon. The region between the end of this potential ORF and the end of the XUT or SUT was considered to be the 3\u2032UTR.\n\n#### Nucleotide use\n\nWe determined the proportion of A, T, G, and C at each position in the region spanning \u2212200 to +100 nucleotides around the ATGs of ORFs according to the annotation found in the SGD and corrected as described above.\n\n#### Codons and amino acids use\n\nWe determined the number of ATGs within the first 1000 nucleotides after the ORF start codon based on the information available in the SGD. To avoid the overrepresented value of the start ATG codon, the first three nucleotides were not included in the analysis. The ratios between phased ATG and total ATG counts were computed in a window of nine nucleotides. The same method was applied for all other codons. To estimate the differential use of a codon between the start and the body of the ORFs, we normalized the value for each codon taking into account the mean ratio for this particular codon in the region comprised between 500 and 1000 nucleotides after the start codon.\n\nWe used the protein sequences retrieved from SGD and omitted the first methionine of the proteins.\n\n#### Transcripts expression levels\n\nWe used the coverage of LT_01 and LT_02 libraries to calculate transcript expression levels of mRNAs, SUTs and XUTs. The coordinates of the different types of transcripts were obtained as described above. We calculated the expression levels for the four samples of both libraries and then used DESeq2 for normalization, estimation of fold change and mean signal calculation (Supplementary file 2).\n\n#### Mean NFR density\n\nThe mean NFR density has been calculated using a nucleosome definition in Kaplan et al. (2009). We collected the nucleosome signal in regions from \u22121000 to +1000 nucleotides around each TSS, aligned on TSS position and calculated means for each position.\n\n#### Accession number\n\nThe data reported here have been deposited in NCBI GEO under the accession number GSE64139.\n",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "b888ad47-5957-4391-8822-01c33db2e1ab",
+      "submission_id": "dd75555e-698d-4773-b0d1-a85c19d7a241",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Torben Heick Jensen, Aarhus University , Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06722.028](https://doi.org/10.7554/eLife.06722.028)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cQuality control of transcription start site selection by nonsense-mediated-mRNA decay\u201d for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall the study by the Jacquier laboratory is timely and contains very interesting information adding to our knowledge of how pervasive transcription is suppressed post-transcriptionally by RNA turnover.\n\nBefore acceptance the following points should be addressed:\n\nMajor points:\n\n1) A technical concern relates to the TSS sequencing method, which relies on the treatment of poly(A)+ RNA with phosphatase to prevent degradation intermediates with a 5' phosphate from ligating to the biotinylated adaptor oligo. Since transcripts with 5'ends originating downstream of their annotated TSSs (B-TSSC, iTSS) are identified, it seems crucial to control for the efficiency of the phosphatase treatment, as many of these transcripts may otherwise represent degradation intermediates rather than transcripts with alternative 5'ends. Finding the same consensus sequence motif as at canonical TSSs helps, but do the authors have any direct means to control for the effective exclusion of such species from the libraries?\n\n2) Differential expression analysis should be done according to today's best practice, which includes normalization of the data that accounts for differences in sequencing depths between samples (i.e. size factor normalization [see DESeq2] rather than rpkm).\n\nMinor points:\n\n1) The authors' seem somewhat biased towards the idea that every transcript that is repressed by some factor constitutes noise. Is this really always clear?\n\n2) The authors identify a consensus sequence, which basically is identical for all types of RNAPII transcripts: A(N)6PyPu, where the Pu is the TSS. Is it possible to investigate/estimate what fraction of such sites in the genome is functioning as TSSs based on the TSS sequencing data?\n\n3) The term \u201csynergistic\u201d, used in the subsection \u201cIdentification of additional pervasive transcripts\u201d (\u201cit had a synergistic effect on some \u2018intergenic\u2019\u2026\u201d): could this synergism simply be an additive effect that is hidden by the generally low expression of these RNAs?\n\n4) What is the reason for the overall rather low mapping rate of the sequencing data (sometimes as low as 30%)?\n\n5) Throughout the manuscript only few statistical tests are applied. While in many cases the displayed effects appear convincing, it would be useful to, e.g., evaluate whether the small difference in Figure. 7B is statistically significant.\n",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc0e75c9-52e0-4eb1-8d5e-ee42c3149e9a",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C1",
+      "claim": "Nonsense-mediated mRNA decay (NMD) is a translation-dependent RNA quality-control pathway targeting transcripts such as messenger RNAs harboring premature stop-codons or short upstream open reading frame (uORFs).",
+      "claim_type": "EXPLICIT",
+      "source": "Nonsense-mediated mRNA decay (NMD) is a translation-dependent RNA quality-control pathway targeting transcripts such as messenger RNAs harboring premature stop-codons or short upstream open reading frame (uORFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NMD function in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "2982dd6e-0be0-4eaf-b868-d6f5875b7ebc",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C2",
+      "claim": "About half of the pervasive transcripts are degraded by NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcription start sites (TSSs) analysis of Saccharomyces cerevisiae cells deficient for RNA degradation pathways revealed that about half of the pervasive transcripts are degraded by NMD, which provides a fail-safe mechanism to remove spurious transcripts that escaped degradation in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by TSS analysis data from RNA degradation pathway-deficient cells presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "56e3479a-63f4-43ef-b646-d8621188cae2",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C3",
+      "claim": "NMD provides a fail-safe mechanism to remove spurious transcripts that escaped degradation in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcription start sites (TSSs) analysis of Saccharomyces cerevisiae cells deficient for RNA degradation pathways revealed that about half of the pervasive transcripts are degraded by NMD, which provides a fail-safe mechanism to remove spurious transcripts that escaped degradation in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that pervasive transcripts escaping nuclear degradation are targeted by NMD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "395e5147-61e0-4450-a5bc-094954e0b98b",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C4",
+      "claim": "The low specificity of RNA polymerase II TSSs selection generates, for 47% of the expressed genes, NMD-sensitive transcript isoforms carrying uORFs or starting downstream of the ATG START codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the low specificity of RNA polymerase II TSSs selection generates, for 47% of the expressed genes, NMD-sensitive transcript isoforms carrying uORFs or starting downstream of the ATG START codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome-wide TSS analysis data showing transcript isoforms in 47% of genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "6a81042d-17cc-4eed-b289-91297a0abb11",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C5",
+      "claim": "There is a significant bias against in-frame ATGs specifically found at the beginning of genes with downstream TSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the low abundance of this last category of isoforms, their presence seems to constrain genomic sequences, as suggested by the significant bias against in-frame ATGs specifically found at the beginning of the corresponding genes and reflected by a depletion of methionines in the N-terminus of the encoded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of ATG distribution in genes with internal TSSs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "cfae0c5b-d9aa-4789-a37c-93d162939386",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C6",
+      "claim": "There is a depletion of methionines in the N-terminus of proteins encoded by genes with downstream TSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the low abundance of this last category of isoforms, their presence seems to constrain genomic sequences, as suggested by the significant bias against in-frame ATGs specifically found at the beginning of the corresponding genes and reflected by a depletion of methionines in the N-terminus of the encoded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of amino acid composition in N-terminal regions of proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "661c34e8-b8a5-4004-8520-e703e9c76ecc",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C7",
+      "claim": "In human cells, roughly 75% of the genome gives rise to RNA transcripts of various length but only an estimated 2% corresponds to protein-coding messenger RNAs (mRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, roughly 75% of the genome gives rise to RNA transcripts of various length but only an estimated 2% corresponds to protein-coding messenger RNAs (mRNAs) (Djebali et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Djebali et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "ab15bca0-e9c6-45f7-a93f-ec732bbb1ae5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C8",
+      "claim": "Hundreds of pervasive non-coding RNAs (ncRNAs) were identified in S. cerevisiae in addition to stable ncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in a compact genome such as the budding yeast Saccharomyces cerevisiae (S. cerevisiae), hundreds of such pervasive non-coding RNAs (ncRNAs) were identified in addition to the stable ncRNAs such as transfer RNAs (tRNAs), small nucleolar RNAs (sn(o)RNAs), and ribosomal RNA (rRNAs) (Neil et al., 2009; Xu et al., 2009; van Dijk et al., 2011; Geisler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "a8f9cce3-c9d5-46d6-b54a-7b4cd8d43179",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C9",
+      "claim": "Yeast ncRNAs are transcribed from nucleosome-free regions (NFRs) present throughout the genome, most often at gene promoters and terminators.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast ncRNAs are transcribed from nucleosome-free regions (NFRs) present throughout the genome, most often at gene promoters and terminators, and part of these RNAs represent by-products of divergent transcription initiation (Neil et al., 2009; Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Neil et al., 2009 and Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "4cdc832c-5180-49fd-b7e8-f97424df71bc",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C10",
+      "claim": "Part of pervasive ncRNAs represent by-products of divergent transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast ncRNAs are transcribed from nucleosome-free regions (NFRs) present throughout the genome, most often at gene promoters and terminators, and part of these RNAs represent by-products of divergent transcription initiation (Neil et al., 2009; Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Neil et al., 2009 and Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "e07ab1c4-51fb-431a-83cd-b78779a9d4b1",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C11",
+      "claim": "In S. cerevisiae, degradation-coupled transcription termination of pervasive transcripts relies on the Nrd1-Nab3-Sen1 (NNS) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the yeast S. cerevisiae, degradation-coupled transcription termination of pervasive transcripts relies on the Nrd1-Nab3-Sen1 (NNS) complex, which interacts with the carboxy-terminal domain (CTD) of the RNA polymerase II (RNAPII) phosphorylated on serine 5 and triggers termination upon recognition of short sequences on the nascent RNA (Arigo et al., 2006; Thiebaut et al., 2006; Gudipati et al., 2008; Vasiljeva et al., 2008; Schulz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "86d7d9b4-7928-4832-aed3-917843b8ab6d",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C12",
+      "claim": "The NNS complex interacts with the CTD of RNAPII phosphorylated on serine 5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the yeast S. cerevisiae, degradation-coupled transcription termination of pervasive transcripts relies on the Nrd1-Nab3-Sen1 (NNS) complex, which interacts with the carboxy-terminal domain (CTD) of the RNA polymerase II (RNAPII) phosphorylated on serine 5 and triggers termination upon recognition of short sequences on the nascent RNA (Arigo et al., 2006; Thiebaut et al., 2006; Gudipati et al., 2008; Vasiljeva et al., 2008; Schulz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "ff5cc874-adb6-474d-ae7d-6930f2c42b16",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C13",
+      "claim": "The NNS complex triggers termination upon recognition of short sequences on the nascent RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the yeast S. cerevisiae, degradation-coupled transcription termination of pervasive transcripts relies on the Nrd1-Nab3-Sen1 (NNS) complex, which interacts with the carboxy-terminal domain (CTD) of the RNA polymerase II (RNAPII) phosphorylated on serine 5 and triggers termination upon recognition of short sequences on the nascent RNA (Arigo et al., 2006; Thiebaut et al., 2006; Gudipati et al., 2008; Vasiljeva et al., 2008; Schulz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "b935e19d-2ea7-45b9-b4f9-7a0f9b013698",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C14",
+      "claim": "Early termination of CUTs is coupled with the recruitment of the TRAMP complex and the Rrp6-containing nuclear RNA-exosome for rapid degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Early termination of these transcripts (named CUTs for cryptic unstable transcripts) is coupled with the recruitment of the Trf4-Air2-Mtr4 (TRAMP) complex and the Rrp6-containing nuclear RNA-exosome for rapid degradation (Wyers et al., 2005; Davis and Ares, 2006; Tudek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wyers et al., 2005; Davis and Ares, 2006; Tudek et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "2415c0c2-143c-48f3-852b-176a207a5e03",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C15",
+      "claim": "A significant proportion of pervasive transcripts can escape nuclear quality-control and be exported to the cytoplasm where they are targeted for degradation by the cytoplasmic 5\u2032-3\u2032 exonuclease Xrn1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant proportion of the pervasive transcripts can escape this early nuclear quality-control step and be exported to the cytoplasm where they are targeted for degradation by the cytoplasmic 5\u2032-3\u2032 exonuclease Xrn1 (XUT; van Dijk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to van Dijk et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "d90d625e-f8ad-4b66-b325-782b3548d6a2",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C16",
+      "claim": "In the absence of Xrn1p, the average levels of SUTs and CUTs increase by 7.9-fold and 3.6-fold respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Their behavior can be similar, as illustrated by the fact that in the absence of Xrn1p the average levels of SUTs and CUTs increase by 7.9-fold and 3.6-fold respectively (van Dijk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to van Dijk et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "a3b9442c-ba85-48ee-8417-217e88c74ea6",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C17",
+      "claim": "NMD was originally described more than two decades ago as a quality-control pathway targeting for degradation mRNAs containing a premature termination codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally described more than two decades ago as a quality-control pathway targeting for degradation mRNAs containing a premature termination codon (Leeds et al., 1991), NMD is a translation-coupled quality-control pathway affecting cytoplasmic transcripts with restricted coding capacities (for a review see Kervestin and Jacobson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Leeds et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "ffcaa887-08af-4519-a30b-f8b1df7020df",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C18",
+      "claim": "NMD targets include mRNAs harboring upstream open reading frames (uORFs).",
+      "claim_type": "EXPLICIT",
+      "source": "NMD targets include mRNAs harboring 'upstream open reading frames' (uORFs) (He et al., 2003; Arribere and Gilbert, 2013) and unspliced or incorrectly spliced transcripts exported to the cytoplasm (Sayani et al., 2008; Kawashima et al., 2014) accounting for roughly 10\u201315% of mRNAs in yeast as well as in human cells (Kervestin and Jacobson, 2012 and references therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to He et al., 2003 and Arribere and Gilbert, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "b20c8446-90e6-4e13-822e-794ec6dd053c",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C19",
+      "claim": "NMD targets include unspliced or incorrectly spliced transcripts exported to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "NMD targets include mRNAs harboring 'upstream open reading frames' (uORFs) (He et al., 2003; Arribere and Gilbert, 2013) and unspliced or incorrectly spliced transcripts exported to the cytoplasm (Sayani et al., 2008; Kawashima et al., 2014) accounting for roughly 10\u201315% of mRNAs in yeast as well as in human cells (Kervestin and Jacobson, 2012 and references therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sayani et al., 2008 and Kawashima et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "ec0ff096-2119-489f-8d99-4d3ad9d24ff5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C20",
+      "claim": "NMD targets account for roughly 10\u201315% of mRNAs in yeast as well as in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NMD targets include mRNAs harboring 'upstream open reading frames' (uORFs) (He et al., 2003; Arribere and Gilbert, 2013) and unspliced or incorrectly spliced transcripts exported to the cytoplasm (Sayani et al., 2008; Kawashima et al., 2014) accounting for roughly 10\u201315% of mRNAs in yeast as well as in human cells (Kervestin and Jacobson, 2012 and references therein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kervestin and Jacobson, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "cd794d1d-39da-410e-8c7d-4ddc53702eaa",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C21",
+      "claim": "The false-discovery rate for TSS identification using the TSS sequencing method is less than 2.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "After normalization using the S. pombe sequencing reads and removal of the ribosomal DNA ones, these experiments generated 2,844,877 reads when TAP was used compared with 72,435 reads when TAP was omitted. The ratio between these two numbers provides an upper limit for the false-discovery rate of TSS identification of 2.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data comparing TAP-treated and untreated samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "f504a16e-73a2-4481-bf2e-2e1f5f58e3a5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C22",
+      "claim": "Genome-wide, 77% of the reads obtained for TAP-treated samples could be mapped within a 200 nucleotide region upstream of the start codons with a maximum at around 30 nucleotides upstream from ATGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the cumulative 5\u2032-end read counts per nucleotide around the start codon for all protein-coding genes showed that, genome-wide, 77% (2,190,211) of the reads obtained for TAP-treated samples could be mapped within a 200 nucleotide region upstream of the start codons with a maximum at around 30 nucleotides upstream from ATGs, while only 22% mapped to the same region when this treatment was omitted (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "bf4f18e3-0b90-499c-942c-1dbf9722da95",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C23",
+      "claim": "The Pearson's correlation coefficient between two independent biological replicates for wild-type cells is 0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pearson's correlation value (\u03c1) between the read counts of the 174,151 TSSs identified in the two data sets is indicated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with the correlation coefficient indicated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "2fac0317-ed0c-46dc-bdcb-4f761a4f2fb5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C24",
+      "claim": "The TSS consensus sequence in S. cerevisiae is A(N)6PyPu.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the TSSs and their surrounding sequences using the Web-LOGO algorithm (Crooks et al., 2004) identified a consensus sequence around TSSs (Figure 1\u2014figure supplement 2A) similar to the previously reported one derived from a smaller data set (Zhang and Dietrich, 2005). In particular, we observed a very strong bias to start at a purine (88% of mapped TSSs), usually following a pyrimidine (76% of the mapped TSSs), and the enrichment for an A at position \u22128 relative to the TSS (A(N)6PyPu consensus).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Web-LOGO analysis shown in Figure 1\u2014figure supplement 2A and comparison to Zhang and Dietrich, 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "3ef4f3a7-b131-40ad-8661-bc72ad7983ef",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C25",
+      "claim": "88% of mapped TSSs start at a purine.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed a very strong bias to start at a purine (88% of mapped TSSs), usually following a pyrimidine (76% of the mapped TSSs), and the enrichment for an A at position \u22128 relative to the TSS (A(N)6PyPu consensus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the TSS sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "9d658908-d8a8-4c61-af1c-5c517d86e2c9",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C26",
+      "claim": "76% of mapped TSSs have a pyrimidine preceding the purine at the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed a very strong bias to start at a purine (88% of mapped TSSs), usually following a pyrimidine (76% of the mapped TSSs), and the enrichment for an A at position \u22128 relative to the TSS (A(N)6PyPu consensus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the TSS sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "ef8b7608-418e-45cf-93ed-2214cb345367",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C27",
+      "claim": "58% of TSS reads starting with a pyrimidine when aligned on the genome show a mismatch at their first nucleotide, most of the time an A instead of the encoded pyrimidine.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 58% of TSS reads starting with a pyrimidine when aligned on the genome (12% of the mapped TSSs) show a mismatch at their first nucleotide, most of the time an A instead of the encoded pyrimidine (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the sequencing data analysis shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "f6154f5e-4893-4435-95b2-e77155d8dff9",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C28",
+      "claim": "17,812 TSSCs were identified in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis allowed us to identify 17,812 TSSCs, among which 5927 could be assigned to 5\u2032-ends of mRNAs corresponding to 5231 ORFs (O category in Supplementary file 1), as previously defined (Pelechano et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of peak-calling analysis on the TSS sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "81039e5b-46dc-4ea7-97fa-a036749a2821",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C29",
+      "claim": "5927 TSSCs could be assigned to 5\u2032-ends of mRNAs corresponding to 5231 ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis allowed us to identify 17,812 TSSCs, among which 5927 could be assigned to 5\u2032-ends of mRNAs corresponding to 5231 ORFs (O category in Supplementary file 1), as previously defined (Pelechano et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of TSSC assignment to annotated features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "f5d449d0-02ec-4bbb-a4e7-70fc52535cb9",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C30",
+      "claim": "79% of CUT-TSSCs were significantly stabilized in the absence of Rrp6.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to mRNA-TSSCs, the majority of which were unaffected in the absence of Upf1, Rrp6 or both (Figure 2A) and, as expected (Wyers et al., 2005), CUT-TSSCs were strongly stabilized in the absence of Rrp6 (Figure 2B; 79% stabilized significantly, as determined using the moderated estimation of fold change and dispersion function of DESeq2\u2014Love et al., 2014; see 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by DESeq2 analysis of the TSS sequencing data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "97e00c56-766a-4ca9-80c4-3d72e261b550",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C31",
+      "claim": "Only 23% of CUT-TSSCs increased significantly in the absence of Upf1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 23% of the CUT-TSSCs increased significantly in the absence of Upf1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by DESeq2 analysis of the TSS sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "dde23d4a-087b-44f3-8606-f82b7b5869d6",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C32",
+      "claim": "28% of XUTs and SUTs were significantly stabilized in the absence of Rrp6.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite situation was observed for XUTs and SUTs, which were more sensitive to the cytoplasmic NMD quality-control pathway (28% vs 52% significantly stabilized in the absence of Rrp6 or Upf1, respectively; Figure 2C,D and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by DESeq2 analysis shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "cf9fcb66-c44b-4de9-8f6a-ec5fd9c10bf5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C33",
+      "claim": "52% of XUTs and SUTs were significantly stabilized in the absence of Upf1.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite situation was observed for XUTs and SUTs, which were more sensitive to the cytoplasmic NMD quality-control pathway (28% vs 52% significantly stabilized in the absence of Rrp6 or Upf1, respectively; Figure 2C,D and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by DESeq2 analysis shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "277cd5f9-d635-4493-9446-3064a175fa01",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C34",
+      "claim": "39% of pervasive transcripts (CUTs, SUTs and XUTs) were significantly sensitive to the absence of Upf1 in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, 39% and 54% of the pervasive transcripts (CUTs, SUTs and XUTs) were significantly sensitive to the absence of Upf1 in a wild-type or rrp6\u2206 background, respectively, indicating that NMD targets about half of the pervasive transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the DESeq2 analysis of all pervasive transcript categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "18ad575f-5650-4264-a9bc-dec1d3012e6d",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C35",
+      "claim": "54% of pervasive transcripts (CUTs, SUTs and XUTs) were significantly sensitive to the absence of Upf1 in an rrp6\u2206 background.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, 39% and 54% of the pervasive transcripts (CUTs, SUTs and XUTs) were significantly sensitive to the absence of Upf1 in a wild-type or rrp6\u2206 background, respectively, indicating that NMD targets about half of the pervasive transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the DESeq2 analysis of all pervasive transcript categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "f51664ea-d562-4e2d-b865-c9750afd9c43",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C36",
+      "claim": "In the upf1\u2206rrp6\u2206 double mutant, 76% of XUTs/SUTs were significantly stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "In the double mutant, 76% and 92% of the XUTs/SUTs and CUTs, respectively, were significantly stabilized, suggesting that NMD provides a fail-safe control mechanism for pervasive transcripts that escaped degradation in the nucleus, reminiscent of what has been previously shown for some unspliced pre-mRNAs (Sayani and Chanfreau, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by DESeq2 analysis of the double mutant data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "74e08c71-4965-4d7b-a287-322c71fbf519",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C37",
+      "claim": "In the upf1\u2206rrp6\u2206 double mutant, 92% of CUTs were significantly stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "In the double mutant, 76% and 92% of the XUTs/SUTs and CUTs, respectively, were significantly stabilized, suggesting that NMD provides a fail-safe control mechanism for pervasive transcripts that escaped degradation in the nucleus, reminiscent of what has been previously shown for some unspliced pre-mRNAs (Sayani and Chanfreau, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by DESeq2 analysis of the double mutant data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "e34562fb-0d5c-4dbd-a60d-46abfb0914ef",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C38",
+      "claim": "XUTs and SUTs carry spurious ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, all XUTs and SUTs carry spurious ORFs (Figure 3\u2014figure supplement 1A) and some of them have been identified in ribosomal profiling experiments and shown to encode short peptides (Ingolia et al., 2009; Smith et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis of XUT and SUT sequences in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "9ec7b84a-724c-4fdb-ae68-b64367d88260",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C39",
+      "claim": "Some XUTs and SUTs have been identified in ribosomal profiling experiments and shown to encode short peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, all XUTs and SUTs carry spurious ORFs (Figure 3\u2014figure supplement 1A) and some of them have been identified in ribosomal profiling experiments and shown to encode short peptides (Ingolia et al., 2009; Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ingolia et al., 2009 and Smith et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "7cd2d8cf-ec03-4bff-a946-7c7c9d8da285",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C40",
+      "claim": "XUTs and SUTs carry, on average, much shorter ORFs and longer 3\u2032-UTRs than mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the first encountered ORF is translated, XUTs and SUTs carry, on average, much shorter ORFs and longer 3\u2032-UTRs than mRNAs (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparative analysis in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "0371a693-8c1d-4efa-8132-28c79a7b33bf",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C41",
+      "claim": "The presence of both a long 3\u2032-UTR and a short ORF increases NMD efficiency in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of both a long 3\u2032-UTR and a short ORF increases NMD efficiency in budding yeast (Decourty et al., 2014) and thus explain why these transcripts are efficiently targeted for degradation by this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Decourty et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "2261e7af-04cd-4e40-8ca6-05bc2f32be33",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C42",
+      "claim": "XUTs and SUTs found not to be sensitive to NMD have on average significantly shorter 3\u2032-UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the few XUTs and SUTs found not to be sensitive to NMD have on average significantly shorter 3\u2032-UTRs (Figure 3\u2014figure supplement 1B), which is in agreement with the recently published observation that, in ribosomal profiling experiments, the length of RNA downstream of the ribosome protected region is significantly longer for NMD-sensitive compared with NMD-insensitive unannotated RNA transcripts (Smith et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1B and supported by citation to Smith et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "5fe45823-acc8-4899-9ae8-5f8fbfd803b8",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C43",
+      "claim": "7739 TSSCs could not be assigned to previously annotated transcripts and were only detected in mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the 17,812 TSSCs identified in this study, 7739 could not be assigned to previously annotated transcripts (ORFs, stable ncRNAs or pervasive transcripts) and were only detected in mutants cells (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the result of TSSC assignment analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "8a9558e8-f67e-4f38-bb67-bfe0355644e4",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C44",
+      "claim": "3011 'intergenic-TSSCs' originating from 1843 intergenic regions were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "These newly identified transcripts, expressed at low levels (Figure 4\u2014figure supplement 1), originated from intergenic regions (3011 'intergenic-TSSCs' originating from 1843 intergenic regions) as well as from within mRNA transcribed regions either in sense (2978 'B-TSSCs' within 1889 mRNAs) or in antisense orientation (1750 'A-TSSCs' antisense to 1186 mRNAs; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of TSSC classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "927860d5-4600-49fa-89d9-76b91f940ada",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C45",
+      "claim": "2978 'B-TSSCs' within 1889 mRNAs were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "These newly identified transcripts, expressed at low levels (Figure 4\u2014figure supplement 1), originated from intergenic regions (3011 'intergenic-TSSCs' originating from 1843 intergenic regions) as well as from within mRNA transcribed regions either in sense (2978 'B-TSSCs' within 1889 mRNAs) or in antisense orientation (1750 'A-TSSCs' antisense to 1186 mRNAs; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of TSSC classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "1f8dacc6-9a32-4da9-8080-638a7cde7a6e",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C46",
+      "claim": "1750 'A-TSSCs' antisense to 1186 mRNAs were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "These newly identified transcripts, expressed at low levels (Figure 4\u2014figure supplement 1), originated from intergenic regions (3011 'intergenic-TSSCs' originating from 1843 intergenic regions) as well as from within mRNA transcribed regions either in sense (2978 'B-TSSCs' within 1889 mRNAs) or in antisense orientation (1750 'A-TSSCs' antisense to 1186 mRNAs; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of TSSC classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "6cb72461-7bc8-4ebf-93da-358b12d023f5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C47",
+      "claim": "B-TSSCs were sensitive to upf1\u2206 and almost not affected by the deletion of RRP6.",
+      "claim_type": "EXPLICIT",
+      "source": "While 'B-TSSCs' were sensitive to upf1\u2206 and almost not affected by the deletion of RRP6 (Figure 4C and Figure 4\u2014figure supplement 1), 'intergenic' and 'A-TSSCs' were affected by the two mutations (Figure 4A,B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the analysis in Figure 4C and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "5b82c50a-f20c-48ef-afb6-712f6065dcbc",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C48",
+      "claim": "'Intergenic' and 'A-TSSCs' were affected by both upf1\u2206 and rrp6\u2206 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "While 'B-TSSCs' were sensitive to upf1\u2206 and almost not affected by the deletion of RRP6 (Figure 4C and Figure 4\u2014figure supplement 1), 'intergenic' and 'A-TSSCs' were affected by the two mutations (Figure 4A,B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the analysis in Figure 4A,B and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "7eaa31ee-7a6c-49e1-b267-781c3bda9da8",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C49",
+      "claim": "The absence of both Rrp6 and Upf1 had an additive effect on the accumulation of 'intergenic' and 'A-TSSCs'.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the absence of both Rrp6 and Upf1 had an additive effect on the accumulation of these last two classes, as is the case for previously identified pervasive transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of single and double mutant effects on these transcript classes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "fef6c72a-e711-4d20-be6c-182b46056fff",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C50",
+      "claim": "55% of A-TSSCs were sensitive to Upf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 55% of the A-TSSCs and 40% of the B-TSSCs, whether repressed by Set2 or not, were sensitive to Upf1 (i.e., increased significantly in upf1\u2206set2\u2206 compared with set2\u2206 cells; Figure 6D and Supplementary file 3), revealing NMD to be an important quality-control mechanism to eliminate internally initiated transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by DESeq2 analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "4ee787ab-5c96-4a63-bc7b-f877ca9a617e",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C51",
+      "claim": "40% of B-TSSCs were sensitive to Upf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 55% of the A-TSSCs and 40% of the B-TSSCs, whether repressed by Set2 or not, were sensitive to Upf1 (i.e., increased significantly in upf1\u2206set2\u2206 compared with set2\u2206 cells; Figure 6D and Supplementary file 3), revealing NMD to be an important quality-control mechanism to eliminate internally initiated transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by DESeq2 analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "743c8fbf-0556-4ba0-bdc9-40def2937b3d",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C52",
+      "claim": "17% of mRNAs-TSSCs showed a significant increase in the absence of Upf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously reported data (He et al., 2003; Wyers et al., 2005), the effect on mRNAs was larger upon deletion of UPF1 (with 17% of the mRNAs-TSSCs showing a significant increase in the absence of Upf1) than upon deletion of RRP6 and deletion of both genes simultaneously did not show any additive effect (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by DESeq2 analysis shown in Figure 2A and consistent with He et al., 2003 and Wyers et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "e79fffd1-27b1-40eb-a692-ae51c3bd9725",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C53",
+      "claim": "Transcript isoforms in which TSSs were followed by uORFs were globally stabilized in the absence of UPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transcript isoforms in which TSSs where followed by uORFs were, globally, stabilized in the absence of UPF1, while those in which the annotated start codon was the first ATG downstream the TSS were mostly unaffected (Figure 7A, solid lines; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the analysis in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "18ceb863-77f7-4bd3-9d50-7bf1f07c5bf0",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C54",
+      "claim": "Transcript isoforms in which the annotated start codon was the first ATG downstream the TSS were mostly unaffected by UPF1 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transcript isoforms in which TSSs where followed by uORFs were, globally, stabilized in the absence of UPF1, while those in which the annotated start codon was the first ATG downstream the TSS were mostly unaffected (Figure 7A, solid lines; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the analysis in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "6c4c604c-5931-490b-9a7d-f3d584e456aa",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C55",
+      "claim": "For 1129 out of 5231 active genes (22%), a fraction of their transcript isoforms carried at least one uORF and was significantly sensitive to NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, for 1129 out of the 5231 active genes (22%), a fraction of their transcript isoforms carried at least one uORF and was significantly sensitive to NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the analysis of uORF-containing transcript isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "feff90df-a1b9-41e6-9c41-674a1319b710",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C56",
+      "claim": "Isoforms carrying more than one uORF appeared even more sensitive to NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoforms carrying more than one uORF appeared even more sensitive to NMD (Figure 7A), suggesting that the first AUGs of uORFs containing transcripts are not always efficiently used for translation initiation, likely because they are not in a favorable context (Arribere and Gilbert, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A and supported by citation to Arribere and Gilbert, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "2b283a42-0013-422c-925c-d4e74fff4173",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C57",
+      "claim": "64% of expressed genes (3327 genes) have iTSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered genes as having iTSSs (3327 genes; 64% of the expressed genes) if they contained at least four iTSS reads, which accounted for 99% of all iTTS reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the iTSS analysis with a threshold of at least four reads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "d6bddd1f-10b1-446f-83a7-b522a4ac683c",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C58",
+      "claim": "A fraction of transcript isoforms initiated at iTSSs followed by an out-of-frame ATG and significantly stabilized in the absence of Upf1 could be identified for 1821 out of 5231 expressed genes (35%).",
+      "claim_type": "EXPLICIT",
+      "source": "A fraction of transcript isoforms initiated at iTSSs followed by an out-of-frame ATG and significantly stabilized in the absence of Upf1 could be identified for 1821 out of the 5231 expressed genes (35%, Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by analysis shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "e2f0a5c5-8a8b-49ac-bae3-38d976b441e4",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C59",
+      "claim": "The mean expression level of iTSSs significantly increased in the upf1\u2206 strain relative to the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the weak overall effects observed for TSSs located directly upstream of the start codon, the mean expression level of iTSSs significantly increased in the upf1\u2206 strain relative to the wild-type (Figure 7C, and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "bee0844c-f750-4637-84c6-5e7eb498713c",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C60",
+      "claim": "Transcript isoforms significantly stabilized in NMD-deficient cells were found in 2437 genes (47% of the 5231 expressed genes).",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, transcript isoforms significantly stabilized in NMD-deficient cells, either because they carry a uORF or because they initiated at an out-of-frame iTSS, were found in 2437 genes; that is, 47% of the 5231 expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by combining genes with uORF-containing and iTSS-initiated NMD-sensitive isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "55f0bc80-6cab-4462-8f6e-93d4dab20466",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C61",
+      "claim": "In transcripts initiated at iTSSs, the first encountered ATGs are most of the time out-of-frame relative to the main ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "In transcripts initiated at iTSSs, the first encountered ATGs are most of the time out-of-frame relative to the main ORF (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "9666d805-80ed-4699-aeba-c7550dd75022",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C62",
+      "claim": "There is a bias towards out-of-frame ATGs specifically observed at the beginning of genes for which iTSSs were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias towards out-of-frame ATGs was specifically observed at the beginning of genes for which iTSSs were identified (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis in Figure 8B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "3fcc4112-8ade-4f26-ae58-95b7d88ce4f7",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C63",
+      "claim": "There is a significantly lower frequency of methionine in the N-terminal part of proteins from genes with iTSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlated with a significantly lower frequency of methionine in the N-terminal part of the corresponding proteins (Figure 8D), even though methionines were found to be globally underrepresented at the beginning of all yeast proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "8f88112d-536b-48b7-a819-a5d0b35e306b",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C64",
+      "claim": "Methionines were found to be globally underrepresented at the beginning of all yeast proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlated with a significantly lower frequency of methionine in the N-terminal part of the corresponding proteins (Figure 8D), even though methionines were found to be globally underrepresented at the beginning of all yeast proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the amino acid composition analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "b19bb53d-69dd-4da0-82ba-9e3a22b6c261",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C65",
+      "claim": "The TSS sequencing method includes a biotin purification step and allows the selective enrichment of the 5\u2032-ends of capped transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify TSSs genome-wide and with high specificity we used a modified genomic 5\u2032-RACE approach (Hashimoto et al., 2009; Arribere and Gilbert, 2013) that we called TSS sequencing, which involves a biotin purification step and allows the selective enrichment of the 5\u2032-ends of capped transcripts (see Figure 1A and 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in the methods and shown schematically in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "8f67c92d-c4fd-4e21-acf9-22568e65f0f5",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C66",
+      "claim": "The TSS sequencing method is based on a modified genomic 5\u2032-RACE approach.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify TSSs genome-wide and with high specificity we used a modified genomic 5\u2032-RACE approach (Hashimoto et al., 2009; Arribere and Gilbert, 2013) that we called TSS sequencing, which involves a biotin purification step and allows the selective enrichment of the 5\u2032-ends of capped transcripts (see Figure 1A and 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hashimoto et al., 2009 and Arribere and Gilbert, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "a102e4ed-e767-4509-b2bf-3962b932fb79",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C67",
+      "claim": "The consensus sequence for iTSSs was not different from the general consensus sequence for RNAPII transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus sequence for the iTSSs was not different from the general consensus sequence for RNAPII transcription initiation (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Web-LOGO analysis in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "fd67f180-d21e-44c5-ac94-d1da0f0c062f",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C68",
+      "claim": "Genes with iTSSs are significantly depleted of in-frame ATGs relative to all ATGs in the first 100 nucleotides when compared with genes without iTSSs (p-value = 3.13 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with iTSSs reads are significantly depleted of in-frame ATGs relative to all ATGs in the first 100 nucleotides when compared with genes without iTSSs reads (p-value = 3.13 10\u22125; ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by statistical analysis in Figure 8B with ANOVA test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "deee2fa0-fc54-4bfe-a361-89438d341466",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C69",
+      "claim": "The A-TSSCs and B-TSSCs more sensitive to Set2 were located further away from the mRNA 5\u2032-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the observed enrichment in Set2-catalyzed H3K36 methylation towards the 3\u2032 end of ORFs (Pokholok et al., 2005), the 'A' and 'B' TSSCs more sensitive to Set2 were located further away from the mRNA 5\u2032-ends (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A\u2013C and consistent with Pokholok et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "5b791a76-c9b0-4fe7-92ff-509e4ee5b6da",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C70",
+      "claim": "B-TSSs were not associated with a strong NFR but instead showed a weak NFR surrounded by two well-positioned nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the TSSs associated with other features identified in this study, the 'B' TSSs were not associated with a strong NFR (Figure 6\u2014figure supplement 2). Instead, analysing the nucleosome density around these TSSs revealed the presence of a weak NFR surrounded by two well-positioned nucleosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by nucleosome density analysis in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "cbb6695f-b519-465f-a58e-7c5ebed3a08c",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C71",
+      "claim": "The particular nucleosome pattern around B-TSSs might explain their high sensitivity to mutations affecting chromatin structure, such as the deletion of Set2.",
+      "claim_type": "EXPLICIT",
+      "source": "This particular pattern might explain the high sensitivity of 'B' TSSs to mutations affecting chromatin structure, such as the deletion of the Set2 histone methyl-transferase (Smolle and Workman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the nucleosome pattern observation and supported by citation to Smolle and Workman, 2013.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "6a3ed9cc-85fb-4a58-ba2c-f9ec6efc3c9f",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "claim_id": "C72",
+      "claim": "The data reported in this study have been deposited in NCBI GEO under the accession number GSE64139.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reported here have been deposited in NCBI GEO under the accession number GSE64139.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "521279f0-ed7d-43d8-96a7-58f4026a1201",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a TSS sequencing method based on modified 5\u2032-RACE with biotin purification that achieves high specificity (false-discovery rate <2.5%) and reproducibility (Pearson's \u03c1=0.89 between biological replicates), with 77% of reads mapping to expected TSS regions upstream of start codons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C65-C66 collectively demonstrate the technical validity of the TSS sequencing method. The false-discovery rate calculation (C21), mapping statistics (C22), and correlation analysis (C23) provide strong quantitative evidence for method performance. The methodological description (C65-C66) is well-documented with appropriate controls (TAP-treated vs untreated samples).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "61ecaa4c-481b-408c-a0a2-91234db9eab3",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The TSS consensus sequence in S. cerevisiae is A(N)6PyPu, with 88% of TSSs starting at a purine preceded by a pyrimidine (76%), though 58% of pyrimidine-starting reads show mismatches suggesting non-templated nucleotide addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by Web-LOGO analysis and sequencing data. The consensus sequence (C24) is validated by prior work (Zhang and Dietrich, 2005) and the quantitative observations (C25-C26) are directly calculated from data. The mismatch observation (C27) is intriguing and supported by Figure 1\u2014figure supplement 2B, though the mechanistic interpretation requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "b9886848-e00a-45e9-a022-4eee83fd065c",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Peak-calling analysis identified 17,812 TSSCs genome-wide, with 5,927 assigned to mRNA 5\u2032-ends corresponding to 5,231 ORFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 report straightforward quantitative results from the peak-calling analysis. The numbers are internally consistent and the methodology for TSSC identification is described in Materials and Methods. These provide the foundation for subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "About half of pervasive transcripts are degraded by NMD, with differential sensitivity: CUTs are primarily Rrp6-sensitive (79% stabilized in rrp6\u0394 vs 23% in upf1\u0394), while XUTs/SUTs are more NMD-sensitive (52% in upf1\u0394 vs 28% in rrp6\u0394). The double mutant shows additive effects with 76% of XUTs/SUTs and 92% of CUTs stabilized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C30-C37 are well-supported by DESeq2 analysis shown in Figure 2. The differential sensitivity patterns are clear and statistically significant. The additive effects in the double mutant (C36-C37) support the fail-safe mechanism interpretation. The use of appropriate statistical methods (DESeq2) and multiple biological replicates strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "2f6ef804-f310-4aa3-9eae-0ca5da01fb01",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NMD provides a fail-safe mechanism to remove pervasive transcripts that escaped nuclear degradation, as evidenced by additive effects of upf1\u0394 and rrp6\u0394 mutations on transcript accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C49 are supported by the observation of additive effects in double mutants for multiple transcript classes. This pattern is consistent with sequential quality control mechanisms. However, the interpretation as a \"fail-safe\" mechanism is somewhat inferential, though well-supported by the data and consistent with prior work on unspliced pre-mRNAs (Sayani and Chanfreau, 2012).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "ac2366f3-a2a6-45f0-8c77-0799e68f7c2b",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "XUTs and SUTs carry spurious ORFs with shorter ORF lengths and longer 3\u2032-UTRs than mRNAs, features that target them for NMD degradation. NMD-insensitive XUTs/SUTs have significantly shorter 3\u2032-UTRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by sequence analysis (Figure 3\u2014figure supplement 1) and consistent with prior ribosome profiling data (C39). The structural features (short ORFs, long 3\u2032-UTRs) align with known NMD determinants in yeast (C41, citing Decourty et al., 2014). The observation that NMD-insensitive transcripts have shorter 3\u2032-UTRs (C42) provides internal validation of the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "e248a008-6990-4744-92bb-8af14c518e16",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "7,739 previously unannotated TSSCs were identified only in mutant cells, including 3,011 intergenic, 2,978 sense intragenic (B-TSSCs), and 1,750 antisense intragenic (A-TSSCs) transcripts. B-TSSCs are primarily NMD-sensitive while intergenic and A-TSSCs are affected by both Rrp6 and Upf1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 describe novel transcript classes identified through the TSS sequencing approach. The classification is systematic and the differential sensitivities to degradation pathways (C47-C48) are shown in Figure 4. These represent genuine discoveries enabled by the methodology, though the biological significance of some low-abundance transcripts remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "19c39c70-717c-4f80-8521-eb7f46044072",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Co-transcriptional histone modifications by Set2 and NMD cooperate to restrict internally initiated transcripts, with 55% of A-TSSCs and 40% of B-TSSCs sensitive to Upf1. Set2-sensitive TSSCs are located further from mRNA 5\u2032-ends and B-TSSs show weak NFRs surrounded by well-positioned nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 and C69-C71 demonstrate cooperation between chromatin-based and NMD-based quality control. The positional bias (C69) is consistent with H3K36 methylation patterns. The nucleosome architecture around B-TSSs (C70) provides mechanistic insight, though the causal relationship (C71) is somewhat inferential. The data are internally consistent and supported by Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "55379f74-e8d2-469a-8b63-e56b275753e3",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Low specificity of RNA polymerase II TSS selection generates NMD-sensitive transcript isoforms for 47% of expressed genes (2,437 genes), including those with uORFs (22% of genes, 1,129 genes) or internal TSSs. Transcript isoforms with uORFs are stabilized in upf1\u0394 while those with annotated start codons are unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C52-C56, and C60 are well-supported by genome-wide TSS analysis shown in Figure 7. The differential stabilization of uORF-containing vs canonical isoforms (C53-C54) validates NMD targeting. The 47% figure (C4, C60) represents a major finding about transcript heterogeneity. The observation that multi-uORF isoforms are more NMD-sensitive (C56) is consistent with translation initiation context effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "cee53c08-02bc-41d0-b2f3-5e553017f541",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "64% of expressed genes (3,327 genes) have internal TSSs (iTSSs), with 35% (1,821 genes) producing NMD-sensitive isoforms when iTSSs are followed by out-of-frame ATGs. iTSS expression levels significantly increase in upf1\u0394 and their consensus sequence matches general RNAPII initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 and C67 describe a major class of alternative transcript isoforms. The threshold of 4 reads for iTSS calling (C57) is reasonable and accounts for 99% of iTSS reads. The significant increase in iTSS expression in upf1\u0394 (C59, Figure 7C) demonstrates NMD targeting. The consensus sequence similarity (C67) supports these being genuine transcription initiation events rather than artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "682b7ed1-e1f3-44c8-9fc9-b19ba6aaa31e",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There is a significant bias against in-frame ATGs at the beginning of genes with iTSSs (p=3.13\u00d710\u207b\u2075), with first ATGs in iTSS-initiated transcripts being predominantly out-of-frame relative to the main ORF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C61-C62, and C68 demonstrate evolutionary constraint on genomic sequences. The statistical significance (C68, p=3.13\u00d710\u207b\u2075 by ANOVA) is strong. The bias is specifically observed in genes with iTSSs (C62), supporting a causal relationship. This represents an important finding about how genomes are shaped by pervasive transcription and quality control mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "42e42550-6b9f-49fc-ab80-0dbf0148c70f",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "There is a significantly lower frequency of methionine in the N-terminal part of proteins from genes with iTSSs, though methionines are globally underrepresented at the beginning of all yeast proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C63-C64 extend the genomic constraint observation to the protein level. The analysis shown in Figure 8D demonstrates the methionine depletion. The control observation that methionines are generally underrepresented (C64) is important context, but the additional depletion in iTSS-containing genes (C63) suggests specific evolutionary pressure. The statistical significance could be more explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the context of pervasive transcription, RNA quality control pathways (NNS complex, TRAMP, nuclear exosome, Xrn1), and NMD function in eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C20 provide established background knowledge supported by appropriate citations. These are not novel findings but necessary context. C1 correctly defines NMD function. The citations appear appropriate for the claims made, though the accuracy of specific cited results was not independently verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    },
+    {
+      "id": "66a78fa1-3441-4f57-8e35-2d34cb531308",
+      "content_id": "852ce2c6-c897-4a0c-9b23-040a8af8b42e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Data have been deposited in NCBI GEO under accession GSE64139.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is a straightforward data availability statement. This is good practice for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:59.316993Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cd794d1d-39da-410e-8c7d-4ddc53702eaa",
+      "result_id": "521279f0-ed7d-43d8-96a7-58f4026a1201"
+    },
+    {
+      "claim_id": "f504a16e-73a2-4481-bf2e-2e1f5f58e3a5",
+      "result_id": "521279f0-ed7d-43d8-96a7-58f4026a1201"
+    },
+    {
+      "claim_id": "bf4f18e3-0b90-499c-942c-1dbf9722da95",
+      "result_id": "521279f0-ed7d-43d8-96a7-58f4026a1201"
+    },
+    {
+      "claim_id": "b19bb53d-69dd-4da0-82ba-9e3a22b6c261",
+      "result_id": "521279f0-ed7d-43d8-96a7-58f4026a1201"
+    },
+    {
+      "claim_id": "8f67c92d-c4fd-4e21-acf9-22568e65f0f5",
+      "result_id": "521279f0-ed7d-43d8-96a7-58f4026a1201"
+    },
+    {
+      "claim_id": "2fac0317-ed0c-46dc-bdcb-4f761a4f2fb5",
+      "result_id": "61ecaa4c-481b-408c-a0a2-91234db9eab3"
+    },
+    {
+      "claim_id": "3ef4f3a7-b131-40ad-8661-bc72ad7983ef",
+      "result_id": "61ecaa4c-481b-408c-a0a2-91234db9eab3"
+    },
+    {
+      "claim_id": "9d658908-d8a8-4c61-af1c-5c517d86e2c9",
+      "result_id": "61ecaa4c-481b-408c-a0a2-91234db9eab3"
+    },
+    {
+      "claim_id": "ef8b7608-418e-45cf-93ed-2214cb345367",
+      "result_id": "61ecaa4c-481b-408c-a0a2-91234db9eab3"
+    },
+    {
+      "claim_id": "f6154f5e-4893-4435-95b2-e77155d8dff9",
+      "result_id": "b9886848-e00a-45e9-a022-4eee83fd065c"
+    },
+    {
+      "claim_id": "81039e5b-46dc-4ea7-97fa-a036749a2821",
+      "result_id": "b9886848-e00a-45e9-a022-4eee83fd065c"
+    },
+    {
+      "claim_id": "2982dd6e-0be0-4eaf-b868-d6f5875b7ebc",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "f5d449d0-02ec-4bbb-a4e7-70fc52535cb9",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "97e00c56-766a-4ca9-80c4-3d72e261b550",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "dde23d4a-087b-44f3-8606-f82b7b5869d6",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "cf9fcb66-c44b-4de9-8f6a-ec5fd9c10bf5",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "277cd5f9-d635-4493-9446-3064a175fa01",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "18ad575f-5650-4264-a9bc-dec1d3012e6d",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "f51664ea-d562-4e2d-b865-c9750afd9c43",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "74e08c71-4965-4d7b-a287-322c71fbf519",
+      "result_id": "94de252f-b569-46ef-a6f0-d28e7fad2dcc"
+    },
+    {
+      "claim_id": "56e3479a-63f4-43ef-b646-d8621188cae2",
+      "result_id": "2f6ef804-f310-4aa3-9eae-0ca5da01fb01"
+    },
+    {
+      "claim_id": "7eaa31ee-7a6c-49e1-b267-781c3bda9da8",
+      "result_id": "2f6ef804-f310-4aa3-9eae-0ca5da01fb01"
+    },
+    {
+      "claim_id": "e34562fb-0d5c-4dbd-a60d-46abfb0914ef",
+      "result_id": "ac2366f3-a2a6-45f0-8c77-0799e68f7c2b"
+    },
+    {
+      "claim_id": "9ec7b84a-724c-4fdb-ae68-b64367d88260",
+      "result_id": "ac2366f3-a2a6-45f0-8c77-0799e68f7c2b"
+    },
+    {
+      "claim_id": "7cd2d8cf-ec03-4bff-a946-7c7c9d8da285",
+      "result_id": "ac2366f3-a2a6-45f0-8c77-0799e68f7c2b"
+    },
+    {
+      "claim_id": "0371a693-8c1d-4efa-8132-28c79a7b33bf",
+      "result_id": "ac2366f3-a2a6-45f0-8c77-0799e68f7c2b"
+    },
+    {
+      "claim_id": "2261e7af-04cd-4e40-8ca6-05bc2f32be33",
+      "result_id": "ac2366f3-a2a6-45f0-8c77-0799e68f7c2b"
+    },
+    {
+      "claim_id": "5fe45823-acc8-4899-9ae8-5f8fbfd803b8",
+      "result_id": "e248a008-6990-4744-92bb-8af14c518e16"
+    },
+    {
+      "claim_id": "8a9558e8-f67e-4f38-bb67-bfe0355644e4",
+      "result_id": "e248a008-6990-4744-92bb-8af14c518e16"
+    },
+    {
+      "claim_id": "927860d5-4600-49fa-89d9-76b91f940ada",
+      "result_id": "e248a008-6990-4744-92bb-8af14c518e16"
+    },
+    {
+      "claim_id": "1f8dacc6-9a32-4da9-8080-638a7cde7a6e",
+      "result_id": "e248a008-6990-4744-92bb-8af14c518e16"
+    },
+    {
+      "claim_id": "6cb72461-7bc8-4ebf-93da-358b12d023f5",
+      "result_id": "e248a008-6990-4744-92bb-8af14c518e16"
+    },
+    {
+      "claim_id": "5b82c50a-f20c-48ef-afb6-712f6065dcbc",
+      "result_id": "e248a008-6990-4744-92bb-8af14c518e16"
+    },
+    {
+      "claim_id": "fef6c72a-e711-4d20-be6c-182b46056fff",
+      "result_id": "19c39c70-717c-4f80-8521-eb7f46044072"
+    },
+    {
+      "claim_id": "4ee787ab-5c96-4a63-bc7b-f877ca9a617e",
+      "result_id": "19c39c70-717c-4f80-8521-eb7f46044072"
+    },
+    {
+      "claim_id": "deee2fa0-fc54-4bfe-a361-89438d341466",
+      "result_id": "19c39c70-717c-4f80-8521-eb7f46044072"
+    },
+    {
+      "claim_id": "5b791a76-c9b0-4fe7-92ff-509e4ee5b6da",
+      "result_id": "19c39c70-717c-4f80-8521-eb7f46044072"
+    },
+    {
+      "claim_id": "cbb6695f-b519-465f-a58e-7c5ebed3a08c",
+      "result_id": "19c39c70-717c-4f80-8521-eb7f46044072"
+    },
+    {
+      "claim_id": "395e5147-61e0-4450-a5bc-094954e0b98b",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "743c8fbf-0556-4ba0-bdc9-40def2937b3d",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "e79fffd1-27b1-40eb-a692-ae51c3bd9725",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "18ceb863-77f7-4bd3-9d50-7bf1f07c5bf0",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "6c4c604c-5931-490b-9a7d-f3d584e456aa",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "feff90df-a1b9-41e6-9c41-674a1319b710",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "bee0844c-f750-4637-84c6-5e7eb498713c",
+      "result_id": "55379f74-e8d2-469a-8b63-e56b275753e3"
+    },
+    {
+      "claim_id": "2b283a42-0013-422c-925c-d4e74fff4173",
+      "result_id": "cee53c08-02bc-41d0-b2f3-5e553017f541"
+    },
+    {
+      "claim_id": "d6bddd1f-10b1-446f-83a7-b522a4ac683c",
+      "result_id": "cee53c08-02bc-41d0-b2f3-5e553017f541"
+    },
+    {
+      "claim_id": "e2f0a5c5-8a8b-49ac-bae3-38d976b441e4",
+      "result_id": "cee53c08-02bc-41d0-b2f3-5e553017f541"
+    },
+    {
+      "claim_id": "a102e4ed-e767-4509-b2bf-3962b932fb79",
+      "result_id": "cee53c08-02bc-41d0-b2f3-5e553017f541"
+    },
+    {
+      "claim_id": "6a81042d-17cc-4eed-b289-91297a0abb11",
+      "result_id": "682b7ed1-e1f3-44c8-9fc9-b19ba6aaa31e"
+    },
+    {
+      "claim_id": "55f0bc80-6cab-4462-8f6e-93d4dab20466",
+      "result_id": "682b7ed1-e1f3-44c8-9fc9-b19ba6aaa31e"
+    },
+    {
+      "claim_id": "9666d805-80ed-4699-aeba-c7550dd75022",
+      "result_id": "682b7ed1-e1f3-44c8-9fc9-b19ba6aaa31e"
+    },
+    {
+      "claim_id": "fd67f180-d21e-44c5-ac94-d1da0f0c062f",
+      "result_id": "682b7ed1-e1f3-44c8-9fc9-b19ba6aaa31e"
+    },
+    {
+      "claim_id": "cfae0c5b-d9aa-4789-a37c-93d162939386",
+      "result_id": "42e42550-6b9f-49fc-ab80-0dbf0148c70f"
+    },
+    {
+      "claim_id": "3fcc4112-8ade-4f26-ae58-95b7d88ce4f7",
+      "result_id": "42e42550-6b9f-49fc-ab80-0dbf0148c70f"
+    },
+    {
+      "claim_id": "8f88112d-536b-48b7-a819-a5d0b35e306b",
+      "result_id": "42e42550-6b9f-49fc-ab80-0dbf0148c70f"
+    },
+    {
+      "claim_id": "bc0e75c9-52e0-4eb1-8d5e-ee42c3149e9a",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "661c34e8-b8a5-4004-8520-e703e9c76ecc",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "ab15bca0-e9c6-45f7-a93f-ec732bbb1ae5",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "a8f9cce3-c9d5-46d6-b54a-7b4cd8d43179",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "4cdc832c-5180-49fd-b7e8-f97424df71bc",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "e07ab1c4-51fb-431a-83cd-b78779a9d4b1",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "86d7d9b4-7928-4832-aed3-917843b8ab6d",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "ff5cc874-adb6-474d-ae7d-6930f2c42b16",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "b935e19d-2ea7-45b9-b4f9-7a0f9b013698",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "2415c0c2-143c-48f3-852b-176a207a5e03",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "d90d625e-f8ad-4b66-b325-782b3548d6a2",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "a3b9442c-ba85-48ee-8417-217e88c74ea6",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "ffcaa887-08af-4519-a30b-f8b1df7020df",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "b20c8446-90e6-4e13-822e-794ec6dd053c",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "ec0ff096-2119-489f-8d99-4d3ad9d24ff5",
+      "result_id": "5e82d9ca-c02f-442f-a110-7d36e3a85ec3"
+    },
+    {
+      "claim_id": "6a3ed9cc-85fb-4a58-ba2c-f9ec6efc3c9f",
+      "result_id": "66a78fa1-3441-4f57-8e35-2d34cb531308"
+    }
+  ],
+  "comparisons": []
+}

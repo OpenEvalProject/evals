@@ -1,0 +1,2089 @@
+{
+  "submission": {
+    "id": "4c09b6d8-5373-4792-98cb-58456aa1036a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:46:55.556758Z",
+    "updated_at": "2025-11-29T03:46:55.556758Z"
+  },
+  "content": [
+    {
+      "id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "submission_id": "4c09b6d8-5373-4792-98cb-58456aa1036a",
+      "content_type": "manuscript",
+      "content_text": "# Probable nature of higher-dimensional symmetries underlying mammalian grid-cell activity patterns\n\n## Authors\n\n- Alexander Mathis<sup>1</sup> ([ORCID: 0000-0002-3777-2202](https://orcid.org/0000-0002-3777-2202)) \u2020\n- Martin B Stemmler<sup>3</sup>\n- Andreas VM Herz<sup>3</sup>\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n2. Center for Brain Science Harvard University Cambridge United States\n3. Bernstein Center for Computational Neuroscience Munich Germany\n4. Fakult\u00e4t f\u00fcr Biologie Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nLattices abound in nature\u2014from the crystal structure of minerals to the honey-comb organization of ommatidia in the compound eye of insects. These arrangements provide solutions for optimal packings, efficient resource distribution, and cryptographic protocols. Do lattices also play a role in how the brain represents information? We focus on higher-dimensional stimulus domains, with particular emphasis on neural representations of physical space, and derive which neuronal lattice codes maximize spatial resolution. For mammals navigating on a surface, we show that the hexagonal activity patterns of grid cells are optimal. For species that move freely in three dimensions, a face-centered cubic lattice is best. This prediction could be tested experimentally in flying bats, arboreal monkeys, or marine mammals. More generally, our theory suggests that the brain encodes higher-dimensional sensory or cognitive variables with populations of grid-cell-like neurons whose activity patterns exhibit lattice structures at multiple, nested scales.\n\n## Introduction\n\nIn mammals, the neural representation of space rests on at least two classes of neurons. \u2018Place cells\u2019 discharge when an animal is near one particular location in its environment (O'Keefe and Dostrovsky, 1971). \u2018Grid cells\u2019 are active at multiple locations that span an imaginary hexagonal lattice covering the environment (Hafting et al., 2005) and have been found in rats, mice, crawling bats, and human beings (Hafting et al., 2005; Fyhn et al., 2008; Yartsev et al., 2011; Jacobs et al., 2013). These cells are believed to build a metric for space.\n\nIn these experiments, locomotion occurs on a horizontal plane. Theoretical and numerical studies suggest that the hexagonal lattice structure is best suited for representing such a two-dimensional (2D) space (Guanella and Verschure, 2007; Mathis, 2012; Wei et al., 2013). In general, however, animals move in three dimensions (3D); this is particularly true for birds, tree dwellers, and fish. Their neuronal representation of 3D space may consist of a mosaic of lower-dimensional patches (Jeffery et al., 2013), as evidenced by recordings from climbing rats (Hayman et al., 2011). Place cells in flying bats, on the other hand, represent 3D space in a uniform and nearly isotropic manner (Yartsev and Ulanovsky, 2013).\n\nAs mammalian grid cells might represent space differently in 3D than in 2D, we study grid-cell representations in arbitrarily high-dimensional spaces and measure the accuracy of such representations in a population of neurons with periodic tuning curves. We measure the accuracy by the Fisher information (FI). Even though the firing fields between cells overlap, so as to ensure uniform coverage of space, we show how resolving the population's FI can be mapped onto the problem of packing non-overlapping spheres, which also plays an important role in other coding problems and cryptography (Shannon, 1948; Conway and Sloane, 1992; Gray and Neuhoff, 1998). The optimal lattices are thus the ones with the highest packing ratio\u2014the densest lattices represent space most accurately. This remarkably simple and straightforward answer implies that hexagonal lattices are optimal for representing 2D space. In 3D, our theory makes the experimentally testable prediction that grid cells will have firing fields positioned on a face-centered-cubic lattice or its equally dense non-lattice variant\u2014a hexagonal close packing structure.\n\nUnimodal tuning curves with a single preferred stimulus, which are characteristic for place cells or orientation-selective neurons in visual cortex, have been extensively studied (Paradiso, 1988; Seung and Sompolinsky, 1993; Pouget et al., 1999; Zhang and Sejnowski, 1999; Bethge et al., 2002; Eurich and Wilke, 2000; Brown and B\u00e4cker, 2006). This is also true for multimodal tuning curves that are periodic along orthogonal stimulus axes and generate repeating hypercubic (or hyper-rectangular) activation patterns (Montemurro and Panzeri, 2006; Fiete et al., 2008; Mathis et al., 2012). Our results extend these studies by taking more general stimulus symmetries into account and lead us to hypothesize that optimal lattices not only underlie the neural representation of physical space, but will also be found in the representation of other high-dimensional sensory or cognitive spaces.\n\n### Model\n\n#### Population coding model for space\n\nWe consider the D-dimensional space $\u211d^{D}$ in which spatial location is denoted by coordinates $x=(x_{1},\u2026,x_{D})\\in\u211d^{D}$. The animal's position in this space is encoded by N neurons. The dependence of the mean firing rate of each neuron i on x is called the neuron's tuning curve and will be denoted by \u03a9i(x). To account for the trial-to-trial variability in neuronal firing, spikes are generated stochastically according to a probability $P_{i}(k_{i}|\\tau\u2009\u03a9_{i}(x))$ for neuron i to fire ki spikes within a fixed time window \u03c4. While two neurons can have correlated tuning curves \u03a9i(x), we assume that the trial-to-trial variability of any two neurons is independent of each other. Thus, the conditional probability of the N statistically independent neurons to fire (k1,\u2026,kN) spikes at position x summarizes the encoding model:\n\n$$\nP((k_{1},\u2026,k_{N})|x)=\\prodi=1NP_{i}(k_{i}|\\tau\u2009\u03a9_{i}(x)).\n$$\n\nDecoding relies on inverting this conditional probability by asking: given a spike count vector K = (k1,\u2026,kN), where is the animal? Such a position estimate will be written as $x^(K)$. How precisely the decoding can be done is assessed by calculating the average mean square error of the decoder. The average distance between the real position of the animal x and the estimate $x^(K)$ is\n\n$$\n\\epsilon(x^|x)=E_{P(K|x)}(\u2225x\u2212x^(K)\u2225),\n$$\n\ngiven the population coding model $P(K|x)$. This error is called the resolution (Seung and Sompolinsky, 1993; Lehmann, 1998), whereby the term $\u2225.\u2225$ denotes Euclidean distance, $\u2225x\u2225=\\sqrt{\\sum\\alpha\u2009x_{\\alpha}^{2}}$. More generally, the covariance matrix $\\sum(x^|x)$ with coefficients $\\sum(x^|x)_{\\alpha,\\beta}=E_{P(K|x)}((x_{\\alpha}\u2212x_{\\alpha}^(K))\u22c5(x_{\\beta}\u2212x_{\\beta}^(K)))$ for spatial dimensions $\\alpha,\\beta\\in{1,\u2026,D}$, measures the covariance of the different error components, so that the sum of the diagonal elements of \u2211 is just the resolution $\\epsilon(x^|x)$. In principle, the resolution depends on both the specific decoder and the population coding model. However, for unbiased estimators, that is, estimators that on average decode the location x as this location $E_{P(K|x)}(x^(K))=x$, the FI provides an analytical measure to assess the highest possible resolution of any such decoder (Lehmann, 1998).\n\n#### Resolution and Fisher Information\n\nGiven a response of K = (k1,\u2026,kN) spikes across the population, we ask how accurately an ideal observer can decode the stimulus x. The FI measures how well one can discriminate nearby stimuli and depends on how P(x, K) changes with x. The greater the FI, the higher the resolution, and the lower the error $\\epsilon(x^|x)$, as these two quantities are inversely related. More precisely, the inverse of the FI matrix J(x),\n\n$$\nJ_{\\alpha\\beta}(x)=\\int^{\u200b}(\\frac{\\partial\u2009ln\u2009P(K,x)}{\\partialx_{\\alpha}})(\\frac{\\partial\u2009ln\u2009P(K,x)}{\\partialx_{\\beta}})P(K,x)\u2009dK,\n$$\n\nbounds the covariance matrix $\\sum(x^|x)$ of the estimated coordinates x = (x1,\u2026,xD)\n\n$$\n\\sum(x^|x)\\geqJ(x)^{\u22121}.\n$$\n\nThe resolution of any unbiased estimator of the encoded stimulus can achieve cannot be greater than J(x)\u22121. This is known as the Cram\u00e9r-Rao bound (Lehmann, 1998). Based on this bound, we will consider the FI as a measure for the resolution of the population code. In particular, we are interested in isotropic and homogeneous representations of space. These two conditions assure that the population has the same resolution at any location and along any spatial axis. Isotropy does not entail that the (global) spatial tuning of an individual neuron, \u03a9i(x), has to be radially symmetric, but merely that the errors are (locally) distributed according to a radially symmetric distribution. For instance, the tuning curve of a grid cell with hexagonal tuning is not radially symmetric around the center of a field (it has three axes), but the posterior is radially symmetric around any given location for a module of such grid cells. Homogeneity requires that the FI J(x) be asymptotically independent of x (as the number of neurons N becomes large); spatial isotropy implies that all diagonal entries in the FI matrix J(x) are equal.\n\n#### Periodic tuning curves\n\nGrid cells have periodic tuning curves\u2014they are active at multiple locations, called firing fields, and these firing fields are hexagonally arranged in the environment (Hafting et al., 2005). Their periodic structure is given by a hexagonal lattice. The periodic structure of the tuning curve \u03a9i(x) reflects its symmetries, that is, the set of vectors that map the tuning curve onto itself. Since we want to understand how the periodic structure affects the resolution of the population code, we generalize the notion of a grid cell to allow different periodic structures other than just hexagonal. Mathematically, the symmetries of a periodic structure can be described by a lattice L, which is constructed as follows: take a set of independent vectors (v\u03b1)1\u2264\u03b1\u2264D in D-dimensional space \u211dD, and consider all possible combinations of these vectors and their integer multiples\u2014each such vector combination points to a node of the lattice, such that the union of these represents the lattice itself. For instance, the square lattice (Figure 1A, bottom) is given by basis vectors v1 = (1, 0) and v2 = (0, 1). Mathematically, the lattice L\u2282\u211dD is(5)L=\u2211\u03b1=1Dk\u03b1v\u03b1fork\u03b1\u2208\u2124,\u2009v\u03b1\u2208\u211dD,for which (v\u03b1)1\u2264\u03b1\u2264D is a basis of \u211dD. We will not consider degenerate lattices. In this work, we follow the nomenclature from Conway and Sloane (1992). Applied fields might differ slightly in their terminology, especially regarding naming conventions for packings, which are generalizations of lattices (Whittaker, 1981; Nelson, 2002). We will address these generalizations of lattices below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05979/elife-05979-fig1-v2.jpg)\n\n**Figure 1.:** (A) Construction of a grid cell: Given a tuning shape \u03a9 and a lattice $L$, here a square lattice generated by v1 and v2 with \u03c6 = \u03c0/2, one periodifies \u03a9 with respect to $L$. One defines the value of $\u03a9^{L}(x)$ in the fundamental domain L as the value of \u03a9(r) applied to the distance from zero and then repeats this map over $\u211d^{2}$ like $L$ tiles the space. This construction can be used for lattices $L$ of arbitrary dimensions (Equation 7). (B) Grid module: The firing rates of three grid cells (orange, green, and blue) are indicated by color intensity. The cells' tuning is identical (\u03a9 and $L$ are the same), yet they differ in their spatial phases ci. Together, such identically tuned cells with different spatial phases define a grid module.\n\nBased on such a lattice $L$, we construct periodic tuning curves as illustrated in Figure 1A. We start with a lattice $L$ and a tuning shape $\u03a9:\u211d^{+}\u2192[0,1]$ that decays from unity to zero; \u03a9(r) describes the firing rate of the periodified tuning curve at distance r from any lattice point and should be at least twice continuously differentiable. Each lattice point $p\\inL$ has a domain $V_{p}\u2282\u211d^{D}$ called the Voronoi region, which is defined as\n\n$$\nV_{p}={x\\in\u211d^{D}\u2009|\u2009\u2225x\u2212p\u2225<\u2225x\u2212q\u2225\u2009\u2200q\\inL\u2009\u2227\u2009p\\neqq},\n$$\n\nthat contains all points x that are closer to p than to any other lattice point q. Note that Vp \u2229 Vq = \u03d5 if p \u2260 q and that for all $p,q\\inL$ there exists a unique vector $v\\inL$ with Vp = Vq + v.\n\nThe domain that contains the null (0) vector is called the fundamental domain and is denoted by L:= V0. For each $x\\in\u211d^{D}$ there is a unique lattice point $p\\inL$ that maps x into the fundamental domain: $x\u2212p\\inL$. Let us call this mapping $\\pi_{L}$. With this notation one can periodify \u03a9 onto $L$ by defining a grid cell's tuning curve as $\u03a9^{L}$:\n\n$$\n\u03a9^{L}(x):\u211d^{D}\u2192\u211d^{+},\u2009x\u21a6f_{max}\u22c5\u03a9(\u2225\\pi_{L}(x)\u2225^{2}),\n$$\n\nwhere fmax is the peak firing rate of the neuron. Note that throughout the paper we set fmax = \u03c4 = 1, for simplicity. As illustrated in Figure 1A, within the fundamental domain L, the tuning curve $\u03a9^{L}$ defined above is radially symmetric. This pattern is repeated along the nodes of $L$, akin to ceramic tiling.\n\nA grid module is defined as an ensemble of M grid cells $\u03a9_{i}^{L}$, $i\\in{1,\u2026,M}$ with identical, but spatially shifted tuning curves, that is, $\u03a9_{i}^{L}(x)=\u03a9^{L+c_{i}}(x)$ and spatial phases $c_{i}\\inL$ (see Figure 1B). The various phases within a module can be summarized by their phase density $\u03c1(c)=\\sum^{\u200b}_{i=1}^{M}\u2009\\delta(c\u2212c_{i})$. This definition is motivated by the observation of spatially shifted hexagonally tuned grid cells in the entorhinal cortex of rats (Hafting et al., 2005; Stensola et al., 2012).\n\nAny grid module is uniquely characterized by its signature $(\u03a9,\u03c1,L)$. To investigate the role of different periodic structures, we can fix the tuning shape \u03a9 and density \u03c1 and solely vary the lattice $L$ to find the lattice that yields the highest FI.\n\n## Results\n\nTo determine how the resolution of a grid module depends on the periodic structure L, we compute the population FI J\u03c2(x) for a module of grid cells with signature \u03c2=(\u03a9,\u03c1,L), which describes the tuning shape, the density of firing fields, and the lattice. By fixing the tuning shape \u03a9 and the number |\u03c1|=M of spatial phases, we can compare the resolution for different periodic structures. (Table 1 contains a glossary of the variables.)\n\n**Table 1.**\n List of acronyms, variables, and terms\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>D</td>\n      <td>Dimension of the stimulus space \u211dD</td>\n    </tr>\n    <tr>\n      <td>FI</td>\n      <td>Fisher information, usually denoted by J (Equation 3)</td>\n    </tr>\n    <tr>\n      <td>L</td>\n      <td>Non-degenerate point lattice describing periodic structure (Equation 5)</td>\n    </tr>\n    <tr>\n      <td>L</td>\n      <td>Fundamental domain of L, which is the Voronoi cell containing 0 (Equation 6)</td>\n    </tr>\n    <tr>\n      <td>\u03a9</td>\n      <td>Tuning shape</td>\n    </tr>\n    <tr>\n      <td>supp(\u03a9)</td>\n      <td>Support of \u03a9, that is, the subset where \u03a9 does not vanish</td>\n    </tr>\n    <tr>\n      <td>\u03a9L</td>\n      <td>Periodified tuning curve on \u211dD, where L is a D-dimensional lattice and \u03a9 a tuning curve. Simply referred to as a \u2018grid cell\u2019 (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>Phase density of grid cells' phases ci within a module \u03c1(c)=\u2211\u200bi=1M\u03b4(c\u2212ci)</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>Number of phases in grid module \u222bL\u03c1=M</td>\n    </tr>\n    <tr>\n      <td>\u03c2=(\u03a9,\u03c1,L)</td>\n      <td>Signature defining a grid module, which is an ensemble of grid cells differing in spatial phases ci, defined by \u03c1 and tuning curves given by \u03a9L</td>\n    </tr>\n    <tr>\n      <td>det(L)</td>\n      <td>Determinant of lattice L (equal to volume of L)</td>\n    </tr>\n    <tr>\n      <td>BR(0)</td>\n      <td>Subset of \u211dD containing all points with distance less than R from 0</td>\n    </tr>\n    <tr>\n      <td>\u0394(L)</td>\n      <td>Packing ratio of a lattice, that is, the volume of the largest BR(0) that fits inside L divided by det(L) (Equation 15)</td>\n    </tr>\n    <tr>\n      <td>H, Q</td>\n      <td>Hexagonal and square planar lattice of unit node-to-node distance (Figure 2)</td>\n    </tr>\n    <tr>\n      <td>FCC, BCC, C</td>\n      <td>Face-centered, body-centered, and cubic lattice of unit node-to-node distance, respectively (Figure 4).</td>\n    </tr>\n    <tr>\n      <td>trJ</td>\n      <td>Trace of the FI, that is, the sum of diagonal elements</td>\n    </tr>\n    <tr>\n      <td>J\u03c2</td>\n      <td>Population FI of grid module with signature \u03c2</td>\n    </tr>\n    <tr>\n      <td>trJL, trJQ, trJH</td>\n      <td>Trace of FI per neuron for lattice L (Q and H, respectively) with fixed bump-like \u03a9 defined in Equation 26</td>\n    </tr>\n    <tr>\n      <td>trJLM</td>\n      <td>Trace of FI for lattice L for M randomly distributed phases in L for the same bump function</td>\n    </tr>\n  </tbody>\n</table>\n\n### Scaling of lattices and nested grid codes\n\nOur grid-cell construction has one obvious degree of freedom, the length scale or grid size of the lattice $L$, that is, the width of the fundamental domain L. For a module with signature $\u03c2=(\u03a9,\u03c1,L)$ and for arbitrary scaling factor \u03bb > 0, the rescaled construction $\\lambda\u03c2:=(\u03a9(\\lambdar),\u03c1(\\lambdax),\\lambda\u22c5L)$ is a grid module too. The corresponding tuning curve satisfies $(\u03a9\u2218\\lambda)_{\\lambdaL}(x)=\u03a9_{L}(\\lambdax)$ and is thus merely a scaled version of the former. Indeed, as we show in the \u2018Material and methods\u2019 section, the FI of the rescaled module is \u03bb\u22122 J\u03c2(0). The Cram\u00e9r-Rao bound (Equation 4) implies that the local resolution of an unbiased estimator could thus rapidly improve with a finer grid size, that is, decreasing \u03bb.\n\nHowever, for any grid module $\u03c2=(\u03a9,\u03c1,L)$ the posterior probability, that is, the likelihood of possible positions given a particular spike count vector K = (k1,\u2026,kN), is also periodic. This follows from Bayes rule:\n\n$$\nP(x|K)=\\frac{P(K|x)\u22c5P(x)}{P(K)}\u221dP(x)\\prodi=1NP_{i}(k_{i}|\\tau\u2009\u03a9_{i}^{L}(x)).\n$$\n\nSince the right hand side is invariant under operations of $L$ on x, so is the left hand side of this equation. Thus, the multiple firing fields of a grid cell cannot be distinguished by a decoder, so that for \u03bb \u2192 0 the global resolution approaches the a priori uncertainty (Mathis et al., 2012a, 2012b). By combining multiple grid modules with different spatial periods one can overcome this fundamental limitation, counteracting the ambiguity caused by periodicity and still preserving the highest resolution at the smallest scale. Thus, one arrives at nested populations of grid modules, whose spatial periods range from coarse to fine. The FI for an individual module at one scale determines the optimal length scale of the next module (Mathis et al., 2012a, 2012b). The larger the FI per module, the greater the refinement at subsequent scales can be (Mathis et al., 2012a, 2012b). This result emphasizes the importance of finding the lattice that endows a grid module with maximal FI, but also highlights that the specific scale of the lattices can be fixed for this study.\n\n### FI of a grid module with lattice L\n\nWe now calculate the FI for a grid module with signature $\u03c2=(\u03a9,\u03c1,L)$. For cells whose firing is statistically independent (Equation 1), the joint probability factorizes; therefore, the population FI is just the sum over the individual FI contributions by each neuron, $J_{\u03c2}(x)=\\sum^{\u200b}_{i=1}^{M}\u2009J_{\u03a9_{i}^{L}}(x)$. The individual neurons only differ by their spatial phase ci, thus $J_{\u03a9_{i}^{L}}(x)=J_{\u03a9^{L}}(x\u2212c_{i})$. Consequently, $J_{\u03c2}(x)=\\sum^{\u200b}_{i=1}^{M}\u2009J_{\u03a9^{L}}(x\u2212c_{i})$, depends only on the function $J_{\u03a9^{L}}(r)$ and the deviations x \u2212 ci, where ci is the closest lattice point of $c_{i}+L$ to x. If the grid-cell density \u03c1 is uniform across $L$, then for all $x\\in\u211d^{D}$: J\u03c2(x) \u2248 J\u03c2(0). It therefore suffices to only consider the FI at the origin, which can be written as:\n\n$$\nJ_{\u03c2}(0)=\\sumi=1MJ_{\u03a9^{L}}(c_{i})=\\int_{L}\u2009J_{\u03a9^{L}}(c)\u03c1(c)dc.\n$$\n\nFor uniformly distributed spatial phases ci and increasing number of neurons M, the law of large numbers implies\n\n$$\nlimM\u2192\u221e|\\frac{det(L)}{M}J_{\u03c2}(0)\u2212\\int_{L}\u2009J_{\u03a9^{L}}(c)\u2009dc|=0.\n$$\n\nHere, $det(L)$ denotes the volume of the fundamental domain. Thus, for large numbers of neurons $M=\\int_{L}\u2009\u03c1(c)dc$ we obtain\n\n$$\nJ_{\u03c2}(0)\u2248\\frac{M}{det(L)}\\int_{L}\u2009J_{\u03a9^{L}}(c)dc.\n$$\n\nThis means that the population FI at 0 is approximately given by the average FI within the fundamental domain L times the number of neurons M. Let us now assume that supp(\u03a9) = [0, R] for some positive radius R. Outside of this radius, the tuning shape is zero and the firing rate vanishes. So the spatial phases of grid cells that contribute to the FI at x = 0 lie within the ball BR(0). If we now also assume that this ball is contained in the fundamental domain, $B_{R}(0)\u2282L$, we get\n\n$$\n\\int_{L}\u2009J_{\u03a9^{L}}(c)dc=\\int_{B_{R}(0)}J_{\u03a9^{L}}(c)dc.\n$$\n\nThis result implies that any grid code $\u03c2=(\u03a9,\u03c1,L)$, with large M, supp(\u03a9) = [0, R], and $B_{R}(0)\u2282L$, satisfies\n\n$$\nJ_{\u03c2}(0)\u2248\\frac{M}{det(L)}\\int_{B_{R}(0)}\u2009J_{\u03a9^{L}}(c)dc.\n$$\n\nThe FI at the origin is therefore approximately equal to the product of the mean FI contribution of cells within a R-ball around 0 and the number of neurons M, weighted by the ratio of the volume of the R-ball to the area of the fundamental domain L. Due to the radial symmetry of $\u03a9^{L}$, the FI matrix $J_{\u03a9^{L}}(c)$ is diagonal with identical entries, guaranteeing the spatial resolution's isotropy. The error for each coordinate axis is bounded by the same value, that is, the inverse of the diagonal element 1/J\u03c2(0)ii, for such a population. Instead of considering the FI matrix J\u03c2(0), we can therefore consider the trace of J\u03c2(0), which is the sum over the diagonal of J\u03c2(0). According to Equation 4, 1/trJ\u03c2(0) bounds the mean square error summed across all dimensions $\\epsilon(x^|x)$.\n\nFor two lattices $L_{1}$,$L_{2}$, with BR(0) \u2282 L1\u2229\u200bL2 we consequently obtain\n\n$$\n\\frac{trJ_{\u03a9^{L_{1}}}}{trJ_{\u03a9^{L_{2}}}}=\\frac{det(L_{2})}{det(L_{1})},\n$$\n\nwhich signifies that the resolution of the grid module is inversely proportional to the volumes of their fundamental domains. The periodic structure $L$ thus has a direct impact on the resolution of the grid module. This result implies that finding the maximum FI translates directly into finding the lattice with the highest packing ratio.\n\n### Packing ratio of lattices\n\nThe sphere packing problem is of general interest in mathematics (Conway and Sloane, 1992) and has wide-ranging applications from crystallography to information theory (Barlow, 1883; Shannon, 1948; Whittaker, 1981; Gray and Neuhoff, 1998; Gruber, 2004). When packing R-balls BR in \u211dD in a non-overlapping fashion, the density of the packing is defined as the fraction of the space covered by balls. For a lattice L, it is given by(15)vol(BR(0))det(L),which is known as the packing ratio \u0394(L) of the lattice. For a given lattice, this ratio is maximized by choosing the largest possible R, known as the packing radius, which is defined as the in-radius of a Voronoi region containing the origin (Conway and Sloane, 1992). Figure 2 depicts the disks with the largest in-radius for the hexagonal and the square lattice in blue and illustrates the packing ratio.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05979/elife-05979-fig2-v2.jpg)\n\n**Figure 2.:** Periodified grid-cell tuning curve $\u2126^{L}$ for two planar lattices, (A) the hexagonal (equilateral triangle) lattice $H$ and (B) the square lattice $Q$, together with the basis vectors v1 and v2.These are \u03c0/3 apart for the hexagonal lattice and \u03c0/2 for the square lattice. The fundamental domain, that is, the Voronoi cell around 0, is shown in gray. A few other domains that have been generated according to the lattice symmetries are marked by dashed lines. The blue disk shows the disk with maximal radius R that can be inscribed in the two fundamental domains. For equal and unitary node-to-node distances, that is, $|v_{1}|=|v_{2}|=1$, the maximal radius equals 1/2 for both lattices. The packing ratio \u0394 is $\u0394(H)=\\pi/\\sqrt{12}$ for the hexagonal and $\u0394(Q)=\\pi/4$ for the square lattice; the hexagonal lattice is approximately 15.5% denser than the square lattice.\n\n### FI and packing ratio\n\nWe now come to the main finding of this study: among grid modules with different lattices, the lattice with the highest packing ratio leads to the highest spatial resolution.\n\nTo derive this result, let us fix a tuning shape \u03a9 with supp(\u03a9) = [0, R], lattices $L_{j}$ such that BR(0) \u2282 Lj for 1 \u2264 j \u2264 K, and uniform densities \u03c1 for each fundamental domain of equal cardinality M. Any linear order on the packing ratios,\n\n$$\n\u0394(L_{1})\\leq\u2026\\leq\u0394(L_{j})\\leq\u2026\\leq\u0394(L_{K})\u2009,\n$$\n\nis translated by Equation 14 into the same order for the traces of the FI\n\n$$\ntrJ_{\u03a9^{L_{1}}}\\leq\u2026\\leqtrJ_{\u03a9^{L_{j}}}\\leq\u2026\\leqtrJ_{\u03a9^{L_{K}}},\n$$\n\nand thus the resolution of these modules: the higher the packing ratio, the higher the FI of a grid module.\n\nThe condition supp(\u03a9) = [0, R] with BR(0) \u2282 L, although restrictive, is consistent with experimental observations that grid cells tend to stop firing between grid fields and that the typical ratio between field radius and spatial period is well below 1/2 (Hafting et al., 2005; Brun et al., 2008; Giocomo et al., 2011). Generally, the tuning width that maximizes the FI does not necessarily satisfy this condition; see Figures 3, 4, in which the optimal support radius of the tuning curve \u03b82 is greater than the in-radius R = 1/2 of L. The same observation will hold in higher dimensions (D > 2), consistent with the finding that the optimal tuning width for Gaussian tuning curves increases with the number of spatial dimensions, whether space is infinite (Zhang and Sejnowski, 1999) or finite (Brown and B\u00e4cker, 2006). When the radius R of the support of the tuning curve exceeds the in-radius, the optimal lattice can be different from the densest one as we will show numerically for specific tuning curves and Poisson noise. However, with well separated fields, like those observed experimentally, the densest lattice provides the highest resolution for any tuning shape \u03a9, as we just demonstrated.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05979/elife-05979-fig3-v2.jpg)\n\n**Figure 3.:** (A) Top: Periodified bump-function \u03a9 and square lattice $L$, for various parameter combinations \u03b81 and \u03b82. Here, \u03b81 modulates the decay and \u03b82 the support. Middle: Average trace $trJ_{L}$ of the Fisher information (FI) for uniformly distributed grid cells $\u03a9^{L}$. Hexagonal ($H$) and square ($Q$) lattices are considered for different \u03b81 and \u03b82 values. The FI of the hexagonal grid cells outperforms the quadratic grid when support is fully within the fundamental domain (\u03b82 < 0.5, see main text). Bottom: Ratio $trJ_{H}/trJ_{Q}$ as a function of the tuning parameter \u03b82. For \u03b82 < 0.5, the hexagonal population offers 3/2 times the resolution of the square population, as predicted by the respective packing ratios. (B) Average $trJ_{L}$ for grid cells distributed uniformly in lattices generated by basis vectors separated by an angle \u03c6 (basis depicted above graph). $trJ_{L}$ behaves like 1/sin(\u03c6) and has its maximum at \u03c0/3. (C) Distribution of 5000 realizations of $trJ_{L}^{M}/M$ at 0 for a population of M = 200 randomly distributed neurons. For both the hexagonal and square lattice, parameters are \u03b81 = 1/4 and \u03b82 = 0.4. The means closely match the average values in (A). However, due to the finite neuron number the FI varies strongly for different realizations, and in about 20% of the cases a square lattice module outperforms a hexagonal lattice.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05979/elife-05979-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Upper left panel: Tuning shape \u03a9(r) with parameters \u03b82 = 0.5 and varying \u03b81. Lower left panel: Corresponding Fisher information (FI) integrand $\u2131(r)$. Upper right panel: Tuning shape \u03a9(r) with parameters \u03b81 = 0.25 and varying \u03b82. Lower right panel: Corresponding FI integrand $\u2131(r)$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05979/elife-05979-fig4-v2.jpg)\n\n**Figure 4.:** (A) The three lattices considered: face-centered cubic ($FCC$), body-centered cubic ($BCC$), and cubic ($C$). (B) $trJ_{L}$ for the periodified bump-function \u03a9 for the three lattices and various parameter combinations \u03b81 and \u03b82. The Fisher information (FI) of the $FCC$ grid cells outperforms the other lattices when the support is fully within the fundamental domain (\u03b82 < 0.5, see main text). For larger \u03b82 the best lattice depends on the relation between the Voronoi cell's boundary and the tuning curve. (C) Ratio $trJ_{L}/trJ_{C}$ as a function of \u03b82 for $L\\in{FCC,BCC,C}$. For \u03b82 < 0.5, the hexagonal population has 3/2 times the resolution of the square population, as predicted by the packing ratios. (D) Average $trJ_{L_{\\phi,\u03c8}}$ for uniformly distributed grid cells within a lattice $L_{\\phi,\u03c8}$ generated by basis vectors separated by angles \u03c6 and \u03c8 (as shown above; \u03b81 = \u03b82 = 1/4). $trJ_{L_{\\phi,\u03c8}}$ behaves like 1/(sin\u03c6\u22c5sin\u03c8) and has its maximum for the lattice with the smallest volume. (E) Distribution of 5000 realizations of $trJ_{L}^{M}/M$ at 0 for a population of M = 200 randomly distributed neurons. Parameters: \u03b81 = 1/4, \u03b82 = 0.4. The means closely match the averages in (B). Due to the finite neuron number, the FI varies strongly for different realizations.\n\nThe optimal packing ratio of lattices for low-dimensional space is well known. Having established our main result, we can now draw on a rich body of literature, in particular Conway and Sloane (1992), to discuss the expected firing-field structure of grid cells in 2D and 3D environments.\n\n### Optimal 2D grid cells\n\nWith a packing ratio of $\\pi/\\sqrt{12}$, the hexagonal lattice is the densest lattice in the plane (Lagrange, 1773). According to Equation 14, the hexagonal lattice is the optimal arrangement for grid-cell firing fields on the plane. For example, it outperforms the quadratic lattice, which has a density of \u03c0/4, by about 15.5% (see Figure 2). Consequently, the FI of a grid module periodified along a hexagonal lattice outperforms one periodified along a square lattice by the same factor.\n\nTo provide a tangible example, we calculated the trace of the average FI per neuron $trJ_{\u03c2}/\\int_{L}\u2009\u03c1$ for signature $\u03c2=(\u03a9,\u03c1,L)$ and chose the lattice $L$ to either be the hexagonal lattice $H$ or the quadratic lattice $Q$. We denote the trace of the average FI per neuron as: $trJ_{L}$ = $trJ_{\u03c2}/\\int_{L}\u2009\u03c1$; $trJ_{H}$ and $trJ_{Q}$ are similarly defined. We considered Poisson spike statistics and used a bump-like tuning shape \u03a9 (Equation 26, \u2018Materials and methods\u2019 section). The tuning shape \u03a9 depends on two parameters \u03b81 and \u03b82, where \u03b81 controls the slope of the flank in \u03a9 and \u03b82 defines the support radius. The periodified tuning curve $\u03a9^{Q}$ is illustrated for different parameters in the top of Figure 3A and in Figure 3\u2014figure supplement 1.\n\nFigure 3A depicts $trJ_{H}$ and $trJ_{Q}$ for various values of \u03b81 and \u03b82. Quite generally, the FI is larger for grid modules with broad tuning (large \u03b82) and steep tuning slopes (small \u03b81). Figure 3A also demonstrates that as long as \u03b82 \u2264 1/2, $trJ_{H}$ consistently outperforms $trJ_{Q}$. But how large is this effect? As predicted by our theory, the grid module with the hexagonal lattice outperforms the square lattice by the relation of packing ratios $\\sqrt{3}/2$, as long as the support radius \u03b82 is within the fundamental domain of the hexagonal and the square lattice of unit length, that is, \u03b82 \u2264 1/2 (bottom of Figure 3A). As the support radius becomes larger, the FI of the hexagonal lattice is no longer necessarily greater than that of the square lattice; the specific interplay of tuning curve and boundary shape determines which lattice is better: for \u03b81 = 1/4, $trJ_{H}/trJ_{Q}$ drops quickly beyond \u03b82 = 0.5, even though, for \u03b81 = 1, the ratio stays constant up to \u03b82 = 0.6.\n\nNext we calculated the FI per neuron for a larger family of planar lattices generated by two unitary basis vectors with angle \u03c6. Figure 3B displays $trJ_{L}$ for \u03c6 \u2208 [\u03c0/3, \u03c0/2], slope parameter \u03b81 = 1/4, and different support radii \u03b82. For the lattice to have unitary length, the value \u03c6 cannot go below \u03c0/3. The $trJ_{L}$ decays with increasing angle \u03c6. Indeed, according to Equation 13, the FI falls like $1/det\u2009L=1/sin(\\phi)$ so that the maximum is achieved for the hexagonal lattice with \u03c0/3.\n\nThe FIs $trJ_{L}$ are averages over all phases, under the assumption that the density of phases tends to a constant; but are these values also indicative for small neural populations? To answer this question, we calculated the FI for populations with 200 neurons, as some putative grid cells are found in patches of this size (Ray et al., 2014). For M = 200 randomly chosen phases (Figure 3C), the mean of the normalized FI $trJ_{L}^{M}/M$ over 5000 realizations is well captured by the FI per neuron calculated in Figure 3A. Because of fluctuations in the FI, however, the square lattice is better than the hexagonal lattice in about 20% of the cases.\n\nOur theory implies that for radially symmetric tuning curves the hexagonal lattice provides the best resolution among all planar lattices. This conclusion agrees with earlier findings: Wei et al. considered a notion of resolution defined as the range of the population code per smallest distinguishable scale and then demonstrated that a population of nested grid cells with hexagonal tuning is optimal for a winner-take-all and Bayesian maximum likelihood decoders (Wei et al., 2013). Guanella and Verschure numerically compared hexagonal to other regular lattices based on maximum likelihood decoding (Guanella and Verschure, 2007).\n\n### Optimal lattices for 3D grid cells\n\nGauss proved that the packing ratio of any cubic lattice is bounded by $\\pi/(3\\sqrt{2})$ and that this value is attained for the face-centered cubic ($FCC$) lattice (Gauss, 1831) illustrated in Figure 4A. This implies that the optimal 3D grid-cell tuning is given by the $FCC$ lattice. For comparison, we also calculated the average population FI for two other important 3D lattices: the cubic lattice ($C$) and the body-centered cubic lattice ($BCC$), both shown in Figure 4A.\n\nKeeping the bump-like tuning shape \u03a9 and independent Poisson noise, we compared the resolution of grid modules with such lattices (Figure 4B). Their averaged trace of FI is denoted by $trJ_{FCC}$, $trJ_{BCC}$, and $trJ_{C}$, respectively. As long as the support \u03b82 of \u03a9 is smaller than 1/2, the support is a subset of the fundamental domain of all three lattices. Hence, the trace of the population FI of the $FCC$ outperforms both the $BCC$ and $C$ lattices. As the ratios of the trace of the population FI scales with the packing ratio (Figure 4C), $FCC$-grid cells provide roughly 41% more resolution for the same number of neurons than do $C$-grid cells. Similarly, $FCC$-grid cells provide 8.8% more FI than $BCC$-grid cells.\n\nNext we calculated the FI per neuron for a large family of cubic lattices $L_{\\phi,\u03c8}$ generated by three unitary basis vectors with spanning angles \u03c6 and \u03c8. Figure 4D displays $trJ_{L_{\\phi,\u03c8}}$ for \u03b81 = \u03b82 = 1/4 and various \u03c6 and \u03c8. The resolution $trJ_{L}$ decays with increasing angles and has its maximum for the lattice with the smallest volume as predicted by Equation 13.\n\nTo study finite-size effects, we simulated 5000 populations of 200 grid cells with random spatial phases. Qualitatively, the results (Figure 4E) match those in 2D (Figure 3C). Despite the small module size, $FCC$ outperformed the cubic lattice $C$ in all simulated realizations.\n\n### Equally optimal non-lattice solutions for grid-cell tuning\n\nFruit is often arranged in an FCC formation (Figure 5A). One arrives at this lattice by starting from a layer of hexagonally placed spheres. This requires two basis vectors to be specified and is the densest packing in 2D. To maximize the packing ratio in 3D, the next layer of hexagonally arranged spheres has to be stacked as tightly as possible. There are two choices for the third and final basis vector achieve this packing, denoted as \u03b31 and \u03b32 in Figure 5B (modulo hexagonal symmetry). If one chooses \u03b31, then two layers below there is no sphere with its center at location \u03b31, but instead there is one at \u03b32 (and vice versa). This stacking of layers is shown in Figure 5C and generates the FCC lattice.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05979/elife-05979-fig5-v2.jpg)\n\n**Figure 5.:** (A) Stacking of spheres as in an $FCC$ lattice. In this densest lattice in 3D, each sphere touches 12 other spheres and there are four different planar hexagonal lattices through each node. (B) Over a layer of hexagonally arranged spheres centered at \u03b30 (in black) one can put another hexagonal layer by starting from one of six locations, two of which are highlighted, \u03b31 and \u03b32. (C) If one arranges the hexagonal layers according to the sequence (\u2026,\u03b31, \u03b30, \u03b32,\u2026) one obtains the $FCC$. Note that spheres in layer I are not aligned with those in layer III. (D) Arranging the hexagonal layers following the sequence (\u2026,\u03b30, \u03b31, \u03b30,\u2026) leads to the hexagonal close packing $HCP$. Again, each sphere touches 12 other spheres. However, there is only one plane through each node for which the arrangement of the centers of the spheres is a regular hexagonal lattice. This packing has the same packing ratio as the $FCC$, but is not a lattice. (E) $trJ_{L}$ for bump-function \u03a9 with $L=FCC$ and $HCP$ for various parameter combinations \u03b81 and \u03b82; \u03b81 modulates the decay and \u03b82 the support. The two packings have the same packing ratio and for this tuning curve also provide identical spatial resolution. FI: Fisher information.\n\nOne could achieve the same density by choosing \u03b31 for both the top layer and the layer below the basis layer. Yet as this arrangement, called hexagonal close packing ($HCP$), cannot be described by three vectors, it does not define a lattice (see Figure 5D), even though it is as tightly packed as the $FCC$. Such packings, defined as an arrangement of equal non-overlapping balls (Conway and Sloane, 1992; Hales, 2012), generalize lattices.\n\nWhile one can define a grid module for any lattice, as we showed above, one cannot define a grid module in a meaningful way for an arbitrary packing, due to the lack of symmetry. But for any given packing $P$ of $\u211d^{D}$ by balls $B_{1}$ of radius 1, one can define a \u2018grid cell\u2019 by generalizing the definition given for lattices (Equation 7). To this end, consider the Voronoi partition of $\u211d^{D}$ by $P$. For each location $x\\in\u211d^{D}$ there is a unique Voronoi cell Vp with node $p\\inP$. One defines the grid cell's tuning curve $\u03a9^{P}(x)$ by assigning the firing rate according to $\u03a9(\u2225p\u2212x\u2225^{2})$ for tuning shape \u03a9 and distance $\u2225p\u2212x\u2225$. Depending on the specific packing, this tuning curve $\u03a9^{P}$ may or may not be periodic. Because a packing $P$ often has fewer symmetries than a lattice $L$, the \u2018grid cells\u2019 in an arbitrary $P$ cannot generally be used to define a \u2018grid module\u2019. To explain why, consider an arbitrary packing and the unique Voronoi cell V0 that contains the point 0. Choose M uniformly distributed phases c1,\u2026,cM within V0. Locations within V0 will then be uniformly covered by shifted tuning curves $\u03a9_{i}(x):=\u03a9^{P}(x\u2212c_{i})$. However, typically the different Voronoi cells will neither be congruent, nor have similar volumes. Thus, the \u03a9i will typically not cover each Voronoi cell with the same density and will therefore fail to define a proper grid module. This problem does not exist for lattices. Here, the equivalence classes $c_{i}+L$ cover each cell with the same density.\n\nHighly symmetric packings, on the other hand, do permit the definition of grid modules. For example, the hexagonal close packing $HCP$ can be used to define a grid cell $\u03a9^{HCP}(x)$. Using the same symmetry argument from Equations 9\u201311, implies for the FI:\n\n$$\nJ_{(\u03a9,\u03c1,HCP)}(x)\u2248J_{(\u03a9,\u03c1,HCP)}(0)\u2248\\frac{M}{vol(V_{0})}\\int_{V_{0}}\u2009J_{\u03a9^{HCP}}(c)dc.\n$$\n\nThe maximal in-radius R for the $HCP$ with grid size \u03bb = 1 is equal to 1/2. Like for lattices, we assume that supp(\u03a9) = [0, R] and BR(0) \u2282 V0. Then the integrand vanishes for distances larger than 1/2 from 0. Hence, we obtain:\n\n$$\nJ_{(\u03a9,\u03c1,HCP)}(0)\u2248\\frac{M}{vol(V_{0})}\\int_{B_{1/2}(0)}\u2009J_{\u03a9^{HCP}}(c)dc.\n$$\n\nConsidering the same tuning shape \u03a9 and number of phases M for an $FCC$ lattice, which also has maximal in-radius 1/2, Equation 13 gives us the following expression for the $FCC$ lattice:\n\n$$\nJ_{(\u03a9,\u03c1,FCC)}(0)\u2248\\frac{M}{det(FCC)}\\int_{B_{1/2}(0)}\u2009J_{\u03a9^{FCC}}(c)dc.\n$$\n\nSince both fundamental domains have the same volumes, that is, $det(FCC)=vol(V_{0})$, and the integrands restricted to these balls are identical, that is, $J_{\u03a9^{FCC}}|_{B_{1/2}(0)}=J_{\u03a9^{HCP}}|_{B_{1/2}(0)}$, we can conclude that grid modules comprising $FCC$ or $HCP$-like symmetries have the same FI. We also numerically calculate the trace of the average FI for a module of $HCP$ grid cells and compare it to the $FCC$ case. For bump-like tuning curves \u03a9, both FIs are identical (Figure 5E) as expected from the radial symmetry of \u03a9. As a consequence, grid cells defined by either $HCP$ or $FCC$ symmetries provide optimal resolution.\n\nFigure 5D,E shows that the cyclic sequences (\u03b30, \u03b31) and (\u03b31, \u03b30, \u03b32) lead to $HCP$ and $FCC$, respectively. The centers \u03b30, \u03b31, and \u03b32 can also be used to make a final point on packings: there are infinitely many distinct packings with the same density $\\pi/(3\\sqrt{2})$. They can be constructed by inequivalent words, generated by finitewalks through the triangle with letters \u03b30, \u03b31, and \u03b32 (Hales, 2012), with each letter representing one of three orientations for the layers. For instance, (\u03b30, \u03b31, \u03b30, \u03b32) describes another packing with the same density. All packings share one feature: around each sphere there are exactly 12 spheres, arranged in either $HCP$ or $FCC$ lattice fashion (Hales, 2012). These packings can also be used to define a grid module, because the density of phases will be uniform in all cells. Furthermore, as in the calculation of the FI for the $HCP$ and $FCC$ (Equation 18\u201320) only local integration was necessary, such mixed packings will have equally large, uniform FI as the pure $HCP$ or $FCC$ packings.\n\nOnly in recent years has it been proven that no other arrangement has a higher packing ratio than the $FCC$, a problem known as Kepler's conjecture (Hales, 2005, 2012). Based on these results and our comparison of $trJ_{HCP}$ and $trJ_{FCC}$ (Figure 5E), we predict that 3D grid cells will correspond to one of these packings. While there are equally dense packings as the densest lattice in 3D, this is not the case in 2D. Thue proved that the hexagonal lattice is unique in being the densest amongst all planar packings (Thue, 1910); grid cells in 2D should possess a hexagonal lattice structure.\n\n## Discussion\n\nGrid cells are active when an animal is near one of any number of multiple locations that correspond to the vertices of a planar hexagonal lattice (Hafting et al., 2005). We generalize the notion of a grid cell to arbitrary dimensions, such that a grid cell's stochastic activity is modulated in a spatially periodic manner within $\u211d^{D}$. The periodicity is captured by the symmetry group of the underlying lattice $L$. A grid module consists of multiple cells with equal spatial period but different spatial phases. Using information theory, we then asked which lattice offers the highest spatial resolution.\n\nWe find that the resolution of a grid module is related to the packing ratio of $L$\u2014the lattice with highest packing ratio corresponds to the grid module with highest resolution. Well-known results from mathematics (Lagrange, 1773; Gauss, 1831; Conway and Sloane, 1992) then show that the hexagonal lattice is optimal for representing 2D, whereas the $FCC$ lattice is optimal for 3D. In 3D, but not in 2D, there are also non-lattice packings with the same resolution as the densest lattice (Thue, 1910; Hales, 2012). A common feature of these highly symmetric optimal solutions in 3D is that each grid field is surrounded by 12 other grid fields, arranged in either $FCC$ lattice or hexagonal close packing fashion. These solutions emerge from the set of all possible packings simply by maximizing the resolution, as we showed. However, resolution alone, as measured by the FI, does not distinguish between optimal packing solutions with different symmetries. Whether a realistic neuronal decoder, such as one based on population vector averages, favors one particular solution is an interesting open question.\n\nAs we have demonstrated, using the FI makes finding the optimal $L$ analytically tractable for all dimensions D and singles out densest lattices as optimal tuning shapes under assumptions that are restrictive, but are consistent with experimental measurements (Hafting et al., 2005; Brun et al., 2008; Giocomo et al., 2011). The assumption that the tuning curves must have finite support within the fundamental domain of the lattice corresponds to grid cells being silent outside of the firing field. Indeed, our numerical simulations also showed that for broader tuning curves, grid modules with quadratic lattices can provide more FI than the hexagonal lattice (Figure 3A, \u03b82 \u2248 0.6 and \u03b81 = 1/4) and that grid cells with a $C$ or $BCC$ lattice can provide more FI than the $FCC$ (Figure 4B, \u03b82 > 0.65 and \u03b81 = 1/4). For the planar case, Guanella and Verschure (2007) show numerically that triangular tessellations yield lower reconstruction errors under maximum-likelihood decoding than equivalently scaled square grids. Complementing this numerical analysis, Wei et al. (2013) provide a mathematical argument that hexagonal grids are optimal. To do so, they define the spatial resolution of a single module representing 2D space as the ratio R = (\u03bb/l)2, where \u03bb is the grid scale and l is the diameter of the circle in which one can determine the animal's location with certainty. For a fixed resolution R, the number of neurons required is N = d sin(\u03c6) R in their analysis, where d is the number of tuning curves covering each point in space. As \u03c6 \u2208 [\u03c0/3, \u03c0/2] for the lattice to have unitary length (Figure 3B), minimizing N for a fixed resolution R yields \u03c6 = \u03c0/3; thus, hexagonal lattices should be optimal. Furthermore, Wei et al. show that this result also holds when considering a Bayesian decoder (Wei et al., 2013). While Wei et al. minimize N for fixed l, we minimize l (in their notation). Like Wei et al., we assume that the tuning curve \u03a9 is isotropic (notwithstanding the fact that the lattice has preferred directions); unlike these authors, we show that there are conditions under which the firing fields should be arranged in a square lattice, and not hexagonally.\n\nUsing the FI gives a theoretical bound for the local resolution of any unbiased estimator (Lehmann, 1998). In particular, this local resolution does not take into account the ambiguity introduced by the periodic nature of the lattice. Our analysis is restricted to resolving the animal's position within the fundamental domain. For large neuron numbers N and expected peak spike counts fmax\u03c4 the resolution of asymptotically efficient decoders, like the maximum likelihood decoder, or the minimum mean square estimator, can indeed attain the resolution bound given by the FI (Seung and Sompolinsky, 1993; Bethge et al., 2002; Mathis et al., 2013). Thus, for these decoders and conditions the results hold. In contrast, for small neuron numbers and peak spike counts, the optimal codes could be different, just as it has been shown in the past that the optimal tuning width in these cases cannot be predicted by the FI (Bethge et al., 2002; Yaeli et al., 2010; Berens et al., 2011; Mathis et al., 2012).\n\nMaximizing the resolution explains the observed hexagonal patterns of grid cells in 2D, and predicts an $FCC$ lattice (or equivalent packing) for grid-cell tuning curves of mammals that can freely explore the 3D nature of their environment. Quantitatively, we demonstrated that these optimal populations provide 15.5% (2D) and about 41% (3D) more resolution than grid codes with quadratic or cubic grid cells for the same number of neurons. Although better, this might not seem substantial, at least not at the level of a single grid module. However, as medial entorhinal cortex harbors a nested grid code with at least 5 and potentially 10 or more modules (Stensola et al., 2012), this translates into a much larger gain of $1.155^{5\u2009\u2026\u200910}\u22482.1\u2009\u2026\u20094.2$ and $\\sqrt{2}^{5\u2009\u2026\u200910}\u22485.7\u2009\u2026\u200932$, respectively (Mathis et al., 2012a, 2012b). Because aligned grid-cell lattices with perfectly periodic tuning curves imply that the posterior is periodic too (compare Equation 8), information from different scales would have to be combined to yield an unambiguous read-out. Whether the nested scales are indeed read out in this way in the brain remains to be seen (Mathis et al., 2012a, 2012b; Wei et al., 2013). An alternative hypothesis, as first suggested by Hafting et al., is that the slight, but apparently persistent irregularities in the firing fields across space (Hafting et al., 2005; Krupic et al., 2015; Stensola et al., 2015) are being used. Future experiments should tackle this key question.\n\nWe considered perfectly periodic structures (lattices) and asked which ones provide most resolution. However, the first recordings of grid cells already showed that the fields are not exactly hexagonally arranged and that different fields might have different peak firing rates (Hafting et al., 2005). More recently, deviations from hexagonal symmetry have gained considerable attention (Derdikman et al., 2009; Krupic et al., 2013, 2015; Stensola et al., 2015). Such \u2018defects\u2019 modulate the periodicity of the tuning and consequently affect the symmetry of the likelihood function. This might imply that a potential decoder might be able to distinguish different unit cells even given a single module, which is not possible for perfectly periodic tuning curves (compare Equation 8). The local resolution, on the other hand, is robust to small, incoherent variations as the FI is a statistical average over many tuning curves with different spatial phases. At a given location, Equation 9 becomes\n\n$$\nJ_{\u03c2}(x)=\\sumi=1MJ_{\u03a9_{i}^{L}}(x\u2212c_{i})\u2248\\int_{x\u2212L}J_{\u03a9^{L}\u00af}(c)\u03c1(c)dc,\n$$\n\nwhere $\u03a9^{L}\u00af$ is the average of the variable tuning curves $\u03a9_{i}^{L}$. Small variations in the peak rate and grid fields will therefore average out, unless these variations are coherent across grid cells. Thus, resolution bounded by the FI is robust with respect to minor differences in peak firing rates and hexagonality. Similar arguments hold in higher dimensions.\n\nIn this study, we focused on optimizing grid modules for an isotropic and homogeneous space, which means that the resolution should be equal everywhere and in each direction of space. From a mathematical point of view, this is the most general setting, but it is certainly not the only imaginable scenario; future studies should shed light on other geometries. Indeed, the topology of natural habitats, such as burrows or caves, can be highly complicated. Higher resolution might be required at spatial locations of behavioral relevance. Neural representations of 3D space may also be composed of multiple 1D and 2D patches (Jeffery et al., 2013). However, the mere fact that these habitats involve complicated low-dimensional geometries does not imply that an animal cannot acquire a general map for the environment. Poincar\u00e9 already suggested that an isotropic and homogeneous representation for space can emerge out of non-Euclidean perceptual spaces, as one can move through physical space by learning the motion group (Poincar\u00e9, 1913). An isotropic and homogeneous representation of 3D space facilitates (mental) rotations in 3D and yields local coordinates that are independent of the environment's topology. On the other hand, the efficient-coding hypothesis (Barlow, 1959; Atick, 1992; Simoncelli and Olshausen, 2001) would argue that surface-bound animals might not need to dedicate their limited neuronal resources to acquiring a full representation of space, as flying animals might have to do, so that representations of 3D space will be species-specific (Las and Ulanovsky, 2014). Desert ants represent space only as a projection to flat space (Wohlgemuth et al., 2001; Grah et al., 2007). Likewise, experimental evidence suggests that rats do not encode 3D space in an isotropic manner (Hayman et al., 2011), but this might be a consequence of the specific anisotropic spatial navigation tasks these rats had to perform. Data from flying bats, on the other hand, demonstrate that, at least in this species, place cells represent 3D space in a uniform and nearly isotropic manner (Yartsev and Ulanovsky, 2013). The 3D, toroidal head-direction system in bats also suggests that they have access to the full motion group (Finkelstein et al., 2014). Our theoretical analysis assumes that the same is true for bat grid cells and that they have radially symmetric firing fields. From these assumptions, we showed the grid cells' firing fields should be arranged on an $FCC$ lattice or packed as $HCP$. Interestingly, such solutions also evolve dynamically in a self-organizing network model for 3D (Stella et al., 2013; Stella and Treves, 2015) that extends a previous 2D system which exhibits hexagonal grid patterns (Kropff and Treves, 2008). Experimentally, the effect of the arena's geometry on grid cells' tuning and anchoring has also been a question of great interest (Derdikman et al., 2009; Krupic et al., 2013, 2015; Stensola et al., 2015). First, let us note that even though the environment might be finite, the grid-cell representation need not be constrained by it. In particular, the firing fields are not required to be contained within the confines of the four walls of a box\u2014experimental observations show that walls can intersect the firing fields (so that one measures only a part of the firing field). On the other hand, the borders clearly distort the hexagonal arrangement of nearby firing fields in 2D environments (Stensola et al., 2015), whereas central fields are more perfectly arranged. Deviations are also observed when only a few fields are present in the arena (Krupic et al., 2015). One might expect similar deviations in 3D, such as for bats flying in a confined space. Our mathematical results rely on symmetry arguments that do not cover non-periodic tuning curves. Given that the resolution is related to the packing ratio of a lattice, extensions of the theory to general packings might allow one to draw on the rich field of optimal finite packings (B\u00f6r\u00f6czky, 2004; Toth et al., 2004), thereby providing new hypotheses to test.\n\nMany spatially modulated cells in rat medial entorhinal cortex have hexagonal tuning curves, but some have firing fields that are spatially periodic bands (Krupic et al., 2012). The orientation of these bands tends to coincide with one of the lattice vectors of the grid cells (as the lattices for different grid cells share a common orientation), so band cells might be a layout \u2018defect\u2019. In this context, we should point out that the lattice solutions are not globally optimal. For instance, in 2D, a higher resolution can result from two systems of nested 1D grid codes, which are aligned to the x and y axis, respectively, than from a lattice solution with the same number of neurons. The 1D cells would behave like band cells (Krupic et al., 2012). Similar counterexamples can be given in higher dimensions too. The anisotropy of the spatial tuning in grid cells of climbing rats when encoding 3D space (Hayman et al., 2011) might capitalize on this gain (Jeffery et al., 2013). Radial symmetry of the tuning curve may also be non-optimal. For example, two sets of elliptically tuned 2D unimodal cells, with orthogonal short axes, typically outperform unimodal cells with radially symmetric tuning curves (Wilke and Eurich, 2002). Why experimentally observed place fields and other tuning curves seem to be isotropically tuned is an open question (O'Keefe and Dostrovsky, 1971; Yartsev and Ulanovsky, 2013).\n\nGrid cells which represent the position of an animal (Hafting et al., 2005) have been discovered only recently. By comparison, in technical systems, it has been known since the 1950s that the optimal quantizers for 2D signals rely on hexagonal lattices (Gray and Neuhoff, 1998). In this context, we note that lattice codes are also ideally suited to cover spaces that involve sensory or cognitive variables other than location. In higher-dimensional feature spaces, the potential gain could be enormous. For instance, the optimal eight-dimensional (8D) lattice is about 16 times denser than the orthogonal 8D lattice (Conway and Sloane, 1992) and would, therefore, dramatically increase the resolution of the corresponding population code. Advances in experimental techniques, which allow one to simultaneously record from large numbers of neurons (Ahrens et al., 2013; Deisseroth and Schnitzer, 2013) and to automate stimulus delivery for dense parametric mapping (Brincat and Connor, 2004), now pave the way to search for such representations in cortex. For instance, by parameterizing 19 metric features of cartoon faces, such as hair length, iris size, or eye size, Freiwald et al. showed that face-selective cells are broadly tuned to multiple feature dimensions (Freiwald et al., 2009). Especially in higher cortical areas, such joint feature spaces should be the norm rather than the exception (Rigotti et al., 2013). While no evidence for lattice codes was found in the specific case of face-selective cells, data sets like this one will be the test-bed for checking the hypothesis that other nested grid-like neural representations exist in cortex.\n\n## Materials and methods\n\nWe study population codes of neurons encoding the D-dimensional space by considering the FI J as a measure for their resolution. The population coding model, the construction to periodify a tuning shape \u03a9 onto a lattice $L$ with center density \u03c1, as well as the definition of the FI, are given in the main text. In this section we give further background on the methods.\n\n### Scaling of grid cells and the effect on J\u03c2\n\nHow is the resolution of a grid module affected by dilations? Let us assume we have a grid module with signature $\u03c2=(\u03a9,\u03c1,L)$, as defined in the main text, and that \u03bb > 0 is a scaling factor. Then $\\lambda\u03c2:=(\u03a9(\\lambdar),\u03c1(\\lambdax),\\lambda\u22c5L)$ is a grid module too, and the corresponding tuning curve $(\u03a9\u2218\\lambda)_{\\lambdaL}$ satisfies:\n\n$$\n(\u03a9\u2218\\lambda)_{\\lambdaL}(x)=\u03a9_{L}(\\lambdax).\n$$\n\nThus, the tuning curve $(\u03a9\u2218\\lambda)_{\\lambdaL}$ is a scaled version of $\u03a9_{L}$. What is the relation between the FI of the initial grid module and the rescaled version? Let us fix the notation: $\u03c1(c)=\\sum^{\u200b}_{i}^{N}\\delta(c\u2212c_{i})$. From the definition of the population information (Equation 9), we calculate\n\n$$\nJ_{\\lambda\u03c2}(0)=\\sumi=1MJ_{(\u03a9\u2218\\lambda)_{\\lambdaL}}(\\lambdac_{i})=\\sumi=1MJ_{\u03a9_{L}}(c_{i})\u22c5\\frac{1}{\\lambda^{2}}=\\frac{1}{\\lambda^{2}}J_{\u03c2}(0),\n$$\n\nwhere in the second step we used the re-parameterization formula of the FI (Lehmann, 1998). This shows that the FI of a grid module scaled by a factor \u03bb is the same as the FI of the initial grid module times 1/\u03bb2.\n\n### Population FI for Poisson noise with radially symmetric tuning\n\nIn the \u2018Results\u2019 section, we give a concrete example for Poisson noise and the bump function. Here we give the necessary background. Equation 13 states that\n\n$$\nJ_{\u03c2}(0)\u2248\\frac{M}{det(L)}\\int_{B_{R}(0)}J_{\u03a9^{L}}(c)dc.\n$$\n\nOne would like to know $\\int_{B_{R}(0)}\u2009J_{\u03a9^{L}}(c)dc$ for various tuning shapes \u03a9 with supp(\u03a9) \u2264 R.\n\nConsider x \u2208 L and \u03b1 \u2208 {1,\u2026,D}. Then:\n\n$$\n\\frac{\\partiallnP(K|x)}{\\partialx_{\\alpha}}=\\frac{\\partiallnP(K,s)}{\\partials}|_{s=\u03a9^{L}(x)}\u22c5\u03a9\u2032(\u2225x\u2225^{2})\u2009f_{max}\\tau\u20092x_{\\alpha}.\n$$\n\nTogether with the definition of the FI Equation 13, this yields\n\n$$\nJ_{\u03a9^{L}}(x)_{\\alpha\\beta}=4x_{\\alpha}x_{\\beta}f_{max}^{2}\\tau^{2}\u03a9\u2032(\u2225x\u2225^{2})^{2}.\u2009\\sumK(\\frac{\\partial}{\\partials}lnP(K,s)|_{s=\u03a9^{L}(x)})^{2}\u22c5P(K,\u03a9^{L}(x))\ufe38=:N(\u2225x\u2225^{2}).\n$$\n\nNote that for \u03b1 \u2260 \u03b2 this function is odd in x. Thus, when averaging these individual contributions over a symmetric fundamental domain L: $\\int_{L}\u2009J_{\u03a9^{L}}(c)_{\\alpha\\beta}dc=0$ for \u03b1 \u2260 \u03b2. Thus, the diagonal entries are all identical. This also holds for any fundamental domain L when BR(0) \u2282 L, because BR(0) is symmetric.\n\nFor Poisson spiking $N(\u2225c\u2225^{2})$ has a particularly simple form, namely $N(\u2225c\u2225^{2})=1/(f_{max}\\tau\u2009\u03a9(\u2225c\u2225^{2}))$. The trace of the FI matrix becomes\n\n$$\ntrJ_{\u03c2}(0)=4f_{max}\\tau\\int_{B_{R}(0)}\u2225c\u2225^{2}\\frac{\u03a9\u2032(\u2225c\u2225^{2})^{2}}{\u03a9(\u2225c\u2225^{2})}\ufe38=:F(c)dc.\n$$\n\nThus, the trace only depends on the tuning shape \u03a9 and its first derivative. In the main text, we use the following specific tuning shape:\n\n$$\n\u03a9(r)={exp(\\frac{\\theta_{1}}{\\theta_{2}^{2}}\u2212\\frac{\\theta_{1}}{\\theta_{2}^{2}\u2212r^{2}})if\u2009|r|\u2009<\\theta_{2}0otherwise.\n$$\n\nThis type of function is often called \u2018bump function\u2019 in topology, as it has a compact support but is everywhere smooth (i.e., infinitely times continuously differentiable). In particular, the support of this function is [0, \u03b82), and is therefore controlled by the parameter \u03b82. The other parameter \u03b81 controls the slope of the bump's flanks (see upper panels of Figure 3\u2014figure supplement 1).\n\nFor the bump-function \u03a9 and radius $r=\\sqrt{\\sum^{\u200b}_{\\alpha}^{D}x_{\\alpha}^{2}}$ the integrand for the FI is given by\n\n$$\nF(r)={\\frac{4\\theta_{1}^{2}r^{2}}{(\\theta_{2}^{2}\u2212r^{2})^{4}}\u2009\u2009exp\u2009\u2009(\\frac{\\theta_{1}}{\\theta_{2}^{2}}\u2212\\frac{\\theta_{1}}{\\theta_{2}^{2}\u2212r^{2}})if\u2009|r|\u2009<\\theta_{2}0otherwise.\n$$\n\nThe lower panels of Figure 3\u2014figure supplement 1 depict the integrand of Equation 25, defined as $F(r)$. This function shows how much FI a cell at a particular distance contribute to the location 0. By integrating the FI over the fundamental domain L for a lattice $L$ one gets J\u03c2(0), that is, the average FI contributions from all neurons (as shown in Figures 3, 4, 5E).\n",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "b016a7c4-6192-42ad-a7c8-4c6f75e3122e",
+      "submission_id": "4c09b6d8-5373-4792-98cb-58456aa1036a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark S Goldman, University of California at Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05979.010](https://doi.org/10.7554/eLife.05979.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cProbable nature of higher-dimensional symmetries underlying mammalian grid-cell activity patterns\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor), Mark Goldman (guest Reviewing editor), and two reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn the interesting manuscript \u201cProbable nature of higher-dimensional symmetries underlying mammalian grid-cell activity patterns\u201d, Mathis et al. provide the first principled and theoretically-rooted predictions for how the activity of grid cells might look like in 3D and, more generally, provide interesting predictions on the possible nature of other neural codes for higher-dimensional stimulus spaces, such as e.g. in the prefrontal cortex. The authors do this by considering the Fisher information in a neural code consisting of firing fields that are arranged in a periodic structure in multidimensional space. Under several mathematical idealizations and assumptions, it is argued that the best arrangement for the firing fields is one that leads to maximal packing of the periodic firing fields. These predictions can be tested experimentally in grid-cell recordings in flying bats.\n\nThe demonstration that FCC packing of grids is an optimal arrangement of firing fields from the coding perspective is an elegant, intriguing, and valuable result that should be of interest to many neuroscientists, biologists, and physicists. However, despite suggestions to the contrary, the work does not provide a formal argument for optimality of other close packing arrangements (such as HCP and the non-periodic arrangements) and it is not obvious that such arrangements are equivalent from the Fisher information perspective. Furthermore, the work bears close resemblance to unpublished (but cited by the authors and publically posted) work by Balasubramanian et al.\n\n1) The main mathematical derivations are correct and the argument in favor of maximal packing for FCC grids is simple and elegant. However, the work does not provide a formal argument for optimality of other close packing arrangements (such as HCP and the non-periodic arrangements) and it is not clear that all the maximal packing arrangements are equivalent in terms of the Fisher information. The derivation leading to Equation 12 is precise and clear for periodic arrangements that contain one firing field per unit cell (such as the hexagonal packing in 2 dimensions or FCC), but there is a missing link between this derivation and statements about maximal close packing in more general arrangements. This means that the statements on the periodic HCP lattices, as well as the non-periodic hybrids between FCC and HCP, are not clearly justified. This issue, and specifically whether HCP is as good as FCC (or not), must be addressed before the manuscript can be considered for publication.\n\n2) The authors should provide more discussion of the similarities and differences of the present work from that in 2-D lattices by Balasubramanian's group. The reply to reviewers should include specification of how this work provides a significant conceptual advance.\n\n3) HCP and FCC are optimal packings for infinite 3D spaces, but, to our knowledge, there is no mathematical proof for what is the optimal sphere packing for a finite-sized 3D space, such as typical laboratory arenas and rooms. The authors should discuss this \u201cfinite size problem\u201d, and in particular, what would happen to the blobs of the grid along the walls of the arena/room. For example, can the notion of maximal-FI/optimal-packing explain the distortions of 2D grids that were recently discovered by O'Keefe's group (in a trapezoid arena) and by the Mosers group (shearing of the grids along the wall)? If so, what would be the implications for 3D grid cell activity near the walls? In a similar vein, could there be a scenario (i.e. a certain ratio of room size to sphere radius) where, for a finite-sized room, an optimal packing will in fact yield elongated columnar hexagons (or elongated \u201cstrings of spheres\u201d), as was suggested by the study in rats from the Jeffery group (Hayman et al. 2011)?\n\n4) The manuscript contains some inconsistencies and confusing statements in the discussion of the FCC and HCP lattices. The classification of lattices in 3 dimensions is well established in some areas of mathematics, physics, and engineering, so it is important to be precise and to conform with conventional nomenclature. The FCC arrangement is referred to in the manuscript as the only optimal lattice packing in 3 dimensions, and the HCP arrangement is referred to as a non-lattice arrangement because it cannot be spanned by three vectors with integer coefficients. Both of these statements disagree with the conventional classification of lattices: the FCC as well as the HCP arrangements are perfectly periodic structures.\n\n5) The idea that the function of grid cells is to produce a nested code of position is a hypothesis, not only in three dimensional spaces but also in two dimensions, since the role of grid cells in spatial coding is far from being established experimentally, and even the structure of the grid cell code in rodents has been characterized only in very simple and small environments. This does not diminish the relevance of the theory, but we would prefer to see a larger degree of caution in the discussion on the biological reality.\n\nMinor comments:\n\n1) Due to the existence of global ambiguities, the ability to discriminate between very close locations (quantified by the Fisher information) might not be sufficient to achieve high resolution, as addressed in previous works by the same authors as well as other authors. It is not clear to me that local optimization of the Fisher Information is optimal from this broader perspective, even if this seems reasonable. I suggest the authors clarify or at least acknowledge this point.\n\n2) In spaces of dimension 3 and higher it has been argued by Zhang and Sejnowsky (1998), and by Pouget, Deneve, and Ducom (1999) that it is beneficial to have wide tuning curves in order to maximize the Fisher Information. This brings into question the validity of the assumption that firing fields will have compact support in an optimal code in high dimensional spaces. In general, I thought that the assumption of compact support is perfectly legitimate (and conforms with what we know about grid cells in rodents and crawling bats), but it should be emphasized more clearly that the results rely on this assumption.\n\n3) The diagonal elements of the Fisher information matrix are not the appropriate quantity to consider as a tight bound on the resolution. Instead, one has to consider the diagonal elements of the inverse Fisher information matrix. This is a minor issue because the inverse information matrix scales with the volume of the unit cell in agreement with the conclusions of the derivation. Nevertheless I suggest the authors address this comment by modifying the text in the subsection headed \u201cFisher information of a grid module with lattice L\u201d below Equation 12.\n\n4) The statement below Equation 4 on isotropy is confusing because the grid cell representation is not truly isotropic (there are obviously special directions in space).\n\n5) We failed to identify in the manuscript a powerful link with cryptography or to the role of maximal close packing in coding theory (which appears there in a different context). Therefore, in my opinion, these declarations in the Introduction do not serve a meaningful or useful purpose.\n",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b307bbc8-ff4d-485d-b3d3-d0c8c7c37aa4",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C1",
+      "claim": "Lattices provide solutions for optimal packings, efficient resource distribution, and cryptographic protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "These arrangements provide solutions for optimal packings, efficient resource distribution, and cryptographic protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about lattices in the abstract without specific experimental data from this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "459bf7fe-2268-4f81-b6da-ea4f2d13465f",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C2",
+      "claim": "For mammals navigating on a surface, hexagonal activity patterns of grid cells are optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "For mammals navigating on a surface, we show that the hexagonal activity patterns of grid cells are optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical result derived in the manuscript using Fisher information analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "67d6dbb9-e31b-4a7b-a9a5-868a29b3a0e0",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C3",
+      "claim": "For species that move freely in three dimensions, a face-centered cubic lattice is best for grid cell activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For species that move freely in three dimensions, a face-centered cubic lattice is best.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the mathematical analysis of optimal lattices in 3D.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "a3c7dbe7-3e61-43f8-9464-dca0c583810c",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C4",
+      "claim": "The prediction about face-centered cubic lattices could be tested experimentally in flying bats, arboreal monkeys, or marine mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction could be tested experimentally in flying bats, arboreal monkeys, or marine mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future experimental tests.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "a583d030-78c4-4942-a8a3-0cbd1b83bde8",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C5",
+      "claim": "The brain encodes higher-dimensional sensory or cognitive variables with populations of grid-cell-like neurons whose activity patterns exhibit lattice structures at multiple, nested scales.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, our theory suggests that the brain encodes higher-dimensional sensory or cognitive variables with populations of grid-cell-like neurons whose activity patterns exhibit lattice structures at multiple, nested scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical hypothesis based on the mathematical results presented.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "2ba76ea3-4448-4167-863c-0709ffc0b944",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C6",
+      "claim": "Place cells discharge when an animal is near one particular location in its environment.",
+      "claim_type": "EXPLICIT",
+      "source": "'Place cells' discharge when an animal is near one particular location in its environment (O'Keefe and Dostrovsky, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "3ecbeec4-4bd8-40fc-b3f6-a1547786ff65",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C7",
+      "claim": "Grid cells are active at multiple locations that span an imaginary hexagonal lattice covering the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "'Grid cells' are active at multiple locations that span an imaginary hexagonal lattice covering the environment (Hafting et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0313adaf-5386-4a47-97b5-9a486e6869a9",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C8",
+      "claim": "Grid cells have been found in rats, mice, crawling bats, and human beings.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been found in rats, mice, crawling bats, and human beings (Hafting et al., 2005; Fyhn et al., 2008; Yartsev et al., 2011; Jacobs et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "b976b8d1-4340-44a2-91d3-da5e0e841be1",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C9",
+      "claim": "Grid cells are believed to build a metric for space.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are believed to build a metric for space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general belief in the field without specific citation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "fc46c50c-77bd-4baf-91a1-6a50a840ca13",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C10",
+      "claim": "Theoretical and numerical studies suggest that the hexagonal lattice structure is best suited for representing two-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical and numerical studies suggest that the hexagonal lattice structure is best suited for representing such a two-dimensional (2D) space (Guanella and Verschure, 2007; Mathis, 2012; Wei et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical and numerical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "5fdc4853-593c-4c8c-b748-e8cda9423ffe",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C11",
+      "claim": "The neuronal representation of 3D space in animals may consist of a mosaic of lower-dimensional patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Their neuronal representation of 3D space may consist of a mosaic of lower-dimensional patches (Jeffery et al., 2013), as evidenced by recordings from climbing rats (Hayman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "e0dbbb4f-15c7-46be-bee4-2a69803a3ffd",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C12",
+      "claim": "Place cells in flying bats represent 3D space in a uniform and nearly isotropic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Place cells in flying bats, on the other hand, represent 3D space in a uniform and nearly isotropic manner (Yartsev and Ulanovsky, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "cc0e066d-46ee-415e-8ab3-b8d5c624cf0d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C13",
+      "claim": "The resolution of a grid module can be mapped onto the problem of packing non-overlapping spheres.",
+      "claim_type": "EXPLICIT",
+      "source": "we show how resolving the population's FI can be mapped onto the problem of packing non-overlapping spheres, which also plays an important role in other coding problems and cryptography (Shannon, 1948; Conway and Sloane, 1992; Gray and Neuhoff, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived in the manuscript, with citations to related work in other fields.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "24fb6333-17e2-46a0-95f6-812b8dc122a8",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C14",
+      "claim": "The optimal lattices are the ones with the highest packing ratio\u2014the densest lattices represent space most accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal lattices are thus the ones with the highest packing ratio\u2014the densest lattices represent space most accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the mathematical analysis in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "1d73d4da-74fd-400b-8df2-7b51e108387e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C15",
+      "claim": "Hexagonal lattices are optimal for representing 2D space.",
+      "claim_type": "EXPLICIT",
+      "source": "This remarkably simple and straightforward answer implies that hexagonal lattices are optimal for representing 2D space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0123e2a7-933c-4c2e-8a35-01bd699d158d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C16",
+      "claim": "In 3D, grid cells will have firing fields positioned on a face-centered-cubic lattice or its equally dense non-lattice variant\u2014a hexagonal close packing structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In 3D, our theory makes the experimentally testable prediction that grid cells will have firing fields positioned on a face-centered-cubic lattice or its equally dense non-lattice variant\u2014a hexagonal close packing structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "ed1820ae-d9f8-4179-84c6-6712849f1ecf",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C17",
+      "claim": "Unimodal tuning curves with a single preferred stimulus have been extensively studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Unimodal tuning curves with a single preferred stimulus, which are characteristic for place cells or orientation-selective neurons in visual cortex, have been extensively studied (Paradiso, 1988; Seung and Sompolinsky, 1993; Pouget et al., 1999; Zhang and Sejnowski, 1999; Bethge et al., 2002; Eurich and Wilke, 2000; Brown and B\u00e4cker, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "5d6d1a05-3aff-401b-b112-716e0235a792",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C18",
+      "claim": "Multimodal tuning curves that are periodic along orthogonal stimulus axes and generate repeating hypercubic activation patterns have been studied.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also true for multimodal tuning curves that are periodic along orthogonal stimulus axes and generate repeating hypercubic (or hyper-rectangular) activation patterns (Montemurro and Panzeri, 2006; Fiete et al., 2008; Mathis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f67b9bcb-27b1-4102-8ed7-df1615b700b7",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C19",
+      "claim": "Optimal lattices will be found in the representation of other high-dimensional sensory or cognitive spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results extend these studies by taking more general stimulus symmetries into account and lead us to hypothesize that optimal lattices not only underlie the neural representation of physical space, but will also be found in the representation of other high-dimensional sensory or cognitive spaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the theoretical results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "3e277959-8089-4ab8-bcaf-0b70c939b060",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C20",
+      "claim": "The trial-to-trial variability of any two neurons is assumed to be independent of each other in the population coding model.",
+      "claim_type": "EXPLICIT",
+      "source": "While two neurons can have correlated tuning curves \u03a9i(x), we assume that the trial-to-trial variability of any two neurons is independent of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "b5fc2786-03dc-4f55-99c3-87f674f7de32",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C22",
+      "claim": "The inverse of the Fisher information matrix bounds the covariance matrix of the estimated coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "bounds the covariance matrix \u2211(x^|x) of the estimated coordinates x = (x1,\u2026,xD)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result known as the Cram\u00e9r-Rao bound.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "9904d4bd-110f-4067-8d66-1c0861872b2b",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C23",
+      "claim": "The Cram\u00e9r-Rao bound states that the resolution of any unbiased estimator cannot be greater than the inverse of the Fisher information.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of any unbiased estimator of the encoded stimulus can achieve cannot be greater than J(x)\u22121. This is known as the Cram\u00e9r-Rao bound (Lehmann, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known result from statistical theory, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "48ee673d-c9b7-43ba-9270-057cec637fb2",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C24",
+      "claim": "Isotropy does not entail that the global spatial tuning of an individual neuron has to be radially symmetric, but merely that the errors are locally distributed according to a radially symmetric distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Isotropy does not entail that the (global) spatial tuning of an individual neuron, \u03a9i(x), has to be radially symmetric, but merely that the errors are (locally) distributed according to a radially symmetric distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mathematical concept of isotropy in the context of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "5d764ac4-ab78-40df-803b-365eb2976582",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C25",
+      "claim": "The tuning curve of a grid cell with hexagonal tuning is not radially symmetric around the center of a field, but the posterior is radially symmetric around any given location for a module of such grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the tuning curve of a grid cell with hexagonal tuning is not radially symmetric around the center of a field (it has three axes), but the posterior is radially symmetric around any given location for a module of such grid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of grid cell modules.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "989ed488-4f62-4a99-aae0-415080a815b1",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C26",
+      "claim": "Homogeneity requires that the Fisher information be asymptotically independent of position as the number of neurons becomes large.",
+      "claim_type": "EXPLICIT",
+      "source": "Homogeneity requires that the FI J(x) be asymptotically independent of x (as the number of neurons N becomes large)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of homogeneity in the context of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "626a0066-759e-489a-9c5e-a0c5cd98fa9d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C27",
+      "claim": "Spatial isotropy implies that all diagonal entries in the Fisher information matrix are equal.",
+      "claim_type": "EXPLICIT",
+      "source": "spatial isotropy implies that all diagonal entries in the FI matrix J(x) are equal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical consequence of the definition of isotropy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "868475e9-e51f-4ac1-ab1b-30a328b1ee7f",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C28",
+      "claim": "The Fisher information of the rescaled module is \u03bb\u22122 times the Fisher information of the original module.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as we show in the 'Material and methods' section, the FI of the rescaled module is \u03bb\u22122 J\u03c2(0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result derived in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "327d59f5-ea29-4807-800d-0db6b56f69f0",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C29",
+      "claim": "The local resolution of an unbiased estimator could rapidly improve with a finer grid size.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cram\u00e9r-Rao bound (Equation 4) implies that the local resolution of an unbiased estimator could thus rapidly improve with a finer grid size, that is, decreasing \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the Cram\u00e9r-Rao bound and the scaling properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "ba0b728f-83b4-40e7-917c-2629f0ba6ce3",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C30",
+      "claim": "For any grid module, the posterior probability is periodic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for any grid module \u03c2=(\u03a9,\u03c1,L) the posterior probability, that is, the likelihood of possible positions given a particular spike count vector K = (k1,\u2026,kN), is also periodic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from Bayes rule and the periodic structure of grid cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "4f52e4ef-43bc-48db-ad39-884b65a5793d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C31",
+      "claim": "The multiple firing fields of a grid cell cannot be distinguished by a decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the multiple firing fields of a grid cell cannot be distinguished by a decoder, so that for \u03bb \u2192 0 the global resolution approaches the a priori uncertainty (Mathis et al., 2012a, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the periodicity of the posterior, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "9c3ad142-9421-444b-aa50-58ef0e81670e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C32",
+      "claim": "By combining multiple grid modules with different spatial periods one can overcome the fundamental limitation caused by periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining multiple grid modules with different spatial periods one can overcome this fundamental limitation, counteracting the ambiguity caused by periodicity and still preserving the highest resolution at the smallest scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how nested grid modules can resolve ambiguity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "9d6ba82e-06f8-4a71-9106-5b6de774e404",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C33",
+      "claim": "The Fisher information for an individual module at one scale determines the optimal length scale of the next module.",
+      "claim_type": "EXPLICIT",
+      "source": "The FI for an individual module at one scale determines the optimal length scale of the next module (Mathis et al., 2012a, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "27d58d61-c0f3-42dd-b6ab-5e030ca7f11a",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C34",
+      "claim": "The larger the Fisher information per module, the greater the refinement at subsequent scales can be.",
+      "claim_type": "EXPLICIT",
+      "source": "The larger the FI per module, the greater the refinement at subsequent scales can be (Mathis et al., 2012a, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0cec7b58-49a4-4bba-b636-24099fc793b2",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C41",
+      "claim": "The resolution of the grid module is inversely proportional to the volumes of their fundamental domains.",
+      "claim_type": "EXPLICIT",
+      "source": "which signifies that the resolution of the grid module is inversely proportional to the volumes of their fundamental domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mathematical result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "a07e1f45-c9c0-4c47-b61b-c57c30ccd551",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C42",
+      "claim": "The periodic structure has a direct impact on the resolution of the grid module.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodic structure L thus has a direct impact on the resolution of the grid module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c29e023c-3cfa-47e8-97a8-386319f14056",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C43",
+      "claim": "Finding the maximum Fisher information translates directly into finding the lattice with the highest packing ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "This result implies that finding the maximum FI translates directly into finding the lattice with the highest packing ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical conclusion of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "6923daf6-90d5-4bfa-932a-a4a67c388325",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C44",
+      "claim": "The sphere packing problem has wide-ranging applications from crystallography to information theory.",
+      "claim_type": "EXPLICIT",
+      "source": "The sphere packing problem is of general interest in mathematics (Conway and Sloane, 1992) and has wide-ranging applications from crystallography to information theory (Barlow, 1883; Shannon, 1948; Whittaker, 1981; Gray and Neuhoff, 1998; Gruber, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "31446a76-d766-4c99-940a-67cc1420c425",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C45",
+      "claim": "Among grid modules with different lattices, the lattice with the highest packing ratio leads to the highest spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We now come to the main finding of this study: among grid modules with different lattices, the lattice with the highest packing ratio leads to the highest spatial resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical result of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "36273404-8e24-464b-9a12-15efced80a7e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C46",
+      "claim": "The condition that the support of the tuning shape is contained within the fundamental domain is consistent with experimental observations that grid cells tend to stop firing between grid fields.",
+      "claim_type": "EXPLICIT",
+      "source": "The condition supp(\u03a9) = [0, R] with BR(0) \u2282 L, although restrictive, is consistent with experimental observations that grid cells tend to stop firing between grid fields and that the typical ratio between field radius and spatial period is well below 1/2 (Hafting et al., 2005; Brun et al., 2008; Giocomo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "a2f4bd47-faca-4fbb-a430-346d4cff7a16",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C47",
+      "claim": "The optimal tuning width for Gaussian tuning curves increases with the number of spatial dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The same observation will hold in higher dimensions (D > 2), consistent with the finding that the optimal tuning width for Gaussian tuning curves increases with the number of spatial dimensions, whether space is infinite (Zhang and Sejnowski, 1999) or finite (Brown and B\u00e4cker, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "768f079f-6989-468c-a83d-ef693ae45887",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C48",
+      "claim": "When the radius of the support of the tuning curve exceeds the in-radius, the optimal lattice can be different from the densest one.",
+      "claim_type": "EXPLICIT",
+      "source": "When the radius R of the support of the tuning curve exceeds the in-radius, the optimal lattice can be different from the densest one as we will show numerically for specific tuning curves and Poisson noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated numerically in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "02d643a4-f546-44bb-805e-3c9db5bcd579",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C49",
+      "claim": "With well separated fields, the densest lattice provides the highest resolution for any tuning shape.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with well separated fields, like those observed experimentally, the densest lattice provides the highest resolution for any tuning shape \u03a9, as we just demonstrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f2bd7a46-9ae5-4984-af2f-790458b3de96",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C51",
+      "claim": "The hexagonal lattice is the optimal arrangement for grid-cell firing fields on the plane.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Equation 14, the hexagonal lattice is the optimal arrangement for grid-cell firing fields on the plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "bdfbb8bc-a481-4417-a948-54a64a9e2b1f",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C52",
+      "claim": "The hexagonal lattice outperforms the quadratic lattice by about 15.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it outperforms the quadratic lattice, which has a density of \u03c0/4, by about 15.5% (see Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the packing ratios and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "ab6b5f47-f6aa-4397-b82a-c343bc3283b8",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C53",
+      "claim": "The Fisher information of a grid module periodified along a hexagonal lattice outperforms one periodified along a square lattice by about 15.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the FI of a grid module periodified along a hexagonal lattice outperforms one periodified along a square lattice by the same factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the relationship between packing ratio and Fisher information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "2a4a4b92-fd03-48a2-9e85-c3f8d419ccaa",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C56",
+      "claim": "As the support radius becomes larger than 1/2, the Fisher information of the hexagonal lattice is no longer necessarily greater than that of the square lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "As the support radius becomes larger, the FI of the hexagonal lattice is no longer necessarily greater than that of the square lattice; the specific interplay of tuning curve and boundary shape determines which lattice is better",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the numerical results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d5b7c886-c7ea-40e9-b52b-8c345705f55c",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C59",
+      "claim": "The Fisher information falls like 1/sin(\u03c6) so that the maximum is achieved for the hexagonal lattice with \u03c0/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, according to Equation 13, the FI falls like 1/det L=1/sin(\u03c6) so that the maximum is achieved for the hexagonal lattice with \u03c0/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical relationship and shown in Figure 3B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "122b4ff6-ed5d-4382-8a61-6d693245a7f3",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C61",
+      "claim": "Because of fluctuations in the Fisher information, the square lattice is better than the hexagonal lattice in about 20% of cases for populations of 200 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of fluctuations in the FI, however, the square lattice is better than the hexagonal lattice in about 20% of the cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the numerical simulations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c1365070-eb7c-4224-bd47-83b2e8c538cf",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C62",
+      "claim": "For radially symmetric tuning curves the hexagonal lattice provides the best resolution among all planar lattices.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory implies that for radially symmetric tuning curves the hexagonal lattice provides the best resolution among all planar lattices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "aa44ca13-141b-408b-b7b8-d3c937193ea1",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C63",
+      "claim": "Wei et al. demonstrated that a population of nested grid cells with hexagonal tuning is optimal for winner-take-all and Bayesian maximum likelihood decoders.",
+      "claim_type": "EXPLICIT",
+      "source": "Wei et al. considered a notion of resolution defined as the range of the population code per smallest distinguishable scale and then demonstrated that a population of nested grid cells with hexagonal tuning is optimal for a winner-take-all and Bayesian maximum likelihood decoders (Wei et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "bdf75c9d-a44a-421a-a516-1bc874b4edca",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C64",
+      "claim": "Guanella and Verschure numerically compared hexagonal to other regular lattices based on maximum likelihood decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Guanella and Verschure numerically compared hexagonal to other regular lattices based on maximum likelihood decoding (Guanella and Verschure, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "361710f9-1c0a-48e3-bb14-00b374ca33b4",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C66",
+      "claim": "The optimal 3D grid-cell tuning is given by the face-centered cubic lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the optimal 3D grid-cell tuning is given by the FCC lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical result about packing ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d00df0d1-7165-4ff8-a3c4-9397d557fc5a",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C67",
+      "claim": "As long as the support \u03b82 of the tuning shape is smaller than 1/2, the trace of the population Fisher information of the face-centered cubic lattice outperforms both the body-centered cubic and cubic lattices.",
+      "claim_type": "EXPLICIT",
+      "source": "As long as the support \u03b82 of \u03a9 is smaller than 1/2, the support is a subset of the fundamental domain of all three lattices. Hence, the trace of the population FI of the FCC outperforms both the BCC and C lattices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4B and follows from the theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f34d7152-893c-4210-a734-c071feb20d32",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C68",
+      "claim": "Face-centered cubic grid cells provide roughly 41% more resolution for the same number of neurons than cubic grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As the ratios of the trace of the population FI scales with the packing ratio (Figure 4C), FCC-grid cells provide roughly 41% more resolution for the same number of neurons than do C-grid cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the packing ratios and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d5d6d92a-1ad9-4b37-98ed-d05f7d688278",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C69",
+      "claim": "Face-centered cubic grid cells provide 8.8% more Fisher information than body-centered cubic grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, FCC-grid cells provide 8.8% more FI than BCC-grid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the packing ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c9720f6a-14f2-42ab-97ad-b670d1bbcf0d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C71",
+      "claim": "Despite the small module size of 200 neurons, face-centered cubic lattice outperformed the cubic lattice in all simulated realizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the small module size, FCC outperformed the cubic lattice C in all simulated realizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4E through numerical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c533502a-f64d-49c5-9c2c-300829c6e67f",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C72",
+      "claim": "The face-centered cubic lattice is generated by stacking hexagonal layers in a specific sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This stacking of layers is shown in Figure 5C and generates the FCC lattice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "b65f2ca8-cec7-497d-bc99-ca435ce61111",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C73",
+      "claim": "Hexagonal close packing is as tightly packed as the face-centered cubic lattice but cannot be described by three vectors and thus does not define a lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet as this arrangement, called hexagonal close packing (HCP), cannot be described by three vectors, it does not define a lattice (see Figure 5D), even though it is as tightly packed as the FCC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explained in the text and illustrated in Figure 5D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d23b31e2-4e43-469a-94a7-1c946cc104a9",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C74",
+      "claim": "Grid modules comprising face-centered cubic or hexagonal close packing symmetries have the same Fisher information.",
+      "claim_type": "EXPLICIT",
+      "source": "we can conclude that grid modules comprising FCC or HCP-like symmetries have the same FI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f0e8cac8-e82d-4827-a34b-bec35a0ee7dd",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C75",
+      "claim": "For bump-like tuning curves, the Fisher information of hexagonal close packing and face-centered cubic lattice modules are identical.",
+      "claim_type": "EXPLICIT",
+      "source": "For bump-like tuning curves \u03a9, both FIs are identical (Figure 5E) as expected from the radial symmetry of \u03a9.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown numerically in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0f276ff0-4d75-42fa-bf58-01bc1844e2f2",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C76",
+      "claim": "Grid cells defined by either hexagonal close packing or face-centered cubic symmetries provide optimal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, grid cells defined by either HCP or FCC symmetries provide optimal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical and numerical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "139dd1d4-6f57-4b15-9b0d-21ef5d48252c",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C78",
+      "claim": "All optimal packings in 3D share one feature: around each sphere there are exactly 12 spheres, arranged in either hexagonal close packing or face-centered cubic lattice fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "All packings share one feature: around each sphere there are exactly 12 spheres, arranged in either HCP or FCC lattice fashion (Hales, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to mathematical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "9a9a587e-e003-40b3-aabd-7708adb078bf",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C79",
+      "claim": "It has been proven that no other arrangement has a higher packing ratio than the face-centered cubic lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Only in recent years has it been proven that no other arrangement has a higher packing ratio than the FCC, a problem known as Kepler's conjecture (Hales, 2005, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to mathematical proofs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "12ce8320-a84c-4b17-996f-b5c9bd6de031",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C81",
+      "claim": "While there are equally dense packings as the densest lattice in 3D, this is not the case in 2D.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are equally dense packings as the densest lattice in 3D, this is not the case in 2D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on mathematical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "74b6915f-148c-4ff1-aab0-f5e526e1cb34",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C82",
+      "claim": "Thue proved that the hexagonal lattice is unique in being the densest amongst all planar packings.",
+      "claim_type": "EXPLICIT",
+      "source": "Thue proved that the hexagonal lattice is unique in being the densest amongst all planar packings (Thue, 1910)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known mathematical result, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "841bdf93-7a0e-4bc2-b42d-f80b02843ce4",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C83",
+      "claim": "Grid cells in 2D should possess a hexagonal lattice structure.",
+      "claim_type": "EXPLICIT",
+      "source": "grid cells in 2D should possess a hexagonal lattice structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "4696509b-48c6-46b1-aa0e-98bfc65d0bbe",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C84",
+      "claim": "The resolution of a grid module is related to the packing ratio of the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the resolution of a grid module is related to the packing ratio of L\u2014the lattice with highest packing ratio corresponds to the grid module with highest resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical finding of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d9d691c4-6abc-4222-9001-a327bc1e7a2d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C85",
+      "claim": "A common feature of optimal solutions in 3D is that each grid field is surrounded by 12 other grid fields, arranged in either face-centered cubic lattice or hexagonal close packing fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "A common feature of these highly symmetric optimal solutions in 3D is that each grid field is surrounded by 12 other grid fields, arranged in either FCC lattice or hexagonal close packing fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical analysis of optimal packings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "901880c0-c92a-4455-90a3-d1edc3cf823c",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C86",
+      "claim": "Resolution alone, as measured by the Fisher information, does not distinguish between optimal packing solutions with different symmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "However, resolution alone, as measured by the FI, does not distinguish between optimal packing solutions with different symmetries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis showing equal Fisher information for different optimal packings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "896523d5-aeeb-4ad3-8f07-8c6ff07d6808",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C87",
+      "claim": "Using the Fisher information makes finding the optimal lattice analytically tractable for all dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have demonstrated, using the FI makes finding the optimal L analytically tractable for all dimensions D and singles out densest lattices as optimal tuning shapes under assumptions that are restrictive, but are consistent with experimental measurements (Hafting et al., 2005; Brun et al., 2008; Giocomo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological contribution, with citations to experimental support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "3a655ffa-ce28-44bb-9d55-eb8f28e9cfcf",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C88",
+      "claim": "Numerical simulations showed that for broader tuning curves, grid modules with quadratic lattices can provide more Fisher information than the hexagonal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our numerical simulations also showed that for broader tuning curves, grid modules with quadratic lattices can provide more FI than the hexagonal lattice (Figure 3A, \u03b82 \u2248 0.6 and \u03b81 = 1/4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the numerical results in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "6e9ad81b-bc01-49ed-a42e-3a329ac827c0",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C89",
+      "claim": "Grid cells with cubic or body-centered cubic lattice can provide more Fisher information than face-centered cubic lattice for certain tuning parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "and that grid cells with a C or BCC lattice can provide more FI than the FCC (Figure 4B, \u03b82 > 0.65 and \u03b81 = 1/4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the numerical results in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "ac625951-b66c-4d45-ac10-f414f3f179b6",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C90",
+      "claim": "Guanella and Verschure showed numerically that triangular tessellations yield lower reconstruction errors under maximum-likelihood decoding than equivalently scaled square grids.",
+      "claim_type": "EXPLICIT",
+      "source": "For the planar case, Guanella and Verschure (2007) show numerically that triangular tessellations yield lower reconstruction errors under maximum-likelihood decoding than equivalently scaled square grids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f1f33368-4eb4-477f-a036-14088d637503",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C91",
+      "claim": "Wei et al. provide a mathematical argument that hexagonal grids are optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing this numerical analysis, Wei et al. (2013) provide a mathematical argument that hexagonal grids are optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "b7d13709-b5a1-43a9-806f-441ed7265db2",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C92",
+      "claim": "For asymptotically efficient decoders like maximum likelihood or minimum mean square estimator, the resolution can attain the bound given by the Fisher information for large neuron numbers and expected peak spike counts.",
+      "claim_type": "EXPLICIT",
+      "source": "For large neuron numbers N and expected peak spike counts fmax\u03c4 the resolution of asymptotically efficient decoders, like the maximum likelihood decoder, or the minimum mean square estimator, can indeed attain the resolution bound given by the FI (Seung and Sompolinsky, 1993; Bethge et al., 2002; Mathis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "03f4cbbb-335d-4dcc-9d4c-c9bdc380fa6a",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C93",
+      "claim": "For small neuron numbers and peak spike counts, the optimal codes could be different from those predicted by Fisher information.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for small neuron numbers and peak spike counts, the optimal codes could be different, just as it has been shown in the past that the optimal tuning width in these cases cannot be predicted by the FI (Bethge et al., 2002; Yaeli et al., 2010; Berens et al., 2011; Mathis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "04f4f5e5-753b-466b-a12a-fbee1bb11793",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C94",
+      "claim": "Optimal populations with hexagonal patterns provide 15.5% more resolution than grid codes with quadratic grid cells for the same number of neurons in 2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, we demonstrated that these optimal populations provide 15.5% (2D) and about 41% (3D) more resolution than grid codes with quadratic or cubic grid cells for the same number of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the packing ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0c81098a-1bad-475e-866b-39612dd4d795",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C95",
+      "claim": "Optimal populations with face-centered cubic patterns provide about 41% more resolution than grid codes with cubic grid cells for the same number of neurons in 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, we demonstrated that these optimal populations provide 15.5% (2D) and about 41% (3D) more resolution than grid codes with quadratic or cubic grid cells for the same number of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the packing ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "53c6f9ec-d225-4259-98a5-2239d06d6dbe",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C96",
+      "claim": "Medial entorhinal cortex harbors a nested grid code with at least 5 and potentially 10 or more modules.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as medial entorhinal cortex harbors a nested grid code with at least 5 and potentially 10 or more modules (Stensola et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c6e103fa-91ba-4ccb-8b14-90c5dadf6488",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C98",
+      "claim": "Aligned grid-cell lattices with perfectly periodic tuning curves imply that the posterior is periodic.",
+      "claim_type": "EXPLICIT",
+      "source": "Because aligned grid-cell lattices with perfectly periodic tuning curves imply that the posterior is periodic too (compare Equation 8)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "acd8edf6-a662-4e60-baaf-d787c8603e2a",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C99",
+      "claim": "Information from different scales would have to be combined to yield an unambiguous read-out.",
+      "claim_type": "EXPLICIT",
+      "source": "information from different scales would have to be combined to yield an unambiguous read-out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how nested grid codes could be decoded.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "6bcfc472-49e0-4449-b736-bf7a6e1a6bc1",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C100",
+      "claim": "The slight but apparently persistent irregularities in the firing fields across space might be used for decoding.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative hypothesis, as first suggested by Hafting et al., is that the slight, but apparently persistent irregularities in the firing fields across space (Hafting et al., 2005; Krupic et al., 2015; Stensola et al., 2015) are being used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "b57a1e9a-f519-4c7e-9a85-79e92373e1b7",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C101",
+      "claim": "The first recordings of grid cells showed that the fields are not exactly hexagonally arranged and that different fields might have different peak firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the first recordings of grid cells already showed that the fields are not exactly hexagonally arranged and that different fields might have different peak firing rates (Hafting et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "8f043cff-bec2-410b-8115-44a00f610462",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C102",
+      "claim": "Deviations from hexagonal symmetry have gained considerable attention recently.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, deviations from hexagonal symmetry have gained considerable attention (Derdikman et al., 2009; Krupic et al., 2013, 2015; Stensola et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "7fc8f871-38e6-4918-9378-3056cf5a2cf3",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C103",
+      "claim": "Defects in grid cell periodicity might imply that a decoder might be able to distinguish different unit cells even given a single module.",
+      "claim_type": "EXPLICIT",
+      "source": "Such 'defects' modulate the periodicity of the tuning and consequently affect the symmetry of the likelihood function. This might imply that a potential decoder might be able to distinguish different unit cells even given a single module, which is not possible for perfectly periodic tuning curves (compare Equation 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential consequences of irregularities.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "6775caac-7bfb-4cf1-85c3-c3e2466facab",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C104",
+      "claim": "The local resolution is robust to small, incoherent variations in grid cell tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "The local resolution, on the other hand, is robust to small, incoherent variations as the FI is a statistical average over many tuning curves with different spatial phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mathematical properties of Fisher information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "503b3904-8cde-47dc-b104-2ebedcd21185",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C105",
+      "claim": "Small variations in the peak rate and grid fields will average out unless these variations are coherent across grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Small variations in the peak rate and grid fields will therefore average out, unless these variations are coherent across grid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the averaging properties of Fisher information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0d1cb5b1-fc0e-4724-a2ce-234e9730ae18",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C106",
+      "claim": "Resolution bounded by the Fisher information is robust with respect to minor differences in peak firing rates and hexagonality.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, resolution bounded by the FI is robust with respect to minor differences in peak firing rates and hexagonality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of variations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d191c5f9-842a-41bd-a8ba-96f4ad953ca2",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C107",
+      "claim": "The topology of natural habitats can be highly complicated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the topology of natural habitats, such as burrows or caves, can be highly complicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d9a2b524-2e7f-4843-b28e-1446510c07c4",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C108",
+      "claim": "Higher resolution might be required at spatial locations of behavioral relevance.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher resolution might be required at spatial locations of behavioral relevance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential requirements for spatial coding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0c09b3a2-1536-4671-9480-008c9bcbf8df",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C109",
+      "claim": "Neural representations of 3D space may be composed of multiple 1D and 2D patches.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural representations of 3D space may also be composed of multiple 1D and 2D patches (Jeffery et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d4aac42f-f2db-4ee0-85c7-f19e1728ffe6",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C110",
+      "claim": "An isotropic and homogeneous representation for space can emerge out of non-Euclidean perceptual spaces by learning the motion group.",
+      "claim_type": "EXPLICIT",
+      "source": "Poincar\u00e9 already suggested that an isotropic and homogeneous representation for space can emerge out of non-Euclidean perceptual spaces, as one can move through physical space by learning the motion group (Poincar\u00e9, 1913).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to historical theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c6121b2b-3dec-47ca-96da-3b9fbb61da08",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C111",
+      "claim": "An isotropic and homogeneous representation of 3D space facilitates mental rotations in 3D and yields local coordinates that are independent of the environment's topology.",
+      "claim_type": "EXPLICIT",
+      "source": "An isotropic and homogeneous representation of 3D space facilitates (mental) rotations in 3D and yields local coordinates that are independent of the environment's topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional advantages of isotropic representations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "2424cd4d-4dd3-424b-a8bb-4649098ec027",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C112",
+      "claim": "The efficient-coding hypothesis would argue that surface-bound animals might not need to dedicate their limited neuronal resources to acquiring a full representation of space.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the efficient-coding hypothesis (Barlow, 1959; Atick, 1992; Simoncelli and Olshausen, 2001) would argue that surface-bound animals might not need to dedicate their limited neuronal resources to acquiring a full representation of space, as flying animals might have to do",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d13df49b-ff41-4a8a-859c-8f5ddaa7f641",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C113",
+      "claim": "Representations of 3D space will be species-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "so that representations of 3D space will be species-specific (Las and Ulanovsky, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f2015693-4dbf-4937-92bc-4332f1a08d8b",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C114",
+      "claim": "Desert ants represent space only as a projection to flat space.",
+      "claim_type": "EXPLICIT",
+      "source": "Desert ants represent space only as a projection to flat space (Wohlgemuth et al., 2001; Grah et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "508a6713-f68c-4054-968d-2a5f0939c708",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C115",
+      "claim": "Experimental evidence suggests that rats do not encode 3D space in an isotropic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, experimental evidence suggests that rats do not encode 3D space in an isotropic manner (Hayman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "c76d0d03-c52e-44bd-b261-aeba77528854",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C116",
+      "claim": "The anisotropic spatial representation in rats might be a consequence of the specific anisotropic spatial navigation tasks these rats had to perform.",
+      "claim_type": "EXPLICIT",
+      "source": "but this might be a consequence of the specific anisotropic spatial navigation tasks these rats had to perform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of observed anisotropy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "fe24134e-e3bb-49b6-83d6-da61c35c1bc8",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C117",
+      "claim": "The 3D, toroidal head-direction system in bats suggests that they have access to the full motion group.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D, toroidal head-direction system in bats also suggests that they have access to the full motion group (Finkelstein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "42e02c9e-1d8d-4eff-8860-7ef1b4033b38",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C118",
+      "claim": "Face-centered cubic and hexagonal close packing solutions evolve dynamically in a self-organizing network model for 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, such solutions also evolve dynamically in a self-organizing network model for 3D (Stella et al., 2013; Stella and Treves, 2015) that extends a previous 2D system which exhibits hexagonal grid patterns (Kropff and Treves, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to computational modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "70196581-f59c-4c13-b065-233605dd3a8e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C119",
+      "claim": "Walls can intersect the firing fields of grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the firing fields are not required to be contained within the confines of the four walls of a box\u2014experimental observations show that walls can intersect the firing fields (so that one measures only a part of the firing field).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f863522c-745e-4b98-87a3-6ebb9f934c39",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C120",
+      "claim": "The borders clearly distort the hexagonal arrangement of nearby firing fields in 2D environments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the borders clearly distort the hexagonal arrangement of nearby firing fields in 2D environments (Stensola et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "fce6cca1-6299-4021-b26d-89f4625c725a",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C121",
+      "claim": "Central firing fields are more perfectly arranged than those near borders.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas central fields are more perfectly arranged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0084d91c-250f-4c64-bce3-d96925fa404e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C122",
+      "claim": "Deviations from perfect hexagonal arrangement are observed when only a few fields are present in the arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations are also observed when only a few fields are present in the arena (Krupic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "6dad648c-c70b-442b-8787-367f3db2515c",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C123",
+      "claim": "In 2D, a higher resolution can result from two systems of nested 1D grid codes aligned to the x and y axis than from a lattice solution with the same number of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in 2D, a higher resolution can result from two systems of nested 1D grid codes, which are aligned to the x and y axis, respectively, than from a lattice solution with the same number of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical observation about non-lattice solutions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "2a109512-628f-4ddb-81b6-eafaf29390c4",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C124",
+      "claim": "The 1D cells would behave like band cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1D cells would behave like band cells (Krupic et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference with citation to experimental observations of band cells.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "32b960c4-baa9-4919-bf5a-20401f022815",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C125",
+      "claim": "Two sets of elliptically tuned 2D unimodal cells with orthogonal short axes typically outperform unimodal cells with radially symmetric tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two sets of elliptically tuned 2D unimodal cells, with orthogonal short axes, typically outperform unimodal cells with radially symmetric tuning curves (Wilke and Eurich, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "9ba6e173-7e72-448c-90a7-92edbc114434",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C126",
+      "claim": "It has been known since the 1950s that the optimal quantizers for 2D signals rely on hexagonal lattices in technical systems.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, in technical systems, it has been known since the 1950s that the optimal quantizers for 2D signals rely on hexagonal lattices (Gray and Neuhoff, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work in signal processing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "19a7face-7c64-4278-bd55-3c5eea44b917",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C127",
+      "claim": "Lattice codes are ideally suited to cover spaces that involve sensory or cognitive variables other than location.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we note that lattice codes are also ideally suited to cover spaces that involve sensory or cognitive variables other than location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the theoretical results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "0f4860cd-9fce-43db-bf81-92fe3a9a75dd",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C128",
+      "claim": "The optimal eight-dimensional lattice is about 16 times denser than the orthogonal 8D lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the optimal eight-dimensional (8D) lattice is about 16 times denser than the orthogonal 8D lattice (Conway and Sloane, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to mathematical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "24ecbb4e-5576-41e7-8c54-6abb882e9cc1",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C129",
+      "claim": "The optimal 8D lattice would dramatically increase the resolution of the corresponding population code.",
+      "claim_type": "EXPLICIT",
+      "source": "and would, therefore, dramatically increase the resolution of the corresponding population code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the relationship between packing ratio and resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f4053a6a-bb57-441f-9ca4-9c208356588c",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C130",
+      "claim": "Face-selective cells are broadly tuned to multiple feature dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, by parameterizing 19 metric features of cartoon faces, such as hair length, iris size, or eye size, Freiwald et al. showed that face-selective cells are broadly tuned to multiple feature dimensions (Freiwald et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "e07e1b7c-3263-4fb1-97e9-75060154d223",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C131",
+      "claim": "In higher cortical areas, joint feature spaces should be the norm rather than the exception.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially in higher cortical areas, such joint feature spaces should be the norm rather than the exception (Rigotti et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "31bc4497-527e-4dc2-a16d-dc4fde43c59b",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C132",
+      "claim": "No evidence for lattice codes was found in face-selective cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While no evidence for lattice codes was found in the specific case of face-selective cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about existing data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "974b80e5-1e36-4f1e-b8f3-5f3a2606361e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "claim_id": "C133",
+      "claim": "The Fisher information of a grid module scaled by a factor \u03bb is the same as the Fisher information of the initial grid module times 1/\u03bb\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the FI of a grid module scaled by a factor \u03bb is the same as the FI of the initial grid module times 1/\u03bb2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result derived in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate theoretically that hexagonal lattices are optimal for 2D grid cell representations. This is established by showing that maximizing Fisher information (FI) is equivalent to maximizing the packing ratio of the lattice, and the hexagonal lattice has the highest packing ratio in 2D (\u03c0/\u221a12), outperforming the square lattice by approximately 15.5%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The theoretical derivation linking FI to packing ratio (C43, C45) is mathematically sound and builds on established results. The conclusion that hexagonal lattices are optimal in 2D (C2, C15, C51, C83) follows logically from the mathematical framework and is supported by numerical simulations (C52, C53) showing the predicted 15.5% advantage. The assumptions (radially symmetric tuning, support within fundamental domain) are explicitly stated and justified by experimental observations (C46, C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors predict that for 3D spatial navigation, grid cells should exhibit face-centered cubic (FCC) lattice or hexagonal close packing (HCP) structure. The FCC lattice provides approximately 41% more resolution than cubic lattices and 8.8% more than body-centered cubic lattices for the same number of neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The prediction follows logically from the established theoretical framework linking optimal packing to FI maximization. The FCC lattice is known to be the densest in 3D (C79), and the mathematical derivation showing equal FI for FCC and HCP (C74, C75) is sound. Numerical simulations (C71) support the theoretical predictions. However, this remains an untested experimental prediction (C4), making it a strong theoretical result awaiting empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "887c7555-5bce-43d3-8a93-231db650c580",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors show that in 3D, multiple packing arrangements (FCC lattice and HCP) provide equally optimal resolution, whereas in 2D the hexagonal lattice is uniquely optimal. All optimal 3D packings share the feature that each grid field is surrounded by exactly 12 other fields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mathematical analysis correctly identifies that FCC and HCP have identical packing ratios and thus equal FI (C74, C75). The distinction between 2D uniqueness (C82) and 3D non-uniqueness (C81) is well-established mathematically. The observation about 12 neighbors (C78) is supported by citation to mathematical proofs. The limitation that FI alone cannot distinguish between optimal solutions with different symmetries (C86) is an important caveat appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "ab709389-5fe1-49ad-b380-76bfa93ed7da",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors establish that the resolution of a grid module is inversely proportional to the volume of the fundamental domain, and that maximizing Fisher information is mathematically equivalent to finding the lattice with the highest packing ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the core theoretical contribution. The mathematical derivation (Equations 13-14) linking FI to packing ratio is rigorous and clearly presented. The mapping to the sphere packing problem (C13) is novel and well-justified. The result that resolution is inversely proportional to fundamental domain volume (C41) follows from the mathematical framework and is central to all subsequent predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "7eb780ae-486d-4164-8c4a-8694f3ddfe90",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When the tuning curve support exceeds the in-radius of the fundamental domain, the optimal lattice can differ from the densest one. Numerical simulations show that for broader tuning curves, square lattices can outperform hexagonal lattices in 2D, and cubic or BCC lattices can outperform FCC in 3D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The numerical results (C48, C88, C89) clearly demonstrate exceptions to the general rule when assumptions are violated. Figure 3A and 4B provide direct evidence. The authors appropriately note that experimental observations suggest tuning curves typically satisfy the restrictive conditions (C46, C87), making the densest lattice prediction relevant for biological systems. This represents an important boundary condition on the main theoretical result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "12f65e06-16fe-402a-ac93-a0348fbc82cc",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors show that scaling a grid module by factor \u03bb changes its Fisher information by \u03bb\u207b\u00b2, and that the periodic nature of grid cells creates ambiguity that can be resolved by combining multiple modules with different spatial periods. Larger FI per module enables greater refinement at subsequent scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The scaling relationship (C28, C133) is mathematically derived and correct. The observation about posterior periodicity (C30) follows from Bayes' rule and the periodic structure. The solution via nested modules (C32) is well-supported by citations to prior work (C33, C34). This provides important context for why optimizing single-module FI matters for the overall nested grid code system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "634d96a6-4f4c-4027-be8a-c06f6abfc583",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For planar lattices generated by basis vectors at angle \u03c6, Fisher information falls as 1/sin(\u03c6), maximized at \u03c6=\u03c0/3 (hexagonal). However, for finite populations (N=200), fluctuations cause square lattices to outperform hexagonal lattices in ~20% of cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mathematical relationship (C59) is derived from Equation 13 and shown in Figure 3B. The finite-size effect (C61) is demonstrated through numerical simulations (Figure 3C) with 5000 realizations. This appropriately qualifies the theoretical predictions for realistic population sizes and highlights the importance of considering finite-size effects in biological systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "07cb0a8b-ae05-4245-814d-a7aac5d46f04",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "For large neuron numbers and peak spike counts, asymptotically efficient decoders can attain the resolution bound given by Fisher information. For small numbers, optimal codes may differ from FI predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are well-supported by citations to prior theoretical work (C92, C93). This appropriately contextualizes when the FI-based predictions are expected to hold and acknowledges limitations. The authors correctly note this is consistent with prior findings about optimal tuning width. This represents an important caveat about the applicability of the theoretical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "cb08d133-2f91-45df-b9e5-4602355fbf5d",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Local resolution measured by Fisher information is robust to small, incoherent variations in grid cell tuning, as FI averages over many tuning curves with different spatial phases. Small variations in peak rate and grid fields average out unless coherent across cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reasoning is sound based on the statistical properties of FI as an average over the population (Equation 9). The distinction between coherent and incoherent variations is mathematically justified. This addresses an important concern about the applicability of the theory to real grid cells, which show irregularities (C101, C102).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "d7c0186e-0d73-4d8d-a5ec-4017f25f173f",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors hypothesize that the brain may encode higher-dimensional sensory or cognitive variables using grid-cell-like neurons with lattice structures at multiple nested scales. In 8D, optimal lattices could provide ~16-fold improvement over orthogonal lattices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is primarily speculation (C5, C19, C127) extending the theoretical framework to other domains. While the mathematical relationship between dimension and packing advantage is correct (C128), there is no experimental evidence for lattice codes in higher-dimensional cognitive spaces. The authors note that no evidence was found in face-selective cells (C132). This represents an interesting hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "dca534bf-ade6-4442-8642-079908c24fe4",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work by Wei et al. and Guanella & Verschure demonstrated that hexagonal grids are optimal using different approaches (maximum likelihood decoding, Bayesian decoders, and resolution defined as range per distinguishable scale).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are accurate summaries of prior work supported by appropriate citations. The authors correctly position their contribution as providing a more general analytical framework using Fisher information that extends and unifies these earlier results. This represents appropriate acknowledgment of related work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The population coding model assumes independent trial-to-trial variability between neurons and uses Fisher information to bound resolution via the Cram\u00e9r-Rao bound. Isotropy and homogeneity are defined such that resolution is equal everywhere and in all directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model assumptions are clearly stated and standard for population coding analyses. The Cram\u00e9r-Rao bound (C22, C23) is a well-established result correctly applied. The definitions of isotropy (C24, C25) and homogeneity (C26) are mathematically precise and appropriate for the analysis. The clarification that isotropy doesn't require radially symmetric individual tuning curves (C24, C25) is important and correct.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "7927e2a3-bfe7-4db3-9ab4-7955da90e738",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In 2D, two systems of nested 1D grid codes aligned to x and y axes can provide higher resolution than lattice solutions with the same number of neurons. These 1D cells would behave like band cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is presented as a theoretical observation (C123) with appropriate citation to experimental observations of band cells (C124). The authors correctly note this as a counterexample showing lattice solutions are not globally optimal. This represents an important limitation of the main results and suggests alternative coding strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "431636ac-9381-4be6-9c76-9bae3ac0b194",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "With 5-10 nested modules in medial entorhinal cortex, the cumulative advantage of optimal lattices becomes substantial: 1.155^5-10 \u2248 2.1-4.2 fold in 2D and \u221a2^5-10 \u2248 5.7-32 fold in 3D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation correctly compounds the per-module advantages (C94, C95) across multiple scales. The number of modules (5-10) is supported by experimental citation (C96). This effectively demonstrates that even modest per-module improvements become substantial when compounded across the nested grid code system, strengthening the biological relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "f58c0410-4db9-4e8f-9520-0a0de42de3f9",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Irregularities in grid cell firing fields might enable decoders to distinguish different unit cells within a single module, which is impossible for perfectly periodic tuning curves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is presented as speculation (C100, C103) about how biological systems might resolve the ambiguity problem. While the mathematical observation that perfect periodicity creates ambiguity is correct (C30, C98), the hypothesis that irregularities are functionally used for disambiguation lacks direct experimental support. The citations (C100) refer to observations of irregularities, not their functional role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    },
+    {
+      "id": "6a5f69af-43be-415e-8932-bd2c2f9d41bc",
+      "content_id": "f59b47fb-d45c-4b3f-af57-cede4057c58d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Experimental observations show that borders distort hexagonal arrangements of nearby firing fields in 2D, while central fields are more perfectly arranged. Walls can intersect firing fields, and deviations occur when few fields are present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are summaries of experimental observations from cited work (C120, C122) and general knowledge about grid cells (C119, C121). The authors appropriately acknowledge these boundary effects and note that their theory applies to central fields where assumptions are better satisfied. This represents appropriate discussion of when the theoretical predictions apply.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:55.556758Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "459bf7fe-2268-4f81-b6da-ea4f2d13465f",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "24fb6333-17e2-46a0-95f6-812b8dc122a8",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "1d73d4da-74fd-400b-8df2-7b51e108387e",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "c29e023c-3cfa-47e8-97a8-386319f14056",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "31446a76-d766-4c99-940a-67cc1420c425",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "f2bd7a46-9ae5-4984-af2f-790458b3de96",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "bdfbb8bc-a481-4417-a948-54a64a9e2b1f",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "ab6b5f47-f6aa-4397-b82a-c343bc3283b8",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "c1365070-eb7c-4224-bd47-83b2e8c538cf",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "841bdf93-7a0e-4bc2-b42d-f80b02843ce4",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "4696509b-48c6-46b1-aa0e-98bfc65d0bbe",
+      "result_id": "45e3a6e2-eb05-42b1-b9dc-3b10c895c96b"
+    },
+    {
+      "claim_id": "67d6dbb9-e31b-4a7b-a9a5-868a29b3a0e0",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "0123e2a7-933c-4c2e-8a35-01bd699d158d",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "361710f9-1c0a-48e3-bb14-00b374ca33b4",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "d00df0d1-7165-4ff8-a3c4-9397d557fc5a",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "f34d7152-893c-4210-a734-c071feb20d32",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "d5d6d92a-1ad9-4b37-98ed-d05f7d688278",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "c9720f6a-14f2-42ab-97ad-b670d1bbcf0d",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "0f276ff0-4d75-42fa-bf58-01bc1844e2f2",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "d9d691c4-6abc-4222-9001-a327bc1e7a2d",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "04f4f5e5-753b-466b-a12a-fbee1bb11793",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "0c81098a-1bad-475e-866b-39612dd4d795",
+      "result_id": "7052f48d-b5d6-465c-8e2b-36efc6041d3a"
+    },
+    {
+      "claim_id": "b65f2ca8-cec7-497d-bc99-ca435ce61111",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "d23b31e2-4e43-469a-94a7-1c946cc104a9",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "f0e8cac8-e82d-4827-a34b-bec35a0ee7dd",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "139dd1d4-6f57-4b15-9b0d-21ef5d48252c",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "12ce8320-a84c-4b17-996f-b5c9bd6de031",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "74b6915f-148c-4ff1-aab0-f5e526e1cb34",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "901880c0-c92a-4455-90a3-d1edc3cf823c",
+      "result_id": "887c7555-5bce-43d3-8a93-231db650c580"
+    },
+    {
+      "claim_id": "cc0e066d-46ee-415e-8ab3-b8d5c624cf0d",
+      "result_id": "ab709389-5fe1-49ad-b380-76bfa93ed7da"
+    },
+    {
+      "claim_id": "0cec7b58-49a4-4bba-b636-24099fc793b2",
+      "result_id": "ab709389-5fe1-49ad-b380-76bfa93ed7da"
+    },
+    {
+      "claim_id": "a07e1f45-c9c0-4c47-b61b-c57c30ccd551",
+      "result_id": "ab709389-5fe1-49ad-b380-76bfa93ed7da"
+    },
+    {
+      "claim_id": "c29e023c-3cfa-47e8-97a8-386319f14056",
+      "result_id": "ab709389-5fe1-49ad-b380-76bfa93ed7da"
+    },
+    {
+      "claim_id": "4696509b-48c6-46b1-aa0e-98bfc65d0bbe",
+      "result_id": "ab709389-5fe1-49ad-b380-76bfa93ed7da"
+    },
+    {
+      "claim_id": "768f079f-6989-468c-a83d-ef693ae45887",
+      "result_id": "7eb780ae-486d-4164-8c4a-8694f3ddfe90"
+    },
+    {
+      "claim_id": "02d643a4-f546-44bb-805e-3c9db5bcd579",
+      "result_id": "7eb780ae-486d-4164-8c4a-8694f3ddfe90"
+    },
+    {
+      "claim_id": "2a4a4b92-fd03-48a2-9e85-c3f8d419ccaa",
+      "result_id": "7eb780ae-486d-4164-8c4a-8694f3ddfe90"
+    },
+    {
+      "claim_id": "3a655ffa-ce28-44bb-9d55-eb8f28e9cfcf",
+      "result_id": "7eb780ae-486d-4164-8c4a-8694f3ddfe90"
+    },
+    {
+      "claim_id": "6e9ad81b-bc01-49ed-a42e-3a329ac827c0",
+      "result_id": "7eb780ae-486d-4164-8c4a-8694f3ddfe90"
+    },
+    {
+      "claim_id": "868475e9-e51f-4ac1-ab1b-30a328b1ee7f",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "327d59f5-ea29-4807-800d-0db6b56f69f0",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "ba0b728f-83b4-40e7-917c-2629f0ba6ce3",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "4f52e4ef-43bc-48db-ad39-884b65a5793d",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "9c3ad142-9421-444b-aa50-58ef0e81670e",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "9d6ba82e-06f8-4a71-9106-5b6de774e404",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "27d58d61-c0f3-42dd-b6ab-5e030ca7f11a",
+      "result_id": "12f65e06-16fe-402a-ac93-a0348fbc82cc"
+    },
+    {
+      "claim_id": "d5b7c886-c7ea-40e9-b52b-8c345705f55c",
+      "result_id": "634d96a6-4f4c-4027-be8a-c06f6abfc583"
+    },
+    {
+      "claim_id": "122b4ff6-ed5d-4382-8a61-6d693245a7f3",
+      "result_id": "634d96a6-4f4c-4027-be8a-c06f6abfc583"
+    },
+    {
+      "claim_id": "b7d13709-b5a1-43a9-806f-441ed7265db2",
+      "result_id": "07cb0a8b-ae05-4245-814d-a7aac5d46f04"
+    },
+    {
+      "claim_id": "03f4cbbb-335d-4dcc-9d4c-c9bdc380fa6a",
+      "result_id": "07cb0a8b-ae05-4245-814d-a7aac5d46f04"
+    },
+    {
+      "claim_id": "6775caac-7bfb-4cf1-85c3-c3e2466facab",
+      "result_id": "cb08d133-2f91-45df-b9e5-4602355fbf5d"
+    },
+    {
+      "claim_id": "503b3904-8cde-47dc-b104-2ebedcd21185",
+      "result_id": "cb08d133-2f91-45df-b9e5-4602355fbf5d"
+    },
+    {
+      "claim_id": "0d1cb5b1-fc0e-4724-a2ce-234e9730ae18",
+      "result_id": "cb08d133-2f91-45df-b9e5-4602355fbf5d"
+    },
+    {
+      "claim_id": "a583d030-78c4-4942-a8a3-0cbd1b83bde8",
+      "result_id": "d7c0186e-0d73-4d8d-a5ec-4017f25f173f"
+    },
+    {
+      "claim_id": "f67b9bcb-27b1-4102-8ed7-df1615b700b7",
+      "result_id": "d7c0186e-0d73-4d8d-a5ec-4017f25f173f"
+    },
+    {
+      "claim_id": "19a7face-7c64-4278-bd55-3c5eea44b917",
+      "result_id": "d7c0186e-0d73-4d8d-a5ec-4017f25f173f"
+    },
+    {
+      "claim_id": "0f4860cd-9fce-43db-bf81-92fe3a9a75dd",
+      "result_id": "d7c0186e-0d73-4d8d-a5ec-4017f25f173f"
+    },
+    {
+      "claim_id": "24ecbb4e-5576-41e7-8c54-6abb882e9cc1",
+      "result_id": "d7c0186e-0d73-4d8d-a5ec-4017f25f173f"
+    },
+    {
+      "claim_id": "aa44ca13-141b-408b-b7b8-d3c937193ea1",
+      "result_id": "dca534bf-ade6-4442-8642-079908c24fe4"
+    },
+    {
+      "claim_id": "bdf75c9d-a44a-421a-a516-1bc874b4edca",
+      "result_id": "dca534bf-ade6-4442-8642-079908c24fe4"
+    },
+    {
+      "claim_id": "ac625951-b66c-4d45-ac10-f414f3f179b6",
+      "result_id": "dca534bf-ade6-4442-8642-079908c24fe4"
+    },
+    {
+      "claim_id": "f1f33368-4eb4-477f-a036-14088d637503",
+      "result_id": "dca534bf-ade6-4442-8642-079908c24fe4"
+    },
+    {
+      "claim_id": "3e277959-8089-4ab8-bcaf-0b70c939b060",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "b5fc2786-03dc-4f55-99c3-87f674f7de32",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "9904d4bd-110f-4067-8d66-1c0861872b2b",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "48ee673d-c9b7-43ba-9270-057cec637fb2",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "5d764ac4-ab78-40df-803b-365eb2976582",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "989ed488-4f62-4a99-aae0-415080a815b1",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "626a0066-759e-489a-9c5e-a0c5cd98fa9d",
+      "result_id": "a3f80dbe-6d50-45f8-8efe-5cfb7283611e"
+    },
+    {
+      "claim_id": "6dad648c-c70b-442b-8787-367f3db2515c",
+      "result_id": "7927e2a3-bfe7-4db3-9ab4-7955da90e738"
+    },
+    {
+      "claim_id": "2a109512-628f-4ddb-81b6-eafaf29390c4",
+      "result_id": "7927e2a3-bfe7-4db3-9ab4-7955da90e738"
+    },
+    {
+      "claim_id": "53c6f9ec-d225-4259-98a5-2239d06d6dbe",
+      "result_id": "431636ac-9381-4be6-9c76-9bae3ac0b194"
+    },
+    {
+      "claim_id": "04f4f5e5-753b-466b-a12a-fbee1bb11793",
+      "result_id": "431636ac-9381-4be6-9c76-9bae3ac0b194"
+    },
+    {
+      "claim_id": "0c81098a-1bad-475e-866b-39612dd4d795",
+      "result_id": "431636ac-9381-4be6-9c76-9bae3ac0b194"
+    },
+    {
+      "claim_id": "6bcfc472-49e0-4449-b736-bf7a6e1a6bc1",
+      "result_id": "f58c0410-4db9-4e8f-9520-0a0de42de3f9"
+    },
+    {
+      "claim_id": "7fc8f871-38e6-4918-9378-3056cf5a2cf3",
+      "result_id": "f58c0410-4db9-4e8f-9520-0a0de42de3f9"
+    },
+    {
+      "claim_id": "70196581-f59c-4c13-b065-233605dd3a8e",
+      "result_id": "6a5f69af-43be-415e-8932-bd2c2f9d41bc"
+    },
+    {
+      "claim_id": "f863522c-745e-4b98-87a3-6ebb9f934c39",
+      "result_id": "6a5f69af-43be-415e-8932-bd2c2f9d41bc"
+    },
+    {
+      "claim_id": "fce6cca1-6299-4021-b26d-89f4625c725a",
+      "result_id": "6a5f69af-43be-415e-8932-bd2c2f9d41bc"
+    },
+    {
+      "claim_id": "0084d91c-250f-4c64-bce3-d96925fa404e",
+      "result_id": "6a5f69af-43be-415e-8932-bd2c2f9d41bc"
+    }
+  ],
+  "comparisons": []
+}

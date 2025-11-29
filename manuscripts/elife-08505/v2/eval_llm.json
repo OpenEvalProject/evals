@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "CarD is widely distributed among bacterial phyla but absent in E. coli. Table 1 shows CarD presence across multiple bacterial phyla including Thermus species, while it is absent in Proteobacteria-\u03b3 (which includes E. coli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 are directly supported by Table 1, which systematically documents CarD distribution across bacterial phyla. The table clearly shows CarD presence in Deinococcus-Thermus and absence in Proteobacteria-\u03b3. The methodology for determining distribution is described (BLAST searches with specified parameters).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Crystal structures of Thermus aquaticus CarD/RPo complexes were determined at 4.3-4.4 \u00c5 resolution. The structures show high occupancy of CarD bound to RNAP/promoter complexes with essentially identical interactions among crystallographically independent copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C84-C88 describe the structural determination and are well-supported by Table 2 (crystallographic statistics), Figure 1 (structures), and supplementary figures. The resolution, methodology (soaking experiments), and validation of crystal packing effects are appropriately documented. The use of CC* analysis (Figure 1\u2014figure supplement 5) provides modern validation of data quality at this resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C23",
+      "C24",
+      "C28",
+      "C29"
+    ],
+    "result": "CarD interacts with the upstream ds/ss DNA junction of the transcription bubble through its CTD. The CarD-RID binds the RNAP \u03b21-lobe, positioning the CarD-CTD to interact with promoter DNA from -14 to -10 via two \u03b1-helices (\u03b13 and \u03b15), forming a 380 \u0172 interaction surface without significant \u03c3A contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C23-C24, C28-C29 are strongly supported by the crystal structures shown in Figures 1 and 2. The structural data clearly resolves the CarD-CTD/DNA interaction mode and the positioning mechanism via the CarD-RID/\u03b21-lobe interaction. The interaction surface calculation (380 \u0172) is appropriately derived from structural data using standard methods (PDBePISA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C25",
+      "C26"
+    ],
+    "result": "CarD does not alter the structure of the transcription bubble. The \u03c3A/DNA interactions and bubble structure are essentially identical in RPo with or without CarD, confirmed by both structural comparison and KMnO4 footprinting showing identical thymine reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C25-C26 are supported by two independent lines of evidence: structural superposition (Figure 1\u2014figure supplement 6) and biochemical KMnO4 footprinting (Figure 1D, lanes 2-3). The convergence of structural and biochemical data strengthens this conclusion. However, Figure 1\u2014figure supplement 6 notes some differences in t-strand positions -11 to -7, though these are attributed to high B-factors and lack of protein contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CarD increases the lifetime of Thermus RPo approximately threefold on both 23S and AP3 promoters, while E. coli RNAP forms highly stable complexes (t1/2 >> 120 min). The W86A mutation diminishes or abolishes this stabilization effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C59-C61 are well-supported by half-life measurements in Figures 5B-C using competitor challenge assays. The data show clear quantitative differences between Thermus and E. coli RNAP stability, and demonstrate the functional importance of W86. The experiments include appropriate controls and the W86A mutant provides validation of the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C39",
+      "C80",
+      "C81"
+    ],
+    "result": "The conserved W86 residue (>95% conservation) wedges into the splayed minor groove at the upstream edge of the transcription bubble. The W86 side chain is clearly resolved in electron density maps and positioned to potentially interact with T-12(nt) O2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C39, C80-C81 are strongly supported by multiple lines of evidence: sequence conservation analysis (Figure 2\u2014figure supplement 1, Source code 1), crystal structure with clear electron density (Figure 2A), and unbiased omit map validation (Figure 2C). The structural positioning is well-resolved despite the 4.3-4.4 \u00c5 resolution, as demonstrated by the simulated annealing omit map showing 3\u03c3 density for the W86 side chain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "All W86 substitution mutants show impaired CarD activation compared to wild-type. Aromatic substitutions (F, Y) and Ala show partial activation, while branched-chain residues (I, L, V) show no activation or reduced transcription, consistent with structural modeling predicting steric clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by systematic mutagenesis data in Figure 3A. The functional hierarchy (aromatic > Ala > branched-chain) is consistent with the structural role of W86 as a wedge. However, claim C38 about structural modeling predicting clashes is stated but the modeling results are not shown. The inference is reasonable but lacks direct supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The -12 T/A base pair is a conserved part of the -10 promoter element. Mutations at the -12 position reduce transcription activity at least threefold and substantially decrease CarD activation, suggesting the W86/T-12(nt) interaction contributes to CarD function. The W86F mutation causes approximately twofold loss in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by promoter mutagenesis data in Figure 3B. The systematic testing of all four bases at position -12 provides strong evidence for the functional importance of this position. The parallel effects of W86F mutation and -12 base substitutions support the proposed interaction. However, the magnitude of effects is modest (2-3 fold), suggesting this interaction is important but not the sole determinant of CarD function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Thermus CarD conformation with CarD-CTD positioned to interact with DNA represents the functional state, not the Mycobacterium structure where domains are rotated ~140\u00b0. Disulfide crosslinking experiments locking the Thermus conformation (P12C/G99C, distance 5.2\u00b10.1 \u00c5) show wild-type activation when oxidized, while the Mtb conformation (24 \u00c5 separation) would preclude crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C57 present a clever experimental resolution of conflicting structural models. The disulfide crosslinking strategy is well-designed and executed, with thorough characterization by SDS-PAGE and LC-MS (Figure 4C) showing >98% crosslinking under oxidizing conditions. The functional data (Figure 4D) demonstrating wild-type activity of crosslinked CarD2C strongly supports the Thermus conformation as functional. The reduced activity under reducing conditions (C56) is appropriately explained by the mutations at conserved positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C82"
+    ],
+    "result": "CarD stabilizes RPo by preventing transcription bubble collapse. On duplex template, CarD increases t1/2 >5-fold, but on pre-formed bubble template, t1/2 is already increased >5-fold without CarD, and CarD addition has no further effect, indicating bubble collapse is the primary instability mechanism that CarD counteracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66, C82 are strongly supported by the elegant bubble template experiments in Figure 6. The experimental design directly tests the bubble collapse hypothesis by removing the need for bubble formation/maintenance. The observation that CarD has no effect on the bubble template while dramatically stabilizing the duplex template provides compelling mechanistic evidence. This is a key result establishing CarD's mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The CarD-CTD rotates approximately 11\u00b0 relative to the CarD-RID when comparing CarD/\u03b21-lobe structure to CarD/RPo complex, allowing DNA interaction while maintaining the RID/CTD interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by structural comparison in Figure 1\u2014figure supplement 4. The modest 11\u00b0 rotation represents a conformational adjustment upon DNA binding. However, the biological significance of this small rotation is unclear, and the precision of this measurement at 4.3-4.4 \u00c5 resolution should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The reduced activation efficiency of CarD-W86F is tentatively attributed to loss of the minor groove polar interaction with T-12(nt), as Phe can fulfill stacking/steric roles but cannot form the hydrogen bond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 is explicitly stated as tentative speculation ('We tentatively suggest'). While the interpretation is reasonable given that W86F shows ~2-fold reduced activation similar to -12 base substitutions, this remains a hypothesis. The hydrogen bond between W86 N\u03b5 and T-12(nt) O2 is inferred from structural positioning but not definitively established at 4.3-4.4 \u00c5 resolution. Additional experiments (e.g., W86H mutation, higher resolution structure) would be needed to confirm this specific interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C6"
+    ],
+    "result": "E. coli RNAP forms unusually stable RPo while RNAPs from CarD-containing bacteria (B. subtilis, Mtb, M. xanthus, Thermus) form relatively unstable RPo, explaining the need for CarD as a stabilizing factor in these organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C6 synthesize data from this study (Figure 5B showing E. coli stability) with extensive prior literature. The correlation between CarD absence/presence and RPo stability is supported by multiple cited studies. However, this represents a correlation rather than direct causation\u2014the evolutionary relationship is inferred rather than experimentally demonstrated. The claim is well-supported as a general principle but should be recognized as correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CarD is a global regulator found at most \u03c3A promoters in M. smegmatis and is essential in tested mycobacterial species, suggesting it functions as a basal transcription factor compensating for unstable RNAP/promoter complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are based on prior work (cited appropriately). Claim C71 represents an inference from the combined observations of global distribution, essentiality, and the mechanistic data from this study. The inference is logical and well-supported, though it extends beyond the direct experimental evidence presented here. The characterization as 'basal transcription factor' is appropriate given the global distribution and stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "T-12(t) is present at most \u03c3A promoters, but CarD can activate transcription from promoters lacking the -12 T/A base pair, albeit less effectively, suggesting this interaction modulates but is not essential for CarD function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by prior work (C72, cited) and experimental data (C73, Figure 3B). The data show CarD retains partial activity on mutant promoters, supporting the conclusion that the W86/T-12 interaction is modulatory rather than essential. This appropriately qualifies the importance of this specific interaction in the context of CarD's overall mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The CarD-RID/RNAP \u03b21-lobe interaction positions CarD-CTD to interact with the transcription bubble without allosterically altering bubble structure or holoenzyme/promoter interactions; instead, CarD supports pre-existing RNAP/promoter interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 synthesize multiple observations from the structural and biochemical data (Figures 1D, 1\u2014figure supplement 6). The conclusion that CarD 'supports' rather than 'induces' the open complex is well-justified by the lack of structural changes in the bubble and the bubble template experiments. This represents an important mechanistic distinction from activators that promote bubble formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The CarD/DNA interaction mode is incompatible with duplex B-form DNA because the normal minor groove is too narrow to accommodate CarD-\u03b13 and W86.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by structural analysis and cited prior work. The observation that CarD interacts with the distorted minor groove at the ds/ss junction is consistent with the structures. The incompatibility with B-form DNA is a reasonable inference from the structural geometry, though quantitative modeling of steric clashes is not shown. This supports the conclusion that CarD specifically recognizes the open complex topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Kinetic analysis concluded CarD stabilizes RPo by increasing isomerization rate and decreasing bubble collapse rate, with little effect on closed complex formation, consistent with the structural findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 cite prior kinetic work (Rammohan et al., 2015) and note consistency with the current structural/biochemical findings. The cited work provides independent support for the mechanism proposed here. The consistency between kinetic and structural studies strengthens both sets of conclusions, though the kinetic data are not presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "This minor groove wedge mechanism of transcription activation may be absent in E. coli because E. coli RNAP forms relatively stable promoter complexes, explaining why this mechanism has not been previously observed in mechanistic transcription studies focused on E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by the E. coli stability data (Figure 5B) and the absence of CarD in E. coli (Table 1). The inference that this mechanism was previously unseen due to E. coli-centric focus is reasonable. However, this represents a historical/sociological explanation rather than a mechanistic one. The claim appropriately uses cautious language ('may be absent').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CarD is an essential global regulator in Mycobacterium tuberculosis, first identified as a regulator of ribosomal RNA transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12 are based entirely on prior work (appropriately cited: Stallings et al., 2009; Srivastava et al., 2013). These claims provide important context for the current study but represent established knowledge rather than new findings. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on transcription initiation mechanisms and prior CarD structural studies, including the role of \u03c3 factors, typical activator mechanisms, CarD domain structure, and conflicting models from Tth and Mtb CarD structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C13-C16 provide literature context with appropriate citations. These represent established knowledge from prior work rather than new findings. The characterization of conflicting models (C16) appropriately sets up the motivation for the current structural studies. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "CarD may stabilize RPo by forming favorable interactions with the upstream edge of the unwound transcription bubble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 represents a mechanistic hypothesis inferred from structural data (Figures 1C, 2B). This is subsequently tested and supported by the bubble template experiments (Figure 6). While stated as 'may stabilize' (appropriately cautious), the subsequent experimental validation in the same manuscript supports this mechanism. This claim serves as a transition from structural observations to mechanistic testing.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "RNAPII ChIP-seq in hMSCs identified three categories of differential occupancy: uncommitted (LD), HD-primed, and DMI-induced clusters, each associated with distinct gene ontologies including cytoskeleton/proliferation, amino acid metabolism, and adipocyte-specific processes, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 collectively demonstrate stage-specific RNAPII occupancy patterns with corresponding functional gene ontologies. The k-means clustering (C2), gene ontology analyses (C3-C5), and density-dependent RNAPII recruitment (C6) are supported by ChIP-seq data in Figure 1A-B and Supplementary file 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C15"
+    ],
+    "result": "HD-primed RNAPII sites are enriched for a hybrid motif (AP-1/C/EBP half-sites) that binds C/EBP-ATF heterodimers, and C/EBP\u03b2 selectively occupies these HD-primed sites before DMI treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C15 are well-supported by motif analysis (Figure 1C-D) and C/EBP\u03b2 ChIP-seq data (Figure 1A, Figure 1\u2014figure supplement 2A,B) showing selective enrichment of the hybrid motif at HD-primed sites and C/EBP\u03b2 binding prior to DMI treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "DMI treatment massively increases C/EBP\u03b2 genomic occupancy and induces GR binding that co-localizes with C/EBP\u03b2 at DMI-induced RNAPII sites in a density-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by ChIP-seq data showing DMI-induced increases in C/EBP\u03b2 occupancy (Figure 1\u2014figure supplement 2A) and GR binding that co-localizes with C/EBP\u03b2 (Figure 1A, Figure 1\u2014figure supplement 2B-E) independent of cell density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "C/EBP\u03b2 preferentially targets the hybrid motif (27% of peaks) in HD-primed enhancers, while the canonical C/EBP motif is enriched (23% of peaks) in DMI-induced enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by motif frequency analysis (Figure 2A) showing differential enrichment of hybrid vs canonical C/EBP motifs across stage-specific enhancer clusters, demonstrating sequence-specific targeting by C/EBP\u03b2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Hybrid motif-containing enhancers show reduced activity upon DMI treatment while canonical C/EBP motif enhancers are activated, with corresponding changes in gene expression, demonstrating that C/EBP\u03b2 targets non-canonical motifs to activate HD-primed enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 are supported by luciferase reporter assays (Figure 2B-C) and mRNA expression data (Figure 2D) showing opposite responses to DMI treatment for hybrid vs canonical motifs, with mutation experiments confirming motif functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ATF4 binds robustly at hybrid motifs with extraordinary sequence specificity (85% of 1451 peaks contain the motif), co-localizing with >90% of C/EBP\u03b2 sites, in contrast to the more degenerate C/EBP\u03b2 cistrome (65% motif detection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are well-supported by ChIP and ChIP-seq data (Figure 3A-C, Figure 3\u2014figure supplement 1A) showing ATF4 binding at hybrid motifs with high specificity and near-exclusive co-localization with C/EBP\u03b2, with motif analysis confirming the sequence specificity difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ATF4 genomic occupancy is associated with genes involved in amino acid metabolism, tRNA aminoacylation, and ER stress response, with sites highly enriched for RNAPII predominantly in HD-primed clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by gene ontology analysis (Figure 3\u2014figure supplement 1B), genomic mapping (Supplementary file 1), and co-localization analysis (Figure 3\u2014figure supplement 1C-D) showing ATF4 association with specific biological processes and RNAPII-enriched HD-primed sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ATF4 protein levels are regulated by cell density (negligible at LD, upregulated at HD) and DMI treatment (decreased by 24hr), with ATF4 occupancy at hybrid sites correlating with protein levels while C/EBP\u03b2 binding remains density-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by western blot data (Figure 3D) and ChIP experiments (Figure 3E) showing density- and DMI-dependent regulation of ATF4 protein and genomic occupancy, while C/EBP\u03b2 binding is maintained across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Sequential ChIP demonstrates that ATF4 and C/EBP\u03b2 simultaneously occupy hybrid motif sites as heterodimers, with no enrichment at control sites where C/EBP\u03b2 binds independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by sequential ChIP data (Figure 3F) showing ATF4 enrichment after C/EBP\u03b2 IP at hybrid motif sites but not at control sites, confirming heterodimeric co-occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ATF4 knockdown decreases lipid accumulation and reduces expression of early adipogenic markers (PPAR\u03b32, C/EBP\u03b1) by 3-4 fold, indicating ATF4 is important for adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by Oil Red O staining (Figure 4B), mRNA expression data (Figure 4C), and time-course analysis (Figure 4\u2014figure supplement 1) showing consistent deficits in adipogenic differentiation upon ATF4 depletion in both hMSCs and 3T3-L1 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ATF4 knockdown significantly reduces both ATF4 and RNAPII occupancy at ATF4-binding sites, with modest effects on C/EBP\u03b2 binding, demonstrating that ATF4 functions to recruit RNAPII and is a density-dependent TF promoting adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by ChIP data in ATF4 knockdown cells (Figure 4D) showing significant reductions in ATF4 and RNAPII occupancy at most sites, with less pronounced effects on C/EBP\u03b2, consistent with ATF4's role in RNAPII recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "EMSA demonstrates that ATF4 alone does not bind DNA, C/EBP\u03b2 binds both hybrid and canonical motifs (preferring canonical), and the C/EBP\u03b2-ATF4 heterodimer recognizes the hybrid sequence with higher affinity than C/EBP\u03b2 homodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by EMSA data (Figure 5C-D, Figure 5\u2014figure supplement 1) showing differential binding patterns for ATF4, C/EBP\u03b2 homodimer, and C/EBP\u03b2-ATF4 heterodimer to hybrid vs canonical motifs, with quantification confirming affinity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "ATF4 decreases C/EBP\u03b2 occupancy of the palindromic C/EBP motif in EMSA, suggesting the C/EBP\u03b2-ATF4 heterodimer has lower affinity for this sequence than the C/EBP\u03b2 homodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by EMSA data (Figure 5D) showing reduced binding to the canonical C/EBP motif upon ATF4 addition, consistent with differential sequence preferences of homo- vs heterodimers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In vitro cistromics shows C/EBP\u03b2 binding scales with protein concentration, with gained sites at high concentrations having lower binding strength but maintaining C/EBP motif specificity, indicating concentration-dependent binding to low-affinity sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by in vitro cistromics data (Figure 6A-D) showing dose-dependent peak detection, plateauing of high-affinity sites, and motif enrichment analysis confirming appropriate specificity across the concentration range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "In-vitro-specific C/EBP\u03b2 binding sites have little or no H3K27ac in cells, suggesting they reside in inactive chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by H3K27ac analysis (Figure 6\u2014figure supplement 1A) comparing cellular vs in-vitro-specific sites, providing evidence that chromatin accessibility restricts C/EBP\u03b2 binding in cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In vitro cistromics shows that ATF4 addition redirects C/EBP\u03b2 from homodimer sites to heterodimer sites enriched for the hybrid motif, with ATF4 exhibiting no detectable binding alone, demonstrating exclusively heterodimeric genomic interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by in vitro cistromics data with ATF4 titration (Figure 6E-F) showing redistribution of C/EBP\u03b2 binding, parallel ATF4 enrichment, hybrid motif enrichment, and absence of ATF4 homodimer binding at these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "111 ATF4 homodimer peaks were identified in vitro, enriched for c-JUN motif multimers, but these sites are not occupied by ATF4 in hMSCs, suggesting homodimeric binding may not be physiological.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by in vitro cistromics data (Figure 6\u2014figure supplement 1B-C) showing rare ATF4 homodimer sites with distinct motif enrichment that are absent from cellular ChIP-seq, indicating these interactions are not physiologically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C100",
+      "C101"
+    ],
+    "result": "The DNA-binding properties of ATF4 and C/EBP\u03b2 are sufficient to reconstitute their cellular sequence specificities, with genomic ATF4 binding requiring heterodimerization with C/EBP\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C100-C101 are supported by combined EMSA and in vitro cistromics data (Figures 5-6) demonstrating that intrinsic binding properties explain cellular binding patterns, with ATF4 requiring C/EBP\u03b2 for genomic occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The affinity of ATF4 homodimers for CRE sequences is insufficient to produce binding in cells or in vitro with competitor DNA present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by in vitro cistromics data showing paucity of ATF4 homodimer sites despite prior reports of CRE binding, indicating that affinity is insufficient under competitive conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In vitro cistromics demonstrates that C/EBP\u03b2 and ATF4 target distinct DNA half-sites (TTRS and TGAT), with the heterodimer restricted to hybrid motifs (TTRSATCA) while C/EBP\u03b2 homodimer shows degeneracy at -1/-2 positions, explaining the 1:1 correspondence between ATF4 binding and hybrid motifs in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by motif analysis of in vitro cistromics and cellular ChIP-seq data (Figure 6) showing distinct sequence preferences for homo- vs heterodimers that explain the observed binding patterns in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "C/EBP\u03b2 homodimers bind hybrid sequences with low affinity, DMI-treated cells show persistent C/EBP\u03b2 occupancy despite low ATF4, but robust RNAPII recruitment requires ATF4 presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113, C115 are supported by EMSA data (Figure 5), ChIP data (Figure 3E), and ATF4 knockdown experiments (Figure 4D) showing that while C/EBP\u03b2 can bind hybrid sites without ATF4, functional RNAPII recruitment requires the heterodimer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C91"
+    ],
+    "result": "C/EBP\u03b2 controls distinct stage-specific gene expression programs during adipogenesis: heterodimerizing with ATF4 (a cell density sensor) at HD-primed enhancers before DMI treatment, then activating different genes with GR during differentiation, connecting adipogenic competency and early differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C87, C91 represent the main conclusions supported by all experimental data (Figures 1-7), demonstrating stage-specific C/EBP\u03b2 partnerships and functions that link physical (density) and chemical (DMI) requirements for adipogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C31",
+      "C84",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C102",
+      "C104",
+      "C105",
+      "C110",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Background claims from prior literature establish the context for the study, including roles of RNAPII at enhancers, C/EBP\u03b2 and GR in adipogenesis, PPAR\u03b3 as master regulator, ATF4 in ER stress and other cell lineages, and cell density requirements for differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C11, C31, C84, C86, C88-C90, C92, C94-C97, C102, C104-C105, C110, C118, C120-C123, C125-C128) are supported by appropriate citations to prior work and provide necessary background context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C93",
+      "C98",
+      "C99",
+      "C111",
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C124"
+    ],
+    "result": "Speculative claims suggest potential mechanisms and broader implications, including GR function in human cells, ATF4 relevance in adult adipose tissue, ATF4 regulation of metabolism, anticipatory ER stress response, variable C/EBP partners, and degenerate motifs from multiple complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C93, C98-C99, C111, C114, C116-C117, C119, C124 are speculative inferences or suggestions for future work. While reasonable based on the data and prior literature, they lack direct experimental validation in this study and represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

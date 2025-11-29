@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Bath application of 20 nM TTX does not significantly affect synaptic transmission at PP\u2192CA1tuft synapses or presynaptic action potential firing, while producing modest effects on somatic action potentials evoked by current injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 demonstrate that 20 nM TTX selectively affects postsynaptic dendritic events without blocking presynaptic transmission. The experimental data (Figure 1) shows no effect on EPSPs across a wide range of stimulus intensities, minimal effects on somatic action potentials, and selective effects on antidromic spikes only at low intensities. This establishes the validity of using low TTX as a tool to study dendritic spikes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C33"
+    ],
+    "result": "20 nM TTX effectively inhibits both large and small dendritic spikes (dSpikes) generated in response to theta-burst stimulation of the perforant path.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C33 provide converging evidence from dendritic recordings showing that 20 nM TTX reduces both the number and amplitude of large-amplitude dendritic events and dramatically reduces small dSpikes (spikelets) across multiple statistical criteria (Figure 2). The methodology for identifying different types of dendritic events is well-described and the statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Dendritic spikes mediated by Nav channels are required for LTP at PP\u2192CA1tuft synapses, and action potential firing does not contribute to LTP induction at these synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C25 demonstrate that 20 nM TTX completely blocks PP\u2192CA1tuft LTP under both conditions with and without action potential firing (Figure 3). The similar magnitude of LTP with somatic current injection versus voltage clamp (C23, C24) provides strong evidence that action potentials are not required, while the complete block by TTX (C25) establishes the necessity of Nav channel-mediated events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "NMDAR and L-type Cav channels are the two main sources of calcium entry during LTP induction at PP\u2192CA1tuft synapses, with L-type Cav channels involved in induction rather than expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 establish through pharmacological experiments (Figure 4) that blocking NMDARs or L-type Cav channels each reduces LTP by ~50%, while blocking both nearly eliminates it. The specificity for L-type channels (C29) and the lack of effect of nimodipine on synaptic responses before or after LTP (C30, C31) support the conclusion that these channels mediate calcium influx during induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "20 nM TTX blocks PP\u2192CA1tuft LTP by inhibiting fast Na-dSpikes with minimal effect on slow synaptic depolarization, and the fast depolarization associated with Na-dSpikes is more important for LTP induction than slow synaptic depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C40 demonstrate differential effects of TTX versus AP5 on dendritic responses (Figure 5). TTX blocks large dSpikes but not slow depolarization, while AP5 has the opposite effect. The greater potency of TTX in blocking LTP despite its lesser effect on slow depolarization (C37) provides strong evidence for the critical role of fast Na-dSpikes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "A modified TBS protocol with only 2 stimuli per burst induces LTP of similar magnitude to standard 5-stimulus protocols, despite greatly reduced slow depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 show that 2-stim TBSx3 produces 82% of the LTP induced by 5-stim protocols despite only 27% of the slow depolarization integral (Figure 6). This experimental manipulation provides additional evidence that slow depolarization is not the critical factor for LTP induction, supporting the importance of fast Na-dSpikes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "20 nM TTX is far less potent at inhibiting bulk dendritic calcium elevations than 50 \u03bcM AP5, and the effectiveness of TTX as a blocker of LTP cannot be explained by its effect on measured dendritic calcium signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present a surprising finding from calcium imaging experiments (Figure 7): TTX has minimal effect on bulk calcium signals compared to AP5, despite being more effective at blocking LTP. This apparent paradox is well-documented experimentally and motivates the subsequent mechanistic investigations. The discrepancy is clearly stated and appropriately interpreted as evidence for localized calcium signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C60",
+      "C62"
+    ],
+    "result": "Computational modeling reproduces experimental observations and reveals that Na-dSpikes mediate the largest instantaneous calcium currents through NMDAR and L-Cav channels, producing large, transient, localized increases in calcium concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C60, and C62 describe computational modeling results (Figure 8) that successfully reproduce the experimental effects of TTX and AP5 on both voltage responses and calcium signals. The model provides mechanistic insight by showing that Na-dSpikes produce the largest instantaneous calcium currents despite contributing less to bulk calcium. The model parameters are constrained by literature values and the conclusions are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "L-Cav channels contribute to LTP induction by mediating increases in localized calcium near channel pores rather than in dendritic bulk calcium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 show that nimodipine does not significantly affect bulk dendritic calcium responses (Figure 8\u2014figure supplement 1), consistent with the hypothesis that L-Cav channels contribute through localized calcium signaling. This prediction from the computational model is confirmed experimentally, providing additional support for the localized calcium hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Only high concentrations of the fast calcium chelator BAPTA block PP\u2192CA1tuft LTP, while EGTA does not, supporting the hypothesis that large, transient, localized calcium increases are critical for LTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate through calcium buffering experiments (Figure 9) that 10 mM BAPTA blocks LTP while 0.5 mM BAPTA and both concentrations of EGTA do not. This differential effect based on chelator kinetics provides strong support for the requirement of rapid, localized calcium signaling near channel pores, as predicted by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C55",
+      "C57"
+    ],
+    "result": "Na-dSpikes contribute to LTP induction by promoting localized calcium increases near NMDAR and L-type Cav channels, establishing a causal role for dendritic Nav channels in long-term information storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C53, C55, and C57 synthesize the major findings into a coherent mechanistic model. The convergence of evidence from pharmacology (TTX blocks LTP), calcium imaging (TTX has minimal effect on bulk calcium), computational modeling (Na-dSpikes produce largest instantaneous calcium currents), and buffering experiments (fast chelator blocks LTP) provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C85"
+    ],
+    "result": "The form of LTP studied implements a Hebbian plasticity rule on a finer spatial scale ('neurites that fire together wire together'), with dendritic Nav channels determining which postsynaptic neurites fire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C59, and C85 present an interpretation of the results in the context of Hebbian learning theory. While the experimental data support the role of Na-dSpikes in LTP, the conceptual framework of 'neurites that fire together wire together' is speculative and not directly tested. The spatial compartmentalization of plasticity is inferred but not experimentally demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The vigorous and brief calcium entry during Na-dSpikes is more critical for LTP induction than longer-lasting calcium entry during slow synaptic depolarization, with calcium concentration near channel mouths proportional to instantaneous calcium current and bulk calcium proportional to the time integral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63-C65 provide a mechanistic explanation for the experimental observations. The distinction between localized and bulk calcium is well-supported by the modeling results, calcium imaging data, and buffering experiments. The relationship between instantaneous current and local calcium versus integrated current and bulk calcium is supported by citations to calcium dynamics literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The efficacy of TTX as a blocker of LTP could be explained by a calcium sensor near NMDAR and L-Cav channels with low affinity and high cooperativity, potentially calmodulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C71 propose a hypothetical calcium sensor mechanism to explain the experimental results. While the properties required for such a sensor are logically derived from the data, the identity and existence of this specific sensor are speculative. The suggestion of calmodulin (C70, C71) is reasonable based on its known properties but is not experimentally tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "NMDAR and L-Cav channels contribute to PP\u2192CA1tuft LTP through their ionotropic rather than metabotropic functions, and the effect of nimodipine cannot be explained by blocking presynaptic L-Cav channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide important mechanistic clarifications. The block of LTP by calcium buffering (C72) supports ionotropic function, and the lack of effect of nimodipine on synaptic responses after LTP (C73) rules out presynaptic expression mechanisms. These conclusions are well-supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The requirement for Na-dSpikes has functional implications for potential compartmentalization of plasticity to individual dendritic branches, which would affect the granularity of learned associations and information-carrying capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 discuss functional implications based on the requirement for Na-dSpikes and their propagation properties. While the reasoning is logical and supported by citations about dendritic spike propagation, the actual compartmentalization of plasticity is not directly demonstrated in this study. This represents an interesting hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "There are many forms of LTP with diverse induction mechanisms, and the generality of the Na-dSpike requirement is unclear, though LTP can occur in vivo without axo-somatic spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 provide important context by discussing the diversity of LTP mechanisms at different synapses and with different induction protocols. These claims are well-supported by citations to previous literature and appropriately acknowledge the limitations of generalizing the current findings. The discussion is balanced and scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establishing the context for the study, including the types of dendritic spikes, the role of calcium in LTP, and previous findings about PP\u2192CA1tuft synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C13 provide essential background information supported by citations to previous literature. These claims establish the scientific context and are appropriately referenced. They represent established knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C56",
+      "C84"
+    ],
+    "result": "Na-dSpikes contribute to memory formation and have roles in both rapid neural processing and long-term information storage, extending the known functions of dendritic Nav channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C54, C56, and C84 make broader claims about memory formation based on the demonstrated role of Na-dSpikes in LTP. While LTP is widely believed to be a cellular mechanism for memory, the direct link to memory formation is inferential. The claims appropriately use cautious language ('likely to contribute', 'possible functional roles') but represent speculation beyond what is directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

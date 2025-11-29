@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed a cell synchronization protocol using the CDK1 inhibitor RO-3306 to obtain pure populations of G2, M, and G1 phase cells without using microtubule-targeting drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe the synchronization method with supporting FACS and microscopy data (C46, Figure 1B,C). The rationale is well-supported by citations showing CDK1 is inactive in G2 (C44-C45), and the method avoids microtubule drugs known to affect translation (C47). This is a critical methodological advance for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Using S35-methionine labeling, the authors found a modest (~35%) global translational repression during mitosis, which is smaller than previously reported and may be due to avoiding microtubule inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C48-C49 present metabolic labeling data (Figure 1D) showing ~35% reduction in translation during mitosis, consistent with prior work but of smaller magnitude. The speculation about microtubule inhibitors (C50) is reasonable given cited evidence. The data directly support the quantitative claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Ribosome profiling identified approximately 200 mRNAs with gene-specific translational regulation (>3-fold change) during mitosis, with the vast majority of changes occurring at the M phase transition rather than between G2 and G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C37, C57-C59 are supported by ribosome profiling data (Figure 2A) showing 199 genes regulated between M and G2, 92 between M and G1, but only 13 between G2 and G1. The >3-fold cutoff with >2-fold FP density change is clearly defined. The data strongly support mitosis-specific translational regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "RNA-seq analysis revealed minimal mRNA abundance changes between G2 and M (25 genes down-regulated, 0 up-regulated), while substantial changes occurred between G2/M and G1, indicating G2 and M have similar mRNA profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by RNA-seq data (Figure 2A, Figure 2\u2014figure supplement 1A) showing few changes between G2 and M but many between G2/M and G1. The overlap analysis (C54-C55) strengthens the conclusion. This establishes that translational rather than transcriptional regulation dominates in mitosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C60",
+      "C61",
+      "C62",
+      "C76",
+      "C110",
+      "C111"
+    ],
+    "result": "Gene-specific translational regulation affects a different set of genes than transcriptional regulation, with translational control dominating at the G2-to-M transition and transcriptional control at the G1-to-G2 transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C60-C62, C76, C110-C111 are supported by combined RNA-seq and ribosome profiling data (Figure 2B,C) showing non-overlapping gene sets. The temporal separation of regulatory mechanisms is a well-supported inference from the data. This represents a key conceptual finding about cell cycle regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C120",
+      "C122",
+      "C123"
+    ],
+    "result": "91% of gene-specifically regulated mRNAs are translationally repressed (not activated) during mitosis, with most genes repressed at mitotic entry being re-activated at mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C63-C67, C120, C122-C123 are supported by ribosome profiling data (Figure 2A, Figure 2\u2014figure supplement 1B, Figure 2D) showing 182/199 genes repressed in M vs G2 and 86/92 repressed in M vs G1. The correlation between G2 vs M and G1 vs M (C66) supports reversibility. This is a major finding challenging prior IRES-focused models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "A fluorescence-based translation reporter was developed and validated the ribosome profiling results, showing that UTRs from translationally repressed mRNAs confer mitosis-specific repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 describe the reporter system (Figure 3A-D) with time-lapse microscopy data showing UTR-dependent regulation. The agreement between ribosome profiling and reporter assays (C81, C105) provides strong orthogonal validation. This is critical validation of the ribosome profiling findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Emi1 is one of the most translationally repressed genes in mitosis, with repression conferred by its 3'UTR alone, and mRNA levels remain constant across cell cycle phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C83, C85-C87 are supported by ribosome profiling data, single molecule FISH (Figure 3\u2014figure supplement 1E), and reporter mapping experiments (Figure 3\u2014figure supplement 1D,F). The 3'UTR sufficiency is clearly demonstrated. This establishes Emi1 as a key example for functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Full APC activation requires translational repression of Emi1 in addition to its degradation; expression of Emi1 without translational regulation partially inhibits APC/Cdh1 activation, while translational repression allows substantially higher APC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40, C93-C97 are supported by time-lapse microscopy data (Figure 4A-E) showing reduced APC substrate degradation with non-regulated Emi1 and restoration with UTR-mediated repression. Expression levels were controlled (C94). The ARHGAP5 UTR control (C97) strengthens the conclusion that translational repression, not other UTR functions, is responsible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C142",
+      "C143"
+    ],
+    "result": "Emi1 is more completely depleted when protein degradation is combined with translational repression, demonstrating that post-translational inactivation alone is insufficient but becomes effective when combined with translational repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101, C142-C143 are supported by time-lapse microscopy data (Figure 4F, Figure 5) showing more complete Emi1 depletion with translational repression. This directly demonstrates the synergy between degradation and translational repression, supporting the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C42",
+      "C103",
+      "C146",
+      "C147"
+    ],
+    "result": "Gene-specific translational repression may complement post-translational mechanisms for inactivating protein function, potentially representing a general mechanism to enhance post-translational protein inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C41-C42, C103, C146-C147 extend the Emi1 findings to a general model. While the Emi1 data support this mechanism in one case, the generalization is speculative (noted as SPECULATION in evidence). Most translationally repressed proteins are not known to be degraded (C145), leaving the broader applicability uncertain without additional examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Gene ontology analysis revealed that translationally regulated genes include signaling molecules, transcription factors, and transmembrane proteins, with specific examples including PI3 kinase pathway components, mitotic phosphatases PP1\u03b3 and PP2a\u03b2, centriole duplication regulators Plk4 and CP110, and histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are supported by gene ontology analysis (p<10^-8) and ribosome profiling data (Figure 2\u2014figure supplement 2). The PP1\u03b3/PP2a\u03b2 overexpression experiments (C73, Figure 2\u2014figure supplement 3) provide functional validation. The enrichment statistics and specific examples are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C102",
+      "C112",
+      "C128"
+    ],
+    "result": "The dominant function of gene-specific translational regulation during mitosis is to potently repress (rather than activate) synthesis of a relatively small subset of the proteome, acting on top of modest global repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C102, C112, C128 synthesize the findings showing predominantly repression over activation. This is well-supported by the quantitative data (182 repressed vs 17 activated in M vs G2). The conclusion is a direct inference from the ribosome profiling data and represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The CDK1 inhibitor used for G2 synchronization does not confound the results because: (1) G1 vs M comparison (no drug) yields similar results to G2 vs M, (2) CDK1 is inactive in G2, and (3) 4E-BP1 is not phosphorylated in G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 address a critical methodological concern with multiple lines of evidence: comparison of drug-free conditions (C106), citations about CDK1 activity (C107), and 4E-BP1 phosphorylation status (C108). This effectively rules out drug artifacts and validates the synchronization approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Two independent methodologies (ribosome profiling and fluorescence reporter assay) provide converging evidence for mitosis-specific translational repression, with good agreement in test cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 describe the orthogonal validation strategy. The agreement between methods (Figure 3D) strengthens confidence in both approaches. This methodological rigor is important for establishing the reliability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The distinct use of transcriptional and translational regulatory mechanisms is consistent with cell cycle transition timing: transcriptional regulation is slow (requiring hours) and suits G1-to-G2 transition, while translational control is rapid and reversible, suiting the short timescale of mitosis (<1 hour).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 present a mechanistic rationale for the observed regulatory patterns, supported by general knowledge of gene regulation kinetics and cell cycle timing. The comparison to dendritic cell activation (C117) provides supporting evidence. This is a well-reasoned interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C121",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Recent work challenged IRES-mediated translation in mitosis, finding cap-dependent translation dominates; IRES-mediated upregulation may be weak (<3-fold) and make only a minor contribution to the mitotic translational landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C121, C124-C127 discuss prior work on IRES-dependent translation with appropriate citations. The speculation about weak IRES effects (C124) is reasonable given cited evidence (C125). This contextualizes the current findings within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The gene-specific translational control program in mitosis is mechanistically distinct from meiotic translation: meiosis uses poly(A) tail regulation to activate mRNAs, while mitosis predominantly represses different gene sets; Emi1 is regulated in both but by different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C139 compare mitotic and meiotic translational regulation with appropriate citations. The Emi1 CPEB binding site mutation (C138) provides direct evidence for mechanistic differences. This effectively distinguishes the current findings from prior meiosis work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C144"
+    ],
+    "result": "Given that average protein half-life is many hours and mitosis takes <1 hour, translational repression during mitosis is not expected to substantially impact overall protein levels; transcriptional inhibition would be ineffective due to slow mRNA turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141, C144 present a logical argument based on protein half-life data (citation) and mRNA turnover kinetics. This reasoning explains why translational (not transcriptional) repression is used for rapid mitotic regulation and why it must target specific proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on cell cycle regulation: protein abundance changes during the cell cycle are regulated by transcription, protein degradation (especially APC-mediated), and translation efficiency; translational regulation is important in meiosis/development and has been described in somatic cells, including global repression during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C35 provide literature context with appropriate citations. These establish the background knowledge and identify gaps (e.g., C25, C32) that motivate the current study. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background on Emi1 function: In G2, Emi1 inhibits APC/Cdh1 to allow cyclin accumulation; in mitosis, Emi1 is inactivated by degradation and phosphorylation; APC/Cdh1 substrates (Aurora A, Plk1, CDC20) are degraded in anaphase/telophase in control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide established knowledge about Emi1 and APC regulation with appropriate citations (C88-C89) and experimental validation (C90-C92, Figure 4A-C, Figure 4\u2014figure supplement 1A). This background is essential for interpreting the Emi1 translational regulation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Emi1 mRNA does not localize to a specific site in the cell during mitosis, arguing against a role for UTRs in mRNA localization and indicating their primary function is translational repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by single molecule FISH data (Figure 4\u2014figure supplement 1D) showing no specific localization. This control experiment rules out an alternative explanation for UTR function and strengthens the translational repression model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "Of the proteins translationally repressed at the G2-to-M transition, very few are known to be degraded during mitosis, leaving open the question of why they are translationally repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 identifies a limitation in understanding the function of translational repression for most regulated genes. This is an honest acknowledgment based on current knowledge and motivates future work.",
+    "result_type": "MINOR"
+  }
+]

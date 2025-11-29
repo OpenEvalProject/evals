@@ -1,0 +1,2290 @@
+{
+  "submission": {
+    "id": "582475ed-e117-452d-b8ed-50d88939205c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:06:17.712609Z",
+    "updated_at": "2025-11-29T04:06:17.712609Z"
+  },
+  "content": [
+    {
+      "id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "submission_id": "582475ed-e117-452d-b8ed-50d88939205c",
+      "content_type": "manuscript",
+      "content_text": "# Structural evidence for Scc4-dependent localization of cohesin loading\n\n## Authors\n\n- Stephen M Hinshaw<sup>1</sup>\n- Vasso Makrantoni<sup>2</sup>\n- Alastair Kerr<sup>2</sup> ([ORCID: 0000-0001-9207-6050](https://orcid.org/0000-0001-9207-6050))\n- Ad\u00e8le L Marston<sup>2</sup>\n- Stephen C Harrison<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n2. Wellcome Trust Centre for Cell Biology, School of Biological Sciences University of Edinburgh Edinburgh United Kingdom\n3. Howard Hughes Medical Institute, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cohesin ring holds newly replicated sister chromatids together until their separation at anaphase. Initiation of sister chromatid cohesion depends on a separate complex, Scc2NIPBL/Scc4Mau2 (Scc2/4), which loads cohesin onto DNA and determines its localization across the genome. Proper cohesin loading is essential for cell division, and partial defects cause chromosome missegregation and aberrant transcriptional regulation, leading to severe developmental defects in multicellular organisms. We present here a crystal structure showing the interaction between Scc2 and Scc4. Scc4 is a TPR array that envelops an extended Scc2 peptide. Using budding yeast, we demonstrate that a conserved patch on the surface of Scc4 is required to recruit Scc2/4 to centromeres and to build pericentromeric cohesion. These findings reveal the role of Scc4 in determining the localization of cohesin loading and establish a molecular basis for Scc2/4 recruitment to centromeres.\n\n## Introduction\n\nTight association between sister chromatids is crucial for successful chromosome segregation in eukaryotic cell division. Cohesin, a ring-shaped protein complex that wraps around sister chromatids (Gruber et al., 2003; Haering et al., 2008) is the molecular agent of sister chromatid cohesion, which persists from the time of DNA replication until anaphase. A distinct protein complex containing Scc2NIPBL and Scc4Mau2 (Scc2/4) initiates linkage of cohesin with DNA (Ciosk et al., 2000), and an in vitro reconstitution of cohesin loading by Scc2/4 suggests that the product of this reaction is a topological protein\u2013DNA linkage (Murayama and Uhlmann, 2013). In metazoans, cohesin deposition by Scc2/4 is required for normal development (Dorsett et al., 2005; Kawauchi et al., 2009), and mutations in NIPBL, the human homolog of Scc2, are dominant and causally linked to a severe developmental disorder, Cornelia de Lange Syndrome (CDLS) (Krantz et al., 2004).\n\nIn addition to initiating a connection between cohesin and chromatin, Scc2/4 determines the timing and location of cohesin loading (Ciosk et al., 2000; Kogut et al., 2009). Cohesin enrichment at mitotic centromeres and pericentromeres results in tension across sister chromatids when paired kinetochores attach to opposite spindle microtubules (Tanaka, 2000). Mitotic spindle checkpoint signaling senses the tension between sister centromeres to ensure correct kinetochore\u2013microtubule attachments (Stern and Murray, 2001). Defective centromeric cohesion therefore leads to elevated rates of chromosome missegregation (Eckert et al., 2007; Fernius and Marston, 2009).\n\nCentromeric cohesion depends on recruitment of Scc2/4 to centromeres in late G1/early S phase (Hu et al., 2011; Fernius et al., 2013). A group of conserved kinetochore proteins\u2014the Ctf19 complex in yeast (homologous to the human CCAN)\u2014participates in this recruitment pathway, along with the S phase kinase complex, DDK (Fernius and Marston, 2009; Hu et al., 2011; Natsume et al., 2013). Deletion of any of several Ctf19 complex members leads to impaired centromeric cohesion and chromosome missegregation (Eckert et al., 2007; Fernius and Marston, 2009; Ng et al., 2009; Hu et al., 2011), but whether individual components make direct contact with Scc2/4 is not yet known.\n\nThe cohesin loading activity of Scc2/4 in vitro requires only Scc2 (Murayama and Uhlmann, 2013). Scc4 is essential in yeast, however, and in humans, de novo Mau2Scc4 missense and nonsense mutations are significantly underrepresented in exome sequences, indicating that disruption of Mau2Scc4 function is probably dominant and lethal (Table 1). Thus, Scc2 activity in vivo must depend on Scc4 in ways not recapitulated by the in vitro loading reaction. We report here the structure of yeast Scc4 in complex with an N-terminal fragment of Scc2 and demonstrate that Scc4 determines cohesin localization through a conserved patch on its surface. These findings show that Scc4 targets cohesin loading to a specific genomic locus and that this function is separable from its essential role in establishing sister chromatid cohesion across the genome.\n\n**Table 1.**\n De novo mutation profiles for human NIPBL and Mau2\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Observed</th>\n      <th>Expected</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">NIPBL</td>\n    </tr>\n    <tr>\n      <td>Synonymous</td>\n      <td>58</td>\n      <td>58.4</td>\n    </tr>\n    <tr>\n      <td>Missense</td>\n      <td>88</td>\n      <td>160.9</td>\n    </tr>\n    <tr>\n      <td>Loss of function</td>\n      <td>0</td>\n      <td>18.4</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Mau2</td>\n    </tr>\n    <tr>\n      <td>Synonymous</td>\n      <td>25</td>\n      <td>26.6</td>\n    </tr>\n    <tr>\n      <td>Missense</td>\n      <td>13</td>\n      <td>52.7</td>\n    </tr>\n    <tr>\n      <td>Loss of function</td>\n      <td>0</td>\n      <td>3.8</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\n### Structure of an Scc21\u2013181/Scc4 complex\n\nWe prepared full-length Scc2/4 by co-expressing both proteins in baculovirus-infected insect cells. Scc2 is a 1493 amino acid residue protein predicted to have an unstructured N-terminal segment and a C-terminal HEAT (Huntington, EF3, PP2A, TOR1)/ARM (Armadillo) repeat domain (Figure 1A). Scc4, also conserved among nearly all eukaryotes, is predicted to have an extensive TPR (TetratricoPeptide Repeat) architecture. Negative stain electron microscopy of the full-length complex showed two large globular structures, variably positioned relative to each other, which we interpret as corresponding to the Scc2 HEAT repeat module and Scc2N-Scc4 (Figure 1B). We used limited proteolysis and mass spectrometry to identify an Scc4-containing subcomplex (Figure 1\u2014figure supplement 1A). An N-terminal fragment of Scc2 (residues 1\u2013181 or 1\u2013205) is sufficient for stable association with full-length Scc4 (Figure 1C). Both the truncated complex of Scc21\u2013181/Scc4 and full-length Scc2/4 are heterodimers in solution (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain organization of Scc2/4. Dotted lines show the Scc2\u2013Scc4 interaction. An arrow indicates the position of a regulated cleavage site (Woodman et al., 2014). (B) Negatively stained Scc2/4 visualized by electron microscopy. Individual particles are shown. (C) Gel filtration chromatograms and SDS-PAGE show that Scc2FL/Scc4 (magenta, left inset) and Scc21\u2013181/Scc4 (purple, right inset) form stable complexes (* marks an Scc2 cleavage product).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Full-length recombinant Scc2/4 was digested with trypsin and analyzed by gel filtration. Fractions from peak B contain full-length Scc4 and the N-terminal 181 or 205 residues of Scc2. A scaled absorbance (A280) trace is shown above for reference. (B) SEC-MALS to determine the molecular weight of Scc2FL-Scc4 (top) and Scc21\u2013181-Scc4 (bottom). Dotted lines show calculated molecular weights for intact complexes. The measured molecular weights were as follows: 238.3 kDa for Scc2FL-Scc4; 104.1 kDa for Scc21\u2013-181-Scc4WT; 100.3 kDa for Scc21\u2013181-Scc4F324A; K327A; K331A; 103.0 kDa for Scc21\u2013181-Scc4K541A; K542A; and 98.8 kDa for Scc21\u2013181-Scc4L256A; Y298A; K299A; Y313A; F324A; K327A; K331A.\n\nWe obtained crystals of full-length Scc4 in complex with an N-terminal, 181-residue fragment of Scc2. Diffraction data collected from selenomethionine-substituted derivatives of these crystals allowed us to determine initial phases by single wavelength anomalous dispersion (SAD). We used an incomplete model, built into a 2.8 \u00c5 resolution map, to obtain phase information by molecular replacement for diffraction data from crystals of a native protein complex, extending to a minimum Bragg spacing of 2.1 \u00c5. Our final model includes residues 5\u2013383, 390\u2013527, and 536\u2013622 of Scc4 and residues 1\u201364, 73\u201395, and 106\u2013132 of Scc2 (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig2-v2.jpg)\n\n**Figure 2.:** (A) Rotated views of the Scc21\u2013181/Scc4 complex. Scc2 is shown in gray as a cartoon and transparent surface. Individual Scc4 repeats (R1-13) are colored as indicated in (B).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scc2N\u2013Scc4 crystal structure superimposed onto the crystal structure of the TPR domain of kinesin light chain 2 (teal) in complex with a cargo peptide (green; PDB 3ZFW). (B) Scc2N\u2013Scc4 crystal structure superimposed onto the crystal structure of a complex between LGN (teal) and NuMA (green; PDB 3RO2). In both cases, Scc4 TPRN is colored dark gray, and Scc4 TPRC is colored light gray. Only Scc2 residues in contact with the internal surface of Scc4 TPRN (Scc2G31-V64) are shown in magenta. For clarity, the remainder of Scc2 is either colored light gray (Scc21\u201330) or it is not shown (Scc265\u2013132).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Scc2 amino acid residues 5\u201340 are shown and colored according to conservation across diverse eukaryotes. 2Fo \u2212 Fc map contoured at 1.8\u03c3 is shown. Boxes indicate a subset of residues mutated in (C). (B) Alignment of Scc2 amino acid sequences from diverse eukaryotes. The N-terminal fragments from all included sequences were selected, and the alignment was recalculated for this region (shown). Redundant sequences and sequences lacking this fragment of Scc2 have been removed. (C) SCC2 alleles under the control of their native promoter were tested for the ability to restore viability to an SCC2-AID strain in depletion conditions (500 \u00b5M auxin). \u03941-138 indicates removal of Scc2 residues 1\u2013138. 192STOP indicates removal of all residues following Scc2Leu192. Scc2V1361R mimics a CDLS-associated NIBPL allele found in a human patient (Tonkin et al., 2004).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** SCC2 or SCC4 under the control of its native promoter was tested for the ability to restore viability to a pGAL1-SCC4 strain in depletion conditions (2% glucose [wt:vol]). scc2\u03941\u2013138 indicates removal of Scc2 residues 1\u2013138.\n\nScc4 is a superhelical array of 13 TPR modules with a beta ribbon insertion between repeats 6 and 7 (Figure 2B). This tightly wrapped solenoid brings successive turns in contact with each other, and the concave surface becomes an axial groove. Repeat 8, which has a particularly long first helix, lacks a second helix and has instead an extended segment with a disordered surface loop. This irregularity divides the solenoid into two subdomains, TPRN (Scc41\u2013384) and TPRC (Scc4391\u2013624) (Figure 2A).\n\nResidues 10\u201350 of Scc2 snake along the continuous inner cavity of Scc4 and emerge at both ends, with the N-terminus of Scc2 close to the C-terminus of Scc4. Examples of similar TPR-peptide interfaces include the interaction of the kinesin light chain with cargo peptides (Figure 2\u2014figure supplement 1A) (Pernigo et al., 2013) and the interaction of the cell polarity-determining LGN protein with its binding partners nuclear mitotic apparatus protein 1 (NuMA) and mInscutable (Figure 2\u2014figure supplement 1B) (Zhu et al., 2011). The extended conformation of Scc21\u2013181 clearly depends on its contacts with the surrounding Scc4; it is likely to be unstructured in the absence of its partner. The Scc2\u2013Scc4 interaction has two unusual features. First, the concave surface of Scc4 is entirely enclosed, and Scc2 dissociation would therefore require either unfolding or proteolysis of Scc2 or Scc4. In fact, regulated proteolysis of Scc2 has been reported recently (Woodman et al., 2014). Second, residues 58\u2013132 of Scc2 extend beyond the axial groove and make extensive contact with the external surface of Scc4.\n\n### Conserved Scc2\u2013Scc4 contacts\n\nHuman Mau2Scc4 binds the N-terminus of human NIPBLScc2 (Braunholz et al., 2012), but the primary sequence of NIPBL bears little resemblance to that of Scc21\u2013181. We compiled sequence alignments for the N-terminus of Scc2 from divergent eukaryotes, including yeasts and humans, and mapped amino acid conservation onto its structure (Figure 2\u2014figure Supplement 2A,B). Despite their low level of overall sequence conservation, Scc2/NIPBL proteins have conserved amino acid residues at buried positions that contact Scc4. Several Scc2\u2013Scc4 contacts on the external face of Scc4 are also conserved, including Scc2F86, which stacks onto Scc4Y40-Y41, and Scc2112\u2013120, which forms a helix that fits over a hydrophobic surface on Scc4 TPRN. We found that Scc2 variants mutated at conserved residues contacting either the concave or the external surface of Scc4 were less effective than wild-type Scc2 in restoring viability to an Scc2-degron (SCC2-AID) strain under depletion conditions (Figure 2\u2014figure supplement 2C). The phenotype of these mutants was comparable to the phenotype we observed when we removed the entire Scc2 fragment visible in the crystal structure (\u03941\u2013138).\n\nIf cohesin loading can occur in the absence of Scc4 in vitro (Murayama and Uhlmann, 2013) and to some extent in the absence of the Scc4-binding region of Scc2 in vivo, why is SCC4 an essential gene? We found that supplementing the chromosomal copy of SCC2 with a plasmid coding for Scc2 or Scc2\u03941\u2013138 complemented transcriptional repression of SCC4 (pGAL1-SCC4). That is, increasing the SCC2 gene copy number bypassed the effect on viability of transcriptional repression of SCC4, and the bypass did not require the Scc4-binding region of Scc2 (Figure 2\u2014figure supplement 3). Because this region of Scc2 is probably unstructured when not bound by Scc4, it is a plausible cause of instability or aggregation when expressed unprotected. One reason why Scc4 is essential may therefore be that Scc2 is unstable in its absence.\n\n### A conserved surface patch on Scc4\n\nMapping Scc4 sequence conservation onto our structure revealed a cluster of extremely conserved, solvent-facing residues, some of them invariant among all eukaryotes we examined (Figure 3A,B). We found unaccounted-for electron density in this patch, into which we modeled a sulfate group. Because bound sulfates often mark phosphate binding sites in crystal structures (Bax et al., 2001), we tested the effects of mutating conserved residues that contribute to this patch. Strains in which the endogenous copy of SCC4 had been replaced by SCC4 coding for mutations at these residues were viable but displayed a plasmid missegregation phenotype (Figure 3\u2014figure supplement 1A). Combined mutation of seven of the most conserved residues (scc4L256L; Y298A; K299D; Y313A; F324A; K327D; K331D; scc4m7) did not inactivate Scc4, as strains bearing these substitutions were fully viable and had a plasmid segregation phenotype comparable in strength to that of strains bearing mutations only at positions 324, 327, and 331 (scc4F324A; K327D; K331D; scc4m3) (Figure 3\u2014figure supplement 1B,C). Recombinant Scc21\u2013181-Scc4 complexes bearing these mutations behaved identically to wild-type preparations (Figure 1\u2014figure supplement 1B), indicating that perturbation of the conserved Scc4 patch does not impair the stability or folding of the rest of the protein.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig3-v2.jpg)\n\n**Figure 3.:** (A) Surface view of Scc4 colored according to primary sequence conservation across eukaryotes. Inset shows the Scc4-conserved patch with mutated residues labeled and colored according to their effect on plasmid segregation fidelity (Figure 3\u2014figure supplement 1). (B) Multiple sequence alignment of Scc4 and homologs from fungi and metazoans. Alignment is colored by conservation according to the color scheme in (A). (C) Plasmid missegregation was measured for the indicated strains (scc4m3\u2014scc4F324A; K327D; K331D; error bars indicate SD; * p < 0.05, Student's t-test vs WT, two tails; n.s. indicates p > 0.05.). The dotted line shows the rate of plasmid segregation in a WT background. (D) Spindle length measurements for each indicated strain arrested in S phase with hydroxyurea. The dotted line shows the WT mean spindle length (error bars indicate SD; * p < 0.05, Student's t-test vs WT, two tails).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Plasmid segregation in the absence of selection was measured in a chl4\u0394 strain and in strains with the listed Scc4 amino acid substitutions (error bars indicate SD; *p < 0.05, Student's t-test vs WT, two tails). The dotted line shows the rate of plasmid segregation in a WT background. (B) Plasmid missegregation was measured for the indicated strains (scc4m3\u2014scc4F324A; K327D; K331D; n.s. indicates p > 0.05). (C) DNA content was measured by flow cytometry in log-phase cultures of homozygous diploids with the indicated genotypes.\n\nStrains lacking the Ctf19 complex subunit Chl4 (CENP-N in humans) are defective in centromeric cohesin loading because they cannot preferentially localize Scc2/4 to centromeres, although cohesin loads normally elsewhere in the genome (Fernius et al., 2013). To determine whether the Scc4-conserved patch functions in the same pathway as Chl4, we introduced the scc4m3 mutation into a chl4\u0394 strain and tested for its effect on plasmid segregation (Figure 3C). Inclusion of scc4m3 does not augment the severe plasmid loss phenotype caused by CHL4 deletion. This relationship also holds true for scc4m7 (Figure 3\u2014figure supplement 1B). Strains lacking Chl4 have extended metaphase spindles, and this phenotype corresponds to weakened centromeric cohesion (Fernius and Marston, 2009; Laha et al., 2011). We found that an scc4m3-bearing strain exhibited increased inter-spindle pole distances and that the scc4m3 mutation did not exacerbate the spindle extension phenotype of a chl4\u0394 strain (Figure 3D). Moreover, GFP-labeled sister centromeres (Figure 4\u2014figure supplement 1A), but not chromosome arms (Figure 4\u2014figure supplement 1D\u2013G), were separated more frequently and to greater distances in strains mutated at 5 positions in the conserved patch on Scc4 (scc4F324A; K327A; K331A; K541A; K542A; scc4m35). We conclude that the conserved Scc4 patch promotes centromeric cohesion and that it does so in a manner that may also depend on CHL4.\n\n### Scc4 mutations disrupt centromeric cohesin loading\n\nThese results suggest that interactions at the Scc4-conserved patch target Scc2/4 specifically to centromeres. To test this hypothesis, we measured Scc2 and cohesin localization by chromatin immunoprecipitation (ChIP). Perturbation of the conserved patch (either scc4m35 or scc4m7) eliminates centromeric localization of Scc2 in mitotic cells and reduces association of the cohesin subunit, Scc1, with the centromere and pericentromere, but not with chromosome arms (Figure 4B,C, Figure 4\u2014figure supplement 2A\u2013D). We also observed this pattern of Scc2 localization in cells progressing through S phase (Figure 4\u2014figure supplement 2E,F), the stage at which cohesin loading is initiated (Kogut et al., 2009; Natsume et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig4-v2.jpg)\n\n**Figure 4.:** (A) Sister centromeres (+2.4CEN4-GFP) are separated earlier and more frequently in an scc4m35 strain entering the cell cycle after a G1 arrest. pMET-CDC20 strains of the indicated genotypes (gray\u2014wild type; magenta\u2014SCC4 integrated; blue\u2014scc4m35 integrated) were arrested in G1 with alpha factor and released into the cell cycle in the presence of methionine to repress CDC20 expression. Solid lines show the percent of cells with separated CEN4 dots, and dotted lines show the percent of cells with separated spindle pole bodies (Spc42-tdTomato). (B) Strains of the indicated genotypes and either Scc2-His6-3FLAG (top) or Scc1-6HA (bottom) were arrested in metaphase of mitosis following treatment with nocodazole and benomyl (to depolymerize microtubules). Cells were harvested after 2 hr. Anti-FLAG or anti-HA antibodies were used for ChIP, and pulldown samples were analyzed by qPCR. Mean values of four independent experiments are shown (error bars indicate \u00b1SD; * p < 0.05; **p < 0.01 paired two-tailed t-test). (C) Schematic of a fragment of chromosome IV showing the location of qPCR amplicons used in (B). (D) Scc1 enrichment in a 50-kb domain surrounding all 16 budding yeast centromeres is shown for wild-type and scc4m35 cells. For both wild type and scc4m35, the ratio of reads (normalized to RPM) over input in a 100-bp window was calculated separately for each chromosome at the indicated position. The median count value for each window was then plotted to give a composite view of all 16 pericentromeres. (E) Scc1 enrichment along chromosome V together with a magnification of a 50-kb region including the centromere is shown. The number of reads at each position was normalized to the total number of reads for each sample (RPM: reads per million) and shown in the Integrated Genome Viewer from the Broad Institute (Robinson et al., 2011). (F) Live cell imaging of homozygous diploid cells expressing Scc2-GFP, Mtw1-tdTomato to mark centromeres, and the indicated version of Scc4 (left\u2014wild type; right scc4m7). GFP dots observed in wild-type cells are marked with white arrows in the first frame in which they are visible, and these foci were not observed in scc4m7 cells. Time is given relative to the start of the imaging session (hr:mm). (G) Quantification of live cell imaging. At least 10 budding cells per field (three fields of view each for each strain for three separate experiments) were scored for the presence of an Scc2-GFP focus (error bars indicate \u00b1SD; *p < 0.005, two-tailed t-test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Quantification of CEN4 (A) and SPB (B) spreading observed in Figure 4A. Representative live cell images are shown at right (green\u2014centromeres; red\u2014Spc42\u2014spindle poles). (C) Budding index corresponding to measurements shown in Figure 4A. (D\u2013G) Cells of the indicated genotypes carrying pMET-CDC20, SPC42-tdTomato, and GFP at various loci were arrested in G1 with \u03b1-factor and released into the medium containing methionine. Percentages of separated GFP loci were scored at the indicated time points with tet operators integrated at: (A) +4.5CEN6-GFP in wild type (AM5329) and scc4m35 (AM15971); (B) \u221212.6CEN5-GFP in wild type (AM5545) and scc4m35 (AM16203); (C) \u221217.8CEN5-GFP in wild type (AM5533) and scc4m35 (AM15973); and (D) URA3-GFP in wild type (AM1081) and scc4m35 (AM16084). Distances are given from the start of the tetO array from the centromere.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Strains from Figure 4B were arrested in metaphase of mitosis following treatment for 2 hr with nocodazole and benomyl (to depolymerize microtubules). Anti-FLAG (top) or anti-HA (bottom) antibodies were used for ChIP, and samples were analyzed by qPCR. Mean values of four independent experiments are shown (error bars indicate \u00b1SD; * p < 0.05; **p < 0.01 paired two-tailed t-test). (B\u2013C) Whole cell extracts from strains used in (A) were analyzed by Western blot for expression of Scc2-6HIS-3FLAG (B), Scc1-6HA (C), and Pgk1. (D) Strains AM1176 (no tag), AM6006 (SCC2-6HIS-3FLAG), AM15307 (SCC2-6HIS-3FLAG SCC4) and AM17882 (SCC2-6HIS-3FLAG scc4m7) or Strains AM1176 (no tag), AM1145 (SCC1-6HA), AM15540 (SCC1-6HA SCC4) and AM17885 (SCC1-6HA scc4m7) were arrested in metaphase of mitosis following treatment with nocodazole and benomyl (to depolymerize microtubules). Cells were harvested after 2 hr. Anti-FLAG or anti-HA antibodies were used for ChIP, and samples were analysed by qPCR. Mean values of four independent experiments are shown (error bars indicate \u00b1SD; *p < 0.05; **p < 0.01 paired two-tailed t-test). (E) Strains shown are AM1176 (no tag), AM6006 (SCC2-6HIS-3FLAG), AM15307 (SCC2-6HIS-3FLAG SCC4), and AM15311 (SCC2-6HIS-3FLAG scc4-m35). Cells were first arrested in G1 using alpha factor and harvested 15 min after release from G1. An anti-FLAG antibody was used for ChIP, and isolated chromatin was analyzed by qPCR. Mean values of four independent experiments are shown (error bars indicate \u00b1SD; *p < 0.05; paired two-tailed t-test). Cells were stained with propidium iodide and analyzed by flow cytometry (FACS) to confirm entry into S phase. Samples were taken prior to release from G1 (0 min) and 15 min after release. (F) Cells were stained with propidium iodide and analyzed by flow cytometry (FACS) to confirm entry into S phase. Samples were taken prior to release from G1 (0 min) and 15 min after release.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06057/elife-06057-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** ChIP-seq data from Figure 4D,E is shown for each individual centromere. Transformed sample-to-input ratios are shown for a 20-kb region surrounding each centromere (blue\u2014wild type; red; scc4m35).\n\nWe further analyzed Scc1 localization by ChIP followed by high-throughput sequencing (ChIP-seq) and found that all 16 centromeres were specifically depleted of Scc1 in the scc4m35 background (Figure 4\u2014figure supplement 3). Scc1 depletion extended roughly 10 kilobases to either side of the core centromere but not to chromosome arms (Figure 4D,E). Moreover, centromeric Scc2-GFP signal, normally visible in wild-type cells and eliminated by CHL4 deletion (Fernius et al., 2013), was lost upon mutation of the Scc4-conserved patch (Figure 4F,G). These results indicate that, like Chl4, a specific interaction surface on Scc4 is required to target cohesin loading to centromeres.\n\n## Discussion\n\nCohesin targeting to specific genomic locations is required in all species for robust centromeric cohesion and for tissue-specific transcriptional programs in multicellular organisms (Kawauchi et al., 2009; Fay et al., 2011). DNA sequences per se do not drive cohesin loading (Onn and Koshland, 2011; Murayama and Uhlmann, 2013). Instead, targeting likely depends on interactions between the loading complex and chromatin-associated factors. We have determined the structure of Scc4 bound to a minimal fragment of Scc2, and we have used this structure to derive separation of function alleles that uncouple cohesin loading from cohesin targeting to centromeres. These experiments demonstrate that cohesin targeting in yeast depends on Scc4. This finding is consistent with unpublished genetic evidence for an Scc4-dependent cohesin localization pathway (Nasmyth, personal communication). Because the pathway that targets cohesin to centromeres requires Scc4 residues that are, in some cases, invariant across diverse eukaryotes, we suggest that the Scc4-dependent cohesin targeting we describe is a general feature of the control of cohesin loading.\n\nConsistent with previous reports (Fernius et al., 2013; Natsume et al., 2013), we find that the centromeric enrichment of cohesin loading is not essential for viability and that arm cohesion is unaffected in strains in which this pathway is compromised. These results probably reflect two modes for cohesin loading: one that depends on a conserved patch of Scc4 and happens at centromeres, and a second opportunistic mode that happens everywhere on the chromosome and is sufficient to support viability in the absence of the first mode. If so, Scc4-conserved patch mutations would not eliminate cohesin loading but would redistribute loading events, resulting in similar cohesin levels at centromeres and on chromosome arms. This prediction is borne out both by strains bearing Scc4-conserved patch mutations and by strains lacking CHL4 (Fernius and Marston, 2009).\n\nRecent reports have shown that cohesin targeting to specific locations along the chromosome arms of fission yeast (Mizuguchi et al., 2014) and flies (Oliveira et al., 2014) is critical for normal three-dimensional chromosome structure. In addition to findings from studies conducted in mammalian cells (Dowen et al., 2014), one of these reports (Mizuguchi et al., 2014) suggests that cohesin complexes residing at specified sites in the genome function in gene looping and in defining chromosome territories. Because our ChIP-seq experiments show that Scc4 directs cohesin localization to broad centromeric domains but does not affect the local distribution of cohesin peaks, we suggest that the Scc4-dependent localization pathway we discuss here is overlaid upon local determinants of cohesin positioning on chromosomes. These local determinants would be a second level of cohesin regulation, operating at roughly the resolution of the transcriptional units in yeast. Integration of these spatial cues with temporal cues, including the kinase activity of DDK, could then generate the final cohesin distribution observed in metaphase cells. The Scc4-conserved patch presents a possible explanation for how broad cohesin-dense domains may be specified by the cohesion-loading complex, and it provides a molecular foundation for the study of chromatin-associated factors, both known and unknown, that localize cohesin loading.\n\n## Materials and methods\n\n### Exome analysis\n\nAnalysis of exome data sets was performed as described (Samocha et al., 2014).\n\n### Plasmids\n\nCoding sequences for Scc2 and Scc4 were amplified from yeast genomic DNA and inserted into a modified version of pFastbac (Life Technologies, Carlsbad, CA) suitable for ligation-independent cloning. The expression vector contains an N-terminal 6-His tag followed by a TEV protease sequence. Full-length Scc4 and fragments of the Scc2 coding sequence were cloned by the same procedure into a bacterial expression vector for expression from a single mRNA. The coding sequences for both genes were augmented such that each contains an N-terminal 6-His tag followed by a TEV protease cleavage site.\n\nFor complementation experiments, the Scc2 or Scc4 locus was amplified from Saccharomyces cerevisiae genomic DNA by PCR and cloned by restriction digest into a plasmid containing a CEN-ARS cassette and a selectable auxotrophic marker (LEU2). Genomic regions included were as follows: Scc2\u2014chrIV:820797\u2013825978; Scc4\u2014chrV:465380\u2013462755. We used PCR stitching and isothermal assembly to generate mutated versions of these constructs.\n\n### Yeast strains and culture conditions\n\nYeast strains bearing Scc4 point mutations or gene deletions were constructed using PCR methods as previously described (Longtine et al., 1998). All Scc4-conserved patch mutations described in this text were achieved by replacement of the native SCC4 locus. Viability of s288c strains expressing SCC4 mutants was first confirmed by complementation of pGAL1-SCC4 repression as shown for Figure 2\u2014figure supplement 3 using plasmids bearing the SCC4 chromosomal locus. Viability of the scc4m7 strain was determined by FACS analysis of homozygous diploid cells and during strain construction by sequential sporulation of the diploid imaging strains. To generate w303 strains carrying scc4 alleles, diploid strain (AM14499) carrying a heterozygous deletion (scc4\u0394::KanMX6) was transformed with a PCR product corresponding to full-length SCC4 (or its mutant derivatives) and a downstream marker (HIS3). G418-sensitive, histidine prototrophs were sporulated, and SCC4 mutations were confirmed in the haploids by sequencing. All Scc2-GFP strains are derivatives of Scc2-GFP from the Yeast GFP Clone Collection (Huh et al., 2003). Strains for live cell imaging were constructed by integration of an Mtw1-tdTomato PCR into the Scc2-GFP strain followed by mating to achieve the final diploid strains. Plasmid segregation experiments were performed essentially as described previously (Hinshaw and Harrison, 2013).\n\nAuxin-inducible degron-tagged Scc2 (SCC2-AID) was generated using PCR methods (Nishimura et al., 2009). For complementation assays, SCC2-AID cells bearing a CEN-ARS (Chr VI) plasmid encoding Scc2 flanked by its native control elements were grown to mid-log phase in synthetic complete (SC) medium lacking leucine (to select for the plasmid). Cells were plated in a fivefold dilution series on a solid SC medium lacking leucine and supplemented with the indicated amount of 1-Naphthaleneacetic acid (Auxin; Sigma-Aldrich, St. Louis, MO). Benomyl and nocodazole were used at 30 \u03bcg/ml and 15 \u03bcg/ml, respectively.\n\n### Protein expression and purification\n\nRecombinant baculoviruses for His6-Scc2 and His6-Scc4 were amplified separately in Sf21 cells (Life Technologies) for three passages. For protein expression, Trichoplusia ni cells grown in suspension in Ex-Cell405 medium (Sigma\u2013Aldrich) were infected with equal amounts of both viruses, and cells were pelleted and resuspended for freezing in lysis buffer (40 mM HEPES pH 7.5, 20 mM imidazole, 50 mM NaCl, 10% glycerol, and 2 mM \u03b2-mercaptoethanol) after 72 hr. Upon thawing and addition of protease inhibitors (4 \u03bcM aprotinin, 1 \u03bcM leupeptin, 1.4 \u03bcM pepstatin, and 1 mM PMSF), NaCl was added to a final concentration of 800 mM, and cells were broken by Dounce homogenization and sonication. Insoluble material was pelleted by centrifugation for 30 min at 18,000 rpm in a JA-20 rotor (Beckman-Coulter, Pasadena, CA). 6-His-tagged Scc2/4 complexes were isolated from the supernatant by Co2+ affinity chromatography followed by ion exchange chromatography (HiTrap SP HP, GE Healthcare, UK) and size exclusion chromatography (Superdex 200 20/16, GE) in gel filtration buffer (20 mM Tris\u2013HCl pH 8.5, 200 mM NaCl, 1 mM TCEP).\n\nTo isolate Scc2N\u2013Scc4 complexes, polycistronic expression vectors (described above) encoding these proteins under the control of a single T7 promoter were transformed into the Escherichia coli strain Rosetta 2(DE3)pLysS (Millipore, Billerica, MA), and protein expression was induced with 400 \u03bcM IPTG at an OD600 of approximately 0.5. Bacterial cultures were further incubated overnight at 18\u00b0C. Cells were resuspended and frozen in lysis buffer containing 800 mM NaCl. Upon thawing and addition of protease inhibitors, cells were lysed by sonication, and 6-His-tagged proteins were purified as described for full-length Scc2/4. Selenomethionine-derivatized (SeMet) Scc2181-Scc4 samples were prepared as described for native protein samples with the exception that growth medium was prepared as described previously (Hinshaw and Harrison, 2013).\n\n### Electron microscopy and SEC-MALS\n\nPurified Scc2/4 was diluted in gel filtration buffer and adsorbed to glow discharged carbon-coated copper grids. After staining with 0.75% (wt/vol) uranyl formate, grids were imaged using a CM10 electron microscope (Philips, Amsterdam).\n\nFor size exclusion chromatography coupled to multiple angle light scattering (SEC-MALS), experiments were performed essentially as described previously (Hinshaw and Harrison, 2013) with the exception that a 3-ml size exclusion column was used for analysis of truncated Scc2N\u2013Scc4 complexes (Superdex 200 5/150 GL; GE Healthcare).\n\n### Crystallization and structure determination\n\nCrystals of Scc21\u2013181-Scc4 formed overnight at 18\u00b0C. For native crystals, the protein was concentrated in gel filtration buffer to 18 mg/ml and mixed in a 1-to-1 ratio (vol:vol) with crystallization buffer (0.2M ammonium sulfate, 16% [wt:vol] PEG 3350). Crystals were washed first in wash buffer (160 mM NaCl, 16 mM Tris\u2013HCl pH 8.5, 1 mM TCEP, 14.4% PEG 3350, and 0.16M ammonium sulfate) and then in wash buffer supplemented with 30% (vol:vol) glycerol before flash freezing in liquid nitrogen. SeMet-derivative crystals were concentrated to 18 mg/ml, and diffracting crystals formed in crystallization buffer with 20% (wt:vol) PEG 3350. These crystals were frozen as described for native versions. All diffraction data were collected on NE-CAT beamline 24ID-E. Data were indexed and scaled with XDS (SeMet) (Kabsch, 2010) or HKL2000 (native data) (Otwinowski and Minor, 1997).\n\nThe structure of Scc21\u2013181-Scc4 was initially determined by SAD. To locate selenium atoms, we used SHELXD as implemented by HKL2MAP (Pape and Schneider, 2004). A search for 20 heavy atom sites with a resolution cutoff of 4 \u00c5 yielded a solution with 28 heavy atom positions. A truncated list of coordinates for 18 heavy atoms was used to generate an initial map at 3 \u00c5 resolution using Phenix Autosol (Adams et al., 2010). After density modification using Resolve (as implemented by Phenix), the map displayed extensive density corresponding to alpha helices. Placement of ideal helices and refinement using Phenix Refine yielded a partial structure, which was then used as a search model for phase determination by molecular replacement using a high-resolution native data set and Phaser-MR. During later stages of refinement, riding hydrogens were included, and TLS groups were invoked for Scc4 (Painter and Merritt, 2006). Crystallography statistics are shown in Table 2, and the coordinates have been deposited in the Protein Data Bank, accession number 4XDN.\n\n**Table 2.**\n Crystallographic data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Scc21\u2013181; Scc4 (SeMet)</th>\n      <th>Scc21\u2013181; Scc4 (Native)</th>\n    </tr>\n    <tr>\n      <th colspan=\"3\">Data collection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Resolution (\u212b)</td>\n      <td>30.0\u20132.8</td>\n      <td>178\u20132.0</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u212b)</td>\n      <td>0.979210</td>\n      <td>0.979240</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n      <td>P21</td>\n    </tr>\n    <tr>\n      <td>Unit cell dimensions (a, b, c) (\u212b)</td>\n      <td>58.6, 89.0, 178.0</td>\n      <td>51.9, 178.1, 52.7</td>\n    </tr>\n    <tr>\n      <td>Unit cell angles (\u03b1, \u03b2, \u03b3) (\u00b0)</td>\n      <td>90, 90, 90</td>\n      <td>90, 111.7, 90</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3 (last shell)</td>\n      <td>11.6 (1.9)</td>\n      <td>6.0 (1.3)</td>\n    </tr>\n    <tr>\n      <td>Rsym (last shell) (%)</td>\n      <td>14.1 (92.3)</td>\n      <td>11.0 (72.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (last shell) (%)</td>\n      <td>99.7 (90.0)</td>\n      <td>93.0 (89.7)</td>\n    </tr>\n    <tr>\n      <td>Number of reflections</td>\n      <td>168241</td>\n      <td>154940</td>\n    </tr>\n    <tr>\n      <td>unique</td>\n      <td>23460</td>\n      <td>50878</td>\n    </tr>\n    <tr>\n      <td>Number of Se sites</td>\n      <td>18</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n### Spindle pole separation assay\n\nLog-phase cultures grown in SC medium were arrested in S phase with 10 mg/ml hydroxyurea for 90 min. Cells were fixed at room temperature for 10 min with 3.7% formaldehyde, washed twice with phosphate buffered saline, pH 8.5, and resuspended in wash buffer containing 1.2 M sorbitol. Cells were immobilized on concanavalin-A-coated cover slips and imaged using a Nikon Ti motorized inverted microscope with a 60\u00d7 objective lens (NA 1.4) and a Hamamatsu ORCA-R2 cooled digital camera. Z-stacks (11 \u00d7 0.3 \u00b5m) were acquired with MetaMorph image acquisition software, and maximum z-projections were generated with ImageJ.\n\nTo calculate spindle pole distances, we wrote a Matlab script that identifies Spc110-mCherry foci and calculates a distance to the nearest neighbor for each instance. The list of distances was filtered to remove redundant measurements and to remove measurements arising from S phase spindles that straddled the edge of the image (distance measurements surpassing 32.9 \u03bcm).\n\n### CENIV dot and Spc42 separation\n\nCell growth and measurements were carried out as described previously (Fernius et al., 2013). Strain genotypes are listed in the strain table (Supplementary file 1).\n\n### Live cell imaging\n\nCells were grown in an SC medium overnight and diluted 1:20 (vol:vol) the next morning. After 6 hr, cells were immobilized on concanavilin A-coated cover slips and a fresh SC medium was applied. Experimental and control strains were loaded in adjacent imaging chambers, and cells were maintained at 30\u00b0C with high humidity using a Tokai Hit stage top incubator. Live cell images were captured using the imaging setup described above with the exception that Z-stacks (8 \u00d7 0.3 \u00b5m) were acquired every 8 min. We used exposure times of 10 ms (tdTomato) and 200 ms (GFP) for each image. Maximum intensity projections were generated with ImageJ for each timepoint, and figures were created with Nikon Elements software using identical processing steps and settings for each image.\n\n### Chromatin immunoprecipitation and qPCR\n\nChIP-qPCR and sequencing experiments were carried out as described previously (Fernius et al., 2013; Verzijlbergen et al., 2014). Scripts, data files, and workflows used to create the ChIP-Seq figures can be found on the github repository at https://github.com/AlastairKerr/Hinshaw2015. ChIP-Seq data sets have been deposited with the NCBI Gene Expression Omnibus under the accession number GSE68573.\n\n### FACS analysis\n\nFlow cytometry was performed as previously described (Fernius et al., 2013). 5,000 cells were analyzed for each sample.\n",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "ea6e612c-1aff-4bd7-94d0-b03851f981a1",
+      "submission_id": "582475ed-e117-452d-b8ed-50d88939205c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leemor Joshua-Tor, Cold Spring Harbor Laboratory , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06057.017](https://doi.org/10.7554/eLife.06057.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStructural evidence for Scc4-dependent localization of cohesin loading\u201d for consideration at eLife. Your article has been favorably evaluated by James Manley (Senior editor) and three reviewers, including Kim Nasmyth and Leemor Joshua-Tor, who is a member of our Board of Reviewing Editors. However, a number of points require attention, as described below.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper reports on a crystal structure of a complex, between Scc4 and the N-terminus of Scc2. The Scc2/4 complex is essential for loading cohesin onto chromosomes. It has also been implicated in regulating chromosome structure and in controlling gene expression. Haplo-insufficiency of its Scc2 subunit (Nipbl) causes Cornelia de Lange syndrome in humans, an effect thought but not yet proven to be due to subtle defects in cohesin's genomic distribution. It has been proposed but not yet proven that cohesin loading corresponds to entrapment of DNAs by cohesin rings. If so, the function of Scc2/4 must be to facilitate DNA entry, presumably by opening transiently one of the interfaces connecting its Smc1, Smc3, and kleisin subunits. It has been reported that Scc2's ortholog in S.pombe, Mis4, can promote the stable association of cohesin with DNA in vitro in the absence of Scc4 but whether this association is truly topological is not known. How then does Scc2/4 facilitate cohesin loading and what is the function of Scc4 if it is not directly involved in the loading reaction? These are questions of central importance for the cohesin field and, because cohesin is just one of several related Smc/kleisin complexes, a topic of broad general interest for the field of chromosome biology.\n\nThe reviewers felt that the structure is an important advance to the field; however, the functional experiments are not performed using state of the art methodologies, as will be elaborated upon below, and the conclusions based on them do not appear to be justified by the data presented in the paper. Many of these should be straightforward to rectify and the authors are encouraged to consider resubmission upon completion of the following:\n\n1) More extensive mutagenesis of the surface on Scc4.\n\n2) Since ChIP with Scc2 is unreliable, results should be backed up by live cell imaging, which is more reliable and a better reflection of what is going on in the cell. This should be done using state of the art imaging (see point 8).\n\n3) Whole genome comparisons of ChIP data would be a more rigorous way of demonstrating that Scc4 is concerned with loading cohesin around centromeres and not along arms. Such a conclusion is hard to make merely on the basis of analyzing a few sequences.\n\nMajor comments:\n\nThe structure reveals that Scc4 forms a superhelical array of TPR modules, as predicted from sequence analyses, and that the N-terminal residues of Scc2 snake along its inner cavity, which is entirely novel information. As might be expected, mutation of conserved residues within Scc2's NTD making contact with Scc4 compromise viability, as does deletion of the entire NTD. This is not unexpected as Scc4 itself is an essential gene. Mapping sequence variation onto the Scc4 structure revealed a cluster of highly conserved surface residues, mainly basic and hydrophobic. One might think therefore that this would prove to be a key surface through which Scc4 facilitates cohesin loading. Strangely, mutation of five residues within this conserved patch was not lethal (though the documentation here was inadequate). It did however appear to compromise recruitment of Scc2 to centromeres and to reduce the loading of cohesin onto peri-centric DNAs but not onto chromosome arms. Curiously, the anomaly of the most conserved part of Scc4 not being essential for loading cohesin onto chromosomes is not discussed in the manuscript, which is odd. The paper concludes that Scc4's conserved patch is required for peri-centric cohesin loading but not for a second \u201copportunistic\u201d mode that occurs elsewhere on the chromosome (note that it is this second so called opportunistic mode that seems essential!). The paper also concludes that one of the functions of Scc4 is to mediate Scc2 stabilization, a statement for which there was no adequate justification. Though the structure appears to imply that this would be the case, this should be supported by some biochemical data (see below).\n\nThe claim that Scc4's conserved patch is not in fact essential for its function is a surprising one. Bold claims require exceptional documentation and sadly this is lacking here. From the structural figure supplied and the accompanying sequence variation, it would appear that L256, Y298, K299, Y313, F324, K327, and possibly K331 are the key surface conserved residues. And yet, for some reason the mutant Scc4 with the most extensive alterations in its conserved patch was scc4m35, which contained F324A, K324A (presumably this should be K327A -typo?), K331A, K541A, and K542A. In other words, several of the key residues within the patch were left unmutated while residues that appear less conserved (K541 and K542, only conserved in S. cerevisiae like yeasts according to the figure) were mutated. If one wished to establish whether or not the conserved patch really is non-essential and has a specialized role in recruiting cohesin to centromeres, then one really needs to obliterate the nature of this surface and see whether the same results are obtained. What if mutating L256, Y298, K299, Y313, F324, K327, and K331 simultaneously were lethal? Would this not greatly alter the thrust of the paper and the interpretation of the results? Would it not imply that in fact, scc4m35 is a hypomorph (with regard to the function of the conserved patch) and that the selective reduction in cohesin loading at centromeres arises because efficient loading at this location is more sensitive to a partial loss of function than loading along chromosome arms? This is a serious issue but not one that would require an inordinate amount of work to address. Making such mutants, characterizing their (non-?) effect on Scc2/4 complex formation in vivo, and a far more careful analysis of their phenotypes rigorously at the genomic level and by live imaging should be a high priority.\n\nSpecific comments:\n\n1) The analysis of the effect of mutations within Scc2 that alter conserved Scc4 contact residues (Results) is not state of the art and raises important issues. First of all, the figure is of poor quality. Second, one should not use plasmids to do this type of analysis. As the authors subsequently point out, plasmid borne SCC2 supposedly bypasses the need for SCC4. Why, if the N-terminal domain of Scc2 is concerned solely with Scc4 binding and if plasmid borne SCC2 can suppress lethality due to lack of Scc4, do plasmid born mutant SCC2s that supposedly merely compromise Scc4 binding not suppress lethality due to SCC2-AID? Something is badly wrong here, unless there is a misunderstanding of some sort.\n\nNote also that the method of using plasmids is likely to under-estimate the importance of residues that have been mutated. These experiments should be performed by integrating single copy wild type and mutant SCC2 at an ectopic site and testing function by tetrad dissection in a cross heterozygous for an scc2 deletion. Lastly, it would seem appropriate to test whether the mutations actually affect binding of Scc2's NTD to Scc4. This is easy to do and surprising that this was not done.\n\n2) The claim that SCC2 over-expression bypasses the complete lack of Scc4 is interesting but maybe not too surprising (though see comment 1), but the experiment performed does not prove this. What was shown was that plasmid borne SCC2 can suppress the lethality of GAL-SCC4 cells on glucose. This experiment cannot exclude the possibility that there is minor expression of SCC4 from the GAL promoter and that this contributes to the suppression of lethality. It would be trivial to do this properly, that is, to show that plasmid born SCC2 can suppress the null. This should be done using tetrad analysis not just plasmid shuffle, which can easily lead to the isolation of secondary suppressors.\n\n3) The statement that finding that SCC2 over-expression suppresses the lack of Scc4 is consistent with the essential function of Scc4 is to stabilize Scc2 is fairly meaningless. If the authors think that this is what is going on, then they need to measure protein stability.\n\n4) Results. The authors raise the rather interesting possibility that Scc4's conserved patch might be involved in binding phosphate groups. This is particularly interesting given that the Cdc7 kinase is required for loading cohesin at centromeres. It is surprising that the paper does not address this issue further. Might the conserved patch be involved in binding a phosphorylated target on the Ctf19 complex?\n\n5) Also in the Results. The plasmid mis-segregation assay is not a good one, the data not particularly impressive, and adds very little. These low quality experiments rather detract from the fine structural biology. Why not measure chromosome loss properly if this is so important?\n\n6) In the same section. There appears to be little or no documentation of how the mutations in Scc4's conserved patch were made, how expressed, and how their non-lethality was initially determined. This is crucial part of the paper and the main text must explain carefully how this was done.\n\n7) In the Results. The conclusion that mutations like scc4m35 affect establishment of centromeric cohesion through a Chl4-dependent process is not rigorous. Is it not possible that other hypomorphic mutations of the Scc2/4 complex might have very similar phenotypes according to the experiments described and yet we know that Scc2/4 is required for loading throughout the genome? For example, it would be surprising if scc2-4 would not also have very similar phenotypes on centromeric cohesion. If so, would you conclude that this mutation affected in a specific manner the formation of centromeric cohesion? These results per se do not \u201cstrongly suggest that the Scc4 conserved patch targets Scc2/4 specifically to centromeres\u201d. A close look at the data in Figure 4A suggests a slightly longer inter-SBP distance with the double mutant compared to single mutants. But there is nothing to compare a synthetic effect with, such as another mutant that would provide a longer inter-SPB distance when coupled with a chl4 deletion. The phenotype of chl4 mutants is stronger than that of scc4m3 mutants and it is therefore hardly surprising that chl4 is epistatic to scc4m3.\n\nSuch a result could arise whether or not scc4m3 worked exclusively via Chl4 or not.\n\n8) The experiments claiming that scc4m35 compromises Scc2's recruitment to centromeres and selectively reduces peri-centric cohesin loading are not state of the art. First, there are major problems with analysing the distribution of Scc2 using ChIP. This problem afflicts data from a variety of organisms, not just yeast. The problem is that Scc2 is not stably associated with chromatin like cohesin. The only reliable method of documenting Scc2's localization at centromeres is to use live imaging, which avoids the countless pitfalls associated with ChIP. Fortunately, this can be readily done with S. cerevisiae where Scc2-GFP co-localizes with centromeres for much of the cell cycle and the centromeres are conveniently all clustered. The analysis performed here is of very poor quality. The images are not believable. It should be possible, especially if one uses diploids, to observe clear images in all cells post S phase and pre-anaphase. To distinguish mutant and wild type strains, these need to be differentially marked so that they can be placed on the same slide and imaged together and thereby compared rigorously. Moreover, the centromeres need to be marked separately in an unambiguous manner. The second problem concerns the use of QPCR ChIP to analyse cohesin's genomic distribution. In this day and age, it is not sufficient to draw major conclusions about the genomic distribution of proteins without analysing this using ChIP-seq. This would be easy to do.\n",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b79918d5-4d64-4c0e-a46d-80511424b947",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C1",
+      "claim": "The cohesin ring holds newly replicated sister chromatids together until their separation at anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin ring holds newly replicated sister chromatids together until their separation at anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in cell biology supported by the broader scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "6c5ee59d-5211-4f37-b826-888c9b72163a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C2",
+      "claim": "Initiation of sister chromatid cohesion depends on a separate complex, Scc2NIPBL/Scc4Mau2 (Scc2/4), which loads cohesin onto DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation of sister chromatid cohesion depends on a separate complex, Scc2NIPBL/Scc4Mau2 (Scc2/4), which loads cohesin onto DNA and determines its localization across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "9110a8b0-f099-496a-95e8-30b3691ab33e",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C3",
+      "claim": "Scc2/4 determines cohesin localization across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation of sister chromatid cohesion depends on a separate complex, Scc2NIPBL/Scc4Mau2 (Scc2/4), which loads cohesin onto DNA and determines its localization across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the manuscript showing Scc2/4 localization patterns.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "d6213a22-bc23-4431-bc0d-f12bcf6d6eba",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C4",
+      "claim": "Proper cohesin loading is essential for cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper cohesin loading is essential for cell division, and partial defects cause chromosome missegregation and aberrant transcriptional regulation, leading to severe developmental defects in multicellular organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "46616f1a-58ca-4749-ab65-7fd7598a3333",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C5",
+      "claim": "Partial defects in cohesin loading cause chromosome missegregation and aberrant transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper cohesin loading is essential for cell division, and partial defects cause chromosome missegregation and aberrant transcriptional regulation, leading to severe developmental defects in multicellular organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "449896ec-4fde-4f79-9049-364b32cf6748",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C6",
+      "claim": "Defects in cohesin loading lead to severe developmental defects in multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Proper cohesin loading is essential for cell division, and partial defects cause chromosome missegregation and aberrant transcriptional regulation, leading to severe developmental defects in multicellular organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge in developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "0099a66f-cac5-46bc-8ddb-172af6e3f261",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C7",
+      "claim": "Scc4 is a TPR array that envelops an extended Scc2 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc4 is a TPR array that envelops an extended Scc2 peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "5ee5bc68-2add-45c4-ba1c-431775ed7df6",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C8",
+      "claim": "A conserved patch on the surface of Scc4 is required to recruit Scc2/4 to centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Using budding yeast, we demonstrate that a conserved patch on the surface of Scc4 is required to recruit Scc2/4 to centromeres and to build pericentromeric cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ChIP experiments and mutational analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "81eafbf3-ef1a-44cd-a2e5-7cf35a2d0075",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C9",
+      "claim": "A conserved patch on the surface of Scc4 is required to build pericentromeric cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using budding yeast, we demonstrate that a conserved patch on the surface of Scc4 is required to recruit Scc2/4 to centromeres and to build pericentromeric cohesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing cohesion defects in Scc4 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1ee4d865-515c-495f-8e23-9d173694ec71",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C10",
+      "claim": "Cohesin is a ring-shaped protein complex that wraps around sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin, a ring-shaped protein complex that wraps around sister chromatids (Gruber et al., 2003; Haering et al., 2008) is the molecular agent of sister chromatid cohesion, which persists from the time of DNA replication until anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "38544f0d-2711-4cac-ad24-ca43ed820460",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C11",
+      "claim": "Sister chromatid cohesion persists from the time of DNA replication until anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin, a ring-shaped protein complex that wraps around sister chromatids (Gruber et al., 2003; Haering et al., 2008) is the molecular agent of sister chromatid cohesion, which persists from the time of DNA replication until anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cell cycle biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "3c12609a-a3af-436a-b031-16500331d477",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C12",
+      "claim": "Scc2/4 initiates linkage of cohesin with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinct protein complex containing Scc2NIPBL and Scc4Mau2 (Scc2/4) initiates linkage of cohesin with DNA (Ciosk et al., 2000), and an in vitro reconstitution of cohesin loading by Scc2/4 suggests that the product of this reaction is a topological protein\u2013DNA linkage (Murayama and Uhlmann, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "63002726-236f-481f-951e-239bfc4d8b5d",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C13",
+      "claim": "In vitro reconstitution of cohesin loading by Scc2/4 suggests that the product is a topological protein\u2013DNA linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinct protein complex containing Scc2NIPBL and Scc4Mau2 (Scc2/4) initiates linkage of cohesin with DNA (Ciosk et al., 2000), and an in vitro reconstitution of cohesin loading by Scc2/4 suggests that the product of this reaction is a topological protein\u2013DNA linkage (Murayama and Uhlmann, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous biochemical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f678f956-2ae4-4339-ad0e-a78f4b855d32",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C14",
+      "claim": "Cohesin deposition by Scc2/4 is required for normal development in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, cohesin deposition by Scc2/4 is required for normal development (Dorsett et al., 2005; Kawauchi et al., 2009), and mutations in NIPBL, the human homolog of Scc2, are dominant and causally linked to a severe developmental disorder, Cornelia de Lange Syndrome (CDLS) (Krantz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "a420e3be-edd7-4353-ae91-24d08f187bca",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C15",
+      "claim": "Mutations in NIPBL are dominant and causally linked to Cornelia de Lange Syndrome (CDLS).",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, cohesin deposition by Scc2/4 is required for normal development (Dorsett et al., 2005; Kawauchi et al., 2009), and mutations in NIPBL, the human homolog of Scc2, are dominant and causally linked to a severe developmental disorder, Cornelia de Lange Syndrome (CDLS) (Krantz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a clinical genetics study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "be6026f4-57cd-42f6-a7f8-90daf06a0fad",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C16",
+      "claim": "Scc2/4 determines the timing and location of cohesin loading.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to initiating a connection between cohesin and chromatin, Scc2/4 determines the timing and location of cohesin loading (Ciosk et al., 2000; Kogut et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "8ebc1dd9-c1dd-492a-a511-07351d5db048",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C17",
+      "claim": "Cohesin enrichment at mitotic centromeres and pericentromeres results in tension across sister chromatids when paired kinetochores attach to opposite spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin enrichment at mitotic centromeres and pericentromeres results in tension across sister chromatids when paired kinetochores attach to opposite spindle microtubules (Tanaka, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "e09b7c24-22aa-47e7-8e13-e4b290e820c2",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C18",
+      "claim": "Mitotic spindle checkpoint signaling senses the tension between sister centromeres to ensure correct kinetochore\u2013microtubule attachments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitotic spindle checkpoint signaling senses the tension between sister centromeres to ensure correct kinetochore\u2013microtubule attachments (Stern and Murray, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "bb3fd7ff-0158-4b9a-b51d-519316503071",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C19",
+      "claim": "Defective centromeric cohesion leads to elevated rates of chromosome missegregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Defective centromeric cohesion therefore leads to elevated rates of chromosome missegregation (Eckert et al., 2007; Fernius and Marston, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1facf573-c3fb-4483-a0b9-98e661921c0b",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C20",
+      "claim": "Centromeric cohesion depends on recruitment of Scc2/4 to centromeres in late G1/early S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Centromeric cohesion depends on recruitment of Scc2/4 to centromeres in late G1/early S phase (Hu et al., 2011; Fernius et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "60795e2b-0f8b-49db-86ea-b8a98d495b10",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C21",
+      "claim": "The Ctf19 complex in yeast (homologous to the human CCAN) participates in Scc2/4 recruitment to centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "A group of conserved kinetochore proteins\u2014the Ctf19 complex in yeast (homologous to the human CCAN)\u2014participates in this recruitment pathway, along with the S phase kinase complex, DDK (Fernius and Marston, 2009; Hu et al., 2011; Natsume et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "630f5853-f983-4eba-928a-0087e7351d91",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C22",
+      "claim": "The S phase kinase complex DDK participates in Scc2/4 recruitment to centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "A group of conserved kinetochore proteins\u2014the Ctf19 complex in yeast (homologous to the human CCAN)\u2014participates in this recruitment pathway, along with the S phase kinase complex, DDK (Fernius and Marston, 2009; Hu et al., 2011; Natsume et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "a6bc0c07-7d2b-445b-abfb-10932231dc0c",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C23",
+      "claim": "Deletion of any of several Ctf19 complex members leads to impaired centromeric cohesion and chromosome missegregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of any of several Ctf19 complex members leads to impaired centromeric cohesion and chromosome missegregation (Eckert et al., 2007; Fernius and Marston, 2009; Ng et al., 2009; Hu et al., 2011), but whether individual components make direct contact with Scc2/4 is not yet known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f0f05510-910e-4f21-8d12-b44c93d2c0c8",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C24",
+      "claim": "The cohesin loading activity of Scc2/4 in vitro requires only Scc2.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesin loading activity of Scc2/4 in vitro requires only Scc2 (Murayama and Uhlmann, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous biochemical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "6fc90d3a-5d50-46c8-89cb-770670cd71af",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C25",
+      "claim": "Scc4 is essential in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc4 is essential in yeast, however, and in humans, de novo Mau2Scc4 missense and nonsense mutations are significantly underrepresented in exome sequences, indicating that disruption of Mau2Scc4 function is probably dominant and lethal (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in yeast genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "fdd77450-ccfa-4933-8923-02b10caaef30",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C26",
+      "claim": "De novo Mau2Scc4 missense and nonsense mutations are significantly underrepresented in human exome sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc4 is essential in yeast, however, and in humans, de novo Mau2Scc4 missense and nonsense mutations are significantly underrepresented in exome sequences, indicating that disruption of Mau2Scc4 function is probably dominant and lethal (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the exome analysis data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b1189a2a-48a9-45dc-864c-0fb52aa4b698",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C27",
+      "claim": "Disruption of Mau2Scc4 function is probably dominant and lethal in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc4 is essential in yeast, however, and in humans, de novo Mau2Scc4 missense and nonsense mutations are significantly underrepresented in exome sequences, indicating that disruption of Mau2Scc4 function is probably dominant and lethal (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the underrepresentation of mutations in exome data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "48a774f2-3cf7-426d-bc61-100bec9238a5",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C28",
+      "claim": "Scc2 activity in vivo must depend on Scc4 in ways not recapitulated by the in vitro loading reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Scc2 activity in vivo must depend on Scc4 in ways not recapitulated by the in vitro loading reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the essentiality of Scc4 in vivo despite Scc2 being sufficient for loading in vitro.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "edf89d97-6238-4098-bca9-546b0440f584",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C29",
+      "claim": "Scc4 determines cohesin localization through a conserved patch on its surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We report here the structure of yeast Scc4 in complex with an N-terminal fragment of Scc2 and demonstrate that Scc4 determines cohesin localization through a conserved patch on its surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural and functional data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b67321e9-7766-4eb8-93ba-7a9168e39497",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C30",
+      "claim": "Scc4 targets cohesin loading to a specific genomic locus.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that Scc4 targets cohesin loading to a specific genomic locus and that this function is separable from its essential role in establishing sister chromatid cohesion across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ChIP-seq and mutational analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "9a3868eb-9f90-431d-a6ee-54733039ba98",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C31",
+      "claim": "The function of Scc4 in targeting cohesin loading is separable from its essential role in establishing sister chromatid cohesion across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that Scc4 targets cohesin loading to a specific genomic locus and that this function is separable from its essential role in establishing sister chromatid cohesion across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the viability of Scc4 mutants that lack centromeric targeting function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "34d8888a-34c5-4c05-8f78-e9fcc55b9f13",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C32",
+      "claim": "Full-length Scc2/4 was prepared by co-expressing both proteins in baculovirus-infected insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared full-length Scc2/4 by co-expressing both proteins in baculovirus-infected insect cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b3c3e928-eb6c-428f-97d1-f35901c1426e",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C33",
+      "claim": "Scc2 is a 1493 amino acid residue protein predicted to have an unstructured N-terminal segment and a C-terminal HEAT/ARM repeat domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc2 is a 1493 amino acid residue protein predicted to have an unstructured N-terminal segment and a C-terminal HEAT (Huntington, EF3, PP2A, TOR1)/ARM (Armadillo) repeat domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis and prediction algorithms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "dc7e8186-1207-4d29-a5c6-3b572e554a6f",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C34",
+      "claim": "Scc4 is predicted to have an extensive TPR architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc4, also conserved among nearly all eukaryotes, is predicted to have an extensive TPR (TetratricoPeptide Repeat) architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and confirmed by the crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "545b8e3a-f398-4ef0-ac3a-13816d20c0c7",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C35",
+      "claim": "Negative stain electron microscopy of the full-length Scc2/4 complex showed two large globular structures, variably positioned relative to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative stain electron microscopy of the full-length complex showed two large globular structures, variably positioned relative to each other, which we interpret as corresponding to the Scc2 HEAT repeat module and Scc2N-Scc4 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the electron microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7bcb4d42-b0b7-4bc2-ab60-d51d466233ce",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C36",
+      "claim": "The two globular structures observed in electron microscopy correspond to the Scc2 HEAT repeat module and Scc2N-Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative stain electron microscopy of the full-length complex showed two large globular structures, variably positioned relative to each other, which we interpret as corresponding to the Scc2 HEAT repeat module and Scc2N-Scc4 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on the structural data and domain organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "572a98eb-f7b5-4d42-9905-d32e7385abc3",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C37",
+      "claim": "An N-terminal fragment of Scc2 (residues 1\u2013181 or 1\u2013205) is sufficient for stable association with full-length Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "An N-terminal fragment of Scc2 (residues 1\u2013181 or 1\u2013205) is sufficient for stable association with full-length Scc4 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the gel filtration and mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b7c1a625-b28d-4e58-b1b8-9c2403072926",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C38",
+      "claim": "Both the truncated complex of Scc21\u2013181/Scc4 and full-length Scc2/4 are heterodimers in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the truncated complex of Scc21\u2013181/Scc4 and full-length Scc2/4 are heterodimers in solution (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by SEC-MALS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b44a098e-d112-4ae5-9b31-b862eeb187a0",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C39",
+      "claim": "Crystals of full-length Scc4 in complex with an N-terminal, 181-residue fragment of Scc2 were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained crystals of full-length Scc4 in complex with an N-terminal, 181-residue fragment of Scc2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "bc501f2d-e3ce-44ec-86a3-2fb9f8f751b3",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C40",
+      "claim": "Initial phases were determined by single wavelength anomalous dispersion (SAD) using selenomethionine-substituted derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffraction data collected from selenomethionine-substituted derivatives of these crystals allowed us to determine initial phases by single wavelength anomalous dispersion (SAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the crystallographic method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "3f8886d2-c2b7-4bea-8140-9a2cb0bfa51c",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C41",
+      "claim": "The crystal structure was determined to 2.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We used an incomplete model, built into a 2.8 \u00c5 resolution map, to obtain phase information by molecular replacement for diffraction data from crystals of a native protein complex, extending to a minimum Bragg spacing of 2.1 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the resolution of the final structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "e5f80020-750b-46cf-99d6-a41d9e5badcc",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C42",
+      "claim": "The final model includes residues 5\u2013383, 390\u2013527, and 536\u2013622 of Scc4 and residues 1\u201364, 73\u201395, and 106\u2013132 of Scc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our final model includes residues 5\u2013383, 390\u2013527, and 536\u2013622 of Scc4 and residues 1\u201364, 73\u201395, and 106\u2013132 of Scc2 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the content of the crystal structure model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "fef39c94-3846-4e19-a4f7-c09696828d24",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C43",
+      "claim": "Scc4 is a superhelical array of 13 TPR modules with a beta ribbon insertion between repeats 6 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc4 is a superhelical array of 13 TPR modules with a beta ribbon insertion between repeats 6 and 7 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b826584c-5c14-4c00-b2f5-d37b8b0ca502",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C44",
+      "claim": "The Scc4 solenoid brings successive turns in contact with each other, and the concave surface becomes an axial groove.",
+      "claim_type": "EXPLICIT",
+      "source": "This tightly wrapped solenoid brings successive turns in contact with each other, and the concave surface becomes an axial groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural architecture observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "ceefab74-e5ae-4106-8397-9c49d78f32d3",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C45",
+      "claim": "Repeat 8 of Scc4 lacks a second helix and has instead an extended segment with a disordered surface loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeat 8, which has a particularly long first helix, lacks a second helix and has instead an extended segment with a disordered surface loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "989d4578-dfd3-4e53-8715-6164274890b2",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C46",
+      "claim": "The irregularity at repeat 8 divides the Scc4 solenoid into two subdomains, TPRN (Scc41\u2013384) and TPRC (Scc4391\u2013624).",
+      "claim_type": "EXPLICIT",
+      "source": "This irregularity divides the solenoid into two subdomains, TPRN (Scc41\u2013384) and TPRC (Scc4391\u2013624) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "4a2da1e7-fe92-4f82-8b7c-87277f8dbd63",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C47",
+      "claim": "Residues 10\u201350 of Scc2 snake along the continuous inner cavity of Scc4 and emerge at both ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 10\u201350 of Scc2 snake along the continuous inner cavity of Scc4 and emerge at both ends, with the N-terminus of Scc2 close to the C-terminus of Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "efdeeeed-e9cb-41db-8666-b537e484b9d7",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C48",
+      "claim": "The N-terminus of Scc2 is close to the C-terminus of Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 10\u201350 of Scc2 snake along the continuous inner cavity of Scc4 and emerge at both ends, with the N-terminus of Scc2 close to the C-terminus of Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "4570436b-32bd-41a7-862d-37e22c09c9f1",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C49",
+      "claim": "The extended conformation of Scc21\u2013181 depends on its contacts with the surrounding Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "The extended conformation of Scc21\u2013181 clearly depends on its contacts with the surrounding Scc4; it is likely to be unstructured in the absence of its partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing extensive contacts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "be34a65a-8bff-443f-8d36-355b574cecf3",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C50",
+      "claim": "Scc21\u2013181 is likely to be unstructured in the absence of Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "The extended conformation of Scc21\u2013181 clearly depends on its contacts with the surrounding Scc4; it is likely to be unstructured in the absence of its partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the nature of the interaction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "2f6bdf80-6acc-480f-a184-a387bb410866",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C51",
+      "claim": "The concave surface of Scc4 is entirely enclosed.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc2\u2013Scc4 interaction has two unusual features. First, the concave surface of Scc4 is entirely enclosed, and Scc2 dissociation would therefore require either unfolding or proteolysis of Scc2 or Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "9d39f9d2-3f83-4440-bbb7-8bbd2c612851",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C52",
+      "claim": "Scc2 dissociation from Scc4 would require either unfolding or proteolysis of Scc2 or Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc2\u2013Scc4 interaction has two unusual features. First, the concave surface of Scc4 is entirely enclosed, and Scc2 dissociation would therefore require either unfolding or proteolysis of Scc2 or Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation that Scc4 completely encloses Scc2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "e671d3c8-f784-4868-a34c-a762cbb36240",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C53",
+      "claim": "Regulated proteolysis of Scc2 has been reported recently.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, regulated proteolysis of Scc2 has been reported recently (Woodman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "cc4ce76c-07eb-45c0-8c64-d6c3ea7699f2",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C54",
+      "claim": "Residues 58\u2013132 of Scc2 extend beyond the axial groove and make extensive contact with the external surface of Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, residues 58\u2013132 of Scc2 extend beyond the axial groove and make extensive contact with the external surface of Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7d79b81f-8d45-4722-bbbb-c44b50fef040",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C55",
+      "claim": "Human Mau2Scc4 binds the N-terminus of human NIPBLScc2.",
+      "claim_type": "EXPLICIT",
+      "source": "Human Mau2Scc4 binds the N-terminus of human NIPBLScc2 (Braunholz et al., 2012), but the primary sequence of NIPBL bears little resemblance to that of Scc21\u2013181.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "2622a180-0e68-425b-9dd8-a35e674e1e80",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C56",
+      "claim": "The primary sequence of NIPBL bears little resemblance to that of Scc21\u2013181.",
+      "claim_type": "EXPLICIT",
+      "source": "Human Mau2Scc4 binds the N-terminus of human NIPBLScc2 (Braunholz et al., 2012), but the primary sequence of NIPBL bears little resemblance to that of Scc21\u2013181.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "55987561-96e8-4c24-b067-48c7654257d6",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C57",
+      "claim": "Despite low overall sequence conservation, Scc2/NIPBL proteins have conserved amino acid residues at buried positions that contact Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their low level of overall sequence conservation, Scc2/NIPBL proteins have conserved amino acid residues at buried positions that contact Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "db0db42c-0ee0-4409-81e7-4a50b4dad2f1",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C58",
+      "claim": "Several Scc2\u2013Scc4 contacts on the external face of Scc4 are conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Several Scc2\u2013Scc4 contacts on the external face of Scc4 are also conserved, including Scc2F86, which stacks onto Scc4Y40-Y41, and Scc2112\u2013120, which forms a helix that fits over a hydrophobic surface on Scc4 TPRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1a6995e4-d9e5-4dfa-80f1-28a7c86ef654",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C59",
+      "claim": "Scc2 variants mutated at conserved residues contacting either the concave or the external surface of Scc4 were less effective than wild-type Scc2 in restoring viability to an Scc2-degron strain under depletion conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Scc2 variants mutated at conserved residues contacting either the concave or the external surface of Scc4 were less effective than wild-type Scc2 in restoring viability to an Scc2-degron (SCC2-AID) strain under depletion conditions (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the complementation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "6edd87ea-1a3b-45f6-82ff-f586d9477830",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C60",
+      "claim": "The phenotype of Scc2 mutants at conserved Scc4-contacting residues was comparable to the phenotype observed when the entire Scc2 fragment visible in the crystal structure was removed (\u03941\u2013138).",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype of these mutants was comparable to the phenotype we observed when we removed the entire Scc2 fragment visible in the crystal structure (\u03941\u2013138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the complementation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b9cf8de6-8ba4-453c-a88b-dfa94736139e",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C61",
+      "claim": "Supplementing the chromosomal copy of SCC2 with a plasmid coding for Scc2 or Scc2\u03941\u2013138 complemented transcriptional repression of SCC4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that supplementing the chromosomal copy of SCC2 with a plasmid coding for Scc2 or Scc2\u03941\u2013138 complemented transcriptional repression of SCC4 (pGAL1-SCC4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the complementation experiment shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1a4541eb-77d9-42a4-a24c-d9c0c48e4894",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C62",
+      "claim": "Increasing the SCC2 gene copy number bypassed the effect on viability of transcriptional repression of SCC4.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, increasing the SCC2 gene copy number bypassed the effect on viability of transcriptional repression of SCC4, and the bypass did not require the Scc4-binding region of Scc2 (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the complementation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "8d2b81d4-2656-416d-a6ed-3f8eb249a868",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C63",
+      "claim": "The bypass of SCC4 repression by increased SCC2 copy number did not require the Scc4-binding region of Scc2.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, increasing the SCC2 gene copy number bypassed the effect on viability of transcriptional repression of SCC4, and the bypass did not require the Scc4-binding region of Scc2 (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the complementation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "12b85ffb-4478-4899-bd91-ae48c4240d3e",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C64",
+      "claim": "The Scc4-binding region of Scc2 is probably unstructured when not bound by Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this region of Scc2 is probably unstructured when not bound by Scc4, it is a plausible cause of instability or aggregation when expressed unprotected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the nature of the interaction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "5fb6f317-980f-49cb-9c57-7595af8c733a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C65",
+      "claim": "One reason why Scc4 is essential may be that Scc2 is unstable in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason why Scc4 is essential may therefore be that Scc2 is unstable in its absence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complementation data and structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f0e9aca4-608e-4e9d-b50b-e5905fab5c39",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C66",
+      "claim": "Mapping Scc4 sequence conservation onto the structure revealed a cluster of extremely conserved, solvent-facing residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping Scc4 sequence conservation onto our structure revealed a cluster of extremely conserved, solvent-facing residues, some of them invariant among all eukaryotes we examined (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "553f652a-2f02-497b-ac54-a232f21ea825",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C67",
+      "claim": "Some residues in the conserved patch on Scc4 are invariant among all eukaryotes examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping Scc4 sequence conservation onto our structure revealed a cluster of extremely conserved, solvent-facing residues, some of them invariant among all eukaryotes we examined (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "81fd281e-f757-4195-a7b0-84fb831360aa",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C68",
+      "claim": "Unaccounted-for electron density in the conserved patch was modeled as a sulfate group.",
+      "claim_type": "EXPLICIT",
+      "source": "We found unaccounted-for electron density in this patch, into which we modeled a sulfate group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f266204c-a301-4400-ad6b-14bcbbc617ea",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C69",
+      "claim": "Bound sulfates often mark phosphate binding sites in crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Because bound sulfates often mark phosphate binding sites in crystal structures (Bax et al., 2001), we tested the effects of mutating conserved residues that contribute to this patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "9669ce5c-0c11-4c0b-a51f-2b1b2075550d",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C70",
+      "claim": "Strains in which the endogenous copy of SCC4 had been replaced by SCC4 coding for mutations at conserved patch residues were viable but displayed a plasmid missegregation phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains in which the endogenous copy of SCC4 had been replaced by SCC4 coding for mutations at these residues were viable but displayed a plasmid missegregation phenotype (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the plasmid segregation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "b3c54ff8-7a74-42a1-97f0-d774c1866180",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C71",
+      "claim": "Combined mutation of seven conserved residues (scc4m7) did not inactivate Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined mutation of seven of the most conserved residues (scc4L256L; Y298A; K299D; Y313A; F324A; K327D; K331D; scc4m7) did not inactivate Scc4, as strains bearing these substitutions were fully viable and had a plasmid segregation phenotype comparable in strength to that of strains bearing mutations only at positions 324, 327, and 331 (scc4F324A; K327D; K331D; scc4m3) (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the viability and plasmid segregation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7bba5bf4-b7c1-4601-86e8-0c1edeca4cde",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C72",
+      "claim": "Recombinant Scc21\u2013181-Scc4 complexes bearing conserved patch mutations behaved identically to wild-type preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant Scc21\u2013181-Scc4 complexes bearing these mutations behaved identically to wild-type preparations (Figure 1\u2014figure supplement 1B), indicating that perturbation of the conserved Scc4 patch does not impair the stability or folding of the rest of the protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by SEC-MALS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "9e383855-7ec2-4065-a678-04b107c67da3",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C73",
+      "claim": "Perturbation of the conserved Scc4 patch does not impair the stability or folding of the rest of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant Scc21\u2013181-Scc4 complexes bearing these mutations behaved identically to wild-type preparations (Figure 1\u2014figure supplement 1B), indicating that perturbation of the conserved Scc4 patch does not impair the stability or folding of the rest of the protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the SEC-MALS data showing similar behavior of mutant and wild-type complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "20610eaf-e4b3-4d80-b847-947cd7adb4dc",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C74",
+      "claim": "Strains lacking the Ctf19 complex subunit Chl4 are defective in centromeric cohesin loading because they cannot preferentially localize Scc2/4 to centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains lacking the Ctf19 complex subunit Chl4 (CENP-N in humans) are defective in centromeric cohesin loading because they cannot preferentially localize Scc2/4 to centromeres, although cohesin loads normally elsewhere in the genome (Fernius et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "fe6d274d-0e50-4251-b66b-f651ff5262f2",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C75",
+      "claim": "In chl4\u0394 strains, cohesin loads normally elsewhere in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains lacking the Ctf19 complex subunit Chl4 (CENP-N in humans) are defective in centromeric cohesin loading because they cannot preferentially localize Scc2/4 to centromeres, although cohesin loads normally elsewhere in the genome (Fernius et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "8d77267b-542f-41e7-85f6-3cf2187ba266",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C76",
+      "claim": "Inclusion of scc4m3 does not augment the severe plasmid loss phenotype caused by CHL4 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of scc4m3 does not augment the severe plasmid loss phenotype caused by CHL4 deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the plasmid segregation assay data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "11252d00-1876-4a3d-9715-b7592e74dc77",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C77",
+      "claim": "The genetic relationship between scc4m3 and chl4\u0394 also holds true for scc4m7.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship also holds true for scc4m7 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the plasmid segregation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "37818a03-b682-4d22-ab09-7f5307a9c606",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C78",
+      "claim": "Strains lacking Chl4 have extended metaphase spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains lacking Chl4 have extended metaphase spindles, and this phenotype corresponds to weakened centromeric cohesion (Fernius and Marston, 2009; Laha et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7529637c-91f8-4801-917a-56a94dee599c",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C79",
+      "claim": "Extended metaphase spindles in chl4\u0394 strains correspond to weakened centromeric cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains lacking Chl4 have extended metaphase spindles, and this phenotype corresponds to weakened centromeric cohesion (Fernius and Marston, 2009; Laha et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "8051a74b-6279-45c7-8a6f-7b1332475636",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C80",
+      "claim": "An scc4m3-bearing strain exhibited increased inter-spindle pole distances.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that an scc4m3-bearing strain exhibited increased inter-spindle pole distances and that the scc4m3 mutation did not exacerbate the spindle extension phenotype of a chl4\u0394 strain (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the spindle length measurement data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "5f6df9a8-d417-4d9f-98ec-670cf309168f",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C81",
+      "claim": "The scc4m3 mutation did not exacerbate the spindle extension phenotype of a chl4\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that an scc4m3-bearing strain exhibited increased inter-spindle pole distances and that the scc4m3 mutation did not exacerbate the spindle extension phenotype of a chl4\u0394 strain (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the spindle length measurement data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "94969641-f5b1-46d6-beb6-f5978b435491",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C82",
+      "claim": "GFP-labeled sister centromeres were separated more frequently and to greater distances in strains mutated at 5 positions in the conserved patch on Scc4 (scc4m35).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GFP-labeled sister centromeres (Figure 4\u2014figure supplement 1A), but not chromosome arms (Figure 4\u2014figure supplement 1D\u2013G), were separated more frequently and to greater distances in strains mutated at 5 positions in the conserved patch on Scc4 (scc4F324A; K327A; K331A; K541A; K542A; scc4m35).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the live cell imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "8f9f347f-f50d-4a29-b3a2-d7030b1c776b",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C83",
+      "claim": "GFP-labeled chromosome arms were not separated more frequently in scc4m35 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GFP-labeled sister centromeres (Figure 4\u2014figure supplement 1A), but not chromosome arms (Figure 4\u2014figure supplement 1D\u2013G), were separated more frequently and to greater distances in strains mutated at 5 positions in the conserved patch on Scc4 (scc4F324A; K327A; K331A; K541A; K542A; scc4m35).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the live cell imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "5160c644-687f-4f44-8273-77080b219494",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C84",
+      "claim": "The conserved Scc4 patch promotes centromeric cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the conserved Scc4 patch promotes centromeric cohesion and that it does so in a manner that may also depend on CHL4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic and phenotypic data showing centromere-specific defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "3b450df4-cf1a-45f7-81aa-948aaa0ce825",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C85",
+      "claim": "The conserved Scc4 patch promotes centromeric cohesion in a manner that may also depend on CHL4.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the conserved Scc4 patch promotes centromeric cohesion and that it does so in a manner that may also depend on CHL4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the non-additive genetic interactions between scc4 mutations and chl4\u0394.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "c9fbcf0a-90c1-46be-8ecf-23ef2d6bdf2a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C86",
+      "claim": "Perturbation of the conserved patch (either scc4m35 or scc4m7) eliminates centromeric localization of Scc2 in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of the conserved patch (either scc4m35 or scc4m7) eliminates centromeric localization of Scc2 in mitotic cells and reduces association of the cohesin subunit, Scc1, with the centromere and pericentromere, but not with chromosome arms (Figure 4B,C, Figure 4\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ChIP-qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "a5d11f81-e598-41a5-9028-19d2a3c8713b",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C87",
+      "claim": "Perturbation of the conserved patch reduces association of the cohesin subunit Scc1 with the centromere and pericentromere, but not with chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of the conserved patch (either scc4m35 or scc4m7) eliminates centromeric localization of Scc2 in mitotic cells and reduces association of the cohesin subunit, Scc1, with the centromere and pericentromere, but not with chromosome arms (Figure 4B,C, Figure 4\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ChIP-qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "a98c3532-4058-4051-91b4-2c3af464f8f3",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C88",
+      "claim": "The pattern of Scc2 localization was also observed in cells progressing through S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed this pattern of Scc2 localization in cells progressing through S phase (Figure 4\u2014figure supplement 2E,F), the stage at which cohesin loading is initiated (Kogut et al., 2009; Natsume et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ChIP-qPCR data in S phase cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "83ac0f0e-7fe7-4307-931f-3f9058c0435a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C89",
+      "claim": "Cohesin loading is initiated in S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed this pattern of Scc2 localization in cells progressing through S phase (Figure 4\u2014figure supplement 2E,F), the stage at which cohesin loading is initiated (Kogut et al., 2009; Natsume et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7bc7efa4-8fc2-4529-a216-7dc4b7314e7a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C90",
+      "claim": "All 16 centromeres were specifically depleted of Scc1 in the scc4m35 background.",
+      "claim_type": "EXPLICIT",
+      "source": "We further analyzed Scc1 localization by ChIP followed by high-throughput sequencing (ChIP-seq) and found that all 16 centromeres were specifically depleted of Scc1 in the scc4m35 background (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1a8f8397-ec16-46f5-a778-a187d30c4481",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C91",
+      "claim": "Scc1 depletion in scc4m35 strains extended roughly 10 kilobases to either side of the core centromere but not to chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Scc1 depletion extended roughly 10 kilobases to either side of the core centromere but not to chromosome arms (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "62fedccc-40bf-4fcd-bb0d-44d2dc81423c",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C92",
+      "claim": "Centromeric Scc2-GFP signal, normally visible in wild-type cells and eliminated by CHL4 deletion, was lost upon mutation of the Scc4-conserved patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, centromeric Scc2-GFP signal, normally visible in wild-type cells and eliminated by CHL4 deletion (Fernius et al., 2013), was lost upon mutation of the Scc4-conserved patch (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the live cell imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "c64f9acc-14e3-4bca-80c7-0073cb53eaa7",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C93",
+      "claim": "Like Chl4, a specific interaction surface on Scc4 is required to target cohesin loading to centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, like Chl4, a specific interaction surface on Scc4 is required to target cohesin loading to centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined genetic and localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f2d1f1e0-090d-439b-bfb8-33ffa79087d7",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C94",
+      "claim": "Cohesin targeting to specific genomic locations is required in all species for robust centromeric cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin targeting to specific genomic locations is required in all species for robust centromeric cohesion and for tissue-specific transcriptional programs in multicellular organisms (Kawauchi et al., 2009; Fay et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "beca1c19-ea21-4903-ac4b-340fbdfa3952",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C95",
+      "claim": "Cohesin targeting to specific genomic locations is required for tissue-specific transcriptional programs in multicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin targeting to specific genomic locations is required in all species for robust centromeric cohesion and for tissue-specific transcriptional programs in multicellular organisms (Kawauchi et al., 2009; Fay et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "99502e14-0ca2-4c0d-a195-2e79b83891d7",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C96",
+      "claim": "DNA sequences per se do not drive cohesin loading.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA sequences per se do not drive cohesin loading (Onn and Koshland, 2011; Murayama and Uhlmann, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "640948a1-11a2-4db2-948b-0d76f470d0ad",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C97",
+      "claim": "Cohesin targeting likely depends on interactions between the loading complex and chromatin-associated factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, targeting likely depends on interactions between the loading complex and chromatin-associated factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that DNA sequences alone do not drive loading.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "0cd22033-8c6b-4085-bc5e-ffe4d14009b1",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C98",
+      "claim": "Cohesin targeting in yeast depends on Scc4.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that cohesin targeting in yeast depends on Scc4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental data showing loss of centromeric targeting in Scc4 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1a230987-cc3c-42d3-bb6a-d74e042900cd",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C99",
+      "claim": "The Scc4-dependent cohesin targeting pathway is a general feature of the control of cohesin loading across diverse eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the pathway that targets cohesin to centromeres requires Scc4 residues that are, in some cases, invariant across diverse eukaryotes, we suggest that the Scc4-dependent cohesin targeting we describe is a general feature of the control of cohesin loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high conservation of the Scc4 patch across eukaryotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "bdbe76eb-79bc-4719-8ba9-2c1424b14108",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C100",
+      "claim": "The centromeric enrichment of cohesin loading is not essential for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Fernius et al., 2013; Natsume et al., 2013), we find that the centromeric enrichment of cohesin loading is not essential for viability and that arm cohesion is unaffected in strains in which this pathway is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the viability of Scc4 conserved patch mutants and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "3538c2e8-7059-4ad1-bca3-6f1c300148d6",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C101",
+      "claim": "Arm cohesion is unaffected in strains in which the centromeric cohesin loading pathway is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Fernius et al., 2013; Natsume et al., 2013), we find that the centromeric enrichment of cohesin loading is not essential for viability and that arm cohesion is unaffected in strains in which this pathway is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the ChIP data showing normal arm cohesin levels in mutants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "c6b90040-dd42-49a2-9dde-3fde86b5c1cf",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C102",
+      "claim": "There are two modes for cohesin loading: one that depends on a conserved patch of Scc4 and happens at centromeres, and a second opportunistic mode that happens everywhere on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "These results probably reflect two modes for cohesin loading: one that depends on a conserved patch of Scc4 and happens at centromeres, and a second opportunistic mode that happens everywhere on the chromosome and is sufficient to support viability in the absence of the first mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that centromeric targeting is not essential for viability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7b65d5e7-f4e9-4078-9a95-ac3e6d86454b",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C103",
+      "claim": "The opportunistic mode of cohesin loading is sufficient to support viability in the absence of centromeric targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "These results probably reflect two modes for cohesin loading: one that depends on a conserved patch of Scc4 and happens at centromeres, and a second opportunistic mode that happens everywhere on the chromosome and is sufficient to support viability in the absence of the first mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the viability of Scc4 conserved patch mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "64c6db4c-3712-47f3-a3eb-9a53521550e7",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C104",
+      "claim": "Scc4-conserved patch mutations would redistribute loading events, resulting in similar cohesin levels at centromeres and on chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, Scc4-conserved patch mutations would not eliminate cohesin loading but would redistribute loading events, resulting in similar cohesin levels at centromeres and on chromosome arms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the two-mode loading model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "4e152966-8a40-480c-898f-a959df0e31fc",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C105",
+      "claim": "The prediction of redistributed cohesin loading is borne out by strains bearing Scc4-conserved patch mutations and by strains lacking CHL4.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction is borne out both by strains bearing Scc4-conserved patch mutations and by strains lacking CHL4 (Fernius and Marston, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the ChIP data and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "04e3dbd8-cfd1-430f-b6f6-190561af7914",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C106",
+      "claim": "Cohesin targeting to specific locations along the chromosome arms of fission yeast is critical for normal three-dimensional chromosome structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports have shown that cohesin targeting to specific locations along the chromosome arms of fission yeast (Mizuguchi et al., 2014) and flies (Oliveira et al., 2014) is critical for normal three-dimensional chromosome structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "79f1bab9-359e-44f1-a239-516bbbee047a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C107",
+      "claim": "Cohesin targeting to specific locations along the chromosome arms of flies is critical for normal three-dimensional chromosome structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports have shown that cohesin targeting to specific locations along the chromosome arms of fission yeast (Mizuguchi et al., 2014) and flies (Oliveira et al., 2014) is critical for normal three-dimensional chromosome structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "75c4fe28-de1e-4350-b43a-a6f7e4529334",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C108",
+      "claim": "Cohesin complexes residing at specified sites in the genome function in gene looping and in defining chromosome territories.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to findings from studies conducted in mammalian cells (Dowen et al., 2014), one of these reports (Mizuguchi et al., 2014) suggests that cohesin complexes residing at specified sites in the genome function in gene looping and in defining chromosome territories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1a3d12a0-9fe9-4921-ad73-2f6c1fa5beb6",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C109",
+      "claim": "Scc4 directs cohesin localization to broad centromeric domains but does not affect the local distribution of cohesin peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our ChIP-seq experiments show that Scc4 directs cohesin localization to broad centromeric domains but does not affect the local distribution of cohesin peaks, we suggest that the Scc4-dependent localization pathway we discuss here is overlaid upon local determinants of cohesin positioning on chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the ChIP-seq data showing domain-level but not peak-level changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "e60094da-d408-4b47-856b-11f96f6790f5",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C110",
+      "claim": "The Scc4-dependent localization pathway is overlaid upon local determinants of cohesin positioning on chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our ChIP-seq experiments show that Scc4 directs cohesin localization to broad centromeric domains but does not affect the local distribution of cohesin peaks, we suggest that the Scc4-dependent localization pathway we discuss here is overlaid upon local determinants of cohesin positioning on chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ChIP-seq data showing different scales of regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "0c81c30b-c163-4eda-862f-a7ded040ec92",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C111",
+      "claim": "Local determinants of cohesin positioning would be a second level of cohesin regulation, operating at roughly the resolution of the transcriptional units in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These local determinants would be a second level of cohesin regulation, operating at roughly the resolution of the transcriptional units in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed patterns of cohesin distribution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7a3f25a2-e4aa-48f1-8853-1bd26dce10d6",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C112",
+      "claim": "Integration of spatial cues with temporal cues, including the kinase activity of DDK, could generate the final cohesin distribution observed in metaphase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration of these spatial cues with temporal cues, including the kinase activity of DDK, could then generate the final cohesin distribution observed in metaphase cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about how different regulatory mechanisms might be integrated.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "530220d4-b4b7-45dc-9aae-d92035704f3f",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C113",
+      "claim": "The Scc4-conserved patch presents a possible explanation for how broad cohesin-dense domains may be specified by the cohesion-loading complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc4-conserved patch presents a possible explanation for how broad cohesin-dense domains may be specified by the cohesion-loading complex, and it provides a molecular foundation for the study of chromatin-associated factors, both known and unknown, that localize cohesin loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "6170fc87-beb1-49de-ac43-70af76d7ee3d",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "claim_id": "C114",
+      "claim": "The Scc4-conserved patch provides a molecular foundation for the study of chromatin-associated factors that localize cohesin loading.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scc4-conserved patch presents a possible explanation for how broad cohesin-dense domains may be specified by the cohesion-loading complex, and it provides a molecular foundation for the study of chromatin-associated factors, both known and unknown, that localize cohesin loading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the findings for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of the Scc2^1-181/Scc4 complex was determined to 2.1 \u00c5 resolution, revealing that Scc4 is a superhelical array of 13 TPR modules that completely envelops an extended N-terminal fragment of Scc2. The structure shows that residues 10-50 of Scc2 snake through the continuous inner cavity of Scc4, while residues 58-132 extend beyond the axial groove to contact the external surface of Scc4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C39-C48, C51, and C54 collectively describe the crystal structure determination and key structural features. The crystallographic data (2.1 \u00c5 resolution, SAD phasing, model completeness) and structural observations (TPR architecture, Scc2 threading through Scc4, enclosed concave surface) are well-documented with appropriate methods and figures. The structure provides direct experimental evidence for the molecular architecture of the complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "909be671-afe7-4649-9000-9c6d452985bc",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Despite low overall sequence conservation between yeast and human Scc2/NIPBL proteins, conserved amino acid residues at buried positions that contact Scc4 were identified. Scc2 variants mutated at these conserved Scc4-contacting residues showed reduced viability in complementation assays, with phenotypes comparable to deletion of the entire Scc4-binding region (\u03941-138).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by sequence alignment data (Figure 2\u2014figure supplement 2B) and functional complementation assays (Figure 2\u2014figure supplement 2C). The conservation analysis is mapped onto the structure, and the mutational analysis demonstrates the functional importance of these contacts. The comparison to the \u03941-138 deletion provides an appropriate control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "ea4ecd5e-01d5-407a-a9ee-c147f10e86fb",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Increasing SCC2 gene copy number bypassed the lethality of SCC4 transcriptional repression, and this bypass did not require the Scc4-binding region of Scc2 (residues 1-138). This suggests that one reason Scc4 is essential may be that Scc2 is unstable in its absence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 and C65 are supported by the complementation experiment shown in Figure 2\u2014figure supplement 3. The data demonstrate that overexpression of Scc2 or Scc2\u03941-138 can rescue pGAL1-SCC4 repression. The inference about Scc2 stability (C65) is reasonable given the structural data showing the unstructured nature of the Scc4-binding region and the bypass experiment results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "55cc7689-a338-48c0-80b7-1018dfa81850",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A cluster of extremely conserved, solvent-facing residues was identified on the surface of Scc4, with some residues invariant across all examined eukaryotes. Mutations at these conserved patch residues resulted in viable strains that displayed plasmid missegregation phenotypes, but did not impair the stability or folding of the Scc4 protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 and C70-C73 are supported by sequence conservation analysis (Figure 3A,B), plasmid segregation assays (Figure 3\u2014figure supplement 1), and SEC-MALS data (Figure 1\u2014figure supplement 1B). The conservation mapping is clearly shown, the functional consequences are measured, and the structural integrity of mutants is confirmed. The data demonstrate separation of function mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f48a5cba-13b2-44db-9042-78f9db171f6e",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The scc4m3 mutation did not augment the plasmid loss or spindle extension phenotypes of chl4\u0394 strains, indicating that the conserved Scc4 patch and Chl4 function in the same genetic pathway to promote centromeric cohesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 and C80-C81 are supported by plasmid segregation data (Figure 3C) and spindle length measurements (Figure 3D). The lack of additive effects in double mutants is consistent with epistasis, supporting the conclusion (C84-C85) that these components function in the same pathway. The genetic interaction data are appropriately analyzed and interpreted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "849e8b91-91da-47a1-9b69-8ffe596df2aa",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In scc4m35 strains, GFP-labeled sister centromeres were separated more frequently and to greater distances, while GFP-labeled chromosome arms showed no such defect, indicating a centromere-specific cohesion defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 are supported by live cell imaging data (Figure 4\u2014figure supplement 1A-G). The data show increased centromere separation in scc4m35 mutants while arm loci remain unaffected, demonstrating the specificity of the defect. Multiple loci were examined, providing robust evidence for the centromere-specific phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "c2b2d6bd-02d1-422d-830f-2e6275e76112",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutations in the conserved Scc4 patch (scc4m35 or scc4m7) eliminated centromeric localization of Scc2 and reduced association of the cohesin subunit Scc1 with centromeres and pericentromeres, but not with chromosome arms. These effects were observed in both mitotic cells and cells progressing through S phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 and C92 are supported by ChIP-qPCR data (Figure 4B,C, Figure 4\u2014figure supplement 2A-F) and live cell imaging (Figure 4F,G). The data demonstrate loss of Scc2 centromeric localization and reduced Scc1 at centromeres/pericentromeres while arm localization is maintained. The cell cycle timing experiments confirm the defect occurs during the relevant S phase window.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "01d60ff2-8245-4fbb-8afb-b2d92135a67d",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ChIP-seq analysis revealed that all 16 centromeres were specifically depleted of Scc1 in the scc4m35 background, with depletion extending roughly 10 kilobases to either side of the core centromere but not affecting chromosome arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by ChIP-seq data (Figure 4D,E, Figure 4\u2014figure supplement 3). The genome-wide analysis demonstrates consistent depletion across all centromeres with defined spatial boundaries. The data provide high-resolution mapping of the cohesin loading defect and confirm the centromere-specific nature of the phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "724e9912-aa05-47cd-8805-9b3c8ebf3694",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A specific interaction surface on Scc4 (the conserved patch) is required to target cohesin loading to centromeres, demonstrating that cohesin targeting in yeast depends on Scc4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93 and C98 are supported by the combined genetic, localization, and ChIP data (C76-C92). The convergent evidence from multiple experimental approaches\u2014genetic interactions, localization studies, and genome-wide binding analysis\u2014strongly supports the conclusion that Scc4 directs centromeric cohesin loading through its conserved surface patch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "d44c9c2e-2b88-4163-b88f-2b6ca11e7176",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The centromeric enrichment of cohesin loading is not essential for viability, and arm cohesion is unaffected in strains in which this pathway is compromised.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 are supported by the viability of scc4 conserved patch mutants and ChIP data showing normal arm cohesin levels. The data are consistent with previous reports (Fernius et al., 2013; Natsume et al., 2013). The separation of centromeric targeting from essential function is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "f59ecca7-ae0d-4bf5-be13-c51853e3d066",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The data support a two-mode model for cohesin loading: a Scc4-conserved patch-dependent mode at centromeres, and a second opportunistic mode that occurs genome-wide and is sufficient to support viability. Scc4 mutations redistribute loading events, resulting in similar cohesin levels at centromeres and chromosome arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 present a model inferred from the viability of centromeric targeting mutants (C100-C101) and the ChIP data showing maintained arm cohesin with reduced centromeric cohesin (C86-C91). The prediction of redistribution (C104) is confirmed by the ChIP data (C105). The model is well-supported by the experimental evidence and provides a coherent explanation for the observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "bf7201ef-9722-440d-b679-25e24609ed3c",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "De novo Mau2^Scc4 missense and nonsense mutations are significantly underrepresented in human exome sequences, indicating that disruption of Mau2^Scc4 function is probably dominant and lethal in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by exome analysis data presented in Table 1. The observed mutations are substantially lower than expected for both missense and loss-of-function mutations. The statistical underrepresentation supports the inference of dominant lethality (C27), though this remains an inference from population genetics data rather than direct experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Full-length Scc2/4 was expressed in insect cells and characterized by electron microscopy and SEC-MALS. The complex shows two globular domains corresponding to the Scc2 HEAT repeat module and Scc2N-Scc4. An N-terminal fragment of Scc2 (residues 1-181) is sufficient for stable heterodimeric association with full-length Scc4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 describe the protein expression, purification, and biophysical characterization. The data are supported by electron microscopy images (Figure 1B), gel filtration (Figure 1C), and SEC-MALS analysis (Figure 1\u2014figure supplement 1B). The methods are standard and appropriately applied. The minimal binding region determination is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "381e0c06-aa67-483f-90b1-a432b38344d9",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The extended conformation of Scc2^1-181 depends on its contacts with Scc4 and is likely unstructured in the absence of Scc4. Scc2 dissociation would require unfolding or proteolysis due to the enclosed nature of the Scc4 concave surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50, C52, and C64 are reasonable inferences from the crystal structure showing extensive Scc2-Scc4 contacts and the enclosed architecture. The inference about unstructured nature in the absence of Scc4 is consistent with the extended conformation and lack of secondary structure in the bound peptide. The proteolysis mechanism is supported by citation to a recent study (C53).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "173e323d-9f7f-470c-941d-66269dfbfd97",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Scc4-dependent cohesin targeting pathway is suggested to be a general feature of the control of cohesin loading across diverse eukaryotes based on the high conservation of the Scc4 patch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C99 is an extrapolation from the high conservation of Scc4 residues across eukaryotes (C66-C67) and the functional data in yeast. While the conservation is compelling, direct experimental evidence for the pathway in other organisms is not provided in this manuscript. The claim is reasonable speculation but requires validation in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "91682825-8e25-467c-91b8-1331761fe11a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ChIP-seq experiments show that Scc4 directs cohesin localization to broad centromeric domains but does not affect the local distribution of cohesin peaks, suggesting that the Scc4-dependent pathway is overlaid upon local determinants of cohesin positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110 are supported by the ChIP-seq data (Figure 4D,E) showing domain-level depletion without changes in peak distribution patterns. The interpretation that this represents hierarchical regulation is reasonable, though the nature of the local determinants is not experimentally addressed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "094c8661-ef11-4d72-ab52-f6155bc81aed",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Local determinants of cohesin positioning are proposed to represent a second level of regulation operating at the resolution of transcriptional units, and integration of spatial and temporal cues (including DDK kinase activity) could generate the final cohesin distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C112 are speculative proposals about regulatory mechanisms not directly tested in this study. While the model is consistent with the data and prior literature, these claims represent hypotheses for future investigation rather than conclusions supported by the presented experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "c142a616-1864-4993-ae8b-815c8af430b0",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context of cohesin function, Scc2/4 complex role, centromeric cohesion, and the essential nature of Scc4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C25 represent established knowledge in the field, supported by citations to prior literature and general knowledge. These provide the necessary context for the study but are not novel findings of this manuscript. The claims are accurately stated and appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "1bfecda2-21d0-4b5e-b223-75d71cbdae3d",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Human Mau2^Scc4 binds the N-terminus of human NIPBL^Scc2, but the primary sequence of NIPBL bears little resemblance to yeast Scc2^1-181.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by citation to prior work (Braunholz et al., 2012) and sequence alignment analysis. The low sequence similarity is documented, which motivates the conservation analysis at the structural level (C57-C58).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "fd79ab29-709e-4484-b98b-f92a6f8e2454",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claims about Chl4/CENP-N function, cohesin loading timing, and the role of cohesin targeting in chromosome structure and gene regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75, C78-C79, C89, C94-C96, and C106-C108 represent prior knowledge supported by citations. These provide context for interpreting the genetic interactions and functional significance of the findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "7aed9241-bb21-4f3f-8872-9292f2dea89a",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Scc2 activity in vivo must depend on Scc4 in ways not recapitulated by the in vitro loading reaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is a logical inference from the essentiality of Scc4 in vivo (C25) despite Scc2 being sufficient for loading in vitro (C24). This inference motivates the investigation of Scc4 function and is supported by the subsequent findings about Scc4's role in targeting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "200d8e86-8637-4711-854f-f4bd835cd580",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Summary claims stating that Scc4 determines cohesin localization through a conserved surface patch and that this targeting function is separable from its essential role in establishing genome-wide cohesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are high-level summaries of the major findings supported by the detailed experimental results (C66-C105). These represent the main conclusions of the paper and are well-supported by the convergent evidence from structural, genetic, and genomic approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    },
+    {
+      "id": "5b73c24a-9325-414f-badb-5a8eb29896fb",
+      "content_id": "2d765bb6-0603-4902-8dc3-c5f39d83ac54",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The Scc4-conserved patch provides a molecular explanation for how broad cohesin-dense domains may be specified and offers a foundation for studying chromatin-associated factors that localize cohesin loading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C114 represent conclusions about the implications of the findings. These are reasonable interpretations of the data that place the results in a broader context. The conserved patch does provide a molecular handle for understanding cohesin targeting, though the specific factors that interact with it remain to be identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:06:17.712609Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0099a66f-cac5-46bc-8ddb-172af6e3f261",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "b44a098e-d112-4ae5-9b31-b862eeb187a0",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "bc501f2d-e3ce-44ec-86a3-2fb9f8f751b3",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "3f8886d2-c2b7-4bea-8140-9a2cb0bfa51c",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "e5f80020-750b-46cf-99d6-a41d9e5badcc",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "fef39c94-3846-4e19-a4f7-c09696828d24",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "b826584c-5c14-4c00-b2f5-d37b8b0ca502",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "ceefab74-e5ae-4106-8397-9c49d78f32d3",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "989d4578-dfd3-4e53-8715-6164274890b2",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "4a2da1e7-fe92-4f82-8b7c-87277f8dbd63",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "efdeeeed-e9cb-41db-8666-b537e484b9d7",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "2f6bdf80-6acc-480f-a184-a387bb410866",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "cc4ce76c-07eb-45c0-8c64-d6c3ea7699f2",
+      "result_id": "2bf5e380-1510-495b-82b8-0a7fcf0e3e29"
+    },
+    {
+      "claim_id": "55987561-96e8-4c24-b067-48c7654257d6",
+      "result_id": "909be671-afe7-4649-9000-9c6d452985bc"
+    },
+    {
+      "claim_id": "db0db42c-0ee0-4409-81e7-4a50b4dad2f1",
+      "result_id": "909be671-afe7-4649-9000-9c6d452985bc"
+    },
+    {
+      "claim_id": "1a6995e4-d9e5-4dfa-80f1-28a7c86ef654",
+      "result_id": "909be671-afe7-4649-9000-9c6d452985bc"
+    },
+    {
+      "claim_id": "6edd87ea-1a3b-45f6-82ff-f586d9477830",
+      "result_id": "909be671-afe7-4649-9000-9c6d452985bc"
+    },
+    {
+      "claim_id": "b9cf8de6-8ba4-453c-a88b-dfa94736139e",
+      "result_id": "ea4ecd5e-01d5-407a-a9ee-c147f10e86fb"
+    },
+    {
+      "claim_id": "1a4541eb-77d9-42a4-a24c-d9c0c48e4894",
+      "result_id": "ea4ecd5e-01d5-407a-a9ee-c147f10e86fb"
+    },
+    {
+      "claim_id": "8d2b81d4-2656-416d-a6ed-3f8eb249a868",
+      "result_id": "ea4ecd5e-01d5-407a-a9ee-c147f10e86fb"
+    },
+    {
+      "claim_id": "5fb6f317-980f-49cb-9c57-7595af8c733a",
+      "result_id": "ea4ecd5e-01d5-407a-a9ee-c147f10e86fb"
+    },
+    {
+      "claim_id": "f0e9aca4-608e-4e9d-b50b-e5905fab5c39",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "553f652a-2f02-497b-ac54-a232f21ea825",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "81fd281e-f757-4195-a7b0-84fb831360aa",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "9669ce5c-0c11-4c0b-a51f-2b1b2075550d",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "b3c54ff8-7a74-42a1-97f0-d774c1866180",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "7bba5bf4-b7c1-4601-86e8-0c1edeca4cde",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "9e383855-7ec2-4065-a678-04b107c67da3",
+      "result_id": "55cc7689-a338-48c0-80b7-1018dfa81850"
+    },
+    {
+      "claim_id": "8d77267b-542f-41e7-85f6-3cf2187ba266",
+      "result_id": "f48a5cba-13b2-44db-9042-78f9db171f6e"
+    },
+    {
+      "claim_id": "11252d00-1876-4a3d-9715-b7592e74dc77",
+      "result_id": "f48a5cba-13b2-44db-9042-78f9db171f6e"
+    },
+    {
+      "claim_id": "8051a74b-6279-45c7-8a6f-7b1332475636",
+      "result_id": "f48a5cba-13b2-44db-9042-78f9db171f6e"
+    },
+    {
+      "claim_id": "5f6df9a8-d417-4d9f-98ec-670cf309168f",
+      "result_id": "f48a5cba-13b2-44db-9042-78f9db171f6e"
+    },
+    {
+      "claim_id": "5160c644-687f-4f44-8273-77080b219494",
+      "result_id": "f48a5cba-13b2-44db-9042-78f9db171f6e"
+    },
+    {
+      "claim_id": "3b450df4-cf1a-45f7-81aa-948aaa0ce825",
+      "result_id": "f48a5cba-13b2-44db-9042-78f9db171f6e"
+    },
+    {
+      "claim_id": "94969641-f5b1-46d6-beb6-f5978b435491",
+      "result_id": "849e8b91-91da-47a1-9b69-8ffe596df2aa"
+    },
+    {
+      "claim_id": "8f9f347f-f50d-4a29-b3a2-d7030b1c776b",
+      "result_id": "849e8b91-91da-47a1-9b69-8ffe596df2aa"
+    },
+    {
+      "claim_id": "c9fbcf0a-90c1-46be-8ecf-23ef2d6bdf2a",
+      "result_id": "c2b2d6bd-02d1-422d-830f-2e6275e76112"
+    },
+    {
+      "claim_id": "a5d11f81-e598-41a5-9028-19d2a3c8713b",
+      "result_id": "c2b2d6bd-02d1-422d-830f-2e6275e76112"
+    },
+    {
+      "claim_id": "a98c3532-4058-4051-91b4-2c3af464f8f3",
+      "result_id": "c2b2d6bd-02d1-422d-830f-2e6275e76112"
+    },
+    {
+      "claim_id": "62fedccc-40bf-4fcd-bb0d-44d2dc81423c",
+      "result_id": "c2b2d6bd-02d1-422d-830f-2e6275e76112"
+    },
+    {
+      "claim_id": "7bc7efa4-8fc2-4529-a216-7dc4b7314e7a",
+      "result_id": "01d60ff2-8245-4fbb-8afb-b2d92135a67d"
+    },
+    {
+      "claim_id": "1a8f8397-ec16-46f5-a778-a187d30c4481",
+      "result_id": "01d60ff2-8245-4fbb-8afb-b2d92135a67d"
+    },
+    {
+      "claim_id": "c64f9acc-14e3-4bca-80c7-0073cb53eaa7",
+      "result_id": "724e9912-aa05-47cd-8805-9b3c8ebf3694"
+    },
+    {
+      "claim_id": "0cd22033-8c6b-4085-bc5e-ffe4d14009b1",
+      "result_id": "724e9912-aa05-47cd-8805-9b3c8ebf3694"
+    },
+    {
+      "claim_id": "bdbe76eb-79bc-4719-8ba9-2c1424b14108",
+      "result_id": "d44c9c2e-2b88-4163-b88f-2b6ca11e7176"
+    },
+    {
+      "claim_id": "3538c2e8-7059-4ad1-bca3-6f1c300148d6",
+      "result_id": "d44c9c2e-2b88-4163-b88f-2b6ca11e7176"
+    },
+    {
+      "claim_id": "c6b90040-dd42-49a2-9dde-3fde86b5c1cf",
+      "result_id": "f59ecca7-ae0d-4bf5-be13-c51853e3d066"
+    },
+    {
+      "claim_id": "7b65d5e7-f4e9-4078-9a95-ac3e6d86454b",
+      "result_id": "f59ecca7-ae0d-4bf5-be13-c51853e3d066"
+    },
+    {
+      "claim_id": "64c6db4c-3712-47f3-a3eb-9a53521550e7",
+      "result_id": "f59ecca7-ae0d-4bf5-be13-c51853e3d066"
+    },
+    {
+      "claim_id": "4e152966-8a40-480c-898f-a959df0e31fc",
+      "result_id": "f59ecca7-ae0d-4bf5-be13-c51853e3d066"
+    },
+    {
+      "claim_id": "fdd77450-ccfa-4933-8923-02b10caaef30",
+      "result_id": "bf7201ef-9722-440d-b679-25e24609ed3c"
+    },
+    {
+      "claim_id": "b1189a2a-48a9-45dc-864c-0fb52aa4b698",
+      "result_id": "bf7201ef-9722-440d-b679-25e24609ed3c"
+    },
+    {
+      "claim_id": "34d8888a-34c5-4c05-8f78-e9fcc55b9f13",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "b3c3e928-eb6c-428f-97d1-f35901c1426e",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "dc7e8186-1207-4d29-a5c6-3b572e554a6f",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "545b8e3a-f398-4ef0-ac3a-13816d20c0c7",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "7bcb4d42-b0b7-4bc2-ab60-d51d466233ce",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "572a98eb-f7b5-4d42-9905-d32e7385abc3",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "b7c1a625-b28d-4e58-b1b8-9c2403072926",
+      "result_id": "3bc0177e-eb11-4b09-8793-e3f718cb9e0a"
+    },
+    {
+      "claim_id": "4570436b-32bd-41a7-862d-37e22c09c9f1",
+      "result_id": "381e0c06-aa67-483f-90b1-a432b38344d9"
+    },
+    {
+      "claim_id": "be34a65a-8bff-443f-8d36-355b574cecf3",
+      "result_id": "381e0c06-aa67-483f-90b1-a432b38344d9"
+    },
+    {
+      "claim_id": "9d39f9d2-3f83-4440-bbb7-8bbd2c612851",
+      "result_id": "381e0c06-aa67-483f-90b1-a432b38344d9"
+    },
+    {
+      "claim_id": "12b85ffb-4478-4899-bd91-ae48c4240d3e",
+      "result_id": "381e0c06-aa67-483f-90b1-a432b38344d9"
+    },
+    {
+      "claim_id": "1a230987-cc3c-42d3-bb6a-d74e042900cd",
+      "result_id": "173e323d-9f7f-470c-941d-66269dfbfd97"
+    },
+    {
+      "claim_id": "1a3d12a0-9fe9-4921-ad73-2f6c1fa5beb6",
+      "result_id": "91682825-8e25-467c-91b8-1331761fe11a"
+    },
+    {
+      "claim_id": "e60094da-d408-4b47-856b-11f96f6790f5",
+      "result_id": "91682825-8e25-467c-91b8-1331761fe11a"
+    },
+    {
+      "claim_id": "0c81c30b-c163-4eda-862f-a7ded040ec92",
+      "result_id": "094c8661-ef11-4d72-ab52-f6155bc81aed"
+    },
+    {
+      "claim_id": "7a3f25a2-e4aa-48f1-8853-1bd26dce10d6",
+      "result_id": "094c8661-ef11-4d72-ab52-f6155bc81aed"
+    },
+    {
+      "claim_id": "b79918d5-4d64-4c0e-a46d-80511424b947",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "6c5ee59d-5211-4f37-b826-888c9b72163a",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "9110a8b0-f099-496a-95e8-30b3691ab33e",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "d6213a22-bc23-4431-bc0d-f12bcf6d6eba",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "46616f1a-58ca-4749-ab65-7fd7598a3333",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "449896ec-4fde-4f79-9049-364b32cf6748",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "1ee4d865-515c-495f-8e23-9d173694ec71",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "38544f0d-2711-4cac-ad24-ca43ed820460",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "3c12609a-a3af-436a-b031-16500331d477",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "63002726-236f-481f-951e-239bfc4d8b5d",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "f678f956-2ae4-4339-ad0e-a78f4b855d32",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "a420e3be-edd7-4353-ae91-24d08f187bca",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "be6026f4-57cd-42f6-a7f8-90daf06a0fad",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "8ebc1dd9-c1dd-492a-a511-07351d5db048",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "e09b7c24-22aa-47e7-8e13-e4b290e820c2",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "bb3fd7ff-0158-4b9a-b51d-519316503071",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "1facf573-c3fb-4483-a0b9-98e661921c0b",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "60795e2b-0f8b-49db-86ea-b8a98d495b10",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "630f5853-f983-4eba-928a-0087e7351d91",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "a6bc0c07-7d2b-445b-abfb-10932231dc0c",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "f0f05510-910e-4f21-8d12-b44c93d2c0c8",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "6fc90d3a-5d50-46c8-89cb-770670cd71af",
+      "result_id": "c142a616-1864-4993-ae8b-815c8af430b0"
+    },
+    {
+      "claim_id": "7d79b81f-8d45-4722-bbbb-c44b50fef040",
+      "result_id": "1bfecda2-21d0-4b5e-b223-75d71cbdae3d"
+    },
+    {
+      "claim_id": "2622a180-0e68-425b-9dd8-a35e674e1e80",
+      "result_id": "1bfecda2-21d0-4b5e-b223-75d71cbdae3d"
+    },
+    {
+      "claim_id": "20610eaf-e4b3-4d80-b847-947cd7adb4dc",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "fe6d274d-0e50-4251-b66b-f651ff5262f2",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "37818a03-b682-4d22-ab09-7f5307a9c606",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "7529637c-91f8-4801-917a-56a94dee599c",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "83ac0f0e-7fe7-4307-931f-3f9058c0435a",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "f2d1f1e0-090d-439b-bfb8-33ffa79087d7",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "beca1c19-ea21-4903-ac4b-340fbdfa3952",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "99502e14-0ca2-4c0d-a195-2e79b83891d7",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "04e3dbd8-cfd1-430f-b6f6-190561af7914",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "79f1bab9-359e-44f1-a239-516bbbee047a",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "75c4fe28-de1e-4350-b43a-a6f7e4529334",
+      "result_id": "fd79ab29-709e-4484-b98b-f92a6f8e2454"
+    },
+    {
+      "claim_id": "48a774f2-3cf7-426d-bc61-100bec9238a5",
+      "result_id": "7aed9241-bb21-4f3f-8872-9292f2dea89a"
+    },
+    {
+      "claim_id": "edf89d97-6238-4098-bca9-546b0440f584",
+      "result_id": "200d8e86-8637-4711-854f-f4bd835cd580"
+    },
+    {
+      "claim_id": "b67321e9-7766-4eb8-93ba-7a9168e39497",
+      "result_id": "200d8e86-8637-4711-854f-f4bd835cd580"
+    },
+    {
+      "claim_id": "9a3868eb-9f90-431d-a6ee-54733039ba98",
+      "result_id": "200d8e86-8637-4711-854f-f4bd835cd580"
+    },
+    {
+      "claim_id": "530220d4-b4b7-45dc-9aae-d92035704f3f",
+      "result_id": "5b73c24a-9325-414f-badb-5a8eb29896fb"
+    },
+    {
+      "claim_id": "6170fc87-beb1-49de-ac43-70af76d7ee3d",
+      "result_id": "5b73c24a-9325-414f-badb-5a8eb29896fb"
+    }
+  ],
+  "comparisons": []
+}

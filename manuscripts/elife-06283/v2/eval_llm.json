@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MAF1 knockdown strongly upregulates CDKN1A expression (~10-fold) and arrests cells at G1 phase. This upregulation occurs in multiple cell lines (MCF-7, HCT116, MCF-10A, MDA-MB-231) and is independent of p53 status, as demonstrated in both wild-type and p53-null HCT116 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, C52, C53 are directly supported by qRT-PCR and immunoblot data in Figure 1D,E showing ~10-fold upregulation. Claim C54 is supported by flow cytometry (Figure 1C). Claims C56-C58 demonstrate p53-independence through experiments in p53-null cells (Figure 1\u2014figure supplement 1B,C). The data are consistent across multiple experimental approaches and cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "Simultaneous knockdown of MAF1 with either Pol III or BRF1 abolishes the CDKN1A activation induced by MAF1 knockdown alone, demonstrating that Pol III recruitment is required for CDKN1A transcriptional activation. Pol III knockdown alone does not significantly affect CDKN1A expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by expression data (Figure 1D) and 3C data (Figure 6C). Claims C64-C65 are supported by nuclear run-on data (Figure 2A,B). Claim C59 shows Pol III alone has no effect. The double knockdown experiments provide strong evidence for Pol III requirement, though the mechanism by which Pol III activates a Pol II gene remains incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C74"
+    ],
+    "result": "Nuclear run-on assays demonstrate that CDKN1A upregulation by MAF1 knockdown occurs at the transcriptional level. Nascent CDKN1A transcription is induced after MAF1 knockdown, while control genes (ACTB, TAF5) are unaffected. Double knockdown of MAF1 and Pol III abolishes this induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are directly supported by nuclear run-on data in Figure 2A,B. This provides strong evidence that regulation occurs at the transcriptional level rather than through post-transcriptional mechanisms. The specificity is demonstrated by unchanged transcription of control genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "MAF1 knockdown induces extended R-loop formation in the gene body of CDKN1A, indicating active transcription. This R-loop formation is abolished by simultaneous knockdown of Pol III and MAF1, while R-looping of the control gene ACTB is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C71-C72 are supported by R-loop foot-printing data in Figure 2C-H. Claim C70 is an inference based on established correlation between R-loops and active transcription (C66-C67, cited literature). The R-loop data provide additional evidence for transcriptional regulation, though the interpretation relies on prior knowledge about R-loop function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ChIP analysis reveals that MAF1 knockdown results in depletion of MAF1 from the CDKN1A promoter with concomitant increased binding of both Pol II and Pol III polymerases to both transcription start site regions. Enhanced binding of active Serine-5-phosphorylated Pol II indicates active transcription, and this is abolished by double knockdown of Pol III and MAF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C80-C84, C86 are directly supported by ChIP-qPCR data in Figures 3D-F. Claim C85 is a reasonable inference based on established knowledge about Ser5-phosphorylated Pol II. The ChIP data provide strong evidence for the proposed mechanism of MAF1 repression and Pol III recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Simultaneous knockdown of MAF1 with BRF1 (a subunit of TFIIIB) abolishes the enhanced binding of both Pol III and Pol II after MAF1 knockdown. BRF1 binding itself is induced by MAF1 knockdown and diminished by double knockdown with either Pol III or BRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88, C91-C93 are supported by ChIP-qPCR data in Figure 3E-G. The BRF1 experiments provide additional evidence that the Pol III transcription machinery (TFIIIB) is required for the observed effects, strengthening the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "MAF1 directly binds to the CDKN1A promoter through the MIR3 SINE element. In vitro DNA binding assays with purified MAF1 protein demonstrate specific binding to the CDKN1A promoter containing MIR3, which is abolished when MIR3 or the Pol III A-box element is deleted or mutated. MAF1 does not bind to the ACTB promoter lacking SINE elements. This represents the first demonstration of direct MAF1 binding to specific DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C100-C106 are supported by in vitro DNA binding assays (Figure 4A-C) and ChIP data (Figure 3D). The deletion/mutation experiments (C101, C103-C104) demonstrate binding specificity. Claim C108 about novelty is a knowledge claim that cannot be fully verified but is reasonable given the cited literature. The in vitro binding data provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "In vitro transcription experiments using HeLa nuclear extract recapitulate in vivo regulation. Pre-incubation with purified MAF1 protein represses CDKN1A transcription, while depletion of MAF1 from nuclear extract upregulates CDKN1A transcription. Simultaneous depletion of both Pol III and MAF1 abolishes the enhancement, demonstrating that MAF1 serves as a repressor and that Pol III recruitment is crucial for CDKN1A activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by in vitro transcription data in Figure 4D-E. Claims C114-C116 are reasonable conclusions from these experiments. The in vitro system provides strong mechanistic evidence by recapitulating in vivo observations in a controlled setting, though some caveats exist about whether commercial nuclear extracts fully represent physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "MAF1 knockdown significantly enhances active histone modifications (H3K4me3, H3K9Ace, H3K27Ace) at the 5' regions of CDKN1A, while decreasing the repressive mark H3K27me3. These changes are abolished by simultaneous knockdown of Pol III and MAF1, indicating Pol III is required for these epigenetic modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122, C124-C125 are directly supported by ChIP-qPCR data in Figure 5B. The histone modification data provide strong evidence that Pol III recruitment leads to chromatin remodeling associated with transcriptional activation. The double knockdown experiments demonstrate Pol III requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "MAF1 knockdown induces binding of transcriptional activators CFP1, p300, and PCAF to the CDKN1A promoter. Simultaneous knockdown of MAF1 and Pol III abolishes this induced binding, indicating that Pol III is required to recruit these factors for histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C130-C133 are supported by ChIP-qPCR data in Figure 5C-E. Claim C134 is a reasonable inference from the double knockdown experiments. The data demonstrate that Pol III recruitment leads to recruitment of chromatin-modifying factors, though the direct mechanism of recruitment is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Enhanced binding of TBP (a factor required in both Pol II and Pol III transcription) is observed at the CDKN1A promoter after MAF1 knockdown. This binding is abolished by simultaneous knockdown of Pol III and MAF1. Double knockdown of MAF1 and TBP abolishes CDKN1A upregulation, indicating TBP is important for transcription activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C138-C140 are supported by ChIP-qPCR data (Figure 5F) and expression data (Figure 5\u2014figure supplement 1B). Claim C141 is a reasonable inference. The TBP data support the proposed model of shared transcription factors between Pol II and Pol III systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C142",
+      "C144",
+      "C145"
+    ],
+    "result": "Enhanced binding of POLR2E (RPB5), a common subunit of all three RNA polymerases, is observed after MAF1 knockdown. This binding is abolished by simultaneous knockdown of Pol III and MAF1, indicating interplay between Pol II and Pol III polymerases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C142, C144 are supported by ChIP-qPCR data in Figure 5G. Claim C145 is an inference about polymerase interplay. The POLR2E data provide additional evidence for coordination between Pol II and Pol III, though the functional significance of this shared subunit binding requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Chromatin looping is detected between the two 5' flanking regions of CDKN1A after MAF1 knockdown but not in adjacent regions. Simultaneous knockdown of MAF1 with either Pol III or BRF1 disrupts this looping formation, demonstrating that Pol III is required for induced chromatin looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C146-C149 are supported by 3C assay data in Figure 6B-C. Claim C150 is a reasonable conclusion. The 3C data provide evidence for long-range chromatin interactions, though the resolution and specificity of 3C assays have limitations. The requirement for Pol III in looping is well-demonstrated by double knockdown experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Similar results were obtained for GDF15, another cell proliferation-related gene. GDF15 expression is strongly upregulated after MAF1 knockdown, MAF1 binds to the GDF15 5' flanking region through a MIR element, chromatin looping is induced, and both Pol III and Pol II binding are enhanced. All effects require Pol III, as demonstrated by double knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C152-C165 are supported by expression data (Figure 1D), ChIP data (Figure 7B,E,F), in vitro binding data (Figure 4B), in vitro transcription data (Figure 4E), and 3C data (Figure 7C,D). Claims C166-C167 are reasonable conclusions. The GDF15 data demonstrate that the mechanism is not unique to CDKN1A, strengthening the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C174",
+      "C175"
+    ],
+    "result": "Reporter assays demonstrate that promoter-driven luciferase activities of CDKN1A and GDF15 are upregulated after MAF1 knockdown, while TAF5 is unaffected. Double knockdown of Pol III and MAF1 abolishes the upregulation. Deletion of the A-box in the GDF15 promoter diminishes upregulation after MAF1 knockdown, demonstrating that MAF1 represses promoter activity by binding to the Pol III promoter element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 are supported by luciferase assay data in Figure 8A. Claims C174-C175 are supported by data in Figure 8B. Claim C171 is a reasonable conclusion. The reporter assays provide independent validation of the endogenous gene results and demonstrate the importance of the Pol III promoter element (A-box) in the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C51",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The authors propose a novel mechanism whereby MAF1 and Pol III regulate Pol II gene activity. MAF1 binds to promoter-associated SINEs with type II Pol III promoters, and depletion of MAF1 enhances transcription activity and chromatin looping through recruitment of Pol III along with active Pol II and associated factors. This represents a novel transcription regulatory mechanism where MAF1 acts as a specific repressor of some Pol II genes by binding to promoter-associated SINEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C51, C176-C184 represent the main conclusions synthesized from all experimental data. These are supported by the collective evidence from expression studies, ChIP, in vitro binding, in vitro transcription, R-loop analysis, 3C assays, and reporter assays across multiple genes (CDKN1A and GDF15). The novelty claim (C180) is reasonable given the comprehensive characterization. However, the generalizability to other genes requires further investigation (see C195-C196).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C195",
+      "C196"
+    ],
+    "result": "Microarray analysis identified 124 genes upregulated and 170 genes downregulated more than twofold after MAF1 knockdown. Most affected genes are related to cell proliferation. Of the upregulated genes, 76% contained SINEs within the promoter region, suggesting potential regulation by MAF1 and Pol III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 are supported by microarray data. Claim C32 is an inference from pathway analysis. Claims C195-C196 suggest broad applicability but are based only on sequence analysis correlation, not functional validation. The authors acknowledge (in Discussion) that microarray analysis of steady-state mRNA alone is insufficient to determine direct transcriptional regulation versus secondary effects. Further validation would be needed to establish how many of these genes are directly regulated by the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C127"
+    ],
+    "result": "CFP1 knockdown downregulates MAF1 knockdown-induced CDKN1A transcription. Previous literature shows CFP1 and p300 act cooperatively to regulate H3K4me3 modification and CDKN1A transcription, and p300/PCAF regulate K27/K9 acetylation of the CDKN1A promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by qRT-PCR data in Figure 5\u2014figure supplement 1A. Claims C127, C129 are knowledge claims supported by citations. The CFP1 knockdown experiment provides functional validation that CFP1 is important for the MAF1 knockdown effect, supporting the proposed mechanism involving histone-modifying factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "The authors propose a mechanistic model: before MAF1 removal, Pol II is in a transcriptionally engaged but paused state with pre-assembled TBP/TFIIB at the promoter. MAF1 removal leads to TFIIIB recruitment through enhanced TBP binding, and the shared surface of TBP directs both Pol II and Pol III binding through association with TFIIB and TFIIIB. Further recruitment of active regulatory factors induces transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C215-C219 represent a proposed mechanistic model based on the data and previous literature on paused Pol II. While the model is consistent with the observations (TBP binding, recruitment of factors, etc.), it contains speculative elements about the paused Pol II state and the precise sequence of events. The model is reasonable but would require additional experiments (e.g., Pol II pausing analysis, temporal studies of factor recruitment) for full validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C193"
+    ],
+    "result": "The authors propose that chromatin looping observed for CDKN1A and GDF15 after MAF1 knockdown may be mediated through proximity and interaction between sets of transcriptional factors recruited in the two 5' flanking regions after chromatin remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C193 is a speculative mechanism proposed based on the data and previous literature (Crepaldi et al., 2013). While the 3C data demonstrate looping occurs, the precise molecular mechanism mediating the looping is not directly tested. This represents a reasonable hypothesis that would require additional experiments (e.g., identification of specific protein-protein interactions, disruption of specific factors) for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C192"
+    ],
+    "result": "The SINE with the MAF1-binding site located at 2.65 kb upstream of the short CDKN1A promoter exerted no enhancer activity in luciferase assays before or after MAF1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C192 is stated as unpublished data ('data not shown'). Without access to these data, the claim cannot be evaluated. This negative result is mentioned in the Discussion to clarify that the MAF1-binding SINE does not function as a classical enhancer, but the absence of data is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C214"
+    ],
+    "result": "MAF1 knockdown only slightly increased TBP expression (1.6-fold) compared to results reported by Johnson et al. (twofold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C214 is based on the authors' qRT-PCR data. The modest increase in TBP expression suggests that the previously proposed mechanism of MAF1 regulating Pol II genes through TBP transcription (C28-C29, C211-C212) may not be the primary mechanism in these cells. This observation supports the authors' novel mechanism involving direct promoter binding.",
+    "result_type": "MINOR"
+  }
+]

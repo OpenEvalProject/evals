@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Daple contains a conserved GBA motif (aa 1668-1683) that binds selectively to inactive GDP-bound G\u03b1i subunits (G\u03b1i1, G\u03b1i2, G\u03b1i3 but not G\u03b1o) with submicromolar affinity (Kd = 0.11 \u00b1 0.03 \u00b5M). The interaction occurs via the SwII/\u03b13 hydrophobic cleft of G\u03b1i3, with critical residues W211, F215 on G\u03b1i3 and F1675 on Daple. The Daple-G\u03b1i3 interface has unique molecular features distinguishing it from other GBA proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary biochemical approaches (co-IP, pulldown assays with purified proteins, quantitative binding assays, mutagenesis, homology modeling) consistently demonstrate that Daple binds G\u03b1i proteins via a conserved GBA motif with the reported specificity and affinity. The state-dependent binding (GDP vs GTP), isoform selectivity, and structural determinants are well-characterized through systematic mutagenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Daple functions as a bona fide GEF for G\u03b1i proteins, accelerating steady-state GTPase activity ~3-fold and GTP\u03b3S binding in a dose-dependent manner (EC50 = 0.25 \u00b1 0.06 \u00b5M). An intact GBA motif (specifically F1675) is essential for Daple to activate G\u03b1i3 in cells responding to Wnt5a stimulation, as demonstrated by FRET imaging and immunoprecipitation with conformation-specific antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GEF activity is demonstrated through multiple orthogonal assays: steady-state GTPase assays, GTP\u03b3S-binding assays (both in vitro with purified proteins), FRET imaging of heterotrimer dissociation in live cells, and immunoprecipitation with anti-G\u03b1i:GTP antibodies. The requirement for the GBA motif is consistently shown across all assays using the F1675A mutant. The EC50 matches the Kd, supporting a direct mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Daple displaces G\u03b2\u03b3 from G\u03b1i3\u00b7G\u03b2\u03b3 heterotrimers (IC50 = 0.16 \u00b1 0.01 \u00b5M) and the released 'free' G\u03b2\u03b3 subunits activate downstream signaling pathways including Rac1 and PI3K-Akt. Both pathways require an intact GBA motif in Daple and are blocked by the G\u03b2\u03b3 inhibitor Gallein but not by its inactive analog Fluorescein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The displacement of G\u03b2\u03b3 is directly demonstrated through in vitro competition assays with purified proteins. The functional consequences are shown through multiple assays: Rac1 pulldown assays with GST-PBD and phospho-Akt measurements, both in steady-state and after Wnt5a stimulation. The requirement for the GBA motif is consistently demonstrated using the FA mutant, and the role of free G\u03b2\u03b3 is validated through pharmacological inhibition with Gallein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Daple directly binds FZD7R with preference over other FZDRs. The C-terminal region (aa 1650-2028) is sufficient for binding, with the extreme C-terminus (aa 1881-2029) being essential. The GBA and PBM motifs are dispensable for FZD7R binding. Upon Wnt5a stimulation, Daple translocates to the plasma membrane where it colocalizes and co-immunoprecipitates with FZD7R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Direct binding is demonstrated through pulldown assays with purified recombinant proteins. The domain requirements are mapped through systematic deletion analysis. The preferential binding to FZD7R is shown through comparative pulldown assays with multiple FZDR cytoplasmic tails. Ligand-dependent complex formation is demonstrated through co-IP and immunofluorescence showing translocation and colocalization. The dispensability of GBA and PBM motifs for FZDR binding is shown through mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Daple enhances the binding of G\u03b1i3 to FZD7R cytoplasmic tails ~5-fold in vitro and is required for ligand-dependent recruitment of G\u03b1i3 to FZD7R in cells. Wnt5a triggers assembly of FZD7R-G\u03b1i3 complexes at the plasma membrane within 5 minutes (FRET efficiency = 0.25 \u00b1 0.06), and this assembly requires Daple-WT but not the FA mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enhancement of G\u03b1i3-FZD7R binding by Daple is demonstrated through in vitro pulldown assays with purified proteins. The requirement for Daple in cells is shown through co-IP experiments comparing WT and FA mutants. The spatiotemporal dynamics are characterized through FRET imaging in live cells, showing ligand-dependent complex formation at the PM. The requirement for an intact GBA motif is consistently demonstrated across all assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Daple and Dvl compete for binding to FZD7R. Daple-Dvl complexes dissociate upon Wnt5a stimulation, coinciding with assembly of Daple-FZD7R complexes. Expression of Daple reduces Dvl association with FZD7R in vitro and in cells. Daple is required for ligand-stimulated dissociation of Dvl from the plasma membrane. G\u03b1i3 competes with Dvl for binding to Daple in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition between Daple and Dvl for FZD7R binding is demonstrated through multiple approaches: co-IP showing ligand-dependent dissociation of Daple-Dvl complexes, in vitro displacement assays with purified proteins showing dose-dependent competition, and immunofluorescence showing that Daple depletion prevents Dvl dissociation from the PM after Wnt5a stimulation. The competition between G\u03b1i3 and Dvl for Daple binding is shown through in vitro displacement assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Daple suppresses the canonical \u03b2-catenin/TCF/LEF pathway. Cells lacking Daple or expressing the GEF-deficient FA mutant have increased \u03b2-catenin protein levels and enhanced transcription of downstream target genes (SFRP-1, Osteopontin, Axin-2). Daple specifically functions within the non-canonical Wnt signaling cascade, as Wnt3a stimulation does not require Daple for Gi activation, does not trigger Daple recruitment to the PM, and does not affect \u03b2-catenin stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The suppression of \u03b2-catenin/TCF/LEF signaling is demonstrated through multiple complementary assays: immunoblotting for \u03b2-catenin protein levels, qPCR for target gene expression, and reporter assays (7TGP) in DLD1 cells. The requirement for the GBA motif is consistently shown using the FA mutant. The specificity for non-canonical signaling is demonstrated through multiple control experiments with Wnt3a showing no effect on Gi activation, Daple localization, or \u03b2-catenin levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Daple enhances PI3K-Akt and Rac1 signaling, promoting cell migration, invasion, and EMT. Daple-WT but not Daple-FA triggers chemotactic migration towards Wnt5a, cell invasion through basement membrane proteins in 3D matrigel assays, and upregulation of EMT markers (Lox-L3 and Vimentin). These effects require an intact GBA motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enhancement of PI3K-Akt and Rac1 signaling is demonstrated through phospho-Akt measurements and Rac1 pulldown assays. The functional consequences are shown through multiple cell-based assays: transwell chemotaxis assays, 3D matrigel invasion assays, wound healing assays, and qPCR for EMT markers. The requirement for the GBA motif is consistently demonstrated across all assays by comparing WT and FA mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Daple functions as a tumor suppressor through its GBA motif. Expression of Daple-WT reduces colony formation in soft agar by ~65% in Ras-transformed NIH3T3 cells, inhibits anchorage-independent growth of DLD1 cells by ~50%, and inhibits anchorage-dependent growth by ~90%. Daple-WT is required for Wnt5a-mediated tumor suppression. Expression of Daple-FA not only fails to inhibit transformation and growth but enhances oncogenicity. A Daple mutant lacking the PBM motif but with intact GBA motif retains tumor suppressive properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tumor suppressive function is demonstrated through multiple complementary assays: soft agar colony formation assays in NIH3T3 and DLD1 cells, adherent colony formation assays, mitotic index measurements, and rescue experiments showing restoration of Wnt5a tumor suppression by Daple-WT but not FA. The requirement for the GBA motif and dispensability of the PBM motif are consistently shown through systematic comparison of multiple mutants (WT, FA, \u0394PBM, 2M) across all assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Daple expression is downregulated during adenoma-to-carcinoma transformation in colorectal cancer. Daple mRNA is reduced ~2-fold in adenocarcinomas compared to matched normals, particularly in microsatellite stable (MSS) tumors with chromosomal instability (CIN). The degree of suppression correlates with the degree of CIN. Suppression of Daple in primary tumors is associated with disease progression in stage II colorectal cancers. Loss of copy number for the Daple gene occurs at late stages of adenoma-to-carcinoma progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The downregulation of Daple is demonstrated through multiple independent patient cohorts using different methodologies: meta-analysis of microarray databases, qPCR analysis of patient samples, and TCGA database analysis. The stage-specific expression pattern is shown through qPCR comparing normal, advanced adenomas, and carcinomas. The association with CIN and prognostic value are demonstrated through correlation analyses. The timing of copy number loss is shown through CGH analysis of progressed adenomas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Daple is expressed in metastasized tumor cells and circulating tumor cells (CTCs) from patients with colorectal cancer. Daple mRNA is elevated in both cell-free RNA samples and CTCs from patients with metastatic colorectal cancer compared to normal subjects. High levels of Daple expression in CTCs are associated with poorer progression-free survival and overall survival, and correlate positively with increased expression of EMT genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression of Daple in CTCs is demonstrated through qPCR analysis of immunoisolated CTCs from 51 patients with metastatic colorectal cancer. The association with poor prognosis is demonstrated through Kaplan-Meier survival analysis with statistically derived optimal cut-off values. The correlation with EMT gene expression is shown through gene expression analysis. The presence in cell-free RNA is demonstrated through microarray analysis of peripheral blood samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The mechanism for downregulation of Daple in cancers follows typical tumor suppressor genetics. The ccdc88c gene encoding Daple is located at 14q32.11, a region frequently deleted in early onset colorectal tumors. Loss of Daple copy number occurs predominantly among tumors with chromosomal instability (CIN) and is invariably associated with CIN in MSS tumors. Loss of heterozygosity (LOH) and haploinsufficiency of Daple likely increase cell fitness by suppressing non-canonical Wnt signaling and allowing unrestricted propagation of canonical Wnt pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromosomal location and deletion frequency are established through TCGA database analysis and cited literature. The association with CIN is demonstrated through correlation analysis of copy number and microsatellite status. The timing of copy number loss is shown through CGH analysis. The proposed mechanism of haploinsufficiency is inferred from the functional data showing that Daple depletion suppresses non-canonical Wnt signaling and enhances canonical signaling, which is consistent with tumor suppressor genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C99"
+    ],
+    "result": "Daple is a member of the CCDC88 family, sharing an N-terminal HOOK domain and coiled-coil region with GIV, but with a divergent C-terminal region (15% identity, 26% similarity). Despite overall divergence, the GBA motif is conserved, suggesting that Daple and GIV arose from a common ancestor protein and that the GBA function was selectively preserved while the rest of the C-terminal domain diverged in evolution. Daple has a PDZ-binding motif (PBM) at its extreme C-terminus that binds Dvl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The family membership and sequence relationships are established through phylogenetic sequence analysis and cited literature. The conservation of the GBA motif despite overall divergence is demonstrated through sequence alignment. The evolutionary inference is reasonable based on the sequence data. The presence and function of the PBM are established from cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background on Wnt signaling and the controversy regarding FZDR-G protein coupling. Wnt signaling plays crucial roles in development and disease. Some Wnts trigger canonical signaling (\u03b2-catenin stabilization) while others trigger non-canonical pathways (Ca2+, RhoA, Rac1 activation). Non-canonical signaling antagonizes canonical signaling. FZDRs belong to the GPCR superfamily, but their direct coupling to G proteins is controversial. Non-receptor GEFs are positioned to serve as intermediates linking FZDRs to G protein activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by extensive cited literature. They provide essential background context for understanding the significance of the current work. The controversy regarding FZDR-G protein coupling is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Daple serves as a molecular linker coupling FZDRs to G protein activation. The GBA motif provides a structural basis for non-receptor mediated activation of G proteins. The GEF activity of Daple is more robust than that previously reported for FZDRs (~2.5-3-fold vs ~1.5-fold activation). Daple enables FZDRs to indirectly activate Gi to robust levels. The marked preference for G\u03b1i over G\u03b1o is a common feature shared with other GBA proteins. Different GBA-G\u03b1i interactions have unique properties that impart specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a major conclusion of the work, supported by the comprehensive biochemical and cellular data presented. The comparison with FZDRs is based on quantitative GEF assays and cited literature. The obligatory role of Daple is demonstrated through loss-of-function experiments in cells. The specificity and unique structural features are demonstrated through comparative analysis with other GBA proteins and mutagenesis studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Mechanistic model for how Daple suppresses canonical \u03b2-catenin/TCF/LEF signaling. Dvl is unlikely to directly link G proteins to FZDRs. Daple suppresses the canonical pathway primarily by enhancing the antagonistic non-canonical Wnt pathway. Activation of G\u03b1i and inhibition of cellular cAMP by Daple could directly antagonize the adenylate cyclase/cAMP/PKA pathway that phosphorylates and stabilizes \u03b2-catenin. Activation of Gi and enhancement of non-canonical signaling are accompanied by suppression of the canonical \u03b2-catenin pathway in cells expressing Daple-WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion that Dvl is unlikely to directly link G proteins to FZDRs is supported by the competition data and cited literature. The suppression of canonical signaling by enhancement of non-canonical signaling is supported by the specificity data (no effect with Wnt3a) and cited literature on pathway antagonism. The proposed mechanism involving cAMP is speculative but reasonable based on the data and cited literature. The correlation between Gi activation and \u03b2-catenin suppression is demonstrated through multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The bimodal dysregulation of Daple during cancer progression mirrors what was previously documented for non-canonical Wnt5a signaling and other signaling pathways. Non-canonical Wnt signaling plays crucial roles in planar cell polarity and asymmetric cell division in stem cells. The Wnt7A/FZD7 pathway establishes front-rear cell polarity and directional migration by activating PI3K/Akt and Rac1. Upregulation or downregulation in Daple expression contributes to the bimodal deregulation of the Wnt5a signaling pathway observed in cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel with Wnt5a and other signaling pathways (TGF\u03b2-SMAD, GIV) is supported by cited literature and the expression data in this work. The roles of non-canonical Wnt signaling in cell polarity and stem cells are established knowledge from cited literature. The conclusion that Daple contributes to bimodal deregulation of Wnt5a signaling is supported by the functional data showing Daple enhances non-canonical Wnt signaling and the expression data showing bimodal dysregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Proposed mechanisms for dysregulation of Daple expression during cancer progression. Alternative splicing may contribute to oncogenesis via dysregulation of Daple expression, as described in a developmental anomaly attributed to loss of Daple's 29th exon containing the GBA motif. Transcriptional compensation for loss of an allele or gain-of-function mutations are possible mechanisms for enhanced Daple expression. FZD7 is a downstream target of \u03b2-catenin, and increased FZD7R expression may serve as a positive forward-feedback mechanism. Daple's functional interaction with FZD7R may enhance prometastatic signaling via amplification of the non-canonical Wnt pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are proposed mechanisms based on cited literature and the data in this work, but they remain speculative. The alternative splicing mechanism is supported by a cited developmental anomaly, but direct evidence in cancer is lacking. The transcriptional compensation and gain-of-function mutations are proposed based on other tumor suppressors but not directly demonstrated for Daple. The FZD7 feedback mechanism is proposed based on cited literature and the preferential binding data, but the synergy between canonical and non-canonical pathways is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Potential translational applications of Daple. Daple presents many signaling interfaces (GBA motif, Frizzled-binding domain) that could be developed as targets for modulating Wnt signaling. Daple presents many avenues for further development as clinically useful diagnostic and prognostic biomarkers based on its expression levels in primary tumors, circulating cell-free transcripts, and CTCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculations about future therapeutic and diagnostic applications based on the structural and functional data. While the data support the potential utility of Daple as a biomarker (expression correlates with prognosis) and the structural features suggest targetability, these applications have not been developed or validated. These represent future directions rather than current results.",
+    "result_type": "MINOR"
+  }
+]

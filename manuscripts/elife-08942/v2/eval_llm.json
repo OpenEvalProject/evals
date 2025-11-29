@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DSB induction at the MAT locus causes distance-dependent transcriptional inhibition. RNA-seq and qRT-PCR show that mRNA levels of genes proximal to the DSB decrease \u226510-fold, while distal genes show only ~2-fold reduction. ChIP analysis demonstrates that Rpb2 (RNA polymerase II) occupancy decreases progressively as a function of distance from the DSB, confirming transcriptional inhibition rather than post-transcriptional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are well-supported by multiple complementary experimental approaches (RNA-seq, qRT-PCR, ChIP) shown in Figures 1 and 2. The data consistently demonstrate distance-dependent transcriptional inhibition around the DSB. The control for mRNA stability (C35-C36) strengthens the conclusion that changes reflect transcriptional rather than post-transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "DSB-induced transcriptional inhibition is a general, locus-independent phenomenon in S. cerevisiae. Similar distance-dependent decreases in RNA levels and Rpb2 occupancy occur at ARG5,6 and LEU2 loci, demonstrating that transcriptional inhibition is not specific to the MAT locus and results from RNA polymerase II dissociation from template DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C74-C76 are supported by data from three independent loci (MAT, ARG5,6, LEU2) shown in Figures 2 and 3. The consistency across different genomic locations provides strong evidence for a general mechanism. The demonstration that Rpb2 dissociates from DNA (C75) directly addresses the molecular basis of transcriptional inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C77",
+      "C78"
+    ],
+    "result": "DSB-induced transcriptional inhibition in S. cerevisiae occurs independently of checkpoint kinases Tel1/ATM and Mec1/ATR. RNA levels decrease similarly in wild-type, mec1\u0394, tel1\u0394, and double mutant cells, contrasting with the ATM-dependent mechanism reported in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C43 are supported by data in Figure 4 showing comparable transcriptional inhibition across all checkpoint kinase mutants. This represents a key mechanistic distinction from mammalian systems (C77). The experimental design appropriately controls for cell cycle effects by using nocodazole arrest. The conclusion that Tel1/Mec1 are not required is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C79"
+    ],
+    "result": "\u03b3H2A counteracts DSB-induced transcriptional inhibition by limiting resection. The hta1-S129A mutant (lacking \u03b3H2A) shows enhanced transcriptional repression and accelerated resection compared to wild-type. Deletion of SGS1 suppresses both the enhanced resection and transcriptional inhibition in hta1-S129A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 and C79 are supported by coordinated data in Figure 5 showing that preventing \u03b3H2A formation enhances both resection (Figure 5C) and transcriptional inhibition (Figure 5A). The genetic suppression by sgs1\u0394 provides strong evidence linking resection extent to transcriptional inhibition. The mechanistic connection through Rad9 recruitment (C50) is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C80"
+    ],
+    "result": "Rad9 limits DSB-induced transcriptional inhibition by counteracting resection. rad9\u0394 cells show enhanced transcriptional inhibition comparable to hta1-S129A cells and undergo accelerated DSB resection, indicating that both \u03b3H2A and Rad9 function to limit transcriptional repression through their anti-resection activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54-C56, and C80 are supported by data in Figure 5A showing that rad9\u0394 cells exhibit transcriptional inhibition similar to hta1-S129A cells. The known role of Rad9 in inhibiting resection (C49, C54) provides a mechanistic link. The convergence of \u03b3H2A and Rad9 phenotypes strengthens the conclusion that resection drives transcriptional inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The temporal progression of transcriptional inhibition correlates with resection kinetics. At 60 min post-DSB induction, resection has proceeded ~3.5 kb and Rpb2 occupancy decreases strongly at genes within 4 kb. As resection progresses over time, Rpb2 binding to more distal genes progressively diminishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by coordinated temporal analysis in Figure 6A-B showing correlation between resection progression and Rpb2 dissociation. The spatial and temporal correspondence provides strong evidence for a causal relationship. However, the correlation is inferential (C62) rather than directly demonstrated through perturbation at specific time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C78",
+      "C81"
+    ],
+    "result": "DSB resection is necessary and sufficient for transcriptional inhibition in S. cerevisiae. Resection-defective mutants (exo1\u0394 sgs1\u0394, mre11\u0394) fail to inhibit transcription, with the extent of failure correlating with resection defect severity. The exo1\u0394 single mutant shows limited resection (~3.5 kb) and correspondingly limited transcriptional inhibition of only proximal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C67-C73 are strongly supported by Figure 6 showing dose-dependent relationship between resection capacity and transcriptional inhibition across multiple mutants. The exo1\u0394 sgs1\u0394 double mutant with the most severe resection defect shows no transcriptional inhibition, while partial resection in exo1\u0394 causes partial inhibition. This provides compelling evidence that resection drives transcriptional inhibition (C73, C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C73",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C97",
+      "C98"
+    ],
+    "result": "The conversion of DSB ends from dsDNA to ssDNA by resection is responsible for loss of transcription around DSBs in S. cerevisiae. Transcriptional inhibition occurs independently of which strand is transcribed, indicating that loss of either template or non-template strand impedes transcription, likely because RNA polymerase II requires dsDNA for binding and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C73, C81-C85, C97-C98 represent the central conclusion, well-supported by the collective experimental evidence. The strand-independence observation (C83-C84) is critical and supported by Figure 2A data. The mechanistic interpretation that RNA polymerase requires dsDNA (C85) is reasonable and supported by cited structural studies (C86-C91), though the manuscript does not directly test this mechanism in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RNA polymerase II and associated transcription factors require dsDNA for proper function. Structural and biochemical studies show that the preinitiation complex interacts with both DNA strands, dsDNA rigidity is required for promoter opening, and competition between non-template strand and RNA transcript is important for elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by appropriate citations to structural and biochemical literature. These claims provide mechanistic context for interpreting the experimental observations but represent prior knowledge rather than new findings. The citations appear appropriate and the mechanistic model is consistent with established understanding of transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C77",
+      "C92"
+    ],
+    "result": "In mammalian cells, ATM-dependent transcriptional silencing occurs around DSBs, possibly through phosphorylation of elongation factor ENL. This represents an active regulatory mechanism distinct from the passive resection-based mechanism in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C25, C77, and C92 accurately represent prior work in mammalian systems based on appropriate citations. These claims establish important context for the current study by highlighting the mechanistic difference between yeast and mammals. However, C24 appropriately notes uncertainty about the ENL mechanism ('possibly').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The relationship between resection and transcriptional inhibition in mammalian cells remains unclear. While ATM and chromatin-associated proteins promote resection in mammals, CtIP inactivation does not restore transcription, possibly because other resection machineries remain active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C96 appropriately acknowledge uncertainty about whether resection contributes to transcriptional inhibition in mammals. C93 is supported by citations, but C96 is explicitly speculative ('could contribute'). The manuscript correctly identifies this as an open question requiring future investigation. The CtIP data (C94) suggests complexity but does not rule out a resection contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C82"
+    ],
+    "result": "Background knowledge about DSB biology, DNA damage response, resection machinery, chromatin modifications, and transcription. These claims establish the scientific context including: DSB resection mechanisms (MRX, Sae2, Exo1, Sgs1-Dna2), checkpoint kinase functions, \u03b3H2A spreading, chromatin remodeling, and prior observations of transcriptional changes near DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C10-C22, C26-C30, C35, C44-C46, C49, C57-C58, C63-C66, and C82 represent established knowledge appropriately cited from literature. These provide essential context but are not novel findings. The citations appear appropriate and the background information is accurately represented. C82 is a logical inference about template strand requirements.",
+    "result_type": "MINOR"
+  }
+]

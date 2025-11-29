@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "ANO6 expression in HEK293 cells induces robust Ca2+-dependent phospholipid scrambling (PLS). Approximately 92% of ANO6-FLAG3X expressing cells showed LactC2 binding after Ca2+ addition, compared to 0.2% in parental cells and 8% in ANO1-expressing cells. PLS required Ca2+, as cells exposed to ionophore without Ca2+ showed no LactC2 binding until Ca2+ was added.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 provide strong experimental evidence from confocal imaging and western blot showing that ANO6 expression facilitates Ca2+-dependent PLS in HEK cells. The data include appropriate controls (parental cells, ANO1-expressing cells) and demonstrate Ca2+ dependence. Sample sizes are adequate (N=316-724 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Annexin-V and LactC2 bind to scrambling cells with different kinetics. Annexin-V binding increased mono-exponentially with \u03c4=143s, while LactC2 binding was significantly slower (\u03c4=433s) with a 1-2 min lag period. The difference may be explained by LactC2's preference for oxidized PtdSer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 present kinetic data from multiple independent experiments (n=5-7) with appropriate statistical analysis (\u03c7\u00b2 values reported). The interpretation regarding LactC2's preference for oxidized PtdSer is supported by citation to prior work and provides a reasonable mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In polyclonal ANO6-EGFP expressing cells, there is a direct but variable relationship between ANO6 expression level and PLS activity. While 85% of cells exhibited PLS and overall expression correlated with Annexin-V binding (r=0.84), neither the rate nor plateau level of binding correlated with ANO6-EGFP fluorescence in individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 present correlation analysis with appropriate statistical measures (Pearson correlation). The authors acknowledge the variability and offer reasonable speculative explanations (C72-C73) for the lack of tight correlation, including technical limitations and potential requirement for additional components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "ANO6 currents and PLS activate with similar time courses during patch clamp recording. ANO6 currents began increasing ~8 min after establishing whole-cell recording with 200 \u03bcM Ca2+, with Annexin-V binding becoming detectable 2-3 min later. The time constants were similar (\u03c4=2.24\u00b10.15 min for Annexin-V, \u03c4=2.31\u00b10.34 min for current), though Annexin-V fluorescence was delayed 3 min relative to current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 present simultaneous electrophysiology and imaging data (n=6 cells) with kinetic analysis. The authors provide a reasonable technical explanation for the lag between current and fluorescence detection based on Annexin-V binding kinetics and detection sensitivity, supported by citations to prior work on model bilayers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The correlation between ANO6 currents and PLS suggests that currents reflect ion leakage during phospholipid transport rather than currents activating PLS. The alternative hypothesis that ionic current activates PLS is excluded by the finding that PLS occurs normally under voltage clamp conditions with no net ionic current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 present a mechanistic hypothesis supported by experimental evidence. The control experiment (voltage clamp at 0 mV with identical solutions) effectively rules out the alternative hypothesis that current is required for PLS, strengthening the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Both ANO6 current activation and PLS require >20 \u03bcM free Ca2+ and develop over minutes. With 20 \u03bcM Ca2+, neither PLS nor currents are observed after 20 min, while both are consistently observed with 200 \u03bcM Ca2+. This shared Ca2+ requirement is consistent with the two functions being linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 present dose-response data showing that currents and PLS have the same Ca2+ concentration requirement. While this does not prove the functions are linked (as acknowledged in C89), it provides strong supporting evidence consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "ANO6 currents are highly non-selective among ions, in contrast to ANO1's robust anion selectivity. The ionic selectivity sequence was Na+ > Cl\u2212 > Cs+ > NMDG+ (PNa/PCl=1.38, PCs/PCl=0.6, PNMDG/PCl=0.48), indicating a large permeation pathway capable of passing NMDG+ (~7.3 \u00c5 diameter). This low selectivity and contemporaneous activation with PLS suggests currents and PLS share the same underlying mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 present ionic selectivity measurements using standard electrophysiological methods. The data clearly demonstrate non-selective permeation, and the ability to pass large cations like NMDG+ supports the proposed mechanism of ion leakage during lipid translocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A scrambling domain (SCRD) in ANO6 spanning amino acids 525-559 is necessary for PLS. Computational analysis identified three regions of Type-II divergence between ANO1 and ANO6. Of 26 ANO1-ANO6 chimeras tested, four chimeras with ANO1 sequence replaced by ANO6 sequence in the TMD4-TMD5 region showed robust PLS activity, with the smallest functional chimera containing only 15 amino acids from ANO6 (525-540).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 present a systematic chimera analysis with computational guidance. The experimental design is sound, testing 26 constructs with 17 trafficking to the membrane. The identification of a minimal 15-amino acid domain is well-supported by the data, though the number of cells tested per construct is not always specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The SCRD is required for ANO6 PLS activity. Chimeras in which portions of the ANO6 SCRD were replaced with ANO1 sequence had greatly reduced PLS activity, and mutation of specific triplets (525NTI, 529EKV, 533IMI) between N525 and I535 abrogated ANO6 PLS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 present reverse chimera and mutagenesis experiments that complement the gain-of-function experiments. These loss-of-function data are essential to demonstrate that the SCRD is not only sufficient but also necessary for PLS activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Chimeras that support PLS invariably exhibit ionic currents, while non-scrambling chimeras show very small or no currents. Although current amplitudes did not correlate with the percentage of cells exhibiting PLS (possibly due to uncontrolled surface expression differences), mutations that abolished PLS also abolished ionic currents, suggesting ions and phospholipids are translocated by overlapping molecular machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 present patch clamp analysis of multiple chimeras. The correlation between PLS and current presence is strong, though the authors appropriately acknowledge the lack of quantitative correlation. The conclusion about overlapping machinery is well-supported by the consistent co-occurrence of the two functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The 1-6-1_D554-K588 chimera exhibits robust PLS (96% of cells) with kinetics similar to ANO6 (\u03c4=218s vs 143s for ANO6). The chimera retains ANO1-like Ca2+ sensitivity and shows currents that initially resemble ANO1 (activating quickly then running down) but transition to ANO6-like properties as PLS develops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 provide detailed characterization of a key chimera combining imaging and electrophysiology. The data show the chimera has hybrid properties, supporting the interpretation that the SCRD confers PLS function while other regions determine Ca2+ sensitivity. Sample sizes are adequate (N=127-178 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The ANO1 inhibitor MONNA (10 \u03bcM) blocks ANO1 currents ~90% but does not affect ANO6 currents or currents from PLS-competent chimeras. This differential pharmacology suggests the permeation pathway for Cl\u2212 in ANO1 differs from the ion conduction pathway of ANO6, and that structural determinants of PLS in the SCRD alter ANO1 pharmacology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 present pharmacological data that provide independent evidence for distinct ion permeation pathways in ANO1 vs ANO6. The differential sensitivity to MONNA supports the proposed mechanism and demonstrates that the SCRD affects the ion conduction pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The 1-6-1_D554-K588 chimera exhibits Ca2+-independent, voltage-activated currents in zero Ca2+ that are Cl\u2212-selective (PCs:PCl=0.08) and blocked by MONNA, resembling ANO1. After PLS is activated by Ca2+, the current becomes MONNA-insensitive and >fourfold less Cl\u2212-selective (PCs:PCl=0.39), suggesting the ionic conductance pathway changes from Cl\u2212-selective to non-selective during scrambling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 present a sophisticated analysis showing that the chimera's ion selectivity changes as PLS develops. The data demonstrate a transition from ANO1-like to ANO6-like properties, providing strong evidence that the ion conduction pathway is altered during scrambling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The 1-6-1_S532-G558 chimera shows Cl\u2212-selectivity (PCs:PCl=0.15) before PLS is detectable, but after scrambling, cation permeability significantly increases (PCs:PCl=0.50). MONNA blocks the Cl\u2212-selective pathway but has no effect after PLS develops, suggesting the Cl\u2212-selective pathway is no longer present or becomes less selective during scrambling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 provide additional evidence for selectivity changes during PLS using a different chimera with slower activation kinetics, allowing better temporal resolution. The pharmacological data with MONNA support the interpretation that the pathway changes rather than a second pathway opening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Homology modeling based on the fungal ANO homolog nhTMEM16 shows that the SCRD forms a unique structure that, along with helices 3, 6, and 7, creates a hydrophilic cleft facing the lipid membrane. Residues in TMD7-TMD8 identified for Ca2+ binding and gating in ANO1 form the other side of this cleft, positioning the Ca2+ binding site to control structural rearrangements that could provide a pathway for phospholipid translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C143 present homology modeling based on a published structure with 23% identity. While the model quality is reasonable (RMSD 1.485 \u00c5, Q-score 0.667), the functional interpretations are speculative. However, the model is consistent with experimental data and provides a structural framework for understanding the SCRD's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "While ANO6's role in PLS is well-established, it remains possible that ANO6 is a regulator rather than the PLSase itself. The finding that only ~92% of ANO6-expressing cells exhibit PLS and the lack of correlation between expression levels and PLS activity support some skepticism about whether ANO6 is sufficient for PLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 present an appropriately cautious interpretation of the data. The authors acknowledge limitations and alternative explanations, which is scientifically sound. The observation that not all expressing cells scramble is important and suggests additional factors may be required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose that during scrambling, ions pass through the same pathway occupied by phospholipids, either as counterions or fluxing independently. This is supported by the correlation between non-selective, slowly-activating, MONNA-insensitive currents and scrambling ability, and by mutagenesis data showing that amino acids forming the ANO1 Cl\u2212 pore vestibule are located at the extracellular surface of the hydrophilic cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 present a mechanistic model supported by multiple lines of evidence: temporal correlation, ionic selectivity changes, pharmacology, and structural modeling. While the model remains somewhat speculative, it is well-supported by the experimental data and provides a coherent framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The ANO family is functionally split, with some members (ANO1, ANO2) being anion-selective ion channels and others having lipid transport ability. The authors propose an evolutionary model where the primordial ANO was a lipid transporter, and after gene duplication, non-selective ion transport (a sub-function) evolved Cl\u2212 specificity. This is supported by the finding that ANO1 can be converted to a PLS-competent protein by replacing as few as 15 amino acids, and by the generally low selectivity of Cl\u2212 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C168 present an evolutionary hypothesis that is plausible and consistent with the data, but remains speculative. The experimental evidence (chimera function, sequence conservation in fungi) supports the hypothesis, but direct evolutionary evidence is lacking. The comparison to CFTR and CLC families is appropriate but does not prove the proposed evolutionary trajectory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "A few amino acids can convert ANO1 into a protein supporting PLS activity, analogous to how a single glutamic acid determines whether ClC proteins are transporters or channels. However, the reverse conversion (ANO6 to Cl\u2212-selective channel) has not been achieved, likely requiring additional changes outside the SCRD or explained by epistasis where neutral mutations block acquisition of new functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C175 present an important asymmetry in the chimera results. The inability to convert ANO6 to a Cl\u2212 channel is acknowledged, and reasonable explanations are provided with appropriate citations to evolutionary theory. The comparison to ClC is apt and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "While ANO1 is well-established as a Ca2+-activated Cl\u2212 channel and cannot rescue PLS in ANO6-disrupted cells, the finding that ANO1 function can be converted by replacing as few as 15 amino acids raises questions about whether ANO1 might be a PLSase under appropriate conditions, perhaps requiring a missing subunit, regulatory enzyme, or posttranslational modification. ANO1 function is intimately dependent on phospholipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C181-C187 present speculative ideas about potential ANO1 PLSase activity. While the speculation is reasonable given the chimera data, there is no direct experimental evidence for ANO1 acting as a PLSase. The claim about phospholipid dependence (C187) is supported by citation but is distinct from PLSase activity.",
+    "result_type": "MINOR"
+  }
+]

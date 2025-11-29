@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript establishes the current limitations of protein structure prediction, noting that high-resolution prediction is restricted to proteins with known homologs or small proteins (<100 residues), and that approximately 41% of protein families lack any member with known structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the context and motivation for the work. C1 describes established knowledge about the field's limitations, and C2 is supported by a citation (Kamisetty et al., 2013). These claims provide appropriate background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes that residue-residue contacts can be accurately inferred from co-evolution patterns, and that pseudo-likelihood (PLM)-based approaches are more accurate than earlier covariance matrix inversion methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by multiple citations to prior work (C3: Marks et al., 2011; Morcos et al., 2011; and others; C4: Balakrishnan et al., 2011; Ekeberg et al., 2013; Kamisetty et al., 2013). These establish the methodological foundation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors achieved unprecedented accuracy in CASP11 blind predictions for two proteins without known homologs: T0806 (3.6 \u00c5 C\u03b1-RMSD, 256 residues) and T0824 (4.2 \u00c5 C\u03b1-RMSD, 108 residues), representing the most accurate predictions in 20 years of CASP for proteins >100 amino acids lacking structural homologs. With additional sampling, T0806 accuracy improved to 2.1 \u00c5 RMSD over 245 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 provide specific RMSD measurements from the CASP11 blind test, where predictions were made before experimental structures were known. The accuracy metrics are directly measured against subsequently released crystal structures, providing strong validation. The claim of being 'considerably more accurate than any previous predictions' (C7) is supported by the CASP historical context and the specific accuracy values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Both co-evolution-derived contacts and the iterative hybridization protocol were essential for achieving high accuracy, as demonstrated by ablation studies showing that models without hybridization had substantially worse accuracy (11.6 \u00c5 vs 3.6 \u00c5 for T0806; 14.0 \u00c5 vs 4.2 \u00c5 for T0824).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 present ablation study results demonstrating the necessity of both methodological components. The comparative RMSD values (C10, C11) provide quantitative evidence for C9's assertion that both components were critical. The statement that calculations without constraints 'failed to converge' provides additional support, though the data is noted as not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors generated structure models for 58 of 121 large prokaryotic protein families lacking known structures, providing structural information for over 400,000 proteins. Families were selected to have at least 4\u00d7 protein length sequences, ensuring ~50% accuracy for the top 1.5L contacts. The 121 families were identified across four organisms: 100 in E. coli, 22 in B. subtilis, 5 in H. salinarum, and 4 in S. solfataricus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 describe the scope and selection criteria for the large-scale modeling effort. The specific numbers (58/121 families, 400,000 proteins, organism distribution) are directly stated results. The 4L sequence threshold (C14) is justified by citation to prior work showing 50% accuracy at this depth. The counts are verifiable from the supplementary data referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Traditional fold recognition methods (HHsearch and SPARKS-X) were ineffective for the selected families, with only 4 of 122 families having top-ten hits matching predicted contacts (Rc > 0.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 provides quantitative evidence (4/122 families) that traditional methods fail for the selected protein families, justifying the need for the co-evolution-based approach. This is a direct count from computational analysis and supports the novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "On a benchmark of 13 transmembrane proteins with recently determined structures, 11 converged with predicted structures having RMSD <4.0 \u00c5 over converged/constrained residues and <2.8 \u00c5 over structurally aligned regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 present benchmark validation results summarized from Table 1. The specific accuracy thresholds (4.0 \u00c5 and 2.8 \u00c5) and success rate (11/13) provide quantitative validation of the method on independent test cases. The benchmark appropriately uses recently solved structures that were not available during method development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Of 121 protein families modeled, calculations converged for 58. Four targets had low Rc values (<0.7), potentially indicating homo-oligomeric contacts. The Rosetta models were structurally distinct from traditional fold recognition methods (HHsearch/SPARKS-X), with only five targets showing TMscore \u22650.5 similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe the modeling outcomes and structural novelty. The convergence rate (58/121) and low Rc interpretation (C23-C24) are directly stated. C24's interpretation of low Rc values as potential oligomeric contacts is reasonable but speculative. C25's demonstration of structural novelty (low TMscore to existing methods) is supported by data in Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The predicted structures of cytochrome bd-I oxidase subunits CydA and CydB reveal a duplicated four-helix bundle fold forming a pseudo-symmetric heterodimer, with structural similarity to polysulfide reductase (PsrC) and cytochrome b561. Experimentally mapped heme-binding residues (H19, H186, M393) align with conserved axial ligands in cytochrome b561.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe the CydA/CydB structural model and its validation against known biochemical data. C26-C27 provide established functional context. C28-C30 describe the predicted fold and structural similarities. C31-C33 demonstrate that the model correctly positions experimentally validated heme-binding residues, providing strong support for model accuracy. The alignment with known structures (C33) is shown in Figure 3C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The authors hypothesize that H126 in CydA ligates heme d based on structural alignment with a heme-binding site in cytochrome b561, and propose that a cytoplasmic location of heme d could explain the proton-motive force generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35 present hypotheses based on the structural model. While the structural alignment supporting H126 as a potential heme d ligand is reasonable, this contradicts prior proposals that heme d is on the periplasmic side. The mechanistic explanation (C35) is speculative. These hypotheses require experimental validation and represent predictions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In the CydA model, experimentally identified quinone-binding residues and proton channel residues each cluster together spatially. Two conserved residues of unknown function (R9, R448) are positioned near the quinone-binding Q loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 demonstrate that the structural model organizes functionally related residues (identified by mutagenesis studies, Borisov et al., 2011) into spatially coherent clusters. This agreement between the model and independent experimental data provides validation. The observation about R9 and R448 (C38) generates a testable hypothesis about their function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The TtdA/TtdB tartrate dehydratase complex model reveals that three conserved TtdA cysteines (C71, C190, C277) cluster near the TtdB interface, potentially forming the 4Fe-4S binding site along with conserved D73. The model suggests an obligate tetrameric assembly where conserved TtdB H265 contributes to the active site of the adjacent TtdB chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 describe the TtdA/TtdB complex model. C39-C42 provide established context about the enzyme and homology relationships. C43-C46 present structural predictions that organize conserved residues into a plausible active site and reveal quaternary structure features. The clustering of conserved cysteines (C43) and the cross-subunit contribution of H265 (C45) are reasonable structural interpretations that generate testable hypotheses, though experimental validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The predicted SatP structure resembles the proton-gated urea channel, forming a hexameric ring where each protomer contains a channel through a 6TMH fold. Hexamer assembly satisfies predicted contacts not made in the monomer, and experimentally validated selectivity residues (Leu131, Ala164) line the channel pore in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe the SatP model and its validation. C47 provides functional context (cited). C48-C50 describe structural similarity to urea channels and oligomeric assembly that satisfies predicted contacts. C51-C52 demonstrate that the model correctly positions experimentally validated selectivity residues (S\u00e1-Pessoa et al., 2013) in the channel pore, providing strong validation of the model's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The FtsW model reveals structural similarity to STT3 glycosyltransferase (TMH4-10 of FtsW align with TMH4-7 and TMH10-12 of STT3). Both enzymes have similar substrates with membrane-anchored pyrophosphate groups. Essential FtsW residues R145 and K153 occupy positions analogous to the STT3 active site metal-coordinating DxH motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 establish functional and structural relationships between FtsW and STT3. C53-C57 provide established context about both proteins. C54 describes the structural similarity shown in Figure 6C-D. C58-C59 demonstrate that experimentally essential FtsW residues map to the STT3 active site, suggesting functional conservation. The substrate similarity (C56) and structural alignment provide strong support for the proposed relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The conserved FtsW/STT3 transmembrane core shows sequence similarity to E. coli O-antigen ligase RfaL, and the predicted RfaL structure is structurally similar to this core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 extend the FtsW/STT3 relationship to include RfaL, suggesting a broader protein family. The sequence similarity and structural prediction for RfaL (shown in Figure 6E) support this relationship. This expands the functional implications of the structural model to additional cell wall biosynthesis enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The predicted Lgt structure has a novel seven-transmembrane helix fold with conserved residues (Y26, R134, N146, E151, G154, R239, E243) clustering near the periplasmic surface to form a putative active site. Alanine mutations of these residues abolish or greatly reduce activity, and the model topology matches a previously proposed topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe the Lgt model and its validation. C62 provides functional context. C63-C64 describe the predicted structure and active site. C65 demonstrates strong agreement with mutagenesis data (Pailler et al., 2012) showing these residues are functionally critical. C66 shows consistency with prior topology predictions. The convergence of structural prediction, conservation analysis, and mutagenesis data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The UppP model reveals broken helices (TMH1 and TMH5) that enter and exit the membrane on the same side, with twofold symmetry between TMH1-4 and TMH5-8 matching an internal sequence duplication. A distantly related family (YfcA) is predicted to have the same fold despite non-overlapping sequence alignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe the UppP structure and its relationship to YfcA. C67 provides functional context. C68-C69 describe unusual structural features (broken helices, internal symmetry) that differ from a prior model (Chang et al., 2014). C70-C72 demonstrate that YfcA, identified by distant sequence similarity, adopts the same fold despite independent sequence alignments, suggesting deep evolutionary conservation. The broken helix prediction is notable as these features are difficult to model without precedent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The PrsW intramembrane protease model shows structural similarity to type II CAAX prenyl protease in a four-TMH core (PrsW TMH3-6 aligns with protease TMH4-7). Predicted PrsW active site residues in motifs EExxK (TMH3) and HxxxD (TMH6) occupy positions analogous to conserved residues in the CAAX protease, with an additional conserved histidine in PrsW TMH5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 establish structural and functional relationships between PrsW and CAAX proteases. C73-C74 provide functional context and superfamily relationships. C75-C77 describe structural similarity (Figure 9C-D) and alignment of predicted active site residues between the two proteases. The structural alignment of functionally important motifs provides strong support for the model and suggests mechanistic conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The YeiH transporter model reveals a novel structural variation on the NapA antiporter fold: while both structures superimpose overall, YeiH's core is formed by two pairs of broken helices (TM5-6, TM8-9) exiting on the same side, whereas NapA's core contains antiparallel discontinuous helices (TM4a-4b, TM11a-11b) that cross over.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 describe a striking example of structural divergence with conserved overall architecture. C78-C79 establish sequence-based classification. C80-C82 demonstrate that despite structural superposition (C80), the connectivity differs fundamentally (C81-C82, Figure 10). This represents an important evolutionary insight showing how similar overall folds can be achieved through different structural solutions, though experimental validation would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The RarD structure represents a monomeric, internally duplicated version of the homodimeric EmrE drug transporter, with swapped first helices and a critical helix insertion causing helix-1 inversion. This fixes the dual-topology symmetry of EmrE into a single monomeric structure, potentially enabling similar alternate-access transport mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 describe the evolutionary relationship between RarD and EmrE. C83-C86 describe the structural relationship and key differences (helix swapping, insertion). C87-C88 establish the dual-topology context and its fixation in RarD. C89-C90 propose a mechanistic hypothesis based on the structural similarity. The structural analysis is well-supported (Figure 11), though the mechanistic hypothesis (C90) requires experimental validation. This represents an important insight into membrane protein evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "YqfA and YhhN models reveal GPCR-like seven-transmembrane topologies. YqfA belongs to the CREST superfamily with conserved motifs (SxxxH, D, HxxxH) forming a putative active site in the GPCR ligand-binding pocket region. The YqfA model closely matches a subsequently released homolog structure (TMalign 0.80), while traditional methods failed (TMalign 0.21-0.40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 describe GPCR-like folds in bacterial proteins. C91-C96 establish the structural similarity and functional context. C97-C99 provide strong post-hoc validation: a homolog structure released during manuscript preparation closely matches the prediction (TMalign 0.80), while traditional methods (HHsearch, SPARKS-X) produced poor models (TMalign 0.21-0.40). This independent validation strongly supports the modeling approach and the biological insight about GPCR-like folds in bacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The YhhN model has GPCR topology with an N-terminal extension. Conserved residues potentially forming the active site cluster similarly to YqfA catalytic residues, consistent with the known lysoplasmalogenase function of YhhN family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 describe the YhhN model and its functional implications. C100 describes the structural topology. C101 provides functional context from recent experimental work. C102 demonstrates that conserved residues cluster appropriately for the known enzymatic function. The consistency between predicted structure, conservation patterns, and known function provides support, though direct experimental validation of the model would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The YfiP model contains a trefoil knot topology characteristic of SPOUT methyltransferases, with conserved DTW domain residues (Asp113, Thr115, Trp116, Pro87, Tyr145, Arg148, Thr158, Glu160) surrounding the AdoMet binding cleft, supporting a previously suggested role in rRNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 describe the YfiP model and functional implications. C103-C104 establish the structural similarity to SPOUT methyltransferases. C105 demonstrates that conserved residues are appropriately positioned for substrate binding. C106 connects the structural prediction to prior functional hypotheses (Burroughs and Aravind, 2014). The unusual trefoil knot topology is a distinctive structural feature that strongly supports the SPOUT relationship, though experimental validation of methyltransferase activity would be valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The YitE model has secondary structure arrangement nearly identical to aquaporin water channels, including pseudo-symmetric repeats and central half-helices, but with completely different connectivity. The model lacks the characteristic NPA motif but has an asparagine in one half-helix pointing toward the putative pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 describe structural similarity with altered connectivity. C107 establishes the overall architectural similarity to aquaporins (Figure 14). C108 provides context about the functional importance of half-helices (cited). C109-C110 note differences from canonical aquaporins (no NPA motif) while identifying a potentially functionally relevant asparagine. This represents another example of convergent evolution or divergent connectivity, though functional characterization would be valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The YgdD homotrimer model reveals four-TMH protomers with left-handed helix connections, matching MAPEG family topology and the heme-copper oxidase core. Weak sequence similarity to heme-copper oxidases (HHsearch probability 41) with consistent sequence and structural alignments suggests evolutionary relationship, despite no significant MAPEG hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C119 establish evolutionary relationships through structural modeling. C111-C115 describe the predicted structure and its similarity to MAPEG and heme-copper oxidases (Figure 15). C116-C119 provide sequence analysis showing weak but consistent signals connecting YgdD to heme-copper oxidases. The convergence of structural prediction, weak sequence similarity, and consistent alignments supports the evolutionary relationship (C119), though the connection to MAPEG (no sequence hits, C116) is based solely on structural similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The 58 modeled protein families, each with thousands of members, cover a significant fraction of previously uncharacterized prokaryotic sequences. The models illustrate complex membrane protein evolutionary transformations and demonstrate that structure modeling is critical for functional insight in co-evolution-guided de novo prediction, representing an unanticipated impact of large-scale genome sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 provide summary statements about the work's impact. C120-C121 describe the scope (58 families with thousands of members each, Table 2). C122 notes evolutionary insights from examples like YeiH and RarD. C123-C124 make broader methodological and field-level conclusions. These summary claims are well-supported by the specific examples and data presented throughout the manuscript, though they represent interpretations of significance rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The future impact of co-evolution-based structure prediction will depend on the balance between increasing sequence availability and expanding structure databases. The approach will likely have greatest continued impact for membrane proteins due to experimental challenges, and can now generate models for protein families originally targeted by the Protein Structure Initiative at a fraction of the cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C128 present predictions and perspectives about future developments. C125-C126 identify opposing trends affecting the method's future utility. C127 predicts continued importance for membrane proteins. C128 compares to PSI goals and costs. These are reasonable perspectives based on the demonstrated results, but represent speculation about future developments rather than established findings. The comparison to PSI (C128) is somewhat subjective regarding 'small fraction of the cost.'",
+    "result_type": "MINOR"
+  }
+]

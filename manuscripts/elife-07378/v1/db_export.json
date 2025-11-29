@@ -1,0 +1,2065 @@
+{
+  "submission": {
+    "id": "c6f95f70-dc14-45f7-ad57-1ccdcd1a6947",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:22:37.661912Z",
+    "updated_at": "2025-11-29T04:22:37.661912Z"
+  },
+  "content": [
+    {
+      "id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "submission_id": "c6f95f70-dc14-45f7-ad57-1ccdcd1a6947",
+      "content_type": "manuscript",
+      "content_text": "# Mitotic fidelity requires transgenerational action of a testis-restricted HP1\n\n## Authors\n\n- Mia T Levine<sup>1</sup>\n- Helen M Vander Wende<sup>1</sup>\n- Harmit S Malik<sup>1</sup> ([ORCID: 0000-0001-6005-0016](https://orcid.org/0000-0001-6005-0016)) \u2020\n\n### Affiliations\n\n1. Division of Basic Sciences Fred Hutchinson Cancer Research Center Seattle United States\n2. Howard Hughes Medical Institute, Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSperm-packaged DNA must undergo extensive reorganization to ensure its timely participation in embryonic mitosis. Whereas maternal control over this remodeling is well described, paternal contributions are virtually unknown. In this study, we show that Drosophila melanogaster males lacking Heterochromatin Protein 1E (HP1E) sire inviable embryos that undergo catastrophic mitosis. In these embryos, the paternal genome fails to condense and resolve into sister chromatids in synchrony with the maternal genome. This delay leads to a failure of paternal chromosomes, particularly the heterochromatin-rich sex chromosomes, to separate on the first mitotic spindle. Remarkably, HP1E is not inherited on mature sperm chromatin. Instead, HP1E primes paternal chromosomes during spermatogenesis to ensure faithful segregation post-fertilization. This transgenerational effect suggests that maternal control is necessary but not sufficient for transforming sperm DNA into a mitotically competent pronucleus. Instead, paternal action during spermiogenesis exerts post-fertilization control to ensure faithful chromosome segregation in the embryo.\n\n## Introduction\n\nFaithful chromosome segregation requires careful orchestration of chromosomal condensation, alignment, and movement of mitotic chromosomes during every eukaryotic cell division (Rhind and Russell, 2012). The very first embryonic mitosis in animals requires additional synchronization. Paternally and maternally inherited genomes undergo independent chromatin reorganization and replication prior to mitotic entry. For instance, maternal chromosomes must complete meiosis (Sen et al., 2013) and then transition from a meiotic conformation to an interphase-like state in preparation for replication. The sperm-deposited, paternal chromosomes must undergo an even more radical transition from a highly compact, protamine-rich state to a decondensed, histone-rich state before DNA replication (Braun, 2001; Miller et al., 2010). Despite these divergent requirements to achieve replication- and mitotic-competency, maternal and paternal genomes synchronously enter the first mitosis. Failure to carry out paternal chromosome remodeling in a timely fashion results in paternal genome loss and embryonic inviability (Loppin et al., 2001; McLay and Clarke, 2003; Landmann et al., 2009).\n\nThe transition from a protamine-rich sperm nucleus to a competent paternal pronucleus requires the action of numerous maternally deposited proteins in the egg (McLay and Clarke, 2003). For instance, paternal genome decondensation post-fertilization requires the integration of histone H3.3, a histone variant deposited by the maternal proteins HIRA (Loppin et al., 2005a), CHD1 (Konev et al., 2007), and Yemanuclein (Orsi et al., 2013). Similarly, maternally-deposited MH/Spartan protein localizes exclusively to the replicating paternal genome and is required for faithful paternal chromosome segregation during the first embryonic division (Delabaere et al., 2014). These and other studies demonstrate the essential role of maternally-deposited machinery in rendering competent sperm-deposited DNA and ultimately, ensuring faithful paternal genome inheritance.\n\nIs paternal control also necessary for the extensive decondensation and re-condensation of the post-fertilization paternal genome? If so, disruption of such control would manifest as paternal effect lethality (PEL). Unlike male sterility mutants that lack motile sperm, PEL mutants make abundant motile sperm that fertilize eggs efficiently. However, embryos \u2018fathered\u2019 by PEL mutants are inviable. Only a handful of PEL genes have been characterized in animals (Browning and Strome, 1996; Fitch and Wakimoto, 1998; Fitch et al., 1998; Loppin et al., 2005b; Smith and Wakimoto, 2007; Gao et al., 2011; Seidel et al., 2011). These encode proteins that mediate sperm release of paternal DNA, sperm centriole inheritance, and paternal chromosome segregation. Only one of these PEL proteins directly localizes to paternal chromosomes; the sperm-inherited K81 protein localizes exclusively to paternal chromosome termini and ensures telomere integrity (Dubruille et al., 2010; Gao et al., 2011). The maintenance of telomeric epigenetic identity joins a growing list of examples of sperm-to-embryo information transmission via protein or RNA inheritance (e.g., diet: [Ost et al., 2014], stress: [Rodgers et al., 2013], embryonic patterning: [Bayer et al., 2009], transcriptional competency: [Hammoud et al., 2010; Rando, 2012; Ihara et al., 2014]). Despite our new appreciation of paternal control over epigenetic information transfer, there are no reports of paternal control over the global chromatin reorganization required for synchronous mitosis across paternally and maternally inherited genomes. Indeed, in the absence of any known paternal protein-directed genome remodeling, a model has emerged that maternal proteins might be sufficient for transforming tightly packaged sperm DNA into a fully competent paternal pronucleus.\n\nThe notion that maternal control is sufficient to accomplish paternal genome remodeling is challenged by recent findings from the intracellular Wolbachia bacterium that infects more than 50% of insect species (Hilgenboecker et al., 2008). Wolbachia-infected Drosophila males mated to uninfected females father embryos that arrest soon after the first zygotic mitosis (Lassy and Karr, 1996). Embryonic arrest occurs because paternal genomes enter the first mitosis with unresolved sister chromatids that fail to separate on the mitotic spindle (Callaini et al., 1997; Landmann et al., 2009). Although the identity of the host factor(s) manipulated by Wolbachia to mediate this transgenerational effect is still unknown, what is clear is that pre-fertilization, Wolbachia subverts the paternal germline machinery that helps direct global genome remodeling of paternal chromosomes in the embryo. Wolbachia action during spermiogenesis leads to paternal-maternal genome asynchrony and ultimately, failure of paternal chromosomes to separate on the first mitotic spindle (Callaini et al., 1997; Landmann et al., 2009). Despite decades of interest, the molecular basis of paternal control has remained elusive.\n\nTo investigate the potential for paternal control over sperm genome remodeling post-fertilization, we took a candidate gene approach, focusing on the Heterochromatin Protein 1 (HP1) proteins that orchestrate genome-wide chromosomal organization in plants, animals, fungi, and some protists (Lomberk et al., 2006). HP1 proteins are defined as such by a combination of two domains\u2014a chromodomain that mediates protein-histone interactions and a chromoshadow domain that mediates protein\u2013protein interactions (Aasland and Stewart, 1995; Eissenberg and Elgin, 2000). The biochemical properties of HP1 members (Canzio et al., 2014) support a diversity of chromatin-dependent processes in the soma, including DNA replication (Pak et al., 1997; Schwaiger et al., 2010), telomere integrity (Fanti et al., 1998), and chromosome condensation (Kellum et al., 1995).\n\nRecently, we carried out a detailed phylogenomic analysis of the HP1 gene family in Drosophila that revealed numerous testis-restricted HP1 proteins (Levine et al., 2012). Given the established roles of HP1 proteins (Eissenberg and Elgin, 2000; Lomberk et al., 2006; Vermaak and Malik, 2009; Canzio et al., 2014), we posited that these newly discovered male-specific HP1 genes might represent excellent candidates for encoding chromatin functions specialized for paternal genome organization and remodeling in the early embryo. Using detailed genetic and cytological analyses, here we show that one of these testis-specific HP1 proteins, Heterochromatin Protein 1E (HP1E), is essential for priming the paternal genome to enter embryonic mitosis in synchrony with the maternal genome in D. melanogaster. Intriguingly, HP1E is able to mediate this priming function transgenerationally i.e., the HP1E protein itself is not epigenetically inherited. We further show that absence of HP1E especially imperils mitotic fidelity of the heterochromatin-rich, paternal sex chromosomes. Thus, our study firmly establishes that both maternal and paternal control are necessary for paternal genome remodeling in the early Drosophila embryo.\n\n## Results\n\n### HP1E encodes a spermiogenesis-restricted chromatin protein\n\nThe HP1E gene is a testis-restricted Drosophila HP1 paralog born more than 60 million years ago (Levine et al., 2012). To investigate the possibility that HP1E acts during chromatin reorganization prior to sperm maturation, we generated transgenic flies that encoded a Flag- or YFP-tagged HP1E fusion protein, driven by the native HP1E promoter. In addition, we raised a highly specific polyclonal antibody against HP1E (Figure 1\u2014figure supplement 1). All three reagents revealed that HP1E localizes to developing spermatids subsequent to the completion of meiosis II (Figure 1A\u2013C, Figure 1\u2014figure supplements 2, 3, 4), ruling out a role for HP1E during the pre-meiotic or meiotic phases of spermatogenesis. HP1E signal was generally diffuse across a subset of the chromatin throughout spermiogenesis (Figure 1A\u2013C) but disappeared completely at sperm maturation (Figure 1D). Native expression of the HP1E-YFP fusion transgene confirmed our immunofluorescence results (Figure 1\u2014figure supplement 4), implying that HP1E disappearance in late spermiogenesis is not due to antibody inaccessibility in the highly condensed sperm head. These data demonstrate that HP1E localizes to paternal chromosomes only during the radical reorganization of histone-rich chromatin into protamine-rich sperm DNA and disappears once sperm mature.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig1-v1.jpg)\n\n**Figure 1.:** We highlight four stages of spermatogenesis in D. melanogaster testes: (A) round spermatids, (B, C) elongated spermatids, and (D) mature sperm. HP1E localization was visualized with a Flag epitope-tagged HP1E transgene driven by a native promoter. We find that Flag-HP1E protein (green) localizes to the DNA (blue) of post-meiotic spermatids and persists until sperm maturation but is not present on mature sperm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** HP1E antibody recognizes heat-shock induced HP1E expression in cell culture (S2 cells). Predicted sizes: native HP1E 20.3 kD, Flag:HP1E, 24 kD, YFP:HP1E 46 kD.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** HP1E-stained whole-mount testis (upper panel). HP1E localizes to spermatids after meiosis II. HP1E first appears during spermatogenesis on round spermatids with a prominent \u2018protein body\u2019 or \u2018pseudonucleus\u2019 (arrow), which corresponds to the region of HP1E exclusion. A protein body is diagnostic of a post-meiotic stage.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig1-figsupp3-v1.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** HP1E localizes to DNA of round and elongated spermatids. We observed no evidence of HP1E localization to DNA of mature sperm.\n\nMany characterized HP1 proteins serve critical heterochromatin organization roles and are often used as markers of canonical heterochromatin in somatic cells (Eissenberg and Elgin, 2000). However, heterochromatin organization is poorly defined in post-meiotic developing spermatids (Dubruille et al., 2010; Hennig and Weyrich, 2013), precluding our ability to ask if HP1E co-localizes with classic bulk heterochromatin markers. We were also unable to directly ascertain HP1E localization to specific heterochromatin loci using chromatin immunoprecipitation based methods (e.g., ChIP-seq). Instead, we adopted an orthogonal approach. We conducted RNA-seq on control and HP1E-depleted testes, reasoning that loss of heterochromatin organizing protein would uniquely perturb the global transcriptional readout from this specialized genome compartment. We found that HP1E knockdown during this narrow developmental stage affects the expression of over 700 genes (fdr < 0.05, Figure 2\u2014source data 1). Of those 700 genes significantly misregulated upon knockdown, there were very few genes that encode known chromatin-modifying or chromosome-bound proteins; of these, most represent uncharacterized genes. However, one intriguing pattern that does emerge from this dataset is that 100% of significantly misregulated heterochromatin-embedded genes are upregulated when HP1E is depleted (Figure 2). In comparison, less than 60% of significantly misregulated euchromatin-embedded genes are upregulated. This dichotomy between the effects of HP1E depletion on the euchromatic and heterochromatic compartment is highly significant (p < 0.00001) and suggests a direct action of HP1E in the heterochromatic compartment, akin to its closest HP1 relative, HP1A (Kellum et al., 1995; Levine et al., 2012). Alternatively, one or more of the 700 mis-regulated genes could be responsible for modifying paternal chromatin. However, no obvious candidate genes involved in chromatin modification or binding emerged from the list of mis-regulated genes (Figure 2\u2014source data 1). In the absence of direct evidence of heterochromatin localization via cytology or ChIP-seq, we can only tentatively conclude that HP1E acts directly on this genome compartment. In contrast, HP1E unambiguously localizes to chromatin during sperm development.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig2-v1.jpg)\n\n**Figure 2.:** HP1E depletion in testis results directly or indirectly in mis-regulation of hundreds of genes. Volcano plot illustrates the fold up- and down-regulation of euchromatin-embedded genes (gray points) and heterochromatin-embedded genes (black points).\n\n### HP1E is a paternal effect lethal gene in D. melanogaster\n\nTo investigate HP1E's role in male fertility, we generated HP1E-depleted fathers by driving a UAS promoter-hairpin homologous to the D. melanogaster HP1E transcript with either an actin5C-Gal4 driver (ubiquitous expression) or vasa-Gal4 driver (male germline expression). Both drivers efficiently knocked down HP1E expression (Figure 3\u2014figure supplement 1) and both resulted in highly penetrant male sterility (Figure 3A). To rule out off-target effects of RNAi, we engineered a recoded version of HP1E in which all synonymous sites were changed but the amino acid sequence was preserved. This recoded, RNAi-resistant HP1E transgene (Figure 3A, Figure 3\u2014figure supplement 2) fully rescued fertility. In parallel, we also generated an HP1E-null allele using a TAL-effector nuclease (Figure 3\u2014figure supplement 3). We found that HP1E knockout males are also completely sterile, and this sterility is also fully reversed by the recoded HP1E transgene (Figure 3\u2014figure supplement 4). Thus, HP1E is required for male fertility in D. melanogaster.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig3-v1.jpg)\n\n**Figure 3.:** (A) HP1E knockdown via simultaneous presence of both a UAS-driven HP1E dsRNA gene and a Gal4 driver results in highly penetrant male sterility. Fertility can be fully restored by an HP1E transgene recoded at all synonymous sites, driven by a native HP1E promoter (\u2018rescue transgene\u2019). Please refer to Figure 3\u2014source data 1. (B) HP1E-depleted males produce abundant motile sperm (seminal vesicle), which are efficiently transferred to females (seminal receptacle), and fertilize the egg (embryo). We visualized sperm tails using the \u2018don juan-GFP\u2019 transgene (29). (C) Unlike wild-type embryos (gray), embryos fathered by HP1E-depleted males (black) arrest after 3\u20134 rounds of nuclear divisions (Mann\u2013Whitney U: p < 0.0001). Embryos were collected in the 5\u201370 min window post-fertilization. Please refer to Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** RT-PCR on testis cDNA prepared from testis encoding a UAS-HP1E hairpin alone (\u2018HP1Ei\u2019) or HP1E hairpin + Gal4 driver. Ubiquitous (\u2018A5CGal4\u2019) and testis-restricted (\u2018vasaGal4\u2019) drivers of the UAS_HP1E hairpin knockdown HP1E expression. Rp49 is the positive control. \u2018CyO\u2019 and \u2018SM1\u2019 refer to balancer chromosomes and represent wild-type HP1E expression levels.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** All third position sites were changed to either the preferred codon (if un-preferred was encoded) or the next preferred codon (if the preferred codon was encoded) following the Drosophila melanogaster preferred codon usage table.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** An HP1E-targeted TALEN deleted 7 bp starting at coding sequence base pair 58 (above). Translation of coding sequence encoding the lesion. \u2018*\u2019 = stop codon (below).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** \u2018pin\u2019 refers to a marked second chromosome, triangle refers to the native promoter driven HP1E transgene inserted on the second chromosome. \u2018***\u2019 refers to a p-value < 0.0001 in a Mann\u2013Whitney U test.\n\nUnlike the vast majority of male sterility mutants, HP1E-depleted fathers produce abundant motile sperm that transfer to females, fertilize eggs, and initiate embryogenesis (Figure 3B). However, embryos sired by HP1E-depleted fathers failed to hatch (0.5% hatch rate). These data demonstrate that HP1E-depletion results in PEL i.e., zygotic viability is dependent on father's genotype. Embryos fathered by HP1E-depleted males (\u2018PEL embryos\u2019 hereafter) arrested after only a few rounds of zygotic mitosis (Figure 3C) and exhibited a chromatin bridge in the very first mitotic division (Figure 4A). Aged embryos exhibit increasingly asynchronous nuclear cycling and acute mitotic catastrophe (Figure 4B). This gross chromosome segregation defect ultimately results in highly penetrant embryonic lethality.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig4-v1.jpg)\n\n**Figure 4.:** (A) We observed a chromatin bridge (arrow) in the first zygotic telophase in PEL embryos fathered by HP1E-depleted, but not wildtype, males. (B) Embryos aged beyond first mitosis exhibit increasingly aberrant nuclear morphology and asynchrony across nuclei (p = prophase, a = anaphase, t = telophase).\n\n### HP1E is required for fidelity of paternal chromosome segregation\n\nTo gain insight into the mechanism of paternal effect lethality in the PEL embryos, we tracked maternal and paternal DNA dynamics prior to the first telophase. We stained fixed, 0\u201320 min-old embryos with DAPI and an acetylated histone 4 (AcH4) antibody (Figure 5A). AcH4 accumulates preferentially on paternal chromatin prior to and during embryonic mitotic cycle 1, allowing us to distinguish paternal from maternal DNA (Adenot et al., 1997). PEL embryos revealed no gross defects in maternal chromatin dynamics (Figure 5A) and exhibited stereotypical centrosome and spindle morphology (Figure 5\u2014figure supplement 1). Furthermore, sperm DNA in PEL embryos underwent the protamine-to-histone transition (Figure 5\u2014figure supplement 2), decondensed, migrated toward the maternal pronucleus, and entered into the first mitosis just like in wild-type embryos (Figure 5A). Using antibodies against a replication protein (PCNA) and a kinetochore protein (Cenp-C), we also found that both pronuclei recruit replication machinery and initiate kinetochore assembly in PEL embryos (Figure 5\u2014figure supplements 3, 4).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig5-v1.jpg)\n\n**Figure 5.:** (A) Paternal chromatin (marked by anti-AcH4 (red)) morphology mirrors maternal chromatin in wild-type embryos but differs in PEL embryos. In both wild-type and PEL embryos, the female and male pronuclei \u2018migrate\u2019 toward each other, \u2018appose\u2019, and then enter mitosis. However, in PEL embryos, metaphase appears asynchronous between maternal and paternal chromatin, an AcH4-enriched chromatin bridge appears in anaphase (arrowhead) and persists at telophase (arrow). (B) We calculated a \u2018circularity ratio\u2019 (1 = perfect circle, 0 = starfish) for the first metaphase in wild-type and PEL embryos. We found that the paternal chromatin was significantly more circular i.e., less condensed than maternal chromatin in PEL (red dots) but not wild-type embryos (black dots), (Mann Whitney-U test, p < 0.0001). Dotted lines refer to sample means. A circularity ratio of 1 (gray solid line) refers to paternal and maternal chromatin with equivalent circularity.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Genotype of father appears on the left.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The protamine-GFP packaged sperm head is the only phase post-sperm entry when GFP signal was observed.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig5-figsupp3-v1.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Kinetochores of embryos fathered by HP1E knockout males visualized with anti-Cenp-C. In the left panel, the paternal DNA appears in the lower half of the chromosome conformation.\n\nThe first visible sign of defects in PEL embryos was observed at metaphase. We found that paternal DNA failed to condense synchronously with the maternal chromosomes in PEL embryos (Figure 5A,B). To quantify this asymmetry, we adopted a measure of \u2018circularity\u2019 (see \u2018Materials and methods\u2019) of maternal and paternal components across wild-type and PEL embryos (Figure 5B). Condensed chromosomes appear as finger-like projections and therefore exhibit circularity close to 0. In contrast, interphase chromosomes appear close to a perfect circle and exhibit circularity close to 1. In wild-type embryos, we found that the ratio of paternal to maternal circularity was equal to one, suggesting that both pronuclei undergo synchronous condensation. In contrast, paternal DNA had twice the circularity of maternal DNA in PEL embryos, suggesting asynchronous condensation due to failure of the paternal genome to compact into resolved chromatids in a timely fashion.\n\nImmediately following this asynchronous metaphase in PEL embryos, we found that the paternal DNA failed to separate on the mitotic spindle. Specifically, a prominent chromatin bridge enriched in paternal chromatin-specific AcH4 appeared in PEL embryos at the first anaphase (Figure 5A, arrowhead, n = 20/20). We also observed AcH4 at the poles, suggesting that only a fraction of the paternal genome mis-segregates in PEL embryos. Based on these findings, we conclude that defects in paternal chromatin organization are the primary source of mitotic arrest in embryos fathered by HP1E-depleted males. However, our analyses could not formally rule out the possibility that mitotic defects additionally result from maternal chromatin defects, the loss of essential mitotic machinery normally contributed by wild-type fathers (e.g., the centriole), or the deposition of a mitotic \u2018poison\u2019 by the PEL fathers.\n\nTo test whether paternal chromatin alone was sufficient to trigger failed mitosis in PEL embryos, we adopted a genetic approach that took advantage of the D. melanogaster maternal effect lethal sesame185b (Loppin et al., 2000). In eggs laid by homozygous mutant sesame females, the paternal DNA completely fails to de-condense and so does not participate in zygotic mitosis. Instead, the haploid maternal chromosomes undergo mitotic cycling like wild-type diploid embryos until late embryogenesis\u2014long after the PEL mitotic arrest observed in embryos sired by HP1E-depleted males (Figure 3C). We crossed the HP1E-depleted males to sesame females to ask whether bypassing paternal chromatin was sufficient to rescue mitotic cycling. We observed full rescue of nuclear divisions in these crosses (Figure 6A); the resulting embryos cycled maternal haploid nuclei identically to those \u2018fathered\u2019 by a wild-type male beyond embryonic cycle 12 (85% and 82%, respectively, p > 0.2, Figure 6A). We therefore conclude that defects in paternal chromatin dynamics are both necessary and sufficient to explain the mitotic arrest in PEL embryos sired by HP1E-depleted males.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig6-v1.jpg)\n\n**Figure 6.:** (A) HP1E-knockdown males crossed to wild-type mothers father embryos that undergo early arrest (also see Figure 3C). However, both HP1E-depleted and wild-type males crossed to sesame (ssm) mothers father maternal haploid embryos that surpass mitotic cycle 12. Black and gray circles refer to the paternal and maternal DNA contributions, respectively, to the zygotic nuclei. Embryos were imaged after fixation and DAPI staining. Please refer to Figure 6\u2014source data 1. (B) We observe no evidence of rescue when HP1E is deposited ectopically into the egg (\u2018+\u2019) prior to fertilization (\u2018***\u2019 refers to a p-value < 0.0001 in a Mann\u2013Whitney U test, \u2018n.s.\u2019 = not signficant). Western blot probed with the HP1E antibody shows an absence of native HP1E in embryos of wild-type mothers and HP1E deposition into early embryos of the experimental females. Like wild-type females (\u2018\u2212\u2019 on the x-axis), these experimental females (\u2018+\u2019 on the x-axis) fail to mother viable progeny when crossed to HP1E-depleted (black bar) males. Please refer to Figure 6\u2014source data 2.\n\nWhen does this paternal chromatin defect arise? We failed to detect HP1E protein cytologically in both wild-type mature sperm head (Figure 1D, Figure 1\u2014figure supplement 3) and wild-type early embryos (data not shown). Nevertheless, we wanted to formally consider the possibility that low levels of sperm-inherited HP1E might act during early embryogenesis to ensure proper mitosis. If this was the case (as with spe-11 [Browning and Strome, 1996]), the defects we observed arising in PEL embryos could be due to missing HP1E protein in the embryo itself. To test this possibility, we used ectopic over-expression of HP1E during oogenesis to maternally deposit HP1E protein into the embryo. This over-expression strategy resulted in robustly detectable HP1E levels in the embryo (Figure 6B), whereas embryos laid by control females harbor no detectable HP1E. However, maternally deposited HP1E was unable to rescue the PEL defect associated with sperm from HP1E-depleted males (Figure 6B). Consistent with the testis cytology presented in Figure 1, these data suggest that it is HP1E action during spermiogenesis, rather than in early embryogenesis, which is responsible for ensuring proper embryonic mitosis. Combined with the successful rescue of mitotic cycling by sesame- mothers, we conclude that HP1E primes the paternal genome during spermiogenesis i.e., pre-fertilization, to ensure proper remodeling of the paternal genome in embryos post-fertilization.\n\n### Heterochromatin-rich paternal sex chromosomes are especially vulnerable to HP1E depletion\n\nOur analysis of the anaphase bridges in PEL embryos revealed that only a fraction of the paternal genome appears to be affected by the HP1E depletion (Figure 5A). This unusual observation suggested the possibility that all five D. melanogaster chromosomes might not be equally dependent on HP1E function. Based on our previous findings that HP1E-depletion led to a global overexpression of heterochromatin-embedded genes (Figure 2), we speculated that the paternal chromosomes that encode the longest tracts of heterochromatin might be especially sensitive to HP1E depletion. In the D. melanogaster genome, heterochromatic DNA is most abundant on the sex chromosomes (Celniker and Rubin, 2003).\n\nTo test the possibility that specific chromosomes are enriched in the chromatin bridge, we performed fluorescent in situ hybridization (FISH) analysis on wild-type and PEL embryos using chromosome-specific satellite probes to all five D. melanogaster chromosomes (Dernburg, 2011) (Figure 7A,C). We found that the paternal Y was trapped as a bridge between nuclei in 94% of the male PEL embryos (Figure 7B), whereas the maternal X was never found in the bridge (Figure 7B). In female embryos, we found that the (inferred) maternal X-chromosome segregated faithfully while the (inferred) paternal X-chromosome was trapped as a bridge in 60% of embryos. We found that the large autosomes\u2014chromosomes II and III\u2014mis-segregated at only 4% and 15% frequency in male and female embryos, respectively. The dichotomy between sex chromosomes and the large autosomes is highly significant (p < 0.0001, Figure 7D). Homology between the small autosomal fourth (\u2018dot\u2019) and Y-chromosomes precluded us from inferring fourth chromosome mis-segregation frequencies in male embryos. However, in female embryos, we found that the paternal fourth chromosome mis-segregated at 25% frequency, intermediate between the autosomes and sex chromosomes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig7-v1.jpg)\n\n**Figure 7.:** Representative images of fluorescent in situ hybridization (FISH) analyses of first zygotic telophase in (A) wild-type and (B) PEL embryos using chromosome-specific satellite probes (C), which recognize chromosome-specific repetitive elements (Dernburg, 2011). FISH probes against the Y chromosome were tested together with probes against either the chr. X probe (left) or chr. 2 + 3 probe (middle) or chr. 4 probe (right). (D) Using at least 20 images per probe pair per sex, we find that sex chromosomes are statistically enriched in the telophase bridge of PEL embryos. Quantification of chromosomal element appearance in the first telophase bridge in male and female embryos (PEL embryos) fathered by HP1E-depleted males. Hybridization of the fourth chromosome probe to the Y chromosome precluded data collection for this probe in male embryos. Data are reported as \u2018obs/total/(%)\u2019 where \u2018obs\u2019 = number of embryos observed with the probe appearing in the telophase bridge, \u2018total\u2019 = total number of embryos sampled per probe, and \u2018%\u2019 = obs \u00d7 100/total.\n\nOur discovery of sex chromosome enrichment in the telophase bridge suggests that a heterochromatic locus common to the X and Y chromosomes may underlie PEL. The only known repetitive locus exclusive to the X and Y in D. melanogaster is the multigene cluster of rDNA genes, which encode the ribosomal RNAs. We hybridized labeled rDNA probes (targeting the IGS sequence) in combination with the Y-satellite probe to wild-type (Figure 8A) and PEL embryos (Figure 8B). In male PEL embryos, we discovered the Y-linked rDNA in the bridge at only 50% frequency (Figure 8B, Figure 8D) compared to 95% frequency of the AATAC satellite probe (p < 0.0001). Thus, it is the AATAC satellite DNA or an immediately proximal satellite DNA cluster that is in the telophase bridge in male embryos. In contrast, the X-linked rDNA locus in female PEL embryos occurs in the bridge at 85% frequency (Figure 7D, Figure 8B,D) compared to 60% for the 359 bp repeat (p < 0.02). These data suggest that the DNA present in the telophase bridge is more likely to be proximal to the X-rDNA cluster (although not the rDNA itself) than the 359 bp satellite repeats. It is currently unclear whether any of our targeted sequences are responsible for PEL. Nevertheless, our discovery of different frequencies for different probes on the X- and Y-chromosomes implicates discrete loci rather than entire chromosomes underlying mitotic failure, as was discovered for D. melanogaster-Drosophila simulans hybrid embryos at nuclear cycles 10\u201313 (Ferree and Barbash, 2009). However, unlike the hybrid case where the 359 bp probe signal appears stretched across the chromatin bridge at these later stage embryos, we observed mostly condensed foci in the bridge of the very first mitosis.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig8-v1.jpg)\n\n**Figure 8.:** Representative images of FISH analyses of first zygotic telophase in (A) wild-type and (B) PEL embryos using (C) probes that recognize the Y-specific satellite AATAC (to determine sex of embryos) and rDNA (the intergenic spacer \u2018IGS\u2019 sequence). (D) Quantification of FISH signal in the first telophase bridge in male and female PEL embryos. Data are reported as \u2018obs/total/(%)\u2019 where \u2018obs\u2019 = number of embryos observed with the probe appearing in the telophase bridge, \u2018total\u2019 = total number of embryos sampled per probe, and \u2018(%)\u2019 = obs \u00d7 100/total.\n\nBased on these findings, we conclude that HP1E action is required during sperm development to prime the paternal genome for embryonic chromosome segregation. This priming function is especially critical for faithful segregation of paternal sex chromosomes, which appear to be most vulnerable to HP1E depletion. Even though only a fraction of the paternal genome suffers these consequences, the resulting embryonic mitosis is catastrophic and results in highly penetrant developmental arrest. Thus, paternal contributions laid down during the spermiogenesis program play an essential role in ensuring synchrony of paternal and maternal genomes for the first embryonic mitosis.\n\n## Discussion\n\nProperly coordinated chromosome segregation during virtually all mitotic divisions relies on the function of multiple cell cycle checkpoint proteins (Lara-Gonzalez et al., 2012; Iyer and Rhind, 2013; Yasutis and Kozminski, 2013). No such cell cycle checkpoint proteins have been identified to act in the very first embryonic mitotic cycle (O'Farrell et al., 2004), which must nevertheless accomplish the difficult task of synchronizing maternal and paternal chromosomes that were inherited in very different chromatin states. To investigate the paternal contributions that ensure timely participation of the paternal genome in early embryogenesis, we carried out a detailed functional analysis of the testis-restricted HP1E gene in D. melanogaster. We found that HP1E encodes a novel function that ensures paternal genome stability in the embryo. Our cytological and transcriptome analysis revealed that HP1E is developmentally restricted within the male germline, where it contributes to heterochromatin integrity. HP1E depletion during sperm development results in a highly penetrant PEL phenotype in which paternal chromosomes, especially the paternal sex chromosomes, fail to condense in synchrony with the maternal chromosomes and ultimately cause mitotic catastrophe. We further showed that the PEL embryonic phenotype could not be rescued by egg-supplied HP1E but could be rescued if the paternal DNA was excluded from participating in embryonic mitosis. These observations support a model (Figure 9A) under which HP1E acts pre-fertilization to ensure proper chromosome condensation and segregation of paternal chromosomes post-fertilization.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig9-v1.jpg)\n\n**Figure 9.:** (A) HP1E localization to post-meiotic paternal chromatin directly or indirectly results in an epigenetic mark transferred to the embryo on sperm chromatin. This mark ensures synchronous paternal and maternal entry into the first embryonic mitosis. The absence of HP1E during postmeiotic sperm maturation leads directly or indirectly to the loss of an epigenetic mark (designated by the absence of the flag). Paternal chromatids fail to resolve and mitotic catastrophe ensues. (B) The loss of HP1E in the obscura group of Drosophila dates to the same 7 million-year long branch as a major karyotype innovation involving the sex chromosomes, including the birth of a neo-Y chromosome (Carvalho and Clark, 2005; Larracuente et al., 2010; Levine et al., 2012). For clarity, only the dynamic subset of the chromosomal elements is presented.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07378/elife-07378-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** D. willistoni and D. grimshawii each encode other testis-restrcited HP1 genes whereas D. pseuodobscura and its close relatives do not.\n\nThe \u2018hit and run\u2019 priming function clearly distinguishes HP1E from all other previously characterized paternal effect lethal genes, which encode proteins that are transmitted to the embryo via sperm (Browning and Strome, 1996; Fitch and Wakimoto, 1998; Fitch et al., 1998; Loppin et al., 2005b; Smith and Wakimoto, 2007; Gao et al., 2011; Seidel et al., 2011). These include the D. melanogaster paternal chromatin-associated PEL, k81, which encodes a protein that persists on paternal telomeres from late spermatogenesis to the first embryonic mitosis (Dubruille et al., 2010; Gao et al., 2011). The HP1E-depletion phenotype is instead reminiscent of Drosophila fathers infected with Wolbachia bacteria crossed to uninfected females (Serbus et al., 2008). Embryonic lethality induced by Wolbachia testis infection is also caused by a pre-fertilization modification to the paternal genome that results in paternal-maternal chromatin asynchrony and mis-segregation at the very first zygotic mitosis. However, Wolbachia-associated PEL results in mis-segregation of the entire paternal genome (Landmann et al., 2009) rather than just the heterochromatin-rich chromosomes observed in HP1E\u2014PEL (Figure 5A, Figure 7B). Moreover, the HP1E PEL defect is completely independent of Wolbachia (we find that PEL phenotype persists for Wolbachia-free males and females). We therefore conclude that HP1E supports a novel chromatin requirement to prime paternally inherited genomes for synchronous and successful embryonic mitosis.\n\nHow does HP1E ensure timely mitotic entry? It is formally possible that the PEL phenotype is the consequence of a dysregulated spermatid transcriptome that is, up- or down-regulation of a downstream gene. However, our finding that HP1E depletion results in the global up-regulation of heterochromatin-embedded genes, together with our observation that the heterochromatin-rich paternal sex chromosomes are most vulnerable to HP1E depletion, lead us to favor the alternate model that HP1E functions as a canonical HP1 protein during spermiogenesis. Based on antibody localization (Figure 5\u2014figure supplements 3, 4) and chromatin bridge morphology (Figure 5A), we found no evidence for defects in kinetochore assembly or replication machinery engagement in PEL embryos. Instead, our observation that the lethality phenotype first manifests as decondensed paternal chromosomes relative to maternal chromosomes implicates condensation delay of the heterochromatin-rich sex chromosomes. This delay could be the consequence of incomplete replication (Landmann et al., 2009). Indeed, large stretches of uninterrupted heterochromatic DNA, as found on the Drosophila sex chromosomes, pose a unique challenge to replication (Leach et al., 2000) (Pryor et al., 1980; Collins et al., 2002). Alternatively, the mitotic delay may be the result of inadequate condensin protein recruitment, which is required for timely resolution of sister chromatids post-replication (Steffensen et al., 2001; Dej et al., 2004; Savvidou et al., 2005; Cobbe et al., 2006; Hirano, 2012). Previous studies have shown that heterochromatin can also impair chromosome condensation (Peng and Karpen, 2007). Timely completion of replication and condensation requires the action of HP1E's closest relative, HP1A, in somatic cells (Kellum et al., 1995; Schwaiger et al., 2010; Li et al., 2011). However, in developing spermatids, HP1A localizes to telomeres (Dubruille et al., 2010) rather than broadly to heterochromatin as observed in virtually all other cell types. We posit that HP1E adopts a global, HP1A-like chromatin function during this highly specialized developmental stage and ensures the recruitment or retention of either replication or condensin proteins that are required post-fertilization.\n\nPrevious studies have shown that HP1A is essential for embryo viability (Eissenberg et al., 1992). We show here that paternally-acting HP1E is also essential for embryogenesis. Both HP1A and HP1E evolve under purifying selection (Levine et al., 2012). However, unlike HP1A (encoded by Su(var)205), HP1E has an unusually dynamic evolutionary history. Despite ancient origins, HP1E has been recurrently lost over evolutionary time. HP1E has been apparently replaced by younger, testis restricted HP1 paralogs on at least two occasions during Drosophila evolution (Levine et al., 2012) (Figure 9\u2014figure supplement 1). Curiously, Drosophila pseudoobscura and related species encode neither HP1E nor a putative replacement testis-specific HP1 gene. How do we reconcile the paradox of HP1E essentiality in D. melanogaster with its loss in D. pseudoobscura? We previously found that HP1E loss along in D. pseudoobscura-related species occurred during the same 7-million evolutionary period as a major sex chromosome rearrangement event (Levine et al., 2012), in which the ancestral Y was lost, a neo-Y chromosome was born, and the ancestral X fused to an autosome (Carvalho and Clark, 2005; Larracuente et al., 2010) (Figure 8B). Our finding that the D. melanogaster sex chromosomes are especially vulnerable to HP1E depletion, combined with the emergence of novel sex chromosome arrangements along the same narrow branch as HP1E pseudogenization (Figure 9B), suggests a model under which rearrangements of heterochromatin-rich sex chromosomes in the obscura group rendered HP1E non-essential. Such karyotypic changes can bring distal heterochromatin into closer proximity to euchromatin and be sufficient to alter heterochromatin packaging (Spofford, 1976), replication timing (Abramov et al., 2005) or even delete blocks of satellite repeats (Garagna et al., 1995). Thus, heterochromatin evolution via chromosomal rearrangements may have obviated maintenance of HP1E's essential heterochromatin function, leading to its degeneration in D. pseudoobscura.\n\nOur finding that HP1E is essential in D. melanogaster yet lost in the obscura group highlights the lineage-restricted essential requirements of chromatin genes. Intriguingly, the only other characterized PEL gene that supports paternal chromatin function in Drosophila embryos, k81, is similarly lineage-restricted despite being essential for paternal telomere function (Dubruille et al., 2010; Gao et al., 2011). In contrast, maternally deposited proteins required for paternal chromatin reorganization following fertilization are generally conserved from fly to human (e.g., Loppin et al., 2005a; Konev et al., 2007; Delabaere et al., 2014). This dichotomy is striking. It specifically suggests that even though the essential functions of paternal control of DNA deposition and chromatin remodeling for embryonic mitosis are likely to be conserved in most animals, whereas the identity of those genes is not. PEL chromatin genes like HP1E and k81 thus challenge the dogma that ancient, conserved genes always encode essential conserved functions. Not only can young genes rapidly acquire essential chromatin functions due to dynamic chromatin evolution (Chen et al., 2010; Ross et al., 2013), but chromatin changes, such as those driven by karyotype evolution, may also drive the extinction of ancient genes encoding once-essential functions (Drinnenberg et al., 2014).\n\n## Materials and methods\n\n### Fly transgenics and crossing schemes\n\nTo knockdown HP1E expression, we acquired a fly line that encodes a UAS promoter-driven hairpin homologous to the D. melanogaster HP1E transcript (line 24196, Vienna Drosophila RNAi Center). We crossed this line to both an actin5C Gal4 driver stock (ubiquitous expression, Bloomington #3954) and a vasa-driven Gal4 driver (male germline expression, gift of L Jones). Similar data were obtained with both drivers; only actin5C driven-RNAi data are presented. We engineered a recoded version of HP1E in which all synonymous sites were changed (Genscript Inc.), and PCR-stitched this coding sequence to the HP1E UTRs and 1080 bp and 550 bp of 5\u2032 and 3\u2032 flanking noncoding regions, respectively (http://flybase.org). The recoded HP1E transgene was cloned into the pattB vector and engineered into cytolocations 68A4 or 25C6 via injection. The BestGene, Inc. (Chino Hills, CA) carried out this and all other embryo injections using standard procedures. Using genetic crosses, we generated a rescue genotype that encoded one copy of the recoded transgene (cytolocation 68A4) in a background of the Gal4 driver and UAS-driven HP1E hairpin. We crossed UASp-driven HP1E transgene into the \u2018MTD\u2019 Gal4 driver background (#31777; Bloomington) to overexpress HP1E during oogenesis for deposition into the egg. We generated a 7-base pair lesion in the 5\u2032 region of the HP1E coding sequence using a TAL-effector nuclease (Genetic Services Inc.). We rescued fertility of HP1E homozygous mutant fathers by introducing the same transgene inserted at cytolocation 25C6.\n\n### Fertility assays\n\nTo assess male fertility, we crossed five 0\u20135 day old virgin w1118 females to two 0\u20135 day old males containing Gal4 driver alone, HP1E-hairpin alone, both driver and hairpin, or driver, hairpin and recoded \u2018rescue\u2019. Parents were discarded after 3 days and progeny counted on day 16. We replicated each cross type four times. To determine if the HP1E-knockdown fathers produced motile sperm, we dissected 10 seminal vesicles in PBS, squashed the tissue between a cover slip and slide, and then examined them under a light microscope. To facilitate sperm imaging, we crossed flies encoding the (donjuan) dj-GFP construct (Santel et al., 1997) into an HP1E knockdown background and mounted the male seminal vesicle, the female seminal receptacle to which these males were crossed, and the 5 min-old embryos oviposited by these females. We used a similar scheme to visualize protamine:GFP (Jayaramaiah Raja and Renkawitz-Pohl, 2005) in embryos fathered by HP1E-knockdown males.\n\n### Assessing embryo arrest, rescue by sesame- mothers\n\nTo assess the stage of embryonic arrest, we crossed males encoding both the actin5C driver and HP1E hairpin or the driver alone to wild-type sevelin females (gift of B Wakimoto). After a 1-hr pre-lay, we collected embryos for 70 min, methanol-fixed each genotype separately (Rothwell and Sullivan, 2007), mounted in SlowFade Gold antifade with DAPI (Molecular Probes, Life Technologies Inc., Grand Island, NY), and counted nuclei number/embryo at 20\u00d7 on a Leica DMI 6000. A Mann\u2013Whitney U test determined significance between the two frequency distributions. To assess embryonic mitotic rescue by sesame mothers, we set up the same cross but with virgin sesame females (ssm185b, gift from Kami Ahmad). After a 1-hr pre-lay, sesame females oviposited for 45 min followed by 1.5 hr of aging. We then collected, fixed, and counted nuclei as above. For embryos fathered by HP1E knockdown vs wild-type males, we recorded the number of embryos that underwent early arrest (cycle 3 or earlier) and no arrest (beyond cycle 12). We tested for heterogeneity among the four categories using a Fisher's Exact Test.\n\n### Embryo immunofluorescence\n\nTo characterize the progression of paternal chromatin and mitotic machinery leading up to and during the first embryonic mitosis, we conducted immunofluorescence and DAPI staining on wildtype-, HP1E knockdown-, or HP1E/HP1E fathered embryos that were 0\u201320 min old. We methanol-fixed embryos (as above) and then rehydrated in PBS plus a drop of PBS + 0.1% Triton. Next, we permeablized in PBS + 1% Triton for 30 min at room temperature. Embryos were blocked in the StartBlock reagent (Thermo Scientific, Waltham, MA) for 90 min at 4\u00b0C. We replaced the block with the primary antibody diluted in StartBlock and incubated overnight at 4\u00b0C. We then washed embryos in StartBlock for 1 hr following by a 2-hr room temperature incubation in a secondary antibody diluted in StartBlock. After washing embryos for 1 hr in PBS + 0.1% Triton, we mounted them as described above. Primary antibody dilutions were the following: anti-AcH4 (Millipore, Billerica, MA; 1:1000), anti-alpha tubulin (Serotec, Kidlington, UK; 1:250), anti-gamma-tubulin (Sigma\u2013Aldrich, St. Louis, MO), clone GTU-88, 1:1000, anti-Cenp-C (1:5000, gift of C Lehner), anti-PCNA (1:300, gift of P Fisher), and anti-HP1E (1:1000). Alexa-Fluor goat secondary antibodies (Life Technologies) were diluted at 1:1000. We acquired images from the Leica TCS SP5 II confocal microscope with LASAF software and present maximally projected .tif files. Finally, using ImageJ we quantified paternal\u2014maternal metaphase asymmetry by tracing max projected AcH4-staining wild-type and PEL embryos. We measured \u2018circularity\u2019, which is 4\u03c0 \u00d7 [Area]/[Perimeter]2 and calculated the paternal:maternal ratio.\n\n### HP1E antibody production and western blots\n\nWe raised an antibody against HP1E residues CKSLKRGQELNNQYETKAKRLKI and CRILDRRHYMGQLQYLVKWLDY. Covance Inc. (Princeton, NJ) immunized a single rabbit by injecting it with both peptides over two months. We confirmed HP1E antibody specificity by probing a western blot of nuclear extracts from Drosophila S2 cells transfected with a heat-shock inducible, N-terminally Flag-tagged and YFP-tagged HP1E fusion protein plasmids. We designed these constructs using Gateway technology (emb.carnegiescience.edu/labs/murphy/Gateway%20vectors.html) following standard procedures (destination vectors pHFW and pHVW, respectively). We prepared cell lysates by transfecting (FuGENE, Promega, Madison, WI) S2 cells with 2 \u03bcg of plasmid DNA and incubating overnight. We transiently induced expression by heat shock (following Ross et al., 2013). We washed the recovered cells in PBS and re-suspended in RIPA buffer, sonicated, pelleted, and re-suspended in SDS loading buffer. We probed the membranes with either anti-HP1E (1:500) or anti-Flag (\u2018M2\u2019, Sigma\u2013Aldrich, St. Louis, MO; 1:2000) primary antibodies followed by goat anti-rabbit or goat anti-mouse IgG-HRP (Santa Cruz Biotechnologies Inc., Dallas, TX). Lysates for the western blot confirming deposition of ectopically-expressed HP1E into embryos were prepared from 0\u201340 min embryos laid by females encoding the MTD driver and either UASp-HP1E transgene (described above) or a balancer chromosome. We flash froze the embryos followed by grinding with a glass pipette in SDS loading buffer and boiling at 95\u00b0C for 5 min. We probed the membranes with anti-HP1E and anti-beta actin (Abcam, Cambridge, UK, both at 1:5000).\n\n### Testis immunofluorescence\n\nTo assess HP1E localization in testis, we used the HP1E antibody or generated transgenic flies encoding an N-terminal Flag- or YFP-tag fused to HP1E, flanked by the native promoter and 5\u2032 and 3\u2032 regions. To cytologically characterize HP1E localization without antibody staining, we fixed testis from 2\u20135 day old YFP-HP1E males in 4% paraformaldehyde (PFA) and mounted in SlowFade Gold antifade with DAPI. For immunofluorescence, we fixed Flag-tagged and untagged testis in 4% PFA in periodate-lysine-paraformaldehyde (PLP) for 1 hr followed by 30 min in PBS + 0.3% Triton, 0.3% sodium deoxycholate. After a 10 min wash in PBS + 0.1% Triton, we blocked testis for 30 min in PBS + 0.1% Triton + 3% BSA followed by standard IF procedures using the following dilutions: anti-Flag (\u2018M2\u2019, Sigma\u2013Aldrich, St. Louis, MO; 1:2500), anti-HP1E (1:1000), and Alexa Fluor secondaries goat anti-mouse 488 (1:1000) and goat anti-rabbit (1:1000). We acquired images from the Leica TCS SP5 II confocal microscope with LASAF software and present maximally projected tagged image files (tifs).\n\n### RNA-seq methods\n\nWe prepared RNA from testis dissected from three biological replicates per genotype representing three independent crosses of males heterozygous for the UAS promoter-driven hairpin homologous to the D. melanogaster HP1E transcript and virgin females homozygous for vasaGAL4 inserted on chromosome II. The FHCRC Shared Resources Genomics Core prepared six libraries using Illumina TruSeq Sample Prep Kit v2. We performed image analysis and base calling with Illumina's RTA v1.13 software and demulitplexed with Illumina's CASAVA v1.8.2. We aligned reads to BDGP5r66 using TopHat v1.4.0 and converted files to sam format using samtools v0.1.18. We used htseq-count v0.5.3 to generate counts/gene and removed genes that had 0 counts across all samples or less than 1 count/million in at least three samples. This culling resulted in 11,051 genes. We identified differentially expressed genes using edgeR v2.6 and tested for significant enrichment of up-regulated heterochromatin-embedded genes using binomial probability. We annotated heterochromatin-embedded genes using the D. melanogaster Release 5.\n\n### Fluorescent in situ hybridization\n\nTo determine if participation in chromatin bridging was chromosome-specific, we designed Cy3 or Cy5 conjugated probes (IDT) for in situ hybridization following (Dernburg, 2011): X (359 bp satellite), Y (AATAC)n, 2L + 3L (AATAACATAG)n, 4 (AATAT)n and IGS (GTATGTGTTCATATGATTTTGGCAATTATA, ATATTCCCATATTCTCTAAGTATTATAGAG, designed by P Ferree). We co-hybridized two probes using the following conjugated tags and annealing temperatures: 32\u00b0C for Y-Cy5 + 2L/3L-Cy3 and Y + X-Cy3, 23\u00b0C for Y + 4-Cy3 and 30\u00b0C for Y-Cy5 + IGS-Cy3. For the FISH experiments, we modified the above embryo fixation protocol by replacing methanol:heptane with 3.7% paraformaldehyde:heptane.\n",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "2debfa9c-c479-4925-8e21-a2ff4247da9d",
+      "submission_id": "c6f95f70-dc14-45f7-ad57-1ccdcd1a6947",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Asifa Akhtar, Max Planck Institute for Immunobiology and Epigenetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07378.031](https://doi.org/10.7554/eLife.07378.031)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMitotic fidelity requires transgenerational action of a testis-restricted HP1\u201d for consideration at eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior editor), a Reviewing editor, and three reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Asifa Akhtar (Reviewing editor), William Theurkauf and Daniel Barbash (peer reviewers). A further reviewer remains anonymous.\n\nSummary:\n\nThe reviewers have provided their individual assessments and also discussed in detail the findings presented in your manuscript. The reviewers are of the opinion that it is an interesting story with elegant genetics to describe the role of HPIE as a paternal effect mutation required for segregation of paternally-derived chromosomes. However, additional work is required to strengthen your claims so that the manuscript is a strong candidate for publication in eLife.\n\nEssential revisions:\n\nDetailed reviewers\u2019 comments are included below, but the consensus among the reviewers was there are at least two major points we would like you to address upon revision.\n\n1) The authors need to strengthen their claim about the \u201cheterochromatin function\u201d of HP1E. RNA seq is interesting but more direct evidence would be needed. Ideally ChIP-seq from this particular stage will be desirable however, if this is not feasible then at least ChIP-qPCR for a selected gene set will be important to provide more direct evidence for HPIE action on heterochromatin.\n\n2) The authors also need a better characterization of the mis-segregation phenotype. As pointed out in one of the reviewer's comments, it will be very helpful if the authors used additional probes such as rDNA and a few euchromatic loci and centromeres and compared their phenotype with other reported work at later stages.\n\nReviewer #1:\n\nOnly a few minor comments.\n\n1) Related to the data that show narrow expression window, yet causing derepression of heterochromatin genes in mutant: What kind of chromatin state do the authors think HP1E is conferring to sperm chromatin that both explains derepression of heterochromatin genes during spermatogenesis AND defective chromatin decondensation and segregation of paternal chromosomes in zygotes?\n\n2) Related to their conclusion that HP1E is depleted from mature sperm chromatin, any discussion on the possibly very low amount of it marking certain genomic location, similar to a finding that histone is not completely removed from mammalian sperm chromatin? (http://www.ncbi.nlm.nih.gov/pubmed/19525931)\n\nReviewer #2:\n\nThis report shows that knock down and chromosomal mutations that disrupt the Drosophila testes specific HP1, HP1E, lead to defects in remodeling of the male pronucleus and segregation of the sex chromosomes during the early cleavage stage embryonic divisions. Western blotting and IF data indicate that HP1E protein localizes to nuclei during spermatogenesis, but is not incorporated into mature sperm or transferred to the embryo. The authors also show that maternal expression of HP1E does not rescue the PEL phenotype, and use a very elegant genetic experiment to show that the embryonic mitotic defects are specifically due to failure to segregate the paternal chromosomes. Based on these observations, the authors propose that HP1E establishes an epigenetic mark that is essential to reorganization of the male pronucleus. The data are consistent with this model, but HP1E mutations alter expression of over 700 genes, and it is also possible that one or more of these genes establish an inherited modification or encode a chromatin protein that is required for reorganization and segregation of the male pronucleus. While directly testing this hypothesis is difficult, this possibility needs to be considered /discussed. Nonetheless, the experiments are well executed, clearly presented, and genetically define a novel paternal function in pronuclear reorganization. The additional experiments suggested below are not essential, but would strengthen the story and could provide mechanistic insights:\n\n1) HP1E depletion leads to mis-regulation of heterochromatin genes and segregation defects predominantly for sex chromosomes during embryonic mitosis in next generation. Does HP1E preferentially associate with the sex chromosomes during spermatogenesis? ChIP sequencing would be the best way to test this. Is this technically challenging in fly testes? If not, the authors appear to have the reagents needed to perform the experiment, and it could provide important insight into HP1E function.\n\n2) HP1E is likely to bind H3K9-me3, and co-localization of HP1E and K9-me3 would indirectly test this. HP1A recruits the methyl transferase that generates this binding site, leading to heterochromatin spreading. HP1E may have a similar function. It would be interesting to determine if H3K9me3 localization is altered in HP1E mutants. This could be done by IF, but ChIPseq would be better.\n\n3) As noted above, the RNAseq data show that many genes change their expression in HP1E mutants. Do any these genes encode chromatin modifying proteins, or proteins that directly associate with chromatin?\n\nReviewer #3:\n\nLevine et al. have characterized the gene HP1E, discovering that it is a paternal effect mutation required for segregation of paternally-derived chromosomes. The combination of the FISH, anti-AcH4, and sesame mutant experiments are particularly strong with regards to HP1E's requirement for paternal chromosome segregation in the first embryonic mitosis. The authors further establish that HP1E is present and thus likely active only in developing sperm, with a mechanistic understanding of its role in chromosome segregation awaiting further study. The authors suggest that HP1E is a heterochromatin factor but this is based on mostly indirect evidence.\n\nMajor points:\n\n1) I'm not very familiar with the spermatid stage being studied but take the authors' point from cited refs that heterochromatin cannot be identified with HP1A, H3MeK9, etc. at that stage. So the inability to directly examine HP1E chromatin localization is an acceptable limitation of the system. Localization in other tissue types upon ectopic expression obviously has caveats but would be useful to show if available.\n\nThe RNA-seq analysis is presented as an indirect alternative to determine whether HP1E is a heterochromatin protein, but more could potentially be gained from this, and the analyses clarified. How are heterochromatin genes defined in this study? What proportion of them are misregulated\u2014all misregulated may be upregulated, but out of what total? Are they equally affected on all chromosome arms\u2014this might give some insight into the apparent specificity of the segregation defect? How do such results compare to euchromatic genes? Chromosome 4 would be of particular interest due to its unusual heterochromatic state.\n\nAnalysis of repetitive sequences could also be informative for addressing whether HP1E is a general or specific chromatin regulator. There's little doubt that satellite sequences are not proportionally represented in Illumina data, especially RNA-Seq, but we have had some success with Hmr and Lhr in mapping reads to satellites, with the results partially correlating with cytological data.\n\n2) Relating to the issue of whether HP1E is a heterochromatin protein, and its degree of specificity, the mis-segregation phenotypes in Figure 7 look very different from what we've seen in Ferree's work at later embryonic stages, where mis-segregating sequences like 359 go all the way across the anaphase bridges. Here with HP1E mutant the probes are forming clusters that don't look any more stretched out compared to normal segregation, e.g., when comparing the presumed maternal and paternal X's in the female embryo. So most of the stretched material in the bridge is unidentified. It would be informative to look at additional probes such as rDNA and a few euchromatic loci. Were centromeres looked at (may have missed)? Figure 7 (and others) are also lacking wild type controls. Here they are really essential in order to interpret the mutant phenotypes.\n\n3) HP1E is firmly established here as a paternal effect mutant. \u201cTransgenerational\u201d is widely understood to refer to mutant phenotypes that are transmitted across generations, and does not apply here.\n",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b498751f-da9d-45ef-9372-cb353e897dc3",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C1",
+      "claim": "HP1E gene is a testis-restricted Drosophila HP1 paralog born more than 60 million years ago",
+      "claim_type": "EXPLICIT",
+      "source": "The HP1E gene is a testis-restricted Drosophila HP1 paralog born more than 60 million years ago (Levine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication (Levine et al., 2012) as support for the evolutionary age and tissue restriction of HP1E",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "558c72cb-7149-4fdb-9029-6c8e482ce360",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C2",
+      "claim": "HP1E localizes to developing spermatids subsequent to the completion of meiosis II",
+      "claim_type": "EXPLICIT",
+      "source": "All three reagents revealed that HP1E localizes to developing spermatids subsequent to the completion of meiosis II (Figure 1A\u2013C, Figure 1\u2014figure supplements 2, 3, 4), ruling out a role for HP1E during the pre-meiotic or meiotic phases of spermatogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from three different reagents (Flag-tagged, YFP-tagged HP1E, and antibody) and multiple figures showing localization patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "cd237b1d-8de7-4427-acc9-d672eb95c617",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C3",
+      "claim": "HP1E signal was generally diffuse across a subset of the chromatin throughout spermiogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "HP1E signal was generally diffuse across a subset of the chromatin throughout spermiogenesis (Figure 1A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy images showing HP1E localization patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "08684f62-af40-495d-833c-db3f9bf8c2a1",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C4",
+      "claim": "HP1E disappears completely at sperm maturation",
+      "claim_type": "EXPLICIT",
+      "source": "HP1E signal was generally diffuse across a subset of the chromatin throughout spermiogenesis (Figure 1A\u2013C) but disappeared completely at sperm maturation (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data showing absence of HP1E signal in mature sperm",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "99ca9037-9034-4889-a7bc-acbf55bc0a81",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C5",
+      "claim": "HP1E disappearance in late spermiogenesis is not due to antibody inaccessibility in the highly condensed sperm head",
+      "claim_type": "EXPLICIT",
+      "source": "Native expression of the HP1E-YFP fusion transgene confirmed our immunofluorescence results (Figure 1\u2014figure supplement 4), implying that HP1E disappearance in late spermiogenesis is not due to antibody inaccessibility in the highly condensed sperm head.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by YFP fusion protein data that confirms antibody results, ruling out an alternative explanation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9e940e72-fd0c-4ec3-bb21-3f4289e7fcd5",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C6",
+      "claim": "HP1E localizes to paternal chromosomes only during the radical reorganization of histone-rich chromatin into protamine-rich sperm DNA",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that HP1E localizes to paternal chromosomes only during the radical reorganization of histone-rich chromatin into protamine-rich sperm DNA and disappears once sperm mature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the timing of HP1E localization during spermiogenesis and its disappearance at maturation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "85eaff84-674a-40c0-8e55-965ef9b24c00",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C7",
+      "claim": "HP1E knockdown during spermiogenesis affects the expression of over 700 genes",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HP1E knockdown during this narrow developmental stage affects the expression of over 700 genes (fdr < 0.05, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "77c1c219-45c5-483e-82f6-ff1162e43bb7",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C8",
+      "claim": "100% of significantly misregulated heterochromatin-embedded genes are upregulated when HP1E is depleted",
+      "claim_type": "EXPLICIT",
+      "source": "However, one intriguing pattern that does emerge from this dataset is that 100% of significantly misregulated heterochromatin-embedded genes are upregulated when HP1E is depleted (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data showing differential expression patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "6da5b8d1-fc7b-4997-ade6-15396ba80b39",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C9",
+      "claim": "Less than 60% of significantly misregulated euchromatin-embedded genes are upregulated when HP1E is depleted",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, less than 60% of significantly misregulated euchromatin-embedded genes are upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "ca6af7f1-cf71-475d-b0ba-576a1bcf17dd",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C10",
+      "claim": "The dichotomy between the effects of HP1E depletion on the euchromatic and heterochromatic compartment is highly significant (p < 0.00001)",
+      "claim_type": "EXPLICIT",
+      "source": "This dichotomy between the effects of HP1E depletion on the euchromatic and heterochromatic compartment is highly significant (p < 0.00001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "8951acc8-d7cc-4d6b-a0ad-5cdef1681763",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C11",
+      "claim": "HP1E acts directly on the heterochromatic compartment",
+      "claim_type": "IMPLICIT",
+      "source": "This dichotomy between the effects of HP1E depletion on the euchromatic and heterochromatic compartment is highly significant (p < 0.00001) and suggests a direct action of HP1E in the heterochromatic compartment, akin to its closest HP1 relative, HP1A (Kellum et al., 1995; Levine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from differential gene expression patterns and comparison to HP1A function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "bb09b22a-5559-4a06-bc25-88564ff9e3c0",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C12",
+      "claim": "HP1E-depleted fathers produce highly penetrant male sterility",
+      "claim_type": "EXPLICIT",
+      "source": "Both drivers efficiently knocked down HP1E expression (Figure 3\u2014figure supplement 1) and both resulted in highly penetrant male sterility (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fertility assay data using RNAi knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "b9824b74-0353-4c68-b7ce-51ee70906ab8",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C13",
+      "claim": "A recoded, RNAi-resistant HP1E transgene fully rescued fertility of HP1E-depleted males",
+      "claim_type": "EXPLICIT",
+      "source": "This recoded, RNAi-resistant HP1E transgene (Figure 3A, Figure 3\u2014figure supplement 2) fully rescued fertility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "fbcf0cdc-2d1a-45ee-9dd3-29658ce80fed",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C14",
+      "claim": "HP1E knockout males are completely sterile",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HP1E knockout males are also completely sterile, and this sterility is also fully reversed by the recoded HP1E transgene (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic knockout and rescue experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "a1fe38bc-443f-42ff-b8b5-f116d8b06d19",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C15",
+      "claim": "HP1E is required for male fertility in D. melanogaster",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HP1E is required for male fertility in D. melanogaster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple genetic experiments showing sterility upon HP1E loss",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "d505fd0c-8cf1-45a4-8b1e-8fcca7cd9c31",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C16",
+      "claim": "HP1E-depleted fathers produce abundant motile sperm that transfer to females, fertilize eggs, and initiate embryogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the vast majority of male sterility mutants, HP1E-depleted fathers produce abundant motile sperm that transfer to females, fertilize eggs, and initiate embryogenesis (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data showing sperm production, transfer, and fertilization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "69b278f0-af33-41ea-bbd6-596421775208",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C17",
+      "claim": "Embryos sired by HP1E-depleted fathers failed to hatch (0.5% hatch rate)",
+      "claim_type": "EXPLICIT",
+      "source": "However, embryos sired by HP1E-depleted fathers failed to hatch (0.5% hatch rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by embryo viability assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "902a2e7c-4449-473c-820e-e1304028a34c",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C18",
+      "claim": "HP1E-depletion results in paternal effect lethality",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that HP1E-depletion results in PEL i.e., zygotic viability is dependent on father's genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that embryos die despite successful fertilization",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "75d4e0ff-d575-4e03-993e-a99ad3813fb9",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C19",
+      "claim": "Embryos fathered by HP1E-depleted males arrested after only a few rounds of zygotic mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos fathered by HP1E-depleted males ('PEL embryos' hereafter) arrested after only a few rounds of zygotic mitosis (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by embryo staging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "f016579a-8148-4b57-a1bd-851b8e32e405",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C20",
+      "claim": "PEL embryos exhibited a chromatin bridge in the very first mitotic division",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos fathered by HP1E-depleted males ('PEL embryos' hereafter) arrested after only a few rounds of zygotic mitosis (Figure 3C) and exhibited a chromatin bridge in the very first mitotic division (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data showing chromatin bridges",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "3178c3de-665c-4232-89a7-00c984af8908",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C21",
+      "claim": "Aged PEL embryos exhibit increasingly asynchronous nuclear cycling and acute mitotic catastrophe",
+      "claim_type": "EXPLICIT",
+      "source": "Aged embryos exhibit increasingly asynchronous nuclear cycling and acute mitotic catastrophe (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-course microscopy data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "baf77756-ea3b-4505-a154-72c0b793b85a",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C22",
+      "claim": "PEL embryos revealed no gross defects in maternal chromatin dynamics",
+      "claim_type": "EXPLICIT",
+      "source": "PEL embryos revealed no gross defects in maternal chromatin dynamics (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data tracking maternal chromatin",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9c581fe2-be6b-444f-ade7-5481aeab77cd",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C23",
+      "claim": "PEL embryos exhibited stereotypical centrosome and spindle morphology",
+      "claim_type": "EXPLICIT",
+      "source": "PEL embryos revealed no gross defects in maternal chromatin dynamics (Figure 5A) and exhibited stereotypical centrosome and spindle morphology (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data of mitotic structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9a0b8818-7f07-4fa5-a0d4-314461eabe47",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C24",
+      "claim": "Sperm DNA in PEL embryos underwent the protamine-to-histone transition",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, sperm DNA in PEL embryos underwent the protamine-to-histone transition (Figure 5\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data tracking protamine-GFP signal",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "b3ab912c-e373-453c-94f3-9558437907d1",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C25",
+      "claim": "Both pronuclei recruit replication machinery in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Using antibodies against a replication protein (PCNA) and a kinetochore protein (Cenp-C), we also found that both pronuclei recruit replication machinery and initiate kinetochore assembly in PEL embryos (Figure 5\u2014figure supplements 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data showing PCNA localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "2d67e0e1-f31b-40dc-8711-0b1d0e7ed876",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C26",
+      "claim": "Both pronuclei initiate kinetochore assembly in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Using antibodies against a replication protein (PCNA) and a kinetochore protein (Cenp-C), we also found that both pronuclei recruit replication machinery and initiate kinetochore assembly in PEL embryos (Figure 5\u2014figure supplements 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data showing Cenp-C localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "ec1b5dce-f91a-4f1b-b5be-8e796fab3b56",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C27",
+      "claim": "The first visible sign of defects in PEL embryos was observed at metaphase",
+      "claim_type": "EXPLICIT",
+      "source": "The first visible sign of defects in PEL embryos was observed at metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on temporal analysis of embryo phenotypes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "cc8814f1-7a90-477a-a7fd-b97c9aa88c89",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C28",
+      "claim": "Paternal DNA failed to condense synchronously with the maternal chromosomes in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "We found that paternal DNA failed to condense synchronously with the maternal chromosomes in PEL embryos (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy and quantitative circularity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "4f973fea-3128-45bb-a22f-7db5c4cea306",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C29",
+      "claim": "In wild-type embryos, the ratio of paternal to maternal circularity was equal to one",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type embryos, we found that the ratio of paternal to maternal circularity was equal to one, suggesting that both pronuclei undergo synchronous condensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative image analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "7e4e6244-64d7-443d-807b-4e4a3e86633d",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C30",
+      "claim": "Paternal DNA had twice the circularity of maternal DNA in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, paternal DNA had twice the circularity of maternal DNA in PEL embryos, suggesting asynchronous condensation due to failure of the paternal genome to compact into resolved chromatids in a timely fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative image analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "f2be02d2-6c9e-4610-87fe-144ba8fae459",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C31",
+      "claim": "A prominent chromatin bridge enriched in paternal chromatin-specific AcH4 appeared in PEL embryos at the first anaphase",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately following this asynchronous metaphase in PEL embryos, we found that the paternal DNA failed to separate on the mitotic spindle. Specifically, a prominent chromatin bridge enriched in paternal chromatin-specific AcH4 appeared in PEL embryos at the first anaphase (Figure 5A, arrowhead, n = 20/20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence microscopy data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "0a6c44c9-a449-45b1-aa72-874368b3945c",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C32",
+      "claim": "Only a fraction of the paternal genome mis-segregates in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed AcH4 at the poles, suggesting that only a fraction of the paternal genome mis-segregates in PEL embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of AcH4 signal at both bridge and poles",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "5f08516d-9f4b-4086-8bf2-94221af63ca4",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C33",
+      "claim": "Defects in paternal chromatin organization are the primary source of mitotic arrest in embryos fathered by HP1E-depleted males",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we conclude that defects in paternal chromatin organization are the primary source of mitotic arrest in embryos fathered by HP1E-depleted males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple lines of experimental evidence showing paternal chromatin defects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "e4a5f27e-6750-470a-ace0-d0d561f751e7",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C34",
+      "claim": "Bypassing paternal chromatin participation fully rescues nuclear divisions in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "We crossed the HP1E-depleted males to sesame females to ask whether bypassing paternal chromatin was sufficient to rescue mitotic cycling. We observed full rescue of nuclear divisions in these crosses (Figure 6A); the resulting embryos cycled maternal haploid nuclei identically to those 'fathered' by a wild-type male beyond embryonic cycle 12 (85% and 82%, respectively, p > 0.2, Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic rescue experiment using sesame mutant females",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "08b3d4bd-6ebf-4bb7-b6b1-70f8bad0a1fb",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C35",
+      "claim": "Defects in paternal chromatin dynamics are both necessary and sufficient to explain the mitotic arrest in PEL embryos sired by HP1E-depleted males",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that defects in paternal chromatin dynamics are both necessary and sufficient to explain the mitotic arrest in PEL embryos sired by HP1E-depleted males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the sesame rescue experiment results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "134bea65-e4a9-48ac-b3f0-313c4df6e9ae",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C36",
+      "claim": "HP1E protein is not detected in wild-type mature sperm head",
+      "claim_type": "EXPLICIT",
+      "source": "We failed to detect HP1E protein cytologically in both wild-type mature sperm head (Figure 1D, Figure 1\u2014figure supplement 3) and wild-type early embryos (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence microscopy data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "c21ab1a8-34ea-47fd-8b65-90846dffda67",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C37",
+      "claim": "HP1E protein is not detected in wild-type early embryos",
+      "claim_type": "EXPLICIT",
+      "source": "We failed to detect HP1E protein cytologically in both wild-type mature sperm head (Figure 1D, Figure 1\u2014figure supplement 3) and wild-type early embryos (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunofluorescence microscopy data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "0f46214d-ae27-40f7-a665-ef1f372b73f7",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C38",
+      "claim": "Maternally deposited HP1E was unable to rescue the PEL defect associated with sperm from HP1E-depleted males",
+      "claim_type": "EXPLICIT",
+      "source": "However, maternally deposited HP1E was unable to rescue the PEL defect associated with sperm from HP1E-depleted males (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic rescue experiment with maternal HP1E expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "2b07bb1d-4cf6-4e4a-85e1-3cc3cc76b7a4",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C39",
+      "claim": "HP1E action during spermiogenesis, rather than in early embryogenesis, is responsible for ensuring proper embryonic mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the testis cytology presented in Figure 1, these data suggest that it is HP1E action during spermiogenesis, rather than in early embryogenesis, which is responsible for ensuring proper embryonic mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the failure of maternal HP1E to rescue and the localization data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "d72c6085-44c0-4b12-b762-3c62cf5cca5d",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C40",
+      "claim": "HP1E primes the paternal genome during spermiogenesis to ensure proper remodeling of the paternal genome in embryos post-fertilization",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the successful rescue of mitotic cycling by sesame- mothers, we conclude that HP1E primes the paternal genome during spermiogenesis i.e., pre-fertilization, to ensure proper remodeling of the paternal genome in embryos post-fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple genetic experiments showing transgenerational effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9f454f04-7262-41a1-a720-09692133d4cb",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C41",
+      "claim": "The paternal Y was trapped as a bridge between nuclei in 94% of the male PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the paternal Y was trapped as a bridge between nuclei in 94% of the male PEL embryos (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FISH analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "91a99432-21dc-4db0-9c07-9025cf2aa0ab",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C42",
+      "claim": "The maternal X was never found in the bridge in PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the paternal Y was trapped as a bridge between nuclei in 94% of the male PEL embryos (Figure 7B), whereas the maternal X was never found in the bridge (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FISH analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "1208b3cb-1db3-4453-8a1a-3ca67965c0a0",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C43",
+      "claim": "The paternal X-chromosome was trapped as a bridge in 60% of female PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "In female embryos, we found that the (inferred) maternal X-chromosome segregated faithfully while the (inferred) paternal X-chromosome was trapped as a bridge in 60% of embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FISH analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "cb4abc0f-66ea-4fe6-adbe-ab3149a09726",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C44",
+      "claim": "The large autosomes (chromosomes II and III) mis-segregated at only 4% and 15% frequency in male and female embryos, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the large autosomes\u2014chromosomes II and III\u2014mis-segregated at only 4% and 15% frequency in male and female embryos, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FISH analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "01d9828f-0347-4c52-8112-dbd41edd143a",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C45",
+      "claim": "The dichotomy between sex chromosomes and the large autosomes in mis-segregation frequency is highly significant (p < 0.0001)",
+      "claim_type": "EXPLICIT",
+      "source": "The dichotomy between sex chromosomes and the large autosomes is highly significant (p < 0.0001, Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of FISH data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "bdf79f1f-ae87-4483-98c1-51bd25442627",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C46",
+      "claim": "The paternal fourth chromosome mis-segregated at 25% frequency in female embryos",
+      "claim_type": "EXPLICIT",
+      "source": "However, in female embryos, we found that the paternal fourth chromosome mis-segregated at 25% frequency, intermediate between the autosomes and sex chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FISH analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "0c4c4e95-58f8-43e6-9ee2-877306612dfa",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C47",
+      "claim": "The Y-linked rDNA appears in the bridge at only 50% frequency in male PEL embryos",
+      "claim_type": "EXPLICIT",
+      "source": "In male PEL embryos, we discovered the Y-linked rDNA in the bridge at only 50% frequency (Figure 8B, Figure 8D) compared to 95% frequency of the AATAC satellite probe (p < 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FISH analysis data with rDNA probes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "8c8cc420-b80d-4a68-aebf-7165ecee5c18",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C48",
+      "claim": "The AATAC satellite DNA or an immediately proximal satellite DNA cluster is in the telophase bridge in male embryos",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is the AATAC satellite DNA or an immediately proximal satellite DNA cluster that is in the telophase bridge in male embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential frequencies of Y-rDNA vs AATAC satellite in bridges",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9805ef03-ba4b-4be8-9255-24f85bde5817",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C49",
+      "claim": "The X-linked rDNA locus in female PEL embryos occurs in the bridge at 85% frequency",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the X-linked rDNA locus in female PEL embryos occurs in the bridge at 85% frequency (Figure 7D, Figure 8B,D) compared to 60% for the 359 bp repeat (p < 0.02).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FISH analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "7a8a15b5-e3de-4008-955d-f1000902a614",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C50",
+      "claim": "The DNA present in the telophase bridge is more likely to be proximal to the X-rDNA cluster than the 359 bp satellite repeats",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the DNA present in the telophase bridge is more likely to be proximal to the X-rDNA cluster (although not the rDNA itself) than the 359 bp satellite repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential frequencies of X-rDNA vs 359bp repeat in bridges",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "de618936-0cc9-4782-a12f-a280e2a612fd",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C51",
+      "claim": "HP1E action is required during sperm development to prime the paternal genome for embryonic chromosome segregation",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we conclude that HP1E action is required during sperm development to prime the paternal genome for embryonic chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple lines of experimental evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "459d3f55-cf04-44ce-8b2a-c448d9085bac",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C52",
+      "claim": "HP1E priming function is especially critical for faithful segregation of paternal sex chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "This priming function is especially critical for faithful segregation of paternal sex chromosomes, which appear to be most vulnerable to HP1E depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FISH data showing enrichment of sex chromosomes in bridges",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "036071f7-9357-4885-8644-421a9b221621",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C53",
+      "claim": "No cell cycle checkpoint proteins have been identified to act in the very first embryonic mitotic cycle",
+      "claim_type": "EXPLICIT",
+      "source": "No such cell cycle checkpoint proteins have been identified to act in the very first embryonic mitotic cycle (O'Farrell et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "6798ab80-5e58-469f-a72d-d37ef9cf8ca0",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C54",
+      "claim": "HP1E encodes a novel function that ensures paternal genome stability in the embryo",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HP1E encodes a novel function that ensures paternal genome stability in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the functional characterization experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "0aeeae35-c956-45c8-936a-a625afa2806e",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C55",
+      "claim": "HP1E is developmentally restricted within the male germline",
+      "claim_type": "EXPLICIT",
+      "source": "Our cytological and transcriptome analysis revealed that HP1E is developmentally restricted within the male germline, where it contributes to heterochromatin integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by localization and expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "f8deb98c-7066-4675-9caf-b552305c960a",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C56",
+      "claim": "HP1E contributes to heterochromatin integrity in the male germline",
+      "claim_type": "EXPLICIT",
+      "source": "Our cytological and transcriptome analysis revealed that HP1E is developmentally restricted within the male germline, where it contributes to heterochromatin integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from RNA-seq data showing heterochromatin gene misregulation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "5e013fc8-34f0-4fad-95ac-57e7d60c632c",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C57",
+      "claim": "HP1E depletion during sperm development results in paternal chromosomes failing to condense in synchrony with the maternal chromosomes",
+      "claim_type": "EXPLICIT",
+      "source": "HP1E depletion during sperm development results in a highly penetrant PEL phenotype in which paternal chromosomes, especially the paternal sex chromosomes, fail to condense in synchrony with the maternal chromosomes and ultimately cause mitotic catastrophe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy and quantitative analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "fd3e1314-c6d1-4252-85ed-7907a3e90bf2",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C58",
+      "claim": "The PEL embryonic phenotype could not be rescued by egg-supplied HP1E",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that the PEL embryonic phenotype could not be rescued by egg-supplied HP1E but could be rescued if the paternal DNA was excluded from participating in embryonic mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by maternal rescue experiment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "83730951-646a-44ed-aa86-9619090ce4ec",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C59",
+      "claim": "The PEL embryonic phenotype could be rescued if the paternal DNA was excluded from participating in embryonic mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that the PEL embryonic phenotype could not be rescued by egg-supplied HP1E but could be rescued if the paternal DNA was excluded from participating in embryonic mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sesame rescue experiment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "735245b7-7867-451c-8e96-2ff69f459d16",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C60",
+      "claim": "HP1E acts pre-fertilization to ensure proper chromosome condensation and segregation of paternal chromosomes post-fertilization",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support a model (Figure 9A) under which HP1E acts pre-fertilization to ensure proper chromosome condensation and segregation of paternal chromosomes post-fertilization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from multiple experimental results showing transgenerational effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9d9e5200-f4d9-4ba0-8bc5-899d375d60f8",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C61",
+      "claim": "The 'hit and run' priming function clearly distinguishes HP1E from all other previously characterized paternal effect lethal genes",
+      "claim_type": "EXPLICIT",
+      "source": "The 'hit and run' priming function clearly distinguishes HP1E from all other previously characterized paternal effect lethal genes, which encode proteins that are transmitted to the embryo via sperm (Browning and Strome, 1996; Fitch and Wakimoto, 1998; Fitch et al., 1998; Loppin et al., 2005b; Smith and Wakimoto, 2007; Gao et al., 2011; Seidel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares HP1E to other PEL genes described in cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "397ae14c-152e-4389-9af7-3004e26821d0",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C62",
+      "claim": "The HP1E-depletion phenotype is reminiscent of Drosophila fathers infected with Wolbachia bacteria crossed to uninfected females",
+      "claim_type": "EXPLICIT",
+      "source": "The HP1E-depletion phenotype is instead reminiscent of Drosophila fathers infected with Wolbachia bacteria crossed to uninfected females (Serbus et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares HP1E phenotype to Wolbachia-induced phenotype from cited literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "13353da2-7784-4e9e-b6a5-88056d1d0605",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C63",
+      "claim": "Wolbachia-associated PEL results in mis-segregation of the entire paternal genome",
+      "claim_type": "EXPLICIT",
+      "source": "However, Wolbachia-associated PEL results in mis-segregation of the entire paternal genome (Landmann et al., 2009) rather than just the heterochromatin-rich chromosomes observed in HP1E\u2014PEL (Figure 5A, Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim contrasts HP1E phenotype with Wolbachia phenotype from cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "857ba171-964c-4f8f-8b97-cd30c5f82dfe",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C64",
+      "claim": "The HP1E PEL defect is completely independent of Wolbachia",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the HP1E PEL defect is completely independent of Wolbachia (we find that PEL phenotype persists for Wolbachia-free males and females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data using Wolbachia-free flies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "0a41f5b0-ad38-471d-adc1-d0a6380d4c5b",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C65",
+      "claim": "HP1E supports a novel chromatin requirement to prime paternally inherited genomes for synchronous and successful embryonic mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that HP1E supports a novel chromatin requirement to prime paternally inherited genomes for synchronous and successful embryonic mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the unique characteristics of HP1E function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "01dabbb4-b083-4582-9cf7-beb6c82df7dc",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C66",
+      "claim": "HP1E depletion results in the global up-regulation of heterochromatin-embedded genes",
+      "claim_type": "EXPLICIT",
+      "source": "However, our finding that HP1E depletion results in the global up-regulation of heterochromatin-embedded genes, together with our observation that the heterochromatin-rich paternal sex chromosomes are most vulnerable to HP1E depletion, lead us to favor the alternate model that HP1E functions as a canonical HP1 protein during spermiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "574d08d7-6888-4fac-85f9-881be13cc1f1",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C67",
+      "claim": "HP1E functions as a canonical HP1 protein during spermiogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "However, our finding that HP1E depletion results in the global up-regulation of heterochromatin-embedded genes, together with our observation that the heterochromatin-rich paternal sex chromosomes are most vulnerable to HP1E depletion, lead us to favor the alternate model that HP1E functions as a canonical HP1 protein during spermiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from RNA-seq and FISH data patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "a9c2748f-789f-4f49-bb2b-8e2e899cade2",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C68",
+      "claim": "Large stretches of uninterrupted heterochromatic DNA pose a unique challenge to replication",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, large stretches of uninterrupted heterochromatic DNA, as found on the Drosophila sex chromosomes, pose a unique challenge to replication (Leach et al., 2000) (Pryor et al., 1980; Collins et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "96f4648d-aea3-4ff8-8630-00513c44df98",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C69",
+      "claim": "HP1A is essential for embryo viability",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that HP1A is essential for embryo viability (Eissenberg et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "1e282889-e9ea-4882-a59f-96cc66f80201",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C70",
+      "claim": "Paternally-acting HP1E is essential for embryogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that paternally-acting HP1E is also essential for embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the PEL phenotype data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "bb31b426-ed2f-4a4b-823f-c2ca58c658a5",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C71",
+      "claim": "Both HP1A and HP1E evolve under purifying selection",
+      "claim_type": "EXPLICIT",
+      "source": "Both HP1A and HP1E evolve under purifying selection (Levine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "8f46a123-b363-4815-bdd3-5994342665bf",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C72",
+      "claim": "HP1E has been recurrently lost over evolutionary time",
+      "claim_type": "EXPLICIT",
+      "source": "Despite ancient origins, HP1E has been recurrently lost over evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phylogenomic analysis",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "bfcb0ec0-8eec-4f9c-856f-ddecdde50dce",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C73",
+      "claim": "HP1E has been apparently replaced by younger, testis restricted HP1 paralogs on at least two occasions during Drosophila evolution",
+      "claim_type": "EXPLICIT",
+      "source": "HP1E has been apparently replaced by younger, testis restricted HP1 paralogs on at least two occasions during Drosophila evolution (Levine et al., 2012) (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim cites a previous publication and is supported by phylogenetic data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9cf4b9c5-df3c-474b-a36a-dbcac195e8f1",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C74",
+      "claim": "Drosophila pseudoobscura and related species encode neither HP1E nor a putative replacement testis-specific HP1 gene",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, Drosophila pseudoobscura and related species encode neither HP1E nor a putative replacement testis-specific HP1 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phylogenomic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "87011772-6f3f-4521-9a5c-16fa71cba33f",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C75",
+      "claim": "HP1E loss in D. pseudoobscura-related species occurred during the same 7-million evolutionary period as a major sex chromosome rearrangement event",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that HP1E loss along in D. pseudoobscura-related species occurred during the same 7-million evolutionary period as a major sex chromosome rearrangement event (Levine et al., 2012), in which the ancestral Y was lost, a neo-Y chromosome was born, and the ancestral X fused to an autosome (Carvalho and Clark, 2005; Larracuente et al., 2010) (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "46fdfeae-3b3e-4104-8ac1-c1cecd99514d",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C76",
+      "claim": "Karyotypic changes can bring distal heterochromatin into closer proximity to euchromatin",
+      "claim_type": "EXPLICIT",
+      "source": "Such karyotypic changes can bring distal heterochromatin into closer proximity to euchromatin and be sufficient to alter heterochromatin packaging (Spofford, 1976), replication timing (Abramov et al., 2005) or even delete blocks of satellite repeats (Garagna et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "3c2c7739-ca35-4815-b863-ad695c0380a4",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C77",
+      "claim": "Heterochromatin evolution via chromosomal rearrangements may have obviated maintenance of HP1E's essential heterochromatin function, leading to its degeneration in D. pseudoobscura",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, heterochromatin evolution via chromosomal rearrangements may have obviated maintenance of HP1E's essential heterochromatin function, leading to its degeneration in D. pseudoobscura.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on evolutionary patterns",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9f351cfe-7313-4d04-9e6b-bfb49a554722",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C78",
+      "claim": "The only other characterized PEL gene that supports paternal chromatin function in Drosophila embryos, k81, is lineage-restricted despite being essential for paternal telomere function",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the only other characterized PEL gene that supports paternal chromatin function in Drosophila embryos, k81, is similarly lineage-restricted despite being essential for paternal telomere function (Dubruille et al., 2010; Gao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "f7712cf8-bb3f-4095-8450-d2449823b172",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C79",
+      "claim": "Maternally deposited proteins required for paternal chromatin reorganization following fertilization are generally conserved from fly to human",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, maternally deposited proteins required for paternal chromatin reorganization following fertilization are generally conserved from fly to human (e.g., Loppin et al., 2005a; Konev et al., 2007; Delabaere et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "2dd2cd71-a55b-41d8-94eb-76b03c966033",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C80",
+      "claim": "The essential functions of paternal control of DNA deposition and chromatin remodeling for embryonic mitosis are likely to be conserved in most animals",
+      "claim_type": "EXPLICIT",
+      "source": "It specifically suggests that even though the essential functions of paternal control of DNA deposition and chromatin remodeling for embryonic mitosis are likely to be conserved in most animals, whereas the identity of those genes is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on evolutionary patterns",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "ffb1b607-b1c2-43f2-8a0e-fff47cddf711",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C81",
+      "claim": "Young genes can rapidly acquire essential chromatin functions due to dynamic chromatin evolution",
+      "claim_type": "EXPLICIT",
+      "source": "Not only can young genes rapidly acquire essential chromatin functions due to dynamic chromatin evolution (Chen et al., 2010; Ross et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "b5c5b7d0-9b18-4dff-ab11-ad18a7e352e2",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C82",
+      "claim": "Chromatin changes driven by karyotype evolution may drive the extinction of ancient genes encoding once-essential functions",
+      "claim_type": "EXPLICIT",
+      "source": "but chromatin changes, such as those driven by karyotype evolution, may also drive the extinction of ancient genes encoding once-essential functions (Drinnenberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9b8b0f49-59db-4a6d-a67a-8806d28f5567",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C83",
+      "claim": "Faithful chromosome segregation requires careful orchestration of chromosomal condensation, alignment, and movement of mitotic chromosomes during every eukaryotic cell division",
+      "claim_type": "EXPLICIT",
+      "source": "Faithful chromosome segregation requires careful orchestration of chromosomal condensation, alignment, and movement of mitotic chromosomes during every eukaryotic cell division (Rhind and Russell, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support for established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "47386298-251c-4ed8-9afa-25976ae70dbf",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C84",
+      "claim": "The very first embryonic mitosis in animals requires additional synchronization beyond typical mitotic requirements",
+      "claim_type": "EXPLICIT",
+      "source": "The very first embryonic mitosis in animals requires additional synchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "158aee30-0354-4a65-9549-e573f6c721da",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C85",
+      "claim": "Paternally and maternally inherited genomes undergo independent chromatin reorganization and replication prior to mitotic entry",
+      "claim_type": "EXPLICIT",
+      "source": "Paternally and maternally inherited genomes undergo independent chromatin reorganization and replication prior to mitotic entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "5d05954d-96fa-4cb5-b975-55dad8dfa676",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C86",
+      "claim": "Maternal chromosomes must complete meiosis and then transition from a meiotic conformation to an interphase-like state in preparation for replication",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, maternal chromosomes must complete meiosis (Sen et al., 2013) and then transition from a meiotic conformation to an interphase-like state in preparation for replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "eaf05456-6dfd-468a-b3f0-3a68bf2fa3ec",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C87",
+      "claim": "The sperm-deposited, paternal chromosomes must undergo a radical transition from a highly compact, protamine-rich state to a decondensed, histone-rich state before DNA replication",
+      "claim_type": "EXPLICIT",
+      "source": "The sperm-deposited, paternal chromosomes must undergo an even more radical transition from a highly compact, protamine-rich state to a decondensed, histone-rich state before DNA replication (Braun, 2001; Miller et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "1360db36-f16c-456b-9169-08b37b5804cf",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C88",
+      "claim": "Maternal and paternal genomes synchronously enter the first mitosis despite divergent requirements to achieve replication- and mitotic-competency",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these divergent requirements to achieve replication- and mitotic-competency, maternal and paternal genomes synchronously enter the first mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "b0284645-8057-44c3-bc87-fcdbda66c675",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C89",
+      "claim": "Failure to carry out paternal chromosome remodeling in a timely fashion results in paternal genome loss and embryonic inviability",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to carry out paternal chromosome remodeling in a timely fashion results in paternal genome loss and embryonic inviability (Loppin et al., 2001; McLay and Clarke, 2003; Landmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "151cef15-961e-491b-b9f5-cbc7a964de5f",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C90",
+      "claim": "The transition from a protamine-rich sperm nucleus to a competent paternal pronucleus requires the action of numerous maternally deposited proteins in the egg",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from a protamine-rich sperm nucleus to a competent paternal pronucleus requires the action of numerous maternally deposited proteins in the egg (McLay and Clarke, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "8cdcf9d1-b3c6-4218-83d1-af3716d675df",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C91",
+      "claim": "Paternal genome decondensation post-fertilization requires the integration of histone H3.3",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, paternal genome decondensation post-fertilization requires the integration of histone H3.3, a histone variant deposited by the maternal proteins HIRA (Loppin et al., 2005a), CHD1 (Konev et al., 2007), and Yemanuclein (Orsi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "329b550f-4441-4673-b52d-71b21e97ee12",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C92",
+      "claim": "Maternally-deposited MH/Spartan protein localizes exclusively to the replicating paternal genome and is required for faithful paternal chromosome segregation during the first embryonic division",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, maternally-deposited MH/Spartan protein localizes exclusively to the replicating paternal genome and is required for faithful paternal chromosome segregation during the first embryonic division (Delabaere et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "1f38a7a8-8841-45f6-889f-db8e548fe335",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C93",
+      "claim": "Only a handful of PEL genes have been characterized in animals",
+      "claim_type": "EXPLICIT",
+      "source": "Only a handful of PEL genes have been characterized in animals (Browning and Strome, 1996; Fitch and Wakimoto, 1998; Fitch et al., 1998; Loppin et al., 2005b; Smith and Wakimoto, 2007; Gao et al., 2011; Seidel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "ba9d5529-67da-4473-9336-d3abb03b53ae",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C94",
+      "claim": "The sperm-inherited K81 protein localizes exclusively to paternal chromosome termini and ensures telomere integrity",
+      "claim_type": "EXPLICIT",
+      "source": "Only one of these PEL proteins directly localizes to paternal chromosomes; the sperm-inherited K81 protein localizes exclusively to paternal chromosome termini and ensures telomere integrity (Dubruille et al., 2010; Gao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "28b78f6a-9667-464d-8ddc-d8f3433d99b5",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C95",
+      "claim": "Wolbachia infects more than 50% of insect species",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that maternal control is sufficient to accomplish paternal genome remodeling is challenged by recent findings from the intracellular Wolbachia bacterium that infects more than 50% of insect species (Hilgenboecker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "3babb598-41fe-42c6-9a3b-46269e758b6c",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C96",
+      "claim": "Wolbachia-infected Drosophila males mated to uninfected females father embryos that arrest soon after the first zygotic mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "Wolbachia-infected Drosophila males mated to uninfected females father embryos that arrest soon after the first zygotic mitosis (Lassy and Karr, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "871cf6a6-6391-49b1-be21-99e57f320bc6",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C97",
+      "claim": "In Wolbachia-induced embryonic arrest, paternal genomes enter the first mitosis with unresolved sister chromatids that fail to separate on the mitotic spindle",
+      "claim_type": "EXPLICIT",
+      "source": "Embryonic arrest occurs because paternal genomes enter the first mitosis with unresolved sister chromatids that fail to separate on the mitotic spindle (Callaini et al., 1997; Landmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "ed034d45-7d87-4023-8b9b-8f89977fa166",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C98",
+      "claim": "HP1 proteins are defined by a combination of a chromodomain that mediates protein-histone interactions and a chromoshadow domain that mediates protein\u2013protein interactions",
+      "claim_type": "EXPLICIT",
+      "source": "HP1 proteins are defined as such by a combination of two domains\u2014a chromodomain that mediates protein-histone interactions and a chromoshadow domain that mediates protein\u2013protein interactions (Aasland and Stewart, 1995; Eissenberg and Elgin, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous publications as support for established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "91a1a9c1-f866-4566-8398-f13489388337",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C99",
+      "claim": "HP1 proteins orchestrate genome-wide chromosomal organization in plants, animals, fungi, and some protists",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the potential for paternal control over sperm genome remodeling post-fertilization, we took a candidate gene approach, focusing on the Heterochromatin Protein 1 (HP1) proteins that orchestrate genome-wide chromosomal organization in plants, animals, fungi, and some protists (Lomberk et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support for established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9684c896-e42c-4e56-96ca-b067d14b2be7",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C100",
+      "claim": "A detailed phylogenomic analysis of the HP1 gene family in Drosophila revealed numerous testis-restricted HP1 proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we carried out a detailed phylogenomic analysis of the HP1 gene family in Drosophila that revealed numerous testis-restricted HP1 proteins (Levine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a previous publication as support",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "9ad8f8ef-cd70-4c54-8535-eede659b7c31",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C101",
+      "claim": "HP1E is not inherited on mature sperm chromatin",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, HP1E is not inherited on mature sperm chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by localization data showing absence of HP1E in mature sperm",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "8d21bda8-e760-4103-b40a-953387ba06d8",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C102",
+      "claim": "HP1E primes paternal chromosomes during spermatogenesis to ensure faithful segregation post-fertilization",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, HP1E primes paternal chromosomes during spermatogenesis to ensure faithful segregation post-fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "a78b20da-8a02-4f7c-8ada-9e7470f7f68b",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C103",
+      "claim": "Maternal control is necessary but not sufficient for transforming sperm DNA into a mitotically competent pronucleus",
+      "claim_type": "EXPLICIT",
+      "source": "This transgenerational effect suggests that maternal control is necessary but not sufficient for transforming sperm DNA into a mitotically competent pronucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the requirement for paternal HP1E action",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "2438cb56-72de-4580-a569-8980941f47ec",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C104",
+      "claim": "Paternal action during spermiogenesis exerts post-fertilization control to ensure faithful chromosome segregation in the embryo",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, paternal action during spermiogenesis exerts post-fertilization control to ensure faithful chromosome segregation in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the transgenerational effects of HP1E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "600281a9-8427-4239-aee7-b8d55bd8ed00",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C105",
+      "claim": "Drosophila melanogaster males lacking HP1E sire inviable embryos that undergo catastrophic mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that Drosophila melanogaster males lacking Heterochromatin Protein 1E (HP1E) sire inviable embryos that undergo catastrophic mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing embryonic lethality and mitotic defects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "f9e362bf-cb12-4901-92c4-3c26a6611376",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C106",
+      "claim": "In embryos from HP1E-lacking males, the paternal genome fails to condense and resolve into sister chromatids in synchrony with the maternal genome",
+      "claim_type": "EXPLICIT",
+      "source": "In these embryos, the paternal genome fails to condense and resolve into sister chromatids in synchrony with the maternal genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by microscopy and quantitative analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "c843f9f4-8508-4dc0-8013-7033440b4740",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "claim_id": "C107",
+      "claim": "The delay in paternal chromosome condensation leads to a failure of paternal chromosomes, particularly the heterochromatin-rich sex chromosomes, to separate on the first mitotic spindle",
+      "claim_type": "EXPLICIT",
+      "source": "This delay leads to a failure of paternal chromosomes, particularly the heterochromatin-rich sex chromosomes, to separate on the first mitotic spindle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FISH analysis showing sex chromosome enrichment in bridges",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "27004474-7bf9-4d96-839b-2811651a76a4",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HP1E is a testis-restricted HP1 paralog that localizes to post-meiotic spermatids during chromatin reorganization and disappears before sperm maturation. The protein is present during the transition from histone-rich to protamine-rich chromatin but is not inherited on mature sperm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C55 are well-supported by multiple independent lines of evidence including antibody staining, Flag-tagged and YFP-tagged fusion proteins, and microscopy across different developmental stages. The temporal and spatial localization pattern is consistently demonstrated across three different reagents, providing strong convergent evidence for HP1E's developmental restriction and disappearance before sperm maturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "2fcbfe13-7616-4da4-8903-611085cf3f1c",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HP1E depletion during spermiogenesis results in misregulation of over 700 genes, with 100% of significantly misregulated heterochromatin-embedded genes being upregulated compared to less than 60% of euchromatic genes. This suggests HP1E acts directly on heterochromatin integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the RNA-seq data (C7-C10) showing differential effects on heterochromatin vs euchromatin genes is statistically significant and compelling, the authors acknowledge they lack direct cytological or ChIP-seq evidence for HP1E localization to heterochromatin (C11). The inference of direct action is reasonable but not definitively proven. Alternative explanations involving indirect effects through one of the 700 misregulated genes cannot be fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "87463d4e-87d9-41ec-ad6d-9c4abf78e54f",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HP1E is essential for male fertility in D. melanogaster, as demonstrated by complete sterility of HP1E-depleted and knockout males that is fully rescued by an RNAi-resistant recoded transgene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C70 are strongly supported by multiple independent genetic approaches including RNAi knockdown with two different drivers, TALEN-generated knockout, and rescue experiments with recoded transgene. The convergence of evidence from both loss-of-function and rescue experiments provides robust support for HP1E's essential role in male fertility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "56b3ae64-0903-4328-a0aa-73c4f55c0237",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HP1E-depleted males produce motile sperm that fertilize eggs and initiate embryogenesis, but embryos arrest after a few rounds of mitosis with chromatin bridges appearing in the first division, resulting in paternal effect lethality with 0.5% hatch rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 and C105 are well-supported by direct microscopic observation of sperm motility, transfer, fertilization, and embryonic arrest phenotypes. The characterization of chromatin bridges and mitotic catastrophe is documented with imaging data. The low hatch rate (0.5%) provides quantitative support for the highly penetrant lethality phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "07c32567-6eb6-40e1-bda2-cd2e277a7416",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In PEL embryos, maternal chromatin dynamics, spindle morphology, protamine-to-histone transition, and replication/kinetochore machinery recruitment appear normal, but paternal chromosomes fail to condense synchronously with maternal chromosomes at metaphase, leading to chromatin bridges enriched in paternal chromatin at anaphase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C33, C106, and C107 are supported by comprehensive immunofluorescence analysis using multiple markers (AcH4, PCNA, Cenp-C, tubulin) and quantitative circularity measurements. The circularity ratio analysis (C29-C30) provides quantitative evidence for asynchronous condensation. The observation that only a fraction of paternal genome mis-segregates (C32) is supported by AcH4 signal at both poles and bridge. The temporal progression from normal early events to metaphase defects is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "1bd2e5ed-f5fb-45bf-8551-a358c01eb460",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bypassing paternal chromatin participation by crossing HP1E-depleted males to sesame mutant females fully rescues nuclear divisions, demonstrating that defects in paternal chromatin dynamics are both necessary and sufficient to explain mitotic arrest in PEL embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, and C59 are strongly supported by the sesame rescue experiment showing that maternal haploid embryos from HP1E-depleted fathers cycle identically to wild-type controls (85% vs 82% beyond cycle 12, p>0.2). This genetic epistasis experiment elegantly demonstrates that the paternal chromatin defect is the primary cause of lethality, ruling out alternative explanations involving missing mitotic machinery or toxic factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "1e9f499b-5d31-471a-aac5-aaf288e947a0",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HP1E protein is not detected in mature sperm or early embryos and cannot rescue the PEL phenotype when maternally deposited, indicating that HP1E acts during spermiogenesis to prime the paternal genome for proper post-fertilization remodeling through a transgenerational 'hit and run' mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40, C58, C60, C101-C104 are supported by multiple lines of evidence: (1) failure to detect HP1E in mature sperm and embryos by immunofluorescence, (2) failure of maternally deposited HP1E to rescue the phenotype despite detectable protein levels by western blot, (3) successful rescue by sesame mothers that bypass paternal chromatin, and (4) HP1E localization only during spermiogenesis. Together, these establish the transgenerational priming mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "fa497c35-f254-4cbf-a107-57d31bd09191",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Heterochromatin-rich sex chromosomes are preferentially affected by HP1E depletion, with the paternal Y chromosome trapped in bridges in 94% of male embryos and paternal X in 60% of female embryos, compared to only 4-15% for large autosomes. FISH analysis with rDNA and satellite probes suggests specific heterochromatic loci near but not including rDNA clusters are involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C52 are well-supported by systematic FISH analysis using chromosome-specific probes with adequate sample sizes (n\u226520 per probe combination). The statistical significance of sex chromosome enrichment (p<0.0001, C45) is robust. The differential frequencies of rDNA vs satellite probes (C47-C50) provide additional resolution about which loci are affected. The fourth chromosome showing intermediate frequency (C46) is consistent with its intermediate heterochromatin content.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "6b2b781b-8468-408c-a45b-2dc759ce8970",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HP1E's 'hit and run' priming function distinguishes it from other paternal effect lethal genes that are transmitted to embryos via sperm. While the phenotype resembles Wolbachia-induced paternal effect lethality, HP1E-PEL affects only heterochromatin-rich chromosomes rather than the entire paternal genome and is independent of Wolbachia infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by comparison to published literature on other PEL genes and Wolbachia phenotypes. The distinction from transmitted PEL proteins is clear from the localization and rescue data. The independence from Wolbachia (C64) is directly tested with Wolbachia-free flies. The comparison to Wolbachia phenotype is appropriate but the key differences (chromosome specificity) are well-documented by the FISH data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "c537da76-8c28-41ae-8ba4-1b585b5f06ff",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HP1E likely functions as a canonical HP1 protein during spermiogenesis, potentially addressing the unique replication challenges posed by large stretches of heterochromatic DNA on sex chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is inferred from the RNA-seq and FISH data patterns but lacks direct mechanistic evidence. While the inference is reasonable given the global upregulation of heterochromatin genes and sex chromosome vulnerability, the authors acknowledge they cannot distinguish between replication defects and condensation defects. Claim C68 cites established knowledge about heterochromatin replication challenges, but the connection to HP1E's specific mechanism remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite HP1E's ancient origin (>60 million years) and evolution under purifying selection, it has been recurrently lost during Drosophila evolution, including in D. pseudoobscura where loss coincided with major sex chromosome rearrangements. This suggests that karyotypic changes may have obviated HP1E's essential function in some lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71-C77 are supported by phylogenomic analysis and cited literature. The temporal correlation between HP1E loss and sex chromosome rearrangements in D. pseudoobscura (C75) is documented. However, C77 is explicitly speculative ('may have obviated'), appropriately acknowledging that the causal relationship is inferred rather than proven. The evolutionary pattern is well-documented even if the mechanistic explanation remains hypothetical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "af72b37a-2b43-4bf4-b99d-673d6a84d947",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The lineage-restricted nature of paternally-acting chromatin genes like HP1E and k81 contrasts with the conservation of maternally-deposited chromatin remodeling proteins, suggesting that while the essential functions of paternal control are conserved, the specific genes encoding these functions are not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 synthesize patterns from cited literature and the current findings. The contrast between paternal and maternal gene conservation (C78-C79) is supported by multiple citations. Claims C80-C82 are explicitly speculative ('likely to be conserved', 'may drive') but represent reasonable interpretations of the evolutionary patterns. The speculation is appropriately qualified and builds logically from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "bd2acac5-8179-41ca-a028-7fa5a6280578",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context on chromosome segregation, embryonic mitosis, maternal and paternal genome remodeling, HP1 protein family, and existing knowledge of paternal effect lethal genes and Wolbachia-induced phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C100 represent established knowledge from cited literature and provide appropriate context for the study. These are primarily background claims that cite previous publications and are not novel findings of this manuscript. They are appropriately used to frame the research questions and interpret results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    },
+    {
+      "id": "381616fd-1512-4f1c-a084-e3cd1f6075d3",
+      "content_id": "1d122754-fba8-432d-9cb2-c4bbef15569c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "HP1E encodes a novel function ensuring paternal genome stability in embryos, with depletion causing paternal chromosomes (especially sex chromosomes) to fail condensing synchronously with maternal chromosomes, ultimately causing mitotic catastrophe. No cell cycle checkpoint proteins act in the first embryonic mitotic cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, and C57 synthesize the major findings. C53 cites established knowledge about lack of checkpoints in first mitosis. C54 and C57 are well-supported by the comprehensive experimental evidence from localization, fertility, embryonic phenotyping, and FISH analyses. The characterization of HP1E's function as 'novel' is justified by its unique transgenerational priming mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:22:37.661912Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b498751f-da9d-45ef-9372-cb353e897dc3",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "558c72cb-7149-4fdb-9029-6c8e482ce360",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "cd237b1d-8de7-4427-acc9-d672eb95c617",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "08684f62-af40-495d-833c-db3f9bf8c2a1",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "99ca9037-9034-4889-a7bc-acbf55bc0a81",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "9e940e72-fd0c-4ec3-bb21-3f4289e7fcd5",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "0aeeae35-c956-45c8-936a-a625afa2806e",
+      "result_id": "27004474-7bf9-4d96-839b-2811651a76a4"
+    },
+    {
+      "claim_id": "85eaff84-674a-40c0-8e55-965ef9b24c00",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "77c1c219-45c5-483e-82f6-ff1162e43bb7",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "6da5b8d1-fc7b-4997-ade6-15396ba80b39",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "ca6af7f1-cf71-475d-b0ba-576a1bcf17dd",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "8951acc8-d7cc-4d6b-a0ad-5cdef1681763",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "f8deb98c-7066-4675-9caf-b552305c960a",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "01dabbb4-b083-4582-9cf7-beb6c82df7dc",
+      "result_id": "2fcbfe13-7616-4da4-8903-611085cf3f1c"
+    },
+    {
+      "claim_id": "bb09b22a-5559-4a06-bc25-88564ff9e3c0",
+      "result_id": "87463d4e-87d9-41ec-ad6d-9c4abf78e54f"
+    },
+    {
+      "claim_id": "b9824b74-0353-4c68-b7ce-51ee70906ab8",
+      "result_id": "87463d4e-87d9-41ec-ad6d-9c4abf78e54f"
+    },
+    {
+      "claim_id": "fbcf0cdc-2d1a-45ee-9dd3-29658ce80fed",
+      "result_id": "87463d4e-87d9-41ec-ad6d-9c4abf78e54f"
+    },
+    {
+      "claim_id": "a1fe38bc-443f-42ff-b8b5-f116d8b06d19",
+      "result_id": "87463d4e-87d9-41ec-ad6d-9c4abf78e54f"
+    },
+    {
+      "claim_id": "1e282889-e9ea-4882-a59f-96cc66f80201",
+      "result_id": "87463d4e-87d9-41ec-ad6d-9c4abf78e54f"
+    },
+    {
+      "claim_id": "d505fd0c-8cf1-45a4-8b1e-8fcca7cd9c31",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "69b278f0-af33-41ea-bbd6-596421775208",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "902a2e7c-4449-473c-820e-e1304028a34c",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "75d4e0ff-d575-4e03-993e-a99ad3813fb9",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "f016579a-8148-4b57-a1bd-851b8e32e405",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "3178c3de-665c-4232-89a7-00c984af8908",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "600281a9-8427-4239-aee7-b8d55bd8ed00",
+      "result_id": "56b3ae64-0903-4328-a0aa-73c4f55c0237"
+    },
+    {
+      "claim_id": "baf77756-ea3b-4505-a154-72c0b793b85a",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "9c581fe2-be6b-444f-ade7-5481aeab77cd",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "9a0b8818-7f07-4fa5-a0d4-314461eabe47",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "b3ab912c-e373-453c-94f3-9558437907d1",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "2d67e0e1-f31b-40dc-8711-0b1d0e7ed876",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "ec1b5dce-f91a-4f1b-b5be-8e796fab3b56",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "cc8814f1-7a90-477a-a7fd-b97c9aa88c89",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "4f973fea-3128-45bb-a22f-7db5c4cea306",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "7e4e6244-64d7-443d-807b-4e4a3e86633d",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "f2be02d2-6c9e-4610-87fe-144ba8fae459",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "0a6c44c9-a449-45b1-aa72-874368b3945c",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "5f08516d-9f4b-4086-8bf2-94221af63ca4",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "f9e362bf-cb12-4901-92c4-3c26a6611376",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "c843f9f4-8508-4dc0-8013-7033440b4740",
+      "result_id": "07c32567-6eb6-40e1-bda2-cd2e277a7416"
+    },
+    {
+      "claim_id": "e4a5f27e-6750-470a-ace0-d0d561f751e7",
+      "result_id": "1bd2e5ed-f5fb-45bf-8551-a358c01eb460"
+    },
+    {
+      "claim_id": "08b3d4bd-6ebf-4bb7-b6b1-70f8bad0a1fb",
+      "result_id": "1bd2e5ed-f5fb-45bf-8551-a358c01eb460"
+    },
+    {
+      "claim_id": "83730951-646a-44ed-aa86-9619090ce4ec",
+      "result_id": "1bd2e5ed-f5fb-45bf-8551-a358c01eb460"
+    },
+    {
+      "claim_id": "134bea65-e4a9-48ac-b3f0-313c4df6e9ae",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "c21ab1a8-34ea-47fd-8b65-90846dffda67",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "0f46214d-ae27-40f7-a665-ef1f372b73f7",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "2b07bb1d-4cf6-4e4a-85e1-3cc3cc76b7a4",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "d72c6085-44c0-4b12-b762-3c62cf5cca5d",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "fd3e1314-c6d1-4252-85ed-7907a3e90bf2",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "735245b7-7867-451c-8e96-2ff69f459d16",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "9ad8f8ef-cd70-4c54-8535-eede659b7c31",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "8d21bda8-e760-4103-b40a-953387ba06d8",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "a78b20da-8a02-4f7c-8ada-9e7470f7f68b",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "2438cb56-72de-4580-a569-8980941f47ec",
+      "result_id": "1e9f499b-5d31-471a-aac5-aaf288e947a0"
+    },
+    {
+      "claim_id": "9f454f04-7262-41a1-a720-09692133d4cb",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "91a99432-21dc-4db0-9c07-9025cf2aa0ab",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "1208b3cb-1db3-4453-8a1a-3ca67965c0a0",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "cb4abc0f-66ea-4fe6-adbe-ab3149a09726",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "01d9828f-0347-4c52-8112-dbd41edd143a",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "bdf79f1f-ae87-4483-98c1-51bd25442627",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "0c4c4e95-58f8-43e6-9ee2-877306612dfa",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "8c8cc420-b80d-4a68-aebf-7165ecee5c18",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "9805ef03-ba4b-4be8-9255-24f85bde5817",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "7a8a15b5-e3de-4008-955d-f1000902a614",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "de618936-0cc9-4782-a12f-a280e2a612fd",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "459d3f55-cf04-44ce-8b2a-c448d9085bac",
+      "result_id": "fa497c35-f254-4cbf-a107-57d31bd09191"
+    },
+    {
+      "claim_id": "9d9e5200-f4d9-4ba0-8bc5-899d375d60f8",
+      "result_id": "6b2b781b-8468-408c-a45b-2dc759ce8970"
+    },
+    {
+      "claim_id": "397ae14c-152e-4389-9af7-3004e26821d0",
+      "result_id": "6b2b781b-8468-408c-a45b-2dc759ce8970"
+    },
+    {
+      "claim_id": "13353da2-7784-4e9e-b6a5-88056d1d0605",
+      "result_id": "6b2b781b-8468-408c-a45b-2dc759ce8970"
+    },
+    {
+      "claim_id": "857ba171-964c-4f8f-8b97-cd30c5f82dfe",
+      "result_id": "6b2b781b-8468-408c-a45b-2dc759ce8970"
+    },
+    {
+      "claim_id": "0a41f5b0-ad38-471d-adc1-d0a6380d4c5b",
+      "result_id": "6b2b781b-8468-408c-a45b-2dc759ce8970"
+    },
+    {
+      "claim_id": "574d08d7-6888-4fac-85f9-881be13cc1f1",
+      "result_id": "c537da76-8c28-41ae-8ba4-1b585b5f06ff"
+    },
+    {
+      "claim_id": "a9c2748f-789f-4f49-bb2b-8e2e899cade2",
+      "result_id": "c537da76-8c28-41ae-8ba4-1b585b5f06ff"
+    },
+    {
+      "claim_id": "96f4648d-aea3-4ff8-8630-00513c44df98",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "bb31b426-ed2f-4a4b-823f-c2ca58c658a5",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "8f46a123-b363-4815-bdd3-5994342665bf",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "bfcb0ec0-8eec-4f9c-856f-ddecdde50dce",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "9cf4b9c5-df3c-474b-a36a-dbcac195e8f1",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "87011772-6f3f-4521-9a5c-16fa71cba33f",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "46fdfeae-3b3e-4104-8ac1-c1cecd99514d",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "3c2c7739-ca35-4815-b863-ad695c0380a4",
+      "result_id": "0e8207df-5bd1-40e8-96e1-1b74bf6039d5"
+    },
+    {
+      "claim_id": "9f351cfe-7313-4d04-9e6b-bfb49a554722",
+      "result_id": "af72b37a-2b43-4bf4-b99d-673d6a84d947"
+    },
+    {
+      "claim_id": "f7712cf8-bb3f-4095-8450-d2449823b172",
+      "result_id": "af72b37a-2b43-4bf4-b99d-673d6a84d947"
+    },
+    {
+      "claim_id": "2dd2cd71-a55b-41d8-94eb-76b03c966033",
+      "result_id": "af72b37a-2b43-4bf4-b99d-673d6a84d947"
+    },
+    {
+      "claim_id": "ffb1b607-b1c2-43f2-8a0e-fff47cddf711",
+      "result_id": "af72b37a-2b43-4bf4-b99d-673d6a84d947"
+    },
+    {
+      "claim_id": "b5c5b7d0-9b18-4dff-ab11-ad18a7e352e2",
+      "result_id": "af72b37a-2b43-4bf4-b99d-673d6a84d947"
+    },
+    {
+      "claim_id": "9b8b0f49-59db-4a6d-a67a-8806d28f5567",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "47386298-251c-4ed8-9afa-25976ae70dbf",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "158aee30-0354-4a65-9549-e573f6c721da",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "5d05954d-96fa-4cb5-b975-55dad8dfa676",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "eaf05456-6dfd-468a-b3f0-3a68bf2fa3ec",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "1360db36-f16c-456b-9169-08b37b5804cf",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "b0284645-8057-44c3-bc87-fcdbda66c675",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "151cef15-961e-491b-b9f5-cbc7a964de5f",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "8cdcf9d1-b3c6-4218-83d1-af3716d675df",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "329b550f-4441-4673-b52d-71b21e97ee12",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "1f38a7a8-8841-45f6-889f-db8e548fe335",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "ba9d5529-67da-4473-9336-d3abb03b53ae",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "28b78f6a-9667-464d-8ddc-d8f3433d99b5",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "3babb598-41fe-42c6-9a3b-46269e758b6c",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "871cf6a6-6391-49b1-be21-99e57f320bc6",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "ed034d45-7d87-4023-8b9b-8f89977fa166",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "91a1a9c1-f866-4566-8398-f13489388337",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "9684c896-e42c-4e56-96ca-b067d14b2be7",
+      "result_id": "bd2acac5-8179-41ca-a028-7fa5a6280578"
+    },
+    {
+      "claim_id": "036071f7-9357-4885-8644-421a9b221621",
+      "result_id": "381616fd-1512-4f1c-a084-e3cd1f6075d3"
+    },
+    {
+      "claim_id": "6798ab80-5e58-469f-a72d-d37ef9cf8ca0",
+      "result_id": "381616fd-1512-4f1c-a084-e3cd1f6075d3"
+    },
+    {
+      "claim_id": "5e013fc8-34f0-4fad-95ac-57e7d60c632c",
+      "result_id": "381616fd-1512-4f1c-a084-e3cd1f6075d3"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors developed and validated a novel odor delivery system that reliably produces various odor concentration waveforms with millisecond temporal resolution, using acetone as the primary odorant due to its favorable ionization properties for photoionization detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C96-C98 describe the odor delivery system with appropriate technical detail. The system's reliability is demonstrated by matched odor concentrations between OSN and PN assays (C21, Figure 2A-C), and the methodological choices are well-justified. This represents solid technical development that enables the subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "OSN and PN responses to dynamic odor stimuli differ significantly from their feedforward inputs, with PNs showing higher peak spike rates, more phasic patterns, and rapid response initiation within tens of milliseconds of odor onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are directly supported by experimental data in Figure 1C and throughout Figure 2. The observations of differential dynamics, rapid response times, and enhanced phasic patterns in PNs are clearly demonstrated and quantified across multiple stimulus types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "OSNs encode both odor concentration and its rate of change, producing step-like responses to ramp inputs and ramp-like responses to parabolic inputs, with strong correlations to concentration and rate of change but weak correlation to acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are well-supported by experimental data in Figure 2B-F and correlation analyses in Figure 2J. The rate-of-change encoding is demonstrated across multiple odorant-OSN pairs (C30, Figure 2\u2014figure supplement 1), and the correlation analysis provides quantitative support with appropriate statistical testing (p < 0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "PNs transform OSN inputs through rapid adaptation, exhibiting larger peak amplitudes, more stereotyped temporal patterns, and advanced peak times compared to OSNs, with strong correlation between PN spike rate and the rate of change of OSN spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are supported by experimental data in Figure 2G-K and consistent with prior literature on synaptic depression (C41). The correlation analysis (C42, Figure 2K) provides quantitative support for the rate-of-change encoding hypothesis. The biophysical interpretation (C40) is reasonable given the cited evidence for short-term depression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C57",
+      "C58",
+      "C69"
+    ],
+    "result": "A two-dimensional linear-nonlinear model with OSN spike rate and its rate of change as inputs accurately predicts PN responses, with the 2D nonlinearity showing strong dependency on the rate of change of OSN spike rate and concentration-dependent gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50, C57-C58, and C69 describe the model development and validation. The model structure is well-justified (C44-C46), the nonlinearity estimation is appropriate (C47-C49, Figure 3B-C), and the necessity of a 2D model is demonstrated by concentration-dependent gain (C49, Figure 3\u2014figure supplement 1). The model's predictive accuracy supports the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The 2D model closely matches experimental PN outputs for step, ramp, and parabola inputs (RMSE = 25 spike/s), though it overestimates spike rates during baseline periods due to high sensitivity at low input amplitudes, a limitation potentially mitigated in vivo by OSN population pooling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 honestly assess both the model's strengths and limitations. The validation data (C51, Figure 3F) demonstrates good predictive accuracy, while the authors appropriately acknowledge systematic errors (C52) and provide mechanistic explanations (C53-C54) supported by prior work (C56). The speculation about in vivo mitigation (C55) is reasonable but clearly identified as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C70",
+      "C71",
+      "C89"
+    ],
+    "result": "Through cascaded rate-of-change transformations, the Drosophila early olfactory system (OSNs and PNs) primarily signals the acceleration and rate of change of odor concentrations to higher brain centers, with PNs showing enormous amplification of odor onsets for slowly rising stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C70-C71, and C89 represent the central finding. The cascade of transformations is well-demonstrated: OSNs encode concentration and rate of change (Figure 2J), PNs encode OSN rate and rate of change (Figure 2K), resulting in acceleration encoding (Figure 2L). The dramatic amplification for parabolic inputs (C71, Figure 2C,I) provides compelling evidence. The correlation analyses provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C90"
+    ],
+    "result": "The rate-of-change and acceleration encoding by OSNs and PNs advances peak response times relative to odor stimuli, with PNs consistently peaking around 200 ms after stimulus onset regardless of stimulus dynamics, enabling rapid detection of odor onsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 and C90 are well-supported by signal processing theory (C59) and experimental data (C60-C65, Figure 4). The consistent PN peak timing (C64, Figure 4C) across varied stimulus dynamics is a strong result. The confirmation of prior findings for a broader stimulus set (C66-C67) appropriately contextualizes the work. The functional interpretation (C90) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C72",
+      "C73",
+      "C91"
+    ],
+    "result": "The authors hypothesize that acceleration encoding in Drosophila's antennal lobe has evolved to enable rapid responses to slowly rising odor stimuli and maximize the chance of locating odor sources in turbulent environments, representing a novel sensory encoding mechanism not previously demonstrated in olfactory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68, C72-C73, and C91 represent speculative interpretations about evolutionary function. While the novelty claim (C72) appears reasonable based on the authors' literature review, the evolutionary hypotheses (C68, C91) are explicitly stated as speculation and lack direct experimental support. The functional advantage in turbulent environments is plausible but not tested. These remain interesting hypotheses requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose that acceleration encoding in Drosophila differs from rate-of-change encoding in bacteria and nematodes due to different Reynolds number regimes: low Re environments favor gradient-based strategies while high Re turbulent environments favor rapid plume detection strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C88 present a comparative analysis grounded in fluid mechanics principles and cited behavioral literature. The Reynolds number framework (C77-C83) is well-established, and the behavioral strategies (C74-C76, C85-C86) are appropriately cited. The inference about information content in different flow regimes (C80-C81, C84) is reasonable. However, this remains a theoretical framework rather than experimentally tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Adult fruit flies may integrate both spatial (bilateral comparison) and temporal sampling strategies for odor source localization, with relative importance potentially varying by locomotor state due to different Reynolds numbers in walking versus flight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 synthesize prior work (C92-C93, appropriately cited) with speculation about integration strategies (C94-C95). While the speculation is reasonable and grounded in physics, it lacks direct experimental support in this manuscript. The hypothesis about locomotor state-dependent strategies is interesting but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors used standardized experimental subjects (female NP3062-GAL4 flies, 2-5 days post-eclosion) and established electrophysiological methods for OSN and PN recordings, with appropriate cell identification and spike rate estimation procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 describe standard methodological details that are appropriate for the experiments. The genetic identification of PNs (C103) combined with functional and anatomical verification (C104) provides robust cell identification. The spike rate estimation method (C105) is clearly described and appropriate for the analysis.",
+    "result_type": "MINOR"
+  }
+]

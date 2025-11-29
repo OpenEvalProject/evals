@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "An shRNA screen using a uORF-ATF4-venus reporter identified eIF2B as required for ISRIB activity. Knockdown of eIF2B4 and eIF2B5 significantly reduced cellular sensitivity to ISRIB (p < 1.4\u00d710\u207b\u2076 and p < 2.4\u00d710\u207b\u00b9\u00b9, respectively), while knockdown of eIF4G1 enhanced sensitivity (p < 3.4\u00d710\u207b\u00b9\u2070). Other translation initiation factors showed no effect on ISRIB sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The shRNA screen (C7) provides robust genetic evidence with statistically significant p-values (C48, C49) and appropriate negative controls (C50). The interpretation that reduced eIF2B levels confer ISRIB resistance by limiting activatable target molecules (C51) is logically consistent with the data. The screen design, statistical analysis, and controls appear rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Structure-activity relationship studies demonstrate that ISRIB exhibits functional twofold symmetry. The trans-isomer (ISRIB-A1) is >100-fold more potent than the cis-isomer (C52), and modifications to both side chains show additive effects on potency (C56). The distance and positioning of distal aromatic rings are critical (C54, C55), and meta-chloro or meta-fluoro substituents enhance potency, with ISRIB-A17 achieving ~10-fold improvement over ISRIB-A1 (C57, C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAR data (C52-C58) are internally consistent and support the conclusion that ISRIB binds a twofold symmetric target (C61). The systematic variation of structural elements with corresponding EC50 measurements provides strong evidence. However, EC50 values alone don't prove direct binding or mechanism\u2014these are functional readouts in cells. The inference of target symmetry (C61) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "ISRIB induces or stabilizes eIF2B dimerization in cells. Sucrose gradient analysis showed that ISRIB treatment shifted eIF2B from fractions 3-6 to fractions 5-8, consistent with doubling of molecular mass (C63, C65, C66). Mass spectrometry confirmed all five eIF2B subunits co-migrated with high correlation (R > 0.98) in ISRIB-treated samples (C69, C70, C72, C73), while control complexes (proteasome, eIF3) showed no displacement (C68, C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of sucrose gradient sedimentation (C63-C68) and quantitative mass spectrometry (C69-C74) provides strong convergent evidence for ISRIB-induced eIF2B dimerization. The high correlation coefficients (C72) and specificity (C71) strengthen the conclusion. The use of an inactive analog control and analysis of non-target complexes demonstrates rigor. The conclusion that ISRIB stabilizes complete eIF2B dimers (C74) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CETSA (cellular thermal shift assay) identified eIF2B4 as the specific ISRIB binding subunit. ISRIB pre-incubation increased thermal stability of eIF2B4 but not eIF2B1, eIF2B5, eIF2\u03b1, or eIF3a (C75, C76). The selective stabilization of eIF2B4 while other subunits precipitated suggests autonomous behavior and direct ISRIB binding to eIF2B4 (C77, C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CETSA data (C75, C76) provide evidence for direct ISRIB-eIF2B4 interaction through ligand-induced thermal stabilization. The specificity for eIF2B4 among tested proteins strengthens the conclusion. However, the interpretation that subunits act autonomously (C77) and the definitive conclusion of direct binding (C78) are somewhat inferential\u2014CETSA shows stabilization but doesn't prove direct binding vs. allosteric effects. The result is supported but with caveats about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ISRIB enhances eIF2B GEF activity in vitro. GDP release from eIF2 was threefold faster with ISRIB (t1/2 = 1.1 min vs 3.2 min without ISRIB) (C81, C82). ISRIB did not affect intrinsic GDP release (C80) or enable eIF2B to use phosphorylated eIF2-P as substrate (C83, C84). ISRIB's stimulatory effect depends on the eIF2:eIF2-P ratio, showing activity at 3:1 but minimal effect at 1:1 (C85, C86, C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GDP release assays (C79-C86) provide direct biochemical evidence that ISRIB activates eIF2B. The kinetic measurements are quantitative and the controls (intrinsic rate, eIF2-P alone) are appropriate. The ratio-dependence (C85-C87) is important for understanding ISRIB's mechanism. However, the purity of eIF2B preparation is not fully characterized (partially purified), which could affect interpretation. The conclusion that ISRIB acts as an eIF2B activator (C88, C89) is well-supported by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "ISRIB is a symmetric molecule that mediates stabilization of activated eIF2B dimers, with eIF2B4 (\u03b4-subunit) contributing to the ISRIB binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C8-C10) summarize the main findings from the SAR studies, dimerization experiments, and CETSA data. The symmetry of ISRIB (C8) is supported by SAR data. The stabilization of eIF2B dimers (C9) is supported by sucrose gradient and mass spectrometry. The contribution of eIF2B4 to the binding site (C10) is supported by CETSA but noted as 'suggested' in the abstract, appropriately reflecting some uncertainty. All three claims are well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C58"
+    ],
+    "result": "New ISRIB analogs were developed with improved potency, achieving EC50 values of 600 pM (ISRIB-A17 at 0.6 nM) in cell culture, representing nearly 10-fold improvement over the original ISRIB-A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of more potent ISRIB analogs (C11, C58) is supported by the SAR studies and dose-response curves shown in Figure 2. The EC50 values are experimentally determined and represent genuine improvements in potency. This is a straightforward medicinal chemistry result that is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The uORF-ATF4-venus reporter system responds to ER stress and ISRIB. Thapsigargin treatment resulted in sixfold increase in reporter fluorescence, which was substantially reduced by ISRIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C46, C47) describe the validation of the reporter system used for the shRNA screen. The data are shown in Figure 1B and demonstrate that the reporter responds appropriately to ER stress and ISRIB. This is a methodological validation that supports the screen design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The shRNA screen revealed that knockdown of eIF4G1 sensitizes cells to ISRIB due to reduced cap-dependent translation, and knockdown of eIF3 subunits reduced reporter induction, providing first evidence that re-initiation mechanisms may be similar in mammalian cells as in yeast and plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic explanations for eIF4G1 (C93) and eIF3 (C94) knockdown effects are reasonable interpretations of the screen data, supported by prior work in other organisms. The claim about mammalian re-initiation (C95) is appropriately cautious ('may be similar'). These are secondary findings from the screen that provide biological insights but are not the main focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Biochemical analyses confirmed that eIF2\u03b1-P is not a substrate for eIF2B and that ISRIB does not enable eIF2B to use eIF2-P as a substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative results (C96, C97) are important for understanding ISRIB's mechanism of action. The GDP release assays (Figure 5B) clearly show that neither eIF2B alone nor eIF2B + ISRIB can catalyze GDP release from eIF2-P. This rules out one potential mechanism and is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "ISRIB stabilizes complete eIF2B dimers including the eIF2B1 subunit. Native mass spectrometry previously showed eIF2B1 is loosely associated, but ISRIB treatment rendered the complete complex resistant to dissociation in high-salt buffers. Mass spectrometry confirmed no other proteins co-profiled with eIF2B dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C100-C102) integrate prior structural work with the current findings. The observation that eIF2B1 shifts to heavier fractions with ISRIB (C67) supports the stabilization claim (C101). The mass spectrometry specificity (C102) is important for ruling out alternative explanations. These are well-supported mechanistic details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background knowledge about the integrated stress response (ISR), eIF2\u03b1 phosphorylation, and eIF2B function. Multiple eIF2\u03b1 kinases (PERK, GCN2, PKR, HRI) phosphorylate eIF2 at Ser-51, inhibiting eIF2B-mediated nucleotide exchange and reducing protein synthesis while inducing preferential translation of uORF-containing mRNAs like ATF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C38) represent established background knowledge about the ISR pathway, supported by appropriate citations. They provide context for the study but are not novel findings. The information is accurate and well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Prior characterization of ISRIB established that it renders cells insensitive to eIF2\u03b1 phosphorylation, enhances cognitive function in rodents, has an EC50 of 5 nM, and was identified through phenotypic screening. The fast kinetics and specificity suggested eIF2B as a likely target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3-C5, C39-C45) summarize prior work on ISRIB from the authors' previous publications. They are appropriately cited and provide motivation for the current mechanistic study. The hypothesis that eIF2B is the target (C44, C45) is presented as inference from prior data, which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Summary of ISRIB's effects: ISRIB rapidly reverses eIF2\u03b1 phosphorylation effects, promotes eIF2B dimer formation/stabilization, and enhances GEF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C90-C92) are summary statements in the Discussion that integrate findings from the current study with prior work. They accurately reflect the data presented and are well-supported. C90 cites prior work, while C91-C92 summarize current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Discussion of eIF2B structure and mutations: eIF2B1 forms stable homodimers (Kd < 1 nM), and mutations in yeast eIF2B and mammalian eIF2B4 splice variants that affect dimerization or regulation phenocopy ISRIB effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C98-C107) cite prior structural and genetic work to support the proposed mechanism. The citations appear appropriate and the integration with current findings is logical. These are supporting arguments from the literature rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Discussion of ISRIB's effects on synaptic plasticity: eIF2 phosphorylation is important in long-term depression (LTD), involving preferential translation of oligophrenin-1. ISRIB treatment blocks mGluR-LTD and enhances cognition in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C108-C113) cite prior work on ISRIB's neurobiological effects. The citations appear appropriate and provide context for potential therapeutic applications. These are not new findings but rather discussion of prior work's implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Discussion of disease relevance: ISR activation occurs in neurodegenerative diseases, and mutations in eIF2 and eIF2B cause intellectual disability and vanishing white matter disease (VWMD). ISRIB may rescue effects of mutations affecting eIF2B dimerization and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C114-C123) discuss potential therapeutic applications based on disease genetics. The background on diseases (C114-C122) is well-cited. However, the speculation that ISRIB may rescue VWMD mutations (C123) is not experimentally tested in this study. This is reasonable speculation for future work but lacks direct experimental support in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C88"
+    ],
+    "result": "ISRIB is an activator of eIF2B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the paper (C6 in abstract, C88 in results). It is supported by multiple independent lines of evidence: genetic screen showing eIF2B requirement, biochemical demonstration of enhanced GEF activity, and structural evidence of dimer stabilization. The conclusion is well-supported by the totality of the data.",
+    "result_type": "MAJOR"
+  }
+]

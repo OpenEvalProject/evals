@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C53",
+      "C64",
+      "C136"
+    ],
+    "result": "p85\u03b1 homodimerizes through SH3:PR1 interactions in trans. The authors demonstrate using AUC and MST that full-length p85\u03b1 and the SH3-PR1-BH-PR2 fragment form homodimers with micromolar Kd values. Through ITC, they show that the p85\u03b1 SH3 domain binds a PR1 peptide (Kd ~24 \u03bcM) and that this interaction must occur in trans due to linker length constraints. Systematic mutagenesis of SH3 residues (D21A/W55A, E19A/E20A, R18A) and PR1 residues (PR1mut, PR1mut') decreased both homodimerization and PTEN binding in co-immunoprecipitation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SH3:PR1 interaction is well-supported by multiple orthogonal biophysical techniques (AUC, MST, ITC) providing quantitative binding affinities, structural modeling showing the interaction must be in trans, and systematic mutagenesis validating predicted interface residues. The data converge on a canonical class I SH3:PXXP interaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "p85\u03b1 homodimerization is stabilized by BH:BH domain interactions. The authors show that the BH domain forms dimers in crystal structures with M176 inserting into a hydrophobic pocket. M176A mutation decreased homodimerization and PTEN binding, while D178A (predicted to be peripheral) had no effect. The BH:BH interface buries only 527 \u00c5\u00b2 and the PR1-BH construct has much weaker dimerization (Kd ~163 \u03bcM) than SH3-PR1-BH constructs, indicating BH:BH alone is insufficient. p85\u03b2, which has low BH domain conservation with p85\u03b1, shows reduced homodimerization and PTEN binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BH:BH contribution to homodimerization is supported by crystal structures, targeted mutagenesis (M176A vs D178A showing specificity), quantitative biophysical measurements showing the BH domain alone is insufficient, and comparative analysis with p85\u03b2. The data support a model where both SH3:PR1 and BH:BH interactions are required for stable homodimerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C81",
+      "C82",
+      "C108",
+      "C116"
+    ],
+    "result": "The p85\u03b1 homodimer selectively binds unphosphorylated PTEN. Co-immunoprecipitation and gel filtration experiments show that p85\u03b1 associates with unphosphorylated PTEN but not phosphorylated PTEN. PR1 mutations that disrupt homodimerization also decrease PTEN binding, while PR2 mutations decrease PTEN binding without affecting homodimerization. Combined PR1+PR2 mutations further reduce PTEN binding, suggesting PR2 contributes directly to PTEN interaction while PR1 is required for the homodimeric platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selective binding to unphosphorylated PTEN is demonstrated by multiple co-IP experiments and gel filtration showing mutual exclusivity with phosphorylated PTEN. The differential effects of PR1 vs PR2 mutations provide strong evidence for distinct roles: PR1 in homodimerization and PR2 in direct PTEN binding. The causal link between homodimerization and PTEN binding is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C94",
+      "C105"
+    ],
+    "result": "Homodimeric p85\u03b1 protects PTEN from WWP2-mediated ubiquitination and degradation. Wild-type p85\u03b1 markedly decreased PTEN ubiquitination compared to controls and to homodimer-disrupting mutants (SH3, PR1, BH mutations) or PTEN binding-disrupting mutants (PR2). This correlated with increased PTEN protein levels and decreased AKT phosphorylation. p85\u03b1 and WWP2 both bind the PTEN phosphatase domain, and competition experiments show they compete for PTEN binding in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protection from WWP2-mediated degradation is well-supported by ubiquitination assays showing wild-type p85\u03b1 reduces PTEN ubiquitination while mutants that disrupt homodimerization or PTEN binding do not. Competition experiments with WWP2 demonstrate mutual exclusivity of binding. The functional consequence (increased PTEN levels, decreased pAKT) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C89"
+    ],
+    "result": "The p85\u03b1 homodimer enhances PTEN lipid phosphatase activity. In vitro phosphatase assays with recombinant proteins show that p85\u03b1 increases PTEN activity toward soluble PIP3 substrate. This enhancement is reversed by PR1 and PR2 mutations. The effect is also observed when PTEN is immunoprecipitated from cells expressing wild-type p85\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enhancement of PTEN phosphatase activity is demonstrated by multiple in vitro assays with purified recombinant proteins and validated in cell-based immunoprecipitation experiments. The reversal by PR1/PR2 mutations provides specificity. However, the mechanism by which p85\u03b1 enhances activity is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The p85\u03b1 homodimer enhances PTEN membrane association. Subcellular fractionation shows that p85\u03b1 globally increases PTEN in cytosol, membrane, and nucleus, but markedly increases unphosphorylated PTEN (not phosphorylated PTEN) in the membrane fraction. Binding of recombinant PTEN to large multilamellar vesicles is increased in the presence of p85\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enhancement of membrane association is supported by subcellular fractionation showing selective enrichment of unphosphorylated PTEN in membrane fractions and by in vitro lipid binding assays with model membranes. The selectivity for unphosphorylated PTEN is consistent with the binding specificity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C140"
+    ],
+    "result": "p110\u03b1 binding and PTEN binding to p85\u03b1 are mutually exclusive, with p110\u03b1 binding monomeric p85\u03b1 and PTEN binding homodimeric p85\u03b1. Gel filtration experiments show PTEN is recovered in fractions free of p110\u03b1, and only unphosphorylated PTEN associates with p85\u03b1. WWP2-PTEN interaction is only detected in fractions lacking p85\u03b1. PR1+PR2 mutations cause accumulation of monomeric p85\u03b1 (fraction 39) that does not bind PTEN but still binds p110\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutual exclusivity is convincingly demonstrated by gel filtration showing spatial separation of p110\u03b1-containing and PTEN-containing complexes, and by the behavior of PR1+PR2 mutants that accumulate as monomers. The data strongly support a model where the oligomeric state of p85\u03b1 determines its binding partners.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C154"
+    ],
+    "result": "Cancer patient-derived mutation I177N disrupts p85\u03b1 homodimerization and has oncogenic properties. I177N, identified in endometrial cancer, localizes to the BH:BH dimer interface at a highly conserved residue. This mutation decreased homodimer formation, decreased PTEN binding, increased PTEN ubiquitination, increased phosphorylated AKT, and promoted IL3-independent survival of BaF3 cells. E175K, another cancer mutation at the BH interface, did not show these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The oncogenic properties of I177N are well-supported by biochemical characterization (decreased homodimerization and PTEN binding, increased PTEN ubiquitination, increased pAKT) and functional assays (IL3-independent survival). The specificity is demonstrated by the lack of effect of E175K, which the structural model predicts would have minimal impact. This validates the biological relevance of the homodimerization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Cancer patient-derived mutation I133N disrupts PTEN binding without affecting homodimerization and has oncogenic properties. Based on structural modeling, the authors engineered I127A/I133A/E137A mutations that decreased PTEN binding without altering homodimerization. They then identified I133N in an endometrial cancer patient. I133N decreased PTEN binding but not homodimerization, increased PTEN ubiquitination, induced PI3K pathway activation, and enhanced BaF3 cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of I133N validates the structural model's predictive power. The mutation shows the expected biochemical phenotype (disrupts PTEN binding but not homodimerization) and oncogenic properties (increased PTEN ubiquitination, pathway activation, cell survival). This demonstrates that disrupting the PTEN interaction interface, independent of homodimerization, can be oncogenic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C19",
+      "C20",
+      "C21",
+      "C138",
+      "C139",
+      "C143",
+      "C147"
+    ],
+    "result": "The equilibrium between p85\u03b1 monomers and homodimers regulates the PI3K pathway, and disrupting this equilibrium can lead to disease. The authors propose that monomeric p85\u03b1 binds p110\u03b1 to enable pathway activation, while homodimeric p85\u03b1 binds and stabilizes PTEN to suppress the pathway. Cancer mutations that disrupt homodimerization or PTEN binding shift this equilibrium toward pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching model is well-supported by the collective data showing opposing functions of monomeric and dimeric p85\u03b1, the mutual exclusivity of p110\u03b1 and PTEN binding, and the identification of cancer mutations that disrupt the equilibrium. The model integrates all major findings into a coherent regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95",
+      "C96"
+    ],
+    "result": "The effects of p85\u03b1 on PTEN stability are direct and not mediated by feedback/feedforward signaling. siRNA knockdown of S6K or Rictor, or treatment with mTOR/AKT inhibitors, did not alter the p85\u03b1-PTEN interaction or the PTEN-WWP2 interaction, despite affecting AKT phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiments effectively rule out indirect effects through known feedback loops (S6K-mediated, mTORC2-mediated) or feedforward signaling (AKT-mTOR). The persistence of the p85\u03b1-PTEN interaction despite pathway perturbations supports a direct mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C137",
+      "C148"
+    ],
+    "result": "p85\u03b1 homodimers can form in the absence of PTEN and the p85\u03b1-PTEN interaction is direct. Homodimerization was observed in PTEN knockout MEFs, and recombinant p85\u03b1 and PTEN interact in vitro in the absence of other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ability to form homodimers in PTEN knockout cells and the interaction of purified recombinant proteins demonstrate that homodimerization is PTEN-independent and that the p85\u03b1-PTEN interaction is direct. This is important for establishing the mechanistic sequence of events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The N-terminal homodimerization interface is spatially separated from the C-terminal p110\u03b1 binding site. None of the SH3, PR1, or BH mutations altered p85\u03b1-p110\u03b1 interaction. A truncation mutant (A360*) lacking the nSH2-iSH2-cSH2 fragment showed normal homodimerization and PTEN binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial separation is convincingly demonstrated by the lack of effect of N-terminal mutations on p110\u03b1 binding and by the normal function of the A360* truncation mutant. This supports the model that homodimerization and p110\u03b1 binding are independent functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "p85\u03b1 and WWP2 compete for binding to the PTEN phosphatase domain. PTEN interacts with WWP2 and NEDD4, but not c-cbl or cbl-b. Wild-type p85\u03b1 decreased PTEN-WWP2 binding without affecting NEDD4 binding. WWP2 and p85\u03b1 both bind the PTEN phosphatase domain (residues 14-187). Dose-dependent competition experiments show reciprocal inhibition of binding. siRNA knockdown experiments in HEC1A cells support the competition model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition mechanism is well-established by domain mapping showing overlapping binding sites, dose-dependent reciprocal inhibition experiments, and validation with endogenous proteins. The specificity for WWP2 over NEDD4 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C156",
+      "C157"
+    ],
+    "result": "Many cancer-derived PTEN mutations map to the proposed p85\u03b1 interaction surface. 19 of 62 cancer patient-derived PTEN missense mutations in the phosphatase domain mapped to the proposed p85\u03b1 interaction surface (30% of phosphatase domain mutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mapping of cancer mutations to the proposed interface is suggestive, this is correlative data. The claim that these mutations function by disrupting p85\u03b1 association is speculative and would require experimental validation of individual PTEN mutants for their ability to bind p85\u03b1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The difference in dimerization Kd between the N-terminal fragment and full-length p85\u03b1 may indicate entropic penalties or weak intramolecular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a reasonable speculation to explain the ~10-fold difference in Kd values, but it remains speculative without additional structural or biophysical data to distinguish between the proposed mechanisms (entropic penalty vs. intramolecular interactions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "Dynamic formation of p85\u03b1 homodimers may play a role in signal termination, and factors affecting the monomer-dimer equilibrium (p110\u03b1 levels, splice variants) could modulate pathway activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable speculations based on the established model, but they are not directly tested. The predictions about PIK3CA amplification and the role of p55\u03b1/p50\u03b1 splice variants would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "A structural model of the p85\u03b1 homodimer:PTEN complex proposes specific molecular interactions and mechanisms. The model suggests PTEN binds one BH domain with contributions from I127/I133/E137 and PR2, that K13 ubiquitination site is protected, and that the phosphorylated C-tail of PTEN would compete with PR2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural model is explicitly described as speculative and theoretical. While it is constrained by experimental data and has predictive power (validated by I133N), the authors acknowledge significant uncertainties, particularly regarding flexible regions. The model requires experimental structural validation (e.g., crystal structure or cryo-EM).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "E175K mutation did not affect PTEN levels, ubiquitination, p85\u03b1 binding, pAKT, or BaF3 proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of effect of E175K serves as an important negative control, validating the specificity of the I177N effects and supporting the structural model's prediction that E175 is at the periphery of the BH:BH interface.",
+    "result_type": "MINOR"
+  }
+]

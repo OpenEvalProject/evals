@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A functional GFP-tagged nitrate reductase complex (NarG-GFP) was constructed and validated. The fusion protein was expressed under native promoter control, integrated into the chromosome, and shown to support growth under nitrate-respiring conditions with only slightly reduced activity compared to the untagged complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 provide converging evidence that the GFP-tagged complex is functional: growth complementation (C33), proper membrane localization (C34), and near-normal enzymatic activity (C35). The generation time data (C37-C38) shows ~40% slower growth for the tagged strain, which is consistent with the slightly reduced activity, supporting the overall functionality claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Under nitrate-respiring conditions, the GFP-labeled nitrate reductase localizes predominantly to cell poles in ~80% of cells, forming discrete clusters that are independent of cell length and cell cycle position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are well-supported by fluorescence microscopy data in Figures 2A-D and supplementary figures. The quantitative analysis shows clear polar enrichment (~80% of cells), and the independence from cell length/division septum (C41) supports the inference that localization is not cell cycle-dependent (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The subcellular localization of nitrate reductase is dynamic and responds to metabolic conditions. Under oxygen-respiring or fermenting conditions, the complex shows even distribution, while anaerobic respiration with various electron acceptors (nitrate, fumarate, TMAO) induces varying degrees of polar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by systematic fluorescence imaging across multiple metabolic conditions (Figures 2-3). The data show clear differences in localization patterns: polar clustering under anaerobic respiration (strongest with nitrate), even distribution under aerobic or fermenting conditions. The correlation between cluster formation and polar localization (C48) is well-documented in Figure 3 supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "The proton concentration gradient (\u0394pH) component of the protonmotive force is the critical cue for polar localization of nitrate reductase. Dissipation of \u0394pH by ionophores (CCCP, TCC) disrupts polar localization, while dissipation of membrane potential (\u0394\u03c8) by valinomycin has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide strong experimental evidence using specific ionophores (Figure 4A). The differential effects of CCCP/TCC (disrupting localization) versus valinomycin (no effect) clearly implicate \u0394pH rather than \u0394\u03c8. However, the mechanistic understanding remains incomplete\u2014the experiments show correlation but not the molecular mechanism of how \u0394pH controls localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Artificial establishment of a proton gradient by heterologous expression of proteorhodopsin is sufficient to induce polar localization of nitrate reductase under fermenting conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by Figure 4B showing ~40% of cells display polar localization when proteorhodopsin is expressed under fermenting conditions (where \u0394pH is normally low). This gain-of-function experiment complements the ionophore loss-of-function experiments and strengthens the conclusion that \u0394pH is sufficient for polar localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Activity of the nitrate reductase complex is required for polar localization unless an external \u0394pH is provided. The catalytically inactive H50S variant shows uniform distribution under nitrate-respiring conditions but can be recruited to poles when fumarate provides an alternative source of \u0394pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by experiments with the H50S variant (Figure 5). The inactive variant fails to localize to poles under nitrate respiration (C60) but does localize when fumarate is added (C62), demonstrating that the complex's own activity is dispensable if \u0394pH is established by other means. This elegantly separates the requirement for \u0394pH from the requirement for nitrate reductase activity per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Redistribution of nitrate reductase between polar and uniform localization patterns occurs on a timescale of tens of minutes during metabolic transitions. During anoxic-to-oxic transition, polar localization decreases from 80% to near-uniform distribution within one hour; the reverse transition shows similar kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by time-course experiments in Figure 6A. The data show clear temporal dynamics with changes becoming noticeable after 15 minutes and largely complete by 60 minutes. The bidirectional nature of the transition strengthens the conclusion that this is a regulated, reversible process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Polar localization during the oxic-to-anoxic transition requires new protein synthesis. Chloramphenicol treatment blocks polar localization during oxic-to-anoxic transition but does not prevent delocalization during anoxic-to-oxic transition, and establishment of \u0394pH by proteorhodopsin cannot rescue localization in the presence of chloramphenicol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by chloramphenicol experiments (Figure 6B and supplements). The asymmetric effect of chloramphenicol (blocking localization but not delocalization) indicates that an unidentified factor requiring de novo synthesis is needed for polar recruitment. The failure of proteorhodopsin to rescue (C72) rules out insufficient \u0394pH as the explanation. However, the identity of the required factor remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Subcellular localization does not affect the intrinsic catalytic activity of the nitrate reductase complex. Membrane vesicles from cells with polar versus uniform distribution show equivalent specific activities in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by enzymatic assays on membrane vesicles (Figure 7A). The lack of significant difference in specific activity between conditions indicates that polar localization does not alter the catalytic properties of the complex itself. This is an important control showing that the functional effects observed in vivo are not due to changes in enzyme activity per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Polar localization of nitrate reductase enhances electron flux through the respiratory chain. Cells with enforced polar localization (via proteorhodopsin expression) show significantly higher rates of nitrite production compared to controls, with nearly two orders of magnitude more nitrite produced after one hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by nitrite production assays (Figure 7B). The experimental design cleverly uses proteorhodopsin to enforce polar localization in fermenting cells with identical OXPHOS composition, isolating the effect of localization. The significantly higher nitrite production rates provide strong evidence that polar localization functionally enhances respiratory chain efficiency. However, the mechanism (substrate channeling, supercomplex formation, etc.) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C81",
+      "C82",
+      "C90"
+    ],
+    "result": "This work demonstrates that nitrate reductase localization in E. coli is subject to spatiotemporal regulation in response to metabolic conditions via a \u0394pH-dependent mechanism, and that this dynamic localization is critical for controlling respiratory activity by potentiating electron flux through the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C4-C8, C81-C82, C90) is well-supported by the collective experimental evidence. The manuscript demonstrates: (1) metabolic condition-dependent localization, (2) \u0394pH as the key signal, (3) functional consequences for respiratory efficiency. The claim of novelty (C90) appears justified as this is the first demonstration of environmentally-regulated respiratory complex localization. However, the molecular mechanism of \u0394pH sensing and the identity of required factors remain to be elucidated.",
+    "result_type": "MAJOR"
+  }
+]

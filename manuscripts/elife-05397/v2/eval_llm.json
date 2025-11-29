@@ -1,0 +1,495 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Semen is the main vector for HIV transmission and contains amyloid fibrils that enhance viral infection by several orders of magnitude, particularly at low virus concentrations. These fibrils are formed from proteolytic fragments of prostatic acid phosphatase and semenogelins, are highly cationic, and capture HIV virions to increase attachment and fusion with target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C11-C21) establish the biological context for the study and are well-supported by multiple citations to prior work. The claims accurately represent established knowledge about seminal amyloids and their role in HIV transmission enhancement, providing the scientific rationale for investigating CLR01 as a potential intervention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "CLR01 is a lysine- and arginine-specific molecular tweezer that binds these residues with high specificity through a unique threading mechanism, inhibits amyloid fibrillization of various disease-associated proteins, and can slowly remodel preformed fibrils. CLR01 binds lysine with Kd ~10 \u00b5M and arginine with ~10-fold lower affinity, preferentially engaging accessible residues on protein surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3, C23-C31) about CLR01's properties and mechanism are well-supported by multiple citations to prior work and structural studies. The binding specificity, affinity values, and mechanism have been extensively characterized by NMR, crystallography, molecular dynamics, and QM/MM calculations as stated in C29.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Seminal amyloid peptides (PAP248-286, PAP85-120, SEM1) are rich in lysine and arginine residues that are frequently located within or adjacent to predicted steric zippers. Computational modeling shows that CLR01 binds at least seven of eight positively charged residues in PAP248-286, including residues in predicted steric zippers and the fibril core, while CLR03 establishes only distant and variable interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by sequence analysis (Figure 1C-E) and replica exchange molecular dynamics simulations (Figure 1F-G). The computational predictions provide a rational basis for testing CLR01's effects on seminal amyloid formation and are consistent with CLR01's known binding specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CLR01, but not CLR03, inhibits spontaneous fibril assembly of PAP248-286, PAP85-120, and SEM1(45-107) with IC50 values of ~1.19 \u00b5M, ~228 \u00b5M, and ~16.2 \u00b5M respectively. The inhibition exhibits shallow dose-response curves (Hill slopes 0.44-1.26), and TEM confirms that CLR01 prevents mature fibril formation, instead producing oligomers, amorphous aggregates, or non-amyloid structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C54 are well-supported by ThT fluorescence assays (Figure 2A-F) and TEM imaging (Figure 2A-C). The IC50 values are quantified with appropriate replicates, statistical analysis is performed (one-way ANOVA), and the shallow Hill slopes provide evidence against colloidal aggregation mechanisms. The differential sensitivity correlates with lysine/arginine content in predicted steric zippers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CLR01 cannot inhibit fibrillization of alanine-substituted peptides (PAP248-286(Ala) and PAP85-120(Ala)) where lysine and arginine residues are replaced with alanine, demonstrating that CLR01-lysine/arginine contacts are essential for inhibition of fibrillization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by ThT and sedimentation assays (Figure 2G-I) showing that alanine substitution abolishes CLR01's inhibitory activity. This negative control experiment strongly supports the specificity of CLR01's mechanism and rules out non-specific effects, providing critical evidence for the proposed lysine/arginine-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Excess free lysine (20 mM) or poly-L-lysine (1 mM) completely abrogates CLR01 inhibition of fibril formation, and CLR01 retains activity in the presence of BSA or after centrifugation to remove potential aggregates, strongly supporting that CLR01 acts through direct interaction with lysine/arginine residues rather than via colloidal aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by competition experiments (Figure 2\u2014figure supplement 3) and control experiments with BSA and centrifugation (Figure 2\u2014figure supplement 4). These experiments provide strong mechanistic evidence for specific lysine/arginine binding and rule out colloidal aggregation as the mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CLR01 completely inhibits seeded PAP248-286 fibrillization with IC50 ~15.3 \u00b5M (vs ~1.19 \u00b5M for unseeded), showing a steeper Hill slope (~3.1 vs ~0.6). The inhibition is unaffected by BSA or centrifugation but is alleviated by excess lysine/poly-L-lysine, indicating CLR01 acts at multiple stages of fibrillization including nucleation and elongation through specific lysine/arginine interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 are supported by seeded assembly experiments (Figure 2J-L) and appropriate controls (Figure 2\u2014figure supplement 5). The higher IC50 for seeded assembly is logical given that fibrils are already formed, and the mechanistic interpretation that CLR01 acts at multiple stages is reasonable based on its ability to inhibit both unseeded and seeded assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CLR01 rapidly remodels preformed SEVI and PAP85-120 fibrils (>50% reduction in ThT fluorescence after 2 hr), confirmed by TEM showing few intact fibrils and predominantly smaller nonfibrillar species. SEM1(45-107) fibrils were not remodeled. This remodeling is remarkably rapid compared to weeks required for A\u03b2 or \u03b1-synuclein fibrils, occurring on a timescale relevant for HIV prevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are well-supported by ThT assays and TEM/confocal microscopy (Figure 3A-C). The rapid kinetics (2 hr) are clearly demonstrated and appropriately compared to prior work on other amyloids. The failure to remodel SEM1(45-107) fibrils is an important negative result that is honestly reported and provides specificity to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "CLR01 treatment of SEVI fibrils causes loss of the \u03b2-sheet minimum by circular dichroism, confirming alteration of cross-\u03b2 architecture. CLR01-remodeled SEVI fibrils are less effective seeds for polymerization of monomeric PAP248-286, indicating CLR01 remodels SEVI into alternative non-templating conformers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by circular dichroism spectroscopy (Figure 3D-E) and seeding experiments (Figure 3F). The CD data directly demonstrate structural changes in the fibrils, and the reduced seeding capacity provides functional evidence that the remodeled structures are biochemically distinct from native fibrils.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "CLR01 remodels SEVI and PAP85-120 fibrils with EC50 values of ~0.89 \u00b5M and ~1.41 \u00b5M respectively, with shallow dose-response curves (Hill slopes approximately -0.6 and -0.726). Remarkably, remodeling occurs at sub-stoichiometric concentrations relative to peptide monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by dose-response experiments (Figure 3G-H). The EC50 values are well-quantified, and the shallow Hill slopes again argue against colloidal mechanisms. The sub-stoichiometric activity is particularly notable and suggests high efficiency, though the mechanism enabling this is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CLR01 cannot remodel preformed SEVI(Ala) or PAP85-120(Ala) fibrils, and excess lysine/poly-L-lysine prevents CLR01's remodeling activity. CLR01 retains activity in the presence of BSA or after centrifugation. These findings demonstrate that CLR01 remodels fibrils via specific binding to lysine/arginine residues, not through colloidal aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by experiments with alanine-substituted fibrils (Figure 3I-L), competition assays (Figure 3\u2014figure supplement 1), and BSA/centrifugation controls (Figure 3\u2014figure supplement 2). These comprehensive controls provide strong evidence for the specificity of CLR01's mechanism in fibril remodeling, paralleling the evidence for inhibition of fibril formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CLR01, but not CLR03, rapidly neutralizes the positive surface charge of SEVI, PAP85-120, and SEM1(49-107) fibrils (within minutes by zeta potential). Pre-treatment with lysine/poly-L-lysine abrogates this activity. CLR01-treated fibrils cannot form complexes with virions and CLR01 displaces virions from preformed fibril-virion complexes without affecting virion fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by zeta potential measurements (Figure 4A), competition experiments (Figure 4\u2014figure supplement 1), and confocal microscopy (Figure 4B-D). The rapid charge neutralization provides a clear mechanism for preventing fibril-virion interactions, and the ability to displace pre-bound virions is particularly important for practical applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CLR01 and CLR03 show no cytotoxicity in TZM-bl cells up to 500 \u00b5M, unlike surfactants (Triton X-100, nonoxynol 9, SDS). SEVI, PAP85-120, and SEM1(49-107) enhance HIV infection 33-64 fold in a dose-dependent manner, but pretreatment with CLR01 (not CLR03) eliminates this infection-enhancing property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by MTT cytotoxicity assays (Figure 4\u2014figure supplement 3) and HIV infection assays (Figure 4E). The lack of cytotoxicity is important for potential therapeutic applications, and the complete abrogation of infection enhancement demonstrates functional efficacy. The dose-dependent enhancement by amyloids is consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "CLR01, but not CLR03, exhibits direct anti-HIV activity with IC50 values of ~13.7-20.1 \u00b5M against multiple HIV-1 strains (X4-tropic, R5-tropic, transmitted/founder viruses). The antiviral effect requires virion exposure to CLR01, not cell pretreatment, and is independent of viral co-receptor tropism or strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by dose-response experiments with multiple HIV-1 strains (Figure 5A) and cell vs. virion treatment experiments (Figure 5B). The broad activity across different strains and tropisms is well-demonstrated, and the requirement for virion exposure clearly indicates a direct antiviral mechanism rather than a cellular effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Pre-incubation of CLR01 with poly-L-lysine abrogates its anti-HIV activity in a dose-dependent manner (near-complete inhibition at 75 nM poly-L-lysine), demonstrating that the lysine-binding cavity is important for antiviral activity. CLR01's antiviral activity is unaffected by BSA (up to 5%) or centrifugation to remove aggregates, indicating colloidal aggregates do not contribute to antiviral activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are supported by competition experiments (Figure 5\u2014figure supplement 1) and BSA/centrifugation controls (Figure 5\u2014figure supplements 2-4). These experiments provide strong evidence that the antiviral mechanism, like the anti-amyloid mechanism, depends on specific lysine binding rather than non-specific colloidal effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "CLR01 treatment increases p24 in the soluble fraction of HIV samples and causes rapid loss of infectivity (62% reduction in 5 min, ~100% in 10 min with 10 \u00b5M CLR01). AFM confirms CLR01 destroys virion architecture of MLV and HIV-1 particles, including those lacking glycoproteins (\u0394env), indicating CLR01 disrupts viral membrane integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 are supported by p24 ELISA (Figure 6A), time-course infectivity assays (Figure 6B), and AFM imaging (Figure 6C-D). The rapid kinetics, p24 release, and AFM visualization of destroyed virions provide converging evidence for membrane disruption. The effect on \u0394env particles is particularly important for demonstrating that the mechanism targets the membrane rather than glycoproteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Viral membranes are enriched 2-3 fold in sphingomyelin and cholesterol forming lipid rafts. CLR01 selectively permeabilizes model viral membranes (DOPC/SM/Chol) within 5-10 min while having no effect on DOPC membranes even after 60 min. AFM shows CLR01 induces changes in phase coexistence and eliminates distinct liquid-ordered and liquid-disordered domains in raft-containing membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 are supported by experiments with giant unilamellar vesicles (Figure 6E) and AFM of supported lipid bilayers (Figure 6F). The selective disruption of raft-containing membranes provides a mechanistic explanation for why CLR01 affects viral but not cellular membranes. The experimental design with appropriate controls (DOPC alone vs. DOPC/SM/Chol) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Comprehensive biophysical characterization shows CLR01 is predominantly monomeric under assay conditions. NMR shows very weak dimerization (Ka ~60 M\u207b\u00b9, ~5% dimers at 500 \u00b5M) in PBS but not in HEPES buffer. DOSY reveals hydrodynamic radii of ~0.9-1.0 nm. No critical micelle concentration was detected by pyrene fluorescence. DLS shows small particles (5-8 nm) at high concentrations in PBS but not the 95-400 nm size typical of colloidal aggregates. The vast majority of CLR01 molecules are monomeric, making colloidal aggregation highly unlikely to contribute to observed activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C141 are supported by multiple orthogonal biophysical techniques (NMR, DOSY, ITC, pyrene fluorescence, DLS) shown in Figure 7 and supplements. The comprehensive characterization using multiple methods provides strong evidence against colloidal aggregation. The buffer-dependent differences are noted and the quantitative measurements are appropriate. This extensive characterization addresses a critical concern about mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "CLR01, but not CLR03, reduces infection rates of enveloped viruses HCMV, HSV-2, and HCV, but does not inhibit the non-enveloped adenovirus HAdV5. CLR01 is a broad-spectrum inhibitor of enveloped viruses, including sexually transmitted viruses (HIV-1, HSV-2, HCV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by infection assays with multiple viruses (Figure 8A-D). The selectivity for enveloped viruses is clearly demonstrated by the lack of effect on adenovirus, which is an important control. The broad-spectrum activity against diverse enveloped viruses supports the proposed membrane-disruption mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "CLR01 maintains amyloid-remodeling activity in artificial semen simulant containing 50 mg/ml BSA. Seminal plasma enhances HIV infection 8-10 fold, and CLR01 decreases this enhancement in a concentration-dependent manner, completely abolishing the stimulatory effect at 31 \u00b5M. CLR01 prevents HIV infection in the presence of semen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 are supported by experiments with artificial semen simulant (Figure 9A) and human seminal plasma (Figure 9B). These experiments are critical for demonstrating that CLR01 functions in the complex biological environment of semen, which is essential for potential clinical application. The dose-dependent effect and complete abolition of enhancement at 31 \u00b5M are well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C59",
+      "C61",
+      "C63",
+      "C70",
+      "C91",
+      "C93",
+      "C94",
+      "C112",
+      "C116",
+      "C141"
+    ],
+    "result": "Multiple lines of evidence establish that CLR01 acts through specific binding to lysine and arginine residues rather than by non-specific colloidal mechanisms: (1) alanine substitution abolishes activity, (2) excess lysine/poly-L-lysine competitively inhibits activity, (3) activity is retained with BSA or after centrifugation, (4) shallow dose-response curves, (5) comprehensive biophysical characterization shows predominantly monomeric CLR01 without colloidal aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic conclusion (claims C8, C44, C59, C61, C63, C70, C91, C93, C94, C112, C116, C141) is strongly supported by converging evidence from multiple experimental approaches across both anti-amyloid and antiviral activities. The combination of negative controls (alanine substitution), competition experiments, BSA/centrifugation controls, dose-response analysis, and biophysical characterization provides robust support for the specific lysine/arginine-binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C22",
+      "C153",
+      "C169",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "CLR01 counteracts both host factors (seminal amyloids) and the pathogen (HIV) itself through dual mechanisms operating on different timescales: rapid viral membrane disruption (minutes) and slower amyloid inhibition/remodeling (hours). The combined anti-amyloid and antiviral activities, along with minimal toxicity and efficacy in seminal fluid, make CLR01 a promising broad-spectrum topical microbicide for HIV-1 and other sexually transmitted viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C22, C153, C169, C173-C177 represent the major conclusions of the study. These are well-supported by the comprehensive experimental data demonstrating: (1) inhibition and remodeling of seminal amyloids, (2) direct antiviral activity against multiple enveloped viruses, (3) lack of cytotoxicity, (4) efficacy in seminal plasma, and (5) specific lysine/arginine-dependent mechanisms. The dual mechanism and different timescales are clearly demonstrated. However, the designation as \"promising\" for clinical development is appropriately cautious given this is in vitro work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Previous topical microbicide failures have been attributed to lack of adherence, adverse effects, and diminished efficacy in semen. Biological polyanions like heparin can prevent cationic fibrils from enhancing HIV infection but have been unsuccessful in clinical trials due to poor bioavailability and induction of inflammatory responses that recruit HIV-susceptible cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 accurately summarize prior work on microbicide failures and are supported by appropriate citations. These claims provide important context for why CLR01's dual mechanism and lack of inflammatory effects might overcome previous limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Multiple lines of evidence argue against a non-specific colloidal mechanism: CLR01's anti-amyloid and antiviral activities are unaffected by high BSA concentrations or centrifugation; alanine substitution abolishes activity on both fibrils and assembly; antiviral activity is restricted to enveloped viruses; and excess lysine/poly-L-lysine eliminates both activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 from the Discussion accurately summarize the experimental evidence against colloidal mechanisms. These claims are well-supported by the data presented throughout the Results section and provide appropriate interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "CLR01's selectivity arises from its binding properties: it only disrupts weak interactions and events depending on accessible lysine/arginine residues. Inhibition of abnormal protein aggregation requires ~1:1-1:5 protein:CLR01, while disruption of controlled polymerization requires ~55-fold excess and enzyme inhibition requires ~1000-fold excess. In vivo, CLR01 shows no toxicity at doses 2-3 orders of magnitude above those needed for amyloid clearance. The lysine-rich nature of seminal amyloids makes them unusually sensitive to CLR01, with sub-stoichiometric concentrations sufficient for inhibition and remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C166 provide mechanistic interpretation supported by the current data and prior literature. The differential sensitivity based on lysine/arginine accessibility and the sub-stoichiometric activity are well-demonstrated. The safety data from prior in vivo studies are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "CLR01 may possess similarities to other broad-spectrum antivirals like LJ001 that selectively disrupt viral membranes but not cell membranes or non-enveloped viruses. HSV-2, HCMV, and HCV can be transmitted via sexual intercourse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 make appropriate comparisons to related compounds and accurately state that these viruses can be sexually transmitted, supported by citations. These claims provide useful context for understanding CLR01's mechanism and potential applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "CLR01 showed no cytotoxicity in this study and has been safely employed in multiple cell and animal models. Transgenic mice given 10 mg/kg/day CLR01 intraperitoneally for 30 days showed no apparent toxicity or adverse effects. Application on mucosal surfaces should be even safer than systemic administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172 are supported by the current cytotoxicity data (Figure 4\u2014figure supplement 3) and prior in vivo studies (appropriately cited). The inference that topical application might be safer than systemic administration (C172) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C178"
+    ],
+    "result": "Large-scale synthesis of CLR01 could be relatively inexpensive (less than $1 per mg), enabling development as a broad-spectrum antiviral microbicide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C178 is speculative about future manufacturing costs without supporting data or analysis. While the authors may have informal estimates, no evidence is provided to support the specific cost projection of <$1/mg at scale.",
+    "result_type": "MINOR"
+  }
+]

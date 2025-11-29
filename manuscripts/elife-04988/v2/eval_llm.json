@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors reconstituted a eukaryotic leading/lagging strand replisome comprising 31 distinct polypeptides (CMG, Pol \u03b5, Pol \u03b1, Pol \u03b4, RFC, PCNA, and RPA) that performs both leading and lagging strand synthesis and generates Okazaki fragments of a size similar to those observed in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, C54, and C55 collectively establish the core achievement of this study. The experimental data throughout the manuscript (Figures 1-7) demonstrate functional reconstitution with all three polymerases, CMG helicase, RFC, PCNA, and RPA. The system produces physiologically relevant Okazaki fragments (~200 bp at physiological Pol \u03b1 concentrations) and exhibits coordinated leading/lagging strand synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Pol \u03b5 is active with CMG on the leading strand but its activity is suppressed on the lagging strand, even in the absence of Pol \u03b4. Pol \u03b5 suppresses Pol \u03b1 on the lagging strand despite being unable to extend lagging strand primers itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C40, C41, and C42 are well-supported by experimental data in Figures 4C and 5A. The titration experiments clearly show that Pol \u03b5 extends the leading strand efficiently but inhibits Okazaki fragment synthesis on the lagging strand in a dose-dependent manner, even though Pol \u03b5 itself cannot extend lagging strand primers. This represents a novel suppression mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Pol \u03b4-PCNA is the only enzyme capable of extending Okazaki fragments in the presence of Pols \u03b5 and \u03b1 with CMG, and CMG does not prevent Pol \u03b4 function on the lagging strand even while Pol \u03b4-PCNA activity is suppressed on the leading strand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49, C50, and C51 are supported by Figure 5B, which demonstrates that Pol \u03b4 uniquely extends Okazaki fragments under conditions where both Pol \u03b5 and Pol \u03b1 are present with CMG. This strand-specific activity of Pol \u03b4 (active on lagging, suppressed on leading) is a key finding demonstrating asymmetric polymerase function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C48",
+      "C66",
+      "C67"
+    ],
+    "result": "Pol \u03b4-PCNA is suppressed on the leading strand with CMG, exhibiting slow and distributive synthesis, while being highly processive on primed ssDNA without CMG. CMG exerts a negative effect on Pol \u03b4, causing frequent dissociation from PCNA/DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44, C48, C66, and C67 are supported by data in Figure 6 and references to prior work (Georgescu et al., 2014). The contrast between Pol \u03b4-PCNA processivity on naked ssDNA versus its distributive behavior with CMG on the leading strand is well-documented. The inference that CMG causes this suppression (C67) is reasonable given the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C65"
+    ],
+    "result": "CMG helicase is responsible for suppression mechanisms that spatially control polymerase occupancy at the fork, specifying correct polymerase placement and excluding polymerases from functioning on the 'wrong strand'. The three-polymerase-CMG replisome is the product of these suppression reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59, and C65 represent the central mechanistic model of the paper. While C6 is explicitly speculative ('we propose'), the collective experimental evidence from multiple suppression phenomena (Pol \u03b5 on lagging strand, Pol \u03b4 on leading strand) strongly supports CMG as the orchestrator of polymerase spatial control. The model is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C20",
+      "C21",
+      "C22",
+      "C62"
+    ],
+    "result": "Pol \u03b1 functions with CMG on both leading and lagging strands. Pol \u03b1 was highly active with CMG and completely extended the leading strand, with CMG being absolutely required for this activity. Pol \u03b1 can prime the leading strand directly through its primase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C20, C21, C22, and C62 are well-supported by Figures 1B and 2. The data clearly show that Pol \u03b1 extends both strands with CMG, requires CMG for this activity (dropout controls), and can prime the leading strand directly. This was an unexpected finding that challenges previous models of leading strand initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C88"
+    ],
+    "result": "DNA synthesis by Pol \u03b1 with CMG is distributive, with a maximal rate (Vmax) of 4.5 \u00b1 0.4 ntd/s. The leading strand is continuously extended to full-length product, indicating Pol \u03b1 does not switch back to priming mode once in elongation mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C88 are supported by Figure 1C, which shows titration data and quantitative kinetic analysis. The Michaelis-Menten fitting provides a rigorous determination of Vmax. The observation of continuous leading strand synthesis without re-priming is clearly demonstrated in the gel data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "At physiological Pol \u03b1 concentrations (10-20 nM), Okazaki fragments are ~200 bp, similar to their length in vivo. Okazaki fragment size decreases with increasing Pol \u03b1 concentration, indicating stochastic priming. Small Okazaki fragments are intrinsic to Pol \u03b1 action with CMG in the absence of nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C27 are supported by Figure 1D. The data show clear concentration-dependent changes in Okazaki fragment size, with physiologically relevant sizes at physiological concentrations. The stochastic priming interpretation (C26) is a reasonable inference from the concentration dependence. This challenges the requirement for nucleosomes in Okazaki fragment sizing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Pol \u03b1 requires CMG for priming function on the lagging strand. Without CMG, Pol \u03b1 cannot generate Okazaki fragments even with RPA present. Neither Ctf4 nor Mcm10 are required for Pol \u03b1 priming function with CMG in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30, and C31 are supported by Figure 2B and mass spectrometry analysis. The comparison with \u03c629 polymerase (heterologous helicase) clearly demonstrates CMG-specific requirement for Pol \u03b1 priming. The absence of Ctf4 and Mcm10 from purified preparations (confirmed by mass spec) demonstrates these proteins are not required for the minimal system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Okazaki fragments are synthesized along the entire length of the DNA template with CMG and Pol \u03b1, as demonstrated by restriction enzyme analysis showing all fragments are radioactive. Pol \u03b1 cannot perform priming and extension in the absence of CMG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 are supported by Figure 3, which shows restriction enzyme analysis of lagging strand products. All restriction fragments contain radioactivity, demonstrating uniform Okazaki fragment distribution. The negative control without CMG confirms the requirement for CMG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Pol \u03b5 takes over the leading strand from Pol \u03b1 after the distributive Pol \u03b1 dissociates from DNA. After Pol \u03b1 primes the DNA, Pol \u03b5 rapidly extends the leading strand to full length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by Figure 4A, which shows that reactions containing both Pol \u03b1 and Pol \u03b5 produce full-length products more rapidly than Pol \u03b1 alone. The interpretation that Pol \u03b5 'takes over' from Pol \u03b1 is reasonable given the distributive nature of Pol \u03b1 and the processive nature of Pol \u03b5 with CMG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C43",
+      "C96"
+    ],
+    "result": "RFC/PCNA competes with Pol \u03b1 and suppresses its extension activity with CMG on both leading and lagging strands at sufficiently high concentrations. The combination of Pol \u03b5 and RFC/PCNA inhibits Pol \u03b1 more than either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C43, and C96 are supported by Figures 4B and 5-figure supplement 1. The titration experiments clearly show dose-dependent inhibition of Pol \u03b1 by RFC/PCNA. The synergistic inhibition by Pol \u03b5 and RFC/PCNA together is demonstrated. This is consistent with prior work in the SV40 system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "RFC/PCNA competes with Pol \u03b1 on the leading strand, indicating PCNA is loaded onto the leading strand. Pol \u03b4 added to reactions exacerbates inhibition of Pol \u03b1 in the presence of RFC/PCNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 are supported by Figures 4B and 6A. The competition between RFC/PCNA and Pol \u03b1 demonstrates PCNA loading on the leading strand. The additional inhibition by Pol \u03b4 in the presence of RFC/PCNA is clearly shown in Figure 6A, demonstrating multiple layers of Pol \u03b1 suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C79"
+    ],
+    "result": "Leading and lagging strand synthesis rates are similar using either primed or unprimed DNA forked substrates, with 20-25% more synthesis using primed forks. In vitro fork progression is 4-5 ntds/s, which is 5-10 times slower than in vivo measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C79 are supported by Figure 7. The quantitative comparison of leading and lagging strand synthesis shows similar rates, with the noted difference between primed and unprimed forks. The comparison to in vivo rates is appropriately qualified and suggests additional factors may be needed for full physiological rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C84"
+    ],
+    "result": "Nucleosomes are not needed to size Okazaki fragments in vitro. The essential Mcm10 protein and the Ctf4 trimer that connects Pol \u03b1 to CMG are not required for in vitro replication. Short Okazaki fragments of the size observed in vivo do not require nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C58, and C84 are supported by the experimental data showing physiologically sized Okazaki fragments without nucleosomes, Mcm10, or Ctf4. Mass spectrometry confirmed absence of these proteins. However, the authors appropriately note (C85) that nucleosomes may still be needed for greater precision in fragment length, acknowledging limitations of the in vitro system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C82"
+    ],
+    "result": "Pol \u03b1 can prime the leading strand directly and is robust in initiating the leading strand directly, targeting CMG to do so.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C82 are supported by Figures 1B and 2B. The data clearly show Pol \u03b1 priming and extending the leading strand directly with CMG, which challenges previous models that assumed leading strand primers originate from the opposite fork at bidirectional origins. This is a significant mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Pol \u03b5 forms a stable and isolable 1:1 complex with CMG (CMGE complex) through interaction between the Dpb2 subunit of Pol \u03b5 and the Psf1 subunit of GINS. This complex can be reconstituted in a bead-based protein binding assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C90, C91, C92, C93, and C94 are supported by Figure 4-figure supplement 3 and citations to prior work. The bead-based binding assay clearly demonstrates formation of the CMGE complex, with appropriate negative controls. This provides biochemical evidence for the physical interaction underlying Pol \u03b5 recruitment to the leading strand.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Pol \u03b1 extension activity is suppressed by Pol \u03b5 on the lagging strand even though Pol \u03b5 is inactive on the lagging strand. Pol \u03b4 suppresses Pol \u03b1 on the leading strand despite its inefficient extension of this strand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by Figures 4C, 5A, and 6A. These represent paradoxical suppression phenomena where polymerases suppress Pol \u03b1 on strands where they themselves are inactive or inefficient. This is a key mechanistic insight demonstrating that suppression is distinct from simple competition for primer termini.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C69",
+      "C74"
+    ],
+    "result": "Possible mechanisms for polymerase suppression include: Pol \u03b5 suppression on the lagging strand by the relative orientation in which CMG holds Pol \u03b5; CMG occlusion of leading strand ssDNA tricking Pol \u03b4-PCNA to self-eject; and the possibility that Pol \u03b1 could participate as the leading strand polymerase in \u0394N-Pol \u03b5 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C69, and C74 are explicitly speculative (using 'perhaps', 'could be', 'leaves open the possibility'). While these are reasonable mechanistic hypotheses based on the data, they lack direct experimental validation. These represent important future directions but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Pol \u03b4 self-ejects from PCNA upon completing replication of a template. The Pol2 gene contains two polymerase structures, with the C-terminal 'inactive polymerase' region required for cell viability while the N-terminal active polymerase is dispensable. The binding of Pol \u03b5 to CMG involves Dpb2 and possibly Dpb3, Dpb4 subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70, C71, C72, and C73 are supported by citations to prior work (Langston and O'Donnell 2008; Tahirov et al. 2009; Dua et al. 1999; Kesti et al. 1999; Hogg et al. 2014). These represent established knowledge from previous studies that provides context for interpreting the current results. The authors appropriately cite the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C15",
+      "C17",
+      "C60",
+      "C63",
+      "C75",
+      "C76",
+      "C81",
+      "C83"
+    ],
+    "result": "Background knowledge claims about eukaryotic DNA replication: eukaryotes use Pols \u03b5 and \u03b4 for leading and lagging strands; Pol \u03b1 is a 4-subunit enzyme making 25-35 nt RNA-DNA primers; CMG is an 11-subunit helicase; RPCs contain multiple proteins; bacteria use recruitment mechanisms; Pol \u03b1 lacks proofreading; Ctf4 is essential in most cells; previous models showed priming on the lagging strand of bidirectional origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C13, C15, C17, C60, C63, C75, C76, C81, and C83 represent established knowledge from prior work, appropriately cited throughout the manuscript. These provide necessary context and are well-supported by the cited literature. The authors accurately represent prior knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

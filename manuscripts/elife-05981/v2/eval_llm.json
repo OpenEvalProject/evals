@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Serine-only rhodopsin (T\u2192A) generates prolonged, step-like single-photon responses with abrupt, random termination and dramatically increased variability (CVarea = 0.78 \u00b1 0.03), while threonine-only rhodopsin (S\u2192A) produces responses only modestly slower than wild-type with moderately increased variability (CVarea = 0.51 \u00b1 0.02). The variance of T\u2192A responses peaks when approximately half have returned to baseline, suggesting a single stochastic desensitization step dominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C22-C30 provide converging evidence from electrophysiological recordings (Figures 1-2) showing distinct response phenotypes for the two mutants. Statistical analyses confirm significant differences in response durations and variability. The variance analysis (C25-C27) provides mechanistic insight into the underlying desensitization kinetics. The measurements are internally consistent and supported by appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Both T\u2192A and S\u2192A rhodopsin mutants can be phosphorylated at all remaining sites and bind arrestin-1. Isoelectric focusing shows T\u2192A mutants have higher levels of doubly and triply phosphorylated rhodopsin than S\u2192A mutants. Arrestin-1 knockout prolongs responses from mutant rhodopsins, confirming that arrestin-1 binding is required for termination of mutant rhodopsin activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by biochemical data (Figure 3A-C) showing phosphorylation patterns and arrestin binding, plus physiological data (Figure 3D) demonstrating arrestin-1 dependence. The isoelectric focusing results are consistent with prior biochemical findings (C33 cites Ohguro et al., Kennedy et al.). The arrestin knockout experiments provide functional validation that the canonical desensitization pathway remains operative in the mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "S\u2192A rods have 1.3\u00d7 larger collecting area and 1.3\u00d7 larger volume than WT rods, indicating they express ~1.3\u00d7 as much rhodopsin at the same concentration. T\u2192A rods have ~0.75\u00d7 the volume of WT rods. These morphological differences cannot explain the observed differences in response kinetics between mutants and WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by collecting area measurements (Figure 4A-C) and 3D electron microscopy reconstructions (Figure 4D, Figure 4\u2014figure supplement 1). The inference that differences in response kinetics are not due to morphological changes (C42) is reasonable given that S\u2192A responses are much slower than predicted by the modest volume increase alone, and is further supported by the Combo rod experiments (C43-C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In Combo rods expressing both WT and T\u2192A rhodopsin, the average response can be fit by a weighted sum of pure WT (51%) and T\u2192A (49%) responses, and response duration distributions match an equal mixture of the two types. T\u2192A and WT rhodopsin produce responses with similar kinetics whether expressed alone or together, indicating similar transduction cascade kinetics across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by detailed analysis of Combo rod responses (Figure 5). The weighted sum fitting (C43), duration distribution matching (C44), and kinetic similarity of identified responses (C45) provide converging evidence. This control experiment effectively rules out compensatory changes in the transduction cascade as an explanation for the mutant phenotypes, strengthening the conclusion that differences are due to rhodopsin desensitization mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Reducing arrestin-1 or GRK1 expression has little or no effect on S\u2192A (threonine-only) rhodopsin response kinetics or durations. This insensitivity to both GRK1 and arrestin-1 concentration suggests that phosphate attachment by bound GRK1, rather than GRK1 or arrestin-1 binding, is the rate-limiting step for desensitization of threonine-only rhodopsin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by experimental data (Figure 6) showing minimal effects of reducing arrestin-1 or GRK1 in S\u2192A rods. The inference that phosphate attachment is rate-limiting (C50) is logical given that this is the only step insensitive to protein concentrations. This contrasts with WT rods where reducing GRK1 clearly slows responses (cited in C49), supporting the interpretation that threonine phosphorylation is inherently slower.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Reducing arrestin-1 concentration slows T\u2192A (serine-only) rhodopsin responses, increasing median duration from 2.7 s to 4.3 s (~1.5-fold), while reducing GRK1 concentration produces only modest changes. This differential sensitivity implicates arrestin-1 binding as the slow, rate-limiting step in desensitization of serine-only rhodopsin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by experimental data (Figure 7) showing clear effects of reducing arrestin-1 but not GRK1 in T\u2192A rods. The statistical significance is documented (p < 10^-6 for arrestin-1 effect, p > 0.05 for GRK1 effect, C52, C54). The inference that arrestin-1 binding is rate-limiting (C55) is well-supported by the differential sensitivity to the two proteins and contrasts appropriately with the S\u2192A results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The fastest response decay has a time constant ~200 ms, matching the rate of G protein GTPase activity. This fast decay is shared by all termination-aligned responses, the briefest flash-aligned responses, and the longest flash-aligned responses. Flash-aligned responses of intermediate duration have substantially slower decay time constants. S\u2192A responses also show ~200 ms recovery when termination-aligned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by detailed kinetic analysis (Figure 8, Figure 8\u2014figure supplement 1). The ~200 ms time constant matches prior measurements of G protein decay (C56 cites Krispel et al., 2006). The pattern across different response types and alignments is internally consistent and provides insight into the relative contributions of rhodopsin desensitization vs. downstream cascade kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C86",
+      "C87"
+    ],
+    "result": "Under the experimental conditions used, rhodopsin activity is occasionally short-lived (when G protein decay dominates response kinetics) but often persists sufficiently long to shape single-photon responses. On average, the kinetics of rhodopsin desensitization are closely matched to the kinetics of the transduction cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, C86, C87 represent inferences from the kinetic analysis in Figure 8. The interpretation that G protein decay dominates the fastest responses while rhodopsin desensitization contributes to intermediate-duration responses is consistent with the observed pattern of decay time constants. This reconciles previous conflicting findings about rhodopsin lifetime (C83-C85) by showing both mechanisms contribute depending on stochastic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C18",
+      "C19",
+      "C7"
+    ],
+    "result": "Phosphorylation of native serine sites is rapid but ineffective in promoting rapid arrestin-1 binding, while phosphorylation of native threonine sites is slow but effective in promoting rapid arrestin-1 binding. Threonine sites play a privileged role in promoting timely arrestin binding and rhodopsin desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, C18, C19, C7 represent the primary conclusions of the manuscript, supported by the totality of experimental evidence. The rapid but ineffective serine phosphorylation is supported by isoelectric focusing (C33), insensitivity to arrestin-1 reduction in S\u2192A rods (C48), and sensitivity to arrestin-1 reduction in T\u2192A rods (C51-C53). The slow but effective threonine phosphorylation is supported by lower phosphorylation levels in S\u2192A (C33) and insensitivity to GRK1/arrestin-1 reduction (C48-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Rhodopsin with three serine sites (T\u2192A) recovers with mean duration ~4 s, more than five times faster than rhodopsin with only two serines. The addition of a single serine at position 343 substantially speeds the response, likely through faster arrestin-1 binding, suggesting serine sites promote arrestin-1 binding albeit much less effectively than threonine sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by comparison of current data (Figure 2A) with prior work (Doan et al., 2006). The inference that serine 343 contributes to arrestin binding (C68) is reasonable given the substantial kinetic difference and is supported by citation to Vishnivetskiy et al., 2007. This provides nuance to the main conclusion by showing serines have some effect, just much weaker than threonines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C16",
+      "C91",
+      "C90"
+    ],
+    "result": "The different roles of C-terminus serine and threonine phosphorylation sites ensure that the first events in vision produce low-noise quantal signals. Multiple events must work in a concerted fashion to control rhodopsin desensitization, with arrestin-1 binding coordinated with phosphorylation to avoid premature or delayed binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C16, C91, C90 represent the functional significance of the findings. The conclusion that serine/threonine coordination ensures low-noise signals (C92) is supported by the experimental demonstration that disrupting this coordination (removing either site type) increases response variability (C29, C30). The requirement for coordination (C16, C91) is supported by prior work on SPR reproducibility (C14, C15) and the current mechanistic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The somatostatin subtype 2A receptor shows similar asymmetry: serine sites are phosphorylated more than threonine sites, but threonine phosphorylation is required for normal desensitization. This asymmetric role of threonine and serine sites may be a general mechanism tuning arrestin affinity and binding kinetics across GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 are supported by citations to prior work (Hipkin et al., 1997; Liu et al., 2008), but C75 is speculative. While the parallel with another GPCR is suggestive, the generalization to a broad mechanism (C75) requires validation in additional GPCR systems. The speculation is reasonable given the conservation of GRK/arrestin machinery (C8-C9), but remains to be tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C82",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The experimental results suggest that rhodopsin's native threonine sites more readily interact with arrestin's polar core to 'activate' arrestin, and that the arrangement of rhodopsin's C-terminal phosphorylation sites is important for interaction with arrestin's critical structural elements including the 139 loop and polar core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C82 are speculative interpretations of the experimental findings in the context of arrestin structure (C76-C78, C80-C81, which cite prior structural work). While the structural context is well-established, the specific molecular mechanism by which threonines preferentially activate arrestin (C79) is not directly tested. The interpretation is plausible and consistent with the data, but requires structural validation (e.g., co-crystal structures, mutagenesis of arrestin residues).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Rod photoreceptors generate measurable single-photon responses through rhodopsin activation. GPCR desensitization generally occurs through phosphorylation by GRKs followed by arrestin binding. Single-photon responses in rods show unusually low variability, requiring precise control of rhodopsin desensitization timing. The pattern of phosphorylation sites can control arrestin's effects on receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C10, C13-C15 represent established background knowledge supported by extensive prior literature (multiple citations provided). These claims provide the scientific context for the current work and are well-accepted in the field. They are appropriately cited and accurately represent the state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Transgenic mouse strains were backcrossed with Rho\u2212/\u2212 mice so rods expressed only a single rhodopsin type. Time-to-peak and peak amplitude of single-photon responses were not significantly different across rhodopsin types (p > 0.14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 describe the experimental approach and a key control measurement. The genetic strategy (C20) is clearly described in Methods and ensures clean genetic backgrounds. The statistical comparison of peak parameters (C21) is important for establishing that differences in recovery kinetics are not confounded by differences in activation, and is supported by appropriate statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Replicating the measured low variability of single-photon responses requires 6-7 kinetic steps assuming linear transduction, though non-linearities could reduce this number. Multiple events must work in a concerted fashion to control rhodopsin desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 cite prior modeling work (Doan et al., 2006; Bisegna et al., 2008; Gross et al., 2012) that established the number of steps required to explain low SPR variability. These claims provide theoretical context for interpreting the current experimental findings. The citations are appropriate and the claims accurately represent the prior modeling results.",
+    "result_type": "MINOR"
+  }
+]

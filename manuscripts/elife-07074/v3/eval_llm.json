@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Parallel genetic evolution is commonly observed in natural and experimental populations, and the wrinkly spreader (WS) phenotype in Pseudomonas fluorescens repeatedly arises via mutations in three known pathways (Wsp, Aws, Mws). This reproducibility suggests evolution may follow predictable rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C15 establish the context from prior work showing parallel evolution in the WS system. These are well-supported by citations to McDonald et al. (2009) and the broader literature on parallel evolution. The claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "By eliminating the three common pathways (\u0394wsp \u0394aws \u0394mws), the authors discovered 13 new mutational pathways to the WS phenotype. In 200 microcosms, 91 evolved WS types after 6 days, with 86 harboring single mutations in 10 different DGC-encoding loci, 4 with double mutations, and 1 with triple mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C34 describe the core experimental design and primary findings. The data are clearly presented with specific numbers (91/200 microcosms, 86 single mutants, etc.) and supported by genome sequencing and mutational analysis (Figure 3, Table 1). The experimental approach is sound and the results are reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The most common newly discovered pathway (43/91 mutants) involves mutations in PFLU0085, a putative DGC. All mutations cluster in a 117-nucleotide region (1223-1340) upstream of the DGC domain, suggesting this region acts as a negative regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe detailed mutational analysis of PFLU0085. The clustering of diverse mutation types (22 BPS, 20 deletions, 1 duplication) in a specific region strongly supports the negative regulatory interpretation. The data are comprehensive and the inference is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Rare intragenic activating mutations were found in four genes (PFLU0956, PFLU3448, PFLU3571, PFLU5960), affecting transmembrane helices, HAMP domains, or the DGC active site. These likely alter protein-protein interactions, localization, or domain orientation rather than acting as negative regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 describe intragenic activating mutations with specific molecular details. The structural predictions (transmembrane helices, Phyre2 modeling) support the interpretations. The rarity of these mutations compared to PFLU0085 is consistent with a smaller mutational target size. The mechanistic interpretations (C47, C50) are appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C85",
+      "C86"
+    ],
+    "result": "Promoter mutations were identified upstream of three DGC-encoding genes (PFLU0956, PFLU5698, PFLU1349), located in the -54 to -59 region without affecting ribosomal binding sites. qRT-PCR confirmed these mutations increase transcription 5-40 fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C85-C86 describe promoter mutations with precise locations and functional validation. The qRT-PCR data (Figure 6) directly demonstrate increased transcription, confirming the proposed mechanism. The positioning away from ribosomal binding sites is consistent with promoter effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Gene fusion mutations were found in three loci (PFLU0183-0184, PFLU4306-4305, PFLU4308-4313), creating in-frame fusions between DGC-encoding genes and upstream genes. Two fusions showed 23- and 219-fold transcription increases, supporting promoter capture as the activation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 and C87-C89 describe gene fusions with molecular details. The qRT-PCR data strongly support promoter capture for two fusions (23x and 219x increases). The PFLU0184-0183 fusion shows only 3.9x increase (not significant, C89), suggesting a different or weaker mechanism. Overall well-supported with appropriate caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Double and triple mutations were found involving PFLU0458 (a putative c-di-GMP phosphodiesterase) and PFLU4744 (algZ/amrZ transcriptional activator), both with known roles in cellulose expression. Three independent double mutants had mutations in both PFLU0458 and PFLU4744.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 describe complex multi-mutation genotypes. The identification of the same gene pair (PFLU0458/PFLU4744) in three independent mutants is striking. The functional annotations are supported by domain analysis and citations to P. aeruginosa orthologs (C65) and prior work (C66, C69). The loss-of-function inference (C62) is reasonable based on early stop codons and frameshifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Reconstruction of representative mutations in the ancestral SBW25 background confirmed they are sufficient to cause the WS phenotype. All single mutants showed calcofluor and Congo red staining and colonized the air-liquid interface within 24 hours. For double/triple mutants, only combinations with PFLU4744 mutations showed cellulose staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe genetic reconstruction experiments that validate the causal role of identified mutations. The phenotypic characterization (calcofluor, Congo red, air-liquid interface colonization) is appropriate and comprehensive. The requirement for PFLU4744 in double/triple mutants (C74) is clearly demonstrated in Figure 5 supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C82"
+    ],
+    "result": "In invasion fitness assays (1:100 WS:SM), all single-mutation WS types successfully invaded with selection coefficients of 0.28-0.59 per generation. Two mutants (PFLU5698, PFLU5960) were significantly less fit than LSWS, but overall the low invasion fitness cannot account for the rarity of alternative pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C82 describe invasion fitness experiments with appropriate controls and statistics. The data (Figure 4A, 5A) show most new WS types have substantial fitness advantages. The conclusion (C78) that fitness differences don't explain pathway rarity is justified, though two mutants do show reduced fitness (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "In competition assays (1:1 vs LSWS), 7 of 13 reconstructed WS types had significantly lower fitness, including all four PFLU0085 mutants. One PFLU1349 mutant had higher fitness. Double mutants showed fitness similar to single mutants and were indistinguishable from LSWS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe direct competition experiments with statistical testing (p < 0.01, two-tailed t-test). The data (Figures 4B, 5B) clearly show fitness variation among mutants. The finding that PFLU0085 mutants have lower competitive fitness (C80) is important for understanding pathway bias. Statistical support is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C90",
+      "C91"
+    ],
+    "result": "The newly arising WS types have fitnesses similar to those from common pathways, and their rarity cannot be attributed to selective disadvantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C90-C91 synthesize the fitness data. While some new WS types show reduced fitness in competition (C79-C80), most perform well in invasion assays (C76). The overall conclusion that fitness differences don't fully explain pathway rarity is supported, though the statement 'for the most part' (C90) appropriately acknowledges variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C92",
+      "C93",
+      "C118",
+      "C119"
+    ],
+    "result": "Parallel genetic evolution is strongly biased by genetic constraints. The genotype-to-phenotype map directly affects how mutations translate into phenotypic variation, with certain pathways having greater capacity than others to generate the WS phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C92-C93, C118-C119 present the central conclusion. The experimental data showing hierarchical pathway usage (extragenic negative regulators >> intragenic negative regulators > promoters > gene fusions > activating mutations) strongly support this conclusion. The inference is logical and well-justified by the comprehensive mutational and fitness data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors propose hierarchical principles for evolution via gene activation: (1) pathways subject to negative regulation are used first, (2) then promoter mutations and gene fusions, (3) finally intragenic gain-of-function mutations. This hierarchy reflects differences in mutational target size and the greater frequency of loss-of-function vs gain-of-function mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C98-C125 describe the proposed hierarchical rules. The principles are well-supported by the observed frequency distribution of mutation types (Figure 3, Figure 7) and are consistent with established genetic principles (loss-of-function mutations are more common, C98). The target size explanation for PFLU0085 rarity (C101-C102) is logical. The rules are appropriately presented as principles rather than absolute laws.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "All newly discovered mutational routes involve DGC-encoding proteins, produce the distinctive WS colony morphology and niche preference, and over-produce cellulose. The diversity of mutations suggests mutational hotspots play only a minor role in pathway bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 summarize the phenotypic and molecular commonalities. The calcofluor/Congo red staining (C71-C72, C74) and air-liquid interface colonization (C73, C75) confirm cellulose overproduction and WS phenotype. The diversity of mutation types and locations (Figure 3) supports the conclusion about minimal hotspot influence (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "It is unclear why promoter mutations were found for only a minority of the 39 DGC-encoding genes. This may reflect the need for high transcription levels or the fact that many DGCs are regulated post-translationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 acknowledge an unexplained observation. The speculation about transcription levels (C105) is reasonable but untested. The citation to post-translational regulation (C106) provides context but doesn't fully explain the pattern. This represents an honest acknowledgment of uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The high frequency of gene fusions is surprising given their rarity in experimental evolution studies. Gene fusions could contribute to deletional bias in bacteria and provide raw material for evolution of novel gene functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 discuss the evolutionary implications of gene fusions. The comparison to the E. coli citrate evolution (C108) is appropriate. The speculation about deletional bias (C109) and novel functions (C110) is reasonable but appropriately cautious. The observation of high fusion frequency (17/91 mutants) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Rare activating mutations represent the third most common route to WS. Only one mutation was found near a DGC active site, and the authors estimate only 1 in 1000 activating mutations would directly modify the active site. This supports the theory that advantageous mutations occur primarily in regulatory regions or peripheral to catalytic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 analyze the rarity of active site mutations. The estimate (C113) is based on reasonable assumptions about pathway frequencies (Figure 7). The conclusion (C114) is supported by citations and consistent with the data. The inference is logical though the 1/1000 estimate involves assumptions about unobserved pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Double and triple mutants arose at similar frequency to rare activating mutations. While unexpected based on genome mutation rates, their detection is not uncommon and has been explained by transient phenotypic mutators in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 address the surprising frequency of multi-mutation genotypes. The observation (C115) is clear from the data (5/91 mutants). The citations to Drake (2007) and Ninio (1991) provide established explanations for this phenomenon (C117). The acknowledgment of unexpectedness (C116) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The findings contribute to understanding parallel genetic evolution. While genetic parallelism is commonly attributed to selection, genetic architecture can be a significant contributory factor. High fitness phenotypes may never be realized due to genetic bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 discuss broader implications. The contribution to parallel evolution literature (C120) is supported by appropriate citations. The caution about attributing parallelism solely to selection (C121) is justified by the data showing pathway bias independent of fitness. The speculation about unrealized phenotypes (C122) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The existence of multiple genetic routes to a phenotype may be more common than appreciated. The findings may have relevance for understanding parallel evolution in other systems and the spectrum of genetic variants in human diseases, including cancer mutational trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C130 speculate about broader applications. While the speculation is reasonable and supported by appropriate citations, these applications remain untested. The authors appropriately use cautious language ('cautiously suggest,' 'may have value,' 'it is possible'). These are interesting hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The degree of redundancy in c-di-GMP synthesis and cellulose expression pathways is remarkable, with substantial capacity for evolutionary change by recruiting different DGC-containing proteins. This flexibility may explain the diverse modular arrangement of DGC genes among closely related bacterial strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 discuss the biological significance for bacterial regulatory networks. The observation of 13 functional pathways (plus 3 known) among 39 DGCs demonstrates substantial redundancy. The speculation about natural populations (C133) and strain diversity (C134) is reasonable and supported by citations, though not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The hierarchical rules revealed may be sufficiently general to apply to other biological settings where adaptive challenges can be solved by mutational gene activation, though this remains to be tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 propose generalizability of the principles. The authors appropriately acknowledge this is speculative and requires testing (C136). The principles are well-supported in the Pseudomonas WS system but their broader applicability is an open question. The cautious framing is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background context on evolutionary predictability and the Pseudomonas WS experimental system, including prior findings that WS evolution follows three pathways (Wsp, Aws, Mws) involving DGC activation and cellulose overproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C27 provide essential background from prior work. These are well-supported by appropriate citations to McDonald et al. (2009) and the broader literature. The description of the experimental system is accurate and provides necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

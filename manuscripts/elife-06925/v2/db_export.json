@@ -1,0 +1,1546 @@
+{
+  "submission": {
+    "id": "c229da02-f11f-40a0-9a3c-dee7bae3e8e2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:40:20.181154Z",
+    "updated_at": "2025-11-29T04:40:20.181154Z"
+  },
+  "content": [
+    {
+      "id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "submission_id": "c229da02-f11f-40a0-9a3c-dee7bae3e8e2",
+      "content_type": "manuscript",
+      "content_text": "# The activation of IgM- or isotype-switched IgG- and IgE-BCR exhibits distinct mechanical force sensitivity and threshold\n\n## Authors\n\n- Zhengpeng Wan<sup>1</sup>\n- Xiangjun Chen<sup>1</sup>\n- Haodong Chen<sup>2</sup>\n- Qinghua Ji<sup>3</sup>\n- Yingjia Chen<sup>1</sup>\n- Jing Wang<sup>1</sup>\n- Yiyun Cao<sup>1</sup>\n- Fei Wang<sup>2</sup>\n- Jizhong Lou<sup>3</sup>\n- Zhuo Tang<sup>2</sup>\n- Wanli Liu<sup>1</sup> \u2020\n\n### Affiliations\n\n1. MOE Key Laboratory of Protein Sciences Collaborative Innovation Center for Diagnosis and Treatment of Infectious Diseases School of Life Sciences Tsinghua University Beijing China\n2. Natural Products Research Center, Chengdu Institution of Biology Chinese Academy of Science Chengdu China\n3. Laboratory of RNA Biology, Institute of Biophysics Chinese Academy of Sciences Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nB lymphocytes use B cell receptors (BCRs) to sense the physical features of the antigens. However, the sensitivity and threshold for the activation of BCRs resulting from the stimulation by mechanical forces are unknown. Here, we addressed this question using a double-stranded DNA-based tension gauge tether system serving as a predefined mechanical force gauge ranging from 12 to 56 pN. We observed that IgM-BCR activation is dependent on mechanical forces and exhibits a multi-threshold effect. In contrast, the activation of isotype-switched IgG- or IgE-BCR only requires a low threshold of less than 12 pN, providing an explanation for their rapid activation in response to antigen stimulation. Mechanistically, we found that the cytoplasmic tail of the IgG-BCR heavy chain is both required and sufficient to account for the low mechanical force threshold. These results defined the mechanical force sensitivity and threshold that are required to activate different isotyped BCRs.\n\n## Introduction\n\nB lymphocytes are responsible for the protective antibody responses arising from the recognition of the pathological antigens by the surface expressed B cell receptor (BCR) (Kurosaki et al., 2010). The BCR is composed of a membrane-bound immunoglobulin (mIg) and a non-covalently associated heterodimer of Ig\u03b1 and Ig\u03b2 in a 1 mIg: 1 Ig\u03b1\u2013Ig\u03b2 heterodimer stoichiometry (Schamel and Reth, 2000; Tolar et al., 2005). BCRs are distinguished from other types of receptors by their ability to recognize a wide range of antigen molecules. In addition to the BCR's ability to recognize antigen diversity, the activation of BCR signaling is also efficiently regulated by the presentation of variable forms of antigens. These forms include antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), the Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness feature of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015). All these results suggest that the BCR is an extraordinary receptor which can efficiently discriminate the chemical and physical features of an antigen ligand.\n\nNumerous early studies have investigated how the chemical cues from the antigen determine the strength of the signaling cascade mediated by the BCR (Harwood and Batista, 2010; Pierce and Liu, 2010). However, chemical cues are not the only type of external information that is delivered to the BCRs by antigens. In fact, physical cues are another layer of important information derived from the antigens for the purposes of regulating B cell activation and subsequent responses (Liu et al., 2015). For example, a recent study by Tolar and his colleagues demonstrated that B cells used the mechanical forces to rupture the bonds between BCRs and membrane-bound antigens. The authors found that only the high affinity BCR and antigen microclusters would be internalized for antigen processing, giving a new mechanism to explain B cell affinity discrimination (Natkanski et al., 2013). Physiologically, the physical cues can also come from the stiffness of the substrates presenting the antigens. Stiffness usually describes the extent that an object can resist deformation in response to an applied force. Stiffness is quantified by Young's modulus with a measurable unit of Pascal (Pa or N/m2 or m\u22121\u00b7kg\u00b7s\u22122) (Discher et al., 2005). B cells could encounter the antigens presented on substrates with various levels of stiffness in vivo (Bachmann and Jennings, 2010). For example, viral capsid substrates presenting antigen exhibited a high degree of stiffness (45,000\u20131,000,000 kPa) (Mateu, 2012), while substrates presenting antigen on the membrane of the host cell infected by virus showed a medium level of stiffness (0.01\u20131000 kPa) (Nemir and West, 2010). Additionally, B cells can also efficiently acquire antigens that are associated with extracellular matrix (ECM) in the tissue (Ciechomska et al., 2014), which is well documented to exhibit an extraordinary range of stiffness from 0.012 to 20 kPa (Bao and Suresh, 2003; Engler et al., 2004; Paszek et al., 2005; Nemir and West, 2010). Soluble antigen in plasma has also been detected and displayed a remarkably low level of stiffness (several Pa) (Araujo Gde et al., 2012). More recently, Kam and his colleagues quantified the traction forces between T cell receptors (TCRs) and the pillar substrates presenting antigens (Bashour et al., 2014). Indeed, significant shape changes of the substrates were observed due to the bending of the pillars by TCRs after TCR and antigen recognition (Bashour et al., 2014). Since stiffer substrates are known to be more resistant to shape changes (Trappmann et al., 2012), it is reasonable to expect that antigens presented on stiffer or softer substrates will inevitably produce and deliver different mechanical forces to the BCRs. Indeed, our recent study showed that the activation of a B cell is very sensitive to the stiffness of the substrates presenting the antigens (Wan et al., 2013; Zeng et al., 2015).\n\nThus, all these studies suggest that physical cues, such as mechanical force, comprise important external information delivered to the BCRs by antigens for the purposes of regulating B cell activation and subsequent responses. However, the mechanism regulating the strength of the BCR activation in response to mechanical forces that are delivered to the BCR by the antigens on the grounding substrates remains unknown (Pierce and Liu, 2010). There are several important questions which need to be addressed. First of all, does the BCR itself have mechanosensing capability, or do B cells perform mechanosensing through the conventional mechanosensors such as lymphocyte function-associated antigen 1 (LFA-1) (Chen et al., 2010, 2012). Second, is there a threshold for BCR activation from the mechanical forces that are delivered to the BCR by the antigen? Third, how sensitive will the BCR be toward different mechanical forces above that threshold in the initiation of BCR activation? Fourth, B cells use different isotypes of BCRs to recognize antigens and initiate transmembrane activation signaling (McHeyzer-Williams and McHeyzer-Williams, 2005; Pierce and Liu, 2010). Mature naive B cells use IgM-BCRs, while memory B cells mainly use IgG-BCRs along with a small fraction that use IgE-BCRs. We do not know how IgM-BCRs expressed by naive B cells and IgG-BCRs (or IgE-BCRs) expressed by memory B cells show differences in terms of the sensitivity and threshold toward mechanical forces in their activation.\n\nA major obstacle to answer all of these questions is that it is technically challenging to set up an experimental system with predefined mechanical forces between BCR and antigen, which shall then be linked to an assay to accurately measure BCR activation. This is especially challenging since it is known that BCR activation may begin seconds after the recognition of the BCR and the antigen (Pierce and Liu, 2010). To overcome these technical difficulties, we took advantage of a platform utilizing a dsDNA-based tension gauge tether (TGT) that was recently developed by Ha and his colleagues (Wang and Ha, 2013). DNA is an excellent molecule showing force application geometry that has been accurately calculated and validated by in vitro single molecule force measurements (Albrecht et al., 2003; Lang et al., 2004). Ha and his colleagues used these TGT sensors to probe the tension on a single integrin\u2013ECM ligand (cyclic RGDfK) bond required for cell adhesion. Here, we modified this TGT system by conjugating the B1-8 BCR-specific antigen, 4-Hydroxy-3-nitrophenylacetyl (NP), to the ligand chain of the TGT system (NP-TGT). By doing so, we acquired a series of 8 TGT sensors with predefined mechanical force of 12, 16, 23, 33, 43, 50, 54, and 56 pN respectively. We analyzed the activation of BCRs in response to these TGT molecules using high resolution high speed live cell imaging techniques via total internal reflection fluorescence microscopy (TIRFM). This allowed us to determine the sensitivity and threshold for the mechanical force signal in the activation of IgM-BCR or isotype-switched IgG-BCR and IgE-BCR.\n\n## Results\n\n### The construction of B1-8-BCR-specific NP-TGT mechanical force sensors\n\nTo further our understanding of how mechanical forces influence BCR activation, we constructed the NP-TGT sensors by modifying a dsDNA-based TGT system (Wang and Ha, 2013). Each NP-TGT molecule is composed of two single-stranded DNA (ssDNA) molecules with different modifications (Figure 1A,B). The first ssDNA molecule is biotin-conjugated at different positions to provide a defined range of rupture force anchoring positions as illustrated in Figure 1B. In the original version of the TGT system utilized by Ha and his colleagues (Wang and Ha, 2013), the second ssDNA molecule was conjugated with a well-characterized integrin ligand, cyclic RGDfk peptide, to provide an integrin binding site for quantifying the mechanical force spectrum (12, 16, 23, 33, 43, 50, 54, and 56 pN) in the activation of integrin molecules. As stated by the authors (Wang and Ha, 2013), TGT molecules with modifications can provide an experimental system for the study of many other types of receptors. Here, we conjugated the B1-8-BCR-specific antigen, NP, to the second ssDNA molecule (Figure 1A,B, Figure 1\u2014figure supplement 1A). Since we just exchanged the cyclic RGDfk peptide with the NP hapten antigen and did not change the sequence and design of these dsDNA-based TGT sensors, our NP-TGT system shall have the same tension gauge scales as the one used by Ha and his colleagues (Wang and Ha, 2013). In our experimental system, each NP-TGT molecule can be recognized by the B1-8-IgM-BCRs (Figure 1A). Thus, the NP-TGT sensor that is immobilized on the surface of coverslip would be ruptured if the mechanical force applied by the B1-8-IgM-BCR is larger than the predefined tension force of a certain NP-TGT sensor. A key feature of dsDNA-based mechanical force sensor is that the specific force value of each sensor is not an absolute value but presents a distribution with a full width at half maximum (FWHM) of 5 pN for unzipping rupture mode and 15 pN for shearing rupture mode (Lang et al., 2004). So, precisely, the actual range of any given NP-TGT sensor represents a distribution with the most possible value of rupture force at 12, 16, 23, 33, 43, 50, 54, and 56 pN, respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the NP-TGT and NP-specific B1-8-BCR expressing B cells. NP-TGT molecule is immobilized on the surface of coverslip, which will get ruptured if the mechanical force applied by the B1-8-BCR is larger than the predefined tension force of a certain NP-TGT (for example 56 pN is depicted in the figure). FITC-conjugated anti-NP antibody is used to quantify the molecule density of each different type of NP-TGT sensors tethered on coverslip. (B) The dsDNA geometries and predefined tension force of all eight NP-conjugated TGT sensors and one control TGT without NP conjugation. (C) Representative TIRFM images showing the dynamics of the synaptic accumulation of BCRs from J558L cells expressing B1-8-IgM-BCR in contact with coverslip presenting 56 pN NP-TGT sensor or control TGT (NC) at the indicated time points. Scale bar is 1.5 \u03bcm. (D) Comparisons of averaged traces showing the dynamic accumulation of BCRs as demonstrated in (C) in a 13 min TIRFM imaging time course. Bars represent mean \u00b1SEM. Data were from at least 20 cells over three independent experiments. (E) Primary mature naive B cells from wild-type C57BL/6 mice expressing non-NP-specific IgM-BCR did not initiate the activation when encountering 56 pN NP-TGT sensor compared to the response of the same B cells encountering 56 pN TGT sensor without NP conjugation. Biotin-conjugated goat anti-mouse IgM surrogate antigens were used as a positive control to efficiently drive the synaptic accumulation of IgM-BCRs in B cell activation. Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were from at least 30 cells over three independent experiments. (F) Quantification of the mean fluorescence intensity (MFI) of FITC-conjugated NP-specific antibodies on the surface of coverslip tethering the same amount of NP-TGT sensors. Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. The surface density is 29.0 molecule/\u00b5m2, seeing more in Figure 2\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The quality control of the purified NP-ssDNA by mass spectrum. (B, C) No obvious dissociation of the neutravidin was detected in a 10 min incubation time course. In B, two-color TIRF images showing the formation of a typical immunological synapse (IS) of a single B cell (BCR, red color) and the corresponded Alexa488-conjugated neutravidin within the B cell IS. Also given are control neutravidin TIRF images from an area without B cells. Scale bar is 5 \u03bcm. In C, the statistical analyses of the MFI of Alexa488-conjugated neutravidin from the area on coverslip without B cells (no cell region) vs the case within the area of B cell IS (beneath the cell) that were induced by 12 pN, 43 pN or 56 pN NP-TGT sensors and a negative control 56 pN TGT without NP conjugation (NC). (D) Statistical analyses for the MFI of FITC-conjugated NP-specific antibodies to show that NP-TGT can only be coated to coverslip in a neutravidin-dependent manner. (E) Quantification of the synaptic accumulation of IgM-BCRs in J558L cells expressing naive B1-8-IgM-BCR to show that non-specific NP-TGT that were tethered on coverslip in a neutravidin-independent manner cannot activate B cells. J558L cells expressing naive B1-8-IgM-BCR were either placed on neutravidin-coated coverslip that were incubated with 56 pN NP-TGT sensor or placed on neutravidin-non-coated coverslip that were incubated with indicated types of NP-TGT sensors. NC represents 56 pN TGT sensor without NP conjugation. In figure C, D, and E, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were from at least 30 cells or 20 measurements in each group of two independent experiments.\n\nWe first determined whether the NP-TGT sensor can trigger the activation of the B cells expressing B1-8-IgM-BCR. We used a similar protocol as reported (Wang and Ha, 2013) to tether the highest force NP-TGT molecule (mean rupture force 56 pN in the condition they used) with NP-conjugated ssDNA on coverslip pre-coated with neutravidin. We also used the same TGT molecule without NP conjugation as a negative control (NC) (Figure 1B). DyLight 649 AffiniPure Fab Fragment Goat Anti-Mouse IgM, \u00b5 chain specific antibodies was used to pre-label the B1-8-IgM-BCRs on J558L cells (J558L cells expressing B1-8-IgM-BCR) before TIRFM imaging experiment as reported in our previous studies (Liu et al., 2010a). We found that J558L cells expressing B1-8-IgM-BCR initiated the activation responses as quantified by the dramatic accumulation of BCRs into the contact interface of B cells with coverslip presenting 56 pN NP-TGT sensor and formed a typical B cell immunological synapse (IS) as illustrated by the time lapse TIRFM images (Figure 1C,D, Video 1). These results were not observed with the negative control (NC) 56 pN TGT without NP conjugation (Figure 1C,D, Video 1). Additional experiments showed that neutravidin would not dissociate from the coverslip during the 10-min time course of our experiments (Figure 1\u2014figure supplement 1B,C), and NP-TGT can only be attached to coverslip in a neutravidin-dependent manner (Figure 1\u2014figure supplement 1D). Further experiments also indicated that the non-specific attachment of NP-TGT molecules if any on the coverslip without pre-coated neutravidin cannot induce the synaptic accumulation of BCRs (Figure 1\u2014figure supplement 1E).\n\n![Video 1.](https://cdn.elifesciences.org/articles/06925/elife-06925-media1.avi.jpg)\n\n**Video 1.:** Scale bar is 1.5 \u03bcm. The video was recorded with a 4-s time interval and is shown at 30 frames per second. Related to Figure 1C.\n\nSince TGT is a dsDNA-based molecule, we were concerned that dsDNA may directly stimulate B cells in a BCR-independent manner. To check it, we examine the NP-TGT-triggered responses of primary mature naive B cells from wild-type C57BL/6 mice, which do not express NP-specific B1-8-IgM-BCRs (Figure 1E). These primary B cells did not accumulate BCRs into the B cell IS in response to coverslip presenting NP-TGT sensor compared to the case of coverslip alone, although a dramatic accumulation was readily observed in the case of encountering coverslip that was coated with anti-mouse IgM surrogate antigens as a positive control (Figure 1E). The B cell activation is known to be very sensitive to the density of antigen on the surface of the antigen-presenting substrates (Fleire et al., 2006; Liu et al., 2010a). To exclude such a variant, we then used NP-specific antibodies to quantify the density of each NP-TGT sensor (Figure 1F). Thus, we established the B1-8-BCR-specific NP-TGT sensor system which showed a predefined mean mechanical force gauge ranging from 12 to 56 pN.\n\n### The synaptic accumulation of the IgM-BCRs is dependent on mechanical forces and exhibits a multi-threshold effect\n\nWe compared the response of naive B1-8-IgM-BCR expressing B cells after immune recognition of these series of NP-TGT molecules. Numerous early studies showed that after BCR-antigen recognition, B cells immediately begin to spread over the antigen-containing surfaces to form the B cell IS and attempt to acquire the antigens by actively accumulating BCRs and antigens into the B cell IS (Fleire et al., 2006; Liu et al., 2010a, 2010b, 2010c; Seeley-Fallen et al., 2014). Thus, we first examined the B cell spreading response and the concomitant accumulation of BCRs into the B cell IS by TIRFM imaging using J558L cells expressing B1-8-IgM-BCR in NP-TGT-based experimental system (Figure 2A). The results suggested that NP-TGT sensors with higher mechanical force generally triggered more aggressive spreading response and enhanced BCR synaptic accumulation than NP-TGT molecules with lower mechanical force (Figure 2A\u2013C). More strikingly, a careful examination of the response of B cells toward these series of NP-TGT sensors with mechanical forces ranging from 12 to 56 pN suggested that there are three levels of thresholds. The low-force (12\u201316 pN) NP-TGT sensors triggered a weak activation, whereas the middle-force (23\u201343 pN) NP-TGT sensors initiated a medium-level activation, and the high-force (50\u201356 pN) NP-TGT sensors accounted for a strong activation (Figure 2A). This unique pattern of the dependence on mechanical forces suggested that IgM-BCR activation exhibits a multi-threshold effect. Specifically, an increase of the mechanical force from one threshold to another threshold dramatically enhanced the activation of the naive IgM-BCRs. However, within these three threshold barriers, increasing the mechanical force, such as from 23 pN to 33 pN or to 43 pN (the medium level threshold), will not result in dramatically enhanced activation responses of IgM-BCRs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Statistical quantification of the synaptic recruitment of IgM-BCR in J558L cells expressing naive B1-8-IgM-BCR (A) and primary naive B cells expressing B1-8-IgM-BCR (B). Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data are from at least 40 cells over three independent experiments. (C) Representative TIRFM images showing the dynamics of the synaptic accumulation of IgM-BCRs from J558L cells expressing naive B1-8-IgM-BCR in contact with coverslip presenting 12 pN, 43 pN or 56 pN NP-TGT sensors at the indicated time points. Scale bar is 1.5 \u03bcm. (D, E) Comparisons of averaged traces showing the dynamic accumulation of naive IgM-BCRs into the immunological synapse (D) and the growing features of the size of contact area (E) for J558L cells expressing naive B1-8-IgM-BCR as demonstrated in (C) in a 10 min TIRFM imaging time course. Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data are from at least 20 cells over two independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Statistical analyses of the size of the contact area of primary naive B cells expressing B1-8-IgM-BCR from B1-8 Tg mice when encountering of the indicated types of NP-TGT sensors. (B) The representative image of NP-TGT molecule indicated by FITC-conjugated NP-specific antibodies within a counting area (473.1 \u03bcm2). Scale bar is 1.5 \u03bcm. (C) The conversion and strong linear correlation between the MFI and the density of FITC-conjugated NP-specific antibody on coverslip. NP-specific antibody was used to indicate the density of NP-TGT sensor on coverslip. The surface density is quantified at the appropriate incubation concentration of NP-TGT sensor to achieve well-separated and approximately round spots in TIRF imaging (B), which were subsequently analyzed by a Matlab supported 2D Gaussian fitting code (Source code 1) to perform the counting as reported in our previous studies (Liu et al., 2010a). The equation of the fitted linear regression is: Surface density (per counting area, about 473.1 \u03bcm2) = 2.42 \u00d7 MFI, R square value for the linear fitting is 0.99. (D) Quantification of the MFI of NP-specific antibody on the coverslip at different incubation concentration of NP-TGT sensor. (E) Surface density of NP-TGT sensors at different incubation concentration when were coated on coverslip as calculated by combining the data in C and D. (F, G) Quantification of the synaptic accumulation of IgM-BCRs in J558L cells expressing naive B1-8-IgM-BCR (F) or primary naive B cells expressing B1-8-IgM-BCR (G) that were placed on coverslip coated with surface density of 4.0 molecule/\u03bcm2 of 12 pN, 43 pN, and 56 pN NP-TGT sensors. Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were from at least 30 cells over three independent experiments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative confocal images showing the efficient internalization of BCR and antigen molecules in primary naive B cells expressing B1-8-IgM-BCR from B1-8 Tg mice that were interacted with soluble NP8-BSA for 10 min. Scale bar is 1.5 \u03bcm. (B) Side view confocal images showing the lack of internalization of the pre-stained BCR molecules in primary naive B cells expressing B1-8-IgM-BCR from B1-8 Tg mice that were placed on coverslip presenting 12 pN, 43 pN or 56 pN NP-TGT sensors for 10 min. B cells were pre-stained with DyLight 649 AffiniPure Fab Fragment Goat Anti-Mouse IgM, \u00b5 Chain Specific antibodies before the imaging experiment. Scale bar is 2 \u03bcm. (C) Statistical quantification of the percentage of B cells with internalization of BCRs as represented in A and B. (D) Statistical quantification to show that B cell internalization can be blocked by MDC inhibitor in the condition that the B cells were pretreated by MDC before were activated for 10 min by soluble NP8-BSA as represented in A. (E, F) The synaptic accumulation of IgM-BCRs in primary naive B cells expressing B1-8-IgM-BCR from B1-8 Tg mice in contact with the indicated types of NP-TGT sensors. In this experiment, B cells were pretreated with either DMSO or MDC following a protocol as detailed in \u2018Materials and methods\u2019 section. Cross comparison strategy were used in these figures. In all of these plots, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were at least from 30 cells or 15 measurements in each group of three independent experiments.\n\nWe also validated these observations by analogously examining the activation response of primary mature naive B cells expressing B1-8-IgM-BCR from IgHB1-8/B1-8 Igk\u2212/\u2212 transgenic mice (referred to as primary naive B cells expressing B1-8-IgM-BCR) (Hauser et al., 2007) upon the recognition of these NP-TGT sensors (Figure 2B, Figure 2\u2014figure supplement 1A). Furthermore, we were concerned that the density of the NP-TGT sensors on coverslip might affect the pattern of the activation response of the naive IgM-BCRs. Thus, we quantified the density (number of molecules/\u00b5m2) of NP-TGT sensors on the coverslip, which was coated with different incubation concentration (2, 5, 10, 50 nM) of NP-TGT sensor (Figure 2\u2014figure supplement 1B\u2013E) following a published protocol (Liu et al., 2010a; Wang and Ha, 2013). At the density of 4.0 NP-TGT molecule/\u00b5m2 (5 nM incubation concentration), we can capture the same pattern of the activation response of IgM-BCRs (Figure 2\u2014figure supplement 1F,G). At the very low density of 0.3 NP-TGT molecule/\u00b5m2 (2 nM incubation concentration), we found that only 56 pN NP-TGT sensor can very mildly trigger the BCR accumulation, while both 12 pN and 43 pN NP-TGT failed to trigger B cell activation (data not shown), suggesting that we cannot use the incubation concentration of 2 nM for these experiments. Thus, it is clear that the activation of the IgM-BCR is extremely sensitive to the changes in mechanical forces exceeding the thresholds such as the increase in the forces from 12 pN to 23 pN instead of 16 pN, or from 23 pN to 56 pN instead of 43 pN. In the following experiments, we chose the 12 pN, 43 pN, and 56 pN NP-TGT molecules in each of the three threshold barriers (low, medium, and high) for further analyses.\n\nTo investigate the temporal dependence of BCR accumulation into the B cell IS on mechanical forces, we took advantage of high speed time lapse TIRFM imaging to test the dynamics of BCR accumulation into the B cell IS and the growing size of contact area starting with the initial immune recognition of BCRs with 12 pN, 43 pN, and 56 pN NP-TGT sensors (Figure 2C\u2013E, Video 2). As expected, we found that the synaptic accumulation of the BCRs in the entire 10-min time lapse was dependent on mechanical forces with high-force NP-TGT sensor (56 pN) exhibiting the highest accumulation, medium force NP-TGT sensor (43 pN) showed medium-level accumulation, and low-force NP-TGT sensor (12 pN) had the lowest level of accumulation, consistent with the results from the above mentioned end point experiments. Using these NP-TGT molecules, we also showed that there were no obvious internalization during the 10-min time course of our experiments (Figure 2\u2014figure supplement 2A\u2013C), consistent with the published studies (Fleire et al., 2006; Natkanski et al., 2013). These results suggest that the internalization of BCR and antigen molecules did not contribute to the different levels of the accumulation of the IgM-BCRs into the B cell IS in response to different NP-TGT sensors with different mean rupture forces. Indeed, B cells that were pretreated with monodansylcadaverine (MDC), an inhibitor to block B cell internalization (Tolar et al., 2005; Liu et al., 2010a), also exhibited the dependent on mechanical forces in the synaptic accumulation of the IgM-BCRs (Figure 2\u2014figure supplement 2D\u2013F).\n\n![Video 2.](https://cdn.elifesciences.org/articles/06925/elife-06925-media2.avi.jpg)\n\n**Video 2.:** Scale bar is 1.5 \u03bcm. The video was recorded with a 4-s time interval and is shown at 30 frames per second. Related to Figure 2C.\n\n### The volume of the IgM-BCR microcluster produced by different NP-TGT sensors is dependent on mechanical forces and exhibits a similar multi-threshold effect\n\nBCR microclusters have been demonstrated to serve as the most basic platform for the investigation of the initiation of BCR signaling by our studies and those of others (Harwood and Batista, 2010; Pierce and Liu, 2010). We thus assessed the volume of the BCR microclusters produced by the series of NP-TGT sensors by quantifying the fluorescence intensity (FI) of each individual BCR microcluster. We mathematically fitted each BCR microcluster using a 2D Gaussian function as reported earlier (Source code 1) (Liu et al., 2010a). We similarly observed that the volume of the BCR microclusters is dependent on the strength of the mechanical force with 56 pN NP-TGT sensors producing much bigger and brighter BCR microclusters than 43 pN and 12 pN NP-TGT molecules (Figure 3A,B). The multi-threshold effect was also observed when we analyzed the volume of the generated BCR microclusters. NP-TGT molecules with low mean rupture force (12\u201316 pN) triggered the formation of small BCR microclusters, whereas NP-TGT sensors with medium mean rupture force (23\u201343 pN) initiated medium-level volume BCR microclusters, and NP-TGT molecules with high mean rupture force (50\u201356 pN) accounted for bigger and brighter BCR microclusters (Figure 3A,B). Thus, the volume of the IgM-BCR microcluster produced by different NP-TGT sensors is dependent on mechanical forces and exhibits a similar multi-threshold effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative original (top panel), pseudo-colored 2D (middle panel), and 2.5D Gaussian images (bottom panel) of typical BCR microclusters induced by 12, 16, 23, 33, 43, 50, 54, and 56 pN NP-TGT sensors. Scale bar is 1.5 \u03bcm. (B) Statistical comparison of FI of hundreds of BCR microclusters in the immunological synapse in J558L cells expressing naive B1-8-IgM-BCR encountering NP-TGT sensors with indicated tension force. Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data are from at least 30 cells over three independent experiments.\n\n### The strength of IgM-BCR signaling is dependent on mechanical forces\n\nNext, we examined the initiation of BCR signaling in B cells when encountering the 12 pN, 43 pN, and 56 pN NP-TGT molecules by quantifying the accumulation of pSyk, pPLC\u03b32, and pTyr molecules into the B cell IS using the TIRFM image analysis method as reported in our earlier studies (Liu et al., 2010b) and those of others (Fleire et al., 2006; Liu et al., 2012a). All of these signaling molecules play essential roles in the transmembrane signaling transduction of BCR. For example, Syk binds to the phosphorylated Immunoreceptor tyrosine-based activation motif (ITAM) on the cytoplasmic tail of Ig\u03b1 and Ig\u03b2, and subsequently Syk will undergo auto-phosphorylation at multiple tyrosine sites within its linker regions to be converted to a signaling active form (Saouaf et al., 1994). The phosphorylated Syk also provides docking sites for PLC\u03b32 (Weber et al., 2008). We found that the membrane proximal recruitment of each of these signaling molecules is dependent on mechanical forces with the 56 pN NP-TGT sensors showing the highest recruitment, while the 43 pN NP-TGT sensors had a medium level of recruitment and the 12 pN NP-TGT sensors had the lowest level of recruitment (Figure 4A\u2013C), consistent with the results from the above mentioned experiments quantifying the synaptic accumulation of the BCR molecules (Figure 2A,B). We also analyzed the volume of these signaling molecule microclusters by quantifying the FI of the microclusters and confirmed that the FI of pSyk, pPLC\u03b32, and pTyr microclusters produced by different NP-TGT molecules is dependent on mechanical force with a similar multi-threshold effect (Figure 4D\u2013F). Thus, it was clear that the strength of the initiated IgM-BCR signaling is dependent on mechanical forces.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Statistical quantification of the synaptic recruitment of pSyk (A), pPLC\u03b32 (B), and pTyr (C) in primary naive B cells expressing B1-8-IgM-BCR that were placed on coverslip presenting 12 pN, 43 pN or 56 pN NP-TGT sensors. (D\u2013F) Statistical comparison of the volume of pSyk (D), pPLC\u03b32 (E), or pTyr (F) microclusters in J558L cells expressing naive B1-8-IgM-BCR that were produced by 12 pN, 43 pN, or 56 pN NP-TGT molecules. In all of these plots, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were at least from 30 cells of three independent experiments.\n\n### The outside-in activation of integrin enhances the strength of IgM-BCR activation but does not change its patterned dependence on mechanical forces\n\nWe explored whether the conventional mechanosensor integrin LFA-1 expressed on the surface of B cells influences the patterned dependence on the mechanical forces in B cell activation. To address this question, we co-tethered both NP-TGT sensors and the adhesion molecule, intercellular adhesion molecule 1 (ICAM-1, which is a ligand for integrin LFA-1) on the surface of coverslip and similarly performed TIRFM imaging experiments. The addition of ICAM-1 dramatically enhanced the synaptic accumulation of the BCRs (Figure 5A), suggesting the increased sensitivity to antigen stimulation in the initiation of B cell activation, consistent with the published studies in both the BCR (Carrasco et al., 2004) and TCR system (Bachmann et al., 1997; Dustin, 2009). However, it was clear that the outside-in activation of integrin did not change the fact that B cell activation is dependent on mechanical forces with a similar multi-threshold effect (Figure 5B). To further confirm this conclusion, we inactivated the function of focal adhesion kinase (FAK), a member of the non-receptor protein-tyrosine kinase family, that is known to play a key role in the activation of integrin signaling pathways (Slack-Davis et al., 2007; Yu et al., 2012; Bashour et al., 2014). We pretreated B cells with FAK-specific inhibitor PF573-228 (Slack-Davis et al., 2007). We found that the pretreated B cells still maintained the general patterned dependence on mechanical forces with a multi-threshold effect (Figure 5C,D, Figure 5\u2014figure supplement 1A). However, it was clear that the high-end (56 pN) and medium-level (43 pN) but not low-end (12 pN) mechanical force threshold was more influenced by the inactivation of integrin, suggesting that the breakthroughs of the medium-level and high-end threshold of mechanical forces are partially supported by the inside-out activation of integrin.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig5-v2.jpg)\n\n**Figure 5.:** (A, B) The synaptic accumulation of IgM-BCRs in primary naive B cells expressing B1-8-IgM-BCR in contact with the indicated types of NP-TGT sensors with or without ICAM-1 co-tethering. Cross comparison strategy were used in these figures. (C\u2013H) The synaptic accumulation of IgM-BCRs in primary naive B cells expressing B1-8-IgM-BCR in contact with the indicated types of NP-TGT probes. In this experiment, primary naive B cells expressing B1-8-IgM-BCR were pretreated with DMSO as a control in combination with FAK inhibitor (C, D), myosin IIA inhibitor (E, F) or dynein inhibitor (G, H) following a protocol that was detailed in \u2018Materials and methods\u2019 section. Cross comparison strategy were used in these figures. In all of these plots, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were at least from 30 cells in each group of three independent experiments.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Positive control experiments were performed to show that each inhibitor used in Figure 5 is working. These experiments showed that FAK inhibitor significantly reduced the size of the contact area of B cells that were placed on coverslip presenting antigens, consistent with the reported function of FAK inhibitor (Mlinaric-Rascan and Yamamoto, 2001) (A); Myosin IIA inhibitor dramatically reduced the proportion of B cells with internalized Alexa488-conjugated NP8-BSA antigen in the soluble format after reaction for 30 min, consistent with the reported function of Myosin IIA inhibitor (Vascotto et al., 2007) (B); Dynein inhibitor dramatically reduced the formation of cSMAC structure in B cell that were placed on planar lipid bilayers presenting antigens for 20 min, consistent with the reported function of Dynein inhibitor (Schnyder et al., 2011) (C). In all of these plots, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were at least from 30 cells or at least 15 measurements in each group of three independent experiments.\n\n### The high-end but not low-end mechanical force threshold is dependent on myosin IIA in IgM-BCR activation\n\nMotor proteins including myosin IIA and dynein are known to play important roles in B cell activation. There are recent studies showing that B cells utilize the contraction forces generated by myosin IIA to rupture the interaction between the BCR and antigen molecules (Natkanski et al., 2013), while dynein is required for the retrograde motile feature of the BCR microclusters into the center of B cell IS (Schnyder et al., 2011). Thus, we assessed the contribution of these two motor proteins to the patterned dependence on mechanical forces during IgM-BCR activation. Unexpectedly, the inactivation of myosin IIA did not dramatically change the dependence on mechanical forces, however we observed a significant drop in the strength of the synaptic accumulation of the BCRs for the high threshold NP-TGT sensor at 56 pN only, and no drop was observed for the medium-level threshold NP-TGT sensor at 43 pN, nor the low threshold NP-TGT sensor at 12 pN (Figure 5E,F, Figure 5\u2014figure supplement 1B). On the other hand, when inactivating dynein, we did not observe significant changes in the BCR accumulations compared to DMSO controls (Figure 5G,H, Figure 5\u2014figure supplement 1C). All of these results suggest that the breakthroughs of the high-end but not the medium-level and low-end thresholds of mechanical forces are supported by myosin IIA.\n\n### The activation of isotype-switched IgG-BCRs or IgE-BCRs on memory B cells requires either no tension or a mechanical force below 12 pN\n\nB cells use different isotypes of BCRs to recognize antigens and to initiate transmembrane activation signaling. Mature naive B cells use IgM-BCRs (termed naive IgM-BCR thereafter), while memory B cells mainly use IgG-BCRs (termed memory IgG-BCR thereafter) with a fraction of these use IgE-BCRs (termed memory IgE-BCR thereafter). Memory B cells are responsible for the rapid antigen recall humoral responses upon vaccine immunization (McHeyzer-Williams and McHeyzer-Williams, 2005; Pierce and Liu, 2010). Here, we explore the sensitivities and thresholds toward mechanical forces in the activation of memory B cells expressing isotype-switched IgG-BCRs or IgE-BCRs. We addressed this question using J558L cells expressing memory B1-8-IgG-BCR in the same experimental system that has been used for the naive B1-8-IgM-BCR-expressing J558L cells as described in detail above. Surprisingly, we observed a totally different pattern in terms of the dependence on mechanical forces for the activation of memory IgG-BCRs. Each of the three NP-TGT sensors producing mechanical forces at 12, 43, or 56 pN similarly drove the cells to undergo spreading responses and the synaptic accumulation of BCRs or pSyk signaling molecules into the IS (Figure 6A\u2013D). This suggested that the activation of memory IgG-BCRs requires either no tension or a mechanical force below the mean rupture force of the lowest-force NP-TGT we used (12 pN). Similar patterned activation of memory IgG-BCR was observed at different surface density of NP-TGT sensors on coverslip (Figure 6\u2014figure supplement 1A\u2013C). Furthermore, a similar phenomenon was observed when examining the activation of B1-8 primary B cells expressing memory IgG-BCRs that were derived from an in vitro class-switch response following our published protocol (Liu et al., 2010b) (Figure 6E,F). We also used high speed TIRFM imaging to test the dynamics of memory IgG-BCR accumulation into the B cell IS starting with the initial immune recognition of memory IgG-BCRs with 12 pN, 56 pN and NP non-conjugated control TGT molecules within a 13-min time course (Figure 6G,H, Video 3). It was clear that 12 pN and 56 pN NP-TGT molecules similarly drove the accumulation of BCRs into the B cell IS. All of these results show that the activation of the memory IgG-BCR is independent on mechanical forces ranging from 12 to 56 pN as tested in our NP-TGT experimental system.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Statistical quantification of the synaptic accumulation of IgG-BCR and the volume of the contact area of J558L cells expressing memory B1-8-IgG-BCR encountering 12 pN, 43 pN, or 56 pN NP-TGT sensors. (C, D) Statistical analyses of synaptic accumulation of pSyk accumulation (C) and the volume of pSyk microcluster (D) in response to 12 pN, 43 pN, or 56 pN NP-TGT sensors. (E, F) Quantification of the synaptic accumulation of IgG-BCRs (E) or pSyk (F) in memory B cells expressing isotype-switched B1-8-IgG-BCR from B1-8 Tg mice that were placed on coverslip presenting 12 pN, 43 pN, or 56 pN NP-TGT probes. (G) Representative TIRFM images showing the dynamics of the synaptic accumulation of IgG-BCRs from J558L cells expressing memory B1-8-IgG-BCR in contact with coverslip presenting 12 pN, 56 pN NP-TGT sensor, or control TGT (NC) molecule at the indicated time points. Scale bar is 1.5 \u03bcm. (H) Comparisons of averaged traces showing the dynamic accumulation of memory IgG-BCRs as demonstrated in (G) in a 13 min TIRFM imaging time course. Bars represent mean \u00b1SEM. Data were from at least 20 cells over three independent experiments. (I\u2013L) Statistical analyses of the synaptic accumulation of two types of chimeric BCRs and pSyk, Human mIgE heavy chain (I, J), or Human mIgM heavy chain (K, L) with mouse B1-8 variable region in human Ramos B cells encountering 12 pN, 43 pN, or 56 pN NP-TGT sensors. In all of these plots, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were from at least 30 cells in each group of three independent experiments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013C) Quantification of the synaptic accumulation of IgG-BCRs in J558L cells expressing memory B1-8-IgG-BCR that were placed on coverslip coated with NP-TGT sensors at a density of 29.0 molecule/\u03bcm2 (A), 19.0 molecule/\u03bcm2 (B), and 0.3 molecule/\u03bcm2 (C). 12 pN NP-TGT, 56 pN NP-TGT, and 56 pN TGT molecule without NP conjugation (NC) were used in the experiment. Bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were from at least 30 cells over three independent experiments.\n\n![Video 3.](https://cdn.elifesciences.org/articles/06925/elife-06925-media3.avi.jpg)\n\n**Video 3.:** Scale bar is 1.5 \u03bcm. The video was recorded with a 4-s time interval and is shown at 30 frames per second. Related to Figure 6G.\n\nNext, we examined the dependence on mechanical forces in terms of the activation of memory IgE-BCRs in Ramos human B cells expressing memory B1-8-IgE-BCRs. Here, we similarly observed that the activation of memory IgE-BCRs require either no tension or a mechanical force below 12 pN (Figure 6I,J). As a system control, it was clear that the activation of the naive B1-8-IgM-BCRs expressed in Ramos B cells was also dependent on mechanical force with a multi-threshold effect (Figure 6K,L). Conclusively, it was clear that the activation of the memory IgG-BCRs or IgE-BCRs requires either no mechanical force or a force lower than that provided by the 12 pN NP-TGT, highlighting the significant low threshold for the activation of memory IgG-BCR or IgE-BCR that are typically expressed on memory B cells compared to the case of the naive IgM-BCR on mature naive B cells. All these results provide new explanations for the rapid and high-titered IgG antibody responses upon re-encounter with antigen by memory B cells.\n\n### The lower mechanical force threshold of memory IgG-BCR activation is dependent on its cytoplasmic tail\n\nThe unexpected extremely low mechanical force threshold (might be less than 12 pN or even lower) for the memory IgG-BCR but not the naive IgM-BCR activation drove us to ask the next question: why does the memory IgG-BCR behave differently from the naive IgM-BCR? This question is especially intriguing as both memory IgG-BCR and naive IgM-BCR use the exact same BCR component, the Ig\u03b1 and Ig\u03b2 heterodimer, to initiate BCR signaling. In contrast, the mIgG and the mIgM are the BCR components to recognize the antigens (Schamel and Reth, 2000; Tolar et al., 2005). In addition to the constant region of the Ig, mIgG and mIgM also differ greatly in their cytoplasmic domain. In fact, mIgM has only three-amino acids in its cytoplasmic tail (KVK), while all mIgG subtypes have 28-amino acid cytoplasmic tails, which are extremely conserved across species (Reth, 1989; Tarlinton, 1997; Liu et al., 2010a, 2012b). Early mice model studies utilizing biochemical assays and live cell imaging demonstrated that the cytoplasmic tail of mIgG is both necessary and sufficient to confer an enhanced activation of IgG-BCR expressing memory B cells compared to the case of IgM-BCR expressing naive B cells (Kaisho et al., 1997; Martin and Goodnow, 2002; Wakabayashi et al., 2002; Horikawa et al., 2007; Waisman et al., 2007; Engels et al., 2009; Liu et al., 2010b, 2012b; Engels et al., 2014). To examine the contribution of the cytoplasmic tail of mIgG in the low mechanical force threshold for the activation of the memory IgG-BCR, we took advantage of the four types of J558L cells expressing naive B1-8-IgM-BCR and memory B1-8-IgG-BCR with cytoplasmic tail swapped forms as reported in our previous study (Liu et al., 2010b): (1) memory B1-8-IgG-BCR; (2) mIgG swapped with a mIgM cytoplasmic tail (memory B1-8-IgG-BCR equipped with a mIgM cytoplasmic tail, termed GGM thereafter); (3) naive B1-8-IgM-BCR; (4) mIgM swapped with a mIgG cytoplasmic tail (naive B1-8-IgM-BCR equipped with a mIgG cytoplasmic tail, termed MMG thereafter) (Figure 7A). We found that the J558L cells expressing GGM showed the force dependent activation by accumulating more BCRs and pSyk into the IS with the higher mean rupture force NP-TGT molecules, similar to the case of J558L cells expressing naive B1-8-IgM-BCR (Figure 7B\u2013D). In contrast, it was apparent that the J558L cells expressing MMG behaved similarly to the case of J558L cells expressing memory B1-8-IgG-BCR in a force-independent manner (Figure 7E\u2013G). All of these results suggested that the lower mechanical force threshold of memory IgG-BCR activation depends on its cytoplasmic tail.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06925/elife-06925-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic illustration of the strategy of swapping the cytoplasmic tail of B1-8-IgG- or B1-8-IgM-BCRs. (B\u2013G) Quantification of the synaptic accumulation of BCRs in J558L cells expressing memory B1-8-IgG-BCR (B), J558L cells expressing memory B1-8-IgG-BCR equipped with a mIgM cytoplasmic tail, termed GGM (C), J558L cells expressing naive B1-8-IgM-BCR (E) and J558L cells expressing naive B1-8-IgM-BCR equipped with a mIgG cytoplasmic tail, termed MMG (F). Also given are the synaptic accumulations of pSyk in GGM (D) and MMG cells (G). In all of these plots, bars represent mean \u00b1SEM. Two-tailed t tests were performed for the statistical comparisons. Data were from at least 30 cells in each group of three independent experiments.\n\n## Discussion\n\nB cells produce protective antibodies against pathogens. Antibody response is originated from the activation of B cells upon BCR and antigen recognition. As mentioned earlier, the antigens recognized by B cells in vivo exhibit great diversities including antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015). All these studies demonstrated that BCR is an extraordinary receptor which can efficiently discriminate the chemical and physical features of an antigen ligand. That raises a long-standing question in immunological studies that how possible the strength of BCR activation can be so complicated and efficient to combine sensitivity, threshold, speed, specificity, affinity, and substrate stiffness discriminatory power?\n\nIn this report, we modified the dsDNA-based TGT developed by Ha and his colleagues (Wang and Ha, 2013) to acquire a series of 8 NP-TGT sensors with predefined mean rupture force from low to high, respectively (12, 16, 23, 33, 43, 50, 54 and 56 pN at the condition in the original study). The use of these NP-TGT molecules in combination with the high resolution high speed live cell imaging technique through TIRFM allows us to investigate several intriguing questions: (1) Does the BCR itself possess any mechanosensing properties? (2) Is there a threshold for BCR activation from the mechanical forces that are delivered to BCR by antigen? (3) How sensitive the BCR will be toward different mechanical forces above that threshold in BCR activation?\n\nSupported by NP-TGT system, for the first time, we demonstrated that IgM-BCR activation is in a mechanical force dependent manner by providing evidence that high mean rupture force NP-TGT sensors which can stand for high-force load-triggered more aggressive spreading response and the enhanced BCR signaling than low mean rupture force NP-TGT sensors. Since such a patterned dependence on mechanical force in the initiation of IgM-BCR does not strictly rely on integrin or adhesion molecule, we propose that IgM-BCR alone could function as a mechanosensor. The performance of IgM-BCRs in TGT-based mechanical force experimental system is mostly consistent with the reported findings on integrin molecules (Wang and Ha, 2013). However IgM-BCR and integrin also exhibit some obvious differences in their respective responding pattern to the same mechanical force spectrum (12 pN\u201356 pN) produced by TGT sensors.\n\nFirst of all, 12 pN NP-TGT sensor, the one enduring the smallest mechanical force, can induce the mild but consistent activation of B1-8-naive IgM-BCR when was compared to the control TGT without the conjugated NP antigen. Though, it is a fact that the strength of such activation produced by 12 pN NP-TGT sensor is dramatically weaker than those produced by other NP-TGT molecules bearing higher force (such as 56 pN NP-TGT). In contrast, integrin does not seem to get activated under 12 pN or even 16 pN TGTs (Wang and Ha, 2013). These results suggested that the initiation of BCR signaling could be extremely sensitive to mechanical forces. BCR might rely on such fine sensitivity to initiate its signaling cascade during the surveillance for non-self-antigens that could be of very low density. Subsequently, those initially weak signals could be further boosted by other well-characterized mechanisms through activating co-receptors (such as CD19) (Depoil et al., 2008) or co-stimulatory factors (such as LFA-1) (Spaargaren et al., 2003; Carrasco et al., 2004; McLeod et al., 2004; Dustin et al., 2006; Tseng et al., 2008; Arana et al., 2008a, 2008b).\n\nSecondly, IgM-BCR exhibits an obvious multi-threshold effect in response to the NP-TGT sensors enduring different mechanical forces from 12 pN to 56 pN. The low-force 12\u201316 pN NP-TGT sensors triggered a weak activation, whereas the middle-force 23\u201343 pN NP-TGT sensors initiated a medium-level activation, and the high-force 50\u201356 pN NP-TGT sensors accounted for a strong activation. Within these three thresholds, there is a quite obvious barrier effect as an increase in mechanical force, such as from 23 pN to 33 pN or to 43 pN within the medium-level mechanical force barrier, will not result in any dramatically enhanced activation responses of IgM-BCRs. Instead, the activation of IgM-BCR is extremely sensitive to the changes of mechanical forces exceeding these barriers, such as the increase of the mechanical force from 12 pN to 43 pN or from 43 pN to 56 pN. We speculate that these observations might reflect some key features of dsDNA-derived mechanical force sensor that each sensor represents a distribution of force value with an FWHM of 5 pN for unzipping rupture mode and 15 pN for shearing rupture mode (Lang et al., 2004). Thus, the actual rupture force of any given TGT sensor shall not be viewed as a fixed value, but rather a distribution with \u2018shoulder overlap\u2019 to the nearby TGT sensors. We also speculate that these findings would potentially deliver key meanings with biological significance. Different from many other receptors, IgM-BCR composes a mIgM and a heterodimer of Ig\u03b1 and Ig\u03b2 in a 1 mIg: 1 Ig\u03b1\u2013Ig\u03b2 stoichiometry with mIgM, the biosensor for antigens, and Ig\u03b1\u2013Ig\u03b2 heterodimer, the BCR signaling initiator (Schamel and Reth, 2000; Tolar et al., 2005). The antigenic signal needs to be delivered from the antigen binding region on the extracellular domain of mIgM to the signaling active ITAM on the cytoplasmic domain of both Ig\u03b1 and Ig\u03b2. It is still a big open question in terms of the molecular mechanism of how exactly BCR transduces physical and chemical signals. Here, we tried to interpret our data in a way that such multi-threshold effect of the activation of IgM-BCRs reflects the multi-threshold progress of delivering these mechanical forces induced potential conformational changes from mIgM to Ig\u03b1 and Ig\u03b2 heterodimer complex. It is also our speculation that such multi-threshold likely provides a chance for the proof-testing of the mechanical forces applied to IgM-BCR during its activation. All these speculations are under our further extensive investigation.\n\nThese observed differences that were induced by different NP-TGT sensors cannot exclude the contribution of lifetime of the bonds between BCR and NP-TGT sensors. Although, the contribution from mechanical forces and the lifetime of the BCR with the NP-TGT molecules cannot be absolutely separated. This especially intrigues a question when considering the recent study by Zhu and his colleagues (Liu et al., 2014), showing that the mechanical force prolongs lifetime of catch bond between TCR and agonist pMHC, but decreases the lifetime of slip bond between TCR and antagonist pMHC antigen. The authors showed that both the value of the force and the lifetime of the force are important factors in TCR activation. The situation with BCR shall be more complicated as different from TCR, BCR is a bivalent binding receptor, stating that one BCR can bind to two NP-TGT molecules. Additionally, the recent advance of the super-resolution imaging studies demonstrated that BCRs form obvious nanoclusters with 20\u201350 IgM-BCRs per nanocluster on quiescent B cells (Mattila et al., 2013). All these features of BCR demonstrated the high possibility of multivalent bonds based mechanical forces in regulating the initiation of B cell activation. Additionally, Tolar and his colleagues recently used AFM to examine the rupture forces between B1-8-IgM-BCR and NP antigen (Natkanski et al., 2013). Their study provides useful reference information to better understand the relationship between rupture forces and lifetime of a single bond B1-8-IgM-BCR and NP antigen.\n\nIt shall be noted that the values of the rupture forces of TGT sensors were all calculated based on the data measured by magnetic tweezers system with a loading rate of 0 pN/s (constant force with a time under force mode of 2 s during the measurements). Rupture force measuring systems using AFM-based vs magnetic tweezers-based approaches show many differences including but not limited to different spring constants, different loading rate and different time under load (Albrecht et al., 2003; Lang et al., 2004; Hatch et al., 2008). Thus, all these differences prevented the feasibility of a direct comparison of the mechanical force value that is acquired from different kind of measurements (constant force vs constant loading). From this point of view, it would be of great importance to use the constant force measurements to examine the interaction of B1-8-BCR with NP antigen, and to investigate how the magnitude and duration of mechanical forces will influence B cell activation. During the measurement, the time of the force under load shall be carefully picked up because it is known that such a parameter greatly influence the measured value of the rupture forces (Lang et al., 2004; Natkanski et al., 2013; Wang and Ha, 2013). As mentioned above a constant force mode with a time under force of 2 s was used to measure the rupture force of these TGT sensors by magnetic tweezers (Wang and Ha, 2013). The relevant timescale of rupturing NP-TGT sensors in our experimental system shall be at the seconds to dozens of seconds level with consideration from the recent studies by Tolar and his colleagues (Natkanski et al., 2013).\n\nIn this report, we examined the molecule requirements of the patterned dependence on mechanical forces in IgM-BCR activation. The source accounting for the applied force would be quite diverse in a live cell. In the case of BCR, motor proteins including myosin IIA and dynein molecules are known to be the mechanical force provider. Myosin IIA executes the vertical forces to BCR microclusters to rupture the bonds between BCRs and membrane-bound antigens, and such event is used by B cells to discriminate antigen affinity (Natkanski et al., 2013). Dynein is shown to be required for the retrograde motile feature of BCR microclusters into the center of the B cell IS, suggesting dynein would more likely execute a lateral force (Schnyder et al., 2011). We assessed the contribution of myosin IIA and dynein in the patterned dependence on mechanical forces of IgM-BCR activation. Unexpectedly, the inactivation of either myosin IIA or dynein did not dramatically changed the patterned dependence on mechanical forces in IgM-BCR activation, suggesting the formation of the basic barrier for the patterned multi-threshold effect does not strictly reply on myosin IIA or dynein. However, in primary naive B cells expressing B1-8-IgM-BCR expressing B cells with inactivated myosin IIA, we observed a significantly decreased accumulation of BCR in response to high-end 56 pN NP-TGT sensor only, and such drop was not observed in the case of medium-level threshold 43 pN NP-TGT sensor or low-end 12 pN NP-TGT sensor. No such drop was observed in each of these multi-threshold NP-TGT molecules after inactivating dynein. All these data drive us to speculate that the breakthrough of the high-end but not the medium-level or low-end mechanical force threshold might be contributed by myosin IIA. In contrast, dynein does not seem to play an obvious role in the establishment of the barriers of mechanical forces.\n\nThe unique multi-threshold pattern in IgM-BCR activation is not strictly mediated by the outside-in or inside-out activation of the integrin molecules as addition of neither ICAM-1 nor FAK inhibitor changed that patterned dependence on mechanical forces in IgM-BCR activation. However, in FAK inactivated B cells, we observed a significantly decreased accumulation of BCR in response to high-end 56 pN NP-TGT sensor and medium-level threshold 43 pN NP-TGT sensor, while no such drop was observed in the case of low-end 12 pN NP-TGT sensor. We speculate from these data that the breakthrough of the high-end and medium-level threshold but not low-end mechanical force barriers might be contributed by the inside-out activation of integrin. This is in consistent with the role of myosin IIA as discussed above. Myosin IIA bound actin filaments are physically connected with integrin through the key focal adhesion molecules talin and vinculin and was shown to be important for the function of TCR microclusters (Ilani et al., 2009). Inactivation of either myosin IIA or FAK affects the high-end mechanical force barrier for IgM-BCR activation seems to suggest that these two molecules may regulate B cell activation through similar mechanism at least partially.\n\nThe most striking observation of this report is that the activation of isotype-switched IgG-BCR and IgE-BCR on memory B cells only requires either no tension or a mechanical force below 12 pN since 12 pN, 43 pN or 56 pN NP-TGT sensors similarly drove the activation of IgG-BCR (or IgE-BCR). All these results highlighted the significant low-force requirement to initiate the activation of IgG-BCR or IgE-BCR that are expressed on memory B cells compared to the case of IgM-BCR on mature naive B cells, implicating a new possible mechanism to explain the rapid and high-titered IgG antibody responses upon re-encounter with antigen of memory B cells. It is worth noting that the recent study by Ha and his colleagues showed that the activation of Notch receptor also requires either no tension or a single molecule force smaller than 12 pN (Wang and Ha, 2013). It is of great interest to address the underlying fundamental mechanism of the different mechanical force requirements for different receptors. In this report, we investigated which domain of mIgG resulted in the low or none requirements on mechanical forces for IgG-BCRs compared to the case of IgM-BCRs since both of these two forms of BCRs use the same signaling initiation component, Ig\u03b1 and Ig\u03b2 heterodimer. By a systemic swap experiment we demonstrated that the lower threshold on mechanical forces of memory IgG-BCR activation is dependent on its cytoplasmic tail. At this moment, we are addressing the question of why an evolutionarily conserved cytoplasmic tail confers such low threshold on mechanical forces for the activation of memory IgG-BCR. We hypothesize that the cytoplasmic tail of mIgG (or mIgE) might have some capabilities to facilitate the conformational changes of the \u2018umbrella-opening like\u2019 cytoplasmic domain of Ig\u03b1 and Ig\u03b2 complex during the transmembrane signaling transduction of BCR activation (Tolar et al., 2005).\n\nIn conclusion, all these results define the sensitivity and threshold for mechanical force that is required to activate IgM-BCRs and isotype-switched IgG-BCR and IgE-BCR, highlighting the significant contribution of mechanical force signals in the enhanced activation of isotype-switched IgG-BCR and IgE-BCR expressing memory B cells in rapid and high-titered antigen recall responses.\n\n## Materials and methods\n\n### Cells, antigens, antibodies and plasmid constructs\n\nMouse J558L cells stably expressing Ig\u03b1-YFP and high affinity version of NP-specific B1-8-mIgM-CFP or mIgG-CFP were constructed and maintained as previously described (Liu et al., 2010a). J558L B cells and Human Ramos B cells were cultured in RPMI 1640 medium containing 10% FBS, penicillin and streptomycin antibiotics (Invitrogen, Carlsbad, CA) as described (Liu et al., 2010c; Sohn et al., 2011). Both of these B cell lines were gifts from Dr Susan K Pierce (NIAID, NIH, USA). Primary B1-8 specific mature naive B cells were negatively isolated from spleens of the IgHB1-8/B1-8 Igk\u2212/\u2212 transgenic mice as reported previously (Liu et al., 2010a). Following our published protocol (Liu et al., 2010b), the spleen B cells from IgHB1-8/B1-8 Igk\u2212/\u2212 transgenic mice were incubated with 40 \u00b5g/ml LPS and 20 ng/ml recombinant mouse IL-4 (rm-IL-4) for 3 days to induce the isotype-switch to IgG1-BCR.\n\nDyLight 649 AffiniPure Fab Fragment Goat Anti-Mouse IgM, \u00b5 Chain Specific (Jackson ImmunoResearch, West Grove, PA) and Alexa Fluor 647 AffiniPure Fab Fragment Goat Anti-Mouse IgG (H + L) (Jackson ImmunoResearch, West Grove, PA) were used for IgM and IgG staining accordingly. In short, the cells were stained with 100 nM antibody on ice for 10 min, after washing three times with PBS, the cells are ready for further experiments. FITC-conjugated mouse IgG2a anti-NP antibody named Mouse IgG2a isotype control antibody was purchased from Miltenyi Biotec (Auburn, CA).\n\n### Preparation of B1-8 NP-specific tension gauge tethers (NP-TGTs)\n\nNP-TGTs were prepared following the published protocols (Wang and Ha, 2013) with modifications. To specifically activate B cells, we conjugate NP (4-Hydroxy-3-nitrophenylacety) hapten to one DNA strand (single strand DNA, ssDNA) of the double strand DNA (dsDNA) of TGTs. Briefly, NP-e-Aminocaproyl-OSu (Biosearch Technologies, Petaluma, CA) were conjugated to ssDNA with NH2 group modification. The sequence is as below:\n\n5\u2032-CAC AGC ACG GAG GCA CGA CAC-NH2/-3\u2032\n\nThe other strand of the TGT has a biotin tag at a pre-designed position for performing different rupture force points and binding to the coverslip through biotin\u2013neutravidin bond. The sequence is as below:\n\n5\u2032-GTG TCG TGC CTC CGT GCT GTG-3\u2032 with biotin label at position 1, 2, 4, 7, 11, 15, 18, and 21 base, which form 12, 16, 23, 33, 43, 50, 54, and 56 pN, respectively. NP-ssDNA and biotin-ssDNA were further annealed in the annealing buffer following the protocol from Invitrogen.\n\nCoverslip (VWR International) were pretreated with stripping buffer (H2SO4:H2O2 = 7:3), washed and dried before were glued to the disposable 8-well chamber frame (Nunc Lab-Tek chamber). And then 200 \u00b5g/ml neutravidin were added to the coverslip, after incubation for 30 min, extensive washing was performed. NP-TGTs were then loaded to the coverslip at the concentration of 50 nM for 30 min at room temperature for the purpose of tethering NP-TGTs to the coverslip. After carefully washing with PBS, the coverslip was blocked with 1% casein (wt/vol) in PBS for 30 min. And then, the NP-TGT conjugated coverslip was ready for use. The cells were then loaded on the surface for reaction at 37\u00b0C for 10 min, if no specific indications.\n\n### Preparation of planar lipid bilayers (PLBs)\n\nPLBs were prepared following our published protocol (Liu et al., 2010a; Wan and Liu, 2012), which biotinylated NP8-BSA were attached to biotin lipid through streptavidin. In brief, biotin liposomes were prepared by sonication of 1,2-Dioleoyl-sn-Glycero-3-phosphocholine and 1,2-Dioleoyl- sn-Glycero-3-phosphoethanolamine-cap-biotin (Avanti Polar Lipids, Alabaster, AL) in a 25:1 molar ratio in PBS at a lipid concentration of 2.5 mM. The PLBs were prepared in 8-well chambers (Nunc Lab-Tek) with the coverslip cleaned by nanostrip buffer. The coverslip was incubated with 0.1 mM biotin liposomes in PBS for 20 min at room temperature. After washing with 10 ml PBS, the PLB was incubated with 40 nM streptavidin for 15 min and excessive streptavidin was washed away with 10 ml PBS. And then the streptavidin-containing PLBs were incubated with 30 nM biotinylated, NP8-BSA (pre-mixed Alexa488-conjugated NP8-BSA with non-fluorescent conjugated NP8-BSA at 1:10 molar ratio) for 15 min. After washing, PLBs were blocked with 1% (wt/vol) Casein in PBS for 30 min at 37\u00b0C and washed thoroughly for further use.\n\n### Molecule imaging by total internal reflection fluorescence microscope (TIRFM) and confocal fluorescence microscope\n\nTIRFM images were acquired by an Olympus IX-81 microscope equipped with a TIRF port, Andor iXon+ DU-897D electron-multiplying CCD camera, Olympus 100\u00d7 1.49 N.A. objective lens. The acquisition was controlled by Metamorph software (Molecular Devices). The excitation area is about 11,600 \u03bcm2. Laser power was measured at the head of the objective lens by placing the laser beam at a perpendicular orientation to the imaging plane. The laser power of 647 nm laser in BCR imaging is about 7.61 \u03bcW (2% output power only in the configuration of Metamorph supported operating panel; 647 nm laser is 10 mW if using 100% output power). The laser power of 488 nm laser for the imaging of NP-TGT sensors by FITC-conjugated NP-specific antibodies is about 22.9 \u03bcW (5% output power only in the configuration of Metamorph supported operating panel), and the laser power is about 377.1 \u03bcW in single molecule imaging based experiment for the quantification of surface density of NP-TGT sensors (20% output power only in the configuration of Metamorph supported operating panel; 488 nm laser is 3 mW if using 100% output power). For the imaging options, the exposure time was 100 ms for 512 \u00d7 512 pixels image, unless specially indicated. All the images are confirmed not over exposed by the software.\n\nConfocal images were acquired by the Olympus FLUOVIEW FV1000 confocal laser scanning microscope with a 100\u00d7 oil objective lens. The reconstructed side view images were processed by Bitplane Imaris. All the images were analyzed and processed with Image J (NIH, U.S.) software as indicated. The mean fluorescence intensity (MFI) and the total fluorescence intensity (Total FI), as arbitrary unit, of BCRs and signaling molecules accumulated to the IS were calculated based on the intensity and area analysis as described (Lakadamyali et al., 2004; Liu et al., 2010b, 2010c, 2012b).\n\n### Intracellular immunofluorescence staining and molecules imaging\n\nThe recruitment of signaling molecules into the IS of B cells stimulated by NP-TGTs was imaged by TIRFM, and the detection of internalized BCR is imaged by Confocal following our previously published protocol (Liu et al., 2010a, 2010b, 2010c, 2012b). In brief, BCRs were pre-stained and then B cells were loaded to the chambers for reaction with NP-TGTs for 10 min followed by 4% paraformaldehyde fixation. After washed with 10 ml PBS, the B cells were permeabilized with 0.1% Triton X-100 and then blocked with 100 \u03bcg/ml goat non-specific IgG (Jackson ImmunoResearch Laboratory, West Grove, PA). Subsequently, cells were stained with different primary antibodies including phospho-Zap-70 (Tyr319)/Syk (Tyr352) antibody (Cell Signaling Technology), phospho-PLC\u03b32 (Tyr759) antibody (BD), phospho-PI3K (Tyr458) antibody (Cell Signaling Technology, Danvers, MA), anti-phosphotyrosine (Millipore Upstate, Billerica, MA) at 37\u00b0C for 1 hr. After washed with 10 ml PBS, B cells were stained with secondary antibody Alexa Fluor 568-conjugated F(ab\u2032)2 goat antibody specific for rabbit or mouse IgG (Invitrogen, Carlsbad, CA) as previously described (Liu et al., 2012b). Images were analyzed by software Image J (NIH, U.S.) following our published protocols (Liu et al., 2010a, 2010b, 2010c, 2012b).\n\n### Treatment of B cells with pharmaceutical inhibitor\n\nFor inhibitor studies, primary mature naive B cells from IgH B1-8/B1-8 Igk\u2212/\u2212 transgenic mice were pretreated with myosin IIA inhibitor Blebbistatin (Hung et al., 2013), FAK inhibitor PF573-228 (Sigma\u2013Aldrich, St. Louis, MO) (Slack-Davis et al., 2007), dynein inhibitor HPI-4 (Sigma\u2013Aldrich, St. Louis, MO) (Firestone et al., 2012), or internalization inhibitor MDC (Sigma\u2013Aldrich, St. Louis, MO) (Liu et al., 2010a) before the imaging experiment. Briefly, B cells were pretreated with 50 \u03bcM Blebbistatin at 37\u00b0C for 30 min, 1 \u00b5M PF573-228 at 37\u00b0C for 30 min, 30 \u00b5M HPI-4 at 37\u00b0C overnight, or 100 \u00b5M MDC for 30 min at room temperature to block the function of myosin IIA, FAK, or dynein, respectively. As a control, B1-8 primary B cells were pretreated with DMSO for 30 min at 37\u00b0C, or overnight as the control for HPI-4 inhibitor, or 30 min at room temperature as the control for MDC inhibitor.\n",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "49dcb6df-f723-4a3f-a211-40d9084095ba",
+      "submission_id": "c229da02-f11f-40a0-9a3c-dee7bae3e8e2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald N Germain, National Institute of Allergy and Infectious Diseases , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06925.019](https://doi.org/10.7554/eLife.06925.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cActivation of IgM- or isotype-switched IgG- and IgE-B cell receptor requires distinct single molecular force threshold\u201d for consideration at eLife. Your article has been favorably evaluated by Michael Marletta (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Michael Dustin and Matthew Lang (peer reviewers).\n\nThis is a potentially important study that utilizes force-calibrated DNA duplexes to determine if there is a threshold for B cell receptor and associated activated signaling molecules to be recruited to a planar substrate. One strand of the duplex is attached to the substrate and the other strand has a hapten that is recognized by an IgM or IgG on the surface of a live B cell. The duplexes are claimed to be calibrated to dissociate to single strands with application of forces exceeding a threshold in the range of 12-56 pN, which is a biologically relevant range. When dissociation takes place the strand with the hapten would go with the BCR, but because the engagement is monovalent it would likely lose any ability to hold the receptor in the interface or stimulate signaling. The authors follow accumulation of BCR in the interface and recruitment of phosphorylated signaling molecules that associate with the BCR. They find that IgM generates a continuum of responses across the range of force thresholds, whereas IgG activates similarly across the entire spectrum. They show that this difference in sensitivity to the linker is encoded by the short cytoplasmic domains of IgM and IgG heavy chains based on analysis of chimeric receptors. The paper contains important quantitative new insights into mechanisms of B cell receptor signaling and the effects of heavy chain isotype on this process, but a number of issues must be resolved before the work is suitable for publication in eLife:\n\n1) It is important to determine if what the authors are looking at is actually mechanotransduction, or rather an effect related to the amount of force the receptor can exert on the substrate to extract antigen. This issue was recently addressed qualitatively by Natkanski et al., which is in the reference list, but not cited or discussed adequately in the text. Addressing this issue quantitatively would be a significant advance.\n\nThe molecular mechanism of the postulated mechanosensitivity is left unanswered (the authors exclude a major involvement of integrin signaling, dynein or myosin motor activity; these experiments need controls that the inhibitors are working). Further, the authors use total internal reflection fluorescence microscopy to focus on the interface. This is a powerful method for quantification of interactions in interfaces, but can miss important information about the rest of the cell. It would be important to verify whether or not the IgM receptors that break the weaker duplexes just remain at the surface or if they are internalized and removed from the cell surface. This would be readily evaluated by confocal microscopy in permeabilized cells. This would provide an important denominator for the analysis of the BCR in the interface. If the weaker duplexes actually down-regulate the IgM from the surface this would be very different from simply not engaging or activating receptors. This is important to the conclusions of the study, which could go in one of two directions: the issue of antigen harvesting from the surface vs. mechanotransduction by the receptor. These are not mutually exclusive or necessarily related.\n\nThis same issue could alternatively be approached experimentally by employing fluorescently labeled antigen-containing strands in the tethers, although this would require production of new, more expensive tethers. The potential challenge with this approach is that the single Ig-hapten interaction is short lived and the DNA may dissociate from the Ig before it can be internalized. But if it is unlikely to re-anneal to the glass surface following tether failure, the cell might create a hole in a substrate that is undergoing many failure events. If this doesn't happen then the case for mechanotransduction would be stronger. In this regard, Figure 1F done in the presence of cells with NP-specific BCR, or probes lacking NP, but containing a fluorophore reporter, would also be helpful. It would be good to see that areas of the surface contacting cells were the same brightness as locations not containing cells if mechanosensing and not antigen scavenging is at work.\n\n2) A puzzling issue in this experimental system is that the monovalent NP hapten coupled to the DNA probes should dissociate from the B1-8 BCR with a half-life of about 1 second and withstand forces of approximately 10-15 pN (see Natkanski et al., Science 2013). This is about as much force as is needed to separate the weakest tethers in this manuscript, and much less than the separation forces of the tethers at the two thresholds for B cell spreading (23 pN and 50 pN). The two thresholds correspond to approximately two times and four times the rupture force of the single NP-B1-8 bond, raising a possibility that the separation somehow depends on multivalent bonds. If the aim of the manuscript is to be quantitatively precise about the single molecule forces, this should be addressed.\n\nThe experimental setup of the authors differs from the Ha paper in that the tethers are bound to glass-absorbed neutravidin, instead of neutravidin bound to a biotin-PEG covalently attached to the glass. It is thus possible that some neutravidin (which binds quite weakly to glass) dissociates under forces applied through multiple tethers. It is also possible that some of the tethers bind directly to glass and cannot be separated. This could be investigated by controls without neutravidin and using fluorescent neutravidin to measure its release from underneath the cells.\n\nFinally, it should be discussed whether the differences observed with different tethers could be not just because of mechanosensitivity of the BCR, but also because of the half-life of the bonds of the BCR with the substrate, since sensor rupture will terminate BCR signalling similarly as does BCR dissociation from the antigen.\n\n3) There are serious concerns with the way in which the paper describes the tethers and also with the specific threshold forces ascribed to each sensor.\n\nIn many cases the authors refer to the ligands as a force gauge. A \u2018gauge\u2019 implies multiple calibrated levels. While the panel of ligands as a whole may represent a gauge, individually they are threshold sensors, acting as binary and not continuous indicators.\n\nThe ligands were derived from work in reference Wang and Ha, 2013. They are treated in this manuscript as having specific force thresholds [12, 16, 23, 33, 43, 50, 54 and 56 pN]. These are double strands of DNA with various lengths, compositions and pulling geometries, shearing and unzipping. Interpreting them as having specific force thresholds is misleading. The rupture force of these types of systems has been investigated extensively and depends on loading rate or time under load. These are estimated force ranges, based on a 2 second load. The experiments here are on the timescale of 10 minutes, and thus very different forces from the ones quoted in the bracketed numbers above may actually be delivered. The authors need to calibrate the probes under their conditions, providing force ranges +/- for each of the probes listed (see Lang et al., Nature Methods 2004 Figure 5, where similar unzipping and shearing geometries were measured and quantified for dsDNA linkage system).\n\nIt is also important to note that the FWHM for unzipping spans 5 pN and shearing geometry 15 pN. Thus when the authors make fine distinctions about the force probes as listed above, the actual range of any given force probe contains a spread overlapping other probe ranges. This spread may influence interpretation and the readers need to know that these probes provide a range of forces. Further, the experimental conditions here would shift this whole panel to lower forces as the loading times are orders of magnitude longer than the design times by Ha (2 seconds). Statements in the text such as \u201cprecisely defined single molecular forces\u201d are hence misleading.\n\nThe BCRs have two binding sites for each transmembrane linkage (Figure 6A). Is the surface density of probes low enough such that only one is engaged? Otherwise if two nominally 12 pN probes bind mIgG, the total force can reach 24 pN.\n\nWhat is the surface density of ligands in these experiments in molecules/\u00b5m2? Experiments were \u201crepeated using a 10-fold lower concentration\u201d with the same observed response. If both concentrations are still saturating then this control is not valid. The surface density could easily be estimated using FITS labeled Figure 1 control structure. Supplemental figure 4 shows 50nM, 10nM and 2nM concentrations, yet the total fluorescence does not drop by these same values. The surface density of ligands should be measured independently and quantified.\n\nResults in Natkanski will help the authors place bounds on expected timescales, loading rates etc. when mapping onto their system. The AFM in Natkanski involves a higher loading rate, stiffer spring, and shorter lifetime situation than here (although the coverglass is stiff, the cell is not). Based on the Natkanski result, the relevant timescale in the present experiments is likely seconds to tens of seconds and not minutes. This prior paper should certainly be worked into the Discussion.\n",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ccbe6740-ddca-4f3f-8726-7176ad765046",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C1",
+      "claim": "IgM-BCR activation is dependent on mechanical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that IgM-BCR activation is dependent on mechanical forces and exhibits a multi-threshold effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data showing that different mechanical force levels (12-56 pN) produce different levels of IgM-BCR activation, as measured by BCR accumulation and signaling molecule recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "5a16fe14-cda8-4eaa-abc2-fbf280c1fcc0",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C2",
+      "claim": "IgM-BCR activation exhibits a multi-threshold effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that IgM-BCR activation is dependent on mechanical forces and exhibits a multi-threshold effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data in Figures 2 and 3 show three distinct threshold levels: low-force (12-16 pN), medium-force (23-43 pN), and high-force (50-56 pN) NP-TGT sensors triggering weak, medium, and strong activation respectively.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8d1bc868-8d36-406f-b072-7702bda5acfd",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C3",
+      "claim": "The activation of isotype-switched IgG-BCR only requires a low threshold of less than 12 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the activation of isotype-switched IgG- or IgE-BCR only requires a low threshold of less than 12 pN, providing an explanation for their rapid activation in response to antigen stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 6 shows that 12 pN, 43 pN, and 56 pN NP-TGT sensors all similarly activate IgG-BCR, indicating the threshold is below 12 pN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "a734485c-04e3-4a89-9aab-60faf99ed3dc",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C4",
+      "claim": "The activation of isotype-switched IgE-BCR only requires a low threshold of less than 12 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the activation of isotype-switched IgG- or IgE-BCR only requires a low threshold of less than 12 pN, providing an explanation for their rapid activation in response to antigen stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 6I,J shows that IgE-BCR activation is similar across different force levels (12-56 pN), indicating a threshold below 12 pN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "3d54e6fb-1388-4d06-8601-65072d00c864",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C5",
+      "claim": "The cytoplasmic tail of the IgG-BCR heavy chain is both required and sufficient to account for the low mechanical force threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we found that the cytoplasmic tail of the IgG-BCR heavy chain is both required and sufficient to account for the low mechanical force threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 7 shows that swapping the cytoplasmic tail of IgM with IgG tail (MMG) results in force-independent activation, while swapping IgG tail with IgM tail (GGM) results in force-dependent activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "4939670a-e8a7-4e2a-b5ac-08d002e04fa6",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C6",
+      "claim": "B lymphocytes use B cell receptors (BCRs) to sense the physical features of antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "B lymphocytes use B cell receptors (BCRs) to sense the physical features of the antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "f6a39a7a-6917-4f1e-a7b7-a4e44838352f",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C7",
+      "claim": "The BCR is composed of a membrane-bound immunoglobulin (mIg) and a non-covalently associated heterodimer of Ig\u03b1 and Ig\u03b2 in a 1 mIg: 1 Ig\u03b1\u2013Ig\u03b2 heterodimer stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The BCR is composed of a membrane-bound immunoglobulin (mIg) and a non-covalently associated heterodimer of Ig\u03b1 and Ig\u03b2 in a 1 mIg: 1 Ig\u03b1\u2013Ig\u03b2 heterodimer stoichiometry (Schamel and Reth, 2000; Tolar et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by Schamel and Reth (2000) and Tolar et al. (2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "ab8f2840-e1d3-4049-93c8-379ca5f1d08c",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C8",
+      "claim": "BCR activation is efficiently regulated by antigen density.",
+      "claim_type": "EXPLICIT",
+      "source": "These forms include antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), the Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness feature of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fleire et al., 2006 and Liu et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "e791e614-2882-4c59-a29a-74ff95788cfb",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C9",
+      "claim": "BCR activation is efficiently regulated by antigen affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "These forms include antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), the Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness feature of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fleire et al., 2006 and Liu et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "d3a76e39-7a17-4ff7-afed-44f990a1eb7d",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C10",
+      "claim": "BCR activation is efficiently regulated by antigen valency.",
+      "claim_type": "EXPLICIT",
+      "source": "These forms include antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), the Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness feature of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bachmann et al., 1993; Liu et al., 2004; and Liu and Chen, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "e6497d75-720e-4035-b4ec-89074d7a20bb",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C11",
+      "claim": "BCR activation is efficiently regulated by the Brownian mobility feature of the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "These forms include antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), the Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness feature of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wan and Liu, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "9591b181-3c72-4bfe-84db-09aff4041587",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C12",
+      "claim": "BCR activation is efficiently regulated by the stiffness feature of the substrates presenting the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "These forms include antigen density (Fleire et al., 2006; Liu et al., 2010a), antigen affinity (Fleire et al., 2006; Liu et al., 2010a), antigen valency (Bachmann et al., 1993; Liu et al., 2004; Liu and Chen, 2005), the Brownian mobility feature of the antigen (Wan and Liu, 2012), and the stiffness feature of the substrates presenting the antigen (Wan et al., 2013; Zeng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Wan et al., 2013 and Zeng et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "48c051f5-f6b1-4f51-8a9f-d6d2c4178a0e",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C13",
+      "claim": "B cells use mechanical forces to rupture the bonds between BCRs and membrane-bound antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study by Tolar and his colleagues demonstrated that B cells used the mechanical forces to rupture the bonds between BCRs and membrane-bound antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to a study by Tolar and colleagues, as indicated by the citation context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "82c60c02-bf5e-411f-b4cd-af1b27db310b",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C14",
+      "claim": "Only high affinity BCR and antigen microclusters are internalized for antigen processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors found that only the high affinity BCR and antigen microclusters would be internalized for antigen processing, giving a new mechanism to explain B cell affinity discrimination (Natkanski et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Natkanski et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "c5f1006b-86e0-4e25-8ed8-cc69a4a42a73",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C15",
+      "claim": "Viral capsid substrates presenting antigen exhibit a high degree of stiffness (45,000\u20131,000,000 kPa).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, viral capsid substrates presenting antigen exhibited a high degree of stiffness (45,000\u20131,000,000 kPa) (Mateu, 2012), while substrates presenting antigen on the membrane of the host cell infected by virus showed a medium level of stiffness (0.01\u20131000 kPa) (Nemir and West, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mateu, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "d014d466-99a8-4473-937a-6550784fd3f6",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C16",
+      "claim": "Substrates presenting antigen on the membrane of host cells infected by virus show a medium level of stiffness (0.01\u20131000 kPa).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, viral capsid substrates presenting antigen exhibited a high degree of stiffness (45,000\u20131,000,000 kPa) (Mateu, 2012), while substrates presenting antigen on the membrane of the host cell infected by virus showed a medium level of stiffness (0.01\u20131000 kPa) (Nemir and West, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nemir and West, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "7ca17fc9-f19a-41a2-8b8a-ea180beb5fba",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C17",
+      "claim": "Extracellular matrix (ECM) exhibits a range of stiffness from 0.012 to 20 kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, B cells can also efficiently acquire antigens that are associated with extracellular matrix (ECM) in the tissue (Ciechomska et al., 2014), which is well documented to exhibit an extraordinary range of stiffness from 0.012 to 20 kPa (Bao and Suresh, 2003; Engler et al., 2004; Paszek et al., 2005; Nemir and West, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bao and Suresh, 2003; Engler et al., 2004; Paszek et al., 2005; and Nemir and West, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "2e22f5ef-7647-426c-9e03-e55b8d9c0551",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C18",
+      "claim": "Soluble antigen in plasma displays a remarkably low level of stiffness (several Pa).",
+      "claim_type": "EXPLICIT",
+      "source": "Soluble antigen in plasma has also been detected and displayed a remarkably low level of stiffness (several Pa) (Araujo Gde et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Araujo Gde et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "6dd35f93-7246-4e07-9cc2-3d0720da0e67",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C19",
+      "claim": "The NP-TGT system has the same tension gauge scales as the original TGT system developed by Ha and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we just exchanged the cyclic RGDfk peptide with the NP hapten antigen and did not change the sequence and design of these dsDNA-based TGT sensors, our NP-TGT system shall have the same tension gauge scales as the one used by Ha and his colleagues (Wang and Ha, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state they only changed the ligand (from RGDfk to NP) but kept the DNA design identical, thus maintaining the same force calibration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "7fbe042a-5be4-48f1-abf2-6a279dfb8a86",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C20",
+      "claim": "The specific force value of each dsDNA-based mechanical force sensor presents a distribution with a full width at half maximum (FWHM) of 5 pN for unzipping rupture mode and 15 pN for shearing rupture mode.",
+      "claim_type": "EXPLICIT",
+      "source": "A key feature of dsDNA-based mechanical force sensor is that the specific force value of each sensor is not an absolute value but presents a distribution with a full width at half maximum (FWHM) of 5 pN for unzipping rupture mode and 15 pN for shearing rupture mode (Lang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "491c623e-26f3-4219-85fa-e5264021c196",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C21",
+      "claim": "J558L cells expressing B1-8-IgM-BCR initiate activation responses when encountering 56 pN NP-TGT sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that J558L cells expressing B1-8-IgM-BCR initiated the activation responses as quantified by the dramatic accumulation of BCRs into the contact interface of B cells with coverslip presenting 56 pN NP-TGT sensor and formed a typical B cell immunological synapse (IS) as illustrated by the time lapse TIRFM images (Figure 1C,D, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C,D and Video 1 show time-lapse TIRFM images demonstrating BCR accumulation and IS formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "942491f2-de57-4cb0-bb8b-2383480415a4",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C22",
+      "claim": "J558L cells expressing B1-8-IgM-BCR do not initiate activation responses when encountering control TGT without NP conjugation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were not observed with the negative control (NC) 56 pN TGT without NP conjugation (Figure 1C,D, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C,D and Video 1 show minimal BCR accumulation with control TGT lacking NP antigen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "11c8805e-229d-4f1e-a863-e8fe1f68c5ca",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C23",
+      "claim": "Neutravidin does not dissociate from the coverslip during a 10-min time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional experiments showed that neutravidin would not dissociate from the coverslip during the 10-min time course of our experiments (Figure 1\u2014figure supplement 1B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1B,C shows no significant change in neutravidin fluorescence over 10 minutes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "dd798cda-a0a7-4dbb-b434-a09dd65a8eb5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C24",
+      "claim": "NP-TGT can only be attached to coverslip in a neutravidin-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "and NP-TGT can only be attached to coverslip in a neutravidin-dependent manner (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1D shows that NP-TGT attachment requires neutravidin coating.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "a45d0b93-5a55-435f-8771-1f6797c7adf8",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C25",
+      "claim": "Non-specific attachment of NP-TGT molecules on coverslip without pre-coated neutravidin cannot induce synaptic accumulation of BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further experiments also indicated that the non-specific attachment of NP-TGT molecules if any on the coverslip without pre-coated neutravidin cannot induce the synaptic accumulation of BCRs (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 1E shows no BCR accumulation on coverslips lacking neutravidin coating.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "b0e7fbbb-45e5-4150-b6ac-0a23ba9968f2",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C26",
+      "claim": "Primary mature naive B cells from wild-type C57BL/6 mice do not accumulate BCRs in response to NP-TGT sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "These primary B cells did not accumulate BCRs into the B cell IS in response to coverslip presenting NP-TGT sensor compared to the case of coverslip alone, although a dramatic accumulation was readily observed in the case of encountering coverslip that was coated with anti-mouse IgM surrogate antigens as a positive control (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1E shows that wild-type B cells (non-NP-specific) do not respond to NP-TGT but do respond to anti-IgM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "fd888d1c-d2ba-4d1f-8096-13e279c22392",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C27",
+      "claim": "NP-TGT sensors with higher mechanical force trigger more aggressive spreading response and enhanced BCR synaptic accumulation than NP-TGT molecules with lower mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that NP-TGT sensors with higher mechanical force generally triggered more aggressive spreading response and enhanced BCR synaptic accumulation than NP-TGT molecules with lower mechanical force (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A-C shows quantification of BCR accumulation and spreading in response to different force levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "922b1696-e1b0-4739-a50c-43dd98f9c2d9",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C28",
+      "claim": "Low-force (12\u201316 pN) NP-TGT sensors trigger weak activation of IgM-BCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-force (12\u201316 pN) NP-TGT sensors triggered a weak activation, whereas the middle-force (23\u201343 pN) NP-TGT sensors initiated a medium-level activation, and the high-force (50\u201356 pN) NP-TGT sensors accounted for a strong activation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A shows quantitative data demonstrating three distinct levels of BCR activation corresponding to three force ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8e77dc04-d391-4a36-87d5-d062f3700c55",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C29",
+      "claim": "Middle-force (23\u201343 pN) NP-TGT sensors initiate medium-level activation of IgM-BCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-force (12\u201316 pN) NP-TGT sensors triggered a weak activation, whereas the middle-force (23\u201343 pN) NP-TGT sensors initiated a medium-level activation, and the high-force (50\u201356 pN) NP-TGT sensors accounted for a strong activation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A shows quantitative data demonstrating three distinct levels of BCR activation corresponding to three force ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "91e8860e-f2d6-42e3-80e1-41b9dd80e1d5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C30",
+      "claim": "High-force (50\u201356 pN) NP-TGT sensors account for strong activation of IgM-BCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-force (12\u201316 pN) NP-TGT sensors triggered a weak activation, whereas the middle-force (23\u201343 pN) NP-TGT sensors initiated a medium-level activation, and the high-force (50\u201356 pN) NP-TGT sensors accounted for a strong activation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2A shows quantitative data demonstrating three distinct levels of BCR activation corresponding to three force ranges.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "22f45f04-8825-4031-86ea-8490127dd6d8",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C31",
+      "claim": "Increasing mechanical force within a threshold barrier does not result in dramatically enhanced activation responses of IgM-BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within these three threshold barriers, increasing the mechanical force, such as from 23 pN to 33 pN or to 43 pN (the medium level threshold), will not result in dramatically enhanced activation responses of IgM-BCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 2A,B shows that BCR accumulation is similar for 23, 33, and 43 pN sensors, indicating no dramatic increase within this range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "496383cf-8e02-483a-9665-131421d566d5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C32",
+      "claim": "There is no obvious internalization of BCR and antigen molecules during the 10-min time course of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these NP-TGT molecules, we also showed that there were no obvious internalization during the 10-min time course of our experiments (Figure 2\u2014figure supplement 2A\u2013C), consistent with the published studies (Fleire et al., 2006; Natkanski et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 2A-C shows confocal imaging data demonstrating lack of internalization over 10 minutes, consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "d1b4a6c6-60ad-4c62-9f24-341a9cff023c",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C33",
+      "claim": "B cells pretreated with MDC inhibitor exhibit dependence on mechanical forces in the synaptic accumulation of IgM-BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, B cells that were pretreated with monodansylcadaverine (MDC), an inhibitor to block B cell internalization (Tolar et al., 2005; Liu et al., 2010a), also exhibited the dependent on mechanical forces in the synaptic accumulation of the IgM-BCRs (Figure 2\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 2D-F shows that blocking internalization does not eliminate force-dependent BCR accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "47f4b7c2-c7ef-497d-abc3-89d7a46f93fa",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C34",
+      "claim": "The volume of BCR microclusters is dependent on the strength of mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "We similarly observed that the volume of the BCR microclusters is dependent on the strength of the mechanical force with 56 pN NP-TGT sensors producing much bigger and brighter BCR microclusters than 43 pN and 12 pN NP-TGT molecules (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A,B shows quantification of BCR microcluster fluorescence intensity at different force levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8551d5fd-f8f5-49fe-a80c-6a93871d2f0c",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C35",
+      "claim": "The membrane proximal recruitment of pSyk is dependent on mechanical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the membrane proximal recruitment of each of these signaling molecules is dependent on mechanical forces with the 56 pN NP-TGT sensors showing the highest recruitment, while the 43 pN NP-TGT sensors had a medium level of recruitment and the 12 pN NP-TGT sensors had the lowest level of recruitment (Figure 4A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4A shows quantification of pSyk recruitment at different force levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "f093d51e-54ce-4f2a-82d2-06f3ffb1a3c8",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C36",
+      "claim": "The membrane proximal recruitment of pPLC\u03b32 is dependent on mechanical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the membrane proximal recruitment of each of these signaling molecules is dependent on mechanical forces with the 56 pN NP-TGT sensors showing the highest recruitment, while the 43 pN NP-TGT sensors had a medium level of recruitment and the 12 pN NP-TGT sensors had the lowest level of recruitment (Figure 4A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4B shows quantification of pPLC\u03b32 recruitment at different force levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "1d56d4d1-e0c1-4525-90d3-37ec32aa8bc5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C37",
+      "claim": "The membrane proximal recruitment of pTyr is dependent on mechanical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the membrane proximal recruitment of each of these signaling molecules is dependent on mechanical forces with the 56 pN NP-TGT sensors showing the highest recruitment, while the 43 pN NP-TGT sensors had a medium level of recruitment and the 12 pN NP-TGT sensors had the lowest level of recruitment (Figure 4A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4C shows quantification of pTyr recruitment at different force levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "fb5dc7bd-2f73-4840-8763-3d5a29b6cf81",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C38",
+      "claim": "The addition of ICAM-1 dramatically enhances the synaptic accumulation of BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of ICAM-1 dramatically enhanced the synaptic accumulation of the BCRs (Figure 5A), suggesting the increased sensitivity to antigen stimulation in the initiation of B cell activation, consistent with the published studies in both the BCR (Carrasco et al., 2004) and TCR system (Bachmann et al., 1997; Dustin, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5A shows increased BCR accumulation when ICAM-1 is co-tethered with NP-TGT, consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "90fa6b7f-4a9a-4f6c-97f8-68dee578886c",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C39",
+      "claim": "The outside-in activation of integrin does not change the patterned dependence on mechanical forces in B cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was clear that the outside-in activation of integrin did not change the fact that B cell activation is dependent on mechanical forces with a similar multi-threshold effect (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5B shows that even with ICAM-1 present, the multi-threshold pattern of force dependence is maintained.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "ad87508b-6032-4e1a-b01b-596049fe131f",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C40",
+      "claim": "The inactivation of FAK does not eliminate the general patterned dependence on mechanical forces with a multi-threshold effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the pretreated B cells still maintained the general patterned dependence on mechanical forces with a multi-threshold effect (Figure 5C,D, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5C,D shows that FAK inhibition maintains the multi-threshold pattern but reduces activation at higher force levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "aae293a2-a68d-4c38-a6bf-3bea46a0cf3b",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C41",
+      "claim": "The high-end (56 pN) and medium-level (43 pN) but not low-end (12 pN) mechanical force threshold is influenced by the inactivation of integrin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was clear that the high-end (56 pN) and medium-level (43 pN) but not low-end (12 pN) mechanical force threshold was more influenced by the inactivation of integrin, suggesting that the breakthroughs of the medium-level and high-end threshold of mechanical forces are partially supported by the inside-out activation of integrin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 5C,D shows differential effects of FAK inhibition on different force thresholds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "02c6473d-825d-43b8-8a17-c19c226a1f04",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C42",
+      "claim": "The inactivation of myosin IIA results in a significant drop in BCR accumulation for the 56 pN NP-TGT sensor only.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the inactivation of myosin IIA did not dramatically change the dependence on mechanical forces, however we observed a significant drop in the strength of the synaptic accumulation of the BCRs for the high threshold NP-TGT sensor at 56 pN only, and no drop was observed for the medium-level threshold NP-TGT sensor at 43 pN, nor the low threshold NP-TGT sensor at 12 pN (Figure 5E,F, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5E,F shows that myosin IIA inhibition specifically affects the 56 pN response but not 43 pN or 12 pN responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "e94eaf72-0d94-41e1-9d86-6a86060b6014",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C43",
+      "claim": "The inactivation of dynein does not result in significant changes in BCR accumulations compared to DMSO controls.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when inactivating dynein, we did not observe significant changes in the BCR accumulations compared to DMSO controls (Figure 5G,H, Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5G,H shows no significant difference in BCR accumulation between dynein inhibitor and DMSO control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "381af8bb-b402-4d50-93cf-f60cb4dcecc0",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C44",
+      "claim": "Each of the three NP-TGT sensors (12, 43, or 56 pN) similarly drive activation of memory IgG-BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed a totally different pattern in terms of the dependence on mechanical forces for the activation of memory IgG-BCRs. Each of the three NP-TGT sensors producing mechanical forces at 12, 43, or 56 pN similarly drove the cells to undergo spreading responses and the synaptic accumulation of BCRs or pSyk signaling molecules into the IS (Figure 6A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6A-D shows no significant difference in IgG-BCR activation across different force levels (12-56 pN).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "964d80c4-23b6-4dcb-883e-e7f32d627e74",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C45",
+      "claim": "The activation of memory IgG-BCRs requires either no tension or a mechanical force below 12 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that the activation of memory IgG-BCRs requires either no tension or a mechanical force below the mean rupture force of the lowest-force NP-TGT we used (12 pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Since all force levels from 12-56 pN produce similar activation, the threshold must be below 12 pN.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "439747a2-6799-481b-a586-277046023ad5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C46",
+      "claim": "The activation of memory IgE-BCRs requires either no tension or a mechanical force below 12 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the dependence on mechanical forces in terms of the activation of memory IgE-BCRs in Ramos human B cells expressing memory B1-8-IgE-BCRs. Here, we similarly observed that the activation of memory IgE-BCRs require either no tension or a mechanical force below 12 pN (Figure 6I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6I,J shows similar activation of IgE-BCR across different force levels (12-56 pN).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "9404daa6-242a-40a8-94de-c35c503847f8",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C47",
+      "claim": "The activation of naive B1-8-IgM-BCRs expressed in Ramos B cells is dependent on mechanical force with a multi-threshold effect.",
+      "claim_type": "EXPLICIT",
+      "source": "As a system control, it was clear that the activation of the naive B1-8-IgM-BCRs expressed in Ramos B cells was also dependent on mechanical force with a multi-threshold effect (Figure 6K,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6K,L shows force-dependent activation of IgM-BCR in Ramos cells, serving as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "f33172b1-6800-4f77-9b9c-c58e8b7f6ed2",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C48",
+      "claim": "J558L cells expressing GGM (IgG with IgM tail) show force-dependent activation similar to naive IgM-BCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the J558L cells expressing GGM showed the force dependent activation by accumulating more BCRs and pSyk into the IS with the higher mean rupture force NP-TGT molecules, similar to the case of J558L cells expressing naive B1-8-IgM-BCR (Figure 7B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7B-D shows that replacing the IgG cytoplasmic tail with IgM tail restores force-dependent activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "c3005d4f-4a7b-41ad-ad9a-15fce23e88f5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C49",
+      "claim": "J558L cells expressing MMG (IgM with IgG tail) behave similarly to memory IgG-BCR in a force-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it was apparent that the J558L cells expressing MMG behaved similarly to the case of J558L cells expressing memory B1-8-IgG-BCR in a force-independent manner (Figure 7E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7E-G shows that replacing the IgM cytoplasmic tail with IgG tail results in force-independent activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "d8f7e4ab-438b-4c61-9322-6389b9828002",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C50",
+      "claim": "The lower mechanical force threshold of memory IgG-BCR activation depends on its cytoplasmic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these results suggested that the lower mechanical force threshold of memory IgG-BCR activation depends on its cytoplasmic tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The tail-swap experiments in Figure 7 demonstrate that the IgG cytoplasmic tail is both necessary and sufficient for low-force activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "0a6ac967-b15d-4d23-bd80-aa5d8f2872f1",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C51",
+      "claim": "IgM-BCR alone could function as a mechanosensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since such a patterned dependence on mechanical force in the initiation of IgM-BCR does not strictly rely on integrin or adhesion molecule, we propose that IgM-BCR alone could function as a mechanosensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors propose this based on data showing force-dependent activation persists even when integrin function is modulated.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "3a95072f-d2e4-4c0e-8903-c613e6415cd8",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C52",
+      "claim": "12 pN NP-TGT sensor can induce mild but consistent activation of B1-8-naive IgM-BCR.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, 12 pN NP-TGT sensor, the one enduring the smallest mechanical force, can induce the mild but consistent activation of B1-8-naive IgM-BCR when was compared to the control TGT without the conjugated NP antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figures 2 and 3 show that 12 pN NP-TGT produces significantly more activation than negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "899eb1bb-b42c-491b-b11d-ff24778a369b",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C53",
+      "claim": "Integrin does not get activated under 12 pN or even 16 pN TGTs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, integrin does not seem to get activated under 12 pN or even 16 pN TGTs (Wang and Ha, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to Wang and Ha, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8b42e4f6-3e54-4e32-bccc-311eea7579ae",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C54",
+      "claim": "The breakthrough of the high-end but not the medium-level or low-end mechanical force threshold might be contributed by myosin IIA.",
+      "claim_type": "EXPLICIT",
+      "source": "All these data drive us to speculate that the breakthrough of the high-end but not the medium-level or low-end mechanical force threshold might be contributed by myosin IIA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation that myosin IIA inhibition specifically affects the 56 pN response.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "3c388eb4-5593-4b27-bcff-91ab89941cd5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C55",
+      "claim": "Dynein does not play an obvious role in the establishment of the barriers of mechanical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dynein does not seem to play an obvious role in the establishment of the barriers of mechanical forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on data showing no significant effect of dynein inhibition on force-dependent activation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "3215f543-2662-41ee-bb45-8383db73e4fc",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C56",
+      "claim": "The breakthrough of the high-end and medium-level threshold but not low-end mechanical force barriers might be contributed by the inside-out activation of integrin.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate from these data that the breakthrough of the high-end and medium-level threshold but not low-end mechanical force barriers might be contributed by the inside-out activation of integrin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculation is based on FAK inhibition data showing effects on 56 pN and 43 pN but not 12 pN responses.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "224cf73d-2601-4cf7-b821-e5b61b7da421",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C57",
+      "claim": "Mature naive B cells use IgM-BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature naive B cells use IgM-BCRs, while memory B cells mainly use IgG-BCRs along with a small fraction that use IgE-BCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "1dd2256c-f3ec-4c33-9a1c-bd463b6c9f30",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C58",
+      "claim": "Memory B cells mainly use IgG-BCRs along with a small fraction that use IgE-BCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature naive B cells use IgM-BCRs, while memory B cells mainly use IgG-BCRs along with a small fraction that use IgE-BCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8026f55d-bdf0-4f97-98ce-79b21cc8b913",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C59",
+      "claim": "mIgM has only three amino acids in its cytoplasmic tail (KVK).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, mIgM has only three-amino acids in its cytoplasmic tail (KVK), while all mIgG subtypes have 28-amino acid cytoplasmic tails, which are extremely conserved across species (Reth, 1989; Tarlinton, 1997; Liu et al., 2010a, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to Reth, 1989; Tarlinton, 1997; Liu et al., 2010a, 2012b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "ede7860f-ce15-4be9-a842-fb77d9ec6e28",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C60",
+      "claim": "All mIgG subtypes have 28-amino acid cytoplasmic tails, which are extremely conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, mIgM has only three-amino acids in its cytoplasmic tail (KVK), while all mIgG subtypes have 28-amino acid cytoplasmic tails, which are extremely conserved across species (Reth, 1989; Tarlinton, 1997; Liu et al., 2010a, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to Reth, 1989; Tarlinton, 1997; Liu et al., 2010a, 2012b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "cf048b33-10cc-4002-8418-ca41d68de977",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C61",
+      "claim": "The cytoplasmic tail of mIgG is both necessary and sufficient to confer enhanced activation of IgG-BCR expressing memory B cells compared to IgM-BCR expressing naive B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Early mice model studies utilizing biochemical assays and live cell imaging demonstrated that the cytoplasmic tail of mIgG is both necessary and sufficient to confer an enhanced activation of IgG-BCR expressing memory B cells compared to the case of IgM-BCR expressing naive B cells (Kaisho et al., 1997; Martin and Goodnow, 2002; Wakabayashi et al., 2002; Horikawa et al., 2007; Waisman et al., 2007; Engels et al., 2009; Liu et al., 2010b, 2012b; Engels et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "8aba9063-418b-485d-a86f-23e772a46da0",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C62",
+      "claim": "Syk binds to the phosphorylated ITAM on the cytoplasmic tail of Ig\u03b1 and Ig\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Syk binds to the phosphorylated Immunoreceptor tyrosine-based activation motif (ITAM) on the cytoplasmic tail of Ig\u03b1 and Ig\u03b2, and subsequently Syk will undergo auto-phosphorylation at multiple tyrosine sites within its linker regions to be converted to a signaling active form (Saouaf et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Saouaf et al., 1994.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "2d746b6d-881d-43a3-bae7-3629d1569e12",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C63",
+      "claim": "Phosphorylated Syk provides docking sites for PLC\u03b32.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylated Syk also provides docking sites for PLC\u03b32 (Weber et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Weber et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "f66bdd41-3353-4404-a918-2491e04810af",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C64",
+      "claim": "B cells use different isotypes of BCRs to recognize antigens and initiate transmembrane activation signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, B cells use different isotypes of BCRs to recognize antigens and initiate transmembrane activation signaling (McHeyzer-Williams and McHeyzer-Williams, 2005; Pierce and Liu, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to McHeyzer-Williams and McHeyzer-Williams, 2005 and Pierce and Liu, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "9f8b22d1-daaf-4a44-8d77-2fec73616b4a",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C65",
+      "claim": "BCR activation may begin seconds after the recognition of the BCR and the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially challenging since it is known that BCR activation may begin seconds after the recognition of the BCR and the antigen (Pierce and Liu, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pierce and Liu, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "19f2cb8a-dec3-417d-a663-9c75c1f58b7d",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C66",
+      "claim": "After BCR-antigen recognition, B cells immediately begin to spread over the antigen-containing surfaces to form the B cell IS.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous early studies showed that after BCR-antigen recognition, B cells immediately begin to spread over the antigen-containing surfaces to form the B cell IS and attempt to acquire the antigens by actively accumulating BCRs and antigens into the B cell IS (Fleire et al., 2006; Liu et al., 2010a, 2010b, 2010c; Seeley-Fallen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "05bfc9a0-350a-40d8-afec-f0ebc04df7b1",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C67",
+      "claim": "The surface density of NP-TGT sensors used in the main experiments is 29.0 molecule/\u00b5m\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface density is 29.0 molecule/\u00b5m2, seeing more in Figure 2\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "f28f9fba-f0e1-4b51-b6c7-b3b054086338",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C68",
+      "claim": "At a density of 4.0 NP-TGT molecule/\u00b5m\u00b2, the same pattern of activation response of IgM-BCRs is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At the density of 4.0 NP-TGT molecule/\u00b5m2 (5 nM incubation concentration), we can capture the same pattern of the activation response of IgM-BCRs (Figure 2\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1F,G shows the multi-threshold pattern is maintained at lower density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "4dc3e52a-e1a6-404d-bcd5-b509e090f1a8",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C69",
+      "claim": "At very low density of 0.3 NP-TGT molecule/\u00b5m\u00b2, only 56 pN NP-TGT sensor can very mildly trigger BCR accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the very low density of 0.3 NP-TGT molecule/\u00b5m2 (2 nM incubation concentration), we found that only 56 pN NP-TGT sensor can very mildly trigger the BCR accumulation, while both 12 pN and 43 pN NP-TGT failed to trigger B cell activation (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors report this observation though data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "0140c06a-9c7c-4767-8218-aae7c5a73d2e",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C70",
+      "claim": "The low mechanical force threshold for memory IgG-BCR provides an explanation for rapid and high-titered IgG antibody responses upon re-encounter with antigen by memory B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All these results provide new explanations for the rapid and high-titered IgG antibody responses upon re-encounter with antigen by memory B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings regarding IgG-BCR force requirements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "3d1de2a2-b924-4824-8304-00edd14e6a43",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C71",
+      "claim": "The multi-threshold effect of IgM-BCR activation reflects the multi-threshold progress of delivering mechanical force-induced conformational changes from mIgM to Ig\u03b1 and Ig\u03b2 heterodimer complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we tried to interpret our data in a way that such multi-threshold effect of the activation of IgM-BCRs reflects the multi-threshold progress of delivering these mechanical forces induced potential conformational changes from mIgM to Ig\u03b1 and Ig\u03b2 heterodimer complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an interpretation/speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "f48b8107-4c7b-4245-9e13-4017181f7ab5",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C72",
+      "claim": "The multi-threshold effect likely provides a chance for proof-testing of the mechanical forces applied to IgM-BCR during its activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also our speculation that such multi-threshold likely provides a chance for the proof-testing of the mechanical forces applied to IgM-BCR during its activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "ba5e2b7d-c416-4848-b175-c7051b97f915",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C73",
+      "claim": "BCRs form obvious nanoclusters with 20\u201350 IgM-BCRs per nanocluster on quiescent B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the recent advance of the super-resolution imaging studies demonstrated that BCRs form obvious nanoclusters with 20\u201350 IgM-BCRs per nanocluster on quiescent B cells (Mattila et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mattila et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "596867d6-08de-425a-9eaa-8fe8194e36c1",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "claim_id": "C74",
+      "claim": "The values of rupture forces of TGT sensors were calculated based on data measured by magnetic tweezers system with a loading rate of 0 pN/s.",
+      "claim_type": "EXPLICIT",
+      "source": "It shall be noted that the values of the rupture forces of TGT sensors were all calculated based on the data measured by magnetic tweezers system with a loading rate of 0 pN/s (constant force with a time under force mode of 2 s during the measurements).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the original TGT calibration study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0248ee52-f0f8-4302-8b1f-da8f5b168402",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The NP-TGT system was successfully constructed and validated as a force sensor for BCR activation studies. The system maintains the same force calibration as the original TGT system (12-56 pN range), with force values representing distributions (FWHM 5-15 pN). NP-TGT sensors specifically activate NP-specific B1-8-IgM-BCR expressing cells but not wild-type B cells, and require neutravidin-mediated attachment to coverslips.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 collectively establish the NP-TGT system as a valid experimental tool. The force calibration is appropriately referenced to the original system (C19, C20), specificity is demonstrated through positive (C21) and negative controls (C22, C26), and technical validation shows stable neutravidin attachment (C23) and specific NP-TGT binding (C24, C25). The data in Figures 1C-E support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IgM-BCR activation exhibits force-dependent activation with a multi-threshold effect. Three distinct force thresholds were identified: low-force (12-16 pN) triggering weak activation, medium-force (23-43 pN) triggering medium activation, and high-force (50-56 pN) triggering strong activation. Within each threshold range, increasing force does not dramatically enhance activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C27-C31 are strongly supported by quantitative data in Figures 2A-B showing statistically significant differences between threshold groups but not within groups. The multi-threshold pattern is consistently observed across both J558L cells and primary B cells, with appropriate statistical comparisons (p<0.001 between thresholds, NS within thresholds).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "475ad1db-be8f-4280-9976-bd5fc9a6b542",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BCR internalization does not contribute to the observed force-dependent differences in BCR accumulation during the 10-minute experimental timeframe. Blocking internalization with MDC inhibitor does not eliminate force-dependent BCR accumulation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C33 are supported by confocal imaging data (Figure 2\u2014figure supplement 2A-C) showing no obvious internalization over 10 minutes, and by experiments with MDC inhibitor (Figure 2\u2014figure supplement 2D-F) demonstrating maintained force-dependence. This appropriately controls for a potential confounding variable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "04792d57-0397-4d28-a54b-c0a386928934",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The volume of BCR microclusters, as measured by fluorescence intensity, is dependent on mechanical force and exhibits a multi-threshold effect similar to overall BCR accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by quantitative analysis in Figure 3A-B using 2D Gaussian fitting to measure individual microcluster fluorescence intensity. The data show the same three-threshold pattern observed for total BCR accumulation, providing additional evidence for force-dependent activation at the microcluster level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "84523663-477c-4964-b91b-18e75a6a1939",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The recruitment of key signaling molecules (pSyk, pPLC\u03b32, and pTyr) to the immunological synapse is dependent on mechanical forces, with 56 pN showing highest recruitment, 43 pN showing medium recruitment, and 12 pN showing lowest recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by quantitative TIRFM data in Figure 4A-C showing statistically significant force-dependent recruitment of all three signaling molecules. This demonstrates that mechanical force affects not just BCR accumulation but also downstream signaling activation, strengthening the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "7ef884dc-e412-49ed-84e8-ae1f4b6da68c",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ICAM-1 co-tethering enhances BCR activation but does not eliminate the multi-threshold force-dependence pattern. FAK inhibition maintains the multi-threshold pattern but specifically reduces activation at high (56 pN) and medium (43 pN) force levels, suggesting integrin contributes to breakthrough of medium and high thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by data in Figure 5A-D. ICAM-1 increases overall activation (C38) but preserves the force-dependent pattern (C39). FAK inhibition experiments (C40-C41) show differential effects on different force thresholds, providing mechanistic insight. The interpretation that integrin contributes to higher thresholds is reasonable given the selective effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "54ff5a3b-4209-472b-bdb8-f27b208128dc",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Myosin IIA inhibition specifically reduces BCR accumulation at the high-end threshold (56 pN) but not at medium (43 pN) or low (12 pN) thresholds, suggesting myosin IIA contributes to breakthrough of the high-end threshold. Dynein inhibition does not significantly affect force-dependent BCR accumulation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by data in Figure 5E-H showing selective effects of myosin IIA inhibition on 56 pN responses and no significant effects of dynein inhibition. The speculative claims C54-C55 are appropriately labeled as speculation and are reasonable interpretations of the data. Positive controls in Figure 5\u2014figure supplement 1 validate inhibitor function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "1e6fc546-39fd-47c9-b97b-f1b2c55b3a78",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Memory IgG-BCR activation requires either no tension or mechanical force below 12 pN, as 12 pN, 43 pN, and 56 pN NP-TGT sensors all similarly activate IgG-BCR expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C44, and C45 are strongly supported by data in Figure 6A-H showing no significant differences in IgG-BCR activation across force levels from 12-56 pN in both J558L cells and primary memory B cells. Time-lapse imaging (Figure 6G-H) confirms this pattern is maintained throughout activation. The inference that the threshold is below 12 pN is logical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "c9889d9f-15eb-46ee-b182-46fbc9c56655",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Memory IgE-BCR activation requires either no tension or mechanical force below 12 pN, similar to IgG-BCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C46 are supported by data in Figure 6I-J showing similar IgE-BCR activation across different force levels (12-56 pN) in Ramos cells. This extends the low-force threshold finding to another isotype-switched BCR, strengthening the generalizability of the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "e6eaba00-2e54-4c04-801a-bdc594ee9364",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The cytoplasmic tail of the IgG heavy chain is both necessary and sufficient for the low mechanical force threshold of memory IgG-BCR activation. Swapping the IgM tail with the IgG tail (MMG) confers force-independent activation, while swapping the IgG tail with the IgM tail (GGM) restores force-dependent activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C48-C50 are strongly supported by tail-swap experiments in Figure 7. The reciprocal swap experiments provide compelling evidence that the cytoplasmic tail is both necessary (GGM shows force-dependence) and sufficient (MMG shows force-independence) for determining force sensitivity. This is a well-designed experiment addressing mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "31f34a97-b66f-459f-a198-92df680d1d9f",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IgM-BCR can function as a mechanosensor independent of integrin, as force-dependent activation persists when integrin function is modulated. The 12 pN sensor can induce mild but consistent IgM-BCR activation, while integrin does not activate at 12-16 pN forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by the integrin modulation experiments (Figure 5) showing maintained force-dependence despite ICAM-1 addition or FAK inhibition. The comparison to integrin activation thresholds (C53, cited from Wang and Ha 2013) strengthens the argument that BCR has distinct mechanosensing properties. Claim C52 is supported by Figures 2-3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "479f3e7a-ad98-4be9-943a-8cd0e90bff5a",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The multi-threshold force-dependence pattern is maintained across different NP-TGT surface densities (29.0 and 4.0 molecules/\u03bcm\u00b2), but at very low density (0.3 molecules/\u03bcm\u00b2), only the 56 pN sensor triggers activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by density titration experiments in Figure 2\u2014figure supplement 1. The maintenance of the pattern at 4.0 molecules/\u03bcm\u00b2 (C68) demonstrates robustness, while the loss of low-force activation at 0.3 molecules/\u03bcm\u00b2 (C69) indicates density-dependence at very low densities. This appropriately addresses a potential confounding variable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "384eb032-9a0d-49df-aefe-4391f8963478",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The breakthrough of high-end and medium-level (but not low-end) mechanical force thresholds might be contributed by inside-out activation of integrin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is explicitly labeled as speculation by the authors and is based on FAK inhibition data showing differential effects on force thresholds. While the data support that integrin contributes to higher thresholds, the mechanism (inside-out activation) is speculative and not directly tested. Additional experiments would be needed to confirm this specific mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "2d32d383-0274-4213-8ed2-a03a8d368897",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The low mechanical force threshold for memory IgG-BCR provides an explanation for rapid and high-titered IgG antibody responses upon antigen re-encounter by memory B cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is a reasonable interpretation of the experimental findings showing IgG-BCR requires <12 pN for activation compared to the multi-threshold requirement for IgM-BCR. This lower threshold would logically facilitate faster activation. While this is an inference rather than directly tested, it is well-supported by the data and consistent with known biology of memory responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "61f84a02-3bfd-48db-89af-d99ff070272b",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The multi-threshold effect may reflect multi-threshold delivery of mechanical force-induced conformational changes from mIgM to Ig\u03b1-Ig\u03b2 heterodimer and may provide proof-testing of applied forces during activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71 and C72 are explicitly labeled as speculation by the authors. While these are plausible mechanistic interpretations of the multi-threshold phenomenon, they are not directly tested and represent hypotheses for future investigation. The authors appropriately present these as speculative interpretations rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "588da27a-9746-4f4d-957e-171754c79feb",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge claims about BCR structure, function, regulation by antigen properties, substrate stiffness ranges, B cell isotypes, signaling molecules, and technical details of the TGT system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C18 and C57-C74 represent established knowledge from the field, appropriately cited to prior literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with established immunology and biophysics literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    },
+    {
+      "id": "83b75bef-fffa-404e-a2dd-47e076296e50",
+      "content_id": "498d407f-0ed8-4e15-99b1-47ca893711f9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Naive IgM-BCR expressed in Ramos cells shows force-dependent activation with multi-threshold effect, serving as a system control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by data in Figure 6K-L showing that IgM-BCR maintains force-dependent activation in the Ramos cell system. This serves as an important control demonstrating that the force-independence of IgE-BCR (also tested in Ramos cells) is not a cell-type artifact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:40:20.181154Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6dd35f93-7246-4e07-9cc2-3d0720da0e67",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "7fbe042a-5be4-48f1-abf2-6a279dfb8a86",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "491c623e-26f3-4219-85fa-e5264021c196",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "942491f2-de57-4cb0-bb8b-2383480415a4",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "11c8805e-229d-4f1e-a863-e8fe1f68c5ca",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "dd798cda-a0a7-4dbb-b434-a09dd65a8eb5",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "a45d0b93-5a55-435f-8771-1f6797c7adf8",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "b0e7fbbb-45e5-4150-b6ac-0a23ba9968f2",
+      "result_id": "0248ee52-f0f8-4302-8b1f-da8f5b168402"
+    },
+    {
+      "claim_id": "ccbe6740-ddca-4f3f-8726-7176ad765046",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "5a16fe14-cda8-4eaa-abc2-fbf280c1fcc0",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "fd888d1c-d2ba-4d1f-8096-13e279c22392",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "922b1696-e1b0-4739-a50c-43dd98f9c2d9",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "8e77dc04-d391-4a36-87d5-d062f3700c55",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "91e8860e-f2d6-42e3-80e1-41b9dd80e1d5",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "22f45f04-8825-4031-86ea-8490127dd6d8",
+      "result_id": "c6c7ff9c-1704-4070-8b26-4d2bf4becf50"
+    },
+    {
+      "claim_id": "496383cf-8e02-483a-9665-131421d566d5",
+      "result_id": "475ad1db-be8f-4280-9976-bd5fc9a6b542"
+    },
+    {
+      "claim_id": "d1b4a6c6-60ad-4c62-9f24-341a9cff023c",
+      "result_id": "475ad1db-be8f-4280-9976-bd5fc9a6b542"
+    },
+    {
+      "claim_id": "47f4b7c2-c7ef-497d-abc3-89d7a46f93fa",
+      "result_id": "04792d57-0397-4d28-a54b-c0a386928934"
+    },
+    {
+      "claim_id": "8551d5fd-f8f5-49fe-a80c-6a93871d2f0c",
+      "result_id": "84523663-477c-4964-b91b-18e75a6a1939"
+    },
+    {
+      "claim_id": "f093d51e-54ce-4f2a-82d2-06f3ffb1a3c8",
+      "result_id": "84523663-477c-4964-b91b-18e75a6a1939"
+    },
+    {
+      "claim_id": "1d56d4d1-e0c1-4525-90d3-37ec32aa8bc5",
+      "result_id": "84523663-477c-4964-b91b-18e75a6a1939"
+    },
+    {
+      "claim_id": "fb5dc7bd-2f73-4840-8763-3d5a29b6cf81",
+      "result_id": "7ef884dc-e412-49ed-84e8-ae1f4b6da68c"
+    },
+    {
+      "claim_id": "90fa6b7f-4a9a-4f6c-97f8-68dee578886c",
+      "result_id": "7ef884dc-e412-49ed-84e8-ae1f4b6da68c"
+    },
+    {
+      "claim_id": "ad87508b-6032-4e1a-b01b-596049fe131f",
+      "result_id": "7ef884dc-e412-49ed-84e8-ae1f4b6da68c"
+    },
+    {
+      "claim_id": "aae293a2-a68d-4c38-a6bf-3bea46a0cf3b",
+      "result_id": "7ef884dc-e412-49ed-84e8-ae1f4b6da68c"
+    },
+    {
+      "claim_id": "02c6473d-825d-43b8-8a17-c19c226a1f04",
+      "result_id": "54ff5a3b-4209-472b-bdb8-f27b208128dc"
+    },
+    {
+      "claim_id": "e94eaf72-0d94-41e1-9d86-6a86060b6014",
+      "result_id": "54ff5a3b-4209-472b-bdb8-f27b208128dc"
+    },
+    {
+      "claim_id": "8b42e4f6-3e54-4e32-bccc-311eea7579ae",
+      "result_id": "54ff5a3b-4209-472b-bdb8-f27b208128dc"
+    },
+    {
+      "claim_id": "3c388eb4-5593-4b27-bcff-91ab89941cd5",
+      "result_id": "54ff5a3b-4209-472b-bdb8-f27b208128dc"
+    },
+    {
+      "claim_id": "8d1bc868-8d36-406f-b072-7702bda5acfd",
+      "result_id": "1e6fc546-39fd-47c9-b97b-f1b2c55b3a78"
+    },
+    {
+      "claim_id": "381af8bb-b402-4d50-93cf-f60cb4dcecc0",
+      "result_id": "1e6fc546-39fd-47c9-b97b-f1b2c55b3a78"
+    },
+    {
+      "claim_id": "964d80c4-23b6-4dcb-883e-e7f32d627e74",
+      "result_id": "1e6fc546-39fd-47c9-b97b-f1b2c55b3a78"
+    },
+    {
+      "claim_id": "a734485c-04e3-4a89-9aab-60faf99ed3dc",
+      "result_id": "c9889d9f-15eb-46ee-b182-46fbc9c56655"
+    },
+    {
+      "claim_id": "439747a2-6799-481b-a586-277046023ad5",
+      "result_id": "c9889d9f-15eb-46ee-b182-46fbc9c56655"
+    },
+    {
+      "claim_id": "3d54e6fb-1388-4d06-8601-65072d00c864",
+      "result_id": "e6eaba00-2e54-4c04-801a-bdc594ee9364"
+    },
+    {
+      "claim_id": "f33172b1-6800-4f77-9b9c-c58e8b7f6ed2",
+      "result_id": "e6eaba00-2e54-4c04-801a-bdc594ee9364"
+    },
+    {
+      "claim_id": "c3005d4f-4a7b-41ad-ad9a-15fce23e88f5",
+      "result_id": "e6eaba00-2e54-4c04-801a-bdc594ee9364"
+    },
+    {
+      "claim_id": "d8f7e4ab-438b-4c61-9322-6389b9828002",
+      "result_id": "e6eaba00-2e54-4c04-801a-bdc594ee9364"
+    },
+    {
+      "claim_id": "0a6ac967-b15d-4d23-bd80-aa5d8f2872f1",
+      "result_id": "31f34a97-b66f-459f-a198-92df680d1d9f"
+    },
+    {
+      "claim_id": "3a95072f-d2e4-4c0e-8903-c613e6415cd8",
+      "result_id": "31f34a97-b66f-459f-a198-92df680d1d9f"
+    },
+    {
+      "claim_id": "899eb1bb-b42c-491b-b11d-ff24778a369b",
+      "result_id": "31f34a97-b66f-459f-a198-92df680d1d9f"
+    },
+    {
+      "claim_id": "05bfc9a0-350a-40d8-afec-f0ebc04df7b1",
+      "result_id": "479f3e7a-ad98-4be9-943a-8cd0e90bff5a"
+    },
+    {
+      "claim_id": "f28f9fba-f0e1-4b51-b6c7-b3b054086338",
+      "result_id": "479f3e7a-ad98-4be9-943a-8cd0e90bff5a"
+    },
+    {
+      "claim_id": "4dc3e52a-e1a6-404d-bcd5-b509e090f1a8",
+      "result_id": "479f3e7a-ad98-4be9-943a-8cd0e90bff5a"
+    },
+    {
+      "claim_id": "3215f543-2662-41ee-bb45-8383db73e4fc",
+      "result_id": "384eb032-9a0d-49df-aefe-4391f8963478"
+    },
+    {
+      "claim_id": "0140c06a-9c7c-4767-8218-aae7c5a73d2e",
+      "result_id": "2d32d383-0274-4213-8ed2-a03a8d368897"
+    },
+    {
+      "claim_id": "3d1de2a2-b924-4824-8304-00edd14e6a43",
+      "result_id": "61f84a02-3bfd-48db-89af-d99ff070272b"
+    },
+    {
+      "claim_id": "f48b8107-4c7b-4245-9e13-4017181f7ab5",
+      "result_id": "61f84a02-3bfd-48db-89af-d99ff070272b"
+    },
+    {
+      "claim_id": "4939670a-e8a7-4e2a-b5ac-08d002e04fa6",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "f6a39a7a-6917-4f1e-a7b7-a4e44838352f",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "ab8f2840-e1d3-4049-93c8-379ca5f1d08c",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "e791e614-2882-4c59-a29a-74ff95788cfb",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "d3a76e39-7a17-4ff7-afed-44f990a1eb7d",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "e6497d75-720e-4035-b4ec-89074d7a20bb",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "9591b181-3c72-4bfe-84db-09aff4041587",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "48c051f5-f6b1-4f51-8a9f-d6d2c4178a0e",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "82c60c02-bf5e-411f-b4cd-af1b27db310b",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "c5f1006b-86e0-4e25-8ed8-cc69a4a42a73",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "d014d466-99a8-4473-937a-6550784fd3f6",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "7ca17fc9-f19a-41a2-8b8a-ea180beb5fba",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "2e22f5ef-7647-426c-9e03-e55b8d9c0551",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "224cf73d-2601-4cf7-b821-e5b61b7da421",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "1dd2256c-f3ec-4c33-9a1c-bd463b6c9f30",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "8026f55d-bdf0-4f97-98ce-79b21cc8b913",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "ede7860f-ce15-4be9-a842-fb77d9ec6e28",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "cf048b33-10cc-4002-8418-ca41d68de977",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "8aba9063-418b-485d-a86f-23e772a46da0",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "2d746b6d-881d-43a3-bae7-3629d1569e12",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "f66bdd41-3353-4404-a918-2491e04810af",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "9f8b22d1-daaf-4a44-8d77-2fec73616b4a",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "19f2cb8a-dec3-417d-a663-9c75c1f58b7d",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "ba5e2b7d-c416-4848-b175-c7051b97f915",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "596867d6-08de-425a-9eaa-8fe8194e36c1",
+      "result_id": "588da27a-9746-4f4d-957e-171754c79feb"
+    },
+    {
+      "claim_id": "9404daa6-242a-40a8-94de-c35c503847f8",
+      "result_id": "83b75bef-fffa-404e-a2dd-47e076296e50"
+    }
+  ],
+  "comparisons": []
+}

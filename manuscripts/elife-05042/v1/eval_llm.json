@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Smad2 is essential for Nodal signaling during zebrafish mesendoderm specification. MZsmad2 mutants lack endoderm and mesoderm, phenocopying Nodal loss-of-function mutants. The phenotype can be rescued by Smad2 or GFP-Smad2 expression, and neither Nodal nor Activin show activity in MZsmad2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging genetic, phenotypic, and rescue evidence demonstrating Smad2's essential role. The mutant phenotype (C2), rescue experiments (C3), and loss of ligand responsiveness (C4) collectively establish Smad2 as the critical transducer of Nodal signaling. The evidence includes appropriate controls (MZoep comparison) and multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Spatiotemporal mapping reveals that the Nodal morphogen gradient and Smad2 activity evolve dynamically during blastula stages. A low-amplitude short-range gradient transforms into a high-amplitude long-range gradient over 1.5 hours. The long-range gene ntl is induced at both high and low Smad2 levels, while the short-range gene gsc requires high sustained Smad2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C60-C65 are supported by single-cell tracking of GFP-Smad2 and in situ hybridization time courses. The spatiotemporal mapping approach provides quantitative data on gradient dynamics and correlates Smad2 activity with target gene expression patterns. The methodology is appropriate and the conclusions are directly supported by the imaging data shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Testing the threshold model reveals that similar Smad2 activity levels at 1 and 2 hours result in different target gene expression patterns. While ntl is expressed after both 1 and 2 hours of Nodal exposure, gsc is only expressed after 2 hours, despite similar GFP-Smad2 NC ratios. This demonstrates that duration of signaling influences morphogen interpretation at the level of target gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by well-designed transplantation experiments that control exposure duration while measuring both Smad2 activity and target gene expression. The finding that similar Smad2 levels produce different gene expression outcomes depending on duration directly challenges the strict threshold model. The experimental design appropriately isolates the variable of interest (duration) while controlling for Smad2 activity levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Testing the ratchet model shows that Smad2 activity and target gene expression cannot be maintained after transient Nodal exposure. When cells are moved from high to low Nodal environments, Smad2 activity decreases to basal levels within 60 minutes and ntl expression disappears over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by transplantation experiments tracking GFP-Smad2 and ntl expression after moving cells from margin to animal pole. The results directly contradict the ratchet model's prediction of sustained activity. The experimental approach is appropriate for testing this hypothesis, though the number of replicates and statistical analysis could be more explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Dose-response and time-course analysis of Smad2 phosphorylation reveals concentration- and time-dependent activation kinetics. High Nodal levels induce rapid Smad2 activation reaching quasi-steady state after 1 hour, while low Nodal levels induce slower activation reaching steady state after 2 hours. Fitted phosphorylation and turnover rates are consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by Western blot analysis with appropriate controls and model fitting. The measured kinetic parameters (C18-C19) align with previously published values from other systems, providing external validation. The experimental design using recombinant Nodal protein allows precise control of ligand concentration and timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "NanoString analysis identifies 47 direct Nodal targets and reveals striking differences in transcriptional magnitude and timing. ntl shows rapid induction and high expression (~2500 counts), while gsc requires higher Nodal concentrations, shows slow induction (detected only after 60 min), and reaches 25-fold lower expression. Transcription rates vary widely (0.0016-9.3 counts/s), while Kds cluster narrowly (0.73-42 nM, 75% between 5-10 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 are supported by comprehensive NanoString analysis with appropriate criteria for identifying direct targets (Nodal-dependent induction, cycloheximide insensitivity, Smad2 binding). The quantitative measurements allow direct comparison of transcript levels across genes. The finding that transcription rates vary more than Kds is a key observation, though the model fitting procedure could benefit from more explicit uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The kinetic parameters explain differential gene induction in threshold model tests. Only ~50 gsc RNA counts are detected 1 hour after Nodal exposure due to its low transcription rate, while ntl reaches ~1000 counts after 1 hour due to its high transcription rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 connect the measured kinetic parameters to the experimental observations from the threshold model tests. The inference is logical and supported by the NanoString data, providing a mechanistic explanation for the time-dependent differences in gene expression despite similar Smad2 activity levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The kinetic model recapitulates spatiotemporal patterns of Smad2 activation and target gene expression. Simulations predict that ntl expression begins 45 minutes after ligand production and extends >100 \u03bcm from the margin after 3 hours, while gsc expression is delayed and confined close to the source. Predictions for foxa3 and efnb2a are validated by RNA in situ hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 demonstrate the predictive power of the kinetic model. The model successfully recapitulates known expression patterns (ntl, gsc) and makes testable predictions for other genes (foxa3, efnb2a) that are validated experimentally. This provides strong support for the model's validity, though the spatial simulations rely on previously measured diffusion parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C66"
+    ],
+    "result": "Transcription rate is the best predictor of gene expression range among kinetic parameters. Genes highly induced by Nodal display long-range expression, and maximal transcription rate correlates better with range than Kd or degradation rate. Model comparison analysis supports a model where transcription rate is gene-specific while Kd is constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C66 are supported by systematic analysis comparing different parameters with expression range and by Bayesian model comparison. The finding that transcription rate is the primary determinant is a key insight. However, the model comparison (C66) could be strengthened by more explicit discussion of assumptions and alternative model formulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Delayed gene induction restricts expression range. Simulations show that introducing a delay transforms long-range genes into short-range genes. Experimentally, efnb2b and bra show stage-dependent induction kinetics and are expressed late and at short range. These genes contain Smad2/FoxH1 binding sites but require protein synthesis (cycloheximide-sensitive), suggesting regulation by additional factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C72-C74 are supported by modeling predictions validated by experimental observations. The cycloheximide sensitivity (C73) provides mechanistic insight suggesting additional co-factors are required. The stage-dependent induction kinetics (C44) are well-documented. This represents a novel mechanism for modulating morphogen interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C78"
+    ],
+    "result": "The kinetics of target gene induction is a major determinant of morphogen interpretation. Target genes can be induced rapidly at long range through high transcription rate, high Smad2 affinity, and early onset, while low transcription rate, low affinity, or delayed onset generate short-range patterns. In rapidly developing systems, intrinsic transcription rate can be a major determinant of expression range, and high affinity binding sites cannot overcome limits imposed by low transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C78 represent the major conceptual conclusions synthesized from the experimental and modeling results. These conclusions are well-supported by the collective evidence, though they represent inferences that extend beyond the specific measurements. The claims appropriately acknowledge that these findings apply particularly to 'rapidly developing systems,' recognizing potential context-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The Nodal morphogen gradient forms through diffusion and rapid phosphorylation generates a corresponding gradient of activated Smad2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by the kinetic model incorporating diffusion (with parameters from prior work, C69) and by experimental measurements of pSmad2 and GFP-Smad2 gradients. The diffusion-based mechanism is consistent with previous experimental measurements of Nodal diffusion coefficients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Background claims establishing the importance of Nodal signaling in development, mesendoderm patterning, left-right asymmetry, stem cell regulation, and morphogen gradient formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 represent established background knowledge supported by multiple citations to prior literature. These provide appropriate context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Technical validation claims: the gsc probe is less sensitive at low concentrations than the ntl probe, and the \u03b2-actin::GFP-Smad2 transgene rescues smad2/smad2 adult lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 represent important technical controls. C67 is supported by fusion mRNA experiments showing differential probe sensitivity, which is important for interpreting in situ hybridization results. C68 is supported by genetic crosses showing transgenic rescue, validating the GFP-Smad2 reporter as functional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Model parameterization and sensitivity analysis: diffusion coefficients and clearance rates were previously measured; parameter exploration reveals that expression range is most affected by transcription rate, Kd, and Hill coefficient, while degradation rate only influences range when mRNA half-lives are very short.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe model parameterization and sensitivity analysis. C69 appropriately cites prior work for diffusion parameters. C70-C71 are supported by systematic parameter exploration shown in supplementary figures. This analysis is important for understanding which parameters matter most, though more quantitative sensitivity metrics could strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Speculative mechanistic proposals for how transcriptional delays and rates might be regulated, including co-activators, repressor elimination, chromatin structure, and promoter strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 are explicitly speculative proposals for mechanisms that could explain the observed phenomena. While these are reasonable hypotheses supported by citations to relevant literature (C77), they are not directly tested in this study. These represent appropriate discussion of potential mechanisms but should not be considered established findings.",
+    "result_type": "MINOR"
+  }
+]

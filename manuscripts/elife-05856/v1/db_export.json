@@ -1,0 +1,1336 @@
+{
+  "submission": {
+    "id": "365c071b-a90b-4c7a-908f-e6bd23349020",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:13:45.852374Z",
+    "updated_at": "2025-11-29T04:13:45.852374Z"
+  },
+  "content": [
+    {
+      "id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "submission_id": "365c071b-a90b-4c7a-908f-e6bd23349020",
+      "content_type": "manuscript",
+      "content_text": "# Expression noise facilitates the evolution of gene regulation\n\n## Authors\n\n- Luise Wolf<sup>1</sup>\n- Olin K Silander<sup>1</sup> \u2020\n- Erik van Nimwegen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Biozentrum University of Basel Basel Switzerland\n2. Swiss Institute of Bioinformatics Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough it is often tacitly assumed that gene regulatory interactions are finely tuned, how accurate gene regulation could evolve from a state without regulation is unclear. Moreover, gene expression noise would seem to impede the evolution of accurate gene regulation, and previous investigations have provided circumstantial evidence that natural selection has acted to lower noise levels. By evolving synthetic Escherichia coli promoters de novo, we here show that, contrary to expectations, promoters exhibit low noise by default. Instead, selection must have acted to increase the noise levels of highly regulated E. coli promoters. We present a general theory of the interplay between gene expression noise and gene regulation that explains these observations. The theory shows that propagation of expression noise from regulators to their targets is not an unwanted side-effect of regulation, but rather acts as a rudimentary form of regulation that facilitates the evolution of more accurate regulation.\n\n## Introduction\n\nMany studies over the last decade have established that, even within homogeneous environments, gene expression varies across genetically identical cells due to thermodynamic fluctuations in the molecular events underlying gene expression and the small numbers of molecules involved (Elowitz et al., 2002; Rao et al., 2002). This phenomenon is commonly referred to as \u2018expression noise\u2019 (Blake et al., 2003; Raser and O'Shea, 2005). Much progress has been gained in understanding the molecular mechanisms underlying noise in gene expression, and noise in transcription in particular (see, for example, Sanchez and Golding, 2013). In the simplest scenario, basic thermodynamic fluctuations and Brownian motion of the molecular players would cause transcription initiation at a given promoter to occur with a constant probability per unit time, and the corresponding mRNAs to decay with a constant probability per unit time, leading to a Poissonian steady-state distribution in the number of transcripts. Although such Poissonian fluctuations are observed for some genes, most genes exhibit much larger fluctuations in their mRNA copy number. It is generally believed that such increased variability originates in promoters stochastically switching between different states that are associated with different transcription initiation rates. In the simplest scenario, promoters stochastically switch between an \u2018on\u2019 and \u2018off\u2019 state, producing \u2018bursts\u2019 of transcript while in the on state, and this would lead to increased noise as has been well understood theoretically (Kepler and Elston, 2001; Paulsson, 2005; Shahrezaei and Swain, 2008). However, events such as the stochastic binding and unbinding of transcription factors (TFs), or modifications of the local chromatin state, would generally cause most promoters to switch between a much larger number of different states. Moreover, the extent of promoter state switching would be expected to depend on the specific promoter architecture. Indeed, several studies have shown that different promoters show different amounts of gene expression noise, and that these differences are, at least to some extent, encoded in the promoter sequence (Newman et al., 2006; Hornung et al., 2012; Silander et al., 2012; Carey et al., 2013; Jones, et al., 2014).\n\nImportantly, transcriptional noise is thus likely an evolvable trait that is subject to natural selection, but it is currently largely unclear how noise levels have been shaped by natural selection (Raj and van Oudenaarden, 2008). On the one hand, it can be argued that in each condition there is an optimal expression level for each protein, such that variations away from this optimal level are detrimental to an organism's fitness, implying that selection will act to minimize noise. Indeed, by investigating the association between expression noise and various statistics that can be considered proxies of organismal fitness, several studies have provided evidence that selection generally acts to minimize noise (Newman et al., 2006; Barkai and Shilo, 2007; Lehner, 2010; Lehner, 2008; Silander et al., 2012). In this interpretation, genes with lowest noise have been most strongly selected against noise, whereas high noise genes have experienced much weaker selection against noise. On the other hand, gene expression noise generates phenotypic diversity between organisms with identical genotypes, and there are well-established theoretical models showing that such phenotypic diversity can be selected for in fluctuating environments (Bull, 1987; Kussell and Leibler, 2005). In support of such theoretical models, a number of studies provided examples in which there is a positive association between expression noise and growth (Blake et al., 2006; Bishop et al., 2007; Ackermann et al., 2008; Zhang et al., 2009). It is thus possible that some of the genes with elevated noise may have been selected for phenotypic diversity.\n\n## Results\n\nIn order to assess how natural selection has acted on the transcriptional noise of promoters, it is critical to determine what default noise levels would be exhibited by promoters that have not been selected for their noise properties. To address this, we evolved a large set of synthetic Escherichia coli promoters de novo in the laboratory using an experimental protocol in which promoter sequences were selected on the basis of the mean expression level they conferred, while experiencing virtually no selection on their noise properties (Figure 1). We synthesized a pool of random DNA sequences, 100\u2013150 base pairs in length, and cloned these upstream of a sequence containing a strong ribosomal binding site and the open reading frame of green fluorescent protein (GFP). Beginning with a library of more than 1 million random promoter clones, we used fluorescence activated cell sorting (FACS) to select cells expressing specific levels of GFP (Figure 1A\u2013C). After sorting, we used PCR mutagenesis to input more genetic variation into the library of promoters and repeated the sorting. After the initial FACS sort, this strategy of mutagenesis followed by FACS was repeated four times. The result was a genetically diverse collection of functional promoters that conferred expression close to a pre-specified target level. We selected a subset of 479 synthetic promoters from the third and fifth rounds of FACS selection, choosing equal numbers of promoters from each of six replicate lineages we evolved (Figure 1; \u2018Materials and methods\u2019). We then used flow cytometry, as described previously (Silander et al., 2012), to measure the distribution of fluorescence levels per cell for each synthetic promoter, as well as for all native E. coli promoters (Zaslaver et al., 2006). We used quantitative Western blotting to confirm that the mean fluorescence levels were directly proportional to GFP molecule numbers (Figure 1\u2014figure supplement 2 and Appendix 1), which allowed us to express fluorescence levels in units of numbers of GFP molecules.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-v1.jpg)\n\n**Figure 1.:** (A) We created an initial library of approximately 106 unique synthetic promoters by cloning random nucleotide sequences, of approximately 100\u2013150 base pairs (bp) in length, upstream of a strong ribosomal binding site followed by an open reading frame for GFP, as used to quantify the expression of native E. coli promoters (Zaslaver et al., 2006), and transformed this library into a population of cells (\u2018Materials and methods\u2019). We evolved populations of synthetic promoters by performing five rounds of selection and mutation on this library. In each round we used fluorescence activated cell sorting (FACS) to select 2 \u00d7 105 cells that lie within a gate comprising the 5% of the population closest in fluorescence to a given target level. Next, plasmids were isolated from the selected cells and PCR mutagenesis was used to introduce new genetic variation into the promoters. We then re-cloned the mutated promoters into fresh plasmids and transformed them into a fresh population of cells. We performed this evolutionary scheme on three replicate populations in which we selected for a target expression level equal to the median expression level (50th percentile) of all native E. coli promoters and three replicate populations in which we selected for a target expression level at the 97.5th percentile of all native promoters (referred to here as medium and high expression levels, respectively). (B) Changes in the fluorescence distribution for one evolutionary run selecting for medium target expression (top) and one evolutionary run selecting for high target expression (bottom). The curves show the population's expression distributions before selection, with the numbers above each curve indicating the selection round. The colored bars at the top indicate the FACS gates that were used to select cells from the populations at each corresponding round. (C) Examples of fluorescence distributions for individual clones obtained after five rounds of evolution. Microscopy pictures of two individual clonal promoter populations are shown as insets. (D) For each native E. coli promoter (blue) and synthetic promoter (red), the mean (x-axis) and variance (y-axis) of log-fluorescence intensities across cells were measured using flow cytometry. Fluorescence values are expressed in units of number of GFP molecules. The green curve shows the theoretically predicted minimal variance as a function of mean expression (Appendix 1). The insets show the log-fluorescence distributions for two example promoters (corresponding to the larger dark blue and light blue dots). (E) Cumulative distributions of excess noise levels of native (blue) and synthetic (red) promoters.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sequences were clustered using single-linkage based on 100%, 95%, or 90% sequence identity (left, middle, and right panels) and the bar plots show the corresponding histograms of cluster sizes. The results indicate that the promoters in the populations at the third and fifth rounds are highly diverse, deriving from many different initial random sequences in the initial library.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Error bars were estimated from three replicates for the FACS measurements and six replicates for the GFP levels. The straight line shows the fit y = x + 1.06, which is equivalent to: GFP molecules per cell = 2.88* mean FACS intensity.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The mRNA levels are estimated relative to the mRNA level of reference gene IhfB. Error bars show \u00b11 standard deviation of the posterior probability distribution on mRNA levels (Appendix 1). Black data points correspond to native promoters and red data points to synthetic promoter. The straight line shows a linear fit with slope 1, that is, the best fit to a model where the protein level p is directly proportional to the mRNA level m, log(p) = c + log(m), with c = 7.06 (Appendix 1).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The top three panels compare mean log-fluorescences across three replicates and the bottom three panels compare excess noise in log-fluorescences across three replicates. The Pearson squared correlation coefficients between pairs of replicate measurements are indicated at the top of each panel.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Each dot corresponds to one of the pairs of promoters and shows the ratio of the noise level of the highest noise promoter to that of the lower noise promoter as measured by FACS (horizontal axis) and by microscope (vertical axis). The blue line shows the line y = x.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Both axes are in units of number of GFP molecules. Note that, in contrast to raw variances in log-fluorescence that show a clear dependence on mean log-fluorescence, the excess noise levels show no dependence on mean.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** The left panel shows the cumulative distribution of excess noise for promoters whose mean log-expression was less than log(18,000) (corresponding to the medium expressing synthetic promoters), and the right panel for promoters with mean log-expression more than log(18,000) (corresponding to the high expressing synthetic promoters). High noise promoters are clearly enriched among native promoters for both medium and high expressing promoters.\n\nObserving that the fluorescence distributions across cells were well approximated by log-normal distributions (Figure 1C), we characterized each promoter's distribution by the mean and variance of log-fluorescence, defining the latter as the promoter's noise level (Figure 1D). This definition of noise is equivalent to the square of the coefficient of variation whenever fluctuations are small relative to the mean (Appendix 1), which applies to most promoters, that is, the variance is less than 0.25 for 75% of all promoters (Figure 1D).\n\nAlthough our reporter constructs measure protein levels, that is, GFP, the differences in the noise levels of the reporters are likely dominated by differences in transcriptional noise of the promoters. First, the only differences between the different constructs are the promoter sequence inserts. Consequently, the mRNAs of the different reporters are almost identical, varying only by the short sequence segment between the transcription start site and the constant part of the construct. Second, the reporters were constructed specifically to measure transcription, and feature a constant 5\u2032 UTR part upstream of the start codon of the GFP gene, including a strong ribosomal binding site (Zaslaver et al., 2006). Using qPCR we confirmed that protein levels were determined primarily by mRNA levels (Figure 1\u2014figure supplement 3 and Appendix 1). Because protein decay and dilution rates are identical for all reporters, this implies translation rates vary little across the reporters. Although we have not explicitly measured mRNA decay rates of the reporters, we presume that, because the mRNAs are nearly identical, and because translation rates vary little across the reporters, mRNA decay rates likely vary also only moderately across the reporters. Finally, we note that noise levels were reproducible across biological replicates (Figure 1\u2014figure supplement 4), and noise levels estimated using microscopy were consistent with those measured by flow cytometry (Figure 1\u2014figure supplement 5).\n\nImportantly, although the differences in noise levels are likely due to differences in transcriptional noise, fluctuations in translation and dilution rates will also contribute to total noise levels that we observe. Indeed, as expected (Bar-Even et al., 2006; Newman et al., 2006), we observed a systematic relationship between the mean and variance of expression levels of each promoter (Figure 1D). In particular, we observed a strict lower bound on variance as a function of mean expression. This lower bound is well described (Figure 1D, green curve) by a simple model that incorporates background fluorescence, an intrinsic noise component which is proportional to the number of proteins produced per mRNA, and an extrinsic noise component which likely reflects overall fluctuations in transcription, translation, and dilution rates, that all reporters are subject to (Taniguchi et al., 2010) (Appendix 1). We defined the excess noise of a promoter as its variance above and beyond this lower bound, allowing us to compare the noise levels of promoters with different means (Figure 1\u2014figure supplement 6).\n\nWe found, surprisingly, that most of the synthetic promoters exhibited noise levels close to the minimal level exhibited by the native promoters (Figure 1D). Additionally, a substantial fraction of native promoters exhibited excess noise levels significantly greater than the synthetic promoters (Figure 1E and Figure 1\u2014figure supplements 6, 7). For example, only 26.1% of the synthetic promoters exhibited excess noise above 0.05, compared to 41.6% of the native E. coli promoters (p < 7.7 \u00d7 10\u221210, hypergeometric test). Given that the synthetic promoters were evolved from random sequence fragments and had not been selected on their noise properties (Appendix 2), we concluded that functional E. coli promoters should exhibit low excess noise levels by default. Importantly, this implies that the native promoters with elevated excess noise must have experienced selective pressures that caused them to increase their noise.\n\nTo understand how selection might have acted to increase noise, we first investigated whether excess noise was associated with other characteristics of the promoters. Previous studies in Saccharomyces cerevisiae have shown that promoters with high noise tend to also show high expression plasticity, that is, large changes in mean expression level across environments (Newman et al., 2006). Although we did not clearly observe this association in data from our previous study (Silander et al., 2012), a recent re-analysis of this data did uncover a significant association between expression plasticity and noise (Singh, 2013), which we confirmed using our present data (Figure 2A). In addition, we found that there is an equally strong relationship between excess noise and the number of regulators known to target the promoter (Salgado et al., 2013) (Figure 2B). In particular, whereas the excess noise levels of promoters without known regulatory inputs are very similar to those of our synthetic promoters, promoters with one or more regulatory inputs have clearly elevated noise levels (Figure 2C). The general association between elevated noise and gene regulation has recently been observed in eukaryotes as well (Sharon et al., 2014), and mutations that lower gene expression noise typically target TF binding sites (Hornung et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig2-v1.jpg)\n\n**Figure 2.:** (A) Native promoters were sorted by their excess noise x and, as a function of a cut-off on x (horizontal axis), we calculated the mean and standard error (vertical axis) of the variation in mRNA levels across different experimental conditions (data from http://genexpdb.ou.edu/) of all promoters with excess noise larger than x. (B) Promoters were sorted by excess noise x as in panel A, and mean and standard error of the number of known regulatory inputs (vertical axis, data from RegulonDB [Salgado et al., 2013]) for promoters with excess noise larger than x is shown. (C) Cumulative distributions of excess noise levels of synthetic promoters (red) and native promoters without known regulatory inputs (black), with one known regulatory input (green), and with two or more known regulatory inputs (purple).\n\nOur results imply that native promoters with high noise must have experienced selection pressures that caused their noise levels to increase, and that there is a general association between high noise and gene regulation. We next aimed to develop a theoretical understanding of these two observations. Perhaps the simplest interpretation of the observation that natural selection must have increased the noise levels of some promoters is that these promoters were directly selected for increased noise. Several theoretical treatments have shown that phenotypic variability may be selectively beneficial when environments change in ways that cannot be accurately sensed or are too rapid for organisms to respond (Bull, 1987; Haccou and Iwasa, 1995; Kussell and Leibler, 2005), with the phenotypic variability acting as a \u2018bet hedging\u2019 strategy. Thus, it is conceivable that selection has directly selected for increased noise as a bet hedging strategy for a subset of promoters, and more recent theoretical work shows that increasing gene expression noise may indeed increase population growth rates in some scenarios (Tanase-Nicola and ten Wolde, 2008). However, this interpretation does not explain the association between noise and regulation. On the contrary, one would naively expect that bet hedging strategies function as an alternative to gene regulation, that is, when implementing sensing and regulation would be either too difficult or too costly to evolve (Kussell and Leibler, 2005).\n\nRegarding the general association between gene regulation and expression noise, using an analogy with the fluctuation-dissipation theorem from physics, it has been suggested that expression noise may be an unwanted but unavoidable side-effect of regulation (Lehner and Kaneko, 2011). Indeed, any regulator will have some noise in its expression or activity, and this noise will be propagated to its target genes. Consequently, this \u2018noise-propagation\u2019 effect will cause an increase in expression noise of the targets (Thattai and van Oudenaarden, 2001). Although noise-propagation is a plausible explanation for the general association between noise and regulation, its effects are detrimental to the accuracy of expression regulation, and one might thus expect natural selection to have acted to minimize its effects, for example, by minimizing the expression fluctuations in regulators. It would thus appear difficult to reconcile our observation that high noise promoters must have experienced selection to increase their noise levels with the assumption that selection has acted to minimize noise-propagation. Instead, our observations would be better explained by a scenario in which noise-propagation is positively selected for.\n\nTo clarify these observations, we developed a general theoretical model for quantifying how selection acts on gene regulatory interactions. In particular, the model calculates the effect on fitness of evolving a new regulatory interaction between a given gene and a given regulator, as a function of properties of the regulator, and the way selection acts on the gene's expression levels. As explained in \u2018Materials and methods\u2019 and Appendix 3, we derive that, under relatively mild assumptions, the fitness effects of a new regulatory interaction can be calculated analytically, and depend on only a few effective parameters. To explain this general model, we illustrate it using a simple scenario (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig3-v1.jpg)\n\n**Figure 3.:** (A) Expression distribution of an unregulated promoter (blue curve) and selected expression ranges in three different environments, that is, the red, gold, and green dashed curves show fitness as a function of expression level in these environments. Although our model applies more generally, for simplicity we here visualize selection as truncation selection (i.e., a rectangular fitness function). The fitness of the promoter in the gold environment is proportional to the shaded area. (B) Contour plot of the log-fitness change resulting from optimally coupling the promoter to a transcription factor (TF) with signal-to-noise ratio S and correlation R. Contours run from 7.5 at the top right to 0.5 at the bottom right. The three colored dots correspond to the TFs illustrated in panels C\u2013H. The red curve shows optimal S as a function of R. (C\u2013E) Each panel shows the expression distributions of an example TF across the three environments (red, gold, and green curves). The corresponding values of correlation R and signal-to-noise S are indicated in each panel. (F\u2013H) Each panel shows the expression distributions across the three environments for a promoter that is optimally coupled to the TF indicated in the inset. The shaded areas correspond to the fitness in each environment. The total noise levels of the regulated promoters are also indicated in each panel. The unregulated promoter has total noise \u03c3tot = 0.1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The colors indicate the value of \u03c3tot, running from \u03c3tot equal to the noise \u03c3 of the unregulated promoter (red) to \u03c3tot = 6\u03c3 (blue). A phase boundary (thick black curve) separates solutions in a \u2018basal noise regime\u2019 at the top left, where the total noise equals the minimal noise \u03c32, and solutions in an \u2018environment-driven noise regime\u2019 at the bottom right, where the total noise matches the variance in desired levels that is not tracked by the regulation, that is, $\\sigma_{tot}^{2}=(1\u2212R^{2})var(\\mu_{e})\u2212\\tau^{2}$. The contours show optimal signal-to-noise ratios S* as a function of Y and R. Note that S* diverges at the phase boundary.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05856/elife-05856-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** For all promoters p, the excess noise level Ep was modeled as a linear function $E_{p}=\\sum_{r}\u2009R_{pr}V_{r}+noise$, where Rpr = 1 when the regulator r is known to target promoter p and Rpr = 0 otherwise (data from RegulonDB [Salgado et al., 2013]), and Vr is the noise-propagation strength of regulator r. The noise-propagation strengths Vr are inferred by minimizing the squared deviation between the predicted and observed excess noise levels using a Gaussian prior and cross-validation to avoid over-fitting (Balwierz et al., 2014). Each bar shows the inferred value of Vr for the TF indicated at the bottom of the bar, together with its error bar \u03c3(Vr). All TFs are shown for which Vr > \u03c3(Vr) and are sorted from left to right by their significance Vr/\u03c3(Vr).\n\nWe focus on a single gene and assume that the gene starts out unregulated, with an expression distribution characterized by a certain mean \u03bc and variance \u03c32 (Figure 3A, blue curve). In its natural habitat, the population experiences a number of different environments e that may require the gene to express at different levels and we assume that the fitnes of an individual cell, that is, its growth or survival rate, is a function of its gene expression state. Indeed, recent work has confirmed that expression fluctuations in single cells can affect their instantaneous growth rates (Kiviet et al., 2014). In the simple scenario of Figure 3, we assume there is an optimal level \u03bce in each environment, and that cells with expression levels within a certain range \u03c4 around this optimum are selected. As an example, Figure 3A assumes there are three environments (red, gold, and green), with the green environment requiring up-regulation of the expression and the red environment requiring down-regulation of the expression. The fitness in each environment corresponds to the fraction of cells with expression levels within the selected range, that is, the unregulated promoter has reasonably high fitness in the gold environment but very low fitness in the green and red environments. Since the overall fitness is the product of the fitness in each environment, a poor overlap between the expression distribution and selected range in any one environment leads to low overall fitness. In our model, the mismatch between the actual and desired expression levels is quantified by the \u2018expression mismatch\u2019 Y, where Y2 = var(\u03bce)/(\u03c32 + \u03c42) is the variance in the desired expression levels \u03bce across environments relative to the sum of the variances of the fitness function \u03c42 and the expression distribution \u03c32 (Y \u2248 4 for the example in Figure 3A).\n\nWe now consider evolving a regulatory interaction between the promoter and a given regulator. We assume that, in each environment e, the regulator's expression, or more generally its activity, will have some average level re. Coupling the promoter to the regulator will have two effects. First, the mean expression of the gene in each environment will become correlated with the mean activity of the regulator. Our model assumes a linear interaction, that is, in each environment e the gene's mean expression becomes \u03bc(e) = \u03bc + cre, where c is the coupling constant between regulator and promoter. This is the typical way in which we think about gene regulation and we will call this effect on the gene's mean expression the \u2018condition-response\u2019 effect. Second, in each environment e the regulator's activity will also have some variance $\\sigma_{r}^{2}$ and this noise will be propagated to the target gene. Because of this noise-propagation effect, the target's noise level will increase by $c^{2}\\sigma_{r}^{2}$, becoming $\\sigma^{2}+c^{2}\\sigma_{r}^{2}$. We define the renormalized coupling constant X as the noise increase relative to the sum of the original noise levels and the variance of the fitness function, that is, $X^{2}=c^{2}\\sigma_{r}^{2}/(\\sigma^{2}+\\tau^{2})$.\n\nOur analysis shows that, besides the expression mismatch Y and coupling constant X, the fitness increase that results from coupling to a given regulator depends only on two effective parameters characterizing the regulator: First, the Pearson correlation coefficient R between the desired expression levels \u03bce and the regulator's average activities re and, second, the signal-to-noise ratio of the regulator S, with $S^{2}=var(r_{e})/\\sigma_{r}^{2}$ defined as the ratio of the variance in the mean activities of the regulator across the environments and the noise level of the regulator in each environment. In terms of these parameters, the increase in log-fitness resulting from evolving a regulatory interaction becomes\n\n$$\nd\u2009log[f(X,Y,R,S)]=\\frac{1}{2}\\frac{(X^{2}+R^{2})Y^{2}\u2212(SX\u2212RY)^{2}}{1+X^{2}}\u2212\\frac{1}{2}log[1+X^{2}].\n$$\n\nNotably, this equation applies independent of how the desired levels \u03bce and regulator levels re vary across the environments and only depends on the assumption that the fitness function and expression distributions can be approximated by Gaussians.\n\nTo illustrate the predictions of this theory, the contour plot of Figure 3B shows the log-fitness changes that can be obtained by optimally coupling the promoter to a regulator with a given correlation R and signal-to-noise S. We chose the range in S values such that d log[f] is positive over the parameter region shown, that is, d log[f] \u2248 0 in the lower right corner of Figure 3B. As intuitively expected, the highest fitness is obtained when coupling to an accurate regulator with high signal-to-noise S, whose activities correlate precisely with the desired expression levels (cyan dot in Figure 3B). An example of such a TF is shown in Figure 3C. The resulting expression distributions of the promoter coupled to this TF accurately track the desired levels, with only moderately increased noise in the promoter's expression (Figure 3F). In this parameter regime, the improvement in fitness is entirely due to the condition-response effect, and the increased noise of the target can indeed be considered a detrimental side-effect of the regulation.\n\nHowever, regulators that track the desired expression levels of the promoter with such high accuracy, that is, R = 0.95, may often not be available. Interestingly, coupling to a noisy regulator whose activity is entirely uncorrelated with the desired expression levels (blue dot in Figure 3B and Figure 3E,H) also substantially increases fitness. In this regime, the increased fitness results exclusively from the noise-propagation mechanism, and by coupling to the regulator the promoter effectively implements a bet hedging strategy.\n\nSurprisingly, coupling to the uncorrelated noisy regulator (blue dot in Figure 3B and Figure 3E,H) outperforms coupling to a moderately correlated regulator (magenta dot in Figure 3B and Figure 3D,G). To understand how coupling to a regulator with moderate correlation R = 0.64 can be outperformed by coupling to a regulator with no correlation R = 0, we calculated the optimal signal-to-noise S as a function of its correlation R (red curve in Figure 3B). This shows that the magenta regulator has too large an S for its correlation, that is, increasing the noise of this TF would result in an increase of the promoter's noise, and this would in turn lead to an increase in fitness in the green and gold conditions (see Figure 3G). This illustrates that regulators may generally be under selection to become noisy themselves. To the left of the red curve in Figure 3B, noise-propagation is too large and the increased noise of the targets can be considered a detrimental side-effect of regulation. In contrast, to the right of the red curve, noise-propagation is too small, that is, increasing the noise of the regulator would improve fitness.\n\nMost interestingly, the red curve corresponds to a continuum of regulatory strategies in which the condition-response and noise-propagation effects are optimally acting in concert, going from being dominated by noise-propagation in the lower left, to being dominated by the condition-response in the top right. Importantly, this clarifies how accurate regulation can evolve smoothly from a state without regulation. Highly accurate regulation with high R and S can be reached by starting from coupling to a noisy regulator with low R and S, whose benefits come entirely from the noise-propagation, and then increasing both R and S in incremental steps along this continuum of regulatory strategies.\n\nWe now discuss how this theoretical model helps us interpret our experimental observations. First, our model predicts that the selective pressure for a promoter to evolve regulatory interactions is determined by the expression mismatch Y. When Y < 1, even a constitutively expressed promoter has a good overlap with the fitness function across all conditions, and there will be no selective pressure to evolve regulation. Our synthetic promoters, which were selected for expressing at a constant level, correspond to this situation, and our results show that such promoters have low noise by default. Thus, we interpret the observation that native promoters without known regulatory inputs have noise levels similar to those of our synthetic promoters (Figure 2B) as indicating that constitutive promoters have low noise by default.\n\nIn the interpretation of our model, the promoters with elevated noise were those in which selection required their expression levels to vary significantly across environments, that is, for which Y \u226b 1. How much expression noise a given promoter is likely to evolve depends on its value of its expression mismatch Y, and the values of the correlations R and signal-to-noise S of the regulators that are available in the genome. Since the precise environmental conditions that E. coli experiences in the wild, and how these determine optimal expression levels of its genes, are largely unknown, it is not possible to make quantitative predictions of the expected noise levels of specific promoters using our model. However, our model can be used to understand the general qualitative trends observed in Figure 2.\n\nFirst, our model explains why there is a general correlation between expression noise and expression plasticity. Since regulators affect the expression of their targets in a linear manner, coupling a promoter to a combination of different regulators is equivalent to coupling the promoter to a single \u2018effective regulator\u2019 whose expression distribution is a linear combination of the expression distributions of the individual regulators. Assuming that coupling to such a linear combination of regulators can attain a correlation R with the desired expression levels of the gene, our model predicts that noise-propagation will be selected whenever $Y^{2}>(1\u2212R^{2})^{\u22121}$; that is, whenever the expression mismatch Y is large enough, noise-propagation will be beneficial. If we additionally assume that selection has tuned the signal-to-noise of the regulators to optimize the amount of noise-propagation, then the final noise level of the promoter is predicted to equal $\\sigma_{tot}^{2}=(1\u2212R^{2})var(\\mu_{e})\u2212\\tau^{2}$ (Figure 3\u2014figure supplement 1 and Appendix 3). This expression can be interpreted as saying that, of the original mismatch Y2, a fraction R2Y2 is accounted for by the condition-response, whereas the remaining fraction (1 \u2212 R2)Y2 is accounted for by the noise-propagation. This implies that both the expression plasticity, which is given by the variance in the promoter's mean across conditions (i.e., R2Y2), and the noise level (i.e., (1 \u2212 R2)Y2) are proportional to the original expression mismatch Y2. Our model thus predicts that the expression plasticity and noise level should be correlated.\n\nOur model also predicts a general positive correlation between expression noise and the number of regulatory inputs. Starting from a high expression mismatch Y, each new regulatory interaction will reduce the mismatch from Y to Y\u2032 < Y by a combination of the condition-response effect reducing the average deviations from the desired levels, and the noise-propagation increasing the overlap by virtue of increasing the expression noise. Whenever Y\u2032 is still larger than 1, the promoter will be under selective pressure to evolve further regulatory interactions. In this way, the higher the initial mismatch Y, the larger the expected number of regulatory interactions that will be necessary to reduce the mismatch below 1; that is, our model generally predicts that the number of regulatory interactions, the expression plasticity, and the final noise all correlate with the original mismatch Y.\n\nFinally, since in our model elevated noise levels are due to noise-propagation per definition, it trivially predicts that, the larger the number of regulatory inputs, the larger the final noise levels tends to be. More specifically, our model predicts that, in a given condition, the noise level of a promoter is determined by the noise levels of the TFs that regulate it. To test this prediction, we used a very simple linear model that assumes that the excess noise level of a gene is equal to the sum of the noise levels of the TFs that regulate it (\u2018Materials and methods\u2019). Although this simple model is very crude, that is, assuming noise-propagation to be of equal size for all targets of a given TF, and assuming that fluctuations in TF activities are all independent, it was nevertheless able to explain a substantial fraction of the variance in excess noise levels across promoters (17%). The top five TFs most significantly associated with elevated noise levels of their targets were CRP, H-NS, ArcA, ilvY, and GadX (Figure 3\u2014figure supplement 2). Of these, GadX and H-NS were also identified, using a simpler method, in the data of our previous study (Silander et al., 2012). The appearance of H-NS is interesting since it is a histone-like nucleoid-associated protein that acts as a silencer (Dorman, 2004), that is, somewhat analogous to the role of nucleosomes in eukaryotes, and in eukaryotes nucleosome positioning at promoters has been shown to be a major determinant of transcriptional noise (Blake et al., 2006; Tirosh and Barkai, 2008; Cairns, 2009). The TFs ArcA and GadX are involved with responses to low oxygen and acid stress, respectively, and it is plausible that these TFs may be partially activated in the conditions in which our experiments are performed. Our cells are grown in M9 minimal media with glucose in micro-titer plates, and measurements are taken late in the exponential phase. It is well-known that in micro-titer plates oxygen limitation can become a major stress late in the exponential phase, and this may result in the activation of fermentation reactions which in turn cause acid stress. The appearance of CRP is consistent with our observation in Silander et al. (2012) that promoters of genes involved in carbon metabolism are over-represented among high noise promoters. In summary, modeling of excess noise levels in terms of known regulatory interactions shows that, in accordance with our model, a substantial amount of the variation in noise levels can be explained by noise-propagation from noisy regulators, and the regulators we identify as most significantly propagating noise are consistent with existing biological knowledge regarding our growth conditions.\n\n## Discussion\n\nBecause genotype-phenotype relationships for complex phenotypic traits are poorly understood, it is often difficult to assess how observable variation in a particular trait has been affected by natural selection. Here we have shown that, by comparing naturally observed variation in a particular trait with variation observed in synthetic systems that were evolved under well-controlled selective conditions, definite inferences can be made about the selection pressures that have acted on the natural systems. In particular, by evolving synthetic E. coli promoters de novo using a procedure in which promoters are strongly selected on their mean expression and not on their expression noise, we have shown that native promoters must have experienced selective pressures that increased their noise levels, and that promoters with elevated noise are highly regulated by TFs.\n\nTo account for this, we have developed a theoretical model that provides a simple mechanistic framework for understanding how selection acts on regulatory interactions. The key ingredient of the model is that it recognizes that a regulatory interaction affects the target's expression in two separate ways: the condition-response effect through which the mean expression of the target becomes a function of the mean activity of the regulator, and the noise-propagation effect through which the noise of the target is increased in proportion to the noise of the regulator. Our model elucidates that not only the condition-response effect but also the noise-propagation effect is often a functional consequence of the regulatory interaction; that is, instead of being just an unavoidable side-effect of regulation, noise-propagation is often beneficial and can be considered to act as a rudimentary form of regulation. Our framework vastly expands the evolutionary conditions under which novel regulatory interactions can evolve. Instead of assuming that regulators and their targets must evolve in a tightly coordinated fashion, noise-propagation alone may provide a sufficient benefit for a new regulatory interaction to evolve. This regulation can then be smoothly mutated along a continuum in which noise-propagation and condition-response are acting in concert, slowly lowering noise, and increasing the accuracy of the condition-response, eventually leading to highly accurate regulation. In this way our model provides a plausible scenario for how accurate regulatory interactions can evolve de novo from a state without regulation. Finally, our model shows that unless regulation is very precise, regulatory interactions that act to increase noise are beneficial. Thus, elevated levels of expression noise can be expected whenever the accuracy of regulation is limited.\n\n## Materials and methods\n\n### Ab initio promoter library construction from random sequences\n\nWe obtained chemically synthesized nucleotide sequences of random nucleotides 200 bp in length (Purimex, Germany). Each sequence had defined 5\u2032 and 3\u2032 ends to allow PCR amplification. Within these constant regions, restriction sites for BamHI and XhoI were present. The intervening sequence was made up of 157 bp of random nucleotides (5\u2032-CCTTTCGTCTTCACCTCGAG-(N157)-GGGATCCTCTGGATGTAAGAAGG-3\u2032). However, as coupling of base pairs during oligonucleotide synthesis is not always successful and strand breaks can frequently occur in long oligonucleotides, many oligonucleotides were shorter than 200 bp in length. We used PCR to generate double-stranded DNA from the single-stranded oligonucleotides using forward and reverse primers matching the defined 5\u2032 and 3\u2032 ends. We gel-purified the double-stranded PCR product and double-digested it using BamHI and XhoI. After column purification, sequences were ligated into a version of the low-copy plasmid pUA66, which contains a gfpmut2 open reading frame downstream of a strong ribosomal binding site (Zaslaver et al., 2006). The vector was modified to remove a weak \u03c370 binding site present 24 bp upstream of the GFP open reading frame (two point mutations, A \u2192 G and T \u2192 G, were introduced, changing the putative \u03c370 binding site from TAGATT to TGGATG, with the consensus \u03c370 binding site being TATAAT). The ligation was performed using T4 DNA ligase (NEB) at 16\u00b0C for 24 hr. The ligation product was then column purified and electroporated into E. coli DH10B cells. This protocol resulted in extremely high transformation yields (approximately 106 individual clones per transformation).\n\n### Selection on expression level using flow cytometry\n\nCultures of transformed cells were regenerated for 1 hr in 1 ml SOC medium (Super Optimal Broth supplemented with 20 mM glucose) and afterwards 1 ml SOC containing 50 \u03bcg/ml kanamycin was added for overnight growth, ensuring that only cells containing the plasmid could grow. These cultures were then diluted 500-fold (approximately 5 \u00d7 106 cells in total) into M9 minimal media supplemented with 0.2% glucose and grown for 2.5 hr with shaking at 200 rpm. The distribution of GFP fluorescence levels was measured for each culture using FACS in a FACSAria IIIu (BD Biosciences), with excitation at 488 nm and a 513/17 nm bandpass filter used for emission.\n\nWe used this distribution of fluorescence values to designate a selection gate. The position of the gate was determined by measuring the mean fluorescence of two reference promoters (Zaslaver et al., 2006): gyrB which exhibits a mean expression level that is at the 50th percentile all E. coli promoters; and rpmB, which exhibits a mean expression level that is at the 97.5th percentile of all E. coli promoters (Silander et al., 2012). For each of these reference genes, the mean fluorescence level was measured and a selection gate was constructed, centered on this mean expression level, such that 5% of all clones in the population fell within the gate. For each round of selection, we sorted 200,000 cells contained within this gate. Sorted cells were then transferred to 4 ml Luria Broth (LB) media (containing 50 \u03bcg/ml kanamycin) and grown overnight. These cultures were stored supplemented with 7.5% glycerol at \u221280\u00b0C for subsequent analysis.\n\nFor each expression level (i.e., reference gene) we evolved three replicate populations. We refer to these as the medium expressers (those promoters selected based on the gyrB reference gate) and high expressers (those promoters selected based on the rpmB reference gate).\n\n### PCR mutagenesis\n\nFollowing FACS-based selection on fluorescence, we introduced novel genetic variation into the populations using PCR mutagenesis. We first re-grew the cells overnight and used this culture to prepare plasmid DNA. We amplified the promoter sequences from these plasmids using the GeneMorph II Random Mutagenesis Kit (Stratagene) with the primers referred to previously that matched the defined regions of the promoters. We used 0.01 ng of DNA as starting material and 35 cycles for amplification. This resulted in a mutation rate of around 0.01 per bp (such that we expect that, in 200 bp, 95% of the promoters will contain between zero and four mutations). These PCR products were then digested with XhoI and BamHI, ligated back into the vector, and again transformed into DH10B cells. After an initial round of selection on the initial library, this entire process (PCR mutagenesis, transformation, and selection) was repeated four times in total. At this point, the plasmid libraries of synthetic promoters were isolated and transformed into E. coli K12 MG1655 for comparison with a library of native E. coli promoters (see below).\n\n### Quantification of fluorescence\n\nTo quantify fluorescence on a single-cell level, we used flow cytometry with a FACSCanto II (BD Biosciences), with excitation at 488 nm and a 513/17 nm band-pass filter used for emission. We collected data for at least 50,000 events. We then gated this data as outlined in Silander et al. (2012), identifying approximately 5000 cells most similar in forward scatter (FSC) and side scatter (SSC). We then calculated the mean and variance in log-fluorescence using these cells, using a Bayesian procedure that accounts for outliers (Appendix 1). We randomly selected 479 promoters from the evolved set (72 medium expressers and 72 high expressers after three rounds of selection; 168 medium expressers and 167 high expressers after five rounds of selection) and quantified mean and variance in fluorescence. We used the same measurement procedures to calculate mean and variance for all promoters contained in a library of E. coli promoters also placed upstream of the gfpmut2 open reading frame on the pUA66 plasmid (Zaslaver et al., 2006). We refer to the promoters from this library as native E. coli promoters. For 288 promoters, we quantified fluorescence in three independent cultures and found that both mean and variance in expression were reproducible across replicate biological experiments (Figure 1\u2014figure supplement 4). Additionally, we sequenced 378 sequences from our set of 479 promoter sequences, which showed that even after five rounds of selection, the promoters were quite diverse (Figure 1\u2014figure supplement 1). To confirm the sensitivity and accuracy of the FACS measurements, we selected 10 promoters and used fluorescence microscopy to measure their mean and variance in fluorescence. The cells were grown in the same conditions described above, placed on 1% agarose pad, and images were obtained using a CoolSNAP HQ CCD camera (Photometrics) connected to a DeltaVision Core microscope (Applied Precision) with a UPlanSApo 100\u00d7/1.40 oil objective (Olympus). Image-processing was done in soft-WoRx v3.3.6 (Applied Precision) and fluorescence values were extracted based on DIC image-mediated cell detection in MicrobeTracker Suite (Sliusarenko et al., 2011). For each cell, we calculated fluorescence per cell volume by summing all pixel values and dividing by the volume of the cell as estimated by MicrobeTracker. Cells undergo substantial phenotypic changes when they are put on agar, including changes in the distribution of cell sizes. Consequently, it is problematic to compare absolute variance measurements directly between FACS and microscope. We therefore compared the relative noise levels of different promoters. The 10 selected native promoters consist of five pairs with almost identical mean expression values (as measured by FACS) but with noise levels that vary by different amounts. For each of the five pairs we calculated the ratio of the noise levels of the higher and the lower noise promoter as measured by both FACS and the microscope. As shown in Figure 1\u2014figure supplement 5, with the exception of one pair of promoters that showed almost equal noise levels in FACS but a 50% difference in noise in the microscope, all other pairs showed good correlation of the relative noise levels in FACS and in the microscope, confirming that relative noise levels are similar in FACS and microscope measurements.\n\n### Quantitative Western analysis\n\nTo determine the correspondence between fluorescence intensities and absolute GFP numbers per cell, eight individual promoter clones were grown in three biological replicates using the same media conditions as in the experimental evolution. The cells were then re-suspended in SDS sample buffer, heated for 5 min at 95\u00b0C, and proteins were resolved by 12% SDS-PAGE. Quantification was done by loading a standard curve consisting of 10, 25, 50, 75, and 100 ng of GFP (#632373; Clonetech). Proteins were transferred to a Hybond ECL membrane (GE Healthcare, Life Sciences), which was then blocked in TNT (20 mM Tris pH 7.5, 150 mM NaCl, 0.05% Tween 20) with 1% BSA and 1% milk powder. Detection was performed with the ECL system after incubation with rabbit anti-GFP and polyclonal pig anti-rabbit. Western intensities for each sample were extracted using ImageJ (Figure 1\u2014figure supplement 2). The number of cells loaded was estimated by calculating the relationship between OD600 and CFU counts. Details of the data analysis procedures are given in Appendix 1.\n\n### Correlating protein and RNA levels per cell by quantitative PCR\n\nNative and evolved single-promoter populations were grown in three biological replicates by diluting overnight LB cultures 500-fold into M9 media supplemented with glucose. These cultures were grown for 2.5 hr, stabilized with an equal volume of RNA Later (Sigma\u2013Aldrich) and RNA was extracted using the Total RNA Purification 96-Well Kit (Norgen Biotek Corp) with on-column DNAse I digestion. Reverse transcription was done using random hexamers and qPCR with TaqMan probes and performed by Eurofins Medigenomix GmbH (Germany). Three technical replicates were performed. The efficiency of the primers and probes used were validated in a dilution series. Relative RNA levels per cell were obtained by normalizing to the reference gene ihfB using a Bayesian procedure for integrating data from the replicates and accounting for failed measurements (Appendix 1). The primers and probes used were: GFP forward primer: 5\u2032-CCTGTCCTTTTACCAGACAA-3\u2032; GFP reverse primer: 5\u2032-GTGGTCTCTCTTTTCGTTGGGAT-3\u2032; GFP probe: 5\u2032-TACCTGTCCACACAATCTGCCCTTTCG-3\u2032, ihfB forward primer: 5\u2032-GTTTCGGCAGTTTCTCTTTG-3\u2032, ihfB reverse primer: 5\u2032-ATCGCCAGTCTTCGGATTA-3\u2032, ihfB probe: 5\u2032-ACTACCGCGCACCACGTACCGGA-3\u2032).\n\n### Minimal variance as a function of mean expression and excess noise\n\nIn a simple model of gene expression in which there are constant rates of transcription, translation, mRNA decay, and protein decay, the probability distribution for the number of proteins per cell is a negative binomial with variance proportional to the mean $\u2329n\u232a$: $var(n)=(b+1)\u2329n\u232a$, where the constant b is the ratio between the mRNA translation rate and the mRNA decay rate, which is often referred to as \u2018burst size\u2019 (Shahrezaei and Swain, 2008). However, in general there are also cell-to-cell fluctuations in the transcription, translation, and decay rates, which are proportional to these rates themselves. These fluctuations lead to an additional term in the variance var(n) which is proportional to the square of the mean: $var(n)=\\beta\u2329n\u232a+\\sigma_{ab}^{2}\u2329n\u232a^{2}$, where \u03b2 is a renormalized burst size and $\\sigma_{ab}^{2}$ is the relative variance of the product of transcription, translation, and decay rates across cells (Appendix 1).\n\nThe total fluorescence in a cell (measured in units equivalent to number of GFP proteins) nmeas can then generally be written as: $n_{meas}=n_{bg}+\u2329n\u232a+\u03f5\\sqrt{var(n)}$, where nbg is background fluorescence and \u03f5 is a fluctuating quantity with mean zero and variance one. Assuming that the fluctuations are small relative to the mean, we then find for the variance of the logarithm of nmeas:\n\n$$\nvar(log[n_{meas}])=\\sigma_{ab}^{2}(1\u2212\\frac{n_{bg}}{\u2329n_{meas}\u232a})^{2}+\\frac{\\beta}{\u2329n_{meas}\u232a}(1\u2212\\frac{n_{bg}}{\u2329n_{meas}\u232a}).\n$$\n\nWe fit this functional form to the minimum variance var(log[nmeas]) as a function of the mean, with $\\sigma_{ab}^{2}=0.025$ and \u03b2 = 450. We defined the excess variance as the difference between the measured variance and this fitted minimal variance. A more detailed derivation is given in Appendix 1.\n\n### The FACS selection function\n\nBy comparing the distributions of the population's expression levels before and after rounds of selection (without intervening mutation of the promoters), we found that the probability that a cell with expression level x is selected by the FACS is well-approximated by $f(x|\\mu_{*},\\tau)=exp[\u2212\\frac{(x\u2212\\mu_{*})^{2}}{2\\tau^{2}}]$, with \u03bc* the desired expression level and \u03c4 the width of the selection window. For the last three rounds of selection for medium expression, the selection gates in the FACS were relatively constant, and we estimated \u03c4 \u2248 0.03 and \u03bc* fluctuated slightly around an average value of \u03bc* \u2248 8.1 for these selection rounds.\n\nWith this selection function, a promoter genotype that exhibits a distribution of expression values with mean \u03bc and standard deviation \u03c3 has a fitness (fraction of cells selected in the FACS) of\n\n$$\nf(\\mu,\\sigma|\\mu_{*},\\tau)=\\sqrt{\\frac{\\tau^{2}}{\\tau^{2}+\\sigma^{2}}}exp[\u2212\\frac{(\\mu\u2212\\mu_{*})^{2}}{2(\\tau^{2}+\\sigma^{2})}].\n$$\n\nThis estimated fitness function indicated that the fitness of promoter genotypes strongly depends on their mean \u03bc and is almost independent of their excess noise (Appendix 2\u2014figure 3 and Appendix 2\u2014figure 4). In addition, applying additional rounds of selection of varying strengths to the population of evolved promoters did not systematically alter their distribution of excess noise levels. Details of the analysis of the FACS selection are given in Appendix 2.\n\n### Model for the evolution of gene regulation in a fluctuating environment\n\nAlthough the model we present can be extended to include the evolution of gene regulation for multiple genes, for simplicity we focused on the evolution of a single gene and its promoter. We assume that the population experiences a sequence of different environments and that, in each environment, the fitness of each organism is a function of its gene expression level. We characterized the fitness function in each environment by two parameters: the desired level \u03bce that maximizes the fitness and a parameter \u03c4 that quantifies how quickly fitness falls away from this optimum. For simplicity and analytical tractability, we assumed a Gaussian form: $f(x|\\mu_{e},\\tau)=exp[\u2212 \\frac{(x\u2212\\mu_{e})^{2}}{2\\tau^{2}}]$. Similarly, although it is straightforward to allow the variance \u03c42 to vary across conditions, the results are more transparent when we assume \u03c42 is the same in all environments. Note that this fitness function has the same form as the FACS selection function. Consequently, the fitness $f(\\mu,\\sigma|\\mu_{e},\\tau)$ of a promoter with mean \u03bc and variance \u03c32 is given by Equation 2 as well, with \u03bce replacing \u03bc*.\n\nThe total number of offspring that a promoter will leave behind after experiencing all environments is given by the product of its fitness in each of the environments. Equivalently, the log-fitness of a promoter is proportional to its average log-fitness across all environments. For an unregulated promoter with fixed mean \u03bc and variance \u03c32 in expression, we then find for the log-fitness:\n\n$$\nlog[f(\\mu,\\sigma)]=\u2212 \\frac{(\\mu\u2212\u2329\\mu_{e}\u232a)^{2}+var(\\mu_{e})}{2(\\tau^{2}+\\sigma^{2})}+\\frac{1}{2}log[\\frac{\\tau^{2}}{\\tau^{2}+\\sigma^{2}}],\n$$\n\nwhere $\u2329\\mu_{e}\u232a$ is the average of the desired expression levels across environments and var(\u03bce) is the variance in the desired expression levels across environments. If we do not consider gene regulation but simply optimize the promoter's mean expression and noise level, then we find optimal log-fitness occurs when $\\mu=\u2329\\mu_{e}\u232a$ and \u03c32 = 0 (when var(\u03bce) < \u03c42) or \u03c32 = var(\u03bce) \u2212 \u03c42 otherwise. That is, when the desired expression level varies more than the width of the selection window, fitness is optimized by increasing noise so as to ensure the distribution overlaps the desired levels across all conditions. This result is equivalent to previous results on the evolution of phenotypic diversity in fluctuating environments (Bull, 1987).\n\nTo increase fitness, a promoter can evolve to become regulated by one of the regulators existing in the genome. Instead of having a constant mean expression \u03bc, the promoter's mean expression will then become a function of the environment e: \u03bc(e) = \u03bc + cre, where re is the mean expression (or more generally regulatory activity) of the regulator in environment e, and c is the coupling strength. Note that, for simplicity, we thus assume a linear coupling between the means of regulator and target. Since any gene will have some variability in its expression, we assumed that the actual expression/activity of the regulator in each environment e is Gaussian distributed with a variance $\\sigma_{r}^{2}$. As for the width of the fitness function \u03c4, it would again be straightforward to allow $\\sigma_{r}^{2}$ to vary across conditions (as it likely does in reality). However, the results are analytically more transparent and bring out the main features of the model better if we assume the regulator's noise $\\sigma_{r}^{2}$ is the same in all conditions.\n\nWhen coupled to the regulator, the promoter's total expression variance will become $\\sigma_{tot}^{2}=\\sigma^{2}+c^{2}\\sigma_{r}^{2}$ and the log-fitness of the promoter becomes:\n\n$$\nlog[f(\\mu,\\sigma,c)]=\u2212\\frac{\u2329(\\mu+cr_{e}\u2212\\mu_{e})^{2}\u232a}{2(\\tau^{2}+\\sigma^{2}+c^{2}\\sigma_{r}^{2})}+\\frac{1}{2}log[\\frac{\\tau^{2}}{\\tau^{2}+\\sigma^{2}+c^{2}\\sigma_{r}^{2}}].\n$$\n\nAssuming that the basal expression level \u03bc is optimized to maximize log-fitness, that is, $\\mu=\u2329\\mu_{e}\u232a\u2212c\u2329r_{e}\u232a$, this log-fitness can be rewritten as:\n\n$$\nlog[f(X,Y,S,R)]=cons.\u2212\\frac{1}{2}\\frac{Y^{2}(1\u2212R^{2})+(SX\u2212RY)^{2}}{1+X^{2}}\u2212\\frac{1}{2}log[1+X^{2}].\n$$\n\nwhere X measures the coupling strength $(X^{2}=\\frac{c^{2}\\sigma_{r}^{2}}{\\tau^{2}+\\sigma^{2}})$, Y is the expression mismatch that measures how much the desired expression level varies across environments $(Y^{2}=\\frac{var(\\mu_{e})}{\\tau^{2}+\\sigma^{2}})$, S is the signal-to-noise of the regulator $(S^{2}=\\frac{var(r_{e})}{\\sigma_{r}^{2}})$, and R is the Pearson correlation between the desired expression levels \u03bce and the activity levels re of the regulator. The change in log-fitness between the situation before and after adding of the regulatory interaction is obtained by subtracting log[f (0, Y, S, R)] from log[f (X, Y, S, R)], yielding\n\n$$\nd\u2009log[f(X,Y,S,R)]=\\frac{1}{2}\\frac{Y^{2}(R^{2}+X^{2})\u2212(SX\u2212RY)^{2}}{1+X^{2}}\u2212\\frac{1}{2}log[1+X^{2}].\n$$\n\nNote that this basic argument can be iterated. After the promoter has been coupled to a regulator, the residual deviations between the desired and actual expression levels are given by $\\mu\u02dc_{e}=\\mu_{e}\u2212cr_{e}$ and the new noise level of the promoter is given by $\\sigma\u02dc^{2}=\\sigma^{2}+c^{2}\\sigma_{r}^{2}$. If we define a new expression mismatch $Y\u02dc^{2}=var(\\mu\u02dc_{e})/(\\sigma\u02dc^{2}+\\tau^{2})$, then we can calculate the log-fitness changes associated with adding another regulatory interaction using exactly the same expressions as above, replacing Y by $Y\u02dc$.\n\nIn addition, because the coupling between the activity of the regulator and the expression of the promoter is linear, coupling the promoter to an arbitrary linear combination of different regulators can be modeled as coupling the promoter to a single \u2018effective\u2019 regulator; that is, if a promoter is coupling to different regulators ri with coupling constants ci, then in environment e we have $\\mu(e)=\\mu+\\sum_{i\u2009}c_{i}r_{e}^{i}$, which is equivalent to coupling with constant c to a regulator with mean $r_{e}=\\sum_{i\u2009}c_{i}r_{e}^{i}/c$. If $\\sigma_{i}^{2}$ is the noise level of regulator i and Rij is the Pearson correlation in the fluctuations of regulators i and j, then this composite regulator has a total variance $\\sigma_{r}^{2}=\\sum_{i\u2009}c_{i}^{2}\\sigma_{i}^{2}+\\sum_{i\\neqj\u2009}R_{ij}\\sigma_{i}\\sigma_{j}$.\n\nAs can be easily seen from Equation 1 in the main text, if the best linear combination of regulators provides a correlation R with the promoter's desired levels, the optimal value S* of the signal-to-noise of this composite regulator is given by S* = RY/X. Substituting this back into Equation 1, we find for the optimal coupling strength $X_{*}^{2}=max[0,(1\u2212R^{2})Y^{2}\u22121]$. This function is plotted in Figure 3\u2014figure supplement 1, together with the values of S* as a function of Y and R. Note that (1 \u2212 R2)Y2 is the part of the expression mismatch that is not accounted for by the condition-response effect of the regulators. Whenever this remaining expression mismatch is less than 1, noise-propagation is a detrimental side-effect of regulation and regulators will be selected to be as accurate as possible. However, when (1 \u2212 R2)Y2 > 1, noise-propagation will be selected for, and the increase in the total noise is equal to the amount of expression mismatch not accounted for by the condition-response.\n\nAdditional details on the derivation of our model and analysis of the behavior of the fitness function as a function of its parameters are given in Appendix 3.\n\n### Analysis of excess noise against gene expression variation and regulatory inputs\n\nWe re-annotated the promoter fragments of Zaslaver et al., 2006 by mapping the published primer pairs to the E. coli K12 MG1655 genome. Of the 1816 promoter fragments, 1718 could be unambiguously associated with a gene that was immediately downstream, and the 1718 promoter fragments were associated with 1137 different downstream genes (for some genes there were multiple or repeated upstream promoter fragments). We used the operon annotations of RegulonDB (Salgado et al., 2013) to extract, for each promoter, the set of additional downstream genes that are part of the same operon as the first downstream gene. We obtained known regulatory interactions between TFs and genes from RegulonDB and counted, for each E. coli gene, the number of TFs known to regulate the gene. We defined the number of regulatory inputs of a promoter to equal the average of the number of inputs for all genes in the operon downstream of the promoter. We sorted promoters by their excess noise and, as a function of a cut-off on excess noise level, calculated the mean and standard error of the number of regulatory inputs for all promoters with excess noise level above the cut-off. We obtained genome-wide gene expression measurements from the Gene Expression Database (http://genexpdb.ou.edu/). For each E. coli gene, we obtained 240 log fold-change values x corresponding to the logarithm of the expression ratio of the gene in a perturbed and a reference condition. We defined the variance in expression of a gene as the average of x2 across the 240 experiments. We again sorted promoters by their excess noise and, as a function of a cut-off on excess noise level, calculated the mean and standard error of gene expression variances for all promoters with excess noise above the cut-off.\n\n### Fitting excess noise levels in terms of regulatory interactions\n\nUsing the RegulonDB database (Salgado et al., 2013), we constructed a binary matrix R of regulatory interactions, where the components Rpr = 1 when regulator r is known to target promoter p, and Rpr = 0 otherwise. Following previous work from our group in which we modeled gene expression patterns in mammals in terms of regulatory sites (FANTOM Consortium et al., 2009; Balwierz et al., 2014), we use a simple linear model to relate the excess noise Ep of each promoter p to the (unknown) noise-propagation strengths Vr of each regulator r:\n\n$$\nE_{p}=\\sumrR_{pr}V_{r}+noise.\n$$\n\nWe assume the noise is Gaussian distributed with unknown variance, and we use a Gaussian prior $P(V_{r})\u221de^{\u2212\\lambdaV_{r}^{2}/2}$ on the noise-propagation strengths Vr to avoid over-fitting. The hyper-parameter \u03bb is chosen using a cross-validation, fitting the Vr on a random fraction of 80% of the promoters, and maximizing the quality of the predictions on the remaining 20% of the promoters. The quality of fit is quantified by the fraction of the variance in noise levels Ep that is explained by the fit. For our dataset, 17.1% of the variance of the overall dataset was explained by the fit.\n",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "d63d915e-8a23-4f0d-8a28-7ce89585ca2e",
+      "submission_id": "365c071b-a90b-4c7a-908f-e6bd23349020",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ido Golding, Baylor College of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05856.031](https://doi.org/10.7554/eLife.05856.031)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cExpression noise facilitates the evolution of gene regulation\u201d for consideration at eLife. Your article has been favorably evaluated by Aviv Regev (Senior editor), a guest Reviewing editor, and two reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission:\n\nWe all thought that the subject matter of the work was very timely, and the findings interesting. There were, however, a number of significant flaws that need to be addressed before publication is considered.\n\n1) After more than a decade of intensive research, there has been significant progress towards a biophysical, molecular understanding of the mechanisms leading to transcription noise. See e.g. the review by Sanchez and Golding (Science 2013), and more recent work in E. coli from the Xie (Cell 2014) and Phillips (Science 2014) labs. In its current form, the authors' work appears largely disconnected from our current mechanistic understanding of transcription noise: How does this understanding motivate the work? How does it affect the interpretation of the experimental results? How does it motivate the theoretical model and its interpretation?\n\n2) A possibly related flaw is the rather weak connection between the experiments and theoretical model. First, the model itself should be described in some more detail in the main text. But more crucially: How does the model help interpret the experiments? Can any kind of quantitative comparison be made between the two sets of results?\n\n3) More care must be taken when defining and discussing \u201ctranscription noise\u201d. In the current work, neither transcription kinetics (e.g. using MS2-GFP) nor mRNA statistics (using single-molecule FISH) are directly measured, but instead a protein (GFP) reporter is used. Thus, interpreting the measured variability as \u201ctranscription noise\u201d involves important caveats (see e.g. Paulsson, Nature 2004; Pedraza and Paulsson, Science 2008). These need to be explicitly discussed.\n\n4) In multiple places, the authors make very strong statements, which require additional evidence to support them or otherwise need to be reworded. Examples:\n\n\u201cMany studies have used circumstantial evidence to suggest that selection generally acts to minimize noise [\u2026] there is empirical evidence that selection has acted to increase expression noise in some cases\u201d (Introduction). What makes the former studies merely \u201ccircumstantial\u201d while the latter rise to the level of \u201cempirical\u201d?\n\n\u201cWhenever fluctuations are small relative to the mean, which applies to most promoters\u201d (Results). No reference is given to support this statement.\n\n\u201cWe concluded that constitutively expressed E. coli promoters exhibit low excess noise levels by default\u201d (Results). How was this conclusion reached? In particular, what is a \u201cconstitutive promoter\u201d (or \u201cunregulated promoter\u201d, as mentioned later in the same section of the manuscript)? All known promoters in E. coli are regulated by multiple parameters: growth rate, nutritional state, temperature, etc. So how can a specific promoter be \u201cconstitutive\u201d/\u201cunregulated\u201d?\n",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d7623b3-0bf9-4c25-9680-6822e805ca3c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C1",
+      "claim": "Gene expression varies across genetically identical cells in homogeneous environments due to thermodynamic fluctuations in molecular events underlying gene expression and small numbers of molecules involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies over the last decade have established that, even within homogeneous environments, gene expression varies across genetically identical cells due to thermodynamic fluctuations in the molecular events underlying gene expression and the small numbers of molecules involved (Elowitz et al., 2002; Rao et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Elowitz et al., 2002 and Rao et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "923720f1-ec62-47f7-87db-dbf6d5842d32",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C2",
+      "claim": "Most genes exhibit much larger fluctuations in their mRNA copy number than Poissonian fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although such Poissonian fluctuations are observed for some genes, most genes exhibit much larger fluctuations in their mRNA copy number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific understanding of gene expression noise",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "79b7422c-9464-4822-986e-d5ffa515eb3e",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C3",
+      "claim": "Increased variability in mRNA copy number originates from promoters stochastically switching between different states associated with different transcription initiation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally believed that such increased variability originates in promoters stochastically switching between different states that are associated with different transcription initiation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established scientific consensus in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "6b204b37-e9ee-4902-a7b5-c2e52e433866",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C4",
+      "claim": "Different promoters show different amounts of gene expression noise that are encoded in the promoter sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several studies have shown that different promoters show different amounts of gene expression noise, and that these differences are, at least to some extent, encoded in the promoter sequence (Newman et al., 2006; Hornung et al., 2012; Silander et al., 2012; Carey et al., 2013; Jones, et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c244bc3f-9509-4e07-b1e2-31d75c99251c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C5",
+      "claim": "Several studies have provided evidence that selection generally acts to minimize noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by investigating the association between expression noise and various statistics that can be considered proxies of organismal fitness, several studies have provided evidence that selection generally acts to minimize noise (Newman et al., 2006; Barkai and Shilo, 2007; Lehner, 2010; Lehner, 2008; Silander et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "2456f58b-10e4-492c-9821-c9df6081f12d",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C6",
+      "claim": "Phenotypic diversity generated by gene expression noise can be selected for in fluctuating environments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, gene expression noise generates phenotypic diversity between organisms with identical genotypes, and there are well-established theoretical models showing that such phenotypic diversity can be selected for in fluctuating environments (Bull, 1987; Kussell and Leibler, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to theoretical models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "628c6aba-edb8-4888-9751-b6b73294c824",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C7",
+      "claim": "A large set of synthetic E. coli promoters was evolved de novo in the laboratory using an experimental protocol selecting on mean expression level with virtually no selection on noise properties.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we evolved a large set of synthetic Escherichia coli promoters de novo in the laboratory using an experimental protocol in which promoter sequences were selected on the basis of the mean expression level they conferred, while experiencing virtually no selection on their noise properties (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental design and methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c294b536-dd2a-428c-ac2d-224f6e6e044f",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C8",
+      "claim": "The initial library contained more than 1 million random promoter clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Beginning with a library of more than 1 million random promoter clones, we used fluorescence activated cell sorting (FACS) to select cells expressing specific levels of GFP (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "0db3eb3a-2317-4676-a0cf-db527c439b4c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C9",
+      "claim": "479 synthetic promoters were selected from the third and fifth rounds of FACS selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a subset of 479 synthetic promoters from the third and fifth rounds of FACS selection, choosing equal numbers of promoters from each of six replicate lineages we evolved (Figure 1; 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "b32393e0-74aa-4567-8667-08bf84d485d5",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C10",
+      "claim": "Mean fluorescence levels were directly proportional to GFP molecule numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "We used quantitative Western blotting to confirm that the mean fluorescence levels were directly proportional to GFP molecule numbers (Figure 1\u2014figure supplement 2 and Appendix 1), which allowed us to express fluorescence levels in units of numbers of GFP molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by quantitative Western blotting experiments shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "70b27acf-3730-44a0-bb17-5fecfcd35a19",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C11",
+      "claim": "Fluorescence distributions across cells were well approximated by log-normal distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Observing that the fluorescence distributions across cells were well approximated by log-normal distributions (Figure 1C), we characterized each promoter's distribution by the mean and variance of log-fluorescence, defining the latter as the promoter's noise level (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "150f71c8-bc74-4796-af2c-13c72480ee0e",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C12",
+      "claim": "Differences in noise levels of the reporters are likely dominated by differences in transcriptional noise of the promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our reporter constructs measure protein levels, that is, GFP, the differences in the noise levels of the reporters are likely dominated by differences in transcriptional noise of the promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the experimental design where only promoter sequences differ",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "2c52066f-f91d-4c4b-802e-eaf2ba3435a0",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C13",
+      "claim": "Protein levels were determined primarily by mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using qPCR we confirmed that protein levels were determined primarily by mRNA levels (Figure 1\u2014figure supplement 3 and Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by qPCR experiments shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "f3f0630e-a867-4839-9a06-c79bdd792d46",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C14",
+      "claim": "Noise levels were reproducible across biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that noise levels were reproducible across biological replicates (Figure 1\u2014figure supplement 4), and noise levels estimated using microscopy were consistent with those measured by flow cytometry (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by replicate measurements shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "7015b1f1-d122-485a-ae70-9cc25febd525",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C15",
+      "claim": "A systematic relationship exists between the mean and variance of expression levels of each promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as expected (Bar-Even et al., 2006; Newman et al., 2006), we observed a systematic relationship between the mean and variance of expression levels of each promoter (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in experimental data shown in Figure 1D and supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "425850f0-6342-4c4f-82a3-eef73256f0b1",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C16",
+      "claim": "A strict lower bound on variance as a function of mean expression was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed a strict lower bound on variance as a function of mean expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "2fd505e9-9b7e-40a8-881c-bc82dd7f1b44",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C17",
+      "claim": "Most synthetic promoters exhibited noise levels close to the minimal level exhibited by native promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, surprisingly, that most of the synthetic promoters exhibited noise levels close to the minimal level exhibited by the native promoters (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "ba2c17b7-c76b-49e0-a243-c7a173e95702",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C18",
+      "claim": "A substantial fraction of native promoters exhibited excess noise levels significantly greater than the synthetic promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a substantial fraction of native promoters exhibited excess noise levels significantly greater than the synthetic promoters (Figure 1E and Figure 1\u2014figure supplements 6, 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in experimental data shown in Figure 1E and supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "66953e9d-7e88-4ef5-9599-78b64c6b6d4a",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C19",
+      "claim": "Only 26.1% of synthetic promoters exhibited excess noise above 0.05, compared to 41.6% of native E. coli promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, only 26.1% of the synthetic promoters exhibited excess noise above 0.05, compared to 41.6% of the native E. coli promoters (p < 7.7 \u00d7 10\u221210, hypergeometric test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data with p-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "2898fa0f-c052-4498-acab-e20efd31dc2e",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C20",
+      "claim": "Functional E. coli promoters should exhibit low excess noise levels by default.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the synthetic promoters were evolved from random sequence fragments and had not been selected on their noise properties (Appendix 2), we concluded that functional E. coli promoters should exhibit low excess noise levels by default.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental observations and selection protocol",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "7b7d6b84-3a19-4cf2-86a3-22cad4563e69",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C21",
+      "claim": "Native promoters with elevated excess noise must have experienced selective pressures that caused them to increase their noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this implies that the native promoters with elevated excess noise must have experienced selective pressures that caused them to increase their noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the observation that synthetic promoters have low noise by default",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "632ca3c7-a08b-4fa4-84a7-82d9b515da4a",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C22",
+      "claim": "Promoters with high noise tend to show high expression plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in Saccharomyces cerevisiae have shown that promoters with high noise tend to also show high expression plasticity, that is, large changes in mean expression level across environments (Newman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Newman et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "8f116f29-0b9e-4186-8c7b-d2058fad2234",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C23",
+      "claim": "A significant association between expression plasticity and noise was confirmed in the present data.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not clearly observe this association in data from our previous study (Silander et al., 2012), a recent re-analysis of this data did uncover a significant association between expression plasticity and noise (Singh, 2013), which we confirmed using our present data (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by analysis of current experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "29d293e5-5d26-47ac-9bfa-777e62c050a1",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C24",
+      "claim": "There is an equally strong relationship between excess noise and the number of regulators known to target the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that there is an equally strong relationship between excess noise and the number of regulators known to target the promoter (Salgado et al., 2013) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in analysis of experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "0ed9db97-9514-4cf2-8381-4ae2b114e7b8",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C25",
+      "claim": "Excess noise levels of promoters without known regulatory inputs are very similar to those of synthetic promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, whereas the excess noise levels of promoters without known regulatory inputs are very similar to those of our synthetic promoters, promoters with one or more regulatory inputs have clearly elevated noise levels (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "00a98df9-e06f-4f81-bda3-91e0aa8f410f",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C26",
+      "claim": "The general association between elevated noise and gene regulation has recently been observed in eukaryotes as well.",
+      "claim_type": "EXPLICIT",
+      "source": "The general association between elevated noise and gene regulation has recently been observed in eukaryotes as well (Sharon et al., 2014), and mutations that lower gene expression noise typically target TF binding sites (Hornung et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sharon et al., 2014 and Hornung et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "715fee05-46c0-457b-b3a0-62bcde5e4a7c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C27",
+      "claim": "Any regulator will have some noise in its expression or activity, and this noise will be propagated to its target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, any regulator will have some noise in its expression or activity, and this noise will be propagated to its target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of regulatory systems",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "9657f6a0-8efc-4052-ae6f-a2f6517c4f7a",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C28",
+      "claim": "Noise-propagation causes an increase in expression noise of the targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, this 'noise-propagation' effect will cause an increase in expression noise of the targets (Thattai and van Oudenaarden, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thattai and van Oudenaarden, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "09231612-0820-4249-baaa-6138a4843797",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C29",
+      "claim": "Under relatively mild assumptions, the fitness effects of a new regulatory interaction can be calculated analytically and depend on only a few effective parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "As explained in 'Materials and methods' and Appendix 3, we derive that, under relatively mild assumptions, the fitness effects of a new regulatory interaction can be calculated analytically, and depend on only a few effective parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from theoretical modeling described in Materials and methods and Appendix 3",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c3e1225f-efa3-4c64-b32f-5f4268b6b7fd",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C31",
+      "claim": "This equation applies independent of how the desired levels and regulator levels vary across environments and only depends on the assumption that the fitness function and expression distributions can be approximated by Gaussians.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this equation applies independent of how the desired levels \u03bce and regulator levels re vary across the environments and only depends on the assumption that the fitness function and expression distributions can be approximated by Gaussians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a property of the theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c19f84a5-0ab6-40f2-8b8f-6c6ba17ab114",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C32",
+      "claim": "Coupling to an uncorrelated noisy regulator substantially increases fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, coupling to a noisy regulator whose activity is entirely uncorrelated with the desired expression levels (blue dot in Figure 3B and Figure 3E,H) also substantially increases fitness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by theoretical model shown in Figure 3",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "3e536848-787e-47d6-bf06-4753073be34a",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C33",
+      "claim": "In the regime where coupling to an uncorrelated noisy regulator increases fitness, the increased fitness results exclusively from the noise-propagation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regime, the increased fitness results exclusively from the noise-propagation mechanism, and by coupling to the regulator the promoter effectively implements a bet hedging strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from theoretical model analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "afb3c6f6-4ff9-45cb-9cf0-c01cc82b7d0c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C34",
+      "claim": "Coupling to an uncorrelated noisy regulator can outperform coupling to a moderately correlated regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, coupling to the uncorrelated noisy regulator (blue dot in Figure 3B and Figure 3E,H) outperforms coupling to a moderately correlated regulator (magenta dot in Figure 3B and Figure 3D,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by theoretical model shown in Figure 3",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c22eb3fb-af49-477c-bc05-363e62fa548e",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C35",
+      "claim": "Regulators may generally be under selection to become noisy themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrates that regulators may generally be under selection to become noisy themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from theoretical model predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "3b969b39-1fb4-44e8-ab9c-f4ee10c369cc",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C36",
+      "claim": "There exists a continuum of regulatory strategies in which the condition-response and noise-propagation effects are optimally acting in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, the red curve corresponds to a continuum of regulatory strategies in which the condition-response and noise-propagation effects are optimally acting in concert, going from being dominated by noise-propagation in the lower left, to being dominated by the condition-response in the top right.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from theoretical model analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "a5c8460c-8c75-4ff0-aca0-4019d89a4d44",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C37",
+      "claim": "Accurate regulation can evolve smoothly from a state without regulation by starting from coupling to a noisy regulator with low R and S, then increasing both R and S in incremental steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this clarifies how accurate regulation can evolve smoothly from a state without regulation. Highly accurate regulation with high R and S can be reached by starting from coupling to a noisy regulator with low R and S, whose benefits come entirely from the noise-propagation, and then increasing both R and S in incremental steps along this continuum of regulatory strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from theoretical model predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "59afaef5-2570-41be-9608-e7c8631426ad",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C38",
+      "claim": "The selective pressure for a promoter to evolve regulatory interactions is determined by the expression mismatch Y.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our model predicts that the selective pressure for a promoter to evolve regulatory interactions is determined by the expression mismatch Y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "14e50b6b-1de9-4060-89c4-69f8cd851d68",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C39",
+      "claim": "When Y < 1, there will be no selective pressure to evolve regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "When Y < 1, even a constitutively expressed promoter has a good overlap with the fitness function across all conditions, and there will be no selective pressure to evolve regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "651e9577-cb6c-400f-8f83-038a675ced13",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C40",
+      "claim": "Constitutive promoters have low noise by default.",
+      "claim_type": "EXPLICIT",
+      "source": "Our synthetic promoters, which were selected for expressing at a constant level, correspond to this situation, and our results show that such promoters have low noise by default. Thus, we interpret the observation that native promoters without known regulatory inputs have noise levels similar to those of our synthetic promoters (Figure 2B) as indicating that constitutive promoters have low noise by default.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental observations and theoretical model",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "fb028aaa-2b1a-4706-be10-ee12adc70467",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C43",
+      "claim": "The model predicts that expression plasticity and noise level should be correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model thus predicts that the expression plasticity and noise level should be correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "59677b4c-e257-4992-8680-76d2ff618b72",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C44",
+      "claim": "The model predicts a general positive correlation between expression noise and the number of regulatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts a general positive correlation between expression noise and the number of regulatory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "2bc04b75-214d-4b03-af86-5d01760f127c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C45",
+      "claim": "The higher the initial mismatch Y, the larger the expected number of regulatory interactions necessary to reduce the mismatch below 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the higher the initial mismatch Y, the larger the expected number of regulatory interactions that will be necessary to reduce the mismatch below 1; that is, our model generally predicts that the number of regulatory interactions, the expression plasticity, and the final noise all correlate with the original mismatch Y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c4419a5c-6c3a-42f1-9b48-c747982846b9",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C46",
+      "claim": "In a given condition, the noise level of a promoter is determined by the noise levels of the TFs that regulate it.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, our model predicts that, in a given condition, the noise level of a promoter is determined by the noise levels of the TFs that regulate it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "6d19c1c6-e87f-4b94-9f38-d031a8ebe9f5",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C47",
+      "claim": "A simple linear model assuming excess noise equals the sum of noise levels of regulating TFs explained 17% of the variance in excess noise levels across promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction, we used a very simple linear model that assumes that the excess noise level of a gene is equal to the sum of the noise levels of the TFs that regulate it ('Materials and methods'). Although this simple model is very crude, that is, assuming noise-propagation to be of equal size for all targets of a given TF, and assuming that fluctuations in TF activities are all independent, it was nevertheless able to explain a substantial fraction of the variance in excess noise levels across promoters (17%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of model fit to data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "513c6eee-a2f2-4fcf-8a03-d4c6a1b3f4dc",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C48",
+      "claim": "The top five TFs most significantly associated with elevated noise levels of their targets were CRP, H-NS, ArcA, ilvY, and GadX.",
+      "claim_type": "EXPLICIT",
+      "source": "The top five TFs most significantly associated with elevated noise levels of their targets were CRP, H-NS, ArcA, ilvY, and GadX (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from statistical analysis shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "83cd77b2-fff3-4e2d-a907-bd34a63e3170",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C49",
+      "claim": "H-NS is a histone-like nucleoid-associated protein that acts as a silencer.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of H-NS is interesting since it is a histone-like nucleoid-associated protein that acts as a silencer (Dorman, 2004), that is, somewhat analogous to the role of nucleosomes in eukaryotes, and in eukaryotes nucleosome positioning at promoters has been shown to be a major determinant of transcriptional noise (Blake et al., 2006; Tirosh and Barkai, 2008; Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dorman, 2004 and studies on nucleosome positioning",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "385424eb-f5c3-4ee5-a4e9-10629bc4fe09",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C50",
+      "claim": "A substantial amount of variation in noise levels can be explained by noise-propagation from noisy regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, modeling of excess noise levels in terms of known regulatory interactions shows that, in accordance with our model, a substantial amount of the variation in noise levels can be explained by noise-propagation from noisy regulators, and the regulators we identify as most significantly propagating noise are consistent with existing biological knowledge regarding our growth conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from statistical modeling of experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "95855512-6b1d-44e6-8be7-f4f0a79b4cef",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C51",
+      "claim": "Native promoters must have experienced selective pressures that increased their noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have shown that, by comparing naturally observed variation in a particular trait with variation observed in synthetic systems that were evolved under well-controlled selective conditions, definite inferences can be made about the selection pressures that have acted on the natural systems. In particular, by evolving synthetic E. coli promoters de novo using a procedure in which promoters are strongly selected on their mean expression and not on their expression noise, we have shown that native promoters must have experienced selective pressures that increased their noise levels, and that promoters with elevated noise are highly regulated by TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental observations and comparison between synthetic and native promoters",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "1543e84c-bfd5-464e-be4a-28ef34a0b391",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C52",
+      "claim": "Promoters with elevated noise are highly regulated by TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, by evolving synthetic E. coli promoters de novo using a procedure in which promoters are strongly selected on their mean expression and not on their expression noise, we have shown that native promoters must have experienced selective pressures that increased their noise levels, and that promoters with elevated noise are highly regulated by TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "733bd01e-6e13-4c9e-9bf8-5bfd5713b877",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C53",
+      "claim": "Noise-propagation is often beneficial and can be considered to act as a rudimentary form of regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model elucidates that not only the condition-response effect but also the noise-propagation effect is often a functional consequence of the regulatory interaction; that is, instead of being just an unavoidable side-effect of regulation, noise-propagation is often beneficial and can be considered to act as a rudimentary form of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "0b6b8b1d-035a-4c71-9160-b1d446bb1a10",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C54",
+      "claim": "Noise-propagation alone may provide a sufficient benefit for a new regulatory interaction to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Our framework vastly expands the evolutionary conditions under which novel regulatory interactions can evolve. Instead of assuming that regulators and their targets must evolve in a tightly coordinated fashion, noise-propagation alone may provide a sufficient benefit for a new regulatory interaction to evolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "b44cdbbb-4455-4260-ac26-7e3f73dde8e9",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C55",
+      "claim": "The theory provides a plausible scenario for how accurate regulatory interactions can evolve de novo from a state without regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way our model provides a plausible scenario for how accurate regulatory interactions can evolve de novo from a state without regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "77892864-4eb7-4ea0-aa3e-78765777e16e",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C56",
+      "claim": "Unless regulation is very precise, regulatory interactions that act to increase noise are beneficial.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our model shows that unless regulation is very precise, regulatory interactions that act to increase noise are beneficial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "94586600-6457-46bf-8ac4-7a40266f2773",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C57",
+      "claim": "Elevated levels of expression noise can be expected whenever the accuracy of regulation is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, elevated levels of expression noise can be expected whenever the accuracy of regulation is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from theoretical model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "b482ad1d-9abd-4d25-a7ff-e7730ce72db4",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C58",
+      "claim": "Random DNA sequences 100-150 base pairs in length were synthesized and cloned upstream of a strong ribosomal binding site and GFP open reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized a pool of random DNA sequences, 100\u2013150 base pairs in length, and cloned these upstream of a sequence containing a strong ribosomal binding site and the open reading frame of green fluorescent protein (GFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "5c06a498-c3ab-44f1-8480-0a6565d77666",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C60",
+      "claim": "The fitness of promoter genotypes strongly depends on their mean \u03bc and is almost independent of their excess noise.",
+      "claim_type": "EXPLICIT",
+      "source": "This estimated fitness function indicated that the fitness of promoter genotypes strongly depends on their mean \u03bc and is almost independent of their excess noise (Appendix 2\u2014figure 3 and Appendix 2\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of fitness function shown in Appendix 2 figures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "8bcf5ff3-5167-4546-b85e-2c73f52b83db",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C61",
+      "claim": "Applying additional rounds of selection of varying strengths to the population of evolved promoters did not systematically alter their distribution of excess noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, applying additional rounds of selection of varying strengths to the population of evolved promoters did not systematically alter their distribution of excess noise levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from additional selection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "bf348243-0412-4139-9e1c-b8c43b07530c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C62",
+      "claim": "Propagation of expression noise from regulators to their targets acts as a rudimentary form of regulation that facilitates the evolution of more accurate regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The theory shows that propagation of expression noise from regulators to their targets is not an unwanted side-effect of regulation, but rather acts as a rudimentary form of regulation that facilitates the evolution of more accurate regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion from theoretical model presented in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "0de13aa4-8389-4716-842d-9119aa9beeba",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C63",
+      "claim": "Contrary to expectations, promoters exhibit low noise by default.",
+      "claim_type": "EXPLICIT",
+      "source": "By evolving synthetic Escherichia coli promoters de novo, we here show that, contrary to expectations, promoters exhibit low noise by default.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main experimental finding from synthetic promoter evolution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "984b34c2-8506-4db9-8af0-b46d513714d7",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "claim_id": "C64",
+      "claim": "Selection must have acted to increase the noise levels of highly regulated E. coli promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, selection must have acted to increase the noise levels of highly regulated E. coli promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of synthetic and native promoters",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20675230-2d16-47ec-af7e-e31791b79b22",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Synthetic E. coli promoters were evolved de novo from a library of >1 million random sequences using FACS selection on mean expression level with minimal selection on noise properties. The selection protocol strongly favored mean expression (\u03bc) with almost no dependence on excess noise, as confirmed by fitness function analysis and additional selection rounds that did not alter noise distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C58, C60-C61 collectively establish the experimental design and validate that selection acted primarily on mean expression. The fitness function analysis (C60) and stability of noise distributions across additional selection rounds (C61) provide strong evidence that noise was not under selection, which is critical for the study's main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "241a4a50-4213-4e20-a0ff-6984e194a9ce",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Fluorescence measurements were validated as accurate proxies for gene expression. Mean fluorescence was directly proportional to GFP molecule numbers (confirmed by Western blot), protein levels were determined primarily by mRNA levels (confirmed by qPCR), fluorescence distributions were log-normal, and noise measurements were reproducible across biological replicates and consistent between flow cytometry and microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C13-C14 provide multiple independent validations of the measurement system. The Western blot calibration (C10), qPCR validation (C13), and cross-platform consistency (C14) establish that fluorescence measurements reliably reflect transcriptional activity, supporting the validity of all downstream analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "32fbf3e6-9211-462b-8af0-4dbaef04740a",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Differences in noise levels between reporters are likely dominated by differences in transcriptional noise of the promoters rather than translational or post-translational noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by the experimental design where only promoter sequences differ between constructs, combined with validation that protein levels track mRNA levels (C13) and that the 5' UTR and RBS are constant across all reporters. However, the authors acknowledge this is an inference rather than direct measurement of transcriptional noise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "e5be65db-6887-409b-ab39-f1379596f64c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A systematic relationship exists between mean and variance of expression levels, with a strict lower bound on variance as a function of mean expression that can be modeled by intrinsic and extrinsic noise components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 describe well-established phenomena in gene expression noise that are clearly visible in the data (Figure 1D). The observation of a lower bound is consistent with theoretical expectations and previous literature, and provides the basis for defining excess noise as variance above this bound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "c835487e-95c4-43fd-8763-2d6ab8f5f887",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Most synthetic promoters exhibited noise levels close to the minimal level of native promoters, while a substantial fraction of native promoters showed significantly elevated excess noise (41.6% vs 26.1% above 0.05, p < 7.7\u00d710\u207b\u00b9\u2070). This demonstrates that functional E. coli promoters exhibit low noise by default when not selected for noise properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20, C63 present the central experimental finding with strong statistical support. The comparison between synthetic and native promoters is valid given the validated selection protocol (C60-C61) showing minimal selection on noise. The hypergeometric test provides appropriate statistical evidence for the difference in noise distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "a71b51d9-3ac9-404a-ade7-e6a81099dd48",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Native promoters with elevated excess noise must have experienced selective pressures that increased their noise levels, particularly highly regulated promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C51, C64 present the key inference from the experimental results. The logic is sound: if promoters have low noise by default (C20, C63) but many native promoters have high noise (C18-C19), then selection must have acted to increase noise. This inference is strengthened by the association with regulation (C24-C25, C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "7a286270-8331-4b1d-9f6d-5a8b05a908be",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A significant association between expression plasticity and noise was confirmed in the present data, consistent with previous observations in S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 establish an important correlation supported by the current data (Figure 2A) and previous literature. The authors appropriately note they did not clearly observe this in their previous study, but a re-analysis revealed it. The current data provides independent confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "a4beb412-1659-40ab-9adb-bcf6b9d100d8",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Excess noise shows a strong positive relationship with the number of known transcriptional regulators targeting a promoter. Promoters without known regulatory inputs have noise levels similar to synthetic promoters, while those with one or more regulatory inputs show clearly elevated noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25, C52 present a key empirical observation (Figure 2B-C) linking noise to regulation. The data clearly show the relationship, though it relies on the completeness and accuracy of RegulonDB annotations. The similarity between unregulated native promoters and synthetic promoters (C25) provides additional support for the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "0c4107e6-7298-4e72-875f-9da8a5c3ae0f",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The association between elevated noise and gene regulation has been observed in eukaryotes, and mutations that lower noise typically target TF binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 appropriately cites recent literature (Sharon et al., 2014; Hornung et al., 2012) to place the findings in broader context. This supports the generality of the noise-regulation relationship beyond E. coli.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "6cfd46c6-2933-4620-afc7-91c2f5c83a62",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Regulators have noise in their expression/activity that is propagated to target genes, causing an increase in target expression noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 describe the well-established noise-propagation phenomenon, appropriately citing Thattai and van Oudenaarden, 2001. This provides the mechanistic basis for understanding how regulation affects noise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "a22efd08-9094-4813-b5ff-6d735e978e8c",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A theoretical model was developed showing that fitness effects of regulatory interactions can be calculated analytically under mild assumptions (Gaussian fitness functions and expression distributions), depending on only a few effective parameters (expression mismatch Y, coupling constant X, regulator correlation R, and signal-to-noise S).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C31 describe the theoretical framework. The model is mathematically sound and the Gaussian approximations are reasonable for the parameter regimes considered. The derivation in Materials and Methods and Appendix 3 provides the mathematical foundation, though the assumptions should be tested for robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "629f1733-02d4-4d08-b928-2d01c2868f61",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The theoretical model predicts that coupling to an uncorrelated noisy regulator (R=0) can substantially increase fitness through noise-propagation alone, implementing a bet-hedging strategy. Surprisingly, this can outperform coupling to a moderately correlated regulator with suboptimal signal-to-noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 present counterintuitive predictions from the model (Figure 3). The mathematical derivation supports these conclusions, though they are theoretical predictions that would benefit from experimental validation. The predictions follow logically from the model assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "08f16e86-fef2-4f31-8560-58c50881d894",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model shows that regulators may be under selection to become noisy, and there exists a continuum of optimal regulatory strategies combining condition-response and noise-propagation effects. This provides a plausible evolutionary path from no regulation to accurate regulation through incremental increases in both correlation R and signal-to-noise S.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37, C55 present important theoretical insights about regulatory evolution. The continuum of strategies (red curve in Figure 3B) is mathematically derived and provides a novel framework for understanding regulatory evolution. However, these remain theoretical predictions without direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "60fab748-15ae-4f8e-999c-0900d7cc0e42",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model predicts that selective pressure for regulation is determined by expression mismatch Y, with no pressure when Y<1. Constitutive promoters (like the synthetic promoters and native promoters without regulatory inputs) have low noise by default, consistent with the Y<1 regime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 connect the theoretical model to the experimental observations. The interpretation that synthetic promoters and unregulated native promoters correspond to the Y<1 regime is logical and consistent with both theory and data (Figure 2B-C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "3cd2df08-3b3d-4522-880d-18c135d47c2b",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model predicts positive correlations between expression plasticity and noise, between noise and number of regulatory inputs, and that higher initial mismatch Y requires more regulatory interactions to reduce mismatch below 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 present testable predictions that are consistent with the empirical observations in Figure 2. The mathematical basis for these predictions is sound, and they provide a unified explanation for multiple observed correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "abd576db-a25c-4297-9b0e-9e8ddea02b94",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model predicts that promoter noise is determined by the noise of regulating TFs. A simple linear model assuming excess noise equals the sum of TF noise levels explained 17% of variance in promoter noise. The top five TFs associated with elevated target noise were CRP, H-NS, ArcA, ilvY, and GadX, consistent with biological knowledge about growth conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48, C50 test model predictions against data. While 17% explained variance is modest, it is substantial given the crude assumptions (equal noise-propagation for all targets, independent TF fluctuations). The identified TFs are biologically plausible given the experimental conditions, providing validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "84cd69f7-2a0a-42e1-8456-2b80a0605e6b",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "H-NS is a histone-like nucleoid-associated protein that acts as a silencer, analogous to nucleosomes in eukaryotes where nucleosome positioning is a major determinant of transcriptional noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 provides appropriate biological context for the identification of H-NS, supported by relevant citations. The analogy to eukaryotic nucleosomes is reasonable and helps interpret the finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "5b2ba4f8-9888-43fa-9b0f-14bae4c8c170",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The theory shows that noise-propagation is often beneficial rather than a detrimental side-effect, acting as a rudimentary form of regulation that can provide sufficient benefit for new regulatory interactions to evolve. Unless regulation is very precise, regulatory interactions that increase noise are beneficial, and elevated noise can be expected when regulatory accuracy is limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C56-C57, C62 present the key conceptual advance of the work. The theoretical model mathematically supports these conclusions, and they are consistent with the empirical observations. However, these are primarily theoretical insights that would benefit from more direct experimental tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    },
+    {
+      "id": "896024a3-1e8b-45d2-bd22-c32f993e193f",
+      "content_id": "f6d21b77-f3c1-4c12-8bb2-f769e69df67f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims establishing that gene expression varies stochastically in homogeneous environments, most genes show non-Poissonian fluctuations due to promoter state switching, noise levels are encoded in promoter sequences, and selection can act either to minimize noise or favor phenotypic diversity in fluctuating environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide appropriate background context, all supported by relevant citations to established literature. These set up the motivation for the study but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:13:45.852374Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "628c6aba-edb8-4888-9751-b6b73294c824",
+      "result_id": "20675230-2d16-47ec-af7e-e31791b79b22"
+    },
+    {
+      "claim_id": "c294b536-dd2a-428c-ac2d-224f6e6e044f",
+      "result_id": "20675230-2d16-47ec-af7e-e31791b79b22"
+    },
+    {
+      "claim_id": "0db3eb3a-2317-4676-a0cf-db527c439b4c",
+      "result_id": "20675230-2d16-47ec-af7e-e31791b79b22"
+    },
+    {
+      "claim_id": "b482ad1d-9abd-4d25-a7ff-e7730ce72db4",
+      "result_id": "20675230-2d16-47ec-af7e-e31791b79b22"
+    },
+    {
+      "claim_id": "5c06a498-c3ab-44f1-8480-0a6565d77666",
+      "result_id": "20675230-2d16-47ec-af7e-e31791b79b22"
+    },
+    {
+      "claim_id": "8bcf5ff3-5167-4546-b85e-2c73f52b83db",
+      "result_id": "20675230-2d16-47ec-af7e-e31791b79b22"
+    },
+    {
+      "claim_id": "b32393e0-74aa-4567-8667-08bf84d485d5",
+      "result_id": "241a4a50-4213-4e20-a0ff-6984e194a9ce"
+    },
+    {
+      "claim_id": "70b27acf-3730-44a0-bb17-5fecfcd35a19",
+      "result_id": "241a4a50-4213-4e20-a0ff-6984e194a9ce"
+    },
+    {
+      "claim_id": "2c52066f-f91d-4c4b-802e-eaf2ba3435a0",
+      "result_id": "241a4a50-4213-4e20-a0ff-6984e194a9ce"
+    },
+    {
+      "claim_id": "f3f0630e-a867-4839-9a06-c79bdd792d46",
+      "result_id": "241a4a50-4213-4e20-a0ff-6984e194a9ce"
+    },
+    {
+      "claim_id": "150f71c8-bc74-4796-af2c-13c72480ee0e",
+      "result_id": "32fbf3e6-9211-462b-8af0-4dbaef04740a"
+    },
+    {
+      "claim_id": "7015b1f1-d122-485a-ae70-9cc25febd525",
+      "result_id": "e5be65db-6887-409b-ab39-f1379596f64c"
+    },
+    {
+      "claim_id": "425850f0-6342-4c4f-82a3-eef73256f0b1",
+      "result_id": "e5be65db-6887-409b-ab39-f1379596f64c"
+    },
+    {
+      "claim_id": "2fd505e9-9b7e-40a8-881c-bc82dd7f1b44",
+      "result_id": "c835487e-95c4-43fd-8763-2d6ab8f5f887"
+    },
+    {
+      "claim_id": "ba2c17b7-c76b-49e0-a243-c7a173e95702",
+      "result_id": "c835487e-95c4-43fd-8763-2d6ab8f5f887"
+    },
+    {
+      "claim_id": "66953e9d-7e88-4ef5-9599-78b64c6b6d4a",
+      "result_id": "c835487e-95c4-43fd-8763-2d6ab8f5f887"
+    },
+    {
+      "claim_id": "2898fa0f-c052-4498-acab-e20efd31dc2e",
+      "result_id": "c835487e-95c4-43fd-8763-2d6ab8f5f887"
+    },
+    {
+      "claim_id": "0de13aa4-8389-4716-842d-9119aa9beeba",
+      "result_id": "c835487e-95c4-43fd-8763-2d6ab8f5f887"
+    },
+    {
+      "claim_id": "7b7d6b84-3a19-4cf2-86a3-22cad4563e69",
+      "result_id": "a71b51d9-3ac9-404a-ade7-e6a81099dd48"
+    },
+    {
+      "claim_id": "95855512-6b1d-44e6-8be7-f4f0a79b4cef",
+      "result_id": "a71b51d9-3ac9-404a-ade7-e6a81099dd48"
+    },
+    {
+      "claim_id": "984b34c2-8506-4db9-8af0-b46d513714d7",
+      "result_id": "a71b51d9-3ac9-404a-ade7-e6a81099dd48"
+    },
+    {
+      "claim_id": "632ca3c7-a08b-4fa4-84a7-82d9b515da4a",
+      "result_id": "7a286270-8331-4b1d-9f6d-5a8b05a908be"
+    },
+    {
+      "claim_id": "8f116f29-0b9e-4186-8c7b-d2058fad2234",
+      "result_id": "7a286270-8331-4b1d-9f6d-5a8b05a908be"
+    },
+    {
+      "claim_id": "29d293e5-5d26-47ac-9bfa-777e62c050a1",
+      "result_id": "a4beb412-1659-40ab-9adb-bcf6b9d100d8"
+    },
+    {
+      "claim_id": "0ed9db97-9514-4cf2-8381-4ae2b114e7b8",
+      "result_id": "a4beb412-1659-40ab-9adb-bcf6b9d100d8"
+    },
+    {
+      "claim_id": "1543e84c-bfd5-464e-be4a-28ef34a0b391",
+      "result_id": "a4beb412-1659-40ab-9adb-bcf6b9d100d8"
+    },
+    {
+      "claim_id": "00a98df9-e06f-4f81-bda3-91e0aa8f410f",
+      "result_id": "0c4107e6-7298-4e72-875f-9da8a5c3ae0f"
+    },
+    {
+      "claim_id": "715fee05-46c0-457b-b3a0-62bcde5e4a7c",
+      "result_id": "6cfd46c6-2933-4620-afc7-91c2f5c83a62"
+    },
+    {
+      "claim_id": "9657f6a0-8efc-4052-ae6f-a2f6517c4f7a",
+      "result_id": "6cfd46c6-2933-4620-afc7-91c2f5c83a62"
+    },
+    {
+      "claim_id": "09231612-0820-4249-baaa-6138a4843797",
+      "result_id": "a22efd08-9094-4813-b5ff-6d735e978e8c"
+    },
+    {
+      "claim_id": "c3e1225f-efa3-4c64-b32f-5f4268b6b7fd",
+      "result_id": "a22efd08-9094-4813-b5ff-6d735e978e8c"
+    },
+    {
+      "claim_id": "c19f84a5-0ab6-40f2-8b8f-6c6ba17ab114",
+      "result_id": "629f1733-02d4-4d08-b928-2d01c2868f61"
+    },
+    {
+      "claim_id": "3e536848-787e-47d6-bf06-4753073be34a",
+      "result_id": "629f1733-02d4-4d08-b928-2d01c2868f61"
+    },
+    {
+      "claim_id": "afb3c6f6-4ff9-45cb-9cf0-c01cc82b7d0c",
+      "result_id": "629f1733-02d4-4d08-b928-2d01c2868f61"
+    },
+    {
+      "claim_id": "c22eb3fb-af49-477c-bc05-363e62fa548e",
+      "result_id": "08f16e86-fef2-4f31-8560-58c50881d894"
+    },
+    {
+      "claim_id": "3b969b39-1fb4-44e8-ab9c-f4ee10c369cc",
+      "result_id": "08f16e86-fef2-4f31-8560-58c50881d894"
+    },
+    {
+      "claim_id": "a5c8460c-8c75-4ff0-aca0-4019d89a4d44",
+      "result_id": "08f16e86-fef2-4f31-8560-58c50881d894"
+    },
+    {
+      "claim_id": "b44cdbbb-4455-4260-ac26-7e3f73dde8e9",
+      "result_id": "08f16e86-fef2-4f31-8560-58c50881d894"
+    },
+    {
+      "claim_id": "59afaef5-2570-41be-9608-e7c8631426ad",
+      "result_id": "60fab748-15ae-4f8e-999c-0900d7cc0e42"
+    },
+    {
+      "claim_id": "14e50b6b-1de9-4060-89c4-69f8cd851d68",
+      "result_id": "60fab748-15ae-4f8e-999c-0900d7cc0e42"
+    },
+    {
+      "claim_id": "651e9577-cb6c-400f-8f83-038a675ced13",
+      "result_id": "60fab748-15ae-4f8e-999c-0900d7cc0e42"
+    },
+    {
+      "claim_id": "fb028aaa-2b1a-4706-be10-ee12adc70467",
+      "result_id": "3cd2df08-3b3d-4522-880d-18c135d47c2b"
+    },
+    {
+      "claim_id": "59677b4c-e257-4992-8680-76d2ff618b72",
+      "result_id": "3cd2df08-3b3d-4522-880d-18c135d47c2b"
+    },
+    {
+      "claim_id": "2bc04b75-214d-4b03-af86-5d01760f127c",
+      "result_id": "3cd2df08-3b3d-4522-880d-18c135d47c2b"
+    },
+    {
+      "claim_id": "c4419a5c-6c3a-42f1-9b48-c747982846b9",
+      "result_id": "abd576db-a25c-4297-9b0e-9e8ddea02b94"
+    },
+    {
+      "claim_id": "6d19c1c6-e87f-4b94-9f38-d031a8ebe9f5",
+      "result_id": "abd576db-a25c-4297-9b0e-9e8ddea02b94"
+    },
+    {
+      "claim_id": "513c6eee-a2f2-4fcf-8a03-d4c6a1b3f4dc",
+      "result_id": "abd576db-a25c-4297-9b0e-9e8ddea02b94"
+    },
+    {
+      "claim_id": "385424eb-f5c3-4ee5-a4e9-10629bc4fe09",
+      "result_id": "abd576db-a25c-4297-9b0e-9e8ddea02b94"
+    },
+    {
+      "claim_id": "83cd77b2-fff3-4e2d-a907-bd34a63e3170",
+      "result_id": "84cd69f7-2a0a-42e1-8456-2b80a0605e6b"
+    },
+    {
+      "claim_id": "733bd01e-6e13-4c9e-9bf8-5bfd5713b877",
+      "result_id": "5b2ba4f8-9888-43fa-9b0f-14bae4c8c170"
+    },
+    {
+      "claim_id": "0b6b8b1d-035a-4c71-9160-b1d446bb1a10",
+      "result_id": "5b2ba4f8-9888-43fa-9b0f-14bae4c8c170"
+    },
+    {
+      "claim_id": "77892864-4eb7-4ea0-aa3e-78765777e16e",
+      "result_id": "5b2ba4f8-9888-43fa-9b0f-14bae4c8c170"
+    },
+    {
+      "claim_id": "94586600-6457-46bf-8ac4-7a40266f2773",
+      "result_id": "5b2ba4f8-9888-43fa-9b0f-14bae4c8c170"
+    },
+    {
+      "claim_id": "bf348243-0412-4139-9e1c-b8c43b07530c",
+      "result_id": "5b2ba4f8-9888-43fa-9b0f-14bae4c8c170"
+    },
+    {
+      "claim_id": "7d7623b3-0bf9-4c25-9680-6822e805ca3c",
+      "result_id": "896024a3-1e8b-45d2-bd22-c32f993e193f"
+    },
+    {
+      "claim_id": "923720f1-ec62-47f7-87db-dbf6d5842d32",
+      "result_id": "896024a3-1e8b-45d2-bd22-c32f993e193f"
+    },
+    {
+      "claim_id": "79b7422c-9464-4822-986e-d5ffa515eb3e",
+      "result_id": "896024a3-1e8b-45d2-bd22-c32f993e193f"
+    },
+    {
+      "claim_id": "6b204b37-e9ee-4902-a7b5-c2e52e433866",
+      "result_id": "896024a3-1e8b-45d2-bd22-c32f993e193f"
+    },
+    {
+      "claim_id": "c244bc3f-9509-4e07-b1e2-31d75c99251c",
+      "result_id": "896024a3-1e8b-45d2-bd22-c32f993e193f"
+    },
+    {
+      "claim_id": "2456f58b-10e4-492c-9821-c9df6081f12d",
+      "result_id": "896024a3-1e8b-45d2-bd22-c32f993e193f"
+    }
+  ],
+  "comparisons": []
+}

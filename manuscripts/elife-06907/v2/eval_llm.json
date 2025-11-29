@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15"
+    ],
+    "result": "EGFR mutations occur in approximately 15% and KRAS mutations in approximately 30% of human lung adenocarcinomas (LUAD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14, and C15 consistently report mutation frequencies supported by TCGA data citations. These are well-established epidemiological statistics in the field and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Analysis of 662 LUAD samples revealed that EGFR and KRAS mutations are mutually exclusive, with only one tumor containing both mutations (which had a likely non-activating EGFR mutation), showing statistically significant negative association (p = 8.62e-17 overall; p = 4.43e-10 in smokers; p = 0.002 in never-smokers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C28 provide comprehensive statistical evidence from a large cohort showing mutual exclusivity. The analysis includes appropriate stratification by smoking status and uses Fisher's Exact Test. The single exception (C24-C25) is appropriately qualified as containing a non-activating EGFR mutation, strengthening rather than weakening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35"
+    ],
+    "result": "Genome-wide exclusivity analysis in LUAD revealed that EGFR and KRAS show the strongest mutually exclusive relationship among all gene pairs, while PIK3CA co-occurs as expected with either oncogene, and STK11/ATM mutations are positively associated with KRAS mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C35 describe a novel analytical approach ('exclusivity plots') applied genome-wide. The methodology appropriately controls for mutation frequency and identifies both negative (EGFR-KRAS) and positive (STK11/ATM-KRAS) associations. The positive associations with known cooperating genes (C32-C33) validate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Exclusivity analysis extended to other cancer types revealed similar mutually exclusive relationships: BRAF-KRAS in colorectal adenocarcinoma, NF1-EGFR in glioblastoma, and BRAF-NRAS in melanoma, suggesting that certain tumor cells cannot tolerate mutations in combinations of genes in the EGFR-RAS-RAF pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 extend the exclusivity analysis to other cancer types using the same methodology. The findings are consistent with some previously reported exclusivities (cited in the text) and suggest a broader principle. The inference in C39 is reasonable given the pathway relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In tri-transgenic mice engineered to express both mutant KRAS and EGFR in lung epithelium, tumors developed with similar kinetics to single-oncogene mice, but individual tumors expressed only one oncogene as determined by RT-PCR, qRT-PCR (>90 nodules from 14 mice), and immunohistochemistry, with different nodules in the same mouse sometimes expressing different oncogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 provide strong in vivo evidence for selection against co-expression using multiple complementary techniques (RT-PCR, qRT-PCR, IHC). The observation that different nodules in the same mouse express different oncogenes (C47) is particularly compelling evidence for negative selection. Sample sizes are adequate (>90 nodules from 14 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Previous work from the same laboratory demonstrated that two oncogenic transgenes (TetO-KrasG12D and TetO-Myc) can be co-expressed in mammary tumors, and that TetO-EGFR and TetO-Cre can be co-expressed in lung tumors, indicating the doxycycline-inducible system is capable of co-expressing two transgenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide important controls demonstrating that the inducible system can co-express two transgenes in other contexts, ruling out technical limitations as an explanation for the single-oncogene expression observed in the KRAS-EGFR tri-transgenic mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In human lung adenocarcinoma cell lines engineered to inducibly express a second oncogene (mutant KRAS in EGFR-mutant PC9 cells or mutant EGFR in KRAS-mutant H358 cells), doxycycline treatment produced the appropriate proteins within 24 hours, but by day 7 there was marked decrease in viable cells and significantly reduced cell numbers, while GFP-expressing control cells were unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 demonstrate synthetic lethality in cultured human cells using appropriate controls (GFP). The viability assays (alamar blue) and cell counting provide quantitative evidence. The 7-day time course is appropriate for observing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Erlotinib treatment of PC9 cells markedly decreased cell number in the absence of mutant KRAS, but significantly protected PC9 cells from the toxic effects of induced mutant KRAS at day 7, indicating that the toxicity of KRAS-EGFR co-expression depends on EGFR kinase activity and confirming that mutant RAS can render EGFR-mutant cells resistant to TKIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide mechanistic insight through pharmacological inhibition. The erlotinib rescue experiment (C59) demonstrates that EGFR kinase activity is required for the synthetic lethality, which is an important mechanistic finding. This also confirms the expected TKI resistance conferred by mutant KRAS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Co-expression of mutant KRAS and EGFR induced multiple cell death mechanisms including apoptosis (Annexin V/7-AAD staining, PARP cleavage, more pronounced in PC9 than H358 cells), autophagy (LC3-II increase), and cell cycle alterations (G2/M accumulation in PC9 cells), affecting these processes to varying degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 characterize cell death mechanisms using standard assays (flow cytometry, western blots, cell cycle analysis). The data show involvement of multiple pathways with cell-line-specific differences. The inference that these processes contribute to toxicity (C64, C66) is reasonable but appropriately qualified as suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cells co-expressing mutant KRAS and EGFR displayed distinctive morphological changes including membrane ruffling, large phase-translucent vacuoles (similar to methuosis in glioblastoma cells), single-membrane vacuoles with microvilli by electron microscopy, and significantly increased macropinocytosis (dextran uptake) at day 3, suggesting uncontrolled fluid phase uptake as a pathological consequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 provide detailed morphological characterization using multiple imaging modalities (phase contrast, EM) and functional assays (dextran uptake). The comparison to methuosis (C71) is appropriately cited. The inference about uncontrolled fluid phase uptake (C75) is reasonable given the macropinocytosis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Microarray analysis identified 152 probe sets (144 unique genes) differentially expressed in both PC9 and H358 cells upon oncogene co-expression, with Gene Set Enrichment Analysis showing significant enrichment for KRAS downstream targets and Ingenuity Pathway Analysis revealing p38 MAPK and ERK/MAPK as the most significantly upregulated canonical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe transcriptional profiling with appropriate bioinformatic analyses (GSEA, IPA). The 24-hour timepoint is justified to capture direct effects. The convergence on MAPK pathway activation is consistent with the protein-level data and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Western blot analysis at day 3 showed that EGFR was constitutively phosphorylated in PC9 cells and induced in H358 cells upon doxycycline treatment; phosphorylation of AKT (T308), ERK (p44/42), and p38 was increased (more strongly in PC9 than H358 cells); and JNK phosphorylation was the most consistent change in both cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide protein-level validation of pathway activation using standard western blotting. The differential responses between cell lines are noted. The consistent JNK activation (C83) across both lines is particularly notable and connects to the stress response and macropinocytosis literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The data suggest a mechanism whereby increased activity of p38 and JNK MAPK pathways, increased macropinocytosis, and vacuolization lead to cell death, with JNK activation potentially occurring through Rho GTPases (which are implicated in RAS-dependent macropinocytosis) and MKK4 (which phosphorylates JNK and p38 and is activated by the macropinocytosis inducer vacquinol-1), and this cellular state can be created by co-expression of mutant KRAS and EGFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 synthesize the findings into a mechanistic model, appropriately citing relevant literature (C85, C86). The mechanism is presented as suggestive ('suggest,' C87) rather than definitive, which is appropriate given that the connections are correlative. The model integrates multiple lines of evidence from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C89",
+      "C90"
+    ],
+    "result": "The mutual exclusivity of EGFR and KRAS mutations in LUAD is due to synthetic lethality rather than functional redundancy, and selection against cells with lethal mutation combinations during tumor evolution produces mutual exclusivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C89, and C90 represent the central conclusion of the paper, supported by convergent evidence from human tumor sequencing, mouse models, and cell culture experiments. The evolutionary logic (C90) is sound. This conclusion challenges the prevailing 'functional redundancy' hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Combinations of mutations not found in tumor types may suggest synthetically lethal effects that could be exploited therapeutically, for instance by using signaling agonists to provoke lethal events in the presence of a mutant oncogene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 proposes a therapeutic strategy based on the findings. While speculative, this is appropriately framed as a possibility ('may suggest,' 'could be exploited') and represents a logical extension of the synthetic lethality concept. This is a reasonable discussion point rather than an unsupported claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "The synthetic lethality of EGFR-KRAS co-expression explains why KRAS mutations are not found as a resistance mechanism to EGFR TKIs in patients, despite mutant KRAS conferring TKI resistance in cell lines, because co-mutated cells would be unlikely to survive during tumor evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94, C96-C97 address the clinical puzzle of why KRAS mutations don't emerge as a resistance mechanism despite conferring TKI resistance in vitro. The explanation based on synthetic lethality is logical and supported by the experimental data. The clinical observation (C97) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C34",
+      "C95"
+    ],
+    "result": "Background claims about cancer genomics, pathway-specific mutations in different cancer types, EGFR and RAS function, the functional redundancy hypothesis for EGFR-KRAS mutual exclusivity, and resistance mechanisms to EGFR inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C16-C19, C34, and C95 provide background context and are appropriately cited to published literature. These establish the scientific context for the study and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "PC9 cells harbor an in-frame deletion in exon 19 of EGFR and H358 cells harbor a G12C mutation in KRAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe the genetic characteristics of the cell lines used, which are appropriately cited to published literature. These are important for establishing the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior literature has shown that H-RasG12V expression induces vacuoles and cell death (methuosis) linked to macropinocytosis via Rac1, which activates p38 and JNK pathways; however, KRASG12V can induce macropinocytosis without cell death, potentially augmenting amino acid uptake for rapidly growing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 summarize relevant prior literature that provides context for the morphological and signaling observations. These are appropriately cited and help frame the discussion of mechanisms. The distinction between beneficial and detrimental macropinocytosis is important for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A proposed mechanism is that co-expression of mutant EGFR and KRAS increases RAS-MAPK signaling beyond a tolerable threshold, resulting in increased Rac1 activation and subsequent p38/JNK stimulation, accompanied by uncontrolled macropinocytosis that overwhelms cellular adaptive capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 propose a specific molecular mechanism, but this is explicitly speculative ('it is possible,' 'may be accompanied by'). While the model is consistent with the data and literature, key steps (Rac1 activation, threshold effects) were not directly tested. The claims are appropriately qualified as speculative, but additional experiments would be needed to validate this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Mutual exclusivity of oncogenic mutations may reveal unexpected vulnerabilities and therapeutic possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents a general principle derived from the findings. While somewhat speculative regarding therapeutic applications, this is a reasonable inference from the demonstration of synthetic lethality and is appropriately framed as a possibility rather than a certainty.",
+    "result_type": "MAJOR"
+  }
+]

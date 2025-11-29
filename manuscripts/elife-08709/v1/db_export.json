@@ -1,0 +1,1802 @@
+{
+  "submission": {
+    "id": "62cb7d76-bcf8-4f26-b718-5dca93449d87",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:50:08.896438Z",
+    "updated_at": "2025-11-29T04:50:08.896438Z"
+  },
+  "content": [
+    {
+      "id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "submission_id": "62cb7d76-bcf8-4f26-b718-5dca93449d87",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of pathogen recognition by an integrated HMA domain in a plant NLR immune receptor\n\n## Authors\n\n- A Maqbool<sup>1</sup>\n- H Saitoh<sup>2</sup>\n- M Franceschetti<sup>1</sup>\n- CEM Stevenson<sup>1</sup>\n- A Uemura<sup>2</sup>\n- H Kanzaki<sup>2</sup>\n- S Kamoun<sup>3</sup> ([ORCID: 0000-0002-0290-0315](https://orcid.org/0000-0002-0290-0315))\n- R Terauchi<sup>2</sup>\n- MJ Banfield<sup>1</sup> ([ORCID: 0000-0001-8921-3835](https://orcid.org/0000-0001-8921-3835)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry John Innes Centre Norwich United Kingdom\n2. Iwate Biotechnology Research Center Kitakami Japan\n3. The Sainsbury Laboratory Norwich United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nPlants have evolved intracellular immune receptors to detect pathogen proteins known as effectors. How these immune receptors detect effectors remains poorly understood. Here we describe the structural basis for direct recognition of AVR-Pik, an effector from the rice blast pathogen, by the rice intracellular NLR immune receptor Pik. AVR-PikD binds a dimer of the Pikp-1 HMA integrated domain with nanomolar affinity. The crystal structure of the Pikp-HMA/AVR-PikD complex enabled design of mutations to alter protein interaction in yeast and in vitro, and perturb effector-mediated response both in a rice cultivar containing Pikp and upon expression of AVR-PikD and Pikp in the model plant Nicotiana benthamiana. These data reveal the molecular details of a recognition event, mediated by a novel integrated domain in an NLR, which initiates a plant immune response and resistance to rice blast disease. Such studies underpin novel opportunities for engineering disease resistance to plant pathogens in staple food crops.\n\n## Introduction\n\nPlant diseases are a continuous threat to crop production and a major constraint on achieving food security. Rice blast disease, caused by the fungal pathogen Magnaporthe oryzae, is the biggest pre-harvest biotic threat to global rice production (Pennisi, 2010; Dean et al., 2012; Liu et al., 2014). This disease can cause the loss of enough rice to feed 212\u2013742 million people annually (Fisher et al., 2012), and result in up to 100% yield loss in infected areas (Dean et al., 2012; Liu et al., 2014). The sustainability of rice production is critical, it is a staple food crop for greater than half the world's population.\n\nApproaches to controlling blast disease have mainly been via the deployment of rice resistance (R) genes, which encode intracellular immune receptors known as NLRs (Nucleotide-binding, Leucine-rich-repeat (LRR) Receptors). NLRs are a conserved component of plants' innate immune systems and survey the host environment for perturbations caused by invading pathogens (Dangl and Jones, 2001; Chisholm et al., 2006; Jones and Dangl, 2006; van der Hoorn and Kamoun, 2008; Dodds and Rathjen, 2010). Most NLRs respond to the presence or activities of translocated pathogen effectors, proteins delivered by adapted pathogens to affect the physiology of the host to benefit the parasite (Dodds and Rathjen, 2010; Win et al., 2012; Wirthmueller et al., 2013). The recognition event often results in a robust immune response and localised cell death, which limits disease caused by biotrophic pathogens on their hosts. Most NLRs comprise a multi-domain architecture with central nucleotide-binding (NB-ARC) and C-terminal LRR regions. They also usually contain N-terminal coiled-coil (CC) or TOLL/interleukin-1 receptor (TIR) domains (Takken and Goverse, 2012). In at least some cases, NLRs function in pairs to deliver disease resistance, and these pairs can be tightly linked genetically (Eitas and Dangl, 2010; Cesari et al., 2014; Le Roux et al., 2015; Sarris et al., 2015). The protein:protein interactions that underlie NLR pair function are starting to be elucidated (Cesari et al., 2014; Williams et al., 2014), but many unknowns remain.\n\nInterestingly, most NLR pairs studied to date use one of the NLRs to detect the presence of specific effectors by direct binding (Kanzaki et al., 2012; Cesari et al., 2013; Williams et al., 2014; Zhai et al., 2014). One mechanism by which this can be achieved is via unconventional integrated domains in the NLRs (known as integrated decoy or sensor domains) that show evolutionary relationships to putative virulence targets (Cesari et al., 2014; Wu et al., 2015). Such domains can be integrated at different positions either before, in-between or after the standard NLR regions and are increasingly identified in NLRs of both model and crop plants (Cesari et al., 2014). How these unusual integrated domains function in the direct molecular recognition of effectors, and how this results in initiation of immune signalling, are emerging as fundamental questions in plant NLR biology.\n\nTo date, \u223c100 NLRs in rice have been described to confer resistance to strains of M. oryzae, and 23 of these have been cloned (Liu et al., 2014). Identification of the pathogen effectors (also known as AVRs [avirulence proteins]) that are recognised by these NLRs has lagged behind and only six have been cloned to date, AVR-Pia (Yoshida et al., 2009), AVR-Pita (Orbach et al., 2000), AVR-Pik (Yoshida et al., 2009), AVR-Pii (Yoshida et al., 2009), AVR-Piz-t (Li et al., 2009) and AVR1-CO39 (Ribot et al., 2013). AVR-Pia and AVR1-CO39 are recognised by the RGA4/RGA5 NLR pair (Okuyama et al., 2011; Cesari et al., 2013) through direct binding to a Heavy-Metal Associated domain (HMA, also known as RATX1) integrated into RGA5 after the LRR (Cesari et al., 2013). RGA4/RGA5 physically interact to prevent cell death mediated by RGA4 in the absence of AVR-Pia; the presence of the effector relieves this suppression (Cesari et al., 2014). Intriguingly, the NLR pair Pik-1/Pik-2, which recognises AVR-Pik (Figure 1) (Ashikawa et al., 2008; Yoshida et al., 2009), also binds the effector via an HMA domain but this domain is integrated between the CC and NB-ARC regions of Pik-1 (Figure 1B). The integrated HMA domains of RGA5 and Pik-1 appear to have evolved from a family of rice proteins that only contain the HMA domain (Cesari et al., 2013, 2014; Wu et al., 2015). Interestingly, the rice protein Pi21, a disease susceptibility factor, contains an HMA domain that is not part of an NLR protein (Fukuoka et al., 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig1-v1.jpg)\n\nBoth AVR-Pik (Figure 1A) and the HMA region of Pik-1 exhibit nucleotide polymorphisms between pathogen isolates and rice cultivars that result in changes at the amino acid level (Yoshida et al., 2009; Kanzaki et al., 2012; Wu et al., 2014; Zhai et al., 2014). These changes are most likely associated with co-evolutionary dynamics between M. oryzae and rice, predicted to play out at the molecular level via direct protein:protein interactions (Kanzaki et al., 2012). The interaction of AVR-Pik allele AVR-PikD with the Pik-1 NLR Pikp-1 is thought to be the oldest in co-evolutionary time (Kanzaki et al., 2012). Cultivars of rice containing the Pikp allele are resistant to M. oryzae isolates expressing AVR-PikD, but are susceptible to pathogen isolates expressing other AVR-Pik alleles (Kanzaki et al., 2012).\n\nWhile the structural basis of function and recognition of plant pathogen effectors has advanced in recent years (Wirthmueller et al., 2013; Williams et al., 2014), only a few studies have focused on the M. oryzae/rice system. For example, the only structure known for a M. oryzae effector is that of AVR-Piz-t (Zhang et al., 2013), which adopts a six-stranded \u03b2-sandwich structure and contains a single disulphide bond. To date, there is no available structural information on domains from rice NLRs, and no structural data from any system showing how plant pathogen effectors are directly recognised at the molecular level by an NLR.\n\nTo better understand the mechanisms of direct recognition of effectors by NLRs, we have investigated the interaction between the M. oryzae effector AVR-Pik and the rice NLR Pikp-1. We determined the affinity of interaction of AVR-PikD to the HMA domain of the rice NLR Pikp-1 (Pikp-HMA) in vitro, and compared the relative binding of AVR-Pik alleles AVR-PikE, AVR-PikA and AVR-PikC to this HMA. The crystal structure of AVR-PikD bound to Pikp-HMA was determined and this guided mutagenesis of the effector, targeting residues at the interface with Pikp-HMA. The binding of these mutants to the Pikp-HMA was tested in yeast and in vitro. We also used a combination of AVR-Pik alleles and AVR-PikD mutants in both the host rice and heterologous Nicotiana benthamiana systems to probe the degree to which AVR-NLR interactions mediate immunity-related readouts. Long after Harold Henry Flor proposed the gene-for-gene hypothesis of host\u2013parasite interactions (Flor, 1955, 1971), our study establishes the structural basis of direct recognition of a pathogen effector by a plant NLR.\n\n## Results\n\n### The rice NLR Pikp-HMA domain selectively interacts with M. oryzae effector AVR-PikD in yeast and in vitro\n\nPreviously, the full-length and CC domain (containing the HMA) of Pikp-1 have been shown to interact with AVR-PikD in yeast-2-hybrid (Y2H) assays (Kanzaki et al., 2012; Wu et al., 2014; Zhai et al., 2014). Here we show that the Pikp-HMA domain alone selectively interacts with the AVR-Pik allele AVR-PikD in yeast (Figure 2A, Figure 2\u2014figure supplement 1, Table 1). Weak interaction was also observed with AVR-PikE (as evidenced by limited growth on the selective\u2013LTH plate and some blue colouration in the X-gal assay), but not AVR-PikA or AVR-PikC, which is consistent with previous experiments (Kanzaki et al., 2012). Following expression, purification and verification of the proteins by intact mass spectrometry (\u2018Materials and methods\u2019, Figure 2\u2014figure supplement 2, Table 2), we showed that AVR-PikD and Pikp-HMA form a stable complex in vitro that can be purified by analytical gel filtration (Figure 2B). Using this qualitative assay, we also found that Pikp-HMA can form a complex with AVR-PikE and AVR-PikA, but not AVR-PikC (Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig2-v1.jpg)\n\n**Figure 2.:** (A) Y2H assays showing the binding of effector alleles to the Pikp-HMA using two read-outs, growth on\u2013Leu-Trp-His+3AT (-LTH) plates and the X-gal assay. (B) Analytical Gel Filtration traces depicting the retention volume of Pikp-HMA, AVR-PikD and the complex, with SDS-PAGE gels of relevant fractions (similar results were obtained for AVR-PikE and AVR-PikA, but AVR-PikC did not bind [Figure 2\u2014figure supplement 3]). (C) Binding curves derived from Surface Plasmon Resonance multi-cycle kinetics data for Pikp-HMA binding to AVR-Pik alleles, Kd values are shown (NB = No Binding). The sensorgrams of the data used to derive these curves are shown in Figure 2\u2014figure supplement 4.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Western blot demonstrating the expression of AVR-Pik alleles in yeast. The expected size of the AVR-Pik/GAL4-BD is 30 kDa, the GAL4-BD alone is 19 kDa. Ponceau staining confirms equivalent protein loading. The empty vector is presented on a separate image (boxed) as we found the expression of this domain alone was much greater than when fused to the effectors, and it was necessary to load 40-fold less protein so as not to overload the signal. Ponceau staining of the membrane was used to confirm protein loading.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** AVR-Pik effector alleles, as labelled, and Pikp1-HMA domain. The Pikp-HMA domain was run on a separate gel to the effectors and is boxed to indicate this.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Analytical gel filtration traces depicting the retention volume of AVR-PikE, AVR-PikA, AVR-PikC and Pikp-HMA individually and when effector and HMA are mixed ((A), (B) and (C) respectively). SDS-PAGE gels of the relevant fractions from the elution traces of the effector:Pikp-HMA are also shown.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Multi-cycle kinetics data for the interaction of Pikp-HMA (analyte) with effectors (A) AVR-PikD, (B) AVR-PikE, (C) AVR-PikA, (D) AVR-PikC. This data was used to generate the binding curves shown in Figure 2C. Response units for each labelled protein concentration during the run are shown.\n\n**Table 1.**\n Summary Table showing the outcomes of in vitro and in planta assays used to investigate the interactions and responses of AVR-Pik effectors with Pikp-dependent readouts\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>AVR-PikD</th>\n      <th>AVR-PikE</th>\n      <th>AVR-PikA</th>\n      <th>AVR-PikC</th>\n      <th>AVR-PikDHis46Glu</th>\n      <th>AVR-PikDIle49Glu</th>\n      <th>AVR-PikDArg64Ala</th>\n      <th>AVR-PikDAsp66Arg</th>\n      <th>AVR-PikDAla67Asp</th>\n      <th>AVR-PikDPro47Ala/Gly48Asp</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Interaction with Pikp-HMA in Y2H</td>\n      <td>+++</td>\n      <td>+</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>+++</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>++</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>Interaction with Pikp-HMA in SPR</td>\n      <td>+++</td>\n      <td>++</td>\n      <td>+</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>++</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>+</td>\n      <td>++</td>\n    </tr>\n    <tr>\n      <td>Recognition in Pikp+ rice plants</td>\n      <td>+++</td>\n      <td>+</td>\n      <td>(\u2212)</td>\n      <td>(\u2212)</td>\n      <td>\u2212</td>\n      <td>+</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>+++</td>\n      <td>+++</td>\n    </tr>\n    <tr>\n      <td>CD response in Nicotiana benthamiana</td>\n      <td>+++</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>++</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>\u2212</td>\n      <td>+++</td>\n    </tr>\n  </tbody>\n</table>\n\n_Y2H = yeast-2-hybrid, SPR = Surface Plasmon Resonance, Pikp+ = rice cv. K60, CD = cell death. Parentheses depict results from (Kanzaki et al., 2012)._\n\n**Table 2.**\n Intact masses for proteins expressed and purified in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Protein</th>\n      <th rowspan=\"2\">Vector</th>\n      <th colspan=\"3\">Molecular Mass (Da)</th>\n    </tr>\n    <tr>\n      <th>Calculated</th>\n      <th>Observed</th>\n      <th>\u0394</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pikp-HMA</td>\n      <td>pOPINS3C*</td>\n      <td>7805.23</td>\n      <td>7804.97</td>\n      <td>\u22120.26</td>\n    </tr>\n    <tr>\n      <td>AVR-PikD</td>\n      <td>pOPINS3C*</td>\n      <td>10,835.31</td>\n      <td>10,832.95</td>\n      <td>\u22122.36\u00a7</td>\n    </tr>\n    <tr>\n      <td>AVR-PikD</td>\n      <td>pOPINA\u2020</td>\n      <td>10,812.33</td>\n      <td>10,809.99</td>\n      <td>\u22122.34</td>\n    </tr>\n    <tr>\n      <td>AVR-PikD</td>\n      <td>pOPINE\u2021</td>\n      <td>11,786.33</td>\n      <td>11,784.16</td>\n      <td>\u22122.17</td>\n    </tr>\n    <tr>\n      <td>AVR-PikE</td>\n      <td>pOPINS3C*</td>\n      <td>10,812.27</td>\n      <td>10,809.91</td>\n      <td>\u22122.36</td>\n    </tr>\n    <tr>\n      <td>AVR-PikE</td>\n      <td>pOPINE\u2021</td>\n      <td>11,763.29</td>\n      <td>11,760.96</td>\n      <td>\u22122.33</td>\n    </tr>\n    <tr>\n      <td>AVR-PikA</td>\n      <td>pOPINS3C*</td>\n      <td>10,844.27</td>\n      <td>10,841.80</td>\n      <td>\u22122.47</td>\n    </tr>\n    <tr>\n      <td>AVR-PikA</td>\n      <td>pOPINE\u2021</td>\n      <td>11,795.29</td>\n      <td>11,793.01</td>\n      <td>\u22122.28</td>\n    </tr>\n    <tr>\n      <td>AVR-PikC</td>\n      <td>pOPINS3C*</td>\n      <td>10,856.28</td>\n      <td>10,853.72</td>\n      <td>\u22122.56</td>\n    </tr>\n    <tr>\n      <td>AVR-PikC</td>\n      <td>pOPINE\u2021</td>\n      <td>11,807.30</td>\n      <td>11,804.97</td>\n      <td>\u22122.33</td>\n    </tr>\n    <tr>\n      <td>AVR-PikDHis46Glu</td>\n      <td>pOPINE\u2021</td>\n      <td>11,778.30</td>\n      <td>11,776.07</td>\n      <td>\u22122.23</td>\n    </tr>\n    <tr>\n      <td>AVR-PikDIle49Glu</td>\n      <td>pOPINE\u2021</td>\n      <td>11,802.28</td>\n      <td>11,800.04</td>\n      <td>\u22122.24</td>\n    </tr>\n    <tr>\n      <td>AVR-PikDArg64Ala</td>\n      <td>pOPINE\u2021</td>\n      <td>11,701.22</td>\n      <td>11,698.94</td>\n      <td>\u22122.28</td>\n    </tr>\n    <tr>\n      <td>AVR-PikDAsp66Arg</td>\n      <td>pOPINE\u2021</td>\n      <td>11,827.43</td>\n      <td>11,825.31</td>\n      <td>\u22122.12</td>\n    </tr>\n    <tr>\n      <td>AVR-PikDAla67Asp</td>\n      <td>pOPINE\u2021</td>\n      <td>11,830.34</td>\n      <td>11,828.20</td>\n      <td>\u22122.14</td>\n    </tr>\n    <tr>\n      <td>AVR-PikDPro47Ala, Gly48Asp</td>\n      <td>pOPINE\u2021</td>\n      <td>11,818.32</td>\n      <td>11,816.20</td>\n      <td>\u22122.12</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Non-native residues remaining after 3C cleavage: N-terminal Gly\u2013Pro.\u2020Non-native residues remaining: N-terminal Met.\u2021Non-native residues remaining after 3C cleavage: N-terminal Gly\u2013Pro; C-terminal Lys-His-His-His-His-His-His.\u00a7The measured mass of each AVR-Pik protein should be 2.0156 Da (2 \u00d7 1.0078) less than its calculated mass due to formation of the di-sulphide bond._\n\nNext we used Surface Plasmon Resonance (SPR) to determine the binding affinity of AVR-PikD to Pikp-HMA. The purified effector, with a non-cleavable 6xHis tag at the C-terminus, was immobilised on a Ni2+-NTA chip; Pikp-HMA was used as the analyte. Using a multi-cycle kinetics approach, we found that Pikp-HMA bound to immobilised AVR-PikD with a Kd of 31 \u00b1 2 nM (Figure 2C, Figure 2\u2014figure supplement 4A, Table 1). SPR studies were expanded to include AVR-PikE, AVR-PikA and AVR-PikC (Figure 2C, Figure 2\u2014figure supplement 4, Table 1). For AVR-PikE, even though this was not fully saturatable under the conditions of our assay, we obtained an apparent Kd of 367 \u00b1 41 nM, a greater than 10-fold weaker binding compared to AVR-PikD (Figure 2C). For AVR-PikA we could determine an apparent Kd of 710 \u00b1 111 nM (also not saturatable in the assay). We detected essentially no binding for AVR-PikC to Pikp-HMA in this assay (Figure 2C). This is consistent with the Y2H data and also correlates with the published recognition specificity in planta, although M. oryzae isolates expressing AVR-PikE were reported to not be recognised by cultivars of rice expressing Pikp (Kanzaki et al., 2012).\n\n### Crystal structure of the Pikp-HMA/AVR-PikD complex\n\nAlthough we were able to express and purify AVR-PikD from Escherichia coli, we were unable to obtain crystals of this protein for structure determination by X-ray crystallography. However, following a co-expression strategy with 6xHis tagged Pikp-HMA and untagged AVR-PikD (see \u2018Materials and methods\u2019), we obtained crystals of this complex in multiple conditions. Optimisation of one of these conditions (Figure 3\u2014figure supplement 1) produced crystals diffracting X-rays to 1.6 \u00c5 resolution. The structure of the Pikp-HMA/AVR-PikD complex was solved using molecular replacement to position a Pikp-HMA dimer (see below) in the asymmetric unit, followed by automated rebuilding with the sequence of both proteins supplied. This was sufficient to produce an initial model containing both Pikp-HMA and AVR-PikD that could be used to complete structure determination (see \u2018Materials and methods\u2019, X-ray Data Collection and Refinement statistics are given in Table 3).\n\n**Table 3.**\n X-ray data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Pikp-HMA</th>\n      <th></th>\n      <th>Pikp-HMA/AVR-PikD</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>Native</th>\n      <th>Iodide</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.20</td>\n      <td>2.00</td>\n      <td>0.90</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P6522</td>\n      <td>P6522</td>\n      <td>P41212</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Cell dimensions</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>54.65, 54.65, 235.22</td>\n      <td>54.73, 54.73, 235.80</td>\n      <td>118.41, 118.41, 35.81</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3, (\u00b0)</td>\n      <td>90.00, 90.00, 120.00</td>\n      <td>90.00, 90.00, 120.00</td>\n      <td>90.00, 90.00, 90.00</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)*</td>\n      <td>47.33\u20132.10 (2.15\u20132.10)</td>\n      <td>117.90\u20132.80 (2.87\u20132.80)</td>\n      <td>39.47\u20131.60 (1.64\u20131.60)</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)</td>\n      <td>8.4 (117.6)</td>\n      <td>8.7 (45.8)</td>\n      <td>4.7 (65.1)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3I</td>\n      <td>32.3 (4.6)</td>\n      <td>34.7 (7.3)</td>\n      <td>32.3 (4.7)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Overall</td>\n      <td>100 (99.9)</td>\n      <td>99.9 (98.9)</td>\n      <td>100 (100)</td>\n    </tr>\n    <tr>\n      <td>Anomalous</td>\n      <td></td>\n      <td>99.9 (99.4)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Overall</td>\n      <td>45 (46.8)</td>\n      <td>32.8 (24.4)</td>\n      <td>17.7 (17.4)</td>\n    </tr>\n    <tr>\n      <td>Anomalous</td>\n      <td></td>\n      <td>19.4 (13.3)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CC(1/2) (%)</td>\n      <td>100 (94.0)</td>\n      <td>100 (98.0)</td>\n      <td>100 (92.8)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Refinement and model</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>47.33\u20132.10 (2.15\u20132.10)</td>\n      <td></td>\n      <td>39.47\u20131.60 (1.64\u20131.60)</td>\n    </tr>\n    <tr>\n      <td>Reflections</td>\n      <td>12356 (861)</td>\n      <td></td>\n      <td>32549 (2379)</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (%)</td>\n      <td>20.2/22.9 (20.6/19.6)</td>\n      <td></td>\n      <td>17.8/20.5 (19.6/24.7)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">No. atoms</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>1063</td>\n      <td></td>\n      <td>1762</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>44</td>\n      <td></td>\n      <td>138</td>\n    </tr>\n    <tr>\n      <td>B-factors (\u00c52)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>29.96</td>\n      <td></td>\n      <td>23.38</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>57.31</td>\n      <td></td>\n      <td>34.07</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">R.m.s deviations</td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.013</td>\n      <td></td>\n      <td>0.016</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.57</td>\n      <td></td>\n      <td>1.79</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Ramachandran plot (%)\u2020</td>\n    </tr>\n    <tr>\n      <td>Favoured</td>\n      <td>97.1</td>\n      <td></td>\n      <td>98.7</td>\n    </tr>\n    <tr>\n      <td>Allowed</td>\n      <td>2.9</td>\n      <td></td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td>Outliers</td>\n      <td>0</td>\n      <td></td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MolProbity Score</td>\n      <td>1.48 (98th percentile)</td>\n      <td></td>\n      <td>1.21 (98th percentile)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The highest resolution shell is shown in parentheses.\u2020As calculated by MolProbity._\n\nThe structure of the Pikp-HMA/AVR-PikD complex reveals an intimate interface formed between these proteins that buries 18.7% of the effector's solvent accessible surface area (1031.0 \u00c52, Figure 3A,B). The majority of the interaction is formed with a monomer of Pikp-HMA, with 87.5% of the effector's buried surface area (902.2 \u00c52) and nine residues contributing hydrogen bond and/or salt bridge interactions. This suggests that the AVR-PikD/Pikp-HMA monomer interaction most likely represents the biologically significant interface. No hydrogen bonds or salt bridge interactions are formed with the second monomer of the Pikp-HMA dimer. Further, due to steric clash that would occur, it is not possible for an AVR-PikD/Pikp-HMA heterotetramer (2:2 complex) to assemble. All interface analysis was performed using PDBePISA (Krissinel and Henrick, 2007).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic representation of the AVR-PikD/Pikp-HMA(monomer), highlighting interfacing residues. The effector is shown in green cartoon, with side chains as sticks and green carbon atoms (no surface). The Pikp-HMA is shown in blue cartoon, with side chains as sticks and blue carbon atoms; the molecular surface of this protein is also depicted. Effector residues selected for mutation are labelled, as are important interface residues of Pikp-HMA discussed in the text. Hydrogen bonds/salt-bridges are shown as dashed lines and the di-sulphide bond as yellow bars. (B) Buried surface areas of AVR-PikD (left, purple) and Pikp-HMA (right, brown) separated and shown from the perspective of the partner molecule. Cartoon and amino acid side chains shown are as for panel (A). (C) Comparison of the Pikp-HMA (monomer, blue) with yeast Ccc2A (wheat) showing the conservation of the HMA fold. The copper ion bound to Ccc2a is shown as a red sphere. (D) Comparison of AVR-PikD (green) and AVR-Piz-t (pink) structures showing the conservation of the \u03b2-sandwich structure, and the N-terminal extension of AVR-PikD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pikp-HMA, left: SDS-PAGE gel of sample used for crystallisation, right: crystal of Pikp-HMA. (B) Pikp-HMA/AVR-PikD complex, left: SDS-PAGE gel of sample used for crystallisation, right: crystals of Pikp-HMA/AVR-PikD complex.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Crystal structure of the Pikp-HMA dimer, monomers are coloured blue and magenta. (B) Crystal structure of the Pikp-HMA dimer in complex with AVR-PikD, coloured as above and with the effector in green (Cys residues that form the di-sulphide bond are shown in yellow). (C) Crystal structure of the Pikp-HMA dimer in complex with AVR-PikD, with the Pikp-HMA dimer structure from \u2018(A)\u2019 overlaid, shown in grey.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) AVR-PikDHis46 interacts via hydrogen bond and salt\u2013bridge interactions with Pikp-HMA residues Ser218 and Glu230 and van der Waals interaction with Val232. (B) Region of the Pikp-HMA structure, equivalent to that shown in (A), determined from the uncomplexed crystal structure of Pikp-HMA. In both panels, each residue is shown overlaid with the electron density describing their position (2mFobs \u2212 DFcalc contoured at 1\u03c3).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) AVR-Pik alleles. The residues that are polymorphic in AVR-Pik alleles are marked by empty triangles. The residues of AVR-PikD targeted for mutation in this study are marked with filled triangles. (B) Pik-HMAs (Pikp-HMA, Pikm-HMA and Pik*-HMA). The residues of Pikp-HMA involved in hydrogen bond interactions with AVR-PikDHis46 are marked by empty triangles. The residues of Pik-HMA domains that may contribute to recognition specificity are marked with filled triangles. The secondary structure features presented above the alignment are derived from the structures of AVR-PikD and Pikp-HMA. The alignments were performed using Clustal Omega (Sievers et al., 2011) and presented using ESPript (Robert and Gouet, 2014).\n\n### Structure of Pikp-HMA in the Pikp-HMA/AVR-PikD complex\n\nEach of the Pikp-HMA monomers adopts the HMA-domain fold (Pfam: PF00403), comprising a four-stranded antiparallel \u03b2-sheet and two \u03b1-helices packed in an \u03b1/\u03b2 sandwich. The closest structural homologue of Pikp-HMA (defined by PDBeFold [Krissinel and Henrick, 2004]) is the HMA domain of yeast protein Ccc2A (Banci et al., 2001), overlaying with an r.m.s.d. of 1.58 \u00c5 over 72 residues (Figure 3C). Typically, HMA domains bind heavy metals, or lighter cations such as Cu1+ or Zn2+, via two conserved Cys residues and are involved in metal transport or detoxification pathways (Bull and Cox, 1994). Interestingly, these Cys residues are not conserved in Pik-1 HMA domains, including Pikp-1. Hence, the Pikp-HMA structure does not contain a metal ion, and the loop between \u03b21 and \u03b11, which usually contains the metal-chelating Cys residues, is disordered. Further, this loop is positioned away from the interface with the effector (Figure 3A, Figure 3\u2014figure supplement 2) and does not contribute to complex formation.\n\nWe were also able to obtain the crystal structure of Pikp-HMA in the absence of AVR-PikD (see \u2018Materials and methods\u2019, Figure 3\u2014figure supplements 1, 2A). The structure of the Pikp-HMA dimer in isolation is essentially identical to that found in the complex (r.m.s.d. 0.67 \u00c5 over 69 residues, for the monomer bound to AVR-PikD), with the exceptions of a minor shift in the loop spanning residues Val222\u2014Lys228 and the N-terminal four residues (Figure 3\u2014figure supplement 2C).\n\n### Structure of AVR-PikD in the Pikp-HMA/AVR-PikD complex\n\nAVR-PikD adopts a six-stranded \u03b2-sandwich structure, stabilised by a di-sulphide bond between Cys54 and Cys70. The effector contains an N-terminal extension, comprising residues Arg31 to Pro52, prior to the start of this fold (Figure 3A,D). The extension is anchored to the \u03b2-sandwich at each end via a salt\u2013bridge interaction involving the side chains of Asp45 and Arg110 and hydrogen bonds between both the main chain carbonyl of Arg39 and Glu38O\u03b51 and Arg64N\u03b71.\n\nDatabase searches using PDBeFold reveals that a close structural homologue of AVR-PikD is AVR-Piz-t (Zhang et al., 2013), another M. oryzae effector protein, despite there being essentially no sequence identity between these proteins (r.m.s.d. = 2.33 \u00c5 over 58 aligned residues, Figure 3D). This suggests that sequence divergent translocated effectors of M. oryzae may share a conserved structural scaffold, despite very different sequences, which has striking parallels to RXLR-type effectors of plant pathogenic oomycetes (Boutemy et al., 2011; Win et al., 2012). Further, structural homology is also observed to ToxB, a protein toxin from Pyrenophora tritici-repentis, the causative agent of tan spot in wheat (Nyarko et al., 2014). In each case, the identified structural homology only extends to the \u03b2-sandwich fold and the N-terminal extension of AVR-PikD appears to be unique. This raises the interesting possibility that candidate effectors from distant fungi could be identified by structure-guided sequence similarity searches.\n\n### Binding interfaces in the Pikp-HMA/AVR-PikD complex\n\nThree primary sites of interaction are apparent between Pikp-HMA and AVR-PikD. The first is dominated by main-chain hydrogen bonding between the C-terminal \u03b2-stand of Pikp-HMA and \u03b23 of AVR-PikD, which results in formation of a continuous antiparallel \u03b2-sheet comprising the four \u03b2-strands of Pikp-HMA and \u03b23\u20135 of AVR-PikD. The second involves the side chain of Pikp-HMAAsp224, which forms a salt\u2013bridge interaction with the side chain of AVR-PikDArg64, and is also held in place by a hydrogen bond of its main chain NH group to the side chain of AVR-PikDAsp66 (Figure 3A). The third interaction site centres on AVR-PikDHis46, although has contributions from residues Asn42\u2014Ile49. This region forms part of the N-terminal extension and includes the polymorphic AVR-Pik residues 46, 47 and 48 (His46, Pro47 and Gly48 in AVR-PikD, Figures 1A and 3A). AVR-PikDHis46 is bound in a pocket on Pikp-HMA via hydrogen bonds/salt bridge interactions between AVR-PikDHis46:N\u03b41/Pikp-HMASer218:O\u03b3 and AVR-PikDHis46:N\u03b52/Pikp-HMAGlu230:O\u03b51; also, Pikp-HMAVal232 packs on top of the AVR-PikDHis46 ring and contributes hydrophobic/van der Waals interactions (Figure 3\u2014figure supplement 3). Finally, it is worth noting that there is an extensive network of buried solvent-mediated contacts between Pikp-HMA and AVR-PikD.\n\n### Structure-based mutations in AVR-PikD perturb binding to Pikp-HMA in yeast and in vitro\n\nBased on the Pikp-HMA/AVR-PikD structure, we designed four mutations in AVR-PikD predicted to perturb complex formation through generating steric clashes/introducing charged residues, or removing a salt\u2013bridge interaction (His46Glu, Ile49Glu, Asp66Arg and Arg64Ala), and two mutants to mimic other AVR-Pik alleles, but retain His46 (Ala67Asp [based on AVR-PikC], Pro47Ala/Gly48Asp [based on AVR-PikA]), Figure 3\u2014figure supplement 4A.\n\nFirst, we screened these mutants for interaction with Pikp-HMA in the Y2H assay. We found that AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg prevent the interaction (as observed on the -LTH selective growth plate and in the X-gal assay (Figure 4A, Figure 4\u2014figure supplement 1, Table 1). However, AVR-PikDIle49Glu maintains an interaction and AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp showed intermediate binding (weak interaction on -LTH selective growth plate and in the X-gal assay [Figure 4A]).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig4-v1.jpg)\n\n**Figure 4.:** (A) Y2H assays showing the binding of AVR-PikD mutants to Pikp-HMA using two read-outs, growth on\u2013Leu-Trp-His+3AT (-LTH) plates and the X-gal assay. (B) Binding curves derived from Surface Plasmon Resonance single-cycle kinetics data for Pikp-HMA binding to AVR-PikD and AVR-PikD mutants, Kd values are shown where determined (ND = Not Determined, NB = No Binding). The sensorgrams of the data used to derive these curves are shown in Figure 4\u2014figure supplement 2B.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Western blot analysis demonstrating the expression of AVR-PikD and AVR-PikD mutants in yeast. The empty vector (EV) is presented on a separate image (boxed) as we found the expression of this domain alone was much greater than when fused to the effectors, and it was necessary to load 40-fold less protein to not overload the signal. Ponceau staining of the membrane was used to confirm protein loading.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) AVR-PikD mutants prepared for SPR analysis. (B) Single-cycle kinetics data for the interaction of Pikp-HMA (analyte) with AVR-PikD mutants. This data was used to generate the binding curves shown in Figure 4B.\n\nNext, we expressed and purified each of these AVR-PikD mutants (as for wild-type and with C-terminal non-cleavable 6xHis tag) and confirmed their identity by intact mass spectrometry (Figure 4\u2014figure supplement 2A, Table 2). We then used SPR to determine the binding affinities between these mutants and the Pikp-HMA using a single-cycle kinetics approach ([Karlsson et al., 2006] Figure 4B, Figure 4\u2014figure supplement 2B, Table 1), having confirmed a similar affinity of Pikp-HMA for AVR-PikD (Kd = 29 \u00b1 3.5 nM) using this approach. Consistent with the Y2H results, we could not measure any meaningful interaction of AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg with Pikp-HMA (Figure 4B). For AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp we were able to determine Kds of interaction of 99 \u00b1 18 nM and 83 \u00b1 16 nM respectively (Figure 4B, Figure 4\u2014figure supplement 2B). AVR-PikDAla67Asp showed a weaker response but we were unable to obtain a reliable Kd at the concentrations of Pikp-HMA used. AVR-PikDIle49Glu, AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp all interacted in the Y2H assay, with the latter two showing qualitatively weaker binding.\n\n### Structure-based mutations in AVR-PikD prevent response in rice when delivered by M. oryzae\n\nTo test the effects of the AVR-PikD mutations on pathogen virulence on rice plants expressing the Pikp gene, we transformed M. oryzae isolate Sasa2 with constructs encoding each of the six mutants above, with expression driven by the native AVR-PikD promoter. AVR-PikE was included in these experiments as it represents a naturally occurring point mutant at the important position 46 (His46Asn). Each of the transformed M. oryzae lines were spot inoculated (Kanzaki et al., 2002) onto leaf blades of rice cultivars Nipponbare (Pik\u2212, lacks known Pik alleles) and K60 (which contains Pikp). The Nipponbare cultivar was susceptible to all of the M. oryzae lines, including Sasa2 wild type and empty vector control, as shown by the development of lesions around the inoculation sites (Figure 5). As expected, the K60 (Pikp) cultivar is resistant to the M. oryzae Sasa2 line expressing AVR-PikD (Kanzaki et al., 2012). We observed that the K60 (Pikp) cultivar showed an intermediate phenotype between susceptible and resistant to M. oryzae Sasa2 lines expressing AVR-PikE. For the mutants, we found that the K60 (Pikp) cultivar was susceptible to M. oryzae Sasa2 lines expressing AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg, but resistant to those expressing AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp (Figure 5, Table 1). As for AVR-PikE, K60 (Pikp) shows an intermediate phenotype to Sasa2 lines expressing AVR-PikDIle49Glu (Figure 5). There is a correlation between AVR-PikD mutants that display the tightest binding affinities in vitro, and interact in the Y2H assay, with resistance in rice when delivered by M. oryzae (partial phenotype in the case of AVR-PikDIle49Glu). Strains expressing AVR-PikD mutants that do not interact in vitro or in yeast (AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg) are fully susceptible in rice. Expression of AVR-PikD and mutants in the transgenic M. oryzae during infection was confirmed by RT-PCR (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig5-v1.jpg)\n\n**Figure 5.:** Rice plants Pik\u2212 (cv. Nipponbare) and Pikp+ (cv. K60) were spot-inoculated with M. oryzae Sasa2 expressing AVR-PikD, AVR-PikE and AVR-PikD mutants. The combinations resulting in resistant (R), intermediate (IM) and susceptible (S) phenotype are labelled.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** RT-PCR confirming AVR-PikD, AVR-PikE and AVR-PikD mutants are expressed during infection, M. oryzae actin was used as the positive control.\n\n### Pikp/AVR-PikD co-expression in N. benthamiana elicits a cell death response\n\nTo further investigate the link between recognition of AVR-PikD by Pikp-1/Pikp-2 and immunity-related signalling, we established a transient expression assay in N. benthamiana leaves using Agrobacterium tumefaciens to deliver these genes into plant cells (henceforth Agroinfiltration, Figure 6A). In this system we required the co-expression of Pikp-1, Pikp-2 and AVR-PikD to observe robust features of cell death, including necrotic tissue and accumulation of phenolic compounds that give rise to auto-fluorescence (Figure 6B) (Bos et al., 2006). We did not observe significant effects in N. benthamiana leaves following expression of the individual proteins or any combination of protein pairs (Figure 6B). Further, co-expression of AVR-PikE, AVR-PikA and AVR-PikC with Pikp-1 and Pikp-2 fails to elicit a cell death response (Figure 6\u2014figure supplements 1\u20134). This demonstrates only the specific combination of Pikp-1, Pikp-2 and AVR-PikD results in a robust response and is consistent with the observed pairings between rice cultivars with different Pik alleles and M. oryzae isolates with different AVR-Pik alleles (Kanzaki et al., 2012).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig6-v1.jpg)\n\n**Figure 6.:** (A) Western blots showing expression of AVR-PikD(HA), Pikp-1(FLAG) and Pikp-2(Myc) in N. benthamiana. Blots were probed using the appropriate antibody for the tagged protein. (B) The Pikp HR-like cell death in N. benthamiana requires expression of Pikp-1, Pikp-2 and AVR-PikD together. Expression of individual proteins or co-expression of any protein pair does not result in cell death. Images showing autofluorescence are horizontally flipped to present the same leaf orientation as white light images.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Only the expression of Pikp-1, Pikp-2 and AVR-PikD, not AVR-PikE, AVR-PikA or AVR-PikC, results in cell death in N. benthamiana. Images showing autofluorescence are horizontally flipped to present the same leaf orientation as white light images. (B) Western blots showing expression of AVR-Pik(HA) alleles, Pikp-1(FLAG) and Pikp-2(Myc) in N. benthamiana. Blots were probed using the appropriate antibody for the tagged protein.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The Pikp-1, Pikp-2 and AVR-PikD combination is included as a positive control. Images showing autofluorescence are horizontally flipped to present the same leaf orientation as white light images.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Views from the adaxial side of the leaves for white light images and abaxial side of the leaves for UV images were used. Images showing autofluorescence are horizontally flipped to present the same orientation as white light images.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** For each sample the number of repeats used were, Empty Vector (EV) and AVR-PikD: 156, AVR-PikE: 68, AVR-PikA: 69, AVR-PikC: 70. The scoring system for the HR Index is shown in Figure 6\u2014figure supplement 3.\n\n### Structure-based mutations in AVR-PikD prevent Pikp-mediated cell death in N. benthamiana\n\nTo further correlate the cell death response with direct protein:protein interaction, we co-expressed Pikp-1, Pikp-2 and the AVR-PikD mutants described above via Agroinfiltration in N. benthamiana leaves (Figure 7\u2014figure supplement 1). Using this approach, we found that the AVR-PikDHis46Glu, AVR-PikDArg64Ala, AVR-PikDAsp66Arg and AVR-PikDAla67Asp mutations do not elicit a response, but AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp still promote cell death (Figure 7, Figure 7\u2014figure supplement 2, Table 1). Interestingly, while AVR-PikDIle49Glu consistently generates a response in N. benthamiana and bound to Pikp-HMA in the SPR and Y2H assays, it displayed an intermediate phenotype in the M. oryzae inoculation assay. Further, while AVR-PikDAla67Asp did not elicit a response in N. benthamiana and showed only weak interaction by SPR, it did bind to Pikp-HMA in the Y2H assay, and induced resistance in the M. oryzae inoculation assay. These results suggest that differences in binding affinities between effectors and Pikp-HMA in vitro can occasionally result in subtly different readouts in plants.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig7-v1.jpg)\n\n**Figure 7.:** Co-infiltration of Pikp-1 and Pikp-2 with AVR-PikD mutants His46Glu, Arg64Ala, Asp66Arg and Ala67Asp leads to loss of recognition and signalling in N. benthamiana. AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp retain recognition and signalling. Each infiltration site includes Pikp-1 and Pikp-2 with the AVR-PikD mutant indicated. Pikp-1 and Pikp-2 alone (EV) and with AVR-PikD are included as controls. Images showing autofluorescence are horizontally flipped to present the same leaf orientation as white light images.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Blots were probed using the appropriate antibody for the tagged protein. The same blots were previously shown in Figure 6\u2014figure supplement 1B to show expression of Pikp-1, Pikp-2 and AVR-Pik alleles.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08709/elife-08709-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** For each sample the number of repeats used were, Empty Vector (EV) and AVR-PikD: 156, AVR-PikDHis46Glu, AVR-PikDIle49Glu and AVR-PikDArg64Ala: 70, AVR-PikDAsp66Arg and AVR-PikDAla67Asp: 69, AVR-PikDPro47Ala/Gly48Asp: 68. Note that the data presented here for EV and AVR-PikD are also presented in Figure 6\u2014figure supplement 4 (all N. benthamiana assay repeats were conducted at similar times). The scoring system for the HR Index is shown in Figure 6\u2014figure supplement 3.\n\n## Discussion\n\nUnderstanding how plant NLRs function at the molecular level is critical for their effective deployment in agriculture. Despite being >20 years since cloning of the first plant NLRs, this is still lacking. While single NLRs can be sufficient to mediate recognition and initiate signalling by either direct (Dodds and Rathjen, 2010) or indirect binding (Dangl and Jones, 2001; van der Hoorn and Kamoun, 2008), the role of paired NLRs is emerging as a new paradigm for regulating immune responses in plants and mammals. In such cases, one NLR acts as a pathogen \u2018sensor\u2019, and can contain a specific domain that mediates this activity, the second acts as an inducer of signalling. Recent studies have addressed the importance of molecular interactions between classical domains in plant NLR pairs (Cesari et al., 2014; Williams et al., 2014). Here we focussed on dissecting the direct recognition of a rice blast pathogen effector by an unconventional integrated domain (Cesari et al., 2014; Wu et al., 2015) in a rice NLR, a critical event for the initiation of immune-related signalling.\n\n### Cell death signalling in the Pikp system requires Pikp-1, Pikp-2 and effector\n\nIn plants, paired NLRs such as rice RGA5/RGA4 and Arabidopsis RRS1/RPS4 (Narusaka et al., 2009), function through formation of homo- and hetero-protein complexes (Cesari et al., 2014; Williams et al., 2014). One member of the pair can constitutively activate an HR-like cell death on expression in plants (RGA4 and RPS4), and this activity is suppressed by the second (RGA5 and RRS1) through the formation of hetero-complexes (Cesari et al., 2014; Williams et al., 2014). This suppression is relieved by co-expression of the cognate effectors and can result in signalling-competent NLR homo-complexes (Cesari et al., 2014). In mammals, members of the NAIP (NLR) family act as sensors of pathogen signatures and associate with NLRC4 following perception to trigger signalling (Kofoed and Vance, 2011; Zhao et al., 2011). Although it seems unlikely that assemblies of homo- and hetero-NLR complexes in their suppressed and activated states are universally conserved in mammals and plants, it appears that oligomerisation plays a key role in modulating activity.\n\nIn contrast to RGA4 and RPS4, expression of Pikp-2 does not constitutively activate cell death in Nicotiana. In our assays, the HR-like response requires co-expression of Pikp-1 and AVR-PikD with Pikp-2, suggesting assembly of an active signalling complex requires all three proteins. Although the limits of our assays preclude a conclusive interpretation of this signalling complex, they do suggest that not all paired plant NLRs function within the confines of existing models. At present it is unknown whether or not Pikp-2 forms a heteromeric complex with Pikp-1 in an effector-dependent manner. Future work is required to dissect the underlying molecular interactions that promote signalling by the Pik NLRs.\n\n### Polymorphic residue AVR-Pik46 maps to the direct binding interface between Pikp-HMA and AVR-PikD\n\nPhylogenetics suggests AVR-PikD is the ancestral AVR-Pik allele, and it is the only natural variant with a His at position 46 (Kanzaki et al., 2012). In the Pikp-HMA/AVR-PikD complex, the AVR-PikDHis46 side chain is buried within a pocket on the Pikp-HMA surface that contributes hydrogen bonds/salt bridge interactions (Figure 3A, Figure 3\u2014figure supplement 3). The AVR-PikDHis46Glu mutation prevents interaction with Pikp-HMA in vitro and in yeast, and response in planta either when delivered by M. oryzae into rice or on co-expression in N. benthamiana.\n\nThis data supports AVR-Pik46 as a key site for recognition specificity, and that following introduction of Pikp into cultivated rice, M. oryzae evolved to evade recognition by mutating this residue. Interestingly, the only natural variant found at this position is a somewhat conservative His to Asn change (giving rise to AVR-PikE). Conceptually, this residue could be accommodated at the Pikp-HMA/AVR-PikD interface without generating significant steric clashes, but the interactions formed at this site (e.g., hydrogen bonding pattern) will be fundamentally different. This single amino acid polymorphism is sufficient to prevent AVR-Pik-dependent cell death in N. benthamiana, limit resistance in rice, and reduce the affinity of interaction with Pikp-HMA in vitro by an order of magnitude. This suggests a binding threshold is required to elicit a response in plants and the observed 10-fold reduced affinity of AVR-PikE for Pikp-HMA in vitro is sufficient for this. While this may be enough to explain why the conservative His46Asn mutation is the only one found in nature, it remains possible that other mutations would not be tolerated due to a trade-off with the effector's virulence activity.\n\n### Mutation in other AVR-PikD interfacing residues also prevents Pikp-HMA binding\n\nOf the other amino acid mutations explicitly designed to disrupt the Pikp-HMA/AVR-PikD interaction, AVR-PikDArg64Ala and AVR-PikDAsp66Arg prevented interaction in SPR and yeast, and responses in planta. These results, in addition to AVR-PikDHis46Glu, provide convincing evidence that the crystal structure of Pikp-HMA/AVR-PikD is consistent with the complex formed in plant cells. Interestingly, AVR-PikDIle49Glu retained interaction in SPR (threefold reduction in affinity compared to AVR-PikD) and yeast and elicited a response by Pikp in planta. Close inspection of the Pikp-HMA/AVR-PikD interface reveals how a Glu could be accommodated at this position. Of note is that AVR-PikDIle49 is close to the N-terminus of the Pikp-HMA domain and a repositioning of Pikp-HMAGly186, for example in the context of the full-length protein, could create space for a Glu residue.\n\n### Additional naturally occurring AVR-Pik polymorphisms also perturb binding to Pikp-HMA\n\nAVR-PikA and AVR-PikC combine the AVR-PikDHis46Asn polymorphism with a Pro47Ala/Gly48Asp substitution and an Ala67Asp substitution respectively (Figure 1A). AVR-PikC did not show measureable binding to Pikp-HMA in vitro or in yeast, or elicit responses in planta. In the Pikp-HMA/AVR-PikD structure, the side chain of AVR-PikDAla67 lies adjacent to the Pikp-HMAAsp224/AVR-PikDArg64 salt-bridge. An Asp at position 67 would likely perturb the Pikp-HMA/AVR-PikD interaction through disruption of this salt-bridge. While reducing the affinity to a level where a Kd cannot be determined in our SPR assay, and not eliciting a response in N. benthamiana, AVR-PikDAla67Asp still interacted with Pikp-HMA in yeast and was recognised in rice when the protein was delivered by M. oryzae. It is possible that the weaker AVR-PikDAla67Asp/Pikp-HMA interaction may be sufficient for generating a response in rice containing Pikp, but not sufficient in the N. benthamiana assay used here.\n\nAVR-PikA shows 23-fold apparent weaker affinity to Pikp-HMA compared to AVR-PikD in vitro, no interaction with Pikp-HMA in yeast, and elicited no response in planta. Despite being adjacent to AVR-PikDHis46, in the Pikp-HMA/AVR-PikD complex the side chains of AVR-PikDPro47 and AVR-PikDGly48 do not contact the same Pikp-HMA monomer and Ala/Asp residues could be accommodated at these positions without disrupting the Pikp-HMA/AVR-Pik interface. Consistent with this, the AVR-PikDPro47Ala/Gly48Asp mutant showed only slightly reduced affinity for Pikp-HMA in vitro (2.7-fold), interacted with Pikp-HMA in yeast, and elicited responses in planta. This data suggests that AVR-PikDPro47Ala/Gly48Asp mutations may provide a minor additive benefit, but AVR-PikDHis46Asn is the dominant mutation contributing to the evasion of Pikp recognition. It is also plausible that these mutations contribute to the virulence activity of the effector in the context of an Asn at position 46, rather than quantitatively contributing to the evasion of Pik recognition.\n\n### Understanding Pik-HMA specificity for AVR-Pik\n\nAlmost all amino acid variation between Pik-1 alleles lies within the HMA domain (Figure 3\u2014figure supplement 4B). Mapping the variation in Pik-HMAs at the Pikp-HMA/AVR-PikD interface suggests a \u2018hot-spot\u2019 centred on recognition of AVR-Pik46. Pikp-1Glu230 (Pikp numbering), that directly co-ordinates AVR-PikDHis46, is a Val in both Pikm-1 and Pik*-1. Residue Pikp-1Val222, whose side-chain extends towards Pikp-1Glu230, is an Ala in Pikm-1 and Pik*-1. In the absence of specific binding data, none of these mutations in their own right, or when combined, would be predicted to preclude interaction with AVR-PikD (as has been observed previously [Kanzaki et al., 2012]), but would also not be predicted to explicitly enhance the binding of an Asn at position 46 (as found in AVR-PikE, AVR-PikA and AVR-PikC, which are all recognised by Pikm).\n\nThree other Pik variable residues map at or close to the Pikp-HMA/AVR-PikD interface. Pikp-1Asp217 is adjacent to the invariant Ser218 (which with Pikp-1Glu230 co-ordinates AVR-PikDHis46) and extends towards residue 48 of AVR-PikD. It is conceivable that a His residue at position 217, as found in Pikm-1 and Pik*-1, may interact with residues in this region to extend recognition of AVR-Pik alleles, in particular Asp48 as found in AVR-PikA. Pikp-1Lys228, a Glu in Pik*-1 and a Gln in Pikm-1, and Pikp-1Glu253, a Met in Pikm-1, form hydrogen bonds with AVR-PikDAsp66 and AVR-PikDLys79 respectively. Interestingly, position 228 is one of two residues that have been suggested as diagnostic markers for Pik breeding in rice (Costanzo and Jia, 2010). Despite the variation in these Pik residues, as Asp66 and Lys79 are invariant in AVR-Pik alleles, it is difficult to appreciate how they contribute to recognition specificity.\n\nTeasing apart these seemingly fine-tuned recognition specificities between Pik-HMA and AVR-Pik alleles, and how these are balanced against the virulence-associated activity of the effectors, awaits further study.\n\n### A model for activation of rice NLRs containing HMA domains\n\nRecognition of AVR-Pik by Pik, and AVR-Pia and AVR1-CO39 by RGA5/RGA4, is by direct binding to the HMA domains of Pik-1 and RGA5. The position of the HMA domain, between the CC and NB-ARC region of Pik-1 and after the LRR in RGA5, is one of the most striking differences between these functionally-related proteins. Interestingly, the integrated domain in the Arabidopsis NLR RRS1, a domain with sequence similarity to WRKY transcription factors, is also positioned after the LRR. Cognate effectors AvrRps4 and PopP2 directly interact with this WRKY domain (Cesari et al., 2014; Le Roux et al., 2015; Sarris et al., 2015). Together, these proteins reveal that functional integrated domains can occupy different positions in NLRs.\n\nHow does the binding of effectors to HMA domains trigger immunity-related signalling? The absence of obvious enzymatic activity in the effectors, and a lack of large conformation changes in Pikp-HMA in the AVR-PikD-bound and unbound states, supports the hypothesis that effector binding promotes domain re-arrangements in NLR complexes (Cesari et al., 2014). This could be by (1) direct competition for a shared binding surface on the HMA between the effectors and either an intra- or inter-molecular contact with another NLR domain, (2) the effectors may \u2018bridge\u2019 contacts between HMAs and other NLR domains to stabilise interactions, (3) effector binding disrupts or promotes interaction of NLRs with other, as yet unknown, molecules, (4) subtle changes within the HMAs, in the context of the full length proteins, promotes NLR domain rearrangements. Any of these scenarios could break existing and/or promote new interactions within NLR complexes. They could also promote presentation of new molecular surfaces that could interact with downstream components to initiate immunity-related signalling.\n\nDue to the different positions of the Pik-1 and RGA5 HMA domains, the conformational changes underlying transduction of direct effector binding to immunity-related signalling are likely to be different, but the intra- and/or inter-molecular complexes mediating output maybe conserved. In the future, transferring unconventional integrated domains to the different positions within and between NLRs will determine the importance of domain location, and whether these positions can accommodate novel integrated domains with the potential to deliver new-to-nature resistance capabilities.\n\n## Materials and methods\n\n### Gene cloning: heterologous protein production, Y2H, fungal transformation and in planta expression\n\n#### For protein production in insect cells and E. coli\n\nDNA encoding the Pikp-HMA domain (residues Gly186 to Ser258, codon optimized for expression in E. coli) was synthesized and supplied in the pOPINF vector (Berrow et al., 2007) by Genscript (Pistcataway, NJ, United States). For sub-cloning into pOPINS3C (Bird, 2011), the Pikp-HMA sequence was amplified from the pOPINF vector above using primers shown in Supplementary file 1, followed by In-Fusion cloning (Clontech, Mountain View, CA, United States) with Kpn1/HindIII cut pOPINS3C. The resulting construct supports expression of a 6xHis+SUMO tagged Pikp-HMA domain linked by a 3C protease cleavage site.\n\nDNA encoding AVR-Pik alleles AVR-PikD, E, A and C (residues Glu22 to Phe113, lacking the signal peptide), codon optimized for expression in E. coli, were synthesized and supplied in the pOPINF vector by Genscript. Each allele was sub-cloned into pOPINS3C using primers shown in Supplementary file 1, and In-Fusion cloning as described for Pikp-HMA above. Each of the four alleles were also cloned into pOPINE (Berrow et al., 2007) to facilitate expression of protein with a non-cleavable 6xHis tag on the C-terminus. To promote soluble protein expression, DNA encoding SUMO+AVR-Pik was amplified from pOPINS3C:AVR-Pik, using primers shown in Supplementary file 1, prior to insertion into pOPINE using In-Fusion cloning. A construct of AVR-PikD was also generated in pOPINA, using primers shown in Supplementary file 1, to enable production of protein without a tag and in a vector backbone compatible with co-transformation with other pOPIN vectors.\n\nDNA encoding mutants of AVR-PikD (His46Glu, Ile49Glu, Arg64Ala, Asp66Arg, Ala67Asp, Pro47Ala/Gly48Asp), codon optimized for expression in E. coli, were synthesized and supplied in pDONR221 vector by Genscript (USA). All the mutants were sub-cloned into pOPINS3C (to deliver protein with a cleavable N-terminal 6xHis+SUMO tag) and pOPINE (to deliver protein with a cleavable N-terminal SUMO tag and non-cleavable C-terminal 6xHis tag) as described above.\n\n#### For Y2H\n\nDNA encoding AVR-PikD, E, A and C (residues Glu22 to Phe113, lacking the signal peptide and optimised for E. coli expression), and the Pikp-HMA domain (residues Gly-186 to Ser-258), were supplied by Genscript in Gateway entry vector pDONR221. AVR-Pik alleles, and the Pikp-HMA domain, were sub-cloned into destination vectors pDEST32 and pDEST22 respectively using LR clonase (Life Technologies, United Kingdom). The AVR-PikD mutants were prepared by Genscript and supplied in the pDONR221 vector and transferred into pDEST32 as above.\n\n#### For M. oryzae transformation\n\nAll AVR-PikD mutants, with XbaI and EcoRI recognition sites added at the 5\u2032 and 3\u2032 ends, were produced and supplied by Genscript in the pUC57 vector. To generate each pCB1531:AVR-Pik(promoter)-AVR-PikD mutant (H46E, I49E, R64A, D66R, A67D, P47A/G48D), all pUC57:AVR-PikD mutants were digested with XbaI and EcoRI, and inserts were exchanged to the mCherry gene at the same sites of pCB:AVR-Pik(promoter)-AVR-Pik-mCherry (Sharma et al., 2013).\n\n#### For agroinfiltration assays in N. benthamiana\n\nAn AscI Phosphorylated Linker (NEB, Ipswich, MA, United States) was ligated to the SmaI site of pCambia1300 (Marker Gene Technologies, Inc, Eugene, OR, United States), generating pCambia1300:AscI. Three exon fragments of Pikp-1 were PCR amplified from rice cv. K60 genomic DNA with primers given in Supplementary file 1. PCR products of the exons 1 and 2 were mixed, and further PCR amplified with the primers IFPik1U2 and IFPikp1L0.6 using the mixed PCR products as template. The resulting PCR fragment and the Pikp-1 exon 3 fragment were mixed, and cloned into the AscI-cut pCambia1300:AscI by In-Fusion multiple fragment cloning (Clontech) to generate pCambia-Pikp-1. To assemble pCambia-C-3xFLAG, a SpeI recognition site plus 3xFLAG sequence with a stop codon (TGA) was introduced after the PstI recognition site of pCambia1300 by In-Fusion cloning. The Pikp-1 coding sequence (CDS) was amplified with primers IFagctPikp1U2 and IFSpeIPikp1L0 (Supplementary file 1), using pCambia-Pikp-1 as a template, and cloned into SacI/SpeI cut pCambia-C-3xFLAG to generate pCambia-Pikp1-3xFLAG by In-Fusion cloning.\n\nA pCambia-C-3xMyc vector was generated using essentially the same method as described above for pCambia-C-3xFLAG. The Pikp-2 CDS was amplified from cDNA (derived from RNA of a rice cv. K60 leaf, single-stranded cDNA was synthesized using oligo(dT) primer and ReverTra Ace [Toyobo, Japan]) with the primers SacIPikp2U2 and SpeIPikp2L0 (Supplementary file 1). The PCR product was digested with SacI and SpeI, and introduced into pCambia-C-3xMyc, generating pCambia-Pikp2-3xMyc.\n\nA construct encoding AVR-PikDns-HS (AVR-PikD without the signal sequence and with a C-terminal HA-StrepII epitope tag) was generated by a three-step PCR approach using primers BP31nsU2 and P31YPYDVL2, BP31nsU2 and AHAL2 then BP31nsU2 and BSAPDYAL1 (Supplementary file 1) with pCB1004-pex31-D as the original template (Yoshida et al., 2009). The final PCR product was digested with BamHI and cloned into pCambia1300 in sense direction following the CaMV35S promoter. Each AVR-Pik allele was cloned in a similar fashion (to generate AVR-PikEns-HS, -Ans-HS or\u2013Cns-HS) but with the original template being pCB1531:AVR-Pik(promoter):AVR-Pik-E, -A or\u2013C (Yoshida et al., 2009), final PCR primers BP31nsU2 and XSAPDYAL1 (Supplementary file 1) and final cloning via BamH1/Xba1. This same PCR approach was used to generate CaMV35S promoter-driven tagged constructs for each of the AVR-PikD mutants in pCambia1300, but with the appropriate Genscript-supplied pUC57 vector used as the template.\n\nAll final constructs used in this study were verified by DNA sequencing.\n\n### Y2H analyses\n\nThe Proquest two-hybrid system (Life Technologies, United Kingdom) was used to detect protein\u2013protein interactions, according to manufacturer instructions, with only minor modifications. Briefly, DNA encoding Pikp-HMA in pDEST22 was co-transformed with either the individual AVR-Pik alleles or the AVR-PikD mutants in pDEST32, into chemically competent Saccharomyces cerevisiae MaV203 cells. Single colonies grown on selection plates were resuspended in 100 \u03bcl H2O and 2 \u03bcl were spotted on SC-Leu-Trp (as growth control) and SC-Leu-Trp-His+10 mM 3AT (His auxotrophy assay). Photographs of colonies on SC-Leu-Trp-His+10 mM 3AT plates were taken after incubation for 24 hr at 28\u00b0C and 16 hr at room temperature.\n\nFor the X-gal assay, 2 \u03bcl of resuspended cells were spotted on a Hybond N membrane (GE Healthcare) on a YAPD plate. After 24 hr the membrane was removed and place on top of 2 layers of 3 MM paper (GE Healthcare) soaked with 10 ml buffer Z supplemented with 15 mg X-gal in 100 \u03bcl dimethylformamide and 60 \u03bcl 2-mercaptoethanol. After incubation for 24 hr at 37\u00b0C the membrane was air dried and a picture taken. All pictures are representative of at least three experimental repeats, with consistent results.\n\nTo confirm protein expression in yeast, total protein extracts from transformed colonies were produced according to the urea/SDS method as described in the Clontech Yeast Protocols Handbook. Aliquots of 4 \u03bcl were separated by SDS-PAGE and transferred to PVDF membrane. Due to the high level of expression of the GAL-4-DB domain from the empty pDEST32, a 10 \u03bcl of a dilution 1:100 of the original extract was loaded on SDS-PAGE gel for this sample. Membranes were probed with anti-GAL4-DBD HRP-conjugated antibody (Santa Cruz Biotechnology, Dallas, TX, United States) and developed with a mix of 500 \u03bcl of SuperSignal West Pico Chemiluminescent Substrate and 800 \u03bcl of SuperSignal West Femto Maximum Sensitivity Substrate (Life Technologies) following standard procedures.\n\n### Heterologous protein expression and purification, intact mass spectrometry\n\n#### Pikp-HMA\n\nFor crystallisation, pOPINS3C:Pik-HMA was expressed in 1 l cultures of sf9 cells, infected with 15 ml baculovirus. The cells were incubated at 26\u00b0C, with continuous shaking at 250 rpm, for 48 hr then harvested by centrifugation. Cells were resuspended in 50 mM Tris HCl pH 7.5, 500 mM NaCl, 30 mM imidazole and 0.2% Tween 20 (buffer A) supplemented with EDTA free protease inhibitor tablets and DNAse 1. The cells were lysed by cell disruptor at 30 kpsi and cell debris was removed by centrifugation. The clarified lysate was applied to a Ni2+-NTA column connected to an AKTA Xpress purification system. 6xHis+SUMO-Pikp-HMA was step-eluted with elution buffer (buffer A containing 500 mM imidazole) and directly injected onto a Superdex 75 16/60 gel filtration column pre-equilibrated in 20 mM Tris pH 7.5, 200 mM NaCl and 1 mM TCEP (buffer B). Fractions containing 6xHis+SUMO-Pikp-HMA (as assesses by SDS-PAGE) were pooled and concentrated to 2\u20133 mg/ml. The 6xHis-SUMO tag was cleaved by addition of 3C protease (10 \u00b5g/mg fusion protein) with overnight incubation at 4\u00b0C. Cleaved Pikp-HMA was purified from the digest using a Ni2+-NTA column, collecting the eluate, followed by dialysis in buffer B and was then concentrated as appropriate.\n\nFor in vitro binding studies, pOPINS3C:Pikp-HMA was produced in E. coli SHuffle cells (Lobstein et al., 2012). Cell culture was grown in auto induction media (Studier, 2005) at 30\u00b0C for 24 hr and cells were harvested by centrifugation. Pelleted cells were resuspended in 50 mM Tris HCl pH 8, 500 mM NaCl, 50 mM Glycine, 5% (vol/vol) glycerol and 20 mM imidazole (buffer C) supplemented with EDTA free protease inhibitor tablets and lysed by sonication. The clarified cell lysate was applied to a Ni2+-NTA column connected to an AKTA Xpress system. 6xHis+SUMO-Pikp-HMA was step-eluted with elution buffer (buffer C containing 500 mM imidazole) and directly injected onto a Superdex 75 26/600 gel filtration column pre-equilibrated in buffer D (20 mM HEPES pH 7.5 and 150 mM NaCl). The fractions containing 6xHis+SUMO-Pikp-HMA were pooled and concentrated to 2\u20133 mg/ml. The 6xHis+SUMO tag was cleaved by addition of 3C protease (10 \u00b5g/mg fusion protein) and incubation overnight at 4\u00b0C. Cleaved Pikp-HMA was further purified using a Ni2+-NTA column (collecting the eluate) followed by gel filtration as above. The concentration of protein was judged by absorbance at 280 nm (using a calculated molar extinction coefficient of Pikp-HMA, 1400 M\u22121cm\u22121).\n\n#### AVR-Pik\n\nFor production of AVR-Pik alleles and mutants, relevant pOPIN constructs were introduced into SHuffle cells. Transformed SHuffle cells were grown in auto induction media, processed, and the proteins purified to homogeneity as described for Pikp-HMA above. The concentration of protein was judged by absorbance at 280 nm (using a calculated molar extinction coefficient for the relevant construct).\n\n#### Pikp-HMA/AVR-Pik complex\n\nFor crystallisation, Pikp-HMA and AVR-PikD were co-expressed in SHuffle cells following co-transformation with pOPINS3C:Pikp-HMA and pOPINA:AVR-PikD. Growth in the presence of carbenicillin and kanamycin maintained selection for both plasmids. Cells were grown in auto induction media, harvested and the protein sample was purified as described for Pikp-HMA. The concentration of protein was judged by absorbance at 280 nm (using a calculated molar extinction coefficient assuming a 2:1 complex of Pikp-HMA/AVR-PikD, 26,286 M\u22121cm\u22121).\n\n#### Intact mass spectrometry analyses\n\nProtein intact masses were determined by LC-MS on a Synapt G2 mass spectrometer coupled to an Acquity UPLC system (Waters, United Kingdom). 50\u2013100 pmol of protein were injected onto an Aeris WIDEPORE 3.6 \u03bc C4 column (Phenomenex, United Kingdom) and eluted with a 10\u201390% acetonitrile gradient over 13 min (0.4 ml/min). The spectrometer was controlled by the Masslynx 4.1 software (Waters) and operated in positive MS-TOF and resolution mode with capillary voltage of 2 kV, cone voltage, 40 V. Leu-enkephalin peptide (2 ng/ml, Waters) was infused at 10 \u00b5l/min as a lock mass and measured every 30 s. Spectra were generated in Masslynx 4.1 by combining scans and deconvoluted using the MaxEnt1 tool (Waters).\n\n### Protein:protein interaction studies in solution\n\n#### Analytical gel filtration\n\nAnalytical size exclusion chromatography was performed at 4\u00b0C using a Superdex 75 10/300 gel filtration column (GE Healthcare) pre-equilibrated in 50 mM HEPES pH 7.5 and 150 mM NaCl. Samples were centrifuged prior to loading. A 100 \u00b5l of the sample was injected at a flow rate of 0.8 ml/min and 0.5 ml fractions were collected for analysis by SDS-PAGE gels. To study complex formation, proteins were mixed and incubated on ice for 60 min prior to loading.\n\n#### Surface plasmon resonance\n\nSPR experiments were performed at 25\u00b0C using a Biacore T200 system (GE Healthcare). For interaction studies proteins were prepared in buffer E (50 mM HEPES pH 7.5, 150 mM NaCl and 0.1% Tween 20) and all the measurements were recorded using buffer E at a flow rate of 30 \u00b5l/min. All experiments were performed using an NTA sensor chip (GE Healthcare). A multi-cycle kinetics approach was used to study interaction between Pikp-HMA and four alleles of effector protein. For each cycle the chip was activated by injecting 30 \u00b5l of 0.5 mM NiCl2 over flow cell 2 and His-tagged protein (AVR-Pik) was immobilised on flow cell 2 until a response level of 250 \u00b1 10 was acheived. Different concentrations of Pikp-HMA (ranging from 1 to 1200 nM) and buffer only controls were injected over flow cells 1 and 2 (flow cell 1 was used as reference) for 120 s and dissociation was recorded for another 300 s. Binding responses were recorded at each concentration of Pikp-HMA just before the end of injection and these were then fitted to a steady state affinity model assuming 1:1 binding. The inclusion of buffer-only controls enabled the use of double referencing whereby for each analyte measurement, in addition to subtracting the response in FC 1 from the response in FC 2, a further buffer-only subtraction was made to correct for bulk refractive index changes or machine effects (Myszka, 1999). Interaction studies of Pikp-HMA and AVR-PikD mutants were performed using a single cycle kinetics method. The chip was activated by injecting 30 \u00b5l of 0.5 mM NiCl2 over FC 2 and was used to immobilize His-tagged protein (AVR-PikD mutants) on flow cell 2 to a response level of 250 \u00b1 10. Increasing concentrations of Pikp-HMA (1, 10, 20, 60 and 120 nM) were injected over flow cell 1 and 2 for 120 s. After the final injection the dissociation was recorded for 300 s. Two startup cycles were run where the chip was activated and effector proteins immobilised in the same manner, but buffer only was injected. This was subtracted to account for any dissociation of AVR-PikD mutants from the sensor chip. For both types of kinetic experiments the sensor chip was regenerated by injecting 30 \u00b5l of 0.35M EDTA. All the data were analyzed using Biacore T200 BiaEvaluation software (GE Healthcare). The raw data was exported and plotted using Microsoft Excel. Each experiment was done in duplicate, with similar results.\n\n### Crystallisation, data collection, structure determination and refinement\n\n#### Pikp-HMA\n\nFor crystallization, Pikp-HMA was concentrated to 6 mg/ml in 20 mM Tris, pH 7.5, 200 mM NaCl and 1 mM TCEP. Crystallization experiments were performed using an Oryx nano robot (Douglas Instruments, United Kingdom) and sitting drop vapor diffusion in 96 well plates. Pikp-HMA produced crystals after 24\u201336 hr in 0.1 M MIB buffer, pH 5.0 and 25% PEG 1500 (PACT screen, Molecular Dimensions, United Kingdom). For X-ray data collection, crystals were transferred to the precipitant solution with the addition of 20% ethylene glycol (as a cryoprotectant), mounted in a litho loop and flash cooled in liquid nitrogen. Pikp1-HMA also produced crystals in another condition of the PACT (0.2 M potassium thiocyanate and 20% PEG 3350). These crystals were soaked for 45 s in well solution supplemented with 300 mM potassium iodide and were cryoprotected as above prior to freezing in liquid nitrogen.\n\nNative and SAD (single wavelength anaomalous diffraction) X-ray data sets were collected from Pikp-HMA crystals at the Diamond Light Source, United Kingdom beamline I04. The data were processed using the Xia2 pipeline (Winter, 2010). The structure was solved using the SAD approach with the data collected from the crystal soaked in iodide, and the AutoSol wizard as implemented in PHENIX (Adams et al., 2010), which also built an initial model. The final structure was obtained through iterative cycles of manual rebuilding and refinement using COOT (Emsley et al., 2010) and REFMAC5, as implemented in CCP4 (Winn et al., 2011), using the Native data. Structure validation used the tools provided in COOT and MOLPROBITY (Chen et al., 2010).\n\n#### Pikp-HMA/AVR-PikD complex\n\nCrystals of Pikp-HMA/AVR-PikD were grown using purified complex concentrated to 10 mg/ml and 0.2 M ammonium sulphate, 0.1 M CHES (N-Cyclohexyl-2-aminoethanesulfonic acid) pH 9 and 20% PEG3350. Crystals were cryoprotected with mother liquor containing 20% ethylene glycol, then mounted in a Litho loop and flash cooled in liquid nitrogen. X-ray diffraction data were collected at the Diamond Light Source, beamline I04.\n\nFor structure solution, the model of Pikp-HMA was positioned in the asymmetric unit of the Pikp-HMA/AVR-PikD crystal by molecular replacement using Phaser (McCoy et al., 2007). The phased data was density modified using PARROT (Cowtan, 2010). The resulting data were used in BUCCANEER (Cowtan, 2006), which was able to build approximately half of the AVR-PikD structure, in addition to most of the Pikp-HMA dimer, with just the protein sequences supplied. From this point the final structure was completed through iterative rounds of manual rebuilding, refinement and validation as described previously.\n\n### Pathogenicity assays\n\nM. oryzae strains Sasa2, Sasa2 with pex31-D fragment (AVR-PikD) or with AVR-PikE used in this study are stored at the Iwate Biotechnology Research Center (Yoshida et al., 2009; Kanzaki et al., 2012). To obtain protoplasts, hyphae of each Sasa2 strain were incubated for 3 days in 200 ml of YG medium (0.5% yeast extract and 2% glucose, wt/vol). Protoplast preparation and transformation were performed as described previously (Takano et al., 2001). Bialaphos-resistant transformants were selected on plates with 250 \u00b5g/ml of bialaphos (Wako Pure Chemicals).\n\nRice leaf blade spot inoculations were performed with M. oryzae strains (Kanzaki et al., 2002). Disease lesions were photographed 14 days post inoculation. Rice seedlings (cvs. Nipponbare and K60) at the fourth leaf stage were used for inoculation. The assays were repeated at least 3 times with similar results.\n\nFor RT-PCR, total RNA was extracted from disease lesions of rice cv. Nipponbare leaves using Purelink Plant RNA Reagent, which was subsequently treated with TURBO DNase (Life Technologies). From 2 \u00b5g of the DNase-treated RNA of each sample, single-strand cDNA was synthesized using oligo(dT) primer and ReverTra Ace (Toyobo). To confirm the gene expression of AVR-Pik and the M. oryzae actin gene (Mo-Actin), these genes were amplified by PCR with primers given in (Supplementary file 1).\n\n### In planta expression to monitor cell death\n\nFor agroinfiltration in N. benthamiana, A. tumefaciens strain GV3101 was transformed with the relevant binary constructs. Leaves of 4 weeks old N. benthamiana plants were agroinfiltrated using a needleless syringe. The total OD600 of infiltrated cultures was 1.0 with ratios used 1.5:1.5:6:1 for Pikp-1:Pikp-2:effector:P19. When one or more constructs were not present, total OD600 was maintained with appropriate amount of empty vector. Photos showing cell death were taken 4 dpi from the adaxial side of the leaves for white light images and abaxial side of the leaves for UV images. Pictures are representative of four independent experiments, with internal repeats. Data for the box plots presented in Figure 6\u2014figure supplement 4 and Figure 7\u2014figure supplement 2 are from three independent experiments with internal repeats. The HR index was scored according to the scale presented in Figure 6\u2014figure supplement 3.\n\nFor extraction of total protein from samples, leaf disks were taken at 2 dpi and homogenised in extraction buffer (250 mM Tris\u2013HCl, pH 7.5, 2.5 mM EDTA, 0.1% ascorbic acid, 1 mM PMSF, 0.1% [vol/vol] Protease Inhibitor Cocktail for plant cell and tissue extracts [SIGMA, St. Louis, MO, United States]). Supernatants were centrifuged and separated on 10\u201320% precast e-PAGEL gels prior to transfer onto Immobilon Transfer Membranes (Millipore, Germany). The blots were blocked in 2% ECL Advanse Blocking Agent (GE Healthcare) in TTBS (10 mM Tris\u2013HCl, pH 7.5, 100 mM NaCl, 0.1% Tween 20 [vol/vol]) for 1 hr at room temperature with gentle agitation. For immunodetection, blots were probed with anti-HA (3F10)-HRP (Roche, Switzerland), anti-FLAG M2-HRP (SIGMA) or anti-Myc-tag (HRP-DirecT) (MBL, Woburn, MA, United States) in a 1:10,000 dilution in TTBS for 2 hr. After washing the membrane for 3 \u00d7 10 min, the reactions were detected using ChemiLumi One Super or Ultra (Nacalai Tesque, Japan) and a Luminescent Image Analyzer LAS-4000 (Fujifilm, Japan).\n\n### Accession codes\n\nProtein structures, and the data used to derive these, have been deposited at the PDB with accession numbers 5a6p (Pikp-HMA), 5a6w (Pikp-HMA/AVR-PikD complex).\n",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "0ee49fa4-44a4-4a11-a971-29cef567fb0e",
+      "submission_id": "62cb7d76-bcf8-4f26-b718-5dca93449d87",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thorsten N\u00fcrnberger, University of T\u00fcbingen , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08709.031](https://doi.org/10.7554/eLife.08709.031)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cStructural basis of pathogen recognition by a sensor domain in a plant NLR immune receptor\u201d for peer review at eLife. Your submission has been favorably evaluated by Detlef Weigel (Senior Editor) and three reviewers, one of whom, Thorsten N\u00fcrnberger, is a member of our Board of Reviewing Editors. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll reviewers agree that you provide an excellent and very thorough paper that adds significantly to our understanding of how plant NLR receptors recognize pathogen effector proteins in the first step of their activation. NLR activation, still poorly understood at the mechanistic level, leads to successful plant immune response and thus halts pathogen growth. This topic is timely, important and therefore suitable for the eLife readership. In particular, the following findings make this work a valuable contribution to the field of plant immunobiology:\n\na) The demonstration of physical interaction of a fungal effector with an NLR receptor subunit.\n\nb) The quantitative analysis of this interaction, which provides evidence that affinities of effectors to NLR immune receptors are in the same range as ligand affinities of AvrPto to Pto and microbial patterns to their cognate plant PRRs.\n\nc) Comparative mutational analyses that allow to pinpoint high-affinity interactions to individual amino acid residues and thus to deduce a molecular mechanism for immune receptor activation.\n\nThere are, however, a number of concerns you might want to address in a revised submission:\n\n1) One concern deals with the stoichiometry of the receptor\u2013ligand complex that was determined as 2:1. You state however that it is mostly a 1:1 ratio between the NLR and the effector that is required for biological function. Is there any steric limitation that doesn't allow a second AVR-PikD to interact with the other HMA monomer thereby yielding a heterotetrameric \u03b12\u00df2 complex?\n\n2) Another concern is that the authors did not make sufficiently clear what the role of Pikp-2 in AvrPikD-mediated immune activation is and whether or not they could exclude heteromeric complex formation with Pikp-1 in an effector-mediated manner. That could be tested by using recombinant Pikp1 and Pikp2 in the presence and absence of effector in vitro.\n\n3) As discussed in the manuscript, N46 in AVR-PikE is a polar residue and in principle can form hydrogen bonds with S218 and E230 of HMA. Please provide an explanation for why AVR-PikE has a much weaker affinity with HMA than AVR-PikD.\n\n4) The 'integrated sensor' vs 'integrated decoy' domain nomenclature does no one outside the field any good in trying to understand how these systems works. To keep using two opposed terms, decoy and sensor, is problematic, especially since the NLR field already has 'sensor' and 'helper' NLRs and that this binary is specifically mapped onto NLR pairs, such as those described here. In this case, the NLR with the newly discovered 'integrated' domain is on the 'sensor NLR', which the paired NLR uses to activate disease resistance. It seems by the authors' terminology that the 'sensor NLR' is a 'sensor integrated domain-containing sensor NLR'. Here, clarification is needed.\n\nWhile the arguments that attended the start of this discussion among the experts in this particular field are appreciated, it needs to be demonstrated that, in this particular case, the HMA fusion domain is not a decoy. In fact, as noted, the HMA fusion domain lacks metal binding capabilities required for intrinsic HMA function and is thus most likely a decoy domain.\n",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3028699c-6738-4062-a13c-6d7d82b6cc07",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C1",
+      "claim": "Rice blast disease can cause the loss of enough rice to feed 212\u2013742 million people annually.",
+      "claim_type": "EXPLICIT",
+      "source": "This disease can cause the loss of enough rice to feed 212\u2013742 million people annually (Fisher et al., 2012), and result in up to 100% yield loss in infected areas (Dean et al., 2012; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fisher et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "a4e3dc94-7a59-408c-889b-504e66e88ca4",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C2",
+      "claim": "Rice blast disease can result in up to 100% yield loss in infected areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This disease can cause the loss of enough rice to feed 212\u2013742 million people annually (Fisher et al., 2012), and result in up to 100% yield loss in infected areas (Dean et al., 2012; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dean et al., 2012 and Liu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "16e230d3-5f4c-46df-bdac-1c424b4b3b5e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C3",
+      "claim": "Rice is a staple food crop for greater than half the world's population.",
+      "claim_type": "EXPLICIT",
+      "source": "The sustainability of rice production is critical, it is a staple food crop for greater than half the world's population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about rice consumption globally.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "9de35e31-97ad-4ab5-97a5-ab10e2cdfad9",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C4",
+      "claim": "NLRs are a conserved component of plants' innate immune systems.",
+      "claim_type": "EXPLICIT",
+      "source": "NLRs are a conserved component of plants' innate immune systems and survey the host environment for perturbations caused by invading pathogens (Dangl and Jones, 2001; Chisholm et al., 2006; Jones and Dangl, 2006; van der Hoorn and Kamoun, 2008; Dodds and Rathjen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "e01f751b-8187-4f78-942c-64e418cf1715",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C5",
+      "claim": "Most NLRs respond to the presence or activities of translocated pathogen effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Most NLRs respond to the presence or activities of translocated pathogen effectors, proteins delivered by adapted pathogens to affect the physiology of the host to benefit the parasite (Dodds and Rathjen, 2010; Win et al., 2012; Wirthmueller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dodds and Rathjen, 2010; Win et al., 2012; Wirthmueller et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "aab2f531-1f9d-4dcf-b185-5e05195e3703",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C6",
+      "claim": "The recognition event often results in a robust immune response and localised cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The recognition event often results in a robust immune response and localised cell death, which limits disease caused by biotrophic pathogens on their hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about NLR-mediated immune responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "95864edf-ee8e-448c-bd95-b5a86db9c467",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C7",
+      "claim": "Most NLRs comprise a multi-domain architecture with central nucleotide-binding (NB-ARC) and C-terminal LRR regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Most NLRs comprise a multi-domain architecture with central nucleotide-binding (NB-ARC) and C-terminal LRR regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about NLR structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "bf7e9030-9f5f-43ae-b1ca-ba2c998cad36",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C8",
+      "claim": "NLRs usually contain N-terminal coiled-coil (CC) or TOLL/interleukin-1 receptor (TIR) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "They also usually contain N-terminal coiled-coil (CC) or TOLL/interleukin-1 receptor (TIR) domains (Takken and Goverse, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Takken and Goverse, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "5244aab8-5987-4936-8c53-2d2ddf5d0230",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C9",
+      "claim": "In at least some cases, NLRs function in pairs to deliver disease resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In at least some cases, NLRs function in pairs to deliver disease resistance, and these pairs can be tightly linked genetically (Eitas and Dangl, 2010; Cesari et al., 2014; Le Roux et al., 2015; Sarris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eitas and Dangl, 2010; Cesari et al., 2014; Le Roux et al., 2015; Sarris et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "0467980c-43b5-41c2-a34e-97810a120262",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C10",
+      "claim": "Most NLR pairs studied to date use one of the NLRs to detect the presence of specific effectors by direct binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most NLR pairs studied to date use one of the NLRs to detect the presence of specific effectors by direct binding (Kanzaki et al., 2012; Cesari et al., 2013; Williams et al., 2014; Zhai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kanzaki et al., 2012; Cesari et al., 2013; Williams et al., 2014; Zhai et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "16299e0e-3252-4269-b829-469a9be12afa",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C11",
+      "claim": "Integrated domains in NLRs show evolutionary relationships to putative virulence targets.",
+      "claim_type": "EXPLICIT",
+      "source": "One mechanism by which this can be achieved is via unconventional integrated domains in the NLRs (known as integrated decoy or sensor domains) that show evolutionary relationships to putative virulence targets (Cesari et al., 2014; Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cesari et al., 2014 and Wu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "9219e7df-0bec-4e2e-86d5-8387cadc56e4",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C12",
+      "claim": "Approximately 100 NLRs in rice have been described to confer resistance to strains of M. oryzae.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, \u223c100 NLRs in rice have been described to confer resistance to strains of M. oryzae, and 23 of these have been cloned (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "579ff7e4-7102-4282-b939-bcb3c2728e17",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C13",
+      "claim": "23 rice NLRs that confer resistance to M. oryzae have been cloned.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, \u223c100 NLRs in rice have been described to confer resistance to strains of M. oryzae, and 23 of these have been cloned (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "a0b64828-5c97-476e-8759-923f2700f909",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C14",
+      "claim": "Six M. oryzae effectors recognized by rice NLRs have been cloned to date: AVR-Pia, AVR-Pita, AVR-Pik, AVR-Pii, AVR-Piz-t and AVR1-CO39.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of the pathogen effectors (also known as AVRs [avirulence proteins]) that are recognised by these NLRs has lagged behind and only six have been cloned to date, AVR-Pia (Yoshida et al., 2009), AVR-Pita (Orbach et al., 2000), AVR-Pik (Yoshida et al., 2009), AVR-Pii (Yoshida et al., 2009), AVR-Piz-t (Li et al., 2009) and AVR1-CO39 (Ribot et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to the respective papers for each effector.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "43728088-90f2-459e-8d9e-e3eb93ccd9fe",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C15",
+      "claim": "AVR-Pia and AVR1-CO39 are recognised by the RGA4/RGA5 NLR pair.",
+      "claim_type": "EXPLICIT",
+      "source": "AVR-Pia and AVR1-CO39 are recognised by the RGA4/RGA5 NLR pair (Okuyama et al., 2011; Cesari et al., 2013) through direct binding to a Heavy-Metal Associated domain (HMA, also known as RATX1) integrated into RGA5 after the LRR (Cesari et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Okuyama et al., 2011 and Cesari et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "c056a71c-e48c-4151-bd93-2c0395949dc1",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C16",
+      "claim": "AVR-Pia and AVR1-CO39 bind directly to a Heavy-Metal Associated domain (HMA) integrated into RGA5 after the LRR.",
+      "claim_type": "EXPLICIT",
+      "source": "AVR-Pia and AVR1-CO39 are recognised by the RGA4/RGA5 NLR pair (Okuyama et al., 2011; Cesari et al., 2013) through direct binding to a Heavy-Metal Associated domain (HMA, also known as RATX1) integrated into RGA5 after the LRR (Cesari et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cesari et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "a7071924-4954-444e-a4cc-73e2ee43c331",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C17",
+      "claim": "RGA4/RGA5 physically interact to prevent cell death mediated by RGA4 in the absence of AVR-Pia.",
+      "claim_type": "EXPLICIT",
+      "source": "RGA4/RGA5 physically interact to prevent cell death mediated by RGA4 in the absence of AVR-Pia; the presence of the effector relieves this suppression (Cesari et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cesari et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "136ac4d3-87f4-46b7-8dda-159c7d1fb1b7",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C18",
+      "claim": "The presence of AVR-Pia relieves the suppression of RGA4-mediated cell death by RGA5.",
+      "claim_type": "EXPLICIT",
+      "source": "RGA4/RGA5 physically interact to prevent cell death mediated by RGA4 in the absence of AVR-Pia; the presence of the effector relieves this suppression (Cesari et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cesari et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "2e9c04db-c72a-4843-a8c1-c69a6d81ac73",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C19",
+      "claim": "The NLR pair Pik-1/Pik-2 recognises AVR-Pik.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the NLR pair Pik-1/Pik-2, which recognises AVR-Pik (Figure 1) (Ashikawa et al., 2008; Yoshida et al., 2009), also binds the effector via an HMA domain but this domain is integrated between the CC and NB-ARC regions of Pik-1 (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ashikawa et al., 2008 and Yoshida et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "2df5b81a-9637-4aab-9a12-cfe2defaa100",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C20",
+      "claim": "Pik-1/Pik-2 binds AVR-Pik via an HMA domain integrated between the CC and NB-ARC regions of Pik-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the NLR pair Pik-1/Pik-2, which recognises AVR-Pik (Figure 1) (Ashikawa et al., 2008; Yoshida et al., 2009), also binds the effector via an HMA domain but this domain is integrated between the CC and NB-ARC regions of Pik-1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and Figure 1B showing the domain architecture.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "9bef8d37-a3af-42b4-836b-2c45893fdad1",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C21",
+      "claim": "The integrated HMA domains of RGA5 and Pik-1 appear to have evolved from a family of rice proteins that only contain the HMA domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The integrated HMA domains of RGA5 and Pik-1 appear to have evolved from a family of rice proteins that only contain the HMA domain (Cesari et al., 2013, 2014; Wu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cesari et al., 2013, 2014 and Wu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "b8c1af99-13b8-4101-a994-b473bcb3fb6f",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C22",
+      "claim": "The rice protein Pi21 contains an HMA domain that is not part of an NLR protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the rice protein Pi21, a disease susceptibility factor, contains an HMA domain that is not part of an NLR protein (Fukuoka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fukuoka et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "b9f8241b-7a29-40ea-823e-40ebd4a1c5c8",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C23",
+      "claim": "Both AVR-Pik and the HMA region of Pik-1 exhibit nucleotide polymorphisms between pathogen isolates and rice cultivars that result in changes at the amino acid level.",
+      "claim_type": "EXPLICIT",
+      "source": "Both AVR-Pik (Figure 1A) and the HMA region of Pik-1 exhibit nucleotide polymorphisms between pathogen isolates and rice cultivars that result in changes at the amino acid level (Yoshida et al., 2009; Kanzaki et al., 2012; Wu et al., 2014; Zhai et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations and Figure 1A showing polymorphisms.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "42b9ff7d-035e-44b7-8625-a43a1324649e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C24",
+      "claim": "The interaction of AVR-Pik allele AVR-PikD with the Pik-1 NLR Pikp-1 is thought to be the oldest in co-evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of AVR-Pik allele AVR-PikD with the Pik-1 NLR Pikp-1 is thought to be the oldest in co-evolutionary time (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kanzaki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "06f6573b-3197-47a4-9f60-c8aa865ee735",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C25",
+      "claim": "Cultivars of rice containing the Pikp allele are resistant to M. oryzae isolates expressing AVR-PikD.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultivars of rice containing the Pikp allele are resistant to M. oryzae isolates expressing AVR-PikD, but are susceptible to pathogen isolates expressing other AVR-Pik alleles (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kanzaki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "63038779-22c9-4561-a857-b052e26e02b9",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C26",
+      "claim": "Cultivars of rice containing the Pikp allele are susceptible to pathogen isolates expressing AVR-Pik alleles other than AVR-PikD.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultivars of rice containing the Pikp allele are resistant to M. oryzae isolates expressing AVR-PikD, but are susceptible to pathogen isolates expressing other AVR-Pik alleles (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kanzaki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "f35b9b99-66c9-4df2-ba33-3065c6d4a80b",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C27",
+      "claim": "The only structure known for a M. oryzae effector is that of AVR-Piz-t.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the only structure known for a M. oryzae effector is that of AVR-Piz-t (Zhang et al., 2013), which adopts a six-stranded \u03b2-sandwich structure and contains a single disulphide bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "8a0420eb-7951-405c-8420-af1c4dc7851c",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C28",
+      "claim": "AVR-Piz-t adopts a six-stranded \u03b2-sandwich structure and contains a single disulphide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the only structure known for a M. oryzae effector is that of AVR-Piz-t (Zhang et al., 2013), which adopts a six-stranded \u03b2-sandwich structure and contains a single disulphide bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "d85e252e-0910-4274-aee5-4a7271c6c5be",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C29",
+      "claim": "There is no available structural information on domains from rice NLRs prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is no available structural information on domains from rice NLRs, and no structural data from any system showing how plant pathogen effectors are directly recognised at the molecular level by an NLR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "ae95a28f-4c0c-4504-8dfd-4859da74e9ae",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C30",
+      "claim": "There is no structural data from any system showing how plant pathogen effectors are directly recognised at the molecular level by an NLR prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is no available structural information on domains from rice NLRs, and no structural data from any system showing how plant pathogen effectors are directly recognised at the molecular level by an NLR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "4711b76c-dfec-45d4-a4e8-d046308d1cc1",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C31",
+      "claim": "The Pikp-HMA domain alone selectively interacts with the AVR-Pik allele AVR-PikD in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the Pikp-HMA domain alone selectively interacts with the AVR-Pik allele AVR-PikD in yeast (Figure 2A, Figure 2\u2014figure supplement 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "e2adb6bb-cc52-465e-af9f-84138b7e88b5",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C32",
+      "claim": "Weak interaction was observed between Pikp-HMA and AVR-PikE in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak interaction was also observed with AVR-PikE (as evidenced by limited growth on the selective\u2013LTH plate and some blue colouration in the X-gal assay), but not AVR-PikA or AVR-PikC, which is consistent with previous experiments (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and is consistent with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "ff538288-0776-4189-be08-49a1f25759cf",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C33",
+      "claim": "No interaction was observed between Pikp-HMA and AVR-PikA or AVR-PikC in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak interaction was also observed with AVR-PikE (as evidenced by limited growth on the selective\u2013LTH plate and some blue colouration in the X-gal assay), but not AVR-PikA or AVR-PikC, which is consistent with previous experiments (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and is consistent with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "c99206ae-d6b4-45d2-bc35-150a339ca62b",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C34",
+      "claim": "AVR-PikD and Pikp-HMA form a stable complex in vitro that can be purified by analytical gel filtration.",
+      "claim_type": "EXPLICIT",
+      "source": "Following expression, purification and verification of the proteins by intact mass spectrometry ('Materials and methods', Figure 2\u2014figure supplement 2, Table 2), we showed that AVR-PikD and Pikp-HMA form a stable complex in vitro that can be purified by analytical gel filtration (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "ebc1b64f-209f-4820-8f3d-c38a3d6c9201",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C35",
+      "claim": "Pikp-HMA can form a complex with AVR-PikE and AVR-PikA, but not AVR-PikC, as shown by analytical gel filtration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this qualitative assay, we also found that Pikp-HMA can form a complex with AVR-PikE and AVR-PikA, but not AVR-PikC (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "bd9c2830-ec8e-45a0-b9de-49e1260c845d",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C36",
+      "claim": "Pikp-HMA bound to immobilised AVR-PikD with a Kd of 31 \u00b1 2 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a multi-cycle kinetics approach, we found that Pikp-HMA bound to immobilised AVR-PikD with a Kd of 31 \u00b1 2 nM (Figure 2C, Figure 2\u2014figure supplement 4A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SPR experimental data shown in Figure 2C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "21fe9120-6c2b-4e53-9f03-20d1f67da603",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C37",
+      "claim": "Pikp-HMA binds to AVR-PikE with an apparent Kd of 367 \u00b1 41 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For AVR-PikE, even though this was not fully saturatable under the conditions of our assay, we obtained an apparent Kd of 367 \u00b1 41 nM, a greater than 10-fold weaker binding compared to AVR-PikD (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SPR experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "1a4b9be7-06aa-4cec-b1fe-6e43a7bf421e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C38",
+      "claim": "Pikp-HMA binds to AVR-PikA with an apparent Kd of 710 \u00b1 111 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For AVR-PikA we could determine an apparent Kd of 710 \u00b1 111 nM (also not saturatable in the assay).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by SPR experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "b3d8277e-4034-4e9a-ab0e-07141656b620",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C39",
+      "claim": "Essentially no binding was detected for AVR-PikC to Pikp-HMA in the SPR assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected essentially no binding for AVR-PikC to Pikp-HMA in this assay (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SPR experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "8660c4ee-3779-4b4b-98e0-4d443a5d1db6",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C40",
+      "claim": "The crystal structure of the Pikp-HMA/AVR-PikD complex was solved at 1.6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimisation of one of these conditions (Figure 3\u2014figure supplement 1) produced crystals diffracting X-rays to 1.6 \u00c5 resolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "73a1d6f6-41ca-468f-abf0-32771640f1fc",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C41",
+      "claim": "The Pikp-HMA/AVR-PikD complex reveals an intimate interface that buries 18.7% of the effector's solvent accessible surface area (1031.0 \u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the Pikp-HMA/AVR-PikD complex reveals an intimate interface formed between these proteins that buries 18.7% of the effector's solvent accessible surface area (1031.0 \u00c52, Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "b1a1362b-08d6-4e10-b638-c1d533744705",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C42",
+      "claim": "87.5% of AVR-PikD's buried surface area (902.2 \u00c52) is formed with a monomer of Pikp-HMA.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the interaction is formed with a monomer of Pikp-HMA, with 87.5% of the effector's buried surface area (902.2 \u00c52) and nine residues contributing hydrogen bond and/or salt bridge interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "adb062bf-7205-4bfe-b6f5-68ae73e874a2",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C43",
+      "claim": "Nine residues contribute hydrogen bond and/or salt bridge interactions between AVR-PikD and a Pikp-HMA monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the interaction is formed with a monomer of Pikp-HMA, with 87.5% of the effector's buried surface area (902.2 \u00c52) and nine residues contributing hydrogen bond and/or salt bridge interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "601cce82-1542-4472-8ae9-16a358de4bd0",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C44",
+      "claim": "No hydrogen bonds or salt bridge interactions are formed between AVR-PikD and the second monomer of the Pikp-HMA dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "No hydrogen bonds or salt bridge interactions are formed with the second monomer of the Pikp-HMA dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "bfa041c9-52c0-4ea1-8efb-84176668c84e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C45",
+      "claim": "It is not possible for an AVR-PikD/Pikp-HMA heterotetramer (2:2 complex) to assemble due to steric clash.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, due to steric clash that would occur, it is not possible for an AVR-PikD/Pikp-HMA heterotetramer (2:2 complex) to assemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis and inference from the crystal structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "c733f8f9-a715-420a-901a-d4a59337d2f1",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C46",
+      "claim": "Each Pikp-HMA monomer adopts the HMA-domain fold comprising a four-stranded antiparallel \u03b2-sheet and two \u03b1-helices packed in an \u03b1/\u03b2 sandwich.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the Pikp-HMA monomers adopts the HMA-domain fold (Pfam: PF00403), comprising a four-stranded antiparallel \u03b2-sheet and two \u03b1-helices packed in an \u03b1/\u03b2 sandwich.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "33f609e0-eeb8-43a3-a2db-0da4d8e82cd9",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C47",
+      "claim": "The closest structural homologue of Pikp-HMA is the HMA domain of yeast protein Ccc2A, overlaying with an r.m.s.d. of 1.58 \u00c5 over 72 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest structural homologue of Pikp-HMA (defined by PDBeFold [Krissinel and Henrick, 2004]) is the HMA domain of yeast protein Ccc2A (Banci et al., 2001), overlaying with an r.m.s.d. of 1.58 \u00c5 over 72 residues (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "31d868a6-39c0-43ef-ad20-0c3be95ff201",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C48",
+      "claim": "HMA domains typically bind heavy metals or lighter cations such as Cu1+ or Zn2+ via two conserved Cys residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, HMA domains bind heavy metals, or lighter cations such as Cu1+ or Zn2+, via two conserved Cys residues and are involved in metal transport or detoxification pathways (Bull and Cox, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bull and Cox, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "35b7d80b-f217-4e67-bf31-d0b51b660c28",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C49",
+      "claim": "The conserved Cys residues for metal binding are not conserved in Pik-1 HMA domains, including Pikp-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these Cys residues are not conserved in Pik-1 HMA domains, including Pikp-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "357d286f-7076-4a16-884f-a36927b5ea49",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C50",
+      "claim": "The Pikp-HMA structure does not contain a metal ion.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the Pikp-HMA structure does not contain a metal ion, and the loop between \u03b21 and \u03b11, which usually contains the metal-chelating Cys residues, is disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "529c7f35-fb22-49a1-9f91-b756c77885af",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C51",
+      "claim": "The loop between \u03b21 and \u03b11 in Pikp-HMA is disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the Pikp-HMA structure does not contain a metal ion, and the loop between \u03b21 and \u03b11, which usually contains the metal-chelating Cys residues, is disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "8029e0d6-ecd5-426a-b2f8-3c386fd74e5e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C52",
+      "claim": "AVR-PikD adopts a six-stranded \u03b2-sandwich structure, stabilised by a di-sulphide bond between Cys54 and Cys70.",
+      "claim_type": "EXPLICIT",
+      "source": "AVR-PikD adopts a six-stranded \u03b2-sandwich structure, stabilised by a di-sulphide bond between Cys54 and Cys70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "62b2e2a8-f0e1-40ec-b8a9-1fc65165fdec",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C53",
+      "claim": "AVR-PikD contains an N-terminal extension comprising residues Arg31 to Pro52 prior to the start of the \u03b2-sandwich fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The effector contains an N-terminal extension, comprising residues Arg31 to Pro52, prior to the start of this fold (Figure 3A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "b35df7fd-7f62-444e-af8a-42d3512b8768",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C54",
+      "claim": "A close structural homologue of AVR-PikD is AVR-Piz-t, with an r.m.s.d. of 2.33 \u00c5 over 58 aligned residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Database searches using PDBeFold reveals that a close structural homologue of AVR-PikD is AVR-Piz-t (Zhang et al., 2013), another M. oryzae effector protein, despite there being essentially no sequence identity between these proteins (r.m.s.d. = 2.33 \u00c5 over 58 aligned residues, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "fc78704b-0c9f-49c0-96eb-97f44466e168",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C55",
+      "claim": "There is essentially no sequence identity between AVR-PikD and AVR-Piz-t despite structural similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Database searches using PDBeFold reveals that a close structural homologue of AVR-PikD is AVR-Piz-t (Zhang et al., 2013), another M. oryzae effector protein, despite there being essentially no sequence identity between these proteins (r.m.s.d. = 2.33 \u00c5 over 58 aligned residues, Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "0767d132-ff5c-4174-9406-bd8113afd3bc",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C56",
+      "claim": "Structural homology is observed between AVR-PikD and ToxB, a protein toxin from Pyrenophora tritici-repentis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, structural homology is also observed to ToxB, a protein toxin from Pyrenophora tritici-repentis, the causative agent of tan spot in wheat (Nyarko et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural comparison and a citation to Nyarko et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "83368336-d9ca-4834-95b6-5756fdde7736",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C57",
+      "claim": "The N-terminal extension of AVR-PikD appears to be unique.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the identified structural homology only extends to the \u03b2-sandwich fold and the N-terminal extension of AVR-PikD appears to be unique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural comparison and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "86f52e2f-1c8b-49f1-ae4d-19da15cc470b",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C58",
+      "claim": "AVR-PikDHis46 is bound in a pocket on Pikp-HMA via hydrogen bonds/salt bridge interactions with Pikp-HMASer218 and Pikp-HMAGlu230.",
+      "claim_type": "EXPLICIT",
+      "source": "AVR-PikDHis46 is bound in a pocket on Pikp-HMA via hydrogen bonds/salt bridge interactions between AVR-PikDHis46:N\u03b41/Pikp-HMASer218:O\u03b3 and AVR-PikDHis46:N\u03b52/Pikp-HMAGlu230:O\u03b51; also, Pikp-HMAVal232 packs on top of the AVR-PikDHis46 ring and contributes hydrophobic/van der Waals interactions (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "aa3ffcf6-bb4f-43f8-8bd1-48ff6dd60d7f",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C59",
+      "claim": "Pikp-HMAVal232 packs on top of the AVR-PikDHis46 ring and contributes hydrophobic/van der Waals interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "AVR-PikDHis46 is bound in a pocket on Pikp-HMA via hydrogen bonds/salt bridge interactions between AVR-PikDHis46:N\u03b41/Pikp-HMASer218:O\u03b3 and AVR-PikDHis46:N\u03b52/Pikp-HMAGlu230:O\u03b51; also, Pikp-HMAVal232 packs on top of the AVR-PikDHis46 ring and contributes hydrophobic/van der Waals interactions (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "1de35fa9-c857-4237-9ee2-518b32db46f7",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C60",
+      "claim": "AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg prevent the interaction with Pikp-HMA in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg prevent the interaction (as observed on the -LTH selective growth plate and in the X-gal assay (Figure 4A, Figure 4\u2014figure supplement 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Y2H experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "975d4b7c-5227-480e-94c8-979cdd950509",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C61",
+      "claim": "AVR-PikDIle49Glu maintains an interaction with Pikp-HMA in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AVR-PikDIle49Glu maintains an interaction and AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp showed intermediate binding (weak interaction on -LTH selective growth plate and in the X-gal assay [Figure 4A]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Y2H experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "245e5e4e-9f42-4674-886d-0969476ef1bc",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C62",
+      "claim": "AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp showed intermediate binding to Pikp-HMA in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AVR-PikDIle49Glu maintains an interaction and AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp showed intermediate binding (weak interaction on -LTH selective growth plate and in the X-gal assay [Figure 4A]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Y2H experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "67396c04-e9a5-47c5-84f5-e84ffb577eea",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C63",
+      "claim": "No meaningful interaction was measured for AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg with Pikp-HMA by SPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the Y2H results, we could not measure any meaningful interaction of AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg with Pikp-HMA (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SPR experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "65eca354-46ee-4766-9291-2785172d6ddf",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C64",
+      "claim": "AVR-PikDIle49Glu binds to Pikp-HMA with a Kd of 99 \u00b1 18 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp we were able to determine Kds of interaction of 99 \u00b1 18 nM and 83 \u00b1 16 nM respectively (Figure 4B, Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SPR experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "00829104-22c5-4b99-a283-a96b25ee594a",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C65",
+      "claim": "AVR-PikDPro47Ala/Gly48Asp binds to Pikp-HMA with a Kd of 83 \u00b1 16 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp we were able to determine Kds of interaction of 99 \u00b1 18 nM and 83 \u00b1 16 nM respectively (Figure 4B, Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by SPR experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "8a21b295-c5b2-44aa-a801-00976116931d",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C66",
+      "claim": "The K60 (Pikp) rice cultivar is resistant to M. oryzae Sasa2 lines expressing AVR-PikD.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the K60 (Pikp) cultivar is resistant to the M. oryzae Sasa2 line expressing AVR-PikD (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and a citation to Kanzaki et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "41ae9033-2252-4019-b437-1dbd60c66044",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C67",
+      "claim": "The K60 (Pikp) cultivar showed an intermediate phenotype to M. oryzae Sasa2 lines expressing AVR-PikE.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the K60 (Pikp) cultivar showed an intermediate phenotype between susceptible and resistant to M. oryzae Sasa2 lines expressing AVR-PikE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "cb203b47-f4e3-41ed-9a34-75b3877f6341",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C68",
+      "claim": "The K60 (Pikp) cultivar was susceptible to M. oryzae Sasa2 lines expressing AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mutants, we found that the K60 (Pikp) cultivar was susceptible to M. oryzae Sasa2 lines expressing AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg, but resistant to those expressing AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp (Figure 5, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "0269e023-e6de-497d-af16-0136e6e72469",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C69",
+      "claim": "The K60 (Pikp) cultivar was resistant to M. oryzae Sasa2 lines expressing AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mutants, we found that the K60 (Pikp) cultivar was susceptible to M. oryzae Sasa2 lines expressing AVR-PikDHis46Glu, AVR-PikDArg64Ala and AVR-PikDAsp66Arg, but resistant to those expressing AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp (Figure 5, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "fda3aa70-9a98-4432-b032-819f3292efbe",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C70",
+      "claim": "Co-expression of Pikp-1, Pikp-2 and AVR-PikD is required to observe robust features of cell death in N. benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system we required the co-expression of Pikp-1, Pikp-2 and AVR-PikD to observe robust features of cell death, including necrotic tissue and accumulation of phenolic compounds that give rise to auto-fluorescence (Figure 6B) (Bos et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "3e22bb25-bc67-4fc1-b139-2afa17c1a01b",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C71",
+      "claim": "Expression of individual proteins or any combination of protein pairs (Pikp-1, Pikp-2, AVR-PikD) did not result in significant cell death in N. benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe significant effects in N. benthamiana leaves following expression of the individual proteins or any combination of protein pairs (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "d23ee2d6-afd3-4da6-a69c-a437b4d74931",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C72",
+      "claim": "Co-expression of AVR-PikE, AVR-PikA and AVR-PikC with Pikp-1 and Pikp-2 fails to elicit a cell death response in N. benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, co-expression of AVR-PikE, AVR-PikA and AVR-PikC with Pikp-1 and Pikp-2 fails to elicit a cell death response (Figure 6\u2014figure supplements 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "3c5f036c-b45e-48c9-b29e-d3661feecda1",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C73",
+      "claim": "AVR-PikDHis46Glu, AVR-PikDArg64Ala, AVR-PikDAsp66Arg and AVR-PikDAla67Asp mutations do not elicit a cell death response when co-expressed with Pikp-1 and Pikp-2 in N. benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that the AVR-PikDHis46Glu, AVR-PikDArg64Ala, AVR-PikDAsp66Arg and AVR-PikDAla67Asp mutations do not elicit a response, but AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp still promote cell death (Figure 7, Figure 7\u2014figure supplement 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "90b76380-82cc-4289-81fd-007bc02591f9",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C74",
+      "claim": "AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp still promote cell death when co-expressed with Pikp-1 and Pikp-2 in N. benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that the AVR-PikDHis46Glu, AVR-PikDArg64Ala, AVR-PikDAsp66Arg and AVR-PikDAla67Asp mutations do not elicit a response, but AVR-PikDIle49Glu and AVR-PikDPro47Ala/Gly48Asp still promote cell death (Figure 7, Figure 7\u2014figure supplement 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "581439f5-ec42-41e7-ae11-11db80e4e430",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C75",
+      "claim": "AVR-PikD is the ancestral AVR-Pik allele based on phylogenetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetics suggests AVR-PikD is the ancestral AVR-Pik allele, and it is the only natural variant with a His at position 46 (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kanzaki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "e97fc39e-2197-448c-ab1f-0b1548af8a00",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C76",
+      "claim": "AVR-PikD is the only natural AVR-Pik variant with a His at position 46.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetics suggests AVR-PikD is the ancestral AVR-Pik allele, and it is the only natural variant with a His at position 46 (Kanzaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kanzaki et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "80806999-04e0-48cf-8080-61e093c498bc",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C77",
+      "claim": "The only natural variant found at position 46 in AVR-Pik is a His to Asn change (giving rise to AVR-PikE).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the only natural variant found at this position is a somewhat conservative His to Asn change (giving rise to AVR-PikE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of natural variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "6a799525-97c5-4929-abcb-0562a9dfc221",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C78",
+      "claim": "The single amino acid polymorphism His46Asn is sufficient to prevent AVR-Pik-dependent cell death in N. benthamiana.",
+      "claim_type": "EXPLICIT",
+      "source": "This single amino acid polymorphism is sufficient to prevent AVR-Pik-dependent cell death in N. benthamiana, limit resistance in rice, and reduce the affinity of interaction with Pikp-HMA in vitro by an order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from N. benthamiana assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "87b4a3ec-6fd6-4f2a-a1d7-71b9044d2617",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C79",
+      "claim": "The His46Asn polymorphism limits resistance in rice.",
+      "claim_type": "EXPLICIT",
+      "source": "This single amino acid polymorphism is sufficient to prevent AVR-Pik-dependent cell death in N. benthamiana, limit resistance in rice, and reduce the affinity of interaction with Pikp-HMA in vitro by an order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from rice infection assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "dcdae870-68c8-4a80-8e1f-86914ca0541a",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C80",
+      "claim": "The His46Asn polymorphism reduces the affinity of interaction with Pikp-HMA in vitro by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "This single amino acid polymorphism is sufficient to prevent AVR-Pik-dependent cell death in N. benthamiana, limit resistance in rice, and reduce the affinity of interaction with Pikp-HMA in vitro by an order of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by SPR experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "ee73e661-dcf0-45bb-8029-edf1dd4795fc",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C81",
+      "claim": "Almost all amino acid variation between Pik-1 alleles lies within the HMA domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all amino acid variation between Pik-1 alleles lies within the HMA domain (Figure 3\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis shown in Figure 3\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "ea280a24-7a5a-4985-9bcf-d4f08c2cdf17",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C82",
+      "claim": "Pikp-1Glu230 that directly co-ordinates AVR-PikDHis46 is a Val in both Pikm-1 and Pik*-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Pikp-1Glu230 (Pikp numbering), that directly co-ordinates AVR-PikDHis46, is a Val in both Pikm-1 and Pik*-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis and structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "a6329910-3634-40ff-9e63-fb7a4fe9b40d",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C83",
+      "claim": "Residue Pikp-1Val222 is an Ala in Pikm-1 and Pik*-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue Pikp-1Val222, whose side-chain extends towards Pikp-1Glu230, is an Ala in Pikm-1 and Pik*-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "6590b17b-feb2-412e-b7dc-5163122b4aae",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C84",
+      "claim": "Recognition of AVR-Pik by Pik and AVR-Pia and AVR1-CO39 by RGA5/RGA4 is by direct binding to the HMA domains of Pik-1 and RGA5.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition of AVR-Pik by Pik, and AVR-Pia and AVR1-CO39 by RGA5/RGA4, is by direct binding to the HMA domains of Pik-1 and RGA5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the study's findings and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "579d75a8-523a-4640-ad31-025c4f864090",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C85",
+      "claim": "The position of the HMA domain between the CC and NB-ARC region of Pik-1 and after the LRR in RGA5 is one of the most striking differences between these functionally-related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the HMA domain, between the CC and NB-ARC region of Pik-1 and after the LRR in RGA5, is one of the most striking differences between these functionally-related proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural and sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "8e71278f-5a14-4647-a84d-1f8e014f9959",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C86",
+      "claim": "The integrated domain in the Arabidopsis NLR RRS1 is positioned after the LRR.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the integrated domain in the Arabidopsis NLR RRS1, a domain with sequence similarity to WRKY transcription factors, is also positioned after the LRR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about RRS1 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "938e1ade-9e27-4c2e-8323-8ab86fe81be2",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C87",
+      "claim": "Cognate effectors AvrRps4 and PopP2 directly interact with the WRKY domain of RRS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognate effectors AvrRps4 and PopP2 directly interact with this WRKY domain (Cesari et al., 2014; Le Roux et al., 2015; Sarris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cesari et al., 2014; Le Roux et al., 2015; Sarris et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "3e5e0d00-b583-4440-9761-5b73f74e93f8",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "claim_id": "C88",
+      "claim": "Protein structures have been deposited at the PDB with accession numbers 5a6p (Pikp-HMA) and 5a6w (Pikp-HMA/AVR-PikD complex).",
+      "claim_type": "EXPLICIT",
+      "source": "Protein structures, and the data used to derive these, have been deposited at the PDB with accession numbers 5a6p (Pikp-HMA), 5a6w (Pikp-HMA/AVR-PikD complex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "77b80d18-ac4d-4804-9fad-ef62acc62494",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Pikp-HMA domain selectively interacts with AVR-Pik alleles in yeast and in vitro, with binding affinities ranging from 31 nM (AVR-PikD) to no detectable binding (AVR-PikC). AVR-PikE and AVR-PikA show intermediate binding with apparent Kd values of 367 nM and 710 nM respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C39 provide converging evidence from multiple orthogonal assays (Y2H, analytical gel filtration, SPR) demonstrating selective binding of Pikp-HMA to AVR-Pik alleles. The quantitative binding data from SPR (C36-C39) is consistent with qualitative Y2H results (C31-C33) and gel filtration data (C34-C35), establishing a clear hierarchy of binding affinities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "9bd7da20-4050-4de1-9998-cec94079b86c",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structure of the Pikp-HMA/AVR-PikD complex was solved at 1.6 \u00c5 resolution, revealing that AVR-PikD primarily interacts with one Pikp-HMA monomer (87.5% of buried surface area) through an intimate interface burying 18.7% of the effector's surface. Pikp-HMA adopts the canonical HMA fold but lacks metal binding, while AVR-PikD contains a \u03b2-sandwich structure with an N-terminal extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C53 describe the crystal structure determination and analysis with appropriate resolution (1.6 \u00c5) and detailed structural characterization. The structural data is internally consistent and provides quantitative metrics (buried surface areas, r.m.s.d. values) that support the described protein-protein interface. The absence of metal binding in Pikp-HMA is supported by both structural observation and sequence analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "1d30a475-c7a9-455c-ac71-8be2ce80285e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AVR-PikD shares structural homology with other effector proteins including AVR-Piz-t (r.m.s.d. 2.33 \u00c5) and ToxB from Pyrenophora tritici-repentis, despite having essentially no sequence identity. The structural similarity is limited to the \u03b2-sandwich fold, with the N-terminal extension of AVR-PikD being unique.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by structural comparison data using PDBeFold. The r.m.s.d. values and alignment statistics provide quantitative support for the structural similarity claims. The observation of structural conservation despite sequence divergence is a well-established phenomenon in protein evolution and is appropriately documented here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "e1bf662c-1575-4768-a3ef-b9ba85948d44",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AVR-PikDHis46 is bound in a pocket on Pikp-HMA through specific hydrogen bonds/salt bridges with Ser218 and Glu230, with additional van der Waals interactions from Val232.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe specific molecular interactions at the binding interface supported by high-resolution structural data (Figure 3\u2014figure supplement 3). The detailed atomic-level interactions are consistent with the 1.6 \u00c5 resolution structure and provide the molecular basis for subsequent mutagenesis experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "66e2abde-8402-4160-b698-f29679fee68b",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Structure-guided mutations in AVR-PikD differentially affect binding to Pikp-HMA: His46Glu, Arg64Ala, and Asp66Arg abolish binding, while Ile49Glu and Pro47Ala/Gly48Asp maintain binding with Kd values of 99 nM and 83 nM respectively. Ala67Asp shows intermediate binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 demonstrate structure-function relationships through rational mutagenesis validated by both Y2H and SPR assays. The results are internally consistent between the two methods and align with predictions from the crystal structure. The quantitative SPR data provides robust support for the differential effects of mutations on binding affinity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "a7e6ef44-1cf2-4543-83ba-7f5b5b55102a",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rice cultivar K60 (Pikp+) shows differential resistance to M. oryzae expressing different AVR-Pik variants: resistant to AVR-PikD, intermediate to AVR-PikE, and susceptible to AVR-PikDHis46Glu, AVR-PikDArg64Ala, and AVR-PikDAsp66Arg mutants, but resistant to AVR-PikDAla67Asp and AVR-PikDPro47Ala/Gly48Asp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 demonstrate that in vitro binding correlates with in planta resistance phenotypes. The pathogenicity assays are appropriately controlled (Nipponbare as susceptible control) and RT-PCR confirms effector expression. The correlation between binding affinity and resistance phenotype provides strong functional validation of the structural and biochemical findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "842a2e60-a7f3-42ce-b25d-66e5e900e9fd",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Co-expression of Pikp-1, Pikp-2, and AVR-PikD is required for cell death in N. benthamiana, with no significant response from individual proteins, protein pairs, or co-expression with other AVR-Pik alleles (AVR-PikE, AVR-PikA, AVR-PikC).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 establish the specificity of the Pikp immune response through systematic testing of all protein combinations. The requirement for all three components (Pikp-1, Pikp-2, and AVR-PikD) and the lack of response with other AVR-Pik alleles demonstrates allele-specific recognition. Western blots confirm protein expression, addressing potential concerns about negative results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "07a698dc-b982-4db2-b73e-6672491a679a",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AVR-PikD mutations that abolish binding to Pikp-HMA (His46Glu, Arg64Ala, Asp66Arg, Ala67Asp) fail to elicit cell death in N. benthamiana when co-expressed with Pikp-1 and Pikp-2, while mutations maintaining binding (Ile49Glu, Pro47Ala/Gly48Asp) still promote cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 provide functional validation in the heterologous N. benthamiana system that correlates with in vitro binding data and rice resistance phenotypes. The correlation between binding affinity and cell death response across multiple mutants provides strong evidence for direct recognition as the mechanism of immune activation. Note that Ala67Asp shows a discrepancy between N. benthamiana (no response) and rice (resistance), which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AVR-PikD is the ancestral AVR-Pik allele with His46 being unique to this variant. The His46Asn polymorphism (giving AVR-PikE) is sufficient to prevent cell death in N. benthamiana, limit resistance in rice, and reduce binding affinity by an order of magnitude (from 31 nM to 367 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 integrate phylogenetic analysis with functional data to propose an evolutionary model of pathogen evasion. The single amino acid change at position 46 shows consistent effects across all assays (in vitro binding, rice resistance, N. benthamiana cell death), providing strong evidence for this residue as a key determinant of recognition specificity. The phylogenetic claim (C75) is supported by citation to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "43791221-cc62-4e1a-8b32-3c90865d9eaa",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Amino acid variation between Pik-1 alleles is concentrated in the HMA domain, with key differences at positions 230 (Glu in Pikp-1, Val in Pikm-1 and Pik*-1) and 222 (Val in Pikp-1, Ala in Pikm-1 and Pik*-1) that directly interact with or are adjacent to AVR-PikDHis46.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 are supported by sequence analysis and structural mapping. The identification of polymorphic residues at the binding interface provides a structural basis for understanding allele-specific recognition patterns. However, the authors appropriately note that these differences alone do not fully explain the recognition specificities of different Pik alleles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "36223e93-b3b1-4d85-95d4-67bfa931236e",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Recognition of effectors by rice NLRs occurs through direct binding to HMA domains, which can be positioned at different locations within NLR proteins (between CC and NB-ARC in Pik-1, after LRR in RGA5 and RRS1), suggesting that integrated domain position is flexible while maintaining recognition function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 synthesize findings from the current study with prior work on RGA5 and RRS1 to propose a general principle about integrated domain function in NLRs. The claims are appropriately supported by citations and the current structural data. This represents a conceptual advance in understanding NLR architecture and function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "332cf1e7-1a81-4e52-ac3d-b6feae8b5139",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Rice blast disease causes significant global food security impacts, with potential loss of rice to feed 212-742 million people annually and up to 100% yield loss in infected areas. Rice is a staple food for more than half the world's population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the agricultural and societal importance of the research through citations to prior literature. These background claims appropriately contextualize the significance of understanding rice blast resistance mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "NLRs are conserved plant immune receptors with multi-domain architecture (CC/TIR, NB-ARC, LRR) that detect pathogen effectors, often functioning in pairs with one NLR containing integrated domains that directly bind effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C11 provide established background on NLR biology supported by extensive citations. These claims accurately summarize the current understanding of NLR structure and function, providing necessary context for the study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "5f2f8233-5f63-4397-92cd-7099626ed04f",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Approximately 100 rice NLRs confer resistance to M. oryzae (23 cloned), but only six cognate effectors have been identified. The RGA4/RGA5 and Pik-1/Pik-2 NLR pairs recognize effectors through HMA domains positioned at different locations within the NLR architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C22 establish the specific background for the rice-M. oryzae system through citations to prior work. These claims accurately represent the state of knowledge and identify the gap (lack of structural information) that the current study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "2ca2e74d-e453-4d3b-bf9c-f4c5d2579756",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Both AVR-Pik and Pik-1 HMA domains exhibit polymorphisms between isolates and cultivars. The AVR-PikD/Pikp-1 interaction is thought to be ancestral, with Pikp cultivars resistant to AVR-PikD but susceptible to other AVR-Pik alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 establish the co-evolutionary context for the study through citations to prior work. These claims provide important background on allele specificity that motivates the structural and functional analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "6c04594d-ab5d-4d8f-bd8f-a684c2b27bca",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior to this study, AVR-Piz-t was the only M. oryzae effector with known structure, and no structural information existed for rice NLR domains or for direct effector-NLR recognition complexes from any plant system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 establish the novelty of the structural work by documenting the absence of prior structural information. These claims are verifiable through literature searches and appropriately identify the knowledge gap addressed by the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "f13fe8b8-bab1-42b9-90c0-3baf8881f789",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Pikp-HMA shows closest structural homology to yeast Ccc2A HMA domain (r.m.s.d. 1.58 \u00c5 over 72 residues). Unlike typical HMA domains that bind metals via conserved Cys residues, Pikp-HMA lacks these conserved residues and does not bind metal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by structural comparison and sequence analysis. The loss of metal-binding function in Pikp-HMA represents a functional divergence from canonical HMA domains, consistent with its role in protein-protein recognition rather than metal transport.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    },
+    {
+      "id": "58987690-d367-46ef-b21d-1b9ad9cad44b",
+      "content_id": "dfb42fa5-3ef9-4ce4-909d-157b0cdd2026",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Protein structures have been deposited in the PDB with accession numbers 5a6p (Pikp-HMA) and 5a6w (Pikp-HMA/AVR-PikD complex).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 documents data deposition, which is verifiable and represents good scientific practice for reproducibility. The PDB accession numbers allow independent validation of the structural findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:50:08.896438Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4711b76c-dfec-45d4-a4e8-d046308d1cc1",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "e2adb6bb-cc52-465e-af9f-84138b7e88b5",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "ff538288-0776-4189-be08-49a1f25759cf",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "c99206ae-d6b4-45d2-bc35-150a339ca62b",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "ebc1b64f-209f-4820-8f3d-c38a3d6c9201",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "bd9c2830-ec8e-45a0-b9de-49e1260c845d",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "21fe9120-6c2b-4e53-9f03-20d1f67da603",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "1a4b9be7-06aa-4cec-b1fe-6e43a7bf421e",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "b3d8277e-4034-4e9a-ab0e-07141656b620",
+      "result_id": "77b80d18-ac4d-4804-9fad-ef62acc62494"
+    },
+    {
+      "claim_id": "8660c4ee-3779-4b4b-98e0-4d443a5d1db6",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "73a1d6f6-41ca-468f-abf0-32771640f1fc",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "b1a1362b-08d6-4e10-b638-c1d533744705",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "adb062bf-7205-4bfe-b6f5-68ae73e874a2",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "601cce82-1542-4472-8ae9-16a358de4bd0",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "bfa041c9-52c0-4ea1-8efb-84176668c84e",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "c733f8f9-a715-420a-901a-d4a59337d2f1",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "33f609e0-eeb8-43a3-a2db-0da4d8e82cd9",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "357d286f-7076-4a16-884f-a36927b5ea49",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "529c7f35-fb22-49a1-9f91-b756c77885af",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "8029e0d6-ecd5-426a-b2f8-3c386fd74e5e",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "62b2e2a8-f0e1-40ec-b8a9-1fc65165fdec",
+      "result_id": "9bd7da20-4050-4de1-9998-cec94079b86c"
+    },
+    {
+      "claim_id": "b35df7fd-7f62-444e-af8a-42d3512b8768",
+      "result_id": "1d30a475-c7a9-455c-ac71-8be2ce80285e"
+    },
+    {
+      "claim_id": "fc78704b-0c9f-49c0-96eb-97f44466e168",
+      "result_id": "1d30a475-c7a9-455c-ac71-8be2ce80285e"
+    },
+    {
+      "claim_id": "0767d132-ff5c-4174-9406-bd8113afd3bc",
+      "result_id": "1d30a475-c7a9-455c-ac71-8be2ce80285e"
+    },
+    {
+      "claim_id": "83368336-d9ca-4834-95b6-5756fdde7736",
+      "result_id": "1d30a475-c7a9-455c-ac71-8be2ce80285e"
+    },
+    {
+      "claim_id": "86f52e2f-1c8b-49f1-ae4d-19da15cc470b",
+      "result_id": "e1bf662c-1575-4768-a3ef-b9ba85948d44"
+    },
+    {
+      "claim_id": "aa3ffcf6-bb4f-43f8-8bd1-48ff6dd60d7f",
+      "result_id": "e1bf662c-1575-4768-a3ef-b9ba85948d44"
+    },
+    {
+      "claim_id": "1de35fa9-c857-4237-9ee2-518b32db46f7",
+      "result_id": "66e2abde-8402-4160-b698-f29679fee68b"
+    },
+    {
+      "claim_id": "975d4b7c-5227-480e-94c8-979cdd950509",
+      "result_id": "66e2abde-8402-4160-b698-f29679fee68b"
+    },
+    {
+      "claim_id": "245e5e4e-9f42-4674-886d-0969476ef1bc",
+      "result_id": "66e2abde-8402-4160-b698-f29679fee68b"
+    },
+    {
+      "claim_id": "67396c04-e9a5-47c5-84f5-e84ffb577eea",
+      "result_id": "66e2abde-8402-4160-b698-f29679fee68b"
+    },
+    {
+      "claim_id": "65eca354-46ee-4766-9291-2785172d6ddf",
+      "result_id": "66e2abde-8402-4160-b698-f29679fee68b"
+    },
+    {
+      "claim_id": "00829104-22c5-4b99-a283-a96b25ee594a",
+      "result_id": "66e2abde-8402-4160-b698-f29679fee68b"
+    },
+    {
+      "claim_id": "8a21b295-c5b2-44aa-a801-00976116931d",
+      "result_id": "a7e6ef44-1cf2-4543-83ba-7f5b5b55102a"
+    },
+    {
+      "claim_id": "41ae9033-2252-4019-b437-1dbd60c66044",
+      "result_id": "a7e6ef44-1cf2-4543-83ba-7f5b5b55102a"
+    },
+    {
+      "claim_id": "cb203b47-f4e3-41ed-9a34-75b3877f6341",
+      "result_id": "a7e6ef44-1cf2-4543-83ba-7f5b5b55102a"
+    },
+    {
+      "claim_id": "0269e023-e6de-497d-af16-0136e6e72469",
+      "result_id": "a7e6ef44-1cf2-4543-83ba-7f5b5b55102a"
+    },
+    {
+      "claim_id": "fda3aa70-9a98-4432-b032-819f3292efbe",
+      "result_id": "842a2e60-a7f3-42ce-b25d-66e5e900e9fd"
+    },
+    {
+      "claim_id": "3e22bb25-bc67-4fc1-b139-2afa17c1a01b",
+      "result_id": "842a2e60-a7f3-42ce-b25d-66e5e900e9fd"
+    },
+    {
+      "claim_id": "d23ee2d6-afd3-4da6-a69c-a437b4d74931",
+      "result_id": "842a2e60-a7f3-42ce-b25d-66e5e900e9fd"
+    },
+    {
+      "claim_id": "3c5f036c-b45e-48c9-b29e-d3661feecda1",
+      "result_id": "07a698dc-b982-4db2-b73e-6672491a679a"
+    },
+    {
+      "claim_id": "90b76380-82cc-4289-81fd-007bc02591f9",
+      "result_id": "07a698dc-b982-4db2-b73e-6672491a679a"
+    },
+    {
+      "claim_id": "581439f5-ec42-41e7-ae11-11db80e4e430",
+      "result_id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9"
+    },
+    {
+      "claim_id": "e97fc39e-2197-448c-ab1f-0b1548af8a00",
+      "result_id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9"
+    },
+    {
+      "claim_id": "80806999-04e0-48cf-8080-61e093c498bc",
+      "result_id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9"
+    },
+    {
+      "claim_id": "6a799525-97c5-4929-abcb-0562a9dfc221",
+      "result_id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9"
+    },
+    {
+      "claim_id": "87b4a3ec-6fd6-4f2a-a1d7-71b9044d2617",
+      "result_id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9"
+    },
+    {
+      "claim_id": "dcdae870-68c8-4a80-8e1f-86914ca0541a",
+      "result_id": "b1ca94ce-e9bd-4647-a353-df8a8db3e1f9"
+    },
+    {
+      "claim_id": "ee73e661-dcf0-45bb-8029-edf1dd4795fc",
+      "result_id": "43791221-cc62-4e1a-8b32-3c90865d9eaa"
+    },
+    {
+      "claim_id": "ea280a24-7a5a-4985-9bcf-d4f08c2cdf17",
+      "result_id": "43791221-cc62-4e1a-8b32-3c90865d9eaa"
+    },
+    {
+      "claim_id": "a6329910-3634-40ff-9e63-fb7a4fe9b40d",
+      "result_id": "43791221-cc62-4e1a-8b32-3c90865d9eaa"
+    },
+    {
+      "claim_id": "6590b17b-feb2-412e-b7dc-5163122b4aae",
+      "result_id": "36223e93-b3b1-4d85-95d4-67bfa931236e"
+    },
+    {
+      "claim_id": "579d75a8-523a-4640-ad31-025c4f864090",
+      "result_id": "36223e93-b3b1-4d85-95d4-67bfa931236e"
+    },
+    {
+      "claim_id": "8e71278f-5a14-4647-a84d-1f8e014f9959",
+      "result_id": "36223e93-b3b1-4d85-95d4-67bfa931236e"
+    },
+    {
+      "claim_id": "938e1ade-9e27-4c2e-8323-8ab86fe81be2",
+      "result_id": "36223e93-b3b1-4d85-95d4-67bfa931236e"
+    },
+    {
+      "claim_id": "3028699c-6738-4062-a13c-6d7d82b6cc07",
+      "result_id": "332cf1e7-1a81-4e52-ac3d-b6feae8b5139"
+    },
+    {
+      "claim_id": "a4e3dc94-7a59-408c-889b-504e66e88ca4",
+      "result_id": "332cf1e7-1a81-4e52-ac3d-b6feae8b5139"
+    },
+    {
+      "claim_id": "16e230d3-5f4c-46df-bdac-1c424b4b3b5e",
+      "result_id": "332cf1e7-1a81-4e52-ac3d-b6feae8b5139"
+    },
+    {
+      "claim_id": "9de35e31-97ad-4ab5-97a5-ab10e2cdfad9",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "e01f751b-8187-4f78-942c-64e418cf1715",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "aab2f531-1f9d-4dcf-b185-5e05195e3703",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "95864edf-ee8e-448c-bd95-b5a86db9c467",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "bf7e9030-9f5f-43ae-b1ca-ba2c998cad36",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "5244aab8-5987-4936-8c53-2d2ddf5d0230",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "0467980c-43b5-41c2-a34e-97810a120262",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "16299e0e-3252-4269-b829-469a9be12afa",
+      "result_id": "89a42329-0bab-49de-a6f6-ee66d0ef3f13"
+    },
+    {
+      "claim_id": "9219e7df-0bec-4e2e-86d5-8387cadc56e4",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "579ff7e4-7102-4282-b939-bcb3c2728e17",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "a0b64828-5c97-476e-8759-923f2700f909",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "43728088-90f2-459e-8d9e-e3eb93ccd9fe",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "c056a71c-e48c-4151-bd93-2c0395949dc1",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "a7071924-4954-444e-a4cc-73e2ee43c331",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "136ac4d3-87f4-46b7-8dda-159c7d1fb1b7",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "2e9c04db-c72a-4843-a8c1-c69a6d81ac73",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "2df5b81a-9637-4aab-9a12-cfe2defaa100",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "9bef8d37-a3af-42b4-836b-2c45893fdad1",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "b8c1af99-13b8-4101-a994-b473bcb3fb6f",
+      "result_id": "5f2f8233-5f63-4397-92cd-7099626ed04f"
+    },
+    {
+      "claim_id": "b9f8241b-7a29-40ea-823e-40ebd4a1c5c8",
+      "result_id": "2ca2e74d-e453-4d3b-bf9c-f4c5d2579756"
+    },
+    {
+      "claim_id": "42b9ff7d-035e-44b7-8625-a43a1324649e",
+      "result_id": "2ca2e74d-e453-4d3b-bf9c-f4c5d2579756"
+    },
+    {
+      "claim_id": "06f6573b-3197-47a4-9f60-c8aa865ee735",
+      "result_id": "2ca2e74d-e453-4d3b-bf9c-f4c5d2579756"
+    },
+    {
+      "claim_id": "63038779-22c9-4561-a857-b052e26e02b9",
+      "result_id": "2ca2e74d-e453-4d3b-bf9c-f4c5d2579756"
+    },
+    {
+      "claim_id": "f35b9b99-66c9-4df2-ba33-3065c6d4a80b",
+      "result_id": "6c04594d-ab5d-4d8f-bd8f-a684c2b27bca"
+    },
+    {
+      "claim_id": "8a0420eb-7951-405c-8420-af1c4dc7851c",
+      "result_id": "6c04594d-ab5d-4d8f-bd8f-a684c2b27bca"
+    },
+    {
+      "claim_id": "d85e252e-0910-4274-aee5-4a7271c6c5be",
+      "result_id": "6c04594d-ab5d-4d8f-bd8f-a684c2b27bca"
+    },
+    {
+      "claim_id": "ae95a28f-4c0c-4504-8dfd-4859da74e9ae",
+      "result_id": "6c04594d-ab5d-4d8f-bd8f-a684c2b27bca"
+    },
+    {
+      "claim_id": "33f609e0-eeb8-43a3-a2db-0da4d8e82cd9",
+      "result_id": "f13fe8b8-bab1-42b9-90c0-3baf8881f789"
+    },
+    {
+      "claim_id": "31d868a6-39c0-43ef-ad20-0c3be95ff201",
+      "result_id": "f13fe8b8-bab1-42b9-90c0-3baf8881f789"
+    },
+    {
+      "claim_id": "35b7d80b-f217-4e67-bf31-d0b51b660c28",
+      "result_id": "f13fe8b8-bab1-42b9-90c0-3baf8881f789"
+    },
+    {
+      "claim_id": "3e5e0d00-b583-4440-9761-5b73f74e93f8",
+      "result_id": "58987690-d367-46ef-b21d-1b9ad9cad44b"
+    }
+  ],
+  "comparisons": []
+}

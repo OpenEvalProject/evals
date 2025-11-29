@@ -1,0 +1,1752 @@
+{
+  "submission": {
+    "id": "d735783d-d2c4-4c7d-a22e-e6ff03e15fdb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:52:39.909341Z",
+    "updated_at": "2025-11-29T03:52:39.909341Z"
+  },
+  "content": [
+    {
+      "id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "submission_id": "d735783d-d2c4-4c7d-a22e-e6ff03e15fdb",
+      "content_type": "manuscript",
+      "content_text": "# Tarantula toxins use common surfaces for interacting with Kv and ASIC ion channels\n\n## Authors\n\n- Kanchan Gupta<sup>1</sup>\n- Maryam Zamanian<sup>1</sup>\n- Chanhyung Bae<sup>1</sup>\n- Mirela Milescu<sup>1</sup>\n- Dmitriy Krepkiy<sup>1</sup>\n- Drew C Tilley<sup>3</sup>\n- Jon T Sack<sup>3</sup>\n- Vladimir Yarov-Yarovoy<sup>3</sup>\n- Jae Il Kim<sup>4</sup>\n- Kenton J Swartz<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Molecular Physiology and Biophysics Section, Porter Neuroscience Research Center National Institutes of Health Bethesda United States\n2. National Institute of Neurological Disorders and Stroke National Institutes of Health Bethesda United States\n3. Department of Physiology and Membrane Biology University of California, Davis Davis United States\n4. Department of Life Science Gwangju Institute of Science and Technology Gwangju Republic of Korea\n5. Biology Division University of Missouri Columbia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTarantula toxins that bind to voltage-sensing domains of voltage-activated ion channels are thought to partition into the membrane and bind to the channel within the bilayer. While no structures of a voltage-sensor toxin bound to a channel have been solved, a structural homolog, psalmotoxin (PcTx1), was recently crystalized in complex with the extracellular domain of an acid sensing ion channel (ASIC). In the present study we use spectroscopic, biophysical and computational approaches to compare membrane interaction properties and channel binding surfaces of PcTx1 with the voltage-sensor toxin guangxitoxin (GxTx-1E). Our results show that both types of tarantula toxins interact with membranes, but that voltage-sensor toxins partition deeper into the bilayer. In addition, our results suggest that tarantula toxins have evolved a similar concave surface for clamping onto \u03b1-helices that is effective in aqueous or lipidic physical environments.\n\n## Introduction\n\nProtein toxins from the venom of poisonous organisms target a wide variety of ion channel proteins, and they have been powerful tools for studying the physiology and molecular mechanisms of these crucial signaling proteins. For example, scorpion toxins that physically block the pore of K+ channels (MacKinnon and Miller, 1988) were initially used to identify pore-forming regions of the channel (MacKinnon and Miller, 1989), and to determine the stoichiometry of subunits (MacKinnon, 1991), inactivation gates (MacKinnon et al., 1993), as well as accessory subunits (Morin and Kobertz, 2008). Protein toxins can also interact with ion channels and allosterically modify the process by which the channel opens in response to the stimulus that activates the channel. For example, both tarantula and scorpion toxins can bind to voltage-sensing domains in voltage-activated ion channels and either retard or facilitate activation in response to changes in voltage (Rogers et al., 1996; Swartz and MacKinnon, 1997a, 1997b; Cest\u00e8le et al., 1998; Milescu et al., 2013). This second class of toxins have been valuable tools to explore the mechanism of voltage sensing (Phillips et al., 2005; Alabi et al., 2007; Campos et al., 2007, 2008) and the roles of individual voltage sensors in the mechanisms of activation and inactivation (Campos et al., 2007; Bosmans et al., 2008; Campos et al., 2008). Tarantula toxins have also been discovered that activate transient receptor potential (TRP) channels (Bohlen et al., 2010), and both tarantula toxin and snake toxins have been identified that activate acid-sensing ion channels (ASIC) (Chen et al., 2006; Salinas et al., 2006; Bohlen et al., 2011). For both the TRPV1 channel and ASICs, these toxins were used to stabilize specific conformations for structure determination by cryo-electron microscopy and X-ray diffraction (Baconguis and Gouaux, 2012; Dawson et al., 2012; Baconguis et al., 2014).\n\nTarantula toxins such as hanatoxin and GxTx-1E are thought to target voltage-activated potassium (Kv) channels by partitioning into the lipid membrane and binding to their voltage-sensing domains to modify how the channel opens in response to changes in membrane voltage (Swartz and MacKinnon, 1997a, 1997b; Li-Smerin and Swartz, 2000, 2001; Lee and MacKinnon, 2004; Wang et al., 2004; Phillips et al., 2005; Alabi et al., 2007; Milescu et al., 2007, 2009, 2013; Schmidt and MacKinnon, 2008; Bosmans et al., 2011a; Tilley et al., 2014) (Figure 1A, right). The strong interaction of these tarantula toxins with lipid membranes is mediated by a prominent amphipathic surface on the toxins (Figure 1F) (Takahashi et al., 2000; Lee et al., 2004, 2010), which facilitates their entry into the membrane (Lee and MacKinnon, 2004; Milescu et al., 2007, 2009; Jung et al., 2010; Mihailescu et al., 2014). Although many aspects of this inhibitory mechanism have been well-studied (Swartz and MacKinnon, 1997a, 1997b; Li-Smerin and Swartz, 1998, 2000; Lee et al., 2003; Wang et al., 2004; Phillips et al., 2005; Alabi et al., 2007; Milescu et al., 2007, 2009; Bosmans et al., 2011a; Milescu et al., 2013; Mihailescu et al., 2014; Tilley et al., 2014), no structures of complexes between tarantula toxins and Kv channels have been solved, limiting our understanding of how tarantula toxins dock onto voltage sensors and influence their conformational dynamics. However, a structurally related tarantula toxin named PcTx1 was recently crystalized in complex with ASIC1a (Baconguis and Gouaux, 2012; Dawson et al., 2012) (Figure 1A, left), revealing that the toxin clamps onto the thumb helix-5 (Figure 1G) and inserts an Arginine finger into the subunit interface to interact with residues involved in proton activation of the channel. PcTx1 modulates the gating properties of ASIC1 channels by enhancing the apparent affinity of these channels for protons, thereby promoting open and desensitized states of the channel (Escoubas et al., 2000, 2003; Chen et al., 2005; Salinas et al., 2006; Baconguis and Gouaux, 2012; Dawson et al., 2012), an allosteric mechanism related to that employed by tarantula toxins targeting Kv channels. However, in contrast to the present model for tarantula toxins binding to Kv channels within the membrane (Figure 1A, right), the structures of PcTx1 bound to ASIC show that the toxin binds to the protein in aqueous solution far from the transmembrane domains of the channel (Figure 1A left). Interestingly, the overall fold of PcTx1 and voltage sensor toxins are quite similar (Figure 1H) and PcTx1 has significant amphipathic character (Figure 1D), similar to that seen in the structure of voltage-sensor toxins (Figure 1E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig1-v1.jpg)\n\n**Figure 1.:** (A) Crystal structure of PcTx1 bound to the ASIC1a channel (left, PDB 4FZ0) and of the Kv1.2-Kv2.1 paddle chimera channel (right, PDB 2R9R) viewed from within the membrane. Voltage-sensor paddles and pore domain of the Kv1.2-Kv2.1 paddle chimera was colored purple and gray, respectively. (B, C) NMR structures of PcTx1 (B, PDB 2KNI) and GxTx-1E (C, PDB 2WH9) oriented by superimposing the toxin backbones. NT denotes N terminus. (D, E) Surface profiles of PcTx1 (D) and GxTx-1E (E) colored using the Hessa-Heijne hydrophobicity scale in kcal mol\u22121 (Hessa et al., 2005). The orientation of PcTx1 is identical to those shown in B, G and H, whereas the structure of GxTx-1E was rotated 90\u00b0 about the indicated axis to better illustrate its amphipathic character. (F) Sequence alignment of PcTx1 and GxTx-1E. Conserved residues are highlighted yellow. (G) Structure of PcTx1 bound to helix-5 of ASIC1a (PDB 4FZ0). (H) NMR Structures of PcTx1 and GxTx-1E superimposed based on their backbone folds. Side chains of conserved residues are shown as sticks.\n\nThe structural similarities of tarantula toxins targeting Kv and ASIC channels, when considered in the context of the unrelated structures of Kv and ASIC channels, as well as the distinct environments in which these toxins bind to their target ion channels, prompted us to undertake comparative studies of the membrane interaction properties and channel binding surfaces of the two classes of tarantula toxins. Does the amphipathic surface of PcTx1 enable the toxin to interact with membranes even though it binds to ASIC in solution? If so, how does the interaction of PcTx1 with membranes compare with that observed for toxins targeting voltage sensors? Do the two classes of structurally related toxins use distinct surfaces for binding to Kv channels within the membrane and to ASIC channels in solution? Our results demonstrate that both classes of tarantula toxins interact with membranes, but that PcTx1 interacts more superficially when compare to toxins targeting voltage sensors. In addition, our results suggest that PcTx1 and the voltage-sensor toxins use related surfaces for binding to helices within their target channels even though these events occur in very different physical environments.\n\n## Results\n\nIn the present study we focused our investigations on PcTx1, a tarantula toxin for which X-ray structures are available in complex with ASIC1a (Baconguis and Gouaux, 2012; Dawson et al., 2012), and GxTx-1E, a tarantula toxin related to hanatoxin (Swartz and MacKinnon, 1995, 1997a, 1997b; Takahashi et al., 2000; Phillips et al., 2005; Alabi et al., 2007; Bosmans et al., 2008; Milescu et al., 2013; Tilley et al., 2014) that interacts with the S3b-S4 paddle motif within the S1\u2013S4 voltage-sensing domain of a variety of Kv channels (Herrington et al., 2006; Milescu et al., 2009; Schmalhofer et al., 2009; Lee et al., 2010; Milescu et al., 2013). GxTx-1E inhibits opening of the Kv2.1 and engineered Shaker Kv channels with relatively high affinity (Herrington et al., 2006; Milescu et al., 2009; Schmalhofer et al., 2009; Lee et al., 2010; Milescu et al., 2013; Tilley et al., 2014), it can be produced using solid-phase peptide synthesis, efficiently folded in vitro (Lee et al., 2010; Tilley et al., 2014) (see \u2018Materials and methods\u2019) and its solution structure has been solved (Lee et al., 2010). Both toxins have a similar spacing of six Cys residues that participate in forming disulfide bonds (Figure 1B), and NMR solution structures reveal they adopt similar folds (Figure 1C,D,H), with backbone root mean square deviation (RMSD) over 20\u201322 core residues of 1.0\u20131.2 \u00c5 and over all residues of 2.9 \u00c5. The two toxins have five other positions that are well-conserved, but otherwise their primary sequences vary considerably (Figure 1F). PcTx1 contains two solvent-exposed Trp residues, one in loop 1 and one in loop 4, whereas GxTx-1E contains three, two in loop 1 and one in loop 4. The amphipathic character of these toxins can be seen in surface renderings of the toxin structures when coloring residues using the Hessa-Heijne hydrophobicity scale (Hessa et al., 2005), although it is interesting that the clusters of solvent-exposed hydrophobic residues are on distinct surfaces of the two toxins (Figure 1D,E).\n\n### Interactions of tarantula toxins with lipid membranes\n\nPrevious studies have established that tarantula toxins targeting ion channel voltage sensors interact favorably with lipid membranes (Lee and MacKinnon, 2004; Suchyna et al., 2004; Jung et al., 2005; Phillips et al., 2005; Milescu et al., 2007, 2009; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014). We conducted experiments to assess whether PcTx1 partitions into membranes similar to voltage sensor toxins. One common approach to measuring membrane partitioning is Trp fluorescence, where the emission spectra of Trp residues on the toxins are shifted to lower wavelengths (blue shifted) when the toxin moves from an aqueous environment to a more constraining and hydrophobic environment of the lipid membrane (Ladokhin et al., 2000). Pronounced blue shifts in Trp fluorescence are observed with GxTx-1E when lipid vesicles containing a 1:1 mix of POPC and POPG are added to aqueous solutions of the toxin (Figure 2A), consistent with a previous study (Milescu et al., 2009). Plotting of fluorescence intensity of GxTx-1E in the blue shifted region (320 nm) of the emission spectra as a function of lipid concentration and fitting of a partition function (Figure 2C) yields a mole fraction Kx of 4.6 \u00b1 0.8 \u00d7 106, indicating favorable interactions of the toxin with membranes. To investigate whether PcTx1 can interact with membranes, we performed similar experiments and observed detectable blue shifts in the emission spectra of the toxin upon the addition of lipid vesicles (Figure 2B). The blue shifts in the case of PcTx1 were very small (maximal shift of \u223c 2 nm), however, they varied as a function of lipid concentration and saturated at high lipid concentrations, suggestive of an interaction between PcTx1 and lipid membranes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Fluorescence emission spectra of GxTx-1E(Nle) and PcTx1 in the absence (black) or presence of lipid vesicles composed of a 1:1 mix of POPC:POPG (blue). Lipid concentration was 1.0 mM. (C, D) Fluorescence intensity at 320 nm plotted as a function of available lipid concentration for GxTx-1E(Nle) or PcTx1. Smooth curve corresponds to a partition function with Kx = (4.6 \u00b1 0.8) \u00d7 106 and F/F0max = 2.3 \u00b1 0.05 for GxTx-1E(Nle). (E, F) Stern-Volmer plots for acrylamide quenching of GxTx-1E(Nle) and PcTx1 in solution (\u223c2 \u00b5M, black diamonds) and in the presence of lipid vesicles (1.0 mM, blue circles). In all cases data points are the mean \u00b1 SEM (n = 3).\n\nGiven the small blue shift observed for PcTx1, we further investigated its interactions with membranes by determining whether lipid vesicles could protect the toxin from quenching by acrylamide, a water soluble quencher of Trp fluorescence. In the case of GxTx-1E in aqueous solution, we observed that the Trp fluorescence of the toxin is quenched by the addition of acrylamide in a concentration-dependent manner (Figure 2E), and fitting of the quenching relationship with a linear function yields a slope (Stern\u2013Volmer constant; Ksv) of 37.7 M\u22121. Addition of lipid vesicles decreased the Ksv to 9.1 M\u22121 (Figure 2E), indicating that membranes can shield the Trp residues in GxTx-1E from the soluble quencher. When these experiments were performed with PcTx1, we again observed strong quenching by acrylamide in aqueous solution (Ksv of 29.2 M\u22121) and robust protection of quenching by the addition of lipid vesicles (Ksv of 11.2 M\u22121; Figure 2F), confirming that PcTx1 can interact with membranes. Varying the concentration of lipid vesicles in the presence of a fixed concentration of acrylamide also resulted in robust and concentration-dependent protection of acrylamide quenching for both GxTx-1E (Figure 3A,C) and PcTx1 (Figure 3B,D). When the increase in maximal fluorescence intensity was plotted against the available lipid concentration and a partition function fit to the data, a Kdx value of (1.1 \u00b1 0.2) \u00d7 107 was obtained for GxTx-1E, in reasonable agreement with the mole fraction partition coefficient for the toxin determined using blue-shifts in Trp fluorescence. In the case of PcTx1, we obtained a value of (4.3 \u00b1 0.6) \u00d7 106, demonstrating that PcTx1 interacts strongly with membranes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Fluorescence emission spectra of GxTx-1E(Nle) and PcTx1 in the absence (black) or presence of lipid vesicles composed of 1:1 mix of POPC:POPG (blue) in a solution containing 0.2 M acrylamide. Lipid concentration was 1.0 mM. Fluorescence intensity was normalized to that measured for the toxin in control solution in the absence of quencher. (C, D) Maximum fluorescence intensity plotted as a function of available lipid concentration for GxTx-1E(Nle) and PcTx1. Smooth curves correspond to dequenching functions with Kdx = (1.1 \u00b1 0.2) \u00d7 107 and F/F0max = 3.5 \u00b1 0.02 for GxTx-1E(Nle) and Kdx = (4.3 \u00b1 0.6) \u00d7 106 and F/F0max = 2.7 \u00b1 0.08 for PcTx1 (D). (E, F) Depth-dependent quenching of tryptophan fluorescence by brominated (diBr) phosphatidylcholines labeled at different positions on the acyl chain of POPC. Fluorescence emission spectra of GxTx1E(Nle) and PcTx1 in the absence (black) or presence of vesicles comprised of unlabeled (gray) or brominated lipids (blue) present at a concentration of 1.2 mM. Vesicles comprised of either unlabeled or brominated lipids contained a 1:1 mix of POPC:POPG, and the brominated lipid was POPC. In all cases data points are the mean \u00b1 SEM (n = 3).\n\nThe results thus far reveal that both classes of tarantula toxins interact quite favorably with lipid membranes. Although the structure of PcTx1 shows the presence of a clear hydrophobic cluster of residues on one face of the toxin, it is smaller than seen in structures of voltage-sensor toxins (Figure 1D,E). For example, the solvent accessible surface area for the hydrophobic surface of PcTx1 is 380 \u00c52, which compares with a value of 703 \u00c52 for GxTx-1E. In addition, the hydrophobic surfaces on the two toxins are situated on distinct surfaces (Figure 1D,E). These differences between PcTx1 and GxTx-1E raise the possibility that the two classes of toxin might exhibit distinct depths of penetration into membranes. To estimate the depth to which these toxins penetrate lipid membranes, we compared the extent of quenching of Trp fluorescence by bromine atoms attached at different positions along lipid acyl chains (Ladokhin, 1997, 1999, 2014). In previous studies, the analysis of quenching profiles for lipids brominated at three positions along the acyl chain of POPC (from most superficial to deepest; 6,7-diBr, 9,10-diBr or 11,12-diBr) have shown the strongest quenching for bromines attached near the middle of the lipid tail (9,10-diBr), and analysis of these profiles suggested that Trp residues in hanatoxin, SGTx (a close relative of hanatoxin) and VSTx are positioned 8\u20139 \u00c5 from the center of the bilayer (Phillips et al., 2005; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014). When we performed quenching experiments with these three brominated lipids and GxTx-1E, we observed strong quenching that is similar to what has been reported previously for other voltage-sensor toxins (Figure 3E) (Phillips et al., 2005; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014), confirming an intimate interaction of the toxin with the hydrophobic core of the membrane. However, we observed only relatively small differences between the three brominated lipids, precluding further quantitative analysis of the profiles to obtain a specific depth of penetration. We suspect that this unique pattern of quenching by brominated lipids for GxTx-1E might be caused by the presence of three Trp residues in the toxin, each of which will likely be in distinct positions when the toxin interacts with membranes (see below). Interestingly, when we undertook similar experiments with PcTx1, we observed only very weak quenching by brominated lipids, again with only relatively small differences between the three lipids (Figure 3F). The measurable quenching observed for PcTx1 confirms that this toxin interacts with membranes, however, the much weaker quenching when compared to voltage-sensor toxins indicates that this toxin interacts considerably more superficially with membranes.\n\n### PcTx1 sensitivity is not readily transferable to voltage-sensor toxin binding sites\n\nThe X-ray structure of PcTx1 bound to ASIC shows that the toxin interacts primarily with residues on one face of thumb helix-5, with an interface comprised of both hydrophobic and polar residue interactions (Figure 1G) (Baconguis and Gouaux, 2012; Dawson et al., 2012). PcTx1 also contains an Arg finger motif composed of R26, R27 and R28 that is required for activation of ASIC through interactions with channel residues situated in a crevice between subunits. In the case of voltage-sensor toxins such as hanatoxin and GxTx-1E, the S3b helix within the voltage-sensing domains of Kv channels contains the most influential determinants of toxin binding, and these also involve a combination of hydrophobic and polar residue interactions (Swartz and MacKinnon, 1997b; Li-Smerin and Swartz, 2000, 2001; Alabi et al., 2007; Milescu et al., 2009). Given the common helical targets of PcTx1 and voltage-sensor toxins, and the finding that PcTx1 can interact with membranes, we wondered whether it might be possible to transfer sensitivity to PcTx1 into a Kv channel by exchanging the S3b helix with helix-5 from ASIC. We did not attempt to transfer channel residues interacting with the arginine finger motif because these residues and helix-5 are noncontiguous in the ASIC sequence. PcTx1 has nM affinity for ASIC1a (Chen et al., 2006; Dawson et al., 2012), but even at very high concentrations (5 \u00b5M) has no effect on the Kv2.1 channel (Figure 4, Figure 4\u2014figure supplement 1B). Previous chimera studies have shown that the voltage-sensor paddle, a helix-turn-helix motif comprised of S3b and S4 helices, can be transplanted between different channels that contain S1\u2013S4 domains without disrupting voltage sensor function (Alabi et al., 2007; Bosmans et al., 2008, 2011b; Kalia and Swartz, 2013), making us optimistic that helix-5 transfer might be possible.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig4-v1.jpg)\n\n**Figure 4.:** (A) Families of macroscopic ionic currents elicited by test depolarizations before (black) and after (red) addition of 454 nM GxTx-1E(Nle) for an oocyte expressing the Kv2.1 channel. (B) G-V relations obtained from tail current amplitudes before and after addition of toxin. (C) Time course of inhibition of the Kv2.1 channel by 454 nM GxTx-1E(Nle). Steady-state currents were measured at the end of test depolarizations to \u221210 mV, elicited every 10 s. Holding voltage was \u2212100 mV. (D) Concentration-dependence for inhibition of the Kv2.1 channel by GxTx-1E(Nle) and representative toxin mutants. Fraction unbound (Fu) was measured using steady state current values before and after addition of toxin from time course of toxin inhibition as illustrated in C using weak depolarizations (\u221220 mV to +10 mV). Data points are mean + SEM for 3 to 13 cells at each concentration. E1A and K10A are examples of mutants that produce weak perturbations in Kd (\u2206\u2206G < 1 kcal mol\u22121), while W8A and W28A are examples of mutants that have larger perturbations (\u2206\u2206G > 2 kcal mol\u22121). See Table 1 for all Kd and \u2206\u2206G values.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Sequence alignment of S3 helices in Kv2.1 (blue) replaced with helix-5 from ASIC1a (red) in the chimeric constructs. (B\u2013G) Normalized G-V relations in the absence (black circles) or presence (red circles) of 5 \u00b5M PcTx1. Conductance was measured using tail currents. In all cases data points are the mean \u00b1 SEM (n = 3). (H\u2013Q) Models of PcTx1 bound to Kv2.1-ASIC1a chimeras viewed from a transmembrane (left; H\u2013L) or extracellular (right; M\u2013Q) perspective.\n\nWe chose to make chimeras between ASIC1a and Kv2.1 by transferring helix-5 of ASIC1a into the Kv2.1, a channel that is inhibited by hanatoxin and GxTx-1E (Swartz and MacKinnon, 1997a; Lee et al., 2003, 2010; Phillips et al., 2005; Milescu et al., 2009; Tilley et al., 2014) and has been a successful recipient of transplanted peptide toxin binding sites (Alabi et al., 2007; Bosmans et al., 2008, 2011b; Kalia and Swartz, 2013). We generated a total of five chimeras where nine residues of helix-5 replaced nine residues in the S3b helix in five different frames starting at the N-terminal end of the S3b helix (Figure 4\u2014figure supplement 1A). All five chimeras gave rise to robust voltage-activated K+ currents and displayed voltage-activation relations that were shifted to more depolarized voltages when compared to the wild-type Kv2.1 channel (Figure 4\u2014figure supplement 1C\u2013G), consistent with disruption of the interactions between S3b and S4 helices that have been shown to stabilize voltage sensors in an activated state (Xu et al., 2013). Although these relatively radical chimeras were all functional, extracellular application of high concentrations of PcTx1 had no discernible effect on the activity of any of them (Figure 4\u2014figure supplement 1C\u2013G). We also constructed models of PcTx1 bound to the five chimeras by transplanting PcTx1 bound to helix-5 from the complex structure (Baconguis and Gouaux, 2012) into the X-ray structure of the Kv1.2/2.1 paddle chimera (Long et al., 2007) (Figure 4\u2014figure supplement 1H\u2013Q). As expected, several of the models predict steric clashes between PcTx1 and neighboring helices within the S1\u2013S4 domain, whereas in others the toxin could be readily accommodated when bound to helix-5. Even in this latter category of models, however, PcTx1 would need to partition relatively deeply into the membrane in order to bind to helix-5 in the chimeras, a possibility that seems unlikely given the relatively superficial interaction of the toxin we inferred with brominated lipids.\n\n### GxTx-1E and PcTx1 use overlapping surfaces for binding to helices\n\nTo further compare how PcTx1 and GxTx-1E interact with helices in ASIC and Kv channels, we alanine-scanned GxTx-1E to identify residues that are most critical for interaction with the Kv2.1 channel. We generated Ala mutants for 29 out of 36 residues of GxTx-1E (excluding one native Ala and 6 Cys residues) using solid phase chemical synthesis, and successfully folded all but one in mg quantities (see \u2018Materials and methods\u2019). To determine the apparent affinity of toxin mutants for the resting state of Kv2.1, we obtained conductance (G)-voltage (V) relationships from negative holding voltages in the absence and presence of different concentrations of each mutant (Figure 4A,B) and estimated fractional occupancy of the channel from the fractional inhibition for relatively weak depolarizations (\u221220 to 0 mV) where toxin bound channels do not open, as previously described (Swartz and MacKinnon, 1997a, 1997b; Li-Smerin and Swartz, 2000; Phillips et al., 2005; Milescu et al., 2009). We obtained estimates of the apparent affinity for each mutant, and observed a wide range of different phenotypes, from small changes in affinity to almost 400-fold weakening of toxin affinity for Kv2.1 (Figure 4D; Table 1). When perturbation energies (\u2206\u2206G values) for each mutant were mapped onto the NMR structure of GxTx-1E, a well-defined surface of the toxin was identified where mutations having dramatic effects on the apparent affinity of the toxin cluster together (Figure 5A). This surface contains many aromatic residues (F7, W8, W9, Y22 and W28), one aliphatic hydrophobic residue (L30) and several polar residues (K10, K15, S25, K27 and N32). The mutations producing the most dramatic perturbations on this surface were for mutations of aromatic residues, whereas those for the polar residues were relatively modest (Figure 5A; Table 1).\n\n**Table 1.**\n Affinities and perturbation energies for mutants of GxTx-1E\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Toxin</th>\n      <th>Kd (nM)</th>\n      <th>Kdmut/Kdwt</th>\n      <th>\u2206\u2206G (kcal mol\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gxtx-1E(Nle)</td>\n      <td>224 \u00b1 25</td>\n      <td>1.0</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>E1A</td>\n      <td>414 \u00b1 38</td>\n      <td>1.8</td>\n      <td>0.36</td>\n    </tr>\n    <tr>\n      <td>G2A</td>\n      <td>297 \u00b1 50</td>\n      <td>1.3</td>\n      <td>0.17</td>\n    </tr>\n    <tr>\n      <td>E3A</td>\n      <td>125 \u00b1 62</td>\n      <td>0.6</td>\n      <td>\u22120.35</td>\n    </tr>\n    <tr>\n      <td>G5A</td>\n      <td>13,652 \u00b1 320</td>\n      <td>60.9</td>\n      <td>2.44</td>\n    </tr>\n    <tr>\n      <td>G6A</td>\n      <td>379 \u00b1 51</td>\n      <td>1.7</td>\n      <td>0.31</td>\n    </tr>\n    <tr>\n      <td>F7A</td>\n      <td>89,033 \u00b1 9413</td>\n      <td>397.4</td>\n      <td>3.55</td>\n    </tr>\n    <tr>\n      <td>W8A</td>\n      <td>9641 \u00b1 504</td>\n      <td>43.0</td>\n      <td>2.23</td>\n    </tr>\n    <tr>\n      <td>W9A</td>\n      <td>5837 \u00b1 1850</td>\n      <td>26.1</td>\n      <td>1.93</td>\n    </tr>\n    <tr>\n      <td>K10A</td>\n      <td>984 \u00b1 90</td>\n      <td>4.4</td>\n      <td>0.88</td>\n    </tr>\n    <tr>\n      <td>G12A</td>\n      <td>21,755 \u00b1 1086</td>\n      <td>97.1</td>\n      <td>2.71</td>\n    </tr>\n    <tr>\n      <td>S13A</td>\n      <td>545 \u00b1 56</td>\n      <td>2.4</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td>G14A</td>\n      <td>461 \u00b1 89</td>\n      <td>2.1</td>\n      <td>0.43</td>\n    </tr>\n    <tr>\n      <td>K15A</td>\n      <td>823 \u00b1 127</td>\n      <td>3.7</td>\n      <td>0.77</td>\n    </tr>\n    <tr>\n      <td>P16A</td>\n      <td>22,967 \u00b1 2812</td>\n      <td>102.5</td>\n      <td>2.75</td>\n    </tr>\n    <tr>\n      <td>P20A</td>\n      <td>652 \u00b1 73</td>\n      <td>2.9</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td>K21A</td>\n      <td>440 \u00b1 82</td>\n      <td>2.0</td>\n      <td>0.40</td>\n    </tr>\n    <tr>\n      <td>Y22A</td>\n      <td>35,337 \u00b1 7464</td>\n      <td>157.7</td>\n      <td>3.00</td>\n    </tr>\n    <tr>\n      <td>V23A</td>\n      <td>516 \u00b1 60</td>\n      <td>2.3</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>S25A</td>\n      <td>1169 \u00b1 64</td>\n      <td>5.2</td>\n      <td>0.98</td>\n    </tr>\n    <tr>\n      <td>P26A</td>\n      <td>813 \u00b1 99</td>\n      <td>3.6</td>\n      <td>0.76</td>\n    </tr>\n    <tr>\n      <td>K27A</td>\n      <td>763 \u00b1 49</td>\n      <td>3.4</td>\n      <td>0.73</td>\n    </tr>\n    <tr>\n      <td>W28A</td>\n      <td>44,298 \u00b1 2471</td>\n      <td>197.7</td>\n      <td>3.14</td>\n    </tr>\n    <tr>\n      <td>L30A</td>\n      <td>2474 \u00b1 278</td>\n      <td>11.0</td>\n      <td>1.42</td>\n    </tr>\n    <tr>\n      <td>N32A</td>\n      <td>1228 \u00b1 166</td>\n      <td>5.5</td>\n      <td>1.01</td>\n    </tr>\n    <tr>\n      <td>F33A</td>\n      <td>491 \u00b1 18</td>\n      <td>2.2</td>\n      <td>0.47</td>\n    </tr>\n    <tr>\n      <td>P34A</td>\n      <td>348 \u00b1 60</td>\n      <td>1.6</td>\n      <td>0.26</td>\n    </tr>\n    <tr>\n      <td>Nle35A</td>\n      <td>306 \u00b1 19.8</td>\n      <td>1.4</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td>P36A</td>\n      <td>250 \u00b1 22</td>\n      <td>1.1</td>\n      <td>0.07</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig5-v1.jpg)\n\n**Figure 5.:** (A) GxTx-1E residues colored by perturbation in apparent affinity (\u0394\u0394Go in kcal mol\u22121). Several side-chains with the largest perturbation energies are labeled. P16 was not colored since its mutation to Ala likely perturbs the structure of the toxin. (B) PcTx1 residues colored by changes in solvent accessible surface area (\u0394SASA in \u00c52) of the toxin upon binding to ASIC1a. SASA was calculated using UCSF-Chimera with a 1.4 \u00c5 sphere for the structure of PcTx1 alone or in complex with ASIC 1a (PDB 4FZ0). Residues with the largest \u0394SASA (W7, W24, R27 and R28) are labeled. (C) \u0394SASA plotted against PcTx1 residue number.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013D) Fluorescence emission spectra of GxTx-1E(Nle), W8A, W9A and W28A in the absence (black) or presence of lipid vesicles composed of a 1:1 mix of POPC:POPG (blue). The lipid concentration was 1.0 mM. (E\u2013H) Fluorescence intensity at 320 nm plotted as a function of available lipid concentration for GxTx-1E(Nle), W8A, W9A and W28A. Smooth curves correspond to partition functions with Kx and F/F0max value of (4.6 \u00b1 0.8) \u00d7 106 and 2.3 \u00b1 0.05 for GxTx-1E(Nle), (1.3 \u00b1 0.2) \u00d7 106 and 1.8 \u00b1 0.01 for W8A, (7.6 \u00b1 1.5) \u00d7 106 and 2.5 \u00b1 0.05 for W9A and (5.5 \u00b1 0.9) \u00d7 106 and 1.5 \u00b1 0.01 for W28A, respectively. (I) \u03bbmax values for Trp fluorescence of GxTx-1E(Nle) and three Trp mutants in control solution (white bar) or in the presence of lipid vesicles at a concentration of 1 mM.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013D) Fluorescence emission spectra of GxTx-1E(Nle) W8A, W9A and W28A in the absence (black) or presence of unlabeled (gray) or brominated (blue) lipids present at a concentration of 1.2 mM.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Sequence alignment between GxTx-1E and SGTx1. Conserved residues are highlighted in yellow. (B) GxTx-1E residues colored by perturbation in apparent affinity (\u0394\u0394Go). (C and D) SGTx1 residues colored by perturbation in apparent affinity (\u0394\u0394Go; C) and membrane partitioning (\u0394\u0394Gp; D). Apparent affinity values and membrane partitioning values are from Wang et al. (2004) and Milescu et al. (2007), respectively. (E) SGTx1 residues colored by \u0394\u0394Go \u2212 \u0394\u0394Gp values to highlight positions where mutations have much larger effects on apparent affinity compared to membrane partitioning. In all right panels structures were rotated 180\u00b0 about the indicated axes in B and C. GxTx-1E and SGTx1 structures were oriented by superimposing backbone folds of the two toxins.\n\nBecause voltage-sensor toxins bind to Kv channels within the membrane, it is possible that some of the mutations we have identified influence the apparent affinity of the toxin by weakening the interaction of the toxin with membranes rather than exclusively weakening the protein\u2013protein interaction. To verify that the surface we identified is involved in binding to Kv2.1, we investigated membrane interactions for each of the three Trp residues (W8, W9 and W28), positions where mutations have some of the largest perturbation energies. Even though the apparent affinities of these mutants for Kv2.1 ranged from 26 to almost 200-fold lower (Figure 4D; Table 1), we obtained Kx values that were within a factor of two for the wild-type toxin (Figure 5\u2014figure supplement 1). We also measured quenching of the three Trp mutants by brominated lipids and found that each exhibited robust quenching (Figure 5\u2014figure supplement 2). It is notable that the blue-shifts observed with membrane partitioning vary for the three Trp mutants, as does the extent of quenching by brominated lipids (Figure 5\u2014figure supplement 2), suggesting that the three Trp residues reside in non-equivalent environments within the membrane. Taken together, these collective data with GxTx-1E mutants strongly support the notion that the active surface identified by mutagenesis (Figure 5A) is involved in binding to the voltage-sensing domain. To compare this surface of GxTx-1E with the binding surface of PcTx1, we calculated the change in solvent accessible surface area (\u0394SASA) of PcTx1 upon binding to ASIC1a, and compared it to the binding surface identified in GxTx-1E (Figure 5A\u2013C). The comparison reveals an extensive overlap between the active surfaces of the two toxins responsible for binding to ASIC1a and Kv2.1 channels, indicating that the two classes of toxins use related surfaces for interacting with helices within structurally unrelated ion channel proteins.\n\n## Discussion\n\nThe objective of this study was to compare membrane interactions and channel binding surfaces of the voltage-sensor toxin GxTx-1E and the ASIC toxin PcTx1. The recent X-ray structures of complexes between PcTx1 and ASIC1a indicates that the tarantula toxin binds to the channel in aqueous solution (Baconguis and Gouaux, 2012; Dawson et al., 2012), whereas a growing body of work supports that idea that voltage-sensor toxins bind to voltage sensors within the lipid bilayer (Lee and MacKinnon, 2004; Wang et al., 2004; Phillips et al., 2005; Alabi et al., 2007; Milescu et al., 2007, 2009, 2013; Schmidt and MacKinnon, 2008; Bosmans et al., 2011a). The results of our experiments demonstrate that both classes of toxins interact with membranes (Figures 2, 3), a finding that is consistent with the amphipathic character evident in the solution structures of these toxins (Figure 1). However, our results also show that the interaction of PcTx1 with membranes is different than what has been observed for voltage-sensor toxins. Fluorescence spectroscopy results show that Trp residues on PcTx1 exhibit only very small blue shifts when interacting with membranes (Figure 2), and that the Trp fluorescence of the toxin is only weakly quenched by bromine atoms on the acyl chains of lipids (Figure 3). In contrast, voltage-sensor toxins typically exhibit strong blue shifts in Trp fluorescence and this is robustly quenched by brominated lipids (Figures 2, 3). Although these properties have been consistently observed for other voltage-sensor toxins (Jung et al., 2005; Phillips et al., 2005; Milescu et al., 2007, 2009; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014), the stark differences observed here for PcTx1 demonstrate that tarantula toxins of similar structure do not necessarily have similar membrane interacting properties. The membrane interactions of voltage-sensor toxins are unique in how far they can penetrate the lipid bilayer, further supporting the idea that this class of toxins interacts with voltage sensors within the lipid bilayer.\n\nIn addition to providing a valuable comparison with voltage-sensor toxins, the interaction between PcTx1 and membranes may be interesting in its own right. Although a complex structure of PcTx1 and ASIC shows that the PcTx1 binding site is located about 45 \u00c5 above from the lipid bilayer, superficial adsorption of the toxin to the membrane would be predicted to enhance the rate of complex formation due to a reduction in dimensionality of diffusion (Axelrod and Wang, 1994). Interestingly, membrane interactions have also been reported for charybdotoxin (Ben-Tal et al., 1997), a strongly cationic scorpion toxin that blocks the external pore of some potassium channels (Miller, 1995; Banerjee et al., 2013). The interaction of charybdotoxin with membranes is heavily influenced by electrostatic interactions, suggesting that the toxin interacts relatively superficially, similar to what we observed with PcTx1. The superficial nature of the interaction between either PcTx1 or charybdotoxin and lipid membranes could be important because it would allow these toxins to departition rapidly so that it can bind to its receptor above the membrane, or possibly to explore the protein surface as an extension of the membrane surface. The voltage-sensor toxins, in contrast, must bind to helices embedded within the membrane, and thus must venture deeper into the lipid bilayer.\n\nThe inhibitor cystine knot (ICK) fold is found in many toxins and is thought to provide a structurally stable scaffold for presentation of surfaces to bind to receptors and ion channel proteins (Pallaghy et al., 1994; Norton and Pallaghy, 1998), and in principle many unique surfaces on these toxins could be used for this purpose. However, our results show that GxTx-1E uses a surface to bind to the S3b helix within voltage sensors that is similar to that which PcTx1 uses to bind to helix-5 in ASIC (Figure 5), even though the former binds within a membrane environment and the latter in aqueous solution. The underlying rationale for using common surfaces is likely related to the fact that both GxTx-1E and PcTx1 bind directly to \u03b1-helices. The X-ray structure of PcTx1 in complex with ASIC shows that the toxin clamps onto a solvent-exposed lateral surface of helix-5 (Figure 1) (Baconguis and Gouaux, 2012; Dawson et al., 2012), using a somewhat concave surface of the toxin formed by residues in loop 1 and loop 3, including both hydrophobic (W7, W24, F30, and P35) and polar residues (K8, K25, R26, S29 and T37). The equivalent surface of GxTx-1E is also formed by residues in loop 1 and loop 3 (Figure 5), which contain a similar variety of hydrophobic (F7, W8, W9, Y22, W28 and L30) and polar residues (K10, K15, S25, K27 and N32) where mutations weaken the apparent affinity of the toxin. This surface is also similar to that identified on SGTx1 (Wang et al., 2004; Milescu et al., 2007), a tarantula toxin related to hanatoxin and GxTx-1E that inhibits the Kv2.1 channel. Although the apparent affinity of the most critical mutants on SGTx1 could not be accurately determined because the affinity of the toxin is quite low (Wang et al., 2004), residues having disproportionately large effects on the apparent affinity of the toxin compared to the strength of membrane partitioning cluster together on a surface that is similar to what we identified here for GxTx-1E (Figure 5\u2014figure supplement 3) (Milescu et al., 2007). Given the similar binding faces for \u03b1-helices on 3 peptide toxins that share little commonality besides an tri-cystine scaffold, we suggest that this face of the ICK fold forms a shape complement (Jones, 2012) for \u03b1-helices that may be exploited by many other peptide ligands.\n\nTo further explore the structure of GxTx-1E bound to voltage-sensors, we constructed models of GxTx-1E bound to the X-ray structure of the activated/open Kv1.2/Kv2.1 paddle chimera by superimposing GxTx-1E with PcTx1 bound to ASIC and then transposing the toxin-helix interactions into the paddle chimera. We constructed five models where the toxin-helix interaction occurs in different registers in the S3b helix, similar to what we did in making the helix-5/paddle chimera models, and identified three models where the toxin could be accommodated without steric clashes with the channel (Figure 6, Figure 6\u2014figure supplements 1, 2). Although all three models position critical residues on GxTx-1E where they can interact with the S3b helix, our preferred model (Figure 6; Figure 6\u2014figure supplements 1E, 2E) positions the largest number of critical residues in GxTx-1E where they can interact with residues in the S3b helix. In addition, in this model the toxin interacts with many of the most critical residues within the S3b helix that have been identified using mutagenesis (Figure 6) (Swartz and MacKinnon, 1997b; Li-Smerin and Swartz, 2000, 2001; Milescu et al., 2009), with a placement of the toxin within the membrane that is compatible with the depth of partitioning inferred using spectroscopic and neutron diffraction approaches (Phillips et al., 2005; Jung et al., 2010; Mihailescu et al., 2014). Voltage-sensor toxins like GxTx-1E bind tighter to and stabilize the resting/closed state of Kv channels, however, they can remain bound when the voltage sensors activate and the channel opens (Phillips et al., 2005; Tilley et al., 2014). Thus, although our preferred model of GxTx-1E bound to the activated/open Kv1.2/Kv2.1 paddle chimera represents the toxin bound to a lower affinity activated state of the Kv channel, it nicely illustrates how GxTx-1E could interact with the S3b helix in ways that closely resemble what is seen in the X-ray structure of PcTx1 bound to ASIC. In the future it will be interesting to refine models of the complex by attempting to form bridges between toxin and channel, and ultimately solving structures of these fascinating complexes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig6-v1.jpg)\n\n**Figure 6.:** The preferred model of GxTx-1E bound to the X-ray structure of the voltage-sensing domain of the Kv1.2/2.1 paddle chimera generated as described in \u2018Materials and methods\u2019. The model maintains a relatively superficial position for the toxin relative to the membrane (see Figure 6\u2014figure supplements 1, 2). The complex is viewed from a transmembrane perspective (top) and from the extracellular perspective (bottom). GxTx-1E side-chains are colored by free energy perturbation scale (\u0394\u0394Go in kcal mol\u22121). F271 and E274 of the channel, where in Kv2.1, mutation to alanine decreases apparent Kd values for GxTx-1E (Milescu et al., 2009), are represented by blue colored side-chains.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Side chains of GxTx-1E (left; PDB 2WH9) and the voltage-sensing domain of the Kv1.2/Kv2.1 paddle chimera (right; PDB 2R9R) were colored by free energy perturbation values obtained by alanine scanning mutagenesis of the toxin (Table 1) or channel (Milescu et al., 2009). (B\u2013E) Models of GxTx-1E bound to the paddle chimera using Rosetta. Side chains are colored by Rosetta binding energy calculated from in slico alanine scans for GxTx-1E (left) and voltage-sensing domain (right). Models were generated as described in \u2018Materials and methods\u2019. The five models shown are for five registers for placement of the toxin relative to the S3b helix and each differ in register by one residue (100\u00b0 rotation of the toxin relative to the helical axis and a 5.4 \u00c5 translation). The model in B is the deepest positioning of the toxin and the model in F is the most superficial. All models are viewed from a transmembrane perspective. Residues beyond a distance threshold of 12 \u00c5 from any binding partner are colored gray. Steric clashes between the toxin and channel occur in the models in C and D. The model in E corresponds to that shown in Figure 6.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06774/elife-06774-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Perturbations in the free energy of GxTx-1E interactions with the Kv2.1 channel assessed from alanine scans of the toxin (Table 1) and channel (Milescu et al., 2009). Gray circles in the results of the alanine scan of GxTx-1E represent mutation of either Proline or Glycine, which likely influence the local structure of the toxin. (B\u2013F) Calculated perturbations in ROSETTA binding energy between GxTx-1E and Kv2.1 resulting from alanine scans of the toxin and S3b helix of the S1\u2013S4 domain for the five models illustrated in Figure 6\u2014figure supplement 1. Energies were not calculated for residues beyond a distance threshold of 12 \u00c5 from any binding partner.\n\n## Materials and methods\n\n### Solid phase peptide synthesis of tarantula toxins\n\nPeptide synthesis was conducted on an Applied Biosystems model 433A peptide synthesizer as previously described (Lee et al., 2010). The linear precursor was synthesized using solid-phase methodology with Fmoc chemistry, starting from Fmoc-Pro-Wang resin (Fmoc-Thr-Wang resin for PcTx1) using a variety of blocking groups for the protection of the amino acids. All the GxTx1E peptides were synthesized with norleucine (Nle) in place of Met35 to avoid oxidation of the toxin. A 4 mol excess of Fmoc amino acid, DIC, and Cl-HOBt were used for amino acid activation. After trifluoroacetic acid cleavage, the crude linear peptide was extracted with 2 M acetic acid and diluted to a final concentration of 25 \u00b5M in a solution containing 0.1 M ammonium acetate, 1 M guanidine-HCl and 2.5 mM reduced/0.25 mM oxidized glutathione (pH 8.0 with aqueous NH4OH) and stirred slowly at 4\u00b0C for 3 days. The folding reaction was monitored with RP-HPLC and the crude oxidized product was purified by preparative RP-HPLC with a C18 silica column. The purity of the synthetic PcTx1, GxTx1E and the Ala mutants was confirmed by analytical RP-HPLC and MALDI-TOF-MS measurements. The concentration of the toxin was determined by measuring absorbance at 280 nm using calculated extinction coefficients (Gill and von Hippel, 1989).\n\n### Construction of Kv2.1-ASIC1a chimeras and electrophysiological recording\n\nChimeras were generated using sequential PCR with the Kv2.1\u22067 channel (Li-Smerin and Swartz, 1998) as template. Primers encoding the 9-amino acid sequence of helix-5 from ASIC1a were utilized for overlap PCR. The DNA sequence of all constructs and mutants was confirmed by automated DNA sequencing. Complementary RNA (cRNA) was synthesized using T7 polymerase (mMessage mMachine kit; Ambion) after linearizing the DNA with appropriate restriction enzymes.\n\nOocytes from Xenopus laevis were removed surgically and incubated with agitation for 1 hr in a solution containing (in mM) 82.5 NaCl, 2.5 KCl, 1 MgCl2, 5 HEPES, pH 7.6 (with NaOH), and collagenase (2 mg/ml; Worthington Biochemical). Defolliculated oocytes were injected with cRNA encoding the Kv2.1 channel constructs and incubated at 17\u00b0C in a solution containing (in mM) 96 NaCl, 2 KCl, 1 MgCl2, 1.8 CaCl2, 5 HEPES, pH 7.6 with NaOH, and gentamicin (50 \u03bcg/ml, GIBCO-BRL), for 16\u201372 hr before electrophysiological recording. Oocyte membrane voltage was controlled using an OC-725C oocyte clamp (Warner Instruments). Data were filtered at 1 kHz and digitized at 10 kHz. Microelectrode resistances were 0.1\u20131 M\u03a9 when filled with 3 M KCl. The external recording solution for all recordings with GxTx1E and its analogues contained 50 mM RbCl, 50 mM NaCl, 10 mM HEPES (increased to 20 mM at 10 \u03bcM and higher concentrations of F7A toxin mutant), 1 mM MgCl2 and 0.3 mM CaCl2 at pH 7.6 (with NaOH). All experiments were performed at room temperature (\u223c22\u00b0C). Voltage-activations relationships in the absence and presence of different concentrations of the synthesized toxin were recorded. The inhibitory activity of the synthetic toxins were examined against the Kv2.1 channel by taking steady-state current measurements following weak depolarizations at 10-s intervals before, during and after addition of toxin to the recording chamber until the effect of the toxin on the channel reached equilibrium. At weak depolarizations, leak and endogenous current contributions to steady-state current levels were accounted for by using clampfit to subtract current before activation of the channels at those voltages. Experiments with PcTx1 were carried out with external solution containing 50 mM KCl.\n\nWe examined the toxin occupancy of closed or resting channels at negative holding voltages where open probability is low and we estimated the fraction of unbound channels (Fu) using depolarizations that are too weak to open toxin-bound channels, as previously described (Swartz and MacKinnon, 1997a, 1997b; Li-Smerin and Swartz, 2000; Lee et al., 2003; Phillips et al., 2005; Alabi et al., 2007; Bosmans et al., 2008; Milescu et al., 2009). For all toxins, we calculated the ratio of steady-state currents (I/I0) at weak depolarizations before addition (I0) of different concentrations of toxin and after the toxin effects reached equilibrium (I). Voltage-activation relations before and after addition of toxin indicated that the values of I/I0 at these weak depolarizations were in the plateau phase where toxin-bound channels do not open. The apparent Kd for each toxin was calculated assuming four independent toxin-binding sites per channel, with single occupancy being sufficient to inhibit opening in response to weak depolarizations: Kd = ((1/(1 \u2212 Fu1/4)) \u2212 1) [Toxin].\n\n### Fluorescence spectroscopy\n\nLarge unilamellar vesicles (LUVs) were prepared by drying the phospholipids from a chloroform solution under a nitrogen stream. The dried lipid film was rehydrated in buffer containing 10 mM HEPES, 1 mM EDTA, pH 7.6 (HEB). The resulting dispersions were extruded through 100 nm pore size polycarbonate filters (Millipore Corp.) till the solution became clear. All fluorescence measurements were performed in quartz cuvettes with 1 cm path length. Fluorescence spectra (averaging three spectra) were recorded between 300 and 450 nm (5 nm band pass, 0\u00b0 polarizer) using an excitation wavelength of 280 nm (5 nm band pass, 90\u00b0 polarizer) (SPEX FluoroMax 3 spectrofluorometer) and corrected for vesicle scattering. For lipid partitioning experiments, LUVs composed of a mix of 1:1 molar ratios of POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) and POPG (1-palmitoyl-2-oleoyl-sn-glycero-3-[phospho-rac-(1-glycerol)]) were added to a solution of toxin (\u223c2 \u03bcM final concentration), maintained at 25\u00b0C with continuous stirring in a total volume of 2 ml. Mole-fraction partitioning coefficients (Kx) were calculated by measuring the fluorescence intensity (F) at 320 nm and normalizing to the zero lipid fluorescence intensity (F0) (Ladokhin et al., 2000; Milescu et al., 2007). Kx was calculated based on the best fits of the following equation to the data: F/F0(L) = 1 + (F/F0max \u2212 1)Kx[L]/([W] + Kx[L]), where F/F0(L) is the change in fluorescence intensity for a given concentration of lipid, F/F0max is the maximum fluorescence increase at high lipid concentrations, [L] is the average available lipid concentration (60% of total lipid concentration) and [W] is the molar concentration of water (55.3 M).\n\nProtection of tryptophan fluorescence from acrylamide quenching was examined in the absence and presence of lipids (toxin: lipid = 1:500) by titration with increasing concentrations of acrylamide (Milescu et al., 2007). The Stern\u2013Volmer quenching constant (KSV) was calculated based on the best fits of the following equation to the data: F0/F = 1 + KSV[Q], where F0 and F are fluorescence of the toxin in the absence and presence of acrylamide, and [Q] is the concentration of acrylamide. Dequenching of tryptophan fluorescence by addition of lipids to a pre-quenched solution of toxin and acrylamide is a sensitive and reliable method to determine the strength of lipid interactions for molecules which do not exhibit large spectroscopic changes in response to lipid binding (Posokhov et al., 2007). A solution containing \u223c 2 \u00b5M toxin and 0.3 M acrylamide was stirred continuously with addition of increasing concentrations of LUVs composed of 1:1 mixture of POPC and POPG. Fluorescence spectra (averaging three spectra) were recorded between 300 and 450 nm (5 nm band pass, 0\u00b0 polarizer) using an excitation wavelength of 280 nm (5 nm band pass, 90\u00b0 polarizer) (SPEX FluoroMax 3 spectrofluorometer) and corrected for vesicle scattering. For calculating mole\u2013fraction partitioning coefficients (Kdx), the maximal fluorescence intensity (F at \u03bbmax) was measured and normalized to the zero lipid fluorescence intensity (F0). Kdx was calculated based on the best fits of the following equation to the data: F/F0(L) = 1 + (F/F0max \u2212 1)Kdx[L]/([W] + Kdx[L]), where F/F0(L) is the change in maximum fluorescence intensity for a given concentration of lipid, F/F0max is the maximum fluorescence increase at highest lipid concentration, [L] is the average available lipid concentration (60% of total lipid concentration) and [W] is the molar concentration of water (55.3 M).\n\nFor depth-dependent fluorescence quenching experiments with brominated lipids, LUVs contained a 1:1 molar ratio of POPG and POPC 6,7-, 9,10-, or 11,12-1-palmitoyl-2-stearoyl(dibromo)-sn-glycero-3-phosphocholine (diBr; Avanti Polar Lipids, Alabaster, AL). Fluorescence spectra were recorded between 300 and 450 nm using an excitation wavelength of 280 nm, corrected for vesicle scattering and normalized to the zero lipid fluorescence intensity.\n\n### Construction of toxin-Kv channel models\n\nStructural modeling of GxTx-1E\u2014Kv1.2-Kv2.1 chimera complexes was performed using ROSETTA (Gray et al., 2003; Rohl et al., 2004; Bradley et al., 2005; Wang et al., 2007; Raman et al., 2009; Tyka et al., 2011; Conway et al., 2014). For each Kv2.1-ASIC1a chimera expressed, residues of S3b segment from the crystal structure of a Kv1.2-Kv2.1 channel (PDB 2R9R) (Long et al., 2007) were aligned in register with residues of ASIC1a helix-5 from the ASIC1a:PcTx1 crystal structure (PDB 4FZ0) (Baconguis and Gouaux, 2012). Then a GxTx-1E NMR structure (PDB 2WH9) (Lee et al., 2010) was aligned with PcTx1 structure to minimize RMSD between cystine \u03b1-carbons of the two toxins. Each GxTx-1E\u2014Kv1.2-Kv2.1 chimera complex model was the relaxed using ROSETTA to identify the lowest energy binding models. ROSETTA binding energies at the toxin\u2014channel interface (\u0394\u0394G) were calculated from in silico alanine scans as described previously (Kortemme and Baker, 2002; Kortemme et al., 2004).\n",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "340498bc-98c7-4fad-8b11-8b2b1d8de17b",
+      "submission_id": "d735783d-d2c4-4c7d-a22e-e6ff03e15fdb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06774.016](https://doi.org/10.7554/eLife.06774.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTarantula toxins use common surfaces for interacting with Kv and ASIC ion channels\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor), a Reviewing editor, and two reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Rick Aldrich (Reviewing editor); Chris Miller (peer reviewer). A further reviewer remains anonymous.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript by Gupta et al. compares membrane interaction properties and channel binding surfaces of the ASIC1-targeting toxin PcTx1 with GxTx-1E, a toxin targeting potassium channels. The authors conclude that voltage-sensor toxins (GxTx-1E) partition deeper into the bilayer than PcTx1 which does not target voltage-sensors. Moreover, the authors suggest that both toxins have evolved a concave surface for interacting with alpha-helices whether this happens in aqueous or lipid environments. All investigators involved in this study are experts in their respective fields, which is reflected in the meticulous execution of the reported experiments. Altogether, this manuscript does a good job at convincing the reader of the author's conclusions. The manuscript is well written and well-referenced. The strongest and most important contribution to the field is that tarantula toxins of similar structure do not necessarily have similar membrane interacting properties which may reflect on their channel selectivity/potency properties.\n\nThe following points need to be addressed in a revised version:\n\n1) For a non-expert, the effect of PcTx1 on membrane partitioning using Trp fluorescence seems non-significant (Figure 2B). Can the authors elaborate on why they think this is significant in the corresponding manuscript section? Maybe it is worth showing fluorescence emission spectra for PcTx1 at higher lipid concentrations? We do understand that ensuing experiments attempt to verify the effect shown in Figure 2B but readers may get confused here. Also, do the authors expect to see a difference in membrane partitioning when adding in other lipids such as sphingomyelin and cholesterol to make the vesicles more mammalian-like (e.g. Cao et al., Neuron. 2013 77(4):667-79)? Finally, can the authors refer to (or perform) a control experiment under similar conditions with a peptide that is know not to partition in the membrane at all (if this exists)?\n\n2) The Kdx value of PcTx1 obtained using the acrylamide experiment seems very different than that obtained using blue-shifts in Trp fuorescence whereas that of GxTx-1E is in reasonable agreement with the value obtained in Figure 2. Is there an explanation for this discrepancy? Is it possible that the two toxins present different surfaces to lipid vesicles which may alter the Trp that is presented to the lipid membrane?\n\n3) Have the authors tried to insert longer S3b-S4 segments of ASIC1a into Kv2.1 to make the channel sensitive to PcTx1? From their previous publications on sodium channel constructs, it seems that transferring regions between channels is not always straightforward and may require some ingenuity (e.g. alignment gaps are frequently observed).\n\n4) If GxTx-1E can partition deeply into the membrane to interact with the voltage sensor in Kv2.1 and PcTx1 cannot, but both toxins share a mechanism to latch onto alpha-helices, is it unreasonable to expect an effect of GxTx-1E on ASIC channels? Have the authors tested the effect of (maybe higher concentrations) GxTx-1E on ASICs?\n",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "381e8709-224d-4249-bc2f-6ab93238e0a7",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C1",
+      "claim": "Tarantula toxins that bind to voltage-sensing domains of voltage-activated ion channels are thought to partition into the membrane and bind to the channel within the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Tarantula toxins that bind to voltage-sensing domains of voltage-activated ion channels are thought to partition into the membrane and bind to the channel within the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature establishing this model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "0ea1bcc1-787d-4953-b4c9-dc2196558521",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C2",
+      "claim": "Psalmotoxin (PcTx1) was recently crystallized in complex with the extracellular domain of an acid sensing ion channel (ASIC).",
+      "claim_type": "EXPLICIT",
+      "source": "While no structures of a voltage-sensor toxin bound to a channel have been solved, a structural homolog, psalmotoxin (PcTx1), was recently crystalized in complex with the extracellular domain of an acid sensing ion channel (ASIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a structural determination, supported by the existence of crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "68c6b422-c224-4d42-a962-b54ab970fc37",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C3",
+      "claim": "Both voltage-sensor toxins and PcTx1 interact with membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that both types of tarantula toxins interact with membranes, but that voltage-sensor toxins partition deeper into the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript (Figures 2 and 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "516ae519-b4b6-4684-a3a4-0c523129a230",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C4",
+      "claim": "Voltage-sensor toxins partition deeper into the bilayer than PcTx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that both types of tarantula toxins interact with membranes, but that voltage-sensor toxins partition deeper into the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from brominated lipid quenching experiments (Figure 3E, F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "a2bffbaf-295a-4d6f-9c43-00da08f6e980",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C5",
+      "claim": "Tarantula toxins have evolved a similar concave surface for clamping onto \u03b1-helices that is effective in aqueous or lipidic physical environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results suggest that tarantula toxins have evolved a similar concave surface for clamping onto \u03b1-helices that is effective in aqueous or lipidic physical environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mutagenesis data and structural comparisons (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "1cdb5475-c6e0-4c0a-919b-646329154870",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C6",
+      "claim": "Scorpion toxins that physically block the pore of K+ channels were initially used to identify pore-forming regions of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, scorpion toxins that physically block the pore of K+ channels (MacKinnon and Miller, 1988) were initially used to identify pore-forming regions of the channel (MacKinnon and Miller, 1989), and to determine the stoichiometry of subunits (MacKinnon, 1991), inactivation gates (MacKinnon et al., 1993), as well as accessory subunits (Morin and Kobertz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "4a7ce370-54c8-47da-b88b-ef88752053e4",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C7",
+      "claim": "Tarantula and scorpion toxins can bind to voltage-sensing domains in voltage-activated ion channels and either retard or facilitate activation in response to changes in voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both tarantula and scorpion toxins can bind to voltage-sensing domains in voltage-activated ion channels and either retard or facilitate activation in response to changes in voltage (Rogers et al., 1996; Swartz and MacKinnon, 1997a, 1997b; Cest\u00e8le et al., 1998; Milescu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "c080cf0e-92f1-4c0c-a800-37de607e1b20",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C8",
+      "claim": "Voltage-sensor toxins have been valuable tools to explore the mechanism of voltage sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "This second class of toxins have been valuable tools to explore the mechanism of voltage sensing (Phillips et al., 2005; Alabi et al., 2007; Campos et al., 2007, 2008) and the roles of individual voltage sensors in the mechanisms of activation and inactivation (Campos et al., 2007; Bosmans et al., 2008; Campos et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "3d26ab8b-47db-4664-ab13-a2a2766deed1",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C9",
+      "claim": "Tarantula toxins have been discovered that activate transient receptor potential (TRP) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Tarantula toxins have also been discovered that activate transient receptor potential (TRP) channels (Bohlen et al., 2010), and both tarantula toxin and snake toxins have been identified that activate acid-sensing ion channels (ASIC) (Chen et al., 2006; Salinas et al., 2006; Bohlen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "7e19977b-17b6-44ab-aeaa-d9d3bbdc35cb",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C10",
+      "claim": "Tarantula toxins and snake toxins have been identified that activate acid-sensing ion channels (ASIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Tarantula toxins have also been discovered that activate transient receptor potential (TRP) channels (Bohlen et al., 2010), and both tarantula toxin and snake toxins have been identified that activate acid-sensing ion channels (ASIC) (Chen et al., 2006; Salinas et al., 2006; Bohlen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "19b60a5f-dea7-4004-918a-970d8e9758ce",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C11",
+      "claim": "Toxins were used to stabilize specific conformations of TRPV1 channel and ASICs for structure determination by cryo-electron microscopy and X-ray diffraction.",
+      "claim_type": "EXPLICIT",
+      "source": "For both the TRPV1 channel and ASICs, these toxins were used to stabilize specific conformations for structure determination by cryo-electron microscopy and X-ray diffraction (Baconguis and Gouaux, 2012; Dawson et al., 2012; Baconguis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "d4e65521-c725-4b74-a853-d6410557c583",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C12",
+      "claim": "Hanatoxin and GxTx-1E are thought to target voltage-activated potassium (Kv) channels by partitioning into the lipid membrane and binding to their voltage-sensing domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Tarantula toxins such as hanatoxin and GxTx-1E are thought to target voltage-activated potassium (Kv) channels by partitioning into the lipid membrane and binding to their voltage-sensing domains to modify how the channel opens in response to changes in membrane voltage (Swartz and MacKinnon, 1997a, 1997b; Li-Smerin and Swartz, 2000, 2001; Lee and MacKinnon, 2004; Wang et al., 2004; Phillips et al., 2005; Alabi et al., 2007; Milescu et al., 2007, 2009, 2013; Schmidt and MacKinnon, 2008; Bosmans et al., 2011a; Tilley et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by extensive citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "cc948bf8-3f9f-4977-b8c6-977a8ecf3b43",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C13",
+      "claim": "The strong interaction of tarantula toxins with lipid membranes is mediated by a prominent amphipathic surface on the toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong interaction of these tarantula toxins with lipid membranes is mediated by a prominent amphipathic surface on the toxins (Figure 1F) (Takahashi et al., 2000; Lee et al., 2004, 2010), which facilitates their entry into the membrane (Lee and MacKinnon, 2004; Milescu et al., 2007, 2009; Jung et al., 2010; Mihailescu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and reference to Figure 1F showing the amphipathic surface.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "d74ee517-fbf1-42d4-8f4c-329fc614d530",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C14",
+      "claim": "No structures of complexes between tarantula toxins and Kv channels have been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many aspects of this inhibitory mechanism have been well-studied (Swartz and MacKinnon, 1997a, 1997b; Li-Smerin and Swartz, 1998, 2000; Lee et al., 2003; Wang et al., 2004; Phillips et al., 2005; Alabi et al., 2007; Milescu et al., 2007, 2009; Bosmans et al., 2011a; Milescu et al., 2013; Mihailescu et al., 2014; Tilley et al., 2014), no structures of complexes between tarantula toxins and Kv channels have been solved, limiting our understanding of how tarantula toxins dock onto voltage sensors and influence their conformational dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of structural data, supported by the lack of such structures in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "96a1518a-cb10-4e76-9f0c-31c088fc6230",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C15",
+      "claim": "PcTx1 was recently crystallized in complex with ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a structurally related tarantula toxin named PcTx1 was recently crystalized in complex with ASIC1a (Baconguis and Gouaux, 2012; Dawson et al., 2012) (Figure 1A, left), revealing that the toxin clamps onto the thumb helix-5 (Figure 1G) and inserts an Arginine finger into the subunit interface to interact with residues involved in proton activation of the channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to crystal structures and reference to Figure 1A and 1G.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "1aba0313-3add-41d5-a2c6-3388c68fb86a",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C16",
+      "claim": "PcTx1 clamps onto the thumb helix-5 of ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a structurally related tarantula toxin named PcTx1 was recently crystalized in complex with ASIC1a (Baconguis and Gouaux, 2012; Dawson et al., 2012) (Figure 1A, left), revealing that the toxin clamps onto the thumb helix-5 (Figure 1G) and inserts an Arginine finger into the subunit interface to interact with residues involved in proton activation of the channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to crystal structures and reference to Figure 1G.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "a30bab02-62d2-4909-83cb-2625edf353dd",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C17",
+      "claim": "PcTx1 inserts an Arginine finger into the subunit interface to interact with residues involved in proton activation of ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a structurally related tarantula toxin named PcTx1 was recently crystalized in complex with ASIC1a (Baconguis and Gouaux, 2012; Dawson et al., 2012) (Figure 1A, left), revealing that the toxin clamps onto the thumb helix-5 (Figure 1G) and inserts an Arginine finger into the subunit interface to interact with residues involved in proton activation of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "acd44ba0-83a1-4b5a-b1d2-188c2cc5cdf5",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C18",
+      "claim": "PcTx1 modulates the gating properties of ASIC1 channels by enhancing the apparent affinity of these channels for protons.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 modulates the gating properties of ASIC1 channels by enhancing the apparent affinity of these channels for protons, thereby promoting open and desensitized states of the channel (Escoubas et al., 2000, 2003; Chen et al., 2005; Salinas et al., 2006; Baconguis and Gouaux, 2012; Dawson et al., 2012), an allosteric mechanism related to that employed by tarantula toxins targeting Kv channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "ffbcab55-5eb2-4d12-8d1f-6b9f405b0a26",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C19",
+      "claim": "The structures of PcTx1 bound to ASIC show that the toxin binds to the protein in aqueous solution far from the transmembrane domains of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the present model for tarantula toxins binding to Kv channels within the membrane (Figure 1A, right), the structures of PcTx1 bound to ASIC show that the toxin binds to the protein in aqueous solution far from the transmembrane domains of the channel (Figure 1A left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1A showing the binding location.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "a1d682bb-785e-43cc-96f8-5e70a4ad1cab",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C20",
+      "claim": "The overall fold of PcTx1 and voltage sensor toxins are quite similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the overall fold of PcTx1 and voltage sensor toxins are quite similar (Figure 1H) and PcTx1 has significant amphipathic character (Figure 1D), similar to that seen in the structure of voltage-sensor toxins (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1H showing structural similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "28d4d316-a260-4094-a76e-5b48d2b8b590",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C21",
+      "claim": "PcTx1 has significant amphipathic character similar to that seen in voltage-sensor toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the overall fold of PcTx1 and voltage sensor toxins are quite similar (Figure 1H) and PcTx1 has significant amphipathic character (Figure 1D), similar to that seen in the structure of voltage-sensor toxins (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figures 1D and 1E showing amphipathic surfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "5e2a7c56-5500-407b-9f60-326f077ab896",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C22",
+      "claim": "PcTx1 and GxTx-1E have a similar spacing of six Cys residues that participate in forming disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Both toxins have a similar spacing of six Cys residues that participate in forming disulfide bonds (Figure 1B), and NMR solution structures reveal they adopt similar folds (Figure 1C,D,H), with backbone root mean square deviation (RMSD) over 20\u201322 core residues of 1.0\u20131.2 \u00c5 and over all residues of 2.9 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figure 1B and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "2357ba2a-adb2-4a50-8579-0ee9b519fe9a",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C23",
+      "claim": "NMR solution structures reveal PcTx1 and GxTx-1E adopt similar folds with backbone RMSD over 20-22 core residues of 1.0-1.2 \u00c5 and over all residues of 2.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Both toxins have a similar spacing of six Cys residues that participate in forming disulfide bonds (Figure 1B), and NMR solution structures reveal they adopt similar folds (Figure 1C,D,H), with backbone root mean square deviation (RMSD) over 20\u201322 core residues of 1.0\u20131.2 \u00c5 and over all residues of 2.9 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis and reference to Figures 1C, D, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "3f92fba7-8b6a-4d58-973c-90bfa3f372f8",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C24",
+      "claim": "PcTx1 and GxTx-1E have five other positions that are well-conserved, but otherwise their primary sequences vary considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "The two toxins have five other positions that are well-conserved, but otherwise their primary sequences vary considerably (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "cf1e2f81-3651-4f5b-8168-61891f3ec16d",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C25",
+      "claim": "PcTx1 contains two solvent-exposed Trp residues, one in loop 1 and one in loop 4.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 contains two solvent-exposed Trp residues, one in loop 1 and one in loop 4, whereas GxTx-1E contains three, two in loop 1 and one in loop 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the toxin structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "efe9e4f4-7118-4f49-9311-e5ab25bf379f",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C26",
+      "claim": "GxTx-1E contains three solvent-exposed Trp residues, two in loop 1 and one in loop 4.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 contains two solvent-exposed Trp residues, one in loop 1 and one in loop 4, whereas GxTx-1E contains three, two in loop 1 and one in loop 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the toxin structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "1ec5affe-8aaa-48da-b64e-11742175e827",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C27",
+      "claim": "The clusters of solvent-exposed hydrophobic residues are on distinct surfaces of PcTx1 and GxTx-1E.",
+      "claim_type": "EXPLICIT",
+      "source": "The amphipathic character of these toxins can be seen in surface renderings of the toxin structures when coloring residues using the Hessa-Heijne hydrophobicity scale (Hessa et al., 2005), although it is interesting that the clusters of solvent-exposed hydrophobic residues are on distinct surfaces of the two toxins (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reference to Figures 1D and 1E showing different hydrophobic surfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "31cbefd5-b285-4c29-ba5e-ea30e2d866b7",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C28",
+      "claim": "Tarantula toxins targeting ion channel voltage sensors interact favorably with lipid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have established that tarantula toxins targeting ion channel voltage sensors interact favorably with lipid membranes (Lee and MacKinnon, 2004; Suchyna et al., 2004; Jung et al., 2005; Phillips et al., 2005; Milescu et al., 2007, 2009; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "712c901a-6182-46ac-9fcc-b6bb91f744c0",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C29",
+      "claim": "Pronounced blue shifts in Trp fluorescence are observed with GxTx-1E when lipid vesicles containing a 1:1 mix of POPC and POPG are added to aqueous solutions of the toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Pronounced blue shifts in Trp fluorescence are observed with GxTx-1E when lipid vesicles containing a 1:1 mix of POPC and POPG are added to aqueous solutions of the toxin (Figure 2A), consistent with a previous study (Milescu et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "ae8f64cc-d519-485d-84f6-2c50e6c5fc86",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C30",
+      "claim": "GxTx-1E has a mole fraction Kx of 4.6 \u00b1 0.8 \u00d7 10^6 for membrane partitioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting of fluorescence intensity of GxTx-1E in the blue shifted region (320 nm) of the emission spectra as a function of lipid concentration and fitting of a partition function (Figure 2C) yields a mole fraction Kx of 4.6 \u00b1 0.8 \u00d7 106, indicating favorable interactions of the toxin with membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "570280e9-05fd-4b22-b8d2-1f93c4ef2064",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C31",
+      "claim": "PcTx1 exhibits detectable blue shifts in emission spectra upon addition of lipid vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether PcTx1 can interact with membranes, we performed similar experiments and observed detectable blue shifts in the emission spectra of the toxin upon the addition of lipid vesicles (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "f9d8c7ad-9064-48e8-926d-908e07babd89",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C32",
+      "claim": "The blue shifts for PcTx1 were very small (maximal shift of \u223c 2 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "The blue shifts in the case of PcTx1 were very small (maximal shift of \u223c 2 nm), however, they varied as a function of lipid concentration and saturated at high lipid concentrations, suggestive of an interaction between PcTx1 and lipid membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "643c2a4f-3ab4-401d-9d9e-59b75f2642ad",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C33",
+      "claim": "The blue shifts for PcTx1 varied as a function of lipid concentration and saturated at high lipid concentrations, suggestive of an interaction between PcTx1 and lipid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The blue shifts in the case of PcTx1 were very small (maximal shift of \u223c 2 nm), however, they varied as a function of lipid concentration and saturated at high lipid concentrations, suggestive of an interaction between PcTx1 and lipid membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data showing concentration-dependent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "1f747b9d-1843-47df-8020-33c07601bf5e",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C34",
+      "claim": "Lipid vesicles decrease the Stern-Volmer constant for acrylamide quenching of GxTx-1E from 37.7 M^-1 to 9.1 M^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of GxTx-1E in aqueous solution, we observed that the Trp fluorescence of the toxin is quenched by the addition of acrylamide in a concentration-dependent manner (Figure 2E), and fitting of the quenching relationship with a linear function yields a slope (Stern\u2013Volmer constant; Ksv) of 37.7 M\u22121. Addition of lipid vesicles decreased the Ksv to 9.1 M\u22121 (Figure 2E), indicating that membranes can shield the Trp residues in GxTx-1E from the soluble quencher.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "d27dd043-3ecc-43ca-9ccb-7e4ecfe0530b",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C35",
+      "claim": "Membranes can shield the Trp residues in GxTx-1E from the soluble quencher acrylamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of lipid vesicles decreased the Ksv to 9.1 M\u22121 (Figure 2E), indicating that membranes can shield the Trp residues in GxTx-1E from the soluble quencher.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the acrylamide quenching data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "330a872a-5978-47e6-9434-2d61f9584020",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C36",
+      "claim": "PcTx1 exhibits strong quenching by acrylamide in aqueous solution with a Ksv of 29.2 M^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "When these experiments were performed with PcTx1, we again observed strong quenching by acrylamide in aqueous solution (Ksv of 29.2 M\u22121) and robust protection of quenching by the addition of lipid vesicles (Ksv of 11.2 M\u22121; Figure 2F), confirming that PcTx1 can interact with membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "7044f7eb-cdb7-4ce9-94f1-c642d49ec1de",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C37",
+      "claim": "Addition of lipid vesicles provides robust protection of PcTx1 from acrylamide quenching, reducing Ksv to 11.2 M^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "When these experiments were performed with PcTx1, we again observed strong quenching by acrylamide in aqueous solution (Ksv of 29.2 M\u22121) and robust protection of quenching by the addition of lipid vesicles (Ksv of 11.2 M\u22121; Figure 2F), confirming that PcTx1 can interact with membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "412662d0-b825-4c2e-827a-7b3d5d2bc925",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C38",
+      "claim": "PcTx1 can interact with membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "When these experiments were performed with PcTx1, we again observed strong quenching by acrylamide in aqueous solution (Ksv of 29.2 M\u22121) and robust protection of quenching by the addition of lipid vesicles (Ksv of 11.2 M\u22121; Figure 2F), confirming that PcTx1 can interact with membranes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by acrylamide quenching experiments shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "64fa9d71-8c35-4bc5-9fc6-c146f34b01e1",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C39",
+      "claim": "GxTx-1E has a Kdx value of (1.1 \u00b1 0.2) \u00d7 10^7 determined from acrylamide dequenching experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "When the increase in maximal fluorescence intensity was plotted against the available lipid concentration and a partition function fit to the data, a Kdx value of (1.1 \u00b1 0.2) \u00d7 107 was obtained for GxTx-1E, in reasonable agreement with the mole fraction partition coefficient for the toxin determined using blue-shifts in Trp fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis from Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "13fb8985-5580-4c56-8d23-3ce4ce446b71",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C40",
+      "claim": "PcTx1 has a Kdx value of (4.3 \u00b1 0.6) \u00d7 10^6 from acrylamide dequenching experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of PcTx1, we obtained a value of (4.3 \u00b1 0.6) \u00d7 106, demonstrating that PcTx1 interacts strongly with membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis from Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "34742278-09a8-4ba3-aae3-d91022c68c3b",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C41",
+      "claim": "The solvent accessible surface area for the hydrophobic surface of PcTx1 is 380 \u00c5^2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the solvent accessible surface area for the hydrophobic surface of PcTx1 is 380 \u00c52, which compares with a value of 703 \u00c52 for GxTx-1E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "7b599e31-4e15-4846-abe6-16dda8f3df96",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C42",
+      "claim": "The solvent accessible surface area for the hydrophobic surface of GxTx-1E is 703 \u00c5^2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the solvent accessible surface area for the hydrophobic surface of PcTx1 is 380 \u00c52, which compares with a value of 703 \u00c52 for GxTx-1E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "a6a070a6-2c38-48ae-a849-5b903a8062ed",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C43",
+      "claim": "GxTx-1E exhibits strong quenching by brominated lipids similar to what has been reported for other voltage-sensor toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed quenching experiments with these three brominated lipids and GxTx-1E, we observed strong quenching that is similar to what has been reported previously for other voltage-sensor toxins (Figure 3E) (Phillips et al., 2005; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014), confirming an intimate interaction of the toxin with the hydrophobic core of the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "2339499c-a892-4866-adae-ce4be04fa4d8",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C44",
+      "claim": "GxTx-1E has an intimate interaction with the hydrophobic core of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed quenching experiments with these three brominated lipids and GxTx-1E, we observed strong quenching that is similar to what has been reported previously for other voltage-sensor toxins (Figure 3E) (Phillips et al., 2005; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014), confirming an intimate interaction of the toxin with the hydrophobic core of the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the brominated lipid quenching data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "1d9b06a8-f48d-4180-9bc2-333da66eeaa3",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C45",
+      "claim": "PcTx1 exhibits only very weak quenching by brominated lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we undertook similar experiments with PcTx1, we observed only very weak quenching by brominated lipids, again with only relatively small differences between the three lipids (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "11aca78f-5469-473e-9b0c-83ed1c9fe5dc",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C46",
+      "claim": "The weak quenching of PcTx1 by brominated lipids indicates that this toxin interacts considerably more superficially with membranes compared to voltage-sensor toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "The measurable quenching observed for PcTx1 confirms that this toxin interacts with membranes, however, the much weaker quenching when compared to voltage-sensor toxins indicates that this toxin interacts considerably more superficially with membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the brominated lipid quenching data comparing PcTx1 to voltage-sensor toxins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "8085f71b-f85c-4ae1-b49b-e0d218bb07ae",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C47",
+      "claim": "The X-ray structure of PcTx1 bound to ASIC shows that the toxin interacts primarily with residues on one face of thumb helix-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray structure of PcTx1 bound to ASIC shows that the toxin interacts primarily with residues on one face of thumb helix-5, with an interface comprised of both hydrophobic and polar residue interactions (Figure 1G) (Baconguis and Gouaux, 2012; Dawson et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to crystal structures and reference to Figure 1G.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "9eab8ebe-78c4-4bd1-8ba8-5457129d2738",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C48",
+      "claim": "The PcTx1-ASIC interface is comprised of both hydrophobic and polar residue interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray structure of PcTx1 bound to ASIC shows that the toxin interacts primarily with residues on one face of thumb helix-5, with an interface comprised of both hydrophobic and polar residue interactions (Figure 1G) (Baconguis and Gouaux, 2012; Dawson et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to crystal structures and reference to Figure 1G.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "b0522d54-45df-406b-b192-8732cfcd814a",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C49",
+      "claim": "PcTx1 contains an Arg finger motif composed of R26, R27 and R28 that is required for activation of ASIC.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 also contains an Arg finger motif composed of R26, R27 and R28 that is required for activation of ASIC through interactions with channel residues situated in a crevice between subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural and functional observation from the crystal structure and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "82d41841-14ac-491a-9e67-00e5e1b0e1c3",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C50",
+      "claim": "The S3b helix within the voltage-sensing domains of Kv channels contains the most influential determinants of voltage-sensor toxin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of voltage-sensor toxins such as hanatoxin and GxTx-1E, the S3b helix within the voltage-sensing domains of Kv channels contains the most influential determinants of toxin binding, and these also involve a combination of hydrophobic and polar residue interactions (Swartz and MacKinnon, 1997b; Li-Smerin and Swartz, 2000, 2001; Alabi et al., 2007; Milescu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "29ae3da3-9373-4c9a-91ab-de9deb8b5e88",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C51",
+      "claim": "PcTx1 has nM affinity for ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 has nM affinity for ASIC1a (Chen et al., 2006; Dawson et al., 2012), but even at very high concentrations (5 \u00b5M) has no effect on the Kv2.1 channel (Figure 4, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous studies and experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "aaaa14bd-5279-4d71-a231-20fb4b6c5096",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C52",
+      "claim": "PcTx1 at 5 \u00b5M has no effect on the Kv2.1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 has nM affinity for ASIC1a (Chen et al., 2006; Dawson et al., 2012), but even at very high concentrations (5 \u00b5M) has no effect on the Kv2.1 channel (Figure 4, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "f5e06ae2-c7a9-422e-adc1-2d4502a8cb7b",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C53",
+      "claim": "The voltage-sensor paddle can be transplanted between different channels that contain S1\u2013S4 domains without disrupting voltage sensor function.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous chimera studies have shown that the voltage-sensor paddle, a helix-turn-helix motif comprised of S3b and S4 helices, can be transplanted between different channels that contain S1\u2013S4 domains without disrupting voltage sensor function (Alabi et al., 2007; Bosmans et al., 2008, 2011b; Kalia and Swartz, 2013), making us optimistic that helix-5 transfer might be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous chimera studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "87129beb-f74b-4d84-aa25-d53cd6816d28",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C54",
+      "claim": "All five Kv2.1-ASIC1a chimeras gave rise to robust voltage-activated K+ currents.",
+      "claim_type": "EXPLICIT",
+      "source": "All five chimeras gave rise to robust voltage-activated K+ currents and displayed voltage-activation relations that were shifted to more depolarized voltages when compared to the wild-type Kv2.1 channel (Figure 4\u2014figure supplement 1C\u2013G), consistent with disruption of the interactions between S3b and S4 helices that have been shown to stabilize voltage sensors in an activated state (Xu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "5b2efc8a-562a-49e4-8697-3467acd8587f",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C55",
+      "claim": "The voltage-activation relations of the five Kv2.1-ASIC1a chimeras were shifted to more depolarized voltages when compared to the wild-type Kv2.1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "All five chimeras gave rise to robust voltage-activated K+ currents and displayed voltage-activation relations that were shifted to more depolarized voltages when compared to the wild-type Kv2.1 channel (Figure 4\u2014figure supplement 1C\u2013G), consistent with disruption of the interactions between S3b and S4 helices that have been shown to stabilize voltage sensors in an activated state (Xu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "372f8c58-1025-49b9-8af1-0ee15cfbefba",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C56",
+      "claim": "High concentrations of PcTx1 had no discernible effect on the activity of any of the five Kv2.1-ASIC1a chimeras.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these relatively radical chimeras were all functional, extracellular application of high concentrations of PcTx1 had no discernible effect on the activity of any of them (Figure 4\u2014figure supplement 1C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "0267d323-7ee1-41c3-b0ee-8f55ba4550ac",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C57",
+      "claim": "GxTx-1E alanine mutants were generated for 29 out of 36 residues using solid phase chemical synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated Ala mutants for 29 out of 36 residues of GxTx-1E (excluding one native Ala and 6 Cys residues) using solid phase chemical synthesis, and successfully folded all but one in mg quantities (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "dc504c85-455c-42a0-a7a2-445c6542395e",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C58",
+      "claim": "GxTx-1E mutants exhibited a wide range of different phenotypes, from small changes in affinity to almost 400-fold weakening of toxin affinity for Kv2.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained estimates of the apparent affinity for each mutant, and observed a wide range of different phenotypes, from small changes in affinity to almost 400-fold weakening of toxin affinity for Kv2.1 (Figure 4D; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "4aac3327-231a-4c64-9f94-2434c6d35940",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C59",
+      "claim": "A well-defined surface of GxTx-1E was identified where mutations having dramatic effects on the apparent affinity of the toxin cluster together.",
+      "claim_type": "EXPLICIT",
+      "source": "When perturbation energies (\u2206\u2206G values) for each mutant were mapped onto the NMR structure of GxTx-1E, a well-defined surface of the toxin was identified where mutations having dramatic effects on the apparent affinity of the toxin cluster together (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data mapped onto the structure in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "4568b5d3-6e32-43ee-bb37-ca60e226b2d0",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C60",
+      "claim": "The GxTx-1E binding surface contains many aromatic residues (F7, W8, W9, Y22 and W28), one aliphatic hydrophobic residue (L30) and several polar residues (K10, K15, S25, K27 and N32).",
+      "claim_type": "EXPLICIT",
+      "source": "This surface contains many aromatic residues (F7, W8, W9, Y22 and W28), one aliphatic hydrophobic residue (L30) and several polar residues (K10, K15, S25, K27 and N32).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the residues identified in the binding surface from mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "90fff91f-51f8-40b7-9428-a0dac687e7bb",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C61",
+      "claim": "The mutations producing the most dramatic perturbations on the GxTx-1E binding surface were for mutations of aromatic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations producing the most dramatic perturbations on this surface were for mutations of aromatic residues, whereas those for the polar residues were relatively modest (Figure 5A; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 5A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "c5b865a6-2a7a-417a-b2cf-e350597e8ff3",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C62",
+      "claim": "The three Trp mutants of GxTx-1E (W8A, W9A, W28A) obtained Kx values that were within a factor of two for the wild-type toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the apparent affinities of these mutants for Kv2.1 ranged from 26 to almost 200-fold lower (Figure 4D; Table 1), we obtained Kx values that were within a factor of two for the wild-type toxin (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "904720b3-92a8-47ef-9d59-7cccac2dded8",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C63",
+      "claim": "Each of the three Trp mutants of GxTx-1E exhibited robust quenching by brominated lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured quenching of the three Trp mutants by brominated lipids and found that each exhibited robust quenching (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "c71a4c40-74e9-418b-8b82-b7759d02ddcf",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C64",
+      "claim": "The blue-shifts observed with membrane partitioning vary for the three Trp mutants of GxTx-1E.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that the blue-shifts observed with membrane partitioning vary for the three Trp mutants, as does the extent of quenching by brominated lipids (Figure 5\u2014figure supplement 2), suggesting that the three Trp residues reside in non-equivalent environments within the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "25546e3a-82d3-48d3-91ba-5cfa77318312",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C65",
+      "claim": "The three Trp residues in GxTx-1E reside in non-equivalent environments within the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that the blue-shifts observed with membrane partitioning vary for the three Trp mutants, as does the extent of quenching by brominated lipids (Figure 5\u2014figure supplement 2), suggesting that the three Trp residues reside in non-equivalent environments within the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the varying spectroscopic properties of the Trp mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "934e41e4-86c0-443c-95f0-69a4a0af0fcd",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C66",
+      "claim": "There is extensive overlap between the active surfaces of PcTx1 and GxTx-1E responsible for binding to ASIC1a and Kv2.1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison reveals an extensive overlap between the active surfaces of the two toxins responsible for binding to ASIC1a and Kv2.1 channels, indicating that the two classes of toxins use related surfaces for interacting with helices within structurally unrelated ion channel proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of mutagenesis data (Figure 5A) and structural analysis (Figure 5B, C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "738f7e5d-8bb6-4afe-9828-8494c7f2cff9",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C67",
+      "claim": "The two classes of tarantula toxins use related surfaces for interacting with helices within structurally unrelated ion channel proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison reveals an extensive overlap between the active surfaces of the two toxins responsible for binding to ASIC1a and Kv2.1 channels, indicating that the two classes of toxins use related surfaces for interacting with helices within structurally unrelated ion channel proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of binding surfaces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "0c07258c-de8d-4372-89a5-04910cd2dfcd",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C68",
+      "claim": "Both classes of tarantula toxins interact with membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our experiments demonstrate that both classes of toxins interact with membranes (Figures 2, 3), a finding that is consistent with the amphipathic character evident in the solution structures of these toxins (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "4c8045e1-9ebb-4271-91a2-781f8e2ce212",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C69",
+      "claim": "The interaction of PcTx1 with membranes is different than what has been observed for voltage-sensor toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results also show that the interaction of PcTx1 with membranes is different than what has been observed for voltage-sensor toxins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the spectroscopic properties of PcTx1 and voltage-sensor toxins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "e044c464-0b14-4ff8-bde3-55e0a7d4ea07",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C70",
+      "claim": "Trp residues on PcTx1 exhibit only very small blue shifts when interacting with membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence spectroscopy results show that Trp residues on PcTx1 exhibit only very small blue shifts when interacting with membranes (Figure 2), and that the Trp fluorescence of the toxin is only weakly quenched by bromine atoms on the acyl chains of lipids (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "8abe3c88-1daa-4750-9574-32d91dbeade3",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C71",
+      "claim": "The Trp fluorescence of PcTx1 is only weakly quenched by bromine atoms on the acyl chains of lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence spectroscopy results show that Trp residues on PcTx1 exhibit only very small blue shifts when interacting with membranes (Figure 2), and that the Trp fluorescence of the toxin is only weakly quenched by bromine atoms on the acyl chains of lipids (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "81343b37-89cb-40e1-9bdf-4d36666d2b5a",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C72",
+      "claim": "Voltage-sensor toxins typically exhibit strong blue shifts in Trp fluorescence and this is robustly quenched by brominated lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, voltage-sensor toxins typically exhibit strong blue shifts in Trp fluorescence and this is robustly quenched by brominated lipids (Figures 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "61a45d8a-93b4-4d1a-8b2a-91a77ec1a980",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C73",
+      "claim": "The stark differences observed for PcTx1 demonstrate that tarantula toxins of similar structure do not necessarily have similar membrane interacting properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these properties have been consistently observed for other voltage-sensor toxins (Jung et al., 2005; Phillips et al., 2005; Milescu et al., 2007, 2009; Swartz, 2007; Jung et al., 2010; Mihailescu et al., 2014), the stark differences observed here for PcTx1 demonstrate that tarantula toxins of similar structure do not necessarily have similar membrane interacting properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the membrane interaction properties of PcTx1 and voltage-sensor toxins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "a523b4b8-a754-4f3c-8532-05f6b1c372db",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C74",
+      "claim": "The membrane interactions of voltage-sensor toxins are unique in how far they can penetrate the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane interactions of voltage-sensor toxins are unique in how far they can penetrate the lipid bilayer, further supporting the idea that this class of toxins interacts with voltage sensors within the lipid bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the depth-dependent quenching experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "4934430a-2f36-44f2-a642-47ed16701dca",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C75",
+      "claim": "The PcTx1 binding site on ASIC is located about 45 \u00c5 above from the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a complex structure of PcTx1 and ASIC shows that the PcTx1 binding site is located about 45 \u00c5 above from the lipid bilayer, superficial adsorption of the toxin to the membrane would be predicted to enhance the rate of complex formation due to a reduction in dimensionality of diffusion (Axelrod and Wang, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "e74141fd-bdeb-4e82-a348-af82d58d41ef",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C76",
+      "claim": "Superficial adsorption of PcTx1 to the membrane would be predicted to enhance the rate of complex formation due to a reduction in dimensionality of diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a complex structure of PcTx1 and ASIC shows that the PcTx1 binding site is located about 45 \u00c5 above from the lipid bilayer, superficial adsorption of the toxin to the membrane would be predicted to enhance the rate of complex formation due to a reduction in dimensionality of diffusion (Axelrod and Wang, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on biophysical principles and cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "f7e7660a-c800-4e89-93b7-1f48740db8f7",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C77",
+      "claim": "Membrane interactions have been reported for charybdotoxin, a strongly cationic scorpion toxin that blocks the external pore of some potassium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, membrane interactions have also been reported for charybdotoxin (Ben-Tal et al., 1997), a strongly cationic scorpion toxin that blocks the external pore of some potassium channels (Miller, 1995; Banerjee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "6eb09f5c-5f60-4876-a92a-fa49a1b83d33",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C78",
+      "claim": "The interaction of charybdotoxin with membranes is heavily influenced by electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction of charybdotoxin with membranes is heavily influenced by electrostatic interactions, suggesting that the toxin interacts relatively superficially, similar to what we observed with PcTx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation from previous studies on charybdotoxin.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "4b875010-14b9-448a-8149-75ab1bf01317",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C79",
+      "claim": "The inhibitor cystine knot (ICK) fold is found in many toxins and is thought to provide a structurally stable scaffold for presentation of surfaces to bind to receptors and ion channel proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitor cystine knot (ICK) fold is found in many toxins and is thought to provide a structurally stable scaffold for presentation of surfaces to bind to receptors and ion channel proteins (Pallaghy et al., 1994; Norton and Pallaghy, 1998), and in principle many unique surfaces on these toxins could be used for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "5a0c7019-1a55-4d2b-8446-6902bc9b82be",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C80",
+      "claim": "GxTx-1E uses a surface to bind to the S3b helix within voltage sensors that is similar to that which PcTx1 uses to bind to helix-5 in ASIC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results show that GxTx-1E uses a surface to bind to the S3b helix within voltage sensors that is similar to that which PcTx1 uses to bind to helix-5 in ASIC (Figure 5), even though the former binds within a membrane environment and the latter in aqueous solution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data and structural comparisons shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "c9ae45b9-6c9b-4b18-9a94-882c04e3885e",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C81",
+      "claim": "The X-ray structure of PcTx1 in complex with ASIC shows that the toxin clamps onto a solvent-exposed lateral surface of helix-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray structure of PcTx1 in complex with ASIC shows that the toxin clamps onto a solvent-exposed lateral surface of helix-5 (Figure 1) (Baconguis and Gouaux, 2012; Dawson et al., 2012), using a somewhat concave surface of the toxin formed by residues in loop 1 and loop 3, including both hydrophobic (W7, W24, F30, and P35) and polar residues (K8, K25, R26, S29 and T37).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to crystal structures and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "ce0662c8-ff9d-448f-a2f0-ae5d650f8b05",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C82",
+      "claim": "PcTx1 uses a somewhat concave surface formed by residues in loop 1 and loop 3 to bind helix-5, including both hydrophobic (W7, W24, F30, and P35) and polar residues (K8, K25, R26, S29 and T37).",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray structure of PcTx1 in complex with ASIC shows that the toxin clamps onto a solvent-exposed lateral surface of helix-5 (Figure 1) (Baconguis and Gouaux, 2012; Dawson et al., 2012), using a somewhat concave surface of the toxin formed by residues in loop 1 and loop 3, including both hydrophobic (W7, W24, F30, and P35) and polar residues (K8, K25, R26, S29 and T37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the binding interface from the crystal structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "03c371d3-055d-454d-a91d-61ae49aeb550",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C83",
+      "claim": "The equivalent surface of GxTx-1E is formed by residues in loop 1 and loop 3 containing hydrophobic (F7, W8, W9, Y22, W28 and L30) and polar residues (K10, K15, S25, K27 and N32) where mutations weaken the apparent affinity of the toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "The equivalent surface of GxTx-1E is also formed by residues in loop 1 and loop 3 (Figure 5), which contain a similar variety of hydrophobic (F7, W8, W9, Y22, W28 and L30) and polar residues (K10, K15, S25, K27 and N32) where mutations weaken the apparent affinity of the toxin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mutagenesis data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "011396b8-bc6c-4ced-aefe-b674b77751a2",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C84",
+      "claim": "The binding surface of GxTx-1E is similar to that identified on SGTx1.",
+      "claim_type": "EXPLICIT",
+      "source": "This surface is also similar to that identified on SGTx1 (Wang et al., 2004; Milescu et al., 2007), a tarantula toxin related to hanatoxin and GxTx-1E that inhibits the Kv2.1 channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous mutagenesis studies on SGTx1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "058caf20-6585-4c09-bfb8-b950d8f7583b",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C85",
+      "claim": "Residues having disproportionately large effects on the apparent affinity of SGTx1 compared to the strength of membrane partitioning cluster together on a surface similar to what was identified for GxTx-1E.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the apparent affinity of the most critical mutants on SGTx1 could not be accurately determined because the affinity of the toxin is quite low (Wang et al., 2004), residues having disproportionately large effects on the apparent affinity of the toxin compared to the strength of membrane partitioning cluster together on a surface that is similar to what we identified here for GxTx-1E (Figure 5\u2014figure supplement 3) (Milescu et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous work and reference to Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "7618e07d-7e9f-4b49-ba53-d39d46a10280",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C86",
+      "claim": "This face of the ICK fold forms a shape complement for \u03b1-helices that may be exploited by many other peptide ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the similar binding faces for \u03b1-helices on 3 peptide toxins that share little commonality besides an tri-cystine scaffold, we suggest that this face of the ICK fold forms a shape complement (Jones, 2012) for \u03b1-helices that may be exploited by many other peptide ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed similarity in binding surfaces across multiple toxins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "a5da9d53-d35b-4df4-9a6e-062be3edef5c",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C87",
+      "claim": "The preferred model of GxTx-1E bound to the activated/open Kv1.2/Kv2.1 paddle chimera positions the largest number of critical residues in GxTx-1E where they can interact with residues in the S3b helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all three models position critical residues on GxTx-1E where they can interact with the S3b helix, our preferred model (Figure 6; Figure 6\u2014figure supplements 1E, 2E) positions the largest number of critical residues in GxTx-1E where they can interact with residues in the S3b helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the computational modeling results shown in Figure 6 and supplements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "15341d6c-abb0-4919-9942-4fe5c4d9d8fb",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C88",
+      "claim": "In the preferred model, the toxin interacts with many of the most critical residues within the S3b helix that have been identified using mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in this model the toxin interacts with many of the most critical residues within the S3b helix that have been identified using mutagenesis (Figure 6) (Swartz and MacKinnon, 1997b; Li-Smerin and Swartz, 2000, 2001; Milescu et al., 2009), with a placement of the toxin within the membrane that is compatible with the depth of partitioning inferred using spectroscopic and neutron diffraction approaches (Phillips et al., 2005; Jung et al., 2010; Mihailescu et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the computational model shown in Figure 6 and citations to previous mutagenesis studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "5145e3c4-51ea-4d60-aabf-481f7f3e0242",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C89",
+      "claim": "Voltage-sensor toxins like GxTx-1E bind tighter to and stabilize the resting/closed state of Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-sensor toxins like GxTx-1E bind tighter to and stabilize the resting/closed state of Kv channels, however, they can remain bound when the voltage sensors activate and the channel opens (Phillips et al., 2005; Tilley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "0107bc48-70d9-4d7f-9171-668af160b82b",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C90",
+      "claim": "Voltage-sensor toxins can remain bound when the voltage sensors activate and the channel opens.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-sensor toxins like GxTx-1E bind tighter to and stabilize the resting/closed state of Kv channels, however, they can remain bound when the voltage sensors activate and the channel opens (Phillips et al., 2005; Tilley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "8303324c-2c20-4afc-baa7-0263253821b6",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C91",
+      "claim": "All GxTx-1E peptides were synthesized with norleucine (Nle) in place of Met35 to avoid oxidation of the toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "All the GxTx1E peptides were synthesized with norleucine (Nle) in place of Met35 to avoid oxidation of the toxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "7e3330a3-ea74-47ee-a271-df83af0e7cf5",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C92",
+      "claim": "GxTx-1E inhibits opening of the Kv2.1 and engineered Shaker Kv channels with relatively high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "GxTx-1E inhibits opening of the Kv2.1 and engineered Shaker Kv channels with relatively high affinity (Herrington et al., 2006; Milescu et al., 2009; Schmalhofer et al., 2009; Lee et al., 2010; Milescu et al., 2013; Tilley et al., 2014), it can be produced using solid-phase peptide synthesis, efficiently folded in vitro (Lee et al., 2010; Tilley et al., 2014) (see 'Materials and methods') and its solution structure has been solved (Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "75388a40-5c93-484d-ba07-5c943404c390",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C93",
+      "claim": "GxTx-1E can be produced using solid-phase peptide synthesis and efficiently folded in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "GxTx-1E inhibits opening of the Kv2.1 and engineered Shaker Kv channels with relatively high affinity (Herrington et al., 2006; Milescu et al., 2009; Schmalhofer et al., 2009; Lee et al., 2010; Milescu et al., 2013; Tilley et al., 2014), it can be produced using solid-phase peptide synthesis, efficiently folded in vitro (Lee et al., 2010; Tilley et al., 2014) (see 'Materials and methods') and its solution structure has been solved (Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and the methods section.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "3a0aad62-26fb-4616-9016-c14d8f6cfd20",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "claim_id": "C94",
+      "claim": "The solution structure of GxTx-1E has been solved.",
+      "claim_type": "EXPLICIT",
+      "source": "GxTx-1E inhibits opening of the Kv2.1 and engineered Shaker Kv channels with relatively high affinity (Herrington et al., 2006; Milescu et al., 2009; Schmalhofer et al., 2009; Lee et al., 2010; Milescu et al., 2013; Tilley et al., 2014), it can be produced using solid-phase peptide synthesis, efficiently folded in vitro (Lee et al., 2010; Tilley et al., 2014) (see 'Materials and methods') and its solution structure has been solved (Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the structure determination study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Both PcTx1 and voltage-sensor toxins (GxTx-1E) interact with lipid membranes, but voltage-sensor toxins partition significantly deeper into the bilayer. PcTx1 exhibits only small blue shifts in Trp fluorescence (~2 nm) and weak quenching by brominated lipids, while GxTx-1E shows pronounced blue shifts and strong brominated lipid quenching. Both toxins show concentration-dependent membrane interactions with similar partition coefficients (Kdx ~10^6-10^7), but the depth-dependent quenching experiments reveal that PcTx1 interacts superficially with membranes compared to voltage-sensor toxins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are well-supported by multiple complementary experimental approaches including Trp fluorescence spectroscopy (C29-C33, C70), acrylamide quenching (C34-C38, C36-C37), and depth-dependent brominated lipid quenching (C43-C46, C71). The quantitative measurements of partition coefficients (C30, C39, C40) are consistent across different methods. The conclusion that voltage-sensor toxins penetrate deeper is directly supported by the differential quenching patterns with brominated lipids at different depths (C43-C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "e717bb57-9ac7-4d48-8947-db75055e71f0",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PcTx1 and GxTx-1E use overlapping binding surfaces to interact with \u03b1-helices in their respective target channels (ASIC1a helix-5 and Kv2.1 S3b helix). Alanine scanning mutagenesis of GxTx-1E identified a well-defined binding surface containing aromatic residues (F7, W8, W9, Y22, W28), aliphatic hydrophobic residues (L30), and polar residues (K10, K15, S25, K27, N32) in loops 1 and 3. This surface overlaps extensively with the PcTx1 binding surface identified from the ASIC1a crystal structure, suggesting that tarantula toxins have evolved a conserved concave surface on the ICK fold for clamping onto \u03b1-helices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutagenesis data for GxTx-1E (C57-C61) provides strong experimental evidence for the binding surface, with perturbation energies ranging from small to ~400-fold effects (C58). The comparison with PcTx1 binding surface from crystal structures (C81-C82) and \u0394SASA calculations (C66) demonstrates extensive overlap. The control experiments showing that Trp mutants maintain membrane partitioning (C62-C63) confirm that the identified residues are involved in protein-protein interactions rather than just membrane binding. The similarity to SGTx1 (C84-C85) provides additional support for this being a conserved binding mode.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "d36bab41-a778-4338-8bb1-4f317eed2c36",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Attempts to transfer PcTx1 sensitivity to Kv2.1 channels by replacing the S3b helix with ASIC1a helix-5 were unsuccessful. Five Kv2.1-ASIC1a chimeras were generated, all of which produced functional voltage-activated K+ currents with depolarized voltage-activation relations, but none responded to high concentrations (5 \u03bcM) of PcTx1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental data clearly shows that all five chimeras were functional (C54) with shifted voltage-activation relations (C55), but none showed PcTx1 sensitivity (C56). The negative result is well-controlled and documented. However, the interpretation is limited by the fact that PcTx1 binds ASIC1a ~45 \u00c5 above the membrane (C75), and the chimera design may not have adequately positioned helix-5 in an accessible location or may have introduced structural constraints incompatible with toxin binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "6cd7d65b-a679-428c-b2fa-2324358e280a",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The three Trp residues in GxTx-1E (W8, W9, W28) reside in non-equivalent environments within the membrane. Despite 26-200-fold reductions in apparent affinity for Kv2.1, the three Trp mutants maintained membrane partition coefficients within a factor of two of wild-type and exhibited robust quenching by brominated lipids, though with varying blue-shifts and quenching extents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data demonstrate that mutations at critical binding residues (W8A, W9A, W28A) do not significantly affect membrane partitioning (C62), supporting the interpretation that these residues are involved in channel binding rather than membrane interaction. The varying spectroscopic properties (C64) provide evidence for non-equivalent membrane environments (C65). This is an important control that validates the binding surface identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "73d2bdb8-99dd-4941-917c-1afe999cbf25",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational modeling of GxTx-1E bound to the Kv1.2/Kv2.1 paddle chimera structure suggests a binding mode where the toxin interacts with critical residues in the S3b helix at a depth compatible with spectroscopic and neutron diffraction data. The preferred model positions the largest number of critical GxTx-1E residues to interact with mutagenically-identified critical residues in S3b, and is consistent with the toxin remaining bound during voltage sensor activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the computational modeling (C87-C88) is informed by extensive mutagenesis data and structural information, it remains a model that has not been experimentally validated. The model is built on the activated/open state structure, but voltage-sensor toxins bind preferentially to the resting/closed state (C89). The claim that toxins can remain bound during activation (C90) is supported by citations but doesn't validate this specific model. Additional experimental validation would be needed to confirm the proposed binding mode.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background and structural context: Voltage-sensor toxins are thought to partition into membranes and bind to voltage-sensing domains within the bilayer, while PcTx1 was crystallized bound to ASIC1a in aqueous solution far from the membrane. Despite binding in different environments, PcTx1 and voltage-sensor toxins share similar overall folds (backbone RMSD 1.0-1.2 \u00c5 over core residues), similar disulfide bond patterns, and both exhibit amphipathic character, though with hydrophobic surfaces on distinct faces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the structural and mechanistic context for the study and are well-supported by citations to crystal structures (C2, C15-C17, C19), NMR structures (C23), and previous literature (C1, C12, C13, C18, C28). The structural comparisons are quantitative (C23) and the amphipathic character is demonstrated visually (C20-C21, C27). This provides essential background for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Literature context and methodological details: The manuscript provides extensive background on toxin tools in ion channel research, structural details of toxin-channel interactions, and methodological information about toxin synthesis and properties. This includes the use of norleucine substitution to prevent oxidation (C91) and the ability to synthesize and fold GxTx-1E efficiently (C93).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide important context and methodological details that are well-supported by citations to previous literature (C6-C11, C47-C50, C77-C79, C92-C94). The methodological details (C91, C93) are clearly stated and standard practices. While these are not primary findings of the current study, they establish the scientific foundation and experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    },
+    {
+      "id": "98ff544c-2797-4c5b-af35-36dd9a30d6e2",
+      "content_id": "d51eb027-e9e4-4cef-8252-bc193aca1cc9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The solvent accessible surface area for the hydrophobic surface is 380 \u00c5\u00b2 for PcTx1 compared to 703 \u00c5\u00b2 for GxTx-1E, indicating that PcTx1 has a smaller hydrophobic surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are straightforward structural calculations from the NMR structures that support the interpretation of differential membrane penetration depth. The measurements are quantitative and reproducible from the structural data. This provides a structural basis for understanding the different membrane interaction properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:52:39.909341Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68c6b422-c224-4d42-a962-b54ab970fc37",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "516ae519-b4b6-4684-a3a4-0c523129a230",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "712c901a-6182-46ac-9fcc-b6bb91f744c0",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "ae8f64cc-d519-485d-84f6-2c50e6c5fc86",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "570280e9-05fd-4b22-b8d2-1f93c4ef2064",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "f9d8c7ad-9064-48e8-926d-908e07babd89",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "643c2a4f-3ab4-401d-9d9e-59b75f2642ad",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "1f747b9d-1843-47df-8020-33c07601bf5e",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "d27dd043-3ecc-43ca-9ccb-7e4ecfe0530b",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "330a872a-5978-47e6-9434-2d61f9584020",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "7044f7eb-cdb7-4ce9-94f1-c642d49ec1de",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "412662d0-b825-4c2e-827a-7b3d5d2bc925",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "64fa9d71-8c35-4bc5-9fc6-c146f34b01e1",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "13fb8985-5580-4c56-8d23-3ce4ce446b71",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "a6a070a6-2c38-48ae-a849-5b903a8062ed",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "2339499c-a892-4866-adae-ce4be04fa4d8",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "1d9b06a8-f48d-4180-9bc2-333da66eeaa3",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "11aca78f-5469-473e-9b0c-83ed1c9fe5dc",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "0c07258c-de8d-4372-89a5-04910cd2dfcd",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "4c8045e1-9ebb-4271-91a2-781f8e2ce212",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "e044c464-0b14-4ff8-bde3-55e0a7d4ea07",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "8abe3c88-1daa-4750-9574-32d91dbeade3",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "81343b37-89cb-40e1-9bdf-4d36666d2b5a",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "61a45d8a-93b4-4d1a-8b2a-91a77ec1a980",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "a523b4b8-a754-4f3c-8532-05f6b1c372db",
+      "result_id": "4ec73859-3ef9-4e4f-b8e9-8f66e2675be6"
+    },
+    {
+      "claim_id": "a2bffbaf-295a-4d6f-9c43-00da08f6e980",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "4aac3327-231a-4c64-9f94-2434c6d35940",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "4568b5d3-6e32-43ee-bb37-ca60e226b2d0",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "90fff91f-51f8-40b7-9428-a0dac687e7bb",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "934e41e4-86c0-443c-95f0-69a4a0af0fcd",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "738f7e5d-8bb6-4afe-9828-8494c7f2cff9",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "5a0c7019-1a55-4d2b-8446-6902bc9b82be",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "c9ae45b9-6c9b-4b18-9a94-882c04e3885e",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "ce0662c8-ff9d-448f-a2f0-ae5d650f8b05",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "03c371d3-055d-454d-a91d-61ae49aeb550",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "011396b8-bc6c-4ced-aefe-b674b77751a2",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "058caf20-6585-4c09-bfb8-b950d8f7583b",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "7618e07d-7e9f-4b49-ba53-d39d46a10280",
+      "result_id": "e717bb57-9ac7-4d48-8947-db75055e71f0"
+    },
+    {
+      "claim_id": "29ae3da3-9373-4c9a-91ab-de9deb8b5e88",
+      "result_id": "d36bab41-a778-4338-8bb1-4f317eed2c36"
+    },
+    {
+      "claim_id": "aaaa14bd-5279-4d71-a231-20fb4b6c5096",
+      "result_id": "d36bab41-a778-4338-8bb1-4f317eed2c36"
+    },
+    {
+      "claim_id": "f5e06ae2-c7a9-422e-adc1-2d4502a8cb7b",
+      "result_id": "d36bab41-a778-4338-8bb1-4f317eed2c36"
+    },
+    {
+      "claim_id": "87129beb-f74b-4d84-aa25-d53cd6816d28",
+      "result_id": "d36bab41-a778-4338-8bb1-4f317eed2c36"
+    },
+    {
+      "claim_id": "5b2efc8a-562a-49e4-8697-3467acd8587f",
+      "result_id": "d36bab41-a778-4338-8bb1-4f317eed2c36"
+    },
+    {
+      "claim_id": "372f8c58-1025-49b9-8af1-0ee15cfbefba",
+      "result_id": "d36bab41-a778-4338-8bb1-4f317eed2c36"
+    },
+    {
+      "claim_id": "c5b865a6-2a7a-417a-b2cf-e350597e8ff3",
+      "result_id": "6cd7d65b-a679-428c-b2fa-2324358e280a"
+    },
+    {
+      "claim_id": "904720b3-92a8-47ef-9d59-7cccac2dded8",
+      "result_id": "6cd7d65b-a679-428c-b2fa-2324358e280a"
+    },
+    {
+      "claim_id": "c71a4c40-74e9-418b-8b82-b7759d02ddcf",
+      "result_id": "6cd7d65b-a679-428c-b2fa-2324358e280a"
+    },
+    {
+      "claim_id": "25546e3a-82d3-48d3-91ba-5cfa77318312",
+      "result_id": "6cd7d65b-a679-428c-b2fa-2324358e280a"
+    },
+    {
+      "claim_id": "a5da9d53-d35b-4df4-9a6e-062be3edef5c",
+      "result_id": "73d2bdb8-99dd-4941-917c-1afe999cbf25"
+    },
+    {
+      "claim_id": "15341d6c-abb0-4919-9942-4fe5c4d9d8fb",
+      "result_id": "73d2bdb8-99dd-4941-917c-1afe999cbf25"
+    },
+    {
+      "claim_id": "5145e3c4-51ea-4d60-aabf-481f7f3e0242",
+      "result_id": "73d2bdb8-99dd-4941-917c-1afe999cbf25"
+    },
+    {
+      "claim_id": "0107bc48-70d9-4d7f-9171-668af160b82b",
+      "result_id": "73d2bdb8-99dd-4941-917c-1afe999cbf25"
+    },
+    {
+      "claim_id": "381e8709-224d-4249-bc2f-6ab93238e0a7",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "0ea1bcc1-787d-4953-b4c9-dc2196558521",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "d4e65521-c725-4b74-a853-d6410557c583",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "cc948bf8-3f9f-4977-b8c6-977a8ecf3b43",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "d74ee517-fbf1-42d4-8f4c-329fc614d530",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "96a1518a-cb10-4e76-9f0c-31c088fc6230",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "1aba0313-3add-41d5-a2c6-3388c68fb86a",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "a30bab02-62d2-4909-83cb-2625edf353dd",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "acd44ba0-83a1-4b5a-b1d2-188c2cc5cdf5",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "ffbcab55-5eb2-4d12-8d1f-6b9f405b0a26",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "a1d682bb-785e-43cc-96f8-5e70a4ad1cab",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "28d4d316-a260-4094-a76e-5b48d2b8b590",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "5e2a7c56-5500-407b-9f60-326f077ab896",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "2357ba2a-adb2-4a50-8579-0ee9b519fe9a",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "3f92fba7-8b6a-4d58-973c-90bfa3f372f8",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "cf1e2f81-3651-4f5b-8168-61891f3ec16d",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "efe9e4f4-7118-4f49-9311-e5ab25bf379f",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "1ec5affe-8aaa-48da-b64e-11742175e827",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "31cbefd5-b285-4c29-ba5e-ea30e2d866b7",
+      "result_id": "afb6ccd9-ac8d-48ff-89d1-92ad68bdbdbf"
+    },
+    {
+      "claim_id": "1cdb5475-c6e0-4c0a-919b-646329154870",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "4a7ce370-54c8-47da-b88b-ef88752053e4",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "c080cf0e-92f1-4c0c-a800-37de607e1b20",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "3d26ab8b-47db-4664-ab13-a2a2766deed1",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "7e19977b-17b6-44ab-aeaa-d9d3bbdc35cb",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "19b60a5f-dea7-4004-918a-970d8e9758ce",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "8085f71b-f85c-4ae1-b49b-e0d218bb07ae",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "9eab8ebe-78c4-4bd1-8ba8-5457129d2738",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "b0522d54-45df-406b-b192-8732cfcd814a",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "82d41841-14ac-491a-9e67-00e5e1b0e1c3",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "4934430a-2f36-44f2-a642-47ed16701dca",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "e74141fd-bdeb-4e82-a348-af82d58d41ef",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "f7e7660a-c800-4e89-93b7-1f48740db8f7",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "6eb09f5c-5f60-4876-a92a-fa49a1b83d33",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "4b875010-14b9-448a-8149-75ab1bf01317",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "8303324c-2c20-4afc-baa7-0263253821b6",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "7e3330a3-ea74-47ee-a271-df83af0e7cf5",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "75388a40-5c93-484d-ba07-5c943404c390",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "3a0aad62-26fb-4616-9016-c14d8f6cfd20",
+      "result_id": "ad76ef32-b9a2-4125-969d-abf6cbf643fe"
+    },
+    {
+      "claim_id": "34742278-09a8-4ba3-aae3-d91022c68c3b",
+      "result_id": "98ff544c-2797-4c5b-af35-36dd9a30d6e2"
+    },
+    {
+      "claim_id": "7b599e31-4e15-4846-abe6-16dda8f3df96",
+      "result_id": "98ff544c-2797-4c5b-af35-36dd9a30d6e2"
+    }
+  ],
+  "comparisons": []
+}

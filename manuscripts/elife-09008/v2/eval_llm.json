@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C92",
+      "C93"
+    ],
+    "result": "Genome-wide MNase-Seq analysis reveals that CTD S2 phosphorylation controls nucleosome dynamics at the promoters of 324 genes. These genes show enrichment of dynamic nucleosomes in the promoter region (\u2212350 bp to +50 bp flanking TSS), with an average 11 bp shift of the \u22121 nucleosome toward the TSS in the S2A mutant, and tend to have larger NDRs and 5\u2032-UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C31, C92-C93 collectively provide strong support through genome-wide MNase-Seq data analyzed with DANPOS (FDR <0.005), statistical enrichment analysis (p-value < 2.2e-16, odds ratio = 2.82), and Fisher's exact tests showing enrichment in genes with early S2P and downregulated genes. The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "At the ste11 locus, loss of S2P leads to increased H3 occupancy specifically at the promoter, with nucleosome scanning revealing increased nucleosome abundance near the +1 site. Inhibition of the S2 kinase Lsk1 rapidly increases promoter H3 levels and abolishes histone acetylation during ste11 induction, demonstrating that CTD phosphorylation by Lsk1 dynamically regulates histone occupancy and acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 are supported by multiple complementary approaches including ChIP-qPCR, nucleosome scanning, and analogue-sensitive kinase inhibition experiments. The use of the lsk1-as system provides temporal resolution showing effects within 1 hour. The specificity is demonstrated by the lack of effect at the control adh1 locus (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Deletion of leo1, which causes an elongation defect, increases PolII occupancy over the ste11 gene body and decreases ste11 expression, but does not affect H3 levels at the promoter, distinguishing elongation defects from the promoter-specific effects of S2P loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide an important control experiment demonstrating that the promoter nucleosome effects observed in S2A mutants are not secondary consequences of elongation defects. The data clearly distinguish between elongation and promoter-specific regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The decreased histone acetylation in the absence of S2P is not due to loss of the HAT Gcn5, but rather to increased HDAC activity. Trichostatin A treatment bypasses the S2P requirement, and unacetylatable histone H3 mutants (H3K14R, H3K36R) phenocopy the S2A strain, while the acetylation-mimicking H3K36Q has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by ChIP data, pharmacological inhibition, and histone mutant analysis. The logic is sound: ruling out loss of HAT recruitment, demonstrating HDAC involvement through TSA treatment (7-fold vs 25-fold increase in wt vs S2A mutants), and establishing causality through histone mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The HDAC Hos2 (SET3C complex) peaks at the ste11 promoter and its recruitment depends on S5-phosphorylated CTD. In the absence of lsk1, Hos2 occupancy increases, explaining decreased H3 acetylation. Genetic suppression experiments show that abolishing S5P or deleting hos2 suppresses the S2A defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by systematic ChIP experiments, HDAC deletion screens, and genetic suppression analysis. The antagonistic relationship between S5P and S2P in Hos2 recruitment is demonstrated through multiple complementary approaches including the S5A suppression of S2A phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Set1 deletion derepresses ste11, and this effect is mediated mainly through H3K4 methylation as shown by the H3K4R mutant. Set1 deletion suppresses lsk1 sterility. Biochemical experiments demonstrate that Set1 binds S5P-CTD but not S2P-S5P doubly phosphorylated CTD, indicating that S2P interferes with Set1 binding to S5P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by genetic analysis, phenotypic assays (sterility suppression), and biochemical co-immunoprecipitation experiments with NLS-GST-CTD fusions. The key mechanistic finding (C64) that doubly phosphorylated CTD does not bind Set1 is directly demonstrated and provides molecular explanation for the genetic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MAP kinase consensus sites in the N-terminal region of Lsk1 are phosphorylated in vivo. The Sty1 MAP kinase phosphorylates Lsk1 in vitro on 12 sites. Deletion of the N-terminal region or mutation of these sites severely impairs ste11 induction and reduces Lsk1 and S2P occupancy at the ste11 promoter, while phosphomimetic mutations increase ste11 expression, indicating that Sty1-dependent phosphorylation of Lsk1 is rate-limiting for ste11 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C77 are supported by mass spectrometry, in vitro kinase assays, ChIP experiments, and mutational analysis including deletion, alanine substitution, and phosphomimetic mutations. The convergence of multiple experimental approaches (biochemical, genetic, and genomic) provides strong support for the signaling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C8"
+    ],
+    "result": "Artificial tethering of Lsk1 to the ste11 promoter via an HMG-Lsk1 fusion is sufficient to activate ste11 transcription independently of nitrogen or glucose starvation, demonstrating that promoter-localized Lsk1 activity is sufficient for transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C8 describe a key gain-of-function experiment showing >6-fold induction of ste11 mRNA upon HMG-Lsk1 expression, with corresponding recruitment and S2P increase at the promoter. This elegant experiment directly tests sufficiency and is well-controlled (no effect at adh1 promoter).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The inv1 gene shows similar regulation to ste11: its derepression requires S2P, Lsk1 phosphorylation sites, and Sty1, with early S2P increase at the promoter during induction. Loss of S2P decreases acetylation and increases histone occupancy at inv1. However, inv1 regulation involves the Rpd3C(L) complex (via Png2) rather than SET3C (Hos2), and is suppressed by S5A, set1\u0394, or png2\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 extend the mechanism to a second gene (inv1) using Northern blots, ChIP, and genetic suppression. The differential involvement of Rpd3C(L) vs SET3C is well-documented (C89, C90, C91). The data are internally consistent and demonstrate generalizability while revealing gene-specific differences in HDAC complex usage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C94",
+      "C98"
+    ],
+    "result": "The proposed model is that during transcriptional induction, local increase of S2P near the promoter prevents efficient association of Set1 with S5P CTD, leading to decreased histone methylation and deacetylation, resulting in a burst of acetylation and transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C94, and C98 represent the integrated mechanistic model supported by the collective experimental evidence including nucleosome dynamics, ChIP data, biochemical binding assays, and genetic suppression experiments. The model logically integrates all major findings and is consistent with the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In budding yeast, the absence of the S2 kinase ctk1 abrogates the burst of promoter histone acetylation during IME1 induction and results in low expression. This defect is suppressed by deletion of Set3, demonstrating conservation of the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 provide evidence for evolutionary conservation of the mechanism in budding yeast. The data show similar effects on histone acetylation and gene expression, with genetic suppression by Set3 deletion paralleling the fission yeast results. This strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establish that CTD phosphorylation plays key roles in transcription and chromatin regulation, with S5P and S2P showing stereotypical distributions. However, S2P is dispensable in yeast and affects only a subset of mRNAs, creating a disconnect between uniform CTD phosphorylation patterns and gene-specific requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 provide established background knowledge from cited literature that frames the research question. These are well-supported by multiple citations and represent the current understanding that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on histone methylation: H3K4 and K36 methylation patterns mirror CTD phosphorylation due to recruitment of Set1-COMPASS by S5P and Set2 by S2P. These methylation marks serve as binding platforms for HDAC complexes including SET3C and Rpd3C(S), with specific reader domains (PHD fingers, chromodomains) recognizing methylated histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 provide essential background on the established connections between CTD phosphorylation, histone methylation, and HDAC recruitment. These are well-supported by multiple citations and establish the framework for understanding the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C104",
+      "C105",
+      "C106",
+      "C110",
+      "C111"
+    ],
+    "result": "Discussion claims relating current findings to prior literature: S2P acts as a barrier to Set1 association in budding yeast, S2P upstream of S5P abolishes antibody recognition, different HDAC complexes regulate transcriptional burst dynamics, Ctk1 is phosphorylated in its N-terminus, Drosophila UpSet shows similar mechanisms, and MAP kinases are recruited to target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C99-C100, C104-C106, C110-C111 contextualize the findings within existing literature through appropriate citations. These comparisons strengthen the interpretation and demonstrate consistency with related observations in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C9",
+      "C107",
+      "C108",
+      "C109",
+      "C112"
+    ],
+    "result": "Summary claims: ste11 and inv1 are among the 324 genes regulated by S2P. The early S2P increase results from MAP kinase phosphorylation of Lsk1. Signaling through the CTD code regulates promoter nucleosome dynamics. MAP kinase directly controls CTD phosphorylation, with Lsk1 phosphorylation required for the 5\u2032 S2P peak but not for kinase activity itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, C9, C107-C109, C112 represent high-level summary statements that are well-supported by the collective experimental evidence presented in the manuscript. These integrate multiple lines of evidence into coherent conclusions.",
+    "result_type": "MAJOR"
+  }
+]

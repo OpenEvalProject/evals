@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Neural information is carried by noisy, unreliable populations of neurons, and noise limits coding capacity and determines how information can be transmitted and decoded. The brain must overcome this noise to accurately decode semantically similar patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C10 establish the foundational context of noisy neural coding based on well-established neuroscience principles supported by extensive citations. These claims provide the motivation for the study and are well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Salamander retinas were presented with over 600 repeats of 10-second video clips (natural and artificial), and responses from dozens of retinal ganglion cells were recorded. Single neurons showed stochastic responses, and population variability increased with firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 and C72-C77 describe the experimental design, data collection, and basic observations. The methodology is clearly described with appropriate detail, and the observation about variability correlating with firing rate (C20) is directly supported by Figure 1C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "While average pairwise noise correlations are weak, the population showed strong network noise correlations during 'interesting' stimuli when firing rates increased. For these stimuli, the population was far from conditionally independent, and network-level variability was significantly reduced compared to expectations from individual cell noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 present a key finding about stimulus-dependent noise correlations, supported by Figure 2A,B and citations to prior work. The observation that correlations are weak on average but strong for specific stimuli is well-demonstrated and represents an important characterization of the neural code.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C65",
+      "C78",
+      "C79"
+    ],
+    "result": "A stimulus-dependent pairwise maximum entropy model was fit for each stimulus to capture firing rates and pairwise noise correlations. This model accurately captured the distribution of population patterns and the strong network noise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C65 describe the modeling approach and its validation. The pairwise maximum entropy model is well-established (with citations), and its accuracy is demonstrated in Figure 2C and Figure 2\u2014figure supplement 2. The methodological approach is sound and appropriately validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C21",
+      "C22",
+      "C25",
+      "C26"
+    ],
+    "result": "Semantic similarity between neural activity patterns can be measured by comparing what each pattern tells the brain about the stimulus, quantified as P(s|r). The experimental design allowed sampling P(r|s), though the exponential number of possible patterns prevents direct sampling of the full distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C21-C22, and C25-C26 establish the theoretical framework for semantic similarity. The approach is conceptually sound, grounded in Bayesian inference, and the limitations are appropriately acknowledged. This represents a novel methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "When using semantic similarity measures and hierarchical clustering, the population code is organized into clusters of highly similar activity patterns that differ from other patterns. Similar spike counts do not imply similar meaning, and Hamming distance fails to reveal this clustered structure. The semantic similarity structure cannot be captured by simple linear or bilinear functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 present the central finding of clustered code organization. This is strongly supported by Figure 3B showing block-diagonal structure, with statistical validation in Figure 3\u2014figure supplement 1. The comparison with Hamming distance (C39, Figure 3C) and demonstration that simple functions fail (C42, Figure 3\u2014figure supplement 2) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Responses to repeated presentations of a stimulus come from the same cluster, and responses from the same cluster are nearly interchangeable. Even when the most frequent pattern appeared less than 20% of the time, over 70% of responses fell within a single cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe predictions that were tested and confirmed via cross-validation. The quantitative finding in C45 is supported by Figure 4 and Figure 4\u2014figure supplement 1, demonstrating that cluster-based coding substantially improves reliability over individual pattern reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Approximately 100 clusters account for over 80% of the information about the stimulus in detailed population patterns. Clustering based on Hamming distance gave significantly worse results. Responses in the same cluster have similar meaning and can be viewed as noisy variants of a noise-free codeword.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 quantify the information content of clusters, supported by Figure 5. The comparison with Hamming distance clustering (C47) is clearly demonstrated, and the interpretation as noisy variants of codewords (C48) is reasonable given the information analysis and analogy to established models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The similarity measure learned from training data predicts stimulus similarity in test data, and the similarity between neural responses captures similarity in meaning and generalizes across stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 demonstrate generalization of the thesaurus to novel stimuli, supported by Figure 6 and Figure 6\u2014figure supplement 1. This is a critical validation showing that the semantic similarity structure is not specific to the training stimuli but represents a general property of the code.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "P(s|r) for held-out test responses can be well estimated using the most similar response from training data. Using semantic similarity clearly improved stimulus estimation compared to prior knowledge, while Hamming distance degraded performance. This enables decoding of novel responses to novel stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate the functional utility of the thesaurus for decoding, supported by Figure 7. The quantitative comparison (Figure 7C) shows clear improvement over prior and Hamming-based approaches, validating the practical application of the semantic similarity framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The neural code is organized in clusters of synonymous activity patterns similar in meaning but different in structure, reminiscent of engineered codes. This organization allows accurate decoding of novel stimuli from novel patterns. Most information is held by cluster identity, revealing a design principle of sensory circuit codebooks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C56-C59 synthesize the main findings and their interpretation. The clustered organization is well-demonstrated (previous results), the analogy to engineered codes is reasonable given the observed structure, and the decoding capability is validated. The claim about design principles (C59) is appropriately framed as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "In engineering, codes solve noise problems by spacing codewords far apart. Neural correlations are central to shaping code capacity and content in the context of noise, though their functional role in large populations has been debated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 provide context from engineering and prior neuroscience research, supported by appropriate citations. These establish the conceptual framework and motivation for the study, acknowledging ongoing debates in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Uncovering code structure relied on accurately modeling noisy population responses. Interestingly, conditionally independent models recovered similar cluster structure in terms of information, possibly due to robust codebook organization. However, pairwise models gave better decoding results, and semantic similarity could not be approximated by simple functions due to high stimulus-dependent noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 discuss the role of modeling choices and noise properties. The finding that independent models give similar clustering (C66) is surprising but supported by supplementary figures. The explanation (C67) is appropriately speculative. The superiority of pairwise models for decoding (C68) and stimulus-dependent noise (C70-C71) are supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C55"
+    ],
+    "result": "For large populations, most activity patterns are observed at most once, so the brain frequently receives novel patterns. A semantic similarity measure may explain how novel inputs are deciphered and how the brain generalizes across stimuli, which may be crucial for handling sensory noise and novel stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C63 and C55 present speculative interpretations about the functional role of the thesaurus. While C60 is supported by citation and C61 is a logical inference, claims C62-C63 and C55 are explicitly speculative (marked as SPECULATION in evidence_type). These represent interesting hypotheses but lack direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Models of network encoding noise can be used to learn a thesaurus for populations of neurons in the vertebrate retina responding to artificial and natural videos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 summarizes the overall methodological approach of the study. This is well-supported by the experimental design (C15-C19), the modeling approach (C34-C36), and the successful construction and validation of the thesaurus (C38-C54).",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors establish that 3D space admits multiple optimal sphere packing arrangements, specifically FCC and HCP, which are the only two regular solutions. Both structures consist of hexagonal layers with 12 first neighbors per sphere, differing only in the positioning of three spheres in the unit cell of 13 spheres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 describe well-established mathematical properties of sphere packing in 3D space, attributed to Gauss. These are foundational geometric facts that provide the theoretical framework for the model. The claims are supported by established mathematical knowledge and are illustrated in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C45"
+    ],
+    "result": "Analytical minimization of the cost function reveals that FCC and HCP configurations alternate as optimal solutions across different parameter regimes, with no strong dominance of either structure. The hexagonal arrangement and 12 first neighbors common to both structures are the relevant features for cost function evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C45 describe results from analytical calculations shown in Figure 5. The mathematical analysis demonstrates the near-equivalence of FCC and HCP structures in terms of the cost function, with alternating optimality depending on the \u03b3 parameter. The derivations appear mathematically sound and are presented with explicit formulas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "Simulations show that the self-organization process produces units with field arrangements that express a mixture of FCC and HCP symmetries rather than converging to pure regular configurations. Individual units show a continuum of scores between pure FCC and HCP, with discrepancies arising from small deviations in relative phases between field layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C44 and C46 are supported by simulation data shown in Figures 4 and 5. The distribution of FCC and HCP scores across the population demonstrates that units do not cluster into two distinct groups but span a continuum. This is a key finding showing that the model produces imperfect crystalline structures, consistent with the analytical prediction of near-equivalence between FCC and HCP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Local order emerges rapidly in the simulations, with mean angles between neighboring fields stabilizing near \u03c0/3 and mean grid spacing stabilizing at 0.55\u00d7L within 3-4 million time steps. This rapid emergence is independent of collateral connections and only slightly affected by variability in adaptation parameters, indicating that 3D grids develop from the same mechanisms as 2D grids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are well-supported by simulation data in Figure 6. The time course analysis shows rapid stabilization of local geometric properties, and control simulations (removing collaterals, varying adaptation) demonstrate robustness. The comparison to 2D grid development is appropriately cited and supports the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The simulations reveal a hierarchical time course for 3D grid formation: equilateral triangles form by ~4 million steps, hexagonal layers by ~6 million steps, and common layer orientation by ~12 million steps. However, perfect FCC or HCP ordering does not emerge even after 30 million steps, with both scores remaining near 0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C66 describe a clear hierarchy of structural emergence supported by multiple measures shown in Figure 7. The progression from local to global order is well-documented, and the failure to converge to perfect crystalline structures is a robust finding. The time scales are consistently reported across different measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Volume-dependence analysis shows that self-organization time scales increase only sublinearly with environment size. The cost function relaxation is dominated by rapid exponential terms and is virtually complete by 3-4 million steps, with limited volume dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by data in Figure 8 showing cost function evolution across different volumes. The fitting to exponential functions is appropriate and the sublinear scaling is clearly demonstrated. However, the limited range of volumes tested (up to ~2\u00d7 the base volume) and the acknowledged variability in field smoothness suggest some caution in extrapolating to much larger volumes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Translating simulation parameters to real-world scales (\u0394t=10ms, v=1m/s, L=2.5m), the model predicts equilateral triangles form in ~10-12 hours, hexagons in ~15-18 hours, and common orientation in ~30-35 hours of continuous bat flight. These time scales are moderately longer than the 5-6 hours predicted for 2D grid development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 involve straightforward calculations translating simulation time steps to real-world time scales using specified parameters. The arithmetic is correct and the comparison to 2D results (C82) is appropriately cited. These predictions are testable and provide concrete experimental predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The model predicts that bats may form partially regular 3D grids only if constrained to fly for prolonged periods in small cages, with complete crystalline tiling requiring >80-90 hours and likely being beyond the time available to real bats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C88 are speculative predictions about experimental feasibility. While the time scale calculations (C85) are based on simulation data, the conclusions about what is feasible for real bats involve assumptions about experimental conditions and bat behavior that are not directly tested. The claim that crystalline tiling is 'hardly in range' (C88) is reasonable given the data but remains speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The model concludes that 3D navigation does not preclude orderly field arrangements in bat mEC units, but this order expresses only partial symmetry properties. While some cells may show near-perfect symmetry, the majority exhibit grid-like but imperfect arrangements, which the authors suggest is a robust feature that may extend to other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 represent the main conclusions synthesizing the simulation results. The conclusion that partial order emerges (C89-C90) is well-supported by the data. The prediction about population heterogeneity (C92-C93) is supported by Figure 5. However, the generalization to other species (C94) is speculative, though reasonably grounded in the model's mechanistic basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors present a self-organization model where grid patterns emerge spontaneously through firing rate adaptation and synaptic plasticity, without requiring engineered mechanisms. The model can account for environmental geometry effects and has previously been shown to produce pentagonal grids on spherical surfaces and heptagonal grids on hyperbolic surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 describe the conceptual framework and prior validation of the model. Claims C12-C13 are supported by citation to previous work (Urdapilleta et al., 2015). The model description (C8-C11) is consistent with the detailed methods presented and represents a coherent theoretical framework, though the claim about 'no engineering required' (C8) is somewhat philosophical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The model architecture consists of 123 input units (representing CA1 place cells) and 125 output units (mEC grid cells). Place field centers are homogeneously distributed, and the model assumes place cells develop before grid cells. The properties of developing grid fields depend on adaptation time scale rather than place field size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe model parameters and assumptions. The network sizes (C14-C15) are clearly specified. The assumption about place cell development (C16) is supported by appropriate citations. The claim about parameter sensitivity (C18-C19) is supported by citation and by the control simulations shown in Figure 6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors review prior work showing similarity in spatial representations between rodents and bats, the generalization of place and head direction cells to 3D, and identify open questions about 3D grid cell structure and the mechanisms for extending periodic patterns from surfaces to volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 summarize the state of the field based on multiple citations. These are appropriately characterized as prior work and open questions. The citations appear relevant and the characterization of what is known versus unknown is reasonable, though the actual content of the cited papers cannot be verified from this manuscript alone.",
+    "result_type": "MINOR"
+  }
+]

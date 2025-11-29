@@ -1,0 +1,2268 @@
+{
+  "submission": {
+    "id": "6be61cc7-bd09-42a8-854b-8f38480f9956",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:17:17.504693Z",
+    "updated_at": "2025-11-29T04:17:17.504693Z"
+  },
+  "content": [
+    {
+      "id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "submission_id": "6be61cc7-bd09-42a8-854b-8f38480f9956",
+      "content_type": "manuscript",
+      "content_text": "# Lys63-linked ubiquitin chain adopts multiple conformational states for specific target recognition\n\n## Authors\n\n- Zhu Liu<sup>1</sup>\n- Zhou Gong<sup>1</sup>\n- Wen-Xue Jiang<sup>1</sup>\n- Ju Yang<sup>1</sup>\n- Wen-Kai Zhu<sup>1</sup>\n- Da-Chuan Guo<sup>1</sup>\n- Wei-Ping Zhang<sup>2</sup>\n- Mai-Li Liu<sup>1</sup> \u2020\n- Chun Tang<sup>1</sup> ([ORCID: 0000-0001-6477-6500](https://orcid.org/0000-0001-6477-6500)) \u2020\n\n### Affiliations\n\n1. CAS Key Laboratory of Magnetic Resonance in Biological Systems, State Key Laboratory of Magnetic Resonance and Atomic Molecular Physics Wuhan Institute of Physics and Mathematics of the Chinese Academy of Sciences Wuhan China\n2. Department of Pharmacology and Institute of Neuroscience Zhejiang University School of Medicine Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nA polyubiquitin comprises multiple covalently linked ubiquitins and recognizes myriad targets. Free or bound to ligands, polyubiquitins are found in different arrangements of ubiquitin subunits. To understand the structural basis for polyubiquitin quaternary plasticity and to explore the target recognition mechanism, we characterize the conformational space of Lys63-linked diubiquitin (K63-Ub2). Refining against inter-subunit paramagnetic NMR data, we show that free K63-Ub2 exists as a dynamic ensemble comprising multiple closed and open quaternary states. The quaternary dynamics enables K63-Ub2 to be specifically recognized in a variety of signaling pathways. When binding to a target protein, one of the preexisting quaternary states is selected and stabilized. A point mutation that shifts the equilibrium between the different states modulates the binding affinities towards K63-Ub2 ligands. This conformational selection mechanism at the quaternary level may be used by polyubiquitins of different lengths and linkages for target recognition.\n\n## Introduction\n\nUbiquitin is a 76-residue signaling protein found ubiquitously in cells. Multiple ubiquitins are covalently linked to form a polyubiquitin, which can then be attached to a substrate protein. The process is known as ubiquitination, a post-translational modification of the substrate protein. Three classes of enzymes catalyze ubiquitination: ubiquitin-activation enzyme (E1), ubiquitin-conjugation enzymes (E2), and ubiquitin-protein ligases (E3). E2 and E3 dictate ubiquitin linkage and substrate specificities. Additionally, deubiquitinases (DUBs) are responsible for specifically erasing ubiquitin signals from a substrate protein (Clague et al., 2012).\n\nCatalyzed by a linkage-specific E2, two or more ubiquitins are linked up via an isopeptide bond between the carboxylate at the C-terminus of one ubiquitin (referred to as the distal unit) and the \u03b5-amine of a lysine residue (Lys6, Lys11, Lys27, Lys29, Lys33, Lys48, or Lys63) or the \u03b1-amine at the N-terminus of another ubiquitin (referred as the proximal unit). Lys48-linked polyubiquitin is the most abundant linkage in cells, and signals substrate proteins for proteasomal degradation (Kravtsova-Ivantsiv et al., 2013; Lu et al., 2015). Other types of linkages mostly perform non-degradative functions (Xu et al., 2009; Kulathu and Komander, 2012). Lys63-linked polyubiquitin is another common linkage, and has been found to be involved in DNA damage response (Hoege et al., 2002), multivesicular body mediated protein sorting (MacDonald et al., 2012), NF-\u03baB signaling (Chen and Chen, 2013; Zinngrebe et al., 2014), and oxidative stress response (Silva et al., 2015). Lys63-linked polyubiquitin also exists as an unanchored form without being attached to a substrate protein, and the unanchored form may serve as a scaffold for recruiting proteins in the signaling pathways of innate immunity and protein aggregate removal (Zeng et al., 2010; Hao et al., 2013).\n\nHow does Lys63-linked polyubiquitin perform different functions? To do so, Lys63-linked polyubiquitin has to specifically recognize multiple target proteins. Structural studies of Lys63-linked diubiquitin (K63-Ub2) have indicated that K63-Ub2 mostly adopts open extended conformations in the absence of a ligand and in complex with many target proteins (Datta et al., 2009; Komander et al., 2009; Sato et al., 2009a; Weeks et al., 2009; Sekiyama et al., 2012). It has been proposed that such an open extended structure differentiates K63-Ub2 from Lys48-linked polyubiquitin that predominantly exists in a closed structure (Varadan et al., 2004; Fushman and Walker, 2010; Hirano et al., 2011). Notwithstanding, K63-Ub2 has been found in closed conformations when complexed with the Npl4 zinc-finger domain (NZF) of TAK1-binding proteins (Kulathu et al., 2009; Sato et al., 2009b) for the activation of NF-\u03baB signaling pathways. K63-Ub2 is also selectively recognized by the fourth zinc-finger (ZnF4) of A20, a ubiquitin-editing enzyme for the termination of NF-\u03baB signaling (Wertz, 2014; Wertz and Dixit, 2014). The crystal structure of the complex between ZnF4 and ubiquitin monomer indicated that K63-Ub2 likely exists in a closed conformation when binding to ZnF4 (Bosanac et al., 2010). So are the closed-state structures already present for the free K63-Ub2, but have hitherto eluded structural characterization? Or is the closed-state structure induced by a specific ligand?\n\nTo recognize a target protein and to perform specific functions, a protein has to fluctuate among a variety of conformational states (Henzler-Wildman and Kern, 2007). For a ubiquitin monomer, studies have shown that the protein exists as an ensemble of tertiary conformations which can accommodate different target proteins (Lange et al., 2008). As ubiquitin mainly functions as polyubiquitins, a more pertinent question is how does a polyubiquitin fluctuate at the quaternary level and achieve its target recognition specificity?\n\nNuclear magnetic resonance (NMR) is well suited to characterize protein ensemble structures and to visualize protein dynamics. NMR depiction of dynamic fluctuation for multi-domain proteins such as pre-mRNA splicing factor U2AF and DNA-binding protein CAP, has uncovered conformational selection and equilibrium shift mechanisms for these systems (Mackereth et al., 2011; Tzeng and Kalodimos, 2012; Huang et al., 2014). Among the NMR techniques, paramagnetic relaxation enhancement (PRE) is exquisitely sensitive to transient and fleeting interactions between proteins (Sekhar and Kay, 2013; Xing et al., 2014). Owing to dipolar interactions between the paramagnetic center and protein nuclei, PRE is proportional to the inverse sixth power of the distance between the paramagnetic center and protein nuclei, and is ensemble-averaged over all the conformational states sampled (Clore and Iwahara, 2009). To explore the target recognition mechanism for K63-Ub2, we used PRE NMR in conjunction with other biophysical methods. We characterized the arrangements between the ubiquitin units, and we determined the ensemble structure for K63-Ub2 in the absence of a ligand. Our findings indicated a conformational selection mechanism at the quaternary level, whereby a target protein selects and stabilizes one of the preexisting conformational states of ligand-free K63-Ub2.\n\n## Results\n\n### Ligand-free K63-Ub2 exists in both open and closed states\n\nWe first compared the chemical shift differences between the subunits in K63-Ub2 and ubiquitin monomer. Except for residues near the covalent ubiquitin linkage, the differences in chemical shifts are small (<0.04 ppm; Figure 1\u2014figure supplement 1). Residues with relatively large chemical shift differences (>0.01 ppm) can be tentatively mapped, and form rather contiguous surfaces on each subunit (Figure 1\u2014figure supplement 1, insets). However, it is unclear whether the perturbations are due to the covalent linkage, or due to non-covalent interactions between the two subunits. We also performed a half-filtered NMR experiment, which failed to reveal any inter-subunit nuclear Overhauser effects (NOEs) between the proximal and distal units of K63-Ub2. Our data are consistent with the previous NMR studies of K63-Ub2 (Tenno et al., 2004; Varadan et al., 2004); in the latter work, the authors failed to detect cross-saturations between the two subunits. Together, the diamagnetic NMR studies indicated that the closed-state structure of K63-Ub2, if existing, is loosely packed and possibly adopts multiple conformations.\n\nTo visualize the quaternary arrangement between the subunits of K63-Ub2, we resorted to PRE NMR. We prepared K63-Ub2 protein with the proximal unit 15N-labeled and the distal unit unlabeled. A cysteine point mutation was introduced to Asn25 or Lys48 in the distal unit of K63-Ub2. An MTS paramagnetic probe was conjugated at N25C or K48C site. Each of the conjugation sites was designed so that the paramagnetic probe was away from the binding partners of K63-Ub2, which include Rap80 tUIM domain (Sekiyama et al., 2012), TAB2 NZF domain (Kulathu et al., 2009; Sato et al., 2009b), and A20 ZnF4 domain (Bosanac et al., 2010), and therefore the conjugation does not interfere with ligand binding (Figure 1\u2014figure supplement 2). Indeed, the binding affinities between K63-Ub2 and tUIM or NZF remain unchanged for the paramagnetically tagged K63-Ub2 proteins (Figure 1\u2014figure supplement 3). In addition, the paramagnetic NMR spectrum can be overlaid onto the diamagnetic spectrum, except for residues that are completely broadened out due to the PRE effect (Figure 1\u2014figure supplement 4). Together, the modifications do not perturb the conformational space of K63-Ub2 or have an effect on K63-Ub2 function.\n\nWe previously reported that ubiquitin monomer dimerizes non-covalently with an apparent KD value of 4.9 \u00b1 0.3 mM (Liu et al., 2012). Therefore, the PRE effect could arise both intramolecularly and inter-molecularly. The inter-molecular PREs were measured on an equimolar mixture of K63-Ub2 (each at 500 \u00b5M), with paramagnetic tagging and isotope labeling on different subunits in separate proteins. With a paramagnetic probe conjugated at either N25C or K48C site and using the inter-molecular data for reference, our measurements revealed large intra-molecular inter-subunit PREs for many residues in the proximal unit (Figure 1A,B). At relatively low protein concentration (50 \u00b5M), the inter-molecular contribution to the overall PRE is negligible. We found that the relative decreases in peak intensities between the paramagnetic and diamagnetic spectra recorded at 50 \u00b5M are highly correlated with the relative decreases between the paramagnetic and inter-molecular spectra recorded at 500 \u00b5M (Figure 1\u2014figure supplement 5). This corroborates the PRE measurement at the higher concentration. In addition, when a different paramagnetic probe, EDTA-Mn2+, was conjugated at N25C, the PRE profile is similar to that using the MTS probe (Figure 1\u2014figure supplement 6). Thus, the intra-molecular inter-subunit PREs are independent of the paramagnetic probe used, and reveal intrinsic structural features of ligand-free K63-Ub2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-v2.jpg)\n\n**Figure 1.:** With the paramagnetic probe conjugated at (A) N25C or (B) K48C in the distal unit, the PRE 1H \u03932 rates were measured for amide protons of the 15N-labeled proximal unit. The red spheres indicate the observed PREs. The error bar indicates 1 SD in the PRE measurement. The blue lines are the back-calculated PRE values for residues 1\u201371. Residues that are completely broadened out are denoted with asterisks at the top.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Overlay of 2D 1H-15N correlation spectra for (A) ubiquitin monomer and K63-Ub2 proximal unit, and (B) ubiquitin monomer and K63-Ub2 distal unit. The ubiquitin monomers (also the reactants for preparing K63-Ub2) were modified (either by appending an Asp at the C-terminus or by mutating Lys63 to an Arg) so that only a single product (diubiquitin) was obtained. Residues with relatively large chemical shift differences (>0.01 ppm) were mapped to the surface of (C) the proximal unit and (D) the distal unit, and are colored red. The chemical shift differences in ppm is calculated as (\u0394\u03b4H2/2 + \u0394\u03b4N2/5)^0.5.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The corresponding Protein Data Bank (PDB) codes are 2RR9, 2WX0, and 3OJ3, respectively. The modifications are away from the bound ligands in the structures and also from the other subunit.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The titrations were performed for (A, D) wild type K63-Ub2, (B, E) N25C mutant conjugated with an MTS paramagnetic probe, and (C, F) K48C mutant conjugated with an MTS paramagnetic probe. The binding affinities KD values were averaged over four independent titrations with SD reported. The averaged enthalpy and entropy changes (\u00b1SD) are also labeled.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Peaks that disappear in the paramagnetic spectra are labeled.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Peak intensities were compared between the spectra for the wild type diamagnetic protein and for the paramagnetic protein collected at 50 \u00b5M concentration (x-axis), or were compared between the spectra for the 1:1 mixture of diamagnetic and paramagnetic proteins and for the paramagnetic protein collected at 500 \u00b5M concentration (y-axis).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Lines simply connect the data points. The PREs obtained using EDTA-Mn2+ are larger than those using the MTS probe owing to the larger paramagnetic dipole of the former.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** With the distal unit superimposed, the positions for the proximal unit are compared. By enforcing negative inter-subunit paramagnetic relaxation enhancement (PRE) restraints, open-state conformations of K63-Ub2 can also be obtained. The atomic probability map plotted at 10% threshold (gray meshes) encompasses the known structures of K63-Ub2 in the open state.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** With an MTS probe conjugated at N25C site or K48C site, the PRE values were calculated for the known structures of K63-Ub2 in the open state, which include (A) 3H7P, (B) 3HM3, (C) 2JF5, (D) 2RR9, (E) 3A1Q, and (F) 2NZV.\n\nK63-Ub2 has been generally considered to only exist in the open state for both ligand-free and many ligand-bound forms. For the known open-state structures of K63-Ub2 (Sato et al., 2008; Datta et al., 2009; Komander et al., 2009; Sato et al., 2009a; Weeks et al., 2009; Yoshikawa et al., 2009; Sekiyama et al., 2012), the intra-molecular inter-subunit PREs calculated with an MTS probe attached at either N25C or K48C site are essentially zero for residues in the proximal unit (Figure 1\u2014figure supplement 7). Alternatively, an open extended conformation of K63-Ub2 can be simply obtained by restraining the inter-subunit PRE target value to zero for residues in the proximal unit\u2014the resulting conformational space encompasses all known K63-Ub2 structures in the open state (Figure 1\u2014figure supplement 8). As such, the large inter-subunit PREs should only arise from the closed state of K63-Ub2, and ligand-free K63-Ub2 should exist in both open and closed states.\n\nThe existence of the closed state for ligand-free K63-Ub2 is corroborated by small angle X-ray scattering (SAXS) analysis. The SAXS data collected for K63-Ub2 at higher concentrations display larger particle size than those at lower concentrations, indicative of high-order oligomers for the former (Figure 2\u2014figure supplement 1). At lower concentrations, the Dmax value is smaller, and the data recorded at 1 mM and 500 \u00b5M are similar (Dmax = 67.2 and 65 \u00c5, respectively). The Dmax values are smaller than the calculated values for all known open-state structures (84.0 \u00b1 3.3 \u00c5). Significantly, the experimental paired-distance distribution function P(r) at 1 mM is much narrower than those computed for the known open-state structures, with a large probability of distribution at \u223c30 \u00c5 (Figure 2A). Further, the theoretical scattering profiles for the open-state structure models (Figure 1\u2014figure supplement 8) all differ from the experiment curve (Figure 2\u2014figure supplement 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig2-v2.jpg)\n\n**Figure 2.:** (A) Paired-distance distribution curves transformed from the experimental data (black line) or calculated for the known structures of K63-Ub2. Except for the Protein Data Bank (PDB) structures 3H7P, 3HM3, and 2JF5, the bound ligand was removed before calculation. (B) Comparison between experimental (gray dots) and simulated scattering data (transparent cyan line), affording a \u03c72 value of 1.24. The simulated curve was obtained by linearly combining the theoretical curves calculated for open-state (red line) and closed-state (blue line) solution structures at 30:70 ratio.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The paired-distance curve displays a narrower distribution at lower protein concentration. The larger particle size at higher protein concentration can be attributed to the non-covalent interactions between two or more K63-Ub2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Each line represents the theoretical curve calculated for one conformer in one of the ensemble structures obtained. For reference, the calculated scattering curves for the known structures of K63-Ub2 in either open or closed states are also shown (with the bound ligand removed if present).\n\n### Ensemble refinement of the closed-state structure of K63-Ub2\n\nTo characterize the closed-state structure of ligand-free K63-Ub2, we performed rigid-body simulated annealing refinement against the inter-subunit PREs. The linker between the two subunits (Lys63 side chain in the proximal unit and C-terminal flexible residues 72\u201376 of the distal unit) was given full torsional freedom. A grid search was performed by varying the number of conformers representing the closed state (from a single conformer to a five-conformer ensemble), and by varying the overall population of the closed state (from 10% to 90%). A single-conformer representation for the closed state does not satisfy the inter-subunit PREs, as assessed by the PRE Q-factor (Iwahara et al., 2004). This means that the closed state of ligand-free K63-Ub2 should exist in multiple conformations. The PRE Q-factor rapidly decreases as the number of conformers representing the closed state increases, and levels off with four or more conformers (Figure 3A). On the other hand, a closed-state population of at least 30% is required to achieve a good fit to the PRE data (Figure 3A). For reasons that will be discussed below, the population of the K63-Ub2 closed state is about 70%. At a 70% population for the closed state with a four-conformer representation, the back-calculated PREs agree well with the experimental ones, affording a PRE Q-factor of 0.22 and correlation coefficient of 0.94 (Figures 1, 3B). Importantly, the two paramagnetic conjugation sites, N25C and K48C, provide cross-validating PRE measurements\u2014when refining the ensemble structure of the K63-Ub2 closed state against the N25C data alone, the PRE values predicted for the K48C site largely agree with the experimental values, affording a free Q-factor of 0.46 (Figure 3\u2014figure supplement 1). On the other hand, the SAXS profiles computed for the PRE-based closed-state structures differ from the experiment curve, with the calculated intensities larger at scattering angles between 0.5 and 1 nm\u22121 (Figure 2\u2014figure supplement 2B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heat map of PRE Q-factor upon varying the number of conformers and the population of the closed state. (B) The correlation between observed and calculated PREs, with a four-conformer representation at 70% closed-state population. The PRE ensemble Q-factor is 0.26 and 0.18 for the N25C site (open circles) and K48C site (closed circles), respectively, and 0.22 for both sites. The diagonal indicates a perfect correlation to guide the eyes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The closed-state structure of K63-Ub2 was refined against N25C data only with a four-conformer representation. The PREs for the K48C site were back-calculated (blue line), which agree well with the experimental data (red circles) with a free Q-factor of 0.46. Residues that are completely broadened out are denoted with asterisks at the top.\n\n### Analysis of the closed-state structure of K63-Ub2\n\nTo better visualize the ensemble structure of K63-Ub2 in the closed state, we projected the position of the proximal unit relative to the distal unit using spherical coordinates (Figure 4\u2014figure supplement 1). Upon reducing the dimensionality, we found that the closed-state structures exist in two clusters, namely C1 and C2 (Figure 4A). For each four-conformer structure, one of the conformers falls into C2, while the other three are in C1. The proximal unit of ligand-free K63-Ub2 utilizes distinct interfaces to interact with the distal unit in C1 and C2 states (Figure 4B,C), affording buried solvent-accessible surface areas of 283.9 \u00b1 139.7 \u00c52 and 200.5 \u00b1 59.6 \u00c52, respectively. Significantly, the crystal structures of K63-Ub2 in complex with the ZnF4 domain of A20 (Bosanac et al., 2010) and with the NZF domain of TAB2 or TAB3 (Kulathu et al., 2009; Sato et al., 2009b) are found within or near the C1 and C2 clusters, respectively (Figure 4A). The root-mean-square difference (RMSD) between the conformers in C1 and the ZnF4-bound structure of K63-Ub2 is as small as 3.93 \u00c5 (Figure 4B), while the RMSD between C2 conformers and the NZF-bound structure is as small as 1.68 \u00c5 (Figure 4C). We predicted the inter-subunit PREs for two known complex structures in closed states (Figure 4\u2014figure supplement 2A,B). Linearly combining the two sets of PREs at a 3:1 ratio and 70% total population, the resulting PREs agree well with the experimental values, although some details differ (Figure 4\u2014figure supplement 2C). On the other hand, the paired-distance distribution profiles computed for A20 ZnF4 and TAB2/TAB3 NZF complexed K63-Ub2 (with bound ligand removed) display narrower distributions compared to those computed for the open-state structures or to the experimental data (Figure 2A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig4-v2.jpg)\n\n**Figure 4.:** (A) Projection of the ensemble structures in two dimensions with spherical coordinates. K63-Ub2 crystal structures in closed states are also projected. (B, C) Comparison of the ligand-free K63-Ub2 structure with K63-Ub2 crystal structures in complex with A20 ZnF4 and NZF TAB2, respectively. With the distal unit superimposed, the other ubiquitin subunit in the crystal structure is shown as a gray cartoon, affording root-mean-square (RMS) differences of 3.93 \u00c5 and 1.68 \u00c5 for C1 and C2 closed states, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The origin is set at the center-of-mass of the distal unit, with north pole indicated. With the distal unit fixed, the polar angle of the proximal unit defines the relative orientation of the vector connecting the centers-of-mass of the distal and proximal units (dashed lines).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, B) PREs predicted for the proximal unit in the Protein Data Bank (PDB) structures 3OJ3 and 2WX0, with an MTS probe conjugated at K48C site. Averaged PRE values are shown as black lines, with the SDs shown as gray bars. (C) Linear combination of the two sets of predicted PREs at 3:1 ratio with 70% total population (52.5% for 3OJ3 and 17.5% for 2WX0). The experimental PRE data at K48C are shown as red circles.\n\nTaken together, the ensemble structure refinement revealed that in addition to the open state, ligand-free K63-Ub2 also exists in at least two distinct closed states at a significant combined population. As C1 is represented with multiple conformers, it is possible to further partition the closed state into more conformational states. As the ligand-bound closed structures are similar to ligand-free structures of K63-Ub2 in either C1 or C2 state, a cognate ligand of K63-Ub2 can be preferentially recognized and accommodated into one of the preexisting conformations. As there are some differences between the ligand-free and ligand-bound K63-Ub2 in the closed state (Figure 4B,C), the binding may require some induced fit, especially towards the end of the binding process. On the other hand, the open-state conformation of K63-Ub2 may specifically recognize its corresponding ligand like Rap80 tUIM (Sekiyama et al., 2012) via a conformational selection mechanism.\n\n### Perturbation of K63-Ub2 conformational space\n\nHow does K63-Ub2 inter-convert among the preexisting conformations? To address this, we introduced a charge reversal mutation to residue Glu64 in the proximal unit, resulting an E64RP mutant of K63-Ub2. Glu64 is located at the interface between the two subunits in both C1 and C2 closed states, opposing the positively charged residues Arg72 and Arg74 in the distal unit (Figure 5\u2014figure supplement 1). We reasoned that this mutation should affect the conformational space of K63-Ub2. Indeed, the E64RP mutation results in chemical shift perturbations (CSPs) in the K63-Ub2 distal unit (Figure 5\u2014figure supplement 2). Although the perturbations are small, almost the same residues are perturbed upon E64RP mutation as upon the covalent linkage of ubiquitin monomers (Figure 5A and Figure 1\u2014figure supplement 1D). However, the NMR peaks for the perturbed residues in the mutant do not simply move in the direction towards the chemical shift values of the ubiquitin monomer. This can be either due to altered non-covalent interactions around the mutation site, or to a change in the relative population of the conformational states. Therefore, it is difficult to quantitate the CSPs in terms of K63-Ub2 structural change.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig5-v2.jpg)\n\n**Figure 5.:** (A) Chemical shift differences of the distal unit upon mutation. Inset, residues with relatively large chemical shift differences (>0.01 ppm) are mapped to the surface of the distal unit (colored red). (B) Decreases in intra-molecular inter-subunit PREs upon mutation with an MTS paramagnetic probe conjugated at K48C site. Lines simply connect the data points. PRE values characteristic of C1 and C2 states are indicated with cyan and yellow strips, respectively. Error bars indicate the SD in PRE measurements.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative (A) C1 and (B) C2 closed-state structures. Glu64 in the proximal unit opposes Arg72 and Arg74 in the distal unit, shown as sticks. Judging from the structures, the charge reversal mutation could have a larger impact on the stability of C1 closed state than on C2 closed state of K63-Ub2.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Residues with relatively large chemical shift differences (>0.01 ppm) are labeled.\n\nThus we measured the intra-molecular inter-subunit PREs for the E64RP mutant of K63-Ub2, using the same paramagnetic conjugation scheme. The PRE profile of the mutant is similar to that of the wild type, indicating similar ensemble structures for the mutant (Figure 5B). However, the magnitude of the PRE decreases by about 50%. As the inter-subunits\u2019 PRE arises only from the closed-state structures of K63-Ub2, smaller PREs indicate that the E64RP mutation destabilizes the closed state, reducing the closed-state population to half of that of the wild type. At the same time, the E64RP mutation should result in an increase in the population for the open state.\n\n### Interactions between K63-Ub2 and its ligands\n\nIn a conformational selection mechanism, a K63-Ub2 ligand (tUIM, NZF, or ZnF4) is preferentially recognized by one of the preexisting conformational states. Since the relative populations of the conformational states are perturbed upon the E64RP mutation, we expect that the binding affinities of K63-Ub2 towards the respective ligands differ. Importantly, the mutation is away from the binding interfaces between K63-Ub2 and its ligands (Figures 6A,B, 7), and therefore should not directly affect the interactions between K63-Ub2 and its ligands.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Illustration of the E64RP mutation in the complex structures (Protein Data Bank [PDB] codes 2RR9 and 2WX0). The point mutation is distant from the K63-Ub2 interfaces with tUIM and NZF. (C, D) Isothermal calorimetry (ITC) measurements for the bindings with tUIM and NZF. The raw data (top panels) are converted to heat per injection, and the fitted curves using one-site binding model are shown as solid lines (bottom panels). The binding affinities KD, binding enthalpy changes \u0394H, and entropy changes \u0394S values are averaged over four independent experiments.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig7-v2.jpg)\n\n**Figure 7.:** (A, C) NMR titrations of ZnF4 into wild type and mutant K63-Ub2 with 15N-labeling at the distal unit. Residues 50\u201362 (labeled) experience slow timescale exchange and gradually disappear upon ZnF4 titration. (B, D) Fittings of chemical shift perturbations to binding isotherms. The chemical shift perturbations are calculated as (\u0394\u03b4H2 + \u0394\u03b4N2)^0.5 in Hz units. Inset, ZnF4-binding surface on K63-Ub2 distal unit (residues 50\u201362) is mapped (colored orange).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The heat exhausted could not be fitted to a binding isotherm.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The protein concentrations are 50 \u00b5M. The timescale of the exchange between ZnF4-free and bound species is slow for residues 50\u201362 of K63-Ub2 distal unit, whose peaks disappear upon ZnF4 titration. At 313 K, the exchange is slightly faster, which allows the fitting of the KD value.\n\nUsing isothermal calorimetry (ITC), we evaluated the binding affinities between wild type K63-Ub2 and tUIM, and between wild type K63-Ub2 and NZF. The respective KD values are 9.7 \u00b1 0.3 \u00b5M and 12.2 \u00b1 0.6 \u00b5M (Figure 1\u2014figure supplement 3), which agree with the literature values (Kulathu et al., 2009; Sekiyama et al., 2012). We attempted to measure the binding affinity between A20 ZnF4 domain and K63-Ub2. However, the heat was too small to be fitted (Figure 7\u2014figure supplement 1). Thus we resorted to NMR titration for the KD measurement. Upon titrating A20 ZnF4, a large set of residues in the distal unit of K63-Ub2 was perturbed (Figure 7A). Among the perturbed residues, residues 50\u201362 are located at the interface with ZnF4 (Bosanac et al., 2010), and their peaks disappear upon A20 ZnF4 titration, indicating a slow exchange between ZnF4-free and bound species (Figure 7\u2014figure supplement 2). We were only able to fit the CSPs at an elevated temperature (313 K instead of 303 K), and determined the KD value at 384.1 \u00b1 39.4 \u00b5M. A number of other residues in the K63-Ub2 distal unit also experience CSPs upon A20 ZnF4 titration. However, their peaks shift progressively at increasing ZnF4 concentrations, which indicates a fast exchange and should belong to a separate binding event.\n\nUpon the E64RP mutation, the binding between K63-Ub2 and the open-state ligand tUIM becomes tighter, with the KD value decreasing by more than fourfold to 2.2 \u00b1 0.1 \u00b5M (Figure 6C). On the other hand, the binding towards closed-state ligands weakens\u2014the KD value of K63-Ub2 binding towards NZF increases by \u223c50% to 17.8 \u00b1 1.1 \u00b5M (Figure 6D). Importantly, the enthalpy change \u0394H values are almost identical for the bindings involving the wild type and mutant proteins (Figure 6 and Figure 1\u2014figure supplement 3). For the interaction between K63-Ub2 mutant and A20 ZnF4, more peaks at the interface (residues 50\u201362 of the distal unit) can be traced, which can be attributed to a faster exchange than that of the wild type. Significantly, the KD value increases by almost threefold to 1199.9 \u00b1 104.9 \u00b5M (Figure 7). Together, the binding affinity towards the open-state ligand increases at the expense of the binding affinities towards the closed-state ligands, and the changes in binding affinities are caused entropically due to the perturbation of K63-Ub2 conformational space.\n\nThe difference in binding affinity can be accounted for by the difference in the conformational energy of K63-Ub2. Based on the PRE measurement, the closed-state population decreases by \u223c50% upon E64RP mutation (Figure 5). At the same time, the population for the open state increases by the same amount. Thus, the gain in conformational energy will be manifested as the free energy difference for the increase in binding affinity between K63-Ub2 and its open-state partner tUIM (\u22120.89 \u00b1 0.04 kCal/mol). On the other hand, the C1 and C2 closed states forfeit 0.71 \u00b1 0.08 kCal/mol and 0.23 \u00b1 0.09 kCal/mol in binding free energies, respectively. Our calculation indicated that only when the closed-state population decreases from \u223c70% to \u223c35% upon the mutation, in which C1 state population decreases from \u223c52.5% to \u223c22.5% and C2 state population decreases from \u223c17.5% to \u223c12.5%, could the binding free energy change be the same as the conformational energy change. Indeed, upon the point mutation, a larger decrease was observed for the PRE corresponding to the C1 state than the PRE for the C2 state (Figure 5B), and the binding affinity of K63-Ub2 towards a C1 state ligand decreases more than the affinity towards a C2 state ligand (Figures 6, 7 and Figure 1\u2014figure supplement 3). Although the SAXS data have insufficient resolution to resolve multiple closed states, and may include contributions from high-order non-covalent oligomers, linearly combining the SAXS data calculated for the closed and open states at 70% and 30% and without further refinement, we were able to recapitulate the experimental SAXS data with a \u03c72 value of 1.24 (Figure 2B).\n\n## Discussion\n\nIn this study, we have shown that about 70% of K63-Ub2 exists in the closed state, whereas only about 30% of the protein exists in the open state. Our findings disagree with many previous structural characterizations of K63-Ub2 (Varadan et al., 2004; Datta et al., 2009; Dikic et al., 2009; Komander et al., 2009; Weeks et al., 2009; Komander and Rape, 2012), which reported that ligand-free K63-Ub2 exists only in the open state. Nevertheless, the closed-state population is in line with our previous finding that ubiquitin monomer non-covalently dimerizes with an apparent KD value of 4.9 \u00b1 0.3 mM (Liu et al., 2012). In the non-covalent dimer of ubiquitin monomer, a ubiquitin adopts an array of orientations in respect to the other. With a covalent linkage, the non-covalent interaction between ubiquitin becomes intra-molecular and restricted. Therefore, a significant population of diubiquitin should exist in the closed compact conformation regardless of the ubiquitin linkage. Indeed, studies have indicated that K48-Ub2 mainly exists in the closed state (Cook et al., 1992, 1994; Phillips et al., 2001; Varadan et al., 2002; Eddins et al., 2007; Hirano et al., 2011; Ye et al., 2012). For ligand-free K63-Ub2, however, only a recent single-molecule fluorescence resonance energy transfer (smFRET) study has provided direct experimental evidence and indicated that the protein exists in a closed state at a population of \u223c75% (Ye et al., 2012). Here, using paramagnetic NMR, SAXS, and mutational analysis, we found that the population of the closed state of ligand-free K63-Ub2 is \u223c70%. But why have only open-state structures been reported for ligand-free K63-Ub2? A possible explanation is that the open-state structure is more readily captured owing to non-covalent interactions between neighboring unit cells, and becomes enriched during crystallization processes.\n\nFurther, we have identified two distinct closed states, namely C1 and C2, with different populations (Figure 4A). The PRE NMR provides 1/r6 ensemble-averaged distance information (Clore and Iwahara, 2009). So the inverse problem is to determine the constituting conformational states that give rise to the ensemble-averaged PRE observables. Here by projecting the structures with spherical coordinates, we were able to visualize the distinct conformational states of ligand-free K63-Ub2. In comparison, the smFRET study on ligand-free K63-Ub2 (Ye et al., 2012) measured just a single distance between the N-terminus of the distal unit and the C-terminus of the proximal unit, and could not distinguish multiple closed states or provide a structural description for each state. Similarly, SAXS analysis is unable to reveal how two nearly globular proteins are docked to each other in atomic detail (Figure 2A).\n\nOur structural analysis based on the PRE revealed that the C1 and C2 closed states utilize different binding interfaces. Importantly, the ligand-free structures of K63-Ub2 are similar to the respective ligand-bound structures (Kulathu et al., 2009; Sato et al., 2009a; Bosanac et al., 2010) (Figure 4B,C). This suggests a conformational selection mechanism for K63-Ub2 target recognition. This mechanism is further supported by conformational energy analysis. The inter-conversion between K63-Ub2 conformational states and ligand binding are coupled equilibria, and the population for each conformational state weights on the binding affinity towards a respective ligand. For the interaction between K63-Ub2 and tUIM, an open-state ligand, the change in binding free energy accompanying an E64RP mutation can be fully accounted for by the increase in the relative population of the open state. On the other hand, the change in conformational energy also accounts for the difference in binding affinities between wild type and mutant K63-Ub2 towards closed-state ligands TAB2/TAB3 NZF and A20 ZnF4.\n\nTogether, our ensemble structural refinement and mutational analysis revealed that ligand-free K63-Ub2 adopts at least three conformational states, including one open state and two closed states, each of which can accommodate cognate ligands. Closed compact structures have been reported for ligand-free diubiquitins with Lys48 (Cook et al., 1992), Lys11 (Matsumoto et al., 2010; Castaneda et al., 2013), Lys29, and Lys33 (Kristariyanto et al., 2015; Michel et al., 2015) linkages. These structures are different from the C1 or C2 closed-state conformations of K63-Ub2, and therefore are involved in different functions. As such, a covalent ubiquitin linkage dictates how the two subunits non-covalently interact with each other in a diubiquitin, and resulting quaternary arrangements encode specific cell signals. For K63-Ub2, the open state recognizes tUIM of Rap80 and is involved in DNA damage repair, the C2 closed state recognizes the NZF domain of TAK1 binding proteins and is involved in the activation of NF-\u03baB signaling, while the C1 state recognizes the ZnF4 domain of A20 and is involved in the termination of NF-\u03baB signaling pathways (Figure 8). Constructed from repeating units of diubiquitins, a polyubiquitin should exist in a combination of quaternary structures of the diubiquitins and participate in diverse functions.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05767/elife-05767-fig8-v2.jpg)\n\n**Figure 8.:** In the absence of a ligand, K63-Ub2 alternates between an open and two closed states. A specific ligand can be accommodated and bound to one of the three preexisting conformations, eliciting the downstream signal.\n\n## Materials and methods\n\n### Sample preparation\n\nHuman ubiquitin was cloned into a pET11a vector; single-point mutations including N25C, K48C, E64R, K63R, and 77D were introduced using QuikChange (Stratagene). BL21 star cells were used for protein expression, and were grown in either LB medium (for preparing unlabeled proteins) or in M9-minimum medium (for preparing isotope-enriched proteins). All ubiquitin proteins were purified on Sepharose SP and Sephacryl S100 columns (GE Healthcare, Piscataway, NJ) in tandem. Ligation between two ubiquitin molecules was based on the established protocol (Pickart and Raasi, 2005). Briefly, the proximal unit carrying a 77D mutation (Asp77 appended at the C-terminus) was mixed equimolarly with the distal unit carrying a K63R mutation, to thus ensure a single ligation product. With the addition of 2.5 \u00b5M E1 and 10 \u00b5M E2 (Mms2/Ubc13 complex from yeast), 2 mM ATP, and 5 mM MgCl2, ligation between two ubiquitin monomers was allowed to proceed for 5 hr at 30\u00b0C. The reaction was quenched with 5 mM DTT and 2 mM EDTA. The product was purified on a Sephacryl S100 column.\n\nTandem ubiquitin-interacting motif (tUIM) from human protein Rap80 encompassing residues 79\u2013124, the fourth ZnF4 domain of A20 (residues 590\u2013635), and NZF domain from human TAK1-binding protein 2 (TAB2, residues 663\u2013693) were cloned into the pGEX vector. Since tUIM has no 280 nm UV absorption, a C121Y mutation was introduced. It has been shown that modification to this residue has no effect on the structure of tUIM or the interaction between tUIM and K63-Ub2 (Sekiyama et al., 2012). All three proteins were expressed in BL21 star cells in LB medium. The proteins were purified off a GST affinity column. With the GST tag removed by TEV protease, the proteins were further purified through a Sephacryl S100 column. For the purification of ZNF4 and NZF, the buffer also contains 5 mM DTT and 50 \u00b5M ZnCl2. All purified proteins were confirmed by electrospray mass spectrometry (Bruker Daltonics, Germany).\n\n### NMR data collection\n\nA single-point cysteine mutant of K63-Ub2, either N25C or K48C in the distal unit, was reacted with a fivefold excess of S-(2,2,5,5-tetramethyl-2,5-dihydro-1H-pyrrol-3-yl) methyl methanesulfonothioate (MTS; from Toronto Research Chemicals, Canada) or a fourfold excess of [N-(2-maleimido)ethyl]ethylenediamine-N,N,N\u2032,N\u2032-tetraacetate (pre-incubated with a twofold excess of MnCl2, EDTA-Mn2+) for 3 hr at room temperature. Unreacted probe was removed by desalting. The conjugation product was confirmed by mass spectrometry for a mass difference of 184 Da for MTS and 414 Da for EDTA conjugation. The NMR buffer contains 100 mM NaCl, 10 mM sodium acetate at pH 6.0, and 10% D2O. The paramagnetic NMR data were collected on a 500 \u00b5M sample at 303 K on Bruker 850 MHz or 600 MHz instruments, each equipped with a cryogenic probe. Transverse relaxation rates of amide protons for the 15N-labeled subunit of K63-Ub2 protein were measured using the standard pulse scheme with a 4 ms delay between the two time points, Ta and Tb (Iwahara et al., 2007). Inter-molecular PREs were measured for a 500 \u00b5M equimolar mixture of K63-Ub2, with paramagnetic conjugation and isotope labeling on two separate proteins. The peak intensity at the second time point Tb is given as follows:\n\n$$\nI_{b}=I_{a}exp[\u2212R(T_{b}\u2212T_{a})],\n$$\n\nin which the relaxation rates R can be diamagnetic relaxation rates R2, or (R2 + \u03932,inter) for the equimolar mixture, or (R2 + \u03932,inter + \u03932) for the paramagnetic sample. Ia and Ib are the peak intensities at Ta and Tb. Using the equimolarly mixed sample as the PRE reference, the intra-molecular inter-subunit PRE 1H \u03932 value can be determined as follows:\n\n$$\n\u0393_{2}=\\frac{1}{T_{b}\u2212T_{a}}ln\\frac{I_{inter}(T_{b})I_{para}(T_{a})}{I_{inter}(T_{a})I_{para}(T_{b})}.\n$$\n\nThe same scheme was used for determining intra-molecular inter-subunit PREs for the E64RP mutant of K63-Ub2. At 50 \u00b5M concentration, the percentage of K63-Ub2 dimer can be negligible and the \u03932,inter term disappears. Thus the peak intensities for a single time point measurement scheme are defined as:\n\n$$\nI_{dia,50}=I_{0}exp[\u2212R_{2}T],\n$$\n\n\n\n$$\nI_{para,50}=I_{0}exp[\u2212(R_{2}+\u0393_{2})T],\n$$\n\nin which I0 is the intensity at the beginning of the pulse sequence, and T is \u223c9.2 ms (Iwahara et al., 2007). Owing to the \u03932,inter term, peak intensities at 500 \u00b5M concentration are calculated as below:\n\n$$\nI_{para,500}=I_{0}exp[\u2212(R_{2}+\u0393_{2,inter}+\u0393_{2})T],\n$$\n\n\n\n$$\nI_{inter,500}=I_{0}exp[\u2212(R_{2}+\u0393_{2,inter})T],\n$$\n\nin which Ipara,500 and Iinter,500 are peak intensities for 500 \u00b5M paramagnetic sample and 500 \u00b5M equimolar mixture, respectively. Taking the ratios of the four equations above, the following relationship can be obtained:\n\n$$\n\\frac{I_{dia,50}}{I_{para,50}}=exp(\u0393_{2}T)=\\frac{I_{inter,500}}{I_{para,500}}.\n$$\n\n### Ensemble structure refinement and analysis\n\nRefinement against experimental restraints was conducted using Xplor-NIH (Schwieters et al., 2006). A three-conformer representation for each paramagnetic probe at each conjugation site (N25C or K48C) was employed, to thus recapitulate the conformational flexibility for the paramagnetic probe (Iwahara et al., 2004). With the protein backbone fixed, the dihedral angles for the rotatable bonds between the paramagnetic center and the protein backbone were optimized. Excluding structures with large van der Waals violations, intra-molecular and intra-subunit PREs were calculated for each structure, which were employed as the target values to restrain the spatial distribution of the paramagnetic probes in the subsequent calculations.\n\nThe starting coordinates of each ubiquitin subunit were taken from Protein Data Bank (PDB) structure 1UBQ (Vijay-Kumar et al., 1987), and two ubiquitin molecules were patched together with an isopeptide bond between the Lys63 side chain of the proximal unit and the C-terminus of the distal unit. While keeping the coordinates of the distal unit fixed (conjugated with the paramagnetic probes at N25C and K48C sites, each in three-conformer representation), the proximal unit of K63-Ub2 was treated as a rigid body that can rotate and translate as a whole. The Lys63 side chain of the proximal unit and residues 72\u201376 of the distal unit were given full torsional freedom.\n\nTo initiate the ensemble rigid-body simulated annealing, the coordinates for the proximal unit (also including residues 72\u201376 of the distal unit) were replicated to make additional members of the ensemble. Each ensemble member was subjected to random rotational and translational movement, and was allowed to overlap. The simulated annealing ensemble refinement was performed with a target function that comprises the inter-subunit PRE restraints for residues 1\u201371, theoretical intra-subunit PRE restraints to confine the spatial distribution of the paramagnetic probes, the van der Waals repulsive term, and covalent energy terms. Square-well energy potential was used for the PRE term\u2014no energy penalty was given when the back-calculated PRE value was within \u00b1 the experimental error of the target value. Residues that are completely broadened out in the paramagnetic spectrum were given a large PRE target value with the lower bound at 120 s\u22121. An apparent PRE correlation time (\u03c4c = 7.2 ns) was estimated based on the rotational correlation time of the diamagnetic protein (\u223c7.6 ns for the closed state) and the large electron relaxation time of the nitroxide spin radical (\u223c150 ns) (Tang et al., 2007). The population of the closed state was varied from 10% to 90% in 10% increments, which was implemented as a scaling factor for the back-calculated PRE value. In simulated annealing refinement, the PRE energy force constant was ramped from 0.01 to 1 kcal mol\u22121 s2, and the temperature was cooled from 3000 to 25 K. For each combination of closed-state population and number of conformers, 160 structures were calculated. The agreement between the observed and calculated PRE rates was assessed with PRE Q-factor for both conjugation sites (Iwahara et al., 2004). To better visualize the structures, a spherical coordinate system was constructed, with the origin set at the center-of-mass of the distal unit. Analysis of the buried interfaces and rendering of an atomic probability map (Schwieters and Clore, 2002) were performed using Xplor-NIH (Schwieters et al., 2006). Structure figures were illustrated using PyMOL (The PyMOL Molecular Graphics System, Version 1.7; Schr\u00f6dinger, LLC).\n\n### SAXS measurement\n\nSolution SAXS was performed at 303 K on the SAXSess mc2 platform (Anton Paar, Graz, Austria) equipped with a sealed-tube X-ray source and a CMOS diode array detector. The proteins were extensively dialyzed to the same buffer used for NMR, and the SAXS profile for the matching buffer was recorded for background subtraction. To remove high molecular weight aggregate, the protein samples were centrifuged at 15,000 rpm for 30 min prior to each experiment, and the upper portion of the supernatant (the concentration was measured again at UV 280 nm) was pipetted and loaded into a quartz cuvette. The sample was placed 306 mm from the detector with a slit width of 10 mm. The SAXS data were collected in 30 min increments for a total of 5 hr (10 hr for the 0.5 mM sample); no difference was found between the first and last frames of SAXS data. The maximum distance of the particle (Dmax) was extrapolated from the paired-distance distribution function P(r) after indirect Fourier transformation of the I(q) scattering curve. The data collected at 1 mM were used for further analysis. The theoretical P(r) curve was calculated for each known structure of K63-Ub2 using CPPTRAJ in the AMBER 14 package (UCSF). The bound ligand was removed if present, and any missing residues from the crystal structure were patched using Xplor-NIH (Schwieters et al., 2006). With a water layer of \u223c3.5 \u00c5 thickness padded to protein structure (291\u2013349 explicit water molecules added depending on the PDB structure), the calculation of paired-distance distribution was performed at 0.5 \u00c5 resolution. The theoretical P(r) curve was smoothed using a 10-point spline function for plotting, and was normalized to a total area of 1. The theoretical scattering I(q) profiles were calculated using CRYSOL (Svergun et al., 1995) without fitting to the experimental data, and were scaled by the first point of the experimental scattering data.\n\n### Mutational and binding analyses\n\nThe isothermal calorimetry (ITC) binding experiment was performed on a VP-ITC instrument (GE Healthcare) at 303 K. All protein samples were prepared in the same buffer as in the NMR experiments. A 20 \u00b5M sample of K63-Ub2 protein, either wild type or E64RP mutant, was placed in the reservoir. The titrant, 300 \u00b5M tUIM, TAB2 NZF, or A20 ZnF4 proteins, was titrated into K63-Ub2 drop-wise. Dilution heat was subtracted by titrating tUIM or NZF into a matching buffer and was measured for each experiment. After converting to heat per injection, the curves were fitted using a one-site binding model using Origin 8.1 software. All ITC titrations were performed at least four times. NMR titration of A20 ZnF4 was performed on the Bruker 850 MHz instrument at 303 K or 313 K, by titrating 50, 100, 150, 250, 350, or 450 \u00b5M ZnF4 into wild type or E64RP mutant K63-Ub2 protein (distal unit 15N-labeled). The exchange timescale at 313 K is faster than at 303 K, which allowed us to fit the binding isotherm from the chemical shift perturbations of residues at the ZnF4 binding interface.\n\nBased on the binding affinities measured by ITC and by NMR, the binding free energies differ by \u22120.89 \u00b1 0.04, 0.23 \u00b1 0.09, and 0.71 \u00b1 0.08 kCal/mol upon E64RP mutation, for the bindings towards tUIM, NZF, and ZnF4, respectively. The probability of open state Po can be defined,\n\n$$\nP_{o}=\\frac{e^{\u2212\\epsilon_{o}/k_{B}T}}{1+e^{\u2212\\epsilon_{o}/k_{B}T}},\n$$\n\nin which \u03b5o is the free energy of the open state relative to the closed state, and kB is the Boltzmann constant. Thus, the energy for the open state can be calculated:\n\n$$\n\\epsilon_{o}=k_{B}T\u2009ln(1/P_{o}\u22121).\n$$\n\nThe difference in conformational energy for the open state between the mutant and wild type K63-Ub2 can be calculated as below:\n\n$$\n\u0394\u0394G_{conformation}=(\\epsilon_{o,mt}\u2212\\epsilon_{o,wt})N_{A}=RT\u2009ln(1/P_{o,mt}\u22121)\u2212RT\u2009ln(1/P_{o,wt}\u22121),\n$$\n\nin which \u03b5o,mt and \u03b5o,wt are the conformational energies for the open state of the mutant and of the wild type, respectively, and NA is the Avogadro constant. As the overall population of the closed state decreases by \u223c50% for the mutant, as estimated from the PRE, the population of the open state follows this relationship:\n\n$$\nP_{o,mt}=1\u22120.5\\times(1\u2212P_{o,wt}).\n$$\n\nAs the differences in the binding affinities towards the respective ligands of K63-Ub2 are caused entropically, the difference in conformational free energy should be equal to the difference in binding free energy. Solving Equations 10 and 11, one could determine that the open-state population increases from \u223c30% for the wild type to \u223c65% for the mutant, which corresponds to a conformational energy change of \u22120.88 kCal/mol. At the same time, the closed-state population drops from \u223c70% to \u223c35%. Further, the ratio between C1 and C2 closed states can be determined at about 3:1 for the wild type K63-Ub2. Thus, upon the point mutation, the population of C1 state drops from 52.5% to 22.5 %, and the population of C2 state drops from 17.5% to 12.5 %, which correspond to conformational energy changes of 0.80 and 0.24 kCal/mol, respectively. Such changes are in line with the design of the E64RP mutant, and are also consistent with the relative decreases in PRE values.\n",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "f3a532cf-75ee-494a-8f1a-621a87a0e98f",
+      "submission_id": "6be61cc7-bd09-42a8-854b-8f38480f9956",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05767.028](https://doi.org/10.7554/eLife.05767.028)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cLys63-linked Ubiquitin Chain Adopts Multiple Conformational States for Specific Target Recognition\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom, Volker D\u00f6tsch, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe paper presents a thorough and nice analysis of the major conformation space of the dynamic K63-linked diubiquitin. The results are of considerable interest for this field, and present also a nice example for a broader community.\n\nTechnically, the work is mostly sound and well done. However, there are a number of concerns and technical issues that should be addressed before considering publication of the manuscript.\n\n1) The statistical significance and validation of the ensemble selection is not fully clear. The analysis appears biased as simultaneously the number of members in the ensemble and their fractional contribution are varied. The authors simply propose that with four members and a 70% contribution a small Q-factor is observed, but no independent multi-parameter optimization is presented (and may not be possible without additional data). In my view, this is not statistically sound and introduces a bias that represents an overfitting of the data. There is no cross-validation presented (using other experimental data, i.e. with different spin label positions or using other experimental data). It is not clear how the K11Cp or K48Cd PRE data should provide an independent cross-validation, as the data are not shown and interpreted (for cross-validation). Have the authors considered SAXS measurements to provide additional independent data that could help fitting populations if the predicted SAXS data are sufficiently different for the open and closed conformations?\n\n2) Have the authors analyzed chemical shift differences (comparing single and linked ubiquitins) or looked for potential interdomain NOEs that could support the observed interfaces?\n\n3) Complete data for ITC data need to be provided, especially considering the important conclusions the authors derive from them. Fitted stoichiometries and blank titrations (dilution heats) should be shown for all ITC data (including replicates). The ITC data for the UBP NZF (prefers C2 state) are not convincing. The authors state that the mutation decreases the affinity by 50%. However, especially taking into account the fitting error it is much less than 50%. It is also not clear the errors indicated are fitting errors or averages and uncertainties from the replicate measurements, which they should be, given the conclusions based on the rather small difference in binding affinities. The authors mention in the Methods section, that they have measured duplicates. They should provide all the ITC measurements in the supplement so that the quality and validity of their conclusions can be assessed. For NZF, it seems that repeating the measurement three or even four times would be necessary. Also, as the authors say that the mutations should have a stronger impact on the C1 state, it would therefore be informative that the authors do similar ITC measurements and analyses with a C1 ligand, e.g. the mentioned antibody, to further corroborate the conclusions.\n\n4) The authors should illustrate that the spin labels introduced do not directly interfere with either the open or the closed state structures, or potentially increase the tendency towards a closed state structure. This should be shown by highlighting the position of K11/K48 in structural figures (e.g. Figure 3) for K63-Ub2 alone, and when to bound to the two ligands investigated.\n\nIn addition, the authors should also verify that the spin labels themselves do not affect binding of the ligands, i.e. by comparing ITC data for wild type and spin labeled proteins.\n\n5) The authors propose that the reduced \u03c4c values for the charge reversal mutation indicates a shift to more open conformations. However, it could also be that the charges also reduce the (known) tendency of (di)ubiquitin to dimerize. Can the authors rule out this possibility? Have they measured relaxation data for the monomer harboring the same charge reversals?\n\n6) The Abstract is phrased as addressing a biophysical rather than an important biological/biochemical problem. Also the compact introduction may appeal more to a smaller expert community. On both I would suggest to change the emphasis towards the biochemical result and its possible biological impact, and add a short section to the Introduction and Discussion.\n\n7) What is the structural basis for the effect of the charge reversal mutant?\n\n8) Published literature where multi-domain conformations have been studied should be appropriately referenced, i.e. work by the groups of Berlin/Fushman (theoretical analysis), Blackledge, Luchinat, Sattler, Grzesiek, Kay and others (using PRE, RDC, SAXS data).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cLys63-linked Ubiquitin Chain Adopts Multiple Conformational States for Specific Target Recognition\u201d for further consideration at eLife. Your revised article has been favorably evaluated by John Kuriyan (Senior editor), a Reviewing editor, and one reviewer. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The authors suggest that the use of SAXS data, which could help fitting populations, is not feasible as K63-Ub2, or mono-Ub dimerize non-covalently and this strongly affects the scattering. This would however also jeopardize the overall conclusions as one wonders whether the PRE data might also reflect intermolecular PREs? It would be interesting to show the SAXS data attached to a primary figure and their concentration dependence to judge how strong these effects really are.\n\n2) Concerning the ITC data: The authors should additionally report the stoichiometries fitted for the ITC data. For better comparison KD not KA values should be reported consistently.\n\n3) The Introduction addresses a general audience now, the Abstract not really yet. It could still be improved:\n\nIn short (I have no objection what parts would be used..): The authors show that free K63-Ub2 exists as a dynamic ensemble consisting of multiple closed and extended quaternary arrangements. This quaternary structural plasticity of K63-Ub2 enables it to be recognised in a variety of signalling pathways. Upon binding to a target protein one of the quaternary arrangements is selected. The authors show that different target proteins or point mutations can select or shift the equilibrium between different quaternary arrangements.\n\n4) Possible error: In the subsection headed \u201cNMR data collection\u201d: equation (3) and (4) seem to be partially swapped (Is \u03932 in the dia term correct? If not, equation (7) might also be switched.)\n",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de55d0a7-11e2-4891-8b72-153674859f41",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C1",
+      "claim": "A polyubiquitin comprises multiple covalently linked ubiquitins and recognizes myriad targets.",
+      "claim_type": "EXPLICIT",
+      "source": "A polyubiquitin comprises multiple covalently linked ubiquitins and recognizes myriad targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract describing the basic structure and function of polyubiquitins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "11cda50e-fd0c-4091-9524-e477df19c806",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C2",
+      "claim": "Free or bound to ligands, polyubiquitins are found in different arrangements of ubiquitin subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Free or bound to ligands, polyubiquitins are found in different arrangements of ubiquitin subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the structural studies described throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "0369e1fd-8086-47d3-ba53-e0d8d5de88a7",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C3",
+      "claim": "Free K63-Ub2 exists as a dynamic ensemble comprising multiple closed and open quaternary states.",
+      "claim_type": "EXPLICIT",
+      "source": "Refining against inter-subunit paramagnetic NMR data, we show that free K63-Ub2 exists as a dynamic ensemble comprising multiple closed and open quaternary states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by PRE NMR data and ensemble refinement calculations presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "27cbe377-5d5c-49d3-b4da-95d0ac3592d0",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C4",
+      "claim": "The quaternary dynamics enables K63-Ub2 to be specifically recognized in a variety of signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The quaternary dynamics enables K63-Ub2 to be specifically recognized in a variety of signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by binding studies with different ligands (tUIM, NZF, ZnF4) and their association with different signaling pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "a7d67bd3-e7d3-4015-8616-f3e8edac0cff",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C5",
+      "claim": "When binding to a target protein, one of the preexisting quaternary states is selected and stabilized.",
+      "claim_type": "EXPLICIT",
+      "source": "When binding to a target protein, one of the preexisting quaternary states is selected and stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conformational selection mechanism is supported by the structural similarity between ligand-free and ligand-bound states, and by mutational analysis showing entropic changes in binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "12eba489-f0f1-4fd4-8e25-9912424b40a5",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C6",
+      "claim": "A point mutation that shifts the equilibrium between the different states modulates the binding affinities towards K63-Ub2 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "A point mutation that shifts the equilibrium between the different states modulates the binding affinities towards K63-Ub2 ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The E64RP mutation data showing changes in PRE values and binding affinities support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "1677ba73-971f-4190-960c-9d0b219dd6ab",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C7",
+      "claim": "This conformational selection mechanism at the quaternary level may be used by polyubiquitins of different lengths and linkages for target recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational selection mechanism at the quaternary level may be used by polyubiquitins of different lengths and linkages for target recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from the K63-Ub2 findings to other polyubiquitin systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "13ff73f3-6443-40f8-ab00-f53e8a664883",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C8",
+      "claim": "Ubiquitin is a 76-residue signaling protein found ubiquitously in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin is a 76-residue signaling protein found ubiquitously in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ubiquitin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "85940734-b9cf-402c-b871-4dd703401453",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C9",
+      "claim": "Three classes of enzymes catalyze ubiquitination: ubiquitin-activation enzyme (E1), ubiquitin-conjugation enzymes (E2), and ubiquitin-protein ligases (E3).",
+      "claim_type": "EXPLICIT",
+      "source": "Three classes of enzymes catalyze ubiquitination: ubiquitin-activation enzyme (E1), ubiquitin-conjugation enzymes (E2), and ubiquitin-protein ligases (E3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the ubiquitination machinery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9b87a301-49cd-4b63-b519-77015649cfd7",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C10",
+      "claim": "E2 and E3 dictate ubiquitin linkage and substrate specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "E2 and E3 dictate ubiquitin linkage and substrate specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E2 and E3 enzyme functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "4a00a063-8320-4ced-bffc-f54dc4c7b444",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C11",
+      "claim": "Deubiquitinases (DUBs) are responsible for specifically erasing ubiquitin signals from a substrate protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, deubiquitinases (DUBs) are responsible for specifically erasing ubiquitin signals from a substrate protein (Clague et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Clague et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "0d650850-afc3-447d-8365-b9dfac32fdb8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C12",
+      "claim": "Two or more ubiquitins are linked via an isopeptide bond between the carboxylate at the C-terminus of one ubiquitin and the \u03b5-amine of a lysine residue or the \u03b1-amine at the N-terminus of another ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Catalyzed by a linkage-specific E2, two or more ubiquitins are linked up via an isopeptide bond between the carboxylate at the C-terminus of one ubiquitin (referred to as the distal unit) and the \u03b5-amine of a lysine residue (Lys6, Lys11, Lys27, Lys29, Lys33, Lys48, or Lys63) or the \u03b1-amine at the N-terminus of another ubiquitin (referred as the proximal unit).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chemical nature of ubiquitin linkages, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3f50d67a-d6c6-4292-9348-59f0980578ad",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C13",
+      "claim": "Lys48-linked polyubiquitin is the most abundant linkage in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys48-linked polyubiquitin is the most abundant linkage in cells, and signals substrate proteins for proteasomal degradation (Kravtsova-Ivantsiv et al., 2013; Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kravtsova-Ivantsiv et al., 2013 and Lu et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "be9aab1c-c340-4640-8200-00e0614d93f0",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C14",
+      "claim": "Lys48-linked polyubiquitin signals substrate proteins for proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys48-linked polyubiquitin is the most abundant linkage in cells, and signals substrate proteins for proteasomal degradation (Kravtsova-Ivantsiv et al., 2013; Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kravtsova-Ivantsiv et al., 2013 and Lu et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "26414fe7-7788-4c1d-8b5f-e8d1f8ae55ce",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C15",
+      "claim": "Other types of linkages mostly perform non-degradative functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Other types of linkages mostly perform non-degradative functions (Xu et al., 2009; Kulathu and Komander, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Xu et al., 2009 and Kulathu and Komander, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "503c607d-3854-40c2-9a12-0cad7801e6bc",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C16",
+      "claim": "Lys63-linked polyubiquitin is another common linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin is another common linkage, and has been found to be involved in DNA damage response (Hoege et al., 2002), multivesicular body mediated protein sorting (MacDonald et al., 2012), NF-\u03baB signaling (Chen and Chen, 2013; Zinngrebe et al., 2014), and oxidative stress response (Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3e19137f-3700-4c57-8971-cc4cdcf6014a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C17",
+      "claim": "Lys63-linked polyubiquitin has been found to be involved in DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin is another common linkage, and has been found to be involved in DNA damage response (Hoege et al., 2002), multivesicular body mediated protein sorting (MacDonald et al., 2012), NF-\u03baB signaling (Chen and Chen, 2013; Zinngrebe et al., 2014), and oxidative stress response (Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hoege et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "cde48bcc-de5e-4f40-96c3-ef524a9945ca",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C18",
+      "claim": "Lys63-linked polyubiquitin has been found to be involved in multivesicular body mediated protein sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin is another common linkage, and has been found to be involved in DNA damage response (Hoege et al., 2002), multivesicular body mediated protein sorting (MacDonald et al., 2012), NF-\u03baB signaling (Chen and Chen, 2013; Zinngrebe et al., 2014), and oxidative stress response (Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to MacDonald et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "578129da-0dad-46dd-8e49-f2db75c62412",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C19",
+      "claim": "Lys63-linked polyubiquitin has been found to be involved in NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin is another common linkage, and has been found to be involved in DNA damage response (Hoege et al., 2002), multivesicular body mediated protein sorting (MacDonald et al., 2012), NF-\u03baB signaling (Chen and Chen, 2013; Zinngrebe et al., 2014), and oxidative stress response (Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen and Chen, 2013 and Zinngrebe et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "43fb740f-6a4d-4f36-b039-328430f1ee9e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C20",
+      "claim": "Lys63-linked polyubiquitin has been found to be involved in oxidative stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin is another common linkage, and has been found to be involved in DNA damage response (Hoege et al., 2002), multivesicular body mediated protein sorting (MacDonald et al., 2012), NF-\u03baB signaling (Chen and Chen, 2013; Zinngrebe et al., 2014), and oxidative stress response (Silva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Silva et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "d4f57e4b-f660-4785-baac-c3941431d891",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C21",
+      "claim": "Lys63-linked polyubiquitin exists as an unanchored form without being attached to a substrate protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin also exists as an unanchored form without being attached to a substrate protein, and the unanchored form may serve as a scaffold for recruiting proteins in the signaling pathways of innate immunity and protein aggregate removal (Zeng et al., 2010; Hao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zeng et al., 2010 and Hao et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "80cbdfaa-ac6b-4b40-92a2-78f994c9a86d",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C22",
+      "claim": "The unanchored form of Lys63-linked polyubiquitin may serve as a scaffold for recruiting proteins in the signaling pathways of innate immunity and protein aggregate removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63-linked polyubiquitin also exists as an unanchored form without being attached to a substrate protein, and the unanchored form may serve as a scaffold for recruiting proteins in the signaling pathways of innate immunity and protein aggregate removal (Zeng et al., 2010; Hao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zeng et al., 2010 and Hao et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "398e3b6d-ad57-4f10-b355-1a1de8178d2a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C23",
+      "claim": "Structural studies of K63-Ub2 have indicated that K63-Ub2 mostly adopts open extended conformations in the absence of a ligand and in complex with many target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies of Lys63-linked diubiquitin (K63-Ub2) have indicated that K63-Ub2 mostly adopts open extended conformations in the absence of a ligand and in complex with many target proteins (Datta et al., 2009; Komander et al., 2009; Sato et al., 2009a; Weeks et al., 2009; Sekiyama et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "5093ce7a-4ac1-44b2-94b4-fcaf0d7926e8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C24",
+      "claim": "It has been proposed that the open extended structure differentiates K63-Ub2 from Lys48-linked polyubiquitin that predominantly exists in a closed structure.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that such an open extended structure differentiates K63-Ub2 from Lys48-linked polyubiquitin that predominantly exists in a closed structure (Varadan et al., 2004; Fushman and Walker, 2010; Hirano et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Varadan et al., 2004, Fushman and Walker, 2010, and Hirano et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9c2001a9-3468-436c-abf8-9c8ae3a9aaf8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C25",
+      "claim": "K63-Ub2 has been found in closed conformations when complexed with the Npl4 zinc-finger domain (NZF) of TAK1-binding proteins for the activation of NF-\u03baB signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding, K63-Ub2 has been found in closed conformations when complexed with the Npl4 zinc-finger domain (NZF) of TAK1-binding proteins (Kulathu et al., 2009; Sato et al., 2009b) for the activation of NF-\u03baB signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kulathu et al., 2009 and Sato et al., 2009b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "6c40db03-3897-4e3f-8f2f-a5fb208fc546",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C26",
+      "claim": "K63-Ub2 is selectively recognized by the fourth zinc-finger (ZnF4) of A20, a ubiquitin-editing enzyme for the termination of NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "K63-Ub2 is also selectively recognized by the fourth zinc-finger (ZnF4) of A20, a ubiquitin-editing enzyme for the termination of NF-\u03baB signaling (Wertz, 2014; Wertz and Dixit, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wertz, 2014 and Wertz and Dixit, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "70e7ddf0-a593-43f3-a981-77993594e5a4",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C27",
+      "claim": "The crystal structure of the complex between ZnF4 and ubiquitin monomer indicated that K63-Ub2 likely exists in a closed conformation when binding to ZnF4.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the complex between ZnF4 and ubiquitin monomer indicated that K63-Ub2 likely exists in a closed conformation when binding to ZnF4 (Bosanac et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bosanac et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "250832b1-2cb8-44ce-8ec8-1fa20ffac7d8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C28",
+      "claim": "Studies have shown that ubiquitin monomer exists as an ensemble of tertiary conformations which can accommodate different target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For a ubiquitin monomer, studies have shown that the protein exists as an ensemble of tertiary conformations which can accommodate different target proteins (Lange et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lange et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "7946809d-2279-4290-9f9b-7766bc76ed90",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C29",
+      "claim": "NMR depiction of dynamic fluctuation for multi-domain proteins such as pre-mRNA splicing factor U2AF and DNA-binding protein CAP has uncovered conformational selection and equilibrium shift mechanisms for these systems.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR depiction of dynamic fluctuation for multi-domain proteins such as pre-mRNA splicing factor U2AF and DNA-binding protein CAP, has uncovered conformational selection and equilibrium shift mechanisms for these systems (Mackereth et al., 2011; Tzeng and Kalodimos, 2012; Huang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mackereth et al., 2011, Tzeng and Kalodimos, 2012, and Huang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "65db47e4-b476-48cc-b5ee-65b038e33c5d",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C30",
+      "claim": "Paramagnetic relaxation enhancement (PRE) is exquisitely sensitive to transient and fleeting interactions between proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the NMR techniques, paramagnetic relaxation enhancement (PRE) is exquisitely sensitive to transient and fleeting interactions between proteins (Sekhar and Kay, 2013; Xing et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sekhar and Kay, 2013 and Xing et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "53f4666d-d09e-4401-9a2b-3cbbea854fef",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C31",
+      "claim": "PRE is proportional to the inverse sixth power of the distance between the paramagnetic center and protein nuclei, and is ensemble-averaged over all the conformational states sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to dipolar interactions between the paramagnetic center and protein nuclei, PRE is proportional to the inverse sixth power of the distance between the paramagnetic center and protein nuclei, and is ensemble-averaged over all the conformational states sampled (Clore and Iwahara, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Clore and Iwahara, 2009, describing the physical basis of PRE.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "458cd26e-1c31-4999-8113-ad460a9909b2",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C32",
+      "claim": "Except for residues near the covalent ubiquitin linkage, the differences in chemical shifts between the subunits in K63-Ub2 and ubiquitin monomer are small (<0.04 ppm).",
+      "claim_type": "EXPLICIT",
+      "source": "Except for residues near the covalent ubiquitin linkage, the differences in chemical shifts are small (<0.04 ppm; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR chemical shift data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "5013000a-f299-4fcb-8801-5dc076ce360c",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C33",
+      "claim": "Residues with relatively large chemical shift differences (>0.01 ppm) form rather contiguous surfaces on each subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues with relatively large chemical shift differences (>0.01 ppm) can be tentatively mapped, and form rather contiguous surfaces on each subunit (Figure 1\u2014figure supplement 1, insets).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the chemical shift mapping shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "8818155f-063f-4b56-b923-7220b12efe9b",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C34",
+      "claim": "A half-filtered NMR experiment failed to reveal any inter-subunit nuclear Overhauser effects (NOEs) between the proximal and distal units of K63-Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed a half-filtered NMR experiment, which failed to reveal any inter-subunit nuclear Overhauser effects (NOEs) between the proximal and distal units of K63-Ub2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from NMR experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "1f985c24-c558-487f-8708-3c501f4d34cb",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C35",
+      "claim": "The diamagnetic NMR studies indicated that the closed-state structure of K63-Ub2, if existing, is loosely packed and possibly adopts multiple conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the diamagnetic NMR studies indicated that the closed-state structure of K63-Ub2, if existing, is loosely packed and possibly adopts multiple conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the NMR data showing small chemical shift differences and lack of NOEs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "c812be12-cf51-4972-bfa5-045614f29e8d",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C36",
+      "claim": "K63-Ub2 protein was prepared with the proximal unit 15N-labeled and the distal unit unlabeled.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared K63-Ub2 protein with the proximal unit 15N-labeled and the distal unit unlabeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9e8cf4d1-2d7e-45ed-b8bd-c2be9d86c172",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C37",
+      "claim": "A cysteine point mutation was introduced to Asn25 or Lys48 in the distal unit of K63-Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "A cysteine point mutation was introduced to Asn25 or Lys48 in the distal unit of K63-Ub2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "cdcb3e84-9650-4808-a172-37ca7f08e7cb",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C38",
+      "claim": "Each of the conjugation sites was designed so that the paramagnetic probe was away from the binding partners of K63-Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the conjugation sites was designed so that the paramagnetic probe was away from the binding partners of K63-Ub2, which include Rap80 tUIM domain (Sekiyama et al., 2012), TAB2 NZF domain (Kulathu et al., 2009; Sato et al., 2009b), and A20 ZnF4 domain (Bosanac et al., 2010), and therefore the conjugation does not interfere with ligand binding (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 1\u2014figure supplement 2 and by citations to previous structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "ae0bc612-b908-4fed-878c-ab377dfd0b2e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C39",
+      "claim": "The binding affinities between K63-Ub2 and tUIM or NZF remain unchanged for the paramagnetically tagged K63-Ub2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the binding affinities between K63-Ub2 and tUIM or NZF remain unchanged for the paramagnetically tagged K63-Ub2 proteins (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC binding data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "73dfb59c-214a-4fc0-b077-3bccde601891",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C40",
+      "claim": "The paramagnetic NMR spectrum can be overlaid onto the diamagnetic spectrum, except for residues that are completely broadened out due to the PRE effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the paramagnetic NMR spectrum can be overlaid onto the diamagnetic spectrum, except for residues that are completely broadened out due to the PRE effect (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR spectral overlay shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "1c45f5e3-2b8c-4544-8994-6f696d62e6b6",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C41",
+      "claim": "The modifications do not perturb the conformational space of K63-Ub2 or have an effect on K63-Ub2 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the modifications do not perturb the conformational space of K63-Ub2 or have an effect on K63-Ub2 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding affinity and NMR spectral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "fc5adcc8-e902-4bff-aeca-b28609db06fc",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C43",
+      "claim": "At relatively low protein concentration (50 \u00b5M), the inter-molecular contribution to the overall PRE is negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "At relatively low protein concentration (50 \u00b5M), the inter-molecular contribution to the overall PRE is negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "b2a067bc-1a56-46bf-919f-734fd5397a04",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C44",
+      "claim": "The relative decreases in peak intensities between the paramagnetic and diamagnetic spectra recorded at 50 \u00b5M are highly correlated with the relative decreases between the paramagnetic and inter-molecular spectra recorded at 500 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative decreases in peak intensities between the paramagnetic and diamagnetic spectra recorded at 50 \u00b5M are highly correlated with the relative decreases between the paramagnetic and inter-molecular spectra recorded at 500 \u00b5M (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation plot shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "e809fbe4-fc70-4421-8c8e-78065b6c31ed",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C45",
+      "claim": "When a different paramagnetic probe, EDTA-Mn2+, was conjugated at N25C, the PRE profile is similar to that using the MTS probe.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when a different paramagnetic probe, EDTA-Mn2+, was conjugated at N25C, the PRE profile is similar to that using the MTS probe (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PRE comparison shown in Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "b553ffb7-b7bf-426c-869d-e98b5b9f6bc8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C46",
+      "claim": "The intra-molecular inter-subunit PREs are independent of the paramagnetic probe used, and reveal intrinsic structural features of ligand-free K63-Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the intra-molecular inter-subunit PREs are independent of the paramagnetic probe used, and reveal intrinsic structural features of ligand-free K63-Ub2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar PRE profiles obtained with different paramagnetic probes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9c8f718d-fde9-49b2-9366-7638efbeee6e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C47",
+      "claim": "Large intra-molecular inter-subunit PREs were measured for many residues in the proximal unit.",
+      "claim_type": "EXPLICIT",
+      "source": "With a paramagnetic probe conjugated at either N25C or K48C site and using the inter-molecular data for reference, our measurements revealed large intra-molecular inter-subunit PREs for many residues in the proximal unit (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PRE data shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "72b30aa1-8f2c-4b1d-9879-6ba4a7ee7279",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C48",
+      "claim": "For the known open-state structures of K63-Ub2, the intra-molecular inter-subunit PREs calculated with an MTS probe attached at either N25C or K48C site are essentially zero for residues in the proximal unit.",
+      "claim_type": "EXPLICIT",
+      "source": "For the known open-state structures of K63-Ub2 (Sato et al., 2008; Datta et al., 2009; Komander et al., 2009; Sato et al., 2009a; Weeks et al., 2009; Yoshikawa et al., 2009; Sekiyama et al., 2012), the intra-molecular inter-subunit PREs calculated with an MTS probe attached at either N25C or K48C site are essentially zero for residues in the proximal unit (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PRE calculations for known structures shown in Figure 1\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9f8318bd-ee8a-4d78-983f-0c7d999c3e72",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C49",
+      "claim": "The large inter-subunit PREs should only arise from the closed state of K63-Ub2.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the large inter-subunit PREs should only arise from the closed state of K63-Ub2, and ligand-free K63-Ub2 should exist in both open and closed states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of experimental PREs with calculated PREs for open-state structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "6e8586f2-12a3-4c6f-91cd-0266b1077ba6",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C50",
+      "claim": "Ligand-free K63-Ub2 should exist in both open and closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the large inter-subunit PREs should only arise from the closed state of K63-Ub2, and ligand-free K63-Ub2 should exist in both open and closed states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the PRE data that cannot be explained by open-state structures alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "dc8b9683-366c-4902-ad38-b8edaf2dcfde",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C51",
+      "claim": "The SAXS data collected for K63-Ub2 at higher concentrations display larger particle size than those at lower concentrations, indicative of high-order oligomers for the former.",
+      "claim_type": "EXPLICIT",
+      "source": "The SAXS data collected for K63-Ub2 at higher concentrations display larger particle size than those at lower concentrations, indicative of high-order oligomers for the former (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SAXS data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "54ddedeb-1af2-46d0-b9e1-e1d5a0e6980e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C52",
+      "claim": "At lower concentrations, the Dmax value is smaller, and the data recorded at 1 mM and 500 \u00b5M are similar (Dmax = 67.2 and 65 \u00c5, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations, the Dmax value is smaller, and the data recorded at 1 mM and 500 \u00b5M are similar (Dmax = 67.2 and 65 \u00c5, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from SAXS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "32148146-00d4-4d2f-8ccc-b554de1ff3d8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C53",
+      "claim": "The Dmax values are smaller than the calculated values for all known open-state structures (84.0 \u00b1 3.3 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The Dmax values are smaller than the calculated values for all known open-state structures (84.0 \u00b1 3.3 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from comparison of experimental SAXS data with calculated values for known structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "aa17e287-e691-4623-93a4-9772a43c534b",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C54",
+      "claim": "The experimental paired-distance distribution function P(r) at 1 mM is much narrower than those computed for the known open-state structures, with a large probability of distribution at \u223c30 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the experimental paired-distance distribution function P(r) at 1 mM is much narrower than those computed for the known open-state structures, with a large probability of distribution at \u223c30 \u00c5 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the P(r) curves shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "bb1e0dc9-e97e-4163-94ec-699acc4ce15a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C55",
+      "claim": "The theoretical scattering profiles for the open-state structure models all differ from the experiment curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the theoretical scattering profiles for the open-state structure models (Figure 1\u2014figure supplement 8) all differ from the experiment curve (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of calculated and experimental SAXS curves shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "b66e4ced-7234-4e53-8755-4450715da150",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C56",
+      "claim": "A single-conformer representation for the closed state does not satisfy the inter-subunit PREs.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-conformer representation for the closed state does not satisfy the inter-subunit PREs, as assessed by the PRE Q-factor (Iwahara et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from ensemble refinement calculations against PRE data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "a54739f8-a681-4037-882f-5e2b65a003a6",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C57",
+      "claim": "The closed state of ligand-free K63-Ub2 should exist in multiple conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the closed state of ligand-free K63-Ub2 should exist in multiple conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability of a single conformer to satisfy the PRE data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "112bff0f-94a4-4e7e-beaa-5442190e9c28",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C58",
+      "claim": "The PRE Q-factor rapidly decreases as the number of conformers representing the closed state increases, and levels off with four or more conformers.",
+      "claim_type": "EXPLICIT",
+      "source": "The PRE Q-factor rapidly decreases as the number of conformers representing the closed state increases, and levels off with four or more conformers (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Q-factor heat map shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "843f09c2-027e-4d11-a3fb-f2ac16405605",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C59",
+      "claim": "A closed-state population of at least 30% is required to achieve a good fit to the PRE data.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a closed-state population of at least 30% is required to achieve a good fit to the PRE data (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the Q-factor heat map shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "259836ce-a7ad-4500-acf3-7c38541e4a51",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C60",
+      "claim": "The population of the K63-Ub2 closed state is about 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "For reasons that will be discussed below, the population of the K63-Ub2 closed state is about 70%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the ensemble refinement and thermodynamic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "6189e46b-7e5e-4dde-a917-bf9a909be374",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C61",
+      "claim": "At a 70% population for the closed state with a four-conformer representation, the back-calculated PREs agree well with the experimental ones, affording a PRE Q-factor of 0.22 and correlation coefficient of 0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "At a 70% population for the closed state with a four-conformer representation, the back-calculated PREs agree well with the experimental ones, affording a PRE Q-factor of 0.22 and correlation coefficient of 0.94 (Figures 1, 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PRE data and correlation plot shown in Figures 1 and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "a816c364-129e-4445-abb6-134fc2e8177f",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C62",
+      "claim": "When refining the ensemble structure of the K63-Ub2 closed state against the N25C data alone, the PRE values predicted for the K48C site largely agree with the experimental values, affording a free Q-factor of 0.46.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the two paramagnetic conjugation sites, N25C and K48C, provide cross-validating PRE measurements\u2014when refining the ensemble structure of the K63-Ub2 closed state against the N25C data alone, the PRE values predicted for the K48C site largely agree with the experimental values, affording a free Q-factor of 0.46 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the cross-validation analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "7cc36846-fd67-441d-aa8a-9d6f2c3d7c9c",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C63",
+      "claim": "The SAXS profiles computed for the PRE-based closed-state structures differ from the experiment curve, with the calculated intensities larger at scattering angles between 0.5 and 1 nm\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the SAXS profiles computed for the PRE-based closed-state structures differ from the experiment curve, with the calculated intensities larger at scattering angles between 0.5 and 1 nm\u22121 (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the SAXS curve comparison shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "30c65147-ddbd-4781-b427-03a0bc455c9a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C64",
+      "claim": "The closed-state structures exist in two clusters, namely C1 and C2.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon reducing the dimensionality, we found that the closed-state structures exist in two clusters, namely C1 and C2 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the spherical coordinate projection shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "a0514d6a-015b-4475-8e66-8d8fca635db8",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C65",
+      "claim": "For each four-conformer structure, one of the conformers falls into C2, while the other three are in C1.",
+      "claim_type": "EXPLICIT",
+      "source": "For each four-conformer structure, one of the conformers falls into C2, while the other three are in C1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from analysis of the ensemble structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "203a439c-911a-4f93-8ddd-e6d11f1d1de2",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C66",
+      "claim": "The proximal unit of ligand-free K63-Ub2 utilizes distinct interfaces to interact with the distal unit in C1 and C2 states, affording buried solvent-accessible surface areas of 283.9 \u00b1 139.7 \u00c52 and 200.5 \u00b1 59.6 \u00c52, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal unit of ligand-free K63-Ub2 utilizes distinct interfaces to interact with the distal unit in C1 and C2 states (Figure 4B,C), affording buried solvent-accessible surface areas of 283.9 \u00b1 139.7 \u00c52 and 200.5 \u00b1 59.6 \u00c52, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from structural analysis of the ensemble structures shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "4d0a008e-36fa-47d2-b8d7-326d1db8af55",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C67",
+      "claim": "The crystal structures of K63-Ub2 in complex with the ZnF4 domain of A20 and with the NZF domain of TAB2 or TAB3 are found within or near the C1 and C2 clusters, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the crystal structures of K63-Ub2 in complex with the ZnF4 domain of A20 (Bosanac et al., 2010) and with the NZF domain of TAB2 or TAB3 (Kulathu et al., 2009; Sato et al., 2009b) are found within or near the C1 and C2 clusters, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the projection analysis shown in Figure 4A and by citations to the crystal structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "d295c199-c677-4f0d-ac3b-52b0073e3123",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C68",
+      "claim": "The root-mean-square difference (RMSD) between the conformers in C1 and the ZnF4-bound structure of K63-Ub2 is as small as 3.93 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The root-mean-square difference (RMSD) between the conformers in C1 and the ZnF4-bound structure of K63-Ub2 is as small as 3.93 \u00c5 (Figure 4B), while the RMSD between C2 conformers and the NZF-bound structure is as small as 1.68 \u00c5 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from structural comparison shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "bb2dad50-5678-4485-926c-96051f206a61",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C69",
+      "claim": "The RMSD between C2 conformers and the NZF-bound structure is as small as 1.68 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The root-mean-square difference (RMSD) between the conformers in C1 and the ZnF4-bound structure of K63-Ub2 is as small as 3.93 \u00c5 (Figure 4B), while the RMSD between C2 conformers and the NZF-bound structure is as small as 1.68 \u00c5 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from structural comparison shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "74b2887a-f260-4246-96b9-c33a204ffd3b",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C70",
+      "claim": "Linearly combining the two sets of PREs at a 3:1 ratio and 70% total population, the resulting PREs agree well with the experimental values, although some details differ.",
+      "claim_type": "EXPLICIT",
+      "source": "Linearly combining the two sets of PREs at a 3:1 ratio and 70% total population, the resulting PREs agree well with the experimental values, although some details differ (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PRE comparison shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3f80d5d2-d2b6-4487-af7b-58f2d707defb",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C71",
+      "claim": "The paired-distance distribution profiles computed for A20 ZnF4 and TAB2/TAB3 NZF complexed K63-Ub2 display narrower distributions compared to those computed for the open-state structures or to the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the paired-distance distribution profiles computed for A20 ZnF4 and TAB2/TAB3 NZF complexed K63-Ub2 (with bound ligand removed) display narrower distributions compared to those computed for the open-state structures or to the experimental data (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the P(r) curves shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "b449dc82-a855-49e4-a4fb-e69551c54795",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C72",
+      "claim": "The ensemble structure refinement revealed that in addition to the open state, ligand-free K63-Ub2 also exists in at least two distinct closed states at a significant combined population.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the ensemble structure refinement revealed that in addition to the open state, ligand-free K63-Ub2 also exists in at least two distinct closed states at a significant combined population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion from the ensemble refinement and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "0acbbacd-afc4-4a4c-a480-62a08075d5b4",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C73",
+      "claim": "A cognate ligand of K63-Ub2 can be preferentially recognized and accommodated into one of the preexisting conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "As the ligand-bound closed structures are similar to ligand-free structures of K63-Ub2 in either C1 or C2 state, a cognate ligand of K63-Ub2 can be preferentially recognized and accommodated into one of the preexisting conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarity between ligand-free and ligand-bound states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3792dff8-ba08-4eae-818b-738197e9cca3",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C74",
+      "claim": "The binding may require some induced fit, especially towards the end of the binding process.",
+      "claim_type": "EXPLICIT",
+      "source": "As there are some differences between the ligand-free and ligand-bound K63-Ub2 in the closed state (Figure 4B,C), the binding may require some induced fit, especially towards the end of the binding process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural differences observed in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "441f9c15-9548-4575-a527-9b1f65422f97",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C75",
+      "claim": "The open-state conformation of K63-Ub2 may specifically recognize its corresponding ligand like Rap80 tUIM via a conformational selection mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the open-state conformation of K63-Ub2 may specifically recognize its corresponding ligand like Rap80 tUIM (Sekiyama et al., 2012) via a conformational selection mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conformational selection mechanism and supported by citation to Sekiyama et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "70603078-d082-43a8-ae23-cc8d6cfc1e13",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C76",
+      "claim": "Glu64 is located at the interface between the two subunits in both C1 and C2 closed states, opposing the positively charged residues Arg72 and Arg74 in the distal unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu64 is located at the interface between the two subunits in both C1 and C2 closed states, opposing the positively charged residues Arg72 and Arg74 in the distal unit (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "b8263a5d-777a-4613-b506-6748cef9cc9a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C77",
+      "claim": "The E64RP mutation results in chemical shift perturbations (CSPs) in the K63-Ub2 distal unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the E64RP mutation results in chemical shift perturbations (CSPs) in the K63-Ub2 distal unit (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by NMR chemical shift data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "6c1fbeb8-209f-4a90-83e3-6dfbdd5a2d2a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C78",
+      "claim": "Almost the same residues are perturbed upon E64RP mutation as upon the covalent linkage of ubiquitin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the perturbations are small, almost the same residues are perturbed upon E64RP mutation as upon the covalent linkage of ubiquitin monomers (Figure 5A and Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of chemical shift perturbations shown in Figure 5A and Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "4365bff8-129f-42da-9b84-3b5954b2b21f",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C79",
+      "claim": "The PRE profile of the E64RP mutant is similar to that of the wild type, indicating similar ensemble structures for the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The PRE profile of the mutant is similar to that of the wild type, indicating similar ensemble structures for the mutant (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PRE comparison shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "889ee9eb-01fe-4484-9bc7-c9843e7f7e70",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C80",
+      "claim": "The magnitude of the PRE decreases by about 50% upon E64RP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnitude of the PRE decreases by about 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from PRE measurements shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "1529fd5b-5544-4f92-a7fb-54b3c7fdd443",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C81",
+      "claim": "The E64RP mutation destabilizes the closed state, reducing the closed-state population to half of that of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As the inter-subunits' PRE arises only from the closed-state structures of K63-Ub2, smaller PREs indicate that the E64RP mutation destabilizes the closed state, reducing the closed-state population to half of that of the wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the decrease in PRE magnitude.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "aa5d1336-81d0-4822-9774-ccf381481906",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C82",
+      "claim": "The E64RP mutation should result in an increase in the population for the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the E64RP mutation should result in an increase in the population for the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the decrease in closed-state population.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "0be56eba-acab-452f-b7ec-28c6ae4b7821",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C83",
+      "claim": "The mutation is away from the binding interfaces between K63-Ub2 and its ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the mutation is away from the binding interfaces between K63-Ub2 and its ligands (Figures 6A,B, 7), and therefore should not directly affect the interactions between K63-Ub2 and its ligands.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figures 6A, 6B, and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "7cfe52ec-74ae-4063-89b5-ff8aeb1e4116",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C84",
+      "claim": "The binding affinities between wild type K63-Ub2 and tUIM have a KD value of 9.7 \u00b1 0.3 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Using isothermal calorimetry (ITC), we evaluated the binding affinities between wild type K63-Ub2 and tUIM, and between wild type K63-Ub2 and NZF. The respective KD values are 9.7 \u00b1 0.3 \u00b5M and 12.2 \u00b1 0.6 \u00b5M (Figure 1\u2014figure supplement 3), which agree with the literature values (Kulathu et al., 2009; Sekiyama et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from ITC measurements shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "63e1d2aa-5d46-4ae8-97b2-a6d5acaabd3c",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C85",
+      "claim": "The binding affinities between wild type K63-Ub2 and NZF have a KD value of 12.2 \u00b1 0.6 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Using isothermal calorimetry (ITC), we evaluated the binding affinities between wild type K63-Ub2 and tUIM, and between wild type K63-Ub2 and NZF. The respective KD values are 9.7 \u00b1 0.3 \u00b5M and 12.2 \u00b1 0.6 \u00b5M (Figure 1\u2014figure supplement 3), which agree with the literature values (Kulathu et al., 2009; Sekiyama et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from ITC measurements shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "c188593d-d35e-45c3-be69-7044c27bb4a4",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C86",
+      "claim": "The KD values for wild type K63-Ub2 binding to tUIM and NZF agree with the literature values.",
+      "claim_type": "EXPLICIT",
+      "source": "Using isothermal calorimetry (ITC), we evaluated the binding affinities between wild type K63-Ub2 and tUIM, and between wild type K63-Ub2 and NZF. The respective KD values are 9.7 \u00b1 0.3 \u00b5M and 12.2 \u00b1 0.6 \u00b5M (Figure 1\u2014figure supplement 3), which agree with the literature values (Kulathu et al., 2009; Sekiyama et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with literature values cited from Kulathu et al., 2009 and Sekiyama et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "18b9cefd-4650-490b-8fdd-54a725aa1f36",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C87",
+      "claim": "The KD value for wild type K63-Ub2 binding to A20 ZnF4 is 384.1 \u00b1 39.4 \u00b5M at 313 K.",
+      "claim_type": "EXPLICIT",
+      "source": "We were only able to fit the CSPs at an elevated temperature (313 K instead of 303 K), and determined the KD value at 384.1 \u00b1 39.4 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from NMR titration measurements shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "f1a420a1-46fd-4313-ae1c-ae1b0b054819",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C88",
+      "claim": "Upon the E64RP mutation, the binding between K63-Ub2 and the open-state ligand tUIM becomes tighter, with the KD value decreasing by more than fourfold to 2.2 \u00b1 0.1 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon the E64RP mutation, the binding between K63-Ub2 and the open-state ligand tUIM becomes tighter, with the KD value decreasing by more than fourfold to 2.2 \u00b1 0.1 \u00b5M (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from ITC measurements shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "f210b70c-00ba-4c0c-9e84-6043166c42a4",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C89",
+      "claim": "The KD value of K63-Ub2 binding towards NZF increases by \u223c50% to 17.8 \u00b1 1.1 \u00b5M upon E64RP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the binding towards closed-state ligands weakens\u2014the KD value of K63-Ub2 binding towards NZF increases by \u223c50% to 17.8 \u00b1 1.1 \u00b5M (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from ITC measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "0aa0ac4d-17c8-4859-b85a-b484e8602e1d",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C90",
+      "claim": "The enthalpy change \u0394H values are almost identical for the bindings involving the wild type and mutant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the enthalpy change \u0394H values are almost identical for the bindings involving the wild type and mutant proteins (Figure 6 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from ITC measurements shown in Figure 6 and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "ea27c33d-c16e-40ef-bb84-28aa08fc3797",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C91",
+      "claim": "The KD value for E64RP mutant K63-Ub2 binding to A20 ZnF4 increases by almost threefold to 1199.9 \u00b1 104.9 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the KD value increases by almost threefold to 1199.9 \u00b1 104.9 \u00b5M (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from NMR titration measurements shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "6d68dca7-a413-4210-b37d-dc8f18b6bf0c",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C92",
+      "claim": "The changes in binding affinities are caused entropically due to the perturbation of K63-Ub2 conformational space.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the binding affinity towards the open-state ligand increases at the expense of the binding affinities towards the closed-state ligands, and the changes in binding affinities are caused entropically due to the perturbation of K63-Ub2 conformational space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identical enthalpy changes and the changes in binding affinities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3306edff-9bf4-4ed1-bba6-c2d22741cd7e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C93",
+      "claim": "The closed-state population decreases from \u223c70% to \u223c35% upon the E64RP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our calculation indicated that only when the closed-state population decreases from \u223c70% to \u223c35% upon the mutation, in which C1 state population decreases from \u223c52.5% to \u223c22.5% and C2 state population decreases from \u223c17.5% to \u223c12.5%, could the binding free energy change be the same as the conformational energy change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from thermodynamic calculations based on binding affinity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3eb5fd8f-a545-47c6-ae2b-ad3afc8f8ab9",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C94",
+      "claim": "C1 state population decreases from \u223c52.5% to \u223c22.5% upon the E64RP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our calculation indicated that only when the closed-state population decreases from \u223c70% to \u223c35% upon the mutation, in which C1 state population decreases from \u223c52.5% to \u223c22.5% and C2 state population decreases from \u223c17.5% to \u223c12.5%, could the binding free energy change be the same as the conformational energy change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from thermodynamic calculations based on binding affinity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "626c9a3a-22d0-4685-9f1e-12525cd799e3",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C95",
+      "claim": "C2 state population decreases from \u223c17.5% to \u223c12.5% upon the E64RP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our calculation indicated that only when the closed-state population decreases from \u223c70% to \u223c35% upon the mutation, in which C1 state population decreases from \u223c52.5% to \u223c22.5% and C2 state population decreases from \u223c17.5% to \u223c12.5%, could the binding free energy change be the same as the conformational energy change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from thermodynamic calculations based on binding affinity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "60af91b0-2ea9-42cc-88ff-71618219b5b0",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C96",
+      "claim": "Upon the point mutation, a larger decrease was observed for the PRE corresponding to the C1 state than the PRE for the C2 state.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, upon the point mutation, a larger decrease was observed for the PRE corresponding to the C1 state than the PRE for the C2 state (Figure 5B), and the binding affinity of K63-Ub2 towards a C1 state ligand decreases more than the affinity towards a C2 state ligand (Figures 6, 7 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PRE data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "6f9fd134-b4c3-44ef-8f22-91cdeeb11464",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C97",
+      "claim": "The binding affinity of K63-Ub2 towards a C1 state ligand decreases more than the affinity towards a C2 state ligand upon E64RP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, upon the point mutation, a larger decrease was observed for the PRE corresponding to the C1 state than the PRE for the C2 state (Figure 5B), and the binding affinity of K63-Ub2 towards a C1 state ligand decreases more than the affinity towards a C2 state ligand (Figures 6, 7 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by binding affinity data shown in Figures 6, 7, and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3d94d66b-ffe2-4a2a-88c5-99644791f10e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C98",
+      "claim": "Linearly combining the SAXS data calculated for the closed and open states at 70% and 30% and without further refinement recapitulates the experimental SAXS data with a \u03c72 value of 1.24.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the SAXS data have insufficient resolution to resolve multiple closed states, and may include contributions from high-order non-covalent oligomers, linearly combining the SAXS data calculated for the closed and open states at 70% and 30% and without further refinement, we were able to recapitulate the experimental SAXS data with a \u03c72 value of 1.24 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the SAXS curve comparison shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "bec3495f-4f69-4532-95ba-73b8cf165416",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C99",
+      "claim": "About 70% of K63-Ub2 exists in the closed state, whereas only about 30% of the protein exists in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have shown that about 70% of K63-Ub2 exists in the closed state, whereas only about 30% of the protein exists in the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding from the ensemble refinement and thermodynamic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "d9e1e89d-9104-43a0-9958-20c3f0b24309",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C100",
+      "claim": "The findings disagree with many previous structural characterizations of K63-Ub2 which reported that ligand-free K63-Ub2 exists only in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings disagree with many previous structural characterizations of K63-Ub2 (Varadan et al., 2004; Datta et al., 2009; Dikic et al., 2009; Komander et al., 2009; Weeks et al., 2009; Komander and Rape, 2012), which reported that ligand-free K63-Ub2 exists only in the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "4be32df1-1146-4580-b84b-77f6a8a3ab69",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C101",
+      "claim": "The closed-state population is in line with the previous finding that ubiquitin monomer non-covalently dimerizes with an apparent KD value of 4.9 \u00b1 0.3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the closed-state population is in line with our previous finding that ubiquitin monomer non-covalently dimerizes with an apparent KD value of 4.9 \u00b1 0.3 mM (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "233a1d8d-7074-4da6-a59e-e6b9cad2b066",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C102",
+      "claim": "A significant population of diubiquitin should exist in the closed compact conformation regardless of the ubiquitin linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "With a covalent linkage, the non-covalent interaction between ubiquitin becomes intra-molecular and restricted. Therefore, a significant population of diubiquitin should exist in the closed compact conformation regardless of the ubiquitin linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the non-covalent dimerization of ubiquitin monomers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "8eab5409-14ff-4b18-9846-3cbdaaf2adc5",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C103",
+      "claim": "Studies have indicated that K48-Ub2 mainly exists in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, studies have indicated that K48-Ub2 mainly exists in the closed state (Cook et al., 1992, 1994; Phillips et al., 2001; Varadan et al., 2002; Eddins et al., 2007; Hirano et al., 2011; Ye et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "a3990bce-b78e-419e-b53e-72517f7a6226",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C104",
+      "claim": "A recent single-molecule fluorescence resonance energy transfer (smFRET) study has provided direct experimental evidence and indicated that ligand-free K63-Ub2 exists in a closed state at a population of \u223c75%.",
+      "claim_type": "EXPLICIT",
+      "source": "For ligand-free K63-Ub2, however, only a recent single-molecule fluorescence resonance energy transfer (smFRET) study has provided direct experimental evidence and indicated that the protein exists in a closed state at a population of \u223c75% (Ye et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ye et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9d1426fb-4af0-415e-a9d6-cf572efd2570",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C105",
+      "claim": "Using paramagnetic NMR, SAXS, and mutational analysis, the population of the closed state of ligand-free K63-Ub2 is \u223c70%.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using paramagnetic NMR, SAXS, and mutational analysis, we found that the population of the closed state of ligand-free K63-Ub2 is \u223c70%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding from the study using multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "886ccab9-12c8-44d9-9ff9-6e16edb03514",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C106",
+      "claim": "The open-state structure is more readily captured owing to non-covalent interactions between neighboring unit cells, and becomes enriched during crystallization processes.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible explanation is that the open-state structure is more readily captured owing to non-covalent interactions between neighboring unit cells, and becomes enriched during crystallization processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for why only open-state structures have been reported.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "27e4ccc3-c7a0-47f3-81b6-0e2c58f1f03e",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C107",
+      "claim": "Two distinct closed states, namely C1 and C2, have been identified with different populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we have identified two distinct closed states, namely C1 and C2, with different populations (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "4cb95313-06b1-4a23-9990-50bba5679995",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C108",
+      "claim": "The smFRET study on ligand-free K63-Ub2 measured just a single distance between the N-terminus of the distal unit and the C-terminus of the proximal unit, and could not distinguish multiple closed states or provide a structural description for each state.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the smFRET study on ligand-free K63-Ub2 (Ye et al., 2012) measured just a single distance between the N-terminus of the distal unit and the C-terminus of the proximal unit, and could not distinguish multiple closed states or provide a structural description for each state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the smFRET study cited from Ye et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "2e12f3e1-11c6-41ff-b748-6c9882469fa4",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C109",
+      "claim": "SAXS analysis is unable to reveal how two nearly globular proteins are docked to each other in atomic detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SAXS analysis is unable to reveal how two nearly globular proteins are docked to each other in atomic detail (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the limitations of SAXS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "9cdac4df-78d3-4ae9-93e0-9231ba637f79",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C110",
+      "claim": "The C1 and C2 closed states utilize different binding interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural analysis based on the PRE revealed that the C1 and C2 closed states utilize different binding interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from structural analysis of the ensemble structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "f88cb7ad-b131-4806-8e0b-86c7d483451a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C111",
+      "claim": "The ligand-free structures of K63-Ub2 are similar to the respective ligand-bound structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the ligand-free structures of K63-Ub2 are similar to the respective ligand-bound structures (Kulathu et al., 2009; Sato et al., 2009a; Bosanac et al., 2010) (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4B and 4C and by citations to ligand-bound structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "952b7063-b6c1-440f-a7f3-cd6811bd8163",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C112",
+      "claim": "The change in binding free energy accompanying an E64RP mutation can be fully accounted for by the increase in the relative population of the open state for the interaction between K63-Ub2 and tUIM.",
+      "claim_type": "EXPLICIT",
+      "source": "For the interaction between K63-Ub2 and tUIM, an open-state ligand, the change in binding free energy accompanying an E64RP mutation can be fully accounted for by the increase in the relative population of the open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from thermodynamic analysis of binding affinity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "68a0b7fe-5432-48be-a708-af64db3248c7",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C113",
+      "claim": "The change in conformational energy accounts for the difference in binding affinities between wild type and mutant K63-Ub2 towards closed-state ligands TAB2/TAB3 NZF and A20 ZnF4.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the change in conformational energy also accounts for the difference in binding affinities between wild type and mutant K63-Ub2 towards closed-state ligands TAB2/TAB3 NZF and A20 ZnF4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from thermodynamic analysis of binding affinity changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "541a4eaa-631a-4ed2-9ed1-2f191d9fff33",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C114",
+      "claim": "Ligand-free K63-Ub2 adopts at least three conformational states, including one open state and two closed states, each of which can accommodate cognate ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our ensemble structural refinement and mutational analysis revealed that ligand-free K63-Ub2 adopts at least three conformational states, including one open state and two closed states, each of which can accommodate cognate ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "73bee8f1-c42c-4eea-8d8e-1851fd2d1414",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C115",
+      "claim": "Closed compact structures have been reported for ligand-free diubiquitins with Lys48, Lys11, Lys29, and Lys33 linkages.",
+      "claim_type": "EXPLICIT",
+      "source": "Closed compact structures have been reported for ligand-free diubiquitins with Lys48 (Cook et al., 1992), Lys11 (Matsumoto et al., 2010; Castaneda et al., 2013), Lys29, and Lys33 (Kristariyanto et al., 2015; Michel et al., 2015) linkages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "12ba93a1-d76b-4c86-ba03-7d21bbf46611",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C116",
+      "claim": "These structures are different from the C1 or C2 closed-state conformations of K63-Ub2, and therefore are involved in different functions.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures are different from the C1 or C2 closed-state conformations of K63-Ub2, and therefore are involved in different functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural differences and known functional differences.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "996f5b21-0392-46be-a351-b8c5c3026264",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C117",
+      "claim": "A covalent ubiquitin linkage dictates how the two subunits non-covalently interact with each other in a diubiquitin, and resulting quaternary arrangements encode specific cell signals.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, a covalent ubiquitin linkage dictates how the two subunits non-covalently interact with each other in a diubiquitin, and resulting quaternary arrangements encode specific cell signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion inferred from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "316fc2ae-fbd9-4725-bdb9-8f6ac907a846",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C118",
+      "claim": "For K63-Ub2, the open state recognizes tUIM of Rap80 and is involved in DNA damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "For K63-Ub2, the open state recognizes tUIM of Rap80 and is involved in DNA damage repair, the C2 closed state recognizes the NZF domain of TAK1 binding proteins and is involved in the activation of NF-\u03baB signaling, while the C1 state recognizes the ZnF4 domain of A20 and is involved in the termination of NF-\u03baB signaling pathways (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the binding studies and known functions, illustrated in Figure 8.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "c17e8045-9cd6-452f-99b0-dfab68581740",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C119",
+      "claim": "The C2 closed state recognizes the NZF domain of TAK1 binding proteins and is involved in the activation of NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For K63-Ub2, the open state recognizes tUIM of Rap80 and is involved in DNA damage repair, the C2 closed state recognizes the NZF domain of TAK1 binding proteins and is involved in the activation of NF-\u03baB signaling, while the C1 state recognizes the ZnF4 domain of A20 and is involved in the termination of NF-\u03baB signaling pathways (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the binding studies and known functions, illustrated in Figure 8.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "fa5d6eaf-2082-44f8-a219-160225711434",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C120",
+      "claim": "The C1 state recognizes the ZnF4 domain of A20 and is involved in the termination of NF-\u03baB signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "For K63-Ub2, the open state recognizes tUIM of Rap80 and is involved in DNA damage repair, the C2 closed state recognizes the NZF domain of TAK1 binding proteins and is involved in the activation of NF-\u03baB signaling, while the C1 state recognizes the ZnF4 domain of A20 and is involved in the termination of NF-\u03baB signaling pathways (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the binding studies and known functions, illustrated in Figure 8.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "f7dec37c-862c-4d35-87a0-d725805dbabe",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "claim_id": "C121",
+      "claim": "Constructed from repeating units of diubiquitins, a polyubiquitin should exist in a combination of quaternary structures of the diubiquitins and participate in diverse functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Constructed from repeating units of diubiquitins, a polyubiquitin should exist in a combination of quaternary structures of the diubiquitins and participate in diverse functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from the diubiquitin findings to longer polyubiquitin chains.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ligand-free K63-Ub2 exists in both open and closed states, as demonstrated by paramagnetic relaxation enhancement (PRE) NMR measurements. Large inter-subunit PREs were observed that cannot be explained by known open-state structures alone, indicating the presence of closed states comprising approximately 70% of the population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The PRE NMR data (C47) show large inter-subunit interactions that are incompatible with open-state structures (C48), providing direct evidence for closed states (C49, C50). Multiple controls validate the measurements: different paramagnetic probes give similar results (C45, C46), binding affinities remain unchanged (C39), and inter-molecular contributions are negligible at working concentrations (C43, C44). The experimental design is rigorous with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "f9cc3dff-c400-444d-8d79-2787b4e65253",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SAXS analysis supports the existence of closed states in ligand-free K63-Ub2. The experimental paired-distance distribution is narrower than predicted for open-state structures, with Dmax values smaller than calculated for known open structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SAXS data (C52-C55) independently corroborate the PRE findings, showing that experimental measurements are inconsistent with open-state-only models. The ability to recapitulate experimental SAXS data by combining closed (70%) and open (30%) states with \u03c7\u00b2 = 1.24 (C98) provides quantitative validation. However, SAXS has limited resolution for distinguishing multiple closed states (acknowledged in C98).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "857f3a7a-4f06-476a-aafb-39c016f711de",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ensemble refinement against PRE data reveals that the closed state of K63-Ub2 comprises multiple conformations (at least four conformers) representing approximately 70% of the total population. A single-conformer model cannot satisfy the experimental PRE constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The systematic grid search varying conformer number and population (C58, C59) provides rigorous quantitative support. The Q-factor of 0.22 and correlation coefficient of 0.94 (C61) indicate excellent agreement with experimental data. Cross-validation between N25C and K48C sites (C62, free Q-factor = 0.46) strengthens confidence in the ensemble model. The determination of ~70% closed-state population is well-justified through multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two distinct closed-state conformations (C1 and C2) were identified through structural analysis, utilizing different binding interfaces with buried surface areas of 284\u00b1140 \u0172 and 201\u00b160 \u0172, respectively. These states correspond closely to known ligand-bound structures: C1 resembles ZnF4-bound K63-Ub2 (RMSD 3.93 \u00c5) and C2 resembles NZF-bound structures (RMSD 1.68 \u00c5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The spherical coordinate projection (C64) provides clear visualization of two distinct clusters. The structural correspondence with known ligand-bound structures (C67-C69) is compelling evidence for the biological relevance of these states. Quantitative metrics (buried surface areas C66, RMSD values C68-C69) support the distinction between C1 and C2. The 3:1 ratio prediction (C70) shows reasonable agreement with experimental PREs despite some discrepancies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "K63-Ub2 recognizes target proteins through a conformational selection mechanism where ligands select and stabilize one of the preexisting conformational states (open, C1, or C2). The similarity between ligand-free and ligand-bound structures supports this mechanism, though some induced fit may occur during binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural similarity between ligand-free ensemble structures and ligand-bound crystal structures (C111, C67-C69) provides strong support for conformational selection. Thermodynamic analysis showing that binding free energy changes can be accounted for by conformational energy changes (C112, C113) further validates this mechanism. The acknowledgment of potential induced fit (C74) appropriately recognizes limitations. This is a well-supported mechanistic conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The E64RP mutation in the proximal unit destabilizes the closed state, reducing its population by approximately 50% while maintaining similar ensemble structures. PRE magnitude decreases by ~50% while the PRE profile remains similar to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutation was rationally designed based on structural analysis (C76) to perturb the conformational equilibrium without directly affecting ligand binding. The PRE data (C79, C80) clearly show reduced magnitude with preserved profile, supporting the interpretation of population shift rather than structural change. Chemical shift perturbations (C77, C78) are consistent with altered conformational equilibrium. The experimental design is sound and the interpretation is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The E64RP mutation modulates binding affinities in a manner consistent with conformational selection: binding to open-state ligand tUIM increases 4-fold (KD: 9.7\u21922.2 \u03bcM), while binding to closed-state ligands weakens (NZF: 12.2\u219217.8 \u03bcM; ZnF4: 384\u21921200 \u03bcM). Importantly, enthalpy changes remain identical, indicating entropic origin of affinity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The binding affinity measurements are rigorous with appropriate replicates (C84-C91). The mutation is distant from binding interfaces (C83), ruling out direct effects on binding. The identical enthalpy values (C90) provide critical evidence that affinity changes are entropic, consistent with conformational population shifts rather than altered binding interactions. This is a key result supporting the conformational selection mechanism. The use of both ITC and NMR titration methods strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "c6364972-fba4-40ff-8b5f-d5591522ec74",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Thermodynamic analysis indicates that upon E64RP mutation, the closed-state population decreases from ~70% to ~35%, with C1 state dropping from ~52.5% to ~22.5% and C2 state from ~17.5% to ~12.5%. This population shift accounts for the observed changes in binding free energies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The thermodynamic calculations (C93-C95) are internally consistent and account for the observed binding affinity changes. The differential effects on C1 versus C2 states (C96, C97) are supported by both PRE and binding data, with C1 showing larger decreases consistent with the mutation's structural position. The quantitative agreement between conformational energy changes and binding free energy changes validates the conformational selection model. The reasoning is sound and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "408b8127-4d2b-4aa0-8fc7-b4d9d1f7c1ae",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The finding that ~70% of ligand-free K63-Ub2 exists in closed states contradicts many previous structural studies but agrees with a recent smFRET study reporting ~75% closed-state population. This study provides the first detailed structural characterization of these closed states using PRE NMR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The agreement with independent smFRET data (C104) strengthens confidence in the ~70% closed-state population (C99, C105). The acknowledgment of disagreement with prior literature (C100) is appropriate and honest. The current study advances beyond smFRET by providing atomic-level structural details and distinguishing multiple closed states (C108). This represents a significant advance in understanding K63-Ub2 structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "51f39e62-87a4-4afb-9ad7-5021d43bee71",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The quaternary dynamics of K63-Ub2 enables specific recognition in diverse signaling pathways: the open state recognizes Rap80 tUIM for DNA damage repair, C2 closed state recognizes TAB2/TAB3 NZF for NF-\u03baB activation, and C1 closed state recognizes A20 ZnF4 for NF-\u03baB termination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional assignments (C118-C120) are well-supported by the structural correspondence between ensemble states and ligand-bound structures, combined with known biological functions from literature. The binding studies with all three ligands provide experimental validation. This represents a coherent model linking structure, dynamics, and function. The claim is appropriately supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "366a4994-65a1-4a94-87e5-51866e53976c",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The conformational selection mechanism observed for K63-Ub2 may extend to other polyubiquitin linkages and lengths. Different linkages dictate distinct quaternary arrangements that encode specific cellular signals, with polyubiquitins existing as combinations of diubiquitin quaternary structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C7, C121) are explicitly speculative extrapolations from K63-Ub2 findings to other systems. While the reasoning is plausible and supported by citations showing closed states exist for other linkages (C115), direct experimental evidence for the conformational selection mechanism in other linkages is not provided. The claims about how linkages dictate quaternary arrangements (C117) are reasonable inferences but require validation. This represents an important hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on ubiquitin biology, polyubiquitin linkages, and their functions, including the ubiquitination machinery (E1, E2, E3, DUBs), linkage-specific functions, and prior structural characterizations of K63-Ub2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide established background knowledge appropriately cited from literature (C11, C13-C31). They set the context for the study and are well-supported by the cited references. This is standard background material that accurately represents the field's understanding prior to this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    },
+    {
+      "id": "0154529b-9599-4872-85f8-1ffa971c7d38",
+      "content_id": "3546d296-bff0-4f79-b625-86864ad9c19f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion of how the findings relate to prior work, including consistency with ubiquitin monomer dimerization data, comparison with K48-Ub2, explanation for why only open states were previously crystallized, and limitations of other techniques (smFRET, SAXS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These contextual claims appropriately discuss the relationship between current findings and prior work. The consistency with ubiquitin dimerization (C101) and K48-Ub2 behavior (C103) strengthens the biological plausibility. The explanation for crystallographic bias (C106) is speculative but reasonable. The discussion of technical limitations (C108, C109) appropriately acknowledges what different methods can and cannot reveal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:17:17.504693Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0369e1fd-8086-47d3-ba53-e0d8d5de88a7",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "458cd26e-1c31-4999-8113-ad460a9909b2",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "5013000a-f299-4fcb-8801-5dc076ce360c",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "8818155f-063f-4b56-b923-7220b12efe9b",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "1f985c24-c558-487f-8708-3c501f4d34cb",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "c812be12-cf51-4972-bfa5-045614f29e8d",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "9e8cf4d1-2d7e-45ed-b8bd-c2be9d86c172",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "cdcb3e84-9650-4808-a172-37ca7f08e7cb",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "ae0bc612-b908-4fed-878c-ab377dfd0b2e",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "73dfb59c-214a-4fc0-b077-3bccde601891",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "1c45f5e3-2b8c-4544-8994-6f696d62e6b6",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "fc5adcc8-e902-4bff-aeca-b28609db06fc",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "b2a067bc-1a56-46bf-919f-734fd5397a04",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "e809fbe4-fc70-4421-8c8e-78065b6c31ed",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "b553ffb7-b7bf-426c-869d-e98b5b9f6bc8",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "9c8f718d-fde9-49b2-9366-7638efbeee6e",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "72b30aa1-8f2c-4b1d-9879-6ba4a7ee7279",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "9f8318bd-ee8a-4d78-983f-0c7d999c3e72",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "6e8586f2-12a3-4c6f-91cd-0266b1077ba6",
+      "result_id": "4f9aa117-917a-4dcf-82ef-fcd0d5648e64"
+    },
+    {
+      "claim_id": "dc8b9683-366c-4902-ad38-b8edaf2dcfde",
+      "result_id": "f9cc3dff-c400-444d-8d79-2787b4e65253"
+    },
+    {
+      "claim_id": "54ddedeb-1af2-46d0-b9e1-e1d5a0e6980e",
+      "result_id": "f9cc3dff-c400-444d-8d79-2787b4e65253"
+    },
+    {
+      "claim_id": "32148146-00d4-4d2f-8ccc-b554de1ff3d8",
+      "result_id": "f9cc3dff-c400-444d-8d79-2787b4e65253"
+    },
+    {
+      "claim_id": "aa17e287-e691-4623-93a4-9772a43c534b",
+      "result_id": "f9cc3dff-c400-444d-8d79-2787b4e65253"
+    },
+    {
+      "claim_id": "bb1e0dc9-e97e-4163-94ec-699acc4ce15a",
+      "result_id": "f9cc3dff-c400-444d-8d79-2787b4e65253"
+    },
+    {
+      "claim_id": "3d94d66b-ffe2-4a2a-88c5-99644791f10e",
+      "result_id": "f9cc3dff-c400-444d-8d79-2787b4e65253"
+    },
+    {
+      "claim_id": "b66e4ced-7234-4e53-8755-4450715da150",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "a54739f8-a681-4037-882f-5e2b65a003a6",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "112bff0f-94a4-4e7e-beaa-5442190e9c28",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "843f09c2-027e-4d11-a3fb-f2ac16405605",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "259836ce-a7ad-4500-acf3-7c38541e4a51",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "6189e46b-7e5e-4dde-a917-bf9a909be374",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "a816c364-129e-4445-abb6-134fc2e8177f",
+      "result_id": "857f3a7a-4f06-476a-aafb-39c016f711de"
+    },
+    {
+      "claim_id": "30c65147-ddbd-4781-b427-03a0bc455c9a",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "a0514d6a-015b-4475-8e66-8d8fca635db8",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "203a439c-911a-4f93-8ddd-e6d11f1d1de2",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "4d0a008e-36fa-47d2-b8d7-326d1db8af55",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "d295c199-c677-4f0d-ac3b-52b0073e3123",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "bb2dad50-5678-4485-926c-96051f206a61",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "74b2887a-f260-4246-96b9-c33a204ffd3b",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "3f80d5d2-d2b6-4487-af7b-58f2d707defb",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "b449dc82-a855-49e4-a4fb-e69551c54795",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "27e4ccc3-c7a0-47f3-81b6-0e2c58f1f03e",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "9cdac4df-78d3-4ae9-93e0-9231ba637f79",
+      "result_id": "b7ee2681-e8bc-4c96-bdbc-91f74c24e650"
+    },
+    {
+      "claim_id": "a7d67bd3-e7d3-4015-8616-f3e8edac0cff",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "0acbbacd-afc4-4a4c-a480-62a08075d5b4",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "3792dff8-ba08-4eae-818b-738197e9cca3",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "441f9c15-9548-4575-a527-9b1f65422f97",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "f88cb7ad-b131-4806-8e0b-86c7d483451a",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "952b7063-b6c1-440f-a7f3-cd6811bd8163",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "68a0b7fe-5432-48be-a708-af64db3248c7",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "541a4eaa-631a-4ed2-9ed1-2f191d9fff33",
+      "result_id": "1d8c0a4a-d7df-47a9-a2c5-83c197bf499a"
+    },
+    {
+      "claim_id": "70603078-d082-43a8-ae23-cc8d6cfc1e13",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "b8263a5d-777a-4613-b506-6748cef9cc9a",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "6c1fbeb8-209f-4a90-83e3-6dfbdd5a2d2a",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "4365bff8-129f-42da-9b84-3b5954b2b21f",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "889ee9eb-01fe-4484-9bc7-c9843e7f7e70",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "1529fd5b-5544-4f92-a7fb-54b3c7fdd443",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "aa5d1336-81d0-4822-9774-ccf381481906",
+      "result_id": "66e3aaf2-cfb9-4adb-84ac-8ac5210b05f2"
+    },
+    {
+      "claim_id": "12eba489-f0f1-4fd4-8e25-9912424b40a5",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "0be56eba-acab-452f-b7ec-28c6ae4b7821",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "7cfe52ec-74ae-4063-89b5-ff8aeb1e4116",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "63e1d2aa-5d46-4ae8-97b2-a6d5acaabd3c",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "c188593d-d35e-45c3-be69-7044c27bb4a4",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "18b9cefd-4650-490b-8fdd-54a725aa1f36",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "f1a420a1-46fd-4313-ae1c-ae1b0b054819",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "f210b70c-00ba-4c0c-9e84-6043166c42a4",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "0aa0ac4d-17c8-4859-b85a-b484e8602e1d",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "ea27c33d-c16e-40ef-bb84-28aa08fc3797",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "6d68dca7-a413-4210-b37d-dc8f18b6bf0c",
+      "result_id": "2a0e04e8-a15f-4fde-bc96-845fa5becd85"
+    },
+    {
+      "claim_id": "3306edff-9bf4-4ed1-bba6-c2d22741cd7e",
+      "result_id": "c6364972-fba4-40ff-8b5f-d5591522ec74"
+    },
+    {
+      "claim_id": "3eb5fd8f-a545-47c6-ae2b-ad3afc8f8ab9",
+      "result_id": "c6364972-fba4-40ff-8b5f-d5591522ec74"
+    },
+    {
+      "claim_id": "626c9a3a-22d0-4685-9f1e-12525cd799e3",
+      "result_id": "c6364972-fba4-40ff-8b5f-d5591522ec74"
+    },
+    {
+      "claim_id": "60af91b0-2ea9-42cc-88ff-71618219b5b0",
+      "result_id": "c6364972-fba4-40ff-8b5f-d5591522ec74"
+    },
+    {
+      "claim_id": "6f9fd134-b4c3-44ef-8f22-91cdeeb11464",
+      "result_id": "c6364972-fba4-40ff-8b5f-d5591522ec74"
+    },
+    {
+      "claim_id": "bec3495f-4f69-4532-95ba-73b8cf165416",
+      "result_id": "408b8127-4d2b-4aa0-8fc7-b4d9d1f7c1ae"
+    },
+    {
+      "claim_id": "d9e1e89d-9104-43a0-9958-20c3f0b24309",
+      "result_id": "408b8127-4d2b-4aa0-8fc7-b4d9d1f7c1ae"
+    },
+    {
+      "claim_id": "a3990bce-b78e-419e-b53e-72517f7a6226",
+      "result_id": "408b8127-4d2b-4aa0-8fc7-b4d9d1f7c1ae"
+    },
+    {
+      "claim_id": "9d1426fb-4af0-415e-a9d6-cf572efd2570",
+      "result_id": "408b8127-4d2b-4aa0-8fc7-b4d9d1f7c1ae"
+    },
+    {
+      "claim_id": "27cbe377-5d5c-49d3-b4da-95d0ac3592d0",
+      "result_id": "51f39e62-87a4-4afb-9ad7-5021d43bee71"
+    },
+    {
+      "claim_id": "316fc2ae-fbd9-4725-bdb9-8f6ac907a846",
+      "result_id": "51f39e62-87a4-4afb-9ad7-5021d43bee71"
+    },
+    {
+      "claim_id": "c17e8045-9cd6-452f-99b0-dfab68581740",
+      "result_id": "51f39e62-87a4-4afb-9ad7-5021d43bee71"
+    },
+    {
+      "claim_id": "fa5d6eaf-2082-44f8-a219-160225711434",
+      "result_id": "51f39e62-87a4-4afb-9ad7-5021d43bee71"
+    },
+    {
+      "claim_id": "1677ba73-971f-4190-960c-9d0b219dd6ab",
+      "result_id": "366a4994-65a1-4a94-87e5-51866e53976c"
+    },
+    {
+      "claim_id": "233a1d8d-7074-4da6-a59e-e6b9cad2b066",
+      "result_id": "366a4994-65a1-4a94-87e5-51866e53976c"
+    },
+    {
+      "claim_id": "73bee8f1-c42c-4eea-8d8e-1851fd2d1414",
+      "result_id": "366a4994-65a1-4a94-87e5-51866e53976c"
+    },
+    {
+      "claim_id": "12ba93a1-d76b-4c86-ba03-7d21bbf46611",
+      "result_id": "366a4994-65a1-4a94-87e5-51866e53976c"
+    },
+    {
+      "claim_id": "996f5b21-0392-46be-a351-b8c5c3026264",
+      "result_id": "366a4994-65a1-4a94-87e5-51866e53976c"
+    },
+    {
+      "claim_id": "f7dec37c-862c-4d35-87a0-d725805dbabe",
+      "result_id": "366a4994-65a1-4a94-87e5-51866e53976c"
+    },
+    {
+      "claim_id": "de55d0a7-11e2-4891-8b72-153674859f41",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "11cda50e-fd0c-4091-9524-e477df19c806",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "13ff73f3-6443-40f8-ab00-f53e8a664883",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "85940734-b9cf-402c-b871-4dd703401453",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "9b87a301-49cd-4b63-b519-77015649cfd7",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "4a00a063-8320-4ced-bffc-f54dc4c7b444",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "0d650850-afc3-447d-8365-b9dfac32fdb8",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "3f50d67a-d6c6-4292-9348-59f0980578ad",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "be9aab1c-c340-4640-8200-00e0614d93f0",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "26414fe7-7788-4c1d-8b5f-e8d1f8ae55ce",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "503c607d-3854-40c2-9a12-0cad7801e6bc",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "3e19137f-3700-4c57-8971-cc4cdcf6014a",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "cde48bcc-de5e-4f40-96c3-ef524a9945ca",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "578129da-0dad-46dd-8e49-f2db75c62412",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "43fb740f-6a4d-4f36-b039-328430f1ee9e",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "d4f57e4b-f660-4785-baac-c3941431d891",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "80cbdfaa-ac6b-4b40-92a2-78f994c9a86d",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "398e3b6d-ad57-4f10-b355-1a1de8178d2a",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "5093ce7a-4ac1-44b2-94b4-fcaf0d7926e8",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "9c2001a9-3468-436c-abf8-9c8ae3a9aaf8",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "6c40db03-3897-4e3f-8f2f-a5fb208fc546",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "70e7ddf0-a593-43f3-a981-77993594e5a4",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "250832b1-2cb8-44ce-8ec8-1fa20ffac7d8",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "7946809d-2279-4290-9f9b-7766bc76ed90",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "65db47e4-b476-48cc-b5ee-65b038e33c5d",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "53f4666d-d09e-4401-9a2b-3cbbea854fef",
+      "result_id": "3055f4d9-8e3c-432e-a2c7-2a259cb60df4"
+    },
+    {
+      "claim_id": "4be32df1-1146-4580-b84b-77f6a8a3ab69",
+      "result_id": "0154529b-9599-4872-85f8-1ffa971c7d38"
+    },
+    {
+      "claim_id": "8eab5409-14ff-4b18-9846-3cbdaaf2adc5",
+      "result_id": "0154529b-9599-4872-85f8-1ffa971c7d38"
+    },
+    {
+      "claim_id": "886ccab9-12c8-44d9-9ff9-6e16edb03514",
+      "result_id": "0154529b-9599-4872-85f8-1ffa971c7d38"
+    },
+    {
+      "claim_id": "4cb95313-06b1-4a23-9990-50bba5679995",
+      "result_id": "0154529b-9599-4872-85f8-1ffa971c7d38"
+    },
+    {
+      "claim_id": "2e12f3e1-11c6-41ff-b748-6c9882469fa4",
+      "result_id": "0154529b-9599-4872-85f8-1ffa971c7d38"
+    }
+  ],
+  "comparisons": []
+}

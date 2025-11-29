@@ -1,0 +1,2197 @@
+{
+  "submission": {
+    "id": "dc9c9696-226a-4582-9533-bf06ab54dbcf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:59:03.545797Z",
+    "updated_at": "2025-11-29T03:59:03.545797Z"
+  },
+  "content": [
+    {
+      "id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "submission_id": "dc9c9696-226a-4582-9533-bf06ab54dbcf",
+      "content_type": "manuscript",
+      "content_text": "# A native interactor scaffolds and stabilizes toxic ATAXIN-1 oligomers in SCA1\n\n## Authors\n\n- Cristian A Lasagna-Reeves<sup>1</sup>\n- Maxime WC Rousseaux<sup>1</sup>\n- Marcos J Guerrero-Mu\u00f1oz<sup>3</sup>\n- Jeehye Park<sup>1</sup>\n- Paymaan Jafar-Nejad<sup>1</sup>\n- Ronald Richman<sup>4</sup>\n- Nan Lu<sup>1</sup>\n- Urmi Sengupta<sup>3</sup>\n- Alexandra Litvinchuk<sup>1</sup>\n- Harry T Orr<sup>5</sup>\n- Rakez Kayed<sup>3</sup>\n- Huda Y Zoghbi<sup>4</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n2. Jan and Dan Duncan Neurological Research Institute Texas Children's Hospital Houston United States\n3. Department of Neurology University of Texas Medical Branch Galveston United States\n4. Department of Molecular and Human Genetics Howard Hughes Medical Institute, Baylor College of Medicine Houston United States\n5. Institute for Translational Neuroscience University of Minnesota Minnesota United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent studies indicate that soluble oligomers drive pathogenesis in several neurodegenerative proteinopathies, including Alzheimer and Parkinson disease. Curiously, the same conformational antibody recognizes different disease-related oligomers, despite the variations in clinical presentation and brain regions affected, suggesting that the oligomer structure might be responsible for toxicity. We investigated whether polyglutamine-expanded ATAXIN-1, the protein that underlies spinocerebellar ataxia type 1, forms toxic oligomers and, if so, what underlies their toxicity. We found that mutant ATXN1 does form oligomers and that oligomer levels correlate with disease progression in the Atxn1154Q/+ mice. Moreover, oligomeric toxicity, stabilization and seeding require interaction with Capicua, which is expressed at greater ratios with respect to ATXN1 in the cerebellum than in less vulnerable brain regions. Thus, specific interactors, not merely oligomeric structure, drive pathogenesis and contribute to regional vulnerability. Identifying interactors that stabilize toxic oligomeric complexes could answer longstanding questions about the pathogenesis of other proteinopathies.\n\n## Introduction\n\nThe family of neurodegenerative diseases known as proteinopathies are characterized neuropathologically by deposits of insoluble proteins. In Alzheimer disease (AD), for example, there are extracellular depositions of amyloid-\u03b2 (A\u03b2) plaques and intracellular accumulations of neurofibrillary tangles of tau (Glenner and Wong, 1984; Grundke-Iqbal et al., 1986). Similarly, in Parkinson disease (PD), \u03b1-synuclein forms cytoplasmic inclusions known as Lewy bodies (Lashuel et al., 2013). Although AD, PD, and other proteinopathies such as Huntington disease (HD) and the prion disorders are associated with different proteins possessing various structures, functions, and affecting different brain regions, they all involve the accumulation of \u03b2-sheet-rich entities, which suggests some commonality of pathogenic mechanism (Glabe and Kayed, 2006; Knowles et al., 2014).\n\nLike HD, Spinocerebellar ataxia type 1 (SCA1) is a polyglutamine disease that belongs to this larger class of proteinopathies. SCA1 is caused by the expansion of a CAG repeat that encodes for glutamine (Q) in ATAXIN-1 (ATXN1), a protein that is expressed throughout the brain. The Atxn1 knockin mouse model, which bears a 154 CAG repeat knocked into the murine Atxn1 locus, faithfully reproduces the SCA1 phenotype: progressive motor incoordination due to cerebellar degeneration, cognitive deficits, premature death, and degradation-resistant deposits (nuclear inclusions, or NIs) that contain mutant ATXN1 (Watase et al., 2002). As with the stable fibrillar deposits first observed in AD over a hundred years ago, the prominence of these NIs led initially to the postulate that this material is the causative agent of disease (Chiti and Dobson, 2006). Yet the NIs develop primarily in neurons that escape degeneration, not in the cerebellar Purkinje cells (PCs), which are the first to succumb to SCA1 pathology (Watase et al., 2002). This curious observation led to the proposal that the ATXN1-containing NIs are not themselves toxic but rather might serve a protective role by sequestering the mutant protein (Cummings et al., 1998, 1999).\n\nRecent findings suggest a refinement to this hypothesis: it may be that the primary drivers of toxicity are metastable non-fibrillar species known as soluble oligomers (Glabe, 2008; Benilova et al., 2012; Krishnan et al., 2012). Although toxic oligomers have been identified in HD models and their modulation relates to beneficial outcomes (Legleiter et al., 2010; Sontag et al., 2012) their specific role in disease progression in vivo remains unstudied. Furthermore, there are not studies regarding the role of binding partners of the disease-related proteins in the oligomerization process. The inverse correlation between NIs and neuronal integrity in SCA1, however, lends appeal to the hypothesis that soluble oligomers, rather than fibrils per se, drive neurodegeneration in SCA1.\n\nIn this study we sought to determine if and how oligomeric forms of polyQ ATXN1 might contribute to the SCA1 disease state. We report the discovery of polyQ ATXN1 oligomers in the Atxn1 knockin mouse and demonstrate that these oligomers do indeed correlate with disease pathogenesis and motor dysfunction. We also show that polyQ ATXN1 oligomers seed the formation of new oligomers and demonstrate that Capicua (CIC), a key native binding partner of ATXN1, plays a pivotal role in the stabilization and regional toxicity of these oligomeric species.\n\n## Results\n\n### ATXN1 oligomers are associated with neurodegeneration in SCA1\n\nIn the absence of high-resolution structural data for oligomers, conformation-dependent antibodies can be used to distinguish between different types of amyloid structures by recognizing epitopes that are associated with specific aggregation states, independent of their amino acid sequences (Kayed et al., 2003, 2010). We used the conformational monoclonal anti-oligomer antibody F11G3 to detect ATXN1 oligomers in the Atxn1154Q/+ knockin mouse model. This antibody has been extensively characterized and compared to other anti-oligomer antibodies previously developed using similar methods (Guerrero-Munoz et al., 2014a, 2014b). Oligomers were apparent in cerebellar extracts of Atxn1154Q/+ but not in wild-type or Atxn1\u2212/\u2212 mice (Figure 1A). To confirm the anti-oligomeric nature of F11G3, we pre-incubated the antibody with different types of oligomers prior to performing IF in brain sections from Atxn1154Q/+ mice. The results verified that F11G3 is indeed highly specific to an oligomeric conformation rather than an amino acidic sequence (Figure 1\u2014figure supplement 1). Immunofluorescence (IF) against both ATXN1 and oligomers revealed substantial co-localization in the cerebellum (Figure 1B). Immunoprecipitation of oligomers from the Atxn1154Q/+ cerebellum confirmed that these metastable entities are formed by ATXN1 (Figure 1C). Atomic force microscopy (AFM) images show that these oligomers have an average height of 6.8 +/\u2212 3.4 nm (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig1-v2.jpg)\n\n**Figure 1.:** (A) Western blot analysis of soluble fractions from cerebella shows the existence of amyloid oligomers exclusively in Atxn1154Q/+ mice model but in neither wild-type nor Atxn1\u2212/\u2212 controls. (B) Immunofluoresence studies of Atxn1154Q/+ brain sections using anti-Ataxin-1 (green) and F11G3 (red) confirms the ATXN1 identity of the amyloid oligomers. Scale bar = 15 \u03bcm. (C) Western blot using anti-ATXN1 antibody showed that the isolated oligomers (IP with F11G3), were indeed ATXN1 oligomers. These ATXN1 oligomers were IP\u2019d exclusively from Atxn1154Q/+ mouse cerebellum and not from Atxn1\u2212/\u2212 controls. (D) AFM analysis showing brain-derived ATXN1 oligomers IP from Atxn1154Q/+ mouse using F11G3. Scale bar 200 nm. (E) Double staining using the Purkinje cell (PC) marker, calbindin (green) and F11G3 (red) revealed that ATXN1 oligomers accumulate in PC dendrites before dendritic degeneration is observed (top panel). With progression of dendritic degeneration, ATXN1 oligomers tend to accumulate in both the cytoplasm and nucleus (middle and bottom panel). Scale bar 30 \u03bcm. No degeneration is represented by (\u2212), a low level of degeneration is represented by (+), and advanced degeneration by (++). Mice analyzed were 28 weeks old. (F) Histological staining for ATXN1 (top panel) and oligomers (F11G3, bottom panel) in cerebellum and cortex of Atxn1154Q/+ (left panels) and WT mice (right panels). Scale bar 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Whenever the antibody F11G3 was preincubated with the antigen A\u03b2 or IAPP oligomers, no immunolabeling was observed in Atxn1154Q/+ sections that were previously positive for oligomers. Double immunofluorescence between anti-ATXN1 antibody (green) and F11G3 (red) preincubated with recombinant oligomers show the positive signal only for ATXN1. Double immunofluorescence between anti-ATXN1 antibody (green) and F11G3 (red) preincubated with recombinant monomers show positive signal for both antibodies. Scale bar 25 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Western blots using F11G3 confirmed higher levels of ATXN1 oligomers in the cerebellum (Cer) than in the cortex (Cx) in the Atxn1154Q/+ mouse. ATXN1 was detected using 11750 antibody; arrowhead corresponded to 154Q ATXN1 band. 2Q ATXN band (*) demonstrated equal amount of loading between the Cer and Cx sample.\n\nIf oligomeric ATXN1 does indeed drive pathology, it should be most abundant in cerebellar Purkinje cells, the cells most vulnerable to SCA1. Staining of PCs at various stages of neurodegeneration in the Atxn1154Q/+ mice revealed high levels of oligomers in the neurites prior to their degeneration; in later stages, oligomers accumulated in the soma (Figure 1E). When we explored the regional localization of oligomeric forms of ATXN1, we found them associated with neurons that are prone to degeneration (e.g., PCs) but not those that are spared by the disease (e.g., cortical neurons; Figure 1F and Figure 1\u2014figure supplement 2). The presence of ATXN1 oligomers in more susceptible neurons suggests that these soluble aggregates are important in the neuropathology of SCA1.\n\n### ATXN1 amyloid oligomers correlate with disease progression\n\nWe took advantage of the fact that the knockin mouse model reproduces the progressive phenotype of SCA1 (Zoghbi and Orr, 2009) to investigate the relationship between oligomer levels and degree of motor impairment in the Atxn1154Q/+ mice. Motor incoordination in the rotarod assay becomes apparent in these mice as early as 5 weeks of age and worsens throughout their life span (Watase et al., 2002). Accordingly, we tested the levels of ATXN1 oligomers in these mice at an early stage of disease (8 weeks of age), a middle stage (18 weeks), and a late stage (28 weeks). There was considerable variability among animals of the same age in both motor performance and oligomer abundance, but the levels of different molecular weight oligomers in the cerebellum clearly increased as the mice aged (Figure 2A). The differences between individual mice, however, allowed us to search for relationships between motor impairment and different ATXN1 oligomers. We tested each mouse on the rotarod and observed a consistently strong inverse correlation between latency to fall and the level of ATXN1 oligomers (Figure 2B), with oligomers over 245 KDa showing the greatest inverse correlation (R = 0.89). Importantly, no significant changes in monomeric ATXN1 levels (2Q or 154Q) were observed in these mice (Figure 2\u2014figure supplement 1). Thus, oligomer levels correlated with disease progression as assessed by motor incoordination.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig2-v2.jpg)\n\n**Figure 2.:** (A) Western blot of cerebellar lysates of 8-, 18- and 28-week old Atxn1154Q/+ mice using F11G3. Right panels indicate cropped regions of the blot with exposure adjusted to permit comparative quantification among mice of different ages. (B) Correlation plots between the different molecular weight oligomers (Figure 1A) and the latency to fall in the rotarod assay in Atxn1154Q/+ mice. Each black dot corresponds to one Atxn1154Q/+ mouse from 1A. (C) Size exclusion chromatography (SEC) from Atxn1154Q/+ mouse cerebellum probed for oligomers (F11G3, left panel) and ATXN1 (11750, right panel). Note that top panels reveal a higher exposure than the bottom panels. In corresponded to Input before fractionation. (D) Representative atomic force microscopy (AFM) pictures from fractions 7, 8, 11 and 12 (Scale bar 140 nm). (E) MTT (3-(4,5-Dimethylthiazol-2-yl)-2,5-Diphenyltetrazolium Bromide) assay performed on cerebellar granule neurons. Cells grown 7 days in vitro (DIV) were treated with different fractions (labeled below the x-axis) and viability was measured 18 hr following treatment (black bars). Gray bars denote viability following incubation of fraction 11 previously co-incubated with the indicated antibodies. *p < 0.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A slight decrease in the level of 154Q ATXN1 was observed with age in Atxn1154Q/+ samples, but no changes were observed in the levels of 2Q ATXN1. The antibody 11750 was used to detect ATXN1 in western blot. (B) No correlation was observed between the levels of 154Q or 2Q ATXN1 and the latency to fall from the rotarod.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Fraction 11 of the SEC from Atxn1154Q/+ mouse cerebellum was passed through a hydrophobic interaction column (HIC). ATXN1 oligomer complexes were detected in fractions with high levels of exposed hydrophobic domains. F11 corresponded to Fraction 11 input; FT corresponded to the HIC flow through; (\u2212) and (+) indicates lower and higher levels of hydrophobic fractions, respectively. Oligomers were detected with F11G3 and ATXN1 was detected with 11750.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Dot-blot probed with F11G3 of SEC fractions from Atxn1154Q/+ cerebellum incubated at 37\u00b0C for 12, 24 and 48 hr.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Cellular staining of CGPC cells after fraction 11 treatment using Tuj1 antibody: the ATXN1 oligomer complex induces degeneration in cells.\n\nTo determine the native size of soluble ATXN1 oligomers under non-denaturating conditions to insure that they were not artificially generated during SDS-PAGE, we performed non-denaturating size-exclusion chromatography (SEC) of cerebellar samples and subjected these to SDS-Tris-Glycine gels (Figure 2C). Evaluation of individual fractions by western blot with anti-ATXN1 antibody revealed WT and polyQ monomeric ATXN1 in different fractions, as previously shown (Figure 2C, right panel) (Lam et al., 2006). When we analyzed the SEC fractions with the anti-oligomer antibody, we observed oligomeric species mainly between fractions 10 and 12 (ranging from 500 to 1000 KDa in size; Figure 2C, left panel). Anti-ATXN1 antibody confirmed that the oligomers in these fractions do in fact contain ATXN1 (Figure 2C, right panel); the range of sizes of these oligomers is thus rather broad. Fraction 11 (\u223c667 KDa) contained a peak in the signal of oligomers >245 KDa in weight, as well as the presence of lower molecular weight oligomeric species (\u223c180, \u223c135, \u223c110 and \u223c98 KDa). AFM revealed that those fractions detected by the anti-oligomer antibody (particularly fractions 11 and 12) were indeed oligomeric, whereas the higher molecular weight fractions were fibrillar in nature (fraction 7, \u223c4000KDa; Figure 2D). A hydrophobic interaction column, which separates proteins according to hydrophobic domain exposure, showed that fraction 11 is highly hydrophobic, as is characteristic of many oligomers (Campioni et al., 2010) (Figure 2\u2014figure supplement 2). To establish how stable these oligomers are, SEC fractions were incubated at 37\u00b0C for up to 48 hr followed by immunoblot analysis using F11G3. F11G3 showed a strong affinity for fractions 11 and 12 even after 48 hr of incubation, suggesting that these oligomers are highly stable (Figure 2\u2014figure supplement 3).\n\nTo determine whether the ATXN1 oligomeric complex can induce cellular toxicity, we treated cultured cerebellar granular neurons (CGNs) with SEC fractions from Atxn1154Q/+ cerebellar samples. Cell viability measurement revealed fraction 11 to be highly toxic (Figure 2E). This toxicity was blocked when fraction 11 was pre-incubated with the anti-oligomer antibody F11G3 or anti-ATXN1 antibody. The cellular damage was thus produced by an ATXN1-containing oligomeric complex present in this SEC fraction. IF staining of CGNs with the neuronal marker Tuj1 revealed that the ATXN1 oligomer complex from fraction 11-induced neurodegeneration, as evidenced by neuritic swelling and beading (Figure 2\u2014figure supplement 4).\n\n### ATXN1 oligomers seed the formation of endogenous ATXN1 oligomers in cell culture\n\nNeuropathological analysis of the Atxn1154Q/+ mice revealed that ATXN1 oligomers are not evenly distributed throughout the cerebellum but instead are restricted to focal sub-populations of PCs. It is notable that this focal distribution coincided with cellular toxicity: cells with no detectable oligomers looked healthy, displaying many calbindin-positive PCs with extensive projections, while areas with abundant oligomers showed more diffuse calbindin staining and short dendrites (Figure 3A). Given that, in AD and PD, proteins such as A\u03b2, tau or \u03b1-synuclein appear to \u2018seed\u2019 the accumulation of other neurotoxic proteins and promote neurodegeneration (Clavaguera et al., 2009; Langer et al., 2011; Lasagna-Reeves et al., 2012; Rey et al., 2013), we sought to determine whether a similar mechanism operates in SCA1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig3-v2.jpg)\n\n**Figure 3.:** (A) Histological analysis in Atxn1154Q/+ brain sections reveals the regional presence of oligomers in PCs stained with calbindin (top panel) and oligomers stained with F11G3 (bottom panel) in degenerating PCs (bottom right panel) but not surviving PCs (bottom left panel). (B) Cell-based seeding assay: mRFP-ATXN1(82Q) cells were incubated with the indicated fractions (Frac 7\u201314) and the oligomeric and fibrillar inclusions were quantified. *p < 0.05. **p < 0.01. (C) Immunostaining for oligomers (F11G3, green) of mRFP-ATXN1(82Q) cells following treatment with fraction 11. Arrowheads denote internalized oligomers. Scale bar 15 \u03bcm. (D) Immunostaining for ATXN1 (11750, green signal) of mRFP-ATXN1(82Q) after treatment with fraction 11 from Atxn1154Q/+ cerebellum (top row) demonstrated that exogenous ATXN1 (green signal) is internalized into the cells. Cells treated with fractions 11 from wild-type mouse cerebellum (bottom row) did not show internalized ATXN1 entities. Scale bar 15 \u03bcm. (E) Quantification of the percentage of mRFP-ATXN1(82Q) cells with oligomeric (blue bars) or fibrillar (red bars) inclusions following treatment of fraction 11 pre-incubated with the indicated antibodies *p < 0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Immunostaining for oligomers (F11G3, green) in a stable cell line expressing mRFP-ATXN1(82Q) (top panels) or a similar stable cell line expressing 82Q ATXN1 with the S776A mutation (bottom panels). The S776A mutation prevents formation of Nis and oligomers. Scale bar 15 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Daoy mRFP-ATXN1(82Q) stable cell lines were treated with SEC fraction 11 from Atxn1154Q/+ cerebellum pre-incubated with F11G3 for 10 hr. After fixation cells were stained with a secondary anti-mouse IgM alexa 488 (green signal). No intracellular signal was observed in any cell. Low extracellular signal was observed (arrowhead). Scale bar 15 \u03bcm. (B) Cell media was analyzed by western blot using secondary anti-mouse IgM. Heavy and light chains from IgM were observed in treated samples but not in untreated control.\n\nTo evaluate the potential seeding activity of ATXN1 oligomer complexes, we used a previously described cellular model that expresses ATXN1(82Q) fused to monomeric red fluorescent protein (mRFP) (Park et al., 2013). These cells form nuclear inclusions, but their capacity to form oligomers had never been evaluated. We first established that these cells do form oligomers (Figure 3\u2014figure supplement 1). As a negative control, we used cells that express mRFP-ATXN1(82Q,S776A), a mutant form of ATXN1 that cannot be phosphorylated at Ser776 and is not toxic (Emamian et al., 2003; Jorgensen et al., 2009; Park et al., 2013). The anti-oligomer antibody detected the smaller inclusion bodies (350\u2013900 nm) but did not recognize the larger inclusions (>900 nm), suggesting that these larger inclusions are more complex and composed of higher order aggregates, likely to be fibrillar in nature.\n\nWe next tested whether ATXN1 oligomer complexes from Atxn1154Q/+ mouse cerebellum seed the formation of new oligomers in this cell model. We added cerebellar fractions (see Figure 2C) to the cells and quantified the percentage of mRFP-ATXN1(82Q) cells with oligomeric or fibrillar inclusions, based on size (350\u2013900 nm or >900 nm, respectively) and whether or not the inclusions were detected by F11G3. The cells exposed to either fraction 11 or 12 developed the largest proportion of oligomeric inclusions (55% and 34%, respectively) in comparison with cells incubated with other fractions or the control group (18%) (Figure 3B). None of the treated groups showed an increase in fibrillar inclusions. This suggests that ATXN1 oligomeric complexes seed the formation of new oligomers but do not promote the formation of ATXN1 fibrillar material. No fibrillar or oligomeric inclusions were observed in any of the mRFP-ATXN1(82Q, S776A) cells, regardless of the treatment (data not shown). ATXN1 oligomeric complexes may thus act as a seed, but the cell needs to express an entity that is prone to aggregate.\n\nTo confirm that the seeding effect was in fact produced by ATXN1 oligomers, Daoy mRFP-ATXN1(82Q) cells treated with Fraction 11 were immunostained with either anti-oligomer antibody (Figure 3C) or an anti-ATXN1 antibody (Figure 3D). The anti-oligomer staining (green fluorescence) revealed several oligomeric complexes that lacked an mRFP signal, suggesting that exogenously added oligomers were internalized by the cell (Figure 3C). ATXN1 staining revealed that cells also internalized exogenously added ATXN1 species (Figure 3D). We next treated Daoy mRFP-ATXN1(82Q) cells with fraction 11 pre-incubated with the anti-oligomer antibody, the anti-ATXN1 antibody, or a control antibody. Cells treated with fraction 11 pre-incubated with the anti-oligomer or the anti-ATXN1 antibody blocked oligomer formation (Figure 3E). It is therefore the ATXN1 oligomers present in fraction 11 that are responsible for inducing the formation of new oligomeric inclusions in mRFP-ATXN1(82Q) cells.\n\nTo determine the mechanism through which the anti-oligomer antibody blocks the seeding effect of ATXN1 oligomers, we treated Daoy mRFP-ATXN1(82Q) cells with fraction 11 pre-incubated with the anti-oligomer antibody and performed IF using only a secondary antibody labeled with alexa 488. Fluorescent images show that the anti-oligomer antibody was not internalized by the cell but bound to the ATXN1 oligomers in the extracellular space. The antibody thus appears to block the internalization of exogenous ATXN1 oligomers rather than interacting directly with intracellular oligomeric species. The presence of anti-oligomer antibody was confirmed by western blot analysis of media from cells treated with only secondary antibody (Figure 3\u2014figure supplement 2).\n\n### CIC interacts with ATXN1 oligomers stabilizing the complex in its oligomeric conformation\n\nIn SCA1, both wild-type and expanded ATXN1 share many binding partners (Lim et al., 2006). Among these, the transcriptional repressor CIC is of particular interest, because it is the only known binding partner whose protein levels are significantly reduced in Atxn1\u2212/\u2212 mice (Lee et al., 2011); its stability is thus dependent on being complexed with ATXN1 (Lam et al., 2006). Moreover, our lab has shown that polyQ ATXN1 exerts toxicity through its native CIC-containing complex rather than through aberrant interactions with novel proteins (Lam et al., 2006), and that reducing CIC levels by half rescues many SCA1-like phenotypes in Atxn1154Q/+ mice (Fryer et al., 2011).\n\nWhen we performed SEC on cerebellar extracts from Atxn1154Q/+ mice, we detected CIC in the same fractions enriched with ATXN1 oligomer complexes. These fractions lost their seeding capacity when pre-incubated with an anti-CIC antibody (Figure 4\u2014figure supplement 1). Based on these observations, we investigated the role of CIC in the formation and stability of ATXN1 oligomer complexes. We generated Atxn1154Q/+;CicL+/- mice that have a \u223c50% reduction of both isoforms of CIC (Cic-L and Cic-S) (Fryer et al., 2011) and observed a significantly lower number of PCs positive for oligomers in these mice (Figure 4A,B). This result was confirmed by western blot analyses on whole cerebellar extracts from these animals (Figure 4C,D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Pathological analysis showed fewer PCs from Atxn1154Q/+;CicL+/- mice loaded with oligomers than PCs from Atxn1154Q/+ mice. PCs were stained with calbindin antibody and oligomers with F11G3. *p < 0.05. (C\u2013D) Western blot revealed lower levels of oligomers in the cerebellum of Atxn1154Q/+;CicL+/- mice than in Atxn1154Q/+ mice. Oligomers were measured using F11G3. **p < 0.01. (E\u2013F) Size Exclusion Chromatography (SEC) showed that ATXN1 complexes in cerebellar samples from Atxn1154Q/+;CicL+/- mice shift to a higher molecular weight fraction than those in Atxn1154Q/+ cerebella. (G) Cell-based seeding assay demonstrated that the absence of one Cic allele in Atxn1154Q/+;CicL+/- mice reduced the formation of new ATXN1 oligomers in Daoy mRFP-ATXN1(82Q). Fraction 11 and 12 ATXN1 oligomer complexes from control Atxn1154Q/+ mouse cerebella seeded the formation of new mRFP-ATXN1(82Q). *p < 0.05, **p < 0.01.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Size exclusion chromatography (SEC) on Atxn1154Q/+ mouse cerebellar soluble fraction revealed that CIC is part of a higher molecular weight oligomeric complex detected with F11G3 (fractions 10 and 11). (B) Pre-incubation of fraction 11 from Atxn1154Q/+ cerebellum with anti-CIC antibody blocked the internalization and seeding capacity of oligomer complexes. Pre-incubation of fraction 11 with an anti-ATXN1-like antibody (ATXN1-like is a paralog of ATXN1 that lacks the polyQ tract) failed to block the seeding capacity of ATXN1 oligomer complexes. Ctl = control antibody. *p < 0.05, **p < 0.001.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** SEC revealed no shift of ATXN1 oligomeric complexes in Atxn1154Q/+;CicL+/- mouse cerebellum compared with Atxn1154Q/+ mice.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** ATXN1 insoluble aggregates were detected on Atxn1154Q/+ mouse cerebellar soluble fractions 7 and 8. In Atxn1154Q/+;CicL+/- mouse cerebellum ATXN1 insoluble aggregates were observed in fraction 7, 8 and 9. Fibrillar oligomers detected by OC, are observed in fraction 7 and 8 from Atxn1154Q/+ mouse and fractions 7, 8 and 9 from Atxn1154Q/+;CicL+/- mouse. No oligomers detected by F11G3 were observed in any of the insoluble fractions.\n\nTo our surprise, SEC on cerebellar extracts from Atxn1154Q/+;CicL+/- and Atxn1154Q/+ mice revealed that decreasing the levels of CIC induced a shift of the ATXN1 complexes to a higher molecular weight fraction detected by ATXN1 antibody (Figure 4E,F). Furthermore, these higher molecular weight complexes are not oligomeric: anti-oligomer antibody did not reveal any shift to the higher molecular weight fractions upon loss of Cic (Figure 4\u2014figure supplement 2). To confirm that the high molecular weight complex present only in Atxn1154Q/+;CicL+/- mice adopted a more organized fibrillar aggregate conformation, we performed Filter Retardation Assay (FRA) using the SEC fractions from Atxn1154Q/+;CicL+/- and Atxn1154Q/+ mice. Probing the FRA membrane with anti-ATXN1 antibody revealed the presence of ATXN1 SDS-insoluble aggregates in fractions 7 and 8 in Atxn1154Q/+ mice. In the case of the Atxn1154Q/+;CicL+/- mice, ATXN1 SDS-insoluble aggregates were also present in fraction 9 (Figure 4\u2014figure supplement 3), confirming that in the context of reduced CIC levels, ATXN1 tends to form more organized fibrillar aggregates. We also probed FRA membranes with OC, a conformational antibody that specifically recognizes fibrillar oligomers and fibrils (Kayed et al., 2007), and found fractions 7 and 8 in Atxn1154Q/+ mice, and fractions 7, 8, and 9 in Atxn1154Q/+;CicL+/- mice, positive for OC (Figure 4\u2014figure supplement 3). ATXN1 thus tends to form fibrillar oligomers, amorphous aggregates and/or fibrils when CIC levels are reduced. We detected no oligomers using F11G3 in the FRA membranes; ATXN1 oligomers detected by F11G3 are therefore soluble in 2% SDS (Figure 4\u2014figure supplement 3) and able to escape detection by FRA. To determine whether the ATXN1 complex maintains its seeding capacity in the absence of one Cic allele, we performed the cell-based seeding assay using mRFP-ATXN1(82Q) cells treated with SEC fractions from either Atxn1154Q/+ or Atxn1154Q/+;CicL+/- cerebellum and quantified the percentage of cells containing fibrillar or oligomeric inclusions. Fractions 11 and 12 from the Atxn1154Q/+;CicL+/- mice were less proficient in inducing the formation of new oligomeric inclusions than those from the Atxn1154Q/+ mice (Figure 4G).\n\nTo determine whether CIC plays a key role in ATXN1 oligomerization, we co-transfected Hela cells with a consistent amount of ATXN1(82Q) and varying quantities of CIC. As a negative control, we utilized CIC with the W37A mutation which hinders its interaction with ATXN1 (Kim et al., 2013). Increasing amounts of CIC led to increasing levels of oligomers as measured with F11G3 (Figure 5A,B), but increasing amounts of mutant CIC/W37A produced no changes in the levels of ATXN1 oligomers in the cells. To determine whether polyQ-length plays a role in CIC's stabilization of ATXN1 oligomers, we repeated the same co-transfection experiments in HeLa cells as described for ATXN1(82Q), this time utilizing nonpathogenic wild-type ATXN1(30Q). When cells were co-transfected with ATXN1(30Q) and increasing amounts of CIC, oligomers were almost undetectable by western blot using F11G3 (Figure 5C). As expected, increasing amounts of mutant CIC/W37A produced no oligomeric signal. To compare the relative amounts of oligomers in the ATXN1(82Q) and ATXN1 (30Q) cells, we performed direct ELISA using F11G3 and normalized the values by the total amount of ATXN1 measured using anti-ATXN1 antibody. The ELISA quantification confirmed that increasing amounts of CIC corresponded to increasing levels of oligomers in ATXN1(82Q) cells, whereas no changes in oligomer levels were observed when cells were treated with any amount of mutant CIC/W37A. Cells transfected with nonpathogenic ATXN1(30Q) failed to produce oligomers, whether they were co-transfected with CIC, CIC/W37A, or not co-transfected at all (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig5-v2.jpg)\n\n**Figure 5.:** (A) Western blot of Hela cells co-transfected with ATXN1(82Q) and increasing concentrations (from 0.5 to 3 \u03bcg) of wild type CIC (left panel) or increasing concentrations of mutant CIC/W37A (right panel). Membranes were probed with F11G3 to determine the levels of oligomers. * indicated change in exposure of the membrane. (B) Quantification of oligomers from Western blot analysis (A), demonstrated that increased oligomer levels correlated with increases of transfected wild-type CIC. Mutant CIC/W37A produced no effect on the amount of oligomers detected by Western blot. n = 4. *p < 0.05, **p < 0.01 and ***p < 0.001. (C) Western blot of Hela cells co-transfected with ATXN1(30Q) and increasing concentrations (from 0.5 to 3 \u03bcg) of wild-type CIC (left panel) or increasing concentrations of mutant CIC/W37A (right panel). Membranes were probed with F11G3 to determine the levels of oligomers. Almost no oligomers were detected in any of the measured conditions. * indicated change in exposure of the membrane. (D) ELISA using F11G3 shows that cells transfected with ATXN1(82Q) have high levels of oligomers, but cells transfected with ATXN1(30Q) had almost no detectable oligomers. Increasing amounts of oligomers were observed when cells transfected with ATXN1(82Q) were co-transfected with increasing amounts of wild type CIC but not mutant CIC/W37A. n = 4. *p < 0.05, **p < 0.01 and ***p < 0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Daoy mRFP-ATXN1(82Q) stable cell lines transfected with the N-terminal fragment of CIC showed a higher number of oligomeric inclusions than cells transfected with the N-terminal fragment of mutant CIC W37A or control (non-transfected) cells. *p < 0.05. Scale bar 20 \u03bcm.\n\nWe also transiently transfected mRFP-ATXN1(82Q) stable cells with the N-terminal region of CIC, which contains the ATXN1 binding region (Lam et al., 2006). As a negative control, we transfected N-terminal CIC with the W37A mutation. Cells transfected with N-terminal wild-type CIC developed many more oligomeric inclusions than those transfected with mutant CIC or controls (Figure 5\u2014figure supplement 1). This effect was specific to oligomeric inclusions.\n\nWe next studied the effect of CIC on the aggregation kinetics of ATXN1 in vitro. Because full-length ATXN1 is insoluble and difficult work with in vitro (de Chiara et al., 2005; Lam et al., 2006; Goldschmidt et al., 2010), we used ATXN1's AXH domain, which is the region that interacts with CIC and is also responsible for a large part of the protein's toxicity in mice and fruit flies (Tsuda et al., 2005) and its tendency to aggregate (Figure 6\u2014figure supplement 1). When the AXH peptide alone was stirred at 37\u00b0C, soluble oligomers formed in as little as 12 hr but were no longer detectable after 48 hr. When AXH was mixed with CIC in a 1:1 molar ratio, however, oligomeric species were more abundant and persisted much longer, being detectable for up to 72 hr (Figure 6A). When we blocked AXH-CIC binding (using CIC W37A), AXH oligomer kinetics resembled those of AXH alone (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig6-v2.jpg)\n\n**Figure 6.:** (A) ELISA using anti-prefibrillar oligomer antibody A-11 shows that the N-terminal fragment of wild-type CIC stabilized AXH fragments in the oligomeric conformation, unlike the N-terminal fragment of mutant CIC W37A or AXH incubated alone. Wild-type and mutant CIC alone did not oligomerize at any time point. (B) ELISA using anti-fibrillar oligomer antibody OC shows that only wild type, not mutant, CIC partially inhibits the formation of fibrillar oligomers. (C) Thioflavin T assay demonstrated that wild-type but not mutant CIC blocks the formation of AXH fibrils. *p < 0.05, **p < 0.01.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** 3D profile method for predicting fibrillizing segments. The top and bottom panels show the predicted energy for fibrillation of every six-residue segment of AXH and \u03b1-Synuclein, respectively. Red histogram bars represent hexapeptides with energy below \u221223 kcal\u2215mol, which are predicted to form fibrils.\n\nTo better characterize the effect of CIC on the aggregation kinetics of ATXN1, we utilized the conformational antibody OC that specifically detects fibrillar oligomers and fibrils (Kayed et al., 2007). It has been shown that these fibrillar oligomers are more mature oligomers, more compact and less toxic than the soluble ones detected with A-11 and F11G3, known as prefibrillar oligomers (Krishnan et al., 2012; Guerrero-Munoz et al., 2014b). Despite the structural similarity of fibrillar oligomers and fibrils, the former are not positive for Thioflavine (Glabe, 2008). As expected, AXH either alone or with mutant CIC W37A formed significantly more fibrillar oligomers at 24 hr than it did with wild-type CIC (Figure 6B). This result suggests that CIC binding to ATXN1 promotes the formation of and stabilizes soluble prefibrillar oligomers and tends to divert ATXN1 from forming more mature and less toxic aggregates such as fibrillar oligomers and fibrils. To solidify this interpretation, we performed a Thioflavin T (Thio-T) assay to determine the effect of CIC on the formation of AXH fibrils. Fluorescence measurements of Thio-T showed that wild-type CIC diminished the formation of AXH fibrils (Figure 6C). The results obtained from our aggregation kinetics assay suggested that CIC not only promotes AXH oligomerization but also stabilizes the oligomers, retarding the kinetics of AXH aggregation to fibrils.\n\nHaving demonstrated that increasing levels of CIC stabilize ATXN1 polyQ oligomers in cells (Figure 5), we sought to determine whether the particular susceptibility of the cerebellum to ATXN1 toxicity could be attributable, at least in part, to CIC levels in the tissue. We measured the levels of ATXN1 and CIC in the cerebellum and cortex of wild type mice and found that, under these physiological conditions, CIC levels are higher in the cerebellum than in the cortex, but ATXN1 levels are lower (Figure 7). The amount of CIC available relative to ATXN1 is thus considerably higher in the cerebellum than in the cortex. This result suggests that in brain regions containing high levels of CIC in relation to ATXN1 (such as the cerebellum), CIC stabilizes ATXN1 in its oligomeric conformation, but where the ratio of CIC to ATXN1 is lower, ATXN1 is not stabilized in its oligomeric confirmation and continues its process of forming non-toxic NIs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig7-v2.jpg)\n\n**Figure 7.:** CIC levels are higher in the cerebellum than in the cortex, while ATXN1 levels are lower in the cerebellum than in the cortex, making the amount of CIC per ATXN1 much higher in the cerebellum.\n\n## Discussion\n\nAn overwhelming number of studies have shown that structurally related oligomers are toxic (Chiti and Dobson, 2006) and that the soluble rather than the fibrillar mutant protein is associated with a toxic gain of function (Saunders and Bottomley, 2009; Zoghbi and Orr, 2009). Oligomers have been specifically associated with Alzheimer disease, Parkinson disease, and frontotemporal dementia, and it has been proposed that the disease pathology could be caused solely by soluble toxic entities of A\u03b2, \u03b1-synuclein or tau, respectively (Lesne et al., 2006; Berger et al., 2007; Shankar et al., 2008). Yet the molecular mechanism(s) of this toxicity have remained poorly understood. Not since Prusiner proposed the existence of a \u2018protein X\u2019 that might help form the toxic species has attention been paid to a possible requirement for interaction with another protein partner to form toxic oligomers (Telling et al., 1995). Here we have demonstrated not only that polyQ ATXN1 adopts an oligomeric conformation and that this conformation is pathogenic in cellular and animal models of SCA1, but that the native binding partner of ATXN1, CIC, is essential for the stabilization of oligomeric polyQ ATXN1. We believe the data provide compelling reason to investigate the role of native partners involved in the toxicity of protein oligomers in other neurodegenerative proteinopathies.\n\nOur study also provide an answer to the longstanding conundrum of differential regional vulnerability, i.e., why a ubiquitiously expressed protein should prove toxic to only certain brain regions and leave others relatively unharmed. It has been particularly perplexing that regions that develop insoluble nuclear inclusions, which were long thought to be toxic, tend to escape SCA1 pathology (Watase et al., 2002). We had previously shown that polyQ ATXN1 exerts toxicity through its native complexes containing CIC rather than through aberrant interactions with novel proteins (Lam et al., 2006) and that reducing CIC levels by 50% rescues the phenotype of a mouse model for SCA1, improving motor functions and increasing survival (Fryer et al., 2011). The data from the current study provide insight into how CIC modulates pathogenesis and why it is particularly toxic in the cerebellum: CIC stabilizes toxic oligomers and exists in a particularly high ratio with respect to ATXN1 in cerebellar neurons. In the SCA1 knockin mice, the abundance of these oligomers correlated directly with behavioral deficits; without CIC, in vitro and in vivo, ATXN1 oligomers continue on the aggregation pathway and co-assemble into less-toxic fibrillar oligomers, amorphous aggregates and/or fibrils (Figure 8). SCA1 is therefore triggered not just by a conformational change in ATXN1 but by interactions with a specific partner in a specific brain region that brings about oligomerization and stabilization. The partner not only has to be present, but its levels have to be high enough to stabilize a considerable proportion of ATXN1 oligomers in order to drive pathogenesis. These observations do much to explain why pathology is relatively localized in SCA1 despite the ubiquitous expression of ATXN1. It seems likely that the physiological cellular environment will prove to be the determining factor in promoting and stabilizing the respective pathological proteins in their toxic conformations in other polyglutamine diseases and proteinopathies.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07558/elife-07558-fig8-v2.jpg)\n\n**Figure 8.:** Under normal conditions (A, left panel), wild type ATXN1 forms a transcriptional repressor complex with CIC (1) and binds to DNA (2). Under pathological conditions (B, right panel), polyQ-expanded ATXN1 accumulates and can directly form nuclear inclusions (1) or it can adopt an oligomeric conformation (2). These oligomers form nuclear inclusions (3) or form a stable oligomeric complex with CIC (4) that could: act as a dysfunctional transcriptional repressor complex (5) or be released into the extracellular space and be internalized by neighboring neurons, seeding the formation of new oligomers (6). The toxic effect of oligomeric complexes might be mitigated by reducing the total levels of polyQ ATXN1 or hindering the propagation of these toxic complexes (e.g., by immunotherapy).\n\nAmyloid oligomers are characterized by hydrophobic domains; ATXN1 dimers form a heterotetramer with CIC dimers by hydrophobic interactions (Bemporad and Chiti, 2012; Kim et al., 2013). In light of this, we propose that CIC interacts with oligomeric polyglutamine-expanded ATXN1 dimers through the exposed hydrophobic domains, which in turn stabilizes the complexes. In other words, CIC\u2014a native ATXN1 interactor\u2014does not discern between a nonpathogenic wild type ATXN1 dimer and a pathologically expanded ATXN1 dimer, and interacts with either; it simply binds to ATXN1 to form a functional transcriptional repressor complex or a dysfunctional oligomeric complex, depending on the polyglutamine tract. The length of the polyQ tract is essential to the accumulation, aggregation and oligomerization of ATXN1, as has been postulated for other polyglutamine diseases (Legleiter et al., 2010). Given that CIC interacts with ATXN1 regardless of polyQ expansion (Lam et al., 2006) and that CIC stabilizes AXH oligomers, we believe that CIC stabilizes ATXN1 oligomers independent of the polyQ tract length. Nevertheless, a polyglutamine expansion is necessary to initiate the oligomerization process under physiological conditions, in the context of the full-length protein. To our knowledge, this is the first evidence that a native interactor of a toxic protein can stabilize its oligomeric form to promote its bioavailability and downstream toxicity. Furthermore, ATXN1 oligomeric complexes were able to penetrate cells and seed the formation of new ATXN1 oligomers without forming fibrillar inclusions. This could be explained by the addition of monomers to the ends of oligomers, which is kinetically more favorable than the assembly of oligomers into fibrils via sheet stacking interactions (Wu et al., 2010).\n\nOur findings for SCA1 are likely to be applicable to other members of the larger family of neurodegenerative proteinopathies. It should be worthwhile, for example, to explore whether native interactors of tau and \u03b1-synuclein might promote or hinder their formation of toxic oligomers. Without ruling out the role of non-native interactors in protein aggregation, we propose that neuropathological features of a specific disease are determined by both transient and stable native protein interactions and that these interactions in turn affect the amyloidogenic properties of the disease-associated protein. Thus, blocking certain interactions that mediate the formation or stabilization of oligomeric toxic entities, or modulating the downstream effects of such interactions, could be an attractive treatment option for this class of diseases.\n\n## Materials and methods\n\n### Mouse models and preparation of brain extracts\n\nAll mouse procedures were approved by the Institutional Animal Care and Use Committee for Baylor College of Medicine and Affiliates. Atxn1154Q/+, and Atxn1\u2212/\u2212 mice have been previously described (Lorenzetti et al., 2000; Watase et al., 2002) and were backcrossed to C57BL/6 for more than ten generations. The Atxn1154Q/+;CicL+/- mouse was previously generated and characterized (Fryer et al., 2011). Briefly, male Atxn1154Q/+ animals were crossed with female CicL+/\u2212 to obtain the following genotypes: wild type, CicL+/\u2212, Atxn1154Q/+, and Atxn1154Q/+;CicL+/-. Twenty-four weeks-old (unless stated otherwise) mouse cerebella were dissected and then lysed in 0.5% Triton buffer (0.5% triton X-100, 50 mM Tris pH 8, 75 mM NaCl) supplemented with protease and phosphatase inhibitors (Sigma, St. Louis, MO). The protein lysate was then incubated on ice for 20 min and centrifuged at 13,200 r.p.m. for 10 min at 4\u00b0C, and the supernatants were portioned into aliquots, snap-frozen, and stored at \u221280\u00b0C until used.\n\n### Column fractionation\n\nSize exclusion chromatography (SEC) was performed as previously described (Park et al., 2013). Briefly, 700 \u03bcl of triton soluble sample was applied to a Superose 6 GL 300 column (GE Healthcare and Life Science, United Kingdom) and run at 0.3 ml/min using a 0.1% triton column buffer. Fractions were collected every 1 ml.\n\n### Cell-based seeding assay\n\nA stable Daoy mRFP-ATXN1(82Q) cell line was generated as previously described (Park et al., 2013). Cells were plate in 24 well plates (2*104 cells/ml). 24 hr later, cells were treated with SEC fractions (1.5 \u03bcg of total protein) from mouse cerebellum. After 10 hr of treatment, cells were fixed with methanol at \u221280\u00b0C for 45 min. RFP-positive inclusions ranging from 350 to 900 nm were considered oligomeric; inclusions larger than 900 nm and not detected by F11G3 were considered fibrillar. One hundred cells were quantified per group in triplicates. Analyses were manually performed with Image J. For blocking assays, each fraction was mixed with each antibody (2.5 mg/ml) in a ratio 1:1 (vol/vol) for 1 hr and then added to the cells.\n\n### Rotarod assay\n\nMotor coordination was assessed on the Rotarod assay as previously described (Park et al., 2013), with four trials for 4 days using 8-, 18- and 28-week-old mice for the correlation measurements. The tester was blinded to animal genotype and treatment.\n\n### Western blots analysis\n\nTriton-soluble fractions of brain extracts were run on Tris-Glycine 5% gels, in nonreducing conditions to avoid altering the oligomeric conformation (NuPage sample buffer without \u03b2-mercaptoethanol) and subsequently transferred onto nitrocellulose. After blocking overnight at 4\u00b0C with 10% nonfat dried milk, membranes were probed for 1 hr at room temperature with anti-oligomer antibody F11G3, provided by Dr Rakez Kayed (1:1000), anti-ATXN1 antibody 11750 (1:3000), anti-ATXN1 antibody 11NQ, or anti-CIC antibody (1:4000) diluted in 5% nonfat dried milk. 11750 and 11NQ immunoreactivity was detected with horseradish peroxidase conjugated anti-rabbit IgG (1:8000; Jackson ImmunoResearch Laboratories, West Grove, PA); anti-mouse IgM (1:6000; Jackson ImmunoResearch Laboratories) was used for F11G3 and anti-guinea pig IgG (1:8000; Jackson ImmunoResearch Laboratories). For signal detection, ECL Plus (Amersham-Pharmacia, Piscataway, NJ, USA) was used.\n\n### Brain section IF\n\nParaffin sections were deparaffinized, rehydrated, and washed in 0.01 M PBS 3 times for 5 min each time. After blocking in normal goat serum for 1 hr, sections were incubated overnight with rabbit anti-ATXN1 antibody 11750 (1:700). The next day, the sections were washed in PBS 3 times for 10 min each time and then incubated with goat anti-rabbit IgG Alexa Fluor 568 (1:700; Invitrogen, Grand Island, NY) for 1 hr. The sections were then washed 3 times for 10 min each time in PBS before incubation overnight with mouse anti-oligomers F11G3 (1:300). The next day, the sections were washed in PBS 3 times for 10 min each before incubation with goat anti-IgM Alexa Fluor 488 (1:700; Invitrogen) for 1 hr. Sections were washed and mounted in Vectashield mounting medium with DAPI (Vector Laboratories, Burlingame, CA). The sections were examined using a Zeiss LSM 710 confocal microscope.\n\n### Immunohistochemistry\n\nImmunohistochemistry was performed on paraffin-embedded sections. In brief, sections (5 \u03bcm) were deparaffinized and rehydrated. Primary antibodies were detected with biotinylated goat anti-mouse IgG (1:2000; Jackson ImmunoResearch Laboratories), biotinylated goat anti-mouse IgM (1:1500), or biotinylated goat anti-rabbit IgG (1:1800) (all from Jackson ImmunoResearch Laboratories) and visualized using an ABC reagent kit (Vector Laboratories), according to the manufacturer\u2019s recommendations. Bright-field images were acquired using a Carl Zeiss Axio Imager M2 microscope, equipped with an Axio Cam MRc5 color camera (Carl Zeiss, Germany). Sections were counterstained with hematoxylin (Vector Laboratories) for nuclear staining. The following antibodies were used for immunostaining: rabbit anti-ATXN1 antibody 11750 (1:700), rabbit anti-oligomer antibody A-11 (1:600), mouse anti-oligomer antibody F11G3 (1:100), and mouse anti-calbindin antibody (1:450).\n\n### Cell toxicity assays\n\nCerebellar granular precursor cells were obtained from E16 wild-type C57BL6 mice. Cells were maintained in DMEM (Life Technologies, Inc., Invitrogen, Carlsbad, CA, USA) supplemented with 10% FBS, glutamine (4 mM), penicillin (200 U/ml), streptomycin (200 \u03bcg/ml), and sodium pyruvate (1 \u03bcM). Cells were maintained at 37\u00b0C in 5% CO2. Cells (\u223c10,000/well) were plated in 96-well plates (Corning Glassworks, Corning, NY) and grown overnight. SEC fractions (0.3 \u03bcg of total protein) from mouse cerebellum were added to the cells and incubated for 24 hr. Cell viability was assessed spectrophotometrically using a 3-[4,5-dimethylthiazol-2-yl]-2,5-diphenyltetrazolium bromide (MTT)-based assay according to the manufacturer's specifications (Sigma\u2013Aldrich, St. Louis, MO, USA).\n\n### Immunocytochemistry (ICC)\n\nCGP or stable Daoy mRFP-ATXN1(82Q) cells on the coverslip were fixed and permeabilized after their specific treatment. The samples were blocked for 1 hr in 5% goat serum and incubated overnight at 4\u00b0C with anti-Nuj1 for CPG cells (1:150, Covance, Cranford, NJ). For the Daoy mRFP-ATXN1(82Q) cells, samples were incubated overnight with anti-oligomer F11G3 (1:100), anti-ATXN1 11,750 (1:500) or anti-Myc (1:500, GenScript). In all cases cells were then washed and incubated with an Alexa 488-conjugated goat anti-mouse or anti-rabbit antibody (1:700, Invitrogen) for 1 hr at room temperature. DAPI was used for nuclear staining (1:4000, Invitrogen). Cells were then washed for 30 min and cover slipped.\n\n### ELISA\n\nFor ELISA, plates were coated with 10 \u03bcl of sample using 0.1 M sodium bicarbonate (pH 9.6) as a coating buffer, followed by incubation for 1 hr at 37\u00b0C, washing 3 times with Tris-buffered saline with very low (0.01%) Tween 20 (TBS-T), and then blocking for 1 hr at 37\u00b0C with 10% BSA. The plates were then washed three times with TBS-T; F11G3 (1:500), A-11 (1:1000), 11,750 (1:2000), OC (1:1000) or Tubulin (1:2000) antibodies (diluted in 5% nonfat milk in TBS-T) were added and allowed to react for 1 hr at 37\u00b0C. The plates were then washed 3 times with TBS-T, and 100 \u03bcl of horseradish peroxidase-conjugated anti-mouse IgM, anti-mouse IgG or anti-rabbit IgG (diluted 1:10,000 in 5% nonfat milk in TBS-T; Promega, Madison, WI, USA) were added, followed by incubation for 1 hr at 37\u00b0C. Finally, plates were washed 3 times with TBS-T and developed with 3,3,5,5-tetramethylbenzidine (TMB-1 component substrate) from KPL (Gaithersburg, MD, USA). The reaction was stopped with 100 \u03bcl of 1 M HCl, and samples were read at 450 nm.\n\n### Protein expression and purification\n\nThe AXH domain was expressed and purified as previously described (Kim et al., 2013). Briefly, the AXH domain (amino acids 563\u2013689) from human ATXN1 was cloned into a pET28a vector, generating an N-terminal His tag. The AXH domain was expressed in Escherichia coli BL21(DE3) and purified with an Ni-affinity column. The N-terminal His tag was cleaved by TEV protease (Life Technologies) and further purified with a Hitrap Q (GE Healthcare) anion exchange chromatography and with Superdex 75 (GE Healthcare) size exclusion chromatography (SEC). The CIC N-terminal fragment (amino acids 1\u2013117), wild-type or mutant (W37A), was cloned into a pGEX-4T-1 vector, generating a GST tag. The N-terminal CIC was expressed in Escherichia coli BL21(DE3) and purified in a GST-affinity column.\n\n### AXH oligomer formation\n\nAfter AXH purification, the buffer was exchanged by dialysis to 20 mM Tris\u2013HCl (pH 7.0), with 20 mM NaCl, 2 mM \u03b2-mercaphtoethanol and 0.01% (wt/vol) NaN3 and then concentrated to a final concentration of 0.3 mg/ml. The AXH solution was stirred at 37\u00b0C for 7 days. Aliquots were collected at different time points and stored at \u221280\u00b0C. To determine the effect of CIC in AXH oligomer formation, both peptides were mixed in a 1:1 molar ratio and stirred at 37\u00b0C for 7 days. Aliquots were also collected at different time points and stored at \u221280\u00b0C. All experiments were performed in triplicate.\n\n### AXH oligomer quantification\n\nFor AXH oligomers quantification, ELISA was performed as described above. Briefly, 10 \u03bcl of sample was coated overnight. The anti-oligomer antibody A-11 (1:1000) was utilized to detect oligomers and the anti-ATXN1 antibody 11750 (1:500) was used to quantify total AXH.\n\n### Thioflavin T assay\n\nThioflavin T (Sigma) binding was measured using a POLARstar OMEGA plate reader (BMG Labtechnologies, Melbourne, VIC, Australia) with 440-10 nm/520 nm excitation/emission filters set. 1 \u03bcl of 0.3 mg/ml of protein sample were mixed with 250 \u03bcl of 5 \u03bcM ThT, 50 mM glycine buffer (pH 8.5). Fluorescence intensity values of samples were obtained by subtraction of blank.\n\n### Hydrophobic interaction column\n\nOne ml of the sample was diluted 20 times in 1.7 M Ammonium Sulfate buffer and then loaded on to the Hydrophobic interaction column column (1 ml Phenyl Sepharose Fast Flow, low substitution, from GE) at 1 ml/min. Fractions were collected every 0.5 ml. An AKTA UPC 10 FPLC system from GE at 4\u00b0 was used for all chromatography steps.\n\n### Analysis of ATXN1 pathology\n\nTo determine the percentage of PCs with ATXN1 oligomers, 5 \u03bcm brain sections were stained with anti-calbindin antibody as described above to quantify the total number of PCs in the cerebellum. The number of PCs positive for calbindin was considered as 100%. The adjacent sections were immunostained for oligomers using F11G3 or A-11. For the quantification of nuclear inclusions, we stained ATXN1 using 11750 antibody and performed nuclear staining with hematoxylin. We considered the total amount of nucleus in the cortex as 100% of the nucleus. Data were analyzed using post-hoc test.\n\n### Antibody blocking experiment\n\nThe antibody F11G3 was preincubated for 40 min with A\u03b2 oligomers, IAPP oligomer, A\u03b2 monomers or IAPP monomers. After the incubation period, this antibody was used to perform double IF experiments with 11,750 in Atxn1154Q/+ mouse cerebellar sections.\n\n### Oligomers stability assay\n\nSEC fractions from Atxn1154Q/+ mouse cerebella were incubated up to 48 hr at 37\u00b0C. The presence of oligomers in each fraction at each time point was determined by dot-blot using F11G3 (1:1000).\n\n### Filter retardation assay\n\nA total of 50 \u03bcg of SEC fractions protein in 200 ml of 2% SDS was boiled for 5 min and run through a dot blot apparatus under a vacuum onto a cellulose acetate membrane. Membrane was then washed 3x with 0.1% SDS and then blocked in 5% milk and subject to western blot analysis using F11G3 (1:1000), OC (1:1000) and 11750 (1:8000).\n\n### Cell transfection\n\nMammalian expression vectors Myc-CiC/WT, Myc-CiC/W37A, GST-ATXN1(82Q) and GST-ATXN1(30Q) have been described previously (Lim et al., 2008; Kim et al., 2013). Hela cells were cultured in DMEM medium with 10% fetal bovine serum and were plated in six-well plates 1 day before transfection. On the day of transfection, corresponding DNA constructs were transfected with Lipofectamine 2000 (Invitrogen). In all cases 100 ng of GST-ATXN1(30Q) or GST-ATXN1(82Q) were used for transfection. For the CIC construct we transfected 0.5, 1, 2 or 3 \u03bcg. Two days later, cells were lysed for 20 min at 4\u00b0C in lysis buffer (150 mM NaCl, 50 mM Tris\u2013HCl at pH 7.5, 1 mM EDTA, 0.1% Triton X-100, 0.1% Tween-20, complete protease inhibitor cocktail [Roche, Switzerland], PhosSTOP phosphatase inhibitor cocktail [Roche]). After centrifugation, soluble fraction was used for western blot and ELISA measurements.\n\n### Immunoprecipitation\n\nLysis was performed on ice for 20 min with brief vortexing using in 0.5% Triton buffer (0.5% triton X-100, 50 mM Tris pH 8, 75 mM Nacl) supplemented with protease and phosphatase inhibitors (Sigma). Cell debris were removed by centrifugation (20 min, 15,000 r.p.m, 4\u00b0C) and pre-cleared with un-conjugated beads. In parallel, 2 \u03bcg of antibody was conjugated to Dynabeads for 1 hr at 4\u00b0C with rocking. Lysate was then added to the conjugated beads overnight at 4\u00b0C. Beads were then washed 5 \u00d7 500 \u03bcl of lysis buffer before being eluted using sample buffer and boiling for 10 min.\n\n### Statistical analysis\n\nData are represented as mean \u00b1 SEM. Different conditions were compared using one- or two-way ANOVA followed by the indicated post hoc test to compare controls with treatment groups and/or genotypes or by two-tailed Student's test, as appropriate.\n",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "2c83ea4d-892b-44c6-8f10-46b83ad1e9b3",
+      "submission_id": "dc9c9696-226a-4582-9533-bf06ab54dbcf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bart De Strooper, VIB Center for the Biology of Disease, KU Leuven , Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07558.024](https://doi.org/10.7554/eLife.07558.024)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \"A native interactor scaffolds and stabilizes toxic Ataxin-1 oligomers in SCA1\" for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a member of our Board of Reviewing Editors, and three reviewers. We add the individual reports which are all three very positive. No further experimental work seems needed and careful consideration of the different suggestions could help to improve the final version of the work.\n\nReviewer #1:\n\nI like this story about the toxicity of prefibrillar ATXN1 oligomers a lot. I think it convincingly shows, primarily using conformation specific antibodies, that the fraction of the polyQ expanded mutant protein that forms prefibrillar toxic oligomers depends on the level of a known interactor of native ATXN1. This model makes much sense for polyQ proteins since the expansion is likely to leave other domains natively folded\u2014the generality is of course unclear at this moment. The observations are important because they provide a way to understand the otherwise perplexing stereospecificity of the cytotoxcicity of aggregating proteins, which is one of the main outstanding questions in the field: why is the same aggregating protein toxic to some cells but not to others.\n\nThe work is well done and the manuscript is well written. My main concern regards the conformational antibody itself. I think the authors should discuss in the manuscript how F11G3 differs from the well-known A11. There are serious concerns about the variations in the properties of this antibody both batch to batch and between suppliers. Is F11G3 better behaved, or should readers worry about the same flaws (which come down to reproducibility issues)? I think in terms of the credibility of the story I would provide some more support for the robustness of this (to me) relatively new antibody.\n\nReviewer #2:\n\nThis is a very exciting and timely manuscript that both nicely builds on the authors\u2019 previous work and provides important new findings relating to protein propagation in CAG repeat diseases. The use of the antibody developed by Dr. Kayed is a strength. This has been a very active area of research over the last several years, having been shown for FTD, PD and other disorders and more recently in cells for HD. This is a very elegant study showing that Capicua, which was shown as critical to SCA1 previously by Zoghbi and Orr, is linked to formation of oligomers and seeding of aggregation. They convincingly show that oligomers correlate with disease progression in vivo in SCA1 transgenic mice using a multitude of assays. Any of these in isolation would be somewhat correlative, but taken together they build an extremely strong case. The data also provide support for the hypothesis that the protein interactions that drive the formation of these toxic oligomeric structures may explain some of the selectivity that drives disease in Purkinje cells.\n\nReviewer #3:\n\nThis manuscript is a thorough and wide-ranging study of the role of oligomers in SCA1, one of nine polyglutamine neurodegenerative disorders. The authors marshal an impressive range of methods and employ multiple mouse and cell models to ascertain the presence of disease protein oligomers in susceptible brain tissue/cells and explore interactions between such oligomers and a well-established disease protein interacting partner, Capicua (CIC1). There are many strengths to the paper. It serves as an important addition to the field of polyglutamine diseases specifically, and to neurodegenerative proteinopathies more generally. I have several small points of clarification and questions for the authors, but no truly major concerns.\n\nTwo points of moderate significance:\n\n1) The distinction of fibrillar from oligomeric inclusions, which is based in part on size, is not particularly well supported in the paper. It is a critical distinction for many of the authors' result and ultimate conclusion, and may benefit from additional description.\n\n2) The tight correlation between degree of motor dysfunction in SCA1 knock-in mice and levels of ATXN1 oligomers, while striking and intriguing, is likely heavily weighted toward the young mice and old mice which respectively show low and high levels of oligomers on average (these young and old mice presumably differ in many other respects as well). Ideally, though not essential for this paper, the authors would analyze a set of mice of the same, intermediate age with varying degree of motor dysfunction and determine whether, at this intermediate age, levels of oligomers indeed do correlate closely with degree of motor dysfunction.\n",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9c576f4c-d4cb-4311-bdfa-062546855289",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C1",
+      "claim": "Soluble oligomers drive pathogenesis in several neurodegenerative proteinopathies, including Alzheimer and Parkinson disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies indicate that soluble oligomers drive pathogenesis in several neurodegenerative proteinopathies, including Alzheimer and Parkinson disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "fb72646d-4bcd-4926-a6cb-5078b57f31c3",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C2",
+      "claim": "The same conformational antibody recognizes different disease-related oligomers despite variations in clinical presentation and brain regions affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, the same conformational antibody recognizes different disease-related oligomers, despite the variations in clinical presentation and brain regions affected, suggesting that the oligomer structure might be responsible for toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "1117a0df-c211-46c1-8f60-b6172abb5ea3",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C3",
+      "claim": "Mutant ATXN1 forms oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mutant ATXN1 does form oligomers and that oligomer levels correlate with disease progression in the Atxn1154Q/+ mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "eafcc6af-d362-4293-8671-dd4638a2abe8",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C4",
+      "claim": "Oligomer levels correlate with disease progression in the Atxn1154Q/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mutant ATXN1 does form oligomers and that oligomer levels correlate with disease progression in the Atxn1154Q/+ mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing correlation between oligomer levels and motor impairment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "3852708c-ca41-43b8-8d66-ecc793deb4f6",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C5",
+      "claim": "Oligomeric toxicity, stabilization and seeding require interaction with Capicua.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, oligomeric toxicity, stabilization and seeding require interaction with Capicua, which is expressed at greater ratios with respect to ATXN1 in the cerebellum than in less vulnerable brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "eb5bcc0d-e012-424d-88ec-18119feeda1e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C6",
+      "claim": "Capicua is expressed at greater ratios with respect to ATXN1 in the cerebellum than in less vulnerable brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, oligomeric toxicity, stabilization and seeding require interaction with Capicua, which is expressed at greater ratios with respect to ATXN1 in the cerebellum than in less vulnerable brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing CIC and ATXN1 levels in different brain regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "bddf0e82-e669-4408-a0bd-7b32d06ea859",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C7",
+      "claim": "Specific interactors, not merely oligomeric structure, drive pathogenesis and contribute to regional vulnerability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, specific interactors, not merely oligomeric structure, drive pathogenesis and contribute to regional vulnerability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings regarding CIC's role.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "1e08cb42-0a97-4cbd-95ac-822deb3dd08d",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C8",
+      "claim": "In Alzheimer disease, there are extracellular depositions of amyloid-\u03b2 (A\u03b2) plaques and intracellular accumulations of neurofibrillary tangles of tau.",
+      "claim_type": "EXPLICIT",
+      "source": "In Alzheimer disease (AD), for example, there are extracellular depositions of amyloid-\u03b2 (A\u03b2) plaques and intracellular accumulations of neurofibrillary tangles of tau (Glenner and Wong, 1984; Grundke-Iqbal et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "91afc93a-6891-49ed-9571-096ad117e56e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C9",
+      "claim": "In Parkinson disease, \u03b1-synuclein forms cytoplasmic inclusions known as Lewy bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in Parkinson disease (PD), \u03b1-synuclein forms cytoplasmic inclusions known as Lewy bodies (Lashuel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "7031d85d-8fcf-47a5-b302-10e4c3a86a3a",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C10",
+      "claim": "AD, PD, and other proteinopathies all involve the accumulation of \u03b2-sheet-rich entities.",
+      "claim_type": "EXPLICIT",
+      "source": "Although AD, PD, and other proteinopathies such as Huntington disease (HD) and the prion disorders are associated with different proteins possessing various structures, functions, and affecting different brain regions, they all involve the accumulation of \u03b2-sheet-rich entities, which suggests some commonality of pathogenic mechanism (Glabe and Kayed, 2006; Knowles et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "cb0fe5ea-e7ba-4b0b-bebe-62b7452638f6",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C11",
+      "claim": "SCA1 is caused by the expansion of a CAG repeat that encodes for glutamine (Q) in ATAXIN-1 (ATXN1).",
+      "claim_type": "EXPLICIT",
+      "source": "SCA1 is caused by the expansion of a CAG repeat that encodes for glutamine (Q) in ATAXIN-1 (ATXN1), a protein that is expressed throughout the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SCA1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "744535c2-d525-4941-b7ab-2f6f7016e71f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C12",
+      "claim": "ATXN1 is expressed throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "SCA1 is caused by the expansion of a CAG repeat that encodes for glutamine (Q) in ATAXIN-1 (ATXN1), a protein that is expressed throughout the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ATXN1 expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "374be395-d998-4cbb-aaba-ea865657aa93",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C13",
+      "claim": "The Atxn1 knockin mouse model faithfully reproduces the SCA1 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The Atxn1 knockin mouse model, which bears a 154 CAG repeat knocked into the murine Atxn1 locus, faithfully reproduces the SCA1 phenotype: progressive motor incoordination due to cerebellar degeneration, cognitive deficits, premature death, and degradation-resistant deposits (nuclear inclusions, or NIs) that contain mutant ATXN1 (Watase et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e1c118ef-ef62-4ab6-a686-2192d48918f7",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C14",
+      "claim": "Nuclear inclusions develop primarily in neurons that escape degeneration, not in the cerebellar Purkinje cells which are the first to succumb to SCA1 pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the NIs develop primarily in neurons that escape degeneration, not in the cerebellar Purkinje cells (PCs), which are the first to succumb to SCA1 pathology (Watase et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d096e610-4d39-4a52-9dc8-efa101f8dbf3",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C15",
+      "claim": "ATXN1-containing nuclear inclusions might serve a protective role by sequestering the mutant protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This curious observation led to the proposal that the ATXN1-containing NIs are not themselves toxic but rather might serve a protective role by sequestering the mutant protein (Cummings et al., 1998, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "f5eefec8-3319-48d7-88b6-96f431b92e9e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C16",
+      "claim": "The primary drivers of toxicity in proteinopathies may be metastable non-fibrillar species known as soluble oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent findings suggest a refinement to this hypothesis: it may be that the primary drivers of toxicity are metastable non-fibrillar species known as soluble oligomers (Glabe, 2008; Benilova et al., 2012; Krishnan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "f57e4baf-cced-4a4b-9111-c89b4e4c7cdc",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C17",
+      "claim": "Toxic oligomers have been identified in HD models and their modulation relates to beneficial outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although toxic oligomers have been identified in HD models and their modulation relates to beneficial outcomes (Legleiter et al., 2010; Sontag et al., 2012) their specific role in disease progression in vivo remains unstudied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "afe73bd9-f975-4ac3-b476-617c706310ed",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C18",
+      "claim": "The conformational monoclonal anti-oligomer antibody F11G3 can detect ATXN1 oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the conformational monoclonal anti-oligomer antibody F11G3 to detect ATXN1 oligomers in the Atxn1154Q/+ knockin mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9383951d-dd1c-4f5d-a506-2f426ece13ff",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C19",
+      "claim": "Oligomers were apparent in cerebellar extracts of Atxn1154Q/+ but not in wild-type or Atxn1\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomers were apparent in cerebellar extracts of Atxn1154Q/+ but not in wild-type or Atxn1\u2212/\u2212 mice (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "298558ca-41c8-4dc5-9c42-d3037c82e596",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C20",
+      "claim": "F11G3 is highly specific to an oligomeric conformation rather than an amino acidic sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The results verified that F11G3 is indeed highly specific to an oligomeric conformation rather than an amino acidic sequence (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pre-incubation experiments shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c8d430d8-822c-42d4-814c-d325ca2533a9",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C21",
+      "claim": "ATXN1 and oligomers show substantial co-localization in the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence (IF) against both ATXN1 and oligomers revealed substantial co-localization in the cerebellum (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "82bef158-eecb-4eee-8ce1-dac81634138d",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C22",
+      "claim": "Immunoprecipitation of oligomers from the Atxn1154Q/+ cerebellum confirmed that these metastable entities are formed by ATXN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of oligomers from the Atxn1154Q/+ cerebellum confirmed that these metastable entities are formed by ATXN1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoprecipitation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "1e68cfba-d6e3-486d-810a-39027c4aefef",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C23",
+      "claim": "ATXN1 oligomers have an average height of 6.8 +/\u2212 3.4 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic force microscopy (AFM) images show that these oligomers have an average height of 6.8 +/\u2212 3.4 nm (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AFM measurements shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "a2759b7e-3618-4011-80e7-e21f3568e2c7",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C24",
+      "claim": "ATXN1 oligomers accumulate in PC dendrites before dendritic degeneration is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Double staining using the Purkinje cell (PC) marker, calbindin (green) and F11G3 (red) revealed that ATXN1 oligomers accumulate in PC dendrites before dendritic degeneration is observed (top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "69ca1cee-c96f-49f5-b827-67e98de2bd93",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C25",
+      "claim": "With progression of dendritic degeneration, ATXN1 oligomers tend to accumulate in both the cytoplasm and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "With progression of dendritic degeneration, ATXN1 oligomers tend to accumulate in both the cytoplasm and nucleus (middle and bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "cbcfb91b-86fa-4ecf-b4e6-2a2bf3ef54fa",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C26",
+      "claim": "ATXN1 oligomers are more abundant in the cerebellum than in the cortex in Atxn1154Q/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots using F11G3 confirmed higher levels of ATXN1 oligomers in the cerebellum (Cer) than in the cortex (Cx) in the Atxn1154Q/+ mouse.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d40435d5-7597-46ac-a2ab-1399e5ab2446",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C27",
+      "claim": "ATXN1 oligomers are associated with neurons that are prone to degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "When we explored the regional localization of oligomeric forms of ATXN1, we found them associated with neurons that are prone to degeneration (e.g., PCs) but not those that are spared by the disease (e.g., cortical neurons; Figure 1F and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological data shown in Figure 1F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d3741234-6532-42bc-a192-661052a4aa5b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C28",
+      "claim": "The presence of ATXN1 oligomers in more susceptible neurons suggests that these soluble aggregates are important in the neuropathology of SCA1.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of ATXN1 oligomers in more susceptible neurons suggests that these soluble aggregates are important in the neuropathology of SCA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the regional distribution data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "4beff502-951a-4ea9-a293-bd3a6f4b6018",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C29",
+      "claim": "Motor incoordination in the rotarod assay becomes apparent in Atxn1154Q/+ mice as early as 5 weeks of age and worsens throughout their life span.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor incoordination in the rotarod assay becomes apparent in these mice as early as 5 weeks of age and worsens throughout their life span (Watase et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b6227d69-18c5-451e-8e8b-0544790adf59",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C30",
+      "claim": "The levels of different molecular weight oligomers in the cerebellum increased as the Atxn1154Q/+ mice aged.",
+      "claim_type": "EXPLICIT",
+      "source": "There was considerable variability among animals of the same age in both motor performance and oligomer abundance, but the levels of different molecular weight oligomers in the cerebellum clearly increased as the mice aged (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "37b725e6-86d9-42ed-9096-56b74be09370",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C31",
+      "claim": "There is a strong inverse correlation between latency to fall and the level of ATXN1 oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested each mouse on the rotarod and observed a consistently strong inverse correlation between latency to fall and the level of ATXN1 oligomers (Figure 2B), with oligomers over 245 KDa showing the greatest inverse correlation (R = 0.89).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "20e724cb-7d09-4950-a4e3-7984bd73fdbb",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C32",
+      "claim": "No significant changes in monomeric ATXN1 levels (2Q or 154Q) were observed in Atxn1154Q/+ mice at different ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no significant changes in monomeric ATXN1 levels (2Q or 154Q) were observed in these mice (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "472a682b-80d4-48ed-935f-6da94511e27f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C33",
+      "claim": "Oligomer levels correlated with disease progression as assessed by motor incoordination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, oligomer levels correlated with disease progression as assessed by motor incoordination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "20052498-8f56-4f27-9af4-8a3e1d03fd0a",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C34",
+      "claim": "ATXN1 oligomers are present in size exclusion chromatography fractions 10-12, ranging from 500 to 1000 KDa in size.",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyzed the SEC fractions with the anti-oligomer antibody, we observed oligomeric species mainly between fractions 10 and 12 (ranging from 500 to 1000 KDa in size; Figure 2C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC and Western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b99d003b-7c9f-4acb-b1d3-45e35d72970b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C35",
+      "claim": "Fraction 11 contains a peak in the signal of oligomers >245 KDa in weight, as well as lower molecular weight oligomeric species.",
+      "claim_type": "EXPLICIT",
+      "source": "Fraction 11 (\u223c667 KDa) contained a peak in the signal of oligomers >245 KDa in weight, as well as the presence of lower molecular weight oligomeric species (\u223c180, \u223c135, \u223c110 and \u223c98 KDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot analysis of SEC fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "bdc1cc36-30bc-4744-826b-3ded0df9b2fa",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C36",
+      "claim": "AFM revealed that fractions 11 and 12 detected by the anti-oligomer antibody were indeed oligomeric, whereas the higher molecular weight fractions were fibrillar in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "AFM revealed that those fractions detected by the anti-oligomer antibody (particularly fractions 11 and 12) were indeed oligomeric, whereas the higher molecular weight fractions were fibrillar in nature (fraction 7, \u223c4000KDa; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AFM data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d7589387-19d5-45ba-84ec-1607bc9411ca",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C37",
+      "claim": "Fraction 11 is highly hydrophobic, as is characteristic of many oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "A hydrophobic interaction column, which separates proteins according to hydrophobic domain exposure, showed that fraction 11 is highly hydrophobic, as is characteristic of many oligomers (Campioni et al., 2010) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by hydrophobic interaction column data shown in Figure 2\u2014figure supplement 2 and citation to literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "33e9905c-ce58-4984-9fae-7de3ef89172f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C38",
+      "claim": "ATXN1 oligomers in fractions 11 and 12 are highly stable, persisting for up to 48 hr at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "F11G3 showed a strong affinity for fractions 11 and 12 even after 48 hr of incubation, suggesting that these oligomers are highly stable (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by stability assay data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "cda3199b-3428-438e-875a-7779ccd6d52b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C39",
+      "claim": "Fraction 11 from Atxn1154Q/+ cerebellar samples is highly toxic to cultured cerebellar granular neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell viability measurement revealed fraction 11 to be highly toxic (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MTT assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "3551d249-709e-4376-ab42-5c4c9c0f1efb",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C40",
+      "claim": "The toxicity of fraction 11 was blocked when pre-incubated with the anti-oligomer antibody F11G3 or anti-ATXN1 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "This toxicity was blocked when fraction 11 was pre-incubated with the anti-oligomer antibody F11G3 or anti-ATXN1 antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MTT assay data with antibody blocking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c8234de4-e3b4-4f0b-9260-cbfd4787f6a7",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C41",
+      "claim": "The cellular damage was produced by an ATXN1-containing oligomeric complex present in SEC fraction 11.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular damage was thus produced by an ATXN1-containing oligomeric complex present in this SEC fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the toxicity and blocking experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "79075fe3-164c-4eb4-9331-5df7ba68b2dc",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C42",
+      "claim": "The ATXN1 oligomer complex from fraction 11 induces neurodegeneration, as evidenced by neuritic swelling and beading.",
+      "claim_type": "EXPLICIT",
+      "source": "IF staining of CGNs with the neuronal marker Tuj1 revealed that the ATXN1 oligomer complex from fraction 11-induced neurodegeneration, as evidenced by neuritic swelling and beading (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "50401e12-fd4a-48e0-bd1d-b62cd34d5ff6",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C43",
+      "claim": "The focal distribution of ATXN1 oligomers in the cerebellum coincides with cellular toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that this focal distribution coincided with cellular toxicity: cells with no detectable oligomers looked healthy, displaying many calbindin-positive PCs with extensive projections, while areas with abundant oligomers showed more diffuse calbindin staining and short dendrites (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "455e0c85-88b9-4c9b-ad68-6898833f3036",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C44",
+      "claim": "In AD and PD, proteins such as A\u03b2, tau or \u03b1-synuclein appear to 'seed' the accumulation of other neurotoxic proteins and promote neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that, in AD and PD, proteins such as A\u03b2, tau or \u03b1-synuclein appear to 'seed' the accumulation of other neurotoxic proteins and promote neurodegeneration (Clavaguera et al., 2009; Langer et al., 2011; Lasagna-Reeves et al., 2012; Rey et al., 2013), we sought to determine whether a similar mechanism operates in SCA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "0414fa19-cc26-4d0b-a03f-ad4af0d5e8e6",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C45",
+      "claim": "mRFP-ATXN1(82Q) cells form nuclear inclusions and oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells form nuclear inclusions, but their capacity to form oligomers had never been evaluated. We first established that these cells do form oligomers (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9ec27bf4-9995-4cec-b12f-065cf838990e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C46",
+      "claim": "The anti-oligomer antibody detected the smaller inclusion bodies (350\u2013900 nm) but did not recognize the larger inclusions (>900 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-oligomer antibody detected the smaller inclusion bodies (350\u2013900 nm) but did not recognize the larger inclusions (>900 nm), suggesting that these larger inclusions are more complex and composed of higher order aggregates, likely to be fibrillar in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from immunostaining experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "5777058d-e6a6-43c1-829c-89f5964d5c8f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C47",
+      "claim": "Cells exposed to fraction 11 or 12 developed the largest proportion of oligomeric inclusions compared to other fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells exposed to either fraction 11 or 12 developed the largest proportion of oligomeric inclusions (55% and 34%, respectively) in comparison with cells incubated with other fractions or the control group (18%) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-based seeding assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b760e427-c972-49ff-9dd0-fcbbbd041516",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C48",
+      "claim": "ATXN1 oligomeric complexes seed the formation of new oligomers but do not promote the formation of ATXN1 fibrillar material.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ATXN1 oligomeric complexes seed the formation of new oligomers but do not promote the formation of ATXN1 fibrillar material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the seeding assay results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b87cb97a-f6c1-4bc6-b12a-5675b7894dc9",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C49",
+      "claim": "No fibrillar or oligomeric inclusions were observed in mRFP-ATXN1(82Q, S776A) cells, regardless of the treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No fibrillar or oligomeric inclusions were observed in any of the mRFP-ATXN1(82Q, S776A) cells, regardless of the treatment (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the seeding assay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "a2ea67e2-c6a5-4d3a-9a38-f6f8c22b0c4a",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C50",
+      "claim": "ATXN1 oligomeric complexes act as a seed, but the cell needs to express an entity that is prone to aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "ATXN1 oligomeric complexes may thus act as a seed, but the cell needs to express an entity that is prone to aggregate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the negative results with S776A mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9fb624cf-6261-42a6-ba77-fad366d4b464",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C51",
+      "claim": "Exogenously added oligomers were internalized by mRFP-ATXN1(82Q) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-oligomer staining (green fluorescence) revealed several oligomeric complexes that lacked an mRFP signal, suggesting that exogenously added oligomers were internalized by the cell (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c714077b-0f18-41c5-8a86-66cd0452a387",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C52",
+      "claim": "Cells internalized exogenously added ATXN1 species.",
+      "claim_type": "EXPLICIT",
+      "source": "ATXN1 staining revealed that cells also internalized exogenously added ATXN1 species (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d701dc7c-fde0-469e-b8a9-43c5020dacb6",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C53",
+      "claim": "Cells treated with fraction 11 pre-incubated with the anti-oligomer or the anti-ATXN1 antibody blocked oligomer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells treated with fraction 11 pre-incubated with the anti-oligomer or the anti-ATXN1 antibody blocked oligomer formation (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by seeding assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "608053fb-ef2f-49e9-ac7a-b267083bc0fd",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C54",
+      "claim": "The ATXN1 oligomers present in fraction 11 are responsible for inducing the formation of new oligomeric inclusions in mRFP-ATXN1(82Q) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore the ATXN1 oligomers present in fraction 11 that are responsible for inducing the formation of new oligomeric inclusions in mRFP-ATXN1(82Q) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the blocking experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e0d6cb68-e944-4413-89c2-e302df6725b5",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C55",
+      "claim": "The anti-oligomer antibody blocks the internalization of exogenous ATXN1 oligomers rather than interacting directly with intracellular oligomeric species.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody thus appears to block the internalization of exogenous ATXN1 oligomers rather than interacting directly with intracellular oligomeric species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data showing extracellular antibody localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d0178625-8401-4d82-bcf2-a2ead3f61f5b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C56",
+      "claim": "CIC is the only known binding partner of ATXN1 whose protein levels are significantly reduced in Atxn1\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the transcriptional repressor CIC is of particular interest, because it is the only known binding partner whose protein levels are significantly reduced in Atxn1\u2212/\u2212 mice (Lee et al., 2011); its stability is thus dependent on being complexed with ATXN1 (Lam et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c20846ea-321f-4e6d-bfcd-1e0145b3fa54",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C57",
+      "claim": "PolyQ ATXN1 exerts toxicity through its native CIC-containing complex rather than through aberrant interactions with novel proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our lab has shown that polyQ ATXN1 exerts toxicity through its native CIC-containing complex rather than through aberrant interactions with novel proteins (Lam et al., 2006), and that reducing CIC levels by half rescues many SCA1-like phenotypes in Atxn1154Q/+ mice (Fryer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work from the authors' lab.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "0f36dfcf-a934-47e2-a906-664a6a39e66c",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C58",
+      "claim": "Reducing CIC levels by half rescues many SCA1-like phenotypes in Atxn1154Q/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our lab has shown that polyQ ATXN1 exerts toxicity through its native CIC-containing complex rather than through aberrant interactions with novel proteins (Lam et al., 2006), and that reducing CIC levels by half rescues many SCA1-like phenotypes in Atxn1154Q/+ mice (Fryer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work from the authors' lab.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c25c535c-efd2-42d1-a0ac-402986013ce5",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C59",
+      "claim": "CIC is detected in the same SEC fractions enriched with ATXN1 oligomer complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "When we performed SEC on cerebellar extracts from Atxn1154Q/+ mice, we detected CIC in the same fractions enriched with ATXN1 oligomer complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SEC and Western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "513a12c6-c518-4bcd-ab03-e84a0fbe3e58",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C60",
+      "claim": "SEC fractions lost their seeding capacity when pre-incubated with an anti-CIC antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "These fractions lost their seeding capacity when pre-incubated with an anti-CIC antibody (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by seeding assay data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "0d5023db-1694-4b1b-b8d1-0d52d0c3dd20",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C61",
+      "claim": "Atxn1154Q/+;CicL+/- mice have a significantly lower number of PCs positive for oligomers than Atxn1154Q/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated Atxn1154Q/+;CicL+/- mice that have a \u223c50% reduction of both isoforms of CIC (Cic-L and Cic-S) (Fryer et al., 2011) and observed a significantly lower number of PCs positive for oligomers in these mice (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pathological analysis shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "a8ada049-f871-4f0e-bd53-1b8da9f1d1e8",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C62",
+      "claim": "Western blot analyses confirmed lower levels of oligomers in the cerebellum of Atxn1154Q/+;CicL+/- mice than in Atxn1154Q/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was confirmed by western blot analyses on whole cerebellar extracts from these animals (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ddb5796c-88b3-450d-b56a-477e3538ead1",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C63",
+      "claim": "Decreasing the levels of CIC induced a shift of the ATXN1 complexes to a higher molecular weight fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, SEC on cerebellar extracts from Atxn1154Q/+;CicL+/- and Atxn1154Q/+ mice revealed that decreasing the levels of CIC induced a shift of the ATXN1 complexes to a higher molecular weight fraction detected by ATXN1 antibody (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c9544eb3-a9cd-41be-b07e-ce8eca8d33b7",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C64",
+      "claim": "The higher molecular weight complexes in Atxn1154Q/+;CicL+/- mice are not oligomeric.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these higher molecular weight complexes are not oligomeric: anti-oligomer antibody did not reveal any shift to the higher molecular weight fractions upon loss of Cic (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SEC data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e6b37e7e-7db6-4dd7-b215-12fe2f65c23a",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C65",
+      "claim": "In the context of reduced CIC levels, ATXN1 tends to form more organized fibrillar aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Probing the FRA membrane with anti-ATXN1 antibody revealed the presence of ATXN1 SDS-insoluble aggregates in fractions 7 and 8 in Atxn1154Q/+ mice. In the case of the Atxn1154Q/+;CicL+/- mice, ATXN1 SDS-insoluble aggregates were also present in fraction 9 (Figure 4\u2014figure supplement 3), confirming that in the context of reduced CIC levels, ATXN1 tends to form more organized fibrillar aggregates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by filter retardation assay data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "54a91634-3832-4aff-9a89-f50005d573d5",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C66",
+      "claim": "ATXN1 tends to form fibrillar oligomers, amorphous aggregates and/or fibrils when CIC levels are reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "ATXN1 thus tends to form fibrillar oligomers, amorphous aggregates and/or fibrils when CIC levels are reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FRA and OC antibody data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9bf5a342-69fd-4172-a4c7-8c90238f1e82",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C67",
+      "claim": "ATXN1 oligomers detected by F11G3 are soluble in 2% SDS and able to escape detection by FRA.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no oligomers using F11G3 in the FRA membranes; ATXN1 oligomers detected by F11G3 are therefore soluble in 2% SDS (Figure 4\u2014figure supplement 3) and able to escape detection by FRA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRA data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "72fd202f-3228-4e24-9a8a-d11f4a519361",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C68",
+      "claim": "Fractions 11 and 12 from the Atxn1154Q/+;CicL+/- mice were less proficient in inducing the formation of new oligomeric inclusions than those from the Atxn1154Q/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractions 11 and 12 from the Atxn1154Q/+;CicL+/- mice were less proficient in inducing the formation of new oligomeric inclusions than those from the Atxn1154Q/+ mice (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-based seeding assay data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e1a9745b-52d8-4bbd-b9b4-2a1fb119a6fb",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C69",
+      "claim": "Increasing amounts of CIC led to increasing levels of oligomers in cells transfected with ATXN1(82Q).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing amounts of CIC led to increasing levels of oligomers as measured with F11G3 (Figure 5A,B), but increasing amounts of mutant CIC/W37A produced no changes in the levels of ATXN1 oligomers in the cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "291c10d8-f333-4b2c-8016-7beb76a7448d",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C70",
+      "claim": "Increasing amounts of mutant CIC/W37A produced no changes in the levels of ATXN1 oligomers in cells transfected with ATXN1(82Q).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing amounts of CIC led to increasing levels of oligomers as measured with F11G3 (Figure 5A,B), but increasing amounts of mutant CIC/W37A produced no changes in the levels of ATXN1 oligomers in the cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "f14d2045-8620-493d-aeb5-7bfdfa160a16",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C71",
+      "claim": "Cells co-transfected with ATXN1(30Q) and increasing amounts of CIC had almost undetectable oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "When cells were co-transfected with ATXN1(30Q) and increasing amounts of CIC, oligomers were almost undetectable by western blot using F11G3 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ce39bbf0-4cc2-4543-87a9-414dc666e828",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C72",
+      "claim": "Cells transfected with nonpathogenic ATXN1(30Q) failed to produce oligomers, whether they were co-transfected with CIC, CIC/W37A, or not co-transfected at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells transfected with nonpathogenic ATXN1(30Q) failed to produce oligomers, whether they were co-transfected with CIC, CIC/W37A, or not co-transfected at all (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "bde66a0c-9ac7-4033-81ab-91351729da75",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C73",
+      "claim": "Cells transfected with N-terminal wild-type CIC developed many more oligomeric inclusions than those transfected with mutant CIC or controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells transfected with N-terminal wild-type CIC developed many more oligomeric inclusions than those transfected with mutant CIC or controls (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunocytochemistry data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "5ef29c65-ad76-4d5d-92c2-c2ec2e666503",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C74",
+      "claim": "When AXH peptide alone was stirred at 37\u00b0C, soluble oligomers formed in as little as 12 hr but were no longer detectable after 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "When the AXH peptide alone was stirred at 37\u00b0C, soluble oligomers formed in as little as 12 hr but were no longer detectable after 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ELISA data from in vitro aggregation kinetics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c30ba9b4-745b-4386-b72e-349db4786876",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C75",
+      "claim": "When AXH was mixed with CIC in a 1:1 molar ratio, oligomeric species were more abundant and persisted much longer, being detectable for up to 72 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "When AXH was mixed with CIC in a 1:1 molar ratio, however, oligomeric species were more abundant and persisted much longer, being detectable for up to 72 hr (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c84889f5-2fb4-4bf0-a905-4e1b6831d503",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C76",
+      "claim": "When AXH-CIC binding was blocked using CIC W37A, AXH oligomer kinetics resembled those of AXH alone.",
+      "claim_type": "EXPLICIT",
+      "source": "When we blocked AXH-CIC binding (using CIC W37A), AXH oligomer kinetics resembled those of AXH alone (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "f8148a83-5ab8-471b-a584-8ab97b2504dc",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C77",
+      "claim": "Wild-type CIC partially inhibits the formation of fibrillar oligomers, but mutant CIC does not.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISA using anti-fibrillar oligomer antibody OC shows that only wild type, not mutant, CIC partially inhibits the formation of fibrillar oligomers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "fa4c78eb-ff46-40ec-a948-b3ada34a1327",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C78",
+      "claim": "Wild-type but not mutant CIC blocks the formation of AXH fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "Thioflavin T assay demonstrated that wild-type but not mutant CIC blocks the formation of AXH fibrils.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Thioflavin T assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "433fa473-e31a-4fe5-87e4-6446a6da7bb3",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C79",
+      "claim": "CIC binding to ATXN1 promotes the formation of and stabilizes soluble prefibrillar oligomers and tends to divert ATXN1 from forming more mature and less toxic aggregates such as fibrillar oligomers and fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that CIC binding to ATXN1 promotes the formation of and stabilizes soluble prefibrillar oligomers and tends to divert ATXN1 from forming more mature and less toxic aggregates such as fibrillar oligomers and fibrils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the aggregation kinetics data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "95f09bf7-ea16-4520-a811-2349f64e912a",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C80",
+      "claim": "CIC not only promotes AXH oligomerization but also stabilizes the oligomers, retarding the kinetics of AXH aggregation to fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained from our aggregation kinetics assay suggested that CIC not only promotes AXH oligomerization but also stabilizes the oligomers, retarding the kinetics of AXH aggregation to fibrils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the aggregation kinetics experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ad428d2f-1382-4a54-a4bf-7473c4d969fd",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C81",
+      "claim": "CIC levels are higher in the cerebellum than in the cortex of wild type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the levels of ATXN1 and CIC in the cerebellum and cortex of wild type mice and found that, under these physiological conditions, CIC levels are higher in the cerebellum than in the cortex, but ATXN1 levels are lower (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "4bffa6fd-4f49-4e63-8c34-08ff64b2b325",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C82",
+      "claim": "ATXN1 levels are lower in the cerebellum than in the cortex of wild type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the levels of ATXN1 and CIC in the cerebellum and cortex of wild type mice and found that, under these physiological conditions, CIC levels are higher in the cerebellum than in the cortex, but ATXN1 levels are lower (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ab740616-d763-4c00-b519-aa20496dcc81",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C83",
+      "claim": "The amount of CIC available relative to ATXN1 is considerably higher in the cerebellum than in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of CIC available relative to ATXN1 is thus considerably higher in the cerebellum than in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Western blot data comparing CIC and ATXN1 levels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "887b0dd8-9656-41d6-a7d8-4aac619c9a09",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C84",
+      "claim": "In brain regions containing high levels of CIC in relation to ATXN1 (such as the cerebellum), CIC stabilizes ATXN1 in its oligomeric conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that in brain regions containing high levels of CIC in relation to ATXN1 (such as the cerebellum), CIC stabilizes ATXN1 in its oligomeric conformation, but where the ratio of CIC to ATXN1 is lower, ATXN1 is not stabilized in its oligomeric confirmation and continues its process of forming non-toxic NIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the regional CIC/ATXN1 ratio data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b132dedd-7b08-4164-9b81-22948b469ef1",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C85",
+      "claim": "Where the ratio of CIC to ATXN1 is lower, ATXN1 is not stabilized in its oligomeric confirmation and continues its process of forming non-toxic NIs.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that in brain regions containing high levels of CIC in relation to ATXN1 (such as the cerebellum), CIC stabilizes ATXN1 in its oligomeric conformation, but where the ratio of CIC to ATXN1 is lower, ATXN1 is not stabilized in its oligomeric confirmation and continues its process of forming non-toxic NIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the regional CIC/ATXN1 ratio data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "6308a63c-3980-443f-bded-6221e6e5ebc5",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C86",
+      "claim": "Structurally related oligomers are toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "An overwhelming number of studies have shown that structurally related oligomers are toxic (Chiti and Dobson, 2006) and that the soluble rather than the fibrillar mutant protein is associated with a toxic gain of function (Saunders and Bottomley, 2009; Zoghbi and Orr, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "79c5f1a9-8c68-41e9-bc6c-8c72834fea91",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C87",
+      "claim": "The soluble rather than the fibrillar mutant protein is associated with a toxic gain of function.",
+      "claim_type": "EXPLICIT",
+      "source": "An overwhelming number of studies have shown that structurally related oligomers are toxic (Chiti and Dobson, 2006) and that the soluble rather than the fibrillar mutant protein is associated with a toxic gain of function (Saunders and Bottomley, 2009; Zoghbi and Orr, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "2700682a-0533-4343-bc08-cf70ca534f5e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C88",
+      "claim": "Oligomers have been specifically associated with Alzheimer disease, Parkinson disease, and frontotemporal dementia.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomers have been specifically associated with Alzheimer disease, Parkinson disease, and frontotemporal dementia, and it has been proposed that the disease pathology could be caused solely by soluble toxic entities of A\u03b2, \u03b1-synuclein or tau, respectively (Lesne et al., 2006; Berger et al., 2007; Shankar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b4e7f381-9fff-4fff-944f-0f8410fc296c",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C89",
+      "claim": "The disease pathology in AD, PD, and frontotemporal dementia could be caused solely by soluble toxic entities of A\u03b2, \u03b1-synuclein or tau, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomers have been specifically associated with Alzheimer disease, Parkinson disease, and frontotemporal dementia, and it has been proposed that the disease pathology could be caused solely by soluble toxic entities of A\u03b2, \u03b1-synuclein or tau, respectively (Lesne et al., 2006; Berger et al., 2007; Shankar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "4bcf75a8-c0db-493d-87ba-ded51bd4d25f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C90",
+      "claim": "PolyQ ATXN1 adopts an oligomeric conformation and this conformation is pathogenic in cellular and animal models of SCA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have demonstrated not only that polyQ ATXN1 adopts an oligomeric conformation and that this conformation is pathogenic in cellular and animal models of SCA1, but that the native binding partner of ATXN1, CIC, is essential for the stabilization of oligomeric polyQ ATXN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "1855ac20-05d6-44d0-bd6e-8d331973e8f2",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C91",
+      "claim": "The native binding partner of ATXN1, CIC, is essential for the stabilization of oligomeric polyQ ATXN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have demonstrated not only that polyQ ATXN1 adopts an oligomeric conformation and that this conformation is pathogenic in cellular and animal models of SCA1, but that the native binding partner of ATXN1, CIC, is essential for the stabilization of oligomeric polyQ ATXN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "27e98ebd-94b7-491f-9ce4-a5367c24a317",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C92",
+      "claim": "Regions that develop insoluble nuclear inclusions tend to escape SCA1 pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been particularly perplexing that regions that develop insoluble nuclear inclusions, which were long thought to be toxic, tend to escape SCA1 pathology (Watase et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from previous literature supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e50ab88f-dacb-4e26-82ec-3e40c5c407a0",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C93",
+      "claim": "CIC stabilizes toxic oligomers and exists in a particularly high ratio with respect to ATXN1 in cerebellar neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from the current study provide insight into how CIC modulates pathogenesis and why it is particularly toxic in the cerebellum: CIC stabilizes toxic oligomers and exists in a particularly high ratio with respect to ATXN1 in cerebellar neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "c89e6a03-6f09-4a76-a4d5-96759baca213",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C94",
+      "claim": "In the SCA1 knockin mice, the abundance of oligomers correlated directly with behavioral deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCA1 knockin mice, the abundance of these oligomers correlated directly with behavioral deficits; without CIC, in vitro and in vivo, ATXN1 oligomers continue on the aggregation pathway and co-assemble into less-toxic fibrillar oligomers, amorphous aggregates and/or fibrils (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e66b8a1b-9f3f-4571-b242-b19ef2c0ee3d",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C95",
+      "claim": "Without CIC, in vitro and in vivo, ATXN1 oligomers continue on the aggregation pathway and co-assemble into less-toxic fibrillar oligomers, amorphous aggregates and/or fibrils.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCA1 knockin mice, the abundance of these oligomers correlated directly with behavioral deficits; without CIC, in vitro and in vivo, ATXN1 oligomers continue on the aggregation pathway and co-assemble into less-toxic fibrillar oligomers, amorphous aggregates and/or fibrils (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "70420b4b-9a04-40ee-ac39-b8aacdb27191",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C96",
+      "claim": "SCA1 is triggered not just by a conformational change in ATXN1 but by interactions with a specific partner in a specific brain region that brings about oligomerization and stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "SCA1 is therefore triggered not just by a conformational change in ATXN1 but by interactions with a specific partner in a specific brain region that brings about oligomerization and stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "aee5f9e1-372e-4401-8ee2-ab8f5520f332",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C97",
+      "claim": "The partner not only has to be present, but its levels have to be high enough to stabilize a considerable proportion of ATXN1 oligomers in order to drive pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The partner not only has to be present, but its levels have to be high enough to stabilize a considerable proportion of ATXN1 oligomers in order to drive pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings regarding CIC levels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "1e6b1e2d-d07f-4884-b4ab-312312a0072b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C98",
+      "claim": "The physiological cellular environment will prove to be the determining factor in promoting and stabilizing the respective pathological proteins in their toxic conformations in other polyglutamine diseases and proteinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems likely that the physiological cellular environment will prove to be the determining factor in promoting and stabilizing the respective pathological proteins in their toxic conformations in other polyglutamine diseases and proteinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ae0000b6-845a-429c-aa7a-f61c0e9b9b2e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C99",
+      "claim": "CIC dimers form a heterotetramer with ATXN1 dimers by hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Amyloid oligomers are characterized by hydrophobic domains; ATXN1 dimers form a heterotetramer with CIC dimers by hydrophobic interactions (Bemporad and Chiti, 2012; Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "70c5fada-9dba-4029-8abd-0d4c27fad3ed",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C100",
+      "claim": "CIC interacts with oligomeric polyglutamine-expanded ATXN1 dimers through the exposed hydrophobic domains, which in turn stabilizes the complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this, we propose that CIC interacts with oligomeric polyglutamine-expanded ATXN1 dimers through the exposed hydrophobic domains, which in turn stabilizes the complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "87608b02-d100-4361-9f70-794765cebb05",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C101",
+      "claim": "CIC does not discern between a nonpathogenic wild type ATXN1 dimer and a pathologically expanded ATXN1 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, CIC\u2014a native ATXN1 interactor\u2014does not discern between a nonpathogenic wild type ATXN1 dimer and a pathologically expanded ATXN1 dimer, and interacts with either; it simply binds to ATXN1 to form a functional transcriptional repressor complex or a dysfunctional oligomeric complex, depending on the polyglutamine tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "4ae188ff-6c8c-4eac-8a00-ada923e42492",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C102",
+      "claim": "The length of the polyQ tract is essential to the accumulation, aggregation and oligomerization of ATXN1.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the polyQ tract is essential to the accumulation, aggregation and oligomerization of ATXN1, as has been postulated for other polyglutamine diseases (Legleiter et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to literature and the study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "3dea515e-99e8-4d18-be35-de218f095478",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C103",
+      "claim": "CIC stabilizes ATXN1 oligomers independent of the polyQ tract length.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that CIC interacts with ATXN1 regardless of polyQ expansion (Lam et al., 2006) and that CIC stabilizes AXH oligomers, we believe that CIC stabilizes ATXN1 oligomers independent of the polyQ tract length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "7655b82f-f73a-43f9-9385-a6fbdafb3900",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C104",
+      "claim": "A polyglutamine expansion is necessary to initiate the oligomerization process under physiological conditions, in the context of the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a polyglutamine expansion is necessary to initiate the oligomerization process under physiological conditions, in the context of the full-length protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e91097b0-5540-4e43-a09b-048e22882efb",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C105",
+      "claim": "This is the first evidence that a native interactor of a toxic protein can stabilize its oligomeric form to promote its bioavailability and downstream toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first evidence that a native interactor of a toxic protein can stabilize its oligomeric form to promote its bioavailability and downstream toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study's findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "858b508d-3b88-4175-b42c-1a9e642a1c7e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C106",
+      "claim": "ATXN1 oligomeric complexes were able to penetrate cells and seed the formation of new ATXN1 oligomers without forming fibrillar inclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ATXN1 oligomeric complexes were able to penetrate cells and seed the formation of new ATXN1 oligomers without forming fibrillar inclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "a2c9ce15-965b-4acc-97d2-0a06cad97d2b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C107",
+      "claim": "The addition of monomers to the ends of oligomers is kinetically more favorable than the assembly of oligomers into fibrils via sheet stacking interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by the addition of monomers to the ends of oligomers, which is kinetically more favorable than the assembly of oligomers into fibrils via sheet stacking interactions (Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation supported by citation to literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9e099ee6-6ec1-49d8-a32a-ea64b0a320bf",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C108",
+      "claim": "Neuropathological features of a specific disease are determined by both transient and stable native protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Without ruling out the role of non-native interactors in protein aggregation, we propose that neuropathological features of a specific disease are determined by both transient and stable native protein interactions and that these interactions in turn affect the amyloidogenic properties of the disease-associated protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9451331a-2dd7-4153-a904-e2cdea7bc338",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "claim_id": "C109",
+      "claim": "Blocking certain interactions that mediate the formation or stabilization of oligomeric toxic entities, or modulating the downstream effects of such interactions, could be an attractive treatment option for proteinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, blocking certain interactions that mediate the formation or stabilization of oligomeric toxic entities, or modulating the downstream effects of such interactions, could be an attractive treatment option for this class of diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a therapeutic implication drawn from the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mutant ATXN1 forms oligomers detectable by the conformational antibody F11G3 in Atxn1154Q/+ mice. These oligomers are specific to the oligomeric conformation, co-localize with ATXN1, and have an average height of 6.8 \u00b1 3.4 nm as measured by AFM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C23 provide converging evidence from multiple techniques (Western blot, immunofluorescence, immunoprecipitation, AFM) demonstrating that mutant ATXN1 forms oligomers. The antibody specificity is validated (C20), and the oligomers are biochemically and structurally characterized with appropriate controls (wild-type and Atxn1\u2212/\u2212 mice).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "50832d3e-6212-4630-84b1-922eac3b3abc",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ATXN1 oligomer levels correlate with disease progression in Atxn1154Q/+ mice. Oligomer abundance increases with age and shows a strong inverse correlation with motor performance (R=0.89 for >245 KDa oligomers), while monomeric ATXN1 levels remain unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30-C33 demonstrate a robust correlation between oligomer levels and disease phenotype using longitudinal analysis and behavioral testing. The correlation coefficient (R=0.89) is strong, and the control showing no change in monomeric ATXN1 (C32) strengthens the specificity of the oligomer-disease relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "909d6df3-ef8b-41f0-96fa-34f5a20a2163",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ATXN1 oligomers accumulate in vulnerable neurons (Purkinje cells) before and during degeneration, with higher levels in the cerebellum than cortex, suggesting their importance in SCA1 neuropathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide histological and biochemical evidence linking oligomer distribution to regional vulnerability. The temporal relationship (oligomers precede degeneration, C24) and regional specificity (cerebellum > cortex, C26-C27) support the pathological relevance, though the inference of causality (C28) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "afcb6573-c522-481d-b804-f2112720c954",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ATXN1 oligomers in SEC fractions 11-12 (500-1000 KDa) are oligomeric by AFM, highly hydrophobic, and stable for up to 48 hours at 37\u00b0C, distinguishing them from fibrillar aggregates in higher molecular weight fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 characterize oligomers using orthogonal methods (SEC, AFM, hydrophobic interaction chromatography, stability assays). The data consistently identify fractions 11-12 as containing stable, hydrophobic oligomers distinct from fibrils, providing strong biochemical characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "8e2c8d5e-6b19-454d-8ad4-aa346840615a",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SEC fraction 11 containing ATXN1 oligomers is toxic to cultured cerebellar granular neurons, inducing cell death and neurodegeneration. This toxicity is blocked by pre-incubation with anti-oligomer or anti-ATXN1 antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 demonstrate oligomer toxicity using cell viability assays (MTT) and morphological markers (neuritic beading). The antibody blocking experiments (C40) provide specificity, confirming that ATXN1-containing oligomers are responsible for the observed toxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "56b98196-625f-4bf1-bdad-9acb664f1072",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ATXN1 oligomeric complexes from fraction 11 seed the formation of new oligomers in mRFP-ATXN1(82Q) cells through internalization, but do not promote fibrillar inclusions. Seeding requires cells to express aggregation-prone ATXN1 and is blocked by anti-oligomer or anti-ATXN1 antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C55 demonstrate prion-like seeding using a cell-based assay with appropriate controls (S776A mutant, C49; antibody blocking, C53). The evidence for internalization (C51-C52) and specificity (C54-C55) is strong, though the mechanism of internalization is not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "68383fb6-88ff-483a-bbd2-37763c633360",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CIC is essential for ATXN1 oligomer stabilization and seeding. Reducing CIC levels by 50% in Atxn1154Q/+;CicL+/- mice decreases oligomer abundance and shifts ATXN1 toward forming fibrillar aggregates instead of toxic soluble oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C59-C68 provide genetic, biochemical, and functional evidence for CIC's role in oligomer stabilization. The CicL+/- mouse model shows reduced oligomers (C61-C62), altered aggregation state (C63-C66), and decreased seeding capacity (C68), supporting CIC's critical role in maintaining toxic oligomeric species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "d35d976e-6890-48cb-ae66-5ee0bec19833",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In cell culture, increasing CIC levels dose-dependently increases ATXN1(82Q) oligomers, but not ATXN1(30Q) oligomers. This effect requires CIC-ATXN1 binding, as the W37A mutant that cannot bind ATXN1 has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 demonstrate CIC's role in oligomerization using dose-response experiments with appropriate controls (W37A mutant, C70; non-pathogenic 30Q, C71-C72). The polyQ-length dependence (C71-C72) and binding requirement (C70) strengthen the mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "b9e05831-b62e-4732-8616-2e806a7944cb",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vitro, CIC stabilizes AXH oligomers and prolongs their persistence (up to 72 hours vs 48 hours alone), while inhibiting formation of fibrillar oligomers and fibrils. This effect requires CIC-ATXN1 binding (blocked by W37A mutation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 provide in vitro kinetic evidence using multiple detection methods (A-11 for prefibrillar oligomers, OC for fibrillar oligomers, Thioflavin T for fibrils). The time-course data and W37A control (C76) demonstrate that CIC specifically stabilizes toxic prefibrillar oligomers while preventing progression to less toxic forms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The CIC/ATXN1 ratio is significantly higher in the cerebellum than cortex in wild-type mice, explaining regional vulnerability. High CIC levels stabilize ATXN1 in toxic oligomeric conformations, while lower ratios allow progression to non-toxic nuclear inclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C81-C85 provide a mechanistic explanation for regional vulnerability based on protein expression ratios. The Western blot data (C81-C82) quantitatively demonstrate differential expression, and the interpretation (C84-C85) is consistent with all other findings, though the causal relationship is inferred rather than directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "f191d7c8-f29d-4541-9343-d7d95801cf55",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Specific protein interactors (CIC), not merely oligomeric structure, drive SCA1 pathogenesis and regional vulnerability. The interactor must be present at sufficient levels to stabilize toxic oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C93, C96-C97 represent the central conclusion integrating all findings. The evidence from genetic manipulation (CicL+/- mice), regional expression patterns, and in vitro studies collectively support that CIC is necessary and sufficient (at appropriate levels) for maintaining toxic oligomers, distinguishing this from generic oligomer toxicity models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "467cc582-6b82-4b72-a80a-4e15b100474b",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The focal distribution of ATXN1 oligomers in the cerebellum coincides with cellular toxicity, with oligomer-rich areas showing PC degeneration and oligomer-free areas showing healthy PCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by histological analysis showing spatial correlation between oligomer presence and cellular pathology. However, this is correlative evidence and does not definitively establish causation, though it is consistent with the toxicity demonstrated in other experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "42bc213b-288e-4aeb-8932-1d24bce43b95",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PolyQ ATXN1 adopts a pathogenic oligomeric conformation in SCA1 models, and CIC is essential for stabilizing these oligomers. Without CIC, oligomers progress to less-toxic fibrillar forms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91, C94-C95 summarize the study's main findings. These are well-supported by the collective evidence from multiple experimental approaches (in vivo, in vitro, cell culture), though they represent summary statements rather than new results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "5ecb0524-2f5e-4190-88f4-af53cfd1e53d",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CIC interacts with oligomeric polyQ-expanded ATXN1 through exposed hydrophobic domains, stabilizing the complexes. CIC does not distinguish between wild-type and pathogenic ATXN1, but polyQ expansion is necessary to initiate oligomerization under physiological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C101, C103-C104 propose a molecular mechanism, but this is largely speculative (C100 is explicitly labeled as a proposal). While consistent with the data (hydrophobicity of oligomers, CIC binding to both WT and mutant ATXN1), direct structural evidence for the proposed interaction mechanism is lacking. The polyQ requirement (C104) is better supported by the 30Q vs 82Q experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ad98c706-2794-4c21-bd69-3b1ae84b317e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The length of the polyQ tract is essential to ATXN1 accumulation, aggregation, and oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 is supported by the 30Q vs 82Q experiments (C71-C72) showing polyQ-length dependence of oligomerization, consistent with established knowledge in polyglutamine diseases. This is well-established in the field and confirmed by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "e678b736-bb21-45a1-90ec-de782883408f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "This is the first evidence that a native interactor can stabilize a toxic protein's oligomeric form to promote toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C105 makes a priority claim about novelty. While the findings are novel and important, assessing whether this is truly the 'first' such evidence requires comprehensive knowledge of the entire literature, which cannot be definitively verified from the manuscript alone. The claim may be accurate but is inherently difficult to evaluate with certainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "8024a67d-286f-434d-b83a-c8b16c9cad1e",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ATXN1 oligomeric complexes penetrate cells and seed new oligomers without forming fibrils, possibly through monomer addition to oligomer ends rather than oligomer-oligomer assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is well-supported by the seeding experiments (C47-C54). Claim C107 proposes a kinetic explanation based on literature, which is plausible but not directly tested in this study. The seeding mechanism is demonstrated but not fully elucidated at the molecular level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "02882612-e5d5-4249-b754-f7070fe56ba0",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The physiological cellular environment (native protein interactions) likely determines toxic protein conformations in other proteinopathies. Blocking interactions that stabilize toxic oligomers could be therapeutic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98, C108-C109 extrapolate the SCA1 findings to other diseases and propose therapeutic implications. While the SCA1 data are strong, these are speculative extensions that require validation in other disease contexts. The therapeutic proposal (C109) is reasonable but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims about proteinopathies, oligomer toxicity, SCA1 genetics, and prior work on CIC's role in SCA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C17, C44, C56-C58, C86-C89, C92 represent background knowledge and prior work, supported by appropriate citations. These establish context but are not new findings from this study. The citations appear appropriate and the background claims are consistent with established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "bd8e0788-bf7f-4341-b5ca-cf0a02c1ce42",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Methodological claims about using F11G3 antibody to detect oligomers and the progressive motor phenotype in Atxn1154Q/+ mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C29 describe established methods and model characteristics. C18 is validated by the specificity experiments (C20), and C29 is supported by citation to prior characterization of the mouse model. These are methodological foundations rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    },
+    {
+      "id": "ebcb0858-da7d-4f52-8b08-339048815161",
+      "content_id": "69b00a7f-24b5-4fd1-bdf8-1ea051f39f12",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "ATXN1 dimers form heterotetramers with CIC dimers through hydrophobic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is supported by citations to structural studies. This represents prior knowledge about the ATXN1-CIC complex structure rather than a new finding, though it provides important context for interpreting the oligomerization mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:59:03.545797Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1117a0df-c211-46c1-8f60-b6172abb5ea3",
+      "result_id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0"
+    },
+    {
+      "claim_id": "9383951d-dd1c-4f5d-a506-2f426ece13ff",
+      "result_id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0"
+    },
+    {
+      "claim_id": "298558ca-41c8-4dc5-9c42-d3037c82e596",
+      "result_id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0"
+    },
+    {
+      "claim_id": "c8d430d8-822c-42d4-814c-d325ca2533a9",
+      "result_id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0"
+    },
+    {
+      "claim_id": "82bef158-eecb-4eee-8ce1-dac81634138d",
+      "result_id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0"
+    },
+    {
+      "claim_id": "1e68cfba-d6e3-486d-810a-39027c4aefef",
+      "result_id": "2ce96bdd-aefd-40f9-bacd-1acb4810e2c0"
+    },
+    {
+      "claim_id": "eafcc6af-d362-4293-8671-dd4638a2abe8",
+      "result_id": "50832d3e-6212-4630-84b1-922eac3b3abc"
+    },
+    {
+      "claim_id": "b6227d69-18c5-451e-8e8b-0544790adf59",
+      "result_id": "50832d3e-6212-4630-84b1-922eac3b3abc"
+    },
+    {
+      "claim_id": "37b725e6-86d9-42ed-9096-56b74be09370",
+      "result_id": "50832d3e-6212-4630-84b1-922eac3b3abc"
+    },
+    {
+      "claim_id": "20e724cb-7d09-4950-a4e3-7984bd73fdbb",
+      "result_id": "50832d3e-6212-4630-84b1-922eac3b3abc"
+    },
+    {
+      "claim_id": "472a682b-80d4-48ed-935f-6da94511e27f",
+      "result_id": "50832d3e-6212-4630-84b1-922eac3b3abc"
+    },
+    {
+      "claim_id": "a2759b7e-3618-4011-80e7-e21f3568e2c7",
+      "result_id": "909d6df3-ef8b-41f0-96fa-34f5a20a2163"
+    },
+    {
+      "claim_id": "69ca1cee-c96f-49f5-b827-67e98de2bd93",
+      "result_id": "909d6df3-ef8b-41f0-96fa-34f5a20a2163"
+    },
+    {
+      "claim_id": "cbcfb91b-86fa-4ecf-b4e6-2a2bf3ef54fa",
+      "result_id": "909d6df3-ef8b-41f0-96fa-34f5a20a2163"
+    },
+    {
+      "claim_id": "d40435d5-7597-46ac-a2ab-1399e5ab2446",
+      "result_id": "909d6df3-ef8b-41f0-96fa-34f5a20a2163"
+    },
+    {
+      "claim_id": "d3741234-6532-42bc-a192-661052a4aa5b",
+      "result_id": "909d6df3-ef8b-41f0-96fa-34f5a20a2163"
+    },
+    {
+      "claim_id": "20052498-8f56-4f27-9af4-8a3e1d03fd0a",
+      "result_id": "afcb6573-c522-481d-b804-f2112720c954"
+    },
+    {
+      "claim_id": "b99d003b-7c9f-4acb-b1d3-45e35d72970b",
+      "result_id": "afcb6573-c522-481d-b804-f2112720c954"
+    },
+    {
+      "claim_id": "bdc1cc36-30bc-4744-826b-3ded0df9b2fa",
+      "result_id": "afcb6573-c522-481d-b804-f2112720c954"
+    },
+    {
+      "claim_id": "d7589387-19d5-45ba-84ec-1607bc9411ca",
+      "result_id": "afcb6573-c522-481d-b804-f2112720c954"
+    },
+    {
+      "claim_id": "33e9905c-ce58-4984-9fae-7de3ef89172f",
+      "result_id": "afcb6573-c522-481d-b804-f2112720c954"
+    },
+    {
+      "claim_id": "cda3199b-3428-438e-875a-7779ccd6d52b",
+      "result_id": "8e2c8d5e-6b19-454d-8ad4-aa346840615a"
+    },
+    {
+      "claim_id": "3551d249-709e-4376-ab42-5c4c9c0f1efb",
+      "result_id": "8e2c8d5e-6b19-454d-8ad4-aa346840615a"
+    },
+    {
+      "claim_id": "c8234de4-e3b4-4f0b-9260-cbfd4787f6a7",
+      "result_id": "8e2c8d5e-6b19-454d-8ad4-aa346840615a"
+    },
+    {
+      "claim_id": "79075fe3-164c-4eb4-9331-5df7ba68b2dc",
+      "result_id": "8e2c8d5e-6b19-454d-8ad4-aa346840615a"
+    },
+    {
+      "claim_id": "0414fa19-cc26-4d0b-a03f-ad4af0d5e8e6",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "9ec27bf4-9995-4cec-b12f-065cf838990e",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "5777058d-e6a6-43c1-829c-89f5964d5c8f",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "b760e427-c972-49ff-9dd0-fcbbbd041516",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "b87cb97a-f6c1-4bc6-b12a-5675b7894dc9",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "a2ea67e2-c6a5-4d3a-9a38-f6f8c22b0c4a",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "9fb624cf-6261-42a6-ba77-fad366d4b464",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "c714077b-0f18-41c5-8a86-66cd0452a387",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "d701dc7c-fde0-469e-b8a9-43c5020dacb6",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "608053fb-ef2f-49e9-ac7a-b267083bc0fd",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "e0d6cb68-e944-4413-89c2-e302df6725b5",
+      "result_id": "56b98196-625f-4bf1-bdad-9acb664f1072"
+    },
+    {
+      "claim_id": "3852708c-ca41-43b8-8d66-ecc793deb4f6",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "c25c535c-efd2-42d1-a0ac-402986013ce5",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "513a12c6-c518-4bcd-ab03-e84a0fbe3e58",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "0d5023db-1694-4b1b-b8d1-0d52d0c3dd20",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "a8ada049-f871-4f0e-bd53-1b8da9f1d1e8",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "ddb5796c-88b3-450d-b56a-477e3538ead1",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "c9544eb3-a9cd-41be-b07e-ce8eca8d33b7",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "e6b37e7e-7db6-4dd7-b215-12fe2f65c23a",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "54a91634-3832-4aff-9a89-f50005d573d5",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "9bf5a342-69fd-4172-a4c7-8c90238f1e82",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "72fd202f-3228-4e24-9a8a-d11f4a519361",
+      "result_id": "68383fb6-88ff-483a-bbd2-37763c633360"
+    },
+    {
+      "claim_id": "e1a9745b-52d8-4bbd-b9b4-2a1fb119a6fb",
+      "result_id": "d35d976e-6890-48cb-ae66-5ee0bec19833"
+    },
+    {
+      "claim_id": "291c10d8-f333-4b2c-8016-7beb76a7448d",
+      "result_id": "d35d976e-6890-48cb-ae66-5ee0bec19833"
+    },
+    {
+      "claim_id": "f14d2045-8620-493d-aeb5-7bfdfa160a16",
+      "result_id": "d35d976e-6890-48cb-ae66-5ee0bec19833"
+    },
+    {
+      "claim_id": "ce39bbf0-4cc2-4543-87a9-414dc666e828",
+      "result_id": "d35d976e-6890-48cb-ae66-5ee0bec19833"
+    },
+    {
+      "claim_id": "bde66a0c-9ac7-4033-81ab-91351729da75",
+      "result_id": "d35d976e-6890-48cb-ae66-5ee0bec19833"
+    },
+    {
+      "claim_id": "5ef29c65-ad76-4d5d-92c2-c2ec2e666503",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "c30ba9b4-745b-4386-b72e-349db4786876",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "c84889f5-2fb4-4bf0-a905-4e1b6831d503",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "f8148a83-5ab8-471b-a584-8ab97b2504dc",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "fa4c78eb-ff46-40ec-a948-b3ada34a1327",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "433fa473-e31a-4fe5-87e4-6446a6da7bb3",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "95f09bf7-ea16-4520-a811-2349f64e912a",
+      "result_id": "b9e05831-b62e-4732-8616-2e806a7944cb"
+    },
+    {
+      "claim_id": "eb5bcc0d-e012-424d-88ec-18119feeda1e",
+      "result_id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87"
+    },
+    {
+      "claim_id": "ad428d2f-1382-4a54-a4bf-7473c4d969fd",
+      "result_id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87"
+    },
+    {
+      "claim_id": "4bffa6fd-4f49-4e63-8c34-08ff64b2b325",
+      "result_id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87"
+    },
+    {
+      "claim_id": "ab740616-d763-4c00-b519-aa20496dcc81",
+      "result_id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87"
+    },
+    {
+      "claim_id": "887b0dd8-9656-41d6-a7d8-4aac619c9a09",
+      "result_id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87"
+    },
+    {
+      "claim_id": "b132dedd-7b08-4164-9b81-22948b469ef1",
+      "result_id": "fd8f9f55-e5e4-4369-9d3f-4abe90294c87"
+    },
+    {
+      "claim_id": "bddf0e82-e669-4408-a0bd-7b32d06ea859",
+      "result_id": "f191d7c8-f29d-4541-9343-d7d95801cf55"
+    },
+    {
+      "claim_id": "e50ab88f-dacb-4e26-82ec-3e40c5c407a0",
+      "result_id": "f191d7c8-f29d-4541-9343-d7d95801cf55"
+    },
+    {
+      "claim_id": "70420b4b-9a04-40ee-ac39-b8aacdb27191",
+      "result_id": "f191d7c8-f29d-4541-9343-d7d95801cf55"
+    },
+    {
+      "claim_id": "aee5f9e1-372e-4401-8ee2-ab8f5520f332",
+      "result_id": "f191d7c8-f29d-4541-9343-d7d95801cf55"
+    },
+    {
+      "claim_id": "50401e12-fd4a-48e0-bd1d-b62cd34d5ff6",
+      "result_id": "467cc582-6b82-4b72-a80a-4e15b100474b"
+    },
+    {
+      "claim_id": "4bcf75a8-c0db-493d-87ba-ded51bd4d25f",
+      "result_id": "42bc213b-288e-4aeb-8932-1d24bce43b95"
+    },
+    {
+      "claim_id": "1855ac20-05d6-44d0-bd6e-8d331973e8f2",
+      "result_id": "42bc213b-288e-4aeb-8932-1d24bce43b95"
+    },
+    {
+      "claim_id": "c89e6a03-6f09-4a76-a4d5-96759baca213",
+      "result_id": "42bc213b-288e-4aeb-8932-1d24bce43b95"
+    },
+    {
+      "claim_id": "e66b8a1b-9f3f-4571-b242-b19ef2c0ee3d",
+      "result_id": "42bc213b-288e-4aeb-8932-1d24bce43b95"
+    },
+    {
+      "claim_id": "70c5fada-9dba-4029-8abd-0d4c27fad3ed",
+      "result_id": "5ecb0524-2f5e-4190-88f4-af53cfd1e53d"
+    },
+    {
+      "claim_id": "87608b02-d100-4361-9f70-794765cebb05",
+      "result_id": "5ecb0524-2f5e-4190-88f4-af53cfd1e53d"
+    },
+    {
+      "claim_id": "3dea515e-99e8-4d18-be35-de218f095478",
+      "result_id": "5ecb0524-2f5e-4190-88f4-af53cfd1e53d"
+    },
+    {
+      "claim_id": "7655b82f-f73a-43f9-9385-a6fbdafb3900",
+      "result_id": "5ecb0524-2f5e-4190-88f4-af53cfd1e53d"
+    },
+    {
+      "claim_id": "4ae188ff-6c8c-4eac-8a00-ada923e42492",
+      "result_id": "ad98c706-2794-4c21-bd69-3b1ae84b317e"
+    },
+    {
+      "claim_id": "e91097b0-5540-4e43-a09b-048e22882efb",
+      "result_id": "e678b736-bb21-45a1-90ec-de782883408f"
+    },
+    {
+      "claim_id": "858b508d-3b88-4175-b42c-1a9e642a1c7e",
+      "result_id": "8024a67d-286f-434d-b83a-c8b16c9cad1e"
+    },
+    {
+      "claim_id": "a2c9ce15-965b-4acc-97d2-0a06cad97d2b",
+      "result_id": "8024a67d-286f-434d-b83a-c8b16c9cad1e"
+    },
+    {
+      "claim_id": "1e6b1e2d-d07f-4884-b4ab-312312a0072b",
+      "result_id": "02882612-e5d5-4249-b754-f7070fe56ba0"
+    },
+    {
+      "claim_id": "9e099ee6-6ec1-49d8-a32a-ea64b0a320bf",
+      "result_id": "02882612-e5d5-4249-b754-f7070fe56ba0"
+    },
+    {
+      "claim_id": "9451331a-2dd7-4153-a904-e2cdea7bc338",
+      "result_id": "02882612-e5d5-4249-b754-f7070fe56ba0"
+    },
+    {
+      "claim_id": "9c576f4c-d4cb-4311-bdfa-062546855289",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "fb72646d-4bcd-4926-a6cb-5078b57f31c3",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "1e08cb42-0a97-4cbd-95ac-822deb3dd08d",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "91afc93a-6891-49ed-9571-096ad117e56e",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "7031d85d-8fcf-47a5-b302-10e4c3a86a3a",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "cb0fe5ea-e7ba-4b0b-bebe-62b7452638f6",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "744535c2-d525-4941-b7ab-2f6f7016e71f",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "374be395-d998-4cbb-aaba-ea865657aa93",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "e1c118ef-ef62-4ab6-a686-2192d48918f7",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "d096e610-4d39-4a52-9dc8-efa101f8dbf3",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "f5eefec8-3319-48d7-88b6-96f431b92e9e",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "f57e4baf-cced-4a4b-9111-c89b4e4c7cdc",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "455e0c85-88b9-4c9b-ad68-6898833f3036",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "d0178625-8401-4d82-bcf2-a2ead3f61f5b",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "c20846ea-321f-4e6d-bfcd-1e0145b3fa54",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "0f36dfcf-a934-47e2-a906-664a6a39e66c",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "6308a63c-3980-443f-bded-6221e6e5ebc5",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "79c5f1a9-8c68-41e9-bc6c-8c72834fea91",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "2700682a-0533-4343-bc08-cf70ca534f5e",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "b4e7f381-9fff-4fff-944f-0f8410fc296c",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "27e98ebd-94b7-491f-9ce4-a5367c24a317",
+      "result_id": "9ba08741-fd72-476a-9ffe-d8ae4d39d54f"
+    },
+    {
+      "claim_id": "afe73bd9-f975-4ac3-b476-617c706310ed",
+      "result_id": "bd8e0788-bf7f-4341-b5ca-cf0a02c1ce42"
+    },
+    {
+      "claim_id": "4beff502-951a-4ea9-a293-bd3a6f4b6018",
+      "result_id": "bd8e0788-bf7f-4341-b5ca-cf0a02c1ce42"
+    },
+    {
+      "claim_id": "ae0000b6-845a-429c-aa7a-f61c0e9b9b2e",
+      "result_id": "ebcb0858-da7d-4f52-8b08-339048815161"
+    }
+  ],
+  "comparisons": []
+}

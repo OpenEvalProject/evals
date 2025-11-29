@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Genome-wide screens in near-haploid human cells identified 19S proteasome regulatory complex subunits as the primary determinants of resistance to proteasome inhibitors MG132 and bortezomib. All highly enriched insertions (p<1e-7) in the MG132 screen were in 19S subunit genes, with no insertions in 20S catalytic core genes, and the bortezomib screen yielded remarkably similar results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 describe a well-executed genome-wide screen with clear statistical enrichment (p<1e-7) for 19S subunit genes across two independent screens using chemically distinct inhibitors. The convergence of results from both MG132 and bortezomib screens, the large library size (100 million insertions), and the specificity of enrichment (no 20S subunit hits) provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Complete knockout of 19S subunits is lethal in mammalian cells, but cells with 19S mutations transiently enriched in screens because they provided short-term growth advantages. Multiple approaches (stable clone isolation, CRISPR deletion, Cre-mediated inversion) all failed to generate viable cells with complete 19S subunit loss, confirming essentiality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate through multiple independent experimental approaches that complete 19S knockout is lethal, consistent with prior literature in yeast and Drosophila. The inability to isolate stable clones, recovery of only heterozygous deletions, and <1% survival after Cre inversion with retained expression all converge on the same conclusion. C33 provides a reasonable inference explaining the screen results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Modest reduction of 19S subunits through shRNA knockdown has opposing effects on cell viability depending on proteasome inhibitor presence: reducing viability under basal conditions but increasing survival during bortezomib treatment. Stable cell lines with modest PSMC5 or PSMD2 reduction continued proliferating at bortezomib concentrations (12 nM) that completely inhibited control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by systematic shRNA screening across 17 19S and 3 20S subunits, with consistent results showing 20S knockdown reduces viability regardless of inhibitor, while 19S knockdown shows context-dependent effects. The establishment of stable lines with modest reduction and their continued proliferation at inhibitory bortezomib concentrations provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Cells with reduced 19S subunits (PSMC5 or PSMD2) show increased 20S/26S proteasome ratios and maintain significant 20S proteasome activity even after bortezomib treatment. Multiple independent cell lines with different shRNAs targeting PSMD2 all showed 3-6 fold increases in bortezomib EC50 values and preserved proteasome complex levels and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by native gel analysis, activity assays, and dose-response experiments across multiple independent cell lines. The preservation of 20S activity in the presence of bortezomib correlates with the protective phenotype. The validation across 4 additional PSMD2 knockdown lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Modest 19S subunit reduction does not activate classic stress responses (NRF1, HSF1) under basal conditions and actually blunts the stress response to bortezomib treatment. The protective effect is specific to proteasome inhibitors, as cells with reduced PSMD2 remained fully sensitive to other stressors including ER stress, HSP90 inhibition, and translation inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by Western blot analysis showing no constitutive activation of NRF1 or HSF1, no accumulation of polyubiquitinated proteins, and reduced stress response activation following bortezomib treatment. The specificity is demonstrated by dose-response curves to multiple alternative stressors. C53 provides a reasonable mechanistic inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RNA-sequencing of PSMD2 knockdown cells under basal conditions revealed strong induction of ribosomal components but downregulation of proteotoxic stress response genes (heat-shock, oxidative stress, ER stress, HSF1-regulated genes), indicating that 19S reduction lowers basal proteotoxic stress rather than inducing adaptive stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by comprehensive RNA-seq analysis with appropriate statistical methods (GSEA with FDR correction). The ~50% PSMD2 mRNA reduction is confirmed, and the transcriptional changes are internally consistent with the protein-level observations in C46-C48. C61 provides a reasonable inference from the transcriptional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PSMD2 reduction markedly attenuates the bortezomib-induced transcriptional stress response, including suppression of heat-shock genes (8-fold reduction in HSPA1A/B induction), oxidative and ER stress responses, and previously identified bortezomib toxicity mediators. Cluster analysis confirmed broad reduction of stress response gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by RNA-seq data with appropriate statistical analysis (FDR q-values, gene set enrichment). The attenuation of known bortezomib toxicity mediators (C66-C68) provides validation against prior literature. C69-C70 provide reasonable summary inferences from the comprehensive transcriptional analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Bortezomib treatment of PSMD2-reduced cells strongly repressed genes involved in DNA replication (FDR=1.4e-32) and cell cycle control (FDR=1.8e-90), suggesting cells with reduced 19S subunits are primed to enter a protected, quiescent-like state when proteasome flux is compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by RNA-seq data with highly significant gene set enrichment. The inference in C72 about quiescent-like states is reasonable given the strong cell cycle suppression, though the mechanism remains to be fully elucidated. The statistical significance is exceptionally strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Transient, doxycycline-inducible reduction of PSMD2 recapitulates the effects of stable knockdown: increased resistance to bortezomib and MG132 (but not other stressors), no activation of NRF1/HSF1 basally, reduced stress response activation after bortezomib, increased 20S/26S ratio, and preservation of proteasome complexes and activity after bortezomib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 demonstrate that the protective phenotype is not an artifact of stable selection but occurs with transient knockdown. The results mirror those from stable knockdown across multiple assays (dose-response, Western blots, native gels, glycerol gradients), providing strong validation of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Under basal conditions, transient PSMD2 reduction did not affect proteasome-mediated protein degradation (suggesting excess 26S proteasomes) but caused a modest 7% decrease in protein synthesis and reduced lysosomal proteolysis. The reduction in translation may contribute to lowering basal proteotoxic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83 are supported by direct measurements using tritiated-phenylalanine pulse-chase and pulse-labeling experiments. C82 is a reasonable inference from C81. C84 combines the experimental observation with a mechanistic inference that is plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Transient PSMD2 reduction counteracts bortezomib's effects on both protein degradation and synthesis. After 20-hr bortezomib treatment, control cells showed sharp decreases in both degradation and synthesis rates, while PSMD2 knockdown strongly counteracted both effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C89 are supported by direct measurements of protein degradation and synthesis rates using radiolabeled phenylalanine. The preservation of both degradation capacity and synthesis rates in PSMD2 knockdown cells provides a mechanistic explanation for the protective effect. C90 provides an appropriate summary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Analysis of 315 cancer cell lines from the GDSC database revealed that cells most resistant to MG132 or bortezomib had significantly lower 19S subunit expression (p=0.003 and p=0.0008, respectively) but no difference in 20S subunit expression. Resistant cells generally had \u22652-fold reduction in one or more 19S subunits, while sensitive cells showed increased 19S expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by analysis of a large public dataset with appropriate statistical testing. The observation in C94 is striking given the normally coordinated regulation of proteasome subunits (C95). The heat map analysis (C96-C97) provides visual confirmation. C98 is a reasonable inference about cancer evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In mixed populations of cells with and without PSMD2 knockdown, initial ratios were maintained for 6 days without inhibitor, but even low bortezomib concentrations (5 nM) substantially shifted populations toward cells with reduced PSMD2, demonstrating a strong competitive advantage during proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by FACS analysis and fluorescence microscopy of mixed RFP/GFP populations at multiple ratios and bortezomib concentrations. The dose-dependent population shifts provide direct evidence for competitive advantage. C103 is a reasonable inference from the population dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C7"
+    ],
+    "result": "The protective mechanism is conserved in yeast: 5 of 12 yeast DAmP strains with reduced 19S subunit expression showed significantly increased resistance to MG132, with no growth impairment under basal conditions. The yeast orthologs of PSMD12 and PSMC5 (Rpn5 and Rpt6) were most notable, matching the human screen results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 demonstrate evolutionary conservation through experiments in S. cerevisiae using hypomorphic alleles. The correspondence between yeast orthologs showing resistance and the top human hits (C108) strengthens the conclusion. C7 appropriately summarizes the conservation from yeast to humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "While shifts in 20S/26S proteasome ratios have not previously been shown to protect against proteasome inhibition, such shifts are well-documented in response to diverse genetic, metabolic, and environmental factors including nutrient deprivation, glutamate signaling, mitochondrial dysfunction, oxidative stress, NADH levels, and post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 appropriately contextualize the findings within existing literature. C109 correctly identifies the novelty of the protective function while C110-C118 document precedent for proteasome ratio changes. All claims are supported by appropriate citations to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "The protective mechanism may involve a buffer of excess 26S proteasomes under basal conditions and increased 20S proteasome activity. 20S proteasomes effectively degrade oxidized and intrinsically disordered proteins, cleave translation factors, preferentially degrade newly synthesized substrates, and degrade cell cycle regulatory proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C119 is a reasonable inference from the maintained degradation rates despite 19S reduction. C120-C123, C125-C126 are supported by appropriate citations to prior literature describing 20S proteasome functions. These claims provide mechanistic context for understanding the protective effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C134",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors propose several speculative mechanisms and evolutionary implications: 20S-mediated cleavage of translation factors may contribute to reduced synthesis; degradation of cell cycle proteins may drive quiescence; the mechanism may be conserved from yeast stationary phase responses; it may have evolved to counter natural proteasome inhibitors; and cellular heterogeneity in 19S expression may create drug-tolerant persister populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124, C127, C128, C131, C132, C134, C137-C139 are explicitly speculative inferences about mechanisms and evolutionary origins. While plausible and well-reasoned, they lack direct experimental validation. These represent hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C133",
+      "C135",
+      "C136"
+    ],
+    "result": "The findings are consistent with prior observations in yeast stationary phase (reduced translation, decreased 26S/increased 20S proteasomes essential for survival) and with Breslow et al.'s finding that reducing 19S subunits rescues yeast strains with reduced 20S subunits. Protein aggregates can impair proteasome function, and many routes exist to suppress 19S expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130, C133, C135 are supported by appropriate citations to prior literature. C136 is a reasonable summary of the experimental findings. These claims appropriately connect the current work to existing knowledge and provide biological context.",
+    "result_type": "MINOR"
+  }
+]

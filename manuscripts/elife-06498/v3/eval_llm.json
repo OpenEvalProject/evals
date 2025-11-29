@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C96"
+    ],
+    "result": "NVP-CGM097 and NVP-CFC218 are novel, highly specific p53-HDM2 inhibitors based on an isoquinolinone scaffold. Both compounds selectively disrupt the p53-HDM2 interaction with IC50 values of ~1.7 nM for HDM2, while showing >1000-fold lower activity against HDMX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide biochemical data demonstrating nanomolar potency against HDM2 and selectivity over HDMX. The structural design rationale (C22, C96) is supported by citations. The compounds' specificity is well-characterized through multiple orthogonal assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "NVP-CGM097 and NVP-CFC218 demonstrate p53-dependent cellular activity with 34-58-fold selectivity in isogenic cell line pairs comparing p53 wild-type versus p53-null cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide quantitative selectivity data from two independent isogenic cell line systems (HCT116 and SJSA-1/SAOS-2 pairs). The consistent selectivity across both systems and compounds (C32) strongly supports p53-dependent mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Large-scale cell line profiling (356 cell lines) revealed that while p53 wild-type status is significantly associated with NVP-CFC218 sensitivity (p=5.1\u00d710\u207b\u00b2\u00b3), 57% of p53 wild-type cell lines remain insensitive, indicating p53 status alone is insufficient for patient selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide comprehensive profiling data with appropriate statistical analysis. The observation that 57% of p53-WT cells are insensitive (C40) is critical and well-documented. The orthogonal compound class enrichment analysis (C39) provides independent validation of the p53-dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A 13-gene expression signature was identified through bootstrapped feature selection, achieving 93% accuracy, 87% sensitivity, and 94% specificity. All 13 genes are p53 target genes that are up-regulated in sensitive cell lines, suggesting pre-existing p53 pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C83-C88 describe rigorous statistical methodology with bootstrapping validation. The enrichment for p53 target genes (C43) is well-documented with citations in Table 1. The interpretation that up-regulation reflects pre-existing p53 activation (C45) is reasonable given the data, though somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C89"
+    ],
+    "result": "The 13-gene signature outperforms both TP53 mutation status and a larger 215-feature model in predicting drug response, with superior positive predictive value (76% vs 63% vs 59%) and AUC (0.947 vs 0.855).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide direct comparative performance metrics with appropriate statistical measures (AUC, PPV, precision-recall). The superiority of the 13-gene signature is demonstrated across multiple performance metrics. Claim C89 confirms TP53 mutation as the single most associated feature, validating the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The 13-gene signature has utility in TP53 wild-type genetic backgrounds for further stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by Figure 2\u2014figure supplement 2 showing performance in p53-WT backgrounds. The signature provides meaningful stratification (PPV 88.7% vs baseline 63.2%) even within p53-WT tumors, addressing the key clinical need identified in C40-C41.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Independent validation in 52 cell lines for NVP-CGM097 and 38 for NVP-CFC218 confirmed the 13-gene signature's predictive performance with sensitivity of 89-91%, comparable to bootstrap estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide validation data in an independent cell line set. The sensitivity measures (C54, C92) are consistent with training set estimates. The slight decrease in specificity is acknowledged. The concordance between NVP-CGM097 and NVP-CFC218 responses (C51) validates the shared mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C93",
+      "C94"
+    ],
+    "result": "Application of the 13-gene signature to ~21,300 primary human tumor samples showed lineage-specific prevalence comparable to cell line sensitivity patterns, suggesting the signature is not an artifact of in vitro culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 demonstrate concordance between primary tumor signature prevalence and cell line sensitivity across lineages (Figure 4A-B). This cross-validation between primary and cultured samples (C56) provides strong evidence against culture artifacts. The large sample size (C57) enhances confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The 13-gene signature revealed new indications of potential interest for p53-HDM2 inhibitors, including renal cell carcinoma and hepatocellular carcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by Figure 4C showing signature prevalence across tumor types. The identification of underrepresented indications in CCLE is a valid discovery from the primary tumor analysis. However, this represents hypothesis generation rather than validated therapeutic efficacy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "NVP-CGM097 demonstrated dose-dependent anti-tumor activity in SJSA-1 xenografts with 65% tumor regression at 100 mg/kg daily, correlating with p53 stabilization and induction of p53 target genes (p21, HDM2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide comprehensive pharmacodynamic and efficacy data in a well-characterized model. The correlation between drug exposure, target engagement (p53/p21 induction), and tumor response is well-documented. The dose selection rationale (C76-C77) based on PK and PD is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C78",
+      "C80"
+    ],
+    "result": "In 55 patient-derived xenograft models, the 13-gene signature achieved 70% PPV and 71% NPV, improving upon the 49% baseline response rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide in vivo validation data with appropriate performance metrics. The improvement over baseline (C80) is statistically meaningful. The sample size (C78) is adequate for validation. The balanced performance in both PPV and NPV indicates robust predictive capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C81"
+    ],
+    "result": "In p53 wild-type PDX models (n=33), the 13-gene signature achieved 86% PPV, significantly improving upon the 70% baseline response rate in this pre-selected population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 demonstrates the signature's utility even in p53-WT pre-selected tumors, addressing the key clinical question. The 16% improvement in PPV over baseline (C81) is clinically meaningful and validates the signature's added value beyond p53 mutation testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C95"
+    ],
+    "result": "The in vivo PDX validation confirmed the in vitro predictive model performance and validated the 13-gene signature as superior to p53 mutation status alone for predicting response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C95 summarize the validation results. The consistency between in vitro bootstrap estimates and in vivo PDX performance (C95, Figure 6C) is strong evidence for model robustness. The superiority over p53 mutation alone is demonstrated across multiple validation sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The 13-gene signature enrichment was strongly significant compared to the 19% baseline response rate without stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 provides important context for the clinical utility of the signature. The comparison to unstratified baseline (19%) demonstrates substantial enrichment. However, the manuscript should clarify how this 19% baseline was calculated from the NVP-CFC218 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The 13-gene signature predicts sensitivity to NVP-CGM097 in both cell lines and PDX models. All genes are p53 target genes, suggesting the signature reflects at least partially activated p53 pathway in sensitive tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C19-C21 are well-supported by the comprehensive validation data across cell lines and PDX models. The interpretation that the signature reflects activated p53 (C4, C21) is reasonable given all genes are documented p53 targets (C3, C20), though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "A patient selection strategy based only on p53 status will not optimally enrich for patients with high likelihood of responding to p53-HDM2 inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is strongly supported by the observation that 57% of p53-WT cells are insensitive (C40) and the superior performance of the 13-gene signature over p53 mutation status across multiple validation sets. This is a key clinical conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The 13-gene signature likely identifies tumors with 'primed' p53 target genes that can rapidly respond to p53-HDM2 inhibition, discriminating not only mutant from wild-type p53 but also silent from activated p53 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 cite external work (Allen et al., 2014) showing gene priming, and C69 notes overlap with the signature. However, C70-C72 represent mechanistic interpretations and postulates not directly tested in this study. While plausible and consistent with the data, these claims require additional experimental validation of the 'priming' hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "NVP-CGM097 and NVP-CFC218 differ from Nutlin analogs in binding mode within the HDM2 pocket, allowing improved potency and drug-like properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by citations to structural studies (Jeay et al., 2014; Valat et al., 2014). The superior PK properties are documented in Table 2 (C76). However, direct head-to-head comparison data with Nutlin would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 13-gene signature is being evaluated in a Phase I clinical trial (NCT01760525) and has potentially broad applicability to any selective p53-HDM2 inhibitor for patient selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 states an ongoing clinical trial, which is verifiable. Claim C74 correctly summarizes the mechanistic basis for the signature. Claim C75 regarding broad applicability is reasonable given the mechanism-based nature of the signature, though validation with other HDM2 inhibitors would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on p53 biology, HDM2 regulation, and the rationale for HDM2 inhibition as cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 provide well-established background information supported by appropriate citations to the literature. These are standard knowledge claims that provide context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Analysis of 356 cell lines confirmed p53 mutant cells fail to respond to HDM2 inhibitors, while wild-type p53 cells show heterogeneous sensitivity not solely associated with HDM2 amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by the profiling data (C33-C40). The confirmation of p53-dependency (C17) validates the mechanism. The heterogeneity in p53-WT cells (C18) is a key observation motivating the signature development.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2033 @@
+{
+  "submission": {
+    "id": "b1149b74-5a68-42bb-b8da-f5cbcd9daf23",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:00:30.712671Z",
+    "updated_at": "2025-11-29T04:00:30.712671Z"
+  },
+  "content": [
+    {
+      "id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "submission_id": "b1149b74-5a68-42bb-b8da-f5cbcd9daf23",
+      "content_type": "manuscript",
+      "content_text": "# A functional link between the co-translational protein translocation pathway and the UPR\n\n## Authors\n\n- Rachel Plumb<sup>1</sup>\n- Zai-Rong Zhang<sup>1</sup>\n- Suhila Appathurai<sup>1</sup>\n- Malaiyalam Mariappan<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell Biology, Nanobiology Institute Yale School of Medicine West Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUpon endoplasmic reticulum (ER) stress, the transmembrane endoribonuclease Ire1\u03b1 performs mRNA cleavage reactions to increase the ER folding capacity. It is unclear how the low abundant Ire1\u03b1 efficiently finds and cleaves the majority of mRNAs at the ER membrane. Here, we reveal that Ire1\u03b1 forms a complex with the Sec61 translocon to cleave its mRNA substrates. We show that Ire1\u03b1's key substrate, XBP1u mRNA, is recruited to the Ire1\u03b1-Sec61 translocon complex through its nascent chain, which contains a pseudo-transmembrane domain to utilize the signal recognition particle (SRP)-mediated pathway. Depletion of SRP, the SRP receptor or the Sec61 translocon in cells leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA. Furthermore, mutations in Ire1\u03b1 that disrupt the Ire1\u03b1-Sec61 complex causes reduced Ire1\u03b1-mediated cleavage of ER-targeted mRNAs. Thus, our data suggest that the Unfolded Protein Response is coupled with the co-translational protein translocation pathway to maintain protein homeostasis in the ER during stress conditions.\n\n## Introduction\n\nSecretory and transmembrane proteins are essential for linking intracellular trafficking and extracellular environments and, in metazoans, play broad roles in all aspects of intracellular communication. These proteins contain either a signal sequence or transmembrane domain (TMD) that is co-translationally captured by the SRP and targeted to the endoplasmic reticulum (ER) membrane (Akopian et al., 2013). At the ER membrane, the Sec61 translocon facilitates insertion or translocation of these polypeptides into the ER membrane (Park and Rapoport, 2012). The ER contains a network of chaperones and enzymes to assist in folding proteins into their native conformations (Braakman and Bulleid, 2011). When the influx of nascent polypeptides exceeds the ER protein folding capacity, misfolded proteins accumulate in the ER and lead to ER stress. Under ER stress, signaling pathways, collectively termed the Unfolded Protein Response (UPR), are activated to restore ER homeostasis (Walter and Ron, 2011). The activation of the UPR leads to various cellular processes that include: transcriptional upregulation of UPR target genes, attenuation of translation, activation of ER associated degradation, and ER expansion. However, if ER homeostasis cannot be restored, the UPR induces cell death pathways to eliminate non-functional cells (Walter and Ron, 2011). The significance of the UPR is underscored by the fact that aberrations in UPR signaling can lead to a multitude of diseased states including neurological disorders, diabetes, and inflammatory disorders (Wang and Kaufman, 2012). In solid tumors, the UPR is constitutively activated as an adaptive response pathway for survival under adverse conditions, such as hypoxia (Wang and Kaufman, 2012).\n\nSeveral ER transmembrane proteins act as ER stress sensors (Walter and Ron, 2011). The most ancient member of these, inositol-requiring enzyme 1 (Ire1), is conserved from yeast to mammals (Cox et al., 1993; Mori et al., 1993). Ire1 contains an ER luminal domain involved in sensing misfolded proteins and cytoplasmic kinase/RNase domains, which are involved in the activation of downstream pathways. Mammals have two Ire1 paralogs, Ire1\u03b1 and Ire1\u03b2. While Ire1\u03b1 is a ubiquitously expressed gene, Ire1\u03b2 expression is restricted to the gastrointestinal tract (Tirasophon et al., 1998; Wang et al., 1998). Upon ER stress, the Ire1\u03b1 RNase domain is activated by self-oligomerization and subsequently excises a 26 base intron from the cytosolic unspliced form of XBP1u mRNA (Yoshida et al., 2001; Calfon et al., 2002). The resulting mRNA fragments are ligated in the cytosol by RtcB ligase generating the spliced form of XBP1 mRNA (Jurkin et al., 2014; Kosmaczewski et al., 2014; Lu et al., 2014). The Ire1\u03b1 mediated splicing step is critical for mounting the UPR, as only the spliced XBP1 mRNA produces an active transcription factor that induces hundreds of genes responsible for increasing ER abundance to accommodate the demand for protein production (Shaffer et al., 2004; Sriburi et al., 2004; Acosta-Alvear et al., 2007). In addition to XBP1 mRNA splicing, Ire1\u03b1 also reduces the load of incoming proteins by cleaving ER-localized mRNAs in a process termed regulated Ire1-dependent decay (RIDD) (Hollien and Weissman, 2006; Han et al., 2009; Hollien et al., 2009). While considerable attention has been paid to the mechanism of Ire1\u03b1 activation, little is known about how the low abundant Ire1\u03b1 efficiently finds and cleaves its mRNA substrates during ER stress. Recent studies have shown that XBP1u mRNA is recruited to the ER membrane through its nascent chain, but the components involved in the specific recruitment of XBP1u mRNA to the Ire1\u03b1 cleavage site in the ER membrane remain unidentified.\n\nIn this study, we have discovered a complex between Ire1\u03b1 and the Sec61 translocon channel in the ER membrane. We show that this interaction is specific by identifying key residues in Ire1\u03b1, and that it is stable even during ER stress conditions. Surprisingly, we find that a hydrophobic region in the XBP1u protein mimics a TMD and is co-translationally captured by the signal recognition particle (SRP). The SRP bound XBP1u-ribosome nascent chain (RNC) is then delivered to the Sec61 translocon where its mRNA engages with Ire1\u03b1. Despite its interaction with the Sec61 translocon, the XBP1u nascent chain inefficiently inserts into the ER membrane due to its weak hydrophobic region. Furthermore, siRNA mediated depletion of SRP, the SRP receptor or the Sec61 translocon in human cells impairs the Ire1\u03b1-mediated splicing of XBP1u mRNA. Mutations in Ire1\u03b1 that disrupts its association with the Sec61 translocon lead to reduced Ire1\u03b1-mediated cleavage of ER-targeted mRNAs. Over all, our studies establish an important link between the UPR and the co-translational protein translocation pathway, which ensures efficient cleavage of ER-targeted mRNAs during ER stress conditions.\n\n## Results\n\n### Ire1\u03b1 is in a complex with the Sec61 translocon\n\nTo investigate how the low abundant Ire1\u03b1 efficiently finds and cleaves its mRNA substrates, we searched for Ire1\u03b1 associated proteins that could facilitate interactions with its mRNA substrates. To this end, we performed immunoaffinity purification from detergent solubilized microsomes derived from HEK 293 cells expressing hemagglutinin (HA)-tagged Ire1\u03b1. The affinity-purified material was subjected to SDS-polyacrylamide gel electrophoresis and bands not present in the control were subjected to analysis by mass spectrometry. Remarkably, in addition to a known Ire1\u03b1 interacting protein, BiP (Bertolotti et al., 2000), we identified all three subunits of the Sec61 translocon (Sec61\u03b1, Sec61\u03b2, and Sec61\u03b3) and Sec63 (Figure 1A and Figure 1\u2014figure supplement 1). We were intrigued by the interaction between the Sec61 translocon and Ire1\u03b1 since we reasoned that it could facilitate Ire1\u03b1 access to RIDD mRNA substrates (Hollien and Weissman, 2006) that are targeted to the Sec61 translocon via their nascent chains. To determine if this interaction occurs at endogenous levels of Ire1\u03b1 and the Sec61 translocon, we co-immunoprecipitated the endogenous Sec61 translocon from a detergent cell extract of non-transfected HEK 293 cells using Sec61\u03b2 antibodies. We could detect a significant amount of endogenous Ire1\u03b1 precipitating with Sec61\u03b2 and Sec61\u03b1 by immunoblotting (IB) (Figure 1B). Furthermore, immunodepletion of the Sec61 translocon nearly quantitatively depleted the endogenous Ire1\u03b1, indicating that almost all Ire1\u03b1 is in a complex with the Sec61 translocon in cells (Figure 1\u2014figure supplement 2). Interestingly, this interaction remained stable even after treatment of cells with the ER stress inducer DTT, which impairs protein folding by preventing disulfide bond formation in the ER lumen (Figure 1B). These results implied that Ire1\u03b1 interaction with the Sec61 translocon might be functionally important during the conditions of ER stress. We further verified that the Sec61 translocon selectively associated with Ire1\u03b1, but not with the Ire1\u03b1 paralogue Ire1\u03b2 or with the other ER stress sensors PERK (Harding et al., 1999; Sood et al., 2000) and ATF6\u03b1 (Haze et al., 1999) (Figure 1C). To determine whether the Ire1\u03b1 interaction with the Sec61 translocon is direct, we treated HA-tagged Ire1\u03b1 expressing cells with a lysine-reactive reversible crosslinker, DSP. After quenching the crosslinker, the complex was denatured in urea and SDS, which dissociates noncovalently bound proteins, and immunoprecipitated (IP) with HA antibodies. The resulting IP was treated with DTT to reverse the crosslinking and analyzed by IB. The \u03b1 subunit of the Sec61 translocon could be crosslinked with Ire1\u03b1, as judged by the increase in Sec61\u03b1 signal with increasing concentration of crosslinker (Figure 1D), thus supporting a direct interaction between Ire1\u03b1 and the Sec61 translocon. Consistent with the result from Sec61\u03b2 immunoprecipitation (Figure 1C), the crosslinked adduct was visible even when cells were treated with DTT before the crosslinker reaction, supporting a model where Ire1\u03b1 associates with the Sec61 translocon even under ER stress conditions. (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig1-v2.jpg)\n\n**Figure 1.:** (A) The detergent extracts of either microsomes derived from HEK 293 cells (control) or cells expressing hemagglutinin (HA)-tagged Ire1\u03b1 were bound to anti-HA resin and eluted with a low pH glycine buffer. The eluted proteins were analyzed by SDS-PAGE and stained with coommassie blue. (B) The cell lysates from non-transfected HEK 293 cells treated with or without DTT were immunoprecipitated (IP) with anti-GFP antibodies as a control or anti-Sec61\u03b2 antibodies. The bound material was eluted with sample buffer and analyzed along with starting lysates (input, 2% loading) by immunoblotting (IB) using antibodies against the indicated antigens. Calnexin, an abundant endoplasmic reticulum (ER) trans membrane protein was probed as a control. (C) Cell extracts from HEK 293 cells transfected with the indicated FLAG tagged constructs were subject to IP with FLAG antibody. The resulting samples were analyzed by IB with indicated antibodies. (D) HEK 293 cells stably expressing HA-tagged Ire1\u03b1 were either treated with 10 mM DTT or left untreated for 2 hr. Cells were then semipermeabilized with 0.015% digitonin and treated with the indicated concentration of DSP crosslinker for 30 min at room temperature. Samples were denatured and IP with anti-HA antibodies. The resulting IP was analyzed by IB. Control denotes non-transfected HEK293 cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The co-depletion of Ire1\u03b1 with the Sec61 translocon was compared between endogenous Ire1\u03b1 and recombinant Ire1\u03b1-HA. The cell lysates either from non-transfected HEK 293 cells or HEK 293 cells stably expressing various amount of Ire1-HA were passed through an anti-Sec61\u03b2 resin to deplete the Sec61 translocon. The flow through fractions was analyzed along with starting lysates (input) by IB. (B) The co-depletion of Ire1\u03b1 with the Sec61 translocon was quantified by ImageJ64 from the immunoblot shown in A. Note that nearly all endogenous Ire1\u03b1 in HEK 293 cells was codepleted with the Sec61 translocon, whereas overexpression of Ire1\u03b1 leads to freeunbound Ire1\u03b1, presumably due to a saturation of the Sec61 translocon binding sites.\n\n### A conserved region in Ire1\u03b1 is required for the interaction with the Sec61 translocon\n\nTo exclude the possibility that this interaction was captured during Ire1\u03b1 synthesis at the Sec61 translocon, we set out to identify specific residues in Ire1\u03b1 that are required for the interaction with the Sec61 translocon. We therefore performed co-immunoprecipitation with HA antibodies using detergent extracts of cells expressing mutant versions of Ire1\u03b1-HA. While deletion of the luminal domain of Ire1\u03b1 (amino acids 30 to 408) had no effect on the interaction with the Sec61 translocon, deletion of an evolutionarily conserved 10 amino acid region (amino acids 434 to 443) in the luminal portion of Ire1\u03b1 adjacent to its TMD nearly abolished the interaction with the Sec61 translocon (Figure 2A,C). Mutagenesis of single residues within this region further revealed that Val437, Asp438, Met440, Leu441 and Asp443 are crucial for the interaction since replacing any of these amino acids with alanine significantly reduced the interaction with the translocon (Figure 2B,C). We next asked whether the Ire1\u03b1 interaction with the Sec61 translocon is important for XBP1u mRNA cleavage during ER stress. To address this, we transiently depleted the Sec61\u03b1 subunit, which forms the translocon channel, in cells by siRNA-mediated knock down. Indeed, Ire1\u03b1 mediated splicing of XBP1u mRNA was substantially reduced in Sec61\u03b1 depleted cells during ER stress (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig2-v2.jpg)\n\n**Figure 2.:** (A) The cell lysates of the indicated versions of HA-tagged Ire1\u03b1 were IP with anti-HA antibodies, eluted with sample buffer and analyzed by IB. Ire1\u03b1\u2013venus served as a control. The mutation K907 to A907 impairs the RNase activity of Ire1\u03b1 (Tirasophon et al., 2000). Deletion of the Ire1\u03b1 cytosolic domain from amino acid 477 to 977 or luminal domain from amino acid 30 to 408 is labeled as \u0394CD or \u0394LD (Volmer et al., 2013), respectively. Ire1\u03b1 \u039434 carry a deletion from amino acid 409 to 443 and Ire1\u03b1 \u039410 lacks amino acids 434 to 443. (B) The indicated Ire1\u03b1 mutants were analyzed as described in panel A. (C) Comparison of the sequences of the 10 amino acid region of Ire1\u03b1 in vertebrates. Triangle depicts amino acid residues of Ire1\u03b1 in which alanine scanning mutations disrupt binding to the Sec61 translocon. (D) HeLa cells were transfected with control siRNA or siRNA targeting Sec61\u03b1. After 48 hr of transfection, cells were transfected again with siRNA which was followed by transfection with FLAG-tagged XBP1u. 96 hr after the first transfection, cells were treated with 10 mM DTT for the indicated time periods. Total proteins and RNA were isolated from Trizol harvested cells and analyzed by IB against the indicated antigens and by an RT-PCR reaction to monitor splicing of XBP1u mRNA (Calfon et al., 2002), respectively.\n\n### XBP1u mRNA utilizes the SRP pathway for targeting to the Sec61 translocon\n\nOur findings of Ire1\u03b1 in a complex with the Sec61 translocon raised the important question of how XBP1u mRNA would be recruited to this complex in order to be cleaved by Ire1\u03b1 during ER stress. Although XBP1u mRNA encodes a soluble protein and shuttles between the cytosol and nucleus (Yoshida et al., 2006), recent studies have shown that XBP1u is co-translationally targeted to the ER membrane for efficient splicing of its mRNA by Ire1\u03b1 (Yanagitani et al., 2009). This targeting reaction also depends on a C-terminal hydrophobic region 2 (HR2) as well as a translational pausing sequence located in the extreme C-terminus of XBP1u (Yanagitani et al., 2009, 2011). Combined, HR2 and the pausing sequence are speculated to facilitate direct interaction of RNCs of XBP1u with the ER lipid bilayer (Yanagitani et al., 2009). We reasoned that the interaction between XBP1u and lipids might not selectively direct its mRNA-RNCs to the ER membrane within the cell. We therefore hypothesized that XBP1u-RNCs may directly interact with the Sec61 translocon for its specific recruitment to the ER membrane as well as to engage with Ire1\u03b1. To first determine if the recruitment of XBP1u-RNCs requires any ER membrane factor(s), we reconstituted XBP1u recruitment to the ER membrane in vitro. XBP1u transcripts lacking a stop codon were translated using a rabbit reticulocyte lysate containing 35S-labelled methionine and ER-derived rough microsomes (RM). As expected, the truncated XBP1u transcripts produced XBP1u-RNCs that were recruited to RM, as indicated by XBP1u peptides in the pellet fraction (Figure 3A,B). However, a mild trypsin digestion of RM rendered them inactive for XBP1u recruitment. XBP1u recruitment to the ER membrane was dependent on the presence of HR2 since its deletion (XBP1\u0394HR2) abolished the membrane recruitment, while replacing HR2 with a stronger hydrophobic TMD from the transferrin receptor (XBP1u-TR) restored XBP1u recruitment to RM (Figure 3A,B and Figure 3\u2014figure supplement 1). We obtained similar results when we analyzed full-length versions of XBP1u, thus arguing against membrane recruitment due to artificial stalling of XBP1u at the ribosome (Figure 3B, bottom). These results supported our hypothesis that XBP1u-RNCs can  be recruited to the ER membrane via an interaction with an ER membrane factor.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of constructs derived from XBP1u. Blue box denotes the previously described hydrophobic region 2 (HR2) of XBP1u (Yanagitani et al., 2009). Dark blue indicates the transmembrane domain (TMD) from the transferrin receptor in lieu of HR2. (B) The indicated versions of XBP1u transcripts lacking a termination codon were translated in rabbit reticulocyte lysate in the presence of rough microsomes (RM) or trypsin digested RM (tRM). The reactions were separated by centrifugation to analyze pellet (P) and soluble fractions (S) by SDS-PAGE and autoradiography. (C) Affinity purified ribosome associated nascent chains (RNCs) of the indicated versions of FLAG-tagged XBP1u were analyzed by IB for the indicated antigens. L13a is a ribosomal protein. TRC40 is a control protein. Autoradiography of the blot revealed equal recovery of translated substrates. (D) XBP1u transcripts lacking a termination codon were translated in the wheat germ translation system including purified SRP, puromycin/potassium acetate treated RM (PK-RM) or both. RM alone was included as a control. An aliquot of the total translation reaction was analyzed by IB for SRP54 and Sec61\u03b2, which indicate the presence of SRP and PK-RM, respectively. An autoradiograph of the blot revealed equal translation of substrate XBP1u in all reactions. The reactions were separated and analyzed as in panel B.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The last 80 residues of the indicated XBP1u constructs used in this study were analyzed for hydrophobicity using the Kyte-Doolittle scale. (A) The red color denotes HR2 in XBP1u. (B) The HR2 deleted position is indicated as an open arrow. (C) The green color denotes the replacement of HR2 with the TMD from the transferrin receptor.\n\nBased on the above observation and the presence of a hydrophobic region (HR2) (Yanagitani et al., 2009) in the XBP1u protein, we hypothesized that XBP1u mRNA-RNC targeting to the ER membrane may be mediated by the SRP pathway. To test this, we affinity-purified RNCs of XBP1u from in vitro translation reactions via an N-terminal FLAG-tag and analyzed for SRP recruitment by IB. Indeed, SRP was enriched in RNCs of XBP1u but not in RNCs of XBP1\u0394HR2 (Figure 3C). As expected, XBP1u-TR exhibited slightly increased binding to SRP since it contains a genuine TMD (Figure 3C and Figure 3\u2014figure supplement 1). We next wondered whether the binding of SRP to HR2 of XBP1u-RNCs is essential for targeting to the ER membrane. To address this, we translated XBP1u mRNA in vitro using a wheat germ extract that lacks SRP that is compatible with the mammalian SRP receptor (Walter and Blobel, 1981). When RM stripped of ribosomes/SRP by puromycin and high salt (PK-RM) was added to this reaction, XBP1u nascent peptides were localized in the soluble fraction (Figure 3D). In contrast, adding back purified SRP to the original level found in RM shifted XBP1u localization to the pellet fraction, mirroring the membrane recruitment of XBP1u.\n\nTo examine whether Ire1\u03b1 mediated splicing of XBP1u mRNA in cells also depends on the SRP mediated targeting of its RNCs to the ER membrane, we depleted SRP or the SRP receptor in cells by siRNA-mediated knock down. Cells depleted of the SRP subunits SRP14 or SRP54 showed sharply reduced XBP1u mRNA splicing upon treatment with the ER stress inducer DTT (Figure 4A). Similarly, depletion of the \u03b1 subunit of the SRP receptor (SR\u03b1) nearly abolished splicing of XBP1u mRNA (Figure 4B). Importantly, these effects were not due to a defect in the biosynthesis of Ire1\u03b1 since its level was unchanged by transient depletion of either SRP or its receptor (Figure 4A,B). To rule out the possibility that the reduction in XBP1u mRNA splicing observed in SRP knockdown experiments was not due to diminished ER substrate burden and Ire1\u03b1 activation, we examined the activation of ER stress sensors under knockdown conditions (Figure 4A,C). Auto-phosphorylation of PERK and Ire1\u03b1 in response to DTT treatment was identical under both control and SRP54/14 knockdown conditions (Figure 4A). In addition, depletion of SRP14, SR\u03b1 or Sec61\u03b1 had little effect on the amount of PERK phosphorylation and ATF6 cleavage in response to ER stress (Figure 4C). These data suggest that the reduced XBP1u mRNA splicing in the SRP pathway knockdown experiments is not an indirect effect but a result of reduced XBP1u mRNA targeting to the ER membrane. Together these results suggest that SRP binds to HR2 of XBP1u-RNC and recruits it to the ER membrane for Ire1\u03b1 mediated splicing of XBP1u mRNA under ER stress conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig4-v2.jpg)\n\n**Figure 4.:** (A) HEK 293 cells were transfected with shRNAs against luciferase (control), SRP14, or SRP54. 5 days after transfection, the cells were replated for transfection with XBP1u and treated with 10 mM DTT for the indicated time periods. The Trizol harvested cells were analyzed as in Figure 2D. A phos-tag gel was used for the Ire1\u03b1 immunoblot. p-Ire1\u03b1 and p-PERK indicate the phosphorylated forms of Ire1\u03b1 and PERK, respectively. * denotes a background band. (B) HeLa cells were transfected with control siRNA or siRNA targeting the \u03b1 subunit of the SRP receptor (SR\u03b1) and analyzed as described in Figure 2D. (C) HeLa cells were transfected with the indicated siRNA oligos and treated with 10 mM DTT for 2 hr after 96 hr post-transfection. Cells were harvested in SDS sample buffer and analyzed for IB with indicated antibodies. Upon DTT treatment, the ATF6\u03b1 band disappears due to the cleavage of its N-terminal cytosolic domain. Our ATF6\u03b1 antibodies were not suitable for detecting the cleaved N-terminal cytosolic domain (not shown). Note that depletion of Sec61\u03b1 caused significant reduction of the transmembrane proteins PERK and ATF6\u03b1.\n\n### XBP1u RNCs interact with the Sec61 translocon, but weakly insert into the ER membrane\n\nSince the XBP1u protein does not possess a typical TMD, we wondered whether the SRP bound XBP1u-RNC is actually delivered to the Sec61 translocon in the ER membrane. To examine this, we isolated the ER membrane-targeted RNCs of XBP1u from in vitro translation reactions and treated them with a cysteine reactive chemical crosslinker. We observed a weak crosslinking between XBP1u and the Sec61\u03b1 subunit (Figure 5A, lanes 2 and 4). By contrast, XBP1u strongly crosslinked to the \u03b2 subunit of the translocon, presumably via a single cysteine residue localized in its cytosolic domain (Figure 5A, lanes 2 and 5). This result implied that the moderate hydrophobicity of HR2 of XBP1u might prevent full engagement of the translocon. This was further supported by the improved crosslinking between XBP1u and Sec61\u03b1 observed when we used XBP1u-TR, which contains a genuine TMD (Figure 5A, compare 4 and 7). It has been previously shown that the Sec61 translocon can discriminate between functional and non-functional or weak signal sequences (Jungnickel and Rapoport, 1995). Accordingly, the functional signal sequence is able to form a protease resistant tight junction with the Sec61 translocon. To directly test if RNCs of XBP1u form a weak or tight junction with the Sec61 translocon, we performed a proteinase K (PK) accessibility assay with the ER membrane targeted RNCs of XBP1u. We noticed efficient protection of the XBP1u signal sequence HR2 under physiological salt concentration but it became partially PK sensitive under high salt conditions, suggesting that XBP1u HR2 forms a weak junction with the translocon (Figure 5B compare band 1 in lane 2 and 3). By contrast, we observed a tight complex between XBP1u-TR and the translocon as judged by an increased protection of XBP1-TR relative to XBP1u under high salt conditions (Figure 5B compare band 1 in lane 3 and 8). Interestingly, upon high salt and puromycin treatment, which releases nascent chains from ribosomes, we detected membrane-protected fragments for XBP1-TR that disappeared after treating with a detergent (Figure 5B lane 9, 10), demonstrating that insertion of XBP1u-TR occurs after its release from the ribosome. However, we failed to detect membrane-protected fragments for XBP1u, suggesting that XBP1u HR2 is rejected by the Sec61 translocon after its release from the ribosome. Interestingly, we noticed ribosome protected fragments even after puromycin treatment, indicating that the interaction between the translational pausing sequence of XBP1u and the ribosome exit tunnel remains stable (Figure 5B band 2 in lanes 5 and 10).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig5-v2.jpg)\n\n**Figure 5.:** (A) The membrane-targeted RNCs of XBP1u or XBP1u-TR were isolated by centrifugation and treated with BMH crosslinker. An aliquot was directly analyzed (input, 4% loading), while the remainder was IP with the indicated antibodies. Anti-GFP antibodies were used as a control. The XBP1u crosslinked adducts are indicated by \u2018XBP x\u2019. * indicates an unidentified crosslinked product. (B) The ER membrane targeted RNCs of XBP1u variants were subjected to a proteinase K (PK) accessibility assay in the presence of the indicated salt concentrations and salt plus puromycin (pur.). * indicates the inclusion of a detergent in the reaction. FL indicates full-length versions of XBP1u. Band 1 indicates protease-protected fragments of either ribosome translocon protected fragments or protected fragments after insertion into the membrane (lane 9). Band 2 indicates fragments protected by ribosomes. (C) The indicated versions of XBP1u transcripts containing a glycan acceptor site at the C-terminus were translated in vitro in the presence of RM. The reactions were stopped at the indicated time points by directly mixing with the sample buffer and analyzed by autoradiography. gXBP1u denotes the glycosylated form. (D) Cell lysates from HEK 293 cells expressing the indicated FLAG tagged XBP1u versions containing a glycan acceptor site were treated with endoglycosidase H (EndoH) or peptide-N-glycosidase F (PNGase) and analyzed by IB with FLAG.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** For the co-translational protein insertion, versions of XBP1 transcripts containing a glycan acceptor site were translated in vitro in the presence of liposomes or RM. The reactions were stopped after 30 min by directly mixing with the endoglycosidase H (EndoH) denaturation buffer and digested with Endo H before analyzing by autoradiography. gXBP1u denotes the glycosylated form of XBP1u. For the post-translational protein insertion, the indicated XBP1u transcripts were initially translated in the absence of RM and the nascent chains were released by the puromycin treatment. The post ribosomal supernatant was used for the insertion assay.\n\nSince we observed an interaction between XBP1u and the translocon, we wondered whether this interaction facilitates integration of XBP1u into the ER membrane. To address this, we introduced an N-glycan acceptor site prior to the stop codon of XBP1u constructs and translated them in the presence of RM. Glycosylation, a post-translocational event diagnostic of successful insertion, was readily detected for XBP1u, as determined by endoglycosidase H (Endo H) deglycosylation (Figure 5\u2014figure supplement 1). As expected, no glycosylation was detected for XBP1\u0394HR2, whereas XBP1-TR showed increased glycosylation. Importantly, the co-translational protein insertion pathway was solely responsible for these insertion activities since almost no glycosylation was detected during a post-translational protein insertion assay (Figure 5\u2014figure supplement 1). Furthermore, a time course experiment revealed a decreased rate of glycosylation for XBP1u relative to its counterpart XBP1u-TR, suggesting that its weak hydrophobic region HR2 impedes efficient insertion into the membrane (Figure 5C). Corroborating the in vitro results, in cells expressing XBP1u constructs we detected the HR2 dependent glycosylation of XBP1u, which was sensitive to the Endo H or peptide-N-glycosidase (PNGase) treatment (Figure 5D). As expected, the XBP1u glycosylation was significantly less efficient relative to that of XBP1u-TR (Figure 5D). These findings are consistent with recent observations that a fraction of XBP1u could be inserted into the ER membrane in cells (Chen et al., 2014). Collectively, these results suggest that the sequence of XBP1u HR2 has evolved in a way that it manages to follow the co-translational protein translocation pathway, but avoids efficient insertion into the ER membrane.\n\n### Disrupting the complex between Ire1\u03b1 and the Sec61 translocon reduces Ire1\u03b1-mediated cleavage of ER-targeted mRNAs\n\nWe next examined whether disrupting the interaction between Ire1\u03b1 and Sec61 translocon impairs Ire1\u03b1 mediated cleavage of XBP1u mRNA. To this end, we complemented Ire1\u03b1 or the translocon interaction defective Ire1\u03b1 mutants into either HEK 293 Ire1\u03b1\u2212/\u2212 cells generated by the CRISPR/Cas9 system or mouse embryonic fibroblast (MEF) Ire1\u03b1\u2212/\u2212 cells (Lee et al., 2002). The complementation of Ire1\u03b1 into Ire1\u03b1\u2212/\u2212 cells led to restoration of XBP1u mRNA splicing in an ER stress dependent manner, whereas the complementation of Ire1\u03b1 mutants either \u220610 or D443A showed sharply reduced XBP1u mRNA splicing (Figure 6A,B). In addition, the Ire1\u03b1 mutant D443A also exhibited a significant deficiency in downregulation of the RIDD mRNA substrates Blos1 and Scara3 (Hollien et al., 2009) (Figure 6C). These effects were not due to a defect in activation of Ire1\u03b1 mutants under ER stress conditions since we observed similar Ire1\u03b1 auto-phosphorylation in both wild type and \u220610 Ire1\u03b1 expressing cells (Figure 6D). These results support the model that the Sec61 translocon bridges Ire1\u03b1 and its mRNA substrates (Figure 7).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig6-v2.jpg)\n\n**Figure 6.:** (A) HEK 293 Ire1\u03b1\u2212/\u2212 cells generated by CRISPR/Cas9 were stably complemented with Ire1\u03b1-HA or its mutant (\u039410). The expression of these constructs was controlled by doxycycline, but the cells were not induced with doxycyline in order to achieve low expression levels of Ire1\u03b1. Cells were harvested in Trizol after either treatment with tunicamycin (TM: 5 \u03bcg/ml), thapsigargin (Tg: 2.5 \u03bcg/ml) or DTT (10 mM) for the indicated time periods and analyzed by XBP1u mRNA splicing assay and IB with the indicated antibodies. (B) Mouse embryonic fibroblast (MEF) Ire1\u03b1\u2212/\u2212 cells complemented with Ire1\u03b1-HA or its mutant (D443A) were harvested after either treatment with TM (5 \u03bcg/ml) for 5 hr or DTT (10 mM) for 2 hr and analyzed by XBP1u mRNA splicing assay and IB as described in Figure 2D. (C) The MEF Ire1\u03b1\u2212/\u2212 cells complemented with indicated Ire1\u03b1 variants were treated with TM (5 \u03bcg/ml) for 6 hr and analyzed by qPCR to measure Blos1 and Scara3 mRNA abundance. We normalized all mRNA abundance measurements to the housekeeping control Rpl19 mRNA. (D) HEK 293 Ire1\u03b1\u2212/\u2212 cells stably expressing Ire1\u03b1-HA or its mutant (\u039410) were treated with DTT for 2 hr, TM for 5 hr, Tg for 5 hr and analyzed for phosphorylated Ire1\u03b1.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07426/elife-07426-fig7-v2.jpg)\n\n**Figure 7.:** Ire1\u03b1 forms a complex with the Sec61 translocon, to which XBP1u mRNA is recruited by its ribosome nascent chains (RNCs) through the SRP pathway. Despite interacting with the Sec61 translocon, the XBP1u nascent chain is inefficiently inserted into the ER membrane due to its weak hydrophobic region. Upon ER stress, Ire1\u03b1 is activated through self-oligomerization and cleaves XBP1u mRNA to yield an active transcription factor, XBP1s, as well as to cleave ER-localized mRNAs through regulated Ire1-dependent decay (RIDD).\n\n## Discussion\n\nIn the present study, we have addressed how the low abundant Ire1\u03b1 effectively finds and cleaves its substrate mRNAs that are associated with ribosomes in the ER membrane. Our results have established a direct link between the co-translational translocation pathway and the UPR that facilitates efficient cleavage of ER-targeted mRNAs by Ire1\u03b1 during ER stress (Figure 7). Specifically, we have identified a complex comprising Ire1\u03b1 and the Sec61 translocon, which is stable even during ER stress conditions. We have shown that this interaction is specific and is not captured while Ire1\u03b1 is being synthesized in the Sec61 translocon since the other ER stress sensors, Ire1\u03b2, PERK or ATF6, fail to interact with the Sec61 translocon. Moreover, our domain mapping studies identified a conserved region in the luminal domain of Ire1\u03b1 required for this interaction. Several observations suggest that Ire1\u03b1 may directly interact or at least be in close proximity to the Sec61 translocon. First, our Ire1\u03b1 pull down experiment identified the Sec61 translocon as one of the major interacting proteins in addition to Sec63 and BiP (Figure 1A). We can exclude the possibility that Ire1\u03b1 associates with the Sec61 translocon through BiP since the interaction is stable even during ER stress conditions, whereas BiP dissociates from Ire1\u03b1 (Bertolotti et al., 2000). Second, our chemical crosslinking studies captured a crosslinked adduct between Ire1\u03b1 and the \u03b1 subunit of the Sec61 translocon (Figure 1D). However, interaction studies with purified Ire1\u03b1 and the Sec61 translocon are required to demonstrate if these proteins directly interact with each other. Interestingly, the Sec61 translocon interaction region is conserved only in vertebrates (Figure 2C), which suggests that the Ire1\u03b1 interaction with the Sec61 translocon may not be absolutely essential for cleavage of its mRNA substrates but would increase the fidelity and efficiency of Ire1\u03b1.\n\nWe hypothesized that XBP1u mRNA might be targeted and localized in proximity to the Ire1\u03b1-Sec61 translocon complex in order to be efficiently cleaved during ER stress to yield an active transcription factor for UPR target genes. Initial biochemical fractionation studies have shown that XBP1u mRNA is localized in the ER membrane although its encoded protein is soluble and localized both in the cytosol and nucleus (Stephens et al., 2005; Yoshida et al., 2006). Elegant studies from the Kohno group revealed that XBP1u mRNA is co-translationally targeted to the ER membrane as RNCs (Yanagitani et al., 2009). They further showed that this targeting reaction also depends on a hydrophobic region present in the C-terminus of XBP1u as well as a translational pausing sequence (Yanagitani et al., 2011). Based on the observation that the HR2 of XBP1u associates with protein-free liposomes, they concluded that XBP1u RNCs could directly bind with the ER lipid bilayer. Although these studies have established the importance of co-translational targeting of mRNA-XBP1 RNCs to the ER membrane, it was not clear how these nascent chains are specifically recruited to the ER membrane in the presence of other membrane compartments in the cell. In an attempt to address this issue, we reproduced the ER membrane recruitment assay with XBP1u RNCs in vitro. Consistent with the previous findings, XBP1u RNCs were robustly recruited to the ER membrane in an HR2 dependent manner (Figure 3B). However, XBP1u RNCs could not be efficiently recruited to ER membranes treated with trypsin, which suggested that an ER membrane factor might be required for binding with XBP1u RNCs (Figure 3B). The hydrophobic sequence HR2 dependent targeting of XBP1u RNCs to the ER membrane led us to propose that the SRP pathway might be involved in this targeting reaction. Our biochemical reconstitution studies have revealed that SRP can capture HR2 of XBP1u RNCs, which are then associated with the ER membrane by an interaction with the Sec61 translocon (Figure 3C,D and Figure 5A). It is possible that the weak hydrophobic sequence of HR2 of XBP1u RNCs can be captured in vitro but may not effectively compete for the SRP binding in cells due to the presence of numerous substrates of SRP, which are likely of stronger hydrophobicity than HR2 of XBP1u. However, our results argue against this idea since siRNA-mediated depletion of co-translational protein translocation components showed significantly reduced Ire1\u03b1-mediated cleavage of XBP1u mRNA in cells (Figure 4A,B). We speculate that the weaker signal sequence of HR2 might be strengthened by a translational pausing sequence in XBP1u, thus providing an increased time window for SRP binding. This is supported by the fact that co-translational pausing of XBP1u nascent chains are crucial for targeting to the ER membrane in vitro and in cells (Yanagitani et al., 2011).\n\nWe have shown that the SRP bound XBP1 RNCs are efficiently delivered to the Sec61 translocon, but do not form a tight complex with the Sec61 translocon (Figure 5A,B). Thus most are released into the cytosol and less than 10% are inserted into the ER membrane (Figure 5C,D). Future studies are required to precisely determine whether XBP1u nascent chains are released at the Sec61 translocon or after insertion into the ER lipid bilayer. Our results suggest that the moderate hydrophobicity of XBP1u HR2 impedes efficient insertion into the ER membrane, since replacing it with a stronger TMD from the transferrin receptor significantly improved insertion into the ER membrane (Figure 5C,D). It is puzzling why XBP1u evolved with a combination of a weak C-terminus HR2 and a translational pausing sequence to utilize the SRP pathway rather than a stronger TMD or a signal sequence. In plants, Ire1 catalyzes the cytoplasmic splicing of bZIP60 mRNA to produce an active transcription factor (Mishiba et al., 2013). Interestingly, bZIP60 mRNA is likely targeted to the ER membrane by the SRP pathway since it encodes a typical transmembrane protein. Therefore, the specific advantage of this unique targeting mechanism utilized by XBP1u mRNA in vertebrates is unclear. It may be that the presence of a soluble form of XBP1u is necessary for a fully switchable UPR. This hypothesis is supported by earlier studies showing that the XBP1u protein binds to the active transcription factor XBP1s and routes it for proteasomal degradation (Lee et al., 2003; Yoshida et al., 2006). This feed back loop has been shown to be important for accurately turning off UPR genes by XBP1s when the ER stress is restored. Recent studies have shown that numerous cytosolic mRNAs are localized in the ER membrane through poorly understood mechanisms (Reid and Nicchitta, 2015). Our findings of the promiscuous substrate selectivity exhibited by SRP in binding moderate hydrophobic region in XBP1u suggests that other cytosolic proteins encoding mRNAs could be targeted to the ER membrane through the SRP pathway.\n\nWe hypothesize that one of the reasons Ire1\u03b1 has evolved a specific interaction with the Sec61 translocon is to overcome the limitations imposed by its low abundance in the ER membrane relative to Sec61, where its substrate mRNAs are recruited (Ghaemmaghami et al., 2003). Indeed, our complementation experiments show that the Sec61 interaction defective Ire1\u03b1 mutants were not able to efficiently mediate splicing of XBP1u mRNA during ER stress as well as cleavage of the RIDD mRNA substrates (Figure 6A\u2013C). However, we found that overexpressing Ire1\u03b1 mutants restores the inefficient cleavage of mRNAs (data not shown), suggesting that the Sec61 translocon interaction is important to bridge the low abundant Ire1\u03b1 and its mRNA substrates. It is currently unclear how Ire1\u03b1 is localized to the specific translocon where XBP1u mRNA may be found, though it is feasible that Ire1\u03b1 may dynamically monitor the Sec61 translocon population and thus increase the likelihood of contact with translocon-localized XBP1u mRNA. Another intriguing hypothesis is that Ire1\u03b1 may interact with a subset of the translocon population where XBP1u mRNA could be preferentially localized. In any case, it is likely that another layer of complexity may exist in order to facilitate efficient co-localization of Ire1\u03b1 and XBP1u mRNA. In addition, since Ire1\u03b1 interacts with the Sec61 translocon, both under normal and ER stress conditions (Figure 1C,D), it is unclear what prevents Ire1\u03b1 from spuriously cleaving mRNAs associated with the Sec61 translocon under normal conditions. Most likely, accumulation of misfolded proteins triggers self-oligmerization and activation of the translocon-associated Ire1\u03b1 only during ER stress conditions. How Ire1\u03b1 is specifically arranged with the Sec61 translocon to access its substrate mRNAs and how it is coordinated with several other translocon-associated proteins remain important questions for future studies.\n\n## Materials and methods\n\n### DNA constructs\n\nThe in vitro expression Sp64 vector (Promega, Madison, WI) based construct encoding N-terminus FLAG-tagged XBP1u was generated from human XBP1u cDNA (Sino Biological, Inc. China) using standard molecular biology methods. XBP1u\u2206HR2 was created by deleting the amino acid coding sequence 186\u2013208 using both 5\u2032 phosphorylated oligos and the Phusion site directed mutagenesis protocol. XBP1u-TR was constructed by replacing HR2 (186\u2013208) with the oligonucleotides encoding the TMD of human transferrin receptor (IAVIVFFLIGFMIGYLGY) by an overlap extension PCR method. The TMD of transferrin receptor serves as a signal sequence for recognition by SRP as previously described (Mariappan et al., 2010). We appended a 3F4-tag sequence (GTNMKHMAGAAA) to the C-terminus of XBP1u constructs, which end with asparagine amino acid (N), thus yielding an N-glycosylation motif (NGT). For the preparation of RNCs, the open reading frames were PCR amplified using a forward 5\u2032 primer annealing to SP6 (Sharma et al., 2010), and a reverse primer lacking a stop codon.\n\nFor mammalian cell expression, we generated FLAG-tagged XBP1u with its 3\u2032 UTR by following the previously described procedure (Yanagitani et al., 2009) and cloned into pcDNA5/FRT/TO (Invitrogen, Carlsbad, CA). By overlap extension PCR, a partial 3F4 tag sequence (GTNMKHM) was added prior to the stop codon of FLAG-XBP1u 3\u2032 UTR in pcDNA5/FRT/TO, resulting in an NGT. The coding region of human Ire1\u03b1 was amplified from Ire1\u03b1-pcDNA3.EGFP (Addgene plasmid #13009, kindly provided by Dr Fumihiko Urano) and cloned into pcDNA5/FRT/TO carrying a C-terminal TEV protease cleavage site followed by either the HA- or the FLAG-tag. Similarly, the coding region of either mouse Ire1\u03b2 or mouse PERK (Addgene plasmid #21880, #21814, kindly provided by Dr David Ron) was cloned into pcDNA5/FRT/TO carrying a C-terminal TEV protease cut site followed by the FLAG-tag. The human ATF6\u03b1 was amplified including the 3xFLAG tag from p3xFLAG-ATF6 (Addgene plasmid #11975, kindly provided by Dr Ron Prywes) and cloned into pcDNA5/FRT/TO carrying a C-terminal TEV protease cut site followed by the HA-tag. The Ire1\u03b1 (K907A) RNase mutant (Tirasophon et al., 2000) construct was made by site directed mutagenesis. Deletion of the Ire1\u03b1 cytosolic domain (\u0394CD) lacking amino acids 477\u2013977, luminal domain (\u0394LD) lacking amino acids 30\u2013408 (Volmer et al., 2013), \u039434 lacking amino acids 409 to 443 and \u039410 lacking amino acids 434 to 443 were constructed using the Phusion site-directed mutagenesis protocol with the use of 5\u2032 phosphorylated primers. Alanine scanning mutagenesis was performed using an efficient one step site directed mutagenesis protocol (Zheng et al., 2004). All PCR reactions were performed with Phusion high fidelity DNA polymerase (New England Biolabs, Ipswich, MA), except for site directed mutagenesis, which used Pfu-Ultra polymerase (Agilent Technologies, Santa Clara, CA). 3% DMSO was included in all PCR reactions to enhance amplification. The coding regions of all constructs were sequenced to preclude any sequence error.\n\n### Antibodies and reagents\n\nAntibodies were from the following sources: anti- L13a (Santa Cruz Biotech, Dallas, TX), anti-FLAG M2 antibody and anti-FLAG M2 affinity gel (Sigma\u2013Aldrich, St. Louis, MO), anti-Ire1\u03b1 (Cat. No. #3294, Cell Signalling, Beverly, MA), anti-PERK (Cat. No. #3192, Cell Signalling), anti-HA agarose (Cat. No. #11815016001, Roche, Switzerland) and complete protease inhibitor cocktail tablets (Roche), anti-Tubulin (Cat. No. #ab11312, Abcam, UK), anti-SRP54 (BD Biosciences, Franklin Lakes, NJ), anti-SRP14 (Cat. No. #PA5-27554, Fisher Scientific), Anti-HA (16B12, Cat. No. #MMS-101P-200, Covance, Princeton, NJ), anti-ATF6 (Cat. No. #sc-22799, Santa Cruz, Dallas, TX), Calnexin (Cat. No. #SPA-865, Enzo life sciences), Anti-mouse Goat HRP (Cat. No. #11-035-003, Jackson Immunoreserach, West Grove, PA), Anti-rabbit Goat HRP (Cat. No. #111-035-003, Jackson Immunoreserach) and Antibodies against TRC40, SR\u03b1, Sec61\u03b1, Sec61\u03b2, and GFP were previously described (Snapp et al., 2004). The purified SRP and the wheat germ translation system were purchased from tRNA probes, Texas. Reagents were from the following sources: Digitonin (EMD Millipore, Billerica, MA), DTT (American Bioanalytical, Natick, MA), Dithiobis (succinimidyl propionate) (DSP, Thermo Scientific, Waltham, MA) Bismaleimidohexane (BMH, Thermo Scientific) and protein-A agarose (RepliGen, Waltham, MA). siRNA oligos were purchased from Integrated DNA Technologies (San Jose, CA). Sec61\u03b1 3\u2032 UTR siRNA (5\u2032-CACUGAAAUGUCUACGUUUtt-3\u2032) was previously described (Lang et al., 2012). SR\u03b1 siRNA (5\u2032-UAUAAACUGGACAACCAGUtt-3\u2032) sequence was previously described, but it was used as an shRNA plasmid (Lakkaraju et al., 2007). shRNA plasmids of luciferase, SRP14, and SRP54 have been previously described (Lakkaraju et al., 2007).\n\n### Cell culture and transfection\n\nHeLa, HEK 293-Flp-In T-Rex (Invitrogen), and MEF Ire1\u03b1\u2212/\u2212 FRT cell lines (Hollien et al., 2009) were cultured in high glucose DMEM containing 10% FBS at 5% CO2. Transfections with either plasmids or siRNA oligos were performed with Lipofectamine 2000 (Invitrogen) according to the manufacture's protocol. For the siRNA mediated gene silencing, HeLa cells were transfected with 40 pmol of siRNA oligos per well in a 12 well plate using Lipofectamine 2000. At 24 hr after transfection, cells were replated for the second round of transfection with siRNA oligos at 48 hr. 6 hr later cells were transfected with 200 ng of pcDNA5-FLAG-XBP1u-3\u2032 UTR. 96 hr after the first siRNA transfection, cells were harvested using the Trizol reagent (Invitrogen) for isolation of total proteins and RNA and analysed by IB and RT-PCR of XBP1-mRNA, respectively. shRNA mediated gene silencing in HEK 293 cells was performed by following the previously established protocol (Lakkaraju et al., 2007) except that at fifth day of transfection, cells were replated for transfection with FLAG-XBP1u-3\u2032 UTR and harvested in Trizol after treatment with DTT at sixth day of initial transfection for analysis by both IB and RT-PCR of XBP1u mRNA. To establish stable cell lines, HEK 293-Flp-In T-Rex or MEF Ire1\u03b1\u2212/\u2212 FRT cells were transfected with 1 \u03bcg of pOG44 vector (Invitrogen) and 0.1 \u03bcg of FRT vectors containing Ire1\u03b1 or its mutants using Lipofectamine 2000. MEF Ire1\u03b1\u2212/\u2212 FRT cells were plated in hygromycin (50 \u03bcg/ml) 24 hr after transfection, while HEK 293-Flp-In T-Rex cells were plated in hygromycin (100 \u03bcg/ml) plus blasticidin (10 \u03bcg/ml). The medium was replaced every 3 days until colonies appeared. To regulate the expression of Ire1\u03b1 or its mutants in complemented MEF Ire1\u03b1\u2212/\u2212 cells, we transfected with pCDNA/tetR (Invitrogen, a kind gift from Dr Dhasakumar Navaratnam) and selected with blasticidin (10 \u03bcg/ml) until colonies appeared. The colonies were picked and the expression of recombinant Ire1\u03b1 or its mutants was compared with control MEF cells.\n\n### Immunoaffinity purification and co-immunoprecipitation\n\nFor purification of Ire1\u03b1 associated proteins, HEK293 cells or HEK293 stable cells expressing Ire1\u03b1 -HA were induced with 250 ng/ml of Doxycycline for 48 hr. Cells were lysed in Buffer A (10 mM Hepes pH 7.4, 250 mM Sucrose, 2 mM MgCl2, 1\u00d7 protease inhibitor cocktail) by repeated passage through a 23-gauge syringe needle. ER microsomes were isolated from low speed supernatants (2823\u00d7g for 30 min) by centrifugation for 1 hr at 75,000\u00d7g. Microsomes were resuspended in Buffer B (10 mM Hepes pH 7.4, 250 mM Sucrose, 2 mM MgCl2, 0.5 mM DTT) and solubilized in lysis buffer (50 mM Hepes, 150 mM NaCl, 5 mM MgAc, 1 mM DTT, 1\u00d7 protease inhibitor cocktail, 1% digitonin) for 30 min at 4\u00b0C. The supernatant was collected by centrifugation at 20,000\u00d7g for 15 min and incubated with rat anti-HA-agarose (Roche). The beads were extensively washed with lysis buffer, but containing 0.2% digitonin. The bound material was eluted from the column using 0.1 M glycine, pH 2.3 and 0.5% Triton-X100. The elutions were TCA precipitated and analysed by SDS-PAGE, followed by Coomassie blue stain. Bands of interest were identified by mass spectrometry at Keck MS and Proteomics Resource, Yale School of Medicine. For co-immunoprecipitation of endogenous Ire1\u03b1 with the Sec61 translocon, HEK 293 cells were treated either with or without 10 mM DTT for 2 hr. Cells were lysed in Buffer A (50 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1% digitonin) by rotating 30 min at 4\u00b0C. The supernatant was collected by centrifugation at 20,000\u00d7g for 15 min and incubated with anti-GFP or anti-Sec61\u03b2 antibodies conjugated to protein-A agarose. The beads were extensively washed with Buffer A, but containing 0.2% digitonin. The bound material was eluted from the beads by directly boiling in SDS sample buffer. The clean blot IP system (Thermo Scientific) was used for secondary antibodies to minimize background from the primary antibodies. For co-immunoprecipitation of recombinant Ire1\u03b1 and the endogenous Sec61 translocon, HEK 293 cells were transiently transfected with HA-tagged Ire1\u03b1 versions. After 36 to 48 hr of transfection, cells were harvested in 1xPBS and lysed as above. The resulting digitonin cell extract was bound to anti-HA-agarose (Roche), washed, eluted SDS sample buffer and analysed by IB.\n\n### Trypsin digestion of RM\n\nRM derived from canine pancreas have been described (Walter and Blobel, 1983) RM was treated with 20 \u03bcg/ml of trypsin (Sigma) for 1 hr on ice. The reaction was stopped by adding 2 mM PMSF with continued incubation for 15 min on ice. The trypsin digested RM was sedimented through 0.5 M sucrose in a physiological salt buffer (PSB: 50 mM Hepes pH 7.4, 100 mM KAc, 2 mM MgAc) for 12 min at 70,000 rpm/TLA100.3 (Beckman, Brea, CA) to remove trypsin. The resulting pellet was resuspended in membrane buffer (50 mM Hespes pH 7.4, 250 mM Sucrose, 100 mM KAc, 2 mM MgAc, and 1 mM DTT). As a control, RM were treated similarly in parallel but without trypsin as a control.\n\n### Membrane recruitment assay\n\nThis was done as described previously (Yanagitani et al., 2011) with the following modifications. Transcripts encoding versions of XBP1u lacking or containing a stop codon were translated in a rabbit reticulocyte lysate translation system (Sharma et al., 2010) supplemented with 35S-methionine in the presence or absence of membranes for 20 min at 32\u00b0C. The translation reaction was layered on 1 M sucrose prepared in PSB. After sedimentation for 15 min at 20,000\u00d7g, the supernatants and the pellets were analysed by SDS-PAGE and autoradiography.\n\n### RNC affinity purification\n\nRNCs of XBP1u versions were affinity purified using anti-FLAG agarose, similarly to previous methods (Mariappan et al., 2010). In brief, 300 \u03bcl reactions were translated for 20 min and immediately chilled on ice. The samples were adjusted to 2 mM cycloheximide, diluted to 1 ml with PSB, and incubated with 20 \u03bcl suspension of anti-FLAG affinity resin recognizing the N-terminal FLAG-tag for 1.5 hr. After being washed extensively with PSB, the bound RNCs were eluted in SDS sample buffer, and analysed by both IB and autoradiography.\n\n### SRP dependent targeting in a wheat germ translation system\n\nXBP1u transcripts lacking a termination codon were translated in a wheat germ extract supplemented with 35S-methionine, 32 nM purified SRP (tRNA probes) and/or puromycin/KAc treated RM (PK-RM). After incubation at 25\u00b0C for 45 min, the reactions were sedimented through 0.25 M sucrose in PSB for 15 min at 20,000\u00d7g. The supernatants and the pellets were analysed by SDS-PAGE and autoradiography.\n\n### In vitro chemical crosslinking\n\nTranscripts encoding versions of XBP1u lacking a termination codon were translated in the presence of RM for 25 min at 32\u00b0C. The membrane targeted RNCs were isolated by centrifugation through a 0.5 M sucrose cushion for 12 min at 70,000 rpm/TLA100.3, and the resulting pellet was resuspended in PSB. Crosslinking was performed with 400 \u03bcM BMH (a homo-bifunctional cysteine-reactive crosslinker) for 6 min at 25\u00b0C and quenched with 25 mM 2-mercaptoethanol. The resulting products were denatured with 1% SDS, 100 mM Tris-HCl pH 8.0 for 30 min at 55\u00b0C and diluted 10-fold IP buffer. The respective antibodies were added and incubated for 1.5 hr at 4\u00b0C, followed by incubation with protein-A agarose (Repligen) for 1.5 hr at 4\u00b0C. The beads were washed at least three times with IP buffer, eluted with SDS sample buffer and analysed after heating to 95\u00b0C, but 55\u00b0C/30 min for the Sec61\u03b1 sample. Samples were treated with RNase A (100 \u03bcg/ml) for 10 min at 37\u00b0C before analyzing by SDS-PAGE and autoradiography.\n\n### In vivo chemical crosslinking\n\nThis was done as described previously with the following modifications (Oyadomari et al., 2006). HEK 293 cells stably expressing HA-tagged Ire1\u03b1 were semipermeabilized with 0.015% digitonin containing buffer (20 mM Hepes pH 7.4, 110 mM KAc, 2 mM MgAc) and treated with various concentrations of DSP crosslinker for 30 min at room temperature. Samples were collected in quenching/denaturing buffer containing 2% SDS, 6 M urea, 100 mM Tris-HCl pH 8.0, incubated for 30 min at 37\u00b0C, diluted 20-fold IP buffer and IP with anti-HA antibodies. The resulting IP was treated with DTT containing SDS sample buffer for 30 min at 37\u00b0C to reverse the crosslinking and analyzed by IB.\n\n### Quantitative real-time PCR\n\nFor all RNA analyses, the total RNA was isolated from treated or non-treated cells using Trizol reagent (Invitrogen), treated with RQ1 RNase-Free DNase (Promega, Madison, WI) to remove residual DNA, and cDNA was synthesized using 2 \u03bcg of total RNA as a template, random hexamers, and M-MuLV reverse transcriptase (NEB). We measured relative mRNA abundance by real time quantitative PCR (BioRad, Hercules, CA) with SYBR green as the fluorescent dye. Each sample was measured in triplicate and normalized to Rpl19 mRNA levels. The primers for mouse Rpl19, Blos1 and Scar3 were previously described (Hollien et al., 2009).\n\n### Ire1\u03b1 auto-phosphorylation assay\n\nA 6% polyacrylamide gel was made containing 25 \u03bcM Phos-tag (Wako, Japan) and 50 \u03bcM MnCl2. SDS-PAGE was conducted at 100 V for 3 hr, followed by Mn chelation with 1 mM EDTA. The gel was transferred to nitrocellulose and probed with an anti-Ire1 antibody (Cell Signalling).\n\n### CRISPR/Cas9 mediated depletion of Ire1\u03b1 in HEK 293-Flp-In T-Rex\n\nThe Ire1\u03b1 targeting sequence (5\u2032 GATGGCAGCCTGTATACGCTTGG 3\u2032) was cloned into the gRNA expression vector (Mali et al., 2013) in order to direct Cas9 nuclease activity toward the fourth coding exon of Ire1\u03b1. HEK 293-Flp-In T-Rex cells were plated in a six-well plate and transfected at 70% confluence with 250 ng of the gRNA expression vector and 250 ng of the pSpCas9(BB)-2A-Puro (Ran et al., 2013) expression plasmid with Lipofectamine 2000. Expression of Cas9 was selected for by puromycin treatment (2.5 \u03bcg/ml) for 48 hr, after which cells were returned to non-selecting media for 72 hr. Cells were then plated at 0.5 cells/well in 96 well plates and expanded for 3 weeks. Individual clones were examined for Ire1\u03b1 knock out by IB against endogenous Ire1\u03b1.\n",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "c6cf5a7b-0083-48f5-873a-cf1e51094095",
+      "submission_id": "b1149b74-5a68-42bb-b8da-f5cbcd9daf23",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Reid Gilmore, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07426.014](https://doi.org/10.7554/eLife.07426.014)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA functional link between the co-translational protein translocation pathway and the UPR\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nPlum et al. describe an interaction between Ire1 and Sec61 that appears to be important for processing of mRNAs (XBP1u and RIDD substrates) by the Ire1 endonuclease. A hydrophobic segment in the XBP1-u nascent chain is responsible for targeting of XBP1u RNCs to the Sec61 complex. Depletion of subunits of the SRP, the SR or Sec61 reduces processing of XBP1u in cells that are treated with stress inducing agents. Plumb et al. have identified a short sequence in vertebrate Ire1\u03b1 that is necessary for the Sec61-Ire1 interaction. While this manuscript builds on previous research indicating that XBP1u mRNA is translated in the vicinity of the RER, Plum et al. have outlined a reasonable mechanism to explain how a membrane bound endonuclease has access to a mRNA encoding a soluble protein. A revised version of this manuscript should be of interest to the readership of eLife. The most important points to address are listed below.\n\n1) It is surprising to me that the authors do not emphasize pathway specificity of the effects in their paper, particularly with the SRP/SR/Sec61 knockdown experiments. Figure 4C is the only point where the PERK and ATF6 pathways are examined in this context, and they do not appear to be affected using the same stress conditions as in other figures (10 mM DTT for 2h). This is a very important point that merits emphasis because a major consequence of perturbing co-translational translocation is a markedly reduced load of ER clients. This may well blunt the effects of ER stressors whose actions rely on unfolded protein burden. Thus, a relatively trivial explanation for why knockdown of SRP/SR/Sec61 has reduced Xbp1 splicing is simply due to reduced substrate burden leading to reduced Ire1 activation. The strongest argument against this is direct illustration that in these same cells, activation of the other pathways is not affected. It therefore seems important to emphasize this in the paper, and ideally, have at least one carefully controlled experiment (e.g., Figure 2D, Figure 4A, and/or Figure 4B) that simultaneously monitors both Ire1\u03b1 and PERK activity to demonstrate selective effects on the former. Surprisingly I could not find experiments to test the effect of these depletions on IRE1 activation (assessed by its autophosphorylation status).\n\n2) The evidence that the IRE1\u03b1-Sec61\u03b1 interaction plays an important role in XBP1u splicing and the wholesale degradation of membrane bound mRNAs (so-called RIDD) is less compelling. It might be helpful to garner more evidence by comparing XBP1u mRNA splicing between wildtype IRE1\u03b1 and a few other IRE1\u03b1 mutants that fail to engage Sec61\u03b1 in a complex when overexpressed (these are noted in Figure 2A and 2B). It would also be helpful to know if these mutations have no effect on IRE1 activation, which would leave effects on substrate recruitment as their most plausible mode of action.\n\n3) Information concerning the expression of Ire1 relative to Sec61 is necessary to understand the proposed mechanism. If Ire1 levels are low in abundance relative to Sec61 (e.g., <1/10) the interaction of Sec61 and Ire1 would have little impact on splicing. The authors should provide an estimate of the Sec61:Ire1 ratio in the HEK293 cells, which can probably be obtained from the data presented in Figure 1\u2013figure supplement 2.\n\n4) The authors need to clarify/revise the interpretation of the crosslinking experiment shown in Figure 5A. XBP1u has three cysteine residues (C204, C215 and C247). C204 is missing from XBP1u-TR due to the exchange of the HR2 and TR-TM segment. C247 will be inside the large ribosomal subunit so C247 cannot crosslink to Sec61\u03b1 or Sec61\u03b2. Canine Sec61\u03b2 has a single cysteine residue. Given these facts, a ternary crosslinked product that contains XBP1u-TR, Sec61\u03b1 and Sec61\u03b2 is not possible using a maleimide crosslinker. Recovery of uncrosslinked XBP as a major band in the anti-Sec61\u03b2 lanes casts doubt on the identification of the XBP1 x \u03b1 x \u03b2 band in Figure 5A. It is also clear that this putative ternary product is not detected in the anti-Sec61\u03b1 IP. This upper band is probably explained by crosslinking of C247 to a large ribosomal subunit protein that is located in the exit tunnel. Binary crosslinked products (XBP1u-Sec61\u03b2, XBP1u-TR-Sec61\u03b2 and XBP1u-TR-Sec61\u03b1) are convincing, or very weak (XBP1u-Sec61\u03b1) consistent with the authors\u2019 conclusion that XBP1u is targeted to the Sec61 translocation channel, but inefficiently inserted into the membrane.\n",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37644388-15e1-4ecb-9411-6bf340b33798",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C1",
+      "claim": "Ire1\u03b1 forms a complex with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we reveal that Ire1\u03b1 forms a complex with the Sec61 translocon to cleave its mRNA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoaffinity purification and mass spectrometry identifying Sec61 subunits, co-immunoprecipitation experiments, and chemical crosslinking studies shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "466f9d30-8be5-4bc3-b2f1-b1e71fb2594c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C2",
+      "claim": "XBP1u mRNA is recruited to the Ire1\u03b1-Sec61 translocon complex through its nascent chain",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Ire1\u03b1's key substrate, XBP1u mRNA, is recruited to the Ire1\u03b1-Sec61 translocon complex through its nascent chain, which contains a pseudo-transmembrane domain to utilize the signal recognition particle (SRP)-mediated pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro translation experiments, RNC affinity purification showing SRP binding, and membrane recruitment assays shown in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "044bd8e3-ef1e-4a32-b7a1-ba784bdad612",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C3",
+      "claim": "Depletion of SRP leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of SRP, the SRP receptor or the Sec61 translocon in cells leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA-mediated knockdown experiments showing reduced XBP1u mRNA splicing in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "95db3f06-276d-4caa-810c-e851be86d052",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C4",
+      "claim": "Depletion of the SRP receptor leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of SRP, the SRP receptor or the Sec61 translocon in cells leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA-mediated knockdown of SR\u03b1 showing nearly abolished XBP1u mRNA splicing in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "c0ef7d86-c490-45c1-8fc6-49c2e9870aac",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C5",
+      "claim": "Depletion of the Sec61 translocon leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of SRP, the SRP receptor or the Sec61 translocon in cells leads to reduced Ire1\u03b1-mediated splicing of XBP1u mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA-mediated knockdown of Sec61\u03b1 showing substantially reduced XBP1u mRNA splicing in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "e97dd49a-2f3e-4ad9-b10f-4c1faf2a5174",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C6",
+      "claim": "Mutations in Ire1\u03b1 that disrupt the Ire1\u03b1-Sec61 complex cause reduced Ire1\u03b1-mediated cleavage of ER-targeted mRNAs",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutations in Ire1\u03b1 that disrupt the Ire1\u03b1-Sec61 complex causes reduced Ire1\u03b1-mediated cleavage of ER-targeted mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by complementation experiments with Ire1\u03b1 mutants showing reduced XBP1u mRNA splicing and RIDD substrate cleavage in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "8561fe4a-3567-4f92-9740-a4d6303146ae",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C7",
+      "claim": "The Unfolded Protein Response is coupled with the co-translational protein translocation pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data suggest that the Unfolded Protein Response is coupled with the co-translational protein translocation pathway to maintain protein homeostasis in the ER during stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective data showing Ire1\u03b1-Sec61 complex formation, SRP-mediated XBP1u targeting, and functional consequences of disrupting these interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "aa514ea1-bb01-4629-8f46-5c930f31be9a",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C8",
+      "claim": "All three subunits of the Sec61 translocon (Sec61\u03b1, Sec61\u03b2, and Sec61\u03b3) were identified as Ire1\u03b1-associated proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in addition to a known Ire1\u03b1 interacting protein, BiP (Bertolotti et al., 2000), we identified all three subunits of the Sec61 translocon (Sec61\u03b1, Sec61\u03b2, and Sec61\u03b3) and Sec63 (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry analysis of immunoaffinity purified Ire1\u03b1-HA complexes shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "ba773fd8-cf21-4849-847e-5a1a080fb704",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C9",
+      "claim": "BiP is a known Ire1\u03b1 interacting protein",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in addition to a known Ire1\u03b1 interacting protein, BiP (Bertolotti et al., 2000), we identified all three subunits of the Sec61 translocon (Sec61\u03b1, Sec61\u03b2, and Sec61\u03b3) and Sec63 (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bertolotti et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "0bef669c-c654-4313-a21a-cc9447bf8f11",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C10",
+      "claim": "Sec63 was identified as an Ire1\u03b1-associated protein",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in addition to a known Ire1\u03b1 interacting protein, BiP (Bertolotti et al., 2000), we identified all three subunits of the Sec61 translocon (Sec61\u03b1, Sec61\u03b2, and Sec61\u03b3) and Sec63 (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "06c28b1a-3ea7-430c-8f12-331d0796ed33",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C11",
+      "claim": "Endogenous Ire1\u03b1 co-immunoprecipitates with endogenous Sec61\u03b2 and Sec61\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "We could detect a significant amount of endogenous Ire1\u03b1 precipitating with Sec61\u03b2 and Sec61\u03b1 by immunoblotting (IB) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "e2cfb4d3-f1fa-4e3e-80e0-7521b2ccf9db",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C12",
+      "claim": "The interaction between Ire1\u03b1 and the Sec61 translocon remains stable after DTT treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, immunodepletion of the Sec61 translocon nearly quantitatively depleted the endogenous Ire1\u03b1, indicating that almost all Ire1\u03b1 is in a complex with the Sec61 translocon in cells (Figure 1\u2014figure supplement 2). Interestingly, this interaction remained stable even after treatment of cells with the ER stress inducer DTT, which impairs protein folding by preventing disulfide bond formation in the ER lumen (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments with DTT-treated cells shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "b6f9fa98-f174-4302-8d29-90ab7e311e1b",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C13",
+      "claim": "Almost all Ire1\u03b1 is in a complex with the Sec61 translocon in cells",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, immunodepletion of the Sec61 translocon nearly quantitatively depleted the endogenous Ire1\u03b1, indicating that almost all Ire1\u03b1 is in a complex with the Sec61 translocon in cells (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunodepletion experiments shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a04b609e-4789-44bb-9f96-e9f39194d443",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C14",
+      "claim": "The Sec61 translocon selectively associates with Ire1\u03b1 but not with Ire1\u03b2, PERK, or ATF6\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "We further verified that the Sec61 translocon selectively associated with Ire1\u03b1, but not with the Ire1\u03b1 paralogue Ire1\u03b2 or with the other ER stress sensors PERK (Harding et al., 1999; Sood et al., 2000) and ATF6\u03b1 (Haze et al., 1999) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "c2fccfa2-10c3-43eb-8020-3eededc21973",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C15",
+      "claim": "The \u03b1 subunit of the Sec61 translocon can be crosslinked with Ire1\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1 subunit of the Sec61 translocon could be crosslinked with Ire1\u03b1, as judged by the increase in Sec61\u03b1 signal with increasing concentration of crosslinker (Figure 1D), thus supporting a direct interaction between Ire1\u03b1 and the Sec61 translocon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chemical crosslinking experiments with DSP shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "9eefa32c-6fee-4eef-a49e-1ff74968d24b",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C16",
+      "claim": "Deletion of amino acids 434 to 443 in Ire1\u03b1 nearly abolishes the interaction with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "While deletion of the luminal domain of Ire1\u03b1 (amino acids 30 to 408) had no effect on the interaction with the Sec61 translocon, deletion of an evolutionarily conserved 10 amino acid region (amino acids 434 to 443) in the luminal portion of Ire1\u03b1 adjacent to its TMD nearly abolished the interaction with the Sec61 translocon (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments with Ire1\u03b1 deletion mutants shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "710888db-1c9d-401c-af68-53c947197056",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C17",
+      "claim": "Val437, Asp438, Met440, Leu441 and Asp443 in Ire1\u03b1 are crucial for the interaction with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis of single residues within this region further revealed that Val437, Asp438, Met440, Leu441 and Asp443 are crucial for the interaction since replacing any of these amino acids with alanine significantly reduced the interaction with the translocon (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by alanine scanning mutagenesis and co-immunoprecipitation experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "817614d1-7b5f-4d3c-af3d-fe95483d6252",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C18",
+      "claim": "Deletion of the luminal domain of Ire1\u03b1 (amino acids 30 to 408) has no effect on the interaction with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "While deletion of the luminal domain of Ire1\u03b1 (amino acids 30 to 408) had no effect on the interaction with the Sec61 translocon, deletion of an evolutionarily conserved 10 amino acid region (amino acids 434 to 443) in the luminal portion of Ire1\u03b1 adjacent to its TMD nearly abolished the interaction with the Sec61 translocon (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-immunoprecipitation experiments with Ire1\u03b1 deletion mutants shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "2373b795-44af-4b68-b87b-687397f533de",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C19",
+      "claim": "Ire1\u03b1 mediated splicing of XBP1u mRNA is substantially reduced in Sec61\u03b1 depleted cells during ER stress",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Ire1\u03b1 mediated splicing of XBP1u mRNA was substantially reduced in Sec61\u03b1 depleted cells during ER stress (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by siRNA-mediated knockdown of Sec61\u03b1 and XBP1u mRNA splicing assay shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a6b60ecd-258f-4e80-9bd9-da5aeac8fa1f",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C20",
+      "claim": "XBP1u mRNA is co-translationally targeted to the ER membrane",
+      "claim_type": "EXPLICIT",
+      "source": "Although XBP1u mRNA encodes a soluble protein and shuttles between the cytosol and nucleus (Yoshida et al., 2006), recent studies have shown that XBP1u is co-translationally targeted to the ER membrane for efficient splicing of its mRNA by Ire1\u03b1 (Yanagitani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yanagitani et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "5f7cd9d2-cce6-4e5e-8c09-82723c0ca307",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C21",
+      "claim": "XBP1u targeting to the ER membrane depends on a C-terminal hydrophobic region 2 (HR2)",
+      "claim_type": "EXPLICIT",
+      "source": "This targeting reaction also depends on a C-terminal hydrophobic region 2 (HR2) as well as a translational pausing sequence located in the extreme C-terminus of XBP1u (Yanagitani et al., 2009, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yanagitani et al., 2009, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "986458bf-0044-49a3-995a-c0222112a281",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C22",
+      "claim": "XBP1u targeting to the ER membrane depends on a translational pausing sequence",
+      "claim_type": "EXPLICIT",
+      "source": "This targeting reaction also depends on a C-terminal hydrophobic region 2 (HR2) as well as a translational pausing sequence located in the extreme C-terminus of XBP1u (Yanagitani et al., 2009, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yanagitani et al., 2009, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "12b1a0e2-4da4-45fc-add9-28c08e7534ee",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C23",
+      "claim": "XBP1u-RNCs are recruited to rough microsomes in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the truncated XBP1u transcripts produced XBP1u-RNCs that were recruited to RM, as indicated by XBP1u peptides in the pellet fraction (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro translation and membrane recruitment assays shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d54516cd-e147-4f40-87c9-55e4175c6729",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C24",
+      "claim": "Trypsin digestion of rough microsomes renders them inactive for XBP1u recruitment",
+      "claim_type": "EXPLICIT",
+      "source": "However, a mild trypsin digestion of RM rendered them inactive for XBP1u recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro membrane recruitment assays with trypsin-treated RM shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "78459fd3-1f7c-4ca5-bd69-98572afa3e3b",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C25",
+      "claim": "Deletion of HR2 abolishes XBP1u recruitment to the ER membrane",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u recruitment to the ER membrane was dependent on the presence of HR2 since its deletion (XBP1\u0394HR2) abolished the membrane recruitment, while replacing HR2 with a stronger hydrophobic TMD from the transferrin receptor (XBP1u-TR) restored XBP1u recruitment to RM (Figure 3A,B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro membrane recruitment assays with XBP1\u0394HR2 shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "ea169314-9a6a-47d3-ab9c-28abd8f8aee1",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C26",
+      "claim": "Replacing HR2 with a TMD from the transferrin receptor restores XBP1u recruitment to rough microsomes",
+      "claim_type": "EXPLICIT",
+      "source": "XBP1u recruitment to the ER membrane was dependent on the presence of HR2 since its deletion (XBP1\u0394HR2) abolished the membrane recruitment, while replacing HR2 with a stronger hydrophobic TMD from the transferrin receptor (XBP1u-TR) restored XBP1u recruitment to RM (Figure 3A,B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro membrane recruitment assays with XBP1u-TR shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "84fd18ac-1298-413a-bbda-3515bddb47a4",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C27",
+      "claim": "SRP is enriched in RNCs of XBP1u but not in RNCs of XBP1\u0394HR2",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, SRP was enriched in RNCs of XBP1u but not in RNCs of XBP1\u0394HR2 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNC affinity purification and immunoblotting shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "1f79c80b-8026-4536-8b9f-af24bd5d389c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C28",
+      "claim": "XBP1u-TR exhibits increased binding to SRP compared to XBP1u",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, XBP1u-TR exhibited slightly increased binding to SRP since it contains a genuine TMD (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNC affinity purification and immunoblotting shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "9e255137-1d29-4f9c-92da-ae0f954c24ba",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C29",
+      "claim": "Adding purified SRP to wheat germ extract with PK-RM shifts XBP1u localization to the pellet fraction",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, adding back purified SRP to the original level found in RM shifted XBP1u localization to the pellet fraction, mirroring the membrane recruitment of XBP1u.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro translation in wheat germ extract with purified SRP and PK-RM shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "b426dde2-3dc3-4a70-9fa8-fac22d0f4334",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C30",
+      "claim": "Depletion of SRP14 in cells shows sharply reduced XBP1u mRNA splicing upon DTT treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Cells depleted of the SRP subunits SRP14 or SRP54 showed sharply reduced XBP1u mRNA splicing upon treatment with the ER stress inducer DTT (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by shRNA-mediated knockdown and XBP1u mRNA splicing assay shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d27db8d4-869e-4606-8367-afdb60d59ee3",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C31",
+      "claim": "Depletion of SRP54 in cells shows sharply reduced XBP1u mRNA splicing upon DTT treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Cells depleted of the SRP subunits SRP14 or SRP54 showed sharply reduced XBP1u mRNA splicing upon treatment with the ER stress inducer DTT (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by shRNA-mediated knockdown and XBP1u mRNA splicing assay shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "2939abdd-a086-4e57-9628-22784b0150da",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C32",
+      "claim": "Depletion of SR\u03b1 nearly abolishes splicing of XBP1u mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, depletion of the \u03b1 subunit of the SRP receptor (SR\u03b1) nearly abolished splicing of XBP1u mRNA (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by siRNA-mediated knockdown and XBP1u mRNA splicing assay shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "3e2eafbe-5e12-4f21-9250-52690447650b",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C33",
+      "claim": "The level of Ire1\u03b1 is unchanged by transient depletion of SRP or its receptor",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these effects were not due to a defect in the biosynthesis of Ire1\u03b1 since its level was unchanged by transient depletion of either SRP or its receptor (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting for Ire1\u03b1 in SRP/SR\u03b1 knockdown cells shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "383e8296-d165-4242-a6d7-b6659db59033",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C34",
+      "claim": "Auto-phosphorylation of PERK and Ire1\u03b1 in response to DTT treatment is identical under control and SRP54/14 knockdown conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Auto-phosphorylation of PERK and Ire1\u03b1 in response to DTT treatment was identical under both control and SRP54/14 knockdown conditions (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phos-tag gel analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "63716914-996f-4168-9bf2-845a47530df3",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C35",
+      "claim": "Depletion of SRP14, SR\u03b1 or Sec61\u03b1 has little effect on PERK phosphorylation and ATF6 cleavage in response to ER stress",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, depletion of SRP14, SR\u03b1 or Sec61\u03b1 had little effect on the amount of PERK phosphorylation and ATF6 cleavage in response to ER stress (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting for PERK and ATF6\u03b1 in knockdown cells shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "35b0da88-7d7f-4a8a-9fa0-82267a32ebc8",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C36",
+      "claim": "XBP1u weakly crosslinks to Sec61\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a weak crosslinking between XBP1u and the Sec61\u03b1 subunit (Figure 5A, lanes 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chemical crosslinking experiments with BMH shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "4cee659b-8bda-474f-97ee-d560617ae79a",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C37",
+      "claim": "XBP1u strongly crosslinks to the \u03b2 subunit of the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, XBP1u strongly crosslinked to the \u03b2 subunit of the translocon, presumably via a single cysteine residue localized in its cytosolic domain (Figure 5A, lanes 2 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chemical crosslinking experiments with BMH shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "9383322a-7f39-4eee-9ea3-f3e544c902b5",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C38",
+      "claim": "XBP1u-TR shows improved crosslinking to Sec61\u03b1 compared to XBP1u",
+      "claim_type": "EXPLICIT",
+      "source": "This was further supported by the improved crosslinking between XBP1u and Sec61\u03b1 observed when we used XBP1u-TR, which contains a genuine TMD (Figure 5A, compare 4 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by chemical crosslinking experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "9e671ff3-6b1b-42cb-ba5a-924f01b4ab24",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C39",
+      "claim": "XBP1u HR2 forms a weak junction with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed efficient protection of the XBP1u signal sequence HR2 under physiological salt concentration but it became partially PK sensitive under high salt conditions, suggesting that XBP1u HR2 forms a weak junction with the translocon (Figure 5B compare band 1 in lane 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proteinase K accessibility assay shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "9e187aac-b3ca-4881-ad15-287305513f12",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C40",
+      "claim": "XBP1u-TR forms a tight complex with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we observed a tight complex between XBP1u-TR and the translocon as judged by an increased protection of XBP1-TR relative to XBP1u under high salt conditions (Figure 5B compare band 1 in lane 3 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proteinase K accessibility assay shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "496a03cb-05fa-44fb-a58a-025c37620099",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C41",
+      "claim": "Insertion of XBP1u-TR occurs after its release from the ribosome",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, upon high salt and puromycin treatment, which releases nascent chains from ribosomes, we detected membrane-protected fragments for XBP1-TR that disappeared after treating with a detergent (Figure 5B lane 9, 10), demonstrating that insertion of XBP1u-TR occurs after its release from the ribosome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proteinase K accessibility assay with puromycin treatment shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a64659bb-cbda-4d29-b279-7c8947fe4a33",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C42",
+      "claim": "XBP1u HR2 is rejected by the Sec61 translocon after its release from the ribosome",
+      "claim_type": "EXPLICIT",
+      "source": "However, we failed to detect membrane-protected fragments for XBP1u, suggesting that XBP1u HR2 is rejected by the Sec61 translocon after its release from the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the absence of membrane-protected fragments for XBP1u after puromycin treatment shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "99713ee7-3388-4c9a-90b3-ad380bb032c5",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C43",
+      "claim": "The interaction between the translational pausing sequence of XBP1u and the ribosome exit tunnel remains stable after puromycin treatment",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed ribosome protected fragments even after puromycin treatment, indicating that the interaction between the translational pausing sequence of XBP1u and the ribosome exit tunnel remains stable (Figure 5B band 2 in lanes 5 and 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proteinase K accessibility assay showing ribosome-protected fragments after puromycin treatment in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "94433fb1-e70a-48b3-8d91-0563d083cf1c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C44",
+      "claim": "Glycosylation of XBP1u is readily detected in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "Glycosylation, a post-translocational event diagnostic of successful insertion, was readily detected for XBP1u, as determined by endoglycosidase H (Endo H) deglycosylation (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro translation with glycan acceptor site and Endo H treatment shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "1d54a668-f74e-4c76-9bed-673beaf00385",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C45",
+      "claim": "No glycosylation is detected for XBP1\u0394HR2",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, no glycosylation was detected for XBP1\u0394HR2, whereas XBP1-TR showed increased glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro translation and glycosylation assay shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d09703de-0fa6-496d-bfbc-53b02a4a39bc",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C46",
+      "claim": "XBP1-TR shows increased glycosylation compared to XBP1u",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, no glycosylation was detected for XBP1\u0394HR2, whereas XBP1-TR showed increased glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro translation and glycosylation assay shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "98547ac3-a416-4693-a69f-e556e06817b1",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C47",
+      "claim": "The co-translational protein insertion pathway is solely responsible for XBP1u insertion",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the co-translational protein insertion pathway was solely responsible for these insertion activities since almost no glycosylation was detected during a post-translational protein insertion assay (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of co-translational and post-translational insertion assays shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "188187dd-42f3-41c9-93d5-5d360eb89670",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C48",
+      "claim": "XBP1u shows a decreased rate of glycosylation relative to XBP1u-TR",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a time course experiment revealed a decreased rate of glycosylation for XBP1u relative to its counterpart XBP1u-TR, suggesting that its weak hydrophobic region HR2 impedes efficient insertion into the membrane (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time course glycosylation assay shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "75911893-fc77-465f-9fc8-91c2e9afb5d9",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C49",
+      "claim": "HR2 dependent glycosylation of XBP1u is detected in cells",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating the in vitro results, in cells expressing XBP1u constructs we detected the HR2 dependent glycosylation of XBP1u, which was sensitive to the Endo H or peptide-N-glycosidase (PNGase) treatment (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression of XBP1u constructs in cells and glycosidase treatment shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "1a6bacaa-e4f9-41e8-9b2d-e41c1abe6700",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C50",
+      "claim": "XBP1u glycosylation is significantly less efficient relative to XBP1u-TR in cells",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the XBP1u glycosylation was significantly less efficient relative to that of XBP1u-TR (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblotting of XBP1u and XBP1u-TR in cells shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d13bbd57-e4d6-4f9a-983b-ccfda054c7a4",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C51",
+      "claim": "A fraction of XBP1u can be inserted into the ER membrane in cells",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with recent observations that a fraction of XBP1u could be inserted into the ER membrane in cells (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Chen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "0b6a07dc-e098-4a28-856d-b5817827aa6c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C52",
+      "claim": "The sequence of XBP1u HR2 has evolved to follow the co-translational protein translocation pathway but avoid efficient insertion into the ER membrane",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that the sequence of XBP1u HR2 has evolved in a way that it manages to follow the co-translational protein translocation pathway, but avoids efficient insertion into the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the collective data showing SRP binding, translocon interaction, but inefficient membrane insertion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "18b28f8d-58d7-48d0-a2b7-3c4c8b1ccc1f",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C53",
+      "claim": "Complementation of Ire1\u03b1 into Ire1\u03b1\u2212/\u2212 cells leads to restoration of XBP1u mRNA splicing in an ER stress dependent manner",
+      "claim_type": "EXPLICIT",
+      "source": "The complementation of Ire1\u03b1 into Ire1\u03b1\u2212/\u2212 cells led to restoration of XBP1u mRNA splicing in an ER stress dependent manner, whereas the complementation of Ire1\u03b1 mutants either \u220610 or D443A showed sharply reduced XBP1u mRNA splicing (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments in Ire1\u03b1\u2212/\u2212 cells shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "5d42fc2b-f766-4769-a26d-d5f24399717e",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C54",
+      "claim": "Complementation of Ire1\u03b1 mutants \u220610 or D443A shows sharply reduced XBP1u mRNA splicing",
+      "claim_type": "EXPLICIT",
+      "source": "The complementation of Ire1\u03b1 into Ire1\u03b1\u2212/\u2212 cells led to restoration of XBP1u mRNA splicing in an ER stress dependent manner, whereas the complementation of Ire1\u03b1 mutants either \u220610 or D443A showed sharply reduced XBP1u mRNA splicing (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments in Ire1\u03b1\u2212/\u2212 cells shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "4bbdc6df-1c9b-4938-95a5-0ca6c37550b7",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C55",
+      "claim": "The Ire1\u03b1 mutant D443A exhibits a significant deficiency in downregulation of the RIDD mRNA substrates Blos1 and Scara3",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Ire1\u03b1 mutant D443A also exhibited a significant deficiency in downregulation of the RIDD mRNA substrates Blos1 and Scara3 (Hollien et al., 2009) (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR analysis of RIDD substrates in complemented cells shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "c7291b84-9488-4fbe-8072-64bce0170ae2",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C56",
+      "claim": "Blos1 and Scara3 are RIDD mRNA substrates",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Ire1\u03b1 mutant D443A also exhibited a significant deficiency in downregulation of the RIDD mRNA substrates Blos1 and Scara3 (Hollien et al., 2009) (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Hollien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "c03a2f70-720f-4cdb-a209-f74860b3beb0",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C57",
+      "claim": "Similar Ire1\u03b1 auto-phosphorylation is observed in both wild type and \u220610 Ire1\u03b1 expressing cells",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were not due to a defect in activation of Ire1\u03b1 mutants under ER stress conditions since we observed similar Ire1\u03b1 auto-phosphorylation in both wild type and \u220610 Ire1\u03b1 expressing cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phos-tag gel analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "afa9adde-e160-4a34-b8fb-81f616896b84",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C58",
+      "claim": "Secretory and transmembrane proteins contain either a signal sequence or transmembrane domain that is co-translationally captured by the SRP",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins contain either a signal sequence or transmembrane domain (TMD) that is co-translationally captured by the SRP and targeted to the endoplasmic reticulum (ER) membrane (Akopian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Akopian et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "71d1bfa0-d4a8-4653-a2db-016c855fa49d",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C59",
+      "claim": "The Sec61 translocon facilitates insertion or translocation of polypeptides into the ER membrane",
+      "claim_type": "EXPLICIT",
+      "source": "At the ER membrane, the Sec61 translocon facilitates insertion or translocation of these polypeptides into the ER membrane (Park and Rapoport, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Park and Rapoport, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "6d1308f0-3c08-48ab-a9e3-19a0ce3e6a3f",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C60",
+      "claim": "The ER contains a network of chaperones and enzymes to assist in folding proteins",
+      "claim_type": "EXPLICIT",
+      "source": "The ER contains a network of chaperones and enzymes to assist in folding proteins into their native conformations (Braakman and Bulleid, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Braakman and Bulleid, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d5942970-f45b-4467-a93d-93962f7f400c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C61",
+      "claim": "When the influx of nascent polypeptides exceeds the ER protein folding capacity, misfolded proteins accumulate in the ER and lead to ER stress",
+      "claim_type": "EXPLICIT",
+      "source": "When the influx of nascent polypeptides exceeds the ER protein folding capacity, misfolded proteins accumulate in the ER and lead to ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about ER stress.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "4e74cafc-80d0-4e9a-ba31-76b07768f3fe",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C62",
+      "claim": "Under ER stress, the Unfolded Protein Response (UPR) is activated to restore ER homeostasis",
+      "claim_type": "EXPLICIT",
+      "source": "Under ER stress, signaling pathways, collectively termed the Unfolded Protein Response (UPR), are activated to restore ER homeostasis (Walter and Ron, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Walter and Ron, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a31f4665-8f6f-467d-aaae-5901dc595a78",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C63",
+      "claim": "The activation of the UPR leads to transcriptional upregulation of UPR target genes",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of the UPR leads to various cellular processes that include: transcriptional upregulation of UPR target genes, attenuation of translation, activation of ER associated degradation, and ER expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about UPR functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "24d5e778-6df3-4a44-955f-550fda0d23cd",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C64",
+      "claim": "The activation of the UPR leads to attenuation of translation",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of the UPR leads to various cellular processes that include: transcriptional upregulation of UPR target genes, attenuation of translation, activation of ER associated degradation, and ER expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about UPR functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "40ba9a05-ddb6-4f12-9d26-d679bb4140ee",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C65",
+      "claim": "The activation of the UPR leads to activation of ER associated degradation",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of the UPR leads to various cellular processes that include: transcriptional upregulation of UPR target genes, attenuation of translation, activation of ER associated degradation, and ER expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about UPR functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "46f77bcb-8e21-4e0e-ad2b-51f5e9a020fd",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C66",
+      "claim": "The activation of the UPR leads to ER expansion",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of the UPR leads to various cellular processes that include: transcriptional upregulation of UPR target genes, attenuation of translation, activation of ER associated degradation, and ER expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about UPR functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "3d2b8688-3e67-45f2-bdd0-138a9bb78cdb",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C67",
+      "claim": "If ER homeostasis cannot be restored, the UPR induces cell death pathways",
+      "claim_type": "EXPLICIT",
+      "source": "However, if ER homeostasis cannot be restored, the UPR induces cell death pathways to eliminate non-functional cells (Walter and Ron, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Walter and Ron, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "fc57db19-23ff-4074-a34f-b94bc99108e0",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C68",
+      "claim": "Aberrations in UPR signaling can lead to neurological disorders, diabetes, and inflammatory disorders",
+      "claim_type": "EXPLICIT",
+      "source": "The significance of the UPR is underscored by the fact that aberrations in UPR signaling can lead to a multitude of diseased states including neurological disorders, diabetes, and inflammatory disorders (Wang and Kaufman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wang and Kaufman, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "59d86d91-d11e-464a-8cfb-61d9925d04aa",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C69",
+      "claim": "In solid tumors, the UPR is constitutively activated as an adaptive response pathway for survival under adverse conditions",
+      "claim_type": "EXPLICIT",
+      "source": "In solid tumors, the UPR is constitutively activated as an adaptive response pathway for survival under adverse conditions, such as hypoxia (Wang and Kaufman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wang and Kaufman, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "c2e47fea-c880-438f-8303-15c7e049bb22",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C70",
+      "claim": "Ire1 is the most ancient member of ER stress sensors and is conserved from yeast to mammals",
+      "claim_type": "EXPLICIT",
+      "source": "The most ancient member of these, inositol-requiring enzyme 1 (Ire1), is conserved from yeast to mammals (Cox et al., 1993; Mori et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cox et al., 1993 and Mori et al., 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d5244955-9d70-4fa8-84db-84e9e68458e8",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C71",
+      "claim": "Ire1 contains an ER luminal domain involved in sensing misfolded proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Ire1 contains an ER luminal domain involved in sensing misfolded proteins and cytoplasmic kinase/RNase domains, which are involved in the activation of downstream pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about Ire1 structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "181d148b-6f49-46f9-874a-44653e972f2d",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C72",
+      "claim": "Ire1 contains cytoplasmic kinase/RNase domains involved in the activation of downstream pathways",
+      "claim_type": "EXPLICIT",
+      "source": "Ire1 contains an ER luminal domain involved in sensing misfolded proteins and cytoplasmic kinase/RNase domains, which are involved in the activation of downstream pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about Ire1 structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a6afcca5-5762-483c-a245-ad6b4c8bb435",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C73",
+      "claim": "Mammals have two Ire1 paralogs, Ire1\u03b1 and Ire1\u03b2",
+      "claim_type": "EXPLICIT",
+      "source": "Mammals have two Ire1 paralogs, Ire1\u03b1 and Ire1\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about mammalian Ire1 paralogs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "8dc4519e-94ac-4e4d-a014-f18d3c6767ea",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C74",
+      "claim": "Ire1\u03b1 is ubiquitously expressed",
+      "claim_type": "EXPLICIT",
+      "source": "While Ire1\u03b1 is a ubiquitously expressed gene, Ire1\u03b2 expression is restricted to the gastrointestinal tract (Tirasophon et al., 1998; Wang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Tirasophon et al., 1998 and Wang et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "45e7bf36-1f5e-45ec-b3b5-a24400714ab9",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C75",
+      "claim": "Ire1\u03b2 expression is restricted to the gastrointestinal tract",
+      "claim_type": "EXPLICIT",
+      "source": "While Ire1\u03b1 is a ubiquitously expressed gene, Ire1\u03b2 expression is restricted to the gastrointestinal tract (Tirasophon et al., 1998; Wang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Tirasophon et al., 1998 and Wang et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "7468dfc9-2d08-4ee0-81a0-ff9ff7fd3797",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C76",
+      "claim": "Upon ER stress, the Ire1\u03b1 RNase domain excises a 26 base intron from XBP1u mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER stress, the Ire1\u03b1 RNase domain is activated by self-oligomerization and subsequently excises a 26 base intron from the cytosolic unspliced form of XBP1u mRNA (Yoshida et al., 2001; Calfon et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yoshida et al., 2001 and Calfon et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "05ce1797-75db-44f2-99e0-7beda78a3ecd",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C77",
+      "claim": "The Ire1\u03b1 RNase domain is activated by self-oligomerization",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ER stress, the Ire1\u03b1 RNase domain is activated by self-oligomerization and subsequently excises a 26 base intron from the cytosolic unspliced form of XBP1u mRNA (Yoshida et al., 2001; Calfon et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yoshida et al., 2001 and Calfon et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "0f82f506-6b2f-4223-81cf-8994cbbfe740",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C78",
+      "claim": "The resulting XBP1 mRNA fragments are ligated in the cytosol by RtcB ligase",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting mRNA fragments are ligated in the cytosol by RtcB ligase generating the spliced form of XBP1 mRNA (Jurkin et al., 2014; Kosmaczewski et al., 2014; Lu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Jurkin et al., 2014; Kosmaczewski et al., 2014; and Lu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "2b2e143f-e567-4782-a71d-4c3c0150db4f",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C79",
+      "claim": "Only the spliced XBP1 mRNA produces an active transcription factor that induces hundreds of genes responsible for increasing ER abundance",
+      "claim_type": "EXPLICIT",
+      "source": "The Ire1\u03b1 mediated splicing step is critical for mounting the UPR, as only the spliced XBP1 mRNA produces an active transcription factor that induces hundreds of genes responsible for increasing ER abundance to accommodate the demand for protein production (Shaffer et al., 2004; Sriburi et al., 2004; Acosta-Alvear et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Shaffer et al., 2004; Sriburi et al., 2004; and Acosta-Alvear et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "8165223d-48f3-4a17-8425-76996a6daa93",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C80",
+      "claim": "Ire1\u03b1 reduces the load of incoming proteins by cleaving ER-localized mRNAs in a process termed regulated Ire1-dependent decay (RIDD)",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to XBP1 mRNA splicing, Ire1\u03b1 also reduces the load of incoming proteins by cleaving ER-localized mRNAs in a process termed regulated Ire1-dependent decay (RIDD) (Hollien and Weissman, 2006; Han et al., 2009; Hollien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Hollien and Weissman, 2006; Han et al., 2009; and Hollien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "b96cfad3-533b-4b37-a743-c19b8cf70a74",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C81",
+      "claim": "XBP1u mRNA encodes a soluble protein that shuttles between the cytosol and nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "Although XBP1u mRNA encodes a soluble protein and shuttles between the cytosol and nucleus (Yoshida et al., 2006), recent studies have shown that XBP1u is co-translationally targeted to the ER membrane for efficient splicing of its mRNA by Ire1\u03b1 (Yanagitani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Yoshida et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "4a5b44d2-9541-4bc2-8803-7e84980a2d71",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C82",
+      "claim": "The Sec61 translocon can discriminate between functional and non-functional or weak signal sequences",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that the Sec61 translocon can discriminate between functional and non-functional or weak signal sequences (Jungnickel and Rapoport, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Jungnickel and Rapoport, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "947b0cac-6fee-4edd-b859-3038b5755653",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C83",
+      "claim": "The functional signal sequence is able to form a protease resistant tight junction with the Sec61 translocon",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the functional signal sequence is able to form a protease resistant tight junction with the Sec61 translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about signal sequence-translocon interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d2f619c7-8891-4434-8c61-d317592b24f8",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C84",
+      "claim": "The Sec61 translocon interaction region in Ire1\u03b1 is conserved only in vertebrates",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Sec61 translocon interaction region is conserved only in vertebrates (Figure 2C), which suggests that the Ire1\u03b1 interaction with the Sec61 translocon may not be absolutely essential for cleavage of its mRNA substrates but would increase the fidelity and efficiency of Ire1\u03b1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "b2e7e953-938e-412d-b551-20d199f88136",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C85",
+      "claim": "The Ire1\u03b1 interaction with the Sec61 translocon may not be absolutely essential for cleavage of its mRNA substrates but would increase the fidelity and efficiency of Ire1\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Sec61 translocon interaction region is conserved only in vertebrates (Figure 2C), which suggests that the Ire1\u03b1 interaction with the Sec61 translocon may not be absolutely essential for cleavage of its mRNA substrates but would increase the fidelity and efficiency of Ire1\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the vertebrate-specific conservation of the interaction region.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "bc9bb6f9-f1d5-4c3e-9c33-3ee56c89b51c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C86",
+      "claim": "XBP1u mRNA is localized in the ER membrane",
+      "claim_type": "EXPLICIT",
+      "source": "Initial biochemical fractionation studies have shown that XBP1u mRNA is localized in the ER membrane although its encoded protein is soluble and localized both in the cytosol and nucleus (Stephens et al., 2005; Yoshida et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Stephens et al., 2005 and Yoshida et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "f1409e07-7ce8-4e88-9d4f-90ba45a4844f",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C87",
+      "claim": "The XBP1u protein binds to the active transcription factor XBP1s and routes it for proteasomal degradation",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by earlier studies showing that the XBP1u protein binds to the active transcription factor XBP1s and routes it for proteasomal degradation (Lee et al., 2003; Yoshida et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lee et al., 2003 and Yoshida et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "ef008291-84d9-4906-8cfd-1bca695bf11e",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C88",
+      "claim": "The feedback loop between XBP1u and XBP1s is important for accurately turning off UPR genes when ER stress is restored",
+      "claim_type": "EXPLICIT",
+      "source": "This feed back loop has been shown to be important for accurately turning off UPR genes by XBP1s when the ER stress is restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about XBP1 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "4c81adb1-0273-4873-911f-8b6458fe8ae6",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C89",
+      "claim": "Numerous cytosolic mRNAs are localized in the ER membrane through poorly understood mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that numerous cytosolic mRNAs are localized in the ER membrane through poorly understood mechanisms (Reid and Nicchitta, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Reid and Nicchitta, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "19feee3d-b53d-4177-b348-6b5c7ab8848f",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C90",
+      "claim": "SRP exhibits promiscuous substrate selectivity in binding moderate hydrophobic regions",
+      "claim_type": "IMPLICIT",
+      "source": "Our findings of the promiscuous substrate selectivity exhibited by SRP in binding moderate hydrophobic region in XBP1u suggests that other cytosolic proteins encoding mRNAs could be targeted to the ER membrane through the SRP pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that SRP binds to the weak hydrophobic region HR2 of XBP1u.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "2e753296-7fb8-4f0b-918a-5bb070386a06",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C91",
+      "claim": "Other cytosolic proteins encoding mRNAs could be targeted to the ER membrane through the SRP pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings of the promiscuous substrate selectivity exhibited by SRP in binding moderate hydrophobic region in XBP1u suggests that other cytosolic proteins encoding mRNAs could be targeted to the ER membrane through the SRP pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the promiscuous substrate selectivity of SRP.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "053594ed-8fdf-44b2-bd92-7ae5ac2af3ce",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C92",
+      "claim": "One reason Ire1\u03b1 has evolved a specific interaction with the Sec61 translocon is to overcome limitations imposed by its low abundance relative to Sec61",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that one of the reasons Ire1\u03b1 has evolved a specific interaction with the Sec61 translocon is to overcome the limitations imposed by its low abundance in the ER membrane relative to Sec61, where its substrate mRNAs are recruited (Ghaemmaghami et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesized based on the low abundance of Ire1\u03b1 and the functional importance of the Sec61 interaction.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "6c492fa3-9dae-41ad-aee1-1f97874ff7e9",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C93",
+      "claim": "Overexpressing Ire1\u03b1 mutants restores the inefficient cleavage of mRNAs",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that overexpressing Ire1\u03b1 mutants restores the inefficient cleavage of mRNAs (data not shown), suggesting that the Sec61 translocon interaction is important to bridge the low abundant Ire1\u03b1 and its mRNA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mentioned as unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a4c5a31d-89b6-4bc3-a409-11015178b955",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C94",
+      "claim": "The Sec61 translocon interaction is important to bridge the low abundant Ire1\u03b1 and its mRNA substrates",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that overexpressing Ire1\u03b1 mutants restores the inefficient cleavage of mRNAs (data not shown), suggesting that the Sec61 translocon interaction is important to bridge the low abundant Ire1\u03b1 and its mRNA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that overexpression of mutants restores activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "3ee99556-aa1c-47b2-9da1-6530a0b0d698",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C95",
+      "claim": "Ire1\u03b1 may dynamically monitor the Sec61 translocon population to increase the likelihood of contact with translocon-localized XBP1u mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "It is currently unclear how Ire1\u03b1 is localized to the specific translocon where XBP1u mRNA may be found, though it is feasible that Ire1\u03b1 may dynamically monitor the Sec61 translocon population and thus increase the likelihood of contact with translocon-localized XBP1u mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated as a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "029e9e35-d0a1-44a3-b3ab-693ee712aa6a",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C96",
+      "claim": "Ire1\u03b1 may interact with a subset of the translocon population where XBP1u mRNA could be preferentially localized",
+      "claim_type": "EXPLICIT",
+      "source": "Another intriguing hypothesis is that Ire1\u03b1 may interact with a subset of the translocon population where XBP1u mRNA could be preferentially localized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated as an alternative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "6b340d47-9a03-4298-8c83-b2115d9e319c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C97",
+      "claim": "Accumulation of misfolded proteins triggers self-oligomerization and activation of the translocon-associated Ire1\u03b1 only during ER stress conditions",
+      "claim_type": "EXPLICIT",
+      "source": "Most likely, accumulation of misfolded proteins triggers self-oligmerization and activation of the translocon-associated Ire1\u03b1 only during ER stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from established knowledge about Ire1\u03b1 activation and the observation that the complex exists under both normal and stress conditions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "952108ee-5260-46ab-91fc-c50402ee0356",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C98",
+      "claim": "In plants, Ire1 catalyzes the cytoplasmic splicing of bZIP60 mRNA to produce an active transcription factor",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, Ire1 catalyzes the cytoplasmic splicing of bZIP60 mRNA to produce an active transcription factor (Mishiba et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Mishiba et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "1a5afc70-fbeb-40d4-90a2-15bc9bb0f583",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C99",
+      "claim": "bZIP60 mRNA is likely targeted to the ER membrane by the SRP pathway since it encodes a typical transmembrane protein",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, bZIP60 mRNA is likely targeted to the ER membrane by the SRP pathway since it encodes a typical transmembrane protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the fact that bZIP60 encodes a transmembrane protein.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "0dc773ae-eda2-4617-ae83-a8444a91825b",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C100",
+      "claim": "The presence of a soluble form of XBP1u may be necessary for a fully switchable UPR",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that the presence of a soluble form of XBP1u is necessary for a fully switchable UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated as a possible explanation for the unique targeting mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "a3fcda8e-1ccd-41bf-98d7-faf3056963d7",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "claim_id": "C101",
+      "claim": "DTT impairs protein folding by preventing disulfide bond formation in the ER lumen",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this interaction remained stable even after treatment of cells with the ER stress inducer DTT, which impairs protein folding by preventing disulfide bond formation in the ER lumen (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about DTT mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ca88387-6d6c-4f60-a2c2-d062a691851e",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ire1\u03b1 forms a stable, selective complex with the Sec61 translocon in cells. Mass spectrometry identified all three Sec61 subunits (\u03b1, \u03b2, \u03b3) and Sec63 as Ire1\u03b1-associated proteins (C8, C10). Co-immunoprecipitation confirmed endogenous Ire1\u03b1 interacts with Sec61\u03b2 and Sec61\u03b1 (C11), with nearly all cellular Ire1\u03b1 complexed with Sec61 (C13). The interaction is selective for Ire1\u03b1 versus other ER stress sensors (C14) and supported by chemical crosslinking (C15).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal biochemical approaches (mass spectrometry, co-IP, immunodepletion, crosslinking) converge on the same conclusion. The selectivity data (C14) and quantitative depletion (C13) strengthen the claim. Figure 1 provides clear visual evidence for all key experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "2c4491a0-9506-43c3-9652-124e24a2cbc9",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Ire1\u03b1-Sec61 interaction remains stable after DTT treatment, which induces ER stress by preventing disulfide bond formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Co-immunoprecipitation experiments (Figure 1B) and crosslinking studies (Figure 1D) demonstrate the complex persists under ER stress conditions. This is important for establishing that the interaction is functionally relevant during UPR activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "6fa3e251-00a7-4a42-acb1-fda0a8aec79a",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A conserved 10 amino acid region (434-443) in the luminal domain of Ire1\u03b1, specifically residues Val437, Asp438, Met440, Leu441, and Asp443, is required for interaction with the Sec61 translocon. Deletion of the larger luminal domain (30-408) has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Domain mapping (C16, C18) and alanine scanning mutagenesis (C17) systematically identify the interaction interface. Figure 2A-C shows clear loss of Sec61 binding with specific mutations while maintaining protein expression. The negative control (\u0394LD) strengthens the specificity claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "9ae8cee8-9f7b-4270-ad08-a0c1527a38c7",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Depletion of Sec61\u03b1 by siRNA substantially reduces Ire1\u03b1-mediated splicing of XBP1u mRNA during ER stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 2D shows clear reduction in XBP1u splicing upon Sec61\u03b1 knockdown with DTT treatment. This functionally validates the importance of the Ire1\u03b1-Sec61 interaction for XBP1u mRNA processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "50a4954d-4c49-4308-83b0-5e8e543fed52",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "XBP1u-RNCs are recruited to rough microsomes in vitro in an HR2-dependent manner that requires ER membrane factors. Trypsin treatment of microsomes abolishes recruitment, deletion of HR2 prevents recruitment, and replacement with a stronger TMD restores recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figure 3B provides clear in vitro reconstitution data showing membrane recruitment depends on both HR2 and protease-sensitive membrane factors. The deletion and replacement experiments establish HR2 specificity. Full-length constructs show similar results, addressing potential artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "2ff72864-fc81-4b84-a504-9f3467081341",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "XBP1u mRNA is recruited to the Ire1\u03b1-Sec61 complex through SRP-mediated targeting of its nascent chain containing the HR2 pseudo-transmembrane domain. SRP binds XBP1u-RNCs but not XBP1\u0394\u0394HR2-RNCs, and purified SRP restores membrane recruitment in a reconstituted system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "RNC affinity purification (Figure 3C) shows SRP enrichment with XBP1u but not the HR2 deletion mutant. Wheat germ reconstitution (Figure 3D) demonstrates SRP is necessary and sufficient for membrane targeting. Multiple lines of evidence converge on SRP-mediated recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "df7251a0-03d9-4275-8e86-4a374012e46c",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Depletion of SRP components (SRP14, SRP54) or the SRP receptor (SR\u03b1) in cells sharply reduces or nearly abolishes Ire1\u03b1-mediated splicing of XBP1u mRNA upon ER stress induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figures 4A and 4B show clear reduction in XBP1u splicing with knockdown of SRP pathway components. Controls demonstrate Ire1\u03b1 levels are unchanged (C33) and other UPR sensors are activated normally (C34, C35), ruling out indirect effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "f1db682a-dec8-4928-bbb7-112418bfcaa1",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The reduced XBP1u splicing upon SRP/SR\u03b1/Sec61\u03b1 depletion is not due to defects in Ire1\u03b1 biosynthesis or general ER stress sensing, as Ire1\u03b1 levels remain unchanged and PERK/ATF6 activation is unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Figures 4A-C provide appropriate controls showing Ire1\u03b1 protein levels, PERK phosphorylation, and ATF6 cleavage are maintained under knockdown conditions. This strengthens the specificity of the SRP pathway requirement for XBP1u targeting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "def8f36c-5190-4741-9914-1d6b25da4b10",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "XBP1u-RNCs interact with the Sec61 translocon, showing weak crosslinking to Sec61\u03b1 but strong crosslinking to Sec61\u03b2. XBP1u-TR with a genuine TMD shows improved Sec61\u03b1 crosslinking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Chemical crosslinking experiments (Figure 5A) demonstrate proximity between XBP1u nascent chains and translocon subunits. The differential crosslinking pattern and improvement with XBP1u-TR support the model of weak translocon engagement by HR2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "d91add7d-2142-4641-9f34-df5e3906cb51",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "XBP1u HR2 forms a weak, salt-sensitive junction with the Sec61 translocon and is rejected after ribosome release, while XBP1u-TR forms a tight complex and inserts post-translationally. The translational pausing sequence interaction with the ribosome remains stable after puromycin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Proteinase K accessibility assays (Figure 5B) systematically demonstrate the differential behavior of XBP1u versus XBP1u-TR. The salt sensitivity, puromycin release experiments, and ribosome-protected fragments provide mechanistic insight into the weak translocon interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "0a4b55a4-d906-462e-b6ca-144376362eac",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "XBP1u undergoes HR2-dependent glycosylation in vitro and in cells, but at significantly lower efficiency than XBP1u-TR. Glycosylation occurs exclusively via the co-translational pathway and shows a decreased rate for XBP1u relative to XBP1u-TR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Glycosylation assays (Figures 5C-D, Figure 5\u2014supplement 1) demonstrate insertion into the ER membrane. The HR2 dependence, time course data, and comparison with post-translational insertion establish that weak HR2 hydrophobicity allows co-translational targeting but impedes efficient insertion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "90a87adf-97ba-4e6b-be42-afea1e5cf577",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The XBP1u HR2 sequence has evolved to follow the co-translational protein translocation pathway while avoiding efficient membrane insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion is well-supported by the collective data showing SRP binding (C27), translocon interaction (C36-C37), weak junction formation (C39), and inefficient insertion (C48-C50). The evolutionary interpretation is reasonable given the functional requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "dadb7249-3d32-4296-b527-e5170dc8f71d",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mutations in Ire1\u03b1 that disrupt the Ire1\u03b1-Sec61 interaction (\u039410, D443A) cause sharply reduced XBP1u mRNA splicing and deficient downregulation of RIDD substrates (Blos1, Scara3) without affecting Ire1\u03b1 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Complementation experiments in Ire1\u03b1\u2212/\u2212 cells (Figure 6A-C) show functional consequences of disrupting the Sec61 interaction. The phosphorylation control (C57, Figure 6D) demonstrates mutants are properly activated, establishing the defect is in substrate access rather than enzyme activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "79bfbfb6-9225-4a8a-bcb3-10856ea1d8af",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Unfolded Protein Response is coupled with the co-translational protein translocation pathway to maintain ER protein homeostasis during stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion integrates the Ire1\u03b1-Sec61 complex formation (C1), SRP-mediated XBP1u targeting (C2), and functional consequences of disrupting these interactions (C3-C6). The model is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "e45c555c-93b0-4fec-bc74-66106c3fde64",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Sec61 translocon interaction region in Ire1\u03b1 is conserved only in vertebrates, suggesting the interaction may not be absolutely essential but increases Ire1\u03b1 fidelity and efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Figure 2C shows sequence conservation, but the functional interpretation (C85) is speculative. The authors provide no direct evidence that non-vertebrate Ire1 functions without Sec61 interaction, nor do they test whether the interaction is dispensable under certain conditions. The claim requires comparative functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "79fb1b15-1f62-4b4e-a9c0-d698854cc952",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Overexpressing Ire1\u03b1 mutants restores inefficient mRNA cleavage, suggesting the Sec61 interaction bridges low-abundant Ire1\u03b1 with its mRNA substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The data is mentioned as unpublished ('data not shown'), so it cannot be evaluated. While the interpretation is reasonable given the other results, the absence of presented data makes this claim uncertain. This would be important supporting evidence if included.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "05d1cc7c-8322-4875-82f2-dc8862ea8863",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SRP exhibits promiscuous substrate selectivity in binding moderate hydrophobic regions, suggesting other cytosolic mRNAs could be targeted to the ER membrane through the SRP pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the observation that SRP binds the weak HR2 is supported (C27), the extrapolation to other cytosolic mRNAs (C91) is speculative. No additional substrates are tested. The claim about 'promiscuous substrate selectivity' overstates what is shown\u2014only one non-canonical substrate is demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "6332293d-c163-430e-ac91-65c3dd4e2a7b",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Several hypotheses are proposed for why Ire1\u03b1 evolved Sec61 interaction, how Ire1\u03b1 localizes to XBP1u-containing translocons, why XBP1u uses this unique targeting mechanism, and how spurious cleavage is prevented under normal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly presented as hypotheses and speculation in the Discussion. While reasonable given the data, they lack direct experimental support. C92 has some support from the low abundance argument and C93, but the mechanistic models (C95-C97, C100) are untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    },
+    {
+      "id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12",
+      "content_id": "70ef658b-3447-4764-837f-16fbf30158db",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background knowledge and prior work establishing the UPR pathway, Ire1\u03b1 function, XBP1u biology, protein translocation mechanisms, and related findings in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims cite established literature and provide necessary context. The citations appear appropriate and the background knowledge is accurately represented. These are not novel findings but establish the foundation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:00:30.712671Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "37644388-15e1-4ecb-9411-6bf340b33798",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "aa514ea1-bb01-4629-8f46-5c930f31be9a",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "0bef669c-c654-4313-a21a-cc9447bf8f11",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "06c28b1a-3ea7-430c-8f12-331d0796ed33",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "b6f9fa98-f174-4302-8d29-90ab7e311e1b",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "a04b609e-4789-44bb-9f96-e9f39194d443",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "c2fccfa2-10c3-43eb-8020-3eededc21973",
+      "result_id": "1ca88387-6d6c-4f60-a2c2-d062a691851e"
+    },
+    {
+      "claim_id": "e2cfb4d3-f1fa-4e3e-80e0-7521b2ccf9db",
+      "result_id": "2c4491a0-9506-43c3-9652-124e24a2cbc9"
+    },
+    {
+      "claim_id": "9eefa32c-6fee-4eef-a49e-1ff74968d24b",
+      "result_id": "6fa3e251-00a7-4a42-acb1-fda0a8aec79a"
+    },
+    {
+      "claim_id": "710888db-1c9d-401c-af68-53c947197056",
+      "result_id": "6fa3e251-00a7-4a42-acb1-fda0a8aec79a"
+    },
+    {
+      "claim_id": "817614d1-7b5f-4d3c-af3d-fe95483d6252",
+      "result_id": "6fa3e251-00a7-4a42-acb1-fda0a8aec79a"
+    },
+    {
+      "claim_id": "c0ef7d86-c490-45c1-8fc6-49c2e9870aac",
+      "result_id": "9ae8cee8-9f7b-4270-ad08-a0c1527a38c7"
+    },
+    {
+      "claim_id": "2373b795-44af-4b68-b87b-687397f533de",
+      "result_id": "9ae8cee8-9f7b-4270-ad08-a0c1527a38c7"
+    },
+    {
+      "claim_id": "12b1a0e2-4da4-45fc-add9-28c08e7534ee",
+      "result_id": "50a4954d-4c49-4308-83b0-5e8e543fed52"
+    },
+    {
+      "claim_id": "d54516cd-e147-4f40-87c9-55e4175c6729",
+      "result_id": "50a4954d-4c49-4308-83b0-5e8e543fed52"
+    },
+    {
+      "claim_id": "78459fd3-1f7c-4ca5-bd69-98572afa3e3b",
+      "result_id": "50a4954d-4c49-4308-83b0-5e8e543fed52"
+    },
+    {
+      "claim_id": "ea169314-9a6a-47d3-ab9c-28abd8f8aee1",
+      "result_id": "50a4954d-4c49-4308-83b0-5e8e543fed52"
+    },
+    {
+      "claim_id": "466f9d30-8be5-4bc3-b2f1-b1e71fb2594c",
+      "result_id": "2ff72864-fc81-4b84-a504-9f3467081341"
+    },
+    {
+      "claim_id": "84fd18ac-1298-413a-bbda-3515bddb47a4",
+      "result_id": "2ff72864-fc81-4b84-a504-9f3467081341"
+    },
+    {
+      "claim_id": "1f79c80b-8026-4536-8b9f-af24bd5d389c",
+      "result_id": "2ff72864-fc81-4b84-a504-9f3467081341"
+    },
+    {
+      "claim_id": "9e255137-1d29-4f9c-92da-ae0f954c24ba",
+      "result_id": "2ff72864-fc81-4b84-a504-9f3467081341"
+    },
+    {
+      "claim_id": "044bd8e3-ef1e-4a32-b7a1-ba784bdad612",
+      "result_id": "df7251a0-03d9-4275-8e86-4a374012e46c"
+    },
+    {
+      "claim_id": "b426dde2-3dc3-4a70-9fa8-fac22d0f4334",
+      "result_id": "df7251a0-03d9-4275-8e86-4a374012e46c"
+    },
+    {
+      "claim_id": "d27db8d4-869e-4606-8367-afdb60d59ee3",
+      "result_id": "df7251a0-03d9-4275-8e86-4a374012e46c"
+    },
+    {
+      "claim_id": "2939abdd-a086-4e57-9628-22784b0150da",
+      "result_id": "df7251a0-03d9-4275-8e86-4a374012e46c"
+    },
+    {
+      "claim_id": "95db3f06-276d-4caa-810c-e851be86d052",
+      "result_id": "df7251a0-03d9-4275-8e86-4a374012e46c"
+    },
+    {
+      "claim_id": "3e2eafbe-5e12-4f21-9250-52690447650b",
+      "result_id": "f1db682a-dec8-4928-bbb7-112418bfcaa1"
+    },
+    {
+      "claim_id": "383e8296-d165-4242-a6d7-b6659db59033",
+      "result_id": "f1db682a-dec8-4928-bbb7-112418bfcaa1"
+    },
+    {
+      "claim_id": "63716914-996f-4168-9bf2-845a47530df3",
+      "result_id": "f1db682a-dec8-4928-bbb7-112418bfcaa1"
+    },
+    {
+      "claim_id": "35b0da88-7d7f-4a8a-9fa0-82267a32ebc8",
+      "result_id": "def8f36c-5190-4741-9914-1d6b25da4b10"
+    },
+    {
+      "claim_id": "4cee659b-8bda-474f-97ee-d560617ae79a",
+      "result_id": "def8f36c-5190-4741-9914-1d6b25da4b10"
+    },
+    {
+      "claim_id": "9383322a-7f39-4eee-9ea3-f3e544c902b5",
+      "result_id": "def8f36c-5190-4741-9914-1d6b25da4b10"
+    },
+    {
+      "claim_id": "9e671ff3-6b1b-42cb-ba5a-924f01b4ab24",
+      "result_id": "d91add7d-2142-4641-9f34-df5e3906cb51"
+    },
+    {
+      "claim_id": "9e187aac-b3ca-4881-ad15-287305513f12",
+      "result_id": "d91add7d-2142-4641-9f34-df5e3906cb51"
+    },
+    {
+      "claim_id": "496a03cb-05fa-44fb-a58a-025c37620099",
+      "result_id": "d91add7d-2142-4641-9f34-df5e3906cb51"
+    },
+    {
+      "claim_id": "a64659bb-cbda-4d29-b279-7c8947fe4a33",
+      "result_id": "d91add7d-2142-4641-9f34-df5e3906cb51"
+    },
+    {
+      "claim_id": "99713ee7-3388-4c9a-90b3-ad380bb032c5",
+      "result_id": "d91add7d-2142-4641-9f34-df5e3906cb51"
+    },
+    {
+      "claim_id": "94433fb1-e70a-48b3-8d91-0563d083cf1c",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "1d54a668-f74e-4c76-9bed-673beaf00385",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "d09703de-0fa6-496d-bfbc-53b02a4a39bc",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "98547ac3-a416-4693-a69f-e556e06817b1",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "188187dd-42f3-41c9-93d5-5d360eb89670",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "75911893-fc77-465f-9fc8-91c2e9afb5d9",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "1a6bacaa-e4f9-41e8-9b2d-e41c1abe6700",
+      "result_id": "0a4b55a4-d906-462e-b6ca-144376362eac"
+    },
+    {
+      "claim_id": "0b6a07dc-e098-4a28-856d-b5817827aa6c",
+      "result_id": "90a87adf-97ba-4e6b-be42-afea1e5cf577"
+    },
+    {
+      "claim_id": "e97dd49a-2f3e-4ad9-b10f-4c1faf2a5174",
+      "result_id": "dadb7249-3d32-4296-b527-e5170dc8f71d"
+    },
+    {
+      "claim_id": "18b28f8d-58d7-48d0-a2b7-3c4c8b1ccc1f",
+      "result_id": "dadb7249-3d32-4296-b527-e5170dc8f71d"
+    },
+    {
+      "claim_id": "5d42fc2b-f766-4769-a26d-d5f24399717e",
+      "result_id": "dadb7249-3d32-4296-b527-e5170dc8f71d"
+    },
+    {
+      "claim_id": "4bbdc6df-1c9b-4938-95a5-0ca6c37550b7",
+      "result_id": "dadb7249-3d32-4296-b527-e5170dc8f71d"
+    },
+    {
+      "claim_id": "c03a2f70-720f-4cdb-a209-f74860b3beb0",
+      "result_id": "dadb7249-3d32-4296-b527-e5170dc8f71d"
+    },
+    {
+      "claim_id": "8561fe4a-3567-4f92-9740-a4d6303146ae",
+      "result_id": "79bfbfb6-9225-4a8a-bcb3-10856ea1d8af"
+    },
+    {
+      "claim_id": "d2f619c7-8891-4434-8c61-d317592b24f8",
+      "result_id": "e45c555c-93b0-4fec-bc74-66106c3fde64"
+    },
+    {
+      "claim_id": "b2e7e953-938e-412d-b551-20d199f88136",
+      "result_id": "e45c555c-93b0-4fec-bc74-66106c3fde64"
+    },
+    {
+      "claim_id": "6c492fa3-9dae-41ad-aee1-1f97874ff7e9",
+      "result_id": "79fb1b15-1f62-4b4e-a9c0-d698854cc952"
+    },
+    {
+      "claim_id": "a4c5a31d-89b6-4bc3-a409-11015178b955",
+      "result_id": "79fb1b15-1f62-4b4e-a9c0-d698854cc952"
+    },
+    {
+      "claim_id": "19feee3d-b53d-4177-b348-6b5c7ab8848f",
+      "result_id": "05d1cc7c-8322-4875-82f2-dc8862ea8863"
+    },
+    {
+      "claim_id": "2e753296-7fb8-4f0b-918a-5bb070386a06",
+      "result_id": "05d1cc7c-8322-4875-82f2-dc8862ea8863"
+    },
+    {
+      "claim_id": "053594ed-8fdf-44b2-bd92-7ae5ac2af3ce",
+      "result_id": "6332293d-c163-430e-ac91-65c3dd4e2a7b"
+    },
+    {
+      "claim_id": "3ee99556-aa1c-47b2-9da1-6530a0b0d698",
+      "result_id": "6332293d-c163-430e-ac91-65c3dd4e2a7b"
+    },
+    {
+      "claim_id": "029e9e35-d0a1-44a3-b3ab-693ee712aa6a",
+      "result_id": "6332293d-c163-430e-ac91-65c3dd4e2a7b"
+    },
+    {
+      "claim_id": "6b340d47-9a03-4298-8c83-b2115d9e319c",
+      "result_id": "6332293d-c163-430e-ac91-65c3dd4e2a7b"
+    },
+    {
+      "claim_id": "0dc773ae-eda2-4617-ae83-a8444a91825b",
+      "result_id": "6332293d-c163-430e-ac91-65c3dd4e2a7b"
+    },
+    {
+      "claim_id": "ba773fd8-cf21-4849-847e-5a1a080fb704",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "a6b60ecd-258f-4e80-9bd9-da5aeac8fa1f",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "5f7cd9d2-cce6-4e5e-8c09-82723c0ca307",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "986458bf-0044-49a3-995a-c0222112a281",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "d13bbd57-e4d6-4f9a-983b-ccfda054c7a4",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "c7291b84-9488-4fbe-8072-64bce0170ae2",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "afa9adde-e160-4a34-b8fb-81f616896b84",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "71d1bfa0-d4a8-4653-a2db-016c855fa49d",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "6d1308f0-3c08-48ab-a9e3-19a0ce3e6a3f",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "d5942970-f45b-4467-a93d-93962f7f400c",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "4e74cafc-80d0-4e9a-ba31-76b07768f3fe",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "a31f4665-8f6f-467d-aaae-5901dc595a78",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "24d5e778-6df3-4a44-955f-550fda0d23cd",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "40ba9a05-ddb6-4f12-9d26-d679bb4140ee",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "46f77bcb-8e21-4e0e-ad2b-51f5e9a020fd",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "3d2b8688-3e67-45f2-bdd0-138a9bb78cdb",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "fc57db19-23ff-4074-a34f-b94bc99108e0",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "59d86d91-d11e-464a-8cfb-61d9925d04aa",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "c2e47fea-c880-438f-8303-15c7e049bb22",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "d5244955-9d70-4fa8-84db-84e9e68458e8",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "181d148b-6f49-46f9-874a-44653e972f2d",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "a6afcca5-5762-483c-a245-ad6b4c8bb435",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "8dc4519e-94ac-4e4d-a014-f18d3c6767ea",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "45e7bf36-1f5e-45ec-b3b5-a24400714ab9",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "7468dfc9-2d08-4ee0-81a0-ff9ff7fd3797",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "05ce1797-75db-44f2-99e0-7beda78a3ecd",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "0f82f506-6b2f-4223-81cf-8994cbbfe740",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "2b2e143f-e567-4782-a71d-4c3c0150db4f",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "8165223d-48f3-4a17-8425-76996a6daa93",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "b96cfad3-533b-4b37-a743-c19b8cf70a74",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "4a5b44d2-9541-4bc2-8803-7e84980a2d71",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "947b0cac-6fee-4edd-b859-3038b5755653",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "bc9bb6f9-f1d5-4c3e-9c33-3ee56c89b51c",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "f1409e07-7ce8-4e88-9d4f-90ba45a4844f",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "ef008291-84d9-4906-8cfd-1bca695bf11e",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "4c81adb1-0273-4873-911f-8b6458fe8ae6",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "952108ee-5260-46ab-91fc-c50402ee0356",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "1a5afc70-fbeb-40d4-90a2-15bc9bb0f583",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    },
+    {
+      "claim_id": "a3fcda8e-1ccd-41bf-98d7-faf3056963d7",
+      "result_id": "74d44a48-63e6-4b5e-9ea6-c7fa70a1eb12"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1816 @@
+{
+  "submission": {
+    "id": "ac782d79-76bd-4852-9d20-012125816710",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:43:58.212142Z",
+    "updated_at": "2025-11-29T03:43:58.212142Z"
+  },
+  "content": [
+    {
+      "id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "submission_id": "ac782d79-76bd-4852-9d20-012125816710",
+      "content_type": "manuscript",
+      "content_text": "# Examining kinesin processivity within a general gating framework\n\n## Authors\n\n- Johan OL Andreasson<sup>1</sup>\n- Bojan Milic<sup>2</sup>\n- Geng-Yuan Chen<sup>3</sup>\n- Nicholas R Guydosh<sup>4</sup>\n- William O Hancock<sup>3</sup>\n- Steven M Block<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Physics Stanford University Stanford United States\n2. Department of Biology Stanford University Stanford United States\n3. Department of Biomedical Engineering Pennsylvania State University University Park United States\n4. Biophysics Program Stanford University Stanford United States\n5. Department of Applied Physics Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nKinesin-1 is a dimeric motor that transports cargo along microtubules, taking 8.2-nm steps in a hand-over-hand fashion. The ATP hydrolysis cycles of its two heads are maintained out of phase by a series of gating mechanisms, which lead to processive runs averaging \u223c1 \u03bcm. A key structural element for inter-head coordination is the neck linker (NL), which connects the heads to the stalk. To examine the role of the NL in regulating stepping, we investigated NL mutants of various lengths using single-molecule optical trapping and bulk fluorescence approaches in the context of a general framework for gating. Our results show that, although inter-head tension enhances motor velocity, it is crucial neither for inter-head coordination nor for rapid rear-head release. Furthermore, cysteine-light mutants do not produce wild-type motility under load. We conclude that kinesin-1 is primarily front-head gated, and that NL length is tuned to enhance unidirectional processivity and velocity.\n\n## Introduction\n\nKinesin-1, hereafter referred to simply as kinesin, is an ATP-driven, dimeric motor protein that facilitates the unidirectional transport of intracellular cargo along microtubule (MT) filaments (Vale et al., 1985; Howard et al., 1989; Block et al., 1990; Hackney, 1995). Each kinesin dimer is composed of a pair of identical catalytic motor domains, or heads, which are connected to a common, coiled-coil stalk by a \u223c14-amino-acid-long sequence known as the neck linker (NL) (Kozielski et al., 1997). Kinesin translocates towards the plus-ends of MTs (Svoboda et al., 1993) via an asymmetric hand-over-hand mechanism (Asbury et al., 2003; Yildiz et al., 2004), hydrolyzing one molecule of ATP (Hua et al., 1997; Schnitzer and Block, 1997; Coy et al., 1999) for each 8.2-nm step (Svoboda et al., 1993) the motor takes. The biochemical states associated with each kinesin head during stepping are coupled to mechanical transitions in an overall mechanochemical cycle: biochemical events modulate the affinities of heads to the MT and influence mechanical transitions, and mechanical states, in turn, influence the rates of biochemical processes (Block, 2007).\n\nDuring the mechanochemical cycle, each kinesin head transitions between one or more states that are strongly bound to the MT (the ATP-containing state, and also the no-nucleotide state), and one or more states that are weakly bound to the MT (the ADP-containing state) (Block, 2007). A simplified version of this cycle (Figure 1A) may arbitrarily be taken to begin with the one-head-bound (1-HB), ATP-waiting state [\u03b1], where the nucleotide-free front head is strongly bound to the MT while the rear, ADP-bound tethered head remains unbound (Hackney, 1994; Asenjo and Sosa, 2009; Guydosh and Block, 2009; Toprak et al., 2009). Following ATP binding to the MT-bound head, the NL of its motor domain undergoes a structural reconfiguration and forms a \u03b2-sheet with the head, in a process termed NL docking (Rice et al., 1999; Schnitzer et al., 2000; Rosenfeld et al., 2001; Asenjo et al., 2006; Tomishige et al., 2006; Khalil et al., 2008; Sindelar and Downing, 2010; Clancy et al., 2011). NL docking shifts the position of the tethered head towards the MT plus-end, beyond the position of the bound head [\u03b21, \u03b22]. Recent work has suggested that NL docking may occur in two stages: first, ATP binding induces a load-dependent mechanical transition, leading to partial NL docking [\u03b21], whereas subsequent ATP hydrolysis completes the docking and enables the tethered head to bind the MT [\u03b22] (Milic et al., 2014). Once the bound head hydrolyzes ATP, fully docks its NL, and the tethered head binds the MT, the motor enters a mechanically strained, two-heads-bound (2-HB) state [\u03b3] (Rice et al., 1999; Rosenfeld et al., 2003; Block, 2007; Yildiz et al., 2008; Gennerich and Vale, 2009; Clancy et al., 2011). Finally, rear-head release (Klumpp et al., 2004) completes the step and returns the motor to its initial 1-HB waiting state [\u03b1], primed to begin the cycle anew, after having translocated forward by one step (8.2 nm) along the MT. The processivity of kinesin\u2014evinced by the ability of a single dimer to undergo >100 consecutive stepping cycles before dissociation\u2014relies upon a tight coordination of the biochemical and mechanical events, collectively known as gating mechanisms (Block, 2007).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig1-v2.jpg)\n\n**Figure 1.:** (A) The kinesin mechanochemical cycle. Kinesin starts from the one-head-bound (1-HB) ATP-waiting state [\u03b1], characterized by a strongly bound, nucleotide-free (\u00d8) front head (red) and an unbound, ADP-containing tethered head (blue). ATP binding induces a force-dependent transition involving partial NL docking, shifting the tethered head past the bound head [\u03b21]. ATP hydrolysis completes NL docking and facilitates tethered-head binding [\u03b22]. At this point, kinesin may access a dissociated state [Off], induced by premature phosphate release from the bound head, leading to dimer detachment. However, if the tethered head reaches the forward MT binding site and completes the step before the bound head can dissociate, kinesin enters the two-heads-bound (2-HB) state [\u03b3]. Rear-head release returns the dimer to the ATP-waiting state [\u03b1], having moved forward by 8.2 nm. (B) A simplified general gating framework, based on the cycle in (A). Stepping, binding, and unbinding gates are shown with associated rate constants between each of the three gated states, [A], [B], and [C]. The cycle begins at the 1-HB ATP-waiting state [A], where the stepping gate promotes processivity by inhibiting rear-head (blue) rebinding and premature bound-head (red) release. Following a force-dependent step that shifts the tethered head past the bound head [B], the binding gate promotes binding of the tethered head at the forward MT binding site while inhibiting release of the bound head. Also shown is a competing dissociated state [Off], arising from premature release of the bound head from the 1-HB state, accessible from either [A] or [B]. Tethered-head binding leads to the 2-HB state [C], where the unbinding gate promotes rear-head release while inhibiting front-head release, returning the motor to the start of the cycle [A].\n\nWe note that the term \u2018gating\u2019 encompasses any mechanism where the state of one head influences its partner in such a way as to ensure that the mechanochemical cycles of the heads are maintained out of phase, leading to alternate-head stepping. This term includes, but is not limited to, mechanisms that modulate detachment rates, alter nucleotide affinities, and affect ATP hydrolysis (Block et al., 1990; Hackney, 1994; Vale et al., 1996; Hua et al., 1997; Schnitzer and Block, 1997; Hancock and Howard, 1999; Rosenfeld et al., 2003; Block, 2007).\n\nTo establish a general framework for gating in the kinesin cycle, we begin by recognizing that the kinesin dimer transitions through a fixed series of 1-HB [A, B] and 2-HB [C] states during each cycle, where the unbound (tethered) head of a 1-HB motor may be positioned either predominantly behind [A] or in front of [B], the MT-bound head (Figure 1B). Since dissociation from the 2-HB state [Off] necessarily requires passage through a 1-HB intermediate, processive cycling can be distilled into the following set of three gating properties which, taken all together, promote forward stepping while suppressing dissociation:i. The MT-bound head must remain attached in any 1-HB state.ii. When the motor is in either a 2-HB state or in a 1-HB state where the tethered head is behind the MT-bound head, the unbinding of the rear head should be promoted (or maintained, if already unbound).iii. When the motor is in either a 2-HB state or in a 1-HB state where the tethered head is in front of the MT-bound head, the binding of the front head should be promoted (or maintained, if already bound).\n\nTaken together, these principles lead to the mechanical gating framework presented in Figure 1B. Starting from a 1-HB state, with the tethered head positioned behind the MT-bound head [A], unidirectional processivity necessitates a stepping gate that stabilizes binding by the front head while inhibiting any rebinding by the rear head. Following a structural transition that shifts the tethered head beyond the bound head [B], a binding gate acts to promote tethered-head binding at the forward site, while preventing premature unbinding of the rear head, which would otherwise lead to dissociation [Off]. Once the tethered head binds successfully, and the motor achieves the 2-HB state [C], an unbinding gate is required to retain the front head on the MT, while promoting the release of the rear head. Finally, rear-head release completes the cycle, returning the motor to its initial state [A], but advanced by one step. We note that this abstraction is agnostic with respect to the biochemical state associated with each mechanical transition. However, precisely because these biochemical states are unspecified, this general framework (Figure 1B) can be applied not only to kinesin but also to other processive, two-headed motors that may couple mechanical and biochemical states differently (Block, 2007; Gennerich and Vale, 2009; Kull and Endow, 2013; Cleary et al., 2014).\n\nHere, we used the gating framework to guide an investigation of the role of the NL domain in determining kinesin processivity, which remains incompletely understood, despite considerable research (Hackney et al., 2003; Block, 2007; Yildiz et al., 2008; Shastry and Hancock, 2010, 2011; Clancy et al., 2011). Because intramolecular forces within the kinesin dimer are thought to be transmitted through the NL of each head, the NL domain is well situated to play a role in gating. Consistent with this, extending the NL by mutation has previously been shown to affect kinesin processivity, velocity, and stepping behavior (Hackney et al., 2003; Block, 2007; Yildiz et al., 2008; Shastry and Hancock, 2010, 2011; Clancy et al., 2011). In principle, perturbing the properties of the NL by inserting additional amino acids (AA) at the junction of the NL domain and the coiled-coil stalk could affect some, or all, of the gates in Figure 1B. When kinesin is in its 1-HB state [A, B], the NL might serve to suppress rear-head rebinding in the ATP-waiting state [A], as part of the stepping gate, or to promote tethered-head binding (following NL docking) in the bound head [B], as part of the binding gate. When kinesin is in a 2-HB state [C], the NL can transmit inter-head tension, affecting the unbinding gate (Rosenfeld et al., 2003; Guydosh and Block, 2006; Block, 2007; Yildiz et al., 2008; Hariharan and Hancock, 2009; Shastry and Hancock, 2010, 2011; Clancy et al., 2011). The unbinding gate may act through (i) front-head gating, where biochemical events on the front head are suppressed until the rear head has a chance to detach (candidate mechanisms include the suppression of ATP hydrolysis in the front head, reduced ATP binding arising from inter-head tension, or reduced ATP binding caused by the rearward-pointing configuration of the NL), or through (ii) rear-head gating, where the rear-head release rate is accelerated by the inter-head tension, or (iii) some combination of the two (Block, 2007). Because inter-head tension is directly controlled by the length of the NL domain, an understanding of the relationship between NL length and the unbinding gate is central to evaluating tension-based gating models.\n\nThe predominant mechanism for gating used by kinesin has been the subject of some controversy. Published models have invoked both versions of rear-head gating (Hancock and Howard, 1999; Crevel et al., 2004; Schief et al., 2004; Yildiz et al., 2008) and front-head gating (Rosenfeld et al., 2003; Klumpp et al., 2004; Guydosh and Block, 2006, 2009; Toprak et al., 2009; Clancy et al., 2011). The conversation about kinesin gating has heretofore focused on how inter-head coordination might be achieved from the 2-HB state, that is, from the unbinding gate. Comparatively little attention has been paid to gating at other points of the kinesin cycle, specifically at the stepping and binding gates (Figure 1B), and quantitative measures of the competing rates responsible for gating have been notably lacking. Here, we examine the quantitative contribution of each of the three gates to maintaining unidirectional processivity by assessing the effects of NL length on kinesin motility, and attempt to reframe the discussion of gating from a debate about front- vs rear-head gating at the 2-HB state to a more unified view that admits to gating at multiple states of the mechanochemical cycle, both 1-HB and 2-HB. Towards that end, we examined a series of truncated Drosophila kinesin constructs (DmK) containing NLs that were extended incrementally, from 1 to 6 AA (DmK-1AA to DmK-6AA), using a combination of single-molecule optical trapping and bulk fluorescence approaches.\n\n## Results\n\n### Kinesin maintains a stable, one-head-bound ATP-waiting state with as many as three extra amino acids in its neck linker\n\nOur first experiments were designed to probe the influence of NL length on the stepping gate, which might contribute to unidirectional processivity by suppressing the rebinding of the ADP-bound tethered head while the motor is in the ATP-waiting state [A] (Figure 1B). To investigate the influence of NL length on this rebinding, we performed a series of half-site ADP release experiments using mantADP, a fluorescent ADP analog, on a set of truncated constructs with extended NL domains. Because free kinesin heads in solution have a high affinity for ADP, whereas MT-bound heads exhibit a substantially lower affinity, the release of mantADP from kinesin heads serves as a proxy for the binding of free heads to MTs (Hackney, 1988, 1994, 2002; Gilbert et al., 1995; Hackney et al., 2003; Clancy et al., 2011). Binding was assayed by pre-incubating motors in mantADP and subsequently monitoring the MT-stimulated decay of fluorescence upon the introduction of MTs via stopped-flow. Wild-type (WT) Drosophila kinesin (DmK-WT), as well as constructs with NLs extended by up to 3 AA, displayed a 50% reduction in fluorescence following the addition of MTs (Figure 2A), consistent with being in a 1-HB state, where only one of the two heads is bound to the MT and releases mantADP. By contrast, constructs with NL inserts consisting of 4, 5, or 6 AA exhibited progressively greater drops in fluorescence upon the addition of MTs (Figure 2A). These decreases correspond to 16% of DmK-4AA, 38% of DmK-5AA, and 65% of DmK-6AA motors releasing mantADP from both heads, respectively. In principle, the increased mantADP release could arise from (i) the additional NL length facilitating transient rear-head rebinding events, (ii) more motors adopting a stable 2-HB ATP-waiting state, or (iii) some combination of both. These findings are consistent with previous work, which has also reported a \u223c50% fluorescence decrease for WT kinesin, and a nearly 100% fluorescence decrease for constructs carrying a 6-AA NL insert (Hackney, 1994, 2002; Hackney et al., 2003; Clancy et al., 2011). Additional mantADP exchange experiments\u2014where the frequency of transient rear-head interactions with the MT was assessed based on the effective rate of mantADP exchange at the rear head\u2014revealed an order-of-magnitude increase relative to WT kinesin once the NL domain was extended by 4 or more AA (Figure 2B). The low mantADP exchange rates observed for our series of constructs are consistent with previous reports (Hackney, 2002; Hackney et al., 2003). Taken all together, these results indicate that kinesin can maintain a stable, 1-HB ATP-waiting state with up to 3 additional AA in its NL, but that extending the NL by 4 AA or more leads to an abrupt increase in rebinding of the rear-head to the MT.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig2-v2.jpg)\n\n**Figure 2.:** (A) Half-site mantADP release measurements as a function of NL insert length (mean \u00b1 SE; N = 3). Upon MT binding, both DmK-WT and DmK-3AA, pre-incubated with mantADP (mantD), lose \u223c50% of their initial fluorescence. The fluorescence loss exceeds 50% for constructs containing NL inserts longer than 3 AA. Inset, A 50% loss of fluorescence corresponds to dimers binding to MTs in a 1-HB state, whereas a 100% fluorescence decrease is consistent with the release of all bound mantADP (mantD) upon MT binding. (B) MantADP exchange by the tethered head as a function of NL insert length (mean \u00b1 SE; N = 3), measured by rapidly diluting mantADP\u00b7kinesin\u00b7MT complexes into nucleotide-free buffer via stopped flow. The cartoon depicts the measured reaction. The exchange rate increased significantly for constructs with NL inserts of 4 AA or more. In the insets (A and B), white shading indicates non-fluorescent, nucleotide-free heads (\u00d8); yellow indicates fluorescent, mantADP-bound heads.\n\n### Run lengths are dramatically reduced in kinesin constructs with one or more additional amino acids in the neck linker\n\nAfter kinesin undertakes its force-producing mechanical step [B], the binding gate may promote front-head binding to the forward MT binding site while keeping the rear head bound to the MT (Figure 1B). The overall distance kinesin travels along the MT before dissociating\u2014the run length\u2014is governed by the probability of dissociation during each stepping cycle, which is itself determined, to a first approximation, by a competition between the binding of the tethered front head and the premature release of the MT-bound rear head (Milic et al., 2014). To determine whether the rate of front-head binding at the binding gate depends upon NL length, we performed run-length measurements as a function of load for constructs with extended NLs.\n\nExtending the NL by just a single AA decreased the unloaded run length by a factor of \u223c3 relative to the WT run length. Further increments in the NL length (up to 6 AA) yielded only minor decreases in run length relative to DmK-1AA (Figure 3). Under unloaded conditions, DmK-6AA was capable of taking several dozen consecutive forward steps, on average, before dissociating, indicating that kinesin retains significant processivity with as many as 6 AA introduced into its NL. In the presence of forces applied either against (hindering loads) or along (assisting loads) the direction of kinesin motility (Figure 3, inset), the differences in processivity among constructs with differing NL lengths were substantially more pronounced under hindering forces than under assisting forces. Although the unloaded run lengths for DmK-WT and DmK-1AA differed by a factor of 3, the differences in run length between these constructs under assisting loads were comparatively minor. A gradual, exponential decrease in run length was observed for all constructs under increasing hindering loads, but the application of even a small assisting force (+2 pN) abruptly reduced the run length for both the WT and NL-mutant constructs. Based on exponential fits to the mean run lengths as a function of applied load, the characteristic distance parameter for the force dependence of run length, \u03b4L, was nearly an order of magnitude greater under hindering-load conditions than under assisting-load conditions for all constructs (Table 1). These results show that the highly asymmetric force dependence of DmK run lengths previously reported for the WT motor (Milic et al., 2014) is also exhibited by kinesin constructs with NLs extended up to 6 AA. Interestingly, although processivity was found to depend upon the NL length, particularly under hindering-load and unloaded conditions, the distance parameters for both hindering and assisting loads were nearly independent of NL length (Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig3-v2.jpg)\n\n**Figure 3.:** Mean run lengths as a function of applied force (mean \u00b1 SE; N = 49\u2013818) for the constructs studied, acquired with an optical force clamp in the presence of 2 mM ATP (solid circles; color-coded according to the legend). DmK-WT (Milic et al., 2014) and hindering load data sets for DmK-3AA (Andreasson et al., 2015) are reproduced from our previous work. For all constructs, mean run lengths exhibited significant asymmetry, depending upon the direction of load. To obtain the unloaded run length (L0) and characteristic distance parameter (\u03b4L) for each construct, run length (L) data for hindering (\u22126 to 0 pN) and assisting loads (+2 to +20 pN) were separately fit to exponentials (solid lines; color-coded according to the legend) of the form $L(F)=L_{0}exp[\u2212|F|\\delta_{L}/k_{B}T]$, where F is the force applied by the optical trap and kBT is Boltzmann's constant times the absolute temperature; parameter values are in Table 1. Inset cartoon, a graphical representation of the experimental geometry of the single-molecule assay (not to scale).\n\n**Table 1.**\n Parameters from exponential fits to the run length data of Figure 3\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Construct</th>\n      <th>L0\u2212 (nm)*</th>\n      <th>\u03b4L\u2212 (nm)*</th>\n      <th>L0+ (nm)*</th>\n      <th>\u03b4L+ (nm)*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DmK-WT\u2020</td>\n      <td>1120 \u00b1 60</td>\n      <td>2.0 \u00b1 0.1</td>\n      <td>87 \u00b1 6</td>\n      <td>0.27 \u00b1 0.03</td>\n    </tr>\n    <tr>\n      <td>DmK-1AA</td>\n      <td>360 \u00b1 30</td>\n      <td>1.6 \u00b1 0.1</td>\n      <td>120 \u00b1 7</td>\n      <td>0.48 \u00b1 0.02</td>\n    </tr>\n    <tr>\n      <td>DmK-2AA</td>\n      <td>410 \u00b1 60</td>\n      <td>1.8 \u00b1 0.2</td>\n      <td>115 \u00b1 17</td>\n      <td>0.42 \u00b1 0.05</td>\n    </tr>\n    <tr>\n      <td>DmK-3AA</td>\n      <td>320 \u00b1 20</td>\n      <td>1.6 \u00b1 0.1</td>\n      <td>76 \u00b1 4</td>\n      <td>0.31 \u00b1 0.02</td>\n    </tr>\n    <tr>\n      <td>DmK-5AA</td>\n      <td>440 \u00b1 60</td>\n      <td>2.4 \u00b1 0.2</td>\n      <td>48 \u00b1 14</td>\n      <td>0.35 \u00b1 0.14</td>\n    </tr>\n    <tr>\n      <td>DmK-6AA</td>\n      <td>270 \u00b1 30</td>\n      <td>1.9 \u00b1 0.1</td>\n      <td>59 \u00b1 8</td>\n      <td>0.27 \u00b1 0.10</td>\n    </tr>\n  </tbody>\n</table>\n\n_L0\u2212, unloaded run length for hindering loads (\u22126 to 0 pN); \u03b4L\u2212, distance parameter for hindering loads (\u22126 to 0 pN); L0+, unloaded run length for assisting loads (+2 to +20 pN); \u03b4L+, distance parameter for assisting loads (+2 to +20 pN).*Parameter values correspond to mean \u00b1 SE.\u2020Values from Milic et al. (2014)._\n\n### Added phosphate proportionally enhances run lengths of DmK-WT and DmK-6AA\n\nPrevious work has shown that under assisting loads, added phosphate (Pi) nearly doubles the run length of DmK-WT (Figure 4A), indicating that the probability of dissociation at the binding gate\u2014and therefore run length\u2014is determined by a competition between the rate of Pi release from the bound head and the rate of productive tethered-head binding (Milic et al., 2014). To determine the extent to which the NL length affects this competition, we examined the influence of 100 mM potassium phosphate on the processivity of DmK-6AA, under moderate assisting loads (+4 pN). Under saturating levels of ATP, the addition of Pi increased the DmK-6AA run length relative to that in its absence (Figure 4A). However, no statistically significant changes in processivity were detected at low ATP concentrations, nor under conditions where ATP was replaced with the slowly hydrolyzable analog, ATP\u03b3S, nor in the presence of 100 mM potassium chloride (used as a control for ionic strength effects) (Figure 4). Although run lengths under otherwise identical assay conditions were systematically lower for DmK-6AA than for DmK-WT, those differences disappeared when the data were normalized relative to the baseline run lengths (no added Pi) for each motor (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig4-v2.jpg)\n\n**Figure 4.:** (A) Mean run lengths (mean \u00b1 SE; N = 84\u2013210) under moderate assisting load (+4 pN), in the presence of nucleotide analogs (green), 100 mM potassium chloride (KCl; purple), or 100 mM potassium phosphate (KPi; orange). Run lengths for DmK-WT (shaded bars, data from Milic et al., 2014) are shown paired with DmK-6AA data (unshaded bars). Decreasing the ATP concentration, replacing ATP by ATP\u03b3S, or adding KCl elicited no statistically significant change in run length relative to the baseline run length for saturating ATP (2 mM) in the absence of added salt. The mean run length increased significantly in the presence of phosphate for both DmK-WT (p < 10\u22124; t-test) and DmK-6AA (p < 10\u22124; t-test). (B) Run-length data from (A), normalized to the baseline run length value for each construct.\n\n### The velocity of kinesin constructs with extended neck linkers can be rescued by assisting loads\n\nOnce the tethered head binds the MT to generate the 2-HB state [C], the unbinding gate may ensure unidirectional processivity by inhibiting front-head unbinding while promoting rear-head release (Figure 1B). As discussed previously, the unbinding gate might consist of a rear-head gating mechanism, where the inter-head tension enhances the rate of rear-head release. If detachment of the trailing head is accelerated by inter-head tension, then extending the NL would be expected to relieve the tension and decrease the rear-head release rate, thereby reducing the overall rate at which kinesin proceeds around the reaction cycle. To explore the effect of inter-head tension on rear-head gating, we performed single-molecule measurements of the velocity of our kinesin constructs as a function of load.\n\nBoth WT and mutant constructs exhibited a force\u2013velocity relationship that is highly asymmetric with respect to the direction of the applied load (Figure 5), consistent with previous findings (Block et al., 2003; Block, 2007). Whereas the insertion of a single AA in the NL elicited a drop in velocity across all loads, additional NL insertions produced no further changes in velocity: indeed, Drosophila kinesin stepped at significant rates with as many as 6 additional AA in its NL. In contrast to DmK-WT, which is not sped up by assisting loads, the reduction in unloaded velocity produced by NL extension could be recovered by applying larger assisting loads (\u223c20 pN). These data are consistent with the explanation that inter-head tension, which can promote rear-head release, is effectively abolished by extending the NL past its WT length, but that the reduced tension can be restored by applying assisting load, which places differential stress on the rear head. However, the finding that assisting load fails to appreciably increase the WT velocity suggests that the rate of rear-head release by WT kinesin must be substantially higher than the rate-limiting step(s) of the mechanochemical cycle. If the rate of rear-head release were instead rate-limiting, then any acceleration of that step would have manifested as an increase in motor velocity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig5-v2.jpg)\n\n**Figure 5.:** Velocity (mean \u00b1 SE; N = 49\u2012818) as a function of force for constructs (solid circles; color-coded according to the legend). Data were collected under the same conditions as Figure 3. DmK-WT velocity was not affected by assisting loads, but the velocities of all mutant constructs could be increased by larger assisting loads. Solid lines show the global fit to a minimal 3-state model (inset) for WT (blue) and mutant (red) constructs, with parameters in Table 2. Data sets for both DmK-WT and DmK-3AA under hindering loads are from (Andreasson et al., 2015). Force\u2013velocity data are compared to other mutant constructs in Figure 7.\n\n### The force dependence of kinesin mutants with extended neck linkers can be accounted for by a minimal 3-state model\n\nTo gain a quantitative understanding of the velocities of mutant constructs, and to gain additional insight into how inter-head tension affects kinesin gating, the force\u2013velocity data (Figure 5) were fit to a minimal, 3-state model of the mechanochemical cycle (Figure 5, inset). The first transition in this cycle consists of the force-producing mechanical step, [1] \u2192 [2], which is modeled by a force-dependent rate, $k_{1}=k_{1}^{0}exp[F_{trap}\\delta_{1}/k_{B}T]$ where $k_{1}^{0}$ is the unloaded rate constant, Ftrap is the applied force, \u03b41 is a characteristic distance parameter, and kBT is Boltzmann's constant times the absolute temperature. Because kinesin is in a 1-HB ATP-waiting state [1] prior to this transition, the inter-head tension, Fi, has no effect on k1. The following transition, [2] \u2192 [3], consists of ATP hydrolysis and related events\u2014including the completion of NL docking by the MT-bound head, front-head binding to the MT, and ADP release by the new front head\u2014that induce kinesin to enter the strained, 2-HB state [3]. Because this transition corresponds to the completion of the key biochemical steps in the cycle, the associated rate constant, k2, is modeled as being independent of load. From the 2-HB state [3], the final transition of the cycle consists of rear-head release (which is also load-dependent) and is modeled as $k_{3}=k_{3}^{0}exp[(F_{trap}+F_{i})\\delta_{3}/k_{B}T]$, where $k_{3}^{0}$ is the unloaded rate constant and \u03b43 is the associated distance parameter. The expression for k3 is a function of both Ftrap and Fi, and accounts for the roles of both internal and external tension in enhancing the dissociation of the rear head. A previously described analytical method was adopted to derive the expression for velocity as a function of force based on this model (Chemla et al., 2008). This model represents a minimal extension of previously published models (Schnitzer et al., 2000; Block et al., 2003).\n\nThe 3-state model was fit globally to our data (Figure 5), and the resulting parameters and uncertainties are given in Table 2. Because the NL-insert mutants exhibited indistinguishable force-dependent velocities, we took the inter-head tension in these constructs to be negligible compared to the WT (Fi,mutant \u2248 0 pN). With this assumption, we determined the inter-head tension in WT kinesin (Fi,WT) to be 26 \u00b1 3 pN in the 2-HB state, a value that agrees well with molecular dynamics simulations, which predicted that it would lie in the range of 15\u201335 pN (Hariharan and Hancock, 2009). The model fit also supplies an estimate of the unloaded rate of rear-head release, 260 \u00b1 10 s\u22121. With the derived values for Fi,WT and the load-dependence of rear-head unbinding, \u03b43, the expression for k3 shows that inter-head tension alone is capable of increasing the rate of rear-head release by an order of magnitude (Table 2). Moreover, the modeled rate of ATP hydrolysis (plus the other primarily biochemical events, above), 95 \u00b1 1 s\u22121, is consistent with previous estimates of the hydrolysis rate from both biochemical and single-molecule studies (Ma and Taylor, 1997; Gilbert et al., 1998; Schnitzer et al., 2000; Farrell et al., 2002). Under all practical loads, hydrolysis is substantially slower than rear-head release.\n\n**Table 2.**\n Kinetic parameters from a global fit of the 3-state model to the force\u2013velocity data of Figure 5\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Parameter description</th>\n      <th>Value*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>k10(F)</td>\n      <td>Rate of ATP binding\u2020; mechanical step</td>\n      <td>4900 \u00b1 300 s\u22121</td>\n    </tr>\n    <tr>\n      <td>\u03b41,WT</td>\n      <td>Distance parameter (wild-type)</td>\n      <td>4.6 \u00b1 0.1 nm</td>\n    </tr>\n    <tr>\n      <td>\u03b41,mutant</td>\n      <td>Distance parameter (mutant constructs)</td>\n      <td>4.0 \u00b1 0.1 nm</td>\n    </tr>\n    <tr>\n      <td>k2</td>\n      <td>Rate of ATP hydrolysis; biochemical events</td>\n      <td>95 \u00b1 1 s\u22121</td>\n    </tr>\n    <tr>\n      <td>k30(F)</td>\n      <td>Rate of rear-head release</td>\n      <td>260 \u00b1 10 s\u22121</td>\n    </tr>\n    <tr>\n      <td>\u03b43</td>\n      <td>Distance parameter (rear-head release)</td>\n      <td>0.35 \u00b1 0.02 nm</td>\n    </tr>\n    <tr>\n      <td>Fi,WT</td>\n      <td>Inter-head tension (wild-type)</td>\n      <td>26 \u00b1 3 pN</td>\n    </tr>\n    <tr>\n      <td>Fi,mutant</td>\n      <td>Inter-head tension (mutant constructs)</td>\n      <td>0 pN (fixed)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Parameter values correspond to mean \u00b1 SE.\u2020Rate for saturating ATP conditions (2 mM)._\n\nWe note that any force-dependent transition in the kinesin cycle must be associated with a corresponding movement of a head, or other subdomain, of the motor. Previous work has shown that the main force-dependent transition occurs from a 1-HB state after ATP binding (Schnitzer et al., 2000; Block et al., 2003). The velocity decrease under hindering loads is associated with this transition, which we model as k1, with a correspondingly large distance parameter (\u03b41 \u2265 4 nm; Table 2), equivalent to nearly half the size of the kinesin step. This transition becomes rate limiting at moderate hindering loads, and will therefore dominate any other possible force-dependent steps at high loads. Under assisting loads, k1 is exceedingly fast (Table 2) and does not appreciably contribute to the completion time of the overall cycle\u2014and therefore to the velocity\u2014in this regime. However, for the mutant constructs, we are able to detect a second force-dependent contribution that is manifested as increased velocity under assisting loads (Figure 5). This force dependence, \u03b43, is necessarily linked to some motion of the motor, and the load dependence of the associated rate, k3, could be attributed either to rear head release when kinesin is in the 2-HB state or to binding of the forward-positioned tethered head of a 1-HB motor. We strongly favor the former possibility, because it also helps to explain the observed decrease in run length under assisting load, as well as the force dependence of exponential fits to the run length data (Figure 3 and Table 1). Put another way, if load-dependent rate k3 was instead to correspond to tethered-head binding, then an increase in k3 under assisting load would increase the likelihood of completing a step, and thereby increase run lengths in this force regime, contrary to observation (Figure 3). With these assignments, k2 remains the sole force-independent rate, corresponding primarily to biochemical, and not mechanical, events.\n\n### Kinesin inter-head tension preferentially enhances the unbinding rate of the front head relative to that of the rear head\n\nIn the 2-HB state [C], inter-head tension exerts not only a forward load on the rear head, but also imposes a matching rearward load on the front head (Figure 1B). Having determined values for the inter-head tension and the force-dependent rate of rear-head release (Table 2), it is also necessary to quantify the force-dependent rate of front-head release in order to model how inter-head tension affects the unbinding gate. The application of hindering loads to the kinesin stalk places a rearward load on its front head, and therefore can serve as a proxy for estimating the rate of detachment of the front head at the unbinding gate. Previously, we showed that large superstall forces imposed by an optical trap (exceeding \u22127 pN) slow down the forward stepping pathway to such an extent that unbinding proceeds through a competing (slow) ATP-dependent pathway (Clancy et al., 2011). To quantify the rate of front-head detachment, we examined the unbinding of DmK-WT from the MT under load in the presence of saturating levels of ATP (2 mM). Measurements of unbinding rates under load (Figure 6) were fit to the exponential function, koff=koff0\u2009exp[|Ftrap|\u03b4off/kBT] where koff0 is the unloaded rate and \u03b4off is the associated distance parameter. The unbinding rate for all hindering loads (koff\u2212) is determined by koff\u22120=1.11\u00b10.03 s\u22121 and \u03b4off\u2212=0.60\u00b10.01 nm (fitting the unbinding rates only to data from superstall forces yielded nearly identical parameter values). From these numbers, it follows that the 26-pN inter-head tension in WT kinesin can enhance the rate of front-head release at the unbinding gate by a factor of \u223c50.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig6-v2.jpg)\n\n**Figure 6.:** Single-molecule measurements of the rate of MT unbinding for DmK-WT (mean \u00b1 SE; N = 75\u2012818) at 2 mM ATP (solid circles). The unloaded release rate (koff) and the associated distance parameter (\u03b4off) were obtained from exponential fits to unbinding data acquired under hindering loads (\u2212), \u221225 to 0 pN, and assisting loads (+), +2 to +20 pN. Fits (solid lines) and associated parameters (legend; mean \u00b1 SE) are shown.\n\nFor assisting loads, we can estimate the unbinding characteristics of kinesin dimers from the MT (Figure 6) by dividing the force-dependent velocities (Figure 5) by their corresponding run lengths (Figure 3), yielding $k_{off+}^{0}=7.4\\pm0.5$ s\u22121 and $\\delta_{off+}=0.32\\pm0.02$ nm. Taken together, the values of $k_{off}^{0}$ and \u03b4off for assisting and hindering loads, which are also useful for modeling transport by multiple kinesin motors, express the asymmetry in kinesin velocity and run length with respect to the direction of load. For assisting loads, the distance parameter, \u03b4off+, is controlled by the run length force dependence, and we note that its value is similar to the distance parameter derived from fits to the velocity data, \u03b43, suggesting that both processes are governed by the detachment of the rear head.\n\n### Cysteine-light kinesin mutants do not reflect wild-type motility under load\n\nThe force\u2013velocity relation for DmK-6AA (Figure 5), which carries the insert LQASQT in its NL, differs significantly from the corresponding relation for a human (HsK) cysteine-light (CL) construct (Rice et al., 1999) with the insert AEQKLT, HsK-CL-6AA (Clancy et al., 2011) (Figure 7). Specifically, DmK-6AA exhibits a substantially greater velocity\u2014which is also less force dependent\u2014than HsK-CL-6AA (Figure 7A). Whereas HsK-CL-6AA was capable of undertaking many rearward steps when subjected to hindering loads beyond the stall force (Clancy et al., 2011), no such processive backstepping was observed for DmK-6AA, nor for any other Drosophila constructs examined that retained native cysteine residues. This finding is also consistent with the proportionally greater mantADP release by HsK-CL-6AA (Clancy et al., 2011) than DmK-6AA (Figure 2A). By contrast, the wild-type forms of Drosophila (DmK-WT) and human (HsK-WT) kinesin exhibit nearly identical force\u2013velocity relations under otherwise identical conditions (Figure 7A). The question therefore arises whether the discrepancy between the behavior of DmK-6AA and HsK-CL-6AA is a consequence of: (i) one or more of the seven mutations used to produce the CL construct, (ii) some intrinsic difference between human and Drosophila kinesin, (iii) a sequence-specific effect of the NL insert, or (iv) some combination of these.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07403/elife-07403-fig7-v2.jpg)\n\n**Figure 7.:** Force\u2013velocity relations of constructs that differ by parent species, NL length, NL insert sequence, or cysteine mutations (mean \u00b1 SE; N = 25\u2013818; solid circles, color-coded according to the legends). (A) DmK-6AA exhibited lower velocity under all loads than WT, but was faster and less force-dependent than HsK-CL-6AA, a human CL construct with a different 6-AA NL insert. (B) Side-by-side comparison of human and Drosophila CL mutants, along with corresponding WT constructs. Unloaded velocities of CL constructs with WT-length NL domains were similar, but CL constructs were systematically slower than WT under hindering loads. Under assisting loads, only the HsK-CL construct could be sped up beyond WT velocities. (C and D) Comparisons of constructs carrying NL insert sequences LQASQT (C) and AEQKLT (D). Force\u2013velocity data for WT Drosophila and human kinesin were indistinguishable, but human constructs with 6-AA extensions of the NL moved at lower velocities than corresponding Drosophila motors under all loads. (E and F) Comparisons of all Drosophila (E) and human (F) constructs. Constructs with the NL insert AEQKLT were slower for all forces than those with LQASQT, for both Drosophila and human kinesin. HsK-CL-6AA data (Clancy et al., 2011) and hindering-load velocities for DmK-WT (Andreasson et al., 2015) are reproduced from previous work. Fits to DmK-WT and DmK-6AA data sets (solid lines; color-coded according to the legends) correspond to the model of Figure 5, with parameters values from Table 2. The remaining force\u2013velocity data were fit to polynomials (solid and dashed lines; color-coded according to legends), provided to guide the eye.\n\nRecombinant mutant constructs have been widely used to investigate kinesin function. In particular, CL constructs have been developed to attach fluorescent labels, and it has been commonly assumed that such motors exhibit WT behavior, based on the similarity of their velocities measured under unloaded conditions (Rice et al., 1999). Here, we assayed the velocity of a widely used truncated human CL construct (HsK-CL) (Rice et al., 1999) and a Drosophila CL construct (DmK-CL) (Fehr et al., 2009) over the full range of forces (Figure 7B). Under hindering loads, both HsK-CL and DmK-CL were appreciably slower, and also more sensitive to load, than either DmK-WT or the corresponding truncated human construct, HsK-WT. For the case of the human CL construct, the entire shape of the force\u2013velocity relation is affected, because this motor can be sped up under assisting loads by as much as 200 nm/s. WT motors do not exhibit this effect, and it suggests that important steps in the mechanochemical cycle have been altered in the mutant.\n\nBoth CL constructs carry, among other changes, a point mutation of a conserved cysteine in the NL domain, namely C338S in DmK-CL (Fehr et al., 2009) and C330S in HsK-CL (Rice et al., 1999). We determined the force\u2013velocity curve for a Drosophila construct containing only the C338S mutation (DmK-C338S). Comparison shows that this single mutation can account for some, but not all, of the change in force dependence under hindering loads (Figure 7B). This indicates that a single CL mutation in the NL cannot alone account for the differences between WT and CL motors.\n\nAlthough the force\u2013velocity curves for DmK-WT and HsK-WT are practically indistinguishable, extending the NL of these motors by 6 AA, using either the sequence LQASQT or AEQKLT, showed that with the same insert sequences, human constructs were systematically slower than the corresponding Drosophila constructs (Figure 7C,D). Furthermore, NL extensions based on AEQKLT produced motors that were slower than the corresponding constructs based on LQASQT, for both DmK and HsK (Figure 7E,F). These findings indicate that the sequences of the inserts play some role in determining motor velocity. Nevertheless, regardless of species or insert sequence, none of the mutants with extended NL domains that retained their native cysteine residues exhibited either processive backstepping under superstall loads or velocities surpassing the WT under assisting loads. We note that because DmK-CL requires two mutations (Fehr et al., 2009), whereas HsK-CL necessitates seven (Rice et al., 1999)\u2014only one of which is common between the two constructs\u2014a more direct comparison of Drosophila and human CL constructs with extended NL domains is not practical.\n\n## Discussion\n\n### The stepping gate, which prevents rear-head rebinding in the ATP-waiting state, is not strongly dependent on neck linker length\n\nThe extent of mantADP release by the rear head while kinesin is in the ATP-waiting state [A] sheds light on the role of NL length in inhibiting rear-head rebinding, an essential feature of the stepping gate. Because WT and mutant constructs with as many as three additional AA in the NL can maintain a stable 1-HB ATP-waiting state, our results show that the stepping gate is not strongly influenced by NL length. Although the stepping gate is clearly compromised in constructs with longer NL inserts (4\u20136 AA), a substantial portion of the population retains mantADP in its rear head (Figure 2A), suggesting that gating is not abolished even in these motors. This notion is reinforced by results showing that mantADP exchange rates for the extended-NL mutants (Figure 2B) are several orders of magnitude lower than MT-stimulated ADP release rates by WT monomers, or ATP-stimulated ADP release rates by MT-bound WT dimers (Hackney, 2002, 2005; Hackney et al., 2003). The results are fully consistent with the high degree of unidirectionality observed for all constructs, even when subjected to high hindering loads.\n\n### Neck linker length is optimized for processivity under hindering loads or unloaded conditions\n\nAs reported previously for WT kinesin (Milic et al., 2014), the run lengths of constructs with extended NL domains are highly asymmetric with respect to the direction of applied load (Figure 3). Evidently, the binding gate is substantially more effective at maintaining processivity under unloaded or hindering-force conditions than under assisting-load conditions. Assisting loads as low as 2 pN produced a dramatic reduction in the run length, suggesting that any mechanism responsible for the binding gate becomes ineffective when kinesin is subjected to forces aligned with its overall motion. We note that models of transport by multiple kinesin motors have not yet taken load asymmetry into account (Klumpp and Lipowsky, 2005; Muller et al., 2008), but it may be important to do so explicitly, given the magnitude of the effect.\n\nHere, we found that lengthening the NL by a single AA significantly decreased the unloaded run length, whereas further NL extensions led to negligible additional reductions (Figure 3). Furthermore, previous work has shown that a kinesin construct with a NL shortened by a single AA becomes non-processive (Shastry and Hancock, 2010, 2011). We conclude that the length of the wild-type NL domain may be near optimal for maximizing motor processivity.\n\nWe speculate that the decrease in run length associated with extended NLs (Figure 3) arises from the corresponding increase in the diffusive space that the tethered head must explore before reaching its next MT binding site. Enlarging that space extends the time that the tethered head takes to reach the forward site, thereby increasing the probability that the partner head may release the MT prematurely, enhancing dimer dissociation (Figure 1B). This proposal is also consistent with the effect of added Pi in increasing the processivity of DmK-WT and DmK-6AA (Figure 4): Pi acts to stabilize the bound head, thereby reducing dimer dissociation. The finding that normalized run lengths for the NL constructs were identical under all conditions tested (Figure 4B) suggests that the rates of any biochemical events associated with the bound head, when the kinesin cycle is at the binding gate, are independent of the NL length. The absolute run lengths measured for DmK-6AA were systematically lower than those of the WT motor (Figure 4A), as anticipated from the increased time required for the tethered head to reach the forward MT binding site.\n\n### Inter-head tension maximizes kinesin velocity\n\nExtending the NL by a one AA reduced kinesin velocity under all loads, whereas additional NL extensions, up to 6 AA, produced force\u2013velocity curves that were indistinguishable from DmK-1AA (Figure 5). We surmise that inserting a single AA into the NL introduces sufficient slack into the inter-head linkage that any further extensions become superfluous. A relatively high inter-head tension (26 \u00b1 3 pN; Table 2) may be advantageous in tuning WT kinesin for increased velocity. However, because constructs with up to 6 AA inserted in the NL retained significant functionality (Figure 5), we infer that inter-head tension plays only a modulatory role in kinesin motility, a conclusion that gains support from the modeled force\u2013velocity relations (Figure 5). The fit parameters indicate that WT levels of inter-head tension can amplify the rate of rear-head release by an order of magnitude beyond its unloaded rate. However, because this unloaded rate is already more than double the rate of the hydrolysis-associated events of the kinesin cycle, k2, the rate-determining step of the full cycle cannot be rear-head release. We find instead that the 2-HB state of kinesin is primarily front-head gated, in the sense that the kinetic cycle of the front head is slowed while the rear head remains MT-bound. Put another way, the gating mechanism responsible for processivity in the 2-HB state does not require inter-head tension, but rather occurs through a modulation of the rates of biochemical processes occurring at the front head, including ATP hydrolysis, and possibly productive ATP binding (Clancy et al., 2011).\n\n### Inter-head tension impairs, rather than aids, the unbinding gate in kinesin\n\nAlthough an inter-head tension of 26 pN can enhance rear-head release 10-fold, unbinding measurements performed under hindering loads (Figure 6)\u2014which serve as a proxy for front-head detachment rates at the unbinding gate [C]\u2014reveal that such an inter-head tension would be expected to enhance front-head release 50-fold. Despite the front-head release rate being two orders of magnitude lower than the rear-head release rate in the absence of inter-head tension, the fact that the load-sensitivity for detachment by the front head (captured by the distance parameter, $\\delta_{off\u2212}=0.60\\pm0.01$ nm; Figure 6) is nearly double that of the rear head ($\\delta_{3}=0.35\\pm0.02$ nm; Table 2) implies that increases in inter-head tension preferentially promote the unbinding of the front head. Kinesin is, in this sense, negatively rear-head gated at the 2-HB state: if anything, the presence of inter-head tension serves to undermine any contribution of the unbinding gate in maintaining processive motility.\n\nBecause inter-head tension adversely affects processivity from the 2-HB state, and because the rate of rear-head release is not rate limiting for the kinesin cycle even in the absence of inter-head tension, we conclude that it is unlikely to function as the primary mechanism for head coordination in the kinesin cycle. This conclusion seemingly runs contrary to previous publications, implicating inter-head tension as the preferred gating mechanism (Rosenfeld et al., 2003; Guydosh and Block, 2006, 2009; Toprak et al., 2009; Shastry and Hancock, 2011). However, as we have previously argued (Clancy et al., 2011), results from the earlier studies can be reconciled with our own by invoking a front-head gating mechanism for kinesin where it is the spatial orientation of the NL (i.e., pointing forward in the docked state and rearward when undocked), rather than inter-head tension, per se, that facilitates coordination of biochemical states, as discussed (Asenjo et al., 2003; Hahlen et al., 2006; Clancy et al., 2011). In WT kinesin, an essential difference between the 2-HB state [C] and the 1-HB state with the tethered head positioned in front of the bound head [B] (Figure 1B) is that inter-head tension can develop only when both heads are strongly bound. Although tension may accelerate the rear-head release, no increase in this rate is necessary for gating, so long as the biochemical events in the front head of a 2-HB motor cannot proceed. In other words, gating at the 2-HB state may be accomplished not by accelerating rates associated with the rear head, but by inhibiting\u2014via the spatial orientation of the NL\u2014the ATP hydrolysis cycle at the front head, until the rear head detaches.\n\n### Motility properties of kinesin constructs with extended neck linkers depend on species, insert sequence, and cysteine-light mutations\n\nEvidently, the species of origin, the mutation of cysteines in the catalytic domain, as well as the sequence and length of the NL, can individually affect kinesin motility (Figure 7A\u2013F). Although the ability of certain mutants to backstep processively under superstall loads was previously attributed to an increase in NL length (Yildiz et al., 2008; Clancy et al., 2011), the dramatic difference between DmK-6AA and HsK-CL-6AA shows that extension of the NL alone cannot account for the behavior of HsK-CL-6AA (Clancy et al., 2011) and related constructs (Yildiz et al., 2008). The AEQKLT insert produced similar velocities for HsK-CL-6AA and the non-CL version of the human construct, HsK-6AA(AEQKLT) (Figure 7C\u2012F), but only the CL version could backstep processively. Based on these findings, we conclude that the processive backstepping behavior of HsK-CL-6AA arises from some combination of NL extension and the introduction of one or more of the seven mutations used to produce human CL kinesin. Further work will be required to understand the detailed basis of any such effects.\n\nAlthough we stress that our specific findings on kinesin gating, together with the general gating framework presented here, are not based on data from CL mutants, numerous publications have made extensive use of these (Rice et al., 1999; Case et al., 2000; Tomishige and Vale, 2000; Peterman et al., 2001; Rosenfeld et al., 2001, 2002; Sosa et al., 2001; Sindelar et al., 2002; Asenjo et al., 2003; Rice et al., 2003; Rosenfeld et al., 2003; Naber et al., 2003a, 2003b; Yildiz et al., 2004; Asenjo et al., 2006; Milescu et al., 2006; Tomishige et al., 2006; Mori et al., 2007; Sindelar and Downing, 2007, 2010; Verbrugge et al., 2007; Dietrich et al., 2008; Yildiz et al., 2008; Asenjo and Sosa, 2009; Toprak et al., 2009; Wong et al., 2009; Verbrugge et al., 2009a, 2009b, 2009c; Clancy et al., 2011; Naber et al., 2011; Mattson-Hoss et al., 2014). In light of the unusual behavior displayed by certain CL mutants, it remains to be determined which previous findings are applicable to kinesin in its WT form. To avoid artifacts in future work, it would be prudent to explore alternative linking chemistries for site-specific labels that do not require the elimination of native cysteine residues. Furthermore, wild-type behavior for mutant constructs should no longer be assumed simply on the basis of their unloaded velocities or ATP hydrolysis rates.\n\nThe force-dependent velocities for the various Drosophila constructs with NL extensions (DmK-1AA through DmK-6AA) were apparently independent of the sequence used to extend the NL (Figure 5). However, different 6-AA NL insert sequences (LQASQT vs AEQKLT) exhibited different motile properties in both Drosophila and human constructs (Figure 7C\u2012F). The reason for these differences is unclear, but we conjecture that it may be due to the presence of the positively charged lysine in the AEQKLT insert. In all constructs, NL extensions were introduced at the junction of NL and the stalk to minimize any disruption to the interaction between the remaining, native NL sequence and the catalytic head domain. It is conceivable that insertions at this position nevertheless affect kinesin in some ways beyond the reduction in tension arising from increased NL length, but we consider that possibility less likely, because the data in Figures 2\u20125 can be well modeled by mechanical effects. We also favor the explanation that extensions of the NL lead to negligible inter-head strain in the 2-HB state, because extensions from 1 to 6 AA increase the NL length by over 30%, yet generate no corresponding change in velocity (Figure 5). The gating framework (Figure 1B) and associated conclusions would remain intact even in the presence of residual inter-head tension in mutants, however. In that case, the value for inter-head tension in the WT (Fi,wt; Table 2) would be interpreted as the increase in tension (relative to the mutants) produced by its shorter NL.\n\n### Neck linker length in wild-type kinesin has been optimized to maximize both unidirectional processivity and velocity\n\nThe general framework (Figure 1B) provides a structure for evaluating the relative contributions of individual gates to the kinesin cycle. Because the rate of unbinding of the front head increases faster than that of the read head under increasing inter-head tension, the unbinding gate functions most efficiently at lower tension, or in its absence. Extensions of the NL abolished inter-head tension in kinesin, yet motors remained active, albeit at reduced speeds, and their stepping gates remained fully functional, suppressing rear-head rebinding even in constructs with NLs lengthened up to three AA. These considerations, taken on their own, suggest that NL extensions from 1 to 3 AA might lead to more effective gating, and consequently to greater processivity. Instead, the most pronounced effect of NL extension was a dramatic decrease in processivity. An explanation is that the dominant effect of lengthening the NL is to compromise the binding gate, and that the deleterious effect of NL length at this gate outweighs any compensating effects of reduced inter-head tension at the unbinding gate. We conclude that the key role played by NL length in kinesin gating is twofold: (1) to enhance processivity by facilitating binding of the tethered head to the forward MT site at the binding gate, and (2) to increase velocity by accelerating rear-head release from the 2-HB state at the unbinding gate.\n\nIn general, the kinesin-1 nanomechanical properties appear to be selected for processivity and velocity. Other cytoskeletal motors, including members of the kinesin, myosin, and dynein superfamilies, may be optimized to emphasize different combinations of useful characteristics, including stall force, load-bearing ability, velocity, processivity, directionality, or the ability to work cooperatively in groups, depending upon their roles in cells. Using the general gating framework (Figure 1B), the strategies adopted to optimize for a specific functionality could be characterized in terms of the extent to which each gate contributes to the overall cycle of a given motor. Because gating considerations unify the coupling of biochemical states and mechanical events, these may be of value in framing future investigations, as well as in re-evaluating previous work, on how dimeric motors are coordinated (Block, 2007; Gennerich and Vale, 2009; Kull and Endow, 2013).\n\n## Materials and methods\n\n### Kinesin expression and purification\n\nAll Drosophila melanogaster recombinant constructs, with the exception of CL mutants, were derived from a truncated sequence, comprising the first 559 AA of the Drosophila kinesin-1 heavy chain (KHC) with eGFP and a 6xHis-tag engineered at the C-terminus, hereafter referred to as DmK-WT (Shastry and Hancock, 2010; Milic et al., 2014). One or more rounds of site-directed mutagenesis (QuikChange, Agilent Technologies, Santa Clara, CA) were applied to produce a series of constructs with lengthened NL domains, extended by 1 (L; DmK-1AA), 2 (HV; DmK-2AA), 3 (DAL; DmK-3AA), 4 (LAST; DmK-4AA), 5 (LASQT; DmK-5AA), or 6 AA (LQASQT; DmK-6AA). A version of DmK-6AA with the NL insert AEQKLT was also generated. These insertions were all introduced at the junction of the NL and the coiled-coil stalk, between residues T344 and A345 (Shastry and Hancock, 2010). The procedures for the expression of proteins in Escherichia coli and subsequent purification via nickel column chromatography were described previously (Uppalapati et al., 2009; Shastry and Hancock, 2010). A C338S point mutant (DmK-C338S) and a CL (DmK-CL) version with 2 mutations (C45S and C338S) were generated from a Drosophila KHC truncated at residue 401, with a C-terminal 6xHis-tag (Fehr et al., 2009). These mutants were expressed and purified as described (Fehr et al., 2009). A round of site-directed mutagenesis was used to produce DmK-C338S, based on the DmK-CL construct. Human non-CL kinesin-1 motors were based on a truncated construct (HsK-WT) containing the first 595 residues of KIF5B (Navone et al., 1992), with a C-terminal 6xHis-tag. The expression plasmid for HsK-WT (pAF4) was created by replacing the sequence coding for a truncated Drosophila kinesin-1 in plasmid pCA1 (Asbury et al., 2003) with one corresponding to the first 595 residues of KIF5B, via cassette mutagenesis. Multiple rounds of site-directed mutagenesis were used to generate two constructs with 6 AA inserted into the NL region (LQASQT and AEQKLT; HsK-6AA). The inserted residues were positioned at the junction of the NL and common coiled-coil stalk, between residues T336 and A337, respectively. The non-CL human constructs were expressed in E. coli and purified on a nickel column, as described (Fehr et al., 2009). A truncated CL human kinesin-1 construct (HsK-CL) containing the first 560 residues of the motor domain and 7 mutations (C7S, C65A, C168A, C174S, C294A, C330S, C421A) (Rice et al., 1999; Rosenfeld et al., 2002; Clancy et al., 2011) was also used in our motility experiments (a gift of S Rosenfeld, Cleveland Clinic).\n\n### Bulk fluorescence assays\n\nStopped-flow fluorescence experiments were performed in BRB80 buffer containing 1 mM MgCl2. Measurements were made on an Applied Physics SX20 spectrofluorimeter equipped with a 356 nm excitation filter and an HQ480SP emission filter, as previously described (Chen et al., 2015).\n\n### Half-site mantADP release measurements\n\nThe fraction of mantADP release from kinesin dimers upon MT binding was computed from the amplitudes of fluorescence signal decreases for MT binding (AMT) and sequential release (ASR) experiments. For MT binding experiments, a 30 \u03bcl solution of 0.05 \u03bcM dimeric kinesin, pre-incubated with 0.5 \u03bcM mantADP, was mixed via stopped-flow with an equivalent volume of 4 \u03bcM MTs and 10 \u03bcM taxol. The decrease in the fluorescence signal after mixing reflects the amount of mantADP released. The total amount of mantADP available for release was determined from sequential release experiments, where a 30 \u03bcl solution of 0.05 \u03bcM dimeric kinesin, pre-incubated with 0.5 \u03bcM mantADP, was mixed with an equivalent volume of 4 \u03bcM MTs, 10 \u03bcM taxol, and 2 mM ATP. The amplitudes for each fluorescence decay measurement were determined by the sum of the two amplitudes obtained from a fit of the sum of two exponentials. The fraction of mantADP release upon MT binding was computed as AMT/ASR.\n\n### MantADP exchange measurements\n\nMantADP\u00b7kinesin\u00b7MT complexes were generated by pre-incubating 0.2 \u03bcM dimeric kinesin with 0.5 \u03bcM mantADP, 4 \u03bcM MTs, and 10 \u03bcM taxol. Fluorescence changes were recorded following the introduction of 30 \u03bcl of BRB80 buffer to an equivalent volume of the mantADP\u00b7kinesin\u00b7MT complex via stopped-flow. Records were fit to single exponentials, from which the rate of mantADP exchange was obtained.\n\n### Optical trapping assay\n\nThe single-molecule motility assay used in this study has been described (Milic et al., 2014). Motility buffers consisted of BRB80 (80 mM Pipes, 1 mM EGTA, 4 mM MgCl2) at pH 6.9, with 2 mM DTT, 10 \u03bcM Taxol (Paclitaxel), and 2 mg\u00b7ml\u22121 BSA. An oxygen scavenging system with final concentrations of 50 \u03bcg\u00b7ml\u22121 glucose oxidase, 12 \u03bcg\u00b7ml\u22121 catalase, and 1 mg\u00b7ml\u22121 glucose was added to motility buffers before introduction into flow cells. An optical force clamp was implemented to acquire run length and velocity data under controlled, external loads (Valentine et al., 2008; Clancy et al., 2011). Data for DmK-5AA and all constructs with 6-AA NL inserts were collected using a force clamp with an improved detection scheme (Milic et al., 2014). Unloaded run length and velocity data were acquired by video tracking (Clancy et al., 2011). Unbinding rates under assisting and moderate hindering loads, ranging from \u22126 to +20 pN, were obtained directly from velocity and run length records. Unbinding rates under large hindering loads, ranging from \u221225 to \u22127 pN, were estimated separately, based on the average dwell time of the last step prior to dissociation (see below).\n\n### Run-length measurements\n\nThe starting and ending points for each single-molecule record were identified by inspection. For DmK with 1\u20136 AA NL inserts, the mean run length under unloaded conditions, L, was obtained from an exponential fit to the histogram of individual runs, where the first bin, and all bins with less than 6 counts, were excluded from fits (Clancy et al., 2011; Milic et al., 2014). As previously described (Milic et al., 2014), mean run lengths under hindering loads were determined based on the number of runs, N1,2, that fell into one of two bounded intervals: x1 < x < x2, and x > x2, respectively. Assuming that run lengths are exponentially distributed, the mean run lengths were computed from the relation $L=(x_{2}\u2013x_{1})/ln(N_{1}/N_{2}+1)$, along with an estimated standard error, $\u03c3_{L}=L\\sqrt{N_{1}/(N_{2}(N_{1}+N_{2}))}/ln(N_{1}/N_{2}+1)$. For run length data collected under loads ranging from \u22125 to \u22121 pN, the lower bound was set to x1 = 30 nm, and the upper bound to x2 = 150 nm. Because run lengths in the presence of a \u22126-pN force are exceedingly short, the corresponding bounds were set to x1 = 15 nm and x2 = 50 nm, respectively. Runs under assisting load conditions for DmK-5AA and DmK-6AA were collected using an improved force clamp (Milic et al., 2014). Mean run lengths for these two constructs were obtained using the identical two-bin method, where the limits were x1 = 30 nm and x2 = 150 nm for data obtained under +1 to +9 pN loads, and x1 = 15 nm and x2 = 50 nm for loads greater than +9 pN. For DmK-1AA, DmK-2AA, and DmK-3AA, respectively, the mean run lengths under assisting-load conditions were determined by a maximum-likelihood estimator, as described (Milic et al., 2014).\n\n### Velocity measurements\n\nVelocity measurements were collected and analyzed as described (Milic et al., 2014).\n\n### Unbinding measurements\n\nFor DmK-WT, unbinding rates under force-clamped conditions from \u22126 to +20 pN were obtained by dividing the velocity at a given force by the corresponding run length. At high hindering loads, where kinesin stalls (\u221225 to \u22127 pN), the unbinding rates were calculated by fitting an exponential distribution to histograms of the kinesin residence times on the MT. The unbinding rate, koff, as a function of assisting or hindering load (Figure 6), was fit to the function $k_{off}=k_{off}^{0}\u2009exp[|F_{trap}|\\delta_{off}/k_{B}T]$ where $k_{off}^{0}$ is the unloaded release rate, \u03b4off is the characteristic distance parameter for unbinding, Ftrap is the force applied by the optical trap, and kBT is Boltzmann's constant times the absolute temperature.\n\n### Modeling\n\nAs previously (Clancy et al., 2011), we implemented a formalism (Chemla et al., 2008) to derive an analytical expression (using Mathematica 8, Wolfram Research) for velocity, \u03bd, as a function of load, Ftrap, based on the 3-state model with 2 force-dependent transitions (inset, Figure 5):\n\n$$\nv(F_{trap})=\\frac{d_{step}k_{1}^{0}k_{2}^{0}k_{3}^{0}e^{\\frac{F_{trap}\\delta_{1}+(F_{trap}+F_{i})\\delta_{3}}{k_{B}T}}}{k_{1}^{0}k_{2}^{0}e^{\\frac{F_{trap}\\delta_{1}}{k_{B}T}}+k_{3}^{0}e^{\\frac{(F_{trap}+F_{i})\\delta_{3}}{k_{B}T}}(k_{1}^{0}e^{\\frac{F_{trap}\\delta_{1}}{k_{B}T}}+k_{2}^{0})}.\n$$\n\nHere, dstep is the kinesin step size (fixed at 8.2 nm), Fi is inter-head tension, kBT is Boltzmann's constant times the absolute temperature, $k_{n}^{0}$ are the unloaded rates of the 3-state model (Figure 5, inset), and \u03b4n are the corresponding characteristic distance parameters for these rates. The seven free parameters (Table 2) were determined by a global fit to 84 velocity data points (Figure 5) as previously described (Clancy et al., 2011), using Igor Pro 6 (Wavemetrics). Fi for mutant constructs (Fi,mutant) was set to 0 pN (see text).\n",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "8aac9893-bc73-4d83-b271-ac6d26386b2a",
+      "submission_id": "ac782d79-76bd-4852-9d20-012125816710",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07403.012](https://doi.org/10.7554/eLife.07403.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cExamining kinesin processivity within a general gating framework\u201d for consideration at eLife. Your article has been favorably evaluated by Richard Losick (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript by Andreasson et al. provides significant new insights into the molecular mechanisms underlying the highly processive motion of the microtubule-based motor protein, Kinesin-1. The presented results will likely cause a paradigm shift in the motor field as to how kinesin achieves its remarkable processivity. However, several points require additional clarifications. Please also consider the suggestions of the reviewers aimed at making the paper more clear for the general audience.\n\nSpecific comments and suggestions:\n\n1) It would greatly help the readers who have not closely followed the field to explain in the Introduction what are the current models and controversies in the field, and which specific questions/controversies the authors are resolving in this study.\n\n2) Interpretation of the results with the neck linker mutations: it is surprising that the different-length neck-linker mutants (which have in fact quite different AA's used as inserts) behave so similar. E.g. run lengths are basically indiscernible within experimental uncertainty (Figure 3). It is even more striking for the velocity (Figure 5). This is rather surprising, given the quite large discrepancy for the two different 6AA inserts (both for fly and human kinesin) presented in the supplement. It would be important that the authors comment on this (they are, rightly, stringent to previous work using cysteine light constructs, so for this particular aspect more explanation would be in place). In this context, is the interpretation of the effect of different insertions only in terms of neck linker length and the reduction of inter-head tension fully justified? Is it possible that the conformational changes in the neck linker induced by the insertions play a role? Is it possible that inter-head tension is maintained to some extent in all mutants, and this explains why the constructs with up to 6 AA inserted retain significant functionality? Some additional discussion would be very helpful here.\n\n3) The authors refer only once to Yildiz et al. 2008, a manuscript that describes quite similar kinesin constructs, but (mainly) using cysteine-free constructs. This last aspect is likely the reason why these data are not really discussed in detail. Surprisingly, the fluorescence polarization measurements of Asenjo et al. are mentioned and used as support for the observations / conclusions. Asenjo et al. also used a (maybe slightly different) cysteine light kinesin. It would be important to justify why certain published data are used for comparison and why other data are not.\n\n4) Some additional explanations will be useful on the sentence \u201c\u2026the finding that assisting load fails to appreciably increase the WT velocity suggests that the rate of rear-head release by WT kinesin must be substantially higher than the rate-limiting step(s) of the mechanochemical cycle.\u201d There are clarifications of this point in the Discussion, but here a bit more explanation might help.\n\n5) In the subsection headed \u201cThe force-dependence of kinesin mutants with extended neck linkers can be accounted for by a minimal 3-state model\u201d, the choices made for the model (which rates are force dependent, which are not, which ones are dependent on inter-head strain) could be explained in more detail. No alternative model is presented, please explain why this is the only one that makes sense and is worthy of trying. More explanation might help to get the point across.\n\n6) The authors propose that the spatial orientation of the neck linker rather than inter-head tension facilitates the coordination of biochemical states (in the subsection entitled \u201cInter-head tension impairs, rather than aids, the unbinding gate in kinesin\u201d). It would be nice to explain better what determines in this model the distinction between 2-HB state and 1-HB state with the tethered head positioned in front of the microtubule-bound head. Which signal accelerates the unbinding of the rear head upon binding of the leading head if tension is not involved and the neck linker has the same orientation in the 1-HB and 2-HB state?\n\n7) It seems strange that results of the Supplementary file 1 are not properly incorporated into the paper. The authors present a harrowing finding, very important to the motor field: they show that commonly used cysteine-light kinesin mutants show indeed quite defective motility behavior, at least when studied in detail (force-dependent run-length, resolving individual steps). This is a very important finding that needs to be shared with the field (and should be a warning for anybody working with cysteine-light mutants!). It would be preferable if these results were properly incorporated in the Abstract and the main flow of the paper, so that they would become more visible. The authors should also explain better how these results affect their own as well as previously published conclusions.\n",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "17c296df-1c5e-4145-889a-42c51419b71c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C1",
+      "claim": "Kinesin-1 is a dimeric motor that transports cargo along microtubules, taking 8.2-nm steps in a hand-over-hand fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin-1 is a dimeric motor that transports cargo along microtubules, taking 8.2-nm steps in a hand-over-hand fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on kinesin structure and function",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "ad526ec5-a060-42f7-9e8c-f5d35c6218c9",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C2",
+      "claim": "The ATP hydrolysis cycles of kinesin's two heads are maintained out of phase by a series of gating mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATP hydrolysis cycles of its two heads are maintained out of phase by a series of gating mechanisms, which lead to processive runs averaging \u223c1 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established understanding of kinesin mechanochemistry and citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "114fad5d-3c3e-492e-837a-fe43c1726adb",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C3",
+      "claim": "Kinesin's gating mechanisms lead to processive runs averaging approximately 1 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATP hydrolysis cycles of its two heads are maintained out of phase by a series of gating mechanisms, which lead to processive runs averaging \u223c1 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established measurements of kinesin processivity",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "6bfe07e7-1b8c-417e-b103-4c47ec676f3c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C4",
+      "claim": "The neck linker (NL) is a key structural element for inter-head coordination in kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "A key structural element for inter-head coordination is the neck linker (NL), which connects the heads to the stalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural and functional studies of kinesin",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "d4029285-e9a0-4e1a-b95a-e5cd3373ed36",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C5",
+      "claim": "The neck linker connects the kinesin heads to the stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "A key structural element for inter-head coordination is the neck linker (NL), which connects the heads to the stalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural knowledge of kinesin architecture",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "e7b4a938-71c4-44d9-bf0e-7b4b4dec1302",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C6",
+      "claim": "Inter-head tension enhances motor velocity in kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, although inter-head tension enhances motor velocity, it is crucial neither for inter-head coordination nor for rapid rear-head release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from NL mutants presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "61087770-4d5d-475f-afb9-b65273f8a797",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C7",
+      "claim": "Inter-head tension is not crucial for inter-head coordination in kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, although inter-head tension enhances motor velocity, it is crucial neither for inter-head coordination nor for rapid rear-head release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from NL mutants and modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "f48e9443-0ffc-4f84-b7b9-1cfefba35542",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C8",
+      "claim": "Inter-head tension is not crucial for rapid rear-head release in kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, although inter-head tension enhances motor velocity, it is crucial neither for inter-head coordination nor for rapid rear-head release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and kinetic modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "37c944b6-83c5-4eea-b27b-a824df9661d7",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C9",
+      "claim": "Cysteine-light mutants do not produce wild-type motility under load.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cysteine-light mutants do not produce wild-type motility under load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by force-velocity measurements comparing cysteine-light and wild-type constructs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "b7721601-bff3-4af7-8b97-d03f45b62439",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C10",
+      "claim": "Kinesin-1 is primarily front-head gated.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that kinesin-1 is primarily front-head gated, and that NL length is tuned to enhance unidirectional processivity and velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and kinetic modeling showing that rear-head release is not rate-limiting",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "db4bf5e2-d4f9-44fc-805e-770091714db2",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C11",
+      "claim": "NL length is tuned to enhance unidirectional processivity and velocity in kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that kinesin-1 is primarily front-head gated, and that NL length is tuned to enhance unidirectional processivity and velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing effects of NL length on processivity and velocity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "86d45e46-d21b-42fd-94b5-0c63467e4e13",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C12",
+      "claim": "Kinesin translocates towards the plus-ends of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin translocates towards the plus-ends of MTs (Svoboda et al., 1993) via an asymmetric hand-over-hand mechanism (Asbury et al., 2003; Yildiz et al., 2004), hydrolyzing one molecule of ATP (Hua et al., 1997; Schnitzer and Block, 1997; Coy et al., 1999) for each 8.2-nm step (Svoboda et al., 1993) the motor takes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Svoboda et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "03edc89f-6467-4b2f-b778-069934b95c47",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C13",
+      "claim": "Kinesin uses an asymmetric hand-over-hand mechanism for translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin translocates towards the plus-ends of MTs (Svoboda et al., 1993) via an asymmetric hand-over-hand mechanism (Asbury et al., 2003; Yildiz et al., 2004), hydrolyzing one molecule of ATP (Hua et al., 1997; Schnitzer and Block, 1997; Coy et al., 1999) for each 8.2-nm step (Svoboda et al., 1993) the motor takes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Asbury et al., 2003 and Yildiz et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "a3de0f4a-d94c-4449-bc37-35c59712355c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C14",
+      "claim": "Kinesin hydrolyzes one molecule of ATP for each 8.2-nm step.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin translocates towards the plus-ends of MTs (Svoboda et al., 1993) via an asymmetric hand-over-hand mechanism (Asbury et al., 2003; Yildiz et al., 2004), hydrolyzing one molecule of ATP (Hua et al., 1997; Schnitzer and Block, 1997; Coy et al., 1999) for each 8.2-nm step (Svoboda et al., 1993) the motor takes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies on ATP hydrolysis and stepping",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "f9d82df2-ffd0-45e7-92ed-c434176adce2",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C15",
+      "claim": "Each kinesin dimer is composed of a pair of identical catalytic motor domains (heads).",
+      "claim_type": "EXPLICIT",
+      "source": "Each kinesin dimer is composed of a pair of identical catalytic motor domains, or heads, which are connected to a common, coiled-coil stalk by a \u223c14-amino-acid-long sequence known as the neck linker (NL) (Kozielski et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kozielski et al., 1997 and structural knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "c894c782-29fd-498a-ab55-05065ea4316d",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C16",
+      "claim": "The kinesin heads are connected to a common, coiled-coil stalk by a ~14-amino-acid-long neck linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Each kinesin dimer is composed of a pair of identical catalytic motor domains, or heads, which are connected to a common, coiled-coil stalk by a \u223c14-amino-acid-long sequence known as the neck linker (NL) (Kozielski et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kozielski et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "18316bae-9f27-4c04-b926-901376dd0d6b",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C17",
+      "claim": "During the mechanochemical cycle, each kinesin head transitions between states that are strongly bound to the MT (ATP-containing state and no-nucleotide state) and states that are weakly bound to the MT (ADP-containing state).",
+      "claim_type": "EXPLICIT",
+      "source": "During the mechanochemical cycle, each kinesin head transitions between one or more states that are strongly bound to the MT (the ATP-containing state, and also the no-nucleotide state), and one or more states that are weakly bound to the MT (the ADP-containing state) (Block, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Block, 2007 and established mechanochemical understanding",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "5cdae598-3c53-4848-84a1-9e35bc8e0be7",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C18",
+      "claim": "The kinesin mechanochemical cycle begins with the one-head-bound (1-HB), ATP-waiting state where the nucleotide-free front head is strongly bound to the MT while the rear, ADP-bound tethered head remains unbound.",
+      "claim_type": "EXPLICIT",
+      "source": "A simplified version of this cycle (Figure 1A) may arbitrarily be taken to begin with the one-head-bound (1-HB), ATP-waiting state [\u03b1], where the nucleotide-free front head is strongly bound to the MT while the rear, ADP-bound tethered head remains unbound (Hackney, 1994; Asenjo and Sosa, 2009; Guydosh and Block, 2009; Toprak et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1A showing the mechanochemical cycle",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "abe54d2a-6597-47da-a39a-75693a4ffc83",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C19",
+      "claim": "Following ATP binding to the MT-bound head, the neck linker undergoes a structural reconfiguration and forms a \u03b2-sheet with the head in a process termed NL docking.",
+      "claim_type": "EXPLICIT",
+      "source": "Following ATP binding to the MT-bound head, the NL of its motor domain undergoes a structural reconfiguration and forms a \u03b2-sheet with the head, in a process termed NL docking (Rice et al., 1999; Schnitzer et al., 2000; Rosenfeld et al., 2001; Asenjo et al., 2006; Tomishige et al., 2006; Khalil et al., 2008; Sindelar and Downing, 2010; Clancy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations on NL docking",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "a27c8c40-9b54-42df-8dcc-4ff50c931e1c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C20",
+      "claim": "NL docking shifts the position of the tethered head towards the MT plus-end, beyond the position of the bound head.",
+      "claim_type": "EXPLICIT",
+      "source": "NL docking shifts the position of the tethered head towards the MT plus-end, beyond the position of the bound head [\u03b21, \u03b22].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural and mechanistic understanding of kinesin stepping",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "2cf20b04-2197-4c2b-904e-f5a7f4911983",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C21",
+      "claim": "NL docking may occur in two stages: first, ATP binding induces a load-dependent mechanical transition leading to partial NL docking, whereas subsequent ATP hydrolysis completes the docking and enables the tethered head to bind the MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has suggested that NL docking may occur in two stages: first, ATP binding induces a load-dependent mechanical transition, leading to partial NL docking [\u03b21], whereas subsequent ATP hydrolysis completes the docking and enables the tethered head to bind the MT [\u03b22] (Milic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Milic et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "5dbf0ff7-cdbd-4cc6-8f5f-d8df38906eb7",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C22",
+      "claim": "Once the bound head hydrolyzes ATP, fully docks its NL, and the tethered head binds the MT, the motor enters a mechanically strained, two-heads-bound (2-HB) state.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the bound head hydrolyzes ATP, fully docks its NL, and the tethered head binds the MT, the motor enters a mechanically strained, two-heads-bound (2-HB) state [\u03b3] (Rice et al., 1999; Rosenfeld et al., 2003; Block, 2007; Yildiz et al., 2008; Gennerich and Vale, 2009; Clancy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations on the 2-HB state",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "392f8a69-342b-4d34-a8b8-2864910c9fa9",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C23",
+      "claim": "Rear-head release completes the step and returns the motor to its initial 1-HB waiting state, having translocated forward by one step (8.2 nm) along the MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, rear-head release (Klumpp et al., 2004) completes the step and returns the motor to its initial 1-HB waiting state [\u03b1], primed to begin the cycle anew, after having translocated forward by one step (8.2 nm) along the MT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and mechanistic understanding",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4bf6a042-cf3c-4bd9-ab74-da384304aff6",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C24",
+      "claim": "The processivity of kinesin relies upon a tight coordination of biochemical and mechanical events, collectively known as gating mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The processivity of kinesin\u2014evinced by the ability of a single dimer to undergo >100 consecutive stepping cycles before dissociation\u2014relies upon a tight coordination of the biochemical and mechanical events, collectively known as gating mechanisms (Block, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Block, 2007 and established understanding of kinesin processivity",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "7e04eb96-a82b-49f7-a7ef-89c8f717ac2a",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C25",
+      "claim": "A single kinesin dimer can undergo more than 100 consecutive stepping cycles before dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "The processivity of kinesin\u2014evinced by the ability of a single dimer to undergo >100 consecutive stepping cycles before dissociation\u2014relies upon a tight coordination of the biochemical and mechanical events, collectively known as gating mechanisms (Block, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established measurements of kinesin processivity",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "27d08a8d-8a2a-4acd-aebb-06e1c519c31d",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C26",
+      "claim": "DmK-WT and constructs with NLs extended by up to 3 AA displayed a 50% reduction in fluorescence following the addition of MTs in mantADP release experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type (WT) Drosophila kinesin (DmK-WT), as well as constructs with NLs extended by up to 3 AA, displayed a 50% reduction in fluorescence following the addition of MTs (Figure 2A), consistent with being in a 1-HB state, where only one of the two heads is bound to the MT and releases mantADP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "b6e483f8-00aa-4177-b1df-526919e561c2",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C27",
+      "claim": "A 50% reduction in fluorescence in mantADP release experiments is consistent with kinesin being in a 1-HB state.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type (WT) Drosophila kinesin (DmK-WT), as well as constructs with NLs extended by up to 3 AA, displayed a 50% reduction in fluorescence following the addition of MTs (Figure 2A), consistent with being in a 1-HB state, where only one of the two heads is bound to the MT and releases mantADP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by interpretation of fluorescence data based on established assay principles",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "9a7a3b4b-d235-4678-a06f-86099a987611",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C28",
+      "claim": "Constructs with NL inserts of 4, 5, or 6 AA exhibited progressively greater drops in fluorescence upon the addition of MTs, corresponding to 16% of DmK-4AA, 38% of DmK-5AA, and 65% of DmK-6AA motors releasing mantADP from both heads.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, constructs with NL inserts consisting of 4, 5, or 6 AA exhibited progressively greater drops in fluorescence upon the addition of MTs (Figure 2A). These decreases correspond to 16% of DmK-4AA, 38% of DmK-5AA, and 65% of DmK-6AA motors releasing mantADP from both heads, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "27525b72-e48b-48aa-8255-66784717f2fc",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C29",
+      "claim": "MantADP exchange experiments revealed an order-of-magnitude increase in exchange rate relative to WT kinesin once the NL domain was extended by 4 or more AA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional mantADP exchange experiments\u2014where the frequency of transient rear-head interactions with the MT was assessed based on the effective rate of mantADP exchange at the rear head\u2014revealed an order-of-magnitude increase relative to WT kinesin once the NL domain was extended by 4 or more AA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "97eaf2bc-48d3-4d66-b61d-84cc53a103ac",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C30",
+      "claim": "Kinesin can maintain a stable, 1-HB ATP-waiting state with up to 3 additional AA in its NL.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken all together, these results indicate that kinesin can maintain a stable, 1-HB ATP-waiting state with up to 3 additional AA in its NL, but that extending the NL by 4 AA or more leads to an abrupt increase in rebinding of the rear-head to the MT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mantADP release and exchange data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "9c4b5a11-34da-4e7a-958f-7ac92402379e",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C31",
+      "claim": "Extending the NL by 4 AA or more leads to an abrupt increase in rebinding of the rear-head to the MT.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken all together, these results indicate that kinesin can maintain a stable, 1-HB ATP-waiting state with up to 3 additional AA in its NL, but that extending the NL by 4 AA or more leads to an abrupt increase in rebinding of the rear-head to the MT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mantADP release and exchange data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "0d36b3ee-38e5-4da9-88d9-dc94f9eebef1",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C32",
+      "claim": "Extending the NL by just a single AA decreased the unloaded run length by a factor of ~3 relative to the WT run length.",
+      "claim_type": "EXPLICIT",
+      "source": "Extending the NL by just a single AA decreased the unloaded run length by a factor of \u223c3 relative to the WT run length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length measurements shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "a72e2b70-9755-47ff-9b75-381ca659144a",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C33",
+      "claim": "Further increments in the NL length (up to 6 AA) yielded only minor decreases in run length relative to DmK-1AA.",
+      "claim_type": "EXPLICIT",
+      "source": "Further increments in the NL length (up to 6 AA) yielded only minor decreases in run length relative to DmK-1AA (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by run length data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "df5a9ca6-7462-41fa-b99b-98ca23c1824d",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C34",
+      "claim": "Under unloaded conditions, DmK-6AA was capable of taking several dozen consecutive forward steps, on average, before dissociating.",
+      "claim_type": "EXPLICIT",
+      "source": "Under unloaded conditions, DmK-6AA was capable of taking several dozen consecutive forward steps, on average, before dissociating, indicating that kinesin retains significant processivity with as many as 6 AA introduced into its NL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "943a10a8-65e4-4a2c-8490-67b87ff03b3e",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C35",
+      "claim": "Kinesin retains significant processivity with as many as 6 AA introduced into its NL.",
+      "claim_type": "EXPLICIT",
+      "source": "Under unloaded conditions, DmK-6AA was capable of taking several dozen consecutive forward steps, on average, before dissociating, indicating that kinesin retains significant processivity with as many as 6 AA introduced into its NL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "29c2739b-73ec-47ba-9721-9461b2490afc",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C36",
+      "claim": "The differences in processivity among constructs with differing NL lengths were substantially more pronounced under hindering forces than under assisting forces.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of forces applied either against (hindering loads) or along (assisting loads) the direction of kinesin motility (Figure 3, inset), the differences in processivity among constructs with differing NL lengths were substantially more pronounced under hindering forces than under assisting forces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by run length data under different loads shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "378ec673-3ffa-4e06-8b32-b57fdbe15153",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C37",
+      "claim": "A gradual, exponential decrease in run length was observed for all constructs under increasing hindering loads.",
+      "claim_type": "EXPLICIT",
+      "source": "A gradual, exponential decrease in run length was observed for all constructs under increasing hindering loads, but the application of even a small assisting force (+2 pN) abruptly reduced the run length for both the WT and NL-mutant constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "cd84976d-8d2d-483d-9765-cf590f18d118",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C38",
+      "claim": "The application of even a small assisting force (+2 pN) abruptly reduced the run length for both the WT and NL-mutant constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "A gradual, exponential decrease in run length was observed for all constructs under increasing hindering loads, but the application of even a small assisting force (+2 pN) abruptly reduced the run length for both the WT and NL-mutant constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "e81fbd4a-80d2-4276-b0c0-e7906a5ae03f",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C39",
+      "claim": "The characteristic distance parameter for the force dependence of run length (\u03b4L) was nearly an order of magnitude greater under hindering-load conditions than under assisting-load conditions for all constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on exponential fits to the mean run lengths as a function of applied load, the characteristic distance parameter for the force dependence of run length, \u03b4L, was nearly an order of magnitude greater under hindering-load conditions than under assisting-load conditions for all constructs (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by exponential fits to run length data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "6fc479b9-e04e-4c5a-82bd-5082bb17d0a2",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C40",
+      "claim": "The highly asymmetric force dependence of DmK run lengths previously reported for the WT motor is also exhibited by kinesin constructs with NLs extended up to 6 AA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the highly asymmetric force dependence of DmK run lengths previously reported for the WT motor (Milic et al., 2014) is also exhibited by kinesin constructs with NLs extended up to 6 AA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length data and comparison to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "974e0836-7e49-487a-bc4e-094adccf71c6",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C41",
+      "claim": "The distance parameters for both hindering and assisting loads were nearly independent of NL length.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although processivity was found to depend upon the NL length, particularly under hindering-load and unloaded conditions, the distance parameters for both hindering and assisting loads were nearly independent of NL length (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by parameter values shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "7465dba5-0b02-4a53-a084-d42c4f0cec1f",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C42",
+      "claim": "Under saturating levels of ATP, the addition of Pi increased the DmK-6AA run length relative to that in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "Under saturating levels of ATP, the addition of Pi increased the DmK-6AA run length relative to that in its absence (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "3e007956-c548-4d87-85bc-4a9639d3e51e",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C43",
+      "claim": "No statistically significant changes in processivity were detected at low ATP concentrations, nor under conditions where ATP was replaced with ATP\u03b3S, nor in the presence of 100 mM potassium chloride for DmK-6AA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no statistically significant changes in processivity were detected at low ATP concentrations, nor under conditions where ATP was replaced with the slowly hydrolyzable analog, ATP\u03b3S, nor in the presence of 100 mM potassium chloride (used as a control for ionic strength effects) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4a6ff8ea-2ac8-4a9d-a523-247901121a40",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C44",
+      "claim": "Run lengths under otherwise identical assay conditions were systematically lower for DmK-6AA than for DmK-WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Although run lengths under otherwise identical assay conditions were systematically lower for DmK-6AA than for DmK-WT, those differences disappeared when the data were normalized relative to the baseline run lengths (no added Pi) for each motor (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "aeedfd30-7c86-4277-86eb-9cb4bc96bc6c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C45",
+      "claim": "When run length data were normalized relative to baseline run lengths, the differences between DmK-6AA and DmK-WT disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "Although run lengths under otherwise identical assay conditions were systematically lower for DmK-6AA than for DmK-WT, those differences disappeared when the data were normalized relative to the baseline run lengths (no added Pi) for each motor (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by normalized data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "a4b118b5-6774-4ea6-91a4-21c7aa0daeb4",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C46",
+      "claim": "Both WT and mutant constructs exhibited a force-velocity relationship that is highly asymmetric with respect to the direction of the applied load.",
+      "claim_type": "EXPLICIT",
+      "source": "Both WT and mutant constructs exhibited a force\u2013velocity relationship that is highly asymmetric with respect to the direction of the applied load (Figure 5), consistent with previous findings (Block et al., 2003; Block, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by velocity data shown in Figure 5 and citations to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "2a879247-372c-4d80-83a8-dc4482c447cb",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C47",
+      "claim": "The insertion of a single AA in the NL elicited a drop in velocity across all loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the insertion of a single AA in the NL elicited a drop in velocity across all loads, additional NL insertions produced no further changes in velocity: indeed, Drosophila kinesin stepped at significant rates with as many as 6 additional AA in its NL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "a7ef74ca-4458-480a-9ee2-d7dfe6d85c94",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C48",
+      "claim": "Additional NL insertions beyond 1 AA produced no further changes in velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the insertion of a single AA in the NL elicited a drop in velocity across all loads, additional NL insertions produced no further changes in velocity: indeed, Drosophila kinesin stepped at significant rates with as many as 6 additional AA in its NL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "06d978d2-b848-4b92-978d-4eb328f6e290",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C49",
+      "claim": "Drosophila kinesin stepped at significant rates with as many as 6 additional AA in its NL.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the insertion of a single AA in the NL elicited a drop in velocity across all loads, additional NL insertions produced no further changes in velocity: indeed, Drosophila kinesin stepped at significant rates with as many as 6 additional AA in its NL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "43cf06ac-c69f-4a2b-b5e6-e0da9c68814a",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C50",
+      "claim": "DmK-WT is not sped up by assisting loads.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to DmK-WT, which is not sped up by assisting loads, the reduction in unloaded velocity produced by NL extension could be recovered by applying larger assisting loads (\u223c20 pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "74deffbe-3c1a-49f1-9851-028da6c55201",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C51",
+      "claim": "The reduction in unloaded velocity produced by NL extension could be recovered by applying larger assisting loads (~20 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to DmK-WT, which is not sped up by assisting loads, the reduction in unloaded velocity produced by NL extension could be recovered by applying larger assisting loads (\u223c20 pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "fa98ce66-c088-4c0b-a1f8-42b2d5d2837b",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C52",
+      "claim": "The inter-head tension in WT kinesin (Fi,WT) is 26 \u00b1 3 pN in the 2-HB state.",
+      "claim_type": "EXPLICIT",
+      "source": "With this assumption, we determined the inter-head tension in WT kinesin (Fi,WT) to be 26 \u00b1 3 pN in the 2-HB state, a value that agrees well with molecular dynamics simulations, which predicted that it would lie in the range of 15\u201335 pN (Hariharan and Hancock, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling of velocity data and comparison to molecular dynamics simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "a971d92a-e2ef-4106-9a97-09250b2ad097",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C53",
+      "claim": "The unloaded rate of rear-head release is 260 \u00b1 10 s\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "The model fit also supplies an estimate of the unloaded rate of rear-head release, 260 \u00b1 10 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling of velocity data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "c91e1aae-19d0-46b5-bcfe-e7d8ba854d38",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C54",
+      "claim": "Inter-head tension alone is capable of increasing the rate of rear-head release by an order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "With the derived values for Fi,WT and the load-dependence of rear-head unbinding, \u03b43, the expression for k3 shows that inter-head tension alone is capable of increasing the rate of rear-head release by an order of magnitude (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling results shown in Table 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4cd89c38-ba37-4f80-bb63-897962b55cb8",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C55",
+      "claim": "The modeled rate of ATP hydrolysis (plus other primarily biochemical events) is 95 \u00b1 1 s\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the modeled rate of ATP hydrolysis (plus the other primarily biochemical events, above), 95 \u00b1 1 s\u22121, is consistent with previous estimates of the hydrolysis rate from both biochemical and single-molecule studies (Ma and Taylor, 1997; Gilbert et al., 1998; Schnitzer et al., 2000; Farrell et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling and comparison to previous studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "5007163d-5c3b-44f8-8af2-73dca221c5bf",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C56",
+      "claim": "Under all practical loads, hydrolysis is substantially slower than rear-head release.",
+      "claim_type": "EXPLICIT",
+      "source": "Under all practical loads, hydrolysis is substantially slower than rear-head release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of modeled rates k2 and k3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "e08ec6df-9069-4d14-91f3-9add0c1c0213",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C57",
+      "claim": "The 26-pN inter-head tension in WT kinesin can enhance the rate of front-head release at the unbinding gate by a factor of ~50.",
+      "claim_type": "EXPLICIT",
+      "source": "From these numbers, it follows that the 26-pN inter-head tension in WT kinesin can enhance the rate of front-head release at the unbinding gate by a factor of \u223c50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by unbinding rate measurements and calculations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "0be3c813-e268-4497-ae81-d57bfb8b68e6",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C58",
+      "claim": "The unloaded release rate for front-head detachment under hindering loads is 1.11 \u00b1 0.03 s\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "The unbinding rate for all hindering loads (koff\u2212) is determined by koff\u22120=1.11\u00b10.03 s\u22121 and \u03b4off\u2212=0.60\u00b10.01 nm (fitting the unbinding rates only to data from superstall forces yielded nearly identical parameter values).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by exponential fits to unbinding data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "c914e670-f90a-4df9-a92a-9a3f9893fbff",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C59",
+      "claim": "The distance parameter for front-head detachment under hindering loads is 0.60 \u00b1 0.01 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The unbinding rate for all hindering loads (koff\u2212) is determined by koff\u22120=1.11\u00b10.03 s\u22121 and \u03b4off\u2212=0.60\u00b10.01 nm (fitting the unbinding rates only to data from superstall forces yielded nearly identical parameter values).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by exponential fits to unbinding data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "0d0b1c42-ef97-47ea-a45e-644ef5fb5dd3",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C61",
+      "claim": "DmK-6AA exhibits a substantially greater velocity than HsK-CL-6AA.",
+      "claim_type": "EXPLICIT",
+      "source": "The force\u2013velocity relation for DmK-6AA (Figure 5), which carries the insert LQASQT in its NL, differs significantly from the corresponding relation for a human (HsK) cysteine-light (CL) construct (Rice et al., 1999) with the insert AEQKLT, HsK-CL-6AA (Clancy et al., 2011) (Figure 7). Specifically, DmK-6AA exhibits a substantially greater velocity\u2014which is also less force dependent\u2014than HsK-CL-6AA (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of velocity data shown in Figures 5 and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "aabe9045-f96d-4d8a-b38d-9c72e08e54a7",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C62",
+      "claim": "DmK-6AA velocity is less force dependent than HsK-CL-6AA.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, DmK-6AA exhibits a substantially greater velocity\u2014which is also less force dependent\u2014than HsK-CL-6AA (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of velocity data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "1c14bc86-ca7f-4acd-92ea-e8ef47e79f4c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C63",
+      "claim": "HsK-CL-6AA was capable of undertaking many rearward steps when subjected to hindering loads beyond the stall force.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas HsK-CL-6AA was capable of undertaking many rearward steps when subjected to hindering loads beyond the stall force (Clancy et al., 2011), no such processive backstepping was observed for DmK-6AA, nor for any other Drosophila constructs examined that retained native cysteine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clancy et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "d9ded757-0e1a-4268-9670-628cd8b3e197",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C64",
+      "claim": "No processive backstepping was observed for DmK-6AA or any other Drosophila constructs examined that retained native cysteine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas HsK-CL-6AA was capable of undertaking many rearward steps when subjected to hindering loads beyond the stall force (Clancy et al., 2011), no such processive backstepping was observed for DmK-6AA, nor for any other Drosophila constructs examined that retained native cysteine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "d9a3719d-f4d1-4128-bd6c-68f184ba52ce",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C65",
+      "claim": "The wild-type forms of Drosophila (DmK-WT) and human (HsK-WT) kinesin exhibit nearly identical force-velocity relations under otherwise identical conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the wild-type forms of Drosophila (DmK-WT) and human (HsK-WT) kinesin exhibit nearly identical force\u2013velocity relations under otherwise identical conditions (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by velocity data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "c721a9ac-6944-4821-8771-70d8881db349",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C66",
+      "claim": "Under hindering loads, both HsK-CL and DmK-CL were appreciably slower and more sensitive to load than either DmK-WT or the corresponding truncated human construct, HsK-WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Under hindering loads, both HsK-CL and DmK-CL were appreciably slower, and also more sensitive to load, than either DmK-WT or the corresponding truncated human construct, HsK-WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "b53eeef1-cd4e-4c6b-a4c8-59c259976bcb",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C67",
+      "claim": "The human CL construct can be sped up under assisting loads by as much as 200 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For the case of the human CL construct, the entire shape of the force\u2013velocity relation is affected, because this motor can be sped up under assisting loads by as much as 200 nm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "3ff70922-1193-439a-ab85-8af6fcf818f5",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C68",
+      "claim": "WT motors do not exhibit speed-up under assisting loads.",
+      "claim_type": "EXPLICIT",
+      "source": "WT motors do not exhibit this effect, and it suggests that important steps in the mechanochemical cycle have been altered in the mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by velocity data comparisons",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "0b7a0af0-f340-4b6c-aeeb-ff72e75158c7",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C69",
+      "claim": "A single CL mutation (C338S) in the NL can account for some, but not all, of the change in force dependence under hindering loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison shows that this single mutation can account for some, but not all, of the change in force dependence under hindering loads (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by velocity data for DmK-C338S shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "ff78905b-0513-4d62-b07b-1d29be4ada83",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C70",
+      "claim": "A single CL mutation in the NL cannot alone account for the differences between WT and CL motors.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that a single CL mutation in the NL cannot alone account for the differences between WT and CL motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of DmK-C338S and DmK-CL velocity data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "639a475b-4dd2-4028-9bd6-f97407e2bf2a",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C71",
+      "claim": "With the same insert sequences, human constructs were systematically slower than the corresponding Drosophila constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the force\u2013velocity curves for DmK-WT and HsK-WT are practically indistinguishable, extending the NL of these motors by 6 AA, using either the sequence LQASQT or AEQKLT, showed that with the same insert sequences, human constructs were systematically slower than the corresponding Drosophila constructs (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by velocity data shown in Figures 7C and 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "47d4faf8-83dc-48ca-957f-7941670cd4db",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C72",
+      "claim": "NL extensions based on AEQKLT produced motors that were slower than the corresponding constructs based on LQASQT, for both DmK and HsK.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NL extensions based on AEQKLT produced motors that were slower than the corresponding constructs based on LQASQT, for both DmK and HsK (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by velocity data shown in Figures 7E and 7F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "5f7fa41c-4b0f-481d-923c-6be5172d3545",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C73",
+      "claim": "None of the mutants with extended NL domains that retained their native cysteine residues exhibited processive backstepping under superstall loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, regardless of species or insert sequence, none of the mutants with extended NL domains that retained their native cysteine residues exhibited either processive backstepping under superstall loads or velocities surpassing the WT under assisting loads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations across all constructs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "7a0187c3-2403-4c74-bda3-8e62049bce2c",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C74",
+      "claim": "None of the mutants with extended NL domains that retained their native cysteine residues exhibited velocities surpassing the WT under assisting loads.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, regardless of species or insert sequence, none of the mutants with extended NL domains that retained their native cysteine residues exhibited either processive backstepping under superstall loads or velocities surpassing the WT under assisting loads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations across all constructs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "f1a1249d-3227-4e05-bc24-f0eeb89ecb55",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C75",
+      "claim": "The stepping gate is not strongly influenced by NL length.",
+      "claim_type": "EXPLICIT",
+      "source": "Because WT and mutant constructs with as many as three additional AA in the NL can maintain a stable 1-HB ATP-waiting state, our results show that the stepping gate is not strongly influenced by NL length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mantADP release data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "56e29ed2-48f4-472e-a7a6-2f46db6e4abd",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C76",
+      "claim": "The stepping gate is clearly compromised in constructs with longer NL inserts (4-6 AA).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stepping gate is clearly compromised in constructs with longer NL inserts (4\u20136 AA), a substantial portion of the population retains mantADP in its rear head (Figure 2A), suggesting that gating is not abolished even in these motors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mantADP release data shown in Figure 2A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "36023515-f844-4fe5-af37-a6ea9764d853",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C77",
+      "claim": "Gating is not abolished even in motors with 4-6 AA NL inserts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stepping gate is clearly compromised in constructs with longer NL inserts (4\u20136 AA), a substantial portion of the population retains mantADP in its rear head (Figure 2A), suggesting that gating is not abolished even in these motors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mantADP release and exchange data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "0985af62-0932-4c92-9064-137d7c9aadbd",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C78",
+      "claim": "The length of the wild-type NL domain may be near optimal for maximizing motor processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the length of the wild-type NL domain may be near optimal for maximizing motor processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by run length data showing dramatic decrease with 1 AA extension and previous work showing non-processivity with 1 AA shortening",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "2fe4fd51-279c-4589-b723-21f3d882b3b5",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C79",
+      "claim": "The decrease in run length associated with extended NLs arises from the corresponding increase in the diffusive space that the tethered head must explore before reaching its next MT binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the decrease in run length associated with extended NLs (Figure 3) arises from the corresponding increase in the diffusive space that the tethered head must explore before reaching its next MT binding site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for the observed run length decrease",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "14d24213-fe4a-49b0-a266-6006ad1ceb37",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C80",
+      "claim": "Enlarging the diffusive space extends the time that the tethered head takes to reach the forward site, thereby increasing the probability that the partner head may release the MT prematurely, enhancing dimer dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Enlarging that space extends the time that the tethered head takes to reach the forward site, thereby increasing the probability that the partner head may release the MT prematurely, enhancing dimer dissociation (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanistic explanation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4aaf2310-60ee-4f9f-8fdf-c033720da08f",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C81",
+      "claim": "The rates of any biochemical events associated with the bound head, when the kinesin cycle is at the binding gate, are independent of the NL length.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that normalized run lengths for the NL constructs were identical under all conditions tested (Figure 4B) suggests that the rates of any biochemical events associated with the bound head, when the kinesin cycle is at the binding gate, are independent of the NL length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from normalized run length data shown in Figure 4B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "35eb1858-81a7-4ade-8d2c-8030ff0c4800",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C82",
+      "claim": "Inserting a single AA into the NL introduces sufficient slack into the inter-head linkage that any further extensions become superfluous.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that inserting a single AA into the NL introduces sufficient slack into the inter-head linkage that any further extensions become superfluous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from velocity data showing no further changes beyond 1 AA insertion",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "d6c0464a-7cd9-4f8b-99f9-128fa9e74bc2",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C83",
+      "claim": "A relatively high inter-head tension (26 \u00b1 3 pN) may be advantageous in tuning WT kinesin for increased velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "A relatively high inter-head tension (26 \u00b1 3 pN; Table 2) may be advantageous in tuning WT kinesin for increased velocity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from modeling results and velocity comparisons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4b688a61-d4b7-4034-a5bd-d5f01dfefa0a",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C84",
+      "claim": "Inter-head tension plays only a modulatory role in kinesin motility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because constructs with up to 6 AA inserted in the NL retained significant functionality (Figure 5), we infer that inter-head tension plays only a modulatory role in kinesin motility, a conclusion that gains support from the modeled force\u2013velocity relations (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from functionality of extended NL constructs and modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "39d1b041-9a7f-4193-a724-3834952f4826",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C85",
+      "claim": "The 2-HB state of kinesin is primarily front-head gated, in the sense that the kinetic cycle of the front head is slowed while the rear head remains MT-bound.",
+      "claim_type": "EXPLICIT",
+      "source": "We find instead that the 2-HB state of kinesin is primarily front-head gated, in the sense that the kinetic cycle of the front head is slowed while the rear head remains MT-bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from modeling showing rear-head release is not rate-limiting",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "bcab516e-bf15-4edb-ba6a-b1a928ceb740",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C86",
+      "claim": "The gating mechanism responsible for processivity in the 2-HB state does not require inter-head tension, but rather occurs through a modulation of the rates of biochemical processes occurring at the front head.",
+      "claim_type": "EXPLICIT",
+      "source": "Put another way, the gating mechanism responsible for processivity in the 2-HB state does not require inter-head tension, but rather occurs through a modulation of the rates of biochemical processes occurring at the front head, including ATP hydrolysis, and possibly productive ATP binding (Clancy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from modeling and experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "58e098ae-df81-41ec-94a8-88994b2e045d",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C88",
+      "claim": "Kinesin is negatively rear-head gated at the 2-HB state: the presence of inter-head tension serves to undermine any contribution of the unbinding gate in maintaining processive motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinesin is, in this sense, negatively rear-head gated at the 2-HB state: if anything, the presence of inter-head tension serves to undermine any contribution of the unbinding gate in maintaining processive motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from analysis of how inter-head tension affects front vs rear head detachment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "8a047f39-e6ed-42e5-ab57-7ae55c64eecf",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C89",
+      "claim": "It is unlikely that inter-head tension functions as the primary mechanism for head coordination in the kinesin cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Because inter-head tension adversely affects processivity from the 2-HB state, and because the rate of rear-head release is not rate limiting for the kinesin cycle even in the absence of inter-head tension, we conclude that it is unlikely to function as the primary mechanism for head coordination in the kinesin cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from modeling and experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "5f4f859e-5024-4013-8dc6-5bce1af2aca6",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C90",
+      "claim": "It is the spatial orientation of the NL (pointing forward in the docked state and rearward when undocked), rather than inter-head tension per se, that facilitates coordination of biochemical states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as we have previously argued (Clancy et al., 2011), results from the earlier studies can be reconciled with our own by invoking a front-head gating mechanism for kinesin where it is the spatial orientation of the NL (i.e., pointing forward in the docked state and rearward when undocked), rather than inter-head tension, per se, that facilitates coordination of biochemical states, as discussed (Asenjo et al., 2003; Hahlen et al., 2006; Clancy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on previous work and current data",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "78058dce-0b26-4c8d-8518-39cf8e621148",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C91",
+      "claim": "Gating at the 2-HB state may be accomplished not by accelerating rates associated with the rear head, but by inhibiting\u2014via the spatial orientation of the NL\u2014the ATP hydrolysis cycle at the front head, until the rear head detaches.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, gating at the 2-HB state may be accomplished not by accelerating rates associated with the rear head, but by inhibiting\u2014via the spatial orientation of the NL\u2014the ATP hydrolysis cycle at the front head, until the rear head detaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on experimental and modeling data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "877d8841-f58c-4fb2-9289-cb17c574e34f",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C92",
+      "claim": "The processive backstepping behavior of HsK-CL-6AA arises from some combination of NL extension and the introduction of one or more of the seven mutations used to produce human CL kinesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we conclude that the processive backstepping behavior of HsK-CL-6AA arises from some combination of NL extension and the introduction of one or more of the seven mutations used to produce human CL kinesin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of different constructs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "3e75b09c-061c-49e1-a9b6-aef90685e15f",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C93",
+      "claim": "The key role played by NL length in kinesin gating is twofold: (1) to enhance processivity by facilitating binding of the tethered head to the forward MT site at the binding gate, and (2) to increase velocity by accelerating rear-head release from the 2-HB state at the unbinding gate.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the key role played by NL length in kinesin gating is twofold: (1) to enhance processivity by facilitating binding of the tethered head to the forward MT site at the binding gate, and (2) to increase velocity by accelerating rear-head release from the 2-HB state at the unbinding gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on all experimental and modeling data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4304cfd8-e13c-48f7-9731-7b77b43e4860",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C94",
+      "claim": "The kinesin-1 nanomechanical properties appear to be selected for processivity and velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the kinesin-1 nanomechanical properties appear to be selected for processivity and velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General conclusion based on all findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "d068f7c1-a40f-478a-af4d-973a05575e67",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C95",
+      "claim": "The dominant effect of lengthening the NL is to compromise the binding gate.",
+      "claim_type": "EXPLICIT",
+      "source": "An explanation is that the dominant effect of lengthening the NL is to compromise the binding gate, and that the deleterious effect of NL length at this gate outweighs any compensating effects of reduced inter-head tension at the unbinding gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from run length and velocity data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "ac94ba56-d271-44d8-82b3-7cbe898a8b22",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "claim_id": "C96",
+      "claim": "The deleterious effect of NL length at the binding gate outweighs any compensating effects of reduced inter-head tension at the unbinding gate.",
+      "claim_type": "EXPLICIT",
+      "source": "An explanation is that the dominant effect of lengthening the NL is to compromise the binding gate, and that the deleterious effect of NL length at this gate outweighs any compensating effects of reduced inter-head tension at the unbinding gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of effects at different gates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The stepping gate, which prevents rear-head rebinding in the ATP-waiting state, is not strongly dependent on neck linker length up to 3 AA. Constructs with NLs extended by up to 3 AA maintained a stable 1-HB ATP-waiting state (50% mantADP release), while constructs with 4-6 AA inserts showed increased rear-head rebinding (progressively greater mantADP release and exchange rates), though gating was not abolished even in these motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 provide direct experimental evidence from mantADP release and exchange experiments (Figure 2A,B) showing the threshold effect at 4 AA. Claims C75-C77 provide appropriate interpretation of these data. The experimental design is sound, using established fluorescence-based assays to probe head binding states, and the conclusions are well-supported by the quantitative measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "d17321d8-51b0-47b2-968a-1071828c88e8",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Neck linker length is optimized for processivity, with a single AA extension decreasing unloaded run length by ~3-fold relative to WT, while further extensions (up to 6 AA) produced only minor additional decreases. Run length exhibited highly asymmetric force dependence, with substantially greater sensitivity to hindering loads than assisting loads. The characteristic distance parameter (\u03b4L) was nearly an order of magnitude greater under hindering loads than assisting loads for all constructs, and was nearly independent of NL length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 are well-supported by comprehensive run length measurements under various loads (Figure 3, Table 1). The experimental approach using optical force clamp is appropriate, sample sizes are adequate (N=49-818), and exponential fits to the data are statistically justified. Claim C78 represents a reasonable inference given that both 1 AA extension and 1 AA shortening (from prior work) dramatically reduce processivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "eeb6e7df-ac6e-40ab-977e-0ebdc14985b9",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Added phosphate proportionally enhances run lengths of both DmK-WT and DmK-6AA under assisting loads, with normalized run lengths being identical between constructs under all conditions tested. This suggests that biochemical event rates at the bound head during the binding gate are independent of NL length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by experimental data in Figure 4A,B showing the phosphate effect and normalization analysis. The use of appropriate controls (KCl for ionic strength, ATP\u03b3S, low ATP) strengthens the interpretation. Claim C81 represents a reasonable inference from the normalized data, though it is somewhat speculative about the underlying mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Inter-head tension enhances motor velocity but plays only a modulatory role. Insertion of a single AA in the NL reduced velocity across all loads, but additional insertions (up to 6 AA) produced no further velocity changes. Unlike WT, which is not sped up by assisting loads, NL-extended mutants could recover velocity under large assisting loads (~20 pN). The force-velocity relationship was highly asymmetric for all constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are well-supported by velocity measurements in Figure 5 with adequate sample sizes. The inference in C82 that a single AA insertion introduces sufficient slack is reasonable given the plateau in velocity effects. Claims C83-C84 about the modulatory role of tension are appropriately cautious interpretations supported by the retained functionality of extended-NL constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "64991779-6f33-4e56-ac50-f41821e4479e",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Kinetic modeling reveals that kinesin is primarily front-head gated in the 2-HB state. The inter-head tension in WT kinesin is 26 \u00b1 3 pN, which can increase rear-head release rate by an order of magnitude. However, the unloaded rear-head release rate (260 \u00b1 10 s\u207b\u00b9) is already more than double the ATP hydrolysis rate (95 \u00b1 1 s\u207b\u00b9), indicating that rear-head release is not rate-limiting. Gating occurs through modulation of biochemical processes at the front head, not through tension-accelerated rear-head release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by global fitting of a minimal 3-state model to velocity data (Figure 5, Table 2). The model is appropriately simple yet captures key features, and parameter values agree with prior estimates (molecular dynamics simulations, biochemical studies). Claims C85-C86 represent well-justified inferences from the modeling results, though the specific biochemical mechanism remains somewhat uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "36c2558c-7110-42b4-b602-9e2f62802da7",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Inter-head tension preferentially enhances front-head unbinding over rear-head unbinding, making kinesin 'negatively rear-head gated' at the 2-HB state. The 26-pN tension can enhance front-head release by a factor of ~50, compared to only 10-fold for rear-head release. The unloaded front-head release rate is 1.11 \u00b1 0.03 s\u207b\u00b9 with distance parameter 0.60 \u00b1 0.01 nm. Inter-head tension is unlikely to function as the primary mechanism for head coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by unbinding measurements under hindering loads (Figure 6), which serve as a reasonable proxy for front-head detachment. The exponential fits are appropriate and well-constrained. Claims C88-C89 represent logical inferences from comparing the differential effects of tension on front vs. rear head detachment, though the conclusion challenges some prior models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "71602fea-c6c7-4a06-b81e-822ec42acbf3",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cysteine-light (CL) mutants do not produce wild-type motility under load. DmK-6AA exhibits substantially greater and less force-dependent velocity than HsK-CL-6AA. Both HsK-CL and DmK-CL were slower and more load-sensitive than WT constructs under hindering loads. HsK-CL could be sped up by assisting loads (up to 200 nm/s), unlike WT. A single CL mutation (C338S) accounts for some but not all differences. Species and insert sequence also affect motility, but no non-CL mutants with extended NLs exhibited processive backstepping or velocities exceeding WT under assisting loads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C74 are well-supported by systematic comparisons in Figure 7 across multiple constructs varying in species, CL mutations, and insert sequences. The experimental design appropriately isolates different variables. Claim C92 represents a reasonable inference from the comparative data, though the specific mutations responsible remain unidentified. This is an important cautionary finding about the use of CL constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "58243aa9-2fdb-444b-aca8-fae9e038a0a4",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that decreased run length with extended NLs arises from increased diffusive space that the tethered head must explore, extending the time to reach the forward binding site and increasing the probability of premature bound-head release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 are explicitly speculative (\"We speculate that...\") and represent a proposed mechanism rather than a demonstrated result. While the speculation is reasonable and consistent with the data, it lacks direct experimental validation. Alternative mechanisms (e.g., altered NL dynamics, changed binding kinetics) are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "4c6a2e1f-076c-4015-a1d2-eaa329fc5819",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that it is the spatial orientation of the NL (pointing forward when docked, rearward when undocked), rather than inter-head tension per se, that facilitates coordination of biochemical states. Gating at the 2-HB state may occur by inhibiting ATP hydrolysis at the front head via NL orientation until the rear head detaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 represent a proposed mechanistic model to reconcile current findings with prior literature. While the model is consistent with the data and provides a unifying framework, it remains somewhat speculative. The specific role of NL spatial orientation versus tension is difficult to experimentally separate, and the proposed inhibition mechanism at the front head lacks direct biochemical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "7ae988a8-d8b5-4669-ae4d-060591484ef6",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The key role of NL length in kinesin gating is twofold: (1) to enhance processivity by facilitating tethered-head binding at the binding gate, and (2) to increase velocity by accelerating rear-head release at the unbinding gate. The dominant effect of lengthening the NL is to compromise the binding gate, with this deleterious effect outweighing any compensating effects of reduced inter-head tension at the unbinding gate. Kinesin-1 nanomechanical properties appear optimized for processivity and velocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 represent integrative conclusions synthesizing all experimental and modeling results. The dual role of NL length (C93) is well-supported by the run length and velocity data. The conclusion that binding gate compromise dominates (C95-C96) is a reasonable inference from the dramatic processivity loss despite retained velocity. Claim C94 is an appropriate high-level conclusion, though somewhat general.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "7eec4e92-a40b-4afc-aca0-c157878c8d07",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing the known mechanochemical cycle of kinesin-1, including its dimeric structure, hand-over-hand stepping mechanism (8.2 nm steps), ATP hydrolysis coupling, neck linker structure and function, and the role of gating mechanisms in maintaining processivity (>100 steps before dissociation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C25 represent well-established background knowledge about kinesin structure and function, appropriately cited to prior literature. These provide necessary context for interpreting the experimental results but do not constitute novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    },
+    {
+      "id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42",
+      "content_id": "6c4ac53c-2c8f-4328-ad12-56b42c515b4f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Summary of main conclusions: Inter-head tension enhances motor velocity but is not crucial for inter-head coordination or rapid rear-head release. Cysteine-light mutants do not produce wild-type motility under load. Kinesin-1 is primarily front-head gated, and NL length is tuned to enhance unidirectional processivity and velocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 represent the main conclusions stated in the abstract, which are well-supported by the comprehensive experimental and modeling results presented throughout the manuscript. These conclusions appropriately synthesize the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:43:58.212142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "27d08a8d-8a2a-4acd-aebb-06e1c519c31d",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "b6e483f8-00aa-4177-b1df-526919e561c2",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "9a7a3b4b-d235-4678-a06f-86099a987611",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "27525b72-e48b-48aa-8255-66784717f2fc",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "97eaf2bc-48d3-4d66-b61d-84cc53a103ac",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "9c4b5a11-34da-4e7a-958f-7ac92402379e",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "f1a1249d-3227-4e05-bc24-f0eeb89ecb55",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "56e29ed2-48f4-472e-a7a6-2f46db6e4abd",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "36023515-f844-4fe5-af37-a6ea9764d853",
+      "result_id": "cb19a564-44aa-4d22-9b4c-cfa0562ff90e"
+    },
+    {
+      "claim_id": "0d36b3ee-38e5-4da9-88d9-dc94f9eebef1",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "a72e2b70-9755-47ff-9b75-381ca659144a",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "df5a9ca6-7462-41fa-b99b-98ca23c1824d",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "943a10a8-65e4-4a2c-8490-67b87ff03b3e",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "29c2739b-73ec-47ba-9721-9461b2490afc",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "378ec673-3ffa-4e06-8b32-b57fdbe15153",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "cd84976d-8d2d-483d-9765-cf590f18d118",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "e81fbd4a-80d2-4276-b0c0-e7906a5ae03f",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "6fc479b9-e04e-4c5a-82bd-5082bb17d0a2",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "974e0836-7e49-487a-bc4e-094adccf71c6",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "0985af62-0932-4c92-9064-137d7c9aadbd",
+      "result_id": "d17321d8-51b0-47b2-968a-1071828c88e8"
+    },
+    {
+      "claim_id": "7465dba5-0b02-4a53-a084-d42c4f0cec1f",
+      "result_id": "eeb6e7df-ac6e-40ab-977e-0ebdc14985b9"
+    },
+    {
+      "claim_id": "3e007956-c548-4d87-85bc-4a9639d3e51e",
+      "result_id": "eeb6e7df-ac6e-40ab-977e-0ebdc14985b9"
+    },
+    {
+      "claim_id": "4a6ff8ea-2ac8-4a9d-a523-247901121a40",
+      "result_id": "eeb6e7df-ac6e-40ab-977e-0ebdc14985b9"
+    },
+    {
+      "claim_id": "aeedfd30-7c86-4277-86eb-9cb4bc96bc6c",
+      "result_id": "eeb6e7df-ac6e-40ab-977e-0ebdc14985b9"
+    },
+    {
+      "claim_id": "4aaf2310-60ee-4f9f-8fdf-c033720da08f",
+      "result_id": "eeb6e7df-ac6e-40ab-977e-0ebdc14985b9"
+    },
+    {
+      "claim_id": "a4b118b5-6774-4ea6-91a4-21c7aa0daeb4",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "2a879247-372c-4d80-83a8-dc4482c447cb",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "a7ef74ca-4458-480a-9ee2-d7dfe6d85c94",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "06d978d2-b848-4b92-978d-4eb328f6e290",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "43cf06ac-c69f-4a2b-b5e6-e0da9c68814a",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "74deffbe-3c1a-49f1-9851-028da6c55201",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "35eb1858-81a7-4ade-8d2c-8030ff0c4800",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "d6c0464a-7cd9-4f8b-99f9-128fa9e74bc2",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "4b688a61-d4b7-4034-a5bd-d5f01dfefa0a",
+      "result_id": "51b0288a-1fb3-4f54-9aba-dc685bc2f200"
+    },
+    {
+      "claim_id": "fa98ce66-c088-4c0b-a1f8-42b2d5d2837b",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "a971d92a-e2ef-4106-9a97-09250b2ad097",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "c91e1aae-19d0-46b5-bcfe-e7d8ba854d38",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "4cd89c38-ba37-4f80-bb63-897962b55cb8",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "5007163d-5c3b-44f8-8af2-73dca221c5bf",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "39d1b041-9a7f-4193-a724-3834952f4826",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "bcab516e-bf15-4edb-ba6a-b1a928ceb740",
+      "result_id": "64991779-6f33-4e56-ac50-f41821e4479e"
+    },
+    {
+      "claim_id": "e08ec6df-9069-4d14-91f3-9add0c1c0213",
+      "result_id": "36c2558c-7110-42b4-b602-9e2f62802da7"
+    },
+    {
+      "claim_id": "0be3c813-e268-4497-ae81-d57bfb8b68e6",
+      "result_id": "36c2558c-7110-42b4-b602-9e2f62802da7"
+    },
+    {
+      "claim_id": "c914e670-f90a-4df9-a92a-9a3f9893fbff",
+      "result_id": "36c2558c-7110-42b4-b602-9e2f62802da7"
+    },
+    {
+      "claim_id": "58e098ae-df81-41ec-94a8-88994b2e045d",
+      "result_id": "36c2558c-7110-42b4-b602-9e2f62802da7"
+    },
+    {
+      "claim_id": "8a047f39-e6ed-42e5-ab57-7ae55c64eecf",
+      "result_id": "36c2558c-7110-42b4-b602-9e2f62802da7"
+    },
+    {
+      "claim_id": "0d0b1c42-ef97-47ea-a45e-644ef5fb5dd3",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "aabe9045-f96d-4d8a-b38d-9c72e08e54a7",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "1c14bc86-ca7f-4acd-92ea-e8ef47e79f4c",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "d9ded757-0e1a-4268-9670-628cd8b3e197",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "d9a3719d-f4d1-4128-bd6c-68f184ba52ce",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "c721a9ac-6944-4821-8771-70d8881db349",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "b53eeef1-cd4e-4c6b-a4c8-59c259976bcb",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "3ff70922-1193-439a-ab85-8af6fcf818f5",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "0b7a0af0-f340-4b6c-aeeb-ff72e75158c7",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "ff78905b-0513-4d62-b07b-1d29be4ada83",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "639a475b-4dd2-4028-9bd6-f97407e2bf2a",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "47d4faf8-83dc-48ca-957f-7941670cd4db",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "5f7fa41c-4b0f-481d-923c-6be5172d3545",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "7a0187c3-2403-4c74-bda3-8e62049bce2c",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "877d8841-f58c-4fb2-9289-cb17c574e34f",
+      "result_id": "71602fea-c6c7-4a06-b81e-822ec42acbf3"
+    },
+    {
+      "claim_id": "2fe4fd51-279c-4589-b723-21f3d882b3b5",
+      "result_id": "58243aa9-2fdb-444b-aca8-fae9e038a0a4"
+    },
+    {
+      "claim_id": "14d24213-fe4a-49b0-a266-6006ad1ceb37",
+      "result_id": "58243aa9-2fdb-444b-aca8-fae9e038a0a4"
+    },
+    {
+      "claim_id": "5f4f859e-5024-4013-8dc6-5bce1af2aca6",
+      "result_id": "4c6a2e1f-076c-4015-a1d2-eaa329fc5819"
+    },
+    {
+      "claim_id": "78058dce-0b26-4c8d-8518-39cf8e621148",
+      "result_id": "4c6a2e1f-076c-4015-a1d2-eaa329fc5819"
+    },
+    {
+      "claim_id": "3e75b09c-061c-49e1-a9b6-aef90685e15f",
+      "result_id": "7ae988a8-d8b5-4669-ae4d-060591484ef6"
+    },
+    {
+      "claim_id": "4304cfd8-e13c-48f7-9731-7b77b43e4860",
+      "result_id": "7ae988a8-d8b5-4669-ae4d-060591484ef6"
+    },
+    {
+      "claim_id": "d068f7c1-a40f-478a-af4d-973a05575e67",
+      "result_id": "7ae988a8-d8b5-4669-ae4d-060591484ef6"
+    },
+    {
+      "claim_id": "ac94ba56-d271-44d8-82b3-7cbe898a8b22",
+      "result_id": "7ae988a8-d8b5-4669-ae4d-060591484ef6"
+    },
+    {
+      "claim_id": "17c296df-1c5e-4145-889a-42c51419b71c",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "ad526ec5-a060-42f7-9e8c-f5d35c6218c9",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "114fad5d-3c3e-492e-837a-fe43c1726adb",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "6bfe07e7-1b8c-417e-b103-4c47ec676f3c",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "d4029285-e9a0-4e1a-b95a-e5cd3373ed36",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "86d45e46-d21b-42fd-94b5-0c63467e4e13",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "03edc89f-6467-4b2f-b778-069934b95c47",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "a3de0f4a-d94c-4449-bc37-35c59712355c",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "f9d82df2-ffd0-45e7-92ed-c434176adce2",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "c894c782-29fd-498a-ab55-05065ea4316d",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "18316bae-9f27-4c04-b926-901376dd0d6b",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "5cdae598-3c53-4848-84a1-9e35bc8e0be7",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "abe54d2a-6597-47da-a39a-75693a4ffc83",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "a27c8c40-9b54-42df-8dcc-4ff50c931e1c",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "2cf20b04-2197-4c2b-904e-f5a7f4911983",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "5dbf0ff7-cdbd-4cc6-8f5f-d8df38906eb7",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "392f8a69-342b-4d34-a8b8-2864910c9fa9",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "4bf6a042-cf3c-4bd9-ab74-da384304aff6",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "7e04eb96-a82b-49f7-a7ef-89c8f717ac2a",
+      "result_id": "7eec4e92-a40b-4afc-aca0-c157878c8d07"
+    },
+    {
+      "claim_id": "e7b4a938-71c4-44d9-bf0e-7b4b4dec1302",
+      "result_id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42"
+    },
+    {
+      "claim_id": "61087770-4d5d-475f-afb9-b65273f8a797",
+      "result_id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42"
+    },
+    {
+      "claim_id": "f48e9443-0ffc-4f84-b7b9-1cfefba35542",
+      "result_id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42"
+    },
+    {
+      "claim_id": "37c944b6-83c5-4eea-b27b-a824df9661d7",
+      "result_id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42"
+    },
+    {
+      "claim_id": "b7721601-bff3-4af7-8b97-d03f45b62439",
+      "result_id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42"
+    },
+    {
+      "claim_id": "db4bf5e2-d4f9-44fc-805e-770091714db2",
+      "result_id": "df6d5b0c-e21d-4e94-9b5b-4462ed8bce42"
+    }
+  ],
+  "comparisons": []
+}

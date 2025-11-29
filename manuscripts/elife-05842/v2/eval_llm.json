@@ -1,0 +1,479 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C86",
+      "C91",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "A mathematical model incorporating both positive (NICD) and negative (clock protein) feedback predicts that increasing NICD half-life elevates NICD levels and lengthens oscillation period, while increasing clock protein half-life does not greatly affect period. The model predicts these effects can be rescued by reducing NICD production, and oscillations are only supported within a limited range of NICD and Hes7 half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical model is clearly described with explicit equations and parameters. Numerical solutions in Figure 1D-H demonstrate the predicted behaviors across parameter space. The model provides testable predictions that are subsequently validated experimentally, establishing a strong theoretical framework for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Treatment with 100 \u03bcM XAV939 (a Wnt inhibitor) delays cLfng oscillations in chick PSM by at least one phase, with oscillations remaining dynamic. This effect is specific to the clock mechanism as proliferation and apoptosis are not significantly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by in situ hybridization data (n=57/64 showing delay), fix-and-culture assays confirming continued oscillations (n=8/9), and controls showing no significant effects on proliferation (p=0.236) or apoptosis (p=0.292). The experimental design with contralateral controls is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "XAV939 treatment delays mLfng oscillations in mouse PSM while maintaining dynamic expression, demonstrating conservation of the Wnt inhibition effect across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mouse data (n=19/26 showing delay, n=12/20 showing continued dynamics) parallels the chick findings, providing cross-species validation. However, the success rates are somewhat lower than in chick, which could reflect technical challenges or species-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C38",
+      "C112"
+    ],
+    "result": "Cyclopamine treatment abolishes Shh target gene expression but does not delay cLfng oscillations or affect cNICD levels, suggesting Shh signaling does not directly regulate the segmentation clock within the 3-hour timeframe tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data clearly show cGli1 abolishment (n=5/5) but no cLfng delay at 25 \u03bcM (n=6/9) or 50 \u03bcM (n=3/4), and no change in cNICD levels (n=2/2). This contradicts prior work (Resende et al., 2010) but the authors acknowledge this and provide a plausible explanation based on different culture durations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Roscovitine (10 \u03bcM), a CDK inhibitor, delays cLfng oscillations in both chick (n=59/62) and mouse (n=20/22) PSM while maintaining oscillatory expression, without significantly affecting proliferation or apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data are robust with high success rates in both species. Fix-and-culture assays confirm continued oscillations (chick n=8/10, mouse n=8/10). Statistical tests show no significant effects on proliferation (p=0.204) or apoptosis (p=0.886), supporting separation of clock and cell cycle effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DRB (10 \u03bcM), a CDK7/9 inhibitor, delays cLfng oscillations (n=67/73) while maintaining oscillatory expression (n=15/18), reduces RNA pol II Ser5 phosphorylation, and does not significantly affect proliferation or apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported with high success rates and appropriate controls. The reduction in RNA pol II Ser5 phosphorylation (n=3/3, fold change=0.709) confirms the drug's mechanism of action. Non-significant effects on proliferation (p=0.884) and apoptosis (p=0.844) support specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C62"
+    ],
+    "result": "PHA-767491 (1 \u03bcM), another CDK7/9 inhibitor, delays cLfng oscillations (n=13) while maintaining oscillatory expression (n=6), reduces RNA pol II Ser5 phosphorylation, and increases cNICD levels (n=2/2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data support the result, though sample sizes are smaller than for other inhibitors (n=13 for delay, n=6 for dynamics, n=2 for NICD). The consistency with DRB and Roscovitine effects strengthens confidence, but the lower n values warrant some caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Multiple CDK inhibitors (XAV939, Roscovitine, DRB, PHA-767491) consistently delay cHairy2 expression, demonstrating that CDK inhibition robustly delays Notch target clock gene oscillations in a manner separable from cell cycle effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistency across multiple inhibitors and multiple Notch targets (cLfng and cHairy2) strengthens the conclusion. The separation from cell cycle effects is supported by the proliferation and apoptosis data. This represents a key finding linking CDK activity to clock regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "XAV939, Roscovitine, and DRB all down-regulate cAxin2 transcription, but Roscovitine and DRB do not increase \u03b2-catenin phosphorylation, suggesting their mechanism of cAxin2 inhibition differs from canonical Wnt pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data clearly show cAxin2 down-regulation by all three inhibitors but differential effects on \u03b2-catenin phosphorylation. This is an important mechanistic distinction, though the authors appropriately note they cannot completely rule out alternative Wnt inhibition mechanisms. The logic is sound and the data support the inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "XAV939, Roscovitine, DRB, and PHA-767491 all significantly increase cNICD protein levels in chick PSM, fulfilling the model prediction that increased NICD levels are associated with increased clock period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data with cycloheximide treatment show significant increases in cNICD for XAV939 (p=0.0280, n=7/9), Roscovitine (p=0.002, n=9/10), and DRB (p=0.008, n=6/8). The consistency across mechanistically distinct inhibitors and agreement with model predictions strongly support this key result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "XAV939 increases mNICD levels in mouse PSM (n=8), demonstrating conservation of the effect across species and supporting a conserved mechanism linking Wnt inhibition to NICD stabilization and clock delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mouse data parallel the chick findings, providing important cross-species validation. The sample size (n=8) is adequate and the effect is described as significant in Table 1, though the exact p-value is not provided in the claim text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A custom anti-cNICD antibody specifically detects endogenous cNICD at ~87 kDa, and immunohistochemistry reveals cNICD is produced and cleared from discrete PSM domains in a pattern reminiscent of clock gene expression phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Antibody specificity is validated by LY411575 treatment abolishing the band. The spatial localization pattern is similar to published mNICD patterns (Huppert et al., 2005), providing important validation of the antibody and supporting the dynamic nature of NICD in the PSM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The increased cNICD levels following inhibitor treatment are not due to increased NICD production, as demonstrated by elevated NICD levels even when new production is blocked with LY411575.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design (Figure 4F) directly tests this alternative explanation by blocking new NICD production with LY411575 while treating with inhibitors. The persistence of elevated NICD under these conditions strongly supports the conclusion that the effect is on NICD stability rather than production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "DRB, Roscovitine, and PHA-767491 significantly increase cNICD half-life from 11.87\u00b14.97 min (control) to 29.59\u00b19.29 min (DRB), 22.01\u00b17.04 min (Roscovitine), and 36.41\u00b18.88 min (PHA-767491), supporting the model prediction that increased NICD half-life results in longer clock period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The half-life measurements (n=4-5 per condition) use an appropriate experimental design with cycloheximide to block new synthesis. The increases are substantial (2-3 fold) and statistically significant (asterisks in Figure 6B indicate p<0.05). This is a critical result directly validating the model's central prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Time-course analysis reveals that untreated control PSM completes one oscillation in 90 min, while XAV939, Roscovitine, DRB, or PHA-767491 treatment extends the period to approximately 120 min (n=8 for each condition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fix-and-culture time course provides direct measurement of oscillation period. The 90 min control period matches the known chick somite formation period (C6), and the ~33% increase to 120 min with inhibitors is substantial and consistent across all treatments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Extended culture (6 hr) with XAV939, Roscovitine, PHA-767491, or DRB results in fewer somites formed, larger somite size, and continued dynamic Lfng expression, consistent with a longer clock period driving altered somitogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data show fewer somites (mean 1.94-3.14 vs 4.25 for DMSO), significant stepwise increases in somite size (p<0.005 for all inhibitors), and continued Lfng dynamics (n=5/5 for each). This provides important phenotypic validation that the clock period changes have biological consequences for somite formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C128"
+    ],
+    "result": "MLN4924 (1 \u03bcM), which inhibits SCF E3 ubiquitin ligase complexes, delays Lfng oscillations (n=16), increases cNICD levels (n=3), and maintains oscillatory expression. Higher concentrations abolish oscillations, supporting the model prediction that oscillations require balanced NICD levels within a specific range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MLN4924 data provide critical mechanistic validation by targeting NICD degradation through a completely different pathway (ubiquitination). The dose-response (low dose delays, high dose abolishes) elegantly demonstrates the requirement for balanced regulation and validates the model's prediction of a permissive range for oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Titration of LY411575 (gamma-secretase inhibitor) shows that 1 nM reduces NICD to control levels when combined with Roscovitine, while 5 nM severely depletes NICD and 0.1 nM has no effect, establishing a dose that can rescue inhibitor-induced NICD elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response is well-characterized with Western blot data (Figure 7A-D). The 1 nM dose achieving rescue of NICD levels provides the critical tool for testing causality. This careful titration is essential for the subsequent rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C5",
+      "C106"
+    ],
+    "result": "Co-treatment with 1 nM LY411575 rescues the clock gene oscillation delays caused by Roscovitine (n=15/39), DRB (n=8/20), or XAV939 (n=6/15), while 0.1 nM LY411575 does not rescue, demonstrating that reducing NICD production can reverse the effects of increased NICD half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments provide critical evidence for causality, directly testing the model's prediction (C91, Figure 1H). The dose-specificity (1 nM rescues, 0.1 nM does not) strengthens the conclusion. However, the rescue rates are modest (15/39, 8/20, 6/15), suggesting the effect may be partial or variable. Despite this, the result strongly supports the causal link between NICD levels and clock period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C108",
+      "C122",
+      "C125",
+      "C126",
+      "C138"
+    ],
+    "result": "The combined modeling and experimental data support the central thesis that positive regulators (NICD) as well as negative regulators can control clock period, and that tight control of NICD half-life and turnover is key to regulating the pace of clock gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates the mathematical modeling, pharmacological perturbations, half-life measurements, and rescue experiments. The consistency across multiple independent approaches (different inhibitors, different species, different assays) provides strong support. The data explicitly do not support alternative hypotheses (e.g., effects solely through negative regulators, C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Previous mathematical models based on delayed negative feedback successfully explained many clock observations and predicted that period depends on delays and negative regulator half-lives, but relatively little experimental work has tested the role of protein stability or positive regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the state of the field based on appropriate citations. They establish the context and rationale for the current study, identifying a gap in experimental validation of protein stability effects and the neglect of positive regulators in prior models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background knowledge establishes that somites form with species-specific periodicity (90 min chick, 120 min mouse), clock genes belong to Notch/WNT/FGF pathways, oscillations involve negative feedback of unstable products, clock period can be altered by modifying negative regulators, and NICD is unstable with pulsatile expression dependent on Notch signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge in the field, supported by appropriate citations. They provide essential background for understanding the study's context and novelty. The claims about species-specific periods (C6, C7) are particularly important as they establish the baseline for measuring period changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C33",
+      "C41",
+      "C42",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior work has shown that NICD stability can be regulated by GSK3B and CDK-mediated phosphorylation in other contexts, and that NICD is regulated by SCF E3 ubiquitin ligase complexes. Roscovitine and MLN4924 are established inhibitors of CDKs and neddylation, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite relevant prior work establishing the mechanistic basis for the inhibitors used. The citations are appropriate and the knowledge claims are accurate, providing important context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "MLN4924 elevates phosphorylated \u03b2-catenin levels, but the authors propose this is unlikely to mediate the clock effects because phosphorylated \u03b2-catenin may remain transcriptionally active in the absence of degradation, as supported by oncogenic APC mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The data clearly show elevated phosphorylated \u03b2-catenin (C81, C129), but the interpretation (C130, C132) is explicitly stated as a proposal/speculation. The supporting evidence from APC mutants (C131) is from a different context (cancer). While the reasoning is plausible, this remains an inference rather than a demonstrated fact. The authors appropriately present this as a proposal rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors discuss that increased NICD half-life might alter tissue-scale frequency gradient properties rather than autonomous cellular oscillation frequency, and that positive/negative feedback can enable wide frequency ranges over small amplitude ranges, potentially relevant to the frequency gradient underlying phase waves in somitogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C107, C109) are explicitly presented as possibilities and speculation. While C110 and C111 cite relevant prior work, the application to the current findings remains speculative. The authors appropriately acknowledge this uncertainty and note that the central premise (positive regulators can control period) remains valid regardless.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors' findings with XAV939 are discussed in relation to prior work showing LiCl lengthens Hes7 oscillations (possibly via MapK rather than Wnt), CKI-7 delays oscillations, and more specific Wnt activation approaches do not change clock period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work (Gonzalez et al., 2013; Aulehla et al., 2008; Gibb et al., 2009) and appropriately contextualize the current findings. The discussion acknowledges complexities in interpreting Wnt pathway effects and reconciles apparent contradictions in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The CDK inhibitors increase NICD half-life and delay clock oscillations at concentrations that do not affect proliferation, with oscillations abolished at higher concentrations that do affect proliferation. This separates clock effects from cell cycle effects and supports the clock-and-wavefront model over cell cycle-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response data clearly demonstrate separation of clock and cell cycle effects. The logic connecting this to the clock-and-wavefront model (C121) is sound and supported by appropriate citations. This is an important control addressing a potential confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Recent data showing Notch1 protein is dynamically expressed in a Notch-dependent fashion demonstrate that Notch1/NICD is part of a positive feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim accurately cites recent work (Bone et al., 2014) and the inference of positive feedback from Notch-dependent Notch1 expression is logical. This provides important mechanistic context for why NICD should be considered as part of a positive feedback loop in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Nrarp-null mice display increased NICD levels and decreased somite/vertebral body number, similar to the current findings, though clock period and somite size were not assessed in that study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim accurately cites prior work (Kim et al., 2011) and appropriately notes what was and was not measured. This provides important independent support for the link between NICD levels and somitogenesis defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Prior work shows that overexpression or complete loss of Notch abolishes oscillations, and together with current data, this indicates a tolerance window for NICD levels that permits oscillations. The current data show that slowing (vs. stopping) oscillations can result from transient/partial NICD stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of prior work (C133, appropriately cited) with current findings (dose-response with MLN4924, C85) logically supports the tolerance window concept (C134). The inference about slowing vs. stopping (C135) is well-supported by the data showing maintained oscillations at moderate inhibitor doses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "While recent work in zebrafish shows tissue shortening rate affects segmentation periodicity, the current data clearly demonstrate that clock pace itself strongly influences somite formation, as evidenced by fewer somites forming when clock oscillations and NICD stability are affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim appropriately cites recent zebrafish work (Soroldoni et al., 2014) while maintaining that the current data (C68-C71) clearly show clock pace effects on somite formation. The logic is sound and the data support the conclusion, though the authors appropriately acknowledge the zebrafish findings.",
+    "result_type": "MAJOR"
+  }
+]

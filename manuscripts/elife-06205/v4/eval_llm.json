@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Ectopically expressed murine DNMT3b methylates yeast genomic DNA with a characteristic gene-body enrichment pattern. CpG dinucleotides are preferentially methylated at levels of 3.3-7.7%, which is 10-20 times higher than other dinucleotides and well above the bisulfite non-conversion rate of 0.27%. DNA methylation is low at the TSS and increases toward the TTS, mirroring patterns observed in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are well-supported by whole genome bisulfite sequencing data (Figure 1C-D, Supplementary files). The use of lambda DNA spike-in controls (C39) validates the technical quality of the measurements. The observed methylation pattern provides a solid foundation for the yeast model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DNMT3b preferentially methylates linker DNA over nucleosomal DNA in yeast. There is a 50% increase in methylation of linker DNA compared to nucleosome-bound DNA, and a 10 bp periodicity of methylated CpG reflecting DNA helix periodicity. Introduction of 5meC does not alter nucleosome distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by combined MNase-seq and DNA methylation data (Figure 2C-D, Figure 2\u2014figure supplement 1). The 10 bp periodicity is consistent with established DNA structure (C49, citation provided). The lack of nucleosome redistribution upon methylation (C50) is an important control demonstrating that observed patterns are not artifacts of chromatin remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "About 5% of yeast genes are differentially expressed in DNMT3b-expressing strains, but these changes are likely due to stress responses rather than DNA methylation itself. Methylation levels do not correlate with differential expression, and yeast likely lacks proteins to recognize 5meC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by RNA-seq data (Figure 3, Supplementary files). The critical observation that methylation levels do not differ between differentially expressed genes and their GO term counterparts (C56-C57) strongly supports the inference that expression changes are due to stress rather than methylation (C55). The reasoning about lack of 5meC recognition machinery (C58) is logical given yeast biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DNMT3b and 5meC are strongly anti-correlated with H3K4me3 and positively correlated with H3K36me3 in yeast. H3K4me3 is concentrated at promoters while H3K36me3 peaks near the 3' end of genes. These observations suggest the ADD and PWWP domains target DNMT3B activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 are well-supported by ChIP-seq and DNA methylation data (Figure 4A-B, supplementary figures). The correlations are quantified and visualized clearly. The inference about domain function (C65) is reasonable given the correlation data, though it remains an inference rather than direct demonstration of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "H3K4me3 and H3K36me3 levels are sufficient to predict the distribution of both DNMT3b and 5meC with very high accuracy, suggesting these are the key factors determining DNA methylation targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by linear multivariate regression modeling (Figure 4C, Supplementary file 5). The high R\u00b2 values demonstrate strong predictive power. However, the analysis is correlative and does not establish causation\u2014the mutant experiments (next result) provide the causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Deletion of Set1 increases DNA methylation at the TSS, while deletion of Set2 decreases methylation in gene bodies and redistributes it to intergenic regions. This demonstrates that H3K4me3 actively suppresses DNA methylation and H3K36me3 recruits DNMT3B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C74-C79 are supported by bisulfite sequencing data from mutant strains (Figure 5, Supplementary file 2B). The set1\u0394 and set2\u0394 experiments provide critical causal evidence for the roles of these histone marks. The normalization by DNMT3b expression levels (Figure 5\u2014figure supplement 1) is an important control. The dot1\u0394 control showing no effect strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In mouse male germ cells, global CpG methylation increases from 7% at E13.5 to 75% by P2.5. Early-methylating regions (reaching final state by E16.5) correspond to heavily transcribed gene bodies, while TSSs remain unmethylated. Transcriptional initiation correlates negatively with de novo methylation while elongation correlates positively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by bisulfite sequencing and RNA-seq data from mouse germ cells (Figure 6A-B, D). The temporal progression of methylation is well-documented. The distinction between early and late methylating regions is clearly demonstrated. The correlations with transcription are data-driven inferences (C86-C87) that are reasonable given the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In murine male germline, H3K4me3 at E13.5 is strongly anti-correlated with DNA methylation at all subsequent time points, while H3K36me3 correlates with accelerated DNA methylation. Genes with high H3K36me3 at E13.5 show significantly elevated gene-body methylation by E16.5, indicating H3K36me3 directs DNA methylation in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C88-C91 are supported by ChIP-seq and bisulfite sequencing data from mouse germ cells (Figure 6C-F). The temporal analysis showing that H3K36me3 at E13.5 predicts early methylation by E16.5 is particularly strong evidence for a causal relationship (C89-C90). The inference that H3K36me3 'directs' methylation (C91) is well-supported by the combined yeast and mouse data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9",
+      "C92"
+    ],
+    "result": "DNMT3B and H3K4 methylation are mutually exclusive, DNMT3B co-localizes with H3K36 methylated regions, and H3K36 methylation is important for gene-body DNA methylation in vivo. The activity of DNMT3B is guided by interactions of the ADD and PWWP domains with histone tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C9, and C92 represent the main conclusions of the paper. They are well-supported by the combined evidence from yeast (ChIP-seq, methylation data, mutant experiments) and mouse (temporal correlation studies). The inference about domain function (C92) is supported by both correlative and genetic evidence, though direct biochemical demonstration of domain-histone interactions in vivo is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In yeast expressing DNMT3b, there is an anti-correlation between transcript levels and DNA methylation, while in germ cells there is a positive correlation. This discrepancy is explained by differences in gene length: yeast genes are small so H3K4me3 spreads into gene bodies, while in mammals H3K4me is restricted to the TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by RNA-seq and methylation data from both systems. The explanation for the discrepancy (C98-C100) is a reasonable inference based on known differences in gene structure and the observed distribution of histone marks (Figure 4\u2014figure supplement 1). This reconciles an apparent contradiction between the two model systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Recent work in ES cells shows the PWWP domain targets DNMT3b to H3K36me3-enriched regions, and ablation of Setd2 eliminates this enrichment. Reintroduction of DNMT3b into triple KO ES cells partially restores 5meC levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by citations to Baubec et al. 2015. These claims provide important context from prior work that is consistent with the current findings. The authors appropriately cite this parallel work and discuss how their findings complement it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Multiple lines of evidence from oocytes, imprinted loci, X-chromosome inactivation, and tumor cells support a link between transcriptional elongation and DNA methylation across different biological contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by citations to published literature. These claims establish that the relationship between transcription and DNA methylation observed in this study is consistent with patterns seen in diverse biological contexts. This strengthens the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Direct recruitment of DNMTs by H3K36me3 is proposed as the mechanism linking transcriptional elongation to DNA methylation. H3K36me3 and DNA methylation may cooperate to silence intragenic transcription initiation, particularly at transposons and imprinted loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 are largely speculative (marked as SPECULATION in evidence_type). While the speculation is reasonable and consistent with the data, these claims go beyond what is directly demonstrated. The proposed mechanisms for cooperation between H3K36me3 and DNA methylation (C108-C111) are plausible but would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "All catalytically active DNMT3-family methyltransferases in animals contain PWWP domains, and gene body DNA methylation is observed across diverse species including invertebrates, zebrafish, and even chlorophyte algae with independently evolved methyltransferases. H3K36me3 may be relevant to DNA methylation targeting throughout plant and animal kingdoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 are supported by citations to published literature establishing the conservation of PWWP domains and gene body methylation patterns across species. Claim C122 is speculative but reasonable given the conservation data. This provides important evolutionary context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on DNA methylation: 5meC is a widespread heritable modification; mammals undergo two global demethylation events followed by de novo methylation; DNA methylation plays roles in imprinting, X-inactivation, transposon silencing, and gene regulation; dysregulation causes disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C23 provide established background knowledge about DNA methylation, supported by citations to published literature. These are well-accepted facts in the field that provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on DNMT3 structure and function: DNMT3 proteins lack strong sequence preferences beyond CpG; they contain catalytic, ADD, and PWWP domains; ADD domains bind H3K4me0 and relieve auto-inhibition; PWWP domains bind H3K36me3; genomic regions with H3K4me are depleted of 5meC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 provide established background on DNMT3 structure and biochemistry, supported by citations to published literature. These facts motivate the experimental approach and hypotheses tested in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The DNA methylation pattern observed in yeast expressing DNMT3b (low at TSS, high in gene body) is the same as in mammals, suggesting equivalent regulatory mechanisms. The ~170 bp periodicity of methylation around TSS/TTS corresponds to nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by citations (C41, C43) and methylation data (C44-C45, Figure 1\u2014figure supplement 2). The inference that equivalent mechanisms exist in yeast (C42) is reasonable given the similarity of patterns, though it remains an inference that is tested by subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In yeast, Set1 methylates H3K4, Set2 methylates H3K36, and Dot1 methylates H3K79.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are established knowledge about yeast histone methyltransferases. This information is necessary context for interpreting the mutant experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Previous studies showed the entire male germline genome is methylated by default, except for H3K4 methylation regions such as TSSs which antagonize de novo DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by citation to Singh et al. 2013. This prior work provides important context for interpreting the current findings about differential methylation kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "SETD2 is the only H3K36 methyltransferase that can catalyze H3K36me2 to me3 conversion in mammals. Setd2-/- mice die at E10.5-E11.5 with vascular defects, Setd2-/- cells are defective for endoderm differentiation, and Setd2 is a tumor suppressor mutated in leukemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by citations to published literature. This information highlights the biological importance of H3K36me3 and motivates future studies on Setd2's role in DNA methylation patterns.",
+    "result_type": "MINOR"
+  }
+]

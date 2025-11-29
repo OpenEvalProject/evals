@@ -1,0 +1,1481 @@
+{
+  "submission": {
+    "id": "47abf366-004c-42e7-a810-0adcd1f9056f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:55:58.982055Z",
+    "updated_at": "2025-11-29T04:55:58.982055Z"
+  },
+  "content": [
+    {
+      "id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "submission_id": "47abf366-004c-42e7-a810-0adcd1f9056f",
+      "content_type": "manuscript",
+      "content_text": "# Paradoxical resistance of multiple myeloma to proteasome inhibitors by decreased levels of 19S proteasomal subunits\n\n## Authors\n\n- Diego Acosta-Alvear<sup>1</sup>\n- Min Y Cho<sup>1</sup>\n- Thomas Wild<sup>4</sup>\n- Tonia J Buchholz<sup>5</sup>\n- Alana G Lerner<sup>5</sup>\n- Olga Simakova<sup>6</sup>\n- Jamie Hahn<sup>6</sup>\n- Neha Korde<sup>7</sup>\n- Ola Landgren<sup>7</sup>\n- Irina Maric<sup>6</sup>\n- Chunaram Choudhary<sup>4</sup>\n- Peter Walter<sup>1</sup> \u2020\n- Jonathan S Weissman<sup>2</sup> \u2020\n- Martin Kampmann<sup>3</sup> ([ORCID: 0000-0002-3819-7019](https://orcid.org/0000-0002-3819-7019))\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n2. Howard Hughes Medical Institute University of California, San Francisco San Francisco United States\n3. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n4. The Novo Nordisk Foundation Center for Protein Research University of Copenhagen Copenhagen Denmark\n5. Onyx Pharmaceuticals, Inc. an Amgen subsidiary South San Francisco United States\n6. Department of Laboratory Medicine, Clinical Center National Institutes of Health Bethesda United States\n7. Multiple Myeloma Section, Lymphoid Malignancies Branch National Cancer Institute Bethesda United States\n8. Myeloma Service, Department of Medicine Memorial Sloan Kettering Cancer Center, New York New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHallmarks of cancer, including rapid growth and aneuploidy, can result in non-oncogene addiction to the proteostasis network that can be exploited clinically. The defining example is the exquisite sensitivity of multiple myeloma (MM) to 20S proteasome inhibitors, such as carfilzomib. However, MM patients invariably acquire resistance to these drugs. Using a next-generation shRNA platform, we found that proteostasis factors, including chaperones and stress-response regulators, controlled the response to carfilzomib. Paradoxically, 19S proteasome regulator knockdown induced resistance to carfilzomib in MM and non-MM cells. 19S subunit knockdown did not affect the activity of the 20S subunits targeted by carfilzomib nor their inhibition by the drug, suggesting an alternative mechanism, such as the selective accumulation of protective factors. In MM patients, lower 19S levels predicted a diminished response to carfilzomib-based therapies. Together, our findings suggest that an understanding of network rewiring can inform development of new combination therapies to overcome drug resistance.\n\n## Introduction\n\nProtein degradation by the ubiquitin-proteasome system (UPS) fulfills essential roles in eukaryotic cells in maintaining proteome homeostasis (proteostasis), signaling, and cell cycle progression. The 26S proteasome is a large macromolecular machine composed of the 20S catalytic core and the 19S regulator, each comprised of more than a dozen different protein subunits. The 19S proteasome regulator binds polyubiquitinated proteins and catalyzes their deubiquitination and delivery to the 20S proteasome core for proteolysis. The 20S core proteasome can also associate with alternative proteasome regulators, such as the 11S complex (Nathan et al., 2013; Schmidt and Finley, 2014).\n\nAs expected because of its essential cellular role, pharmacologic inhibition of the proteasome is inherently toxic. Consequences of proteasome inhibition leading to toxicity include the accumulation of proteasome substrates and the failure to recycle amino acids (Suraweera et al., 2012). Intriguingly, multiple myeloma (MM) cells are hypersensitive to proteasome inhibition, and two inhibitors of the proteolytic activity of the 20S core, bortezomib and carfilzomib, have been approved for the treatment of MM patients (Shah and Orlowski, 2009; Buac et al., 2013; R\u00f6llig et al., 2014). The basis for the hypersensitivity of MM cells to proteasome inhibitors is unclear. One hypothesis poses that the high protein biosynthetic rate coupled the high secretory activity of the plasma cell-like MM cells results in an increased need for clearance of misfolded proteins by the proteasome (Meister et al., 2007; Bianchi et al., 2009; Cenci et al., 2012). This would render these cells heavily dependent on the proteasome and the proteostasis network at large, and would account for the therapeutic window of proteasome inhibitors in the clinic.\n\nMost MM patients initially respond to treatment with proteasome inhibitors, but the tumors eventually develop resistance (Buac et al., 2013). To uncover the genetic mechanisms underlying resistance to proteasome inhibitors, and to identify strategies to overcome resistance, we used our next-generation shRNA library (Kampmann et al., 2015) to screen for genes controlling the sensitivity and adaptation of MM cells to the proteasome inhibitor carfilzomib.\n\nParadoxically, we found that knockdown of 19S regulator components desensitized cells to proteasome inhibition. Previous RNAi screens had not reported this effect (Chen et al., 2010; Zhu et al., 2011), however a haploid mutagenesis screen carried out independently and in parallel to this study also found the protective effect of 19S depletion (S. Lindquist, personal communication). Lower 19S levels were also predictive of diminished response of MM patients to proteasome inhibitor-based therapy.\n\n## Results\n\n### Identification of genes controlling sensitivity to proteasome inhibitors\n\nTo identify genetic nodes that would delineate specific dependencies of MM cells, as well as those controlling the response of MM cells to proteasome inhibitors, we conducted an RNAi screen using our next-generation shRNA library (Kampmann et al., 2015). This library targets each mRNA by \u223c25 independent shRNAs and contains thousands of negative control shRNAs to enable robust detection of hit genes. We introduced sublibraries targeting 7712 genes involved in proteostasis, cancer, apoptosis, kinases, phosphatases and drug targets into U-266 MM cells. We then split this population into two subpopulations, each of which was grown either in the absence of drug or exposed to 1-hr pulses of carfilzomib followed by recovery (Figure 1A). This strategy allows for the identification of inherent vulnerabilities (i.e. genes affecting cell growth), as well as genes controlling sensitivity to proteasome inhibition. We identified several hundred genes that modified the response (either sensitizing or desensitizing) towards carfilzomib, as well as several hundred genes whose loss impacted cell growth (Supplementary files 1 and 2). Gene Ontology (GO) term enrichment analysis of the hit genes from this primary screen identified the UPS, cell cycle, and translation as major functional categories controlling the cells' response towards proteasome inhibition (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig1-v2.jpg)\n\n**Figure 1.:** (A) Screening strategy. (B) Gene Ontology (GO) categories enriched among the top 50 genes whose depletion results in sensitization carfilzomib and the top 50 genes whose depletion results in desensitization carfilzomib.\n\n### Nodes within the proteostasis network control the response to proteasome inhibition\n\nAs expected, the genetic depletion of the multi-drug resistance ABC transporters (ABCB1, black circle in Figure 2A) sensitized cells to carfilzomib. In addition, several nodes of the cytosolic proteostasis network modulated sensitivity to proteasome inhibition, including molecular chaperones (HSPA4, HSPA8, HSPA90AB1; pink circles in Figure 2A), and stress response transcription factors (HSF1, NFE2L1; purple circles in Figure 2A). Conversely, knockdown of several genes directly participating in protein synthesis conferred protection (green circles in Figure 2A), most notable including components of the EIF4F translation initiation complex (EIF5A, EIF4A1, EIF4E, EIF4G1, EIF4G2, EIF3A, EIF3F), as well as the elongation factor EEF2, ribosomal RNA polymerase (POLR1D), ribosomal proteins (RPS3A, RPS6, RPS25), and MTOR, the master regulator of protein synthesis, even though knockdown of these factors in the absence of carfilzomib was detrimental to cell growth (Figure 2B). This finding is consistent with the notion that decreased protein synthesis alleviates the load on proteasome (Chen et al., 2010; Cenci et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig2-v2.jpg)\n\n**Figure 2.:** (A) Volcano plot showing knockdown effects (sensitization or desensitization to carfilzomib) and statistical significance of human genes (orange dots) and quasi-genes generated from negative control shRNAs (grey dots). Drug resistance / sensitization phenotypes were previously defined as \u03c1 (Kampmann et al., 2013); a value of \u22121 corresponds to a twofold sensitization to the drug. Hit genes belonging to functional categories of interest are color-coded as labeled in the panels. (B) Volcano plot as in A, except showing effect on growth. Growth phenotypes were previously defined as \u03b3 (Kampmann et al., 2013); a value of \u22121 corresponds to a twofold reduction in growth rate. (C) Volcano plot as in A, highlighting the opposing effects of 20S or 19S proteasome knockdown on the sensitivity of cells towards carfilzomib. Note the protective effect is not restricted to the 19S regulator alone, but is shared with the 11S regulator. (D) Volcano plot as in C, except showing effect on growth.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Hit genes belonging to functional categories of interest are color-coded.\n\nSome of the relevant nodes of the proteostasis network that we identified can be targeted pharmacologically. Based on the protective effect of MTOR knockdown, we hypothesized that its inhibition by rapamycin would desensitize cells to carfilzomib. Indeed, we observed the expected protective effect of rapamycin (Figure 3). Since MTOR inhibition can also induce autophagy (Reviewed in Sarkar, 2013), we tested whether the MTOR-independent induction of autophagy by trehalose (Sarkar et al., 2007) would confer similar protection. Our results support the protective role of autophagy during proteasome inhibition (Figure 3\u2014figure supplement 1), indicating that MTOR inhibition may desensitize to carfilzomib both through inhibition of translation and induction of autophagy. These experiments illustrate the potential of our functional genomics approach to predict drug\u2013drug interactions on the cellular level.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig3-v2.jpg)\n\n**Figure 3.:** Dose-response curves of multiple myeloma (MM) cells (A, B) and a leukemia cell line (C) exposed to carfilzomib after a 24 hr pretreatment with 200 nM rapamycin. FC: fold change of EC50. Data points are means of two experimental replicates, error bars denote SD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Dose-response curves of MM cells (A, B) and a leukemia cell line (C) exposed to carfilzomib after a 24 hr pretreatment with 100 mM trehalose. FC: fold change of EC50. Data points are means of four experimental replicates, error bars denote SD. (D) The percent viable cells (compared to untreated) at the calculated EC50 for carfilzomib are interpolated from the dose response curves in (A\u2013C) and Figure 3. p values are derived from a one-tailed Student's t-test for unpaired samples. (E) Measurement of autophagy induction in U-266 cells transduced with a mCherry-EGFP-LC3B autophagic flux reporter and treated with 200 nM rapamycin or 100 mM trehalose for 24 hr. Reduction in GFP signal indicates an increase in autophagic flux. Chloroquine (75 \u03bcM, 24hr, co-incubation) was added as a control to show inhibition of autophagic flux.\n\n### Paradoxical phenotype of 19S knockdown\n\nKnockdown of several subunits of the 20S proteasome core itself (PSMB1, PSMB4, PSMB5, PSMB6, PSMA2, PSMA3, PSMA7, red circles in Figure 2C), as well as genetic depletion of KIAA0368/ECM29 (brown circle in Figure 2C), an adaptor/scaffold protein that associates with the 20S core (Gorbea et al., 2004), and NFE2L1 (purple circle in Figure 2A), a transcription factor controlling proteasome biogenesis (Radhakrishnan et al., 2010; Steffen et al., 2010), provided strong sensitization to proteasome inhibition. This finding is consistent with previous studies in which depletion of a protein or pathway targeted by a drug sensitizes cells to the drug used around its EC50 (Giaever et al., 1999; Matheny et al., 2013).\n\nUnexpectedly, the genetic depletion of the vast majority of subunits of the 19S proteasomal regulator conferred marked resistance to proteasome inhibition (blue circles in Figure 2C). Notably, 19S subunits were among the strongest protective hits in our screen (Supplementary file 2). This paradoxical effect also occurred with the depletion of PSME1 and PSME2, components of the 11S regulator (light blue circles in Figure 2C). While knockdown of 20S and 19S subunits in the presence of carfilzomib had opposing phenotypes, knockdown of either 19S or 20S subunits in the absence of carfilzomib negatively impacted cell growth in all cases (Figure 2D). However, the protective effect of 19S knockdown was not simply mediated by slowing cell growth, since knockdown of many other genes had a similar or more dramatic impact on cell growth without increasing resistance to carfilzomib (Figure 2C,D, Figure 2\u2014figure supplement 1, Supplementary files 1 and 2).\n\nThe opposing protective and sensitizing effects of 19S and 20S subunit knockdown were observed for the vast majority of shRNAs targeting these genes (Figure 4A,B). To validate the generality of our findings, we determined bortezomib sensitivity in a batch retest of shRNAs introduced into JJN-3, U-266, and RPMI-8226 MM cells, and K-562 leukemia cells. As we observed in U-266 cells treated with carfilzomib, knockdown of 20S subunits sensitized to proteasome inhibitors, whereas knockdown of 19S subunits desensitized to proteasome inhibition across this cell line panel (Figure 4C). In addition, we introduced single shRNAs into MM cells targeting single subunits of either the 20S core or 19S regulator. In these experiments, expression of the individual shRNAs resulted in about twofold shifts of the dose\u2013response curves to proteasome inhibition (Figure 4D), lending further strong support to the results from the genetic screen.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Scatter plots of the frequencies cells expressing different shRNAs targeting a 20S core subunit (A) or a 19S regulator subunit (B) in untreated or carfilzomib-treated cells. The grey dots represent cells expressing negative control shRNAs. Colored bars indicate the quantitative resistance phenotype (\u03c1) of each shRNA. (C) Heatmap showing the protective or sensitizing effect of knocking down subunits of the 19S or 20S proteasomes, respectively, in multiple cell lines. (D) Dose-response of U266 cells that constitutively expresses an shRNA targeting the PSMD12 subunit of the 19S proteasome, the PSMB5 subunit of the 20S proteasome, or a negative control shRNA. Data points are means of two experimental replicates, error bars denote SD.\n\n### Depletion of 19S regulator subunits does not desensitize the 20S core to inhibitors\n\nTo gain insights into the mechanistic basis of the protective effect of 19S knockdown, we first tested whether depletion of 19S subunits changed 20S levels or protects the 20S core from proteasome inhibitors. To this end, we compared the chymotrypsin-like protease activity of the \u03b25 subunits of the 20S core (which is the direct target of carfilzomib and bortezomib) in lysates of cells expressing a negative control shRNA or an shRNA targeting the 19S subunit PSMD12 (characterized in Figure 5\u2014figure supplement 1). We found that PSMD12 knockdown did not substantially increase 20S chymotrypsin-like activity, and did not affect its susceptibility to carfilzomib (Figure 5A). We confirmed these findings by an orthogonal approach measuring the amounts of accessible 20S subunits targeted by carfilzomib (\u03b25 and LMP7) in a proteasome constitutive/immunoproteasome subunit enzyme-linked immunosorbent assay, ProCISE (Parlati et al., 2009) (Figure 5B,C). Together, these results suggest that the loss of 19S subunits does not lead to a decreased effectiveness of proteasome inhibitors in targeting and inhibiting the 20S core.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fluorometric measurement of the chymotrypsin-like protease activity of the 20S proteasome. (B, C) Enzyme-linked immunoabsorbent assay for accessibility of the (B) \u03b25 subunit and the (C) LMP7 subunits of the 20S proteasome. Data points are means of two experimental replicates, error bars denote SD.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Immunoblot analysis of PSMD12 and PSMB5 levels. Numbers below the blots correspond to the normalized relative amount (compared to total protein in each lane). (B) PSMD12 transcript levels quantified by qPCR and normalized to GAPDH and to the untreated negative control cells. Data points are means of three primer pairs targeting the transcript, error bars denote SD. (C) Dose response to carfilzomib. Data points are means of two experimental replicates, error bars denote SD.\n\n### Depletion of the 19S regulator subunits causes changes in the spectrum of proteasome substrates\n\nOur results support a scenario wherein the catalytic activity of the 20S core and its sensitivity to proteasome inhibitors remains unaltered in the face of 19S depletion. Therefore, we reasoned that knockdown of 19S subunits causes profound changes to cellular physiology that desensitize cells to the effects of proteasome inhibition. Because the 19S regulator delivers substrates to the 20S catalytic core (Liu and Jacobson, 2013), we hypothesized that a loss in 19S function may lead to the selective accumulation of certain proteins, some of which may mitigate the effects of 20S core inhibition.\n\nTo determine the global effects of 19S knockdown on the proteome, we conducted an exploratory proteomics experiment that suggested a possible accumulation of select substrates (Figure 6\u2014figure supplement 1, Supplementary files 3 and 4). Among the proteins accumulating upon 19S knockdown were protein degradation factors, whose accumulation we verified by quantitative immunoblot (Figure 6). These included SQSTM1/p62, a cargo receptor protein that delivers polyubiquitylated proteins to aggresome-like bodies degraded by the autophagosome (Pankiv et al., 2007), and two subunits of a heterotrimeric complex functioning in endoplasmic reticulum (ER)-associated protein degradation: UFD1L and the triple AAA ATPase VCP/p97 (Wolf and Stolz, 2012). Notably, these factors accumulated upon PSMD12 knockdown both in the presence and absence of carfilzomib, but not (or to a lesser degree) upon carfilzomib treatment (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig6-v2.jpg)\n\n**Figure 6.:** Immunoblot analysis of protein levels in U-266 cells expressing a negative control shRNA or an shRNA targeting 19S subunit PSMD12, untreated or exposed to low (200 nM) or moderate doses (2 \u03bcM) of carfilzomib for 4 hr. Numbers below the blots correspond to the normalized relative amount (compared to total protein in each lane). Numbers on the left margin of each panel indicate molecular weights (kDa).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic of proteomics experiments in K562 cells expressing a negative control shRNA (N.C.) or an shRNA targeting the PSMD6 subunit of the 19S proteasome, either untreated or treated with bortezomib. (B) Log2 enrichment of proteins derived from proteome-wide SILAC in cells treated with bortezomib or in cells where the 19S proteasome subunit PSMD6 was knocked down. Overall Pearson correlation between the proteomic changes induced by the two treatments is 0.3. Blue and green lines correspond to the top 50 enriched proteins for each experiment. GO terms enriched within these sets were Protein Degradation (for PSMD6 knockdown, FDR-corrected p < 0.001) and Cell cycle (for bortezomib treatment, FDR-corrected p < 0.13) (C) Increased levels of factors involved in autophagy and the ubiquitin-proteasome system (UPS) specifically by PSMD6 knockdown. PSMD6 KD (bortezomib) refers to the effect of PSMD6 KD in the context of bortezomib treated samples (i.e. log2 ratio of PSMD6 KD + bortezomib over control KD + bortezomib), whereas Bortezomib (PSMD6 KD) refers to the effect of bortezomib treatment in the context of PSMD6 KD cells (i.e. the log2 ratio of PSMD6 KD + bortezomib over PSMD6 KD + DMSO). (D) Fold enrichment of ubiquitylated peptides caused by PSMD6 knockdown. Prominent hits represent the UPS and autophagy as protein degradation pathways.\n\nBy contrast, the abundance of the anti-apoptotic Bcl-2 family member MCL1, a protein rapidly turned over by the proteasome (Schwickart et al., 2010), was sharply increased by carfilzomib treatment, but much less affected by 19S knockdown (Figure 6). Similarly, 19S knockdown did not lead to an overall enhancement of NFkB signaling, a pathway critical for survival and proliferation of lymphoid malignancies (Demchenko and Kuehl, 2010) (Figure 6). A caveat of this comparison is that the PSMD12 knockdown was constitutive, whereas the carfilzomib treatment was acute. Notwithstanding, these observations are consistent with the hypothesis that the protective phenotype we observed upon 19S knockdown may arise from the selective upregulation of protein turnover pathways and not from the upregulation of pro-survival pathways.\n\n### The level of 19S proteasome is predictive of MM response to therapy with proteasome inhibitors\n\nProteasome inhibitors bortezomib and carfilzomib are used clinically to treat MM patients. Most patients respond to proteasome inhibitors to varying degrees, but eventually develop resistance. We sought to test whether the role of 19S levels in controlling sensitivity to proteasome inhibitors, which we identified in cell lines, would also be relevant in MM patients. To this end, we isolated CD138-positive cells, which include MM cells and plasma cells, from the bone marrow cells of pre-treatment MM patients. Patients then underwent carfilzomib-based combination therapy. Using previously defined criteria (Durie et al., 2006), we classified patients based on their response to therapy as complete responders (including complete response [CR], and stringent complete response, [sCR]) or partial responders (including partial response [PR], and very good partial response [VGPR]).\n\nUsing flow cytometry, we quantified levels of 19S regulator subunit S7 (PSMC2), 20S core subunit beta-4 (PSMB2) and aggresomes in pre-treatment CD138-positive cells. We found that 19S proteasome levels were significantly higher in the group of patients who achieved CR after treatment compared to partial responders (p < 0.0007, Mann\u2013Whitney test; Figure 7A). By contrast, levels of the 20S core proteasomes were not significantly different between complete and partial responders (Figure 7B). Similarly, aggresome levels were not predictive of clinical outcomes (Figure 7C). The combination therapy used in the clinical study included lenalidomide, and while we cannot exclude an impact of 19S levels on lenalidomide response, the rapidity and depth of the response in this study (Korde et al., 2015) suggest that anti-tumor activity is mostly due to carfilzomib, since lenalidomide has consistently been reported to act more slowly and have a much lower CR rate than carfilzomib (Mateos et al., 2013).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08153/elife-08153-fig7-v2.jpg)\n\n**Figure 7.:** Levels of (A) 19S subunit PSMC2, (B) 20S subunit PSMB2 and (C) aggresomes quantified by flow cytometry in CD138 + bone marrow cells (including plasma cells and MM cells) of patients prior to therapy in clinical trial for carfilzomib-based combination therapy. Values are shown for separately for complete responders and partial responders.\n\nTaken together, these findings suggest that the desensitization to proteasome inhibition caused by decreased 19S levels is also clinically relevant in MM patients, and that 19S levels are a predictive biomarker of response to proteasome inhibitor-based therapy.\n\n## Discussion\n\nThe exquisite sensitivity of MM cells to proteasome inhibitors provides a paradigm for non-oncogene addiction in cancer. Using our next-generation RNAi platform to identify genetic determinants of sensitivity to proteasome inhibitors, we found that incapacitating the \u2018executioner\u2019 (the 20S core) promotes sensitization to the pharmacological insult, while disarming the \u2018decision maker\u2019 (the 19S regulator) paradoxically results in resistance. In fact, knockdown of almost any 19S subunit conferred carfilzomib resistance, and together they were the group of genes with the strongest protective effect. These opposing phenotypes are consistent with our previous observations in budding yeast, where components of the 20S and 19S proteasome subcomplexes formed separate functional clusters in a genetic interaction map (Breslow et al., 2008).\n\nThe phenotype arising from genetic depletion of the 20S core subunits is readily understandable and in line with previous observations: diminishing the amount of the direct target of an inhibitory drug sensitizes cells to the drug (Giaever et al., 1999; Matheny et al., 2013). Two non-mutually exclusive scenarios account for this observation: silencing the 20S core subunits can lead to (i) a crippled proteasome that is easier to inhibit, or to (ii) substoichiometric amounts of the silenced subunits which in turn compromises the assembly of functional proteasomes.\n\nThe protective effect of 19S regulator knockdown was unexpected since 19S and 20S work in concert to degrade ubiquitylated protein substrates. We validated our finding in a range of MM and non-MM cells with different genetic backgrounds, as well as in MM patients, suggesting this is a general, unifying mechanism underlying the response and adaptation to proteasome inhibition. Our data supports that 19S depletion alters the spectrum of proteasome substrates, leading to selective accumulation of factors involved in protein degradation. This mechanism may represent a homeostatic feedback loop that is relevant in normal cellular contexts. In MM cells, upregulation of protein turnover pathways may reduce cellular dependence on the proteasome.\n\nPreviously reported mechanisms of resistance to proteasome inhibitors in yeast and mammalian cells include mutations or overexpression of the direct drug target, PSMB5, in the catalytic core of the proteasome (Oerlemans et al., 2008; Huber et al., 2015), but to our knowledge, they have never been identified in patients. Our results support an entirely different mechanism of drug resistance, brought about by rewiring the proteostasis network, which reduces the dependence on the proteasome. A detailed understanding of the role of the proteostasis network in disease remains a major challenge. This is due to the size of the network its dynamic nature, genetic redundancies, and context dependence (Balch et al., 2008). Our functional genomics approach proved to be especially well-suited to reveal functionally relevant nodes contributing to the rewiring of the proteostasis network in the context of disease.\n\nThe notion that alternative protein degradation pathways can desensitize cells to proteasome inhibitors provides a strong motivation for the simultaneous targeting of parallel pathways in combination therapy. Indeed, other groups have investigated the role of autophagy during proteasome inhibition (Kawaguchi et al., 2011; Santo et al., 2012; Komatsu et al., 2013; Moriya et al., 2013; Mishima et al., 2015), and combinations of bortezomib with autophagy inhibitors, including hydroxychloroquine (Vogl et al., 2014) and the HDAC6 inhibitor ACY-1215 (ClinicalTrail.gov identifier NCT01323751), are currently in clinical trials for MM.\n\nWhile increasing protein degradation desensitizes cells to proteasome inhibition, our results also suggest and are consistent with an alternative network-level mechanism of resistance: reducing protein synthesis (Chen et al., 2010; Cenci et al., 2012). Both mTOR and the EIF4F complex are master regulators of protein synthesis, and their depletion leads to increased resistance towards proteasome inhibition. By diminishing protein synthesis, the cell could remodel its response to proteasome inhibitors, in this case not through the compensatory upregulation of alternative protein degradation pathways, but by offsetting the reduced proteasome capacity through lowered protein load.\n\nOur functional genomics approach also pointed to other nodes in the proteostasis network that emerge as synergistic vulnerabilities with proteasome inhibition. Specifically, knockdown of the master regulator of cytosolic proteostasis, HSF1, and of individual cytosolic Hsp70 and Hsp90 chaperones sensitized cells to carfilzomib (Figure 2A). These nodes are therefore additional candidate targets for combination therapy with proteasome inhibitors. Hsp90 inhibitors (Ishii et al., 2012; Suzuki et al., 2015) and Hsp70 inhibitors (Braunstein et al., 2011) have previously been reported to act synergistically with bortezomib against MM cells.\n\nNotably, we did not find a role for ER proteostasis factors in controlling sensitivity to carfilzomib in U-266 cells. The high secretory activity of MM cells had previously been hypothesized to challenge the folding capacity of the ER, leading to an increased burden of misfolded protein that would explain the increased dependence on the proteasome (Meister et al., 2007; Bianchi et al., 2009). A possible explanation of our findings is that during proteasome inhibition in MM cells, misfolded proteins are still extracted from the ER, as has been reported for 3-Hydroxy-3-methylglutaryl-coenzyme A reductase in the cholesterol biosynthesis pathway (Morris et al., 2014), and that their removal from the ER alleviates the proteotoxic load.\n\nOur study illustrates the power of our functional genomics approach to uncover biomarkers predictive of drug responses in patients and to guide the rational design of combination therapies that show promise to overcome the urgent clinical problem of drug resistance in cancer. From a clinical perspective, an assay that can predict response to a given therapy would significantly help improving outcomes and reduce toxicities for individual patients with MM. Currently, however, therapeutic decisions are largely based on a clinical trial-and-error basis. Our results support the development of clinical assays predictive of proteasome inhibitor sensitivity, with the potential to become an essential test in every-day treatment decisions for physicians treating patients with MM. The combination of observational genomics in patients and functional genomics in model systems can pave the way for precision medicine, while providing fundamental insights into biology.\n\n## Materials and methods\n\n### Cell culture and drug treatments\n\nRPMI-8226, U-266 and JJN-3 cells were obtained from the German Collection of Microorganisms and Cell Culture (DSMZ, Braunschweig, Germany). K562 cells were a kind gift of Neil Shah (UCSF). RPMI-8226, U-266 and K562 cells were grown in RPMI medium supplemented with 10% fetal bovine serum (FBS), 4 mM L-glutamine (L-glut) and antibiotics (pen/strep). JJN-3 cells were grown in a 50:50 mixture of Iscove's Modified Dulbecco's media (IMDM) and high-glucose Dulbecco's Modified Eagle's Medium (DMEM) supplemented with 20% FBS and 4 mM L-glut and pen/strep. For proteasome inhibition studies, cells were treated (1) overnight (24 hr) with increasing doses of either carfilzomib (Onyx, South San Francisco, CA) or bortezomib (Selleck Chemicals, Houston, TX) to establish dose\u2013response curves, or (2) for 1 hr with a concentration of the proteasome inhibitor equal to its EC50, measured 24 hr after the pulse exposure. Following the pulse exposure cells were washed twice with media and replated at a density of 0.5 million per milliliter. Exposure times and drug concentrations are indicated in the figures. To induce autophagy, cells were treated with 200 nM rapamycin (EMD Millipore, Billerica, MA) or 100 mM D-(+)-trehalose dihydrate (Sigm-Aldrich, St. Louis, MO) overnight (24 hr). After exposure to the drug, the cells were pelleted and resuspended in media without rapamycin or trehalose and supplemented with increasing concentrations of carfilzomib and incubated for an additional 24 hr to establish dose\u2013response curves.\n\n### Lentiviral and retroviral transductions\n\nThe retroviral expression construct pBABE-puro mCherry-EGFP-LC3B was a gift from Jayanta Debnath (Addgene, Cambridge, MA], plasmid # 22,418) (N'Diaye et al., 2009). Retroviral transductions were carried out by transfection of 16 \u03bcg of retroviral vector and 2 \u03bcg of a plasmid encoding the envelope protein VSV-G (Clontech Laboratories, Inc., Mountain View, CA) into the packaging cell line GP2-293 (Clontech) using lipofectamine 2000 (Life Technologies, Grand Island, NY). 24 hr after transfection, the cells were switched to virus collection medium (DMEM supplemented with 4% FBS, 15 mM HEPES and 2 mM L-glut). 24 hr later (48 hr after transfection), high-titer retroviral supernatant was collected, filtered through a 0.45 \u03bcm PVDF membrane and supplemented with 8 \u03bcg/ml polybrene. The supernatant was used immediately for infection of 2.5 million target cells at a density of 1 million cells per milliliter. Transduction was accomplished by spinoculating the cells at 2000 rpm. After Spinoculation, the cells were recovered, spun down and resuspended at \u223c500,000 cells per milliliter in the appropriate media. Lentiviral transductions were carried out as previously described (Kampmann et al., 2014).\n\n### Primary shRNA screen\n\nSublibraries of our next-generation shRNA library (Kampmann et al., 2015) targeting 7712 genes involved in proteostasis, cancer, apoptosis, kinases, phosphatases and drug targets were introduced into U-266 MM cells at an MOI of \u223c0.3 (ensuring that most cells express at most one shRNA). Cells transduced with the shRNA libraries were selected using puromycin. This population was split into two subpopulations. One was grown in the absence of drug, whereas the other was exposed to 1 hr pulses of carfilzomib at a concentration around the LD50 measured at 24 hr (150\u2013200 nM), followed by recovery. After 4 rounds of treatment and recovery, treated and untreated cells were harvested, genomic DNA was isolated and the shRNA-encoding cassette was PCR-amplified and subjected to next-generation sequencing as previously described (Kampmann et al., 2014). Growth and carfilzomib resistance phenotypes were quantified and p values for hit genes were calculated using gimap software (Kampmann et al., 2013, 2014) (http://gimap.ucsf.edu). Gene-based phenotypes were calculated by averaging the phenotypes of the 3 most extreme shRNAs targeting this gene, excluding shRNAs for which there were less than 50 sequencing reads in both the treated and the untreated population. This ad hoc metric is defined arbitrarily as a compromise between averaging fewer shRNAs (which may be too sensitive to outliers) and averaging too many shRNAs (which would include inactive shRNAs and thereby underestimate the effect size).\n\n### Validation screen\n\nAn average of 3 shRNAs targeting selected hit genes were selected based on their activity in the primary screen and individually cloned to build a focused custom shRNA library. This library was introduced into U-266, JJN-3, RPMI-8226 and K562 cells. Cells were grown untreated, or treated with pulses of bortezomib, following a similar selection strategy as for the primary screen. Growth and bortezomib resistance phenotypes were quantified and phenotypes were averaged for shRNAs targeting the same gene using gimap software (Kampmann et al., 2013, 2014) (http://gimap.ucsf.edu). For individual validation experiments, a negative control shRNA (5\u2032-CGTTCTTAGGGTGAGTAAGAAATAGTGAAGCCACAGATGTATTTCTTACTCACCCTAAGAACT-3\u2032), an shRNA targeting PSDM12 (5\u2032- CAGCCTTTCTCTCAAATCTAGTTAGTGAAGCCACAGATGTAACTAGATTTGAGAGAAAGGCTT-3\u2032) or an shRNA targeting PSMB5 (5\u2032-CGACGGTGAAGAAGGTGATAGATAGTGAAGCCACAGATGTATCTATCACCTTCTTCACCGTCT-3\u2032) were expressed in the lentiviral vector pMK1200 (Kampmann et al., 2013) or pMK1224 (details provided on request).\n\n### Other bioinformatic analysis\n\nFor GO term enrichment analysis of hit genes from the primary screen, top hits were defined as follows: The 50 genes with the most sensitizing and most desensitizing gene phenotypes and a minimal p value of 10\u22124 were defined as top sensitizing and desensitizing hits. GO term enrichment p values were calculated using Database for Annotation, Visualization and Integrated Discovery (DAVID) (Huang et al., 2009a, 2009b), using the set of 7712 genes targeted by the sublibraries used in the primary screen as the background. Where different GO-terms encompassing the same subset of hit genes were found, only one is displayed. Similarly, where a GO term described a subset of hit genes of those described by another GO term that had a more significant p value, only the more significant GO term describing a larger set of hit genes is displayed. For GO term enrichment analysis of proteins enriched based on proteome Stable Isotope Labeling by Amino Acids in Cell Culture (SILAC) experiments, the top 50 enriched proteins for each pair-wise comparison of samples was analyzed.\n\n### Cell viability assays\n\nCell viability assays were carried out using the CellTiter GLO kit (Promega Corp., Madison, WI) following manufacturer's recommendations. Raw luminescence signals were collected using a SpectraMax M5 plate reader (Molecular Devices, Sunnyvale, CA) and an integration time of 500 milliseconds. The raw counts were normalized as the percent of signal relative to untreated cells, or the percent maximum signal when comparing treatments with more than one drug. Sigmoidal dose\u2013response curve fitting for EC50 calculation was performed using the Prism V5 package (GraphPad Software Inc., San Diego, CA).\n\n### Immunoblotting\n\nTotal cell lysates were collected in SDS sample buffer (62.5 mM Tris pH 6.8, 10% glycerol, 2% SDS, 0.004% bromophenol blue). Lysates were sonicated for \u223c15 s to shear the genomic DNA. 2-mercaptoethanol (2 ME) was added to a final concentration of 5% to the lysates just prior to boiling and loading on SDS-PAGE gels. Gel loading normalization was accomplished by one of two methods: (1) same number of live cells per condition, or (2) densitometry after SDS-PAGE electrophoresis, transfer onto nitrocellulose membranes and staining with Ponceau stain. Normalized total cell lysate amounts were loaded onto precast Tris-glycine SDS-PAGE gels (BioRad), electrophoresed, and transferred onto 2.0 \u03bcm pore nitrocellulose membranes. Equal loading per lane was verified by staining the membrane with Ponceau stain. Destained membranes were blocked for 1\u20132 hr in Tris-borate saline supplemented with 0.1% Tween 20 (TBST) and 5% non-fat milk. Blocked membranes were incubated overnight with primary antibodies diluted in TBST supplemented with 5% bovine serum albumin. Antibodies and dilutions were as follows: anti-SQSTM1/p62 (D5E2) rabbit monoclonal antibody (Cell Signaling Technology [Danvers, MA] #8025, 1:1000), anti-GAPDH rabbit polyclonal antibody (Abcam [Cambridge, MA] ab9485, 1:2000), anti-PSMD12 rabbit polyclonal antibody (Bethyl Laboratories Inc. [Montgomery, TX] #A303-830A, 1:2000), anti-PSMB5 rabbit polyclonal antibody (Bethyl Laboratories, Inc., Montgomery, TX, #A303-847A, 1:5000), anti-VCP/p97 rabbit polyclonal antibody (Cell Signaling Technology #2648, 1:1000), anti-MCL1 (D35A5) rabbit monoclonal antibody (Cell Signaling Technology #5453, 1:1000), anti-UFD1L rabbit polyclonal antibody (Bethyl Laboratories Inc. #A301-875A 1:500), NFkB pathway antibodies (NFkB sample kit, Cell Signaling Technology #9936, all at 1:1000). Membranes were incubated with HRP-conjugated secondary antibodies diluted in TBST supplemented with 5% non-fat milk at a 1:5000 dilution (Amersham, GE Healthcare Life Sciences [Pittsburgh, PA] NA931, NA934) for 1 hr at room temperature. Blots were developed using luminol-based enhanced chemiluminescence substrates (SuperSignal West Dura Extended Duration Substrate, or SuperSignal West Femto Maximum Sensitivity Substrate, Life Technologies) and exposed to radiographic film or imaged directly in a digital gel imager (Chemidoc XRS+, BioRad). Digital images were automatically adjusted for contrast using the photo editor Adobe Photoshop (Adobe Systems, San Jose, CA). Densitometric quatification of immunoblots was performed using the software package ImageJ (National Institutes of Health, Bethesda, MD) (Schneider et al., 2012). The background subtracted area under the curve for each band was quantified and normalized to either total protein or loading controls.\n\n### Proteasome activity assays\n\nU-266 cells were transduced with a negative control shRNA or an shRNA targeting PSMD12 (sequences as described above). Cell populations were then split and treated with different concentrations of carfilzomib for 1 hr or left untreated. Proteasome activity was assayed in lysates of these cell populations using the ProCISE assay (Parlati et al., 2009) or the LLVY-AMC for chymotryptic activity (Boston Biochem, Cambridge, MA, #S-280) following the manufacturer's instructions, except that a buffer consisting of 20 mM Tris, pH 8.0, 0.5 mM EDTA without SDS was used.\n\n### SILAC based quantification of protein levels and di-Gly-lysine modified peptides\n\nK562 cells expressing negative control shRNA or an inducible shRNA targeting PSMD6 (as used for proteasome activity assays) were grown for 7 days in medium containing either standard lysine and arginine (light isotopes), lysine (4,4,5,5-D4) and arginine (U-13C6) (medium isotopes) or lysine (U-13C6, U-15N2) and arginine (U-13C6, U-15N4) (heavy isotopes) obtained from Cambridge Isotope laboratories (Cambridge, MA). shRNA expression was then induced for 48 hr, after which some cell populations were treated with bortezomib as described for the proteasome activity assays. Cells were combined in two triple-SILAC experiments as follows: Combination A: SILAC light: untreated negative-control; SILAC medium: bortezomib-treated ; SILAC heavy: PSMD6 knockdown and bortezomib-treated. Combination B: SILAC light: untreated negative-control; SILAC medium: PSMD6-knockdown no inhibitor; SILAC heavy: PSMD6-knockdown and bortezomib-treated. SILAC labeled cells were lysed with modified RIPA buffer (50 mM Tris\u2013HCl pH 7.5, 150 mM NaCl, 1% Nonidet P-40, 0.1% sodium-deoxycholate, 1 mM EDTA) containing protease inhibitors (Complete protease inhibitor mixture tablets, Roche Diagnostics, Indianapolis, IN) and N-ethylmaleimide (5 mM). The lysates were incubated for 10 min on ice and subsequently cleared by centrifugation at 16,000 \u00d7 g. An equal amount of protein was mixed from different SILAC states and proteins were precipitated by adding chilled acetone (final concentration 80%) and storing overnight at \u221220\u00b0C. Proteins were redissolved in denaturing buffer (6 M urea, 2 M thiourea, 10 mM HEPES pH 8.0) and subsequently reduced with dithiothreitol (1 mM) and alkylated with chloroacetamide (5.5 mM). Proteins were proteolysed with Lysyl endoproteinase C (Lys-C) for 6 hr and after fourfold dilution in water with trypsin overnight. The digestion was stopped by addition of trifluoroacetic acid, incubated at 4\u00b0C for 2 hr and resulting precipitates removed by centrifugation for 15 min at 4000 \u00d7 g. Cleared peptides were purified by reversed-phase Sep-Pak C18 cartridges (Waters Corporation, Milford, MA). Di-Gly-lysine containing peptides were enriched using the Ubiquitin Remnant Motif Kit (Cell Signaling Technology), according to the manufacturer's protocol. In brief, peptides were eluted from the Sep-Pak C18 cartridges and incubated with 40 \u03bcl of anti-di-Gly-lysine antibody resin in 1X immunoaffinity purification (IAP) buffer on a rotational wheel for 4 hr at 4\u00b0C (Wagner et al., 2011). After centrifugation, the supernatant (containing unbound peptides) was removed and used for proteome analysis (see below). The immunoenriched peptides were washed three times with 1X IAP buffer and two times with water. Peptides were eluted with 0.15% trifluoroacetic acid in water. Eluted peptides were fractionated into 6 fractions by micro-column-based strong-cation exchange chromatography (SCX) and desalted by reversed phase C18 Stage-tips. Similarly, for analysis of protein levels, unbound peptides from the anti-di-Gly-lysine enrichment (see above) were fractioned by micro-SCX and purified by reversed phase C18 Stage-tips.\n\n### Mass spectrometry and data analysis\n\nPeptide fractions were analyzed on a quadrupole Orbitrap (Q Exactive, Thermo Scientific, Waltham, MA) mass spectrometer equipped with a nanoflow HPLC system (Thermo Scientific). Peptides were loaded onto C18 reversed-phase columns and eluted with a linear gradient from 8% to 40% acetonitrile containing 0.5% acetic acid. The mass spectrometer was operated in a data-dependent mode, automatically switching between MS and MS/MS. Survey full scan MS spectra (m/z 300\u20131200) were acquired in the Orbitrap mass analyzer. The 10 most intense ions were sequentially isolated and fragmented by higher-energy C-trap dissociation (HCD). Peptides with an unassigned charge state, as well as peptides with a charge state less than +2 for proteome samples, and +3 for di-glycine-lysine enriched samples, were excluded from fragmentation. Fragment spectra were acquired in the Orbitrap mass analyzer. Raw MS data files were analyzed by the MaxQuant software version 1.4.1.1 (Cox and Mann, 2008). Parent ion and MS/MS spectra were searched against protein sequences from the UniProt knowledge database using the Andromeda search engine. Spectra were searched with a mass tolerance of 6 ppm in the MS mode, 20 ppm for the MS/MS mode, strict trypsin specificity allowing up to two missed cleavage sites. Cysteine carbamidomethylation was searched as a fixed modification. Amino-terminal protein acetylation, methionine oxidation and N-ethylmaleimide modification of cysteines, and di-Gly-lysine were searched as variable modifications, and di-Gly-lysines were required to be located internally in the peptide sequence. Site localization probabilities were determined by MaxQuant using a post-translational modification scoring algorithm as described previously (Cox and Mann, 2008). Using the target-decoy search strategy (Elias and Gygi, 2007) and a posterior error probability filter, a false discovery rate of less than one percent was achieved.\n\n### Proteasome and aggresome detection in plasma cells of myeloma patients\n\n23 patients on a clinical research protocol using carfilzomib, lenalidomide, and dexamethasone (CRd) treatment in newly diagnosed MM patients were evaluated at the National Institute of Health (NIH, Bethesda, MD). Patients were tested for the expression of 19S and 20S proteosome subunits and aggresome levels in bone marrow plasma cells before start of carfilzomib therapy. Bone marrow aspirates were collected and immunostained using antibodies against CD45, CD38, CD138 (Becton Dickinson, San Jose, CA), Proteasome 19S S7 (19S) and Proteasome Subunit Beta Type 4 (beta4) (Abcam, Cambridge, UK). The antibody used for immunodetection of the S7 subunit of the 19S proteasome was previously validated (Rousseau et al., 2009). In parallel, cells were labeled with ProteoStat Aggresome Detection Reagent (Enzo Life Sciences, Farmingdale, NY). Multicolor acquisition and analysis was performed using BD FACS CANTO II and DIVA software. Data was expressed as mean fluorescence intensity (MFI) ratio using isotype-matched controls. Statistical analysis was performed using Excel (Microsoft Corporation, Redmond, WA) and DataPrism (Seattle, WA) software.\n\n### qRT-PCR\n\nU-266 cells carrying a constitutive non-targeting shRNA or an shRNA targeting the 19S subunit PSMD12 were collected by centrifugation, washed twice with ice-cold PBS and lysed in TRIzol (Life Techologies, Grand Island, NY). RNA was extracted following manufacturer's recommendations. 500 ng of total RNA were reverse transcribed using the SuperScript VILO cDNA synthesis kit (Life Technologies) following manufacturer's recommendations. The resulting cDNA reactions were diluted 10-fold with 10 mM Tris pH 8.0 and 1% of this dilution was used for each quantitative real-time PCR (qPCR) reaction. qPCR reactions were set-up using IQ SYBR Geen Super Mix (BioRad, Hercules, CA) in 20 \u03bcl reactions. The reactions were ran on a BioRad CFX96 Real Time system (BioRad) and analyzed using the CFX Manager Software V3.0 (BioRad). All reactions were normalized to an internal loading control (GAPDH) and the fold-changes reflecting the extent of knockdown were then normalized to the no drug, negative control shRNA condition. Average values for three different oligonucleotide pairs targeting the PSMD12 trasncript were taken for the calculations. The following oligonucleotides taregting human transcripts were used: Hs_GAPDH_Fwd: 5\u2032-AGCCACATCGCTCAGACAC-3\u2032, Hs_GAPDH_Rev: 5\u2032-TGGAAGATGGTGATGGGATT-3\u2032, Hs_PSMD12_exon9-3\u2032UTR_Fwd: 5\u2032- AATGAAAAGGATGGCACAGC-3\u2032, Hs_PSMD12_exon9-3\u2032UTR_Rev: 5\u2032- TTTGGATCCTTGGGTCTCTG-3\u2032, Hs_PSMD12_RefSeq_Var1_Fwd: 5\u2032- CGTCAAGATGGAGGTGGACT-3\u2032, Hs_PSMD12_RefSeq_Var1_Rev: 5\u2032- TCCAGAGAGAGAAGGGTTTCA-3\u2032, Hs_PSMD12_exon1-3_Fwd: 5\u2032- CGTCAAGATGGAGGTGGACT-3\u2032, Hs_PSMD12_exon1-3_Rev: 5\u2032- AGATACGGGATGTCGATACCA-3\u2032\n",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "09744774-c062-49c0-aed0-1d8c2abd6c18",
+      "submission_id": "47abf366-004c-42e7-a810-0adcd1f9056f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond J Deshaies, Howard Hughes Medical Institute, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08153.018](https://doi.org/10.7554/eLife.08153.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cParadoxical resistance of multiple myeloma to proteasome inhibitors by decreased levels of 19S proteasomal subunits\u201d for peer review at eLife. Your submission has been favorably evaluated by Sean Morrison (Senior Editor), and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is a very interesting paper that makes the claim that knockdown of 20S proteasome subunits sensitizes cells to the proteasome inhibitor carfilzomib (not surprising), whereas knockdown of 19S subunits renders them moderately resistant to CFZ (highly unexpected). Based on a set of functional investigations into mechanism, the authors conclude that knockdown of 19S subunits upregulates autophagy, and thus the load that is normally impinging on the proteasome is redirected to a different pathway. If these claims are fully substantiated, the paper is obviously of considerable importance as it would shed new light on regulatory mechanisms that link the proteasome to other pathways for protein homeostasis.\n\nThere is agreement among the reviewers that knockdown of 19S subunits does indeed appear to render cells modestly resistant to carfilzomib, whereas knockdown of 20S subunits has the opposite effects. That said, the reviewers are not persuaded by the claim that this is due to selective upregulation of autophagy upon diminution of 19S activity, but not upon diminution of 20S activity. The reviewers are of the opinion that the authors have not adequately ruled out more mundane interpretations of the core observation that emerged from the RNAi screen. In addition, the proposed upregulation of autophagy is based on indirect analysis (protein levels) and not direct measurement of autophagic flux.\n\nThe following points, requiring additional experiments, need to be addressed in a revised manuscript. Other points listed are either not central or are important but could be addressed through text revisions (minor points).\n\nMajor points:\n\n1) In Figure 3, the authors argue that bortezomib inhibits 20S to the same extent in control and PSMD6-depleted cells. However, the effect is monitored far outside the range of linear response and thus the experiment needs to be repeated as a comparative titration of proteasome inhibitor in control vs. PSMID12 (see minor point #1) knock-down cells to confirm that \u03b25 inhibition is indeed similar. It is especially critical to do this as a titration because Figure 2F shows that 19S knockdown confers only a 2-fold resistance. Additional specific advice for this experiment is suggested in minor point #1.\n\n2) The evidence that knockdown of 19S induces bypass mechanisms is based on mass spec proteomic data in Figure 4 and western data in Figure 5A. Unfortunately, these experiments are comparisons of a long time-course knockdown of 19S with a short time-course drug treatment with bortezomib. Both sets of experiments need to be done as 20S depletion vs. 19S depletion. There are additional specific concerns with these experiments as well:\n\na) Given the focus on using knockdown of PSMD6 for the proteomics experiments, the authors should include an experiment like Figure 2F to evaluate the degree of resistance conferred by siPSMD6. The switching between different genes used for the knockdown experiments in different figures makes it difficult to evaluate consistency.\n\nb) It is difficult to know how much weight to place on Figure 4C without seeing a comparison of biological replicates, especially given that mass spec data of this sort can be quite noisy.\n\nc) In Figure 5B, the exposure to drug was radically different from the other experiments, particularly the screen. Given that the intent is to explain the results of the screen, the experiment should be done similarly to how the screen was done, and compare fraction of red vs. green cells at the end. It is clear from the literature (e.g. PMID 20460535) that continuous exposure vs. pulsatile exposure appears to yield a substantially different set of sensitizing and desensitizing factors, and so tests of the mechanistic hypothesis should mirror the conditions used to make the core observation. Alternatively this experiment can be removed if stronger data is developed (e.g. see d) below).\n\nd) Stronger (i.e. direct) evidence is needed to establish that depletion of 19S actually causes an increase in autophagy.\n\nMinor points:\n\n1) Relating to major point #1, a superior design for the experiment in Figure 3 would be to treat control and siPSMD12 cells with CFZ at a range of concentration spanning the EC50 for blocking \u03b25 activity in the control cells, washing away the CFZ, and then measuring \u03b25 activity in lysates prepared from these cells. This would control for a variety of potential effects on CFZ uptake, metabolism, efflux, etc. CFZ is a better agent to use than BTZ because it is completely irreversible and so the \u03b25 activity measured in dilute lysate should accurately reflect the \u03b25 activity that was present in the cells. Another issue is, why was PSMD6 used for this particular experiment? From the volcano plot in Figure 2B it exhibits one of the weakest effects of all the 19S subunits (albeit with one of the most highly significant P values). In addition, there is no direct comparison of PSMD6 knockdown vs. control, so it is unclear how big a change in CFZ EC50 is caused by PSMD6 knockdown (this was only done for PSMD12 in Figure 2F). A target like PSMD12 that exhibits a strong effect and has been characterized in a head-to-head comparison would be an appropriate choice.\n\n2) For the primary screen, the Methods state that the phenotypes are based on the 3 most extreme shRNAs for a given gene. What is the rationale for this? Doesn't it emphasize potential effects of outliers (e.g. off target)?\n\n3) The way the following sentence is worded is somewhat misleading: \u201cWe validated our finding in a range of MM and non-MM cells with different genetic backgrounds, as well as in MM patients, suggesting this is a general, unifying mechanism underlying the response and adaptation to proteasome inhibition.\u201d Although 'omib resistance mutations in \u03b25 can be readily identified in culture, they have never been identified in a patient.\n\n4) In Figure 2A and 2B, can the authors provide a brief summary for how the sensitivity value reported on the X-axis is calculated? How big of an effect is implied by a value of 0.5 or 1.0?\n\n5) In Figures 3 and 4, was 100 \u00b5M BTZ really used? If so, the authors should discuss the possible concern about off-target inhibition of Ser-proteases.\n\n6) In Figure 5, what is the extent of p62 overexpression or induction by rapamycin relative to that achieved by 19S knockdown (western blot comparison)?\n\n7) In Figure 5C, it is unclear what is being reported. Shouldn't PSMD6 KD (bortezomib) and Bortezomib (PSMD6 KD) yield reciprocal results? They don't appear to, especially for SQSTM1.\n\n8) It is unclear how an increase in VCP/p97 complex would generate resistance to PIs. Isn't this pathway still dependent on proteasome core activity for protein turnover. Dose this pathway feed other protein degradation pathways? The authors should clarify.\n\n9) Based on Figure 5D, it is argued that induction of autophagy with rapamycin confers resistance to proteasome inhibition. However, rapamycin also inhibits translation, which is well-known to increase resistance to proteasome inhibitors. Given this, these data should probably be removed because they don't actually bear on the issue at hand in an unambiguous manner.\n\n10) While the clinical observations are extremely interesting and potentially important for therapy, it should be borne in mind that patients were also treated with lenalidomide, which induces the degradation of Ikaros by the proteasome. Is the improved response in patients with high levels of 19S due to enhanced activity of carfilzomib on the proteasome or enhanced activity of lenalidomide in mediating degradation of Ikaros? In addition, there is no information on assay and antibody validation to lend confidence that it is indeed S7 that is being measured. The authors should consider either removing these data or injecting an appropriate note of caution as to the serious limitations to their interpretation.\n\n11) Figure 6: Please color-code the individual datapoints so that it is evident which patients are CR vs. sCR and PR vs. VGPR.\n\n12) Figure 6: If the 19S level decrease in PR vs CR patients is relevant to the sensitization mechanism proposed in this manuscript, one would have expected to find an increase in other protein degradation pathways in the PR subset, e.g., aggresome levels, which was not observed.\n\n13) The referencing is incomplete or incorrect in several places, including those mentioned below. These should be corrected.\n\na) The manuscript does not discuss or cite a prior RNAi study aimed at identifying determinants of bortezomib sensitivity and resistance (PMID 20460535).\n\nb) The Bianchi hypothesis cited by the authors was subsequently modified, with the primary determinant being total protein synthetic rate divided by proteasome capacity (PMID: 22685320) (Introduction, second paragraph).\n\nc) The notion that decreased translation reduces toxicity of proteasome inhibitors is presented as a novel finding of this paper, but in fact this has been reported previously in Cenci et al. (PMID: 22685320) as well as in references cited in PMID 20460535 (e.g. Discussion, fifth paragraph).\n\nd) The role of NFE2L1 in proteasome biogenesis was actually discovered by Radhakrishnan et al. (PMID:20385086). Similar observations for the human TCF11 gene were subsequently reported by Kruger et al. (PMID:20932482).\n\ne) It has been reported that, for HMG-CoA reductase, proteasome inhibition can block downstream of ER membrane extraction. (PMID:24860107) (Discussion, eighth paragraph).\n",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "884960af-0979-48f1-a547-3deadc47683e",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C1",
+      "claim": "Multiple myeloma (MM) cells are exquisitely sensitive to 20S proteasome inhibitors, such as carfilzomib.",
+      "claim_type": "EXPLICIT",
+      "source": "The defining example is the exquisite sensitivity of multiple myeloma (MM) to 20S proteasome inhibitors, such as carfilzomib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and is supported by clinical use of these drugs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "9619f3ae-3960-4c89-89b9-414651469059",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C2",
+      "claim": "MM patients invariably acquire resistance to proteasome inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MM patients invariably acquire resistance to these drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established clinical knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "b9c63f5b-4f51-452b-ba78-6f3454dffd5d",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C3",
+      "claim": "Proteostasis factors, including chaperones and stress-response regulators, control the response to carfilzomib.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a next-generation shRNA platform, we found that proteostasis factors, including chaperones and stress-response regulators, controlled the response to carfilzomib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the shRNA screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "946f92c3-a499-43d2-ae5f-8b8f917fd6cd",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C4",
+      "claim": "19S proteasome regulator knockdown induces resistance to carfilzomib in MM and non-MM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, 19S proteasome regulator knockdown induced resistance to carfilzomib in MM and non-MM cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the shRNA screen and validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4829cf5a-aac1-4c7b-9cbb-bba0e2da7d53",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C5",
+      "claim": "19S subunit knockdown does not affect the activity of the 20S subunits targeted by carfilzomib nor their inhibition by the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "19S subunit knockdown did not affect the activity of the 20S subunits targeted by carfilzomib nor their inhibition by the drug, suggesting an alternative mechanism, such as the selective accumulation of protective factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteasome activity assays and ProCISE assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "445dd785-0fc2-4e07-87e7-9859cec42716",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C6",
+      "claim": "In MM patients, lower 19S levels predict a diminished response to carfilzomib-based therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "In MM patients, lower 19S levels predicted a diminished response to carfilzomib-based therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data from patient samples shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "8bed6437-3a3f-47b0-9c08-934e5fa882d6",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C7",
+      "claim": "The 26S proteasome is composed of the 20S catalytic core and the 19S regulator, each comprised of more than a dozen different protein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The 26S proteasome is a large macromolecular machine composed of the 20S catalytic core and the 19S regulator, each comprised of more than a dozen different protein subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about proteasome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "93842d1d-d4f1-4510-9ba6-9e1a57777e11",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C8",
+      "claim": "The 19S proteasome regulator binds polyubiquitinated proteins and catalyzes their deubiquitination and delivery to the 20S proteasome core for proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The 19S proteasome regulator binds polyubiquitinated proteins and catalyzes their deubiquitination and delivery to the 20S proteasome core for proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about proteasome function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4c2d54c2-1303-45f2-986e-29405f4fe22d",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C9",
+      "claim": "The 20S core proteasome can associate with alternative proteasome regulators, such as the 11S complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The 20S core proteasome can also associate with alternative proteasome regulators, such as the 11S complex (Nathan et al., 2013; Schmidt and Finley, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "e614c007-bfc7-481b-981d-1e539d9578e7",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C10",
+      "claim": "Bortezomib and carfilzomib have been approved for the treatment of MM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, multiple myeloma (MM) cells are hypersensitive to proteasome inhibition, and two inhibitors of the proteolytic activity of the 20S core, bortezomib and carfilzomib, have been approved for the treatment of MM patients (Shah and Orlowski, 2009; Buac et al., 2013; R\u00f6llig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and is established clinical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "0cffc6f6-505c-4b11-9aca-7d5752d0b34a",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C11",
+      "claim": "The basis for the hypersensitivity of MM cells to proteasome inhibitors is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis for the hypersensitivity of MM cells to proteasome inhibitors is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4d438d87-2ba4-4dc7-9a37-0a4826c7ba5c",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C12",
+      "claim": "The high protein biosynthetic rate coupled with the high secretory activity of plasma cell-like MM cells results in an increased need for clearance of misfolded proteins by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis poses that the high protein biosynthetic rate coupled the high secretory activity of the plasma cell-like MM cells results in an increased need for clearance of misfolded proteins by the proteasome (Meister et al., 2007; Bianchi et al., 2009; Cenci et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4be2cde5-3734-452d-96de-a6edb30109c8",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C13",
+      "claim": "Most MM patients initially respond to treatment with proteasome inhibitors, but the tumors eventually develop resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Most MM patients initially respond to treatment with proteasome inhibitors, but the tumors eventually develop resistance (Buac et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature and is established clinical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "89fd245a-9d7f-4db5-8055-cca02ca36f87",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C14",
+      "claim": "The next-generation shRNA library targets each mRNA by approximately 25 independent shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This library targets each mRNA by \u223c25 independent shRNAs and contains thousands of negative control shRNAs to enable robust detection of hit genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the library used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "54ba2039-0f0d-4818-bc78-f0b73a4bc8c9",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C15",
+      "claim": "Sublibraries targeting 7712 genes involved in proteostasis, cancer, apoptosis, kinases, phosphatases and drug targets were introduced into U-266 MM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced sublibraries targeting 7712 genes involved in proteostasis, cancer, apoptosis, kinases, phosphatases and drug targets into U-266 MM cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4e97aeca-eb8c-4eef-86e5-d162e5db0744",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C16",
+      "claim": "Gene Ontology term enrichment analysis identified the UPS, cell cycle, and translation as major functional categories controlling the cells' response towards proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) term enrichment analysis of the hit genes from this primary screen identified the UPS, cell cycle, and translation as major functional categories controlling the cells' response towards proteasome inhibition (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GO term enrichment analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "2ac0ffaf-6054-4750-91bc-c7135a391b4e",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C17",
+      "claim": "Genetic depletion of the multi-drug resistance ABC transporters (ABCB1) sensitized cells to carfilzomib.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the genetic depletion of the multi-drug resistance ABC transporters (ABCB1, black circle in Figure 2A) sensitized cells to carfilzomib.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "8d92af84-0810-4f20-a1f0-46441921945c",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C18",
+      "claim": "Several nodes of the cytosolic proteostasis network modulated sensitivity to proteasome inhibition, including molecular chaperones (HSPA4, HSPA8, HSPA90AB1) and stress response transcription factors (HSF1, NFE2L1).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several nodes of the cytosolic proteostasis network modulated sensitivity to proteasome inhibition, including molecular chaperones (HSPA4, HSPA8, HSPA90AB1; pink circles in Figure 2A), and stress response transcription factors (HSF1, NFE2L1; purple circles in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "86dd0d45-17eb-4e17-b6e3-05e3ac81c0e3",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C19",
+      "claim": "Knockdown of several genes directly participating in protein synthesis conferred protection, including components of the EIF4F translation initiation complex (EIF5A, EIF4A1, EIF4E, EIF4G1, EIF4G2, EIF3A, EIF3F), the elongation factor EEF2, ribosomal RNA polymerase (POLR1D), ribosomal proteins (RPS3A, RPS6, RPS25), and MTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, knockdown of several genes directly participating in protein synthesis conferred protection (green circles in Figure 2A), most notable including components of the EIF4F translation initiation complex (EIF5A, EIF4A1, EIF4E, EIF4G1, EIF4G2, EIF3A, EIF3F), as well as the elongation factor EEF2, ribosomal RNA polymerase (POLR1D), ribosomal proteins (RPS3A, RPS6, RPS25), and MTOR, the master regulator of protein synthesis, even though knockdown of these factors in the absence of carfilzomib was detrimental to cell growth (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "dc75c726-9cb1-4187-ae96-8d9814275002",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C20",
+      "claim": "Decreased protein synthesis alleviates the load on proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the notion that decreased protein synthesis alleviates the load on proteasome (Chen et al., 2010; Cenci et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and is consistent with the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "791f90ac-1dd9-4146-9d01-fb45c00822ce",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C21",
+      "claim": "Rapamycin desensitizes cells to carfilzomib.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the protective effect of MTOR knockdown, we hypothesized that its inhibition by rapamycin would desensitize cells to carfilzomib. Indeed, we observed the expected protective effect of rapamycin (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "1329c89e-b602-44ca-a5fa-36f61e104636",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C22",
+      "claim": "MTOR-independent induction of autophagy by trehalose confers protection during proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Since MTOR inhibition can also induce autophagy (Reviewed in Sarkar, 2013), we tested whether the MTOR-independent induction of autophagy by trehalose (Sarkar et al., 2007) would confer similar protection. Our results support the protective role of autophagy during proteasome inhibition (Figure 3\u2014figure supplement 1), indicating that MTOR inhibition may desensitize to carfilzomib both through inhibition of translation and induction of autophagy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figure 3\u2014figure supplement 1 and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "28bb0d3c-6373-453c-8a1b-2581b4d920b9",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C23",
+      "claim": "Knockdown of several subunits of the 20S proteasome core (PSMB1, PSMB4, PSMB5, PSMB6, PSMA2, PSMA3, PSMA7) provided strong sensitization to proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of several subunits of the 20S proteasome core itself (PSMB1, PSMB4, PSMB5, PSMB6, PSMA2, PSMA3, PSMA7, red circles in Figure 2C), as well as genetic depletion of KIAA0368/ECM29 (brown circle in Figure 2C), an adaptor/scaffold protein that associates with the 20S core (Gorbea et al., 2004), and NFE2L1 (purple circle in Figure 2A), a transcription factor controlling proteasome biogenesis (Radhakrishnan et al., 2010; Steffen et al., 2010), provided strong sensitization to proteasome inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "a7e71d7b-73ea-4be2-aeb3-793899590e9d",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C24",
+      "claim": "Genetic depletion of KIAA0368/ECM29, an adaptor/scaffold protein that associates with the 20S core, provided strong sensitization to proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of several subunits of the 20S proteasome core itself (PSMB1, PSMB4, PSMB5, PSMB6, PSMA2, PSMA3, PSMA7, red circles in Figure 2C), as well as genetic depletion of KIAA0368/ECM29 (brown circle in Figure 2C), an adaptor/scaffold protein that associates with the 20S core (Gorbea et al., 2004), and NFE2L1 (purple circle in Figure 2A), a transcription factor controlling proteasome biogenesis (Radhakrishnan et al., 2010; Steffen et al., 2010), provided strong sensitization to proteasome inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "f41897aa-4647-418b-b1f1-c827488345b4",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C25",
+      "claim": "Genetic depletion of NFE2L1, a transcription factor controlling proteasome biogenesis, provided strong sensitization to proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of several subunits of the 20S proteasome core itself (PSMB1, PSMB4, PSMB5, PSMB6, PSMA2, PSMA3, PSMA7, red circles in Figure 2C), as well as genetic depletion of KIAA0368/ECM29 (brown circle in Figure 2C), an adaptor/scaffold protein that associates with the 20S core (Gorbea et al., 2004), and NFE2L1 (purple circle in Figure 2A), a transcription factor controlling proteasome biogenesis (Radhakrishnan et al., 2010; Steffen et al., 2010), provided strong sensitization to proteasome inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "a2ad6d58-e0de-4a26-b78f-51b3f125a154",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C26",
+      "claim": "Depletion of a protein or pathway targeted by a drug sensitizes cells to the drug used around its EC50.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with previous studies in which depletion of a protein or pathway targeted by a drug sensitizes cells to the drug used around its EC50 (Giaever et al., 1999; Matheny et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "bd69b8e2-b841-4e15-9d32-c1c43b9a5ec6",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C27",
+      "claim": "Genetic depletion of the vast majority of subunits of the 19S proteasomal regulator conferred marked resistance to proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the genetic depletion of the vast majority of subunits of the 19S proteasomal regulator conferred marked resistance to proteasome inhibition (blue circles in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "75dec909-d849-427b-9b52-ca3cb99e12e9",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C28",
+      "claim": "19S subunits were among the strongest protective hits in the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 19S subunits were among the strongest protective hits in our screen (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "0f96cf42-ac5d-4aa6-a9e1-712a777413cb",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C29",
+      "claim": "Depletion of PSME1 and PSME2, components of the 11S regulator, conferred marked resistance to proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This paradoxical effect also occurred with the depletion of PSME1 and PSME2, components of the 11S regulator (light blue circles in Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "054543c7-f13f-4857-b353-ea1bca664358",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C30",
+      "claim": "Knockdown of either 19S or 20S subunits in the absence of carfilzomib negatively impacted cell growth in all cases.",
+      "claim_type": "EXPLICIT",
+      "source": "While knockdown of 20S and 19S subunits in the presence of carfilzomib had opposing phenotypes, knockdown of either 19S or 20S subunits in the absence of carfilzomib negatively impacted cell growth in all cases (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "57f9587c-f402-4c77-933f-d2f8eb97e44f",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C31",
+      "claim": "The protective effect of 19S knockdown was not simply mediated by slowing cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the protective effect of 19S knockdown was not simply mediated by slowing cell growth, since knockdown of many other genes had a similar or more dramatic impact on cell growth without increasing resistance to carfilzomib (Figure 2C,D, Figure 2\u2014figure supplement 1, Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 2C, 2D, Figure 2\u2014figure supplement 1, and Supplementary files 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "041f36e6-ff39-4cb0-bdc8-a363e8f37116",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C32",
+      "claim": "The opposing protective and sensitizing effects of 19S and 20S subunit knockdown were observed for the vast majority of shRNAs targeting these genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposing protective and sensitizing effects of 19S and 20S subunit knockdown were observed for the vast majority of shRNAs targeting these genes (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "3ea61825-f4f3-4562-a641-95c061ebddfb",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C33",
+      "claim": "Knockdown of 20S subunits sensitized to proteasome inhibitors across a panel of MM and leukemia cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "As we observed in U-266 cells treated with carfilzomib, knockdown of 20S subunits sensitized to proteasome inhibitors, whereas knockdown of 19S subunits desensitized to proteasome inhibition across this cell line panel (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "62f856a0-efca-4ef7-86e6-90dec7c59cd1",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C34",
+      "claim": "Knockdown of 19S subunits desensitized to proteasome inhibition across a panel of MM and leukemia cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "As we observed in U-266 cells treated with carfilzomib, knockdown of 20S subunits sensitized to proteasome inhibitors, whereas knockdown of 19S subunits desensitized to proteasome inhibition across this cell line panel (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "16354a92-2da9-4ced-93d3-d85eb09dff52",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C35",
+      "claim": "Expression of individual shRNAs targeting single subunits of either the 20S core or 19S regulator resulted in about twofold shifts of the dose\u2013response curves to proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we introduced single shRNAs into MM cells targeting single subunits of either the 20S core or 19S regulator. In these experiments, expression of the individual shRNAs resulted in about twofold shifts of the dose\u2013response curves to proteasome inhibition (Figure 4D), lending further strong support to the results from the genetic screen.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4121773e-729a-409a-9e2d-0a231a921fe1",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C36",
+      "claim": "PSMD12 knockdown did not substantially increase 20S chymotrypsin-like activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PSMD12 knockdown did not substantially increase 20S chymotrypsin-like activity, and did not affect its susceptibility to carfilzomib (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteasome activity assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "7d32e8ff-f39b-4dda-ad41-d0a6b8974e24",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C37",
+      "claim": "PSMD12 knockdown did not affect the susceptibility of 20S chymotrypsin-like activity to carfilzomib.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PSMD12 knockdown did not substantially increase 20S chymotrypsin-like activity, and did not affect its susceptibility to carfilzomib (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteasome activity assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "694945b2-71a2-488d-a4eb-40519a502780",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C38",
+      "claim": "PSMD12 knockdown did not affect the amounts of accessible 20S subunits targeted by carfilzomib (\u03b25 and LMP7) as measured by ProCISE assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these findings by an orthogonal approach measuring the amounts of accessible 20S subunits targeted by carfilzomib (\u03b25 and LMP7) in a proteasome constitutive/immunoproteasome subunit enzyme-linked immunosorbent assay, ProCISE (Parlati et al., 2009) (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ProCISE assay data shown in Figure 5B and 5C and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "f6af0f8a-33d2-4e5d-91dc-93c1b8455b9e",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C39",
+      "claim": "The loss of 19S subunits does not lead to a decreased effectiveness of proteasome inhibitors in targeting and inhibiting the 20S core.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the loss of 19S subunits does not lead to a decreased effectiveness of proteasome inhibitors in targeting and inhibiting the 20S core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteasome activity and ProCISE assay data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "f4786985-0339-4b30-b38b-adb23e86f0e5",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C40",
+      "claim": "Knockdown of 19S subunits causes profound changes to cellular physiology that desensitize cells to the effects of proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support a scenario wherein the catalytic activity of the 20S core and its sensitivity to proteasome inhibitors remains unaltered in the face of 19S depletion. Therefore, we reasoned that knockdown of 19S subunits causes profound changes to cellular physiology that desensitize cells to the effects of proteasome inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteasome activity data and the observation of protective effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "ae9a72e3-3137-41c4-a58e-cdc0815bbfde",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C41",
+      "claim": "A loss in 19S function may lead to the selective accumulation of certain proteins, some of which may mitigate the effects of 20S core inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the 19S regulator delivers substrates to the 20S catalytic core (Liu and Jacobson, 2013), we hypothesized that a loss in 19S function may lead to the selective accumulation of certain proteins, some of which may mitigate the effects of 20S core inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known function of the 19S regulator and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "a9836168-21ef-49be-85b0-75eec5e07c80",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C42",
+      "claim": "19S knockdown causes accumulation of SQSTM1/p62, a cargo receptor protein that delivers polyubiquitylated proteins to aggresome-like bodies degraded by the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the proteins accumulating upon 19S knockdown were protein degradation factors, whose accumulation we verified by quantitative immunoblot (Figure 6). These included SQSTM1/p62, a cargo receptor protein that delivers polyubiquitylated proteins to aggresome-like bodies degraded by the autophagosome (Pankiv et al., 2007), and two subunits of a heterotrimeric complex functioning in endoplasmic reticulum (ER)-associated protein degradation: UFD1L and the triple AAA ATPase VCP/p97 (Wolf and Stolz, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 6 and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "631b04ae-dc35-423d-98f8-d56c7249a1c3",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C43",
+      "claim": "19S knockdown causes accumulation of UFD1L and VCP/p97, two subunits of a heterotrimeric complex functioning in ER-associated protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the proteins accumulating upon 19S knockdown were protein degradation factors, whose accumulation we verified by quantitative immunoblot (Figure 6). These included SQSTM1/p62, a cargo receptor protein that delivers polyubiquitylated proteins to aggresome-like bodies degraded by the autophagosome (Pankiv et al., 2007), and two subunits of a heterotrimeric complex functioning in endoplasmic reticulum (ER)-associated protein degradation: UFD1L and the triple AAA ATPase VCP/p97 (Wolf and Stolz, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 6 and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "ee1e3bd6-98e6-4d03-ba62-d099c8812b50",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C44",
+      "claim": "SQSTM1/p62, UFD1L, and VCP/p97 accumulated upon PSMD12 knockdown both in the presence and absence of carfilzomib, but not (or to a lesser degree) upon carfilzomib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these factors accumulated upon PSMD12 knockdown both in the presence and absence of carfilzomib, but not (or to a lesser degree) upon carfilzomib treatment (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "41d386f4-24b5-46d2-a742-c50bab67a28e",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C45",
+      "claim": "The abundance of MCL1, a protein rapidly turned over by the proteasome, was sharply increased by carfilzomib treatment, but much less affected by 19S knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the abundance of the anti-apoptotic Bcl-2 family member MCL1, a protein rapidly turned over by the proteasome (Schwickart et al., 2010), was sharply increased by carfilzomib treatment, but much less affected by 19S knockdown (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 6 and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "43f443c5-e0d7-40ed-8824-67a9874595ac",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C46",
+      "claim": "19S knockdown did not lead to an overall enhancement of NFkB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 19S knockdown did not lead to an overall enhancement of NFkB signaling, a pathway critical for survival and proliferation of lymphoid malignancies (Demchenko and Kuehl, 2010) (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 6 and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "85388aec-4cc7-4061-bc18-4f56250dae74",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C47",
+      "claim": "The protective phenotype observed upon 19S knockdown may arise from the selective upregulation of protein turnover pathways and not from the upregulation of pro-survival pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding, these observations are consistent with the hypothesis that the protective phenotype we observed upon 19S knockdown may arise from the selective upregulation of protein turnover pathways and not from the upregulation of pro-survival pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the immunoblot data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "dd8cc7fd-ada3-4012-9b43-e3fd39bce0e7",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C48",
+      "claim": "19S proteasome levels were significantly higher in the group of MM patients who achieved complete response after carfilzomib-based treatment compared to partial responders (p < 0.0007).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 19S proteasome levels were significantly higher in the group of patients who achieved CR after treatment compared to partial responders (p < 0.0007, Mann\u2013Whitney test; Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data from patient samples shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "61d712d8-1a4b-47c3-9ce5-a6b8c0000d97",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C49",
+      "claim": "Levels of the 20S core proteasomes were not significantly different between complete and partial responders to carfilzomib-based therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, levels of the 20S core proteasomes were not significantly different between complete and partial responders (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data from patient samples shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "5592cce8-4580-400a-924f-9fa2008a417d",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C50",
+      "claim": "Aggresome levels were not predictive of clinical outcomes in MM patients treated with carfilzomib-based therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, aggresome levels were not predictive of clinical outcomes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data from patient samples shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "3c860987-9966-4ef2-ac8b-3298b8ea7420",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C51",
+      "claim": "The desensitization to proteasome inhibition caused by decreased 19S levels is clinically relevant in MM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that the desensitization to proteasome inhibition caused by decreased 19S levels is also clinically relevant in MM patients, and that 19S levels are a predictive biomarker of response to proteasome inhibitor-based therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the patient data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "05eed344-b5cd-44d0-bca7-54345382de0f",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C52",
+      "claim": "19S levels are a predictive biomarker of response to proteasome inhibitor-based therapy in MM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that the desensitization to proteasome inhibition caused by decreased 19S levels is also clinically relevant in MM patients, and that 19S levels are a predictive biomarker of response to proteasome inhibitor-based therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the patient data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "3b1b7beb-a1d4-44c6-8fcd-e4e00b552b8e",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C53",
+      "claim": "Components of the 20S and 19S proteasome subcomplexes formed separate functional clusters in a genetic interaction map in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These opposing phenotypes are consistent with our previous observations in budding yeast, where components of the 20S and 19S proteasome subcomplexes formed separate functional clusters in a genetic interaction map (Breslow et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "7246a870-a778-433a-827f-4234ac1b1d9a",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C54",
+      "claim": "Silencing the 20S core subunits can lead to a crippled proteasome that is easier to inhibit.",
+      "claim_type": "EXPLICIT",
+      "source": "Two non-mutually exclusive scenarios account for this observation: silencing the 20S core subunits can lead to (i) a crippled proteasome that is easier to inhibit, or to (ii) substoichiometric amounts of the silenced subunits which in turn compromises the assembly of functional proteasomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the sensitization phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "4e26a044-c6c1-49bc-b9fd-839eaa054860",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C55",
+      "claim": "Silencing the 20S core subunits can lead to substoichiometric amounts of the silenced subunits which in turn compromises the assembly of functional proteasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two non-mutually exclusive scenarios account for this observation: silencing the 20S core subunits can lead to (i) a crippled proteasome that is easier to inhibit, or to (ii) substoichiometric amounts of the silenced subunits which in turn compromises the assembly of functional proteasomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the sensitization phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "f84e4a45-8e26-4126-9bf7-a43e6b824b93",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C56",
+      "claim": "19S depletion alters the spectrum of proteasome substrates, leading to selective accumulation of factors involved in protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data supports that 19S depletion alters the spectrum of proteasome substrates, leading to selective accumulation of factors involved in protein degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the proteomics and immunoblot data shown in Figures 6 and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "ece826a4-c3c7-402b-81d8-482eec6b2a32",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C57",
+      "claim": "Upregulation of protein turnover pathways may reduce cellular dependence on the proteasome in MM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism may represent a homeostatic feedback loop that is relevant in normal cellular contexts. In MM cells, upregulation of protein turnover pathways may reduce cellular dependence on the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "3d99961d-059d-404f-a2bf-86754b9bcf3a",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C58",
+      "claim": "Previously reported mechanisms of resistance to proteasome inhibitors in yeast and mammalian cells include mutations or overexpression of the direct drug target, PSMB5, in the catalytic core of the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously reported mechanisms of resistance to proteasome inhibitors in yeast and mammalian cells include mutations or overexpression of the direct drug target, PSMB5, in the catalytic core of the proteasome (Oerlemans et al., 2008; Huber et al., 2015), but to our knowledge, they have never been identified in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "310dee10-3bd5-4e50-94a8-7171e118aae8",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C59",
+      "claim": "Mutations or overexpression of PSMB5 have never been identified as resistance mechanisms in MM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously reported mechanisms of resistance to proteasome inhibitors in yeast and mammalian cells include mutations or overexpression of the direct drug target, PSMB5, in the catalytic core of the proteasome (Oerlemans et al., 2008; Huber et al., 2015), but to our knowledge, they have never been identified in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap based on the authors' understanding of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "2e858b59-16e1-4fff-8ceb-4300d3a0e7d4",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C60",
+      "claim": "The mechanism of drug resistance identified in this study is brought about by rewiring the proteostasis network, which reduces the dependence on the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support an entirely different mechanism of drug resistance, brought about by rewiring the proteostasis network, which reduces the dependence on the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "1c5ef0bc-a7f5-4bcf-8097-c081ed19c532",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C61",
+      "claim": "Alternative protein degradation pathways can desensitize cells to proteasome inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that alternative protein degradation pathways can desensitize cells to proteasome inhibitors provides a strong motivation for the simultaneous targeting of parallel pathways in combination therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by the discussion of combination therapies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "8d81383a-2f08-46e3-a8a3-c1afe7d9b671",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C62",
+      "claim": "Combinations of bortezomib with autophagy inhibitors, including hydroxychloroquine and the HDAC6 inhibitor ACY-1215, are currently in clinical trials for MM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, other groups have investigated the role of autophagy during proteasome inhibition (Kawaguchi et al., 2011; Santo et al., 2012; Komatsu et al., 2013; Moriya et al., 2013; Mishima et al., 2015), and combinations of bortezomib with autophagy inhibitors, including hydroxychloroquine (Vogl et al., 2014) and the HDAC6 inhibitor ACY-1215 (ClinicalTrail.gov identifier NCT01323751), are currently in clinical trials for MM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and clinical trial information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "dc96ba41-0dff-4293-a3eb-f82e436843c9",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C63",
+      "claim": "Reducing protein synthesis can remodel the cell's response to proteasome inhibitors by offsetting the reduced proteasome capacity through lowered protein load.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mTOR and the EIF4F complex are master regulators of protein synthesis, and their depletion leads to increased resistance towards proteasome inhibition. By diminishing protein synthesis, the cell could remodel its response to proteasome inhibitors, in this case not through the compensatory upregulation of alternative protein degradation pathways, but by offsetting the reduced proteasome capacity through lowered protein load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "54a716d6-6a5f-46b8-b8bc-3da56a5489b8",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C64",
+      "claim": "Knockdown of HSF1 and individual cytosolic Hsp70 and Hsp90 chaperones sensitized cells to carfilzomib.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, knockdown of the master regulator of cytosolic proteostasis, HSF1, and of individual cytosolic Hsp70 and Hsp90 chaperones sensitized cells to carfilzomib (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "b7bc25bb-ef31-4aa7-80c0-423d792c923c",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C65",
+      "claim": "Hsp90 inhibitors have been reported to act synergistically with bortezomib against MM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 inhibitors (Ishii et al., 2012; Suzuki et al., 2015) and Hsp70 inhibitors (Braunstein et al., 2011) have previously been reported to act synergistically with bortezomib against MM cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "165b8e29-1177-4896-a446-80c322041cca",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C66",
+      "claim": "Hsp70 inhibitors have been reported to act synergistically with bortezomib against MM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 inhibitors (Ishii et al., 2012; Suzuki et al., 2015) and Hsp70 inhibitors (Braunstein et al., 2011) have previously been reported to act synergistically with bortezomib against MM cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "fd328183-7db6-419a-a518-55162971b0cc",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C67",
+      "claim": "ER proteostasis factors do not play a role in controlling sensitivity to carfilzomib in U-266 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we did not find a role for ER proteostasis factors in controlling sensitivity to carfilzomib in U-266 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "c0d4fb69-d012-4500-a72d-db4b7b69dd1f",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C68",
+      "claim": "During proteasome inhibition in MM cells, misfolded proteins are still extracted from the ER, and their removal from the ER alleviates the proteotoxic load.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible explanation of our findings is that during proteasome inhibition in MM cells, misfolded proteins are still extracted from the ER, as has been reported for 3-Hydroxy-3-methylglutaryl-coenzyme A reductase in the cholesterol biosynthesis pathway (Morris et al., 2014), and that their removal from the ER alleviates the proteotoxic load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "b43817f8-435f-415d-85ad-cb99ddd2ed54",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C69",
+      "claim": "An assay that can predict response to a given therapy would significantly help improve outcomes and reduce toxicities for individual MM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "From a clinical perspective, an assay that can predict response to a given therapy would significantly help improving outcomes and reduce toxicities for individual patients with MM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a clinical perspective based on general medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "e38d7ea3-b168-440c-916e-0ad907362cca",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C70",
+      "claim": "Therapeutic decisions for MM patients are currently largely based on a clinical trial-and-error basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, however, therapeutic decisions are largely based on a clinical trial-and-error basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current clinical practice based on general medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "f00f49c4-f47f-48bb-81ce-fd0cc7e1da31",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "claim_id": "C71",
+      "claim": "The combination of observational genomics in patients and functional genomics in model systems can pave the way for precision medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of observational genomics in patients and functional genomics in model systems can pave the way for precision medicine, while providing fundamental insights into biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a perspective statement based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8dd38161-de2a-4ae3-901f-06995d098dfe",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An shRNA screen identified proteostasis factors, including chaperones (HSPA4, HSPA8, HSPA90AB1), stress response transcription factors (HSF1, NFE2L1), and drug efflux transporters (ABCB1) as modulators of carfilzomib sensitivity in MM cells. GO term enrichment analysis confirmed the UPS, cell cycle, and translation as major functional categories controlling response to proteasome inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16, C17, C18, and C64 are well-supported by the shRNA screen data shown in Figures 1B and 2A. The screen design (C14, C15) appears robust with ~25 shRNAs per gene and thousands of negative controls. The GO enrichment analysis provides systematic validation of the functional categories identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "07d66054-4f6c-4bf1-b303-d8edfceb32ba",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Knockdown of protein synthesis machinery (EIF4F complex components, MTOR, ribosomal proteins) conferred protection against carfilzomib despite reducing cell growth. Pharmacological validation showed rapamycin and trehalose (autophagy inducer) desensitized cells to carfilzomib, suggesting reduced protein load and/or increased autophagy can offset proteasome inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 and C63 are supported by screen data (Figure 2A,B) and pharmacological validation (Figure 3, Figure 3\u2014figure supplement 1). The protective effect despite growth impairment (C19) is a key control demonstrating specificity. However, the mechanism remains partially speculative as MTOR inhibition affects both translation and autophagy, making it difficult to fully separate these contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "8c9112cf-a1b2-4ba6-818e-90f812b077ab",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Knockdown of 20S proteasome core subunits (PSMB1, PSMB4, PSMB5, PSMB6, PSMA2, PSMA3, PSMA7), the adaptor protein ECM29, and the transcription factor NFE2L1 sensitized cells to carfilzomib across multiple MM and leukemia cell lines, consistent with depletion of drug targets enhancing drug sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C33 are well-supported by screen data (Figure 2C) and validation across multiple cell lines (Figure 4C). The finding is consistent with established principles (C26) and prior literature. The effect was observed with multiple independent shRNAs (C32, Figure 4A), strengthening confidence in the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "17077c8f-f262-43da-a057-872da445b7f0",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Paradoxically, knockdown of 19S proteasome regulator subunits and 11S regulator components (PSME1, PSME2) conferred marked resistance to proteasome inhibitors across MM and non-MM cell lines. This protective effect was among the strongest in the screen, observed with the vast majority of shRNAs, and was not simply due to reduced cell growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27-C29, C31-C32, C34-C35 are strongly supported by screen data (Figure 2C, Figure 4A-D) and validation experiments across multiple cell lines (Figure 4C). The robustness is demonstrated by: (1) multiple independent shRNAs showing the effect (C32, Figure 4B), (2) validation in diverse cell lines (C34), and (3) control showing the effect is not simply due to growth inhibition (C31). The ~2-fold EC50 shifts with individual shRNAs (C35, Figure 4D) provide quantitative validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "342157ec-3a65-41ba-9c5e-818dc68269f1",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "19S subunit (PSMD12) knockdown did not substantially affect 20S proteasome chymotrypsin-like activity, its susceptibility to carfilzomib inhibition, or the accessibility of carfilzomib target subunits (\u03b25 and LMP7), as measured by activity assays and ProCISE assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36-C39 are supported by orthogonal biochemical assays (Figure 5A-C). The use of two independent methods (activity assay and ProCISE) strengthens the conclusion. However, the data show only modest differences in IC50 values (Figure 5A: 19.53 vs 20.45 nM), which are within error bars, appropriately supporting the claim of no substantial effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "674f9301-522f-4490-bbdf-a673a9c258b0",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "19S knockdown causes profound changes to cellular physiology, leading to selective accumulation of protein degradation factors (SQSTM1/p62, UFD1L, VCP/p97) both in the presence and absence of carfilzomib. This selective protein accumulation, rather than upregulation of pro-survival pathways, may mediate the protective phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C47, and C56 are supported by proteomics data (Figure 6\u2014figure supplement 1) and validated by immunoblotting (Figure 6). The selective accumulation of degradation factors (C42-C44) is well-documented. However, the mechanistic link between protein accumulation and protection (C41, C47) remains somewhat speculative. The caveat noted in C44 about comparing constitutive knockdown to acute drug treatment is important and appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "945d91f7-d786-44a6-a20b-532eeb2069c7",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unlike protein degradation factors, the anti-apoptotic protein MCL1 was more strongly increased by carfilzomib treatment than by 19S knockdown, and 19S knockdown did not enhance NF\u03baB signaling, suggesting the protective effect is not mediated by general pro-survival pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by immunoblot data (Figure 6). These negative controls are important for ruling out alternative mechanisms. However, as the authors acknowledge, the comparison between constitutive knockdown and acute treatment has limitations. The conclusion is appropriately stated as consistent with a hypothesis rather than definitive proof.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "38d7e5aa-3572-4db0-add8-6ad94e022615",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In MM patients treated with carfilzomib-based combination therapy, pre-treatment 19S proteasome levels (measured by flow cytometry for PSMC2) were significantly higher in complete responders compared to partial responders (p < 0.0007), suggesting 19S levels are a predictive biomarker of response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C48, C51-C52 show a statistically significant association in patient samples (Figure 7A). However, several concerns limit confidence: (1) small sample size (n=23 patients total, with unclear numbers in each response group), (2) the therapy included lenalidomide and dexamethasone in addition to carfilzomib, confounding attribution to carfilzomib specifically, (3) no information on statistical power or effect size beyond p-value, (4) no validation cohort, and (5) CD138+ cells include both MM cells and normal plasma cells, potentially diluting the signal. The authors acknowledge the lenalidomide confound but dismiss it based on general knowledge about drug kinetics rather than data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "573a20f7-4842-4340-8cdd-e850a7cb0e24",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pre-treatment levels of 20S proteasome subunits (PSMB2) and aggresomes were not significantly different between complete and partial responders to carfilzomib-based therapy in MM patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by flow cytometry data (Figure 7B-C). These serve as important negative controls for the 19S finding, though they suffer from the same limitations regarding sample size and combination therapy. The lack of association with 20S levels is somewhat surprising given the in vitro findings and warrants further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "35f54256-30b9-4d0a-9924-cd240b2949cf",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study identifies a novel mechanism of drug resistance mediated by rewiring the proteostasis network to reduce dependence on the proteasome, distinct from previously reported mechanisms involving mutations or overexpression of the drug target PSMB5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 represent a synthesis of the experimental findings. The mechanism is well-supported by the collective data showing 19S knockdown confers resistance without affecting 20S activity or drug binding, coupled with selective accumulation of alternative degradation factors. The distinction from prior mechanisms (C58-C59) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "df701298-9251-4d7c-a71f-4863e9bc6153",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MM cells are exquisitely sensitive to proteasome inhibitors (bortezomib and carfilzomib), but patients invariably develop resistance. The basis for MM hypersensitivity is unclear, though one hypothesis involves high protein biosynthetic and secretory activity creating increased dependence on the proteasome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C13 represent established clinical and biological knowledge appropriately cited from the literature. These provide essential context for the study but are not novel findings. The characterization of the mechanistic basis as unclear (C11) and the hypothesis as speculative (C12) are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "fd23a30f-525a-4fc7-8b85-3b6ba0fe3ecf",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The 26S proteasome consists of the 20S catalytic core and 19S regulator, each with >12 subunits. The 19S binds polyubiquitinated proteins and catalyzes their deubiquitination and delivery to the 20S core. The 20S can also associate with alternative regulators like the 11S complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 represent established knowledge about proteasome structure and function, appropriately cited. These provide necessary background but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "897cda4c-2a4b-4f8e-a5a1-2ae41debf867",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The opposing phenotypes of 20S and 19S knockdown are consistent with prior observations in yeast genetic interaction maps. Two non-mutually exclusive mechanisms may explain 20S sensitization: creating a crippled proteasome more easily inhibited, or reducing functional proteasome assembly due to substoichiometric subunit levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 appropriately connect current findings to prior work and propose mechanistic hypotheses. C53 is supported by citation to prior work. C54-C55 are clearly presented as speculative hypotheses rather than tested mechanisms, which is appropriate for a Discussion section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings suggest therapeutic implications: upregulation of protein turnover pathways may reduce proteasome dependence in MM cells, supporting combination therapies targeting autophagy (currently in clinical trials). Notably, ER proteostasis factors did not control carfilzomib sensitivity in U-266 cells, possibly because misfolded proteins are extracted from the ER during proteasome inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C62, C65-C68 appropriately discuss therapeutic implications and connect to ongoing clinical trials (C62). The negative finding regarding ER factors (C67) is supported by the screen data, and the speculative explanation (C68) is appropriately cited and clearly marked as a hypothesis. These represent reasonable interpretations and extensions of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "598ad1fe-b5c0-4655-be6b-1761a8351840",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The next-generation shRNA library used targets each mRNA with ~25 independent shRNAs and contains thousands of negative controls. Sublibraries targeting 7,712 genes in proteostasis, cancer, apoptosis, kinases, phosphatases, and drug targets were introduced into U-266 MM cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 describe the technical specifications and experimental design of the screen. These are well-documented methodological details supported by the Materials and Methods section and prior publications on the library platform. The design appears robust for identifying hit genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    },
+    {
+      "id": "2c90e225-a394-487f-b2b2-8dd1bef0a074",
+      "content_id": "06ed6f09-864d-46da-8604-c3a0aa04fa43",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previously reported resistance mechanisms (PSMB5 mutations/overexpression) have not been identified in patients. Current MM therapeutic decisions are largely trial-and-error. An assay predicting therapy response would improve outcomes, and combining observational genomics in patients with functional genomics in model systems can enable precision medicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C69-C71 represent appropriate contextualization of the clinical problem and perspective on future directions. C58-C59 are supported by citations and clinical knowledge. C69-C71 represent reasonable perspectives on clinical needs and the potential impact of the work, appropriately presented as forward-looking statements rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:58.982055Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9c63f5b-4f51-452b-ba78-6f3454dffd5d",
+      "result_id": "8dd38161-de2a-4ae3-901f-06995d098dfe"
+    },
+    {
+      "claim_id": "4e97aeca-eb8c-4eef-86e5-d162e5db0744",
+      "result_id": "8dd38161-de2a-4ae3-901f-06995d098dfe"
+    },
+    {
+      "claim_id": "2ac0ffaf-6054-4750-91bc-c7135a391b4e",
+      "result_id": "8dd38161-de2a-4ae3-901f-06995d098dfe"
+    },
+    {
+      "claim_id": "8d92af84-0810-4f20-a1f0-46441921945c",
+      "result_id": "8dd38161-de2a-4ae3-901f-06995d098dfe"
+    },
+    {
+      "claim_id": "54a716d6-6a5f-46b8-b8bc-3da56a5489b8",
+      "result_id": "8dd38161-de2a-4ae3-901f-06995d098dfe"
+    },
+    {
+      "claim_id": "86dd0d45-17eb-4e17-b6e3-05e3ac81c0e3",
+      "result_id": "07d66054-4f6c-4bf1-b303-d8edfceb32ba"
+    },
+    {
+      "claim_id": "dc75c726-9cb1-4187-ae96-8d9814275002",
+      "result_id": "07d66054-4f6c-4bf1-b303-d8edfceb32ba"
+    },
+    {
+      "claim_id": "791f90ac-1dd9-4146-9d01-fb45c00822ce",
+      "result_id": "07d66054-4f6c-4bf1-b303-d8edfceb32ba"
+    },
+    {
+      "claim_id": "1329c89e-b602-44ca-a5fa-36f61e104636",
+      "result_id": "07d66054-4f6c-4bf1-b303-d8edfceb32ba"
+    },
+    {
+      "claim_id": "dc96ba41-0dff-4293-a3eb-f82e436843c9",
+      "result_id": "07d66054-4f6c-4bf1-b303-d8edfceb32ba"
+    },
+    {
+      "claim_id": "28bb0d3c-6373-453c-8a1b-2581b4d920b9",
+      "result_id": "8c9112cf-a1b2-4ba6-818e-90f812b077ab"
+    },
+    {
+      "claim_id": "a7e71d7b-73ea-4be2-aeb3-793899590e9d",
+      "result_id": "8c9112cf-a1b2-4ba6-818e-90f812b077ab"
+    },
+    {
+      "claim_id": "f41897aa-4647-418b-b1f1-c827488345b4",
+      "result_id": "8c9112cf-a1b2-4ba6-818e-90f812b077ab"
+    },
+    {
+      "claim_id": "a2ad6d58-e0de-4a26-b78f-51b3f125a154",
+      "result_id": "8c9112cf-a1b2-4ba6-818e-90f812b077ab"
+    },
+    {
+      "claim_id": "3ea61825-f4f3-4562-a641-95c061ebddfb",
+      "result_id": "8c9112cf-a1b2-4ba6-818e-90f812b077ab"
+    },
+    {
+      "claim_id": "946f92c3-a499-43d2-ae5f-8b8f917fd6cd",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "bd69b8e2-b841-4e15-9d32-c1c43b9a5ec6",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "75dec909-d849-427b-9b52-ca3cb99e12e9",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "0f96cf42-ac5d-4aa6-a9e1-712a777413cb",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "054543c7-f13f-4857-b353-ea1bca664358",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "57f9587c-f402-4c77-933f-d2f8eb97e44f",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "041f36e6-ff39-4cb0-bdc8-a363e8f37116",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "62f856a0-efca-4ef7-86e6-90dec7c59cd1",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "16354a92-2da9-4ced-93d3-d85eb09dff52",
+      "result_id": "17077c8f-f262-43da-a057-872da445b7f0"
+    },
+    {
+      "claim_id": "4829cf5a-aac1-4c7b-9cbb-bba0e2da7d53",
+      "result_id": "342157ec-3a65-41ba-9c5e-818dc68269f1"
+    },
+    {
+      "claim_id": "4121773e-729a-409a-9e2d-0a231a921fe1",
+      "result_id": "342157ec-3a65-41ba-9c5e-818dc68269f1"
+    },
+    {
+      "claim_id": "7d32e8ff-f39b-4dda-ad41-d0a6b8974e24",
+      "result_id": "342157ec-3a65-41ba-9c5e-818dc68269f1"
+    },
+    {
+      "claim_id": "694945b2-71a2-488d-a4eb-40519a502780",
+      "result_id": "342157ec-3a65-41ba-9c5e-818dc68269f1"
+    },
+    {
+      "claim_id": "f6af0f8a-33d2-4e5d-91dc-93c1b8455b9e",
+      "result_id": "342157ec-3a65-41ba-9c5e-818dc68269f1"
+    },
+    {
+      "claim_id": "f4786985-0339-4b30-b38b-adb23e86f0e5",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "ae9a72e3-3137-41c4-a58e-cdc0815bbfde",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "a9836168-21ef-49be-85b0-75eec5e07c80",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "631b04ae-dc35-423d-98f8-d56c7249a1c3",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "ee1e3bd6-98e6-4d03-ba62-d099c8812b50",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "85388aec-4cc7-4061-bc18-4f56250dae74",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "f84e4a45-8e26-4126-9bf7-a43e6b824b93",
+      "result_id": "674f9301-522f-4490-bbdf-a673a9c258b0"
+    },
+    {
+      "claim_id": "41d386f4-24b5-46d2-a742-c50bab67a28e",
+      "result_id": "945d91f7-d786-44a6-a20b-532eeb2069c7"
+    },
+    {
+      "claim_id": "43f443c5-e0d7-40ed-8824-67a9874595ac",
+      "result_id": "945d91f7-d786-44a6-a20b-532eeb2069c7"
+    },
+    {
+      "claim_id": "445dd785-0fc2-4e07-87e7-9859cec42716",
+      "result_id": "38d7e5aa-3572-4db0-add8-6ad94e022615"
+    },
+    {
+      "claim_id": "dd8cc7fd-ada3-4012-9b43-e3fd39bce0e7",
+      "result_id": "38d7e5aa-3572-4db0-add8-6ad94e022615"
+    },
+    {
+      "claim_id": "3c860987-9966-4ef2-ac8b-3298b8ea7420",
+      "result_id": "38d7e5aa-3572-4db0-add8-6ad94e022615"
+    },
+    {
+      "claim_id": "05eed344-b5cd-44d0-bca7-54345382de0f",
+      "result_id": "38d7e5aa-3572-4db0-add8-6ad94e022615"
+    },
+    {
+      "claim_id": "61d712d8-1a4b-47c3-9ce5-a6b8c0000d97",
+      "result_id": "573a20f7-4842-4340-8cdd-e850a7cb0e24"
+    },
+    {
+      "claim_id": "5592cce8-4580-400a-924f-9fa2008a417d",
+      "result_id": "573a20f7-4842-4340-8cdd-e850a7cb0e24"
+    },
+    {
+      "claim_id": "2e858b59-16e1-4fff-8ceb-4300d3a0e7d4",
+      "result_id": "35f54256-30b9-4d0a-9924-cd240b2949cf"
+    },
+    {
+      "claim_id": "1c5ef0bc-a7f5-4bcf-8097-c081ed19c532",
+      "result_id": "35f54256-30b9-4d0a-9924-cd240b2949cf"
+    },
+    {
+      "claim_id": "884960af-0979-48f1-a547-3deadc47683e",
+      "result_id": "df701298-9251-4d7c-a71f-4863e9bc6153"
+    },
+    {
+      "claim_id": "9619f3ae-3960-4c89-89b9-414651469059",
+      "result_id": "df701298-9251-4d7c-a71f-4863e9bc6153"
+    },
+    {
+      "claim_id": "e614c007-bfc7-481b-981d-1e539d9578e7",
+      "result_id": "df701298-9251-4d7c-a71f-4863e9bc6153"
+    },
+    {
+      "claim_id": "0cffc6f6-505c-4b11-9aca-7d5752d0b34a",
+      "result_id": "df701298-9251-4d7c-a71f-4863e9bc6153"
+    },
+    {
+      "claim_id": "4d438d87-2ba4-4dc7-9a37-0a4826c7ba5c",
+      "result_id": "df701298-9251-4d7c-a71f-4863e9bc6153"
+    },
+    {
+      "claim_id": "4be2cde5-3734-452d-96de-a6edb30109c8",
+      "result_id": "df701298-9251-4d7c-a71f-4863e9bc6153"
+    },
+    {
+      "claim_id": "8bed6437-3a3f-47b0-9c08-934e5fa882d6",
+      "result_id": "fd23a30f-525a-4fc7-8b85-3b6ba0fe3ecf"
+    },
+    {
+      "claim_id": "93842d1d-d4f1-4510-9ba6-9e1a57777e11",
+      "result_id": "fd23a30f-525a-4fc7-8b85-3b6ba0fe3ecf"
+    },
+    {
+      "claim_id": "4c2d54c2-1303-45f2-986e-29405f4fe22d",
+      "result_id": "fd23a30f-525a-4fc7-8b85-3b6ba0fe3ecf"
+    },
+    {
+      "claim_id": "3b1b7beb-a1d4-44c6-8fcd-e4e00b552b8e",
+      "result_id": "897cda4c-2a4b-4f8e-a5a1-2ae41debf867"
+    },
+    {
+      "claim_id": "7246a870-a778-433a-827f-4234ac1b1d9a",
+      "result_id": "897cda4c-2a4b-4f8e-a5a1-2ae41debf867"
+    },
+    {
+      "claim_id": "4e26a044-c6c1-49bc-b9fd-839eaa054860",
+      "result_id": "897cda4c-2a4b-4f8e-a5a1-2ae41debf867"
+    },
+    {
+      "claim_id": "ece826a4-c3c7-402b-81d8-482eec6b2a32",
+      "result_id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8"
+    },
+    {
+      "claim_id": "8d81383a-2f08-46e3-a8a3-c1afe7d9b671",
+      "result_id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8"
+    },
+    {
+      "claim_id": "b7bc25bb-ef31-4aa7-80c0-423d792c923c",
+      "result_id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8"
+    },
+    {
+      "claim_id": "165b8e29-1177-4896-a446-80c322041cca",
+      "result_id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8"
+    },
+    {
+      "claim_id": "fd328183-7db6-419a-a518-55162971b0cc",
+      "result_id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8"
+    },
+    {
+      "claim_id": "c0d4fb69-d012-4500-a72d-db4b7b69dd1f",
+      "result_id": "fdcb0e32-cd83-43c7-a80b-31a7413247f8"
+    },
+    {
+      "claim_id": "89fd245a-9d7f-4db5-8055-cca02ca36f87",
+      "result_id": "598ad1fe-b5c0-4655-be6b-1761a8351840"
+    },
+    {
+      "claim_id": "54ba2039-0f0d-4818-bc78-f0b73a4bc8c9",
+      "result_id": "598ad1fe-b5c0-4655-be6b-1761a8351840"
+    },
+    {
+      "claim_id": "3d99961d-059d-404f-a2bf-86754b9bcf3a",
+      "result_id": "2c90e225-a394-487f-b2b2-8dd1bef0a074"
+    },
+    {
+      "claim_id": "310dee10-3bd5-4e50-94a8-7171e118aae8",
+      "result_id": "2c90e225-a394-487f-b2b2-8dd1bef0a074"
+    },
+    {
+      "claim_id": "b43817f8-435f-415d-85ad-cb99ddd2ed54",
+      "result_id": "2c90e225-a394-487f-b2b2-8dd1bef0a074"
+    },
+    {
+      "claim_id": "e38d7ea3-b168-440c-916e-0ad907362cca",
+      "result_id": "2c90e225-a394-487f-b2b2-8dd1bef0a074"
+    },
+    {
+      "claim_id": "f00f49c4-f47f-48bb-81ce-fd0cc7e1da31",
+      "result_id": "2c90e225-a394-487f-b2b2-8dd1bef0a074"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mice were trained to perform an active tactile object localization task using a single C2 whisker, achieving 74% correct performance across 21 mice and 52 recording sessions. Behavioral characterization showed whisking bouts with mean duration 261 ms, amplitude 15.7\u00b0, frequency 15.4 Hz, with mice making an average of 2.33 touches before responding with mean reaction time 367\u00b1234 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide comprehensive quantitative behavioral data with appropriate sample sizes (n=21 mice, 52 sessions) and statistical measures (means, standard deviations). The behavioral task is well-characterized with multiple parameters measured at high temporal resolution (1 ms precision per C93), providing a solid foundation for subsequent neural recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Loose-seal cell-attached recordings were obtained from 52 excitatory neurons in barrel cortex: 31 in L4 C2, 10 in L4 outside C2, and 11 in L5 near C2, with 115\u00b160 trials per neuron. Recording locations were verified histologically using DiI tracks and cytochrome oxidase staining, with strict spatial criteria for classification (<160 \u03bcm from C2 center for L4 C2 neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C94-C100 describe rigorous recording methodology with appropriate anatomical verification. The use of loose-seal recordings (C59, C96) addresses known limitations of extracellular recordings (C60-C62), and histological verification (C94, C97-C98) ensures accurate localization. Sample sizes are adequate for population-level conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C26",
+      "C27",
+      "C39"
+    ],
+    "result": "L4 C2 neurons showed low baseline firing (0.73 spk/s) that increased 2.6-fold during the sample epoch (p=3.38e-7). Over 70% of spikes were temporally coupled to touch onset within millisecond-timescale windows (14.9% of exploration time), with each touch evoking ~1 spike (1.51 first touch, 0.31 later touches) at 8 ms latency. This coupling was significantly stronger in L4 C2 compared to L4 outside C2 (8.4\u00b113.3%, p=6.53e-6) or L5 (24.0\u00b118.6%, p=2.30e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16, C26-C27, C39 provide converging quantitative evidence for precise temporal coupling of L4 C2 spikes to touch. Statistical comparisons across regions are appropriate (Wilcoxon rank sum tests with significant p-values), and the temporal precision (millisecond scale) is well-documented. The large Fano factor (7.51, C12) when ignoring behavioral structure, contrasted with low variability when aligned to touch, supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "In L4 C2, 75.2\u00b119.0% of spikes were coupled to touch or whisking phase in 22.0% of exploration time, significantly more than outside C2 (33.0\u00b130.2%, p=2.88e-4) or L5 (31.5\u00b116.4%, p=2.96e-5). L4 neurons showed no significant firing rate changes between whisking and non-whisking (p=0.75 inside C2, p=0.92 outside C2), while L5 showed modest increases (p=0.019). Phase modulation was similar between L4 inside and outside C2 (p=0.68), but both were more modulated than L5 (p=4.3e-5, p=0.012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C120-C125 provide comprehensive statistical comparisons of spike coupling across cortical layers and regions. Multiple statistical tests with appropriate corrections support the layer-specific differences. The finding that only 4.6\u00b18.7% of L4 C2 spikes were purely phase-coupled (C124) versus 23.8\u00b127.9% outside C2 demonstrates spatial specificity of sensory encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C83",
+      "C84",
+      "C111",
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132"
+    ],
+    "result": "Population decoding analysis showed that pooling activity from only 15 L4 C2 neurons was sufficient to detect 95% of touches (10 ms integration), while 200 neurons could decode elapsed time from touch with 0.55 ms uncertainty at 10 ms post-touch. In contrast, 1000 neurons were required for rough whisking phase estimation (24\u00b0 resolution at d'=1), with poor performance attributed to low spike rates during whisking (<0.15 spikes/whisk cycle). Touch detection by neurons outside C2 was poor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C83-C84, C111, C126-C128, C131-C132 demonstrate efficient encoding of touch timing but poor encoding of whisking phase. The decoding analysis uses appropriate methods (na\u00efve Bayes classifier, C19, C109) with cross-validation (C108). However, the analysis assumes neural independence (C111-C112), which may affect quantitative estimates. The qualitative conclusion about differential encoding of touch versus phase is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C129"
+    ],
+    "result": "Touch response magnitude was highly modulated by touch order (modulation index 0.71\u00b10.25), pretouch velocity (0.71\u00b10.27), and maximum curvature (0.72\u00b10.23). Responsiveness to velocity and curvature covaried strongly (r=0.80, p=4.3e-8), while touch order was less correlated (r=0.70, 0.65). This deep modulation indicates that stimulus variability accounts for a significant component of touch response variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C129 demonstrate that L4 responses are sensitive to multiple touch parameters. The high modulation indices (~0.7) and strong correlations between velocity and curvature responses are well-quantified. This finding is critical for interpreting Fano factor measurements, as it shows that controlling for touch properties is necessary to isolate intrinsic variability. The inference in C129 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Fano factor analysis revealed that L4 C2 neurons have spike count variance close to the theoretical binomial limit. FF dropped below 1 after touch for most cells, reaching 0.73\u00b10.19 with 10 ms windows and 0.54\u00b10.27 when calculated across similar touches (clustered by OPTICS algorithm). This low variability could not be explained by refractory period alone and contrasts with FF=6.57\u00b15.41 when ignoring millisecond-scale behavioral structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C28, C113-C118, C133-C142 provide rigorous analysis of spike count variability. The progressive reduction in FF with better behavioral control (from 6.57 to 0.54) demonstrates that apparent variability largely reflects uncontrolled behavioral factors. The clustering approach (OPTICS, C116) to identify similar touches is appropriate, though the minimum of 20 touches per group (C114) may be limiting for some neurons. Comparison to Poisson with refractory period (C119, C138) strengthens the conclusion that variability is below what simple models predict.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C41",
+      "C74"
+    ],
+    "result": "The authors conclude that L4 responses encode touch with millisecond timescale precision and minimal noise, with spike trains reflecting the millisecond-timescale structure of tactile input. This implies that models of cortical networks should not explicitly aim to produce intrinsically noisy activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C41, C74 represent the main conclusions, which are well-supported by the convergent evidence from temporal coupling analysis (>70% spikes coupled to touch), decoding performance (15 neurons sufficient for 95% touch detection), and Fano factor measurements (approaching binomial limit). The theoretical implication (C74) is a reasonable inference from the data, though it is limited to L4 during active sensation and may not generalize to all cortical circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C53",
+      "C63"
+    ],
+    "result": "The manuscript establishes the anatomical and functional context for studying L4 barrel cortex: L4 contains a precise whisker map with highly recurrent connectivity, receives major input from thalamus (VPM) rather than other cortical areas, and is necessary for whisker-based sensation. This makes L4 spike trains more easily interpreted than other cortical regions because extrinsic input arises mainly from the sensory periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36, C53, C63 accurately cite established knowledge about barrel cortex organization and function. The inference that L4 receives \"little uncontrolled input\" (C53) is reasonable given the anatomical constraints, though it may oversimplify the contribution of neuromodulatory systems and local circuit dynamics. This contextual information appropriately motivates the choice of L4 for studying spike train precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The manuscript reviews two competing views on cortical spike train variability: (1) variability is irreducible noise arising from chaotic dynamics, suggesting rate-based coding, and (2) variability reflects uncontrolled behavioral and experimental factors, with spike timing potentially being deterministic. Previous work has shown that controlling behavior (e.g., fixational eye movements) can reduce variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C42-C52, C70-C73 accurately summarize the theoretical context and prior experimental findings. The citations are appropriate and the two perspectives are fairly presented. This framing effectively motivates the experimental approach of precisely controlling and measuring sensory input during active behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors argue that measuring spiking statistics is most meaningful during active sensation when animals control sensory input, and that high temporal resolution tracking of behavior is necessary to uncover influences on individual spikes. L4 spikes appear irregular when aligned to coarse timescales (CV>>1) but become interpretable when aligned to fine-scale sensory structure. Mice likely tune movements to achieve high signal-to-noise encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C58, C64-C66 present a coherent rationale for the experimental design. The observation that spikes appear irregular at coarse timescales but structured at fine timescales (C65-C66) is well-demonstrated in the data. However, the speculation that mice \"tune movements to achieve high SNR\" (C58) is plausible but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors discuss why their findings of low noise differ from primate studies showing high variability. They propose four factors: (1) active sensation allowing behavioral control of input, (2) loose-seal recordings avoiding sampling bias, (3) L4 receiving primarily peripheral input, and (4) high temporal resolution tracking. They also discuss differences from anesthetized preparations, where slow rhythms increase variability, and propose mechanisms (feedforward inhibition, attention) that might reduce variability during active behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C62, C75-C81 provide thoughtful discussion of methodological and biological factors that could explain differences from prior work. However, many of these are speculative (C78-C81 explicitly use \"might\" or \"may\"). The comparison to anesthetized preparations (C75-C77) is reasonable but the specific mechanisms proposed (C79-C80) are not tested. The discussion appropriately acknowledges uncertainty while providing plausible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Only a small fraction of L5 spikes can be interpreted in terms of somatosensory behavior, likely because L5 neurons receive multiple input types with unobserved dynamics. The authors speculate that L5 and other neuron types may reveal deterministic structure once their inputs can be simultaneously monitored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 appropriately interpret the L5 data (C16, C121) showing less touch coupling than L4. The explanation citing multiple unobserved inputs (C68) is reasonable given known L5 connectivity. The speculation about future possibilities (C69) is appropriately cautious and acknowledges current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors note that neural coding of touch timing and whisking phase are key components of object localization models, but their finding of poor whisking phase encoding is consistent with prior work showing mice don't use L4 activity timing relative to whisking phase for object localization. How the brain uses the precise, low-variance touch coding remains to be discovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C85-C86 appropriately connect the findings to theoretical models and prior behavioral work. The consistency with previous findings (C85, citing O'Connor et al., 2013) strengthens the interpretation. The acknowledgment that downstream use of L4 signals remains unknown (C86) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "High-speed videography at 1000 fps with 90-200 \u03bcs exposure captured whisker movements, which were automatically tracked using the Janelia Whisker Tracker. Touch times were determined by pole proximity and whisker curvature using custom algorithms and manually curated to ensure 1 ms accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe appropriate methods for high-temporal-resolution behavioral tracking. The 1000 fps frame rate provides 1 ms temporal resolution, and manual curation (C93) ensures accuracy. The use of established tracking software (C92) with custom analysis routines is appropriate. This methodology is critical for the main conclusions about millisecond-scale precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The manuscript defines specific analysis methods: peak touch rate as highest mean spikes/ms bin, spike onset latency as time when PCTH exceeds baseline by 2 SD, active exploration as whisking epochs including touches, and decoding procedures using cross-validation and na\u00efve Bayes classifiers with specific assumptions about phase distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C105, C108-C110 provide clear operational definitions for key analyses. The methods are standard and appropriate. The 2 SD threshold for onset latency (C102) is reasonable, and cross-validation (C108) is proper practice. The assumption of uniform phase distribution (C110) is stated explicitly, allowing readers to evaluate its appropriateness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "All procedures were approved by the Janelia Farm Research Campus IACUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a straightforward statement of ethical compliance that is standard for animal research publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Based on whisker behavior observations, it is possible to predict brief time windows when neurons fire single or small numbers of spikes, as well as periods when spike probability is zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by the temporal coupling analysis (C14, C17, C26) showing >70% of spikes occur in narrow windows after touch, and by the example neuron data (Figure 1G,H) showing phase-locked firing. This demonstrates predictability of spiking from behavior.",
+    "result_type": "MAJOR"
+  }
+]

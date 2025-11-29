@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C32",
+      "C33",
+      "C37",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "VirSorter was applied to 14,977 publicly available bacterial and archaeal genomes, initially identifying 89,301 viral sequences. After manual curation with a 6.7% false-positive rate, 12,498 high-confidence viral sequences were retained, representing a ~10-fold increase over RefSeqVirus database and found in approximately 30% of analyzed genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide a clear methodological pipeline from initial prediction through manual curation to final dataset. The numbers are internally consistent (89,301 initial \u2192 12,498 after removing 938 PhiX174 and 892 false positives), and the methodology is described with appropriate detail including the VirSorter tool's detection criteria (C32, C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34"
+    ],
+    "result": "The study identified first viral sequences for 13 new bacterial phyla, including recently described phyla such as Caldiserica, Marinimicrobia, Omnitrophica, and other understudied groups like Poribacteria, Nitrospinae, Cloacimonetes, and Chloroflexi-type SAR202.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C34 are consistent and provide both the quantitative result (13 new phyla) and specific examples. The claim is supported by Figure 1 which visualizes the host range expansion. This represents a significant expansion of known virus-host associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19"
+    ],
+    "result": "The VirSorter curated dataset improved taxonomic identification of 'unknown' sequence space in viromes by 7-38%, with specific improvements of 32% and 40% in Pacific Ocean and Tara Oceans viromes respectively, and more than doubling affiliated genes in human gut viromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide consistent quantitative improvements across different virome datasets with appropriate citations. Figure 3B supports these findings visually. The range of 7-38% in C5 encompasses the specific values reported in C18 and C19, demonstrating internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C21",
+      "C48"
+    ],
+    "result": "Network-based clustering identified 614 viral clusters (VCs), with 264 representing new putative viral genera (doubling known genera). VCs were approximately equivalent to RefSeq-curated viral genera, with 27 of 43 RefSeq genera having all sequences in the same VC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering methodology is well-described with validation against existing taxonomy (C21). The claim that VCs approximate genus-level classification is supported by consistency with ICTV taxonomy. The identification of 264 new genera is based on VCs lacking RefSeqABVir sequences and containing large genome fragments, which is a reasonable criterion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "BLAST-based family-level affiliations showed that 90.45% of the 12,498 sequences correspond to Caudovirales and 6.82% to ssDNA viruses (predominantly Inoviridae family).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The percentages are clearly stated and supported by Figure 1\u2014figure supplement 1. The values sum appropriately with the 2.73% unassigned sequences mentioned in the source text. This represents a straightforward taxonomic characterization of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Of the 12,498 sequences, 5,232 were integrated prophages and 1,756 were extrachromosomal sequences. In silico simulations showed only 2.3% of large prophage contigs would lack microbial genes, suggesting most extrachromosomal sequences represent under-studied infection modes. At least 13% of extrachromosomal sequences appear to be bona fide extrachromosomal prophages based on ParA/ParB genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation approach (C16) provides validation for interpreting extrachromosomal sequences. The statistical test for ParA/ParB enrichment (p < 10^-5) supports the 13% estimate. Background claims (C38-C42) provide appropriate context from literature. The interpretation that remaining sequences might be lytic viruses in carrier states or chronic infections is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Bacterial and archaeal viruses clustered separately in >99% of viral clusters, and >95% of clusters contained exclusively one nucleic acid type (DNA or RNA, dsDNA or ssDNA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are clearly stated with specific percentages. The exception to domain separation (VC_89) is explained and attributed to poor archaeal virus representation. The caveat about low RNA virus representation is appropriately noted. These findings support the interpretation of limited cross-domain and cross-nucleic acid type recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C68"
+    ],
+    "result": "Nearly half (2,445 of 5,492) of microbial genomes with viral signal contained multiple viruses. Approximately 82% of co-infections involved multiple Caudovirales, while 9% occurred between ssDNA Inoviridae and dsDNA Caudovirales, suggesting co-infection by multiple viruses is common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data on co-infection prevalence is clearly presented with appropriate caveats about potential mis-assembly. The methodology to avoid over-estimation (requiring multiple terminase genes) is sound. Figure 4 supports these findings. The interpretation that co-infection is common is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The virus-host interaction network displays significant modular topology (Q = 0.45) compared to randomly permuted matrices (Q = 0.02-0.17, average 0.08), spanning 18 phyla across bacterial and archaeal domains. This confirms predictions that host-phage interaction matrices should be modular at macroevolutionary scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modularity analysis includes appropriate statistical validation through comparison with randomized matrices. The Q value of 0.45 is substantially higher than random expectations. The interpretation connects to prior predictions (C57, C59) with appropriate citations. The phylogenetic breadth of the dataset (C58) supports the macroevolutionary scale interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "All genome composition metrics tested showed smaller distances between viruses and their hosts than non-hosts, with tetranucleotide frequency (TNF) maximizing host to non-host distances. Host prediction based on TNF was 99% accurate at family and genus level for distances <4\u00d710^-4. Patterns were robust across integrated prophages and extrachromosomal genomes for dsDNA viruses, regardless of tRNA gene number. ssDNA viruses showed weaker signals, particularly Inoviridae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome composition analysis is comprehensive, testing multiple metrics with clear quantitative results. The TNF-based host prediction accuracy is validated across different scenarios (C31, C55) with appropriate degradation when excluding host species/genus. The unexpected finding about tRNA genes (C50) is appropriately noted. The mechanistic explanation for Inoviridae patterns (C54) is reasonable speculation based on their biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Seven short circular sequences from Bacteroides draft genomes lacked any hit to viral reference genomes and could potentially represent the first complete genomes for an entirely new viral order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the sequences are described and their unusual nature noted (no viral reference hits but virome recruitment), the claim about representing a new viral order is explicitly speculative (\"If confirmed...\"). The ambiguity between plasmid and viral origin is acknowledged but not resolved. Additional validation would be needed to support this as a definitive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The consistency of viral clusters with ICTV taxonomy suggests most phage genomes harbor a largely vertically inherited core gene set rather than rampant mosaicism. Horizontal gene transfer may be more prevalent in phages with longer host cell occupation times or in densely packed host environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the clustering consistency with taxonomy (from C21) supports some vertical inheritance, the claims about evolutionary patterns (C69, C70) are explicitly presented as hypotheses (\"we posit\"). The interpretation contrasts with the Siphoviridae mosaicism paradigm but acknowledges this is derived from a specific viral group. The speculation about factors influencing HGT (C70) lacks direct empirical support in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior to this study, viral genomic data was limited with only 1,531 bacterial and archaeal viruses entirely sequenced (86% from only 3 of 61 host phyla), compared to >25,000 host genomes in RefSeq. Viromes are dominated by 60-95% uncharacterized 'viral dark matter', and early estimates suggested 62% of bacterial genomes contained prophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the context and motivation for the study with appropriate citations. The numbers are from cited sources and represent the state of knowledge at the study's inception. This background appropriately frames the significance of the current work's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The VirSorter curated dataset is made available through MetaVir and iVirus websites, with a Data Dryad package at http://dx.doi.org/10.5061/dryad.b8226 containing all annotated genbank files.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Data availability is clearly stated with specific repositories and DOI. This represents appropriate data sharing practices for reproducibility and follow-up studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background context establishes that viruses modulate microbial networks and evolution with ecosystem-level impacts, interconnected microbial communities drive biogeochemical transformations, cultivation-independent methods have expanded understanding of microbial diversity, and numerous prophage detection tools exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide appropriate background context with citations to establish the scientific framework and motivation for the study. They represent well-established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Single amplified genomes (SAGs) are valuable for accessing uncultivated environmental microbes and can reveal viral sequences directly linked to uncultivated hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the value of SAG datasets with appropriate citations. This contextualizes the inclusion of SAG data in the study and represents established knowledge about SAG capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The VirSorter dataset includes not only integrated prophages but also viruses with under-studied infection modes. Mining publicly available microbial genomic data proved useful for exploring host-linked viral diversity, though currently limited by cultivation bias that will be progressively eliminated as SAGs map microbial dark matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims appropriately summarize the study's contributions and limitations. The inference about under-studied infection modes (C67) is supported by the extrachromosomal sequence data and virome affiliation improvements. The acknowledgment of cultivation bias (C73) is appropriate, with reasonable expectation for future improvement.",
+    "result_type": "MAJOR"
+  }
+]

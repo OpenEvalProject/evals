@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "QIL1 (C19orf70) is a novel, conserved mitochondrial protein that physically interacts with multiple MICOS subunits and associated proteins. Through systematic IP-MS proteomic analysis, QIL1 was identified in association with core MICOS subunits (MIC19, MIC60, MIC25, MIC26, MIC27), outer membrane proteins (SAMM50, MTX1, MTX2), and the chaperone DNAJC11. These interactions were validated through reciprocal co-immunoprecipitation experiments and QIL1 was confirmed to localize to mitochondria with orthologs identified across metazoans including Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C43, C51-C61 are strongly supported by comprehensive IP-MS data (Figure 1B-C), reciprocal co-immunoprecipitation experiments (Figure 1E-G), mitochondrial localization studies (Figure 1D, I), and bioinformatics analysis (Figure 1H). The interaction network containing 26 proteins and 97 interactions (C149-C151) demonstrates methodological rigor with appropriate controls (GFP-FLAG negative control, C159) and validation across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "QIL1 is an inner membrane protein with a single conserved transmembrane helix. Carbonate extraction experiments showed QIL1 was partially extracted at higher pH, similar to MIC19. Proteinase K digestion and osmotic shock experiments demonstrated that QIL1 topology resembles inner membrane proteins TIMM23 and MIC60, being protected from protease in intact mitochondria but accessible after outer membrane disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by multiple complementary biochemical approaches including TMpred algorithm prediction (C62), alkaline extraction at varying pH (C63, Figure 1I-J), digitonin permeabilization with proteinase K (C64-C65, Figure 1K), and osmotic shock experiments (C66, Figure 1L). The convergence of these independent methods provides strong evidence for QIL1's inner membrane localization and topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C44"
+    ],
+    "result": "QIL1 is enriched at cristae junctions and is a component of the ~700 kDa MICOS complex. Immunogold electron microscopy showed QIL1-HA was predominantly located within 50 nm of cristae junctions, similar to MIC25 but distinct from the cristae-distributed NDUFA13. Blue native PAGE analysis demonstrated QIL1 co-migrates with MICOS subunits at ~700 kDa, and co-immunoprecipitation experiments confirmed QIL1 associates with the mature MICOS complex in a digitonin-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 and C44 are well-supported by quantitative immunogold EM analysis (Figure 2A-C), one- and two-dimensional BN-PAGE (Figure 2D-E), and detergent-dependent co-immunoprecipitation experiments (Figure 2F-G). The digitonin vs. Triton X-100 comparison (C75-C77) provides strong evidence for QIL1's association with the intact MICOS complex rather than transient interactions with dissociated subunits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C48",
+      "C49",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C5",
+      "C50",
+      "C83"
+    ],
+    "result": "QIL1 depletion in human cells causes severe mitochondrial cristae morphology defects and impaired respiration. RNAi-mediated QIL1 knockdown in HeLa and HCT116 cells resulted in loss of cristae junctions and formation of concentric membrane stacks ('onion-like' structures) similar to MIC60 depletion phenotypes. These structural defects correlated with substantially reduced oxygen consumption rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C48-C50, C78-C83 are strongly supported by transmission electron microscopy showing dramatic cristae reorganization in multiple cell lines (Figure 3A-H), quantification demonstrating significant increases in mitochondria containing swirls (Figure 3L), and Seahorse oxygen consumption measurements showing reduced respiration (Figure 3M). The phenotypic similarity to MIC60 depletion (C78-C79) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "QIL1 depletion in Drosophila causes cristae junction defects and mitochondrial fragmentation in vivo in a cell-autonomous manner. Tissue-specific RNAi knockdown of QIL1 in Drosophila muscle and neurons resulted in loss of cristae junctions, formation of concentric inner membrane stacks, and increased mitochondrial fragmentation and sphericity, demonstrating conservation of QIL1 function across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C84-C91 are well-supported by in vivo Drosophila experiments using tissue-specific Gal4 drivers (Dmef2-Dcr-Gal4 for muscle, Elav-Dcr-Gal4 for neurons). Electron microscopy showed ~10-fold increase in mitochondria with inner membrane swirls in muscle (C86, Figure 4D) and significant increases in neurons (C90, Figure 4N). Confocal microscopy quantification demonstrated increased fragmentation and sphericity (C87-C88, Figure 4E-J). The cell-autonomous nature (C91) is supported by tissue-specific knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C45",
+      "C46",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "QIL1 depletion causes MICOS disassembly with accumulation of a MIC60-MIC19-MIC25 sub-complex and post-transcriptional degradation of MIC10, MIC26, and MIC27. SILAC-based quantitative proteomics coupled with BN-PAGE showed reduced MICOS subunits at ~700 kDa and accumulation of MIC60, MIC19, and MIC25 at ~500 kDa upon QIL1 knockdown. Western blot analysis confirmed significant reduction in MIC10, MIC26, and MIC27 protein levels without corresponding mRNA changes. Co-immunoprecipitation experiments demonstrated that MIC60 retains binding to MIC19, MIC25, and SAMM50 but loses association with MIC10, MIC26, and MIC27 in QIL1-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C45-C46, C92-C103 are comprehensively supported by multiple complementary approaches: SILAC quantitative proteomics with BN-PAGE fractionation (Figure 5A-B), BN-PAGE immunoblotting (Figure 5C), SDS-PAGE protein level analysis (Figure 5D-E), qPCR demonstrating post-transcriptional regulation (C98, Figure 5F), and endogenous co-immunoprecipitation experiments (Figure 5G-H). The convergence of these independent methods provides strong mechanistic insight into QIL1's role in MICOS assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Ectopic QIL1 expression rescues cristae morphology defects, MICOS disassembly, and protein level changes caused by QIL1 knockdown. Expression of QIL1 in cells with shRNA targeting the 3' UTR restored normal cristae morphology, MICOS complex assembly at ~700 kDa, and MIC10/MIC27 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by rescue experiments using 3' UTR-targeted shRNA with ectopic QIL1 expression (Figure 6A-G). Electron microscopy quantification showed reduction in mitochondria with swirls from 48% to 5.8% (Figure 6E), BN-PAGE demonstrated restoration of the ~700 kDa complex (Figure 6F), and western blots confirmed rescue of MIC10 and MIC27 levels (Figure 6G). This genetic complementation provides strong evidence for specificity of the QIL1 knockdown phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C135",
+      "C136",
+      "C137",
+      "C47"
+    ],
+    "result": "QIL1 is required for incorporation of MIC10 into the MICOS complex. Overexpression of MIC10 in QIL1-depleted cells failed to restore its assembly into the ~700 kDa MICOS complex or its interactions with MIC60, MIC19, and SAMM50, despite proper mitochondrial import and similar expression levels. This demonstrates QIL1 is specifically required for MIC10 integration into MICOS rather than simply maintaining MIC10 protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C108-C111, C135-C137, C47 are strongly supported by MIC10 overexpression experiments in QIL1-depleted cells (Figure 7A-E). BN-PAGE showed reduced MIC10 incorporation into the ~700 kDa complex despite similar expression levels (C108-C109, Figure 7A-B), proper mitochondrial import (C110, Figure 7B-C), and co-immunoprecipitation demonstrated reduced binding to MIC60, MIC19, and SAMM50 (C111, Figure 7D-E). The failure of MIC10 overexpression to rescue complex assembly (C135-C136) provides strong evidence that QIL1 acts as a scaffold for MIC10 incorporation (C137, C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "QIL1 depletion does not affect cardiolipin content or species distribution. LC-MS/MS analysis of cardiolipin in mitochondria from cells expressing three different QIL1 shRNAs showed no apparent differences in cardiolipin levels or acyl chain composition compared to control cells, excluding an indirect mechanism through cardiolipin regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by comprehensive lipidomics analysis using three independent QIL1 shRNAs (Figure 7\u2014figure supplement 1). The lack of cardiolipin changes (C114-C115) excludes an indirect mechanism (C116) and supports a direct structural role for QIL1 in MICOS assembly (C117). This is consistent with prior work showing MIC60 or MIC10 depletion also doesn't affect cardiolipin composition (C131).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "MIC10 overexpression promotes MICOS assembly in the presence of QIL1. In control cells with intact QIL1, MIC10 overexpression increased incorporation of MIC60 and MIC19 into the mature ~700 kDa MICOS complex and decreased the ~500 kDa sub-complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by BN-PAGE analysis showing increased MIC60 and MIC19 at ~700 kDa and decreased signal at ~500 kDa upon MIC10 overexpression in control cells (Figure 7A). This suggests MIC10 can drive MICOS assembly when QIL1 is present, consistent with the proposed model where QIL1 facilitates MIC10 incorporation into the MIC60-MIC19-MIC25 sub-complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C138"
+    ],
+    "result": "QIL1 is proposed to be a central component of cristae junctions that facilitates MICOS assembly by bridging the MIC60-MIC19-MIC25 sub-complex with MIC10, MIC26, and MIC27. The authors propose a stratified model where QIL1 associates with core inner membrane MICOS subunits, cardiolipin-binding subunits (MIC26/MIC27), and the SAMM50-MTX1-MTX2 outer membrane complex, acting as a scaffold to promote mature MICOS complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121, C138 represent the authors' mechanistic model synthesizing the experimental findings. The model is well-supported by the collective data: QIL1's physical interactions with multiple MICOS components (C118-C120), enrichment at cristae junctions (C121), requirement for MIC10 incorporation (C137), and the accumulation of a stable MIC60-MIC19-MIC25 sub-complex upon QIL1 depletion (C102). The stratified assembly model (C138) is a reasonable interpretation of the data, though direct evidence for the order of assembly steps is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C103",
+      "C104",
+      "C133"
+    ],
+    "result": "MIC60 forms a stable sub-complex with MIC19 and MIC25 that can interact with SAMM50 independently of MIC10, MIC26, and MIC27. This sub-complex is observed in both control cells and QIL1-depleted cells, suggesting it may perform functions at the outer membrane independent of the full MICOS complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C103-C104 are supported by BN-PAGE showing the ~500 kDa sub-complex in both control and QIL1-depleted cells (Figure 2D-E, 5C) and co-immunoprecipitation demonstrating MIC60 retains SAMM50 binding in QIL1-depleted cells (Figure 5G-H). The inference that this sub-complex may have independent functions (C133, C104) is reasonable but speculative, supported by prior work showing MIC60 functions in \u03b2-barrel protein biogenesis independently of MIC10 (C134).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "TMEM11 is a novel MICOS interactor identified through the proteomic analysis. TMEM11 was detected in association with multiple MICOS subunits (MIC19, MIC27, MIC60, MTX2) and endogenous MIC60-TMEM11 interaction was confirmed by co-immunoprecipitation. TMEM11 contains 2 transmembrane domains and its Drosophila ortholog has been shown to regulate cristae morphology, suggesting it may function in cristae organization in association with MICOS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148, C155-C158 are supported by IP-MS data (Figure 1B-C), endogenous co-immunoprecipitation (Figure 1F), and prior genetic studies in Drosophila (C147, C157). The inference that TMEM11 contributes to MICOS function (C148, C158) is reasonable based on the physical interactions and prior functional data, though direct functional validation in the current study is limited. This represents a promising lead for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The IP-MS analysis identified potential novel MICOS-interacting proteins including MUL1 E3 ubiquitin ligase and RHOT2 GTPase. RHOT2 has been previously shown to co-fractionate with SAMM50 in correlation profiling experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are supported by the IP-MS data (Figure 1B) and prior correlation profiling work (C154). However, these interactions were not validated by orthogonal methods in the current study, so they remain candidate interactors requiring further investigation. The identification is methodologically sound but represents preliminary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background on mitochondrial architecture and MICOS complex. The introduction establishes that mitochondrial inner membrane architecture is maintained by cristae junctions and contact sites, which are essential for mitochondrial function. MICOS is a conserved ~700 kDa complex that controls cristae junction formation, and its disruption causes phenotypes resembling those seen in mitochondrial disorders. Prior work identified MICOS subunits and associated proteins including SAMM50, MTX1, MTX2, and DNAJC11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C42 represent background information from the introduction, all supported by appropriate citations to prior literature. These claims establish the scientific context for the current work and are not novel findings of this study. The citations appear appropriate and the background accurately represents the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion of cristae remodeling mechanisms and cardiolipin biology. The authors discuss how loss of MIC10, MIC26, and MIC27 causes similar phenotypes to QIL1 depletion, the role of cardiolipins in cristae junction stability, connections to Barth syndrome, and evidence that cristae remodeling is an adaptive mechanism to different metabolic states. Prior work showed cardiolipin composition is not substantially changed by loss of central MICOS subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C142 represent discussion points synthesizing the current findings with prior literature, all appropriately cited. These claims provide important context for interpreting the QIL1 results but are not novel findings of this study. The discussion appropriately distinguishes between the authors' data and prior work, and the inferences drawn (e.g., C123, C142) are reasonable though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Methodological controls and technical notes. GFP-FLAG negative control showed no MICOS components, demonstrating specificity. MIC10 was not detected by IP-MS, likely due to its small size and hydrophobic peptides. MIC19 is myristoylated at the N-terminus for SAMM50 docking and has a CHCH domain at the C-terminus for MIC60 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 represent methodological details and technical explanations. The GFP-FLAG negative control (C159) is appropriate and supports specificity of the interactions. The explanation for MIC10's absence from IP-MS data (C160) is reasonable given its properties. The MIC19 structural information (C161-C162) is cited to prior work and provides relevant context.",
+    "result_type": "MINOR"
+  }
+]

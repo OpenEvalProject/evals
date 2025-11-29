@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "MorphoGraphX is an open-source software platform that can process curved surface images extracted from 3D data and includes algorithms for cell segmentation, lineage tracking, and fluorescence signal quantification on curved surfaces. Cell geometries extracted with MorphoGraphX can be exported for use as templates in simulation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 describe the core capabilities of MorphoGraphX as stated in the abstract and introduction. The software's ability to work with curved surfaces, perform segmentation, track lineages, quantify fluorescence, and export geometries is demonstrated throughout the manuscript with multiple examples and figures (Figures 2-6). These capabilities are explicitly stated and demonstrated with data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MorphoGraphX can render and process multiple types of 3D imaging data including confocal microscopy, MRI, and block-face SEM, as well as surfaces from various sources. The software uses an optimized rendering engine and represents surfaces as oriented triangular meshes that can be exported in multiple formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by explicit statements in the text and demonstrated in Figure 1 and Video 1, which show examples of different data types being processed. The technical implementation details are provided in the Materials and methods section, and the capability to export in various formats is stated with citations to published work using these features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MorphoGraphX creates curved surface images by projecting 3D data onto extracted organ shapes, enabling precise cell outline extraction without distortions from flat projections. The software adapts many 2D and 3D image processing algorithms to work on curved surfaces, following a typical workflow of preprocessing, masking, surface extraction, projection, and segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe the core curved surface methodology of MorphoGraphX. This is demonstrated in Figure 2 and Videos 2-3, with Figure 2\u2014figure supplement 1 explicitly showing the advantage over flat projection. The workflow is clearly described and illustrated, and the adaptation of existing algorithms to curved surfaces is stated as a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MorphoGraphX enables quantification of fluorescence signals at cellular and sub-cellular scales on curved surfaces. The software has adapted many standard image processing tools and complex algorithms (including watershed segmentation and microtubule orientation analysis) to work on curved surfaces, and can quantify signals from different tissue depths and distinguish membrane-localized from internal signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 are supported by explicit statements and demonstrated in Figure 3 and supplementary figures. The adaptation of the FibrilTool algorithm is cited (Boudaoud et al., 2014) and shown in Figure 3\u2014figure supplement 3. The PIN1 expression analysis at different depths (C39) is demonstrated with citations and shown in Figure 3C-D. Sub-cellular quantification (C40) is demonstrated in Figure 3E with a citation to Pound et al., 2012.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MorphoGraphX can process time-lapse data through a user-friendly interface for manual lineage tracking with automatic error detection. The software can compute and visualize changes in cell area, gene expression, and cell proliferation between time points, and can combine pairwise correspondences into longer time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe the time-lapse analysis capabilities demonstrated in Figure 4 and Video 4. The manual lineage tracking interface is shown in Video 4, automatic error detection is stated explicitly, and the visualization of various temporal changes is demonstrated in Figure 4 and Figure 4\u2014figure supplement 3. Citations to published work using these features (Vlad et al., 2014) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MorphoGraphX computes Principal Directions of Growth (PDGs) using cell junctions as landmarks, accounting for cell division through lineage information to identify conserved junctions. The software also calculates growth anisotropy and other directional quantities such as local tissue curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by explicit statements with citations to established methods (Dumais and Kwiatkowska, 2002; Kwiatkowska and Dumais, 2003) and demonstrated in Figure 4 and supplementary figures. The methodology is described in detail in the Materials and methods section, and the results are shown in multiple figures throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Analysis of tomato shoot apex growth dynamics using MorphoGraphX revealed patterns similar to other species, including elevated curvature as the first indicator of primordium initiation, differential growth in the peripheral zone with fast anisotropic expansion near older primordia, and accelerating peripheral zone growth that pushes away newly formed organs. DR5 expression was found to not strictly correlate with growth, being absent in fast-expanding regions but present in the boundary crease where cells showed slight surface area decrease and compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 present biological findings from the tomato shoot apex analysis demonstrated in Figure 4 and Figure 4\u2014figure supplements. The observations are supported by comparisons to published work in other species (multiple citations provided), and the data showing growth patterns, curvature, and DR5 expression are visualized in the figures. The findings about DR5 expression not correlating with growth and being present in the boundary are explicitly stated and shown in Figure 4D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MorphoGraphX performs 3D cell segmentation using the ITK watershed algorithm and provides user-friendly 3D voxel editing tools for error correction. Geometrical properties and fluorescent signals of 3D cells can be quantified and exported, and 3D segmented cells can be exported for use in simulation models requiring realistic geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe the 3D segmentation capabilities demonstrated in Figures 5 and 6. The use of ITK is cited (Yoo et al., 2002), the editing tools are stated as developed features, and the quantification and export capabilities are demonstrated with citations to published work using these features (Bassel et al., 2014). Figure 5D shows an example of exported geometry used in a simulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Validation experiments demonstrate that MorphoGraphX segmentation is robust to viewing angle (less than 2% error with 30\u00b0 difference), that surface segmentation approximates volumetric expansion well when tissue thickness is preserved, and that automatic segmentation achieves approximately 2-3% error rates compared to manual segmentation in high-quality samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 present validation results demonstrated in Figure 6. The viewing angle experiment (C71-C72) is shown in Figure 6A-B with citation to Kierzkowski et al., 2012. The comparison of surface vs. volumetric segmentation (C73-C74) is shown in Figure 6C-D. The auto-segmentation error rates (C75, C77) are explicitly stated with specific numbers and demonstrated in Figure 6E-F. These validation experiments provide quantitative support for the method's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The key strength of MorphoGraphX is accurate extraction and processing of curved surface meshes from 3D data, with wide application across biological systems. The method is especially powerful for time-lapse confocal imaging where laser exposure must be minimized. The software also provides intuitive interfaces for 3D data visualization and editing, and includes standard 3D image processing tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 summarize the software's strengths as stated in the Discussion section. The curved surface capability is demonstrated throughout the manuscript with multiple examples in both plant and animal systems (extensive citations provided in C79). The advantage for time-lapse imaging (C80) is stated as a logical consequence of the method. The 3D visualization and editing capabilities (C81) are demonstrated with citation to Aegerter-Wilmsen et al., 2012, and the inclusion of standard tools (C82) is stated with citations to other software for comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MorphoGraphX has a modular design implemented as a collection of shared libraries that can be added or removed without recompiling, allowing integration of existing libraries and creation of custom processing pipelines. The software exploits GPU parallel processing for common 3D operations, making them run in seconds on consumer graphics cards. The flexibility enables development of modules to import data from other imaging platforms, with bridges created for MARS-ALT and stereo SEM reconstruction software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 describe the software architecture and design features explicitly stated in the Discussion and Materials and methods sections. The modular design, GPU acceleration, and flexibility are stated as design features. The bridges to other software (C88) are stated with citations to the specific software (Fernandez et al., 2010; Routier-Kierzkowska and Kwiatkowska, 2008). These are software engineering features that are described but not experimentally validated in the traditional sense.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "MorphoGraphX has been used in published work to quantify cell size, growth and proliferation, mechanical properties, protein localization, and 3D cell geometry. Cellular geometry can be exchanged with modeling tools such as Organism and VVe, and meshes can be used directly or simplified for simulation templates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 cite multiple published studies that have used MorphoGraphX for various applications. Each claim is supported by specific citations to published work (Aegerter-Wilmsen et al., 2012; Kierzkowski et al., 2012; Vlad et al., 2014; Nakayama et al., 2012; Kierzkowski et al., 2013; De Rybel et al., 2013; Bassel et al., 2014; Yoshida et al., 2014; Sampathkumar et al., 2014; Santuari et al., 2011; Wabnik et al., 2013). These demonstrate the software's utility and adoption by the research community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "MorphoGraphX was developed by researchers in collaboration with experimentalists to be easily adaptable to new research requirements. The software enables streamlined data exchange with modeling tools and represents a significant step towards an interdisciplinary computational morphodynamics platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe the development philosophy and significance of MorphoGraphX as stated in the Discussion. The collaborative development approach (C96-C97) is stated explicitly. The data exchange capability (C98) is demonstrated throughout the manuscript with multiple examples. The claim about significance (C99) is a concluding statement supported by the comprehensive demonstration of capabilities throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MorphoGraphX is written in C++ and developed on GNU/Linux, using CUDA via Thrust for GPU processing, OpenMP for multi-threading, Qt4 for the user interface, and OpenGL for 3D rendering. The software can be extended with C++ modules or Python scripts, uses modified depth peeling and volume ray casting for rendering, and supports multiple file formats for import/export including TIFF, VTK, PLY, OBJ, and STL. Surface extraction uses a variant of the marching cubes algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C114 provide technical implementation details stated in the Materials and methods section. These are straightforward descriptions of the software architecture, libraries used, and file format support. The rendering techniques are cited (Everitt, 2001; Levoy, 1990; Bloomenthal, 1988), and the various libraries and tools are referenced with URLs or citations (Schindelin et al., 2012; Tschumperl\u00e9, 2012; Wills, 2012; Federl and Prusinkiewicz, 1999). These are technical specifications rather than experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The manuscript describes detailed imaging protocols for various samples including A. thaliana flowers, tomato shoot apices, C. rubella trichomes, A. thaliana embryos, C. hirsuta fruits, and Arabidopsis leaf surfaces using confocal microscopy and stereo SEM. Specific parameters are provided including microscope types, objectives, laser wavelengths, emission ranges, z-step sizes, and time intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C127 describe the methods used to acquire the raw data shown in the figures. These are standard methodological descriptions with appropriate citations to previous work (Kierzkowski et al., 2012; Vlad et al., 2014; Bayer et al., 2009; Bassel et al., 2014; Ueda et al., 1999; Williams and Green, 1988; Elsner et al., 2012; Routier-Kierzkowska and Kwiatkowska, 2008). The specific parameters are stated explicitly and are necessary for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "MorphoGraphX allows interactive definition of Bezier surfaces to visualize curved slices through objects and extract features. These Bezier surfaces can be converted to triangular meshes and segmented into cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe the Bezier surface functionality demonstrated in Figure 2H, which shows an extreme example of fitting a highly bent surface to cortical cells of an Arabidopsis embryo. The capability to convert to triangular mesh and segment is stated explicitly and follows the same workflow as other surface types. This is a specialized feature for handling complex geometries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript provides background on morphogenesis, computational morphodynamics, imaging technologies, and limitations of existing methods. It establishes that morphogenesis involves complex multiscale interactions, computer simulations are widely used, confocal microscopy is frequently used for data collection, and there is a lack of methods to process 3D data on curved surfaces. Existing flat projection methods have limitations due to distortions, and methods based on tissue casts are labor intensive and limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide background knowledge and motivation for developing MorphoGraphX. These claims are supported by extensive citations to published literature and represent the state of the field as understood by the authors. The limitations of existing methods (C15-C20) are stated with citations and provide the rationale for developing the curved surface approach. This is standard background material that contextualizes the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C65",
+      "C66"
+    ],
+    "result": "Background information is provided about shoot apex biology and technical requirements for 3D segmentation. The shoot apex is the source of aerial plant structures with a slow-growing central zone and fast-growing peripheral zone. Volumetric segmentation requires high signal quality, and for plant tissues is mainly used on cleared, fixed samples or limited to outermost cell layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C65-C66 provide biological and technical background. The shoot apex biology (C51-C52) is stated with citations (Steeves and Sussex, 1989; Dumais and Kwiatkowska, 2002). The technical requirements for 3D segmentation (C65-C66) are stated as general knowledge with citations to examples (Bassel et al., 2014; Yoshida et al., 2014). This is standard background information that contextualizes the results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "VG3-ACs have medium-sized territories (7662 \u00b1 211 \u03bcm\u00b2), stratify in the center of the inner plexiform layer, cover the retina approximately seven times, and are arranged in regular mosaics with characteristic exclusion zones (density: 898 \u00b1 34 cells/mm\u00b2, exclusion zone radius: 18.1 \u00b1 1.8 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C77-C79 provide converging anatomical evidence from multiple measurements (n=39 cells for territory, n=10 retinas for density) with appropriate statistical reporting. The morphological characterization is well-supported by experimental data shown in Figure 1 and supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "VG3-ACs respond transiently to light increments and decrements, depolarizing to small stimuli and hyperpolarizing to large stimuli due to pre- and post-synaptic surround inhibition. Receptive fields are well-fit by Difference-of-Gaussians models, with OFF responses exceeding ON responses and ON receptive fields being larger than OFF receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe basic response properties supported by voltage-clamp recordings (Figure 1B-F) with adequate sample sizes (n=26-38 cells). The Difference-of-Gaussians modeling is appropriate and statistical comparisons are properly reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "VG3-ACs receive rectified excitatory input from transient ON and OFF bipolar cells, and inhibition from amacrine cells that are themselves driven by rectified bipolar cell input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by split-field and counter-phase grating experiments showing F2-dominant responses characteristic of rectified input. The inference about circuit organization is reasonable given the experimental evidence, though the specific bipolar cell types remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "VG3-ACs depolarize robustly to differential motion in the center but hyperpolarize to global motion and differential surround motion, due to preferential excitation during center-only motion and strong inhibition when motion includes the surround. This allows detection of object motion irrespective of precise spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are well-supported by differential motion experiments (Figure 2A-E) with both current-clamp and voltage-clamp recordings. The interpretation that VG3-ACs detect object motion is justified by the response patterns and comparison to established OMS neuron properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "VG3-ACs respond to moving edges with transient depolarizations that are robust across a wide range of speeds, indistinguishable for leading and trailing edges, not directionally selective, but strongly suppressed for bar heights above 200 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by moving bar experiments (Figure 2F-M) with appropriate controls and sample sizes (n=32 for voltage, n=8 for excitation, n=5 for inhibition). The lack of directional selectivity is confirmed in Figure 2\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Surround suppression of VG3-ACs is mediated by spiking amacrine cells and is critical for feature detection. TTX abolishes surround suppression and hyperpolarizations during surround stimulation, but does not affect responses to narrow bars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by TTX experiments (Figure 3) showing selective effects on surround suppression while preserving center responses. The inference that spiking ACs mediate surround inhibition is well-justified by the pharmacological manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The use of spikes to signal surround motion likely improves temporal coincidence of inhibitory input with bipolar cell depolarization and excitatory input to VG3-ACs during coherent motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is speculative reasoning about the functional advantage of spiking inhibition. While plausible, this hypothesis is not directly tested and remains an inference without experimental validation of the proposed temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C4"
+    ],
+    "result": "More than half of the PSD95-YFP puncta on W3-RGCs are apposed by VG3-AC boutons, significantly more than expected by chance based on Monte Carlo simulations, indicating that VG3-ACs form glutamatergic synapses with W3-RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C4 are supported by anatomical data (Figure 4B-D) with appropriate statistical comparison to randomized controls (n=9 cells, p<10\u207b\u2076). The biolistic labeling and confocal imaging approach is well-established for identifying synaptic connections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The tuning of W3-RGC excitatory input matches VG3-AC responses. In VGluT3\u207b/\u207b mice, W3-RGC EPSCs and spike responses are selectively reduced for differential center motion and narrow bars, but not for global motion or larger bars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C61-C66 are supported by targeted recordings from W3-RGCs in WT and VGluT3\u207b/\u207b mice (Figure 4E-L) with adequate sample sizes and appropriate statistical tests. The selective deficits in knockout mice provide strong evidence for VG3-AC contribution to W3-RGC responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "VG3-ACs provide approximately half of the excitatory input to W3-RGCs. This VG3-input is more sharply tuned than the remaining input (likely from bipolar cells) and is required for normal spike responses of W3-RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by the ~50% reduction in EPSCs during differential center motion in VGluT3\u207b/\u207b mice, consistent with anatomical data. The inference about sharper tuning is justified by comparing response properties in WT and knockout mice, though claim C69 about bipolar cell input is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C3"
+    ],
+    "result": "Object motion is first detected by VGluT3-expressing amacrine cells, which provide feature-selective excitatory input to W3 ganglion cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C3 represent the main conclusion of the study, supported by converging evidence from VG3-AC response characterization, anatomical connectivity, and functional deficits in VGluT3\u207b/\u207b mice. The claim that object motion is 'first' detected by VG3-ACs is justified by the circuit architecture and response properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "VG3-ACs amplify and sharpen object motion tuning in the OMS circuit through multi-tiered inhibition at bipolar terminals, VG3-ACs, and W3-RGCs, delayed excitation, and successive threshold nonlinearities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C75 present a mechanistic model of circuit function. While C72 is supported by citations, C73-C75 are largely speculative inferences about how circuit architecture contributes to function. These hypotheses are plausible but lack direct experimental validation of the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Removal of VGluT3, which in the retina is only expressed by VG3-ACs, affected neither gross morphological development of the retina nor dendritic patterns of W3-RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by anatomical analysis in VGluT3\u207b/\u207b mice (Figure 4\u2014figure supplements 2-3). This control is important for interpreting functional deficits as resulting from loss of VG3-AC glutamatergic transmission rather than developmental abnormalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Inhibition in the OMS circuit is provided by a single AC type or a shared set of AC types with similar properties at all three stages (bipolar terminals, VG3-ACs, W3-RGCs), but these inhibitory AC types remain to be identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by the observation of similar inhibitory properties across circuit stages. The inference about shared inhibitory sources is reasonable, and the explicit acknowledgment that these cell types remain unidentified is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The diversity of AC types and circuit motifs are integral to the diversity of features encoded in signals the retina sends to the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a general conclusion supported by the experimental demonstration of VG3-ACs' role in object motion detection and appropriate citations. This represents a broader interpretation of the findings in the context of retinal circuit diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "W3 ganglion cells are the most abundant RGC type in mice, selectively respond to movements of small objects, share properties with OMS RGCs but have stronger surround suppression, and inherit key response properties from their excitatory input, suggesting feature selectivity arises presynaptically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C15 establish the background context for the study, all supported by appropriate citations to prior work (Zhang et al., 2012; Olveczky et al., 2003; van Wyk et al., 2006; Baccus et al., 2008; Russell and Werblin, 2010). These claims accurately represent established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Amacrine cells are the most diverse retinal neurons (30-50 types) serving task-specific functions. Most release GABA or glycine, but VG3-ACs express VGluT3, are conserved across species, respond to ON and OFF stimuli, show surround suppression, and can release glutamate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 provide background on amacrine cells and VG3-ACs, all supported by appropriate citations to established literature. These claims accurately represent prior knowledge and set up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "VG3-ACs stratify in sublamina 2 and 3 of the IPL, positioning them to recruit input from transient rectified ON and OFF bipolar cells and form synapses with W3-RGCs. This laminar position is conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by intensity profile analysis (Figure 1\u2014figure supplements 2-3) and citations to comparative studies. The inference about strategic positioning (C81) is reasonable given known bipolar cell stratification patterns, though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "White noise analysis reveals that peak times of ON and OFF filters are similar for voltage, excitation, and inhibition in VG3-ACs, but ON filters are more biphasic than OFF filters for synaptic inputs. VG3-ACs show higher sensitivity to OFF compared to ON stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by white noise analysis (Figure 1\u2014figure supplement 3) with appropriate sample sizes (n=9) and statistical tests. The temporal characterization provides additional detail about VG3-AC response properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "W3-RGCs have small dendritic fields (10,783 \u00b1 409 \u03bcm\u00b2) with densely branched neurites stratifying in the center of the IPL with a secondary arborization near the INL border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide morphological characterization of W3-RGCs supported by measurements from 25 cells and citations to prior work (Kim et al., 2010; Zhang et al., 2012). This establishes the identity of the postsynaptic target cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In VGluT3\u207b/\u207b mice, EPSCs during differential center motion are reduced by ~50% in W3-RGCs, while excitation during global motion remains unchanged. Responses to narrow moving bars are suppressed, but responses to broader bars remain intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by experimental data from VGluT3\u207b/\u207b mice (Figure 4E-L) with appropriate sample sizes and statistical comparisons. The selective deficits provide strong evidence for VG3-AC contribution to specific aspects of W3-RGC responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Multi-tiered inhibition combined with delayed excitation and successive threshold nonlinearities likely contribute to sharpening of object motion tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is speculative reasoning about circuit mechanisms. While the proposed mechanisms are plausible based on the circuit architecture, they are not directly tested experimentally and remain hypothetical.",
+    "result_type": "MINOR"
+  }
+]

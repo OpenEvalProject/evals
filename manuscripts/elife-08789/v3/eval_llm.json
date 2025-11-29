@@ -1,0 +1,168 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25"
+    ],
+    "result": "At baseline, M1 GABA levels are inversely correlated with motor functional connectivity strength within the MRS voxel (r(21) = \u22120.62, p < 0.01), but not within the whole motor network (r(21) = \u22120.23, p = 0.29). This replicates previous findings showing a negative relationship between local inhibition and resting state network connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, and C25 provide converging evidence with appropriate statistical tests showing a significant negative correlation within the MRS voxel but not the whole network. The partial correlation approach controlling for individual subjects is appropriate for the repeated-measures design. The finding is consistent with prior literature (C1, C8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C45",
+      "C46"
+    ],
+    "result": "Anodal tDCS significantly reduces M1 GABA levels compared to sham, with a significant stimulation \u00d7 time interaction (F(6,66) = 2.29, p = 0.048). Post-hoc tests show GABA reductions at both post-stimulation timepoints (Post1: t(11) = \u22124.14, p < 0.01; Post2: t(11) = \u22122.86, p = 0.02), with the most prominent decrease occurring 10-15 minutes after stimulation and persisting for at least 30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 and C45-C46 collectively demonstrate a well-characterized time course of GABA changes with appropriate statistical testing (repeated measures ANOVA with post-hoc comparisons). The significant interaction effect and multiple post-hoc tests provide strong evidence. However, the sample size is modest (n=12) and the p-value for the interaction is marginal (p=0.048).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Anodal tDCS significantly increases functional connectivity within the motor network in the left M1 ROI, with a significant stimulation \u00d7 time interaction (F(1,11) = 6.39, p = 0.03). Post-hoc tests show increased connectivity after anodal stimulation (t(11) = \u22122.45, p = 0.03) but not after sham (t(11) = 0.07, p = 0.95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide appropriate statistical evidence for tDCS-induced increases in functional connectivity using repeated measures ANOVA and post-hoc tests. The ROI selection based on peak motor network connectivity is methodologically sound. The finding replicates prior work (C16) and is consistent with the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Despite both GABA and functional connectivity being modulated by anodal tDCS, there is no significant correlation between tDCS-induced changes in GABA levels and changes in functional connectivity, either within the MRS voxel (r = \u22120.21, p = 0.52) or the whole motor network (r = \u22120.01, p = 0.981). This suggests these changes may be driven by distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 provide clear statistical evidence for the lack of correlation between GABA and connectivity changes post-tDCS. Multiple correlation analyses were performed (post-tDCS levels and change scores) with consistent null results. The inference in C7 that mechanisms may be distinct is appropriately cautious given this is a negative result, though alternative explanations are discussed (C55-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study employed a within-subjects crossover design with 12 right-handed healthy participants receiving anodal and sham tDCS in counterbalanced order. MRS data were acquired using MEGA-PRESS at baseline, during, and post-tDCS, while resting-state fMRI was acquired at baseline and post-tDCS. Data were analyzed using appropriate preprocessing, quality control, and ICA-based connectivity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C19-C23, C62-C83) describe a well-designed crossover study with appropriate controls, counterbalancing, and validated acquisition methods. The sample size (n=12) is modest but typical for MRS studies. Quality control criteria (NAA linewidth <10 Hz) and tissue correction procedures are appropriate. The one-week washout period is adequate for tDCS effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors propose that MRS-assessed GABA reflects extra-synaptic GABAergic tone rather than synaptic GABAA activity, and that tDCS may differentially modulate these two forms of GABAergic signaling. This could explain why GABA changes do not correlate with functional connectivity changes, which may depend primarily on synaptic GABAA activity that drives beta/gamma oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 are supported by citations, but C52-C54 and C56-C57 are largely speculative interpretations to explain the lack of correlation. While the distinction between extra-synaptic tone and synaptic activity is plausible and supported by C52, the differential modulation hypothesis (C56) lacks direct experimental evidence. This remains an interesting but unproven mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The time course of tDCS-induced changes in GABA and functional connectivity may differ, potentially explaining the lack of correlation between these measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is speculative and offered as one possible explanation for the null correlation. While the study measured GABA at multiple timepoints during and after tDCS, functional connectivity was only measured at baseline and immediately post-tDCS. The temporal mismatch hypothesis cannot be directly tested with the current experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "GABA measures are unlikely to reflect overall cortical excitability changes, as no direct relationship between MRS-assessed GABA and cortical excitability has been demonstrated. tDCS-induced excitability changes are multifactorial, involving both GABAergic and glutamatergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are appropriately supported by citations (Stagg et al., 2011b; Stagg and Nitsche, 2011). The inference in C58 is reasonable given the biochemical relationship between GABA and glutamate. These claims provide important context for interpreting the GABA measurements but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C61"
+    ],
+    "result": "The time course of GABA changes observed in this study is consistent with previous neurophysiological measures showing cortical excitability changes lasting 90 minutes after tDCS, and with paired-pulse TMS studies of GABA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C61 appropriately contextualize the current findings relative to prior work using different methodologies (TMS measures of excitability and inhibition). The citations support these comparisons. However, the study only tracked GABA for 30 minutes post-tDCS, so the full time course remains unknown.",
+    "result_type": "MINOR"
+  }
+]

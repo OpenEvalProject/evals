@@ -1,0 +1,1851 @@
+{
+  "submission": {
+    "id": "7d3d5cb1-88eb-4a32-a193-b31f261da554",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:33:31.164118Z",
+    "updated_at": "2025-11-29T04:33:31.164118Z"
+  },
+  "content": [
+    {
+      "id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "submission_id": "7d3d5cb1-88eb-4a32-a193-b31f261da554",
+      "content_type": "manuscript",
+      "content_text": "# Cancer-associated TERT promoter mutations abrogate telomerase silencing\n\n## Authors\n\n- Kunitoshi Chiba<sup>1</sup>\n- Joshua Z Johnson<sup>1</sup>\n- Jacob M Vogan<sup>1</sup>\n- Tina Wagner<sup>1</sup>\n- John M Boyle<sup>1</sup> ([ORCID: 0000-0001-6173-6765](https://orcid.org/0000-0001-6173-6765))\n- Dirk Hockemeyer<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations in the human telomerase reverse transcriptase (TERT) promoter are the most frequent non-coding mutations in cancer, but their molecular mechanism in tumorigenesis has not been established. We used genome editing of human pluripotent stem cells with physiological telomerase expression to elucidate the mechanism by which these mutations contribute to human disease. Surprisingly, telomerase-expressing embryonic stem cells engineered to carry any of the three most frequent TERT promoter mutations showed only a modest increase in TERT transcription with no impact on telomerase activity. However, upon differentiation into somatic cells, which normally silence telomerase, cells with TERT promoter mutations failed to silence TERT expression, resulting in increased telomerase activity and aberrantly long telomeres. Thus, TERT promoter mutations are sufficient to overcome the proliferative barrier imposed by telomere shortening without additional tumor-selected mutations. These data establish that TERT promoter mutations can promote immortalization and tumorigenesis of incipient cancer cells.\n\n## Introduction\n\nActivation of telomerase is the critical step for the immortalization of more than 90% of all human tumors (Greider and Blackburn, 1985; Counter, 1992; Kim et al., 1994). Non-coding mutations in the promoter of the catalytic subunit of telomerase (TERT) emerged recently as one of the most prevalent mutations in human cancer (Bojesen et al., 2013; Horn et al., 2013; Huang et al., 2013; Killela et al., 2013; Fredriksson et al.,2014; Weinhold et al., 2014). Interestingly, all TERT promoter mutations associated with cancer formation thus far generate novel binding sites for the ETS (E26 transformation-specific) family of transcription factors and are located close to the translational start site of TERT (e.g., \u221257A/C, \u2212124C/T, and \u2212146C/T) (Horn et al., 2013; Huang et al., 2013). Transient transfection experiments using ectopic TERT Luciferase-reporter constructs suggest that TERT promoter mutations can increase TERT transcription by 1.5\u20132 fold when assayed in tumor cells (Horn et al., 2013; Huang et al., 2013). To date, the physiological events that select for these specific mutations are still unclear, as they have been mostly investigated for their impact in tumor cell lines that are already immortal, maintain telomere length, and have aberrant karyotypes. These tumor cell lines have sufficient telomerase activity to maintain an immortal phenotype, but so do tumor cells without these TERT promoter mutations. Thus, changes in telomerase levels and telomere length provide incomplete information regarding the functional differences between cells that do or do not carry TERT promoter mutations.\n\nIn untransformed human tissues, telomerase activity is restricted to embryonic cells and some adult stem cell or progenitor compartments due to transcriptional silencing of TERT upon differentiation (Gunes and Rudolph, 2013; Aubert, 2014). As a consequence, differentiated somatic cells undergo progressive telomere shortening with cell division, which limits their proliferative capacity and has thus been proposed as a tumor suppressor mechanism (Wright et al., 1996). Critically short telomeres are detected as sites of DNA damage leading to cell death or replicative senescence (Palm and de Lange, 2008). Long-term inhibition of TERT (Herbert et al., 1999) or interference with telomerase recruitment to telomeres (Nakashima et al., 2013; Sexton et al., 2014) lead to cell death in telomerase-positive cancer and stem cells. Inversely, ectopic telomerase expression is sufficient to immortalize normal human fibroblasts by allowing them to bypass senescence (Bodnar et al., 1998; Morales et al., 1999). Since the discovery of telomerase reactivation in cancer, many cis-regulatory elements and corresponding transcription factors have been suggested to contribute to the regulation of TERT in healthy cells and its aberrant expression in tumor cells (Greenberg et al., 1999; Ducrest et al., 2002; Lin and Elledge, 2003; Kyo et al., 2008). GWAS analysis identified a specific set of TERT promoter mutations in melanomas that all occur in a very small region close to the transcriptional start site and each results in novel putative TTCCGG- ETS binding sites (Horn et al., 2013; Huang et al., 2013). While ETS-factors are a large family of transcription factors that can recognize this binding site, recent data suggest that TERT promoter mutations are bound predominantly by GABP (Bell et al., 2015). This specificity does not appear restricted to melanomas as the same TERT promoter mutations have emerged as a major driver in a multitude of human solid tumors (Heidenreich et al., 2014), including glioblastomas, medulloblastomas, carcinomas of the bladder, urothelial cancer (Borah et al., 2015), thyroid and squamous cell carcinomas of the tongue, as well as in liposarcomas and hepatocellular carcinomas (Heidenreich et al., 2014). Based on this tumor spectrum, TERT promoter mutations have been hypothesized to preferentially promote tumor progression in tissues with relatively low rates of self-renewal (Killela et al., 2013). Several studies have suggested that TERT promoter mutations can provide a biomarker to stratify human cancer subtypes (Heidenreich et al., 2014; Borah et al., 2015). However, the mechanism by which these mutations promote tumor formation is unknown. The key outstanding questions are: (1) whether TERT promoter mutations are sufficient to immortalize cells and (2) why TERT promoter mutations occur in specific tumors subtypes.\n\nHere we address these questions by genetically engineering human embryonic stem cells (hESCs) to carry the three most prevalent cancer-associated TERT promoter mutations in an isogenic background. The impact of these mutations was studied by measuring their effect on TERT expression, telomerase activity, and telomere length in stem cells as well as in differentiated cell types. We demonstrate that two out of three cancer-associated TERT mutations caused no effect and only the most prevalent promoter mutations mildly increased TERT levels in hESCs, which did not result in significantly increased telomerase activity. We find that increased TERT expression is not functionally linked to an increase in active telomerase, as TR, the telomerase RNA component, but not TERT is limiting in hESCs. However, the importance of these mutations in tumorigenesis becomes clear when hESCs are differentiated into normally telomerase-negative cells. Under these conditions all cancer-associated TERT mutations prevent repression of TERT, resulting in a retention of telomerase activity relative to wild-type differentiated cells. Ultimately, the resulting TERT expression led to aberrant telomerase enzymatic activity in terminally differentiated cells and abnormally long telomeres, thereby bypassing the telomere shortening tumor suppressor pathway.\n\n## Results\n\n### Analyzing cancer-associated TERT promoter mutations in hESCs\n\nWe aimed to understand the molecular basis by which the cancer-associated TERT mutations impact telomerase biology. To address this question, we employed CAS9- (clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated systems 9) (Jinek et al., 2012) mediated genome editing to derive human pluripotent stem cells (WIBR#3) that carry TERT promoter mutations at the endogenous TERT locus. Initially we attempted conventional donor-based genome editing strategies with sgRNAs targeting sequences proximal to the targeting site. These attempts were however unsuccessful, likely due to the TERT promoter mutations being in a genomic region with \u223c80% GC content. This non-random base composition does not allow for the design of specific sgRNAs without a large number of potential off-targets. We tested several sgRNAs in proximity to TERT promoter mutations and found them to be toxic to cells shortly after transfection into cancer cells and human primary fibroblasts. We overcame this challenge by employing a two-step targeting approach (Figure 1A). In a first editing step we homozygously deleted a 1.5 kb region in the TERT gene using two sgRNAs that cut at positions \u22121462 and +67 relative to the first ATG (Figure 1A). In a second editing step we reintroduced the deleted region either with or without the promoter mutations into the endogenous TERT locus (Figure 1A,B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic overview of the two-step approach used to genome-edit TERT promoter mutations in hESCs. First, TERT knock-out cell line (TERT\u0394/\u0394) that lacks 1.5 kb upstream and 66 bp downstream of the first ATG was established using two CAS9/sgRNAs (sg-1 and sg-15). Second, an sgRNA against the newly synthesized NHEJ-derived junction (\u22121462 and +67: sg1+15; see Figure 1\u2014figure supplement 1B) were co-electroporated with donor plasmids containing the deleted regions with or without the cancer-associated TERT promoter mutations. (B) Sequence analysis of targeted cells confirmed successful restoration and introduction of the TERT promoter mutations. (C) Telomeric repeat amplification protocol (TRAP) assay of whole cell extracts from TERT\u0394/\u0394 hESC lines (n = 2) using 200 ng protein. TERT\u0394/\u0394 #1 and #2 cells were collected at day 89 and day 146 after the first editing respectively. IC: internal control. (D) Telomere restriction fragment assay of wild-type (WT), TERT\u0394/\u0394, and the targeted hESCs over a time course after targeting (day 0: first editing step, day 73: second editing). TERT\u0394/\u0394 #1 cells are telomerase-deficient, undergo telomere shortening and die around day 120 unless they regain telomerase activity through the second targeting step. At the first time point (day 101), the majority of the cells are untargeted TERT\u0394/\u0394 cells, therefore telomere length is heterogeneous and short. This short telomere length results in reduced hybridization intensity with the TTAGGG radioactive probe. In contrast at the second time point (day 129), uncomplemented TERT\u0394/\u0394 #1 died due to progressive telomere shortening and the targeted populations are enriched. In this targeted population the restoration of telomerase resulted in substantial telomere elongation and an overall increase in telomere signal intensity. 2 \u00b5g of genomic DNA after digestion with MboI and AluI were loaded in each lane. Quantification of the average telomere length signal is indicated at the bottom of the gel. Throughout all figures we refer to non-targeted wild-type WIBR#3 hESCs as WT. We refer to wild-type cells generated by reintroducing the wild-type promoter into TERT\u0394/\u0394 as wt. (E) Relative expression levels of TERT mRNA by mutant and wt promoter-containing hESCs over a time course after targeting measured by quantitative RT-PCR. Expression is relative to WT hESCs (black line). Expression of TERT was normalized to GAPDH. Also shown is TERT\u0394/\u0394 cells (green line) until day 123. This is the last time point in which RNA could be isolated before TERT\u0394/\u0394 cultures died. (F) TRAP assay of whole cell extracts from WT and promoter mutation-containing hESCs (day 147) using decreasing amount of protein (200, 40, 8 ng).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Southern blot analysis for TERT\u0394/\u0394 hESCs. Genomic DNA isolated form individual clones was digested with BamHI and hybridized with the 3\u2032 probe (the top panel). The correctly targeted allele appears as a 9.5 kb band and the untargeted wild type allele is 11 kb. Homozygous targeted hESC clones are shown in blue, heterozygous targeted clones are in red, and untargeted clones are in black. The parental cell lines used for the second targeting, TERT\u0394/\u0394 and TERT\u0394/\u0394#2, are clone #26 and #17 respectively. The correct deletion events were also confirmed by PCR using external primers (bottom panel). (B) The newly formed NHEJ-derived junction of the deleted region in the homozygous targeted lines TERT\u0394/\u0394 and TERT\u0394/\u0394 #2 was determined by sequencing. The sgRNA for the second targeting was designed across the junction (sg-1+15).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Relative expression levels of TERT mRNA of mutant and wt promoter-containing hESCs (TERT\u0394/\u0394 #2) over a time course after targeting measured by quantitative RT-PCR. Expression of TERT was normalized to GAPDH. (B) Telomere restriction fragment assay of WT, TERT\u0394/\u0394#2 and the targeted hESCs over a post-targeting time course (day 0: first editing; day 86: second editing).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Southern blot analysis for TERT\u0394/\u0394 hESCs clones. The correctly targeted allele appeared as a 11 kb band at the size of WT hESCs and the untargeted allele as 9.5 kb at the size of parental TERT\u0394/\u0394 hESCs. (B) Quantitative RT-PCR of TERT and OCT4 in individual clones of the targeted hESCs. Expression levels are shown relative to WT hESCs and normalized to GAPDH. (C) Average expression of the data shown in (B). Expression levels are compared to TERT\u0394/\u0394 wt hESC clones. Error bars represent the SEM.\n\nAs the first deletion step removed the translational start site as well as some coding sequence of TERT, this targeting strategy resulted in telomerase-negative hESCs (TERT\u0394/\u0394) (Figure 1C). Correct targeting was confirmed by Southern blot and PCR-sequencing of the genomic deletion (Figure 1\u2014figure supplement 1A,B). As expected from our previous characterization of TERT\u2212/\u2212 hESCs (Sexton et al., 2014), these cells proliferated normally for 3 to 4 months, followed by cell death due to progressive telomere shortening with no survivors after 140 days (Sexton et al., 2014). In a second targeting step we edited the newly formed genomic site with a specific sgRNA spanning the new junction (\u22121462 to +67) to reinsert and restore the deleted region with either the wild-type promoter or an altered region containing the most frequent cancer-associated TERT promoter mutations: \u221257A/C, \u2212124C/T, or \u2212146C/T (Figure 1B). This complementation approach restored the TERT gene and cellular viability of targeted cells. Accordingly, cells with a restored TERT gene gradually outcompeted none-rescued parental TERT\u0394/\u0394 cells and lead to substantial telomere elongation by the time untargeted TERT\u0394/\u0394 hESCs had died (Figure 1D). This complementation strategy therefore successfully generated hESCs that differed exclusively at the TERT locus by expressing TERT either from its wild-type promoter or from a promoter that contained one of the cancer-associated point mutations.\n\nWe first analyzed the impact of the TERT promoter mutations on TERT mRNA levels by qRT-PCR until cultures established stable TERT expression levels and all TERT\u0394/\u0394 had died (Figure 1E). This analysis revealed that the most frequent TERT mutation (\u2212124C/T) resulted in a 2\u20133-fold increase in TERT expression when compared to the isogenic wild-type control. This increase is in agreement with previous reports that evaluated these mutations using Luciferase reporter constructs (Horn et al., 2013; Huang et al., 2013). Noticeably, the two other mutations did not result in similarly increased TERT expression in hESCs. We confirmed this finding for an independent TERT\u0394/\u0394 cell line (Figure 1\u2014figure supplement 2) and individual single cell-derived hemizygously targeted clones (Figure 1\u2014figure supplement 3). Interestingly, the promoter mutation cell lines carrying the \u2212124C/T mutation had elevated levels of TERT mRNA expression, without a equivalent increase in telomerase activity (Figure 1F).\n\n### TR, but not TERT is limiting for telomerase in hESCs\n\nA lack of a significant change in telomerase activity despite increased TERT levels in hESCs that carry the \u2212124C/T mutations suggested that TERT mRNA levels are not rate-limiting for telomerase activity in hESCs. Similar observations were made previously for some tumor cell lines in which telomerase activity is limited by levels of TR (Cristofari and Lingner, 2006; Xu and Blackburn, 2007), and might explain the tissue-specific impact of TERT and TR mutations in patients with dyskeratosis congenita (Batista et al., 2011; Strong et al., 2011; Armanios and Blackburn, 2012). Telomerase biogenesis is a complex biological process that has been shown in human pluripotent stem cells to depend on several activities that, when depleted, can become limiting (Yang et al., 2008; Batista et al., 2011; Batista and Artandi, 2013). To test the hypothesis that in wild type human pluripotent stem cells TR is the limiting factor for telomerase activity, we ectopically expressed TERT, TR, or both from the AAVS1 safe harbor locus (Hockemeyer et al., 2009, 2011) (Figure 2A). The introduction of such transgenes into this locus in isogenic settings overcomes concerns of random integration of the transgene. Overexpression levels were verified by western and northern blotting and qRT-PCR (Figure 2B,C; Figure 2\u2014figure supplement 1A) and quantitative analysis showed that TERT mRNA was overexpressed >40 fold and TR levels by approximately 20 fold. TERT protein was detectable by immunoblotting when overexpressed, contrasted to the lack of detectable endogenous TERT protein. In addition, we determined telomerase activity levels (Figure 2D and Figure 2\u2014figure supplement 1B,C) and telomere length changes in hESCs 36 days after targeting (Figure 2E). TR overexpression strongly increased telomerase activity and led to rapid telomere elongation in hESCs, while overexpression of TERT alone did neither. However, when differentiated into fibroblasts or neural precursor cells (NPCs), we observed the inverse behavior. In this setting, telomerase activity levels were significantly increased when TERT was overexpressed while increased levels of TR did not affect telomerase activity (Figure 2D). This finding showed that in hESCs TERT levels were not limiting, and that increased TERT expression did not result in a significant increase of telomerase activity or telomere length. Hence, hESCs are unlikely to reveal the impact of the TERT promoter mutations. Therefore, observation of the effect of TERT promoter mutations requires the analysis of differentiated cells in which TERT down-regulation results in it becoming limiting for telomerase activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig2-v1.jpg)\n\n**Figure 2.:** (A) Targeting schematic of GFP, 3XFLAG-TERT (F-TERT), TR, and F-TERT+TR overexpression from the AAVS1 locus in wild-type hESCs. (B) Northern blot detection of total TR and 7SL in targeted hESC lines. TR runs as a doublet in UREA PAGE. (C) SDS-PAGE immunoblot of total TERT and tubulin proteins in editing hESC lines from whole cell extract. (D) TRAP assay of whole cell extracts from NPCs and fibroblast-like cells differentiated from GFP (G), F-TERT (T), TR (R), or F-TERT+TR (T&R) overexpressing hESCs using 200 ng protein. (E) Telomere restriction fragment assay of GFP, F-TERT, TR, and F-TERT+TR overexpressing hESCs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Quantitative RT-PCR of TERT, TR, and OCT4 in GFP, F-TERT, TR, or F-TERT+TR overexpressing hESCs. Expression level is relative to GFP hESCs and normalized to GAPDH. Error bars represent the SEM of three biological replicates taken 1 week apart. (B) TRAP assay of whole cell extracts from GFP, F-TERT, TR, or F-TERT+TR overexpressing hESCs using decreasing amount of protein (250, 50, 10, 2 ng). (C) Relative telomerase activity of the hESC lines was assayed by QTRAP. Values were set as fold activity relative to the GFP control line (n = 3, ANOVA with Tukey's test, SEM bars). R: TR, T: F-TERT and T&R: F-TERT+TR.\n\n### TERT promoter mutations abrogate TERT silencing and impair telomere shortening\n\nWe differentiated edited hESCs into embryonic bodies (EBs) and eventually into fibroblasts and determined TERT mRNA levels over a 15 day differentiation period (Figure 3A). All cell lines differentiated with equal efficiencies, as evidenced by up-regulation of the differentiation marker COL1A1 and repression of OCT4 transcription (Figure 3B,C). Although TERT expression was successfully down-regulated in cells with wild-type TERT promoter, all three promoter mutation lines retained significant levels of TERT expression (Figure 3A). This failure of TERT transcriptional silencing became apparent as early as 3 days after the induction of differentiation and accumulated into a fourfold increase in TERT expression in cells that carried the \u221257A/C or the \u2212146C/T mutation and an 8\u201312-fold increase in cells in which transcription depended on the endogenous TERT promoter with the \u2212124C/T mutation (Figure 3A,B). This failure to appropriately repress TERT transcription during EB differentiation became even more apparent when the cells were differentiated into fibroblast-like cells. As expected, TERT transcription was undetectable in differentiated wild-type fibroblasts. In contrast, fibroblasts with the cancer-associated promoter mutations showed high levels of TERT expression (Figure 3D). This difference was not due to impaired differentiation of cells with the TERT promoter mutations, as these cells had silenced OCT4 and appropriately induced COL1A1 expression (Figure 3D). Importantly, while telomerase activity is not detectable in wild-type fibroblasts, the aberrant TERT expression resulted in robust telomerase activity in fibroblasts that contained the promoter mutations (Figure 3E). As before, we confirmed these findings in an independent TERT\u0394/\u0394 cell line (Figures 3\u2014figure supplement 1A\u2013D) and in individual single cell-derived targeted clones (Figures 3\u2014figure supplement 1E,F). Furthermore we confirmed that this failure to repress TERT expression persists in fibroblasts as late as 45 days after differentiation (Figures 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig3-v1.jpg)\n\n**Figure 3.:** (A), (B) and (C) Relative expression level of TERT, OCT4 or COL1A1 in the promoter-mutated hESC-derived fibroblasts compared to WT hESCs over a time course of differentiation (left panel). Relative expression level of TERT, OCT4 or COL1A1 compared to TERT\u0394/\u0394 and WT fibroblasts over a time course of differentiation. The right panel shows the same data as in the left panels, normalized to TERT\u0394/\u0394 wt fibroblasts. Expression of TERT, OCT4, or COL1A1 was normalized to GAPDH. (D) Quantitative RT-PCR of TERT, OCT4, COL1A1, and GAPDH in the fibroblasts carrying the promoter mutations 24 days after differentiation. Expression level is relative to WT hESCs. (E) TRAP assay of whole-cell extracts from WT hESCs, and the fibroblasts carrying the TERT promoter mutations (24 days after differentiation) using 2 \u00b5g of protein.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The results obtained by the bulk analysis were also confirmed by clonal analysis of fibroblasts carrying the TERT promoter mutations. (A) and (B) Relative expression levels of TERT and OCT4 in the promoter-mutated hESC-derived fibroblasts compared to WT hESCs over a time course of differentiation (left panels). The right panels show the same data normalized to TERT\u0394/\u0394 #2 wt cells. (C) Relative expression level of COL1A1 in the promoter-mutated hESC-derived fibroblasts compared to WT fibroblasts (day 15) over a time course of differentiation (left panels). The right panels show the same data normalized to TERT\u0394/\u0394 #2 wt cells. (D) Relative expression level of BRACHYURY (T) in the promoter-mutated hESC-derived fibroblasts compared to WT embryonic bodies (day 3) over a time course of differentiation (left panels). The right panels show the same data normalized to TERT\u0394/\u0394 #2 wt cells. (E) Quantitative RT-PCR of TERT, OCT4, and GAPDH in individual clones of fibroblasts carrying the mutations. Expression levels are shown relative to WT hESCs. (F) TRAP assay of whole cell extracts from fibroblasts differentiated from clonal hESCs carrying the TERT promoter mutations using 2 \u00b5g of protein.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A), (C) and (D) Relative expression level of TERT, OCT4, COL1A1, and GAPDH in individual hESC clones differentiated to fibroblasts carrying the indicated mutations at days 28, 40, and 45 after differentiation. Expression levels are shown relative to WT hESCs. (B) Average expression of data shown in (A). Expression levels are compared to WT hESC clones. Error bars represent the SEM.\n\nThe failure to silence telomerase could be specific to the fibroblast differentiation paradigm or a more general defect during differentiation. To address this issue, we first generated NPCs using the highly robust dual SMAD inhibition protocol (Chambers et al., 2009), establishing NPCs that can be maintained in culture for extended periods of time with low levels of telomerase expression. These NPCs can be further differentiated towards terminally differentiated non-proliferating post mitotic neurons that are characterized by the expression of the pan-neural marker proteins TUJ1 and NEUN. Independent of their genotype, all cells were able to differentiate into NPCs and neurons showing equal down-regulation of OCT4 expression and induction of neuronal marker genes (Figure 4A\u2013C). However, a striking difference became apparent in TERT levels as both NPCs and neurons that carried the TERT promoter mutations failed to repress TERT transcription (Figure 4A,C and Figures 4\u2014figure supplement 1) and showed robust telomerase activity (Figure 4D). Even when neurons were maintained in the presence of a mitotic inhibitor, the promoter mutations led to elevated TERT mRNA and telomerase activity levels, suggesting that telomerase activity can accumulate in slowly and non-dividing cells as late as 1 month after induction of terminal differentiation (Figure 4C,D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig4-v1.jpg)\n\n**Figure 4.:** (A) Quantitative RT-PCR of GAPDH, TERT, NESTIN, and OCT4 in the neural precursors carrying the promoter mutations 20\u201325 days after differentiation from hESCs. Expression levels are relative to the WT hESCs. (B) Phase-contrast and immunofluorescence images of neurons differentiated from wild-type hESCs or the TERT promoter mutation-containing hESCs. Shown are cells 28 days after neural induction from NPCs and treated with mitotic inhibitor for 16 days. The left panel shows IF staining against NeuN (red), Tuj1 (green), and DAPI staining (blue). (C) Quantitative RT-PCR of GAPDH, TERT, TUJ1, and OCT4 in the neurons carrying the promoter mutations. The top panel shows expression levels of neurons 7 days after neuronal differentiation from NPCs. The bottom panel shows expression levels of neurons 28 days after induction of neuronal differentiation from NPCs and treated with mitotic inhibitor for 16 days. Expression level is relative to the WT hESCs. (D) TRAP assay of whole cell extracts from NPCs (35 days after differentiation from hESCs) and neurons (28 days after neuronal differentiation from NPCs and treated with mitotic inhibitor for 16 days) using 1 \u00b5g protein.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantitative RT-PCR of TERT, OCT4, NESTIN, and GAPDH in NPCs differentiated from individual clones of the targeted hESCs (28 days after differentiation from hESCs). Expression levels are shown relative to WT hESCs. (B) Average expression of data shown in (A). Expression levels are compared to WT hESCs. Error bars represent the SEM.\n\n### Cancer-associated TERT promoter mutations result in telomerase levels equal to those found in immortal tumor cell lines\n\nNext, we assessed the impact of the aberrant telomerase activity of TERT promoter-mutation-containing cells by directly comparing the telomerase levels in fibroblasts and NPCs that carried the promoter mutations to the telomerase activity found in three established tumor cell lines (Figure 5A,B). Remarkably, telomerase activity levels in \u2212124C/T NPCs were equivalent to the activity found in immortal Hela S3 cells and about 50% of the activity found in hESCs, HCT116, and 293T cells. Importantly, telomerase activity in these cells was greatly increased relative to wild type cells. Moreover, \u2212124C/T fibroblasts had about 50% of the telomerase activity measured in HeLa S3 cells, 30% of that found in 293T cells, and 25% of that of HCT116 colon carcinoma cells. These findings suggested that TERT promoter mutations induce telomerase levels that are sufficient to enable immortalization or at least significantly delay telomere length-induced senescence. Finally, we analyzed the functional consequences of increased TERT expression by evaluating telomere length changes in hESCs, NPCs, and fibroblasts derived from the isogenic set of TERT promoter-edited cell lines (Figure 5C,D, and Figure 5\u2014figure supplement 1A). All differentiated cell lines with cancer-associated promoter mutations showed an increase in telomere length compared to the wild-type controls.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig5-v1.jpg)\n\n**Figure 5.:** (A) and (B) TRAP assay of whole-cell extracts from cancer cell lines (HeLaS3, 293T, and HCT116), WT hESCs, and the NPCs or fibroblasts carrying the TERT promoter mutations (24 days after differentiation for fibroblasts and 20 days for NPCs) using decreasing amount of protein (200, 40, 8 ng). For comparison, TRAP samples in (A) and (B) were prepared simultaneously and samples from cancer cell lines are identical in (A) and (B). TRAP signals relative to HeLa S3 were quantified and are shown at the bottom of the gels. (C) Telomere restriction fragment assay of the hESCs and NPCs (65 days after differentiation from hESCs). Median telomere length signals were quantified and shown at the bottom. It is important to note the telomere shortening in NPCs and fibroblasts in wild type cells exceeds the initial telomere length difference found in the hESCs. (D) Telomere restriction fragment assay of the fibroblasts (30 days after differentiation from hESCs). Median telomere length signals were quantified and shown at the bottom. (E) Telomere restriction fragment assay of teratoma tumor tissue generated from wt and promoter-mutation containing hESCs (75 days after injection). Median telomere length signals were quantified and shown at the bottom.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Telomere restriction fragment assay of the fibroblasts (36 days after differentiation from hESCs). (B) Telomere restriction fragment assay of teratoma tumor tissue generated from wt and promoter-mutation containing hESCs. Teratoma tissues in the group #1 were explanted 84 days after injection except \u221257 mutant samples (64 days after injection). Teratoma tissues in the group #2 were explanted 56 days after injection.\n\n### TERT promoter mutations suppress telomere shortening in tumors\n\nTo further explore the in vivo relevance of these findings in the context of long-term differentiation as well as tumor progression, cells with TERT promoter mutations were assayed for teratoma tumor formation in immune-compromised mice (Figure 5E and Figure 5\u2014figure supplement 1B). For this assay all cell lines were injected subcutaneously into NOD/SCID mice, allowing pluripotent cells to differentiate and form a teratoma comprised of cells derived from all three germ layers. All cell lines injected formed teratomas of approximately equal size, were explanted simultaneously (75 days after injection), and analyzed for their telomere length. Using this unbiased approach, we again found that cells with TERT promoter mutations carried aberrantly long telomeres, with the \u2212124C/T mutation having the strongest defect in silencing telomerase activity and retaining almost identical telomere length as undifferentiated hESCs (Figure 5C,E and Figure 5\u2014figure supplement 1B). These data demonstrated the causal relationship between the TERT promoter mutations and telomere maintenance and showed that the TERT promoter mutations can up-regulate TERT levels sufficiently to suppress telomere erosion without additional tumor-selected changes.\n\n## Discussion\n\n### Cancer-associated mutations affect TERT upon differentiation\n\nA key challenge in cancer research is to understand how mutations that sequentially occur in normal cells eventually produce a tumor. For noncoding mutations identified by GWAS, this is a particular challenge. Here we were able to dissect how the most frequent noncoding mutations in human cancer exert their tumorigenic effect. We are able to do so because cancer genomics have identified candidate mutations, genome editing is facile and robust, and we tested the effects in an otherwise wild-type background, thus being able to attribute a phenotypic effect specifically to a single genetic change.\n\nUsing genome editing of the endogenous TERT locus we generated a panel of three hESC lines that differed exclusively at a single position in the TERT promoter associated with cancer. Analyzing the impact of these mutations in hESCs, we showed that the most frequent mutation, \u2212124C/T, increased TERT mRNA levels in hESCs by about 2\u20133 fold. However, neither the \u221257A/C nor the \u2212146C/T mutation led to an increase in TERT transcription, despite the fact that these mutations generate the same putative ETS-binding motif of TTCCGG. This suggests a strong positional effect between the location of the ETS mutation and the core transcription initiation machinery. The possibility of such context-dependent positional constraints between the TERT promoter mutations and the core transcriptional machinery is further supported by the fact that a single point mutation at position \u221289 (C/G, \u221231 bp upstream of the TSS) would result in the same TTCCGG sequence. The fact that this mutation has as of now not been reported to be associated with cancer despite it being between the \u221257 and \u2212124 sites is likely due to the need of the core transcription factors to bind to this site. It is intriguing to speculate why all promoter mutations are located in close proximity to the TSS; it seems possible that TERT transcriptional regulation is closely linked with the core transcriptional machinery rather than regulated through the canonical positioning of transcription factors along an extended promoter. The experimental approach established in this study of genome editing the TERT promoter provides an experimental system to uncover cis-regulatory elements that are necessary for telomerase expression in stem cells and its transcriptional regulation upon differentiation.\n\nIncreased expression of TERT mRNA in \u2212124C/T containing hESCs did not lead to a significant increase in telomerase activity or pronounced telomere lengthening, establishing that in hESCs TR levels, but not TERT levels, are limiting for telomerase assembly and telomere lengthening. Therefore, immortal hESCs are as uninformative with regard to cancer-associated TERT mutations as immortal tumor tissue or cell lines. However, whereas upon differentiation wild-type hESCs efficiently silence TERT transcription, resulting in loss of telomerase activity and telomere shortening, the cancer-associated TERT promoter mutations were sufficient to maintain expression of TERT and resulted in telomerase activity levels comparable to immortal cancer cell lines. These experiments uncover that the underlying cancer-causing mechanism is likely a failure to repress telomerase upon differentiation into somatic cells. It is remarkable that TERT promoter mutations are sufficient to up-regulate TERT expression without additional cancer-selected changes in the genome such as increased levels of ETS factors.\n\n### An explanation for the tumor spectrum of TERT promoter mutations\n\nTERT promoter mutations are not frequently found in leukemias and colorectal cancers (Heidenreich et al., 2014). Direct evidence (Chiu et al., 1996; Schepers et al., 2011) as well as the pathology of the telomerase-related disease dyskeratosis congenita in which patients with mutations in the telomere maintenance pathway present with bone marrow failure as well as lung, intestinal, and skin pathologies show that TERT is expressed in these highly proliferative tissues and is required for their long-term self-renewal capacity and ability to maintain tissue homeostasis (Armanios and Price, 2012; Aubert et al., 2012).\n\nTumor-initiating events in these cancers predominantly drive proliferation pathways that spur formation of hyperplasia and niche-independent proliferation that allow incipient cancer cells to outcompete their neighbors (Barker et al., 2009; Zhou et al., 2009; Merlos-Suarez et al., 2011; Magee et al., 2012). In this setting, mutations in the TERT promoter or alterations in the telomerase biogenesis pathway might be at first neutral, not providing a direct proliferative advantage as telomeres are still long or telomerase is active (Figure 6A). During the genesis of these tumors, telomere shortening might present a challenge at a later stage when cells have already outcompeted their neighbors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07918/elife-07918-fig6-v1.jpg)\n\n**Figure 6.:** Shown are the differential outcomes of a cell acquiring a cancer-associated TERT promoter mutation or a proliferation-inducing mutation dependent on telomere length of the cell. (A) In a cell with long telomeres and telomerase activity, a proliferation-promoting mutation will result in a strong proliferative advantage and can act as the tumor-initiating event. Cells with long telomeres arise from tissues that have a telomerase positive stem cell compartment such as the hematopoietic or intestinal system. In contrast, mutations in the TERT promoter do not provide a proliferative advantage, they are neutral and do not promote tumor formation. Cell states are depicted on the left; cells that acquire mutations are shown in red. A schematic depicting telomere length changes as a function of the number of cell divisions is shown on the right. The dashed line indicates the critical telomere length at which cells are subjected to the Hayflick limit and stop proliferating or die. The red line indicates the telomere length changes predicted for cells that acquire either a proliferation-promoting mutation (top) or a TERT promoter mutation (bottom). The blue line indicates the telomere length changes predicted for wild-type cells. Indicated is a case where telomere shortening is suppressed by the TERT promoter mutations. However, since these cell already have long telomeres and/or naturally express telomerase, telomeres in neither wild-type cells or cells acquiring a proliferation inducing mutation will shorten to the point that the cells are subjected to the Hayflick limit. (B) Schematic as shown in (A) but for a telomerase negative cells with short telomeres. A proliferation-promoting mutation will also provide a growth advantage in telomerase-negative differentiated cells with short telomeres, however, these cells will enter replicative senescence or die. In contrast, a cell with short telomeres acquiring a TERT promoter mutation can bypass the Hayflick limit (dashed lines), immortalize, and outcompete its neighboring cells. Cell states are depicted on the left; cells that acquire mutations are shown in red. Schematic depicting telomere length changes as a function of the number of cell divisions is shown on the right. The orange line indicates the telomere length changes predicted for wild-type cells. The table to the right shows the frequency of TERT promoter mutations found in different types of tumors (adapted form Heidenreich et al., 2014). The table includes references that report the specific tumor subtypes and frequencies used to generate this table.\n\nIn contrast, tumor-initiating cells that are thought to not directly arise from a canonical telomerase-positive stem cell compartment (e.g., liposarcomas), that undergo high numbers of divisions after differentiating (e.g., neural-crest derived melanocytes), or that have to reenter a proliferation cycle in response to chronic injury (e.g., urothelial cells and hepatocytes) could be challenged by the telomere-dependent proliferative barrier comparatively early in their progression. In these cell types TERT promoter mutations will provide an immediate and strong proliferative advantage over neighboring cells. In this case telomerase activation occurs in cells in which telomerase is absent or low and which have an otherwise mostly intact genome. In these cells activating TERT promoter mutations will be present in most tumor cells and detected as a frequent and thus early event (Figure 6B).\n\nIt is important to note that this model depicts the very extreme cases of a TERT-positive adult stem cell with long telomeres contrasted to the expected outcome of a TERT promoter mutation in a telomerase-negative cell with short telomeres. Likely this sharp distinction between canonical telomerase-positive stem cell compartments and telomerase-negative compartments is rather continuous in vivo. Telomerase expression, telomere length, and the number of cell divisions will differ between tissues and with age and therefore the benefit of the TERT promoter mutation will be complexly graded. Given this, it will be critical to determine exactly which cells of the human body are telomerase-positive, when and how telomerase is silenced upon differentiation, and how many divisions cells undergo in human tissue after becoming telomerase-negative.\n\n### Telomerase inhibition as a cancer treatment\n\nTelomerase inhibition has been proposed as a target for cancer therapies. We demonstrate that TERT promoter mutations are sufficient to de-repress TERT, providing a potential target to inhibit TERT expression and telomerase activity.\n\nIn order to identify therapeutic approaches specific to these promoter mutations, a model system in which TERT is dysregulated solely by these mutations is necessary. Our model system fulfills this requirement and allows for a direct assessment of any potential inhibition by measuring TERT expression following differentiation. In contrast, this approach will be challenging in cancer cells, as TERT mRNA levels, telomerase levels, and telomere length vary dramatically regardless of whether they carry any of the TERT promoter mutations. Further mechanistic studies in such tumor cells are also challenged by the high frequency of concurrent TERT copy number variations, promoter polymorphisms, and cancer-associated dysregulation of factors implicated in TERT regulation such as MYC. As such, it will be challenging to evaluate the effectiveness of such an inhibitor due to these potentially compensatory effects arising from these misregulations. As such, it is imperative to test any potential therapeutic approach directed at these promoter mutations in a model system that only carries these mutations in an otherwise wild-type background, such as the model system described here. Specifically targeting the TERT promoter mutations is an attractive approach, as TERT promoter mutations are exclusive to the tumor cells and are not present in surrounding normal tissue. Therefore, any intervention that is targeted specifically against their mode of operation is expected to affect tumor cell survival, but not the telomerase-positive adult stem cells of the patient.\n\n## Material and methods\n\n### hESC culture\n\nGenome-editing experiments were performed in WIBR#3 hESCs (Lengner et al., 2010), NIH stem cell registry # 0079. Cell culture was carried out as described previously (Soldner et al., 2009). Briefly, all hESC lines were maintained on a layer of inactivated mouse embryonic fibroblasts (MEFs) in hESC medium (DMEM/F12 [Lifetech]) supplemented with 15% fetal bovine serum [Lifetech], 5% KnockOutTM Serum Replacement [Lifetech], 1 mM glutamine [Lifetech], 1% non-essential amino acids [Lifetech], 0.1 mM \u03b2-mercaptoethanol [Sigma], 1000 U/ml penicillin/streptomycin [Lifetech], and 4 ng/ml FGF2 [Lifetech]. Cultures were passaged every 5\u20137 days either manually or enzymatically with collagenase type IV [Lifetech] (1.5 mg/ml) and gravitational sedimentation by washing 3 times in wash media (DMEM/F12 [Lifetech] supplemented with 5% fetal bovine serum [Lifetech], and 1000 U/ml penicillin/streptomycin [Lifetech]).\n\n### Differentiation to fibroblast-like cells\n\nFor the formation of EBs hESC colonies were grown on petri dishes in fibroblast medium (DMEM/F12 [Lifetech]) supplemented with 15% fetal bovine serum [Lifetech], 1 mM glutamine [Lifetech], 1% non-essential amino acids [Lifetech], and penicillin/streptomycin [Lifetech, Carlsbad, CA]. After 9 days EBs were transferred to tissue culture dishes to attach. Fibroblast-like cells were passaged with Trypsin EDTA ([Lifetech], 0.25%), triturated into a single-cell suspension and plated on tissue culture dishes. Cultures were maintained in fibroblast media and passed every 6 days.\n\n### Differentiation to NPCs and neurons\n\nBefore differentiation to NPCs, hESCs were cultured under feeder-free conditions on matrigel [Corning]-coated plates in E8 media (DMEM/F12 [Lifetech]) supplemented with 64 \u00b5g/ml L-ascorbic acid [Sigma], 19.4 \u00b5g/ml insulin [Sigma, St. Louis, MO], 14 \u00b5g/l sodium selenite [Sigma], 543 ng/l sodium bicarbonate [Sigma], 1000 U/ml penicillin/streptomycin [Lifetech], 100 ng/ml FGF2 [Lifetech], and 10.7 \u00b5g/ml Transferrin [Sigma]. hESCs were passaged with accutase [Invitrogen] and triturated to a single-cell solution and plated on matrigel-coated plates at 50,000 cell/cm2. The dual SMAD inhibition protocol for the differentiation of hESCs to NPCs was adapted from Chambers et al. (2009). Differentiation was induced when cells reached 90\u2013100% confluency.\n\nNPCs were maintained in N2 media (50% DMEM/F12 [Lifetech], 50% Neurobasal Media [Lifetech] supplemented with 0.75% BSA (wt/vol) [Sigma], N2 Supplement [Lifetech], 20 ng/ml insulin [Sigma], 1 mM glutamine [Lifetech], 1000 U/ml penicillin/streptomycin [Lifetech], 25 ng/ml FGF2 [Lifetech] and 40 ng/ml EGF [R&D systems]) and passaged every 5 days. For the terminal differentiation to neurons NPCs were plated at 50,000 cells/cm2 on matrigel-coated plates in N2B27 media (50% DMEM/F12 [Lifetech], 50% Neurobasal Media [Lifetech] supplemented with 0.75% BSA (wt/vol) [Sigma], N2 Supplement [Lifetech], B27 Supplement [Lifetech], 1 mM glutamine [Lifetech], 1000 U/ml penicillin/streptomycin [Lifetech]). Neurons were treated with 250 nM mitotic inhibitor (Cytosine-\u03b2-D-arabinofuranoside [Sigma]).\n\n### Gene targeting in hESCs\n\nAll targeting experiments were preformed as previously described (Hockemeyer et al., 2009, 2011). CAS9 and all sgRNAs were expressed using the px330 plasmid (Cong et al., 2013). Cancer associated TERT promoter mutation containing cell lines were generated by two targeting steps. First, 1\u20132 \u00d7 107 hESCs were co-electroporated with 15 \u00b5g of two CAS9 plasmids targeting \u22121418 to \u22121399 bp (aaccgcccctttgccctag) and +110 to +129 bp (taccgcgaggtgctgccgc) from the TSS and 7.5 \u00b5g of a GFP-expression plasmid was electroporated along with px330. Cells were sorted for GFP fluorescence 72 hr after electroporation. Single-cell derived hES colonies were isolated and their targeting was confirmed by Southern blotting and PCR followed by sequencing. 120 clones were analyzed and three homozygous targeted hESC lines (TERT\u0394/\u0394) were obtained. For the second targeting, px330 plasmids were designed with sgRNAs against the newly formed NHEJ-derived junction site in TERT\u0394/\u0394 cells and electroporated with 35 \u00b5g of a repair plasmid that carried either the wild type TERT promoter element (wt) or the respective TERT promoter mutations (57A/C, 124 C/T, 146C/T). After the second targeting, cells were continuously passaged. Over a period of 120 days all TERT\u0394/\u0394 lines that did not undergo the second targeting step died due to critically short telomeres. However, cells that were correctly targeted in the second targeting step regained TERT expression and outgrew untargeted cells. These cells were analyzed in bulk or as single cell derived clones, after the parental TERT\u0394/\u0394 control culture, that did not undergo the second targeting step, had completely died. Targeting of individual clones was confirmed by Southern blot analysis.\n\n### qRT-PCR\n\nRNA was extracted with TRIzol (Lifetech) and treated with DNaseI (NEB). 600 ng RNA were converted to cDNA with the iScript Reverse Transcriptase (BioRad) and random and poly A priming. TR cDNA was prepared by gene specific reverse transcription. qRT-PCR was performed with KAPA SYBR fast [KAPA Biosystems] or SYBR Select Master Mix (ABI) in 96-well or 384-well format with a total reaction volume of 20 \u00b5l or 10 \u00b5l respectively. 2 \u00b5l cDNA from the iScript reaction mixture was used for the detection of TERT mRNA. For measuring the expression levels of all other genes, cDNA was diluted 1:10 and 2 \u00b5l were used for qPCR.\n\nDue to different expression levels of GAPDH between hESCs and differentiated cells, GAPDH data are shown in the figures that required comparison of expression in different cell types. Relative expression levels were calculated based on \u0394/\u0394 Ct and/or \u0394Ct analysis. qRT-PCR primers used in this study are summarized in Supplementary file 1.\n\n### Immunofluorescence\n\nFor analysis by IF, cells were briefly rinsed with PBS, and fixed with 4% formaldehyde in PBS. Cells were blocked with PBS 0.3% Triton X-100 with 5% horse serum. Fixed cells were incubated with antibodies against NEUN (mouse, monoclonal, [Millipore], MAB377; 1:1500) and TUJ1 (B-III-Tubulin, chicken, polyclonal, [Millipore], AB9354, 1:500), in PBS 0.3% Triton X-100 with 1% BSA over night. After washing with PBS the cells were stained with secondary antibodies (Alexa Fluor 546 goat \u03b1 mouse, Alexa Fluor 488 goat \u03b1 chicken [Lifetech]; 1:500), for 1 hr in PBS 0.3% Triton X-100 with 1% BSA. Cells were then washed with PBS and stained with 1 ng/\u00b5l DAPI (Sigma) in PBS.\n\n### RNA detection, Southern blotting, and assaying telomerase catalytic activity\n\nRNA for northern blot was purified using TRIzol according to the manufacturer's protocol (Lifetech). Northern blot detection of TR was performed as previously described (Fu and Collins, 2003). 7SL RNA was detected using 32P end-labeled probe (TGAACTCAAGGGATCCTCCAG) under similar conditions as TR, except hybridization took place at 37\u00b0C. Southern blots analysis was performed as previously described (Hockemeyer et al., 2009, 2011) using a 3\u2032- probe for TERT (6280 bp \u22126846 bp downstream of the TERT first ATG) and probe T1 (amplified from hES genomic DNA with primers Fw: GTGACTCAGGACCCCATACC and Rev: ACAACAGCGGCTGAACAGTC). PCR-based telomeric repeat amplification protocol (TRAP) was performed as previously described using TS (AATCCGTCGAGCAGAGTT) and ACX (GCGCGGCTTACCCTTACCCTTACCCTAACC) for amplification of telomereic repeats and TSNT (AATCCGTCGAGCAGAGTTAAAAGGCCGAGAAGCGAT) and NT (ATCGCTTCTCGGCCTTTT) as an internal control (Kim et al., 1994). Real-time quantitative telomeric repeat amplification (QTRAP) was performed similar to previously published protocols (Wege et al., 2003). Cell extract was generated from CHAPS lysis and samples were normalized using the BCA Protein Assay Kit (Pierce). 200 ng of total protein was used per 20 \u00b5l QTRAP reaction, which was composed of iTaq Universal SYBR Green Supermix (Bio-Rad) and 0.1 \u00b5g TS and 0.02 \u00b5g ACX primers. Samples were incubated at 30\u00b0C for 30 min before a 2 min 95\u00b0C hot-start and 35 cycles of 95\u00b0C for 15 s and 61\u00b0C for 90 s. Relative telomerase activity was calculated by \u0394Ct to the reference sample.\n\n### Immunoblotting\n\nAfter heating to 80\u00b0C for 5 min, protein samples were cooled to room temperature and resolved by SDS-PAGE. Protein was then transferred to nitrocellulose membrane and subsequently incubated with mouse \u03b1-tubulin (1:500, DM1A, [Calbiochem]) and mouse anti-TERT (1:3000 [Geron]) in 4% nonfat milk (Carnation) in TBS buffer (150 mM NaCl, 50 mM Tris pH 7.5) overnight at 4\u00b0C. The membrane was washed in TBS and incubated with goat \u03b1-mouse Alexa Fluor 680 (1:2,000, [Life Technologies]) in 4% nonfat milk in TBS for 1 hr at room temperature. After extensive washing with TBS, the membrane was visualized on a LI-COR Odyssey imager (Fu and Collins, 2003).\n\n### Detection of telomere length\n\nFor preparation of genomic DNA, hESC lines were washed with PBS, released from the feeder cell layer by treatment with 1.5 mg/ml collagenase type IV and washed 3\u00d7 in wash media by gravitational sedimentation to minimize contaminating MEF cells. Genomic DNA was then prepared as described previously (Hockemeyer et al., 2005). While this method removes the vast majority of MEFs, the signal from mouse telomeres is disproportionate to human telomeres due to amplified relative length and concentration into a smaller area (Kipling and Cooke, 1990). Because MEF telomeres are size-resolved from human telomeres they do not interfere with analysis of hESC telomere length. Genomic DNA was digested with MboI and AluI overnight at 37\u00b0C. The resulting DNA was normalized and run on 0.75% agarose (Seakem ME Agarose, Lonza), dried under vacuum for 2 hr at 50\u00b0C, denatured in 0.5 M NaOH, 1.5 M NaCl for 30 min, shaking at 25\u00b0C, neutralized with 1 M Tris pH 6.0, 2.5 M NaCl shaking at 25\u00b0C, 2\u00d7 for 15 min. Then the gel was pre-hybridized in Church's buffer (1% BSA, 1 mM EDTA, 0.5M NaP04 pH 7.2, 7% SDS) for 1 hr at 55\u00b0C before adding a 32P-end-labeled (T2AG3)3 telomeric probe. The gel was washed 3\u00d7 30 min in 4\u00d7 SSC at 50\u00b0C and 1\u00d7 30 min in 4\u00d7 SSC + 0.1% SDS at 25\u00b0C before exposing on a phosphorimager screen.\n\n### Teratoma tumor formation assays\n\nTeratoma formation assays where performed as previously described in (Hockemeyer et al., 2008).\n",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "461e6064-559c-4e5e-9024-5b31d353a601",
+      "submission_id": "7d3d5cb1-88eb-4a32-a193-b31f261da554",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Titia de Lange, The Rockefeller University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07918.018](https://doi.org/10.7554/eLife.07918.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cCancer-associated TERT promoter mutations abrogate telomerase silencing\u201d for peer review at eLife. Your submission has been favorably evaluated by Sean Morrison (Senior editor) and three reviewers, one of whom served as guest Reviewing editor. One of the peer reviewers, Steven Artandi, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe three reviewers agree that this is an excellent and rigorously performed study providing a compelling and exciting narrative regarding the effects of highly recurrent mutations in the TERT promoter associated with many human cancers.\n\nThe manuscript addresses the 20-year old question of how telomerase is activated in human cancer. From the seminal work of Garraway and Kumar a few years ago, it is clear that one route is through mutations in the hTERT promoter that create ETS binding sites. It was proposed that ETS transcription factor augment expression of hTERT and indeed a 2-4 fold increase in expression was noted with the mutant promoter linked to luciferase in comparison with the wild type form of the promoter (transfection experiments in cancer cell lines). From work on dyskeratosis congenita, it is known that a 2-fold reduction in telomerase can have major impact but whether a mild increase could explain the tumorigenic potential of the mutations has not been established.\n\nThe current work examines the mechanism by which the promoter mutations act using a two-step CRISPR knockin approach in human ES cells and then studying the effect of the mutations on telomerase and telomere length maintenance upon differentiation. The striking observation is that the mutant promoter becomes resistant to the silencing that normally occurs upon ES cell differentiation. Thus, the promoter mutations act by abrogating the off-switch that normally ensures telomerase silencing, thwarting the telomere shortening program that limits tumorigenesis. These results and conclusions are highly significant to the cancer field.\n\nEssential revisions:\n\n1) The manuscript examines the effect of TERT promoter mutations with respect to telomerase activity and telomere length. Figure 3A shows the hTERT expression is likely to continue to decrease after 15 days if it continues on the same trajectory. Is 15 days the right time point? It remains unclear whether these mutations have the capacity to shift the Hayflick limit or delay/bypass senescence. Do the authors have information on whether these fibroblasts are truly immortal?\n\n2) The presentation of the model attempting to explain why TERT promoter mutations occur in certain tumor types, but not in others, could perhaps be more nuanced, and may be a little premature since additional TERT activating mutations may surface from further analysis in cancer that are currently thought to not fall in this category. Also, the authors draw a sharp distinction between \u201ccanonical telomerase-positive stem cell compartments\u201d in which TERT promoter mutations would not be beneficial, and others in which they would confer selective advantage. Given our dearth of knowledge about the lineage hierarchy in many organs, these statements should perhaps be worded more cautiously. Also, it would be helpful the paper should contain a figure (or a figure adaptation) specifically depicting the frequency of TERT mutations across all human cancer types for the edification of the reader. Otherwise, it is difficult to determine to what degree the model in Figure 6 is explains the data.\n",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d9ecd236-7317-4d5a-90e2-e0989c0d609a",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C1",
+      "claim": "Mutations in the human telomerase reverse transcriptase (TERT) promoter are the most frequent non-coding mutations in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the human telomerase reverse transcriptase (TERT) promoter are the most frequent non-coding mutations in cancer, but their molecular mechanism in tumorigenesis has not been established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing the frequency of TERT promoter mutations in cancer.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "610993f6-0c03-48c9-bf3c-e7ca4ea1da23",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C2",
+      "claim": "Telomerase-expressing embryonic stem cells engineered to carry any of the three most frequent TERT promoter mutations showed only a modest increase in TERT transcription with no impact on telomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, telomerase-expressing embryonic stem cells engineered to carry any of the three most frequent TERT promoter mutations showed only a modest increase in TERT transcription with no impact on telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including qRT-PCR and TRAP assays shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "07154ee2-517b-4622-8d67-b1b49e630302",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C3",
+      "claim": "Upon differentiation into somatic cells, cells with TERT promoter mutations failed to silence TERT expression, resulting in increased telomerase activity and aberrantly long telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon differentiation into somatic cells, which normally silence telomerase, cells with TERT promoter mutations failed to silence TERT expression, resulting in increased telomerase activity and aberrantly long telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including qRT-PCR, TRAP assays, and telomere length measurements shown in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f385c556-c77e-4ad0-917d-d05d1798f6e9",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C4",
+      "claim": "TERT promoter mutations are sufficient to overcome the proliferative barrier imposed by telomere shortening without additional tumor-selected mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TERT promoter mutations are sufficient to overcome the proliferative barrier imposed by telomere shortening without additional tumor-selected mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that cells with TERT promoter mutations maintain telomere length in differentiated cells and teratomas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "610f9fa4-e0af-4fb8-90c1-9494bee71bfb",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C5",
+      "claim": "TERT promoter mutations can promote immortalization and tumorigenesis of incipient cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data establish that TERT promoter mutations can promote immortalization and tumorigenesis of incipient cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing sustained telomerase activity and telomere maintenance in differentiated cells with TERT promoter mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "073676c4-8cca-42e2-b070-2efc6cafa02c",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C6",
+      "claim": "Activation of telomerase is the critical step for the immortalization of more than 90% of all human tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of telomerase is the critical step for the immortalization of more than 90% of all human tumors (Greider and Blackburn, 1985; Counter, 1992; Kim et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "8a3f8bec-3752-47e8-a559-c387ae31ff63",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C7",
+      "claim": "Non-coding mutations in the promoter of TERT emerged as one of the most prevalent mutations in human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-coding mutations in the promoter of the catalytic subunit of telomerase (TERT) emerged recently as one of the most prevalent mutations in human cancer (Bojesen et al., 2013; Horn et al., 2013; Huang et al., 2013; Killela et al., 2013; Fredriksson et al.,2014; Weinhold et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "304b9dd6-bb78-40e1-94a2-5b76d7a575be",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C8",
+      "claim": "All TERT promoter mutations associated with cancer formation generate novel binding sites for the ETS family of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all TERT promoter mutations associated with cancer formation thus far generate novel binding sites for the ETS (E26 transformation-specific) family of transcription factors and are located close to the translational start site of TERT (e.g., \u221257A/C, \u2212124C/T, and \u2212146C/T) (Horn et al., 2013; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "b26a8485-33d4-4470-997c-e48bb142cd24",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C9",
+      "claim": "TERT promoter mutations are located close to the translational start site of TERT (e.g., \u221257A/C, \u2212124C/T, and \u2212146C/T).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all TERT promoter mutations associated with cancer formation thus far generate novel binding sites for the ETS (E26 transformation-specific) family of transcription factors and are located close to the translational start site of TERT (e.g., \u221257A/C, \u2212124C/T, and \u2212146C/T) (Horn et al., 2013; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and is consistent with the experimental design of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f090cc59-8e4f-47d0-8b71-5a8754fa40ae",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C10",
+      "claim": "Transient transfection experiments using ectopic TERT Luciferase-reporter constructs suggest that TERT promoter mutations can increase TERT transcription by 1.5\u20132 fold when assayed in tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient transfection experiments using ectopic TERT Luciferase-reporter constructs suggest that TERT promoter mutations can increase TERT transcription by 1.5\u20132 fold when assayed in tumor cells (Horn et al., 2013; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "527652f1-cc9e-466f-b941-11b4bf861064",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C11",
+      "claim": "In untransformed human tissues, telomerase activity is restricted to embryonic cells and some adult stem cell or progenitor compartments due to transcriptional silencing of TERT upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In untransformed human tissues, telomerase activity is restricted to embryonic cells and some adult stem cell or progenitor compartments due to transcriptional silencing of TERT upon differentiation (Gunes and Rudolph, 2013; Aubert, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4abdf75d-3184-4e6b-91c7-2b5780b3a929",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C12",
+      "claim": "Differentiated somatic cells undergo progressive telomere shortening with cell division, which limits their proliferative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, differentiated somatic cells undergo progressive telomere shortening with cell division, which limits their proliferative capacity and has thus been proposed as a tumor suppressor mechanism (Wright et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "d79cfb66-a558-4b3e-953c-33a7f6b6e40f",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C13",
+      "claim": "Critically short telomeres are detected as sites of DNA damage leading to cell death or replicative senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically short telomeres are detected as sites of DNA damage leading to cell death or replicative senescence (Palm and de Lange, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "ed4441a0-67aa-4f1f-b2bf-eed1500a6a75",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C14",
+      "claim": "Long-term inhibition of TERT leads to cell death in telomerase-positive cancer and stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term inhibition of TERT (Herbert et al., 1999) or interference with telomerase recruitment to telomeres (Nakashima et al., 2013; Sexton et al., 2014) lead to cell death in telomerase-positive cancer and stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "2d27876d-fc3c-461d-90b2-09f7e1b824f7",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C15",
+      "claim": "Ectopic telomerase expression is sufficient to immortalize normal human fibroblasts by allowing them to bypass senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, ectopic telomerase expression is sufficient to immortalize normal human fibroblasts by allowing them to bypass senescence (Bodnar et al., 1998; Morales et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "35e9de7c-f377-4348-867e-1e09430884e5",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C16",
+      "claim": "TERT promoter mutations are bound predominantly by GABP.",
+      "claim_type": "EXPLICIT",
+      "source": "While ETS-factors are a large family of transcription factors that can recognize this binding site, recent data suggest that TERT promoter mutations are bound predominantly by GABP (Bell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "850e6510-d473-472a-91ce-ad5b58e292be",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C17",
+      "claim": "TERT promoter mutations have emerged as a major driver in a multitude of human solid tumors including glioblastomas, medulloblastomas, carcinomas of the bladder, urothelial cancer, thyroid and squamous cell carcinomas of the tongue, as well as in liposarcomas and hepatocellular carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "This specificity does not appear restricted to melanomas as the same TERT promoter mutations have emerged as a major driver in a multitude of human solid tumors (Heidenreich et al., 2014), including glioblastomas, medulloblastomas, carcinomas of the bladder, urothelial cancer (Borah et al., 2015), thyroid and squamous cell carcinomas of the tongue, as well as in liposarcomas and hepatocellular carcinomas (Heidenreich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "6bff8f44-9f62-42f4-944c-d225e9f3369a",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C18",
+      "claim": "TERT promoter mutations have been hypothesized to preferentially promote tumor progression in tissues with relatively low rates of self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this tumor spectrum, TERT promoter mutations have been hypothesized to preferentially promote tumor progression in tissues with relatively low rates of self-renewal (Killela et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4ad3508a-2fb7-4356-b1f5-1d60671de98b",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C19",
+      "claim": "TERT promoter mutations can provide a biomarker to stratify human cancer subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have suggested that TERT promoter mutations can provide a biomarker to stratify human cancer subtypes (Heidenreich et al., 2014; Borah et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "ef546023-072e-4b8e-b07f-98a9e3af692a",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C20",
+      "claim": "The most prevalent TERT promoter mutation (\u2212124C/T) mildly increased TERT levels in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that two out of three cancer-associated TERT mutations caused no effect and only the most prevalent promoter mutations mildly increased TERT levels in hESCs, which did not result in significantly increased telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "6dda890d-f59d-4250-b1be-45dc32058ac3",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C21",
+      "claim": "Two out of three cancer-associated TERT mutations caused no effect on TERT levels in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that two out of three cancer-associated TERT mutations caused no effect and only the most prevalent promoter mutations mildly increased TERT levels in hESCs, which did not result in significantly increased telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "694c19f2-531b-4a3f-ad4d-b2a606534de1",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C22",
+      "claim": "Increased TERT expression is not functionally linked to an increase in active telomerase in hESCs, as TR, the telomerase RNA component, but not TERT is limiting in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that increased TERT expression is not functionally linked to an increase in active telomerase, as TR, the telomerase RNA component, but not TERT is limiting in hESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "09bf8f4f-5944-4cee-b968-69e01a848972",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C23",
+      "claim": "All cancer-associated TERT mutations prevent repression of TERT upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions all cancer-associated TERT mutations prevent repression of TERT, resulting in a retention of telomerase activity relative to wild-type differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "bbb5f98f-efee-4fde-95e9-6682a84d9e37",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C24",
+      "claim": "TERT expression in cells with promoter mutations led to aberrant telomerase enzymatic activity in terminally differentiated cells and abnormally long telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the resulting TERT expression led to aberrant telomerase enzymatic activity in terminally differentiated cells and abnormally long telomeres, thereby bypassing the telomere shortening tumor suppressor pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "7d496c4b-9edd-4a46-bc7b-4d71e66752ba",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C25",
+      "claim": "A two-step targeting approach was used to generate hESCs carrying TERT promoter mutations at the endogenous TERT locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We overcame this challenge by employing a two-step targeting approach (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the description in the text and the schematic shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "23b08e1c-33ad-48e8-a177-19e11dde94ee",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C26",
+      "claim": "In a first editing step, a 1.5 kb region in the TERT gene was homozygously deleted using two sgRNAs that cut at positions \u22121462 and +67 relative to the first ATG.",
+      "claim_type": "EXPLICIT",
+      "source": "In a first editing step we homozygously deleted a 1.5 kb region in the TERT gene using two sgRNAs that cut at positions \u22121462 and +67 relative to the first ATG (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the description in the text and the schematic shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4348b196-bd39-4b32-82d1-bb820b9cdceb",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C27",
+      "claim": "In a second editing step, the deleted region was reintroduced either with or without the promoter mutations into the endogenous TERT locus.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second editing step we reintroduced the deleted region either with or without the promoter mutations into the endogenous TERT locus (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the description in the text and the schematics shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "1fb3fa90-e469-44cc-a369-34aa6a3f41d8",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C28",
+      "claim": "The first deletion step resulted in telomerase-negative hESCs (TERT\u0394/\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "As the first deletion step removed the translational start site as well as some coding sequence of TERT, this targeting strategy resulted in telomerase-negative hESCs (TERT\u0394/\u0394) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the description in the text and the TRAP assay shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "7e183cfc-dfaa-44bc-ab8a-374f374de410",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C29",
+      "claim": "TERT\u0394/\u0394 hESCs proliferated normally for 3 to 4 months, followed by cell death due to progressive telomere shortening with no survivors after 140 days.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from our previous characterization of TERT\u2212/\u2212 hESCs (Sexton et al., 2014), these cells proliferated normally for 3 to 4 months, followed by cell death due to progressive telomere shortening with no survivors after 140 days (Sexton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to prior work by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "41d7a918-8d02-4201-898a-86dec13e53b1",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C30",
+      "claim": "The complementation approach restored the TERT gene and cellular viability of targeted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This complementation approach restored the TERT gene and cellular viability of targeted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that cells with restored TERT outcompeted TERT\u0394/\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4d18211d-99b0-4a3a-871e-1104643391b7",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C31",
+      "claim": "Cells with a restored TERT gene gradually outcompeted none-rescued parental TERT\u0394/\u0394 cells and lead to substantial telomere elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, cells with a restored TERT gene gradually outcompeted none-rescued parental TERT\u0394/\u0394 cells and lead to substantial telomere elongation by the time untargeted TERT\u0394/\u0394 hESCs had died (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the telomere restriction fragment assay shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "9129c888-beac-46d2-b224-6b828f70237b",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C32",
+      "claim": "The most frequent TERT mutation (\u2212124C/T) resulted in a 2\u20133-fold increase in TERT expression when compared to the isogenic wild-type control.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that the most frequent TERT mutation (\u2212124C/T) resulted in a 2\u20133-fold increase in TERT expression when compared to the isogenic wild-type control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f0e6a7bc-52d3-4364-a80d-495c3fb795e2",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C33",
+      "claim": "The two other mutations (\u221257A/C and \u2212146C/T) did not result in similarly increased TERT expression in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticeably, the two other mutations did not result in similarly increased TERT expression in hESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "605dad13-e1b3-4ecd-8a69-1ace813f87da",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C34",
+      "claim": "The promoter mutation cell lines carrying the \u2212124C/T mutation had elevated levels of TERT mRNA expression, without a equivalent increase in telomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the promoter mutation cell lines carrying the \u2212124C/T mutation had elevated levels of TERT mRNA expression, without a equivalent increase in telomerase activity (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data (Figure 1E) and TRAP assay data (Figure 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4565cef9-e0bd-4431-a622-8f375a23fa32",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C35",
+      "claim": "TERT mRNA levels are not rate-limiting for telomerase activity in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A lack of a significant change in telomerase activity despite increased TERT levels in hESCs that carry the \u2212124C/T mutations suggested that TERT mRNA levels are not rate-limiting for telomerase activity in hESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that increased TERT mRNA did not lead to increased telomerase activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f97b26b0-3bbe-4421-a18f-39878947f32c",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C36",
+      "claim": "In some tumor cell lines, telomerase activity is limited by levels of TR.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were made previously for some tumor cell lines in which telomerase activity is limited by levels of TR (Cristofari and Lingner, 2006; Xu and Blackburn, 2007), and might explain the tissue-specific impact of TERT and TR mutations in patients with dyskeratosis congenita (Batista et al., 2011; Strong et al., 2011; Armanios and Blackburn, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "83daf961-40dd-42ec-a4a0-e78d9776b184",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C37",
+      "claim": "TR overexpression strongly increased telomerase activity and led to rapid telomere elongation in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "TR overexpression strongly increased telomerase activity and led to rapid telomere elongation in hESCs, while overexpression of TERT alone did neither.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "824d5ddd-75d5-43c2-a4ff-ed4b189f5b19",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C38",
+      "claim": "Overexpression of TERT alone did not increase telomerase activity or lead to telomere elongation in hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "TR overexpression strongly increased telomerase activity and led to rapid telomere elongation in hESCs, while overexpression of TERT alone did neither.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "72a701d5-bba5-49ce-9f3e-38593fb32d46",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C39",
+      "claim": "When differentiated into fibroblasts or neural precursor cells (NPCs), telomerase activity levels were significantly increased when TERT was overexpressed while increased levels of TR did not affect telomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when differentiated into fibroblasts or neural precursor cells (NPCs), we observed the inverse behavior. In this setting, telomerase activity levels were significantly increased when TERT was overexpressed while increased levels of TR did not affect telomerase activity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TRAP assay data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "2af41285-3070-4059-92a5-3477078382d8",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C40",
+      "claim": "In hESCs, TERT levels were not limiting, and increased TERT expression did not result in a significant increase of telomerase activity or telomere length.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding showed that in hESCs TERT levels were not limiting, and that increased TERT expression did not result in a significant increase of telomerase activity or telomere length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "2eba7439-6912-44bc-b1f0-26adfbde221b",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C41",
+      "claim": "All cell lines differentiated with equal efficiencies, as evidenced by up-regulation of the differentiation marker COL1A1 and repression of OCT4 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "All cell lines differentiated with equal efficiencies, as evidenced by up-regulation of the differentiation marker COL1A1 and repression of OCT4 transcription (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "af739b8c-51aa-428e-81b4-76dac0112a0c",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C42",
+      "claim": "TERT expression was successfully down-regulated in cells with wild-type TERT promoter during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although TERT expression was successfully down-regulated in cells with wild-type TERT promoter, all three promoter mutation lines retained significant levels of TERT expression (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "e26bb7fe-8bb9-4272-a4f1-db71bed64c91",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C43",
+      "claim": "All three promoter mutation lines retained significant levels of TERT expression during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although TERT expression was successfully down-regulated in cells with wild-type TERT promoter, all three promoter mutation lines retained significant levels of TERT expression (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "7a6fb012-ac90-416e-ba17-0a8b3fff3eab",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C44",
+      "claim": "The failure of TERT transcriptional silencing became apparent as early as 3 days after the induction of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This failure of TERT transcriptional silencing became apparent as early as 3 days after the induction of differentiation and accumulated into a fourfold increase in TERT expression in cells that carried the \u221257A/C or the \u2212146C/T mutation and an 8\u201312-fold increase in cells in which transcription depended on the endogenous TERT promoter with the \u2212124C/T mutation (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "331da8ed-7ef5-4d47-b724-00b8b6b39498",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C45",
+      "claim": "Cells with the \u221257A/C or the \u2212146C/T mutation showed a fourfold increase in TERT expression during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This failure of TERT transcriptional silencing became apparent as early as 3 days after the induction of differentiation and accumulated into a fourfold increase in TERT expression in cells that carried the \u221257A/C or the \u2212146C/T mutation and an 8\u201312-fold increase in cells in which transcription depended on the endogenous TERT promoter with the \u2212124C/T mutation (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "ba49921d-6e66-47ca-9af7-c0ff27cc156a",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C46",
+      "claim": "Cells with the \u2212124C/T mutation showed an 8\u201312-fold increase in TERT expression during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This failure of TERT transcriptional silencing became apparent as early as 3 days after the induction of differentiation and accumulated into a fourfold increase in TERT expression in cells that carried the \u221257A/C or the \u2212146C/T mutation and an 8\u201312-fold increase in cells in which transcription depended on the endogenous TERT promoter with the \u2212124C/T mutation (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "2ca6b0c1-0a81-456b-b4d3-cb07d26a7bf8",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C47",
+      "claim": "TERT transcription was undetectable in differentiated wild-type fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, TERT transcription was undetectable in differentiated wild-type fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "fb71bda9-fd3a-4dea-96b9-6277cce03ed1",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C48",
+      "claim": "Fibroblasts with the cancer-associated promoter mutations showed high levels of TERT expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fibroblasts with the cancer-associated promoter mutations showed high levels of TERT expression (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "ddbeeb2a-e6a2-4075-bff0-566063194aaf",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C49",
+      "claim": "Telomerase activity is not detectable in wild-type fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while telomerase activity is not detectable in wild-type fibroblasts, the aberrant TERT expression resulted in robust telomerase activity in fibroblasts that contained the promoter mutations (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TRAP assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "1ff80829-fa4f-4fa1-8069-4da651e173ca",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C50",
+      "claim": "The aberrant TERT expression resulted in robust telomerase activity in fibroblasts that contained the promoter mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while telomerase activity is not detectable in wild-type fibroblasts, the aberrant TERT expression resulted in robust telomerase activity in fibroblasts that contained the promoter mutations (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TRAP assay data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "ef9dea7e-0d02-4d21-851d-81be89b4ad0e",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C51",
+      "claim": "The failure to repress TERT expression persists in fibroblasts as late as 45 days after differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore we confirmed that this failure to repress TERT expression persists in fibroblasts as late as 45 days after differentiation (Figures 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "b0f1baf3-31df-4f31-a62c-dde4b96a19f5",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C52",
+      "claim": "Independent of their genotype, all cells were able to differentiate into NPCs and neurons showing equal down-regulation of OCT4 expression and induction of neuronal marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of their genotype, all cells were able to differentiate into NPCs and neurons showing equal down-regulation of OCT4 expression and induction of neuronal marker genes (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "99b41604-356d-41b5-a9b7-4119758bb217",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C53",
+      "claim": "Both NPCs and neurons that carried the TERT promoter mutations failed to repress TERT transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a striking difference became apparent in TERT levels as both NPCs and neurons that carried the TERT promoter mutations failed to repress TERT transcription (Figure 4A,C and Figures 4\u2014figure supplement 1) and showed robust telomerase activity (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 4A, 4C, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "d647f336-3731-41c6-af52-68b8b26b9aeb",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C54",
+      "claim": "NPCs and neurons that carried the TERT promoter mutations showed robust telomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a striking difference became apparent in TERT levels as both NPCs and neurons that carried the TERT promoter mutations failed to repress TERT transcription (Figure 4A,C and Figures 4\u2014figure supplement 1) and showed robust telomerase activity (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TRAP assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "aeb0c1c3-88bd-440c-bcca-5fc91bdf6a03",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C55",
+      "claim": "When neurons were maintained in the presence of a mitotic inhibitor, the promoter mutations led to elevated TERT mRNA and telomerase activity levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when neurons were maintained in the presence of a mitotic inhibitor, the promoter mutations led to elevated TERT mRNA and telomerase activity levels, suggesting that telomerase activity can accumulate in slowly and non-dividing cells as late as 1 month after induction of terminal differentiation (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR and TRAP assay data shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "a13f4d2f-3cbe-4989-b74f-00dd7a318411",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C56",
+      "claim": "Telomerase activity levels in \u2212124C/T NPCs were equivalent to the activity found in immortal Hela S3 cells and about 50% of the activity found in hESCs, HCT116, and 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, telomerase activity levels in \u2212124C/T NPCs were equivalent to the activity found in immortal Hela S3 cells and about 50% of the activity found in hESCs, HCT116, and 293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by TRAP assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f20b944d-7884-492b-a057-3b2f576d0509",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C57",
+      "claim": "\u2212124C/T fibroblasts had about 50% of the telomerase activity measured in HeLa S3 cells, 30% of that found in 293T cells, and 25% of that of HCT116 colon carcinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, \u2212124C/T fibroblasts had about 50% of the telomerase activity measured in HeLa S3 cells, 30% of that found in 293T cells, and 25% of that of HCT116 colon carcinoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by TRAP assay data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f3a0cffb-fff4-4058-bcac-13cfa21043ae",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C58",
+      "claim": "TERT promoter mutations induce telomerase levels that are sufficient to enable immortalization or at least significantly delay telomere length-induced senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggested that TERT promoter mutations induce telomerase levels that are sufficient to enable immortalization or at least significantly delay telomere length-induced senescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of telomerase activity levels in cells with TERT promoter mutations to those in immortal cancer cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "21f1738c-a724-4ec2-be54-4d378ac0b690",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C59",
+      "claim": "All differentiated cell lines with cancer-associated promoter mutations showed an increase in telomere length compared to the wild-type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we analyzed the functional consequences of increased TERT expression by evaluating telomere length changes in hESCs, NPCs, and fibroblasts derived from the isogenic set of TERT promoter-edited cell lines (Figure 5C,D, and Figure 5\u2014figure supplement 1A). All differentiated cell lines with cancer-associated promoter mutations showed an increase in telomere length compared to the wild-type controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by telomere restriction fragment assay data shown in Figures 5C, 5D, and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "b3d925ac-99de-40db-b8bc-8e27b12ef998",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C60",
+      "claim": "All cell lines injected formed teratomas of approximately equal size.",
+      "claim_type": "EXPLICIT",
+      "source": "All cell lines injected formed teratomas of approximately equal size, were explanted simultaneously (75 days after injection), and analyzed for their telomere length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the teratoma formation assay described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "5da1900f-2cce-4ab1-b425-ed2595c306f1",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C61",
+      "claim": "Cells with TERT promoter mutations carried aberrantly long telomeres in teratomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this unbiased approach, we again found that cells with TERT promoter mutations carried aberrantly long telomeres, with the \u2212124C/T mutation having the strongest defect in silencing telomerase activity and retaining almost identical telomere length as undifferentiated hESCs (Figure 5C,E and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by telomere restriction fragment assay data shown in Figures 5E and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f9b3e66f-4e4e-4c76-a9b9-48ed9d8886b9",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C62",
+      "claim": "The \u2212124C/T mutation had the strongest defect in silencing telomerase activity and retained almost identical telomere length as undifferentiated hESCs in teratomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this unbiased approach, we again found that cells with TERT promoter mutations carried aberrantly long telomeres, with the \u2212124C/T mutation having the strongest defect in silencing telomerase activity and retaining almost identical telomere length as undifferentiated hESCs (Figure 5C,E and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by telomere restriction fragment assay data shown in Figures 5C, 5E, and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4d35a75d-5c16-4429-921f-e36a58607ef4",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C63",
+      "claim": "The data demonstrated the causal relationship between the TERT promoter mutations and telomere maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrated the causal relationship between the TERT promoter mutations and telomere maintenance and showed that the TERT promoter mutations can up-regulate TERT levels sufficiently to suppress telomere erosion without additional tumor-selected changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing that TERT promoter mutations lead to maintained telomere length in differentiated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "2308b104-83f6-437d-a588-3dddbfb88f34",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C64",
+      "claim": "TERT promoter mutations can up-regulate TERT levels sufficiently to suppress telomere erosion without additional tumor-selected changes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrated the causal relationship between the TERT promoter mutations and telomere maintenance and showed that the TERT promoter mutations can up-regulate TERT levels sufficiently to suppress telomere erosion without additional tumor-selected changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing that TERT promoter mutations alone are sufficient to maintain telomere length in differentiated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "205a6d54-7256-43b0-ba8b-205d8bd8a7e8",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C65",
+      "claim": "The most frequent mutation, \u2212124C/T, increased TERT mRNA levels in hESCs by about 2\u20133 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the impact of these mutations in hESCs, we showed that the most frequent mutation, \u2212124C/T, increased TERT mRNA levels in hESCs by about 2\u20133 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "e8c182bf-2122-4684-9724-d62d3bb7c624",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C66",
+      "claim": "Neither the \u221257A/C nor the \u2212146C/T mutation led to an increase in TERT transcription in hESCs, despite the fact that these mutations generate the same putative ETS-binding motif of TTCCGG.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither the \u221257A/C nor the \u2212146C/T mutation led to an increase in TERT transcription, despite the fact that these mutations generate the same putative ETS-binding motif of TTCCGG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "4d3468f4-db37-40aa-b389-9efd24251975",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C67",
+      "claim": "There is a strong positional effect between the location of the ETS mutation and the core transcription initiation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a strong positional effect between the location of the ETS mutation and the core transcription initiation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that mutations at different positions have different effects on TERT transcription despite creating the same binding motif.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "7af9c129-29e5-497b-a0d6-ec8e8a081a30",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C68",
+      "claim": "A single point mutation at position \u221289 (C/G, \u221231 bp upstream of the TSS) would result in the same TTCCGG sequence but has not been reported to be associated with cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of such context-dependent positional constraints between the TERT promoter mutations and the core transcriptional machinery is further supported by the fact that a single point mutation at position \u221289 (C/G, \u221231 bp upstream of the TSS) would result in the same TTCCGG sequence. The fact that this mutation has as of now not been reported to be associated with cancer despite it being between the \u221257 and \u2212124 sites is likely due to the need of the core transcription factors to bind to this site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about why certain mutations are not observed in cancer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "b7d5eec3-74a6-4dae-b14f-b0ff71b31beb",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C69",
+      "claim": "All promoter mutations are located in close proximity to the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intriguing to speculate why all promoter mutations are located in close proximity to the TSS; it seems possible that TERT transcriptional regulation is closely linked with the core transcriptional machinery rather than regulated through the canonical positioning of transcription factors along an extended promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observation of the mutation positions and speculation about the mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "75f65495-ae8c-4fdb-b15b-5d3ca606ebce",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C70",
+      "claim": "In hESCs, TR levels, but not TERT levels, are limiting for telomerase assembly and telomere lengthening.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased expression of TERT mRNA in \u2212124C/T containing hESCs did not lead to a significant increase in telomerase activity or pronounced telomere lengthening, establishing that in hESCs TR levels, but not TERT levels, are limiting for telomerase assembly and telomere lengthening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "64d53e93-7ce9-41cd-8c43-3f1165ea4e1f",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C71",
+      "claim": "Immortal hESCs are as uninformative with regard to cancer-associated TERT mutations as immortal tumor tissue or cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, immortal hESCs are as uninformative with regard to cancer-associated TERT mutations as immortal tumor tissue or cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that TERT is not limiting in hESCs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "8bba809d-9f3a-4c02-a976-360134e8c015",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C72",
+      "claim": "Upon differentiation, wild-type hESCs efficiently silence TERT transcription, resulting in loss of telomerase activity and telomere shortening.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas upon differentiation wild-type hESCs efficiently silence TERT transcription, resulting in loss of telomerase activity and telomere shortening, the cancer-associated TERT promoter mutations were sufficient to maintain expression of TERT and resulted in telomerase activity levels comparable to immortal cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "41128275-3c78-46dd-9cec-714151fcd484",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C73",
+      "claim": "The cancer-associated TERT promoter mutations were sufficient to maintain expression of TERT upon differentiation and resulted in telomerase activity levels comparable to immortal cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whereas upon differentiation wild-type hESCs efficiently silence TERT transcription, resulting in loss of telomerase activity and telomere shortening, the cancer-associated TERT promoter mutations were sufficient to maintain expression of TERT and resulted in telomerase activity levels comparable to immortal cancer cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "10ad309a-abf1-4c22-8fcf-45a75a94fb5f",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C74",
+      "claim": "The underlying cancer-causing mechanism is likely a failure to repress telomerase upon differentiation into somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments uncover that the underlying cancer-causing mechanism is likely a failure to repress telomerase upon differentiation into somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that TERT promoter mutations prevent silencing of TERT upon differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "8cd007ff-3f6d-48ce-8653-383d84d320e0",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C75",
+      "claim": "TERT promoter mutations are sufficient to up-regulate TERT expression without additional cancer-selected changes in the genome such as increased levels of ETS factors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that TERT promoter mutations are sufficient to up-regulate TERT expression without additional cancer-selected changes in the genome such as increased levels of ETS factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental design using isogenic cells that differ only in the TERT promoter mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "856b3045-1b37-4364-888b-6e0c3bded9a9",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C76",
+      "claim": "TERT promoter mutations are not frequently found in leukemias and colorectal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "TERT promoter mutations are not frequently found in leukemias and colorectal cancers (Heidenreich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "6d079962-255c-4b1e-972f-22ce768d9c36",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C77",
+      "claim": "TERT is expressed in highly proliferative tissues such as bone marrow, lung, intestine, and skin and is required for their long-term self-renewal capacity and ability to maintain tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct evidence (Chiu et al., 1996; Schepers et al., 2011) as well as the pathology of the telomerase-related disease dyskeratosis congenita in which patients with mutations in the telomere maintenance pathway present with bone marrow failure as well as lung, intestinal, and skin pathologies show that TERT is expressed in these highly proliferative tissues and is required for their long-term self-renewal capacity and ability to maintain tissue homeostasis (Armanios and Price, 2012; Aubert et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "5baccb0f-a428-4372-84d6-656d2794e678",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C78",
+      "claim": "In tissues with telomerase-positive stem cells, mutations in the TERT promoter might be at first neutral, not providing a direct proliferative advantage as telomeres are still long or telomerase is active.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, mutations in the TERT promoter or alterations in the telomerase biogenesis pathway might be at first neutral, not providing a direct proliferative advantage as telomeres are still long or telomerase is active (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference and speculation about the selective advantage of TERT promoter mutations in different cellular contexts, illustrated in Figure 6A.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "71013e15-89c0-46d9-bae4-88ad124acd18",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C79",
+      "claim": "In telomerase-negative cells with short telomeres, a cell acquiring a TERT promoter mutation can bypass the Hayflick limit, immortalize, and outcompete its neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a cell with short telomeres acquiring a TERT promoter mutation can bypass the Hayflick limit (dashed lines), immortalize, and outcompete its neighboring cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference and speculation about the selective advantage of TERT promoter mutations in different cellular contexts, illustrated in Figure 6B.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "0e471230-4bd2-4a05-8910-c9064d47a515",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C80",
+      "claim": "Tumor-initiating cells that are thought to not directly arise from a canonical telomerase-positive stem cell compartment could be challenged by the telomere-dependent proliferative barrier comparatively early in their progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tumor-initiating cells that are thought to not directly arise from a canonical telomerase-positive stem cell compartment (e.g., liposarcomas), that undergo high numbers of divisions after differentiating (e.g., neural-crest derived melanocytes), or that have to reenter a proliferation cycle in response to chronic injury (e.g., urothelial cells and hepatocytes) could be challenged by the telomere-dependent proliferative barrier comparatively early in their progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference and speculation about the selective advantage of TERT promoter mutations in different cellular contexts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "bc703f70-cfb9-4e67-b8da-c9d9ccea7e19",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C81",
+      "claim": "In cell types challenged by the telomere-dependent proliferative barrier early in progression, TERT promoter mutations will provide an immediate and strong proliferative advantage over neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cell types TERT promoter mutations will provide an immediate and strong proliferative advantage over neighboring cells. In this case telomerase activation occurs in cells in which telomerase is absent or low and which have an otherwise mostly intact genome. In these cells activating TERT promoter mutations will be present in most tumor cells and detected as a frequent and thus early event (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference and speculation about the selective advantage of TERT promoter mutations in different cellular contexts, illustrated in Figure 6B.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "72862e74-525d-4f7a-9802-2b0da54db1d9",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C82",
+      "claim": "The benefit of the TERT promoter mutation will be complexly graded depending on telomerase expression, telomere length, and the number of cell divisions in different tissues and with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely this sharp distinction between canonical telomerase-positive stem cell compartments and telomerase-negative compartments is rather continuous in vivo. Telomerase expression, telomere length, and the number of cell divisions will differ between tissues and with age and therefore the benefit of the TERT promoter mutation will be complexly graded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the complexity of TERT promoter mutation effects in vivo.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f56ccb7a-a653-4197-92b2-4cfebcd0af5c",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C83",
+      "claim": "TERT promoter mutations are sufficient to de-repress TERT, providing a potential target to inhibit TERT expression and telomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that TERT promoter mutations are sufficient to de-repress TERT, providing a potential target to inhibit TERT expression and telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental findings and speculation about therapeutic implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "125c4f2c-8783-4c5c-95d2-6000a742265b",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C84",
+      "claim": "The model system described fulfills the requirement for identifying therapeutic approaches specific to TERT promoter mutations and allows for a direct assessment of any potential inhibition by measuring TERT expression following differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to identify therapeutic approaches specific to these promoter mutations, a model system in which TERT is dysregulated solely by these mutations is necessary. Our model system fulfills this requirement and allows for a direct assessment of any potential inhibition by measuring TERT expression following differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the characteristics of the experimental model system developed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "6f33ef5a-d1f7-44ac-b634-7df1e090110e",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C85",
+      "claim": "Specifically targeting the TERT promoter mutations is an attractive approach, as TERT promoter mutations are exclusive to the tumor cells and are not present in surrounding normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically targeting the TERT promoter mutations is an attractive approach, as TERT promoter mutations are exclusive to the tumor cells and are not present in surrounding normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge about the specificity of TERT promoter mutations to tumor cells and speculation about therapeutic implications.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "8815144c-85cd-4777-bbf6-9dd0c514173c",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C86",
+      "claim": "Any intervention that is targeted specifically against TERT promoter mutations is expected to affect tumor cell survival, but not the telomerase-positive adult stem cells of the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, any intervention that is targeted specifically against their mode of operation is expected to affect tumor cell survival, but not the telomerase-positive adult stem cells of the patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the potential selectivity of therapeutic interventions targeting TERT promoter mutations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "de74de7c-d08d-4eb7-8bff-e3a7e1bf8046",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C87",
+      "claim": "Genome-editing experiments were performed in WIBR#3 hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-editing experiments were performed in WIBR#3 hESCs (Lengner et al., 2010), NIH stem cell registry # 0079.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the cell line used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "34b69105-762f-4b59-bf89-68d8087bfa2a",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C88",
+      "claim": "CAS9-mediated genome editing was employed to derive human pluripotent stem cells that carry TERT promoter mutations at the endogenous TERT locus.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we employed CAS9- (clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated systems 9) (Jinek et al., 2012) mediated genome editing to derive human pluripotent stem cells (WIBR#3) that carry TERT promoter mutations at the endogenous TERT locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "969ec0eb-eee7-49da-90fa-e213a8b974eb",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C89",
+      "claim": "Conventional donor-based genome editing strategies with sgRNAs targeting sequences proximal to the targeting site were unsuccessful, likely due to the TERT promoter mutations being in a genomic region with \u223c80% GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially we attempted conventional donor-based genome editing strategies with sgRNAs targeting sequences proximal to the targeting site. These attempts were however unsuccessful, likely due to the TERT promoter mutations being in a genomic region with \u223c80% GC content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about challenges encountered and speculation about the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "cab60f14-d65d-4873-afd4-f5cfa0bbc670",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C90",
+      "claim": "Several sgRNAs in proximity to TERT promoter mutations were found to be toxic to cells shortly after transfection into cancer cells and human primary fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested several sgRNAs in proximity to TERT promoter mutations and found them to be toxic to cells shortly after transfection into cancer cells and human primary fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation about sgRNA toxicity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "edb94b75-1c56-4f44-8e92-f48557c301cb",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C91",
+      "claim": "Correct targeting of TERT\u0394/\u0394 was confirmed by Southern blot and PCR-sequencing of the genomic deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Correct targeting was confirmed by Southern blot and PCR-sequencing of the genomic deletion (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about validation of the targeting strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f476e05f-6012-4214-a08f-73bf1efbfc6b",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C92",
+      "claim": "The complementation strategy successfully generated hESCs that differed exclusively at the TERT locus by expressing TERT either from its wild-type promoter or from a promoter that contained one of the cancer-associated point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This complementation strategy therefore successfully generated hESCs that differed exclusively at the TERT locus by expressing TERT either from its wild-type promoter or from a promoter that contained one of the cancer-associated point mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the successful generation of isogenic cell lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "a3667b9b-4497-4741-bed4-08ae3a79859a",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C93",
+      "claim": "The increase in TERT expression from the \u2212124C/T mutation is in agreement with previous reports that evaluated these mutations using Luciferase reporter constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase is in agreement with previous reports that evaluated these mutations using Luciferase reporter constructs (Horn et al., 2013; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the current findings to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "8bed50b0-6e76-4145-89cc-283f2818cca1",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C94",
+      "claim": "The difference in TERT expression was not due to impaired differentiation of cells with the TERT promoter mutations, as these cells had silenced OCT4 and appropriately induced COL1A1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was not due to impaired differentiation of cells with the TERT promoter mutations, as these cells had silenced OCT4 and appropriately induced COL1A1 expression (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data showing normal differentiation markers in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "cbbc40aa-115a-404c-81de-c9230e4767b8",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "claim_id": "C95",
+      "claim": "Telomerase activity can accumulate in slowly and non-dividing cells as late as 1 month after induction of terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when neurons were maintained in the presence of a mitotic inhibitor, the promoter mutations led to elevated TERT mRNA and telomerase activity levels, suggesting that telomerase activity can accumulate in slowly and non-dividing cells as late as 1 month after induction of terminal differentiation (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and inference from the observation that neurons treated with mitotic inhibitor still show telomerase activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A two-step CRISPR/Cas9 genome editing strategy was developed to introduce cancer-associated TERT promoter mutations at the endogenous locus in human embryonic stem cells. The first step deleted a 1.5 kb region creating telomerase-negative cells (TERT\u2206/\u2206) that died after ~140 days, and the second step reintroduced the region with or without promoter mutations, generating isogenic cell lines differing only at the TERT promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 and C87-C92 describe a well-validated methodological approach with appropriate controls (Southern blot, PCR sequencing, telomere length assays, TRAP assays). The two-step strategy overcame technical challenges and successfully generated isogenic cell lines, as evidenced by Figures 1A-D and supplementary data. The approach is internally consistent and properly controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In hESCs, the -124C/T TERT promoter mutation resulted in a 2-3 fold increase in TERT mRNA expression compared to wild-type controls, while the -57A/C and -146C/T mutations showed no significant increase. Despite elevated TERT mRNA in -124C/T cells, telomerase activity was not significantly increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20-C21, C32-C34, C65-C66, and C93 are supported by qRT-PCR data (Figure 1E) and TRAP assays (Figure 1F) showing differential effects of the three mutations on TERT expression in hESCs. The data are consistent across independent experiments and cell lines (Figure 1\u2014figure supplements 2-3). The lack of increased telomerase activity despite increased TERT mRNA is a key observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In hESCs, TR (telomerase RNA) rather than TERT is the limiting component for telomerase activity. Overexpression of TR strongly increased telomerase activity and telomere elongation in hESCs, while TERT overexpression did not. Upon differentiation to fibroblasts or NPCs, TERT became limiting instead of TR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C35-C40, and C70 are well-supported by overexpression experiments shown in Figure 2. Northern blot (Figure 2B), Western blot (Figure 2C), TRAP assays (Figure 2D), and telomere length measurements (Figure 2E) provide converging evidence. The cell-type-specific switching of the limiting component is demonstrated by comparing hESCs to differentiated cells. This is a critical mechanistic finding explaining why TERT promoter mutations have minimal effect in hESCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "b108cb3b-46f9-451c-a554-e2fb44f7320f",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Upon differentiation to fibroblasts, wild-type cells efficiently silenced TERT expression, but all three TERT promoter mutations prevented this silencing. Cells with -57A/C or -146C/T mutations showed 4-fold increased TERT expression, while -124C/T cells showed 8-12-fold increases. This aberrant TERT expression resulted in robust telomerase activity in differentiated fibroblasts carrying promoter mutations, while wild-type fibroblasts had undetectable telomerase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C23, C41-C51, C72, and C94 are strongly supported by qRT-PCR data (Figures 3A-D), TRAP assays (Figure 3E), and supplementary data (Figure 3\u2014figure supplements 1-2). The data show consistent failure to silence TERT across multiple time points (up to 45 days), independent cell lines, and clonal populations. Differentiation markers (OCT4, COL1A1) confirm proper differentiation, ruling out impaired differentiation as an explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "9808b0ef-3611-4025-b4d6-02ec6e1dba51",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TERT promoter mutations prevented TERT silencing in neural precursor cells (NPCs) and terminally differentiated neurons, resulting in robust telomerase activity. This effect persisted even in post-mitotic neurons treated with mitotic inhibitors for up to 1 month after terminal differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 and C95 are supported by qRT-PCR data (Figures 4A, 4C), TRAP assays (Figure 4D), and immunofluorescence (Figure 4B) showing proper neuronal differentiation. The persistence of telomerase activity in non-dividing neurons is particularly striking and well-documented. Supplementary data (Figure 4\u2014figure supplement 1) confirm findings in independent clones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "45ef1006-f3a5-448c-949b-4e9f685ac7b8",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Differentiated cells with TERT promoter mutations exhibited telomerase activity levels comparable to immortal cancer cell lines. The -124C/T NPCs had telomerase activity equivalent to HeLa S3 cells and ~50% of hESCs, while -124C/T fibroblasts had 25-50% of the activity found in various cancer cell lines. All differentiated cell lines with promoter mutations showed increased telomere length compared to wild-type controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C56-C59 are supported by comparative TRAP assays (Figures 5A-B) and telomere restriction fragment assays (Figures 5C-D and Figure 5\u2014figure supplement 1A). The direct comparison to established cancer cell lines provides important context for the functional significance of the observed telomerase activity levels. The telomere length data demonstrate functional consequences of sustained telomerase activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "7db86913-bbc3-41b7-bd9d-f6cfa3f5a504",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In teratoma formation assays, cells with TERT promoter mutations maintained aberrantly long telomeres compared to wild-type controls. The -124C/T mutation showed the strongest effect, retaining telomere lengths nearly identical to undifferentiated hESCs. This demonstrates that TERT promoter mutations alone are sufficient to suppress telomere erosion without additional tumor-selected changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by teratoma formation assays and telomere restriction fragment analysis (Figure 5E and Figure 5\u2014figure supplement 1B). The in vivo teratoma model provides an unbiased assessment of long-term differentiation and telomere maintenance. All cell lines formed teratomas of similar size, controlling for proliferation differences. The data demonstrate causality between TERT promoter mutations and telomere maintenance in a complex in vivo differentiation context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "f8736132-63eb-488a-9c6c-6ca4e4df78df",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TERT promoter mutations are sufficient to overcome the proliferative barrier imposed by telomere shortening without additional tumor-selected mutations, and can promote immortalization and tumorigenesis of incipient cancer cells. The underlying mechanism is failure to repress telomerase upon differentiation into somatic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C73-C75 represent the main conclusions of the study and are well-supported by the collective experimental evidence from differentiation experiments (Figures 3-5), telomerase activity assays, and telomere length measurements. The use of isogenic cell lines differing only at the TERT promoter is critical for establishing sufficiency. The mechanistic insight about failure of silencing rather than activation is novel and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "2e9eec81-722f-4e23-8a3f-61489b489c75",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There is a strong positional effect between the location of TERT promoter mutations and the core transcription initiation machinery. Despite creating the same ETS-binding motif (TTCCGG), mutations at different positions have different effects on TERT transcription. All cancer-associated promoter mutations are located in close proximity to the transcriptional start site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C69 are supported by the differential effects of the three mutations observed in Figure 1E, despite all creating the same binding motif. However, C68 is speculative about why a mutation at position -89 is not observed in cancer. The positional effect observation is valid and important, but the mechanistic explanation remains incomplete. The speculation about the -89 position lacks experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "7075a538-b3bb-4b36-8db8-b56dc976078c",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Immortal hESCs are as uninformative with regard to cancer-associated TERT mutations as immortal tumor tissue or cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by the observation that TERT is not limiting in hESCs (Figure 2), making them unsuitable for studying the functional impact of TERT promoter mutations. This is an important methodological insight that explains why previous studies using tumor cell lines may have been limited. The claim is well-justified by the experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "baf7f01e-517e-47d1-adb8-733f8458dd98",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a model to explain the tumor spectrum of TERT promoter mutations. In tissues with telomerase-positive stem cells and long telomeres (e.g., bone marrow, intestine), TERT promoter mutations may be neutral. In contrast, in telomerase-negative cells with short telomeres (e.g., melanocytes, hepatocytes), TERT promoter mutations provide an immediate proliferative advantage by bypassing the Hayflick limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C82 present a speculative model illustrated in Figure 6. While C76-C77 are supported by citations to prior literature, C78-C82 are largely inferential and speculative. The model is plausible and consistent with the experimental findings, but lacks direct experimental validation in the relevant tissue types. The model makes testable predictions but requires additional work to confirm. The speculation is reasonable but not experimentally demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "90de4459-e63b-418e-9489-2763b33fa8fa",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The isogenic cell line model system provides a platform for identifying therapeutic approaches specific to TERT promoter mutations. Targeting TERT promoter mutations is attractive because they are exclusive to tumor cells and not present in surrounding normal tissue, potentially allowing selective targeting of tumor cells without affecting telomerase-positive adult stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C86 discuss therapeutic implications but are largely speculative. C83 is partially supported by the experimental demonstration that mutations are sufficient to de-repress TERT. C84 correctly describes the utility of the model system. However, C85-C86 are speculative about therapeutic selectivity without experimental validation. No therapeutic interventions were tested in this study. These claims represent reasonable future directions but lack experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    },
+    {
+      "id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec",
+      "content_id": "d2889d4e-6760-4b41-b06c-af72468c4d72",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about TERT promoter mutations in cancer, telomerase biology, and prior characterization of these mutations from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C19, and C36 are background information supported by appropriate citations to prior literature. These claims establish the context and rationale for the study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:31.164118Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d496c4b-9edd-4a46-bc7b-4d71e66752ba",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "23b08e1c-33ad-48e8-a177-19e11dde94ee",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "4348b196-bd39-4b32-82d1-bb820b9cdceb",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "1fb3fa90-e469-44cc-a369-34aa6a3f41d8",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "7e183cfc-dfaa-44bc-ab8a-374f374de410",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "41d7a918-8d02-4201-898a-86dec13e53b1",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "4d18211d-99b0-4a3a-871e-1104643391b7",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "de74de7c-d08d-4eb7-8bff-e3a7e1bf8046",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "34b69105-762f-4b59-bf89-68d8087bfa2a",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "969ec0eb-eee7-49da-90fa-e213a8b974eb",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "cab60f14-d65d-4873-afd4-f5cfa0bbc670",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "edb94b75-1c56-4f44-8e92-f48557c301cb",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "f476e05f-6012-4214-a08f-73bf1efbfc6b",
+      "result_id": "4f431ea3-9301-4e83-9cfe-94be02b6aa61"
+    },
+    {
+      "claim_id": "610993f6-0c03-48c9-bf3c-e7ca4ea1da23",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "ef546023-072e-4b8e-b07f-98a9e3af692a",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "6dda890d-f59d-4250-b1be-45dc32058ac3",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "9129c888-beac-46d2-b224-6b828f70237b",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "f0e6a7bc-52d3-4364-a80d-495c3fb795e2",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "605dad13-e1b3-4ecd-8a69-1ace813f87da",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "205a6d54-7256-43b0-ba8b-205d8bd8a7e8",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "e8c182bf-2122-4684-9724-d62d3bb7c624",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "a3667b9b-4497-4741-bed4-08ae3a79859a",
+      "result_id": "491efaff-43c7-4534-99ba-a0eb8c4e30d2"
+    },
+    {
+      "claim_id": "694c19f2-531b-4a3f-ad4d-b2a606534de1",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "4565cef9-e0bd-4431-a622-8f375a23fa32",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "f97b26b0-3bbe-4421-a18f-39878947f32c",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "83daf961-40dd-42ec-a4a0-e78d9776b184",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "824d5ddd-75d5-43c2-a4ff-ed4b189f5b19",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "72a701d5-bba5-49ce-9f3e-38593fb32d46",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "2af41285-3070-4059-92a5-3477078382d8",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "75f65495-ae8c-4fdb-b15b-5d3ca606ebce",
+      "result_id": "b6af408c-df79-4ddf-b3a5-08c8f7674bd6"
+    },
+    {
+      "claim_id": "07154ee2-517b-4622-8d67-b1b49e630302",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "09bf8f4f-5944-4cee-b968-69e01a848972",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "2eba7439-6912-44bc-b1f0-26adfbde221b",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "af739b8c-51aa-428e-81b4-76dac0112a0c",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "e26bb7fe-8bb9-4272-a4f1-db71bed64c91",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "7a6fb012-ac90-416e-ba17-0a8b3fff3eab",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "331da8ed-7ef5-4d47-b724-00b8b6b39498",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "ba49921d-6e66-47ca-9af7-c0ff27cc156a",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "2ca6b0c1-0a81-456b-b4d3-cb07d26a7bf8",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "fb71bda9-fd3a-4dea-96b9-6277cce03ed1",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "ddbeeb2a-e6a2-4075-bff0-566063194aaf",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "1ff80829-fa4f-4fa1-8069-4da651e173ca",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "ef9dea7e-0d02-4d21-851d-81be89b4ad0e",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "8bba809d-9f3a-4c02-a976-360134e8c015",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "8bed50b0-6e76-4145-89cc-283f2818cca1",
+      "result_id": "b108cb3b-46f9-451c-a554-e2fb44f7320f"
+    },
+    {
+      "claim_id": "b0f1baf3-31df-4f31-a62c-dde4b96a19f5",
+      "result_id": "9808b0ef-3611-4025-b4d6-02ec6e1dba51"
+    },
+    {
+      "claim_id": "99b41604-356d-41b5-a9b7-4119758bb217",
+      "result_id": "9808b0ef-3611-4025-b4d6-02ec6e1dba51"
+    },
+    {
+      "claim_id": "d647f336-3731-41c6-af52-68b8b26b9aeb",
+      "result_id": "9808b0ef-3611-4025-b4d6-02ec6e1dba51"
+    },
+    {
+      "claim_id": "aeb0c1c3-88bd-440c-bcca-5fc91bdf6a03",
+      "result_id": "9808b0ef-3611-4025-b4d6-02ec6e1dba51"
+    },
+    {
+      "claim_id": "cbbc40aa-115a-404c-81de-c9230e4767b8",
+      "result_id": "9808b0ef-3611-4025-b4d6-02ec6e1dba51"
+    },
+    {
+      "claim_id": "bbb5f98f-efee-4fde-95e9-6682a84d9e37",
+      "result_id": "45ef1006-f3a5-448c-949b-4e9f685ac7b8"
+    },
+    {
+      "claim_id": "a13f4d2f-3cbe-4989-b74f-00dd7a318411",
+      "result_id": "45ef1006-f3a5-448c-949b-4e9f685ac7b8"
+    },
+    {
+      "claim_id": "f20b944d-7884-492b-a057-3b2f576d0509",
+      "result_id": "45ef1006-f3a5-448c-949b-4e9f685ac7b8"
+    },
+    {
+      "claim_id": "f3a0cffb-fff4-4058-bcac-13cfa21043ae",
+      "result_id": "45ef1006-f3a5-448c-949b-4e9f685ac7b8"
+    },
+    {
+      "claim_id": "21f1738c-a724-4ec2-be54-4d378ac0b690",
+      "result_id": "45ef1006-f3a5-448c-949b-4e9f685ac7b8"
+    },
+    {
+      "claim_id": "b3d925ac-99de-40db-b8bc-8e27b12ef998",
+      "result_id": "7db86913-bbc3-41b7-bd9d-f6cfa3f5a504"
+    },
+    {
+      "claim_id": "5da1900f-2cce-4ab1-b425-ed2595c306f1",
+      "result_id": "7db86913-bbc3-41b7-bd9d-f6cfa3f5a504"
+    },
+    {
+      "claim_id": "f9b3e66f-4e4e-4c76-a9b9-48ed9d8886b9",
+      "result_id": "7db86913-bbc3-41b7-bd9d-f6cfa3f5a504"
+    },
+    {
+      "claim_id": "4d35a75d-5c16-4429-921f-e36a58607ef4",
+      "result_id": "7db86913-bbc3-41b7-bd9d-f6cfa3f5a504"
+    },
+    {
+      "claim_id": "2308b104-83f6-437d-a588-3dddbfb88f34",
+      "result_id": "7db86913-bbc3-41b7-bd9d-f6cfa3f5a504"
+    },
+    {
+      "claim_id": "f385c556-c77e-4ad0-917d-d05d1798f6e9",
+      "result_id": "f8736132-63eb-488a-9c6c-6ca4e4df78df"
+    },
+    {
+      "claim_id": "610f9fa4-e0af-4fb8-90c1-9494bee71bfb",
+      "result_id": "f8736132-63eb-488a-9c6c-6ca4e4df78df"
+    },
+    {
+      "claim_id": "41128275-3c78-46dd-9cec-714151fcd484",
+      "result_id": "f8736132-63eb-488a-9c6c-6ca4e4df78df"
+    },
+    {
+      "claim_id": "10ad309a-abf1-4c22-8fcf-45a75a94fb5f",
+      "result_id": "f8736132-63eb-488a-9c6c-6ca4e4df78df"
+    },
+    {
+      "claim_id": "8cd007ff-3f6d-48ce-8653-383d84d320e0",
+      "result_id": "f8736132-63eb-488a-9c6c-6ca4e4df78df"
+    },
+    {
+      "claim_id": "4d3468f4-db37-40aa-b389-9efd24251975",
+      "result_id": "2e9eec81-722f-4e23-8a3f-61489b489c75"
+    },
+    {
+      "claim_id": "7af9c129-29e5-497b-a0d6-ec8e8a081a30",
+      "result_id": "2e9eec81-722f-4e23-8a3f-61489b489c75"
+    },
+    {
+      "claim_id": "b7d5eec3-74a6-4dae-b14f-b0ff71b31beb",
+      "result_id": "2e9eec81-722f-4e23-8a3f-61489b489c75"
+    },
+    {
+      "claim_id": "64d53e93-7ce9-41cd-8c43-3f1165ea4e1f",
+      "result_id": "7075a538-b3bb-4b36-8db8-b56dc976078c"
+    },
+    {
+      "claim_id": "856b3045-1b37-4364-888b-6e0c3bded9a9",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "6d079962-255c-4b1e-972f-22ce768d9c36",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "5baccb0f-a428-4372-84d6-656d2794e678",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "71013e15-89c0-46d9-bae4-88ad124acd18",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "0e471230-4bd2-4a05-8910-c9064d47a515",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "bc703f70-cfb9-4e67-b8da-c9d9ccea7e19",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "72862e74-525d-4f7a-9802-2b0da54db1d9",
+      "result_id": "baf7f01e-517e-47d1-adb8-733f8458dd98"
+    },
+    {
+      "claim_id": "f56ccb7a-a653-4197-92b2-4cfebcd0af5c",
+      "result_id": "90de4459-e63b-418e-9489-2763b33fa8fa"
+    },
+    {
+      "claim_id": "125c4f2c-8783-4c5c-95d2-6000a742265b",
+      "result_id": "90de4459-e63b-418e-9489-2763b33fa8fa"
+    },
+    {
+      "claim_id": "6f33ef5a-d1f7-44ac-b634-7df1e090110e",
+      "result_id": "90de4459-e63b-418e-9489-2763b33fa8fa"
+    },
+    {
+      "claim_id": "8815144c-85cd-4777-bbf6-9dd0c514173c",
+      "result_id": "90de4459-e63b-418e-9489-2763b33fa8fa"
+    },
+    {
+      "claim_id": "d9ecd236-7317-4d5a-90e2-e0989c0d609a",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "073676c4-8cca-42e2-b070-2efc6cafa02c",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "8a3f8bec-3752-47e8-a559-c387ae31ff63",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "304b9dd6-bb78-40e1-94a2-5b76d7a575be",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "b26a8485-33d4-4470-997c-e48bb142cd24",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "f090cc59-8e4f-47d0-8b71-5a8754fa40ae",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "527652f1-cc9e-466f-b941-11b4bf861064",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "4abdf75d-3184-4e6b-91c7-2b5780b3a929",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "d79cfb66-a558-4b3e-953c-33a7f6b6e40f",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "ed4441a0-67aa-4f1f-b2bf-eed1500a6a75",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "2d27876d-fc3c-461d-90b2-09f7e1b824f7",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "35e9de7c-f377-4348-867e-1e09430884e5",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "850e6510-d473-472a-91ce-ad5b58e292be",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "6bff8f44-9f62-42f4-944c-d225e9f3369a",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "4ad3508a-2fb7-4356-b1f5-1d60671de98b",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    },
+    {
+      "claim_id": "f97b26b0-3bbe-4421-a18f-39878947f32c",
+      "result_id": "a7f55c4b-3ffa-4f77-8f7d-c0604c7cf4ec"
+    }
+  ],
+  "comparisons": []
+}

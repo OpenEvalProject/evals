@@ -1,0 +1,2116 @@
+{
+  "submission": {
+    "id": "0fdb9fe9-b9a3-455c-b0cb-4d2deaec7466",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:03:20.981409Z",
+    "updated_at": "2025-11-29T05:03:20.981409Z"
+  },
+  "content": [
+    {
+      "id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "submission_id": "0fdb9fe9-b9a3-455c-b0cb-4d2deaec7466",
+      "content_type": "manuscript",
+      "content_text": "# The GARP complex is required for cellular sphingolipid homeostasis\n\n## Authors\n\n- Florian Fr\u00f6hlich<sup>1</sup>\n- Constance Petit<sup>1</sup>\n- Nora Kory<sup>1</sup>\n- Romain Christiano<sup>1</sup>\n- Hans-Kristian Hannibal-Bach<sup>3</sup>\n- Morven Graham<sup>4</sup>\n- Xinran Liu<sup>4</sup>\n- Christer S Ejsing<sup>3</sup>\n- Robert V Farese<sup>1</sup> \u2020\n- Tobias C Walther<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics and Complex Diseases Harvard T.H. Chan School of Public Health Boston United States\n2. Department of Cell Biology Harvard Medical School Boston United States\n3. Department of Biochemistry and Molecular Biology, VILLUM Center for Bioanalytical Sciences University of Southern Denmark Odense Denmark\n4. Center for Cellular and Molecular Imaging Yale School of Medicine New Haven United States\n5. Department of Cell Biology Yale School of Medicine New Haven United States\n6. Broad Institute Cambridge United States\n7. Howard Hughes Medical Institute, Harvard T.H. Chan School of Public Health Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSphingolipids are abundant membrane components and important signaling molecules in eukaryotic cells. Their levels and localization are tightly regulated. However, the mechanisms underlying this regulation remain largely unknown. In this study, we identify the Golgi-associated retrograde protein (GARP) complex, which functions in endosome-to-Golgi retrograde vesicular transport, as a critical player in sphingolipid homeostasis. GARP deficiency leads to accumulation of sphingolipid synthesis intermediates, changes in sterol distribution, and lysosomal dysfunction. A GARP complex mutation analogous to a VPS53 allele causing progressive cerebello-cerebral atrophy type 2 (PCCA2) in humans exhibits similar, albeit weaker, phenotypes in yeast, providing mechanistic insights into disease pathogenesis. Inhibition of the first step of de novo sphingolipid synthesis is sufficient to mitigate many of the phenotypes of GARP-deficient yeast or mammalian cells. Together, these data show that GARP is essential for cellular sphingolipid homeostasis and suggest a therapeutic strategy for the treatment of PCCA2.\n\n## Introduction\n\nEukaryotic membranes are composed of a complex mixture of lipids belonging to three major classes: sphingolipids, sterols, and glycerophospholipids. The lipid composition of membranes is tightly regulated to achieve homeostasis. Several mechanisms control intracellular levels of glycerophospholipids (Loewen et al., 2004; Martin et al., 2007) and sterols (Brown and Goldstein, 1999; Sever et al., 2003; Hampton and Garza, 2009). How cells maintain appropriate sphingolipid levels, however, is much less understood.\n\nSphingolipids make up between 10 and 20% of the mammalian plasma membrane (van Meer et al., 2008). They are generated in the ER and Golgi and are subsequently delivered to the plasma membrane by vesicular transport (Klemm et al., 2009). Sphingolipids at the plasma membrane are internalized by endocytosis and delivered to the lysosome for catabolism. Sphingolipids can also be recycled from endocytic vesicles back to the plasma membrane via the Golgi apparatus (Choudhury et al., 2002). Maintenance of membrane sphingolipid levels is important to ensure plasma membrane integrity and to facilitate normal membrane trafficking at the Golgi apparatus and throughout the endocytic pathway (Trajkovic et al., 2008; Klemm et al., 2009; Shen et al., 2014). In addition, intermediates of sphingolipid synthesis, including ceramide and sphingosine-1-phosphate, are important signaling molecules that mediate cell proliferation, differentiation, and death (Hannun and Obeid, 2008; Maceyka and Spiegel, 2014; Montefusco et al., 2014).\n\nHow cells achieve sphingolipid homeostasis in membranes remains unclear. However, recent studies have shed some light on this process. In yeast, a reduction in plasma membrane sphingolipid levels results in activation of the Ypk1/2 kinases through the TORC2-signaling cascade (Roelants et al., 2011; Berchtold et al., 2012). Substrates of these kinases, the ER-localized Orm1/2 proteins, are negative regulators of serine-palmitoyl transferase (SPT), an enzyme that catalyzes the first and rate-limiting step of sphingolipid synthesis (Breslow et al., 2010). The phosphorylation of Orm1/2 releases these proteins from SPT, thereby initiating sphingolipid synthesis and the generation of the early synthesis intermediates, long-chain bases. In addition, Ypk1/2 kinases phosphorylate key subunits of the sphingolipid metabolic enzyme ceramide synthase, increasing its activity and flux of more distal steps of sphingolipid biosynthesis (Muir et al., 2014).\n\nThe physiological importance of sphingolipid homeostasis is underscored by the links of sphingolipid imbalances to disease. For instance, a number of lysosomal storage diseases, such as Niemann\u2013Pick type C or Gaucher's disease, result from lysosomal accumulation of different sphingolipid species (Platt, 2014). These diseases preferentially affect the central nervous system (Platt, 2014) suggesting that sphingolipid imbalance can lead to neurotoxicity. There are few effective treatments. Therefore, a more complete understanding of sphingolipids is needed and is of significant biomedical importance.\n\nHere, we use a chemical genetics screen to uncover an important role of retrograde endosome-to-Golgi trafficking in maintaining cellular sphingolipid homeostasis. We discover a critical role of the Golgi-associated retrograde protein (GARP) complex in sphingolipid homeostasis, and we provide mechanistic insight into a human mutation in this complex that causes the early-onset neurodegenerative disease progressive cerebello-cerebral atrophy type 2 (PCCA2) (Feinstein et al., 2014). Remarkably, we find that inhibition of sphingolipid synthesis is sufficient to restore crucial aspects of membrane homeostasis when retrograde trafficking via the GARP complex is defective.\n\n## Results\n\n### Endosome-to-Golgi retrograde trafficking is required for sphingolipid homeostasis\n\nTo identify genes involved in the regulation of sphingolipid homeostasis, we performed a quantitative, genome-wide screen in yeast for modulators of a growth defect caused by myriocin, an inhibitor of SPT, which catalyzes the first and rate-limiting step of sphingolipid synthesis (Miyake et al., 1995). Of 5500 yeast strains analyzed, 703 showed a significant interaction with myriocin (p < 0.05), including 326 that suppressed and 377 that exacerbated the growth defect (Figure 1A and Supplementary file 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig1-v2.jpg)\n\n**Figure 1.:** (A) A chemical genetic screen for interactions with myriocin. Calculated T-scores are plotted against colony size on control plates. Genes are color-coded according to their significance score. Red p < 0.001, orange p < 0.01, light blue p < 0.05, blue p > 0.05. (B) A model for retromer- and Golgi-associated retrograde protein (GARP)-mediated retrograde endosome-to-Golgi trafficking. Subunits of the GARP complex and retromer identified in our screen are denoted. Genes are color coded according to their T-score. (C) Depletion of sphingolipids suppresses the growth defect of yeast strains harboring GARP mutations. Wild-type cells and vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394 mutant cells were spotted on control plates and plates containing increasing concentrations of myriocin, as indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Gene ontology (GO) analysis of the hits obtained in our genome-wide chemical genetic screen is shown. Note, the GARP complex is strongly enriched among the suppressor mutants identified (p < 10\u22125), whereas the Golgi complex is not (p > 10\u22123).\n\nOne of the strongest class of suppressors identified in the screen (p < 10\u22127) contained factors mediating retrograde trafficking from endosomes to the Golgi (Figure 1\u2014figure supplement 1). This included mutants in each subunit of the GARP complex (vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394) and in four of five subunits of retromer (vps17\u0394, pep8\u0394, vps35\u0394, vps29\u0394; Figure 1B). In addition, our screen identified two of the three SNARE proteins important for GARP-dependent trafficking (tlg2\u0394, vti1DAMP) and VPS63, a gene overlapping almost completely with the GTPase YPT6 that is involved in Golgi-endosomal trafficking. Consistent with a function of Ypt6 maintaining sphingolipid homeostasis, deletion of one subunit of its guanine nucleotide exchange factor, RIC1, suppressed the growth defect caused by sphingolipid biosynthesis inhibition. However, YPT6 had no significant phenotype in our screen. Similarly IMH1, encoding a protein important for retrograde transport from endosomes to the Golgi had no phenotype (Supplementary file 3). This could indicate that YPT6 and IMH1 are false negatives in our screen (e.g., due to problems of library yeast strains) or indicate they are less critical when sphingolipid synthesis is inhibited.\n\nIn contrast to phenotypes for genes encoding GARP subunits, the disruption of genes involved in related vesicular trafficking machinery, such as the COG or TRAPP complexes(Whyte and Munro, 2002; Sacher et al., 2008), resulted in little change in growth when sphingolipid synthesis was impaired by myriocin treatment (Figure 1\u2014figure supplement 1; Supplementary file 4).\n\nTo validate these results, we spotted GARP complex mutants and control strains on plates containing myriocin. The growth defects in yeast cells harboring GARP mutations were suppressed by myriocin, whereas wild-type cell growth remained impaired (Figure 1C).\n\n### GARP mutants accumulate upstream intermediates of the sphingolipid synthesis pathway\n\nWe hypothesized that the deficiency of the GARP complex may result in the accumulation of a toxic sphingolipid intermediate that is reduced by myriocin treatment. To identify which lipids might contribute to this toxicity, we inhibited key steps of sphingolipid synthesis and examined their effect on cell growth (for an overview see Figure 2\u2014figure supplement 1). In contrast to myriocin treatment, the inhibition of downstream steps of sphingolipid synthesis, such as those catalyzed by Aur1, an inositolphosphorylceramide synthase, or ceramide synthase, by using aureobasidin A (Nagiec et al., 1997) and fumonisin B1(Wu et al., 1995), respectively, strongly inhibited the growth of yeast harboring GARP mutations (Figure 2A,B). This suggests that vps53\u0394 cells accumulate a toxic intermediate upstream ceramide synthase and may not have adequate levels of the downstream products.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig2-v2.jpg)\n\n**Figure 2.:** (A, B, C) Blocking early steps of sphingolipid synthesis exacerbates GARP-associated growth defects. (A) GARP mutants are sensitive to IPC synthase inhibition. Wild-type, vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394 cells were spotted on control plates and plates containing 0.05 \u03bcM aureobasidin A. (B) GARP mutants are sensitive to ceramide synthase inhibition. Wild-type, vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394 cells were spotted on control plates and plates containing 100 \u03bcM fumonisin B1. (C) VPS53 mutants are sensitive to overexpression of the alkaline ceramidase Ypc1. Wild-type or vps53\u0394 cells harboring an empty plasmid or a plasmid encoding YPC1 under control of the GAL10 promoter were spotted on glucose- or galactose-containing plates. (D) GARP mutants are sensitive to high levels of long-chain bases, early sphingolipid intermediates. Wild-type, vps53\u0394, and vps54\u0394 cells were spotted on control plates or plates containing 30 \u03bcM phytosphingosine (PHS). (E) GARP complex deficiency results in an accumulation of long-chain bases. The lipidomic analysis of sphingolipids from vps53\u0394 (black) compared with wild-type strains (white) is shown. LCB = long chain base; CER = ceramide; IPC = inositolphosphorylceramide; MIPC = mannosylinositolphosphorylceramide; M(IP)2C = mannose-(inositol-P)2-ceramide. *p < 0.05; n.s. not significant (F, G) Long-chain bases in GARP mutants are reduced upon myriocin treatment but remain elevated. The levels of (F) dihydrosphingosine (DHS) and (G) PHS from wild-type (white bars), vps52\u0394 (light gray bars), vps53\u0394 (dark gray bars), and vps54\u0394 cells (black bars) to myriocin treatment is plotted as fold change from wild-type. *p < 0.05; n.s. not significant (H) Orm1/2 proteins are hyperphosphorylated in vps53\u0394 mutants. Orm1-HA expressing wild-type or vps53\u0394 cells were analyzed by Western blotting against the HA tag or PGK1 as control. Wild-type cells were treated with 5 \u03bcM myriocin as indicated. Treatment of the cell lysates with \u03bb-phosphatase as indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of sphingolipid synthesis is shown. ER resident enzymes are indicated in blue. Golgi resident enzymes are indicated in yellow. Enzymes with multiple localizations are indicated in gray. The steps of sphingolipid biosynthesis inhibited by myriocin, fumonisin B1, and aureobasidin A are indicated in red.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Time-dependent response of DHS and PHS from wild-type (white lines) and vps53\u0394 cells (black lines) to myriocin treatment is plotted as fold change from time point 0.\n\nConsistent with this hypothesis, vps53\u0394 cells but not wild-type cells overexpressing the alkaline ceramidase Ypc1, which is predicted to deplete ceramides and as a consequence downstream sphingolipids showed almost no detectable growth (Figure 2C). Also consistent with the hypothesis, vps53\u0394 and vps54\u0394 cells, but not wild type cells, were highly sensitive to addition of the upstream sphingolipid synthesis intermediate phytosphingosine (PHS) (Figure 2D).\n\nTo directly assess whether upstream sphingolipid intermediates accumulate in GARP complex-deficient cells, we analyzed cellular lipids by mass spectrometry. Strikingly, vps53\u0394 cells showed an eightfold increase in levels of total long-chain bases compared with wild-type controls (Figure 2E). Among the different long-chain base species, dihydrosphingosine (DHS) increased \u223ctenfold and PHS increased \u223cthreefold (Figure 2F,G). In addition, vps53\u0394 cells had a \u223ctwofold reduction of the complex sphingolipid M(IP)2C (Figure 2E); the levels of IPC, MIPC, and ceramides were unchanged.\n\nBased on the current model of sphingolipid synthesis regulation, we expect that reduction of the complex sphingolipid M(IP)2C in vps53\u0394 cells may activate the upstream sphingolipid synthesis enzyme SPT by releasing Orm1/2 inhibition, thereby exacerbating the GARP mutant phenotype. Consistent with this model, we found that Orm1 was hyperphosphorylated in vps53\u0394 cells compared with controls (Figure 2H).\n\nTogether, these results suggest that blocking the GARP-mediated recycling of lipids to the plasma membrane leads to a toxic build-up of long-chain bases, possibly due to a higher rate of degradation of complex sphingolipids in the vacuole and increased biosynthesis. We therefore reasoned that myriocin treatment reduces this toxicity by lowering the levels of long-chain bases. To evaluate this possibility, we determined the levels of long-chain bases before and after myriocin treatment in vps52\u0394, vps53\u0394, vps54\u0394, and control cells. Importantly, myriocin treatment greatly reduced the accumulation of long-chain bases in each of the GARP mutants (Figure 2F,G). The rate of long-chain base decrease during the myriocin treatment time course was similar in wild-type and vps53\u0394 cells (Figure 2\u2014figure supplement 2), arguing that myriocin is equally effective in reducing sphingolipid synthesis in either strain. However, even after prolonged, DHS levels remained elevated compared with untreated control cells, suggesting the pool of long-chain bases turns over more slowly (Figure 2F).\n\n### Long-chain base accumulation leads to altered vacuolar morphology and function in GARP mutants\n\nWe reasoned that complex sphingolipids fail to be recycled to the plasma membrane in GARP mutants and are instead rerouted for degradation in vacuoles causing accumulation of long-chain bases and triggering lipotoxicity. A prediction from this hypothesis is that vps53\u0394 and wild-type cells would distribute exogenously added, fluorescently labeled sphingosine (NBD-sphingosine) differently. Testing this possibility, we found that added NBD-sphingosine and FM4-64, a marker of endocytic membranes both initially label the plasma membrane, but then segregate into different compartments in wild-type cells: as expected, after 60 min, FM4-64 stained the yeast vacuole, whereas the NBD-sphingosine signal localized in one or a few foci likely representing compartments of the endosomal/secretory pathway (Figure 3A, top control panels). In vps53\u0394 cells, however, both lipids co-localized after 60 min in what appeared to be highly fragmented vacuoles (Conboy and Cyert, 2000; Conibear and Stevens, 2000) (Figure 3A middle control panels). Intriguingly, the abnormal vacuolar morphology in vps53\u0394 cells was partially rescued by 12-hr myriocin treatment, resulting in a few small vacuoles (Figure 3A bottom-myrocin, 3B, 3C, and Figure 3\u2014figure supplement 1 for characterization of vacuolar classes). However, NBD-sphingosine still localized to the vacuoles in myriocin-treated vps53\u0394 cells, not to the plasma membrane as in wild-type cells (Figure 3A). Together, these results suggest that exogenously added long-chain bases are maintained to a large degree in the endosomal/secretory pathway of wild-type cells, but accumulate in the vacuole of GARP mutants. The data also suggest that myriocin treatment of these cells does not restore proper endosome to Golgi recycling of sphingolipids, but partially rescues vacuolar dysfunction, as indicated by restoration of vacuole morphology.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sphingolipid recycling remains blocked upon myriocin treatment and sphingolipids accumulate in vacuoles. Wild-type cells (top panels), wild-type cells treated with myriocin (1 \u03bcM, 12hr), vps53\u0394 cells, or vps53\u0394 cells treated with myriocin (1 \u03bcM, 12hr). NBD-sphingosine, green. Vacuoles (FM4-64), red. Representative images are shown. Scale bar = 2.5 \u03bcm. (B, C) Inhibition of sphingolipid biosynthesis partially restores vacuolar morphology in GARP mutants. (B) Quantification of the vacuolar phenotypes in vps53\u0394 mutants, mock treated or treated with myriocin is shown (Classification, see Supplementary figure 2). (C) Thin-section EM analysis of high-pressure frozen wild-type or vps53\u0394 cells mock-treated (left panels) or treated with myriocin (12hr, 1 \u03bcM; right panels). Representative images are shown. N = nucleus; V = vacuole; LD = lipid droplet. White arrows indicate fragmented vacuoles. Scale bars = 1 \u03bcM (D). Three targets of zinc transcription factor Zap1 are down regulated in the GARP mutant vps53\u0394. A proteomic analysis of vps53\u0394 and wild-type cells is shown. Protein intensities are plotted against light/heavy SILAC ratios. Significant outliers are colored in red (P < 1\u221211), orange (P < 1\u22124), or light blue (p < 0.05); other proteins are shown in dark blue. E) GARP mutant zinc sensitivity is rescued by myriocin treatment. Wild-type and vps53\u0394 cells were spotted on control plates or plates containing 1 \u03bcM myriocin, 4 mM zinc or 1 \u03bcM myriocin and 4 mM zinc.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Vacuoles labeled with Vma1-mars (left panels), bright field images (middle panels), and merged images (right panels) are shown. Phenotypes were classified based on severity. Cells with 1\u20133 round vacuoles were assigned as class I (top panels), cells with multiple small round vacuoles were assigned as class II (middle panels), and cells with a high degree of vacuolar fragmentation and no round vacuolar structures visible were assigned as class 3 (lower panels). Scale bar = 2.5 \u03bcM.\n\nTo further understand the physiological impact of trafficking defects caused by GARP complex deficiency, we analyzed the protein composition of vps53\u0394 mutant cells by mass spectrometry-based proteomics. Among the 3347 proteins analyzed, we found that the levels of three proteins under control of the zinc-dependent transcription factor Zap1 (Lyons et al., 2000) were strongly decreased (Adh4, Zrt1, Zps1; P < 1e\u221211; Figure 3D). Since the yeast vacuole is the main storage organelle for intracellular zinc (Simm et al., 2007), we hypothesized that the altered vacuolar morphology of vps53\u0394 mutants results in increased zinc release from the vacuole contributing to toxicity. Consistent with previous studies (Banuelos et al., 2010), we found that increased levels of zinc exacerbated the growth defect of vps53\u0394 mutants. Importantly, this sensitivity is completely suppressed by myriocin treatment (Figure 3E).\n\nOur proteomic studies also detected significantly (p < 0.05) decreased levels of several ER-resident, early sphingolipid metabolic enzymes, such as Tsc10, Sur2, Sur4, or Phs1, potentially indicating regulatory adaptations to high levels of intracellular long-chain bases (Figure 3D).\n\n### GARP complex deficiency results in altered ergosterol distribution and lipid droplet accumulation\n\nSphingolipids and sterols interact in the plasma membrane and are both internalized by endocytosis, suggesting that their levels might be coordinately regulated (Simons and Vaz, 2004; Jacquier and Schneiter, 2012). We therefore reasoned that sphingolipid imbalance due to GARP deficiency could also lead to sterol accumulation or altered cellular distribution. Indeed, filipin, a dye that binds sterols, accumulated in internal structures of vps53\u0394 and vps54\u0394 cells (Figure 4A). Inhibition of sphingolipid synthesis by myriocin in GARP mutants was sufficient to reverse sterol accumulation, as detected by filipin staining. In contrast, wild-type cells accumulated filipin-positive structures during myriocin treatment. This finding is consistent with the sterol accumulation phenotype of the temperature sensitive SPT mutant lcb1-100 (Baumann et al., 2005).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig4-v2.jpg)\n\n**Figure 4.:** (A) Intracellular sterols accumulate in the GARP mutants vps53\u0394 and vps54\u0394. Wild-type (left panels), vps53\u0394 cells (middle panels), and vps54\u0394 cell (right panels) treated with methanol (top panels) or myriocin (lower panels) were stained with filipin and analyzed by epifluorescence microscopy. Representative images are shown. Scale bar = 2.5 \u03bcm. (B) Neutral lipids accumulate in the GARP mutant vps53\u0394. Lipidomic analysis of neutral lipids isolated from vps53\u0394 (black) expressed in fold change from the wild-type (white). ERG = ergosterol; EE = ergosterol ester; DAG = diacylglycerol, TAG = triacylglycerol. *p < 0.005; n.s. not significant. (C, D) Lipid droplets accumulate in the GARP mutant vps53\u0394. Lipid droplets marked by Faa4-GFP. (C) Representative confocal midsections of wild-type (left) or vps53\u0394 cells are shown. Scale bar = 2.5 \u03bcm. (D) Quantification of (C). The number of lipid droplets per cell compared to wild-type cells (white bar) is shown. n = 100 cells. *p < 0.001; n.s. not significant (E) Components of the GARP complex genetically interact with sterol synthesis genes. Histogram of S-scores for VPS52 extracted from an EMAP (Hoppins et al., 2011) is shown. (F) Model of ergosterol metabolism. Genes are color-coded according to correlation coefficient with the GARP subunit VPS52. Positive-correlated genes are indicated in yellow; anti-correlated genes are indicated in blue.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Tetrad analysis of vps52\u0394 mutants crossed with erg3\u0394 mutants is shown.\n\nLipidomic analyses showed no significant change in cellular ergosterol levels in vps53\u0394 cells. However, we detected a two to threefold increase in ergosterol esters in these cells, suggesting that neutral lipids accumulate due to GARP complex deficiency (Figure 4B). Consistent with this, vps53\u0394 mutants showed a threefold increase in lipid droplets per cell, as identified by the LD marker protein Faa4, compared with wild-type cells (Figure 4C,D).\n\nTo further explore the role of GARP in maintaining sterol homeostasis, we analyzed genetic interaction data (Hoppins et al., 2011) of vps52\u0394 and found synthetic growth defects with mutations in several genes encoding enzymes of ergosterol biosynthesis (ERG2, ERG20, ERG25, ERG26) (Figure 4E). Tetrad analyses of vps53\u0394 erg3\u0394 double mutants confirmed these synthetic growth defects (Figure 4\u2014figure supplement 1). In addition, VPS52 showed positive correlations with many genes in ergosterol metabolism (ERG3, ERG25, ERG26, ERG6, ERG2, and ERG4; Figure 4F), further suggesting a role in maintaining intracellular sterol levels. Together, these results suggest that the GARP complex may help manage sterol levels in cells by recycling them from endosomes to the plasma membrane via the Golgi apparatus.\n\n### A human VPS53 mutation causing neurodegeneration is a partial loss-of-function mutant in yeast assays\n\nCompound heterozygous mutations of human VPS53 were reported recently to cause the neurodegenerative disease PCCA2 (Feinstein et al., 2014). In these patients, one Vps53 allele abolishes protein expression, and the second is a missense mutation (Q695R) in the highly conserved C-terminus of VPS53. To understand the molecular consequences of the latter mutation, we generated a yeast strain harboring an analogous mutation, Q624R, and investigated its effects on lipid homeostasis, retrograde trafficking of proteins between endosomes and the Golgi, and vacuolar morphology. Similar to vps53\u0394 cells, cells harboring the Q624R mutation were resistant to myriocin treatment (Figure 5A). However, growth in the mutant was more impaired than in vps53\u0394 cells, suggesting a partial loss of GARP function in vps53 Q624R cells. Subsequent proteomic analyses revealed that the vps53 Q624R mutant protein is expressed at similar levels as the wild-type protein, indicating that this effect is due to its impaired activity, not its instability (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig5-v2.jpg)\n\n**Figure 5.:** (A) A mutation analogous to the VPS53 allele causing progressive cerebello-cerebral atrophy type 2 (PCCA2) in humans is partially resistant to sphingolipid biosynthesis inhibition induced by myriocin. Wild-type cells harboring an empty plasmid and vps53\u0394 cells harboring an empty plasmid, a plasmid expressing Vps53, or a plasmid expressing the mutant vps53 Q624R were spotted on myriocin-containing (right) plates or control plates containing methanol (left) (B) Endosome-Golgi trafficking is partially impaired in yeast cells expressing the analogous PCCA2-causing mutation vps53 Q624R. The GFP-tagged CPY receptor Vps10-GFP (top panels left and right) was co-expressed with either Sec7-tomato (Sec7-tom; middle left panels) or Vps17-tomato (Vps17-tom; middle right panels) in wild-type and vps53 Q624R mutant cells. Representative confocal midsections are shown; scale bar, 2.5 \u00b5m. (C) The CPY receptor Vps10 accumulates in vps53 Q624R endosomes. Quantification of the distribution of Vps10-GFP between the Sec7-decorated Golgi (white bars) and retromer-decorated endosomes (black bars) in wild-type and vps53 Q624R cells. *p < 0.005; n.s. not significant. (D) Mutations in the GARP complex cause vacuolar fragmentation. Maximum projections of vacuoles marked with RFPmars-tagged V-ATPase subunit Vma1 (left panels) and the GFP-tagged CPY sorting receptor Vps10 (middle panels) in vps53\u0394 cells harboring a plasmid expressing Vps53 (top panels), an empty plasmid (middle panels) or a plasmid expressing a vps53 Q624R mutant (lower panels) are shown; scale bar = 2.5 \u00b5m. (E) Quantification of (D). Cells with class I (white bars), class II (gray bars), and class III (black bars) vacuoles were counted and plotted as percentage of the total number. n = 50. *p < 0.005; n.s. not significant. For phenotypic classification, see Figure 3\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** vps53\u0394 cells harboring a plasmid encoding vps53 Q624R or wild-type Vps53 were labeled with either light or heavy L-lysine. Protein intensities are plotted against light/heavy SILAC ratios. Significant outliers are colored in red (P < 1\u221211), orange (P < 1\u22124), or light blue (p < 0.05); other proteins are shown in dark blue. Note, peptides from wild-type Vps53 or vps53 Q624R were present in similar abundance.\n\nTo evaluate whether endosome-to-Golgi trafficking is also compromised in vps53 Q624R cells, we evaluated this process by assaying the localization of Vps10, the sorting receptor for the vacuolar protease carboxypeptidase Y (Chi et al., 2014). In this assay, a green fluorescent protein (GFP)-tagged form of Vps10 is retrieved from endosomes to the Golgi apparatus by retrograde trafficking (Conibear and Stevens, 2000). We quantified co-localization of Vps10-GFP with the Golgi apparatus (marked with Sec7-tomato) or the endosome (marked by Vps17-tomato) (Figure 5B). Using this assay, we found that cells harboring a vps53 Q624R mutant allele had significantly reduced Vps10 levels in the Golgi apparatus (28%, compared with 43% in wild-type cells) and increased signal in the endosome (49%, compared with 24% in wild-type cells; Figure 5C), suggesting that retrograde trafficking is indeed impaired.\n\nAlso consistent with a partial loss of GARP function, vps53 Q624R mutant cells showed vacuolar fragmentation, highlighted by multiple small vacuoles in cells, which we found three times more frequently than in control cells (33% vs 11%, Figure 5D,E, Figure 3\u2014figure supplement 1 for characterization of vacuolar classes). This intermediate phenotype appears to be similar to vacuoles in vps53\u0394 cells depleted for sphingolipids (Figure 3A) and is much weaker than in vps53\u0394 mutants in which all cells have highly fragmented vacuoles with no typical round structures apparent (Figure 5D,E).\n\n### GARP deficiency-associated defects in mammalian cells are suppressed by inhibition of sphingolipid synthesis\n\nTo determine whether GARP's function in sphingolipid homeostasis is conserved in mammals, we assessed the phenotype of HeLa cells depleted of the GARP complex. Similar to our findings in yeast, knock-down of the VPS53 GARP subunit caused accumulation of cholesterol in internal structures of HeLa cells, based on filipin staining (Figure 6A and (Perez-Victoria et al., 2010)). Notably, this accumulation was reduced dramatically by myriocin treatment, restoring filipin staining to levels similar to control cells treated with myriocin (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig6-v2.jpg)\n\n**Figure 6.:** (A, B) Myriocin treatment reduced build-up of free cholesterol due to GARP complex deficiency. (A) Filipin staining of unesterified cholesterol in control (top panels) or Vps53 knock-down (lower panels) in HeLa cells treated with 1 \u03bcM myriocin for 12 hr (right panels) or DMSO as a control (left panels). Representative images are shown. Scale bar = 5 \u03bcm. (B) Quantification of the average free cholesterol filipin intensity/cell normalized to control cells. n = 32. *p < 0.0005; n.s. not significant. (C) Myriocin treatment partially restored intracellular distribution of lysosomes in the GARP KD. Control cells (top panels) or Vps53-KD cells (lower panels) were treated with 1 \u03bcM myriocin for 12 hr (right panels) or DMSO as a control (left panels) and stained with an antibody against the lysosomal protein LAMP-1. Representative confocal midsections are shown; scale bar = 2.5 \u03bcm. (D) Myriocin treatment reduced accumulations of early sphingolipid intermediates due to GARP complex deficiency. Lipidomic analysis of mock-treated HeLa control cells (white bars), myriocin-treated control cells (light gray bars), mock-treated VPS53 KD cells (dark gray bars), or myriocin-treated VPS53 KD cells (black bars) is shown. Levels are plotted as fold change from that of mock-treated control cells. Error bars represent the average of three independent experiments. *p < 0.05; n.s. not significant. (E) Lipidomic analysis of mock-treated control fibroblasts (white bars), myriocin-treated control fibroblasts (light gray bars), mock-treated PCCA2 patient fibroblasts (dark gray bars), or myriocin-treated PCCA2 patient fibroblasts (black bars) is shown. Levels are plotted as fold change from mock-treated control fibroblasts. Error bars represent the average of six independent experiments. *p < 0.05; n.s. not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Lipidomic analysis of mock-treated HeLa control cells (white bars), myriocin-treated control cells (light gray bars), mock-treated VPS53 KD cells (dark gray bars), and myriocin-treated VPS53 KD cells (black bars) is shown. Levels are plotted as mole percent. Error bars represent the average of three independent experiments. *p < 0.05; n.s. not significant.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08712/elife-08712-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** HeLa control cells and HeLa VPS53 KD cells were analyzed by Western blotting against VPS53, LAMP1, or tubulin as control.\n\nGARP complex deficiency results in a defect in retrograde transport, leading to defects in lysosome morphology in HeLa cells (Perez-Victoria et al., 2008). We therefore reasoned that lysosome dysfunction could contribute to the toxicity caused by GARP deficiency. We confirmed that lysosomes appeared swollen and clustered in the juxtanuclear area of Vps53 knock-down cells, although LAMP1 protein levels were normal (Figure 6C, Figure 6\u2014figure supplement 2). Importantly, myriocin treatment resulted in a more uniform lysosome distribution and partially reduced the size of LAMP-1 positive lysosomes in Vps53 knock-down cells (Figure 6C). In contrast, lysosome morphology in control cells was not appreciably affected.\n\nTo test whether these defects could be caused by accumulation of sphingolipid metabolism intermediates, we isolated sphingolipids from myriocin- or mock-treated VPS53 knock-down and control cells and analyzed them by lipidomics. We found a \u223c2.5 fold increase in hexosylceramide and a significant increase in the levels of sphingosine and sphinganine, as well as a decrease in sphingomyelin (Figure 6D and Figure 6\u2014figure supplement 1). Importantly, myriocin treatment restored the levels of these sphingolipid intermediates in VPS53 knock-down cells (Figure 6D).\n\nTo further evaluate the possibility that sphingolipid imbalances could, at least partially, contribute to development of PCCA2, we analyzed sphingolipid levels in fibroblasts from PCCA2 patients and controls. Similar to VPS53 knock-down in HeLa cells, PCCA2 fibroblasts exhibited increases in sphingosine, sphinganine, and ceramides compared with control fibroblasts. Similar to what was observed for VPS53 knock-down in HeLa cells, myriocin treatment reduced the accumulation of sphingolipid intermediates in PCCA2 fibroblasts to levels similar to those found in untreated control fibroblasts (Figure 6E).\n\n## Discussion\n\nHere, we show that GARP complex-mediated retrograde trafficking from endosomes to the Golgi is important for cellular sphingolipid homeostasis. In yeast, loss of the GARP complex results in reduced levels of complex sphingolipids and the accumulation of sphingolipid synthesis intermediates, most notably long-chain bases. Importantly, this accumulation is correlated with abnormal vacuolar morphology and function, suggesting this build-up may be toxic. The depletion of a GARP complex subunit in mammalian cells results in similar phenotypes. Retrograde trafficking likely influences the subcellular localization of a large number of proteins. It is thus remarkable that many of phenotypes associated with GARP deficiency are greatly attenuated by pharmacological inhibition of SPT, the first and rate-limiting step in sphingolipid synthesis. Together, these results suggest that accumulation of toxic lipids may underlie a substantial degree of cellular dysfunction due to genetic defects in retrograde trafficking and that restoration of sphingolipid balance may be a strategy to treat diseases due to these defects.\n\nOur data suggest that the GARP complex is critical for recycling lipids between the plasma membrane, endosomes, and the Golgi apparatus. In both yeast and mammalian cells, GARP complex deficiency disrupted sphingolipid and sterol homeostasis and resulted in the accumulation of sterols in the endo-lysosomal system. Normally, lipids retrieved from the plasma membrane by endocytosis can be recycled via the retrograde endosome-to-Golgi pathway to supply lipids necessary for rapid membrane expansion during growth. In GARP mutants, however, some membrane-derived lipids appear to be rerouted to vacuoles (or lysosomes) for degradation. This rerouting of lipids likely reduces their levels in the plasma membrane and increases the levels of sphingolipids, and their break-down products, in the vacuole/lysosome. This reduction in membrane sphingolipids may explain GARP's apparent role in plasma membrane organization, reported previously in genome-wide visual screens (Grossmann et al., 2008; Frohlich et al., 2009). It is yet unclear whether sphingolipids and sterols follow bulk flow of membrane materials in the endocytic pathway or are preferably recycled by retromer and GARP complexes. Regardless, our data are most consistent with the hypothesis that in the absence of GARP, sphingolipids and sterols are rerouted to vacuoles/lysosomes. In lysosomes, sphingolipids are broken down by acid sphingomyelinase and ceramidase, likely contributing to the elevation in sphingoid bases. However, it is also possible that missorting of sphingolipid synthesis enzymes or trafficking proteins in GARP mutants contributes to the observed phenotypes. For instance, a protein important for the export of sphingolipid intermediates from lysosomes/vacuoles could be missorted in GARP mutants, thus increasing vacuolar sphingolipid accumulation.\n\nSeveral of our findings suggest that the accumulation of early sphingolipid synthesis intermediates due to GARP deficiency may result in cellular toxicity. We show that inhibition of SPT, which lowers long-chain bases in GARP mutants, suppresses the growth defect of these strains. In contrast, the inhibition of later steps of sphingolipid synthesis, for example, by blocking ceramide synthase or inositolphosphoryl ceramide synthase, does not lower long-chain base levels and increases toxicity in GARP mutants. In addition, treatment with the long-chain base PHS exacerbated this toxicity. In yeast, low levels of plasma membrane sphingolipids activate TORC2/Slm/Ypk signaling to phosphorylate the Orm-proteins, relieving their inhibition of SPT, increasing sphingolipid synthesis (Breslow et al., 2010; Han et al., 2010; Roelants et al., 2011; Berchtold et al., 2012). Consistent with a decrease of plasma membrane sphingolipids, we found that the Orm1/2 proteins are hyperphosphorylated in GARP mutants suggesting that de novo sphingolipid synthesis is also upregulated. This increase may exacerbate GARP deficiency-induced lipotoxicity due to increased production of these early synthesis intermediates.\n\nWhy the accumulation of long-chain bases is toxic is currently unclear. One possibility is that long-chain bases possess detergent-like properties, especially in an acidic environment (Jimenez-Rojo et al., 2014), such as in the yeast vacuole. In model membranes, such as giant unilamellar vesicles, this detergent-like action leads to vesicular leakage (Contreras et al., 2006). This could explain the findings of marked vacuolar fragmentation and potential leakage of zinc from GARP-deficient yeast vacuoles. In support of this hypothesis, we found that inhibition of SPT and reduction of long-chain bases suppressed the zinc sensitivity in GARP mutants in yeast. Also consistent with this hypothesis, the accumulation of sphingolipid intermediates impairs ion homeostasis in mammalian lysosomes of a cellular Niemann\u2013Pick type-C disease model (Lloyd-Evans et al., 2008). Alternatively, long-chain bases are known to inhibit glycerolipid synthesis (Wu et al., 1993), which might contribute to their cytotoxicity.\n\nSince sphingolipid and sterol levels are coordinated in membranes, it is not surprising that we also found that GARP deficiency alters sterol metabolism. Sphingolipids and sterols are thought to interact with each other in membranes. Thus, GARP deficiency likely results in missorting of both to the vacuole/lysosome. Our data are most consistent with a model where sphingolipids are degraded in the lysosome/vacuole leading to a toxic build-up of sphingolipid metabolites, whereas sterols are exported and stored in cytoplasmic lipid droplets as more inert fatty acid esters. Consistent with this, lowering sphingolipid levels by myriocin treatment of wild-type cells increases sterols stained by filipin. Possibly, this indicates that in the absence of sufficient sphingolipids, sterols that are not complexed with sphingolipids build-up and are stored in ester form. A surprising finding is that the accumulation of sterols in GARP mutants is suppressed by inhibiting sphingolipid synthesis. These data argue that in addition to sterol missorting in GARP mutants, accumulation of sphingolipid intermediates impairs normal sterol homeostasis, for example, by interfering with sterol export from the vacuole/lysosome or synthesis regulation. This further highlights that a primary cause for defects due to GARP deficiency may be lysosomal/vacuolar dysfunction due to sphingolipid accumulation.\n\nConsistent with our findings on sterol accumulation in GARP mutants, previous screens for lipid droplet phenotypes have identified mutations of several GARP subunit genes (VPS51, VPS53, and VPS54) to be associated with neutral lipid accumulation in LDs (Szymanski et al., 2007; Fei et al., 2008), suggesting that GARP deficiency could modulate sterol metabolism. In addition, mutations in the zebrafish homolog of Vps51, fat-free, result in an increased number of lipid droplets in the liver and intestine (Liu et al., 2010).\n\nMutations in one component of the GARP complex, VPS53, cause PCCA2, a severe neurodegenerative disease characterized by profound mental retardation, progressive microcephaly, spasticity, and early-onset epilepsy (Feinstein et al., 2014). The autosomal disease, linked thus far to two PCCA2 alleles, the missense Q695R mutation, and a splice donor mutation, occurs predominantly in Jewish people of Moroccan ancestry. Our data show that one of these mutations, VPS53 Q695R, leads to defects in yeast that are similar to, albeit not as severe as, a Vps53 deletion. In addition, we show that sphingolipid intermediate levels are elevated in PCCA2 patient fibroblasts, which can be remedied by sphingolipid biosynthesis inhibition with myriocin. Thus, the pathogenesis of PCCA2 could be, at least partially, due to defects in lipid balance and storage.\n\nInterestingly, the disruption of the GARP subunit Vps54 in mice leads to a \u2018wobbler\u2019 phenotype, indicative of neurodegenerative disease sharing characteristics of ALS, including progressive motor degeneration and motor neuron loss (Perez-Victoria et al., 2010; Moser et al., 2013). Analyses of brain lipid profiles suggest sphingolipid intermediates and sterol esters accumulate in ALS patients (Cutler et al., 2002). In addition, mutations in the endo-lysosomal trafficking machinery have been implicated in neurodegenerative disorders including ALS and FTD (CHMP2B, FIG4, VAPB, and VCP) (Yang et al., 2001; Parkinson et al., 2006; Johnson et al., 2010; Maruyama et al., 2010) and defects in retrograde trafficking increase the risk for Parkinson's disease (VPS35) (Zimprich et al., 2011). Our data therefore suggest that lipid imbalance and toxicity due to impaired endo-lysosomal trafficking could be a common feature of this group of neurodegenerative diseases. Since inhibition of SPT reversed some aspects of cellular dysfunction in our studies, our findings suggest that inhibition of the initial step of sphingolipid synthesis may provide a useful therapeutic strategy to pursue in these diseases.\n\n## Materials and methods\n\n### Experimental procedures\n\n#### Yeast strains and plasmids\n\nAll yeast strains used in this study are listed in Supplementary file 1. Standard yeast manipulations, including transformation, homologous recombination of PCR-generated fragments, and tetrad dissections, were performed as described previously (Berchtold and Walther, 2009).\n\nAll plasmids used in this study were generated using methods previously described and are listed in Supplementary file 2.\n\n#### Yeast culture and drug treatment\n\nYeast strains were grown according to standard procedures. Myriocin was added to liquid cultures at a final concentration of 1 \u00b5M. For spotting assays, myriocin, aureobasidin A, fumonisin B1, or PHS was added at concentrations as indicated and the plates incubated at 30\u00b0C for 36 hr.\n\n#### Tissue culture and RNAi\n\nHeLa cells were cultured in Dulbecco's Modified Eagle Medium supplemented with 10% fetal bovine serum (FBS) and PenStrep (Gibco, Life Technologies, Carlsbad, CA). For RNAi, cells were treated two times (on day 1 and 4 after seeding) with 50 nM siGENOME Control siRNA RISC-free small interfering RNA (siRNA; D-001220-01-05; Dharmacon, Lafayette, CO) or VPS53 ON-TARGET plus siRNA (J-017048\u201308) using Oligofectamine (Invitrogen, Carlsbad, CA) according to the manufacturer's protocol. On day 6, cells were treated overnight with 1 \u00b5M myriocin or dimethyl sulfoxide (DMSO) as indicated in serum-free medium and fixed in 4% paraformaldehyde (PFA) for filipin staining or immunofluorescence.\n\nPCCA2 were described previously (Feinstein et al., 2014). PCCA2 patient and control fibroblasts were cultured in Dulbecco's Modified Eagle Medium (DMEM) supplemented with 10% FBS and 1% PenStrep. Three independent human fibroblast lines were used as wild-type controls following genomic DNA sequence analysis to ensure the absence of PCCA2 mutations in VPS53. After reaching 80% confluence (day 3 after seeding), cells were treated with 1 \u00b5M myriocin or mock treated for 72 hr, lysed, and processed for lipidomics. Human fibroblasts were treated longer than HeLa cells to compensate for their slower growth and metabolism.\n\n#### Chemical genomics screen\n\nThe yeast deletion collection (Winzeler et al., 1999) and the yeast DAMP-collection (Breslow et al., 2008) were spotted in triplicates on SC complete plates containing 1 \u00b5M myriocin or methanol and incubated for 48 hr at 30\u00b0C. Pictures were taken with a Nikon D60 camera (Nikon, Japan) in a light box. The colony size was then measured with the program colony grid analyzer (http://sourceforge.net/projects/ht-col-measurer). The T-score was calculated as described before (Collins et al., 2006). The analysis and plots were done with the open source software package R (http://www.r-project.org/).\n\n#### Genetic interaction data\n\nData sets for the analysis of E-MAP data were derived from (Hoppins et al., 2011).\n\n#### Proteomics\n\nFor SILAC labeling, lysine auxotroph strains were grown in yeast nitrogen base (YNB) medium containing either 30 mg/l L-lysine or 30 mg/l L-lysine-U-(Montefusco et al., 2014)C6,15N2. 25 optical density (OD) units of light and heavy-labeled cells were mixed and lysed in 200 \u00b5l buffer containing 50 mM Tris Cl pH = 9.0, 5% sodium dodecyl sulfate (SDS), and 100 mM dithiothreitol (DTT) for 30 min at 55\u00b0C. Lysates were cleared by centrifugation at 17000 g for 10 min and supernatants were diluted with buffer (8 M urea, 0.1 M Tris Cl pH = 8.5) to a final concentration of 0.5% SDS. Proteins were digested with the endoproteinase LysC following the protocol for filter-aided sample preparation, (Wisniewski et al., 2009) as described previously(Frohlich et al., 2013). Peptides were separated by reversed phase chromatography using 50-cm columns as described previously (Frohlich et al., 2013). Mass spectrometry and data analysis were performed as described previously (Frohlich et al., 2013).\n\n#### Lipidomics\n\nYeast lipids were analyzed as described previously (Ejsing et al., 2009; Klose et al., 2012; Olson et al., 2015). For LC-MS/MS analysis, sphingolipids were extracted from yeast according to 7.5 \u03bcg of protein by dichloromethane/methanol extraction (Sullards et al., 2011). The levels of PHS and DHS were determined as described previously (Muir et al., 2014).\n\nMammalian sphingolipids were analyzed as described previously (Bird et al., 2011bib6). For LC-MS/MS analysis, sphingolipids were extracted from HeLa cells according to 7.5 \u03bcg of protein by dichloromethane/methanol extraction (Sullards et al., 2011). Mammalian sphingolipids peaks were identified using the Lipid Search algorithm (MKI, Tokyo, Japan). Peaks were defined through raw files, product ion, and precursor ion accurate masses. Candidate sphingolipids and sphingolipid intermediates were identified by database (>1,000,000 entries) search of positive ion adducts. The accurate mass extracted ion chromatograms were integrated for each identified lipid precursor and peak areas obtained for quantitation. Internal standards for each lipid class (LCB 17:0;2; Cer 18:1;2/17:0;0; HexCer 18:1;2/12:0;0; SM 18:1;2/17:0;0) spiked in prior to extraction were used for normalization and calculation of the amounts of lipids in pmol/\u03bcg protein.\n\n#### Microscopy\n\nFor fluorescence microscopy, yeast cells were grown to OD = 0.6 in synthetic medium at 30\u00b0C unless otherwise indicated. Cells were mounted in synthetic media onto coverslips previously coated with concanavalin A and imaged with a spinning-disk confocal microscope (TiLL iMIC CSU22; Andor, Northern Ireland) using a back-illuminated EM charge-coupled device camera (iXonEM 897; Andor) and a 100 \u00d7 1.4 NA oil immersion objective (Olympus, Japan). 16-bit images were collected using Image iQ (version 1.9; Andor). Images were filtered with a smoothening filter averaging 2 pixels, converted to 8-bit images, and cropped using ImageJ software (http://rsbweb.nih.gov/ij/).\n\n#### Filipin staining\n\nYeast cells from cultures grown to OD600 \u2248 0.5 were fixed with 4% PFA for 10 min and washed three times with H2O. Cells were incubated in the presence of 0.1 mg/ml filipin for 15 min in the dark at constant shaking and directly mounted on concanavalin coated coverslips. Images were taken on a Nikon epifluorescence microscope equipped with a Nikon Intensilight C-HGFIE fiber illuminator.\n\nHeLa cells were fixed for 30 min in 4% PFA in phosphate buffered saline (PBS) and washed 3 times with PBS. Filipin (50 mg/ml) was diluted 1:250 in PBS, and cells were incubated for 30 min at room temperature in the dark, washed 3 \u00d7 5 min, and imaged directly in 6-well glass bottom plates (MatTek, Ashalnd, MA, United States). Images were collected on a DeltaVision workstation (Applied Precision, Issaquah, WA, United States) based on an inverted microscope (IX-70; Olympus) using a 100 \u00d7 1.4 NA oil immersion lens. Images were captured at 24\u00b0C with a 12-bit charge-coupled device camera (CoolSnap HQ; Photometrics, Tucson, AZ, United States) and deconvolved using an iterative-constrained algorithm and the measured point spread function (Chi et al., 2014).\n\n#### FM4-64 and NBD-sphingosine staining\n\nStock solutions of 1 mg/ml FM4-64 and 0.5 mg/ml NBD-sphingosine were prepared in DMSO. 1 OD unit of exponentially growing yeast cells were harvested by centrifugation. Cells were stained in 50 \u03bcl YPD (yeast extract peptone dextrose) medium containing 20 \u03bcg/ml FM4-64 and 10 \u03bcg/ml NBD-sphingosine for 15 min at 30\u00b0C shaking in the dark. Cells were washed 3 times with 1 ml YPD medium and incubated in 1 ml YPD for 45 min, shaking in the dark at 30\u00b0C. Cells were pelleted, resuspended in 50 \u03bcl YPD, and mounted on concavalin A coated coverslips.\n\n#### Immunofluorescence\n\nFor immunofluorescence experiments, HeLa cells were grown in 6-well glass bottom plates (MatTek) and fixed with 4% PFA/0.1 M sodium phosphate buffer pH = 7.2. Blocking and primary and secondary antibody staining were performed using 3% bovine serum albumin in PBS +0.1% Triton X-100.\n\n#### Antibodies\n\nThe primary antibodies used in this study were as follows: mouse anti-GFP antibody (Roche Life Science, Switzerland), mouse anti-HA antibody (Roche Life Science), mouse anti-PGK1 monoclonal antibody (Abcam, United Kingdom), rabbit anti-LAMP1 antibody (Cell Signaling Technology, Danvers, MA, United States), rabbit anti-Vps53 antibody (Atlas Antibodies, Sweden), and mouse anti-tubulin antibodies (Sigma, St. Louis, MO, United States). Secondary antibodies used for immunofluorescence were HRP-conjugated (horseradish peroxidase) anti-mouse and anti-rabbit IgG (Santa Cruz Biotechnology, Dallas, TX, United States) and Alexa 488\u2013conjugated anti-rabbit IgG (Invitrogen/Thermo, Waltham, MA, United States).\n\n#### EM\n\nHigh-pressure freezing and electron microscopy were performed as described previously (Wilfling and et al., 2013).\n",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "8293383c-f5a5-4447-b9a1-58d971599ee3",
+      "submission_id": "0fdb9fe9-b9a3-455c-b0cb-4d2deaec7466",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Tontonoz, Howard Hughes Medical Institute, University of California, Los Angeles , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08712.022](https://doi.org/10.7554/eLife.08712.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cThe GARP Complex Is Required for Cellular Sphingolipid Homeostasis\u201d for peer review at eLife. Your submission has been favorably evaluated by Vivek Malhotra (Senior Editor) and three reviewers, one of whom, Peter Tontonoz, is a member of our Board of Reviewing Editors. One of three reviewers, Suzanne Pfeffer, has agreed to share her identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThis very interesting paper shows that GARP-complex mediated retrograde transport is needed for sphingolipid homeostasis in both yeast and human cells. The authors use genome wide proteomics and lipidomics to show that loss of GARP leads to the accumulation of long chain base sphingolipid synthesis intermediates that may trigger toxicity by release of zinc from the vacuole. Ergosterol esters also increased, as did lipid droplets. Finally, a disease causing allele showed similar defects. These data reveal a surprising result: inhibition of the first step in sphingomyelin synthesis may be able to suppress neurological defects in the GARP complex.\n\nThe reviewers were in agreement that the work was of high quality and would be of interest to the eLife audience. All of the reviewers believed that implicating the GARP complex in sphingolipid homeostasis was an important advance.\n\nA few straightforward issues should be addressed.\n\n1) Does mutation of another GARP subunit show the same effect? E.g., VPS54 mutation leads to an ALS-like phenotype in mice. Could the authors analyze sphingolipid content and myriocin-response of VPS54 mutant cells? This would clarify whether the phenotype is a unique feature of one subunit or an entire pathway that is involved.\n\n2) The authors stress the therapeutic implications, but the relevance of myriocin treatment for neurological disease is not yet clear, as these studies were performed in yeast and knockdown HeLa cells. The impact could be improved with a better PCCA2 model. At a minimum, analysis of the human vps53Q624R mutation should be performed in a human cell line.\n\n3) In Figure 4A, it is important to show whether myriocin can rescue the sterol mislocalization as in Figure 6A, because this would indicate that the primary defect is with sphingolipids. Conversely, does simvastatin also partially rescue the GARP mutant sphingolipid phenotype?\n\n4) Why do the authors think that no Ypt proteins or Imh1 showed up in the screen? Are there any GARP interactors? Please comment more on the breadth of hits beyond Figure 1\u2014figure supplement 1.\n\n5) The authors have not yet provided an explanation for the mis-localization of sphingolipids and the 8-fold increase in LCBs. GARP complex mediates membrane tethering, and it is not clear whether the changes in sphingolipids result directly from a retrograde trafficking defect. Do sphingolipids recycle through the retrograde vesicles controlled by retromer/GARP? Is it possible that GARP malfunction causes mislocalization of key lipid sorting proteins, which then causes mislocalization of sphingolipids? While experiments to address these questions may be beyond the scope of the present study, additional discussion of these issues could be included.\n",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e32f6e58-db5c-4b12-b354-81883f5b0fcf",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C1",
+      "claim": "The GARP complex is required for cellular sphingolipid homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The GARP complex is required for cellular sphingolipid homeostasis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the title and supported throughout the manuscript by multiple experimental approaches in yeast and mammalian cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "fc2e4530-acb0-4a56-a22c-a4d1856c8845",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C2",
+      "claim": "Sphingolipids make up between 10 and 20% of the mammalian plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingolipids make up between 10 and 20% of the mammalian plasma membrane (van Meer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Meer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "7b60314e-64e1-4516-be40-bb377157c6fc",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C3",
+      "claim": "Sphingolipids are generated in the ER and Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "They are generated in the ER and Golgi and are subsequently delivered to the plasma membrane by vesicular transport (Klemm et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klemm et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "9247dafc-4b66-4838-9b15-2698ae4e4a81",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C4",
+      "claim": "Sphingolipids are delivered to the plasma membrane by vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "They are generated in the ER and Golgi and are subsequently delivered to the plasma membrane by vesicular transport (Klemm et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klemm et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "1d907971-8215-4a09-ab04-83e2f5406b18",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C5",
+      "claim": "Sphingolipids at the plasma membrane are internalized by endocytosis and delivered to the lysosome for catabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingolipids at the plasma membrane are internalized by endocytosis and delivered to the lysosome for catabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about sphingolipid trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "60061f55-c203-4a95-8ec8-a36e87f7e9b2",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C6",
+      "claim": "Sphingolipids can be recycled from endocytic vesicles back to the plasma membrane via the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingolipids can also be recycled from endocytic vesicles back to the plasma membrane via the Golgi apparatus (Choudhury et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Choudhury et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "91c6498c-d9e9-4893-b673-61d397cc7457",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C7",
+      "claim": "Ceramide and sphingosine-1-phosphate are important signaling molecules that mediate cell proliferation, differentiation, and death.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, intermediates of sphingolipid synthesis, including ceramide and sphingosine-1-phosphate, are important signaling molecules that mediate cell proliferation, differentiation, and death (Hannun and Obeid, 2008; Maceyka and Spiegel, 2014; Montefusco et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hannun and Obeid, 2008; Maceyka and Spiegel, 2014; Montefusco et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f29c014d-42bb-4eff-830f-83d58cfe77e6",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C8",
+      "claim": "A reduction in plasma membrane sphingolipid levels results in activation of the Ypk1/2 kinases through the TORC2-signaling cascade in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, a reduction in plasma membrane sphingolipid levels results in activation of the Ypk1/2 kinases through the TORC2-signaling cascade (Roelants et al., 2011; Berchtold et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Roelants et al., 2011; Berchtold et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "d110025e-1b67-4cdf-b6ae-6817fa79e31d",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C9",
+      "claim": "Orm1/2 proteins are negative regulators of serine-palmitoyl transferase (SPT).",
+      "claim_type": "EXPLICIT",
+      "source": "Substrates of these kinases, the ER-localized Orm1/2 proteins, are negative regulators of serine-palmitoyl transferase (SPT), an enzyme that catalyzes the first and rate-limiting step of sphingolipid synthesis (Breslow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Breslow et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f5978106-887e-479a-aa6a-729e1d08fdfc",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C10",
+      "claim": "SPT catalyzes the first and rate-limiting step of sphingolipid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Substrates of these kinases, the ER-localized Orm1/2 proteins, are negative regulators of serine-palmitoyl transferase (SPT), an enzyme that catalyzes the first and rate-limiting step of sphingolipid synthesis (Breslow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Breslow et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "4f821c7b-d8c6-4848-b9cc-201094433887",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C11",
+      "claim": "Phosphorylation of Orm1/2 releases these proteins from SPT, thereby initiating sphingolipid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphorylation of Orm1/2 releases these proteins from SPT, thereby initiating sphingolipid synthesis and the generation of the early synthesis intermediates, long-chain bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about sphingolipid regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3e835a66-59e4-4e35-bbe8-3c3b2f87a2ec",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C12",
+      "claim": "Ypk1/2 kinases phosphorylate key subunits of ceramide synthase, increasing its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ypk1/2 kinases phosphorylate key subunits of the sphingolipid metabolic enzyme ceramide synthase, increasing its activity and flux of more distal steps of sphingolipid biosynthesis (Muir et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muir et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "8e6ec614-ea92-4fca-9bc7-793ea424680c",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C13",
+      "claim": "Lysosomal storage diseases such as Niemann\u2013Pick type C and Gaucher's disease result from lysosomal accumulation of different sphingolipid species.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a number of lysosomal storage diseases, such as Niemann\u2013Pick type C or Gaucher's disease, result from lysosomal accumulation of different sphingolipid species (Platt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Platt, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "46343800-1bfc-4e5e-8bc2-2868863a46d5",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C14",
+      "claim": "Lysosomal storage diseases preferentially affect the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "These diseases preferentially affect the central nervous system (Platt, 2014) suggesting that sphingolipid imbalance can lead to neurotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Platt, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "746b12bd-1ee4-4874-a062-cab863f11d7e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C15",
+      "claim": "Sphingolipid imbalance can lead to neurotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "These diseases preferentially affect the central nervous system (Platt, 2014) suggesting that sphingolipid imbalance can lead to neurotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that lysosomal storage diseases affect the CNS.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "63d2c601-d0b3-4bfd-bada-841137ab8b76",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C16",
+      "claim": "Mutations in VPS53 cause progressive cerebello-cerebral atrophy type 2 (PCCA2).",
+      "claim_type": "EXPLICIT",
+      "source": "Compound heterozygous mutations of human VPS53 were reported recently to cause the neurodegenerative disease PCCA2 (Feinstein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Feinstein et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e7a93139-9d51-49d3-9793-a0de51d0100a",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C17",
+      "claim": "A genome-wide screen in yeast identified 703 genes that showed significant interaction with myriocin.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 5500 yeast strains analyzed, 703 showed a significant interaction with myriocin (p < 0.05), including 326 that suppressed and 377 that exacerbated the growth defect (Figure 1A and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured data from the chemical genetic screen presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "7f716709-89d0-4478-b2ea-5afd918c3dbd",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C18",
+      "claim": "326 genes suppressed the myriocin-induced growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 5500 yeast strains analyzed, 703 showed a significant interaction with myriocin (p < 0.05), including 326 that suppressed and 377 that exacerbated the growth defect (Figure 1A and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured data from the chemical genetic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "149bedfe-b0d7-4a81-8f9a-856b59eeea03",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C19",
+      "claim": "377 genes exacerbated the myriocin-induced growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 5500 yeast strains analyzed, 703 showed a significant interaction with myriocin (p < 0.05), including 326 that suppressed and 377 that exacerbated the growth defect (Figure 1A and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured data from the chemical genetic screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "365a3184-5eeb-48d7-9e03-33bda379829e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C20",
+      "claim": "Factors mediating retrograde trafficking from endosomes to the Golgi were among the strongest class of suppressors identified in the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the strongest class of suppressors identified in the screen (p < 10\u22127) contained factors mediating retrograde trafficking from endosomes to the Golgi (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the screen data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3c54f129-39b6-44cb-bbda-8f291335ddd6",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C21",
+      "claim": "Mutants in each subunit of the GARP complex (vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394) were identified as suppressors.",
+      "claim_type": "EXPLICIT",
+      "source": "This included mutants in each subunit of the GARP complex (vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394) and in four of five subunits of retromer (vps17\u0394, pep8\u0394, vps35\u0394, vps29\u0394; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed data from the screen shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "b27291e3-1bfa-4cc0-84cb-ed4cddf12aa6",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C22",
+      "claim": "Four of five subunits of retromer (vps17\u0394, pep8\u0394, vps35\u0394, vps29\u0394) were identified as suppressors.",
+      "claim_type": "EXPLICIT",
+      "source": "This included mutants in each subunit of the GARP complex (vps51\u0394, vps52\u0394, vps53\u0394, and vps54\u0394) and in four of five subunits of retromer (vps17\u0394, pep8\u0394, vps35\u0394, vps29\u0394; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed data from the screen shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "a09a6252-f24a-4932-aca4-93c488b7f24b",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C23",
+      "claim": "Myriocin is an inhibitor of SPT.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify genes involved in the regulation of sphingolipid homeostasis, we performed a quantitative, genome-wide screen in yeast for modulators of a growth defect caused by myriocin, an inhibitor of SPT, which catalyzes the first and rate-limiting step of sphingolipid synthesis (Miyake et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Miyake et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "27506ed5-7f94-4d8b-8e2b-3ae4680543c6",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C24",
+      "claim": "Myriocin treatment suppressed the growth defects in yeast cells harboring GARP mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth defects in yeast cells harboring GARP mutations were suppressed by myriocin, whereas wild-type cell growth remained impaired (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assay shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "82b170dd-7f32-400a-bd2a-73ecf113346a",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C25",
+      "claim": "Wild-type cell growth remained impaired by myriocin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth defects in yeast cells harboring GARP mutations were suppressed by myriocin, whereas wild-type cell growth remained impaired (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assay shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "4f50879f-b349-4333-b2b9-4c5aca4406ce",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C26",
+      "claim": "Aureobasidin A strongly inhibited the growth of yeast harboring GARP mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to myriocin treatment, the inhibition of downstream steps of sphingolipid synthesis, such as those catalyzed by Aur1, an inositolphosphorylceramide synthase, or ceramide synthase, by using aureobasidin A (Nagiec et al., 1997) and fumonisin B1(Wu et al., 1995), respectively, strongly inhibited the growth of yeast harboring GARP mutations (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assays shown in Figure 2A,B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "988aae60-a77a-45e9-9a78-f25f4ebc5d0b",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C27",
+      "claim": "Fumonisin B1 strongly inhibited the growth of yeast harboring GARP mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to myriocin treatment, the inhibition of downstream steps of sphingolipid synthesis, such as those catalyzed by Aur1, an inositolphosphorylceramide synthase, or ceramide synthase, by using aureobasidin A (Nagiec et al., 1997) and fumonisin B1(Wu et al., 1995), respectively, strongly inhibited the growth of yeast harboring GARP mutations (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assays shown in Figure 2A,B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "a554f3dc-28af-4f6d-aa94-060f0b253485",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C28",
+      "claim": "vps53\u0394 cells accumulate a toxic intermediate upstream of ceramide synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that vps53\u0394 cells accumulate a toxic intermediate upstream ceramide synthase and may not have adequate levels of the downstream products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of inhibiting early vs. late steps of sphingolipid synthesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "de777fea-8ac9-4f6a-9a2d-6d7a63eedbe4",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C29",
+      "claim": "vps53\u0394 cells overexpressing the alkaline ceramidase Ypc1 showed almost no detectable growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, vps53\u0394 cells but not wild-type cells overexpressing the alkaline ceramidase Ypc1, which is predicted to deplete ceramides and as a consequence downstream sphingolipids showed almost no detectable growth (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assay shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "195e0d33-8282-435c-8c1f-01767981fde6",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C30",
+      "claim": "vps53\u0394 and vps54\u0394 cells were highly sensitive to addition of phytosphingosine (PHS).",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with the hypothesis, vps53\u0394 and vps54\u0394 cells, but not wild type cells, were highly sensitive to addition of the upstream sphingolipid synthesis intermediate phytosphingosine (PHS) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assay shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3c49290b-47d1-44c7-9044-d0e37532ce5e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C31",
+      "claim": "vps53\u0394 cells showed an eightfold increase in levels of total long-chain bases compared with wild-type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, vps53\u0394 cells showed an eightfold increase in levels of total long-chain bases compared with wild-type controls (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "d6bfa320-19e6-4011-b642-1610ceb3bae7",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C32",
+      "claim": "Dihydrosphingosine (DHS) increased approximately tenfold in vps53\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the different long-chain base species, dihydrosphingosine (DHS) increased \u223ctenfold and PHS increased \u223cthreefold (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "4dd13947-521f-4c19-b413-e8665c0541f1",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C33",
+      "claim": "PHS increased approximately threefold in vps53\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the different long-chain base species, dihydrosphingosine (DHS) increased \u223ctenfold and PHS increased \u223cthreefold (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "77952aad-2b83-4acc-a96f-34e7c41d4b59",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C34",
+      "claim": "vps53\u0394 cells had a twofold reduction of the complex sphingolipid M(IP)2C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, vps53\u0394 cells had a \u223ctwofold reduction of the complex sphingolipid M(IP)2C (Figure 2E); the levels of IPC, MIPC, and ceramides were unchanged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "c455fd7b-c71d-43aa-9bd5-ae205131de26",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C35",
+      "claim": "The levels of IPC, MIPC, and ceramides were unchanged in vps53\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, vps53\u0394 cells had a \u223ctwofold reduction of the complex sphingolipid M(IP)2C (Figure 2E); the levels of IPC, MIPC, and ceramides were unchanged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "01e0d58b-4878-4f19-a0ac-f8125c500df9",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C36",
+      "claim": "Orm1 was hyperphosphorylated in vps53\u0394 cells compared with controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, we found that Orm1 was hyperphosphorylated in vps53\u0394 cells compared with controls (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by Western blotting shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "fc0f24d5-c1f5-46d5-a3b8-d784734cf79c",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C37",
+      "claim": "Myriocin treatment greatly reduced the accumulation of long-chain bases in each of the GARP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, myriocin treatment greatly reduced the accumulation of long-chain bases in each of the GARP mutants (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "a79adbd9-4804-4591-9ff7-c0c8abb483b7",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C38",
+      "claim": "The rate of long-chain base decrease during myriocin treatment was similar in wild-type and vps53\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of long-chain base decrease during the myriocin treatment time course was similar in wild-type and vps53\u0394 cells (Figure 2\u2014figure supplement 2), arguing that myriocin is equally effective in reducing sphingolipid synthesis in either strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by time-course lipidomic analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e8bedb2b-4fdb-40e1-b23b-968f8043d6ec",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C39",
+      "claim": "DHS levels remained elevated in vps53\u0394 cells after prolonged myriocin treatment compared with untreated control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even after prolonged, DHS levels remained elevated compared with untreated control cells, suggesting the pool of long-chain bases turns over more slowly (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "21f4f3bc-0b85-4085-bdb6-038dbcd3cf5d",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C40",
+      "claim": "NBD-sphingosine localized in one or a few foci in wild-type cells after 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing this possibility, we found that added NBD-sphingosine and FM4-64, a marker of endocytic membranes both initially label the plasma membrane, but then segregate into different compartments in wild-type cells: as expected, after 60 min, FM4-64 stained the yeast vacuole, whereas the NBD-sphingosine signal localized in one or a few foci likely representing compartments of the endosomal/secretory pathway (Figure 3A, top control panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by fluorescence microscopy shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "87d74845-b520-4aa5-8ec4-9311a168c429",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C41",
+      "claim": "In vps53\u0394 cells, NBD-sphingosine and FM4-64 co-localized after 60 min in highly fragmented vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "In vps53\u0394 cells, however, both lipids co-localized after 60 min in what appeared to be highly fragmented vacuoles (Conboy and Cyert, 2000; Conibear and Stevens, 2000) (Figure 3A middle control panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by fluorescence microscopy shown in Figure 3A and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "c66f4ba9-738a-4be7-b1bf-2e6f56e8333f",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C42",
+      "claim": "The abnormal vacuolar morphology in vps53\u0394 cells was partially rescued by 12-hr myriocin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the abnormal vacuolar morphology in vps53\u0394 cells was partially rescued by 12-hr myriocin treatment, resulting in a few small vacuoles (Figure 3A bottom-myrocin, 3B, 3C, and Figure 3\u2014figure supplement 1 for characterization of vacuolar classes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by fluorescence microscopy and EM shown in Figure 3A, 3B, 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "cf2eb5c8-321e-461a-aab1-8a914f4f21a5",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C43",
+      "claim": "NBD-sphingosine still localized to the vacuoles in myriocin-treated vps53\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NBD-sphingosine still localized to the vacuoles in myriocin-treated vps53\u0394 cells, not to the plasma membrane as in wild-type cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by fluorescence microscopy shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e852c264-efa9-4d60-90d1-4f4a231845d5",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C44",
+      "claim": "The levels of three proteins under control of the zinc-dependent transcription factor Zap1 were strongly decreased in vps53\u0394 mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 3347 proteins analyzed, we found that the levels of three proteins under control of the zinc-dependent transcription factor Zap1 (Lyons et al., 2000) were strongly decreased (Adh4, Zrt1, Zps1; P < 1e\u221211; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by mass spectrometry-based proteomics shown in Figure 3D and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "66bdefc1-85e1-4f26-bf69-a4ab06aa9890",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C45",
+      "claim": "Increased levels of zinc exacerbated the growth defect of vps53\u0394 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Banuelos et al., 2010), we found that increased levels of zinc exacerbated the growth defect of vps53\u0394 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed and supported by citation to Banuelos et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "083dcb03-56f8-4cfc-9d16-090c49d1e535",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C46",
+      "claim": "Zinc sensitivity in vps53\u0394 mutants is completely suppressed by myriocin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this sensitivity is completely suppressed by myriocin treatment (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assay shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "1586ff4f-bee6-434d-a539-f8387565342a",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C47",
+      "claim": "Filipin accumulated in internal structures of vps53\u0394 and vps54\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, filipin, a dye that binds sterols, accumulated in internal structures of vps53\u0394 and vps54\u0394 cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by filipin staining shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "d556b4ec-c698-4a69-8899-3e6f82c02c25",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C48",
+      "claim": "Inhibition of sphingolipid synthesis by myriocin in GARP mutants reversed sterol accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of sphingolipid synthesis by myriocin in GARP mutants was sufficient to reverse sterol accumulation, as detected by filipin staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed by filipin staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "71483d62-5917-492e-a350-9f9158dcaff5",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C49",
+      "claim": "Wild-type cells accumulated filipin-positive structures during myriocin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, wild-type cells accumulated filipin-positive structures during myriocin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed by filipin staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "ffd8c364-ea4a-4b2b-981e-d0f1f8c458f2",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C50",
+      "claim": "vps53\u0394 cells showed no significant change in cellular ergosterol levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipidomic analyses showed no significant change in cellular ergosterol levels in vps53\u0394 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by lipidomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e70c8d59-fd3f-41c3-8adc-cff165f1fbff",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C51",
+      "claim": "vps53\u0394 cells showed a two to threefold increase in ergosterol esters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected a two to threefold increase in ergosterol esters in these cells, suggesting that neutral lipids accumulate due to GARP complex deficiency (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3ae2eb44-9921-4ecf-b61e-c7f01ea6241e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C52",
+      "claim": "vps53\u0394 mutants showed a threefold increase in lipid droplets per cell compared with wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, vps53\u0394 mutants showed a threefold increase in lipid droplets per cell, as identified by the LD marker protein Faa4, compared with wild-type cells (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by microscopy shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "bf0882df-b508-4b22-a362-d6650d35bf1c",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C53",
+      "claim": "vps52\u0394 showed synthetic growth defects with mutations in several genes encoding enzymes of ergosterol biosynthesis (ERG2, ERG20, ERG25, ERG26).",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the role of GARP in maintaining sterol homeostasis, we analyzed genetic interaction data (Hoppins et al., 2011) of vps52\u0394 and found synthetic growth defects with mutations in several genes encoding enzymes of ergosterol biosynthesis (ERG2, ERG20, ERG25, ERG26) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of genetic interaction data from Hoppins et al., 2011 shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "724e10df-917f-4d74-93a7-47fb94127466",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C54",
+      "claim": "Cells harboring the vps53 Q624R mutation were resistant to myriocin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to vps53\u0394 cells, cells harboring the Q624R mutation were resistant to myriocin treatment (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spotting assay shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "da8b98e1-c2a2-480c-98e9-f7ac136d21dd",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C55",
+      "claim": "Growth in the vps53 Q624R mutant was more impaired than in vps53\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, growth in the mutant was more impaired than in vps53\u0394 cells, suggesting a partial loss of GARP function in vps53 Q624R cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the spotting assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "c19bb2c1-9ddf-41e8-b71b-c192dd061dd0",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C56",
+      "claim": "The vps53 Q624R mutant protein is expressed at similar levels as the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent proteomic analyses revealed that the vps53 Q624R mutant protein is expressed at similar levels as the wild-type protein, indicating that this effect is due to its impaired activity, not its instability (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by proteomic analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f7874aa8-3cea-4592-9750-412380999f45",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C57",
+      "claim": "Cells harboring a vps53 Q624R mutant allele had significantly reduced Vps10 levels in the Golgi apparatus (28%, compared with 43% in wild-type cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we found that cells harboring a vps53 Q624R mutant allele had significantly reduced Vps10 levels in the Golgi apparatus (28%, compared with 43% in wild-type cells) and increased signal in the endosome (49%, compared with 24% in wild-type cells; Figure 5C), suggesting that retrograde trafficking is indeed impaired.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by microscopy shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "5e3bed50-9f9b-47ab-b7ca-6e2ec0002b46",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C58",
+      "claim": "Cells harboring a vps53 Q624R mutant allele had increased Vps10 signal in the endosome (49%, compared with 24% in wild-type cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we found that cells harboring a vps53 Q624R mutant allele had significantly reduced Vps10 levels in the Golgi apparatus (28%, compared with 43% in wild-type cells) and increased signal in the endosome (49%, compared with 24% in wild-type cells; Figure 5C), suggesting that retrograde trafficking is indeed impaired.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by microscopy shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "4c2d7de7-f728-4a73-a42b-aca74768c370",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C59",
+      "claim": "vps53 Q624R mutant cells showed vacuolar fragmentation three times more frequently than control cells (33% vs 11%).",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with a partial loss of GARP function, vps53 Q624R mutant cells showed vacuolar fragmentation, highlighted by multiple small vacuoles in cells, which we found three times more frequently than in control cells (33% vs 11%, Figure 5D,E, Figure 3\u2014figure supplement 1 for characterization of vacuolar classes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by microscopy shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e9425940-8e84-493f-92c6-7a94db14081e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C60",
+      "claim": "Knock-down of VPS53 in HeLa cells caused accumulation of cholesterol in internal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our findings in yeast, knock-down of the VPS53 GARP subunit caused accumulation of cholesterol in internal structures of HeLa cells, based on filipin staining (Figure 6A and (Perez-Victoria et al., 2010)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by filipin staining shown in Figure 6A and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "c0926ce6-d56f-4cc0-b29e-edd23a52f075",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C61",
+      "claim": "Myriocin treatment dramatically reduced cholesterol accumulation in VPS53 knock-down HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this accumulation was reduced dramatically by myriocin treatment, restoring filipin staining to levels similar to control cells treated with myriocin (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by filipin staining shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "b226d2f6-fa6c-4d04-a0dc-e45a36123a89",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C62",
+      "claim": "Lysosomes appeared swollen and clustered in the juxtanuclear area of Vps53 knock-down cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that lysosomes appeared swollen and clustered in the juxtanuclear area of Vps53 knock-down cells, although LAMP1 protein levels were normal (Figure 6C, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by immunofluorescence shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "fc12742f-fb96-4d95-9ab8-e9d99e1145fc",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C63",
+      "claim": "Myriocin treatment resulted in a more uniform lysosome distribution in Vps53 knock-down cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, myriocin treatment resulted in a more uniform lysosome distribution and partially reduced the size of LAMP-1 positive lysosomes in Vps53 knock-down cells (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed by immunofluorescence shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "6622c6ea-25e4-4016-9883-0cc89de33718",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C64",
+      "claim": "VPS53 knock-down HeLa cells showed approximately 2.5 fold increase in hexosylceramide.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a \u223c2.5 fold increase in hexosylceramide and a significant increase in the levels of sphingosine and sphinganine, as well as a decrease in sphingomyelin (Figure 6D and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "ba759386-fc02-4a6f-b5d8-ca9d7e2b4115",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C65",
+      "claim": "VPS53 knock-down HeLa cells showed a significant increase in the levels of sphingosine and sphinganine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a \u223c2.5 fold increase in hexosylceramide and a significant increase in the levels of sphingosine and sphinganine, as well as a decrease in sphingomyelin (Figure 6D and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "892c505f-b08e-4f67-b345-699d761d74e5",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C66",
+      "claim": "VPS53 knock-down HeLa cells showed a decrease in sphingomyelin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a \u223c2.5 fold increase in hexosylceramide and a significant increase in the levels of sphingosine and sphinganine, as well as a decrease in sphingomyelin (Figure 6D and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "2f91cefd-2ed6-4206-9dcc-9caf4c2fb9e4",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C67",
+      "claim": "Myriocin treatment restored the levels of sphingolipid intermediates in VPS53 knock-down cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, myriocin treatment restored the levels of these sphingolipid intermediates in VPS53 knock-down cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "206a6c0b-919b-4c15-a07e-2742350e2e04",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C68",
+      "claim": "PCCA2 fibroblasts exhibited increases in sphingosine, sphinganine, and ceramides compared with control fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to VPS53 knock-down in HeLa cells, PCCA2 fibroblasts exhibited increases in sphingosine, sphinganine, and ceramides compared with control fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by lipidomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "642334e5-30d0-4ee4-b544-1dd2b2bfe202",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C69",
+      "claim": "Myriocin treatment reduced the accumulation of sphingolipid intermediates in PCCA2 fibroblasts to levels similar to those found in untreated control fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed for VPS53 knock-down in HeLa cells, myriocin treatment reduced the accumulation of sphingolipid intermediates in PCCA2 fibroblasts to levels similar to those found in untreated control fibroblasts (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "d5de9515-0879-4422-85ea-a5193ac23028",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C70",
+      "claim": "Loss of the GARP complex results in reduced levels of complex sphingolipids in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, loss of the GARP complex results in reduced levels of complex sphingolipids and the accumulation of sphingolipid synthesis intermediates, most notably long-chain bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the lipidomic data presented in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "76ff5b03-57d7-4daf-a743-833c4ed02e05",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C71",
+      "claim": "Loss of the GARP complex results in the accumulation of sphingolipid synthesis intermediates, most notably long-chain bases, in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, loss of the GARP complex results in reduced levels of complex sphingolipids and the accumulation of sphingolipid synthesis intermediates, most notably long-chain bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the lipidomic data presented in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "11e8d10b-93c4-4358-8e14-b271f4ec82ec",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C72",
+      "claim": "The accumulation of long-chain bases is correlated with abnormal vacuolar morphology and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this accumulation is correlated with abnormal vacuolar morphology and function, suggesting this build-up may be toxic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between lipid accumulation and vacuolar phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "c47c5cde-b21c-42f5-a31c-900c342c412b",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C73",
+      "claim": "Depletion of a GARP complex subunit in mammalian cells results in similar phenotypes to yeast GARP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The depletion of a GARP complex subunit in mammalian cells results in similar phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the mammalian cell data presented in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "238dbc90-23b8-45c9-9736-f7ce3ae17c70",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C74",
+      "claim": "Many phenotypes associated with GARP deficiency are greatly attenuated by pharmacological inhibition of SPT.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus remarkable that many of phenotypes associated with GARP deficiency are greatly attenuated by pharmacological inhibition of SPT, the first and rate-limiting step in sphingolipid synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by multiple experiments showing myriocin rescue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "758eab7a-620e-4689-aa26-dfdd4df81b54",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C75",
+      "claim": "Accumulation of toxic lipids may underlie a substantial degree of cellular dysfunction due to genetic defects in retrograde trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that accumulation of toxic lipids may underlie a substantial degree of cellular dysfunction due to genetic defects in retrograde trafficking and that restoration of sphingolipid balance may be a strategy to treat diseases due to these defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that myriocin treatment rescues many GARP deficiency phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "68bbc9be-19de-40af-b85a-2df3488c32c5",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C76",
+      "claim": "Restoration of sphingolipid balance may be a strategy to treat diseases due to defects in retrograde trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that accumulation of toxic lipids may underlie a substantial degree of cellular dysfunction due to genetic defects in retrograde trafficking and that restoration of sphingolipid balance may be a strategy to treat diseases due to these defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic suggestion based on the rescue experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "0966a417-200f-4a2c-9810-2f81237a2232",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C77",
+      "claim": "The GARP complex is critical for recycling lipids between the plasma membrane, endosomes, and the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the GARP complex is critical for recycling lipids between the plasma membrane, endosomes, and the Golgi apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the trafficking defects and lipid accumulation phenotypes observed in GARP mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "a3f973d4-3c55-470c-9bdc-155d6b5ad0c2",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C78",
+      "claim": "In GARP mutants, some membrane-derived lipids appear to be rerouted to vacuoles (or lysosomes) for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In GARP mutants, however, some membrane-derived lipids appear to be rerouted to vacuoles (or lysosomes) for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NBD-sphingosine localization experiments and lipid accumulation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "2ccf1c04-4983-4b42-b2fb-1fd4418f830f",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C79",
+      "claim": "Rerouting of lipids in GARP mutants likely reduces their levels in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This rerouting of lipids likely reduces their levels in the plasma membrane and increases the levels of sphingolipids, and their break-down products, in the vacuole/lysosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the trafficking defects and lipid measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "10eef328-836a-4a65-9ed9-3051bee7310d",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C80",
+      "claim": "Rerouting of lipids in GARP mutants increases the levels of sphingolipids and their break-down products in the vacuole/lysosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This rerouting of lipids likely reduces their levels in the plasma membrane and increases the levels of sphingolipids, and their break-down products, in the vacuole/lysosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the trafficking defects and lipid measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "62200045-685e-4d02-a0f6-a35f134bdfdd",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C81",
+      "claim": "In lysosomes, sphingolipids are broken down by acid sphingomyelinase and ceramidase.",
+      "claim_type": "EXPLICIT",
+      "source": "In lysosomes, sphingolipids are broken down by acid sphingomyelinase and ceramidase, likely contributing to the elevation in sphingoid bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of lysosomal sphingolipid catabolism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "375a1078-838a-4762-9479-5a9e04871c7e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C82",
+      "claim": "Inhibition of SPT suppresses the growth defect of GARP mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that inhibition of SPT, which lowers long-chain bases in GARP mutants, suppresses the growth defect of these strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the spotting assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3b1ae158-3d08-4cfc-9932-191a486c9b87",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C83",
+      "claim": "Inhibition of ceramide synthase or inositolphosphoryl ceramide synthase increases toxicity in GARP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the inhibition of later steps of sphingolipid synthesis, for example, by blocking ceramide synthase or inositolphosphoryl ceramide synthase, does not lower long-chain base levels and increases toxicity in GARP mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the spotting assays with fumonisin B1 and aureobasidin A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "c727e337-124a-47f6-95f1-991f08713e83",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C84",
+      "claim": "Treatment with the long-chain base PHS exacerbated toxicity in GARP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, treatment with the long-chain base PHS exacerbated this toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the spotting assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "15b1a766-731e-49fd-a6c3-9fa4ba6dedd3",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C85",
+      "claim": "Low levels of plasma membrane sphingolipids activate TORC2/Slm/Ypk signaling to phosphorylate the Orm-proteins in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, low levels of plasma membrane sphingolipids activate TORC2/Slm/Ypk signaling to phosphorylate the Orm-proteins, relieving their inhibition of SPT, increasing sphingolipid synthesis (Breslow et al., 2010; Han et al., 2010; Roelants et al., 2011; Berchtold et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Breslow et al., 2010; Han et al., 2010; Roelants et al., 2011; Berchtold et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f1a91665-fecd-4559-bf66-c2a31a453906",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C86",
+      "claim": "De novo sphingolipid synthesis is upregulated in GARP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a decrease of plasma membrane sphingolipids, we found that the Orm1/2 proteins are hyperphosphorylated in GARP mutants suggesting that de novo sphingolipid synthesis is also upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Orm1/2 hyperphosphorylation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "23e50a8c-ee4e-4db7-b552-b15a3d51599b",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C87",
+      "claim": "Long-chain bases possess detergent-like properties, especially in an acidic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that long-chain bases possess detergent-like properties, especially in an acidic environment (Jimenez-Rojo et al., 2014), such as in the yeast vacuole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jimenez-Rojo et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "8f9131f9-2e77-4802-92a9-4d2e04483392",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C88",
+      "claim": "In model membranes, the detergent-like action of long-chain bases leads to vesicular leakage.",
+      "claim_type": "EXPLICIT",
+      "source": "In model membranes, such as giant unilamellar vesicles, this detergent-like action leads to vesicular leakage (Contreras et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Contreras et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "29f27a6b-933b-4da5-91f9-4f304230fb5a",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C89",
+      "claim": "Inhibition of SPT suppressed the zinc sensitivity in GARP mutants in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this hypothesis, we found that inhibition of SPT and reduction of long-chain bases suppressed the zinc sensitivity in GARP mutants in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the spotting assays shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e58c9086-b636-4364-96c9-a2ede98bf879",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C90",
+      "claim": "The accumulation of sphingolipid intermediates impairs ion homeostasis in mammalian lysosomes of a cellular Niemann\u2013Pick type-C disease model.",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with this hypothesis, the accumulation of sphingolipid intermediates impairs ion homeostasis in mammalian lysosomes of a cellular Niemann\u2013Pick type-C disease model (Lloyd-Evans et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lloyd-Evans et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "24f80c3c-0e21-4083-ad76-c75ccebd1536",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C91",
+      "claim": "Long-chain bases inhibit glycerolipid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, long-chain bases are known to inhibit glycerolipid synthesis (Wu et al., 1993), which might contribute to their cytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 1993.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f0217f99-fd2f-4d58-86ee-f35294bae6ec",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C92",
+      "claim": "Sphingolipids and sterols interact with each other in membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingolipids and sterols are thought to interact with each other in membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about membrane organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "05a245b9-5c93-4739-8543-84bd6a5d173d",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C93",
+      "claim": "In GARP deficiency, sphingolipids are degraded in the lysosome/vacuole leading to a toxic build-up of sphingolipid metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are most consistent with a model where sphingolipids are degraded in the lysosome/vacuole leading to a toxic build-up of sphingolipid metabolites, whereas sterols are exported and stored in cytoplasmic lipid droplets as more inert fatty acid esters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model inferred from the combined lipid and trafficking data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "d28864d5-a317-4e87-ad4c-22315cf34f25",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C94",
+      "claim": "In GARP deficiency, sterols are exported and stored in cytoplasmic lipid droplets as fatty acid esters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are most consistent with a model where sphingolipids are degraded in the lysosome/vacuole leading to a toxic build-up of sphingolipid metabolites, whereas sterols are exported and stored in cytoplasmic lipid droplets as more inert fatty acid esters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model inferred from the combined lipid and trafficking data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "a4a8b1b1-ecae-4771-afff-aa24af66f018",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C95",
+      "claim": "Lowering sphingolipid levels by myriocin treatment of wild-type cells increases sterols stained by filipin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, lowering sphingolipid levels by myriocin treatment of wild-type cells increases sterols stained by filipin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed by filipin staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "10ab42b6-91b6-4b4c-b0d6-9160da7da759",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C96",
+      "claim": "The accumulation of sterols in GARP mutants is suppressed by inhibiting sphingolipid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "A surprising finding is that the accumulation of sterols in GARP mutants is suppressed by inhibiting sphingolipid synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed by filipin staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f5477a51-1a49-4ee8-957e-65b31d360fae",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C97",
+      "claim": "Mutations in VPS51, VPS53, and VPS54 are associated with neutral lipid accumulation in lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings on sterol accumulation in GARP mutants, previous screens for lipid droplet phenotypes have identified mutations of several GARP subunit genes (VPS51, VPS53, and VPS54) to be associated with neutral lipid accumulation in LDs (Szymanski et al., 2007; Fei et al., 2008), suggesting that GARP deficiency could modulate sterol metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Szymanski et al., 2007; Fei et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3f32e969-472c-44bd-abb4-47e81839277c",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C98",
+      "claim": "Mutations in the zebrafish homolog of Vps51, fat-free, result in an increased number of lipid droplets in the liver and intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mutations in the zebrafish homolog of Vps51, fat-free, result in an increased number of lipid droplets in the liver and intestine (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "ea450c5c-cd7e-4a88-94c5-589ed31b112a",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C99",
+      "claim": "PCCA2 is characterized by profound mental retardation, progressive microcephaly, spasticity, and early-onset epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in one component of the GARP complex, VPS53, cause PCCA2, a severe neurodegenerative disease characterized by profound mental retardation, progressive microcephaly, spasticity, and early-onset epilepsy (Feinstein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Feinstein et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "99f34f54-0278-4c82-85f7-1c087184fd36",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C100",
+      "claim": "PCCA2 is linked to two VPS53 alleles: the missense Q695R mutation and a splice donor mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The autosomal disease, linked thus far to two PCCA2 alleles, the missense Q695R mutation, and a splice donor mutation, occurs predominantly in Jewish people of Moroccan ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established information about PCCA2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "9e87edbe-f403-49b2-a06b-f3afdb4c9a76",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C101",
+      "claim": "VPS53 Q695R leads to defects in yeast that are similar to, albeit not as severe as, a Vps53 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that one of these mutations, VPS53 Q695R, leads to defects in yeast that are similar to, albeit not as severe as, a Vps53 deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the yeast experiments with the Q624R mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "03ee51b6-c4db-43f4-8b7a-cb7816d28c62",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C102",
+      "claim": "Sphingolipid intermediate levels are elevated in PCCA2 patient fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that sphingolipid intermediate levels are elevated in PCCA2 patient fibroblasts, which can be remedied by sphingolipid biosynthesis inhibition with myriocin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "66378966-9d13-4918-8dd5-98da6a222bb3",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C103",
+      "claim": "Sphingolipid intermediate levels in PCCA2 patient fibroblasts can be remedied by sphingolipid biosynthesis inhibition with myriocin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that sphingolipid intermediate levels are elevated in PCCA2 patient fibroblasts, which can be remedied by sphingolipid biosynthesis inhibition with myriocin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by lipidomic analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "487cc198-9834-477b-b5e0-4effbfd55936",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C104",
+      "claim": "The pathogenesis of PCCA2 could be, at least partially, due to defects in lipid balance and storage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pathogenesis of PCCA2 could be, at least partially, due to defects in lipid balance and storage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lipid phenotypes observed in PCCA2 fibroblasts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "aabb094e-f268-4356-a6d6-dc4d2858cdc4",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C105",
+      "claim": "The disruption of the GARP subunit Vps54 in mice leads to a 'wobbler' phenotype, indicative of neurodegenerative disease sharing characteristics of ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the disruption of the GARP subunit Vps54 in mice leads to a 'wobbler' phenotype, indicative of neurodegenerative disease sharing characteristics of ALS, including progressive motor degeneration and motor neuron loss (Perez-Victoria et al., 2010; Moser et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Perez-Victoria et al., 2010; Moser et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "2d0c9d3e-e7ed-44ca-9a66-2a5ade073fa3",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C106",
+      "claim": "Sphingolipid intermediates and sterol esters accumulate in ALS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of brain lipid profiles suggest sphingolipid intermediates and sterol esters accumulate in ALS patients (Cutler et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cutler et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "b63c3395-f1c4-4be3-b80a-6de8add8ff87",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C107",
+      "claim": "Mutations in the endo-lysosomal trafficking machinery have been implicated in neurodegenerative disorders including ALS and FTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mutations in the endo-lysosomal trafficking machinery have been implicated in neurodegenerative disorders including ALS and FTD (CHMP2B, FIG4, VAPB, and VCP) (Yang et al., 2001; Parkinson et al., 2006; Johnson et al., 2010; Maruyama et al., 2010) and defects in retrograde trafficking increase the risk for Parkinson's disease (VPS35) (Zimprich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yang et al., 2001; Parkinson et al., 2006; Johnson et al., 2010; Maruyama et al., 2010; Zimprich et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "01c61b06-56ef-441f-bb2d-cc721ca0a2fe",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C108",
+      "claim": "Defects in retrograde trafficking increase the risk for Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mutations in the endo-lysosomal trafficking machinery have been implicated in neurodegenerative disorders including ALS and FTD (CHMP2B, FIG4, VAPB, and VCP) (Yang et al., 2001; Parkinson et al., 2006; Johnson et al., 2010; Maruyama et al., 2010) and defects in retrograde trafficking increase the risk for Parkinson's disease (VPS35) (Zimprich et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zimprich et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "374628c7-16c0-4fa8-a62d-97c505dd27a4",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C109",
+      "claim": "Lipid imbalance and toxicity due to impaired endo-lysosomal trafficking could be a common feature of neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore suggest that lipid imbalance and toxicity due to impaired endo-lysosomal trafficking could be a common feature of this group of neurodegenerative diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the connections between GARP deficiency, lipid imbalance, and neurodegeneration.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "ae9b13f3-d7ce-4bb4-a424-aed0c288276f",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "claim_id": "C110",
+      "claim": "Inhibition of the initial step of sphingolipid synthesis may provide a useful therapeutic strategy in neurodegenerative diseases associated with endo-lysosomal trafficking defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Since inhibition of SPT reversed some aspects of cellular dysfunction in our studies, our findings suggest that inhibition of the initial step of sphingolipid synthesis may provide a useful therapeutic strategy to pursue in these diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic suggestion based on the rescue experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "af1e5da6-fd10-45e2-a723-10d49effe89a",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A genome-wide chemical genetic screen in yeast identified GARP complex and retromer subunits as strong suppressors of myriocin-induced growth defects. Of 5500 strains screened, 703 showed significant interactions with myriocin (p<0.05), with 326 suppressors and 377 enhancers. Retrograde trafficking factors from endosomes to Golgi were among the strongest suppressors (p<10^-7), including all four GARP subunits (vps51\u0394, vps52\u0394, vps53\u0394, vps54\u0394) and four of five retromer subunits. Myriocin treatment suppressed growth defects in GARP mutants but not wild-type cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25 provide converging evidence from a well-designed genome-wide screen with appropriate statistical thresholds (p<0.05, p<10^-7) and validation experiments. The screen data (Figure 1A) and follow-up spotting assays (Figure 1C) consistently demonstrate that GARP complex deficiency suppresses myriocin toxicity. The identification of multiple subunits of the same complex strengthens confidence in the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "e281f349-3498-46a5-a4b4-73834925a9d4",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GARP mutants accumulate toxic long-chain base intermediates upstream of ceramide synthase. Inhibition of downstream sphingolipid synthesis steps (ceramide synthase with fumonisin B1, IPC synthase with aureobasidin A) strongly inhibited GARP mutant growth, while overexpression of alkaline ceramidase Ypc1 eliminated growth. Addition of phytosphingosine (PHS) was toxic to GARP mutants. Lipidomic analysis revealed vps53\u0394 cells had an 8-fold increase in total long-chain bases, with ~10-fold increase in dihydrosphingosine (DHS) and ~3-fold increase in PHS, plus a 2-fold reduction in M(IP)2C, while IPC, MIPC, and ceramide levels were unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C35 present a coherent mechanistic story supported by multiple complementary approaches: pharmacological inhibition at different pathway steps (Figure 2A,B), genetic manipulation (Figure 2C), exogenous lipid addition (Figure 2D), and direct lipidomic measurements (Figure 2E-G). The data consistently point to accumulation of early intermediates upstream of ceramide synthase. The lipidomic measurements provide quantitative support with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "cc2f9e28-5574-44f9-b81f-48d2ea61ca1d",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GARP deficiency leads to Orm1/2 hyperphosphorylation and upregulated sphingolipid synthesis, which is reversed by myriocin treatment. Orm1 was hyperphosphorylated in vps53\u0394 cells (Figure 2H), suggesting de novo sphingolipid synthesis is upregulated. Myriocin treatment greatly reduced long-chain base accumulation in all GARP mutants with similar kinetics to wild-type cells, though DHS levels remained elevated even after prolonged treatment, suggesting slower turnover of the long-chain base pool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 and C86 are supported by Western blot data (Figure 2H) showing Orm1 hyperphosphorylation and time-course lipidomic analysis (Figure 2F,G, Figure 2\u2014figure supplement 2) demonstrating myriocin's effects. The interpretation that de novo synthesis is upregulated is a reasonable inference from the Orm phosphorylation data combined with established knowledge of the TORC2/Ypk/Orm pathway. The persistent elevation of DHS after myriocin treatment is directly measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "b21c5f67-570a-4977-8ca5-bd025755add0",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GARP complex is critical for recycling lipids between plasma membrane, endosomes, and Golgi; in GARP mutants, lipids are rerouted to vacuoles for degradation. NBD-sphingosine localized to endosomal/secretory compartments in wild-type cells but co-localized with FM4-64 in fragmented vacuoles of vps53\u0394 cells after 60 min. Myriocin treatment partially rescued vacuolar morphology in vps53\u0394 cells (confirmed by microscopy and EM), but NBD-sphingosine still localized to vacuoles rather than plasma membrane, suggesting lipid rerouting to vacuoles reduces plasma membrane levels and increases vacuolar sphingolipid breakdown products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 and C77-C80 are supported by fluorescence microscopy (Figure 3A) and EM data (Figure 3B,C). The NBD-sphingosine trafficking experiments provide direct visual evidence for altered lipid routing in GARP mutants. The interpretation that lipids are rerouted to vacuoles for degradation (C78-C80) is a reasonable inference from the trafficking data combined with the lipidomic measurements showing accumulation of breakdown products. However, the model remains somewhat inferential as direct measurement of lipid flux was not performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "aaf60581-7f41-49c2-aaac-b5ee9ec4cd47",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Long-chain base accumulation in GARP mutants causes vacuolar dysfunction and zinc toxicity, which is rescued by myriocin. Proteomic analysis showed three Zap1-regulated proteins (Adh4, Zrt1, Zps1) were strongly decreased in vps53\u0394 cells (P<1e-11). Increased zinc levels exacerbated vps53\u0394 growth defects, but this sensitivity was completely suppressed by myriocin treatment. The accumulation of long-chain bases correlates with abnormal vacuolar morphology and function, suggesting toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46, C72, and C89 are supported by proteomic data (Figure 3D) and growth assays (Figure 3E). The connection between long-chain base accumulation, vacuolar dysfunction, and zinc sensitivity is well-supported by the data. The complete rescue of zinc sensitivity by myriocin provides strong evidence that sphingolipid imbalance underlies the vacuolar dysfunction. The correlation between lipid accumulation and vacuolar phenotypes (C72) is directly observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GARP deficiency causes altered sterol distribution and lipid droplet accumulation, which is reversed by myriocin. Filipin accumulated in internal structures of vps53\u0394 and vps54\u0394 cells, and myriocin reversed this sterol accumulation in GARP mutants while causing accumulation in wild-type cells. Lipidomic analysis showed no change in total ergosterol but 2-3 fold increase in ergosterol esters and 3-fold increase in lipid droplets in vps53\u0394 cells. Genetic interaction data showed vps52\u0394 has synthetic growth defects with ergosterol biosynthesis genes (ERG2, ERG20, ERG25, ERG26). The data support a model where sphingolipids are degraded in vacuoles leading to toxic metabolite buildup, while sterols are exported and stored as inert esters in lipid droplets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 and C92-C96 are supported by filipin staining (Figure 4A), lipidomic analysis (Figure 4B), microscopy (Figure 4C,D), and genetic interaction data (Figure 4E). The sterol phenotypes are well-documented with multiple complementary approaches. The model proposed in C93-C94 is a reasonable inference from the combined data, though it remains somewhat speculative. The surprising finding that myriocin suppresses sterol accumulation in GARP mutants (C96) is directly observed and suggests sphingolipid-sterol crosstalk.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The yeast vps53 Q624R mutation (analogous to human PCCA2-causing VPS53 Q695R) is a partial loss-of-function allele. Cells with vps53 Q624R were resistant to myriocin but showed more impaired growth than vps53\u0394 cells. The mutant protein was expressed at similar levels as wild-type (proteomic analysis), indicating impaired activity rather than instability. Vps10 localization assays showed significantly reduced Golgi levels (28% vs 43% in WT) and increased endosome levels (49% vs 24% in WT), indicating impaired retrograde trafficking. Vacuolar fragmentation occurred three times more frequently than controls (33% vs 11%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 and C101 are supported by spotting assays (Figure 5A), proteomic analysis (Figure 5\u2014figure supplement 1), microscopy-based trafficking assays (Figure 5B,C), and vacuolar morphology analysis (Figure 5D,E). The data consistently demonstrate that the Q624R mutation causes partial loss of GARP function. The quantitative measurements of Vps10 localization and vacuolar fragmentation provide strong evidence for the partial loss-of-function phenotype. This is important for understanding the human disease mutation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "3275c693-56c8-4673-bd74-743b51dfba59",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "VPS53 knockdown in mammalian HeLa cells recapitulates yeast GARP deficiency phenotypes, which are rescued by myriocin. VPS53 knockdown caused cholesterol accumulation in internal structures (filipin staining), which was dramatically reduced by myriocin treatment. Lysosomes appeared swollen and clustered in the juxtanuclear area (LAMP1 staining), and myriocin treatment resulted in more uniform distribution and partially reduced lysosome size. Lipidomic analysis showed ~2.5-fold increase in hexosylceramide and significant increases in sphingosine and sphinganine, plus decreased sphingomyelin. Myriocin treatment restored sphingolipid intermediate levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 and C73 are supported by filipin staining (Figure 6A,B), immunofluorescence (Figure 6C), and lipidomic analysis (Figure 6D, Figure 6\u2014figure supplement 1) in mammalian cells. The data demonstrate conservation of GARP function in sphingolipid homeostasis from yeast to mammals. The rescue of multiple phenotypes by myriocin treatment in mammalian cells strengthens the conclusion that sphingolipid imbalance is a primary defect. The use of appropriate controls and quantification supports the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "9a4ec480-e01f-4240-ba75-38c403277c7c",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PCCA2 patient fibroblasts show elevated sphingolipid intermediates that are normalized by myriocin treatment. PCCA2 fibroblasts exhibited increases in sphingosine, sphinganine, and ceramides compared to control fibroblasts. Myriocin treatment reduced sphingolipid intermediate accumulation to levels similar to untreated controls. This suggests PCCA2 pathogenesis could be at least partially due to defects in lipid balance and storage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 and C102-C104 are supported by lipidomic analysis of patient fibroblasts (Figure 6E). The demonstration that patient cells have elevated sphingolipid intermediates that are normalized by myriocin provides direct evidence linking the human disease to sphingolipid imbalance. However, the claim that this contributes to pathogenesis (C104) is inferential and would require additional functional studies. The use of multiple independent control fibroblast lines strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "91a488cf-7559-4839-9d18-19ff2201ce91",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The GARP complex is required for cellular sphingolipid homeostasis, and many GARP deficiency phenotypes are attenuated by SPT inhibition. Loss of GARP results in reduced complex sphingolipids and accumulation of long-chain bases in yeast. Many phenotypes associated with GARP deficiency are greatly attenuated by myriocin (SPT inhibitor). Inhibition of SPT suppresses GARP mutant growth defects, while inhibition of downstream steps (ceramide synthase, IPC synthase) or addition of long-chain bases exacerbates toxicity. This suggests toxic lipid accumulation underlies cellular dysfunction in retrograde trafficking defects, and sphingolipid balance restoration may be a therapeutic strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C70-C71, C74-C76, and C82-C84 represent the main conclusions of the paper, which are well-supported by the comprehensive data from multiple experimental systems (yeast genetic screens, lipidomics, mammalian cell culture, patient fibroblasts). The rescue of multiple phenotypes by myriocin across different systems provides strong evidence for the central role of sphingolipid imbalance. However, C76 (therapeutic strategy) is speculative and would require additional validation. The overall conclusion that GARP is required for sphingolipid homeostasis is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f0c4f818-123c-4200-867b-0e540d927cd7",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about sphingolipid biology, trafficking, signaling, and disease associations. These claims establish the biological context for the study, including sphingolipid composition of membranes, synthesis and trafficking pathways, signaling functions, regulation via TORC2/Ypk/Orm pathway, and associations with lysosomal storage diseases and neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C16 and C85 are background knowledge supported by appropriate citations to the literature. These claims provide essential context but are not novel findings of this study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "b19cba62-9612-490e-9135-24349b4eb166",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mechanistic hypotheses for long-chain base toxicity based on literature. Long-chain bases are broken down by acid sphingomyelinase and ceramidase in lysosomes. They possess detergent-like properties in acidic environments, leading to vesicular leakage in model membranes. Sphingolipid intermediate accumulation impairs ion homeostasis in Niemann-Pick type C lysosomes. Long-chain bases inhibit glycerolipid synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C87-C88, C90-C91 are supported by appropriate citations and represent established knowledge or reasonable hypotheses based on prior work. These claims help interpret the current findings but are not novel discoveries. The citations to Jimenez-Rojo et al. 2014, Contreras et al. 2006, Lloyd-Evans et al. 2008, and Wu et al. 1993 appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Literature-based connections between GARP/VPS genes and lipid metabolism, neurodegeneration, and disease. Previous screens identified GARP subunit mutations associated with lipid droplet accumulation. Zebrafish Vps51 mutants have increased lipid droplets. PCCA2 is characterized by neurodegeneration and is linked to VPS53 mutations. Vps54 disruption in mice causes wobbler phenotype resembling ALS. Sphingolipid intermediates and sterol esters accumulate in ALS patients. Mutations in endo-lysosomal trafficking machinery are implicated in ALS, FTD, and Parkinson's disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 and C105-C108 are supported by appropriate citations and establish important connections between the current findings and human disease. These claims provide crucial context for the translational relevance of the work but are not novel findings of this study. The citations appear appropriate and comprehensive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    },
+    {
+      "id": "f41b96aa-c0a3-4493-88f2-7febc004d63e",
+      "content_id": "f978d107-6ed6-4b55-992a-32865fd679a7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculative conclusions about broader implications for neurodegenerative diseases and therapeutic strategies. The authors suggest lipid imbalance due to impaired endo-lysosomal trafficking could be a common feature of neurodegenerative diseases, and that SPT inhibition may provide a therapeutic strategy for these diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C109-C110 are speculative extrapolations from the current findings. While the data support a role for sphingolipid imbalance in GARP deficiency and show rescue by myriocin in cell culture models, the broader claims about neurodegenerative diseases in general and therapeutic potential require additional validation in disease-relevant models. These are reasonable hypotheses for future work but are not directly supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:03:20.981409Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7a93139-9d51-49d3-9793-a0de51d0100a",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "7f716709-89d0-4478-b2ea-5afd918c3dbd",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "149bedfe-b0d7-4a81-8f9a-856b59eeea03",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "365a3184-5eeb-48d7-9e03-33bda379829e",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "3c54f129-39b6-44cb-bbda-8f291335ddd6",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "b27291e3-1bfa-4cc0-84cb-ed4cddf12aa6",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "a09a6252-f24a-4932-aca4-93c488b7f24b",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "27506ed5-7f94-4d8b-8e2b-3ae4680543c6",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "82b170dd-7f32-400a-bd2a-73ecf113346a",
+      "result_id": "af1e5da6-fd10-45e2-a723-10d49effe89a"
+    },
+    {
+      "claim_id": "4f50879f-b349-4333-b2b9-4c5aca4406ce",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "988aae60-a77a-45e9-9a78-f25f4ebc5d0b",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "a554f3dc-28af-4f6d-aa94-060f0b253485",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "de777fea-8ac9-4f6a-9a2d-6d7a63eedbe4",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "195e0d33-8282-435c-8c1f-01767981fde6",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "3c49290b-47d1-44c7-9044-d0e37532ce5e",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "d6bfa320-19e6-4011-b642-1610ceb3bae7",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "4dd13947-521f-4c19-b413-e8665c0541f1",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "77952aad-2b83-4acc-a96f-34e7c41d4b59",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "c455fd7b-c71d-43aa-9bd5-ae205131de26",
+      "result_id": "e281f349-3498-46a5-a4b4-73834925a9d4"
+    },
+    {
+      "claim_id": "01e0d58b-4878-4f19-a0ac-f8125c500df9",
+      "result_id": "cc2f9e28-5574-44f9-b81f-48d2ea61ca1d"
+    },
+    {
+      "claim_id": "fc0f24d5-c1f5-46d5-a3b8-d784734cf79c",
+      "result_id": "cc2f9e28-5574-44f9-b81f-48d2ea61ca1d"
+    },
+    {
+      "claim_id": "a79adbd9-4804-4591-9ff7-c0c8abb483b7",
+      "result_id": "cc2f9e28-5574-44f9-b81f-48d2ea61ca1d"
+    },
+    {
+      "claim_id": "e8bedb2b-4fdb-40e1-b23b-968f8043d6ec",
+      "result_id": "cc2f9e28-5574-44f9-b81f-48d2ea61ca1d"
+    },
+    {
+      "claim_id": "f1a91665-fecd-4559-bf66-c2a31a453906",
+      "result_id": "cc2f9e28-5574-44f9-b81f-48d2ea61ca1d"
+    },
+    {
+      "claim_id": "21f4f3bc-0b85-4085-bdb6-038dbcd3cf5d",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "87d74845-b520-4aa5-8ec4-9311a168c429",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "c66f4ba9-738a-4be7-b1bf-2e6f56e8333f",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "cf2eb5c8-321e-461a-aab1-8a914f4f21a5",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "0966a417-200f-4a2c-9810-2f81237a2232",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "a3f973d4-3c55-470c-9bdc-155d6b5ad0c2",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "2ccf1c04-4983-4b42-b2fb-1fd4418f830f",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "10eef328-836a-4a65-9ed9-3051bee7310d",
+      "result_id": "b21c5f67-570a-4977-8ca5-bd025755add0"
+    },
+    {
+      "claim_id": "e852c264-efa9-4d60-90d1-4f4a231845d5",
+      "result_id": "aaf60581-7f41-49c2-aaac-b5ee9ec4cd47"
+    },
+    {
+      "claim_id": "66bdefc1-85e1-4f26-bf69-a4ab06aa9890",
+      "result_id": "aaf60581-7f41-49c2-aaac-b5ee9ec4cd47"
+    },
+    {
+      "claim_id": "083dcb03-56f8-4cfc-9d16-090c49d1e535",
+      "result_id": "aaf60581-7f41-49c2-aaac-b5ee9ec4cd47"
+    },
+    {
+      "claim_id": "11e8d10b-93c4-4358-8e14-b271f4ec82ec",
+      "result_id": "aaf60581-7f41-49c2-aaac-b5ee9ec4cd47"
+    },
+    {
+      "claim_id": "29f27a6b-933b-4da5-91f9-4f304230fb5a",
+      "result_id": "aaf60581-7f41-49c2-aaac-b5ee9ec4cd47"
+    },
+    {
+      "claim_id": "1586ff4f-bee6-434d-a539-f8387565342a",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "d556b4ec-c698-4a69-8899-3e6f82c02c25",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "71483d62-5917-492e-a350-9f9158dcaff5",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "ffd8c364-ea4a-4b2b-981e-d0f1f8c458f2",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "e70c8d59-fd3f-41c3-8adc-cff165f1fbff",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "3ae2eb44-9921-4ecf-b61e-c7f01ea6241e",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "bf0882df-b508-4b22-a362-d6650d35bf1c",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "f0217f99-fd2f-4d58-86ee-f35294bae6ec",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "05a245b9-5c93-4739-8543-84bd6a5d173d",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "d28864d5-a317-4e87-ad4c-22315cf34f25",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "a4a8b1b1-ecae-4771-afff-aa24af66f018",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "10ab42b6-91b6-4b4c-b0d6-9160da7da759",
+      "result_id": "d88ca4e2-f5f6-4e8b-af93-f403fdc1ab11"
+    },
+    {
+      "claim_id": "724e10df-917f-4d74-93a7-47fb94127466",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "da8b98e1-c2a2-480c-98e9-f7ac136d21dd",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "c19bb2c1-9ddf-41e8-b71b-c192dd061dd0",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "f7874aa8-3cea-4592-9750-412380999f45",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "5e3bed50-9f9b-47ab-b7ca-6e2ec0002b46",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "4c2d7de7-f728-4a73-a42b-aca74768c370",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "9e87edbe-f403-49b2-a06b-f3afdb4c9a76",
+      "result_id": "04e3b3d0-9536-4789-b61b-a7961ce43d3b"
+    },
+    {
+      "claim_id": "e9425940-8e84-493f-92c6-7a94db14081e",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "c0926ce6-d56f-4cc0-b29e-edd23a52f075",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "b226d2f6-fa6c-4d04-a0dc-e45a36123a89",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "fc12742f-fb96-4d95-9ab8-e9d99e1145fc",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "6622c6ea-25e4-4016-9883-0cc89de33718",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "ba759386-fc02-4a6f-b5d8-ca9d7e2b4115",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "892c505f-b08e-4f67-b345-699d761d74e5",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "2f91cefd-2ed6-4206-9dcc-9caf4c2fb9e4",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "c47c5cde-b21c-42f5-a31c-900c342c412b",
+      "result_id": "3275c693-56c8-4673-bd74-743b51dfba59"
+    },
+    {
+      "claim_id": "206a6c0b-919b-4c15-a07e-2742350e2e04",
+      "result_id": "9a4ec480-e01f-4240-ba75-38c403277c7c"
+    },
+    {
+      "claim_id": "642334e5-30d0-4ee4-b544-1dd2b2bfe202",
+      "result_id": "9a4ec480-e01f-4240-ba75-38c403277c7c"
+    },
+    {
+      "claim_id": "03ee51b6-c4db-43f4-8b7a-cb7816d28c62",
+      "result_id": "9a4ec480-e01f-4240-ba75-38c403277c7c"
+    },
+    {
+      "claim_id": "66378966-9d13-4918-8dd5-98da6a222bb3",
+      "result_id": "9a4ec480-e01f-4240-ba75-38c403277c7c"
+    },
+    {
+      "claim_id": "487cc198-9834-477b-b5e0-4effbfd55936",
+      "result_id": "9a4ec480-e01f-4240-ba75-38c403277c7c"
+    },
+    {
+      "claim_id": "e32f6e58-db5c-4b12-b354-81883f5b0fcf",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "d5de9515-0879-4422-85ea-a5193ac23028",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "76ff5b03-57d7-4daf-a743-833c4ed02e05",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "238dbc90-23b8-45c9-9736-f7ce3ae17c70",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "758eab7a-620e-4689-aa26-dfdd4df81b54",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "68bbc9be-19de-40af-b85a-2df3488c32c5",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "375a1078-838a-4762-9479-5a9e04871c7e",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "3b1ae158-3d08-4cfc-9932-191a486c9b87",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "c727e337-124a-47f6-95f1-991f08713e83",
+      "result_id": "91a488cf-7559-4839-9d18-19ff2201ce91"
+    },
+    {
+      "claim_id": "fc2e4530-acb0-4a56-a22c-a4d1856c8845",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "7b60314e-64e1-4516-be40-bb377157c6fc",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "9247dafc-4b66-4838-9b15-2698ae4e4a81",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "1d907971-8215-4a09-ab04-83e2f5406b18",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "60061f55-c203-4a95-8ec8-a36e87f7e9b2",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "91c6498c-d9e9-4893-b673-61d397cc7457",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "f29c014d-42bb-4eff-830f-83d58cfe77e6",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "d110025e-1b67-4cdf-b6ae-6817fa79e31d",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "f5978106-887e-479a-aa6a-729e1d08fdfc",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "4f821c7b-d8c6-4848-b9cc-201094433887",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "3e835a66-59e4-4e35-bbe8-3c3b2f87a2ec",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "8e6ec614-ea92-4fca-9bc7-793ea424680c",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "46343800-1bfc-4e5e-8bc2-2868863a46d5",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "746b12bd-1ee4-4874-a062-cab863f11d7e",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "63d2c601-d0b3-4bfd-bada-841137ab8b76",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "15b1a766-731e-49fd-a6c3-9fa4ba6dedd3",
+      "result_id": "f0c4f818-123c-4200-867b-0e540d927cd7"
+    },
+    {
+      "claim_id": "62200045-685e-4d02-a0f6-a35f134bdfdd",
+      "result_id": "b19cba62-9612-490e-9135-24349b4eb166"
+    },
+    {
+      "claim_id": "23e50a8c-ee4e-4db7-b552-b15a3d51599b",
+      "result_id": "b19cba62-9612-490e-9135-24349b4eb166"
+    },
+    {
+      "claim_id": "8f9131f9-2e77-4802-92a9-4d2e04483392",
+      "result_id": "b19cba62-9612-490e-9135-24349b4eb166"
+    },
+    {
+      "claim_id": "e58c9086-b636-4364-96c9-a2ede98bf879",
+      "result_id": "b19cba62-9612-490e-9135-24349b4eb166"
+    },
+    {
+      "claim_id": "24f80c3c-0e21-4083-ad76-c75ccebd1536",
+      "result_id": "b19cba62-9612-490e-9135-24349b4eb166"
+    },
+    {
+      "claim_id": "f5477a51-1a49-4ee8-957e-65b31d360fae",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "3f32e969-472c-44bd-abb4-47e81839277c",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "ea450c5c-cd7e-4a88-94c5-589ed31b112a",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "99f34f54-0278-4c82-85f7-1c087184fd36",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "aabb094e-f268-4356-a6d6-dc4d2858cdc4",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "2d0c9d3e-e7ed-44ca-9a66-2a5ade073fa3",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "b63c3395-f1c4-4be3-b80a-6de8add8ff87",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "01c61b06-56ef-441f-bb2d-cc721ca0a2fe",
+      "result_id": "879e5deb-091f-4aa0-a26f-0ae96b3d4571"
+    },
+    {
+      "claim_id": "374628c7-16c0-4fa8-a62d-97c505dd27a4",
+      "result_id": "f41b96aa-c0a3-4493-88f2-7febc004d63e"
+    },
+    {
+      "claim_id": "ae9b13f3-d7ce-4bb4-a424-aed0c288276f",
+      "result_id": "f41b96aa-c0a3-4493-88f2-7febc004d63e"
+    }
+  ],
+  "comparisons": []
+}

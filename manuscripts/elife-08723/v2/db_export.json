@@ -1,0 +1,1388 @@
+{
+  "submission": {
+    "id": "ec0aed7f-8ea7-4389-8d3c-43d3af22ff6b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:10:57.046211Z",
+    "updated_at": "2025-11-29T05:10:57.046211Z"
+  },
+  "content": [
+    {
+      "id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "submission_id": "ec0aed7f-8ea7-4389-8d3c-43d3af22ff6b",
+      "content_type": "manuscript",
+      "content_text": "# Competing basal ganglia pathways determine the difference between stopping and deciding not to go\n\n## Authors\n\n- Kyle Dunovan<sup>1</sup>\n- Brighid Lynch<sup>2</sup>\n- Tara Molesworth<sup>2</sup>\n- Timothy Verstynen<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Psychology University of Pittsburgh Pittsburgh United States\n2. Center for the Neural Basis of Cognition University of Pittsburgh and Carnegie Mellon University Pittsburgh United States\n3. Department of Psychology Carnegie Mellon University Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe architecture of corticobasal ganglia pathways allows for many routes to inhibit a planned action: the hyperdirect pathway performs fast action cancellation and the indirect pathway competitively constrains execution signals from the direct pathway. We present a novel model, principled off of basal ganglia circuitry, that differentiates control dynamics of reactive stopping from intrinsic no-go decisions. Using a nested diffusion model, we show how reactive braking depends on the state of an execution process. In contrast, no-go decisions are best captured by a failure of the execution process to reach the decision threshold due to increasing constraints on the drift rate. This model accounts for both behavioral and functional MRI (fMRI) responses during inhibitory control tasks better than alternative models. The advantage of this framework is that it allows for incorporating the effects of context in reactive and proactive control into a single unifying parameter, while distinguishing action cancellation from no-go decisions.\n\n## Introduction\n\nWhen at bat, a baseball player can choose not to swing at the incoming pitch in one of two ways: he can cancel the swing reactively based on external cues, for example, of the estimated position of the ball based on sensory signals, or he can cancel it proactively using internal expectations, for example, a strategy of never swinging at the first pitch (Aron, 2011; Botvinick et al., 2001; Braver et al., 2001). These are generally considered to be separable control signals, with proactive suppression being a slower, action-specific process (Aron et al., 2011) and reactive inhibition being a fast global suppression mechanism (Aron and Poldrack, 2006; Aron et al., 2014). However, it has been argued that a purely reactive form of stopping is unlikely to generalize to many real-world scenarios and, in some cases, response inhibition may result from a combination of proactive and reactive efforts (Aron, 2011). Indeed, recent evidence suggests that these processes interact, with proactive signals modulating the efficacy of reactive stopping (Aron, 2011; Chen et al., 2010; Forstmann et al., 2008; Irlbacher et al., 2014; Jahfari et al., 2012; Stuphorn and Emeric, 2012; van Belle et al., 2014; van Maanen et al., 2015; Zandbelt et al., 2013; Zandbelt and Vink, 2010). Yet the nature of this interaction remains largely unclear.\n\nAn interaction between proactive and reactive decisions makes sense given the shared circuitry associated with both forms of control (Figure 1). Proactive signals have been most commonly associated with activity in rostral prefrontal and striatal areas (Cai et al., 2011; Majid et al., 2013; van Belle et al., 2014), suggesting a possible competition of facilitation and suppression signals relegated through the direct and indirect pathways, respectively (Wei et al., 2015). In contrast, reactive braking has been linked to premotor and prefrontal areas in the right hemisphere, as well as the subthalamic nucleus, that together compose the hyperdirect pathway (Aron et al., 2014; Cavanagh et al., 2011b; Rodriguez et al., 2006; Swann et al., 2012). While in primates the control signals of the direct, indirect, and hyperdirect pathways all project to the internal segment of the globus pallidus (GPi), the primary output of the basal ganglia, it remains unclear whether these signals converge on the same pool of neurons or run in parallel of each other. At the cellular level, successful reactive inhibition depends on the relative timing of descending execution signals from the striatum and fast-braking signals from the hyperdirect pathway at the output of the basal ganglia (Schmidt et al., 2013), suggesting that these two forms of control may, in fact, converge before they continue on to the thalamus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig1-v2.jpg)\n\n**Figure 1.:** (A) The organization of corticobasal ganglia pathways. Execution signals are relayed via the direct pathway (green connections) that result in a disinhibition of thalamic signals to cortex form the internal segment of the globus pallidus (GPi). Thalamic output can be suppressed by one of two major pathways. The indirect pathway (blue connections) increases inhibition of the thalamus via cortical signals terminating on striatal nuclei and relegated through the external segment of the globus pallidus (GPe). The hyperdirect pathway (red connections) quickly increase thalamic suppression via direct projections from the cortex to the subthalamic nucleus (STN). The question mark highlights the uncertainty as to whether the hyperdirect signals terminate on the same GPi neurons as the direct and indirect pathways. (B) Parameter structure of the general drift-diffusion process used in all model simulations and fits. For the reactive task (see Figure 1), we compared three models, a dependent process model (C), a traditional independent race model (D), and interactive race model (E). See main text for details on these models. For both reactive and proactive tasks, we compared three possible influences of context on the execution process: drift rate modulation (F), boundary shift modulation (G), and onset delay modulation (H). See main text for descriptions of each model.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig2-v2.jpg)\n\n**Figure 2.:** (A) Timeline of a go (left) and stop trial (right) in the reactive experiment. (B) Mean observed probability of stopping in the baseline (dark, solid) and caution (light, dotted) conditions; dots reflect individual subject means. As the stop-signal delay (SSD) increased, the probability of correctly stopping decreased. Inset in B shows the mean point of subjective equality (PSE) for both conditions. (C) Mean response times (RT) for the baseline and caution conditions. All error bars reflect the 95% confidence interval, * indicates p <0.05, *** indicates p <0.001.\n\nHere we use knowledge of the circuit-level organization of corticobasal ganglia networks to elucidate the dynamic interactions between proactive and reactive inhibitory control. Using both behavioral measures and functional MRI (fMRI) to confirm predictions from a novel computational model, we evaluate two hypotheses: 1) reactive stopping depends on the state of the execution signal (i.e., the two processes are not independent); 2) proactive no-go decisions occur by modulating the execution process so that it fails to reach its decision boundary, rather than by active cancellation of the decision itself.\n\n## Results\n\n### Competitive dynamics of inhibitory control\n\nThe architecture of corticobasal ganglia pathways (Figure 1A), along with recent electrophysiological (Schmidt et al., 2013) and neuroimaging (Jahfari et al., 2011; Jahfari et al., 2012; Jahfari et al., 2010; Smittenaar et al., 2013; Zandbelt et al., 2013) evidence, suggests that the efficiency of fast hyperdirect braking depends on the state of the descending execution process that originates in striatal pathways. To capture this, we designed a novel decision model with nested drifting diffusion processes (Figure 1B, see \u201cMaterials and methods\u201d section). The motor\u00a0decision is modeled as a single variable (hereafter, referred to as the execution process) that is assumed to reflect the differential activity between the direct (facilitation) and indirect (suppression) pathways; that is, as facilitatory systems are recruited more than the suppressive systems, the execution process accumulates toward the decision boundary. The cancellation decision (hereafter, referred to as the braking process) is modeled as a latent competing signal, assumed to originate from the hyperdirect (brake) pathway and whose starting state depends on the state of the facilitation versus\u00a0suppression competition (Figure 1C). In this dependent process model (DPM), a response is realized only if the execution process reaches its decision boundary before the braking process reaches its decision boundary and before the trial time window has expired. Otherwise the model does not produce a response.\u00a0Also, since it has been shown that the physiological dynamics of inhibitory control networks are best reflected by models where the race to the decision boundary has dynamic, nonlinear properties (Ratcliff and Frank, 2012), our model also includes a dynamic\u00a0gain that dynamically accelerates the execution process\u00a0as it approaches the time boundary (i.e.,\u00a0the deadline for making a response).\n\nWe should note that others have proposed similar nested process models for inhibitory control decisions. Indeed, our DPM is conceptually similar to the interactive race model\u00a0(Boucher et al., 2007), whereby a response is suppressed by the onset of a braking signal that directly inhibits the execution process,\u00a0preventing it from reaching the action threshold. The interactive race and DPMs make fundamentally different assumptions about the nature of the interaction between the execution and braking processes. The predictions of both the dependent process and interactive race\u00a0models can be contrasted against the traditional independent race model\u00a0(Logan et al., 1984; Logan et al., 2014) where the outcome of the decision is determined by a parallel race between the execution and braking processes.\n\nTo evaluate the different reactive stopping models we tested a group of subjects (N = 60, see Materials and methods section) on a modified version of the stop-signal task that allows for precise timing of the target response time (RT) (Coxon et al., 2012; Lappin and Eriksen, 1966; Zandbelt et al., 2013). The task parameters were specifically designed to allow for a competition between proactive and reactive decisions, rather than adapted on a trial-by-trial basis in order to isolate only reactive stopping decisions. On each trial, subjects saw a blue bar \u2018fill\u2019 upwards toward a target line on the screen at a constant rate (Figure 2A, see \u2018Materials and methods\u2019 section). On go trials, the bar would intersect the target line at 500\u00a0ms after trial onset. Participants were instructed to stop the bar by pressing a key. The closer the bar was stopped to the target line, the higher the financial reward on that trial. In a subset of trials (stop trials; 45% trials), the bar would stop before it intersected with the target (i.e., the stop signal) and participants were instructed to not make a response on these trials. Successful decisions were rewarded and incorrect decisions were penalized. All participants were run in two versions of the experiment: a baseline condition (baseline) and a condition where the feedback signals were more restrictive on accuracy to the target and higher penalties for failing to stop when required while higher rewards were given for successful stops\u00a0(caution). Similar manipulations on feedback have been shown to modulate stopping performance in the stop-signal task\u00a0Leotti and Wager, 2010; Shenoy and Yu, 2011). As expected, in both conditions it was harder for participants to withhold their responses when the stop signal was delivered later in the trial (Figure 2B). In addition, changing the structure of the feedback promoted more cautious responding, resulting in more successful stopping at later stop signal delays (SSDs) and slower RTs on go trials.\n\nUsing both the RT distribution\u00a0and the stop probability curve in the baseline condition, we fit the experimental data to\u00a0our DPM, the interactive race model, and the traditional independent race model\u00a0(see \u2018Materials and methods\u2019 section). The DPM provided a better fit to both the correct and incorrect RT distributions\u00a0(Figure 3A) than either the interactive or independent race models. In addition, the DPM fell within the 95% confidence interval of the mean probability of stopping in each SSD condition (Figure 3B), whereas the independent and interactive race models overpredicted the probability of stopping at the longest and shortest delays, respectively. Goodness of fit, assessed using both the Akaike information criterion (AIC) and Bayesian information criterion (BIC), showed that the DPM was a substantially better fit to the data than the other two models (Figure 3C; Table 1), suggesting that the race between braking and execution signals may be biased depending on the state of the action selection decision.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig3-v2.jpg)\n\n**Figure 3.:** Fits of the three reactive models (Figure 1C\u2013E) to behavioral data in the baseline condition, shown against (A) the histogram of RTs for correct (top) and incorrect (i.e., responses made on stop trials; bottom) trials and (B) the stop probability curve. Overall the dependent process model (DPM; green) explains speed and accuracy in the behavioral data (gray histograms in A, black line in B) better than the independent race model (Ind-RM; red) and interactive race model (Int-RM; blue). (C) Bars show the calculated AIC for each model. Error bars on behavioral data in B show the 95% confidence interval of the mean.\n\n**Table 1.**\n Reactive model parameter estimates and fit statistics.\u00a0In the top panel, best fit parameter estimates for boundary height (a), onset\u00a0delay (tr), execution drift\u00a0rate (ve), braking drift\u00a0rate (vb), dynamic bias gain (xb) are listed for each of the candidates reactive stopping models. Additionally, the stop signal onset delay (sso) was estimated for the interactive race model but was not included in the other models. The lower panel contains parameter estimates and fit statistics for the candidate models of contextual modulation between baseline and caution conditions of the reactive task. Parameters that were left free to vary between conditions contain two values, one estimate for the baseline condition and another estimate for the caution condition (see Model fitting for details regarding acquisition of constant parameters and optimization across conditions). In both panels, the last three columns show the \u03c72 as an absolute index of how well each model fit the data as well as the Akaike information criterion (AIC), and Bayesian information criterion (BIC) as complexity penalized goodness-of-fit measures. Lower values in all three measures imply a better fit to the data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>a</th>\n      <th>tr</th>\n      <th>ve</th>\n      <th>vb</th>\n      <th>sso</th>\n      <th>xb</th>\n      <th>\u03c72</th>\n      <th>AIC</th>\n      <th>BIC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DPM</td>\n      <td>0.534</td>\n      <td>0.174</td>\n      <td>1.266</td>\n      <td>\u22120.990</td>\n      <td></td>\n      <td>0.878</td>\n      <td>0.0028</td>\n      <td>\u2212122.40</td>\n      <td>\u2212128.018</td>\n    </tr>\n    <tr>\n      <td>Ind-RM</td>\n      <td>0.250</td>\n      <td>0.338</td>\n      <td>1.127</td>\n      <td>1.269</td>\n      <td></td>\n      <td>1.52</td>\n      <td>0.0075</td>\n      <td>\u2212106.652</td>\n      <td>\u2212112.270</td>\n    </tr>\n    <tr>\n      <td>Int-RM</td>\n      <td>0.445</td>\n      <td>0.220</td>\n      <td>1.195</td>\n      <td>3.023</td>\n      <td>0.197</td>\n      <td>1.474</td>\n      <td>0.0069</td>\n      <td>\u2212104.379</td>\n      <td>\u2212111.815</td>\n    </tr>\n    <tr>\n      <td>Drift</td>\n      <td>0.536</td>\n      <td>0.178</td>\n      <td>B: 1.289C: 1.243</td>\n      <td>\u22120.984</td>\n      <td></td>\n      <td>0.877</td>\n      <td>0.0051</td>\n      <td>\u2212273.459</td>\n      <td>\u2212273.301</td>\n    </tr>\n    <tr>\n      <td>Onset</td>\n      <td>0.531</td>\n      <td>B:0.171C:\u00a00.180</td>\n      <td>1.236</td>\n      <td>\u22120.960</td>\n      <td></td>\n      <td>0.893</td>\n      <td>0.0054</td>\n      <td>\u2212271.651</td>\n      <td>\u2212271.492</td>\n    </tr>\n    <tr>\n      <td>Drift andonset</td>\n      <td>0.538</td>\n      <td>B:\u00a00.173C:\u00a00.178</td>\n      <td>B: 1.269C: 1.247</td>\n      <td>\u22120.989</td>\n      <td></td>\n      <td>0.858</td>\n      <td>0.0063</td>\n      <td>\u2212260.793</td>\n      <td>\u2212263.941</td>\n    </tr>\n    <tr>\n      <td>Bound</td>\n      <td>B:\u00a00.525C:\u00a00.551</td>\n      <td>0.178</td>\n      <td>1.268</td>\n      <td>-0.984</td>\n      <td></td>\n      <td>0.878</td>\n      <td>0.0057</td>\n      <td>\u2212269.994</td>\n      <td>\u2212269.835</td>\n    </tr>\n  </tbody>\n</table>\n\n_DPM: dependent process model; Ind-RM: independent race model; Int-RM: interactive race model._\n\nContextual factors, such asreward contingencies (Leotti and Wager, 2010) and cued expectations of stopping probability (Jahfari et al., 2012; Smittenaar et al., 2013; Zandbelt et al., 2013) can influence stopping performance by modulating the speed of the execution decision. We see this same pattern in our caution manipulation, where the magnitude of feedback provides larger rewards\u00a0for\u00a0correct stopping and the window for reward on go trials is narrowed (see \u201cMaterials and methods\u201d section). Overall, in the caution condition subjects shifted their stop curve later in time, producing more accurate stopping performance (Figure 2B; t (59) = \u22122.18, p=0.03) by delaying their execution decision, resulting in longer go trial RTs (Figure 2C t(59) = \u00a0\u22120.53, p <0.001). Thus, our feedback manipulation was effective at inducing more conservative decisions.\n\nThis contextual effect on the execution process can manifest in several ways. Context can modify the rate of drift (Drift Modulation; Figure 1F; Hanks et al., 2014; Standage et al., 2011; Zhang and Rowe, 2014), shift the onset time at which the execution process begins to accumulate (Onset Modulation; Figure 1G; Pouget et al., 2011), change the distance to the threshold (Boundary Modulation; Figure 1H;\u00a0Boehm et al., 2014; Cavanagh et al., 2011a; Forstmann et al., 2012; Jahfari et al., 2012; Wiecki and Frank, 2012), or modulate a combination of parameters\u00a0(Heitz and Schall, 2012), such as both drift and onset modulation together.\u00a0As mentioned above, if direct and indirect pathways converge at the GPi, this would predict that the execution process is driven by an active competition between facilitation and suppression signals, which is naturally implemented in diffusion models with the drift rate parameter which captures a moment-by-moment competition between a hypothesis and its alternative.\n\nTo evaluate these possibilities, we fit four versions of our DPM in which either the drift, onset, onset and drift, or boundary height parameters were left free when fitting the baseline and caution conditions separately.\u00a0Qualitatively all models appeared to fit the stop probability curves quite well (Figure 4\u2014figure supplement 1). Where the different models varied was in their ability to capture subtle variation in the RT distributions. As a result, the drift modulation model provided the best overall fit of speed and accuracy in the reactive task, followed by the onset\u00a0modulation and boundary models, respectively (Figure 4; Table 1). Although the drift modulation model best explained contextual effects on reactive stopping performance, the fact that the onset and boundary modulation models also had very good fits suggests that this manipulation may not cleanly be able to distinguish between the different models. We return to this issue in the next section.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig4-v2.jpg)\n\n**Figure 4.:** Goodness-of-fit measures for execution modulation models in reactive task. Bars show the estimated Akaike information criterion (AIC) and Bayesian information criterion (BIC) for the drift, onset, combined drift and onset, and boundary modulation models. The model with the lowest score, in this case the drift modulation model, is preferred.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Example fits for modulation models on the execution process inthe baseline and caution conditions of the reactive task. Predicted RT distributions and stop accuracy are shown for the (A) drift-rate modulation model (green), (B)\u00a0onset-modulation model (blue), (C) combined drift and onset modulation model (yellow), and (D) boundary modulation model (red). In each panel, RT distributions in the baseline (top) and caution (bottom) conditions are shown for correct (left) and error (right) trials. Empirical (gray, histograms) and model-predicted (color, probability density) RT distributions both reflect 1000 samples from a\u00a0Gaussian kernel density estimate (bandwidth of. 01) based on the empirical and model simulated RT quantiles. The stop accuracy curve is plotted with model predictions (colored x\u2019s) overlaid on empirical values (gray line, circles) for each of the five SSD conditions.\n\n### Not going as a failure to reach bound\n\nThe influence of contextual factors on decision dynamics,\u00a0like demands for control as shown above, as well as evidence that execution uncertainty slows reaction times (Jahfari et al., 2012; Zandbelt et al., 2013; Zandbelt and Vink, 2010), both point to a novel mechanism of no-go decisions that distinguishes them from reactive stops. If the execution signal is determined by a dynamic competition between direct (facilitation) and indirect (suppression) signals (Figure 1A; see also [Wei et al., 2015]), then making a decision to not execute an action may reflect a scenario where the indirect pathways provide enough active suppression of the direct pathway so that no response is triggered. In other words, a proactive no-go decision occurs when the system fails to accrue enough evidence to reach the execution decision boundary.\n\nTo evaluate this hypothesis we tested the same group of subjects in a novel proactive inhibition task (see also Zandbelt et al., 2013). The overall design was largely similar to the reactive paradigm with the following major changes. First, only one SSD was used. This occurred at 450\u00a0ms and is too late for it to be used as a reactive stopping cue. Second, on each trial the color of the rising bar indicated the probability that the stop signal would be delivered (Figure 5A): a purely red bar indicates 0% go probability (i.e., stop\u00a0signal would be presented on every trial), purely blue bar indicates 100% go probability (i.e., stop\u00a0signal would never be presented), and shades of purple indicate mixture probabilities. Rather than rely on the very late reactive stop\u00a0signal, subjects were told to use the proactive cue to decide whether to execute the response or withhold it. Since subjects were asked to make an informed guess, all our analysis collapsed across both correct and incorrect trials.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig5-v2.jpg)\n\n**Figure 5.:** (A) Timeline of correct high (left) and low (right) go probability trials in the proactive task. The low probability example shows a trial in which a stop signal was presented. (B) Mean probability of making a no-go decision; dots reflect individual subject means and (C) mean reaction time plotted as a function of go trial probability in the baseline (dark, solid) and caution (light, dotted) conditions. Inset in B shows the mean point of subjective equality (PSE) for both conditions. All error bars reflect the 95% confidence interval; n.s. indicates a nonsignificant comparison at \u03b1 of\u00a00.05.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Correlation between the average PSEs in the reactive stopping curves and proactive no-go curves collapsed across baseline and caution conditions. Each point represents a single subject. PSE: point of subjective equality.\n\nParticipants were able to use the colored cue to make accurate go and no-go decisions (Figure\u00a05B). There was a slight bias toward making a go decision across trial types; however, the probability of making a no-go decision scaled monotonically with the cued probability of a go trial. Also, as expected, participants were faster with higher certainty of a go trial (Figure 5C). It is worth noting that all RTs in this proactive task were much faster than the responses in the reactive task (Figure 2), confirming that subjects weren\u2019t relying on the delayed stop signal to make a reactive decision. Thus, this second experiment was able to get subjects to make a fundamentally different decision than in the reactive task, while keeping most other experimental conditions (e.g., sensory signals) constant. Unlike the reactive task, we did not observe a significant influence of demands for control on either the decision curve (F[3.43, 205.8] = 0.76, p=0.53) or response times (F[2.28,132.32] = 0.81, p=0.46) in the proactive task.\n\nIf our hypothesis is correct that reactive stopping ability depends on the current state of proactive control, then there should be a mild degree of shared variance between an individual\u2019s reactive stopping ability and their proactive decisions. To test this we correlated the points of subjective equality (PSE) across subjects, between the reactive (Figure 2B) and proactive (Figure\u00a05B) conditions. The PSE reflects the point at which the psychometric curve crosses 50% chance (see \u201cMaterials and methods\u201d section). Collapsing across both the baseline and caution conditions, we found a small but significant correlation in a subject\u2019s reactive control abilities and their proactive decisions (Figure 5\u2014figure supplement 1, r = 0.35, p <0.006, r2 = 0.06). Thus, overall reactive task performance explains \u223c6% of the variance in the proactive condition, which is consistent with a model where these two abilities reflect separable upstream control signals that eventually converge on common output pathways (Figure 1A).\n\nOne advantage of our proactive task is that it can better distinguish the mechanisms of modulation on the execution process. Therefore, we fit the same four models that were fit against the reactive task (Figure 1H), leaving the specific model parameters free across each go trial probability condition (see \u201cMaterials and methods\u201d section). Since there were no differences between the baseline and caution conditions, all data was collapsed together to increase statistical power of the model fits. We found that the drift modulation model was able to capture the proactive no-go decision dynamics significantly better than the other models based on the AIC and BIC scores (Figure 6; Table 2) and general patterns of speed and response\u00a0proportions (Figure 6\u2014figure supplement 1). This means that as the go trial probability decreased, the drift rate of the execution process decreased to the point that the decision boundary was often not intersected by the end of the trial. Thus, we can reliably capture the dynamics of a no-go decision as a modulation of competing\u00a0facilitatory and suppressive signals that results in a failure to accumulate enough evidence to make a\u00a0decision. This provides a fundamental distinction between the control mechanisms of stopping and deciding not to go.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig6-v2.jpg)\n\n**Figure 6.:** Goodness-of-fit measures for execution process modulation models in proactive task. Same plotting conventions as in Figure 4. As with the reactive experiment, the drift modulation model provided better fits to the proactive task data than the other models.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Predicted RT distributions and no-go probability curves in the proactive task for the drift modulation (green, A), onset modulation (blue, B), onset and drift modulation (yellow, C), and boundary modulation models (red, D). Empirical (gray) and kernel density estimates (same conventions as in Figure 4) for the RT distributions are shown for the high and low go trial probability conditions in the left and middle columns, respectively. Right column shows no-go probability curves for each go trial probability condition.\n\n**Table 2.**\n Proactive model parameter estimates and fit statistics.\u00a0Best fit parameter estimates for boundary height (a), onset\u00a0delay (tr), execution drift\u00a0rate (ve), and dynamic bias gain (xb) are listed for each of the proactive modulation models. For each model, free parameter (s) are named in the shaded column, followed by fitted estimates in each go trial probability condition in columns P0\u2013P100, (see Model fitting for details regarding acquisition of constant parameters and optimization across conditions). The last three columns show the \u03c72 as an absolute index of how well each model fit the data as well as the Akaike Information Criterion (AIC), and Bayesian Information Criterion (BIC) as complexity penalized goodness-of-fit measures. Lower values in all three measures imply a better fit to the data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>a</th>\n      <th>tr</th>\n      <th>ve</th>\n      <th>xb</th>\n      <th></th>\n      <th>P0</th>\n      <th>P20</th>\n      <th>P40</th>\n      <th>P60</th>\n      <th>P80</th>\n      <th>P100</th>\n      <th>cX\u03c72</th>\n      <th>AIC</th>\n      <th>BIC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Drift</td>\n      <td>0.487</td>\n      <td>0.292</td>\n      <td></td>\n      <td>1.563</td>\n      <td>ve</td>\n      <td>1.411</td>\n      <td>1.562</td>\n      <td>1.683</td>\n      <td>1.761</td>\n      <td>1.880</td>\n      <td>1.925</td>\n      <td>0.0022</td>\n      <td>\u2212122.65</td>\n      <td>\u2212130.08</td>\n    </tr>\n    <tr>\n      <td>Onset</td>\n      <td>0.628</td>\n      <td></td>\n      <td>1.42</td>\n      <td>0.641</td>\n      <td>tr</td>\n      <td>0.182</td>\n      <td>0.161</td>\n      <td>0.134</td>\n      <td>0.117</td>\n      <td>0.084</td>\n      <td>0.076</td>\n      <td>0.0095</td>\n      <td>\u221299.38</td>\n      <td>\u2212106.81</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Drift and onset</td>\n      <td rowspan=\"2\">0.06</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">1.468</td>\n      <td>ve</td>\n      <td>0.831</td>\n      <td>0.970</td>\n      <td>0.968</td>\n      <td>0.979</td>\n      <td>0.932</td>\n      <td>1.079</td>\n      <td rowspan=\"2\">0.0033</td>\n      <td rowspan=\"2\">\u2212104.65</td>\n      <td rowspan=\"2\">\u2212122.77</td>\n    </tr>\n    <tr>\n      <td>tr</td>\n      <td>0.515</td>\n      <td>0.506</td>\n      <td>0.492</td>\n      <td>0.479</td>\n      <td>0.451</td>\n      <td>0.463</td>\n    </tr>\n    <tr>\n      <td>Bound</td>\n      <td></td>\n      <td>0.272</td>\n      <td>0.914</td>\n      <td>0.913</td>\n      <td>a</td>\n      <td>0.379</td>\n      <td>0.344</td>\n      <td>0.305</td>\n      <td>0.281</td>\n      <td>0.246</td>\n      <td>0.236</td>\n      <td>0.0099</td>\n      <td>\u221298.65</td>\n      <td>\u2212106.09</td>\n    </tr>\n  </tbody>\n</table>\n\n### Accumulating basal ganglia output during no-go decisions\n\nBecause the assumptions of our DPM it makes very specific predictions about the physiological dynamics of go versus no-go decisions within corticobasal ganglia networks, specifically in regions where these pathways are known to interact, that is, striatum and thalamus. Previous fMRI studies have reliably shown that the magnitude of\u00a0activation\u00a0in cortical decision-making areas approximates the cumulative sum of evidence over time as the decision process approaches its threshold\u00a0(Basten et al., 2010; Ho et al., 2009). While the temporal and spatial imprecision of fMRI precludes direct comparison of neural and computational mechanisms\u00a0(Simen, 2012), the overall magnitude of the signal can be taken as a proxy for the duration and distance-to-bound of the decision process\u00a0(Forstmann et al., 2010). By integrating the execution process over time we compared\u00a0model-predicted activation levels for both go and no-go decisions (see \u201cMaterials and methods\u201d section) with the task-evoked blood oxygenation level dependent (BOLD) response measured by fMRI\u00a0in corresponding conditions of our proactive task. Simulations were run for the drift, onset, and boundary modulation models of proactive control (see Figure 7A\u2013C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig7-v2.jpg)\n\n**Figure 7.:** Time-course of BOLD and mean activity in the proactive task predicted by the (A) drift modulation, (B) onset modulation, and (C) boundary modulation models. Time\u00a0courses (left column) reflect the rise of the execution process (\u03b8e) on \u2018go\u2019 trials (left panels; green lines) and \u2018no-go\u2019 trials (right panels; red lines). Lighter colors reflect lower go probability conditions (go, <50%; no-go, 0%) and darker colors represent higher go probability conditions (go,\u00a0100%; no-go,\u00a0 >50%). The arrows in A and B show the pressure on the execution process with decreasing go trial certainty. The arrow and bars in C illustrate the shift in boundary height between high (bottom bar) and low (top bar) go trial probability conditions. Mean simulated BOLD responses (right column) are calculated as the cumulative sum of execution process across the full time\u00a0course. This summation is reflected in the filled area under the curve in the traces in the left column. BOLD: blood oxygenation level dependent.\n\nBased on our simulations, the drift modulation model predicts a greater BOLD response when an action is\u00a0executed\u00a0(i.e.,\u00a0'go') versus trials where\u00a0the\u00a0action is\u00a0withheld\u00a0(i.e.,\u00a0'no-go') and, more importantly, that the BOLD response should increase with\u00a0the\u00a0go trial probability during\u00a0'no-go'\u00a0decisions, but\u00a0taper off when a response is executed. The main effect of trial outcome\u00a0(i.e.,\u00a0'go'\u00a0greater\u00a0than\u00a0'no-go') is due to the fact that, on average, withheld responses result from lower levels of evidence accumulation than executed responses (i.e., trials in which the accumulated evidence reaches the threshold). Within \u2018no-go\u2019 decision trials, the increase in drift-rate with higher go-trial certainty leads to higher levels of sub-threshold evidence accumulation at the end of the trial. On the other hand, the increase in drift-rate\u00a0with\u00a0go-trial\u00a0certainty leads to a faster rise-to-threshold\u00a0on\u00a0'go'\u00a0decision\u00a0trials and thus produces slightly less summed activity than executed responses in lower go-trial probability conditions. \u00a0In contrast\u00a0with\u00a0the\u00a0drift\u00a0modulation\u00a0model, the onset modulation model predicts that\u00a0in addition to a main effect of trial\u00a0outcome, increasing the probability of a go-trial should increase the magnitude of the BOLD response for\u00a0both 'no-go' and 'go'\u00a0decision trials.\u00a0This is due to the fact that there is overall more time for the process to accumulate with earlier onsets, that is, higher go-trial probabilities.\u00a0Thus, in high go-trial probability conditions both \u2018go\u2019 and \u2018no-go\u2019 decisions arise from longer cumulative processing time than in low go-trial probability conditions, and therefore predict greater activation. This\u00a0model\u00a0also\u00a0predicts\u00a0the effect of go-trial probability should be roughly equivalent for withheld and executed responses, which is a contrasting prediction from the drift modulation model which predicts a greater modulation wtih\u00a0go-trial probability on 'no-go'\u00a0decision trials. Finally, the boundary modulation model predicts that increasing go-trial probability will decrease the BOLD response, along with a general decrease in BOLD signal during 'go' decisions. This is because conditions with\u00a0lower boundary heights\u00a0(i.e.,\u00a0greater certainty of a go-trial), allow less time for the process to be active\u00a0and a shorter distance to travel\u00a0and\u00a0thus\u00a0predict lower levels of summed activity.\n\nTo evaluate these different model predictions, we measured task-related hemodynamic responses using the fMRI BOLD contrast. Healthy subjects (N=20) performed a modified version of the proactive task for the MRI environment (see \u201cMaterials and methods\u201d section). In order to assure that no covert actions were elicited during trials in which a key press was not recorded, we used a modified EMG over the first dorsal interosseous (FDI) muscle of the responding hand to record muscle activity (Figure 8\u2014figure supplement\u00a01A) so as to identify finger movements on all trials. Viable EMG data was available for 14 subjects and in these subjects suprathreshold muscle activity was only observed in <1% (mean = 0.71%, max 4%) of the trials where no key press was detected. The number of missed key presses was equally distributed across go trial probability conditions. For the initial analysis these error responses were corrected in these subjects using the EMG data to assure that no-go trials were uncontaminated by covert actions in these subjects.\n\nFor the purpose of testing the predictions of the drift, boundary and onset modulation\u00a0models, we used a general linear model (GLM) to fit task-related responses during \u2018go\u2019 and \u2018no-go\u2019 trials separately and a parametric regressor for each condition to assess the effect of go trial probability on the evoked BOLD response (see \u201cMaterials and methods\u201d section). Using a random effects analysis on all subjects, we isolated regions whose activity was modulated more during no-go trials than during trials where a response was executed, as predicted by the drift modulation model. After adjusting for cluster size (k\u00a0 >\u00a040) and multiple comparisons (q\u00a0 <\u00a00.05) we identified 24 clusters with differential modulation during no-go responses than go responses (Supplementary file 1). We were particularly interested in a cluster in the right caudate nucleus and a pair of bilateral clusters in the ventromedial thalamus that are consistent with the location of the thalamic subnucleus that is reciprocally connected to motor cortex (Nambu, 2011).\n\nThe nature of the contrast used in the whole-brain analysis does not necessarily confirm that the pattern of responses in the right caudate and bilateral thalamus are consistent with the drift modulation model, as the effect of go trial probability could cause a greater decrease in activation during no-go trials (e.g., the opposite direction of the drift modulation predictions). Therefore,\u00a0we extracted out the condition-specific responses in each region of interest (ROI), for all subjects, using a fivefold cross-validation with anatomical priors so as to avoid performing circular inference. Consistent with our predictions, activity in the right caudate nucleus and the left and right thalamic ROIs show a main effect of decision type on evoked activity (Figure 8; caudate: F(1,32) = 2.69, p=0.03; left thalamus: F(1,32) = 4.01, p=0.003; right thalamus: F(1,32) = 4.50, p=0.001). In the thalamus ROI responses selectively scaled with go trial probability, even in the trials where no key press was detected (Figure 8; left: F(2,32) = 4.13, p=0.025; right: F(3,32) = 3.67, p=0.037), while this effect was not significant in the\u00a0caudate ROI (F2, 32] = 1.77, p=0.19). More importantly the interaction between go trial probability and decision type was significant for both thalamus ROIs (left: F[2,32] = 4.30, p=0.022; right: F[2,32] = 4.13, p=0.025), but not the caudate (F[2,32] = 1.22, p=0.31). It should be noted that these results do not significantly change when only the subjects with reliable EMG signals are included in the analysis, confirming that spurious movements do not drive this pattern.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig8-v2.jpg)\n\n**Figure 8.:** Contrast maps for the comparison of no-go responses, modulated by go trial probability, against modulated go responses in the proactive task (center panel). Warm colors show areas where the modulation was more positive during no-go trials than go trials. This is the direction predicted by the drift modulation model (Figure 7A). All voxels are corrected to a false discovery rate of 0.05 (i.e., q <0.05). Region of interest (ROI) clusters were thresholded to a minimum of 40 continuously connected voxels (i.e., k >40). The side and bottom panels show individual responses for the go trial probability condition in seven ROIs. Red bars illustrate BOLD responses during trials where no key press was registered (no-go trials) and green bars show BOLD fits to trials where a response was registered (go). BOLD: blood oxygenation level dependent; AMA: supplementary motor area; preSMA: pre-supplementary motor area; IFG: inferior frontal gyrus; IPL: inferior parietal lobule; PCC: posterior cingulate cortex.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08723/elife-08723-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A)\u00a0Example of modified EMG set-up using the in-house Siemens physiological monitoring unit for monitoring cardiac signals.\u00a0The recording sensors were placed to estimate the electrical vector from the first dorsal interosseous (FDI) muscle of the responding right hand. (B) Trial-wise EMG responses detected for the trials where a response was made. Trials are time-locked to the start of the preparatory cue. White line indicates time in which the bar intersected the target. Recording for responses continued well after the end of the trial to identify late responses. (C) An example raw EMG signal from a single subject with peaks coinciding with finger movements.\n\nTwo cortical regions, the inferior frontal gyrus (IFG) and supplementary motor area (SMA) near the preSMA, were also of particular interest because they have been previously implicated in inhibitory control (Figure 8). In the IFG, we observed a lateralized interaction between go trial probability and response type in the right hemisphere (F[2,38] = 4.05, p=0.027), but not in the left (F[2,38] = 1.45, p=0.25). This rightward lateralization is consistent with previous reports of the right IFG being implicated in control of the hyperdirect pathway (Aron et al., 2014; van Belle et al., 2014; Zandbelt and Vink, 2010). The SMA also exhibited\u00a0an interaction between go trial probability and response type in both the right (F[2,38] = 4.86, p=0.014) and left (F[2,38] = 4.52, p=0.019) hemispheres. These results are consistent with previous studies implicating SMA and preSMA in uncertainty-related and conflict-related modulation of boundary height in the traditional drift-diffusion model, achieved through connections with the striatum and subthalamic nucleus (STN) (Forstmann et al., 2010; Frank et al., 2015; Jahfari et al., 2012). This finding supports the notion that modulating the execution drift-rate in our model reflects similar computations as adapting the threshold in the traditional drift-diffusion models without a dynamic pressure on the drift rate. Thus, activation patterns in distributed corticobasal ganglia circuits are largely consistent with the predicted responses from our computational model of competing decision dynamics on execution process drift rates.\n\n## Discussion\n\nThe current results provide two novel insights into the dynamics of inhibitory control. First, a DPM, where the initial state of the action cancellation signal depends on the current state of the execution decision, provides a much better fit to reactive stopping performance than\u00a0models where these two processes are independent. As we showed, this dependency is similar to the interactive race model, proposed by Boucher et al. (2007) to describe inhibitory control of saccadic eye movements, in which an accumulating go signal is directly suppressed by a much stronger stop signal, thereby deterministically canceling subthreshold actions. In this model the critical parameter for determining stopping performance is the delay between a stop cue and when the stop signal is actually registered. In contrast, the critical parameters in our model are the race between the execution and braking processes and the state of the execution process when the stop signal occurs. This dependency is largely consistent with the circuit-level architecture of corticobasal ganglia pathways (Figure 1A; Utter and Basso, 2008) where the direct (facilitation), indirect (suppression), and hyperdirect (brake) pathways converge at the primary output nucleus of the basal ganglia (i.e., the GPi in primates). Here we show, for the first time, that this dependency better fits behavioral data in the reactive task than the interactive race model, suggesting that there may not be equivalent control dynamics between oculomotor and manual response decisions.\n\nSchmidt et al. (2013) found that, in rodents, an external stop cue reliably produces a burst of activity in the STN, but only results in a successful stop when this signal reaches the substantia nigra pars reticulata (similar to the GPi in primates). Consistent with classic race models of action cancellation, early activity of movement encoding striatal neurons was sufficient to predict whether hyperdirect stop signaling would reach the substantia nigra pars reticulata in time to prevent a response, rising rapidly on fast go and failed stop trials and more gradually on slow go and successful stop trials. Parts of this action cancellation signal from the STN may also be relegated via arkypallidal pathways (orange pathways in Figure 1A) that relay inhibitory signals back up to the striatal neurons, offering a route for hyperdirect signals to terminate action plans within the striatum itself (Dodson et al., 2015). Both temporal competition between hyperdirect and descending striatal signals at the GPi and cancellation via arkypallidal pathways are largely consistent with the DPM presented here.\n\nOur modeling and imaging results also provide novel insights into the nature of proactive No-go decisions. Our framing of the execution process as a dynamic competition between direct and indirect pathways is motivated by the architecture of corticobasal ganglia pathways (Figure 1A), as well as recent electrophysiological and modeling evidence showing that cortical inputs to the striatum dynamically control the balance of direct and indirect signals throughout the basal ganglia (Wei et al., 2015). There are many possible routes for a competition between direct\u2013indirect pathways with the basal ganglia. First, given that STN and globus pallidus projections terminate on common outputs, it is possible that a simple summation of inhibitory and excitatory signals at the GPi itself results in a separate race for disinhibiting pallidal projections to the thalamus. It is also possible that branching collaterals from direct pathway neurons that terminate on indirect pathway neurons in the globus pallidus (Wei et al., 2015; Wu et al., 2000) would allow for crosstalk between the two major striatal efferent pathways. Finally, as mentioned previously, indirect pathway output, at the level of the STN, may be relayed back up to striatal direct pathway cells via arkypallidal connections (Dodson et al., 2015). Disambiguating which of these mechanisms may proactively modulate the accumulation of evidence toward an execution decision requires careful physiological analysis within each pathway itself and is left to future studies.\n\nBy reconceptualizing the dynamics of action selection as an ongoing competition between direct (facilitation) and indirect (suppression) pathways, our model may explain some of the discrepancies in previous studies of inhibitory control. For example, proactive inhibition has been associated with hemodynamic responses in the dorsal striatum (Majid et al., 2013), interpreted as an increased recruitment of the indirect pathway to suppress an action. Yet, electrophysiological recordings in rodents find concurrent activation of both the direct and indirect pathways during action initiation and cancellation (Cui et al., 2013). Both of these findings are consistent within the context of our model, in which the relative concurrent activation of direct and indirect pathways determines rate of integration toward the execution decision threshold.\n\nPrevious studies have largely found that proactive control is implemented as a change in the distance to threshold (Cavanagh et al., 2011b; Forstmann et al., 2010; Frank et al., 2015; Jahfari et al., 2012; Wei et al., 2015); whereas in our model, these dynamics are captured by the rate of the execution process itself. While drift rate and threshold modulations have qualitatively dissociable effects in a standard two-choice drift-diffusion model\u2014increasing the decision threshold leads to a speed-accuracy trade-off, whereas increasing drift rate has a positive effect on both outcome measures\u2014this distinction does not hold true for our DPM. Rather, slowing the rate of the execution process leads to greater stopping accuracy at the expense of response speed. This is consistent with speed-accuracy trade-off produced by raising the response threshold in traditional drift-diffusion models. Also, Ratcliff and Frank (2012) found that synthetic behavioral data generated by a basal ganglia neural network were best described by a drift-diffusion model with a decision threshold that collapsed at a rate that depended on the conflict between choices. Here we included a similar mechanism, but as a dynamic gain signal applied to the execution process, and compared models in which response uncertainty modulated its drift-rate, onset time, or the combination of these parameters. Our findings suggest that in the presence of these temporal dynamics, contextual factors like control demands impose a stronger influence on the rate of the growing urgency to respond than on the onset of the decision process. This finding is consistent with the context-dependent rate decay in the decision threshold found by Ratcliff and Frank (2012). However, by capturing these dynamics in the accumulating process itself, the DPM allows for incorporating the effects of context in reactive (i.e., penalty and reward structure) and proactive (i.e., probabilistic expectations) control in a single unifying parameter (i.e., execution drift rate), while at the same time distinguishing between action cancellation and no-go decision processes.\n\nCompared with stationary diffusion models,\u00a0 which\u00a0predict positively\u00a0skewed RT distributions, models that assume a temporal decay in the threshold or a nonconstant rate of accumulation predict response times that are more normally distributed\u00a0(Hawkins et al., 2015). Indeed, both tasks produced RT distributions that appeared more normal in shape and lacked a positive skew, adding justification to the assumption of a dynamic bias in the execution process. Compared with the reactive task (Figure 4\u2014figure supplement 1), however, proactive RT distributions (Figure 6\u2014figure supplement 1) were much narrower, spiking near the end of the trial with a slight negative skew. Correspondingly, best-fit parameter estimates show a muc stronger influence of the dynamic bias signal on \u2018go\u2019 decisions in the proactive than reactive task, suggesting that gain adaptation is differentially recruited during these two forms of inhibitory control. Future studies will be necessary to investigate the contextual constraints and neural plausibility of nonstationary decision mechanisms, particularly with respect to their implementation in corticobasal ganglia networks.\n\nOther models of behavioral and electrophysiological data in countermanding tasks, \u00a0such\u00a0as the anti-saccade task, have suggested that proactive constraints shift the onset of the decision process. This is particularly true in cortical neurons that plan the action (Pouget et al., 2011; Purcell et al., 2010).\u00a0However, here we show that the onset modulation model did not fit the behavior or imaging results as well as the drift modulation model. Our model was specifically designed to capture constraints in corticobasal ganglia systems, which are upstream of motor execution neurons, such as those recorded in previous countermanding tasks. Thus, it is possible that the dynamics described here are the mechanism for the delayed onset of activity in downstream cortical motor areas, that is, the onset of action selection neurons happens when the decision processes from the basal ganglia reach their boundary, which becomes delayed as the rate of the execution process is decelerated by the indirect pathway. It is also well established by now that subjects do not rely on a single mechanism for incorporating context into the decision process\u00a0(Heitz and Schall, 2012; Standage et al., 2011). While the pattern of observed BOLD responses was generally consistent with the drift modulation predictions, it did share some characteristics with the predictions of the onset modulation model (i.e., increasing activity with go trial probability on \u2018no-go\u2019 trials and greater overall activation on \u2018go\u2019 trials), allowing for the possibility that some subjects may\u00a0alternate\u00a0between strategies of modulating the drift and onset across trials or use both simultaneously. Only careful analysis of coincident electrophysiological recordings in key basal ganglia and cortical regions will fully confirm the compatibility of the two models.\n\nTaken together, our results provide crucial evidence that\u00a0reactive stopping ability depends on the competitive dynamics of ongoing proactive decision processes, suggesting these two forms of control arise from convergent, but separable control signals in the basal\u00a0ganglia. This novel reconceptualization of how proactive no-go decisions are distinguished from reactive stopping is consistent with the growing body of evidence to suggest that inhibitory control is a multifaceted process comprised of separable, but not independent, control mechanisms.\n\n## Materials and methods\n\n### Participants\n\nNeurologically healthy adults (behavioral study: N=60, mean age=22\u00a0years, 28 male; imaging study: N=20, mean age=25\u00a0years, 9 male) were recruited from the local university population. All procedures were approved by the local institutional review board at Carnegie Mellon University.\n\n### Tasks\n\nThe general trial procedure for go trials was the same for all experiments. On each trial, participants would see a bar fill upwards toward a white target line on the screen. The bar would intersect the target line 500\u00a0ms after trial onset. Participants could stop the bar at any point in the trial by pressing a button with their right hand (space key in behavioral study, index button on a response pad in the fMRI experiment) and were instructed to stop the bar as close to the target line as possible. The trial was terminated when the subject made a key press or when the bar passed the upper limit of the screen (reactive task, 650\u00a0ms; proactive task, 555\u00a0ms). On each trial a monetary bonus was given based on how close the top of the bar was to the target line. On baseline trials, this was determined as the inverse of the distance from the target. On caution trials, this was determined as the inverse of the squared distance. At the end of each trial, participants received visual feedback of their accuracy and monetary score.\n\nIn the reactive experiment, on a subset of trials (stop trials, n = 100) the bar would stop and turn red at one of five predefined points in its trajectory (the SSD). SSDs ranged from 200 to 400\u00a0ms (n=20 trials per SSD). On these trials participants were instructed not to produce a key press. Subjects were told that the color change was a cue that the bar had stopped. If subjects correctly withheld a response, then they would receive a bonus score. If subjects erroneously made a response, they received a penalty of equal value to the bonus during successful trials (100 points in baseline trials; 200 points in caution trials). The first block of trials (n=22) were all go trials so as to familiarize subjects with the timing of the response. On the remaining nine blocks (n=20 trials per block), the stop and go trials were randomly interleaved with a 50% probability. This ratio was selected so as to match the stopping probabilities with the proactive experiment.\n\nIn the proactive experiment, only one SSD was used (450\u00a0ms) for the entire experiment. On each trial the color of the bar indicated the probability that the bar would intersect with the target. Blue bars indicated 100% probability, red bars indicated 0% probability (i.e., always a stop trial), and shades of purple represented mixture probabilities. On each block (n=24 trials/block, 10 blocks total), each go trial probability was uniformly sampled four times. In order to detect late key presses on no-go trials, the program would continue monitoring for key\u00a0presses for an extra 100\u00a0ms after the bar left the screen. The feedback structures for the baseline and caution conditions were the same as in the reactive experiment.\n\nAll experiments were run using Psychophysics Toolbox (version 3.0) in Matlab (R2012b) on a Linux platform (Ubuntu 12.04).\n\n### Behavioral analysis\n\nA repeated-measures ANOVA was performed to test for a statistically significant interaction between the effects of cued go trial probability (0%, 20%, 40%, 60%, 80%, 100%) and penalty structure (baseline, caution) in the mean probability of a no-go decision. The same test was performed for mean go RTs but collapsing across 0%, 20% and 40% go trial probability conditions to increase statistical power, as fewer responses were recorded in these conditions. To account for hardware limitations in precision of RT measurements, mean go RTs were calculated for all responses recorded prior to the earliest recorded \u2018no-go\u2019 outcome ( <\u223c555\u00a0ms). Both dependent measures violated the sphericity assumption, thus all reported values were corrected accordingly using the Greenhouse-Geisser method. The PSE on the stop and no-go probability curves was estimated using logistic regression. Specifically the probability of stopping or not-going, y, was modeled as a function of cue conditions, x.\n\n$$\ny\u00a0=\u00a0\\lambdax\u00a0\u00a0\\lambda_{0}\n$$\n\nFor the reactive task, x was the stop-signal delay. For the proactive task, x was the probability of a go trial. The PSE was then calculated using the constant, \u03bb0, and slope, \u03bb, parameters from this regression model.\n\n$$\nPSE\u00a0=\u00a0-1\\frac{\\lambda_{0}}{\\lambda}\n$$\n\n### Drift diffusion process models\n\nFor all simulations, we designed an extension of the standard drift-diffusion model which assumes evidence for competing choices is stochastically sampled and accumulated until terminating at one of the choice thresholds, determining the decision outcome and response time. Our modified model assumes that competing facilitatory (i.e., direct) and suppressive (i.e., indirect) signals are integrated into a single execution process (\u03b8e). The linear drift and diffusion (\u03c6e)\u00a0of the execution process is shown by the stochastic differential equation in Equation 3, accumulating with a mean rate of ve (i.e., drift\u00a0rate)\u00a0and a standard deviation described by the Wiener diffusion process (e.g., white noise) with diffusion constant\u00a0\u03c3. The execution process is fully described by Equation 4 in which the linear accumulation described by Equation 3 is scaled by a dynamic bias signal \u03b3, modeled as a hyperbolic function of time with gain xb.\n\n$$\nd\\phi_{e}\u00a0=\u00a0\u03c5_{e}dt\u00a0\u00a0\\sigmadW\n$$\n\n$$\n\\theta_{e}t\u00a0=\u00a0\\phi_{e}t\u00a0\u00b7\u00a0\\gammat\n$$\n\nThe execution process\u00a0begins accumulating after an onset delay of tr. It is worth noting that it is possible for the onset delay parameter\u00a0to capture both pre- and postdecision delays (i.e., sensory encoding and motor execution delays).\n\nA response and RT is recorded if\u00a0\u03b8e\u00a0reaches the execution\u00a0boundary (a)\u00a0before the end of the trial window (b) and before the braking process reaches\u00a0the lower (0) boundary (see below). In the event of a stop cue, the braking process (\u03b8b) is initiated at the current state of \u03b8e\u00a0with a negative drift\u00a0rate (\u2212vb). If\u00a0\u03b8b reaches the 0 boundary before \u03b8e reaches the execution boundary no response or RT is recorded from the model.\n\nFor the reactive stopping task we fit three different models where the dynamics of \u03b8e and \u03b8b.\n\n$$\nd\\phi_{b\u00a0}=\u00a0\u03c5_{b}dt\u00a0\u00a0\\sigmadW\\theta_{b}(SSD)\u00a0=\u00a0\\theta_{e}(SSD)\n$$\n\n$$\nd\\theta_{b}\u00a0=\u00a0\u03c5_{b}dt\u00a0\u00a0\\sigmadW\n$$\n\n$$\n\\theta_{b}(SSD)= \\theta_{e}(tr)= 0\n$$\n\nWe also compared different models of\u00a0contextual modulation in which penalty and proactive cuing either modulated the drift\u00a0rate, onset time, or boundary height\u00a0of the execution process.\u00a0All contextual modulation models in the reactive task were fit using the DPM framework (Equations 3\u20135) with two free parameters in the drift (vb, vc), onset (trb, trc), and boundary (ab, ac) modulation models and four free parameters in the combined drift and onset modulation model (vb, vc, trb, trc).\u00a0The corresponding models fit to the proactive task contained six free parameters (one each go trial probability cue) in the drift (v0\u2212v100), boundary (a0\u2212a100), and onset (tr0\u2212tr100) modulation models and 12 free parameters in the combined drift and onset model (v0\u2212v100; tr0\u2212tr100). We report two complexity-penalized goodness-of-fit statistics to account for differences in the number of parameters of alternative models, AIC and BIC.\n\n### Model fitting\n\nAll models were fit to the behavioral data by minimizing a cost function equal to the sum of the squared and weighted errors between vectors of observed and simulated RT quantiles (0.1,0.3,0.5,0.7,0.9) and response probabilities, that is, stop probability curve in the reactive task and the no-go probability curve in the proactive task. Weights applied to the RT quantiles were calculated by estimating the standard error for each of the five quantiles (Maritz and Jarrett, 1978)\u00a0and then dividing the interpolated median standard error by that of each quantile. For the response probabilities,\u00a0weights were calculated by taking the standard deviation for each condition across subjects and then dividing the mean of those standard deviations by that of each condition. This approach represents the variability of each value in the vector as a ratio (Ratcliff and Tuerlinckx, 2002), where values closer to the mean are assigned a weight close to 1, and values associated with higher variability a weight <1, lower variability a weight >1.\n\nThe cost function for all models fit to the reactive task data is shown in Equation 8 below. This included the probability of a response on go trials (Pg), the stop accuracy at each of the five SSD conditions (Pssd), the five RT quantiles for correct responses (Qc) and five RT quantiles for error responses (Qe) for both the baseline and caution conditions (j) separately. Error RTs (i.e., responses on trials when the stop cue was presented) were collapsed across all SSDs due to there being few trials in which the subject made a response in the early SSD conditions. The weights of the correct (wc) and error (we) RT quantiles were multiplied by the respective probability of a response on correct (Pcorr) and error (Perr) trials. All variables with the hat accent are model-predicted values and are subtracted from the corresponding empirical subject-averaged statistic.\n\n$$\nCost_{Reactive=}\\sumj=12[w_{g}\u00b7(P_{g}^{j}\u00a0-\u00a0P^_{g}^{j})^{2}\\sumw_{d}\u00b7d=15(P_{d}^{j}\u00a0\u00a0-\u00a0P\u23dc_{d}^{j})^{2}P_{corr}^{j}\u00b7\\sumi=15w_{ij}^{c}\u00b7(Q_{ij}^{c}\u00a0-\u00a0Q^_{ij}^{c})^{2}\u00a0P_{err}^{j}\u00b7\\sumi=15w_{ij}^{e}\u00b7(Q_{ij}^{e}\u00a0-\u00a0Q^_{ij}^{e})^{2}]\n$$\n\nProactive models were fit using a similar cost function that included the probability of a response in each of the six probabilistic cue conditions (Pprob,), five RT quantiles calculated from trials in which the cue indicated a go probability higher that 50% (Qhi) and five RT quantiles calculated from trials in which the cue indicated a go probability of lower than 50% (Qlo). The weights applied to high (wh) and low (wl) RT quantiles were multiplied by the respective probability of a response in high (Phigh) and low (Plow) go probability conditions.\n\n$$\ncost_{Proactive}\u00a0=\u00a0\\sumj=16w_{p}P^{j\u00a0}\u00a0-\u00a0P^^{j}^{2}\u00a0P_{high}\\sumh=15W_{h}Q_{h}\u00a0-\u00a0Q^_{h}^{2}\u00a0P_{low}\\sumi=15w_{i}Q_{i}\u00a0-\u00a0Q^_{i}^{2}\n$$\n\nThe response times were split up in this manner to account for the low trial counts in the lower go trial probability conditions. During the model fits, this was performed by allowing free parameters in the model to vary across all six cue conditions, in order to calculate the predicted response probabilities. All trials in which the execution process reached threshold before the time limit were then collapsed into two vectors, one containing simulations from the low go trial probability conditions and the other from high go trial probability conditions. RT quantiles were then calculated for each aggregate vector of RTs and appended to the vector of response probabilities before being submitted to the cost function. All variables with the hat accent are model-predicted values and are subtracted from the corresponding empirical subject-averaged statistic.\n\nTo ensure that parameter estimation did not terminate prematurely, models were fit to the data using a combination of global and local minima optimization. First, an initial set of parameters was obtained for each model type by leaving all parameters free and using the basin\u00a0hopping algorithm provided by SciPy (Blanco-Silva, 2013) to identify a global error basin. The best fitting parameters are then optimized using a Nelder\u2013Mead simplex algorithm (Nelder and Mead, 1965) which explores the basin reached in the previous step for its local minimum. Basin\u00a0hopping seeks to identify a set of parameters at the global minimum of a cost function by stochastically searching the parameter space for error basins, which is especially desirable when there is a high degree of the variability in the model error. However, stochastic search methods are not well suited for fine-grained error minimization which is best achieved by gradient based methods like the simplex algorithm. For reactive models, this average cost function is similar to that shown in Equation 8 but without the summation over j conditions and with all empirical statistics representing the average value collapsing baseline and caution conditions. For proactive models, this cost function becomes a single response probability, taken as the average response probability across cues, and five RT quantiles calculated by averaging the quantiles for the high and low go trial probability conditions. At this stage the basin\u00a0hopping algorithm is iterated a maximum of 100 times or until it returns 40 failed attempts to find a new global minimum\n\nFollowing parameter optimization to the average data, alternative models were tested by allowing only one or a few of these parameters to vary across conditions while holding all others constant. First, the average parameter estimates are submitted to another global optimization procedure in which all parameters are held constant except for the parameter of interest that is optimized individually to each condition of interest using the same basin\u00a0hopping parameters as above. This is performed prior to the final simplex optimization to avoid initiating the parameter(s) at the same value for each condition being fit, as we found this to increase the chances that the Nelder\u2013Mead simplex terminates very close to its initial state and overall generally worse fits. The final simplex minimization was run holding all parameters constant except for those of interest that were left free to vary across conditions. For all models, this procedure was run from start to finish at least three times and the model with the lowest AIC was selected. This includes all compared models of contextual modulation in the reactive and proactive tasks, meaning that constant parameters are held constant across conditions, but not models. By running every model through the same global and local optimization routine multiple times, this avoids the issue of biasing model selection to favor those that are simply better able to explain the data within the constraints of a single set of constant parameters. Thus, parameter estimates listed in Tables 1 and 2 for parameters held constant across conditions reflect the best-fit parameters to the average data for the best-of-three model.\n\nExample data as well as model code, simulations, cost function weights, and animations can be found here: https://www.github.com/coaxlab/radd\n\n### Model-simulated BOLD activity\n\nIn addition to fitting different models of proactive control to behavioral data, we evaluated these models on their ability to make general predictions regarding the change in the BOLD response across probabilistic cues on go and no-go trials. Based on the assumption that the neural activity in regions involved in a competitive execution decision will reflect information about the time and distance of the accumulation process, we generated BOLD predictions from each of the models using the following procedure. For each model, the best fitting parameter estimates from the proactive task were used to simulate 100 trials for\u00a0each\u00a0go trial probability condition. Because we were interested in comparing fundamental differences in how each model predicted BOLD activity across conditions rather than trial-wise or subject-wise predictions, simulations were performed using the best fit parameters from the behavioral experiment rather than performing separate fits to behavior from the scanning session. This was done to take advantage of the fact that the behavioral effects of the task were similar inside and outside the scanner, but with significantly more trials/observations in the behavioral-only session.\n\nThe simulated trials were then separated by trial outcome (\u2018go\u2019 trials in which the execution process reached threshold and \u2018no-go\u2019 in which the execution process failed to reach threshold. To approximate the same experimental conditions tested in the imaging analysis, \u2018go\u2019 trials in the lower go trial probability conditions (\u226460%) were binned together and all \u2018no-go\u2019 trials in the higher go trial probability conditions (\u226540%) were binned together. For each condition the predicted BOLD magnitude was calculated by taking the cumulative sum of the full execution process over the length of each trial, then averaging across trials. By taking the cumulative sum of the execution process this effectively represents the distance-to-threshold and time-to-threshold of each trial as a single area-under-the-curve estimate. Taking the average area-under-the-curve across trials can then be compared with the observed magnitude of the BOLD response in the corresponding condition.\n\n### fMRI acquisition and analysis\n\nAll imaging data were collected in a 3T Siemens Verio MRI at the Scientific Imaging and Brain Research Center on the Carnegie Mellon University campus. All functional images were collected with echo planar imaging sequence (TE = 20 ms; TR = 1500 ms). Thirty contiguous slices (3.2 mm x\u00d7\u00a03.2 mm \u00d7 4 mm) were collected in an ascending and sequential fashion parallel to the anterior and posterior commissures. One subject was removed from analysis due to an error in saving the output files for the scan run. One subject failed to complete the reactive experiment due to time constraints. All experiments utilized a rapid event related design with a jittered intertrial interval sampled from an exponential distribution (range 4\u201318 s, mean = 8 s) with 334 volumes per run. In the proactive experiment, a total of four scan runs were collected with 60 trials collected for each go trial probability condition. All trials were preceded by a 300\u00a0ms onset cue\n\nDuring scanning electrical activity of the FDI muscle of the right hand was recorded using an MR compatible EMG sensor (400\u00a0Hz sampling rate). Sensors were put over the lateral and medial portions of the FDI muscle, with the ground electrode placed on the bone of the wrist (Figure 8\u2014figure supplement 1). The onset and offset of recording were time-locked to the onset of the functional scans. In a subset of subjects (N = 6) the electrode placement slipped or a recording buffer error truncated data collection. Thus EMG data for these subjects was not included in the final analysis. The muscle activity for all trials was smoothed using a Gaussian smoothing kernel (4\u00a0s FWHM) and time-locked to the onset of each trial. Significant muscle activity was determined within each trial when the root mean squared EMG signal exceeded 3 standard deviations of the pre-trial signal.\n\nAll fMRI analysis was performed with SPM8 (http://www.fil.ion.ucl.ac.uk/spm/software/spm8/). Prior to analysis, the echo planar images for each participant were realigned to the first image in the series and corrected for differences in the slice acquisition time. All images were then coregistered to MNI-space (Montreal\u00a0 Neurological\u00a0 Institute) \u00a0using a nonlinear spatial normalization approach (Internation\u00a0 Consortium\u00a0 for\u00a0 Brain\u00a0 Mapping-152 space template regularization, 16 nonlinear iterations) and smoothed using a 4 mm isotropic Gaussian kernel. Estimates of task-related responses at each voxel were determined using a reweighted least squares GLM approach (Diedrichsen and Shadmehr, 2005) that minimizes the influence of movement related noise in the signal. Statistically significant effects were determined using a false discovery rate threshold across all voxels of 0.05 (q < 0.05).\n\nClusters of 40 or more continuously active voxels were extracted from the parametric ROIs and their condition-wise BOLD responses are reported in Supplementary file 1. Seven areas were identified in the whole brain parametric GLM analysis as being of particular interest and selected for follow-up ROI analysis. To avoid circular inference, we used the Harvard\u2013Oxford cortical and subcortical atlases (Desikan et al., 2006; Frazier et al., 2005)\u00a0to anatomically identify the right caudate nucleus and bilateral inferior frontal gyrus (operculum), SMA, and thalamus. Using a fourfold cross validation, voxels with a significant (p <0.005, uncorrected) positive no-go\u2013go parametric modulation were identified within each anatomical ROI using three-fourths of the sample. Then the regression coefficients\u00a0for each condition were extracted from this subset of voxels within the ROI in the remaining subjects.\n",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "c8361396-33b0-49a6-b7eb-83b04ea68961",
+      "submission_id": "ec0aed7f-8ea7-4389-8d3c-43d3af22ff6b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael J Frank, Brown University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08723.018](https://doi.org/10.7554/eLife.08723.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Competing basal-ganglia pathways determine the difference between stopping and deciding not to go\" for peer review at eLife. Your submission has been favorably evaluated by Timothy Behrens (Senior editor), Michael Frank (Reviewing editor), and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present a novel sequential sampling model of action cancellation in a stop-signal task, whereby one decision variable initially drifts toward a threshold for action, and a second decision variable, initiated at the stop-signal delay then competes with the first to reach an alternate, braking threshold. They show that this model captures behavior in a reactive stop-signal task better than alternatives in which the stopping process starting point is independent of the initial decision variable. Finally, they show that neural activity in plausible convergence/output structures for the decision process (caudate, thalamus) is consistent with patterns predicted by their model.\n\nEssential revisions:\n\nThis paper does a nice job of bringing together a number of computational and methodological approaches in an effort to better characterize how cognitive control unfolds in a stop signal-like task. The findings themselves have the potential to build on earlier work in important ways, particularly the modeling insights regarding the dependence between execution and braking; the comparisons between onset and drift-based models; and the neural patterns in caudate and thalamus. However, each of these is difficult to interpret properly without comparison to alternative models, which will also require fitting RT distributions rather than individual point estimates. Additional details related to the choice of model/parameters, and imaging assumptions are also needed. Thus a revision will require a good deal of work but we are hopeful that this can be accomplished.\n\n1) Please compare the model to existing alternative models of response inhibition such as Boucher et al. which bears some resemblance to the current model and hence should be acknowledged, and the similarities and differences need to be made more explicit. In particular, the following model comparisons would be greatly useful, particularly \"A\"). While it may be out of scope to rigorously test each of the other alternatives, where possible it would be great if they could at least comment on their viability as an alternative (for example some may be able to be ruled out based on qualitative features of the data without necessarily fitting each model to the entire dataset). This would provide better insight into how wide or narrow the space of models is that could provide a similarly good account of the current data.\n\nA) An approximation to the Boucher model would be to implement a version of your model in which execution and braking combine into a single decision variable, rather than separate DV's in parallel DDMs (this single-DV model would seem to be even closer to the authors' proposal of integration onto a single pool of neurons, particularly given the presumption that the execution drift is itself a combination of two pathway inputs);\n\nB) A model in which the decision threshold for the initial process is altered by the stop-signal, as suggested by Wiecki & Frank's (2013) model in which the Go-NoGo pathways contribute positive and negative evidence for and against alternative responses but where the decision threshold on the Go-NoGo difference is modulated by STN activity given conflicting sources of evidence. This was applied to model various selective response inhibition tasks as well as stop signal tasks, including the cited Schmidt et al. data. (See also Ratcliff & Frank (2012) for DDM simulations linking STN to threshold changes, and various empirical studies showing cortical- >STN involvement in decision threshold regulation in conflict tasks (e.g. Cavanagh et al., 2011, Green et al. 2013)). This is also related to the more general work in psychology and neuroscience suggesting that probabilities affect baseline-threshold distance (e.g. see Carpenter & Williams, 1995; Platt & Glimcher 1999). Thus you could add a model in which the \"colour of the bar\" affects the threshold as an alternative model, and consider the relation to the above findings/models in Discussion.\n\nC) A model in which drift remains constant past the SSD but braking is represented by a sudden change in threshold;\n\nD) A model in which braking drift rate (v_s) is conditional on SSD;\n\nE) A model in which both drift and onset are influenced by proactive parameters (mentioned in the Discussion);\n\nF) A single-boundary model. The execution threshold has a straightforward interpretation when considering implementations of the DDM and related models in other domains, but the braking threshold (i.e., commitment to non-action) is less straightforward to interpret. While this has precedent in earlier race models in the action cancellation literature, I think it would be fair for someone to wonder whether it would be more parsimonious to implement the current model with a single absorbing boundary (execution) rather than two? Could the authors comment on the potential value in having this lower boundary as a termination point (rather than, e.g., simply allowing paths to cross it and return, and/or simply imposing this as a minimum on theta values)?\n\n2) All of the reviewers were unsatisfied with the fitting methods which collapsed the RT to a single point estimate (the mean). This collapses across important information in the RT distribution, and the history in modeling choice RT with the full distributions has shown that the shape of these distributions is particularly important for making inferences about underlying cognitive processes (Ratcliff has many excellent papers on this). We would be more comfortable interpreting the conclusions made (e.g. that striatum affects drift rate rather than thresholds) with more serious consideration given to the fitting. And this will likely be especially important for disentangling the various alternatives noted above in point 1. Although you might not have the full likelihood of your model that would easily allow full Bayesian parameter estimation as in the HDDM, there are alternative approaches, the most straightforward of which would be to jointly optimize the quantiles and response proportions (i.e. find parameters that minimize a cost function equal to the summed (and appropriately weighted) differences between the two sets of quantiles, and response probabilities). Another approach would be to construct the likelihood of your model using simulation methods, see a recent PBR paper (by Turner, with code available). Aside from disentangling alternative models with more sensitive RT distributions, there really isn't need for a stochastic model if you only fit the mean, and the bootstrapping process doesn't help here (just effectively puts a kernel over the summary statistics with variance proportional to the number of points you resample). Also please include tables of average fit parameters across the different studies/conditions. Finally when performing model comparisons, why not use model fit statistics instead of paired t-tests?\n\n3) Please clarify the how and why the computational models of the pro-active task make particular predictions for the BOLD signal. In the subsection \u201cModel-Simulated BOLD Activity\u201d: We did not fully understand how the predicted BOLD was obtained. Were the predictions not made for individual trials, but for a type of trials (e.g. with particular bar colour)? If so, we suppose the prediction was made on the basis of simulating the model multiple times and taking average. Please clarify and provide all details of this procedure, e.g. how many times the simulation was repeated, what parameter values were used, etc. In Figure 6, please explain what the dashed lines denote, and how exactly the colour curves were obtained. Finally, could you please provide an intuition for why the models make these particular predictions?\n\n4) The fMRI results seem to depend non-trivially on assumptions about BOLD signal decay. Can the authors provide clearer justification for the need for a decay term and the specific form it took for the different conditions? This currently comes off a bit ad hoc.\n\n5) As described, the ROI analyses in the fifth paragraph of subsection \u201cAccumulating Basal Ganglia Output During No-Go Decisions \u201craise concerns about circularity (i.e., the ROIs were essentially selected based on the interactions now being tested: differences in probability modulation by condition). The authors should either provide additional information about these analyses that allays these concerns or use appropriate measures (e.g., leave-one-subject-out extraction) to avoid potential circularities.\n\n6) Some important aspects of the experimental details could be referred to earlier. For example, reward structure of successful withholding of response seemed important but was only found in the later methods due to the format.\n",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9892e7fa-bde2-466d-af42-d7a1e9ffcdb4",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C1",
+      "claim": "The hyperdirect pathway performs fast action cancellation.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of corticobasal ganglia pathways allows for many routes to inhibit a planned action: the hyperdirect pathway performs fast action cancellation and the indirect pathway competitively constrains execution signals from the direct pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characterization of the hyperdirect pathway's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "572ea7d6-71f0-4873-9af9-c8efb415dbc8",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C2",
+      "claim": "The indirect pathway competitively constrains execution signals from the direct pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of corticobasal ganglia pathways allows for many routes to inhibit a planned action: the hyperdirect pathway performs fast action cancellation and the indirect pathway competitively constrains execution signals from the direct pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characterization of the indirect pathway's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "f8d49d2f-903f-4c4e-8a15-27a6eaf5d2ec",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C3",
+      "claim": "Reactive braking depends on the state of an execution process.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a nested diffusion model, we show how reactive braking depends on the state of an execution process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by model fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "b60b84c7-224c-4720-8dc1-8322d35f85fa",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C4",
+      "claim": "No-go decisions are best captured by a failure of the execution process to reach the decision threshold due to increasing constraints on the drift rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no-go decisions are best captured by a failure of the execution process to reach the decision threshold due to increasing constraints on the drift rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by model fitting results showing drift modulation provides the best fit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "66bc09e7-39e7-413a-8b03-80a4fa2c379e",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C5",
+      "claim": "The dependent process model accounts for both behavioral and fMRI responses during inhibitory control tasks better than alternative models.",
+      "claim_type": "EXPLICIT",
+      "source": "This model accounts for both behavioral and functional MRI (fMRI) responses during inhibitory control tasks better than alternative models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by AIC/BIC comparisons and fMRI data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "10167caf-7869-4edc-b2e4-1932ef9033af",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C6",
+      "claim": "Proactive suppression is a slower, action-specific process.",
+      "claim_type": "EXPLICIT",
+      "source": "These are generally considered to be separable control signals, with proactive suppression being a slower, action-specific process (Aron et al., 2011) and reactive inhibition being a fast global suppression mechanism (Aron and Poldrack, 2006; Aron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "5f3da711-5d58-4045-b0d0-c7782d0ce051",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C7",
+      "claim": "Reactive inhibition is a fast global suppression mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These are generally considered to be separable control signals, with proactive suppression being a slower, action-specific process (Aron et al., 2011) and reactive inhibition being a fast global suppression mechanism (Aron and Poldrack, 2006; Aron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "f0d72364-bd2b-4e3d-9deb-5230477defe8",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C8",
+      "claim": "Proactive signals modulate the efficacy of reactive stopping.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent evidence suggests that these processes interact, with proactive signals modulating the efficacy of reactive stopping (Aron, 2011; Chen et al., 2010; Forstmann et al., 2008; Irlbacher et al., 2014; Jahfari et al., 2012; Stuphorn and Emeric, 2012; van Belle et al., 2014; van Maanen et al., 2015; Zandbelt et al., 2013; Zandbelt and Vink, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "2b27865f-bbcf-4449-864f-a1d548aeb2b9",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C9",
+      "claim": "Proactive signals have been most commonly associated with activity in rostral prefrontal and striatal areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Proactive signals have been most commonly associated with activity in rostral prefrontal and striatal areas (Cai et al., 2011; Majid et al., 2013; van Belle et al., 2014), suggesting a possible competition of facilitation and suppression signals relegated through the direct and indirect pathways, respectively (Wei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "add6e885-6441-407c-9512-25fc8380476f",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C10",
+      "claim": "Reactive braking has been linked to premotor and prefrontal areas in the right hemisphere, as well as the subthalamic nucleus, that together compose the hyperdirect pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, reactive braking has been linked to premotor and prefrontal areas in the right hemisphere, as well as the subthalamic nucleus, that together compose the hyperdirect pathway (Aron et al., 2014; Cavanagh et al., 2011b; Rodriguez et al., 2006; Swann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous neuroimaging and electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "29bb357b-6415-487d-a603-209aa8599bd5",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C11",
+      "claim": "The control signals of the direct, indirect, and hyperdirect pathways all project to the internal segment of the globus pallidus (GPi) in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "While in primates the control signals of the direct, indirect, and hyperdirect pathways all project to the internal segment of the globus pallidus (GPi), the primary output of the basal ganglia, it remains unclear whether these signals converge on the same pool of neurons or run in parallel of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established anatomical knowledge about basal ganglia circuitry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "9c165858-d68f-4a64-9467-e7cdbfe71f04",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C12",
+      "claim": "It remains unclear whether the signals from direct, indirect, and hyperdirect pathways converge on the same pool of neurons or run in parallel of each other at the GPi.",
+      "claim_type": "EXPLICIT",
+      "source": "While in primates the control signals of the direct, indirect, and hyperdirect pathways all project to the internal segment of the globus pallidus (GPi), the primary output of the basal ganglia, it remains unclear whether these signals converge on the same pool of neurons or run in parallel of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an open question in the field.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "dcc1156a-a273-43d2-9f8d-d779448f5d32",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C13",
+      "claim": "Successful reactive inhibition depends on the relative timing of descending execution signals from the striatum and fast-braking signals from the hyperdirect pathway at the output of the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, successful reactive inhibition depends on the relative timing of descending execution signals from the striatum and fast-braking signals from the hyperdirect pathway at the output of the basal ganglia (Schmidt et al., 2013), suggesting that these two forms of control may, in fact, converge before they continue on to the thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "39cb8c6d-ab2f-405b-8be2-f1a8ff9d94dc",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C14",
+      "claim": "Changing the feedback structure promoted more cautious responding, resulting in more successful stopping at later stop signal delays.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in both conditions it was harder for participants to withhold their responses when the stop signal was delivered later in the trial (Figure 2B). In addition, changing the structure of the feedback promoted more cautious responding, resulting in more successful stopping at later stop signal delays (SSDs) and slower RTs on go trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "a84664d1-42a7-4873-8d88-e5fcb622e639",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C15",
+      "claim": "Changing the feedback structure resulted in slower RTs on go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, changing the structure of the feedback promoted more cautious responding, resulting in more successful stopping at later stop signal delays (SSDs) and slower RTs on go trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "c9075a0d-6e98-463b-ba4f-ed0a16cd626d",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C16",
+      "claim": "The dependent process model provided a better fit to both the correct and incorrect RT distributions than either the interactive or independent race models.",
+      "claim_type": "EXPLICIT",
+      "source": "The DPM provided a better fit to both the correct and incorrect RT distributions (Figure 3A) than either the interactive or independent race models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model fitting results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "f034aca0-0967-4a48-ae5f-0f38b553934a",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C17",
+      "claim": "The dependent process model fell within the 95% confidence interval of the mean probability of stopping in each SSD condition, whereas the independent and interactive race models overpredicted the probability of stopping at the longest and shortest delays, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the DPM fell within the 95% confidence interval of the mean probability of stopping in each SSD condition (Figure 3B), whereas the independent and interactive race models overpredicted the probability of stopping at the longest and shortest delays, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model fitting results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "3be5fd55-d3dd-4e29-b623-1849912f0334",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C18",
+      "claim": "The dependent process model was a substantially better fit to the data than the independent and interactive race models based on AIC and BIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Goodness of fit, assessed using both the Akaike information criterion (AIC) and Bayesian information criterion (BIC), showed that the DPM was a substantially better fit to the data than the other two models (Figure 3C; Table 1), suggesting that the race between braking and execution signals may be biased depending on the state of the action selection decision.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AIC and BIC values shown in Figure 3C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "c541fdb2-ae0f-4521-ad7f-fad53a79774c",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C19",
+      "claim": "The race between braking and execution signals may be biased depending on the state of the action selection decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Goodness of fit, assessed using both the Akaike information criterion (AIC) and Bayesian information criterion (BIC), showed that the DPM was a substantially better fit to the data than the other two models (Figure 3C; Table 1), suggesting that the race between braking and execution signals may be biased depending on the state of the action selection decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the superior fit of the dependent process model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "df0e19ee-0f5a-423d-adea-bb8481801afd",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C20",
+      "claim": "In the caution condition subjects shifted their stop curve later in time, producing more accurate stopping performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in the caution condition subjects shifted their stop curve later in time, producing more accurate stopping performance (Figure 2B; t (59) = \u22122.18, p=0.03) by delaying their execution decision, resulting in longer go trial RTs (Figure 2C t(59) =  \u22120.53, p <0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "31db9198-991d-4870-9506-ec01409a8d6b",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C21",
+      "claim": "The drift modulation model provided the best overall fit of speed and accuracy in the reactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the drift modulation model provided the best overall fit of speed and accuracy in the reactive task, followed by the onset modulation and boundary models, respectively (Figure 4; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AIC and BIC comparisons shown in Figure 4 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "0c063c7a-5c29-42b1-9a41-593e92a0ef0e",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C22",
+      "claim": "Participants were able to use the colored cue to make accurate go and no-go decisions in the proactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were able to use the colored cue to make accurate go and no-go decisions (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "3b80cdc0-c75d-4a9e-9afa-0fcfa56125f5",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C23",
+      "claim": "The probability of making a no-go decision scaled monotonically with the cued probability of a go trial.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a slight bias toward making a go decision across trial types; however, the probability of making a no-go decision scaled monotonically with the cued probability of a go trial.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "7a9162f3-bbb1-480c-a6a2-a8a4542c82db",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C24",
+      "claim": "Participants were faster with higher certainty of a go trial in the proactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, as expected, participants were faster with higher certainty of a go trial (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "c3ed34eb-4391-411f-8ed7-c764cd0e195c",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C25",
+      "claim": "All RTs in the proactive task were much faster than the responses in the reactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that all RTs in this proactive task were much faster than the responses in the reactive task (Figure 2), confirming that subjects weren't relying on the delayed stop signal to make a reactive decision.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of RT data between Figure 2 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "cb6a96f3-3845-486f-a3b1-0cfd381dddc1",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C26",
+      "claim": "There was no significant influence of demands for control on the decision curve in the proactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the reactive task, we did not observe a significant influence of demands for control on either the decision curve (F[3.43, 205.8] = 0.76, p=0.53) or response times (F[2.28,132.32] = 0.81, p=0.46) in the proactive task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "956a3a5c-4b1a-4d17-8b59-1101fbd69f19",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C27",
+      "claim": "There was a small but significant correlation between a subject's reactive stopping ability and their proactive decisions (r = 0.35, p <0.006, r2 = 0.06).",
+      "claim_type": "EXPLICIT",
+      "source": "Collapsing across both the baseline and caution conditions, we found a small but significant correlation in a subject's reactive control abilities and their proactive decisions (Figure 5\u2014figure supplement 1, r = 0.35, p <0.006, r2 = 0.06).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "0aa3a0e1-3abb-4647-9477-dfce3c17916a",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C28",
+      "claim": "Overall reactive task performance explains approximately 6% of the variance in the proactive condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, overall reactive task performance explains \u223c6% of the variance in the proactive condition, which is consistent with a model where these two abilities reflect separable upstream control signals that eventually converge on common output pathways (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the r-squared value of the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "259d02cf-8c4c-43d5-b607-ce73753b8588",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C29",
+      "claim": "The drift modulation model was able to capture the proactive no-go decision dynamics significantly better than the other models based on the AIC and BIC scores.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the drift modulation model was able to capture the proactive no-go decision dynamics significantly better than the other models based on the AIC and BIC scores (Figure 6; Table 2) and general patterns of speed and response proportions (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AIC and BIC comparisons shown in Figure 6 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "909ec290-93b0-4434-a079-2206bda1f4f3",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C30",
+      "claim": "As the go trial probability decreased, the drift rate of the execution process decreased to the point that the decision boundary was often not intersected by the end of the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that as the go trial probability decreased, the drift rate of the execution process decreased to the point that the decision boundary was often not intersected by the end of the trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the best-fitting drift modulation model parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "7715c252-f5b9-43c0-a897-f3e52d72b7a9",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C31",
+      "claim": "Activity in the right caudate nucleus and the left and right thalamic ROIs show a main effect of decision type on evoked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our predictions, activity in the right caudate nucleus and the left and right thalamic ROIs show a main effect of decision type on evoked activity (Figure 8; caudate: F(1,32) = 2.69, p=0.03; left thalamus: F(1,32) = 4.01, p=0.003; right thalamus: F(1,32) = 4.50, p=0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fMRI data analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "8dc20907-0ef4-4db7-9342-132e5c90ac16",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C32",
+      "claim": "In the thalamus ROI responses selectively scaled with go trial probability, even in the trials where no key press was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In the thalamus ROI responses selectively scaled with go trial probability, even in the trials where no key press was detected (Figure 8; left: F(2,32) = 4.13, p=0.025; right: F(3,32) = 3.67, p=0.037), while this effect was not significant in the caudate ROI (F2, 32] = 1.77, p=0.19).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fMRI data analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "50c891db-638c-4610-bf8a-a3cfe396ba9b",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C33",
+      "claim": "The interaction between go trial probability and decision type was significant for both thalamus ROIs but not the caudate.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly the interaction between go trial probability and decision type was significant for both thalamus ROIs (left: F[2,32] = 4.30, p=0.022; right: F[2,32] = 4.13, p=0.025), but not the caudate (F[2,32] = 1.22, p=0.31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "50cdc7c1-5402-4d50-9fa9-a5ab74b50fa2",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C34",
+      "claim": "In the IFG, there was a lateralized interaction between go trial probability and response type in the right hemisphere but not in the left.",
+      "claim_type": "EXPLICIT",
+      "source": "In the IFG, we observed a lateralized interaction between go trial probability and response type in the right hemisphere (F[2,38] = 4.05, p=0.027), but not in the left (F[2,38] = 1.45, p=0.25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "880b8c2b-96e1-435d-8ed4-f02531c4d985",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C35",
+      "claim": "The SMA exhibited an interaction between go trial probability and response type in both the right and left hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "The SMA also exhibited an interaction between go trial probability and response type in both the right (F[2,38] = 4.86, p=0.014) and left (F[2,38] = 4.52, p=0.019) hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of fMRI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "47018336-c92c-4d59-a389-f1ba72c12bf4",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C36",
+      "claim": "A dependent process model, where the initial state of the action cancellation signal depends on the current state of the execution decision, provides a much better fit to reactive stopping performance than models where these two processes are independent.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a DPM, where the initial state of the action cancellation signal depends on the current state of the execution decision, provides a much better fit to reactive stopping performance than models where these two processes are independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the primary finding supported by model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "91b95b54-ca07-490b-8007-a5eea9f3f0d3",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C37",
+      "claim": "The dependency between execution and braking processes is largely consistent with the circuit-level architecture of corticobasal ganglia pathways where the direct, indirect, and hyperdirect pathways converge at the primary output nucleus of the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "This dependency is largely consistent with the circuit-level architecture of corticobasal ganglia pathways (Figure 1A; Utter and Basso, 2008) where the direct (facilitation), indirect (suppression), and hyperdirect (brake) pathways converge at the primary output nucleus of the basal ganglia (i.e., the GPi in primates).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to anatomical literature and comparison with the model architecture.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "72e89452-0e26-401b-8556-d001448fa088",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C38",
+      "claim": "The dependent process model better fits behavioral data in the reactive task than the interactive race model.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show, for the first time, that this dependency better fits behavioral data in the reactive task than the interactive race model, suggesting that there may not be equivalent control dynamics between oculomotor and manual response decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "bff4f745-531a-4d56-b268-5e5598eb0941",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C39",
+      "claim": "There may not be equivalent control dynamics between oculomotor and manual response decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show, for the first time, that this dependency better fits behavioral data in the reactive task than the interactive race model, suggesting that there may not be equivalent control dynamics between oculomotor and manual response decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference in model fits between the current study and previous oculomotor studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "6e70a40c-c680-48be-ad56-af5398bad7f2",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C40",
+      "claim": "In rodents, an external stop cue reliably produces a burst of activity in the STN, but only results in a successful stop when this signal reaches the substantia nigra pars reticulata.",
+      "claim_type": "EXPLICIT",
+      "source": "Schmidt et al. (2013) found that, in rodents, an external stop cue reliably produces a burst of activity in the STN, but only results in a successful stop when this signal reaches the substantia nigra pars reticulata (similar to the GPi in primates).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "b9aba3e8-7b18-4a2f-b34f-1e98dd0439c8",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C41",
+      "claim": "Early activity of movement encoding striatal neurons was sufficient to predict whether hyperdirect stop signaling would reach the substantia nigra pars reticulata in time to prevent a response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with classic race models of action cancellation, early activity of movement encoding striatal neurons was sufficient to predict whether hyperdirect stop signaling would reach the substantia nigra pars reticulata in time to prevent a response, rising rapidly on fast go and failed stop trials and more gradually on slow go and successful stop trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological evidence from Schmidt et al. (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "504756b5-0177-42c8-bade-4d9e3010608c",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C42",
+      "claim": "Parts of the action cancellation signal from the STN may be relegated via arkypallidal pathways that relay inhibitory signals back up to the striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Parts of this action cancellation signal from the STN may also be relegated via arkypallidal pathways (orange pathways in Figure 1A) that relay inhibitory signals back up to the striatal neurons, offering a route for hyperdirect signals to terminate action plans within the striatum itself (Dodson et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to anatomical evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "2d705a98-f496-4617-a7b9-2220fe2a28fa",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C43",
+      "claim": "Cortical inputs to the striatum dynamically control the balance of direct and indirect signals throughout the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our framing of the execution process as a dynamic competition between direct and indirect pathways is motivated by the architecture of corticobasal ganglia pathways (Figure 1A), as well as recent electrophysiological and modeling evidence showing that cortical inputs to the striatum dynamically control the balance of direct and indirect signals throughout the basal ganglia (Wei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological and modeling evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "62d5b0b3-dea8-4862-80c9-bc4ff6f99b8a",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C44",
+      "claim": "Proactive inhibition has been associated with hemodynamic responses in the dorsal striatum, interpreted as an increased recruitment of the indirect pathway to suppress an action.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, proactive inhibition has been associated with hemodynamic responses in the dorsal striatum (Majid et al., 2013), interpreted as an increased recruitment of the indirect pathway to suppress an action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to neuroimaging evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "a97d02e7-7725-4f1c-a317-0b4a1c9a7edc",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C45",
+      "claim": "Electrophysiological recordings in rodents find concurrent activation of both the direct and indirect pathways during action initiation and cancellation.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, electrophysiological recordings in rodents find concurrent activation of both the direct and indirect pathways during action initiation and cancellation (Cui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to electrophysiological evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "7cb09020-d196-4b35-9b4b-6be969c6a2a9",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C46",
+      "claim": "Previous studies have largely found that proactive control is implemented as a change in the distance to threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have largely found that proactive control is implemented as a change in the distance to threshold (Cavanagh et al., 2011b; Forstmann et al., 2010; Frank et al., 2015; Jahfari et al., 2012; Wei et al., 2015); whereas in our model, these dynamics are captured by the rate of the execution process itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "8b7e981e-6b4d-4ab9-9e3e-f235b6088d3d",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C47",
+      "claim": "Slowing the rate of the execution process leads to greater stopping accuracy at the expense of response speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, slowing the rate of the execution process leads to greater stopping accuracy at the expense of response speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the properties of the dependent process model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "54127f25-e8fb-422f-a0c8-1bb54c40f170",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C48",
+      "claim": "Ratcliff and Frank (2012) found that synthetic behavioral data generated by a basal ganglia neural network were best described by a drift-diffusion model with a decision threshold that collapsed at a rate that depended on the conflict between choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Ratcliff and Frank (2012) found that synthetic behavioral data generated by a basal ganglia neural network were best described by a drift-diffusion model with a decision threshold that collapsed at a rate that depended on the conflict between choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "1d652970-fb39-4892-ac34-dc6590976f92",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C49",
+      "claim": "Models that assume a temporal decay in the threshold or a nonconstant rate of accumulation predict response times that are more normally distributed compared with stationary diffusion models.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with stationary diffusion models,  which predict positively skewed RT distributions, models that assume a temporal decay in the threshold or a nonconstant rate of accumulation predict response times that are more normally distributed (Hawkins et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "b77d4d10-9e4b-45c7-87ac-1d361ba4871f",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C50",
+      "claim": "Both tasks produced RT distributions that appeared more normal in shape and lacked a positive skew.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both tasks produced RT distributions that appeared more normal in shape and lacked a positive skew, adding justification to the assumption of a dynamic bias in the execution process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observation of RT distributions in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "e244e18d-c919-4683-8a94-78db60d36426",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C51",
+      "claim": "Best-fit parameter estimates show a much stronger influence of the dynamic bias signal on 'go' decisions in the proactive than reactive task.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, best-fit parameter estimates show a muc stronger influence of the dynamic bias signal on 'go' decisions in the proactive than reactive task, suggesting that gain adaptation is differentially recruited during these two forms of inhibitory control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of parameter estimates between tasks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "8777bf67-4d19-4201-9fc9-1f65c992eade",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C52",
+      "claim": "Gain adaptation is differentially recruited during proactive and reactive forms of inhibitory control.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, best-fit parameter estimates show a muc stronger influence of the dynamic bias signal on 'go' decisions in the proactive than reactive task, suggesting that gain adaptation is differentially recruited during these two forms of inhibitory control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference in dynamic bias parameter estimates between tasks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "d7139e0a-be3c-4188-807d-f1fab5e2a272",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C53",
+      "claim": "Other models of behavioral and electrophysiological data in countermanding tasks have suggested that proactive constraints shift the onset of the decision process.",
+      "claim_type": "EXPLICIT",
+      "source": "Other models of behavioral and electrophysiological data in countermanding tasks,  such as the anti-saccade task, have suggested that proactive constraints shift the onset of the decision process. This is particularly true in cortical neurons that plan the action (Pouget et al., 2011; Purcell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling and electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "9638de7b-353b-4ff0-8623-0252c9a409a8",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C54",
+      "claim": "The dynamics described in the current model may be the mechanism for the delayed onset of activity in downstream cortical motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that the dynamics described here are the mechanism for the delayed onset of activity in downstream cortical motor areas, that is, the onset of action selection neurons happens when the decision processes from the basal ganglia reach their boundary, which becomes delayed as the rate of the execution process is decelerated by the indirect pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as a possible reconciliation between the current model and previous findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "2610570a-dac8-4a7f-8fba-5d762ccee93f",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C55",
+      "claim": "Subjects do not rely on a single mechanism for incorporating context into the decision process.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also well established by now that subjects do not rely on a single mechanism for incorporating context into the decision process (Heitz and Schall, 2012; Standage et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous behavioral studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "5dd0c54c-89b9-4bd2-8e16-1494d40f036e",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C56",
+      "claim": "Some subjects may alternate between strategies of modulating the drift and onset across trials or use both simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "While the pattern of observed BOLD responses was generally consistent with the drift modulation predictions, it did share some characteristics with the predictions of the onset modulation model (i.e., increasing activity with go trial probability on 'no-go' trials and greater overall activation on 'go' trials), allowing for the possibility that some subjects may alternate between strategies of modulating the drift and onset across trials or use both simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on mixed characteristics in the BOLD data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "1498dd56-80b9-46bb-8928-f82d3f5f2c93",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C57",
+      "claim": "Reactive stopping ability depends on the competitive dynamics of ongoing proactive decision processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results provide crucial evidence that reactive stopping ability depends on the competitive dynamics of ongoing proactive decision processes, suggesting these two forms of control arise from convergent, but separable control signals in the basal ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the combined behavioral and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "9c5ad5c8-add2-4784-ba39-d31073d289aa",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C58",
+      "claim": "Proactive and reactive control arise from convergent, but separable control signals in the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results provide crucial evidence that reactive stopping ability depends on the competitive dynamics of ongoing proactive decision processes, suggesting these two forms of control arise from convergent, but separable control signals in the basal ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the combined behavioral and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "f40fdc2a-2e7a-4f0a-86af-0c958eca5049",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C59",
+      "claim": "Neurologically healthy adults (N=60, mean age=22 years, 28 male) were recruited for the behavioral study.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurologically healthy adults (behavioral study: N=60, mean age=22 years, 28 male; imaging study: N=20, mean age=25 years, 9 male) were recruited from the local university population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "68331911-3223-45a6-a2a0-490f44f6ff31",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C60",
+      "claim": "Neurologically healthy adults (N=20, mean age=25 years, 9 male) were recruited for the imaging study.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurologically healthy adults (behavioral study: N=60, mean age=22 years, 28 male; imaging study: N=20, mean age=25 years, 9 male) were recruited from the local university population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "4774614f-f568-4f2c-b032-a039522c3463",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C61",
+      "claim": "All procedures were approved by the local institutional review board at Carnegie Mellon University.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the local institutional review board at Carnegie Mellon University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "912adbfd-a78e-406a-b0cb-a6d9830c61a9",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C62",
+      "claim": "The bar would intersect the target line 500 ms after trial onset in the go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On each trial, participants would see a bar fill upwards toward a white target line on the screen. The bar would intersect the target line 500 ms after trial onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the task description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "98c75e59-826a-4c8e-b3aa-111e364ffa05",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C63",
+      "claim": "In the reactive experiment, stop trials comprised 45% of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In a subset of trials (stop trials; 45% trials), the bar would stop before it intersected with the target (i.e., the stop signal) and participants were instructed to not make a response on these trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the task description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "7872c482-703f-4c1a-a3fa-78c8918d7ca7",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C64",
+      "claim": "SSDs in the reactive experiment ranged from 200 to 400 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "SSDs ranged from 200 to 400 ms (n=20 trials per SSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the task description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "55157f8d-016f-400f-b024-3e3fdcc9b1b3",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C65",
+      "claim": "In the proactive experiment, only one SSD was used at 450 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the proactive experiment, only one SSD was used (450 ms) for the entire experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the task description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "80348804-396d-4f0b-a48b-eb934804a2d1",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C66",
+      "claim": "All imaging data were collected in a 3T Siemens Verio MRI at the Scientific Imaging and Brain Research Center on the Carnegie Mellon University campus.",
+      "claim_type": "EXPLICIT",
+      "source": "All imaging data were collected in a 3T Siemens Verio MRI at the Scientific Imaging and Brain Research Center on the Carnegie Mellon University campus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "ff921959-b908-424b-8d80-3fd72805e470",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C67",
+      "claim": "Suprathreshold muscle activity was only observed in <1% (mean = 0.71%, max 4%) of the trials where no key press was detected in subjects with viable EMG data.",
+      "claim_type": "EXPLICIT",
+      "source": "Viable EMG data was available for 14 subjects and in these subjects suprathreshold muscle activity was only observed in <1% (mean = 0.71%, max 4%) of the trials where no key press was detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing EMG validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "056ebf56-7f07-44ff-a507-06a63b2f2662",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "claim_id": "C68",
+      "claim": "After adjusting for cluster size (k > 40) and multiple comparisons (q < 0.05), 24 clusters were identified with differential modulation during no-go responses than go responses.",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for cluster size (k  > 40) and multiple comparisons (q  < 0.05) we identified 24 clusters with differential modulation during no-go responses than go responses (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the fMRI results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8268900d-b0e5-4655-a621-c192b48cd8fe",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The dependent process model (DPM), where the initial state of the braking process depends on the current state of the execution process, provides a substantially better fit to reactive stopping behavioral data than independent or interactive race models. This is demonstrated through superior fits to RT distributions and stop probability curves, as well as lower AIC and BIC values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 provide converging quantitative evidence from model fits (RT distributions, stop probability curves, AIC/BIC comparisons) that the DPM outperforms alternative models. The sample size (N=60) is adequate, statistical comparisons are appropriate, and the results consistently favor the DPM across multiple metrics. The conclusion (C19, C36, C38) that reactive braking depends on execution state is well-supported by these model comparison results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "764c335a-644a-4ff4-aa92-3cf3728ce5a1",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "No-go decisions are best captured by drift rate modulation of the execution process, where decreasing go trial probability reduces the drift rate such that the decision boundary is not reached. The drift modulation model provided the best fit to both reactive and proactive task data compared to onset delay and boundary modulation alternatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C29 provide quantitative model comparison evidence (AIC/BIC) showing drift modulation outperforms alternative mechanisms in both tasks. The mechanistic interpretation (C30) follows logically from the model structure. The consistency across two independent tasks strengthens the conclusion. However, the authors acknowledge (C46, C55) that subjects may use multiple strategies, introducing some uncertainty about whether drift modulation is the exclusive mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dependent process model with drift modulation accounts for fMRI BOLD responses in corticobasal ganglia regions during the proactive task. Specifically, thalamus showed an interaction between go trial probability and decision type consistent with drift modulation predictions, while right IFG and bilateral SMA also showed predicted interaction patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 provide statistical evidence from fMRI ROI analysis with appropriate corrections (q<0.05, k>40). The thalamus interaction (C33) is the strongest evidence for the drift modulation model predictions. The sample size (N=20) is modest for fMRI but adequate given the within-subject design. The cross-validation approach for ROI definition (described in methods) avoids circular inference. However, the authors acknowledge (C56) that BOLD patterns share some characteristics with onset modulation predictions, suggesting the evidence is not entirely unambiguous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "a07517c1-f9e3-4b00-91c9-4b2701af6e0c",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Changing feedback structure from baseline to caution condition promoted more cautious responding, resulting in more successful stopping at later stop signal delays and slower reaction times on go trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 report behavioral effects with appropriate statistical tests (t-tests with p<0.05 and p<0.001). Claim C20 provides the specific statistics (t(59)=-2.18, p=0.03 for stopping; t(59)=-0.53, p<0.001 for RT). The sample size (N=60) is adequate and the within-subject design is appropriate. The manipulation successfully induced the intended behavioral change.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "a80f6f5a-c0d7-4460-ae13-05a77e9a5cba",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the proactive task, participants successfully used probabilistic color cues to make go/no-go decisions, with no-go probability scaling monotonically with cued go probability and faster RTs with higher go certainty. Proactive task RTs were much faster than reactive task RTs, confirming subjects were not relying on the delayed stop signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 describe basic behavioral validation of the proactive task with visual evidence from figures. The monotonic scaling (C23) and RT patterns (C24) demonstrate task comprehension. The RT comparison (C25) is critical for validating that the proactive task elicits fundamentally different decisions than the reactive task. These are straightforward descriptive results well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "a20867cc-36d8-4e67-81b7-e254c7efc0c8",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "There was no significant effect of feedback manipulation (baseline vs. caution) on proactive task performance, but a small significant correlation (r=0.35, p<0.006, r\u00b2=0.06) was found between reactive stopping ability and proactive decisions across subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 reports null effects with appropriate statistics (F-tests, p>0.05). Claim C27 provides a significant but weak correlation with appropriate statistics. The interpretation (C28) that reactive performance explains ~6% of proactive variance is mathematically correct from r\u00b2. This modest correlation supports the model's prediction of separable but convergent control signals. The sample size (N=60 for behavioral study) provides adequate power for detecting this correlation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "44397abd-bba7-46fb-bf77-f8bb5b3fd234",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EMG validation confirmed minimal covert movements during no-go trials (<1% of trials showed suprathreshold muscle activity), and whole-brain fMRI analysis identified 24 clusters with differential modulation during no-go versus go responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 provides quantitative validation that no-go trials were not contaminated by covert movements, which is critical for interpreting the fMRI results. The low percentage (<1%) with specific statistics (mean=0.71%, max=4%) in 14 subjects with viable EMG is convincing. Claim C68 reports the whole-brain fMRI results with appropriate multiple comparison correction (q<0.05, k>40). These are methodological validation results that support the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "96b29abb-4579-46e6-83cf-953bb56a4e5b",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both reactive and proactive tasks produced RT distributions that were more normally distributed and lacked positive skew, consistent with dynamic bias in the execution process. Parameter estimates showed stronger dynamic bias influence in the proactive than reactive task, suggesting differential recruitment of gain adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 describes an observed pattern in RT distributions that justifies the model's dynamic bias assumption. Claims C51-C52 report parameter estimate comparisons between tasks. These observations are consistent with the model structure and provide face validity. However, the evaluation is somewhat qualitative (\"appeared more normal\") and the mechanistic interpretation about differential gain adaptation (C52) is inferential rather than directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims about basal ganglia pathways and inhibitory control mechanisms, including the roles of hyperdirect, direct, and indirect pathways, their anatomical convergence at GPi, and the interaction between proactive and reactive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C6-C11, C13) represent established knowledge from prior literature, supported by appropriate citations. They provide the theoretical framework and motivation for the current study. Claims C1-C2 are stated as general principles in the abstract. Claims C6-C10 cite multiple prior studies. Claim C11 states anatomical facts. Claim C13 cites specific electrophysiological evidence. These are appropriately characterized as prior knowledge rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion of prior work on basal ganglia circuitry, including rodent electrophysiology showing STN activity and striatal neuron dynamics during stopping, arkypallidal pathways, concurrent direct/indirect pathway activation, and previous computational modeling approaches to proactive control and decision thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C40-C46, C48-C49, C53) cite and accurately describe prior literature to contextualize the current findings. They are appropriately used to discuss how the current model relates to previous work. The citations appear appropriate and the descriptions are consistent with the cited work. These represent accurate characterization of prior work rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Interpretive claims about the relationship between the dependent process model and basal ganglia circuitry, differences from oculomotor control, mechanistic implications of drift rate modulation, potential reconciliation with cortical onset delays, individual differences in strategy, and the overall conclusion that reactive and proactive control arise from convergent but separable signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive claims (C37, C39, C47, C54-C58) represent reasonable inferences from the data and model fits. Claims C37 and C58 connect the model to known anatomy. Claim C39 suggests differences between manual and oculomotor control based on model comparisons. Claim C47 describes model properties. Claims C54-C56 acknowledge limitations and alternative interpretations. Claim C57-C58 state the main conclusions. These interpretations are generally well-supported by the data, though some (C39, C54, C56) are speculative and appropriately qualified by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "186b623c-7295-4234-8eae-b76218c9d35c",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details about participant recruitment, task parameters, and imaging acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C59-C66) describe basic methodological details that are clearly stated in the methods section. They include sample sizes, demographics, task timing parameters, and imaging specifications. These are factual descriptions of the experimental procedures and are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    },
+    {
+      "id": "a52f5e6a-9b97-4b24-be4b-962e2c336a9e",
+      "content_id": "33f04cd5-90ef-4587-a159-25f190b51b21",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "It remains unclear whether signals from direct, indirect, and hyperdirect pathways converge on the same GPi neurons or run in parallel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C12 explicitly states an open question in the field that the current study does not resolve. This is appropriately characterized as uncertain and motivates the study, but is not a result that can be evaluated as supported or unsupported by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:10:57.046211Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8d49d2f-903f-4c4e-8a15-27a6eaf5d2ec",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "c9075a0d-6e98-463b-ba4f-ed0a16cd626d",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "f034aca0-0967-4a48-ae5f-0f38b553934a",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "3be5fd55-d3dd-4e29-b623-1849912f0334",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "c541fdb2-ae0f-4521-ad7f-fad53a79774c",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "47018336-c92c-4d59-a389-f1ba72c12bf4",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "72e89452-0e26-401b-8556-d001448fa088",
+      "result_id": "8268900d-b0e5-4655-a621-c192b48cd8fe"
+    },
+    {
+      "claim_id": "b60b84c7-224c-4720-8dc1-8322d35f85fa",
+      "result_id": "764c335a-644a-4ff4-aa92-3cf3728ce5a1"
+    },
+    {
+      "claim_id": "31db9198-991d-4870-9506-ec01409a8d6b",
+      "result_id": "764c335a-644a-4ff4-aa92-3cf3728ce5a1"
+    },
+    {
+      "claim_id": "259d02cf-8c4c-43d5-b607-ce73753b8588",
+      "result_id": "764c335a-644a-4ff4-aa92-3cf3728ce5a1"
+    },
+    {
+      "claim_id": "909ec290-93b0-4434-a079-2206bda1f4f3",
+      "result_id": "764c335a-644a-4ff4-aa92-3cf3728ce5a1"
+    },
+    {
+      "claim_id": "66bc09e7-39e7-413a-8b03-80a4fa2c379e",
+      "result_id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a"
+    },
+    {
+      "claim_id": "7715c252-f5b9-43c0-a897-f3e52d72b7a9",
+      "result_id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a"
+    },
+    {
+      "claim_id": "8dc20907-0ef4-4db7-9342-132e5c90ac16",
+      "result_id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a"
+    },
+    {
+      "claim_id": "50c891db-638c-4610-bf8a-a3cfe396ba9b",
+      "result_id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a"
+    },
+    {
+      "claim_id": "50cdc7c1-5402-4d50-9fa9-a5ab74b50fa2",
+      "result_id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a"
+    },
+    {
+      "claim_id": "880b8c2b-96e1-435d-8ed4-f02531c4d985",
+      "result_id": "25e93aaf-2d65-4547-a8b9-936db0de8d0a"
+    },
+    {
+      "claim_id": "39cb8c6d-ab2f-405b-8be2-f1a8ff9d94dc",
+      "result_id": "a07517c1-f9e3-4b00-91c9-4b2701af6e0c"
+    },
+    {
+      "claim_id": "a84664d1-42a7-4873-8d88-e5fcb622e639",
+      "result_id": "a07517c1-f9e3-4b00-91c9-4b2701af6e0c"
+    },
+    {
+      "claim_id": "df0e19ee-0f5a-423d-adea-bb8481801afd",
+      "result_id": "a07517c1-f9e3-4b00-91c9-4b2701af6e0c"
+    },
+    {
+      "claim_id": "0c063c7a-5c29-42b1-9a41-593e92a0ef0e",
+      "result_id": "a80f6f5a-c0d7-4460-ae13-05a77e9a5cba"
+    },
+    {
+      "claim_id": "3b80cdc0-c75d-4a9e-9afa-0fcfa56125f5",
+      "result_id": "a80f6f5a-c0d7-4460-ae13-05a77e9a5cba"
+    },
+    {
+      "claim_id": "7a9162f3-bbb1-480c-a6a2-a8a4542c82db",
+      "result_id": "a80f6f5a-c0d7-4460-ae13-05a77e9a5cba"
+    },
+    {
+      "claim_id": "c3ed34eb-4391-411f-8ed7-c764cd0e195c",
+      "result_id": "a80f6f5a-c0d7-4460-ae13-05a77e9a5cba"
+    },
+    {
+      "claim_id": "cb6a96f3-3845-486f-a3b1-0cfd381dddc1",
+      "result_id": "a20867cc-36d8-4e67-81b7-e254c7efc0c8"
+    },
+    {
+      "claim_id": "956a3a5c-4b1a-4d17-8b59-1101fbd69f19",
+      "result_id": "a20867cc-36d8-4e67-81b7-e254c7efc0c8"
+    },
+    {
+      "claim_id": "0aa3a0e1-3abb-4647-9477-dfce3c17916a",
+      "result_id": "a20867cc-36d8-4e67-81b7-e254c7efc0c8"
+    },
+    {
+      "claim_id": "ff921959-b908-424b-8d80-3fd72805e470",
+      "result_id": "44397abd-bba7-46fb-bf77-f8bb5b3fd234"
+    },
+    {
+      "claim_id": "056ebf56-7f07-44ff-a507-06a63b2f2662",
+      "result_id": "44397abd-bba7-46fb-bf77-f8bb5b3fd234"
+    },
+    {
+      "claim_id": "b77d4d10-9e4b-45c7-87ac-1d361ba4871f",
+      "result_id": "96b29abb-4579-46e6-83cf-953bb56a4e5b"
+    },
+    {
+      "claim_id": "e244e18d-c919-4683-8a94-78db60d36426",
+      "result_id": "96b29abb-4579-46e6-83cf-953bb56a4e5b"
+    },
+    {
+      "claim_id": "8777bf67-4d19-4201-9fc9-1f65c992eade",
+      "result_id": "96b29abb-4579-46e6-83cf-953bb56a4e5b"
+    },
+    {
+      "claim_id": "9892e7fa-bde2-466d-af42-d7a1e9ffcdb4",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "572ea7d6-71f0-4873-9af9-c8efb415dbc8",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "10167caf-7869-4edc-b2e4-1932ef9033af",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "5f3da711-5d58-4045-b0d0-c7782d0ce051",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "f0d72364-bd2b-4e3d-9deb-5230477defe8",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "2b27865f-bbcf-4449-864f-a1d548aeb2b9",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "add6e885-6441-407c-9512-25fc8380476f",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "29bb357b-6415-487d-a603-209aa8599bd5",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "dcc1156a-a273-43d2-9f8d-d779448f5d32",
+      "result_id": "39a6af08-9fb3-4db5-86b2-c05f0e7281c3"
+    },
+    {
+      "claim_id": "6e70a40c-c680-48be-ad56-af5398bad7f2",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "b9aba3e8-7b18-4a2f-b34f-1e98dd0439c8",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "504756b5-0177-42c8-bade-4d9e3010608c",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "2d705a98-f496-4617-a7b9-2220fe2a28fa",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "62d5b0b3-dea8-4862-80c9-bc4ff6f99b8a",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "a97d02e7-7725-4f1c-a317-0b4a1c9a7edc",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "7cb09020-d196-4b35-9b4b-6be969c6a2a9",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "54127f25-e8fb-422f-a0c8-1bb54c40f170",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "1d652970-fb39-4892-ac34-dc6590976f92",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "d7139e0a-be3c-4188-807d-f1fab5e2a272",
+      "result_id": "14b6ba0c-f2a3-4925-b52e-3707a2147da2"
+    },
+    {
+      "claim_id": "91b95b54-ca07-490b-8007-a5eea9f3f0d3",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "bff4f745-531a-4d56-b268-5e5598eb0941",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "8b7e981e-6b4d-4ab9-9e3e-f235b6088d3d",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "9638de7b-353b-4ff0-8623-0252c9a409a8",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "2610570a-dac8-4a7f-8fba-5d762ccee93f",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "5dd0c54c-89b9-4bd2-8e16-1494d40f036e",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "1498dd56-80b9-46bb-8928-f82d3f5f2c93",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "9c5ad5c8-add2-4784-ba39-d31073d289aa",
+      "result_id": "9d0eee34-dfc2-40a7-8e94-8ed682ce78b5"
+    },
+    {
+      "claim_id": "f40fdc2a-2e7a-4f0a-86af-0c958eca5049",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "68331911-3223-45a6-a2a0-490f44f6ff31",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "4774614f-f568-4f2c-b032-a039522c3463",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "912adbfd-a78e-406a-b0cb-a6d9830c61a9",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "98c75e59-826a-4c8e-b3aa-111e364ffa05",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "7872c482-703f-4c1a-a3fa-78c8918d7ca7",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "55157f8d-016f-400f-b024-3e3fdcc9b1b3",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "80348804-396d-4f0b-a48b-eb934804a2d1",
+      "result_id": "186b623c-7295-4234-8eae-b76218c9d35c"
+    },
+    {
+      "claim_id": "9c165858-d68f-4a64-9467-e7cdbfe71f04",
+      "result_id": "a52f5e6a-9b97-4b24-be4b-962e2c336a9e"
+    }
+  ],
+  "comparisons": []
+}

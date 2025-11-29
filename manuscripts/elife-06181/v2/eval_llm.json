@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors systematically investigated a five-residue network in the E. coli alkaline phosphatase active site by creating 28 out of 32 possible mutant combinations, including a minimal construct with all five residues mutated and constructs with individual residues restored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C39 describe the comprehensive mutagenesis approach. The experimental design is clearly stated, with 28 of 32 possible combinations tested, including the minimal construct (D101A/D153A/R166S/E322Y/K328A) and individual restoration experiments. The data in Table 1 and Figure 2 provide kinetic measurements for all tested variants, supporting the systematic nature of the investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C120",
+      "C121"
+    ],
+    "result": "Analysis of the mutagenesis data identified three energetically independent but structurally interconnected functional units (D101/R166/D153, D153/Mg2+/K328, and D101/Mg2+), each exhibiting distinct energetic behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C120-C121 describe the primary finding of three functional units. The extensive kinetic data in Table 1 and Figures 4, 6-8 demonstrate distinct energetic behaviors for each unit. The structural interconnections are shown in Figure 9, and the energetic independence is supported by the quantitative analysis showing different modes of cooperativity (nearly independent for D101/R166/D153, cooperative for D153/Mg2+/K328, and anti-cooperative for D101/Mg2+).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C125",
+      "C126"
+    ],
+    "result": "A quantitative mathematical model was developed that reproduces the observed catalytic rates for all 28 tested mutants within a factor of two and predicts the rates of the four untested variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C125-C126 describe the mathematical model. The model is referenced in Appendix 1 Table 2, and the text states it reproduces observed rates within twofold for all 28 mutants. The predicted values for untested variants are shown in grey in Figure 2A. While the appendix details are not fully provided in the main text, the consistency of the model with experimental data is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C49",
+      "C50"
+    ],
+    "result": "Individual mutation of each of the five residues causes significant rate decreases (64 to 88,000-fold), but the cumulative effect of removing all five residues simultaneously is 10^6-fold less severe than predicted by additivity, indicating substantial energetic interdependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C49-C50 describe the non-additive effects. Figure 3A shows the individual effects ranging from 64 to 88,000-fold, with R166 and E322Y (Mg2+ removal) having the largest effects. The calculation in Equation 1 and the data in Figure 3A demonstrate that the minimal construct has 10^6-fold higher activity than predicted by additivity, providing strong evidence for energetic interdependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Adding each residue back to the minimal construct produces smaller rate enhancements (2.6 to >1900-fold differential) than removing it from wild-type, with D153 being deleterious when added in isolation but beneficial in the WT background, demonstrating context-dependent energetic contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe the asymmetric effects of residue addition versus removal. Figure 3B shows the add-back experiments, and the text quantifies the differential effects (2.6 to >1900-fold, up to 4.5 kcal/mol). The D153 example (C53) is particularly striking, being deleterious by \u226510-fold when added alone but beneficial by 230-fold in WT background. This demonstrates that each residue has energetic connections to at least one other residue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "R166, D101, and D153 form a functional unit where the two aspartate residues enhance R166's catalytic effectiveness in a nearly independent manner, with R166 contributing only ~10-fold without the aspartates but 6300-fold with both present, and this unit functions independently of Mg2+ and K328.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe the D101/R166/D153 functional unit. Figure 4 shows the systematic analysis: R166 contributes ~10-fold without aspartates, 170-220-fold with one aspartate, and 6300-fold with both. The black and grey bars in Figure 4 demonstrate independence from Mg2+ and K328. The model that aspartates position R166 for interaction with phosphoryl oxygens (C62) is reasonable given the structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Crystal structures of D101A/D153A AP and prior structures of D101 and D153 mutants show that R166 is displaced or disordered when the flanking aspartates are mutated, while E322Y (lacking Mg2+) does not affect R166 position, providing structural evidence that D101 and D153 position R166 and the phosphoryl group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C78 describe structural validation of the D101/R166/D153 unit. The D101A/D153A structure (Table 2, Figure 5, PDB 4YR1) shows R166 displacement in both monomers, with one rotated ~19\u00b0 and the other flipped away or adopting dual conformations. Prior structures (C66-C72) support these observations. The phosphate positioning is also affected (C77). The E322Y structure showing no R166 displacement (C72) confirms independence from Mg2+. The structural data are consistent with the functional model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The Mg2+ ion, D153, and K328 form a second functional unit that is energetically separate from the D101/R166/D153 unit, with Mg2+ contributing 820-fold alone but requiring both D153 and K328 for the full 88,000-fold effect, while R166 has virtually no effect on Mg2+ contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 describe the D153/Mg2+/K328 functional unit. Figure 6 systematically shows that Mg2+ contributes 820-fold without D153/K328 (C83), but 88,000-fold with both present (C87), representing a ~100-fold differential (C84, C88). The presence of R166 has no effect on Mg2+ contribution (C85), demonstrating functional separation from the R166 unit. D153 serves as the interconnection between the two units (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C100"
+    ],
+    "result": "D101 and the Mg2+ ion form a third functional unit with anti-cooperative energetics, where each contributes ~20-30-fold only when the other is absent, representing a redundant functional unit distinct from the other two units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97, C100 describe the D101/Mg2+ functional unit. Figures 7 and 8 show the anti-cooperative relationship: D101 contributes ~20-fold without Mg2+ (C90) but has no effect with Mg2+ present (C91). Conversely, Mg2+ has a 30-fold larger effect without D101 (C96). This anti-cooperativity (C100) is distinct from the other units' behaviors. The data are consistent across multiple mutant backgrounds, supporting the conclusion of a redundant functional unit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "The redundancy between D101 and Mg2+ is proposed to arise from the high connectivity within the active site, where both can independently position the S102 nucleophile via connections through D51 and Zn2+, rather than through R166 and D153.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102, C106-C107, C109-C110 propose a mechanistic model for D101/Mg2+ redundancy. While the functional data clearly demonstrate anti-cooperativity (C107), and the structural connections via D51 and Zn2+ are noted (C101), the specific mechanism (C106) that either D101 or Mg2+ can position S102 remains speculative. The model is reasonable and consistent with the structure, but direct experimental validation of the positioning mechanism is not provided. The exclusion of R166/D153 involvement is supported by data (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Evolutionary modeling shows that the AP active site network, with 34 of 120 possible pathways providing fitness advantages, has a mean waiting time of 32-69 (arbitrary units), which is >1000-fold more probable to evolve than a fully cooperative network (mean waiting time 4.7\u00d710^5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C140-C150 describe the evolutionary probability analysis. The probabilistic modeling (Figure 10, Appendix 3) compares fully cooperative (all residues needed simultaneously) versus stepwise (each residue beneficial) scenarios. The calculations show mean waiting times of 4.7\u00d710^5 for full cooperativity versus 32-69 for stepwise addition. Using the experimental rate data (Table 1), 34 of 120 pathways provide >3-fold fitness advantage (C147), placing AP in the more probable stepwise regime. The mathematical framework and conclusions are logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Despite having an open active site cavity, AP achieves one of the largest known rate enhancements, and removal of R166 (allowing solvent access to phosphoryl oxygens) does not diminish Mg2+ or D153/Mg2+/K328 contributions, suggesting that wholesale solvent exclusion is not required for efficient catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 address the role of water exclusion. AP's open cavity and large rate enhancement (C154-C155) are established facts. The key experimental evidence (C157) from prior work (O'Brien et al., 2008) shows that R166 removal allows solvent access but doesn't diminish Mg2+ contributions, as demonstrated in Figure 6. This supports the conclusion that complete solvent exclusion is not necessary for catalysis (C158). The proposal (C159) that closure provides specific interactions rather than generic exclusion is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The E322Y mutation eliminates Mg2+ binding from the active site, as confirmed by lack of Mg2+ activation and consistency with other AP superfamily members that naturally lack Mg2+ and have tyrosine at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 validate the E322Y mutation as a Mg2+ removal tool. Prior work (C44, Zalatan et al., 2008) showed E322Y causes Mg2+ loss, which was confirmed here (C45). The consistency with natural AP superfamily members (C46) and the rationale for choosing E322Y over E322A (C47) are well-supported. The Materials and Methods section describes testing for Mg2+ activation, and atomic emission spectroscopy confirmed lack of Mg2+ in the minimal construct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Control experiments including testing alternative mutations at each position (giving similar effects), re-expressing nine mutants (activities within twofold), and creating a nucleophile-dead mutant (no activity) validate that the observed activities are not due to idiosyncratic effects or contaminants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C162-C164 describe important controls. Alternative mutations at each position gave similar effects (C48, Appendix 1 Table 1), nine mutants were independently prepared with activities within twofold (C163), and the S102G/minimal construct had no measurable activity (C164), at least 100-fold lower than any reported mutant. These controls effectively rule out contamination and idiosyncratic mutation effects. The >95% purity by SDS-PAGE (C162) further supports data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The three functional units exhibit distinct energetic behaviors: D101/R166/D153 shows nearly independent contributions from the aspartates to R166 function; D153/Mg2+/K328 shows cooperative enhancement of Mg2+ contribution; and D101/Mg2+ shows anti-cooperative redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 summarize the distinct energetic behaviors of the three units. These conclusions are well-supported by the data in Figures 4, 6-8. The nearly independent contributions in D101/R166/D153 (C122) are shown by the additive effects of the aspartates on R166. The cooperative behavior in D153/Mg2+/K328 (C123) is demonstrated by the requirement for both D153 and K328 to achieve full Mg2+ effect. The anti-cooperative redundancy of D101/Mg2+ (C124) is clearly shown by the mutually exclusive contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The interconnections between functional units (shared residues) may be evolutionarily and functionally favored because an interconnected active site requires fewer residues (less mutational space to search) and allows multiple functional groups to pack into limited space for optimal substrate interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 propose evolutionary and functional advantages of interconnected units. While the observation of interconnections (shared residues like D153) is well-supported by data, the proposed advantages (C131-C132) are speculative. The logic is reasonable\u2014fewer residues would reduce mutational space, and packing constraints favor shared residues\u2014but these are hypotheses rather than tested conclusions. The evolutionary modeling focuses on pathway probabilities, not specifically on the advantages of interconnections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Structural analysis suggests that D101 is positioned by a backbone amide hydrogen bond, while D153 lacks such hydrogen bonds beyond the five studied residues but has methylene packing interactions with nearby side chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe structural features that may position the aspartates. The D101 backbone amide interaction (C79) is visible in Figure 1C. The observation that D153 lacks hydrogen bonds beyond the five residues but has packing interactions (C80-C81) is based on structural inspection. These are straightforward structural observations, though their functional significance for positioning remains to be fully tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Current designed enzymes have modest rate enhancements and lack stereospecificity compared to natural enzymes, with the most apparent difference being the absence of extended hydrogen bond networks in designed enzyme active sites, as exemplified by a retroaldolase with a single lysine in a hydrophobic pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 discuss enzyme design limitations. The modest rate enhancements and lack of stereospecificity of designed enzymes (C134-C135) are supported by citations. The comparison with enzyme mimics and BSA (C136) provides context. The observation about absent hydrogen bond networks (C137) is a reasonable inference from comparing natural and designed enzymes. The retroaldolase example (C138-C139) illustrates the simpler design strategy. However, C133 about computational predictions is a proposal for future work, not a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The functional networks overlap with shared residues, which may have arisen as evolution co-opted residues within active sites as anchor points for positioning new residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 describes the overlap of functional networks with shared residues (D153 in particular). This is clearly demonstrated in Figure 9 and supported by the functional data showing D153's participation in both the R166 and Mg2+ units. The evolutionary interpretation about co-opting residues as anchor points is a reasonable inference from the data, though it remains a hypothesis about evolutionary history rather than a directly tested conclusion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2296 @@
+{
+  "submission": {
+    "id": "14c6a711-9e08-4b9f-9956-676749bccfb6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:51:33.643213Z",
+    "updated_at": "2025-11-29T04:51:33.643213Z"
+  },
+  "content": [
+    {
+      "id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "submission_id": "14c6a711-9e08-4b9f-9956-676749bccfb6",
+      "content_type": "manuscript",
+      "content_text": "# Small molecule inhibition of Csk alters affinity recognition by T cells\n\n## Authors\n\n- Boryana N Manz<sup>1</sup>\n- Ying Xim Tan<sup>1</sup>\n- Adam H Courtney<sup>1</sup>\n- Florentine Rutaganira<sup>2</sup>\n- Ed Palmer<sup>4</sup>\n- Kevan M Shokat<sup>2</sup>\n- Arthur Weiss<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Rosalind Russell and Ephraim P. Engleman Rheumatology Research Center, Division of Rheumatology, Department of Medicine University of California, San Francisco San Francisco United States\n2. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n4. Departments of Biomedicine and Nephrology, University Hospital Basel University of basel Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe C-terminal Src kinase (Csk), the primary negative regulator of Src-family kinases (SFK), plays a crucial role in controlling basal and inducible receptor signaling. To investigate how Csk activity regulates T cell antigen receptor (TCR) signaling, we utilized a mouse expressing mutated Csk (CskAS) whose catalytic activity is specifically and rapidly inhibited by a small molecule. Inhibition of CskAS during TCR stimulation led to stronger and more prolonged TCR signaling and to increased proliferation. Inhibition of CskAS enhanced activation by weak but strictly cognate agonists. Titration of Csk inhibition revealed that a very small increase in SFK activity was sufficient to potentiate T cell responses to weak agonists. Csk plays an important role, not only in basal signaling, but also in setting the TCR signaling threshold and affinity recognition.\n\n## Introduction\n\nSFKs are ubiquitous regulators of basal and inducible receptor signaling. The seven family members are expressed in various combinations in different cell types, have unique substrate specificity and are differentially regulated by phosphatases and localization (Lowell, 2004). However, they share a common negative regulator Csk. How Csk maintains basal and inducible receptor signaling is still unclear.\n\nIn T cells, the strength and duration of T cell antigen receptor (TCR) signaling in response to antigen stimulation dictates the magnitude and quality of primary and secondary immune responses (Smith-Garvin et al., 2009; Chakraborty and Weiss, 2014). The TCR activation threshold, agonist affinity discrimination and signal termination must therefore be tightly regulated. This is achieved through the concerted action of multiple positive and negative regulators acting basally and during inducible signaling. The SFK Lck regulates TCR signaling by phosphorylating tyrosines in the cytoplasmic segments of the TCR \u03b6 and CD3 chains, basally and during antigen recognition, as well as by phosphorylating downstream kinases such as ZAP-70 and ITK (Chan et al., 1995; Heyeck et al., 1997; Smith-Garvin et al., 2009). The availability and recruitment of active Lck has been proposed to be the rate-limiting step in discriminating agonist affinity (Stepanek et al., 2014). Weak agonists with shorter half-lives of pMHC (peptide-bound major histocompatibility complex)-TCR interaction have less time to recruit active CD4 or CD8 co-receptor bound Lck. Active Lck (phosphorylated on Y394) is critical for downstream signaling and can be detected in the basal state, but its level does not change appreciably after TCR stimulation (Nika et al., 2010).\n\nAlthough the molecular regulation of Lck is understood, its localization and changes in activity during TCR signaling are still unclear (Chakraborty and Weiss, 2014). Lck is tightly regulated by phosphorylation on two conserved tyrosines. Trans-autophosphorylation of its kinase domain activation loop tyrosine, Y394, increases its catalytic activity, whereas phosphorylation of its C-terminal tail inhibitory tyrosine, Y505, promotes its closed, inactive conformation (Palacios and Weiss, 2004; Chakraborty and Weiss, 2014). In T cells, the receptor-like protein tyrosine phosphatase CD45 regulates Lck activity positively and negatively by dephosphorylating its inhibitory tyrosine and activation loop tyrosine (McNeill et al., 2007; Zikherman et al., 2010). However, the major negative regulator of Lck is Csk, which phosphorylates its inhibitory tail tyrosine (Bergman et al., 1992; Levinson et al., 2008).\n\nCsk is a cytoplasmic protein, yet its predominant role is to phosphorylate the inhibitory tyrosine of SFKs that are localized to membranes (Bergman et al., 1992). Hence, multiple adaptors have been implicated in regulating its activity by influencing its localization. Transmembrane PAG and Lime, as well as the cytosolic PH-domain containing Dok1/2, may play roles in recruiting Csk to the cell membrane in a phosphorylation-dependent manner. The association of Csk with PAG in biochemically defined lipid rafts has been observed to diminish in response to TCR stimulation, leading to its proposed involvement in regulating TCR signaling (Torgersen et al., 2001; Davidson et al., 2003). Since Csk returns to these fractions upon signal termination, it has also been implicated in the down-regulation of signaling (Torgersen et al., 2001; Davidson et al., 2003). However individual genetic deficiencies in PAG, LIME or Dok1/2 have had little effect on TCR signaling and on T cell function (Brdickova et al., 2003; Dobenecker et al., 2005; Xu et al., 2005; Yasuda et al., 2007), indicating that our understanding of Csk regulation during TCR signal initiation, propagation and termination remains incomplete.\n\nThe precise role of Csk in TCR signaling has also been difficult to study by genetic inactivation (Imamoto and Soriano, 1993; Nada et al., 1993; Schmedt and Tarakhovsky, 2001). Germline deletion of Csk leads to embryonic lethality (Imamoto and Soriano, 1993; Nada et al., 1993). Conditional deletion of Csk in the T lineage leads to TCR-MHC-independent, but Lck-dependent, passage through both thymic beta selection and positive selection checkpoints, both of which require perception of pre-TCR or TCR signaling, respectively (Schmedt and Tarakhovsky, 2001). However, since Csk deficiency leads to aberrant T cell development and compensatory changes in the basal state, studying the role of Csk in ligand-induced signaling in unmanipulated primary T cells has been hindered.\n\nWe recently generated BAC transgenic mice that express a mutant of Csk (CskAS) in the absence of endogenous Csk (Tan et al., 2014). CskAS kinase activity can be specifically and rapidly inhibited by an analog of the general kinase inhibitor PP1, 3-iodo-benzyl-PP1 (3-IB-PP1). Studies in thymocytes in this model system support the notion that the combined actions of CD45 and Csk establish the basal activity of SFK (Tan et al., 2014). However, it is not clear whether Csk plays a role in setting the TCR signaling threshold or in signal termination. In this study, we utilized CD4+ and CD8+ T cells from CskAS mice to investigate how Csk modulates the threshold for TCR signal activation, affinity recognition and TCR signal termination. Our data suggest that by controlling the amount of available active Lck, Csk regulates the TCR signaling threshold and affinity recognition. Notably, even at a low level of Csk inhibition, T cell activation by weak agonists is greatly enhanced.\n\n## Results\n\nTo determine whether Csk activity regulates the TCR activation threshold, we stimulated CskAS CD4+ T cells or wild type CD4+ T cells (as a specificity control) by titrating anti-CD3\u03b5 antibody in the absence or presence of a high dose of the CskAS inhibitor, 3-IB-PP1, and examined proximal TCR signaling tyrosine phosphorylation events. As previously shown, inhibition of CskAS alone induced strong activation of Lck, as well as Fyn, which was indicated by the hyperphosphorylation of their activation loop tyrosines and the reduced phosphorylation of their inhibitory tyrosines (Tan et al., 2014). In contrast, ligation of the TCR alone did not detectably alter Lck phosphorylation, consistent with an earlier report (Nika et al., 2010). The striking Lck activation after CskAS inhibition was associated with only relatively weak downstream phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 1A). However, this downstream signaling was very strongly enhanced when the CskAS inhibitor treatment was combined with anti-CD3\u03b5 crosslinking, as evidenced by the marked increase in ZAP-70, LAT and PLC-\u03b31 phosphorylation (Figure 1A). To determine whether this early enhanced proximal signaling was transmitted further downstream, we examined ERK1/2 phosphorylation (p-ERK). The magnitude of p-ERK was increased by CskAS inhibition in a 3-IB-PP1 dose-dependent manner, with the greatest enhancement seen when using a low dose of anti-CD3\u03b5 (Figure 1B). At a high dose of anti-CD3\u03b5 the increased p-ERK signal intensity, as indicated by the slight peak shift for 3-IB-PP1 treated cells, might reflect a more rapid or more complete peak response at the time point assayed. Notably, CskAS inhibition alone induced only a small amount of protein phosphorylation downstream of ZAP-70 (i.e., LAT and ERK1/2), likely due to spurious activation of a few cells (Figure 1A,B). Instead, CskAS inhibition synergized with TCR stimulation leading to downstream signaling. Our data strongly suggest that Csk activity plays a crucial role in establishing the TCR activation threshold. Specifically, a reduction in Csk activity lowered the threshold for signal activation and increased TCR sensitivity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig1-v2.jpg)\n\n**Figure 1.:** (A) Purified CskAS (AS) or wildtype (WT) CD4+ T cells stimulated for 2 min with 1 \u03bcg/ml, 5 \u03bcg/ml or 10 \u03bcg/ml anti-CD3\u03b5 antibody in the presence of DMSO or 10 \u03bcM 3-IB-PP1 were analyzed by immunoblotting for the phosphorylation of the activation loop tyrosine of Lck and Fyn (Src pY416 antibody) and the inhibitory tyrosine of Lck (Lck pY505), phosphorylated ZAP-70 (ZAP70 pY319), LAT (LAT pY132) and PLC-\u03b31 (PLC\u03b31 pY783), as well as total actin (loading control). Data are representative of at least three independent experiments. (B) Purified total CskAS (AS) or wildtype (WT) T cells stimulated with the indicated dose of anti-CD3\u03b5 antibody for 2 min in the presence of DMSO or 5 \u03bcM, 1 \u03bcM or 0.4 \u03bcM 3-IB-PP1 were analyzed for phosphorylated ERK (p-ERK) by phosphoflow. Histograms were gated on CD4+ cells. Data are representative of at least three independent experiments for AS cells and two independent experiments for WT cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Purified CskAS CD4+ T cells stimulated for 2, 5 or 10 min with anti-CD3\u03b5 antibody in the presence of DMSO or 10 \u03bcM 3-IB-PP1 were analyzed by immunoblotting for the phosphorylated ZAP-70, LAT and PLC-\u03b31 as well as total GAPDH (loading control). Data are representative of at least three independent experiments. (B) Purified total CskAS T cells stimulated with anti-CD3\u03b5 antibody for 2, 5 or 10 min in the presence of DMSO or 5 \u03bcM, 1 \u03bcM or 0.4 \u03bcM 3-IB-PP1 were analyzed for phosphorylated ERK (p-ERK) by phosphoflow. Histograms were gated on CD4+ cells. Data are representative of at least three independent experiments.\n\nIt has been proposed that Csk plays an important role in TCR signal termination (Torgersen et al., 2001; Davidson et al., 2003). To test this model we examined a time-course of CskAS CD4+ T cells stimulation with anti-CD3\u03b5 antibody. CskAS inhibition prolonged phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 1\u2014figure supplement 1A). Moreover, there was still a clear digital response to anti-CD3 stimulation that was augmented by CskAS inhibition at the earliest time point (Figure 1\u2014figure supplement 1B). There was evidence of 3-IB-PP1 dose-dependent delay in downregulation of p-ERK, with the down-regulation seeming more heterogeneous and, perhaps, asynchronous compared to the digital up-regulation of the response (Figure 1\u2014figure supplement 1B). However, Csk inhibition did not prevent eventual signal attenuation over time, indicating that Csk has only a partial role in signal termination. Other negative regulatory mechanisms must contribute to the termination of TCR signaling, albeit more slowly in the absence of Csk (Naramura et al., 2002; Rhee and Veillette, 2012).\n\nTo examine more physiologically relevant regulatory mechanisms induced by peptide-MHC stimulation, we generated CskAS mice expressing the ovalbumin peptide/MHCII-reactive OTII TCR transgene (Fu et al., 2013; Salmond et al., 2014). A tetramer was used as the stimulus to allow for detailed biochemical analyses that would not have been possible with the confounding contribution of proteins from antigen presenting cells (APCs). Stimulation of CskAS;OTII CD4+ T cells with an agonistic OVA pMHC tetramer during CskAS inhibition resulted in markedly enhanced phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 2A) and led to increased and prolonged ERK1/2 phosphorylation (Figure 2B). Thus, our findings with the physiologic OVA pMHC TCR ligand parallel those using anti-CD3\u03b5, confirming that Csk plays an important role in setting the TCR activation threshold and has a partial role in signal termination.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig2-v2.jpg)\n\n**Figure 2.:** (A) Purified CskAS;OTII CD4+ T cells stimulated for 3 min with 5 \u03bcg/ml bead-bound control pMHC tetramer or 5 \u03bcg/ml, 2.5 \u03bcg/ml or 1.25 \u03bcg/ml bead-bound OVA pMHC tetramer in the presence of DMSO or 10 \u03bcM 3-IB-PP1 were analyzed by immunoblotting for the phosphorylated ZAP-70, LAT and PLC-\u03b31, as well as total actin (loading control). Data are representative of three independent experiments. (B) Purified CskAS;OTII CD4+ T cells stimulated with 5 \u03bcg/ml bead-bound control-pMHC tetramer or 2.5 \u03bcg/ml bead-bound OVA pMHC tetramer for 2, 5 or 10 min in the presence of DMSO or 5 \u03bcM 3-IB-PP1 were analyzed for phosphorylated ERK (p-ERK) by phosphoflow. Histograms were gated on CD4+ V\u03b12+ cells. Data are representative of three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Purified CD4+ T cells from CskAS mice were loaded with CFSE and stimulated with 3 \u03bcg/ml, 1 \u03bcg/ml or 0.3 \u03bcg/ml plate-bound anti-CD3\u03b5 and 1 \u03bcg/ml anti-CD28 for 72 hr in the presence or absence of 5 \u03bcM 3-IB-PP1. Data are representative of three independent experiments. (B) Purified CD4+ T cells from CskAS;OT-II mice were loaded with CFSE and stimulated with 0.3 \u03bcg/ml, 0.1 \u03bcg/ml or 0.04 \u03bcg/ml plate-bound OVA pMHC tetramer and 1 \u03bcg/ml anti-CD28 for 72 hr in the presence or absence of 5 \u03bcM 3-IB-PP1. (A, B) Cells were then analyzed by flow cytometry for CFSE intensity. Histograms were gated on CD4+ cells. Data are representative of three independent experiments.\n\nTo assess whether the reduced TCR activation threshold for proximal signaling events following Csk inhibition had a functional impact on downstream T cell activation, we monitored cell proliferation of CskAS;OTII T cells stimulated with plate-bound anti-CD3\u03b5 (Figure 2\u2014figure supplement 1A) or OVA pMHC tetramer (Figure 2\u2014figure supplement 1B) in the presence of anti-CD28 costimulation. Each stimulus was titrated to doses that yield minimal to maximum responses since antibody and tetramer have different molecular weights and physiological potency. At low doses, both anti-CD3\u03b5 and OVA pMHC tetramer induced greater cellular proliferation when CskAS was inhibited, consistent with the increased magnitude of proximal TCR signaling. Therefore, by controlling Csk activity, the threshold for TCR signaling and resultant responses can be modulated.\n\nNext, we investigated how much perturbation of Csk and Lck is necessary to induce physiological changes in the T cell response. Here we used CskAS-expressing CD8+ T cells or transgenic CD8+ T cells with the OTI TCR specific for an OVA peptide/MHC class I complex. Titration of 3-IB-PP1 in CskAS CD8+ T cells revealed a maximum threefold to fourfold enhancement of Lck pY394, which correlated with increased Lck activity (Figure 3A) (Chakraborty and Weiss, 2014). Thus at resting state 25\u201333% of Lck was phosphorylated at Y394, which agrees with some previous estimates (Nika et al., 2010) and is higher than others (Ballek et al., 2015). It should be noted that this is only an inference from the plateau with high drug doses. This study is not designed to estimate the percentage of active Lck at the basal state, since some Lck may not be available for activation by Csk inhibition. Low doses of 3-IB-PP1 (1 \u03bcM or less) induced at most a 50% upregulation of pY394, while doses of 5\u201310 \u03bcM induced a threefold to fourfold upregulation. Surprisingly, phosphorylation of the inhibitory tail Y505, the direct target of Csk, did not decrease as appreciably. This observation suggests that Lck is actively phosphorylated by Csk, but a substantial proportion of pY505 is either inaccessible for dephosphorylation by CD45 or is dephosphorylated over a longer timescale. This, however, does not explain how the small reduction in pY505, particularly so in CD8+ T cells, results in a large increase of pY394.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig3-v2.jpg)\n\n**Figure 3.:** (A) CskAS CD8+ T cells were rested and stimulated with indicated doses of 3-IB-PP1 for 3 min, lysed, and immunoblotted for activating (pY394) and inhibitory (pY505) site Lck phosphorylation. Below is quantification (\u00b1 sem) of three independent experiments immunoblot. (B) CskAS;OTI naive CD8+ T cells were rested, stimulated with bead-bound BSA or 10 \u03bcg/ml pMHC-OVA for 3 min, lysed and assayed by immunoblot. Data are representative of at least two independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) CskAS CD4+ and CskAS CD8+ T cells were rested and stimulated with indicated doses of 3-IB-PP1 or DMSO for 2 min and then lysed. Lysates were immunoblotted for activating (pY394) and inhibitory (pY505) site Lck phosphorylation, total Lck, and GAPDH (loading control). Data are representative of three independent experiments. (B, C) Quantification of Lck pY505 and Lck pY394 of three independent experiments (as in A), with levels normalized to Lck levels per cell type. Error bars are standard deviation.\n\nWe explored whether the effects of Csk inhibition has differential effects on CD4+ vs CD8+ T cells. However, we found that CD4+ and CD8+ T cells have identical responses to Csk inhibition when normalized to their basal level of Lck phosphorylation (Figure 3\u2014figure supplement 1). Interestingly, CD8+ T cells express \u223c15% more Lck (Olszowy et al., 1995) and have a higher (\u223c20%) basal amount of inhibitory tail pY505 phosphorylation. In both CD4+ and CD8+ T cells, pY394 increased much more markedly than the associated decrease in pY505 in response to low doses of the Csk inhibitor. The molecular mechanism for this response is unknown. One possibility to consider is that even a small pool of active Lck that is dephosphorylated at Y505 and becomes phosphorylated at Y394 enables a trans-autocatalytic mechanism which can become amplified within the larger pool of Lck molecules that are not phosphorylated on pY394. Interestingly, it has also been observed that stimulation with anti-TCR and anti-CD4 antibody leads to substantial increase in pY394 without much loss of pY505 (Ballek et al., 2015).\n\nShort-term CskAS;OTI CD8+ T cell stimulation with bead-bound OVA-MHC tetramer was enhanced even by low levels of Csk inhibition (<1 \u03bcM) (Figure 3B), as demonstrated by the degree of PLC-\u03b31 and ERK1/2 phosphorylation. At this inhibitor dose, Lck pY394 did not increase by more than 50%, suggesting that even subtle changes in Lck activity can potentiate proximal signaling. Higher doses of the inhibitor potentiated Lck signaling even further, suggesting Csk and Lck activity can be titrated over a wide range.\n\nLck not only initiates TCR-dependent signaling but is also proposed to be the crucial gate-keeper in kinetic proof-reading models that attempt to explain the exquisite affinity discrimination of T cells of agonists with only slightly different half-lives (Palmer and Naeher, 2009; Stepanek et al., 2014). We hypothesized that Lck hyperactivation may differentially regulate strong and weak agonists. To address this question, we utilized a panel of well-characterized altered OVA peptides (Daniels et al., 2006). When CskAS;OTI CD8+ T cells were stimulated by APCs preloaded with peptides of different agonist potency during strong CskAS inhibition (5 \u03bcM), we observed marked augmentation of CD69 expression in responses to weak (T4, Q4H7, G4) agonists, contrasting with only slight enhancement of the responses to strong (OVA, Q4R7) agonists (Figure 4A). Although the OVA response was not fully saturated at this early time point (4 hr), it was only slightly enhanced by strong Csk inhibition. Upon stimulation with OVA, but not altered peptides, the TCR is quickly downregulated due to its phosphorylation and retention in intracellular vesicles (Cai et al., 1997). Csk inhibition alone induced some ligand-independent TCR downregulation, but additional downregulation was observed with all peptides, even the weakest G4, which argues for altered signaling of low-affinity peptides at a very upstream step (Figure 4\u2014figure supplement 1). Importantly, the null agonist VSV-loaded APCs did not induce similar activation or TCR downregulation, demonstrating that Csk inhibition works strictly in synergy with a cognate TCR ligand. Moreover, although the spleen-derived APCs should still present endogenous self-peptides, only loading of cognate peptides led to sustained T cell activation after Csk inhibition.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig4-v2.jpg)\n\n**Figure 4.:** (A) CskAS;OTI naive CD8+ T cells were stimulated with MitoC-treated WT splenocytes, preloaded with indicated peptides, in presence of DMSO or 5 \u03bcM 3-IB-PP1 for 4 hr and CD69 upregulation was measured by flow cytometry. (B) CskAS;OTI naive CD8+ T cells were stimulated as in A with varying doses of 3-IB-PP1 with dose\u2013response fit. (C) EC50 of 3-IB-PP1 (nM) for % CD69 positive cells for data in B. Data are representative of two independent experiments.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08088/elife-08088-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Only OVA triggers peptide-dependent TCR downregulation. 5 \u03bcM 3-IB-PP1 induces ligand-independent downregulation of TCR, as seen in VSV peptide. In the presence of CskAS inhibition, all the other altered peptides induce further, dose-dependent loss of TCR.\n\nWe speculated that the striking enhancement of weak agonist recognition is due to the strong inhibition of Csk and activation of Lck (threefold at 5 \u03bcM 3-IB-PP1). To test the extent of Csk inhibition necessary to boost weak agonist signaling, we titrated 3-IB-PP1 and assayed responses to weak agonists Q4H7 and G4 (Figure 4B). Surprisingly we observed dose-dependent enhancement of signaling at 100\u20131000 nM 3-IB-PP1, where increased Lck pY394 was weakly detectable and at most 50% above the basal level. Beyond this inhibitor dose, we observed a saturating effect, despite the lower overall plateau with lower peptide dose. Thus, relatively weak Lck hyperactivation was sufficient to enhance the recognition of weak agonists. The lower plateau suggests that there are Csk-independent mechanisms for sensing agonist dose. Remarkably, the EC50 concentration of Csk inhibition for CD69 upregulation was still dependent on agonist quality and dose (Figure 4C). At a lower agonist dose, the weaker peptide G4 required double the amount of 3-IB-PP1 than Q4H7. Similarly, the EC50 depended on peptide dose. These observations argue that Csk inhibition fine-tunes the response to agonist dose and affinity sensing in peripheral T cells.\n\n## Discussion\n\nOur results raise the question of how Csk activity controls SFK activity and specifically the TCR activation threshold. Since a substantial amount of active Lck is present in the basal state and does not change with TCR ligation, it has been hypothesized that the pre-existing pool of active Lck is responsible for the highly sensitive and rapid initiation of TCR signaling in response to ligand engagement (Nika et al., 2010). Hence, a likely explanation for our observations is that by controlling the amount of active Lck present, Csk regulates the responsiveness of the T cell to receptor stimulus.\n\nOur data supports the model that the size of the active pool of Lck is especially critical for affinity discrimination of different agonistic peptides. Strong agonists have a long half-life of pMHC-TCR and have sufficient time to recruit active Lck and initiate downstream events, while weak agonists with short half-lives are most sensitive to the availability of active Lck before the pMHC-TCR complex falls apart. The different amounts of Lck loaded on the CD4 and CD8 co-receptors can explain the different half-life range of positively and negatively selecting ligands for CD4 and CD8 cells (Stepanek et al., 2014); however, this is a genetically established parameter. Our data supports the model that recruitment of active Lck is critical for affinity discrimination, but offers an alternative mechanism for its regulation. By controlling the fraction of active Lck, Csk can also modulate the activation threshold and affinity discrimination of T cells. Notably, since Csk localization and activity is dynamically controlled by phosphorylation-dependent recruitment to transmembrane and cytoplasmic adaptors, this could enable flexibility in affinity recognition in different settings. For example, Csk has been found to be differentially localized in naive and antigen-experienced T cells (Borger et al., 2013). Our results add to the emerging understanding of how signaling by agonists of dissimilar affinity are differentially regulated. Recently, the adaptor molecule Themis was characterized as critical for the suppression of weak agonists in thymocytes, while PTPN22 serves a similar role in in effector cells (Fu et al., 2013; Salmond et al., 2014). Here, we show that Csk, via its regulation of Lck, regulates naive T cell priming to agonists of different potency.\n\nThe ability to acutely titrate the activity of Csk, and consequently Lck, allowed us to assess how graded increases of Lck activity affects TCR signaling without concerns about basal level adaptation and long-term compensation that occurs when using genetic manipulation of Csk amounts or function. Surprisingly, even very small changes in Lck activity, caused by CskAS inhibition at 200 nM 3-IB-PP1, led to relatively large pY394 changes in the setting of small changes in pY505. Since Y394 phosphorylation is the result of trans-autophosphorylation, it seems likely that a small reduction in pY505 induced by low levels of Csk inhibition, could lead to autoactivation of a large pool of Lck. Such a larger pool of active Lck could then show strong synergy with the TCR stimulus and is sufficient to markedly enhance the response to very weak agonists. The synergy we observed between TCR stimulus and Csk inhibition, strikingly, had its greatest impact on the activation of downstream signaling molecules. This is most likely due to positive feedback/signal amplification along the pathway. Eventually, the integration of stronger signaling over hours led to profound differences in the fraction of cells upregulating CD69 or proliferating. On the other hand, this minimal change in Lck activity highlights how tightly it must be regulated in both the basal and inducible states by kinases and phosphatases and their respective adaptors. It is possible that, although small changes in Lck activity greatly sensitize the TCR to weak agonists, such small changes do not as effectively engage negative feedback mechanisms.\n\nLoss of Csk from the cell membrane, or biochemically defined lipid raft fractions has been proposed to lead to TCR signal initiation via activation of Lck (Torgersen et al., 2001; Davidson et al., 2003). This model is contradicted by the lack of appreciable change in Lck phosphorylation upon TCR stimulation and by unaltered signaling in cells deficient in the lipid-raft-resident Csk adapter PAG (Dobenecker et al., 2005; Xu et al., 2005). Our data demonstrate that acute activation of Lck, via weak or strong Csk inhibition, does not lead to full TCR signaling. Strong Csk inhibition in mature T cells leads to small amounts of phosphorylation of downstream targets like ZAP-70 and PLC-\u03b31, but not ERK activation or long-term proliferation in the absence of TCR engagement. Thus, Lck activation alone is insufficient to trigger complete TCR signaling. However, when combined with cognate TCR ligands, very small amounts of Csk inhibition and resultant larger amounts of Lck activation, synergize to enhance early biochemical events and downstream activation. Therefore, it is possible that during physiological TCR stimulation, localization of only a small number of Csk molecules is altered and leads to the activation of a small fraction of Lck molecules that would be difficult to detect with current biochemical or imaging methods (Paster et al., 2009; Nika et al., 2010) but might be sufficient to influence downstream signaling.\n\nCsk has also been proposed to regulate TCR signal downregulation by returning to the plasma membrane after signal initiation. It has been challenging to study this role using genetic ablation approaches since Csk deficiency affects TCR basal state signaling. Using acute inhibition of Csk concurrently with TCR stimulation, we were able to follow TCR signal downregulation in the absence of Csk activity and observed that it is delayed but not abolished. Our data suggest that other molecules are involved in signal termination more prominently than Csk.\n\nNew insights into how Csk is regulated will enable the development of strategies to manipulate Csk activity and hence the sensitivity of T cells to various activation stimuli. Such manipulation of Csk activity by small molecule inhibitors could be useful therapeutically, for example in pathologic settings where suppression (i.e., autoimmunity) or augmentation (i.e., vaccines or cancer) of T cell responses to antigen is desirable.\n\n## Materials and methods\n\n### Mice\n\nMice used for these studies were 6\u201312 weeks of age. All mice were housed in a specific pathogen-free facility at UCSF according to the University Animal Care Committee and National Institutes of Health (NIH) guidelines.\n\n### Inhibitors\n\n3-IB-PP1 has been described (Schoenborn et al., 2011).\n\n### Antibodies and reagents\n\nCD4 PerCP-Cy5.5 (550954), TCR V\u03b12 PE (553289) and Lck-pY505 (BD Biosciences 612390) are from BD Biosciences (San Jose, CA); p44/42 MAPK pThr202/Tyr204 (4377), Src 416 (2101), ZAP-70-pY319 (2701) are from Cell Signaling (Danvers, MA); LAT-pY132 (44-224), PLC-\u03b31-pY783(44-696G) and CFSE (C34554) are from Life Technologies (Life Technologies, Thermo Fisher Scientific, Waltham, MA); actin (Sigma Aldrich A2066; Sigma Aldrich, St. Louis, MO); GAPDH (Abcam ab8245; Abcam, Cambridge, MA); Goat anti-armenian hamster IgG(H+L) (127-005-160) and donkey anti-rabbit IgG Ab conjugated to APC (711-136-152) are from Jackson Immunoresearch (West Grove, PA); Horseradish peroxidase (HRP)-conjugated goat antibody \u03b1-rabbit IgG (H+L) (4050-05), \u03b1-mouse IgG (H+L) (1031-50), Alexa647-conjugated \u03b1-mouse IgG (H+L) (1010-31) are from Southern Biotech (Birmingham, AL); I-A(b) tetramers loaded with human class II-associated invariant chain peptide 103\u2013117 or chicken OVA peptide 328\u2013337 are from NIH tetramer core facility.\n\n### Flow cytometry and data analyses\n\nStained cells were analyzed on a BD Fortessa (BD Biosciences; San Jose, CA). Data analysis was performed using FlowJo software (Treestar Incorporated; Ashland, OR) and GraphPad Prism (GraphPad Software, Inc.; La Jolla, CA) and ImageLab (BioRad Inc.; Hercules, CA).\n\n### Cell stimulations and intracellular phosphoflow\n\nBefore stimulations, cells were serum-starved at 37\u00b0C for at least 20 min. Stimulations were performed in serum-free RPMI at 37\u00b0C. CD3\u03b5 crosslinking was induced by addition of anti-CD3\u03b5 followed by goat anti-armenian hamster IgG(H+L) to a final concentration of 50 \u03bcg/ml. For bead-based stimulations, 4.5 \u03bcm styrene beads (Polyscience; Niles, IL) were coated overnight at 4\u00b0C or for 1 hr at room temperature with p-MHC tetramers or \u03b1CD3 (2c11) in PBS under continuous rotation at 4\u00b0C. Biotinylated p-MHC for CD8 stimulation were precoated with 5 \u03bcg/ml streptavidin. Beads were then saturated with 1% BSA in PBS under continuous rotation for 2 hr at room temperature, and washed with serum-free RPMI before use. Ice-cold rested cells and beads were span together and signaling was initiated by transfer to 37\u00b0C. Intracellular phospho-ERK was performed as previously described (Schoenborn et al., 2011).\n\n### Immunoblotting\n\nImmunoblotting was performed as previously described (Tan et al., 2014).\n\n### Cell enrichments\n\nEnriched populations of pan T cells were obtained by negative selection according to manufacturer's protocol (STEMCELL Technologies, 19751, 19851; STEMCELL Technologies; Vancouver, BC, Canada). Enriched populations of CD4+ or CD8+ T cells were obtained by negative selection according to manufacturer's protocol (STEMCELL Technologies 19852) or with an in-house procedure as follows: The following biotinylated antibodies were combined and dialyzed in 1\u00d7 PBS with Slide-a-lyzer 10,000 Molecular Weight cutoff dialysis cassette (Thermo catalog# 66810; Thermo Fisher Scientific, Waltham, MA), then filter sterilized: biotin anti-CD8a (clone 53-6.7) or biotin anti-CD4 (clone GK1.5), biotin anti-CD11b (clone M1/70), biotin anti-CD11c (clone N418), biotin anti-CD19 (clone 1D3) from were Tonbo Biosciences (San Diego, CA); biotin anti-CD24 (clone M1/69), biotin anti-CD45R (B220) (clone RA3-6B2), biotin anti-CD49b (clone DX5), biotin anti-TER119 (clone TER-119) were from Biolegend (La Jolla, CA). ACK-lysed splenocytes and lymphocytes were incubated at room temperature with the antibody cocktail for 10 min in PBS with 1% FBS, 2 mM EDTA and 5% normal rat serum at 108 cells/ml. Cells were then washed once with PBS with 1% FBS, 2 mM EDTA, resuspended at 0.85 ml per 108 cells, and mixed with 0.15 ml anti-biotin MACSiBead per 108 cells (Miltenyi Biotec; San Diego, CA). After 5 min at room temperature, cell-bead mix was placed in separation magnet for 5 min and the unbound cells were collected.\n\n### Cell proliferation\n\nPurified CD4+ or CD8+ T cells were resuspended in PBS, labeled for 4 min at room temperature with 2 \u03bcM CFSE, and quenched with 100% FBS. Labeled CD4+ T cells were stimulated by plate-coated OVA-MHC or \u03b1-CD3 (2c11) for 72 hr. At indicated timepoint, DAPI were analyzed for CFSE dilution.\n\n### CD69 upregulation\n\nPurified CD8+ OTI T cells were stimulated for indicated time by Mitomycin C-treated Calpha\u2212/\u2212 or BoyJ splenocytes, preloaded for 1 hr with indicated peptide and washed of excess peptide. At indicated time, cells were fixed and stained for CD69, TCRValpha2 and CD45.1, and analyzed by flow cytometry.\n",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "2b774309-64b5-4de0-bf48-c266dfffb46b",
+      "submission_id": "14c6a711-9e08-4b9f-9956-676749bccfb6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shimon Sakaguchi, Osaka University , Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08088.011](https://doi.org/10.7554/eLife.08088.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cSmall molecule inhibition of Csk alters affinity recognition by T cells\u201d for peer review at eLife. Your submission has been favorably evaluated by Tadatsugu Taniguchi (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors use the Csk-AS model to investigate the impact of acute Csk inhibition on both CD3 Ab and MHC-peptide-induced biochemical signaling pathways and downstream effects on activation marker expression, TCR downregulation and proliferation. The major conclusions that Csk 1) regulates the basal activity of Lck (and Fyn) and 2) influences the extent of T cell activation in response to low-dose / low affinity Ags are supported by the data.\n\nFurthermore, Csk inhibition only weakly prolongs the duration of TCR-induced signaling \u2013 suggesting that other inhibitory pathways are required for signal termination. Overall, this elegant study establishes that Csk controls the size of the active pool of Lck and thus contributes to set the TCR signaling threshold and thus enforces TCR affinity discrimination in peripheral T cells.\n\nEssential revisions:\n\n1) Using CskAS expressing OT1 T cells, the authors made the puzzling finding that the phosphorylation of the inhibitory tail pY505, the direct target of Csk, did not change in response to 3-IB-PP1 treatment. In contrast, a 3-4 fold increase in Y394. This observation is inconsistent with most present model(s) of Lck regulation. How do the authors account for this intriguing observation?\n\n2) Results, first paragraph. The recent work of Ballek et al. (doi:10.1038/icb.2014.100) suggests that the pool of active Lck is smaller than reported and that stimulation of T cells by physiological TCR and CD4 ligation does increase the number of active Lck molecules. This work needs to be discussed.\n\n3) In Figure 3A \u2013 these are (to me at least) a little confusing. Any effect of Csk inhibition on levels of Lck pY394 would be secondary to direct effects on pY505. It is possible that to see changes in pY505 following Csk inhibition requires a dephosphorylation event by CD45, but it seems a bit odd that large changes in pY394, as seen with high doses of 3-IB-PP1, should be apparent without any change in pY505? Given the results in Figures 1A and 3A appear to give quite different results as regards the effects of the drug on basal pY505 in CD4 (Figure 1) and OT-1 (Figure 3) cells, this should be discussed. Is this a \u201creal\u201d effect \u2013 i.e., is pY505 regulated differently is CD4 and CD8 T cells?\n",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7e9aac6c-67b5-4eb1-86fa-1359d1cd1dee",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C1",
+      "claim": "Csk is the primary negative regulator of Src-family kinases (SFK).",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal Src kinase (Csk), the primary negative regulator of Src-family kinases (SFK), plays a crucial role in controlling basal and inducible receptor signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about Csk's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "bf0cf3d2-3351-444d-9aea-ee6de643f3c5",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C2",
+      "claim": "Csk plays a crucial role in controlling basal and inducible receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal Src kinase (Csk), the primary negative regulator of Src-family kinases (SFK), plays a crucial role in controlling basal and inducible receptor signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "49a95640-2d5b-4f93-914e-6d412b780416",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C3",
+      "claim": "Inhibition of CskAS during TCR stimulation led to stronger and more prolonged TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of CskAS during TCR stimulation led to stronger and more prolonged TCR signaling and to increased proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "4aed33dc-644c-4ce0-9c2c-e9e4c026b0de",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C4",
+      "claim": "Inhibition of CskAS during TCR stimulation led to increased proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of CskAS during TCR stimulation led to stronger and more prolonged TCR signaling and to increased proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "115bc3be-2692-4184-bb71-32a93751b406",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C5",
+      "claim": "Inhibition of CskAS enhanced activation by weak but strictly cognate agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of CskAS enhanced activation by weak but strictly cognate agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7909a5cb-a3d9-4b78-9cdd-4d6a65e1a912",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C6",
+      "claim": "A very small increase in SFK activity was sufficient to potentiate T cell responses to weak agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration of Csk inhibition revealed that a very small increase in SFK activity was sufficient to potentiate T cell responses to weak agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "33c465ad-7d6b-4a1e-b624-9ebb02f9abe2",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C7",
+      "claim": "Csk plays an important role in setting the TCR signaling threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Csk plays an important role, not only in basal signaling, but also in setting the TCR signaling threshold and affinity recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "14317542-0a5c-4885-8d36-bdca03ec16d6",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C8",
+      "claim": "Csk plays an important role in affinity recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Csk plays an important role, not only in basal signaling, but also in setting the TCR signaling threshold and affinity recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "b5010b01-b7d5-4eea-8183-1c4579b8a56d",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C9",
+      "claim": "SFKs are ubiquitous regulators of basal and inducible receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "SFKs are ubiquitous regulators of basal and inducible receptor signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "119131ea-0bb4-48df-a4fe-a4da5321dc68",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C10",
+      "claim": "The seven SFK family members are expressed in various combinations in different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven family members are expressed in various combinations in different cell types, have unique substrate specificity and are differentially regulated by phosphatases and localization (Lowell, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lowell, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "975108b6-3537-4732-b621-8f9d0f0d8e03",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C11",
+      "claim": "SFK family members have unique substrate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven family members are expressed in various combinations in different cell types, have unique substrate specificity and are differentially regulated by phosphatases and localization (Lowell, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lowell, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "dbd03d12-e79c-4b85-860a-836b81c4dec8",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C12",
+      "claim": "SFK family members are differentially regulated by phosphatases and localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven family members are expressed in various combinations in different cell types, have unique substrate specificity and are differentially regulated by phosphatases and localization (Lowell, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lowell, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "18ae9d9f-fd1e-4029-9925-dac2371dae32",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C13",
+      "claim": "All SFK family members share a common negative regulator Csk.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they share a common negative regulator Csk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "53972db9-47c5-4bd3-9463-ea6354cf14ce",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C14",
+      "claim": "The strength and duration of TCR signaling in response to antigen stimulation dictates the magnitude and quality of primary and secondary immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In T cells, the strength and duration of T cell antigen receptor (TCR) signaling in response to antigen stimulation dictates the magnitude and quality of primary and secondary immune responses (Smith-Garvin et al., 2009; Chakraborty and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Smith-Garvin et al., 2009 and Chakraborty and Weiss, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "5a0a8bc8-f8b7-4fdb-aea6-972195d98fbd",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C15",
+      "claim": "Lck regulates TCR signaling by phosphorylating tyrosines in the cytoplasmic segments of the TCR \u03b6 and CD3 chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The SFK Lck regulates TCR signaling by phosphorylating tyrosines in the cytoplasmic segments of the TCR \u03b6 and CD3 chains, basally and during antigen recognition, as well as by phosphorylating downstream kinases such as ZAP-70 and ITK (Chan et al., 1995; Heyeck et al., 1997; Smith-Garvin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chan et al., 1995; Heyeck et al., 1997; Smith-Garvin et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "2a1e4f39-36c6-4a62-bb16-1020fac953f9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C16",
+      "claim": "Lck phosphorylates downstream kinases such as ZAP-70 and ITK.",
+      "claim_type": "EXPLICIT",
+      "source": "The SFK Lck regulates TCR signaling by phosphorylating tyrosines in the cytoplasmic segments of the TCR \u03b6 and CD3 chains, basally and during antigen recognition, as well as by phosphorylating downstream kinases such as ZAP-70 and ITK (Chan et al., 1995; Heyeck et al., 1997; Smith-Garvin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chan et al., 1995; Heyeck et al., 1997; Smith-Garvin et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "1873bc52-ff1e-4637-9ee7-c79d4ef16d00",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C17",
+      "claim": "The availability and recruitment of active Lck has been proposed to be the rate-limiting step in discriminating agonist affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability and recruitment of active Lck has been proposed to be the rate-limiting step in discriminating agonist affinity (Stepanek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stepanek et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "93b3b13d-ec50-420b-adcb-3e2c1eb994e5",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C18",
+      "claim": "Weak agonists with shorter half-lives of pMHC-TCR interaction have less time to recruit active CD4 or CD8 co-receptor bound Lck.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak agonists with shorter half-lives of pMHC (peptide-bound major histocompatibility complex)-TCR interaction have less time to recruit active CD4 or CD8 co-receptor bound Lck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the kinetic proofreading model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "71e73e9b-14fc-4668-aa93-3a1e9b38b1f9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C19",
+      "claim": "Active Lck (phosphorylated on Y394) is critical for downstream signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Active Lck (phosphorylated on Y394) is critical for downstream signaling and can be detected in the basal state, but its level does not change appreciably after TCR stimulation (Nika et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nika et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "6df0a4eb-eea0-4c02-85de-fdbfccc89f2f",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C20",
+      "claim": "Active Lck can be detected in the basal state.",
+      "claim_type": "EXPLICIT",
+      "source": "Active Lck (phosphorylated on Y394) is critical for downstream signaling and can be detected in the basal state, but its level does not change appreciably after TCR stimulation (Nika et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nika et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "d0f589f4-1a69-40be-94f8-42bc7eafcfc7",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C21",
+      "claim": "The level of active Lck does not change appreciably after TCR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Active Lck (phosphorylated on Y394) is critical for downstream signaling and can be detected in the basal state, but its level does not change appreciably after TCR stimulation (Nika et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nika et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "f1d17c32-9544-4f0f-822d-8f1548b8088c",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C22",
+      "claim": "Lck is tightly regulated by phosphorylation on two conserved tyrosines.",
+      "claim_type": "EXPLICIT",
+      "source": "Lck is tightly regulated by phosphorylation on two conserved tyrosines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "161aae0a-3968-4037-b39e-6f2928634880",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C23",
+      "claim": "Trans-autophosphorylation of Lck's kinase domain activation loop tyrosine Y394 increases its catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Trans-autophosphorylation of its kinase domain activation loop tyrosine, Y394, increases its catalytic activity, whereas phosphorylation of its C-terminal tail inhibitory tyrosine, Y505, promotes its closed, inactive conformation (Palacios and Weiss, 2004; Chakraborty and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Palacios and Weiss, 2004 and Chakraborty and Weiss, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "94d7aa61-862e-41be-8476-c29be0a7e25b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C24",
+      "claim": "Phosphorylation of Lck's C-terminal tail inhibitory tyrosine Y505 promotes its closed, inactive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Trans-autophosphorylation of its kinase domain activation loop tyrosine, Y394, increases its catalytic activity, whereas phosphorylation of its C-terminal tail inhibitory tyrosine, Y505, promotes its closed, inactive conformation (Palacios and Weiss, 2004; Chakraborty and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Palacios and Weiss, 2004 and Chakraborty and Weiss, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "e6a79dbb-5bbf-4dbe-84eb-a9d388ffb297",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C25",
+      "claim": "CD45 regulates Lck activity positively and negatively by dephosphorylating its inhibitory tyrosine and activation loop tyrosine.",
+      "claim_type": "EXPLICIT",
+      "source": "In T cells, the receptor-like protein tyrosine phosphatase CD45 regulates Lck activity positively and negatively by dephosphorylating its inhibitory tyrosine and activation loop tyrosine (McNeill et al., 2007; Zikherman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to McNeill et al., 2007 and Zikherman et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7f6b2cbd-6855-4c76-b59c-00ce2d5f33d9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C26",
+      "claim": "The major negative regulator of Lck is Csk, which phosphorylates its inhibitory tail tyrosine.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the major negative regulator of Lck is Csk, which phosphorylates its inhibitory tail tyrosine (Bergman et al., 1992; Levinson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bergman et al., 1992 and Levinson et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "18274342-6ce4-4dfa-8b31-41f2294a8855",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C27",
+      "claim": "Csk is a cytoplasmic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Csk is a cytoplasmic protein, yet its predominant role is to phosphorylate the inhibitory tyrosine of SFKs that are localized to membranes (Bergman et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bergman et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "bfd9825d-bf3e-409f-8a0d-42f96c3dc572",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C28",
+      "claim": "Csk's predominant role is to phosphorylate the inhibitory tyrosine of SFKs that are localized to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Csk is a cytoplasmic protein, yet its predominant role is to phosphorylate the inhibitory tyrosine of SFKs that are localized to membranes (Bergman et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bergman et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "1864b991-d2e6-41df-bc03-bba765fa6ef9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C29",
+      "claim": "The association of Csk with PAG in biochemically defined lipid rafts has been observed to diminish in response to TCR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of Csk with PAG in biochemically defined lipid rafts has been observed to diminish in response to TCR stimulation, leading to its proposed involvement in regulating TCR signaling (Torgersen et al., 2001; Davidson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Torgersen et al., 2001 and Davidson et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "11fc9d45-d120-44c8-8b26-88c2e942f9ae",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C30",
+      "claim": "Csk returns to lipid raft fractions upon signal termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Csk returns to these fractions upon signal termination, it has also been implicated in the down-regulation of signaling (Torgersen et al., 2001; Davidson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Torgersen et al., 2001 and Davidson et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ef0b8518-822e-4a0f-87a2-1e6fee30be97",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C31",
+      "claim": "Individual genetic deficiencies in PAG, LIME or Dok1/2 have had little effect on TCR signaling and on T cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "However individual genetic deficiencies in PAG, LIME or Dok1/2 have had little effect on TCR signaling and on T cell function (Brdickova et al., 2003; Dobenecker et al., 2005; Xu et al., 2005; Yasuda et al., 2007), indicating that our understanding of Csk regulation during TCR signal initiation, propagation and termination remains incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brdickova et al., 2003; Dobenecker et al., 2005; Xu et al., 2005; Yasuda et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "74b1909d-5fca-4ee5-992a-017859ad5d5d",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C32",
+      "claim": "Germline deletion of Csk leads to embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Germline deletion of Csk leads to embryonic lethality (Imamoto and Soriano, 1993; Nada et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Imamoto and Soriano, 1993 and Nada et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "1ab8d1a3-7e2d-4949-a511-53d84862aa14",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C33",
+      "claim": "Conditional deletion of Csk in the T lineage leads to TCR-MHC-independent, but Lck-dependent, passage through both thymic beta selection and positive selection checkpoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional deletion of Csk in the T lineage leads to TCR-MHC-independent, but Lck-dependent, passage through both thymic beta selection and positive selection checkpoints, both of which require perception of pre-TCR or TCR signaling, respectively (Schmedt and Tarakhovsky, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schmedt and Tarakhovsky, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "029dcb56-ada2-4580-882d-e6cc07f85062",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C34",
+      "claim": "BAC transgenic mice were generated that express a mutant of Csk (CskAS) in the absence of endogenous Csk.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently generated BAC transgenic mice that express a mutant of Csk (CskAS) in the absence of endogenous Csk (Tan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "9a4a3d4c-8222-48f7-ad9f-72df0acc4e0b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C35",
+      "claim": "CskAS kinase activity can be specifically and rapidly inhibited by 3-iodo-benzyl-PP1 (3-IB-PP1).",
+      "claim_type": "EXPLICIT",
+      "source": "CskAS kinase activity can be specifically and rapidly inhibited by an analog of the general kinase inhibitor PP1, 3-iodo-benzyl-PP1 (3-IB-PP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the CskAS system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "dd105cd5-ef54-4339-97db-0a9b15c9a587",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C36",
+      "claim": "The combined actions of CD45 and Csk establish the basal activity of SFK.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in thymocytes in this model system support the notion that the combined actions of CD45 and Csk establish the basal activity of SFK (Tan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "0dea6082-aac6-4732-9a5a-6d7374836f42",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C37",
+      "claim": "Inhibition of CskAS alone induced strong activation of Lck and Fyn.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously shown, inhibition of CskAS alone induced strong activation of Lck, as well as Fyn, which was indicated by the hyperphosphorylation of their activation loop tyrosines and the reduced phosphorylation of their inhibitory tyrosines (Tan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tan et al., 2014 and data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "4ac9c683-68c7-4119-a4de-3830d3418253",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C38",
+      "claim": "Ligation of the TCR alone did not detectably alter Lck phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ligation of the TCR alone did not detectably alter Lck phosphorylation, consistent with an earlier report (Nika et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nika et al., 2010 and data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "3190d1bb-49a9-4b9c-a119-384f56318aa3",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C39",
+      "claim": "Lck activation after CskAS inhibition was associated with only relatively weak downstream phosphorylation of ZAP-70, LAT and PLC-\u03b31.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking Lck activation after CskAS inhibition was associated with only relatively weak downstream phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "bf03bfdb-044c-4d62-bd51-0a65625f5ec7",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C40",
+      "claim": "Downstream signaling was very strongly enhanced when CskAS inhibitor treatment was combined with anti-CD3\u03b5 crosslinking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this downstream signaling was very strongly enhanced when the CskAS inhibitor treatment was combined with anti-CD3\u03b5 crosslinking, as evidenced by the marked increase in ZAP-70, LAT and PLC-\u03b31 phosphorylation (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "56f1f520-6a25-4ebe-b11a-c0cc44387f3c",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C41",
+      "claim": "The magnitude of p-ERK was increased by CskAS inhibition in a 3-IB-PP1 dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of p-ERK was increased by CskAS inhibition in a 3-IB-PP1 dose-dependent manner, with the greatest enhancement seen when using a low dose of anti-CD3\u03b5 (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "0a3edadf-5e2c-44ae-bb86-891850cfcc01",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C42",
+      "claim": "CskAS inhibition alone induced only a small amount of protein phosphorylation downstream of ZAP-70.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CskAS inhibition alone induced only a small amount of protein phosphorylation downstream of ZAP-70 (i.e., LAT and ERK1/2), likely due to spurious activation of a few cells (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "438969b3-a8b2-4e5a-b388-9cd6dd27a851",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C43",
+      "claim": "CskAS inhibition synergized with TCR stimulation leading to downstream signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, CskAS inhibition synergized with TCR stimulation leading to downstream signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "04d1fba1-72af-4069-b43d-b5f14b73d931",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C44",
+      "claim": "Csk activity plays a crucial role in establishing the TCR activation threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data strongly suggest that Csk activity plays a crucial role in establishing the TCR activation threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "6d96d5e3-f55f-439f-bda7-f8e78f5f7ea8",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C45",
+      "claim": "A reduction in Csk activity lowered the threshold for signal activation and increased TCR sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a reduction in Csk activity lowered the threshold for signal activation and increased TCR sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "229b7036-d912-449e-abe1-7e922160b4d6",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C46",
+      "claim": "CskAS inhibition prolonged phosphorylation of ZAP-70, LAT and PLC-\u03b31.",
+      "claim_type": "EXPLICIT",
+      "source": "CskAS inhibition prolonged phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "1ae5fa36-ca83-401d-99aa-3ae99acad0c2",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C47",
+      "claim": "There was evidence of 3-IB-PP1 dose-dependent delay in downregulation of p-ERK.",
+      "claim_type": "EXPLICIT",
+      "source": "There was evidence of 3-IB-PP1 dose-dependent delay in downregulation of p-ERK, with the down-regulation seeming more heterogeneous and, perhaps, asynchronous compared to the digital up-regulation of the response (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "b2251190-9887-4eab-8eff-156f165103d4",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C48",
+      "claim": "Csk inhibition did not prevent eventual signal attenuation over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Csk inhibition did not prevent eventual signal attenuation over time, indicating that Csk has only a partial role in signal termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "3bdb79bd-89f9-4877-a49c-fb0d09dff059",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C49",
+      "claim": "Other negative regulatory mechanisms must contribute to the termination of TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Other negative regulatory mechanisms must contribute to the termination of TCR signaling, albeit more slowly in the absence of Csk (Naramura et al., 2002; Rhee and Veillette, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data and supported by citations to Naramura et al., 2002 and Rhee and Veillette, 2012.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "df553d18-2f38-4b08-9523-bc82d0cee35e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C50",
+      "claim": "Stimulation of CskAS;OTII CD4+ T cells with an agonistic OVA pMHC tetramer during CskAS inhibition resulted in markedly enhanced phosphorylation of ZAP-70, LAT and PLC-\u03b31.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of CskAS;OTII CD4+ T cells with an agonistic OVA pMHC tetramer during CskAS inhibition resulted in markedly enhanced phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 2A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "6e6b0efc-a4ae-4d43-b4ba-7b78277706a8",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C51",
+      "claim": "Stimulation of CskAS;OTII CD4+ T cells with OVA pMHC tetramer during CskAS inhibition led to increased and prolonged ERK1/2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of CskAS;OTII CD4+ T cells with an agonistic OVA pMHC tetramer during CskAS inhibition resulted in markedly enhanced phosphorylation of ZAP-70, LAT and PLC-\u03b31 (Figure 2A) and led to increased and prolonged ERK1/2 phosphorylation (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "f4cabaf9-1ccf-4cd6-8fdf-73679a3ec772",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C52",
+      "claim": "Findings with the physiologic OVA pMHC TCR ligand parallel those using anti-CD3\u03b5.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings with the physiologic OVA pMHC TCR ligand parallel those using anti-CD3\u03b5, confirming that Csk plays an important role in setting the TCR activation threshold and has a partial role in signal termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ebdf8832-59b6-4989-82e3-2e4113767eb2",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C53",
+      "claim": "At low doses, both anti-CD3\u03b5 and OVA pMHC tetramer induced greater cellular proliferation when CskAS was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "At low doses, both anti-CD3\u03b5 and OVA pMHC tetramer induced greater cellular proliferation when CskAS was inhibited, consistent with the increased magnitude of proximal TCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "021bac43-7605-445b-9056-010606ef90bd",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C54",
+      "claim": "By controlling Csk activity, the threshold for TCR signaling and resultant responses can be modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, by controlling Csk activity, the threshold for TCR signaling and resultant responses can be modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the proliferation data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ad49ae9c-9083-422b-9d43-6ed90dc69239",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C55",
+      "claim": "Titration of 3-IB-PP1 in CskAS CD8+ T cells revealed a maximum threefold to fourfold enhancement of Lck pY394.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration of 3-IB-PP1 in CskAS CD8+ T cells revealed a maximum threefold to fourfold enhancement of Lck pY394, which correlated with increased Lck activity (Figure 3A) (Chakraborty and Weiss, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3A and a citation to Chakraborty and Weiss, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ebdd2fb0-4afa-48c9-9b6f-53dcdcb7ac19",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C56",
+      "claim": "At resting state 25\u201333% of Lck was phosphorylated at Y394.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus at resting state 25\u201333% of Lck was phosphorylated at Y394, which agrees with some previous estimates (Nika et al., 2010) and is higher than others (Ballek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the plateau with high drug doses shown in Figure 3A and compared to citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7ee2989c-633e-4879-8ac2-8d07064f117f",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C57",
+      "claim": "Low doses of 3-IB-PP1 (1 \u03bcM or less) induced at most a 50% upregulation of pY394.",
+      "claim_type": "EXPLICIT",
+      "source": "Low doses of 3-IB-PP1 (1 \u03bcM or less) induced at most a 50% upregulation of pY394, while doses of 5\u201310 \u03bcM induced a threefold to fourfold upregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "3e72df60-f941-4e3c-a3d6-33cdf499d7e9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C58",
+      "claim": "Doses of 5\u201310 \u03bcM 3-IB-PP1 induced a threefold to fourfold upregulation of Lck pY394.",
+      "claim_type": "EXPLICIT",
+      "source": "Low doses of 3-IB-PP1 (1 \u03bcM or less) induced at most a 50% upregulation of pY394, while doses of 5\u201310 \u03bcM induced a threefold to fourfold upregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "45dd224b-8649-45b8-97ac-31e14f528030",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C59",
+      "claim": "Phosphorylation of the inhibitory tail Y505 did not decrease as appreciably as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, phosphorylation of the inhibitory tail Y505, the direct target of Csk, did not decrease as appreciably.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "9e822f8c-3b2d-434b-acb7-e38f1711e548",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C60",
+      "claim": "Lck is actively phosphorylated by Csk.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that Lck is actively phosphorylated by Csk, but a substantial proportion of pY505 is either inaccessible for dephosphorylation by CD45 or is dephosphorylated over a longer timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that pY505 does not decrease much despite Csk inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "540582a2-d505-476b-a578-7e95f168fb3e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C61",
+      "claim": "CD4+ and CD8+ T cells have identical responses to Csk inhibition when normalized to their basal level of Lck phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that CD4+ and CD8+ T cells have identical responses to Csk inhibition when normalized to their basal level of Lck phosphorylation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7a4e2d36-47af-4859-aebe-a8cf75af3a6b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C62",
+      "claim": "CD8+ T cells express \u223c15% more Lck than CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CD8+ T cells express \u223c15% more Lck (Olszowy et al., 1995) and have a higher (\u223c20%) basal amount of inhibitory tail pY505 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Olszowy et al., 1995 and data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "b66cfd4b-5463-4fe9-aded-6a793d091dba",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C63",
+      "claim": "CD8+ T cells have a higher (\u223c20%) basal amount of inhibitory tail pY505 phosphorylation than CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CD8+ T cells express \u223c15% more Lck (Olszowy et al., 1995) and have a higher (\u223c20%) basal amount of inhibitory tail pY505 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "62b76445-de90-4b75-a040-81e8d725e1f8",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C64",
+      "claim": "In both CD4+ and CD8+ T cells, pY394 increased much more markedly than the associated decrease in pY505 in response to low doses of the Csk inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "In both CD4+ and CD8+ T cells, pY394 increased much more markedly than the associated decrease in pY505 in response to low doses of the Csk inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "de4c0f8d-ec30-44c5-bc68-5f7163a1de99",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C65",
+      "claim": "Short-term CskAS;OTI CD8+ T cell stimulation with bead-bound OVA-MHC tetramer was enhanced even by low levels of Csk inhibition (<1 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Short-term CskAS;OTI CD8+ T cell stimulation with bead-bound OVA-MHC tetramer was enhanced even by low levels of Csk inhibition (<1 \u03bcM) (Figure 3B), as demonstrated by the degree of PLC-\u03b31 and ERK1/2 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "599577f7-d67b-4934-8eff-d6b293229c72",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C66",
+      "claim": "At low inhibitor dose (<1 \u03bcM), Lck pY394 did not increase by more than 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "At this inhibitor dose, Lck pY394 did not increase by more than 50%, suggesting that even subtle changes in Lck activity can potentiate proximal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "a70d45c7-6eb0-42ff-aced-21f0556d09c9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C67",
+      "claim": "Even subtle changes in Lck activity can potentiate proximal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "At this inhibitor dose, Lck pY394 did not increase by more than 50%, suggesting that even subtle changes in Lck activity can potentiate proximal signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "6ebf5d54-8e0c-4c77-b53f-b33595e353d3",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C68",
+      "claim": "Higher doses of the inhibitor potentiated Lck signaling even further.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher doses of the inhibitor potentiated Lck signaling even further, suggesting Csk and Lck activity can be titrated over a wide range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "c715b196-1326-4bed-8112-18746d4ddf05",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C69",
+      "claim": "Csk and Lck activity can be titrated over a wide range.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher doses of the inhibitor potentiated Lck signaling even further, suggesting Csk and Lck activity can be titrated over a wide range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7416e3a9-eae7-4d1d-bb01-c57fbcd34a77",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C70",
+      "claim": "Lck is proposed to be the crucial gate-keeper in kinetic proof-reading models that attempt to explain the exquisite affinity discrimination of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lck not only initiates TCR-dependent signaling but is also proposed to be the crucial gate-keeper in kinetic proof-reading models that attempt to explain the exquisite affinity discrimination of T cells of agonists with only slightly different half-lives (Palmer and Naeher, 2009; Stepanek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Palmer and Naeher, 2009 and Stepanek et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "b85894ec-c381-4181-b2d2-0933cf19a9be",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C71",
+      "claim": "Strong CskAS inhibition (5 \u03bcM) led to marked augmentation of CD69 expression in responses to weak agonists (T4, Q4H7, G4).",
+      "claim_type": "EXPLICIT",
+      "source": "When CskAS;OTI CD8+ T cells were stimulated by APCs preloaded with peptides of different agonist potency during strong CskAS inhibition (5 \u03bcM), we observed marked augmentation of CD69 expression in responses to weak (T4, Q4H7, G4) agonists, contrasting with only slight enhancement of the responses to strong (OVA, Q4R7) agonists (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "b703a083-c024-4a23-9cf4-cf6d173aa86f",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C72",
+      "claim": "Strong CskAS inhibition (5 \u03bcM) led to only slight enhancement of the responses to strong agonists (OVA, Q4R7).",
+      "claim_type": "EXPLICIT",
+      "source": "When CskAS;OTI CD8+ T cells were stimulated by APCs preloaded with peptides of different agonist potency during strong CskAS inhibition (5 \u03bcM), we observed marked augmentation of CD69 expression in responses to weak (T4, Q4H7, G4) agonists, contrasting with only slight enhancement of the responses to strong (OVA, Q4R7) agonists (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "497c45e6-60fa-46bf-8fcf-c168769397d7",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C73",
+      "claim": "Upon stimulation with OVA, but not altered peptides, the TCR is quickly downregulated due to its phosphorylation and retention in intracellular vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon stimulation with OVA, but not altered peptides, the TCR is quickly downregulated due to its phosphorylation and retention in intracellular vesicles (Cai et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cai et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "8551fc6f-f4b8-45b7-b393-7404cc1e6839",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C74",
+      "claim": "Csk inhibition alone induced some ligand-independent TCR downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Csk inhibition alone induced some ligand-independent TCR downregulation, but additional downregulation was observed with all peptides, even the weakest G4, which argues for altered signaling of low-affinity peptides at a very upstream step (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "d4baa99f-55dc-4e92-9085-b4a1f334042c",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C75",
+      "claim": "Additional TCR downregulation was observed with all peptides, even the weakest G4.",
+      "claim_type": "EXPLICIT",
+      "source": "Csk inhibition alone induced some ligand-independent TCR downregulation, but additional downregulation was observed with all peptides, even the weakest G4, which argues for altered signaling of low-affinity peptides at a very upstream step (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ec543b1f-9e24-4efa-9343-e49c2f24b7a9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C76",
+      "claim": "The null agonist VSV-loaded APCs did not induce similar activation or TCR downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the null agonist VSV-loaded APCs did not induce similar activation or TCR downregulation, demonstrating that Csk inhibition works strictly in synergy with a cognate TCR ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "82e38263-cd93-4c94-9eb1-847cdd49e0ce",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C77",
+      "claim": "Csk inhibition works strictly in synergy with a cognate TCR ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the null agonist VSV-loaded APCs did not induce similar activation or TCR downregulation, demonstrating that Csk inhibition works strictly in synergy with a cognate TCR ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "a85b06e8-93e1-41db-b2c3-9aa3344f82ab",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C78",
+      "claim": "Dose-dependent enhancement of signaling was observed at 100\u20131000 nM 3-IB-PP1 for weak agonists Q4H7 and G4.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly we observed dose-dependent enhancement of signaling at 100\u20131000 nM 3-IB-PP1, where increased Lck pY394 was weakly detectable and at most 50% above the basal level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "4251bffb-3cc3-4d8c-ab61-39453ffe2fe7",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C79",
+      "claim": "At 100\u20131000 nM 3-IB-PP1, increased Lck pY394 was weakly detectable and at most 50% above the basal level.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly we observed dose-dependent enhancement of signaling at 100\u20131000 nM 3-IB-PP1, where increased Lck pY394 was weakly detectable and at most 50% above the basal level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 3A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "0ffec9ee-8cd3-4f4a-b2c6-2eadc08f6685",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C80",
+      "claim": "Relatively weak Lck hyperactivation was sufficient to enhance the recognition of weak agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, relatively weak Lck hyperactivation was sufficient to enhance the recognition of weak agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data shown in Figures 3A and 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "09251ce4-ea48-40bf-9e3c-6b57eb54c042",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C81",
+      "claim": "There are Csk-independent mechanisms for sensing agonist dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower plateau suggests that there are Csk-independent mechanisms for sensing agonist dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "5200d519-99df-4c07-8849-ec5476ebc909",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C82",
+      "claim": "The EC50 concentration of Csk inhibition for CD69 upregulation was dependent on agonist quality and dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the EC50 concentration of Csk inhibition for CD69 upregulation was still dependent on agonist quality and dose (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "e2883f79-8caf-4c2a-9f19-6298c0bdd37a",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C83",
+      "claim": "At a lower agonist dose, the weaker peptide G4 required double the amount of 3-IB-PP1 than Q4H7.",
+      "claim_type": "EXPLICIT",
+      "source": "At a lower agonist dose, the weaker peptide G4 required double the amount of 3-IB-PP1 than Q4H7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ca9fadd8-07f3-46fd-8b5c-f609f8b56038",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C84",
+      "claim": "Csk inhibition fine-tunes the response to agonist dose and affinity sensing in peripheral T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations argue that Csk inhibition fine-tunes the response to agonist dose and affinity sensing in peripheral T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "8be63a38-4d5b-449f-a126-45b472a05b72",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C85",
+      "claim": "A substantial amount of active Lck is present in the basal state and does not change with TCR ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a substantial amount of active Lck is present in the basal state and does not change with TCR ligation, it has been hypothesized that the pre-existing pool of active Lck is responsible for the highly sensitive and rapid initiation of TCR signaling in response to ligand engagement (Nika et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nika et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "c03bcdff-4ae5-4814-b719-ff2307c9143f",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C86",
+      "claim": "The pre-existing pool of active Lck is responsible for the highly sensitive and rapid initiation of TCR signaling in response to ligand engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Since a substantial amount of active Lck is present in the basal state and does not change with TCR ligation, it has been hypothesized that the pre-existing pool of active Lck is responsible for the highly sensitive and rapid initiation of TCR signaling in response to ligand engagement (Nika et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nika et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "5504f169-fd74-4faa-895b-a5c9c9b3ca76",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C87",
+      "claim": "By controlling the amount of active Lck present, Csk regulates the responsiveness of the T cell to receptor stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, a likely explanation for our observations is that by controlling the amount of active Lck present, Csk regulates the responsiveness of the T cell to receptor stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and previous knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "0831de5d-6ca4-4107-b853-75ea5514dd4d",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C88",
+      "claim": "The size of the active pool of Lck is especially critical for affinity discrimination of different agonistic peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data supports the model that the size of the active pool of Lck is especially critical for affinity discrimination of different agonistic peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "dd11afbd-3a00-4f6a-ac96-f4ac4ae154b6",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C89",
+      "claim": "Strong agonists have a long half-life of pMHC-TCR and have sufficient time to recruit active Lck and initiate downstream events.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong agonists have a long half-life of pMHC-TCR and have sufficient time to recruit active Lck and initiate downstream events, while weak agonists with short half-lives are most sensitive to the availability of active Lck before the pMHC-TCR complex falls apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the kinetic proofreading model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ee951fef-bc63-4880-aeaf-b2ad4c96f73e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C90",
+      "claim": "Weak agonists with short half-lives are most sensitive to the availability of active Lck before the pMHC-TCR complex falls apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong agonists have a long half-life of pMHC-TCR and have sufficient time to recruit active Lck and initiate downstream events, while weak agonists with short half-lives are most sensitive to the availability of active Lck before the pMHC-TCR complex falls apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the kinetic proofreading model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "f1d8a491-392c-4b38-ba0a-719950c6ebce",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C91",
+      "claim": "The different amounts of Lck loaded on the CD4 and CD8 co-receptors can explain the different half-life range of positively and negatively selecting ligands for CD4 and CD8 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The different amounts of Lck loaded on the CD4 and CD8 co-receptors can explain the different half-life range of positively and negatively selecting ligands for CD4 and CD8 cells (Stepanek et al., 2014); however, this is a genetically established parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Stepanek et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "f4008a7c-3218-4f99-915f-ad6e632441e0",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C92",
+      "claim": "Recruitment of active Lck is critical for affinity discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data supports the model that recruitment of active Lck is critical for affinity discrimination, but offers an alternative mechanism for its regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "3c982e7e-25d3-4bc0-b8b7-7410c0dd1767",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C93",
+      "claim": "By controlling the fraction of active Lck, Csk can modulate the activation threshold and affinity discrimination of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By controlling the fraction of active Lck, Csk can also modulate the activation threshold and affinity discrimination of T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "99545460-70be-4e08-bfef-06a37138ffd2",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C94",
+      "claim": "Csk localization and activity is dynamically controlled by phosphorylation-dependent recruitment to transmembrane and cytoplasmic adaptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, since Csk localization and activity is dynamically controlled by phosphorylation-dependent recruitment to transmembrane and cytoplasmic adaptors, this could enable flexibility in affinity recognition in different settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "93e3edc4-077f-4b4d-888d-05aa762701c9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C95",
+      "claim": "Csk has been found to be differentially localized in naive and antigen-experienced T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Csk has been found to be differentially localized in naive and antigen-experienced T cells (Borger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Borger et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "d2557441-fd0a-480a-8eff-7bbe6644d7dc",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C96",
+      "claim": "The adaptor molecule Themis was characterized as critical for the suppression of weak agonists in thymocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the adaptor molecule Themis was characterized as critical for the suppression of weak agonists in thymocytes, while PTPN22 serves a similar role in in effector cells (Fu et al., 2013; Salmond et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fu et al., 2013 and Salmond et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "df589077-ea8a-4bd4-8adf-9fea341e13ef",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C97",
+      "claim": "PTPN22 serves a similar role to Themis in effector cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the adaptor molecule Themis was characterized as critical for the suppression of weak agonists in thymocytes, while PTPN22 serves a similar role in in effector cells (Fu et al., 2013; Salmond et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fu et al., 2013 and Salmond et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "2dd63c2b-5460-44fe-a6dd-c40847627731",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C98",
+      "claim": "Csk, via its regulation of Lck, regulates naive T cell priming to agonists of different potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Csk, via its regulation of Lck, regulates naive T cell priming to agonists of different potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "d9fc71ba-3936-455d-a868-507f976c4db1",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C99",
+      "claim": "Even very small changes in Lck activity, caused by CskAS inhibition at 200 nM 3-IB-PP1, led to relatively large pY394 changes in the setting of small changes in pY505.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, even very small changes in Lck activity, caused by CskAS inhibition at 200 nM 3-IB-PP1, led to relatively large pY394 changes in the setting of small changes in pY505.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "dd72671c-3392-46b3-828b-eaf95f3e82f9",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C100",
+      "claim": "A small reduction in pY505 induced by low levels of Csk inhibition could lead to autoactivation of a large pool of Lck.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Y394 phosphorylation is the result of trans-autophosphorylation, it seems likely that a small reduction in pY505 induced by low levels of Csk inhibition, could lead to autoactivation of a large pool of Lck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data and the known mechanism of Lck activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "1c4e803f-9e6a-4205-832f-90dc767e58e7",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C101",
+      "claim": "A larger pool of active Lck could show strong synergy with the TCR stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a larger pool of active Lck could then show strong synergy with the TCR stimulus and is sufficient to markedly enhance the response to very weak agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "235abd35-71fe-4f55-9498-1169983f627b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C102",
+      "claim": "The synergy between TCR stimulus and Csk inhibition had its greatest impact on the activation of downstream signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The synergy we observed between TCR stimulus and Csk inhibition, strikingly, had its greatest impact on the activation of downstream signaling molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "3a99db06-4c64-450b-8ce7-3ec493d9fc0e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C103",
+      "claim": "The synergy is most likely due to positive feedback/signal amplification along the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely due to positive feedback/signal amplification along the pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed synergy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "d082d9d2-e9c4-49d3-a3e5-30cf6b5a3df8",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C104",
+      "claim": "Small changes in Lck activity do not as effectively engage negative feedback mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that, although small changes in Lck activity greatly sensitize the TCR to weak agonists, such small changes do not as effectively engage negative feedback mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ee3638ae-a4bf-4116-900d-a6a50eff988e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C105",
+      "claim": "Loss of Csk from the cell membrane has been proposed to lead to TCR signal initiation via activation of Lck.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Csk from the cell membrane, or biochemically defined lipid raft fractions has been proposed to lead to TCR signal initiation via activation of Lck (Torgersen et al., 2001; Davidson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Torgersen et al., 2001 and Davidson et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "6a82bdaf-d2f4-4bb8-8762-b400b3ec861c",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C106",
+      "claim": "This model is contradicted by the lack of appreciable change in Lck phosphorylation upon TCR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is contradicted by the lack of appreciable change in Lck phosphorylation upon TCR stimulation and by unaltered signaling in cells deficient in the lipid-raft-resident Csk adapter PAG (Dobenecker et al., 2005; Xu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dobenecker et al., 2005 and Xu et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ff709ca3-39dd-4332-87b7-6297d703e26b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C107",
+      "claim": "Acute activation of Lck, via weak or strong Csk inhibition, does not lead to full TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that acute activation of Lck, via weak or strong Csk inhibition, does not lead to full TCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ff979d80-7ecb-4d15-9540-c3850fba467e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C108",
+      "claim": "Strong Csk inhibition in mature T cells leads to small amounts of phosphorylation of downstream targets like ZAP-70 and PLC-\u03b31, but not ERK activation or long-term proliferation in the absence of TCR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong Csk inhibition in mature T cells leads to small amounts of phosphorylation of downstream targets like ZAP-70 and PLC-\u03b31, but not ERK activation or long-term proliferation in the absence of TCR engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "b08e4159-6db7-40fe-8021-05e1fc65794c",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C109",
+      "claim": "Lck activation alone is insufficient to trigger complete TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Lck activation alone is insufficient to trigger complete TCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ac91b0dc-b2dc-48bc-b095-d11084f2650e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C110",
+      "claim": "When combined with cognate TCR ligands, very small amounts of Csk inhibition and resultant larger amounts of Lck activation synergize to enhance early biochemical events and downstream activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when combined with cognate TCR ligands, very small amounts of Csk inhibition and resultant larger amounts of Lck activation, synergize to enhance early biochemical events and downstream activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 1, 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "5815c74b-f2cb-41b9-ade9-84db237d889d",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C111",
+      "claim": "During physiological TCR stimulation, localization of only a small number of Csk molecules is altered and leads to the activation of a small fraction of Lck molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that during physiological TCR stimulation, localization of only a small number of Csk molecules is altered and leads to the activation of a small fraction of Lck molecules that would be difficult to detect with current biochemical or imaging methods (Paster et al., 2009; Nika et al., 2010) but might be sufficient to influence downstream signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the data and supported by citations to Paster et al., 2009 and Nika et al., 2010.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "dea25480-e051-4ad2-b50c-42582d41ff27",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C112",
+      "claim": "TCR signal downregulation in the absence of Csk activity is delayed but not abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "Using acute inhibition of Csk concurrently with TCR stimulation, we were able to follow TCR signal downregulation in the absence of Csk activity and observed that it is delayed but not abolished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7ff28454-88a4-4292-9329-548edec8720b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C113",
+      "claim": "Other molecules are involved in signal termination more prominently than Csk.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that other molecules are involved in signal termination more prominently than Csk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "353b5e5f-cd13-42cf-aaba-c813274eff67",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C114",
+      "claim": "Manipulation of Csk activity by small molecule inhibitors could be useful therapeutically in pathologic settings where suppression or augmentation of T cell responses to antigen is desirable.",
+      "claim_type": "EXPLICIT",
+      "source": "Such manipulation of Csk activity by small molecule inhibitors could be useful therapeutically, for example in pathologic settings where suppression (i.e., autoimmunity) or augmentation (i.e., vaccines or cancer) of T cell responses to antigen is desirable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "9bbe6aa1-bafe-418f-a78b-ea4980c4b954",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C115",
+      "claim": "Mice used for these studies were 6\u201312 weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice used for these studies were 6\u201312 weeks of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "4c481846-9600-4d4f-9b77-966da03e91d8",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "claim_id": "C116",
+      "claim": "All mice were housed in a specific pathogen-free facility at UCSF according to the University Animal Care Committee and National Institutes of Health (NIH) guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice were housed in a specific pathogen-free facility at UCSF according to the University Animal Care Committee and National Institutes of Health (NIH) guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Csk is the primary negative regulator of Src-family kinases (SFKs), which are ubiquitous regulators of receptor signaling. Csk is a cytoplasmic protein that phosphorylates the inhibitory tyrosine of membrane-localized SFKs, particularly Lck in T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, C13, C26-C28 establish foundational knowledge about Csk and SFKs that is well-supported by citations to established literature. These claims provide the necessary background context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "43d70a79-e388-4633-a0d9-cfe2b386f880",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors generated BAC transgenic mice expressing a mutant Csk (CskAS) whose activity can be specifically and rapidly inhibited by 3-IB-PP1. Previous work in thymocytes showed that CD45 and Csk together establish basal SFK activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 describe the CskAS mouse model system, which is supported by citation to prior work (Tan et al., 2014). This establishes the experimental system used throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Inhibition of CskAS during TCR stimulation with anti-CD3\u03b5 led to strong Lck and Fyn activation, but only weak downstream signaling when CskAS inhibition occurred alone. When combined with TCR stimulation, CskAS inhibition synergistically enhanced downstream phosphorylation of ZAP-70, LAT, PLC-\u03b31, and ERK in a dose-dependent manner. This demonstrates that Csk activity plays a crucial role in establishing the TCR activation threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 are well-supported by immunoblot and flow cytometry data in Figure 1. The synergy between Csk inhibition and TCR stimulation is clearly demonstrated, with appropriate controls including wildtype cells and DMSO treatment. The conclusion that Csk sets the TCR activation threshold is justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "57b4395c-d83d-447f-bc9f-586725b7049b",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CskAS inhibition prolonged phosphorylation of proximal signaling molecules and delayed ERK downregulation in a dose-dependent manner. However, Csk inhibition did not prevent eventual signal attenuation, indicating that Csk has only a partial role in signal termination and other negative regulatory mechanisms contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are supported by time-course data in Figure 1\u2014figure supplement 1. The data clearly show prolonged signaling with Csk inhibition but eventual signal termination, supporting the conclusion that Csk plays a partial but not exclusive role in signal termination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "35006d63-1a46-4ab2-807c-2ab27815d4de",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stimulation of CskAS;OTII CD4+ T cells with physiologic OVA pMHC tetramer during CskAS inhibition resulted in markedly enhanced and prolonged phosphorylation of proximal signaling molecules and ERK. This parallels findings with anti-CD3\u03b5 stimulation. At low doses of stimulation, both anti-CD3\u03b5 and OVA pMHC tetramer induced greater proliferation when CskAS was inhibited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by data in Figure 2 and Figure 2\u2014figure supplement 1. The use of physiologic pMHC ligands strengthens the conclusions from anti-CD3\u03b5 experiments. The proliferation data provide functional validation of the biochemical signaling changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Titration of 3-IB-PP1 in CskAS CD8+ T cells revealed a maximum 3-4 fold enhancement of Lck pY394, suggesting 25-33% of Lck is phosphorylated at Y394 at rest. Low doses (\u22641 \u03bcM) induced at most 50% upregulation of pY394, while 5-10 \u03bcM induced 3-4 fold upregulation. Surprisingly, phosphorylation of the inhibitory Y505 did not decrease as much as expected, suggesting a substantial proportion of pY505 is inaccessible to CD45 or dephosphorylated slowly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are supported by dose-response data in Figure 3A. The quantification is appropriate and the inference about basal Lck pY394 levels is reasonable given the plateau observed. The unexpected finding about pY505 is clearly documented and appropriately interpreted as requiring further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "6bdaa7e6-faef-42e7-86a0-5d9d9f246aba",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD4+ and CD8+ T cells have identical responses to Csk inhibition when normalized to basal Lck phosphorylation levels. CD8+ T cells express ~15% more Lck and have ~20% higher basal pY505 phosphorylation than CD4+ cells. In both cell types, pY394 increased much more than the associated decrease in pY505 in response to low doses of Csk inhibitor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are supported by data in Figure 3\u2014figure supplement 1. The comparison between CD4+ and CD8+ T cells is appropriate and the normalization approach is sound. The observation that pY394 increases disproportionately to pY505 decrease is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "847a2992-a5b8-43cf-88f5-fcbc53ec69ed",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Short-term stimulation of CskAS;OTI CD8+ T cells with OVA-MHC tetramer was enhanced even by low levels of Csk inhibition (<1 \u03bcM), where Lck pY394 increased by at most 50%. This suggests that even subtle changes in Lck activity can potentiate proximal signaling, and that Csk and Lck activity can be titrated over a wide range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 are supported by data in Figure 3B. The dose-response relationship is clearly demonstrated, and the conclusion that small changes in Lck activity have significant functional effects is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "314ab715-048e-4a3e-8992-e79fb4fca093",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Strong CskAS inhibition (5 \u03bcM) led to marked augmentation of CD69 expression in response to weak agonists (T4, Q4H7, G4) but only slight enhancement for strong agonists (OVA, Q4R7). Csk inhibition induced some ligand-independent TCR downregulation, but additional downregulation was observed with all cognate peptides, even the weakest. The null agonist VSV did not induce activation or TCR downregulation, demonstrating that Csk inhibition works strictly in synergy with cognate TCR ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77 are supported by data in Figure 4A and Figure 4\u2014figure supplement 1. The differential effects on weak vs. strong agonists are clearly demonstrated. The VSV control is critical and appropriately shows no response, confirming specificity for cognate ligands.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dose-dependent enhancement of signaling was observed at 100-1000 nM 3-IB-PP1 for weak agonists, where Lck pY394 was at most 50% above basal. The EC50 for CD69 upregulation was dependent on both agonist quality and dose. At lower agonist doses, weaker peptide G4 required double the amount of inhibitor compared to Q4H7. This demonstrates that Csk inhibition fine-tunes responses to agonist dose and affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 are supported by dose-response data in Figure 4B-C. The EC50 analysis is appropriate and the conclusion that Csk fine-tunes affinity discrimination is well-supported. The observation of a lower plateau suggests Csk-independent mechanisms, which is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "34da8b2c-1a97-4762-82b6-5a1ce0f099c1",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "By controlling the amount of active Lck present, Csk regulates T cell responsiveness to receptor stimulus. The size of the active Lck pool is especially critical for affinity discrimination of different agonistic peptides. Csk, via its regulation of Lck, regulates naive T cell priming to agonists of different potency and can modulate the activation threshold and affinity discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C88, C92, C93, C98 represent the major mechanistic conclusions of the paper. These are well-supported by the comprehensive experimental data showing differential effects on weak vs. strong agonists, dose-response relationships, and the synergy between Csk inhibition and TCR stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "cdcf90a9-7a7a-465b-b5e8-918fe13fa065",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Very small changes in Lck activity caused by low-dose CskAS inhibition (200 nM 3-IB-PP1) led to relatively large pY394 changes despite small changes in pY505. This suggests that small reductions in pY505 could lead to trans-autoactivation of a large pool of Lck, which could then show strong synergy with TCR stimulus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101 are supported by data in Figures 3 and 4. The proposed mechanism of trans-autoactivation is a reasonable inference from the disproportionate increase in pY394 relative to pY505 decrease, though the authors appropriately note this as a likely explanation rather than proven mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "a7f8b78e-360f-4af8-8631-8f6c02018398",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The synergy between TCR stimulus and Csk inhibition had its greatest impact on downstream signaling molecules, most likely due to positive feedback/signal amplification along the pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 are supported by data in Figures 1 and 2 showing disproportionate enhancement of downstream signaling. The inference about positive feedback is reasonable given the amplification observed, though the authors appropriately present this as the most likely explanation rather than proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "78181751-6e10-422c-b952-db9b1c58357c",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Acute activation of Lck via Csk inhibition does not lead to full TCR signaling in the absence of TCR engagement. Strong Csk inhibition leads to small amounts of downstream phosphorylation but not ERK activation or proliferation without TCR engagement. However, when combined with cognate TCR ligands, even small amounts of Csk inhibition synergize to enhance signaling and activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C110 are supported by data throughout Figures 1-4. The requirement for TCR engagement is clearly demonstrated by the lack of full signaling with Csk inhibition alone and the strong synergy when combined with TCR stimulation. This is a key finding that distinguishes the role of Csk from simply initiating signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "cf071cfb-2968-4a9b-b1e6-e6b008b7207d",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Using acute Csk inhibition during TCR stimulation, the authors observed that TCR signal downregulation is delayed but not abolished in the absence of Csk activity. This suggests other molecules are involved in signal termination more prominently than Csk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 are supported by time-course data in Figure 1\u2014figure supplement 1. The observation that signaling eventually terminates despite Csk inhibition is clear, supporting the conclusion that other mechanisms contribute to signal termination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "a8b668a7-d87f-4c7f-86f9-5084b4e8d6c3",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model that loss of Csk from the cell membrane leads to TCR signal initiation is contradicted by the lack of appreciable change in Lck phosphorylation upon TCR stimulation and by unaltered signaling in PAG-deficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 discuss prior models and their limitations, supported by appropriate citations. This contextualizes the current findings within the existing literature and is appropriately critical of prior models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "277bf415-36ab-4638-b1f0-1701b2d206c2",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "During physiological TCR stimulation, localization of only a small number of Csk molecules may be altered, leading to activation of a small fraction of Lck molecules that would be difficult to detect but sufficient to influence signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C111 is presented as speculation based on the data. While this is a reasonable hypothesis given the findings that small changes in Lck activity have large effects, it remains speculative and would require additional experiments (e.g., imaging studies) to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "11185161-0e4f-46ff-92ba-73e692fdcafe",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Small changes in Lck activity may not as effectively engage negative feedback mechanisms compared to larger changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C104 is explicitly presented as speculation ('It is possible that...'). While this could explain the observed synergy and amplification, no direct evidence for differential engagement of negative feedback is provided. This would require additional experiments to test.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "47131794-0469-455b-8e0b-d870b6908c93",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Manipulation of Csk activity by small molecule inhibitors could be useful therapeutically in settings where suppression or augmentation of T cell responses is desirable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C114 is speculation about potential therapeutic applications. While the findings suggest this could be feasible, no therapeutic studies were performed. This represents future work rather than a supported conclusion from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "08b64183-d9a7-4903-87b4-950ee737431e",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background knowledge about SFK regulation, Lck function in TCR signaling, kinetic proofreading models, and prior work on Csk localization and genetic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C10-C25, C29-C33, C70, C73, C85-C86, C89-C91, C94-C97) represent established knowledge from the literature, appropriately cited. They provide necessary context for interpreting the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    },
+    {
+      "id": "1ef58c78-b0f0-4173-a6fb-7554dbbb1561",
+      "content_id": "5bf21443-194f-421c-86b7-9a02c0ac17b9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Methodological details about mouse age and housing conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C116 are straightforward methodological details that are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:51:33.643213Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7e9aac6c-67b5-4eb1-86fa-1359d1cd1dee",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "bf0cf3d2-3351-444d-9aea-ee6de643f3c5",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "b5010b01-b7d5-4eea-8183-1c4579b8a56d",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "18ae9d9f-fd1e-4029-9925-dac2371dae32",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "7f6b2cbd-6855-4c76-b59c-00ce2d5f33d9",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "18274342-6ce4-4dfa-8b31-41f2294a8855",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "bfd9825d-bf3e-409f-8a0d-42f96c3dc572",
+      "result_id": "7fb19b9b-36e6-47aa-9cbe-b768b6e630e0"
+    },
+    {
+      "claim_id": "029dcb56-ada2-4580-882d-e6cc07f85062",
+      "result_id": "43d70a79-e388-4633-a0d9-cfe2b386f880"
+    },
+    {
+      "claim_id": "9a4a3d4c-8222-48f7-ad9f-72df0acc4e0b",
+      "result_id": "43d70a79-e388-4633-a0d9-cfe2b386f880"
+    },
+    {
+      "claim_id": "dd105cd5-ef54-4339-97db-0a9b15c9a587",
+      "result_id": "43d70a79-e388-4633-a0d9-cfe2b386f880"
+    },
+    {
+      "claim_id": "0dea6082-aac6-4732-9a5a-6d7374836f42",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "4ac9c683-68c7-4119-a4de-3830d3418253",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "3190d1bb-49a9-4b9c-a119-384f56318aa3",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "bf03bfdb-044c-4d62-bd51-0a65625f5ec7",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "56f1f520-6a25-4ebe-b11a-c0cc44387f3c",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "0a3edadf-5e2c-44ae-bb86-891850cfcc01",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "438969b3-a8b2-4e5a-b388-9cd6dd27a851",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "04d1fba1-72af-4069-b43d-b5f14b73d931",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "6d96d5e3-f55f-439f-bda7-f8e78f5f7ea8",
+      "result_id": "c5bf43a8-77c3-44d7-8aa6-238bab7d02f7"
+    },
+    {
+      "claim_id": "229b7036-d912-449e-abe1-7e922160b4d6",
+      "result_id": "57b4395c-d83d-447f-bc9f-586725b7049b"
+    },
+    {
+      "claim_id": "1ae5fa36-ca83-401d-99aa-3ae99acad0c2",
+      "result_id": "57b4395c-d83d-447f-bc9f-586725b7049b"
+    },
+    {
+      "claim_id": "b2251190-9887-4eab-8eff-156f165103d4",
+      "result_id": "57b4395c-d83d-447f-bc9f-586725b7049b"
+    },
+    {
+      "claim_id": "3bdb79bd-89f9-4877-a49c-fb0d09dff059",
+      "result_id": "57b4395c-d83d-447f-bc9f-586725b7049b"
+    },
+    {
+      "claim_id": "df553d18-2f38-4b08-9523-bc82d0cee35e",
+      "result_id": "35006d63-1a46-4ab2-807c-2ab27815d4de"
+    },
+    {
+      "claim_id": "6e6b0efc-a4ae-4d43-b4ba-7b78277706a8",
+      "result_id": "35006d63-1a46-4ab2-807c-2ab27815d4de"
+    },
+    {
+      "claim_id": "f4cabaf9-1ccf-4cd6-8fdf-73679a3ec772",
+      "result_id": "35006d63-1a46-4ab2-807c-2ab27815d4de"
+    },
+    {
+      "claim_id": "ebdf8832-59b6-4989-82e3-2e4113767eb2",
+      "result_id": "35006d63-1a46-4ab2-807c-2ab27815d4de"
+    },
+    {
+      "claim_id": "021bac43-7605-445b-9056-010606ef90bd",
+      "result_id": "35006d63-1a46-4ab2-807c-2ab27815d4de"
+    },
+    {
+      "claim_id": "ad49ae9c-9083-422b-9d43-6ed90dc69239",
+      "result_id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028"
+    },
+    {
+      "claim_id": "ebdd2fb0-4afa-48c9-9b6f-53dcdcb7ac19",
+      "result_id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028"
+    },
+    {
+      "claim_id": "7ee2989c-633e-4879-8ac2-8d07064f117f",
+      "result_id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028"
+    },
+    {
+      "claim_id": "3e72df60-f941-4e3c-a3d6-33cdf499d7e9",
+      "result_id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028"
+    },
+    {
+      "claim_id": "45dd224b-8649-45b8-97ac-31e14f528030",
+      "result_id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028"
+    },
+    {
+      "claim_id": "9e822f8c-3b2d-434b-acb7-e38f1711e548",
+      "result_id": "7bf2f2ca-e5ea-494f-8b1d-efc8d2869028"
+    },
+    {
+      "claim_id": "540582a2-d505-476b-a578-7e95f168fb3e",
+      "result_id": "6bdaa7e6-faef-42e7-86a0-5d9d9f246aba"
+    },
+    {
+      "claim_id": "7a4e2d36-47af-4859-aebe-a8cf75af3a6b",
+      "result_id": "6bdaa7e6-faef-42e7-86a0-5d9d9f246aba"
+    },
+    {
+      "claim_id": "b66cfd4b-5463-4fe9-aded-6a793d091dba",
+      "result_id": "6bdaa7e6-faef-42e7-86a0-5d9d9f246aba"
+    },
+    {
+      "claim_id": "62b76445-de90-4b75-a040-81e8d725e1f8",
+      "result_id": "6bdaa7e6-faef-42e7-86a0-5d9d9f246aba"
+    },
+    {
+      "claim_id": "de4c0f8d-ec30-44c5-bc68-5f7163a1de99",
+      "result_id": "847a2992-a5b8-43cf-88f5-fcbc53ec69ed"
+    },
+    {
+      "claim_id": "599577f7-d67b-4934-8eff-d6b293229c72",
+      "result_id": "847a2992-a5b8-43cf-88f5-fcbc53ec69ed"
+    },
+    {
+      "claim_id": "a70d45c7-6eb0-42ff-aced-21f0556d09c9",
+      "result_id": "847a2992-a5b8-43cf-88f5-fcbc53ec69ed"
+    },
+    {
+      "claim_id": "6ebf5d54-8e0c-4c77-b53f-b33595e353d3",
+      "result_id": "847a2992-a5b8-43cf-88f5-fcbc53ec69ed"
+    },
+    {
+      "claim_id": "c715b196-1326-4bed-8112-18746d4ddf05",
+      "result_id": "847a2992-a5b8-43cf-88f5-fcbc53ec69ed"
+    },
+    {
+      "claim_id": "b85894ec-c381-4181-b2d2-0933cf19a9be",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "b703a083-c024-4a23-9cf4-cf6d173aa86f",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "497c45e6-60fa-46bf-8fcf-c168769397d7",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "8551fc6f-f4b8-45b7-b393-7404cc1e6839",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "d4baa99f-55dc-4e92-9085-b4a1f334042c",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "ec543b1f-9e24-4efa-9343-e49c2f24b7a9",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "82e38263-cd93-4c94-9eb1-847cdd49e0ce",
+      "result_id": "314ab715-048e-4a3e-8992-e79fb4fca093"
+    },
+    {
+      "claim_id": "a85b06e8-93e1-41db-b2c3-9aa3344f82ab",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "4251bffb-3cc3-4d8c-ab61-39453ffe2fe7",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "0ffec9ee-8cd3-4f4a-b2c6-2eadc08f6685",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "09251ce4-ea48-40bf-9e3c-6b57eb54c042",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "5200d519-99df-4c07-8849-ec5476ebc909",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "e2883f79-8caf-4c2a-9f19-6298c0bdd37a",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "ca9fadd8-07f3-46fd-8b5c-f609f8b56038",
+      "result_id": "ceee6daa-e15c-4e89-8390-c2831f85ab8f"
+    },
+    {
+      "claim_id": "5504f169-fd74-4faa-895b-a5c9c9b3ca76",
+      "result_id": "34da8b2c-1a97-4762-82b6-5a1ce0f099c1"
+    },
+    {
+      "claim_id": "0831de5d-6ca4-4107-b853-75ea5514dd4d",
+      "result_id": "34da8b2c-1a97-4762-82b6-5a1ce0f099c1"
+    },
+    {
+      "claim_id": "f4008a7c-3218-4f99-915f-ad6e632441e0",
+      "result_id": "34da8b2c-1a97-4762-82b6-5a1ce0f099c1"
+    },
+    {
+      "claim_id": "3c982e7e-25d3-4bc0-b8b7-7410c0dd1767",
+      "result_id": "34da8b2c-1a97-4762-82b6-5a1ce0f099c1"
+    },
+    {
+      "claim_id": "2dd63c2b-5460-44fe-a6dd-c40847627731",
+      "result_id": "34da8b2c-1a97-4762-82b6-5a1ce0f099c1"
+    },
+    {
+      "claim_id": "d9fc71ba-3936-455d-a868-507f976c4db1",
+      "result_id": "cdcf90a9-7a7a-465b-b5e8-918fe13fa065"
+    },
+    {
+      "claim_id": "dd72671c-3392-46b3-828b-eaf95f3e82f9",
+      "result_id": "cdcf90a9-7a7a-465b-b5e8-918fe13fa065"
+    },
+    {
+      "claim_id": "1c4e803f-9e6a-4205-832f-90dc767e58e7",
+      "result_id": "cdcf90a9-7a7a-465b-b5e8-918fe13fa065"
+    },
+    {
+      "claim_id": "235abd35-71fe-4f55-9498-1169983f627b",
+      "result_id": "a7f8b78e-360f-4af8-8631-8f6c02018398"
+    },
+    {
+      "claim_id": "3a99db06-4c64-450b-8ce7-3ec493d9fc0e",
+      "result_id": "a7f8b78e-360f-4af8-8631-8f6c02018398"
+    },
+    {
+      "claim_id": "ff709ca3-39dd-4332-87b7-6297d703e26b",
+      "result_id": "78181751-6e10-422c-b952-db9b1c58357c"
+    },
+    {
+      "claim_id": "ff979d80-7ecb-4d15-9540-c3850fba467e",
+      "result_id": "78181751-6e10-422c-b952-db9b1c58357c"
+    },
+    {
+      "claim_id": "b08e4159-6db7-40fe-8021-05e1fc65794c",
+      "result_id": "78181751-6e10-422c-b952-db9b1c58357c"
+    },
+    {
+      "claim_id": "ac91b0dc-b2dc-48bc-b095-d11084f2650e",
+      "result_id": "78181751-6e10-422c-b952-db9b1c58357c"
+    },
+    {
+      "claim_id": "dea25480-e051-4ad2-b50c-42582d41ff27",
+      "result_id": "cf071cfb-2968-4a9b-b1e6-e6b008b7207d"
+    },
+    {
+      "claim_id": "7ff28454-88a4-4292-9329-548edec8720b",
+      "result_id": "cf071cfb-2968-4a9b-b1e6-e6b008b7207d"
+    },
+    {
+      "claim_id": "ee3638ae-a4bf-4116-900d-a6a50eff988e",
+      "result_id": "a8b668a7-d87f-4c7f-86f9-5084b4e8d6c3"
+    },
+    {
+      "claim_id": "6a82bdaf-d2f4-4bb8-8762-b400b3ec861c",
+      "result_id": "a8b668a7-d87f-4c7f-86f9-5084b4e8d6c3"
+    },
+    {
+      "claim_id": "5815c74b-f2cb-41b9-ade9-84db237d889d",
+      "result_id": "277bf415-36ab-4638-b1f0-1701b2d206c2"
+    },
+    {
+      "claim_id": "d082d9d2-e9c4-49d3-a3e5-30cf6b5a3df8",
+      "result_id": "11185161-0e4f-46ff-92ba-73e692fdcafe"
+    },
+    {
+      "claim_id": "353b5e5f-cd13-42cf-aaba-c813274eff67",
+      "result_id": "47131794-0469-455b-8e0b-d870b6908c93"
+    },
+    {
+      "claim_id": "119131ea-0bb4-48df-a4fe-a4da5321dc68",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "975108b6-3537-4732-b621-8f9d0f0d8e03",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "dbd03d12-e79c-4b85-860a-836b81c4dec8",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "53972db9-47c5-4bd3-9463-ea6354cf14ce",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "5a0a8bc8-f8b7-4fdb-aea6-972195d98fbd",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "2a1e4f39-36c6-4a62-bb16-1020fac953f9",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "1873bc52-ff1e-4637-9ee7-c79d4ef16d00",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "93b3b13d-ec50-420b-adcb-3e2c1eb994e5",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "71e73e9b-14fc-4668-aa93-3a1e9b38b1f9",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "6df0a4eb-eea0-4c02-85de-fdbfccc89f2f",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "d0f589f4-1a69-40be-94f8-42bc7eafcfc7",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "f1d17c32-9544-4f0f-822d-8f1548b8088c",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "161aae0a-3968-4037-b39e-6f2928634880",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "94d7aa61-862e-41be-8476-c29be0a7e25b",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "e6a79dbb-5bbf-4dbe-84eb-a9d388ffb297",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "1864b991-d2e6-41df-bc03-bba765fa6ef9",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "11fc9d45-d120-44c8-8b26-88c2e942f9ae",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "ef0b8518-822e-4a0f-87a2-1e6fee30be97",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "74b1909d-5fca-4ee5-992a-017859ad5d5d",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "1ab8d1a3-7e2d-4949-a511-53d84862aa14",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "7416e3a9-eae7-4d1d-bb01-c57fbcd34a77",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "497c45e6-60fa-46bf-8fcf-c168769397d7",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "8be63a38-4d5b-449f-a126-45b472a05b72",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "c03bcdff-4ae5-4814-b719-ff2307c9143f",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "dd11afbd-3a00-4f6a-ac96-f4ac4ae154b6",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "ee951fef-bc63-4880-aeaf-b2ad4c96f73e",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "f1d8a491-392c-4b38-ba0a-719950c6ebce",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "99545460-70be-4e08-bfef-06a37138ffd2",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "93e3edc4-077f-4b4d-888d-05aa762701c9",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "d2557441-fd0a-480a-8eff-7bbe6644d7dc",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "df589077-ea8a-4bd4-8adf-9fea341e13ef",
+      "result_id": "08b64183-d9a7-4903-87b4-950ee737431e"
+    },
+    {
+      "claim_id": "9bbe6aa1-bafe-418f-a78b-ea4980c4b954",
+      "result_id": "1ef58c78-b0f0-4173-a6fb-7554dbbb1561"
+    },
+    {
+      "claim_id": "4c481846-9600-4d4f-9b77-966da03e91d8",
+      "result_id": "1ef58c78-b0f0-4173-a6fb-7554dbbb1561"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prp3 contains a conserved C-terminal region (Prp3CTF) comprising a DUF1115 domain and a preceding basic peptide, both of which are necessary and sufficient for stable binding to U4/U6 di-snRNAs. The DUF1115 domain recognizes the U6 3'-overhang while the basic peptide contributes to binding, with both elements showing reduced affinity when mutated or removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 provide comprehensive EMSA and ITC binding data demonstrating that the C-terminal ~200 amino acids of Prp3 are necessary and sufficient for U4/U6 binding, with quantitative Kd values showing the DUF1115 domain alone has reduced affinity compared to the full CTF region. The data consistently show both the DUF1115 domain and preceding basic peptide contribute to RNA binding through multiple independent assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C63"
+    ],
+    "result": "Prp3CTF requires at least 8 nucleotides of the U6 3'-overhang and upper parts of stem II (including a conserved non-canonical C69U6-C12U4 base pair) for stable binding. Shortening the U6 3'-overhang below 8 nts or converting the non-canonical base pair to Watson-Crick pairing reduces binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 present systematic EMSA data with RNA constructs of varying lengths and mutations, clearly demonstrating the RNA structural requirements for Prp3 binding. The data show progressive reduction in binding with shorter overhangs and reduced affinity with stem II mutations, supported by quantitative measurements in Figure 1E-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Prp3CTF inhibits Brr2-mediated U4/U6 unwinding approximately 5-fold in vitro, while the DUF1115 domain alone shows minimal inhibitory effect. This suggests the basic peptide preceding DUF1115 is important for stabilizing the U4/U6 duplex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by quantitative unwinding assay data in Figure 2A-B showing ~5-fold reduction in unwinding rate with CTF versus ~1.2-fold with DUF1115 alone. The differential effects between CTF and DUF1115 are consistent with the binding data and support the functional importance of the basic peptide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prp3CTF binds cooperatively with Snu13 and Prp31 to U4/U6 di-snRNAs, with the basic peptide preceding the DUF1115 domain contributing to this cooperativity. Both yPrp3CTF and yPrp3DUF1115 show enhanced binding to pre-assembled Snu13-Prp31-U4/U6 complexes compared to naked RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66-C68 are supported by EMSA data in Figure 2C showing progressively stronger binding to naked RNA, Snu13-bound RNA, and Snu13-Prp31-bound RNA. The differential behavior of CTF versus DUF1115 provides evidence for the role of the basic peptide in cooperative binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Crystal structures of yPrp3CTF (2.7 \u00c5) and yPrp3DUF1115 (2.0 \u00c5) reveal that the DUF1115 domain adopts an expanded ferredoxin-like fold with a five-stranded \u03b2-sheet, three \u03b1-helices, and an additional \u03b2-hairpin insertion. The N-terminal basic peptide (residues 296-334) is disordered in the crystal structure, consistent with it being a flexible element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 are supported by crystallographic data in Table 1 and structural descriptions with figures. The resolution, R-factors, and completeness statistics are appropriate for the conclusions drawn. The lack of electron density for the N-terminal peptide is consistent with ITC data suggesting it is flexible and becomes ordered upon RNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The crystal structure of yPrp3CTF in complex with yU4/U6stem II+10nt (3.25 \u00c5 resolution) reveals that the single-stranded U6 3'-overhang adopts an unusual doubly-kinked conformation as it arches across the protein surface, with the RNA divided into three sections that change direction via two ~90\u00b0 kinks. This conformation is stabilized by protein elements that expand the core ferredoxin fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C96 are supported by crystallographic data with appropriate resolution and statistics (Table 1) and detailed structural descriptions with figures. The unusual RNA conformation is well-documented, and the claim that no similar RNA redirection has been found (C94) is supported by database searches. The two crystallographically independent complexes show consistent protein-RNA interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The crystal structure reveals extensive sequence-specific and non-specific contacts between yPrp3CTF and the U6 3'-overhang, with nearly all nucleotides (G81-U90) making direct protein contacts. Key interactions include R353 recognizing C85 and G86 through Watson-Crick and Hoogsteen edges, R399 and K355 contacting backbone phosphates, and aromatic residues (F354, F441) providing stacking interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C115 provide detailed structural descriptions of protein-RNA contacts supported by the 3.25 \u00c5 crystal structure. The interactions are described at atomic resolution with specific residues and atoms identified, consistent with the resolution of the structure. The presence of two independent complexes in the asymmetric unit provides validation of the observed interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Mutational analysis validates the structural observations, showing that mutations in key RNA nucleotides (G81C, A82C, C85A, G86C) or protein residues (R353A, R399A, F441H, K357A) that make critical contacts in the structure significantly reduce or abolish RNA binding in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 are supported by systematic EMSA data in Figures 4I and 4J testing structure-guided mutations. The mutations target residues shown to make specific contacts in the crystal structure, and the binding defects correlate well with the importance of these contacts. The data provide strong validation of the structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Key RNA nucleotides (G81, A82, C85, G86) and protein residues (R353, R399, F441) involved in Prp3-U4/U6 interactions are highly conserved across eukaryotes, indicating that the mode of interaction observed in the yeast structure is evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by sequence alignments shown in Figure 1 supplements demonstrating conservation of critical residues. The evolutionary conservation provides strong support that the structural mechanism is general across eukaryotes, though direct structural or biochemical validation in other organisms would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Phylogenetic analysis reveals that the Prp3 DUF1115 domain is most similar to acylphosphatase (AcyP) and BLUF domains within the ferredoxin superfamily, but is only distantly related to other RNA-binding ferredoxin fold proteins. The closest nucleic acid-binding relative is the IS608 transposase domain, which recognizes DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 are supported by structural comparisons with quantitative RMSD values and Z-scores (C129-C130) and phylogenetic tree analysis (Figure 3 supplement 2). The analysis appropriately uses structure-based rather than sequence-based comparisons given the low sequence similarity, and the conclusions about evolutionary relationships are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The single-stranded RNA-binding domain (DUF1115) is exclusively found in Prp3 orthologs based on phylogenetic analyses, qualifying it as a spliceosome-specific RNA interaction module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by phylogenetic analyses and the observation that DUF1115-like domains were not detected in hundreds of other RNA-binding proteins in transcriptome-wide screens. The exclusivity to Prp3 orthologs and the unique RNA-binding mode support the designation as spliceosome-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Mutations in Prp3 that disrupt RNA binding in vitro (R304A, R322A, R399A, F441A, and double mutants) cause temperature-sensitive growth defects and accumulation of unspliced pre-mRNAs in vivo, indicating that the observed Prp3-U4/U6 interactions are functionally important for splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 are supported by in vivo growth assays (Figure 5A) and splicing assays (Figure 5B) showing that structure-guided mutations cause phenotypes consistent with splicing defects. The correlation between in vitro binding defects and in vivo phenotypes provides strong functional validation of the structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Strains expressing Prp3 variants with RNA-binding mutations show reduced U4/U6\u2022U5 tri-snRNP levels and increased levels of U4/U6 di-snRNP and free U5 snRNP, with reduced Prp3 associated with tri-snRNP. This indicates that efficient Prp3 binding to U4/U6 via its C-terminal region is important for tri-snRNP stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are supported by Northern blotting and Western blotting of glycerol gradient fractions (Figures 5C-E) showing altered snRNP distributions in mutant strains. The data provide a clear mechanistic link between Prp3-RNA binding defects and tri-snRNP assembly defects, supporting the functional importance of the interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Prp3 contacts RNA elements along stem II in the vicinity of the U4/U6 3-way junction. Snu13 binding to the U4 5'SL could stabilize the 3-way junction and stem II, leading to improved Prp3 binding, potentially enhanced by Prp31. The Prp3 stem II-binding peptide may directly contact Snu13 and/or Prp31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C142 is supported by binding data, but claims C143-C145 are speculative proposals about mechanisms of cooperative binding. While the cooperative binding is demonstrated (C66-C68), the specific molecular mechanisms proposed here lack direct experimental validation. The proposals are reasonable hypotheses but require additional structural or biochemical data to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Prp3 acts as a bridge linking U4/U6 di-snRNP and U5 snRNP in the tri-snRNP, with Prp3-RNA interactions on the U4/U6 side (demonstrated here) and Prp3-protein interactions with Prp6 and Snu66 on the U5 side (from prior Y2H studies). The Prp3-U4/U6 interactions are important for tri-snRNP stability and splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 are supported by the in vivo data showing that RNA-binding mutations affect tri-snRNP stability and splicing. Claim C148 appropriately cites prior Y2H data. Claim C149 integrates the current structural/biochemical data with prior protein interaction data to propose a bridging function, which is well-supported by the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Comparison with the Prp24-U6 structure suggests a mechanism for Prp3 involvement in U4/U6 reassembly: regions of U6 that form stem II and the 3'-overhang in U4/U6 di-snRNP are largely exposed in the Prp24-U6 complex, and the U6 ISL can likely 'breathe' to allow Prp3 binding to its cognate U6 regions, trapping and stabilizing spontaneous local unwinding of the ISL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C150 is supported by structural comparison (Figure 6B). Claims C151-C152 are supported by structural data and citations. However, claims C153-C155 are speculative mechanistic proposals based on structural comparison and known RNA dynamics. While the proposals are reasonable and consistent with available data (including chemical probing data, C154), they lack direct experimental validation of the proposed mechanism. The model is plausible but requires additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The results support a model where Prp3 plays an important role in handing over U6 snRNA from Prp24 to U4 snRNP during U4/U6 di-snRNP reassembly after splicing, potentially aided by Prp3 stabilizing the emerging U4/U6 stem II and cooperative binding with Snu13 and Prp31.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C158 are speculative proposals about the reassembly mechanism that lack direct experimental validation. While claim C159 summarizes the overall conclusion, the specific mechanistic steps proposed are hypotheses based on structural comparison and cooperative binding data rather than direct demonstration of the reassembly process. The model is reasonable but requires additional experimental validation to be considered fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The composite double-stranded/single-stranded RNA-binding region of Prp3 assembles cooperatively with Snu13 and Prp31 on U4/U6 di-snRNAs and inhibits Brr2-mediated U4/U6 unwinding in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the cooperative binding data (Figure 2C) and unwinding assays (Figure 2A-B) described in detail in other result groups. The data clearly demonstrate both cooperative assembly and inhibition of unwinding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "RNP-disrupting mutations in Prp3 lead to U4/U6\u2022U5 tri-snRNP assembly defects and splicing defects in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the in vivo data showing altered snRNP distributions (Figures 5C-E) and splicing defects (Figure 5B) in strains expressing mutant Prp3 variants, as described in detail in other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Prp3 acts as a bridge between U4/U6 and U5 in the tri-snRNP and may be involved in U4/U6 reassembly after splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is well-supported by the structural, biochemical, and in vivo data demonstrating Prp3's role in tri-snRNP stability. Claim C12 is a reasonable hypothesis based on structural comparison with Prp24-U6 complex, though it requires additional experimental validation as discussed in other result groups.",
+    "result_type": "MAJOR"
+  }
+]

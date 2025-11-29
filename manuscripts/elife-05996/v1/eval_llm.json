@@ -1,0 +1,432 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "A genome-wide genetic screen in Drosophila identified 360 genes that potentially interact with Notch to influence proliferation, with 206 having human orthologs. GO analysis revealed enrichment in 42 categories, primarily in morphogenesis/development, cell cycle, and transcription, with most genes not previously linked to Notch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe the screen methodology, results, and analysis. The screen design is appropriate, the number of genes identified is explicitly stated, and GO enrichment analysis is properly conducted with statistical correction (Benjamini-Hochberg). The network analysis (C7) provides evidence that most identified genes are novel Notch interactors. However, the screen is acknowledged to be non-saturating (~50% genome coverage).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The Exelixis line d10338 (predicted to overexpress Src42A) and the constitutively active Src42ACA allele both synergize with activated Notch to produce hyperplastic eye phenotypes with tissue outgrowths, while Src alone produces smaller eyes. Expression of d10338 upregulates both Src42A mRNA and phosphorylated Src protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 establish the Notch-Src synergy in the eye. The phenotypes are well-documented with images (Figure 2A-F), the prediction that d10338 affects Src42A is validated by qPCR and phospho-Src immunostaining (C14-C15), and the constitutively active allele reproduces the phenotype (C12), providing strong genetic evidence. The contrasting phenotypes of Src alone vs. N+Src support true synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "In wing discs, coexpression of Nact and Src42ACA produces hyperplastic, disorganized 'crumpled ball' phenotypes and larval lethality, while Src alone causes disorganization without overgrowth and Nact alone causes organized overgrowth. Both Drosophila Src family members (Src42A and Src64B) show similar synergy with Notch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 extend the synergy to wing discs and demonstrate redundancy between Src family members. The phenotypes are clearly documented (Figure 2I-K, Figure 2G and supplement), and the observation that both Src42A and Src64B produce similar effects (C22) strengthens the conclusion. The distinct phenotypes of each component alone vs. together support genuine synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "N/Src synergy activates JNK signaling (measured by puc-LacZ reporter, MMP1, and cleaved caspase-3), which is rescuable by dominant-negative JNK (BskDN). Unlike N/Mef2 which activates JNK via TNF/egr, N/Src downregulates egr and wgn, indicating a TNF-independent mechanism of JNK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 establish JNK as a key downstream effector. Multiple independent readouts (puc-LacZ reporter, MMP1, cleaved caspase-3) all show synergistic activation (Figures 2M-O, 3A,G), and BskDN rescue (C28, Figure 3E,K) provides strong evidence for JNK dependence. The mechanistic distinction from N/Mef2 (C29-C30) is supported by qPCR data (Figure 3M). A control for Gal4 titration was performed (Figure 3 supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Using dppGal4 driver, N/Src induces MMP1 and cleaved caspase-3 in a BskDN-rescuable manner, with evidence of both cell-autonomous and non-cell-autonomous effects. Src64B shows similar activation with apparently higher MMP1 and lower apoptosis than Src42ACA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 validate findings with an alternative driver and provide spatial resolution. The use of GFP marking (C33-C34) allows assessment of cell autonomy, though the authors appropriately note uncertainty about dying cells losing GFP expression. The comparison between Src64B and Src42ACA (C36) is observational but appropriately qualified, noting that Src64B is wild-type while Src42ACA is constitutively active.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Notch and Src act together to induce JNK signaling with downstream consequences including MMP1 activation and apoptosis induction, but this JNK activation differs subtly from that induced by Notch and Mef2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are summary conclusions well-supported by the preceding experimental data (C23-C36). The distinction from N/Mef2 is supported by multiple lines of evidence including different TNF dependence (C29-C30), different apoptosis levels (C27), and later shown differential gene regulation (C75-C78, C100-C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Src alone produces weaker versions of N/Src phenotypes, which is explained by synergy between exogenous Src and endogenous Notch. This is supported by genetic experiments showing that reducing endogenous Notch (N55e11/+ or Notch RNAi) rescues Src-alone lethality and phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 address an important control issue. The hypothesis (C41) that Src-alone phenotypes result from endogenous Notch is reasonable given known Notch expression (C40). The genetic rescue experiments (C43-C45, Figure 3 supplement 2) provide strong support, though the authors appropriately note the caveat that rescue could involve effects on the Gal4 driver itself. The inability to test with alternative drivers due to lethality is a limitation but does not invalidate the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "N/Src synergy causes complete loss of G1 phase in wing disc cells (0% vs. 23-25% in controls), while Src alone causes partial G1 loss (4%). This effect is JNK-dependent as BskDN restores G1 phase (19%). Both Src42A alleles and N/Mef2 show similar G1 bypass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe cell cycle analysis by DNA content/FACS. The complete loss of G1 phase is striking and well-documented (Figure 5A), with appropriate controls and rescue experiments. The observation is validated with both vgGal4 and dppGal4 drivers (C51). The comparison with N/Mef2 (C50) suggests this is a common feature of Notch-JNK synergies. The methodology (FACS of Hoechst-stained dissociated cells) is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "N/Src disrupts the Zone of Non-proliferating Cells (ZNC) in wing discs, causing reduced ZNC with increased EdU incorporation in the D-V boundary and expanded proliferation in the dorsal compartment, contrasting with Nact alone which expands the ZNC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 use EdU incorporation to assess cell cycle entry in specific wing disc regions. The results (Figure 5B-E) clearly show that N/Src has opposite effects on the ZNC compared to Notch alone, supporting the conclusion that Src modulates Notch activity. The use of the weaker d10338 allele to better visualize disc organization is methodologically sound. The findings are consistent with the G1 bypass data (C46-C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "N/Src synergy bypasses G1 phase likely via downregulation of the CDK inhibitor dacapo (dap). Both qPCR and dap-LacZ reporter assays show that N/Src suppresses both Notch-induced and endogenous dap expression, with N/Mef2 showing similar but weaker effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 propose a mechanism for G1 bypass. The role of dap in G1 arrest is well-established (C55, cited literature). Both qPCR (C56-C57, Figure 5F) and reporter assays (C58-C60, Figure 5G-J) consistently show dap downregulation. The conclusion (C61) is appropriately qualified as 'likely' since this is correlative rather than direct mechanistic evidence. Functional validation (e.g., testing if dap overexpression rescues G1 bypass) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "N/Src synergy activates JAK/STAT signaling through JNK-dependent upregulation of unpaired (upd) family ligands. All three upd genes are strongly upregulated by N/Src in a manner suppressible by BskDN, with N/Mef2 showing much weaker activation. Both upd-LacZ and 10XSTATGFP reporters confirm strong synergistic JAK/STAT activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 establish JAK/STAT as a downstream target. Multiple lines of evidence converge: qPCR of all three upd ligands (C63, Figure 6A), upd-LacZ reporter (C66, Figure 6B-E), and 10XSTATGFP reporter (C67-C68, Figure 6G-J). The JNK dependence is demonstrated by BskDN rescue (C64, C69). The comparison with N/Mef2 (C65, C102) shows quantitative differences (>10-fold) that may be functionally significant. The use of multiple independent readouts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq identified 187 synergistic transcriptional targets of N/Src (87 downregulated, 100 upregulated), with 130 being JNK-dependent (reversed by BskDN) and 120 having human orthologs. qPCR validation of 44 genes identified 4 false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe transcriptome analysis. The definition of 'synergistic targets' (adjusted p<0.05 for N/Src vs. each control) is appropriate and conservative. The validation rate (40/44 = 91%) is good. The authors appropriately acknowledge that some known targets (MMP1, upd genes, puc, dap) were not detected, explaining potential technical reasons. The high proportion of JNK-dependent targets (130/187 = 70%) is consistent with other findings. However, the RNA-seq data quality metrics and replicate information are not fully described in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "N/Src differentially regulates E(spl) complex genes: only E(spl)m\u03b3 is synergistically upregulated, while five other members (m8, m3, m7, m\u03b2, m\u03b4) are suppressed by Src addition. BskDN reverses both effects. N/Mef2 suppresses all E(spl) genes. The E(spl)m\u03b3-LacZ reporter does not recapitulate the qPCR results, suggesting regulation via a different enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 reveal complex, gene-specific regulation within the E(spl) complex. The qPCR data (C75-C78, Figure 7A) clearly show differential regulation, with appropriate BskDN controls. The discrepancy between qPCR and reporter assay (C79-C82) is honestly reported and leads to a reasonable hypothesis about alternative regulatory regions (C82). This differential regulation is a key finding distinguishing N/Src from N/Mef2 (C78) and supporting the conclusion that Src modulates Notch target specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "N/Src suppresses cut expression: ectopic cut induced by Nact alone is absent in N/Src discs, and even endogenous cut disappears in both N/Src and Src-alone discs. However, N/Src still activates the NRE-GFP reporter, indicating Su(H) binding is maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 show another example of Notch target suppression by Src. The immunostaining data (Figure 7B-D) clearly demonstrate loss of both ectopic and endogenous cut. The maintenance of NRE-GFP activation (C86, Figure 7F) is important as it suggests the suppression mechanism doesn't involve loss of Su(H) binding, leading to the speculation about additional modulatory factors (C113). This supports the broader conclusion about Src modulating Notch target specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "N/Src synergy affects a diverse set of genes largely in a JNK-dependent manner, including known Notch targets which are differentially regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a summary conclusion well-supported by the transcriptional analysis data (C71-C86). The diversity of targets, JNK dependence (~70% of targets), and differential regulation of Notch targets (E(spl) complex, cut) are all well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The genetic circuitry influencing Notch signaling outcomes is complex, with N/Src accessing and interpreting JNK signals distinctly from N/Mef2. The screen is non-saturating (~53% genome coverage), suggesting the true number of Notch-interacting genes may be double the 360 identified. Cell cycle genes show >2-fold enrichment, with mitosis genes particularly represented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 provide context and interpretation. The complexity of Notch circuitry (C88) is supported by the screen results. The distinction between N/Src and N/Mef2 (C89) is well-documented throughout. The acknowledgment of screen limitations (C90-C91) is appropriate, though the estimate of 'at least double' (C91) is speculative. The enrichment of cell cycle genes (C92-C93) is supported by GO analysis (C3-C4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "JNK is the major target of N/Src synergy (based on BskDN rescue of phenotypes and ~70% of transcriptional changes). N/Src and N/Mef2 differ in multiple ways: TNF dependence (egr-dependent vs. independent), apoptosis levels (high vs. low), E(spl)m\u03b3 regulation (up vs. down), and JAK/STAT activation magnitude (>10-fold difference). This suggests multiple routes to JNK activation with different downstream outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 synthesize key findings comparing N/Src and N/Mef2. The conclusion that JNK is the major target (C98) is well-supported by rescue experiments and transcriptional data. The multiple distinguishing features (C99-C102) are all experimentally documented. The model of differential JNK access (C103) is a reasonable interpretation, though the molecular mechanisms remain unclear. This comparative analysis is a strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The Notch/JNK axis may regulate both proliferation and cell movement, potentially through actin polymerization. Previous studies link Src-JNK to actin, and N/Mef2 showed increased actin. Loss of scribble also activates JNK, but with Notch causes overgrowth instead of death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C107 are largely speculative, drawing on literature (C105-C107) and previous N/Mef2 findings (C106). While the speculation is reasonable, there is no direct experimental evidence in this study linking N/Src to actin or cell movement. The connection to scribble (C107) is interesting but not experimentally explored here. These are reasonable hypotheses for future work but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "N/Src modulates Notch activity to promote proliferation over differentiation: while Notch alone expands the ZNC, N/Src causes ZNC loss and expanded proliferation. Differential regulation of E(spl) genes and loss of cut support this modulation. NRE-GFP activation suggests Su(H) binding is maintained, implying additional modulatory factors are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 integrate multiple observations into a coherent model. The ZNC phenotypes (C108-C109, supported by C52-C54) clearly show opposite effects. The loss of cut (C110, supported by C83-C85) and differential E(spl) regulation (C111, supported by C75-C78) provide molecular evidence. The NRE-GFP result (C112-C113) is important for mechanistic understanding, though the speculation about additional factors (C113) remains to be tested. This is a well-supported interpretive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Complete G1 bypass and hyperplasia are striking N/Src phenotypes, likely mediated by dap downregulation. Unlike early embryos where G1 loss prevents compartment growth, N/Src discs show hyperplasia, suggesting compensation by longer S phase (observed as increased S phase percentage). This resembles Ras/Myc overexpression where other phases compensate for shortened G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C123 discuss the cell cycle phenotype in developmental context. The G1 bypass and hyperplasia are well-documented (C114, supported by C46-C54). The dap mechanism is supported but correlative (C115, supported by C55-C61). The comparison to early embryos (C120-C121) highlights an important difference. The evidence for S phase compensation (C123) is present in the FACS data (Figure 5A shows increased S phase). The comparison to Ras/Myc (C122) provides useful context from literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The N/Src cell cycle profile (absent G1, high S phase) resembles mammalian embryonic stem cells (ESCs), which also have abbreviated G1 and longer S phase associated with pluripotency maintenance. This raises the possibility that N/Src synergy may interfere with cell fate determination, conferring pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 draw an interesting parallel to ESCs. The similarity in cell cycle profile (C124) is valid, and the ESC literature on pluripotency (C125) is appropriately cited. However, the speculation about N/Src conferring pluripotency (C126) is not experimentally tested. There is no direct evidence for pluripotency markers, differentiation defects beyond loss of cut, or stem cell characteristics. This is an interesting hypothesis but remains speculative without additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "A recent study found that Src42A and Src64B in Drosophila intestinal stem cells (ISCs) stimulate expansion of Notch-positive transit-amplifying cells. The current findings suggest Src may interact with Notch in this population to induce proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 connect to recent ISC literature (C127, Kohlmaier et al., 2014). The suggestion that Src-Notch interaction explains the ISC phenotype (C128) is reasonable speculation but not experimentally tested in either study. This represents an interesting hypothesis for future work but is not a demonstrated result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Previous studies show Src acts through JNK to induce invasive phenotypes including MMP1 activation. The current work suggests that adding Notch promotes hyperplastic growth while retaining or enhancing Src-driven invasive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 integrate current findings with literature. The Src-JNK-invasion connection (C129) is well-established in cited literature. The conclusion that Notch adds hyperplastic growth to Src's invasive properties (C130) is supported by the observed phenotypes: MMP1 activation (invasiveness marker) plus overgrowth plus disorganization. However, actual invasion/migration was not directly measured, so this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Loss of Csk (Src antagonist) activates JNK and JAK/STAT signaling with morphological disorganization, potentially through endogenous Src-Notch interaction. Both Src and Notch are widely expressed but kept in check by Csk. Although Src and Notch are often elevated in cancers, activating mutations are rare. Synergy between low levels of Notch and Src could explain oncogenic effects, and Csk inactivation could trigger devastating Notch/Src responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C137 discuss implications for Csk and cancer. The Csk phenotypes (C131) are from literature. The hypothesis that these result from endogenous Notch-Src interaction (C132) is reasonable but not tested. The expression patterns (C133-C134) and cancer observations (C135) are well-established. However, the explanations for cancer involvement (C136-C137) are speculative. While plausible, there is no direct evidence that low-level Notch-Src synergy occurs in cancers or that Csk mutations cause problems via this mechanism. These are reasonable hypotheses but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Among human orthologs of N/Src targets, genes involved in metabolism and stress response are overrepresented, suggesting N/Src cells may have increased metabolic rate and heightened stress protection, potentially contributing to oncogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C139 describe GO analysis of human orthologs. While the overrepresentation of metabolism and stress response genes (C138) may be valid, the specific analysis is not shown in the provided claims or figures. The speculation about increased metabolism and stress protection (C139) is reasonable but not experimentally validated. Actual metabolic measurements or stress resistance assays would be needed to support these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Context determines whether Notch acts as oncogene or tumor suppressor, as shown by a study where Notch suppressed v-Src transformation in quail cells. The N/Mef2 and N/Src synergies both activate JNK but show different downstream phenotypes, suggesting it may be possible to identify refined signatures for different Notch/Src/JNK-related cancers. Context-dependent gene interactions, rather than single mutations, more often cause or modulate cancerous growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 provide broader context and implications. The context-dependence of Notch (C141) is well-established in literature, with the quail study (C140) providing an example. The importance of context including other genes (C142) is supported by the current findings. The suggestion about cancer signatures (C143) is reasonable speculation based on the demonstrated differences between N/Src and N/Mef2. The general principle about gene interactions vs. single mutations (C144) is widely accepted in cancer biology. These are appropriate interpretive conclusions.",
+    "result_type": "MINOR"
+  }
+]

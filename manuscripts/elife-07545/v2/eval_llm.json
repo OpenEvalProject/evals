@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Proteasome activity exhibits substrate inhibition at high concentrations and non-linear changes in reaction velocity over time. This is observed for both purified mouse 20S proteasomes and human T2 cell protein homogenates, and is not due to temperature-dependent proteasome degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide direct experimental evidence from multiple systems (purified proteasomes and cell homogenates) showing substrate inhibition and time-dependent velocity changes. Control experiments (C30) rule out temperature artifacts. The data are shown in multiple figures and represent reproducible observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cleavage site usage in polypeptide substrates varies over time, with changes evident at early time points before significant substrate depletion. This variation cannot be explained by substrate depletion, product re-entry, or further cleavage of products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate time-dependent changes in cleavage site usage with appropriate controls. The timing analysis (C33-C34) shows changes occur before significant product accumulation or substrate depletion, ruling out alternative explanations (C35). Data are shown in Figure 1C,D and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Classical enzyme kinetic models including Michaelis-Menten, substrate inhibition, and positive feedback models fail to adequately describe proteasome kinetics. Transport models based on free diffusion also cannot capture the observed data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 systematically test and reject simpler models through model fitting and comparison. The failures are demonstrated in multiple supplementary figures showing poor fits to experimental data. This provides strong justification for developing more complex models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "LLVY peptide enhances proteasome activity through a mechanism requiring peptide-bond hydrolysis rather than slow binding to non-catalytic modifier sites. The enhancement is abolished when the gate is opened by Rpt peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide experimental evidence from enhancement assays (C40), pre-incubation experiments (C41), and Rpt peptide competition experiments (C43). The data support a specific mechanism involving hydrolysis-dependent gate opening rather than simple allosteric activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Bayesian model selection identifies a compartmentalized model with an enhancing regulatory site inside the proteasome chambers and an inhibiting regulatory site outside the proteasome as best representing the experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe rigorous model selection using ABC-SMC methodology shown in Figure 4B. The winning model is identified through systematic pairwise comparisons and can simultaneously fit substrate inhibition and time-dependent velocity changes. The location predictions are supported by experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The calibrated model qualitatively reproduces published experimental results from Kisselev et al. (2002) including time courses and dose-response curves for substrate hydrolysis and LLVY peptide effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 demonstrate model validation against independent published data not used in model development. The qualitative agreement (Figure 4C,D) provides external validation, though quantitative differences are appropriately attributed to experimental differences (species, substrates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model extended to polypeptide substrates can explain altered cleavage site usage over time through substrate-dependent transport properties, reproducing all observed cleavage site behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 show successful model extension from short peptides to polypeptides. The framework captures diverse cleavage behaviors (Figure 3\u2014figure supplement 2B-E) by incorporating substrate-specific transport parameters, providing mechanistic explanation for experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Human s- and i-proteasomes show time-dependent degradation dynamics similar to mouse proteasomes, with changes in cleavage site usage occurring at early time points and not due to proteasome instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 establish that the dynamic behavior is conserved across species and proteasome isoforms. Control experiments (C53) rule out artifacts, and timing analysis (C54) confirms early changes consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "s- and i-proteasomes differ in active site parameters for Suc-LLVY-MCA and Z-LLE-MCA substrates, but not for Bz-VGR-MCA. i-proteasomes show higher affinity and hydrolysis rate for Suc-LLVY-MCA with altered cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C60-C61 report parameter differences inferred from posterior distributions (Figure 5A). The substrate-specific differences are consistent with known structural variations in catalytic subunits and supported by cited structural studies. The lack of difference for Bz-VGR-MCA agrees with structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "s- and i-proteasomes differ in transport-related parameters for all three substrates, including gate affinity, influx/efflux rates, and affinity to the enhancing regulatory site. The maximal chamber capacity is conserved as expected from structural considerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 systematically characterize transport parameter differences from posterior distributions (Figure 5B). The substrate-specific patterns are complex but internally consistent. The conservation of chamber capacity (C67) provides an important validation of the model's physical realism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C84",
+      "C85"
+    ],
+    "result": "Peptide transport is the major rate-limiting step for proteasome degradation of short fluorogenic substrates, with this limitation conserved across mouse and human s- and i-proteasomes. For Z-LLE-MCA, hydrolysis efficiency is also limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C84-C85 are supported by sensitivity analysis (Figure 5C) and model selection that rejects models without transport. The substrate-specific differences (C70) and conservation across proteasomes (C85) strengthen the conclusion. Model selection provides strong statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Differences in kinetic parameters between s- and i-proteasomes result in different chamber-filling kinetics. In silico predictions about Rpt peptide effects on substrate hydrolysis are verified experimentally, validating that transport is rate-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 demonstrate model validation through prediction and experimental verification (Figure 5D, Figure 6). The successful prediction of non-trivial Rpt peptide effects provides strong support for the transport-limited mechanism and model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The proteasome cavity progressively fills with peptides that facilitate further entry until near-maximal capacity. Model estimates of chamber capacity are close to theoretical maxima, and non-catalytic modifier sites are located inside the cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by modeling results and theoretical calculations (Box 2). The agreement between model estimates and theoretical maxima (C81) provides validation. The location of modifier sites (C82) is inferred from model selection and consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Substrate transport is a key regulatory factor in proteolysis, with transport characteristics preserved across species due to structural homology. Transport efficiency variations lead to quantitative changes in degradation rates and could alter cleavage site usage in polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C86-C88 synthesize findings about transport's regulatory role. The conservation across species (C86) is supported by comparative analysis. The extension to polypeptides (C88) is demonstrated by model simulations, though this remains somewhat speculative for complex substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Differences in gate and channel features contribute to different degradation rates between s- and i-proteasomes. For Bz-VGR-MCA, active site parameters do not differ, consistent with minimal structural differences between \u03b22 and \u03b22i pockets. For Z-LLE-MCA, s-proteasomes have stronger binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 integrate modeling results with structural data from cited studies. The agreement between model predictions and crystallographic structures (C94) provides validation. The substrate-specific patterns are internally consistent and supported by independent structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "For Suc-LLVY-MCA, i-proteasomes have higher substrate-binding affinity, higher hydrolysis rate, and lower cooperativity than s-proteasomes. This is corroborated by structural studies showing \u03b25i is more prone to bind substrates, while only s-proteasomes undergo conformational changes upon substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 show strong agreement between model predictions and independent structural studies (Arciniega et al. 2014). The model correctly captures both the enhanced binding/processing (C97) and the differential cooperativity (C98) observed structurally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "i-proteasomes have higher affinity for the enhancing non-catalytic modifier site activated by all three substrates. The model predicts this site is located at the inner surface of the proteasome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are inferred from parameter analysis showing consistent differences across substrates. The location prediction (C100) is based on model selection results. While the precise location remains to be determined structurally, the prediction is testable and consistent with all available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Similar proteasome dynamics are observed in purified 20S proteasomes and protein homogenates, suggesting the model describes core features applicable to complex cellular environments. Simple Michaelis-Menten models cannot describe these dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 establish the generality of findings. The observation of similar dynamics in different experimental systems (C77) supports broader applicability (C78). The inadequacy of simple models (C79) is demonstrated by systematic model comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Proteasomal protein degradation is a key determinant of protein half-life affecting cellular processes, but the mechanisms regulating proteasome activity are incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 state established knowledge and motivation for the study. These are well-supported by the literature and provide appropriate context for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Proteasomes are central to the ubiquitin-proteasome system and degrade most cytoplasmic proteins. Proteins are typically poly-ubiquitinated before degradation, though oxidized proteins can be degraded without ubiquitination. 20S proteasomes regulate signaling molecules and form the core of 26S proteasomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 summarize established knowledge about proteasome biology, all supported by appropriate citations. These provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The 20S proteasome has a defined structure with four stacked rings forming three interconnected cavities. Antechambers actively interact with substrates, chambers can store multiple proteins, and the central chamber contains six catalytic subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe established structural knowledge about proteasomes, supported by citations. This background information is accurate and necessary for understanding the model but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Proteasomes modify their conformations and activity upon peptide-bond hydrolysis and regulatory complex binding. Non-catalytic modifier sites can activate proteasomes, but their locations remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 summarize prior knowledge about proteasome regulation, all supported by citations. The unknown location of modifier sites (C21) motivates part of this study but is itself prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Immunoproteasomes replace standard catalytic subunits upon inflammatory stimulation. Proteasome isoforms have different degradation rates but generate the same peptide pool. These differences are implicated in various pathologies and affect epitope generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide background on proteasome isoforms and their biological significance, all supported by citations. This contextualizes the importance of comparing s- and i-proteasomes but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C55",
+      "C59"
+    ],
+    "result": "Suc-LLVY-MCA is mainly hydrolyzed by \u03b25/\u03b25i subunits and Z-LLE-MCA by \u03b21/\u03b21i active sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C59 state substrate specificities supported by citations. This is established knowledge used to interpret the results but not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The model helps understand how 20S proteasomes catalyze protein degradation in cells and is applicable to 19S or PA28 single-capped proteasomes where one gate remains unbound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 discuss the broader applicability of the model. While C76 makes a reasonable inference about capped proteasomes based on structural knowledge, this remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Decreased antigenic peptide production by proteasomes can reduce MHC class I presentation below the threshold for CD8+ T cell activation. PA28 binding affects cleavage site usage and alters the MHC class I epitope repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 discuss immunological implications supported by citations. C90 is predicted by the model and supported by literature, but represents application of the model rather than direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The 20S proteasome is dynamic with time-varying activity due to interactions between substrates, products, and regulatory sites. The rate-limiting step is substrate transport, which varies between s- and i-proteasomes affecting degradation rate and cleavage site usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 summarize the main findings stated in the abstract. These are supported by the detailed results but are redundant with more specific claims already grouped. They represent high-level conclusions rather than distinct results.",
+    "result_type": "MAJOR"
+  }
+]

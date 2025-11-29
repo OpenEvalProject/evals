@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Small RNA sequencing revealed distinct compositions between cellular and exosomal RNA libraries. Cellular libraries showed >85% genome mapping with ~70% miRNA enrichment and expected size distribution (21-23 nt), while exosomal libraries showed only 50-71% genome mapping with 5-18% miRNA reads and broader size distribution including many reads <22 nt. When restricted to miRNA hairpin sequences, length distributions were nearly identical between cells and exosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 provide comprehensive characterization of small RNA sequencing data with consistent quantitative measurements across multiple metrics (mapping rates, RNA class distribution, size distribution). The data are internally consistent and supported by multiple figures (Figure 1A-D and supplements). The observation that miRNA-specific mapping normalizes size distributions (C18) provides important validation of the broader exosomal size distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C66"
+    ],
+    "result": "Principal component analysis and correlation analysis demonstrate that exosomal miRNA profiles are distinct from cellular profiles and segregate by KRAS status more clearly than cellular profiles. Cellular replicates showed high correlation (r=0.95-0.96), as did cells differing only in KRAS status (r=0.92-0.96), while cell-exosome correlations were lower (r=0.64-0.81). Cellular miRNA profiles clustered together regardless of KRAS status, but exosomal profiles clearly segregated by KRAS status, indicating that mutant KRAS alters miRNA sorting to exosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 and C66 are well-supported by quantitative correlation data and principal component analysis shown in Figure 2 and supplements. The correlation coefficients are precisely reported and the PCA clearly shows the described clustering patterns. The inference that KRAS status affects miRNA sorting (C25) is a reasonable conclusion from the differential clustering patterns, though the mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Differential expression analysis identified 25 miRNAs consistently upregulated in cells and 29 miRNAs consistently upregulated in exosomes across all three cell lines. The diversity of miRNAs was substantially greater in mutant KRAS DKO-1 exosomes (94 unique miRNAs) compared to wild-type KRAS DKs-8 or parental DLD-1 exosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by the data presented in Figure 3A,B and Tables 1 and 2, which provide comprehensive lists of differentially expressed miRNAs. The quantitative differences in miRNA diversity between mutant and wild-type exosomes are clearly documented. qRT-PCR validation (Figure 3C) provides independent confirmation of selected miRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C32",
+      "C5"
+    ],
+    "result": "miR-100-5p was downregulated in mutant KRAS DKO-1 and parental DLD-1 cells compared to wild-type KRAS DKs-8 cells, but was enriched in exosomes derived from mutant KRAS cells (>8-fold in DKO-1 and >3-fold in DLD-1 exosomes), suggesting that the decrease in cellular miR-100 is due to secretion in exosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C32, and C5 are supported by RNA sequencing data (Table 1, Supplementary file 2) and qRT-PCR validation (Figure 3C). The inverse relationship between cellular depletion and exosomal enrichment of miR-100 in mutant KRAS cells provides strong evidence for selective export. The fold-change values are quantitatively reported and validated by independent methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C4"
+    ],
+    "result": "miR-10b was preferentially secreted in exosomes from cells harboring wild-type KRAS (>3-fold enrichment in DKs-8 and >2-fold in DLD-1 exosomes) but retained in mutant KRAS DKO-1 cells (~3-fold cell enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C4 are supported by RNA sequencing data and qRT-PCR validation (Figure 3C). The differential distribution of miR-10b based on KRAS status is clearly demonstrated with quantitative fold-change values. This represents a complementary pattern to miR-100, strengthening the conclusion of KRAS-dependent miRNA sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "miR-320 family members (miR-320b, -c, -d, and -e) were abundant in both mutant and wild-type KRAS exosomes but underrepresented in matched cells, indicating KRAS-independent export. miR-320a and miR-320b were most abundant, but miR-320d showed the largest enrichment (>241-fold in DKs-8 and >229-fold in DKO-1) despite being ~4-fold less abundant than miR-320b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by RNA sequencing data (Table 2, Supplementary file 1A) and qRT-PCR validation (Figure 3C). The quantitative fold-change values are precisely reported. The observation that miR-320d shows highest enrichment despite lower abundance is an interesting finding that suggests differential sorting mechanisms beyond simple abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Analysis of 3' modifications revealed that cellular miRNAs were mostly full-length with slight enrichment of A-tailed miRNAs regardless of KRAS status. In exosomes, wild-type KRAS cells showed slight enrichment for C residues added to 3' ends, while mutant KRAS exosomes showed increased 3' trimming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by data in Figure 4 and Figure 4\u2014figure supplements 1-2. The analysis of 3' modifications is comprehensive and shows KRAS-dependent differences in post-transcriptional modifications. However, the functional significance of these modifications and whether they constitute sorting signals remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C6",
+      "C51",
+      "C62",
+      "C103"
+    ],
+    "result": "Treatment with the neutral sphingomyelinase inhibitor GW4869 caused ~3-fold increase in intracellular miR-100 and ~2.5-fold increase in miR-320 levels only in mutant KRAS DKO-1 cells, but had no significant effect on these miRNAs in wild-type DKs-8 cells. miR-10b levels were unchanged in both cell types. This indicates that impaired ceramide synthesis alters cellular accumulation of miRNAs dependent on mutant KRAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C6, C62, and C103 are supported by in situ hybridization (Figure 5A,B) and qRT-PCR data (Figure 5C). The differential response to GW4869 treatment based on KRAS status is clearly demonstrated with quantitative measurements and statistical significance (p\u22640.01). The selective effect on miR-100 and miR-320 but not miR-10b suggests specificity in the ceramide-dependent pathway. However, the claim that this demonstrates KRAS-dependent trafficking should be tempered as the mechanism linking KRAS to ceramide-dependent export is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C7",
+      "C104"
+    ],
+    "result": "Transwell co-culture experiments demonstrated functional transfer of miR-100 from mutant KRAS donor cells to wild-type recipient cells. Luciferase reporters with perfect miR-100 sites or mTOR 3'UTR (containing endogenous miR-100 sites) showed significant repression in the presence of DKO-1 donor cells but not DKs-8 donor cells. Repression was reversed by antagomir treatment of donor cells and by mutation of miR-100 recognition elements. Recipient cells showed ~34% increase in miR-100 levels when co-cultured with donor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59, C7, and C104 are supported by comprehensive luciferase reporter assays (Figure 6A-D) with appropriate controls including scrambled sequences, wild-type donor cells, antagomir inhibition, and site-directed mutagenesis. The qRT-PCR data (Figure 6E, supplement 2) confirms miRNA transfer. Statistical significance is reported (p\u22640.05). The experiments include multiple independent validations of the same phenomenon, strengthening the conclusion. However, the magnitude of miR-100 increase (34%) is modest, and whether this is sufficient for biological effects in vivo remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "In Transwell co-culture experiments, a greater than 2-fold repression of miR-222 luciferase reporter was observed in recipient cells, providing additional evidence for miRNA transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by data in Figure 6\u2014figure supplement 3. This control experiment is important because miR-222 is not detectable in DKs-8 recipient cells, so any repression must be due to transfer rather than changes in endogenous miRNA levels. This strengthens the conclusion that functional miRNA transfer occurs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C102"
+    ],
+    "result": "Oncogenic KRAS selectively alters the miRNA profile in exosomes, and KRAS status prominently affects the miRNA profile in cells and their corresponding exosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C102 represent the main conclusions of the study and are well-supported by the comprehensive RNA sequencing analysis, differential expression analysis, and functional validation experiments described in the grouped results above. The evidence includes PCA showing KRAS-dependent clustering, differential miRNA expression patterns, and functional transfer experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Extracellular miRNAs can function in target cells, representing a potential new mode of action for mutant KRAS in CRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by the Transwell co-culture experiments demonstrating functional miRNA transfer and target repression (C53-C60). However, the broader implications for CRC biology and whether this represents a significant mode of action in vivo remain to be determined. The in vitro demonstration is solid, but extrapolation to in vivo significance requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C67",
+      "C76",
+      "C80",
+      "C84",
+      "C96"
+    ],
+    "result": "The authors speculate that distinct miRNA profiles between cells and exosomes may be functionally coupled to mitogenic signaling, that cells may selectively export miRNAs to maintain specific growth states, that miRNA stability may affect retention vs. secretion, that cancer cells may discard tumor-suppressive miRNAs to increase oncogenic potential, that augmenting miR-100 by EV uptake could promote EMT, and that exosomal miRNA transfer might select for cells with tumor driver mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C67, C76, C80, C84, and C96 are explicitly speculative interpretations of the observed data. While these hypotheses are reasonable based on the findings and cited literature, they are not directly tested in this study. These represent interesting directions for future research but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C24"
+    ],
+    "result": "KRAS status-specific patterns of secreted miRNAs support the idea of using exosomes as potential biomarkers in CRC, and exosomal miRNA profiles are better predictors of KRAS status than cellular miRNA profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C24 are supported by the PCA analysis showing clear segregation of exosomal samples by KRAS status (Figure 2). However, this is a proof-of-concept finding in cell lines. Clinical validation in patient samples would be required to establish actual biomarker utility. The claim is appropriately framed as supporting the \"idea\" rather than demonstrating clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The GGAG sequence motif was not found in other miRNAs targeted to exosomes beyond miR-320 family. The lack of any apparent global motif, coupled with differential export of untagged miRNAs, suggests multiple strategies for loading miRNAs into EVs and that not all EVs and exosomes contain identical cargo, implying heterogeneous vesicle populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C77-C79 are supported by the MEME analysis (Figure 4\u2014figure supplement 3) and the overall pattern of differential miRNA export. The negative finding (no universal motif) is appropriately interpreted as evidence for multiple sorting mechanisms. The inference about heterogeneous vesicle populations is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C100",
+      "C101",
+      "C118"
+    ],
+    "result": "Prior work has established that mutant KRAS CRC cells release protein-laden exosomes that can alter the tumor microenvironment, induce cell growth and migration when transferred to wild-type cells, contain dramatically different protein cargo compared to wild-type exosomes, and that protein cargo transfer by exosomes is associated with tumor aggressiveness and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C100, C101, and C118 accurately cite prior published work including the authors' own previous studies. These claims provide appropriate context for the current study and are properly attributed to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C46",
+      "C47",
+      "C52",
+      "C65",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C81",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The manuscript cites extensive prior literature on miRNA biology, exosome biology, KRAS signaling, and cancer biology to provide context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C47, C52, C65, C68-C75, C81-C97, and C105-C117 represent citations to prior published work that provide context and support for the current study. These claims appear to accurately represent the cited literature and provide appropriate background. Spot-checking key citations (e.g., ceramide-dependent exosome secretion, miR-100 functions) shows accurate attribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Exosomes were purified using differential centrifugation and consisted of vesicles ranging in size from 40 to 130 nm. These preparations exclude larger microvesicles but contain smaller lipoproteins and probably other small RNA-protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98 and C99 describe the methodology used for exosome isolation. The size range is consistent with standard exosome definitions and is supported by prior characterization (cited references). The acknowledgment that preparations may contain other small complexes (C99) is an important caveat that adds transparency about potential limitations.",
+    "result_type": "MINOR"
+  }
+]

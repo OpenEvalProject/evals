@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Optogenetic activation of ChR2 in primary sensory afferents (Prph-ChR2 mice) produces robust nocifensive behaviors and action potentials in multiple types of nociceptive neurons. All Prph-ChR2 mice (5/5) showed rapid withdrawal responses (<30 ms) to blue light, while wildtype controls were unresponsive. Electrophysiological recordings from 49 neurons identified 26 light-responsive cells, predominantly C-fiber nociceptors (25/26), with varying modality-specific responses. Peak instantaneous firing frequencies were lower for light (8.6 Hz) compared to mechanical stimulation (33.9 Hz), but similar to heat-evoked responses in polymodal nociceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C44-C53 provide converging behavioral and electrophysiological evidence that ChR2 activation in sensory neurons produces nocifensive responses. The data include appropriate controls (wildtype mice), quantitative measurements (response latencies, firing frequencies), and characterization of responding fiber types. The comparison to natural stimuli (C52-C53) provides important context for interpreting the optogenetic responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Optogenetic activation of ChR2 expressed specifically in keratinocytes (KRT-ChR2 mice) is sufficient to generate nocifensive behaviors. All KRT-ChR2 mice responded to blue light stimulation (at least 1/10 trials), but with longer latencies (mean 15.75 \u00b1 2.26 s) compared to Prph-ChR2 mice (<30 ms). Control experiments using thermistor measurements on human skin showed minimal temperature increase (27.5\u00b0C to 30.5\u00b0C over 30 s), ruling out laser heating as the cause of behavioral responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C59-C66 demonstrate that keratinocyte activation alone can produce pain-related behaviors. The inclusion of temperature control measurements (C63-C64) addresses a critical alternative explanation. The longer latencies compared to direct neuronal activation (C60-C61) are consistent with an indirect signaling mechanism. However, the behavioral response rate was relatively low (28% of trials per Table 1), which could indicate variability in the keratinocyte-to-neuron signaling or limitations in the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Blue light activation of ChR2-expressing keratinocytes directly elicits action potentials in multiple types of cutaneous sensory neurons. Electrophysiological recordings from 80 cells in KRT-ChR2 mice showed that laser activation induced APs in 6/24 unmyelinated nociceptive fibers and 4/14 myelinated HTMRs. Additionally, 12/18 C-fiber nociceptors showed significant summation when laser and natural stimuli were combined (p < 0.01), while 6/18 showed no summation. No significant differences in functional properties were found between laser-responsive and unresponsive nociceptive fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C71-C78 provide direct electrophysiological evidence that keratinocyte activation can trigger neuronal firing. The data include appropriate sample sizes, statistical analysis (C76), and characterization of responding fiber types. The observation that only a subset of neurons respond (C72-C73) and that some show summation while others do not (C76-C77) suggests heterogeneity in keratinocyte-neuron communication, which is acknowledged in the manuscript. Control measurements ruling out laser heating (C74) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Laser activation of ChR2 in keratinocytes elicited action potential firing in all 21 SA1 low-threshold mechanoreceptors recorded from KRT-ChR2 mice, likely due to activation of Merkel cells which express KRT14. The SA1 response pattern to light was atypical compared to mechanical stimulation: high-frequency bursts occurred but not at stimulus onset (mechanical peak IF: 218.2 Hz; optical peak IF: 109.2 Hz). The light-evoked response was stable, repeatable, and intensity-dependent. In contrast, rapidly adapting LTMRs showed no response to laser stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C90 demonstrate that Merkel cells can activate SA1 fibers, consistent with prior work by Maksimovic et al. (C26-C27). The 100% response rate in SA1 fibers (C79) contrasts with the partial responses in nociceptors, suggesting different mechanisms or efficiency of communication. The detailed characterization of firing patterns (C84-C90) and the negative result for RA-LTMRs (C82) strengthen the specificity of the findings. The inference that Merkel cells mediate the SA1 response (C80) is reasonable given that Merkel cells express KRT14 (C81), though this remains indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Patch clamp recordings from cultured keratinocytes confirmed functional ChR2 expression. All 11 ChR2-YFP keratinocytes from KRT-ChR2 mice showed inward current in response to 1 s blue light flash (median peak current: 26.3 pA; median steady current: 16.5 pA). No light-induced currents were recorded in wildtype keratinocytes (n=4 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide direct evidence that ChR2 is functionally expressed in keratinocytes and can be activated by blue light. The inclusion of wildtype controls (C70) is appropriate. The relatively small sample size (n=11 ChR2, n=4 WT) is acceptable for this type of validation experiment. These data are essential for interpreting the in vivo and ex vivo results, confirming that keratinocytes can be optogenetically manipulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C31",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C127"
+    ],
+    "result": "Loss-of-function experiments using halorhodopsin (NpHR) expressed in keratinocytes demonstrated that yellow light stimulation reduced action potential firing in response to natural stimuli. In KRT-NpHR mice, yellow laser reduced AP firing in 12/25 C-fiber nociceptors and 7/19 myelinated nociceptors. The reduction was fiber-type dependent, with significant effects in mechanically sensitive C-fiber nociceptors (p=0.02, n=7) and SA1 LTMRs (p<0.01, n=10), but not in rapidly adapting LTMRs. Average reductions in affected fibers were 44% (C-fibers), 48% (A-HTMRs), and 44% (SA1 fibers). Patch clamp recordings from 5 KRT-NpHR keratinocytes showed hyperpolarizing responses to orange light (median -1.1 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C31, C94-C104, C127 provide complementary loss-of-function evidence supporting the role of keratinocytes in sensory signaling. The use of NpHR to hyperpolarize keratinocytes and reduce neuronal firing is conceptually sound. Statistical analysis is provided for key findings (C99-C100). However, the incomplete suppression (average 44-48% reduction rather than 100%) and the observation that some presentations showed 100% reduction while others showed less (C102-C104) suggest variability in the system. The fiber-type specificity (C99-C101) is consistent with the heterogeneity observed in gain-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors conclude that ChR2-induced stimulation of keratinocytes is sufficient to induce action potential firing in several types of sensory neurons. For some neuron subtypes, keratinocyte activation induces firing similar to natural stimuli, while for others it produces sub-threshold effects that potentiate responses to natural stimulation. The nature of keratinocyte-neuron interaction is heterogeneous across sensory neuron subtypes. Keratinocyte activation is proposed to be one contributor to natural stimuli-evoked sensory signaling and a critical component of sensory transmission, supported by direct activation of afferents and summation of firing with combined stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108, C133-C135 represent the main conclusions synthesizing the experimental findings. These conclusions are well-supported by the convergent evidence from gain-of-function (ChR2) and loss-of-function (NpHR) experiments, behavioral data, and electrophysiological recordings. The acknowledgment of heterogeneity (C108) is appropriate given the variable responses across fiber types. The claim that keratinocyte activation is 'sufficient' (C105) is supported, though the relatively low response rates in some experiments suggest this sufficiency may depend on experimental conditions or require threshold levels of activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C32",
+      "C33",
+      "C113",
+      "C141"
+    ],
+    "result": "The authors conclude that intrinsic sensory transduction mechanisms in epidermal keratinocytes can directly elicit action potential firing in both nociceptive and tactile sensory afferents, significantly expanding the role of the epidermis in sensory processing. They conclude that Merkel cells are not unique in their ability to directly generate action potentials in sensory neurons, and that keratinocytes have a central role in the onset and maintenance of abnormal transmission in inflamed or damaged skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C32-C33, C113, C141 represent high-level conclusions about the role of keratinocytes in sensory processing. These are well-supported by the experimental data showing that keratinocyte activation can trigger neuronal firing in multiple fiber types beyond SA1/Merkel cell interactions. However, the claim about 'intrinsic sensory transduction mechanisms' (C9-C10) is somewhat ambiguous\u2014the experiments demonstrate that optogenetic activation of keratinocytes can trigger neuronal responses, but do not directly demonstrate that keratinocytes possess intrinsic mechanotransduction or thermotransduction machinery. The conclusion about pathological conditions (C141) is speculative extrapolation from the acute optogenetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors infer that activation of A\u03b4 and C fiber nociceptors underlies the behavioral sensitivity in KRT-ChR2 mice, and that light stimulation of Merkel cells activates SA1 mechanoreceptors. They report that afferents responding to keratinocyte activation were either polymodal or unimodal, with over half of C-heat fibers (which express TRPV1) responding to keratinocyte activation. This suggests keratinocytes can communicate with TRPV1-expressing neurons, which transmit noxious heat and are required for inflammatory pain signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 make reasonable inferences connecting the electrophysiological findings to the behavioral observations and to known properties of sensory neurons. The inference about A\u03b4 and C fiber involvement in behavior (C111) is logical given the electrophysiological data, though direct causal evidence would require selective manipulation of these fiber types. The observation about CH fiber responses (C118) and the inference about TRPV1-expressing neurons (C120) are interesting, though the mechanism of communication remains unclear. The characterization of CH fibers (C119) relies on a citation and represents prior knowledge rather than a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C109",
+      "C110",
+      "C123",
+      "C125",
+      "C126",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors speculate that afferent-expressed ChR2 activation evokes a 'baseline' response reflecting intrinsic neuronal properties, while more naturalistic responses require collaboration with surrounding cells including keratinocytes. They propose that heterogeneity in keratinocyte-neuron interactions may result from different neuroactivator compounds released or interactions with other cell types. They speculate that the lack of LTMR activation may be due to insufficient illumination depth or insufficient ChR2 expression levels, and that differences in behavioral latencies between KRT-ChR2 and Prph-ChR2 mice may reflect time needed for neuroactivator release or heterogeneity of fiber types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55, C109-C110, C123, C125-C126, C138-C139 represent speculations about mechanisms underlying the observed phenomena. While these are reasonable hypotheses, they are not directly tested in the manuscript. The speculation about 'baseline' vs. 'naturalistic' responses (C54-C55) is interesting but lacks clear operational definitions or direct experimental support. The proposed mechanisms for heterogeneity (C109-C110) and behavioral latency differences (C138-C139) are plausible but remain untested. These represent appropriate directions for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C124"
+    ],
+    "result": "The authors report that LTMR afferents forming lanceolate endings around hair follicles were not activated by skin illumination in either Prph-ChR2 or KRT-ChR2 mice. However, they note that in ongoing studies using Advillin-cre and trkB-CreER-ChR2 mice, action potentials can be evoked in A\u03b2 and A\u03b4 LTMRs using the same light stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122 and C124 report a negative result (lack of LTMR activation) in the main experiments and a positive result in ongoing studies. The negative result (C122) is clearly stated and important for understanding the scope of keratinocyte-neuron communication. The mention of ongoing studies (C124) provides context suggesting the negative result may be due to technical limitations rather than biological impossibility, though these data are not shown and cannot be fully evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors suggest that the reduction in action potential activity with NpHR activation indicates a possible role for Cl\u207b in mediating neural-keratinocyte communication. They note that keratinocytes exhibit chloride conductance and that Cl\u207b contributes to changes in resting potential and hyperpolarization in response to mechanical stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C131 propose a role for chloride in keratinocyte signaling based on the NpHR experiments. While the NpHR data show that hyperpolarizing keratinocytes reduces neuronal firing (supporting a role for keratinocyte membrane potential), the specific role of chloride (C128) is less clear. The cited literature (C129-C131) establishes that keratinocytes have chloride conductance, but the connection between NpHR-induced chloride flux and endogenous keratinocyte signaling mechanisms remains speculative. The physiological mechanisms are explicitly acknowledged as unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors cite recent work by Pang and colleagues showing that in TRPV1 knockout mice engineered to express TRPV1 selectively in keratinocytes, capsaicin could evoke nocifensive behaviors and c-fos expression in spinal cord neurons. This was interpreted as evidence that keratinocyte activation can initiate nociceptor firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 accurately describe findings from a cited study that provides independent support for the manuscript's conclusions about keratinocyte-to-neuron signaling. This represents appropriate contextualization of the current work within the broader literature. The cited study uses a complementary approach (chemical activation of keratinocyte-expressed TRPV1) to reach similar conclusions, strengthening the overall evidence base.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors characterized 200 cutaneous afferents (86 C-fibers, 37 A\u03b4, 77 A\u03b2) from three mouse genotypes (49 Prph-ChR2, 80 KRT-ChR2, 71 KRT-NpHR). They report mechanical, heat, and cold thresholds for different fiber types, with no significant differences observed between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 provide essential characterization of the recorded neurons and establish that the transgenic manipulations did not alter basic sensory properties. The large sample size (200 neurons) and systematic characterization across genotypes strengthen confidence in the findings. The lack of differences between genotypes (C43) is an important control showing that ChR2 or NpHR expression does not fundamentally alter neuronal properties. These data provide the foundation for interpreting the optogenetic manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "KRT-ChR2 mice exhibited robust ChR2 expression in epidermal keratinocytes and hair follicles of hairy skin, and in basal and suprabasal keratinocytes of glabrous skin. ChR2 expression was absent from dermal vasculature, muscle, and DRG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe the expression pattern of ChR2 in KRT-ChR2 mice, confirming specificity to keratinocytes. This is essential validation that the optogenetic manipulations target the intended cell type. The negative results (C58) are important controls ruling out off-target expression that could confound interpretation. These data are supported by immunofluorescence images (Figure 2A, Figure 1B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors review prior literature establishing that skin produces various neuroactive substances (glutamate, ATP, ACh, epinephrine, CGRP, neurotrophic factors, cytokines) and expresses ligand-gated and voltage-gated ion channels and receptors. They note that complex autocrine and paracrine signaling between epithelial and neural tissues underlies sensory signaling, and that keratinocytes have been proposed to contribute to transduction through regulated release of neuroactive substances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 accurately summarize established literature providing context for the current study. These are appropriately cited background claims that motivate the experimental approach. The characterization of this as 'proposed' (C23) appropriately indicates that the role of keratinocytes in transduction was a hypothesis being tested rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors cite prior optogenetic studies showing that light activation of ChR2 in primary afferents produces nocifensive behaviors in rats and mice, and that ChR2 activation in Merkel cells elicits action potential trains in SA1 afferents, confirming the transducer role of Merkel cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 accurately describe prior work that established the feasibility of optogenetic approaches for studying somatosensory signaling. These citations provide important context and precedent for the current study's approach. The Maksimovic study (C26-C27) is particularly relevant as it demonstrated keratinocyte-to-neuron signaling for Merkel cells, which the current study extends to other keratinocyte types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors note that afferent responses evoked by keratinocyte stimulation were not at the same level as natural stimuli, but argue this was expected. They emphasize that physiological relevance is indicated by in vivo nocifensive behavior in KRT-ChR2 mice, though responses were much slower than in Prph-ChR2 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C136-C137 provide appropriate interpretation of the quantitative differences between optogenetic and natural stimulation. The acknowledgment that keratinocyte activation produces submaximal responses (C132) is important for accurate interpretation. The emphasis on behavioral relevance (C136) is justified, though the low response rate (28% of trials) and long latencies (C137) suggest limitations in the efficiency or naturalistic quality of the keratinocyte-mediated signaling under these experimental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors cite literature showing that disturbances in epidermal-neuronal signaling in inflamed or damaged skin result in abnormal sensory transmission underlying pain, itch, and paresthesia. They speculate that altered release of keratinocyte-expressed neuromodulators, neurotransmitters, or activity of receptors and ion channels could drive changes in transmission in a neuron subtype-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C143 extrapolate from the acute optogenetic experiments to pathological conditions. While the cited literature (C140) establishes that epidermal-neuronal signaling is disturbed in pathological conditions, the connection to the current findings is speculative. The experiments do not directly test inflammatory or injury conditions, so the relevance to pathological pain (C141-C143) remains hypothetical, albeit plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors describe their experimental methods, including animal ages and sexes, generation of transgenic mice by crossing Ai32 or Ai39 mice with peripherin-Cre or KRT14-Cre mice, IACUC approval, behavioral testing procedures, and electrophysiological recording methods including fiber classification criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 describe methodological details that are clearly stated and appropriate for the experiments conducted. The transgenic strategies (C145-C147) are standard approaches for cell-type-specific optogenetic manipulation. The ex vivo preparation (C150) is cited to prior work, indicating it is an established method. The fiber classification criteria (C151) are clearly defined. These methodological details are essential for reproducibility and interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors note that keratinocytes do not normally generate action potentials but have resting membrane potentials generated by ion channels, and that halorhodopsin is a light-activated chloride pump that generates hyperpolarization and inhibits neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 state established facts about keratinocyte electrophysiology and halorhodopsin function, appropriately cited. These provide necessary background for interpreting the NpHR experiments. The distinction between keratinocytes (which don't fire APs) and neurons is important for understanding how optogenetic manipulation of keratinocytes affects neuronal signaling indirectly.",
+    "result_type": "MINOR"
+  }
+]

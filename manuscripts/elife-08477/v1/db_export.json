@@ -1,0 +1,1371 @@
+{
+  "submission": {
+    "id": "a0ce8779-b2a7-44d2-b53a-b5f683bcad55",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:07:23.770510Z",
+    "updated_at": "2025-11-29T05:07:23.770510Z"
+  },
+  "content": [
+    {
+      "id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "submission_id": "a0ce8779-b2a7-44d2-b53a-b5f683bcad55",
+      "content_type": "manuscript",
+      "content_text": "# Central neural circuitry mediating courtship song perception in male Drosophila\n\n## Authors\n\n- Chuan Zhou<sup>1</sup> \u2020\n- Romain Franconville<sup>1</sup>\n- Alexander G Vaughan<sup>2</sup>\n- Carmen C Robinett<sup>1</sup>\n- Vivek Jayaraman<sup>1</sup>\n- Bruce S Baker<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n2. Cold Spring Harbor Laboratory New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals use acoustic signals across a variety of social behaviors, particularly courtship. In Drosophila, song is detected by antennal mechanosensory neurons and further processed by second-order aPN1/aLN(al) neurons. However, little is known about the central pathways mediating courtship hearing. In this study, we identified a male-specific pathway for courtship hearing via third-order ventrolateral protocerebrum Projection Neuron 1 (vPN1) neurons and fourth-order pC1 neurons. Genetic inactivation of vPN1 or pC1 disrupts song-induced male-chaining behavior. Calcium imaging reveals that vPN1 responds preferentially to pulse song with long inter-pulse intervals (IPIs), while pC1 responses to pulse song closely match the behavioral chaining responses at different IPIs. Moreover, genetic activation of either vPN1 or pC1 induced courtship chaining, mimicking the behavioral response to song. These results outline the aPN1-vPN1-pC1 pathway as a labeled line for the processing and transformation of courtship song in males.\n\n## Introduction\n\nSexual behaviors normally involve the exchange of species-specific social cues, including chemical, visual, and auditory information, that elicit a set of sex-specific behaviors (Dulac and Kimchi, 2007; Manoli et al., 2013). Here, we are particularly focused on auditory communication, which requires the production and perception of sound signals that are diversified between species and are utilized by both invertebrates and vertebrates to attract female mates during courtship (Murthy, 2010; Brainard and Doupe, 2013). Drosophila melanogaster males sing a multi-part, species-specific courtship song that is both critical to female receptivity and encourages courtship by nearby males. Although there has been progress in elucidating the circuitry by which these signals are perceived, processed, and integrated with other sensory cues to elicit stereotyped courtship behaviors, there are very significant gaps in our knowledge.\n\nThe neural circuits underlying sexually dimorphic behavior in Drosophila are specified by the action of the two terminal genes in the sex determination hierarchy, fruitless (fruM) and doublesex (dsx). fruM and dsx act together to specify sexual behaviors by altering the number, morphology, and physiology of a small subset of CNS (Central Nervous System) neurons (Manoli et al., 2013; Pavlou and Goodwin, 2013; Yamamoto and Koganezawa, 2013). dsx is expressed in a limited set of neurons within the CNS, as well as in subsets of non-neuronal cells throughout the body (Rideout et al., 2010; Robinett et al., 2010). In contrast, fruM is expressed only in neurons, including \u223c2% of neurons within the CNS, as well as sensory, motor, and higher-order interneurons, all of which might comprise neural circuits dedicated to sexual behaviors (Manoli et al., 2005; Stockinger et al., 2005). This has motivated the proposal that fruM+ neurons might provide a set of genetically labeled pathways that channel courtship-related sensory information through a dedicated circuit (Manoli et al., 2005; Stockinger et al., 2005). Supporting this view, a fruM-labeled pathway has been identified that links olfactory reception of a male-specific pheromone to descending neurons that drive motor output (Kurtovic et al., 2007; Ruta et al., 2010; Kohl et al., 2013). Despite tantalizing clues, it remains unknown whether Drosophila audition is mediated by such dedicated circuits.\n\nWhen courting a female, the male vibrates his wing to generate a courtship song consisting of two parts: a rhythmic pulse song with an \u223c35-ms inter-pulse interval (IPI) that strongly elicits male courtship behavior as well as female receptivity, as well as a \u223c160-Hz sine song that may play a secondary role (Shorey, 1962; Bennet-Clark and Ewing, 1967; von Philipsborn et al., 2011; Arthur et al., 2013). Drosophila species exhibit significant diversity in the IPI of pulse song, and in D. melanogaster, IPIs around \u223c35 ms are critical for enhancing the responses to courtship song of both conspecific males and females (Ewing and Bennet-Clark, 1968; Bennet-Clark, 1969; Cowling and Burnet, 1981; Yoon et al., 2013). In females, pulse song induces reduced locomotion (allowing courting males to come closer) and increases their receptivity to mating attempts (Bennet-Clark, 1969; Schilcher, 1976a, 1976b; Rybak et al., 2002; Shirangi et al., 2013). In males, pulse song elicits both increased locomotion and exploratory courtship activity directed towards nearby flies (Schilcher, 1976b; Eberl et al., 1997; Kowalski et al., 2004; Kamikouchi et al., 2009; Vaughan et al., 2014). Although males and females show very different motor output in response to song, significant sexual dimorphisms in the sensory pathway have not been identified.\n\nDrosophila receives sound stimuli by vibration of the arista, a feather-like structure protruding from the second segment of the antenna (Gopfert and Robert, 2001). Vibration of the arista activates the mechanosensory neurons of the Johnston's organ of the second antennal segment, which project to the antennal mechanosensory and motor center (AMMC) of the central brain where they connect with secondary auditory projection neurons (aPNs), local neurons (aLNs), and the giant fiber neurons (Gopfert et al., 2006; Kamikouchi et al., 2009; Yorozu et al., 2009; Effertz et al., 2011, 2012; Tootoonian et al., 2012; Lehnert et al., 2013; Pezier et al., 2014). Among a variety of aPNs, only the aPN1 cell type projecting to the wedge of the ventrolateral protocerebrum (WED) is necessary for song responses in either sex (Kamikouchi et al., 2009; Lai et al., 2012; Tootoonian et al., 2012; Vaughan et al., 2014). aPN1 is necessary for both female receptivity and the male song-induced locomotion response, and it shows a response to courtship song that is proportional to pulse rate (Vaughan et al., 2014). By identifying downstream neurons in this pathway, we hope to identify the sexually dimorphic structure of this critical pathway, as well as elucidate how song is transformed before reaching the central drivers of courtship output.\n\nOne candidate neuronal cluster for central integration of courtship song and other courtship modalities is the set of dsx+ pC1 neurons that innervate the lateral protocerebral complex (LPC), a region of dense innervation by both fruM+ and dsx+ neurons (Cachero et al., 2010; Rideout et al., 2010; Robinett et al., 2010; Yu et al., 2010). These neurons are activated by courtship stimuli in both sexes, but they drive differential behavioral outputs in each sex. Female pC1 neurons are activated by the male-specific pheromone cVA (Zhou et al., 2014), while male fruM+/dsx+ P1 neurons (a subset of the dsx+ pC1 population) are inhibited by cVA but activated by female pheromones (Kohatsu et al., 2011). Female pC1 neurons are also activated by sine and pulse songs (Zhou et al., 2014). These observations are consistent with pC1 neurons as a site for multimodal integration of courtship stimuli, but how song information is relayed from aPN1 neurons to the pC1/P1 neurons is unknown.\n\nHere, we used a large-scale intersectional screen to identify a labeled line of fru+ neurons that supports courtship hearing in male flies. This approach identified a critical fruM+ interneuron type, which we designate as ventrolateral protocerebrum Projection Neuron 1 (vPN1), whose neurites lie in close proximity to those of aPN1 in the WED area. We present several lines of evidence suggesting that vPN1 may represent the third-order auditory neurons. First, anatomical registration of aPN1 and vPN1 suggests axon/dendrite overlap in the WED. Second, genetic inactivation of vPN1 recapitulates the attenuation of male song responses observed for aPN1, while optogenetic activation of vPN1 mimicked pulse song stimuli to induce robust male chaining. Third, GCaMP imaging revealed that both pulse song and sine song elicit strong calcium responses in vPN1 cell bodies and show a preferential response to pulse songs with long IPIs.\n\nIn addition, we found that vPN1 neurons likely target dsx+ pC1 neurons directly. Anatomically, vPN1 neurons overlap with pC1 neurons in the LPC region. Physiologically, the tuning curve of the pC1 calcium responses to pulse song IPIs closely matches that of behavioral chaining responses. Behaviorally, silencing pC1 neurons reduced male-chaining behavior in response to pulse song, while pC1 activation is sufficient to induce robust chaining responses. Lastly, simultaneous GCaMP imaging and CsChrimson stimulation reveals that the aPN1-vPN1-pC1 pathway is indeed functionally connected. Taken together, we provide anatomical, behavioral, and physiological evidence that the aPN1-vPN1-pC1 pathway provides a labeled line for processing courtship song in Drosophila.\n\n## Results\n\n### An intersectional screen identifies fruM+ second- and third-order auditory neurons\n\nMotivated by the hypothesis that fruM labels neurons that detect courtship-relevant sensory stimuli (Manoli et al., 2005; Stockinger et al., 2005), we performed an anatomical screen aimed at identifying fruM+ neurons in the auditory pathway. Specifically, \u223c1000 cis regulatory module (CRM) GAL4 lines with relatively sparse neuronal expression patterns (Jenett et al., 2012) were crossed to LexAop2-FLP; fruLexA, UAS>stop>myr::GFP to restrict expression of GFP to those neurons that express both GAL4 and fruLexA (Figure 1J). These intersectional expression patterns were then registered onto a standard brain for analysis of potentially overlapping projection patterns.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig1-v1.jpg)\n\n**Figure 1.:** (A) Intersectional labeling of male aPN1 neurons using three independent GAL4 lines shown registered onto a standard brain (R21B12-GAL4 in green, R22B11-GAL4 in magenta, and R49F09-GAL4 in yellow). White region is a result of overlapping between different color channels. (B) Intersectional labeling of male ventrolateral protocerebrum Projection Neuron 1 (vPN1) neurons using R72E10-GAL4 (green) and R46F09-GAL4 (magenta). (C) Co-registration of male aPN1 neurons (green) and vPN1 neurons (magenta) onto the standard brain shows significant overlap in WED. aPN1 and vPN1 neurons are labeled by R49F09-GAL4 \u2229 fruLexA and R72E10-GAL4 \u2229 fruLexA, respectively. (D\u2013F) aPN1 neurons are present in both male (D) and female (E) brains of LexAop2-FLP/+; fruLexA, UAS>stop>myr::GFP/49F09-GAL4 flies. (F) Merge of (D) and (E). (G\u2013I) vPN1 neurons are present in male (G) but absent in female (H) brains of LexAop2-FLP/+; fruLexA, UAS>stop>myr::GFP/72E10-GAL4 flies. (I) Merge of (G) and (H). (J) Schematic drawing of GAL4/LexA intersection for labeling subsets of fruM+ neurons. FLP expression induced by fruLexA will remove the stop cassette to allow GFP reporter expression only in neurons expressing both fruLexA and the CRM-GAL4. Scale bars, 50 \u03bcm. All images were aligned and registered onto a standard brain.\n\nTo characterize fruM+ aPN1 cells, we identified GAL4 drivers (R21B12, R22B11, and R49F09) that label four to five aPN1 cells per hemisphere when intersected with fruLexA (Figure 1A, Figure 1\u2014source data 1). These intersectional drivers appear to label the same cell type (Figure 1A), as co-registered expression patterns are morphologically indistinguishable and consistent with the aPN1/AMMC-B1 cell type (Kamikouchi et al., 2009; Lai et al., 2012; Vaughan et al., 2014).\n\nIn order to identify putative third-order auditory neurons, we focused on drivers labeling fruM+ neurons that innervate the WED and project to the central brain. Two GAL4 drivers (R72E10 and R46F09) were identified that, when crossed to LexAop2-FLP; fruLexA, UAS>stop>myr::GFP, labeled a subset of the fruM+ aSP-k cell type previously identified via MARCM (Mosaic analysis with a repressible cell marker) clones (Cachero et al., 2010) (Figure 1B and Figure 1\u2014source data 1). These neurons, termed vPN1, have cell bodies located laterally in the dorsal anterior brain and neurites that innervate the WED and the LPC (Figure 1B). Co-registration of fruM+ aPN1 and vPN1 neurons revealed substantial overlap in the WED region (Figure 1C), suggesting potential synaptic connectivity between aPN1 and vPN1 neurons.\n\nThe intersectional labeling of aPN1 and vPN1 was dependent on fruLexA expression. Since many fruM+ neurons have been shown to be sexually dimorphic at the anatomical level, we examined whether the morphologies of either the aPN1 or vPN1 neurons were sexually dimorphic. aPN1 neurons had indistinguishable projection patterns in female and male brains (Figure 1D\u2013F), while vPN1 neurons were only observed in male brains (Figure 1G), with female brains showing only very weak expression in a few seemingly unrelated neurons (Figure 1H\u2013I). However, aSP-k neurons are present in both sexes and extend male-specific processes that innervate the LPC arch (Cachero et al., 2010). In addition, we identified a split-GAL4 combination (R72E10-GAL4AD \u2229 VT9665-GAL4DBD, referred to as vPN1 split-GAL4 hereafter) that labels vPN1 neurons in the male brain (Figure 2A), independent of fruLexA expression. Using this driver, vPN1 neurons remain absent from the female brain, and fruM is expressed in all vPN1 cells of the male (Figure 2B,C). We therefore infer that the vPN1 population constitutes a male-specific subset of the larger aSP-k cell type.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) GFP expression (green) in the male (A) or female (B) brain of R72E10-GAL4AD/UAS-mCD8GFP; VT9665-GAL4DBD/+ flies counter-stained by nc82 antibody (magenta). vPN1 neurons with VLP projections were labeled in the male but not female brain. (C) vPN1 neurons (C1) in the male brain of R72E10-GAL4AD/UAS-mCD8GFP; VT9665-GAL4DBD/+ flies co-stained with FruM antibody (C2). (C3) is a merge of (C1) and (C2). (D) vPN1 neurons are present in the male brain (D1) but not female brain (D2) of fru4\u201340/+ flies. Genotype is: R72E10-GAL4AD/UAS-mCD8GFP; VT9665-GAL4DBD, fru4\u201340/+. (E) vPN1 neurons are absent in both the male brain (E1) and female brain (E2) of null mutant fru4\u201340/fruLexA. Genotype is: R72E10-GAL4AD/UAS-mCD8GFP; VT9665-GAL4DBD, fru4\u201340/fruLexA. (F) vPN1 neurons are present in both the male brain (F1) and female brain (F2) of fruM mutant flies where FruM is expressed in both males and females. Genotype is: R72E10-GAL4AD/UAS-mCD8GFP; VT9665-GAL4DBD, fruM/+.\n\nWe next asked whether fruM is necessary and sufficient for specifying the male-specific vPN1 neurons. We did this by examining vPN1 split-GAL4 expression patterns in various fru mutant backgrounds. The male-specific expression pattern of vPN1 is not affected in heterozygous fru mutants (fru4\u201340/+, Figure 2D). However, vPN1 expression is absent in fru null mutant males (fru4\u201340/fruLexA, Figure 2E), while misexpression of FruM protein in females (fruM/+) leads to an induction of vPN1 expression in the female brain (Figure 2F) (Demir and Dickson, 2005). Thus, fruM plays an instructive role in the specification of sexual dimorphism of vPN1 neurons.\n\nOur anatomical results suggest a candidate pathway that may carry auditory information from aPN1 to higher brain regions via male-specific vPN1 projections. We next tested whether these neurons are necessary for male courtship hearing.\n\n### Song-induced chaining behavior is tuned to conspecific IPIs\n\nMale flies respond to courtship song, and pulse song in particular, by increasing locomotion and exploratory courtship of nearby flies (Schilcher, 1976b; Eberl et al., 1997; Kowalski et al., 2004). Ecologically, this response is appropriate for the context of competitive courtship on fruit substrates. Experimentally, stimulation of groups of males with synthetic courtship song can induce both locomotion and chains of males engaging in the initial stages of courtship. This response (distinct from the unstimulated and dysregulated courtship observed in fru mutant males) has been used to investigate the genetic and neural mechanisms underlying auditory detection (Eberl et al., 1997; Kamikouchi et al., 2009; Vaughan et al., 2014). To assay the role of putative auditory interneurons in male courtship hearing, we constructed courtship chambers with sloped side walls for better visualization of song-induced chaining behavior (Figure 3A and Figure 3\u2014figure supplement 1) (Simon and Dickinson, 2010). Upon stimulation by pulse song with a ramping intensity, we indeed observed that male flies displayed robust song-induced chaining behavior (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig3-v1.jpg)\n\n**Figure 3.:** (A) Song-induced chaining assay. Males court each other when exposed to pulse song with a 35-ms inter-pulse interval (IPI) and robustly form courtship chains (bottom). (B) Chaining indices (CIs) of wild-type males in response to different IPIs. After 60 s of silence, continuous pulse songs were played back with a ramping sound intensity from 60 dB to 90 dB. The intensity was increased every 30 s. n = 14 for all groups. Error bars represent SEM. (C) Heat map visualization of chaining responses in (B). Each cell represents the chaining index at a given IPI and song intensity. (D) CIs of wild-type males in response to intermittent pulse songs with different IPIs at 80 dB. A train of 40 pulses was delivered every five seconds so that the number of pulses was the same for different IPIs. After one minute of silence, two minutes of intermittent pulse song stimuli were presented (indicated by shadowed box), and then followed by two minutes of silence. Chaining persisted and gradually decreased after song presentation. n = 15 for all groups. (E) CIs during the song presentation period in (D) were summed up and plotted as a function of IPIs. Error bars represent SEM. *p < 0.05 when chaining responses at 35-ms IPI were compared to those at 15-, 20-, 25-, 75-, 85-, and 95-ms IPIs (Wilcoxon rank-sum test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Schematic drawing of chaining chamber design. A 30\u00b0 sloped wall was made to reduce the probability that flies occlude each other. Flies were introduced through the holes in the slipping acrylic cover on the top of the chamber. (D\u2013F) The chaining chamber was assembled and mounted on an acrylic holder, which was placed at the side of an external speaker. Front light was delivered by two regular fluorescent bulbs from the top.\n\nDrosophila pulse songs have two key features: intra-pulse frequency (IPF) and IPI. Across different Drosophila species, the antennal receiver is tuned to the conspecific IPF (Riabinina et al., 2011), and behavioral responses appear tuned to the conspecific IPI (Ewing and Bennet-Clark, 1968; Cowling and Burnet, 1981). While mechanical features of the antenna may have evolved to optimally detect conspecific IPFs, it has been hypothesized that the brain is responsible for recognizing conspecific IPIs (Riabinina et al., 2011). Therefore, we asked whether song-induced chaining behavior of D. melanogaster males varied as a function of song IPI (Schilcher, 1976b; Yoon et al., 2013). Indeed, the chaining response was significantly higher for songs at 35-ms IPI than for all other IPIs, across a wide range of intensities (p < 0.05, 72.5\u201385 dB, Wilcoxon rank-sum test; Figure 3B,C), suggesting that D. melanogaster males to some extent are able to preferentially respond to pulse song of their own species. A similar effect was observed using intermittent song stimuli (80 dB; Figure 3D,E). We therefore used this assay to test the behavioral role of aPN1, vPN1, and pC1 populations.\n\n### Silencing second- and third-order neurons decreased song-induced chaining behavior\n\naPN1 neurons had been identified as putative second-order auditory neurons for courtship hearing, based on their anatomical location, physiological response to song, and the behavioral phenotypes produced in response to courtship song in both male and female with aPN1 neurons silenced (Vaughan et al., 2014). We asked whether the fruM+ subset of aPN1 is also required for courtship hearing in males. Three independent GAL4 \u2229 fruLexA genotypes were used to confirm that silencing fruM+ aPN1 neurons reduced male courtship hearing; indeed, flies expressing tetanus neurotoxin light chain (TNT), which blocks synaptic vesicle release, in fruM+ aPN1 neurons showed significantly reduced chaining compared to controls expressing an inactive form of TNT (TNTin) or lacking fruLexA (Figure 4A\u2013C) (Sweeney et al., 1995). Thus, fruM+ aPN1 neurons are required for song-induced male chaining. We similarly asked whether the vPN1 neurons were required for the male-chaining response to song. Using two GAL4 drivers (R72E10, R46F09) in an intersectional approach (GAL4 \u2229 fruLexA) to target TNT expression to vPN1 neurons, we observed that vPN1 silencing reduced song-induced chaining (Figure 4D,E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) Silencing aPN1 neurons decreased song-induced chaining responses. aPN1 drivers R21B12-GAL4 (A), R22B11-GAL4 (B), or R49F09-GAL4 (C) were crossed to UAS>stop>TNT; fruLexA, LexAop2-FLP (TNT group), UAS>stop>TNTin; fruLexA, LexAop2-FLP (TNTin group), or UAS>stop>TNT; LexAop2-FLP (no LexA group). (D, E) Silencing vPN1 neurons decreased song-induced chaining responses. vPN1 drivers R72E10-GAL4 (D), R46F09-GAL4 (E) were crossed to UAS>stop>TNT; fruLexA, LexAop2-FLP (TNT group), UAS>stop>TNTin; fruLexA, LexAop2-FLP (TNTin group), or UAS>stop>TNT; LexAop2-FLP (no LexA group). n = 13\u201316 for each condition. *p < 0.0001 compared to both controls at 80 dB, Wilcoxon rank-sum test. Shown in the left panel is GFP expression of each intersectional driver. In the right panel, a heat map summary shows chaining intensities across the testing time course. Each row corresponds to a group of six flies. Colors represent the number of flies in chain.\n\nAs the multiple drivers used for aPN1 and vPN1 share no off-target expression in fruLexA+ neurons (Figure 4A\u2013E), we conclude that both fruM+ aPN1 and fruM+ vPN1 fruM neurons are required for the male-chaining response to pulse song.\n\n### Auditory responses of vPN1 neurons\n\nCourtship song responses in aPN1 have been extensively studied using in vivo calcium imaging and electrophysiology (Lai et al., 2012; Tootoonian et al., 2012; Vaughan et al., 2014). To investigate the physiological function of downstream vPN1 neurons in auditory perception, we performed in vivo calcium imaging in vPN1 cell bodies during song presentation by expressing UAS-GCaMP6m under the control of R72E10-GAL4 (Figure 5A\u2013C) (Chen et al., 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig5-v1.jpg)\n\n**Figure 5.:** (A) Diagram of imaging setup in which a speaker was located 20-cm away from the recorded male fly. (B) Diagram of vPN1 neurons labeled with R72E10-GAL4 driving expression of GCaMP6. Cell bodies are circled. (C) Calcium imaging of R72E10-GAL4 driven GCaMP6 expression in vPN1 cell bodies. Heat map of a sample frame shows \u2206F/F changes in two vPN1 cell bodies. Scale bar, 10 \u03bcm. (D) Calcium responses of vPN1 neurons to a train of 40 pulses at different IPIs, sine song, and white noise at 80 dB. Black lines represent means. Gray envelopes indicate SEM. Song stimulus durations are indicated as red bars below. (E) Peak \u2206F/F changes of vPN1 neurons stimulated with pulse song (35-ms IPI, 40 pulses), sine song (140 Hz, 1.4 s), and white noise (1.4 s) at 80 dB. *p < 0.01, Wilcoxon rank-sum test. n = 10 for all the groups. (F) Peak \u2206F/F of vPN1 neurons in response to pulse song (35-ms IPI, 40 pulses) at different sound intensities. n = 14 trials for each sound level. (G) Normalized calcium traces of vPN1 neurons at different IPIs. Each \u2206F/F was normalized by the maximum \u2206F/F. (H) Peak \u2206F/F of vPN1 neurons in response to different IPIs at 80 dB (40 pulses). n = 10 for all groups. *p < 0.01, Wilcoxon signed-rank test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Raster plots of \u2206F/F during presentation of different song stimuli. Each row represents calcium responses from one male fly. (B) Raster plots of peak \u2206F/F during presentation of different song stimuli. Each row represents calcium responses from one male fly while each column represents a different IPI. All the responses from an individual fly are normalized by the maximum response from that fly.\n\nWhen auditory stimuli were presented at 80 dB, vPN1 neurons responded to both pulse song and sine song, but not to white noise stimuli (Figure 5D,E). We then looked at the response of vPN1 neurons to pulse songs of different intensities. Strikingly, the threshold of vPN1 activation matched the behavioral threshold for song-induced chaining (EC50 = 68.2 dB for vPN1 responses v.s. EC50 = 70.6 dB for chaining responses, half-maximal sigmoid fit; Figure 5F and Figure 3B).\n\nTo further understand how vPN1 neurons process pulse song, we examined their tuning with respect to a variety of IPIs from 15 ms to 95 ms at 80 dB (Figure 5D,G). We found that vPN1 neurons respond strongly to pulse trains with IPIs of 35 ms and above, with significant attenuation at IPIs below 25 ms (p < 0.01 when compared to responses at 35-ms IPI, Wilcoxon signed-rank test; Figure 5H and Figure 5\u2014figure supplement 1). This signal displays low-pass response properties for IPI with a shoulder around 35-ms and is different from the aPN1 response that responds as a function of pulse rate (Vaughan et al., 2014).\n\n### The role of pC1 dsx neurons in song perception\n\nThe vPN1 neurons extend projections into the LPC, an area surrounding the mushroom body peduncle that is enlarged in males and densely innervated by both fruM+ and dsx+ neurons (Figure 1B) (Cachero et al., 2010; Rideout et al., 2010; Robinett et al., 2010; Yu et al., 2010). One of the cell types innervating this region is the male-specific fruM+/dsx+ P1 cell type (a subset of pC1), which controls the initiation of male courtship (Kimura et al., 2008; Kohatsu et al., 2011; Pan et al., 2011; von Philipsborn et al., 2011). Some pC1 neurons are present in both sexes, although their projections and cell number are highly sexually dimorphic (Rideout et al., 2010; Robinett et al., 2010; Zhou et al., 2014). Female pC1 neurons are sensitive to courtship song and the male-specific pheromone cVA, suggesting a role for female pC1 neurons in integrating multiple courtship-related sensory signals (Zhou et al., 2014).\n\nWe asked whether male pC1 neurons function downstream of vPN1 neurons to process song signals. To evaluate the potential connections between pC1 neurons and vPN1 neurons, we first labeled pC1 neurons via the intersection of R71G01-LexA::p65 with dsxGAL4 (Pan et al., 2012) and then registered male pC1 neurons and vPN1 neurons onto a standard brain (Figure 6A). The neurites of pC1 and vPN1 neurons extensively overlap in the LPC, including the lateral crescent, the lateral junction, the arch and the ring region (Yu et al., 2010), suggesting potential synaptic contacts between these two cell types (Figure 6B\u2013D). To examine the roles of pC1 neurons in song perception, R71G01-LexA::p65 \u2229 dsxGAL4 was used to express TNT in dsx+ pC1 neurons. Compared to controls, TNT-mediated inactivation of pC1 neurons almost completely abolished song-induced chaining behavior (Figure 6E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013D) Co-registration of vPN1(green) and pC1(magenta) neurons onto the standard brain. Genotype for labeling vPN1 neurons: LexAop2-FLP/+; fruLexA, UAS>stop>myr::GFP/R72E10-GAL4. Genotype for labeling vPN1 neurons: R71G01-LexA/UAS>stop>myr::GFP; dsxGAL4, LexAop2-FLP/+. vPN1 processes (B) and pC1 (C) processes overlap in the region of lateral protocerebral complex (LPC). (D) Merge of (B) and (C). Scale bars, (A) 100 \u03bcm and (D) 20 \u03bcm. (E) Song-induced chaining response was impaired by inactivation of pC1 neurons. Genotypes: UAS>stop>TNTin/71G01-LexA; dsxGAL4, LexAop2-FLP/+ (TNTin), UAS>stop>TNT/+; dsxGAL4, LexAop2-FLP/+ (no LexA), UAS>stop>TNT/71G01-LexA; dsxGAL4, LexAop2-FLP/+ (TNT). n = 16 for all the conditions. *p < 0.0001 when comparing TNT group to both controls at 80 dB, Wilcoxon rank-sum test. Bottom, heat map analysis of chaining events for individual groups of flies. (F) Diagram of pC1 neurons labeled with dsxGAL4 driving expression of GCaMP6. Neurites innervating the LPC are circled. (G) Calcium responses of pC1 neurons responding to different IPIs, sine song, and white noise at 80 dB. Pulse song stimuli consist of a train of 40 pulses. Black lines indicate mean values, while gray areas indicate SEM. Song stimulus durations are indicated as red bars. (H) Peak \u2206F/F values of pC1 neurons stimulated with pulse song (35-ms IPI, 40 pulses), sine song (140 Hz, 1.4 s), and white noise (1.4 s) at 80 dB. *p < 0.01, Wilcoxon rank-sum test. No significance was observed for sine vs white noise. n = 12 for all the groups. (I) Peak \u2206F/F values of pC1 neurons stimulated with pulse song (35-ms IPI, 40 pulses) from 60 dB to 90 dB. pC1 neurons are only sensitive to pulse song stimuli above 80 dB. n = 9 trials for each sound level. (J) Normalized calcium traces of pC1 neurons at different IPIs. Each \u2206F/F was normalized by the maximum \u2206F/F. (K) Peak \u2206F/F of pC1 neurons stimulated with different IPIs at 80 dB (40 pulses). n = 12 for all groups. *p < 0.01, Wilcoxon signed-rank test. (L) Comparison between the calcium response (peak \u2206F/F) of vPN1 neurons and chaining responses to different IPIs shown in Figure 3E (R = 0.67; p < 0.017, permutation test). Both calcium responses and chaining responses are normalized to their respective maximum responses. (M) Comparison between the calcium response (peak \u2206F/F) of pC1 neurons and chaining responses to different IPIs shown in Figure 3E (R = 0.89; p < 0.001, permutation test). Both calcium responses and chaining responses are normalized to their respective maximum responses. (N) Comparison between normalized vPN1 responses and pC1 responses. Each colored square represents a different IPI indicated by the heat map. Error bars represent SEM in all panels.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Raster plots of \u2206F/F during presentation of different song stimuli. Each row represents calcium responses from one male fly. (B) Raster plots of peak \u2206F/F during presentation of different song stimuli. Each row represents calcium responses from one male fly while each column represents a different IPI. All the responses from an individual fly are normalized by the maximum response from that fly.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Normalized peak \u2206F/Fs for the calcium responses of vPN1 (green) and pC1 (yellow) neurons to different IPIs. The tuning curve of aPN1 neurons (gray) is reported previously (Vaughan et al., 2014) and superimposed for comparison. *p < 0.05 between vPN1 and pC1 responses, One-sided Wilcoxon rank-sum test. (B) A transfer function was calculated by dividing pC1 responses by vPN1 responses. This transfer function resembles a band-pass filter. The SEM of the transfer function was estimated using standard error propagation.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Synthetic pulse song (top) and sine song (bottom) measured by a particle-velocity microphone. Pulse song train at 80 dB sound pressure level corresponds to particle velocity of \u223c2 mm/s, while sine song at 80 dB corresponds to \u223c0.35 mm/s. (B) Natural courtship song recorded by a particle-velocity microphone located \u223c2 mm above a pair of male and female Canton S flies. Pulse songs from a courting male can reach up to \u223c7.5 mm/s, and sine songs can reach up to \u223c1 mm/s in this setup.\n\nTo ask whether male pC1 neurons also respond to song input, we expressed GCaMP6m in dsxGAL4 neurons and recorded the activity of the pC1 neurites in the LPC while presenting song stimuli (Figure 6F). pC1 neurons are only sensitive to pulse song stimuli at 80 dB and above (EC50 = 79.7 dB, sigmoid fit; Figure 6I),a higher activation threshold than that observed for vPN1 (EC50 = 68.2 dB; Figure 5F). This could be due to intrinsic properties of pC1 neurons, which might require multi-sensory input to become fully activated. As expected, pulse-song stimuli evoked calcium transients in pC1 neurites, while sine song and white noise induced little response (Figure 6H), consistent with the report that sine song and white noise are not capable of inducing chaining behavior (Eberl et al., 1997).\n\nWe next examined the IPI tuning of male pC1 neurons. Unlike the low-pass response of vPN1, the pC1 neurite response showed a strong response to pulse song with IPIs of 35\u201365 ms. This response is significantly reduced at both short (15\u201325 ms) and long (85\u201395 ms) IPIs (p < 0.01 when compared to responses at 35-ms IPI, Wilcoxon signed-rank test; Figure 6K, Figure 6\u2014figure supplement 1). This response reflects a band-pass sensitivity to pulse song, which is not seen in either aPN1 or vPN1, and qualitatively matches the IPI sensitivity of the behavioral response in male and female flies (Bennet-Clark, 1969; Yoon et al., 2013; Vaughan et al., 2014).\n\n### Potential transformation of song responses between vPN1 and pC1\n\nThe auditory pathway leading through aPN1, vPN1, and pC1 shows a possible transformation of song representation. In particular, while aPN1 responses integrate pulse rate at IPIs longer than 25 ms (Vaughan et al., 2014), we found that vPN1 shows a low-pass response and pC1 shows a band-pass response to IPI (Figure 6\u2014figure supplement 2A). We compared vPN1 and pC1 responses and calculated a direct transfer function for them (Figure 6N and Figure 6\u2014figure supplement 2). This comparison shows significant attenuation of IPIs below (25 ms) and above (75\u201395 ms) the 35-ms IPI, indicating a possible band-pass filter linking these two responses (Wilcoxon rank-sum test, one-sided).\n\nWe next examined the relationship between the GCaMP response and song-induced chaining behavior more closely. For vPN1, we observed only a moderate correlation between this calcium response and the IPI sensitivity of song-induced chaining (r = 0.67; p < 0.017, permutation test, Figure 6L). In contrast, the pC1 response closely matches the IPI sensitivity of song-induced chaining (r = 0.89; p < 0.001, permutation test, Figure 6M). The correlation with the behavioral response is higher for pC1 than vPN1 (p < 0.037, Meng's z-test). These results suggest that pC1 activity may integrate information from vPN1 and other neurons to determine the level of courtship-chaining behavior.\n\nAs caveats, however, we note that the slow decay kinetics of GCaMP6m (Chen et al., 2013) may account for some of the observed low-pass properties observed in our vPN1 or pC1 recordings. In addition, some of the differences between the tuning of vPN1 and pC1 may arise from distinct calcium dynamics in the recording sites for vPN1 (soma) and pC1 (neurites), or from cell-type specific differences in calcium dynamics. Indeed, although our results suggest that song representations may be serially transformed in the ascending auditory pathway, a circuit-level understanding of how local and projection neurons in this pathway shape this response remains to be discovered.\n\n### Optogenetic activation of vPN1 or pC1 neurons induced male chaining\n\nTo investigate whether neurogenetic activation of auditory neurons mimics the effects of courtship song presentation in inducing male-chaining behavior, we expressed the red light-sensitive channelrhodopsin CsChrimson in auditory neurons with intersectional drivers and assessed the effects of red light stimulation on groups of male flies (Klapoetke et al., 2014).\n\nCsChrimson-mediated activation of aPN1 neurons did not induce male-chaining behavior when we tested two independent GAL4 drivers (R22B11 and R49F09) (Figure 7A,D). This is consistent with the report that dTrpA1-mediated hyperactivation of aPN1 neurons failed to restore receptivity of females toward wingless males (Vaughan et al., 2014). In contrast, CsChrimson-mediated activation of putative third-order vPN1 neurons induced robust chaining behavior (Figure 7B,D and Video 1), which was not observed in the absence of red light stimulation or in control flies lacking GAL4 (Figure 7D). Similarly, activation of pC1 neurons induced robust male-chaining behavior (Figure 7C,E and Video 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013C) Optogenetic activation of vPN1 neurons (B) or pC1 neurons (C) induced male chaining, as evidenced by males courting each other on food (green arrow head), while activation of aPN1 neurons did not (A). CsChrimson activation was achieved with constant 655-nm light (0.06 mW/mm2). R22B11-GAL4 \u2229 fruLexA, R72E10-GAL4 \u2229 fruLexA, or R71G01-LexA \u2229 dsxGAL4 was used to drive CsChrimson expression in aPN1 (A), vPN1 (B), or pC1 (C). (D) Male-chaining behavior was induced by CsChrimson-mediated activation of vPN1 neurons but not aPN1 neurons. *p < 0.0001 (Student's t-test). n = 14\u201318 for all the genotypes. (E) Male-chaining behavior was induced by CsChrimson-mediated activation of pC1 neurons. *p < 0.0001 (Student's t-test). n = 16\u201318 for all the genotypes. (F, G) Male-chaining behavior induced by CsChrimson-mediated activation of either vPN1 or pC1 neurons when stimulated with constant red light at 0.006, 0.018, 0.03, 0.06 mW/mm2 (F) or stimulated with 5-ms light pulses at 10, 25, 50, and 100 Hz (G). vPN1 driver 1 is R72E10-GAL4 \u2229 fruLexA; vPN1 driver 2 is R46F09-GAL4 \u2229 fruLexA, pC1 driver is R71G01-LexA \u2229 dsxGAL4. n = 16\u201328 for all the genotypes.\n\n![Video 1.](https://cdn.elifesciences.org/articles/08477/elife-08477-media1.avi.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/08477/elife-08477-media2.avi.jpg)\n\nTo probe the sensitivity of the chaining response to red light stimulation, we examined chaining behavior when activating either vPN1 or pC1 with various intensities or frequencies of light (Figure 7F,G). While activation of vPN1 induced chaining in an intensity-dependent or frequency-dependent manner, activation of pC1 generated a saturating response in which even the lowest intensity (0.006 mW/mm2) or the lowest frequency (10 Hz) was able to induce robust chaining through >90% of the testing period. Although it is not feasible to control for the expression strength of the aPN1, vPN1, and pC1 drivers, we suspect that the different dynamics of chaining behavior induced by activating aPN1, vPN1, or pC1 neurons may reflect the intrinsic properties of the cell types and the manner in which courtship song is encoded in these neurons. In particular, we note that the lack of response for aPN1 is consistent with the observation that the stimulus that best activates aPN1 (25 ms IPI) does not induce a strong behavioral response from wild-type flies (Vaughan et al., 2014).\n\nAs song information flows from peripheral to central brain, the higher-order neurons may represent the socially relevant features of courtship in a simpler manner than in lower neurons, and this may account for the gradient of behavior phenotype we observed when we activate aPN1, vPN1, or pC1, respectively. This (still theoretical) architecture describes a possible transformation of song representations from a temporal code in aPN1 to a rate code in vPN1\u2014which is ultimately coupled with other sensory signals to encode overall behavioral arousal in PC1 (Figure 8F and Video 3).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig8-v1.jpg)\n\n**Figure 8.:** (A\u2013C) Labeling of dendrites and axons by expression of the dendritic marker DenMark (magenta) and axonal marker Syt::GFP (green) in (A) vPN1 neurons (labeled with split GAL4 driver R72E10-GAL4AD \u2229 VT009665-GAL4DBD) and (B) pC1 neurons (labeled with split GAL4 driver R71G01-GAL4AD \u2229 R15A01-GAL4DBD). (C) Co-registration of vPN1 axons (green) and pC1 dendrites (magenta) onto a standard brain. (D) Activation of aPN1 neurons induced calcium responses in vPN1 neurons. (D1) CsChrimson was expressed in aPN1 neurons with 59C10-LexA, while GCaMP6 was expressed in vPN1 neurons with R72E10-GAL4. Dashed circle indicates the location of the recording site. (D2) aPN1 CsChrimson-mediated activation induced calcium responses in vPN1 neurons. Black line indicates mean while gray envelope indicates SEM. n = 46 from 6 flies. (D3) This effect is suppressed by the acetylcholine receptor antagonist mecamylamine (**p < 0.001, Student's t-test), and partially restored by washing out the antagonist (*p < 0.01, Student's t-test). Dots with the same color represent experiments performed on the same individual. Black lines indicate mean values. n = 9\u201314 (depending on the drug condition) from 3 flies. (E) Activation of vPN1 neurons induced pC1 calcium responses. (E1) CsChrimson was expressed in vPN1 neurons with a vPN1 split-GAL4 driver while GCaMP6 was expressed in pC1 neurons with dsxLexA. Dashed circle indicates the location of the recording site. (E2) pC1 neurons respond to CsChrimson activation of vPN1 neurons. Black line indicates mean while gray envelope indicates SEM. n = 13 from 3 flies. (E3) Mecamylamine causes a mild reduction in the pC1 responses (**p < 0.001, Student's t-test). Black lines indicate mean values. n = 4\u20139 from 2 flies. (F) Left panel shows co-registration of aPN1 (magenta), vPN1 (green), and pC1 (yellow) neurons onto a standard brain. The anatomical overlap between them suggests a potentially interconnected circuit mediating courtship song detection in the male brain. We propose that courtship song is relayed through aPN1 and vPN1 neurons to pC1 neurons, and that the pC1 neurons integrate song signals with other sensory cues to initiate courtship.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08477/elife-08477-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A\u2013C) GFP Expression (green) in aPN1 (A), vPN1 (B), and pC1 (C) driven by 59C10-LexA, 72E10-GAL4 and 71G01-LexA and counter-stained by nc82 antibody (blue). Arrow in (B) indicates the cell bodies of vPN1 neurons. Scale bars, 100 \u03bcm. (D) Pattern of reconstituted GFP signal (green, indicated by arrow in D1) between aPN1 and vPN1 neurons in the WED region. Neuropil is labeled by nc82 antibody staining (magenta). GRASP signal was not observed in control flies (D2). Scale bars, 50 \u03bcm. (E) GRASP signal was barely detected between vPN1 neurons and pC1 neurons (E1). (E2) is the control for (E1). Scale bars, 50 \u03bcm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/08477/elife-08477-media3.avi.jpg)\n\n### The aPN1-vPN1-pC1 pathway is functionally interconnected\n\nIt has been reported that the dendrites of aPN1 innervate the AMMC region while the aPN1 axons project to the WED region (Vaughan et al., 2014), indicating that the song signal is transmitted from AMMC to WED. To further investigate the directionality of information flow in the aPN1-vPN1-pC1 pathway, we have used DenMark and Syt::GFP for post- and pre-synaptic labeling of vPN1 and pC1 neurons, respectively. The dendrites of vPN1 target the WED region, and vPN1 axonal termini ramify extensively in the LPC region (Figure 8A). Both dendrites and axons of pC1 are observed within the LPC region (Figure 8B), and vPN1 axons overlap with pC1 dendrites when registered in a standard brain (Figure 8C). These results suggest that vPN1 neurons may convey song information from the WED to the LPC region.\n\nTo assess if the hypothesized pathway is indeed functional, we activated aPN1 or vPN1 with CsChrimson while recording GCaMP6-indicated calcium responses in vPN1 or pC1, respectively. CsChrimson was expressed in aPN1 by R59C10-LexA::p65 and GCaMP6m was expressed in vPN1 by R72E10-GAL4. Pre-synaptic activation of aPN1 elicited calcium responses in vPN1 (Figure 8D), suggesting a functional connection between aPN1 and vPN1. Moreover, to allow simultaneous vPN1 activation/pC1 recording, we generated a dsxLexA knock-in for driving GCaMP6m expression in dsx+ neurons while using R72E10-GAL4AD \u2229 VT9665-GAL4DBD for CsChrimson-mediated activation of vPN1 neurons. As anticipated, activation of vPN1 elicited robust calcium responses in pC1 neurites (Figure 8E), supporting the idea that vPN1 neurons form functional synapses with pC1 neurons. In both cases, these effects were reduced by the administration of the acetylcholine receptor antagonist mecamylamine (Figure 8D,E). These data further support the existence of an aPN1-vPN1-pC1 functional pathway that mediates song detection in males (Figure 8F).\n\nTo further investigate the connectivity in the aPN1-vPN1-pC1 pathway, we first performed the GFP reconstitution across synaptic partners (GRASP) analysis to visualize the connections between aPN1, vPN1, and pC1 neurons. In this approach, two different populations of neurons were driven by either GAL4 or LexA (Figure 8\u2014figure supplement 1A\u2013C) to separately express each half of the GFP molecule (spGFP11 and spGFP1-10). GFP will be reconstituted in the region where these two groups of cells come into close proximity and form synapses (Feinberg et al., 2008; Gordon and Scott, 2009). By expressing spGFP11 in aPN1 neurons and spGFP1-10 in vPN1 neurons, we observed significant GRASP signal in the WED region (Figure 8\u2014figure supplement 1D), suggesting the connections between aPN1 and vPN1. However, no GRASP signal was detected when we drove spGFP1-10 expression in vPN1 neurons with 72E10-GAL4 and spGFP11 expression in pC1 neurons with 71G01-LexA (Figure 8\u2014figure supplement 1E). One possibility to explain this is that 71G01-LexA only label a subset of pC1 neurons, and given that pC1 neurons are likely to be heterogeneous (Zhou et al., 2014), the 71G01-LexA-labeled pC1 neurons may not include the pC1 auditory neurons that synapse with vPN1 neurons. Alternatively, it might be that the neurites of vPN1 and pC1 in the LPC region is too diffuse to allow reliable detection of the GRASP signal. The mono-synaptic nature of this circuit is still awaiting a validation from electron microscopy or eletrophysiology methods.\n\n## Discussion\n\nCourtship behavior of Drosophila males provides a fundamental model for understanding how species-specific courtship signals may be processed and integrated to drive stereotyped motor outputs. Using anatomical, behavioral, and physiological approaches, here we outline a male-specific pathway for courtship hearing, which processes and transforms song stimuli to activate central fruM+ or dsx+ neurons that support multimodal integration and drive courtship behavior.\n\n### fruM neurons establish a labeled line that detects courtship song in males\n\nfru and dsx are two key transcription factors with restricted expression patterns that specify the potential for sexual behaviors in Drosophila (Manoli et al., 2013; Pavlou and Goodwin, 2013; Yamamoto and Koganezawa, 2013). fruM expression in primary auditory, tactile, gustatory, and visual neurons as well as the central brain may suggest that there are multiple fruM-labeled pathways conveying and integrating diverse sensory signals related to courtship, and an appealing hypothesis is that fruM labels interconnected neurons in a circuit that is dedicated to courtship (Manoli et al., 2005; Stockinger et al., 2005). For example, the male-specific pheromone cVA is processed by a four-neuron pathway extending from sensory neurons through to the ventral nerve cord (Ruta et al., 2010). This circuit appears to function as an olfactory labeled line, in that neurons in this circuit are functionally connected and selectively responsive to cVA.\n\nWe focused our efforts here on elucidating the auditory pathway underlying courtship song perception. We have demonstrated that the aPN1-vPN1-pC1 pathway is a labeled line for courtship hearing, by fulfilling four criteria: (1) these neurons are functionally connected; (2) these neurons respond preferentially to courtship song; (3) these neurons are necessary for the behavioral response to courtship song in male flies, and (4) activation of this labeled line provides a fictive stimulus, observable by the chaining response elicited upon CsChrimson activation. Strikingly, this labeled line appears to be specified by the expression of fruM or dsx.\n\nThe auditory labeled line for courtship hearing begins with fruM-expressing JONs and second-order auditory neurons aPN1/aLN(al) in the AMMC (Manoli et al., 2005; Stockinger et al., 2005; Vaughan et al., 2014). Silencing either fruM JONs or fruM aPN1 neurons reduced male song-induced responses (Figure 4) (Vaughan et al., 2014). In addition, we have also demonstrated the connectivity, response patterns, necessity, and sufficiency of fruM vPN1 and pC1 neurons in this pathway, thus, delineating a labeled line of fruM neurons leading directly from sensory neuron to multimodal integration.\n\nThe inclusion of vPN1 in this pathway is supported by three lines of evidence. First, vPN1 projections extensively overlap with projections extended by aPN1 neurons within WED, and we observe functional connectivity between aPN1 and vPN1. Second, silencing vPN1 reduced pulse song-induced chaining in male flies, while optogenetic activation of vPN1 neurons mimicked a song signal to induce male chaining. Third, GCaMP recordings reveal that vPN1 responds strongly to both pulse song and sine song. We therefore conclude that fruM+ vPN1 neurons are the third-order neurons mediating courtship hearing.\n\nvPN1 may provide its output via innervation of the LPC, a region receiving multimodal input that is likely to be a site for multi-sensory integration (Yu et al., 2010). This area is heavily innervated by dsx+ pC1 neurons, which include most of the male-specific fruM+ P1 neurons (Kohatsu et al., 2011; Zhou et al., 2014). While the broader pC1 population is important for both male courtship and female receptivity, the P1 neurons play a critical role in the initiation of male courtship and respond to both male and female pheromones (Kohatsu et al., 2011; von Philipsborn et al., 2011; Pan et al., 2012; Zhou et al., 2014). These neurons appear to be the downstream targets of vPN1, based on three lines of evidence. First, the arborizations of pC1 neurons match very closely with the projection of vPN1 neurons in the LPC, and optogenetic activation of vPN1 generates robust activity in pC1. Second, pC1 neurons show calcium responses to pulse song stimuli, with IPI tuning that matches that of the behavioral response. Third, silencing pC1 neurons in male flies almost completely abolishes song-induced chaining, while activation induces robust chaining in the absence of song. We therefore conclude that vPN1 may carry song stimuli to activate pC1, where these stimuli are integrated with other sensory modalities such as pheromonal olfactory and gustatory cues to modulate the courtship level in males (Figure 8F).\n\nTaken together, the neural circuit we identified suggests that song information flows via a labeled line of fruM neurons from the antenna to AMMC, to WED, and then to LPC, providing a functional explanation of how pulse song induces male courtship behavior.\n\n### IPI tuning of auditory pathway\n\nIPI is a key parameter of courtship song that exhibits great variation across Drosophila species (Cowling and Burnet, 1981). D. melanogaster not only produces song with a specific IPI (Shorey, 1962; Bennet-Clark and Ewing, 1967; von Philipsborn et al., 2011), but also behaviorally recognizes song with that conspecific IPI in both males and females (Bennet-Clark, 1969; Yoon et al., 2013). We have also shown that song-induced male-chaining behavior is most responsive to a 35-ms IPI, although longer IPIs (35\u201365 ms) are still able to induce robust chaining behavior.\n\nWhile Drosophila has behavioral preferences toward the conspecific IPI, it has not been clear how IPIs are represented in the nervous system or how the fly discriminates specific IPIs. Our results suggest there is a significant change in pulse song representation across the ascending aPN1-vPN1-pC1 pathway. For aPN1, the GCaMP \u2206F/F responses in female flies reflect an integration of pulse rate at IPIs longer than 25 ms (Vaughan et al., 2014). In contrast, vPN1 responses observed here are low-passed and preferentially tuned to longer IPIs. Interestingly, the vPN1 response saturates above \u223c35-ms IPI, consistent with the saturating response observed when comparing dendritic and axonal GCaMP signals in aPN1 (Vaughan et al., 2014). Notably, however, neither the aPN1 nor vPN1 response corresponds well with the behavioral sensitivity to IPI observed in male or female flies.\n\nIn contrast, the IPI sensitivity of pC1 reflects a band-pass response to IPI that closely matches the behavioral sensitivity of the chaining response. Indeed, the correlation between pC1 response and chaining behavior is significantly higher than the correlation observed for vPN1. Thus, while the mechanistic details remain unclear, the IPI sensitivity appropriate for species-appropriate responses is likely to be generated through a multi-stage transformation of song stimuli.\n\n### Sexual dimorphism of auditory circuits\n\nSexual dimorphism at multiple levels in the Drosophila brain may give rise to sex-specific differences in sensory processing and multimodal integration. The central integrators of courtship-related sensory cues in male and female flies, the pC1 neurons, are themselves sexually dimorphic in both cell number and morphology (Kimura et al., 2008; Kohatsu et al., 2011; Zhou et al., 2014). pC1 neurons arborize within the triangular lateral junction of the LPC in both sexes, where integration of multiple sensory modalities may occur, but they also show male-specific innervation of the LPC arch and male-specific contralateral projections (Kimura et al., 2008; Zhou et al., 2014).\n\nFor courtship hearing, pC1 neurons are stimulated by pulse song in both sexes, but are also stimulated by sine song in females (Zhou et al., 2014). This result is consistent with the behavioral observation that both males and females are responsive to pulse song, while females are also responsive to sine song (Bennet-Clark, 1969; Schilcher, 1976a, 1976b; Eberl et al., 1997; Shirangi et al., 2013). However, the pC1 auditory response cannot be easily explained by the dimorphism of vPN1, which responds to pulse song in males but is absent in females. Moreover, the absence of vPN1 in females begs the question of how pC1 receives song information in females. One explanation comes from the observation that vPN1 is a subset of the fru+ aSP-k clone (Cachero et al., 2010). aSP-k shows arborization in VLP and the LPC ring in both male and females, as well as male-specific innervation of the LPC arch that corresponds with vPN1 morphology. These neurons, including non-fru+ neurons in the same lineage, may compose a parallel pathway for female hearing.\n\nMore generally, we observe a gradient of sexual dimorphism across the ascending pathway for both olfaction and audition. In both cases, we note only limited sexual dimorphism in second-order neurons (DA1 and aPN1, respectively), but dramatic changes in third-order neurons (aSP-f/aSP-g and vPN1) and integrative neurons (pC1), which show significant dimorphisms in cell number and morphology (Datta et al., 2008; Ruta et al., 2010; Kohatsu et al., 2011; Kohl et al., 2013; Zhou et al., 2014). This gradient may reflect a general rule for the flexible assembly of sexually dimorphic circuits on an evolutionary timescale.\n\nOur anatomical, behavioral, and physiological analyses here have outlined the architecture of a system supporting species-specific courtship hearing, built upon genetically labeled lines expressing fruM or dsx within the fly. Although it is clear that courtship song representations are systematically transformed along the aPN1-vPN1-pC1 pathway, we await a circuit and synapse-level explanation for how this occurs, as well as an understanding of how pC1 activation gives rise to distinct and appropriate behavioral outputs in each sex.\n\n## Materials and methods\n\n### Fly stocks\n\nThe fruLexA and dsxGAL4(\u03942) lines were previously described (Mellert et al., 2010; Pan et al., 2011). CRM-GAL4s, R72E10-GAL4AD, R71G01-GAL4AD, R15A01-GAL4DBD, LexAop2-FLP (pJFRC79 in attP40), LexAop2-FLP (pJFRC79 in attP2), UAS>stop>myr::GFP (pJFRC41 in attP40), UAS>stop>myr::GFP (pJFRC41 in su(hw)attP1), and 20XUAS>dsFRT>CsChrimson-mVenus (in VK00005) were gifts from Gerald Rubin (Janelia Research Campus) (Pfeiffer et al., 2008; Jenett et al., 2012). 22B11-GAL4 is previously reported (Vaughan et al., 2014). R71G01-LexA::p65 (inserted in attP40) was previously described (Pan et al., 2012). UAS-GCaMP6m was a gift of Douglas Kim (Janelia Research Campus). fruM, VT9665-GAL4DBD, UAS>stop>TNT, and UAS>stop>TNTin were gifts from Barry Dickson (Janelia Research Campus). LexAop-spGFP11 and UAS-spGFP1-10 were gifts from Kristin Scott (UC Berkeley). UAS-DenMark, UAS-syt::GFP was previously described (Nicolai et al., 2010).\n\n### Immunohistochemistry\n\n5- to 7-day-old adult fly CNSs were dissected in Schneider's insect medium (Sigma, MO, United States, S0146) and immediately fixed in 2% paraformaldehyde (PFA) in Schneider's insect medium for 55-min at room temperature (RT). After washing three times with PBS (Phosphate-buffered saline) containing 0.3% Triton X-100 (PBT), the samples were incubated in PBT with 5% normal goat serum (Vector Laboratories, CA, United States) for 1 hr at RT. Samples were then incubated at 4\u00b0C for 24 hr in primary antibody, washed three times in 0.3% PBT at RT, and then incubated at 4\u00b0C for 24 hr in secondary antibody. After washing three times with 0.3% PBT, samples were fixed in 4% paraformaldehyde (PFA) for 3 hr at RT, washed again five times with 0.3% PBT, and mounted onto a poly-lysine-coated coverslip. The coverslip was then immersed into 30%, 50%, 75%, 95%, 100% ethanol for dehydration at 5-min intervals. Next, the coverslip was washed with Xylenes (Fisher Scientific, NJ, United States) for three times in the hood and mounted in DPX solution (Electron Microscopy Sciences, PA, United States) before imaging. Primary antibodies were mouse anti-Bruchpilot nc82 (Developmental Studies Hybridoma Bank, IA, United States) used at a 1:50 dilution, FruM antibody used at 1:100 dilution, and rabbit anti-GFP used at a 1:1000 dilution (Invitrogen). Secondary antibodies were Alexa Fluor 546 goat anti-mouse IgG and Alexa Fluor 488 goat anti-rabbit IgG (Invitrogen, OR, United States) used at a 1:500 dilution.\n\n### Brain registration\n\nA standard brain was generated using CMTK software to average six male and female brains stained with nc82 (anti-Bruchpilot) that were of good quality (Rohlfing and Maurer, 2003; Rohlfing, 2012). Confocal stacks were registered into the standard brain by linear registration and non-rigid warping based on the nc82 channel (Jefferis et al., 2007; Ostrovsky et al., 2013).\n\n### Song-induced chaining behavior\n\nFlies were reared at 22\u00b0C and 50% humidity under a 12 hr:12-hrlight/dark cycle. Male flies were collected immediately after eclosion and aged in groups of 8 for 2 days. They were then anesthetized to remove their wings and allowed to recover for 5\u20137 days before assaying the behavior. Behavioral experiments were performed at 22\u00b0C. Briefly, six males were introduced into the chaining chamber by gentle aspiration without anesthesia, and then videotaped by a Stingray camera (F080B, Allied Vision Technologies, PA, United States) for 6-min. After 1-min in the chamber, continuous pulse song trains were played back with incremental intensities at 30-s intervals. Two pieces of nylon mesh were inserted at both ends of the chaining chamber to allow the delivery of acoustic stimuli from an external speaker (HiVi D10G Woofer, Parts Express, Springboro, OH) located 9-cm from the center of the chamber.\n\nSynthetic pulse song was generated by MATLAB as a train of Gaussian-modulated sinusoidal pulses with a 220 Hz fundamental carrier frequency and a defined IPI. A data acquisition device (USB-6229 BNC, National Instruments) controlled by a custom-written MATLAB program (Source code 1) was used to relay the song signals to an A500 linear amplifier (Willich, Germany) that drives the speaker, triggers the videotaping, and maintains synchrony between the two.\n\nTo calculate the chaining index, the number of flies engaged in chaining was counted every 3 s and summed up for each 30-s block. The maximum chaining index for one block is 60 if all six flies are chaining throughout the 30-s block. Furthermore, a detailed analysis of chaining behavior for each group of flies was presented in a heat map to reflect the number of chaining flies every 3 s throughout the recording time.\n\n### Calcium imaging\n\nR72E10-GAL4/UAS-GCaMP6m and dsxGAL4/UAS-GCaMP6m males were aged in groups of 8\u201312 for 5\u20137 days before calcium imaging. Flies were gently anesthetized on ice and then inserted into a rectangular hole (\u223c1 mm \u00d7 2 mm) and stabilized with low-melting wax as described previously (Zhou et al., 2014). The dorsal head capsule was facing up to the objective and bathed in insect saline (103 mM NaCl, 5 mM HEPES, 8 mM trehalose, 10 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 2 mM CaCl2, 1.5 mM MgCl2, pH = 7.3), while the antenna protrudes downward on the other side of the plate to receive acoustic stimulation. Because R72E10-GAL4 labels off-target neurons with projections intermingled with the neurites of vPN1 neurons, it is technically difficult to record calcium responses from the vPN1 neurites. We therefore performed calcium imaging from the somas of vPN1 neurons, which are easily identified nearby the lateral horn. The cuticle at the dorsal region of the head was gently removed with sharp forceps, and calcium signals from the somas of vPN1 neurons were recorded. For imaging the neurites of male pC1 neurons, the procedure was the same as previously described (Zhou et al., 2014). At the end of experiments, most flies appeared healthy as they were still exhibiting voluntary abdomen contractions.\n\nCalcium-imaging experiments were done with a 488-nm laser on a Zeiss LSM 710 confocal microscope. Images with 128 \u00d7 128 pixels resolution at a frame rate of 13 Hz were acquired with a water immersion objective lens (40\u00d7/1.0 DIC VIS-IR, Zeiss). A data acquisition device (USB-6229 BNC, National Instruments) was used to control a trigger interface box (1437-440, Zeiss) and an amplifier (Marantz SR5003) to synchronize song stimulus onset and image acquisition. An external speaker located \u223c20-cm from fly antenna was used to present the song stimuli.\n\nSynthetic song stimuli including pulse song (40 pulses) with a defined IPI, 1.4-s sine song (140 Hz) and 1.4-s white noise were generated with MATLAB software. The sound intensity was measured with a sound level meter (NO.33\u20132055, Radioshack). We also measured the synthetic song with a particle-velocity microphone (Microflown Technologies, Arnhem, NL) to make sure that the song intensity (80 dB) used in calcium imaging is within the range of natural Drosophila courtship song (Figure 6\u2014figure supplement 3). To reduce the habituation effects, song stimuli were shuffled randomly and presented at 1-min intervals.\n\n### CsChrimson activation\n\n52 high-power red LEDs (655 nm, LXM3-PD01, Luxeon Rebel) and 96 blue LEDs (468 nm, VAOL-S12SB4, VCC Optoelectronics, CA, United States) were mounted onto a heat sink and suspended above the chaining chambers to provide a source of illumination. Blue LEDs provide constant background illumination to allow flies to see each other, as male chaining behavior depends on the ability to visually tracking other flies. Because CsChrimson is also sensitive to blue light, we kept the blue light at a very low level (0.001 mW/mm2) to make sure that no chaining behavior was triggered with only blue light illumination. The intensity and frequency of high-power red LEDs were controlled with a Teensy 2.0 microcontroller using MATLAB software. Light intensity was measured by placing an optical power meter (PM100D, Thorlabs, NJ, United States) nearby the location of chaining chambers. Fly behavior was recorded by a Stingray camera equipped with a Tokina infrared filter under 880-nm LED illumination (SL1236, Advanced Illumination, VT, United States) to avoid the interference from red and blue LEDs.\n\nFor all the CsChrimson experiments, crosses were set up on standard fly food with 0.2 mM all-trans-retinal. Male flies were collected immediately after eclosion and reared in groups of 8\u201312 on 0.5 mM retinal food for 5\u20137 days before behavioral test. A group of eight males with the same genotype were gently aspirated into a culture dish (430165, 35 mm \u00d7 10 mm, Corning, NY, United States) containing fly food at the bottom. Videotaping and red light stimulation were triggered simultaneously with a MATLAB interface for a total duration of 5 min. Videos were scored using LifesongX software. The percentage of time when at least three flies are in a courtship chain was calculated to quantify the chaining behavior induced by CsChrimson activation.\n\n### Generation of dsxLexA::p65\n\nTo genetically label cells that express dsx, we used homologous recombination (Gong and Golic, 2003) to replace the entire coding sequence of dsx exon 2 (starting after the ATG through the splice donor) with the coding sequence for LexA::p65 (Pfeiffer et al., 2010) followed by a stop codon and a transcription stop cassette containing the SV40 poly-A sequence in tandem with the D. melanogaster \u03b1-tubulin 84B 3\u2032 UTR (Stockinger et al., 2005). For homologous recombination, we generated donor transgenes in which these exogenous sequences were flanked by two homology arms corresponding to the dsx locus: a 2.8-kb 5\u2032 homology arm as per (Robinett et al., 2010) and a 2.7-kb 3\u2032 homology arm extending between genomic sequences GCAATATTGGCACTCAGCTATTATC and CACGTTCGATATTGAGTTGGGTGAA in the dsx second intron. The 3\u2032 arm was PCR-amplified from genomic DNA prepared with the DNeasy Tissue Kit (Qiagen). All DNA fragments were generated by PCR using AccuPrime Supermix (Invitrogen) and sequence-verified. Using restriction endonuclease sites added to the 5\u2032 ends of the PCR primers, these fragments were cloned in the linear order of dsx 5\u2032 arm-LexA::p65-SV40 poly-A/\u03b1-tubulin 84B 3\u2032 UTR-dsx 3\u2032 arm in pBluescript-SK (Invitrogen) and then transferred as a unit into pP{WhiteOut2} (gift of Jeff Sekelsky) to make pP{WO2-dsx-LexA::p65-stop-2}.\n\npP{WO2-dsx-LexA::p65-stop-2} transgenics were made by P element-mediated germ line transformation using standard methods (Rainbow Transgenic Flies, Inc.), and nine independent, homozygous viable, non-third chromosome transformant lines were isolated to serve as donors of the dsx-LexA::p65-stop-2 DNA fragment for homologous recombination (Gong and Golic, 2003). Donors were crossed to a line with heat shock-inducible FLP recombinase and I-SceI endonuclease transgenes (Gong and Golic, 2003), and larvae were heat shocked for 1 hr at 37\u00b0C on days 3 and 4 of development. \u223c7000 female F1 progeny containing the two transgenes and the donor were crossed to lexAop-rCD2::GFP (Lai and Lee, 2006) males and the F2 progeny screened for candidates with a GFP expression pattern matching expression of dsxGAL4(1) (Robinett et al., 2010). 40 independent candidate flies were isolated, but only six were fertile. Of these candidate lines, four produced intersexual progeny when homozygosed or when heterozygous with Df(3R)dsxM+R15 (Baker et al., 1991). These four lines were tested by PCR for proper targeting of LexA::p65-stop into the endogenous dsx locus by using the dsx 5\u2032 genomic and LexA::p65 primers, GTGTGTGAGGCTGCCTATGTACTAG and GACACGATTTCAATGACACCCTTGC, respectively, and the dsx 3\u2032 genomic and \u03b1-tubulin 84B 3\u2032 UTR primers, GAAAGTCGCAGTTTCCTACTGATAC and CCGTCAAGCATGCGATTGTACATAC, respectively. For each candidate, the predicted 5\u2032 and 3\u2032 PCR products were generated, confirming proper targeting.\n\n### Functional connectivity\n\nMale flies 5 to 7 days old were dissected in saline containing: 103 mM NaCl, 3 mM KCl, 5 mM TES, 8 mM trehalose dihydrate, 10 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 2 mM CaCl2, 4 mM MgCl2, bubbled with carbogen (5% CO2/95% O2). The brain and ventral nerve cord were taken out of the fly and laid on a poly-lysine-coated coverslip. The dissection was realized using the minimum level of illumination possible to avoid spurious activation of CsChrimson. Brains were then continuously perfused in the same saline at 60 ml/hr throughout the experiment. Imaging was done on a two-photon scanning microscope (PrairieTechnologies, Bruker). Excitation wavelength was 920 nm. CsChrimson was excited with 50-Hz trains of 2-ms 590-nm light pulses via a LED shining through the objective. Instantaneous powers measured out of the objective ranged between 50 \u03bcW/mm2 and 700 \u03bcW/mm2. Experiments usually started with a 50 pulses train at 50 \u03bcW/mm2. If no response could be seen, the power was raised progressively until a response could be seen or the maximum power was reached. For pharmacology experiments, mecamylamine (50 \u03bcM) was administered through the perfusion line for times ranging from 3 to 5 min, followed by a wash period where the perfusion was drug-free again.\n\nFor aPN1 activation/vPN1 recording, R59C10-LexA::p65/LexAop2-CsChrimson; R72E10-GAL4/UAS-GCaMP6m flies were used and the cell soma of vPN1 neurons was recorded, as it was the only place where we could confidently identify the vPN1 neurons. For vPN1 activation/pC1 recording, R72E10-GAL4AD/UAS-CsChrimson; VT9665-GAL4DBD, dsxLexA/LexAop2-GCaMP6m flies were used and the LPC projection of pC1 neurons was imaged.\n\nIn the cases where cell somas were imaged (vPN1 imaging), fluorescence videos were segmented based on average intensity using k-means clustering, following which individual cell bodies were labeled as different region of interests.\n\nIn the cases where LPC projection was imaged, fluorescence videos were segmented by k-means (with 3 clusters) on the individual pixel traces of every run.\n\nIn both cases, ROIs were then cleaned up by an erosion/dilation step.\n\n\u0394F/F were then calculated for each run with F being the average signal before the stimulation. For further analysis, only the most responding ROI was kept.\n\n### Data analysis\n\nStatistical analysis was performed with MATLAB software. For the song-induced chaining assay, Wilcoxon rank-sum test was used to detect significant differences between TNT and control groups at 80 dB song playback.\n\nFor GCaMP data, ROI selection and peak \u0394F/F calculation were done using custom-written code in MATLAB (Source code 2). Calcium traces were smoothed with a cubic Savitzky-Golay filter. Peak \u0394F/F was calculated from \u0394F/F = (Ft \u2212 Fb)/Fb, where Ft is the maximum value in the 5-s window following stimulus onset and Fb is the averaged value in the 1-s window before the stimulus onset.\n\nWilcoxon signed-rank test was used to compare vPN1/pC1 responses at 35-ms IPI to those at shorter or longer IPIs (Figures 5H, 6K). To normalize responses, each fly's response across IPIs was divided by its maximum response; these responses were subsequently averaged to generate the values presented in Figure 6L\u2013N. To assess the correlation between calcium responses and chaining behavior with respect to IPI tuning, we calculated the Pearson correlation coefficient, r, between GCaMP and behavioral responses normalized by the maximum response value. The significance of this correlation was established by calculating a bootstrap distribution of correlations between samples with randomly permuted IPIs. The vPN1/behavior correlation was compared to the pC1/behavior correlation via Meng's z test (Meng et al., 1992). The significance of the tuning curve shown in Figure 6\u2014figure supplement 2A was calculated using a one-sided Wilcoxon rank-sum test.\n",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "4ef06370-c54f-48cd-992c-cd4c05a2c540",
+      "submission_id": "a0ce8779-b2a7-44d2-b53a-b5f683bcad55",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08477.023](https://doi.org/10.7554/eLife.08477.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cCentral Neural Circuitry Mediating Courtship Song Perception in Male Drosophila\u201d for peer review at eLife. Your submission has been favorably evaluated by K VijayRaghavan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals responsible for the peer review of your submission have agreed to reveal their identity: Mani Ramaswami (Reviewing Editor) and Dan Eberl and Ralph Greenspan (peer reviewers).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis manuscript describes a substantial effort to understand the neural pathway underlying the male version of the sexually dimorphic response to courtship song. Zhou et al. identify third and fourth order neurons in the fly brain that respond to courtship song. They beautifully demonstrate the connectivity of the neurons, their responsiveness to sound, and their involvement in male courtship behavior. Strikingly these synaptically connected neurons are both necessary and sufficient to mediate the male response to courtship song. The manuscript is well written, the experiments well executed and the conclusions are appropriate and make an exciting advance to the field. This work parallels another recent publication by the same group looking at the female equivalent pathway.\n\nPoints to be addressed in a revised manuscript:\n\n1) The conclusion that the neurons are synaptically connected would be strengthened by GRASP experiments. Why are these not attempted or reported? If it is a formal possibility that the connections are indirect, then this should be stated.\n\n2) The conclusion that vPN1 show low-pass filtering and pC1 neurons show band-pass filtering appears to be based on rather slim data. It could well be true but, particularly given the very weak response of pC1 neurons, is it possible that differences between these two neuronal types could be minor and that there could well be no real transformation of song representation from one to the other? This conclusion should be appropriately strengthened or qualified.\n\n3) The authors mention that song induced male chaining is most responsive to \u223c35ms IPI and that aPN1 integrates the pulse rate and vPN1 is a low pass filter. I couldn't seem to find any data or discussion of aPN1 or other projection neurons being able to integrate pulse rates faster than 35ms IPI.\n\n4) Why does aPN1 activation not induce chaining behavior, if activation of the downstream neurons do? Is this a technical problem: i.e. not sufficient activation by the Chrimson system? Or is there a more interesting possibility? This should be acknowledged or discussed.\n\n5) What if it's not vPN1 acting as a low pass filter, but 35ms being the natural limit of the fly auditory system and in turn aPN1 integration? Are there other circuits tuned for higher frequencies? If so, it's worth mentioning. This could potentially argue as another reason for how pC1 in females perceives song information despite lacking the so-called low pass vPN1 filter.\n\n6) In the second paragraph of the subsection \u201cSong-induced chaining behavior is tuned to conspecific IPIs\u201d, this tuning would be superimposed over the receiver tuning in the JO itself in different species (Riabinina et al., 2011, Curr. Biol.).\n\n7) In the first sentence of the fourth paragraph of the Introduction, the word \u201cperceive\u201d here is incorrect. \u201cReceive\u201d is more appropriate here. In other places in the manuscript the authors correctly use the word \u201cperceive\u201d in the context of decoding the sensory signals.\n\n8) In the fourth paragraph of the Introduction, upon mention of the projections to AMMC, the authors should mention that the auditory JO neurons also have a direct input to the Giant Fiber. Relevant citations are Lehnert et al., which they already cite elsewhere in a different context, and Pezier et al., 2014, J Neuroscience.\n",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "df5f7f5f-4aa8-499f-853e-2bdf4b0f30a3",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C1",
+      "claim": "Drosophila melanogaster males sing a multi-part, species-specific courtship song that is both critical to female receptivity and encourages courtship by nearby males.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila melanogaster males sing a multi-part, species-specific courtship song that is both critical to female receptivity and encourages courtship by nearby males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing this behavioral phenomenon.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "2ff358c9-8f29-48f8-945f-c46cc2771d8b",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C2",
+      "claim": "fruM is expressed only in neurons, including \u223c2% of neurons within the CNS, as well as sensory, motor, and higher-order interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fruM is expressed only in neurons, including \u223c2% of neurons within the CNS, as well as sensory, motor, and higher-order interneurons, all of which might comprise neural circuits dedicated to sexual behaviors (Manoli et al., 2005; Stockinger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Manoli et al., 2005 and Stockinger et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "fdbbb138-ce21-407f-88d9-ca6f8329752a",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C3",
+      "claim": "Courtship song consists of two parts: a rhythmic pulse song with an \u223c35-ms inter-pulse interval (IPI) and a \u223c160-Hz sine song.",
+      "claim_type": "EXPLICIT",
+      "source": "When courting a female, the male vibrates his wing to generate a courtship song consisting of two parts: a rhythmic pulse song with an \u223c35-ms inter-pulse interval (IPI) that strongly elicits male courtship behavior as well as female receptivity, as well as a \u223c160-Hz sine song that may play a secondary role (Shorey, 1962; Bennet-Clark and Ewing, 1967; von Philipsborn et al., 2011; Arthur et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies (Shorey, 1962; Bennet-Clark and Ewing, 1967; von Philipsborn et al., 2011; Arthur et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "b68ae06f-f1fe-4d05-882a-e7cb696fb761",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C4",
+      "claim": "Pulse song with \u223c35 ms IPI strongly elicits male courtship behavior as well as female receptivity.",
+      "claim_type": "EXPLICIT",
+      "source": "When courting a female, the male vibrates his wing to generate a courtship song consisting of two parts: a rhythmic pulse song with an \u223c35-ms inter-pulse interval (IPI) that strongly elicits male courtship behavior as well as female receptivity, as well as a \u223c160-Hz sine song that may play a secondary role (Shorey, 1962; Bennet-Clark and Ewing, 1967; von Philipsborn et al., 2011; Arthur et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "cf6f59c5-0f2b-4630-ae4f-52b31b491d77",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C5",
+      "claim": "Drosophila receives sound stimuli by vibration of the arista, a feather-like structure protruding from the second segment of the antenna.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila receives sound stimuli by vibration of the arista, a feather-like structure protruding from the second segment of the antenna (Gopfert and Robert, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Gopfert and Robert, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "63e18ab7-1f40-42bf-9d6d-e3bd5f73f319",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C6",
+      "claim": "aPN1 is necessary for both female receptivity and the male song-induced locomotion response.",
+      "claim_type": "EXPLICIT",
+      "source": "aPN1 is necessary for both female receptivity and the male song-induced locomotion response, and it shows a response to courtship song that is proportional to pulse rate (Vaughan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vaughan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "518f8526-24f2-4be2-b948-6269d09d5355",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C7",
+      "claim": "Female pC1 neurons are activated by the male-specific pheromone cVA.",
+      "claim_type": "EXPLICIT",
+      "source": "Female pC1 neurons are activated by the male-specific pheromone cVA (Zhou et al., 2014), while male fruM+/dsx+ P1 neurons (a subset of the dsx+ pC1 population) are inhibited by cVA but activated by female pheromones (Kohatsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "d4948d04-540e-41b0-b056-3833cc3eeb30",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C8",
+      "claim": "Male fruM+/dsx+ P1 neurons are inhibited by cVA but activated by female pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Female pC1 neurons are activated by the male-specific pheromone cVA (Zhou et al., 2014), while male fruM+/dsx+ P1 neurons (a subset of the dsx+ pC1 population) are inhibited by cVA but activated by female pheromones (Kohatsu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kohatsu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "1ad19b77-2752-4317-a92b-29d3773563d9",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C9",
+      "claim": "Female pC1 neurons are also activated by sine and pulse songs.",
+      "claim_type": "EXPLICIT",
+      "source": "Female pC1 neurons are also activated by sine and pulse songs (Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "0c779f35-a27c-4ca2-9d73-254dc56f79e7",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C10",
+      "claim": "Three independent GAL4 lines (R21B12, R22B11, and R49F09) label four to five aPN1 cells per hemisphere when intersected with fruLexA.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize fruM+ aPN1 cells, we identified GAL4 drivers (R21B12, R22B11, and R49F09) that label four to five aPN1 cells per hemisphere when intersected with fruLexA (Figure 1A, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A and Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "3f2efff1-f853-4347-a2f1-64c53d93a449",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C11",
+      "claim": "Two GAL4 drivers (R72E10 and R46F09) label a subset of the fruM+ aSP-k cell type when crossed to LexAop2-FLP; fruLexA, UAS>stop>myr::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Two GAL4 drivers (R72E10 and R46F09) were identified that, when crossed to LexAop2-FLP; fruLexA, UAS>stop>myr::GFP, labeled a subset of the fruM+ aSP-k cell type previously identified via MARCM (Mosaic analysis with a repressible cell marker) clones (Cachero et al., 2010) (Figure 1B and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B and Figure 1\u2014source data 1, and citation to Cachero et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "75ae6d84-9fce-48bf-9016-0b27d47edf4f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C12",
+      "claim": "vPN1 neurons have cell bodies located laterally in the dorsal anterior brain and neurites that innervate the WED and the LPC.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons, termed vPN1, have cell bodies located laterally in the dorsal anterior brain and neurites that innervate the WED and the LPC (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "bbce376e-1ee7-4fff-bf08-d2160e47365d",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C13",
+      "claim": "Co-registration of fruM+ aPN1 and vPN1 neurons revealed substantial overlap in the WED region.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-registration of fruM+ aPN1 and vPN1 neurons revealed substantial overlap in the WED region (Figure 1C), suggesting potential synaptic connectivity between aPN1 and vPN1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "e4b836c3-afb9-4f41-9fb7-dd1ad8787398",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C14",
+      "claim": "aPN1 neurons had indistinguishable projection patterns in female and male brains.",
+      "claim_type": "EXPLICIT",
+      "source": "aPN1 neurons had indistinguishable projection patterns in female and male brains (Figure 1D\u2013F), while vPN1 neurons were only observed in male brains (Figure 1G), with female brains showing only very weak expression in a few seemingly unrelated neurons (Figure 1H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "55f0edcf-c139-4aec-9d63-5c90c12bcd19",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C15",
+      "claim": "vPN1 neurons were only observed in male brains.",
+      "claim_type": "EXPLICIT",
+      "source": "aPN1 neurons had indistinguishable projection patterns in female and male brains (Figure 1D\u2013F), while vPN1 neurons were only observed in male brains (Figure 1G), with female brains showing only very weak expression in a few seemingly unrelated neurons (Figure 1H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 1G\u2013I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "060362ae-38eb-4495-a4a5-d7361efe5732",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C16",
+      "claim": "vPN1 neurons remain absent from the female brain using the vPN1 split-GAL4 driver.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this driver, vPN1 neurons remain absent from the female brain, and fruM is expressed in all vPN1 cells of the male (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "7e3b6b47-8907-4086-a873-9f4b8610e2fc",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C17",
+      "claim": "fruM is expressed in all vPN1 cells of the male.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this driver, vPN1 neurons remain absent from the female brain, and fruM is expressed in all vPN1 cells of the male (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "3dd984ea-2ed0-4222-98ea-278a71069b64",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C18",
+      "claim": "The male-specific expression pattern of vPN1 is not affected in heterozygous fru mutants (fru4\u201340/+).",
+      "claim_type": "EXPLICIT",
+      "source": "The male-specific expression pattern of vPN1 is not affected in heterozygous fru mutants (fru4\u201340/+, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "b4431eb5-640e-4fb6-9dc0-2d16bb9379fd",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C19",
+      "claim": "vPN1 expression is absent in fru null mutant males (fru4\u201340/fruLexA).",
+      "claim_type": "EXPLICIT",
+      "source": "However, vPN1 expression is absent in fru null mutant males (fru4\u201340/fruLexA, Figure 2E), while misexpression of FruM protein in females (fruM/+) leads to an induction of vPN1 expression in the female brain (Figure 2F) (Demir and Dickson, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "97993ef1-70ee-47e3-8701-5e0c0a98194b",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C20",
+      "claim": "Misexpression of FruM protein in females (fruM/+) leads to an induction of vPN1 expression in the female brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, vPN1 expression is absent in fru null mutant males (fru4\u201340/fruLexA, Figure 2E), while misexpression of FruM protein in females (fruM/+) leads to an induction of vPN1 expression in the female brain (Figure 2F) (Demir and Dickson, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 2F and citation to Demir and Dickson, 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "81e78939-b5de-4b76-bac9-a139a6551d0f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C21",
+      "claim": "fruM plays an instructive role in the specification of sexual dimorphism of vPN1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fruM plays an instructive role in the specification of sexual dimorphism of vPN1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the genetic manipulation experiments showing that fruM is necessary and sufficient for vPN1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "c34a3908-e43a-4aad-b9b1-7602b3d8eda8",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C22",
+      "claim": "Male flies respond to courtship song by increasing locomotion and exploratory courtship of nearby flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Male flies respond to courtship song, and pulse song in particular, by increasing locomotion and exploratory courtship of nearby flies (Schilcher, 1976b; Eberl et al., 1997; Kowalski et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "6c83a79b-6424-45da-ba55-478592f67fe4",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C23",
+      "claim": "Male flies displayed robust song-induced chaining behavior upon stimulation by pulse song with a ramping intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon stimulation by pulse song with a ramping intensity, we indeed observed that male flies displayed robust song-induced chaining behavior (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "8375af10-da5f-4def-9e2e-28da3e69e71e",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C24",
+      "claim": "The chaining response was significantly higher for songs at 35-ms IPI than for all other IPIs, across a wide range of intensities (p < 0.05, 72.5\u201385 dB).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the chaining response was significantly higher for songs at 35-ms IPI than for all other IPIs, across a wide range of intensities (p < 0.05, 72.5\u201385 dB, Wilcoxon rank-sum test; Figure 3B,C), suggesting that D. melanogaster males to some extent are able to preferentially respond to pulse song of their own species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 3B,C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "ecf7ade9-29f5-4b7c-a608-d125821b8817",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C25",
+      "claim": "Silencing fruM+ aPN1 neurons reduced song-induced chaining compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Three independent GAL4 \u2229 fruLexA genotypes were used to confirm that silencing fruM+ aPN1 neurons reduced male courtship hearing; indeed, flies expressing tetanus neurotoxin light chain (TNT), which blocks synaptic vesicle release, in fruM+ aPN1 neurons showed significantly reduced chaining compared to controls expressing an inactive form of TNT (TNTin) or lacking fruLexA (Figure 4A\u2013C) (Sweeney et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "657fd2f6-b5a7-4c48-a47e-dd9033bc18f4",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C26",
+      "claim": "fruM+ aPN1 neurons are required for song-induced male chaining.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, fruM+ aPN1 neurons are required for song-induced male chaining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the silencing experiments showing reduced chaining behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "c78da6c8-2eb7-41cf-956d-c283baf1abe1",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C27",
+      "claim": "vPN1 silencing reduced song-induced chaining.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two GAL4 drivers (R72E10, R46F09) in an intersectional approach (GAL4 \u2229 fruLexA) to target TNT expression to vPN1 neurons, we observed that vPN1 silencing reduced song-induced chaining (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "ff0b6b02-6246-4fb9-8902-f195be20e5e8",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C28",
+      "claim": "Both fruM+ aPN1 and fruM+ vPN1 neurons are required for the male-chaining response to pulse song.",
+      "claim_type": "EXPLICIT",
+      "source": "As the multiple drivers used for aPN1 and vPN1 share no off-target expression in fruLexA+ neurons (Figure 4A\u2013E), we conclude that both fruM+ aPN1 and fruM+ vPN1 fruM neurons are required for the male-chaining response to pulse song.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the silencing experiments with multiple independent drivers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "44a2ce6b-c169-4fc8-9fd7-c4a21f89eaa5",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C29",
+      "claim": "vPN1 neurons respond to both pulse song and sine song, but not to white noise stimuli at 80 dB.",
+      "claim_type": "EXPLICIT",
+      "source": "When auditory stimuli were presented at 80 dB, vPN1 neurons responded to both pulse song and sine song, but not to white noise stimuli (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "794c422c-1d8c-4cb7-b203-78c6f4429d64",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C30",
+      "claim": "The threshold of vPN1 activation matched the behavioral threshold for song-induced chaining (EC50 = 68.2 dB for vPN1 responses v.s. EC50 = 70.6 dB for chaining responses).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the threshold of vPN1 activation matched the behavioral threshold for song-induced chaining (EC50 = 68.2 dB for vPN1 responses v.s. EC50 = 70.6 dB for chaining responses, half-maximal sigmoid fit; Figure 5F and Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5F and behavioral data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "e92f746d-06ad-4d4f-a657-ca0e2ce84800",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C31",
+      "claim": "vPN1 neurons respond strongly to pulse trains with IPIs of 35 ms and above, with significant attenuation at IPIs below 25 ms (p < 0.01 when compared to responses at 35-ms IPI).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that vPN1 neurons respond strongly to pulse trains with IPIs of 35 ms and above, with significant attenuation at IPIs below 25 ms (p < 0.01 when compared to responses at 35-ms IPI, Wilcoxon signed-rank test; Figure 5H and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 5H and Figure 5\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "f2558f33-98b4-46d8-811b-e08c311d2068",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C32",
+      "claim": "The vPN1 signal displays low-pass response properties for IPI with a shoulder around 35-ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal displays low-pass response properties for IPI with a shoulder around 35-ms and is different from the aPN1 response that responds as a function of pulse rate (Vaughan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the calcium imaging data and comparison to aPN1 responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "690f2369-d5d4-4707-abb2-62359617b07d",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C33",
+      "claim": "The neurites of pC1 and vPN1 neurons extensively overlap in the LPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurites of pC1 and vPN1 neurons extensively overlap in the LPC, including the lateral crescent, the lateral junction, the arch and the ring region (Yu et al., 2010), suggesting potential synaptic contacts between these two cell types (Figure 6B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 6B\u2013D and citation to Yu et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "3350c111-2be6-4bf6-8e8c-68a20305ce6f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C34",
+      "claim": "TNT-mediated inactivation of pC1 neurons almost completely abolished song-induced chaining behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, TNT-mediated inactivation of pC1 neurons almost completely abolished song-induced chaining behavior (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "923ae9f8-7948-409e-9d4f-7e704649a18c",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C35",
+      "claim": "pC1 neurons are only sensitive to pulse song stimuli at 80 dB and above (EC50 = 79.7 dB).",
+      "claim_type": "EXPLICIT",
+      "source": "pC1 neurons are only sensitive to pulse song stimuli at 80 dB and above (EC50 = 79.7 dB, sigmoid fit; Figure 6I),a higher activation threshold than that observed for vPN1 (EC50 = 68.2 dB; Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "e5396e06-e3cc-4be3-80ac-976440695f1a",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C36",
+      "claim": "Pulse-song stimuli evoked calcium transients in pC1 neurites, while sine song and white noise induced little response.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, pulse-song stimuli evoked calcium transients in pC1 neurites, while sine song and white noise induced little response (Figure 6H), consistent with the report that sine song and white noise are not capable of inducing chaining behavior (Eberl et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 6H and citation to Eberl et al., 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "e19b6271-fa0b-4953-9d35-29f047037b4f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C37",
+      "claim": "The pC1 neurite response showed a strong response to pulse song with IPIs of 35\u201365 ms, significantly reduced at both short (15\u201325 ms) and long (85\u201395 ms) IPIs (p < 0.01 when compared to responses at 35-ms IPI).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the low-pass response of vPN1, the pC1 neurite response showed a strong response to pulse song with IPIs of 35\u201365 ms. This response is significantly reduced at both short (15\u201325 ms) and long (85\u201395 ms) IPIs (p < 0.01 when compared to responses at 35-ms IPI, Wilcoxon signed-rank test; Figure 6K, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 6K and Figure 6\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "1435730c-f62f-415f-b9db-d28f5acc7c81",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C38",
+      "claim": "The pC1 response reflects a band-pass sensitivity to pulse song.",
+      "claim_type": "EXPLICIT",
+      "source": "This response reflects a band-pass sensitivity to pulse song, which is not seen in either aPN1 or vPN1, and qualitatively matches the IPI sensitivity of the behavioral response in male and female flies (Bennet-Clark, 1969; Yoon et al., 2013; Vaughan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the calcium imaging data and comparison to behavioral responses, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "b3bc472c-1b3c-4628-8f0f-9514d2773693",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C39",
+      "claim": "For vPN1, there is only a moderate correlation between calcium response and the IPI sensitivity of song-induced chaining (r = 0.67; p < 0.017).",
+      "claim_type": "EXPLICIT",
+      "source": "For vPN1, we observed only a moderate correlation between this calcium response and the IPI sensitivity of song-induced chaining (r = 0.67; p < 0.017, permutation test, Figure 6L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of calcium imaging and behavioral data shown in Figure 6L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "81f03da0-d8a8-4815-8593-ee0ac53a2ca7",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C40",
+      "claim": "The pC1 response closely matches the IPI sensitivity of song-induced chaining (r = 0.89; p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the pC1 response closely matches the IPI sensitivity of song-induced chaining (r = 0.89; p < 0.001, permutation test, Figure 6M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of calcium imaging and behavioral data shown in Figure 6M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "ffbe868f-cac3-4757-90af-0c690f497790",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C41",
+      "claim": "The correlation with the behavioral response is higher for pC1 than vPN1 (p < 0.037).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation with the behavioral response is higher for pC1 than vPN1 (p < 0.037, Meng's z-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparison of correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "44b00422-a8e3-4b74-9ee0-ccb8f025e56c",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C42",
+      "claim": "pC1 activity may integrate information from vPN1 and other neurons to determine the level of courtship-chaining behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that pC1 activity may integrate information from vPN1 and other neurons to determine the level of courtship-chaining behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the correlation analysis and physiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "fb979e95-2346-4643-b11c-64f20b388100",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C43",
+      "claim": "CsChrimson-mediated activation of aPN1 neurons did not induce male-chaining behavior when tested with two independent GAL4 drivers (R22B11 and R49F09).",
+      "claim_type": "EXPLICIT",
+      "source": "CsChrimson-mediated activation of aPN1 neurons did not induce male-chaining behavior when we tested two independent GAL4 drivers (R22B11 and R49F09) (Figure 7A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic behavioral data shown in Figure 7A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "450ca294-f928-4659-a5ff-72c3d31b69e6",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C44",
+      "claim": "CsChrimson-mediated activation of vPN1 neurons induced robust chaining behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CsChrimson-mediated activation of putative third-order vPN1 neurons induced robust chaining behavior (Figure 7B,D and Video 1), which was not observed in the absence of red light stimulation or in control flies lacking GAL4 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic behavioral data shown in Figure 7B,D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "3e2f793e-4a05-4d54-88cc-f51a65e31d32",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C45",
+      "claim": "Activation of pC1 neurons induced robust male-chaining behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activation of pC1 neurons induced robust male-chaining behavior (Figure 7C,E and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic behavioral data shown in Figure 7C,E and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "e60eecb6-a291-44be-9f31-a915a147a5da",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C46",
+      "claim": "Activation of vPN1 induced chaining in an intensity-dependent or frequency-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While activation of vPN1 induced chaining in an intensity-dependent or frequency-dependent manner, activation of pC1 generated a saturating response in which even the lowest intensity (0.006 mW/mm2) or the lowest frequency (10 Hz) was able to induce robust chaining through >90% of the testing period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by optogenetic behavioral data shown in Figure 7F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "ecd54c3b-b163-4766-afb5-00d02b37e8c0",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C47",
+      "claim": "Activation of pC1 generated a saturating response in which even the lowest intensity (0.006 mW/mm2) or the lowest frequency (10 Hz) was able to induce robust chaining through >90% of the testing period.",
+      "claim_type": "EXPLICIT",
+      "source": "While activation of vPN1 induced chaining in an intensity-dependent or frequency-dependent manner, activation of pC1 generated a saturating response in which even the lowest intensity (0.006 mW/mm2) or the lowest frequency (10 Hz) was able to induce robust chaining through >90% of the testing period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by optogenetic behavioral data shown in Figure 7F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "93ed7739-c235-4bf3-98e9-a9cee6b0dc63",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C48",
+      "claim": "The dendrites of vPN1 target the WED region, and vPN1 axonal termini ramify extensively in the LPC region.",
+      "claim_type": "EXPLICIT",
+      "source": "The dendrites of vPN1 target the WED region, and vPN1 axonal termini ramify extensively in the LPC region (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data using DenMark and Syt::GFP shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "4df80194-44a4-4673-ad96-0fea4b0a41b6",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C49",
+      "claim": "Both dendrites and axons of pC1 are observed within the LPC region.",
+      "claim_type": "EXPLICIT",
+      "source": "Both dendrites and axons of pC1 are observed within the LPC region (Figure 8B), and vPN1 axons overlap with pC1 dendrites when registered in a standard brain (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data using DenMark and Syt::GFP shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "41029dd9-a38b-4123-a522-e99d809971c5",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C50",
+      "claim": "vPN1 axons overlap with pC1 dendrites when registered in a standard brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Both dendrites and axons of pC1 are observed within the LPC region (Figure 8B), and vPN1 axons overlap with pC1 dendrites when registered in a standard brain (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "c28b3a16-4e66-4c53-83de-b497009dbe38",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C51",
+      "claim": "Pre-synaptic activation of aPN1 elicited calcium responses in vPN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-synaptic activation of aPN1 elicited calcium responses in vPN1 (Figure 8D), suggesting a functional connection between aPN1 and vPN1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simultaneous optogenetic activation and calcium imaging data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "4fb3c1ac-04fb-43ce-abda-43806d8b877d",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C52",
+      "claim": "Activation of vPN1 elicited robust calcium responses in pC1 neurites.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, activation of vPN1 elicited robust calcium responses in pC1 neurites (Figure 8E), supporting the idea that vPN1 neurons form functional synapses with pC1 neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simultaneous optogenetic activation and calcium imaging data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "10a3d24c-e4cc-4e3b-a5ed-24bcc30c2b29",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C53",
+      "claim": "The effects of aPN1 activation on vPN1 and vPN1 activation on pC1 were reduced by the administration of the acetylcholine receptor antagonist mecamylamine.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, these effects were reduced by the administration of the acetylcholine receptor antagonist mecamylamine (Figure 8D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pharmacology experiments shown in Figure 8D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "98dee44e-a6aa-4ff9-9c83-da5a20dce3e7",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C54",
+      "claim": "Significant GRASP signal was observed in the WED region between aPN1 and vPN1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By expressing spGFP11 in aPN1 neurons and spGFP1-10 in vPN1 neurons, we observed significant GRASP signal in the WED region (Figure 8\u2014figure supplement 1D), suggesting the connections between aPN1 and vPN1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GRASP data shown in Figure 8\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "1a015a53-0a7a-42f1-a251-d750dd2a8313",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C55",
+      "claim": "No GRASP signal was detected between vPN1 neurons and pC1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no GRASP signal was detected when we drove spGFP1-10 expression in vPN1 neurons with 72E10-GAL4 and spGFP11 expression in pC1 neurons with 71G01-LexA (Figure 8\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GRASP data shown in Figure 8\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "3643a2c3-a51a-4f3e-b006-75fb5479d108",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C56",
+      "claim": "The aPN1-vPN1-pC1 pathway is a labeled line for courtship hearing.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that the aPN1-vPN1-pC1 pathway is a labeled line for courtship hearing, by fulfilling four criteria: (1) these neurons are functionally connected; (2) these neurons respond preferentially to courtship song; (3) these neurons are necessary for the behavioral response to courtship song in male flies, and (4) activation of this labeled line provides a fictive stimulus, observable by the chaining response elicited upon CsChrimson activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined anatomical, behavioral, and physiological evidence presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "696d6ce2-e2f8-4b87-8fb7-e639762b6167",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C57",
+      "claim": "vPN1 may represent the third-order auditory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We present several lines of evidence suggesting that vPN1 may represent the third-order auditory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the anatomical, behavioral, and physiological evidence presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "fde4f91a-8d32-4284-ab4b-a0334f106c22",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C58",
+      "claim": "vPN1 neurons likely target dsx+ pC1 neurons directly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that vPN1 neurons likely target dsx+ pC1 neurons directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the anatomical overlap and functional connectivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "3bf22f57-c435-434f-8c9c-63d79c61821d",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C59",
+      "claim": "The aPN1-vPN1-pC1 pathway provides a labeled line for processing courtship song in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we provide anatomical, behavioral, and physiological evidence that the aPN1-vPN1-pC1 pathway provides a labeled line for processing courtship song in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined evidence presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "4223bc54-4496-4d57-b832-7e3a0678e968",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C60",
+      "claim": "The vPN1 population constitutes a male-specific subset of the larger aSP-k cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore infer that the vPN1 population constitutes a male-specific subset of the larger aSP-k cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the anatomical and genetic data showing male-specific expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "7d4954a9-a289-40b7-b881-694693d35a0f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C61",
+      "claim": "The IPI sensitivity appropriate for species-appropriate responses is likely to be generated through a multi-stage transformation of song stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the mechanistic details remain unclear, the IPI sensitivity appropriate for species-appropriate responses is likely to be generated through a multi-stage transformation of song stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of IPI tuning across aPN1, vPN1, and pC1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "8d9b392f-a67b-4a7a-b35d-793bb52bd6e8",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C62",
+      "claim": "pC1 neurons are sexually dimorphic in both cell number and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The central integrators of courtship-related sensory cues in male and female flies, the pC1 neurons, are themselves sexually dimorphic in both cell number and morphology (Kimura et al., 2008; Kohatsu et al., 2011; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "56bbcc6b-7ded-4992-892d-f46916310146",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C63",
+      "claim": "pC1 neurons show male-specific innervation of the LPC arch and male-specific contralateral projections.",
+      "claim_type": "EXPLICIT",
+      "source": "pC1 neurons arborize within the triangular lateral junction of the LPC in both sexes, where integration of multiple sensory modalities may occur, but they also show male-specific innervation of the LPC arch and male-specific contralateral projections (Kimura et al., 2008; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "f14392e3-ac23-4bf1-af3c-241f73fb034d",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C64",
+      "claim": "pC1 neurons are stimulated by pulse song in both sexes, but are also stimulated by sine song in females.",
+      "claim_type": "EXPLICIT",
+      "source": "For courtship hearing, pC1 neurons are stimulated by pulse song in both sexes, but are also stimulated by sine song in females (Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "756efc86-637a-4323-900a-09e491ee01b1",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C65",
+      "claim": "Both males and females are responsive to pulse song, while females are also responsive to sine song.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the behavioral observation that both males and females are responsive to pulse song, while females are also responsive to sine song (Bennet-Clark, 1969; Schilcher, 1976a, 1976b; Eberl et al., 1997; Shirangi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "67bbfb0f-e95b-45e8-bbc6-e9930dea349f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C66",
+      "claim": "aSP-k neurons are present in both sexes and extend male-specific processes that innervate the LPC arch.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aSP-k neurons are present in both sexes and extend male-specific processes that innervate the LPC arch (Cachero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cachero et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "d1d18cd2-3e25-468c-84bd-37c43f78e336",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "claim_id": "C67",
+      "claim": "There is a gradient of sexual dimorphism across the ascending pathway for both olfaction and audition, with limited dimorphism in second-order neurons but dramatic changes in third-order neurons and integrative neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we observe a gradient of sexual dimorphism across the ascending pathway for both olfaction and audition. In both cases, we note only limited sexual dimorphism in second-order neurons (DA1 and aPN1, respectively), but dramatic changes in third-order neurons (aSP-f/aSP-g and vPN1) and integrative neurons (pC1), which show significant dimorphisms in cell number and morphology (Datta et al., 2008; Ruta et al., 2010; Kohatsu et al., 2011; Kohl et al., 2013; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of sexual dimorphism across different neuron types, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f47bde51-07d1-4a49-bf97-05249fdeafc8",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified aPN1 and vPN1 neurons using intersectional genetic labeling. Three GAL4 lines label aPN1 neurons (4-5 cells per hemisphere), and two GAL4 lines label vPN1 neurons (a subset of aSP-k cell type). Co-registration revealed substantial overlap between aPN1 and vPN1 in the WED region, suggesting potential synaptic connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by anatomical data in Figures 1A-C with multiple independent driver lines. The co-registration approach provides strong anatomical evidence for potential connectivity between aPN1 and vPN1 neurons in the WED region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "vPN1 neurons are male-specific and their expression is controlled by fruM. aPN1 neurons show no sexual dimorphism, while vPN1 neurons are present only in males. fruM is necessary (absent in fru null mutants) and sufficient (induced in females by fruM misexpression) for vPN1 expression. The vPN1 population constitutes a male-specific subset of the aSP-k cell type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 and C60 are well-supported by anatomical data in Figures 1D-I and 2B-F showing sexual dimorphism and genetic manipulation experiments. The necessity and sufficiency experiments with fru mutants provide strong evidence for fruM's instructive role in vPN1 specification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "62ed6c61-b244-42cb-a64e-99507e7c1e40",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Male flies display robust song-induced chaining behavior that is tuned to conspecific IPIs. Chaining response was significantly higher for 35-ms IPI compared to all other IPIs across a wide range of intensities (p < 0.05, 72.5-85 dB).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by behavioral data in Figure 3A-C with appropriate statistical analysis (Wilcoxon rank-sum test). The behavioral assay demonstrates IPI selectivity matching the species-specific courtship song parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "5183c0cb-b391-469f-95f2-b9037997c50c",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both fruM+ aPN1 and fruM+ vPN1 neurons are necessary for song-induced male chaining. Silencing either aPN1 or vPN1 neurons with TNT significantly reduced chaining behavior compared to controls, tested with multiple independent GAL4 drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by behavioral data in Figure 4A-E using multiple independent driver lines with appropriate controls (TNTin and no LexA). The use of multiple drivers with no shared off-target expression strengthens the conclusion that both neuron types are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "8000e232-3bec-4efc-861c-d4d718634a33",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "vPN1 neurons respond to pulse and sine song but not white noise, with an activation threshold (EC50 = 68.2 dB) matching behavioral threshold (EC50 = 70.6 dB). vPN1 shows low-pass response properties for IPI with strong responses to IPIs \u226535 ms and significant attenuation below 25 ms (p < 0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by calcium imaging data in Figures 5D-H with appropriate statistical analysis. The close match between physiological and behavioral thresholds provides strong evidence for vPN1's role in courtship hearing. However, the authors acknowledge that GCaMP6m's slow decay kinetics may contribute to the observed low-pass properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "pC1 neurons are necessary for song-induced chaining and show band-pass sensitivity to pulse song. pC1 neurites extensively overlap with vPN1 in the LPC. TNT-mediated inactivation of pC1 almost completely abolished chaining. pC1 neurons respond preferentially to pulse song with IPIs of 35-65 ms (EC50 = 79.7 dB), showing significant reduction at both short and long IPIs (p < 0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 are supported by anatomical data (Figure 6B-D), behavioral data (Figure 6E), and calcium imaging data (Figure 6H-K) with appropriate statistical analysis. The band-pass response of pC1 qualitatively matches behavioral IPI sensitivity, though the authors note potential confounds from GCaMP6m kinetics and recording site differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "fbb2a415-3551-4602-960f-0493b109dc05",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "pC1 calcium responses correlate more strongly with behavioral chaining than vPN1 responses. vPN1 shows moderate correlation (r = 0.67; p < 0.017) while pC1 shows strong correlation (r = 0.89; p < 0.001) with IPI sensitivity of chaining behavior. The correlation is significantly higher for pC1 than vPN1 (p < 0.037).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by statistical analysis in Figure 6L-M using permutation tests and Meng's z-test. Claim C42 is an inference from these correlations suggesting pC1 integrates information from multiple sources. The statistical approach is appropriate, though the inference about integration requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "ca1df6bf-6b7a-4ecc-8595-7353bc0ba125",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optogenetic activation of vPN1 or pC1, but not aPN1, induces male chaining behavior. vPN1 activation induced chaining in an intensity- and frequency-dependent manner, while pC1 activation produced saturating responses even at the lowest intensity (0.006 mW/mm\u00b2) or frequency (10 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by optogenetic behavioral data in Figure 7A-G with appropriate controls (no red light, no GAL4). The differential responses to activation of aPN1, vPN1, and pC1 suggest a hierarchical transformation of song information, though the authors acknowledge they cannot control for expression strength differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "f928af26-0bfd-47f0-a660-5c9ce4181fec",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The aPN1-vPN1-pC1 pathway is functionally connected. Anatomical data using DenMark and Syt::GFP show vPN1 dendrites in WED and axons in LPC, with overlap between vPN1 axons and pC1 dendrites. Optogenetic activation of aPN1 elicits calcium responses in vPN1, and vPN1 activation elicits responses in pC1, both reduced by mecamylamine. GRASP signal was observed between aPN1 and vPN1 but not between vPN1 and pC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C53 are supported by anatomical data (Figure 8A-C) and functional connectivity experiments (Figure 8D-E) with pharmacological validation. However, C54-C55 show inconsistent GRASP results - positive for aPN1-vPN1 but negative for vPN1-pC1. The authors suggest possible explanations (subset labeling, diffuse neurites), but the lack of GRASP signal for vPN1-pC1 creates uncertainty about direct synaptic connectivity. The functional connectivity data support the pathway, but monosynaptic connections remain unconfirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "f7cd7475-65c7-48c8-958a-3b8e4a55d14e",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The aPN1-vPN1-pC1 pathway constitutes a labeled line for courtship hearing in males. The authors conclude this pathway fulfills four criteria: functional connectivity, preferential response to courtship song, necessity for behavioral response, and sufficiency to induce chaining upon activation. vPN1 represents third-order auditory neurons that likely target pC1 neurons directly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 represent the main conclusions synthesized from multiple lines of evidence (anatomical, behavioral, physiological). The four criteria for a labeled line are well-supported by the data presented. However, the claim of direct targeting (C58) is somewhat uncertain given the negative GRASP result between vPN1 and pC1, though functional connectivity is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "623797f0-416e-44df-80db-6600fc419840",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IPI sensitivity appropriate for species-specific responses is likely generated through multi-stage transformation of song stimuli across the aPN1-vPN1-pC1 pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by the comparison of IPI tuning across aPN1 (pulse rate integration), vPN1 (low-pass), and pC1 (band-pass) shown in calcium imaging data. The progressive transformation from aPN1 to pC1 provides evidence for multi-stage processing, though the authors acknowledge mechanistic details remain unclear and potential confounds from GCaMP6m kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about Drosophila courtship song, fruM expression, auditory reception, and sexual dimorphism of pC1 neurons are established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9, C22, and C62-C66 are all supported by appropriate citations to prior literature. These provide the necessary background context for the current study and are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    },
+    {
+      "id": "64898fed-17e5-444b-ae1f-02aca1e9c5ba",
+      "content_id": "7c46dc57-36b7-4766-b716-ece076321cd7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "There is a gradient of sexual dimorphism across ascending pathways for olfaction and audition, with limited dimorphism in second-order neurons (DA1, aPN1) but dramatic changes in third-order neurons (aSP-f/aSP-g, vPN1) and integrative neurons (pC1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by the comparison of sexual dimorphism patterns across the auditory pathway demonstrated in this study (aPN1 vs vPN1 vs pC1) and analogous patterns in olfactory pathways from cited literature. This represents a broader conceptual insight about circuit organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:07:23.770510Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c779f35-a27c-4ca2-9d73-254dc56f79e7",
+      "result_id": "f47bde51-07d1-4a49-bf97-05249fdeafc8"
+    },
+    {
+      "claim_id": "3f2efff1-f853-4347-a2f1-64c53d93a449",
+      "result_id": "f47bde51-07d1-4a49-bf97-05249fdeafc8"
+    },
+    {
+      "claim_id": "75ae6d84-9fce-48bf-9016-0b27d47edf4f",
+      "result_id": "f47bde51-07d1-4a49-bf97-05249fdeafc8"
+    },
+    {
+      "claim_id": "bbce376e-1ee7-4fff-bf08-d2160e47365d",
+      "result_id": "f47bde51-07d1-4a49-bf97-05249fdeafc8"
+    },
+    {
+      "claim_id": "e4b836c3-afb9-4f41-9fb7-dd1ad8787398",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "55f0edcf-c139-4aec-9d63-5c90c12bcd19",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "060362ae-38eb-4495-a4a5-d7361efe5732",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "7e3b6b47-8907-4086-a873-9f4b8610e2fc",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "3dd984ea-2ed0-4222-98ea-278a71069b64",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "b4431eb5-640e-4fb6-9dc0-2d16bb9379fd",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "97993ef1-70ee-47e3-8701-5e0c0a98194b",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "81e78939-b5de-4b76-bac9-a139a6551d0f",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "4223bc54-4496-4d57-b832-7e3a0678e968",
+      "result_id": "6a740820-1ae6-4a8a-9361-ad4bcf0af7ba"
+    },
+    {
+      "claim_id": "6c83a79b-6424-45da-ba55-478592f67fe4",
+      "result_id": "62ed6c61-b244-42cb-a64e-99507e7c1e40"
+    },
+    {
+      "claim_id": "8375af10-da5f-4def-9e2e-28da3e69e71e",
+      "result_id": "62ed6c61-b244-42cb-a64e-99507e7c1e40"
+    },
+    {
+      "claim_id": "ecf7ade9-29f5-4b7c-a608-d125821b8817",
+      "result_id": "5183c0cb-b391-469f-95f2-b9037997c50c"
+    },
+    {
+      "claim_id": "657fd2f6-b5a7-4c48-a47e-dd9033bc18f4",
+      "result_id": "5183c0cb-b391-469f-95f2-b9037997c50c"
+    },
+    {
+      "claim_id": "c78da6c8-2eb7-41cf-956d-c283baf1abe1",
+      "result_id": "5183c0cb-b391-469f-95f2-b9037997c50c"
+    },
+    {
+      "claim_id": "ff0b6b02-6246-4fb9-8902-f195be20e5e8",
+      "result_id": "5183c0cb-b391-469f-95f2-b9037997c50c"
+    },
+    {
+      "claim_id": "44a2ce6b-c169-4fc8-9fd7-c4a21f89eaa5",
+      "result_id": "8000e232-3bec-4efc-861c-d4d718634a33"
+    },
+    {
+      "claim_id": "794c422c-1d8c-4cb7-b203-78c6f4429d64",
+      "result_id": "8000e232-3bec-4efc-861c-d4d718634a33"
+    },
+    {
+      "claim_id": "e92f746d-06ad-4d4f-a657-ca0e2ce84800",
+      "result_id": "8000e232-3bec-4efc-861c-d4d718634a33"
+    },
+    {
+      "claim_id": "f2558f33-98b4-46d8-811b-e08c311d2068",
+      "result_id": "8000e232-3bec-4efc-861c-d4d718634a33"
+    },
+    {
+      "claim_id": "690f2369-d5d4-4707-abb2-62359617b07d",
+      "result_id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f"
+    },
+    {
+      "claim_id": "3350c111-2be6-4bf6-8e8c-68a20305ce6f",
+      "result_id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f"
+    },
+    {
+      "claim_id": "923ae9f8-7948-409e-9d4f-7e704649a18c",
+      "result_id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f"
+    },
+    {
+      "claim_id": "e5396e06-e3cc-4be3-80ac-976440695f1a",
+      "result_id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f"
+    },
+    {
+      "claim_id": "e19b6271-fa0b-4953-9d35-29f047037b4f",
+      "result_id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f"
+    },
+    {
+      "claim_id": "1435730c-f62f-415f-b9db-d28f5acc7c81",
+      "result_id": "ee96b9dd-a125-4ae9-93fa-206fddf07b0f"
+    },
+    {
+      "claim_id": "b3bc472c-1b3c-4628-8f0f-9514d2773693",
+      "result_id": "fbb2a415-3551-4602-960f-0493b109dc05"
+    },
+    {
+      "claim_id": "81f03da0-d8a8-4815-8593-ee0ac53a2ca7",
+      "result_id": "fbb2a415-3551-4602-960f-0493b109dc05"
+    },
+    {
+      "claim_id": "ffbe868f-cac3-4757-90af-0c690f497790",
+      "result_id": "fbb2a415-3551-4602-960f-0493b109dc05"
+    },
+    {
+      "claim_id": "44b00422-a8e3-4b74-9ee0-ccb8f025e56c",
+      "result_id": "fbb2a415-3551-4602-960f-0493b109dc05"
+    },
+    {
+      "claim_id": "fb979e95-2346-4643-b11c-64f20b388100",
+      "result_id": "ca1df6bf-6b7a-4ecc-8595-7353bc0ba125"
+    },
+    {
+      "claim_id": "450ca294-f928-4659-a5ff-72c3d31b69e6",
+      "result_id": "ca1df6bf-6b7a-4ecc-8595-7353bc0ba125"
+    },
+    {
+      "claim_id": "3e2f793e-4a05-4d54-88cc-f51a65e31d32",
+      "result_id": "ca1df6bf-6b7a-4ecc-8595-7353bc0ba125"
+    },
+    {
+      "claim_id": "e60eecb6-a291-44be-9f31-a915a147a5da",
+      "result_id": "ca1df6bf-6b7a-4ecc-8595-7353bc0ba125"
+    },
+    {
+      "claim_id": "ecd54c3b-b163-4766-afb5-00d02b37e8c0",
+      "result_id": "ca1df6bf-6b7a-4ecc-8595-7353bc0ba125"
+    },
+    {
+      "claim_id": "93ed7739-c235-4bf3-98e9-a9cee6b0dc63",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "4df80194-44a4-4673-ad96-0fea4b0a41b6",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "41029dd9-a38b-4123-a522-e99d809971c5",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "c28b3a16-4e66-4c53-83de-b497009dbe38",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "4fb3c1ac-04fb-43ce-abda-43806d8b877d",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "10a3d24c-e4cc-4e3b-a5ed-24bcc30c2b29",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "98dee44e-a6aa-4ff9-9c83-da5a20dce3e7",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "1a015a53-0a7a-42f1-a251-d750dd2a8313",
+      "result_id": "f928af26-0bfd-47f0-a660-5c9ce4181fec"
+    },
+    {
+      "claim_id": "3643a2c3-a51a-4f3e-b006-75fb5479d108",
+      "result_id": "f7cd7475-65c7-48c8-958a-3b8e4a55d14e"
+    },
+    {
+      "claim_id": "696d6ce2-e2f8-4b87-8fb7-e639762b6167",
+      "result_id": "f7cd7475-65c7-48c8-958a-3b8e4a55d14e"
+    },
+    {
+      "claim_id": "fde4f91a-8d32-4284-ab4b-a0334f106c22",
+      "result_id": "f7cd7475-65c7-48c8-958a-3b8e4a55d14e"
+    },
+    {
+      "claim_id": "3bf22f57-c435-434f-8c9c-63d79c61821d",
+      "result_id": "f7cd7475-65c7-48c8-958a-3b8e4a55d14e"
+    },
+    {
+      "claim_id": "7d4954a9-a289-40b7-b881-694693d35a0f",
+      "result_id": "623797f0-416e-44df-80db-6600fc419840"
+    },
+    {
+      "claim_id": "df5f7f5f-4aa8-499f-853e-2bdf4b0f30a3",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "2ff358c9-8f29-48f8-945f-c46cc2771d8b",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "fdbbb138-ce21-407f-88d9-ca6f8329752a",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "b68ae06f-f1fe-4d05-882a-e7cb696fb761",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "cf6f59c5-0f2b-4630-ae4f-52b31b491d77",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "63e18ab7-1f40-42bf-9d6d-e3bd5f73f319",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "518f8526-24f2-4be2-b948-6269d09d5355",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "d4948d04-540e-41b0-b056-3833cc3eeb30",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "1ad19b77-2752-4317-a92b-29d3773563d9",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "c34a3908-e43a-4aad-b9b1-7602b3d8eda8",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "8d9b392f-a67b-4a7a-b35d-793bb52bd6e8",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "56bbcc6b-7ded-4992-892d-f46916310146",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "f14392e3-ac23-4bf1-af3c-241f73fb034d",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "756efc86-637a-4323-900a-09e491ee01b1",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "67bbfb0f-e95b-45e8-bbc6-e9930dea349f",
+      "result_id": "08a9ec17-c6bc-4225-91cf-d1039f0b1861"
+    },
+    {
+      "claim_id": "d1d18cd2-3e25-468c-84bd-37c43f78e336",
+      "result_id": "64898fed-17e5-444b-ae1f-02aca1e9c5ba"
+    }
+  ],
+  "comparisons": []
+}

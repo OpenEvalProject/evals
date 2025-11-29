@@ -1,0 +1,1363 @@
+{
+  "submission": {
+    "id": "7dcb0363-241f-486e-a234-66d4a479bc79",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:15:59.433437Z",
+    "updated_at": "2025-11-29T04:15:59.433437Z"
+  },
+  "content": [
+    {
+      "id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "submission_id": "7dcb0363-241f-486e-a234-66d4a479bc79",
+      "content_type": "manuscript",
+      "content_text": "# Neural population dynamics in human motor cortex during movements in people with ALS\n\n## Authors\n\n- Chethan Pandarinath<sup>1</sup> ([ORCID: 0000-0003-1241-1432](https://orcid.org/0000-0003-1241-1432))\n- Vikash Gilja<sup>1</sup>\n- Christine H Blabe<sup>1</sup>\n- Paul Nuyujukian<sup>1</sup> ([ORCID: 0000-0001-7778-5473](https://orcid.org/0000-0001-7778-5473))\n- Anish A Sarma<sup>4</sup> ([ORCID: 0000-0003-1261-0589](https://orcid.org/0000-0003-1261-0589))\n- Brittany L Sorice<sup>6</sup>\n- Emad N Eskandar<sup>8</sup>\n- Leigh R Hochberg<sup>5</sup> ([ORCID: 0000-0003-0261-2273](https://orcid.org/0000-0003-0261-2273))\n- Jaimie M Henderson<sup>1</sup> ([ORCID: 0000-0002-3276-2267](https://orcid.org/0000-0002-3276-2267))\n- Krishna V Shenoy<sup>2</sup> ([ORCID: 0000-0003-1534-9240](https://orcid.org/0000-0003-1534-9240)) \u2020\n\n### Affiliations\n\n1. Department of Neurosurgery Stanford University Stanford United States\n2. Department of Electrical Engineering Stanford University Stanford United States\n3. Stanford Neurosciences Institute Stanford University Stanford United States\n4. School of Engineering Brown University Providence United States\n5. Center for Neurorestoration and Neurotechnology, Rehabilitation R and D Service, Department of VA Medical Center Providence United States\n6. Neurology Massachusetts General Hospital Boston United States\n7. Institute for Brain Science Brown University Providence United States\n8. Department of Neurosurgery Harvard Medical School Boston United States\n9. Department of Neurosurgery Massachusetts General Hospital Boston United States\n10. Neurology Harvard Medical School Boston United States\n11. Department of Neurobiology Stanford University Stanford United States\n12. Department of Bioengineering Stanford University Stanford United States\n13. Neurosciences Program Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe prevailing view of motor cortex holds that motor cortical neural activity represents muscle or movement parameters. However, recent studies in non-human primates have shown that neural activity does not simply represent muscle or movement parameters; instead, its temporal structure is well-described by a dynamical system where activity during movement evolves lawfully from an initial pre-movement state. In this study, we analyze neuronal ensemble activity in motor cortex in two clinical trial participants diagnosed with Amyotrophic Lateral Sclerosis (ALS). We find that activity in human motor cortex has similar dynamical structure to that of non-human primates, indicating that human motor cortex contains a similar underlying dynamical system for movement generation.Clinical trial registration: NCT00912041.\n\n## Introduction\n\nNeurons in motor cortex exhibit complex firing patterns during movement (Fetz, 1992; Churchland and Shenoy, 2007; Churchland et al., 2010). Though motor cortex has been extensively studied over the past century (Lemon, 2008), the complexity of these patterns remains poorly understood. Early work demonstrated that neural firing correlates with external variables such as movement direction (Georgopoulos et al., 1982), and an ongoing debate centers on whether the firing patterns represent muscle or movement parameters (e.g., joint position, intended velocity, reach endpoint, muscle forces, and so on; reviewed in Kalaska, 2009). A recent approach has been to ask, instead, whether these patterns of activity reflect an internal dynamical system across the population (Fetz, 1992; Todorov and Jordan, 2002; Churchland and Shenoy, 2007; Scott, 2008; Churchland et al., 2010, 2012; Graziano, 2011; Shenoy et al., 2013; Kaufman et al., 2014). In this view, the system's initial state is set by preparatory activity, and consistent rules govern how firing rates evolve over time across movement conditions, regardless of movement direction or other externally changing variables.\n\nThis dynamical view is supported by recent studies in rhesus macaques (Churchland et al., 2010, 2012; Shenoy et al., 2013; Kaufman et al., 2014). At the level of single neurons, responses during movement show brief but strong oscillatory components, even for straight point-to-point reaches (Churchland and Shenoy, 2007; Churchland et al., 2010). Furthermore, at the population level, the responses are well-described by a simple dynamical model in which the population response (the neural state) rotates with time (Figure 1A) (Churchland et al., 2012). Importantly, the presence of a strong rotational component in these dynamics is not predicted by the prevailing view of motor cortical activity (i.e., cosine direction tuning, linear speed scaling) that, instead, predicts solely expansive and contractive dynamics (detailed in Churchland et al., 2012, Figure 4 and associated text).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07436/elife-07436-fig1-v1.jpg)\n\n**Figure 1.:** (A) Projections of the neural population response onto the first jPCA plane for a monkey during an arm-reaching task (monkey N, 108 conditions; adapted from Churchland et al., 2012). Each trace plots the first 200 ms of activity during the movement epoch for a given condition. Traces are colored based on the preparatory state projection onto jPC1. a.u., arbitrary units. (B) Projections for participant T6 during an 8-target center-out task controlled by index finger movements on a computer touchpad. Each trace plots the 250 ms of activity during the movement epoch (\u2018Materials and methods\u2019) for a given condition. (C) Same as (B), for participant T7. Video 1 shows the evolution of the neural state over time for each participant.\n\nIn humans, studies in research participants with tetraplegia have demonstrated that motor cortical action potential (AP) responses contain information about intended movement kinematics (Truccolo et al., 2008). Here, we investigated whether these AP responses also contain rotational dynamical structure at the ensemble level.\n\n## Results\n\nWe analyzed multi-neuron AP activity from 2 people with tetraplegia enrolled in the BrainGate2 pilot clinical trial. This ongoing, multi-site, pilot clinical trial is performed under an FDA Investigational Device Exemption and has been approved by local institutional review boards at all study sites. The study participants (T6, T7) had differing degrees of motor impairment due to Amyotrophic Lateral Sclerosis (ALS). T6 retained the ability to make several dexterous movements (especially of the fingers and wrist), while T7 retained limited finger movements.\n\nNeural signals were recorded using 4 mm \u00d7 4 mm, 96-channel silicon microelectrode arrays, which were implanted in the hand area of dominant M1. APs were recorded as participants performed visual target acquisition tasks. Participants attempted to move a cursor from the center of a computer screen to one of eight peripheral targets, with the cursor's position controlled by index finger movements on a computer touchpad (see \u2018Materials and methods\u2019).\n\nWe first tested whether an underlying dynamical structure existed in the neural activity. If present, a population-level analysis should reveal orderly rotational structure that is consistent across conditions (i.e., independent of the direction of movement). To search for rotational patterns in the neural population state, we used a three-step procedure: first, for each condition (i.e., for a given target), we averaged the activity on each electrode across all trials. Next, we performed principal components analysis (PCA) on the high-dimensional population data. We restricted the data to the top 6 PCs, that is, we only preserved the six response patterns most strongly present in the data. Finally, for this reduced-dimensional data set, we applied the jPCA method (Churchland et al., 2012), which searches the data for 2-dimensional planes that capture the strongest rotational tendencies. Restricting the jPCA analysis to the dimensionality-reduced data (6-D) ensured that any rotational structure revealed by the analysis was present in the most prominent response patterns in the data.\n\nFor both participants, the population activity exhibited strong rotational dynamics (Figure 1B,C). Each trace shows the population activity in the top jPC plane for a single condition. 250 ms of data are shown, beginning with the rapid change in neural activity that precedes movement onset (the evolution of the neural state over time for each participant is shown in Video 1). Rotations proceeded in the same direction across conditions, following from the initial pre-movement state. The top jPCA plane captured 61% (T6) and 27% (T7) of the variance of the high-dimensional neural data (for comparison, the macaque study reported 28% for the top plane on average).\n\n![Video 1.](https://cdn.elifesciences.org/articles/07436/elife-07436-media1.mov.jpg)\n\n**Video 1.:** Video shows the evolution of the neural state over time in the first jPCA plane for participants T6 and T7. Low-dimensional projections were calculated as in Figure 1. Each colored trace represents one of 8 conditions. All times are relative to target onset (0 ms).\n\nOne potential concern is that the jPCA method might be powerful enough to find rotatory patterns in state space for any set of responses that contains complex, multiphasic patterns. To test for this possibility, we performed three control analyses, following Churchland et al., 2012. In these controls, the data were shuffled to disrupt underlying rotational structure across response patterns, while preserving the complexity of the individual response patterns. If the previously found rotational structure were simply a by-product of the analysis technique, then the shuffled data sets should still show prominent rotations in the top jPCA planes. This was not the case. Rotations were no longer qualitatively seen in the projected responses after shuffling (Figure 2, top row). We next measured the fraction of variance of the changes in neural state (6-D) that could be explained by rotational activity alone (see \u2018Materials and methods\u2019) and found that this greatly decreased after shuffling (Figure 2, bottom row). (Two additional shuffle control analyses are presented in Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07436/elife-07436-fig2-v1.jpg)\n\n**Figure 2.:** For each data set, neural responses were shuffled in a manner that preserved the complexity of individual response patterns on each electrode, but disrupted the structure of the data across electrodes. For each channel, the pattern of activity during the movement epoch was inverted for half the conditions (chosen at random). The inversion was performed around the initial time point, so that continuity with pre-movement activity was preserved. Performing jPCA on the shuffled responses did not reveal consistent rotational structure. (A, top) Projection of the population responses onto the first jPCA plane for a single shuffled trial (participant T6). (bottom) Fraction of variance of the change in neural state (6-D) explained by rotational activity for the original data set (brown) vs the shuffled data sets (blue). Error bar represents the standard deviation across 300 shuffle trials. (B) Same as (A), for participant T7. Two additional shuffle control analyses are presented in Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07436/elife-07436-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This shuffle control was similar to the first, but the patterns of activity during the movement epoch were inverted for all conditions. (A) Projections of the neural population state for each data set after shuffling are shown. (B) The fraction of variance captured by the rotational model before and after shuffling. This manipulation would not be expected to remove all rotational structure, as the structure should merely be sign-inverted. However, this manipulation should remove any consistent relationship between the pre-movement activity and the phase of subsequent oscillations. Thus, this control is expected to disrupt the relationship between the rotational phase and its initial state.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07436/elife-07436-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** In this shuffle control, activity during the movement epoch from one condition was randomly reassigned onto the pre-movement activity from another. The firing rate at the beginning of the movement epoch was appended to the firing rate at the end of the pre-movement period, to preserve continuity. For a given shuffle trial, the same reassignment was performed for all neurons. (A) Projections of the neural population state for each data set after a single shuffle trial. (B) The fraction of variance captured by the rotational model for the original data sets and 300 shuffle trials is shown (each shuffle trial tests a different random set of pairings of pre-movement and movement epoch activity). Error bars represent the standard deviation across shuffle trials. As with the second shuffle control, this manipulation is not expected to remove all rotational structure. While the relationship between rotational phase and the initial state is disrupted (as each condition's movement epoch activity is assigned to another condition's pre-movement activity), there is some likelihood that a given condition will be assigned an initial state similar to its own, allowing some rotational structure to be preserved by this manipulation.\n\nTo quantify the consistency of the rotatory activity, we measured the angle from the neural state in the jPCA plane, x, to its derivative, x\u02d9, for each time point across all conditions (Figure 3). Angles near pi/2 indicate rotational dynamics. As shown, the distribution of measured angles peaked near pi/2, similar to previously reported macaque data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07436/elife-07436-fig3-v1.jpg)\n\n**Figure 3.:** Traces represent histograms of the angle, q, between the neural state, x, and its derivative, $x\u02d9$, for each time step. The angle was measured as illustrated schematically (inset) after projecting the data into the first jPCA plane. Purely rotatory activity results in angles near pi/2, while pure scaling/expansion results in angles near 0 or pi. Y-axis denotes scale for participant data (colored traces). For comparison, histograms for the example shuffle control data (Figure 2) and monkey composite data are shown in gray and black, respectively. These traces are normalized to match the participant data range (monkey data reproduced from Churchland et al., 2012).\n\n## Discussion\n\nThese results demonstrate prominent rotations of the neural population state in human motor cortex during movements. As with macaques, rotations were consistent across conditions and followed naturally from an initial pre-movement state. As mentioned above, and in contrast to the macaque study, both participants in this study had a diagnosis of ALS with resultant motor impairment. Participant T7's movements in particular were very limited and occurred with a long latency following target onset (detailed in \u2018Materials and methods\u2019). Both participants likely had substantial changes in motor cortex due to their disease progression; therefore, these results do not conclusively show that dynamical activity is present in healthy human motor cortex. However, given the finding that dynamical activity is prominent in motor cortex in people with abnormal motor function, and given the similarity of this activity to that of healthy non-human primates, the results strongly suggest the presence of dynamical activity in human motor cortex in general and may also hint at which aspects of motor cortical function are preserved despite the progression of a severe motor neuron disease.\n\nGiven the findings of dynamical activity during overt movements, a potentially exciting open question is whether motor cortex exhibits dynamical activity during purely imagined movements. Recent studies (Feldman et al., Society for Neuroscience, 2011, 2012; Pandarinath et al., Society for Neuroscience, 2013) have demonstrated that motor cortex is active during both overt and imagined movements. If the functional role of rotational dynamics is to serve as an oscillatory basis set for generating muscle activation patterns (e.g. electromyogram activity) (Churchland et al., 2012; Sussillo et al., 2015), then one might expect these dynamics to be absent during imagined movements, when the subject is specifically trying to avoid generating motor output. However, if activity during imagined movements serves as a mechanism for the \u2018covert rehearsal\u2019 of activity during overt movements, then dynamics might still be present (but might be, for example, orthogonal to patterns of activity that drive motor output). Future studies will attempt to directly address this question.\n\nThe current study\u2019s findings also suggest a promising avenue to improve the performance of Brain\u2013Machine Interfaces (BMIs) for persons with tetraplegia, as previous work with macaques (Kao et al., 2015) demonstrated that incorporating neural population dynamics into BMI control algorithms may lead to performance improvements. Finally, as with macaques, the presence of these rotations calls into question the prevailing model of motor cortical activity (i.e., that motor cortical firing patterns represent muscle or movement parameters) in favor of a dynamical systems perspective in humans as well.\n\n## Materials and methods\n\nPermission for these studies was granted by the US Food and Drug Administration (Investigational Device Exemption) and Institutional Review Boards of Stanford University (protocol # 20804), Partners Healthcare/Massachusetts General Hospital (2011P001036), Providence VA Medical Center (2011-009), and Brown University (0809992560). The two participants in this study, T6 and T7, were enrolled in a pilot clinical trial of the BrainGate Neural Interface System (http://www.clinicaltrials.gov/ct2/show/NCT00912041). Informed consent, including consent to publish, was obtained from the participants prior to their enrollment in the study.\n\n### Participants\n\nParticipant T6 is a right-handed woman, 51 year old at the time of this study, with tetraplegia due to ALS. On December 7, 2012, a 96-channel intracortical silicon microelectrode array (1.0-mm electrode length, Blackrock Microsystems, Salt Lake City, UT) was implanted in the hand area of dominant motor cortex as previously described (Hochberg et al., 2006; Simeral et al., 2011). T6 retained dexterous movements of the fingers and wrist. Data reported in this study are from T6's trial days 95\u2013213.\n\nParticipant T7 is a right-handed man, 54 year old at the time of this study, with tetraplegia due to ALS. T7 had two 96-channel intracortical silicon microelectrode arrays (1.5-mm electrode length, Blackrock Microsystems, Salt Lake City, UT) implanted in the hand area of dominant motor cortex on July 30, 2013. Data reported are from T7's trial days 231 and 245. At that time, T7 retained very limited, but consistent, index finger movements. Subsequent to these days, further motor impairment precluded tasks that relied on finger movements.\n\n### Task design\n\nNeural data were recorded during \u2018center-out\u2019 target acquisition tasks. The data were originally collected for neural prosthetic decoder calibration, as part of research testing algorithms for closed-loop neural cursor control (Gilja et al., Society for Neuroscience, 2013). In the \u2018center-out\u2019 task, participants controlled the position of a cursor on a computer screen by making physical movements with their fingers on a wireless touchpad (Magic Trackpad; Apple, Cupertino, CA). The cursor began in the center of the screen, and targets would appear in one of 8 locations on the periphery. Participants then acquired the targets by moving the cursor over the target and holding it over the target for 500 ms. In contrast to the prior macaque study (Churchland et al., 2012), the target acquisition task used in this work did not include a delay period. Therefore, participants were free to move as soon as the target appeared. Participant T6 was not limited in her ability to span the workspace of the touchpad. Participant T7's limited movements spanned a small region on the touchpad, approximately 1/8\u2033\u20131/4\u2033 wide.\n\n### Recordings and data analysis\n\nData were aggregated over multiple sessions (T6: 8 sessions, T7: 2 sessions). Trial counts varied between sessions and across participants (T6: 75\u2013220 trials per session, T7: 128 and 78 trials per session). The primary data analyzed were multi-neuron APs, which were taken as time points when a given channel's voltage exceeded a fixed threshold. Choice of threshold was dependent on the array (T6: \u221260 \u03bcV, T7, Lateral array: \u221280 \u03bcV, Medial array: \u221295 \u03bcV). Analyses were restricted to electrodes known to have significant modulation during attempted movements (T6: 39 electrodes, T7: 78 electrodes). Firing rates per electrode were then averaged across trials and filtered with a Gaussian kernel with standard deviation of 25 ms (T6) or 30 ms (T7).\n\n### Analysis of rotational structure in the population response\n\njPCA analyses were performed as described previously (Churchland et al., 2012). Analyses were restricted to a 250-ms time period beginning with the rapid changes in neural activity that occur preceding movement onset. This period began approximately 180 ms and 300 ms after target onset for T6 and T7, respectively, corresponding to a difference in reaction times between participants. Overt movement was detectable at approximately 230 ms and 600 ms after target onset for T6 and T7, respectively. The delayed movements in T7 relative to T6 likely reflect a difference in disease progression between the two participants.\n\nPre-processing steps (\u2018soft\u2019 normalization, mean-centering, and initial dimensionality reduction using PCA) were performed following Churchland et al., 2012. The initial dimensionality reduction step restricted the data to the top 6 PCs.\n\njPCA is a method for finding projections that capture rotational structure in a data set. (The method is described in detail in Churchland et al., 2012; here, we summarize its key features.) The method is based on comparing the neural state at a given point in time with its derivative. The initial dimensionality-reduction step (performed on the trial-averaged firing rates) reduces the data to the matrix Xred, which has dimensions d \u00d7 ct (where d is the number of PCs kept, c is the number of conditions, and t is the number of time points). We computed $X\u02d9_{red}$, of size d \u00d7 c (t\u22121), by taking the difference in state between adjacent time points (the final time point of Xred was subsequently removed to equalize the sizes of Xred and $X\u02d9_{red}$). We then fit the neural state transition matrices, M and Mskew:\n\n$$\nX\u02d9_{red}=MX_{red},\n$$\n\nand\n\n$$\nX\u02d9_{red}=M_{skew}X_{red},\n$$\n\nwhere M is unconstrained (fit via linear regression), and Mskew is constrained to be a skew-symmetric matrix (i.e., $M_{skew}=\u2212M_{skew}T$, which has purely imaginary eigenvalues), and thus, captures only rotational dynamics. The first jPCA plane is then constructed from the eigenvectors of Mskew associated with the largest eigenvalues. For a given jPCA plane, the basis vectors jPC1 and jPC2 are selected such that the pre-movement activity (the initial state) is maximally spread along jPC1, and that the net rotation in the plane is anticlockwise.\n\nTo measure the fraction of variance of the changes in neural state (i.e., the dimensionality-reduced data) that could be explained by rotational activity (Figure 3, bottom panels), the data were modeled as a linear dynamical system, where Mskew perfectly captured the dynamics between time t and t\u22121, that is, only purely rotational dynamics were allowed. Fraction of state variance explained for real and shuffled data was estimated using the top 6 PCs.\n\n### Shuffle control analyses\n\nOne potential concern is that the jPCA method might be powerful enough to find rotatory patterns in state-space for any set of responses that contains complex, multiphasic patterns. The likelihood of finding such spurious rotatory patterns, which are common across conditions, increases as the number of conditions decreases. Thus, this is a larger concern in the current work (8 conditions per participant) than previous work with macaques (27\u2013108 conditions per monkey) (Churchland et al., 2012).\n\nTo test for this possibility, we performed the three control analyses performed in Churchland et al., 2012 (described in their Supplementary Figures 2 and 3). Each of the three \u2018shuffle\u2019 controls preserves the diversity and complexity of responses, but perturbs the structure of the responses at the population level. Specifically, the dynamical model assumes that neural activity during the movement epoch follows in an orderly fashion from its pre-movement state. To test this assumption, the three shuffle control analyses disrupt the relationship between the pre-movement activity and the movement epoch for each channel. If these shuffled data sets still showed prominent rotatory activity, it would indicate that rotations might be found by the jPCA method even when not truly present.\n",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "d0f8f2b5-76ff-4dd7-b356-a2bf2d67612a",
+      "submission_id": "7dcb0363-241f-486e-a234-66d4a479bc79",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ole Kiehn, Karolinska Institutet , Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07436.009](https://doi.org/10.7554/eLife.07436.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cNeural population dynamics in human motor cortex during movements\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and three reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Ole Kiehn (Reviewing editor), Michael Graziano and Timothy Ebner (peer reviewers).\n\nSummary:\n\nThis manuscript by Pandarinath et al. out of the Shenoy laboratory used single cell recordings from the primary motor cortex in patients with tetraplegia due to ALS. The recordings were from chronically implanted electrode arrays used for brain machine interface studies to restore function. The study tests a new dynamical systems view of motor cortex in humans, as it has previously been tested in non-human primates (NHPs). The study confirms the view and shows that the work in NHPs applies to humans.\n\nEssential Revisions:\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\n1) The methodology and analysis is sound and overall the reviewers were very positive about the study and find that the importance of the study is that it extends the work in NHPs to humans. Without being a requirement for new experiment it is noted that the investigators could have taken the opportunity to investigate motor activity that can be done in humans but not in NHPs, for example purely imaginary movements.\n\n2) Some words about to what extent the recorded activity can be extrapolated to normal motor cortex function is needed. ALS is a severe motor neuron disease. The Title and Abstract should at least be modified to reflect this (Neural population dynamics in human motor cortex during movements in patients with ALS) and mentioning of this in the Discussion is needed. The fact that the dynamical structure was found may speak to the robustness of the observations.\n\n3) It will be appropriate to address possible ethical issues of using invasive surgical experiments in patients with a severe disease and limited motor function.\n",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "25d67431-f36e-4e55-9726-c7f87814223f",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C1",
+      "claim": "The prevailing view of motor cortex holds that motor cortical neural activity represents muscle or movement parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing view of motor cortex holds that motor cortical neural activity represents muscle or movement parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established scientific perspective, drawing from general scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "49703842-cb0e-4983-b08c-4256da01f1f4",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C2",
+      "claim": "Recent studies in non-human primates have shown that neural activity does not simply represent muscle or movement parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies in non-human primates have shown that neural activity does not simply represent muscle or movement parameters; instead, its temporal structure is well-described by a dynamical system where activity during movement evolves lawfully from an initial pre-movement state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references recent studies in non-human primates, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "ec9dc39c-e6f5-4cef-b678-8fb28757f03f",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C3",
+      "claim": "Neural activity's temporal structure is well-described by a dynamical system where activity during movement evolves lawfully from an initial pre-movement state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies in non-human primates have shown that neural activity does not simply represent muscle or movement parameters; instead, its temporal structure is well-described by a dynamical system where activity during movement evolves lawfully from an initial pre-movement state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to recent studies in non-human primates.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "897cbe53-94e0-4001-9d74-824ab32a73e9",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C4",
+      "claim": "Activity in human motor cortex has similar dynamical structure to that of non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that activity in human motor cortex has similar dynamical structure to that of non-human primates, indicating that human motor cortex contains a similar underlying dynamical system for movement generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis from two participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "2c0e3288-229f-4a11-a90e-0341196ab64e",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C5",
+      "claim": "Human motor cortex contains a similar underlying dynamical system for movement generation as non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that activity in human motor cortex has similar dynamical structure to that of non-human primates, indicating that human motor cortex contains a similar underlying dynamical system for movement generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed similarity in dynamical structure between human and non-human primate motor cortex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "090d0beb-1a30-4988-bc8c-c592f1268e73",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C6",
+      "claim": "Neurons in motor cortex exhibit complex firing patterns during movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in motor cortex exhibit complex firing patterns during movement (Fetz, 1992; Churchland and Shenoy, 2007; Churchland et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "a629438e-2283-4a02-ad7a-8eb371e3890d",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C7",
+      "claim": "The complexity of motor cortical firing patterns remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Though motor cortex has been extensively studied over the past century (Lemon, 2008), the complexity of these patterns remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of scientific understanding, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "adfa0830-b42f-4282-bd19-7b02ccd1a545",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C8",
+      "claim": "Neural firing correlates with movement direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Early work demonstrated that neural firing correlates with external variables such as movement direction (Georgopoulos et al., 1982), and an ongoing debate centers on whether the firing patterns represent muscle or movement parameters (e.g., joint position, intended velocity, reach endpoint, muscle forces, and so on; reviewed in Kalaska, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Georgopoulos et al., 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "fbc94c76-0e56-462d-8083-a61f301a6ac3",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C9",
+      "claim": "There is an ongoing debate about whether firing patterns represent muscle or movement parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Early work demonstrated that neural firing correlates with external variables such as movement direction (Georgopoulos et al., 1982), and an ongoing debate centers on whether the firing patterns represent muscle or movement parameters (e.g., joint position, intended velocity, reach endpoint, muscle forces, and so on; reviewed in Kalaska, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review by Kalaska, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "5d678cd8-dcb1-4804-81f9-76f330717983",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C10",
+      "claim": "Patterns of motor cortical activity reflect an internal dynamical system across the population.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent approach has been to ask, instead, whether these patterns of activity reflect an internal dynamical system across the population (Fetz, 1992; Todorov and Jordan, 2002; Churchland and Shenoy, 2007; Scott, 2008; Churchland et al., 2010, 2012; Graziano, 2011; Shenoy et al., 2013; Kaufman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "8f0154dd-2d34-4b64-ab71-5faf8c32f3f6",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C11",
+      "claim": "In the dynamical view, the system's initial state is set by preparatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this view, the system's initial state is set by preparatory activity, and consistent rules govern how firing rates evolve over time across movement conditions, regardless of movement direction or other externally changing variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dynamical systems perspective, drawing from established theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "34902d7e-b1fc-4e7b-a040-f748f399c500",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C12",
+      "claim": "Consistent rules govern how firing rates evolve over time across movement conditions, regardless of movement direction or other externally changing variables.",
+      "claim_type": "EXPLICIT",
+      "source": "In this view, the system's initial state is set by preparatory activity, and consistent rules govern how firing rates evolve over time across movement conditions, regardless of movement direction or other externally changing variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the dynamical systems perspective, drawing from established theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "97871d89-730b-4990-ac67-93a7cf2f48cb",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C13",
+      "claim": "The dynamical view is supported by recent studies in rhesus macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "This dynamical view is supported by recent studies in rhesus macaques (Churchland et al., 2010, 2012; Shenoy et al., 2013; Kaufman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies in rhesus macaques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "9caf6a9b-ce47-4268-8b03-4d8286304209",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C14",
+      "claim": "At the level of single neurons, responses during movement show brief but strong oscillatory components, even for straight point-to-point reaches.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of single neurons, responses during movement show brief but strong oscillatory components, even for straight point-to-point reaches (Churchland and Shenoy, 2007; Churchland et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "9ae328d5-abd5-43d7-835e-2aadf3e02b0f",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C15",
+      "claim": "At the population level, the responses are well-described by a simple dynamical model in which the population response (the neural state) rotates with time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, at the population level, the responses are well-described by a simple dynamical model in which the population response (the neural state) rotates with time (Figure 1A) (Churchland et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation and reference to Figure 1A showing rotational dynamics.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "a7dcec95-c2f7-4649-ac14-f2fec335fac8",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C16",
+      "claim": "The presence of a strong rotational component in motor cortical dynamics is not predicted by the prevailing view of motor cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the presence of a strong rotational component in these dynamics is not predicted by the prevailing view of motor cortical activity (i.e., cosine direction tuning, linear speed scaling) that, instead, predicts solely expansive and contractive dynamics (detailed in Churchland et al., 2012, Figure 4 and associated text).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and logical inference about what the prevailing view predicts.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "875a166a-bc93-4bb2-9310-1d71e79d9bfb",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C17",
+      "claim": "The prevailing view of motor cortical activity predicts solely expansive and contractive dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the presence of a strong rotational component in these dynamics is not predicted by the prevailing view of motor cortical activity (i.e., cosine direction tuning, linear speed scaling) that, instead, predicts solely expansive and contractive dynamics (detailed in Churchland et al., 2012, Figure 4 and associated text).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Churchland et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "af4df2f8-949a-4d3b-8425-b2889acc2adf",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C18",
+      "claim": "Studies in research participants with tetraplegia have demonstrated that motor cortical action potential responses contain information about intended movement kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, studies in research participants with tetraplegia have demonstrated that motor cortical action potential (AP) responses contain information about intended movement kinematics (Truccolo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Truccolo et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "57778dd4-13ab-4f4d-8dc5-db1510035676",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C19",
+      "claim": "Multi-neuron AP activity was analyzed from 2 people with tetraplegia enrolled in the BrainGate2 pilot clinical trial.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed multi-neuron AP activity from 2 people with tetraplegia enrolled in the BrainGate2 pilot clinical trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study methodology and data source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "6e26a333-3679-4495-b7ce-7c96d924c103",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C20",
+      "claim": "The study participants (T6, T7) had differing degrees of motor impairment due to Amyotrophic Lateral Sclerosis (ALS).",
+      "claim_type": "EXPLICIT",
+      "source": "The study participants (T6, T7) had differing degrees of motor impairment due to Amyotrophic Lateral Sclerosis (ALS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the participants' medical condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "40b117c8-7bb0-426f-bfc2-9ff0c4433c2f",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C21",
+      "claim": "T6 retained the ability to make several dexterous movements (especially of the fingers and wrist).",
+      "claim_type": "EXPLICIT",
+      "source": "T6 retained the ability to make several dexterous movements (especially of the fingers and wrist), while T7 retained limited finger movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation about participant T6's motor abilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "23e2038e-2460-40f7-a67b-ff0de82be430",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C22",
+      "claim": "T7 retained limited finger movements.",
+      "claim_type": "EXPLICIT",
+      "source": "T6 retained the ability to make several dexterous movements (especially of the fingers and wrist), while T7 retained limited finger movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation about participant T7's motor abilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "3f38e3bd-3393-4895-aabb-58a2263f11a8",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C23",
+      "claim": "Neural signals were recorded using 4 mm \u00d7 4 mm, 96-channel silicon microelectrode arrays implanted in the hand area of dominant M1.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural signals were recorded using 4 mm \u00d7 4 mm, 96-channel silicon microelectrode arrays, which were implanted in the hand area of dominant M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the recording methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "fb63681a-db34-41f0-8235-e4d12ce92983",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C24",
+      "claim": "Participants attempted to move a cursor from the center of a computer screen to one of eight peripheral targets, with the cursor's position controlled by index finger movements on a computer touchpad.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants attempted to move a cursor from the center of a computer screen to one of eight peripheral targets, with the cursor's position controlled by index finger movements on a computer touchpad (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "343ca80e-75e1-45f6-be1d-e99ce728b8ec",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C25",
+      "claim": "For both participants, the population activity exhibited strong rotational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For both participants, the population activity exhibited strong rotational dynamics (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "24455ac7-5ad0-463c-97af-ad2c36ef3681",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C26",
+      "claim": "Rotations proceeded in the same direction across conditions, following from the initial pre-movement state.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotations proceeded in the same direction across conditions, following from the initial pre-movement state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis describing the consistency of rotational dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "557506c0-bd33-48b8-8591-612418ed0a2f",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C27",
+      "claim": "The top jPCA plane captured 61% (T6) and 27% (T7) of the variance of the high-dimensional neural data.",
+      "claim_type": "EXPLICIT",
+      "source": "The top jPCA plane captured 61% (T6) and 27% (T7) of the variance of the high-dimensional neural data (for comparison, the macaque study reported 28% for the top plane on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "367ce53b-a765-4b99-b2fa-43041674c1f1",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C28",
+      "claim": "The macaque study reported 28% variance captured for the top plane on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The top jPCA plane captured 61% (T6) and 27% (T7) of the variance of the high-dimensional neural data (for comparison, the macaque study reported 28% for the top plane on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work in macaques, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "b477887a-f8c9-4924-ab99-a2f0d001f9ca",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C29",
+      "claim": "Rotations were no longer qualitatively seen in the projected responses after shuffling.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotations were no longer qualitatively seen in the projected responses after shuffling (Figure 2, top row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the shuffle control analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "13a2ed55-e3cb-4b99-89e6-180eb51622f9",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C30",
+      "claim": "The fraction of variance of the changes in neural state that could be explained by rotational activity greatly decreased after shuffling.",
+      "claim_type": "EXPLICIT",
+      "source": "We next measured the fraction of variance of the changes in neural state (6-D) that could be explained by rotational activity alone (see 'Materials and methods') and found that this greatly decreased after shuffling (Figure 2, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the shuffle control analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "1c94ead6-ab30-462d-b782-7163b405a9a9",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C31",
+      "claim": "The distribution of measured angles between the neural state and its derivative peaked near pi/2.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown, the distribution of measured angles peaked near pi/2, similar to previously reported macaque data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the angle analysis, with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "295dd13d-2032-450b-b344-0cb9bca6bd7b",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C32",
+      "claim": "The angle distribution in human participants is similar to previously reported macaque data.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown, the distribution of measured angles peaked near pi/2, similar to previously reported macaque data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior macaque data, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "b55bb8d6-b487-4c21-a6cf-bbf6058d6d1c",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C33",
+      "claim": "Angles near pi/2 indicate rotational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Angles near pi/2 indicate rotational dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interpretation of the angle measurement, based on mathematical/theoretical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "f6c5ce51-df8e-4a13-a8e5-598c403a42bd",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C34",
+      "claim": "Both participants likely had substantial changes in motor cortex due to their disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Both participants likely had substantial changes in motor cortex due to their disease progression; therefore, these results do not conclusively show that dynamical activity is present in healthy human motor cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the participants' ALS diagnosis and disease progression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "e04d9c71-bd9f-48ca-af53-408403ef222a",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C35",
+      "claim": "These results do not conclusively show that dynamical activity is present in healthy human motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Both participants likely had substantial changes in motor cortex due to their disease progression; therefore, these results do not conclusively show that dynamical activity is present in healthy human motor cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the study, based on inference about the participants' condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "9c5c1593-d6ec-4800-8839-033dafa844cd",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C36",
+      "claim": "The finding that dynamical activity is prominent in motor cortex in people with abnormal motor function, combined with the similarity to healthy non-human primates, strongly suggests the presence of dynamical activity in human motor cortex in general.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the finding that dynamical activity is prominent in motor cortex in people with abnormal motor function, and given the similarity of this activity to that of healthy non-human primates, the results strongly suggest the presence of dynamical activity in human motor cortex in general and may also hint at which aspects of motor cortical function are preserved despite the progression of a severe motor neuron disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the study's findings and comparison to non-human primate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "6b86c315-44ce-4cfd-88d2-d619080883cd",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C37",
+      "claim": "The results may hint at which aspects of motor cortical function are preserved despite the progression of a severe motor neuron disease.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the finding that dynamical activity is prominent in motor cortex in people with abnormal motor function, and given the similarity of this activity to that of healthy non-human primates, the results strongly suggest the presence of dynamical activity in human motor cortex in general and may also hint at which aspects of motor cortical function are preserved despite the progression of a severe motor neuron disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "aa39c4ca-f627-4471-8a81-41790b05dc60",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C38",
+      "claim": "Motor cortex is active during both overt and imagined movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies (Feldman et al., Society for Neuroscience, 2011, 2012; Pandarinath et al., Society for Neuroscience, 2013) have demonstrated that motor cortex is active during both overt and imagined movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "f9eb5215-7d39-4412-aee4-676aa492977d",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C39",
+      "claim": "If the functional role of rotational dynamics is to serve as an oscillatory basis set for generating muscle activation patterns, then one might expect these dynamics to be absent during imagined movements.",
+      "claim_type": "EXPLICIT",
+      "source": "If the functional role of rotational dynamics is to serve as an oscillatory basis set for generating muscle activation patterns (e.g. electromyogram activity) (Churchland et al., 2012; Sussillo et al., 2015), then one might expect these dynamics to be absent during imagined movements, when the subject is specifically trying to avoid generating motor output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about what might be expected under certain theoretical assumptions.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "d58c981d-78c9-414b-9d69-66a9b590f46f",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C40",
+      "claim": "If activity during imagined movements serves as a mechanism for the 'covert rehearsal' of activity during overt movements, then dynamics might still be present during imagined movements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if activity during imagined movements serves as a mechanism for the 'covert rehearsal' of activity during overt movements, then dynamics might still be present (but might be, for example, orthogonal to patterns of activity that drive motor output).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about an alternative possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "9369423a-0e2f-41a8-ad58-300d834b01cb",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C41",
+      "claim": "Previous work with macaques demonstrated that incorporating neural population dynamics into BMI control algorithms may lead to performance improvements.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study's findings also suggest a promising avenue to improve the performance of Brain\u2013Machine Interfaces (BMIs) for persons with tetraplegia, as previous work with macaques (Kao et al., 2015) demonstrated that incorporating neural population dynamics into BMI control algorithms may lead to performance improvements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kao et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "8128fcd7-2778-4d89-b89b-8005c0ca16ef",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C42",
+      "claim": "The current study's findings suggest a promising avenue to improve the performance of Brain\u2013Machine Interfaces (BMIs) for persons with tetraplegia.",
+      "claim_type": "EXPLICIT",
+      "source": "The current study's findings also suggest a promising avenue to improve the performance of Brain\u2013Machine Interfaces (BMIs) for persons with tetraplegia, as previous work with macaques (Kao et al., 2015) demonstrated that incorporating neural population dynamics into BMI control algorithms may lead to performance improvements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, based on inference from the current findings and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "9970becc-912d-4223-95d8-e895d58e5456",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C43",
+      "claim": "The presence of rotations calls into question the prevailing model of motor cortical activity in favor of a dynamical systems perspective in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as with macaques, the presence of these rotations calls into question the prevailing model of motor cortical activity (i.e., that motor cortical firing patterns represent muscle or movement parameters) in favor of a dynamical systems perspective in humans as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the study's findings about the implications for theoretical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "7346889e-7edf-426c-a29a-38f8abc845c1",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C44",
+      "claim": "Participant T6 is a right-handed woman, 51 year old at the time of this study, with tetraplegia due to ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant T6 is a right-handed woman, 51 year old at the time of this study, with tetraplegia due to ALS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic and clinical information about participant T6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "114b32ba-ef28-404a-9047-52acd7e014a9",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C45",
+      "claim": "A 96-channel intracortical silicon microelectrode array (1.0-mm electrode length) was implanted in T6's hand area of dominant motor cortex on December 7, 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "On December 7, 2012, a 96-channel intracortical silicon microelectrode array (1.0-mm electrode length, Blackrock Microsystems, Salt Lake City, UT) was implanted in the hand area of dominant motor cortex as previously described (Hochberg et al., 2006; Simeral et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the surgical procedure and device implantation for T6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "bdb4a1b1-0344-4bfe-a53a-5e77e7708d28",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C46",
+      "claim": "Data reported for T6 are from trial days 95\u2013213.",
+      "claim_type": "EXPLICIT",
+      "source": "Data reported in this study are from T6's trial days 95\u2013213.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the time period of data collection for T6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "4f7008bf-0bf2-4052-b6a4-7b16588e7e36",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C47",
+      "claim": "Participant T7 is a right-handed man, 54 year old at the time of this study, with tetraplegia due to ALS.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant T7 is a right-handed man, 54 year old at the time of this study, with tetraplegia due to ALS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic and clinical information about participant T7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "6f604308-673d-45c2-b869-504fef52e6a3",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C48",
+      "claim": "T7 had two 96-channel intracortical silicon microelectrode arrays (1.5-mm electrode length) implanted in the hand area of dominant motor cortex on July 30, 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "T7 had two 96-channel intracortical silicon microelectrode arrays (1.5-mm electrode length, Blackrock Microsystems, Salt Lake City, UT) implanted in the hand area of dominant motor cortex on July 30, 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the surgical procedure and device implantation for T7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "be522657-cdc9-49d1-9fea-aa849f726d2a",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C49",
+      "claim": "Data reported for T7 are from trial days 231 and 245.",
+      "claim_type": "EXPLICIT",
+      "source": "Data reported are from T7's trial days 231 and 245.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This specifies the time period of data collection for T7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "c693765b-4e48-468e-aa94-1487b380dd80",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C50",
+      "claim": "Subsequent to trial days 231 and 245, further motor impairment in T7 precluded tasks that relied on finger movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent to these days, further motor impairment precluded tasks that relied on finger movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about T7's disease progression after the data collection period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "ccae32e8-751b-43f6-b40d-b09a1df49017",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C51",
+      "claim": "The data were originally collected for neural prosthetic decoder calibration, as part of research testing algorithms for closed-loop neural cursor control.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were originally collected for neural prosthetic decoder calibration, as part of research testing algorithms for closed-loop neural cursor control (Gilja et al., Society for Neuroscience, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the original purpose of the data collection.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "98aea89c-c9cf-4634-b277-80b60cb96561",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C52",
+      "claim": "Participant T6 was not limited in her ability to span the workspace of the touchpad.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant T6 was not limited in her ability to span the workspace of the touchpad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about T6's motor capabilities during the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "44072415-089c-41de-8290-afc4ed6c0baa",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C53",
+      "claim": "Participant T7's limited movements spanned a small region on the touchpad, approximately 1/8\u2033\u20131/4\u2033 wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant T7's limited movements spanned a small region on the touchpad, approximately 1/8\u2033\u20131/4\u2033 wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about T7's motor capabilities during the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "41864675-1501-404a-a958-2aef348f640b",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C54",
+      "claim": "Data were aggregated over multiple sessions (T6: 8 sessions, T7: 2 sessions).",
+      "claim_type": "EXPLICIT",
+      "source": "Data were aggregated over multiple sessions (T6: 8 sessions, T7: 2 sessions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "cccfca52-42d0-4d0e-b8ed-f285446130d6",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C55",
+      "claim": "Trial counts varied between sessions and across participants (T6: 75\u2013220 trials per session, T7: 128 and 78 trials per session).",
+      "claim_type": "EXPLICIT",
+      "source": "Trial counts varied between sessions and across participants (T6: 75\u2013220 trials per session, T7: 128 and 78 trials per session).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides quantitative details about the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "5152778d-0c90-4c91-9302-fe1413838133",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C56",
+      "claim": "Analyses were restricted to electrodes known to have significant modulation during attempted movements (T6: 39 electrodes, T7: 78 electrodes).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses were restricted to electrodes known to have significant modulation during attempted movements (T6: 39 electrodes, T7: 78 electrodes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "70370199-7dbf-44e8-bd9c-f3cc45725a85",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C57",
+      "claim": "Analyses were restricted to a 250-ms time period beginning with the rapid changes in neural activity that occur preceding movement onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses were restricted to a 250-ms time period beginning with the rapid changes in neural activity that occur preceding movement onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal window used for analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "4dc766dc-a357-4c75-a139-67fcc1d87fb4",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C58",
+      "claim": "The analysis period began approximately 180 ms after target onset for T6.",
+      "claim_type": "EXPLICIT",
+      "source": "This period began approximately 180 ms and 300 ms after target onset for T6 and T7, respectively, corresponding to a difference in reaction times between participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides timing information for the analysis window for T6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "eaa01af6-4b60-4d2e-8bf9-eec8dcf2f987",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C59",
+      "claim": "The analysis period began approximately 300 ms after target onset for T7.",
+      "claim_type": "EXPLICIT",
+      "source": "This period began approximately 180 ms and 300 ms after target onset for T6 and T7, respectively, corresponding to a difference in reaction times between participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides timing information for the analysis window for T7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "28132302-4b14-4df1-8752-6fbc5b8313e5",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C60",
+      "claim": "Overt movement was detectable at approximately 230 ms after target onset for T6.",
+      "claim_type": "EXPLICIT",
+      "source": "Overt movement was detectable at approximately 230 ms and 600 ms after target onset for T6 and T7, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides timing information about when movement was detected for T6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "a64f5b52-ea6a-4c7d-8c99-484258e732a1",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C61",
+      "claim": "Overt movement was detectable at approximately 600 ms after target onset for T7.",
+      "claim_type": "EXPLICIT",
+      "source": "Overt movement was detectable at approximately 230 ms and 600 ms after target onset for T6 and T7, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides timing information about when movement was detected for T7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "ac7d45b1-0594-4650-af0e-2a18eb9f3343",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C62",
+      "claim": "The delayed movements in T7 relative to T6 likely reflect a difference in disease progression between the two participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The delayed movements in T7 relative to T6 likely reflect a difference in disease progression between the two participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of the observed difference in movement timing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "84b860d6-7338-47f4-9dc4-f48812ee84c6",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C63",
+      "claim": "The initial dimensionality reduction step restricted the data to the top 6 PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial dimensionality reduction step restricted the data to the top 6 PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "f3edab9c-14e5-4ec4-b635-dd6f27ea1049",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C64",
+      "claim": "jPCA is a method for finding projections that capture rotational structure in a data set.",
+      "claim_type": "EXPLICIT",
+      "source": "jPCA is a method for finding projections that capture rotational structure in a data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the jPCA method, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "ff6f003a-0835-4e35-a3a7-d9d0e7912879",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C66",
+      "claim": "The basis vectors jPC1 and jPC2 are selected such that the pre-movement activity (the initial state) is maximally spread along jPC1, and that the net rotation in the plane is anticlockwise.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given jPCA plane, the basis vectors jPC1 and jPC2 are selected such that the pre-movement activity (the initial state) is maximally spread along jPC1, and that the net rotation in the plane is anticlockwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conventions used in constructing the jPCA plane.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "7376a045-d082-491a-abfc-755ca204c89e",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C67",
+      "claim": "Each of the three 'shuffle' controls preserves the diversity and complexity of responses, but perturbs the structure of the responses at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the three 'shuffle' controls preserves the diversity and complexity of responses, but perturbs the structure of the responses at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and design of the shuffle control analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "50d415b5-2131-4e1e-aebf-beb169b58793",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C68",
+      "claim": "The dynamical model assumes that neural activity during the movement epoch follows in an orderly fashion from its pre-movement state.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the dynamical model assumes that neural activity during the movement epoch follows in an orderly fashion from its pre-movement state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the dynamical model being tested.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "2a2d71f0-d831-4c9d-806e-ec64c30f4ce1",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C69",
+      "claim": "The three shuffle control analyses disrupt the relationship between the pre-movement activity and the movement epoch for each channel.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this assumption, the three shuffle control analyses disrupt the relationship between the pre-movement activity and the movement epoch for each channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the shuffle controls test the dynamical model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "d2162b35-9c60-4c9c-8470-4fb6c7812771",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "claim_id": "C70",
+      "claim": "If shuffled data sets still showed prominent rotatory activity, it would indicate that rotations might be found by the jPCA method even when not truly present.",
+      "claim_type": "EXPLICIT",
+      "source": "If these shuffled data sets still showed prominent rotatory activity, it would indicate that rotations might be found by the jPCA method even when not truly present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the logic of the shuffle control test.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the theoretical background contrasting the prevailing view of motor cortex (representing muscle/movement parameters) with the dynamical systems perspective (where neural activity evolves lawfully from initial states through rotational dynamics). This dynamical view is supported by prior work in non-human primates showing rotational population dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 provide well-cited background establishing two competing theoretical frameworks. The prevailing view (C1, C8, C9, C17) and dynamical systems perspective (C2, C3, C10-C12) are both supported by appropriate citations to prior literature. The characterization of macaque findings (C13-C17) accurately represents published work and provides the foundation for the current human study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "6361ddff-c8a5-4279-8de4-166407e02d8b",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study recorded neural activity from two participants with ALS-related tetraplegia (T6 and T7) using implanted microelectrode arrays during an 8-target center-out task controlled by finger movements. Participants had different degrees of motor impairment and movement timing, with T6 showing faster responses and greater motor capability than T7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C62 provide comprehensive methodological details about participants, recording equipment, task design, and data collection parameters. These are straightforward descriptive claims about the experimental setup that are internally consistent and appropriately detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "a143483b-5c9b-4daa-ac1a-bf011a4894f4",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Population neural activity in both human participants exhibited strong rotational dynamics in the jPCA plane, with rotations proceeding consistently across conditions from initial pre-movement states. The top jPCA plane captured 61% (T6) and 27% (T7) of variance, comparable to 28% reported in macaques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 present the core finding with quantitative support from Figure 1B,C and Video 1. The variance explained values provide objective metrics, and comparison to macaque data (C28) is appropriate. However, the substantial difference between T6 (61%) and T7 (27%) warrants more discussion about what drives this variability and whether it relates to disease progression or other factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "32165671-a95b-42f2-9c9f-949c1a3b12e7",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Shuffle control analyses disrupting the relationship between pre-movement and movement-epoch activity eliminated the rotational structure, demonstrating that the observed rotations are not artifacts of the jPCA method but reflect genuine dynamical structure in the neural population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C63-C70 describe critical control analyses shown in Figure 2 and supplements. The shuffle controls appropriately test whether jPCA might spuriously find rotations in complex multiphasic data. The qualitative (C29) and quantitative (C30) loss of rotational structure after shuffling provides strong evidence that the findings are not methodological artifacts. The logic is sound and follows established practices from prior macaque work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "4e821d52-abec-4a5e-b974-2ce6b096b75a",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The distribution of angles between neural state and its derivative peaked near \u03c0/2 in both human participants, similar to macaque data, confirming rotational dynamics at the population level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide an independent quantitative metric of rotational dynamics shown in Figure 3. The angle analysis converges with the jPCA findings and the similarity to macaque data strengthens the cross-species comparison. The interpretation that angles near \u03c0/2 indicate rotation is mathematically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "22f58cff-c7fc-4056-9dc0-a1b39c88531d",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Human motor cortex contains similar dynamical structure to non-human primates, suggesting a conserved underlying dynamical system for movement generation and challenging the prevailing representational view in favor of a dynamical systems perspective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4-C5 and C36, C43 represent the primary conclusions but face significant limitations. Both participants had ALS with motor cortex changes (C34-C35), making generalization to healthy human motor cortex uncertain. While the similarity to macaque data is suggestive, the small sample size (n=2), disease state, and lack of healthy controls limit the strength of this inference. The conclusion is plausible but requires validation in larger, healthier populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "ec6de7d8-f59d-40e4-9644-e39c870eae70",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both participants likely had substantial motor cortex changes due to ALS progression, limiting the ability to conclusively demonstrate that dynamical activity is present in healthy human motor cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 appropriately acknowledge a critical limitation of the study. The authors correctly note that ALS-related changes may affect motor cortex structure and function, preventing definitive conclusions about healthy human motor cortex. This honest assessment of limitations is scientifically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "a7cfb81b-6b63-425e-bfd3-bb4f047a1b77",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings raise questions about whether rotational dynamics persist during imagined movements, which could distinguish between the hypothesis that dynamics generate muscle patterns versus serving as covert rehearsal mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 present speculative but well-reasoned future directions. The distinction between dynamics for muscle generation versus covert rehearsal is conceptually clear and testable. These are appropriately framed as open questions rather than conclusions, with C38 citing relevant prior work on motor cortex activity during imagined movements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "d53c5c27-2bd0-4fc2-8643-8081c5316aad",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings suggest potential for improving brain-machine interface performance by incorporating neural population dynamics into control algorithms, based on prior macaque work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C42 propose translational applications based on cited macaque work (Kao et al., 2015). While the suggestion is reasonable, it remains speculative without direct testing in human BMI systems. The inference from observing dynamics to improving BMI performance requires additional validation steps not performed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    },
+    {
+      "id": "438e2acc-75f3-4760-a0b9-a575fec4f4c2",
+      "content_id": "f38eb3c8-99c5-4d0b-830d-634ac4ab4e44",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior human studies in participants with tetraplegia demonstrated that motor cortical action potentials contain information about intended movement kinematics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 accurately cites prior work (Truccolo et al., 2008) establishing that human motor cortex activity contains kinematic information. This provides appropriate context for the current study's investigation of dynamical structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:15:59.433437Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "25d67431-f36e-4e55-9726-c7f87814223f",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "49703842-cb0e-4983-b08c-4256da01f1f4",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "ec9dc39c-e6f5-4cef-b678-8fb28757f03f",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "090d0beb-1a30-4988-bc8c-c592f1268e73",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "a629438e-2283-4a02-ad7a-8eb371e3890d",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "adfa0830-b42f-4282-bd19-7b02ccd1a545",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "fbc94c76-0e56-462d-8083-a61f301a6ac3",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "5d678cd8-dcb1-4804-81f9-76f330717983",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "8f0154dd-2d34-4b64-ab71-5faf8c32f3f6",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "34902d7e-b1fc-4e7b-a040-f748f399c500",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "97871d89-730b-4990-ac67-93a7cf2f48cb",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "9caf6a9b-ce47-4268-8b03-4d8286304209",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "9ae328d5-abd5-43d7-835e-2aadf3e02b0f",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "a7dcec95-c2f7-4649-ac14-f2fec335fac8",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "875a166a-bc93-4bb2-9310-1d71e79d9bfb",
+      "result_id": "b0fcae09-a52c-4cd8-96b0-6d6537006e9c"
+    },
+    {
+      "claim_id": "57778dd4-13ab-4f4d-8dc5-db1510035676",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "6e26a333-3679-4495-b7ce-7c96d924c103",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "40b117c8-7bb0-426f-bfc2-9ff0c4433c2f",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "23e2038e-2460-40f7-a67b-ff0de82be430",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "3f38e3bd-3393-4895-aabb-58a2263f11a8",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "fb63681a-db34-41f0-8235-e4d12ce92983",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "7346889e-7edf-426c-a29a-38f8abc845c1",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "114b32ba-ef28-404a-9047-52acd7e014a9",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "bdb4a1b1-0344-4bfe-a53a-5e77e7708d28",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "4f7008bf-0bf2-4052-b6a4-7b16588e7e36",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "6f604308-673d-45c2-b869-504fef52e6a3",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "be522657-cdc9-49d1-9fea-aa849f726d2a",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "c693765b-4e48-468e-aa94-1487b380dd80",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "ccae32e8-751b-43f6-b40d-b09a1df49017",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "98aea89c-c9cf-4634-b277-80b60cb96561",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "44072415-089c-41de-8290-afc4ed6c0baa",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "41864675-1501-404a-a958-2aef348f640b",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "cccfca52-42d0-4d0e-b8ed-f285446130d6",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "5152778d-0c90-4c91-9302-fe1413838133",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "70370199-7dbf-44e8-bd9c-f3cc45725a85",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "4dc766dc-a357-4c75-a139-67fcc1d87fb4",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "eaa01af6-4b60-4d2e-8bf9-eec8dcf2f987",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "28132302-4b14-4df1-8752-6fbc5b8313e5",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "a64f5b52-ea6a-4c7d-8c99-484258e732a1",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "ac7d45b1-0594-4650-af0e-2a18eb9f3343",
+      "result_id": "6361ddff-c8a5-4279-8de4-166407e02d8b"
+    },
+    {
+      "claim_id": "343ca80e-75e1-45f6-be1d-e99ce728b8ec",
+      "result_id": "a143483b-5c9b-4daa-ac1a-bf011a4894f4"
+    },
+    {
+      "claim_id": "24455ac7-5ad0-463c-97af-ad2c36ef3681",
+      "result_id": "a143483b-5c9b-4daa-ac1a-bf011a4894f4"
+    },
+    {
+      "claim_id": "557506c0-bd33-48b8-8591-612418ed0a2f",
+      "result_id": "a143483b-5c9b-4daa-ac1a-bf011a4894f4"
+    },
+    {
+      "claim_id": "367ce53b-a765-4b99-b2fa-43041674c1f1",
+      "result_id": "a143483b-5c9b-4daa-ac1a-bf011a4894f4"
+    },
+    {
+      "claim_id": "b477887a-f8c9-4924-ab99-a2f0d001f9ca",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "13a2ed55-e3cb-4b99-89e6-180eb51622f9",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "84b860d6-7338-47f4-9dc4-f48812ee84c6",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "f3edab9c-14e5-4ec4-b635-dd6f27ea1049",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "ff6f003a-0835-4e35-a3a7-d9d0e7912879",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "7376a045-d082-491a-abfc-755ca204c89e",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "50d415b5-2131-4e1e-aebf-beb169b58793",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "2a2d71f0-d831-4c9d-806e-ec64c30f4ce1",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "d2162b35-9c60-4c9c-8470-4fb6c7812771",
+      "result_id": "32165671-a95b-42f2-9c9f-949c1a3b12e7"
+    },
+    {
+      "claim_id": "1c94ead6-ab30-462d-b782-7163b405a9a9",
+      "result_id": "4e821d52-abec-4a5e-b974-2ce6b096b75a"
+    },
+    {
+      "claim_id": "295dd13d-2032-450b-b344-0cb9bca6bd7b",
+      "result_id": "4e821d52-abec-4a5e-b974-2ce6b096b75a"
+    },
+    {
+      "claim_id": "b55bb8d6-b487-4c21-a6cf-bbf6058d6d1c",
+      "result_id": "4e821d52-abec-4a5e-b974-2ce6b096b75a"
+    },
+    {
+      "claim_id": "897cbe53-94e0-4001-9d74-824ab32a73e9",
+      "result_id": "22f58cff-c7fc-4056-9dc0-a1b39c88531d"
+    },
+    {
+      "claim_id": "2c0e3288-229f-4a11-a90e-0341196ab64e",
+      "result_id": "22f58cff-c7fc-4056-9dc0-a1b39c88531d"
+    },
+    {
+      "claim_id": "9c5c1593-d6ec-4800-8839-033dafa844cd",
+      "result_id": "22f58cff-c7fc-4056-9dc0-a1b39c88531d"
+    },
+    {
+      "claim_id": "9970becc-912d-4223-95d8-e895d58e5456",
+      "result_id": "22f58cff-c7fc-4056-9dc0-a1b39c88531d"
+    },
+    {
+      "claim_id": "f6c5ce51-df8e-4a13-a8e5-598c403a42bd",
+      "result_id": "ec6de7d8-f59d-40e4-9644-e39c870eae70"
+    },
+    {
+      "claim_id": "e04d9c71-bd9f-48ca-af53-408403ef222a",
+      "result_id": "ec6de7d8-f59d-40e4-9644-e39c870eae70"
+    },
+    {
+      "claim_id": "6b86c315-44ce-4cfd-88d2-d619080883cd",
+      "result_id": "a7cfb81b-6b63-425e-bfd3-bb4f047a1b77"
+    },
+    {
+      "claim_id": "aa39c4ca-f627-4471-8a81-41790b05dc60",
+      "result_id": "a7cfb81b-6b63-425e-bfd3-bb4f047a1b77"
+    },
+    {
+      "claim_id": "f9eb5215-7d39-4412-aee4-676aa492977d",
+      "result_id": "a7cfb81b-6b63-425e-bfd3-bb4f047a1b77"
+    },
+    {
+      "claim_id": "d58c981d-78c9-414b-9d69-66a9b590f46f",
+      "result_id": "a7cfb81b-6b63-425e-bfd3-bb4f047a1b77"
+    },
+    {
+      "claim_id": "9369423a-0e2f-41a8-ad58-300d834b01cb",
+      "result_id": "d53c5c27-2bd0-4fc2-8643-8081c5316aad"
+    },
+    {
+      "claim_id": "8128fcd7-2778-4d89-b89b-8005c0ca16ef",
+      "result_id": "d53c5c27-2bd0-4fc2-8643-8081c5316aad"
+    },
+    {
+      "claim_id": "af4df2f8-949a-4d3b-8425-b2889acc2adf",
+      "result_id": "438e2acc-75f3-4760-a0b9-a575fec4f4c2"
+    }
+  ],
+  "comparisons": []
+}

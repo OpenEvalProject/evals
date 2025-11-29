@@ -1,0 +1,448 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript presents background claims about the global burden of antibiotic resistance, citing surveillance data showing rising resistance levels worldwide, current estimates of 2 million infections and 23,000 deaths in the US, similar mortality in Europe, and projections of 10 million deaths and 100 trillion dollars in losses by 2050.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims rely entirely on citations to external sources (WHO 2014, CDC 2013, O'Neill 2014) without independent verification or analysis in this study. The authors themselves note that 'an accurate assessment of the current health and economic losses attributable to antibiotic resistance is elusive' (C2), and the quality of surveillance is 'variable' (C1). The projections for 2050 (C4) are particularly speculative and depend on numerous assumptions not evaluated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript reviews the existing debate in the literature between aggressive (high-dose, early) versus moderate antibiotic treatment strategies for minimizing resistance, presenting the rationales for each approach based on prior theoretical and experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the existing literature debate and are well-supported by multiple citations to prior work. The rationales for both approaches are clearly articulated: aggressive treatment aims to rapidly reduce pathogen population size before resistance emerges (C7), while moderate treatment aims to reduce selective pressure and avoid competitive release of resistant strains (C8, C9). This provides essential context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The study's central finding is that the extent of effective competition between drug-susceptible (DS) and drug-resistant (DR) strains determines whether aggressive or moderate treatment minimizes resistance, and that even within models allowing strong competition, different parameter combinations can support either strategy as optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary findings of the modeling study (C11, C12) and are well-supported by the extensive parameter exploration (60,000 parameter sets) and analysis presented. The claim about individual versus population-level optimization (C10) is supported by citations and is a key motivation for the study. The results demonstrate that no single approach is universally optimal, which is a significant contribution to resolving the debate in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The within-host model structure incorporates DS and DR bacterial strains with complex interactions including resource competition, immune-mediated suppression, and de novo acquisition of resistance from DS to DR strains, with DR strains having fitness costs (slower growth) but higher minimum inhibitory concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model structure is clearly described with explicit equations provided. The biological assumptions are reasonable and well-justified (C13-C21). The model is based on prior work (Ankomah and Levin 2014) but explores a broader parameter space. The inclusion of both competitive and beneficial interactions between strains (C19-C21) is essential for capturing the complexity that determines optimal treatment strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The computational methodology involved sampling 60,000 parameter sets from biologically relevant ranges and classifying outcomes as 'aggressive is best' (Spearman correlation S < -0.7), 'moderate is best' (S > 0.7), or neutral based on the relationship between treatment dosage and resistance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described (C22-C24) and appropriate for exploring the parameter space. The use of Spearman correlation with specific thresholds (\u00b10.7) provides a quantitative classification scheme. However, the choice of these specific threshold values is not justified, and sensitivity to this choice is not explored. The exclusion of parameter sets where treatment fails (>80% reduction in DS) is mentioned but could introduce bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The between-host model incorporates a continuum of inter-strain interactions from complete independence (c=0) to strict competition (c=1) using a 'similarity coefficient' parameter, with four host compartments (susceptible, DS-infected, DR-infected, dually-infected) to capture population-level dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The between-host model structure is well-described and represents a novel contribution by parameterizing the continuum between strain independence and competition (C30-C32). The model is supported by prior work on neutral models (Lipsitch et al. 2009, C31) and the dynamics under different similarity coefficients are illustrated in Figure 1 (C28, C29). The mathematical properties are stated to be proven in Appendix 1, though this is not included in the main text for verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Both within-host and between-host models demonstrate that either aggressive or moderate treatment can minimize resistance despite incorporating both competition and de novo resistance acquisition, with the optimal approach depending on the combined effects of multiple inter-strain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a key finding supported by the extensive parameter exploration in both models (C33, C34). The results show that the debate in the literature is not simply about model structure but about parameter values and the resulting strength of effective competition. This unifying framework is a major contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Sensitivity analysis of the within-host model reveals that while the relationship between treatment and resistance is relatively robust to variation in individual parameters, small changes in multiple parameters simultaneously can shift the model between aggressive-optimal and moderate-optimal regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sensitivity analysis (C35-C38) is supported by results shown in Appendix figures 2-3 and the main text analysis. The finding that no single parameter determines the outcome (C37) but that combinations matter (C38) is important for understanding why previous studies reached different conclusions. However, the specific definition of 'small changes' and 'radical effect' could be more quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DAPC analysis of the within-host model identifies key parameter combinations determining optimal strategy: aggressive treatment is preferred with strong immune systems (high kp, \u03b7), low DR growth rate (\u039bR), and low DR MIC, while moderate treatment is preferred with pre-existing resistance, weaker immunity, higher DR growth rate, or higher MIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DAPC analysis provides a principled statistical approach to identifying parameter importance (C39-C43). The coefficients are reported quantitatively (e.g., 0.79 for pre-existing resistance, C39) and the biological interpretation is reasonable. However, the DAPC method assumes linear separability, which may not fully capture complex nonlinear interactions. The finding about pre-existing resistance (C39, C40) is particularly important and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Parameter analysis reveals specific trade-offs: pre-existing DR populations favor moderate approaches since aggressive treatment cannot prevent resistance that is already present; higher DR growth rates or MIC favor moderate approaches but can be offset by strong immune responses; mutation rate affects DR numbers but not the treatment-resistance relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings (C44-C47) are supported by the parameter exploration and illustrated in Figures 3-4. The interpretation is biologically intuitive and well-explained. The finding that mutation rate does not strongly affect the treatment-resistance relationship (C47) is particularly interesting and somewhat counterintuitive, suggesting that pre-existing resistance and competitive dynamics are more important than de novo emergence during treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The presence or absence of pre-existing resistance fundamentally alters model dynamics: when DR is present initially, it does not need to emerge from DS through rare mutation events, making moderate approaches more likely to be optimal; when absent, DR must have higher fitness to compete effectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a logical inference from the model structure (C48) that is well-supported by the results (C49, C50). The distinction between pre-existing and de novo resistance is important for understanding real-world scenarios and is illustrated in Appendix figure 1. This finding helps explain why different experimental systems might favor different strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The within-host model encodes strong competition through shared resources and immune-mediated suppression at high bacterial populations, but effective competition requires that DR strains can be robust competitors through either maintaining growth capacity under treatment/immune pressure or facing weak immune systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C51-C55) provide important mechanistic insight into when competition is 'effective' in determining outcomes. The analysis correctly identifies that competition mechanisms alone are insufficient\u2014the DR strain must be capable of competing effectively (C54, C55). This explains why models with similar structures can produce different results depending on parameter values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The authors claim their findings are not artifacts of the specific model structure and will likely occur in any model including de novo resistance emergence and competition between DR and DS strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculation about generalizability (C56) that is not directly tested. While the authors explore two different models (within-host and between-host) and find consistent principles, they have not systematically tested alternative model structures. The claim is plausible but would require additional analysis with structurally different models to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The study develops a quantitative measure of 'effective competition' as the net extent to which decreasing one strain benefits the other, which successfully predicts whether treatment increases resistance with AUC of 0.94 in the within-host model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The definition of effective competition (C57) is clear and the predictive performance (AUC 0.94, C58) is excellent. However, the specific computational approach (reducing Bs by 5%, computing Br change over two time steps) is somewhat ad hoc and the sensitivity to these choices is not explored. Nevertheless, the high AUC suggests the measure captures important dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mathematical analysis of the between-host model identifies three possible equilibria (disease-free, both strains present, DR-only) and shows that the stability region of the DR-only equilibrium depends on the similarity coefficient, with invasion by DS requiring higher R01 as similarity increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The equilibrium analysis (C59-C63) is supported by Figure 5 and represents rigorous mathematical analysis of the model. The finding that strain similarity affects invasion dynamics (C61-C63) is important for understanding population-level competition. The analysis is stated to be proven in Appendix 1, though this is not included for verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Between-host model analysis shows that treatment decreases resistance when both R0 values are low, acquisition rate is high, and similarity coefficient is low; DAPC identifies high similarity coefficient (c, coefficient 0.93) as the strongest driver of moderate policy being optimal, with high R0 values also contributing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The between-host results (C64-C67) parallel the within-host findings and are supported by Figures 6-7 and DAPC analysis. The finding that competitive release rate does not contribute to DAPC weighting (C67) is surprising and interesting, suggesting that direct competition mechanisms are more important than this specific pathway. The high coefficient for similarity (0.93, C65) confirms the importance of inter-strain competition at the population level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Aggressive strategies minimize resistance in the between-host model when DR is relatively unfit (low R02), acquisition rate is high, and strains are more independent (low similarity coefficient), because independence allows even unfit strains to persist through super-infection and transmission from dually-infected hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings (C68-C70) are well-supported by the model analysis and provide mechanistic insight into population-level dynamics. The explanation of how independence allows unfit strains to persist (C70) is clear and important for understanding the role of co-infection in resistance dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study clarifies that previous findings about co-infection allowing DR persistence are actually due to the level of competition rather than co-infection per se, since co-infection can occur under varying levels of competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This clarification (C71-C73) is an important conceptual contribution that resolves confusion in prior literature (including the authors' own previous work, C71). The distinction between co-infection as a model feature and competition as a mechanistic driver is well-supported by the parameterized similarity coefficient approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The factors favoring aggressive policy in the between-host model (lower R02, higher acquisition rates, increased independence, low R01) all have the net effect of reducing inter-strain competition, either by making DR less fit, increasing its dependence on DS, or reducing competition for hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis (C74-C76) provides a unifying interpretation of the between-host results that parallels the within-host findings. The mechanistic explanations are clear and well-supported by the model analysis. This demonstrates that the same principle\u2014effective competition determines optimal strategy\u2014applies at both scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The measure of effective competition in the between-host model also successfully predicts treatment effects with AUC of 0.94.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding (C77) demonstrates that the effective competition framework applies consistently across both models, strengthening the generalizability of the approach. The identical AUC values (0.94) in both models is striking and suggests the measure captures fundamental dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Even without competitive release (r=0), successful individual treatment drives population-level resistance when strains compete, because treatment reduces R01 and moves the system toward regions where DR dominates on the invasion plot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding (C78, C79) is important because it shows that competitive release is not necessary for treatment to increase population-level resistance\u2014direct competition alone is sufficient. This is illustrated in Figure 5C and represents an important mechanistic insight about population-level effects of individual treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study concludes that aggressive policy is preferred when DR appearance and persistence depend on DS population size (benefits of acquisition outweigh competition costs), while moderate policy is preferred when DR is a fit competitor (competition costs outweigh acquisition benefits), and both modes occur in models with competition and acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary conclusions of the study (C80-C84) and are well-supported by the extensive modeling and analysis. The framework provides a clear mechanistic explanation for when each strategy is optimal and explains why previous studies reached different conclusions. This represents a major contribution to resolving the debate in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study analyzes previous contradictory results in the literature and shows they fit within the effective competition framework: studies finding aggressive approaches optimal had little effective competition (Ankomah & Levin 2014, Kim et al. 2014), while those finding moderate approaches optimal had stronger competition or pre-existing fit resistance (Gomes et al. 2013, Geli et al. 2012, Gullberg et al. 2011, Huijben et al. 2013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This analysis of prior work (C85-C91) is well-supported and represents an important contribution by showing how apparently contradictory results can be reconciled within a unified framework. The characterization of each study's assumptions and findings appears accurate based on the citations provided, though readers would need to verify the original sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study concludes that both aggressive and moderate perspectives are reasonable, with the within-host model showing moderate can be preferred with slightly fitter DR and more permissive environments, and the between-host model showing aggressive can be best even with strong competition if R0 values are low or acquisition rate is high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions (C92-C95) are well-supported by the modeling results and represent a balanced synthesis of the findings. The acknowledgment that both perspectives are reasonable (C92) is important for the field and is backed by rigorous analysis showing that parameter values, not just model structure, determine outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors argue that DR and DS variants of the same pathogen are expected to compete strongly in most circumstances because they are closely related, share antigenic properties, induce similar immune responses, consume similar resources, and occupy similar niches, though the extent of competition dominance over acquisition depends on acquisition rate, mechanism, and degree of effective competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C96-C98) are reasonable biological expectations supported by citations (C97), but they are speculative regarding 'most circumstances' (C96). The authors appropriately acknowledge that the balance depends on multiple factors (C98). However, the actual extent of competition in real pathogen systems is an empirical question that this modeling study does not directly address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors note that models typically reflect competition through resource limitation or carrying capacity at high bacterial populations, and speculate that direct antagonistic or cooperative interactions between strains could substantially alter competition extent and timing with profound consequences for optimal treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of typical modeling approaches (C99) is accurate and well-cited. The speculation about direct interactions (C100) is reasonable and appropriately cited, though it represents a limitation of the current study which does not explicitly model such interactions. This points to important future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study emphasizes key differences between individual-level and population-level optimization: aggressive approaches may be best for individuals while driving population-level resistance, and may diminish in utility over time as DR strains become fitter and circulate widely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These important distinctions (C101-C103) are well-supported by the between-host model results and prior literature (multiple citations in C101). The finding that individual-level and population-level optima can differ (C102) is demonstrated by the models. The speculation about temporal dynamics (C103) is reasonable but not directly tested in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study argues that co-infection should be included in models because it has been observed in most pathogens studied, models excluding it make strong implicit assumptions about competition, diversity-promoting mechanisms should be explicit, identical strains are expected to compete, and the extent of competition is a key driver of strain balance responses to interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological and conceptual points (C104-C108) are well-argued and supported by prior work (citations in C104, C106). The argument that excluding co-infection implies strong competition assumptions (C105) is an important insight. The emphasis on explicit competition mechanisms (C106-C108) is a valuable contribution to modeling practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study emphasizes the need for empirical data on effective competition between DS and DR strains, suggesting experimental approaches (in vitro/in vivo mixed populations) for within-host competition and acknowledging the challenges of studying population-level competition, where community-randomized trials would be ideal but may be prohibitive, suggesting surveillance data analysis as an alternative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations for future empirical work (C109-C115) are appropriate and well-reasoned. The acknowledgment of practical challenges (C112, C113) is realistic. The suggestions for alternative approaches using surveillance data (C114, C115) are constructive, though the feasibility and power of such approaches remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The study concludes that careful consideration of effective competition levels is essential when using models to understand the relationship between antimicrobial use and resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This final conclusion (C116) is well-supported by the entire study and represents an important take-home message for the field. The study has demonstrated through extensive modeling that effective competition is indeed a key determinant of optimal treatment strategies.",
+    "result_type": "MAJOR"
+  }
+]

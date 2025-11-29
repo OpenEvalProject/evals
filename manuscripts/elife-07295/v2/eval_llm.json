@@ -1,0 +1,468 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ChIP-seq analysis identified 1684 high-confidence WRKY33 binding sites associated with 1576 genes following B. cinerea infection. These binding sites are predominantly located in promoter regions (~300 bp upstream of TSS) and are infection-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C51-C57 provide converging evidence from ChIP-seq experiments with appropriate controls (mock-treated samples, WT without HA-tag) and biological replicates. The identification of previously known WRKY33 targets (C57) validates the approach. The genomic distribution and enrichment patterns are consistent with transcription factor binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "WRKY33 binding sites contain the canonical W-box motif (TTGACT/C) in 80% of cases, along with W-box extended motifs. A novel motif T/GTTGAAT was identified in 60% of binding regions, but EMSA experiments showed WRKY33 does not directly bind this motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 combine computational motif analysis with experimental validation via EMSA. The W-box binding is confirmed experimentally (C65), while the T/GTTGAAT motif is shown not to be directly bound by WRKY33. The functional significance of T/GTTGAAT remains unclear (C66), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq analysis identified 318 functional direct target genes of WRKY33 at 14 hpi, with 75% being repressed and 25% induced. Only ~20% of WRKY33-bound genes showed altered expression in wrky33 mutants, suggesting WRKY33 has a prominent repressive role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by RNA-seq data with appropriate biological replicates and statistical thresholds (\u22652-fold, p\u22640.05). The 20% overlap between binding and expression changes (C74) is consistent with other TF studies (C75). The inference about repressive function (C73) is justified by the 75% repression rate (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C79",
+      "C195",
+      "C196",
+      "C197",
+      "C199",
+      "C200"
+    ],
+    "result": "WRKY33 functions as a dual transcription factor, acting as both activator and repressor in a promoter-context dependent manner. It activates camalexin biosynthesis genes (PAD3, CYP71A13, AMT1, CYP71A12) and some ET-response genes, while repressing >75% of its direct targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C79, C195-C197, C199-C200 are supported by combined ChIP-seq and RNA-seq data showing both activation and repression of different target genes. The camalexin biosynthesis gene activation is confirmed by prior literature (C196) and extended by new findings (C197). The dual functionality is a major conclusion well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "GO term enrichment analysis reveals WRKY33 predominantly represses defense response genes (38% of repressed targets), cell death genes (38 of 42 targets), and kinase genes (majority of 41 kinase targets), while activating ethylene response genes (21% of induced targets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 are based on appropriate GO term enrichment analysis with statistical significance testing. The inference that WRKY33-mediated repression of cell death genes reinforces resistance to necrotrophs (C82) is logical given the biology of necrotrophic pathogens, though it remains an inference requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "WRKY33 binds to 133 transcription factor gene loci, including 18 WRKY genes, but only 16% (21 of 133) show WRKY33-dependent altered expression. Seven WRKY genes (WRKY33, WRKY38, WRKY41, WRKY48, WRKY50, WRKY53, WRKY55) are directly regulated, with WRKY33 binding to its own promoter consistent with positive autoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 are supported by integrated ChIP-seq and RNA-seq data. The autoregulatory loop (C91) is consistent with prior literature and current data. The low percentage of TF genes showing altered expression (C87) is appropriately noted and consistent with the overall pattern observed for all targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "WRKY33 modulates multiple hormone signaling pathways: it represses SA-response genes (overrepresented in repressed targets) linked to cell death responses, while activating ET-response genes including ACS6, ORA59, and ERF5. WRKY33 influences various hormonal responses with both positive and negative regulatory relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 are supported by GO term enrichment analysis and RNA-seq data. The connection between SA-response and cell death genes (C97-C98) is supported by overlap analysis. The roles of specific genes like ACS6, ORA59, and ERF5 are supported by prior literature citations (C100-C102). The conclusion about hormonal crosstalk (C103-C105) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "WRKY33 directly binds to and negatively regulates ABA biosynthesis genes NCED3 (promoter) and NCED5 (3'UTR), while positively regulating the ABA catabolism gene CYP707A3. Loss of WRKY33 results in elevated ABA levels, indicating WRKY33 acts upstream to repress ABA biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C111-C118 are supported by ChIP-seq showing direct binding (C111), qRT-PCR showing increased expression in wrky33 mutants (C114), and hormone measurements showing elevated ABA in wrky33 (C7). The binding to CYP707A3 and its positive regulation (C115-C117) provides additional mechanistic support. The conclusion about WRKY33 repressing ABA levels (C118) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Genetic epistasis analysis demonstrates that NCED3 and NCED5 are required for WRKY33-mediated resistance. The wrky33 nced3 nced5 triple mutant restores WT-like resistance to B. cinerea 2100, while wrky33 nced3 and wrky33 nced5 double mutants remain susceptible, indicating both genes are necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C127 are supported by infection assays (C120, C123-C124), fungal biomass quantification (C125), and appropriate genetic controls. The requirement for both NCED3 and NCED5 (C124) strengthens the conclusion. The inference that increased NCED3/NCED5 expression contributes to susceptibility (C126) and that WRKY33's key function is to repress ABA biosynthesis (C127) is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Exogenous ABA application partially restores susceptibility in the resistant wrky33 nced3 nced5 triple mutant but does not affect WT resistance. CYP707A mutants (cyp707a1, cyp707a2, cyp707a3) remain resistant despite elevated ABA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by infection assays with exogenous hormone application. The partial restoration of susceptibility by ABA in the triple mutant (C128) supports the role of ABA in susceptibility. The resistance of CYP707A mutants (C131) suggests that WRKY33-mediated control of NCED3/NCED5 is more critical than CYP707A3 regulation, though this interpretation could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Hormone measurements reveal that wrky33 mutants show elevated ABA, SA, JA, and ACC levels during infection. In the resistant wrky33 nced3 nced5 triple mutant, all hormone levels are reduced, suggesting ABA positively regulates SA, JA, and ACC biosynthesis. WRKY33's key function is to limit ABA levels and maintain hormonal homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C140 are supported by phytohormone measurements across multiple timepoints and genotypes. The reduction of SA, JA, and ACC in the triple mutant (C136-C137) supports the inference that ABA positively affects these hormones (C138). The conclusion about WRKY33's role in hormonal homeostasis (C139-C140) is well-supported by the combined genetic and hormone data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Expression analysis of wrky33 nced3 nced5 shows restoration of WT-like expression for many SA-related genes (ICS1, NPR1, NPR3, NPR4, TRX-h5, FMO1) and other targets, while some genes (EDS1, PAD4, NIMIN1, PR1, PR2) remain elevated. ABA has positive effects on some genes (ERF1, NAC019, NAC055, WRKY41, WRKY48, WRKY53, WRKY55) and negative effects on others (WRKY38, WRKY50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C151 are supported by qRT-PCR data comparing multiple genotypes. The partial restoration of SA-related gene expression (C142-C144) is consistent with the partial reduction in SA levels. The differential effects of ABA on different genes (C145-C146) are appropriately documented. The conclusion that genes with restored expression are candidates for causal roles in resistance (C151) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The number of WRKY33 binding sites (1684) far exceeds the number of genes with altered expression (318, ~20%). This discrepancy is consistent with other TF studies and may reflect context-dependent transcriptional regulation requiring additional signaling inputs beyond WRKY33 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 document an observation consistent with other ChIP-seq studies (C154). The speculation about context-dependent regulation (C155, C158) is appropriately presented as a hypothesis. The example of MAMP/DAMP receptor genes showing binding without expression changes (C156-C157) illustrates the phenomenon, though the mechanistic explanation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Previous genetic analyses excluded major roles for SA, JA, and ET signaling in WRKY33-dependent resistance. GH3.2 and GH3.3, encoding acyl-acid-amide synthetases, are WRKY33-repressed targets, but the wrky33 gh3.2 gh3.3 triple mutant does not restore resistance, indicating these genes are not critical for WRKY33-dependent defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by prior literature (C106) and genetic studies (C110). The negative result (no restoration of resistance in the triple mutant) is appropriately documented and interpreted, ruling out GH3.2 and GH3.3 as critical mediators of WRKY33-dependent resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C159",
+      "C160"
+    ],
+    "result": "Using conservative criteria, ~2600 genes showed WRKY33-dependent transcriptional changes at 14 hpi. The high number of modulated genes at early infection stages highlights WRKY33's importance in initiating host responses to B. cinerea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 are supported by RNA-seq data with appropriate statistical criteria. The inference about WRKY33's importance (C160) is reasonable given the large number of affected genes, though it remains an interpretation of the data's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Literature review establishes that ABA's role in biotic stress is complex. ATAF1 represses ABA biosynthesis for non-host resistance but promotes susceptibility to B. cinerea. Several NAC TFs (NAC002/ATAF1, NAC019, NAC055, NAC061, NAC068, NAC090) show increased expression in wrky33 mutants and are associated with ABA regulation and B. cinerea susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C172 appropriately cite prior literature to contextualize the current findings. The observation that several NAC TF genes are upregulated in wrky33 (C169-C170) is supported by RNA-seq data. The connection to ABA regulation and B. cinerea susceptibility (C171-C172) is supported by literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "ABA can have complex effects on hormone signaling. In wrky33 mutants, elevated ABA correlates with increased SA, JA, and ACC levels. Increased SA per se does not contribute to susceptibility (wrky33 sid2 is still susceptible). Elevated ABA activates NPR1-dependent SA signaling and ET/JA signaling genes (ACS2, ACS6, ERF1, ORA59), but these ET/JA components are not essential for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C181 integrate hormone measurements, genetic studies, and expression analysis. The conclusion that increased SA per se doesn't cause susceptibility (C175) is supported by genetic data. The activation of NPR1-dependent signaling (C178) and ET/JA genes (C179) is supported by expression data. The inference that these ET/JA components are not essential (C181) is reasonable given both genotypes are resistant despite reduced expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Speculation on mechanisms: Increased ABA in wrky33 may activate unidentified ABA-response factors binding to ABRE or G-box motifs in gene promoters. Several genes (NAC019, NAC061, FMO1, GH3.2, GH3.3) contain such motifs. Elevated SA may induce GRX480/ROXY19, which activates SA responses while suppressing JA signaling; GRX480 overexpression causes B. cinerea susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C182-C186 are appropriately presented as speculation (C182-C183) or correlative observations (C184). The presence of ABRE/G-box motifs (C183) is noted but not experimentally validated. The GRX480 connection (C184-C186) is supported by prior literature but remains correlative in the current study. These are reasonable hypotheses for future investigation but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Literature review establishes that dual-function transcription factors (acting as both activators and repressors) are common in animals/humans but less characterized in plants. Examples include tomato Pti4, Arabidopsis WUSCHEL, and several WRKY proteins (WRKY53, WRKY6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C194 appropriately cite literature to contextualize the finding that WRKY33 is a dual-function TF. This provides important background for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C198",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Literature and current data suggest WRKY33's dual functionality may involve recruitment to distinct repressor/activator complexes. VQ-motif proteins interact with WRKY33: VQ4/MVQ1 acts as a negative regulator, while SIB1/SIB2 stimulate WRKY33 DNA-binding. Four VQ genes (VQ8, VQ22/JAV1, VQ28, VQ33) are WRKY33 targets; VQ22/JAV1 negatively regulates JA defenses, and its elevated levels in wrky33 may contribute to susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198, C201-C210 combine literature citations with current ChIP-seq/RNA-seq data. The speculation about complex formation (C201) is appropriately presented as a hypothesis. The identification of VQ genes as WRKY33 targets (C208) is supported by data. The speculation about VQ protein contributions to susceptibility (C210) is reasonable but remains to be experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Many WRKY genes, including WRKY33 itself, are WRKY33 targets. WRKY factors form a highly interconnected regulatory network affected by auto- and cross-regulation, deeply interconnected with hormonal pathways to ensure rapid signal amplification while allowing tight control of immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C214 are supported by ChIP-seq data (C211) and literature citations (C212-C214). The interpretation about the WRKY network's function (C214) is a reasonable inference supported by literature, though it remains somewhat speculative regarding the precise functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "Summary and future directions: This study identified WRKY33 targets genome-wide and revealed that ABA biosynthesis genes directly regulated by WRKY33 act at crucial nodes in resistance signaling. Due to network complexity, precise mechanisms remain to be elucidated. Future transcriptional profiling of wrky33 nced3 nced5 would help identify key genes required for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C218 appropriately summarize the main findings and acknowledge limitations. The suggestion for future work (C218) is reasonable and appropriately presented as a future direction rather than a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Introduction and background: Necrotrophic fungi are major pathogens; B. cinerea is the second most important fungal pathogen. Plant immunity to B. cinerea involves complex genetic control with various TFs (MYB, NAC, ERF, WRKY). WRKY33 is a key positive regulator activated by MPK3/MPK6, directly binds to PAD3 and other targets, and shows positive autoregulation. Previous work showed wrky33 mutants are highly susceptible with altered hormone responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C50 provide appropriate background from literature citations and prior work by the authors. These establish the context and rationale for the current study. The complementation of wrky33 with WRKY33-HA (C49) validates the transgenic line used for ChIP-seq.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study recorded 852 V1 and 3627 CA1 cells from 15 male Long-Evans rats running on a novel C-shaped track (~3 m long, ~6 cm wide) for 2-14 days starting from their first exposure. After filtering, 776 V1 cells (median firing rate 4.3 Hz) and 2033 CA1 cells (median firing rate 1.6 Hz) were analyzed. V1 cells were sampled across all cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C75-C82 provide comprehensive methodological details with specific quantitative values. The experimental design is clearly described with appropriate inclusion/exclusion criteria (firing rate >0.5 Hz for active cells, >5 Hz exclusion for putative interneurons). Sample sizes are adequate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Behavioral performance (running speed and laps per minute) stabilized by Day 3 of track running, indicating rapid habituation to the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by Figure 1B,C showing behavioral data across days. This establishes that major behavioral changes occurred during the first few days, providing context for interpreting neural activity changes across the experimental timeline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C54"
+    ],
+    "result": "V1 cells displayed location-specific firing on the track, with 81% of trajectory-active V1 cells classified as location-responsive (SMI >2.325). While V1 cells had lower spatial information content (median 0.17 bits/spike) compared to CA1 place cells (1.6 bits/spike), their spatial information was significantly greater than shuffled controls (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17, C54 demonstrate location-specific V1 activity with appropriate statistical controls. The shuffling procedure preserves firing rate and temporal structure while disrupting spatial relationships, providing a valid baseline. The SMI normalization addresses rate-dependence issues in spatial information measures. Statistical significance is well-established (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C55"
+    ],
+    "result": "Location-responsive V1 cells had nearly twice as many firing fields per trajectory (mean 2.9\u00b10.04) compared to CA1 place cells (1.5\u00b10.02, p<0.0001), but V1 firing fields were significantly smaller (37.5\u00b10.3 cm vs 47.2\u00b10.4 cm for CA1, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C55 are supported by quantitative data with appropriate statistical tests (t-tests) and large sample sizes (N=1216 V1 cell\u00d7trajectories, N=2618 CA1). The differences are highly significant and characterize distinct spatial response properties between V1 and CA1 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "V1 and CA1 firing fields were preferentially distributed around landmarks (food wells and track corners) and their distributions were highly correlated. Critically, V1 field distributions led CA1 distributions spatially by 2-4 cm (equivalent to 60-120 ms at mean speed of 35 cm/s) consistently across both running directions (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 demonstrate spatial correlation with temporal precedence of V1 over CA1. The cross-correlation analysis (Figure 3D,E) shows significant peaks at non-zero lags that are consistent across opposite running directions, supporting a directional relationship. The conversion from spatial to temporal lag is straightforward given measured running speed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C43"
+    ],
+    "result": "Approximately 10% of both V1 (9.7%) and CA1 (10.4%) cells showed bidirectional firing with bimodal distributions of cross-correlogram peaks (V1: \u00b126 cm; CA1: +18/-28 cm), indicating prospective and retrospective firing relative to landmarks. All 4 overlapping V1-CA1 bidirectional pairs showed the same directionality type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C43 characterize bidirectional cells with clear bimodal distributions (Figure 4C,D). The finding that all 4 overlapping bidirectional pairs showed matching directionality is consistent with functional coupling, though the small sample size (N=4) limits generalizability. The 5/10 non-overlapping pairs showing opposite directionality provides appropriate contrast.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Among 22,969 V1-CA1 cell pairs, 997 highly significantly correlated pairs (peak correlation \u22658, peak time within \u00b1200 ms) showed a significant bias toward positive peak times (58% positive vs 46% negative, p=0.00017), indicating that V1 cells led CA1 cells temporally on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 use normalized spike count cross-correlation that is insensitive to firing rate differences. The binomial test appropriately tests for bias in peak time distribution. The 58% vs 46% asymmetry (note: these don't sum to 100%, likely due to rounding or exclusion of zero-lag peaks) is statistically significant and consistent with V1\u2192CA1 information flow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C56"
+    ],
+    "result": "Among 786 overlapping V1-CA1 cell pairs (with \u226550% field overlap), 48% showed significant correlation in lap-by-lap firing rate fluctuations (\u0394rate) and 23% in center-of-mass fluctuations (\u0394COM). Group averages for overlapping pairs (\u0394rate: 0.29\u00b10.01; \u0394COM: 0.16\u00b10.01) were significantly greater than zero and significantly higher than non-overlapping pairs (\u0394rate: 0.062\u00b10.003; \u0394COM: 0.0005\u00b10.0028) and non-responsive pairs (p<0.0001 for all comparisons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38, C56 demonstrate precise lap-by-lap co-fluctuation specific to overlapping pairs. The analysis appropriately uses two control groups (non-overlapping and non-responsive pairs) to establish specificity. Statistical tests are appropriate (t-tests) with large sample sizes. The correlation is modest but highly significant and specific to spatially overlapping fields.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "After removing modulation by speed and head direction through multivariate linear regression, overlapping V1-CA1 pairs retained significant correlations in modified \u0394rate (0.14\u00b10.009, p<0.0001) and modified \u0394COM (0.13\u00b10.009, p<0.0001), both significantly higher than control pairs. This indicates behavioral variations cannot fully account for the observed correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 address a critical confound. The multivariate regression approach appropriately removes linear effects of speed and head direction (Figure 6\u2014figure supplement 4 shows these modulations exist). The persistence of significant correlations after this correction strengthens the interpretation of functional coupling. The modest reduction in correlation values (from ~0.29 to ~0.14 for \u0394rate) suggests behavioral factors explain some but not all of the co-fluctuation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "V1 firing fields showed much less lap-by-lap dynamics than CA1 place fields, with CA1 showing systematic backward shifting of center-of-mass across laps while V1 did not show this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by Figure 6\u2014figure supplement 5 showing lap-by-lap COM changes. CA1 shows significant systematic backward shift (p<0.0001, Pearson's R=-0.89) while V1 does not (p=0.09, R=0.10). This is consistent with known CA1 plasticity (Mehta et al., 1997, 2000) and suggests V1 responses are more stable at short timescales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C57"
+    ],
+    "result": "Over days of track experience (T1 to T3), V1 cells showed a 50% increase in median firing rate (p<0.0001) while CA1 cells showed no significant change (3% increase, p=0.079). Both V1 and CA1 cells showed significant increases in spatial modulation index (SMI: V1 55% increase, CA1 39% increase, both p<0.0001), indicating experience-dependent enhancement of location-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C57 demonstrate experience-dependent plasticity using appropriate non-parametric tests (Kruskal-Wallis). The differential effects on firing rate (V1 increases, CA1 stable) versus SMI (both increase) suggest distinct plasticity mechanisms. Sample sizes are adequate (N=279-628 cells per time point). The time course analysis (T1: Days 1-2, T2: Days 3-5, T3: Days 6-7+) appropriately captures the transition from novel to familiar.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Layer-specific analysis revealed L4 cells had significantly higher firing rates (10.2 Hz) than L2/3 (3.2 Hz) and L5/6 (2.9 Hz) cells (p<0.0001). Location-responsiveness was highest in L2/3 (86%), followed by L4 (78%) and L5/6 (70%). With experience, only L2/3 showed significant firing rate increase (39%, p=0.00023), but all layers showed significant SMI increases (L2/3: 52%, L4: 130%, L5/6: 54%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide layer-specific characterization with appropriate statistical tests. Sample sizes vary by layer (L2/3: N=478, L4: N=120, L5/6: N=83) with L4 and L5/6 having smaller samples. The dramatic 130% SMI increase in L4 is notable but should be interpreted cautiously given the smaller sample size. The layer-specific differences in baseline properties and plasticity are biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C70",
+      "C71"
+    ],
+    "result": "V1 cells have location-specific responses functionally coupled with hippocampal place cells encoding the same environment. The lap-by-lap co-fluctuation between overlapping V1-CA1 pairs is qualitatively similar to that between CA1-CA1 pairs, suggesting V1 cells functionally interact with CA1 place cells during memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C70-C71 represent the main conclusions synthesizing multiple lines of evidence: spatial correlation with V1 leading CA1, temporal correlation with positive bias, and lap-by-lap co-fluctuation specific to overlapping pairs. The comparison to CA1-CA1 pairs (Figure 6\u2014figure supplement 3) shows qualitatively similar correlation patterns, supporting the functional coupling interpretation. The evidence converges to support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C59",
+      "C67",
+      "C72"
+    ],
+    "result": "Background claims establish that hippocampal place cells encode spatial information, are influenced by visual cues and path integration, and are connected to visual cortex via multi-synaptic pathways. Place cells play critical roles in spatial and other types of memory, with overlapping place cells forming functional assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C59, C67, C72 are well-supported by appropriate citations to foundational literature. These provide necessary context for interpreting the current findings but represent prior knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that V1 location-responsive cells may participate in encoding and storing spatial memories, that V1 neurons are driven by visual cues at specific locations (with prospective/retrospective firing mechanisms), and that spatial representation involves gradual transformation from sensory cortex to hippocampus. They suggest overlapping V1-CA1 cells form 'cortical-hippocampal assemblies' encoding the same memory trace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C66, C68, C69, C73-C74 are largely speculative interpretations and proposals. While C69 cites prior work on coordinated replay during sleep, most claims represent theoretical frameworks rather than directly tested hypotheses. The proposals are reasonable given the data but require additional experiments (e.g., memory testing, causal manipulations, direct pathway tracing) for validation. The mechanisms for prospective/retrospective firing (C62-C63) are particularly speculative.",
+    "result_type": "MAJOR"
+  }
+]

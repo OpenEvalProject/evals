@@ -1,0 +1,1492 @@
+{
+  "submission": {
+    "id": "59850a4b-533a-4962-945c-21c2adf85da5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:54:28.955972Z",
+    "updated_at": "2025-11-29T03:54:28.955972Z"
+  },
+  "content": [
+    {
+      "id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "submission_id": "59850a4b-533a-4962-945c-21c2adf85da5",
+      "content_type": "manuscript",
+      "content_text": "# De novo synthesis of a sunscreen compound in vertebrates\n\n## Authors\n\n- Andrew R Osborn<sup>1</sup>\n- Khaled H Almabruk<sup>1</sup>\n- Garrett Holzwarth<sup>2</sup>\n- Shumpei Asamizu<sup>1</sup>\n- Jane LaDu<sup>4</sup>\n- Kelsey M Kean<sup>5</sup>\n- P Andrew Karplus<sup>5</sup>\n- Robert L Tanguay<sup>4</sup>\n- Alan T Bakalinsky<sup>2</sup>\n- Taifo Mahmud<sup>1</sup> ([ORCID: 0000-0001-9639-526X](https://orcid.org/0000-0001-9639-526X)) \u2020\n\n### Affiliations\n\n1. Department of Pharmaceutical Sciences Oregon State University Corvallis United States\n2. Department of Food Science and Technology Oregon State University Corvallis United States\n3. Department of Microbiology Oregon State University Corvallis United States\n4. Department of Environmental and Molecular Toxicology Oregon State University Corvallis United States\n5. Department of Biochemistry and Biophysics Oregon State University Corvallis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUltraviolet-protective compounds, such as mycosporine-like amino acids (MAAs) and related gadusols produced by some bacteria, fungi, algae, and marine invertebrates, are critical for the survival of reef-building corals and other marine organisms exposed to high-solar irradiance. These compounds have also been found in marine fish, where their accumulation is thought to be of dietary or symbiont origin. In this study, we report the unexpected discovery that fish can synthesize gadusol de novo and that the analogous pathways are also present in amphibians, reptiles, and birds. Furthermore, we demonstrate that engineered yeast containing the fish genes can produce and secrete gadusol. The discovery of the gadusol pathway in vertebrates provides a platform for understanding its role in these animals, and the possibility of engineering yeast to efficiently produce a natural sunscreen and antioxidant presents an avenue for its large-scale production for possible use in pharmaceuticals and cosmetics.\n\n## Introduction\n\nThe sunscreen compounds, mycosporine-like amino acids (MAAs) and related gadusols, commonly found in bacteria, fungi, algae, and marine invertebrates (Shick and Dunlap, 2002; Miyamoto et al., 2014), have been proposed to fulfill a variety of functions, such as sunscreen, antioxidant, stress response, intracellular nitrogen reservoir, and/or optical filter (Gao and Garcia-Pichel, 2011; Bok et al., 2014). Although their formation had long been proposed to originate from the shikimate pathway, more recent bioinformatic and biochemical studies revealed that in cyanobacteria, MAAs are synthesized by desmethyl-4-deoxygadusol synthase (DDGS), a dehydroquinate synthase (DHQS) homolog (Wu et al., 2007; Balskus and Walsh, 2010; Singh et al., 2010; Asamizu et al., 2012). Interestingly, inactivation of the DDGS gene in Anabaena variabilis ATCC 29413 did not abolish the production of MAAs, suggesting that additional pathways exist for the biosynthesis of MAAs (Spence et al., 2012). DDGS converts sedoheptulose 7-phosphate (SH7P) to desmethyl-4-deoxygadusol via a unique sequence of dephosphorylation, aldol condensation, enolization, dehydration, reduction, and tautomerization reactions (Figure 1\u2014figure supplement 1) (Balskus and Walsh, 2010; Asamizu et al., 2012). The product is subsequently converted by a methyltransferase to 4-deoxygadusol, the building block of MAAs.\n\n4-Deoxygadusol has also been proposed to be the precursor of gadusol (Starcevic et al., 2010; Rosic and Dove, 2011), a related compound initially isolated from cod roe (Gadus morhua L.) (Plack et al., 1981), but also found in roes of other marine fish (Plack et al., 1981; Arbeloa et al., 2010), sea urchin eggs (Chioccara et al., 1986), cysts and nauplii of brine shrimp (Grant et al., 1985), mantis shrimp crystalline cones (Bok et al., 2014), and sponges (Bandaranayake et al., 1997). As genes responsible for the production of 4-deoxygadusol and MAAs are commonly found in bacteria (e.g., cyanobacteria), algae, and other marine microorganisms (Shick and Dunlap, 2002; Miyamoto et al., 2014), the accumulation of these compounds in marine animals has been proposed to be of dietary or symbiont origin (Arbeloa et al., 2010; Gao and Garcia-Pichel, 2011; Loew, 2014). On the other hand, a gene cluster like that in cyanobacteria apparently encoding a four-step DDGS-based pathway for converting SH7P to MAAs was discovered in the genomes of a coral (Acropora digitifera) and sea anemone (Nematostella vectensis), suggesting that these invertebrates can produce MAAs autonomously (Rosic and Dove, 2011; Shinzato et al., 2011).\n\nDDGS is a member of the sugar phosphate cyclase (SPC) superfamily (Wu et al., 2007). In addition to DHQS, this superfamily includes four enzymes known for their roles in the biosynthesis of natural products with therapeutic application: 2-epi-5-epi-valiolone synthase (EEVS), 2-epi-valiolone synthase, aminoDHQS, and 2-deoxy-scyllo-inosose synthase (DOIS) (Wu et al., 2007; Mahmud, 2009; Asamizu et al., 2012; Kang et al., 2012). EEVS catalyzes the entry step to the biosynthesis of pseudosugar-containing natural products, such as the antidiabetic drug acarbose and the crop protectant validamycin A, and has so far only been identified and characterized in bacteria (Mahmud, 2009).\n\nRecently, we surprisingly also found genes that encode EEVS-like proteins (annotated as \u2018PREDICTED: pentafunctional AROM polypeptide-like\u2019) in the genomes of fish, amphibians, reptiles, and birds (Figure 1A, Figure 1\u2014figure supplement 2, Table 1, Figure 1\u2014source data 1). This gene is located in a cluster with another functionally unknown gene (labeled as MT-Ox hereafter) and flanked by a suite of transcription factor genes encoding FRMD4B, MitF, MDFIC, and FoxP1 (Figure 1B). These transcription factors have been known to regulate the expression of genes with essential roles in cell differentiation, proliferation, and survival (Levy et al., 2006; Rice et al., 2012; Garner et al., 2014; Zhao et al., 2015). However, whether they have a direct functional relationship with the EEVS and MT-Ox genes remains an open question. Whereas humans and other mammals also have FRMD4B, MitF, MDFIC, and FoxP1 homologs, they lack the EEVS-like and the MT-Ox genes (Figure 1B). Therefore, the presence of the EEVS-like gene, previously only found in bacteria, in the genomes of fish, and other egg-laying vertebrates is puzzling and evolutionarily intriguing. Here, we report bioinformatics and functional studies of zebrafish (Danio rerio) EEVS-like and MT-Ox genes and the expression of this two-enzyme pathway in yeast, and discuss the evolutionary origin of this pathway in fish, amphibians, reptiles, and birds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-v1.jpg)\n\n**Figure 1.:** (A) Bayesian phylogenetic tree of SPCs. Numbers represent posterior probability. The stramenopile Aureococcus anophagefferens, denoted by the blue star, has EEVS and MT-Ox proteins strikingly similar (over 50% identical) to those in vertebrates. The micro algae Coccomyxa subellipsoidea, denoted by the red star, also has EEVS and MT-Ox. (B) Genetic organizations of EEVS and MT-Ox genes in fish, amphibians, birds, and reptiles. Humans and other mammals lack these genes (indicated in dashed red box). For a complete list of vertebrates whose genomes are known to contain EEVS and MT-Ox genes, see Table 1. FRMD4B, FERM domain-containing protein 4B; MitF, microphtalmia-associated transcription factor; MDFIC, MyoD-family inhibitor domain-containing protein-like; and FoxP1, Forkhead-related transcription factor 1. (C) Biochemical characterization of recombinant LOC100003999 and zgc:113054 proteins. (D) WebLogo (Crooks et al., 2004) images of residue conservation patterns at the three metal ligand positions and two active site fingerprint sites known (Kean et al., 2014) to distinguish bacterial EEVSs from DDGSs. The residue numbers given correspond to the reference proteins D. rerio EEVS, ValA, and A. variabilis DDGS, respectively. WebLogos were based on 126 vertebrate, 63 bacterial EEVS, and 160 bacterial DDGS sequences, respectively, that had BLASTP E-values <10\u2212120 in searches using the reference proteins noted above as queries. Each group was aligned using ProMals (Pei and Grishin, 2007).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Numbers represent bootstrap confidence values. Blue star denotes the stramenopile A. anophagefferens, and red star denotes the micro algae C. subellipsoidea.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) SDS PAGE of purified recombinant ValA, LOC100003999, and zgc:113054, and E. coli cell free extracts containing the enzymes. (B) TLC analysis of enzymatic products of purified ValA and purified LOC100003999. (C) TLC analysis of EEV and the zgc:113054 product (gadusol) using FeCl3 solution as a spraying agent. Only gadusol, but not EEV, can be detected as a maroon spot.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) SH7P with E. coli cell free extracts containing LOC100003999. (B) SH7P with purified ValA. (C) Authentic EEV. Samples were converted to their trimethylsilyl derivatives using Tri-Sil HTP (Thermo Scientific).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Alignment of the sequence of the only structurally known EEVS\u2013ValA from Streptomyces hygroscopicus (ShEEVS; PDB entry 4P53) with representative related enzymes. The family consensus secondary structure elements shown schematically shown above the sequences and within each sequence the residues involved in secondary structures are color coded: \u03b2-strands (yellow), \u03b1-helices (teal), 310 helices (blue), and \u03c0 helices (orange). ValA is shown first, and other sequences in order are DrEEVS (Danio rerio EEVS), CsEEVS (C. subellipsoidea EEVS), AaEEVS (A. anophagefferens EEVS), AvDDGS (A. variabilis DDGS; Ava_3858), AmEVS (Actinosynnema mirum EVS; Amir_2000), PDB entry 1DQS (Aspergillus nidulans DHQS), and PDB entry 2D2X (Bacillus circulans DOIS). The 14 \u2018fingerprint\u2019 active site positions identified by Kean et al. (Kean et al., 2014) are indicated by an asterisk (*) below the sequences. Above the sequences are indicated a subset of those residues that ligate the catalytic metal (m) and another subset with notable variation between the family members that have different types of activity (\u2193). The DrEEVS sequence and those of all known vertebrate homologs (not shown) match ShEEVS at all fourteen active site positions. The putative algal EEVS enzymes, AaEEVS and CsEEVS, sequences match the EEVS residues at the positions thought to be important for distinguishing the EEVS activity, but respectively differ at one and two positions; these positions are the ones that are of unknown importance for EEVS activity.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Shown are the 13 active-site residues conserved in all EEVS enzymes (pale purple carbons), the NAD+ (gray carbons), and the Zn2+ atom (silver sphere with black coordination bonds), along with a mesh that delineates the pocket suitable for binding an SH7P substrate. Residue numbers in LOC100003999 identifying twelve of the active site residues are shown; the third metal ligand, H366, is behind the zinc and is not labeled. For the two positions that differ between EEVS and DDGS, the residue type present in DDGS is shown in green in parentheses. Figure made with Pymol (Schr\u00f6dinger L. The PyMOL Molecular Graphics System, Version 1.3.) using the coordinates of ValA, an EEVS from S. hygroscopicus subsp. jinggangensis 5008 (Kean et al., 2014).\n\n**Table 1.**\n Genetic analysis of EEVS and MT-Ox genes in some invertebrates and chordates\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Class</th>\n      <th>Species</th>\n      <th>Common name</th>\n      <th>FRMD4B</th>\n      <th>MitF</th>\n      <th>EEVS</th>\n      <th>MT-Ox</th>\n      <th>MDFIC</th>\n      <th>FoxP1</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Cnidaria</td>\n      <td>Acropora digitifera</td>\n      <td>Coral*</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Nematostella vectensis</td>\n      <td>Starlet sea anemone*</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Hydra vulgaris</td>\n      <td>Common hydra</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Invertebrate chordates</td>\n      <td>Ciona intestinalis</td>\n      <td>Vase tunicate</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Branchiostoma floridae</td>\n      <td>Florida lancelet</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Agnatha</td>\n      <td>Petromyzon marinus</td>\n      <td>Lamprey\u2020</td>\n      <td>\u2021</td>\n      <td>\u221a</td>\n      <td>\u2021</td>\n      <td>\u2021</td>\n      <td>\u2021</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Chondrichthyes</td>\n      <td>Callorhinchus milii</td>\n      <td>Australian ghostshark\u2020</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2021</td>\n      <td>\u2021</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td rowspan=\"18\">Osteichthyes (Actinopterygii)</td>\n      <td>Astyanax mexicanus</td>\n      <td>Mexican tetra</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Danio rerio</td>\n      <td>Zebra fish</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Dicentrarchus labrax</td>\n      <td>European seabass</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Fundulus heteroclitus</td>\n      <td>Mummichog</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Gadus morhua</td>\n      <td>Atlantic cod</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Gasterosteus aculeatus</td>\n      <td>Three-spined stickleback</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Lepisosteus oculatus</td>\n      <td>Spotted gar</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Maylandia zebra</td>\n      <td>Zebra mbuna</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Neolamprologus brichardi</td>\n      <td>African cichlid</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Oncorhynchus mykiss</td>\n      <td>Rainbow trout</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Orechromis niloticus</td>\n      <td>Nile tilapia</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Oryzias latipes</td>\n      <td>Japanese rice fish</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Poecilia formosa</td>\n      <td>Amazon molly</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Pundamilia nyererei</td>\n      <td>African cichlid</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Salmo salar</td>\n      <td>Atlantic salmon</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Takifugu rubripes</td>\n      <td>Japanese puffer</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Tetraodon nigroviridis</td>\n      <td>Green spotted puffer</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Xiphophorus maculatus</td>\n      <td>Southern platyfish</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Sarcopterygii</td>\n      <td>Latimeria chalumnae</td>\n      <td>West African Coelacanth</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Amphibia</td>\n      <td>Xenopus tropicalis</td>\n      <td>Western clawed frog</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">Reptilia</td>\n      <td>Alligator mississippiensis</td>\n      <td>American alligator</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Anolis carolinensis</td>\n      <td>Green anole</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Chelonia mydas</td>\n      <td>Green sea turtle</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Chrysemys picta bellii</td>\n      <td>Western painted turtle</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Ophiophagus hannah</td>\n      <td>King cobra\u2020</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2021</td>\n      <td>\u2021</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Pelodiscus sinensis</td>\n      <td>Chinese softshell turtle</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Python bivittatus</td>\n      <td>Burmese python\u2020</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2021</td>\n      <td>\u2021</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td rowspan=\"11\">Aves</td>\n      <td>Anas platyrhynchos</td>\n      <td>Mallard</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Columba livia</td>\n      <td>Rock dove</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Falco cherrug</td>\n      <td>Saker falcon</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Ficedula albicollis</td>\n      <td>Collard flycatcher</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Gallus gallus</td>\n      <td>Chicken</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Geospiza fortis</td>\n      <td>Medium ground-finch</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Meleagris gallopavo</td>\n      <td>North American wild turkey</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Melopsittacus undulates</td>\n      <td>Common pet parakeet</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Pseudopodoces humilis</td>\n      <td>Tibetan ground-tit</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Taeniopygia guttata</td>\n      <td>Zebra finch</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2021</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Zonotrichia albicollis</td>\n      <td>White-throated sparrow</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td rowspan=\"39\">Mammalia</td>\n      <td>Balaenoptera acutorostrata scammoni</td>\n      <td>Minke whale</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Bos taurus</td>\n      <td>Cattle</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Callithrix jacchus</td>\n      <td>White-tufted-ear marmoset</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Capra hircus</td>\n      <td>Goat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Ceratotherium simum simum</td>\n      <td>Southern white rhinoceros</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Chinchilla lanigera</td>\n      <td>Long-tailed chinchilla</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Chlorocebus sabaeus</td>\n      <td>Green monkey</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Cricetulus griseus</td>\n      <td>Chinese hamster</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Eptesicus fuscus</td>\n      <td>Big brown bat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Equus caballus</td>\n      <td>Horse</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Erinaceus europaeus</td>\n      <td>Western European hedgehog</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Felis catus</td>\n      <td>Cat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Gorilla gorilla</td>\n      <td>Western gorilla</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Heterocephalus glaber</td>\n      <td>Naked mole-rat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens</td>\n      <td>Human</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Lipotes vexillifer</td>\n      <td>Yangtze river dolphin</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Loxodonta africana</td>\n      <td>African savanna elephant</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Macaca fascicularis</td>\n      <td>Crab-eating macaque</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Mesocricetus auratus</td>\n      <td>Golden hamster</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Monodelphis domestica</td>\n      <td>Gray short-tailed opossum</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Mus musculus</td>\n      <td>House mouse</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Mustela putorius furo</td>\n      <td>Domestic Ferret</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Myotis davidii</td>\n      <td>Mouse-eared bat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Myotis lucifugus</td>\n      <td>Little-brown bat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Nomascus leucogenys</td>\n      <td>Northern white-cheeked gibbon</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Odobenus rosmarus divergens</td>\n      <td>Pacific walrus</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Orcinus orca</td>\n      <td>Killer whale</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Ornithorhynchus anatinus</td>\n      <td>Duck-billed platypus\u2020</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Orycteropus afer</td>\n      <td>Ardvark</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Otolemur garnettii</td>\n      <td>Small-eared galago</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Ovis aries</td>\n      <td>Sheep</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Pan troglodytes</td>\n      <td>Chimpanzee</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Papio anubis</td>\n      <td>Olive baboon</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Peromyscus maniculatus bairdii</td>\n      <td>Prairie deer mouse</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Pteropus alecto</td>\n      <td>Black flying fox</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Rattus norvegicus</td>\n      <td>Norway rat</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Sarcophilus harrisii</td>\n      <td>Tasmanian devil</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Trichechus manatus latirostris</td>\n      <td>Florida manatee</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n    <tr>\n      <td>Vicugna pacos</td>\n      <td>Alpaca</td>\n      <td>\u221a</td>\n      <td>\u221a</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u221a</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Harbors genes for MAA biosynthesis.\u2020Incomplete genome sequence; no EEVS and MT-Ox genes identified.\u2021The presence of EEVS or MT-Ox genes is unknown due to missing contigs or sequence information._\n\n## Results and discussion\n\nTo investigate the function of the vertebrate EEVS-like genes, the protein encoded by the zebrafish EEVS-like gene (LOC100003999) was expressed in Escherichia coli. Incubation of the recombinant protein with SH7P gave a product, which was confirmed by thin-layer chromatography (TLC) and GC-MS to be EEV (Figure 1C, Figure 1\u2014figure supplements 3, 4), identifying the protein as an EEVS. The best-characterized bacterial EEVS is ValA from the validamycin pathway in Streptomyces hygroscopicus subsp. jinggangensis 5008 (Bai et al., 2006), and the crystal structure of ValA (Protein Data Bank [PDB] entry 4P53) (Kean et al., 2014), allowed identification of a fingerprint set of 14 active-site residues with characteristic variations that could differentiate the various SH7P cyclases. Further supporting the assignment of the LOC100003999-encoded protein as an EEVS, sequence comparisons show that all animal EEVS-like proteins are highly similar (60\u201372% identity) and also match the sequence of ValA at all 14 fingerprint sites (Figure 1D, Figure 1\u2014figure supplements 5, 6). This firmly establishes the presence of EEVS activity in animals.\n\nThe second gene, MT-Ox (zgc:113054), is predicted to encode a protein that contains two domains: the N-terminal domain is similar to S-adenosylmethionine (SAM)\u2013dependent methyltransferases, and the C-terminal domain is similar to NAD+-dependent oxidoreductases. Although its function in zebrafish is unknown, the transcription of this gene in larvae is upregulated by light, leading to a prediction of its involvement in circadian clock regulation (Weger et al., 2011). In contrast, we hypothesized that this bifunctional protein is involved in modifying EEV to yield an oxidized and methylated product (Figure 1C). To test this hypothesis, recombinant MT-Ox protein encoded by zgc:113054 was incubated with EEV in the presence of SAM and NAD+. Following incubation, a product with \u03bbmax of 294 nm (pH 7) and 270 (pH 2.5) was detected (Figure 2A\u2013B). Further analysis of the product by (\u2212)-ESI-MS (m/z 203 [M-H]\u2212) and 1H NMR confirmed its identity as gadusol (Figure 2\u2014figure supplements 1, 2). We postulate that the conversion of EEV to gadusol by MT-Ox takes place via oxidation of the C-2 or C-3 OH, followed by enolization and methylation of the resulting C-2 OH (Figure 2\u2014figure supplement 3). This new pathway to the UV-absorbing vinylogous acid functional group shared by gadusol and 4-deoxygadusol is distinct from that used in the biosynthesis of the MAAs (Balskus and Walsh, 2010; Spence et al., 2012), and the existence of multiple pathways for generating this scaffold is intriguing and may indicate that this is a privileged chemical scaffold in living organisms.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013B) HPLC traces and UV absorptions of gadusol produced from Escherichia coli cell-free extract containing EEVS and purified MT-Ox protein at pH 7.0 and 2.5. (C\u2013D) Transcription patterns of EEVS and MT-Ox genes during zebrafish embryonic development. qRT-PCR analysis of mRNA isolated from zebrafish embryos (n = 3) at 12, 24, 48, 72, 96, and 120 hpf. (E) Time course of gadusol production in yeast harboring the zebrafish genes. The yeast was cultured in YNB + 2% glucose supplemented with leucine and lysine at 30\u00b0C for 2 days, and growth was monitored as A600 values (control, dotted blue line; gadusol producer, solid red line). Gadusol concentration in the supernatant of 20 ml cultures (n = 3) was monitored as A296 values in 50 mM phosphate buffer, pH 7.0 (dashed green line) corrected for non-gadusol background absorbance in the control supernatant, normalized to A600 value. Gadusol was quantified based on an extinction coefficient of 21,800 M\u22121 cm\u22121 in 50 mM phosphate buffer, pH 7. (F\u2013H) Comparative HPLC analysis of gadusol from recombinant enzymatic reaction, zebrafish extract, and yeast extract. (I) Gadusol suppresses the UVB sensitivity of a rad1\u2206 yeast mutant; and (J) Gadusol increases the UVB tolerance of a wild-type (RAD1) strain. Cells suspended in control supernatant (CS) or gadusol+ supernatant (G+S) were irradiated with UVB and subsequently spotted in 3 \u00b5l aliquots (n = 4) onto YEPD plates, which were incubated at 30\u00b0C for 24 hr.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) SH7P incubated with E. coli cell free extracts containing LOC100003999 (zebrafish EEVS) and boiled zgc:113054 (MT-Ox). (B) SH7P incubated with E. coli cell free extracts containing EEVS and purified MT-Ox. (C) SH7P incubated with purified ValA (a bacterial EEVS) and boiled MT-Ox. (D) Synthetic EEV incubated with purified MT-Ox. (E) Deuterated EEV incubated with purified MT-Ox. (F) MS/MS spectrum of gadusol obtained from the EEVS and MT-Ox reaction. (G) Proposed ion species of gadusol observed in F.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The dotted arrows show the three steps thought to be a part of the MT-Ox catalyzed reaction.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig2-figsupp4-v1.jpg)\n\nIn zebrafish, both of the LOC100003999 and zgc:113054 genes are expressed during embryonic development. qRT-PCR analysis of mRNA isolated from zebrafish embryos at 12, 24, 48, 72, 96, and 120 hpf showed maximal expression at 72 hpf (Figure 2C\u2013D). To demonstrate de novo synthesis of gadusol in zebrafish, the embryos were collected at 72 hpf, lyophilized and extracted with methanol, and the extract was analyzed by HPLC and ESI-MS (Figure 2G). Our finding of gadusol in the extract unambiguously confirms the ability of zebrafish to synthesize gadusol and amends the current perception that gadusol found in fish and other vertebrates is necessarily of dietary or symbiont origin. However, as MAAs are synthesized via a different pathway and there is no evidence that fish have those biosynthetic enzymes, the accumulation of MAAs in fish would still appear to be of dietary origin (Mason et al., 1998; Zamzow, 2004).\n\nTo show that the recombinant LOC100003999 and zgc:113054 genes are sufficient for encoding gadusol synthesis, they were cloned into a yeast expression vector and transferred into a Saccharomyces cerevisiae strain, in which the transaldolase gene TAL1 had been deleted. Yeast possesses a robust pentose\u2013phosphate pathway (Figure 2\u2014figure supplement 4), and by removing the transaldolase enzyme, which normally metabolizes SH7P, and adding EEVS and MT-Ox, we expected to facilitate an effective shunt pathway from SH7P to gadusol. Analysis of the culture broth by HPLC, ESI-MS, and UV spectrophotometry revealed the presence of gadusol (Figure 2H) and its accumulation to \u223c20 mg/l after 5 days (Figure 2E). The results not only demonstrate the ability of the engineered yeast to produce and secrete gadusol but also present a new avenue for large-scale production of the compound for possible commercial uses, for example, sunscreen and/or antioxidant (Plack et al., 1981; Schmid et al., 2006; Cardozo et al., 2007; Arbeloa et al., 2010).\n\nTo test the UV-protective activity of gadusol, a yeast rad1\u2206 mutant, which is sensitive to UVB, was suspended at approximately 107 cells/mL in the concentrated supernatant from the gadusol-producing yeast strain or from an otherwise isogenic control strain that did not produce gadusol. The gadusol-containing supernatant suppressed the UVB-sensitivity of the rad1\u2206 mutant (Figure 2I), confirming the UVB-protective activity of gadusol. Analogous experiments with a wild-type strain (RAD1) at higher doses of UVB showed comparable results (Figure 2J), consistent with UVB protective activity.\n\nAs noted above, the SPCs EEVS, EVS, DDGS, aminoDHQS, and DOIS are all related to DHQS and are widespread in bacteria and fungi, but other than this report, are not known to exist in vertebrates or prevertebrates. We suggest that the vertebrate EEVS and MT-Ox genes were most plausibly acquired via horizontal gene transfer. Interestingly, searches identify the stramenopile Aureococcus anophagefferens and the microalgae Coccomyxa subellipsoidea, as the only non-vertebrate organisms in current databases that harbor a similar bifunctional MT-Ox gene, and both organisms have a predicted EEVS gene adjacent to that of MT-Ox. As algae are known to be active horizontal gene transfer agents (Ni et al., 2012), algae such as these become a plausible place both for the development of this alternate pathway for gadusol production and as a source of the genes found in vertebrates. Further supporting such a relationship, the A. anophagefferens EEVS protein is substantially more similar to the vertebrate EEVSs than it is to bacterial EEVSs (Figure 1A and Figure 1\u2014figure supplement 2, denoted by the blue star).\n\nFurther bioinformatics studies also showed that the tunicates and lancelets lack the EEVS and MT-Ox genes, suggesting that the gene transfer occurred sometime during the evolution of primitive chordates to bony fishes (Figure 3). While the EEVS and MT-Ox genes are retained in modern ray-finned fish (with the exception of puffer fish), as well as in amphibians, reptiles, and birds, they were lost in mammals, including the egg-laying mammal platypus, indicating the lack of a direct link between gadusol and the mode of reproduction. The West African coelacanth genome (Amemiya et al., 2013) also appears to lack the EEVS and MT-Ox genes (Figure 3, Table 1). This rare ovoviviparous fish lives in caves 100\u2013500 meters deep and feeds at night, and its lack of gadusol production ability may be directly related to its limited exposure to UV light and/or oxidative stress. Other than the well-documented presence of gadusol in fish eggs, where it can serve to protect the roe from UV damage (Arbeloa et al., 2010; Colleter et al., 2014), nothing is known of its role(s) in fish, reptiles, amphibians, and birds. Exploring its function in these organisms will increase our understanding of their physiology and ecology.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig3-v1.jpg)\n\n**Figure 3.:** The genes entered an early vertebrate genome as a linked pair (vertical blue arrow) and were retained in the modern ray-finned fish, amphibians, reptiles, and birds as indicated by thick dark cyan arrows. Coelacanths and mammals lost the genes (thick red arrows). No full genome sequence is available for assessing the presence of EEVS and MT-Ox in lungfish. The phylogenetic trees of the EEVS and MT-Ox proteins or mRNA from a selected set of vertebrates can be found in Figure 3\u2014figure supplements 1\u20133 and Supplementary files 1, 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The distantly related E. coli protein CglD was used as an out-group. Numbers represent bootstrap confidence values.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** E. coli K12 dam was used as an out-group. Numbers represent bootstrap confidence values.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05919/elife-05919-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** E. coli cglD was used as an out-group. Numbers represent bootstrap confidence values.\n\n## Materials and methods\n\n### Molecular phylogenetic analysis\n\nFor phylogenetic analysis, full-length amino acid sequences and vertebrate mRNA sequences were analyzed. A reciprocal BLAST hit analysis was performed with the EEVS protein (see Supplementary file 3). Sequences were aligned using MUSCLE. ProtTest was used to determine the best model of protein evolution (LG+G) (Darriba et al., 2011), and MEGA6 was used to determine the best fit nucleic acid evolutionary model (K80+G) (Tamura et al., 2013). RAxML was used for maximum likelihood analysis, and the robustness of the trees was assessed by bootstrap analysis (1000 replicates) (Stamatakis, 2014). Bayesian analysis was performed by MrBayes (version 3.2.3), using a random starting tree, running eight chains for 4,000,000 generations, sampling every 250 trees (Ronquist et al., 2012). The first 5000 trees were discarded as the burnin, with the remaining trees used to calculate posterior probability. RAxML and MrBayes were run on the CIPRES science gateway (Miller et al., 2010). MEGA6 was used for maximum likelihood analysis of vertebrate mRNA sequences with tree robustness assessed by bootstrap (500 replicates). Sources of proteins for the analyses are listed in Supplementary file 1.\n\n### Construction of LOC100003999 and zgc:113054 gene expression vectors\n\nThe LOC100003999 gene was codon optimized for E. coli and synthesized commercially (GeneScript USA Inc., Piscataway, NJ). The product was cloned into EcoRV site of pUC57-kan vector. The plasmid was digested with BglII and EcoRI and ligated into BamHI and EcoRI site of pRSET-B (Life Technologies, Carlsbad, CA) for the expression of N-terminal hexa-histidine-tagged protein. The zgc:113054 gene was also codon optimized for E. coli and commercially synthesized (GeneScript USA Inc.). The product was cloned into EcoRV site of pUC57-amp vector. The plasmid was digested with BglII and EcoRI and ligated into BamHI and EcoRI site of pRSET-B (Life Technologies) for the expression of N-terminal hexa-histidine-tagged protein.\n\n### Expression of valA, LOC100003999, and zgc:113054 genes in E. coli\n\npRSETB-valA, pRSETB-LOC100003999, and pRSETB-zgc:113054 plasmids were individually used to transform E. coli BL21 GOLD (DE3) pLysS. Transformants were grown overnight at 37\u00b0C on LB agar plate containing ampicillin (100 \u03bcg/ml) and chloramphenicol (25 \u03bcg/ml). A single colony was inoculated into LB medium (2 ml) containing the above antibiotics and cultured at 37\u00b0C for 8 hr. The seed culture (1 ml) was transferred into LB medium (100 ml) in a 500-ml flask and grown at 30\u00b0C until OD600 reached 0.6. Then, the temperature was reduced to 18\u00b0C. After 1-hr adaptation, isopropyl-D-1-thiogalactopyranoside (IPTG) (0.1 mM) was added to induce the N-terminal hexa-histidine-tagged proteins. After further growth for 16 hr, the cells were harvested by centrifugation (5000 rpm, 10 min, 4\u00b0C), washed twice with cold water, and stored at \u221280\u00b0C until used.\n\n### Purification of recombinant ValA, LOC100003999, and zgc:113054\n\nCell pellets from a 400-ml culture of E. coli BL21 GOLD (DE3) pLysS containing pRSETB-valA, pRSETB-LOC100003999, or pRSETB-zgc:113054 plasmids were resuspended in 20 ml of B buffer (40 mM Tris-HCl, 300 mM NaCl, 10 mM imidazole, pH 7.5). Cells were disrupted by sonication for 1 min (4 times, 2 min interval) at 13 watts on ice (Probe sonicator, Misonix, Farmingdale, NY). 20 ml of lysate was divided into 2-ml tubes and centrifuged (14,500 rpm, 20 min, 4\u00b0C). Soluble fractions were collected and transferred into a 50-ml tube. Ni-NTA (QIAGEN, Valencia, CA) resin (5 ml) was applied into 10-ml vol empty column, and the Ni-NTA resin was equilibrated with B buffer (50 ml, 10 CV). About 20 ml of supernatant from cell lysate was applied to the column (flow rate; 0.8 ml/min). The column was then washed with 100 ml (20 CV) of W buffer (40 mM Tris-HCl, 300 mM NaCl, 20 mM imidazole, pH 7.5) at 0.8 ml/min. The hexa-histidine-tagged proteins were eluted by imidazole addition using a gradient mixer containing 100 ml of W buffer and 100 ml of E buffer (40 mM Tris-HCl, 300 mM NaCl, 300 mM imidazole, pH 7.5). The fractions (150 drops or about 5 ml) were collected and checked by SDS-PAGE (Coomassie Blue staining). Fractions containing pure proteins were combined (25 ml) and dialyzed against 2 l of D buffer (10 mM Tris-HCl, pH 7.5) 3 times (every 3 hr). Dialyzed protein solution was concentrated by ultrafiltration (MWCO 10 K) to 200 \u03bcM and flash frozen in liquid N2 prior to storage at \u221280\u00b0C. The yields of the purified proteins were 57 mg/l for ValA, 18 mg/l for LOC100003999, and 79 mg/l for zgc:113054.\n\n### LOC100003999 assay conditions\n\nEach reaction mixture (25 \u03bcl) contained Tris-HCl buffer (20 mM, pH 7.5), NAD+ (1 mM), CoCl2, or ZnSO4 (0.1 mM), SH7P (4 mM), and purified enzymes (0.12 mM). The mixture was incubated at 30\u00b0C for 2 hr. ValA (instead of LOC100003999) was used as a positive control. No enzyme (buffer only) was used as a negative control.\n\n### Coupled LOC100003999 and zgc:113054 assay conditions\n\nEach reaction mixture (50 \u03bcl) contained potassium phosphate buffer (10 mM, pH 7.4), NAD+ (2 mM), CoCl2 (0.2 mM), SH7P (4 mM), and LOC100003999 cell-free extract (20 \u03bcl) was incubated at 30\u00b0C. After 6 hr, S-adenosylmethionine (5 mM) and purified zgc:113054 (0.1 mM) were added. The mixture was incubated at 30\u00b0C for another 6 hr. ValA was used (instead of LOC100003999) as a positive control. Extract of E. coli harboring pRSET B empty vector was used as a negative control.\n\n### Zgc:113054 assay using [6,6-2H2]-EEV as substrate\n\nA reaction mixture (25 \u03bcl) containing potassium phosphate buffer (10 mM, pH 7.4), NAD+ (2 mM), CoCl2 (0.2 mM), S-adenosylmethionine (5 mM), [6,6-2H2]-EEV (4 mM), and purified zgc:113054 (0.1 mM) was incubated at 30\u00b0C for 2 hr. Boiled zgc:113054 was used as a negative control.\n\n### TLC analysis of EEV and gadusol\n\nAnalytical TLC was performed using silica gel plates (60 \u00c5) with a fluorescent indicator (254 nm), which were visualized with a UV lamp and ceric ammonium molybdate (CAM) or 5% FeCl3 in MeOH-H2O (1:1) solutions.\n\n### GC-MS analysis of EEV\n\nThe enzymatic reaction mixtures were lyophilized, and the products were extracted with MeOH. The MeOH extract was then dried and Tri-Sil HTP (Thermo Scientific, Waltham, MA) (100 \u03bcl) was added and left to stand for 20 min. The solvent was removed in a flow of argon gas, and the silylated products were extracted with hexanes (100 \u03bcl) and injected into the GC-MS (Hewlett Packard 5890 SERIES II Gas chromatograph).\n\n### Enzymatic synthesis, purification, and analysis of gadusol\n\nFifty eppendorf tubes containing reaction mixtures (100 \u03bcl each), which consist of potassium phosphate buffer (10 mM, pH 7.4), SH7P (5 mM), NAD+ (2 mM), CoCl2 (0.2 mM), and LOC100003999 cell-free extract (40 \u03bcl), were incubated at 30\u00b0C. After 6 hr, S-adenosylmethionine (5.5 mM) and zgc:113054 cell-free extracts (30 \u03bcl) were added. The reaction mixtures were incubated at 30\u00b0C for another 6 hr. The reaction mixtures were quenched with 2 vol of MeOH, left to stand at \u221220\u00b0C for 20 min, then centrifuged at 14,500 rpm for 20 min. The supernatants were pooled and dried under vacuum. The residual water was frozen and lyophilized. The crude sample was dissolved in water (1 ml) and subjected to Sephadex LH-20 column chromatography using phosphate buffer (2.5 mM, pH 7) as an eluant. Fractions containing the product as judged by MS were combined and lyophilized. Furthermore, the product was purified by HPLC (Shimadzu LC-20AD, C18 column [YMC], 250 \u00d7 10 mm, 4 \u03bcm, flow rate 1 ml/min). Solvent system: MeOH\u2014phosphate buffer (5 mM, pH 7), gradient 1\u2013100% of MeOH (0\u201340 min). Peak at 12.74 min was collected and dried to give gadusol (0.4 mg). 1H NMR (700 MHz, D2O, cryo-probe): \u03b4 4.10 (s, 1H, H-4), 3.71 (d, J = 12 Hz, H-7\u03b1), 3.56 (d, J = 12 Hz, H-7\u03b2), 3.49 (s, 3H, OCH3), 2.68 (d, J = 17 Hz, H-6\u03b1), 2.38 (d, J = 17 Hz, H-6\u03b2). HR-MS (ESI-TOF) (m/z): (M+H)+ calculated for C8H13O6, 205.0707; found, 205.0709.\n\n### Zebrafish lines and embryos\n\nAdult wild-type 5D zebrafish were housed at the Sinnhuber Aquatic Research Laboratory on a recirculating system maintained at 28 \u00b1 1\u00b0C with a 14 hr light per 10 hr dark schedule. Embryos were collected from group spawns of adult zebrafish as described previously (Reimers et al., 2006), and all experiments were conducted with fertilized embryos according to Oregon State University Institutional Animal Care and Use Protocols. Embryos were staged accordingly as previously described (Kimmel et al., 1995) and collected by hand for all experiments. Embryos were reared in media consisting of 15 mM NaCl, 0.5 mM KCl, 1 mM MgSO4, 0.15 mM KH2PO4, 0.05 mM Na2HPO4, and 0.7 mM NaHCO3 (Westerfield, 2000).\n\n### Polymerase chain reaction\n\nAll polymerase chain reaction (PCR) reactions were performed according to manufacturer's specifications. Cycling conditions: 96\u00b0C for 3 min, 95\u00b0C for 1 min, 65\u00b0C for 1 min, and 72\u00b0C for 1 min per kB DNA; 35 cycles were used followed by 10 min at 72\u00b0C. All PCR products were characterized on an agarose gel. If needed, the PCR product was excised from the gel and purified using the E.Z.N.A. Gel Extraction Kit (Omega Bio-tek, Norcross, GA).\n\n### Quantitative PCR of zebrafish samples\n\nqPCR was performed on a Applied Biosystems StepOnePlus machine. The super mix PerfeCTa SYBR Green FastMix, ROX (Quanta biosciences, Gaithersburg, MD) was used. cDNA (100 ng) from time points at 6, 12, 24, 48, 72, 96, and 120 hpf was used. Super mix (18 \u00b5l) was added to bring the final volume to 20 \u00b5l. PCR conditions suggested by the supplier were used. For total RNA isolation, 30 embryos were homogenized in RNAzol (Molecular Research Center, Cincinnati, OH); RNA was purified according to the manufacturer's protocol. RNA was quantified by A260/280 ratios measured using a SynergyMx microplate reader (Biotek, Winooski, VT) and analyzed with the Gen5 Take3 module. 1 \u00b5g of RNA was used for cDNA synthesis. Superscript III First-Strand Synthesis (Life Technologies) and oligo d(T) primers were used to synthesize cDNA from the total RNA.\n\n### Isolation of gadusol from zebrafish\n\nEmbryos were collected and euthanized at 72 hpf by induced hypoxia through rapid chilling on ice for 30 min. Embryo media were removed until about 5 ml were left and frozen at \u221280\u00b0C. Embryos were lyophilized overnight. The freeze-dried embryos were then ground with a pestle and mortar under liquid nitrogen. The powder was collected and placed in a pre-weighed glass vial. The mortar was washed with MeOH-H2O (80:20), and the solvent was added to the powder. The solvent was evaporated, and powder was weighed. The embryo powder was extracted twice with MeOH-H2O (80:20). The two extracts were combined, dried, and weighed. The extract was suspended in MeOH-H2O (80:20) (1 ml) and extracted twice with hexanes. The aqueous layer was recovered, dried, and weighed. The extract was suspended in MeOH for analysis by mass spectrometry. The extract was dissolved in phosphate buffer pH 7.0 for identification by HPLC (Shimadzu SPD-20A system, YMC ODS-A column (4.6 id \u00d7 250 mm), MeOH\u20145 mM phosphate buffer (1% MeOH for 20 min followed by a gradient from 1 to 95% MeOH in 20 min), flow rate 0.3 ml/min, 296 nm. The isolated gadusol was analyzed by MS (ThermoFinnigan LCQ Advantage system) and NMR (in D2O; Bruker Unity 300 [300.15 MHz] spectrometer).\n\n### Construction of yeast mutants\n\nThe yeast strains used are listed in Supplementary file 4. The TRP1 gene was replaced in BY4742 tal1\u2206::KanMX4 with a wild-type URA3 allele from S288c by standard methods (Baudin et al., 1993). The deletion was confirmed by PCR using primer pairs TRP1DisUP/TRP1DisLO and URA3DisUP/TRP1DisLO. The BY4742 tal1\u2206::KanMX4 trp1\u2206::URA3 strain was then co-transformed (Gietz et al., 1992) with pXP416 and pXP420 to generate an empty vector control strain and with pXP420-EEVS and pXP416-MT-Ox to generate a gadusol-producing strain. The RAD1 gene was replaced in BY4742 tal1\u2206::KanMX4 trp1\u2206::URA3 with a wild-type LEU2 allele from S288c by standard methods (Reynolds et al., 1987). The deletion was confirmed by PCR using primer pairs RAD1UP/RAD1LO. The resultant BY4742 tal1\u2206::KanMX4 trp1\u2206::URA3 rad1\u0394::LEU2 strain was then co-transformed with pXP416 and pXP420.\n\n### Media and yeast growth conditions\n\nCells were pre-grown in YEPD (1% yeast extract, 2% peptone, and 2% glucose) for transformations, and in YNB (Bacto yeast nitrogen base without amino acids) + 2% glucose supplemented with 30 \u00b5g/ml leucine and 30 \u00b5g/ml lysine to select for transformants and to produce gadusol. Liquid media were sterilized by filtration using a 0.45-\u00b5m filter, and agar-based media were sterilized by autoclaving. Liquid cultures were grown at 30\u00b0C for 48 hr and 200 rpm; plates were incubated at 30\u00b0C.\n\n### Yeast overexpression plasmid construction\n\nPlasmids are listed in Supplementary file 5. Primers used for PCR are listed in Supplementary file 6. PCR amplicons with SpeI and XhoI terminal restriction sites were generated for the EEVS gene and MT-Ox gene using pRSETB-EEVS and pRSETB-MTOx as templates, respectively. The EEVS and MT-Ox amplicons were then digested with SpeI and XhoI and ligated into SpeI-digested pXP420 and XhoI-digested pXP420 and pXP416, respectively, and introduced into competent E. coli (Top 10; Life Technologies) by transformation. E. coli transformants were selected on LB plates supplemented with ampicillin (100 \u00b5g/ml). Transformants were then screened by digesting plasmid DNA with SpeI and XhoI restriction enzymes and analyzing fragments by agarose gel electrophoresis.\n\n### Identification of gadusol production in S. cerevisiae\n\nS. cerevisiae cell pellets from 5 ml cultures were extracted with MeOH, and the supernatant was extracted with nBuOH. Extracts were concentrated and analyzed by HPLC (Shimadzu SPD-20A system, YMC ODS-A column [4.6 id \u00d7 250 mm], MeOH\u20145 mM phosphate buffer (1% MeOH for 20 min followed by a gradient from 1 to 95% MeOH in 20 min), flow rate 0.3 ml/min, 296 nm.\n\n### Irradiation protocol\n\nA rad1\u2206 mutant (MAT\u03b1 his3\u22061 leu2\u22060 lys2\u22060 trp1\u2206::URA3 ura3\u22060 rad1\u2206::LEU2 tal1\u2206::KanMX4/pXP416, pXP420) or wild-type RAD1 strain (S288c, MAT\u03b1 SUC2 gal2 mal2 mel flo1 flo8-1 hap1 ho bio1 bio6) was grown at 30\u00b0C and 200 rpm in YNB + 2% glucose + 30 \u00b5g/ml leu + 30 \u00b5g/ml lys. Cells were harvested after 24 hr by centrifugation, washed twice in the ninefold concentrated supernatant of either the gadusol-producing strain BY4742 tal1\u2206 trp1\u2206/pXP416-MTOx, pXP420-EEVS or of the control strain BY4742 tal1\u2206 trp1\u2206/pXP416, pXP420, and suspended in the respective concentrated supernatants at 107 cells/ml. Cells (375 \u00b5l) were irradiated with UVB (302 nm) at the indicated doses in wells of a 24-well microtiter plate shaken at 900 rpm. 3 \u00b5l aliquots of cells were then spotted onto a YEPD plate, which was incubated 24 hr at 30\u00b0C prior to being photographed. The supernatants of the gadusol producing and control strains were obtained by centrifugation following 5 day of growth in YNB + 2% glucose + 30 \u00b5g/ml leucine + 30 \u00b5g/ml lysine at 30\u00b0C and 200 rpm. Supernatants were freeze-dried, dissolved in a volume of distilled water 1/10 of the initial culture volume, and stored at 4\u00b0C until use. Just prior to suspension of cells, the concentrated supernatant was adjusted to 50 mM phosphate, pH 7.0 resulting in a final ninefold concentrate.\n",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "007d1cc5-d772-4f0a-8a14-f1bd30c9cf42",
+      "submission_id": "59850a4b-533a-4962-945c-21c2adf85da5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wilfred A van der Donk, Howard Hughes Medical Institute, University of Illinois at Urbana-Champaign , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05919.027](https://doi.org/10.7554/eLife.05919.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cDe novo Synthesis of a Sunscreen Compound in Vertebrates\u201d for consideration at eLife. Your article has been favorably evaluated by Ian Baldwin (Senior Editor) and 3 reviewers, one of whom is a memaber of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Reviewing editor, Wilfred van der Donk; Emily Balskus, peer reviewer. A third reviewer remains anonymous.\n\nThe Reviewing editor and the other reviewers discussed their comments, and all three reviewers agree that this study is of general interest to the eLife readership, provided the authors can address the concerns listed below.\n\nThe authors show in this manuscript that genes encoding a 2-epi-5-epi-valiolone synthase (EEVS) and a bifunctional O-methyltransferase/NAD+ dependent oxidoreductase genes are present in various egg-laying vertebrates. They also show that the two genes are expressed in zebrafish and that gadusol can be isolated from zebrafish embryos. The authors introduced both genes into an engineered strain of yeast that accumulates the EEVS substrate sedoheptulose-7-phosphate and demonstrate the production of gadusol. Finally, they show that extracts from gadusol-producing yeast protect both wild-type and mutant yeast strains from UV-B radiation. Collectively, these data provide strong support that vertebrates can make these compounds and that they need not be produced by symbionts or obtained in diet. Overall, the biochemical data is very convincing, with some questions raised by the reviewers. The bioinformatics/evolution data was considered less robust and needs strengthening. Results from the phylogenetic analyses suggest a series of repeated transfers between bacterial and eukaryotic homologs that appear to be an interesting part of the story. Yet, the methods listed are not sufficient to make this claim. Below are several ways to validate/improve these phylogenetic results. The reviewers agree that the requested revisions should be doable.\n\nThe Reviewing editor has assembled the following comments to help you prepare a revised submission:\n\n1) The inclusion of bacterial and eukaryotic homologs into the evolutionary history of these genes needs to be justified by a reciprocal blast hit analysis in which the authors switch the BLAST query sequence between bacteria and eukaryotes to see if they always retrieve the same hits in the database. This concern is particularly relevant when using protein sequences, because convergent evolution rather than horizontal gene transfer may drive the appearance of reciprocal orthology when there isn't any.\n\n2) A model of protein evolution needs to be statistically selected to build the tree. The authors appear to have used the simple, default parameter in Geneious, which is insufficient for accuracy in phylogenetic tree building. To select a model of protein evolution, ProtTest needs to be run, and the selected model needs to be implemented in the tree building.\n\n3) In addition to building the tree with protein sequences, can the authors build the tree with DNA sequences? The DNA divergences may be too high to do this for all of the sequences in the tree, but subsections of the tree could be reanalyzed with DNA sequences, starting with reciprocal blast analyses and then model selection (using ModelTest for DNA) and tree building.\n\n4) It is highly desirable to use multiple phylogenetic inference methods to validate evolutionary relationships. Thus, in addition to the reported Max Likelihood analysis, a Mr. Bayes analysis should be run alongside.\n\n5) Bootstrap and posterior probability support values must be reported in a phylogenetic tree analysis to evaluate the strength of the evolutionary results.\n\n6) The authors express and purify the proteins of interest, but the experimental section suggests that for some experiments they were assayed as cell free extracts. It is not clear which results discussed in the text and shown in the figures were obtained with purified protein and which with cell free extracts, but the reader is left with the impression that all data was obtained with purified proteins. The authors should also explain why cell free extracts were used when purified proteins were apparently available.\n\n7) The authors should provide more information about the in vitro biochemical characterization of the zebrafish EEVS. Did they test the activity of the enzyme toward sugar substrates other than sedoheltulose-7-phosphate? Also the TLC shown in Figure 1\u2013figure supplement 2B seems to show multiple new products being formed by this enzyme. These products do not appear to be present in the assay with ValA, the bacterial EEVS used as a positive control. What are these alternate products?\n\n8) The authors should provide some additional commentary in their discussion regarding the proposed biological roles of gadusol and MAAs in fish and the issue of their origin (endogenous synthesis vs dietary), and highlight issues that remain unresolved with the current results. For instance, it has been demonstrated experimentally that fish can accumulate MAAs from their diets (see Mar Biol 144:1057-1064, Comp Biochem Physiol Part A Mol Integr Physiol 120:587-598). Are the relative concentrations of gadusol and MAAs in fish roe known? Just because there is an endogenous pathway for gadusol synthesis in fish does not mean that this compound cannot also be acquired from dietary sources along with the MAAs or that it is the primary contributor to UV protection.\n",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08aa7b6d-dc50-4276-b19b-b732d9fdf3a6",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C1",
+      "claim": "Ultraviolet-protective compounds such as mycosporine-like amino acids (MAAs) and related gadusols are produced by some bacteria, fungi, algae, and marine invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultraviolet-protective compounds, such as mycosporine-like amino acids (MAAs) and related gadusols produced by some bacteria, fungi, algae, and marine invertebrates, are critical for the survival of reef-building corals and other marine organisms exposed to high-solar irradiance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "7474178a-d1a8-4e3f-a555-d2a87cd4ed3b",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C2",
+      "claim": "MAAs and gadusols are critical for the survival of reef-building corals and other marine organisms exposed to high-solar irradiance.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultraviolet-protective compounds, such as mycosporine-like amino acids (MAAs) and related gadusols produced by some bacteria, fungi, algae, and marine invertebrates, are critical for the survival of reef-building corals and other marine organisms exposed to high-solar irradiance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract about the functional importance of these compounds.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "e3fea7c0-6184-4e95-9b81-69b8bc880f02",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C3",
+      "claim": "Gadusol has been found in marine fish.",
+      "claim_type": "EXPLICIT",
+      "source": "These compounds have also been found in marine fish, where their accumulation is thought to be of dietary or symbiont origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6cf278f3-cf60-41ed-89b7-ec5b72d88f29",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C4",
+      "claim": "The accumulation of gadusol in marine fish was previously thought to be of dietary or symbiont origin.",
+      "claim_type": "EXPLICIT",
+      "source": "These compounds have also been found in marine fish, where their accumulation is thought to be of dietary or symbiont origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prior understanding before the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "d86970ce-3851-4972-91dd-225d4b8d2dba",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C5",
+      "claim": "Fish can synthesize gadusol de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we report the unexpected discovery that fish can synthesize gadusol de novo and that the analogous pathways are also present in amphibians, reptiles, and birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data showing gadusol production in zebrafish and expression of the pathway genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "bcfc5227-220b-4b4c-b9ff-65f41df2c6bf",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C6",
+      "claim": "The gadusol biosynthesis pathway is present in amphibians, reptiles, and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we report the unexpected discovery that fish can synthesize gadusol de novo and that the analogous pathways are also present in amphibians, reptiles, and birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis showing EEVS and MT-Ox genes in these vertebrate classes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "986ef97e-65f3-46eb-a82e-0dfb5bcd05e2",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C7",
+      "claim": "Engineered yeast containing fish genes can produce and secrete gadusol.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrate that engineered yeast containing the fish genes can produce and secrete gadusol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with yeast expressing zebrafish EEVS and MT-Ox genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "46cd0c61-a966-4657-bf13-051fe1b4cbbd",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C8",
+      "claim": "MAAs and gadusols have been proposed to fulfill functions including sunscreen, antioxidant, stress response, intracellular nitrogen reservoir, and/or optical filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The sunscreen compounds, mycosporine-like amino acids (MAAs) and related gadusols, commonly found in bacteria, fungi, algae, and marine invertebrates (Shick and Dunlap, 2002; Miyamoto et al., 2014), have been proposed to fulfill a variety of functions, such as sunscreen, antioxidant, stress response, intracellular nitrogen reservoir, and/or optical filter (Gao and Garcia-Pichel, 2011; Bok et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "d33ccb9f-c237-455e-9601-bdb82950515a",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C9",
+      "claim": "In cyanobacteria, MAAs are synthesized by desmethyl-4-deoxygadusol synthase (DDGS), a dehydroquinate synthase (DHQS) homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their formation had long been proposed to originate from the shikimate pathway, more recent bioinformatic and biochemical studies revealed that in cyanobacteria, MAAs are synthesized by desmethyl-4-deoxygadusol synthase (DDGS), a dehydroquinate synthase (DHQS) homolog (Wu et al., 2007; Balskus and Walsh, 2010; Singh et al., 2010; Asamizu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "579a86cd-b968-4289-bf42-b0895bece894",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C10",
+      "claim": "Inactivation of the DDGS gene in Anabaena variabilis ATCC 29413 did not abolish the production of MAAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inactivation of the DDGS gene in Anabaena variabilis ATCC 29413 did not abolish the production of MAAs, suggesting that additional pathways exist for the biosynthesis of MAAs (Spence et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "82f39c65-3eda-42e8-89ff-a8a6c9483694",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C11",
+      "claim": "DDGS converts sedoheptulose 7-phosphate (SH7P) to desmethyl-4-deoxygadusol via a unique sequence of dephosphorylation, aldol condensation, enolization, dehydration, reduction, and tautomerization reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "DDGS converts sedoheptulose 7-phosphate (SH7P) to desmethyl-4-deoxygadusol via a unique sequence of dephosphorylation, aldol condensation, enolization, dehydration, reduction, and tautomerization reactions (Figure 1\u2014figure supplement 1) (Balskus and Walsh, 2010; Asamizu et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "7f5b41e8-3727-4e16-bfa5-16a4dc8190b4",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C12",
+      "claim": "Desmethyl-4-deoxygadusol is subsequently converted by a methyltransferase to 4-deoxygadusol, the building block of MAAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The product is subsequently converted by a methyltransferase to 4-deoxygadusol, the building block of MAAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the known MAA biosynthesis pathway.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "f764eb7e-62c7-43f2-88c1-4f1e566d67ae",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C13",
+      "claim": "4-Deoxygadusol has been proposed to be the precursor of gadusol.",
+      "claim_type": "EXPLICIT",
+      "source": "4-Deoxygadusol has also been proposed to be the precursor of gadusol (Starcevic et al., 2010; Rosic and Dove, 2011), a related compound initially isolated from cod roe (Gadus morhua L.) (Plack et al., 1981), but also found in roes of other marine fish (Plack et al., 1981; Arbeloa et al., 2010), sea urchin eggs (Chioccara et al., 1986), cysts and nauplii of brine shrimp (Grant et al., 1985), mantis shrimp crystalline cones (Bok et al., 2014), and sponges (Bandaranayake et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6413ffde-a2ed-41b1-97b9-82dce1ea26e0",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C14",
+      "claim": "Gadusol was initially isolated from cod roe (Gadus morhua L.).",
+      "claim_type": "EXPLICIT",
+      "source": "4-Deoxygadusol has also been proposed to be the precursor of gadusol (Starcevic et al., 2010; Rosic and Dove, 2011), a related compound initially isolated from cod roe (Gadus morhua L.) (Plack et al., 1981), but also found in roes of other marine fish (Plack et al., 1981; Arbeloa et al., 2010), sea urchin eggs (Chioccara et al., 1986), cysts and nauplii of brine shrimp (Grant et al., 1985), mantis shrimp crystalline cones (Bok et al., 2014), and sponges (Bandaranayake et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original isolation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "0e5b8267-8fcc-4435-90af-271e9f9bb31f",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C15",
+      "claim": "Gadusol has been found in roes of marine fish, sea urchin eggs, cysts and nauplii of brine shrimp, mantis shrimp crystalline cones, and sponges.",
+      "claim_type": "EXPLICIT",
+      "source": "4-Deoxygadusol has also been proposed to be the precursor of gadusol (Starcevic et al., 2010; Rosic and Dove, 2011), a related compound initially isolated from cod roe (Gadus morhua L.) (Plack et al., 1981), but also found in roes of other marine fish (Plack et al., 1981; Arbeloa et al., 2010), sea urchin eggs (Chioccara et al., 1986), cysts and nauplii of brine shrimp (Grant et al., 1985), mantis shrimp crystalline cones (Bok et al., 2014), and sponges (Bandaranayake et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations documenting gadusol in various organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "dc12df3a-0a70-443f-aeec-3ccbd64a2703",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C16",
+      "claim": "Genes responsible for the production of 4-deoxygadusol and MAAs are commonly found in bacteria, algae, and other marine microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "As genes responsible for the production of 4-deoxygadusol and MAAs are commonly found in bacteria (e.g., cyanobacteria), algae, and other marine microorganisms (Shick and Dunlap, 2002; Miyamoto et al., 2014), the accumulation of these compounds in marine animals has been proposed to be of dietary or symbiont origin (Arbeloa et al., 2010; Gao and Garcia-Pichel, 2011; Loew, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "3402eedc-301d-431a-a030-503c0fa8c868",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C17",
+      "claim": "A gene cluster encoding a four-step DDGS-based pathway for converting SH7P to MAAs was discovered in the genomes of coral (Acropora digitifera) and sea anemone (Nematostella vectensis).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a gene cluster like that in cyanobacteria apparently encoding a four-step DDGS-based pathway for converting SH7P to MAAs was discovered in the genomes of a coral (Acropora digitifera) and sea anemone (Nematostella vectensis), suggesting that these invertebrates can produce MAAs autonomously (Rosic and Dove, 2011; Shinzato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to genomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "654fba46-98e4-46dd-a318-58f8b01ffe55",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C18",
+      "claim": "Coral (Acropora digitifera) and sea anemone (Nematostella vectensis) can produce MAAs autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a gene cluster like that in cyanobacteria apparently encoding a four-step DDGS-based pathway for converting SH7P to MAAs was discovered in the genomes of a coral (Acropora digitifera) and sea anemone (Nematostella vectensis), suggesting that these invertebrates can produce MAAs autonomously (Rosic and Dove, 2011; Shinzato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of the biosynthetic gene cluster in their genomes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "acf4a755-b107-41db-af09-23d102bf873e",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C19",
+      "claim": "DDGS is a member of the sugar phosphate cyclase (SPC) superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "DDGS is a member of the sugar phosphate cyclase (SPC) superfamily (Wu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "e5098ea2-517c-40c4-b02b-3ceda24f6871",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C20",
+      "claim": "The SPC superfamily includes DHQS, EEVS, EVS, aminoDHQS, and DOIS.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to DHQS, this superfamily includes four enzymes known for their roles in the biosynthesis of natural products with therapeutic application: 2-epi-5-epi-valiolone synthase (EEVS), 2-epi-valiolone synthase, aminoDHQS, and 2-deoxy-scyllo-inosose synthase (DOIS) (Wu et al., 2007; Mahmud, 2009; Asamizu et al., 2012; Kang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "72bf988d-51f6-4d9c-a1b2-56e9aa024a29",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C21",
+      "claim": "EEVS catalyzes the entry step to the biosynthesis of pseudosugar-containing natural products such as acarbose and validamycin A.",
+      "claim_type": "EXPLICIT",
+      "source": "EEVS catalyzes the entry step to the biosynthesis of pseudosugar-containing natural products, such as the antidiabetic drug acarbose and the crop protectant validamycin A, and has so far only been identified and characterized in bacteria (Mahmud, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6cf4d2ef-ecdf-4700-9261-446c40cc6822",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C22",
+      "claim": "Prior to this study, EEVS had only been identified and characterized in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "EEVS catalyzes the entry step to the biosynthesis of pseudosugar-containing natural products, such as the antidiabetic drug acarbose and the crop protectant validamycin A, and has so far only been identified and characterized in bacteria (Mahmud, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the state of knowledge before the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "5f16d72b-3159-4ea5-ba03-29f458471a15",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C23",
+      "claim": "Genes encoding EEVS-like proteins (annotated as 'PREDICTED: pentafunctional AROM polypeptide-like') were found in the genomes of fish, amphibians, reptiles, and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we surprisingly also found genes that encode EEVS-like proteins (annotated as 'PREDICTED: pentafunctional AROM polypeptide-like') in the genomes of fish, amphibians, reptiles, and birds (Figure 1A, Figure 1\u2014figure supplement 2, Table 1, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatic analysis and shown in figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "a55f084e-0ce1-4c0d-a8f3-e5f69ffc8b8b",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C24",
+      "claim": "The EEVS-like gene is located in a cluster with the MT-Ox gene and flanked by transcription factor genes encoding FRMD4B, MitF, MDFIC, and FoxP1.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene is located in a cluster with another functionally unknown gene (labeled as MT-Ox hereafter) and flanked by a suite of transcription factor genes encoding FRMD4B, MitF, MDFIC, and FoxP1 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B depicting the genetic organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6da423f5-e340-4018-8663-5df78cdf942e",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C25",
+      "claim": "FRMD4B, MitF, MDFIC, and FoxP1 transcription factors regulate the expression of genes with essential roles in cell differentiation, proliferation, and survival.",
+      "claim_type": "EXPLICIT",
+      "source": "These transcription factors have been known to regulate the expression of genes with essential roles in cell differentiation, proliferation, and survival (Levy et al., 2006; Rice et al., 2012; Garner et al., 2014; Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "932ebe6a-e862-44db-bed5-8d54695c1e2f",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C27",
+      "claim": "The zebrafish protein encoded by LOC100003999 is an EEVS that converts SH7P to EEV.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of the recombinant protein with SH7P gave a product, which was confirmed by thin-layer chromatography (TLC) and GC-MS to be EEV (Figure 1C, Figure 1\u2014figure supplements 3, 4), identifying the protein as an EEVS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data including TLC and GC-MS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "ea200c71-55c9-442c-88ba-d3a6c0d171e9",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C28",
+      "claim": "All animal EEVS-like proteins are highly similar (60\u201372% identity) and match the sequence of bacterial ValA at all 14 fingerprint sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting the assignment of the LOC100003999-encoded protein as an EEVS, sequence comparisons show that all animal EEVS-like proteins are highly similar (60\u201372% identity) and also match the sequence of ValA at all 14 fingerprint sites (Figure 1D, Figure 1\u2014figure supplements 5, 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "f948bcc4-a1a2-44bb-806d-8d3552bf1485",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C29",
+      "claim": "The zebrafish MT-Ox protein (zgc:113054) is predicted to contain two domains: an N-terminal SAM-dependent methyltransferase domain and a C-terminal NAD+-dependent oxidoreductase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The second gene, MT-Ox (zgc:113054), is predicted to encode a protein that contains two domains: the N-terminal domain is similar to S-adenosylmethionine (SAM)\u2013dependent methyltransferases, and the C-terminal domain is similar to NAD+-dependent oxidoreductases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic prediction of protein domains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "12ebba8e-3ed8-44e5-ae90-3ae6fe6c8a99",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C30",
+      "claim": "Transcription of the zebrafish MT-Ox gene (zgc:113054) in larvae is upregulated by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Although its function in zebrafish is unknown, the transcription of this gene in larvae is upregulated by light, leading to a prediction of its involvement in circadian clock regulation (Weger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "14ee8fb3-e707-41b0-a790-cae35a4a0e58",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C31",
+      "claim": "Recombinant MT-Ox protein converts EEV to gadusol in the presence of SAM and NAD+.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, recombinant MT-Ox protein encoded by zgc:113054 was incubated with EEV in the presence of SAM and NAD+. Following incubation, a product with \u03bbmax of 294 nm (pH 7) and 270 (pH 2.5) was detected (Figure 2A\u2013B). Further analysis of the product by (\u2212)-ESI-MS (m/z 203 [M-H]\u2212) and 1H NMR confirmed its identity as gadusol (Figure 2\u2014figure supplements 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data including UV spectroscopy, mass spectrometry, and NMR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "cecbb5c7-1faa-4927-b8c1-e60d3acac6a1",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C32",
+      "claim": "The conversion of EEV to gadusol by MT-Ox takes place via oxidation of the C-2 or C-3 OH, followed by enolization and methylation of the resulting C-2 OH.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the conversion of EEV to gadusol by MT-Ox takes place via oxidation of the C-2 or C-3 OH, followed by enolization and methylation of the resulting C-2 OH (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic hypothesis based on the substrate and product structures.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "042094af-2a2c-4655-b27e-34101c2edd12",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C33",
+      "claim": "The pathway to gadusol in vertebrates is distinct from the pathway used in the biosynthesis of MAAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This new pathway to the UV-absorbing vinylogous acid functional group shared by gadusol and 4-deoxygadusol is distinct from that used in the biosynthesis of the MAAs (Balskus and Walsh, 2010; Spence et al., 2012), and the existence of multiple pathways for generating this scaffold is intriguing and may indicate that this is a privileged chemical scaffold in living organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the enzymatic mechanisms and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "3560054d-b6e5-4782-84ed-d0665bd689bb",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C34",
+      "claim": "Both the LOC100003999 and zgc:113054 genes are expressed during zebrafish embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, both of the LOC100003999 and zgc:113054 genes are expressed during embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by qRT-PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "c2192bf3-2648-492d-8818-6f0f2b82fd3e",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C35",
+      "claim": "Expression of LOC100003999 and zgc:113054 genes in zebrafish embryos is maximal at 72 hours post-fertilization (hpf).",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis of mRNA isolated from zebrafish embryos at 12, 24, 48, 72, 96, and 120 hpf showed maximal expression at 72 hpf (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by qRT-PCR data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "eda1822a-cb9b-467c-8840-21767e8c033b",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C36",
+      "claim": "Gadusol was detected in zebrafish embryo extracts collected at 72 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate de novo synthesis of gadusol in zebrafish, the embryos were collected at 72 hpf, lyophilized and extracted with methanol, and the extract was analyzed by HPLC and ESI-MS (Figure 2G). Our finding of gadusol in the extract unambiguously confirms the ability of zebrafish to synthesize gadusol and amends the current perception that gadusol found in fish and other vertebrates is necessarily of dietary or symbiont origin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by HPLC and ESI-MS analysis of zebrafish embryo extracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "3b58547a-dde6-4711-8540-bfbe28e78658",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C37",
+      "claim": "Zebrafish can synthesize gadusol de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding of gadusol in the extract unambiguously confirms the ability of zebrafish to synthesize gadusol and amends the current perception that gadusol found in fish and other vertebrates is necessarily of dietary or symbiont origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by detection of gadusol in zebrafish embryo extracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "378c4c09-5bdf-4639-9313-10d8e0c6d00f",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C38",
+      "claim": "There is no evidence that fish have the biosynthetic enzymes for MAAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as MAAs are synthesized via a different pathway and there is no evidence that fish have those biosynthetic enzymes, the accumulation of MAAs in fish would still appear to be of dietary origin (Mason et al., 1998; Zamzow, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the absence of MAA biosynthetic genes in fish genomes and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "9c09e484-be05-42b0-a1b7-34b3336b6623",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C39",
+      "claim": "The accumulation of MAAs in fish is of dietary origin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as MAAs are synthesized via a different pathway and there is no evidence that fish have those biosynthetic enzymes, the accumulation of MAAs in fish would still appear to be of dietary origin (Mason et al., 1998; Zamzow, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of MAA biosynthetic genes in fish and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "0836fff8-62bb-4382-a4e0-3de737397902",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C40",
+      "claim": "Engineered yeast with deleted TAL1 gene and expressing zebrafish LOC100003999 and zgc:113054 genes can produce and secrete gadusol.",
+      "claim_type": "EXPLICIT",
+      "source": "To show that the recombinant LOC100003999 and zgc:113054 genes are sufficient for encoding gadusol synthesis, they were cloned into a yeast expression vector and transferred into a Saccharomyces cerevisiae strain, in which the transaldolase gene TAL1 had been deleted. Yeast possesses a robust pentose\u2013phosphate pathway (Figure 2\u2014figure supplement 4), and by removing the transaldolase enzyme, which normally metabolizes SH7P, and adding EEVS and MT-Ox, we expected to facilitate an effective shunt pathway from SH7P to gadusol. Analysis of the culture broth by HPLC, ESI-MS, and UV spectrophotometry revealed the presence of gadusol (Figure 2H) and its accumulation to \u223c20 mg/l after 5 days (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data showing gadusol production in engineered yeast.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "3e2da339-55f5-4076-b7ed-b0d82d687939",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C41",
+      "claim": "Gadusol accumulates to approximately 20 mg/l in engineered yeast cultures after 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the culture broth by HPLC, ESI-MS, and UV spectrophotometry revealed the presence of gadusol (Figure 2H) and its accumulation to \u223c20 mg/l after 5 days (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "3453ce04-bfdb-40ba-aebd-8c81bd7b755d",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C42",
+      "claim": "Gadusol-containing supernatant suppresses the UVB-sensitivity of a yeast rad1\u2206 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the UV-protective activity of gadusol, a yeast rad1\u2206 mutant, which is sensitive to UVB, was suspended at approximately 107 cells/mL in the concentrated supernatant from the gadusol-producing yeast strain or from an otherwise isogenic control strain that did not produce gadusol. The gadusol-containing supernatant suppressed the UVB-sensitivity of the rad1\u2206 mutant (Figure 2I), confirming the UVB-protective activity of gadusol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data showing increased survival of rad1\u2206 mutant yeast exposed to UVB in the presence of gadusol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "7ae26d32-7eda-46d6-bf9e-82ce7b9b8767",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C43",
+      "claim": "Gadusol has UVB-protective activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The gadusol-containing supernatant suppressed the UVB-sensitivity of the rad1\u2206 mutant (Figure 2I), confirming the UVB-protective activity of gadusol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data showing protection against UVB damage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "f9050105-076d-40a1-bb71-a538fbff5baa",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C44",
+      "claim": "Gadusol increases the UVB tolerance of wild-type (RAD1) yeast strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous experiments with a wild-type strain (RAD1) at higher doses of UVB showed comparable results (Figure 2J), consistent with UVB protective activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "70dcc3df-4a42-47cf-891b-556da5aa6473",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C45",
+      "claim": "The vertebrate EEVS and MT-Ox genes were most plausibly acquired via horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, the SPCs EEVS, EVS, DDGS, aminoDHQS, and DOIS are all related to DHQS and are widespread in bacteria and fungi, but other than this report, are not known to exist in vertebrates or prevertebrates. We suggest that the vertebrate EEVS and MT-Ox genes were most plausibly acquired via horizontal gene transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phylogenetic distribution of these genes and the absence in prevertebrates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "2b1a1f69-127c-4fed-b70f-619a15ac164d",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C46",
+      "claim": "Aureococcus anophagefferens and Coccomyxa subellipsoidea are the only non-vertebrate organisms in current databases that harbor a similar bifunctional MT-Ox gene adjacent to a predicted EEVS gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, searches identify the stramenopile Aureococcus anophagefferens and the microalgae Coccomyxa subellipsoidea, as the only non-vertebrate organisms in current databases that harbor a similar bifunctional MT-Ox gene, and both organisms have a predicted EEVS gene adjacent to that of MT-Ox.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic searches of genomic databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "c5eb3965-f241-4740-a2eb-78fc46b6770f",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C47",
+      "claim": "Algae are known to be active horizontal gene transfer agents.",
+      "claim_type": "EXPLICIT",
+      "source": "As algae are known to be active horizontal gene transfer agents (Ni et al., 2012), algae such as these become a plausible place both for the development of this alternate pathway for gadusol production and as a source of the genes found in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "11518f9f-410f-4c87-b345-b9968678b152",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C48",
+      "claim": "The Aureococcus anophagefferens EEVS protein is substantially more similar to vertebrate EEVSs than to bacterial EEVSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting such a relationship, the A. anophagefferens EEVS protein is substantially more similar to the vertebrate EEVSs than it is to bacterial EEVSs (Figure 1A and Figure 1\u2014figure supplement 2, denoted by the blue star).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phylogenetic trees in Figure 1A and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6240c047-4466-4508-9ab9-8fac84d74553",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C49",
+      "claim": "Tunicates and lancelets lack the EEVS and MT-Ox genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further bioinformatics studies also showed that the tunicates and lancelets lack the EEVS and MT-Ox genes, suggesting that the gene transfer occurred sometime during the evolution of primitive chordates to bony fishes (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Table 1 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "72dfd1a6-dbde-4c0f-8a1d-58304b04140a",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C50",
+      "claim": "The horizontal gene transfer of EEVS and MT-Ox occurred sometime during the evolution of primitive chordates to bony fishes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further bioinformatics studies also showed that the tunicates and lancelets lack the EEVS and MT-Ox genes, suggesting that the gene transfer occurred sometime during the evolution of primitive chordates to bony fishes (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the phylogenetic distribution of the genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "359bfb2d-3126-4786-b9ee-7f254e07260c",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C51",
+      "claim": "The EEVS and MT-Ox genes are retained in modern ray-finned fish (with the exception of puffer fish), amphibians, reptiles, and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "While the EEVS and MT-Ox genes are retained in modern ray-finned fish (with the exception of puffer fish), as well as in amphibians, reptiles, and birds, they were lost in mammals, including the egg-laying mammal platypus, indicating the lack of a direct link between gadusol and the mode of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Table 1 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "59f64f66-68ae-4fd4-b330-f0d68b38e8f2",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C52",
+      "claim": "Puffer fish lack the EEVS and MT-Ox genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the EEVS and MT-Ox genes are retained in modern ray-finned fish (with the exception of puffer fish), as well as in amphibians, reptiles, and birds, they were lost in mammals, including the egg-laying mammal platypus, indicating the lack of a direct link between gadusol and the mode of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "d007cda3-2917-4c17-a1c5-328a41c395f3",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C53",
+      "claim": "The EEVS and MT-Ox genes were lost in mammals, including the egg-laying mammal platypus.",
+      "claim_type": "EXPLICIT",
+      "source": "While the EEVS and MT-Ox genes are retained in modern ray-finned fish (with the exception of puffer fish), as well as in amphibians, reptiles, and birds, they were lost in mammals, including the egg-laying mammal platypus, indicating the lack of a direct link between gadusol and the mode of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Table 1 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "43b71797-cdc7-432e-b5a4-b308e5703488",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C54",
+      "claim": "There is no direct link between gadusol biosynthesis capability and the mode of reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "While the EEVS and MT-Ox genes are retained in modern ray-finned fish (with the exception of puffer fish), as well as in amphibians, reptiles, and birds, they were lost in mammals, including the egg-laying mammal platypus, indicating the lack of a direct link between gadusol and the mode of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the egg-laying platypus lacks the genes while egg-laying birds and reptiles retain them.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "bd773906-0b2d-4b89-9dba-d17a9dfb4658",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C55",
+      "claim": "The West African coelacanth genome appears to lack the EEVS and MT-Ox genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The West African coelacanth genome (Amemiya et al., 2013) also appears to lack the EEVS and MT-Ox genes (Figure 3, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis of the coelacanth genome.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "65961d36-b8c3-4fa3-a77c-7e64ef0991c6",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C56",
+      "claim": "The West African coelacanth is a rare ovoviviparous fish that lives in caves 100\u2013500 meters deep and feeds at night.",
+      "claim_type": "EXPLICIT",
+      "source": "This rare ovoviviparous fish lives in caves 100\u2013500 meters deep and feeds at night, and its lack of gadusol production ability may be directly related to its limited exposure to UV light and/or oxidative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background information about the coelacanth's ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "2da7c011-a85c-4375-a5df-29e52900d88c",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C57",
+      "claim": "The coelacanth's lack of gadusol production ability may be directly related to its limited exposure to UV light and/or oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This rare ovoviviparous fish lives in caves 100\u2013500 meters deep and feeds at night, and its lack of gadusol production ability may be directly related to its limited exposure to UV light and/or oxidative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the coelacanth's ecology and lack of EEVS/MT-Ox genes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "3a0c6c41-54be-451e-8827-8fb3babe1e79",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C58",
+      "claim": "Gadusol is present in fish eggs where it can serve to protect the roe from UV damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than the well-documented presence of gadusol in fish eggs, where it can serve to protect the roe from UV damage (Arbeloa et al., 2010; Colleter et al., 2014), nothing is known of its role(s) in fish, reptiles, amphibians, and birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "853dbb13-2e52-47f4-96b0-f8b19606a71c",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C59",
+      "claim": "Nothing is known of gadusol's role(s) in fish, reptiles, amphibians, and birds beyond its presence in fish eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than the well-documented presence of gadusol in fish eggs, where it can serve to protect the roe from UV damage (Arbeloa et al., 2010; Colleter et al., 2014), nothing is known of its role(s) in fish, reptiles, amphibians, and birds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "af26b9a4-3448-4129-89c3-37fae126c7f7",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C60",
+      "claim": "The zebrafish EEVS-like protein (LOC100003999) was expressed as a recombinant protein in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the function of the vertebrate EEVS-like genes, the protein encoded by the zebrafish EEVS-like gene (LOC100003999) was expressed in Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and results sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "08ba1479-962f-4b31-8c0f-9334dd7f4cb1",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C61",
+      "claim": "The crystal structure of bacterial EEVS ValA (PDB entry 4P53) allowed identification of a fingerprint set of 14 active-site residues that differentiate various SH7P cyclases.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-characterized bacterial EEVS is ValA from the validamycin pathway in Streptomyces hygroscopicus subsp. jinggangensis 5008 (Bai et al., 2006), and the crystal structure of ValA (Protein Data Bank [PDB] entry 4P53) (Kean et al., 2014), allowed identification of a fingerprint set of 14 active-site residues with characteristic variations that could differentiate the various SH7P cyclases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of ValA and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "5978ab7c-b064-49dc-843e-32f14e5901ac",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C62",
+      "claim": "Yeast possesses a robust pentose-phosphate pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast possesses a robust pentose\u2013phosphate pathway (Figure 2\u2014figure supplement 4), and by removing the transaldolase enzyme, which normally metabolizes SH7P, and adding EEVS and MT-Ox, we expected to facilitate an effective shunt pathway from SH7P to gadusol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about yeast metabolism and illustrated in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "e2ee4a73-c709-4026-9b5c-2cbedd8d64f4",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C63",
+      "claim": "Transaldolase enzyme normally metabolizes SH7P in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast possesses a robust pentose\u2013phosphate pathway (Figure 2\u2014figure supplement 4), and by removing the transaldolase enzyme, which normally metabolizes SH7P, and adding EEVS and MT-Ox, we expected to facilitate an effective shunt pathway from SH7P to gadusol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the pentose phosphate pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6ed55d28-7028-45de-8d63-1e3d9570ecd1",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C64",
+      "claim": "Removing transaldolase and adding EEVS and MT-Ox facilitates an effective shunt pathway from SH7P to gadusol in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast possesses a robust pentose\u2013phosphate pathway (Figure 2\u2014figure supplement 4), and by removing the transaldolase enzyme, which normally metabolizes SH7P, and adding EEVS and MT-Ox, we expected to facilitate an effective shunt pathway from SH7P to gadusol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that was tested and confirmed by the experimental results showing gadusol production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "17540f65-4a3b-4f81-8a5d-36045c606563",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C65",
+      "claim": "Gadusol has a \u03bbmax of 294 nm at pH 7 and 270 nm at pH 2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Following incubation, a product with \u03bbmax of 294 nm (pH 7) and 270 (pH 2.5) was detected (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally by UV spectroscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "21efa735-5125-4f53-9cc8-971c11018dcd",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C66",
+      "claim": "The enzymatic product of MT-Ox acting on EEV has a molecular ion at m/z 203 [M-H]\u2212 by ESI-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of the product by (\u2212)-ESI-MS (m/z 203 [M-H]\u2212) and 1H NMR confirmed its identity as gadusol (Figure 2\u2014figure supplements 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally by mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "12dec6b0-3a9a-4beb-802b-8770c78f596d",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C67",
+      "claim": "The existence of multiple pathways for generating the UV-absorbing vinylogous acid functional group may indicate that this is a privileged chemical scaffold in living organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This new pathway to the UV-absorbing vinylogous acid functional group shared by gadusol and 4-deoxygadusol is distinct from that used in the biosynthesis of the MAAs (Balskus and Walsh, 2010; Spence et al., 2012), and the existence of multiple pathways for generating this scaffold is intriguing and may indicate that this is a privileged chemical scaffold in living organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the finding of multiple biosynthetic pathways.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "0203fbc6-15d3-4e4c-95c5-4610507926c3",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C68",
+      "claim": "The discovery of the gadusol pathway in vertebrates provides a platform for understanding its role in these animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of the gadusol pathway in vertebrates provides a platform for understanding its role in these animals, and the possibility of engineering yeast to efficiently produce a natural sunscreen and antioxidant presents an avenue for its large-scale production for possible use in pharmaceuticals and cosmetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "46b2151f-b457-4ed2-923f-456209802357",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C69",
+      "claim": "Engineering yeast to produce gadusol presents an avenue for large-scale production for possible use in pharmaceuticals and cosmetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of the gadusol pathway in vertebrates provides a platform for understanding its role in these animals, and the possibility of engineering yeast to efficiently produce a natural sunscreen and antioxidant presents an avenue for its large-scale production for possible use in pharmaceuticals and cosmetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential applications based on the demonstration of gadusol production in engineered yeast.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "ff23b6b3-3d53-48b0-876f-ac1b1f54920a",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C70",
+      "claim": "Gadusol has antioxidant properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The results not only demonstrate the ability of the engineered yeast to produce and secrete gadusol but also present a new avenue for large-scale production of the compound for possible commercial uses, for example, sunscreen and/or antioxidant (Plack et al., 1981; Schmid et al., 2006; Cardozo et al., 2007; Arbeloa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "619a854d-b8db-4636-8557-9cc422a1e8c0",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "claim_id": "C71",
+      "claim": "Gadusol has sunscreen properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The results not only demonstrate the ability of the engineered yeast to produce and secrete gadusol but also present a new avenue for large-scale production of the compound for possible commercial uses, for example, sunscreen and/or antioxidant (Plack et al., 1981; Schmid et al., 2006; Cardozo et al., 2007; Arbeloa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and demonstrated by the UVB protection experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work established that MAAs and gadusols are UV-protective compounds found in bacteria, fungi, algae, marine invertebrates, and fish, with their accumulation in animals previously thought to be of dietary or symbiont origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C8, C14-C16 accurately summarize established knowledge from prior literature, supported by appropriate citations. These claims provide the necessary background context for the study's main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "5a4978ac-069f-4b0a-af62-e1b05cccea57",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work characterized the DDGS-based MAA biosynthesis pathway in cyanobacteria and identified EEVS as a bacterial enzyme in the sugar phosphate cyclase superfamily involved in natural product biosynthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13, C17-C22 accurately represent prior biochemical and genomic studies with appropriate citations. These establish the known biosynthetic pathways and enzyme families that provide context for the discovery of EEVS in vertebrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "e84a1ae3-6d97-4375-88b9-8b6f035a0ca8",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EEVS-like genes were identified in the genomes of fish, amphibians, reptiles, and birds, located in a cluster with MT-Ox and flanked by transcription factor genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by bioinformatic analysis shown in Figure 1, Table 1, and supplementary data. The genomic organization is clearly documented, though the functional relationship with flanking transcription factors remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "34f6e848-a626-4e29-9707-19a19a284a72",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The zebrafish LOC100003999 protein is an EEVS that converts SH7P to EEV, confirmed by biochemical assays and sequence analysis showing conservation of all 14 active-site fingerprint residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28, C60-C61 are strongly supported by experimental data including TLC, GC-MS analysis (Figure 1C, supplements 3-4), and sequence alignments (Figure 1D, supplements 5-6). The biochemical characterization is rigorous and the sequence conservation analysis is comprehensive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "ec67f1d0-e379-4ead-822d-cbd40709e37c",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The zebrafish MT-Ox protein is a bifunctional enzyme containing methyltransferase and oxidoreductase domains that converts EEV to gadusol in the presence of SAM and NAD+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C65-C66 are supported by domain prediction, enzymatic assays, UV spectroscopy, mass spectrometry, and NMR data (Figure 2A-B, supplements 1-2). The product identification as gadusol is unambiguous with multiple orthogonal analytical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "f5ce592f-e024-42ba-a7d6-e64285b80030",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The conversion of EEV to gadusol by MT-Ox is proposed to occur via oxidation followed by enolization and methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C32 is explicitly stated as a postulated mechanism (\"We postulate...\") without direct experimental validation of the intermediates. While chemically reasonable, the specific mechanistic steps remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "13b02542-2dbe-4cb9-b001-c9fcbc8cb85f",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The vertebrate gadusol biosynthesis pathway is distinct from the DDGS-based MAA pathway, suggesting the UV-absorbing vinylogous acid scaffold may be a privileged structure in living organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C67 are supported by comparison of enzymatic mechanisms and the existence of multiple independent pathways. The interpretation about privileged scaffolds is speculative but reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "077bef92-cef9-4e2f-b8c2-a7c244c640bf",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both EEVS and MT-Ox genes are expressed during zebrafish embryonic development with maximal expression at 72 hours post-fertilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by qRT-PCR data shown in Figure 2C-D. The temporal expression pattern is clearly documented with appropriate replication (n=3).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "0b5c3ef8-c214-4aa5-8eae-e371661aaa24",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Zebrafish can synthesize gadusol de novo, as demonstrated by detection of gadusol in zebrafish embryo extracts at 72 hpf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36-C37 are strongly supported by HPLC and ESI-MS analysis of zebrafish embryo extracts (Figure 2G). This is a key finding that overturns the previous assumption that gadusol in fish is necessarily of dietary origin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "07629312-cf5a-4280-88dd-692078ada013",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Fish lack MAA biosynthetic enzymes, so MAA accumulation in fish remains of dietary origin despite their ability to synthesize gadusol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by the absence of DDGS-like genes in fish genomes and citations to prior literature. This appropriately distinguishes between gadusol and MAA biosynthesis capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "88f38178-69c9-42e3-b9a1-22ad4d995d58",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Engineered yeast with deleted TAL1 gene expressing zebrafish EEVS and MT-Ox genes can produce and secrete gadusol at approximately 20 mg/L after 5 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C41, C62-C64 are supported by experimental data showing gadusol production in engineered yeast (Figure 2E, H). The metabolic engineering strategy is well-designed and the production is quantified. However, the claim about secretion is not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "65e7d4cd-792b-4e12-a76f-f0e340ef8d88",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gadusol has UVB-protective activity, demonstrated by suppression of UVB sensitivity in rad1\u0394 mutant yeast and increased UVB tolerance in wild-type yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C71 are supported by experimental data (Figure 2I-J) showing protection against UVB damage. The experiments include appropriate controls and test both mutant and wild-type strains, though quantification of protection could be more rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "a5e55931-1a79-46e8-bf0f-69179ee72b8f",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Gadusol has antioxidant properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is supported only by citations to prior literature, not by experimental data in this study. While the claim may be accurate based on prior work, it is not directly demonstrated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "013ab585-b60b-473a-8008-e35db4ba56be",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The EEVS and MT-Ox genes in vertebrates were likely acquired via horizontal gene transfer from algae, occurring during the evolution of primitive chordates to bony fishes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C45-C50 are supported by phylogenetic analysis (Figure 1A, supplements) and comparative genomics (Table 1, Figure 3). The identification of similar genes in Aureococcus anophagefferens and Coccomyxa subellipsoidea, combined with the absence in tunicates and lancelets, provides strong evidence for horizontal gene transfer, though the exact timing and mechanism remain inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "81035624-cc78-49f2-baa8-d407f835d6e3",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The EEVS and MT-Ox genes are retained in most ray-finned fish, amphibians, reptiles, and birds, but were lost in puffer fish and all mammals including platypus, indicating no direct link to reproductive mode.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by comprehensive genomic analysis (Table 1, Figure 3). The loss in egg-laying platypus while retained in egg-laying birds/reptiles provides strong evidence against a link to reproductive mode.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "57e861d9-367d-4ed2-a119-2ff06d27689d",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The West African coelacanth lacks EEVS and MT-Ox genes, possibly related to its deep-water habitat with limited UV exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by genomic analysis (Table 1, Figure 3). Claims C56-C57 about ecological correlation are speculative but reasonable given the coelacanth's deep-water, nocturnal lifestyle. The causal link remains unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "cf27228f-c7b4-4582-83cd-8f0a8d6b1217",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Gadusol is present in fish eggs where it protects roe from UV damage, but its broader roles in vertebrates remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 accurately represent the current state of knowledge, with C58 supported by citations and C59 acknowledging the limitations of current understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    },
+    {
+      "id": "6b85fe0b-8ab7-4cfd-b427-a196854f4137",
+      "content_id": "2c55cbb1-9bd4-4272-8422-d9f22f36475a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The discovery of the gadusol pathway in vertebrates provides a platform for understanding its biological role and enables biotechnological production for pharmaceutical and cosmetic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are reasonable implications of the findings. The demonstration of gadusol production in engineered yeast (C40-C41) supports the biotechnological potential, though large-scale optimization and commercial viability remain to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:54:28.955972Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "08aa7b6d-dc50-4276-b19b-b732d9fdf3a6",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "7474178a-d1a8-4e3f-a555-d2a87cd4ed3b",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "e3fea7c0-6184-4e95-9b81-69b8bc880f02",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "6cf278f3-cf60-41ed-89b7-ec5b72d88f29",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "46cd0c61-a966-4657-bf13-051fe1b4cbbd",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "6413ffde-a2ed-41b1-97b9-82dce1ea26e0",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "0e5b8267-8fcc-4435-90af-271e9f9bb31f",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "dc12df3a-0a70-443f-aeec-3ccbd64a2703",
+      "result_id": "aaaa2a39-c867-4466-b9de-5309a36d0d3b"
+    },
+    {
+      "claim_id": "d33ccb9f-c237-455e-9601-bdb82950515a",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "579a86cd-b968-4289-bf42-b0895bece894",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "82f39c65-3eda-42e8-89ff-a8a6c9483694",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "7f5b41e8-3727-4e16-bfa5-16a4dc8190b4",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "f764eb7e-62c7-43f2-88c1-4f1e566d67ae",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "3402eedc-301d-431a-a030-503c0fa8c868",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "654fba46-98e4-46dd-a318-58f8b01ffe55",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "acf4a755-b107-41db-af09-23d102bf873e",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "e5098ea2-517c-40c4-b02b-3ceda24f6871",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "72bf988d-51f6-4d9c-a1b2-56e9aa024a29",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "6cf4d2ef-ecdf-4700-9261-446c40cc6822",
+      "result_id": "5a4978ac-069f-4b0a-af62-e1b05cccea57"
+    },
+    {
+      "claim_id": "5f16d72b-3159-4ea5-ba03-29f458471a15",
+      "result_id": "e84a1ae3-6d97-4375-88b9-8b6f035a0ca8"
+    },
+    {
+      "claim_id": "a55f084e-0ce1-4c0d-a8f3-e5f69ffc8b8b",
+      "result_id": "e84a1ae3-6d97-4375-88b9-8b6f035a0ca8"
+    },
+    {
+      "claim_id": "6da423f5-e340-4018-8663-5df78cdf942e",
+      "result_id": "e84a1ae3-6d97-4375-88b9-8b6f035a0ca8"
+    },
+    {
+      "claim_id": "932ebe6a-e862-44db-bed5-8d54695c1e2f",
+      "result_id": "34f6e848-a626-4e29-9707-19a19a284a72"
+    },
+    {
+      "claim_id": "ea200c71-55c9-442c-88ba-d3a6c0d171e9",
+      "result_id": "34f6e848-a626-4e29-9707-19a19a284a72"
+    },
+    {
+      "claim_id": "af26b9a4-3448-4129-89c3-37fae126c7f7",
+      "result_id": "34f6e848-a626-4e29-9707-19a19a284a72"
+    },
+    {
+      "claim_id": "08ba1479-962f-4b31-8c0f-9334dd7f4cb1",
+      "result_id": "34f6e848-a626-4e29-9707-19a19a284a72"
+    },
+    {
+      "claim_id": "f948bcc4-a1a2-44bb-806d-8d3552bf1485",
+      "result_id": "ec67f1d0-e379-4ead-822d-cbd40709e37c"
+    },
+    {
+      "claim_id": "12ebba8e-3ed8-44e5-ae90-3ae6fe6c8a99",
+      "result_id": "ec67f1d0-e379-4ead-822d-cbd40709e37c"
+    },
+    {
+      "claim_id": "14ee8fb3-e707-41b0-a790-cae35a4a0e58",
+      "result_id": "ec67f1d0-e379-4ead-822d-cbd40709e37c"
+    },
+    {
+      "claim_id": "17540f65-4a3b-4f81-8a5d-36045c606563",
+      "result_id": "ec67f1d0-e379-4ead-822d-cbd40709e37c"
+    },
+    {
+      "claim_id": "21efa735-5125-4f53-9cc8-971c11018dcd",
+      "result_id": "ec67f1d0-e379-4ead-822d-cbd40709e37c"
+    },
+    {
+      "claim_id": "cecbb5c7-1faa-4927-b8c1-e60d3acac6a1",
+      "result_id": "f5ce592f-e024-42ba-a7d6-e64285b80030"
+    },
+    {
+      "claim_id": "042094af-2a2c-4655-b27e-34101c2edd12",
+      "result_id": "13b02542-2dbe-4cb9-b001-c9fcbc8cb85f"
+    },
+    {
+      "claim_id": "12dec6b0-3a9a-4beb-802b-8770c78f596d",
+      "result_id": "13b02542-2dbe-4cb9-b001-c9fcbc8cb85f"
+    },
+    {
+      "claim_id": "3560054d-b6e5-4782-84ed-d0665bd689bb",
+      "result_id": "077bef92-cef9-4e2f-b8c2-a7c244c640bf"
+    },
+    {
+      "claim_id": "c2192bf3-2648-492d-8818-6f0f2b82fd3e",
+      "result_id": "077bef92-cef9-4e2f-b8c2-a7c244c640bf"
+    },
+    {
+      "claim_id": "d86970ce-3851-4972-91dd-225d4b8d2dba",
+      "result_id": "0b5c3ef8-c214-4aa5-8eae-e371661aaa24"
+    },
+    {
+      "claim_id": "eda1822a-cb9b-467c-8840-21767e8c033b",
+      "result_id": "0b5c3ef8-c214-4aa5-8eae-e371661aaa24"
+    },
+    {
+      "claim_id": "3b58547a-dde6-4711-8540-bfbe28e78658",
+      "result_id": "0b5c3ef8-c214-4aa5-8eae-e371661aaa24"
+    },
+    {
+      "claim_id": "378c4c09-5bdf-4639-9313-10d8e0c6d00f",
+      "result_id": "07629312-cf5a-4280-88dd-692078ada013"
+    },
+    {
+      "claim_id": "9c09e484-be05-42b0-a1b7-34b3336b6623",
+      "result_id": "07629312-cf5a-4280-88dd-692078ada013"
+    },
+    {
+      "claim_id": "986ef97e-65f3-46eb-a82e-0dfb5bcd05e2",
+      "result_id": "88f38178-69c9-42e3-b9a1-22ad4d995d58"
+    },
+    {
+      "claim_id": "0836fff8-62bb-4382-a4e0-3de737397902",
+      "result_id": "88f38178-69c9-42e3-b9a1-22ad4d995d58"
+    },
+    {
+      "claim_id": "3e2da339-55f5-4076-b7ed-b0d82d687939",
+      "result_id": "88f38178-69c9-42e3-b9a1-22ad4d995d58"
+    },
+    {
+      "claim_id": "5978ab7c-b064-49dc-843e-32f14e5901ac",
+      "result_id": "88f38178-69c9-42e3-b9a1-22ad4d995d58"
+    },
+    {
+      "claim_id": "e2ee4a73-c709-4026-9b5c-2cbedd8d64f4",
+      "result_id": "88f38178-69c9-42e3-b9a1-22ad4d995d58"
+    },
+    {
+      "claim_id": "6ed55d28-7028-45de-8d63-1e3d9570ecd1",
+      "result_id": "88f38178-69c9-42e3-b9a1-22ad4d995d58"
+    },
+    {
+      "claim_id": "3453ce04-bfdb-40ba-aebd-8c81bd7b755d",
+      "result_id": "65e7d4cd-792b-4e12-a76f-f0e340ef8d88"
+    },
+    {
+      "claim_id": "7ae26d32-7eda-46d6-bf9e-82ce7b9b8767",
+      "result_id": "65e7d4cd-792b-4e12-a76f-f0e340ef8d88"
+    },
+    {
+      "claim_id": "f9050105-076d-40a1-bb71-a538fbff5baa",
+      "result_id": "65e7d4cd-792b-4e12-a76f-f0e340ef8d88"
+    },
+    {
+      "claim_id": "619a854d-b8db-4636-8557-9cc422a1e8c0",
+      "result_id": "65e7d4cd-792b-4e12-a76f-f0e340ef8d88"
+    },
+    {
+      "claim_id": "ff23b6b3-3d53-48b0-876f-ac1b1f54920a",
+      "result_id": "a5e55931-1a79-46e8-bf0f-69179ee72b8f"
+    },
+    {
+      "claim_id": "bcfc5227-220b-4b4c-b9ff-65f41df2c6bf",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "70dcc3df-4a42-47cf-891b-556da5aa6473",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "2b1a1f69-127c-4fed-b70f-619a15ac164d",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "c5eb3965-f241-4740-a2eb-78fc46b6770f",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "11518f9f-410f-4c87-b345-b9968678b152",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "6240c047-4466-4508-9ab9-8fac84d74553",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "72dfd1a6-dbde-4c0f-8a1d-58304b04140a",
+      "result_id": "013ab585-b60b-473a-8008-e35db4ba56be"
+    },
+    {
+      "claim_id": "359bfb2d-3126-4786-b9ee-7f254e07260c",
+      "result_id": "81035624-cc78-49f2-baa8-d407f835d6e3"
+    },
+    {
+      "claim_id": "59f64f66-68ae-4fd4-b330-f0d68b38e8f2",
+      "result_id": "81035624-cc78-49f2-baa8-d407f835d6e3"
+    },
+    {
+      "claim_id": "d007cda3-2917-4c17-a1c5-328a41c395f3",
+      "result_id": "81035624-cc78-49f2-baa8-d407f835d6e3"
+    },
+    {
+      "claim_id": "43b71797-cdc7-432e-b5a4-b308e5703488",
+      "result_id": "81035624-cc78-49f2-baa8-d407f835d6e3"
+    },
+    {
+      "claim_id": "bd773906-0b2d-4b89-9dba-d17a9dfb4658",
+      "result_id": "57e861d9-367d-4ed2-a119-2ff06d27689d"
+    },
+    {
+      "claim_id": "65961d36-b8c3-4fa3-a77c-7e64ef0991c6",
+      "result_id": "57e861d9-367d-4ed2-a119-2ff06d27689d"
+    },
+    {
+      "claim_id": "2da7c011-a85c-4375-a5df-29e52900d88c",
+      "result_id": "57e861d9-367d-4ed2-a119-2ff06d27689d"
+    },
+    {
+      "claim_id": "3a0c6c41-54be-451e-8827-8fb3babe1e79",
+      "result_id": "cf27228f-c7b4-4582-83cd-8f0a8d6b1217"
+    },
+    {
+      "claim_id": "853dbb13-2e52-47f4-96b0-f8b19606a71c",
+      "result_id": "cf27228f-c7b4-4582-83cd-8f0a8d6b1217"
+    },
+    {
+      "claim_id": "0203fbc6-15d3-4e4c-95c5-4610507926c3",
+      "result_id": "6b85fe0b-8ab7-4cfd-b427-a196854f4137"
+    },
+    {
+      "claim_id": "46b2151f-b457-4ed2-923f-456209802357",
+      "result_id": "6b85fe0b-8ab7-4cfd-b427-a196854f4137"
+    }
+  ],
+  "comparisons": []
+}

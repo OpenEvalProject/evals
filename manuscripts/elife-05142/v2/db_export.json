@@ -1,0 +1,1770 @@
+{
+  "submission": {
+    "id": "053eb199-e8c9-4302-9ea5-9ea267b29fd0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:53:20.310765Z",
+    "updated_at": "2025-11-29T03:53:20.310765Z"
+  },
+  "content": [
+    {
+      "id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "submission_id": "053eb199-e8c9-4302-9ea5-9ea267b29fd0",
+      "content_type": "manuscript",
+      "content_text": "# The biological function of an insect antifreeze protein simulated by molecular dynamics\n\n## Authors\n\n- Michael J Kuiper<sup>1</sup> \u2020\n- Craig J Morton<sup>2</sup>\n- Sneha E Abraham<sup>3</sup>\n- Angus Gray-Weale<sup>3</sup>\n\n### Affiliations\n\n1. Victorian Life Sciences Computation Initiative The University of Melbourne Carlton Australia\n2. ACRF Rational Drug Discovery Centre St Vincent's Institute of Medical Research Fitzroy Australia\n3. School of Chemistry The University of Melbourne Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntifreeze proteins (AFPs) protect certain cold-adapted organisms from freezing to death by selectively adsorbing to internal ice crystals and inhibiting ice propagation. The molecular details of AFP adsorption-inhibition is uncertain but is proposed to involve the Gibbs\u2013Thomson effect. Here we show by using unbiased molecular dynamics simulations a protein structure-function mechanism for the spruce budworm Choristoneura fumiferana AFP, including stereo-specific binding and consequential melting and freezing inhibition. The protein binds indirectly to the prism ice face through a linear array of ordered water molecules that are structurally distinct from the ice. Mutation of the ice binding surface disrupts water-ordering and abolishes activity. The adsorption is virtually irreversible, and we confirm the ice growth inhibition is consistent with the Gibbs\u2013Thomson law.\n\n## Introduction\n\nMany species of fish, insects, plants and micro-organisms living in cold environments produce antifreeze proteins (AFPs) whose main function is to target and modify the growth of regular ice (Raymond and DeVries, 1977; Davies and Hew, 1990). By binding to ice, AFPs are thought to both lower the freezing point and raise the melting point of ice through the Gibbs\u2013Thomson effect whereby adsorbed AFPs cause increased micro-curvature of the ice front (Yeh and Feeney, 1996). The resulting difference between the melting and freezing points, known as the thermal hysteresis gap (TH), can range from a few tenths to over 6\u00b0, depending on the specific AFP (Lin et al., 2011).\n\nRegular hexagonal ice (Ih) has three equivalent a-axes (a1\u2013a3) which are parallel to three respective prism planes and perpendicular to the c-axis. The ice basal plane lies perpendicular to the c-axis. Remarkably AFPs have evolved independently numerous times to bind stereo-selectively to ice in various orientations, resulting in a structurally diverse protein family (Hew et al., 1985; Ko et al., 2003; Pentelute et al., 2008; Hakim et al., 2013; Middleton et al., 2013). The potency of different AFPs reflects their adsorption characteristics and environmental adaptation. Polar fish, for example, do not normally experience temperatures much lower than the freezing point of sea water (\u22121.9\u00b0C), and have AFPs that provide protection to just a few tenths of a degree below this. Fish AFPs often bind oblique to ice prism planes, typically forming hexagonal bipyramid crystals at temperatures within the TH gap which rapidly grow as elongated spicules along the c-axis below the TH gap (Davies and Hew, 1990). In contrast insects which are exposed to much lower terrestrial temperatures, (often below \u221230\u00b0C), require AFPs with higher activity, possibly by selecting more effective prism and basal plane binding (Lin et al., 2011). Despite a wide selection of available structural and experimental data, a complete molecular description of how an AFP binds to its respective ice planes and inhibits crystal growth remains elusive.\n\nThe difficulty in characterizing the molecular mechanisms of AFPs arises largely due to their unusual relationship with water, which in this case serves as both the protein's solvent and, as ice, its target (Jia and Davies, 2002). Slowly freezing solutions of dilute AFP will incorporate AFPs into the growing ice phase at roughly their original concentration, while non-AFPs and solutes are largely excluded (Marshall et al., 2004). Many structural studies have shown a correlation between the periodicity of the ice-binding surface elements of AFPs and their respective ice-binding planes, though it has not been entirely clear whether AFPs bind directly to ice or through some ordered water intermediate (Sharp, 2011). Observation of the molecular arrangements of AFPs and surrounding water as they bind and modify the surface curvature of ice is currently technically unattainable. Given these experimental limitations, computer simulations have played a crucial role in expanding our understanding of the AFP phenomena.\n\nEarly computational simulations of winter-flounder AFP (wfAFP) by Wen and Laursen (1992); Jorgensen et al. (1993); Madura et al. (1994) firmly established the correlation of the distance between regularly spaced polar threonine residues and that of water molecules of the ice lattice of the {2021} pyramidal ice plane in the [112] direction by searching for energetically stable conformations. This was in agreement with previous experimental work of Knight et al which showed the preferential binding orientation of wfAFP on single crystal ice hemisphere (Knight et al., 1991) and also the later work of Sicheri and Yang who determined the wfAFP crystal structure (Sicheri and Yang, 1995). Cheng and Merz further expanded this work using molecular dynamics simulations of solvated wfAFP in the bound conformation to the {2021} pyramidal plane to propose key hydrogen bond interactions between polar residues and the ice surface, suggesting that hydrogen bonds were the primary driving force of ice adsorption (Cheng and Merz, 1997). However, this model was to be short lived as mutational work by the groups of Harding and Laursen (Zhang and Laursen, 1998; Haymet et al., 1999) raised questions about the nature of the wfAFP-ice interaction; conservative substitution of threonine residues for serine abolished activity, while threonine to valine substitution, which removed the proposed threonine hydroxyl\u2013ice interactions surprisingly retained AFP activity.\n\nSpurred by the paradoxical mutant wfAFP results both Dalal and S\u00f6nnichsen (2000) and Jorov et al. (2004) employed Monte Carlo simulations of the wfAFP on the pyramidal plane, both groups finding that hydrophobic interactions contributed significantly to the adsorption to ice. Further related work by Wierzbicki et al. (2007) proposed that wfAFP doesn't bind directly to ice but rather accumulates at the ice-water interface with preference for the hydrophobic over the hydrophilic face facing the ice. Additional computational studies of different AFPs have followed, including type II sea-raven AFP (Wierzbicki et al., 1997), type III eel pout AFP (Madura et al., 1996) and an insect AFPs from Tenebrio molitor (Liu et al., 2005). Nada and Furukawa (Nada and Furukawa, 2011) were amongst the first to provide a model of the spruce budworm AFP (sbwAFP) at the prism ice-water interface. Using rigid models of sbwAFP they showed that two pre-determined binding conformations were able to affect local ice growth kinetics, inferring that reduced ice growth and induced curvature was indicative freezing point depression consistent of the Gibbs\u2013Thomson effect.\n\nAs highlighted by an excellent review by Nada and Furukawa. (Nada and Furukawa, 2012), in real world systems, AFPs bind to an ice-water interface rather than ice crystal planes alone, thus earlier AFP simulations are unable to provide complete mechanistic details of the AFP-ice interaction. Even though a number of AFP studies have simulated ice-water interactions (McDonald et al., 1995; Dalal et al., 2001; Wierzbicki et al., 2007; Nada and Furukawa, 2008), Nada and Furukawa also point out the need for simulations to target a growing ice-water interface. Ideally, simulations would allow unconstrained AFPs to migrate from the water phase to interact freely the growing ice-water interface without introducing prior binding orientation bias. The computational requirements to do so are significant, and only recently became relatively accessible for researchers.\n\nThe highly active AFP from the spruce budworm, Choristoneura fumiferana, (sbwAFP) provides an excellent model for antifreeze simulations and has been used previously in computational studies (Nutt and Smith, 2008; Nada and Furukawa, 2011). SbwAFP has a \u03b2-helix structure with a triangular cross-section forming three parallel \u03b2-sheet faces and a hydrophobic core as shown in Figure 1. The ice binding face has a regular array of repeating threonine-x-threonine (T-X-T) motifs whereby the spacing between threonine residues match the repeat spacing parallel to the c-axis of ice of approximately 7.4 \u00c5 and motifs on adjacent \u03b2-strands closely match the a-axis repeating dimensions of the prism face of ice of 4.5 \u00c5. The second row of threonine residues of the ice-binding surface is particularly sensitive to mutation, with replacement of the threonines drastically reducing sbwAFP's potency as an AFP (Graether et al., 2000). In addition to inducing a non-colligative freezing point depression of ice by up to 6\u00b0C, sbwAFP also demonstrates a significant melting inhibition (super-heating) of ice of up to 0.44\u00b0C (Celik et al., 2010). Here we employ multiple and extended molecular dynamics simulations of a potent sbwAFP isoform 501 (Leinala et al., 2002) with a novel ice/water interface model designed to create continual ice growth conditions, providing new insight into molecular specificity and the resultant Gibbs\u2013Thomson induced thermal hysteresis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig1-v2.jpg)\n\n**Figure 1.:** This shows the triangular cross section of parallel \u03b2-helix structure. The ice binding surface is drawn as sticks.\n\n## Results and discussion\n\n### Building a model of the ice-water interface\n\nThe TIP4P water model (Jorgensen et al., 1983) was used for simulations due to its ability to give realistic phase transformation behavior and superior freezing characteristics compared with the default TIP3P model, its support by the NAMD software (Phillips et al., 2005), and its compatibility with biological CHARMM parameters (Glass et al., 2010). Although the melting point (Tm) of the TIP4P water model is known to be 230.5 K, (Garc\u00eda Fern\u00e1ndez et al., 2006) it is highly unlikely such a water model will spontaneously freeze or remain frozen in simulation, particularly in the few degrees temperature range below Tm where AFPs exhibit their biological activity, due to the equilibrium radius R of the critical ice nucleus governed by the Gibbs\u2013Thomson effect. This effect is a well known phenomenon whereby the chemical potential across an interface varies with curvature. For positive interfacial energies smaller crystals, with their higher curvature, are only able to be in equilibrium with their melt at lower temperatures than larger crystals. AFPs are thought to exploit this property by effectively subdividing a large ice surface of relatively low curvature into smaller surfaces with greater curvature thus giving rise to lower freezing temperatures, as shown in Figure 2. The critical radius at a given temperature Tr can be approximated with the following expression adapted from Pereyra et al. (2011):(1)R\u2243Mw\u03c3L\u03c1iAgT0(T0\u2212Tr),where Mw is the molecular weight of water, \u03c3 is the surface tension of the ice-water interface, L is the latent heat of fusion, \u03c1i is the density of ice, T0 is the melting temperature at atmospheric pressure, Ag is a constant of 2 or 1 for spherical or cylindrical symmetry conditions respectively. This relationship implies large ice crystals are required to maintain growth. For example, assuming spherical geometry, for a single degree of supercooling the critical radius of an ice embryo is about 518 \u00c5 containing approximately 18 million water molecules, which is currently computationally prohibitive to model (see \u2018Materials and methods\u2019 for calculation). To simulate AFP-ice interactions more efficiently a specially arranged model of an ice-water interface was developed to provide a continual ice growth mechanism while mimicking an infinite ice plane by taking advantage of periodic boundary conditions (PBCs). The ice/water system employed here consisted of 17,434 water molecules in a 51.5 \u00d7 126.6 \u00d7 83.9 \u00c5 box with PBCs, of which 1692 water molecules were harmonically constrained to an ideal prism ice lattice. This served as the seed crystal while an additional 1049 water molecules below the seed were constrained in a 5 \u00c5 thick disordered layer to act as an ice barrier preventing downward ice growth, leaving a small wedge of mobile water between constrained layers as shown in Figure 3. A perspective view of the model is shown in Figure 3\u2014figure supplement 1. The seed ice crystal included an additional small prism step to initiate step layer growth and the entire seed was angled such that the primary prism face was approximately 4.3\u00b0 with respect to the long axis. The angle of the seed is such that step layer growth across the prism face reappears, due to PBCs, one layer higher to where it started, thus providing a continual ice growth mechanism. Unimpeded, this mechanism will freeze the area above the seed crystal at any temperature below Tm. This arrangement mimics step growth as might be produced by screw dislocations, as originally proposed by Frank (1949) and later observed on ice surfaces by Ketcham and Hobbs (1968).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig2-v2.jpg)\n\n**Figure 2.:** (A) A mixture of AFP and non-AFP proteins ahead of a growing ice front. (B) AFPs selectively bind to the ice, while non-AFPs are excluded. AFP adsorption to the ice surface subdivides into smaller growth fronts which increases local curvature. If the induced curvature of the new ice fronts is less than the critical radius (R) of an ice embryo at a given temperature then the ice remains in equilibrium with the melt.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig3-v2.jpg)\n\n**Figure 3.:** The seed ice crystal is shown in dark blue, constrained disordered water coloured cyan and unrestrained water is coloured red. The sbwAFP is centrally positioned 20 \u00c5 above the seed ice. The prism face of the seed ice crystals is angled approximately 4.3\u00b0 with respect to the long axis of the simulation box, such that the periodic image of the seed ice is consistent with itself at the edges.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The blue line is parallel to the a-axis of ice (prism face) while the red line is parallel to the c-axis of ice. The green lines represent the relative alignment of the sbwAFP with the ice.\n\nAs the simulation proceeds, water molecules join the ice phase through hydrogen bonding and can be easily identified by their tetrahedral arrangement, which appears hexagonal when viewed directly down the c-axis of ice. Within this ice/water box the unconstrained sbwAFP model was initially placed 20 \u00c5 above the seed, with its ice binding face directed towards the seed approximately aligned in the expected binding orientation. In our preliminary work the seed ice crystal was arranged with the prism face parallel with the axis of the simulation boundaries. Crystals from these arrangements did not grow well, extending the ice front very slowly if at all. We realized that this was because one had to effectively wait for a two-dimensional nucleation event to occur on the prism plane and reach a critical size before the next layer of ice would grow.\n\n### Characterization of the sbwAFP binding mode\n\nTo characterize the binding mode of sbwAFP, 32 independent, unconstrained (apart from the waters constrained in the ice seed and ice-barrier) simulations of at least 150 nanoseconds (ns) to as long as 250 ns duration were carried out at 228 K. Definitive ice binding was observed 26 times with each binding event occurring with equivalent orientation with respect to the ice lattice, though adsorbing at a number of different step heights. The remaining 6 simulations either diffused away from the growing ice front (3 times), or had partial engagement at alternate angles (3 times). Of the partial engagements, the AFP still had significant rotational and translational movement with respect to the ice lattice so was not considered truly bound. Each of the definitive ice binding events incorporated a linear array of 6 water molecules bridging between the prism face and a row of conserved threonine residues (Thr 7, 23, 39, 54, 69, 84 and 101) as shown in Figure 4. These water molecules had the same periodicity of the prism face, spaced approximately 4.5 \u00c5 apart. Interestingly they were distinct from the bulk ice crystal, bridging between two prism face water molecules parallel along the c-axis which would normally be bridged by two water molecules in regular ice as shown in Figure 5. The sbwAFP-bound water molecules had fully satisfied tetrahedral hydrogen bonding arrangements; two hydrogen bonds to the prism face ice water molecules and two hydrogen bonds to the hydroxyl groups of adjacent threonine residues of the sbwAFP ice binding face.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig4-v2.jpg)\n\n**Figure 4.:** Ordered water molecules are shown in yellow hydrogen bonded between adjacent threonine residues of the top row.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig5-v2.jpg)\n\n**Figure 5.:** (A) c-axis view of ice (cyan spheres) and the arrangement of the sbwAFP ordered water (yellow spheres). (B) a-axis view of the sbwAFP binding orientation showing the relative arrangement of the ordered water to ice. The ice lattice repeats approximately 4.5 \u00c5 and 7.4 \u00c5 along the a axis and c axis respectively.\n\nTo further investigate the function of the ordered waters of the ice binding surface 16 independent simulations of a sbwAFP mutant (with 4 Thr to Leu substitutions at positions 7, 21, 39, 69) known to disrupt activity (Graether et al., 2000), were performed, each of 250 ns length. No ice binding events were observed with all mutant AFPs diffusing ahead of the growing ice surface in distinct contrast to the wild type protein. Figure 6 shows the relative height coordinates of both wild type and mutant sbwAFP throughout the docking simulations clearly demonstrating the former AFP adsorbing and fixing to the ice surface while the latter, unable to bind, diffuses ahead of the growing ice front. The Thr to Leu substitutions disrupt the binding of the ordered water to sbwAFP by removing the stabilizing hydroxyl side chain hydrogen bond interactions of the threonine residues. These results indicate ordered waters are crucial in initiating sbwAFP recognition and binding to ice and are suggestive of longer range protein-water interactions consistent with recent experimental findings by Meinster et al, of a similar beetle AFP from Dendroides canadensis, measured with terahertz spectroscopy (Meister et al., 2013). Representative simulations of the binding and non-binding events of the respective wild type and mutant sbwAFP are shown in supplementary Videos 1, 2.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative side view of final docking orientation of wild type sbwAFP. (B) Overlay of 16 independent wild type sbwAFP docking simulations mapping the centre of mass z-axis coordinate of the AFP over time, an unchanging z-coordinate shows ice binding. (C) Representative side view of mutant sbwAFP in simulation. (D) Overlay of 16 independent mutant sbwAFP docking simulations showing all AFPs diffusing ahead of the ice front and no ice binding events. The mutant form of the sbwAFP consisted of 4 Thr to Leu mutations at positions 7, 21, 39 and 69 which disrupts the ice binding surface.\n\n![Video 1.](https://cdn.elifesciences.org/articles/05142/elife-05142-media1.mpg.jpg)\n\n**Video 1.:** Side view of unconstrained sbwAFP docking to the prism face of a growing ice surface at 228 K. (250 nanosecond total simulation.) The seed ice crystal is in dark blue.\n\n![Video 2.](https://cdn.elifesciences.org/articles/05142/elife-05142-media2.mpg.jpg)\n\n**Video 2.:** Unconstrained sbwAFP mutant simulated at 228 K for 250 nanoseconds. Ice binding ability has been lost by mutation of 4 threonine residues (7, 21, 39 and 69) of the ice binding surface to leucine.\n\n### Adsorption inhibition\n\nThree contiguous \u223c1 \u03bcs MD simulations of sbwAFP adsorbed to an active ice front at temperatures of 225 K, 230 K and 232 K were run to test and simulate the adsorption-inhibition mechanism by observing subsequent ice growth as shown in Figure 7. Representative cross-section snapshots of the simulation at the three temperatures is shown in Figure 7\u2014figure supplement 1. Though the Gibbs\u2013Thomson phenomena is widely accepted as the basis of AFP activity, to the best of our knowledge it has not been observed directly at the ice-water interface. In the first simulation the sbwAFP adsorbed from the solvent phase to the advancing ice front at 225 K (5 K below the model system Tm). The sbwAFP adsorbed to the ice front within 40 ns and within 150 ns the ice front displayed marked convex curvature creating cylindrical ice fronts as shown in Figure 8. By 250 ns the ice front had reached equilibrium with an averaged cylindrical radius of approximately 50 \u00c5. The extent of the inhibited ice front fluctuated, advancing and retreating in the range of 5\u20138 \u00c5 showing the reversible arrangement of water molecules to the crystal ice lattice, (this is an important indication of reaching equilibration and adequate sampling given the reduced water diffusion at these low temperatures). The ice fraction (defined as a proportion of total ice-like water molecules above the ice seed crystal), was measured over the 280 to 1000 ns time frame and found to equilibrate at 0.46 \u00b1 0.01 (SD). In contrast AFP-free simulations froze almost completely within 150 ns. The vacillating nature of the ice front in simulation makes quantitative measurement of the curvature difficult, however we find good qualitative agreement between theoretical Gibbs\u2013Thomson curvature and the averaged ice front as shown in Figure 8 where the theoretical radius is overlaid on to the averaged simulation ice cross-section. This is good indication that the simulation ice curvature is due to the expected Gibbs\u2013Thomson phenomena.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig7-v2.jpg)\n\n**Figure 7.:** Ice fraction of 3 contiguous \u223c1 microsecond simulation temperatures 225 K (approx. 5 K below melting point Tm), 230 K (approx. at Tm) and 232 K (approx. 2 K above Tm). Linear regression of equilibrated states shows no appreciable growth or melting (red lines). A simulation containing no AFP (blue line on left) shows rapid freezing of the entire model.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Representative snapshot of cross-section view of equilibrated simulation (with adjacent periodic boundary images) at 225 K showing curvature of ice between adsorbed sbwAFP (seed ice is blue). (B) Side view of equilibrated simulation at 230 K showing a relatively flat ice front. (C) The simulation equilibrated at 232 K showing still adsorbed sbwAFP stabilizing ice protrusions on the superheated ice.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05142/elife-05142-fig8-v2.jpg)\n\n**Figure 8.:** Cyan spheres represent the averaged ice front (defined as water occupation of greater than 85% averaged over approximately 1 microsecond simulation for each temperature). Dark blue spheres represent the constrained ice seed. (A) At 225 K the ice front shows curvature around the adsorbed sbwAFP. The middle shaded circle segment has a radius of 46 \u00c5 equal to the theoretical Gibbs\u2013Thomson cylindrical curvature of TIP4P water at 5 K supercooling. (B) At 230 K the ice retreats, but is stabilized directly beneath the bound sbwAFP. (C) At 232 K, (approximately 2\u00b0C above Tm), the bound sbwAFP remains in place stabilizing an ice protrusion, pinning back further ice retreat. The side profile views are made from two adjacent simulation periodic images.\n\nWhen the temperature was raised to 230 K, (the approximate system melting point Tm) the simulation showed a significant reduction of the ice fraction to an equilibrated value of 0.21 \u00b1 0.02, (calculated over the 1100 to 2130 ns time frame) shown in Figure 8B. The sbwAFP remained bound to ice, stabilizing an ice protrusion directly beneath the AFP approximately 7 \u00c5 high relative to the main ice front.\n\nIn the final contiguous simulation the temperature was raised to 232 K, (approximately 2 K above the simulation melting point) and showed further reduction in the ice fraction which equilibrated to an average of 0.15 \u00b1 0.01 (calculated over 2190 to 3160 ns time frame). The sbwAFP remained attached to the ice protrusion approximately 8.5 \u00c5 above the main ice plane which developed slight concave curvature with respect to the adsorbed protein (Figure 8C). A continuation of the simulation at 235 K resulted in the detachment of the sbwAFP from the ice surface within 10 ns allowing further melting of the ice to a residual fraction of 0.08 \u00b1 0.01. Steady-state representations of the equilibrated ice fronts for each temperature were generated averaging water density over each simulation segment, by mapping water occupancy of greater than 85% using the \u2018volmap\u2019 module of the visualization software VMD (Humphrey et al., 1996). Extended simulations showing the induced curvature of the ice surface are shown in Videos 3, 4, 5. These simulations clearly demonstrate the Gibbs\u2013Thomson effect showing how adsorbed protein induces ice-surface curvature and subsequent melting and freezing inhibition of ice. An important aspect of AFP activity that remains to be resolved involves the question of the strength of binding of AFP to ice. Previous estimations of the binding energy of AFPs to ice have varied greatly in the literature. Initial calculations from Cheng and Merz (1997) put the wfAFP binding energy of \u2212157 kcal/mol while Dalal and S\u00f6nnichsen (2000) put the figure at \u221267 kcal/mol. Later estimates by Jorov et al. (2004) and Wierzbicki et al. (2007) both put the figure for wfAFP much lower at below \u22125 kcal/mol. Such low values of binding, however, imply an equilibrium with appreciable amounts of exchange of the AFP from the ice surface and its surroundings. Contrary to this, experimental evidence suggests that the binding energy must be relatively high and virtually irreversible. Microfluidic experiments by Celik et al. (2013) show that ice growth remains inhibited despite the exchange of the solution surrounding AFP-inhibited ice crystals with AFP-free buffer, suggesting there is little or no exchange of AFPs from the ice surface once bound. This finding is further strengthened by recent field observations of Cziko et al. where it was found Antarctic notethenoid fishes internally accumulated ice does not melt as expected over summer warming periods (Cziko et al., 2014). Our own observations in this study suggest relatively strong binding of a magnitude similar to that proposed by Dalal and S\u00f6nnichsen (2000), with the sbwAFP never detaching once bound to ice, (apart from deliberate melting events), even over the course of the extended millisecond range simulations at above melting temperatures. We intend to address the magnitude of the binding energy in our future work.\n\n![Video 3.](https://cdn.elifesciences.org/articles/05142/elife-05142-media3.mpg.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/05142/elife-05142-media4.avi.jpg)\n\n**Video 4.:** The adsorption of the sbwAFP to the prism face causes curvature to the ice consistent with the Gibbs\u2013Thomson effect.\n\n![Video 5.](https://cdn.elifesciences.org/articles/05142/elife-05142-media5.avi.jpg)\n\n**Video 5.:** The second half of the video highlights the positions of the bound water molecules and shows how they migrate to the ice binding surface from the beginning of the simulation.\n\n### AFP activity and ordered water\n\nOur simulations have shown that sbwAFP activity depends on binding and arranging water in a similar periodicity to ice which in turn bind to the prism face of ice, and that the ordered water plays a crucial role in determining ice plane specificity and integrating into the ice lattice. This conclusion is supported by previous work by Nutt and Smith (2008) whose molecular dynamics simulations of sbwAFP in solution indicated water was more ice-like on its binding face at low temperatures and speculated that this preconfigured water was important for initial recognition and binding events. Recent work by Midya and Bandyopadhyay (2014) simulating insect AFP from Tenebrio molitor with a similar ice binding surface to sbwAFP in water have also found equivalent arrangements of bound water molecules emphasizing the importance of the hydroxyl groups of the ice-binding threonine residues. Contrary to this, as mentioned previously, it is noteworthy that the putative ice-binding threonine residues of the alpha helical wfAFP can be substituted to structurally similar but hydrophobic valine residue with little effect on activity (Haymet et al., 1999). This shows wfAFP ice binding does not depend on the threonine hydroxyl group, even suggesting a hydrophobic mode of interaction. Though tempting to make comparisons with sbwAFP threonine residues, we should be reminded that these proteins are completely different structures with significantly different ice-binding properties. It will be important to characterize both the wfAFP/ice interaction as well as analogous sbwAFP threonine to valine mutations before valid interpretations can be made.\n\nMany of the solved AFP crystal structures have been found to contain ordered waters which have been postulated to integrate directly into the ice lattice (Liou et al., 2000). In a recently determined structure for a highly active bacterial AFP from Marinomonas primiryensis (mpAFP), bound waters exhibited an extensive \u2018clathrate-like\u2019 network that matched ice lattice dimensions (Garnham et al., 2011). Interestingly, unlike most AFPs, mpAFP appears to bind to all ice plane orientations, rather than specific ones. This may result from extended ice-like ordering of water from the ice binding surfaces interacting with ice in non-specific orientations, perhaps in a process similar to ice sintering (Kuroiwa, 1961).\n\nAs noted in a recent review by Nada and Furukawa (2012), previous AFP simulations have focused on modeling prearranged AFPs at the ice-water interface at equilibrium and have not yet tackled free AFP interacting with an actively growing ice interface which would reveal more mechanisms of the molecular process and be less biased to initial positioning. Our freely diffusing MD simulations of AFP spontaneously adsorbing and inhibiting an active ice surface model have demonstrated that simulations can be used to provide detailed insight into molecular processes like crystal inhibition and modification.\n\nWe have presented simulations of the sbwAFP spontaneously interacting with a growing ice surface and demonstrated key aspects of the AFP mechanisms; namely the process of molecular surface recognition and irreversible adsorption inhibition of the ice surface. We have shown that the Gibbs\u2013Thomson formula agrees closely with the simulated inhibition of the growing ice front, and demonstrated irreversibility of binding by free energy analysis. This is one of the first computer simulations to provide a complete in silico demonstration of a protein's biological function.\n\n## Materials and methods\n\n### Molecular modelling\n\nMolecular simulations were performed using NAMD2.9 (Wierzbicki et al., 1997) with CHARM22 (MacKerell et al., 1998) forcefield employing a TIP4P water model supported on both IBM BlueGene/P and BlueGene/Q architecture. The sbwAFP model was based on the pdb structure 1M8N (Leinala et al., 2002). Simulations were run with PBCs using the NPT ensemble at various temperatures (225, 228, 230, 232 and 235 K) and 1 bar pressure employing Langevin dynamics. The PBCs were constant in the XY dimensions. Long-range Coulomb forces were computed with the Particle Mesh Ewald method with a grid spacing of 1 \u00c5. 2 fs timesteps were used with non-bonded interactions calculated every 2 fs and full electrostatics every 4 fs while hydrogens were constrained with the SHAKE algorithm. The cut-off distance was 12 \u00c5 with a switching distance of 10 \u00c5 and a pair-list distance of 14 \u00c5. Pressure was controlled to 1 atmosphere using the Nos\u00e9-Hoover Langevin piston method employing a piston period of 100 fs and a piston decay of 50 fs. Trajectory frames were captured every 100 picoseconds. Ice fractions were determined by measuring the ratio of mobile to immobile water molecules. Water molecules were determined to be immobile, (i.e., ice), if the average oxygen position of water had moved less than 0.8 \u00c5 over three successive trajectory frames (i.e., 200 ps). The initial pdb model of the sbwAFP at the ice/water interface is included in the supplementary data (Supplementary file 1).\n\n### Calculating critical size of spherical ice embryo at 1 K supercooling\n\nUsing Equation 1 for the case of spherical geometry (Ag = 2),\n\n$$\nR\u2243\\frac{M_{w}\\sigma}{L\u03c1_{i}}\\frac{2T_{0}}{(T_{0}\u2212T_{r})},\n$$\n\nwhere R is the radius, Mw the molecular weight of water (0.018 kg/mol), L the latent heat of melting of water ice (6.02 \u00d7 103 J/mol) (Vega et al., 2005), \u03c3 is the ice-water surface energy 29.1 \u00d7 10\u22123 J/m2 (Handel et al., 2008), \u03c1i is the density of ice (917 kg/m3), T0 the normal melting temperature (273.15 K), and Tr is the melting temperature depressed by curvature (272.15 K). These values give R = 518 \u00c5. A sphere of this radius has a volume of 5.82 \u00d7 108 \u00c53 and would contain 1.8 \u00d7 107 water molecules.\n\nUsing parameters derived from the TIP4P water model (Vega et al., 2005; Handel et al., 2008), the corresponding values are T0 of 230.5 K, \u03c3 of 23 \u00d7 10\u22123 J/m2, \u03c1i of 944 kg/m3 and L of 4.4 \u00d7 103 J/mol. Using the cylindrical version of this Gibbs\u2013Thomson equation (Ag = 1) and a freezing point depression of 5 K, we find the critical cylindrical radius to be 46 \u00c5.\n",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "d3b74cb8-88d0-4dfe-81a5-66fb67806208",
+      "submission_id": "053eb199-e8c9-4302-9ea5-9ea267b29fd0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gerhard Hummer, The Max Planck Institute of Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05142.019](https://doi.org/10.7554/eLife.05142.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe biological function of an insect antifreeze protein simulated by molecular dynamics\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor), a Reviewing editor, and two reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper explores the molecular mechanism of an antifreeze protein with the help of molecular dynamics simulations. The simulations show that spruce budworm antifreeze protein (sbwAFP) stalls ice growth at the ice prismatic plane in a manner consistent with the Gibbs-Thomson effect. While the study is clearly interesting, a number of serious criticisms have been raised, in particular concerning novelty (in light of earlier simulation studies of ice-growth inhibition by the same protein), the choice of the water model (with a TIP4P having a very low freezing point), the assumed ice growth mode, and the calculation of binding free energies. The points listed below would have to be convincingly addressed for the paper to be publishable in eLife.\n\nMajor comments:\n\n1) Novelty. The present study is closely related to the earlier work of Furukawa and Nada. In Nada, 2001, the same protein was studied, and very similar conclusions were reached. In particular, the ice melting point depression due to the Gibbs-Thomson effect has already been reported by Nada and Furukawa (Nada, 2008 and Nada, 2001). Specific questions to address are: What distinguishes the present study from these earlier simulations? Is the claim that \u201cto the best of our knowledge [the Gibbs-Thomson phenomena] has not been observed directly\u201d justified? What are the differences to these earlier studies? Does the broader temperature range, the consideration of mutant proteins, and the longer simulations lead to substantially different conclusions or a deeper understanding? It has to be clear that the present paper constitutes a major scientific advance.\n\n2) Water model. The simulations are performed with the TIP4P model. However, TIP4P gives a only a poor rendering of the water phase diagram. In particular, the ice melting point is far too low. As a result, the simulations were carried out at \u223c230 K. However, the diffusion of water and protein at that temperature is very slow, resulting in poor sampling. There are several models in which the reproduction of the phase diagram is much better than in the TIP4P model, e.g., the six-site model and TIP5P/ice model. Could the authors comment about the dependence of the simulation results on the water potential model? It would be reassuring if simulations with a different water model gave similar results.\n\n3) Ice growth mode. The simulations are set up assuming a step growth mode on the ice prismatic plane. Is this realistic? At 1 atm pressure, ice crystals grown from water do not have prismatic plane facets. This means that prismatic planes should not grow by a step-growth mode. Prismatic plane facets appear on grown ice crystal shapes only when pressure is extremely high (M. Maruyama, J Cryst. Growth 275, 2005, 598). The formation of hexagonal column ice crystals in the presence of sbwAFP suggests that sbwAFP binds to the prismatic plane and inhibit ice growth on the plane, but it does not necessarily mean that the prismatic plane growth occurs by a step growth mode. Would the results be affected if a different, more typical growth mechanism were considered?\n\n4) Estimate of binding free energy and enthalpy. The calculated binding free energies are questionable because of several issues: (i) The variance in the calculated work values is very large (several kT), which makes the application of perturbative methods problematic; (ii) Entropic effects (e.g., free rotation of the molecule in the dissociated state) are probably not sampled correctly; (iii) It is not clear how the work is calculated; (iv) It is not clear if the free energy contains any contributions from the harmonic restraint that would have to be subtracted for a proper binding free energy (see, e.g., Hummer, Szabo, Acc. Chem. Res. 2005); (v) The enthalpy estimate in terms of hydrogen bond numbers does not seem to include hydrogen bonds of free water with ice. To get a more controlled estimate of the binding free energy, it would be important to include also the reverse process of binding and use (variants of) the Crooks fluctuation theorem. In its present form, the binding free energy calculations seem to be more confusing than helpful. They may be more suitable for a separate technical publication, in which details can be explored more carefully.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cThe biological function of an insect antifreeze protein simulated by molecular dynamics\u201d for further consideration at eLife. Your revised article has been evaluated by John Kuriyan (Senior editor) and a member of the Board of Reviewing Editors, and the two reviewers who read your original submission. The manuscript has been improved but there are major remaining issues that need to be addressed before acceptance, as outlined below in the summary statement and review prepared by the Reviewing Editor.\n\nIt should be possible for you to address the issues raised by this round of review by editing your manuscript in response to the issues raised, without the need for any further calculations. Please pay particular attention to the fact that the Reviewing Editor asks for the elimination of the data and discussion concerning the calculation of ice-binding free energies. Our proceeding further with a revised manuscript is contingent on this being done, because the editor and the reviewers have identified gaps in this analysis.\n\nSummary statement from the Reviewing Editor:\n\nMolecular dynamics simulations are used to study the trapping of an advancing ice-water interface by antifreeze proteins. The simulations are insightful and interesting, and shed light on an important but poorly understood process at the interface of biology and physics. In their rebuttal and revision, the authors have made a good effort to address the concerns raised in the previous reviews. However, there are important issues that have not been adequately addressed.\n\nTo make the paper acceptable for publication in eLife will require (1) a considerably more nuanced discussion of preceding work, and (2) the elimination of the data and discussion of the calculation of ice-binding free energies. Detailed reasons are given below. In addition, (3) the discussion of the semi-quantitative agreement with the Gibbs-Thomson formalism, as given in equation 1 should better reflect evident uncertainties in this comparison. Also, (4) a clearer justification of the choice of ice-growth model should be included in the paper, not just in the rebuttal. In the following, I discuss these four points in detail.\n\nFirst, I find the discussion of earlier studies inadequate. I am particularly troubled by statements such as \u201cprevious AFP simulations have fallen short of complete, convincing molecular descriptions of an AFP-ice interaction\u201d and \u201crecent advances in computational science now make complete simulations feasible and we report them here.\u201d What do the authors mean by their simulations being \u201ccomplete\u201d? Is there nothing to be done in this field after this study? This is certainly not the case, with many questions remaining open, e.g., concerning the water model with its freezing point of \u223c240 K, the quantification of the phenomenological theory in equation 1, the mode of ice growth, or the calculation of a binding free energy. A fairer discussion of earlier results and a more modest presentation of the new results are in place. Such a discussion should explicitly mention the work of Nada and Furukawa on the use of MD simulations to study ice growth kinetics around AFPs, as influenced by the Gibbs-Thomson effect.\n\nSecond, there are major issues with the calculation of the protein-ice binding free energy. Quoting Reviewer #2, in revising their manuscript, the authors have substantially increased the details of their simulation methodology and have now included a much-expanded discussion on the calculation of the binding free energy. Unfortunately these details now render these calculations and the conclusions derivable from them somewhat questionable. These calculations could be presented separately in a more technical journal to do justice to the many challenges involved in such demanding calculations.\n\nThe instantaneous switching of the control parameters (either the spring constant or harmonic minima) is expected to yield reliable free energy estimates only when such changes result in dissipative work values on the order of kT (where the exponential of the work is well approximated by perturbation theory). The accumulated work values in Figure 9 place this study far outside of this regime, and it is likely the poor sampling of exponentially rare work values that lead to systematic errors and ultimately the disagreement between various protocol estimates of the binding energy discussed in the appendix. Contrary to the authors' claims in their revision, simulating both forward and backward protocols to converge the binding energy would be hugely beneficial precisely because of the irreversibility of binding that the authors allude to. Only in instances of microscopically reversible dynamics do the two procedures yield redundant information. The authors may, e.g., consider Dellago and Hummer, 2013, for guidelines concerning the application of these equations (Dellago, C. and Hummer, G., \u201cComputing Equilibrium Free Energies Using Non-Equilibrium Molecular Dynamics\u201d, Entropy 16.1 (2013): 41-61).\n\nThe discussion of the binding free energy in terms of the number of broken hydrogen bonds is also too vague to be useful. As pointed out by Reviewer #2, the number listed for the hydrogen bond enthalpy seems to be judiciously picked to yield agreement with the calculated binding energy (the reference pointed to in the manuscript lists a slightly different value) and moreover hydrogen bonding energies are known to be rapidly varying functions of bonding geometry. The authors' recent correction of this estimate to reflect an activation energy rather than the binding energy presupposes that the binding is barrierless for the equivalence of these two quantities to be thermodynamically meaningful and that it is necessary to break hydrogen bonds along the reaction coordinate for this estimate to be kinetically meaningful. From the data provided and cited, it is not clear that either of those assumptions is valid.\n\nI want to add to the comments of Reviewer #2 that even the definition of the binding free energy is unclear. Binding equilibria from a bulk phase to a surface have dimensional contributions that require a choice of standard state. Furthermore, does the calculated free energy, fully or partially, include the entropic contribution from a substantial increase in rotational freedom? Probably not, since the time to sample full rotation in the dissociated state has been too small. On the technical side, I wonder how the work was calculated (i.e., which formula was used and implemented), in particular for the cases in which the spring constant was changed with time.\n\nThird, Reviewer #2 points out that the near quantitative agreement of the simulation results with the radius of curvature calculated from Equation 1 seems fortuitous. Is there a reason to believe that the surface tension or enthalpy of fusion for the water model used are the same as in experiment? Can experimental parameters taken from a website (http://www.its.caltech.edu/\u223catomic/snowcrystals/ice/ice.htm) be used to explain the observations of the simulations? Such a validation procedure seems questionable. There are also technical issues with the application of Equation 1 to a molecular simulation system. As discussed previously (Findenegg et al., \u201cFreezing and melting of water confined in silica nanopores\u201d, ChemPhysChem 9.18 (2008): 2651-2659), how exactly the interface and the radius of curvature are calculated is not unique. The implications on the calculated value of the radius would need to be discussed for this quantitative comparison to be meaningful.\n\nFinally, Reviewer #1 asks for further clarification in the paper concerning the ice-growth mode. In the rebuttal, the authors mention: \u201cOur preliminary work using \u2018perfect\u2019 crystals did not grow well, extending the ice front very slowly if at all. We realised this was because one had to effectively wait for a 2 dimensional nucleation event on the prism plane to occur and reach a critical size before the next layer of ice would grow.\u201d The authors should include this explanation in the paper to justify their assumption of a step-growth mode on the prismatic plane.\n",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e525b207-ab0d-494f-bfd8-9504244ff572",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C1",
+      "claim": "Antifreeze proteins (AFPs) protect certain cold-adapted organisms from freezing to death by selectively adsorbing to internal ice crystals and inhibiting ice propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "Antifreeze proteins (AFPs) protect certain cold-adapted organisms from freezing to death by selectively adsorbing to internal ice crystals and inhibiting ice propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about AFP function supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "169f645c-b83c-4f2d-9a19-13f0a29e8f88",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C2",
+      "claim": "The molecular details of AFP adsorption-inhibition is uncertain but is proposed to involve the Gibbs\u2013Thomson effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular details of AFP adsorption-inhibition is uncertain but is proposed to involve the Gibbs\u2013Thomson effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement acknowledges uncertainty while referencing an established theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "38c4542f-6102-4860-b202-4478ec626cf4",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C3",
+      "claim": "The spruce budworm Choristoneura fumiferana AFP binds indirectly to the prism ice face through a linear array of ordered water molecules that are structurally distinct from the ice.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein binds indirectly to the prism ice face through a linear array of ordered water molecules that are structurally distinct from the ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "034bb82d-8b6a-4059-b4ba-929ea1ca0d3c",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C4",
+      "claim": "Mutation of the ice binding surface disrupts water-ordering and abolishes activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the ice binding surface disrupts water-ordering and abolishes activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data of mutant AFP presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "8158d175-d31a-40f0-8de5-b88c6e331fcb",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C5",
+      "claim": "The adsorption of sbwAFP to ice is virtually irreversible.",
+      "claim_type": "EXPLICIT",
+      "source": "The adsorption is virtually irreversible, and we confirm the ice growth inhibition is consistent with the Gibbs\u2013Thomson law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation observations showing the AFP never detaching once bound.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "960a9376-723b-4215-8e94-1ec001e4edfa",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C6",
+      "claim": "The ice growth inhibition by sbwAFP is consistent with the Gibbs\u2013Thomson law.",
+      "claim_type": "EXPLICIT",
+      "source": "The adsorption is virtually irreversible, and we confirm the ice growth inhibition is consistent with the Gibbs\u2013Thomson law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data showing agreement between theoretical and observed ice curvature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "4ce57f0d-fc86-4d50-83bc-2fd4dcf0aa1a",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C7",
+      "claim": "AFPs lower the freezing point and raise the melting point of ice through the Gibbs\u2013Thomson effect.",
+      "claim_type": "EXPLICIT",
+      "source": "By binding to ice, AFPs are thought to both lower the freezing point and raise the melting point of ice through the Gibbs\u2013Thomson effect whereby adsorbed AFPs cause increased micro-curvature of the ice front (Yeh and Feeney, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "1a90bdd8-88e7-4a82-af1a-a47851ee78d2",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C8",
+      "claim": "The thermal hysteresis gap (TH) can range from a few tenths to over 6\u00b0 depending on the specific AFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting difference between the melting and freezing points, known as the thermal hysteresis gap (TH), can range from a few tenths to over 6\u00b0, depending on the specific AFP (Lin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "88d2d1a6-53f8-4bfa-9692-e3256de2b507",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C9",
+      "claim": "Regular hexagonal ice (Ih) has three equivalent a-axes (a1\u2013a3) which are parallel to three respective prism planes and perpendicular to the c-axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Regular hexagonal ice (Ih) has three equivalent a-axes (a1\u2013a3) which are parallel to three respective prism planes and perpendicular to the c-axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ice crystal structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "ec49ca94-37f6-460c-930e-1ce61719a7cc",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C10",
+      "claim": "AFPs have evolved independently numerous times to bind stereo-selectively to ice in various orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably AFPs have evolved independently numerous times to bind stereo-selectively to ice in various orientations, resulting in a structurally diverse protein family (Hew et al., 1985; Ko et al., 2003; Pentelute et al., 2008; Hakim et al., 2013; Middleton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "e2b1e8fa-b33e-46e9-ae51-3d9d7ae7a3a2",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C11",
+      "claim": "Polar fish do not normally experience temperatures much lower than the freezing point of sea water (\u22121.9\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Polar fish, for example, do not normally experience temperatures much lower than the freezing point of sea water (\u22121.9\u00b0C), and have AFPs that provide protection to just a few tenths of a degree below this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about polar fish environmental conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "df89cc72-0d5e-451a-9fb5-a60312a9e4a5",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C12",
+      "claim": "Fish AFPs often bind oblique to ice prism planes, typically forming hexagonal bipyramid crystals at temperatures within the TH gap.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish AFPs often bind oblique to ice prism planes, typically forming hexagonal bipyramid crystals at temperatures within the TH gap which rapidly grow as elongated spicules along the c-axis below the TH gap (Davies and Hew, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "0dc5bbef-724d-4ed2-b3fa-751df5b394fc",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C13",
+      "claim": "Insects are exposed to much lower terrestrial temperatures, often below \u221230\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast insects which are exposed to much lower terrestrial temperatures, (often below \u221230\u00b0C), require AFPs with higher activity, possibly by selecting more effective prism and basal plane binding (Lin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about insect environmental conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "7a53ebaf-7b62-4016-a435-230aff956319",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C14",
+      "claim": "Insects require AFPs with higher activity, possibly by selecting more effective prism and basal plane binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast insects which are exposed to much lower terrestrial temperatures, (often below \u221230\u00b0C), require AFPs with higher activity, possibly by selecting more effective prism and basal plane binding (Lin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and involves speculation about mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "d3a951c0-00d4-4551-9111-915713a04067",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C15",
+      "claim": "Slowly freezing solutions of dilute AFP will incorporate AFPs into the growing ice phase at roughly their original concentration, while non-AFPs and solutes are largely excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Slowly freezing solutions of dilute AFP will incorporate AFPs into the growing ice phase at roughly their original concentration, while non-AFPs and solutes are largely excluded (Marshall et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "eb1268ef-29dc-41cb-b4c4-f7242a91fb2c",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C16",
+      "claim": "Many structural studies have shown a correlation between the periodicity of the ice-binding surface elements of AFPs and their respective ice-binding planes.",
+      "claim_type": "EXPLICIT",
+      "source": "Many structural studies have shown a correlation between the periodicity of the ice-binding surface elements of AFPs and their respective ice-binding planes, though it has not been entirely clear whether AFPs bind directly to ice or through some ordered water intermediate (Sharp, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "e648820f-d217-4a9e-8157-d49d9e5c63c6",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C17",
+      "claim": "It has not been entirely clear whether AFPs bind directly to ice or through some ordered water intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Many structural studies have shown a correlation between the periodicity of the ice-binding surface elements of AFPs and their respective ice-binding planes, though it has not been entirely clear whether AFPs bind directly to ice or through some ordered water intermediate (Sharp, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges uncertainty in the field based on cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "6429f1fd-c802-40f3-9a11-7c3e4c072b1a",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C18",
+      "claim": "The TIP4P water model was used for simulations due to its ability to give realistic phase transformation behavior and superior freezing characteristics compared with the default TIP3P model.",
+      "claim_type": "EXPLICIT",
+      "source": "The TIP4P water model (Jorgensen et al., 1983) was used for simulations due to its ability to give realistic phase transformation behavior and superior freezing characteristics compared with the default TIP3P model, its support by the NAMD software (Phillips et al., 2005), and its compatibility with biological CHARMM parameters (Glass et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "bea33237-f9ab-4961-a2df-35cbb5269381",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C19",
+      "claim": "The melting point (Tm) of the TIP4P water model is 230.5 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the melting point (Tm) of the TIP4P water model is known to be 230.5 K, (Garc\u00eda Fern\u00e1ndez et al., 2006) it is highly unlikely such a water model will spontaneously freeze or remain frozen in simulation, particularly in the few degrees temperature range below Tm where AFPs exhibit their biological activity, due to the equilibrium radius R of the critical ice nucleus governed by the Gibbs\u2013Thomson effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "8054be88-070f-4e4f-a149-7e5897e829a3",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C20",
+      "claim": "The ice/water system employed consisted of 17,434 water molecules in a 51.5 \u00d7 126.6 \u00d7 83.9 \u00c5 box with periodic boundary conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The ice/water system employed here consisted of 17,434 water molecules in a 51.5 \u00d7 126.6 \u00d7 83.9 \u00c5 box with PBCs, of which 1692 water molecules were harmonically constrained to an ideal prism ice lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation system setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "cbf82302-0b81-4b20-8c75-add2984eb280",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C21",
+      "claim": "1692 water molecules were harmonically constrained to an ideal prism ice lattice to serve as the seed crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "The ice/water system employed here consisted of 17,434 water molecules in a 51.5 \u00d7 126.6 \u00d7 83.9 \u00c5 box with PBCs, of which 1692 water molecules were harmonically constrained to an ideal prism ice lattice. This served as the seed crystal while an additional 1049 water molecules below the seed were constrained in a 5 \u00c5 thick disordered layer to act as an ice barrier preventing downward ice growth, leaving a small wedge of mobile water between constrained layers as shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the simulation system setup with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "0d3ff08e-e1c2-4450-b147-acf17b26a3d1",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C22",
+      "claim": "The seed ice crystal was angled approximately 4.3\u00b0 with respect to the long axis to provide a continual ice growth mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The seed ice crystal included an additional small prism step to initiate step layer growth and the entire seed was angled such that the primary prism face was approximately 4.3\u00b0 with respect to the long axis. The angle of the seed is such that step layer growth across the prism face reappears, due to PBCs, one layer higher to where it started, thus providing a continual ice growth mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation system design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "8aa5f386-a2ad-48f8-b395-d05dddb85c41",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C23",
+      "claim": "32 independent, unconstrained simulations of at least 150 nanoseconds to as long as 250 ns duration were carried out at 228 K.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the binding mode of sbwAFP, 32 independent, unconstrained (apart from the waters constrained in the ice seed and ice-barrier) simulations of at least 150 nanoseconds (ns) to as long as 250 ns duration were carried out at 228 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "668574f6-6fe0-4d0f-9004-003245c8012e",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C24",
+      "claim": "Definitive ice binding was observed 26 times with each binding event occurring with equivalent orientation with respect to the ice lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Definitive ice binding was observed 26 times with each binding event occurring with equivalent orientation with respect to the ice lattice, though adsorbing at a number of different step heights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulations performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "052a3926-3fc0-45df-b466-2088560dae30",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C25",
+      "claim": "Each of the definitive ice binding events incorporated a linear array of 6 water molecules bridging between the prism face and a row of conserved threonine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the definitive ice binding events incorporated a linear array of 6 water molecules bridging between the prism face and a row of conserved threonine residues (Thr 7, 23, 39, 54, 69, 84 and 101) as shown in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the simulations with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "c026bf7d-652f-4c74-8e84-dd3708f48093",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C26",
+      "claim": "The sbwAFP-bound water molecules were spaced approximately 4.5 \u00c5 apart, matching the periodicity of the prism face.",
+      "claim_type": "EXPLICIT",
+      "source": "These water molecules had the same periodicity of the prism face, spaced approximately 4.5 \u00c5 apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "a27736eb-3f41-42f2-b8f6-698aa1631c0b",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C27",
+      "claim": "The sbwAFP-bound water molecules were distinct from the bulk ice crystal, bridging between two prism face water molecules parallel along the c-axis which would normally be bridged by two water molecules in regular ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly they were distinct from the bulk ice crystal, bridging between two prism face water molecules parallel along the c-axis which would normally be bridged by two water molecules in regular ice as shown in Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation data with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "6a1db957-84a0-4db7-92ee-02b16dfc3415",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C28",
+      "claim": "The sbwAFP-bound water molecules had fully satisfied tetrahedral hydrogen bonding arrangements with two hydrogen bonds to the prism face ice water molecules and two hydrogen bonds to the hydroxyl groups of adjacent threonine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The sbwAFP-bound water molecules had fully satisfied tetrahedral hydrogen bonding arrangements; two hydrogen bonds to the prism face ice water molecules and two hydrogen bonds to the hydroxyl groups of adjacent threonine residues of the sbwAFP ice binding face.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "851146dc-a389-408f-845b-c43f414bf370",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C29",
+      "claim": "16 independent simulations of a sbwAFP mutant with 4 Thr to Leu substitutions at positions 7, 21, 39, 69 were performed, each of 250 ns length.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate the function of the ordered waters of the ice binding surface 16 independent simulations of a sbwAFP mutant (with 4 Thr to Leu substitutions at positions 7, 21, 39, 69) known to disrupt activity (Graether et al., 2000), were performed, each of 250 ns length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation protocol for mutant studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "578a196a-05fc-4c21-93e1-c0113b001c23",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C30",
+      "claim": "No ice binding events were observed with the mutant sbwAFP, with all mutant AFPs diffusing ahead of the growing ice surface.",
+      "claim_type": "EXPLICIT",
+      "source": "No ice binding events were observed with all mutant AFPs diffusing ahead of the growing ice surface in distinct contrast to the wild type protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the mutant simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "906a0aa8-cdd7-4735-a9d4-6bb24621f071",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C31",
+      "claim": "The Thr to Leu substitutions disrupt the binding of the ordered water to sbwAFP by removing the stabilizing hydroxyl side chain hydrogen bond interactions of the threonine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The Thr to Leu substitutions disrupt the binding of the ordered water to sbwAFP by removing the stabilizing hydroxyl side chain hydrogen bond interactions of the threonine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural differences between threonine and leucine.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "28fd1370-3a11-4dde-b902-d1f53a5a8ef0",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C32",
+      "claim": "Ordered waters are crucial in initiating sbwAFP recognition and binding to ice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate ordered waters are crucial in initiating sbwAFP recognition and binding to ice and are suggestive of longer range protein-water interactions consistent with recent experimental findings by Meinster et al, of a similar beetle AFP from Dendroides canadensis, measured with terahertz spectroscopy (Meister et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation data and supported by citation to experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "18af27fb-4f56-4a0f-abfb-be6de438ac03",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C33",
+      "claim": "Three contiguous \u223c1 \u03bcs MD simulations of sbwAFP adsorbed to an active ice front at temperatures of 225 K, 230 K and 232 K were run.",
+      "claim_type": "EXPLICIT",
+      "source": "Three contiguous \u223c1 \u03bcs MD simulations of sbwAFP adsorbed to an active ice front at temperatures of 225 K, 230 K and 232 K were run to test and simulate the adsorption-inhibition mechanism by observing subsequent ice growth as shown in Figure 7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation protocol for testing adsorption-inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "773442fb-fec7-4935-9eb3-1e6ce3d8bb59",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C34",
+      "claim": "At 225 K, the sbwAFP adsorbed to the ice front within 40 ns and within 150 ns the ice front displayed marked convex curvature creating cylindrical ice fronts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first simulation the sbwAFP adsorbed from the solvent phase to the advancing ice front at 225 K (5 K below the model system Tm). The sbwAFP adsorbed to the ice front within 40 ns and within 150 ns the ice front displayed marked convex curvature creating cylindrical ice fronts as shown in Figure 8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the simulation at 225 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "05da8c9d-5c52-4607-8afe-afbfd2fec99b",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C35",
+      "claim": "By 250 ns at 225 K, the ice front had reached equilibrium with an averaged cylindrical radius of approximately 50 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "By 250 ns the ice front had reached equilibrium with an averaged cylindrical radius of approximately 50 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation at 225 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "be79febe-acaf-48ce-8b65-00ac2f596a11",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C36",
+      "claim": "The ice fraction at 225 K equilibrated at 0.46 \u00b1 0.01 (SD) measured over the 280 to 1000 ns time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "The ice fraction (defined as a proportion of total ice-like water molecules above the ice seed crystal), was measured over the 280 to 1000 ns time frame and found to equilibrate at 0.46 \u00b1 0.01 (SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the simulation at 225 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "e248c9b9-6ed3-4dea-bc38-d74acf744869",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C37",
+      "claim": "AFP-free simulations froze almost completely within 150 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast AFP-free simulations froze almost completely within 150 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control simulation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "b5368429-73a5-414c-bf65-bfa48ad016cd",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C38",
+      "claim": "There is good qualitative agreement between theoretical Gibbs\u2013Thomson curvature and the averaged ice front at 225 K.",
+      "claim_type": "EXPLICIT",
+      "source": "The vacillating nature of the ice front in simulation makes quantitative measurement of the curvature difficult, however we find good qualitative agreement between theoretical Gibbs\u2013Thomson curvature and the averaged ice front as shown in Figure 8 where the theoretical radius is overlaid on to the averaged simulation ice cross-section.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between simulation results and theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "778f2e1d-1cab-4697-b872-b1a13370f554",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C39",
+      "claim": "When the temperature was raised to 230 K, the simulation showed a significant reduction of the ice fraction to an equilibrated value of 0.21 \u00b1 0.02, calculated over the 1100 to 2130 ns time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "When the temperature was raised to 230 K, (the approximate system melting point Tm) the simulation showed a significant reduction of the ice fraction to an equilibrated value of 0.21 \u00b1 0.02, (calculated over the 1100 to 2130 ns time frame) shown in Figure 8B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the simulation at 230 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "e9199125-b91c-4f0e-9603-44fb24af4107",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C40",
+      "claim": "At 230 K, the sbwAFP remained bound to ice, stabilizing an ice protrusion directly beneath the AFP approximately 7 \u00c5 high relative to the main ice front.",
+      "claim_type": "EXPLICIT",
+      "source": "The sbwAFP remained bound to ice, stabilizing an ice protrusion directly beneath the AFP approximately 7 \u00c5 high relative to the main ice front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation at 230 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "9b323434-bb79-4568-b485-937d3e2c02c8",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C41",
+      "claim": "At 232 K, the ice fraction equilibrated to an average of 0.15 \u00b1 0.01 calculated over 2190 to 3160 ns time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "In the final contiguous simulation the temperature was raised to 232 K, (approximately 2 K above the simulation melting point) and showed further reduction in the ice fraction which equilibrated to an average of 0.15 \u00b1 0.01 (calculated over 2190 to 3160 ns time frame).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the simulation at 232 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "55758ad1-8a84-4611-b976-061622efd701",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C42",
+      "claim": "At 232 K, the sbwAFP remained attached to an ice protrusion approximately 8.5 \u00c5 above the main ice plane which developed slight concave curvature with respect to the adsorbed protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The sbwAFP remained attached to the ice protrusion approximately 8.5 \u00c5 above the main ice plane which developed slight concave curvature with respect to the adsorbed protein (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulation at 232 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "1ba9b18a-ca50-4436-8ecf-0270dc517b49",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C43",
+      "claim": "A continuation of the simulation at 235 K resulted in the detachment of the sbwAFP from the ice surface within 10 ns allowing further melting of the ice to a residual fraction of 0.08 \u00b1 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "A continuation of the simulation at 235 K resulted in the detachment of the sbwAFP from the ice surface within 10 ns allowing further melting of the ice to a residual fraction of 0.08 \u00b1 0.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the simulation at 235 K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "092a32a2-deac-4698-8b27-510a3151d39c",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C44",
+      "claim": "The simulations demonstrate the Gibbs\u2013Thomson effect showing how adsorbed protein induces ice-surface curvature and consequent melting and freezing inhibition of ice.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations clearly demonstrate the Gibbs\u2013Thomson effect showing how adsorbed protein induces ice-surface curvature and subsequent melting and freezing inhibition of ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "bf59deb0-24f3-499d-b5b9-80e4d2b7f507",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C45",
+      "claim": "Previous estimations of the binding energy of AFPs to ice have varied greatly in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous estimations of the binding energy of AFPs to ice have varied greatly in the literature. Initial calculations from Cheng and Merz (1997) put the wfAFP binding energy of \u2212157 kcal/mol while Dalal and S\u00f6nnichsen (2000) put the figure at \u221267 kcal/mol. Later estimates by Jorov et al. (2004) and Wierzbicki et al. (2007) both put the figure for wfAFP much lower at below \u22125 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "56ac71ff-cbdb-48e9-96ce-c9ab527e4946",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C46",
+      "claim": "Microfluidic experiments by Celik et al. show that ice growth remains inhibited despite the exchange of the solution surrounding AFP-inhibited ice crystals with AFP-free buffer, suggesting there is little or no exchange of AFPs from the ice surface once bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic experiments by Celik et al. (2013) show that ice growth remains inhibited despite the exchange of the solution surrounding AFP-inhibited ice crystals with AFP-free buffer, suggesting there is little or no exchange of AFPs from the ice surface once bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "bc87cdae-26ea-49c2-a079-b47d35fe78d3",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C47",
+      "claim": "Antarctic notethenoid fishes internally accumulated ice does not melt as expected over summer warming periods.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is further strengthened by recent field observations of Cziko et al. where it was found Antarctic notethenoid fishes internally accumulated ice does not melt as expected over summer warming periods (Cziko et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to field observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "1b3d814d-b0ae-41ad-aed2-6c2aa25e75de",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C48",
+      "claim": "The sbwAFP never detached once bound to ice, apart from deliberate melting events, even over the course of the extended millisecond range simulations at above melting temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our own observations in this study suggest relatively strong binding of a magnitude similar to that proposed by Dalal and S\u00f6nnichsen (2000), with the sbwAFP never detaching once bound to ice, (apart from deliberate melting events), even over the course of the extended millisecond range simulations at above melting temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "a1e33602-3346-444a-99c7-65d0c37df3ef",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C49",
+      "claim": "sbwAFP activity depends on binding and arranging water in a similar periodicity to ice which in turn bind to the prism face of ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations have shown that sbwAFP activity depends on binding and arranging water in a similar periodicity to ice which in turn bind to the prism face of ice, and that the ordered water plays a crucial role in determining ice plane specificity and integrating into the ice lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "a2d55a07-4c0e-43ae-96dd-b5b7bf6fc2e7",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C50",
+      "claim": "Ordered water plays a crucial role in determining ice plane specificity and integrating into the ice lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations have shown that sbwAFP activity depends on binding and arranging water in a similar periodicity to ice which in turn bind to the prism face of ice, and that the ordered water plays a crucial role in determining ice plane specificity and integrating into the ice lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "40e35b2a-ad26-4c59-8258-cb1792261c5a",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C51",
+      "claim": "Nutt and Smith's molecular dynamics simulations of sbwAFP in solution indicated water was more ice-like on its binding face at low temperatures and speculated that this preconfigured water was important for initial recognition and binding events.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is supported by previous work by Nutt and Smith (2008) whose molecular dynamics simulations of sbwAFP in solution indicated water was more ice-like on its binding face at low temperatures and speculated that this preconfigured water was important for initial recognition and binding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "697c03b8-b100-483c-9ea1-345e00f6451a",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C52",
+      "claim": "Recent work by Midya and Bandyopadhyay simulating insect AFP from Tenebrio molitor found equivalent arrangements of bound water molecules emphasizing the importance of the hydroxyl groups of the ice-binding threonine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work by Midya and Bandyopadhyay (2014) simulating insect AFP from Tenebrio molitor with a similar ice binding surface to sbwAFP in water have also found equivalent arrangements of bound water molecules emphasizing the importance of the hydroxyl groups of the ice-binding threonine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "b76f9458-b869-45ff-844e-e3efbf9d13f8",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C53",
+      "claim": "The putative ice-binding threonine residues of the alpha helical wfAFP can be substituted to structurally similar but hydrophobic valine residue with little effect on activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this, as mentioned previously, it is noteworthy that the putative ice-binding threonine residues of the alpha helical wfAFP can be substituted to structurally similar but hydrophobic valine residue with little effect on activity (Haymet et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "df8dcb56-67dc-4d7a-a5d0-1e7eba9d6888",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C54",
+      "claim": "wfAFP ice binding does not depend on the threonine hydroxyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows wfAFP ice binding does not depend on the threonine hydroxyl group, even suggesting a hydrophobic mode of interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited experimental result.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "8498d7fe-6944-4513-adf6-1130c9a76fc5",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C55",
+      "claim": "Many of the solved AFP crystal structures have been found to contain ordered waters which have been postulated to integrate directly into the ice lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the solved AFP crystal structures have been found to contain ordered waters which have been postulated to integrate directly into the ice lattice (Liou et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "1c7dc2d8-7a8f-44e7-9eb8-320c4c650ef1",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C56",
+      "claim": "In the recently determined structure for mpAFP, bound waters exhibited an extensive 'clathrate-like' network that matched ice lattice dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recently determined structure for a highly active bacterial AFP from Marinomonas primiryensis (mpAFP), bound waters exhibited an extensive 'clathrate-like' network that matched ice lattice dimensions (Garnham et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "b0a335ae-5be3-4f23-a5f6-ff1eaf7e5201",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C57",
+      "claim": "mpAFP appears to bind to all ice plane orientations, rather than specific ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike most AFPs, mpAFP appears to bind to all ice plane orientations, rather than specific ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mpAFP properties based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "bc62e2ee-7ad6-46b2-ae5c-e9ee2d32aa4d",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C58",
+      "claim": "mpAFP's binding to all ice plane orientations may result from extended ice-like ordering of water from the ice binding surfaces interacting with ice in non-specific orientations, perhaps in a process similar to ice sintering.",
+      "claim_type": "EXPLICIT",
+      "source": "This may result from extended ice-like ordering of water from the ice binding surfaces interacting with ice in non-specific orientations, perhaps in a process similar to ice sintering (Kuroiwa, 1961).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation with citation to a related phenomenon.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "1ca1d223-c9f8-4364-b8f9-88996e63ca49",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C59",
+      "claim": "Previous AFP simulations have focused on modeling prearranged AFPs at the ice-water interface at equilibrium and have not yet tackled free AFP interacting with an actively growing ice interface.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted in a recent review by Nada and Furukawa (2012), previous AFP simulations have focused on modeling prearranged AFPs at the ice-water interface at equilibrium and have not yet tackled free AFP interacting with an actively growing ice interface which would reveal more mechanisms of the molecular process and be less biased to initial positioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the state of the field with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "51e22fab-b68b-4122-b037-5dc3f65a7a76",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C60",
+      "claim": "The freely diffusing MD simulations of AFP spontaneously adsorbing and inhibiting an active ice surface model have demonstrated that simulations can be used to provide detailed insight into molecular processes like crystal inhibition and modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our freely diffusing MD simulations of AFP spontaneously adsorbing and inhibiting an active ice surface model have demonstrated that simulations can be used to provide detailed insight into molecular processes like crystal inhibition and modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the simulation approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "5a3400dd-389b-4171-845c-5624a33154ec",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C61",
+      "claim": "The simulations presented demonstrate key aspects of the AFP mechanisms: the process of molecular surface recognition and irreversible adsorption inhibition of the ice surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We have presented simulations of the sbwAFP spontaneously interacting with a growing ice surface and demonstrated key aspects of the AFP mechanisms; namely the process of molecular surface recognition and irreversible adsorption inhibition of the ice surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the key findings from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "a583ab2f-6f94-4580-934a-c1f30c3a7151",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C62",
+      "claim": "The Gibbs\u2013Thomson formula agrees closely with the simulated inhibition of the growing ice front.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the Gibbs\u2013Thomson formula agrees closely with the simulated inhibition of the growing ice front, and demonstrated irreversibility of binding by free energy analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing simulation results with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "12ae9067-9a3c-49a1-80f3-533e3f195474",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C63",
+      "claim": "This is one of the first computer simulations to provide a complete in silico demonstration of a protein's biological function.",
+      "claim_type": "EXPLICIT",
+      "source": "This is one of the first computer simulations to provide a complete in silico demonstration of a protein's biological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the work in the context of computational biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "b29b58cb-903f-421e-a068-fe2ba8f86aed",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C64",
+      "claim": "Molecular simulations were performed using NAMD2.9 with CHARM22 forcefield employing a TIP4P water model.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular simulations were performed using NAMD2.9 (Wierzbicki et al., 1997) with CHARM22 (MacKerell et al., 1998) forcefield employing a TIP4P water model supported on both IBM BlueGene/P and BlueGene/Q architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "4a08d27b-5781-49e7-8a2e-9007375faf17",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C65",
+      "claim": "The sbwAFP model was based on the pdb structure 1M8N.",
+      "claim_type": "EXPLICIT",
+      "source": "The sbwAFP model was based on the pdb structure 1M8N (Leinala et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the protein structure used in simulations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "10ca14a7-468e-4488-b3a0-80eccb5c4768",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C66",
+      "claim": "Simulations were run with periodic boundary conditions using the NPT ensemble at various temperatures (225, 228, 230, 232 and 235 K) and 1 bar pressure employing Langevin dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations were run with PBCs using the NPT ensemble at various temperatures (225, 228, 230, 232 and 235 K) and 1 bar pressure employing Langevin dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "4c874fc6-9316-47f4-9487-a41eb27d2a1a",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C67",
+      "claim": "The sbwAFP has a \u03b2-helix structure with a triangular cross-section forming three parallel \u03b2-sheet faces and a hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "SbwAFP has a \u03b2-helix structure with a triangular cross-section forming three parallel \u03b2-sheet faces and a hydrophobic core as shown in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the protein structure with reference to a figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "bb31cd85-6c44-4ddd-8a02-33210e98ce88",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C68",
+      "claim": "The ice binding face of sbwAFP has a regular array of repeating threonine-x-threonine (T-X-T) motifs whereby the spacing between threonine residues match the repeat spacing parallel to the c-axis of ice of approximately 7.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The ice binding face has a regular array of repeating threonine-x-threonine (T-X-T) motifs whereby the spacing between threonine residues match the repeat spacing parallel to the c-axis of ice of approximately 7.4 \u00c5 and motifs on adjacent \u03b2-strands closely match the a-axis repeating dimensions of the prism face of ice of 4.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural features of the ice binding surface.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "bfcb80fa-34de-4ffb-8e33-3b3c846a9250",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C69",
+      "claim": "Motifs on adjacent \u03b2-strands of sbwAFP closely match the a-axis repeating dimensions of the prism face of ice of 4.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The ice binding face has a regular array of repeating threonine-x-threonine (T-X-T) motifs whereby the spacing between threonine residues match the repeat spacing parallel to the c-axis of ice of approximately 7.4 \u00c5 and motifs on adjacent \u03b2-strands closely match the a-axis repeating dimensions of the prism face of ice of 4.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural features of the ice binding surface.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "ad397757-db6c-4e0b-82f3-c168f42319ec",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C70",
+      "claim": "The second row of threonine residues of the ice-binding surface is particularly sensitive to mutation, with replacement of the threonines drastically reducing sbwAFP's potency as an AFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The second row of threonine residues of the ice-binding surface is particularly sensitive to mutation, with replacement of the threonines drastically reducing sbwAFP's potency as an AFP (Graether et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "9617bc71-f18f-48b9-b23b-20591e5d5a04",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C71",
+      "claim": "sbwAFP induces a non-colligative freezing point depression of ice by up to 6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to inducing a non-colligative freezing point depression of ice by up to 6\u00b0C, sbwAFP also demonstrates a significant melting inhibition (super-heating) of ice of up to 0.44\u00b0C (Celik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "70004f2f-cfb0-4f73-b834-67f3ca7d0a17",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C72",
+      "claim": "sbwAFP demonstrates a significant melting inhibition (super-heating) of ice of up to 0.44\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to inducing a non-colligative freezing point depression of ice by up to 6\u00b0C, sbwAFP also demonstrates a significant melting inhibition (super-heating) of ice of up to 0.44\u00b0C (Celik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "6d5f2771-8ffa-4c86-b3ec-008c745998f4",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C73",
+      "claim": "For a single degree of supercooling, assuming spherical geometry, the critical radius of an ice embryo is about 518 \u00c5 containing approximately 18 million water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, assuming spherical geometry, for a single degree of supercooling the critical radius of an ice embryo is about 518 \u00c5 containing approximately 18 million water molecules, which is currently computationally prohibitive to model (see 'Materials and methods' for calculation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the Gibbs-Thomson equation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "b392b1c2-c773-483c-a393-6cfd4b692ec2",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C74",
+      "claim": "Early computational simulations of winter-flounder AFP by Wen and Laursen, Jorgensen et al., and Madura et al. firmly established the correlation of the distance between regularly spaced polar threonine residues and that of water molecules of the ice lattice of the {2021} pyramidal ice plane in the [112] direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Early computational simulations of winter-flounder AFP (wfAFP) by Wen and Laursen (1992); Jorgensen et al. (1993); Madura et al. (1994) firmly established the correlation of the distance between regularly spaced polar threonine residues and that of water molecules of the ice lattice of the {2021} pyramidal ice plane in the [112] direction by searching for energetically stable conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous computational work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "2ec01fde-b93f-4ea5-87da-58221a14c5ab",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C75",
+      "claim": "Knight et al. showed the preferential binding orientation of wfAFP on single crystal ice hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "This was in agreement with previous experimental work of Knight et al which showed the preferential binding orientation of wfAFP on single crystal ice hemisphere (Knight et al., 1991) and also the later work of Sicheri and Yang who determined the wfAFP crystal structure (Sicheri and Yang, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "2db0d212-5455-479c-81f4-2adbcec51f88",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C76",
+      "claim": "Sicheri and Yang determined the wfAFP crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This was in agreement with previous experimental work of Knight et al which showed the preferential binding orientation of wfAFP on single crystal ice hemisphere (Knight et al., 1991) and also the later work of Sicheri and Yang who determined the wfAFP crystal structure (Sicheri and Yang, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "37fd2eb5-5f62-4c1c-be35-8d03c7e85333",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C77",
+      "claim": "Cheng and Merz used molecular dynamics simulations of solvated wfAFP in the bound conformation to the {2021} pyramidal plane to propose key hydrogen bond interactions between polar residues and the ice surface, suggesting that hydrogen bonds were the primary driving force of ice adsorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Cheng and Merz further expanded this work using molecular dynamics simulations of solvated wfAFP in the bound conformation to the {2021} pyramidal plane to propose key hydrogen bond interactions between polar residues and the ice surface, suggesting that hydrogen bonds were the primary driving force of ice adsorption (Cheng and Merz, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous computational work with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "992aea37-d98d-4919-9ded-e96b6e0c9add",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C78",
+      "claim": "Mutational work by the groups of Harding and Laursen raised questions about the nature of the wfAFP-ice interaction; conservative substitution of threonine residues for serine abolished activity, while threonine to valine substitution retained AFP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this model was to be short lived as mutational work by the groups of Harding and Laursen (Zhang and Laursen, 1998; Haymet et al., 1999) raised questions about the nature of the wfAFP-ice interaction; conservative substitution of threonine residues for serine abolished activity, while threonine to valine substitution, which removed the proposed threonine hydroxyl\u2013ice interactions surprisingly retained AFP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental mutational work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "0104ec1f-0bdd-4dfc-a927-b24d24177c2e",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C79",
+      "claim": "Dalal and S\u00f6nnichsen and Jorov et al. employed Monte Carlo simulations of the wfAFP on the pyramidal plane, both groups finding that hydrophobic interactions contributed significantly to the adsorption to ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Spurred by the paradoxical mutant wfAFP results both Dalal and S\u00f6nnichsen (2000) and Jorov et al. (2004) employed Monte Carlo simulations of the wfAFP on the pyramidal plane, both groups finding that hydrophobic interactions contributed significantly to the adsorption to ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous computational work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "251966ee-59e3-4a9f-aa52-26e42ca336f0",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C80",
+      "claim": "Wierzbicki et al. proposed that wfAFP doesn't bind directly to ice but rather accumulates at the ice-water interface with preference for the hydrophobic over the hydrophilic face facing the ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further related work by Wierzbicki et al. (2007) proposed that wfAFP doesn't bind directly to ice but rather accumulates at the ice-water interface with preference for the hydrophobic over the hydrophilic face facing the ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous computational work with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "f8e308bd-58d6-4bbb-aa3e-ae3d191cd6a0",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C81",
+      "claim": "Nada and Furukawa were amongst the first to provide a model of the spruce budworm AFP (sbwAFP) at the prism ice-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Nada and Furukawa (Nada and Furukawa, 2011) were amongst the first to provide a model of the spruce budworm AFP (sbwAFP) at the prism ice-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous computational work with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "0302470a-0d32-4815-9717-2edc48e4a7d8",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C82",
+      "claim": "Using rigid models of sbwAFP, Nada and Furukawa showed that two pre-determined binding conformations were able to affect local ice growth kinetics, inferring that reduced ice growth and induced curvature was indicative freezing point depression consistent of the Gibbs\u2013Thomson effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Using rigid models of sbwAFP they showed that two pre-determined binding conformations were able to affect local ice growth kinetics, inferring that reduced ice growth and induced curvature was indicative freezing point depression consistent of the Gibbs\u2013Thomson effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "c2a3c337-1ae4-4452-a65e-4d54c98f70bb",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C83",
+      "claim": "In real world systems, AFPs bind to an ice-water interface rather than ice crystal planes alone.",
+      "claim_type": "EXPLICIT",
+      "source": "As highlighted by an excellent review by Nada and Furukawa. (Nada and Furukawa, 2012), in real world systems, AFPs bind to an ice-water interface rather than ice crystal planes alone, thus earlier AFP simulations are unable to provide complete mechanistic details of the AFP-ice interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the physical reality of AFP binding with citation to a review.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "83f56fba-d24f-4cc9-9d10-2afaaf7d9c1b",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C84",
+      "claim": "Earlier AFP simulations are unable to provide complete mechanistic details of the AFP-ice interaction because they don't model the ice-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "As highlighted by an excellent review by Nada and Furukawa. (Nada and Furukawa, 2012), in real world systems, AFPs bind to an ice-water interface rather than ice crystal planes alone, thus earlier AFP simulations are unable to provide complete mechanistic details of the AFP-ice interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of previous simulations based on cited review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "db6892d2-002f-4187-b080-0c8c3242045f",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C85",
+      "claim": "Nada and Furukawa point out the need for simulations to target a growing ice-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though a number of AFP studies have simulated ice-water interactions (McDonald et al., 1995; Dalal et al., 2001; Wierzbicki et al., 2007; Nada and Furukawa, 2008), Nada and Furukawa also point out the need for simulations to target a growing ice-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recommendations from a review with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "3419c107-943e-4571-9631-45ae33138a40",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C86",
+      "claim": "Ideally, simulations would allow unconstrained AFPs to migrate from the water phase to interact freely the growing ice-water interface without introducing prior binding orientation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, simulations would allow unconstrained AFPs to migrate from the water phase to interact freely the growing ice-water interface without introducing prior binding orientation bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ideal simulation conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "3d906865-f17b-4dff-8bb5-4968ce995847",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C87",
+      "claim": "The computational requirements to simulate unconstrained AFPs at a growing ice-water interface are significant, and only recently became relatively accessible for researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational requirements to do so are significant, and only recently became relatively accessible for researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about computational limitations and recent advances.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "74bc3209-c46e-497b-8590-119121fe8d75",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "claim_id": "C88",
+      "claim": "The highly active AFP from the spruce budworm, Choristoneura fumiferana, (sbwAFP) provides an excellent model for antifreeze simulations and has been used previously in computational studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly active AFP from the spruce budworm, Choristoneura fumiferana, (sbwAFP) provides an excellent model for antifreeze simulations and has been used previously in computational studies (Nutt and Smith, 2008; Nada and Furukawa, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the suitability of sbwAFP as a model system with citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel ice/water interface simulation system using the TIP4P water model with NAMD2.9 and CHARMM22 forcefield. The system consisted of 17,434 water molecules with 1,692 constrained to form a seed ice crystal angled at 4.3\u00b0 to enable continual ice growth through periodic boundary conditions, addressing the computational challenge that a critical ice nucleus at 1 K supercooling would require ~18 million water molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22, C64-C66, and C73 collectively describe a well-justified methodological approach. The choice of TIP4P water model is appropriately justified by citations (C18-C19), the simulation system design is clearly described with specific parameters (C20-C22, C64-C66), and the computational rationale is explained through Gibbs-Thomson calculations (C73). The angled seed crystal design is an innovative solution to enable continuous ice growth within computational constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "c8801b9c-ee71-4008-b119-6dabb2862c92",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In 32 independent simulations at 228 K, sbwAFP bound to ice in 26 cases with consistent orientation. Each binding event involved a linear array of 6 ordered water molecules spaced ~4.5 \u00c5 apart, bridging between the prism ice face and conserved threonine residues. These water molecules were structurally distinct from bulk ice, forming fully satisfied tetrahedral hydrogen bonding with both ice and threonine hydroxyl groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 describe the primary binding mechanism observed across multiple independent simulations. The high success rate (26/32 binding events) with consistent orientation provides strong statistical support. The structural characterization of the ordered water layer is detailed and specific, with clear geometric parameters. However, the claim would be strengthened by quantitative analysis of binding geometry variability across the 26 events and error estimates on the 4.5 \u00c5 spacing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "d58dc373-f372-42a8-81cc-cab700d90391",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Simulations of a sbwAFP mutant with 4 Thr\u2192Leu substitutions (positions 7, 21, 39, 69) showed complete loss of ice binding in all 16 independent 250 ns simulations. The authors conclude that ordered water molecules are crucial for sbwAFP ice recognition and binding, as the mutations remove stabilizing hydroxyl-water hydrogen bond interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 provide strong functional validation of the ordered water mechanism through loss-of-function mutagenesis. The complete absence of binding (0/16) contrasts sharply with wild-type (26/32), and the mutant design specifically tests the hydroxyl interaction hypothesis. The interpretation (C31-C32) is mechanistically sound and consistent with the structural observations. This result is strengthened by citation to prior experimental work (C29, Graether et al. 2000) showing these mutations disrupt activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "At 225 K (5 K below Tm), sbwAFP adsorbed to ice within 40 ns and induced marked convex curvature with cylindrical radius ~50 \u00c5 by 250 ns. The ice fraction equilibrated at 0.46 \u00b1 0.01 over 280-1000 ns, while AFP-free controls froze completely within 150 ns. The observed curvature showed good qualitative agreement with theoretical Gibbs-Thomson predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 demonstrate ice growth inhibition through the Gibbs-Thomson mechanism. The quantitative measurements (C35-C36) with error estimates and appropriate control (C37) provide rigorous evidence. The comparison to theory (C38) is appropriately qualified as 'qualitative' given the acknowledged difficulty in quantitative curvature measurement due to ice front fluctuations. The microsecond timescale simulation provides adequate sampling for equilibration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "9c05f71a-d034-4bdd-9550-14e871bfcd77",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Temperature-dependent simulations showed progressive ice melting as temperature increased: at 230 K (\u2248Tm), ice fraction decreased to 0.21 \u00b1 0.02 with sbwAFP stabilizing a 7 \u00c5 ice protrusion; at 232 K (+2 K above Tm), ice fraction further decreased to 0.15 \u00b1 0.01 with an 8.5 \u00c5 protrusion showing slight concave curvature; at 235 K, sbwAFP detached within 10 ns and ice fraction dropped to 0.08 \u00b1 0.01.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 demonstrate temperature-dependent behavior consistent with thermal hysteresis and melting inhibition. The progressive decrease in ice fraction with increasing temperature is well-quantified with error estimates. The observation that AFP remains bound above the melting point (C40, C42) until 235 K (C43) provides evidence for the 'superheating' phenomenon. The contiguous nature of these simulations (continuing from the same system) is appropriate for studying temperature effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "e89ce7e4-0fbd-42e8-afb6-24f22fa98d04",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The simulations demonstrate that sbwAFP binding to ice is virtually irreversible, with the protein never detaching once bound (except during deliberate melting at 235 K) even over millisecond-range simulations at above-melting temperatures. The authors conclude this demonstrates the Gibbs-Thomson effect and that ice growth inhibition agrees closely with theoretical predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44, C48, and C62 are well-supported by the extended simulation data showing no spontaneous unbinding events across multiple microsecond simulations until extreme conditions (235 K). The irreversibility observation is consistent with cited experimental evidence (C46-C47). However, the claim of 'close agreement' with Gibbs-Thomson theory (C62) is somewhat overstated given that C38 acknowledges only 'qualitative agreement' due to measurement difficulties. The binding energy magnitude remains unquantified, which the authors acknowledge as future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that sbwAFP binds indirectly to the prism ice face through ordered water molecules that are structurally distinct from ice, and that these ordered waters are crucial for ice plane specificity and integration into the ice lattice. Mutation of the ice binding surface disrupts water ordering and abolishes activity, confirming the mechanism. The simulations demonstrate ice growth inhibition consistent with the Gibbs-Thomson law.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C6, C49-C50, and C61 represent the main conclusions synthesized from the simulation results. These are well-supported by the convergent evidence from binding characterization (C23-C28), mutational analysis (C29-C32), and temperature-dependent inhibition studies (C33-C43). The indirect binding mechanism through ordered water is a novel finding that resolves prior uncertainty in the field (C17). The conclusions appropriately integrate structural, functional, and thermodynamic observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "19f9cde8-db15-4832-a708-7ec8bc17afc3",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior work shows conflicting estimates of AFP-ice binding energy ranging from -157 to below -5 kcal/mol. However, experimental evidence from microfluidic studies (Celik et al. 2013) and field observations of Antarctic fish (Cziko et al. 2014) suggests binding is strong and virtually irreversible with little exchange of AFP from ice surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 accurately summarize prior literature with appropriate citations. This contextualizes the current work's observations of irreversible binding. The authors correctly identify the discrepancy between low binding energy estimates and experimental observations of irreversibility, though they defer quantitative binding energy calculations to future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "df7d1e37-bf2b-46aa-a22b-7a5ce8f392e8",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior computational and structural studies support the role of ordered water in AFP function. Nutt and Smith (2008) found water was more ice-like on sbwAFP's binding face at low temperatures; Midya and Bandyopadhyay (2014) found similar water arrangements for Tenebrio molitor AFP; and crystal structures of various AFPs contain ordered waters postulated to integrate into ice, including mpAFP which shows extensive clathrate-like water networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C55-C56 appropriately cite prior work that supports the ordered water mechanism. These citations strengthen the current findings by showing consistency with previous observations. The references span both computational and experimental structural studies, providing convergent support from multiple methodologies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "b7cef641-2d74-46e5-ab6f-a248ec3317e8",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In contrast to sbwAFP, the alpha-helical winter flounder AFP (wfAFP) retains activity when ice-binding threonine residues are substituted with hydrophobic valine, suggesting wfAFP ice binding does not depend on threonine hydroxyl groups and may involve hydrophobic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 accurately cite experimental work (Haymet et al. 1999) showing different AFPs may use different binding mechanisms. The authors appropriately caution against over-interpreting comparisons between structurally distinct AFP families and call for further characterization before drawing conclusions. This demonstrates appropriate scientific restraint.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "c248421d-57a0-432e-b254-2a3c366b7f24",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous AFP simulations modeled pre-arranged proteins at equilibrium ice-water interfaces and lacked actively growing ice fronts, limiting mechanistic insights. The current work addresses this gap by simulating freely diffusing AFP spontaneously adsorbing to a growing ice interface without orientation bias, representing one of the first complete in silico demonstrations of a protein's biological function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C63, C83-C86 appropriately contextualize the methodological advance of this work relative to prior simulations. The criticism of prior work is fair and well-cited (Nada and Furukawa 2012). The claim of being 'one of the first' complete functional demonstrations (C63) is reasonable given the unbiased binding, mechanism characterization, and functional validation shown. However, 'complete' may be somewhat overstated as binding energetics remain unquantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "610320b2-90e1-418c-a2db-c786578488a0",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that AFPs protect cold-adapted organisms by binding to ice and inhibiting growth through the Gibbs-Thomson effect, creating thermal hysteresis gaps ranging from tenths to over 6\u00b0C. AFPs have evolved independently multiple times to bind stereo-selectively to various ice planes, with activity levels adapted to environmental temperatures. The molecular mechanism of binding (direct vs. through ordered water) has been uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C17 provide appropriate background context supported by established knowledge and citations. These claims accurately represent the state of the field and identify the key uncertainty (C17) that the current work addresses. The background appropriately distinguishes between fish and insect AFPs and their different environmental requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The spruce budworm AFP (sbwAFP) has a \u03b2-helix structure with triangular cross-section and a regular array of threonine-x-threonine motifs on its ice-binding face. The threonine spacing matches ice lattice dimensions (7.4 \u00c5 along c-axis, 4.5 \u00c5 along a-axis). The second threonine row is particularly sensitive to mutation. sbwAFP induces up to 6\u00b0C freezing point depression and 0.44\u00b0C melting inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 accurately describe sbwAFP structure and properties based on established knowledge and appropriate citations (Graether et al. 2000, Celik et al. 2010). The structural match between threonine spacing and ice lattice dimensions provides the rationale for studying this protein. These are well-established facts that contextualize the simulation work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior computational studies of winter flounder AFP established correlations between threonine spacing and ice lattice dimensions, initially proposing hydrogen bonding as the primary binding force. However, paradoxical mutational results led to revised models emphasizing hydrophobic interactions or ice-water interface accumulation. Nada and Furukawa (2011) were among the first to model sbwAFP at the prism ice-water interface, showing two binding conformations could affect ice growth kinetics consistent with Gibbs-Thomson effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C82 provide an accurate historical overview of AFP computational studies with appropriate citations. The summary correctly traces the evolution of mechanistic understanding from hydrogen bonding models to more complex views incorporating hydrophobic effects. This contextualizes how the field has grappled with the binding mechanism question and positions the current work as advancing beyond prior limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "ad51d5c9-b32d-49d1-9a74-bc369b34f74c",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Unlike most AFPs, the bacterial mpAFP binds to all ice plane orientations rather than specific ones, possibly through extended ice-like water ordering interacting with ice in non-specific orientations in a process similar to ice sintering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 states an established property of mpAFP, but C58 is explicitly speculative ('may result from'). While the speculation is reasonable given the clathrate-like water network mentioned in C56, it lacks direct supporting evidence. The citation to ice sintering (Kuroiwa 1961) provides a conceptual analogy but not mechanistic validation. This remains an interesting hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    },
+    {
+      "id": "94384446-e481-4f6e-b4b6-c228551e3aa6",
+      "content_id": "9a66c364-90d6-4dc5-931c-eee373359f77",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The computational requirements to simulate unconstrained AFPs at growing ice-water interfaces are significant and only recently became accessible. The spruce budworm AFP provides an excellent model system and has been used in previous computational studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 appropriately contextualize the computational feasibility and choice of model system. The statement about recent accessibility of computational resources is reasonable given the microsecond-scale simulations performed. The choice of sbwAFP is well-justified by prior use in computational studies (citations provided) and its well-characterized properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:53:20.310765Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6429f1fd-c802-40f3-9a11-7c3e4c072b1a",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "bea33237-f9ab-4961-a2df-35cbb5269381",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "8054be88-070f-4e4f-a149-7e5897e829a3",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "cbf82302-0b81-4b20-8c75-add2984eb280",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "0d3ff08e-e1c2-4450-b147-acf17b26a3d1",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "b29b58cb-903f-421e-a068-fe2ba8f86aed",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "4a08d27b-5781-49e7-8a2e-9007375faf17",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "10ca14a7-468e-4488-b3a0-80eccb5c4768",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "6d5f2771-8ffa-4c86-b3ec-008c745998f4",
+      "result_id": "7e9683eb-4b89-44fd-a2eb-fb562fc67f6e"
+    },
+    {
+      "claim_id": "8aa5f386-a2ad-48f8-b395-d05dddb85c41",
+      "result_id": "c8801b9c-ee71-4008-b119-6dabb2862c92"
+    },
+    {
+      "claim_id": "668574f6-6fe0-4d0f-9004-003245c8012e",
+      "result_id": "c8801b9c-ee71-4008-b119-6dabb2862c92"
+    },
+    {
+      "claim_id": "052a3926-3fc0-45df-b466-2088560dae30",
+      "result_id": "c8801b9c-ee71-4008-b119-6dabb2862c92"
+    },
+    {
+      "claim_id": "c026bf7d-652f-4c74-8e84-dd3708f48093",
+      "result_id": "c8801b9c-ee71-4008-b119-6dabb2862c92"
+    },
+    {
+      "claim_id": "a27736eb-3f41-42f2-b8f6-698aa1631c0b",
+      "result_id": "c8801b9c-ee71-4008-b119-6dabb2862c92"
+    },
+    {
+      "claim_id": "6a1db957-84a0-4db7-92ee-02b16dfc3415",
+      "result_id": "c8801b9c-ee71-4008-b119-6dabb2862c92"
+    },
+    {
+      "claim_id": "851146dc-a389-408f-845b-c43f414bf370",
+      "result_id": "d58dc373-f372-42a8-81cc-cab700d90391"
+    },
+    {
+      "claim_id": "578a196a-05fc-4c21-93e1-c0113b001c23",
+      "result_id": "d58dc373-f372-42a8-81cc-cab700d90391"
+    },
+    {
+      "claim_id": "906a0aa8-cdd7-4735-a9d4-6bb24621f071",
+      "result_id": "d58dc373-f372-42a8-81cc-cab700d90391"
+    },
+    {
+      "claim_id": "28fd1370-3a11-4dde-b902-d1f53a5a8ef0",
+      "result_id": "d58dc373-f372-42a8-81cc-cab700d90391"
+    },
+    {
+      "claim_id": "18af27fb-4f56-4a0f-abfb-be6de438ac03",
+      "result_id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4"
+    },
+    {
+      "claim_id": "773442fb-fec7-4935-9eb3-1e6ce3d8bb59",
+      "result_id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4"
+    },
+    {
+      "claim_id": "05da8c9d-5c52-4607-8afe-afbfd2fec99b",
+      "result_id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4"
+    },
+    {
+      "claim_id": "be79febe-acaf-48ce-8b65-00ac2f596a11",
+      "result_id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4"
+    },
+    {
+      "claim_id": "e248c9b9-6ed3-4dea-bc38-d74acf744869",
+      "result_id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4"
+    },
+    {
+      "claim_id": "b5368429-73a5-414c-bf65-bfa48ad016cd",
+      "result_id": "4ed7f8fa-e4cd-4e94-ae66-bafe0090a8d4"
+    },
+    {
+      "claim_id": "778f2e1d-1cab-4697-b872-b1a13370f554",
+      "result_id": "9c05f71a-d034-4bdd-9550-14e871bfcd77"
+    },
+    {
+      "claim_id": "e9199125-b91c-4f0e-9603-44fb24af4107",
+      "result_id": "9c05f71a-d034-4bdd-9550-14e871bfcd77"
+    },
+    {
+      "claim_id": "9b323434-bb79-4568-b485-937d3e2c02c8",
+      "result_id": "9c05f71a-d034-4bdd-9550-14e871bfcd77"
+    },
+    {
+      "claim_id": "55758ad1-8a84-4611-b976-061622efd701",
+      "result_id": "9c05f71a-d034-4bdd-9550-14e871bfcd77"
+    },
+    {
+      "claim_id": "1ba9b18a-ca50-4436-8ecf-0270dc517b49",
+      "result_id": "9c05f71a-d034-4bdd-9550-14e871bfcd77"
+    },
+    {
+      "claim_id": "8158d175-d31a-40f0-8de5-b88c6e331fcb",
+      "result_id": "e89ce7e4-0fbd-42e8-afb6-24f22fa98d04"
+    },
+    {
+      "claim_id": "092a32a2-deac-4698-8b27-510a3151d39c",
+      "result_id": "e89ce7e4-0fbd-42e8-afb6-24f22fa98d04"
+    },
+    {
+      "claim_id": "1b3d814d-b0ae-41ad-aed2-6c2aa25e75de",
+      "result_id": "e89ce7e4-0fbd-42e8-afb6-24f22fa98d04"
+    },
+    {
+      "claim_id": "a583ab2f-6f94-4580-934a-c1f30c3a7151",
+      "result_id": "e89ce7e4-0fbd-42e8-afb6-24f22fa98d04"
+    },
+    {
+      "claim_id": "38c4542f-6102-4860-b202-4478ec626cf4",
+      "result_id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593"
+    },
+    {
+      "claim_id": "034bb82d-8b6a-4059-b4ba-929ea1ca0d3c",
+      "result_id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593"
+    },
+    {
+      "claim_id": "960a9376-723b-4215-8e94-1ec001e4edfa",
+      "result_id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593"
+    },
+    {
+      "claim_id": "a1e33602-3346-444a-99c7-65d0c37df3ef",
+      "result_id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593"
+    },
+    {
+      "claim_id": "a2d55a07-4c0e-43ae-96dd-b5b7bf6fc2e7",
+      "result_id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593"
+    },
+    {
+      "claim_id": "5a3400dd-389b-4171-845c-5624a33154ec",
+      "result_id": "c1c3cfdc-fbdb-4aad-9bf5-ff992dec0593"
+    },
+    {
+      "claim_id": "bf59deb0-24f3-499d-b5b9-80e4d2b7f507",
+      "result_id": "19f9cde8-db15-4832-a708-7ec8bc17afc3"
+    },
+    {
+      "claim_id": "56ac71ff-cbdb-48e9-96ce-c9ab527e4946",
+      "result_id": "19f9cde8-db15-4832-a708-7ec8bc17afc3"
+    },
+    {
+      "claim_id": "bc87cdae-26ea-49c2-a079-b47d35fe78d3",
+      "result_id": "19f9cde8-db15-4832-a708-7ec8bc17afc3"
+    },
+    {
+      "claim_id": "40e35b2a-ad26-4c59-8258-cb1792261c5a",
+      "result_id": "df7d1e37-bf2b-46aa-a22b-7a5ce8f392e8"
+    },
+    {
+      "claim_id": "697c03b8-b100-483c-9ea1-345e00f6451a",
+      "result_id": "df7d1e37-bf2b-46aa-a22b-7a5ce8f392e8"
+    },
+    {
+      "claim_id": "8498d7fe-6944-4513-adf6-1130c9a76fc5",
+      "result_id": "df7d1e37-bf2b-46aa-a22b-7a5ce8f392e8"
+    },
+    {
+      "claim_id": "1c7dc2d8-7a8f-44e7-9eb8-320c4c650ef1",
+      "result_id": "df7d1e37-bf2b-46aa-a22b-7a5ce8f392e8"
+    },
+    {
+      "claim_id": "b76f9458-b869-45ff-844e-e3efbf9d13f8",
+      "result_id": "b7cef641-2d74-46e5-ab6f-a248ec3317e8"
+    },
+    {
+      "claim_id": "df8dcb56-67dc-4d7a-a5d0-1e7eba9d6888",
+      "result_id": "b7cef641-2d74-46e5-ab6f-a248ec3317e8"
+    },
+    {
+      "claim_id": "1ca1d223-c9f8-4364-b8f9-88996e63ca49",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "51e22fab-b68b-4122-b037-5dc3f65a7a76",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "12ae9067-9a3c-49a1-80f3-533e3f195474",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "c2a3c337-1ae4-4452-a65e-4d54c98f70bb",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "83f56fba-d24f-4cc9-9d10-2afaaf7d9c1b",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "db6892d2-002f-4187-b080-0c8c3242045f",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "3419c107-943e-4571-9631-45ae33138a40",
+      "result_id": "c248421d-57a0-432e-b254-2a3c366b7f24"
+    },
+    {
+      "claim_id": "e525b207-ab0d-494f-bfd8-9504244ff572",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "169f645c-b83c-4f2d-9a19-13f0a29e8f88",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "4ce57f0d-fc86-4d50-83bc-2fd4dcf0aa1a",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "1a90bdd8-88e7-4a82-af1a-a47851ee78d2",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "88d2d1a6-53f8-4bfa-9692-e3256de2b507",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "ec49ca94-37f6-460c-930e-1ce61719a7cc",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "e2b1e8fa-b33e-46e9-ae51-3d9d7ae7a3a2",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "df89cc72-0d5e-451a-9fb5-a60312a9e4a5",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "0dc5bbef-724d-4ed2-b3fa-751df5b394fc",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "7a53ebaf-7b62-4016-a435-230aff956319",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "d3a951c0-00d4-4551-9111-915713a04067",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "eb1268ef-29dc-41cb-b4c4-f7242a91fb2c",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "e648820f-d217-4a9e-8157-d49d9e5c63c6",
+      "result_id": "610320b2-90e1-418c-a2db-c786578488a0"
+    },
+    {
+      "claim_id": "4c874fc6-9316-47f4-9487-a41eb27d2a1a",
+      "result_id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070"
+    },
+    {
+      "claim_id": "bb31cd85-6c44-4ddd-8a02-33210e98ce88",
+      "result_id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070"
+    },
+    {
+      "claim_id": "bfcb80fa-34de-4ffb-8e33-3b3c846a9250",
+      "result_id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070"
+    },
+    {
+      "claim_id": "ad397757-db6c-4e0b-82f3-c168f42319ec",
+      "result_id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070"
+    },
+    {
+      "claim_id": "9617bc71-f18f-48b9-b23b-20591e5d5a04",
+      "result_id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070"
+    },
+    {
+      "claim_id": "70004f2f-cfb0-4f73-b834-67f3ca7d0a17",
+      "result_id": "2d6dd47c-0682-4fe7-a5be-0578a18b3070"
+    },
+    {
+      "claim_id": "b392b1c2-c773-483c-a393-6cfd4b692ec2",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "2ec01fde-b93f-4ea5-87da-58221a14c5ab",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "2db0d212-5455-479c-81f4-2adbcec51f88",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "37fd2eb5-5f62-4c1c-be35-8d03c7e85333",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "992aea37-d98d-4919-9ded-e96b6e0c9add",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "0104ec1f-0bdd-4dfc-a927-b24d24177c2e",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "251966ee-59e3-4a9f-aa52-26e42ca336f0",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "f8e308bd-58d6-4bbb-aa3e-ae3d191cd6a0",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "0302470a-0d32-4815-9717-2edc48e4a7d8",
+      "result_id": "8ffbc69e-ae12-42f2-a567-31d8df0e3135"
+    },
+    {
+      "claim_id": "b0a335ae-5be3-4f23-a5f6-ff1eaf7e5201",
+      "result_id": "ad51d5c9-b32d-49d1-9a74-bc369b34f74c"
+    },
+    {
+      "claim_id": "bc62e2ee-7ad6-46b2-ae5c-e9ee2d32aa4d",
+      "result_id": "ad51d5c9-b32d-49d1-9a74-bc369b34f74c"
+    },
+    {
+      "claim_id": "3d906865-f17b-4dff-8bb5-4968ce995847",
+      "result_id": "94384446-e481-4f6e-b4b6-c228551e3aa6"
+    },
+    {
+      "claim_id": "74bc3209-c46e-497b-8590-119121fe8d75",
+      "result_id": "94384446-e481-4f6e-b4b6-c228551e3aa6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2281 @@
+{
+  "submission": {
+    "id": "308ba5d6-14bb-4a8a-9097-d2bddb83ac0c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:28:55.466001Z",
+    "updated_at": "2025-11-29T04:28:55.466001Z"
+  },
+  "content": [
+    {
+      "id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "submission_id": "308ba5d6-14bb-4a8a-9097-d2bddb83ac0c",
+      "content_type": "manuscript",
+      "content_text": "# LXRs link metabolism to inflammation through Abca1-dependent regulation of membrane composition and TLR signaling\n\n## Authors\n\n- Ayaka Ito<sup>1</sup>\n- Cynthia Hong<sup>1</sup>\n- Xin Rong<sup>1</sup>\n- Xuewei Zhu<sup>2</sup>\n- Elizabeth J Tarling<sup>4</sup>\n- Per Niklas Hedde<sup>5</sup>\n- Enrico Gratton<sup>5</sup>\n- John Parks<sup>2</sup>\n- Peter Tontonoz<sup>6</sup> ([ORCID: 0000-0003-1259-0477](https://orcid.org/0000-0003-1259-0477)) \u2020\n\n### Affiliations\n\n1. Department of Pathology and Laboratory Medicine Howard Hughes Medical Institute, University of California, Los Angeles Los Angeles United States\n2. Department of Internal Medicine-Section on Molecular Medicine Wake Forest School of Medicine Winston-Salem United States\n3. Department of Biochemistry Wake Forest School of Medicine Winston-Salem United States\n4. Department of Medicine University of California, Los Angeles Los Angeles United States\n5. Laboratory of Fluorescence Dynamics, Biomedical Engineering Department, Center for Complex Biological Systems University of California, Irvine Irvine United States\n6. Howard Hughes Medical Institute, University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe liver X receptors (LXRs) are transcriptional regulators of lipid homeostasis that also have potent anti-inflammatory effects. The molecular basis for their anti-inflammatory effects is incompletely understood, but has been proposed to involve the indirect tethering of LXRs to inflammatory gene promoters. Here we demonstrate that the ability of LXRs to repress inflammatory gene expression in cells and mice derives primarily from their ability to regulate lipid metabolism through transcriptional activation and can occur in the absence of SUMOylation. Moreover, we identify the putative lipid transporter Abca1 as a critical mediator of LXR's anti-inflammatory effects. Activation of LXR inhibits signaling from TLRs 2, 4 and 9 to their downstream NF-\u03baB and MAPK effectors through Abca1-dependent changes in membrane lipid organization that disrupt the recruitment of MyD88 and TRAF6. These data suggest that a common mechanism-direct transcriptional activation-underlies the dual biological functions of LXRs in metabolism and inflammation.\n\n## Introduction\n\nThe liver X receptors (LXRs) are members of the nuclear receptor superfamily that play pivotal roles in sterol homeostasis in mammals. LXRs control the expression of a battery of genes involved in cholesterol, fatty acid and phospholipid metabolism through direct binding to LXR response elements (LXREs) in their target promoters (Calkin and Tontonoz, 2012; Hong and Tontonoz, 2014). In addition to their ability to activate the expression of genes linked to lipid metabolism, LXRs also have the ability to antagonize inflammatory gene expression triggered by Toll-like receptor (TLR) activation (Joseph et al., 2003, 2004; Castrillo et al., 2003a). LXRs are not known to act as direct ligand-dependent repressors, that is, there is no well-documented example of LXR/RXR heterodimers binding to an LXRE in a gene promoter and repressing transcription in response to ligand. Rather, they have been proposed to act on inflammatory promoters through mechanisms that do not involve DNA-binding domain recognition of LXREs.\n\nOne proposed mechanism, termed \u2018transrepression\u2019, postulates that LXRs become SUMOylated in response to LXR agonist and that this SUMOylated LXR monomer stabilizes repressive nuclear complexes on the promoters of inflammatory genes. Key features of this model include the requirement for receptor SUMOylation, the involvement of an LXR monomer, and the mechanistic separation of the transcriptional activation and repression functions of LXRs (Ghisletti et al., 2007; Lee et al., 2009; Venteclef et al., 2010). Although several lines of evidence have supported the transrepression model, the requirement for receptor SUMOylation in the repressive actions of LXRs on inflammatory genes in cells and animals remains to be tested. The potential involvement of additional or alternative mechanisms has also not been excluded.\n\nWe demonstrate here that the ability of LXRs to antagonize endogenous inflammatory gene expression in cultured cells and in vivo is a consequence of changes in cellular lipid metabolism. We show that the ability of LXRs to activate transcription of the Abca1 sterol transporter, and thereby alter membrane cholesterol homeostasis, has a secondary effect on inflammatory signaling through inhibition of NF-\u03baB and MAPK signaling pathways downstream of TLRs. These data present a unified view of LXR-dependent gene regulation in which direct transcriptional activation underlies the dual biological functions of LXRs in metabolism and inflammation. They further emphasize the importance of local membrane composition in the activation of TLR signaling pathways.\n\n## Results\n\n### Gene activation is required for inflammatory repression by LXRs\n\nLXRs activate gene expression as heterodimers with RXRs. Previous studies have proposed that LXRs \u2018transrepress\u2019 inflammatory gene expression by acting as a monomer (Ghisletti et al., 2007; Lee et al., 2009; Venteclef et al., 2010). Unexpectedly, we found that siRNA-mediated knockdown of RXR\u03b1 and RXR\u03b2 in primary mouse macrophages blunted the ability of LXR agonist to repress the LPS-induced expression of the endogenous inflammatory genes Nos2, Il1\u03b2, Ccl2, Cxcl1, Tnf\u03b1, Cox2 and Il6 (Figure 1A and Figure 1\u2014figure supplement 1A,B). This observation suggested that LXR was acting to repress inflammation as a heterodimer with RXR in our system. We therefore explored alternative mechanisms for the repressive effects of LXR on inflammatory gene expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig1-v2.jpg)\n\n**Figure 1.:** (A) Bone marrow-derived macrophages from wild-type mice were transfected with siRNA targeting RXR\u03b1 and RXR\u03b2 (siRXR\u03b1\u03b2 or control (siCtrl) for 48 hr, pretreated with GW3965 (1 \u00b5M) overnight, and then stimulated with LPS (10 ng/ml) for 4 hr. (B) Immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1, AF1-deletion mutant (\u2206AF1), DNA-binding domain deletion mutant (\u2206DBD), ligand-binging domain deletion mutant (\u2206LBD), AF2-deletion mutant (\u2206AF2) or control mock were pretreated with the LXR agonist GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. (C) Immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1, L439A/E441A mutant or control mock were pretreated with the LXR agonist GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Bone marrow-derived macrophages from wild-type mice were transfected with siRNA targeting RXR\u03b1 and RXR\u03b2 (siRXR\u03b1\u03b2 or control (siCtrl) for 48 hr, pretreated with GW3965 (1 \u00b5M) overnight, and then stimulated with vehicle or LPS (10 ng/ml) for 4 hr as indicated. Gene expression was analyzed by real-time PCR. N = 4 per group. (C) Immunoblot analysis of LXR\u03b1 and LXR\u03b2 protein in HepG2 cells treated with vehicle or GW3965 (2 \u00b5M) overnight and immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1, human LXR\u03b2 or control mock. (D) Immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1 and LXR\u03b2 were treated with the LXR agonist GW3965 (1 \u00b5M) overnight. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM. (E) Immunoblot analysis of LXR proteins in immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXRs or indicated mutants. Note, the epitope recognized by the LXR\u03b1 antibody is in the DBD and that recognized by the LXR\u03b2 antibody is in the AF-1 domain. Therefore, these respective deletion mutants are not detected.\n\nTo test the structural requirements for LXR-dependent repression of endogenous inflammatory genes, we stably reconstituted immortalized mouse embryonic fibroblasts (MEFs) and immortalized primary bone marrow-derived macrophages (iBMDM) from mice lacking LXR\u03b1 and LXR\u03b2 with wild-type and mutant LXRs (Figure 1, Figure 1\u2014figure supplement 1). The synthetic LXR agonist GW3965 did not induce the canonical LXR target gene Abca1, nor did it repress LPS-induced inflammatory gene expression, in LXR-deficient MEFs or macrophages (Figures 1B,C, 2A,B) (Castrillo et al., 2003a, 2003b; Joseph et al., 2004). However, when LXR-deficient cells were reconstituted with wild-type LXR\u03b1, GW3965 treatment simultaneously induced Abca1 expression and repressed LPS-induced inflammatory gene expression (Ccl2 and Cxcl1) (Figure 1B,C). These results establish that both the activating and repressive effects of GW3965 under our experimental conditions are entirely mediated by LXRs. This is important to emphasize because many synthetic LXR agonists, including GW3965 and T0901317, can exhibit LXR-independent effects on gene expression, especially when used at concentrations higher than employed here. It is also important to note that this approach does not involve supraphysiologic overexpression of LXRs, as the level of reconstituted protein expression in these cells was within the physiologic range and restored target gene expression to physiologic levels (Figure 1\u2014figure supplement 1C,D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig2-v2.jpg)\n\n**Figure 2.:** (A) Immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1, sumoylation site mutants (K328R/K434R (KK), K328R, K434R), wild-type human LXR\u03b2, sumoylation site mutants (K410R/K448R (KK), K410R, K448R), or mock control were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. (B, C) Immortalized bone marrow-derived macrophages from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1, K328R/K434R (KK) mutant, L439A/E441A mutant, or mock control were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR (B) and Agilent microarrays (C). Selected genes that are annotated with the \u2018Immune system process\u2019 GO term from the array studies are presented as a heatmap (\u2267 twofold change). N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Immortalized bone marrow-derived macrophages from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1 K328R/K434R mutant (KK), LXR\u03b1 L439A/E441A mutant, or mock control were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR. N = 4 per group. (B) Immortalized MEFs from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 mice reconstituted with wild-type human LXR\u03b1, K328R/K434R mutant (KK), K180R mutant, K177R/K178R/K180R mutant (3 KR) or control mock were pretreated with the LXR agonist GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Immortalized bone marrow-derived macrophages were transduced with control siRNA or siRNA targeting Ubc9 or Hdac4 as indicated. (A) Validation of mRNA knockdown for Ubc9 or Hdac4. (B) Regulation of inflammatory gene expression by LXR agonists in presence or absence of Ubc9 or Hdac4. N = 4 per group. *p < 0.05, **p < 0.01. Error bars represent means \u00b1 SEM.\n\nTo identify the domains important for LXR-dependent repression, we reconstituted LXR-deficient cells with various domain-deletion mutants of LXR. Agonist treatment induced Abca1 and repressed the levels of Ccl2 and Cxcl1 in AF1-deletion mutant cells. However, both the activation and repression activities of LXR were completely abolished in DNA binding domain- (DBD), ligand binding domain- (LBD) or AF2-deletion mutant cells (Figure 1B). Thus, the DBD, LBD and AF2 domains, but not the AF1 domain, are critical for both transactivation and repression by LXR. Furthermore, an LXR mutant defective in its ability to recruit co-activators, L439A/E441A (Tzukerman et al., 1994; Bastie et al., 2000), was unable to induce Abca1 or to repress inflammatory genes in both MEFs and iBMDM (Figure 1C, Figure 2B, Figure 2\u2014figure supplement 1A), strongly suggesting that gene activation and inflammatory repression are mechanistically linked.\n\nIn contrast to activation-defective LXR proteins, mutants of LXR\u03b1 and LXR\u03b2 that lack the SUMOylation sites previously identified (Ghisletti et al., 2007) were capable of inducing Abca1 and repressing inflammatory genes in both MEFs and iBMDM (Figure 2A,B and Figure 2\u2014figure supplement 1A). We considered the possibility that alternative SUMOylation sites might be employed, however, mutation of three additional residues in the hinge region of the receptor predicted to be likely SUMOylation sites also had no effect on LXR-dependent repression of Cxcl1 or Ccl2 (Figure 2\u2014figure supplement 1B). We also considered the possibility that SUMOylation might be required for a distinct subset of inflammatory genes in our system. However, transcriptional profiling revealed that LXR SUMOylation site mutants were capable of mediating ligand-dependent repression of a broad array of inflammatory genes (e.g., those annotated with the \u2018Immune system process\u2019 GO term; Figure 2C).\n\nWe further tested whether the SUMOylation machinery reported to target LXR was required for inflammatory repression in our system. Knocking down Ubc9 or Hdac4 by siRNA in iBMDM did not block repression (Figure 2\u2014figure supplement 2). Thus, SUMOylation-dependent transrepression could not account for the inhibitory actions of LXR on inflammatory gene expression in our system.\n\n### Abca1 induction contributes to LXR-mediated inflammatory repression\n\nGiven our data suggesting that gene activation and inflammatory repression by LXRs were mechanistically linked, we hypothesized that there must be one or more direct LXR target genes whose action has a secondary effect on inflammatory gene expression. We therefore used siRNA to knockdown a panel of LXR target genes in primary BMDM and tested whether inflammatory repression was compromised. Surprisingly, we found that knockdown of Abca1, a gene critical for cellular cholesterol efflux (Oram, 2003), substantially impaired the ability of LXR agonists to repress inflammatory gene expression (Figure 3A). By contrast, knockdown of Abcg1 or Apoe, two other LXR target genes involved in metabolism, had no effect on inflammatory repression (Figure 3A and Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig3-v2.jpg)\n\n**Figure 3.:** (A) Bone marrow-derived macrophages from wild-type mice were transfected with siRNA targeting Abca1, Abcg1 or control (Ctrl) for 48 hr, pretreated with GW3965 (1 \u00b5M) overnight, and then stimulated with LPS (10 ng/ml) for 4 hr. (B, C) Bone marrow-derived macrophages from myeloid-specific Abca1\u2212/\u2212 and control wild-type mice were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR (B) and Agilent microarrays (C). Selected genes from the array studies that are annotated with the \u2018Immune system process\u2019 GO term are presented as a heatmap (\u2265twofold changes shown). N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Bone marrow-derived macrophages from wild-type mice were transfected with siRNA targeting Abcg1 or control (Ctrl) for 48 hr, pretreated with GW3965 (1 \u00b5M) overnight, and then stimulated with LPS (10 ng/ml) for 4 hr. (B) Bone marrow-derived macrophages from wild-type or Apoe\u2212/\u2212 mice were pretreated with GW3965 (1 \u00b5M) overnight, and then stimulated with LPS (10 ng/ml) for 4 hr. (C) Bone marrow-derived macrophages from myeloid-specific Abca1\u2212/\u2212 and control wild-type mice were treated with dexamethasone (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\nWe corroborated these results by analyzing the effects of LXR agonist in BMDM from myeloid-specific Abca1\u2212/\u2212 mice. Again, the ability of LXR agonist to repress inflammation was markedly inhibited in the genetic absence of Abca1 (Figure 3B), but not Abcg1 (Figure 3\u2014figure supplement 1A). To comprehensively analyze the impact of Abca1 deficiency on inflammatory gene expression, we performed transcriptional profiling. This analysis revealed that most of the genes annotated with the \u2018Immune system process\u2019 GO term were not repressed by LXR activation in Abca1-deficient macrophages (Figure 3C), suggesting that LXR-induced Abca1 expression is broadly important for LXR-mediated repression. We also tested whether Abca1 was required for inflammatory repression by the synthetic glucocorticoid receptor (GR) agonist dexamethasone. The ability of dexamethasone to repress inflammatory gene expression was preserved in Abca1\u2212/\u2212 cells, indicating that distinct mechanisms are involved in transcriptional repression by LXR and GR (Figure 3\u2014figure supplement 1C).\n\nPrior work has shown that LXR-dependent induction of Abca1 contributes to the maintenance of sterol homeostasis by promoting the efflux of cellular cholesterol to extracellular acceptors such as ApoA-I and ApoE (Santamarina-Fojo et al., 2001; Oram, 2003). Tangier disease is a severe HDL deficiency syndrome that is caused by mutations in the ABCA1 gene. We also tested the ability of LXR agonist to inhibit inflammatory gene expression in skin fibroblasts from a patient with Tangier disease that lack functional ABCA1 protein. LXR target genes were induced at similar levels in normal (healthy donor) and Tangier fibroblasts in response to activation by synthetic agonist (Figure 4A). While LXR activation with ligand repressed inflammatory gene expression in normal cells, this response was abrogated in Tangier fibroblasts (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Skin fibroblasts from a healthy donor (normal) and a Tangier disease patient (Tangier) were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. (C) Immortalized bone marrow-derived macrophages from Abca1\u2212/\u2212 mice reconstituted with wild-type Abca1, N935S mutant, C1447R mutant or mock control were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\nTo further examine the function of Abca1 was critical for inflammatory repression, we reconstituted iBMDM from myeloid-specific Abca1\u2212/\u2212 mice with wild-type Abca1 or two different Abca1 point mutants that lacks cholesterol efflux ability, N935S and C1477R (Singaraja et al., 2006; Kannenberg et al., 2013). When Abca1-deficient cells were reconstituted with wild-type Abca1, inflammatory gene expression was repressed by LXR activation; however, this effect was lost in cells expressing the N935S or C1477R mutants (Figure 4C). These data suggest that cholesterol transport by Abca1 is critical for inflammatory repression in human cells and that effective LXR-dependent inhibition of inflammation requires the ATP-dependent transporter function of Abca1.\n\n### Cellular cholesterol content affects inflammatory responses\n\nThe requirement for Abca1 in LXR-dependent inflammatory repression suggests that membrane cholesterol content or distribution is mechanistically linked to inflammatory gene repression. To test this idea, we loaded cells with cholesterol using cyclodexrin-cholesterol complexes or depleted cells of cholesterol by incubating them with hydroxypropyl-\u03b2-cyclodextrin (Klein et al., 1995; Christian et al., 1997). As expected, cholesterol addition activated LXR target genes and repressed SREBP target genes, whereas cholesterol removal inhibited LXR target genes and induced SREBP target genes (Figure 5). Remarkably, increasing the cholesterol content of the cell also enhanced the induction of inflammatory genes by LPS. On the other hand, decreasing cholesterol content inhibited the induction of inflammatory genes (Figure 5). These data are consistent with the hypothesis that regulation of membrane cholesterol content by LXRs may modulate inflammatory responses.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig5-v2.jpg)\n\n**Figure 5.:** Bone marrow-derived macrophages were incubated with cyclodextrin cholesterol (CD-Chol, 100 \u00b5M) or hydroxypropyl-\u03b2-cyclodextrin (CD, 10 mM) for 1 hr and stimulated with LPS (10 ng/ml) for 4 hr. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n### LXR activation inhibits inflammatory signaling through Abca1 induction\n\nTo further explore the connection between LXR-dependent target gene activation and inflammatory repression, we analyzed signaling pathways downstream of TLR4 in macrophages. We found that treatment of macrophages with LXR agonist inhibited the activation of ERK, p38 and JNK MAP kinases downstream of TLR4 activation (Figure 6A,B). Reduced levels of phospho-ERK, phospho-p38 and phospho-JNK were observed in the setting of LXR activation. Importantly, this effect was mediated by LXRs, as it was not observed in LXR-deficient macrophages. To test whether inhibition of MAPK signaling was mechanistically linked to the regulation of Abca1 expression by LXR, we repeated these studies in macrophages derived from myeloid-specific Abca1-deficient mice. Remarkably, the ability of LXR agonist to inhibit ERK, p38 and JNK activation was severely impaired in cells lacking Abca1 (Figure 6C,D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013D) Bone marrow-derived macrophages from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 and control wild-type mice (A, B), or bone marrow-derived macrophages from myeloid-specific Abca1\u2212/\u2212 and control wild-type mice (C, D) were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 20 min or 1 hr. Whole cell lysates were harvested and protein expression was analyzed by immunoblotting with the indicated antibodies (A, C). Protein expression was quantified by Image Quant TL7.0 (B, D). N = 4\u20136 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\nWe also found that LXR agonist suppressed the activation of NF-\u03baB signaling downstream of TLR4. Immunoblot analysis of whole cell lysates and nuclear extracts revealed that treatment of macrophages with GW3965 reduced the ratio of phospho-I\u03baB\u03b1 to total I\u03baB\u03b1 and reduced the nuclear abundance of p65 (Figure 7A,B). These effects of agonist were also LXR-dependent, as they were not observed in LXR-deficient macrophages. Furthermore, the ability of LXR agonist to suppress NF-\u03baB signaling was abolished in Abca1-deficient macrophages (Figure 7C,D). Analysis of p65 localization by confocal immunofluorescence microscopy confirmed the ability of GW3965 to inhibit p65 nuclear translocation in an LXR-dependent and Abca1-dependent manner (Figure 7E,F).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013F) Bone marrow-derived macrophages from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 and control wild-type mice (A, B, E), or bone marrow-derived macrophages from myeloid-specific Abca1\u2212/\u2212 and control wild-type mice (C, D, F) were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 20 min. Whole cell lysates and nuclear lysates were harvested and protein expression was analyzed by immunoblotting with the indicated antibodies (A, C). Protein expression was quantified by Image Quant TL7.0 (B, D). N = 4\u20136 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM. Nuclear translocation of p65 was assessed by staining of p65 (green) and DAPI (blue) (E, F).\n\nTo address whether p65-binding to its target inflammatory gene promoters was affected by LXR activation, we employed chromatin immunoprecipitation (ChIP) assays. The binding of p65 to the Nos2, IL1b and Ccl2 gene promoters was increased by LPS treatment as expected, whereas no binding was observed on the hemoglobin beta (Hbb2) gene promoter, which does not contain a p65 binding site (Figure 8). We found that LXR activation suppressed LPS-induced p65 recruitment to the Nos2s, Ccl2 and Il1b gene promoters. Moreover, the inhibitory effect of LXR agonist on p65 recruitment was lost in Abca1-deficient macrophages (Figure 8). Together, the data of Figures 6\u20138 demonstrate that LXR activation inhibits signaling through TLR4, and that Abca1 expression is critical for this phenomenon.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig8-v2.jpg)\n\n**Figure 8.:** Recruitment of p65 to inflammatory gene promoters was assessed by ChIP-qPCR assays. Chromatin from wild-type or Abca1\u2212/\u2212 cells was precipitated with p65 antibody or control IgG. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n### LXR-dependent Abca1 expression redistributes membrane cholesterol and disrupts TLR signaling complexes in lipid rafts\n\nWe next tested the hypothesis that LXR agonist treatment relocalizes plasma membrane cholesterol away from detergent-resistant microdomains or rafts, thereby preventing the localization of TLR4 signaling molecules and impairing downstream signaling. BMDM from wild-type or LXR-deficient mice were treated overnight with GW3965, and then cell membranes were fractionated and the cholesterol content of each fraction determined. We found that LXR activation reduced the cholesterol content of Flotillin-enriched detergent-resistant membrane microdomains in wild-type type (<47% reduction) but not LXR-deficient macrophages (Figure 9A). Furthermore, this reduction in cholesterol content of detergent-resistant membrane microdomains was not observed in Abca1-deficient macrophages (Figure 9B). On the other hand, the expression of ganglioside GM1, a marker of lipid rafts, was not altered by LXR agonist (Figure 9C). These results suggest that LXR-dependent ABCA1 expression reduces the cholesterol content of detergent-resistant membrane microdomains without affecting the abundance of lipid rafts in the plasma membrane.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig9-v2.jpg)\n\n**Figure 9.:** (A, B) Bone marrow-derived macrophages from Lxr\u03b1\u2212/\u2212Lxr\u03b2\u2212/\u2212 and control wild-type mice (A), or bone marrow-derived macrophages from myeloid-specific Abca1\u2212/\u2212 and control wild-type mice (B) were pretreated with GW3965 (1 \u00b5M) overnight. Lipid raft and non-raft fractions were isolated using the detergent method and each fraction was analyzed by Western blotting. The free cholesterol concentration in each fraction was determined and normalized to protein concentration. N = 5 per group. (C) The abundance of lipid rafts in the plasma membrane was analyzed by flow cytometry after staining with cholera toxin B (CTB). (D) Wild-type or Abca1\u2212/\u2212 iBMDM were treated with oxidized LDL (50 \u00b5g/ml) for 48 hr, and GW3965 (1 \u00b5M) overnight. GP images (left) were obtained from fluorescence-lifetime imaging microscopy (FLIM). The GP scale used to pseudocolor the intensity image is shown at right. Plasma membrane fluidity was determined with GP and number of pixel in plasma membrane (right). *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\nThe cholesterol content of the plasma membrane affects its fluidity and rigidity, and therefore could conceivably affects signaling through membrane receptors (Simons and Toomre, 2000; Fessler and Parks, 2011). Laurdan is a fluorescent lipophilic molecule that can be used to detect changes in membrane dynamics due to its sensitivity to the polarity of the membrane environment (Parasassi and Gratton, 1995; Vest et al., 2006; Golfetto et al., 2013). Changes in membrane dynamics shift the laurdan emission spectrum, which can be quantified by the generalized polarization (GP) calculated from the spectrum shifts (Parasassi et al., 1990). To examine if membrane dynamics were affected as a result of LXR-dependent reductions in raft cholesterol content, we stained living primary macrophages with laurdan. As shown in Figure 9D, plasma membrane rigidity was decreased in response to LXR activation, consistent with the altered cholesterol distribution. Furthermore, the ability of LXR agonist treatment to affect plasma membrane fluidity in primary macrophages was largely dependent on Abca1expression, as we did not observe a shift in laurdan signal in Abca1\u2212/\u2212 macrophages (Figure 9D).\n\nTo gain additional insight into the inflammatory signaling pathways impacted by LXR, we tested the influence of LXR agonist treatment on gene expression induced by TLR2 (Pam3CSK4), TLR9 (CpG) and TLR3 (Poly I:C) agonists. LXR activation blunted the response to TLR2 and TLR9 (Figure 10A,B), but did not affect the induction of viral response genes by TLR3 (Figure 10C). Furthermore, loss of Abca1 expression in macrophages inhibited the ability of LXR agonist to repress gene expression stimulated by TLR2 and TLR9 as well as by TLR4. These observations suggested that LXR-dependent membrane lipid remodeling was targeting a component of the inflammatory signaling cascade common to TLRs 2, 4 and 9.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig10-v2.jpg)\n\n**Figure 10.:** Bone marrow-derived macrophages from myeloid-specific Abca1\u2212/\u2212 and control wild-type mice (A, B, C) were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with Pam3CSK4 (100 ng/ml), LPS (10 ng/ml), CpG (1 \u00b5M) or polyI:C (10 \u00b5g/ml) for 4 hr as indicated. Gene expression was analyzed by real-time PCR. N = 4 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\nThe adaptor molecule MyD88 is commonly engaged by TLRs 2, 4 and 9 and links these receptors to the downstream activation of MAPKs and NF-\u03baB, and ultimately to the induction of cytokine gene expression. Thus, MyD88 emerged as potential common component of inflammatory signaling pathways targeted by LXR and Abca1. Flow cytometry revealed that TLR4 expression in plasma membrane was not affected by LXR activation (Figure 11A). We therefore tested whether the recruitment of key adaptor molecules to lipid rafts was altered by LXR activation. We performed cell fractionation studies to assess the ability of MyD88 and TRAF6 to associate with lipid rafts in response to TLR4 activation by LPS. We confirmed the ability of our antibodies to detect MyD88 and TRAF6 using MyD88-deficient and siRNA to TRAF6 (Figure 11\u2014figure supplement 1). LPS-dependent recruitment of MyD88 and TRAF6 in Flotillin-1-enriched detergent-resistant membrane microdomains was markedly reduced by treatment of iBMDM with GW3965 (Figure 11B). Furthermore, the ability of LXR agonist to inhibit recruitment of MyD88 and TRAF6 was lost in Abca1-deficient macrophages. These observations suggest that a reduction in raft cholesterol content in response to LXR activation and Abca1 expression leads to alterations in membrane dynamics and/or raft structure and to the disruption of functional TLR4 complexes. Therefore, downstream MAPK and NF-\u03baB signaling and inflammatory gene expression are repressed.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig11-v2.jpg)\n\n**Figure 11.:** (A) Wild-type iBMDM were pretreated with GW3965 (1 \u00b5M) overnight and TLR4 expression was analyzed by flow cytometry. (B) Wild-type or Abca1\u2212/\u2212 iBMDM were pretreated with GW3965 (1 \u00b5M) overnight, followed by stimulation with LPS (10 ng/ml) for 10 min. Lipid raft and non-raft fractions were isolated using detergent method and each fraction was analyzed by Western blotting. Results are representative of two independent experiments.\n\n![Figure 11\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig11-figsupp1-v2.jpg)\n\n**Figure 11\u2014figure supplement 1.:** (A) Immunoblot analysis of wild-type and MyD88\u2212/\u2212 bone marrow macrophages. (B) Immunoblot analysis of wild-type bone marrow macrophages transduced with siRNA targeting TRAF6 or control siRNA.\n\n### Abca1 contributes to LXR-dependent repression of inflammation in vivo\n\nTo test whether Abca1 was required for the ability of LXR agonists to repress inflammatory gene expression in vivo, we pretreated wild-type or myeloid-specific Abca1\u2212/\u2212 mice with vehicle or GW3965 for 3 days and then challenged them with LPS. Analysis of gene expression in spleen and lung 2 hr after LPS treatment revealed that an array of inflammatory genes was induced by LPS as expected (Figure 12). This induction was substantially attenuated by LXR agonist treatment in wild-type mice, whereas little if any inflammatory repression was observed in mice lacking expression of Abca1 in macrophages (Figure 12). Taken together, these results suggest that the ability of LXRs to repress inflammation in macrophages derives primarily from their ability to regulate cellular cholesterol metabolism through Abca1. They further reveal an unexpected connection between Abca1-dependent membrane cholesterol distribution and TLR4-mediated inflammatory signaling.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/08009/elife-08009-fig12-v2.jpg)\n\n**Figure 12.:** Myeloid-specific Abca1\u2212/\u2212 and control wild-type mice were gavaged with GW3965 (40 mg/kg) for 3 days, followed by challenge with LPS (1 mg/kg) by intraperitoneal injection. 2 hr later, spleens (upper) and lungs (lower) were harvested, RNA isolated and gene expression analyzed by real-time PCR. N = 3\u20134 per group. *p < 0.05, **p < 0.01, NS, not significant. Error bars represent means \u00b1 SEM.\n\n## Discussion\n\nLXRs reciprocally regulate lipid metabolism and inflammation. Both of these processes are central to the pathogenesis of metabolic diseases such as atherosclerosis and diabetes (Castrillo et al., 2003a, 2003b; Joseph et al., 2004). LXRs have been proposed to repress inflammatory gene expression in trans by tethering to NF-\u03baB transcriptional complexes in a SUMOylation-dependent manner (Ghisletti et al., 2007; Lee et al., 2009; Venteclef et al., 2010). This has heretofore been believed to be the sole mechanism underlying LXR's anti-inflammatory effects. The present study suggests that LXR-mediated transcriptional repression of endogenous inflammatory genes is principally dependent on LXR's capacity for transactivation. Our studies also identify the sterol transporter Abca1 as an important mediator of LXR's anti-inflammatory effects, both in vitro and in vivo. We find that Abca1 induction represses TLR-induced NF-\u03baB and MAPK pathway activation by reducing the cholesterol content of detergent-resistant membrane domains. These findings reveal a previously unrecognized mechanism for LXR-mediated inflammatory repression in which inflammatory repression is secondary to activation-dependent changes in cellular lipid metabolism.\n\nAlthough we cannot exclude the possibility that trans-repression may operate in certain contexts, LXR agonist did not repress endogenous inflammatory gene expression in the absence of RXR\u03b1 and RXR\u03b2 in our system, suggesting that LXR/RXR heterodimers were mediating repression. This led us to explore additional mechanisms for LXR inflammatory crosstalk. We found that an LXR L439A/E441A mutant that lacks co-activator recruitment capacity was unable to repress inflammation. These studies suggested that repression was mechanistically linked with transcriptional activation, and that repression might be a secondary phenomenon.\n\nWe examined an array of endogenous gene expression in LXR-null cells reconstituted with various LXRs mutants and found that mutants that could not undergo SUMOylation at the previously identified lysines (LXR\u03b1 K328 and K434 and LXR\u03b2 K410 and K448) were still competent to repress inflammatory gene expression. Interestingly, the nuclear receptor SF-1 can be modified by SUMO in its hinge region and this modification has been shown to be functionally important for gene repression in vivo (Campbell et al., 2008; Lee et al., 2011). In contrast to the LXR transrepression model, however, the repressive effects of SUMOylated SF-1 are mediated by direct binding of SF-1 to response elements in its target promoters. Nevertheless, we considered the possibility that alternative SUMOylation sites in the hinge region of LXR (LXR\u03b1 K177/K178/K180) might be used for transrepression. However, mutation of the three hinge lysines to arginine did not alter LXR-dependent repression of endogenous inflammatory genes.\n\nPrior studies from our group suggested that LXR-mediated inflammatory repression was not mediated by the inhibition of nuclear translocation or DNA binding of NF-\u03baB and AP-1 (Castrillo et al., 2003a, 2003b). These conclusions were drawn based on the analysis of electrophoretic mobility shift assays. In retrospect, these studies likely had technical limitations that prevented us from appreciating the effects of LXR on NF-\u03baB signaling. Our prior studies did not define which NF-\u03baB isoforms were bound to our DNA probe, and according to a recent comprehensive analysis of DNA binding by NF-\u03baB proteins (Siggers et al., 2012), the sequence we used is not predicted to have high affinity for the LPS-induced p65-p50 heterodimer (Hoffmann and Baltimore, 2006). Our subsequent analysis of I\u03baB phosphorylation, p65 nuclear translocation, and p65 recruitment to gene promoters has revealed previously unrecognized impairments in NF-\u03baB and MAPK signaling in the setting of LXR activation.\n\nThe observation that gene activation was required for LXR-mediated inflammatory repression led us to identify the cholesterol transport protein Abca1 as a key mediator of the phenomenon. Accumulating evidence suggests that changes in membrane lipid content can affect inflammatory responses (Westerterp et al., 2013; Rong et al., 2015). Our membrane dynamics and biochemical studies indicate that LXR-dependent Abca1 induction reduces raft cholesterol content and alters membrane fluidity, suggesting a biophysical basis for the ability of LXR to inhibit TLR signaling. Previous studies have reported that Abca1-deficient macrophages contain more cholesterol and TLR4 protein in plasma membrane lipid rafts and that this results in enhanced inflammatory signaling upon LPS treatment (Koseki et al., 2007; Zhu et al., 2008, 2010). Our data are consistent with these results and provide an additional mechanism whereby changes in Abca1 expression can affect TLR signaling. We found that Abca1 expression is important for the ability of LXR to inhibit signaling from TLRs 2, 4 and 9\u2013all of which use MyD88 as a key adaptor. We showed that LXR activation inhibits recruitment of the adaptor proteins MyD88 and TRAF6 to rafts and thereby blocks TLR-induced activation of MAP kinases and NF-\u03baB.\n\nLXR activation leads to the induction of an entire cascade of genes involved in cellular lipid homeostasis (Calkin and Tontonoz, 2012; Hong and Tontonoz, 2014). Although Abca1 is clearly a major contributor, our data do not exclude the involvement of other factors. In our view, it is likely that additional LXR target genes involved in lipid handling may also contribute to effects on inflammation. One attractive additional player is the phospholipid-remodeling enzyme Lpcat3, which we have recently shown affects inflammatory signaling in hepatocytes in the setting of obesity (Rong et al., 2013).\n\nIn conclusion, these studies outline a mechanistic connection between regulated plasma membrane cholesterol distribution and TLR-mediated inflammatory signaling. They further support a unified view of the role of LXR in transcriptional regulation in which direct activation underlies the dual biological functions of these nuclear receptors in metabolism and inflammation.\n\n## Materials and methods\n\n### Experimental procedures\n\n#### Reagents and plasmids\n\nSynthetic LXR ligand GW3965 was provided by T. Wilson (GlaxoSmithKline). Human LXR\u03b1, LXR\u03b2 and their mutants were cloned into pDEST retrovirus vector using gateway technology (Invitrogen, Carlsbad, CA). Point mutations were introduced using the Quickchange site-directed mutagenesis kit (Stratagene) and verified by DNA sequencing.\n\n#### Cell culture\n\nPrimary peritoneal macrophages were obtained from thioglycollate-treated mice 4 days after injection. For bone marrow-derived macrophages, bone marrow was isolated from femurs and tibias, and differentiated in DMEM supplemented with 20% fetal bovine serum (FBS), 30% L929 conditioned medium and antibiotics for 6\u20137 days. MEFs were immortalized by the SV40 Large T antigen retrovirus and selected with puromycin. Immortalized bone marrow-derived macrophages were obtained as previously described (Blasi et al., 1985; Gandino and Varesio, 1990). To reconstitute immortalized bone marrow derived macrophages from LXR-deficient mice with LXR wild-type or mutants, retrovirus supernatants from Phoenix E cells transfected with the expression vectors were infected to immortalized macrophages. The iBMDM stably expressing wild-type LXR\u03b1, LXR\u03b2 or mutants were obtained by 300 \u00b5g/ml of hygromycin B (Invitrogen). For RNAi experiments in macrophages, cells were transfected with control or ON-TARGETplus SMARTpool siRNAs (25 nM, Dharmacon) targeted RXR\u03b1, RXR\u03b2, Ubc9, Hdac4, ABCA1, ABCG1 and TRAF6 using Darmafect 4 (Dharmacon). Cells were used for experiments after 48 hr incubation and target gene knockdown was validated by real-time PCR and Western Blot. For macrophage inflammatory responses, cells were placed in DMEM containing 0.5% FBS, 5 \u03bcM simvastatin, 100 \u03bcM mevalonic acid and 1 \u03bcM GW3965 or DMSO overnight. Cells were then stimulated with 10 ng/ml LPS or vehicle. For cellular cholesterol modification, bone marrow-derived macrophages were placed in DMEM containing 0.5% FBS, 5 \u03bcM simvastatin plus 100 \u03bcM mevalonic acid for 4 hr, then incubated with complexes of randomly methylated cyclodextrin (Trappsol) and cholesterol (Sigma\u2013Aldrich) (CD/Chol, 100 \u03bcM) to overload with cholesterol (Klein et al., 1995) or hydroxypropyl-\u03b2-cyclodextrin (Trappsol) (CD, 10 mM) to deplete cholesterol for 1 hr and stimulated with LPS (10 ng/ml) for 4 hr.\n\n#### Gene expression and microarray analysis\n\nTotal RNA was isolated from cells and tissues with Trizol (Invitrogen), following the manufacturer's instruction. 500 ng of total RNA was used for cDNA synthesis and quantified by real-time PCR using SYBR Green (Diagenode) and an ABI 7900 instrument. Gene expression levels were normalized to 36B4. Primer sequences are given in Table 1. For microarray experiments, RNA was pooled from n = 3\u20134 biological replicates and processed in the UCLA Clinical Microarray Core Facility using SurePrint G3 Mouse GE 8 \u00d7 60 K Microarrays (Agilent). Data was analyzed using GenespringGX (Agilent). The data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number GSE70444 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70444) and GSE70463 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70463).\n\n**Table 1.**\n qPCR primers\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Murine qPCR primers</th>\n      <th>Forward</th>\n      <th>Reverse</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>36B4</td>\n      <td>GGCCCTGCACTCTCGCTTTC</td>\n      <td>TGCCAGGACGCGCTTGT</td>\n    </tr>\n    <tr>\n      <td>Abca1</td>\n      <td>CGTTTCCGGGAAGTGTCCTA</td>\n      <td>GCTAGAGATGACAAGGAGGATGGA</td>\n    </tr>\n    <tr>\n      <td>Abcg1</td>\n      <td>TCACCCAGTTCTGCATCCTCT</td>\n      <td>GCAGATGTGTCAGGACCGAGT</td>\n    </tr>\n    <tr>\n      <td>Apoe</td>\n      <td>GACTTGTTTCGGAAGGAGCTG</td>\n      <td>CCACTCGAGCTGATCTGTCA</td>\n    </tr>\n    <tr>\n      <td>Cox-2</td>\n      <td>CAGGTCATTGGTGGAGAGGTG</td>\n      <td>GGATGTGAGGAGGGTAGATCA</td>\n    </tr>\n    <tr>\n      <td>Cxcl1</td>\n      <td>CACTGCACCCAAACCGAAGT</td>\n      <td>GGACAATTTTCTGAACCAAGGG</td>\n    </tr>\n    <tr>\n      <td>Hmgcs</td>\n      <td>GCCGTGAACTGGGTCGAA</td>\n      <td>GCATATATAGCAATGTCTCCT</td>\n    </tr>\n    <tr>\n      <td>Il-1b</td>\n      <td>AGAAGCTGTGGCAGCTACCTG</td>\n      <td>GGAAAAGAAGGTGCTCATGTCC</td>\n    </tr>\n    <tr>\n      <td>Il-6</td>\n      <td>GCTACCAAACTGGATATAATCAGGA</td>\n      <td>CCAGGTAGCTATGGTACTCCAGAA</td>\n    </tr>\n    <tr>\n      <td>iNos</td>\n      <td>GCAGCTGGGCTGTACAAA</td>\n      <td>AGCGTTTCGGGATCTGAAT</td>\n    </tr>\n    <tr>\n      <td>Isg15</td>\n      <td>CAGGACGGTCTTACCCTTTC</td>\n      <td>CGCTGCAGTTCTGTACCACT</td>\n    </tr>\n    <tr>\n      <td>Ldlr</td>\n      <td>AGGCTGTGGGCTCCATAGG</td>\n      <td>TGCGGTCCAGGGTCATCT</td>\n    </tr>\n    <tr>\n      <td>Mcp-1</td>\n      <td>CATCCACGTGTTGGCTCA</td>\n      <td>GATCATCTTGCTGGTGAATGA</td>\n    </tr>\n    <tr>\n      <td>Mx-1</td>\n      <td>AAACCTGATCCGACTTCACTTCC</td>\n      <td>TGATCGTCTTCAAGGTTTCCTTGT</td>\n    </tr>\n    <tr>\n      <td>Rxra</td>\n      <td>ACCGCTCCATAGCTGTGAAAG</td>\n      <td>TGAGCGCTGTTCCGGTGTA</td>\n    </tr>\n    <tr>\n      <td>Rxrb</td>\n      <td>GCCACTGGCATGAAAAGG</td>\n      <td>ATCTCCATCCCCGTCTTTGT</td>\n    </tr>\n    <tr>\n      <td>Srebp-1c</td>\n      <td>GGAGCCATGGATTGCACATT</td>\n      <td>GGCCCGGGAAGTCACTGT</td>\n    </tr>\n    <tr>\n      <td>Tnfa</td>\n      <td>TCTTCTCATTCCTGCTTGTGG</td>\n      <td>GGTCTGGGCCATAGAACTGA</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Chromatin immunoprecipitation (ChIP)\n\nChIP experiment was performed as described (Villanueva et al., 2011). Cells were crosslinked in DSG (disuccinimidyl glutarate) and 1% formaldehyde for 10 min and quenched with 2 M Glycine. Lysed cells were sonicated using a Bioruptor (Diagenode) according to the manufacturer's protocol, and chromatin was immunoprecipitated with antibodies against p65 (Santa Cruz C-20) or IgG (PP64, Millipore) overnight at 4\u00b0C for overnight in the presence of Protein A beads with salmon sperm DNA (Millipore). DNA enrichment was quantified by real-time PCR using SYBR Green (Diagenode) and an ABI 7900 instrument. Occupancy was normalized to input DNA. Primer sequences are given in Table 2.\n\n**Table 2.**\n ChIP primers\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Murine ChIP primers</th>\n      <th>Forward</th>\n      <th>Reverse</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hbb2</td>\n      <td>AGGTGCACCATGATGTCTGT</td>\n      <td>AGCAGGGTCAGTTGCTTCTT</td>\n    </tr>\n    <tr>\n      <td>Il-1b</td>\n      <td>GGACAATTGTGCAGATGGTG</td>\n      <td>CCTACCTTTGTTCCGCACAT</td>\n    </tr>\n    <tr>\n      <td>iNos</td>\n      <td>GGAGTGTCCATCATGAATGAG</td>\n      <td>CAACTCCCTGTAAAGTTGTGACC</td>\n    </tr>\n    <tr>\n      <td>Mcp-1</td>\n      <td>TCCAGGGTGATGCTACTCCT</td>\n      <td>AGTGAGAGTTGGCTGGTGCT</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Protein analysis\n\nWhole cell lysate were prepared in RIPA buffer (Boston Bioproducts) supplemented with protease inhibitors (Roche Diagnostics). The nuclear fractions were prepared as described (Villanueva et al., 2011). Proteins were separated on Nupage Bis-Tris gels then transferred to PVDF membrane (GE Osmonics).\n\nMembranes were probed with antibodies against ABCA1 (Novus; NB400-105), LXR\u03b1 (Perseus Proteomics; PP-K8607-10), LXR\u03b2 (Perseus Proteomics; PP-K8917-10), ERK (Cell Signaling; 9102), phospho-ERK (Cell Signaling; 9106), p38 MAPK (Cell Signaling; 9212), phospho-p38 MAPK (Cell Signaling; 9216), JNK (Santa Cruz; sc-372), phospho-JNK (Cell signaling; 4668), I\u03baB\u03b1 (Cell Signaling; 9242), phosphor- I\u03baB\u03b1 (Santa Cruz; sc-7977), p65 (Santa Cruz; sc-372), MyD88 (Cell Signaling; 4283), TRAF6 (Santa Cruz; sc-7221), tubulin (Calbiochem; CP06), Lamin A/C (Santa Cruz; sc-6215), Flottilin-1 (Cell Signaling; 3253) and transferrin receptor (Invitrogen; 13\u20136800). Immunoblots were developed HRP-conjugated secondary antibodies (Invitrogen) and chemiluminescence kit (GE healthcare). The signals were detected with Image Quant LAS4000 (GE healthcare) and quantified with Image Quant TL7.0 (GE healthcare).\n\n#### Immunofluorescence\n\nCells were fixed in cold 4% paraformaldehyde for 10 min and permeabilized in 0.1% Triton X-100 at room temperature for 5 min. After blocking with 5% normal goat serum and 1% BSA in PBS, cells were incubated with rabbit anti-NF-\u03baB p65 (1:100, Santa Cruz C-20) antibody at 4\u00b0C for overnight. After washes in PBS, coverslips were incubated at room temperature for 1 hr with the secondary antibody, Alexa488-conjugated goat anti-rabbit IgG (1:2000, Invitrogen A-11008). After cells were washed, cells were mounted in the presence of ProLong Gold Antifade Reagent with 4\u2032,6\u2032-diamidino-2-phenylindole (DAPI; Invitrogen). Images were collected with an LSM 510 confocal laser-scanning microscope (Carl Zeiss).\n\n#### Detergent-resistant membrane isolation and cholesterol measurement\n\nDetergent-resistant membrane was isolated as described (Lingwood and Simons, 2007). Briefly, cells were washed and harvested in TNE buffer (150 mM NaCl, 2 mM EDTA, 50 mM Tris\u2013HCl, pH7.4), lysed by passing through a 25 gauge needle, and solubilized with 1% TritonX-100 at 4\u00b0C for 30 min. Lysates were mixed with Optiprep to form a 40% iodixanol bottom layer in the centrifuge tube, overlaid with a 30% iodixanol layer and a 0% (TNE buffer) layer, and centrifuged for 2 hr at 260,000\u00d7g in TLA100.2 rotor. Four fractions were collected from the top of the gradient and subjected to immunoblot analysis. Cholesterol concentration in each fraction was measured by Amplex Red Cholesterol Assay Kit (Invitrogen) and normalized to protein concentration.\n\n#### Flow cytometry\n\nWild-type iBMDM were blocked with anti-mouse CD16/32 antibody (BioLegend). Cells were then stained with Alexa488-conjugated Cholera Toxin B subunit (1:100, Sigma\u2013Aldrich) to examine the amount of lipid raft and APC-conjugated TLR4/MD2 complex (MTS510, eBioscience) or isotype control to examine TLR4/MD2 cell surface expression in 0.1% BSA, 5 mM EDTA in PBS. After washing, cells were analyzed on LSRII (BD bioscience) with FlowJo software (Treestar).\n\n#### Membrane dynamics\n\nMembrane dynamics was analyzed as described (Golfetto et al., 2013). Briefly, wild-type iBMDM were plated onto 35-mm Mattek glass-bottom dishes and placed in DMEM containing 0.5% FBS, 5 \u03bcM simvastatin plus 100 \u03bcM mevalonic acid and 1 \u03bcM GW3965 or DMSO overnight. Cells were incubated with 50 \u00b5M Laurdan (6-dodecanoyl-2-dimethylaminonaphthalene; Invitrogen) at 37\u00b0C for 30 min. Cells were then rinsed with PBS and new medium was added. Fluorescence-lifetime imaging microscopy (FLIM) and ratiometric GP data were acquired with a Zeiss LSM710 META laser scanning microscope coupled to a 2-photon Ti:Sapphire laser (Mai Tai, Spectra Physics, Newport Beach, CA) producing 80-fs pulses at a repetition of 80 MHz with two different filters: 460/80 nm for the blue channel and 540/50 nm for the green channel. Spectral data were processed by the SimFCS software (Laboratory for Fluorescence Dynamics). Plasma membrane fluidity was calculated with GP and number of pixel.\n\n#### Animal studies\n\nAll animals were housed in a temperature-controlled room under a 12-hr light/12-hr dark cycle and under pathogen-free conditions. 24\u201326 weeks old male myeloid-specific Abca1\u2212/\u2212 and control wild-type mice were gavaged with GW3965 (40 mg/kg) for 3 days. 2 hr after the last GW injection, the mice were challenged with LPS (1 mg/kg) or vehicle by intraperitoneal injection. Mice were sacrificed 2 hr later and spleen and lung were harvested. Animal experiments were conducted in accordance with the UCLA Animal Research Committee (UCLA Protocols 1999-131 and 2003-166).\n\n#### Statistic analysis\n\nStatistics were performed using ANOVA with post hoc tests to compare to the control group. p < 0.05 was considered statistically significant. Data was presented as means \u00b1 SE.\n",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "29d40008-7b59-44f3-a92c-9f687984897c",
+      "submission_id": "308ba5d6-14bb-4a8a-9097-d2bddb83ac0c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ruslan Medzhitov, Howard Hughes Medical Institute, Yale University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08009.022](https://doi.org/10.7554/eLife.08009.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cLiver X receptors repress inflammation through ABCA1-dependent modulation of NF-\u03baB and MAP kinase signaling\u201d for peer review at eLife. Your submission has been favorably evaluated by Tadatsugu Taniguchi (Senior editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nReviewers\u2019 comments:\n\nThis manuscript provides compelling data refuting several papers suggesting that the anti-inflammatory effects of LXR agonism are due to increased SUMOylation of LXR, which was reported to recruit a co-repressor complex to promoters of inflammatory genes in macrophages. The present work suggests that SUMOylation is not required and that instead the mechanism involves the upregulation of ABCA1 expression. The authors show that ABCA1 is required for LXR-dependent anti-inflammatory activity through its ability to alter membrane lipid composition and in turn signaling through TLR4. While the data demonstrating that ABCA1 is required for the anti-inflammatory action of LXR agonists is quite good, the experiments were less robust in ruling out a role for SUMOylation or co-repression. Since a major conclusion of this work is based on co-repression not being involved, this is something that would need to be fleshed out in more detail. In addition, the proposed mechanism of ABCA1 effect (Figure 7) needs further experimental clarification.\n\n1) The previous paper by Ghisletti et al., which was the basis for most of the conclusions that SUMOylation of LXRs mediates the anti-inflammatory effects, postulated that HDAC4 caused ligand-dependent SUMOylation via Ubc9, which in turn recruited N-CoR to target promoters (e.g., the iNos promoter). This previous paper used cells transfected with various siRNAs and/or LXR mutants to support their conclusions. The present manuscript has a similar set of experiments using retroviral expression in LXR KO and ABCA1 KO cells to show that LXR mutants lacking the SUMO sites still repress some genes. However, these experiments cannot be directly compared to Ghisletti et al., since the present work never even investigates the requirement of Ubc9 or N-CoR. In addition, perhaps the discrepancy may be due to the promoters studied in each paper. Ghisletti mainly studied the iNos promoter, while this paper focused mostly on other targets (e.g., IL-1b). At this point I do not believe one can entirely rule out the co-repression as part of the mechanism. The involvement of Ubc9 and N-CoR should be investigated. It would be important to include iNOS genes in the analyses here, as the effects may well be gene dependent and so direct comparison impossible and the issue will remain unresolved unless the same genes are analyzed.\n\n2) I note that the present paper as well as the previous papers used siRNA as well as overexpression of mutant proteins to support their conclusions. Therefore, please include data showing the level of expression of proteins introduced into cells by retroviral infection, and the level of knockdown achieved by siRNA treatment. These are important controls to show the physiologic relevance of the findings.\n\n3) Why is the LPS responds in the LXR-null macrophages slower than it is in WT cells (Figure 5A, B)? LPS induced Erk, p38 and JNK phosphorylation within 20 min in WT but not in the KO cells. It may be informative to also include a time course of this effect in the Abca1-null cells (Figure 5C, D) as well. It should be the same as the LXR KOs.\n\n4) Please include statistical analysis in Figure 6G to show which effects are significant.\n\n5) Figure 7F, G needs statistical quantitation. Visual inspection of this figure does not reveal \u201cmarkedly reduced\u201d changes in any of the bands due to LXR agonism. It is also not clear why flot-1 is not detected in any fractions in Figure 7B? This doesn't seem to correspond to what the authors are saying in the text. Please clarify. I found it hard to interpret Figure 7A and B.\n\n7) Figures 7F and G are equally uninterpretable: the result showing MyD88 recruitment between Raw cells and BMDMs looks opposite \u2013 in one case LPS increases the recruitment, in another reduces it. I feel this is not the best assay to address the mechanism. One likely scenario is that ABCA1 mediated cholesterol efflux affects recruitment of TIRAP. TIRAP is a sorting adaptor responsible for recruitment of MyD88 to TLR4 at the plasma membrane. TIRAP interacts with PIP2, which is enriched at lipid rafts. So a plausible scenario is that cholesterol 'depletion' from PM may affect TIRAP mediated MyD88 recruitment. A direct way to test this is by looking at TIRAP recruitment to PM in response to LPS (Kagan, Cell. 2006 Jun 2;125(5):943-55.). This is a fairly simple experiment that can be done quickly and all the reagents are available from the authors of the above study.\n\n8) Recruitment of TIRAP-MyD88 should only affect NF-kB/MAPK pathways, but not the TRAM-TRIF pathways leading to IFN-stimulated genes (ISGs). Is ISG expression affected in the conditions tested in the study (GW, ABCA-1 KO)? The authors already have the data, just need to discuss it.\n\n9) Further to point 3 above, the authors should test the effect of LXR and ABCA1 deficiency on CpG induced gene expression. Regardless of the outcome, the result of this simple experiment would be very informative.\n",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4bc022be-ac14-494f-b502-674ec77e13d1",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C1",
+      "claim": "LXRs are transcriptional regulators of lipid homeostasis that have potent anti-inflammatory effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The liver X receptors (LXRs) are transcriptional regulators of lipid homeostasis that also have potent anti-inflammatory effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about LXR function that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "7a2d4b06-defe-4e35-b918-6181fe62655f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C2",
+      "claim": "The molecular basis for LXR's anti-inflammatory effects has been proposed to involve the indirect tethering of LXRs to inflammatory gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis for their anti-inflammatory effects is incompletely understood, but has been proposed to involve the indirect tethering of LXRs to inflammatory gene promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior hypotheses in the literature about LXR mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "bedd18ba-dea8-47b7-ac22-e45fe87b31d9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C3",
+      "claim": "The ability of LXRs to repress inflammatory gene expression in cells and mice derives primarily from their ability to regulate lipid metabolism through transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that the ability of LXRs to repress inflammatory gene expression in cells and mice derives primarily from their ability to regulate lipid metabolism through transcriptional activation and can occur in the absence of SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "6dcad757-cbd4-455a-86ba-ba42a155b5ba",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C4",
+      "claim": "LXR-mediated inflammatory repression can occur in the absence of SUMOylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that the ability of LXRs to repress inflammatory gene expression in cells and mice derives primarily from their ability to regulate lipid metabolism through transcriptional activation and can occur in the absence of SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with SUMOylation site mutants shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "e2b28616-28e7-46b4-ba34-752cfc4cb856",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C5",
+      "claim": "Abca1 is a critical mediator of LXR's anti-inflammatory effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we identify the putative lipid transporter Abca1 as a critical mediator of LXR's anti-inflammatory effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by siRNA knockdown and genetic deletion experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "55a5b89b-4093-4028-99a7-05810a659b6f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C6",
+      "claim": "Activation of LXR inhibits signaling from TLRs 2, 4 and 9 to their downstream NF-\u03baB and MAPK effectors through Abca1-dependent changes in membrane lipid organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of LXR inhibits signaling from TLRs 2, 4 and 9 to their downstream NF-\u03baB and MAPK effectors through Abca1-dependent changes in membrane lipid organization that disrupt the recruitment of MyD88 and TRAF6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 6, 7, 9, 10, and 11 showing effects on signaling pathways and membrane composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "94c94448-79ea-4e31-be43-b370dcdf943a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C7",
+      "claim": "Abca1-dependent changes in membrane lipid organization disrupt the recruitment of MyD88 and TRAF6.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of LXR inhibits signaling from TLRs 2, 4 and 9 to their downstream NF-\u03baB and MAPK effectors through Abca1-dependent changes in membrane lipid organization that disrupt the recruitment of MyD88 and TRAF6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by membrane fractionation experiments shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "d693b0cc-1015-4d9e-88fa-48f863b1678d",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C8",
+      "claim": "A common mechanism\u2014direct transcriptional activation\u2014underlies the dual biological functions of LXRs in metabolism and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that a common mechanism-direct transcriptional activation-underlies the dual biological functions of LXRs in metabolism and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "4de66b7d-ebae-4928-a772-40dec6527e78",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C9",
+      "claim": "LXRs control the expression of genes involved in cholesterol, fatty acid and phospholipid metabolism through direct binding to LXR response elements (LXREs) in their target promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "LXRs control the expression of a battery of genes involved in cholesterol, fatty acid and phospholipid metabolism through direct binding to LXR response elements (LXREs) in their target promoters (Calkin and Tontonoz, 2012; Hong and Tontonoz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "fe6e0756-b9c7-4040-9585-a28f832d953e",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C10",
+      "claim": "LXRs have the ability to antagonize inflammatory gene expression triggered by Toll-like receptor (TLR) activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their ability to activate the expression of genes linked to lipid metabolism, LXRs also have the ability to antagonize inflammatory gene expression triggered by Toll-like receptor (TLR) activation (Joseph et al., 2003, 2004; Castrillo et al., 2003a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9c34e959-a8fd-4974-8398-793df009ef6a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C11",
+      "claim": "LXRs have been proposed to act on inflammatory promoters through mechanisms that do not involve DNA-binding domain recognition of LXREs.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, they have been proposed to act on inflammatory promoters through mechanisms that do not involve DNA-binding domain recognition of LXREs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior hypotheses about LXR mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f5e66741-6e8a-4d5f-8cd5-95dc7bff1c46",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C12",
+      "claim": "The transrepression model postulates that LXRs become SUMOylated in response to LXR agonist and that this SUMOylated LXR monomer stabilizes repressive nuclear complexes on the promoters of inflammatory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "One proposed mechanism, termed 'transrepression', postulates that LXRs become SUMOylated in response to LXR agonist and that this SUMOylated LXR monomer stabilizes repressive nuclear complexes on the promoters of inflammatory genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a prior model from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "49958bf0-d33e-47bc-add1-51ff1ea681a4",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C13",
+      "claim": "Key features of the transrepression model include the requirement for receptor SUMOylation, the involvement of an LXR monomer, and the mechanistic separation of the transcriptional activation and repression functions of LXRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Key features of this model include the requirement for receptor SUMOylation, the involvement of an LXR monomer, and the mechanistic separation of the transcriptional activation and repression functions of LXRs (Ghisletti et al., 2007; Lee et al., 2009; Venteclef et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of a prior model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "19c48a89-172d-4c60-958e-313861e0160b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C14",
+      "claim": "The requirement for receptor SUMOylation in the repressive actions of LXRs on inflammatory genes in cells and animals remains to be tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several lines of evidence have supported the transrepression model, the requirement for receptor SUMOylation in the repressive actions of LXRs on inflammatory genes in cells and animals remains to be tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about gaps in prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "6844879c-5cc4-44e2-bcdd-a821b3bead60",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C15",
+      "claim": "The ability of LXRs to antagonize endogenous inflammatory gene expression in cultured cells and in vivo is a consequence of changes in cellular lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate here that the ability of LXRs to antagonize endogenous inflammatory gene expression in cultured cells and in vivo is a consequence of changes in cellular lipid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b3c374c8-fc5d-4c99-9641-f060b8053d8e",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C16",
+      "claim": "The ability of LXRs to activate transcription of the Abca1 sterol transporter and thereby alter membrane cholesterol homeostasis has a secondary effect on inflammatory signaling through inhibition of NF-\u03baB and MAPK signaling pathways downstream of TLRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the ability of LXRs to activate transcription of the Abca1 sterol transporter, and thereby alter membrane cholesterol homeostasis, has a secondary effect on inflammatory signaling through inhibition of NF-\u03baB and MAPK signaling pathways downstream of TLRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 3, 6, 7, and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "863af5cd-9402-483a-bd2f-d9d9d45d5d60",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C17",
+      "claim": "Direct transcriptional activation underlies the dual biological functions of LXRs in metabolism and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data present a unified view of LXR-dependent gene regulation in which direct transcriptional activation underlies the dual biological functions of LXRs in metabolism and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "65de58fa-58bf-47a5-9cf8-785e8fc7e26c",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C18",
+      "claim": "Local membrane composition is important in the activation of TLR signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "They further emphasize the importance of local membrane composition in the activation of TLR signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing effects of membrane cholesterol on TLR signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "67dcd81f-eb48-41e0-88c9-19cc1eaa7782",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C19",
+      "claim": "siRNA-mediated knockdown of RXR\u03b1 and RXR\u03b2 in primary mouse macrophages blunted the ability of LXR agonist to repress LPS-induced expression of endogenous inflammatory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that siRNA-mediated knockdown of RXR\u03b1 and RXR\u03b2 in primary mouse macrophages blunted the ability of LXR agonist to repress the LPS-induced expression of the endogenous inflammatory genes Nos2, Il1\u03b2, Ccl2, Cxcl1, Tnf\u03b1, Cox2 and Il6 (Figure 1A and Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "fd537369-75d3-477b-8d11-1adaa9153b07",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C20",
+      "claim": "LXR acts to repress inflammation as a heterodimer with RXR.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggested that LXR was acting to repress inflammation as a heterodimer with RXR in our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RXR knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "697607ca-fb30-4e2f-b485-ba2e0bd26d50",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C21",
+      "claim": "GW3965 did not induce the canonical LXR target gene Abca1 in LXR-deficient MEFs or macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic LXR agonist GW3965 did not induce the canonical LXR target gene Abca1, nor did it repress LPS-induced inflammatory gene expression, in LXR-deficient MEFs or macrophages (Figures 1B,C, 2A,B) (Castrillo et al., 2003a, 2003b; Joseph et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 1B, 1C, 2A, and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0061f89a-f30f-4c7d-ad52-fa5567f78577",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C22",
+      "claim": "GW3965 did not repress LPS-induced inflammatory gene expression in LXR-deficient MEFs or macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic LXR agonist GW3965 did not induce the canonical LXR target gene Abca1, nor did it repress LPS-induced inflammatory gene expression, in LXR-deficient MEFs or macrophages (Figures 1B,C, 2A,B) (Castrillo et al., 2003a, 2003b; Joseph et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 1B, 1C, 2A, and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "762fa3ec-d58a-486c-8e15-0c94194deca9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C23",
+      "claim": "When LXR-deficient cells were reconstituted with wild-type LXR\u03b1, GW3965 treatment simultaneously induced Abca1 expression and repressed LPS-induced inflammatory gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when LXR-deficient cells were reconstituted with wild-type LXR\u03b1, GW3965 treatment simultaneously induced Abca1 expression and repressed LPS-induced inflammatory gene expression (Ccl2 and Cxcl1) (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "bace4b10-f37d-46f6-86c0-9b154ca0433a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C24",
+      "claim": "Both the activating and repressive effects of GW3965 are entirely mediated by LXRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results establish that both the activating and repressive effects of GW3965 under our experimental conditions are entirely mediated by LXRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the reconstitution experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "d8eabff7-d611-4e68-b1f6-f7e4e48704d6",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C25",
+      "claim": "Many synthetic LXR agonists, including GW3965 and T0901317, can exhibit LXR-independent effects on gene expression, especially when used at concentrations higher than employed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "This is important to emphasize because many synthetic LXR agonists, including GW3965 and T0901317, can exhibit LXR-independent effects on gene expression, especially when used at concentrations higher than employed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on knowledge of LXR agonist properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "79d852e3-7215-4c9f-8bfb-4e30dcd99d5f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C26",
+      "claim": "The level of reconstituted LXR protein expression in the cells was within the physiologic range and restored target gene expression to physiologic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that this approach does not involve supraphysiologic overexpression of LXRs, as the level of reconstituted protein expression in these cells was within the physiologic range and restored target gene expression to physiologic levels (Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1\u2014figure supplement 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "21e2175d-62e3-4a03-aa33-7a8b0fb95c00",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C27",
+      "claim": "Agonist treatment induced Abca1 and repressed the levels of Ccl2 and Cxcl1 in AF1-deletion mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Agonist treatment induced Abca1 and repressed the levels of Ccl2 and Cxcl1 in AF1-deletion mutant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "3f34bc40-afd3-4b52-b06e-8eaa5e81d35c",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C28",
+      "claim": "Both the activation and repression activities of LXR were completely abolished in DNA binding domain- (DBD), ligand binding domain- (LBD) or AF2-deletion mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both the activation and repression activities of LXR were completely abolished in DNA binding domain- (DBD), ligand binding domain- (LBD) or AF2-deletion mutant cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "d72a92d3-5515-4069-921f-ce893c4ca1f6",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C29",
+      "claim": "The DBD, LBD and AF2 domains, but not the AF1 domain, are critical for both transactivation and repression by LXR.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the DBD, LBD and AF2 domains, but not the AF1 domain, are critical for both transactivation and repression by LXR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the domain deletion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "8e52730a-9fdf-4fea-9fb9-d79696153deb",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C30",
+      "claim": "An LXR mutant defective in its ability to recruit co-activators, L439A/E441A, was unable to induce Abca1 or to repress inflammatory genes in both MEFs and iBMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an LXR mutant defective in its ability to recruit co-activators, L439A/E441A (Tzukerman et al., 1994; Bastie et al., 2000), was unable to induce Abca1 or to repress inflammatory genes in both MEFs and iBMDM (Figure 1C, Figure 2B, Figure 2\u2014figure supplement 1A), strongly suggesting that gene activation and inflammatory repression are mechanistically linked.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 1C, 2B, and Figure 2\u2014figure supplement 1A, along with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f4a676ef-fed8-4bd2-aded-bdaf217fc058",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C31",
+      "claim": "Gene activation and inflammatory repression by LXR are mechanistically linked.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an LXR mutant defective in its ability to recruit co-activators, L439A/E441A (Tzukerman et al., 1994; Bastie et al., 2000), was unable to induce Abca1 or to repress inflammatory genes in both MEFs and iBMDM (Figure 1C, Figure 2B, Figure 2\u2014figure supplement 1A), strongly suggesting that gene activation and inflammatory repression are mechanistically linked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the L439A/E441A mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "d41de213-719a-4ab8-8576-5e33be662779",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C32",
+      "claim": "Mutants of LXR\u03b1 and LXR\u03b2 that lack the SUMOylation sites previously identified were capable of inducing Abca1 and repressing inflammatory genes in both MEFs and iBMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to activation-defective LXR proteins, mutants of LXR\u03b1 and LXR\u03b2 that lack the SUMOylation sites previously identified (Ghisletti et al., 2007) were capable of inducing Abca1 and repressing inflammatory genes in both MEFs and iBMDM (Figure 2A,B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 2A, 2B, and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ac2488aa-345f-47e7-a8fc-cf51fd520789",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C33",
+      "claim": "Mutation of three additional residues in the hinge region of the receptor predicted to be likely SUMOylation sites had no effect on LXR-dependent repression of Cxcl1 or Ccl2.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered the possibility that alternative SUMOylation sites might be employed, however, mutation of three additional residues in the hinge region of the receptor predicted to be likely SUMOylation sites also had no effect on LXR-dependent repression of Cxcl1 or Ccl2 (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ae89af50-f079-4de0-b312-1e4eae07fdc1",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C34",
+      "claim": "LXR SUMOylation site mutants were capable of mediating ligand-dependent repression of a broad array of inflammatory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, transcriptional profiling revealed that LXR SUMOylation site mutants were capable of mediating ligand-dependent repression of a broad array of inflammatory genes (e.g., those annotated with the 'Immune system process' GO term; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microarray data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "738030de-0dbd-4491-a507-79dab43d489c",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C35",
+      "claim": "Knocking down Ubc9 or Hdac4 by siRNA in iBMDM did not block inflammatory repression by LXR.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested whether the SUMOylation machinery reported to target LXR was required for inflammatory repression in our system. Knocking down Ubc9 or Hdac4 by siRNA in iBMDM did not block repression (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "59249def-6543-4914-b12c-224015c2d475",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C36",
+      "claim": "SUMOylation-dependent transrepression could not account for the inhibitory actions of LXR on inflammatory gene expression in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SUMOylation-dependent transrepression could not account for the inhibitory actions of LXR on inflammatory gene expression in our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the SUMOylation mutant and knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0fd07c7f-c032-4565-85b2-42ddda9ac7d2",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C37",
+      "claim": "Knockdown of Abca1 substantially impaired the ability of LXR agonists to repress inflammatory gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that knockdown of Abca1, a gene critical for cellular cholesterol efflux (Oram, 2003), substantially impaired the ability of LXR agonists to repress inflammatory gene expression (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by siRNA knockdown data in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "19466a25-c4be-4e22-9d7f-68728b84d90a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C38",
+      "claim": "Knockdown of Abcg1 or Apoe had no effect on inflammatory repression by LXR.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, knockdown of Abcg1 or Apoe, two other LXR target genes involved in metabolism, had no effect on inflammatory repression (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by siRNA knockdown data in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "659eec7c-9a42-452e-a23e-f3ec5df60274",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C39",
+      "claim": "The ability of LXR agonist to repress inflammation was markedly inhibited in macrophages from myeloid-specific Abca1\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We corroborated these results by analyzing the effects of LXR agonist in BMDM from myeloid-specific Abca1\u2212/\u2212 mice. Again, the ability of LXR agonist to repress inflammation was markedly inhibited in the genetic absence of Abca1 (Figure 3B), but not Abcg1 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data from Abca1-deficient mice in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "20271dfd-6905-40bd-a75f-d4d7c14cfe44",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C40",
+      "claim": "Most of the genes annotated with the 'Immune system process' GO term were not repressed by LXR activation in Abca1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that most of the genes annotated with the 'Immune system process' GO term were not repressed by LXR activation in Abca1-deficient macrophages (Figure 3C), suggesting that LXR-induced Abca1 expression is broadly important for LXR-mediated repression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microarray data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0afdcfa2-47e7-4d7b-b181-09a1056884a3",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C41",
+      "claim": "LXR-induced Abca1 expression is broadly important for LXR-mediated repression.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that most of the genes annotated with the 'Immune system process' GO term were not repressed by LXR activation in Abca1-deficient macrophages (Figure 3C), suggesting that LXR-induced Abca1 expression is broadly important for LXR-mediated repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the microarray data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "5c8ac78a-a508-4528-8829-ea61709ce9ca",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C42",
+      "claim": "The ability of dexamethasone to repress inflammatory gene expression was preserved in Abca1\u2212/\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of dexamethasone to repress inflammatory gene expression was preserved in Abca1\u2212/\u2212 cells, indicating that distinct mechanisms are involved in transcriptional repression by LXR and GR (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "6a823fcf-0b85-4142-9174-47beb40d6081",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C43",
+      "claim": "Distinct mechanisms are involved in transcriptional repression by LXR and GR.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of dexamethasone to repress inflammatory gene expression was preserved in Abca1\u2212/\u2212 cells, indicating that distinct mechanisms are involved in transcriptional repression by LXR and GR (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dexamethasone experiments in Abca1-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "98380a4a-e65e-4f95-a2f8-70ff7402e31e",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C44",
+      "claim": "LXR-dependent induction of Abca1 contributes to the maintenance of sterol homeostasis by promoting the efflux of cellular cholesterol to extracellular acceptors such as ApoA-I and ApoE.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that LXR-dependent induction of Abca1 contributes to the maintenance of sterol homeostasis by promoting the efflux of cellular cholesterol to extracellular acceptors such as ApoA-I and ApoE (Santamarina-Fojo et al., 2001; Oram, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b5562213-3127-45ed-80ca-f066202faad3",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C45",
+      "claim": "Tangier disease is a severe HDL deficiency syndrome that is caused by mutations in the ABCA1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Tangier disease is a severe HDL deficiency syndrome that is caused by mutations in the ABCA1 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ca3b242d-323d-4fda-bbcc-6aa418a4bc81",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C46",
+      "claim": "LXR target genes were induced at similar levels in normal and Tangier fibroblasts in response to activation by synthetic agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "LXR target genes were induced at similar levels in normal (healthy donor) and Tangier fibroblasts in response to activation by synthetic agonist (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "02486298-fa22-4517-8a2b-126c2314bd68",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C47",
+      "claim": "LXR activation with ligand repressed inflammatory gene expression in normal cells, but this response was abrogated in Tangier fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "While LXR activation with ligand repressed inflammatory gene expression in normal cells, this response was abrogated in Tangier fibroblasts (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "4ad59327-43c0-4b39-ab25-58866e8d7c42",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C48",
+      "claim": "When Abca1-deficient cells were reconstituted with wild-type Abca1, inflammatory gene expression was repressed by LXR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "When Abca1-deficient cells were reconstituted with wild-type Abca1, inflammatory gene expression was repressed by LXR activation; however, this effect was lost in cells expressing the N935S or C1477R mutants (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9768f5f6-b4cf-47e6-bda1-500898fb084b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C49",
+      "claim": "The repressive effect of LXR activation on inflammatory gene expression was lost in cells expressing the Abca1 N935S or C1477R mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "When Abca1-deficient cells were reconstituted with wild-type Abca1, inflammatory gene expression was repressed by LXR activation; however, this effect was lost in cells expressing the N935S or C1477R mutants (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "cb947b9d-151a-4ddd-853a-57c926878bc9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C50",
+      "claim": "Cholesterol transport by Abca1 is critical for inflammatory repression in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that cholesterol transport by Abca1 is critical for inflammatory repression in human cells and that effective LXR-dependent inhibition of inflammation requires the ATP-dependent transporter function of Abca1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Abca1 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f38a0fc7-6d80-45e4-bcef-7d28ae54a7b6",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C51",
+      "claim": "Effective LXR-dependent inhibition of inflammation requires the ATP-dependent transporter function of Abca1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that cholesterol transport by Abca1 is critical for inflammatory repression in human cells and that effective LXR-dependent inhibition of inflammation requires the ATP-dependent transporter function of Abca1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Abca1 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "d369c614-4bb2-45d4-9b8d-8b6c3639868f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C52",
+      "claim": "Cholesterol addition activated LXR target genes and repressed SREBP target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cholesterol addition activated LXR target genes and repressed SREBP target genes, whereas cholesterol removal inhibited LXR target genes and induced SREBP target genes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "c4d22237-d371-4b05-90ae-55d09762a46d",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C53",
+      "claim": "Cholesterol removal inhibited LXR target genes and induced SREBP target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, cholesterol addition activated LXR target genes and repressed SREBP target genes, whereas cholesterol removal inhibited LXR target genes and induced SREBP target genes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "40b02c22-5580-4aea-b9f4-3f476cbc771b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C54",
+      "claim": "Increasing the cholesterol content of the cell enhanced the induction of inflammatory genes by LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, increasing the cholesterol content of the cell also enhanced the induction of inflammatory genes by LPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0c247cce-7531-4f6b-9f81-683bb2f37a02",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C55",
+      "claim": "Decreasing cholesterol content inhibited the induction of inflammatory genes by LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, decreasing cholesterol content inhibited the induction of inflammatory genes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "30dbbc5c-9e83-4b0b-a52d-07c9c13f7688",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C56",
+      "claim": "Regulation of membrane cholesterol content by LXRs may modulate inflammatory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the hypothesis that regulation of membrane cholesterol content by LXRs may modulate inflammatory responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cholesterol manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "1d2c5bf8-0708-4005-97a2-ac49e6b3ae76",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C57",
+      "claim": "Treatment of macrophages with LXR agonist inhibited the activation of ERK, p38 and JNK MAP kinases downstream of TLR4 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that treatment of macrophages with LXR agonist inhibited the activation of ERK, p38 and JNK MAP kinases downstream of TLR4 activation (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "08ab2ad9-cca0-45c7-9eb2-5a1ba484db40",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C58",
+      "claim": "Reduced levels of phospho-ERK, phospho-p38 and phospho-JNK were observed in the setting of LXR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced levels of phospho-ERK, phospho-p38 and phospho-JNK were observed in the setting of LXR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "620e5a1b-faf5-4a84-8aae-6909537b0b32",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C59",
+      "claim": "The inhibitory effect of LXR agonist on MAPK signaling was mediated by LXRs, as it was not observed in LXR-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this effect was mediated by LXRs, as it was not observed in LXR-deficient macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data comparing wild-type and LXR-deficient cells in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "5c633f45-5fda-41bf-98d3-1065c9c31a5a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C60",
+      "claim": "The ability of LXR agonist to inhibit ERK, p38 and JNK activation was severely impaired in cells lacking Abca1.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the ability of LXR agonist to inhibit ERK, p38 and JNK activation was severely impaired in cells lacking Abca1 (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9755d27f-adc6-4b93-83aa-26f2264ccce5",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C61",
+      "claim": "LXR agonist suppressed the activation of NF-\u03baB signaling downstream of TLR4.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that LXR agonist suppressed the activation of NF-\u03baB signaling downstream of TLR4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "33b95ed1-abda-4fd8-80b6-b69ba606e06b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C62",
+      "claim": "Treatment of macrophages with GW3965 reduced the ratio of phospho-I\u03baB\u03b1 to total I\u03baB\u03b1 and reduced the nuclear abundance of p65.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analysis of whole cell lysates and nuclear extracts revealed that treatment of macrophages with GW3965 reduced the ratio of phospho-I\u03baB\u03b1 to total I\u03baB\u03b1 and reduced the nuclear abundance of p65 (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data in Figures 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "d5fbd50d-95d3-4548-91b7-fb48ccd28e03",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C63",
+      "claim": "The effects of LXR agonist on NF-\u03baB signaling were LXR-dependent, as they were not observed in LXR-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects of agonist were also LXR-dependent, as they were not observed in LXR-deficient macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data comparing wild-type and LXR-deficient cells in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "e253946c-7bba-4b65-a459-8abff336fc1d",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C64",
+      "claim": "The ability of LXR agonist to suppress NF-\u03baB signaling was abolished in Abca1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ability of LXR agonist to suppress NF-\u03baB signaling was abolished in Abca1-deficient macrophages (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "449e1b52-2fb4-4c07-b960-50ceef90fce7",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C65",
+      "claim": "GW3965 inhibited p65 nuclear translocation in an LXR-dependent and Abca1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of p65 localization by confocal immunofluorescence microscopy confirmed the ability of GW3965 to inhibit p65 nuclear translocation in an LXR-dependent and Abca1-dependent manner (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figures 7E and 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "cc4bd34a-8958-4da2-bcda-743abaf7b955",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C66",
+      "claim": "The binding of p65 to the Nos2, IL1b and Ccl2 gene promoters was increased by LPS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of p65 to the Nos2, IL1b and Ccl2 gene promoters was increased by LPS treatment as expected, whereas no binding was observed on the hemoglobin beta (Hbb2) gene promoter, which does not contain a p65 binding site (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "a9e6bac7-53d6-4e37-bbd1-d3ddf9947cc5",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C67",
+      "claim": "No p65 binding was observed on the hemoglobin beta (Hbb2) gene promoter, which does not contain a p65 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of p65 to the Nos2, IL1b and Ccl2 gene promoters was increased by LPS treatment as expected, whereas no binding was observed on the hemoglobin beta (Hbb2) gene promoter, which does not contain a p65 binding site (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0fc0a628-3881-40f2-9f5d-da1e00ba37b0",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C68",
+      "claim": "LXR activation suppressed LPS-induced p65 recruitment to the Nos2s, Ccl2 and Il1b gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LXR activation suppressed LPS-induced p65 recruitment to the Nos2s, Ccl2 and Il1b gene promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "a97a35d0-ffcd-4300-b385-58fcfcaa1b58",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C69",
+      "claim": "The inhibitory effect of LXR agonist on p65 recruitment was lost in Abca1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the inhibitory effect of LXR agonist on p65 recruitment was lost in Abca1-deficient macrophages (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "057caa4a-f798-4446-b218-e656c4fde4d2",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C70",
+      "claim": "LXR activation inhibits signaling through TLR4, and Abca1 expression is critical for this phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the data of Figures 6\u20138 demonstrate that LXR activation inhibits signaling through TLR4, and that Abca1 expression is critical for this phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the data in Figures 6-8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b3c1139d-d5be-453d-81f0-d5cb0d5c1c79",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C71",
+      "claim": "LXR activation reduced the cholesterol content of Flotillin-enriched detergent-resistant membrane microdomains in wild-type but not LXR-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LXR activation reduced the cholesterol content of Flotillin-enriched detergent-resistant membrane microdomains in wild-type type (<47% reduction) but not LXR-deficient macrophages (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by membrane fractionation data in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "11671cb9-80e5-40ce-ba90-14650417917f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C72",
+      "claim": "The reduction in cholesterol content of detergent-resistant membrane microdomains by LXR activation was not observed in Abca1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this reduction in cholesterol content of detergent-resistant membrane microdomains was not observed in Abca1-deficient macrophages (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by membrane fractionation data in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ccc9c6b5-09f1-4c43-a26f-8a5430e4a620",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C73",
+      "claim": "The expression of ganglioside GM1, a marker of lipid rafts, was not altered by LXR agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the expression of ganglioside GM1, a marker of lipid rafts, was not altered by LXR agonist (Figure 9C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 9C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "04964f0b-cc8e-40bf-a523-28acf6a4ee81",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C74",
+      "claim": "LXR-dependent ABCA1 expression reduces the cholesterol content of detergent-resistant membrane microdomains without affecting the abundance of lipid rafts in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that LXR-dependent ABCA1 expression reduces the cholesterol content of detergent-resistant membrane microdomains without affecting the abundance of lipid rafts in the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the membrane fractionation and flow cytometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "e43330ef-3c4c-4f4a-80a3-a37cf92bbdc5",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C75",
+      "claim": "Changes in membrane lipid content can affect inflammatory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating evidence suggests that changes in membrane lipid content can affect inflammatory responses (Westerterp et al., 2013; Rong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "56ef99cf-b901-4cb2-a550-03dd02d6bf5f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C76",
+      "claim": "LXR-dependent Abca1 induction reduces raft cholesterol content and alters membrane fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our membrane dynamics and biochemical studies indicate that LXR-dependent Abca1 induction reduces raft cholesterol content and alters membrane fluidity, suggesting a biophysical basis for the ability of LXR to inhibit TLR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "68f482e2-173f-491e-9994-1af3bc0c0697",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C77",
+      "claim": "Plasma membrane rigidity was decreased in response to LXR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 9D, plasma membrane rigidity was decreased in response to LXR activation, consistent with the altered cholesterol distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by laurdan fluorescence data in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "a86fca2c-2607-462d-83ae-2a3f395a8bf9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C78",
+      "claim": "The ability of LXR agonist treatment to affect plasma membrane fluidity in primary macrophages was largely dependent on Abca1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ability of LXR agonist treatment to affect plasma membrane fluidity in primary macrophages was largely dependent on Abca1expression, as we did not observe a shift in laurdan signal in Abca1\u2212/\u2212 macrophages (Figure 9D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by laurdan fluorescence data in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "c4a74732-b588-47e1-95bb-074f02f8ece4",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C79",
+      "claim": "LXR activation blunted the response to TLR2 and TLR9 agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "LXR activation blunted the response to TLR2 and TLR9 (Figure 10A,B), but did not affect the induction of viral response genes by TLR3 (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figures 10A and 10B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "7bdda9f7-0842-4807-b695-7e811ef612e3",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C80",
+      "claim": "LXR activation did not affect the induction of viral response genes by TLR3.",
+      "claim_type": "EXPLICIT",
+      "source": "LXR activation blunted the response to TLR2 and TLR9 (Figure 10A,B), but did not affect the induction of viral response genes by TLR3 (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 10C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "457b01dd-f4c7-4b86-b03b-c46d1521bfbf",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C81",
+      "claim": "Loss of Abca1 expression in macrophages inhibited the ability of LXR agonist to repress gene expression stimulated by TLR2 and TLR9 as well as by TLR4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, loss of Abca1 expression in macrophages inhibited the ability of LXR agonist to repress gene expression stimulated by TLR2 and TLR9 as well as by TLR4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "2bcb75b7-bd36-417d-8092-97894bbde83a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C82",
+      "claim": "LXR-dependent membrane lipid remodeling was targeting a component of the inflammatory signaling cascade common to TLRs 2, 4 and 9.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggested that LXR-dependent membrane lipid remodeling was targeting a component of the inflammatory signaling cascade common to TLRs 2, 4 and 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the TLR agonist experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "077d4f91-34d2-40f6-8b81-6b6152f39b32",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C83",
+      "claim": "The adaptor molecule MyD88 is commonly engaged by TLRs 2, 4 and 9 and links these receptors to the downstream activation of MAPKs and NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptor molecule MyD88 is commonly engaged by TLRs 2, 4 and 9 and links these receptors to the downstream activation of MAPKs and NF-\u03baB, and ultimately to the induction of cytokine gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TLR signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "642a88c5-8d0e-4de5-add2-186d51e8e5d9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C84",
+      "claim": "MyD88 links TLRs 2, 4 and 9 to the downstream activation of MAPKs and NF-\u03baB, and ultimately to the induction of cytokine gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The adaptor molecule MyD88 is commonly engaged by TLRs 2, 4 and 9 and links these receptors to the downstream activation of MAPKs and NF-\u03baB, and ultimately to the induction of cytokine gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TLR signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "cfff5afc-d5da-4c77-8d47-77d29e9abbbc",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C85",
+      "claim": "TLR4 expression in plasma membrane was not affected by LXR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry revealed that TLR4 expression in plasma membrane was not affected by LXR activation (Figure 11A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 11A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f79d5939-1d05-46ed-8791-8c403984963c",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C86",
+      "claim": "LPS-dependent recruitment of MyD88 and TRAF6 in Flotillin-1-enriched detergent-resistant membrane microdomains was markedly reduced by treatment of iBMDM with GW3965.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS-dependent recruitment of MyD88 and TRAF6 in Flotillin-1-enriched detergent-resistant membrane microdomains was markedly reduced by treatment of iBMDM with GW3965 (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by membrane fractionation data in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "15d63053-6f28-4b33-8f08-b0af700ed8d2",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C87",
+      "claim": "The ability of LXR agonist to inhibit recruitment of MyD88 and TRAF6 was lost in Abca1-deficient macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ability of LXR agonist to inhibit recruitment of MyD88 and TRAF6 was lost in Abca1-deficient macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by membrane fractionation data in Figure 11B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b97fb103-7bcb-4e10-8c5f-d1fcb1327925",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C88",
+      "claim": "A reduction in raft cholesterol content in response to LXR activation and Abca1 expression leads to alterations in membrane dynamics and/or raft structure and to the disruption of functional TLR4 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that a reduction in raft cholesterol content in response to LXR activation and Abca1 expression leads to alterations in membrane dynamics and/or raft structure and to the disruption of functional TLR4 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the membrane fractionation and signaling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0f1fcf8c-e23a-4c46-a11a-7be4c5b4de12",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C89",
+      "claim": "Downstream MAPK and NF-\u03baB signaling and inflammatory gene expression are repressed as a result of disruption of functional TLR4 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, downstream MAPK and NF-\u03baB signaling and inflammatory gene expression are repressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the signaling and gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "c866bcba-65d0-4814-9480-f273cc7ba203",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C90",
+      "claim": "An array of inflammatory genes was induced by LPS in spleen and lung of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of gene expression in spleen and lung 2 hr after LPS treatment revealed that an array of inflammatory genes was induced by LPS as expected (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo gene expression data in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "4bf4297c-de4c-4379-8196-9b9c3989ed5e",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C91",
+      "claim": "LPS-induced inflammatory gene expression was substantially attenuated by LXR agonist treatment in wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This induction was substantially attenuated by LXR agonist treatment in wild-type mice, whereas little if any inflammatory repression was observed in mice lacking expression of Abca1 in macrophages (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo gene expression data in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "1e43b16d-18f3-4cc6-8403-8152ab696da8",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C92",
+      "claim": "Little if any inflammatory repression was observed in mice lacking expression of Abca1 in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This induction was substantially attenuated by LXR agonist treatment in wild-type mice, whereas little if any inflammatory repression was observed in mice lacking expression of Abca1 in macrophages (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo gene expression data in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b30e9d7d-8b57-4c1f-af59-948ff5bf2e8b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C93",
+      "claim": "The ability of LXRs to repress inflammation in macrophages derives primarily from their ability to regulate cellular cholesterol metabolism through Abca1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the ability of LXRs to repress inflammation in macrophages derives primarily from their ability to regulate cellular cholesterol metabolism through Abca1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the in vivo and in vitro data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "62d62e46-4b4a-434d-b7f0-f92334f1407c",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C94",
+      "claim": "There is an unexpected connection between Abca1-dependent membrane cholesterol distribution and TLR4-mediated inflammatory signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "They further reveal an unexpected connection between Abca1-dependent membrane cholesterol distribution and TLR4-mediated inflammatory signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "fbcb88d5-1b50-4bbc-8e89-606ee67c46df",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C95",
+      "claim": "LXRs reciprocally regulate lipid metabolism and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "LXRs reciprocally regulate lipid metabolism and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about LXR function supported by the data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ba2a2c1b-245b-4e3c-a85e-cb0b4657fc23",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C96",
+      "claim": "Both lipid metabolism and inflammation are central to the pathogenesis of metabolic diseases such as atherosclerosis and diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these processes are central to the pathogenesis of metabolic diseases such as atherosclerosis and diabetes (Castrillo et al., 2003a, 2003b; Joseph et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "979d86c6-d979-426b-9cee-5e65ed5b5a5d",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C97",
+      "claim": "The transrepression model has heretofore been believed to be the sole mechanism underlying LXR's anti-inflammatory effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This has heretofore been believed to be the sole mechanism underlying LXR's anti-inflammatory effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior beliefs in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ac3322aa-0523-4cc3-b68b-26a6e03b0e22",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C98",
+      "claim": "LXR-mediated transcriptional repression of endogenous inflammatory genes is principally dependent on LXR's capacity for transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study suggests that LXR-mediated transcriptional repression of endogenous inflammatory genes is principally dependent on LXR's capacity for transactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "0cea9843-d863-4591-94cd-0e0ad5be76e9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C99",
+      "claim": "Abca1 induction represses TLR-induced NF-\u03baB and MAPK pathway activation by reducing the cholesterol content of detergent-resistant membrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Abca1 induction represses TLR-induced NF-\u03baB and MAPK pathway activation by reducing the cholesterol content of detergent-resistant membrane domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 6, 7, and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "c313224e-3c78-4778-9817-15470a6a0359",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C100",
+      "claim": "Direct transcriptional activation underlies the dual biological functions of LXRs in metabolism and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal a previously unrecognized mechanism for LXR-mediated inflammatory repression in which inflammatory repression is secondary to activation-dependent changes in cellular lipid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ec1dbc6f-db86-4128-a124-eb7231fbb3c0",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C101",
+      "claim": "LXR agonist did not repress endogenous inflammatory gene expression in the absence of RXR\u03b1 and RXR\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot exclude the possibility that trans-repression may operate in certain contexts, LXR agonist did not repress endogenous inflammatory gene expression in the absence of RXR\u03b1 and RXR\u03b2 in our system, suggesting that LXR/RXR heterodimers were mediating repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RXR knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ef582790-fa6b-4067-b958-c43662f18401",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C102",
+      "claim": "LXR/RXR heterodimers were mediating inflammatory repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot exclude the possibility that trans-repression may operate in certain contexts, LXR agonist did not repress endogenous inflammatory gene expression in the absence of RXR\u03b1 and RXR\u03b2 in our system, suggesting that LXR/RXR heterodimers were mediating repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RXR knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ff4cb881-fa7f-4b3e-a9f9-a89e873b45da",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C103",
+      "claim": "The nuclear receptor SF-1 can be modified by SUMO in its hinge region and this modification has been shown to be functionally important for gene repression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the nuclear receptor SF-1 can be modified by SUMO in its hinge region and this modification has been shown to be functionally important for gene repression in vivo (Campbell et al., 2008; Lee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f0ef048d-cf85-4a29-8a16-564a5295ea99",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C104",
+      "claim": "The repressive effects of SUMOylated SF-1 are mediated by direct binding of SF-1 to response elements in its target promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the LXR transrepression model, however, the repressive effects of SUMOylated SF-1 are mediated by direct binding of SF-1 to response elements in its target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about SF-1 mechanism from prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "04e9f9d2-a18f-4609-9d97-3583dce2e9a9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C105",
+      "claim": "Prior studies from the authors' group suggested that LXR-mediated inflammatory repression was not mediated by the inhibition of nuclear translocation or DNA binding of NF-\u03baB and AP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies from our group suggested that LXR-mediated inflammatory repression was not mediated by the inhibition of nuclear translocation or DNA binding of NF-\u03baB and AP-1 (Castrillo et al., 2003a, 2003b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f552a533-d2b2-4903-8dac-4c226b19946b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C106",
+      "claim": "The prior studies likely had technical limitations that prevented appreciation of the effects of LXR on NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In retrospect, these studies likely had technical limitations that prevented us from appreciating the effects of LXR on NF-\u03baB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reflection on prior work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9c50094e-5ea8-4292-973a-f5307faed15b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C107",
+      "claim": "The DNA probe used in prior studies is not predicted to have high affinity for the LPS-induced p65-p50 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our prior studies did not define which NF-\u03baB isoforms were bound to our DNA probe, and according to a recent comprehensive analysis of DNA binding by NF-\u03baB proteins (Siggers et al., 2012), the sequence we used is not predicted to have high affinity for the LPS-induced p65-p50 heterodimer (Hoffmann and Baltimore, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on NF-\u03baB binding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9a8255bd-a71f-449b-861b-5b5e014377d1",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C108",
+      "claim": "Subsequent analysis revealed previously unrecognized impairments in NF-\u03baB and MAPK signaling in the setting of LXR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our subsequent analysis of I\u03baB phosphorylation, p65 nuclear translocation, and p65 recruitment to gene promoters has revealed previously unrecognized impairments in NF-\u03baB and MAPK signaling in the setting of LXR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 6-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "e4892ebe-184c-4d92-b9c9-df319634dcd6",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C109",
+      "claim": "Abca1-deficient macrophages contain more cholesterol and TLR4 protein in plasma membrane lipid rafts and this results in enhanced inflammatory signaling upon LPS treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported that Abca1-deficient macrophages contain more cholesterol and TLR4 protein in plasma membrane lipid rafts and that this results in enhanced inflammatory signaling upon LPS treatment (Koseki et al., 2007; Zhu et al., 2008, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "707120cd-caad-4eec-adf2-721548b32a83",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C110",
+      "claim": "Abca1 expression is important for the ability of LXR to inhibit signaling from TLRs 2, 4 and 9\u2013all of which use MyD88 as a key adaptor.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Abca1 expression is important for the ability of LXR to inhibit signaling from TLRs 2, 4 and 9\u2013all of which use MyD88 as a key adaptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "754e788e-c616-4a6d-84c9-3c18efabb66a",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C111",
+      "claim": "LXR activation leads to the induction of an entire cascade of genes involved in cellular lipid homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "LXR activation leads to the induction of an entire cascade of genes involved in cellular lipid homeostasis (Calkin and Tontonoz, 2012; Hong and Tontonoz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "64d1d36e-19f9-4830-8088-73b48031b4a3",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C112",
+      "claim": "Additional LXR target genes involved in lipid handling may also contribute to effects on inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Abca1 is clearly a major contributor, our data do not exclude the involvement of other factors. In our view, it is likely that additional LXR target genes involved in lipid handling may also contribute to effects on inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about additional mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "70930928-5ef2-418c-83c3-a31295c815bc",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "claim_id": "C113",
+      "claim": "The phospholipid-remodeling enzyme Lpcat3 affects inflammatory signaling in hepatocytes in the setting of obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "One attractive additional player is the phospholipid-remodeling enzyme Lpcat3, which we have recently shown affects inflammatory signaling in hepatocytes in the setting of obesity (Rong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "21689e64-cdb9-43c6-82ed-e262d3280001",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LXR acts as a heterodimer with RXR to repress inflammatory gene expression. siRNA-mediated knockdown of RXR\u03b1 and RXR\u03b2 in primary mouse macrophages blunted the ability of LXR agonist to repress LPS-induced expression of endogenous inflammatory genes (C19), suggesting that LXR/RXR heterodimers mediate repression (C20, C102).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The RXR knockdown experiments (C19) provide direct evidence that RXR is required for LXR-mediated inflammatory repression. The inference that LXR acts as a heterodimer with RXR (C20, C102) is well-supported by this data and is consistent with known LXR biology. The experimental design and controls appear appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f37a8d88-ca6e-4930-b8f1-67da78fe8846",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both the activating and repressive effects of the LXR agonist GW3965 are entirely mediated by LXRs. GW3965 did not induce Abca1 or repress inflammatory genes in LXR-deficient cells (C21, C22), but reconstitution with wild-type LXR\u03b1 restored both functions (C23). The reconstituted LXR expression was within physiologic range (C26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reconstitution experiments in LXR-deficient cells provide strong evidence that GW3965 effects are LXR-dependent (C21-C24). The control for physiologic expression levels (C26) strengthens the conclusion by ruling out artifacts from overexpression. This is a well-designed loss-of-function/rescue experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "cbf27805-2384-4083-bc17-8975b71fc2cb",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DBD, LBD, and AF2 domains of LXR are critical for both transactivation and repression, while the AF1 domain is dispensable. An LXR mutant defective in co-activator recruitment (L439A/E441A) was unable to induce Abca1 or repress inflammatory genes (C30), suggesting that gene activation and inflammatory repression are mechanistically linked (C31).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The domain deletion and point mutant experiments (C27-C30) systematically identify functional requirements for LXR activity. The L439A/E441A mutant data (C30) provides particularly strong evidence linking activation and repression functions. The inference of mechanistic linkage (C31) is well-supported by the parallel loss of both functions in this mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9373cefa-a87f-4d32-810f-ac02c0fd4605",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SUMOylation is not required for LXR-mediated inflammatory repression. LXR mutants lacking previously identified SUMOylation sites retained the ability to induce Abca1 and repress inflammatory genes (C32, C34). Mutation of additional predicted SUMOylation sites (C33) and knockdown of SUMOylation machinery (C35) also had no effect on repression (C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary approaches (SUMOylation site mutations, additional site mutations, knockdown of SUMOylation machinery) all converge on the conclusion that SUMOylation is not required for inflammatory repression in this system (C32-C36). This directly challenges the transrepression model and is a major finding. The experiments are well-controlled and comprehensive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "479de322-1487-4d35-b8c8-7f0835537298",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Abca1 is a critical mediator of LXR's anti-inflammatory effects. Knockdown of Abca1 by siRNA substantially impaired LXR-mediated inflammatory repression (C37), while knockdown of other LXR targets (Abcg1, Apoe) had no effect (C38). Genetic deletion of Abca1 in macrophages markedly inhibited LXR's ability to repress inflammation (C39), and most immune system process genes were not repressed by LXR in Abca1-deficient macrophages (C40).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The combination of siRNA knockdown (C37-C38) and genetic deletion (C39-C40) provides strong, convergent evidence for Abca1's critical role. The specificity is demonstrated by the lack of effect with Abcg1 and Apoe knockdown (C38). The microarray data (C40) shows the broad importance of Abca1 for LXR-mediated repression. This is a key finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "835fdd27-a6d1-461b-8c93-8c8430e8c043",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Distinct mechanisms are involved in transcriptional repression by LXR and glucocorticoid receptor (GR). Dexamethasone retained its ability to repress inflammatory gene expression in Abca1-deficient cells (C42), indicating that GR uses a different mechanism than LXR (C43).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dexamethasone control experiment (C42) effectively demonstrates specificity of the Abca1 requirement for LXR. This rules out a general requirement for Abca1 in all anti-inflammatory pathways and supports the inference of distinct mechanisms (C43). This is an important control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "56596261-636c-4019-b6a2-fd9678f9ff5c",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Functional ABCA1 cholesterol transport activity is required for LXR-mediated inflammatory repression in human cells. LXR activation repressed inflammatory genes in normal but not Tangier disease fibroblasts lacking functional ABCA1 (C46-C47). Reconstitution with wild-type Abca1 restored repression, but transport-defective mutants (N935S, C1477R) did not (C48-C49), indicating that ATP-dependent transporter function is required (C50-C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of Tangier disease patient cells (C46-C47) provides human validation of the mouse findings. The reconstitution with transport-defective mutants (C48-C49) elegantly demonstrates that cholesterol transport activity, not just Abca1 protein presence, is required. This strengthens the mechanistic understanding considerably.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "df2f4f76-8eb8-47e4-9dbe-5f31010a1cef",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cellular cholesterol content modulates inflammatory responses. Cholesterol addition enhanced LPS-induced inflammatory gene expression (C54), while cholesterol depletion inhibited it (C55). These data are consistent with the hypothesis that regulation of membrane cholesterol content by LXRs modulates inflammatory responses (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cholesterol loading and depletion experiments (C52-C55) provide direct evidence linking cellular cholesterol levels to inflammatory responses. The bidirectional effects strengthen the conclusion. However, these are correlative observations and the mechanistic link to LXR/Abca1 is inferred rather than directly demonstrated in these specific experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "71e584ee-3264-4033-be57-25409365a061",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LXR activation inhibits MAPK signaling downstream of TLR4 in an Abca1-dependent manner. Treatment with LXR agonist inhibited activation of ERK, p38, and JNK MAP kinases (C57-C58) in an LXR-dependent manner (C59). This inhibitory effect was severely impaired in Abca1-deficient macrophages (C60).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Western blot data showing reduced phosphorylation of MAPKs (C57-C58) is clear. The use of LXR-deficient cells (C59) and Abca1-deficient cells (C60) provides appropriate controls demonstrating specificity and Abca1-dependence. The quantification appears adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "3563e1ef-1148-4723-9b3f-4bda76fe8b0d",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LXR activation suppresses NF-\u03baB signaling downstream of TLR4 in an Abca1-dependent manner. LXR agonist reduced I\u03baB\u03b1 phosphorylation and p65 nuclear abundance (C61-C62) in an LXR-dependent manner (C63). This effect was abolished in Abca1-deficient macrophages (C64), as confirmed by immunofluorescence microscopy (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The NF-\u03baB signaling data (C61-C65) parallels the MAPK findings and is similarly well-controlled. The combination of biochemical fractionation (C62) and immunofluorescence (C65) provides complementary evidence. The Abca1-dependence is clearly demonstrated (C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "ed5e60c6-ff04-42fb-a4d1-955b5e5677d4",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LXR activation inhibits p65 recruitment to inflammatory gene promoters in an Abca1-dependent manner. ChIP assays showed that LXR activation suppressed LPS-induced p65 recruitment to Nos2, Ccl2, and Il1b promoters (C66, C68), with no binding to the negative control Hbb2 promoter (C67). This inhibitory effect was lost in Abca1-deficient macrophages (C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ChIP data (C66-C69) provides direct evidence that LXR affects NF-\u03baB binding to target promoters. The negative control (C67) is appropriate. The loss of effect in Abca1-deficient cells (C69) is consistent with the other signaling data. This mechanistically links the upstream signaling effects to transcriptional outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b7566e73-29cc-49ee-8d72-879d548af0e3",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LXR activation reduces cholesterol content of detergent-resistant membrane microdomains and alters membrane fluidity in an Abca1-dependent manner. LXR activation reduced cholesterol in Flotillin-enriched membrane fractions in wild-type but not LXR-deficient (C71) or Abca1-deficient macrophages (C72), without affecting lipid raft abundance (C73). Membrane rigidity decreased with LXR activation (C77) in an Abca1-dependent manner (C78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The membrane fractionation data (C71-C72) and laurdan fluorescence measurements (C77-C78) provide complementary biochemical and biophysical evidence for membrane remodeling. The controls using LXR-deficient and Abca1-deficient cells are appropriate. The distinction between raft cholesterol content and raft abundance (C73) is important and well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "fd3c5052-7c7c-4155-8fab-ac79670cfa95",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "LXR inhibits signaling from TLRs 2, 4, and 9 (which use MyD88) but not TLR3 (which does not use MyD88), in an Abca1-dependent manner. LXR activation blunted responses to TLR2 and TLR9 agonists (C79) but not TLR3 (C80). Loss of Abca1 inhibited LXR's ability to repress gene expression stimulated by TLR2, TLR4, and TLR9 (C81), suggesting that LXR targets a common component of these pathways (C82, C110).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential effects on MyD88-dependent (TLR2, 4, 9) versus MyD88-independent (TLR3) pathways (C79-C80) provide strong mechanistic insight. The Abca1-dependence across multiple TLRs (C81) supports the inference of a common target (C82). This narrows down the mechanism considerably.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "cd0ba6d7-37cc-4a53-a89b-d54ebb59e9d2",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "LXR activation disrupts recruitment of MyD88 and TRAF6 to lipid rafts in an Abca1-dependent manner, leading to impaired downstream signaling. TLR4 surface expression was not affected by LXR (C85), but LPS-dependent recruitment of MyD88 and TRAF6 to detergent-resistant membrane fractions was markedly reduced by LXR agonist (C86). This effect was lost in Abca1-deficient macrophages (C87), suggesting that reduced raft cholesterol disrupts TLR4 signaling complexes (C88-C89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The membrane fractionation data showing reduced MyD88 and TRAF6 recruitment (C86-C87) provides a clear mechanistic link between membrane remodeling and signaling inhibition. The control showing no change in TLR4 surface expression (C85) rules out receptor downregulation as a mechanism. The inference about disrupted signaling complexes (C88-C89) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "9ef86ae6-021d-49b8-9e0d-dd10aa6bac59",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Abca1 is required for LXR-mediated inflammatory repression in vivo. In mice challenged with LPS, inflammatory gene expression in spleen and lung was induced as expected (C90). LXR agonist treatment substantially attenuated this induction in wild-type mice (C91), but little to no repression was observed in mice lacking Abca1 in macrophages (C92), demonstrating that LXR's anti-inflammatory effects in vivo derive primarily from regulation of cholesterol metabolism through Abca1 (C93).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo experiments (C90-C92) validate the in vitro findings in a physiologically relevant context. The use of myeloid-specific Abca1 knockout mice is appropriate for testing the role of macrophage Abca1. The conclusion (C93) is well-supported by the convergence of in vitro and in vivo data throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "bce4a20a-e569-4ea8-981f-96408324c6b2",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LXR-mediated inflammatory repression derives primarily from transcriptional activation of metabolic genes, particularly Abca1, which alters membrane cholesterol homeostasis and secondarily inhibits inflammatory signaling. This represents a unified mechanism where direct transcriptional activation underlies the dual biological functions of LXRs in metabolism and inflammation (C3, C8, C17, C100).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C3, C8, C15-C17, C98, C100) is well-supported by the comprehensive set of experiments throughout the manuscript. The data from domain mutants, Abca1 requirement, membrane remodeling, signaling inhibition, and in vivo validation all converge on this unified model. This represents a paradigm shift from the transrepression model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "b01085f6-f6a8-4f6f-966b-75b26c45c058",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Local membrane composition is important in the activation of TLR signaling pathways. The data reveal an unexpected connection between Abca1-dependent membrane cholesterol distribution and TLR-mediated inflammatory signaling (C18, C94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion (C18, C94) is supported by the membrane fractionation, fluidity measurements, and adaptor protein recruitment data. While the importance of membrane composition for TLR signaling was previously known (C75, C109), the specific connection to LXR/Abca1 regulation is novel and well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "fcfc15e8-3f32-4207-be0a-90157ea07ee0",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors' prior studies suggesting that LXR-mediated inflammatory repression was not mediated by inhibition of NF-\u03baB signaling likely had technical limitations. Subsequent analysis revealed previously unrecognized impairments in NF-\u03baB and MAPK signaling with LXR activation (C108).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge limitations of their prior work (C105-C107) and provide new data (C108) that corrects their previous conclusions. This demonstrates scientific rigor and self-correction. The new data on NF-\u03baB signaling (Figures 6-8) is convincing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "da030ab2-27c2-4af1-897c-0ddb47fe13b1",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "LXRs are transcriptional regulators of lipid homeostasis with anti-inflammatory effects. LXRs control expression of genes involved in cholesterol, fatty acid, and phospholipid metabolism through direct binding to LXREs (C1, C9). LXRs reciprocally regulate lipid metabolism and inflammation (C95), both of which are central to metabolic diseases (C96).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims (C1, C9, C10, C95, C96) supported by extensive prior literature and citations. They provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior to this study, the transrepression model was believed to be the sole mechanism underlying LXR's anti-inflammatory effects. This model postulated that SUMOylated LXR monomers stabilize repressive complexes on inflammatory gene promoters (C2, C11-C13), though the requirement for SUMOylation had not been tested in cells and animals (C14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C2, C11-C14, C97) accurately describe the prior state of knowledge in the field based on the cited literature. They provide important context for why the current study's findings represent a significant advance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "725dfe8f-af7b-4cf9-bbae-54b49224e85f",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Many synthetic LXR agonists, including GW3965 and T0901317, can exhibit LXR-independent effects on gene expression, especially at high concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is an important caveat (C25) about LXR agonist specificity that is well-known in the field. The authors appropriately note this and demonstrate that their experimental conditions avoid this issue (C21-C24).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "08718134-435e-455e-9b3b-d255086ab33b",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background knowledge claims about Abca1 function, Tangier disease, membrane lipid effects on inflammation, TLR signaling pathways, and SF-1 SUMOylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established facts from prior literature (C44, C45, C75, C83, C84, C103, C104, C109, C111) that provide necessary background context. They are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    },
+    {
+      "id": "826a902d-d2e4-4184-a72f-999637f13862",
+      "content_id": "01e3f7b5-8d0f-40e2-8b3f-9901c79343bb",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Additional LXR target genes involved in lipid handling may contribute to effects on inflammation. The phospholipid-remodeling enzyme Lpcat3 is suggested as one potential additional player (C112-C113).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative claims (C112-C113) about potential additional mechanisms beyond Abca1. While Lpcat3 is cited as affecting inflammatory signaling in hepatocytes (C113), no data is presented in this manuscript to test its role in the LXR-mediated effects described here. This is appropriate speculation for future work but not a supported result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:28:55.466001Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67dcd81f-eb48-41e0-88c9-19cc1eaa7782",
+      "result_id": "21689e64-cdb9-43c6-82ed-e262d3280001"
+    },
+    {
+      "claim_id": "fd537369-75d3-477b-8d11-1adaa9153b07",
+      "result_id": "21689e64-cdb9-43c6-82ed-e262d3280001"
+    },
+    {
+      "claim_id": "ec1dbc6f-db86-4128-a124-eb7231fbb3c0",
+      "result_id": "21689e64-cdb9-43c6-82ed-e262d3280001"
+    },
+    {
+      "claim_id": "ef582790-fa6b-4067-b958-c43662f18401",
+      "result_id": "21689e64-cdb9-43c6-82ed-e262d3280001"
+    },
+    {
+      "claim_id": "697607ca-fb30-4e2f-b485-ba2e0bd26d50",
+      "result_id": "f37a8d88-ca6e-4930-b8f1-67da78fe8846"
+    },
+    {
+      "claim_id": "0061f89a-f30f-4c7d-ad52-fa5567f78577",
+      "result_id": "f37a8d88-ca6e-4930-b8f1-67da78fe8846"
+    },
+    {
+      "claim_id": "762fa3ec-d58a-486c-8e15-0c94194deca9",
+      "result_id": "f37a8d88-ca6e-4930-b8f1-67da78fe8846"
+    },
+    {
+      "claim_id": "bace4b10-f37d-46f6-86c0-9b154ca0433a",
+      "result_id": "f37a8d88-ca6e-4930-b8f1-67da78fe8846"
+    },
+    {
+      "claim_id": "79d852e3-7215-4c9f-8bfb-4e30dcd99d5f",
+      "result_id": "f37a8d88-ca6e-4930-b8f1-67da78fe8846"
+    },
+    {
+      "claim_id": "21e2175d-62e3-4a03-aa33-7a8b0fb95c00",
+      "result_id": "cbf27805-2384-4083-bc17-8975b71fc2cb"
+    },
+    {
+      "claim_id": "3f34bc40-afd3-4b52-b06e-8eaa5e81d35c",
+      "result_id": "cbf27805-2384-4083-bc17-8975b71fc2cb"
+    },
+    {
+      "claim_id": "d72a92d3-5515-4069-921f-ce893c4ca1f6",
+      "result_id": "cbf27805-2384-4083-bc17-8975b71fc2cb"
+    },
+    {
+      "claim_id": "8e52730a-9fdf-4fea-9fb9-d79696153deb",
+      "result_id": "cbf27805-2384-4083-bc17-8975b71fc2cb"
+    },
+    {
+      "claim_id": "f4a676ef-fed8-4bd2-aded-bdaf217fc058",
+      "result_id": "cbf27805-2384-4083-bc17-8975b71fc2cb"
+    },
+    {
+      "claim_id": "d41de213-719a-4ab8-8576-5e33be662779",
+      "result_id": "9373cefa-a87f-4d32-810f-ac02c0fd4605"
+    },
+    {
+      "claim_id": "ac2488aa-345f-47e7-a8fc-cf51fd520789",
+      "result_id": "9373cefa-a87f-4d32-810f-ac02c0fd4605"
+    },
+    {
+      "claim_id": "ae89af50-f079-4de0-b312-1e4eae07fdc1",
+      "result_id": "9373cefa-a87f-4d32-810f-ac02c0fd4605"
+    },
+    {
+      "claim_id": "738030de-0dbd-4491-a507-79dab43d489c",
+      "result_id": "9373cefa-a87f-4d32-810f-ac02c0fd4605"
+    },
+    {
+      "claim_id": "59249def-6543-4914-b12c-224015c2d475",
+      "result_id": "9373cefa-a87f-4d32-810f-ac02c0fd4605"
+    },
+    {
+      "claim_id": "6dcad757-cbd4-455a-86ba-ba42a155b5ba",
+      "result_id": "9373cefa-a87f-4d32-810f-ac02c0fd4605"
+    },
+    {
+      "claim_id": "0fd07c7f-c032-4565-85b2-42ddda9ac7d2",
+      "result_id": "479de322-1487-4d35-b8c8-7f0835537298"
+    },
+    {
+      "claim_id": "19466a25-c4be-4e22-9d7f-68728b84d90a",
+      "result_id": "479de322-1487-4d35-b8c8-7f0835537298"
+    },
+    {
+      "claim_id": "659eec7c-9a42-452e-a23e-f3ec5df60274",
+      "result_id": "479de322-1487-4d35-b8c8-7f0835537298"
+    },
+    {
+      "claim_id": "20271dfd-6905-40bd-a75f-d4d7c14cfe44",
+      "result_id": "479de322-1487-4d35-b8c8-7f0835537298"
+    },
+    {
+      "claim_id": "0afdcfa2-47e7-4d7b-b181-09a1056884a3",
+      "result_id": "479de322-1487-4d35-b8c8-7f0835537298"
+    },
+    {
+      "claim_id": "e2b28616-28e7-46b4-ba34-752cfc4cb856",
+      "result_id": "479de322-1487-4d35-b8c8-7f0835537298"
+    },
+    {
+      "claim_id": "5c8ac78a-a508-4528-8829-ea61709ce9ca",
+      "result_id": "835fdd27-a6d1-461b-8c93-8c8430e8c043"
+    },
+    {
+      "claim_id": "6a823fcf-0b85-4142-9174-47beb40d6081",
+      "result_id": "835fdd27-a6d1-461b-8c93-8c8430e8c043"
+    },
+    {
+      "claim_id": "ca3b242d-323d-4fda-bbcc-6aa418a4bc81",
+      "result_id": "56596261-636c-4019-b6a2-fd9678f9ff5c"
+    },
+    {
+      "claim_id": "02486298-fa22-4517-8a2b-126c2314bd68",
+      "result_id": "56596261-636c-4019-b6a2-fd9678f9ff5c"
+    },
+    {
+      "claim_id": "4ad59327-43c0-4b39-ab25-58866e8d7c42",
+      "result_id": "56596261-636c-4019-b6a2-fd9678f9ff5c"
+    },
+    {
+      "claim_id": "9768f5f6-b4cf-47e6-bda1-500898fb084b",
+      "result_id": "56596261-636c-4019-b6a2-fd9678f9ff5c"
+    },
+    {
+      "claim_id": "cb947b9d-151a-4ddd-853a-57c926878bc9",
+      "result_id": "56596261-636c-4019-b6a2-fd9678f9ff5c"
+    },
+    {
+      "claim_id": "f38a0fc7-6d80-45e4-bcef-7d28ae54a7b6",
+      "result_id": "56596261-636c-4019-b6a2-fd9678f9ff5c"
+    },
+    {
+      "claim_id": "d369c614-4bb2-45d4-9b8d-8b6c3639868f",
+      "result_id": "df2f4f76-8eb8-47e4-9dbe-5f31010a1cef"
+    },
+    {
+      "claim_id": "c4d22237-d371-4b05-90ae-55d09762a46d",
+      "result_id": "df2f4f76-8eb8-47e4-9dbe-5f31010a1cef"
+    },
+    {
+      "claim_id": "40b02c22-5580-4aea-b9f4-3f476cbc771b",
+      "result_id": "df2f4f76-8eb8-47e4-9dbe-5f31010a1cef"
+    },
+    {
+      "claim_id": "0c247cce-7531-4f6b-9f81-683bb2f37a02",
+      "result_id": "df2f4f76-8eb8-47e4-9dbe-5f31010a1cef"
+    },
+    {
+      "claim_id": "30dbbc5c-9e83-4b0b-a52d-07c9c13f7688",
+      "result_id": "df2f4f76-8eb8-47e4-9dbe-5f31010a1cef"
+    },
+    {
+      "claim_id": "1d2c5bf8-0708-4005-97a2-ac49e6b3ae76",
+      "result_id": "71e584ee-3264-4033-be57-25409365a061"
+    },
+    {
+      "claim_id": "08ab2ad9-cca0-45c7-9eb2-5a1ba484db40",
+      "result_id": "71e584ee-3264-4033-be57-25409365a061"
+    },
+    {
+      "claim_id": "620e5a1b-faf5-4a84-8aae-6909537b0b32",
+      "result_id": "71e584ee-3264-4033-be57-25409365a061"
+    },
+    {
+      "claim_id": "5c633f45-5fda-41bf-98d3-1065c9c31a5a",
+      "result_id": "71e584ee-3264-4033-be57-25409365a061"
+    },
+    {
+      "claim_id": "9755d27f-adc6-4b93-83aa-26f2264ccce5",
+      "result_id": "3563e1ef-1148-4723-9b3f-4bda76fe8b0d"
+    },
+    {
+      "claim_id": "33b95ed1-abda-4fd8-80b6-b69ba606e06b",
+      "result_id": "3563e1ef-1148-4723-9b3f-4bda76fe8b0d"
+    },
+    {
+      "claim_id": "d5fbd50d-95d3-4548-91b7-fb48ccd28e03",
+      "result_id": "3563e1ef-1148-4723-9b3f-4bda76fe8b0d"
+    },
+    {
+      "claim_id": "e253946c-7bba-4b65-a459-8abff336fc1d",
+      "result_id": "3563e1ef-1148-4723-9b3f-4bda76fe8b0d"
+    },
+    {
+      "claim_id": "449e1b52-2fb4-4c07-b960-50ceef90fce7",
+      "result_id": "3563e1ef-1148-4723-9b3f-4bda76fe8b0d"
+    },
+    {
+      "claim_id": "cc4bd34a-8958-4da2-bcda-743abaf7b955",
+      "result_id": "ed5e60c6-ff04-42fb-a4d1-955b5e5677d4"
+    },
+    {
+      "claim_id": "a9e6bac7-53d6-4e37-bbd1-d3ddf9947cc5",
+      "result_id": "ed5e60c6-ff04-42fb-a4d1-955b5e5677d4"
+    },
+    {
+      "claim_id": "0fc0a628-3881-40f2-9f5d-da1e00ba37b0",
+      "result_id": "ed5e60c6-ff04-42fb-a4d1-955b5e5677d4"
+    },
+    {
+      "claim_id": "a97a35d0-ffcd-4300-b385-58fcfcaa1b58",
+      "result_id": "ed5e60c6-ff04-42fb-a4d1-955b5e5677d4"
+    },
+    {
+      "claim_id": "057caa4a-f798-4446-b218-e656c4fde4d2",
+      "result_id": "ed5e60c6-ff04-42fb-a4d1-955b5e5677d4"
+    },
+    {
+      "claim_id": "b3c1139d-d5be-453d-81f0-d5cb0d5c1c79",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "11671cb9-80e5-40ce-ba90-14650417917f",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "ccc9c6b5-09f1-4c43-a26f-8a5430e4a620",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "04964f0b-cc8e-40bf-a523-28acf6a4ee81",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "56ef99cf-b901-4cb2-a550-03dd02d6bf5f",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "68f482e2-173f-491e-9994-1af3bc0c0697",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "a86fca2c-2607-462d-83ae-2a3f395a8bf9",
+      "result_id": "b7566e73-29cc-49ee-8d72-879d548af0e3"
+    },
+    {
+      "claim_id": "c4a74732-b588-47e1-95bb-074f02f8ece4",
+      "result_id": "fd3c5052-7c7c-4155-8fab-ac79670cfa95"
+    },
+    {
+      "claim_id": "7bdda9f7-0842-4807-b695-7e811ef612e3",
+      "result_id": "fd3c5052-7c7c-4155-8fab-ac79670cfa95"
+    },
+    {
+      "claim_id": "457b01dd-f4c7-4b86-b03b-c46d1521bfbf",
+      "result_id": "fd3c5052-7c7c-4155-8fab-ac79670cfa95"
+    },
+    {
+      "claim_id": "2bcb75b7-bd36-417d-8092-97894bbde83a",
+      "result_id": "fd3c5052-7c7c-4155-8fab-ac79670cfa95"
+    },
+    {
+      "claim_id": "707120cd-caad-4eec-adf2-721548b32a83",
+      "result_id": "fd3c5052-7c7c-4155-8fab-ac79670cfa95"
+    },
+    {
+      "claim_id": "cfff5afc-d5da-4c77-8d47-77d29e9abbbc",
+      "result_id": "cd0ba6d7-37cc-4a53-a89b-d54ebb59e9d2"
+    },
+    {
+      "claim_id": "f79d5939-1d05-46ed-8791-8c403984963c",
+      "result_id": "cd0ba6d7-37cc-4a53-a89b-d54ebb59e9d2"
+    },
+    {
+      "claim_id": "15d63053-6f28-4b33-8f08-b0af700ed8d2",
+      "result_id": "cd0ba6d7-37cc-4a53-a89b-d54ebb59e9d2"
+    },
+    {
+      "claim_id": "b97fb103-7bcb-4e10-8c5f-d1fcb1327925",
+      "result_id": "cd0ba6d7-37cc-4a53-a89b-d54ebb59e9d2"
+    },
+    {
+      "claim_id": "0f1fcf8c-e23a-4c46-a11a-7be4c5b4de12",
+      "result_id": "cd0ba6d7-37cc-4a53-a89b-d54ebb59e9d2"
+    },
+    {
+      "claim_id": "c866bcba-65d0-4814-9480-f273cc7ba203",
+      "result_id": "9ef86ae6-021d-49b8-9e0d-dd10aa6bac59"
+    },
+    {
+      "claim_id": "4bf4297c-de4c-4379-8196-9b9c3989ed5e",
+      "result_id": "9ef86ae6-021d-49b8-9e0d-dd10aa6bac59"
+    },
+    {
+      "claim_id": "1e43b16d-18f3-4cc6-8403-8152ab696da8",
+      "result_id": "9ef86ae6-021d-49b8-9e0d-dd10aa6bac59"
+    },
+    {
+      "claim_id": "b30e9d7d-8b57-4c1f-af59-948ff5bf2e8b",
+      "result_id": "9ef86ae6-021d-49b8-9e0d-dd10aa6bac59"
+    },
+    {
+      "claim_id": "bedd18ba-dea8-47b7-ac22-e45fe87b31d9",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "d693b0cc-1015-4d9e-88fa-48f863b1678d",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "6844879c-5cc4-44e2-bcdd-a821b3bead60",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "b3c374c8-fc5d-4c99-9641-f060b8053d8e",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "863af5cd-9402-483a-bd2f-d9d9d45d5d60",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "ac3322aa-0523-4cc3-b68b-26a6e03b0e22",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "c313224e-3c78-4778-9817-15470a6a0359",
+      "result_id": "bce4a20a-e569-4ea8-981f-96408324c6b2"
+    },
+    {
+      "claim_id": "65de58fa-58bf-47a5-9cf8-785e8fc7e26c",
+      "result_id": "b01085f6-f6a8-4f6f-966b-75b26c45c058"
+    },
+    {
+      "claim_id": "62d62e46-4b4a-434d-b7f0-f92334f1407c",
+      "result_id": "b01085f6-f6a8-4f6f-966b-75b26c45c058"
+    },
+    {
+      "claim_id": "04e9f9d2-a18f-4609-9d97-3583dce2e9a9",
+      "result_id": "fcfc15e8-3f32-4207-be0a-90157ea07ee0"
+    },
+    {
+      "claim_id": "f552a533-d2b2-4903-8dac-4c226b19946b",
+      "result_id": "fcfc15e8-3f32-4207-be0a-90157ea07ee0"
+    },
+    {
+      "claim_id": "9c50094e-5ea8-4292-973a-f5307faed15b",
+      "result_id": "fcfc15e8-3f32-4207-be0a-90157ea07ee0"
+    },
+    {
+      "claim_id": "9a8255bd-a71f-449b-861b-5b5e014377d1",
+      "result_id": "fcfc15e8-3f32-4207-be0a-90157ea07ee0"
+    },
+    {
+      "claim_id": "4bc022be-ac14-494f-b502-674ec77e13d1",
+      "result_id": "da030ab2-27c2-4af1-897c-0ddb47fe13b1"
+    },
+    {
+      "claim_id": "4de66b7d-ebae-4928-a772-40dec6527e78",
+      "result_id": "da030ab2-27c2-4af1-897c-0ddb47fe13b1"
+    },
+    {
+      "claim_id": "fe6e0756-b9c7-4040-9585-a28f832d953e",
+      "result_id": "da030ab2-27c2-4af1-897c-0ddb47fe13b1"
+    },
+    {
+      "claim_id": "fbcb88d5-1b50-4bbc-8e89-606ee67c46df",
+      "result_id": "da030ab2-27c2-4af1-897c-0ddb47fe13b1"
+    },
+    {
+      "claim_id": "ba2a2c1b-245b-4e3c-a85e-cb0b4657fc23",
+      "result_id": "da030ab2-27c2-4af1-897c-0ddb47fe13b1"
+    },
+    {
+      "claim_id": "7a2d4b06-defe-4e35-b918-6181fe62655f",
+      "result_id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9"
+    },
+    {
+      "claim_id": "9c34e959-a8fd-4974-8398-793df009ef6a",
+      "result_id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9"
+    },
+    {
+      "claim_id": "f5e66741-6e8a-4d5f-8cd5-95dc7bff1c46",
+      "result_id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9"
+    },
+    {
+      "claim_id": "49958bf0-d33e-47bc-add1-51ff1ea681a4",
+      "result_id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9"
+    },
+    {
+      "claim_id": "19c48a89-172d-4c60-958e-313861e0160b",
+      "result_id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9"
+    },
+    {
+      "claim_id": "979d86c6-d979-426b-9cee-5e65ed5b5a5d",
+      "result_id": "f8b2e1a7-59fd-4e22-8d52-54fb776bc0b9"
+    },
+    {
+      "claim_id": "d8eabff7-d611-4e68-b1f6-f7e4e48704d6",
+      "result_id": "725dfe8f-af7b-4cf9-bbae-54b49224e85f"
+    },
+    {
+      "claim_id": "98380a4a-e65e-4f95-a2f8-70ff7402e31e",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "b5562213-3127-45ed-80ca-f066202faad3",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "e43330ef-3c4c-4f4a-80a3-a37cf92bbdc5",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "077d4f91-34d2-40f6-8b81-6b6152f39b32",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "642a88c5-8d0e-4de5-add2-186d51e8e5d9",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "ff4cb881-fa7f-4b3e-a9f9-a89e873b45da",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "f0ef048d-cf85-4a29-8a16-564a5295ea99",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "e4892ebe-184c-4d92-b9c9-df319634dcd6",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "754e788e-c616-4a6d-84c9-3c18efabb66a",
+      "result_id": "08718134-435e-455e-9b3b-d255086ab33b"
+    },
+    {
+      "claim_id": "64d1d36e-19f9-4830-8088-73b48031b4a3",
+      "result_id": "826a902d-d2e4-4184-a72f-999637f13862"
+    },
+    {
+      "claim_id": "70930928-5ef2-418c-83c3-a31295c815bc",
+      "result_id": "826a902d-d2e4-4184-a72f-999637f13862"
+    }
+  ],
+  "comparisons": []
+}

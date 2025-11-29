@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SRP is efficiently recruited to mammalian ribosomes containing a transmembrane domain (TMD) inside the ribosomal exit tunnel in a 'scanning' mode. Maximal recruitment requires 14 hydrophobic residues in the tunnel, with detectable recruitment at 10-11 residues. The 3R mutant (with three hydrophobic residues changed to arginine) largely abolishes recruitment, demonstrating specificity for hydrophobic sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C60 provide converging biochemical evidence from affinity purification experiments showing TMD-dependent SRP recruitment. The systematic truncation and deletion analyses (C53-C58) establish the hydrophobicity threshold, while the 3R mutant controls (C49, C52) demonstrate specificity. The depletion data (C47-C48) quantitatively supports efficient recruitment despite low RNC abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cryo-EM structures of native mammalian SRP-ribosome complexes in scanning (3.9 \u00c5) and engaged (3.8 \u00c5) states reveal nearly identical overall SRP architecture in both states. The Alu domain is positioned at the GTPase center and the M domain is pre-positioned at the exit tunnel even in the scanning state, suggesting SRP has a single stable binding site on the ribosome for both functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C61-C62 establish the structural resolution, while C70-C75 describe the key finding of architectural similarity between states. The structural data directly supports the conclusion that SRP maintains a single binding site. However, the claim that no conformational changes occur in the exit tunnel (C65) at this resolution leaves open the possibility of subtle changes below detection limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The structures reveal atomic-resolution details of SRP-ribosome interactions. SRP54 is anchored via specific hydrogen bonds between its N-domain and ribosomal proteins uL23, uL29, and 5.8S rRNA. The Alu domain interacts with the ribosome through SRP14 contacts with 18S rRNA. Structural differences from heterologous plant-mammalian complexes may explain differential effects on translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide specific atomic-level interaction data supported by the high-resolution structures. The proposed explanation for translation arrest differences (C81) is reasonable but remains speculative as it is based on structural comparison rather than functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In the engaged state, the M domain hydrophobic groove contains ~12 residues of the TMD in an alpha-helical conformation. Two additional C-terminal helices of SRP54 (\u03b1C1 and \u03b1C2), not present in previous crystal structures, form an amphipathic 'lid' that surrounds and shields the hydrophobic TMD substrate from aqueous solvent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe the TMD binding consistent with prior work. The identification of the C-terminal helices (C85-C90) is well-supported by multiple lines of evidence: they are the only unaccounted residues (C87), contain predicted helices of appropriate length (C88), and are amphipathic (C89), making them ideal for the proposed shielding function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "In the scanning state, the \u03b1C2 helix occupies the hydrophobic groove of the M domain, auto-inhibiting substrate binding. Upon TMD engagement, the hydrophobic signal displaces \u03b1C2, which then repositions to act as a protective lid over the bound TMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe the structural observations showing reduced \u03b1C2 density in its 'lid' position but clear helical density in the groove during scanning. This supports the displacement mechanism proposed in C10-C12. While the authors acknowledge they cannot completely exclude the nascent chain occupying the groove, they provide reasonable arguments against this alternative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Alu domain occupancy at the GTPase center is mutually exclusive with translational GTPase binding, yet SRP remains bound during the 35 translation cycles separating scanning and engaged states. Competition experiments with Hbs1-DN show that scanning SRP can be partially displaced (~70%), while engaged SRP forms a stable ternary complex with the ribosome and Hbs1-DN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 present biochemical data demonstrating differential stability of scanning vs. engaged SRP in the presence of a GTPase. The use of Hbs1-DN as a surrogate for eEF1/eEF2 is well-justified, and the competition and ternary complex experiments provide converging evidence for the model. The interpretation that the flexible RNA linker allows Alu domain displacement without complete SRP dissociation is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A subset of particles in the engaged dataset shows a ternary complex containing the ribosome, eEF2, and SRP, with the S domain at the exit tunnel and the Alu domain at an alternate position on the 40S subunit. The poor density for the Alu domain suggests it is dynamic when displaced from the GTPase center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe direct structural evidence for the ternary complex predicted by the biochemical experiments. The observation of an alternate Alu domain position with poor density is consistent with the proposed model of dynamic Alu domain behavior during translation elongation. However, whether this alternate position is physiologically relevant remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "SRP is recruited to actively translating ribosomes in a TMD-dependent manner even when the TMD never emerges from the exit tunnel. This suggests SRP can continuously scan translating ribosomes as a TMD elongates through the tunnel, permitting engagement with essentially no opportunity for TMD exposure to the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 describe an experiment using a stop codon positioned to prevent TMD emergence, demonstrating TMD-dependent SRP recruitment during active translation. This provides direct evidence for the scanning model during ongoing translation. The conclusion that continuous scanning prevents TMD exposure is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Early SRP recruitment (when 12-14 TMD residues enter the tunnel) provides functional advantages: it gives ~21 translation cycles and ~7 additional seconds for targeting, allows SRP to outcompete other hydrophobic binding factors, and enables delivery to the translocon before TMD emergence. This is particularly important for highly hydrophobic TMDs (17-24 residues) that are too long to be fully shielded by the M domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C124 synthesize the experimental findings into a functional model with clear mechanistic advantages. The calculations of time windows (C116, C121) are straightforward. The comparison to signal peptides (C117) and the competitive advantage argument (C120) are well-reasoned. Support from ribosome profiling data (C122) strengthens the physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The mechanism for TMD-dependent SRP recruitment from inside the tunnel likely involves a kinetic model where hydrophobic sequences bias ribosomes toward conformations favorable for Alu domain binding (unratcheted state). This is supported by differential effects of translation elongation inhibitors: cycloheximide (unratcheted state) rescues SRP-limited translocation defects, while anisomycin (ratcheted state) does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C129 propose a mechanistic model for how TMDs inside the tunnel influence SRP recruitment. While the model is plausible and supported by prior literature on translation elongation inhibitors (C126-C127) and tunnel effects (C128-C129), the authors explicitly state this is their 'favored' model (C125) and acknowledge they cannot detect conformational changes at their resolution (C65). This remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on SRP function: SRP is universally conserved and essential for membrane protein biogenesis. It scans nascent chains, preferentially engages hydrophobic targeting signals, and delivers ribosome-nascent chain complexes to the membrane. SRP must selectively recognize cargo, shield hydrophobic domains, and complete targeting before synthesis precludes translocon engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C13-C19 present established background knowledge about SRP function, supported by appropriate citations. These are well-accepted facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on SRP structure: Eukaryotic SRP contains six protein subunits on ~300 nucleotide RNA, divided into S and Alu domains. The SRP54 subunit has N, M, and G domains with distinct functions. The Alu domain interacts at the GTPase center and is thought to slow translation. Prokaryotic SRP is simplified, lacking the Alu domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 present established structural and functional knowledge about SRP, supported by appropriate citations. These provide necessary background for interpreting the new structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on knowledge gaps: Prior structures provided only moderate resolution views of SRP-ribosome interactions without atomic details. The eukaryotic SRP-ribosome interaction was only visualized in heterologous systems with different functional properties. The configuration of the pre-engaged M domain, the mechanism of signal recognition, and the timing of SRP recruitment relative to signal engagement remained unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C44 accurately describe gaps in prior knowledge and controversies in the field, supported by appropriate citations. These establish the rationale and significance of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The off rate of the E. coli SRP S domain is ~0.1-0.3 s\u207b\u00b9, which is far slower than an elongation cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 cites established kinetic data from the E. coli system to support the model of SRP dynamics during translation. While this is from a different organism, the authors appropriately use it as an estimate for the mammalian system.",
+    "result_type": "MINOR"
+  }
+]

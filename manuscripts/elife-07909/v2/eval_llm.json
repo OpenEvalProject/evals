@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Unaligned chromosomes preferentially accumulate near old centrosomes in symmetrically dividing human cells. In untreated HeLa cells, 61.23% of unaligned chromosomes were near old centrosomes. Treatment with 10 ng/ml nocodazole increased this bias to 63.9-71.8% across HeLa and RPE1 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements across different cell lines and conditions (C25, C28, C29, C30) consistently show statistically significant bias (p-values in Table 1) in unaligned chromosome distribution toward old centrosomes. The use of both eGFP-centrin1 and cenexin markers (C30) excludes marker artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The bias in chromosome alignment toward old centrosomes is independent of initial centrosome position and maturation timing. Monastrol washout (74.4% bias) and nocodazole washout (62.6% bias) experiments demonstrate that the asymmetry reflects a permanent difference between centrosomes rather than transient differences at mitotic onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The washout experiments (C32, C34) effectively control for initial positioning and maturation timing by resetting these parameters. The persistence of bias across different experimental manipulations (C33, C35, C36) supports the conclusion of a permanent functional difference. Statistical significance is maintained across conditions (Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Old and young centrosomes have equal microtubule nucleation capacity in mitosis. A microtubule re-nucleation assay revealed no difference between the two centrosomes in HeLa and RPE1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The re-nucleation assay (C37, Figure 2D,E) directly tests microtubule nucleation capacity and shows no significant difference. This negative result is important as it excludes a simple explanation for the chromosome alignment bias and is supported by quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The bias in chromosome alignment depends on CENP-E function. Partial CENP-E inhibition abolished the bias, reducing the percentage of unaligned chromosomes at old centrosomes to 49.87% and 52.29% (not significantly different from 50%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CENP-E inhibition experiments (C38) provide strong functional evidence by eliminating the bias (Table 1 shows non-significant p-values). This establishes CENP-E as a critical mediator of the centrosome age-dependent asymmetry (C39), though the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "Kinetochore-microtubules associated with old centrosomes are more stable than those associated with young centrosomes. Old centrosomes show nearly 3-fold more end-on attachments (13.0% vs 4.7%, p=0.003), 22% higher tubulin acetylation (p<0.0001), and greater resistance to Ca2+-induced destabilization (43.2% vs 56.8% detachment, p=0.014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent assays (C41, C42, C44, C46) converge on the same conclusion using different methodologies: direct visualization of attachment types, tubulin acetylation as a stability marker, and functional Ca2+ destabilization. All show statistically significant differences with appropriate controls (C40, C45). The consistency across methods strongly supports the conclusion (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The difference in kinetochore-microtubule stability is the cause of the chromosome alignment bias. Treatments that either strongly destabilize (Dsn1/Nnf1 depletion) or hyperstabilize (5 nM taxol) all kinetochore-microtubules abolished the alignment bias, while mild stabilization (MCAK depletion) did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental logic is sound: manipulations that equalize microtubule stability between centrosomes (C48, C49) eliminate the bias, while those that don't affect prometaphase stability (C50) maintain it. This provides strong causal evidence linking microtubule stability differences to the alignment phenotype (C51). Figure 3D,I,J support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The chromosome alignment bias does not depend on Aurora-A or Plk1 kinases. While Aurora-A showed modest enrichment on old centrosomes in HeLa cells, this was absent in RPE1 cells, and inhibition of either kinase did not abolish the alignment bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specific difference in Aurora-A localization (C52, C53) combined with the lack of effect upon kinase inhibition (C54) provides strong evidence against these kinases as mediators (C55). The experimental design appropriately tests both localization and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Cenexin is required for the differential microtubule stability and chromosome alignment bias. Cenexin depletion randomized unaligned chromosome distribution and equalized end-on attachment percentages, while ninein depletion had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cenexin depletion experiments (C57, C58) show loss of both the alignment bias and the attachment asymmetry, establishing cenexin as necessary for the phenotype. The ninein control (C56) strengthens this conclusion by showing specificity. The data in Figure 3I,J,D support these claims with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Non-disjoint chromosomes preferentially co-segregate with old centrosomes during anaphase. In 2-5% of anaphases, sister-kinetochore pairs on non-disjoint chromosomes were observed, and 18 out of 21 (85.7%) co-segregated with the old centrosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live-cell imaging (C61, Video 1) combined with high-resolution immunofluorescence confirmation (C62) provides robust evidence for non-disjoint chromosomes. The strong statistical bias (C63, p=0.0015 in Table 2) in their segregation pattern is well-documented across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The differential kinetochore-microtubule stability persists through anaphase and causes biased segregation of non-disjoint chromosomes. Nnf1 and cenexin depletion abolished the mis-segregation bias, while MCAK depletion (which doesn't affect the alignment bias) maintained it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiments (C64, C65, C66) establish a clear link between the prometaphase microtubule stability phenotype and anaphase mis-segregation. The parallel behavior of treatments that affect alignment bias and mis-segregation bias provides strong support for the mechanistic connection (C67, C68). Table 2 shows appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C69",
+      "C70"
+    ],
+    "result": "Centrosome age imposes a cenexin-dependent functional asymmetry on all mitotic spindles in symmetrically dividing cells. This asymmetry manifests as differential kinetochore-microtubule stability that delays chromosome alignment and biases chromosome segregation toward old centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates multiple lines of evidence: the chromosome alignment bias, differential microtubule stability, cenexin dependence, and biased mis-segregation. Claims C4-C9 from the abstract are supported by the experimental results throughout the manuscript. The model in Figure 4D synthesizes these findings. All component claims are well-supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on centrosome structure and the prevailing hypothesis about symmetric divisions. Centrosomes duplicate once per cell cycle, creating old and young centrosomes with structural differences (appendages, ninein) that disappear in mitosis, leading to the assumption of functional equivalence that has never been directly tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C10, C15-C24) establish the background knowledge and rationale for the study. They are appropriately cited and accurately represent the state of the field. Claim C24 correctly identifies the gap in knowledge that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "In asymmetric stem cell divisions, centrosome age affects microtubule nucleation, positioning, and inheritance, with stem cells typically inheriting the old centrosome (except in fly neuroblasts). Old centrosomes also co-segregate with ciliary membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C2, C11-C14) about asymmetric divisions are well-cited and provide important context for the novelty of finding asymmetry in symmetric divisions. The citations support the claims about differential behavior in stem cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "eGFP-centrin1 and cenexin are reliable markers for distinguishing old and young centrosomes. The abundance of eGFP-centrin1 correlates with centriole age, cenexin marks old centrosomes, and both markers co-localize in the vast majority of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of markers (C85, C86, C87) is essential for the study's conclusions. The co-localization data (C85) and citations supporting marker specificity (C86, C87) provide confidence in centrosome identification throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C45"
+    ],
+    "result": "Tubulin acetylation preferentially accumulates on stable microtubules and shows no difference in detyrosinated tubulin levels between old and young centrosome-associated kinetochore-microtubules. Acetylation shows 22% difference while detyrosination shows only 0.3% difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of tubulin acetylation as a stability marker (C43) is well-established and cited. The differential result between acetylation and detyrosination (C45) is important as it shows specificity - not all tubulin modifications differ, only those associated with stability. Figure 3F supports these measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C104",
+      "C105"
+    ],
+    "result": "Cenexin and centriolar appendages have established roles in interphase microtubule organization and ciliogenesis. Cenexin knockout doesn't impair mitotic progression but affects interphase microtubule stability. Appendages consist of multiple proteins including CEP164, CEP123, ninein, and centriolin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C71-C74, C104-C105) about cenexin and appendage composition are well-cited and provide context for understanding how cenexin might affect mitotic microtubules. The citations appropriately support the structural and functional claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Discussion of potential functions and implications of centrosome asymmetry. The authors speculate about possible mitotic functions (protecting stem cells from chromosome loss) and non-mitotic functions (ciliogenesis, interphase microtubule organization), and propose that asymmetric mis-segregation might explain co-occurrence of chromosome gains in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C75-C84) are largely speculative (C76, C77, C78, C79, C81, C84) or cite others' work (C80, C82, C83). While the speculation is reasonable and well-reasoned, it goes beyond what the data directly demonstrate. The connection to cancer chromosome patterns (C82) is correlative. These represent interesting hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Technical background on drugs, proteins, and mechanisms used in the study. These include nocodazole effects, CENP-E function, chromosome alignment mechanisms, Aurora-B function, Mis12 complex proteins, MCAK function, kinase effects, ninein localization, chromosome non-disjunction causes, monastrol mechanism, and tubulin modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These technical claims (C26, C27, C88-C108) provide necessary background for interpreting the experiments. All are appropriately cited and accurately represent established knowledge in the field. They support the experimental design and interpretation but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

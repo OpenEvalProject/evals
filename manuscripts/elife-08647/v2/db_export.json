@@ -1,0 +1,2155 @@
+{
+  "submission": {
+    "id": "2e93cad6-afc1-4f8d-a3c4-efcf59bc7b32",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:55:55.793408Z",
+    "updated_at": "2025-11-29T04:55:55.793408Z"
+  },
+  "content": [
+    {
+      "id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "submission_id": "2e93cad6-afc1-4f8d-a3c4-efcf59bc7b32",
+      "content_type": "manuscript",
+      "content_text": "# KPNB1 mediates PER/CRY nuclear translocation and circadian clock function\n\n## Authors\n\n- Yool Lee<sup>1</sup> ([ORCID: 0000-0003-0498-3342](https://orcid.org/0000-0003-0498-3342))\n- A Reum Jang<sup>2</sup> ([ORCID: 0000-0001-8347-7848](https://orcid.org/0000-0001-8347-7848))\n- Lauren J Francey<sup>1</sup> ([ORCID: 0000-0002-9700-2277](https://orcid.org/0000-0002-9700-2277))\n- Amita Sehgal<sup>2</sup> ([ORCID: 0000-0001-7354-9641](https://orcid.org/0000-0001-7354-9641))\n- John B Hogenesch<sup>1</sup> ([ORCID: 0000-0002-9138-8973](https://orcid.org/0000-0002-9138-8973)) \u2020\n\n### Affiliations\n\n1. Department of Systems Pharmacology and Translational Therapeutics, Institute for Translational Medicine and Therapeutics Perelman School of Medicine at the University of Pennsylvania Philadelphia United States\n2. Department of Neuroscience Howard Hughes Medical Institute, University of Pennsylvania Perelman School of Medicine Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegulated nuclear translocation of the PER/CRY repressor complex is critical for negative feedback regulation of the circadian clock of mammals. However, the precise molecular mechanism is not fully understood. Here, we report that KPNB1, an importin \u03b2 component of the ncRNA repressor of nuclear factor of activated T cells (NRON) ribonucleoprotein complex, mediates nuclear translocation and repressor function of the PER/CRY complex. RNAi depletion of KPNB1 traps the PER/CRY complex in the cytoplasm by blocking nuclear entry of PER proteins in human cells. KPNB1 interacts mainly with PER proteins and directs PER/CRY nuclear transport in a circadian fashion. Interestingly, KPNB1 regulates the PER/CRY nuclear entry and repressor function, independently of importin \u03b1, its classical partner. Moreover, inducible inhibition of the conserved Drosophila importin \u03b2 in lateral neurons abolishes behavioral rhythms in flies. Collectively, these data show that KPNB1 is required for timely nuclear import of PER/CRY in the negative feedback regulation of the circadian clock.\n\n## Introduction\n\nNearly all organisms have circadian clocks, internal timing systems that anticipate and adapt physiology and behavior to daily changes in the light\u2013dark cycle. In eukaryotes, the clock is an interlocked transcriptional\u2013translational feedback loop, which drives rhythmic expression of both core clock genes that make up the oscillator and clock-output genes that drive biological rhythms. These include rhythms in the sleep wake cycle, body temperature, hormone secretion, and energy metabolism (Reppert and Weaver, 2002; Bass and Takahashi, 2010).\n\nMany components and the molecular mechanism of the circadian clock are conserved between flies and mammals. Conserved components include the bHLH-PAS transactivators, CLOCK/NPAS2 (fly Clk) and BMAL1 (fly Cyc). This heterodimer binds E-box elements in the promoters of two families of transcriptional repressors, the PER1/PER2/PER3 (fly Per) and CRY1/CRY2 (fly Cry) genes. Once translated, PERs and CRYs (Per and Tim in flies) accumulate in a cytoplasmic complex and then translocate into the nucleus to repress the CLOCK-BMAL1 heterodimer, thereby repressing their own transcription (Panda et al., 2002). This primary negative-feedback loop is complemented by an ancillary loop, which while conserved, has different components in mammals and flies. In mammals, the ROR element binding repressors REV-ERB\u03b1/\u03b2 and activators ROR\u03b1/\u03b2/\u03b3 drive rhythmic expression of BMAL1. In flies, vrille (dVRI) or PAR-domain protein-1 (dPDP1) make up this ancillary loop and stabilize the Drosophila clock by driving rhythmic expression of Clk (Yu and Hardin, 2006). Further modulation of these feedback circuits occurs at the post-translational level as core clock proteins undergo phosphorylation, nuclear translocation, and protein degradation by several conserved kinases (CKI\u03b4/CKI\u03b5, GSK3\u03b2; double-time [dDBT] and shaggy [dSGG]), phosphatases (PP2A; dPP2A), and E3 ubiquitin ligases (FBXL3, FBXL21; dSLMB1) (Gallego and Virshup, 2007; Hirano et al., 2013; Yoo et al., 2013).\n\nKPNB1 is a nuclear import receptor that mediates docking of nuclear localization signal (NLS)-containing cargo bound to importin \u03b1 to the nuclear envelope, thereby facilitating nuclear entry of the target protein (van der Watt et al., 2013). KPNB1 can also directly recognize the cargo and facilitate nuclear transport independently of importin \u03b1 (Lam et al., 1999; Forwood et al., 2001; Ghildyal et al., 2005). In several intensive molecular analyses, PER1/2 and CRY1/2, have been found to contain a functional NLS for their nuclear entry and transcriptional feedback function (Vielhaber et al., 2000; Miyazaki et al., 2001; Hirayama et al., 2003; Zhu et al., 2003). Furthermore, nucleocytoplasmic shuttling of PER proteins, in conjunction with protein dimerization, phosphorylation and turnover, is critical for clock function (Yagita et al., 2000, 2002). However, the specific carrier molecules responsible for nuclear translocation of the clock proteins have not been fully elucidated. Interestingly, a previous biochemical and cellular study reported that nuclear transport of mouse Cry2 is mediated by its direct interaction with importin \u03b1 family members (RCH1, QIP-1, NPI-2) (Sakakida et al., 2005). However, the functional relevance of these factors in the clock was not evaluated (Sakakida et al., 2005). Moreover, the role of importin \u03b2 was not investigated.\n\nIn recent studies, KPNB1 was identified as a key nuclear importin component of ncRNA repressor of nuclear factor of activated T cells (NFAT) (NRON) (lncRNA repressor of the NFAT) RNA-protein-scaffold complex containing several kinases, CKI\u03b5, GSK3\u03b2, and DYRK2 that regulate NFAT phosphorylation and nuclear translocation in human and Drosophila cells (Gwack et al., 2006; Liu et al., 2011; Sharma et al., 2011). Notably, most of these kinases are also well-known to regulate phosphorylation-related proteolysis and nuclear entry of circadian clock proteins. These data suggested that the clock may share a common molecular mechanism of nuclear translocation with NFAT.\n\nHere, we tested this hypothesis and report that KPNB1 mediates circadian nuclear translocation and feedback repression activities of the PER/CRY complex through direct complex formation, independently of importin \u03b1. Loss of KPNB1 abolished not only rhythmic gene expression in human cells, but also circadian behavior in Drosophila. Collectively, these results highlight the evolutionarily conserved role of the KPNB1 in regulating nuclear translocation and function of the circadian clock.\n\n## Results\n\n### KPNB1 is a required for nuclear translocation of PER/CRY\n\nThe NRON complex is composed of a variety of proteins involved in signal transduction, proteolysis, and nuclear transport of NFAT (Willingham et al., 2005; Sharma et al., 2011). We noted that three of these components, CK1\u03b5 (dco, Dbt), GSK3\u03b2 (sgg), and DYRK1a (mnb), are clock components in both flies and mammals. Moreover, NFAT nuclear translocation has been suggested to be mediated by KPNB1 (Willingham et al., 2005; Sharma et al., 2011). Thus we hypothesized that KPNB1 would also be closely involved in nuclear entry of the PER/CRY complex and thus circadian clock function.\n\nTo test this, first, we explored how KPNB1 knockdown affects cellular localization of the core clock factors. Interestingly, in immunofluorescence (IF) analysis of cells expressing several flag-tagged clock proteins, knockdown of KPNB1 completely blocked (PER1, PER2), partly blocked (CRY1), or didn't significantly block (CRY2, REVERB\u03b1, CLOCK, CHRONO [Anafi et al., 2014]) nuclear accumulation (Figure 1\u2014figure supplement 1). Similar to the flag-tagged proteins, microscopy and immunoblot analysis of cells expressing the Venus (V)-tagged clock proteins (PER1-V, PER2-V, CRY1-V, CRY2-V), KPNB1 knockdown markedly blocked PER1 and PER2 localization and slightly or negligibly effected CRY1 and CRY2 nuclear localization (Figure 1A,B). In many previous studies, PER and CRY proteins have been shown to work together (Tamanini et al., 2005). Hence, we looked into the effect of KPNB1 knockdown on the subcellular localization of various PERs/CRYs complexes using bimolecular fluorescence complementation (BiFC) (Shyu et al., 2006). The BiFC assay showed that KPNB1 depletion significantly impaired nuclear localization of various combinations of PER and CRY proteins (Figure 1C). Notably, nuclear accumulation of the PER2/CRY1 complex was totally blocked by KPNB1 knockdown (Figure 1C). In addition to ectopically expressed clock proteins, KPNB1 depletion substantially increased cytoplasmic accumulation of endogenous PER1/2 and CRY1/2 proteins thus reducing their relative levels in nuclei in most cells (Figure 1D, Figure 1\u2014figure supplement 2). Taken together, these evidence show that KPNB1 serves as an integral nuclear transport receptor of the PER/CRY complex.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig1-v2.jpg)\n\n**Figure 1.:** (A) Fluorescence microscopic analysis of the effect of KPNB1 depletion on subcellular localization of PER1, PER2, CRY1, and CRY2. Representative fluorescence images of U2 OS cells expressing Venus-tagged PER1, PER2, CRY1, and CRY2 (PER1-V, PER2-V, CRY1-V, CRY2-V) in the presence of control and KPNB1 siRNA (left). Quantification of the subcellular distribution of the imaged cells (right). Subcellular localization is categorized as nuclear (Nuc.; orange), cytoplasmic and nuclear (Cyto./Nuc.; gray), and cytoplasmic (Cyto.; blue-green). More than 100 fluorescent cells for each of the images were evaluated. Scale bar: 30 \u00b5m. (B) Immunoblot analysis of nuclear and cytoplasmic extracts of U2 OS cells expressing PER1-V, PER2-V, CRY1-V, and CRY2-V in the presence of control and KPNB1 siRNA using the indicated antibodies to GFP for Venus fused proteins (\u03b1GFP), KPNB1 (\u03b1KPNB1), Tubulin for cytoplasmic fraction (C) marker (\u03b1Tubulin), and TATA box binding protein (TBP) for nuclear fraction (N) marker (\u03b1TBP). Representative images from two independent experiments are shown. (C) Bi-molecular fluorescence complementation analysis of the effect of KPNB1 depletion on subcellular localization of PER1/2-CRY1/2 dimeric complex in various combinations in U2 OS cells. Representative fluorescence images of cells expressing Venus N terminal (VN) or C-terminal (VC)-tagged PER1, PER2, CRY1, and CRY2 (PER1-VN, PER2-VN, CRY1-VC, CRY2-VC) as indicated combinations in the presence of control (siCTL) and KPNB1 siRNA (siKPNB1) (left). Quantification of the subcellular distribution of the imaged cells (right). Subcellular localization is categorized as nuclear (Nuc.; orange), cytoplasmic and nuclear (Cyto./Nuc.; gray), and cytoplasmic (Cyto.; blue-green). More than fluorescent 100 cells for each of the images were evaluated. Scale bar: 30 \u00b5m. (D) Immunoblot analysis of nuclear and cytoplasmic extracts of U2 OS cells in the presence of control and KPNB1 siRNA using the indicated antibodies for endogenous PER1 (\u03b1PER1), PER1 (\u03b1PER2), CRY1 (\u03b1CRY1), CRY2 (\u03b1CRY2), KPNB1 (\u03b1KPNB1), Tubulin for cytoplasmic fraction (C) marker (\u03b1Tubulin), and Lamin for nuclear fraction (N) marker (\u03b1Lamin). Representative images from three independent experiments are shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantitative RT-PCR analysis of KPNB1 knockdown efficiency in control (siCTL) and KPNB1 siRNA (siKPNB1)-treated U2 OS cells. The data presented are the means \u00b1 S.E. of triplicate samples. (B) Representative images of IF detection of endogenous expression of KPNB1 using anti-KPNB1 (\u03b1KPNB1) in control and KPNB1 siRNA-treated U2 OS cells. Scale bar: 10 \u03bcm. (C) Fluorescence microscopic analysis of KPNB1 knockdown effect on subcellular localization of PER1, PER2, CRY1, and CRY1 in U2 OS cells. Representative images were captured after immunostaining cells expressing flag-tagged PER1, PER2, CRY1, CRY2, CLOCK, REV-VERB\u03b1, CHRONO (PER1Flag, PER2Flag, CRY1Flag, CRY2Flag, CLOCKFlag, REV-VERB\u03b1Flag, CHRONOFlag) in the presence of control or KPNB1 siRNA (left panels). The images were taken with fluorescence imaging microscopy using specific filter sets for TRITC (Red; Flag tagged protein) and DAPI (Blue; Nuclei). DAPI (Blue) merged images was presented in each of the image panels. For quantification analysis, subcellular localization is categorized as nuclear (Nuc.; orange), cytoplasmic and nuclear (Cyto./Nuc.; gray), and cytoplasmic (Cyto.; blue-green) (right panels). More than 100 cells for each of the images were evaluated. Scale bar: 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative images were captured after immunostaining endogenous PER1, PER2, CRY1, and CRY2 with anti-PER1 (\u03b1PER1), anti-PER2 (\u03b1PER2), anti-CRY1 (\u03b1CRY1), or anti-CRY2 (\u03b1CRY2) in control (siCTL) and KPNB1 siRNA (siKPNB1)-treated U2 OS cells. DAPI (Blue) merged images was presented below each of the image panels. Scale bar: 20 \u03bcm. For quantification of subcellular localization, nuclear (Nuc.; orange) and cytoplasmic (Cyto.; blue-green) signals in cells (CTL, n = 10; siKPNB1, n = 10) for each of the image panels were measured using densitometer and presented in the bottom. Asteriks denote the statistical significance (***p < 0.0005, by Student's t-test).\n\n### KPNB1 regulates rhythmic nuclear localization and repressor activity of PER/CRY through direct complex formation\n\nTo investigate the detailed mechanism of the PER/CRY nuclear entry by KPNB1, we performed co-immunoprecipitation experiments with cells expressing the Venus-tagged PER and CRY proteins. KPNB1 interacted more strongly with PER1 and PER2 proteins than either CRY1 or CRY2 (Figure 2, Figure 2\u2014figure supplement 1A,B). This suggested that PER proteins may play the leading role in PERs/CRYs nuclear translocation with KPNB1. In support of this, by IF KPNB1 co-localized with both cytoplasmic and nuclear PER2 (Figure 2B, Figure 2\u2014figure supplement 1C). Correspondingly, KPNB1 strongly interacted with the endogenous PER2 in co-immunoprecipitation analysis using mouse liver tissue extracts (Figure 2C). To investigate the circadian role of KPNB1 in nuclear localization of PER/CRY, we prepared cytoplasmic and nuclear extracts from mouse liver tissues collected at 4 hr intervals for 24 hr in constant darkness. By immunoblot analysis, KPNB1 exhibited a circadian pattern of nucleocytoplasmic localization with its nuclear abundance peaking at circadian time (CT) 14\u201318, when the intensive nuclear accumulation of PER2 and CRY1 occurred (Figure 2D). Concomitantly, we observed the significant decrease of mRNA expression of E-box dependent clock genes (Per1, Dbp, Nr1d1, Nr1d2) targeted by the clock repressors in their nuclear accumulation phase (Figure 2E). Thus, these data clearly suggest that KPNB1 is responsible for circadian nuclear import and repressor activity of the PER/CRY complex in clock gene expression in mouse liver.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig2-v2.jpg)\n\n**Figure 2.:** (A) Immunoprecipitation (IP) analysis of interactions of KPNB1 with PER2. U2 OS cells were transfected with Venus-tagged PER2, and then immunoprecipitated with anti-GFP antibody (IP: \u03b1GFP). The immunoprecipitates were analyzed by immunoblotting with anti-KPNB1 (IB: \u03b1KPNB1) or anti-GFP antibody (IB: \u03b1GFP). Representative images from three independent experiments are shown. (B) Immunofluorescence (IF) analyses of subcellular colocalization of PER2 with KPNB1. U2 OS cells expressing PER2-V were fixed and immunostained with antibody to endogenous KPNB1. The representative images were captured by fluorescence imaging microscopy using specific filter sets for FITC (green; PER-V), TRITC (Red; \u03b1KPNB1), and DAPI (Blue; Nuclei). See Figure 2\u2014figure supplement 1. Scale bar: 10 \u00b5m. (C) Coimmunoprecipitation of PER2 with endogenous KPNB1. Liver extracts were immunoprecipitated (IP) with anti-KPNB1 or control IgG antibodies, and the immunoprecipitated proteins were probed with antibodies to PER2, KPNB1 as well as GAPDH as negative control and IgG light chain as a positive control for the IP. Representative images from three independent experiments are shown. (D) Immunoblotting analysis using cytoplasmic and nuclear extracts prepared from mouse liver tissues collected at 4 hr interval as indicated for 24 hr in constant darkness (CT: Circadian time). Anti-PER2, anti-CRY1, and anti-KPNB1 antibodies were used for detecting endogenous PER2, CRY1, and KPNB1 proteins. Anti-Tubulin antibody (\u03b1Tubulin) for cytoplasmic fraction (Cyto) marker and anti-Lamin (\u03b1Lamin) for nuclear fraction (Nuc) marker were used for loading controls respectively. Representative images from two independent experiments are shown. (E) Circadian expressions of endogenous clock gene mRNAs (Per1, Dbp, Nr1d1, Nr1d2) were determined by quantitative RT-PCR analysis of mouse liver tissue samples collected at 4 hr interval as indicated for 24 hr in constant darkness (CT; Circadian time). The data presented are the means \u00b1 S.E. of triplicate samples.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) IP analysis of interactions of KPNB1 with PER1, PER2, CRY1, and CRY2. U2 OS Cells were transfected with Venus-tagged PER1, PER2, CRY1, and CRY2 (PER1-V, PER2-V, CRY1-V, CRY2-V) and then immunoprecipitated with anti-GFP antibody (IP: \u03b1GFP). The immunoprecipitates were analyzed by immunoblotting with anti-KPNB1(IB: \u03b1KPNB1) or anti-GFP antibody (IB: \u03b1GFP). Representative images from three independent experiments are shown. (B) The intensity of the immunoprecipited protein bands in the data shown in (A) was quantified by densitometry (ImageJ), and the data are shown as means \u00b1 S.E. of three independent experiments. (C) IF analyses of subcellular colocalization of PER2 with KPNB1. U2 OS cells expressing PER2-V were fixed and immunostained with antibody to endogenous KPNB1. The representative images were captured by fluorescence imaging microscopy using specific filter sets for FITC (green; PER2-V), TRITC (Red; \u03b1KPNB1), and DAPI (Blue; Nuclei). Scale bar: 10 \u03bcm.\n\n### KPNB1 regulates transcriptional repressor activity of PERs/CRYs and circadian gene expression independently of importin \u03b1 (KPNA2)\n\nTo investigate the role of KPNB1 in clock function, we used RNAi to knockdown KPNB1 in U2 OS cells and found substantially elevated Per1 promoter activity, consistent with the hypothesis that this knockdown inhibited the localization and function of the PER/CRY complex (Figure 3A, Figure 3\u2014figure supplement 1). In contrast, the parallel depletion of the other NRON complex nucleocytoplasmic transport proteins, TNPO1, CSE1L, did not significantly affect their repressor activities (Figure 3A, Figure 3\u2014figure supplement 1, [Willingham et al., 2005]). In support of this, chromatin immunoprecipitation (ChIP) analysis targeting the first E-box region of human PER1 (hPer1) promoter revealed significantly less recruitment of both PER1 and PER2 to the CLOCK/BMAL1 responsive element in the KPNB1-depleted U2 OS cells (Figure 3B\u2013D). Moreover, the overall expression levels of several E-box dependent genes (PER1, CRY1, DBP, REV-ERB\u03b2) were upregulated as a result of KPNB1 knockdown (Figure 3E), consistent with loss of repressor function. Conversely, overexpression of KPNB1 markedly down-regulated CLOCK/BMAL1-activated PER1 transcription, probably by facilitating PER/CRY localization to the nucleus (Figure 3\u2014figure supplement 2). Correspondingly, KPNB1 overexpression significantly down-regulated endogenous mRNA expression of these E-box-regulated genes with no significant effect on BMAL1 expression (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig3-v2.jpg)\n\n**Figure 3.:** (A) HEK293T cells were transiently transfected with Per1-Luc reporter construct alone or cotransfected with plasmids expressing CLOCK, BMAL1, PER1, PER2, CRY1, CRY2, in the presence of control (siCTL: black), CSE1L (siCSE1L: light green), KPNB1 (siKPNB1; gray red), and TNPO1 siRNA (siTNPO1: violet) as indicated. After 24 hr, the cells were lysed and Per1 promoter-driven luciferase activities were measured and normalized with pRL-TK activity. Results of one representative experiment of three independent experiments are shown. (B) Schematic diagram of the human PER1 promoter and primers used for ChIP assay. (C, D) ChIP assay of PER1 or PER2 binding to the E box in hPER1. Control (siCTL: black) and KPNB1 siRNA (siKPNB1; gray red)-treated cells (U2 OS) were subjected to ChIP assays using anti-PER1 (\u03b1PER1) or anti-PER2 (\u03b1PER2) antibody. ChIP DNA samples were quantified by quantitative real-time RT-PCR. The data presented are the means \u00b1 S.E. of triplicate samples (**p < 0.005, *p < 0.05, by Student's t-test). (E) Quantitative real-time RT-PCR analysis of expression of endogenous PER1, CRY1, DBP, REVERB\u03b2, and BMAL1 mRNAs in control (siCTL: black), KPNB1-depleted (siKPNB1; gray red) or overexpressed (KPNB1OV; blue green) cells (U2 OS). The data presented are the means \u00b1 S.E. of triplicate samples (**p < 0.005, *p < 0.05, by Student's t-test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Effects of knockdown of TNPO1, KPNB1, CSE1L on Per1 promoter activity. HEK293T cells were transiently transfected with Per1-Luc reporter construct in the presence of control siRNA (siCTL: dark blue) or four siRNAs targeting each of CSE1L (siCSE1L 1\u20134: light green), KPNB1(siKPNB1 1\u20134; gray red), and TNPO1 siRNA (siTNPO1 1\u20134: violet) as indicated. After 24 hr, cells were lysed and Per1 promoter-driven luciferase activities were measured and normalized with pRL-TK activity. Results of one representative experiment of three independent experiments are shown. (B) Quantitative RT-PCR analysis of knockdown efficiencies of four siRNAs targeting each of CSE1L (siCSE1L 1\u20134: light green), KPNB1 (siKPNB1 1\u20134; gray red), and TNPO1 siRNA (siTNPO1 1\u20134: violet) introduced in HEK293T cells as indicated.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic illustration of full-length (1\u2013876) and mutant (1\u2013771) KPNB1 engineered with a deletion of the importin-\u03b1 binding domain on the C-terminus. (B) Deletion of the importin-\u03b1 binding domain does not affect the down-regulation of Per1 promoter activity by KPNB1. HEK293T cells were transiently transfected with Per1-Luc reporter construct alone (left) or cotransfected with plasmids expressing full-length and mutant KPNB1 (KPNB1-WT, KPNB1-[1\u2013771]) as indicated combination. After 24 hr, cells were subjected to lysis and Per1 promoter-driven luciferase activities were measured and normalized with pRL-TK activity. The data presented are the means \u00b1 S.E. of triplicate samples. (C) Deletion of the importin-\u03b1 binding domain does not affect the down-regulation of CLOCK-BMAL1-mediated Per1 transcription by KPNB1. HEK293T cells were transiently transfected with Per1-Luc reporter construct alone (left) or cotransfected with plasmids expressing CLOCK, BMAL1, full-length or importin-\u03b1 binding domain deficient mutant of KPNB1 (KPNB1-WT, KPNB1-[1\u2013771]) as indicated combination. Similar transcriptional analysis was performed, as in (B).\n\nNotably, the KPNB1 activity was not dependent on importin \u03b1, a well-known nuclear transport partner, as deletion of the importin \u03b1 binding domain of KPNB1 did not significantly affect the transcriptional regulation (Figure 3\u2014figure supplement 2A\u2013C) (Kutay et al., 1997). Importantly, knockdown of KPNB1 in U2 OS cells severely disturbed circadian bioluminescence reporter activity driven by the Per2 promoter, whereas depletion of importin \u03b11 (KPNA2) or importin \u03b15 (KPNA1) did not affect the circadian rhythmicity (Figure 4A,B, Figure 4\u2014figure supplement 1A,B, Figure 4\u2014figure supplement 3A,B). These knockdown phenotypes correspond to previous reports showing that most of the other importin \u03b1 isoforms were not critical for circadian rhythmicity (Wu et al., 2009; Zhang et al., 2009). In conjunction with these results, fluorescence microscopy analysis revealed that KPNA2 or KPNA1 depletion did not alter PER2 nuclear localization, which was completely blocked by KPNB1 depletion in U2 OS cells stably expressing PER2-Venus (Figure 4\u2014figure supplement 1C,D, Figure 4\u2014figure supplement 3C,D). On the other hand, KPNB1 depletion severely disrupted circadian transcription of several clock genes (PER1, PER2) in dexamethasone (Dex)-synchronized cells with altered nuclear accumulation of PER and CRY proteins (Figure 4C,D). Taken together, these data show that KPNB1 gates PER and CRY localization to the nucleus independently of importin \u03b1 and plays an indispensable role in negative feedback regulation of the circadian clock in human cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig4-v2.jpg)\n\n**Figure 4.:** (A) Immunoblot analysis of KPNB1 knockdown efficiency with anti-KPNB1 (\u03b1KPNB1) in control (siCTL) and KPNB1 siRNA (siKPNB1)-treated U2 OS cells. Anti-GAPDH antibody (\u03b1GAPDH) was used as a loading control. (B) Bioluminescence recordings of dexamethasone (Dex)-synchronized control (siCTL) and increasing dose of KPNB1 siRNA (siKPNB1 0.5\u00d7/1\u00d7)-treated U2 OS cells expressing Per2 promoter-driven destabilized luciferase (left; pPer2-dLuc). The Bioluminescence recordings were detrended by a 24-hr moving average subtraction (right). (C) Altered rhythmic expression of KPNB1, PER1, PER2, and CRY1 transcripts by KPNB1 depletion. mRNA expressions of the target genes were determined by quantitative RT-PCR in control or KPNB1-depleted U2 OS cells over the course of 44 hr after 24 hr upon Dex treatment. The data are shown with the mean value of triplicate samples in each time point. (D) KPNB1 knockdown alters rhythmic nuclear accumulation of PER and CRY proteins. Immunoblotting analysis using cytoplasmic and nuclear extracts prepared from control or KPNB1-depleted U2 OS cells collected at 4 hr interval over the course of 44 hr after 24 hr of Dex treatment. Anti-PER2, anti-CRY1, anti CRY2, and anti-KPNB1 antibodies were used for detecting endogenous PER2, CRY1, CRY2 and KPNB1 proteins. Anti-Tubulin antibody (\u03b1Tubulin) for cytoplasmic fraction (Cyto) marker and anti-TATA binding protein (\u03b1TBP) for nuclear fraction (Nuc) marker were used for loading controls respectively. Representative images from two independent experiments are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Immunoblot analysis of KPNA2 (importin-\u03b1) knockdown efficiency with anti-KPNA2 (\u03b1KPNA2) in U2 OS cells treated with control siRNA (siCTL) or each of three KPNA2 siRNAs (siKPNA2-1, siKPNA2-2, siKPNA2-3). Anti-GAPDH antibody (\u03b1GAPDH) was used as a loading control. (B) KPNA2 depletion does not affect circadian promotor activity rhythm. 48 hr after treatment with control siRNA (siCTL) or each of three KPNA2 siRNAs (siKPNA2-1, siKPNA2-2, siKPNA2-3) in pPer2-dLuc reporter cells (U2 OS), the cells were synchronized with Dex and monitored in real-time bioluminescence recorder. (C) Representative images were captured after immunostaining endogenous KPNA2 with anti-KPNA2 (\u03b1PER1) in control (siCTL) and KPNB1 siRNA (siKPNB1)-treated U2 OS cells. (D) KPNA2 depletion does not affect subcellular localization of PER2. Fluorescence microscopic analysis of the effect of KPNA2 or KPNB1 depletion on subcellular localization of PER2. Representative fluorescence images of U2OS cells stably expressing PER2-Venus (PER2-V) in the presence of control (siCTL: upper panels), KPNA2 (siKPNA2: middle panels), or KPNB1 siRNA (siKPBN1: lower panels) were captured by fluorescence imaging microscopy using specific filter sets for FITC (green; PER2-V) and and DAPI (Blue; Nuclei). (E) Effect of KPNA2 overexpression on PER2 localization. Representative fluorescence images of U2 OS cells stably expressing PER2-Venus (PER2-V) with the transfection of control (CTL-Sport6-OV: upper panels [20\u00d7]) or KPNA2 encoding plasmids (KPNA2-Sport6-OV: middle [20\u00d7] and bottom panels). The bottom panels show highly magnified images representative of middle panel images. The images were captured by fluorescence imaging microscopy using specific filter sets for FITC (green; PER2-V), TRITC (Red; \u03b1KPNA2), and DAPI (Blue; Nuclei).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Immunoblot analysis of nuclear and cytoplasmic extracts of U2 OS cells in the presence of control and KPNA1 siRNA using the indicated antibodies for endogenous CRY2 (\u03b1CRY2) and KPNB1 (\u03b1KPNB1), Tubulin for cytoplasmic fraction (C) marker (\u03b1Tubulin), and TATA binding protein (TBP) for nuclear fraction (N) marker (\u03b1TBP). (B) Fluorescence microscopic analysis of the effect of KPNA2 depletion on subcellular localization of CRY2. Representative fluorescence images of subcellular localization of endogenous CRY2 (upper panels), or ectopically expressed Flag-CRY2 (middle panels), CRY2-Venus (CRY2-V; lower panels) in U2 OS cells treated with control siRNA (siCTL; left panels) or KPNA2 siRNA (siKPNA2; right panels). The images were taken using specific filter sets for TRITC (Red; \u03b1CRY2, Flag-CRY2), FITC (green; PER2-V), and DAPI (Blue; Nuclei). DAPI (Blue) merged images was presented in each of the image panels.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Quantitative RT-PCR analysis of knockdown efficiencies of three siRNAs targeting KPNA1 (siKPNA1-1; gray red, siKPNA1-2; light green, siKPNA1-3; violet), introduced in U2 OS cells as indicated. (B) KPNA1 depletion does not affect circadian promotor activity rhythm. 48 hr after treatment with control siRNA (siCTL) or each of three KPNA1 siRNAs (siKPNA1-1, siKPNA1-2, siKPNA1-3) in pPer2-dLuc reporter cells, the cells were synchronized with Dex and monitored in real-time bioluminescence recorder. (C) KPNA1 depletion does not affect subcellular localization of PER2. Fluorescence microscopic analysis of the effect of KPNA1 or KPNB1 depletion on subcellular localization of PER2. Representative fluorescence images of U2 OS cells stably expressing PER2-Venus (PER2-V) in the presence of control (siCTL: upper panels), KPNA1 (siKPNA2: middle panels), or KPNB1 siRNA (siKPBN1: lower panels) were captured by fluorescence imaging microscopy using specific filter sets for FITC (green; PER2-V) and and DAPI (Blue; Nuclei). (D) Fluorescence microscopic analysis of the effect of KPNA1 depletion on subcellular localization of CRY2. Representative fluorescence images of subcellular localization of endogenous CRY2 (upper panels), or ectopically expressed Flag-CRY2 (middle panels), CRY2-Venus (CRY2-V; lower panels) in U2 OS cells treated with control siRNA (siCTL; left panels) or KPNA1 siRNA (siKPNA1; right panels). The images were taken using specific filter sets for TRITC (Red; \u03b1CRY2, Flag-CRY2), FITC (green; PER2-V), and DAPI (Blue; Nuclei). DAPI (Blue) merged images was presented in each of the image panels.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Knockdown of various KPNA isoforms does not significantly affect circadian promotor activity rhythm (Blue = Negative control [Control siRNA], Green = Positive control [CRY2 siRNA], Red = Data [Target KPNA siRNA]) (A) KPNA1 (importin \u03b15), (B) KPNA3 (importin \u03b14), (C) KPNA4 (importin \u03b13), (D) KPNA5 (importin \u03b16), (E) KPNA6 (importin \u03b17), (F) KPNA7 (importin \u03b18). Each of data set (A\u2013F) was retrieved from BioGPS website; http://biogps.org (Wu et al., 2009; Zhang et al., 2009).\n\n### Inhibition of a conserved complex member, importin \u03b2, abolishes rhythms in flies\n\nThe majority of core clock components are conserved between flies (cycle, clk, per, cry) and humans (BMAL1/BMAL2, CLOCK/NPAS2, PER1/PER2/PER3, CRY1/CRY2), across 600 million years of evolution. Indeed, the kinases that regulate PER/CRY translocation to the nucleus are also conserved (dbt, sg; CKI\u03b5/CKI\u03b4, GSK3\u03b2). Because KPNB1 was required for rhythmicity in human cells, we investigated the role of the Drosophila ortholog, Fs(2)Ket, ketel, in the fly clock by RNAi followed by locomotor activity monitoring (Mason and Goldfarb, 2009). We used the UAS/Gal4 system to target UAS-ketel RNAi to clock cells in Drosophila (Brand and Perrimon, 1993). dicer was also co-expressed to increase the RNA interference effect (Dietzl et al., 2007). Behavioral analysis of flies expressing UAS ketel RNAi in central clock cells, targeted by the relatively weak Pigment dispersing factor (Pdf)-Gal4 driver, revealed that 62% of flies exhibited no rhythms in constant darkness (DD). Although 38% of flies were rhythmic, their rhythm strength determined by fast Fourier transform (FFT) value was low (Figure 5A\u2013C, Supplementary file 1). With a strong tim-UAS-Gal4 driver that is expressed in all clock cells, 100% of flies were arrhythmic (Figure 5A,B, Supplementary file 1). To exclude possible developmental effects on behavioral phenotypes in ketel knockdown flies, we restricted the ketel dsRNA expression to adult PDF+ neurons using the pdf Gene Switch (pdf-GS). We crossed ketel RNAi transgenic flies with pdf-GS and then drove ketel dsRNAs expression with a drug (RU486) during adulthood (McGuire et al., 2004). After 6\u20137 days in constant darkness, this conditional knockdown of ketel also resulted in weak to arrhythmic locomotor activity (Figure 5D, Supplementary file 1). 81% of flies were arrhythmic and the rest showed weak rhythmicity with low FFT values (Figure 5E, Supplementary file 1). These results show that importin \u03b2 in PDF+ neurons is required for normal locomotor rhythms in adult flies.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig5-v2.jpg)\n\n**Figure 5.:** (A) Flies in which ketel was downregulated in PDF+ cells and in all clock neurons were assayed for rest/activity rhythms in constant dark (DD). (B) Summary of the circadian rhythms of various flies under DD. Quantification shows percentage of rhythmic (R, orange) and arrhythmic (AR, gray) flies (n = 16\u201326). (C) Some rhythmic Pdf-Gal4/+; dicer/+ flies showed weak rhythmicity with lower fast Fourier transform value compared to both ketel RNAi/+; dicer/+ and Pdf-GAL4/+; dicer/+ control flies (**p < 0.001, ***p < 0.0001, by Student's t-test) (See also Supplementary file 1). (D) ketel knockdown in PDF+ cells during adulthoods leads to a long period, which eventually degenerates into arrhythmia in DD. They were fed either 500 mM RU486 or ethanol (EtOH, vehicle control) from the time of entrainment. (E) Rhythm strength of rhythmic RU486-treated flies was lower than that of EtOH-treated control flies after 7 days in DD (*p < 0.05, by Student's t-test) (See also Supplementary file 1). (F, G) PDF expression in ketel knockdown flies was only detected in large lateral ventral neurons (l-LNvs), not in the small lateral ventral neurons (s-LNvs). Downregulation of KETEL in PDF+ cells impairs nuclear translocation of PER in l-LNvs. In RU486-treated flies, PER expression in l-LNvs was detected in cytoplasm at ZT1, a time when PER is nuclear in control flies (***p < 0.0001, by Student's t-test).\n\nTo investigate whether this behavioral phenotype is related to nuclear translocation of clock proteins, we determined the cellular localization of PER in RU486 treated pdf-GS > ketel RNAi flies at ZT1, when PER is nuclear in wild type flies. PDF is expressed in the large and small ventral lateral neurons (LNvs), so we focused on PER expression in these cells. In ketel knockdown flies, PER levels were low and primarily cytoplasmic in large LNvs, while PER staining was intensely nuclear in control flies (Figure 5F,G). The small LNvs were undetectable in ketel RNAi transgenic flies, as is also the case in other arrhythmic fly mutants such as Clk and cyc (Figure 5F, right panel images) (Park et al., 2000). Taken together, these data suggest that like mammalian importin \u03b2, Ketel mediates the nuclear localization of PER, and consequently, is required for functioning of the core circadian clock.\n\n## Discussion\n\nTimely nuclear translocation of the PER/CRY (or Per/Tim) repressor complex is a critical and conserved step in maintaining rhythmicity in metazoans. However, the functional carrier molecules responsible for nuclear localization of the feedback regulators have yet to be determined. Our study provides the first evidence that KPNB1 plays a key role as a nuclear transporter of the PER/CRY complex in negative feedback repression in both mammalian and fly clocks (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08647/elife-08647-fig6-v2.jpg)\n\n**Figure 6.:** KPNB1 directly associates with PERs/CRYs and guides their nuclear entry thus facilitating negative feedback repression of CLOCK/BMAL1-mediated transcription of the repressor genes.\n\nMany mammalian and Drosophila clock studies have shown that phosphorylation and nuclear translocation of PERs and CRYs are closely coupled (Gallego and Virshup, 2007). We noted that CKI\u03b5, GSK3\u03b2, and DYRK2, clock kinases in both mammals and flies, are also constituents of the NRON complex, which regulates cytoplasmic to nuclear translocation of NFAT and consequently its function in the immune systems (Willingham et al., 2005). The NRON complex also contains several molecules involved in protein stability and, critical for this study, nuclear translocation (KPNB1, TNPO1, CSEL1). Subsequent study showed that KPNB1 is the major transport receptor for NFAT nuclear entry and activity upon its dephosphorylation (Sharma et al., 2011).\n\nThus, we investigated the role of KPNB1 on nuclear localization of PER/CRY complex (Figure 1, Figure 1\u2014figure supplement 1). We found that KPNB1 knockdown trapped PER and CRY proteins at the nuclear membrane, preventing their nuclear accumulation. Consistent with this, in our transcriptional study, we found KPNB1 knockdown significantly relieved PER1 transcriptional repression by the PER/CRY complex. Depletion of the other NRON complex translocation factors, TNPO1 and CSE1L, did not (Figure 3, Figure 3\u2014figure supplement 1), nor did they interact with PER or CRY proteins (data not shown). These data suggest a specific role of KPNB1 as a nuclear transport receptor directly involved in negative feedback regulation of the core clock, in addition to its previously described role in NFAT signaling.\n\nDespite not playing a role in PER/CRY function, both TNPO1 and CSE1L displayed circadian gene expression in various mouse tissues, and also affected circadian period length (TNPO1) or were required for cellular rhythms (CSE1L) when silenced ([Pizarro et al., 2013], data not shown). Interestingly, the recent in situ hybridization analysis showed that TNPO1 exhibits circadian expression profiles in its mRNA in SCN (Sato et al., 2011). Thus, these proteins may also play a role in mammalian clock function independent from PER/CRY, perhaps regulating import and export of other clock related components.\n\nNotably, in our biochemical analyses, KPNB1 strongly interacted with PER proteins and exhibited rhythmic nucleocytoplasmic localization and concurrent nuclear accumulation with PER/CRY in transcriptional repression phase (Figure 2). These data suggest KPNB1 drives circadian nuclear entry of PER/CRY. This raises the question: what causes phase-dependent KPNB1 nuclear entry? Most recently, it was reported that intracellular calcium levels regulate importin \u03b2-dependent nuclear import (Kaur et al., 2014). Further, a previous model suggests that KPNB1 nuclear-translocates NFAT immediately after stimulation dependent intracellular calcium influx (Sharma et al., 2011). In this regard, several studies have demonstrated the important function of Ca2+ dynamics in circadian clock regulation. For example, periodic Ca2+ influx in the cytosol, resulting from circadian variation in membrane potential or by the release of Ca(2+) from ryanodine-sensitive stores in SCN neurons, is a critical process for circadian pacemaker function (Ikeda et al., 2003; Lundkvist et al., 2005). Based on this evidence, we postulate that cytosolic Ca2+ rhythms contribute to driving timely nuclear localization of KPNB1 and its PER/CRY cargo as a critical step in negative feedback regulation of the clock.\n\nIn early models, KPNB1 mediates docking of the importin \u03b1/substrate complex in the nuclear pore. More recent evidence shows that KPNB1 can function as nuclear transport receptor independently of importin \u03b1 by directly recognizing substrates such as CREB, AP-1 transcription factors, and parathyroid hormone-related protein (Lam et al., 1999; Forwood et al., 2001; Ghildyal et al., 2005). Interestingly, a previous report showed that importin \u03b1 isoforms (RCH, QIP-1, NPI-2) mediate nuclear localization of CRY2 through direct interactions but did not investigate the functional consequence of this interaction (Sakakida et al., 2005). In this regard, our data suggest that in mammals KPNB1 mediates nuclear localization of the PER/CRY complex independently of importin \u03b1, as overexpression of a KPNB1 mutant lacking an importin \u03b1 interaction domain had a similar phenotype (Figure 1, Figure 3\u2014figure supplement 2). Consistent with this, both KPNA2 and KPNA1, the well-known KPNB1 interacting importin alpha proteins (importin \u03b11, importin \u03b15), when depleted in cells, did not affect circadian rhythmicity or subcellular localization of PER2 or CRY2 protein (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2, Figure 4\u2014figure supplement 3). In a recent report, cytoplasmic retention of PER proteins was accelerated by KPNA2 overexpression in mouse stem cells (Umemura et al., 2014). However, intriguingly we found that KPNA2 overexpression substantially reduced cells expressing PER2-Venus protein in our imaging studies (Figure 4\u2014figure supplement 1E). Moreover, both the endogenous and overexpressed KPNA2 protein localized predominantly in the nucleus, which was confirmed by nuclear cytoplasmic fraction Western analysis (Figure 4\u2014figure supplement 1C,E, Figure 4\u2014figure supplement 2A). This suggests that KPNA2 might regulate PER2 protein level through an unknown mechanism in U2 OS cells. Thus, we speculate that these different results are likely due to the different cell types and species used.\n\nOn the other hand, knockdown of KPNB1 had strong (PER1, PER2), modest (CRY1), or no effect (CRY2) on single tagged PER and CRY proteins, while it had strong effects on all combinations of PER/CRY complexes (Figure 1A\u2013C). Similarly, knockdown of KPNB1 increased cytoplasmic retention of endogenous PER1, PER2, CRY1, and CRY2 to varying degrees, probably through complex interactions (Figure 1D, Figure1\u2014figure supplement 2). The immunoprecipitation analysis showed that KPNB1 interacted strongly with PERs compared with CRYs (Figure 2\u2014figure supplement 1A). These data suggest that the PERs mediate interaction with KPNB1 and gate nuclear translocation of PER/CRY complex. This is reminiscent of a previous report indicating that the nuclear entry of CRY is mainly dependent on PER, in vivo (Lee et al., 2001). Finally, knockdown of KPNB1 or its fly ortholog ketel resulted in arrhythmic U2 OS cells or fly locomotor activity rhythms, while knockdown of most of KPNA isoforms had no significant effect on the rhythm (Figure 4, Figure 5, Figure 4\u2014figure supplement 4). These data suggest a model in which KPNB1 plays a necessary role in mediating nuclear entry of the PER/CRY complex in core clock regulation (Figure 6).\n\nRecently, importin \u03b2 emerged as a potential molecular target for cancer prevention (van der Watt et al., 2013). So far, several novel small molecule regulators of KPNB1 have been identified, though further investigation is needed to improve their specificity and efficacy (Hintersteiner et al., 2010; Soderholm et al., 2011). In this respect, our study provides a rationale for KPNB1 as molecular target for regulating clock physiology.\n\n## Materials and methods\n\n### Cell culture and reagents\n\nU2 OS or HEK293T cells were cultured in Dulbecco's modified Eagle's medium supplemented with 10% FBS, 1% L-Glutamine, and 1% penicillin-streptomycin (Invitrogen, Grand Island, NY, United States) at 37\u00b0C under 5% CO2. The cells were transfected with siRNAs using Lipofectamine RNAiMAX (Invitrogen) and DNA plasmids using Fugene HD reagents (Promega, Madison, WI, United States). The combined transfection of DNA plasmids with siRNA into the cells were performed using Lipofectamine 2000 (Invitrogen).\n\n### Plasmids\n\nFor overexpression of NRON in cells and generation of its transgenic cell lines, full-length genomic DNA fragments of NRON from U2 OS cells was obtained by PCR with primers containing the flanking restriction sites (NotI, XhoI) and inserted into pcDNA 3.1 mammalian expression vector (Invitrogen). Plasmids encoding several flag-tagged clock proteins (Flag-PER1, Flag-PER2, Flag-CRY1, Flag-CRY2, Flag-CLOCK, Flag-REVERB\u03b1, Flag-CHRONO) were generated as described previously (Anafi et al., 2014). For plasmids expressing Venus-tagged PER1, PER2, CRY1, CRY2 (PER1-Venus, PER2-Venus, CRY1-Venus, CRY2-Venus) or BiFC plasmids expressing Venus N terminal (VN) or C-terminal (VC)-tagged PER1, PER2, CRY1, and CRY2 (PER1-VN, PER2-VN, CRY1-VC, CRY2-VC), full-length DNA fragment of the each of genes was subcloned into pCMV-Venus, pCMV-VN, or pCMV-VC using a restriction-free cloning method as described previously (Shyu et al., 2006; Bond and Naus, 2012). For luciferase assays, pCMV Sport6 plasmids encoding full length cDNAs of CLOCK, BMAL1, PER1, PER2, CRY1, CRY2, KPNB1 was obtained from the Mammalian Gene Collection (Thermo Fisher Scientific, Grand Island, NY, United States). For generation of plasmids encoding mutant KPNB1, DNA fragments of the KPNB1 gene with an importin-\u03b1 binding domain deletion encoding a truncated protein (1\u2013771) were sub-cloned into pCMV Sport6 expression vector (Invitrogen) using NotI and SalI restriction enzymes.\n\n### Luciferase assay\n\nHEK293T cells transfected with plasmids encoding proteins as indicated in the figures were assayed for luciferase reporter activity using DualGlo luciferin reagent (Promega) 24 hr post-transfection according to the manufacturer's protocol.\n\n### Antibodies\n\nAnti-PER2 used for immunoblot analysis of immunoprecipitated samples from mouse liver extracts were kindly provided by Dr Cheng Chi Lee's lab (University of Texas Health Science Center at Houston). Anti-KPNB1 (A300-482A) for immunoblotting analysis was obtained from Bethyl Labratories (Montgomery, TX, United States), and Anti-KPNB1 (ab2811) for immunoprecipiation with mouse liver extracts or immunostaining of U2 OS cells was purchased from Abcam (Cambridge, MA, United States). For ChIP or immunostaining experiments, Anti-PER1 (AB2201, Millipore, Darmstadt, German) and Anti-PER2 (NB100-125, Norvus Biologicals, Littleton, CO, United States) were used. Anti-Flag (F7425, Sigma, St. Louis, MO), Anti-GFP (G1544, Sigma), Anti-PER1 (AB2201, Millipore), Anti-PER2 (20359-1-AP, Proteintech, Chicago, IL, United States), Anti-CRY1 (sc-33177, Santa Cruz Biotech, Dallas, Texas, United States), Anti-CRY2 (13997-1-AP, Proteintech), were used for immunopreciptation, immunoblotting, and immunostaining experiments as indicated in figures. Normal mouse IgG (NI03) was purchased from Calbiochem. Anti-Tubulin (Ab7291, Abcam), anti-TBP (22006-1-AP, Proteintech), anti-Lamin (#2032, Cell Signaling, Danvers, MA, United States). and anti-GAPDH (sc25778, Santa Cruz Biotech) were used as loading control antibodies for cytoplasmic, nuclear, and total protein extracts respectively.\n\n### Cytosol-nuclear fractionation\n\nU2 OS cells were co-transfected with each of the following DNA plasmids encoding Venus (V)-tagged PER1, PER2, CRY1, or CRY2 (PER1-V, PER2-V, CRY1-V, CRY2-V) and siRNA against KPNB1. Cells were collected 48 hr post-transfection by briefly trypsinizing and washing twice in ice cold PBS. Nuclear\u2013cytoplasmic fractionation of the cells was performed using the NE-PER Nuclear and Cytoplasmic Extraction Reagents kit (78835, Thermo Fisher Scientific) according to the manufacturer's protocol. The same kit protocol was used for preparation of cytoplasmic and nuclear extracts from mouse liver tissues collected at 4 hr interval for 24 hr in constant darkness.\n\n### Co-immunoprecipitation and immunoblotting\n\nAt 48 hr post-transfection of plasmids encoding PER2-Venus into U2 OS cells, the cell lysates were harvested in radioimmunoprecipitation assay (RIPA) buffer (50 mM HEPES [pH 7.4], 150 mM NaCl, 1% NP-40, 1 mM EDTA, 1 mM EGTA, 1 mM phenylmethylsulfonyl fluoride, 0.5% sodium deoxycholate, 1 mM NaF, 1 mM Na3VO4, and protease inhibitor cocktail [Roche, Indianapolis, IN, United States]). Protein-G coated magnetic beads (10004D, Life Technologies, Grand Island, NY, United States) were pre-incubated with 3 \u00b5g of anti-GFP (G1544, Sigma) antibody at 4\u00b0C for 6 hr. The antibody conjugated beads were incubated with equal amounts of total protein at 4\u00b0C overnight. The final immune complexes were analyzed by immunoblot assay using antibodies as described. For tissue immunoprecipitation, liver tissue was homogenized in 1 vol of RIPA buffer 1 (50 mM Tris-HCl [pH 8.0], 450 mM NaCl, 1% Triton X-100, 1 mM EDTA, 1 mM EGTA, 1 mM phenylmethylsulfonyl fluoride, 0.5% sodium deoxycholate, 1 mM NaF, 1 mM Na3VO4, and 1 protease inhibitor cocktail [Roche]). Homogenates were cleared by dilution with 2 vol of RIPA buffer 2 (RIPA buffer 1 without NaCl). Further procedures were as described above. Immunoblot analyses were performed on 7.5% sodium dodecyl sulfatepolyacrylamide gels and transferred to polyvinylidene difluoride membranes (Immobilon P; Millipore). Target proteins were detected with antibodies as indicated. The immune complexes were visualized with an ECL detection kit (Pierce, Grand Island, NY, United States).\n\n### ChIP\n\nFor ChIP analysis, cell lysates were collected from U2 OS cells and the following \u2018Materials and methods\u2019 were performed as described previously (Schmidt et al., 2009). Briefly, the pre-cleared chromatin was immunoprecipitated overnight at 4\u00b0C by agitating with 5 \u03bcg of PER1 or PER2 antibody as described. The cell extracts incubated in the absence of antibody were used for input controls. Immune complexes were collected by incubation with protein-G coated magnetic beads (10004D, Life Technologies) and the final eluted DNA was extracted by phenol\u2013chloroform\u2013isoamyl alcohol (25:24:1) and ethanol precipitation. The primer sets used for ChIP Quantitative PCR (qPCR) analysis of human Per1 promoter region spanning canonical (CACGTG) were as follows: Forward primer: 5\u2032-TCTCCCTCTCTCCTCCCTTCC-3\u2032, Reverse primer: 5\u2032-GCCTGATTGGCTAGTGGTCTT-3\u2032, Probe: GTGTGTGACACAGCCCTGACC.\n\n### BiFC and IF assays\n\nAt 24 hr post-transfection of expression vectors encoding Venus-tagged clock proteins (PER1-Venus, PER2-Venus, CRY1-Venus, CRY2-Venus) or BiFC plasmids expressing (PER1-VN, PER2-VN, CRY1-VC, CRY2-VC) as indicated, the cells were fixed with 4% paraformaldehyde in PBS and visualized using GFP filter set in fluorescence microscopy. For IF analysis, U2 OS cells was incubated with various antibodies as indicated by secondary antibodies conjugated to Alexa Fluor 488 and/or 568 (Invitrogen). Cells were visualized using FITC/TRITC/DAPI filter set in fluorescence microscopy.\n\n### Bioluminescence recording and data analysis\n\nReal-time bioluminescence of pPer2 or pBmal1 dLuc reporter U2 OS cells after synchronization with 1 \u00b5M Dex (Sigma) were monitored using a LumiCycle luminometer (Actimetrics, Wilmette, IL, United States) as previously described (Zhang et al., 2009). The period of the luminescence data was determined through the WaveClock algorithm (Price et al., 2008).\n\n### Reverse transcription and quantitative PCR\n\ncDNAs were generated with the High Capacity cDNA Archive Kit using the manufacturer's protocol (Applied Biosystems, Grand Island, NY, United States). qPCR reactions were conducted using iTaq PCR mastermix (BioRad, Hercules, CA, United States) in combination with gene expression assays (Applied Biosystems) on a 7800HT Taqman machine (Applied Biosystems). GAPDH was used as an endogenous control for all experiments.\n\n### Whole-mount brain immunocytochemistry\n\n3\u20135 days old flies were collected at indicated ZT on the fourth day of LD entrainment. Fly heads of each genotype were opened and brains were immediately fixed with 4% paraformaldehyde (in 1\u00d7 PBS) for 15\u201320 min, followed by dissection in 1\u00d7 PBST (0.3% Triton X-100 in PBS) at room temperature. After 30min-wash with 1\u00d7 PBST at room temperature, brains were blocked with 5% normal donkey serum (NSD) for 20 min, and then incubated overnight at 4\u00b0C with primary antibody: rat anti-PER (UPR34, 1:1000) and mouse anti-PDF (C7, Developmental Studies Hybridoma Bank, University of Iowa, 1:500). After 30-min wash in 1\u00d7 PBST at room temperature, brains were incubated with secondary antibodies (Jackson ImmunoResearch Laboratories, West Grove, PA, United States, 1:500) for 2 hr in NDS at room temperature, followed by extensive 30 min-wash. Samples were imaged using Leica TCS SP5 confocal microscope. 8\u201310 brains were examined at each time point.\n\n### Fly strains and behavioral assay\n\nTargeted expressions of ketel RNAi in PDF+ cells and tim-expressing clock neurons were performed using the UAS/GAL4 system. We tested two independent UAS-ketel RNAi lines (v22348, v107622; Vienna Drosophila RNAi center) and isogenic w1118 (iso31) strain was used as a wild-type control. Male flies of the UAS-ketel RNAi lines or iso31 (control) were crossed to female flies from Gal4 drivers. Male progenies of the crosses were entrained to a 12 hr:12 hr LD cycle at 25\u00b0C at least for 3 days. Individual flies were loaded in the glass locomotor tubes containing 5% sucrose and 2% agar. Locomotor activity was measured for 7\u201315 days in DD using the Drosophila Activity Monitoring System as previously described (Williams et al., 2001). Power of rhythmicity was determined by FFT value. Flies with FFT value >0.01 were counted as a rhythmic. This activity records were analyzed using ClockLab software (Actimetrics).\n",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4c586b6d-d024-4b44-a8e3-0c3708127c3b",
+      "submission_id": "2e93cad6-afc1-4f8d-a3c4-efcf59bc7b32",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Achim Kramer\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08647.019](https://doi.org/10.7554/eLife.08647.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cKPNB1 mediates PER/CRY nuclear translocation and circadian clock function\u201d for peer review at eLife. Your submission has been favorably evaluated by a Senior Editor and three reviewers, one of whom served as Guest Reviewing Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe study by Lee et al. describes the importance for KPNB1, a member of the importin \u03b2 family, for nuclear localization of clock proteins, in particular PERIOD proteins in both human cells as well as in Drosophila. Timed nuclear accumulation of members of the negative limb within the circadian clockwork has long been known to be critical for a functional circadian clock. Circadian rhythms of nuclear appearance of clock proteins as well as functional nuclear localization and nuclear export sequences (NLS and NES) in these proteins have been reported. The dynamics of this is important since it ensures the correct timing of negative feedback repression of clock genes. Here, the authors show that KPNB1 depletion results in primarily cytoplasmic localization of PER in human cells and Drosophila. Timely subcellular localization of PER2, CRY1, and KPNB1 coincides well and KPNB1 mainly interacts with PER1/2. Thus, the authors concluded that KPNB1 controls nuclear translocation of PER/CRY complex via direct interaction with PER. Intriguingly, KPNB1 mediated nuclear translocation of PER/CRY complex is not dependent on KPNA2 (importin \u03b11) which is a well-known partner of importin \u03b2 proteins and identified as major carrier protein for PER/TIM repressor complex in flies.\n\nEssential revisions:\n\n1) Clarify the role of KPNB1 knockdown on clock gene expression (see Reviewer#1, point 1).\n\n2) Is KPNB1 really required for CIRCADIAN feedback repression (see Reviewer#1, point 4)?\n\n3) Better define (and discuss) the roles of KPNA family members (see Reviewer #2, point 1 and Reviewer #3).\n\nReviewer #1:\n\nThe study by Lee et al. describes the importance for KPNB1 (importin \u03b2) for nuclear localization of clock proteins, in particular PERIOD proteins in both human cells as well as in Drosophila. Timed nuclear accumulation of members of the negative limb within the circadian clockwork has long been known to be critical for a functional circadian clock. Circadian rhythms of nuclear appearance of PERs, CRYs as well as TIM (in flys) as well as functional nuclear localization and nuclear export sequences (NLS and NES) in these proteins have been reported. The dynamics of this is important since it ensures the correct timing of negative feedback repression of clock genes.\n\nHere, the authors show that KPNB1 (but not KPNA2 \u2013 importin \u03b1) depletion in human cells results in primarily cytoplasmic localization of PER proteins (and to a lesser extent also of CRYs) both for overexpressed as well as for endogenous proteins (a nice and complete set of experiments). In addition, PER proteins directly bind to KPNB1 (are the NLS required?). Also very convincing and carefully conducted are the results they found in Drosophila: again, PER is shifted towards more cytosolic localization upon depletion of ketel, the Drosophila ortholog of KPNB1. Probably as a consequence, flies with KPNB1 depletion in pdf cells or all clock cells are largely arrhythmic.\n\nLess convincing are the experiments aiming to demonstrate effects on the circadian clockwork in mammalian cells (see below).\n\nOverall, however, the manuscript is of high quality and should eventually be published, if the following points can be convincingly addressed:\n\n1) The effects of KPNB1 knockdown on clock gene expression show conflicting results: either upregulation of PER1 pre-mRNA and downregulation of BMAL1 pre-mRNA (Figure 3E) or the opposite (Figure 4B and C). In addition, the effects in Figure 3E are very subtle (1.2-fold upregulation of CRY1 pre-mRNA - I don't believe that there is statistical significance given that the (partly high) error bars are SEM with n=3). What about endogenous clock gene levels upon overexpression of KPNB1? Maybe this helps to solve the issue.\n\n2) In addition, the effects on circadian rhythmicity should be better characterized: are there period effects? Why does the Per2-reporter show a low and the Bmal1-reporter a high magnitude, if KPNB1 knockdown is supposed to lead to less inhibition of E-boxes?\n\n3) Figure 4C: controls do oscillate with a 16-18 hour period (in conflict with Figure 4B and in conflict with knockdown time series). This is odd and could be normalization artefact - at least the authors should show BMAL1 as an antiphasic control.\n\n4) Figure 2D, E: The authors claim that KPNB1 is responsible for circadian accumulation and feedback repression, hence they only observe correlations. To unambiguously show that KPNB1 is required for circadian feedback repression, they should analyze circadian protein accumulation (especially CRYs, since they are the major repressors and still go in the nucleus without KPNB1) in wild-type and KPNB1 depleted cells together with analysis of clock gene pre-mRNA over time.\n\nReviewer #2:\n\nIn this study, the authors explored the molecular mechanism for nuclear translocation of circadian repressor complex, PER/CRY. They identified KPNB1, a member of the importin \u03b2 family, plays major role for nuclear translocation of PER1/2, PER/CRY complex and hence feedback repression. Timely subcellular localization of PER2, CRY1, and KPNB1 coincides well and KPNB1 mainly interacts with PER1/2. Thus, the authors concluded that KPNB1 controls nuclear translocation of PER/CRY complex via direct interaction with PER. Intriguingly, KPNB1 mediated nuclear translocation of PER/CRY complex is not dependent on KPNA2 (importin \u03b11) which is a well-known partner of importin \u03b2 proteins and identified as major carrier protein for PER/TIM repressor complex in flies. Overall, the experiments are well executed and this finding will enhance our understanding of detailed biochemical mechanisms underlying timely controlled nuclear translocation of circadian repressor complex.\n\nAlthough the results demonstrating KPNB1 is the major carrier protein for PERs are very solid, the conclusion about KPNB1 being the major carrier protein for PER/CRY complex in mammals and PER/TIM complex in flies needs to be further qualified (see below).\n\n1) As cited in the text, Sakakida et al. (2005) demonstrated that importin \u03b1 family members (including importin \u03b11, KPNA2) control nuclear translocation of CRY2 but not importin \u03b2. The data from Sakakida et al., is consistent with this study showing that depletion of KPNB1 produces minimal effects on CRY2 translocation and partial effects on CRY1 translocation (Figure 1). Based on these two studies, this reviewer thinks that Importin \u03b11 might control translocation of mainly CRY2 and some of CRY1. This is somewhat similar to the case of flies, where translocation of TIM (fly counterpart of CRY at least in the functional aspect) is controlled by importin \u03b11 (Jang AR et al., Plos Genetics 2014, Drosophila TIM binds importin \u03b11, and acts as an adapter to transport PER to the nucleus). Figure 3 luciferase results indicated that CRY1/CRY2 represses even better than PER1/PER2. Then, confusion comes from the data showing KPNA1 deficiency did not produce any defects in cellular rhythms. Thus, this reviewer is wondering how CRY2 localized in KPNA1 knockdown cells. By performing this experiment we might be able to clarify the reason why KPNA1 depletion did not produce any effects on cellular rhythms. Is that due to either (Bass and Takahashi, 2010) KPNA1 does not playing any role in translocation of clock proteins (mainly CRY2) on the contrary to previous report and different from the fly case (or there might be cell-type specific issue?) or (Reppert and Weaver, 2002) nuclear translocation defects of CRY2 not producing any effects on feedback repression suggesting that main repressor of feedback circuitry is PER not CRY?\n\n2) The authors showed that knockdown of ketel (fly homolog of KPNB1) in clock cells made flies arrhythmic via inhibiting nuclear translocation of PER, hence claiming KPNB1 mediates nuclear entry of PER. In another paper lead by some of the authors in this study, they demonstrated that importin \u03b11 protein is critical for nuclear translocation of fly circadian repressor complex PER/TIM, through direct interaction between TIM and importin \u03b11 (Jang AR et al., Plos Genetics, 2014). There, Jang AR et al. proposed the model in which TIM bound to importin \u03b11 acts as a carrier for PER translocation together with importin \u03b2. Thus, this reviewer is wondering whether nuclear translocation of TIM is also inhibited in ketel mutant, which will be a slightly different case to the mammals. Or, very little amounts of PER translocate to the nucleus in a TIM-independent manner through ketel. The authors showed only the PER patterns in ketel knockdown flies. By showing TIM patterns in ketel knockdown flies, it will be clarified that PER translocate into the nucleus as a PER/TIM/importin \u03b11/importin \u03b2 complex or via two pathways one is TIM/importin \u03b11 dependent and the other is ketel dependent as in mammals.\n\n3) In the Discussion, the authors state: \u201cSimilarly, knockdown of KPNB1 resulted in cytoplasmic retention of endogenous PER1, PER2, CRY1, and CRY2 substantially (Figure 1D, Figure1\u2013figure supplement 2).\u201d However, I do not see any substantial effects on CRY2 protein. Rather, this data clearly indicated KPNB1 did not play any roles in nuclear translocation of CRY2 protein. Thus, this statement needs to be rewritten.\n\nReviewer #3:\n\nIn the manuscript entitled \u201cKPNB1 mediates PER/CRY nuclear translocation and circadian clock function\u201d by Lee et al., the authors investigate the role of KPNB1 (Importin \u03b2 subunit) for nuclear translocation of PER proteins and its functional implication for circadian clock oscillation in mammalian cells and flies. The authors clearly show that KPNB1 critically regulates the nuclear translocation of PER proteins which are largely independent from CRY proteins in U2OS cells. Interestingly, a knock-down of KPNB1 blocked the nuclear translocation of the PER/CRY complex, suggesting that PER proteins played a dominant role in the nuclear translocation of the PER/CRY complex in mammalian cells. In addition, the authors exhibit that the loss of KPNA2 does not block the nuclear translocation of PER proteins and circadian molecular rhythms in mammalian cells. Moreover, the authors show that a decrease in Drosophila Importin \u03b2 also blocks the nuclear translocation of PER proteins and results in the severe impairment of circadian locomotor activity rhythms in flies. By gathering these findings, the authors conclude that KPNB1 is the essential factor to elicit the cyclic nuclear translocation of PER/CRY in the negative-feedback regulation of the circadian clock.\n\nIn general, the study includes novel findings, especially for the regulation mechanism of subcellular PER/CRY dynamics, which is essential for the circadian clock. However, the reviewer requires the authors discuss the following points before publication.\n\nDifferent from KPNA1, expression level of KPNA2 is usually very low in normal somatic cells. On the other hand, KPNA2 highly expressed in early embryo or pluripotent stem cells as well as in some cancer cells. For example, the expression level of the Kpna2 transcript is extremely low in adult mice liver (Koike et al., Science, 2012). In addition, it has recently been reported that KPNA2 accelerates cytoplasmic localization of proteins in some cases (e.g. Yasuhara et al., Mol. Cell, 2012; Alshareeda et al., Br. J. Cancer, 2015). Through the accumulated findings, KPNA2 has been thought to be a unique protein among the KPNAs, and does not represent the function of other KPNAs in somatic cells. Thus, the reviewer feels curious as to why the authors performed knock-down study against KPNA2 instead of KPNA1 or any other KPNAs. The authors might have taken into account a recently reported study which mentioned KPNA2 as a factor to obstruct circadian clock cycling in mouse embryonic stem (ES) cells (Umemura et al., PNAS, 2014). Umemura et al. showed the high level expression of KPNA2 and cytoplasmic retention of PER protein in undifferentiated ES cells. In addition, overexpression of KPNA2 did not facilitate nuclear translocation, rather accelerated cytoplasmic retention of PER proteins. Strikingly, the authors here clearly showed that knock-down of KPNA2 in U2OS cells resulted in the exclusive nuclear localization of PER2 and increased amplitude of Per2:dluc circadian rhythms (Figure 4\u2013figure supplement 1). These results are all well compatible with the results mentioned in the paper by Umemura et al. Therefore, the reviewer recommends that the authors discuss this point.\n",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c0108d4b-74be-440f-8088-e57e15c9305e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C1",
+      "claim": "KPNB1 is an importin \u03b2 component of the ncRNA repressor of nuclear factor of activated T cells (NRON) ribonucleoprotein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that KPNB1, an importin \u03b2 component of the ncRNA repressor of nuclear factor of activated T cells (NRON) ribonucleoprotein complex, mediates nuclear translocation and repressor function of the PER/CRY complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations to previous work on NRON complex composition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "641c9c02-1b47-48df-a356-77d68d6389c4",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C2",
+      "claim": "KPNB1 mediates nuclear translocation and repressor function of the PER/CRY complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that KPNB1, an importin \u03b2 component of the ncRNA repressor of nuclear factor of activated T cells (NRON) ribonucleoprotein complex, mediates nuclear translocation and repressor function of the PER/CRY complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by multiple experimental approaches including RNAi, microscopy, and functional assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "251be6b6-b13c-4a0a-ab8c-e4423ebf81a6",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C3",
+      "claim": "RNAi depletion of KPNB1 traps the PER/CRY complex in the cytoplasm by blocking nuclear entry of PER proteins in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi depletion of KPNB1 traps the PER/CRY complex in the cytoplasm by blocking nuclear entry of PER proteins in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence and immunoblot data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4be5cd70-679b-4358-a914-572d581a1935",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C4",
+      "claim": "KPNB1 interacts mainly with PER proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "KPNB1 interacts mainly with PER proteins and directs PER/CRY nuclear transport in a circadian fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation experiments shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "7c024a54-12bd-4e9f-91a1-4d1e5ca7a480",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C5",
+      "claim": "KPNB1 directs PER/CRY nuclear transport in a circadian fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "KPNB1 interacts mainly with PER proteins and directs PER/CRY nuclear transport in a circadian fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by time-course experiments in mouse liver showing rhythmic nuclear accumulation of KPNB1 with PER/CRY proteins (Figure 2D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "40d5e4b1-ac04-4a47-8ede-a3c0e59c1558",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C6",
+      "claim": "KPNB1 regulates the PER/CRY nuclear entry and repressor function independently of importin \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, KPNB1 regulates the PER/CRY nuclear entry and repressor function, independently of importin \u03b1, its classical partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments with KPNB1 mutants lacking importin \u03b1 binding domain (Figure 3\u2014figure supplement 2) and knockdown experiments of importin \u03b1 isoforms (Figure 4\u2014figure supplement 1, 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "c7cc5b46-1d4a-460b-9449-37d51a622641",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C7",
+      "claim": "Inducible inhibition of the conserved Drosophila importin \u03b2 in lateral neurons abolishes behavioral rhythms in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inducible inhibition of the conserved Drosophila importin \u03b2 in lateral neurons abolishes behavioral rhythms in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by locomotor activity monitoring of flies with ketel RNAi expression (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "051233b7-7549-4e9a-9f5a-57f5b82f7a01",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C8",
+      "claim": "KPNB1 is required for timely nuclear import of PER/CRY in the negative feedback regulation of the circadian clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that KPNB1 is required for timely nuclear import of PER/CRY in the negative feedback regulation of the circadian clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "178f9996-66bf-48ab-954d-79b5a2661987",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C9",
+      "claim": "Nearly all organisms have circadian clocks, internal timing systems that anticipate and adapt physiology and behavior to daily changes in the light\u2013dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all organisms have circadian clocks, internal timing systems that anticipate and adapt physiology and behavior to daily changes in the light\u2013dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about circadian clocks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "11dcb93f-c07f-4b33-a6aa-f894264e2d0f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C10",
+      "claim": "In eukaryotes, the clock is an interlocked transcriptional\u2013translational feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, the clock is an interlocked transcriptional\u2013translational feedback loop, which drives rhythmic expression of both core clock genes that make up the oscillator and clock-output genes that drive biological rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the molecular mechanism of circadian clocks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e1bc3be3-16e7-4d62-80dd-91d9a9df369f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C11",
+      "claim": "Many components and the molecular mechanism of the circadian clock are conserved between flies and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Many components and the molecular mechanism of the circadian clock are conserved between flies and mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about evolutionary conservation of clock mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "867c0803-d1c1-425a-9bcf-cf921f5a339f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C12",
+      "claim": "Conserved components include the bHLH-PAS transactivators, CLOCK/NPAS2 (fly Clk) and BMAL1 (fly Cyc).",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved components include the bHLH-PAS transactivators, CLOCK/NPAS2 (fly Clk) and BMAL1 (fly Cyc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about conserved clock components.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "a5af95a6-2ac7-48e2-adc6-40a5169e8345",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C13",
+      "claim": "The CLOCK/BMAL1 heterodimer binds E-box elements in the promoters of PER1/PER2/PER3 and CRY1/CRY2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterodimer binds E-box elements in the promoters of two families of transcriptional repressors, the PER1/PER2/PER3 (fly Per) and CRY1/CRY2 (fly Cry) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about clock gene regulation, supported by citation (Panda et al., 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "5c0aa986-764f-4378-aaad-4c0df7b97dba",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C14",
+      "claim": "Once translated, PERs and CRYs accumulate in a cytoplasmic complex and then translocate into the nucleus to repress the CLOCK-BMAL1 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Once translated, PERs and CRYs (Per and Tim in flies) accumulate in a cytoplasmic complex and then translocate into the nucleus to repress the CLOCK-BMAL1 heterodimer, thereby repressing their own transcription (Panda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the negative feedback loop, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "6477bf60-0ce6-430d-a59d-83e25def1dbe",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C15",
+      "claim": "KPNB1 is a nuclear import receptor that mediates docking of nuclear localization signal (NLS)-containing cargo bound to importin \u03b1 to the nuclear envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "KPNB1 is a nuclear import receptor that mediates docking of nuclear localization signal (NLS)-containing cargo bound to importin \u03b1 to the nuclear envelope, thereby facilitating nuclear entry of the target protein (van der Watt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about KPNB1 function, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "bb8ba426-df19-47a3-8fad-95d9eec6f6e9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C16",
+      "claim": "KPNB1 can directly recognize cargo and facilitate nuclear transport independently of importin \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "KPNB1 can also directly recognize the cargo and facilitate nuclear transport independently of importin \u03b1 (Lam et al., 1999; Forwood et al., 2001; Ghildyal et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about alternative KPNB1 function, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "105acaab-161b-45ab-9d28-8b6c629c9edb",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C17",
+      "claim": "PER1/2 and CRY1/2 contain a functional NLS for their nuclear entry and transcriptional feedback function.",
+      "claim_type": "EXPLICIT",
+      "source": "In several intensive molecular analyses, PER1/2 and CRY1/2, have been found to contain a functional NLS for their nuclear entry and transcriptional feedback function (Vielhaber et al., 2000; Miyazaki et al., 2001; Hirayama et al., 2003; Zhu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "58055536-94cf-4bab-9df1-f9e2f7a123cf",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C18",
+      "claim": "Nucleocytoplasmic shuttling of PER proteins, in conjunction with protein dimerization, phosphorylation and turnover, is critical for clock function.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, nucleocytoplasmic shuttling of PER proteins, in conjunction with protein dimerization, phosphorylation and turnover, is critical for clock function (Yagita et al., 2000, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "404ed735-e279-434d-a874-b279c721d862",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C19",
+      "claim": "Nuclear transport of mouse Cry2 is mediated by its direct interaction with importin \u03b1 family members (RCH1, QIP-1, NPI-2).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a previous biochemical and cellular study reported that nuclear transport of mouse Cry2 is mediated by its direct interaction with importin \u03b1 family members (RCH1, QIP-1, NPI-2) (Sakakida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e1125c16-1178-406e-a90b-c65086cd5f4e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C20",
+      "claim": "The functional relevance of importin \u03b1 family members in the clock was not evaluated in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functional relevance of these factors in the clock was not evaluated (Sakakida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "88db7020-8b0f-4f9b-bf75-4efee2d4a8b1",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C21",
+      "claim": "KPNB1 was identified as a key nuclear importin component of NRON RNA-protein-scaffold complex containing several kinases, CKI\u03b5, GSK3\u03b2, and DYRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent studies, KPNB1 was identified as a key nuclear importin component of ncRNA repressor of nuclear factor of activated T cells (NFAT) (NRON) (lncRNA repressor of the NFAT) RNA-protein-scaffold complex containing several kinases, CKI\u03b5, GSK3\u03b2, and DYRK2 that regulate NFAT phosphorylation and nuclear translocation in human and Drosophila cells (Gwack et al., 2006; Liu et al., 2011; Sharma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge from recent studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "fcdd47c5-afb0-47ee-80da-1adfeb0a49dd",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C22",
+      "claim": "CKI\u03b5, GSK3\u03b2, and DYRK2 regulate NFAT phosphorylation and nuclear translocation in human and Drosophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent studies, KPNB1 was identified as a key nuclear importin component of ncRNA repressor of nuclear factor of activated T cells (NFAT) (NRON) (lncRNA repressor of the NFAT) RNA-protein-scaffold complex containing several kinases, CKI\u03b5, GSK3\u03b2, and DYRK2 that regulate NFAT phosphorylation and nuclear translocation in human and Drosophila cells (Gwack et al., 2006; Liu et al., 2011; Sharma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e940c737-bd1f-4ab4-a381-fc2684dc1587",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C23",
+      "claim": "Most kinases in the NRON complex are also well-known to regulate phosphorylation-related proteolysis and nuclear entry of circadian clock proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, most of these kinases are also well-known to regulate phosphorylation-related proteolysis and nuclear entry of circadian clock proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the dual roles of these kinases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "7008b1fb-4f2d-4d36-9b71-ce5f00d65c02",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C24",
+      "claim": "KPNB1 knockdown completely blocked nuclear accumulation of PER1 and PER2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in immunofluorescence (IF) analysis of cells expressing several flag-tagged clock proteins, knockdown of KPNB1 completely blocked (PER1, PER2), partly blocked (CRY1), or didn't significantly block (CRY2, REVERB\u03b1, CLOCK, CHRONO [Anafi et al., 2014]) nuclear accumulation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "8e66e78e-e300-4717-820e-4df645aa6847",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C25",
+      "claim": "KPNB1 knockdown partly blocked nuclear accumulation of CRY1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in immunofluorescence (IF) analysis of cells expressing several flag-tagged clock proteins, knockdown of KPNB1 completely blocked (PER1, PER2), partly blocked (CRY1), or didn't significantly block (CRY2, REVERB\u03b1, CLOCK, CHRONO [Anafi et al., 2014]) nuclear accumulation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "5ec88549-c44b-476a-8e02-aabc7bb41666",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C26",
+      "claim": "KPNB1 knockdown didn't significantly block nuclear accumulation of CRY2, REVERB\u03b1, CLOCK, and CHRONO.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in immunofluorescence (IF) analysis of cells expressing several flag-tagged clock proteins, knockdown of KPNB1 completely blocked (PER1, PER2), partly blocked (CRY1), or didn't significantly block (CRY2, REVERB\u03b1, CLOCK, CHRONO [Anafi et al., 2014]) nuclear accumulation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "c2849d2c-f1a5-4e7c-a85b-58ff6f7e7f07",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C27",
+      "claim": "KPNB1 knockdown markedly blocked PER1 and PER2 localization in cells expressing Venus-tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the flag-tagged proteins, microscopy and immunoblot analysis of cells expressing the Venus (V)-tagged clock proteins (PER1-V, PER2-V, CRY1-V, CRY2-V), KPNB1 knockdown markedly blocked PER1 and PER2 localization and slightly or negligibly effected CRY1 and CRY2 nuclear localization (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and immunoblot data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "0a81236c-b059-453f-823e-a6d649baf8af",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C28",
+      "claim": "KPNB1 knockdown slightly or negligibly affected CRY1 and CRY2 nuclear localization in cells expressing Venus-tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the flag-tagged proteins, microscopy and immunoblot analysis of cells expressing the Venus (V)-tagged clock proteins (PER1-V, PER2-V, CRY1-V, CRY2-V), KPNB1 knockdown markedly blocked PER1 and PER2 localization and slightly or negligibly effected CRY1 and CRY2 nuclear localization (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy and immunoblot data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "d4eaabd4-f9f1-4d6e-ad05-8969eeb87b98",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C29",
+      "claim": "PER and CRY proteins work together.",
+      "claim_type": "EXPLICIT",
+      "source": "In many previous studies, PER and CRY proteins have been shown to work together (Tamanini et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "712239e1-1a0a-470c-bf0b-dc6316cc5218",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C30",
+      "claim": "KPNB1 depletion significantly impaired nuclear localization of various combinations of PER and CRY proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The BiFC assay showed that KPNB1 depletion significantly impaired nuclear localization of various combinations of PER and CRY proteins (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BiFC assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4acaad98-2e7b-4c7d-abb2-40d3642ed670",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C31",
+      "claim": "Nuclear accumulation of the PER2/CRY1 complex was totally blocked by KPNB1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, nuclear accumulation of the PER2/CRY1 complex was totally blocked by KPNB1 knockdown (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BiFC assay data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "ee8bc488-1bca-449a-acab-e45061133098",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C32",
+      "claim": "KPNB1 depletion substantially increased cytoplasmic accumulation of endogenous PER1/2 and CRY1/2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to ectopically expressed clock proteins, KPNB1 depletion substantially increased cytoplasmic accumulation of endogenous PER1/2 and CRY1/2 proteins thus reducing their relative levels in nuclei in most cells (Figure 1D, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot and immunofluorescence data shown in Figure 1D and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "806447ab-f821-44cc-af30-4092ae1f326c",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C33",
+      "claim": "KPNB1 serves as an integral nuclear transport receptor of the PER/CRY complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these evidence show that KPNB1 serves as an integral nuclear transport receptor of the PER/CRY complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 1 and related supplements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "ed7e2d87-b36c-4afd-b5f4-b16e7c1ea4f8",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C34",
+      "claim": "KPNB1 interacted more strongly with PER1 and PER2 proteins than either CRY1 or CRY2.",
+      "claim_type": "EXPLICIT",
+      "source": "KPNB1 interacted more strongly with PER1 and PER2 proteins than either CRY1 or CRY2 (Figure 2, Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 2 and Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "8e20e7b4-b873-48ed-8236-a5bf9860426e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C35",
+      "claim": "PER proteins may play the leading role in PERs/CRYs nuclear translocation with KPNB1.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that PER proteins may play the leading role in PERs/CRYs nuclear translocation with KPNB1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stronger interaction of KPNB1 with PER proteins compared to CRY proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "eabdf13a-0e05-42e1-b42d-dd8a9060c491",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C36",
+      "claim": "KPNB1 co-localized with both cytoplasmic and nuclear PER2.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, by IF KPNB1 co-localized with both cytoplasmic and nuclear PER2 (Figure 2B, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "2748d2b6-af1e-4c89-9b13-7a63e6af280f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C37",
+      "claim": "KPNB1 strongly interacted with the endogenous PER2 in mouse liver tissue extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, KPNB1 strongly interacted with the endogenous PER2 in co-immunoprecipitation analysis using mouse liver tissue extracts (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "888bf93c-571f-44ff-afc8-bf377933854c",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C38",
+      "claim": "KPNB1 exhibited a circadian pattern of nucleocytoplasmic localization with its nuclear abundance peaking at circadian time (CT) 14\u201318.",
+      "claim_type": "EXPLICIT",
+      "source": "By immunoblot analysis, KPNB1 exhibited a circadian pattern of nucleocytoplasmic localization with its nuclear abundance peaking at circadian time (CT) 14\u201318, when the intensive nuclear accumulation of PER2 and CRY1 occurred (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot analysis of mouse liver tissue extracts shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "f1b4561f-5495-45c2-895f-6edcb4ff6bfc",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C39",
+      "claim": "Intensive nuclear accumulation of PER2 and CRY1 occurred at circadian time (CT) 14\u201318.",
+      "claim_type": "EXPLICIT",
+      "source": "By immunoblot analysis, KPNB1 exhibited a circadian pattern of nucleocytoplasmic localization with its nuclear abundance peaking at circadian time (CT) 14\u201318, when the intensive nuclear accumulation of PER2 and CRY1 occurred (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot analysis of mouse liver tissue extracts shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e6f6c82f-5a8e-4d43-8e4c-1cbfab6f10e9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C40",
+      "claim": "Significant decrease of mRNA expression of E-box dependent clock genes (Per1, Dbp, Nr1d1, Nr1d2) occurred in the nuclear accumulation phase of PER/CRY.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, we observed the significant decrease of mRNA expression of E-box dependent clock genes (Per1, Dbp, Nr1d1, Nr1d2) targeted by the clock repressors in their nuclear accumulation phase (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative RT-PCR data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e9e1e67a-5801-4f20-abe0-aa365f9a4d08",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C41",
+      "claim": "KPNB1 is responsible for circadian nuclear import and repressor activity of the PER/CRY complex in clock gene expression in mouse liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data clearly suggest that KPNB1 is responsible for circadian nuclear import and repressor activity of the PER/CRY complex in clock gene expression in mouse liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the circadian expression data in mouse liver.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "fb666de2-11af-403a-b8ed-6226c5866af0",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C42",
+      "claim": "KPNB1 knockdown substantially elevated Per1 promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the role of KPNB1 in clock function, we used RNAi to knockdown KPNB1 in U2 OS cells and found substantially elevated Per1 promoter activity, consistent with the hypothesis that this knockdown inhibited the localization and function of the PER/CRY complex (Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "43dd7ee8-092f-44ad-b734-2d992609aa6f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C43",
+      "claim": "Depletion of TNPO1 and CSE1L did not significantly affect PER/CRY repressor activities.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the parallel depletion of the other NRON complex nucleocytoplasmic transport proteins, TNPO1, CSE1L, did not significantly affect their repressor activities (Figure 3A, Figure 3\u2014figure supplement 1, [Willingham et al., 2005]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "3f9c9dd3-6da9-437c-9106-2b8dddc26cff",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C44",
+      "claim": "ChIP analysis revealed significantly less recruitment of both PER1 and PER2 to the CLOCK/BMAL1 responsive element in KPNB1-depleted U2 OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, chromatin immunoprecipitation (ChIP) analysis targeting the first E-box region of human PER1 (hPer1) promoter revealed significantly less recruitment of both PER1 and PER2 to the CLOCK/BMAL1 responsive element in the KPNB1-depleted U2 OS cells (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP assay data shown in Figure 3B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4c612a98-2363-40b0-ae99-0892ef5e4204",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C45",
+      "claim": "The overall expression levels of several E-box dependent genes (PER1, CRY1, DBP, REV-ERB\u03b2) were upregulated as a result of KPNB1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the overall expression levels of several E-box dependent genes (PER1, CRY1, DBP, REV-ERB\u03b2) were upregulated as a result of KPNB1 knockdown (Figure 3E), consistent with loss of repressor function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative RT-PCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "bd1ae037-d2c9-4ae3-b13b-774222a7e231",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C46",
+      "claim": "Overexpression of KPNB1 markedly down-regulated CLOCK/BMAL1-activated PER1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overexpression of KPNB1 markedly down-regulated CLOCK/BMAL1-activated PER1 transcription, probably by facilitating PER/CRY localization to the nucleus (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "b2c7aa75-4c95-4087-9232-dd0b14903222",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C47",
+      "claim": "KPNB1 overexpression significantly down-regulated endogenous mRNA expression of E-box-regulated genes with no significant effect on BMAL1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, KPNB1 overexpression significantly down-regulated endogenous mRNA expression of these E-box-regulated genes with no significant effect on BMAL1 expression (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative RT-PCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "b0571e66-6059-45c5-9efd-0b3cc18a7d69",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C48",
+      "claim": "Deletion of the importin \u03b1 binding domain of KPNB1 did not significantly affect the transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the KPNB1 activity was not dependent on importin \u03b1, a well-known nuclear transport partner, as deletion of the importin \u03b1 binding domain of KPNB1 did not significantly affect the transcriptional regulation (Figure 3\u2014figure supplement 2A\u2013C) (Kutay et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "9d6c658e-f303-4e86-943c-e9c22e838328",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C49",
+      "claim": "Knockdown of KPNB1 in U2 OS cells severely disturbed circadian bioluminescence reporter activity driven by the Per2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, knockdown of KPNB1 in U2 OS cells severely disturbed circadian bioluminescence reporter activity driven by the Per2 promoter, whereas depletion of importin \u03b11 (KPNA2) or importin \u03b15 (KPNA1) did not affect the circadian rhythmicity (Figure 4A,B, Figure 4\u2014figure supplement 1A,B, Figure 4\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioluminescence recording data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "d7c2dc3f-3168-4ed0-90b0-382bd8d4a933",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C50",
+      "claim": "Depletion of importin \u03b11 (KPNA2) or importin \u03b15 (KPNA1) did not affect the circadian rhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, knockdown of KPNB1 in U2 OS cells severely disturbed circadian bioluminescence reporter activity driven by the Per2 promoter, whereas depletion of importin \u03b11 (KPNA2) or importin \u03b15 (KPNA1) did not affect the circadian rhythmicity (Figure 4A,B, Figure 4\u2014figure supplement 1A,B, Figure 4\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioluminescence recording data shown in Figure 4\u2014figure supplement 1A,B and Figure 4\u2014figure supplement 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "2ecc973f-e0d5-49a9-86c7-9c26b0fbd986",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C51",
+      "claim": "Most of the other importin \u03b1 isoforms were not critical for circadian rhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "These knockdown phenotypes correspond to previous reports showing that most of the other importin \u03b1 isoforms were not critical for circadian rhythmicity (Wu et al., 2009; Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "d670b182-e4b7-4a6f-860a-4f7cae2402bb",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C52",
+      "claim": "KPNA2 or KPNA1 depletion did not alter PER2 nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "In conjunction with these results, fluorescence microscopy analysis revealed that KPNA2 or KPNA1 depletion did not alter PER2 nuclear localization, which was completely blocked by KPNB1 depletion in U2 OS cells stably expressing PER2-Venus (Figure 4\u2014figure supplement 1C,D, Figure 4\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 4\u2014figure supplement 1C,D and Figure 4\u2014figure supplement 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "2b260f73-84e0-48e6-b1a4-1201202e6eed",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C53",
+      "claim": "KPNB1 depletion severely disrupted circadian transcription of several clock genes (PER1, PER2) in dexamethasone (Dex)-synchronized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, KPNB1 depletion severely disrupted circadian transcription of several clock genes (PER1, PER2) in dexamethasone (Dex)-synchronized cells with altered nuclear accumulation of PER and CRY proteins (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative RT-PCR and immunoblot data shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "a68c7107-6a41-4003-bcb1-2bdc6b142ca7",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C54",
+      "claim": "KPNB1 depletion altered nuclear accumulation of PER and CRY proteins in Dex-synchronized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, KPNB1 depletion severely disrupted circadian transcription of several clock genes (PER1, PER2) in dexamethasone (Dex)-synchronized cells with altered nuclear accumulation of PER and CRY proteins (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e61e38fb-8d28-4472-b7af-73212b609cf8",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C55",
+      "claim": "KPNB1 gates PER and CRY localization to the nucleus independently of importin \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that KPNB1 gates PER and CRY localization to the nucleus independently of importin \u03b1 and plays an indispensable role in negative feedback regulation of the circadian clock in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "716cb769-db7c-448d-bd59-c7abf006c30f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C56",
+      "claim": "KPNB1 plays an indispensable role in negative feedback regulation of the circadian clock in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that KPNB1 gates PER and CRY localization to the nucleus independently of importin \u03b1 and plays an indispensable role in negative feedback regulation of the circadian clock in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "80248c4a-f6ab-4942-b39f-2c748afe328f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C57",
+      "claim": "62% of flies expressing UAS ketel RNAi in central clock cells exhibited no rhythms in constant darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral analysis of flies expressing UAS ketel RNAi in central clock cells, targeted by the relatively weak Pigment dispersing factor (Pdf)-Gal4 driver, revealed that 62% of flies exhibited no rhythms in constant darkness (DD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral analysis data shown in Figure 5 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "356191ea-2a3b-4921-a33f-a3ea2269ef88",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C58",
+      "claim": "38% of flies expressing UAS ketel RNAi in central clock cells were rhythmic, but their rhythm strength determined by fast Fourier transform (FFT) value was low.",
+      "claim_type": "EXPLICIT",
+      "source": "Although 38% of flies were rhythmic, their rhythm strength determined by fast Fourier transform (FFT) value was low (Figure 5A\u2013C, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral analysis data shown in Figure 5A\u2013C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e7ab55bd-f4b9-4ae6-a7d9-10f01c43a9d4",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C59",
+      "claim": "With a strong tim-UAS-Gal4 driver that is expressed in all clock cells, 100% of flies were arrhythmic.",
+      "claim_type": "EXPLICIT",
+      "source": "With a strong tim-UAS-Gal4 driver that is expressed in all clock cells, 100% of flies were arrhythmic (Figure 5A,B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral analysis data shown in Figure 5A,B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "3f9df1a7-11b4-4cd0-beef-4dac69e2b73e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C60",
+      "claim": "Conditional knockdown of ketel in adult PDF+ neurons resulted in weak to arrhythmic locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "After 6\u20137 days in constant darkness, this conditional knockdown of ketel also resulted in weak to arrhythmic locomotor activity (Figure 5D, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral analysis data shown in Figure 5D and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "12f314fc-7647-4701-b028-cd10373e3cd0",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C61",
+      "claim": "81% of flies with conditional knockdown of ketel were arrhythmic and the rest showed weak rhythmicity with low FFT values.",
+      "claim_type": "EXPLICIT",
+      "source": "81% of flies were arrhythmic and the rest showed weak rhythmicity with low FFT values (Figure 5E, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral analysis data shown in Figure 5E and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "2fcc5b16-de49-4ccc-a0d1-d96d31f3896e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C62",
+      "claim": "Importin \u03b2 in PDF+ neurons is required for normal locomotor rhythms in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that importin \u03b2 in PDF+ neurons is required for normal locomotor rhythms in adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral analysis data in flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "09f3aa6f-4ffb-48d9-8fcd-b5262602b6f9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C63",
+      "claim": "In ketel knockdown flies, PER levels were low and primarily cytoplasmic in large LNvs at ZT1.",
+      "claim_type": "EXPLICIT",
+      "source": "In ketel knockdown flies, PER levels were low and primarily cytoplasmic in large LNvs, while PER staining was intensely nuclear in control flies (Figure 5F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "ff8f4f12-4667-445b-9cdd-18bafce4e16e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C64",
+      "claim": "PER staining was intensely nuclear in control flies at ZT1.",
+      "claim_type": "EXPLICIT",
+      "source": "In ketel knockdown flies, PER levels were low and primarily cytoplasmic in large LNvs, while PER staining was intensely nuclear in control flies (Figure 5F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "92ee55b3-ba0f-4f18-9eb5-4893a86ed915",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C65",
+      "claim": "The small LNvs were undetectable in ketel RNAi transgenic flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The small LNvs were undetectable in ketel RNAi transgenic flies, as is also the case in other arrhythmic fly mutants such as Clk and cyc (Figure 5F, right panel images) (Park et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 5F and comparison to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "a6eb8204-6a42-4fe7-804f-6b6a609950ed",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C66",
+      "claim": "Ketel mediates the nuclear localization of PER in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that like mammalian importin \u03b2, Ketel mediates the nuclear localization of PER, and consequently, is required for functioning of the core circadian clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the fly behavioral and immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "028e541a-d85d-4022-a4d5-c6b04e51efea",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C67",
+      "claim": "Ketel is required for functioning of the core circadian clock in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that like mammalian importin \u03b2, Ketel mediates the nuclear localization of PER, and consequently, is required for functioning of the core circadian clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the fly behavioral and immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "d0a540d2-3ff1-49f6-b63e-b8be5d017163",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C68",
+      "claim": "Timely nuclear translocation of the PER/CRY (or Per/Tim) repressor complex is a critical and conserved step in maintaining rhythmicity in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Timely nuclear translocation of the PER/CRY (or Per/Tim) repressor complex is a critical and conserved step in maintaining rhythmicity in metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about circadian clock mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "6adaff80-4f2e-476b-87ab-3ee6a572dd06",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C69",
+      "claim": "The functional carrier molecules responsible for nuclear localization of the feedback regulators have yet to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functional carrier molecules responsible for nuclear localization of the feedback regulators have yet to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in scientific knowledge that this study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "bf68d611-b919-4da8-a677-a9a958db696d",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C70",
+      "claim": "This study provides the first evidence that KPNB1 plays a key role as a nuclear transporter of the PER/CRY complex in negative feedback repression in both mammalian and fly clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study provides the first evidence that KPNB1 plays a key role as a nuclear transporter of the PER/CRY complex in negative feedback repression in both mammalian and fly clocks (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e44f30bb-af61-4827-a522-0fc7dd332ea1",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C71",
+      "claim": "Phosphorylation and nuclear translocation of PERs and CRYs are closely coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Many mammalian and Drosophila clock studies have shown that phosphorylation and nuclear translocation of PERs and CRYs are closely coupled (Gallego and Virshup, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "7d981622-dace-4d9a-8cb0-3f07150ec8d9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C72",
+      "claim": "CKI\u03b5, GSK3\u03b2, and DYRK2 are clock kinases in both mammals and flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that CKI\u03b5, GSK3\u03b2, and DYRK2, clock kinases in both mammals and flies, are also constituents of the NRON complex, which regulates cytoplasmic to nuclear translocation of NFAT and consequently its function in the immune systems (Willingham et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "8c3be646-aba6-48e8-8c7d-d5d30d800a2a",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C73",
+      "claim": "The NRON complex regulates cytoplasmic to nuclear translocation of NFAT and consequently its function in the immune systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that CKI\u03b5, GSK3\u03b2, and DYRK2, clock kinases in both mammals and flies, are also constituents of the NRON complex, which regulates cytoplasmic to nuclear translocation of NFAT and consequently its function in the immune systems (Willingham et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "a08937bb-85d5-452b-89ae-b9228f7080f2",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C74",
+      "claim": "KPNB1 is the major transport receptor for NFAT nuclear entry and activity upon its dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent study showed that KPNB1 is the major transport receptor for NFAT nuclear entry and activity upon its dephosphorylation (Sharma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "075b8ba7-702c-4501-baea-6dcc10386123",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C75",
+      "claim": "KPNB1 knockdown trapped PER and CRY proteins at the nuclear membrane, preventing their nuclear accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we investigated the role of KPNB1 on nuclear localization of PER/CRY complex (Figure 1, Figure 1\u2014figure supplement 1). We found that KPNB1 knockdown trapped PER and CRY proteins at the nuclear membrane, preventing their nuclear accumulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 1 and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "252d67c0-ef4c-4aa8-ae0d-75d0ced6cfe4",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C76",
+      "claim": "KPNB1 knockdown significantly relieved PER1 transcriptional repression by the PER/CRY complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, in our transcriptional study, we found KPNB1 knockdown significantly relieved PER1 transcriptional repression by the PER/CRY complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase reporter assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "f7785fdd-d363-4b76-b2ee-c2225df5bb37",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C77",
+      "claim": "TNPO1 and CSE1L did not interact with PER or CRY proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of the other NRON complex translocation factors, TNPO1 and CSE1L, did not (Figure 3, Figure 3\u2014figure supplement 1), nor did they interact with PER or CRY proteins (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as unpublished data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "2e14a358-206b-4a0b-8493-b9c16501601c",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C78",
+      "claim": "KPNB1 has a specific role as a nuclear transport receptor directly involved in negative feedback regulation of the core clock, in addition to its previously described role in NFAT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a specific role of KPNB1 as a nuclear transport receptor directly involved in negative feedback regulation of the core clock, in addition to its previously described role in NFAT signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "c3a0c0cb-12bf-4e11-a434-aee76dadacb5",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C79",
+      "claim": "Both TNPO1 and CSE1L displayed circadian gene expression in various mouse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite not playing a role in PER/CRY function, both TNPO1 and CSE1L displayed circadian gene expression in various mouse tissues, and also affected circadian period length (TNPO1) or were required for cellular rhythms (CSE1L) when silenced ([Pizarro et al., 2013], data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and unpublished data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "9b45b5e6-50c7-430b-b5ab-f3d8961eb766",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C80",
+      "claim": "TNPO1 affected circadian period length when silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite not playing a role in PER/CRY function, both TNPO1 and CSE1L displayed circadian gene expression in various mouse tissues, and also affected circadian period length (TNPO1) or were required for cellular rhythms (CSE1L) when silenced ([Pizarro et al., 2013], data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and unpublished data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "8cd06705-946e-424e-a227-0352bd55897d",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C81",
+      "claim": "CSE1L was required for cellular rhythms when silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite not playing a role in PER/CRY function, both TNPO1 and CSE1L displayed circadian gene expression in various mouse tissues, and also affected circadian period length (TNPO1) or were required for cellular rhythms (CSE1L) when silenced ([Pizarro et al., 2013], data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and unpublished data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "7cd4ee97-f4a9-4e4e-9f71-8117722fba39",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C82",
+      "claim": "TNPO1 exhibits circadian expression profiles in its mRNA in SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the recent in situ hybridization analysis showed that TNPO1 exhibits circadian expression profiles in its mRNA in SCN (Sato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "657724b3-ca98-41f0-9c4d-233674352955",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C83",
+      "claim": "TNPO1 and CSE1L may play a role in mammalian clock function independent from PER/CRY, perhaps regulating import and export of other clock related components.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these proteins may also play a role in mammalian clock function independent from PER/CRY, perhaps regulating import and export of other clock related components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed effects of TNPO1 and CSE1L on circadian rhythms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "82252424-12b5-4194-8963-48157d062f47",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C84",
+      "claim": "KPNB1 strongly interacted with PER proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in our biochemical analyses, KPNB1 strongly interacted with PER proteins and exhibited rhythmic nucleocytoplasmic localization and concurrent nuclear accumulation with PER/CRY in transcriptional repression phase (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4a3d98a3-f834-4e36-adb7-c89ee333ec47",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C85",
+      "claim": "KPNB1 exhibited rhythmic nucleocytoplasmic localization and concurrent nuclear accumulation with PER/CRY in transcriptional repression phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in our biochemical analyses, KPNB1 strongly interacted with PER proteins and exhibited rhythmic nucleocytoplasmic localization and concurrent nuclear accumulation with PER/CRY in transcriptional repression phase (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "3e1d03e2-fc12-4b4a-844e-50cd7de47b48",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C86",
+      "claim": "KPNB1 drives circadian nuclear entry of PER/CRY.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest KPNB1 drives circadian nuclear entry of PER/CRY.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "48e342d2-be20-4ce6-8054-dff1fa23e2bd",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C87",
+      "claim": "Intracellular calcium levels regulate importin \u03b2-dependent nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, it was reported that intracellular calcium levels regulate importin \u03b2-dependent nuclear import (Kaur et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "cb9b4364-abd5-4f4f-96ac-7909b59bde52",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C88",
+      "claim": "KPNB1 nuclear-translocates NFAT immediately after stimulation dependent intracellular calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a previous model suggests that KPNB1 nuclear-translocates NFAT immediately after stimulation dependent intracellular calcium influx (Sharma et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "61861349-9740-480d-88ab-95ef7510dad3",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C89",
+      "claim": "Periodic Ca2+ influx in the cytosol is a critical process for circadian pacemaker function.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, several studies have demonstrated the important function of Ca2+ dynamics in circadian clock regulation. For example, periodic Ca2+ influx in the cytosol, resulting from circadian variation in membrane potential or by the release of Ca(2+) from ryanodine-sensitive stores in SCN neurons, is a critical process for circadian pacemaker function (Ikeda et al., 2003; Lundkvist et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "078ebe3e-b4f3-4e34-b3d8-dc98bc19bfc0",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C90",
+      "claim": "Cytosolic Ca2+ rhythms contribute to driving timely nuclear localization of KPNB1 and its PER/CRY cargo as a critical step in negative feedback regulation of the clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this evidence, we postulate that cytosolic Ca2+ rhythms contribute to driving timely nuclear localization of KPNB1 and its PER/CRY cargo as a critical step in negative feedback regulation of the clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the known roles of calcium in both KPNB1 function and circadian regulation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "bec4f974-1978-456e-8bea-cb6c3f506518",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C91",
+      "claim": "In early models, KPNB1 mediates docking of the importin \u03b1/substrate complex in the nuclear pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In early models, KPNB1 mediates docking of the importin \u03b1/substrate complex in the nuclear pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about KPNB1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "d0702453-c072-4084-af24-d765ee25daf9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C92",
+      "claim": "KPNB1 can function as nuclear transport receptor independently of importin \u03b1 by directly recognizing substrates such as CREB, AP-1 transcription factors, and parathyroid hormone-related protein.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent evidence shows that KPNB1 can function as nuclear transport receptor independently of importin \u03b1 by directly recognizing substrates such as CREB, AP-1 transcription factors, and parathyroid hormone-related protein (Lam et al., 1999; Forwood et al., 2001; Ghildyal et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "a962269b-8daa-4ae0-97b0-1edf307fc1b7",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C93",
+      "claim": "Importin \u03b1 isoforms (RCH, QIP-1, NPI-2) mediate nuclear localization of CRY2 through direct interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a previous report showed that importin \u03b1 isoforms (RCH, QIP-1, NPI-2) mediate nuclear localization of CRY2 through direct interactions but did not investigate the functional consequence of this interaction (Sakakida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "f0971953-9ad2-4990-b1b2-15fa557abf68",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C94",
+      "claim": "In mammals KPNB1 mediates nuclear localization of the PER/CRY complex independently of importin \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, our data suggest that in mammals KPNB1 mediates nuclear localization of the PER/CRY complex independently of importin \u03b1, as overexpression of a KPNB1 mutant lacking an importin \u03b1 interaction domain had a similar phenotype (Figure 1, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "036b979c-f203-4ecd-a058-d659a2fe314a",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C95",
+      "claim": "Both KPNA2 and KPNA1, when depleted in cells, did not affect circadian rhythmicity or subcellular localization of PER2 or CRY2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, both KPNA2 and KPNA1, the well-known KPNB1 interacting importin alpha proteins (importin \u03b11, importin \u03b15), when depleted in cells, did not affect circadian rhythmicity or subcellular localization of PER2 or CRY2 protein (Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1, 2, and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "3adec677-4a43-4e02-b6a5-2be69ed925ac",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C96",
+      "claim": "Cytoplasmic retention of PER proteins was accelerated by KPNA2 overexpression in mouse stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent report, cytoplasmic retention of PER proteins was accelerated by KPNA2 overexpression in mouse stem cells (Umemura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4f83e623-acc2-4410-8dd6-2e2aeb706f7f",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C97",
+      "claim": "KPNA2 overexpression substantially reduced cells expressing PER2-Venus protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, intriguingly we found that KPNA2 overexpression substantially reduced cells expressing PER2-Venus protein in our imaging studies (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "489ec18f-6aa3-4be0-92c0-56854fe806cb",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C98",
+      "claim": "Both the endogenous and overexpressed KPNA2 protein localized predominantly in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, both the endogenous and overexpressed KPNA2 protein localized predominantly in the nucleus, which was confirmed by nuclear cytoplasmic fraction Western analysis (Figure 4\u2014figure supplement 1C,E, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot and immunofluorescence data shown in Figure 4\u2014figure supplement 1C,E and Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "f6390a87-762b-44ae-9b68-25a19b0ee8c9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C99",
+      "claim": "KPNA2 might regulate PER2 protein level through an unknown mechanism in U2 OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that KPNA2 might regulate PER2 protein level through an unknown mechanism in U2 OS cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed effects of KPNA2 overexpression.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "4107411a-3ae3-4d34-b710-934579867144",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C100",
+      "claim": "Different results regarding KPNA2 effects are likely due to the different cell types and species used.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we speculate that these different results are likely due to the different cell types and species used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation to explain discrepancies between studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "41250dde-2ac6-4cf0-8ae4-d76063fd3555",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C101",
+      "claim": "Knockdown of KPNB1 had strong effects on PER1 and PER2, modest effects on CRY1, and no effect on CRY2 when examining single tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, knockdown of KPNB1 had strong (PER1, PER2), modest (CRY1), or no effect (CRY2) on single tagged PER and CRY proteins, while it had strong effects on all combinations of PER/CRY complexes (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e2d87a8a-bb6e-4a63-8935-1013fdb9a0fb",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C102",
+      "claim": "Knockdown of KPNB1 had strong effects on all combinations of PER/CRY complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, knockdown of KPNB1 had strong (PER1, PER2), modest (CRY1), or no effect (CRY2) on single tagged PER and CRY proteins, while it had strong effects on all combinations of PER/CRY complexes (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by BiFC data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "5f536b9b-650a-4a2c-a125-d808fa9c92eb",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C103",
+      "claim": "Knockdown of KPNB1 increased cytoplasmic retention of endogenous PER1, PER2, CRY1, and CRY2 to varying degrees, probably through complex interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, knockdown of KPNB1 increased cytoplasmic retention of endogenous PER1, PER2, CRY1, and CRY2 to varying degrees, probably through complex interactions (Figure 1D, Figure1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot and immunofluorescence data shown in Figure 1D and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "39aa393e-0fe1-46ae-862b-a2904da62f0e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C104",
+      "claim": "The PERs mediate interaction with KPNB1 and gate nuclear translocation of PER/CRY complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunoprecipitation analysis showed that KPNB1 interacted strongly with PERs compared with CRYs (Figure 2\u2014figure supplement 1A). These data suggest that the PERs mediate interaction with KPNB1 and gate nuclear translocation of PER/CRY complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the co-immunoprecipitation data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "59503ee4-24d6-4241-b2b8-21ad5d8836f9",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C105",
+      "claim": "The nuclear entry of CRY is mainly dependent on PER, in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reminiscent of a previous report indicating that the nuclear entry of CRY is mainly dependent on PER, in vivo (Lee et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "5d44d2a6-7ba3-4d89-a65a-3b4928339e77",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C106",
+      "claim": "Knockdown of KPNB1 or its fly ortholog ketel resulted in arrhythmic U2 OS cells or fly locomotor activity rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, knockdown of KPNB1 or its fly ortholog ketel resulted in arrhythmic U2 OS cells or fly locomotor activity rhythms, while knockdown of most of KPNA isoforms had no significant effect on the rhythm (Figure 4, Figure 5, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4, Figure 5, and Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "b0817142-e273-4690-b744-4ac1b4064f7c",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C107",
+      "claim": "Knockdown of most of KPNA isoforms had no significant effect on the rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, knockdown of KPNB1 or its fly ortholog ketel resulted in arrhythmic U2 OS cells or fly locomotor activity rhythms, while knockdown of most of KPNA isoforms had no significant effect on the rhythm (Figure 4, Figure 5, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "cb3d792a-a82c-4c90-8560-1755a1a83f91",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C108",
+      "claim": "KPNB1 plays a necessary role in mediating nuclear entry of the PER/CRY complex in core clock regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a model in which KPNB1 plays a necessary role in mediating nuclear entry of the PER/CRY complex in core clock regulation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, supported by all experimental data and illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "37954aa5-6253-4d74-b44d-2804eee7de13",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C109",
+      "claim": "Importin \u03b2 emerged as a potential molecular target for cancer prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, importin \u03b2 emerged as a potential molecular target for cancer prevention (van der Watt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "1cb03e33-a614-4bc2-8d92-12916a06268e",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C110",
+      "claim": "Several novel small molecule regulators of KPNB1 have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, several novel small molecule regulators of KPNB1 have been identified, though further investigation is needed to improve their specificity and efficacy (Hintersteiner et al., 2010; Soderholm et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "76526746-2063-4aa3-af45-a6119b470462",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "claim_id": "C111",
+      "claim": "This study provides a rationale for KPNB1 as molecular target for regulating clock physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, our study provides a rationale for KPNB1 as molecular target for regulating clock physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the potential applications of the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c7822cf-995e-4377-aed9-9fdf21e07423",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KPNB1 is required for nuclear translocation of PER/CRY proteins in human cells. RNAi depletion of KPNB1 completely blocks nuclear accumulation of PER1 and PER2, partially blocks CRY1, and has minimal effect on CRY2. KPNB1 knockdown also blocks nuclear localization of PER/CRY complexes and increases cytoplasmic accumulation of endogenous PER1/2 and CRY1/2 proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C28, C30-C32, and C75 provide converging evidence from multiple experimental approaches (immunofluorescence, immunoblot, BiFC assays) showing that KPNB1 depletion blocks nuclear entry of PER proteins and PER/CRY complexes. The data consistently demonstrate differential effects on different clock proteins (strong for PER1/2, modest for CRY1, minimal for CRY2), which is internally consistent across multiple assay types. The use of both tagged and endogenous proteins strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "36f593a7-ccbb-4c14-a62e-608e87919e47",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KPNB1 interacts preferentially with PER proteins compared to CRY proteins. Co-immunoprecipitation experiments show stronger interaction with PER1 and PER2 than with CRY1 or CRY2, and KPNB1 co-localizes with PER2 in both cytoplasm and nucleus. This suggests PER proteins mediate the interaction with KPNB1 and gate nuclear translocation of the PER/CRY complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C34, C36, C37, and C84 are supported by co-immunoprecipitation data (Figure 2, Figure 2\u2014figure supplement 1) and immunofluorescence data showing co-localization. The conclusion in C35 and C104 that PER proteins play the leading role is a reasonable inference from the differential binding strength observed. The use of both ectopically expressed and endogenous proteins in different systems (cell culture and mouse liver) strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "283d4601-4595-4651-a684-47dd6718cdcf",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "KPNB1 exhibits circadian rhythmic nuclear localization that coincides with PER/CRY nuclear accumulation and transcriptional repression. KPNB1 nuclear abundance peaks at CT 14-18 when PER2 and CRY1 accumulate in the nucleus, concurrent with decreased expression of E-box dependent clock genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 and C85 are supported by time-course immunoblot data from mouse liver (Figure 2D) and qRT-PCR data (Figure 2E) showing coordinated rhythmic patterns. The temporal correlation between KPNB1 nuclear localization, PER/CRY nuclear accumulation, and gene repression is consistent with the proposed mechanism. However, correlation does not prove causation, and the mechanism driving rhythmic KPNB1 localization is not established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "f3ee891c-7f56-41ba-97df-e8d1fd9d5048",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KPNB1 regulates PER/CRY nuclear entry independently of importin \u03b1. A KPNB1 mutant lacking the importin \u03b1 binding domain retains the ability to regulate transcription, and knockdown of importin \u03b1 isoforms (KPNA2, KPNA1) does not affect circadian rhythmicity or PER2 nuclear localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C48, and C94 are supported by experiments with KPNB1 deletion mutants (Figure 3\u2014figure supplement 2) showing retained function without the importin \u03b1 binding domain. Claims C50, C52, and C95 show that KPNA2 and KPNA1 depletion does not affect rhythmicity or PER2 localization (Figure 4\u2014figure supplements 1 and 3). These complementary approaches provide strong evidence for importin \u03b1-independent function, though the possibility of redundancy among importin \u03b1 isoforms is not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "e45416e5-25e7-4500-9d8a-37fa576d71ad",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KPNB1 regulates transcriptional repressor activity of the PER/CRY complex. KPNB1 knockdown elevates Per1 promoter activity, reduces PER1/PER2 recruitment to the Per1 promoter E-box, and increases expression of E-box dependent genes. Conversely, KPNB1 overexpression decreases Per1 transcription and E-box regulated gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44, C45, C76 are supported by luciferase reporter assays (Figure 3A), ChIP assays (Figure 3B-D), and qRT-PCR (Figure 3E). Claims C46-C47 show the converse effect with overexpression. The bidirectional effects (loss-of-function and gain-of-function) strengthen the conclusion. Claim C43 provides specificity by showing that other NRON complex transport proteins (TNPO1, CSE1L) do not have the same effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "cc7efaf2-2586-4991-825d-699cfea1d176",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KPNB1 is essential for circadian rhythmicity in human cells. KPNB1 knockdown severely disrupts circadian bioluminescence reporter activity driven by the Per2 promoter and disrupts circadian transcription of clock genes in synchronized cells, with altered nuclear accumulation of PER and CRY proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C53, C54, and C106 are supported by real-time bioluminescence recordings (Figure 4A,B) and time-course gene expression analysis in synchronized cells (Figure 4C,D). The disruption of rhythmicity is consistent across multiple readouts (reporter activity, endogenous gene expression, protein localization). The dose-dependent effect of KPNB1 knockdown on rhythmicity (Figure 4B) strengthens the conclusion of a causal relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Drosophila ortholog of KPNB1 (ketel) is required for circadian behavioral rhythms and PER nuclear localization in flies. RNAi knockdown of ketel in clock neurons results in arrhythmic or weakly rhythmic locomotor activity, and PER protein is retained in the cytoplasm of large LNvs in ketel knockdown flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 are supported by behavioral analysis data (Figure 5A-E, Supplementary file 1) showing loss of rhythmicity with ketel knockdown using multiple Gal4 drivers. Claims C63-C64 are supported by immunofluorescence data (Figure 5F,G) showing cytoplasmic retention of PER in ketel knockdown flies. The use of both constitutive and inducible (pdf-GS) knockdown systems (C60-C61) excludes developmental effects. This demonstrates evolutionary conservation of the mechanism from flies to mammals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "c4402cc2-3469-4761-b438-b4d56d435715",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Importin \u03b1 isoforms (KPNA2, KPNA1, and most other KPNA isoforms) are not required for circadian rhythmicity or PER2/CRY2 nuclear localization. Depletion of these importin \u03b1 isoforms does not affect circadian bioluminescence rhythms or subcellular localization of clock proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C52, C95, and C107 are supported by bioluminescence recordings (Figure 4\u2014figure supplements 1, 3, 4) and fluorescence microscopy (Figure 4\u2014figure supplements 1C,D, 3C,D) showing no effect of KPNA depletion on rhythmicity or protein localization. This negative result is important for establishing the specificity of KPNB1's role and its independence from importin \u03b1. The testing of multiple KPNA isoforms strengthens the conclusion, though complete redundancy cannot be fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "b9164f32-acf0-4a73-9d7c-63f4d5770bd7",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "KPNA2 overexpression reduces PER2-Venus expressing cells and KPNA2 localizes predominantly in the nucleus. The authors speculate this discrepancy with a previous study may be due to different cell types and species used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C97 reports an unexpected observation (reduced PER2-Venus expressing cells with KPNA2 overexpression) supported by imaging data (Figure 4\u2014figure supplement 1E). Claim C98 is supported by fractionation data. However, claims C99 and C100 are speculative explanations for the discrepancy with prior work (C96). The mechanism by which KPNA2 might regulate PER2 protein levels is unknown, and the observation is not fully explained or integrated into the main conclusions. This represents an unresolved observation rather than a well-supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "c5642dc3-e0ff-4836-be00-263ce111be1b",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TNPO1 and CSE1L, other NRON complex transport proteins, display circadian gene expression and affect circadian period length or cellular rhythms when silenced, but do not interact with PER/CRY proteins. The authors speculate these proteins may regulate import/export of other clock components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C82 are partially supported by citations and mention of unpublished data, but the data are not shown in the manuscript. Claim C83 is explicitly speculative. While these observations suggest additional roles for nucleocytoplasmic transport in clock function, the lack of presented data and the speculative nature of the interpretation make this result uncertain. This represents preliminary observations that would require additional experiments to support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "69a1892f-ff0d-47b1-a437-9ca35f7886fb",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors postulate that cytosolic Ca2+ rhythms contribute to driving timely nuclear localization of KPNB1 and its PER/CRY cargo as a critical step in negative feedback regulation of the clock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is explicitly stated as a postulation based on prior knowledge about calcium regulation of importin \u03b2-dependent nuclear import (C87) and calcium dynamics in circadian regulation (C89). However, no direct experimental evidence is provided in this study to test this hypothesis. This represents a reasonable speculation based on the literature, but it is not a supported result of the current work. Testing this hypothesis would require additional experiments measuring calcium dynamics and their effects on KPNB1-mediated PER/CRY translocation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "dca92d57-3ec1-47ce-8527-597965218f70",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "KPNB1 knockdown has differential effects on individual clock proteins versus PER/CRY complexes. Single tagged proteins show strong effects for PER1/2, modest for CRY1, and minimal for CRY2, while all PER/CRY complex combinations show strong effects. Endogenous proteins show varying degrees of cytoplasmic retention, likely through complex interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 are supported by data in Figure 1A-D showing differential effects on individual proteins versus complexes. This observation is important for understanding the mechanism, suggesting that complex formation may alter the requirements for nuclear import. The authors appropriately note that the effects on endogenous proteins likely reflect complex interactions. This result provides mechanistic insight into how KPNB1 preferentially transports PER/CRY complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "b8da9d22-cfc6-481f-8b46-5c30f047e3c8",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Small LNvs are undetectable in ketel RNAi transgenic flies, similar to other arrhythmic fly mutants such as Clk and cyc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by immunofluorescence data (Figure 5F) and comparison to previous studies. The loss of small LNvs in arrhythmic mutants is a known phenotype in the field. This observation is consistent with severe disruption of clock function but represents a secondary phenotype rather than a direct mechanistic insight. The claim is well-supported but represents a confirmatory observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background knowledge about circadian clocks, KPNB1 function, and the NRON complex. These claims establish the scientific context for the study, including the molecular mechanism of circadian clocks, the known functions of KPNB1 and importin \u03b1, the composition of the NRON complex, and prior work on nuclear transport of clock proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C23, C29, C68-C69, C71-C74, C87-C89, C91-C93, C105, C109-C110 represent established scientific knowledge supported by citations to prior work. These claims provide essential background and context for the study but do not represent new findings. They are appropriately cited and accurately represent the state of knowledge in the field. These are supporting claims that establish the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    },
+    {
+      "id": "8785471c-8003-48e2-81f7-7a0da52eb634",
+      "content_id": "d4a1d77e-14a5-46e6-b55e-064f832548c9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Summary and conclusion claims stating that KPNB1 mediates nuclear translocation and repressor function of the PER/CRY complex and is required for circadian clock function. These represent the main conclusions drawn from the experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8, C33, C41, C56, C70, C78, C86, C108, and C111 are summary statements and conclusions that integrate the experimental findings. These conclusions are well-supported by the collective evidence from multiple experimental approaches (RNAi, microscopy, biochemistry, transcriptional assays, behavioral analysis) in both mammalian cells and Drosophila. The conclusions appropriately reflect the strength and scope of the data presented. The claim that this is the 'first evidence' (C70) for KPNB1's role in clock function appears justified given the prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:55:55.793408Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "641c9c02-1b47-48df-a356-77d68d6389c4",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "251be6b6-b13c-4a0a-ab8c-e4423ebf81a6",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "7008b1fb-4f2d-4d36-9b71-ce5f00d65c02",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "8e66e78e-e300-4717-820e-4df645aa6847",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "5ec88549-c44b-476a-8e02-aabc7bb41666",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "c2849d2c-f1a5-4e7c-a85b-58ff6f7e7f07",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "0a81236c-b059-453f-823e-a6d649baf8af",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "712239e1-1a0a-470c-bf0b-dc6316cc5218",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "4acaad98-2e7b-4c7d-abb2-40d3642ed670",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "ee8bc488-1bca-449a-acab-e45061133098",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "806447ab-f821-44cc-af30-4092ae1f326c",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "075b8ba7-702c-4501-baea-6dcc10386123",
+      "result_id": "0c7822cf-995e-4377-aed9-9fdf21e07423"
+    },
+    {
+      "claim_id": "4be5cd70-679b-4358-a914-572d581a1935",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "ed7e2d87-b36c-4afd-b5f4-b16e7c1ea4f8",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "8e20e7b4-b873-48ed-8236-a5bf9860426e",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "eabdf13a-0e05-42e1-b42d-dd8a9060c491",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "2748d2b6-af1e-4c89-9b13-7a63e6af280f",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "82252424-12b5-4194-8963-48157d062f47",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "39aa393e-0fe1-46ae-862b-a2904da62f0e",
+      "result_id": "36f593a7-ccbb-4c14-a62e-608e87919e47"
+    },
+    {
+      "claim_id": "7c024a54-12bd-4e9f-91a1-4d1e5ca7a480",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "888bf93c-571f-44ff-afc8-bf377933854c",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "f1b4561f-5495-45c2-895f-6edcb4ff6bfc",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "e6f6c82f-5a8e-4d43-8e4c-1cbfab6f10e9",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "e9e1e67a-5801-4f20-abe0-aa365f9a4d08",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "4a3d98a3-f834-4e36-adb7-c89ee333ec47",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "3e1d03e2-fc12-4b4a-844e-50cd7de47b48",
+      "result_id": "283d4601-4595-4651-a684-47dd6718cdcf"
+    },
+    {
+      "claim_id": "40d5e4b1-ac04-4a47-8ede-a3c0e59c1558",
+      "result_id": "f3ee891c-7f56-41ba-97df-e8d1fd9d5048"
+    },
+    {
+      "claim_id": "b0571e66-6059-45c5-9efd-0b3cc18a7d69",
+      "result_id": "f3ee891c-7f56-41ba-97df-e8d1fd9d5048"
+    },
+    {
+      "claim_id": "e61e38fb-8d28-4472-b7af-73212b609cf8",
+      "result_id": "f3ee891c-7f56-41ba-97df-e8d1fd9d5048"
+    },
+    {
+      "claim_id": "f0971953-9ad2-4990-b1b2-15fa557abf68",
+      "result_id": "f3ee891c-7f56-41ba-97df-e8d1fd9d5048"
+    },
+    {
+      "claim_id": "fb666de2-11af-403a-b8ed-6226c5866af0",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "43dd7ee8-092f-44ad-b734-2d992609aa6f",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "3f9c9dd3-6da9-437c-9106-2b8dddc26cff",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "4c612a98-2363-40b0-ae99-0892ef5e4204",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "bd1ae037-d2c9-4ae3-b13b-774222a7e231",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "b2c7aa75-4c95-4087-9232-dd0b14903222",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "252d67c0-ef4c-4aa8-ae0d-75d0ced6cfe4",
+      "result_id": "e45416e5-25e7-4500-9d8a-37fa576d71ad"
+    },
+    {
+      "claim_id": "9d6c658e-f303-4e86-943c-e9c22e838328",
+      "result_id": "cc7efaf2-2586-4991-825d-699cfea1d176"
+    },
+    {
+      "claim_id": "2b260f73-84e0-48e6-b1a4-1201202e6eed",
+      "result_id": "cc7efaf2-2586-4991-825d-699cfea1d176"
+    },
+    {
+      "claim_id": "a68c7107-6a41-4003-bcb1-2bdc6b142ca7",
+      "result_id": "cc7efaf2-2586-4991-825d-699cfea1d176"
+    },
+    {
+      "claim_id": "5d44d2a6-7ba3-4d89-a65a-3b4928339e77",
+      "result_id": "cc7efaf2-2586-4991-825d-699cfea1d176"
+    },
+    {
+      "claim_id": "c7cc5b46-1d4a-460b-9449-37d51a622641",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "80248c4a-f6ab-4942-b39f-2c748afe328f",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "356191ea-2a3b-4921-a33f-a3ea2269ef88",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "e7ab55bd-f4b9-4ae6-a7d9-10f01c43a9d4",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "3f9df1a7-11b4-4cd0-beef-4dac69e2b73e",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "12f314fc-7647-4701-b028-cd10373e3cd0",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "2fcc5b16-de49-4ccc-a0d1-d96d31f3896e",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "09f3aa6f-4ffb-48d9-8fcd-b5262602b6f9",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "ff8f4f12-4667-445b-9cdd-18bafce4e16e",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "a6eb8204-6a42-4fe7-804f-6b6a609950ed",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "028e541a-d85d-4022-a4d5-c6b04e51efea",
+      "result_id": "7f691f0f-7c34-4d17-95e1-9adcf9ee4e27"
+    },
+    {
+      "claim_id": "d7c2dc3f-3168-4ed0-90b0-382bd8d4a933",
+      "result_id": "c4402cc2-3469-4761-b438-b4d56d435715"
+    },
+    {
+      "claim_id": "d670b182-e4b7-4a6f-860a-4f7cae2402bb",
+      "result_id": "c4402cc2-3469-4761-b438-b4d56d435715"
+    },
+    {
+      "claim_id": "036b979c-f203-4ecd-a058-d659a2fe314a",
+      "result_id": "c4402cc2-3469-4761-b438-b4d56d435715"
+    },
+    {
+      "claim_id": "b0817142-e273-4690-b744-4ac1b4064f7c",
+      "result_id": "c4402cc2-3469-4761-b438-b4d56d435715"
+    },
+    {
+      "claim_id": "3adec677-4a43-4e02-b6a5-2be69ed925ac",
+      "result_id": "b9164f32-acf0-4a73-9d7c-63f4d5770bd7"
+    },
+    {
+      "claim_id": "4f83e623-acc2-4410-8dd6-2e2aeb706f7f",
+      "result_id": "b9164f32-acf0-4a73-9d7c-63f4d5770bd7"
+    },
+    {
+      "claim_id": "489ec18f-6aa3-4be0-92c0-56854fe806cb",
+      "result_id": "b9164f32-acf0-4a73-9d7c-63f4d5770bd7"
+    },
+    {
+      "claim_id": "f6390a87-762b-44ae-9b68-25a19b0ee8c9",
+      "result_id": "b9164f32-acf0-4a73-9d7c-63f4d5770bd7"
+    },
+    {
+      "claim_id": "4107411a-3ae3-4d34-b710-934579867144",
+      "result_id": "b9164f32-acf0-4a73-9d7c-63f4d5770bd7"
+    },
+    {
+      "claim_id": "c3a0c0cb-12bf-4e11-a434-aee76dadacb5",
+      "result_id": "c5642dc3-e0ff-4836-be00-263ce111be1b"
+    },
+    {
+      "claim_id": "9b45b5e6-50c7-430b-b5ab-f3d8961eb766",
+      "result_id": "c5642dc3-e0ff-4836-be00-263ce111be1b"
+    },
+    {
+      "claim_id": "8cd06705-946e-424e-a227-0352bd55897d",
+      "result_id": "c5642dc3-e0ff-4836-be00-263ce111be1b"
+    },
+    {
+      "claim_id": "7cd4ee97-f4a9-4e4e-9f71-8117722fba39",
+      "result_id": "c5642dc3-e0ff-4836-be00-263ce111be1b"
+    },
+    {
+      "claim_id": "657724b3-ca98-41f0-9c4d-233674352955",
+      "result_id": "c5642dc3-e0ff-4836-be00-263ce111be1b"
+    },
+    {
+      "claim_id": "078ebe3e-b4f3-4e34-b3d8-dc98bc19bfc0",
+      "result_id": "69a1892f-ff0d-47b1-a437-9ca35f7886fb"
+    },
+    {
+      "claim_id": "41250dde-2ac6-4cf0-8ae4-d76063fd3555",
+      "result_id": "dca92d57-3ec1-47ce-8527-597965218f70"
+    },
+    {
+      "claim_id": "e2d87a8a-bb6e-4a63-8935-1013fdb9a0fb",
+      "result_id": "dca92d57-3ec1-47ce-8527-597965218f70"
+    },
+    {
+      "claim_id": "5f536b9b-650a-4a2c-a125-d808fa9c92eb",
+      "result_id": "dca92d57-3ec1-47ce-8527-597965218f70"
+    },
+    {
+      "claim_id": "92ee55b3-ba0f-4f18-9eb5-4893a86ed915",
+      "result_id": "b8da9d22-cfc6-481f-8b46-5c30f047e3c8"
+    },
+    {
+      "claim_id": "c0108d4b-74be-440f-8088-e57e15c9305e",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "178f9996-66bf-48ab-954d-79b5a2661987",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "11dcb93f-c07f-4b33-a6aa-f894264e2d0f",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "e1bc3be3-16e7-4d62-80dd-91d9a9df369f",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "867c0803-d1c1-425a-9bcf-cf921f5a339f",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "a5af95a6-2ac7-48e2-adc6-40a5169e8345",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "5c0aa986-764f-4378-aaad-4c0df7b97dba",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "6477bf60-0ce6-430d-a59d-83e25def1dbe",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "bb8ba426-df19-47a3-8fad-95d9eec6f6e9",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "105acaab-161b-45ab-9d28-8b6c629c9edb",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "58055536-94cf-4bab-9df1-f9e2f7a123cf",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "404ed735-e279-434d-a874-b279c721d862",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "e1125c16-1178-406e-a90b-c65086cd5f4e",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "88db7020-8b0f-4f9b-bf75-4efee2d4a8b1",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "fcdd47c5-afb0-47ee-80da-1adfeb0a49dd",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "e940c737-bd1f-4ab4-a381-fc2684dc1587",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "d4eaabd4-f9f1-4d6e-ad05-8969eeb87b98",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "d0a540d2-3ff1-49f6-b63e-b8be5d017163",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "6adaff80-4f2e-476b-87ab-3ee6a572dd06",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "e44f30bb-af61-4827-a522-0fc7dd332ea1",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "7d981622-dace-4d9a-8cb0-3f07150ec8d9",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "8c3be646-aba6-48e8-8c7d-d5d30d800a2a",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "a08937bb-85d5-452b-89ae-b9228f7080f2",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "48e342d2-be20-4ce6-8054-dff1fa23e2bd",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "cb9b4364-abd5-4f4f-96ac-7909b59bde52",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "61861349-9740-480d-88ab-95ef7510dad3",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "bec4f974-1978-456e-8bea-cb6c3f506518",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "d0702453-c072-4084-af24-d765ee25daf9",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "a962269b-8daa-4ae0-97b0-1edf307fc1b7",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "59503ee4-24d6-4241-b2b8-21ad5d8836f9",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "37954aa5-6253-4d74-b44d-2804eee7de13",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "1cb03e33-a614-4bc2-8d92-12916a06268e",
+      "result_id": "2d1fff5a-b70a-4f06-bcec-3fd5436c37a8"
+    },
+    {
+      "claim_id": "641c9c02-1b47-48df-a356-77d68d6389c4",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "051233b7-7549-4e9a-9f5a-57f5b82f7a01",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "806447ab-f821-44cc-af30-4092ae1f326c",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "e9e1e67a-5801-4f20-abe0-aa365f9a4d08",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "716cb769-db7c-448d-bd59-c7abf006c30f",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "bf68d611-b919-4da8-a677-a9a958db696d",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "2e14a358-206b-4a0b-8493-b9c16501601c",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "3e1d03e2-fc12-4b4a-844e-50cd7de47b48",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "cb3d792a-a82c-4c90-8560-1755a1a83f91",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    },
+    {
+      "claim_id": "76526746-2063-4aa3-af45-a6119b470462",
+      "result_id": "8785471c-8003-48e2-81f7-7a0da52eb634"
+    }
+  ],
+  "comparisons": []
+}

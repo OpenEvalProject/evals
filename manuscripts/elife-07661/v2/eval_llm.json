@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript provides background on HLA peptide presentation and the importance of immunopeptidome characterization. Claims establish that HLA class I peptides (8-12 amino acids) are presented on nucleated cells to CD8+ T cells, HLA class II peptides (10-25 amino acids) are presented on antigen-presenting cells to CD4+ T cells, and that >3000 HLA alleles create diverse peptide repertoires. Mass spectrometry has become the method of choice for immunopeptidome exploration, with the largest datasets containing >10,000 peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C11) represent well-established background knowledge supported by appropriate citations to the literature. The claims accurately describe the fundamental biology of HLA peptide presentation and current state of MS-based immunopeptidomics. No experimental validation is required as these are literature-based contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "DDA mass spectrometry has significant limitations for HLA peptide analysis: up to 84% of detectable peptides may not be selected for fragmentation in complex samples, and up to 20% of selected HLA peptides vary between technical replicates of the same sample. S/MRM is limited to detecting only tens to hundreds of peptides per injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by appropriate citations (Michalski et al., 2011; Granados et al., 2014) and reference to Figure 1\u2014figure supplement 1A. These establish the motivation for developing SWATH-MS approaches by documenting limitations of existing methods. The 20% variability claim is directly demonstrated in the authors' own data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "SWATH-MS combines data-independent acquisition (DIA) with targeted data extraction. In DIA mode, all peptides are fragmented and fragment ion spectra acquired, creating a digital recording. DIA represents an unbiased strategy for generating consistent, reproducible, and quantitatively accurate peptide measurements. High-quality assay libraries containing retention-time and fragmentation information are required to extract quantitative information from SWATH-MS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 accurately describe SWATH-MS methodology and are supported by multiple appropriate citations (Gillet et al., 2012; R\u00f6st et al., 2014; Collins et al., 2013; and others). These represent established technical background for the methodology being applied in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Generic SWATH assay libraries have been generated for M. tuberculosis, S. cerevisiae, and H. sapiens. Assay libraries have been used to measure limited numbers of MHC class I peptides by S/MRM in viral infection, autoimmunity, and cancer contexts, but have never been created for robust quantitative high-throughput measurement of HLA peptides by SWATH-MS prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are supported by appropriate citations and establish the novelty of the current work (C27). The claims accurately represent prior work in the field and position this study as the first to create SWATH-MS assay libraries specifically for HLA peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study developed a workflow to generate a pilot repository of HLA allele-specific peptide spectral and assay libraries and to analyze SWATH-MS HLA peptidomic data from multiple international laboratories. Libraries were created from natural and/or synthetic HLA class I and II peptides, while SWATH-MS data analysis focused mainly on naturally presented class I peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 accurately describe the study objectives and scope as presented in the manuscript and Figure 1. The workflow development and multi-laboratory collaboration are clearly documented throughout the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SWATH-MS dramatically outperforms DDA for reproducible HLA peptide identification. In technical replicates of JYEBV+ cells, SWATH-MS identified 97% of peptides in all three analyses (2832/2933 peptides) compared to only 40% for DDA (1261/3153 peptides). SWATH-MS demonstrates capability for detecting large numbers of HLA peptides across multiple injections with high reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C75-C78 are strongly supported by data in Figure 1\u2014figure supplement 1A-B and Figure 1\u2014source data 1. The direct comparison using identical samples and chromatographic conditions provides compelling evidence for SWATH-MS superiority in reproducibility. The 97% vs 40% reproducibility difference is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study created a computational workflow integrating NetMHC 3.4 with in-house software tools for automated HLA peptide annotation. The workflow enables systematic annotation of peptides to their respective HLA allele, visualization of datasets, and generation of HLA class I allele-specific spectral libraries. An HLA annotation score (second best IC50/best IC50) was computed for each peptide, with peptides scoring \u22653 systematically annotated to the best-predicted allele. Using this strategy, ~80% of identified 8-12-mers were annotated to specific HLA-A or -B alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C47 describe the computational annotation workflow, which is well-documented in Figure 2\u2014figure supplement 1 and Supplementary file 1. The annotation score methodology is clearly explained and justified (C97 indicates >90% of peptides with score >3 have IC50 <1000 nM). The 80% annotation rate (C46) is reported with reference to source data. The prioritization of HLA-A and -B alleles is appropriately justified by citations (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "HLA class I peptides were isolated from 14 PBMC samples and analyzed by DDA on an Orbitrap-XL. Peptides were identified using multiple search engines and statistically validated using PeptideProphet and iProphet. After annotation and removal of contaminants, 4153 distinct peptides (1% FDR, 0.5% cFDR) or 7921 peptides (5% FDR, 2.5% cFDR) were identified across 18 HLA class I alleles. These were used to build spectral libraries containing 3528 HLA-A, 4208 HLA-B, and 205 HLA-C04 peptides, stored in PeptideAtlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C54 describe the PBMC-based library generation workflow and results. The methodology is clearly described with appropriate references to figures (Figure 2, Figure 1\u2014figure supplements 2-3, Figure 2\u2014source data 1-4). The FDR calculations and peptide counts are well-documented. The inclusion of HLA-C04 peptides is justified by citation (C52, Schittenhelm et al., 2014b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A community-based effort generated pilot HLA assay libraries from naturally presented and synthetic peptides provided by six laboratories, analyzed on four TripleTOF 5600 instruments in four international institutions. All laboratories used iRT peptides for retention time normalization. This resulted in identification of 7668 (1% FDR) or 11,275 (5% FDR) distinct HLA class I peptides across 11 alleles, and 15,875 (~79%) of 20,176 synthetic HLA class II peptides. The pilot libraries contain 223,735 transitions for 26,857 unique peptides, stored in SWATHAtlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 describe the multi-laboratory collaborative library generation effort. The methodology is well-documented with references to Figure 2\u2014figure supplements 2-3 and Figure 2\u2014source data 2-5. The use of standardized iRT peptides (C57) ensures comparability across sites. The peptide identification numbers and library statistics are clearly reported with appropriate FDR estimates. The ~79% identification rate for synthetic peptides (C60) demonstrates good library generation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C97",
+      "C101",
+      "C102"
+    ],
+    "result": "95% of annotated class I peptides were predicted to bind their respective HLA molecules with IC50 ranging from 72 nM (HLA-A01) to 5682 nM (HLA-B51) at 1% FDR. This supports that HLA class I alleles are associated with peptide-binding repertoires of different affinity. For HLA-B07, 95% of peptides had IC50 <531 nM, and 92% of naturally presented peptides ranked in the top 1% of predicted peptides from source proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C97, C101-C102 are supported by data in Figure 2\u2014figure supplements 4-6 and Figure 2D. The binding affinity predictions validate the annotation strategy, showing that annotated peptides are indeed predicted to bind their assigned HLA alleles. The ranking analysis (C102) provides additional validation that naturally presented peptides are among the highest-affinity predicted binders from their source proteins. The citation to Paul et al., 2013 (C64) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Four independent laboratories generated digital SWATH maps using TripleTOF 5600 MS in DIA mode with 32 windows of 25 Da covering 400-1200 Th. From JYEBV+ cells, 3150 unique HLA class I peptides were identified at 1% FDR using a combined HLA-A02/B07 library. Synthetic EBV peptide assays enabled identification of one EBV-derived HLA-A02 peptide, demonstrating utility for pathogen-derived peptides. Across four additional datasets, ~81% of library peptides could be extracted from SWATH maps in a cell type-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by data in Figure 3A-C and Figure 3\u2014figure supplements 1-6. The multi-laboratory SWATH data acquisition demonstrates reproducibility across sites. The 81% extraction rate (C70) shows good library performance. The identification of an EBV peptide (C68-C69) provides proof-of-concept for pathogen peptide detection, though the inference about general utility (C69) is based on a single example and should be validated with additional pathogen peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Most class I peptide precursors (~98%) fall within 400-700 Th. Narrowing SWATH window size from 25 Da to 10 Da (2.5-fold reduction) resulted in ~13% increase in class I peptide identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by data in Figure 3\u2014figure supplement 1A. The optimization of SWATH acquisition parameters based on HLA peptide mass distribution is logical and well-documented. The 13% improvement with narrower windows demonstrates the value of method optimization for this specific application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "SWATH-MS quantification showed R\u00b2 = 0.979 between technical replicates. The dynamic range of peptides quantified across different cell types was 3-4 orders of magnitude based on signal intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by data in Figure 3D-E. The high R\u00b2 value demonstrates excellent quantitative reproducibility. The dynamic range observation is consistent with prior studies (Hassan et al., 2013; Bassani-Sternberg et al., 2015) as noted in C74. These metrics establish SWATH-MS as a quantitatively robust platform for HLA peptidomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A total of 35,812 distinct class I and class II HLA peptides were identified and annotated, used to build 32 HLA allele-specific peptide spectral libraries and 11 SWATH assay libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 summarize the overall library generation results as shown in Figure 2C. The numbers are consistent with the detailed breakdowns provided elsewhere in the manuscript. The distinction between spectral libraries (32) and SWATH assay libraries (11) reflects the different stages and purposes of library generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "By improving OpenSWATH software and expanding library contents, additional HLA peptides\u2014including cryptic and mutant peptides\u2014will be reproducibly identified and quantified from the same digital SWATH maps in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is speculative about future improvements and capabilities. While the statement is reasonable based on the demonstrated platform capabilities, it represents a prediction rather than a demonstrated result. The claim appropriately uses future tense ('will be') indicating this is an expectation rather than current achievement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Robust generation and analysis of quantitative digital HLA peptidome maps is expected to have important implications in basic and translational research, including facilitating patient stratification for immunotherapies through reproducible mapping of tumor-specific mutant HLA peptides. The workflow and resources represent a first step toward highly reproducible MS-based HLA peptidome measurements and could benefit personalized immune-based therapy design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 represent inferences about potential impact and applications rather than demonstrated results. While C81 is supported by citations (Gubin et al., 2014; Snyder et al., 2014; Schumacher et al., 2015), the actual clinical utility and benefit for personalized therapies (C83) remains to be demonstrated. These are reasonable expectations based on the technical capabilities demonstrated, but represent future potential rather than current achievements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Storage of HLA peptide spectral and assay libraries by class and allele in SWATHAtlas provides an initial framework to collect, organize and share HLA peptidomic data, supporting the Human Immunopeptidome and Vaccines Projects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by the demonstrated creation and public deposition of libraries in SWATHAtlas (http://www.swathatlas.org). The connection to Human Immunopeptidome and Vaccines Projects is supported by citations (Admon and Bassani-Sternberg, 2011; Koff et al., 2014). The resource contribution is concrete and verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript describes standard experimental methods including PBMC isolation, HLA typing, cell line transfection, peptide synthesis, immunoaffinity purification using mAb W6/32, iRT peptide addition for normalization, and database searching parameters (\u00b15 ppm parent mass error, \u00b10.5 Da fragment mass error, oxidation(M) as variable modification, searching against UniProtKB/Swiss-Prot 2014_02 with 20,270 ORFs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 describe standard methodological details that are appropriately documented with citations to established protocols. The parameters are reasonable and consistent with best practices in the field. Ethical compliance is noted (C87). These methodological claims provide necessary technical details for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

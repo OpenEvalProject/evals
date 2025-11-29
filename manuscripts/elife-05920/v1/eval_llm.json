@@ -1,0 +1,501 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study established a reproducible in vitro system for differentiating primary murine CD4+ T cells into Treg, Th1, and Th17 lineages using defined cytokine concentrations, with lineage commitment assessed by flow cytometric detection of FOXP3, IFN\u03b3, and IL-17. This system was used to screen 3,281 compounds for modulators of T cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe the foundational methodology that is well-supported by Figure 1\u2014figure supplement 1 and standard immunological approaches. The use of flow cytometry for lineage markers is an established gold standard method, and the screening scale is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "A previously unreported negative correlation exists between the number of live cells in culture and the percentage of FOXP3+ cells specifically in Treglow conditions, which is not observed in other differentiation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 report a novel observation supported by Figure 1\u2014figure supplement 2. This finding is important for the screening methodology as it necessitated accounting for cellularity effects through linear regression modeling. The specificity to Treglow conditions strengthens the observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The screen successfully recovered known Treg cell enhancers (statins, artemisinin, retinoic acids) and identified 14 novel compounds that specifically enhance Treg differentiation without affecting Th1 or Th17 differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are well-supported by the screening data in Figures 1B-C and supplementary figures. Recovery of known compounds validates the approach, while the identification of 14 novel specific enhancers represents a major discovery. The specificity was confirmed by testing in multiple Th differentiation conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "All 14 novel Treg cell enhancers work independently of mTOR signaling, as demonstrated by their failure to inhibit S6 phosphorylation, unlike the positive control rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by Figure 1D showing S6 phosphorylation data with appropriate statistical analysis (1-way ANOVA with Dunnett correction). This mechanistic distinction from rapamycin is important for identifying novel pathways, though additional mTOR pathway markers would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Th17 cell differentiation was more strongly inhibited (\u226540%) than Th1 by the Treg cell enhancers, consistent with Treg and Th17 cells arising from a common progenitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by Figure 1E data and a citation to prior literature (Zhou et al., 2008). The differential inhibition pattern is consistent with the known developmental relationship between Treg and Th17 cells, providing biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Computational analysis of phenotypic data identified mechanistic clusters among compounds and prioritized MBCQ, harmine, and amrinone as having favorable therapeutic indices and phenotypic profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by unsupervised clustering analysis shown in Figures 1C and 1\u2014figure supplement 7. The prioritization based on LD50/EC50 ratios and maximal enhancement is methodologically sound, though the clustering approach could benefit from more detailed validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Treg cells generated under TregHAR conditions (with harmine) suppress responder T cell proliferation in vitro equivalently to Treg cells generated under Treghi conditions, and both populations are more effective than thymic Treg cells, likely due to pre-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by in vitro suppression assay data in Figure 2A. The equivalent suppressive function at multiple dilution ratios demonstrates that harmine-enhanced Treg cells are functionally competent. The inference about pre-activation is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TregHAR-Treg cells attenuate disease equivalently to Treghi-Treg cells in three distinct in vivo models: NOD-BDC2.5 type 1 diabetes, CD45RBhi colitis, and airway inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are strongly supported by in vivo data in Figures 2B-E across three different disease models with different genetic backgrounds and target organs. The consistent functional equivalence across multiple models provides robust evidence for the physiological relevance of harmine-enhanced Treg cells. Statistical analyses support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Intranasal harmine administration increases Treg cell frequency (~20%) in draining lymph nodes without affecting dendritic cell costimulatory molecule expression, suggesting direct action on CD4+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by data in Figure 2F and supplements showing statistically significant increases in Treg frequency and no effects on dendritic cells. However, the inference about direct action (C61) is reasonable but not definitively proven\u2014indirect effects through other cell types cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Intranasal harmine administration during the immunization window inhibits airway inflammation as potently as tolerization with ovalbumin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by Figure 2G showing equivalent suppression of inflammation between harmine treatment and antigen-specific tolerization. This is a striking finding demonstrating therapeutic potential, though the mechanism requires further investigation. The experimental design appropriately controls for timing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Harmine is a novel, potent, and specific enhancer of Treg cell differentiation that strongly inhibits Th17 differentiation and can paradoxically promote Treg differentiation even under pro-inflammatory Th17 conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are well-supported by comprehensive data in Figures 1B and 3A. The reciprocal regulation of Treg/Th17 differentiation is consistent across multiple conditions, and the paradoxical Treg induction in Th17 conditions is particularly notable. The dose-response data support potency claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Harmine enhances Treg cell numbers without significant cytotoxicity, causing only modest transient effects on proliferation (24% reduction at day 3) that are less than half those of rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by cellularity data (Figure 3B) and CFSE proliferation studies (Figure 3\u2014figure supplement 1). The favorable toxicity profile compared to rapamycin is important for therapeutic potential. The quantitative proliferation data strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Harmine enhances human Treg cell differentiation beyond even Treghi conditions in both percentage and absolute numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by Figure 3C showing effects in human CD4+ T cells. This cross-species validation is critical for translational relevance, though more extensive characterization of human Treg function would strengthen the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Harmine requires exogenous TGF-\u03b21 for its pro-Treg effect and acts in conjunction with, rather than substituting for, TGF-\u03b21 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by Th0 condition experiments (Figure 3D) showing no lineage skewing without TGF-\u03b21. This mechanistic insight is important for understanding harmine's mode of action as a TGF-\u03b21 pathway modulator rather than an independent inducer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Harmine can enhance Treg differentiation when added as late as day 3 of culture, and effects are detectable with as little as 4 hours of exposure, indicating that harmine targets are present throughout differentiation and that harmine does not impart long-lasting epigenetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by time-course experiments in Figure 3E. The temporal analysis provides important mechanistic insights about the window of action and lack of epigenetic memory. The complementary add-back and washout experiments strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TregHAR-Treg cells show high similarity to Treghi-Treg cells (Pearson r=0.95) with concordant regulation of canonical Treg signature genes, no similarity to specialized Treg subsets, but a bias toward increased activation and equal or higher FOXP3 expression, suggesting similar or superior function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by comprehensive gene expression analysis (microarray) and flow cytometry data in Figures 3F-H and supplements. The high correlation coefficient and signature gene analysis provide strong evidence for functional equivalence, while the activation bias is an interesting distinguishing feature. The conclusion of similar/superior function is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Harmine does not accelerate early FOXP3 expression kinetics (days 0-2), and the divergence at day 3 suggests that harmine and high TGF-\u03b21 may work through stabilization of FOXP3+ state or sustained signaling rather than earlier induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by time-course flow cytometry in Figure 3I. The kinetic analysis rules out one potential mechanism (earlier FOXP3 induction) and suggests alternative mechanisms, though these remain speculative. The data quality is good with clear temporal resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Harmine does not enhance Treg differentiation through canonical pathways: it does not inhibit mTOR (no effect on S6-kinase phosphorylation) or increase SMAD2/3 phosphorylation beyond Treglow levels, demonstrating that even high TGF-\u03b21 engages SMAD2/3-independent signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are strongly supported by Western blot data in Figures 3J-K. The systematic exclusion of canonical pathways is methodologically sound and important for identifying novel mechanisms. The observation about TGF-\u03b21's SMAD-independent signaling (C91) is a significant secondary finding supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Harmine inhibits Th17 differentiation downstream of STAT3/ROR\u03b3T signaling by suppressing key Th17 transcription factors (Batf, Pou2af1, Mina) and effector molecules (Il17a, Il22), identifying a druggable point between STAT3/ROR\u03b3T and downstream transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by flow cytometry (Figure 3L) and qPCR data (Figure 3M). The mechanistic positioning between STAT3/ROR\u03b3T and downstream factors is well-supported and represents an important finding about the Th17 differentiation pathway. The qPCR validation strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "A 111-gene signature concordantly regulated in TregHAR-Treg vs Treghi-Treg cells and human Treg vs Th17 cells shows significant enrichment (1.76-fold, p<0.01) for genes in IBD-associated loci, suggesting harmine impacts disease-relevant pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by gene expression analysis (Figure 4A) and enrichment analysis (Figure 4B). The statistical significance of the enrichment and the cross-species concordance strengthen the disease relevance. However, the enrichment fold-change is modest, and functional validation would strengthen the clinical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Harmine modulates BACH2 signaling, as evidenced by differential expression of 5 of 6 TregHAR signature genes with predicted BACH2 binding sites, suggesting BACH2-dependent mechanisms contribute to harmine's effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by qPCR validation (Figure 4C) and prior literature about BACH2's role in Treg biology. The 5/6 validation rate is strong, though the mechanistic connection between harmine and BACH2 activity requires further investigation. The conclusion is appropriately cautious ('at least in part').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "A significant number of BACH2-regulated genes are inversely regulated by harmine, suggesting potential therapeutic utility in reversing BACH2-axis defects in IBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 are based on gene expression analysis (Figure 3\u2014figure supplement 5), but C103 is explicitly speculative. While the inverse regulation pattern is interesting, the therapeutic implications require experimental validation in disease models. The connection to IBD pathology needs stronger evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Harmine regulates Treg/Th17 differentiation through both BACH2-dependent and BACH2-independent mechanisms, as it functions in BACH2-deficient cells but with reduced efficacy compared to wildtype cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by experiments in BACH2-deficient cells (Figure 4D). The mixed chimera approach is elegant, and the partial rescue demonstrates both BACH2-dependent and independent mechanisms. This is an important mechanistic insight showing pathway complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Harmine's effects on Treg differentiation are mediated through DYRK inhibition rather than MAOA or CLK inhibition, as demonstrated by the lack of effect of MAOA/CLK inhibitors and the similar effects of other DYRK inhibitors (GSK-626616, pro-INDY).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by systematic testing of inhibitors targeting different harmine targets (Figures 4E-F). The target deconvolution approach is methodologically sound, though the DYRK inhibitors used have limited selectivity between DYRK family members, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "DYRK1A plays a central role in regulating Treg/Th17 differentiation, as evidenced by higher DYRK1A levels in Th17 vs Treg cells (specific to Th17 cells) and reciprocal effects of Dyrk1a knockdown on Treg/Th17 differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are strongly supported by FACS, Western blot (Figure 4G), and shRNA knockdown data (Figure 4H). The differential expression pattern and genetic validation provide compelling evidence for DYRK1A's role. The specificity to Th17 cells (C111) strengthens the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Harmine enhances NFAT1 nuclear translocation by approximately 40% at early time points (up to 2 hours), consistent with DYRK inhibition reducing NFAT phosphorylation and nuclear exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by Amnis imaging flow cytometry (Figure 4I), Western blot of nuclear fractions (Figure 4J), and time-course analysis (Figure 4\u2014figure supplement 1). The convergent evidence from multiple techniques and the consistency with known DYRK-NFAT biology strongly support the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "RNAseq analysis shows significant similarity between Dyrk1a knockdown and harmine treatment (Pearson r=0.65) with concordant gene regulation, though neither significantly affects canonical Treg signatures in Th0 conditions, suggesting DYRK1A inhibition is a major but not exclusive mechanism of harmine action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by RNAseq data (Figure 4\u2014figure supplements 2-3). The moderate correlation (0.65) and concordant regulation support DYRK1A as a major target, while the 150 differentially regulated genes suggest additional mechanisms. The lack of Treg signature regulation in Th0 conditions is appropriately interpreted as upstream effects. The conclusion is appropriately nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The introduction establishes the biological and clinical importance of Treg/Th17 balance, reviews canonical pathways (TGF-\u03b21/SMAD, mTOR) and their limitations, and describes prior chemical biology approaches that identified pathway regulators, providing context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C40 are background knowledge claims supported by appropriate citations to prior literature. These establish the scientific context and rationale for the study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10"
+    ],
+    "result": "DYRK1A represents a novel mechanistic node that reciprocally regulates Treg and Th17 cell differentiation through pathways distinct from known Treg/Th17 differentiation mechanisms, establishing DYRK1A as a physiologically relevant regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C10 represent the central conclusions of the study, supported by the comprehensive experimental evidence including chemical inhibition, genetic knockdown, differential expression, and functional validation across multiple models. The novelty and physiological relevance are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Both harmine-generated Treg cells and direct harmine administration potently attenuate inflammation in multiple experimental models of systemic autoimmunity and mucosal inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are strongly supported by the in vivo data across three disease models (Figures 2B-E, 2G). The dual approach of adoptive transfer and direct administration provides robust evidence for therapeutic potential. The consistency across different inflammatory contexts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Other DYRK family members may have broader roles in immune homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C11 is explicitly speculative and not directly tested in the study. While the chemical inhibitors used affect multiple DYRK family members, specific roles of other DYRKs were not investigated. This represents a reasonable hypothesis for future work but lacks supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The discussion contextualizes findings within current therapeutic approaches, discusses implications for understanding TGF-\u03b21 signaling complexity, connects DYRK activity to human diseases (Down syndrome, metabolic syndrome), and proposes DYRKs as novel druggable targets for tolerance and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C147 include both well-supported interpretations of the study's findings (C134-C138, C146-C147) and appropriately speculative connections to human disease (C145). The discussion appropriately distinguishes between demonstrated findings and hypotheses. The citations to prior work are appropriate, though some disease connections (C145) are speculative.",
+    "result_type": "MAJOR"
+  }
+]

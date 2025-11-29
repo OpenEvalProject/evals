@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "i-CDK9 is a highly selective and potent CDK9 inhibitor with a novel chemical scaffold. It inhibits CDK9-CycT1 with an IC50 below 0.0004 \u00b5M and shows >600-fold selectivity over other CDKs (CDK1, CDK2, CDK4, CDK7, CDK8), far superior to flavopiridol's 2.9-28.6-fold selectivity. Among >400 kinases tested, only 9 showed significant binding inhibition, with DYRK1A and DYRK1B being the next best targets at >100-fold lower affinity than CDK9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selectivity and potency claims are well-supported by multiple orthogonal assays (AlphaScreen kinase assay, KINOMEscan binding assay) with consistent results across platforms. The structural distinctiveness is documented, and the co-crystal structure provides mechanistic validation. The comparison to flavopiridol establishes clear superiority in selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "i-CDK9 displays marked selectivity for CDK9 over CDK12, another Pol II CTD Ser2 kinase. CDK9-F is inhibited with IC50 ~2 nM while CDK12-F shows no obvious inhibition at 80 nM. Using recombinant proteins, CDK9-CycT1 is mostly inhibited at 80 nM while CDK12-CycK requires 640-1200 nM for significant inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential selectivity is demonstrated through in vitro kinase assays using both affinity-purified and recombinant proteins, with consistent results showing >10-fold selectivity. The comparison to flavopiridol (which shows similar selectivity) provides additional validation through independent literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "i-CDK9 elicits cellular responses consistent with P-TEFb inhibition in HeLa cells. It dose-dependently reduces pSer2 on Pol II CTD and pThr775 on SPT5, downregulates the short-lived protein MCL-1, and induces PARP cleavage (a hallmark of apoptosis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular effects are demonstrated by Western blotting with dose-response relationships. The observed effects (reduced phosphorylation of known CDK9 substrates, decreased short-lived protein expression, apoptosis markers) are all mechanistically consistent with CDK9 inhibition and provide orthogonal validation of on-target activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "i-CDK9 causes genome-wide Pol II pausing at gene promoters. ChIP-seq analysis shows that 56.6% (2 hr) and 68.4% (8 hr) of 11,197 genes with detectable Pol II displayed \u22651.5-fold increase in traveling ratio (TR). Genes with increased TR are enriched for RNA processing and transcription functions, while genes with the largest expression decreases are involved in transcription regulation and RNA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome-wide pausing is rigorously demonstrated by ChIP-seq with clear quantitative metrics (TR calculation) and appropriate controls. The GO enrichment analysis provides biological context. However, the claim that genes upregulated \u22652-fold showed significantly less TR change (C27) requires careful interpretation as it represents a small subset (138 genes) with potentially different regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MYC expression displays a biphasic response to i-CDK9 treatment: initial decrease (within 2 hr) followed by dramatic rebound (8-16 hr). This pattern is observed across five cell lines (HeLa, U87MG, A375, NCIH441, A2058) with varying MYC copy numbers, though the magnitude of initial decrease and subsequent induction varies among cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biphasic response is demonstrated by microarray analysis at multiple time points and confirmed by qRT-PCR. The observation across multiple cell lines with different MYC amplification states strengthens the conclusion that this is a general phenomenon. The variation in magnitude across cell lines is appropriately noted and may reflect differences in mRNA stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "HEXIM1, another short-lived gene dependent on CDK9, was continuously suppressed throughout 16 hr of i-CDK9 treatment in all five cell lines, contrasting with MYC's biphasic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The continuous suppression of HEXIM1 is demonstrated by microarray analysis and provides an important control showing that not all CDK9-dependent genes exhibit the biphasic response. The prior literature citation establishes HEXIM1's CDK9 dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "MYC induction by i-CDK9 occurs at lower drug concentrations and earlier time points than required for significant global pSer2 suppression. At 0.1 \u00b5M i-CDK9, MYC increased 3.6-fold while global pSer2 decreased only 23%; 1.0 \u00b5M was required for 85% pSer2 reduction. Similarly, 8 hr at 0.3 \u00b5M induced MYC 3.3-fold while reducing pSer2 only 40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response and time-course data from Western blotting clearly demonstrate the differential sensitivity. The quantification shows MYC induction occurs before substantial global CDK9 inhibition, which is a key mechanistic insight. The measurements are internally consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Flavopiridol, a structurally distinct pan-CDK inhibitor, produces similar MYC induction as i-CDK9, requiring shorter exposure time (4 hr) and lower concentration (0.1 \u00b5M) than needed for full global pSer2 reduction. This suggests CDK9 inhibition specifically, not off-target effects, causes MYC induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel effects of two structurally distinct CDK9 inhibitors provide strong evidence that the MYC induction is on-target. This is a critical control that rules out compound-specific artifacts. The dose-response and time-course patterns mirror those of i-CDK9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The MYC accumulation in i-CDK9-treated cells is due to enhanced mRNA production rather than increased protein stability. Cycloheximide treatment eliminated MYC protein in both i-CDK9-treated and untreated cells, demonstrating MYC is a labile protein. Combined with the observed mRNA increase, this indicates the mechanism is transcriptional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cycloheximide experiment clearly demonstrates that continuous protein synthesis is required for MYC accumulation, ruling out protein stabilization as the mechanism. Combined with the mRNA data from microarray and qRT-PCR, this provides strong evidence for a transcriptional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "i-CDK9 induces expression from the endogenous MYC locus but fails to activate a CMV promoter-driven MYC construct, indicating the induction requires the native MYC promoter context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential response between endogenous and CMV-driven MYC is clearly demonstrated by Western blotting. This is an important mechanistic insight showing promoter-specific regulation, though the experiment could be strengthened by testing other heterologous promoters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "i-CDK9 efficiently induces transfer of P-TEFb from 7SK snRNP to BRD4. In a dose-dependent manner, i-CDK9 decreased HEXIM1-CDK9 binding while increasing BRD4-CDK9 binding. This occurred at 0.1 \u00b5M (where global pSer2 was only slightly decreased) and as early as 1 hr (much earlier than the 8 hr required for 50% pSer2 reduction at 0.3 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The P-TEFb redistribution is demonstrated by co-immunoprecipitation with clear dose-response and time-course relationships. The sensitivity of this redistribution (occurring at low concentrations and early time points) is a key mechanistic finding that helps explain the MYC induction kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "BRD4 and its interaction with acetylated chromatin are required for i-CDK9-induced MYC expression. BRD4 knockdown dramatically reduced both basal and i-CDK9-induced MYC production. JQ1 (BET bromodomain inhibitor) completely abolished MYC induction by i-CDK9 in HeLa, H1792, and A2058 cells, while the control enantiomer was ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for BRD4 is demonstrated through multiple orthogonal approaches (shRNA knockdown, pharmacological inhibition with JQ1, control enantiomer) across multiple cell lines. The ChIP-qPCR data showing JQ1 reduces BRD4 and CDK9 association with MYC locus provides mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Catalytically active P-TEFb and its interaction with BRD4 are essential for i-CDK9-induced MYC expression. Overexpressed BRD4-PID suppressed MYC induction by competing with endogenous BRD4 for P-TEFb binding. Kinase-dead CDK9 (D167N) prevented MYC induction. High i-CDK9 concentrations (2 \u00b5M) that completely inhibit CDK9 abolished MYC induction. CDK9/CycT1 knockdown eliminated MYC induction, while CDK12 knockdown had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for catalytically active P-TEFb is demonstrated through multiple complementary approaches: dominant-negative PID, kinase-dead mutant, dose-dependent inhibition, and specific knockdowns. The specificity for CDK9 over CDK12 is particularly important given both are CTD kinases. The logic is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "BRD4 directly increases CDK9 kinase activity through physical interaction. WT BRD4 increased CDK9 activity dose-dependently up to 2.2-fold in vitro, while \u0394PID (lacking P-TEFb interaction domain) lacked this ability. Neither WT nor \u0394PID BRD4 alone could phosphorylate CTD peptide without P-TEFb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro kinase assays with purified components clearly demonstrate BRD4's direct effect on CDK9 activity and the requirement for physical interaction (\u0394PID control). The demonstration that BRD4 lacks intrinsic kinase activity is an important control that contradicts a prior report (Devaiah et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BRD4 renders CDK9 less sensitive to i-CDK9 inhibition. In the absence of BRD4, IC50 for CDK9 inhibition was 4.4 \u00b1 0.7 nM. WT BRD4 increased IC50 to 14.7 \u00b1 2.1 nM (3.3-fold protection), while \u0394PID showed weaker protection (IC50 = 7.2 \u00b1 0.6 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protection against inhibition is quantitatively demonstrated by in vitro kinase assays with clear IC50 measurements. The \u0394PID control shows the effect requires physical interaction. This is a novel finding that helps explain how MYC can be induced despite CDK9 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The i-CDK9-mediated MYC induction benefits from multiple mechanisms: efficient P-TEFb release from 7SK snRNP, BRD4-enhanced CDK9 kinase activity and resistance to inhibition, and BRD4-mediated recruitment of P-TEFb to the MYC locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the combination of co-immunoprecipitation data (P-TEFb redistribution), in vitro kinase assays (activity enhancement and protection), and ChIP data (recruitment to MYC locus). The multiple mechanisms work synergistically to explain the paradoxical MYC induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "i-CDK9 treatment causes significant increases in BRD4, CDK9, total Pol II, and pSer2 occupancy across the MYC locus. Despite 0.3 \u00b5M i-CDK9 for 8 hr reducing global pSer2 by ~40%, pSer2 levels increased at the MYC locus. The CDK9 elevation was mostly BRD4-dependent, though CDK9 and BRD4 showed somewhat different distribution patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-qPCR data clearly demonstrate increased occupancy of key factors at the MYC locus. The local increase in pSer2 despite global decrease is a striking finding that explains the MYC induction. The BRD4 dependence of CDK9 recruitment is appropriately demonstrated. The different distribution patterns are noted but speculatively explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "On HEXIM1, a gene permanently inhibited by i-CDK9, treatment decreased levels of both total Pol II and pSer2 Pol II, contrasting with the increases observed at the MYC locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HEXIM1 data provide an important negative control showing that the effects at MYC are gene-specific rather than global. The ChIP-qPCR data clearly show opposite effects on HEXIM1 versus MYC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Acetylated histones H3 and H4 increased across the MYC locus (especially near the P1 promoter) upon i-CDK9 treatment, while global levels in whole cell extracts remained unchanged. This increased acetylation explains the drug-promoted BRD4 binding to the MYC locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-qPCR data demonstrate local increases in histone acetylation at MYC despite no global change (Western blot control). The inference that this explains BRD4 recruitment is reasonable given BRD4's known function as an acetyl-lysine reader, though the mechanism causing the acetylation increase is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Early chromatin changes (0-2 hr) at MYC versus HEXIM1 promoters predict their divergent responses to i-CDK9. At MYC, Ac-H3 and especially Ac-H4 increased early, and BRD4 showed initial decrease but rebounded by 2 hr. At HEXIM1, Ac-H3 drastically decreased while Ac-H4 slightly increased, and BRD4 showed sustained reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-course ChIP-qPCR data reveal early chromatin differences that precede the divergent transcriptional outcomes. This is an important mechanistic insight, though the interpretation that these differences \"predispose\" genes to different fates (C99) is somewhat speculative and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The i-CDK9-induced MYC expression results from a combination of: (1) induced P-TEFb transfer from 7SK snRNP to BRD4; (2) BRD4's promotion of CDK9 activity and resistance to inhibition; and (3) favorable early chromatin changes leading to increased BRD4-P-TEFb occupancy, enhanced pSer2, and productive elongation at the MYC locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comprehensive mechanistic model integrates all the major findings from co-IP, in vitro kinase assays, ChIP-qPCR, and expression data. Each component is individually well-supported, and the model provides a coherent explanation for the paradoxical MYC induction during CDK9 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MYC and other BRD4-dependent primary response genes (BDPR genes) show the same biphasic transcriptional response to i-CDK9. GSEA of 27 curated BDPR genes shows marked reduction at 2 hr (NES = -2.28) followed by significant up-regulation at 8 hr (NES = +2.26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GSEA analysis provides rigorous statistical evidence that the biphasic response is not unique to MYC but extends to a defined set of BDPR genes. The gene set is appropriately curated from published literature, and the statistical significance is strong (FDR q-value <0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The 23 BDPR genes with detectable Pol II ChIP-seq signals showed little change in traveling ratio (TR) after 8 hr i-CDK9 exposure, contrasting with most other genes. ChIP-seq reveals i-CDK9 caused significant and fairly uniform Pol II increase across the entire length of MYC, FOS, and JUNB, explaining why their TR values changed little.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq data clearly show that BDPR genes behave differently from most genes in terms of TR changes. The uniform Pol II increase across gene length (rather than just promoter-proximal accumulation) logically explains the minimal TR change. The consistency between ChIP-seq and ChIP-qPCR for MYC validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The induced P-TEFb transfer from 7SK snRNP to BRD4 and BRD4-mediated protection/enhancement of P-TEFb activity and recruitment to chromatin are the primary driving forces behind i-CDK9 induction of MYC and other BDPR genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion integrates the mechanistic findings and is well-supported by the totality of evidence from co-IP, in vitro kinase assays, ChIP experiments, and expression analyses. The conclusion appropriately synthesizes the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "MYC is required for CDK9 to phosphorylate Pol II CTD under both normal and inhibitory conditions. Incomplete MYC knockdown markedly reduced pSer2 levels in both untreated cells and cells exposed to a range of i-CDK9 concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MYC knockdown experiment clearly demonstrates MYC's role in facilitating CDK9 function. The effect is observed across a range of i-CDK9 concentrations, strengthening the conclusion. However, the knockdown is incomplete, which somewhat limits the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "MYC normally facilitates P-TEFb's phosphorylation of Pol II CTD on Ser2. JQ1 and 10,058-F4 (MYC-MAX inhibitor) each slightly decreased cellular pSer2 levels. When combined with i-CDK9, both caused much greater pSer2 reduction than i-CDK9 alone, indicating that decreasing MYC expression or activity eliminates its beneficial effect on P-TEFb function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination experiments with two different approaches to inhibit MYC (BRD4 inhibition reducing MYC expression, and direct MYC-MAX inhibition) both show synergistic effects with i-CDK9 on pSer2 reduction. This provides strong evidence for MYC's role in facilitating P-TEFb function through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "MYC recruits P-TEFb to target genes, and i-CDK9 treatment increases MYC's interaction with CDK9, CycT1, and BRD4. This reveals a dual compensatory mechanism: cells respond to CDK9 inhibition by both increasing MYC expression and enhancing MYC's recruitment of the BRD4-P-TEFb complex to essential genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-immunoprecipitation data clearly show increased MYC-P-TEFb interaction upon i-CDK9 treatment. The interpretation as a compensatory mechanism is well-reasoned and supported by the prior literature on MYC's ability to recruit P-TEFb. The dual mechanism (increased expression + increased interaction) is a key insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Simultaneous inhibition of CDK9 and MYC/BRD4 synergistically induces growth arrest and apoptosis in cancer cells. i-CDK9 combined with JQ1 synergistically inhibited growth and induced apoptosis (measured by Caspase 3/7 and sub-G1 population) in HeLa and H1792 cells. The MYC inhibitor 10,058-F4 also synergized with i-CDK9 to induce cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synergy is rigorously demonstrated using isobologram analysis (the appropriate method for assessing drug interactions) across multiple cell lines and with multiple readouts (proliferation, caspase activation, DNA fragmentation). The use of two different approaches to target MYC (JQ1 and 10,058-F4) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "CDK9 is the kinase subunit of P-TEFb that enables Pol II's transition from promoter-proximal pausing to productive elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is well-established background knowledge appropriately stated in the abstract. It provides necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study establishes that i-CDK9 potently suppresses CDK9 activity and causes genome-wide Pol II pausing, but MYC and other primary response genes paradoxically increase expression through a BRD4-dependent mechanism. Because this compensatory MYC induction limits the efficacy of CDK9 inhibition alone, simultaneous inhibition of CDK9 and MYC/BRD4 is required for efficient cancer cell killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This abstract summary accurately captures the major findings of the study. Each component is well-supported by the detailed results. The therapeutic implication (combinatorial strategy) logically follows from the mechanistic findings and synergy data.",
+    "result_type": "MAJOR"
+  }
+]

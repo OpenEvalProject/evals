@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Axon injury triggers rapid relocalization of EFA-6 from plasma membrane to discrete puncta. Full-length EFA-6 and N-terminal fragments (N150, N100, N70) relocalize within seconds of laser axotomy, spreading bidirectionally at ~8 \u03bcm/s and gradually dissipating over 20-60 minutes. This relocalization occurs in multiple neuron types and injury sites, and is independent of the Sec7 and PH domains but requires the N-terminal region (minimum N70 fragment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C40 are well-supported by extensive imaging data in Figure 1 and supplementary figures showing EFA-6 relocalization dynamics. Multiple independent lines of evidence (different tags, neuron types, injury sites, domain deletions) converge on the same conclusion. The quantitative measurements of spreading velocity and temporal dynamics are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "FRAP analysis reveals that EFA-6 becomes sequestered to subcellular structures after injury. In uninjured neurons, EFA-6FL::GFP shows rapid recovery (t\u00bd=4s, 25% immobile fraction), but 2 minutes post-injury shows dramatically reduced mobility (>85% immobile fraction). By 1 hour post-injury, mobility partially recovers (50% immobile fraction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by FRAP data in Figure 2A,B showing quantitative changes in EFA-6 mobility before and after injury. The measurements are clearly presented with appropriate controls and time points. The inference that EFA-6 is sequestered (C44) is reasonable given the dramatic increase in immobile fraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A conserved 18-aa motif within the intrinsically disordered N-terminal domain is essential for EFA-6 relocalization and function. Deletion or mutation of this motif abolishes injury-induced relocalization, nuclear exclusion, and inhibitory effects on axon growth and MT dynamics. The motif alone shows mild inhibitory activity, suggesting the surrounding disordered context is required for full function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C67 are strongly supported by multiple complementary experiments: computational disorder prediction (Figure 2\u2014supplement 2B), localization studies (Figures 1G,H), functional assays (Figures 2C,D, Table 1), and mutagenesis (Table 1). The data consistently show the 18-aa motif is necessary but not sufficient for full EFA-6 activity. The prior work citation (O'Rourke et al., 2010) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "EFA-6 fragments that relocalize after injury also inhibit axon development and regrowth. Overexpression of N150, N100, or N70 causes developmental undershooting and inhibits regrowth, while smaller non-relocalizing fragments (N24, N42) do not. Only relocalizing fragments inhibit steady-state MT dynamics when overexpressed. Overexpression of EFA-6FL\u0394N150 causes overshooting, suggesting the C-terminus may inhibit N-terminal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 are well-supported by systematic structure-function analysis in Figures 2C-E and Table 1. The correlation between relocalization ability and functional effects is clearly demonstrated across multiple fragments. The data on EFA-6FL\u0394N150 (C51) provides interesting evidence for intramolecular regulation, though the mechanism remains speculative (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 18-aa motif deletion allele efa-6(ju1200) phenocopies other efa-6 loss-of-function alleles. The ju1200 allele, which specifically removes the 18-aa motif, shows identical developmental and regrowth phenotypes to tm3124 and ok3353 alleles. Single-copy expression of EFA-6N150 rescues both alleles equally, demonstrating that the major activity of EFA-6 in axon growth resides in the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are supported by genetic analysis in Figure 2\u2014supplement 2C,D. The CRISPR-generated ju1200 allele provides strong evidence that the 18-aa motif is essential for EFA-6 function in vivo. The rescue experiments with single-copy transgenes (C73) are particularly rigorous, avoiding overexpression artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The EFA-6 N-terminus directly interacts with microtubule-associated proteins TAC-1 and ZYG-8. Both proteins bind EFA-6N150 in yeast two-hybrid assays dependent on the 18-aa motif. Co-immunoprecipitation in HEK293 cells confirms these interactions and shows that EFA-6, TAC-1, and ZYG-8 can exist in the same ternary complex, with interactions between EFA-6 and each MAP occurring independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C76, C82-C90 are well-supported by complementary biochemical approaches in Figure 3. The yeast two-hybrid data (Figure 3A, supplement 1) and co-IP experiments (Figure 3B-D) provide converging evidence for direct protein-protein interactions. The ternary complex formation (C90) is a reasonable inference from the co-IP data showing all three proteins can be detected together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "TAC-1 and ZYG-8 are required for regenerative growth cone formation and axon regrowth. Temperature-sensitive mutants of zyg-8(lf) and tac-1(lf) show strongly reduced axon regrowth and fewer regenerative growth cones at 6 hours post-axotomy. Cell-specific rescue experiments demonstrate cell-autonomous function. Axon regrowth is highly sensitive to zyg-8 reduction even at permissive temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C94-C103 are supported by extensive genetic analysis in Figure 4 and supplements. The use of temperature-sensitive alleles and cell-specific rescue/deletion experiments (Figure 4B,C, supplement 1) provides strong evidence for cell-autonomous function. The quantification of growth cone formation (Figure 4D-F) adds rigor. However, the interpretation of ts allele phenotypes requires caution as the degree of function loss in post-mitotic cells is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "TAC-1 and ZYG-8 act downstream of EFA-6 in a common genetic pathway. Double mutant analysis shows that tac-1(lf) zyg-8(lf) mutants resemble single mutants, and zyg-8(lf) efa-6(0) or tac-1(lf) efa-6(0) double mutants resemble the tac-1 or zyg-8 single mutants. Overexpression of TAC-1 enhances regrowth but does not further enhance efa-6(0) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C104-C110 are supported by epistasis analysis in Figure 4A and supplement 1F. The genetic interactions are consistent with a linear pathway where EFA-6 acts upstream to negatively regulate TAC-1/ZYG-8. However, the epistasis analysis relies on ts alleles which may not represent complete loss of function, introducing some uncertainty about the pathway relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C129",
+      "C130"
+    ],
+    "result": "Axon injury triggers rapid EFA-6-dependent inhibition of axonal MT dynamics. In wild-type animals, EBP-2::GFP comets (growing MT plus ends) are dramatically reduced within 50 seconds post-axotomy. This immediate downregulation does not occur in efa-6 mutants, while overexpression of EFA-6N150 reduces MT dynamics even before injury. tac-1(lf) shows mild reduction with injury-dependent downregulation, while zyg-8(lf) and tac-1(0) show reduced dynamics without further downregulation after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C112-C123, C129-C130 are well-supported by quantitative live imaging of EBP-2::GFP in Figure 5A and supplement 1. The temporal correlation between EFA-6 relocalization and MT dynamics changes is compelling. However, the authors note that efa-6 mutants show a small (non-significant) decrease in MT dynamics after injury, suggesting possible EFA-6-independent mechanisms. The statistical power calculation mentioned in the text strengthens confidence in the negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C131"
+    ],
+    "result": "At 3 hours post-injury, dynamic axonal MTs are significantly increased in wild-type and further enhanced in efa-6(0) mutants. Neither tac-1(lf) nor zyg-8(lf) mutants show this upregulation. Double mutants efa-6(0) tac-1(lf) and efa-6(0) zyg-8(lf) resemble the single tac-1 or zyg-8 mutants, consistent with EFA-6 functioning upstream of TAC-1 and ZYG-8 in regulating the later phase of MT dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128, C131 are supported by MT dynamics analysis at 3 hours post-injury in Figure 5B. The data show a clear temporal progression from immediate EFA-6-dependent downregulation to later TAC-1/ZYG-8-dependent upregulation. The epistasis analysis is consistent with the pathway model. The prior work citation (Chen et al., 2011) provides additional support for the 3-hour time point.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "In uninjured neurons, EFA-6, TAC-1, and ZYG-8 localize independently. GFP::ZYG-8 is diffuse throughout the axon and remains so after injury. GFP::TAC-1 localizes to perinuclear spots and diffusely along the axon, then relocalizes rapidly to puncta after injury. EFA-6 and TAC-1 colocalize at perinuclear spots and relocalize to overlapping puncta after injury. Loss of one protein does not affect the localization or relocalization of the others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C144 are supported by systematic localization studies in Figure 6 and supplements. The imaging data clearly show differential responses to injury and independent relocalization. The colocalization of EFA-6 and TAC-1 (C139-C141) is well-documented with line scan analysis. The genetic independence of relocalization (C142-C144) is demonstrated by imaging in mutant backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "After injury, EFA-6 and TAC-1 transiently relocalize to sites marked by the MT minus-end binding protein PTRN-1. EFA-6N150 partially colocalizes with PTRN-1 puncta, while TAC-1 shows high colocalization. However, relocalization of EFA-6 and TAC-1 occurs normally in ptrn-1 null mutants, indicating that PTRN-1 is not absolutely required for their recruitment. The relocalization may involve multiple redundant factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C149-C157 are supported by colocalization imaging in Figure 7A and supplements. The quantitative F(in)/F(out) ratio analysis strengthens the colocalization claims. The observation that relocalization occurs in ptrn-1 mutants (C153-C155) is important and well-documented. The speculation about redundant factors (C157) is reasonable given the data but remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Genetic epistasis analysis suggests PTRN-1 and TAC-1 act in a common pathway in regeneration, with EFA-6 acting as a negative regulator. efa-6(0) ptrn-1(0) double mutants resemble ptrn-1(0) single mutants, while tac-1(lf) ptrn-1(0) double mutants show no further enhancement compared to either single mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 are supported by double mutant analysis in Figure 7B. The epistasis relationships are consistent with the proposed pathway model. However, the use of temperature-sensitive alleles for tac-1 introduces some uncertainty about the completeness of the genetic interactions. The inference that EFA-6 negatively regulates PTRN-1/TAC-1 (C163) is reasonable but the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "EFA-6 acts as a bifunctional injury-responsive regulator of axonal MT dynamics, functioning at the cell cortex in the steady state and at MT minus ends after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 represents the authors' integrated model based on all experimental findings. The model is well-supported by the collective evidence: steady-state cortical localization (C27-C30), injury-induced relocalization to PTRN-1-marked sites (C149-C152), interactions with MAPs (C5-C6), and effects on MT dynamics (C2, C129). While this is a proposed model requiring further mechanistic validation, it provides a coherent framework explaining the diverse observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "EFA-6 is a conserved intrinsic inhibitor of axon regrowth. The EFA-6/EFA6 protein family is conserved from yeast to mammals and defined by a Sec7 domain with GEF activity for Arf6 GTPases. However, EFA-6's regrowth-inhibitory function is independent of GEF activity and mediated by its N-terminal domain, which inhibits MT growth at the cell cortex via an 18-aa motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C26 are supported by citations to prior work (Chen et al., 2011; Franco et al., 1999; O'Rourke et al., 2010) and serve as established background for the current study. The current manuscript provides additional support through the genetic and functional analysis of the N-terminal domain and 18-aa motif.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on axon regeneration barriers and MT dynamics. The mammalian CNS expresses environmental inhibitory factors (myelin proteins, proteoglycans, glial scar), but their removal provides limited improvement. Cell-intrinsic inhibitors like PTEN and SOCS3 are important targets. Growth cones are enriched in dynamic MTs while mature axons contain stabilized MTs. Moderate MT stabilization by Taxol can promote regrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 represent established background knowledge supported by appropriate citations to prior literature. These claims provide context for the current study but are not novel findings. The citations appear appropriate and the statements accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Domain mapping of EFA-6 localization in neurons. Full-length EFA-6 localizes to the plasma membrane via the PH domain. Deletion of the PH domain or expression of only the N-terminal 150 residues results in cytosolic localization. Deletion of the N-terminus preserves membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by imaging data in Figure 1A-E. These localization studies establish the baseline for understanding injury-induced relocalization and are essential for interpreting subsequent experiments. The data are clear and consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C91",
+      "C92",
+      "C93",
+      "C111"
+    ],
+    "result": "Background on TAC-1 and ZYG-8 function. ZYG-8 is the C. elegans ortholog of mammalian DCLK, required for spindle positioning in embryos and normal axonal MT architecture. TAC-1 is the sole TACC protein in C. elegans and can form a complex with ZYG-8 to regulate MT assembly in embryos. Both are essential for embryonic cell division and null mutants are maternal-effect lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81, C91-C93, C111 represent established background on TAC-1 and ZYG-8 supported by appropriate citations to prior work. These provide necessary context for understanding their roles in axon regeneration. The citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C158",
+      "C159",
+      "C164",
+      "C165"
+    ],
+    "result": "Background on PTRN-1/Patronin function. PTRN-1 is the C. elegans member of the Patronin/CAMSAP family, known to bind and stabilize MT minus ends. In neurons, PTRN-1 localizes to axonal puncta marking MT minus ends and its localization does not dramatically change after injury. ptrn-1 null mutants show normal development but reduced regeneration. In embryos, EFA-6 localizes to the plasma membrane via its PH domain, which is necessary for inhibiting cortical MT growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148, C158-C159, C164-C165 represent established background on PTRN-1 and EFA-6 embryonic function, supported by appropriate citations. These provide context for the colocalization studies and pathway analysis. The citations appear accurate.",
+    "result_type": "MINOR"
+  }
+]

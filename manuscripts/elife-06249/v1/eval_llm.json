@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The DNA unzipping technique can precisely map the positions of both a transcription factor (Gal4DBD) and a nucleosome simultaneously on DNA templates to near base pair accuracy. The method was validated using templates containing a Gal4 binding sequence and a 601 nucleosome positioning sequence, with both protein-DNA interactions readily detected above baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C81-C85, and C67-C70 collectively demonstrate the technical capability and validation of the DNA unzipping method. The experimental data (Figures 1, 1-supplement 2-4) show clear detection of both Gal4DBD and nucleosomes with documented precision and accuracy at near base-pair resolution. The method is well-supported by previous literature and current experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C86",
+      "C87"
+    ],
+    "result": "Gal4DBD binds tightly to its recognition sequence with an equilibrium dissociation constant of 3.4 nM and a lifetime exceeding 1 hour under experimental conditions. Experiments were conducted with 95% of Gal4 sites bound and without free Gal4DBD in solution during remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C86-C87 describe the binding characteristics of Gal4DBD that are critical for interpreting remodeling experiments. The Kd measurement and lifetime data are supported by experimental evidence (Figure 1-supplement 3b,c), and the experimental conditions are clearly stated. These characterizations are essential controls for the main experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "During short remodeling times (~1 min), approximately 56% of nucleosomes remained unremodeled, while of the remodeled nucleosomes, ~73% underwent single remodeling events and ~27% underwent multiple events. In the absence of Gal4DBD, both ISW1a and SWI/SNF moved nucleosomes bi-directionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe the baseline remodeling behavior without TF present. The data are supported by Figure 2-supplement 2 and Figure 2B,C. The quantification of remodeling events uses a previously established method (Shundrovsky et al., 2006), providing methodological validation. These results establish the control conditions for comparison with TF-present experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C25"
+    ],
+    "result": "In the presence of Gal4DBD, ISW1a moved nucleosomes away from the TF, while SWI/SNF moved nucleosomes toward the TF. This differential directionality was confirmed using templates with Gal4DBD on either side of the nucleosome, ruling out DNA sequence effects. The ISW1a findings agree with previous work using NURF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C24-C25 describe a major finding on differential remodeler directionality. The data are supported by Figure 2D-G showing consistent directional preferences regardless of TF orientation. The agreement with previous NURF studies (Kang et al., 2002) provides independent validation. The experimental design with reversed orientations effectively controls for sequence effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Gal4DBD acts as a physical barrier to ISW1a-mediated nucleosome remodeling. ISW1a-remodeled nucleosomes could not pass the Gal4DBD location and instead positioned with their dyad centered between the bound Gal4DBD and the template end, demonstrating that ISW1a uses Gal4DBD as a reference point for nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe a key mechanistic finding supported by Figure 3B,C and Figure 3-supplement 2. The data show consistent centering behavior across multiple template designs with different TF-nucleosome separations. The linear relationship in Figure 3C provides quantitative support for the centering mechanism. This is a well-supported major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ISW1a can potentially use transcription factors around promoter regions as reference points to evenly position nucleosomes into gene bodies. This interpretation is supported by genome-wide data showing that ISWI deletion disrupts nucleosome spacing in yeast and that DNA-binding factors at promoters are responsible for nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 connect the experimental findings to in vivo nucleosome spacing. While C32-C34 cite established genome-wide observations, C35 is an inference from the current experimental data (C27-C31). The inference is reasonable given the direct experimental evidence that ISW1a uses Gal4DBD as a barrier and reference point. However, this remains an extrapolation to in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C93"
+    ],
+    "result": "Gal4DBD is not a physical barrier for SWI/SNF-mediated nucleosome remodeling. SWI/SNF was able to slide nucleosomes past the TF with concurrent eviction of Gal4DBD from its binding sequence. This eviction requires the presence of both a nucleosome and ATP, as SWI/SNF alone cannot evict Gal4DBD in the absence of a nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C93 describe a major finding on SWI/SNF's ability to evict TFs. The data are supported by Figures 4A,B and control experiments (Figure 4-source data 1, Figure 4-supplement 2). The controls demonstrating that eviction requires both nucleosome and ATP are critical for establishing mechanism. The absence of Gal4DBD signal after remodeling provides direct evidence of eviction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C98"
+    ],
+    "result": "The mechanism of TF regulation by nucleosome remodeling is general and not specific to Gal4DBD. When ISW1a remodeled nucleosomes in the presence of Lac repressor, the Lac repressor acted as a barrier and dictated nucleosome positioning. In contrast, SWI/SNF displaced the Lac repressor, similar to results with Gal4DBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C98 demonstrate generalizability using a second, biologically neutral TF (Lac repressor). The data (Figure 5A,B) show consistent behavior with both TFs, supporting the conclusion that the mechanism is general. The use of Lac repressor, which has no known relationship with eukaryotic remodelers (C96-C97), strengthens the argument that the effects are not TF-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C71",
+      "C112"
+    ],
+    "result": "TF eviction by SWI/SNF is an intrinsic property of nucleosome remodeling and is independent of SWI/SNF recruitment. SWI/SNF alone cannot evict Gal4DBD in the absence of a nucleosome, demonstrating that TF eviction requires nucleosome remodeling rather than SWI/SNF translocation alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57-C58, C71, and C112 establish that TF eviction is coupled to nucleosome remodeling. The control experiments showing no eviction without nucleosomes (Figure 4-source data 1) are critical. This distinguishes the mechanism from simple SWI/SNF translocation (C56) and provides mechanistic insight. The conclusion is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C101"
+    ],
+    "result": "The DNA-binding domain of ISW1a binds approximately 29 bp of extranucleosomal DNA and has been proposed to act as an anchor. The finding that ISW1a moves nucleosomes away from an adjacent TF is consistent with this domain requiring fully accessible DNA immediately flanking the nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 cite established structural and biochemical data about ISW1a. Claim C101 connects these prior findings to the current experimental observations (C22, C27-C31). The inference is reasonable and consistent with known ISW1a structure-function relationships. However, this remains a mechanistic interpretation rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The Snf6 subunit of SWI/SNF binds approximately 15 bp of extra-nucleosomal DNA, though it is not essential for remodeling. It may help orient SWI/SNF binding on the nucleosome, potentially preferring the side with more linker DNA in the presence of a barrier, thus orienting SWI/SNF to slide nucleosomes toward the TF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C53 cite established structural data. However, C104-C105 are explicitly stated as speculation. While the speculation is reasonable given the experimental observations of directional preference (C24), there is no direct experimental evidence in this study to support the proposed role of Snf6 in determining directionality. This remains a plausible but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C111"
+    ],
+    "result": "SWI/SNF can slide nucleosomes to displace neighboring TFs around promoter regions, potentially regulating transcriptional modulators such as enhancers and insulators located upstream of promoters. This provides a mechanistic basis for dynamically clearing both nucleosomes and bound factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C111 extrapolate the experimental findings (C36-C40) to in vivo regulatory contexts. While the experimental evidence for TF eviction is strong, the application to specific regulatory scenarios (enhancers, insulators) is inferential. The inference is reasonable given genome-wide localization data (C61-C62) showing SWI/SNF enrichment at relevant locations, but remains an extrapolation beyond the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The results provide direct evidence for a novel mechanism for both nucleosome positioning regulation by bound TFs and TF regulation via dynamic repositioning of nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is the overarching conclusion supported by the collective experimental evidence. The dual mechanism\u2014TFs as barriers for ISW1a (C27-C31) and TF eviction by SWI/SNF (C36-C40)\u2014is well-documented. The novelty claim for SWI/SNF-mediated TF eviction is supported (C26, C94), while ISW1a findings confirm previous work (C25). This represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C108"
+    ],
+    "result": "A nucleosome regulates Gal4 binding by preventing binding and dramatically increasing dissociation rate. TF removal may be accelerated once a nucleosome is repositioned over the bound TF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 cites previous work (Luo et al., 2014) on Gal4 binding kinetics. Claim C108 is explicitly stated as speculation. While the speculation is consistent with C60 and could explain the mechanism of TF eviction, there is no direct experimental evidence in this study measuring TF dissociation rates in the presence of remodeled nucleosomes. This remains a plausible but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C45",
+      "C46",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background knowledge on nucleosome-TF competition, chromatin remodeler families, and their known properties establishes the context for the study. SWI/SNF and ISWI remodelers differ in their outcomes, with SWI/SNF associated with nucleosome disruption and ISWI with generating evenly spaced arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C12-C18, C45-C46, C73-C76, and C88-C90 represent established knowledge supported by extensive citations. These provide the scientific context and rationale for the study. While these are not novel findings, they are accurately represented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Materials and methods: Nucleosomes were assembled using salt dialysis, remodelers were purified as previously described, and Gal4DBD was purchased commercially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe standard methods with appropriate citations. These are methodological details that support reproducibility but are not novel findings. The methods are adequately described and referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The slight asymmetric distribution of remodeled nucleosomes is likely due to the non-palindromic 601 sequence. SWI/SNF remodeling results are consistent with an earlier study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide methodological context and validation. C91 explains an observed asymmetry based on known properties of the 601 sequence (cited). C92 validates current findings against previous work (Shundrovsky et al., 2006). Both are reasonable interpretations supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C59",
+      "C61",
+      "C62",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C106",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "Discussion of prior work and in vivo context: Previous studies on SWI/SNF recruitment, translocation properties, genome-wide localization patterns, and the rationale for using Lac repressor as a neutral control protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56, C59, C61-C62, C96-C97, C99-C100, C106-C107, C109-C110 provide context from prior literature and logical inferences about in vivo relevance. These are appropriately cited and support the interpretation of results, though C106-C107 involve some speculation about SWI/SNF's limited ability to deal with roadblocks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous studies focused on TF recruitment of remodelers, but it remains unclear how non-recruiting TFs influence chromatin landscape. The hypothesis is that nucleosome remodeling may regulate bound TFs and that TFs may dictate remodeled nucleosome locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 identify a knowledge gap that motivates the study. Claims C79-C80 state the working hypothesis. These are appropriately framed as hypotheses (C79-C80 are marked as speculation) that are subsequently tested experimentally. This represents sound scientific reasoning and study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C25",
+      "C26",
+      "C41",
+      "C94",
+      "C95"
+    ],
+    "result": "Novelty and significance claims: The findings on SWI/SNF-mediated TF eviction are entirely novel, while ISW1a findings agree with previous work. SWI/SNF appears to be powerful machinery capable of overcoming various obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 establish that Gal4DBD does not recruit remodelers, which is critical for the experimental design. Claims C25-C26 appropriately distinguish novel findings (SWI/SNF) from confirmatory ones (ISW1a). Claims C41, C94-C95 place findings in context of SWI/SNF's broader capabilities. The novelty claims are justified by the experimental evidence and literature comparison.",
+    "result_type": "MAJOR"
+  }
+]

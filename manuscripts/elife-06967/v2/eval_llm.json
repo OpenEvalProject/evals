@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study successfully obtained DNA-binding motifs for 129 C. elegans transcription factors using protein binding microarray (PBM) experiments, with a 29% success rate from 449 clones tested. This increased the number of C. elegans TFs with experimentally identified motifs from 71 (10%) to 195 (26%), encompassing 26 different DBD classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C35 provide consistent quantitative data on the PBM experimental outcomes, including specific counts of TFs selected (C28), clones obtained (C29), successful motifs (C30), success rates (C31), and validation of previously known motifs (C34-C35). The success rate of 29% is comparable to previous studies (C31), and all five previously known motifs were recapitulated (C35), supporting the reliability of the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C37",
+      "C38",
+      "C39",
+      "C45"
+    ],
+    "result": "By combining experimentally determined motifs with predictions based on DNA-binding domain similarity, the study increased coverage to 292 C. elegans TFs (~40%), represented by 284 curated motifs. This includes 24 TFs with motifs predicted from other C. elegans TFs and 79 with motifs predicted from other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C37-C39, and C45 provide consistent counts showing how homology-based predictions expanded motif coverage from 195 experimentally determined to 292 total TFs. The prediction methodology is based on established amino acid identity thresholds (referenced in C36 and Figure 2), and the curation process (C45) reduced redundancy from 1769 motifs to 284 representative motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PWMclus clustering analysis with default settings (R \u2265 0.8 correlation threshold) collapsed 1769 motifs into 424 clusters, with 67% of proteins having multiple motifs forming a single cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe a systematic computational analysis using PWMclus with clearly specified parameters (C41-C42). The specific quantitative results (C43-C44) are internally consistent and the methodology is appropriate for grouping related motifs based on similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The curated motif set contains 16 cases where one protein has multiple motifs and 11 cases where multiple proteins share the same motif, with 84% of curated motifs derived from PBM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide specific counts with examples (e.g., ELT-1 for multiple motifs, MED-1/MED-2 for shared motifs) that are consistent with the biological understanding that TFs can bind as monomers/dimers and that highly similar proteins may share binding specificities. The predominance of PBM-derived motifs (84%) is expected given the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study obtained PBM data for 20 C. elegans nuclear hormone receptors (NHRs), of which only one (DAF-12) had a previously known motif. The 27 NHRs analyzed by PBMs yielded 13 different motif groups, and the 19 new motifs enabled prediction of motifs for 8 additional NHRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 provide consistent quantitative data on NHR motif discovery. The validation of DAF-12 against previous ChIP-chip data (C52) supports the accuracy of the PBM approach. The counts are internally consistent (20 new + 7 previous = 27 total analyzed; 19 new motifs lead to 8 predictions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C105"
+    ],
+    "result": "NHRs with identical recognition helix (RH) sequences can bind very different DNA sequences, and conversely, NHRs with different RH sequences can have similar DNA-sequence preferences, indicating that the RH is not the sole determinant of NHR sequence specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 and C105 present a key finding that contradicts previous expectations (C55 cites Van Gilst et al., 2002). Specific examples are provided (NHR-177 with RA-AA RH binding different sequences; NHR-66 and NHR-70 with different RHs binding similar sequences), with detailed sequence identity data (C58). The conclusion that additional residues contribute to specificity (C59, C105) is a reasonable inference from the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Among the NHRs examined, only SEX-1 produced a motif resembling the canonical steroid hormone response element (SHRE), and none produced a motif matching HNF4, the presumed ancestor of most C. elegans NHRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 report specific negative and positive findings from the NHR analysis. The observation that SEX-1 shares 3 of 4 variable RH residues with canonical SHRE-binding TFs (C61) provides molecular context for the observed similarity. The absence of HNF4-like motifs (C62) is notable given the evolutionary relationship (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study obtained PBM data for 42 C2H2 zinc finger TFs, bringing the total number of C. elegans C2H2 TFs with motifs to 53 (~50% of 107 C2H2s), up from 6 experimentally determined and 11 predicted by homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide consistent quantitative progression showing the expansion of C2H2 motif coverage. The counts are internally consistent (6 previous experimental + 11 predicted + 42 new - 1 overlap - 5 that don't lead to new predictions = 53 total), and only 2 additional TFs could be assigned motifs by homology (C67), indicating the novelty of the new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "C2H2 motifs are broadly consistent with the recognition code but with median R\u00b2 = 0.21, insufficient accuracy for motif scans. Lower similarity to recognition code predictions is observed for TFs with unusual inter-C2H2 linker lengths and atypical zinc-coordinating residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide a nuanced assessment of recognition code performance. The specific R\u00b2 value (C70) quantifies the limited accuracy, and the identification of structural features associated with lower prediction accuracy (C71) is supported by Figure 5\u2014figure supplement 1. The broad consistency (C69) with some exceptions is a reasonable characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study obtained motifs for four nematode-specific T-box TFs (TBX-33, TBX-38, TBX-39, TBX-43), revealing that monomeric T-box sites can vary considerably, contrary to the expectation that the monomeric sequence preference (resembling 'GGTGTG') is constant across T-box classes and phyla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 present a key finding that challenges established understanding (C75 cites previous work establishing the expectation of constant motifs). The data show that while TBX-38 and TBX-43 match the canonical motif (C77), TBX-33, TBX-39, and TBX-40 exhibit novel motifs (C78), supported by Figure 6A. This is a striking observation given the high conservation typically observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The novel T-box recognition motifs are associated with differences in DNA-contacting residues and structural features, including sequence deletions in the variable region (TBX-39/40) and an 18 amino acid insertion (TBX-33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide molecular explanations for the observed motif diversity. The differences in DNA-contacting residues (C79) are documented in Figure 6\u2014figure supplement 1, and the specific structural variations (C80-C81) offer plausible mechanisms for altered sequence preferences, though C81 includes speculation about the functional impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Most C. elegans DM domains have highest preference for sequences different from the canonical TGTAT core, though all but two cases contain a TGT. Eight of eleven C. elegans DM domains have less than 85% identity to DM domains in insects and vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 document diversity in DM TF binding preferences. The prior expectation of TGTAT-containing motifs (C82, citing Gamble and Zarkower, 2012) is partially met (most contain TGT, C85) but with significant variation (C84). The sequence divergence data (C83) provides context for the observed motif diversity and is supported by Figure 6B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Among 40 TFs analyzed by ChIP-seq, 20 showed significant central enrichment of motif scores (q < 0.05), and among 145 TFs analyzed by Y1H, 103 showed significant motif enrichment. Most motifs (21/25; 84%) can be supported by at least one independent assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 provide validation of PBM-derived motifs using independent in vivo data. The statistical thresholds are clearly specified (q < 0.05), and the observation that different assays capture different aspects of TF binding (C88) is a reasonable interpretation. The 84% validation rate (C89) strongly supports the biological relevance of the motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Analysis of composite motifs (CMs) in ChIP-seq data identified 185 significant CMs grouped into 37 clusters, with 17 clusters (~46%) from ZIP-8 (F23F12.9), a bZIP protein that binds both ATF and CREB sites, suggesting that multimeric interactions within and between TF families may be prevalent in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe a systematic analysis of composite motifs with clear quantitative results. The dominance of ZIP-8 in the CMs (C93) is striking and well-documented. The inference about prevalent multimeric interactions (C95) is reasonable given the data, though it is appropriately presented as a suggestion rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Motif enrichment analysis validated known regulatory relationships, including GATA TFs in intestinal gene expression, HLH-1 in muscle, DAF-19 in ciliary genes, PHA-4 in pharynx development, and ZTF-19 in L2 body wall muscle tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 demonstrate that the motif collection recapitulates known biology, with each claim citing specific publications supporting the known relationships. This validation strengthens confidence in the novel predictions. The ZTF-19 example (C100) is particularly strong as it integrates expression patterns and mutant phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C27"
+    ],
+    "result": "Most associations in the motif enrichment analysis represent putative regulatory interactions, suggesting the motif collection can be used to gain new biological insight and identify regulatory roles for unstudied TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C103, and C27 present the forward-looking utility of the motif collection. The inference that most associations represent putative regulatory interactions (C102) is reasonable given the validation of known relationships (C96-C100) and the statistical significance of the enrichments (referenced in Figure 9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C109"
+    ],
+    "result": "All large groups of TFs in C. elegans are malleable in their DNA-binding sequence preferences, confirming that alteration of binding motifs is widespread among TF classes throughout evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C109 present a key overarching conclusion supported by the diversity observed in NHRs (C55-C59), C2H2 ZFs (C69-C71), T-box (C76-C78), and DM families (C84-C85). The conclusion is further supported by citations to recent analyses of other DBD classes (C106-C108), providing broader evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The remaining 453 C. elegans TFs encode an estimated 409 different DNA-binding motifs, with NHR family coverage at only 17% despite new motifs. NHRs showed particularly low success rates in PBM (20%, 27/135) and Y1H (17%, 17/100 PBM failures) assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 provide a realistic assessment of remaining work needed. The estimate of 409 motifs (C110) is based on analysis of paralog groups. The low success rates for NHRs (C112-C113) are clearly documented with specific counts, highlighting the technical challenges with this family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Requirement for ligand binding, dimerization, cofactors, or protein modifications may explain failures in heterologous assays. Yeast two-hybrid data suggest heterodimerization may be prevalent among NHRs, and composite motifs involving NHRs and other TF families were prevalent in ChIP-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 present hypotheses to explain experimental failures, appropriately characterized as speculation (C114). The Y2H data (C115) and composite motif observations (C118) provide some support for the heterodimerization hypothesis, but the limited ChIP-seq success (C117: only one NHR with de novo motif) indicates this remains an open question requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The total number of TFs with canonical DBDs varies only by a factor of ~2 among human, Drosophila, and C. elegans (~1734, 701, and 744 respectively), as do the numbers of distinct motif groups (1339, 656, and 632). All three species possess large numbers of diverse lineage-specific TFs, suggesting extensive rewiring of the metazoan trans regulatory network is common despite conservation in TF number and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 provide comparative analysis across metazoans with specific counts and percentages. The data show similar TF repertoire sizes but different lineage-specific expansions (C122), supporting the conclusion about regulatory network rewiring (C123). The comparison is strengthened by citation to Stuart et al., 2003 regarding conservation of gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "C. elegans is a powerful model for studying gene regulation with a compact genome (~100 Mbp), short intergenic regions (mean 1389 bp, median 662 bp), 934 annotated TFs including major expansions of NHR (274 members), C2H2 ZF, and T-box (22 members) families. Prior to this study, motifs were known for only 71 TFs, and it has been difficult to obtain motifs from ChIP-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide background context for the study, with specific quantitative data about genome size, TF numbers, and family expansions. All claims are supported by appropriate citations to prior literature. The characterization of C. elegans as a model system and the challenges in obtaining motifs from ChIP-seq (C19-C20) establish the rationale for the PBM approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study defined 763 'high confidence' C. elegans TFs by combining 744 proteins from CisBP (encompassing 52 domain types) with 19 additional bona fide TFs from wTF2.0, with 93% overlap between the two catalogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 describe the TF selection criteria with specific counts showing the overlap and differences between CisBP and wTF catalogs. The definition of 'high confidence' TFs (C128) is clearly justified based on domain scores and evidence for sequence-specific DNA binding, providing a well-defined set for analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "PBM microarray data are available at GEO under accession GSE65719, and motifs and 8-mer data are available at www.cisbp.ccbr.utoronto.ca.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 provide data access information with specific accession numbers and URLs, enabling reproducibility and reuse of the data. This is a standard requirement for publication and supports the transparency of the work.",
+    "result_type": "MINOR"
+  }
+]

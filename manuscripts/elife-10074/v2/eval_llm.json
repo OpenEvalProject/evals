@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Loss of PEG function does not impact diploid seed development in Arabidopsis. The authors examined 15 PEG mutants and found no qualitative or quantitative abnormalities in seed development, seed size, fertilization rates, or male gametophyte transmission, even under maternal stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C34 provide converging experimental evidence from multiple assays (seed abortion rates, seed size measurements, transmission analysis, stress experiments) with appropriate statistical testing (F-tests, Chi-square tests) showing no phenotypic effects of peg mutations in diploid seeds. The data in Figures 1A-B and supplements directly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Three PEGs (SUVH7, PEG2, and PEG9) rescue triploid seed abortion when mutated. Using the osd1 system to generate triploid seeds, the authors found that suvh7, peg2, and peg9 mutations dramatically increased non-collapsed seed frequency from 8% to 53%, 86%, and 54% respectively, with rescued seeds germinating and developing into viable seedlings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 provide robust experimental evidence with quantitative data (Figure 2A-B), independent allele validation (C43), and complementation testing (C44). The osd1 system is well-established (C36-C37), and the rescue phenotype is clearly demonstrated with appropriate controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The maternal alleles of SUVH7, PEG2, and PEG9 do not impact the triploid block, and these genes remain imprinted in triploid seeds. Reciprocal crosses showed no maternal effect on triploid seed rescue, consistent with maintained imprinting status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by experimental data (Figure 2C-D) showing no maternal effect and maintained parent-of-origin expression. This is consistent with the genes acting through the paternal allele, as expected for paternally expressed imprinted genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mutations in SUVH7, PEG2, and PEG9 restore endosperm cellularization in triploid seeds, allowing embryo development. While wild-type triploid seeds show completely uncellularized endosperm at 8 DAP, the peg mutant triploid seeds show nearly complete cellularization and developing embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by microscopy data (Figure 2E) showing clear differences in endosperm cellularization between wild-type and mutant triploid seeds. The connection to embryo development (C55-C56) is consistent with established literature (C13, C55) and observed phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SUVH7 and ADM share a common mode of action through downregulation of AGLs and PEGs, while PEG2 acts through a different mechanism. Triploid seed rescue by adm and suvh7 shows similar gene expression changes, but peg2 has the strongest rescue effect with the weakest impact on AGL/PEG expression, suggesting it acts downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by transcriptome data (Figure 3A-B) showing differential effects on gene expression. However, C63 is somewhat speculative about PEG2 acting downstream. The inference is reasonable given the data but would benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "All three mutants (adm, suvh7, peg2) affect a common downstream pathway enriched for carbohydrate metabolism genes, particularly polygalacturonases. Most genes downregulated in peg2 triploid seeds are similarly downregulated in adm and suvh7 seeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by transcriptome analysis (Figure 3C) and GO enrichment analysis (Figure 3\u2014figure supplement 1). The overlap in downregulated genes and enrichment for specific functional categories provides strong evidence for convergent pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors propose that suppression of pectin hydrolysis is the key mechanism for restoring triploid seed viability. This is based on the enrichment of polygalacturonase genes among downregulated genes and the known role of pectin degradation in cell wall deconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are well-supported by literature citations. However, C69 is speculative and lacks direct experimental validation. While the correlation between pectin degradation gene expression and phenotype is suggestive, causality is not established. Direct manipulation of pectin degradation pathways would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pectin degradation genes are specifically upregulated in triploid seeds while biosynthesis genes are unaffected. These 33 pectin degradation genes are normally repressed until late embryo development but are prematurely expressed in triploid seeds, and their expression is normalized in peg mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by comprehensive transcriptome analysis (Figure 4A-D) examining 173 pectin pathway genes. The temporal expression analysis (C74-C75) using published datasets and the normalization in mutants (C76) provide strong evidence for disrupted pectin degradation timing in triploid seeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Ruthenium red staining reveals altered pectin methylesterification patterns in triploid seeds. Before cellularization, diploid and triploid seeds show similar staining, but at 6 DAP, triploid seeds show reduced staining consistent with increased pectin degradation, while diploid seeds show weak staining consistent with highly methylesterified pectin in cell walls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by ruthenium red staining data (Figure 4E and supplement). The interpretation is consistent with established knowledge about pectin methylesterification and ruthenium red binding (C77-C78, C82). The temporal dynamics correlate well with gene expression data (C71, C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "PEGs have a major role as speciation genes in plants by establishing postzygotic hybridization barriers. A subset of PEGs maintains functional roles in Arabidopsis that are only revealed upon deregulation in triploid seeds, with rescue occurring through mechanisms converging on endosperm cellularization via suppression of pectin degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C84, and C86 represent the main conclusions synthesizing the experimental findings. C3 (three PEGs establish barriers) is well-supported by data. C85 about convergence on endosperm cellularization is supported, though the pectin degradation mechanism (C69) remains somewhat speculative. C4 about PEGs as speciation genes is a reasonable inference but extrapolates beyond the specific interploidy context tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Six PEGs (PEG5, PEG8, FXG1, SUVH7, VIM5, YUC10) were confirmed to be imprinted in both Col\u00d7Bur-0 and Col\u00d7Ler accessions, while nine PEGs were not identified as imprinted in Col\u00d7Ler by other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by citations to multiple independent studies. The validation of imprinting status across accessions (C26-C27, Figure 1\u2014figure supplement 1) strengthens confidence in the gene selection for functional analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The three PEGs that rescue triploid seed abortion encode proteins with distinct functions: SUVH7 is a putative histone methyltransferase without demonstrated H3K9 activity, PEG2 is an unknown protein, and PEG9 is a galactose mutarotase acting in the Leloir pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by literature citations and sequence analysis. C52 is speculative but reasonable given PEG9's enzymatic function and the role of galactose in endosperm cell wall pectin. The diverse molecular functions suggest multiple pathways can affect the triploid block.",
+    "result_type": "MINOR"
+  }
+]

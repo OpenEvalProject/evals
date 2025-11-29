@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ChiLS (Chip/LDB-SSDP complex) is identified as the NPF ligand of Pygo through proteomics and co-immunoprecipitation approaches. Mass spectrometry identified Chip, SSDP, and LIM domain proteins as top hits associated with wild-type but not NPF-mutant Pygo. Co-IP experiments confirmed NPF-dependent binding between Pygo and LDB1, with dimerization being important for this interaction while LID is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C36-C45 provide converging evidence from multiple experimental approaches (mass spectrometry, co-IP in multiple cell types and lysates) demonstrating that ChiLS specifically binds to Pygo via its NPF motif. The data consistently show NPF-dependent interactions and identify key structural requirements (dimerization domain) for binding. This represents a major discovery supported by robust biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The ChiLS complex has a dimer-tetramer architecture, with Chip/LDB forming a dimer that binds to an SSDP tetramer. SEC-MALS analysis revealed that SSDP1-92 forms a stable tetramer (~43 kDa), and the Chip-SSDP complex consists of an MBP-Chip dimer bound to an SSDP tetramer (~190 kDa). This architecture is conserved between Drosophila and human complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are well-supported by SEC-MALS data showing consistent molecular masses matching the proposed stoichiometry. The measurements are model-free and were confirmed using both RI and UV detection methods. This structural characterization is rigorous and revises previous models of ChiLS architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Direct NPF-dependent binding between ChiLS and Pygo is demonstrated by NMR spectroscopy. HSQC spectra show line broadening of wild-type but not F99A mutant Pygo67-107 upon incubation with Chip-SSDP, while SSDP alone does not bind. The interaction footprint spans 10 residues in Pygo and 25 residues in Pygo2, and a minimal 16-mer peptide without the proline cluster is sufficient for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide direct biophysical evidence of NPF-ChiLS interaction through NMR. The use of point mutants (F99A, F78A) as negative controls and the mapping of interaction footprints strengthen the conclusions. The finding that the proline cluster is dispensable in NMR assays (C54-C55) contrasts with cell-based requirements (C39), which is appropriately noted and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ChiLS recognizes NPF motifs in multiple nuclear factors including RUNX proteins (Runt, RUNX2, AML1, Runx2, Runx3) and Drosophila ARID1 (Osa). NMR binding assays showed positive interactions with NPF-containing fragments from MACC1, RUNX2, Runt, Lozenge, and Osa, but not ARID1B or RUNX3. Full-length Runt binds ChiLS more efficiently than Pygo, with a second interaction mediated by the Runt domain independent of NPF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C57-C65 demonstrate that ChiLS is a promiscuous NPF-binding platform. The combination of NMR binding assays and co-IP experiments provides strong evidence. The identification of a second, NPF-independent interaction between the Runt domain and ChiLS (C64) is particularly well-supported by deletion mapping and NMR data. The negative results for RUNX3 NPF peptide (C58) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Runt is required for endoderm induction and acts through Wnt-responsive HOX gene enhancers in cooperation with dTCF. Runt mutant embryos lack the middle midgut constriction and show reduced Labial expression without a gradient. Functional analysis of the lab550 enhancer shows that mutation of Runt binding sites phenocopies loss of dTCF sites, and ectopic Runt expression activates lab550 but not enhancers lacking functional Runt or dTCF sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 provide compelling genetic and functional evidence for Runt's role in endoderm induction. The combination of mutant phenotype analysis, enhancer reporter assays with site-directed mutations, and gain-of-function experiments creates a coherent picture. The parallel phenotypes between runt mutants and enhancers with mutated Runt binding sites strongly support the functional relevance of the ChiLS-RUNX interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Groucho/TLE binds to ChiLS through its WD40 domain, which is both necessary and sufficient for the interaction. The Q domain and linker are dispensable, though the linker appears to attenuate the interaction. Since Groucho/TLE binds TCF via its Q domain, it can function as an adaptor between ChiLS and TCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C77-C83 are well-supported by mass spectrometry identification and domain mapping through co-IP experiments. The demonstration that the WD40 domain is necessary and sufficient (C78) and that the linker attenuates binding (C80) provides clear structure-function relationships. The inference that Groucho/TLE serves as an adaptor (C83) is logical given the established Q domain-TCF interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "ChiLS is required for Wnt-dependent gene expression in imaginal discs and has a pioneer-like function in early embryonic development. Clonal analysis shows that chip and ssdp control dTCF targets in wing discs and Ubx expression in haltere discs. In early embryos, ssdp germ-line clones show residual expression of Eve, Wg, and Ubx along the antero-posterior axis, while dorso-ventral markers (twi-LacZ, hb-LacZ) appear normal. The cuticle phenotype (lawn of ventral denticles) indicates Wg signaling failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C95-C101 provide strong genetic evidence for ChiLS function in development. The clonal analysis in imaginal discs demonstrates tissue-specific requirements, while the germ-line clone analysis reveals axis-specific functions in early embryos. The phenotypic similarities between chip, ssdp, and pygo mutants strengthen the conclusion that these factors work together. The cuticle phenotype provides an independent readout of Wg signaling failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C104",
+      "C105",
+      "C113",
+      "C117",
+      "C118",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "ChiLS functions as a molecular integrator that confers context-dependence on TCF/LEF by serving as both a coincidence detector and switch module. The dimer-tetramer architecture allows simultaneous binding to multiple partners including NPF proteins (Pygo, RUNX) and LID-binding factors. RUNX appears to be the keystone of the Wnt enhanceosome, binding directly to enhancers while simultaneously interacting with Groucho/TLE, TCF, and ChiLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C104-C105, C113, C117-C118, C133-C135 synthesize the biochemical and functional data into a coherent model. The stoichiometry data (C47-C48) directly supports the capacity for simultaneous interactions (C118, C135). The identification of multiple ChiLS-binding partners with distinct functions (activation vs. repression) supports the switch module concept (C134). This is a well-reasoned integration of the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C153",
+      "C154"
+    ],
+    "result": "The Wnt enhanceosome may be switchable to Notch-responsive through NPF factor exchange and LMO-mediated enhancer-binding protein exchange at ChiLS. HES repressors induced by Notch signaling could re-recruit Groucho/TLE to re-establish the OFF state. Evidence includes the observation that humanized Drosophila Pygo (with elevated histone affinity) is hyperactive toward both Wg and Notch targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C148-C151, C153-C154 present an interesting hypothesis about enhanceosome switching, but the evidence is largely inferential and based on prior literature rather than direct experimental demonstration in this study. The hyperactivity of humanized Pygo toward Notch targets (C151) is cited but not experimentally validated here. While the model is plausible given the known interactions, it requires additional experimental support to be considered fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The functional integrity of the Wnt enhanceosome is crucial for cancer avoidance, as dysregulation of its components is linked to various cancers. AML1 and RUNX3 are tumor suppressors frequently inactivated in leukemias and solid tumors, ARID1A is inactivated in epithelial cancers, and LMO2 overexpression causes T-cell acute leukemias. AML1 and ARID1A behave as haploinsufficient tumor suppressors, consistent with competition for ChiLS binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C155-C162 are well-supported by extensive citations to cancer genetics literature. The haploinsufficiency observation (C160) provides a mechanistic link to the ChiLS binding competition model, though this remains to be directly tested (as acknowledged in C160). The convergence of multiple enhanceosome components as cancer-associated genes strongly supports the biological importance of this complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "TCF/LEF factors are ancient context-dependent enhancer-binding proteins activated by \u03b2-catenin following Wnt signaling. They control embryonic development and adult stem cell compartments, and their dysregulation causes cancer. TCF/LEF factors facilitate complex assemblies with other enhancer-binding proteins and integrate multiple signaling inputs with lineage-specific cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C17 provide established background information supported by extensive citations. These are well-accepted facts in the field that set the context for the current study. The evidence type is primarily from prior literature (CITATION, KNOWLEDGE).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "In the absence of Wnt signaling, TCFs are bound by Groucho/TLE co-repressors that silence enhancers by recruiting HDACs and blanketing chromatin. TLEs are displaced by \u03b2-catenin following Wnt signaling through a non-competitive mechanism. Pygo is largely dispensable in the absence of Groucho, implicating it in alleviating Groucho-dependent repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 summarize established mechanisms from prior literature with appropriate citations. The inference about Pygo's role in alleviating Groucho repression (C25) is based on published genetic data and provides important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Pygo has a C-terminal PHD finger and an N-terminal NPF motif, each essential for development. The PHD finger binds to Legless/BCL9 and to histone H3K4me via opposite surfaces connected by allosteric communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe the known structure and function of Pygo domains based on prior work from the same laboratory and others. This provides essential background for understanding the significance of identifying the NPF ligand.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The ChiLS complex has a defined architecture where Chip dimerizes through its DD domain, binds SSDP through LCCD, and binds LIM domains through LID. ChiLS associates with enhancers directly through LHX proteins or indirectly through LMO adaptors that bind bHLH and GATA factors. LMOs can displace LHXs from ChiLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 describe known structural and functional properties of ChiLS components based on prior literature. This background information is essential for interpreting the new findings about NPF binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The conserved proline cluster upstream of NPF is required for binding to LDB1 in cell-based assays but is dispensable in NMR binding assays with purified proteins. A minimal 16-mer peptide without the proline cluster binds ChiLS comparably to longer fragments. Residues immediately flanking NPF are conserved and may contribute to binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C54-C56 reveal an interesting discrepancy between cell-based and in vitro binding requirements. The authors appropriately note this difference and suggest the proline cluster may function as a rigid spacer in cells rather than directly contacting ChiLS. This is a well-documented observation that adds nuance to the binding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Prior genetic and biochemical studies have established roles for ChiLS components and RUNX proteins in various developmental contexts. Runx1 associates with Ldb1 in erythroid cells, runt is required for Ubx expression in visceral mesoderm, chip is required for enhancer function of multiple homeobox genes, and ssdp mutants phenocopy pygo mutants in wing development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C84-C90 compile relevant prior findings that support the biological significance of the ChiLS-RUNX interaction discovered in this study. These are appropriately cited observations that provide context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "ChiLS has pioneer-like functions in early embryonic development and maintains HOX gene expression throughout development. Chip enables expression of segmentation genes at the maternal-zygotic transition and is thought to facilitate enhancer-promoter communication. Ldb1 occupies both enhancers and promoters and likely loops them together through self-association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C137-C142 synthesize prior literature on ChiLS functions with new observations from this study (C95-C101). The pioneer-like function is supported by the early embryonic phenotypes, though the mechanistic details of enhancer-promoter communication remain to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Groucho/TLE is recruited to TCF via its tetrameric Q domain and uses its WD40 domain to bind other enhancer-binding proteins including the WRPY motif of RUNX proteins. RUNX proteins use their Runt domain to interact with TCF HMG domains and have pioneering functions in early embryonic development and cell lineage specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112, C114-C116 integrate prior structural and functional knowledge about Groucho/TLE and RUNX proteins with the new findings. The inference about simultaneous WD40 binding to ChiLS and RUNX (C111) is reasonable given the tetrameric structure but remains to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The model proposes that Pygo tethering to enhancers requires binding to methylated histone H3 tails (H3K4me for orthodox Pygo, H3R2me2a for Drosophila Pygo), and that overcoming Groucho/TLE-mediated repression involves Pygo-dependent recruitment of \u03b2-catenin and co-activators including CBP. Acetylation of enhancer chromatin could promote Groucho/TLE eviction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C128 present a mechanistic model for enhanceosome activation based on prior histone binding studies and known co-activator functions. The model is well-reasoned and consistent with the data, though several steps remain to be directly tested (appropriately indicated by 'may' and 'could' language).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Osa/ARID1 antagonizes Wg responses and could terminate enhancer activity by displacing HAT-recruiting factors and cooperating with repressive factors like Brinker to re-recruit Groucho/TLE. Osa binds Chip to repress various Wg and ChiLS targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 integrate prior knowledge about Osa function with the new finding that Osa contains an NPF motif that binds ChiLS. The model for how Osa might switch off enhancers is logical but remains largely hypothetical, requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The Wnt enhanceosome differs from the interferon-\u03b2 enhanceosome in containing an integrating module (ChiLS). Prior genetic studies have linked chip predominantly to Notch-regulated processes in Drosophila, while mouse Ldb1 has been implicated in Wnt-related processes and has widespread roles in stem cell compartments controlled by Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136, C143-C147 provide comparative context and summarize prior genetic evidence. The observation that ChiLS components have been linked to both Wnt and Notch processes supports the enhanceosome switching hypothesis, though the mechanistic basis is still being elucidated.",
+    "result_type": "MINOR"
+  }
+]

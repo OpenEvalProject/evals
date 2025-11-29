@@ -1,0 +1,1473 @@
+{
+  "submission": {
+    "id": "6887a06a-c7a4-41a0-8eb4-c2cdf451b877",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:30:43.334353Z",
+    "updated_at": "2025-11-29T04:30:43.334353Z"
+  },
+  "content": [
+    {
+      "id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "submission_id": "6887a06a-c7a4-41a0-8eb4-c2cdf451b877",
+      "content_type": "manuscript",
+      "content_text": "# Contacts-based prediction of binding affinity in protein\u2013protein complexes\n\n## Authors\n\n- Anna Vangone<sup>1</sup>\n- Alexandre MJJ Bonvin<sup>1</sup> ([ORCID: 0000-0001-7369-1322](https://orcid.org/0000-0001-7369-1322)) \u2020\n\n### Affiliations\n\n1. Computational Structural Biology Group, Bijvoet Center for Biomolecular Research, Faculty of Science\u2014Chemistry Utrecht University Utrecht Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlmost all critical functions in cells rely on specific protein\u2013protein interactions. Understanding these is therefore crucial in the investigation of biological systems. Despite all past efforts, we still lack a thorough understanding of the energetics of association of proteins. Here, we introduce a new and simple approach to predict binding affinity based on functional and structural features of the biological system, namely the network of interfacial contacts. We assess its performance against a protein\u2013protein binding affinity benchmark and show that both experimental methods used for affinity measurements and conformational changes have a strong impact on prediction accuracy. Using a subset of complexes with reliable experimental binding affinities and combining our contacts and contact-types-based model with recent observations on the role of the non-interacting surface in protein\u2013protein interactions, we reach a high prediction accuracy for such a diverse dataset outperforming all other tested methods.\n\n## Introduction\n\nInteractions between proteins play a central role in the processes happening in the cells, from DNA replication to protein degradation (Jones and Thornton, 1996; Alberts, 1998; Nooren and Thornton, 2003; Perkins et al., 2010). Perturbations in those interaction networks can lead to disease (Stites, 1997; Sugiki et al., 2014). Characterizing these protein\u2013protein interactions (PPIs) is therefore crucial for a proper understanding of mechanisms in biological processes for disease research and for drug development, as most common targets of drugs are proteins (such as enzymes, ion channels, and receptors).\n\nExploring recognition processes at atomic level requires knowledge of the three-dimensional (3D) structure of the associated molecular complexes. It is however the binding affinity (BA) (i.e., the natural inclination of molecules to associate) that defines whether or not complex formation will occur. The BA is therefore the key for understanding and predicting recognition, association and dysfunction phenomena related to protein complexes. It has been shown that changes in BA caused by mutations or post-translational modification errors lead to various diseases (Vidal et al., 2011). Commonly, the affinity of an interaction is described through the equilibrium dissociation constant Kd, or, in thermodynamic terms, the Gibbs free energy \u0394G (\u0394G = RT ln Kd). Measuring Kd values experimentally is a time-consuming and expensive process. Many computational methods aimed at predicting BA have been developed. Gaining the ability to predict BA is indeed an urgent need as it offers great opportunities not only to control interactions and develop innovative therapeutics (Keskin et al., 2005; Aloy and Russell, 2006; Beltrao et al., 2007; Kiel et al., 2008; Dell'Orco, 2009), but also for other applications such as protein engineering (Kortemme et al., 2004; Sharabi et al., 2011), computational mutagenesis (Ben-Shimon and Eisenstein, 2010), and docking (Halperin et al., 2002).\n\nDifferent methods aimed at predicting BA have been proposed throughout the years, varying greatly in terms of accuracy and computational cost. Exact methods such as free energy perturbation and thermodynamics integration can be very accurate, but due to their computational costs their application is extremely limited (mostly to low throughput studies and mainly for small drug binding or mutations). Methods based on empirical functions (empirical, force-field-based potentials, statistical potentials, and scoring functions used in docking) are much faster (Jiang et al., 2002; Ma et al., 2002; Zhang et al., 2005; Audie and Scarlata, 2007; Su et al., 2009; Bai et al., 2011; Moal et al., 2011; Qin et al., 2011; Moal and Bates, 2012; Tian et al., 2012; Kastritis et al., 2014; Luo et al., 2014). However, even if some have been very successful on small training sets (Horton and Lewis, 1992; Audie and Scarlata, 2007), most published models still fail to systematically predict BA (Kastritis and Bonvin, 2010) for large datasets or discriminate between binders and non-binders (Sacquin-Mora et al., 2008; Fleishman et al., 2011). The main weaknesses of these methods are that they usually neglect factors such as conformational changes upon binding, allosteric regulation, and solvent and co-factor effects, which may all contribute to the binding strength.\n\nBinding between two proteins is mainly defined by their contact region, the interface, and it is indeed the network of contacts between surface residues that holds complexes together, defines their specificity and contributes to their interaction strength. The importance of such inter-residue contacts has already been established in docking. In the Critical Assessment of Prediction of Interactions (CAPRI) experiment (Janin et al., 2003), for instance, assessment of the accuracy of the docked models is based on a combination of positional root mean square deviation (RMSD) criteria and conservation of intermolecular contacts with respect to the native structure (Lensink et al., 2007). In the context of scoring, considering the conservation of contacts at the interface across docking models has been shown to improve the ranking of docked models (Oliva et al., 2013; Chermak et al., 2014). The atom contact frequency in a set of predictions, a similar concept, has also been included in the ZRANK docking pipeline (Hwang et al., 2010). Next to their use in scoring, contacts have been introduced as a way to cluster docking solutions based on the fraction of common inter-residue contacts among a set of decoys (Rodrigues et al., 2012).\n\nHowever, in addition to properties of the interface, a recent work has also demonstrated an effect of the non-interacting surface (NIS) on BA (Kastritis et al., 2014), a finding that has been corroborated in a recent study by Marillet et al. (Marillet et al., 2015).\n\nHere we show how the network of contacts at the interface of a protein\u2013protein complex can help in describing the BA of the interaction. Based on the number contacts at the interface, we propose an innovative and very simple method to predict BA. To this end we used the protein\u2013protein BA benchmark (Kastritis et al., 2011) consisting of 144 non-redundant protein\u2013protein complexes with experimentally determined Kd (\u0394G) and available 3D structures.\n\nOur results show that interfacial contacts, which have so far been neglected in the rationalization and prediction of BA, can be considered the best structural property to describe binding strength. Based on this observation, we describe an extremely simple BA predictor that accounts for different types of contacts and shows the best performance reported so far (to our knowledge) on such a large and diversified dataset of complexes. Its performance is compared to other previously published predictor methods (Moal et al., 2011). Further, we analyze the impact of the experimental method used to characterize BA on the prediction performance.\n\n## Results and discussion\n\nConsidering the critical role of the BA in the study of protein\u2013protein complexes and the still elusive approaches to predict it (Kastritis and Bonvin, 2010; Fleishman et al., 2011), we demonstrate here that the network of inter-residue contacts (ICs) between two interacting proteins is a good descriptor for the BA. Using the structure-based BA benchmark of Kastritis et al. (2011), we correlated ICs with experimentally determined BA data (Kd or \u0394G) for protein complexes (bound forms). The diversity of experimental methods used to measure BA in this benchmark allows us to underline their limitations and reliability for use in BA prediction. From the original dataset of 144 complexes, we removed the cases with ambiguity in the exact Kd values and all complexes with missing or unresolved residues (>2) at the interface (data reported in Supplementary file 1). For the remaining 122 complexes, we calculated the number of ICs and evaluated their correlation (expressed through the Pearson's correlation coefficient R) with the experimental \u0394Gs. We describe the influence of various properties on the results, such as the distance cut-off defining a contact and the experimental method used for BA measurement.\n\n### Correlation between ICs and BA\n\nIn a protein complex the interactions are usually of relatively short range. Recently, however, Kastritis et al. (2014) revealed the unexpected contribution of NIS residues to BA. We therefore systematically evaluated the effect of the distance on defining the inter-residues network by varying the cut-off distance between 3 \u00c5 and 20 \u00c5 (see \u2018Materials and methods\u2019). For each distance cut-off the number of ICs was correlated with the experimental \u0394Gs. The results, reported in Figure 1, show that the highest correlation is achieved at a cut-off of 4.0 \u00c5, (RICs = \u22120.50, \u03c1 < 0.0001). This correlation decreases slowly until 8.0 \u00c5 (RICs = \u22120.41, \u03c1 < 0.0001) and drops at higher distances. We also evaluated the ranking power of the ICs, expressed through the Spearman's correlation coefficient S, which follows the same trend as R with slightly higher absolute values (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07454/elife-07454-fig1-v4.jpg)\n\n**Figure 1.:** Both the Pearson's R (dark grey bars) and the Spearman's S (light grey-patterned bars) correlation coefficient are reported.\n\n### How experimental BA methods affect the correlations\n\nMany different experimental methods can be used to determine the \u0394G of a protein\u2013protein complex. Each presents different characteristics so that the measured \u0394G values depend on the method used, its sensitivity and the strength of the interactions that are being measured. For the set of 122 complexes used in this work, ten different experimental methods have been used to detect the \u0394Gs: stopped-flow fluorimetry (8 cases), surface plasmon resonance (SPR) (40 cases), high performance liquid chromatography (HPLC)/UV absorption spectroscopy (14 cases), sedimentation (1 case), radioligand binding (competitive binding experiments) (2 cases), potentiometry (1 case), reduction assay (1 case), isothermal titration calorimetry (ITC) (19 cases), inhibition assay (17 cases), fluorescence spectrophotometric assays (19 cases).\n\nWe analyzed separately the BAs from the various experimental methods with enough data points (\u22658) and compared the prediction performance with the full data set. As reported in Table 1, the correlations between ICs and experimental \u0394Gs increased to RICs = \u22120.70 (\u03c1 = 0.03), RICs = \u22120.53 (\u03c1 = 0.0003), RICs = \u22120.65 (\u03c1 = 0.006) and RICs = \u22120.55 (\u03c1 = 0.006) in the case of \u0394Gs determined by stopped-flow fluorimetry, SPR, spectroscopic methods and ITC, respectively. For the 17 cases measured by inhibition assays and the 19 by fluorescence spectrophotometry techniques the correlations were meaningless (RICs = 0.04 with \u03c1 = 0.9 and RICs = 0.05 with \u03c1 = 0.8, respectively). These are indirect methods useful in calculating relative binding strengths (known as IC50s), but these have limitations when used to calculate absolute BA values (Lazareno and Birdsall, 1993; Wilkinson, 2004; Masi et al., 2010).\n\n**Table 1.**\n Pearson's correlations and p-values (\u03c1) between inter-residue contacts (ICs) and buried surface area (BSA) and experimental binding affinities (\u0394Gs) for the entire dataset and subsets corresponding to various experimental method\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Class</th>\n      <th>#Complexes</th>\n      <th colspan=\"2\">RICs</th>\n      <th colspan=\"2\">RBSA</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>All</td>\n      <td>122</td>\n      <td>\u22120.50</td>\n      <td>(\u03c1 &lt; 0.0001)</td>\n      <td>\u22120.32</td>\n      <td>(\u03c1 = 0.002)</td>\n    </tr>\n    <tr>\n      <td>Stopped-flow</td>\n      <td>8</td>\n      <td>\u22120.70</td>\n      <td>(\u03c1 = 0.03)</td>\n      <td>\u22120.55</td>\n      <td>(\u03c1 = 0.08)</td>\n    </tr>\n    <tr>\n      <td>SPR</td>\n      <td>39</td>\n      <td>\u22120.53</td>\n      <td>(\u03c1 = 0.0003)</td>\n      <td>\u22120.44</td>\n      <td>(\u03c1 = 0.002)</td>\n    </tr>\n    <tr>\n      <td>Spectroscopy</td>\n      <td>14</td>\n      <td>\u22120.65</td>\n      <td>(\u03c1 = 0.006)</td>\n      <td>\u22120.27</td>\n      <td>(\u03c1 = 0.2)</td>\n    </tr>\n    <tr>\n      <td>ITC</td>\n      <td>20</td>\n      <td>\u22120.55</td>\n      <td>(\u03c1 = 0.006)</td>\n      <td>\u22120.64</td>\n      <td>(\u03c1 = 0.001)</td>\n    </tr>\n    <tr>\n      <td>Inhibition assay</td>\n      <td>17</td>\n      <td>0.05</td>\n      <td>(\u03c1 = 0.4)</td>\n      <td>\u22120.08</td>\n      <td>(\u03c1 = 0.4)</td>\n    </tr>\n    <tr>\n      <td>Fluorescence</td>\n      <td>19</td>\n      <td>0.04</td>\n      <td>(\u03c1 = 0.4)</td>\n      <td>0.34</td>\n      <td>(\u03c1 = 0.1)</td>\n    </tr>\n  </tbody>\n</table>\n\n_The ICs were calculated for a 4.0 \u00c5 cut-off._\n\nRemoving the cases from inhibition assays and fluorescence spectrophotometry methods, and all others for which only a few data points were reported (potentiometry, radioligand, reduction assay, and sedimentation), we end up with a reliable dataset of 81 structures (a \u2018cleaned\u2019 dataset) showing an increased correlation of RICs = \u22120.59 (\u03c1 < 0.0001) at the re-optimized distance threshold of 5.5 \u00c5 to define a contact (Figure 2). All further results will therefore refer to the 5.5 \u00c5 cut-off to define ICs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07454/elife-07454-fig2-v4.jpg)\n\n**Figure 2.:** (A) Full dataset (122 complexes), (B) reliable experimental methods only (stopped-flow, surface plasmon resonance, spectroscopy, isothermal titration calorimetry) (81 complexes), and (C) non-reliable experimental methods (inhibition assay and fluorescence) (36 complexes). The trend line and corresponding Pearson correlation coefficients and p-values (\u03c1) are reported in each plot; binding affinities are reported as absolute values.\n\n### Structural properties contributing to BA\n\nIn order to assess which structural property might be the best descriptor for the binding strength, we calculated on the \u2018cleaned\u2019 dataset values for the widely used buried surface area (BSA), the NIS characteristics (recently shown to contribute in the BA) (Kastritis et al., 2014), and our ICs. We further classified these properties based on the amino acid type\u2014polar/apolar\u2014for BSA and NIS, and contact types\u2014polar/polar, polar/charged, polar/apolar, charged/charged, charged/apolar, apolar/apolar\u2014for the ICs. For the latter we also considered the hydrophobic/hydrophilic classification. For all these, we evaluated whether this finer classification (resulting, of course, in more parameters in our model) improves the correlations. It is clear from the results summarized in Table 2 that the number of ICs is a better descriptor than the BSA, with RICs_total = \u22120.59 (\u03c1 < 0.0001) vs RBSA_total = \u22120.46 (\u03c1 < 0.0001). When distinguishing between the amino acid properties, the factors that contribute the most to BA are the number of ICs between polar and apolar residues (R = \u22120.56, \u03c1 < 0.0001) and between hydrophilic residues (R = \u22120.53, \u03c1 < 0.0001). However, none of these individual classes shows better correlation than the total ICs and BSA. All the calculated data are provided in Supplementary file 2.\n\n**Table 2.**\n Pearson's correlations and p-values between experimental binding affinities and the inter-residue contacts (ICs), buried surface area (BSA) and non-interacting surface (NIS) (Kastritis et al., 2014) properties calculated on the \u2018cleaned\u2019 dataset\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Property</th>\n      <th>R</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ICs_total</td>\n      <td>\u22120.59</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>ICs_charged/charged</td>\n      <td>\u22120.17</td>\n      <td>=0.06</td>\n    </tr>\n    <tr>\n      <td>ICs_charged/polar</td>\n      <td>\u22120.26</td>\n      <td>=0.009</td>\n    </tr>\n    <tr>\n      <td>ICs_charged/apolar</td>\n      <td>\u22120.45</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>ICs_polar/polar</td>\n      <td>\u22120.13</td>\n      <td>=0.1</td>\n    </tr>\n    <tr>\n      <td>ICs_polar/apolar</td>\n      <td>\u22120.56</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>ICs_apolar/apolar</td>\n      <td>\u22120.34</td>\n      <td>=0.001</td>\n    </tr>\n    <tr>\n      <td>ICs_hydrophilic/hydrophilic</td>\n      <td>\u22120.53</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>ICs_hydrophilic/hydrophobic</td>\n      <td>\u22120.34</td>\n      <td>=0.001</td>\n    </tr>\n    <tr>\n      <td>ICs_hydrophobic/hydrophilic</td>\n      <td>\u22120.05</td>\n      <td>=0.3</td>\n    </tr>\n    <tr>\n      <td>BSA_total</td>\n      <td>\u22120.46</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>BSA_polar</td>\n      <td>\u22120.36</td>\n      <td>=0.0005</td>\n    </tr>\n    <tr>\n      <td>BSA_apolar</td>\n      <td>\u22120.47</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>%NIS_polar</td>\n      <td>0.07</td>\n      <td>=0.06</td>\n    </tr>\n    <tr>\n      <td>%NIS_apolar</td>\n      <td>\u22120.33</td>\n      <td>=0.001</td>\n    </tr>\n    <tr>\n      <td>%NIS_charged</td>\n      <td>0.28</td>\n      <td>=0.006</td>\n    </tr>\n  </tbody>\n</table>\n\n_A fine classification of those properties based on the polar/apolar/charged and hydrophobic/hydrophilic nature of the amino acids is also reported. The property with the highest R value is highlighted in bold. The corresponding data are provided in Supplementary file 2._\n\nIn order to assess the predictor power of the above-described structural properties, we built different predictor models (contacts-based, BSA-based, NIS-based and combinations of these), optimizing the following model:(1)Model\u2009N:\u2009\u0394Gcalc=w1P1+w2P2+....+Q,where PN values are the properties used to train Model N, wN values are the weight and Q is a shift value. To avoid the problem of over-fitting when many variables are used (>3), we applied the Akaike's Information Criterion (AIC) stepwise selection method implemented in R (R Development Core Team, 2014) in order to identify (and consider only) the significant variables among the training ones. Each derived model, with associated weights wN and performance, is reported in Table 3.\n\n**Table 3.**\n Optimization of binding affinity predictor models based on the regression model \u0394Gcalc = w1P1 + w2P2 + \u2026. + Q\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Properties (PN)</th>\n      <th>Model 1</th>\n      <th>Model 2</th>\n      <th>Model 3</th>\n      <th>Model 4</th>\n      <th>Model 5</th>\n      <th>Model 6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ICs_total</td>\n      <td>0.07782</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>ICs_charged/charged</td>\n      <td>-</td>\n      <td>-</td>\n      <td>/</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.09420</td>\n    </tr>\n    <tr>\n      <td>ICs_charged/polar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>/</td>\n      <td>-</td>\n      <td>-</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td>ICs_charged/apolar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.11627</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.10038</td>\n    </tr>\n    <tr>\n      <td>ICs_polar/polar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>\u22120.12655</td>\n      <td>-</td>\n      <td>-</td>\n      <td>\u22120.19522</td>\n    </tr>\n    <tr>\n      <td>ICs_polar/apolar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.23595</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.22609</td>\n    </tr>\n    <tr>\n      <td>ICs_apolar/apolar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>/</td>\n      <td>-</td>\n      <td>-</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td>ICs_hydrophil/hydrophil</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.09055</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>ICs_hydrophil/hydrophob</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.05726</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>ICs_hydrophob/hydrophil</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.06037</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>BSA_total</td>\n      <td>-</td>\n      <td>0.00278</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>BSA_polar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.00131</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>BSA_apolar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>0.00400</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>%NIS_polar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>/</td>\n    </tr>\n    <tr>\n      <td>%NIS_apolar</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>\u22120.18786</td>\n    </tr>\n    <tr>\n      <td>%NIS_charged</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>\u22120.13872</td>\n    </tr>\n    <tr>\n      <td>Intercept (Q)</td>\n      <td>4.78839</td>\n      <td>5.66032</td>\n      <td>5.13766</td>\n      <td>4.90452</td>\n      <td>5.44809</td>\n      <td>15.9433</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R</td>\n      <td>\u22120.59</td>\n      <td>\u22120.46</td>\n      <td>\u22120.67</td>\n      <td>\u22120.60</td>\n      <td>\u22120.48</td>\n      <td>\u22120.73</td>\n    </tr>\n    <tr>\n      <td>p-value</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n      <td>&lt;0.0001</td>\n    </tr>\n    <tr>\n      <td>RMSE (kcal mol\u22121)</td>\n      <td>2.25</td>\n      <td>2.46</td>\n      <td>2.08</td>\n      <td>2.22</td>\n      <td>2.45</td>\n      <td>1.89</td>\n    </tr>\n  </tbody>\n</table>\n\n_The weights wN are reported for each properties PN used to train Model N. Properties that have not been used for training the Model or have been evaluated as not relevant from the Akaike's An Information Criterion (AIC) evaluation are reported as \u2018-\u2019 and \u2018/\u2019, respectively. At the bottom of the table, the correlation coefficient and prediction error (expressed as R and RMSE) are reported._\n\nModels 1 and 2 were trained on ICs_total and BSA_total, respectively, with a better performance of the ICs-based model (as already reported in Table 2) (root mean square errors [RMSEs] of 2.25 and 2.46 kcal/mol, for ICs and BSA, respectively). Models 3 and 4 have been trained using the ICs classified by residue type (polarity in Model 3, hydrophobicity in Model 4). While single amino-acid-type ICs properties do not improve the correlations, their linear combination results in a significant improvement from R = \u22120.59 (\u03c1 < 0.0001) for Model 1 to R = \u22120.67 (\u03c1 < 0.0001) for Model 3 and R = \u2212-0.60 for Model 4 (\u03c1 < 0.0001). Model 5 has been trained on the polar/apolar classification of the Horton and Lewis BSA model, (Horton and Lewis, 1992), with a slightly improved performance compared with Model 2 based on the total BSA, but it is still worse than any of the contact-based models (i.e., Model 1, Model 3, and Model 4).\n\nAmong the models that are based on properties of the interface of the binding site, the one based on polarity-classification of ICs (i.e., Model 3) shows the best performance. We therefore added to it the NIS properties in order to obtain a full description of the structural properties of the complex, resulting in Model 6. After AIC evaluation, we obtained the following linear equation:\n\n$$\n\u0394G_{calc}=0.09459\u2009ICs_{charged/charged}+0.10007\u2009ICs_{charged_apolar}\u22120.19577\u2009ICs_{polar/polar}+0.22671\u2009ICs_{polar/apolar}\u22120.18681%NIS_{apola}r\u22120.13810%NIS_{charged}+15.9433.\n$$\n\nFourfold cross-validation results for this model (repeated 10 times) are reported in Supplementary file 3, showing consistency in terms of coefficient and prediction accuracy. A scatter plot of predicted vs experimental affinities is reported in Figure 3. The most relevant contributions to BA are the number of ICs made by charged and polar residues (ICs_charged/charged and ICs_polar/polar in Equation 2), while the apolar residues are only counted when interacting with charged and polar ones (ICs_charged/apolar and ICs_polar/apolar in Equation 2). This ICs/NIS-based model show the best performance of any model developed so far, with R = \u22120.73 and RMSE = 1.89 kcal mol\u22121.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07454/elife-07454-fig3-v4.jpg)\n\n**Figure 3.:** The predictions were made according to the inter-residue contacts (ICs)/non-interacting surface (NIS)-based model (Model 6, Equation 2) for the cleaned dataset of 81 protein\u2013protein complexes. The correlation for all 81 complexes yields an R of \u22120.73 (\u03c1 < 0.0001) with a RMSE of 1.89 kcal mol\u22121. When only rigid cases (interface RMSD between superimposed free and bound components \u22641.0 \u00c5, red triangles) are considered, the correlation increases to R = \u22120.75 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121, while for flexible cases (interface RMSD >1.0 \u00c5; yellow rhombus) R = \u22120.73 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121. The x = y line is shown as reference; binding affinities are reported as absolute values.\n\n### The effect of conformational changes on BA-prediction accuracy\n\nIn many assemblies, the structure of free monomers differs from their structure in the oligomeric state (the \u2018bound\u2019 form) due to the association process. The affinity benchmark also reports the interface RMSD (i_rmsd) between the unbound and bound structures. This is a measure of how much conformational change takes place upon association. We investigated if our model would have a higher predictive power when classifying the complexes according to their amplitude of conformational change upon binding. Predictions made with our combined contacts and NIS model (Model 6, Equation 2) are much less sensitive to conformational changes than all previous models (Figure 3 and Figure 4), with only minor differences in performance between rigid (i_rmsd \u2264 1.0 \u00c5, R = \u22120.75 and RMSE = 1.88 kcal mol\u22121) and flexible cases (i_rmsd > 1.0 \u00c5, R = \u22120.73 and RMSE = 1.89 kcal mol\u22121). This indicates that, in contrast to previous predictors, the number of interface residue contacts is a rather robust predictor that is less sensitive to conformational changes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07454/elife-07454-fig4-v4.jpg)\n\n**Figure 4.:** The performance is expressed as Pearson's Correlation coefficient between experimental and predicted binding affinities. Predictions were made on the common set of 79 complexes between our cleaned dataset, the data tested by Moal et al. (2011) and the CCHarPPI (Moal et al., 2015a, b) pre-calculated data. Correlations for the entire set and the rigid (43) and flexible (36) complexes are reported as absolute values for easier comparison (methods marked with asterisk showed original negative correlations).\n\nIn order to perform a fair comparison with other previously published methods, we calculated their performance on the complexes that are in common between our clean dataset, the one reported by Moal et al. (2011), and the pre-calculated data on the Computational Characterisation of Protein\u2013Protein Interactions (CCHarPPI) web server, ending up in 79 protein\u2013protein complexes (Figure 4). The considered models include the \u2018global surface model\u2019 of Kastritis et al. (2014), the BSA-based model of Horton and Lewis (1992), the top three best performing methods reported by Moal et al. (2011) (their consensus model, DFIRE [Liu et al., 2004] and PMF[Su et al., 2009]) and the composite scoring functions reported by the CCHarPPI webserver [Moal et al., 2015a, b], such as ZRANK [Pierce and Weng, 2007], ZRANK2 [Pierce and Weng, 2008], RosettaDock [Chaudhury et al., 2010], PyDock [Cheng et al., 2007], FireDock [Andrusier et al., 2007], PISA [Viswanath et al., 2013], PIE [Ravikant and Elber, 2010], and SIPPER [Pons et al., 2011]. As shown in Figure 4, our ICs/NIS-based model (Model 6) outperforms all other methods tested. It is also less sensitive to conformational changes. All associated data are provided in Supplementary file 4. In addition to the composite scoring function of CCharPPI, none of the other 99 intermolecular parameters reported by CCharPPI outperformed our model, even if some show correlations above \u22120.50.\n\n### Insights on the difference between ICs and BSA\n\nThe ICs introduced in this work to describe BA seem to be a \u2018higher level definition\u2019 structural parameter than the BSA since they express not only the contact surface but also the pairwise non-bonded interactions that the two proteins make, which is related to the packing of the interface. Indeed, a weak complex is expected to be less tightly packed than a strong one, a difference that should be better reflected in the ICs than in the BSA. In particular, the origin of this difference might reside in the fact that the contribution of each residue to the BSA will greatly depend on the solvent-accessible surface area of the residue in the free form, whereas this does not affect ICs. To illustrate this point we checked the main differences between ICs and BSA for the complex between Fab D3H44 and Tissue factor (PDB code: 1JPS [Faelber et al., 2001]; \u0394Gexp = \u221213.6 kcal mol\u22121). This complex has a BSA of 1852 \u00c52 and 83 ICs at 5.5 \u00c5, resulting in a ICs-based affinity prediction of \u221212.8 kcal mol\u22121 and a BSA-based one of \u221210.3 kcal mol\u22121. The relative contribution of each interfacial Fab residue to the total BSA and number of ICs is shown in Figure 5A\u2014figure supplement 1A: The contributions of the various residues to the ICs are more equally distributed than for the BSA. The latter shows high contributions for some residues, which is closely related to their solvent-accessible surface area (ASA) in the free form (defined here as the conformation extracted from the complex, that is, without any conformational changes\u2014see \u2018Materials and methods\u2019) (see Figure 5B\u2014figure supplement 1) and the surface representation in Figure 5. Indeed, because BSAFab = ASAFab_free \u2212ASAFab_complex, when a residue is at the core of the binding interface (in other words totally shielded by Tissue factor) the ASAFab_complex will be close to 0, resulting in BSAFab \u223cASAFab_free. In contrast, residues already almost fully buried in the free form will not contribute to the BSA, whereas they might be able to form contacts in our ICs model.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07454/elife-07454-fig5-v4.jpg)\n\n**Figure 5.:** Increasing graduation of pink is used for the ranges 0\u20132%, 2\u20134%, 4\u20136%, and above 6% of BSA/ICs contribution. (C) Surface representation of Fab D3H44 (gray) in complex with Tissue factor (light blue), PDB code: 1JPS (Faelber et al., 2001). Fab D3H44 is represented in all panels with the same orientation. Values of residues BSA/ICs contribution are reported in Supplementary file 5. The following figure supplement is available for Figure 5.\n\n![Figure 5\u2014figure supplement 1](https://cdn.elifesciences.org/articles/07454/elife-07454-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1:** (A) Relative contribution (percentage) of each Fab D3H44 interfacial residues to the total BSA (hot pink) and ICs (green).(B) Corresponding solvent-accessible surface area in \u00c52 of the Fab D3H44 residues in the free form (separated proteins taken from the complex).\n\nTo report an example of this, the three residues GLU_H31, TYR_H32, and TYR_H33 located at the core of binding site (see Figure 5) contribute equally to the ICs calculation (6%), while they account for 10.5%, 5.6%, and 8.1% of the BSAFab, respectively. On the other hand, residues such as ILE_H29, TYR_H53 and ASP_H99, which are already highly buried in the free form and therefore contribute less than 0.1% to the BSAFab, are still making contacts, contributing between 1.2% and 2.4% in the calculation of ICs. In general, it seems that our ICs-based model is accounting more evenly than the BSA model for the contributions of highly solvent-accessible and buried residues, which leads to a higher prediction accuracy.\n\n### Concluding remarks\n\nOur new ICs/NIS-based BA model predicts BAs with an unprecedented accuracy (R = \u22120.73, \u03c1 < 0.0001; RMSE = 1.89 kcal mol\u22121), on a large, various and reliable dataset of 81 complexes. It achieves this by making use of only two structural features: the interfacial residue\u2013residue contacts and the contribution of the NIS. Unsurprisingly, the higher the number of interfacial contacts, the stronger the binding strength, which is consistent both with the previously reported evidence that interfaces tend to be larger and more tightly packed with increasing interaction strength (Nooren and Thornton, 2003) and with the simple BSA models introduced by Chothia and Janin (1975) and Horton and Lewis (1992). BSA and the number of contacts at the interface are of course somewhat related, but the number of interface contacts shows much better correlations with binding strength than the BSA.\n\nIn summary, our study demonstrated that interface contacts, decomposed into their polar/apolar/charged characteristics, and combined with contributions of the NIS based on the recent work of Kastritis et al. (2014) (in particular the percentage of apolar and charged surface), lead to the best BA predictor for protein\u2013protein complexes reported to date. Importantly, these are less sensitive to conformational changes occurring upon binding, which are one of the challenging aspects to deal with for both structure and affinity prediction.\n\n## Materials and methods\n\n### Dataset\n\nIn order to evaluate the relationship between the contacts at the interface and the experimental BA in protein\u2013protein complexes, we used the bound structures from the structure-based protein\u2013protein BA benchmark of Kastritis et al. (2011). It contains 144 non-redundant protein\u2013protein complexes with known 3D structures (of both the unbound and bound components) and associated experimental \u0394G values.\n\nFrom this dataset we removed: (i) three cases (PDB codes: 1NSN, 1UUG, and 1IQD) for which the \u0394G has not a unique value (reported as > \u221214 kcal/mol, > \u221218 kcal/mol, and > \u221215 kcal/mol, respectively), and (ii) all the complexes that show gaps or unresolved fragments at the binding interface (considering a gap to be a missing segment longer than two residues). 19 cases were discarded in total (for details see Supplementary file 1). This resulted in a dataset of 122 complexes, covering diverse types of biological functions including antibody/antigen (A or AB with bound antibody, 10 cases), enzyme/inhibitors (EI, 34 cases), enzyme/substrate (ES, 9 cases), enzyme/regulatory subunit (ER, 7 cases), G-protein containing (OG, 15 cases), membrane receptors (OR, 7 cases), miscellaneous (OX, 26 cases), and non-cognate complexes (NC, 9 cases). The dataset includes both weak and strong complexes in terms of interaction strength, with \u0394G values ranging between \u22124.3 and \u221218.6 kcal/mol.\n\nThe published benchmark also reports for each entry the interface C-alpha RMSD (i_rmsd) between unbound and bound form, which provides an estimate of the amplitude of the conformational changes that take place upon binding. Our clean dataset has i_rmsd ranging between 0.17 \u00c5 and 4.90 \u00c5. The interacting area, expressed in terms of BSA upon complex formation, ranges from 808 \u00c52 to 3370 \u00c52.\n\n### Contacts, BSA and NIS calculation\n\nWe calculated the number of interface residue pair-wise contacts (ICs) for each complex using the COCOMAPS web tool (Vangone et al., 2011). Two residues are considered in contact if a pair of (any) atoms belonging to two residues is closer than a defined cut-off distance. To systematically evaluate the impact of the cut-off distance on the correlation between ICs and BA, we varied the cut-off between 3 \u00c5 and 20 \u00c5 in steps of 0.5 \u00c5 in the range 5\u20138 \u00c5 and 1.0 \u00c5 from 8 \u00c5 and above.\n\nThe BSA upon complex formation was calculated using NACCESS (Hubbard and Thornton, 1993) as:\n\n$$\nBSA=(ASA_{protein1}+ASA_{protein2})\u2212ASA_{complex},\n$$\n\nwhere ASAprotein1 and ASAprotein2 are the solvent-accessible surface areas calculated from the free components (i.e., the separated bound conformation of the proteins\u2014note that this is different from the unbound form of the protein) using a 1.4 \u00c5 radius sphere.\n\nThe NIS properties (i.e., percentage of polar, apolar and charged residues on the NIS) were calculated as described in Kastritis et al. (2014).\n\nResidues were classified based on their physico-chemical properties as follow:polar: C, H, N, Q, S, T, Y, Wapolar: A, F, G, I, V, M, Pcharged: E, D, K, R.\n\nThe hydrophobic nature of the residues was defined according to the Kyte\u2013Doolittle hydrophobicity index (Kyte and Doolittle, 1982).\n\nThe scripts for calculation of ICs (polar/apolar/charged divided) and NIS are available at: http://bonvinlab.org/software. A description of how to predict binding affinity with our approach is described in details in Bio-Protocol (Vangone and Bonvin, 2017).\n\n### Correlations, prediction power and cross-validation\n\nTo assess the linear dependence between two variables (i.e., the experimental BA and the structural properties tested, such as ICs), the Pearson product-momentum correlation coefficients (R) were calculated. The ranking power of ICs with BA was also calculated as reported by the Spearman's correlation parameter S.\n\nWe trained different models (Equation 1) using linear regression in R (R Development Core Team, 2014); to avoid problem of over-fitting when many variables were used (>3) we applied the AIC stepwise selection approach (backward and forward) in order to identify the significant terms and calculate weights only for them.\n\nCross-validation on the final model was performed by partitioning the dataset into four complementary subsets, training on the 75% of the data (training set) and validating on the other 25% (prediction set). Such fourfold cross-validation was repeated 10 times.\n\n### Comparison with other methods\n\nWe compared our method with other BA predictors, potentials and composite scoring functions. Their performance is reported as correlation (R) between the predicted BA (or potential) and the experimental BAs. The comparison was made for 79 protein\u2013protein complexes that are in common between our cleaned dataset of 81 structures and the 137 complexes reported by Moal et al. (2011).\n\nPredicted BAs for the \u2018global surface model\u2019 developed by Kastritis et al. (2014) have been calculated through the program provided by the authors; the Horton & Lewis BSA-based model (1992) (Horton and Lewis, 1992) was re-trained on our clean dataset (reported as Model 5); data for the consensus model reported by Moal et al. (2011), DFIRE (Liu et al., 2004), and PMF (Su et al., 2009) are provided in (Moal et al., 2011); data of the composite scoring ZRANK (Pierce and Weng, 2007), ZRANK2 (Pierce and Weng, 2008), RosettaDock (Chaudhury et al., 2010), PyDock (Cheng et al., 2007), FireDock (the total energy, the antibody\u2013antigen energy and the enzyme-inhibitor energy) (Andrusier et al., 2007), PISA (Viswanath et al., 2013), PIE (Ravikant and Elber, 2010), and SIPPER (Pons et al., 2011) were obtained as pre-calculated data from the CCHarPPI webserver (Moal et al., 2015a, b). Apart from the composite scoring function, CCHarPPI reports 99 additional intermolecular parameters, such as potential functions, energy functions, and various descriptors. The performance of each of them has been compared with our model.\n",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "a5404f01-3673-442a-ba7f-1cfdf958abe6",
+      "submission_id": "6887a06a-c7a4-41a0-8eb4-c2cdf451b877",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Levitt, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07454.017](https://doi.org/10.7554/eLife.07454.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cContacts-based prediction of binding affinity in protein-protein complexes\u201d for consideration at eLife. Your article has been favorably evaluated by Michael Marletta (Senior editor), a Reviewing editor, and two reviewers.\n\nBoth reviewers found the manuscript interesting and we would like to invite the authors to submit a revised manuscript that addresses the reviewers' comments.\n\nReviewer #1:\n\nThe authors wish to predict binding affinity (BA), clearly a problem whose importance is hard to overstate. This is a mature field, and has an excellent tradition of methodological contributions with discussion of physicochemical significance. The authors find that ICs are more strongly correlated to BA than buried surface area (BSA) is. No explanation is provided for this, which I think should be corrected. I also think since prior workers have separated BSA into polar and nonpolar contributions, counted hydrogen bonds, etc., the authors should do the same for ICs, as this may improve the results.\n\nIt is interesting that IC appears to be a better predictor of BA compared to BSA, even though IC seems a cruder measure. Please try to find the underlying reason for this. I suspect I know the reason.\n\nThe fact that the 4\u00c5 cutoff is optimal is significant, in my opinion. The authors should try to explain.\n\nIt is not clear that the minimum correlation is at 20\u00c5, since this is the largest interface distance tested.\n\nMean absolute error is not a very standard error measure. Please use a measure that is more common in the literature.\n\nThe fact that only three fitting parameters were used effectively eliminates the possibility of overfitting. Still, I think the success of the method raises important questions. Do all contacts contribute equally to BA? What if contacts were to be grouped into e.g. salt bridges, hydrogen bonds, hydrophobic, etc.? I don't think it would be hard to count these. Horton and Lewis did something like this, separating polar from nonpolar buried surface area. I don't see that they report the error, but their Table 2 suggests it is comparable to that in the present work. Chothia and Janin also indicate the importance of separating polar and nonpolar contacts. The current results are not compared quantitatively to methods from the literature. Doing this would make it clear to what extent the new method is better than the existing ones.\n\nIn general I think this paper is promising. I don't doubt that it will eventually be published, either here or elsewhere. However the questions it raises ought to be answered. Otherwise this paper will merely report a phenomenon, without adding understanding. Also the comparison to past methods should be improved.\n\nReviewer #2:\n\nIt is an interesting work dealing with the prediction of energies of protein - protein interactions. Some aspects of the work should be improved.\n\nThe authors do not report the performance of other methods when applied to the same dataset. I see only the comparison of the performance of inter-residue contacts to buried surface area. The report of an explicit comparison of results obtained on the same dataset by other approaches, well quoted into the Introduction, should improve the quality of the article.\n\nIn the paragraph \u201cThe effect of conformation changes on BA prediction's accuracy\u201d the authors refers again to other models to indicate their method as preferred for being less sensitive to conformational changes, without reporting a comparison of the results obtained by that models for the two subsets of rigid and flexible complexes.\n\nThe training and prediction sets give quite different results. This should be discussed and explained. Maybe, the random division in the two sets could be repeated a high number of times, and a mean result could be considered.\n",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9220b950-fbad-4ce2-9a94-f85b5b421ca3",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C1",
+      "claim": "Almost all critical functions in cells rely on specific protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all critical functions in cells rely on specific protein\u2013protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about cellular functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "e39726bb-d6a8-4508-b3de-7f4b90eedbdc",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C2",
+      "claim": "A new approach to predict binding affinity based on the network of interfacial contacts is introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce a new and simple approach to predict binding affinity based on functional and structural features of the biological system, namely the network of interfacial contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological contribution of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "c29e84f9-ecb2-4bbe-ad55-81d47c0648ce",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C3",
+      "claim": "Experimental methods used for affinity measurements have a strong impact on prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We assess its performance against a protein\u2013protein binding affinity benchmark and show that both experimental methods used for affinity measurements and conformational changes have a strong impact on prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis presented in Table 1 and related text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "9b18df5d-aa2a-48cc-8bf5-406989eca610",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C4",
+      "claim": "Conformational changes have a strong impact on prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We assess its performance against a protein\u2013protein binding affinity benchmark and show that both experimental methods used for affinity measurements and conformational changes have a strong impact on prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of rigid vs flexible complexes in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "ff93e3e9-f5dd-4ef3-903b-2a0562dabaa9",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C5",
+      "claim": "The contacts and contact-types-based model combined with non-interacting surface properties achieves high prediction accuracy for a diverse dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a subset of complexes with reliable experimental binding affinities and combining our contacts and contact-types-based model with recent observations on the role of the non-interacting surface in protein\u2013protein interactions, we reach a high prediction accuracy for such a diverse dataset outperforming all other tested methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results in Table 3 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "41e78abd-097a-4a23-865d-919d88cbcf88",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C6",
+      "claim": "Interactions between proteins play a central role in cellular processes from DNA replication to protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between proteins play a central role in the processes happening in the cells, from DNA replication to protein degradation (Jones and Thornton, 1996; Alberts, 1998; Nooren and Thornton, 2003; Perkins et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "c384874e-565e-4a9f-a70e-2eb87164e8c9",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C7",
+      "claim": "Perturbations in protein interaction networks can lead to disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbations in those interaction networks can lead to disease (Stites, 1997; Sugiki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "fbc4b34e-2bb6-4ecc-a6a8-3aa7c5786c08",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C8",
+      "claim": "Most common targets of drugs are proteins such as enzymes, ion channels, and receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterizing these protein\u2013protein interactions (PPIs) is therefore crucial for a proper understanding of mechanisms in biological processes for disease research and for drug development, as most common targets of drugs are proteins (such as enzymes, ion channels, and receptors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in pharmacology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "e56b5ee6-6ddf-46a6-b660-837c2ecf89a0",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C9",
+      "claim": "Binding affinity defines whether or not complex formation will occur.",
+      "claim_type": "EXPLICIT",
+      "source": "It is however the binding affinity (BA) (i.e., the natural inclination of molecules to associate) that defines whether or not complex formation will occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of molecular interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "3e2defd6-bfa0-4326-a5db-351409466f66",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C10",
+      "claim": "Changes in binding affinity caused by mutations or post-translational modification errors lead to various diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that changes in BA caused by mutations or post-translational modification errors lead to various diseases (Vidal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "f00e530b-a91b-41c0-87df-144637d208e6",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C11",
+      "claim": "The affinity of an interaction is commonly described through the equilibrium dissociation constant Kd or the Gibbs free energy \u0394G.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly, the affinity of an interaction is described through the equilibrium dissociation constant Kd, or, in thermodynamic terms, the Gibbs free energy \u0394G (\u0394G = RT ln Kd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is standard thermodynamic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "e3ca6a8a-4e39-437c-b472-18b21ff5e64a",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C12",
+      "claim": "Measuring Kd values experimentally is a time-consuming and expensive process.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring Kd values experimentally is a time-consuming and expensive process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known practical limitation in experimental biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "f4757c90-6855-4c56-8b2c-9c2b72bb1321",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C13",
+      "claim": "Exact methods such as free energy perturbation and thermodynamics integration can be very accurate but are computationally expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Exact methods such as free energy perturbation and thermodynamics integration can be very accurate, but due to their computational costs their application is extremely limited (mostly to low throughput studies and mainly for small drug binding or mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about computational methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "e9b0ea4b-81fc-43f7-9316-93290a5f262a",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C14",
+      "claim": "Most published models fail to systematically predict binding affinity for large datasets or discriminate between binders and non-binders.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even if some have been very successful on small training sets (Horton and Lewis, 1992; Audie and Scarlata, 2007), most published models still fail to systematically predict BA (Kastritis and Bonvin, 2010) for large datasets or discriminate between binders and non-binders (Sacquin-Mora et al., 2008; Fleishman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "b09b0015-da7b-45e9-b7bc-8efee77b8d3e",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C15",
+      "claim": "Empirical methods usually neglect factors such as conformational changes upon binding, allosteric regulation, and solvent and co-factor effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The main weaknesses of these methods are that they usually neglect factors such as conformational changes upon binding, allosteric regulation, and solvent and co-factor effects, which may all contribute to the binding strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "ed678e7b-bbbc-4b98-9357-5c1c15d28f86",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C16",
+      "claim": "The network of contacts between surface residues holds complexes together, defines their specificity and contributes to their interaction strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding between two proteins is mainly defined by their contact region, the interface, and it is indeed the network of contacts between surface residues that holds complexes together, defines their specificity and contributes to their interaction strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of protein-protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "948ea99a-84d9-418a-b553-f1cce1609bb5",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C17",
+      "claim": "In CAPRI, assessment of docked model accuracy is based on a combination of positional RMSD criteria and conservation of intermolecular contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Critical Assessment of Prediction of Interactions (CAPRI) experiment (Janin et al., 2003), for instance, assessment of the accuracy of the docked models is based on a combination of positional root mean square deviation (RMSD) criteria and conservation of intermolecular contacts with respect to the native structure (Lensink et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to CAPRI literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "283504fa-c2aa-41ab-ac57-ced2b98cf0ca",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C18",
+      "claim": "Considering the conservation of contacts at the interface across docking models has been shown to improve the ranking of docked models.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of scoring, considering the conservation of contacts at the interface across docking models has been shown to improve the ranking of docked models (Oliva et al., 2013; Chermak et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "e778469f-14a8-4aff-955a-db6c4cb9dc43",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C19",
+      "claim": "A recent work has demonstrated an effect of the non-interacting surface on binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in addition to properties of the interface, a recent work has also demonstrated an effect of the non-interacting surface (NIS) on BA (Kastritis et al., 2014), a finding that has been corroborated in a recent study by Marillet et al. (Marillet et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "833bff37-2b43-416e-99df-096409a0e659",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C20",
+      "claim": "The protein\u2013protein binding affinity benchmark consists of 144 non-redundant protein\u2013protein complexes with experimentally determined Kd and available 3D structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show how the network of contacts at the interface of a protein\u2013protein complex can help in describing the BA of the interaction. Based on the number contacts at the interface, we propose an innovative and very simple method to predict BA. To this end we used the protein\u2013protein BA benchmark (Kastritis et al., 2011) consisting of 144 non-redundant protein\u2013protein complexes with experimentally determined Kd (\u0394G) and available 3D structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "944d4bbe-2577-4c8a-917e-b8ad03c7f5b6",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C21",
+      "claim": "Interfacial contacts can be considered the best structural property to describe binding strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that interfacial contacts, which have so far been neglected in the rationalization and prediction of BA, can be considered the best structural property to describe binding strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "d2e043e9-2123-403b-ae35-673cea3814a4",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C22",
+      "claim": "From the original dataset of 144 complexes, cases with ambiguity in exact Kd values and complexes with missing or unresolved residues (>2) at the interface were removed, resulting in 122 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "From the original dataset of 144 complexes, we removed the cases with ambiguity in the exact Kd values and all complexes with missing or unresolved residues (>2) at the interface (data reported in Supplementary file 1). For the remaining 122 complexes, we calculated the number of ICs and evaluated their correlation (expressed through the Pearson's correlation coefficient R) with the experimental \u0394Gs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "5350638b-16aa-450f-8402-f8b376269870",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C23",
+      "claim": "The highest correlation between inter-residue contacts and experimental \u0394Gs is achieved at a cut-off of 4.0 \u00c5 (RICs = \u22120.50, \u03c1 < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The results, reported in Figure 1, show that the highest correlation is achieved at a cut-off of 4.0 \u00c5, (RICs = \u22120.50, \u03c1 < 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "64ae16af-390b-44c9-a06f-be051eab8efb",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C24",
+      "claim": "The correlation between inter-residue contacts and experimental \u0394Gs decreases slowly until 8.0 \u00c5 (RICs = \u22120.41, \u03c1 < 0.0001) and drops at higher distances.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation decreases slowly until 8.0 \u00c5 (RICs = \u22120.41, \u03c1 < 0.0001) and drops at higher distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "09946c74-3ab9-4317-b36e-7b3648f94cd2",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C25",
+      "claim": "The Spearman's correlation coefficient follows the same trend as Pearson's R with slightly higher absolute values.",
+      "claim_type": "EXPLICIT",
+      "source": "We also evaluated the ranking power of the ICs, expressed through the Spearman's correlation coefficient S, which follows the same trend as R with slightly higher absolute values (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "6d005e1e-6cfd-4ca2-bd95-4e77080f5028",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C26",
+      "claim": "Ten different experimental methods have been used to determine the \u0394Gs for the set of 122 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the set of 122 complexes used in this work, ten different experimental methods have been used to detect the \u0394Gs: stopped-flow fluorimetry (8 cases), surface plasmon resonance (SPR) (40 cases), high performance liquid chromatography (HPLC)/UV absorption spectroscopy (14 cases), sedimentation (1 case), radioligand binding (competitive binding experiments) (2 cases), potentiometry (1 case), reduction assay (1 case), isothermal titration calorimetry (ITC) (19 cases), inhibition assay (17 cases), fluorescence spectrophotometric assays (19 cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "97ce4727-de98-4c88-8bea-09bb603384ca",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C27",
+      "claim": "The correlation between ICs and experimental \u0394Gs for stopped-flow fluorimetry is RICs = \u22120.70 (\u03c1 = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in Table 1, the correlations between ICs and experimental \u0394Gs increased to RICs = \u22120.70 (\u03c1 = 0.03), RICs = \u22120.53 (\u03c1 = 0.0003), RICs = \u22120.65 (\u03c1 = 0.006) and RICs = \u22120.55 (\u03c1 = 0.006) in the case of \u0394Gs determined by stopped-flow fluorimetry, SPR, spectroscopic methods and ITC, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "340f9fdb-e3c6-4a80-b51e-ab1316b97fad",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C28",
+      "claim": "The correlation between ICs and experimental \u0394Gs for SPR is RICs = \u22120.53 (\u03c1 = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in Table 1, the correlations between ICs and experimental \u0394Gs increased to RICs = \u22120.70 (\u03c1 = 0.03), RICs = \u22120.53 (\u03c1 = 0.0003), RICs = \u22120.65 (\u03c1 = 0.006) and RICs = \u22120.55 (\u03c1 = 0.006) in the case of \u0394Gs determined by stopped-flow fluorimetry, SPR, spectroscopic methods and ITC, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "75f9e3d0-4e66-421b-a6a2-f8064b12344c",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C29",
+      "claim": "The correlation between ICs and experimental \u0394Gs for spectroscopic methods is RICs = \u22120.65 (\u03c1 = 0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in Table 1, the correlations between ICs and experimental \u0394Gs increased to RICs = \u22120.70 (\u03c1 = 0.03), RICs = \u22120.53 (\u03c1 = 0.0003), RICs = \u22120.65 (\u03c1 = 0.006) and RICs = \u22120.55 (\u03c1 = 0.006) in the case of \u0394Gs determined by stopped-flow fluorimetry, SPR, spectroscopic methods and ITC, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "0f2fb5e4-c524-4eb0-bd3c-edfb6505b6a5",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C30",
+      "claim": "The correlation between ICs and experimental \u0394Gs for ITC is RICs = \u22120.55 (\u03c1 = 0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in Table 1, the correlations between ICs and experimental \u0394Gs increased to RICs = \u22120.70 (\u03c1 = 0.03), RICs = \u22120.53 (\u03c1 = 0.0003), RICs = \u22120.65 (\u03c1 = 0.006) and RICs = \u22120.55 (\u03c1 = 0.006) in the case of \u0394Gs determined by stopped-flow fluorimetry, SPR, spectroscopic methods and ITC, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "b6a91caf-ac40-4406-b3d9-714ea0612a4e",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C31",
+      "claim": "For inhibition assays, the correlation between ICs and experimental \u0394Gs is meaningless (RICs = 0.04 with \u03c1 = 0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "For the 17 cases measured by inhibition assays and the 19 by fluorescence spectrophotometry techniques the correlations were meaningless (RICs = 0.04 with \u03c1 = 0.9 and RICs = 0.05 with \u03c1 = 0.8, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "2b051789-990f-4a3d-9ce2-ae34f6812d1f",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C32",
+      "claim": "For fluorescence spectrophotometry techniques, the correlation between ICs and experimental \u0394Gs is meaningless (RICs = 0.05 with \u03c1 = 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "For the 17 cases measured by inhibition assays and the 19 by fluorescence spectrophotometry techniques the correlations were meaningless (RICs = 0.04 with \u03c1 = 0.9 and RICs = 0.05 with \u03c1 = 0.8, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "cd7e634f-611d-4cf6-8281-60ef451301a4",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C33",
+      "claim": "Inhibition assays and fluorescence spectrophotometry are indirect methods useful in calculating relative binding strengths but have limitations when used to calculate absolute binding affinity values.",
+      "claim_type": "EXPLICIT",
+      "source": "These are indirect methods useful in calculating relative binding strengths (known as IC50s), but these have limitations when used to calculate absolute BA values (Lazareno and Birdsall, 1993; Wilkinson, 2004; Masi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "bb6d915f-7ef4-4c33-a04c-68a57189c756",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C34",
+      "claim": "After removing cases from inhibition assays, fluorescence spectrophotometry methods, and others with few data points, a 'cleaned' dataset of 81 structures shows an increased correlation of RICs = \u22120.59 (\u03c1 < 0.0001) at a re-optimized distance threshold of 5.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the cases from inhibition assays and fluorescence spectrophotometry methods, and all others for which only a few data points were reported (potentiometry, radioligand, reduction assay, and sedimentation), we end up with a reliable dataset of 81 structures (a 'cleaned' dataset) showing an increased correlation of RICs = \u22120.59 (\u03c1 < 0.0001) at the re-optimized distance threshold of 5.5 \u00c5 to define a contact (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "5cb9e6bf-4aa2-465b-8a57-55eb9dcbcc34",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C35",
+      "claim": "The number of inter-residue contacts is a better descriptor than the buried surface area, with RICs_total = \u22120.59 (\u03c1 < 0.0001) vs RBSA_total = \u22120.46 (\u03c1 < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from the results summarized in Table 2 that the number of ICs is a better descriptor than the BSA, with RICs_total = \u22120.59 (\u03c1 < 0.0001) vs RBSA_total = \u22120.46 (\u03c1 < 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "604e3044-7dfb-4a08-a326-8a0bfcbaf37c",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C36",
+      "claim": "The factors that contribute the most to binding affinity are the number of inter-residue contacts between polar and apolar residues (R = \u22120.56, \u03c1 < 0.0001) and between hydrophilic residues (R = \u22120.53, \u03c1 < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "When distinguishing between the amino acid properties, the factors that contribute the most to BA are the number of ICs between polar and apolar residues (R = \u22120.56, \u03c1 < 0.0001) and between hydrophilic residues (R = \u22120.53, \u03c1 < 0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "4a9b232c-ab4d-4ab5-a3da-4ce690e98788",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C37",
+      "claim": "None of the individual amino acid type classes shows better correlation than the total ICs and BSA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of these individual classes shows better correlation than the total ICs and BSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "d6a3da0e-4bb3-44ed-b77f-1877e44f00bb",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C38",
+      "claim": "Model 1 based on ICs_total shows better performance than Model 2 based on BSA_total (RMSEs of 2.25 and 2.46 kcal/mol, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Models 1 and 2 were trained on ICs_total and BSA_total, respectively, with a better performance of the ICs-based model (as already reported in Table 2) (root mean square errors [RMSEs] of 2.25 and 2.46 kcal/mol, for ICs and BSA, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "9a40f5b5-d0cc-40c1-b55b-f537e9dfc3aa",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C39",
+      "claim": "Linear combination of ICs classified by residue type results in significant improvement from R = \u22120.59 for Model 1 to R = \u22120.67 for Model 3.",
+      "claim_type": "EXPLICIT",
+      "source": "While single amino-acid-type ICs properties do not improve the correlations, their linear combination results in a significant improvement from R = \u22120.59 (\u03c1 < 0.0001) for Model 1 to R = \u22120.67 (\u03c1 < 0.0001) for Model 3 and R = \u2212-0.60 for Model 4 (\u03c1 < 0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "1e51ef26-4f05-497b-b769-7eb50f02c842",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C40",
+      "claim": "Model 3 based on polarity-classification of ICs shows the best performance among models based on properties of the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the models that are based on properties of the interface of the binding site, the one based on polarity-classification of ICs (i.e., Model 3) shows the best performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing models in Table 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "af92b196-9ecc-4203-900a-fceb2f999493",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C41",
+      "claim": "The ICs/NIS-based model (Model 6) shows the best performance with R = \u22120.73 and RMSE = 1.89 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "This ICs/NIS-based model show the best performance of any model developed so far, with R = \u22120.73 and RMSE = 1.89 kcal mol\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main result of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "a8035e5e-3dc3-47a0-9904-dee6939f7040",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C42",
+      "claim": "The most relevant contributions to binding affinity are the number of ICs made by charged and polar residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The most relevant contributions to BA are the number of ICs made by charged and polar residues (ICs_charged/charged and ICs_polar/polar in Equation 2), while the apolar residues are only counted when interacting with charged and polar ones (ICs_charged/apolar and ICs_polar/apolar in Equation 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the coefficients in Equation 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "f30b1789-bf14-4a3d-9c34-78fe9718299c",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C43",
+      "claim": "For rigid cases (interface RMSD \u22641.0 \u00c5), the correlation is R = \u22120.75 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "When only rigid cases (interface RMSD between superimposed free and bound components \u22641.0 \u00c5, red triangles) are considered, the correlation increases to R = \u22120.75 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121, while for flexible cases (interface RMSD >1.0 \u00c5; yellow rhombus) R = \u22120.73 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "9a5c94c7-47b1-471a-b411-de2e24b91a56",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C44",
+      "claim": "For flexible cases (interface RMSD >1.0 \u00c5), the correlation is R = \u22120.73 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "When only rigid cases (interface RMSD between superimposed free and bound components \u22641.0 \u00c5, red triangles) are considered, the correlation increases to R = \u22120.75 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121, while for flexible cases (interface RMSD >1.0 \u00c5; yellow rhombus) R = \u22120.73 (\u03c1 < 0.0001) with a RMSE of 1.88 kcal mol\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "2eecd00b-be21-4e68-8e2b-fa155dfeb509",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C45",
+      "claim": "The contacts and NIS model (Model 6) is much less sensitive to conformational changes than all previous models.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions made with our combined contacts and NIS model (Model 6, Equation 2) are much less sensitive to conformational changes than all previous models (Figure 3 and Figure 4), with only minor differences in performance between rigid (i_rmsd \u2264 1.0 \u00c5, R = \u22120.75 and RMSE = 1.88 kcal mol\u22121) and flexible cases (i_rmsd > 1.0 \u00c5, R = \u22120.73 and RMSE = 1.89 kcal mol\u22121).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "45ca9fdd-87db-4100-b82a-2812f36245a5",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C46",
+      "claim": "The number of interface residue contacts is a rather robust predictor that is less sensitive to conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that, in contrast to previous predictors, the number of interface residue contacts is a rather robust predictor that is less sensitive to conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of rigid and flexible cases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "66b04449-c6c0-4bf5-bfff-a0552a773199",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C47",
+      "claim": "The ICs/NIS-based model (Model 6) outperforms all other methods tested on the common set of 79 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, our ICs/NIS-based model (Model 6) outperforms all other methods tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "0e31f660-3c6e-43a8-a697-5bb67660bfc5",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C48",
+      "claim": "None of the 99 intermolecular parameters reported by CCharPPI outperformed the ICs/NIS-based model, even if some show correlations above \u22120.50.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the composite scoring function of CCharPPI, none of the other 99 intermolecular parameters reported by CCharPPI outperformed our model, even if some show correlations above \u22120.50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with CCharPPI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "172ddcc8-f35f-4436-93e7-171dfb75fb82",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C49",
+      "claim": "ICs are a 'higher level definition' structural parameter than BSA because they express not only the contact surface but also the pairwise non-bonded interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICs introduced in this work to describe BA seem to be a 'higher level definition' structural parameter than the BSA since they express not only the contact surface but also the pairwise non-bonded interactions that the two proteins make, which is related to the packing of the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of the ICs parameter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "5baed18f-2c4e-48bd-a896-d958303a368f",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C50",
+      "claim": "A weak complex is expected to be less tightly packed than a strong one, a difference that should be better reflected in the ICs than in the BSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a weak complex is expected to be less tightly packed than a strong one, a difference that should be better reflected in the ICs than in the BSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between packing and binding strength.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "8ea4639e-d23c-436e-a4cd-2c46cfcb3cd3",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C51",
+      "claim": "The contribution of each residue to the BSA greatly depends on the solvent-accessible surface area of the residue in the free form, whereas this does not affect ICs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the origin of this difference might reside in the fact that the contribution of each residue to the BSA will greatly depend on the solvent-accessible surface area of the residue in the free form, whereas this does not affect ICs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the difference between BSA and ICs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "57f80300-4471-40c8-99d9-8c080c8d831d",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C52",
+      "claim": "For the complex between Fab D3H44 and Tissue factor (PDB code: 1JPS), the ICs-based affinity prediction is \u221212.8 kcal mol\u22121 and the BSA-based one is \u221210.3 kcal mol\u22121, compared to experimental \u0394Gexp = \u221213.6 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this point we checked the main differences between ICs and BSA for the complex between Fab D3H44 and Tissue factor (PDB code: 1JPS [Faelber et al., 2001]; \u0394Gexp = \u221213.6 kcal mol\u22121). This complex has a BSA of 1852 \u00c52 and 83 ICs at 5.5 \u00c5, resulting in a ICs-based affinity prediction of \u221212.8 kcal mol\u22121 and a BSA-based one of \u221210.3 kcal mol\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example with calculated predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "a28e7b1b-870b-4c27-a76f-3c589d0ea5fc",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C53",
+      "claim": "The contributions of the various residues to the ICs are more equally distributed than for the BSA.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative contribution of each interfacial Fab residue to the total BSA and number of ICs is shown in Figure 5A\u2014figure supplement 1A: The contributions of the various residues to the ICs are more equally distributed than for the BSA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and its supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "0ffc7e4f-761c-4403-bc3e-a06748552e46",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C54",
+      "claim": "Residues already almost fully buried in the free form will not contribute to the BSA, whereas they might be able to form contacts in the ICs model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, residues already almost fully buried in the free form will not contribute to the BSA, whereas they might be able to form contacts in our ICs model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the difference between BSA and ICs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "37f9f720-2776-4147-a2e4-a80553b9ce7e",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C55",
+      "claim": "The ICs-based model accounts more evenly than the BSA model for the contributions of highly solvent-accessible and buried residues, which leads to a higher prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, it seems that our ICs-based model is accounting more evenly than the BSA model for the contributions of highly solvent-accessible and buried residues, which leads to a higher prediction accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of the example case.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "acc1d2c7-7a62-450d-bfd6-871e1f4b2147",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C56",
+      "claim": "The new ICs/NIS-based binding affinity model predicts binding affinities with an unprecedented accuracy (R = \u22120.73, \u03c1 < 0.0001; RMSE = 1.89 kcal mol\u22121) on a large, various and reliable dataset of 81 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new ICs/NIS-based BA model predicts BAs with an unprecedented accuracy (R = \u22120.73, \u03c1 < 0.0001; RMSE = 1.89 kcal mol\u22121), on a large, various and reliable dataset of 81 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "1cfa5fb1-c7ac-4efe-8f15-626da95187ae",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C57",
+      "claim": "The model achieves high accuracy by making use of only two structural features: the interfacial residue\u2013residue contacts and the contribution of the non-interacting surface.",
+      "claim_type": "EXPLICIT",
+      "source": "It achieves this by making use of only two structural features: the interfacial residue\u2013residue contacts and the contribution of the NIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simplicity of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "60607445-ce28-4f83-b7f2-84366baf2a12",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C58",
+      "claim": "The higher the number of interfacial contacts, the stronger the binding strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the higher the number of interfacial contacts, the stronger the binding strength, which is consistent both with the previously reported evidence that interfaces tend to be larger and more tightly packed with increasing interaction strength (Nooren and Thornton, 2003) and with the simple BSA models introduced by Chothia and Janin (1975) and Horton and Lewis (1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is consistent with prior literature and the current findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "8dda712c-7ac8-4e49-9676-ac0d12242a43",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C59",
+      "claim": "Interfaces tend to be larger and more tightly packed with increasing interaction strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the higher the number of interfacial contacts, the stronger the binding strength, which is consistent both with the previously reported evidence that interfaces tend to be larger and more tightly packed with increasing interaction strength (Nooren and Thornton, 2003) and with the simple BSA models introduced by Chothia and Janin (1975) and Horton and Lewis (1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "9be91f58-430e-414e-99fe-3aa9d2e43615",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C60",
+      "claim": "BSA and the number of contacts at the interface are somewhat related, but the number of interface contacts shows much better correlations with binding strength than the BSA.",
+      "claim_type": "EXPLICIT",
+      "source": "BSA and the number of contacts at the interface are of course somewhat related, but the number of interface contacts shows much better correlations with binding strength than the BSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the comparative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "d2d8c7b1-ea14-4044-a024-75713b219682",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C61",
+      "claim": "Interface contacts decomposed into their polar/apolar/charged characteristics and combined with contributions of the non-interacting surface lead to the best binding affinity predictor for protein\u2013protein complexes reported to date.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study demonstrated that interface contacts, decomposed into their polar/apolar/charged characteristics, and combined with contributions of the NIS based on the recent work of Kastritis et al. (2014) (in particular the percentage of apolar and charged surface), lead to the best BA predictor for protein\u2013protein complexes reported to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "c51d7560-b54f-4f28-be5b-e805348f1d40",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C62",
+      "claim": "The ICs/NIS-based model is less sensitive to conformational changes occurring upon binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these are less sensitive to conformational changes occurring upon binding, which are one of the challenging aspects to deal with for both structure and affinity prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of rigid vs flexible cases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "f80037ee-0d1a-4597-9eac-e5e50338a42c",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C63",
+      "claim": "The bound structures from the structure-based protein\u2013protein binding affinity benchmark of Kastritis et al. (2011) were used to evaluate the relationship between contacts at the interface and experimental binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to evaluate the relationship between the contacts at the interface and the experimental BA in protein\u2013protein complexes, we used the bound structures from the structure-based protein\u2013protein BA benchmark of Kastritis et al. (2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "9f1daed7-b7a5-4603-a418-4f59c698ff79",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C64",
+      "claim": "Three cases (PDB codes: 1NSN, 1UUG, and 1IQD) were removed because the \u0394G does not have a unique value.",
+      "claim_type": "EXPLICIT",
+      "source": "From this dataset we removed: (i) three cases (PDB codes: 1NSN, 1UUG, and 1IQD) for which the \u0394G has not a unique value (reported as > \u221214 kcal/mol, > \u221218 kcal/mol, and > \u221215 kcal/mol, respectively), and (ii) all the complexes that show gaps or unresolved fragments at the binding interface (considering a gap to be a missing segment longer than two residues).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "2ffbfcd2-d84b-42b2-90f0-89fc3c006a57",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C65",
+      "claim": "19 cases were discarded in total from the original dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "19 cases were discarded in total (for details see Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "80c2e9b4-c720-4d34-800e-5fc3a201118c",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C66",
+      "claim": "The filtered dataset of 122 complexes covers diverse types of biological functions including antibody/antigen, enzyme/inhibitors, enzyme/substrate, enzyme/regulatory subunit, G-protein containing, membrane receptors, miscellaneous, and non-cognate complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a dataset of 122 complexes, covering diverse types of biological functions including antibody/antigen (A or AB with bound antibody, 10 cases), enzyme/inhibitors (EI, 34 cases), enzyme/substrate (ES, 9 cases), enzyme/regulatory subunit (ER, 7 cases), G-protein containing (OG, 15 cases), membrane receptors (OR, 7 cases), miscellaneous (OX, 26 cases), and non-cognate complexes (NC, 9 cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the diversity of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "7711faf2-6303-4960-9bd9-e75389c28f59",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C67",
+      "claim": "The dataset includes both weak and strong complexes with \u0394G values ranging between \u22124.3 and \u221218.6 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset includes both weak and strong complexes in terms of interaction strength, with \u0394G values ranging between \u22124.3 and \u221218.6 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the range of binding affinities in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "80b9a5cd-ef80-475d-b077-3a1d6a1fa4b5",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C68",
+      "claim": "The clean dataset has interface RMSD ranging between 0.17 \u00c5 and 4.90 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Our clean dataset has i_rmsd ranging between 0.17 \u00c5 and 4.90 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conformational variability in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "7d16eb34-12a4-4687-8eea-ceb21ec0f584",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C69",
+      "claim": "The interacting area expressed in terms of buried surface area ranges from 808 \u00c52 to 3370 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The interacting area, expressed in terms of BSA upon complex formation, ranges from 808 \u00c52 to 3370 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the range of interface sizes in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "5f2860bf-c9ff-4803-8633-525f7f7f1592",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C70",
+      "claim": "Two residues are considered in contact if a pair of atoms belonging to two residues is closer than a defined cut-off distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Two residues are considered in contact if a pair of (any) atoms belonging to two residues is closer than a defined cut-off distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the contact criterion used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "e6f6da04-a4d3-4df4-b91f-305388aff43c",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C71",
+      "claim": "The cut-off distance was varied between 3 \u00c5 and 20 \u00c5 to systematically evaluate its impact on the correlation between ICs and binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "To systematically evaluate the impact of the cut-off distance on the correlation between ICs and BA, we varied the cut-off between 3 \u00c5 and 20 \u00c5 in steps of 0.5 \u00c5 in the range 5\u20138 \u00c5 and 1.0 \u00c5 from 8 \u00c5 and above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "c94301f1-1704-460f-8f6a-b04f93fd5ec3",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C72",
+      "claim": "Residues were classified as polar (C, H, N, Q, S, T, Y, W), apolar (A, F, G, I, V, M, P), and charged (E, D, K, R).",
+      "claim_type": "EXPLICIT",
+      "source": "Residues were classified based on their physico-chemical properties as follow:polar: C, H, N, Q, S, T, Y, Wapolar: A, F, G, I, V, M, Pcharged: E, D, K, R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the residue classification scheme.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "d51e1f0b-a313-4190-89fd-cbb479ce559f",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C73",
+      "claim": "The hydrophobic nature of residues was defined according to the Kyte\u2013Doolittle hydrophobicity index.",
+      "claim_type": "EXPLICIT",
+      "source": "The hydrophobic nature of the residues was defined according to the Kyte\u2013Doolittle hydrophobicity index (Kyte and Doolittle, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification method with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "1cdc86b6-a73b-4789-ab05-2b58ba5fae83",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C75",
+      "claim": "Cross-validation was performed by partitioning the dataset into four complementary subsets, training on 75% of the data and validating on the other 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-validation on the final model was performed by partitioning the dataset into four complementary subsets, training on the 75% of the data (training set) and validating on the other 25% (prediction set). Such fourfold cross-validation was repeated 10 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "592cff6f-126b-4d25-bdc7-73015c356b8a",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "claim_id": "C76",
+      "claim": "The comparison with other methods was made for 79 protein\u2013protein complexes that are in common between the cleaned dataset, the data tested by Moal et al. (2011), and the CCHarPPI pre-calculated data.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to perform a fair comparison with other previously published methods, we calculated their performance on the complexes that are in common between our clean dataset, the one reported by Moal et al. (2011), and the pre-calculated data on the Computational Characterisation of Protein\u2013Protein Interactions (CCHarPPI) web server, ending up in 79 protein\u2013protein complexes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the comparison methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0335cf0a-13b1-4752-aa39-b022011edd5f",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors introduce a new approach to predict protein-protein binding affinity based on inter-residue contacts (ICs) at the interface. Using a benchmark dataset of 144 complexes (filtered to 122, then 81 'cleaned' complexes), they demonstrate that ICs correlate with experimental binding affinity, with optimal correlation at 4.0 \u00c5 cutoff (R = -0.50, p < 0.0001) for the initial dataset and R = -0.59 (p < 0.0001) at 5.5 \u00c5 for the cleaned dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20-C25, C34, C63-C71 collectively establish the methodological approach and demonstrate correlation between ICs and binding affinity. The data filtering process is documented (C22, C64-C65), the dataset characteristics are described (C66-C69), and the correlation results are reported with statistical significance (C23-C25, C34). The approach is reproducible with clear definitions (C70-C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "1803894c-ada3-435d-89d0-8932ba1a53ec",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors demonstrate that experimental methods used for binding affinity measurements significantly impact prediction accuracy. Reliable methods (stopped-flow fluorimetry, SPR, spectroscopy, ITC) show correlations ranging from R = -0.53 to -0.70, while indirect methods (inhibition assays, fluorescence spectrophotometry) show meaningless correlations (R \u2248 0.04-0.05). Removing unreliable methods improves correlation from R = -0.50 to R = -0.59.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C26-C34 provide comprehensive evidence that experimental method choice affects prediction accuracy. The analysis systematically evaluates 10 different experimental methods (C26), reports specific correlations for each reliable method (C27-C30), identifies problematic methods with near-zero correlations (C31-C32), explains their limitations with citations (C33), and demonstrates improvement when unreliable data are removed (C34). This is a well-supported finding with clear statistical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that inter-residue contacts (ICs) are superior descriptors of binding affinity compared to buried surface area (BSA), with ICs showing R = -0.59 vs BSA R = -0.46. Classification of ICs by residue polarity (polar/apolar/charged) further improves performance, with Model 3 achieving R = -0.67 compared to R = -0.59 for total ICs alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 demonstrate systematic comparison of structural descriptors with clear statistical evidence. The superiority of ICs over BSA is established (C35), specific contact types are analyzed (C36), and the improvement from combining contact types is quantified (C39). The residue classification scheme is clearly defined (C72-C73). Model performance comparisons are reported with appropriate statistics (C38-C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "337533d5-6235-4428-b2e0-80cf91fd4642",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors develop an ICs/NIS-based model (Model 6) that combines interfacial contacts classified by residue type with non-interacting surface properties, achieving the best reported performance (R = -0.73, RMSE = 1.89 kcal/mol) on the cleaned dataset of 81 complexes. The model identifies charged and polar residue contacts as the most relevant contributions to binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41-C42, C56-C57, C61 establish the final model's performance with clear statistical metrics. The model equation is provided (referenced in C42), performance is quantified (C41, C56), and the simplicity of using only two structural features is emphasized (C57). The claim of 'unprecedented accuracy' (C56) and 'best predictor reported to date' (C61) is supported by the comparison in the next result group.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "48450d5c-9576-4ddb-8cb7-f588e052e87d",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ICs/NIS-based model shows reduced sensitivity to conformational changes compared to previous methods, with similar performance for rigid (R = -0.75, RMSE = 1.88 kcal/mol) and flexible (R = -0.73, RMSE = 1.88 kcal/mol) complexes. This indicates that interface residue contacts are robust predictors less affected by conformational changes upon binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C43-C46, C62 demonstrate the model's robustness to conformational changes with quantitative evidence. The performance metrics for rigid vs flexible cases are nearly identical (C43-C44), supporting the claim of reduced sensitivity (C45). The interpretation that ICs are robust predictors is a reasonable inference from the minimal performance difference (C46, C62). Figure 3 and 4 provide visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "87b6c6b0-bb40-4cea-af26-284c12a481bd",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ICs/NIS-based model outperforms all previously published methods on a common set of 79 complexes, including methods by Kastritis et al., Horton & Lewis, Moal et al., and 99 intermolecular parameters from CCharPPI. The comparison demonstrates superior performance across both rigid and flexible complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C76 establish the comparative superiority of the new model. The comparison methodology is clearly described (C76), ensuring fair evaluation on a common dataset. Figure 4 provides visual evidence of outperformance across multiple methods (C47). The comprehensive comparison including 99 additional parameters from CCharPPI (C48) strengthens the claim of superior performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors provide mechanistic insight into why ICs outperform BSA: ICs represent a 'higher level definition' that captures both contact surface and pairwise interactions related to interface packing. Using the Fab D3H44-Tissue factor complex as an example, they show that ICs distribute contributions more evenly across residues than BSA, which is heavily dependent on residue solvent accessibility in the free form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 provide mechanistic explanation supported by a specific example. The conceptual distinction between ICs and BSA is clearly articulated (C49-C51), and the Fab D3H44-Tissue factor complex provides concrete evidence (C52-C55). Figure 5 and its supplement visualize the more even distribution of IC contributions compared to BSA. The inference that this leads to higher prediction accuracy (C55) is reasonable given the demonstrated performance differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "7ef153be-80d5-4715-9d33-048bd4a176ad",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors confirm that higher numbers of interfacial contacts correlate with stronger binding, consistent with prior evidence that interfaces are larger and more tightly packed with increasing interaction strength. While ICs and BSA are related, ICs show substantially better correlations with binding strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 place the findings in context of prior knowledge. The relationship between contact number and binding strength is established as consistent with literature (C58-C59, with citations). The comparative superiority of ICs over BSA is reiterated with supporting data (C60). This represents confirmatory findings that validate the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "08ef03e3-c281-4dca-87b2-daaa4e7be09b",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors performed fourfold cross-validation repeated 10 times to assess model robustness, partitioning the dataset into training (75%) and validation (25%) sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 describes appropriate cross-validation methodology. The approach is standard and well-described. Results are referenced as being in Supplementary file 3, though the specific cross-validation results are not detailed in the main text. The methodology is sound for assessing model generalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    },
+    {
+      "id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77",
+      "content_id": "be803188-dabb-4b7a-b953-87bcb5d59b1d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide background context establishing that protein-protein interactions are critical for cellular functions, that binding affinity is key to understanding complex formation, that perturbations lead to disease, and that current computational methods for predicting binding affinity have significant limitations including failure to account for conformational changes and other factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C19 establish background knowledge and motivation. These are well-supported by appropriate citations and represent established knowledge in the field. The claims about limitations of existing methods (C13-C15) are supported by citations. This provides appropriate context but represents background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:30:43.334353Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e39726bb-d6a8-4508-b3de-7f4b90eedbdc",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "833bff37-2b43-416e-99df-096409a0e659",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "944d4bbe-2577-4c8a-917e-b8ad03c7f5b6",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "d2e043e9-2123-403b-ae35-673cea3814a4",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "5350638b-16aa-450f-8402-f8b376269870",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "64ae16af-390b-44c9-a06f-be051eab8efb",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "09946c74-3ab9-4317-b36e-7b3648f94cd2",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "bb6d915f-7ef4-4c33-a04c-68a57189c756",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "5cb9e6bf-4aa2-465b-8a57-55eb9dcbcc34",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "f80037ee-0d1a-4597-9eac-e5e50338a42c",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "9f1daed7-b7a5-4603-a418-4f59c698ff79",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "2ffbfcd2-d84b-42b2-90f0-89fc3c006a57",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "80c2e9b4-c720-4d34-800e-5fc3a201118c",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "7711faf2-6303-4960-9bd9-e75389c28f59",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "80b9a5cd-ef80-475d-b077-3a1d6a1fa4b5",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "7d16eb34-12a4-4687-8eea-ceb21ec0f584",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "5f2860bf-c9ff-4803-8633-525f7f7f1592",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "e6f6da04-a4d3-4df4-b91f-305388aff43c",
+      "result_id": "0335cf0a-13b1-4752-aa39-b022011edd5f"
+    },
+    {
+      "claim_id": "c29e84f9-ecb2-4bbe-ad55-81d47c0648ce",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "6d005e1e-6cfd-4ca2-bd95-4e77080f5028",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "97ce4727-de98-4c88-8bea-09bb603384ca",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "340f9fdb-e3c6-4a80-b51e-ab1316b97fad",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "75f9e3d0-4e66-421b-a6a2-f8064b12344c",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "0f2fb5e4-c524-4eb0-bd3c-edfb6505b6a5",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "b6a91caf-ac40-4406-b3d9-714ea0612a4e",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "2b051789-990f-4a3d-9ce2-ae34f6812d1f",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "cd7e634f-611d-4cf6-8281-60ef451301a4",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "bb6d915f-7ef4-4c33-a04c-68a57189c756",
+      "result_id": "1803894c-ada3-435d-89d0-8932ba1a53ec"
+    },
+    {
+      "claim_id": "5cb9e6bf-4aa2-465b-8a57-55eb9dcbcc34",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "604e3044-7dfb-4a08-a326-8a0bfcbaf37c",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "4a9b232c-ab4d-4ab5-a3da-4ce690e98788",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "d6a3da0e-4bb3-44ed-b77f-1877e44f00bb",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "9a40f5b5-d0cc-40c1-b55b-f537e9dfc3aa",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "1e51ef26-4f05-497b-b769-7eb50f02c842",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "c94301f1-1704-460f-8f6a-b04f93fd5ec3",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "d51e1f0b-a313-4190-89fd-cbb479ce559f",
+      "result_id": "9afcfa2e-3d7e-4228-9d83-a073d0e58324"
+    },
+    {
+      "claim_id": "ff93e3e9-f5dd-4ef3-903b-2a0562dabaa9",
+      "result_id": "337533d5-6235-4428-b2e0-80cf91fd4642"
+    },
+    {
+      "claim_id": "af92b196-9ecc-4203-900a-fceb2f999493",
+      "result_id": "337533d5-6235-4428-b2e0-80cf91fd4642"
+    },
+    {
+      "claim_id": "a8035e5e-3dc3-47a0-9904-dee6939f7040",
+      "result_id": "337533d5-6235-4428-b2e0-80cf91fd4642"
+    },
+    {
+      "claim_id": "acc1d2c7-7a62-450d-bfd6-871e1f4b2147",
+      "result_id": "337533d5-6235-4428-b2e0-80cf91fd4642"
+    },
+    {
+      "claim_id": "1cfa5fb1-c7ac-4efe-8f15-626da95187ae",
+      "result_id": "337533d5-6235-4428-b2e0-80cf91fd4642"
+    },
+    {
+      "claim_id": "d2d8c7b1-ea14-4044-a024-75713b219682",
+      "result_id": "337533d5-6235-4428-b2e0-80cf91fd4642"
+    },
+    {
+      "claim_id": "9b18df5d-aa2a-48cc-8bf5-406989eca610",
+      "result_id": "48450d5c-9576-4ddb-8cb7-f588e052e87d"
+    },
+    {
+      "claim_id": "f30b1789-bf14-4a3d-9c34-78fe9718299c",
+      "result_id": "48450d5c-9576-4ddb-8cb7-f588e052e87d"
+    },
+    {
+      "claim_id": "9a5c94c7-47b1-471a-b411-de2e24b91a56",
+      "result_id": "48450d5c-9576-4ddb-8cb7-f588e052e87d"
+    },
+    {
+      "claim_id": "2eecd00b-be21-4e68-8e2b-fa155dfeb509",
+      "result_id": "48450d5c-9576-4ddb-8cb7-f588e052e87d"
+    },
+    {
+      "claim_id": "45ca9fdd-87db-4100-b82a-2812f36245a5",
+      "result_id": "48450d5c-9576-4ddb-8cb7-f588e052e87d"
+    },
+    {
+      "claim_id": "c51d7560-b54f-4f28-be5b-e805348f1d40",
+      "result_id": "48450d5c-9576-4ddb-8cb7-f588e052e87d"
+    },
+    {
+      "claim_id": "66b04449-c6c0-4bf5-bfff-a0552a773199",
+      "result_id": "87b6c6b0-bb40-4cea-af26-284c12a481bd"
+    },
+    {
+      "claim_id": "0e31f660-3c6e-43a8-a697-5bb67660bfc5",
+      "result_id": "87b6c6b0-bb40-4cea-af26-284c12a481bd"
+    },
+    {
+      "claim_id": "592cff6f-126b-4d25-bdc7-73015c356b8a",
+      "result_id": "87b6c6b0-bb40-4cea-af26-284c12a481bd"
+    },
+    {
+      "claim_id": "172ddcc8-f35f-4436-93e7-171dfb75fb82",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "5baed18f-2c4e-48bd-a896-d958303a368f",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "8ea4639e-d23c-436e-a4cd-2c46cfcb3cd3",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "57f80300-4471-40c8-99d9-8c080c8d831d",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "a28e7b1b-870b-4c27-a76f-3c589d0ea5fc",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "0ffc7e4f-761c-4403-bc3e-a06748552e46",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "37f9f720-2776-4147-a2e4-a80553b9ce7e",
+      "result_id": "c9a1c0b2-685d-4af3-8bec-e6e11211f7e4"
+    },
+    {
+      "claim_id": "60607445-ce28-4f83-b7f2-84366baf2a12",
+      "result_id": "7ef153be-80d5-4715-9d33-048bd4a176ad"
+    },
+    {
+      "claim_id": "8dda712c-7ac8-4e49-9676-ac0d12242a43",
+      "result_id": "7ef153be-80d5-4715-9d33-048bd4a176ad"
+    },
+    {
+      "claim_id": "9be91f58-430e-414e-99fe-3aa9d2e43615",
+      "result_id": "7ef153be-80d5-4715-9d33-048bd4a176ad"
+    },
+    {
+      "claim_id": "1cdc86b6-a73b-4789-ab05-2b58ba5fae83",
+      "result_id": "08ef03e3-c281-4dca-87b2-daaa4e7be09b"
+    },
+    {
+      "claim_id": "9220b950-fbad-4ce2-9a94-f85b5b421ca3",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "41e78abd-097a-4a23-865d-919d88cbcf88",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "c384874e-565e-4a9f-a70e-2eb87164e8c9",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "fbc4b34e-2bb6-4ecc-a6a8-3aa7c5786c08",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "e56b5ee6-6ddf-46a6-b660-837c2ecf89a0",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "3e2defd6-bfa0-4326-a5db-351409466f66",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "f00e530b-a91b-41c0-87df-144637d208e6",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "e3ca6a8a-4e39-437c-b472-18b21ff5e64a",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "f4757c90-6855-4c56-8b2c-9c2b72bb1321",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "e9b0ea4b-81fc-43f7-9316-93290a5f262a",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "b09b0015-da7b-45e9-b7bc-8efee77b8d3e",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "ed678e7b-bbbc-4b98-9357-5c1c15d28f86",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "948ea99a-84d9-418a-b553-f1cce1609bb5",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "283504fa-c2aa-41ab-ac57-ced2b98cf0ca",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    },
+    {
+      "claim_id": "e778469f-14a8-4aff-955a-db6c4cb9dc43",
+      "result_id": "a3fba627-a9b9-4e66-8c5f-bf11a448af77"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Paired recordings between FS basket cells and CCS pyramidal cells revealed morphological characteristics of synaptic contacts. Recordings were made from neighboring cells (44.5 \u00b1 23.7 \u00b5m apart, n=10) with IPSCs reversing at \u221252.5 mV (driving force 12.5 mV). Light microscopy identified 5\u201314 putative contacts per pair (8.2 \u00b1 4.8), with three pairs showing somatic and dendritic contacts and seven pairs showing exclusively dendritic contacts at distances of 5.8\u2013208.4 \u00b5m from soma (mean 82.5 \u00b1 50.0 \u00b5m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C11 provide consistent morphological and electrophysiological characterization of FS-pyramidal cell pairs. The experimental methods are clearly described (retrograde labeling, paired recordings), sample sizes are reported (n=10 pairs), and measurements are quantified with appropriate statistics. The data directly support the morphological characterization of synaptic contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "IPSC amplitude and reliability varied with contact location on pyramidal cells. Peak IPSC amplitude was larger in pairs with somatic contacts than those with exclusively dendritic contacts. Transmission never failed for somatic contacts but showed failures with dendritic contacts. Mean IPSC amplitude decreased with increasing distance from soma to nearest contact, and IPSCs were not detected in two pairs where contacts were >33 \u00b5m from soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 establish a clear relationship between contact location and synaptic efficacy, supported by electrophysiological data from paired recordings (Table 1, Figure 1J). The distance-dependent attenuation and failure rates are consistent with cable theory predictions. However, the small sample size (n=10 pairs, with only 3 having somatic contacts) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Electron microscopy verification revealed that light microscopy overestimated synaptic contacts and that synaptic junction area varies systematically with target location. For pair CS56, EM verified only 3 of 7 LM-identified contacts, with one LM contact resolving into three distinct boutons (S1-S3). Somatic synapses had junctional areas of 0.194\u20130.350 \u00b5m\u00b2, dendritic shaft synapses 0.102 \u00b5m\u00b2, and spine synapses 0.042\u20130.056 \u00b5m\u00b2. Bouton volume correlated linearly with junction area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 demonstrate the necessity of EM verification and establish size differences across synaptic targets. The EM data (Figure 4-6, Table 2) provide direct measurements of junction areas with clear quantification. The linear correlation between bouton volume and junction area (Figure 6\u2014figure supplement 1A) strengthens the structural characterization. The discrepancy between LM and EM highlights methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Computational simulations based on anatomical measurements revealed location-dependent propagation of inhibitory signals. Spine synapse activation (0.11 nS at Sp1) produced 0.78 mV hyperpolarization at the spine but only 0.07 mV at soma. Dendritic shaft activation (0.21 nS at D1) produced 0.23 mV at shaft and 0.13 mV at soma. Single somatic synapse activation (0.71 nS at S1) produced 0.48 mV hyperpolarization, while simultaneous activation of four somatic contacts (S1-S4) produced 1.33 mV and 22.67 pA at soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 present simulation results using a morphologically realistic model based on EM measurements (described in Methods). The simulations demonstrate expected cable properties with distance-dependent attenuation. The spine neck parameters (500 M\u03a9 resistance) are cited from literature (Harnett et al., 2012). The somatic IPSP amplitude (1.33 mV) matches literature values (Buhl et al., 1994) and experimental data (Table 5), providing validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Simulations demonstrated that spine-head inhibition can veto excitatory inputs and that somatic inhibition can suppress dendritic excitation. Excitatory synaptic events (0.2 nS) at spine heads were greatly reduced by coincident spine-head IPSCs. Inhibition from clustered somatic synapses of one FS basket cell effectively suppressed dendro-somatic conduction from approximately 11 excitatory spine synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 demonstrate functional consequences of inhibition at different locations through simulation. The calculation comparing inhibitory and excitatory effects (1.33 mV somatic hyperpolarization vs. 0.12 mV per excitatory synapse) provides a quantitative basis for the ~11:1 ratio. However, this assumes linear summation and identical excitatory synapse properties, which may be oversimplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Unit electrical charge per junction area was similar between cell pairs CS56 and CS55, suggesting inhibitory synaptic current correlates with junction area. Unit charge was 343.3 fC \u00b5m\u207b\u00b2 for CS56 and 351.3 fC \u00b5m\u207b\u00b2 for CS55, calculated by dividing maximum charge by summed junction area of somatic/proximal synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 establish a quantitative relationship between junction area and synaptic strength. The similar unit charge values (343.3 vs 351.3 fC \u00b5m\u207b\u00b2) from two independent pairs support the correlation. However, this is based on only two cell pairs, limiting generalizability. The calculation assumes all somatic/proximal synapses (<33 \u00b5m) contribute to maximal IPSC, which is reasonable but unverified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Quantitative analysis of FS basket cell innervation patterns showed that 28.4 \u00b1 7.6% (17.2\u201343.1%) of terminals contacted cell somata across all paired recordings, consistent with previous data. Individual FS cells that innervate only dendrites of one pyramidal cell may contact somatic sites of other postsynaptic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide population-level statistics on innervation patterns (Table 4, n=10 pairs excluding CS28). The percentage of somatic terminals is consistent with prior work (Karube et al., 2004), providing external validation. The observation that dendritic-only innervation of one cell doesn't preclude somatic innervation of others (Figure 7) is morphologically documented but represents a single observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "IPSC amplitude variability results from stochastic, independent activation of individual somatic and proximal synapses. Monte Carlo simulations with probabilistic release at individual synapses (release probabilities correlated with junction area) produced IPSC charge distributions statistically similar to experimental recordings (p=0.41, Kolmogorov-Smirnov test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 proposes a mechanism for IPSC variability supported by statistical comparison between experimental and simulated data (Figure 8N,P). The model assumes independent release at each synapse with probabilities proportional to junction area, which is biologically plausible. The non-significant K-S test (p=0.41) indicates the model captures the experimental distribution, though this doesn't exclude alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of 305 synapses from 9 interneuron types revealed a general principle: synaptic junction area correlates with postsynaptic target size across inhibitory synapse types. Somatic synapses averaged 0.40 \u00b1 0.15 \u00b5m\u00b2 (n=23), dendritic shaft synapses 0.19 \u00b1 0.12 \u00b5m\u00b2 (n=195), and spine synapses 0.09 \u00b1 0.05 \u00b5m\u00b2 (n=87). Linear relationships between junction area and target size may provide impedance matching to control inhibitory efficacy at different sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 extend findings beyond FS basket cells to establish a general principle across interneuron types. The large sample (305 synapses, 9 cell types) provides strong statistical support. The correlation between junction area and target size (Figure 10B-L) is consistent across most cell types, with Martinotti cells as a noted exception. The impedance matching interpretation is mechanistically plausible and cited (Kubota and Kawaguchi, 2000).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FS basket cells provide functionally diverse forms of pyramidal cell inhibition depending on synapse location and size. Soma-targeting synapses initiate strong, global inhibition; dendritic shaft synapses inhibit restricted dendritic zones; and spine synapses mediate strictly local veto. Local spine/shaft potential changes are small and restricted, while somatic inhibitory currents are large and produce global control through summation from multiple terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C58-C60 represent the main conclusions integrating anatomical, electrophysiological, and simulation data. The functional diversity is well-supported by: (1) EM measurements showing size differences (C33-C35), (2) simulations showing differential propagation (C37-C43), and (3) experimental validation of IPSC amplitudes (C12-C15). The conclusions logically follow from the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Somatic junctions have structural and functional properties that enhance inhibitory efficacy. They have large areas suggesting high release probability, typically contact multiple sites, and their effectiveness is enhanced by FS cell firing at 30-50 Hz during motor behaviors in vivo. Some FS basket cell connections involve exclusively dendritic sites while others include both perisomatic and proximal dendritic contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 synthesize structural observations with functional implications. The large junction areas are directly measured (C33, C52), the inference about release probability is supported by citation (Holderith et al., 2012), and multiple somatic contacts are documented (C62, Buhl et al., 1994). The firing frequency (30-50 Hz) is cited from in vivo data (Isomura et al., 2009). The diversity of innervation patterns is documented morphologically (C7-C8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Spines receiving inhibitory synapses are typically large and their thalamic excitatory inputs presumably express both NMDA and AMPA receptors. Inhibitory synapses may efficiently veto thalamic inputs before NMDA receptor activation, reducing pyramidal cell firing probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 make inferences about spine properties and receptor composition based on citations (Kubota et al., 2007; Matsuzaki et al., 2004) rather than direct measurements in this study. The veto mechanism is supported by simulations (C44) and cited work (Gulledge et al., 2012), but the specific claim about preventing NMDA activation lacks direct experimental validation in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Discrepancies in detecting distal dendritic IPSCs at the soma may result from differences in experimental paradigm. In this work, postsynaptic potentials were more hyperpolarized (\u221265 mV vs \u221255/\u221257 mV) and Cl\u207b concentration was higher (19 mM vs 10 mM) than in other studies where distal dendritic IPSCs were detected. Unperturbed Cl\u207b reversal potentials may be 10-25 mV more hyperpolarized than in invasive whole-cell recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 address an apparent discrepancy with other studies (Silberberg and Markram, 2007; Jiang et al., 2013). The methodological differences are clearly documented (C71), and the speculation about Cl\u207b reversal potentials is supported by citations (Verheugen et al., 1999; Bevan et al., 2000). This represents appropriate scientific discussion of conflicting results, though the explanation remains speculative without direct measurement of native Cl\u207b reversal potentials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Inhibitory synapses on spines form 25-50% of GABAergic contacts and are co-innervated with excitatory thalamic inputs. Simulations show single inhibitory synapses can veto synaptic excitation and intercept NMDA current at spine heads, potentially preventing summation of thalamic inputs arriving within ~20 ms. FS basket cells act as feedforward inhibition to thalamic input through co-activation by thalamocortical afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 integrate structural observations with functional implications. The proportion of spine synapses is cited (Kubota et al., 2007; Chen et al., 2012), co-innervation is documented (Kubota et al., 2007), and the veto mechanism is demonstrated by simulation (C44) with supporting citations. The feedforward inhibition model is supported by co-activation data (Kimura et al., 2010). The 20 ms time window is cited (Marlin and Carter, 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "FS cells control L5 pyramidal cell excitation through three mechanisms: specific local veto of co-innervated spines, reduction of dendritic propagation of summed EPSPs, and strong global perisomatic inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 represents the overarching conclusion integrating all major findings. Each mechanism is supported by specific evidence: spine veto by simulations (C44, C82), dendritic propagation reduction by distance-dependent attenuation (C37-C43), and perisomatic inhibition by large somatic IPSCs (C42). This synthesis is well-supported by the combined experimental and computational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Comparison of light microscopy and electron microscopy revealed systematic discrepancies in synapse identification. In this study, 56% of putative dendritic contacts were verified by EM (vs 78% in previous study), 30% of verified synapses were newly found by EM, and somatic synapses were substantially undercounted by LM (14 vs 3 estimated for CS55; 4 vs 1 for CS56). These data demonstrate the importance of EM for quantitative measurements of synapse number and size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide critical methodological validation. The quantitative comparisons between LM and EM are clearly documented with specific numbers for each cell pair. The systematic undercounting of somatic synapses by LM is particularly important given their functional significance. This represents rigorous quality control and highlights limitations of LM-only approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The relationship between synaptic dimensions and GABAergic current amplitude may reflect impedance matching. Postsynaptic target size relates to input resistance, synaptic junction area relates to receptor number, and the dependence of terminal area on dendritic cross-sectional area would maintain a constant ratio of synaptic conductance to postsynaptic input resistance, efficiently regulating presynaptic interneuron actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 propose a mechanistic framework for the observed correlations. The relationships between target size, input resistance, junction area, and receptor number are established principles (Nusser et al., 1997). The impedance matching hypothesis is supported by the observed correlations (C55) and cited work (Kubota and Kawaguchi, 2000). This represents a coherent theoretical framework consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Synaptic junctional area governs IPSC amplitude through correlations with release probability, docking sites, and receptor number. Larger synapses may generate larger IPSCs through multiple release sites or higher receptor numbers. IPSC amplitude fluctuations in multi-contact connections presumably reflect variations and failures in release from different terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 synthesize literature on structure-function relationships at inhibitory synapses. The correlations between junction area, release probability, and receptor number are well-cited (Holderith et al., 2012; Nusser et al., 1997; Pulido et al., 2015). The inference about IPSC fluctuations (C124) is consistent with the stochastic release model (C51). The speculation about multiple release sites (C119, C123) is appropriately qualified and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "FS basket cells form synapses with perisomatic regions or proximal dendritic shafts and spines, with junction area matched to synaptic site (larger at soma than dendrites, larger at shafts than spines). Molecular cues including chemoattractants and protocadherin family adhesion molecules may mediate target recognition. Spines innervated by FS terminals receive thalamic but not cortical excitatory inputs, enabling efficient and selective veto of thalamic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 integrate structural observations with molecular mechanisms. The morphological data (C130-C131) are directly measured (C33-C35, C52-C54). The molecular mechanisms (C132, C134) are appropriately speculative and supported by citations (Yee et al., 1999; Meguro et al., 2015; Yagi, 2015). The input specificity (C133) is cited (Kubota et al., 2007), and the functional consequence (C135) logically follows.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The current data suggest refinements to existing computational models of dendritic inhibition. Previous models (Gidon and Segev, 2012) assumed uniform size and strength for inhibitory synapses at different locations, but the present data showing variation in synaptic size and strength from soma to spine could be incorporated. Quantitative 3D EM reconstructions provide an exact basis for assigning different weights to inhibitory synapses at different sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 appropriately contextualize the findings relative to prior modeling work. The description of the Gidon and Segev (2012) model assumption (C137) is accurate, and the suggestion for refinement (C138) is well-justified by the demonstrated size differences (C33-C35, C52-C54). The value of EM data for modeling (C139) is demonstrated by the simulations in this paper (C37-C43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Dendritic inhibition can effectively suppress local excitation through multiple mechanisms. Peak EPSC amplitude at proximal dendrites is estimated at 5.7 \u00b1 3.1 pA, while dendritic shaft IPSC amplitude is 2.4 pA. Summation of excitatory and inhibitory currents may reduce dendritic excitation and suppress calcium entry via NMDA receptors. GABAA receptor activation also reduces EPSP amplitude by shunting, making distal dendritic inhibition functionally strong. Synchronization of FS basket cell activity via gap junctions further counters summation of afferent EPSPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 integrate experimental measurements with mechanistic understanding. The EPSC estimate (C96) is cited from prior work (Morishima et al., 2011), the IPSC measurement (C97) comes from simulations, and the mechanisms (C98-C99) are supported by citations (Larkum et al., 2009; Hao et al., 2009; Gidon and Segev, 2012). The functional strength of distal inhibition (C101) is cited (Cossart et al., 2001; Gidon and Segev, 2012). The gap junction synchronization (C103) is appropriately cited (Gibson et al., 1999).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "CCS 'slender untufted' pyramidal cells are a discrete neuronal population in layer V of rat frontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 establishes the cell type studied, supported by citations to Larkman and Mason (1990) and Morishima and Kawaguchi (2006). This is well-established background information appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Inhibitory synapse properties are regulated by multiple factors including network function, activity state, experience, and genetics. The strength of hippocampal FS basket cell inhibition varies with target cell layer and is genetically coded. Cortical basket cell innervation patterns are regulated by experience, environment, and fear conditioning, while Martinotti cell synapse efficacy appears independent of target cell activity. Different cortical interneurons respond distinctly to network state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 provide context from literature on plasticity and regulation of inhibitory synapses. All claims are appropriately cited (Yoshimura et al., 2005; Lee et al., 2014; Donato et al., 2015; Donato et al., 2013; Xue et al., 2014). This represents appropriate discussion of how the findings relate to broader principles of inhibitory circuit regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Dendritic inhibition may play important roles in synaptic plasticity and input integration. Excitatory synapses on spines can be modulated by visual experience or somatosensory stimulation, and inhibitory spine synapses may be important for such plastic changes. Pyramidal cell spines show orientation tuning that doesn't cluster on branches, and dendritic shaft inhibition may specifically adjust activity by inhibiting inputs on the same but not different branches. Dendritic IPSCs exert strictly local effects, though small driving forces at distal sites would be increased by dendritic EPSPs, allowing IPSPs to reduce EPSP amplitude at soma even without somatic propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 discuss functional implications of dendritic inhibition for plasticity and computation. The plasticity of excitatory synapses (C86-C87) is cited (Chen et al., 2012; Knott et al., 2002), the importance for plastic changes (C88) is appropriately speculative with citation (Chen et al., 2012), spine tuning properties (C89) are cited (Chen et al., 2013), and branch-specific inhibition (C90) is supported by citations (Liu, 2004; Marlin and Carter, 2014). The local effects (C91) are demonstrated by simulations (C37-C39), and the physiological reasoning (C92-C94) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Interneuron axons project to distinct laminar and columnar zones, enabling target specificity through either zone-specific projection followed by nonspecific contacts, or preferential establishment of contacts with specific neuronal subtypes or domains. Target preference may depend on activity-dependent control of synaptic input size to maintain excitatory-inhibitory balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 discuss mechanisms of target specificity, all appropriately cited (Kubota, 2014; Fino and Yuste, 2011; Packer and Yuste, 2011; Packer et al., 2013; Jiang et al., 2013; Xue et al., 2014). This represents appropriate discussion of how the observed specificity (C130-C131) might arise mechanistically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The inhibitory synaptic machinery differs from excitatory synapses subject to plasticity and scaling functions. Defects in inhibitory microcircuits may contribute to depression and other neuronal diseases. The data provide novel insights into biophysical design principles for inhibitory synaptic operations in neural microcircuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 provide broader context and significance. The comparison to excitatory synapses (C140) is appropriately cited (Matsuzaki et al., 2004; Magee, 2000; Katz et al., 2009), the disease relevance (C141) is cited (Sauer et al., 2015), and the claim of novel insights (C142) is justified by the comprehensive characterization of size-dependent inhibitory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on inhibitory synapse diversity and prior knowledge gaps. Inhibitory interneurons target precise membrane regions (soma, axon initial segment, dendritic shafts, spines) producing IPSPs with different properties. Recent data suggests FS basket cell IPSCs may be matched to excitation levels and differ with target cell subtypes, are reduced in Disc1 mice (a depression model), and GABA receptors on spines control local excitation. However, modeling studies assume uniform size and strength for inhibitory synapses at different locations, contrasting with excitatory terminals that vary in size with strength correlated to terminal size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 establish the background and rationale for the study. All claims are appropriately cited from literature (Kisvarday et al., 1985; Kawaguchi and Kubota, 1998; Miles et al., 1996; Xue et al., 2014; Lee et al., 2014; Sauer et al., 2015; Chiu et al., 2013; Gidon and Segev, 2012; Holderith et al., 2012). This represents standard introduction material establishing the knowledge gap addressed by the study.",
+    "result_type": "MINOR"
+  }
+]

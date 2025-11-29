@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript provides background on E. coli SSB protein structure, function, and binding modes based on prior literature. SSB is a homotetrameric protein that binds ssDNA in multiple modes (SSB)65, (SSB)56, (SSB)35, and a fourth mode at 37\u00b0C, with transitions influenced by salt and protein density. Prior single-molecule studies showed SSB diffuses by reptation and that force gradually unravels ssDNA with a smooth energy landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C28) accurately summarize established knowledge from prior literature, supported by appropriate citations. The claims provide necessary context for the current study and correctly represent the state of the field, including the prior hypothesis of a smooth energy landscape (C28) that the current work contradicts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The experimental system uses a 70-nt poly(dT) ssDNA segment flanked by dsDNA handles, designed to accommodate one SSB tetramer in the (SSB)65 mode. Experiments were performed under conditions favoring (SSB)65 mode, and force-extension curves of bare DNA matched theoretical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe the experimental design and validation. The DNA construct design is clearly described and validated against polymer models (Figure 1\u2014figure supplement 1), and experimental conditions are justified by citations to prior work showing they favor (SSB)65 mode.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Force-ramp experiments show that SSB dissociates at forces >20 pN (average 10.3 \u00b1 0.9 pN), with a wrapping free energy of 22 \u00b1 2 kBT. At low tensions (<1 pN), 65 nt are wrapped, but beyond 1 pN, SSB wraps <65 nt. Single SSB loading and dissociation were confirmed by fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are well-supported by force-extension data (Figure 1) and fluorescence measurements (Figure 1\u2014figure supplement 3). The dissociation force and wrapping free energy are consistent with prior measurements (Zhou et al., 2011), providing validation. The observation that SSB wraps <65 nt at forces >1 pN is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Constant force experiments reveal that at low tensions (<3 pN), SSB binds in a single step and remains bound indefinitely. At 3-8 pN, SSB exhibits dynamic transitions among 2-3 distinct wrapping states without dissociation. Near 9-10 pN, SSB undergoes binding and dissociation events. The amount of wrapped ssDNA decreases with increasing tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are strongly supported by constant force data (Figure 2B,C) and fluorescence measurements (Figure 2\u2014figure supplement 1) confirming single SSB dynamics. The observation of discrete intermediate states is a key finding, directly demonstrated by extension change distributions showing multiple peaks at different forces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The intermediate wrapping states observed under force correspond to known SSB binding modes: (SSB)65, (SSB)56, (SSB)35, and a ~17 nt intermediate. Structural modeling suggests (SSB)56 has ssDNA bound to all four subunits with the 3' end unraveled, and multiple conformations are possible for (SSB)35 and the 17 nt intermediate. No long-lived intermediates <17 nt were observed before dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C58-C70 are supported by the structural modeling analysis (Figure 3, Figure 3\u2014figure supplements 1-2) that maps extension changes to numbers of wrapped nucleotides using polymer models and structural constraints. The proposed (SSB)56 structure is consistent with prior biochemical data (C61), and mutant SSB experiments (C101-C102, Figure 3\u2014figure supplement 3) provide validation. The modeling involves multiple levels of refinement using hotspot analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The experimental results are compatible with proposed (SSB)35 structures and reveal a likely wrapping configuration for (SSB)56 mode. Structural modeling utilized hotspot residues (Trp-54/His-55/Arg-56) identified from crystal structures, biochemical studies, and MD simulations. A Trp-54 to Ser mutant showed reduced wrapping, favoring 35 nt, validating the structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C101-C106 are supported by the structural modeling (Figure 3, Figure 3\u2014figure supplements) and mutant validation (Figure 3\u2014figure supplement 3). The hotspot identification integrates multiple lines of evidence (crystal structure, biochemistry, MD simulations), and the mutant data provide independent validation of the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Analysis of transitions between wrapping states shows 98% occur between adjacent states, suggesting a linear kinetic pathway for wrapping/unwrapping. This pathway is corroborated by RecA competition experiments, where RecA removes SSB in discrete steps following the pathway (SSB)35 \u2192 (SSB)17 \u2192 unbound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are well-supported by quantitative analysis of transition data (373/380 transitions between adjacent states) and RecA competition experiments (Figure 5). The RecA data provide independent validation of the proposed pathway, showing discrete unwrapping steps matching the force-induced intermediates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "SSB exhibits reversible force-induced transitions between modes and can diffuse along ssDNA in different wrapping modes via a sliding/reptation mechanism. Diffusion is faster in (SSB)35 mode (~27 nt\u00b2/s) than (SSB)56 mode (~15 nt\u00b2/s), consistent with smaller site size leading to faster diffusion. No evidence for a rolling mechanism was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C87-C93, C97-C100 are supported by combined FRET and force measurements (Figure 4) showing SSB diffusion without unwrapping/rewrapping. The diffusion constants are estimated from FRET lifetimes and are consistent with prior reports when accounting for temperature and tension (C99). The absence of rolling transitions (0/82 events) provides strong negative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The energy landscape for SSB-ssDNA interactions contains multiple barriers between discrete wrapping conformations, contradicting prior suggestions of a smooth landscape. The wrapping free energy (21 \u00b1 1 kBT) is unbalanced: 73% is concentrated in the first 35 nt (0.44 \u00b1 0.02 kBT/nt), while (SSB)65 and (SSB)56 are separated by only ~0.7 kBT (~0.07 kBT/nt). This unbalanced profile may facilitate SSB displacement by RecA, which requires 6-17 nt to polymerize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C35-C37, C78-C86 are supported by energy landscape analysis (Figure 6) derived from wrapping probabilities and transition rates. The total wrapping energy (21 \u00b1 1 kBT) agrees excellently with the FEC-derived value (22 \u00b1 2 kBT), validating the analysis. The unbalanced energy density is a key finding, and the connection to RecA displacement is supported by observation that RecA filaments form only after SSB transitions to (SSB)35 mode (C86, Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that RecA polymerization likely slides SSB to a junction before unraveling it, and suggest that different SSB wrapping modes may be used selectively in different DNA processes. They propose that force control of SSB wrapping mode may be a useful experimental tool to test this hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C94-C96 are speculative proposals about mechanisms and future applications. While C89 is supported by citations and consistent with the RecA competition data, it remains a hypothesis. Claims C94-C96 acknowledge that how different modes are used in vivo remains unclear and propose future work. These are reasonable speculations but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  }
+]

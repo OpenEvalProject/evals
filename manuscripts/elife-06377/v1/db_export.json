@@ -1,0 +1,2067 @@
+{
+  "submission": {
+    "id": "48c105c6-dd43-4b79-bcca-0d92694e0c72",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:46:48.957775Z",
+    "updated_at": "2025-11-29T03:46:48.957775Z"
+  },
+  "content": [
+    {
+      "id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "submission_id": "48c105c6-dd43-4b79-bcca-0d92694e0c72",
+      "content_type": "manuscript",
+      "content_text": "# The transcriptional cofactor TRIM33 prevents apoptosis in B lymphoblastic leukemia by deactivating a single enhancer\n\n## Authors\n\n- Eric Wang<sup>1</sup>\n- Shinpei Kawaoka<sup>1</sup>\n- Jae-Seok Roe<sup>1</sup>\n- Junwei Shi<sup>1</sup>\n- Anja F Hohmann<sup>1</sup>\n- Yali Xu<sup>1</sup>\n- Anand S Bhagwat<sup>1</sup>\n- Yutaka Suzuki<sup>4</sup>\n- Justin B Kinney<sup>1</sup>\n- Christopher R Vakoc<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Cold Spring Harbor Laboratory New York United States\n2. Molecular and Cellular Biology Program Stony Brook University New York United States\n3. Medical Scientist Training Program Stony Brook University New York United States\n4. Department of Medical Genome Sciences University of Tokyo Kashiwa Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost mammalian transcription factors (TFs) and cofactors occupy thousands of genomic sites and modulate the expression of large gene networks to implement their biological functions. In this study, we describe an exception to this paradigm. TRIM33 is identified here as a lineage dependency in B cell neoplasms and is shown to perform this essential function by associating with a single cis element. ChIP-seq analysis of TRIM33 in murine B cell leukemia revealed a preferential association with two lineage-specific enhancers that harbor an exceptional density of motifs recognized by the PU.1 TF. TRIM33 is recruited to these elements by PU.1, yet acts to antagonize PU.1 function. One of the PU.1/TRIM33 co-occupied enhancers is upstream of the pro-apoptotic gene Bim, and deleting this enhancer renders TRIM33 dispensable for leukemia cell survival. These findings reveal an essential role for TRIM33 in preventing apoptosis in B lymphoblastic leukemia by interfering with enhancer-mediated Bim activation.\n\n## Introduction\n\nDNA-binding transcription factors (TFs) typically recognize short 6\u201312 base-pair motifs, which exist at a high frequency in mammalian genomes (Wunderlich and Mirny, 2009; Spitz and Furlong, 2012). While chromatin restricts the accessibility of these sequences, TFs nonetheless occupy thousands of genomic sites in any given cell type (Spitz and Furlong, 2012). As examples, MyoD has been detected at \u223c39,000 sites in primary myotubes and Pax5 at \u223c20,000 sites in B cell progenitors (Cao et al., 2010; Revilla et al., 2012). Furthermore, transcriptional cofactors (coactivators and corepressors) are also known to occupy the mammalian genome in a generalized manner (Ram et al., 2011). Thus, strong support exists for a model in mammalian cells in which transcriptional control is performed by regulators that exert broad, yet highly coordinated effects on gene expression (Wunderlich and Mirny, 2009; Spitz and Furlong, 2012). This is in stark contrast to prokaryotic species, in which TFs can occupy as few as one or two sites in an entire genome to implement precise transcriptional responses (Mart\u00ednez-Antonio and Collado-Vides, 2003; Wunderlich and Mirny, 2009). Whether such a degree of gene-specificity exists among mammalian transcriptional regulators is currently unknown.\n\nTRIM33, also known as TIF1\u03b3, belongs to the tripartite motif (TRIM)-containing protein family of E3 ubiquitin ligases (Venturini et al., 1999; Hatakeyama, 2011; Herquel et al., 2011). TRIM33 and its homologs TRIM24 and TRIM28 belong to a subfamily of ubiquitously expressed TRIM proteins that contain a tandem plant homeodomain (PHD) and bromodomain module and function as transcriptional cofactors (Venturini et al., 1999). One role of TRIM33 is in the TGF\u03b2 signaling pathway, which occurs through regulation of SMAD4 mono-ubiquitination and/or by functioning as a cofactor for the TFs SMAD2 and SMAD3 (Dupont et al., 2005, 2009; He et al., 2006; Agricola et al., 2011). TRIM33 is also known to interact with the TF SCL/TAL1 to promote transcription elongation of erythroid-specific genes, which may occur through the recruitment of FACT and P-TEFb complexes (Bai et al., 2010, 2013). However, another study suggests that TRIM33 can form repressive complexes with SCL to block transcriptional activation (Kusy et al., 2011). The PHD-bromodomain module of TRIM33 interacts with covalently modified histone tails, which can further stabilize TRIM33 chromatin occupancy and stimulate its E3 ligase activity (Tsai et al., 2010; Agricola et al., 2011; Xi et al., 2011). While several studies have linked TRIM33 to transcriptional control, a genomewide assessment of TRIM33 occupancy has yet to be performed to define the scope of its regulatory function.\n\n## Results\n\n### RNAi screen identifies TRIM33 as a lineage dependency in cancers of B cell origin\n\nIn an ongoing effort to identify roles for chromatin regulators as cancer dependencies, we carried out a negative selection RNAi screen in a cell line derived from a mouse model of high risk B cell acute lymphoblastic leukemia (B-ALL), initiated by introducing the BCR-ABL oncogene into Arf-null bone marrow cells (Williams et al., 2006). 1,126 shRNAs targeting 259 chromatin regulators were assessed individually for effects on the viability of B-ALL cells in culture, which led to the identification of 16 dependencies after applying stringent scoring criteria (Figure 1A and Figure 1\u2014figure supplement 1). The majority of these factors had been identified in a prior screen that evaluated the requirement of chromatin regulators in MLL-AF9/NrasG12D acute myeloid leukemia (AML) (Zuber et al., 2011b), however TRIM33 was identified here as a unique requirement in B-ALL. The six TRIM33 shRNAs used in the screen exhibited a close correlation between knockdown efficiency and loss of B-ALL viability, suggesting on-target effects (Figure 1A,B). Furthermore, a v-Abl transformed B cell progenitor line, 38B9 (Alt et al., 1984), and several human B cell cancer lines were also sensitive to TRIM33 knockdown (Figure 1C and Figure 1\u2014figure supplement 1). In contrast, TRIM33 knockdown led to negligible effects on the viability of MLL-AF9/NrasG12D AML and Notch-mutant T-cell acute lymphoblastic leukemia (T-ALL) (Figure 1D,E). Upon knockdown of TRIM33, B-ALL cells underwent apoptosis, as shown by Annexin V/DAPI staining (Figure 1F). Taken together, these observations suggest that TRIM33 is essential for the survival of neoplastic B cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig1-v1.jpg)\n\n**Figure 1.:** (A) Negative selection shRNA screen targeting chromatin regulators in murine B cell acute lymphoblastic leukemia (B-ALL). shRNAs are rank ordered by the fold-change in GFP positivity over 10 days in culture, which represents a competition-based assay in which loss of GFP positivity reflects shRNA-postive cells becoming outcompeted by shRNA-negative cells. (B\u2013E) Competition-based assays and Western blotting to evaluate the effect of TRIM33 shRNAs on B-ALL, 38B9, acute myeloid leukemia (AML), or T-cell acute lymphoblastic leukemia (T-ALL) cells. GFP percentages are normalized to day 2 measurements. Results are the average of three biological replicates. (F) Annexin V/DAPI staining following transduction of B-ALL cells with the indicated MLS shRNAs on day 3 post-transduction. Representative experiment of three biological replicates is shown. (G) shRNA transgenic mouse strategy. TRE: tet(doxycycline) response element; rtTA-M2: reverse tet transactivator M2 variant (tet-on). (H) Western blotting performed of indicated tissue lysates prepared from mice treated with dox for 4 weeks. Representative experiment of three biological replicates is shown. (I\u2013J) Flow cytometry analysis using the indicated antibody stainings of whole bone marrow or spleen. B220 and Cd19: B lymphoid, Ter119: erythroid, Gr1 and Mac1: myeloid, Cd3: T lymphoid. Gating was performed on GFP+/shRNA+ cells prior to quantifying marker positivity. The GFP+ percentage in bone marrow was \u223c75% and in the spleen was \u223c15%. Mice were administered dox for 1 week or 4 weeks, with both timepoints giving similar results. Results shown are the average 4 or 5 mice. All error bars in this figure represent S.E.M.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) B-ALL chromatin regulator dependencies identified in the shRNA screen. 68 shRNAs in the primary screen were depleted >10-fold over 10 days in culture. By setting a criteria of having at least 2 independent shRNAs targeting the same gene exhibiting >10-fold GFP depletion, we identified 16 dependencies, indicated here. An Rpa3 shRNA was included as a positive control. A Renilla luciferase shRNA was included as a negative control. Each horizontal bar represents an independent shRNA, except for Rpa3 and Renilla controls which are independent experiments with the same shRNA. Fold-depletion was capped at 50-fold for visualization purposes. Results were compared with prior screening results and validation experiments performed in MLL-AF9/NrasG12D AML to identify TRIM33 was a unique dependency in B-ALL (Zuber et al., 2011b). (B\u2013E) Competition-based proliferation assays using the indicated TRIM33 or Ren shRNA expressing MLS-E vectors, which were transduced into the indicated human cell lines. All experiments shown represent the average of three biological replicates. Error bars represent S.E.M.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Immunohistochemical analysis of anti-TRIM33 antibody staining shTRIM33 or shRen adult mice (heterozygous) following 30 days of doxycycline administration. All mice were homozygous for the ROSA26-rtTA-M2 transgene. Counterstaining was performed with Hematoxylin. (B) Hematoxylin and Eosin staining of indicated tissues. (C and D) Analysis of the reversibility of the B cell phenotype in TRIM33 knockdown mice as compared to Renilla shRNA control. Mice were treated for 7 days ON dox or were treated with 7 days ON dox followed by 21 days OFF dox, as indicated. GFP gating was not performed for this analysis, since in the OFF dox condition the GFP reporter is extinguished. n = 4 or 5. (E) Animal weight measurements following dox administration. Error bars represent S.E.M.\n\nTo compare the TRIM33 requirement in B-ALL with its role in normal tissues, we derived transgenic mice in which a TRIM33 shRNA was expressed from a doxycycline (dox)-regulated promoter (Figure 1G) (Premsrirut et al., 2011). When crossed with mice that express rtTA-M2 from the ROSA26 promoter, animals exhibited dox-dependent suppression of TRIM33 in multiple tissues (Figure 1G,H and Figure 1\u2014figure supplement 2). Flow cytometry analysis of the bone marrow and spleen following 1 or 4 weeks of dox administration revealed a selective loss of CD19+ and B220+ B lymphoid cells in TRIM33-deficient animals, while erythroid, myeloid, and T lymphoid populations remained intact or even increased in relative abundance (Figures 1I,J). Taking advantage of the reversibility of the dox-regulated shRNA system, we found that B cell production recovered fully in TRIM33-deficient mice upon restoring TRIM33 expression (Figure 1\u2014figure supplement 2). Notably, TRIM33 knockdown led to negligible effects on the histological appearance of colon, liver, thymus, and pancreatic tissues and led to no significant changes in animal weight (Figure 1\u2014figure supplement 2). Collectively, these findings suggest that B lymphoid cells are uniquely sensitive to TRIM33 inhibition, thus implicating TRIM33 as a lineage dependency in cancers of B cell origin. These results are in agreement with the prior characterization of Trim33\u2212/\u2212 mice, which were found to exhibit a B lymphocyte deficiency and an expansion of myeloid cells (Aucagne et al., 2011; Kusy et al., 2011; Bai et al., 2013).\n\n### TRIM33 preferentially associates with two lineage-specific enhancers in B lymphoblastic leukemia cells\n\nWe next evaluated the mechanism underlying the essential TRIM33 function in B cell neoplasms. To this end, we performed RNA-seq analysis in B-ALL cells following 3 or 4 days of TRIM33 knockdown. This analysis revealed a distribution of gene expression changes, however, we noted that Bim and Atp1b3 were the two most upregulated genes upon TRIM33 depletion (Figure 2A). To evaluate whether any of these mRNA changes were due to direct regulation, we performed ChIP-seq analysis in B-ALL cells to evaluate the genomic localization of TRIM33 and various histone modifications that annotate active promoter and enhancer regions. Remarkably, the two strongest sites of TRIM33 enrichment in B-ALL were located 117 kb upstream of Bim (in an intron of a non-expressed gene Acoxl) and at a site 35 kb upstream of Atp1b (Figure 2B\u2013D). The other gene expression changes incurred upon TRIM33 knockdown did not correlate with its genomic occupancy (data not shown), suggesting they might be an indirect effect of B-ALL cells initiating an apoptotic response. The TRIM33-occupied regions upstream of Bim and Atp1b3 were enriched for H3K27 acetylation but not for H3K4 tri-methylation, suggesting that these elements are active enhancers (Rada-Iglesias et al., 2011) (Figure 2C,D). We also observed TRIM33 occupancy at these same two regions in 38B9, AML, and in whole spleen, but not in T-ALL (Figure 2\u2014figure supplements 1, 2). A striking attribute of the genomewide pattern of TRIM33 occupancy was its strong bias for a small number of locations, with lower levels of enrichment at other sites across the genome (Figure 2E,F, and Figure 2\u2014figure supplements 3, 4). This analysis suggests that TRIM33 is concentrated at a small number of sites in the B-ALL genome, with two of these regions correlating with a repressive effect on the expression of nearby Atp1b3 and Bim genes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig2-v1.jpg)\n\n**Figure 2.:** (A) RNA-seq analysis of B-ALL cells transduced with shTRIM33.1271. shRNA+/GFP+ cells were sorted on day 3 or 4 post-infection. Plotted is the average fold-change in mRNA level of two independent biological replicates. (B) Ranking of TRIM33 occupied sites based on average tag counts obtained from B-ALL ChIP-seq analysis. The 31 regions shown represent the significant reproducible peaks identified in two independent biological replicates. (C\u2013F) B-ALL ChIP-seq occupancy profiles using the indicated antibodies. The y-axis reflects the number of cumulative tag counts in the vicinity of each region. Validated transcript models from the mm9 genome assembly are depicted below.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Validated transcript models from the mm9 genome assembly are depicted below.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) ChIP-qPCR validation of TRIM33 occupancy at the Bim or Atp1b3 loci in the indicated cell lines. qPCR amplicons were designed at the indicated locations of the Bim or Atp1b3 loci. Labels refer to kilobase distance relative to Bim or Atp1b3 transcriptional start site (TSS). Plotted is the average of three biological replicates. Error bars denote S.E.M.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig2-figsupp3-v1.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Ranking of TRIM33 occupied sites based on average tag counts obtained from ChIP-seq analysis in the indicated cell lines. The regions shown represent the reproducible peaks identified in each of two independent biological replicates. The Bim-117 and Atp1b3-35 regions are as indicated in 38B9 and AML. In T-ALL we did not identify these regions as robust peaks and instead we labeled the top two outlier TRIM33 peaks in this cell type. (B) MEME-based motif analysis at 400 bp windows centered on TRIM33 occupied peaks shown in A. The distribution of motifs in this window is indicated on the right.\n\n### TRIM33 preferentially associates with enhancers harboring an exceptional density of the PU.1 TF\n\nWe next pursued the mechanism underlying the profound accumulation of TRIM33 at the Bim \u2013117 and Atp1b3 \u201335 regions in B-ALL. Using the FIMO motif analysis tool (Grant et al., 2011), we found that both of these regions possessed a high density of sequence motifs recognized by PU.1 (17 instances at Bim \u2013117 and 14 instances at Atp1b3 \u201335), which is an essential hematopoietic TF expressed in B lymphoid and myeloid lineages (Scott et al., 1994). In contrast, we observed a much lower density of motifs for other TFs involved in B cell specific transcriptional regulation (E2A, EBF1, or PAX5) (Figure 3A,B). Since TRIM33 has been shown previously to interact with PU.1 (Kusy et al., 2011), we investigated whether PU.1 promotes TRIM33 recruitment to these regions. ChIP-seq analysis of PU.1 in B-ALL confirmed its association with Bim \u2013117 and Atp1b3 \u201335, as well as with more than 2600 other genomic sites (Figure 2C,D and Figure 3\u2014figure supplement 1). Remarkably, Bim \u2013117 and Atp1b3 \u201335 regions are outliers when compared to other PU.1-occupied sites with regard to the overall density of PU.1 recognition motifs and the overall level of PU.1 enrichment (Figure 3C and Figure 3\u2014figure supplement 1). The level of the active enhancer chromatin mark, H3K27ac, is not skewed in a similar manner towards these two locations, indicating that these regions are not super-enhancers that exhibit high levels of all regulators (Figure 3\u2014figure supplement 1) (Hnisz et al., 2013). Using ChIP-qPCR, we also confirmed PU.1 occupancy at these two regions in 38B9 and AML cells, but not in T-ALL (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig3-v1.jpg)\n\n**Figure 3.:** (A) Motif analysis using the FIMO/MEME algorithm. The table indicates the number of motif matches in each sequence interval. (B) Schematic diagram of PU.1 motif (MA0080.3) locations across the indicated cis elements. (C) Analysis of PU.1 motifs (MA0080.3) counts at all of the 2682 PU.1 peaks identified by ChIP-seq. (D\u2013I) ChIP-qPCR analysis at the indicated locations of the Bim locus in B-ALL. Labels refer to the kilobase distance relative to the Bim TSS. For TRIM33 knockdown experiments (G\u2013I), both shRen and shTRIM33 were introduced into B-ALL cells harboring a Bim shRNA. Plotted is the average of three biological replicates. (J) Competition-based assay evaluating effect of a PU.1 shRNA on the sensitivity of B-ALL cells to TRIM33 knockdown. shRen or shPU1 linked to GFP were introduced first into B-ALL cells and then were subsequently transduced with shTRIM33 or shRen linked to mCherry. The GFP/mCherry double positive population was measured over time. Results are normalized to day 2 measurements. Plotted is the average of three biological replicates. All error bars in this figure represent S.E.M.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Peaks were ranked based on sequence tag counts. Positions of Bim-117 and Atp1b3-35 are indicated.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Labels refer to kilobase distance relative to TSS. Plotted is the average of three biological replicates. Error bars denote S.E.M.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Validation of Pu.1 shRNA by Western blotting. Experiment was performed in MLP-GFP transduced B-ALL cells following puromycin selection. (B\u2013C) Effect of PU.1 knockdown on TRIM33 occupancy at Atp1b3. ChIP-qPCR analysis at the indicated locations of the Atp1b3 locus in B-ALL. Labels refer to kilobase distance relative to Atp1b3 TSS. Plotted is the average of three biological replicates. Error bars denote S.E.M. (D) Effect of PU.1 knockdown on Bim expression. RNA was prepared from B-ALL cells transduced with indicated shRNAs and used for reverse transcription. Plotted is the average of three biological replicates. Results were normalized to Gapdh.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** shRen or shPU1 linked to GFP were introduced first into B-ALL cells and then were subsequently transduced with shTRIM33 or shRen. The GFP/mCherry double positive population was measured over time. Results are normalized to day 2 measurements. Plotted is the average of three biological replicates. All error bars in this figure represent S.E.M.\n\nThese findings raised the possibility that an exceptional density of PU.1 at these two sites might serve as the trigger for TRIM33 recruitment. To evaluate this, we used shRNAs to derive PU.1-deficient B-ALL cells, which displayed normal proliferation and viability (Figure 3\u2014figure supplement 3, data not shown). We found that PU.1 knockdown led to a significant loss of TRIM33 occupancy at Bim and Atp1b3 in proportion to the loss of PU.1 (Figure 3D,E, and Figure 3\u2014figure supplement 3). PU.1-deficient B-ALL cells also harbored reduced H3K27ac at Bim \u2013117 and reduced Bim mRNA levels, suggesting that PU.1 is responsible for maintaining this enhancer in an active state while, paradoxically, also facilitating TRIM33 recruitment (Figure 3F and Figure 3\u2014figure supplement 3). Collectively, these results suggest that a high density of PU.1 underlies the skewed distribution of TRIM33 genomic occupancy observed in B-ALL.\n\n### TRIM33 antagonizes PU.1 function to promote B-ALL cell survival\n\nSince PU.1 and TRIM33 appear to have opposing effects on Bim expression (Figure 2A and Figure 3\u2014figure supplement 3), we next evaluated how TRIM33 regulates the function of PU.1 at their co-occupied sites. Interestingly, knockdown of TRIM33 led to an increase in PU.1 occupancy and H3K27 acetylation at Bim \u2013117, suggesting that TRIM33 antagonizes PU.1 binding to DNA and suppresses enhancer activity, consistent with prior findings (Kusy et al., 2011) (Figure 3G\u2013I). This result is significant, since Bim \u2013117 is already heavily enriched for PU.1 in B-ALL cells, but PU.1 occupancy becomes even greater when TRIM33 is suppressed. Consistent with the functional importance of PU.1 antagonism by TRIM33, we found that knockdown of PU.1 resulted in a reduced sensitivity of B-ALL and 38B9 cells to the lethal effects of TRIM33 knockdown (Figure 3J and Figure 3\u2014figure supplement 4). Collectively, these observations suggest that TRIM33 antagonizes PU.1-dependent enhancer activation as part of its essential function in B lymphoblastic leukemia.\n\n### TRIM33 occupancy at a single Bim enhancer accounts for its essential function in B-ALL\n\nBim encodes a BH3-only domain protein with a well-established pro-apoptotic function (Willis and Adams, 2005). Therefore, we considered whether repression of Bim is the essential role of TRIM33 in B-ALL. For this purpose we suppressed Bim using shRNAs and evaluated how this influenced the sensitivity of cells to TRIM33 knockdown (Figure 4A,B). Notably, Bim-deficient B-ALL cells were completely resistant to the apoptotic effects of TRIM33 shRNAs, indicating that Bim is the critical downstream repression target of TRIM33 to maintain cell viability (Figure 4B). In contrast, Atp1b3 knockdown did not alter the sensitivity of B-ALL to TRIM33 suppression (data not shown). To further evaluate whether the essential function of TRIM33 is due to its occupancy at the \u2212117 region, we employed CRISPR-Cas9 to delete this element (Cong et al., 2013; Mali et al., 2013) (Figure 4C,D). Similar to the effects observed upon Bim knockdown, three independent B-ALL clones harboring a homozygous deletion of the \u2212117 element did not require TRIM33 for viability (Figure 4E). Bim knockdown and the deletion of the Bim \u2013117 region also rendered 38B9 cells resistant to the lethal effects of TRIM33 suppression (Figure 4\u2014figure supplement 1). This indicates that a single genomic binding site at the Bim locus accounts for the entire TRIM33 requirement in preventing B-ALL apoptosis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig4-v1.jpg)\n\n**Figure 4.:** (A) Western blot performed on extracts prepared from B-ALL following transduction with the indicated shRNAs. Labeled are two of the known Bim isoforms. TRIM33.3905 shRNA was used. (B) Competition-based assay evaluating the effect of Bim knockdown on the sensitivity of B-ALL cells to TRIM33 knockdown. shRen or shBim linked to GFP were introduced first into B-ALL cells and then were subsequently transduced with shTRIM33 or shRen linked to mCherry. The GFP/mCherry double positive population was measured over time. Results are normalized to day 2 measurements. Plotted is the average of three biological replicates. (C) Experimental design for generating a homozygous deletion of the Bim \u2013117 region using CRISPR-Cas9. sgRNAs were designed to cut at locations flanking the TRIM33 binding site to delete the intervening 1.4 kb. Location of PCR primers used for genotyping are indicated. (D) Genotyping PCR to track the CRISPR-based deletion. Parental refers to Cas9+ B-ALL cells. +sgRNAs refers to Cas9+ B-ALL cells co-transduced with two sgRNAs targeting the Bim \u2013117 element linked to mCherry reporters. Three clonal lines were derived by limiting dilution. (E) Competition-based assay evaluating the effect of the Bim \u2013117 deletion on the sensitivity to TRIM33 knockdown. B-ALL cells were transduced with indicated shRNAs linked to GFP reporters. TRIM33.3905 shRNA was used. Results are normalized to day 2 measurements. Plotted is the average of three biological replicates. All error bars in this figure represent S.E.M.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Competition-based assay evaluating the effect of Bim knockdown on the sensitivity of 38B9 cells to TRIM33 knockdown. shRen or shBim linked to GFP were introduced first into 38B9 cells and then were subsequently transduced with shTRIM33 or shRen linked to mCherry. The GFP/mCherry double positive population was measured over time. Results are normalized to day 2 measurements. Plotted is the average of three biological replicates. (B) Genotyping PCR to track the CRISPR-based deletion, as described in Figure 4D. Parental refers to Cas9+ 38B9 cells. +sgRNAs refers to Cas9+ 38B9 cells co-transduced with two sgRNAs targeting the Bim-117 element linked to mCherry reporters. Three clonal lines were derived by limiting dilution. (C) Competition-based assay evaluating the effect of the Bim-117 deletion on the sensitivity to TRIM33 knockdown. 38B9 cells were transduced with indicated shRNAs linked to GFP reporters. TRIM33.3905 shRNA was used. Results are normalized to day 2 measurements. Plotted is the average of three biological replicates. All error bars in this figure represent S.E.M.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06377/elife-06377-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) RT-qPCR analysis of Bim mRNA levels following TRIM33 shRNA transduction into the indicated cell lines. Plotted is the average of three biological replicates. Results were normalized to Gapdh. (B) ChIP-seq occupancy profile of H3K27 acetylation in the indicated cell lines. Arrows indicate the location of the Bim-117 and -66 regions (see text). The H3K27ac ChIP-seq data from AML was derived from (Shi et al., 2013).\n\nWhile both B lymphoid and myeloid leukemia cells harbor PU.1 and TRIM33 at the Bim \u2013117 region, it is important to note that knockdown of TRIM33 in AML does not result in apoptosis or Bim upregulation (Figure 1D and Figure 4\u2014figure supplement 2). ChIP-seq analysis of H3K27ac revealed that AML cells possess a large cluster of active enhancers located 66 kb upstream of Bim, which is not observed in B-ALL (Figure 4\u2014figure supplement 2). Importantly, the level of H3K27ac at this AML-specific enhancer cluster is much greater than that observed at the \u2212117 region. This leads us to speculate that the AML-specific enhancers at the \u221266 kb region might be the dominant regulatory elements at the Bim locus in this cell type. The overall strength of these enhancers in AML may diminish the functional significance of the \u2212117 element, thereby rendering TRIM33 dispensable for AML survival.\n\n## Discussion\n\nHere we provide evidence that TRIM33 prevents apoptosis in murine B-ALL cells by blocking enhancer-mediated Bim activation. The role of TRIM33 as a negative regulator of enhancer activity is reminiscent of LSD1, a histone demethylase that has been shown previously to suppress active enhancers during embryonic stem (ES) cell differentiation (Whyte et al., 2012). However, a key distinction we make here is that LSD1 suppresses thousands of enhancers in ES cells, while TRIM33 preferentially accumulates at a small number of regulatory elements in the B-ALL genome. We trace this unusual enhancer selectivity of TRIM33 in B-ALL to the density of PU.1, a TF which has been shown previously to associate with TRIM33 (Kusy et al., 2011). This binding interaction is likely to be cooperative on motif-rich DNA elements, which would account for the biased accumulation of TRIM33 at enhancers harboring an exceptional PU.1 density. Our ChIP-seq analysis of TRIM33 in myeloid, B lymphoid, and T lymphoid leukemias suggests that other TFs are also likely to recruit TRIM33, such as TCF3/E2A (Figure 2\u2014figure supplement 4). To our knowledge, TRIM33 is the first example of a mammalian transcriptional regulator that performs an essential function through a single genomic binding site.\n\nThe selective occupancy of TRIM33 within the active enhancer landscape may account for the minimal phenotypes observed in TRIM33-deficient mice. This is in contrast to the effects of suppressing BRD4, a more general cofactor that is essential for the maintenance of many cancer types and for the homeostasis of several normal tissues (Bolden et al., 2014; Shi and Vakoc, 2014). Remarkably, it is the localization of TRIM33 to one lineage-specific enhancer upstream of Bim that renders B-ALL cells hypersensitive to loss of TRIM33. The similar sensitivity of normal and transformed B cells to TRIM33 inhibition implies that the regulatory mechanisms defined here in B cell leukemia are likely to have evolved to control normal B cell development. Interestingly, Bim is upregulated as a means to eliminate auto-reactive B cells and to prevent autoimmune disease, suggesting a rationale for precise modulation of enhancer activity at the Bim locus by TRIM33 to regulate adaptive immunity (Bouillet et al., 1999; Enders et al., 2003).\n\nIn humans, a reversible depletion of normal B cells is a well-tolerated side effect of the anti-CD20 antibody rituximab, which is an efficacious therapy in mature B cell neoplasms and in autoimmune disease (Coiffier et al., 2002; Edwards et al., 2004). Hence, our findings also implicate TRIM33 as a promising therapeutic target, since one of the major phenotypic abnormalities in mice experiencing systemic TRIM33 inhibition is a selective and reversible B lymphocyte deficiency. Targeting of TRIM33 is particularly attractive since other bromodomain modules (e.g., BRD4) have proven to be amenable to direct chemical inhibition (Prinjha et al., 2012). However, we observe a modest expansion of myeloid cells upon short durations of TRIM33 suppression in vivo and Trim33\u2212/\u2212 mice have been shown to develop chronic myelomonocytic leukemia (Aucagne et al., 2011). Thus, long-term inhibition of TRIM33 might have pro-tumorigenic effects in certain tissues. Nonetheless, our findings justify consideration of TRIM33-inhibition as a therapeutic approach in B cell neoplasms, which would be expected to unleash an apoptosis-promoting enhancer element.\n\n## Materials and methods\n\n### Plasmids\n\nFor competition-based assays in murine cells, the LMN-GFP or LMN-mCherry shRNA retroviral vector were used (MSCV-miR30-shRNA-PGKp-NeoR-IRES-GFP/mCherry). When drug selection was required, some experiments were performed using MLP-GFP (MSCV-miR30-shRNA-PGKp-PuroR-IRES-GFP). For Annexin V experiments, the MLS vector was used (MSCV-miR30-shRNA-SV40p-GFP) to obtain a higher infection efficiency. For competition assays in human cell lines, the MLS-E vector was used (MSCV-miRE-shRNA-SV40p-GFP) (Fellmann et al., 2013). All of the cloning procedures were performed using the In-Fusion cloning system (#638909; Clontech, Mountain View, CA).\n\n### Cell culture and virus production\n\nMurine B-ALL (driven by BCR-ABL and p19Arf inactivation) (Williams et al., 2006) and 38B9 (Alt et al., 1984) were cultured in RPMI supplemented with 10% fetal bovine serum (FBS), 1% penicillin/streptomycin, and 0.055 mM 2-Mercaptoethanol. Derivation of MLL-AF9/NrasG12D AML cells is described in Zuber et al. (2011a). The T-ALL cell line was provided by I Aifantis (NYU) and was derived from TAL transgenic/HEB heterozygous mice with an acquired truncation of Notch1. Murine AML and T-ALL cells and human REH, SU-DHL, MM1S, and JURKAT cell lines were cultured in RPMI/10% FBS/1% penicillin/streptomycin.\n\nThe retroviral and lentiviral packaging cells Ecotropic Plat-E cells (Morita et al., 2000) and HEK293T cells were cultured in DMEM supplemented with 10% FBS and 1% penicillin/streptomycin. All retroviral packaging was performed according to established protocols (Morita et al., 2000). Virus was collected 48\u201372 hr post-transfection.\n\n### Negative selection RNAi screen\n\nA previously described LMN shRNA library targeting chromatin regulatory proteins was used (Zuber et al., 2011b). Additional shRNAs were included in the library to allow comprehensive targeting of all bromodomain-containing proteins. shRNA plasmids from this library were arrayed individually in 96 well plates at 50 ng/\u00b5l for retrovirus preparation using Ecotropic Plat-E cells as described (Morita et al., 2000). Viral transduction of B-ALL cells was also performed in 96 well plates, followed by flow-cytometry-based measurement of GFP positivity using a Guava Easycyte instrument (Millipore, Billerica, MA). Measurements were performed on day 2 and day 12 post-transduction. Renilla and Rpa3 control shRNAs were included with each 96 well plate as negative and positive controls, respectively. If an shRNA was introduced into B-ALL cells with a day 2 GFP percentage below 5%, this sample was discarded from the screen. The lower limit on GFP% measurements on day 12 was arbitrarily set at 0.2%. A single instance of Renilla and Rpa3 control shRNAs are included in the screen histogram shown in Figure 1A. The screen data can be found in Supplementary file 1.\n\n### Competition assay to measure cellular effects of shRNA\n\nTo evaluate the effect of shRNAs on murine cell proliferation (e.g., in Figure 1A\u2013E), cultures were retrovirally transduced with the indicated LMN-GFP shRNA vectors, followed by measurement of the GFP percentages over a time course post-infection using a Guava Easycyte flow cytometer. For double shRNA competition-based assays (e.g., Figures 3J, 4B), cells were first transduced with MLP-GFP (Ren, Bim, or PU.1 shRNA) and then were selected with puromycin (1 \u03bcg/ml). Cells were subsequently transduced with LMN-mCherry (Ren or TRIM33 shRNAs) and double GFP/mCherry positivity was tracked using a BD LSR2 flow cytometer. For human competition assays in Figure 1\u2014figure supplement 1, the MLS-E vector was used and GFP was tracked using a Guava Easycyte instrument. shRNA sequences can be found in Supplementary file 2.\n\n### Annexin V staining for cell death analysis\n\nIn order to quantify the cell death effect induced by Renilla or TRIM33 shRNAs, B-ALL cells were transduced at a high efficiency (>95% GFP) using the MLS-GFP vector. After 3 days post-infection, cells were spun down, washed with PBS and resuspended in 1\u00d7 binding buffer and incubated with APC Annexin V antibody (as described by manufacturer protocol, #550475; BD Pharmingen, San Diego, CA) and DAPI, followed by BD LSRII flow cytometry analysis. GFP gating was not performed. The three independent TRIM33 shRNAs revealed similar results. The data analysis was performed using Flowjo software.\n\n### Transgenic animal studies\n\nAll experimental mouse procedures were approved by the Cold Spring Harbor Animal Care and Use Committee. Renilla and TRIM33 shRNA targeted ES cells were derived by Mirimus (Cold Spring Harbor, NY) as described (Premsrirut et al., 2011; Dow et al., 2012), using site-specific integration of the shRNA cassette into the Col1a1 locus of KH2 ES cells (Beard et al., 2006). 8\u201310 week old mice heterozygous for alleles of shRen.713 or shTRIM33 and homozygous for ROSA26-rtTA-M2 alleles were treated with dox drinking water (2 mg/ml doxycycline and 2% sucrose) and dox food (625 mg/kg) for 7 or 28 days. Fluorescent markers (eGFP for shRenilla and TurboGFP for shTRIM33) were indicators of shRNA-expressing cells following doxycycline treatment. The animal health and body weight were monitored during the time course of experiments. Primers used for genotyping can be found in Supplementary file 2.\n\nTo measure the impact of TRIM33 knockdown on hematopoietic lineages, bone marrow and spleen tissues were harvested from 8\u201310 week old transgenic mice following the administration of dox for 7 or 28 days. A single cell suspension of harvested samples was treated with ACK buffer (150 mM NH4Cl, 10 mM KHCO3, 0.1 mM EDTA) to lyse the red blood cells. The sample was then stained with hematopoietic lineage marker antibodies (1:200) in FACS buffer (1\u00d7 PBS with 5% FBS and 0.05% NaN3) for 30 min and then subjected to BD LSRII flow cytometry analysis. Gating was performed on live cells (FSC/SSC) and on GFP+ cells prior to quantifying marker positivity. The GFP percentage in total bone marrow was approximately 75% on dox for shRen and shTRIM33 mice. The GFP percentage in the total spleen was approximately 15% for shTRIM33 and shRen mice on dox. This heterogeneity in GFP expression in these different tissues requires GFP gating to accurately define hematopoietic phenotypes using flow cytometry. The data analysis was performed using Flowjo software.\n\nTo evaluate the reversibility of the TRIM33 knockdown phenotype in bone marrow B lymphoid cell, animals were placed on dox for 7 days and a second cohort was placed on dox for 7 days followed by removal of dox for 21 additional days. B220 and Cd19 marker staining was performed as described above, but the GFP marker was not gated upon since GFP expression is extinguished upon removing dox. This accounts for the weaker B cell phenotype in this 7 day dox treatment from the findings presented in Figure 1I, in which GFP gating was performed.\n\nFor immunohistochemistry analysis of TRIM33 expression, transgenic mice were maintained on dox for 28 days. Mouse tissues were fixed overnight in 10% neutral buffered formalin and then washed with PBS. Samples were then processed using Shandon Excelsior Tissue processor and embedded in paraffin, 6 micron sections were then mounted onto VWR Superfrost Plus slides.\n\n### Western blotting\n\nFor western blotting, whole cell lysates were prepared by direct lysis using SDS-PAGE sample buffer and about 50,000 cell equivalents were loaded into each lane. Samples were then separated by SDS-PAGE electrophoresis and transferred to nitrocellulose for detection using antibodies. For western blotting of mouse tissues, samples were harvested and lysed in RIPA buffer (25 mM Tris-HCl pH 7.6, 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate and 0.1% SDS) using a dounce homogenizer, then briefly sonicated and incubated on ice for 15 min. Pellets were spun down and the supernatant was collected and quantified using a Bradford assay. 20 \u03bcg of protein were loaded into each gel lane.\n\n### Immunohistochemistry\n\nDeparaffinization of samples was done with Xylene (2 \u00d7 10 min) followed by ethanol rehydration (100%-2 \u00d7 5 min, 95% and 75% 2 min each) and washed in distilled water. 3% Hydrogen Peroxide was used for blocking endogenous peroxidase, followed by another wash. Antigen retrieval was done with Citrate buffer in an Electric Pressure Cooker then washed in TBS. Samples were then blocked with 5%NHS, 1%BSA in TBS for 1 hr at room temperature and incubated with TRIM33 antibody (1:500/1:1000) overnight at 4\u00b0C. Followed by washing with TBS and incubated with Vector mp-7401 anti-rabbit secondary antibody for 30 min and then washed again. Slides were then incubated with Vector ImmPACT DAB, SK-4105 for 3 min and then rinsed in water. Counterstaining was performed with Hematoxylin and coverslipping was performed with Surgipath mounting medium prior to analysis.\n\n### Chromatin immunoprecipitation\n\nCells were crosslinked with 1% formaldehyde for 20 min at room temperature and then quenched with 0.125 M glycine. Samples were sonicated and incubated with 5 \u03bcg of antibody overnight and then precipitated using Protein A Dynabeads (cat #10002Dl; Life Technologies, Grand Island, NY). For TRIM33/PU.1 ChIP in B-ALL, 50 million cells were used for each ChIP conditions with 5 \u03bcg antibody. For histone modification ChIP experiments in B-ALL, 20 million cells were used for each ChIP conditions with 2 \u03bcg antibody. For whole spleen ChIP, 6\u20138 week old mice were sacrificed and a suspension of 30 million splenocytes was prepared for ChIP with 5 \u03bcg antibody. ChIP-qPCR was performed on the reverse crosslinked DNA samples as previously described (Steger et al., 2008). All of the results were quantified by qPCR using SYBR green (ABI, Grand Island, NY) on an ABI 7900HT. Each IP signal was quantified based on an input standard curve dilution series of the pre-immunoprecipitated genomic DNA (IP/Input) to normalize for the differences of total amount of cells subjected for ChIP and for the different amplification efficiencies of various primer sets.\n\n### RT-qPCR analysis\n\nTotal RNA was extracted from cells using Trizol reagent according to the manufacturer's instructions. Upon isolating RNA, DNase I was treated to eliminate contaminating genomic DNA. For cDNA synthesis, Q-Script cDNA SuperMix (Quanta BioScience, Gaithersburg, MD) was used. All results were quantified by qPCR performed using SYBR green (ABI) on an ABI 7900HT using the delta Ct method using Gapdh as a control gene.\n\nAll ChIP and RT-qPCR primers used in this study can be found in Supplementary file 2.\n\n### ChIP-seq and RNA-seq library preparation\n\nChIP DNA was purified using a QIAquick Gel Extraction Kit (Qiagen, Valencia, CA) and ChIP-Seq libraries were constructed using TruSeq ChIP Sample Prep Kit (Illumina) following the manufacturer's instructions. The quality of each library was determined by Bioanalyzer analysis using the High Sensitivity chip (Agilent). Two independent biological replicates were performed for each ChIP-seq experiment. Barcoded libraries were sequenced in a multiplexed fashion with two to six libraries at equal molar ratio, with single end reads of 50 bases. For RNA-seq, total RNA was extracted using Trizol reagent (Invitrogen, Carlsbad, CA). Libraries were constructed using the TruSeq sample Prep Kit V2 (Illumina, San Diego, CA) according to the manufacturer's instructions. DNA libraries were sequenced using an Illumina HiSeq 2000 platform.\n\n### RNA-seq analysis\n\nThe obtained reads were trimmed into 28 base reads corresponding to 9th to 36th position from the 5\u2032 ends of the reads. These reads were mapped to the mouse genome (mm9) using Tophat software allowing no mismatch, then differentially expressed genes were analyzed by using Cuffdiff software. During this step, structural RNAs (e.g., ribosomal or mitochondrial RNA) were masked. To calculate relative fold change to control, only genes with expression cutoff above 5 reads per million per kilobase (RPKM) and OK test status were considered. Average RPKM from two biological replicates of each control (Ren) and TRIM33 shRNA expressed samples was then used to calculate fold change with log2 scale.\n\n### ChIP-seq analysis\n\nThe sequence reads were of 36 or 50 bp in length and mapped to the reference murine genome assembly NCBI37/mm9 using Bowtie. Alignments were performed using the following criteria: -m1, -v2. To identify ChIP-Seq peaks, we used the MACS version 1.4.0 beta (Model based Analysis of ChIP-Seq) peak finding algorithm by using a p value threshold of enrichment of 1e-5 as a cut-off. For AML, 38B9, and T-ALL, we also implemented a 10-fold IP/Input enrichment ratio as a filtering criteria. To identify reproducibly enriched regions of TRIM33 ChIP-Seq from two biological replicates, called peaks from MACS were compared and intersected. If the peaks showed at least 1 bp overlap between replicates, they were considered as reproducible. To calculate average tag counts from reproducible peaks, tag counts were normalized to total mapped reads, and further ranked by tag counts.\n\nAll ChIP-seq and RNA-seq data from this study can be found at the GEO accession super-series GSE66234.\n\n### FIMO/MEME motif analysis\n\nSequence coordinates from TRIM33 peak calling using MACS were used to obtain sequences of Bim-117 and Atp1b3 regions. Analysis was performed at the FIMO/MEME website: http://meme.nbcr.net/meme/tools/fimo using a p-value output threshold of 1E-4 and motif file JASPAR_CORE_2014_VERTEBRATES.MEME from the Jaspar database (Mathelier et al., 2014).\n\nFor the unbiased discovery of motifs at TRIM33 enriched regions, 400 bp core sequences centered around reproducible TRIM33 peaks were submitted to the browser-based MEME-ChIP analysis (http://meme.nbcr.net/meme/tools/meme-chip).\n\n### CRISPR-Cas9 targeted deletion of Bim \u2013117\n\nThe MSCV-hCas9-PGK-Puro construct was derived by cloning the N terminal 3\u00d7 FLAG tag human-codon optimized Cas9 cDNA (#49535; Addgene) into the MSCV-PGK-Puro vector (#634401; Clontech). The U6-sgRNA-EFS-mCherry vector was constructed using the lentiviral backbone from lentiCRISPR (#49535; Addgene). All sgRNAs were designed using http://crispr.mit.edu/ and cloned into the U6-sgRNA-EFS-mCherry vector following published protocols (Ran et al., 2013). For sgRNA lentivirus production, HEK293T cells were transfected with sgRNA:pVSVg:psPAX2 plasmids in a 4:2:3 ratio by using PEI reagent (#23966; Polysciences, Warrington, PA) following standard procedures. To generate CRISPR competent line, parental B-ALL and 38B9 cells were transduced with MSCV-hCas9-PGK-Puro construct followed by puromycin selection (1 \u03bcg/ml). To generate lines with a homozygous deletion of Bim \u2013117, two sgRNAs were designed to target flanking sequences of the \u2212117 element and were retrovirally co-transduced into B-ALL or 38B9 cells, followed by isolation of clonal lines by limiting dilution. Genomic DNA was prepared from each clone using QiAamp DNA mini kit (#51304; Qiagen) following the manufacturer's instructions, followed by PCR-based screening for clones harboring a homozygous deletion, using primers that span the Bim enhancer region. The \u2212117 deletion of individual clones was further verified by Sanger sequencing. sgRNA and genotyping primer sequences can be found in Supplementary file 2.\n\n### Antibodies\n\nAnti-TRIM33 antibody (A301-060A; Bethyl Laboratories, Montgomery, TX), Anti-PU.1 antibody (#2266; Cell Signaling, Beverly, MA or sc-352; Santa Cruz, Dallas, TX), Anti-Bim antibody (#2819; Cell Signaling), Anti-H3K27ac antibody (ab4729; Abcam, Cambridge, MA), Anti-H3K4me3 antibody (07-473; Millipore), Anti-\u00df-actin HRP antibody (#A3854; Sigma, Ronkonkoma, NY), APC anti-mouse B220 (#103212; BioLegend, San Diego, CA), APC anti-mouse CD-19, APC anti-mouse Mac-1/Cd11b (#101211; BioLegend), APC anti-mouse Ly-6G/Gr-1 (#17-5931; eBioscience, San Diego, CA), APC anti-mouse TER-119 (#116212; BioLegend), APC anti-mouse CD-3 (#100209; BioLegend).\n",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "cf46eeb7-c8d2-4880-badc-38bdba3bbea0",
+      "submission_id": "48c105c6-dd43-4b79-bcca-0d92694e0c72",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joaquin M Espinosa, Howard Hughes Medical Institute, University of Colorado , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06377.021](https://doi.org/10.7554/eLife.06377.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTrim33 prevents apoptosis in B lymphoblastic leukemia by decommissioning a single enhancer\u201d for consideration at eLife. Your article has been favorably evaluated by Charles Sawyers (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission:\n\nThe manuscript by Wang et al. describes a lineage-specific epigenetic dependency, namely on Trim33. Many B-lineage cancers and autoimmune diseases continue to be urgent clinical problems, increasing the impact of this manuscript. The authors define a novel mechanism, where highly clustered binding sites for the transcription factor PU.1 at enhancer sites are counteracted by Trim33. This disproportionally affects 2 genes including the apoptosis inducer Bim. The authors demonstrate functional importance of Bim and functional importance of a single enhancer element upstream of Bim. Thus, virtually all of the oncogenic effects of TRIM33 can be attributed to binding to a single site in the genome, a remarkable discovery.\n\nThe reviewers agreed that the paper was very interesting and well crafted, but there was some discussion about limited impact due to the fact that most mechanistic work was done in a single cell line, and that the mechanism of action of TRIM33 is largely unexplored. The reviewers agreed that further insight into the mechanism of action was not needed for a Short Report, but there was consensus on requiring validation of key mechanistic experiments in a second cell line.\n\nMore specifically, the authors show a unique higher density of PU.1 at the Bim-117 enhancer and antagonism of PU.1 by TRIM33 recruitment to this enhancer in B-cell derived leukemic and progenitor cell lines. However, while they show the initial phenotype for several B cell lines, B-ALL, 38B9 (Figure 1B, 1C) and other B cell cancer lines (Figure 1\u2013figure supplements 1B, 1C, 1D), all mechanistic work (except for TRIM33 occupancy) is done in only one cell line (B-ALL). The authors should reproduce their mechanistic studies in a second cell line (e.g., 38B9). Otherwise the novelty of this work is somewhat limited: it is known that PU.1 binds enhancers, and that TRIM33 interacts with PU.1. The reviewers agreed on the need to delineate the PU.1/TRIM33/BIM pathway in 38B9 cells, with the exception of removal of the enhancer at the BIM locus, which was thought to be too involved and would delay publication.\n\nMinor points:\n\n1) In the Discussion the authors claim TRIM33 as a therapeutic target \u201c\u2026 since the major phenotypic abnormality in mice experiencing systemic Trim33 inhibition is a selective and reversible B lymphocyte deficiency.\u201d The authors do not address the other hematopoietic lineage phenotypes previously described by Aucagne et al., J. Clin. Invest., 2011 and Bai et al., Dev. Biol., 2013, most importantly the CMML phenotype. That is surprising as the authors also see an expansion of the granulocytic compartment after 1 week (BM, Figure 1I), and more dramatically 4 weeks (spleen, Figure 1J). Please discuss this.\n\n2) If PU.1 is a lineage-specific factor for many myeloid lineages, why would TRIM33 antagonize PU.1 specifically in B (progenitor) cells? What about PU.1 density at the Bim enhancers in AML or T-ALL cell lines (the authors only show TRIM33 occupancy in those)? One would expect that either PU.1 density is low or that Bim does not play a key role in these cell lines. This should be discussed.\n\n3) How do the authors imagine the interplay of TRIM33 and PU.1 in normal B cell differentiation? Is this mechanism active in vivo? The authors show that in the mouse model depleted for Trim33 B-lymphoid cells are selectively lost. They do not address whether apoptosis in the model is due to PU.1-TRIM33 antagonism. In fact, they show that TRIM33 binds to the Bim enhancer in normal spleen. However, work by Oliver et al., J. Exp. Med., 2004 shows that Bim is expressed in B-cell precursors. Is this also true in the authors\u2019 system? If so, how do they explain Bim expression despite TRIM33 occupancy at the enhancer? What are the absolute Bim levels compared to those in the B-ALL model?\n\n4) The fact the GFP-gated cells in vivo show more efficient B-lineage depletion than non-GFP-gated cells (and that there are non-GFP cells present under induced conditions in the marrow) suggests to me that the mouse strain with inducible shRNA/GFP has variegated expression in the B-linage or even whole BM (position effect). I believe this does not affect the manuscript's message, but the authors should clarify.\n\n5) The authors allude to other factors with documented peak number: MyoD \u223c39,000 and Pax5 \u223c20,000 sites (Cao et al., 2010; Revilla et al., 2012). In a side by side comparison, using the same peakfinder and same parameters including p-value cutoff, how many significant peaks are there for Trim33 in the p190-leukemia cells? It might be that not the number of peaks is different from characterized transcriptional regulators but the existence of the unusual outliers including Bim. Please clarify.\n",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e9ba6742-230f-4a81-9676-21e1654340c5",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C1",
+      "claim": "TRIM33 is a lineage dependency in B cell neoplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 is identified here as a lineage dependency in B cell neoplasms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNAi screen data showing selective requirement in B-ALL cells and validation in multiple B cell lines",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "601d6f70-cf91-4360-81ad-1fe7360407e6",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C2",
+      "claim": "TRIM33 performs its essential function in B cell neoplasms by associating with a single cis element.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 is identified here as a lineage dependency in B cell neoplasms and is shown to perform this essential function by associating with a single cis element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data showing preferential TRIM33 binding and CRISPR deletion experiments demonstrating that deletion of the Bim -117 enhancer renders TRIM33 dispensable",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "7326ff28-f597-433a-94eb-62697cd48bf4",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C3",
+      "claim": "ChIP-seq analysis of TRIM33 in murine B cell leukemia revealed a preferential association with two lineage-specific enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq analysis of TRIM33 in murine B cell leukemia revealed a preferential association with two lineage-specific enhancers that harbor an exceptional density of motifs recognized by the PU.1 TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq experimental data showing TRIM33 enrichment at Bim -117 and Atp1b3 -35 regions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "0758fa13-fb78-49d0-812e-d356551aa6d7",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C4",
+      "claim": "The two strongest sites of TRIM33 enrichment harbor an exceptional density of motifs recognized by the PU.1 transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq analysis of TRIM33 in murine B cell leukemia revealed a preferential association with two lineage-specific enhancers that harbor an exceptional density of motifs recognized by the PU.1 TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FIMO motif analysis showing 17 PU.1 motif instances at Bim -117 and 14 instances at Atp1b3 -35",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "46aea4ae-730f-439e-a80c-c21cebf2eb2c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C5",
+      "claim": "TRIM33 is recruited to PU.1/TRIM33 co-occupied enhancers by PU.1.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 is recruited to these elements by PU.1, yet acts to antagonize PU.1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-qPCR data showing that PU.1 knockdown leads to loss of TRIM33 occupancy at these sites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "e7858ad2-72a9-4c98-be7b-aac3594ae3c9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C6",
+      "claim": "TRIM33 acts to antagonize PU.1 function at co-occupied enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 is recruited to these elements by PU.1, yet acts to antagonize PU.1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing TRIM33 knockdown increases PU.1 occupancy and H3K27 acetylation at Bim -117",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "0100fe9b-a457-49c7-99e3-2be9987cdd74",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C7",
+      "claim": "One of the PU.1/TRIM33 co-occupied enhancers is upstream of the pro-apoptotic gene Bim.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the PU.1/TRIM33 co-occupied enhancers is upstream of the pro-apoptotic gene Bim, and deleting this enhancer renders TRIM33 dispensable for leukemia cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data showing TRIM33 and PU.1 occupancy at a region 117 kb upstream of Bim",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "14fd8186-0c5b-48f7-877e-f16a87a2de04",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C8",
+      "claim": "Deleting the Bim -117 enhancer renders TRIM33 dispensable for leukemia cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the PU.1/TRIM33 co-occupied enhancers is upstream of the pro-apoptotic gene Bim, and deleting this enhancer renders TRIM33 dispensable for leukemia cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CRISPR-Cas9 deletion experiments showing B-ALL cells with homozygous deletion of Bim -117 do not require TRIM33 for viability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "37694f06-cdba-4b86-b31d-046259063bdd",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C9",
+      "claim": "TRIM33 prevents apoptosis in B lymphoblastic leukemia by interfering with enhancer-mediated Bim activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal an essential role for TRIM33 in preventing apoptosis in B lymphoblastic leukemia by interfering with enhancer-mediated Bim activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing TRIM33 knockdown leads to Bim upregulation and apoptosis, and that Bim knockdown rescues TRIM33 loss",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "1b4a1558-c970-44c5-af7b-655c6cec68c9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C10",
+      "claim": "DNA-binding transcription factors typically recognize short 6\u201312 base-pair motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-binding transcription factors (TFs) typically recognize short 6\u201312 base-pair motifs, which exist at a high frequency in mammalian genomes (Wunderlich and Mirny, 2009; Spitz and Furlong, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "2a98e8b8-71c5-4045-9a72-bf99851d294b",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C11",
+      "claim": "Short TF recognition motifs exist at a high frequency in mammalian genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-binding transcription factors (TFs) typically recognize short 6\u201312 base-pair motifs, which exist at a high frequency in mammalian genomes (Wunderlich and Mirny, 2009; Spitz and Furlong, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "96d709ac-5c0f-41ee-8ffa-361d63fc5d23",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C12",
+      "claim": "Transcription factors occupy thousands of genomic sites in any given cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "While chromatin restricts the accessibility of these sequences, TFs nonetheless occupy thousands of genomic sites in any given cell type (Spitz and Furlong, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature and specific examples provided",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5208809a-119f-47e5-a5d9-7853c09980a9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C13",
+      "claim": "MyoD has been detected at approximately 39,000 sites in primary myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, MyoD has been detected at \u223c39,000 sites in primary myotubes and Pax5 at \u223c20,000 sites in B cell progenitors (Cao et al., 2010; Revilla et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "6593622d-e89a-466b-af09-8891a4fef162",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C14",
+      "claim": "Pax5 has been detected at approximately 20,000 sites in B cell progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "As examples, MyoD has been detected at \u223c39,000 sites in primary myotubes and Pax5 at \u223c20,000 sites in B cell progenitors (Cao et al., 2010; Revilla et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "1c7b18d4-d7b9-4b14-a2d9-c9b987564a67",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C15",
+      "claim": "Transcriptional cofactors are known to occupy the mammalian genome in a generalized manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, transcriptional cofactors (coactivators and corepressors) are also known to occupy the mammalian genome in a generalized manner (Ram et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "0a0e537d-4aaa-42a0-8751-98fbd0feab22",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C16",
+      "claim": "In prokaryotic species, transcription factors can occupy as few as one or two sites in an entire genome to implement precise transcriptional responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to prokaryotic species, in which TFs can occupy as few as one or two sites in an entire genome to implement precise transcriptional responses (Mart\u00ednez-Antonio and Collado-Vides, 2003; Wunderlich and Mirny, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3d27a1e0-afbf-4e65-96f7-ed8aba8c9023",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C17",
+      "claim": "TRIM33 belongs to the tripartite motif (TRIM)-containing protein family of E3 ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33, also known as TIF1\u03b3, belongs to the tripartite motif (TRIM)-containing protein family of E3 ubiquitin ligases (Venturini et al., 1999; Hatakeyama, 2011; Herquel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "2bcc41b2-2e97-4596-8ceb-5cbd15eed265",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C18",
+      "claim": "TRIM33 and its homologs TRIM24 and TRIM28 belong to a subfamily of ubiquitously expressed TRIM proteins that contain a tandem plant homeodomain (PHD) and bromodomain module.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 and its homologs TRIM24 and TRIM28 belong to a subfamily of ubiquitously expressed TRIM proteins that contain a tandem plant homeodomain (PHD) and bromodomain module and function as transcriptional cofactors (Venturini et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3222cb8d-8fbe-4d36-b16e-eb330df2c32c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C19",
+      "claim": "TRIM33, TRIM24, and TRIM28 function as transcriptional cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 and its homologs TRIM24 and TRIM28 belong to a subfamily of ubiquitously expressed TRIM proteins that contain a tandem plant homeodomain (PHD) and bromodomain module and function as transcriptional cofactors (Venturini et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "459d9c9c-5324-4392-a736-481865240261",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C20",
+      "claim": "TRIM33 has a role in the TGF\u03b2 signaling pathway through regulation of SMAD4 mono-ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "One role of TRIM33 is in the TGF\u03b2 signaling pathway, which occurs through regulation of SMAD4 mono-ubiquitination and/or by functioning as a cofactor for the TFs SMAD2 and SMAD3 (Dupont et al., 2005, 2009; He et al., 2006; Agricola et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "2a159914-0c07-4567-b46a-ddba16dc8452",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C21",
+      "claim": "TRIM33 functions as a cofactor for the transcription factors SMAD2 and SMAD3.",
+      "claim_type": "EXPLICIT",
+      "source": "One role of TRIM33 is in the TGF\u03b2 signaling pathway, which occurs through regulation of SMAD4 mono-ubiquitination and/or by functioning as a cofactor for the TFs SMAD2 and SMAD3 (Dupont et al., 2005, 2009; He et al., 2006; Agricola et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "85c31613-2d89-44e6-9bbc-435b1d21908d",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C22",
+      "claim": "TRIM33 interacts with the transcription factor SCL/TAL1 to promote transcription elongation of erythroid-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM33 is also known to interact with the TF SCL/TAL1 to promote transcription elongation of erythroid-specific genes, which may occur through the recruitment of FACT and P-TEFb complexes (Bai et al., 2010, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "7e0936be-feaa-49da-b7b1-ba556ecde226",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C23",
+      "claim": "TRIM33 can form repressive complexes with SCL to block transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, another study suggests that TRIM33 can form repressive complexes with SCL to block transcriptional activation (Kusy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "cd3a1152-4d0d-4cf9-83bd-2f45a5b8ae05",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C24",
+      "claim": "The PHD-bromodomain module of TRIM33 interacts with covalently modified histone tails.",
+      "claim_type": "EXPLICIT",
+      "source": "The PHD-bromodomain module of TRIM33 interacts with covalently modified histone tails, which can further stabilize TRIM33 chromatin occupancy and stimulate its E3 ligase activity (Tsai et al., 2010; Agricola et al., 2011; Xi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "9f2ae79f-1232-4791-9f6c-4254ec50f749",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C25",
+      "claim": "Interaction of TRIM33's PHD-bromodomain module with modified histone tails can stabilize TRIM33 chromatin occupancy and stimulate its E3 ligase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The PHD-bromodomain module of TRIM33 interacts with covalently modified histone tails, which can further stabilize TRIM33 chromatin occupancy and stimulate its E3 ligase activity (Tsai et al., 2010; Agricola et al., 2011; Xi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "4f3d9e7b-2198-4479-8915-6b3801a5c2ab",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C26",
+      "claim": "A negative selection RNAi screen in B-ALL cells identified 16 chromatin regulator dependencies.",
+      "claim_type": "EXPLICIT",
+      "source": "1,126 shRNAs targeting 259 chromatin regulators were assessed individually for effects on the viability of B-ALL cells in culture, which led to the identification of 16 dependencies after applying stringent scoring criteria (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental screen data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5db1aacc-f406-42aa-9c99-9253306e4a9c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C27",
+      "claim": "The majority of chromatin regulator dependencies identified in B-ALL had been identified in a prior screen in MLL-AF9/NrasG12D acute myeloid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these factors had been identified in a prior screen that evaluated the requirement of chromatin regulators in MLL-AF9/NrasG12D acute myeloid leukemia (AML) (Zuber et al., 2011b), however TRIM33 was identified here as a unique requirement in B-ALL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with published screen data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "252ee690-6ae7-4b77-8b8a-abc07ec9dd45",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C28",
+      "claim": "TRIM33 was identified as a unique requirement in B-ALL compared to AML.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these factors had been identified in a prior screen that evaluated the requirement of chromatin regulators in MLL-AF9/NrasG12D acute myeloid leukemia (AML) (Zuber et al., 2011b), however TRIM33 was identified here as a unique requirement in B-ALL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of screen results between B-ALL and AML",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "9084eb8d-d43b-4d0d-8832-11d4a1999d87",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C29",
+      "claim": "The six TRIM33 shRNAs used in the screen exhibited a close correlation between knockdown efficiency and loss of B-ALL viability.",
+      "claim_type": "EXPLICIT",
+      "source": "The six TRIM33 shRNAs used in the screen exhibited a close correlation between knockdown efficiency and loss of B-ALL viability, suggesting on-target effects (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A and 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "d000c29c-0d46-4ba3-9b77-d6573afd282c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C30",
+      "claim": "A v-Abl transformed B cell progenitor line (38B9) is sensitive to TRIM33 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a v-Abl transformed B cell progenitor line, 38B9 (Alt et al., 1984), and several human B cell cancer lines were also sensitive to TRIM33 knockdown (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "965ced39-b7e1-449c-8705-8fa288230f6d",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C31",
+      "claim": "Several human B cell cancer lines are sensitive to TRIM33 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a v-Abl transformed B cell progenitor line, 38B9 (Alt et al., 1984), and several human B cell cancer lines were also sensitive to TRIM33 knockdown (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "1db32fff-f2c7-4151-a05f-f803fe7ea7d6",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C32",
+      "claim": "TRIM33 knockdown led to negligible effects on the viability of MLL-AF9/NrasG12D AML.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TRIM33 knockdown led to negligible effects on the viability of MLL-AF9/NrasG12D AML and Notch-mutant T-cell acute lymphoblastic leukemia (T-ALL) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "859e4c4b-de12-48fe-ab6c-da62ba41f597",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C33",
+      "claim": "TRIM33 knockdown led to negligible effects on the viability of Notch-mutant T-cell acute lymphoblastic leukemia (T-ALL).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TRIM33 knockdown led to negligible effects on the viability of MLL-AF9/NrasG12D AML and Notch-mutant T-cell acute lymphoblastic leukemia (T-ALL) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "4e4975a9-b9bc-4b54-a68f-41f2201eab69",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C34",
+      "claim": "Upon knockdown of TRIM33, B-ALL cells underwent apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon knockdown of TRIM33, B-ALL cells underwent apoptosis, as shown by Annexin V/DAPI staining (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Annexin V/DAPI staining data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3682778a-404d-481a-819f-39bbf9ff3a22",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C35",
+      "claim": "TRIM33 is essential for the survival of neoplastic B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations suggest that TRIM33 is essential for the survival of neoplastic B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental observations including viability assays and apoptosis measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3c6c7638-3f38-4517-9c0d-9507f2de6c9f",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C36",
+      "claim": "Doxycycline-regulated shRNA transgenic mice exhibited dox-dependent suppression of TRIM33 in multiple tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "When crossed with mice that express rtTA-M2 from the ROSA26 promoter, animals exhibited dox-dependent suppression of TRIM33 in multiple tissues (Figure 1G,H and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blotting data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "9ba9b4e6-c25b-419d-a202-4e9a0339e5eb",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C37",
+      "claim": "Flow cytometry analysis of bone marrow and spleen following 1 or 4 weeks of dox administration revealed a selective loss of CD19+ and B220+ B lymphoid cells in TRIM33-deficient animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis of the bone marrow and spleen following 1 or 4 weeks of dox administration revealed a selective loss of CD19+ and B220+ B lymphoid cells in TRIM33-deficient animals, while erythroid, myeloid, and T lymphoid populations remained intact or even increased in relative abundance (Figures 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figures 1I and 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3be949d9-c548-4169-a240-07432db5c31a",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C38",
+      "claim": "Erythroid, myeloid, and T lymphoid populations remained intact or increased in relative abundance in TRIM33-deficient animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis of the bone marrow and spleen following 1 or 4 weeks of dox administration revealed a selective loss of CD19+ and B220+ B lymphoid cells in TRIM33-deficient animals, while erythroid, myeloid, and T lymphoid populations remained intact or even increased in relative abundance (Figures 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figures 1I and 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "f903c4fc-1103-4f47-8351-4a551ff9592e",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C39",
+      "claim": "B cell production recovered fully in TRIM33-deficient mice upon restoring TRIM33 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of the reversibility of the dox-regulated shRNA system, we found that B cell production recovered fully in TRIM33-deficient mice upon restoring TRIM33 expression (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3191748f-6fd2-4df7-b7c0-117db1815112",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C40",
+      "claim": "TRIM33 knockdown led to negligible effects on the histological appearance of colon, liver, thymus, and pancreatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TRIM33 knockdown led to negligible effects on the histological appearance of colon, liver, thymus, and pancreatic tissues and led to no significant changes in animal weight (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "cbe34806-929d-4ed5-a53e-65b74f961c48",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C41",
+      "claim": "TRIM33 knockdown led to no significant changes in animal weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, TRIM33 knockdown led to negligible effects on the histological appearance of colon, liver, thymus, and pancreatic tissues and led to no significant changes in animal weight (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by weight measurement data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "df188cc8-710b-4f8c-87f2-246fd68b7ec6",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C42",
+      "claim": "B lymphoid cells are uniquely sensitive to TRIM33 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings suggest that B lymphoid cells are uniquely sensitive to TRIM33 inhibition, thus implicating TRIM33 as a lineage dependency in cancers of B cell origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental observations in transgenic mice and cell lines",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "6620495c-5000-4ddb-a738-2f2669f72db1",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C43",
+      "claim": "Trim33\u2212/\u2212 mice exhibit a B lymphocyte deficiency and an expansion of myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in agreement with the prior characterization of Trim33\u2212/\u2212 mice, which were found to exhibit a B lymphocyte deficiency and an expansion of myeloid cells (Aucagne et al., 2011; Kusy et al., 2011; Bai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "b46c7144-6720-494f-bb7f-ae9a4d1aa376",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C44",
+      "claim": "Bim and Atp1b3 were the two most upregulated genes upon TRIM33 depletion in B-ALL cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a distribution of gene expression changes, however, we noted that Bim and Atp1b3 were the two most upregulated genes upon TRIM33 depletion (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "9d3cb8d8-7b54-44d9-a0a3-89f552e629f6",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C45",
+      "claim": "The two strongest sites of TRIM33 enrichment in B-ALL were located 117 kb upstream of Bim and 35 kb upstream of Atp1b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the two strongest sites of TRIM33 enrichment in B-ALL were located 117 kb upstream of Bim (in an intron of a non-expressed gene Acoxl) and at a site 35 kb upstream of Atp1b (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figures 2B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "d4701ce7-8f5d-479d-bac9-ffc97f25beef",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C46",
+      "claim": "The TRIM33-occupied regions upstream of Bim and Atp1b3 were enriched for H3K27 acetylation but not for H3K4 tri-methylation, suggesting that these elements are active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRIM33-occupied regions upstream of Bim and Atp1b3 were enriched for H3K27 acetylation but not for H3K4 tri-methylation, suggesting that these elements are active enhancers (Rada-Iglesias et al., 2011) (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data for histone modifications shown in Figures 2C and 2D, and citation to published literature on enhancer marks",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "fac9e422-602a-4652-a66f-bae40ac9e120",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C47",
+      "claim": "TRIM33 occupancy was observed at the Bim -117 and Atp1b3 -35 regions in 38B9, AML, and whole spleen, but not in T-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed TRIM33 occupancy at these same two regions in 38B9, AML, and in whole spleen, but not in T-ALL (Figure 2\u2014figure supplements 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq and ChIP-qPCR data shown in Figure 2\u2014figure supplements 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5b4bc5e7-9b3b-4844-8568-48cb9f02f943",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C48",
+      "claim": "TRIM33 exhibits a strong bias for a small number of genomic locations in B-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking attribute of the genomewide pattern of TRIM33 occupancy was its strong bias for a small number of locations, with lower levels of enrichment at other sites across the genome (Figure 2E,F, and Figure 2\u2014figure supplements 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figures 2E, 2F, and supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "f06021a0-25cc-4d5c-8741-9ddecd332f3c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C49",
+      "claim": "The Bim -117 region possesses 17 instances of sequence motifs recognized by PU.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the FIMO motif analysis tool (Grant et al., 2011), we found that both of these regions possessed a high density of sequence motifs recognized by PU.1 (17 instances at Bim \u2013117 and 14 instances at Atp1b3 \u201335), which is an essential hematopoietic TF expressed in B lymphoid and myeloid lineages (Scott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FIMO motif analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5bf7917f-3e16-42d3-857d-ec6d89994e71",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C50",
+      "claim": "The Atp1b3 -35 region possesses 14 instances of sequence motifs recognized by PU.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the FIMO motif analysis tool (Grant et al., 2011), we found that both of these regions possessed a high density of sequence motifs recognized by PU.1 (17 instances at Bim \u2013117 and 14 instances at Atp1b3 \u201335), which is an essential hematopoietic TF expressed in B lymphoid and myeloid lineages (Scott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FIMO motif analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "0846c5e9-c630-44e6-a5e5-451f435f9611",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C51",
+      "claim": "PU.1 is an essential hematopoietic transcription factor expressed in B lymphoid and myeloid lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the FIMO motif analysis tool (Grant et al., 2011), we found that both of these regions possessed a high density of sequence motifs recognized by PU.1 (17 instances at Bim \u2013117 and 14 instances at Atp1b3 \u201335), which is an essential hematopoietic TF expressed in B lymphoid and myeloid lineages (Scott et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "82fa1b66-d3d9-4345-bec5-1f1bf26dc9e7",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C52",
+      "claim": "A much lower density of motifs for E2A, EBF1, or PAX5 was observed at the Bim -117 and Atp1b3 -35 regions compared to PU.1 motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a much lower density of motifs for other TFs involved in B cell specific transcriptional regulation (E2A, EBF1, or PAX5) (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis data shown in Figures 3A and 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "48090b56-a9d8-4b58-8bf0-3e6a70b37577",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C53",
+      "claim": "TRIM33 has been shown previously to interact with PU.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TRIM33 has been shown previously to interact with PU.1 (Kusy et al., 2011), we investigated whether PU.1 promotes TRIM33 recruitment to these regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "debd7b01-ce7d-4a17-9e05-e1965c851cc5",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C54",
+      "claim": "ChIP-seq analysis of PU.1 in B-ALL confirmed its association with Bim -117 and Atp1b3 -35.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq analysis of PU.1 in B-ALL confirmed its association with Bim \u2013117 and Atp1b3 \u201335, as well as with more than 2600 other genomic sites (Figure 2C,D and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figures 2C, 2D, and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "f07b6dbc-840b-4384-9db8-ec81d0cdfbed",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C55",
+      "claim": "PU.1 associates with more than 2600 genomic sites in B-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq analysis of PU.1 in B-ALL confirmed its association with Bim \u2013117 and Atp1b3 \u201335, as well as with more than 2600 other genomic sites (Figure 2C,D and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "8ff34d92-b84d-4b63-af45-7a11793577ef",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C56",
+      "claim": "Bim -117 and Atp1b3 -35 regions are outliers when compared to other PU.1-occupied sites with regard to the overall density of PU.1 recognition motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Bim \u2013117 and Atp1b3 \u201335 regions are outliers when compared to other PU.1-occupied sites with regard to the overall density of PU.1 recognition motifs and the overall level of PU.1 enrichment (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by motif analysis and ChIP-seq data shown in Figure 3C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "6a185ccf-90f8-4da8-aa04-bc9b4dd3eb6a",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C57",
+      "claim": "Bim -117 and Atp1b3 -35 regions are outliers when compared to other PU.1-occupied sites with regard to the overall level of PU.1 enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Bim \u2013117 and Atp1b3 \u201335 regions are outliers when compared to other PU.1-occupied sites with regard to the overall density of PU.1 recognition motifs and the overall level of PU.1 enrichment (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 3C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "8fdec535-3593-4385-bf22-a6557e5da6db",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C58",
+      "claim": "The level of H3K27ac at Bim -117 and Atp1b3 -35 is not skewed towards these two locations, indicating that these regions are not super-enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of the active enhancer chromatin mark, H3K27ac, is not skewed in a similar manner towards these two locations, indicating that these regions are not super-enhancers that exhibit high levels of all regulators (Figure 3\u2014figure supplement 1) (Hnisz et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 3\u2014figure supplement 1 and citation to super-enhancer literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "51e3a95a-f89b-483f-851c-55ab0ccbaeb9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C59",
+      "claim": "PU.1 occupancy was confirmed at the Bim -117 and Atp1b3 -35 regions in 38B9 and AML cells, but not in T-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ChIP-qPCR, we also confirmed PU.1 occupancy at these two regions in 38B9 and AML cells, but not in T-ALL (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "d14527fc-b27f-4b91-82f8-077c0b81d7d4",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C60",
+      "claim": "PU.1 knockdown led to a significant loss of TRIM33 occupancy at Bim and Atp1b3 in proportion to the loss of PU.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PU.1 knockdown led to a significant loss of TRIM33 occupancy at Bim and Atp1b3 in proportion to the loss of PU.1 (Figure 3D,E, and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figures 3D, 3E, and Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "ef250beb-cd80-4689-9da0-6a5893c851e5",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C61",
+      "claim": "PU.1-deficient B-ALL cells displayed normal proliferation and viability.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate this, we used shRNAs to derive PU.1-deficient B-ALL cells, which displayed normal proliferation and viability (Figure 3\u2014figure supplement 3, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations mentioned in text and Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "1a4bedbf-49af-48db-956d-b075c891a024",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C62",
+      "claim": "PU.1-deficient B-ALL cells harbored reduced H3K27ac at Bim -117.",
+      "claim_type": "EXPLICIT",
+      "source": "PU.1-deficient B-ALL cells also harbored reduced H3K27ac at Bim \u2013117 and reduced Bim mRNA levels, suggesting that PU.1 is responsible for maintaining this enhancer in an active state while, paradoxically, also facilitating TRIM33 recruitment (Figure 3F and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "0fcf08b0-f1f0-4594-a0cb-38aebe8afac2",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C63",
+      "claim": "PU.1-deficient B-ALL cells harbored reduced Bim mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "PU.1-deficient B-ALL cells also harbored reduced H3K27ac at Bim \u2013117 and reduced Bim mRNA levels, suggesting that PU.1 is responsible for maintaining this enhancer in an active state while, paradoxically, also facilitating TRIM33 recruitment (Figure 3F and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "dcb00cd4-e481-4530-b374-a16b262d13f4",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C64",
+      "claim": "PU.1 is responsible for maintaining the Bim -117 enhancer in an active state while also facilitating TRIM33 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "PU.1-deficient B-ALL cells also harbored reduced H3K27ac at Bim \u2013117 and reduced Bim mRNA levels, suggesting that PU.1 is responsible for maintaining this enhancer in an active state while, paradoxically, also facilitating TRIM33 recruitment (Figure 3F and Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ChIP-qPCR and RT-qPCR data showing effects of PU.1 knockdown",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5342fb7b-c1ef-4097-9256-578497ec1684",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C65",
+      "claim": "A high density of PU.1 underlies the skewed distribution of TRIM33 genomic occupancy observed in B-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that a high density of PU.1 underlies the skewed distribution of TRIM33 genomic occupancy observed in B-ALL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental observations including motif analysis and PU.1 knockdown effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "2b0dd5da-9ba5-47db-856c-7df76ca50f0c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C66",
+      "claim": "Knockdown of TRIM33 led to an increase in PU.1 occupancy at Bim -117.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of TRIM33 led to an increase in PU.1 occupancy and H3K27 acetylation at Bim \u2013117, suggesting that TRIM33 antagonizes PU.1 binding to DNA and suppresses enhancer activity, consistent with prior findings (Kusy et al., 2011) (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "bf2b9194-0397-466b-8559-96a4a48727cd",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C67",
+      "claim": "Knockdown of TRIM33 led to an increase in H3K27 acetylation at Bim -117.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of TRIM33 led to an increase in PU.1 occupancy and H3K27 acetylation at Bim \u2013117, suggesting that TRIM33 antagonizes PU.1 binding to DNA and suppresses enhancer activity, consistent with prior findings (Kusy et al., 2011) (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 3I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "85c840fa-ad05-472e-80b8-b44394901229",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C68",
+      "claim": "TRIM33 antagonizes PU.1 binding to DNA and suppresses enhancer activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of TRIM33 led to an increase in PU.1 occupancy and H3K27 acetylation at Bim \u2013117, suggesting that TRIM33 antagonizes PU.1 binding to DNA and suppresses enhancer activity, consistent with prior findings (Kusy et al., 2011) (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ChIP-qPCR data showing increased PU.1 and H3K27ac upon TRIM33 knockdown, and supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "4a2f1812-f6a4-44c2-8720-dadab9490bcd",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C69",
+      "claim": "Knockdown of PU.1 resulted in a reduced sensitivity of B-ALL cells to the lethal effects of TRIM33 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the functional importance of PU.1 antagonism by TRIM33, we found that knockdown of PU.1 resulted in a reduced sensitivity of B-ALL and 38B9 cells to the lethal effects of TRIM33 knockdown (Figure 3J and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 3J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "ff882665-51a7-415a-88c5-ac41acee6326",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C70",
+      "claim": "Knockdown of PU.1 resulted in a reduced sensitivity of 38B9 cells to the lethal effects of TRIM33 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the functional importance of PU.1 antagonism by TRIM33, we found that knockdown of PU.1 resulted in a reduced sensitivity of B-ALL and 38B9 cells to the lethal effects of TRIM33 knockdown (Figure 3J and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 3\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "7dbe9d83-2f96-457c-8b9c-916abc2f49a3",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C71",
+      "claim": "Bim encodes a BH3-only domain protein with a well-established pro-apoptotic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim encodes a BH3-only domain protein with a well-established pro-apoptotic function (Willis and Adams, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "e516afd5-0e0c-4b1c-806e-a476cca644a4",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C72",
+      "claim": "Bim-deficient B-ALL cells were completely resistant to the apoptotic effects of TRIM33 shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Bim-deficient B-ALL cells were completely resistant to the apoptotic effects of TRIM33 shRNAs, indicating that Bim is the critical downstream repression target of TRIM33 to maintain cell viability (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "40260543-1254-4960-9ecd-b0feec88c755",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C73",
+      "claim": "Bim is the critical downstream repression target of TRIM33 to maintain B-ALL cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Bim-deficient B-ALL cells were completely resistant to the apoptotic effects of TRIM33 shRNAs, indicating that Bim is the critical downstream repression target of TRIM33 to maintain cell viability (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from rescue experiment data shown in Figure 4B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "a192ce1e-b413-41b3-bc58-966a282b16fb",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C74",
+      "claim": "Atp1b3 knockdown did not alter the sensitivity of B-ALL to TRIM33 suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Atp1b3 knockdown did not alter the sensitivity of B-ALL to TRIM33 suppression (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mentioned as experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "ea8a3f0e-be4c-46e9-b6e2-6fdeff41d7f8",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C75",
+      "claim": "Three independent B-ALL clones harboring a homozygous deletion of the Bim -117 element did not require TRIM33 for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the effects observed upon Bim knockdown, three independent B-ALL clones harboring a homozygous deletion of the \u2212117 element did not require TRIM33 for viability (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "abd93d07-625e-4ec0-a945-9fd71f3a81cc",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C76",
+      "claim": "Bim knockdown rendered 38B9 cells resistant to the lethal effects of TRIM33 suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim knockdown and the deletion of the Bim \u2013117 region also rendered 38B9 cells resistant to the lethal effects of TRIM33 suppression (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "20ad7d8b-f674-459d-acaa-57087b08d9bd",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C77",
+      "claim": "Deletion of the Bim -117 region rendered 38B9 cells resistant to the lethal effects of TRIM33 suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim knockdown and the deletion of the Bim \u2013117 region also rendered 38B9 cells resistant to the lethal effects of TRIM33 suppression (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "cc0fc6f2-26ad-4cfc-aa19-cb088fb34b82",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C78",
+      "claim": "A single genomic binding site at the Bim locus accounts for the entire TRIM33 requirement in preventing B-ALL apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that a single genomic binding site at the Bim locus accounts for the entire TRIM33 requirement in preventing B-ALL apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CRISPR deletion and rescue experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "ead73684-5f46-4a6e-a3b1-bf2114aa04c5",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C79",
+      "claim": "Knockdown of TRIM33 in AML does not result in apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "While both B lymphoid and myeloid leukemia cells harbor PU.1 and TRIM33 at the Bim \u2013117 region, it is important to note that knockdown of TRIM33 in AML does not result in apoptosis or Bim upregulation (Figure 1D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by viability assay data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "f2c0c90a-c0a0-4a3b-b024-48ea31d1ed9a",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C80",
+      "claim": "Knockdown of TRIM33 in AML does not result in Bim upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While both B lymphoid and myeloid leukemia cells harbor PU.1 and TRIM33 at the Bim \u2013117 region, it is important to note that knockdown of TRIM33 in AML does not result in apoptosis or Bim upregulation (Figure 1D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "62c2dd1d-8165-42a7-8f83-73c9724d146c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C81",
+      "claim": "AML cells possess a large cluster of active enhancers located 66 kb upstream of Bim, which is not observed in B-ALL.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq analysis of H3K27ac revealed that AML cells possess a large cluster of active enhancers located 66 kb upstream of Bim, which is not observed in B-ALL (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "9a8e3206-fec7-48a5-ad27-a8015d1d31e0",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C82",
+      "claim": "The level of H3K27ac at the AML-specific enhancer cluster at -66 kb is much greater than that observed at the -117 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the level of H3K27ac at this AML-specific enhancer cluster is much greater than that observed at the \u2212117 region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-seq data comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "c15abdd0-c7ae-4d2f-82b7-bd00ac34c0c1",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C83",
+      "claim": "The AML-specific enhancers at the -66 kb region might be the dominant regulatory elements at the Bim locus in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads us to speculate that the AML-specific enhancers at the \u221266 kb region might be the dominant regulatory elements at the Bim locus in this cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of ChIP-seq data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5ba6e028-b9e6-444c-b5e2-af20553bfbc4",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C84",
+      "claim": "The overall strength of AML-specific enhancers may diminish the functional significance of the -117 element, thereby rendering TRIM33 dispensable for AML survival.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall strength of these enhancers in AML may diminish the functional significance of the \u2212117 element, thereby rendering TRIM33 dispensable for AML survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of experimental observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "699ac210-08c0-4911-bdee-7826dda87097",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C85",
+      "claim": "The role of TRIM33 as a negative regulator of enhancer activity is reminiscent of LSD1.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of TRIM33 as a negative regulator of enhancer activity is reminiscent of LSD1, a histone demethylase that has been shown previously to suppress active enhancers during embryonic stem (ES) cell differentiation (Whyte et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published literature on LSD1",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "24308a52-3d69-4b5f-b2a7-bf866c920294",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C86",
+      "claim": "LSD1 suppresses thousands of enhancers in ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a key distinction we make here is that LSD1 suppresses thousands of enhancers in ES cells, while TRIM33 preferentially accumulates at a small number of regulatory elements in the B-ALL genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "74fe86a4-fbf9-4fd9-a679-661e9794f9a1",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C87",
+      "claim": "The unusual enhancer selectivity of TRIM33 in B-ALL is traced to the density of PU.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We trace this unusual enhancer selectivity of TRIM33 in B-ALL to the density of PU.1, a TF which has been shown previously to associate with TRIM33 (Kusy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "683f388e-9a2b-47a1-aae3-ce86fa0dc23a",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C88",
+      "claim": "The binding interaction between TRIM33 and PU.1 is likely to be cooperative on motif-rich DNA elements.",
+      "claim_type": "EXPLICIT",
+      "source": "This binding interaction is likely to be cooperative on motif-rich DNA elements, which would account for the biased accumulation of TRIM33 at enhancers harboring an exceptional PU.1 density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of experimental observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "c7c63b07-9c06-4733-8861-068c9dcc0eaa",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C89",
+      "claim": "Other transcription factors such as TCF3/E2A are also likely to recruit TRIM33.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ChIP-seq analysis of TRIM33 in myeloid, B lymphoid, and T lymphoid leukemias suggests that other TFs are also likely to recruit TRIM33, such as TCF3/E2A (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ChIP-seq and motif analysis data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "04a39a13-7388-4836-a191-18183bb92eb6",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C90",
+      "claim": "TRIM33 is the first example of a mammalian transcriptional regulator that performs an essential function through a single genomic binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, TRIM33 is the first example of a mammalian transcriptional regulator that performs an essential function through a single genomic binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comprehensive experimental characterization and comparison with existing knowledge",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "94f00636-78e0-4732-b0b5-dbdbb1221e58",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C91",
+      "claim": "The selective occupancy of TRIM33 within the active enhancer landscape may account for the minimal phenotypes observed in TRIM33-deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The selective occupancy of TRIM33 within the active enhancer landscape may account for the minimal phenotypes observed in TRIM33-deficient mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of experimental observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "7e679aab-158d-444e-8523-7665035e134a",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C92",
+      "claim": "BRD4 is essential for the maintenance of many cancer types and for the homeostasis of several normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to the effects of suppressing BRD4, a more general cofactor that is essential for the maintenance of many cancer types and for the homeostasis of several normal tissues (Bolden et al., 2014; Shi and Vakoc, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "7cc16d41-1e00-4d87-a281-b3a876cc659c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C93",
+      "claim": "The localization of TRIM33 to one lineage-specific enhancer upstream of Bim renders B-ALL cells hypersensitive to loss of TRIM33.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, it is the localization of TRIM33 to one lineage-specific enhancer upstream of Bim that renders B-ALL cells hypersensitive to loss of TRIM33.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from CRISPR deletion and rescue experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "57711e18-bae9-41a2-8861-59ced210e080",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C94",
+      "claim": "The similar sensitivity of normal and transformed B cells to TRIM33 inhibition implies that the regulatory mechanisms defined in B cell leukemia are likely to have evolved to control normal B cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar sensitivity of normal and transformed B cells to TRIM33 inhibition implies that the regulatory mechanisms defined here in B cell leukemia are likely to have evolved to control normal B cell development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of transgenic mouse and B-ALL cell data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "dbe491f3-c126-4d61-9749-88bf3a182ef8",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C95",
+      "claim": "Bim is upregulated as a means to eliminate auto-reactive B cells and to prevent autoimmune disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Bim is upregulated as a means to eliminate auto-reactive B cells and to prevent autoimmune disease, suggesting a rationale for precise modulation of enhancer activity at the Bim locus by TRIM33 to regulate adaptive immunity (Bouillet et al., 1999; Enders et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "d162a6f9-adda-4006-a0de-f607f3b9ed1e",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C96",
+      "claim": "A reversible depletion of normal B cells is a well-tolerated side effect of the anti-CD20 antibody rituximab.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, a reversible depletion of normal B cells is a well-tolerated side effect of the anti-CD20 antibody rituximab, which is an efficacious therapy in mature B cell neoplasms and in autoimmune disease (Coiffier et al., 2002; Edwards et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published clinical literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "845f4c66-5fb3-4cc7-8868-166d10fd91dc",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C97",
+      "claim": "Rituximab is an efficacious therapy in mature B cell neoplasms and in autoimmune disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, a reversible depletion of normal B cells is a well-tolerated side effect of the anti-CD20 antibody rituximab, which is an efficacious therapy in mature B cell neoplasms and in autoimmune disease (Coiffier et al., 2002; Edwards et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published clinical literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "af753347-4350-4922-8843-0be711128021",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C98",
+      "claim": "TRIM33 is a promising therapeutic target.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our findings also implicate TRIM33 as a promising therapeutic target, since one of the major phenotypic abnormalities in mice experiencing systemic TRIM33 inhibition is a selective and reversible B lymphocyte deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations in transgenic mice and comparison with rituximab",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "61fadff7-65c9-4c58-9317-c51e66bb3436",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C99",
+      "claim": "Bromodomain modules such as BRD4 have proven to be amenable to direct chemical inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting of TRIM33 is particularly attractive since other bromodomain modules (e.g., BRD4) have proven to be amenable to direct chemical inhibition (Prinjha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "f8b0c6c0-0353-4676-a707-57f13c9d036c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C100",
+      "claim": "A modest expansion of myeloid cells is observed upon short durations of TRIM33 suppression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe a modest expansion of myeloid cells upon short durations of TRIM33 suppression in vivo and Trim33\u2212/\u2212 mice have been shown to develop chronic myelomonocytic leukemia (Aucagne et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data from transgenic mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "e7954eb6-19c4-4528-95c6-abc6e0516ffd",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C101",
+      "claim": "Trim33\u2212/\u2212 mice have been shown to develop chronic myelomonocytic leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observe a modest expansion of myeloid cells upon short durations of TRIM33 suppression in vivo and Trim33\u2212/\u2212 mice have been shown to develop chronic myelomonocytic leukemia (Aucagne et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "ef167a8a-0382-4b46-a949-3f685a4e8f5a",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C102",
+      "claim": "Long-term inhibition of TRIM33 might have pro-tumorigenic effects in certain tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, long-term inhibition of TRIM33 might have pro-tumorigenic effects in certain tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on myeloid expansion and published literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "22303ca7-4724-465b-908c-97610c678907",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "claim_id": "C103",
+      "claim": "TRIM33-inhibition would be expected to unleash an apoptosis-promoting enhancer element.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our findings justify consideration of TRIM33-inhibition as a therapeutic approach in B cell neoplasms, which would be expected to unleash an apoptosis-promoting enhancer element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental findings showing TRIM33 suppresses Bim enhancer activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9f7c6976-da13-46dd-811b-e21b23b041df",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TRIM33 is a lineage dependency in B cell neoplasms. An RNAi screen identified TRIM33 as uniquely required in B-ALL compared to AML, with validation showing sensitivity across multiple B cell lines but not in myeloid or T cell leukemias. TRIM33 knockdown induces apoptosis in B-ALL cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C35 provide converging evidence from RNAi screening (C26-C29), validation in multiple B cell lines (C30-C31), specificity testing in non-B cell leukemias (C32-C33), and apoptosis assays (C34). The correlation between knockdown efficiency and viability loss (C29) supports on-target effects. The conclusion (C1, C35) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo TRIM33 knockdown in transgenic mice causes selective B lymphocyte deficiency with minimal effects on other tissues. B cell production is reversible upon restoring TRIM33 expression, and other hematopoietic lineages and tissues remain largely unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 demonstrate consistent in vivo phenotypes using doxycycline-regulated shRNA mice with flow cytometry (C37-C38), reversibility experiments (C39), and histological analysis (C40-C41). The selective B cell phenotype (C42) is well-documented. Agreement with prior Trim33\u2212/\u2212 mouse studies (C43) provides independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "90c0fdf6-df9c-4147-a7b9-08d9c712cae8",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TRIM33 preferentially associates with two lineage-specific enhancers located 117 kb upstream of Bim and 35 kb upstream of Atp1b3 in B-ALL. These are the two most upregulated genes upon TRIM33 depletion and represent the strongest sites of TRIM33 enrichment genome-wide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 integrate RNA-seq (C44) and ChIP-seq data (C45, C48) showing correlation between TRIM33 occupancy and gene regulation. Histone modification patterns (C46) support enhancer identity. Conservation across cell types (C47) strengthens the finding. The biased genomic distribution (C48) is a key observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "8830ea1b-5305-43f5-94e3-0f0907604406",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Bim -117 and Atp1b3 -35 enhancers harbor exceptional densities of PU.1 recognition motifs (17 and 14 instances respectively) and are outliers compared to other PU.1-occupied sites in terms of both motif density and PU.1 enrichment levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C49-C50 report motif analysis results showing high PU.1 motif density. Claims C52, C56-C57 demonstrate these regions are outliers through comparative analysis. The motif analysis methodology (FIMO) is appropriate and the outlier status is quantitatively demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "a1a537e0-31bc-4601-8821-ca58c170bdff",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PU.1 recruits TRIM33 to the Bim -117 and Atp1b3 -35 enhancers. PU.1 knockdown leads to loss of TRIM33 occupancy at these sites proportional to PU.1 loss, while also reducing H3K27ac and Bim expression. The high density of PU.1 underlies the skewed genomic distribution of TRIM33.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C60 provide direct evidence for PU.1-dependent TRIM33 recruitment through knockdown experiments. ChIP-seq validation (C54-C55, C59) confirms PU.1 occupancy. The effects on enhancer activity (C62-C63) and the mechanistic interpretation (C64-C65) are supported by the data. Prior interaction studies (C53) provide additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "8308d50f-e814-4abf-8e31-171eca2db02c",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TRIM33 antagonizes PU.1 function at co-occupied enhancers. TRIM33 knockdown increases both PU.1 occupancy and H3K27 acetylation at Bim -117, and PU.1 knockdown reduces sensitivity to TRIM33 loss in B-ALL and 38B9 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 demonstrate increased PU.1 and H3K27ac upon TRIM33 knockdown through ChIP-qPCR. The antagonistic relationship (C6, C68) is inferred from this data and supported by prior literature. Functional validation through genetic epistasis experiments (C69-C70) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TRIM33 performs its essential function through a single cis element at the Bim locus. Deletion of the Bim -117 enhancer or Bim knockdown renders TRIM33 dispensable for B-ALL and 38B9 cell survival, indicating Bim is the critical downstream target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 show complete rescue of TRIM33 knockdown lethality by Bim knockdown. CRISPR deletion experiments (C8, C75-C77) demonstrate the same rescue phenotype across multiple independent clones in both B-ALL and 38B9 cells. The conclusion that a single genomic site accounts for TRIM33 function (C2, C78) is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "4d0c7d9a-0a1a-4a52-8009-86d12913483e",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRIM33 prevents apoptosis in B lymphoblastic leukemia by interfering with enhancer-mediated Bim activation. Bim encodes a pro-apoptotic BH3-only domain protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 establishes Bim's pro-apoptotic function through citation. Claim C9 integrates multiple lines of evidence including TRIM33 knockdown leading to Bim upregulation and apoptosis, and Bim knockdown rescuing TRIM33 loss. The mechanistic conclusion is well-supported by the collective data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3a8627f3-e8ea-4098-b028-16a5720421b9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TRIM33 knockdown in AML does not result in apoptosis or Bim upregulation, despite TRIM33 and PU.1 occupancy at Bim -117. AML cells possess a dominant enhancer cluster at -66 kb with much higher H3K27ac levels, which may render the -117 element and TRIM33 dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 document the lack of AML phenotype with experimental data. Claims C81-C82 identify an AML-specific enhancer cluster through ChIP-seq. However, claims C83-C84 are explicitly speculative interpretations without direct experimental validation. The proposed mechanism for AML insensitivity requires additional functional testing of the -66 kb enhancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "d4753f9f-8bc3-456d-a2b4-44c6e0cfac40",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Bim -117 and Atp1b3 -35 regions are not super-enhancers, as H3K27ac levels are not exceptionally skewed toward these locations compared to the genome-wide distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by ChIP-seq data analysis and appropriate citation to super-enhancer literature. The distinction between TRIM33 enrichment pattern and H3K27ac pattern is clearly demonstrated, ruling out the super-enhancer classification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "5763545d-f1a7-41fc-8136-d4e20ed7d1cf",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Atp1b3 knockdown did not alter the sensitivity of B-ALL to TRIM33 suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is stated as an experimental observation, though data is not shown. This negative result helps establish Bim as the specific critical target rather than Atp1b3, despite both genes being upregulated upon TRIM33 loss.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "416f865d-e3fb-4ec8-8ee3-9bbee5b91f82",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The unusual enhancer selectivity of TRIM33 is traced to PU.1 density, likely through cooperative binding on motif-rich DNA elements. Other transcription factors such as TCF3/E2A may also recruit TRIM33 in different cellular contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by experimental data and prior literature. Claim C88 is a reasonable mechanistic interpretation though explicitly speculative. Claim C89 is inferred from ChIP-seq and motif analysis across different cell types, suggesting broader applicability of the recruitment mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "37f40cc9-b0eb-4990-9a6d-377e79bfadb9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TRIM33 is the first example of a mammalian transcriptional regulator that performs an essential function through a single genomic binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 represents a significant conceptual advance supported by comprehensive experimental characterization. The CRISPR deletion and rescue experiments definitively demonstrate single-site functionality, which is unprecedented for mammalian transcriptional regulators based on existing literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "d4a10ce2-18b8-4c1b-b037-f3a9209c2cb7",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The selective occupancy of TRIM33 at a single lineage-specific enhancer may explain minimal phenotypes in TRIM33-deficient mice and renders B-ALL cells hypersensitive to TRIM33 loss. The regulatory mechanisms likely evolved to control normal B cell development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C93 are interpretations well-supported by the experimental data showing selective B cell phenotypes. Claim C92 provides context through literature comparison. Claim C94 is a reasonable inference from the similarity between normal and transformed B cell sensitivity to TRIM33 loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TRIM33 is a promising therapeutic target for B cell neoplasms. The selective B lymphocyte deficiency phenotype is similar to rituximab's well-tolerated effects. However, myeloid expansion and potential pro-tumorigenic effects warrant caution for long-term inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 establish clinical precedent through literature. Claims C98-C99 present TRIM33 as a therapeutic target based on experimental findings and druggability of bromodomains. Claims C100-C102 appropriately note potential risks based on observed myeloid expansion and published literature. The balanced assessment of therapeutic potential and risks (C103) is well-reasoned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "196638bb-da62-476c-b3ab-60eb6290e3eb",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Mammalian transcription factors typically recognize short motifs that exist at high frequency in genomes and occupy thousands of sites per cell type, contrasting with prokaryotic TFs that can occupy as few as one or two sites for precise transcriptional control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 establish the conceptual framework through appropriate citations to established literature. The specific examples (MyoD, Pax5) and the prokaryotic comparison provide context for the novelty of the TRIM33 findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "603dc00a-5b54-4632-9bd3-0632988b0e03",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "TRIM33 belongs to the TRIM family of E3 ubiquitin ligases and functions as a transcriptional cofactor with roles in TGF\u03b2 signaling, erythroid gene transcription, and chromatin binding through its PHD-bromodomain module.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25 provide background on TRIM33 through appropriate citations to published literature. The conflicting reports on TRIM33's role with SCL (C22 vs C23) are appropriately noted, reflecting the state of the field prior to this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "3f50727f-f6b9-4f60-9ea4-588e64a5ee6b",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PU.1 is an essential hematopoietic transcription factor expressed in B lymphoid and myeloid lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is established knowledge supported by appropriate citation. This background information is essential for understanding TRIM33's recruitment mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    },
+    {
+      "id": "915e7ff6-1801-4ddb-9626-f4615ea570c2",
+      "content_id": "7f5b9fe3-0064-4711-b6cd-05857b99d1b0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "TRIM33's role as a negative regulator of enhancer activity is reminiscent of LSD1, though LSD1 suppresses thousands of enhancers in ES cells while TRIM33 shows exceptional selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 provide appropriate comparison with published literature on LSD1, highlighting the key distinction in genomic selectivity that makes TRIM33 unique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:48.957775Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e9ba6742-230f-4a81-9676-21e1654340c5",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "4f3d9e7b-2198-4479-8915-6b3801a5c2ab",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "5db1aacc-f406-42aa-9c99-9253306e4a9c",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "252ee690-6ae7-4b77-8b8a-abc07ec9dd45",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "9084eb8d-d43b-4d0d-8832-11d4a1999d87",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "d000c29c-0d46-4ba3-9b77-d6573afd282c",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "965ced39-b7e1-449c-8705-8fa288230f6d",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "1db32fff-f2c7-4151-a05f-f803fe7ea7d6",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "859e4c4b-de12-48fe-ab6c-da62ba41f597",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "4e4975a9-b9bc-4b54-a68f-41f2201eab69",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "3682778a-404d-481a-819f-39bbf9ff3a22",
+      "result_id": "9f7c6976-da13-46dd-811b-e21b23b041df"
+    },
+    {
+      "claim_id": "3c6c7638-3f38-4517-9c0d-9507f2de6c9f",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "9ba9b4e6-c25b-419d-a202-4e9a0339e5eb",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "3be949d9-c548-4169-a240-07432db5c31a",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "f903c4fc-1103-4f47-8351-4a551ff9592e",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "3191748f-6fd2-4df7-b7c0-117db1815112",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "cbe34806-929d-4ed5-a53e-65b74f961c48",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "df188cc8-710b-4f8c-87f2-246fd68b7ec6",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "6620495c-5000-4ddb-a738-2f2669f72db1",
+      "result_id": "1c24b769-07a2-4c1e-8cf8-34ba547c5dad"
+    },
+    {
+      "claim_id": "b46c7144-6720-494f-bb7f-ae9a4d1aa376",
+      "result_id": "90c0fdf6-df9c-4147-a7b9-08d9c712cae8"
+    },
+    {
+      "claim_id": "9d3cb8d8-7b54-44d9-a0a3-89f552e629f6",
+      "result_id": "90c0fdf6-df9c-4147-a7b9-08d9c712cae8"
+    },
+    {
+      "claim_id": "d4701ce7-8f5d-479d-bac9-ffc97f25beef",
+      "result_id": "90c0fdf6-df9c-4147-a7b9-08d9c712cae8"
+    },
+    {
+      "claim_id": "fac9e422-602a-4652-a66f-bae40ac9e120",
+      "result_id": "90c0fdf6-df9c-4147-a7b9-08d9c712cae8"
+    },
+    {
+      "claim_id": "5b4bc5e7-9b3b-4844-8568-48cb9f02f943",
+      "result_id": "90c0fdf6-df9c-4147-a7b9-08d9c712cae8"
+    },
+    {
+      "claim_id": "7326ff28-f597-433a-94eb-62697cd48bf4",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "0758fa13-fb78-49d0-812e-d356551aa6d7",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "f06021a0-25cc-4d5c-8741-9ddecd332f3c",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "5bf7917f-3e16-42d3-857d-ec6d89994e71",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "82fa1b66-d3d9-4345-bec5-1f1bf26dc9e7",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "8ff34d92-b84d-4b63-af45-7a11793577ef",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "6a185ccf-90f8-4da8-aa04-bc9b4dd3eb6a",
+      "result_id": "8830ea1b-5305-43f5-94e3-0f0907604406"
+    },
+    {
+      "claim_id": "46aea4ae-730f-439e-a80c-c21cebf2eb2c",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "48090b56-a9d8-4b58-8bf0-3e6a70b37577",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "debd7b01-ce7d-4a17-9e05-e1965c851cc5",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "f07b6dbc-840b-4384-9db8-ec81d0cdfbed",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "51e3a95a-f89b-483f-851c-55ab0ccbaeb9",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "d14527fc-b27f-4b91-82f8-077c0b81d7d4",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "ef250beb-cd80-4689-9da0-6a5893c851e5",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "1a4bedbf-49af-48db-956d-b075c891a024",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "0fcf08b0-f1f0-4594-a0cb-38aebe8afac2",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "dcb00cd4-e481-4530-b374-a16b262d13f4",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "5342fb7b-c1ef-4097-9256-578497ec1684",
+      "result_id": "a1a537e0-31bc-4601-8821-ca58c170bdff"
+    },
+    {
+      "claim_id": "e7858ad2-72a9-4c98-be7b-aac3594ae3c9",
+      "result_id": "8308d50f-e814-4abf-8e31-171eca2db02c"
+    },
+    {
+      "claim_id": "2b0dd5da-9ba5-47db-856c-7df76ca50f0c",
+      "result_id": "8308d50f-e814-4abf-8e31-171eca2db02c"
+    },
+    {
+      "claim_id": "bf2b9194-0397-466b-8559-96a4a48727cd",
+      "result_id": "8308d50f-e814-4abf-8e31-171eca2db02c"
+    },
+    {
+      "claim_id": "85c840fa-ad05-472e-80b8-b44394901229",
+      "result_id": "8308d50f-e814-4abf-8e31-171eca2db02c"
+    },
+    {
+      "claim_id": "4a2f1812-f6a4-44c2-8720-dadab9490bcd",
+      "result_id": "8308d50f-e814-4abf-8e31-171eca2db02c"
+    },
+    {
+      "claim_id": "ff882665-51a7-415a-88c5-ac41acee6326",
+      "result_id": "8308d50f-e814-4abf-8e31-171eca2db02c"
+    },
+    {
+      "claim_id": "601d6f70-cf91-4360-81ad-1fe7360407e6",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "0100fe9b-a457-49c7-99e3-2be9987cdd74",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "14fd8186-0c5b-48f7-877e-f16a87a2de04",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "e516afd5-0e0c-4b1c-806e-a476cca644a4",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "40260543-1254-4960-9ecd-b0feec88c755",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "ea8a3f0e-be4c-46e9-b6e2-6fdeff41d7f8",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "abd93d07-625e-4ec0-a945-9fd71f3a81cc",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "20ad7d8b-f674-459d-acaa-57087b08d9bd",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "cc0fc6f2-26ad-4cfc-aa19-cb088fb34b82",
+      "result_id": "9a99160c-1f92-4a2f-9695-38dc1b6a0d49"
+    },
+    {
+      "claim_id": "37694f06-cdba-4b86-b31d-046259063bdd",
+      "result_id": "4d0c7d9a-0a1a-4a52-8009-86d12913483e"
+    },
+    {
+      "claim_id": "7dbe9d83-2f96-457c-8b9c-916abc2f49a3",
+      "result_id": "4d0c7d9a-0a1a-4a52-8009-86d12913483e"
+    },
+    {
+      "claim_id": "ead73684-5f46-4a6e-a3b1-bf2114aa04c5",
+      "result_id": "3a8627f3-e8ea-4098-b028-16a5720421b9"
+    },
+    {
+      "claim_id": "f2c0c90a-c0a0-4a3b-b024-48ea31d1ed9a",
+      "result_id": "3a8627f3-e8ea-4098-b028-16a5720421b9"
+    },
+    {
+      "claim_id": "62c2dd1d-8165-42a7-8f83-73c9724d146c",
+      "result_id": "3a8627f3-e8ea-4098-b028-16a5720421b9"
+    },
+    {
+      "claim_id": "9a8e3206-fec7-48a5-ad27-a8015d1d31e0",
+      "result_id": "3a8627f3-e8ea-4098-b028-16a5720421b9"
+    },
+    {
+      "claim_id": "c15abdd0-c7ae-4d2f-82b7-bd00ac34c0c1",
+      "result_id": "3a8627f3-e8ea-4098-b028-16a5720421b9"
+    },
+    {
+      "claim_id": "5ba6e028-b9e6-444c-b5e2-af20553bfbc4",
+      "result_id": "3a8627f3-e8ea-4098-b028-16a5720421b9"
+    },
+    {
+      "claim_id": "8fdec535-3593-4385-bf22-a6557e5da6db",
+      "result_id": "d4753f9f-8bc3-456d-a2b4-44c6e0cfac40"
+    },
+    {
+      "claim_id": "a192ce1e-b413-41b3-bc58-966a282b16fb",
+      "result_id": "5763545d-f1a7-41fc-8136-d4e20ed7d1cf"
+    },
+    {
+      "claim_id": "74fe86a4-fbf9-4fd9-a679-661e9794f9a1",
+      "result_id": "416f865d-e3fb-4ec8-8ee3-9bbee5b91f82"
+    },
+    {
+      "claim_id": "683f388e-9a2b-47a1-aae3-ce86fa0dc23a",
+      "result_id": "416f865d-e3fb-4ec8-8ee3-9bbee5b91f82"
+    },
+    {
+      "claim_id": "c7c63b07-9c06-4733-8861-068c9dcc0eaa",
+      "result_id": "416f865d-e3fb-4ec8-8ee3-9bbee5b91f82"
+    },
+    {
+      "claim_id": "04a39a13-7388-4836-a191-18183bb92eb6",
+      "result_id": "37f40cc9-b0eb-4990-9a6d-377e79bfadb9"
+    },
+    {
+      "claim_id": "94f00636-78e0-4732-b0b5-dbdbb1221e58",
+      "result_id": "d4a10ce2-18b8-4c1b-b037-f3a9209c2cb7"
+    },
+    {
+      "claim_id": "7e679aab-158d-444e-8523-7665035e134a",
+      "result_id": "d4a10ce2-18b8-4c1b-b037-f3a9209c2cb7"
+    },
+    {
+      "claim_id": "7cc16d41-1e00-4d87-a281-b3a876cc659c",
+      "result_id": "d4a10ce2-18b8-4c1b-b037-f3a9209c2cb7"
+    },
+    {
+      "claim_id": "57711e18-bae9-41a2-8861-59ced210e080",
+      "result_id": "d4a10ce2-18b8-4c1b-b037-f3a9209c2cb7"
+    },
+    {
+      "claim_id": "dbe491f3-c126-4d61-9749-88bf3a182ef8",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "d162a6f9-adda-4006-a0de-f607f3b9ed1e",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "845f4c66-5fb3-4cc7-8868-166d10fd91dc",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "af753347-4350-4922-8843-0be711128021",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "61fadff7-65c9-4c58-9317-c51e66bb3436",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "f8b0c6c0-0353-4676-a707-57f13c9d036c",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "e7954eb6-19c4-4528-95c6-abc6e0516ffd",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "ef167a8a-0382-4b46-a949-3f685a4e8f5a",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "22303ca7-4724-465b-908c-97610c678907",
+      "result_id": "972dfd73-8a89-46a1-9ce3-f57a97c46de9"
+    },
+    {
+      "claim_id": "1b4a1558-c970-44c5-af7b-655c6cec68c9",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "2a98e8b8-71c5-4045-9a72-bf99851d294b",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "96d709ac-5c0f-41ee-8ffa-361d63fc5d23",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "5208809a-119f-47e5-a5d9-7853c09980a9",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "6593622d-e89a-466b-af09-8891a4fef162",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "1c7b18d4-d7b9-4b14-a2d9-c9b987564a67",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "0a0e537d-4aaa-42a0-8751-98fbd0feab22",
+      "result_id": "196638bb-da62-476c-b3ab-60eb6290e3eb"
+    },
+    {
+      "claim_id": "3d27a1e0-afbf-4e65-96f7-ed8aba8c9023",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "2bcc41b2-2e97-4596-8ceb-5cbd15eed265",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "3222cb8d-8fbe-4d36-b16e-eb330df2c32c",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "459d9c9c-5324-4392-a736-481865240261",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "2a159914-0c07-4567-b46a-ddba16dc8452",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "85c31613-2d89-44e6-9bbc-435b1d21908d",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "7e0936be-feaa-49da-b7b1-ba556ecde226",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "cd3a1152-4d0d-4cf9-83bd-2f45a5b8ae05",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "9f2ae79f-1232-4791-9f6c-4254ec50f749",
+      "result_id": "603dc00a-5b54-4632-9bd3-0632988b0e03"
+    },
+    {
+      "claim_id": "0846c5e9-c630-44e6-a5e5-451f435f9611",
+      "result_id": "3f50727f-f6b9-4f60-9ea4-588e64a5ee6b"
+    },
+    {
+      "claim_id": "699ac210-08c0-4911-bdee-7826dda87097",
+      "result_id": "915e7ff6-1801-4ddb-9626-f4615ea570c2"
+    },
+    {
+      "claim_id": "24308a52-3d69-4b5f-b2a7-bf866c920294",
+      "result_id": "915e7ff6-1801-4ddb-9626-f4615ea570c2"
+    }
+  ],
+  "comparisons": []
+}

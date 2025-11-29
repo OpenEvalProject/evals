@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Two independent genetic screens identified suppressors of RSC mutations: an SGA screen for rsc7\u0394 suppressors yielded isw1\u0394 as the sole chromatin-related suppressor among four viable combinations, and a histone mutagenesis screen for rsc2-V457M suppressors yielded mutations in the histone H4 basic patch (H4 RH17,18CY) and H3 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C22 collectively describe two independent genetic screens that converge on ISW1/histone H4 basic patch as suppressors of RSC mutations. The SGA screen (C20-C22) identified isw1\u0394 with appropriate controls (complementation, specificity), and the histone screen (C3-C4, C25-C30) identified H4 basic patch mutations. Both screens are well-documented with figures and appropriate genetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A histone mutagenesis screen of 20,000 transformants yielded 17 suppressors of rsc2-V457M, including H3 mutations (A7V, A7T, T6I, G33V) and one H4 RH17,18CY double mutation, all of which also suppressed other RSC alleles (rsc2-D461G, rsc2-Y337H, rsc4-2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe the histone mutagenesis screen results with specific mutation identities and validation across multiple RSC alleles. The screen design, scale (20,000 transformants), and validation approach (plasmid isolation, retransformation, testing on multiple alleles) are appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The H4 RH17,18CY suppressor mutations are located in the histone H4 basic patch adjacent to K16, but suppression is not due to loss of K16 acetylation, as K16 mutations (K16Q, K16R, K16G) caused synthetic sickness rather than suppression when combined with rsc2-V457M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe the location of H4 mutations and rule out K16 acetylation as the mechanism. The genetic experiments (C34) with K16 mutants showing synthetic sickness rather than suppression provide strong evidence against the K16 acetylation model. Western blot results (C33) are appropriately interpreted with caveats about antibody recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The H4 basic patch mutations suppress RSC through a mechanism independent of Dot1 or Sir3, as H3 K79A showed no effect, dot1\u0394 caused synthetic sickness, and sir3\u0394 failed to suppress rsc2-V457M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 systematically rule out alternative mechanisms involving other known basic patch-binding factors (Dot1, Sir3). The genetic experiments are appropriate controls and the results clearly distinguish ISW1 as the relevant factor, though the conclusion is somewhat indirect (ruling out alternatives rather than direct demonstration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Loss of ISW1 catalytic function suppresses multiple RSC mutations (rsc2-V457M, rsc2-D461G, rsc3-3, rsc4-2, rsc7\u0394) across various phenotypes (temperature sensitivity, drug sensitivity), with suppression specific to RSC and not SWI/SNF, and requiring ISW1 catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 demonstrate broad suppression of RSC mutations by isw1\u0394 with appropriate controls: complementation (C42), catalytic mutant (C43), epistasis with H4 mutations (C44), specificity testing with ISW2 (C45) and SNF2 (C47), and testing multiple RSC alleles (C46). The genetic evidence is comprehensive and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Suppression of RSC mutations is specific to the ISW1a complex (containing Ioc3) and not ISW1b (containing Ioc2/Ioc4), as ioc3\u0394 suppressed rsc2, rsc4-2, and rsc1 mutations, while ioc2\u0394 and ioc4\u0394 caused synthetic lethality with rsc2-V457M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 distinguish between ISW1a and ISW1b complexes through genetic analysis of complex-specific subunits. The contrasting results (suppression by ioc3\u0394 vs. synthetic lethality with ioc2\u0394/ioc4\u0394) provide strong evidence for ISW1a-specific antagonism with RSC. The genetic logic is sound and well-documented in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Loss of ISW1a (isw1\u0394 or ioc3\u0394) suppresses synthetic lethality between rsc2 and set1\u0394 or gcn5\u0394, suggesting that removing ISW1a reduces RSC's dependence on histone modifications (H3K4me and H3K14ac).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 demonstrate that isw1\u0394/ioc3\u0394 can bypass the requirement for histone modifications that normally activate RSC. The genetic experiments are appropriate and the interpretation is logical, though the mechanism is inferred rather than directly demonstrated. The results are consistent with the antagonism model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "RSC and ISW1a largely co-localize across the genome, with 43% of promoters showing RSC enrichment (FDR<1%) and 224 of 230 ISW1a-enriched promoters also showing RSC enrichment, demonstrating positive correlation (r=0.6) and co-occupancy at Pol II promoters, ncRNA genes, and tRNA genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C64 describe comprehensive ChIP-chip/seq analysis showing genome-wide co-localization of RSC and ISW1a. The statistical analysis (FDR thresholds, correlation) is appropriate, and the results are validated across multiple genomic features and by multiple methods (microarray and sequencing, Figure 4\u2014figure supplement 1). The co-localization supports the antagonism model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Loss of RSC reduces mean expression of coding and non-coding genes (but not tRNAs) by approximately twofold, with isw1\u0394 and ioc3\u0394 showing smaller effects; double mutants (rsc2 isw1 or rsc2 ioc3) do not restore global gene expression, but 20 genes show partial restoration of expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe HybMap expression analysis showing that suppression is not due to global restoration of gene expression but rather affects a subset of genes. The analysis is appropriate, though limited by the custom array format (649 genes). The identification of 20 suppressed genes (C70) is consistent with a gene-specific rather than global mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Loss of RSC causes nucleosome occupancy gain at NDRs and leftward shifts of nucleosomes toward the TSS; these changes are attenuated in rsc isw1 double mutants, with nucleosomal profiles more similar to wild type, demonstrating opposing functions of RSC and ISW1 in nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C71-C77 describe genome-wide nucleosome occupancy analysis showing that isw1\u0394 suppresses the chromatin defects caused by RSC loss. The use of the sth1-degron allele for complete RSC depletion is appropriate, and the results are validated by both microarray and sequencing (Figure 5\u2014figure supplement 1). This provides direct molecular evidence for RSC-ISW1 antagonism at the chromatin level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Promoters cluster into two architectural classes based on response to RSC loss: clusters 1-4 display prototypical open/structured architecture (\u22121, NDR, +1 nucleosome) with well-defined predicted NDRs, while clusters 5-6 lack stereotypical organization (closed/unstructured) with broad shallow predicted NDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 describe k-means clustering analysis that identifies two promoter architectures based on nucleosome occupancy patterns and their response to RSC loss. The comparison with predicted nucleosome occupancy (C81-C82) validates the classification. The analysis is appropriate and consistent with prior literature (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C83",
+      "C84"
+    ],
+    "result": "Closed/unstructured promoters (clusters 5-6, lacking NDRs) have the highest occupancy of both RSC and ISW1a and show the most severe transcriptional reduction in rsc2 mutants, while open/structured promoters (clusters 1-4) show stronger chromatin changes but less transcriptional impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C83-C84 integrate ChIP occupancy data with expression analysis to show that remodeler occupancy and transcriptional dependence are highest at closed promoters, while chromatin structural changes are most evident at open promoters. This apparent paradox is addressed in the Discussion and represents an important insight into differential mechanisms at different promoter types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Closed promoters (clusters 5-6) show enrichment of multiple remodelers (ISW2, SWI/SNF) but depletion of H2AZ, and exhibit the highest histone turnover (particularly cluster 6), correlating with high remodeler occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 integrate published data on other chromatin factors with the current results to characterize closed promoters. The analysis of published datasets is appropriate, and the correlation between remodeler occupancy and histone turnover (C88) supports the model of dynamic chromatin at closed promoters. However, the analysis relies on published data rather than new experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Open promoters (clusters 1-4) are enriched for Reb1 and Rsc3 binding sites and AAAAA sequences, while closed promoters (clusters 5-6) are enriched for TATA binding sites; closed/TATA-rich promoters rely more heavily on chromatin modifiers and remodelers for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe sequence feature analysis showing that promoter architecture correlates with specific DNA sequence elements. The statistical analysis (permutation testing) is appropriate, and the results match predictions from prior literature (C91). This provides mechanistic insight into why different promoter types respond differently to remodeler loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "RSC and ISWI family remodelers have opposing biochemical functions: RSC (SWI/SNF family) disorganizes and ejects nucleosomes to facilitate transcription, while ISWI organizes nucleosome arrays by measuring linker DNA length, with both activities established by prior biochemical and genomic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C18 summarize established knowledge about RSC and ISWI function from prior literature. These are well-supported by multiple citations and provide essential background for interpreting the current results. However, these are not new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C24"
+    ],
+    "result": "Rsc7 is a non-essential RSC subunit required for growth at elevated temperatures; Rsc1 and Rsc2 are homologous mutually exclusive subunits defining two RSC sub-complexes, with loss of both being lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C23-C24 describe established properties of RSC subunits from prior work (citations provided). These provide necessary background for the genetic screens but are not new findings. The characterization is accurate based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "ISW1 exists in two distinct complexes: ISW1a (containing Ioc3) associates with promoters and positions nucleosomes into regularly spaced arrays, while ISW1b (containing Ioc2/Ioc4) associates with coding regions and functions in transcription elongation/termination without regular spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 summarize established knowledge about ISW1 complex composition and function from prior literature (citations provided). This background is essential for interpreting the specificity of suppression by ISW1a but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C31",
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C164"
+    ],
+    "result": "Spiking receptors in waveform-sensitive mormyrid species encode electric pulse duration into precise spike-timing differences that accurately represent pulse duration over behaviorally relevant ranges, enabling detection of EOD waveform variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C31, C39, C45, C46, C47, and C164 collectively demonstrate that spiking receptors fire time-locked spikes in response to electric pulses, with spike-timing differences that perfectly match pulse duration for pulses >0.1 ms (Figure 3A,B,D). This precise encoding is supported by data from multiple species including P. microphthalmus, which independently evolved this ability. The physiological data directly support the behavioral capability for waveform discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C26",
+      "C27",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Oscillating receptors in waveform-insensitive species respond to electric pulses with phase resets that produce ~180\u00b0 phase differences regardless of pulse duration, failing to encode pulse waveform and explaining the inability of these species to behaviorally discriminate EOD waveform variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C4, C18, C26, C27, C42, C48, C49, C50, C51, and C52 are strongly supported by data showing that oscillating receptors produce spontaneous oscillations (Figure 1C,D) and respond to stimuli with phase resets (Figure 3E,F). The constant ~180\u00b0 phase difference regardless of pulse duration (Figure 3L) and failure to accurately encode pulse durations <1 ms (Figure 3H) directly explain the behavioral inability to detect waveform variation. The physiological mechanism is well-documented and logically linked to behavioral outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C136",
+      "C137"
+    ],
+    "result": "Phase resets in oscillating receptors transiently synchronize the receptor population in response to stimuli, with synchrony greatest immediately after stimulation and rapidly decreasing due to different intrinsic oscillation frequencies across receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C136-C137 are well-supported by data in Figure 6 showing transient synchrony across receptors following stimulation. The demonstration that summing responses across 36 receptors produces a single distinct peak (Figure 6D) provides strong evidence for population-level synchrony. The mechanism is clearly demonstrated through both individual receptor recordings and population-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C28",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C84",
+      "C91",
+      "C92",
+      "C98",
+      "C101"
+    ],
+    "result": "Oscillating receptors are most sensitive to submillisecond interpulse intervals (IPIs) matching their intrinsic oscillation periods (0.47-0.99 ms), which are found only in group signals, and this enhanced sensitivity correlates with increased behavioral responses to these frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C28, C73-C78, C84, C91, C92, C98, and C101 are supported by converging physiological and behavioral evidence. Physiological data show enhanced oscillation amplitudes and phase-locking at 0.5-ms IPIs (Figure 7C-F), which match intrinsic oscillation periods. Group signal recordings demonstrate these IPIs occur only in collective signals (Figure 8E,F). Behavioral data show P. tenuicauda produces strongest EOD rate increases at shortest IPIs (Figure 9C). The correlation between receptor sensitivity and behavioral response is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C99",
+      "C100"
+    ],
+    "result": "Group signals from multiple fish contain submillisecond IPIs that spiking receptors cannot encode due to refractoriness, but oscillating receptors can detect through resonance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C83, C99, and C100 are supported by data in Figure 8 showing that group signals contain much shorter IPIs than individual fish signals. Figure 8C demonstrates spiking receptors cannot respond to submillisecond intervals, while Figure 5C shows decreased spike probability at short IPIs. The comparison between single-fish and group signal IPI distributions is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "P. microphthalmus (spiking receptors) and P. tenuicauda (oscillating receptors) exhibit significantly different behavioral responses to IPIs, with P. microphthalmus responding most strongly to intermediate IPIs and P. tenuicauda to the shortest IPIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C94 are supported by behavioral data in Figure 9C,D showing distinct response patterns between species. Statistical analysis (repeated-measures ANOVA, F(6,12)=3.4, p=0.0048) confirms the interaction between species and IPI. The behavioral differences align with the physiological differences in receptor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C110",
+      "C115",
+      "C116"
+    ],
+    "result": "Spiking receptors are tuned to frequencies within one octave of conspecific EOD peak power frequencies, acting as matched filters for EOD waveforms, while oscillating receptors are tuned to frequencies more than two octaves below EOD peak power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C110, C115, and C116 are supported by frequency tuning data in Figure 4F showing clear differences between receptor types. Spiking receptors show best frequencies near EOD peak power frequencies, while oscillating receptors show best frequencies well below EOD frequencies. The matched filter interpretation for spiking receptors is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The best frequencies of oscillating receptors correspond to their intrinsic oscillation frequencies, and phase-locking is strongest for stimulus durations matching each receptor's spontaneous oscillation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by data showing best frequencies (0.8-2.5 kHz) roughly match intrinsic oscillation frequencies (1.5-2.0 kHz), and Figure 4G shows strongest phase-locking at stimulus durations matching oscillation periods. This suggests resonance as the tuning mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Both spiking and oscillating receptors accurately encode IPIs into interspike/interoscillation intervals over the range produced by individual fish (>8 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by data in Figure 5 showing that both receptor types accurately encode IPIs \u22651 ms. Spiking receptors encode IPIs into interspike intervals that exactly match the IPI (Figure 5A,D), while oscillating receptors encode IPIs into interoscillation intervals (Figure 5E,G). Both can encode the minimum IPIs produced by individual fish (~8 ms).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C25",
+      "C135",
+      "C167"
+    ],
+    "result": "This study provides the first evidence for sensory coding through oscillatory synchrony at the periphery and the first observation of phase resets in oscillating sensory receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C25, C135, and C167 are supported by the novel data presented showing phase resets and transient synchrony in peripheral sensory receptors. The comparison with previous literature (C105) confirms this is the first demonstration at the periphery, though the claim of absolute novelty depends on the accuracy of the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C113",
+      "C114",
+      "C118",
+      "C165"
+    ],
+    "result": "Different perceptual capabilities correspond to different receptor physiologies, with spiking receptors specialized for detecting individual signals and encoding sender identity, while oscillating receptors are specialized for detecting group signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C113, C114, C118, and C165 synthesize the major findings showing correlation between receptor physiology and perceptual capabilities. The evidence from waveform encoding, frequency tuning, and IPI sensitivity supports this conclusion. However, the specialization interpretation is somewhat inferential, though well-supported by the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Spontaneous interspike intervals in spiking receptors and spontaneous oscillation periods in oscillating receptors varied across species, with 71% of P. tenuicauda receptors having oscillation amplitudes at least 2.5 times baseline noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by data in Figure 1B,D showing variation across species. The 71% figure for P. tenuicauda (49 of 69 receptors) is clearly stated with specific criteria (\u22650.1 mV amplitude). This is descriptive data that is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "In P. tenuicauda rosettes, spontaneous oscillation amplitude was largest in the center and decreased toward the periphery, with no significant correlation between oscillation frequency and amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by data from mapping all 36 receptors in a single rosette (Figure 2B). Statistical analysis shows no significant correlation between frequency and amplitude (Spearman R=0.27, p=0.21). This spatial organization is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Oscillatory phase is independent across receptors in different rosettes, and receptors within rosettes oscillate at different frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 are supported by circular correlation analysis showing no significant difference between simultaneous and non-simultaneous recordings (Wilcoxon tests, p>0.05), and differential recordings showing beats indicating different frequencies (Figure 2G,H). The independence of oscillations is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Spike probability in spiking receptors depended on pulse duration but was high for stimulus durations within the range of conspecific EOD durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by data in Figure 3C showing pulse duration-dependent spike probability that remains high within behaviorally relevant ranges. This demonstrates the receptors are well-tuned to natural stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The degree of amplitude enhancement in oscillating receptors depended on pulse duration, with a positive correlation between spontaneous and stimulus-evoked oscillation amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 are supported by data in Figure 3G showing pulse duration-dependent amplitude enhancement, and statistical analysis showing positive correlation (Spearman R=0.90, p=0.037). However, the sample size for the correlation is small (n=3 based on degrees of freedom).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Oscillating receptors can encode stimulus location based on which receptors reset to a peak first due to polarity differences, with phase differences of ~180\u00b0 at intensities where opposite-polarity EODs evoke significantly different phase resets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by data in Figure 3K showing ~180\u00b0 phase differences at intensities where Hotelling tests indicate significant differences between polarities. The location encoding mechanism is a reasonable inference from the phase reset data and polarity dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The probability that spiking receptors fired spikes to both pulses in a pair decreased at the shortest intervals tested, but all species reliably fired spikes at the minimum IPIs produced by individual fish (~8 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by data in Figure 5B,C showing decreased spike probability at short IPIs but reliable responses at \u22658 ms. This demonstrates the functional range of spiking receptors matches the natural signal statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C162",
+      "C163"
+    ],
+    "result": "P. microphthalmus is behaviorally sensitive to EOD waveform variation and evolved this ability independently of other species with broadly distributed receptors, representing a case of parallel evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C162, and C163 are supported by citations to previous work (Carlson et al., 2011) establishing the behavioral sensitivity and independent evolution. The current study confirms the physiological basis by showing P. microphthalmus has spiking receptors (C31, C164).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C96",
+      "C102",
+      "C120",
+      "C124"
+    ],
+    "result": "Divergent sensory coding mechanisms may represent adaptations for different social environments, with oscillating receptors potentially specialized for detecting and localizing shoals or schools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C96, C102, C120, and C124 propose adaptive hypotheses linking receptor physiology to social behavior. While correlations between receptor type and social behavior are noted (C121-C123), the adaptive interpretation is speculative. The exception of P. microphthalmus (C125-C126) complicates the hypothesis. Field studies are acknowledged as necessary (C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72",
+      "C138"
+    ],
+    "result": "The electrosensory system could use synchrony across the population of receptors to distinguish between stimulus-evoked and spontaneous oscillation cycles through pooling of multiple receptor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72 and C138 propose a mechanism for central processing based on synchrony detection. While the transient synchrony is well-documented (C67-C71), the proposed central mechanism for distinguishing stimulus-evoked from spontaneous oscillations is speculative. No direct evidence for this processing mechanism is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C148"
+    ],
+    "result": "Whether and where integration of multiple receptor responses occurs remains unknown, though single afferents could contact multiple receptors or multiple afferents could converge onto postsynaptic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C141 and C148 acknowledge unknown mechanisms for central processing. The proposed integration mechanisms are speculative, based on analogy to species with spiking receptors (Bell and Grant, 1989). No direct evidence for these mechanisms in species with oscillating receptors is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Central processing could distinguish self-generated from external stimuli through subtraction of oscillatory responses from opposite sides of the body, with excitatory-inhibitory interactions potentially occurring in the midbrain EL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C158 propose an elaborate hypothesis for central processing involving subtraction mechanisms and excitatory-inhibitory interactions. While the logic is sound and based on analogy to known mechanisms in related species (C158), no direct evidence for this processing in species with oscillating receptors is provided. This is entirely speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C19"
+    ],
+    "result": "Previous work established that anatomical modifications of sensory receptors and brain pathways resulted in the ability to detect EOD waveform variation, leading to increased rates of signal evolution and species diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C13, C14, C15, C17, and C19 summarize established knowledge from previous work (primarily Carlson et al., 2011 and earlier studies). These are well-supported by citations and provide context for the current study. The claims accurately represent prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Oscillations in neural activity are widespread and play roles in various brain functions, but their specific role in sensory processing has remained unclear, with previous phase resets occurring in central circuits at lower frequencies than those described in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C103-C105 accurately summarize the state of knowledge about neural oscillations based on citations to previous work. The distinction between central oscillations (<100 Hz) and the peripheral oscillations in this study (1-3 kHz) is clearly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Previous work demonstrated oscillations serve as frequency-tuning mechanisms in various sensory receptors, but the cellular mechanisms underlying high-frequency oscillations in mormyrid receptors and whether they represent collective spiking or non-spiking potentials remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 accurately summarize previous work on oscillations in sensory receptors and acknowledge gaps in understanding of the cellular mechanisms in mormyrid receptors. The distinction between mormyrid oscillations and those in other systems is clearly stated (C134).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Previous knowledge of mormyrid electrosensory coding was limited to species with broadly distributed spiking receptors, with established pathways for waveform and IPI processing in the midbrain, while species with rosette receptors have different neuroanatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 and C159-C161 accurately summarize previous work on mormyrid electrosensory pathways and neuroanatomy. The distinction between the two subfamilies and their associated receptor types and brain structures is well-established by citations.",
+    "result_type": "MINOR"
+  }
+]

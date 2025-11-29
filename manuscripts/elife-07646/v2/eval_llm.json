@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C34",
+      "C74"
+    ],
+    "result": "Human Ago2 possesses a t1-nucleotide binding pocket that specifically recognizes adenine nucleobases through water-mediated contacts to the N6 amine. Crystal structures show that while the pocket can accommodate all four RNA bases, only adenine associates stably enough to contribute to target affinity, with recognition mediated by an ordered hydrogen-bonding network of water molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C24, C34, and C74 are strongly supported by converging structural and biochemical evidence. Crystal structures (C31-C32) show clear electron density for t1A but not for other nucleotides, binding experiments (C33) demonstrate that only t1A contributes to affinity, and structural analysis (C48) identifies ordered water molecules forming a hydrogen-bonding network. The combination of crystallography, binding assays, and mutational analysis provides robust support for this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The purine N6 amine is the major determinant for t1A recognition, with the N2 amine providing additional positive effects. Experiments with inosine (lacking N6 amine) and 2,6-diaminopurine (DAP, containing both N6 and N2 amines) show that DAP binds ~1.7-fold better than adenine, while inosine binds similarly to guanine with no electron density observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are well-supported by systematic structure-function analysis using nucleotide analogs. The binding data (C37, C42) and structural data (C38, C40-C41) for inosine and DAP provide clear evidence for the role of the N6 amine. Statistical significance is reported (p=0.0025, C42), and the conclusions are appropriately drawn from the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C25",
+      "C6",
+      "C76"
+    ],
+    "result": "N6-methylation of adenosine (m6A) blocks t1A recognition and reduces target affinity to that of non-t1A targets. This demonstrates that the adenosine N6 amine is a key determinant of specificity in t1A recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C25, C6, and C76 are supported by binding experiments showing that m6A modification eliminates the affinity advantage of t1A (C44, Figure 3D). The data directly demonstrate that methylation of the N6 amine blocks recognition, consistent with the proposed water-mediated recognition mechanism. The experimental design appropriately tests the role of the N6 amine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Four ordered water molecules form a hydrogen-bonding network in the t1-binding pocket that selectively interacts with purine N6 amines. The model proposes that Ago2 uses main chain carbonyls to orient water molecules such that lone pair electrons on water B can accept hydrogen bonds from N6 amines while repelling O6 carbonyls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present a structural model supported by crystallographic observation of ordered water molecules (C48, Figure 4). The proposed orientation of water molecules and their hydrogen bonding patterns (C49-C50) is a reasonable inference from the structural data and chemical principles. However, C51-C52 are appropriately qualified as speculative regarding the roles of waters C and D. The model is consistent with the observed specificity for adenine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The A481T mutation disrupts t1A recognition without significantly altering the overall structure of Ago2 or the t1-binding pocket. The mutation eliminates the affinity difference between t1A and t1G targets, and the 4.2 \u00c5 distance between the mutation site and the t1A N6 amine indicates the effect is indirect, supporting the conclusion that binding specificity is achieved through Ago2-directed solvent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are strongly supported by structural and functional data. The crystal structure of A481T Ago2 (C54-C55, Table 3) shows minimal structural perturbation, binding experiments (C59) demonstrate loss of t1A specificity, and the distance measurement (C60) supports indirect effects. This mutational analysis provides compelling evidence for the water-mediated recognition mechanism by showing that disrupting the water network eliminates specificity without direct contact with the nucleotide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C63",
+      "C64",
+      "C65",
+      "C73"
+    ],
+    "result": "t1A nucleotides are not utilized during initial target binding but instead increase the dwell time of Ago2 on target RNAs. Single-molecule FRET experiments show similar association rates for t1U, t1A, and t1DAP targets, but t1A and t1DAP targets exhibit >3-fold longer average dwell times, suggesting t1A functions by anchoring Ago2 and inhibiting dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C28, C63-C65, and C73 are well-supported by single-molecule FRET data (Figure 6). The similar association rates (kon) for different t1 nucleotides (C63-C64) combined with significantly different dwell times (C65) provide direct evidence that t1A affects dissociation rather than association. The interpretation that t1A functions as an anchor (C73) is a reasonable inference from the kinetic data and structural observation that t1A inserts orthogonally to the RNA trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "t1A and t1DAP binding events consist of two discrete populations: approximately half with dwell times similar to t1U (~1.6-2.0 s) and half with much longer dwell times (8.7 s for t1A, 12.9 s for t1DAP). This suggests that with limited seed-pairing, Ago2 dissociates without stably engaging t1A about half the time, but when t1A is engaged, affinity increases substantially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by statistical analysis of single-molecule FRET data showing deviation from single-exponential decay for t1A and t1DAP (C67, R\u00b2=0.972 and 0.961) but not t1U (C66, R\u00b2=0.994). Double-exponential fitting (C69-C70) reveals two populations with distinct kinetics. The interpretation (C71-C72) is reasonable given the experimental setup with limited seed-pairing, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Crystal structures of Ago2 bound to targets with different t1 nucleotides show that the overall protein conformation is nearly identical regardless of t1 identity. Non-A nucleotides (C, U, G) show little or no electron density and do not contribute substantially to target affinity, while t1A shows clear electron density in the binding pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are well-supported by crystallographic data (Table 1, Figure 2). The structural similarity across different t1 nucleotides (C29) is demonstrated by the reported structures, and the electron density observations (C31-C32) are directly shown in omit maps. Binding experiments (C33, Figure 2E) confirm that only t1A contributes to affinity. The convergence of structural and binding data strongly supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C78"
+    ],
+    "result": "Adenosine methylation could potentially lead to partial derepression of miRNA targets containing 7mer-A1 or 8mer sites, given that m6A modifications are enriched in mammalian mRNA 3' UTRs and m6A blocks t1A recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26 and C78 are speculative inferences about biological function. While the biochemical observation that m6A blocks t1A recognition is supported (C44), and the enrichment of m6A in 3' UTRs is cited (C77), the manuscript provides no direct evidence that this mechanism actually occurs in vivo or affects miRNA-mediated repression. The claims are appropriately qualified as possibilities, but require validation through cellular or in vivo experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The t1-binding site residues are conserved across all four human Argonaute proteins, and the structure of the t1-binding pocket in Ago2 is nearly identical to that in human Ago1. Ordered water molecules corresponding to waters A and B were observed in Ago1 structures, suggesting all four human Argonautes likely use the same t1A recognition mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by sequence conservation analysis (C79) and structural comparison with published Ago1 structures (C80-C81, cited references). The inference that all four human Argonautes use the same mechanism (C82) is reasonable given the conservation of key residues and structural similarity, though direct experimental validation for Ago3 and Ago4 is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Some Piwi clade Argonaute proteins display t1-nucleotide preferences, with Aubergine, Siwi, and Mili preferring t1A, and Miwi2 preferring t1 purines. Most Piwi proteins with t1 preferences have conserved t1-binding site residues (except Mili), while Drosophila and silkmoth Ago3, which lack t1 preferences, lack homology in key t1-binding pocket residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 are supported by cited literature for the functional preferences (C84-C87, C90) and by sequence alignment analysis for the conservation patterns (C88-C89, C91, Figure 7). The correlation between sequence conservation and functional t1 preference is consistent with the proposed mechanism, though the exception of Mili (C89) suggests additional complexity. The analysis appropriately relies on published data for the functional characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In C. elegans, both t1A and t1U are conserved features of miRNA target sites, suggesting Alg-1 and Alg-2 have t1 nucleotide preferences. There are only two minor residue differences between the human Ago2 t1-binding pocket and Alg-1/Alg-2, which could potentially reorganize the water network to recognize both adenine and uracil, or alternatively, t1U conservation may relate to other C. elegans Argonautes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 present observations (C92, C94) supported by citations and sequence analysis, but the mechanistic explanations (C95-C96) are speculative. The manuscript appropriately presents these as alternative hypotheses without experimental validation. The dual t1A/t1U preference in C. elegans is an interesting observation, but the proposed mechanisms require experimental testing to determine which, if either, is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Understanding the t1-binding site may enable development of novel anti-miR oligonucleotides. The t1DAP nucleotide increased target affinity 4-fold compared to non-t1A targets, and the spacious t1-binding pocket with chemically diverse surface could accommodate more elaborate nucleotide analogs. Displacement of ordered water molecules may provide entropic gains for higher affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C101 present speculative therapeutic applications. While the observation about t1DAP affinity is supported (C98, Table 2), and the structural analysis of pocket size is reasonable (C99), the suggestions about drug development (C97, C101) and entropic gains from water displacement (C100) are speculative and require extensive medicinal chemistry and validation work. These are appropriately framed as suggestions for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establishing the biological context of miRNA function, target recognition through seed pairing, and the conserved feature of t1A nucleotides in vertebrate miRNA target sites that confer enhanced repression independently of base pairing to the miRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent established knowledge in the field, supported by appropriate citations to published literature. These background claims provide context for the current study and are well-documented in the miRNA literature. The claims accurately represent prior work on miRNA function, seed pairing, and t1A conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Previous crystal structures showed that Ago2 cradles the seed-paired duplex, explaining the importance of seed pairing. The structures also revealed that t1A nucleotides interact with a surface pocket at the L2-MID interface, though the pocket is large enough for any RNA base and contacts appear non-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 accurately describe findings from the authors' previous work (cited as Schirle et al., 2014). These claims establish the structural context and the puzzle that motivated the current study: how does Ago2 achieve specificity for t1A when the binding pocket appears non-specific? The claims appropriately reference prior published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The only direct contact between the t1A N6 amine and Ago2 is a hydrogen bond to Ser-561. Because the serine alcohol can function as both hydrogen bond acceptor and donor, this interaction alone is unlikely to discriminate between a purine N6 amine and an O6 carbonyl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by structural analysis (C45, Figure 1) and chemical reasoning about serine properties (C46-C47). The observation of the Ser-561 contact is directly from the crystal structure, and the inference that this single contact cannot explain specificity is reasonable given the dual hydrogen bonding capacity of serine. This analysis motivates the search for additional specificity determinants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The mechanism of t1A recognition by Ago2 is reminiscent of the trp operator/repressor complex, which also uses an ordered network of hydrogen-bonded water molecules for nucleobase recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 makes an appropriate comparison to a well-characterized system (Otwinowski et al., 1988) that uses water-mediated nucleobase recognition. This comparison provides precedent for the proposed mechanism and is appropriately cited. The analogy is reasonable given the similar use of ordered water networks for achieving specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "m6A modifications are enriched in mammalian mRNA 3' UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by citation to published literature (Meyer et al., 2012). This is an established finding in the field that provides biological context for the potential regulatory implications of m6A blocking t1A recognition.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Quantitative SILAC-based proteomics revealed that within the first 3 hours of starvation, the yeast proteome underwent extensive remodeling with 264 proteins significantly changing in abundance (101 down-regulated, 163 up-regulated). This included up-regulation of amino acid/carbohydrate metabolism, vacuolar hydrolases, and autophagic machinery, while cell wall components, ribosome biogenesis, and cell cycle proteins were down-regulated. Notably, plasma membrane proteins were among the most frequently down-regulated components, with at least 18 different integral plasma membrane proteins (including nutrient permeases and receptors) undergoing selective down-regulation, while others like Gap1 and Mep2 were up-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C71-C82 are well-supported by comprehensive SILAC-based proteomic data covering 2941 proteins (58% of yeast ORFs). The statistical analysis (MaxQuant significance B) and GO enrichment analysis provide robust evidence for the proteome remodeling patterns. The selective nature of plasma membrane remodeling is demonstrated by differential regulation of specific proteins, supported by both proteomic quantification and microscopy data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C166",
+      "C167"
+    ],
+    "result": "Many integral plasma membrane proteins undergo starvation-induced endocytosis and degradation via the MVB pathway within 3 hours. At least 18 different plasma membrane proteins (amino acid permeases, sugar transporters, G-protein coupled receptors) are removed from the cell surface and delivered to vacuoles for degradation. This process is ESCRT-dependent but autophagy-independent, as demonstrated by Mup1-GFP localization studies showing vacuolar delivery in WT and atg8\u0394 cells but accumulation at class E compartments in vps4\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C24, C166-C167 are strongly supported by converging evidence from proteomic quantification, western blot analysis showing free GFP release, and fluorescence microscopy demonstrating subcellular localization. The genetic dissection using vps4\u0394 (ESCRT mutant) and atg8\u0394 (autophagy mutant) clearly establishes the MVB pathway dependence and autophagy independence of this process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C55",
+      "C168"
+    ],
+    "result": "The MVB pathway is essential to maintain intracellular amino acid levels during the first 2 hours of starvation, while autophagy is essential for amino acid restoration during extended starvation. In vps4\u0394 mutants, amino acid levels were significantly lower after 2 hours of starvation (14 of 18 amino acids reduced) and failed to recover during extended starvation. In contrast, atg8\u0394 mutants maintained amino acid levels similar to WT during early starvation but failed to restore levels after 4 hours. Double mutants (vps4\u0394, atg8\u0394) showed the lowest amino acid levels throughout starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C38-C48, C55, C168 are well-supported by quantitative amino acid measurements using liquid chromatography across multiple time points in WT and mutant strains. The temporal dynamics clearly distinguish the early role of the MVB pathway from the later role of autophagy. The data are consistent across both auxotrophic and prototrophic strains, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "The MVB pathway is essential to maintain protein synthesis early during starvation. WT cells maintained 40% of protein synthesis capacity during the first 4 hours of starvation. In vps4\u0394 mutants, protein synthesis declined faster than in WT or atg8\u0394 cells. Autophagy mutants (atg8\u0394) maintained protein synthesis similar to WT for 2 hours but declined after 4 hours. Double mutants (vps4\u0394, atg8\u0394) showed additive defects with the lowest protein synthesis levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C56 are supported by 35S-methionine/cysteine incorporation assays with appropriate controls and multiple time points. The data are consistent with the amino acid measurements (previous result) and demonstrate the functional consequence of reduced amino acid levels. The additive effect in double mutants supports independent contributions of both pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C92",
+      "C94",
+      "C95",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C127",
+      "C155"
+    ],
+    "result": "The MVB pathway is required for the de novo synthesis of vacuolar hydrolases to boost vacuolar catabolic activity early during starvation. In WT cells, vacuolar proteases (Prb1, Ape1, Cps1, Pep4) and other hydrolases were up-regulated during the first 3 hours, and sPho8 activity increased at least fivefold. In vps4\u0394 mutants, vacuolar hydrolase protein levels were only marginally induced, and sPho8 activity merely doubled, never reaching WT levels. Autophagy was not required for this early boost in vacuolar catabolic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C92, C94-C95, C101-C112, C127, C155 are strongly supported by converging evidence from SILAC proteomics quantifying vacuolar hydrolase levels, western blot analysis of Pho8 processing, and enzymatic activity assays measuring sPho8 activity. The temporal dynamics and genetic requirements are clearly established through comparison of WT, vps4\u0394, and atg8\u0394 strains across multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C172"
+    ],
+    "result": "The cellular defects of ESCRT mutants during starvation are primarily due to their inability to degrade membrane proteins rather than mis-sorting of vacuolar hydrolases. Overexpression of Vps10 rescued the partial mis-sorting of vacuolar hydrolases and restored vacuolar catabolic activity to 80% of WT levels under rich conditions, but failed to rescue intracellular amino acid levels, protein synthesis, or vacuolar catabolic activity during starvation. Mup1-GFP still accumulated at class E compartments in vps4\u0394 cells overexpressing Vps10, confirming that membrane protein degradation remained blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C126, C172 are supported by a well-designed genetic rescue experiment using Vps10 overexpression. The experiment effectively separates the contribution of vacuolar hydrolase mis-sorting from membrane protein degradation defects. The failure to rescue starvation phenotypes despite restoring basal vacuolar activity provides strong evidence that membrane protein degradation is the critical function. Microscopy and biochemical data confirm the specificity of the rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C169"
+    ],
+    "result": "The MVB pathway primes vacuoles for efficient degradation of autophagic cargo by boosting vacuolar catabolic activity early during starvation. In vps4\u0394 mutants, the release of free GFP from GFP-Atg8, maturation of Ape1, and processing of Rpl25-GFP were all delayed compared to WT cells, despite efficient transport of autophagosomes into vacuoles and lysis of autophagic bodies. This delay was not rescued by Vps10 overexpression and reflects the failure to up-regulate vacuolar hydrolases rather than a complete block in vacuolar proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C128-C138, C169 are supported by multiple complementary assays tracking different autophagic cargoes (GFP-Atg8, Ape1, Rpl25-GFP) using western blot and microscopy. The pHluorin-Atg8 quenching assay demonstrates that autophagic body lysis is not impaired in vps4\u0394 mutants, establishing that the degradation delay is due to reduced hydrolase activity rather than a trafficking defect. The temporal sequence linking MVB pathway function to autophagy efficiency is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C175"
+    ],
+    "result": "The coordinated action of the MVB pathway and autophagy is essential for cells to complete cell division, enter quiescence (G1/G0 arrest), and survive extended starvation. WT cells completed a final cell division cycle and efficiently arrested in G1/G0 (>80% unbudded cells) during starvation. ESCRT mutants (vps4\u0394, vps23\u0394, vps36\u0394, snf7\u0394) and autophagy mutants (atg8\u0394, atg5\u0394) failed to complete cell division and enter G1/G0 arrest. Vacuolar peptidase mutants (pep4\u0394, prb1\u0394, prc1\u0394) also failed to enter quiescence. Both vps4\u0394 and atg8\u0394 mutants gradually lost viability during extended starvation, with double mutants showing severe synthetic survival defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C140-C153, C175 are supported by growth curves, bud index measurements, and long-term survival assays. The data demonstrate that both pathways are independently required for quiescence entry and survival. The failure of Vps10 overexpression to rescue the quiescence defect supports the conclusion that membrane protein degradation (not just hydrolase sorting) is critical. The synthetic lethality of double mutants indicates non-redundant functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C36",
+      "C37",
+      "C161"
+    ],
+    "result": "Autophagy and starvation-induced endocytosis are simultaneously activated early during starvation, but with different temporal dynamics. Autophagy is immediately activated upon starvation and continuously delivers increasing volumes of cytoplasm into vacuoles throughout starvation. Starvation-induced degradation of membrane proteins via the MVB pathway is completed within 3 hours. Free GFP from GFP-Atg8 was detected after 1 hour of starvation, while free GFP from Mup1-GFP was detected within 3 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C36-C37, C161 are supported by western blot analysis tracking multiple GFP-tagged reporters (Mup1-GFP, GFP-Atg8, Rpl25-GFP, Rps2-GFP) and Pho8\u039460 activity assays across multiple time points. The temporal resolution clearly distinguishes the kinetics of the two pathways. However, C161 includes speculation about TORC1 simultaneously stimulating both pathways, which is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C70"
+    ],
+    "result": "The ESCRT machinery is not required for autophagy induction, autophagosome formation, or delivery of autophagosomes to vacuoles in yeast. TORC1 was efficiently inactivated upon starvation in all strains (WT, vps4\u0394, atg8\u0394), as shown by Atg13 dephosphorylation. GFP-Atg8 was efficiently transported into vacuole lumen in vps4\u0394 mutants, and Pho8\u039460 activity increased in vps4\u0394 mutants but not atg8\u0394 cells after 4 hours of starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64, C70 are supported by western blot analysis of TORC1 signaling (Sch9 phosphorylation, Atg13 phosphorylation status), fluorescence microscopy tracking GFP-Atg8 localization, and Pho8\u039460 activity assays. The data clearly demonstrate that the autophagic machinery functions independently of ESCRT in yeast, consistent with prior reports. The pHluorin-Atg8 quenching data further confirm that autophagic body lysis is not impaired.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Autophagic bodies are efficiently lysed in acidified vacuoles of vps4\u0394 mutants. Using pHluorin-Atg8 as a reporter, fluorescence was efficiently quenched in >90% of WT and vps4\u0394 cells upon starvation, indicating acidification and lysis of autophagic bodies. In contrast, pHluorin-Atg8 was not quenched in vacuolar peptidase mutants (prb1\u0394, prc1\u0394, pep4\u0394) or acidification mutants (vma4\u0394), where pHluorin-Atg8 positive vesicular structures accumulated inside vacuoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by quantitative fluorescence microscopy using the pHluorin-Atg8 reporter with appropriate positive and negative controls. The pHluorin reporter is pH-sensitive and provides a direct readout of vacuolar acidification and autophagic body lysis. The high percentage of cells showing quenching (>90%) and adequate sample sizes (n=40-198) support the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "The MVB pathway has a small effect on the proteome under rich conditions but becomes critical for proteome remodeling during starvation. Correlation analysis (R=0.82, p<1e-16) showed that WT and vps4\u0394 cells up- or down-regulated similar proteins during starvation, but changes were less pronounced in vps4\u0394 mutants (broader distribution in WT, p<6e-16). Analysis of 135 proteins showing the most significant differences revealed that the MVB pathway is particularly required for degradation of plasma membrane proteins, up-regulation of vacuolar hydrolases, and down-regulation of cell cycle proteins during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91, C93 are supported by comprehensive statistical analysis of proteomic data including correlation analysis, density plot comparisons (Kolmogorov-Smirnov test), and GO enrichment analysis. The direct comparison of WT and vps4\u0394 proteomes under rich conditions (showing minimal differences) versus starvation conditions (showing significant differences) effectively demonstrates the starvation-specific requirement for the MVB pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Upon starvation, the Ub-GFP reporter is rapidly degraded at 26S proteasomes, demonstrating that proteasomal degradation is active from the onset of starvation. This degradation was exclusively dependent on proteasomal activity (blocked by MG132) but did not require autophagy (atg8\u0394) or the MVB pathway (vps4\u0394).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by western blot analysis showing Ub-GFP degradation kinetics with appropriate genetic and pharmacological controls. The use of MG132 proteasome inhibitor and genetic mutants (atg8\u0394, vps4\u0394) clearly establishes the pathway specificity. This result confirms prior work on the role of proteasomal degradation during acute starvation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Autophagy delivers cytoplasmic contents including ribosomes into vacuoles during starvation. Free GFP from ribosomal protein Rpl25-GFP was first detected after 3 hours of starvation, when Mup1-GFP was already degraded. Free GFP from GFP-Atg8 was detected after 1 hour and strongly increased at 3 hours. Pho8\u039460 activity increased during the first 3 hours and continued to increase during extended starvation. These results are consistent with Atg8 protein levels controlling autophagosome size but not frequency (~9 autophagosomes/hour).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by western blot analysis tracking multiple GFP-tagged reporters and Pho8\u039460 activity assays. The temporal sequence of free GFP appearance from different reporters provides insight into the kinetics of autophagy activation. The interpretation regarding autophagosome size control is supported by citations to prior work and is consistent with the observed increase in Atg8 levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C165",
+      "C182"
+    ],
+    "result": "Starvation induces a massive but selective remodeling of the plasma membrane proteome, and the MVB pathway takes a central role in cellular homeostasis to preserve and redistribute biomass for maintaining cell growth under nutrient limitation. This is the first demonstration that starvation induces such comprehensive plasma membrane remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165 and C182 are supported by the comprehensive proteomic analysis showing down-regulation of at least 18 plasma membrane proteins while others are up-regulated or maintained. The novelty claim appears justified as the authors state this is the first demonstration of such comprehensive remodeling. The central role of the MVB pathway is supported by the multiple phenotypes observed in vps4\u0394 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C159",
+      "C154",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Eukaryotic cells utilize a catabolic cascade of selective and non-selective degradation pathways to ensure cell survival upon starvation. Starvation-induced endocytosis and selective degradation of membrane proteins via the MVB pathway maintains amino acid pools required for protein synthesis early during starvation, including de novo synthesis of vacuolar hydrolases. This primes vacuoles for efficient degradation of bulk cytoplasm by autophagy, enabling continuous nutrient recycling to maintain cellular homeostasis and promoting stable cell cycle arrest for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159, C154, C156-C158 represent the main conclusions synthesizing all the experimental results. These claims are well-supported by the comprehensive data on amino acid levels, protein synthesis, vacuolar hydrolase up-regulation, autophagic cargo degradation, cell cycle arrest, and survival. The temporal sequence and functional dependencies are clearly established through genetic and biochemical experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The MVB pathway and autophagy cooperate to maintain intracellular amino acids during starvation, potentially in a consecutive manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by the amino acid and protein synthesis data showing temporal separation of MVB pathway (early) and autophagy (late) contributions. However, the claim includes speculation about the 'consecutive manner' which, while consistent with the data, represents an interpretation. The word 'potentially' appropriately qualifies this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C173",
+      "C183",
+      "C184"
+    ],
+    "result": "Selective protein degradation via the MVB pathway may initially provide greater added value for the free intracellular amino acid pool compared to non-selective autophagy because degraded membrane proteins are not re-synthesized, while autophagy inevitably captures proteins that must be replaced. This stepwise activation of the catabolic cascade might provide a safety mechanism to protect cells from immediate non-selective protein degradation during transient nutrient fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C173, C183-C184 are explicitly speculative (authors use 'we speculate' and 'it is tempting to speculate'). While the speculation is reasonable and consistent with the observed data showing the MVB pathway is more critical than autophagy early during starvation, these claims are not directly tested. The authors appropriately present these as hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C176"
+    ],
+    "result": "The evolutionary conserved EGO/LAMTOR/Ragulator complex in conjunction with a lysosomal amino acid sensor could measure free amino acids in the lumen of lysosomes and transiently re-activate TORC1 to complete the final cell division cycle prior to entry into quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C176 is explicitly speculative (authors use 'alternatively...could somehow measure') and is not directly tested in this study. While supported by citations to prior work on amino acid sensing mechanisms, the specific role in completing cell division before quiescence entry is a hypothesis. The claim is appropriately qualified as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C179",
+      "C185"
+    ],
+    "result": "A functional MVB pathway may be key to boost the catabolic activity of MVB-derived amphisomes in higher eukaryotes, ensuring efficient degradation of autophagic cargo. The central role of the MVB pathway in the catabolic cascade during starvation is proposed to be evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C179 and C185 extend the yeast findings to higher eukaryotes and propose evolutionary conservation. While the speculation is reasonable given the conservation of ESCRT machinery and the existence of amphisomes in higher eukaryotes (supported by citations), these claims are not directly tested. The authors appropriately present these as proposals and speculations rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C25",
+      "C26",
+      "C29",
+      "C32",
+      "C65",
+      "C96",
+      "C97",
+      "C113",
+      "C116",
+      "C117",
+      "C125",
+      "C144",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C177",
+      "C178",
+      "C180"
+    ],
+    "result": "Background knowledge claims about the UPS, ERAD, autophagy, TORC1 signaling, MVB pathway, and related cellular processes are presented, supported by citations to prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20, C25-C26, C29, C32, C65, C96-C97, C113, C116-C117, C125, C144, C160, C162-C164, C177-C178, C180 represent established knowledge supported by appropriate citations to prior work. These claims provide necessary context for interpreting the current results and are accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C171"
+    ],
+    "result": "A significant fraction of vacuolar hydrolases are sorted into the lumen of vacuoles in ESCRT mutants, where they mature and become active. The partial sorting defects for vacuolar hydrolases are not consistent with the stronger defects of ESCRT mutants in maintaining amino acid levels, protein synthesis, and cell growth early during nutrient limitation compared to autophagy mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C171 is supported by microscopy data showing Pep4-GFP localization to both class E compartments and vacuole lumen, western blot data showing mature vacuolar hydrolases in vps4\u0394 mutants, and the logical argument comparing phenotype severity between vps4\u0394 and atg8\u0394 mutants. The reasoning effectively distinguishes between hydrolase mis-sorting and membrane protein degradation defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C181"
+    ],
+    "result": "Loss of ESCRT function does not significantly impair the autophagic machinery itself or the delivery of autophagic cargo into lysosomes in yeast or C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C181 is supported by the data presented in this study (GFP-Atg8 transport, Pho8\u039460 activity, pHluorin-Atg8 quenching) and citations to prior work in yeast and C. elegans. The claim accurately summarizes the findings distinguishing yeast from higher eukaryotes where ESCRT affects amphisome-lysosome fusion.",
+    "result_type": "MINOR"
+  }
+]

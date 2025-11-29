@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Gpt2 contains a predicted Ypk1 phospho-acceptor motif and is phosphorylated in vivo at one or more Ser residues (S649, S650, S651), but this phosphorylation does not depend on Ypk1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are well-supported by experimental data. The sequence analysis (C36), mobility shift assays (C38), phosphatase treatment, and Ypk1 inhibition experiments (C39) collectively demonstrate that Gpt2 is phosphorylated in vivo but not by Ypk1, despite containing a predicted Ypk1 consensus site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C6"
+    ],
+    "result": "Fps1 is an authentic Ypk1 substrate, with three of four predicted Ypk1 sites (S181, S185, S570) phosphorylated in vivo in a Ypk1- and TORC2-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C6 are strongly supported by converging experimental evidence including site-directed mutagenesis (C40), Ypk1 inhibition experiments (C41), in vitro kinase assays (C42), and TORC2 inhibition (C43). The data demonstrate that Fps1 is a bona fide Ypk1 substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Hyperosmotic shock causes rapid, transient loss of TORC2-mediated Ypk1 phosphorylation (within 1 min, persisting ~15 min, recovering by 75 min), independently of Hog1 and calcineurin pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are well-supported by time-course experiments using Phos-tag gels and phospho-specific antibodies (C44-C47), and genetic experiments in mutant backgrounds lacking Hog1 pathway components or calcineurin (C48-C50). The kinetics and pathway independence are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C8"
+    ],
+    "result": "Hyperosmotic stress rapidly eliminates Ypk1-mediated Fps1 phosphorylation, with kinetics mirroring TORC2-mediated Ypk1 dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C8 are supported by Phos-tag gel mobility shift experiments showing rapid loss of Fps1 phosphorylation upon hyperosmotic shock (C51), persistence for 20 min and recovery by 75 min (C52), with kinetics paralleling Ypk1 dephosphorylation (C53). The temporal correlation is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C7"
+    ],
+    "result": "Fps1 phosphorylation by Ypk1 promotes channel opening, as the non-phosphorylatable Fps13A mutant behaves like a closed channel (arsenite resistant), and individual phosphorylation sites contribute additively to channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C7 are supported by arsenite resistance assays showing that Fps13A is as resistant as other closed-channel mutants (C59-C60), and single-site mutants show intermediate resistance (C62), indicating additive contributions (C63). The functional link between phosphorylation and channel opening is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C10"
+    ],
+    "result": "Fps13A mutant cells accumulate approximately twofold more intracellular glycerol than wild-type cells under normal conditions, consistent with a closed channel state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by direct glycerol measurements showing ~2-fold accumulation in Fps13A cells. This is consistent with prior work on Ypk1/Ypk2 loss (C66) and supports the functional consequence of channel closure (C10). The quantitative measurement provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Ypk1-dependent phosphorylation affects Fps1 channel function per se, without altering steady-state protein levels or plasma membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by immunoblotting and fluorescence microscopy data showing no changes in Fps1 abundance or localization between wild-type and Fps13A. This demonstrates that phosphorylation regulates channel activity rather than trafficking or stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Fps1 channel closure by loss of Ypk1 phosphorylation occurs independently of Hog1, as Fps13A remains closed in hog1\u0394 cells, in Fps1 mutants that cannot bind Hog1, and when Rgc2 cannot be displaced by Hog1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by arsenite resistance assays in multiple genetic backgrounds (hog1\u0394, Fps1IVAA, Rgc27A) and co-immunoprecipitation showing no effect of Ypk1 phosphorylation on Fps1-Rgc2 interaction. The independence from Hog1 regulation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C11",
+      "C12"
+    ],
+    "result": "Loss of Ypk1-mediated Fps1 phosphorylation (Fps13A) is sufficient to suppress the hyperosmotic sensitivity of hog1\u0394 cells, demonstrating that this mechanism can promote survival independently of Hog1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C11-C12 are supported by epistasis experiments showing that Fps13A hog1\u0394 cells survive better on sorbitol than hog1\u0394 cells alone. This genetic evidence demonstrates sufficiency of the TORC2-Ypk1-Fps1 pathway for hyperosmotic stress survival in the absence of Hog1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84",
+      "C94"
+    ],
+    "result": "Down-regulation of TORC2-Ypk1 signaling upon hyperosmotic shock represents a novel Hog1-independent mechanism for hyperosmotic stress response, with coordinated effects on both glycerol production (via Gpd1) and retention (via Fps1 closure).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C82-C84, and C94 represent the main conclusion integrating all experimental findings. The mechanism is well-supported by the collective evidence showing: (1) TORC2-Ypk1 phosphorylation opens Fps1, (2) hyperosmotic shock blocks this phosphorylation, (3) this closes Fps1 and promotes survival, and (4) this occurs independently of Hog1. The dual regulation of Gpd1 and Fps1 provides a coherent mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Independent phosphoproteomic analysis confirms that Fps1 sites S181 and T185 become dephosphorylated upon hyperosmotic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by citation to an independent study (Kanshin et al., 2015) that corroborates the authors' findings using a different methodology. This external validation strengthens the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "TORC2-Ypk1 signaling responds to hypertonic stress more rapidly (\u226460 s) than Hog1 (which responds to stresses no more frequently than every 200 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by citations for Hog1 response kinetics and experimental data showing Ypk1 dephosphorylation within 1 min. The comparison suggests differential temporal dynamics between the two pathways, though the functional significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Despite a reported physical interaction between Tor2 and Sho1, hyperosmolarity inactivates TORC2 equally in sho1\u0394 and wild-type cells, indicating Sho1 is not required for TORC2 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by experimental data showing equivalent Ypk1 dephosphorylation in sho1\u0394 cells. This rules out a simple model where Sho1 directly mediates TORC2 inactivation, despite the reported physical interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C88",
+      "C89",
+      "C93"
+    ],
+    "result": "Speculative discussion of potential advantages of dual stress response systems and possible mechanisms for TORC2 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C88, C89, and C93 are explicitly speculative statements about potential functional advantages and mechanisms. While reasonable hypotheses, they are not experimentally tested in this manuscript and represent future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2194 @@
+{
+  "submission": {
+    "id": "16a6e950-4b0c-454a-bdaa-a5da183c54d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:46:21.108788Z",
+    "updated_at": "2025-11-29T03:46:21.108788Z"
+  },
+  "content": [
+    {
+      "id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "submission_id": "16a6e950-4b0c-454a-bdaa-a5da183c54d1",
+      "content_type": "manuscript",
+      "content_text": "# Visual processing of informative multipoint correlations arises primarily in V2\n\n## Authors\n\n- Yunguo Yu<sup>1</sup>\n- Anita M Schmid<sup>1</sup>\n- Jonathan D Victor<sup>1</sup> ([ORCID: 0000-0002-9293-0111](https://orcid.org/0000-0002-9293-0111)) \u2020\n\n### Affiliations\n\n1. Brain and Mind Research Institute Weill Cornell Medical College New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUsing the visual system as a model, we recently showed that the efficient coding principle accounted for the allocation of computational resources in central sensory processing: when sampling an image is the main limitation, resources are devoted to compute the statistical features that are the most variable, and therefore the most informative (eLife 2014;3:e03722. DOI: 10.7554/eLife.03722 Hermundstad et al., 2014). Building on these results, we use single-unit recordings in the macaque monkey to determine where these computations\u2014sensitivity to specific multipoint correlations\u2014occur. We find that these computations take place in visual area V2, primarily in its supragranular layers. The demonstration that V2 neurons are sensitive to the multipoint correlations that are informative about natural images provides a common computational underpinning for diverse but well-recognized aspects of neural processing in V2, including its sensitivity to corners, junctions, illusory contours, figure/ground, and \u2018naturalness.\u2019\n\n## Introduction\n\nWe recently showed (eLife 2014;3:e03722. DOI: 10.7554/eLife.03722 [Hermundstad et al., 2014]) how a normative theory based on the efficient coding principle (Barlow, 1961) can account for the allocation of resources for the representation of complex sensory features. Specifically, we analyzed the local statistics of natural images, and compared the variability of these statistics with their perceptual salience. The statistics that were the most variable\u2014that is, the least predictable and therefore the most informative\u2014were the most salient perceptually. This relationship, in which greater resources are allocated to more variable features, emerges from the efficient coding principle in the regime that the main constraint is input sampling (Barlow, 1961; van Hateren, 1992; Doi and Lewicki, 2014; Hermundstad et al., 2014). The observed relationship contrasts with the more familiar \u2018whitening\u2019 regime (Srinivasan et al., 1982), which emerges when the main constraint is output capacity (e.g., with regard to the retina and the optic nerve bottleneck); the whitening regime predicts that fewer resources are allocated to more variable features. We note that the results of (Hermundstad et al., 2014) provide empirical support for the hypothesis that input sampling, rather than output capacity, is the main constraint\u2014since a transmission limit would have predicted a lower sensitivity for image statistics that were the most variable, the opposite of what we found.\n\nTo reach this result, we analyzed natural images via their multipoint correlations, that is, the statistics of the combinations of luminance values that appear in several points of the image. This approach has several advantages. First, it reduces the dimensionality of the space of image statistics that need to be considered, since it can be applied to binarized images, and it separates informative from uninformative statistics (Tka\u010dik et al., 2010). Second, the approach enables rigorous tests of theoretical predictions, since the individual kinds of informative and uninformative multipoint correlations can be isolated in synthetic image sets (Victor and Conte, 2012). In contrast, the multipoint correlations in natural images covary in a complex manner that is difficult to capture or control. Synthetic image sets that isolate individual kinds of multipoint correlations are highly un-natural, but here this is an advantage: our predictions, which are derived from natural images, are tested in an out-of-sample fashion.\n\nThe information-theoretic framework of (Hermundstad et al., 2014) and (Tka\u010dik et al., 2010) played a key role in this analysis, and we briefly summarize it here. We used a two-stage model: first, the informative multipoint features (as identified by [Tka\u010dik et al., 2010]) are extracted from a visual image by a set of local nonlinear processing elements. Then, the output of this stage, that is, the frequency of each feature in patches of the image, is represented and transmitted by central visual areas, to serve as the basis for visual inferences (Figure 4C of [Hermundstad et al., 2014]). We used a linear channel with additive Gaussian noise as an approximation for this latter process. While obviously a simplification, this leads to an analytic solution (van Hateren, 1992) for the allocation of resources that maximizes the mutual information between stimuli and their central representation\u2014and the analytic solution accurately accounted for dozens of independently-determined psychophysical parameters (Hermundstad et al., 2014).\n\nUnaddressed, however, was where the extraction of multipoint correlations takes place. Several lines of evidence suggested that selective sensitivity to multipoint correlations arises in visual cortex (discussed in [Hermundstad et al., 2014]), but a direct demonstration was lacking.\n\nHere, we report single-unit recordings in macaque V1 and V2, showing that neuronal selectivity for multipoint correlations is infrequent in V1, and becomes prominent in V2, especially in its supragranular layers. Well-recognized characteristics of V2 neurons, including sensitivity to corners, junctions (Das and Gilbert, 1999), illusory contours (von der Heydt et al., 1984), figure/ground (Qiu and von der Heydt, 2005), and \u2018naturalness\u2019 (Freeman et al., 2013) all entail sensitivity to multipoint correlations; here we show that this sensitivity is present even when these correlations are separated from their natural context.\n\n## Results\n\nWe recorded the extracellular activity of 421 individual neurons (269 in V1, 152 in V2) in the anesthetized, paralyzed macaque to stimulus sets that isolate the multipoint correlations previously studied in natural images (Tka\u010dik et al., 2010; Hermundstad et al., 2014) and psychophysically (Victor and Conte, 1991, 2012).\n\nThe stimulus sets are illustrated in the top row of Figure 1 (see \u2018Materials and methods\u2019 for details). In the \u2018random\u2019 stimulus set, check colors are assigned independently, with an equal chance of being white or black. The six structured stimulus sets were as follows: The \u2018even\u2019 and \u2018odd\u2019 sets isolate the opposite extremes of the visually salient four-point correlation (Hermundstad et al., 2014), there denoted \u03b1. The \u2018white triangle\u2019 and \u2018black triangle\u2019 sets isolate the extremes of the visually salient three-point correlation (Hermundstad et al., 2014), there denoted \u03b8. The \u2018wye\u2019 and \u2018foot\u2019 sets have multipoint correlations are not visually salient (Victor and Conte, 1991); this is in keeping with the efficient coding principle because in natural images, these correlations are predictable from simpler quantities (Tka\u010dik et al., 2010). We focused on three- and four-point correlations, since one- and two-point statistics (luminance and spatial contrast) are well-known to modulate responses throughout the visual system, beginning in the retina.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06604/elife-06604-fig1-v2.jpg)\n\n**Figure 1.:** Top row: examples of the stimulus sets used to isolate the different kinds of multipoint correlations. Six sets consist of 1024 16 \u00d7 16 binary checkerboards, each with a different statistical structure (left columns); the seventh set consists of 1024 16 \u00d7 16 random checkerboards (right column); see \u2018Materials and methods\u2019 for details. In each column, the row of PSTH's shows responses of a single neuron to 1024 examples of stimuli drawn from the seven sets. Responses are generally dominated by a transient increase or decrease in firing, occurring 70 to 100 ms after the onset of each stimulus. In some cases, the size or configuration of this transient depends on the type of multipoint correlation (for example, the units in the second row). The asterisks indicate responses to the structured stimulus sets (black) that are significantly different (see \u2018Materials and methods\u2019) from the responses to the random stimuli (light gray, beginning of each row). Decremental responses following contrast onset were present in both areas, but more often in V2. However, a decremental response was not a requirement for discriminating among multipoint correlations: outside of supragranular V2, there were many neurons that had incremental responses to the stimulus transient and distinguished among the types of multipoint correlation (for example, the third and fourth rows on the right).\n\nFigure 1 shows post-stimulus histograms (PSTHs) of typical neurons in V1 and V2. Responses have a prominent transient after each stimulus transition, when on average half of the checks change from black to white or from white to black. For some neurons (e.g., the first, third, fourth, and sixth examples in V1), this transient is nearly identical for each of the stimulus sets. For other neurons (e.g., the second and fifth examples in V1, and most of the V2 examples), the transients differ in magnitude or configuration, suggesting a differential response to multipoint correlations.\n\nTo quantify these differences, we applied a shuffle test to the smoothed firing rates (see \u2018Materials and methods\u2019). Significant differences between responses to structured and random stimuli (the asterisks in Figure 1) were more common in V2 than in V1. For a more thorough characterization, we defined the \u2018multipoint correlation discrimination index\u2019 (MCDI), which counted not only the comparison between structured and random stimuli, but also comparisons among pairs of different structured stimuli. The MCDI was defined as the fraction of the 21 pairwise comparisons that differed by the above statistical criterion. An MCDI of 0 means that a neuronal response to all stimulus types is indistinguishable; an MCDI of 1 means that a neuronal response distinguishes between all stimulus pairings, and therefore, between all of the structured stimulus sets.\n\nFigure 2A (upper row) summarizes the MCDI across the neuronal population. The average MCDI peaked at a value of approximately 0.05 in V1, and approximately 0.10 in V2; this difference became significant at 70 ms after stimulus onset.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06604/elife-06604-fig2-v2.jpg)\n\n**Figure 2.:** (A) The multipoint correlation discrimination index (MCDI, see \u2018Materials and methods\u2019) for all stimulus types. Upper panels include all neurons in each area, lower three rows subdivide according to lamina. Mean (dark red), median (gray), and 75th percentile (dark green). 25th percentile is 0 in all cases. The red dots in the upper right panel indicate a significant difference between V2 and V1 (p < 0.05, two-tailed, Wilcoxon rank-sum test, false-discovery-rate corrected). The number in the upper left of each panel indicates the number of units analyzed. (B) Mean values of the stimulus-specific MCDI. The stimuli with the highest contributions are the ones that contain correlations that are informative for natural images (Tka\u010dik et al., 2010): even (red), odd (green), white triangles (yellow) black triangles (blue). In contrast, the others (random (black), wye (magenta), and foot (cyan)) are uninformative for natural images, and contributed little to the MCDI. (C) Pairwise discrimination of the multipoint correlation types. The grayscale shows the average pair-specific MCDI, which is the fraction of neurons that respond differentially at any time from 55 to 250 ms following stimulus onset. The stimuli for each row and column are indicated by the same color code as in panel B. Note that panel A shows the overall MCDI, panel B shows the stimulus-specific MCDI, and panel C shows the pair-specific MCDI. (D) Multidimensional scaling of the pair-specific MCDI. The distance between two points corresponds to the fraction of neurons that responds differentially to each type of multipoint correlation. A semitransparent gray plane marks the 0-value along the vertical. Note that in V2, especially in the supragranular layer, there is a wide separation between even and odd stimuli, and between black and white triangle stimuli, and these separations lie on different axes.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06604/elife-06604-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each point represents a neuron with a mappable RF (see \u2018Materials and methods\u2019): V1 in blue, V2 in red. Left: MCDI as a function of RF area, computed by counting the number of stimulus checks in the RF, and multiplying by the area of each check. Right: MCDI as a function of the number of checks in the RF. The solid lines indicate the moving average of 9 cells, ranked in order shown on the abscissa. Note that when neurons are equated for RF area, either in deg2 or in terms of the number of checks contained, the MCDI is higher in V2 than in V1. This holds across the population and in the supragranular and granular layers. In the infragranular layer, there appears to be a subpopulation of V1 neurons with large RFs and MCDI's that are greater than their counterparts in infragranular V2\u2014though not as great as in granular and supragranular V2.\n\nA laminar analysis of the MCDI (Figure 2A, lower three rows) revealed a slight increase from the V1 granular (input) layer (mean 0.025) to the V1 extragranular layers (supragranular: 0.033, infragranular, 0.045), followed by a jump at the V2 granular layer (0.101), with a marked upsurge in the V2 supragranular layer (0.162), but not the infragranular layer (0.052). The difference between the MCDI in supragranular V2 and each of the other compartments was significant, except for the comparison with granular V2 (p = 0.053). The median value of the MCDI in supragranular V2 was 0.12, meaning that the \u2018typical\u2019 neuron responded differentially for 2 or 3 of the 21 pairwise comparisons. In all other compartments (in V1 and V2), the median was 0, that is, the \u2018typical\u2019 neuron did not distinguish between any of the stimulus types. Atypical neurons in V1 did distinguish among multipoint correlations. These were primarily neurons in the infragranular layer and with large receptive fields (RFs)\u2014see Figure 2\u2014figure supplement 1. But overall, the mean MCDI was lower in V1 (0.027) than in V2 (0.081), especially in its supragranular compartment (0.162).\n\nSensitivity to multipoint correlations was not restricted to specific cell types. Specifically, the MCDI was not significantly associated with the simple vs complex distinction, nor with the distinction between regular-spiking and fast-spiking neurons, as determined by extracellular action potential shapes (Niell and Stryker, 2008). Sensitivity to multipoint correlations was also present in isolated units that did not have overt RFs by hand-mapping or by reverse correlation (81/269 in V1 and 65/152 in V2); these units had waveforms that were isolated by the tetrode recordings, and likely include many of the \u2018unresponsive\u2019 neurons (Olshausen and Field, 2004) that would not have been selected for study with single-electrode methods. There was no significant difference in the MCDI between these neurons and the simultaneously-recorded neurons with mappable RFs, either in V1 or V2. Among the neurons with mappable RFs, the MCDI was not significantly different for neurons whose RFs were above vs below the median size for their laminar compartment. Thus, the sensitivity to multipoint correlations does not require a precise match between the RF size and the spatial scale of the correlations. In sum, sensitivity to multipoint correlations was widely distributed across V2 neurons.\n\nThe difference in sensitivity to multipoint correlations between V1 and V2 was not due to a difference in RF size, nor to stimulus scaling (i.e., the number of stimulus checks within the RF). The upper left panel of Figure 2\u2014figure supplement 1 compares MCDI across V1 and V2 as a function of RF area; across the entire range of sizes, the MCDI is higher in V2 than in V1. The upper right panel makes this comparison as a function of the number of checks within the RF, which also equates neurons whose RFs covered the same fraction of the stimulus area. Here too, the MCDI in V2 was larger than in V1. The remaining rows of Figure 2\u2014figure supplement 1 break the analysis down by laminar compartment. In granular and supragranular layers, the above observations hold, but there is a suggestion of a subset of V1 neurons with large RFs (lower left panel) that are sensitive to multipoint correlations. However, it is unlikely that this subpopulation underlies the high MCDI seen in V2: the targets of infragranular V1 (Felleman and Van Essen, 1991) are the superior colliculus (layer 5) and the lateral geniculate (layer 6), while the inputs to V2 arise mainly from layers 2, 3, and 4b, where the MCDI is low. Moreover, the difference between supragranular V2 and the V2 input layer strongly suggests that the behavior in supragranular V2 is a result of intrinsic processing in V2, not a feature of signals passed on by V1 (which would already have been present in the granular layer).\n\nFigure 2B shows that the multipoint correlations that contribute to the MCDI are the ones previously identified as being informative about natural images (Tka\u010dik et al., 2010) and perceptually salient (Victor and Conte, 1991), namely, the even, odd, white triangle, and black triangle stimuli. Figure 2C further breaks down the MCDI into the individual pairwise comparisons. Few neurons, either in supragranular V2 or across the population, discriminated among pairs of the stimuli with uninformative multipoint correlations (random, wye, and foot). To visualize the pattern of discrimination across the neuronal population, we applied multidimensional scaling to the data of Figure 2C. This led to a three-dimensional representation (Figure 2D) in which the seven stimulus types are represented by points, and the distance between the points corresponds to the fraction of neurons that distinguishes between them (i.e., the average pair-specific MCDI across the population). In V1, points are clustered near the origin, since most neurons cannot distinguish between any stimulus types. In V2, the representation expands into a multidimensional space. The two opposite stimulus pairs (even vs odd, and white triangle vs black triangle) are separated along different axes. Correspondingly, psychophysical studies show that the even-vs-odd gamut, and the white triangle-vs-black triangle gamut are independent perceptual axes (Victor and Conte, 2012) (Figure 8 panel 2 of reference [Victor and Conte, 2012], and the [\u03b8, \u03b1]-panels of Figure 3 of Hermundstad et al. (2014)). Human perceptual sensitivities are larger for the four-point configuration than for the three-point configurations (Victor and Conte, 2012; Hermundstad et al., 2014); this is mirrored by higher values of the MCDI for the even stimuli than for the white triangle or black triangle stimuli in supragranular V2 (Figure 2D).\n\nHowever, there are some differences between representation of informative multipoint correlations in the V2 population (as shown in Figure 2D) and human psychophysics (Victor and Conte, 2012; Hermundstad et al., 2014). First, the points corresponding to the uninformative stimuli are close to, but not superimposed on, the random stimulus. Additionally, while psychophysical sensitivity to the odd stimulus is only about 25% less than sensitivity to the even stimuli (Victor and Conte, 2012), the MCDI for the odd stimulus is much lower. We note that the odd stimulus contains even correlations when analyzed at spatial scales larger than a single check (Victor and Conte, 1989), so neuronal mechanisms sensitive to the even correlation will also contribute to the perceptual salience of the odd stimulus. More generally, the discrepancies between V2 neuronal activity and perception may reflect the simple measure used for quantifying discrimination at the population level (the average MCDI and multidimensional scaling), as well as further neural processing between V2 and perception.\n\n## Discussion\n\nBuilding on recent findings that the perceptual salience of complex (multipoint) image statistics is governed by their informativeness in natural images, here we show that selective sensitivity to these image statistics arises primarily in V2. Within V2, the greatest sensitivity is in the supragranular layers, where the typical (median) neuron can distinguish between two or three of the stimulus pairs. In contrast, typical neurons in V1 do not distinguish between any of the stimuli, although there appears to be a subpopulation of large-RF neurons in infragranular V1 with a modest level of selective sensitivity. The overall pattern of neuronal sensitivity to image statistics (Figure 2D) resembles the sensitivity of human observers, driven primarily by the multipoint statistics that are visually salient.\n\nWe speculate that sensitivity to informative multipoint correlations is the computational underpinning of many of the changes in neural characteristics from V1 to V2 that have previously been noted\u2014sensitivity to corners, junctions (Das and Gilbert, 1999), illusory contours (von der Heydt et al., 1984), figure vs ground (Qiu and von der Heydt, 2005), and \u2018naturalness\u2019 (Freeman et al., 2013). The distinction between informative and uninformative multipoint correlations emerged from a formal information-theoretic analysis of natural images (Tka\u010dik et al., 2010). While this analysis did not relate \u2018informativeness\u2019 to these other characteristics, inspection of the examples of Figure 1 suggests several points of contact. With regard to junctions and contours, examples of the odd ensemble images contain large numbers of corners, while examples of the even ensemble contain large numbers of crossings. The extended contours evident in the even ensemble are a kind of illusory contour, since the polarity changes that define them undergo random flips, which would confound a linear edge detector. With regard to figure vs ground, stimuli in the black triangle and white triangle ensembles appear to contain, respectively, black figures on white backgrounds, vs white figures on black backgrounds\u2014even though the stimulus sets are matched for spatial frequency content and the number of black and white checks. Thus, informative multipoint correlations result in images that are enriched for junctions, contours, and objects, compared to images that have the same first- and second-order statistics but lacking these correlations. While the extent to which these local features account for \u2018naturalness\u2019 remains for future work, the present results show that selective sensitivity of V2 neurons for informative multipoint correlations persists even when they are removed from the context of a natural image.\n\nIt is unclear to what extent it is necessary to match the scale of a multipoint correlation with that an illusory contour or junction in order for the visual feature to be extracted. However, the distinction between informative and uninformative multipoint statistics holds over at least a fourfold range of length scales (the entire range analyzed, SI figure 14 of [Tka\u010dik et al., 2010]). Human sensitivity to these correlations is present over at least a similar range of check sizes (0.03\u20130.25 deg, Figure 2, 8 of [Victor and Conte, 1989]; also [Conte et al., 2014]) comparable to the range of check sizes used in this study (0.08\u20130.5 deg). This broad range of sensitivities is found even when stimuli are restricted in eccentricity (Victor and Conte, 1989). Figure 2\u2014figure supplement 1 (right column) shows that V2 sensitivity to multipoint correlations also does not require a close match between RF size and the scale of the multipoint correlation; this sensitivity is present over a threefold range of length scales (i.e., a 10-fold range of the number of checks per receptive field). Thus, it is likely that the entire range of scales relevant to perception can be accounted for by the properties of individual neurons, along with the variation in RF sizes at each eccentricity (Hubel and Wiesel, 1968).\n\nNeurons whose RFs are difficult to map are often ignored in physiologic studies (Olshausen and Field, 2004). We were able to analyze their responses here because of the tetrode recording method, and found that many V2 neurons whose RFs could not be mapped nevertheless often showed selective sensitivity to multipoint correlations. We consider some possible reasons for this here. As defined in this paper, a neuron is considered to have a mappable RF if the reverse correlation of the neuron's responses to the stimulus passes a statistical criterion (see \u2018Materials and methods\u2019). Standard practice is to use random binary stimuli for this mapping procedure (Reid et al., 1997); here we include stimuli with high-order correlations in the mapping computation. The rationale is that inclusion of these stimuli allows some kinds of nonlinear responses to emerge in a first-order cross-correlation between stimulus and response, because of correlations within the stimuli (Schmid et al., 2011). But even an expanded stimulus set may not reveal the RFs of all neurons that respond to multipoint correlations. Reverse correlations may not exceed our statistical threshold because of response variability, or because the neuron is only responsive to stimulus configurations that occur very rarely in the stimulus set. We also note that from a computational point of view, our assay for sensitivity to multipoint correlations is independent of whether the neural response is correlated with the state of any single check: for each of the ensembles that probe a different kind of multipoint correlation, the number of black and white checks are equated, at each location. Thus, it is quite possible for a neuron to process information in a localized region of space (as manifest by its sensitivity to multipoint correlations) yet fail to have a RF that is measurable by reverse correlation methods, as we show here.\n\nFinally, our findings carry implications for neural mechanisms. Many biologically-plausible mechanisms can extract multipoint correlations, including a simple linear-nonlinear cascade (provided that the nonlinearity is more than quadratic), and modulatory surrounds (Schmid and Victor, 2014; Self et al., 2014). But models need to account for the specificity of the responses, not just their existence. In this regard, we note (Victor and Conte, 1991) that the specificity we observe can be produced by a two-stage (linear-nonlinear-linear-nonlinear) cascade, in which the first linear-nonlinear element detects local edges, and the second one combines signals from collinear edges via a second threshold. Removal of either component of the second stage\u2014either its linear or the nonlinear element\u2014eliminates this specificity. The finding that responses to multipoint correlations are more prominent in supragranular V2 than in its input layers or in V1 suggests possible correspondences between this cascade and neural circuitry. One possibility is that the first stage is in V1 and the second stage is in V2 (Wilson et al., 1992; Rust et al., 2005). Alternatively, the two linear-nonlinear stages may represent two loops of signal passage through a recurrent network within a single cortical area (Joukes et al., 2014).\n\n## Materials and methods\n\nAll procedures conformed to the guidelines provided by the US National Institutes of Health and Weill Cornell Medical College Animal Care and Use Committee. Full details concerning the physiologic preparation are provided in Schmid et al. (2014), and are summarized here.\n\n### Preparation\n\nSingle-unit recordings using arrays of three to six independently positioned tetrodes (typical input resistance, 1\u20132 M\u2126; Thomas Recording GmbH, Giessen, Germany) were made in V1 and V2 of 14 macaques, anesthetized with propofol and sufentanil and paralyzed with vecuronium or rocuronium. Tetrodes were placed on opposite sides of the V1/V2 boundary, and typically within 1 mm of each other within each region, so that the units recorded by the tetrodes generally had neighboring or overlapping RFs. This yielded a total dataset of 421 neurons (269 in V1, 152 in V2), following spike sorting and selection for firing rate criteria (see below).\n\n### Initial neuronal characterization\n\nTetrodes were independently lowered until they recorded visually-driven extracellular action potentials. After initial hand-mapping, tuning properties were determined from responses to 3\u20134 s presentations of drifting sinusoidal gratings. Stimulus parameters were successively refined in the order of orientation, spatial frequency, temporal frequency and contrast, based on on-line analysis of the responses of the target unit. When the recorded cluster had well-isolated units that preferred an orientation other than the preferred orientation for the target unit, this process was repeated for a second, and rarely a third, orientation as well.\n\n### Characterization of sensitivity to multipoint correlations\n\nTo determine neuronal responses to multipoint correlations, we measured responses to a sequence of black-and-white checkerboards that isolated the individual kinds of correlation. Figure 1 (top) shows three examples of these seven stimulus types. Each stimulus consisted of a 16 \u00d7 16 array of black and white checks. In the \u2018random\u2019 stimulus set, check colors were assigned independently, with an equal chance of being white or black. In the other stimulus sets, the coloring rule isolated a single kind of multipoint correlation. In the \u2018even\u2019 set, there was always an even number of white (or black) checks in any 2 \u00d7 2 neighborhood of checks. In the \u2018odd\u2019 set, there was always an odd number of white (or black) checks in a 2 \u00d7 2 neighborhood. Even and odd sets are the opposite extremes of the visually salient four-point correlation (Hermundstad et al., 2014), \u03b1. In the \u2018white triangle\u2019 set, there were always one or three white checks within a triangular region; in the \u2018black triangle\u2019 set, there were always one or three black checks within a region of the same shape. These two sets correspond to opposite extremes of the visually salient three-point correlation (Hermundstad et al., 2014), \u03b8. We also examined responses to four-point correlations in two other spatial configurations, \u2018wye\u2019 and \u2018foot.\u2019 Multipoint correlations in the wye and foot configurations are predictable from simpler quantities in natural images (Tka\u010dik et al., 2010), and, in keeping with predictions of efficient coding (Hermundstad et al., 2014), they are not visually salient (Victor and Conte, 1991).\n\nCheck size was scaled to the RF size of the target neuron so that approximately two checks corresponded to one lobe of the optimal spatial frequency, and orientation was set according to the orientation preference of the target neuron. This resulted in about 8 checks within the classical RF (V1: mean 7.40, median 6.00, SD 5.33; V2: mean 8.68, median 7.00, SD 5.46; statistics across all mappable units and not just the target; see below for details on RF mapping and Figure 2\u2014figure supplement 1 for the distribution of number of checks in the RF); thus, the checks are within the resolution limits of the neuron, and the stimulus patch covers an area that is substantially larger than the RF. Across all recordings (including mappable and un-mappable units), check sizes ranged from 0.08 to 0.5 deg (V1: mean 0.18, median 0.20, SD 0.05; V2: mean 0.22, median 0.20, SD 0.12).\n\nFor each type of stimulus, we presented 1024 examples (two repetitions each) for 320 ms, interleaved in a pseudorandom sequence. This large set size was chosen so that we can distinguish average responses to each of the stimulus sets (our focus) from responses that might be driven to the specific white or black checks or edges present in particular examples (a potential confound).\n\nStimuli were generated via a Markov recurrence rule (Victor and Conte, 1991, 2012), so that other than the constraint of their defining multipoint correlation, they are as random as possible (maximum-entropy). This yields stimulus sets that enable testing of each kind of multipoint correlation in isolation. In each set, there are no two-point correlations\u2014checks at any pair of locations are colored independently\u2014so that the sets have the same power spectra, and therefore the same spatial frequency content. The four kinds of correlations (the even/odd axis, the black triangle/white triangle axis, wye, and foot) are independently controlled: each set extremizes one of these correlations, while keeping all the others at 0 (Gilbert, 1980). Thus they provide a way to assay responsiveness to each kind of multipoint correlation in isolation.\n\nAll stimuli were rendered on a 1280 \u00d7 1024-pixel display at 100 Hz, using either a 21-inch ViewSonic G225f monitor (mean luminance 47 cd/m2, gamma-corrected) or a Sun GDM5410 monitor (mean luminance 46 cd/m2, gamma-corrected) at 114 cm. Control signals for the displays were generated by PC-based system using OpenGL software.\n\n### Spike sorting\n\nAfter bandpass filtering (300\u20139000 Hz) and thresholding, waveforms were clustered using customized versions of KlustaKwik and Klusters (Hazan et al., 2006); details as in Schmid et al. (2014). The 17 features consisted of peak and trough amplitudes (8 features), the first 8 principal components, and time. All neurons whose mean firing rates across all stimuli were \u2265 1 Hz were analyzed for their responsiveness to the multipoint correlation stimuli described above.\n\nTo classify extracellular spike waveforms as narrow-spiking (putative inhibitory) and broad-spiking (putative excitatory), we used a method similar to that of refs. (Mitchell et al., 2007) and (Niell and Stryker, 2008). For each single unit, the waveforms from each tetrode channel were averaged and the channel with the largest signal to noise ratio (SNR) was selected for the spike width measurement. Two parameters of spike width were measured: (1) trough to peak width\u2014the duration from the trough to the peak of the waveform, and (2) half-peak width\u2014the duration from the peak of the waveform to half its height. The distribution of both measurements across the 1856 waveforms from the laboratory database were significantly bimodal (p < 0.01 by the Hartigan dip test [Hartigan and Hartigan, 1985]). Based on the notch in the distribution, we classified extracellular waveforms as narrow-spiking (<405 \u00b5s) and broad-spiking (>430 \u00b5s). Next the averaged waveforms themselves were clustered using k-means. The clusters were separated identically by k-means of the waveforms, and the distribution of the spike width parameters.\n\n### Localization of recording sites\n\nAt the conclusion of the experiment, we made small lesions at locations that bracketed the recording sites along each tetrode track, via current passage through the most distal tetrode contact. Details concerning the procedures for lesions, perfusion, and histology are in ref. (Schmid et al., 2014). For sites for which the laminar assignment was uncertain, neurons were included in the tallies for V1 and V2 (e.g., top rows of each panel of Figure 2) and the statistical comparisons between them, but not in the breakdown by layer or statistical comparisons between layers. This amounted to <10% of the units.\n\n### Data analysis\n\nTuning curves were computed in the standard fashion from the Fourier components of the spike train elicited by each grating stimulus, as detailed in Schmid et al. (2014). Tuning curve peaks were determined from the DC response (F0) or the first harmonic (F1), whichever was larger. We classified neurons as simple or complex according to whether their response to a drifting grating was primarily at the period of the grating (simple) or primarily a maintained elevation (complex), as quantified by the F1/F0 ratio (Skottun et al., 1991). F1 is the first harmonic of the response to the optimal grating tested, F0 is the maintained firing rate of the response, after subtraction of the average firing rate in response to a uniform field at the mean illumination. Note that since grating parameters were chosen according to the preference of neurons whose waveforms could be discriminated online, some neurons may not have been stimulated at the optimal orientation or spatial frequency.\n\nRF maps were determined by correlating the neural response (1 for white checks, \u22121 for black checks) to the checkerboard stimuli (16 \u00d7 16 checks). The response measure was the total number of spikes over the duration of each presentation (320 ms) averaged across both repetitions; this is equivalent to computing the spike-triggered-average and then summing over the stimulus duration. Maps were separately computed for each of the seven stimulus types; as reported previously, some neurons (Schmid et al., 2012) that did not have mappable RFs for random checkerboards nevertheless had mappable RFs for the other stimulus types. Statistical significance for each of these seven maps was determined by a shuffle test: we recomputed maps from 500 surrogate data sets in which the responses to each stimulus type were permuted, determined the mean and standard deviation of these surrogate maps at each check, and then used the corresponding Gaussian distribution to determine which actual map values were significant at p < 0.05 (two-tailed, correcting for multiple comparison via the Benjamini-Hochberg method, that is, false discovery rate [FDR] method) (Benjamini and Hochberg, 1995). We then determined the union of the seven maps obtained from each stimulus. Usually this yielded a single connected component, and the RF was taken to be its convex hull. When more than one connected component was present, smaller components were merged with the largest one if they were separated by no more than a single check, and the convex hull of the resulting region was taken as the RF. The number of checks in this convex hull was taken as the measure of RF size. If none of the seven classes of stimuli yielded a significant RF map by the above criteria, the neuron was considered not to have a mappable RF. As an alternative procedure, we also computed RF maps by correlating the responses with all (7 \u00d7 1024) stimuli, and this yielded very similar results.\n\nTo measure sensitivity to multipoint correlations, we proceeded as follows (see Figure 3). For each of the stimulus types, we accumulated a PSTH across all 1024 examples (and 2 repeats), and then determined the smoothed firing rate via local linear regression (Loader, 2012). Significance of the difference between two firing rate functions was determined by a shuffle test, in which 3000 surrogate data sets were created by randomly exchanging responses among a pair of stimulus types. The exchanges were limited to responses that were recorded in adjacent trials (within 4 s of each other), to avoid confounds due to slow changes in firing rate over time. The difference between the smooth firing rates of the actual data was compared to the distribution of differences seen in the surrogate datasets at each 5 ms bin, from 55 to 250 ms. The number of times the actual difference was exceeded by any of the 3000 surrogates yielded a raw two-tailed p-value at each of these 40 time points. If the raw p-value was below the false-discovery-corrected threshold of p = 0.05, the neuron was considered to have a different response to the two kinds of stimuli at that time point. For each neuron, the MCDI at each time point (Figure 2A) was defined as the fraction of stimulus pairs that elicited statistically different responses as determined by the above procedure; the MCDI was therefore n/21, where n is the number of stimulus pairs that elicited statistically different responses. For each of the seven stimuli, we also calculated a stimulus-specific MCDI, considering only the six pairs of discriminations involving that particular stimulus (Figure 2B); this was therefore a quantity n/6. Finally, to detail the pattern of pairwise discriminations (Figure 2C,D), we computed a \u2018pair-specific\u2019 MCDI\u2014either 0 (no discrimination) or 1 (discrimination), and averaged it across the population. For this purpose, we considered a neuron to distinguish a pair of stimuli if a difference was present at any time during the 55\u2013250 ms period, again using the above statistical criteria.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06604/elife-06604-fig3-v2.jpg)\n\n**Figure 3.:** (A) A smoothed firing rate is constructed from the responses to examples of each stimulus type (1024 examples, each presented twice). (B) A parallel procedure is carried out for 3000 surrogate datasets, in which responses are randomly exchanged among the stimuli. The exchanges were limited to responses recorded in adjacent trials, to avoid confounds due to slow change in firing rate over time. (C) The difference between the smoothed responses to the two stimuli is computed, both for the actual responses and each of the surrogate datasets. The relationship of the actual firing rate difference (black) to the distribution of differences encountered in the surrogate datasets (gray) is determined. (D) At each time point, the position of the actual difference in the surrogate difference distribution is expressed as a two-tailed p-value. The actual difference is considered to be significant if any of these p-values over the range 55\u2013250 ms (dashed vertical lines) fall below the false-discovery-rate (FDR) threshold q corresponding to a significance level of 0.05. The FDR threshold q, illustrated as the horizontal dashed line in Figure 3D, is a data-determined quantity (Benjamini and Hochberg, 1995) that is substantially less than the raw significance level of 0.05 (in this case, q < 0.01).\n\nSensitivity to multipoint correlations was not associated with the simple vs complex distinction (as measured by F1/F0 ratio, with a dividing point at 1 [as in ref. Mechler and Ringach, 2002] or at the population median). These and other comparisons between subsets of cells (e.g., V1 vs V2, or between laminar compartments) were carried out using a two-tailed Wilcoxon rank-sum test. The raw p-values were subjected to false discovery correction (Benjamini and Hochberg, 1995) across time points, in 5 ms bins from 55 ms to 250 ms. Statistical significance corresponds to p < 0.05.\n\nTo visualize the population pattern of differential responses (Figure 2D), we used standard multidimensional scaling (Kruskal and Wish, 1978), applied to the fraction of neurons that distinguished between each pair of correlation types. The first two embedding dimensions (as shown in Figure 2D) typically accounted for > 90% of the variance.\n",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b75f095d-6685-4d74-844e-2e4fd2e0b4bd",
+      "submission_id": "16a6e950-4b0c-454a-bdaa-a5da183c54d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy Behrens, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06604.007](https://doi.org/10.7554/eLife.06604.007)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cVisual processing of informative multipoint correlations arises primarily in V2\u201d for consideration at eLife. Your article has been favorably evaluated by Timothy Behrens (Senior editor and Reviewing editor) and three reviewers, one of whom, Michael Landy, has agreed to share his identity.\n\nThe editor and the reviewers discussed their comments before we reached this decision, and the editor has assembled the following comments to help you prepare a revised submission.\n\nThe editor and reviewers agree that the finding of neural correlates of multipoint correlations reflects an important advance over your previous behavioural findings and are enthusiastic about the potential publication of this Research Advance.\n\nFor example:\n\nThis paper takes the previous work of this group on which 2-, 3- and 4-point correlations are visually salient and to which the visual system is sensitive, and shows that some differential responses to these correlations arise first in area V2. As the authors are aware, I'm pretty familiar with this line of work (having reviewed several of the earlier papers in the series). Tying this story to the physiology is certainly a logical and useful next step.\n\nIn the current manuscript Yu et al. add to previously published findings that human observes are more sensitive to more informative multi-point correlations in images. Here they provide a candidate for the neural substrate of this sensitivity: supragranular layers of V2. I think the manuscript is an interesting addition to the previous paper.\n\nOverall, this Research Advance is clearly written and nicely complements the founding article by providing neuronal correlates for multipoint correlation stimuli that have theoretical significance and perceptual relevance.\n\nHowever, there were several questions that the review panel would like addressed before we could consider publication of the study.\n\nDuring discussion the panel agreed that the most critical issue to address before the paper can be published is the issue of the scaling of the stimuli.\n\nSince receptive fields are larger in V2 and you are adjusting the stimulus to the receptive field size, aren't you effectively presenting two different stimulus ensembles to the V1 and the V2 population, respectively? Could that explain the differential response between V1 and V2? Do you have control data, where you, instead of upscaling the 16x16 patch, simply increased the number of pixels to match the receptive field size? Alternatively, you could drive the V1 population with the upscaled stimuli for the V2 neurons and see whether your results change. If you do not have such data readily to hand, do you have other means of ruling out that the stimulus scaling confounds the results? For example, are there recorded V1 cells whose receptive field completely overlapped with that of a V2 cell? In that case, you would have responses to the same stimulus ensemble, but from two different areas. The review panel agreed that this issue should be rigorously addressed.\n\nIf such data do not exist, then the review panel asks you to remove the claim of a distinction between V1 and V2 from the paper since the data does not really support a comparison, and to explicitly mention that V1 and V2 are stimulated with differently scaled stimuli and explain the reasoning behind it.\n\nA related question about the relationship between V1 and V2 coding was also raised:\n\nFigure 2A shows that at least 75% of V1 cells have no selectivity for multipoint correlation stimuli, yet the mean MCDI of all cells is \u223c0.05. This implies that V1 has a small population of V1 cells that have an MCDI of 0.2 or more. How do the response properties of these \u201cspecial\u201d V1 neurons compare to a \u201ctypical\u201d V2 neuron? With the current presentation, it's hard to tell whether V2's representation of multipoint correlations is new or enhances a representation already present in a small subpopulation of V1. As such, the first sentence of the Discussion, which says \u201carises primarily in V2\u201d seems imprecise. This distinction is also relevant to the authors' Discussion hypothesis that higher-order correlation specificity might emerge from a two-stage cascade from V1 to V2.\n\nThe reviewers were also concerned about the illusory contour figure:\n\nAt present, the connections between higher-order correlations and previously hypothesized roles for V2 seem tenuous and insufficiently detailed to warrant a full figure in the main text.\n\nFor example:\n\nThe authors use Figure 3 to argue that V2's selectivity to multipoint correlations helps explain its involvement in the detection of illusory contours and the discrimination of figure and ground. I have two comments. First, in panel a, the \u201ceven and odd\u201d correlation structure picks out the corners of the black bars. As such, the association of this correlation with the illusory contour is a consequence of the fact that the bars are spaced by the same distance that defined the \u201ceven and odd\u201d correlation structure. Can the authors say anything about whether there is an association between the spatial scales of illusory contour detection and the \u201ceven and odd\u201d correlation structure? For example, do humans perceive illusory contours over the same length scales that \u201ceven and odd\u201d correlation structures are informative for natural images? Has V2 previously been shown to be sensitive to illusory contours on the spatial scale that the authors use in the \u201ceven and odd\u201d correlation structure? Second, the \u201cwhite and black triangle\u201d correlation structure is the only correlation structure that can distinguish between the two stimuli in panel b because it's the only odd-ordered correlation. This is why I earlier alluded to the point that it would have been helpful to include an uninformative third-order correlation stimulus. Also, in the specific example shown, couldn't one just use the mean (i.e. a first-order structure) to discriminate between the stimuli? I wonder if there might be a better choice of stimuli for this panel.\n\nThe reviewers also had several questions that we believe can be addressed by changes to the manuscript text.\n\nIn Hermundstad et al. 2014 the second order stimuli (beta) are more informative than the fourth order stimuli (alpha), which are more informative than the third order stimuli (theta). However, the authors only present data for alpha and theta stimuli (that were less informative in the Hermundstad paper) while not presenting the beta stimuli (that were more informative in the Hermundstad paper). I would like to know whether the authors (i) performed experiments with beta stimuli, (ii) if so why they did not report them, or (iii) why they did not consider them. I am sure the authors had a good reason which should be mentioned in the paper.\n\nIt would be nice if you could mention more explicitly how the rank order of the MCDI relate to the sensitivity order found in the psychophysical experiments of the previous paper.\n\nI was interested by the finding that the MCDI was unassociated with mappable receptive fields and would be interested in hearing some thoughts from the authors in their Discussion section.\n\nCan the authors clarify how they determined the p-value threshold in Figure 4D? Since the authors declare significance \u201cif any of these p-values\u201d falls below the FDR threshold, is the Benjamini-Hochberg correction equivalent to a Bonferroni correction? If so, then 40 comparisons would lead to a p-value correction less than that displayed. Or do the authors somehow correct for fact that their temporal smoothing effectively leads to fewer than 40 comparisons?\n\nThere were also questions about the underlying assumptions in the model. We understand that these comments pertain equally to the already-published paper, but we nevertheless hope that you will be able to deal with them in a few sentences, which we felt would help the current manuscript.\n\nWhat justifies the authors to assume the regime of sampling limitation rather than transmission limitation? You write that your results fit into the efficient coding framework if sampling an image is the main limitation. What is the empirical evidence that justifies this assumption as opposed to the transmission limited regime many other studies are based on?\n\nIf I understand correctly, the fact that humans/neurons should be more sensitive to more variable features is derived using a linear model with Gaussian input and channel noise. However, the mapping from images to multi-point correlations does not seem to be linear. How do you know that this result still holds in the non-linear case, in particular if the sampling regime is characterized by dominating input noise (which would get nonlinearly transformed)?\n\nHow do you justify that more variable features contain more information? In the discrete case, I can see that. However, in the limit of infinitely many images, the multi-point correlations become continuous. In that case I could transform all features by a pointwise monotonic transformation (histogram equalization) that would not change the information content but make all features equally variable.\n",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "64912d4e-b376-4c52-9aa8-49d1b8626be0",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C1",
+      "claim": "The efficient coding principle accounts for the allocation of computational resources in central sensory processing when sampling an image is the main limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the visual system as a model, we recently showed that the efficient coding principle accounted for the allocation of computational resources in central sensory processing: when sampling an image is the main limitation, resources are devoted to compute the statistical features that are the most variable, and therefore the most informative (eLife 2014;3:e03722. DOI: 10.7554/eLife.03722 Hermundstad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous publication (Hermundstad et al., 2014) that demonstrated this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "25f216bf-d41a-4be3-8739-c3876d8dabe3",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C2",
+      "claim": "Resources are devoted to compute the statistical features that are the most variable, and therefore the most informative, when sampling an image is the main limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "when sampling an image is the main limitation, resources are devoted to compute the statistical features that are the most variable, and therefore the most informative (eLife 2014;3:e03722. DOI: 10.7554/eLife.03722 Hermundstad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hermundstad et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5ddf747e-e322-4525-9001-eecf1734f371",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C3",
+      "claim": "Computations involving sensitivity to specific multipoint correlations take place in visual area V2, primarily in its supragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on these results, we use single-unit recordings in the macaque monkey to determine where these computations\u2014sensitivity to specific multipoint correlations\u2014occur. We find that these computations take place in visual area V2, primarily in its supragranular layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on single-unit recordings presented in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "94d7d6ab-6ee3-455b-ada1-ed55b9c0ff58",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C4",
+      "claim": "V2 neurons are sensitive to the multipoint correlations that are informative about natural images.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration that V2 neurons are sensitive to the multipoint correlations that are informative about natural images provides a common computational underpinning for diverse but well-recognized aspects of neural processing in V2, including its sensitivity to corners, junctions, illusory contours, figure/ground, and 'naturalness.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "1f80b6fc-901a-4023-89ac-da218a56a1ac",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C5",
+      "claim": "V2 sensitivity to multipoint correlations provides a common computational underpinning for V2's sensitivity to corners, junctions, illusory contours, figure/ground, and 'naturalness.'",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration that V2 neurons are sensitive to the multipoint correlations that are informative about natural images provides a common computational underpinning for diverse but well-recognized aspects of neural processing in V2, including its sensitivity to corners, junctions, illusory contours, figure/ground, and 'naturalness.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings and established knowledge about V2 properties.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5fb32fa4-4f82-40ec-8a34-c1cf89f99857",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C6",
+      "claim": "The statistics that were the most variable were the most salient perceptually.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we analyzed the local statistics of natural images, and compared the variability of these statistics with their perceptual salience. The statistics that were the most variable\u2014that is, the least predictable and therefore the most informative\u2014were the most salient perceptually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Hermundstad et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "4e474c96-f897-4c83-b8e8-c2e1d095f205",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C7",
+      "claim": "The relationship in which greater resources are allocated to more variable features emerges from the efficient coding principle in the regime that the main constraint is input sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship, in which greater resources are allocated to more variable features, emerges from the efficient coding principle in the regime that the main constraint is input sampling (Barlow, 1961; van Hateren, 1992; Doi and Lewicki, 2014; Hermundstad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "86f370c4-1ffe-494c-b903-389eb4e77dac",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C8",
+      "claim": "The observed relationship contrasts with the 'whitening' regime, which emerges when the main constraint is output capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed relationship contrasts with the more familiar 'whitening' regime (Srinivasan et al., 1982), which emerges when the main constraint is output capacity (e.g., with regard to the retina and the optic nerve bottleneck); the whitening regime predicts that fewer resources are allocated to more variable features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Srinivasan et al., 1982) and established knowledge about efficient coding regimes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "44b6fc15-8978-4a0d-a7c5-e47822d3e756",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C9",
+      "claim": "The whitening regime predicts that fewer resources are allocated to more variable features.",
+      "claim_type": "EXPLICIT",
+      "source": "the whitening regime predicts that fewer resources are allocated to more variable features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the whitening regime in efficient coding theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "705fc576-b07b-4aff-8221-7e04a69faa3a",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C10",
+      "claim": "Input sampling, rather than output capacity, is the main constraint in central visual processing.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the results of (Hermundstad et al., 2014) provide empirical support for the hypothesis that input sampling, rather than output capacity, is the main constraint\u2014since a transmission limit would have predicted a lower sensitivity for image statistics that were the most variable, the opposite of what we found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from the results of Hermundstad et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "50dff18e-170f-4f29-a2d5-d5835ff26705",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C11",
+      "claim": "Analyzing natural images via multipoint correlations reduces the dimensionality of the space of image statistics that need to be considered.",
+      "claim_type": "EXPLICIT",
+      "source": "To reach this result, we analyzed natural images via their multipoint correlations, that is, the statistics of the combinations of luminance values that appear in several points of the image. This approach has several advantages. First, it reduces the dimensionality of the space of image statistics that need to be considered, since it can be applied to binarized images, and it separates informative from uninformative statistics (Tka\u010dik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tka\u010dik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "dfdb52fe-cfd4-4aa7-b580-d7e89083fa81",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C12",
+      "claim": "The multipoint correlation approach separates informative from uninformative statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "it reduces the dimensionality of the space of image statistics that need to be considered, since it can be applied to binarized images, and it separates informative from uninformative statistics (Tka\u010dik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tka\u010dik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "ae740493-ddcd-4d08-b4cb-5cd256e27a38",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C13",
+      "claim": "The multipoint correlation approach enables rigorous tests of theoretical predictions by isolating individual kinds of informative and uninformative multipoint correlations in synthetic image sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the approach enables rigorous tests of theoretical predictions, since the individual kinds of informative and uninformative multipoint correlations can be isolated in synthetic image sets (Victor and Conte, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Victor and Conte, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "576944cc-f749-433c-99b1-d884641abbb7",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C14",
+      "claim": "Multipoint correlations in natural images covary in a complex manner that is difficult to capture or control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the multipoint correlations in natural images covary in a complex manner that is difficult to capture or control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the complexity of natural image statistics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "2922f097-b752-43d0-a5c9-f81287105187",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C15",
+      "claim": "Synthetic image sets that isolate individual kinds of multipoint correlations are highly un-natural.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic image sets that isolate individual kinds of multipoint correlations are highly un-natural, but here this is an advantage: our predictions, which are derived from natural images, are tested in an out-of-sample fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the construction of the synthetic stimuli.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "47870923-6732-4d26-9cc6-543624864184",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C16",
+      "claim": "421 individual neurons were recorded (269 in V1, 152 in V2) in the anesthetized, paralyzed macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the extracellular activity of 421 individual neurons (269 in V1, 152 in V2) in the anesthetized, paralyzed macaque to stimulus sets that isolate the multipoint correlations previously studied in natural images (Tka\u010dik et al., 2010; Hermundstad et al., 2014) and psychophysically (Victor and Conte, 1991, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "6cd7e1e7-50f1-4fa8-9b23-c10c38f240b3",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C17",
+      "claim": "The 'even' and 'odd' sets isolate the opposite extremes of the visually salient four-point correlation denoted \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'even' and 'odd' sets isolate the opposite extremes of the visually salient four-point correlation (Hermundstad et al., 2014), there denoted \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hermundstad et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "9d310e09-32a9-4b7f-8131-2da3d75119f9",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C18",
+      "claim": "The 'white triangle' and 'black triangle' sets isolate the extremes of the visually salient three-point correlation denoted \u03b8.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'white triangle' and 'black triangle' sets isolate the extremes of the visually salient three-point correlation (Hermundstad et al., 2014), there denoted \u03b8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hermundstad et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "55ddb02b-562b-4e10-8c84-0f11f83f1e40",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C19",
+      "claim": "The 'wye' and 'foot' sets have multipoint correlations that are not visually salient.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'wye' and 'foot' sets have multipoint correlations are not visually salient (Victor and Conte, 1991); this is in keeping with the efficient coding principle because in natural images, these correlations are predictable from simpler quantities (Tka\u010dik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Victor and Conte, 1991 and Tka\u010dik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "1ca51921-9b3d-4d91-acd5-7bfc4358fe34",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C20",
+      "claim": "In natural images, the wye and foot correlations are predictable from simpler quantities.",
+      "claim_type": "EXPLICIT",
+      "source": "this is in keeping with the efficient coding principle because in natural images, these correlations are predictable from simpler quantities (Tka\u010dik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tka\u010dik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "d0691df9-0878-467a-9415-474f0628182f",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C21",
+      "claim": "One- and two-point statistics (luminance and spatial contrast) are well-known to modulate responses throughout the visual system, beginning in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on three- and four-point correlations, since one- and two-point statistics (luminance and spatial contrast) are well-known to modulate responses throughout the visual system, beginning in the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "befbd1ad-0e94-49d6-ad01-603b862aa121",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C22",
+      "claim": "Responses are generally dominated by a transient increase or decrease in firing, occurring 70 to 100 ms after the onset of each stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses are generally dominated by a transient increase or decrease in firing, occurring 70 to 100 ms after the onset of each stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the PSTHs shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "3794451f-29ab-41dc-be7c-c5678ad6895d",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C23",
+      "claim": "Decremental responses following contrast onset were present in both areas, but more often in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "Decremental responses following contrast onset were present in both areas, but more often in V2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observation of the data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "7fcdf110-0f21-4623-904c-c1fdae1ddcbe",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C24",
+      "claim": "A decremental response was not a requirement for discriminating among multipoint correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a decremental response was not a requirement for discriminating among multipoint correlations: outside of supragranular V2, there were many neurons that had incremental responses to the stimulus transient and distinguished among the types of multipoint correlation (for example, the third and fourth rows on the right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by examples shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b2f3c4eb-3ac1-4326-b42d-0917492968c3",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C25",
+      "claim": "Significant differences between responses to structured and random stimuli were more common in V2 than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant differences between responses to structured and random stimuli (the asterisks in Figure 1) were more common in V2 than in V1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the statistical analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "23a04287-0894-4ea1-97f7-569e775c6e6c",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C26",
+      "claim": "The average MCDI peaked at a value of approximately 0.05 in V1, and approximately 0.10 in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "The average MCDI peaked at a value of approximately 0.05 in V1, and approximately 0.10 in V2; this difference became significant at 70 ms after stimulus onset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "37d25e3f-627f-435b-800e-e5b96d67eba9",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C27",
+      "claim": "The difference in MCDI between V2 and V1 became significant at 70 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "this difference became significant at 70 ms after stimulus onset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b654e4cc-612f-41a4-8de6-943c8b4cdf33",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C28",
+      "claim": "The MCDI increased slightly from the V1 granular layer (mean 0.025) to the V1 extragranular layers (supragranular: 0.033, infragranular, 0.045).",
+      "claim_type": "EXPLICIT",
+      "source": "A laminar analysis of the MCDI (Figure 2A, lower three rows) revealed a slight increase from the V1 granular (input) layer (mean 0.025) to the V1 extragranular layers (supragranular: 0.033, infragranular, 0.045)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the laminar analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "7200ba7c-2db7-42ec-9be0-23dcc9972e08",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C29",
+      "claim": "There was a jump in MCDI at the V2 granular layer (0.101).",
+      "claim_type": "EXPLICIT",
+      "source": "followed by a jump at the V2 granular layer (0.101)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the laminar analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b2bce66b-b64d-479c-8222-70fb62f58add",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C30",
+      "claim": "There was a marked upsurge in MCDI in the V2 supragranular layer (0.162), but not the infragranular layer (0.052).",
+      "claim_type": "EXPLICIT",
+      "source": "with a marked upsurge in the V2 supragranular layer (0.162), but not the infragranular layer (0.052).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the laminar analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "acda31fd-d8c0-4a67-8e06-0830dae21a44",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C31",
+      "claim": "The difference between the MCDI in supragranular V2 and each of the other compartments was significant, except for the comparison with granular V2 (p = 0.053).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the MCDI in supragranular V2 and each of the other compartments was significant, except for the comparison with granular V2 (p = 0.053).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a5a6846d-7c0f-47e8-ad7c-6b9c7660c4ff",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C32",
+      "claim": "The median value of the MCDI in supragranular V2 was 0.12, meaning that the 'typical' neuron responded differentially for 2 or 3 of the 21 pairwise comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "The median value of the MCDI in supragranular V2 was 0.12, meaning that the 'typical' neuron responded differentially for 2 or 3 of the 21 pairwise comparisons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "062b60a2-5457-46c0-a514-90df815cdf32",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C33",
+      "claim": "In all other compartments (in V1 and V2), the median MCDI was 0, meaning the 'typical' neuron did not distinguish between any of the stimulus types.",
+      "claim_type": "EXPLICIT",
+      "source": "In all other compartments (in V1 and V2), the median was 0, that is, the 'typical' neuron did not distinguish between any of the stimulus types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b0f05c48-851d-4061-830d-f9c475ab6b04",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C34",
+      "claim": "Atypical neurons in V1 that distinguished among multipoint correlations were primarily neurons in the infragranular layer and with large receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Atypical neurons in V1 did distinguish among multipoint correlations. These were primarily neurons in the infragranular layer and with large receptive fields (RFs)\u2014see Figure 2\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b8021553-8bca-45d5-a466-62911e4e6bb9",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C35",
+      "claim": "The mean MCDI was lower in V1 (0.027) than in V2 (0.081), especially in its supragranular compartment (0.162).",
+      "claim_type": "EXPLICIT",
+      "source": "But overall, the mean MCDI was lower in V1 (0.027) than in V2 (0.081), especially in its supragranular compartment (0.162).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a5eb689d-c5c3-4fba-ad24-17a4dd57a00b",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C36",
+      "claim": "Sensitivity to multipoint correlations was not restricted to specific cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity to multipoint correlations was not restricted to specific cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the analysis of different cell types in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "8a356ed3-bbb5-4cd8-b94e-d4b5ab797e12",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C37",
+      "claim": "The MCDI was not significantly associated with the simple vs complex distinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the MCDI was not significantly associated with the simple vs complex distinction, nor with the distinction between regular-spiking and fast-spiking neurons, as determined by extracellular action potential shapes (Niell and Stryker, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "f8f82218-dc13-461a-8d57-28626992b822",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C38",
+      "claim": "The MCDI was not significantly associated with the distinction between regular-spiking and fast-spiking neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the MCDI was not significantly associated with the simple vs complex distinction, nor with the distinction between regular-spiking and fast-spiking neurons, as determined by extracellular action potential shapes (Niell and Stryker, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "afecd868-9d41-4a93-9624-2d563018b350",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C39",
+      "claim": "Sensitivity to multipoint correlations was present in isolated units that did not have overt RFs by hand-mapping or by reverse correlation (81/269 in V1 and 65/152 in V2).",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity to multipoint correlations was also present in isolated units that did not have overt RFs by hand-mapping or by reverse correlation (81/269 in V1 and 65/152 in V2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "efd26135-0d27-44dc-bda9-2e88aa72a8ee",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C40",
+      "claim": "There was no significant difference in the MCDI between neurons without mappable RFs and simultaneously-recorded neurons with mappable RFs, either in V1 or V2.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in the MCDI between these neurons and the simultaneously-recorded neurons with mappable RFs, either in V1 or V2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "6d5f4f39-8006-403a-9da5-b2875a029031",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C41",
+      "claim": "Among neurons with mappable RFs, the MCDI was not significantly different for neurons whose RFs were above vs below the median size for their laminar compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the neurons with mappable RFs, the MCDI was not significantly different for neurons whose RFs were above vs below the median size for their laminar compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "d500b81a-d224-4766-af3b-27f0ccef3189",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C42",
+      "claim": "Sensitivity to multipoint correlations does not require a precise match between the RF size and the spatial scale of the correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sensitivity to multipoint correlations does not require a precise match between the RF size and the spatial scale of the correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the analysis of RF size and MCDI.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "dc7c3e9c-4043-41af-a259-25f4159f5ba6",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C43",
+      "claim": "Sensitivity to multipoint correlations was widely distributed across V2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, sensitivity to multipoint correlations was widely distributed across V2 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the various analyses of V2 neurons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b274f126-fdc3-4bb0-ad05-d05273f424a5",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C44",
+      "claim": "The difference in sensitivity to multipoint correlations between V1 and V2 was not due to a difference in RF size.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in sensitivity to multipoint correlations between V1 and V2 was not due to a difference in RF size, nor to stimulus scaling (i.e., the number of stimulus checks within the RF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "f3a8850f-bfa7-40bd-a6dc-c0a69b318d28",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C45",
+      "claim": "The difference in sensitivity to multipoint correlations between V1 and V2 was not due to stimulus scaling (the number of stimulus checks within the RF).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in sensitivity to multipoint correlations between V1 and V2 was not due to a difference in RF size, nor to stimulus scaling (i.e., the number of stimulus checks within the RF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5ff344bb-bf71-4e20-acc7-7d1aab9e16e0",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C46",
+      "claim": "Across the entire range of RF sizes, the MCDI is higher in V2 than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper left panel of Figure 2\u2014figure supplement 1 compares MCDI across V1 and V2 as a function of RF area; across the entire range of sizes, the MCDI is higher in V2 than in V1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "2c2c5999-fdd2-4111-bf3d-c2df4c5f7bb7",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C47",
+      "claim": "When neurons are equated for the number of checks within the RF, the MCDI in V2 is larger than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper right panel makes this comparison as a function of the number of checks within the RF, which also equates neurons whose RFs covered the same fraction of the stimulus area. Here too, the MCDI in V2 was larger than in V1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "c20897b3-ac28-4c11-9ad5-c6da323d4d60",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C48",
+      "claim": "There is a subset of V1 neurons with large RFs in the infragranular layer that are sensitive to multipoint correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "In granular and supragranular layers, the above observations hold, but there is a suggestion of a subset of V1 neurons with large RFs (lower left panel) that are sensitive to multipoint correlations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "71429224-fdd7-459f-81f5-afcdcf851c26",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C49",
+      "claim": "It is unlikely that the subpopulation of infragranular V1 neurons with large RFs underlies the high MCDI seen in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unlikely that this subpopulation underlies the high MCDI seen in V2: the targets of infragranular V1 (Felleman and Van Essen, 1991) are the superior colliculus (layer 5) and the lateral geniculate (layer 6), while the inputs to V2 arise mainly from layers 2, 3, and 4b, where the MCDI is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from anatomical connectivity data cited from Felleman and Van Essen, 1991.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "633c18a9-72a9-4b75-9d30-1726f0c75e69",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C50",
+      "claim": "The targets of infragranular V1 are the superior colliculus (layer 5) and the lateral geniculate (layer 6).",
+      "claim_type": "EXPLICIT",
+      "source": "the targets of infragranular V1 (Felleman and Van Essen, 1991) are the superior colliculus (layer 5) and the lateral geniculate (layer 6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Felleman and Van Essen, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "dbe5fa93-e8fe-4c05-ba62-24412642baa5",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C51",
+      "claim": "The inputs to V2 arise mainly from layers 2, 3, and 4b of V1.",
+      "claim_type": "EXPLICIT",
+      "source": "while the inputs to V2 arise mainly from layers 2, 3, and 4b, where the MCDI is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about V1-V2 connectivity, implied by the citation to Felleman and Van Essen, 1991.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "7649e9dc-9ba2-461d-972b-f6a7fcf58e50",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C52",
+      "claim": "The difference between supragranular V2 and the V2 input layer strongly suggests that the behavior in supragranular V2 is a result of intrinsic processing in V2, not a feature of signals passed on by V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the difference between supragranular V2 and the V2 input layer strongly suggests that the behavior in supragranular V2 is a result of intrinsic processing in V2, not a feature of signals passed on by V1 (which would already have been present in the granular layer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the laminar pattern of MCDI in V2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "0d3e1d7f-000a-4891-a4c7-3a77cb0dd37e",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C53",
+      "claim": "The multipoint correlations that contribute to the MCDI are the ones previously identified as being informative about natural images, namely, the even, odd, white triangle, and black triangle stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2B shows that the multipoint correlations that contribute to the MCDI are the ones previously identified as being informative about natural images (Tka\u010dik et al., 2010) and perceptually salient (Victor and Conte, 1991), namely, the even, odd, white triangle, and black triangle stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2B and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "95491362-4fa1-4b05-91fd-2e298edc397d",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C54",
+      "claim": "Few neurons, either in supragranular V2 or across the population, discriminated among pairs of the stimuli with uninformative multipoint correlations (random, wye, and foot).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2C further breaks down the MCDI into the individual pairwise comparisons. Few neurons, either in supragranular V2 or across the population, discriminated among pairs of the stimuli with uninformative multipoint correlations (random, wye, and foot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5d92c65c-a24d-4130-bcd2-76ffc51f4a60",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C55",
+      "claim": "In V1, points representing different stimulus types are clustered near the origin in the multidimensional scaling representation, since most neurons cannot distinguish between any stimulus types.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, points are clustered near the origin, since most neurons cannot distinguish between any stimulus types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the multidimensional scaling analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "865aec79-117d-4417-b870-7d3226f6519d",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C56",
+      "claim": "In V2, the representation of stimulus types expands into a multidimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "In V2, the representation expands into a multidimensional space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the multidimensional scaling analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "0b2cf72c-e13b-4565-9aa5-55cdde7edc6a",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C57",
+      "claim": "The two opposite stimulus pairs (even vs odd, and white triangle vs black triangle) are separated along different axes in the V2 representation.",
+      "claim_type": "EXPLICIT",
+      "source": "The two opposite stimulus pairs (even vs odd, and white triangle vs black triangle) are separated along different axes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the multidimensional scaling analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "3d98cd2d-3b78-435b-807c-8f5db010546b",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C58",
+      "claim": "Psychophysical studies show that the even-vs-odd gamut, and the white triangle-vs-black triangle gamut are independent perceptual axes.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, psychophysical studies show that the even-vs-odd gamut, and the white triangle-vs-black triangle gamut are independent perceptual axes (Victor and Conte, 2012) (Figure 8 panel 2 of reference [Victor and Conte, 2012], and the [\u03b8, \u03b1]-panels of Figure 3 of Hermundstad et al. (2014)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Victor and Conte, 2012 and Hermundstad et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "f92b2d1a-e442-4b9f-9a7a-c1bff71d5779",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C59",
+      "claim": "Human perceptual sensitivities are larger for the four-point configuration than for the three-point configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "Human perceptual sensitivities are larger for the four-point configuration than for the three-point configurations (Victor and Conte, 2012; Hermundstad et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Victor and Conte, 2012 and Hermundstad et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "e323fa3d-bf04-471c-bfd3-b30081bf8842",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C60",
+      "claim": "Higher values of the MCDI for the even stimuli than for the white triangle or black triangle stimuli in supragranular V2 mirror the higher human perceptual sensitivity for the four-point configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "this is mirrored by higher values of the MCDI for the even stimuli than for the white triangle or black triangle stimuli in supragranular V2 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference comparing the neuronal data to psychophysical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "298db7d2-493e-49c3-aaf9-ffeb7f1271cb",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C61",
+      "claim": "The points corresponding to the uninformative stimuli are close to, but not superimposed on, the random stimulus in the V2 representation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the points corresponding to the uninformative stimuli are close to, but not superimposed on, the random stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observation of Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5353b02e-d215-4905-a599-cb19fbfeb714",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C62",
+      "claim": "Psychophysical sensitivity to the odd stimulus is only about 25% less than sensitivity to the even stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while psychophysical sensitivity to the odd stimulus is only about 25% less than sensitivity to the even stimuli (Victor and Conte, 2012), the MCDI for the odd stimulus is much lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Victor and Conte, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "03bbdbaa-2b6c-4803-a4ac-45dcbbfec844",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C63",
+      "claim": "The MCDI for the odd stimulus is much lower than for the even stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while psychophysical sensitivity to the odd stimulus is only about 25% less than sensitivity to the even stimuli (Victor and Conte, 2012), the MCDI for the odd stimulus is much lower.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5c212f96-8b5e-43e2-8796-ecfb1034a60d",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C64",
+      "claim": "The odd stimulus contains even correlations when analyzed at spatial scales larger than a single check.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the odd stimulus contains even correlations when analyzed at spatial scales larger than a single check (Victor and Conte, 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Victor and Conte, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "01fc8a24-1271-4f84-a50a-1f873ac846f3",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C65",
+      "claim": "Neuronal mechanisms sensitive to the even correlation will also contribute to the perceptual salience of the odd stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "so neuronal mechanisms sensitive to the even correlation will also contribute to the perceptual salience of the odd stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference from the observation that odd stimuli contain even correlations at larger scales.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a20d2779-3fe4-4c3d-893c-2d9c9b9178a8",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C66",
+      "claim": "The discrepancies between V2 neuronal activity and perception may reflect the simple measure used for quantifying discrimination at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the discrepancies between V2 neuronal activity and perception may reflect the simple measure used for quantifying discrimination at the population level (the average MCDI and multidimensional scaling), as well as further neural processing between V2 and perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for discrepancies between neuronal and perceptual data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "4c20c4b3-9bba-4e9d-855e-f9d9645c71da",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C67",
+      "claim": "The discrepancies between V2 neuronal activity and perception may reflect further neural processing between V2 and perception.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the discrepancies between V2 neuronal activity and perception may reflect the simple measure used for quantifying discrimination at the population level (the average MCDI and multidimensional scaling), as well as further neural processing between V2 and perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for discrepancies between neuronal and perceptual data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a6140cdb-d2a7-4e8e-9870-5bb87ce950ae",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C68",
+      "claim": "Selective sensitivity to informative multipoint correlations arises primarily in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on recent findings that the perceptual salience of complex (multipoint) image statistics is governed by their informativeness in natural images, here we show that selective sensitivity to these image statistics arises primarily in V2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "10214601-a31c-483e-8d46-d27dc670b0de",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C69",
+      "claim": "Within V2, the greatest sensitivity to multipoint correlations is in the supragranular layers, where the typical (median) neuron can distinguish between two or three of the stimulus pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Within V2, the greatest sensitivity is in the supragranular layers, where the typical (median) neuron can distinguish between two or three of the stimulus pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "7bdd73f2-ac1d-4367-9e33-358b380de533",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C70",
+      "claim": "Typical neurons in V1 do not distinguish between any of the multipoint correlation stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, typical neurons in V1 do not distinguish between any of the stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "f178c37c-bfd8-4313-8eea-1af451b8c6c2",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C71",
+      "claim": "There is a subpopulation of large-RF neurons in infragranular V1 with a modest level of selective sensitivity to multipoint correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "although there appears to be a subpopulation of large-RF neurons in infragranular V1 with a modest level of selective sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "45f35fe7-55b5-4697-a8f2-6efbc05972aa",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C72",
+      "claim": "The overall pattern of neuronal sensitivity to image statistics resembles the sensitivity of human observers, driven primarily by the multipoint statistics that are visually salient.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern of neuronal sensitivity to image statistics (Figure 2D) resembles the sensitivity of human observers, driven primarily by the multipoint statistics that are visually salient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference comparing the neuronal data to psychophysical data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "1375fa62-e6a4-4154-97e4-0d4efb99ba12",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C73",
+      "claim": "Sensitivity to informative multipoint correlations is the computational underpinning of many changes in neural characteristics from V1 to V2, including sensitivity to corners, junctions, illusory contours, figure vs ground, and 'naturalness.'",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that sensitivity to informative multipoint correlations is the computational underpinning of many of the changes in neural characteristics from V1 to V2 that have previously been noted\u2014sensitivity to corners, junctions (Das and Gilbert, 1999), illusory contours (von der Heydt et al., 1984), figure vs ground (Qiu and von der Heydt, 2005), and 'naturalness' (Freeman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the computational basis of known V2 properties.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "d86c5a35-0bdf-4377-9d2c-23cff1d1cf9e",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C74",
+      "claim": "V2 neurons are sensitive to corners and junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "sensitivity to corners, junctions (Das and Gilbert, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Das and Gilbert, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "bd4e170d-7f29-4659-8314-93e747c1e202",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C75",
+      "claim": "V2 neurons are sensitive to illusory contours.",
+      "claim_type": "EXPLICIT",
+      "source": "illusory contours (von der Heydt et al., 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to von der Heydt et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a5bc54db-6e14-48b0-bcf7-8260976d67fc",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C76",
+      "claim": "V2 neurons are sensitive to figure vs ground.",
+      "claim_type": "EXPLICIT",
+      "source": "figure vs ground (Qiu and von der Heydt, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Qiu and von der Heydt, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "34121fe6-d3f4-4aeb-b6b5-099e87cb5cf7",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C77",
+      "claim": "V2 neurons are sensitive to 'naturalness.'",
+      "claim_type": "EXPLICIT",
+      "source": "'naturalness' (Freeman et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Freeman et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "da049018-709b-45ac-911c-127c899fff93",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C78",
+      "claim": "Examples of the odd ensemble images contain large numbers of corners.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to junctions and contours, examples of the odd ensemble images contain large numbers of corners",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observation of the stimulus examples shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "2ca43cac-c6c5-4164-83cc-3c53d2f4d6a6",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C79",
+      "claim": "Examples of the even ensemble contain large numbers of crossings.",
+      "claim_type": "EXPLICIT",
+      "source": "while examples of the even ensemble contain large numbers of crossings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observation of the stimulus examples shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "d3398987-d699-421c-af0d-d343be7cce63",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C80",
+      "claim": "The extended contours evident in the even ensemble are a kind of illusory contour, since the polarity changes that define them undergo random flips, which would confound a linear edge detector.",
+      "claim_type": "EXPLICIT",
+      "source": "The extended contours evident in the even ensemble are a kind of illusory contour, since the polarity changes that define them undergo random flips, which would confound a linear edge detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of the contours in the even ensemble.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "feb5f87f-50fc-4b17-94e6-ceb9fd859c5a",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C81",
+      "claim": "Stimuli in the black triangle and white triangle ensembles appear to contain, respectively, black figures on white backgrounds, vs white figures on black backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to figure vs ground, stimuli in the black triangle and white triangle ensembles appear to contain, respectively, black figures on white backgrounds, vs white figures on black backgrounds\u2014even though the stimulus sets are matched for spatial frequency content and the number of black and white checks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observation of the stimulus examples shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "28912c9a-7124-4a70-aee1-e5a9bcd77534",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C82",
+      "claim": "The black triangle and white triangle stimulus sets are matched for spatial frequency content and the number of black and white checks.",
+      "claim_type": "EXPLICIT",
+      "source": "even though the stimulus sets are matched for spatial frequency content and the number of black and white checks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the stimulus construction method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "e5f7e919-77fe-4a91-b8a2-9ee3328bd187",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C83",
+      "claim": "Informative multipoint correlations result in images that are enriched for junctions, contours, and objects, compared to images that have the same first- and second-order statistics but lacking these correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, informative multipoint correlations result in images that are enriched for junctions, contours, and objects, compared to images that have the same first- and second-order statistics but lacking these correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observations about the stimulus properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "8db48501-15db-46a2-bc91-a23b073462cb",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C84",
+      "claim": "Selective sensitivity of V2 neurons for informative multipoint correlations persists even when they are removed from the context of a natural image.",
+      "claim_type": "EXPLICIT",
+      "source": "While the extent to which these local features account for 'naturalness' remains for future work, the present results show that selective sensitivity of V2 neurons for informative multipoint correlations persists even when they are removed from the context of a natural image.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing V2 responses to synthetic stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "e84f2274-dd62-465d-bf66-02446cdaa486",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C85",
+      "claim": "The distinction between informative and uninformative multipoint statistics holds over at least a fourfold range of length scales.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distinction between informative and uninformative multipoint statistics holds over at least a fourfold range of length scales (the entire range analyzed, SI figure 14 of [Tka\u010dik et al., 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tka\u010dik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "3fb7038c-c181-453d-be0e-bd0fc492b90d",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C86",
+      "claim": "Human sensitivity to multipoint correlations is present over at least a fourfold range of check sizes (0.03\u20130.25 deg).",
+      "claim_type": "EXPLICIT",
+      "source": "Human sensitivity to these correlations is present over at least a similar range of check sizes (0.03\u20130.25 deg, Figure 2, 8 of [Victor and Conte, 1989]; also [Conte et al., 2014])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Victor and Conte, 1989 and Conte et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "02b43493-1c10-4e6f-9e4b-6e34cf10e9df",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C87",
+      "claim": "The range of check sizes used in this study was 0.08\u20130.5 deg.",
+      "claim_type": "EXPLICIT",
+      "source": "comparable to the range of check sizes used in this study (0.08\u20130.5 deg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "c69344ae-a23e-440a-b4aa-fc9005d55a20",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C88",
+      "claim": "Human sensitivity to multipoint correlations over a broad range of scales is found even when stimuli are restricted in eccentricity.",
+      "claim_type": "EXPLICIT",
+      "source": "This broad range of sensitivities is found even when stimuli are restricted in eccentricity (Victor and Conte, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Victor and Conte, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "8e0ec9ec-1f80-49cc-a3f2-1927bf7148c9",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C89",
+      "claim": "V2 sensitivity to multipoint correlations does not require a close match between RF size and the scale of the multipoint correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 1 (right column) shows that V2 sensitivity to multipoint correlations also does not require a close match between RF size and the scale of the multipoint correlation; this sensitivity is present over a threefold range of length scales (i.e., a 10-fold range of the number of checks per receptive field).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "79986405-55b7-4281-b99b-591cef9e7e0c",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C90",
+      "claim": "V2 sensitivity to multipoint correlations is present over a threefold range of length scales (a 10-fold range of the number of checks per receptive field).",
+      "claim_type": "EXPLICIT",
+      "source": "this sensitivity is present over a threefold range of length scales (i.e., a 10-fold range of the number of checks per receptive field).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "1b1f86c1-cd20-420c-8ded-cd462345ee8f",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C91",
+      "claim": "The entire range of scales relevant to perception can be accounted for by the properties of individual neurons, along with the variation in RF sizes at each eccentricity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that the entire range of scales relevant to perception can be accounted for by the properties of individual neurons, along with the variation in RF sizes at each eccentricity (Hubel and Wiesel, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data, combined with knowledge about RF size variation cited from Hubel and Wiesel, 1968.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "cec303b4-9737-4668-a78e-29ba83f944c6",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C92",
+      "claim": "Neurons whose RFs are difficult to map are often ignored in physiologic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons whose RFs are difficult to map are often ignored in physiologic studies (Olshausen and Field, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Olshausen and Field, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "78ed48ff-fb67-4333-a555-3e8de6d4fdf1",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C93",
+      "claim": "Many V2 neurons whose RFs could not be mapped nevertheless often showed selective sensitivity to multipoint correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to analyze their responses here because of the tetrode recording method, and found that many V2 neurons whose RFs could not be mapped nevertheless often showed selective sensitivity to multipoint correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b79663e5-e862-4218-be58-5d673be4b4ab",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C94",
+      "claim": "Standard practice is to use random binary stimuli for RF mapping procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard practice is to use random binary stimuli for this mapping procedure (Reid et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Reid et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "4fa88e97-3ed9-42e2-be8a-b9972cd5debe",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C95",
+      "claim": "Inclusion of stimuli with high-order correlations in the mapping computation allows some kinds of nonlinear responses to emerge in a first-order cross-correlation between stimulus and response.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale is that inclusion of these stimuli allows some kinds of nonlinear responses to emerge in a first-order cross-correlation between stimulus and response, because of correlations within the stimuli (Schmid et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Schmid et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "9538e707-db2e-47e3-856e-6cc24aeb820b",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C96",
+      "claim": "Reverse correlations may not exceed statistical threshold because of response variability, or because the neuron is only responsive to stimulus configurations that occur very rarely in the stimulus set.",
+      "claim_type": "EXPLICIT",
+      "source": "Reverse correlations may not exceed our statistical threshold because of response variability, or because the neuron is only responsive to stimulus configurations that occur very rarely in the stimulus set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about reasons why some neurons do not have mappable RFs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "c0e8f70f-31f5-4b17-94a9-c34e9f09f39c",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C97",
+      "claim": "For each of the ensembles that probe a different kind of multipoint correlation, the number of black and white checks are equated, at each location.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that from a computational point of view, our assay for sensitivity to multipoint correlations is independent of whether the neural response is correlated with the state of any single check: for each of the ensembles that probe a different kind of multipoint correlation, the number of black and white checks are equated, at each location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the stimulus construction method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "6bd44954-d5b1-4de4-9a47-48944f768cc7",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C98",
+      "claim": "It is possible for a neuron to process information in a localized region of space yet fail to have a RF that is measurable by reverse correlation methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is quite possible for a neuron to process information in a localized region of space (as manifest by its sensitivity to multipoint correlations) yet fail to have a RF that is measurable by reverse correlation methods, as we show here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "904f7404-fcf9-41e0-b607-aa4d4c15b56f",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C99",
+      "claim": "Many biologically-plausible mechanisms can extract multipoint correlations, including a simple linear-nonlinear cascade and modulatory surrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Many biologically-plausible mechanisms can extract multipoint correlations, including a simple linear-nonlinear cascade (provided that the nonlinearity is more than quadratic), and modulatory surrounds (Schmid and Victor, 2014; Self et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schmid and Victor, 2014 and Self et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "83a8e5b5-e61c-4a0a-acbd-f46507902d37",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C100",
+      "claim": "The specificity of responses to multipoint correlations can be produced by a two-stage (linear-nonlinear-linear-nonlinear) cascade, in which the first linear-nonlinear element detects local edges, and the second one combines signals from collinear edges via a second threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we note (Victor and Conte, 1991) that the specificity we observe can be produced by a two-stage (linear-nonlinear-linear-nonlinear) cascade, in which the first linear-nonlinear element detects local edges, and the second one combines signals from collinear edges via a second threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Victor and Conte, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "f0034664-ddc0-42af-8518-dceb72189bc0",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C101",
+      "claim": "Removal of either the linear or the nonlinear element of the second stage eliminates the specificity of responses to multipoint correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of either component of the second stage\u2014either its linear or the nonlinear element\u2014eliminates this specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Victor and Conte, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "361ca60f-1605-474e-b2f8-7a2c5e4eb0d8",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C102",
+      "claim": "Responses to multipoint correlations being more prominent in supragranular V2 than in its input layers or in V1 suggests possible correspondences between the two-stage cascade and neural circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that responses to multipoint correlations are more prominent in supragranular V2 than in its input layers or in V1 suggests possible correspondences between this cascade and neural circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the neural implementation of the computational model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "4511e780-ce73-424f-873a-2eeb164739e7",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C103",
+      "claim": "One possibility is that the first stage of the two-stage cascade is in V1 and the second stage is in V2.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that the first stage is in V1 and the second stage is in V2 (Wilson et al., 1992; Rust et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to Wilson et al., 1992 and Rust et al., 2005.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "12c2be4c-acec-47b2-adde-fdee02cc1d47",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C104",
+      "claim": "Alternatively, the two linear-nonlinear stages may represent two loops of signal passage through a recurrent network within a single cortical area.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the two linear-nonlinear stages may represent two loops of signal passage through a recurrent network within a single cortical area (Joukes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Joukes et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "6b6a9f42-263f-4acc-80dc-8861dd8787ca",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C105",
+      "claim": "Check size was scaled to the RF size of the target neuron so that approximately two checks corresponded to one lobe of the optimal spatial frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Check size was scaled to the RF size of the target neuron so that approximately two checks corresponded to one lobe of the optimal spatial frequency, and orientation was set according to the orientation preference of the target neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "40ea839d-2674-407c-b3ee-c455d2788e83",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C106",
+      "claim": "About 8 checks were within the classical RF (V1: mean 7.40, median 6.00, SD 5.33; V2: mean 8.68, median 7.00, SD 5.46).",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in about 8 checks within the classical RF (V1: mean 7.40, median 6.00, SD 5.33; V2: mean 8.68, median 7.00, SD 5.46; statistics across all mappable units and not just the target; see below for details on RF mapping and Figure 2\u2014figure supplement 1 for the distribution of number of checks in the RF)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "04dcb227-12b9-4547-a61d-9c0f42682517",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C107",
+      "claim": "The checks are within the resolution limits of the neuron, and the stimulus patch covers an area that is substantially larger than the RF.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, the checks are within the resolution limits of the neuron, and the stimulus patch covers an area that is substantially larger than the RF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the stimulus design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "d5bb1581-e0e3-4db2-803b-6eeeb5b7324b",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C108",
+      "claim": "Across all recordings, check sizes ranged from 0.08 to 0.5 deg (V1: mean 0.18, median 0.20, SD 0.05; V2: mean 0.22, median 0.20, SD 0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all recordings (including mappable and un-mappable units), check sizes ranged from 0.08 to 0.5 deg (V1: mean 0.18, median 0.20, SD 0.05; V2: mean 0.22, median 0.20, SD 0.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a2d3dfb4-15ea-49de-b05a-eaad36a86a57",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C109",
+      "claim": "For each type of stimulus, 1024 examples (two repetitions each) were presented for 320 ms, interleaved in a pseudorandom sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For each type of stimulus, we presented 1024 examples (two repetitions each) for 320 ms, interleaved in a pseudorandom sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "e037e1b7-7113-4e89-b581-e24adfddb29d",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C110",
+      "claim": "The large set size was chosen to distinguish average responses to each of the stimulus sets from responses that might be driven to the specific white or black checks or edges present in particular examples.",
+      "claim_type": "EXPLICIT",
+      "source": "This large set size was chosen so that we can distinguish average responses to each of the stimulus sets (our focus) from responses that might be driven to the specific white or black checks or edges present in particular examples (a potential confound).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the experimental design rationale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "aa6b4116-a3cb-4449-b99e-8ee6c178e211",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C111",
+      "claim": "Stimuli were generated via a Markov recurrence rule so that other than the constraint of their defining multipoint correlation, they are as random as possible (maximum-entropy).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were generated via a Markov recurrence rule (Victor and Conte, 1991, 2012), so that other than the constraint of their defining multipoint correlation, they are as random as possible (maximum-entropy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Victor and Conte, 1991, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "22c1adab-d487-4678-ac10-b998aa1cb52f",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C112",
+      "claim": "In each stimulus set, there are no two-point correlations\u2014checks at any pair of locations are colored independently.",
+      "claim_type": "EXPLICIT",
+      "source": "In each set, there are no two-point correlations\u2014checks at any pair of locations are colored independently\u2014so that the sets have the same power spectra, and therefore the same spatial frequency content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the stimulus construction method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "4a75c07b-1b1f-4880-8064-dcb64a9b5759",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C113",
+      "claim": "The stimulus sets have the same power spectra, and therefore the same spatial frequency content.",
+      "claim_type": "EXPLICIT",
+      "source": "so that the sets have the same power spectra, and therefore the same spatial frequency content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the stimulus construction method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "7e090052-f76c-416a-babe-ceac2bdc601f",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "claim_id": "C114",
+      "claim": "The four kinds of correlations (the even/odd axis, the black triangle/white triangle axis, wye, and foot) are independently controlled: each set extremizes one of these correlations, while keeping all the others at 0.",
+      "claim_type": "EXPLICIT",
+      "source": "The four kinds of correlations (the even/odd axis, the black triangle/white triangle axis, wye, and foot) are independently controlled: each set extremizes one of these correlations, while keeping all the others at 0 (Gilbert, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gilbert, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e7f8f99d-18bc-4e28-a60f-400591eea055",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sensitivity to multipoint correlations, quantified by the MCDI, is significantly higher in V2 (mean ~0.10) than V1 (mean ~0.05), with the greatest sensitivity in supragranular V2 (mean 0.162, median 0.12). The typical V2 supragranular neuron distinguishes 2-3 of 21 stimulus pairs, while typical V1 neurons show no discrimination (median MCDI = 0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 provide converging quantitative evidence from 421 neurons with appropriate statistical testing (Wilcoxon rank-sum, FDR-corrected p<0.05). The laminar analysis (C28-C31) shows a systematic progression with supragranular V2 significantly different from all other compartments except granular V2 (p=0.053). The large sample size and consistent pattern across multiple analyses support this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "64a6a943-b670-4859-8dca-a1c873ab3697",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "V2 neurons selectively respond to informative multipoint correlations (even, odd, white triangle, black triangle) that are variable in natural images, but show minimal discrimination among uninformative correlations (random, wye, foot) that are predictable from simpler statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are directly supported by Figure 2B-C showing stimulus-specific and pair-specific MCDI values. The data demonstrate that neurons discriminate informative correlations while showing little response to uninformative ones, consistent with efficient coding predictions. The statistical methods (shuffle test with FDR correction) are appropriate for this comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "379ac340-bd6f-41cf-a6b5-1167ca837df8",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neuronal responses to multipoint correlations manifest as transient firing rate changes 70-100 ms after stimulus onset. Significant differences between structured and random stimuli are more common in V2 than V1, and decremental responses are more frequent in V2, though not required for discrimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 describe temporal response properties supported by PSTHs in Figure 1. The 70-100 ms latency is consistent with cortical processing times. The observation that decremental responses are not required (C24) is important for interpretation and is supported by specific examples. Statistical significance was assessed with appropriate shuffle tests.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sensitivity to multipoint correlations is widely distributed across V2 neurons and not restricted to specific cell types (simple vs complex, regular-spiking vs fast-spiking), neurons with mappable receptive fields, or neurons with specific RF sizes. This sensitivity is present even in neurons without mappable RFs (65/152 in V2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 demonstrate broad distribution through multiple negative results (no significant associations with cell type, RF mappability, or RF size). The inclusion of neurons without mappable RFs (C39-C40) is methodologically important and well-justified. Statistical tests appropriately used non-parametric methods for these comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "61c9efa5-eebb-4ef1-a51d-007d94a07d73",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The V1-V2 difference in multipoint correlation sensitivity persists when controlling for RF size (measured in deg\u00b2 or number of checks). Across all RF sizes and stimulus scaling factors, V2 shows higher MCDI than V1. A subset of large-RF infragranular V1 neurons shows modest sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by Figure 2\u2014figure supplement 1, which systematically controls for RF size and stimulus scaling. The analysis demonstrates that the V1-V2 difference is not an artifact of RF size differences. The identification of a V1 subpopulation (C48) is appropriately qualified as a suggestion rather than a definitive finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "c329fdda-feb0-4ba2-92bd-2ca8d4fac16e",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The high MCDI in supragranular V2 likely reflects intrinsic V2 processing rather than inherited V1 signals, based on: (1) anatomical connectivity showing infragranular V1 projects to SC/LGN not V2, (2) V2 inputs arise from V1 layers 2/3/4b with low MCDI, and (3) the difference between V2 granular and supragranular layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 combine anatomical knowledge (C50-C51, citing Felleman & Van Essen 1991) with the laminar MCDI pattern to make a logical inference. The argument is sound: if V1 were the source, sensitivity should appear in V2 granular layer. The jump from granular to supragranular V2 (C29-C30) supports intrinsic V2 computation. However, this remains an inference rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "a61607be-a288-45f4-bb88-aa5f0a58a31a",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multidimensional scaling of neuronal discrimination patterns shows V2 neurons separate informative correlations along independent axes (even-odd vs white/black triangle), mirroring psychophysical findings. The neuronal representation expands from clustered (V1) to multidimensional (V2), with higher MCDI for four-point (even) than three-point correlations, paralleling human perceptual sensitivities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 and C72 integrate neuronal data (Figure 2D) with psychophysical findings (C58-C59, citing Victor & Conte 2012, Hermundstad 2014). The multidimensional scaling appropriately visualizes population discrimination patterns. The correspondence between neural and perceptual axes (C57-C58) is compelling, though the authors acknowledge discrepancies (C61-C67). The inference is well-supported but not perfect alignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "7e1243db-1cae-4dfa-bc66-a5920228eed3",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "There are discrepancies between V2 neuronal responses and human psychophysics: uninformative stimuli are not perfectly aligned with random stimuli in neural representation, and the MCDI for odd stimuli is much lower than the 25% reduction in psychophysical sensitivity. These may reflect limitations of the MCDI measure or additional processing beyond V2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 honestly acknowledge limitations in the neural-perceptual correspondence. The explanation for odd stimulus discrepancy (C64-C65) is reasonable\u2014odd stimuli contain even correlations at larger scales. The speculation about measurement limitations (C66-C67) is appropriately qualified. This transparent discussion of discrepancies strengthens rather than weakens the overall findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "9537461b-3c1d-4b81-9fb0-d312c01a1815",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A subpopulation of large-RF neurons in infragranular V1 shows modest sensitivity to multipoint correlations, primarily in layer 5/6 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C71 identify an atypical V1 subpopulation supported by Figure 2\u2014figure supplement 1. The characterization as \"modest\" and \"appears to be\" appropriately reflects the strength of evidence. This finding is interesting but secondary to the main V2 results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "V2 sensitivity to multipoint correlations is scale-invariant over a threefold range of spatial scales (10-fold range in checks per RF), comparable to the fourfold range in natural images and human psychophysics. This suggests individual neurons with varying RF sizes can account for the full perceptual range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 are supported by Figure 2\u2014figure supplement 1 showing MCDI across RF sizes. The comparison to natural image statistics (C85) and psychophysics (C86, C88) strengthens the interpretation. The inference that RF size variation accounts for scale invariance (C91) is reasonable but remains speculative without direct testing across eccentricities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Many V2 neurons without mappable RFs by reverse correlation nevertheless show selective sensitivity to multipoint correlations. This is computationally consistent because the stimulus design equates black/white checks at each location, making discrimination independent of single-check correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C98 address an important methodological point. The tetrode recordings enabled analysis of neurons typically excluded (C92-C93). The computational argument (C97-C98) is sound\u2014multipoint correlation sensitivity doesn't require linear RF structure. The speculation about why RFs aren't mappable (C96) is reasonable. This finding has important implications for understanding V2 computation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "b71249eb-b612-478e-8244-46d464c2e24c",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that sensitivity to informative multipoint correlations provides a computational basis for known V2 properties including corner/junction sensitivity, illusory contours, and figure-ground discrimination. Stimulus examples show that informative correlations are enriched for these features, and V2 sensitivity persists when correlations are isolated from natural context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C84 propose an integrative framework linking multipoint correlations to diverse V2 properties. While C74-C77 correctly cite established V2 sensitivities and C78-C82 describe stimulus properties, the causal link (C73, C83) remains speculative. C84 is supported\u2014V2 responds to isolated correlations\u2014but whether this \"accounts for\" other V2 properties requires additional experiments. The speculation is reasonable but not demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "4d085e8b-603e-441d-87f6-0f61555ac649",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that a two-stage linear-nonlinear-linear-nonlinear cascade could produce the observed specificity, with possible implementations either as V1\u2192V2 stages or recurrent processing within V2. The prominence of responses in supragranular V2 suggests correspondences with this computational architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C104 discuss plausible mechanisms citing relevant literature (Schmid & Victor 2014, Victor & Conte 1991). The two-stage model (C100-C101) is well-motivated, and the laminar pattern (C102) provides suggestive evidence. However, both proposed implementations (C103-C104) remain speculative without direct testing. This is appropriate speculation for the Discussion but not a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The experimental design recorded 421 neurons (269 V1, 152 V2) using stimuli with ~8 checks per RF, check sizes 0.08-0.5\u00b0, with 1024 examples per stimulus type presented for 320 ms. Stimuli were maximum-entropy given their defining correlation, with matched power spectra and independently controlled correlation types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C105-C114 describe methodological details that are clearly stated and appropriate. The large stimulus set (C109-C110) addresses potential confounds from specific check patterns. The maximum-entropy generation (C111) and matched power spectra (C112-C113) ensure proper stimulus control. The independent control of correlations (C114) is critical for isolating effects. These methods are sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    },
+    {
+      "id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1",
+      "content_id": "07465e0a-3546-4e00-8f96-f32e5bc2af07",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work (Hermundstad et al. 2014, Tka\u010dik et al. 2010) established that efficient coding under input sampling constraints predicts greater resources for variable (informative) statistics, contrasting with whitening under output constraints. Multipoint correlation analysis reduces dimensionality, separates informative from uninformative statistics, and enables rigorous testing with synthetic stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 accurately summarize prior theoretical and empirical work with appropriate citations. The efficient coding framework (C1-C2, C7-C10) is correctly described. The methodological advantages of multipoint correlations (C11-C15) are well-established. The stimulus characterizations (C17-C20) correctly reference prior work. These provide essential context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:46:21.108788Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ddf747e-e322-4525-9001-eecf1734f371",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "23a04287-0894-4ea1-97f7-569e775c6e6c",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "37d25e3f-627f-435b-800e-e5b96d67eba9",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "b654e4cc-612f-41a4-8de6-943c8b4cdf33",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "7200ba7c-2db7-42ec-9be0-23dcc9972e08",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "b2bce66b-b64d-479c-8222-70fb62f58add",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "acda31fd-d8c0-4a67-8e06-0830dae21a44",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "a5a6846d-7c0f-47e8-ad7c-6b9c7660c4ff",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "062b60a2-5457-46c0-a514-90df815cdf32",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "b8021553-8bca-45d5-a466-62911e4e6bb9",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "a6140cdb-d2a7-4e8e-9870-5bb87ce950ae",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "10214601-a31c-483e-8d46-d27dc670b0de",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "7bdd73f2-ac1d-4367-9e33-358b380de533",
+      "result_id": "e7f8f99d-18bc-4e28-a60f-400591eea055"
+    },
+    {
+      "claim_id": "0d3e1d7f-000a-4891-a4c7-3a77cb0dd37e",
+      "result_id": "64a6a943-b670-4859-8dca-a1c873ab3697"
+    },
+    {
+      "claim_id": "95491362-4fa1-4b05-91fd-2e298edc397d",
+      "result_id": "64a6a943-b670-4859-8dca-a1c873ab3697"
+    },
+    {
+      "claim_id": "94d7d6ab-6ee3-455b-ada1-ed55b9c0ff58",
+      "result_id": "64a6a943-b670-4859-8dca-a1c873ab3697"
+    },
+    {
+      "claim_id": "b2f3c4eb-3ac1-4326-b42d-0917492968c3",
+      "result_id": "379ac340-bd6f-41cf-a6b5-1167ca837df8"
+    },
+    {
+      "claim_id": "befbd1ad-0e94-49d6-ad01-603b862aa121",
+      "result_id": "379ac340-bd6f-41cf-a6b5-1167ca837df8"
+    },
+    {
+      "claim_id": "3794451f-29ab-41dc-be7c-c5678ad6895d",
+      "result_id": "379ac340-bd6f-41cf-a6b5-1167ca837df8"
+    },
+    {
+      "claim_id": "7fcdf110-0f21-4623-904c-c1fdae1ddcbe",
+      "result_id": "379ac340-bd6f-41cf-a6b5-1167ca837df8"
+    },
+    {
+      "claim_id": "a5eb689d-c5c3-4fba-ad24-17a4dd57a00b",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "8a356ed3-bbb5-4cd8-b94e-d4b5ab797e12",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "f8f82218-dc13-461a-8d57-28626992b822",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "afecd868-9d41-4a93-9624-2d563018b350",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "efd26135-0d27-44dc-bda9-2e88aa72a8ee",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "6d5f4f39-8006-403a-9da5-b2875a029031",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "d500b81a-d224-4766-af3b-27f0ccef3189",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "dc7c3e9c-4043-41af-a259-25f4159f5ba6",
+      "result_id": "5723c54a-fdb9-4892-aff5-08e35a18d7d5"
+    },
+    {
+      "claim_id": "b274f126-fdc3-4bb0-ad05-d05273f424a5",
+      "result_id": "61c9efa5-eebb-4ef1-a51d-007d94a07d73"
+    },
+    {
+      "claim_id": "f3a8850f-bfa7-40bd-a6dc-c0a69b318d28",
+      "result_id": "61c9efa5-eebb-4ef1-a51d-007d94a07d73"
+    },
+    {
+      "claim_id": "5ff344bb-bf71-4e20-acc7-7d1aab9e16e0",
+      "result_id": "61c9efa5-eebb-4ef1-a51d-007d94a07d73"
+    },
+    {
+      "claim_id": "2c2c5999-fdd2-4111-bf3d-c2df4c5f7bb7",
+      "result_id": "61c9efa5-eebb-4ef1-a51d-007d94a07d73"
+    },
+    {
+      "claim_id": "c20897b3-ac28-4c11-9ad5-c6da323d4d60",
+      "result_id": "61c9efa5-eebb-4ef1-a51d-007d94a07d73"
+    },
+    {
+      "claim_id": "71429224-fdd7-459f-81f5-afcdcf851c26",
+      "result_id": "c329fdda-feb0-4ba2-92bd-2ca8d4fac16e"
+    },
+    {
+      "claim_id": "633c18a9-72a9-4b75-9d30-1726f0c75e69",
+      "result_id": "c329fdda-feb0-4ba2-92bd-2ca8d4fac16e"
+    },
+    {
+      "claim_id": "dbe5fa93-e8fe-4c05-ba62-24412642baa5",
+      "result_id": "c329fdda-feb0-4ba2-92bd-2ca8d4fac16e"
+    },
+    {
+      "claim_id": "7649e9dc-9ba2-461d-972b-f6a7fcf58e50",
+      "result_id": "c329fdda-feb0-4ba2-92bd-2ca8d4fac16e"
+    },
+    {
+      "claim_id": "5d92c65c-a24d-4130-bcd2-76ffc51f4a60",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "865aec79-117d-4417-b870-7d3226f6519d",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "0b2cf72c-e13b-4565-9aa5-55cdde7edc6a",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "3d98cd2d-3b78-435b-807c-8f5db010546b",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "f92b2d1a-e442-4b9f-9a7a-c1bff71d5779",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "e323fa3d-bf04-471c-bfd3-b30081bf8842",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "45f35fe7-55b5-4697-a8f2-6efbc05972aa",
+      "result_id": "a61607be-a288-45f4-bb88-aa5f0a58a31a"
+    },
+    {
+      "claim_id": "298db7d2-493e-49c3-aaf9-ffeb7f1271cb",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "5353b02e-d215-4905-a599-cb19fbfeb714",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "03bbdbaa-2b6c-4803-a4ac-45dcbbfec844",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "5c212f96-8b5e-43e2-8796-ecfb1034a60d",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "01fc8a24-1271-4f84-a50a-1f873ac846f3",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "a20d2779-3fe4-4c3d-893c-2d9c9b9178a8",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "4c20c4b3-9bba-4e9d-855e-f9d9645c71da",
+      "result_id": "7e1243db-1cae-4dfa-bc66-a5920228eed3"
+    },
+    {
+      "claim_id": "f178c37c-bfd8-4313-8eea-1af451b8c6c2",
+      "result_id": "9537461b-3c1d-4b81-9fb0-d312c01a1815"
+    },
+    {
+      "claim_id": "b0f05c48-851d-4061-830d-f9c475ab6b04",
+      "result_id": "9537461b-3c1d-4b81-9fb0-d312c01a1815"
+    },
+    {
+      "claim_id": "8e0ec9ec-1f80-49cc-a3f2-1927bf7148c9",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "79986405-55b7-4281-b99b-591cef9e7e0c",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "1b1f86c1-cd20-420c-8ded-cd462345ee8f",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "e84f2274-dd62-465d-bf66-02446cdaa486",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "3fb7038c-c181-453d-be0e-bd0fc492b90d",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "02b43493-1c10-4e6f-9e4b-6e34cf10e9df",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "c69344ae-a23e-440a-b4aa-fc9005d55a20",
+      "result_id": "6e5990a0-0ef1-461b-af22-dc34666d8ee7"
+    },
+    {
+      "claim_id": "78ed48ff-fb67-4333-a555-3e8de6d4fdf1",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "cec303b4-9737-4668-a78e-29ba83f944c6",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "b79663e5-e862-4218-be58-5d673be4b4ab",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "4fa88e97-3ed9-42e2-be8a-b9972cd5debe",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "9538e707-db2e-47e3-856e-6cc24aeb820b",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "c0e8f70f-31f5-4b17-94a9-c34e9f09f39c",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "6bd44954-d5b1-4de4-9a47-48944f768cc7",
+      "result_id": "c3cb4c6e-bbca-4d0e-8cf1-cedb429f9e6b"
+    },
+    {
+      "claim_id": "1375fa62-e6a4-4154-97e4-0d4efb99ba12",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "d86c5a35-0bdf-4377-9d2c-23cff1d1cf9e",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "bd4e170d-7f29-4659-8314-93e747c1e202",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "a5bc54db-6e14-48b0-bcf7-8260976d67fc",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "34121fe6-d3f4-4aeb-b6b5-099e87cb5cf7",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "da049018-709b-45ac-911c-127c899fff93",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "2ca43cac-c6c5-4164-83cc-3c53d2f4d6a6",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "d3398987-d699-421c-af0d-d343be7cce63",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "feb5f87f-50fc-4b17-94e6-ceb9fd859c5a",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "28912c9a-7124-4a70-aee1-e5a9bcd77534",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "e5f7e919-77fe-4a91-b8a2-9ee3328bd187",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "8db48501-15db-46a2-bc91-a23b073462cb",
+      "result_id": "b71249eb-b612-478e-8244-46d464c2e24c"
+    },
+    {
+      "claim_id": "904f7404-fcf9-41e0-b607-aa4d4c15b56f",
+      "result_id": "4d085e8b-603e-441d-87f6-0f61555ac649"
+    },
+    {
+      "claim_id": "83a8e5b5-e61c-4a0a-acbd-f46507902d37",
+      "result_id": "4d085e8b-603e-441d-87f6-0f61555ac649"
+    },
+    {
+      "claim_id": "f0034664-ddc0-42af-8518-dceb72189bc0",
+      "result_id": "4d085e8b-603e-441d-87f6-0f61555ac649"
+    },
+    {
+      "claim_id": "361ca60f-1605-474e-b2f8-7a2c5e4eb0d8",
+      "result_id": "4d085e8b-603e-441d-87f6-0f61555ac649"
+    },
+    {
+      "claim_id": "4511e780-ce73-424f-873a-2eeb164739e7",
+      "result_id": "4d085e8b-603e-441d-87f6-0f61555ac649"
+    },
+    {
+      "claim_id": "12c2be4c-acec-47b2-adde-fdee02cc1d47",
+      "result_id": "4d085e8b-603e-441d-87f6-0f61555ac649"
+    },
+    {
+      "claim_id": "47870923-6732-4d26-9cc6-543624864184",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "6b6a9f42-263f-4acc-80dc-8861dd8787ca",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "40ea839d-2674-407c-b3ee-c455d2788e83",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "04dcb227-12b9-4547-a61d-9c0f42682517",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "d5bb1581-e0e3-4db2-803b-6eeeb5b7324b",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "a2d3dfb4-15ea-49de-b05a-eaad36a86a57",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "e037e1b7-7113-4e89-b581-e24adfddb29d",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "aa6b4116-a3cb-4449-b99e-8ee6c178e211",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "22c1adab-d487-4678-ac10-b998aa1cb52f",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "4a75c07b-1b1f-4880-8064-dcb64a9b5759",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "7e090052-f76c-416a-babe-ceac2bdc601f",
+      "result_id": "0cbb3d94-07ed-4d01-9ce8-bdf8d71be9ab"
+    },
+    {
+      "claim_id": "64912d4e-b376-4c52-9aa8-49d1b8626be0",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "25f216bf-d41a-4be3-8739-c3876d8dabe3",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "5fb32fa4-4f82-40ec-8a34-c1cf89f99857",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "4e474c96-f897-4c83-b8e8-c2e1d095f205",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "86f370c4-1ffe-494c-b903-389eb4e77dac",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "44b6fc15-8978-4a0d-a7c5-e47822d3e756",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "705fc576-b07b-4aff-8221-7e04a69faa3a",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "50dff18e-170f-4f29-a2d5-d5835ff26705",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "dfdb52fe-cfd4-4aa7-b580-d7e89083fa81",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "ae740493-ddcd-4d08-b4cb-5cd256e27a38",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "576944cc-f749-433c-99b1-d884641abbb7",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "2922f097-b752-43d0-a5c9-f81287105187",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "6cd7e1e7-50f1-4fa8-9b23-c10c38f240b3",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "9d310e09-32a9-4b7f-8131-2da3d75119f9",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "55ddb02b-562b-4e10-8c84-0f11f83f1e40",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "1ca51921-9b3d-4d91-acd5-7bfc4358fe34",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    },
+    {
+      "claim_id": "d0691df9-0878-467a-9415-474f0628182f",
+      "result_id": "c2934348-0a03-4fae-b4b8-a1ff9076d5c1"
+    }
+  ],
+  "comparisons": []
+}

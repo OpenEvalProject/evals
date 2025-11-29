@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The GLO-Roots platform integrates custom rhizotrons, plant-codon-optimized luciferase reporters, an automated imaging system (GLO1), and image analysis software (GLO-RIA) to enable visualization and quantification of root architecture and gene expression in soil-grown plants. The rhizotrons support Arabidopsis growth throughout the life cycle with 100 cm\u00b3 soil volume, luciferases emit light at different wavelengths for multiplexed imaging, GLO1 captures images from both sides of vertically-held rhizotrons, and GLO-RIA performs automated analysis of root system traits including area, depth, width, and directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C26, C45-C52 collectively describe the integrated components of GLO-Roots with supporting data. The rhizotron design is detailed with specifications (C24-C26), luciferase reporters are characterized with emission spectra (C18, C39-C42), the imaging system is described with technical details (C20-C21, C45-C48), and GLO-RIA capabilities are documented with validation showing R\u00b2=0.974 correlation for lateral root counts (C48) and strong correlations for depth, width, and directionality measurements (C52). The system components are demonstrated to work together as an integrated platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Rhizotron-grown root systems more closely approximate the biology of pot-grown plants than gel-based media, as demonstrated by qRT-PCR analysis of 77 marker genes showing that soil- and gel-grown roots separate in PCA space, with gel-grown roots showing enhanced expression of light-regulated genes and altered phosphorus nutrition gene expression. Shoot weight and primary root length were significantly reduced in gel-grown plants compared to rhizotron- or pot-grown plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are supported by PCA analysis of gene expression data (C27) showing clear separation between growth conditions, with specific genes identified as differentially expressed (C28-C29). The morphological measurements (C32-C34) provide additional quantitative support. The inference that rhizotrons better approximate pot-grown biology (C31) is reasonable given the gene expression and morphological data, though the claim is somewhat subjective in defining what constitutes 'better approximation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Luciferase reporters are ideal for visualizing roots in soil because they do not require excitation light, peat-based soil shows no autoluminescence, and the enzyme is inactivated after substrate catabolism enabling dynamic studies. Multiple plant-codon-optimized luciferases (PpyRE8, CBGRed, LUC2, CBG99) were generated with different emission spectra, all using D-luciferin substrate except nanoLUC. Continuous luciferin addition did not significantly affect plant growth, and luminescence signal was detectable for up to 10 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 are well-supported by experimental data. The advantages of luciferase are stated with logical reasoning (C36-C38) and supported by imaging data showing soil autofluorescence properties (C37). The generation and characterization of multiple luciferases is documented with emission spectra (C39-C42, Figure 1D). The lack of growth effects from luciferin is supported by statistical analysis (C43), and signal duration is empirically determined (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Rhizotrons enable continuous imaging of root growth for 21-23 days for Col-0 under long-day conditions before roots reach the boundaries, though directionality can be observed at later stages. Time-series imaging shows progressive change in root system angles from 0\u00b0 (vertical) to 55\u00b0 as lateral roots become predominant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by time-series imaging data (Figure 2) showing root development from 11 to 35 DAS. The 21-23 day window for undisturbed growth is empirically determined (C53), and directionality analysis quantifies the angular changes over time (C55). The data demonstrate the temporal capabilities of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Three Arabidopsis accessions (Bay-0, Col-0, Sha) show distinct root system architectures at 22 DAS, with Bay-0 having steep-angle roots and the highest depth/width ratio, Sha having shallow-angled wide roots, and Col-0 intermediate. Broad-sense heritability values for root traits were all >90%, and PCA analysis of pseudo-landmarks distinguished the three accessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by quantitative measurements and statistical analyses. Directionality analysis shows significant differences between accessions (C56, Figure 3D), morphological measurements quantify depth/width ratios (C57), heritability calculations demonstrate genetic control (C58), and PCA analysis of shape descriptors separates the accessions (C59-C62, Figure 3F-G). Sample sizes appear adequate (n=9-12) and statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Spectrally distinct luciferase reporters enable simultaneous visualization of root structure and gene expression patterns. Dual-reporter lines were generated by transforming ProACT2:PpyRE8o into ProZAT12:LUC and ProDR5:LUC+ lines, and GLO-RIA can semi-automatically identify and associate gene reporter signals with root structure. Two root systems expressing different luciferases were distinguishable in the same rhizotron without significant effects on root growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by imaging data showing dual-reporter visualization (Figure 4) and software capabilities (C65). The generation of dual-reporter lines is documented (C64), and the ability to distinguish two root systems is demonstrated (C66). However, C67 notes that 'further studies are warranted' regarding growth effects, indicating some uncertainty about the robustness of the no-effect conclusion, though no significant difference was detected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The GLO-Roots system can visualize plant-microbe interactions by using luminescent bacteria. Pseudomonas fluorescens CH267 transformed with the bacterial LUX operon was used to inoculate plants, and bacterial luminescence was observed colocalizing with roots 13 days after inoculation. Multiple luciferase reporters (LUC2o, PPyRE8o in plants and LUX in bacteria) were visualized simultaneously in the same rhizotron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by experimental demonstration of bacterial colonization imaging (Figure 4\u2014figure supplement 4). The generation of luminescent bacteria is described (C68), colonization is observed (C69), and simultaneous multi-reporter imaging is demonstrated (C71). The observation that P. fluorescens showed no obvious colonization pattern (C70) is a descriptive finding supported by the images.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Light exposure causes a significant increase in root steepness only in the light-exposed region of rhizotrons, and this response requires blue light perception through PHOT1/2 photoreceptors, as the phot1/2 double mutant showed no significant difference in directionality between light and dark treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by directionality analysis comparing light-exposed and shielded regions (Figure 6\u2014figure supplement 3) with appropriate statistical testing (Kolmogorov-Smirnov test, p<0.001). The genetic analysis using phot1/2 mutants provides mechanistic insight (C73), though the sample size (n=4-6) is relatively small. The results are consistent with cited literature on phototropism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Plants grown in low-phosphorus soil showed adaptive changes in root architecture consistent with ideotypes for improved phosphorus uptake efficiency, including increased width-depth ratio, increased root-shoot area ratio, and more horizontally oriented roots at 27 DAS (but not 22 DAS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by quantitative measurements comparing low-P and P-replete conditions (Figure 6\u2014figure supplement 2). The morphological changes are documented (C74-C76) and appropriately interpreted in the context of known phosphorus uptake ideotypes (C77). The temporal dynamics (no difference at 22 DAS but significant at 27 DAS) suggest a progressive response. Statistical analyses appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Soil moisture content can be mapped in 2D using brightfield imaging because peat-based soil changes optical properties as it dries. A calibration curve quantitatively relates gray-scale pixel intensity to moisture content (R\u00b2=0.85), and this method can visualize local soil-moisture depletion around root systems without interference from root presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by calibration data (Figure 5\u2014figure supplement 1) showing strong correlation (R\u00b2=0.85) between pixel intensity and moisture content (C79). The method is validated by showing that roots do not affect soil color (C80), and the application is demonstrated by visualizing moisture depletion around roots (C81, Figure 5E). The approach is technically sound and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Water deficit combined with elevated temperature causes adaptive changes in root architecture, with lateral roots showing increased gravitropism leading to deeper, more vertically oriented root systems. The timing of stress application affects the response: treatment starting at 13 DAS causes reorientation of emerged lateral roots, while treatment at 9 DAS inhibits lateral root development in dry soil but lateral root primordia can reinitiate growth after re-watering. Both water deficit and elevated temperature individually induce similar directional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by extensive imaging and directionality analysis (Figure 6) with appropriate statistical testing (Kolmogorov-Smirnov test, p<0.001). The experimental design is clearly described (C82), the rationale for combined stress is justified by citations (C83), and the phenotypic responses are well-documented (C84-C88). The observation that both stresses individually cause similar responses (C89) provides insight into shared mechanisms. Sample sizes appear adequate (n=8-9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The water-deficit-induced changes in root directionality are distinct from hydrotropism and require auxin signaling. The miz1 mutant (defective in hydrotropism) showed normal water-deficit responses, while the tir1-1 mutant (defective in auxin perception) showed near-random root angles and no directional response to water deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by genetic analysis using well-characterized mutants (Figure 6C-D). The miz1 result (C90) demonstrates that the response is independent of known hydrotropism pathways, while the tir1-1 result (C91) implicates auxin signaling. The statistical analysis shows significant differences for wild-type but not mutants. The interpretation is consistent with the known roles of these genes cited in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Time-lapse imaging and correlation analysis of root angle with local soil moisture revealed that changes in root growth direction occur ahead of the dry soil front, and root segments in drier areas grow at steeper angles than those in wetter regions. These data suggest both local and systemic signaling are involved in redirecting lateral roots during drought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by time-lapse imaging (Video 2) and quantitative correlation analysis (Figure 7) relating moisture content to root angle across 2535 root tips over 10 time points. The observation that directional changes occur ahead of the drying front (C92) and the correlation between local moisture and angle (C93) provide strong evidence. The inference about local and systemic signaling (C94) is reasonable given that roots in both dry and wet regions show responses, though this remains somewhat speculative without direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "GLO-Roots can be applied to Brachypodium distachyon, which shows distinct root architecture from Arabidopsis with prolific secondary and tertiary lateral roots. Root growth is higher in soil than in gel-based plates, possibly due to ethylene-mediated repression of auxin synthesis in sealed plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by imaging data showing Brachypodium root systems (Figure 8A) and growth comparisons (Figure 8\u2014figure supplement 1). The generation of transgenic lines is documented (C95), the architectural differences are observed (C96), and growth differences are quantified (C97). The mechanistic explanation (C98-C99) is speculative but supported by citations to previous work and is presented appropriately as a hypothesis ('would support this mechanism').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "GLO-Roots can be applied to tomato (Lycopersicon esculentum), with transgenic plants expressing Pro35S:PPyRE8o and ProeDR5rev:LUC2 reporters showing presumptive lateral root primordia marked by DR5 expression. The method is likely useful for studying root systems of small- to medium-sized model plants and early stages of larger crop plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by demonstration of tomato imaging (Figure 8C-D). The generation of transgenic lines is documented (C100), growth characteristics are described (C101), and DR5 expression patterns are observed (C102). The generalization about applicability to other species (C103) is a reasonable inference based on successful application to three phylogenetically diverse species (Arabidopsis, Brachypodium, tomato), though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "GLO-Roots enables multi-dimensional characterization of root systems by simultaneously tracking soil physicochemical properties (e.g., moisture), root architecture traits (e.g., directionality, growth rates), and gene expression levels in 2D coordinates. Spectrally distinct luciferases allow constitutive and regulated promoters to be studied together, and luminescent microbes provide information about plant-microbe associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by the demonstrated capabilities throughout the manuscript. The integration of multiple data layers is shown through examples combining moisture mapping with root architecture (Figure 5, 7), dual-reporter imaging (Figure 4), and bacterial colonization (Figure 4\u2014figure supplement 4). The claims accurately describe the demonstrated capabilities of the system, though C104 includes some forward-looking speculation about the importance of multi-dimensional approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Future developments of GLO-Roots may include engineering LUX-based microbial biosensors for metabolites, using split-luciferase reporters for studying bi-molecular interactions, and employing BRET-sensors for dynamic metabolite tracking, which would expand the repertoire of biological processes that can be studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 are entirely speculative about future applications ('may be possible,' 'may allow,' 'will likely expand'). While the speculation is reasonable and grounded in existing technologies (with appropriate citations for split-luciferase and BRET sensors), none of these capabilities are demonstrated in the current work. These are discussion points about potential future directions rather than results of the present study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Arabidopsis maintains a classical water-deficit response that expands the root system and directs growth downward, which has been well-characterized in field-grown plants but not previously recapitulated in gel-grown Arabidopsis. Under the water deficit regime used, no significant decrease in shoot relative water content was observed, suggesting the architectural changes provide sufficient access to deep water. The response is likely regulated through systemic and local signaling involving auxin but acting independently of known hydrotropism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by the water deficit experiments (Figure 6) and integrate the findings with existing literature. The demonstration of the classical response in Arabidopsis (C117) addresses a gap in the literature (C116). The relative water content data (C118) support the functional significance of the architectural changes, though the inference is somewhat indirect. The mechanistic interpretation (C119) is supported by the mutant analyses (C90-C91) and is appropriately presented as 'likely' rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that root systems are complex three-dimensional structures that monitor and respond to heterogeneous soil environments through cell-type and organ-specific mechanisms. Root architecture determines the rhizosphere volume and is controlled by both environmental and genetic factors. Different root ideotypes are optimal for acquiring different nutrients (e.g., 'steep, deep, and cheap' for nitrogen vs. shallow branched systems for phosphorus), and primary and lateral roots exhibit different stress response programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C16 are background/introduction claims supported by appropriate citations to previous literature. These establish the scientific context and rationale for developing GLO-Roots but do not represent novel findings of this study. The claims accurately represent established knowledge in the field as evidenced by the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Understanding plant biology requires studying plants in physiologically relevant contexts that present environmental stimuli as they occur in nature. Plant roots are exposed to complex, multi-scale environmental signals, and developing methods that recapitulate natural conditions is an important challenge. Future studies using GLO-Roots may identify genetic loci responsible for adaptive variation in root phenotypes that could be useful for crop breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C125 are primarily philosophical/motivational statements about the importance of physiologically relevant experimental systems (C120-C124) and speculation about future applications (C125). While these provide important context and rationale for the work, they are not empirical results that can be evaluated as supported or unsupported. C125 is explicitly speculative ('may identify') about future genetic studies.",
+    "result_type": "MINOR"
+  }
+]

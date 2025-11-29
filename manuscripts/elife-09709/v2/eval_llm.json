@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Sir2 deletion causes sensitivity to monovalent cations (NaCl, KCl, LiCl, CsCl) and Hygromycin B, but not to divalent cations or osmotic stress. This sensitivity is associated with increased plasma membrane potential and is independent of rDNA destabilization or pseudodiploid state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C37-C38 are directly supported by growth assays (Figure 1A, Figure 1\u2014figure supplement 1A) and membrane potential measurements (Figure 1B). Claims C33 and C35 demonstrate that the phenotype is independent of rDNA stability and mating type, supported by Figure 1\u2014figure supplement 2. The data consistently show a novel NaCl-sensitive phenotype in sir2\u0394 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51"
+    ],
+    "result": "Sir2 negatively regulates PMA1 transcription through direct binding to the PMA1 promoter and deacetylation of H4K16. Sir2 deletion increases PMA1 mRNA and protein levels, which cannot be rescued by catalytically inactive Sir2. Sir2 overexpression decreases PMA1 expression and NaCl sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by qRT-PCR (Figure 1C, 1H), Western blot (Figure 1D), ChIP (Figure 1I, 1J), and growth assays (Figure 1G). The data show Sir2 binds the PMA1 promoter, deacetylates H4K16, and represses PMA1 transcription. Claim C51 synthesizes these findings into a coherent model supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Sas2 antagonizes Sir2 function at the PMA1 promoter by acetylating H4K16. A sas2\u0394 mutant shows reduced PMA1 expression and H4K16 acetylation, though additional acetyltransferases (e.g., Esa1) may compensate in the absence of both Sir2 and Sas2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by qRT-PCR and ChIP data (Figure 1\u2014figure supplement 3B, 3C). Claim C50 is a reasonable inference from the sir2\u0394 sas2\u0394 double mutant data showing elevated PMA1 and H4K16 acetylation, with appropriate citations for Esa1's role. The model in C52 is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "cAMP-PKA signaling controls Sir2's ability to regulate PMA1 transcription. Deletion of PDE2 (increasing cAMP) phenocopies sir2\u0394 for NaCl sensitivity and PMA1 expression. Addition of 8-Bromo-cAMP mimics SIR2 deletion effects. Deletion of PKA catalytic subunits (TPK1/2/3) in pde2\u0394 background restores PMA1 to WT levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are directly supported by growth assays (Figure 2A), qRT-PCR (Figure 2B, 2C, 2D), and cAMP measurements (Figure 2\u2014figure supplement 1D). The genetic epistasis experiment (C60) demonstrates PKA is essential for PMA1 regulation. Claim C61 is a well-supported conclusion from these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Active cAMP-PKA signaling inhibits Sir2 deacetylase activity but not Sir2 binding to the PMA1 promoter. In pde2\u0394 mutants, Sir2 binding is unchanged but H4K16 acetylation increases, and Sir2 phosphorylation is elevated in a PKA-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by ChIP data (Figure 2E, 2F) showing unchanged Sir2 binding but increased H4K16 acetylation in pde2\u0394. Claims C65-C66 are supported by Phos-tag SDS-PAGE (Figure 2G) demonstrating increased Sir2 phosphorylation in pde2\u0394 that is reversed by TPK deletion. Claim C64 is a well-supported inference from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sir2 S473 is phosphorylated in response to cAMP-PKA signaling, and this phosphorylation prevents Sir2 from repressing PMA1 transcription. The S473A mutation abolishes cAMP-PKA-induced phosphorylation, while the phospho-mimetic S473E mutation increases PMA1 expression and H4K16 acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by Phos-tag SDS-PAGE (Figure 2\u2014figure supplement 2), qRT-PCR (Figure 2H), and ChIP (Figure 2I) data. The S473A and S473E mutations show opposite effects on PMA1 expression and H4K16 acetylation as predicted. Claims C73-C74 are well-supported conclusions from the mutational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Sir2 regulates transcription of ribosomal protein genes (RPGs) in a cAMP-PKA-dependent manner through S473 phosphorylation. Sir2 and PDE2 deletion increase cell size and RPG expression. Sir2 binding to RPG promoters is unchanged in pde2\u0394, but S473 phosphorylation status affects RPG transcription and H4K16 acetylation at RPG promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 and C82 are supported by cell size measurements (Figure 2\u2014figure supplement 3A, 3B) and qRT-PCR (Figure 2\u2014figure supplement 3C). Claims C83-C86 are supported by ChIP (Figure 2\u2014figure supplement 3D, Figure 2K) and qRT-PCR (Figure 2J) showing S473 mutations affect RPG expression and H4K16 acetylation. Claims C87-C88 are supported by cell size data (Figure 2\u2014figure supplement 3E). Claim C89 is a well-supported conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CK2 (Cka2) works downstream of PKA to phosphorylate Sir2 at S473. CKA2 deletion reduces NaCl sensitivity and PMA1/RPL3 expression in pde2\u0394 mutants. Cka2 phosphorylates Sir2 in a PKA-dependent manner, and Cka2 binding to PMA1 and RPL3 promoters (but not other Sir2 targets) is increased in pde2\u0394 and decreased when TPK genes are deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by growth assays (Figure 3A-E) and qRT-PCR (Figure 3C, 3D, 3F, 3G). Claims C99-C100 are supported by immunoprecipitation and Western blot (Figure 3H, 3I). Claims C101-C103 are supported by ChIP (Figure 3J) showing specific Cka2 recruitment to PMA1/RPL3 promoters. Claim C104 is a well-supported conclusion from the genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Sir2 S473 phosphorylation inhibits dietary restriction (DR)-mediated lifespan extension. In 2% glucose, S473A extends lifespan (~20%) while S473E shortens it (~10%). S473A rescues the short lifespan of pde2\u0394. Under DR conditions (0.5% glucose), S473A has no effect on lifespan. The effect is independent of rDNA recombination/stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are directly supported by replicative lifespan data (Figure 4A, 4B, 4C) with appropriate statistical analysis. The lifespan effects correlate with PMA1 and RPL3 expression levels (Figure 4D, 4E). Claim C111 is supported by lifespan data in fob1\u0394 background (Figure 4F, 4G). Claim C112 is a well-supported conclusion integrating all the lifespan data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C22",
+      "C23",
+      "C113",
+      "C114"
+    ],
+    "result": "Sir2's role in DR-mediated lifespan extension depends on cAMP-PKA and CK2 signaling through S473 phosphorylation. Sir2 increases replicative lifespan only when cAMP-PKA and CK2 signaling is inactive. The role of Sir2 in DR-mediated lifespan extension depends on the metabolic status of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings of the manuscript. Claims C3, C8, C22, and C23 are supported by the phosphorylation data (Figures 2G, 3H), kinase deletion experiments (Figure 3), and lifespan data (Figure 4). Claims C113 and C114 are well-supported conclusions that integrate the mechanistic findings with the lifespan phenotypes and are consistent with cited prior work (C114 cites Kang et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "Sir2 is an NAD+-dependent protein deacetylase and the founding member of the sirtuin family. Sirtuins are highly conserved NAD-dependent deacetylases. Sir2 mediates transcriptional silencing at rDNA, mating type loci, and telomeres by deacetylating H4K16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about Sir2 supported by multiple citations in the introduction (Rine and Herskowitz, 1987; Hecht et al., 1996; Smith and Boeke, 1997; Imai et al., 2000). These claims provide essential background knowledge for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Sirtuins have been proposed as metabolic sensors linking DR to lifespan extension across species, though this role remains controversial. Sir2 may affect yeast replicative aging through multiple mechanisms including rDNA stability, telomeric silencing, and asymmetric segregation of damaged components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the controversial state of the field regarding Sir2's role in lifespan extension, supported by numerous citations (Longo and Kennedy, 2006; Sinclair and Guarente, 1997; and many others). This provides important context for why the current study is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Deletion of SIR2 is associated with loss of transcriptional silencing at sub-telomeric regions, sterility in haploids, destabilization of rDNA, and shortened lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established phenotypes of sir2\u0394 mutants cited from Kaeberlein et al., 1999. This provides background for the study and context for the novel NaCl sensitivity phenotype discovered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C39"
+    ],
+    "result": "Fob1 increases extrachromosomal rDNA circles. Plasma membrane potential is a critical determinant of cation tolerance. Reduced potassium uptake is unlikely to contribute to membrane hyperpolarization in sir2\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is established knowledge about Fob1. Claim C36 is supported by citation (Navarre and Goffeau, 2000). Claim C39 is supported by the KCl rescue experiment (Figure 1\u2014figure supplement 2E) showing KCl does not reverse NaCl sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Hyperactivation of cAMP-PKA results in sensitivity to cellular stresses and NaCl. PKA signaling has been proposed to negatively regulate Sir2 in response to glucose availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by citation (Stanhill et al., 1999). Claim C54 is supported by data in Figure 2\u2014figure supplement 1. Claim C55 is supported by citation (Lin et al., 2000). These provide important background for the PKA-Sir2 connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Sir2 S473 is a conserved phosphorylation site in all known Sir2 homologs. Ribosome biosynthesis rate can affect yeast cell size. Sir2 associates with actively transcribed genes including PMA1 and RPGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations (Gerhart-Hines et al., 2011; Jorgensen et al., 2004; Tsankov et al., 2006; Li et al., 2013). They provide important background for understanding why Sir2 might regulate RPG expression and cell size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "DR is known to reduce cAMP-PKA activity. Both PMA1 and RPGs are critical regulators of yeast replicative lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations (Lin et al., 2000; Steffen et al., 2008; Ito et al., 2010; Henderson et al., 2014). They provide the rationale for investigating Sir2 S473 phosphorylation in DR-mediated lifespan extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Sir2 S473 is conserved in all known sirtuins, and there are numerous reports of cAMP-PKA and CK2 interactions with SirT1 phosphorylation in mammalian cells. Sir2 fine-tunes transcription of PMA1 and RPGs by deacetylating H4K16 in promoters, indicating Sir2-dependent H4K16 deacetylation regulates actively transcribed genes in addition to silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by multiple citations (Gerhart-Hines et al., 2011; Kang et al., 2009; and others) suggesting conservation of the mechanism. Claims C117-C118 summarize the findings and their implications, supported by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Pma1 protein increases almost twofold in sir2\u0394. Vacuolar acidity is linked to mitochondria and autophagy in aging. Vacuolar acidity declines in aging yeast due to Pma1 accumulation. Pma1 expression affects aging by changing intracellular pH, vacuolar pH, amino acid import, and mitochondrial function. Sir2 may contribute to DR-mediated lifespan extension by affecting mitochondrial function through pH regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by Western blot data (Figure 1D, Figure 1\u2014figure supplement 1E). Claims C120-C122 are supported by appropriate citations (Hughes and Gottschling, 2012; Ruckenstuhl et al., 2014; Henderson et al., 2014). Claim C123 is a reasonable speculation based on the data and cited literature, appropriately presented as a possibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Sir2 partially represses transcription of PMA1 and ribosomal protein genes through H4K16 deacetylation in promoter regions. This repression is relieved by Sir2 S473 phosphorylation mediated by cAMP-PKA and CK2 signaling. Moderate DR increases replicative lifespan of WT yeast but not yeast expressing Sir2-S473E or S473A, suggesting S473 phosphorylation negatively regulates Sir2's effect on DR-mediated lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims from the abstract are well-supported by the experimental data presented throughout the manuscript. Claims C4-C7 are supported by qRT-PCR, ChIP, and phosphorylation data (Figures 1-3). Claims C9-C12 are supported by lifespan data (Figure 4). These represent the core findings of the study.",
+    "result_type": "MAJOR"
+  }
+]

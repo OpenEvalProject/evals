@@ -1,0 +1,895 @@
+{
+  "submission": {
+    "id": "a4201527-3c15-4235-ae0e-486641407704",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T03:36:33.843672Z",
+    "updated_at": "2025-11-29T03:36:33.843672Z"
+  },
+  "content": [
+    {
+      "id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "submission_id": "a4201527-3c15-4235-ae0e-486641407704",
+      "content_type": "manuscript",
+      "content_text": "# Additive effects on the energy barrier for synaptic vesicle fusion cause supralinear effects on the vesicle fusion rate\n\n## Authors\n\n- Sebastiaan Schotten<sup>1</sup>\n- Marieke Meijer<sup>1</sup>\n- Alexander Matthias Walter<sup>1</sup>\n- Vincent Huson<sup>1</sup>\n- Lauren Mamer<sup>4</sup>\n- Lawrence Kalogreades<sup>1</sup>\n- Mirelle ter Veer<sup>1</sup>\n- Marvin Ruiter<sup>1</sup>\n- Nils Brose<sup>5</sup>\n- Christian Rosenmund<sup>4</sup>\n- Jakob Balslev S\u00f8rensen<sup>2</sup>\n- Matthijs Verhage<sup>1</sup>\n- Lennart Niels Cornelisse<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Functional Genomics, Center for Neurogenomics and Cognitive Research VU University Medical Center Amsterdam Netherlands\n2. Department of Neuroscience and Pharmacology, Faculty of Health Sciences University of Copenhagen Copenhagen Denmark\n3. Molecular Physiology and Cell Biology Leibniz Institute for Molecular Pharmacology Berlin Germany\n4. NeuroCure Cluster of Excellence, Neuroscience Research Center Charit\u00e9 - Universit\u00e4tsmedizin Berlin Berlin Germany\n5. Department of Molecular Neurobiology Max Planck Institute for Experimental Medicine G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe energy required to fuse synaptic vesicles with the plasma membrane (\u2018activation energy\u2019) is considered a major determinant in synaptic efficacy. From reaction rate theory, we predict that a class of modulations exists, which utilize linear modulation of the energy barrier for fusion to achieve supralinear effects on the fusion rate. To test this prediction experimentally, we developed a method to assess the number of releasable vesicles, rate constants for vesicle priming, unpriming, and fusion, and the activation energy for fusion by fitting a vesicle state model to synaptic responses induced by hypertonic solutions. We show that complexinI/II deficiency or phorbol ester stimulation indeed affects responses to hypertonic solution in a supralinear manner. An additive vs multiplicative relationship between activation energy and fusion rate provides a novel explanation for previously observed non-linear effects of genetic/pharmacological perturbations on synaptic transmission and a novel interpretation of the cooperative nature of Ca2+-dependent release.\n\n## Introduction\n\nRegulation of synaptic efficacy is an essential aspect of information processing in neuronal networks. The energy barrier for vesicle fusion is considered to be a main contributing factor. To release neurotransmitters, synaptic vesicles (SVs) need to fuse with the neuronal plasma membrane, which requires substantial energy. Local membrane deformation, dehydration of lipid head groups, neutralization of opposite membrane charges, lipid splaying, and the creation of a lipid stalk all contribute to the energy barrier that needs to be overcome before neurotransmitters are released (Kuzmin et al., 2001; Kozlovsky and Kozlov, 2002; Markin and Albanesi, 2002; Sorensen, 2009). Reaction rate theory suggests that specifically modulation of the fusion energy barrier is a powerful way to regulate synaptic efficacy. According to the Arrhenius equation, reaction rates change exponentially with changes in the activation energy, which is the minimum energy required for a reaction (e.g., vesicle fusion) (Arrhenius, 1889a, 1889b). Thus, we predict that a set of modulations of the release rate may exist, which act by lowering the activation energy for fusion. If this is the case, they will have a supra-linear effect on the fusion rates, and converting rates to energies (by inverting the Arrhenius equation) should reveal additive effects on the fusion barrier. This is highly relevant since many presynaptic factors may act on the activation energy for fusion simultaneously and potentially independently during synaptic stimulation.\n\nMuch of the energy required for SV fusion is likely provided by the SNARE proteins, synaptobrevin/VAMP, syntaxin, and SNAP25, whose assembly into a trimeric SNARE-complex drives the fusion reaction (Sorensen, 2009; Jahn and Fasshauer, 2012). However, several other proteins likely contribute to the efficient and fast reduction of the activation energy for SV fusion that is required for fast synaptic transmission. During action potential (AP) stimulation, for example, SV fusion rates increase by several orders of magnitude within a few milliseconds due to the rapid activation of Ca2+ sensors of the synaptotagmin-family, which control SNARE-mediated fusion (Rhee et al., 2005; Xu et al., 2007; Walter et al., 2010; Weber et al., 2010; Kochubey and Schneggenburger, 2011; Arancillo et al., 2013; Sudhof, 2013). Other proteins, such as Munc18 and Munc13, might also support synaptic transmission by reducing the activation energy for SV fusion, either through their established roles in SNARE-complex assembly (Basu et al., 2007; Wierda et al., 2007; Weber et al., 2010; Xue et al., 2010; Arancillo et al., 2013) or through independent actions.\n\nDirect measurements of the exact contributions of different molecular events inside living nerve terminals to the activation energy for SV fusion are not possible. However, the predicted supra-linear modulation of release rates can be measured experimentally. This can be interpreted as changes in the activation energy under certain assumptions (e.g., a constant empirical prefactor A, see below). SV release kinetics has been intensively studied using flash photolysis of caged Ca2+ (Schneggenburger and Neher, 2000; Lou et al., 2005; Sakaba et al., 2005; Korogod et al., 2007; Sun et al., 2007; Wolfel et al., 2007; Kochubey and Schneggenburger, 2011; Burgalossi et al., 2012). However, synaptic responses to Ca2+ elevation (either triggered by natural stimulations by APs or by Ca2+ uncaging) are caused by a rapid synaptotagmin/Ca2+-induced lowering of the energy barrier for vesicle fusion. This mechanism might be modified by several factors that interact with synaptotagmin. Therefore, to assess changes in the energy barrier per se, caused by other factors, we must use a different, Ca2+-independent method to assess changes in release kinetics. In this regard, hypertonic solutions have been used widely as they cause SV release from the same readily releasable SV pool (RRP) as APs do, but by a Ca2+-independent stimulus (Fatt and Katz, 1952; Stevens and Tsujimoto, 1995; Rosenmund and Stevens, 1996). Correspondingly, changes in the kinetics of synaptic responses to hypertonicity-induced SV fusion have been interpreted as changes in the intrinsic \u2018release willingness\u2019 or \u2018fusogenicity\u2019 of SVs, which may represent an inverse measure for the activation energy for SV fusion (Basu et al., 2007; Wierda et al., 2007).\n\nHere, we introduce a method to quantify vesicle fusion rate constants and RRP-pool size by fitting a kinetic model to synaptic responses triggered by hypertonicity-induced SV fusion. Using this approach, we show that independent osmotic, genetic, and biochemical perturbations modulate SV release in a multiplicative/supralinear manner. The fact that linear (additive) effects on the energy barrier (activation energy) produce supralinear (multiplicative) effects on the release rate, helps to explain previously unexplained effects of genetic/pharmacological perturbations on synaptic transmission and provides a novel interpretation of the previously identified cooperative nature of Ca2+-dependent release.\n\n## Results\n\n### Supralinear modulation of synaptic transmission by additive effects on the activation energy for vesicle fusion\n\nFusion of the lipid bilayer of synaptic vesicles with the plasma membrane involves deformation of membranes, dehydration of lipid head groups, neutralization of opposite membrane charges, and lipid splaying (Kuzmin et al., 2001; Kozlovsky and Kozlov, 2002; Markin and Albanesi, 2002; Sorensen, 2009), which together requires substantial energy. Vesicle priming and fusion can be represented in terms of an energy landscape, with energy barriers separating non-primed, primed, and fused states (Figure 1A) (Sorensen, 2009; Walter et al., 2013). The Arrhenius equation predicts an exponential relation between the rate constants of transitions between these states and the activation energies for these reactions, which correspond to the relative heights of these energy barriers (Figure 1B) (Arrhenius, 1889a, 1889b; Jahn and Grubmuller, 2002). Hence, for transition from the primed to the fused state, the vesicle fusion-rate constant is given by(1)k2=Ae\u2212EaR\u00afT,with T the absolute temperature, R\u00af the gas constant, and Ea the activation energy for synaptic vesicle fusion (Figure 1A). Since the speed of the reaction is determined by Ea and not by the absolute height of the energy barrier for fusion, we use Ea in the rest of this paper to explain effects on release kinetics. The prefactor A is an empirical prefactor that takes into account the probability of collisions between reactants. For reactions in which the activation energy is low, this factor can limit release rates (diffusion limited reactions). Since SV fusion from the RRP proceeds from primed states where reactants are already positioned in close proximity and since fusion involves high-energy intermediate states, we assume that SV-release rates are predominantly governed by the activation energy and not by the number of collisions. Hence, we assume that changes in release rates most likely reflect changes in Ea with constant A. In that case, if the activation energy for fusion at rest Ea, 0 is reduced by an amount \u0394E1 (Figure 1C), the corresponding new release rate constant is given by(2)k2,new=Ae\u2212(Ea,0\u2212\u0394E1)R\u00afT=Ae\u2212Ea,0R\u00afTe\u0394E1R\u00afT=k2,0\u00b7m1,with m1=e\u0394E1R\u00afT a multiplication factor and k2,0=Ae\u2212Ea,0R\u00afT the rate constant for the Ca2+-independent part of spontaneous release (Xu et al., 2009; Ermolyuk et al., 2013). Similarly, a further reduction of the activation energy with an amount \u0394E2 by a second (independent) process (Figure 1D) leads to multiplication of the fusion-rate constant with an additional multiplication factor m2=e\u0394E2R\u00afT,(3)k2,new=Ae\u2212(Ea,0\u2212\u0394E1\u2212\u0394E2)R\u00afT=k2,0\u00b7m1\u00b7m2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the energy landscape for synaptic vesicle priming and fusion, with Ea the activation energy for vesicle fusion, and (B) the corresponding vesicle-state model. (C) Reduction of the fusion activation energy at rest Ea,0 by an amount \u0394E1, or (D) by a combined effect of \u0394E1 and \u0394E2. (E) Additive effect of \u0394E2 causes a constant shift of the effective activation energy for fusion \u0394Ea for different values of \u0394E1, but a (F) multiplicative effect on the release rate constant k2.\n\nThis generalizes to\n\n$$\nk_{2,new}=Ae^{\u2212\\frac{(E_{a,0}\u2212\\sumi=1N\u0394E_{i})}{R\u00afT}}=k_{2,0}\u00b7\\prodi=1Nm_{i},\n$$\n\nfor N independent reductions \u0394Ei (\u2212\u0394Ei for enhancements) of the activation energy with corresponding multiplication factors $m_{i}=e^{\\frac{\u0394E_{i}}{R\u00afT}}$. Equation (4) implies that additive effects on the activation energy for SV fusion result in multiplicative effects on the fusion rate (Figure 1E,F), which renders it a powerful way to modulate synaptic strength. In comparison, additive effects on the number of readily releasable vesicles cause additive effects on the fusion rate. We developed a method to quantify fusion rate constants from synaptic responses to hypertonic stimulation and tested whether osmotic, genetic, and biochemical perturbations modulate synaptic vesicle fusion rate in a supralinear manner.\n\n### Minimal vesicle state model for synaptic vesicle release\n\nExposing neurons to hypertonic solution induces vesicle fusion selectively from the readily releasable pool (primed state) (Rosenmund and Stevens, 1996). This occurs by a mechanism that is not mediated by Ca2+, as hypertonic sucrose (HS)-induced excitatory postsynaptic currents (EPSCs) are not changed when intracellular Ca2+ is buffered by BAPTA, or when Ca2+ influx through voltage gated Ca2+ channels is blocked by CdCl2 (Rosenmund and Stevens, 1996). HS-induced EPSCs display concentration-dependent changes in release kinetics, with higher degrees of hypertonicity leading to faster release, causing a decrease in time-to-peak and an increase in peak release rate (Basu et al., 2007) (Figure 2A). We applied a minimal vesicle state model, similar to Weis et al. (1999) (Figure 1B), and extended this with a time dependent description of the sucrose action on the release rate constant (Figure 2B, see \u2018Materials and methods\u2019 for mathematical description) to describe these release kinetics at various sucrose concentrations. EPSCs were simulated by modelling sucrose induced SV release rates and convolving them with a canonical miniature EPSC (see \u2018Materials and methods\u2019). We found that\u2014by varying only the maximal fusion rate constant k2,max\u2014our model reproduced all features in the experimental traces: a decrease in time-to-peak, an increase in peak release rate, and more release for increasing sucrose concentrations (Figure 2B\u2013C) (Figure 2\u2014source data 1). Above a given stimulus strength (0.5M sucrose in WT cells), the total amount of release remained constant, because the complete RRP was depleted, but peaks became larger and narrower when k2,max kept increasing. Latter features were also present in a reduced version of the model that neglects vesicle replenishment, which could be solved analytically (Figure 2\u2014figure supplement 1). Hence, selective modulation of the fusion rate constant by HS stimulation in a simple vesicle state model is sufficient to describe characteristic features of synaptic responses to different levels of hypertonicity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig2-v2.jpg)\n\n**Figure 2.:** (A) Concentration dependence of HS-induced release kinetics. (B) Model simulations of time courses of k2, for different values of k2,max and (C) corresponding synaptic responses (\u2212k2R).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Current responses obtained from Equation (14) after convolution with a typical mEPSC. The magenta line corresponds to k2,max = 0.5 s\u22121, blue to k2,max = 3 s\u22121, red to k2,max = 5 s\u22121, and black to k2,max = 10 s\u22121.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Solution exchange was measured by the change in holding current when switching from normal (0.3M) extracellular solution to 10 times diluted (0.03M) extracellular solution with 0.5 or 1M sucrose. Green curves are the average responses for 6 recordings, corrected for baseline and inverted for displaying purposes. Blue curves represent postsynaptic current responses to different sucrose concentrations which show a delayed response with respect to the sucrose stimulus.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The default parameter set, represented by the black traces, is $[k_{1},\u2002k_{\u22121},\u2002k_{2,max},\u2002t_{del},\u2002\\tau,\u2002D]=[0.09,\u20020.16,\u20023.5,\u20020.60,\u20020.20,\u20021000]$. In each subpanel, one of these parameters is either multiplied by 2 (dark blue) or divided by 2 (light blue). The Gaussian white noise added to these curves was generated using the MATLAB \u2018randn()\u2019 function, with \u00b5 = 0 pA and \u03c3 = 10 pA. (A) Absolute traces. (B) Traces scaled and aligned to peak.\n\n### Assessing RRP size and release rate constants\n\nNext, we set out to fit HS-induced responses with our vesicle state model to assess synaptic release parameters including RRP, and rate constants for priming, unpriming, and fusion. Cultured autaptic neurons between DIV13-18 were challenged with HS concentrations ranging from 0.25\u20131M using a fast application system to establish a rapid transition from normal extracellular solution to hypertonic solution. In addition, spontaneous release was measured before cells were exposed to HS to quantify the release rate at 0M sucrose. The model accurately fitted synaptic responses induced by RRP depleting concentrations of 0.5M and higher, providing estimates for all model parameters (Rosenmund and Stevens, 1996; Basu et al., 2007) (Figure 3A\u2013C and Figure 3\u2014figure supplement 1). For 0.5M, we found a priming rate k1D of 0.132 \u00b1 0.031 nC/s, which corresponded to 0.10 pool-units/s given an average pool size of 1.31 nC (see below) and was of the same order of magnitude as the 0.20 \u00b1 0.03 pool-units/s at 25\u00b0C reported by Pyott et al. (2002). The unpriming rate constant k\u22121 at 0.5M was 0.11 \u00b1 0.01 s\u22121, corresponding to a RRP recovery time constant of 1/k\u22121 = 9.1 s (see Equation (21), \u2018Materials and methods\u2019), which was of the same order of magnitude as recovery time constants reported in previous studies (10 s at 36\u00b0C (Stevens and Tsujimoto, 1995), 2.9 s at 32\u00b0C (Toonen et al., 2006), and 13 s (slow phase) at 25\u00b0C (Pyott and Rosenmund, 2002)). Priming and unpriming rates were not significantly different between different concentrations suggesting that these processes are not affected by hypertonic stimulation (Figure 3\u2014figure supplement 1). We used estimations of the priming and unpriming parameters k1D, and k\u22121 to calculate RRP size from the steady state solution of the model given by Equation (9), neglecting the value of k2 before stimulation, which is three orders of magnitude smaller than k\u22121 (compare Figure 3C and Figure 3\u2014figure supplement 1B, Figure 3\u2014source data 1). For stimulation with 0.5M, this yielded a RRP of 1.31 \u00b1 0.23 nC, corresponding to 11.9 \u00b1 2.4\u00b7103 (n = 12) vesicles, which was in the same range as reported for wild-type autaptic neurons by other studies (15.9 \u00b1 2.9\u00b7103 (Altrock et al., 2003), 2.5 \u00b1 1.1\u00b7103 (Augustin et al., 1999), 5.36 \u00b1 0.87\u00b7103 (Priller et al., 2006), 24.7 \u00b1 5.6\u00b7103 (Priller et al., 2007), 17.2 \u00b1 3.0\u00b7103 (Priller et al., 2009), 6.35 \u00b1 0.9\u00b7103 (Reim et al., 2001), 11.0 \u00b1 1.2\u00b7103 (Rhee et al., 2002)). RRP sizes were similar for the RRP depleting concentrations of 0.5M and higher (Figure 3B). Our fit method yielded a more accurate estimate of the RRP size compared to quantification methods that use the charge transfer during the peak of the sucrose response and need to correct for on-going vesicle replenishment, either by subtracting the steady state current at the end of the response as a baseline (Basu et al., 2007; Arancillo et al., 2013) (Figure 3\u2014figure supplement 2A), or by integrating the current to an arbitrary time-point after the peak (Reim et al., 2001; Rosenmund et al., 2002; Toonen et al., 2006; Ikeda and Bekkers, 2009) (Figure 3\u2014figure supplement 2B). In addition, the rate constant for vesicle replenishment k1 is one of the fitted model parameters, which allows the reconstruction of vesicle recruitment during sucrose application (see \u2018Materials and methods\u2019 and Figure 3\u2014figure supplement 2C). We noticed that responses to 1M sucrose tended to have lower noise levels (Figure 3A1), which might point to an effect of receptor saturation and/or desensitization that was shown to be absent at 0.5M (Pyott and Rosenmund, 2002) but might play a role at higher concentrations. We confirmed that kinetics of responses to 0.5M were identical in the absence or presence of competitive AMPA receptor antagonist kynurenic acid (KYN), but found faster kinetics of 0.75M responses in the presence of KYN, suggesting that quantifications of model parameters obtained for concentrations higher than 0.5M should be interpreted with caution (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig3-v2.jpg)\n\n**Figure 3.:** (A1) HS induced EPSCs (black) with model fits (red) superimposed. (A2) Spontaneous vesicle release at 0M sucrose. (B) RRP size obtained from model fits using Equation (9). (C) Fitted maximal release rate constants k2,max at different sucrose concentrations. (D) Changes in activation energy (at 293 K) obtained from values for k2,max in C using Equation (5). Data for 0.25M and higher were fitted with a monoexponential function, which was transformed into the dose\u2013response curve in C using the equations given in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Priming rate k1D, (B) Unpriming rate constant k\u22121, and (C) Delay of sucrose onset, tdel.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Red line represents a typical current response in a.u. induced by hypertonic stimulation. (A) HS induced current response is corrected for vesicle replenishment by taking the steady state current at the end of the response as baseline and subtracting this from the total current. Integration of the corrected current response yields the RRP size in nC, or in vesicles, after dividing total charge by the quantal content of a single mEPSC (green area) (Basu et al., 2007; Arancillo et al., 2013). This gives an underestimation of the RRP since vesicle replenishment does not start at the maximal rate at the onset of the response but grows gradually during the stimulation. (B) RRP size is estimated from integration of the total charge transfer from the beginning of the response to an arbitrary timepoint after the peak (green area), neglecting any contribution from vesicle replenishment (grey area) (Reim et al., 2001; Rosenmund et al., 2002; Toonen et al., 2006; Ikeda and Bekkers, 2009). This usually leads to an overestimation. (C) In this paper, the definition of the steady state RRP in Equation (9) is used to infer the RRP size from the fitted model parameters. Effectively, in comparison to methods shown in A and B, we correct for vesicle replenishment by subtracting the calculated vesicle replenishment using Equation (20) (black line) from the total current. Integration of the corrected HS induced current response yields an accurate estimation of the RRP (green area).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Current traces induced by 0.5 or 0.75M sucrose in the presence or absence of 0.2 mM KYN (measured in the same neuron). Shown are raw and scaled traces. Insets show zoom of 0.75M peak. (B\u2013D) KYN induced changes in (B) release rate constant k2,max (C) RRP size, (D) priming rate k1Dk1D, (E) unpriming rate constant k\u22121. Parameters are obtained from unscaled raw data and normalized to the condition without KYN. Since KYN reduced the measured current, RRP size and priming rates are reduced. The maximal release rate is unaffected in 0.5M sucrose, but increased by KYN in 0.75M sucrose. This suggests that post-synaptic receptor saturation might play a role in sucrose concentrations of 0.75M or higher.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Example trace of postsynaptic response evoked by 0.5M sucrose (black). Green trace is corrected for the non-receptor current induced by 0.5M in the presence of AMPA and NMDA blockers DNQX (10 \u00b5M) and APV (50 \u00b5M) (grey). (B) Priming rate k1D. (C) Unpriming rate constant k\u22121. (D) Release rate constant k2,max. (E) RRP size.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) The default parameter set is as in Figure 2\u2014figure supplement 3. Each panel shows the first 4 s of the simulated trace per parameter setting in black. Traces are overlaid with results of 10 independent fits starting at different initial conditions, shown in red (best fit), green (accepted fit upon visual inspection) and grey (rejected fit upon visual inspection). With the exception of the results for 2k\u22121, the same scale holds for all curves. (B) Key features encircled in red to judge quality of the fit by visual inspection: (1) Late onset of fit, (2) wrong peak amplitude and/or time-to-peak, (3) too slow decay towards steady state phase, (4) Steady-state phase (refill) is fitted incorrectly. (C) Fit method robustly discriminates between different model parameters. Graphs display fitted model parameters, obtained from fits approved after visual inspection in (A) (red and green curves), as a function of the adapted model parameter. Strong linear correlation is found for the adapted model parameter, whereas the other parameters are invariant.\n\nMaximal release rate constants k2,max were obtained from fits of responses to 0.25\u20131M sucrose. For non-depleting hypertonic stimulation (e.g., 0.25M), k2,max can be overestimated due to an underestimate of the RRP. Therefore, we fitted such current responses simultaneously with the response to a maximal depleting stimulation (e.g., 0.5M) from the same cell, keeping all the model parameters the same between two stimulations, except k2,max, tdel, and \u03c4. The release rate constant at 0M was obtained by dividing the frequency of spontaneously released events (mEPSCs) by the number of vesicles in the RRP (calculated by dividing the total RRP charge by the average mEPSC charge). However, this was probably an overestimation since the majority (>95%) of spontaneous release is Ca2+-dependent, and intracellular Ca2+ was not buffered in these experiments (Xu et al., 2009; Groffen et al., 2010). Ca2+-dependent mEPSCs are most likely triggered by rapid spontaneous Ca2+ fluctuations (SCFs) in the synaptic terminals, either caused by stochastic opening of voltage gated Ca2+ channels (\u223c50%) (Goswami et al., 2012; Ermolyuk et al., 2013) or release from intracellular calcium stores (\u223c50%) (Emptage et al., 2001). This suggests that the frequency of these SCFs contributes with a constant k2,SCFs (\u223c2\u20134 10\u22124 s\u22121) to the calculated release rate constant k2,max, which dominates at 0M sucrose but is negligible compared to fusion rate constants induced with higher concentrations (Figure 3\u2014source data 1). In contrast to the other fitted model parameters, k2,max was significantly different between different concentrations and showed a sigmoidal dependence on sucrose concentration (Figure 3C). The values for k2,max at 0.75 and 1M might be underestimated due to receptor saturation as discussed above (Figure 3\u2014figure supplement 3).\n\n### Sucrose stimulation reflects a decrease in the activation energy for fusion\n\nAs we argued above, Ca2+-triggered exocytosis belongs to a class of reactions that are likely to be limited by activation energy, rather than by the frequency of collisions between reactants. This follows from the preassembly of a fusion machinery during vesicle priming, and from the expected existence of high-energy intermediates. During stimulation with hypertonic solution, drawing water from the cell will increase the concentration of reactants. This might increase collision rates proportional with the increased concentration, but this is unlikely to account for the 104-fold increase in k2,max. Moreover, the (moderate) increase in reactant concentration might be counteracted by molecular crowding effects and increases in viscosity (Miermont et al., 2013). Consistent with this notion, we observed that upstream steps in the exocytotic cascade, which are in fact more likely to be collision limited (such as vesicle docking and priming, reflected in the overall priming rate k1D), showed a tendency to decrease with high osmolarity (Figure 3\u2014figure supplement 1), indicating that molecular crowding/viscosity dominates the effect of increased reactant concentration. Overall, we conclude that a HS challenge is most likely to change fusion through a change of the activation energy for fusion (i.e., the exponential factor in the Arrhenius equation), rather than the pre-exponential factor A.\n\nChanges in activation energy for fusion follow from changes in k2,max using Equation (1) assuming A is constant,\n\n$$\n\u0394E_{a}=E_{a,1}\u2212E_{a,2}=R\u00afT(ln(A)\u2212ln(k_{2,max,1}))\u2212R\u00afT(ln(A)\u2212ln(k_{2,max,2}))=R\u00afT(ln(k_{2,max,2})\u2212ln(k_{2,max,1})).\n$$\n\nFigure 3D depicts the calculated changes in activation energies corresponding to the changes in k2,max for different sucrose concentrations in Figure 3C. We find that the maximal reduction in the activation energy for fusion by 1M sucrose is $9.3R\u00afT$. This value is probably about $3R\u00afT$ too low since (as discussed above) k2,max is overestimated at 0M (up to 20 fold), but not at higher sucrose concentrations. Expressed in units of kCal/mol, the HS-induced change in activation energy corresponds to 5.4 kCal/mol, which is comparable to the estimated reduction of 5.9 kCal/mol during the action potential (Rhee et al., 2005). Hence, fusion rate constants obtained from fitting HS-induced synaptic responses to a minimal vesicle-state model can be used to calculate changes in activation energy for fusion, which enables to study this parameter under different experimental conditions.\n\n### Relationship between release kinetics and RRP depletion\n\nThe extent of RRP depletion upon application of submaximal sucrose has been used as a measure of \u2018release willingness\u2019 or \u2018fusiogenicity\u2019 of vesicles, which is proposed to be inversely related to the energy barrier for fusion (Basu et al., 2007; Gerber et al., 2008; Xue et al., 2010; Rost et al., 2011). To investigate whether changes in the activation energy for fusion can explain changes in the depleted RRP fraction at submaximal sucrose, we analyzed the relation between release kinetics (k2,max) and RRP depletion in the model and compared this with experimental data. The depleted RRP fraction was defined as the fraction of the RRP depleted by a submaximal HS stimulus relative to a maximal depleting stimulus (0.5M sucrose). Simulations applying 7 s HS-stimulations for different values of k2,max yielded a linear relation for low values of k2,max, which levels off and saturates to 1 (complete depletion) at high k2,max. This relation transforms into a sigmoidal curve when k2,max is plotted on a log10 scale (black line in Figure 4B) and can be approximated by an analytically derived function (see \u2018Materials and methods\u2019 and Figure 4\u2014figure supplement 1) (Figure 4\u2014source data 1). The value for k2,max, that we experimentally find with 0.5M stimulation, predicts only a 94% depletion of the RRP implying that up to 6% more release is expected with higher concentrations. However, in practice, these slightly larger responses might be difficult to detect because of receptor saturation and desensitization effects at these concentrations. We experimentally confirmed the predicted relation with data points from submaximal 0.25M responses being distributed along the steep phase of the curve (Figure 4A,B). As expected, 0.75 and 1M responses yielded high values for k2,max and complete RRP depletion. These results show that a change in k2,max only is sufficient to explain changes in the depleted RRP fraction: with slow release kinetics (low k2,max), the RRP is not effectively depleted, because of on-going refilling (priming), whereas from a certain value of k2,max the amount of RRP depletion is maximal, but depletion occurs with faster kinetics. Hence, with this relation the extent of RRP depletion in response to different sucrose concentrations can be used to discriminate between effects on release kinetics and priming. Maximally depleting stimuli report the RRP, while changes in the depleted RRP-fraction at submaximal (e.g., 0.25M) stimuli are an indication of changes in k2,max, indicative of changes in the activation energy for fusion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig4-v2.jpg)\n\n**Figure 4.:** (A) Examples of submaximal responses in different cells. 0.25M responses (black), scaled to 0.5M responses (grey) in the same cell, display faster kinetics when a larger fraction of the RRP is depleted. (B) Fitted data overlayed on the predicted curve. Data points corresponding to the examples in A are indicated. Data points for 0.50M, 0.75M, and 1.0M are shown as mean \u00b1 SEM. Note that whereas the model predicts a 94% depletion of the RRP with 0.5M the y-axis value at 0.5M is one per definition since the RRP size at this concentration was used as a reference to calculate the depleted RRP fraction.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** For small k2,max, the duration of the sucrose pulse dictates the depleted RRP fraction: 7 s stimuli deplete a smaller fraction than stimuli of 20 s and longer. For large k2,max, the blue curve (D depletable) exceeds the others, because the steady-state RRP at the end of the stimulus is smaller when D is depletable. This is due to Equation (24): Rf = k1Df/(k\u22121 + k2,max). A smaller upstream pool at the end of the stimulus (Df) thus yields a smaller Rf and hence a larger depleted RRP fraction (Ri \u2212 Rf)/Ri.\n\n### Modulation of the activation energy for fusion by genetic and biochemical perturbations\n\nNext, we investigated the additivity between osmotic and genetic or biochemical perturbations on release kinetics and RRP depletion. We extracted data from literature on genetic and/or biochemical perturbations with an effect on the release willingness of vesicles. Interestingly, changes in release willingness were reported for proteins with distinct presynaptic functions, including the priming factor Munc13, the tSNARE Syntaxin, the SNARE-complex binding protein Complexin, and the metabotropic GABAB receptor (Basu et al., 2007; Gerber et al., 2008; Xue et al., 2010; Rost et al., 2011). We retrieved for different types of perturbations, the reported depleted RRP fractions, and corresponding peak release rates, defined as the release rate at the peak of the HS-induced response (Basu et al., 2007). Plotting these data points in one graph showed the same non-linear relation between release kinetics and RRP depletion for the four different data sets (Figure 5). To compare this experimentally observed relation with our model prediction, we simulated sucrose responses for different values of k2,max, keeping all other parameters constant, and calculated peak release rates and corresponding depleted RRP fractions from the simulated traces in the same way as was done for the experimental traces (Figure 3\u2014figure supplement 2A) (Figure 5\u2014source data 1). The model prediction of the relation between release kinetics and RRP depletion was in good accordance with the experimental data (Figure 5). Hence, this non-linear dependence can be explained by changes in the release rate constant k2,max only.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig5-v2.jpg)\n\n**Figure 5.:** Data are taken from (Basu et al., 2007; Gerber et al., 2008; Xue et al., 2010; Rost et al., 2011) Model prediction is obtained from peak release rates and depleted RRP fractions extracted from model simulations where parameter k2,max is varied keeping other model parameters constant. Note that beyond 0.5M the predicted curve and some data points overshoot the value of one because 0.5M was used as a reference to calculate the depleted RRP fraction at the other concentrations, assuming complete depletion at 0.5M, whereas the model predicts only 94% depletion at this point.\n\n### Supralinear modulation of release kinetics by phorbol esters and complexins through additive effects on the activation energy\n\nNext, we tested whether these biochemical and genetic perturbations modulate release kinetics in a supralinear manner, measuring release rate constants at different sucrose concentrations between 0 and 0.5M to avoid effects of receptor saturation and desensitization. Phorbol ester is known to potentiate synaptic release in a number of systems (Searl and Silinsky, 1998; Rhee et al., 2002; Basu et al., 2007; Wierda et al., 2007; Lou et al., 2008). First, we recorded spontaneous release and responses to 0.2\u20130.5M hypertonic stimulations, before and after PDBu application (1 \u03bcM) (Figure 6\u2014figure supplements 1, 2). We observed potentiation of the spontaneous release and submaximal (0.2\u20130.4M) responses as well as faster kinetics for the 0.5M response, but no effect on RRP size or priming and unpriming rate constants (Figure 6A, Figure 6\u2014figure supplement 3). When comparing the effect of PDBu on release kinetics between different sucrose concentrations, indeed a supralinear increase in k2,max was found, with the increase in k2,max being three orders of magnitude larger at 0.5M than at 0M (Figure 6B, Figure 6\u2014source data 1). Next, we calculated the activation energies from the changes in k2,max, using Equation (5), which were reduced with a similar \u0394Ea for all sucrose concentrations (Figure 6C, Figure 6\u2014source data 1). This multiplicative effect on release kinetics, but additive effect in the activation energy domain, became more evident when absolute changes in these variables were plotted, with an exponential increase in k2,max and a \u223c\u22120.3 R\u00afT shift in the fusion-activation energy for 0.2\u20130.5M sucrose (Figure 6D\u2013E). The almost twofold higher decrease at 0M was probably an overestimation because of the increased sensitivity to spontaneous Ca2+ fluctuations after PDBu, which will increase the contribution of k2,SCFs to k2,max, again dominating k2,max at 0M but being negligible at higher concentrations.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig6-v2.jpg)\n\n**Figure 6.:** (A) Current traces, (B) release rate constants k2,max, and (C) activation energies for fusion at different sucrose concentrations in the absence and presence of PDBu. PDBu-induced changes in k2,max and \u0394Ea, obtained by subtraction of the data curves in B and C before and after PDBu application, show (D) an exponential increase in k2,max for increasing sucrose concentrations whereas (E) the changes in the energy domain are in the same order of magnitude (reduction at 0M is probably an overestimation due to Ca2+ depenence of the spontaneous release, [see text]). Mean values of k2,max displayed are all within the 95% confidence interval as determined by Bootstrap analysis.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Responses to 0.5M. (B) Responses to 0.3M.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Responses to 0.5M. (B) Responses to 0.3M.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Priming rate k1D. (B) Unpriming rate constant k\u22121. (C) RRP size. (D) Relation between k2,max and depleted RRP is maintained in the presence of PDBu, but synaptic responses to submaximal HS-stimulation display faster kinetics and more RRP depletion.\n\nNext, we reanalysed the raw responses to 0, 0.25, and 0.5M sucrose in complexinI/II deficient neurons and their controls from a study by Xue et al. (2010). Whereas responses to 0.5M did not differ in released RRP size, and priming and unpriming were not affected (Figure 7A, Figure 7\u2014figure supplement 1), a markedly reduced fraction of the RRP was released by 0.25M stimuli in the null mutants, suggesting an increased activation energy for fusion in the absence of complexins. Indeed, release kinetics were slowed down as predicted by the relation between k2,max and depleted RRP fraction (Figure 7A, Figure 7\u2014figure supplement 1D). This effect of complexin deletion on release kinetics was supralinear with an eightfold larger reduction of k2,max at 0.5M than at 0.25M, whereas the corresponding activation energies shifted with 0.4 and 0.8 R\u00afT at these concentrations (Figure 7B\u2013E). The overall supralinearity is in line with an activating role of complexin in exocytosis by a reduction of the activation energy for fusion (Figure 7B\u2013C, Figure 7\u2014source data 1). However, the reduction of the activation energy was less at 0M, and also seemed less at 0.5M than at 0.25M (Figure 7E), possibly indicating that complexins exert several effects, for instance clamping a secondary Ca2+ sensor for spontaneous and asynchronous release, rendering the synapse more sensitive to spontaneous Ca2+ fluctuations (Yang et al., 2010; Ermolyuk et al., 2013). Another possibility is that complexin also affects the frequency factor, for example, because the absence of complexin changes the cooperativity of exocytosis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig7-v2.jpg)\n\n**Figure 7.:** (A) Current traces, (B) release rate constants k2,max, and (C) fusion energy barrier heights at different sucrose concentrations for control and CpxKO cells. Cpx deletion-induced changes in k2,max and \u0394Ea, obtained by subtraction of the data curves for control and CpxKO in B and C, show (D) an exponential increase in k2,max for increasing sucrose concentrations whereas (E) the changes in the energy domain are in the same order of magnitude. Mean values of k2,max displayed are all within the 95% confidence interval as determined by Bootstrap analysis. Cpx data were published before in (Xue et al., 2010) and reanalysed here.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Priming rate k1D. (B) Unpriming rate constant k\u22121. (C) RRP size. (D) Relation between k2,max and depleted RRP is maintained in Cpx KO synapses, but synaptic responses to submaximal HS-stimulation display slower kinetics and less RRP depletion.\n\n## Discussion\n\nWe developed a vesicle state model that can accurately reproduce synaptic responses to varying hypertonicity of both published data and new experiments reported here. This model can be exploited to obtain accurate estimates of the RRP, priming-, unpriming-, and fusion rate constants. It shows that independent osmotic, biochemical, and genetic perturbations produce supra-linear modulatory effects on the fusion rate.\n\n### Kinetic analysis provides essential release parameters from a Ca2+-independent stimulus\n\nExploiting the kinetic model presented here to assess essential release parameters like RRP-size and fusion kinetics from HS-induced responses has advantages over existing methods. Firstly, this model uses the steady state solution (Equation (9)) to calculate the RRP size. This circumvents the necessity to correct post-hoc for RRP replenishment during the stimulus as in other RRP estimation methods (Schneggenburger et al., 1999; Moulder and Mennerick, 2005) (Figure 3\u2014figure supplement 2A,B). Secondly, the relation between release kinetics and RRP depletion can be used to predict changes in k2,max from changes in the depleted RRP fraction. This makes it possible to discriminate between changes in the activation energy (indicated by changes in the depleted RRP fraction tested with submaximal HS stimuli (Xue et al., 2010; Arancillo et al., 2013)) and priming effects (indicated by changes in the response to maximal depleting HS stimuli). An important consequence is that in situations where the activation energy is increased (e.g., by genetic deletion of a gene that reduces the energy barrier for fusion), 0.5M sucrose might not be enough to fully deplete the RRP. This could be erroneously interpreted as a priming defect. Thirdly, our model also quantifies priming- and unpriming-rate constants (k1 and k\u22121), which for instance allows reconstruction of the time course of replenishment during HS stimulation at resting Ca2+ levels. Finally, all model parameters mentioned above are quantified using a Ca2+-independent stimulus, which to a large extent excludes differences in Ca2+ signalling or Ca2+ sensitivity as confounding factors.\n\n### The Arrhenius equation infers the activation energy for synaptic vesicle fusion\n\nSince activation energies cannot be directly measured in synapses, we used the Arrhenius equation to infer these from HS-induced release rate constants. Four arguments suggest that the effect of hypertonic solution (HS) on synaptic release is primarily due to a reduction in activation energy, and not by an increase in the number of collisions as a result of shrinkage (accounted for by the Arrhenius pre-exponential factor A). First, exocytosis is expected to take place via a sequence of high-energy intermediates, together determining the activation energy for fusion (see \u2018Discussion\u2019 below). Therefore, modulation of the fusion activation energy is a plausible efficient route to regulate vesicle fusion. Second, HS specifically releases primed vesicles (Rosenmund and Stevens, 1996), which are bound to the plasma membrane with the fusion machinery preassembled. Thus, fusion is unlikely to be diffusion limited. Third, rapid cell shrinking can have opposite effects on the number of collisions, which are expected to affect priming/unpriming and fusion rates similarly. It can either increase the collision frequency due to an increase in the concentrations of reactants or (given the already high protein concentrations in synapses (Wilhelm et al., 2014)) decrease collision frequency because of molecular crowding and viscocity effects (Miermont et al., 2013). Since upstream docking/priming steps displayed a trend towards a decrease upon higher HS application, molecular crowding seems to offset any effect on reactant concentration, and therefore, the drastic increase in fusion rate cannot be attributed to A via an increased collision rate. Finally, the reduction in activation energy identified here (6.1 $R\u00afT$ for 0.25M) (Figure 3D) is comparable to the reduction expected by HS stimulation (0.2M) of liposome fusion on theoretical grounds (\u223c7 $R\u00afT$ (Malinin and Lentz, 2004)). Nevertheless, manipulations that change the pre-exponential factor will also contribute to changes in the fusion rate of vesicles in the presence of HS.\n\n### Activation energy modulation is a powerful way to regulate synaptic transmission\n\nMany factors influence synaptic release probability, such as RRP size, modulation of Ca2+-and K+-channel properties, Ca2+-buffering/diffusion, and the sensitivity of Ca2+ sensors (Neher and Sakaba, 2008; Fioravante and Regehr, 2011). Changes in the activation energy are suggested to affect release probability by rendering vesicles more/less fusogenic (Basu et al., 2007; Wierda et al., 2007; Gerber et al., 2008; Xue et al., 2010). This is a powerful way to regulate synaptic transmission because of its exponential effect on the fusion rate, whereas RRP size modulation affects synaptic transmission in a proportional fashion (Sakaba and Neher, 2001; Rhee et al., 2002; Lipstein et al., 2013; Walter et al., 2013). A well-studied example is the facilitatory effect of diacylglycerol (DAG) analogues such as phorbol esters on AP induced release. DAG activates two interdependent pathways: direct activation of Munc13 via its C1 domain and PKC dependent phosphorylation of Munc18. Together, these events reduce the energy barrier for fusion, potentiate vesicular release probability after high frequency stimulation, and produce faster synaptic depression (Rhee et al., 2002; Basu et al., 2007; Wierda et al., 2007; Garcia-Perez and Wesseling, 2008; de Jong and Verhage, 2009; Genc et al., 2014). Other presynaptic proteins may also contribute to activation energy reductions (Gerber et al., 2008; Weber et al., 2010; Xue et al., 2010; Rost et al., 2011). This suggests that there are either multiple ways by which proteins can modulate the activation energy for fusion or that they all converge onto the same process (e.g., SNARE formation/stabilization) controlling the activation energy. Interestingly, a model of additive modulation of the activation energy implies that molecules can exert their effect independently and do not necessarily need to interact physically to produce complex supra-linear effects on synaptic transmission.\n\n### Additive effects on the activation energy might explain Ca2+ cooperativity of synaptic vesicle release\n\nCa2+ controls vesicle fusion in a cooperative fashion (Dodge and Rahamimoff, 1967). This has been extensively studied in the Calyx of Held showing that a 3 orders of magnitude increase in Ca2+ give rise to a 6 orders of magnitude increase in the vesicle fusion rate (Schneggenburger and Neher, 2000; Lou et al., 2005; Neher and Sakaba, 2008). This supra-linear relationship can be well described by a phenomenological model for \u2018allosteric\u2019 modulation of the presynaptic Ca2+ sensor (Lou et al., 2005), which captures the low cooperativity (<1) for triggering vesicle fusion at basal Ca2+ and high Ca2+ cooperativity (\u223c4) at Ca2+ concentrations beyond 5 \u03bcM (Figure 8A). However, we note that the exact same model follows from Equation (4) when assuming that the Ca2+ sensor reduces the activation energy with an amount \u0394ECa for each Ca2+-ion binding. In this model (as in the previous model (Lou et al., 2005)), a vesicle can be in one of six different states depending on how much Ca2+ ions are bound to the Ca2+ sensor associated with the vesicle. From each state, release will occur with a specific fusion rate constant(6)k2,n=l+fn,with l+ = k2,0 the basal fusion rate constant, f=e\u0394ECaR\u00afT a multiplication factor, and n the number of Ca2+ ions bound to the Ca2+ sensor (Figure 8B). In line with our findings here, the fusion promoting effect of PDBu, described in Lou et al. by the increase of the spontaneous release rate constant l+ (Lou et al., 2005), corresponds to a \u0394EPDBu reduction of the activation energy resulting in a new rate constant l+,new=l+e\u0394EPDBuR\u00afT.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05531/elife-05531-fig8-v2.jpg)\n\n**Figure 8.:** (A) Non-linear relation between Ca2+ and release rate in the Calyx of Held as predicted by the allosteric model of Lou et al. (2005). Allosteric model with 6 different vesicle states $(V,\u2002V_{Ca},\u2002\u00b7\u2002\u00b7\u2002\u00b7,\u2002V_{5Ca})$ is depicted in inset. (B). Reinterpretation of this allosteric model in terms of additive effects on the activation energy of the binding of Ca2+ to the Ca2+ sensor: each Ca2+ ion that binds reduces the activation energy Ea, 0 by an amount \u0394ECa. From Equation (4) it follows that for each vesicle state the release rate constant krelease is given by Equation (6), with $l_{+}=Ae^{\u2212\\frac{E_{a,0}}{R\u00afT}}$ the spontaneous release rate constant and $f=e^{\\frac{\u0394E_{Ca}}{R\u00afT}}$ a multiplication factor. This is mathematically equivalent to the release rate constants depicted for the different vesicle states in the allosteric model in A and thus yields the same prediction of the non-linear relation between Ca2+ and release rate.\n\nAll together, this suggests that the Ca2+ sensor modulates fusion supralinearly through additive effects on the fusion activation energy. As a consequence, other factors (such as PDBu) do not necessarily need to interact directly with the sensor to modulate the Ca2+ sensitivity of release, but can exert their effect on the activation energy independently.\n\n### Multiple (independent) molecular events may underlie changes in the activation energy for fusion\n\nMembrane fusion is a complex process assumed to proceed via a stalk intermediate, with many steps contributing to the activation energy for fusion (Jahn and Grubmuller, 2002; Kozlovsky and Kozlov, 2002). A state immediately preceding stalk formation may consist of \u2018splayed\u2019 lipids, which have left their native leaflet and form a high-energy intermediate (Risselada and Grubmuller, 2012). Formation and zippering of the SNARE-complex allows the membranes to approach closely (Lindau et al., 2012) and might also induce or support lipid splaying directly along the linker regions of syntaxin and synaptobrevin/VAMP (Risselada et al., 2011). Molecular changes in these proteins, changes in their number or stoichiometry, and/or association/dissociation of additional factors such as complexins, Munc13, or Munc18 may all lower the activation energy (Gerber et al., 2008; Li et al., 2011; Ma et al., 2011).\n\nWhether or not SNARE-complexes are already (partly) assembled at the time when APs open Ca2+ channels is a matter of intense debate (Jahn and Fasshauer, 2012). The energy released during the formation of a SNARE-complex has been estimated to range between 20 and 35 $R\u00afT$ (Mohrmann and Sorensen, 2012), which is 2\u20133 times higher than what we find for 1M sucrose. However, in case, SNARE-complexes are partly preassembled, only part of the estimated energy would become available for fusion when HS would promote full assembly (see review (Sorensen, 2009)). Furthermore, the similar values of HS-induced reduction in activation energy, identified here and in a theoretical study of protein-free liposome fusion (Malinin and Lentz, 2004), indicate that the effect of hypertonicity might be on the lipids themselves, by helping to fill energetically expensive \u2018voids\u2019 that form during fusion (Malinin and Lentz, 2004). If this is the case, several other molecules might act in similar ways, including Ca2+-bound synaptotagmin and SNAREs, and several accessory proteins that also interact directly with lipids (Seiler et al., 2009; Shin et al., 2010). The actions of a small number of accessory proteins like complexin, Munc13, CAPS, and Munc18, and the proposed stoichiometry of SNARE-complexes per vesicle (Sinha et al., 2011; van den Bogaart et al., 2010; Mohrmann et al., 2010) provide all the necessary input for molecular-dynamic models (Lindau et al., 2012) to resolve the exact nature of the synaptic vesicle fusion process. Kinetic analysis of HS induced synaptic responses will be highly instrumental to test predictions from such models.\n\n## Materials and methods\n\n### Electrophysiological recordings\n\nAutaptic hippocampal neurons from wild-type mice were grown for 13\u201318 days on glia island cultures before measuring. Whole-cell voltage-clamp recordings (Vm = \u221270 mV) were performed at room temperature (20\u201324\u00b0C) with borosilicate glass pipettes (2.5\u20134.5 MOhm) filled with 125 mM K+-gluconic acid, 10 mM NaCl, 4.6 mM MgCl2, 4 mM K2-ATP, 15 mM creatine phosphate, 10U/ml phosphocreatine kinase, and 1 mM EGTA (pH 7.30). External solution contained the following (in mM):10 HEPES, 10 glucose, 140 NaCl, 2.4 KCl, 4 MgCl2, and 4 CaCl2 (pH = 7.30, 300 mOsmol). Recordings were acquired with an Axopatch 200A amplifier (Molecular Devices, Sunnyvale CA), Digidata 1322A, and Clampex 9.0 software (Molecular Devices). After whole cell mode was established, only cells with a leak current of <250 pA were accepted for analysis. Ca2+-independent vesicle release was evoked by hypertonic solutions consisting of external solution containing 0.25, 0.5, 0.75, or 1M sucrose. Gravity infused external solution was alternated with 7 s of perfusion with hypertonic solution by rapidly switching between barrels within a custom-made tubing system (FSS standard polyamine coated fused silica capillary tubing, ID 430 \u00b5m, OD550 \u00b5m, Postnova analytics, Landsberg am Lech, Germany) attached to a perfusion Fast-Step delivery system (SF-77B, Warner instruments corporation, Hamden CT) and directed at the neuron. Solution flow was controlled with an Exadrop precision flow rate regulator (B Braun, Melsungen, Germany) to assure all sucrose solutions flowed with a rate of 0.5 ml/min irrespective of differences in viscosity. Using this system, solution exchange was complete within 0.4 s as measured by the change in holding current after switching from normal (0.3M) to 10 times diluted (0.03M) extracellular solution containing 0.5 or 1M sucrose in an open-tip experiment (Figure 2\u2014figure supplement 2). Therefore, solution exchange can be considered instantaneous compared to the induced postsynaptic currents, which respond with a delay of 1.1 (1M)\u20131.6 s (0.25M) (Figure 3\u2014figure supplement 1C). Multiple sucrose solutions with various concentrations were applied to the same cell, taking a 1\u20132 min rest period in between solutions to accommodate complete recovery of RRP size. In between protocols, a constant flow of external solution was applied to the cells. For PDBu experiments, sucrose applications were performed as usual, after which neurons were incubated with 1 \u00b5M PDBu (Merck Millipore, Darmstadt, Germany), and sucrose applications were repeated. The order of sucrose solutions was alternated between neurons to avoid systematic errors due to possible rundown of RRP size after multiple applications. Other sources for systematic errors were investigated and, when experimentally assessable, found to be small for 0.5M and lower: sucrose responses were compared in the absence and presence of 0.2 mM kynurenic acid (Sigma, St. Louis MO), and no effect of receptor saturation on release kinetics was found for sucrose concentrations of 0.5M (Figure 3\u2014figure supplement 3). Receptor desensitization did not affect RRP size measurements with 0.5M sucrose in a previous study (Pyott and Rosenmund, 2002). However, we could not investigate its effect on release kinetics, since cyclothiazide (CTZ), next to blocking AMPA receptor desensitization, also stimulates the presynaptic release machinery (Diamond and Jahr, 1995; Bellingham and Walmsley, 1999; Ishikawa and Takahashi, 2001). We did not detect any contribution of HS-induced non-receptor currents, since subtracting the small current remaining after blocking NMDA and AMPA currents by 50 \u03bcM AP5 (Ascent) and 10 \u03bcM DNQX (Tocris, Bristol, UK) had a negligible effect on the fitted model rates (Figure 3\u2014figure supplement 4). Offline analysis of electrophysiology was performed using Clampfit v9.0 (Molecular Devices), Mini Analysis Program v6.0 (Synaptosoft, Decatur GA), Axograph X (Axograph Scientific, Berkeley CA), and custom-written software routines (Source code 1) in Matlab 7.10.0 or R2010a (Mathworks, Natick MA).\n\n### Vesicle state model\n\nWe used a minimal vesicle state model with a similar scheme as proposed by Weis et al. (1999) for Ca2+-dependent vesicle pool dynamics in the Calyx of Held, consisting of a depot pool of non-primed vesicles D, RRP with primed vesicles R and a fused pool F. Our model differs from the Weis-model on three aspects: (1) we model fusion as an continuous process during hypertonic stimulation, whereas in the Weis-model this is modelled as a discrete event during action potential stimulation, (2) in our model the rate constant for priming k1 is constant, and not Ca2+ dependent as in the Weis-model, since we use Ca2+-independent stimuli to evoke release, and (3) opposed to Weis-model our model has a finite D pool. This allowed us, in contrast to other pool models, to model synaptic responses to hypertonic sucrose, the relation between RRP depletion and release kinetics, and RRP replenishment during HS-stimulation.\n\nVesicle dynamics for the vesicles in the depot pool D and the readily releasable pool $R$ are described by two-coupled differential equations\n\n$$\n\\frac{dD}{dt}=\u2212k_{1}D+k_{\u22121}R,\n$$\n\n\n\n$$\n\\frac{dR}{dt}=k_{1}D\u2212(k_{\u22121}+k_{2})R,\n$$\n\nwith k\u22121 and k2 the rate constants for unpriming and fusion, respectively (Figure 1B). To compensate for leak of vesicles from the system due to spontaneous release, we would need an extra term in Equation (7) to refill D. However, since we assume the spontaneous release rate before sucrose stimulation to be negligibly small compared to the other rates, we can neglect the refill term in Equation (7). Equation (7) was included to account for depletion of the depot pool during long or repetitive HS stimulation. However, for the durations of the HS stimulations used in this paper, depletion of D was small and responses could be fitted with the priming rate k1D being treated as a constant (see fitting procedures). For convenience, the pool sizes are expressed in nC instead of vesicles. In this version of the model, we did not include release sites since this would introduce an extra fit parameter, whereas such an extended model is mathematically equivalent (if immediate availability and recycling of release sites is assumed; see below). The RRP size at steady state is the result of a dynamic equilibrium between priming, unpriming, and fusion (Weis et al., 1999), and can be obtained from Equation (8) under the assumption of dR/dt = 0,\n\n$$\nR_{\u221e}=\\frac{k_{1}D}{k_{\u22121}+k_{2}}.\n$$\n\nAs mentioned above, for the purpose of determining the RRP size before stimulation, we assumed that k2 was zero.\n\nFor simulation of synaptic responses to hypertonic stimulation, we assume that this form of stimulation selectively reduces the activation energy for fusion, and thus increases the release rate constant k2 according to Equation (4), without affecting upstream processes of fusion. Although solution exchange is very rapid (<0.5 s), the onset of a HS-evoked synaptic response starts with a delay with respect to the rise in hypertonicity, most likely due to compensatory mechanisms that initially successfully counteract this osmotic perturbation (see Figure 2\u2014figure supplement 2). In addition, after the delay there is a smooth, rather than an abrupt transition to the evoked inward current. To capture these features, the time course of k2 in response to sucrose is modelled as an expo-exponential\n\n$$\nk_{2}(t)=k_{2,max}e^{\u2212e^{\u2212(t\u2212t_{0}\u2212t_{del})/\\tau}}\u2003(t\\geqt_{0}),\n$$\n\nwith t0 the time point of sucrose application, tdel a constant which determines the delay of the onset of k2 with respect to t0, \u03c4 a time constant that sets the steepness of the rising phase, and k2,max the maximal value of k2(t) (Figure 2B). Each model parameter constrains the simulated HS-response in a specific way as shown in Figure 2\u2014figure supplement 3A (absolute traces) and Figure 2\u2014figure supplement 3B (traces scaled and aligned to peak). An increase in the priming rate constant k1 or the depot pool D both increases the total RRP and steady-state priming phase at the end of the response without affecting release kinetics. Decreasing the unpriming rate constant k\u22121 increases the RRP, but without an effect on the steady-state priming phase. Increase of tdel further delays the response but does not change its shape. Increase of the maximal fusion rate constant k2,max produces features that are typically observed experimentally when evoking post-synaptic responses with increasing levels of hypertonicity (Figure 2A), such as increase in peak amplitude, shorter the time to peak, and speed-up of the decay phase after the peak. Finally, decrease of \u03c4 speeds up the rise phase, increases the peak amplitude, but only mildly affects the decay phase after the peak. These characteristic effects allow the accurate estimation of the individual model parameters by fitting the vesicle state model to experimental HS-induced traces (see fitting procedures below).\n\n### Analytical solution for hypertonic sucrose-induced release from a RRP without replenishment\n\nBy ignoring vesicle replenishment during HS-stimulation and the delayed onset of the HS-induced response, our vesicle state model can be simplified such that an analytical solution can be obtained that qualitatively captures the main features of HS-induced release. Release from a readily releasable pool R without replenishment is given by\n\n$$\n\\frac{dR}{dt}=\u2212k_{2}(t)R,\n$$\n\nwith k2(t) a release rate parameter that changes over time during the application of hypertonic sucrose with a time-course as described in Equation (10). When neglecting the delayed onset of sucrose action, the time dependence of k2(t) can be approximated with a single exponential\n\n$$\nk_{2}(t)=k_{2,max}(1\u2212e^{\u2212\\frac{t}{\\tau}})\u2003(t\\geq0),\n$$\n\nwith k2,max the maximal release rate, \u03c4 a time constant for the exponential time course of k2(t), and t = 0 the start of sucrose application. Solving Equation (11) analytically yields the following solution:\n\n$$\nR(t)=R_{0}e^{\u2212k_{2,max}(\\taue^{\u2212\\frac{t}{\\tau}}+t)+k_{2,max}\\tau},\n$$\n\nwith R0 = R(0), the initial RRP size at the start of the stimulation. From this follows an exact expression for the fusion rate k2(t)R:\n\n$$\n\\frac{dF}{dt}=k_{2}(t)R=k_{2,max}(1\u2212e^{\u2212\\frac{t}{\\tau}})R_{0}e^{\u2212k_{2,max}(\\taue^{\u2212\\frac{t}{\\tau}}+t)+k_{2,max}\\tau}.\n$$\n\nAfter convolving fusion rates for different values of k2,max with an average mEPSC, postsynaptic current responses were obtained corresponding to different concentrations of hypertonic sucrose (Figure 2\u2014figure supplement 1). These current responses display the typical characteristics as experimental responses, with increased peak release rates and shorter time-to-peak are observed for higher concentrations, but obviously do not reproduce the increased standing currents towards the end of depleting stimuli (0.5M or higher; Figure 3A1), because of the lack of replenishment in this model.\n\n### Mathematical equivalent model with limited number of release sites\n\nIn our model described by Equations (7) and (8), the number of release sites is not restricted. When we assume a fixed number of (instantaneously available) release sites S, Equation (8) transforms into\n\n$$\n\\frac{dR}{dt}=k_{1}D(S\u2212R)\u2212(k_{\u22121}+k_{2})R.\n$$\n\nHere, the extra factor (S \u2212 R) captures the idea that priming is hampered when fewer release sites are available for new vesicles to tether to. In this case, the steady-state RRP becomes\n\n$$\nR_{\u221e}=\\frac{k_{1}DS}{k_{1}D+k_{\u22121}+k_{2}}.\n$$\n\nIf, as an approximation, we assume k1D to be constant for the duration of the stimulation, Equations (8) and (15) and their respective steady-state RRP expressions Equations (9) and (16) are mathematically equivalent under the transformation $k_{1}D\u2194(k_{1}DS)_{sites}$ and $k_{\u22121}+k_{2}\u2194(k_{1}D+k_{\u22121}+k_{2})_{sites}$. However, priming- and unpriming rate constants have different values in both systems and affect R in a different manner.\n\n### Vesicle replenishment\n\nDuring hypertonic sucrose stimulation, vesicles are released from the RRP that consists of vesicles that were already primed at the onset of the stimulus R0 and newly primed vesicles Rnew. With R = R0 + Rnew Equation (8) transforms into\n\n$$\n\\frac{d(R_{0}+R_{new})}{dt}=k_{1}D\u2212(k_{\u22121}+k_{2})(R_{0}+R_{new}),\n$$\n\nwhich can be separated in an expression for the depletion of R0 and the replenishment of vesicles into Rnew\n\n$$\n\\frac{dR_{0}}{dt}=\u2212(k_{\u22121}+k_{2})R_{0},\n$$\n\n\n\n$$\n\\frac{dR_{new}}{dt}=k_{1}D\u2212(k_{\u22121}+k_{2})R_{new}.\n$$\n\nThe postsynaptic current I during the stimulus is given by the sum of the currents IR0 and $I_{R_{new}}$, evoked by release from R0 and Rnew, respectively\n\n$$\nI=I_{R_{0}}+I_{R_{new}}=\u2212k_{2}(t)(R_{0}+R_{new}),\n$$\n\nwith the minus sign correcting for the fact that we record inward currents but express R in as positive charge (in nC).\n\nInterestingly, in this reduced model it follows from Equation (8) that without a limited number of release sites and assuming k2 \u2248 0 in the absence of sucrose, recovery of the RRP after depletion is given by\n\n$$\nR=(R_{end}\u2212R_{\u221e})e^{\u2212k_{\u22121}t}+R_{\u221e},\n$$\n\nwith Rend the RRP size at the end of the depleting stimulus, R\u221e the fully recovered RRP given by Equation (9), and 1/k\u22121 the time constant for recovery.\n\n### Analytical approximation for the relation between release kinetics and RRP depletion\n\nThe depleted RRP fraction is defined as the release during a hypertonic stimulus normalized to the steady state RRP size before the stimulation. If we assume that R has an initial steady state value Ri and is at a new steady state value Rf at the end of the stimulus, the depleted RRP fraction can be expressed as\n\n$$\ndepleted\u2002RRP\u2002fraction=\\frac{R_{i}\u2212R_{f}}{R_{i}}=1\u2212\\frac{R_{f}}{R_{i}}.\n$$\n\nUsing Equation (9), Ri and Rf are defined as\n\n$$\nR_{i}=\\frac{k_{1}D}{k_{\u22121}+k_{2,0}},\n$$\n\nand\n\n$$\nR_{f}=\\frac{k_{1}D_{f}}{k_{\u22121}+k_{2,max}},\n$$\n\nWhen we assume that D is a large depot pool, with little effect on the size of D from replenishment from D to R during a sucrose stimulus (Df \u2248 Di), and that the initial fusion ate before stimulation is negligibly small (k2,0 \u2248 0), Equation (22) transforms into\n\n$$\nDepleted\u2002RRP\u2002fraction=1\u2212\\frac{(k_{\u22121}+k_{2,0})}{(k_{\u22121}+k_{2,max})}\\frac{k_{1}D_{f}}{k_{1}D_{i}}\u22481\u2212\\frac{k_{\u22121}}{k_{\u22121}+k_{2,max}}=\\frac{k_{2,max}}{k_{\u22121}+k_{2,max}}.\n$$\n\nThis analytical approximation closely resembles the relation between k2,max and the depleted RRP fraction obtained with our model simulations using Equations (7), (8), and (10) (Figure 4\u2014figure supplement 1).\n\n### Fitting procedures and statistics\n\nFits were performed with an in-house developed analysis program in Matlab (Source code 1). The software reads Axon binary files (.abf), which can be loaded in batches.\n\nWhen fitting the model to data, Equations (8) and (10) are numerically simulated using Matlab's ode45 ordinary differential equation (ODE) solver. This one-step solver for non-stiff ODEs makes use of explicit Runge-Kutta methods of order 4 and 5 with a variable time step. Matlab's odeset structure to alter the ODE solver's properties, such as integration error and step size, is set to its default value. R is expressed in nC. The initial condition of the simulation is the steady-state solution of the model assuming k2 = 0. During the initial fit of a trace, k1D is taken constant and only Equation (8) is used. Subsequently, one can fit D and k1 separately to capture the decay in the refill phase, for instance during long HS-stimulations, by re-running the fitting procedure with all parameters (including RRP size and the product k1D) fixed, except for D and k1, using both Equations (7) and (8). In this paper, k1D is always obtained from the initial fit.\n\nThe data time span used for fitting is specified by the user, and is generally taken equal to the duration of the sucrose application, up to the time when the sucrose concentration starts to decay back to baseline. The solution for the R state in this time window resulting from the ODE solver is subsequently interpolated at each measured time point within the fitting time window (typical sampling frequency 10 kHz) and the outcome is fed into a cost function, which calculates the sum of squared errors between model prediction and data for each iteration. When fitting multiple sucrose responses of a single cell simultaneously (e.g., 0.5M and 0.25M), the sum of squared errors is calculated separately for each concentration and subsequently added up. This cost function is used as input for the optimisation algorithms, all of which are contained in Matlab's Optimization Toolbox. The user has the option to choose between global (genetic algorithm or simulated annealing) and local (Nelder-Mead downhill simplex) methods. All methods are executed using default options, except for the lower and upper bounds of all parameters as used by the global search methods, which are set to 10\u22125 and 106, respectively. The user can control the maximum number of iterations and function evaluations, both of which are by default set to 400 per fitted parameter. Once the global method has reached its stopping criterion at a certain point in parameter space, the local method takes over to search for the optimal set of parameters in the neighbourhood of this point. Quality of the fits was checked by visual comparison of the following features between the fitted curve and the experimental trace: (1) onset of fit, (2) peak amplitude and/or time-to-peak, (3) decay towards steady state phase, and (4) steady-state phase (refill) (Figure 3\u2014figure supplement 5B). When the deviation was too large, traces were fitted again with new initial conditions until no further improvement of the fit was observed. Although the model consists of multiple free parameters, different features of the HS-induced traces are constrained by different parameters in the model (Figure 2\u2014figure supplement 3) and vice versa. The RRP size, and thus the ratio of k1D and k\u22121, is constrained by the charge transfer during the peak. In addition, k1D is constrained by the steady state current after the peak, which then also constrains k\u22121 via the RRP size and Equation (9). Note that the RRP itself is not a fit parameter, and that the fit procedure optimizes k1D and k\u22121 to get the best fit of the experimental trace. Equation (9) is then used to calculate the RRP post-hoc. tdel is constrained by the delay of the onset of the response. Peak amplitude in combination with steepness of the rise phase constrains \u03c4, and peak amplitude in combination with the decay phase after the peak constrains k2,max. Simulations show that the fit method can indeed robustly discriminate between the effects of different model parameters on the shape of the sucrose response, that is, changes in one model parameter are reliably detected with the other model parameters being invariant (Figure 3\u2014figure supplement 5A,C; Figure 3\u2014source data 2). In addition, random examples of experimentally obtained responses to 0.3M and 0.5M sucrose in the absence and presence of the phorbol ester (PDBu) show that this method provides a close fit for almost all traces (Figure 6\u2014figure supplements 1, 2).\n\nThe activation energy as a function of sucrose concentration as shown in Figure 3D was fitted with a mono-exponential function of the form $\u0394E(M)=\u2009ae^{\u2212b\u00b7M}+c$, with M the sucrose concentration in molar, using Matlab's built-in Curve Fitting Tool. Fits of k2,max as a function of sucrose concentration in Figure 3C were obtained by transformation of the fitted function in Figure 3D, using Equation (5). As log-transforming symmetrical error bars in the release rate domain results in asymmetric error bars in the energy domain, we used the largest error of the two for plotting the SEM of fitted activation energy. Data shown in Figure are mean \u00b1 SEM. In addition, bootstrap analysis was performed to estimate statistical errors and confidence intervals for the distributions of the mean values of all fitted parameters. We applied the nonparametric bootstrap method (i.e., resampling the original data) using the \u2018bootstrap\u2019 function from MATLAB's statistics toolbox with default options. The size of the original data sets used to constitute the bootstrap sample is equal to the number of observations per parameter (n), as given in the figure tables. For each parameter, we bootstrapped 10,000 sample means, and subsequently calculated the mean value, the standard deviation (std) and the 95% confidence interval (95% CI) of the distributions of these sample means. For the combined effect of PDBu and sucrose on k2,max we also calculated 95% CI for the absolute change in k2,max (Figure 6D). Values used for model parameters and fit parameters in the figures and results from bootstrap analysis are given in the supplemental tables provided for each figure.\n",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "80bbeee3-8f1d-4dd6-bc06-549afe326cc4",
+      "submission_id": "a4201527-3c15-4235-ae0e-486641407704",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael H\u00e4usser, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05531.032](https://doi.org/10.7554/eLife.05531.032)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAdditive effects on the energy barrier for synaptic vesicle fusion cause supralinear effects on the vesicle fusion rate\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor), a Reviewing Editor, and two reviewers, one of whom, Frederic Pincet, has agreed to share his identity.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this combined experimental and modelling study, the authors develop a kinetic model in which they describe the RRP release kinetics, and then use this model to show experimentally (using sucrose-evoked release at hippocampal autapses in culture) that the fusion rate is supralinearly dependent on the energy barrier to fusion. The consensus of the reviewers is that the idea that there is an additive/multiplicative relationship between energy barrier and the fusion rate is an attractive one, and the agreement between experiment and model is intriguing. However, the reviewers expressed some serious concerns about the manuscript, which are described in detail below. To address these, the authors need to perform additional control experiments, provide more explanation about the details of the model and how the model was derived from the experimental data, and place their results better in the context of the literature.\n\n1) The model is briefly described in the second section of the Results (Minimal vesicle state model). It is basically a chemical reaction between a depot vesicle pool, a readily releasable pool (RRP) and fused vesicles. However, more clarification is required regarding the following points:\n\nA) The authors should explain better which features of the data/traces constrain which parameters in the model, alone or in combination, during the fitting procedure. This is required to better understand the reliability of the fitting procedure, how the parameter values are identified by it, and therefore how the conclusions of the manuscript are actually reached. Additional supplemental figures might be helpful in this regard.\n\nB) How different is this model from several published pool models, including an example cited in the paper (Weis, 1999)? The authors should clarify which parts of the model the authors specifically derive for the case of the RRP are actually novel.\n\nC) How are the various parameters derived from the experimental data? There is a brief description in the supplementary materials, but, for instance, it is not clear whether (and how) k1, k-1, D and R were separately obtained from the steady state before fusion and the response during fusion (e.g. provide an example using supplementary information if necessary).\n\nD) It seems that the third, fourth and fifth sections of the Results are meant to validate the model by showing that R (amount of vesicles in the RRP) predicted by the model is consistent with what is obtained experimentally. However, quantitative comparisons with experiments are lacking. The authors have to use experimental values (their own or published ones) to prove their point. This is true for R, but also for the various rates in Equations (6) and (7). Also, why do the parameters change from one table to the next?\n\nE) In the fifth section of the Results (\u201cModulation energy barrier by genetic and biochemical perturbations\u201d) and corresponding Figure 5, the authors should provide more explanation for how they obtained these curves. How do they define the peak release rate?\n\nF) The authors should provide more discussion about whether the rates and sizes of the various pools derived by their model are reasonable in light of previously estimated values for these parameters.\n\n2) The authors aim to show supralinear dependence of the fusion rate with the activation energy for fusion. The idea that additive effects on energy barrier causes supralinear effects is not new, and is expected for any thermally activated system. This has been known for many decades (see H. A. Kramers, Physica (Amsterdam) 7, 284, 1940 and P. H\u00e4nggi, P. Talkner, and M. Borkovec, Rev. Mod. Phys. 62, 251 1990), and recently revisited by Evans and others (e.g. E. Evans and P. M. Williams, in Physics of Bio-Molecules and Cells, edited by F. Julicher, P. Ormos, F. David, and H. Flyvbjerg Springer-Verlag, Berlin, Germany, 2002, p. 145). So, the primary goal here is to show that, indeed, activation energy is a key element that controls the kinetics of fusion. This raises the following concerns:\n\nA) It appears that Equation 1 is valid only in vacuum where quantum vibrations can be connected with thermal agitation. In the present case, viscosity makes the system overdamped and the prefactor is more of the order of 10^7-10^10 s^-1 (see references above). Currently it is \u223c10^13 s^-1. Should not all activation energy values be shifted by \u223c6kBT?\n\nB) There is a sort of loophole in the current reasoning presented in the manuscript. The authors start from a non-linear equation (Equation 1), use this equation to deduce activation energy from the fusion rate and claim that the fusion rate varies non-linearly with the activation energy. The only result that suggests that the supra linearity is real is that presented in Figure 6 where the presence of PDBu increases the fusion rate and this increase can be explained by a constant shift of the activation energy barrier for all hypertonic stimulations. This strongly suggests that the supra-linear model is correct in this case. However, this is not true anymore with Complexin for which the shift of the activation energy barrier is dependent on the level of hypertonic stimulation. This difference in behavior should be specifically discussed.\n\n3) In the recordings of sucrose-evoked EPSCs, it is unclear how the authors dealt with nonlinearities of the postsynaptic response, such as saturation or desensitization of postsynaptic receptors. Control experiments with kynurenic acid + cyclothiazide would help address this issue.\n\n4) Related to the above point, why do the traces of HS responses become less noisy in the high sucrose concentration limit? This could indeed be due to desensitization or saturation. Or is this simply due to a different number of traces used for averaging? Clearly, this point must be rigorously addressed.\n\n5) Systematic and statistical errors for the estimated rates should be determined. Statistical errors, for example, could be easily obtained by bootstrap analysis.\n\n6) The authors claim several times that the sucrose evoked release is Ca2+-independent, but do we really know this? The best solution would be to perform control experiments in the absence of extracellular Ca2+. At the very least, this point should be phrased and discussed more carefully, referring to the relevant literature.\n\n7) The exchange time for the sucrose application should be quantified a bit better. It is unclear how non-instantaneous and non-uniform exchange will affect the conclusions.\n\n8) An interesting implication of the present work is that the nonlinear relation between activation energy and rate may underlie the cooperativity in the Ca2+ dependence of release. This is only briefly discussed in the paper. The manuscript would benefit from an expansion of this interesting aspect.\n",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9db08572-4918-4bef-8724-72710af67154",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C1",
+      "claim": "The energy required to fuse synaptic vesicles with the plasma membrane is considered a major determinant in synaptic efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy required to fuse synaptic vesicles with the plasma membrane ('activation energy') is considered a major determinant in synaptic efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "03a91b92-c81a-4553-ad2e-1effd8cb53b7",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C2",
+      "claim": "Reaction rate theory predicts that a class of modulations exists which utilize linear modulation of the energy barrier for fusion to achieve supralinear effects on the fusion rate.",
+      "claim_type": "EXPLICIT",
+      "source": "From reaction rate theory, we predict that a class of modulations exists, which utilize linear modulation of the energy barrier for fusion to achieve supralinear effects on the fusion rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is derived from theoretical considerations based on reaction rate theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "6c8d1d5d-343a-4652-86f6-5ca52bd3d567",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C3",
+      "claim": "ComplexinI/II deficiency affects responses to hypertonic solution in a supralinear manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that complexinI/II deficiency or phorbol ester stimulation indeed affects responses to hypertonic solution in a supralinear manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding in the abstract and supported by experimental data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "7e8a678d-f308-465d-af78-f36d4dae9412",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C4",
+      "claim": "Phorbol ester stimulation affects responses to hypertonic solution in a supralinear manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that complexinI/II deficiency or phorbol ester stimulation indeed affects responses to hypertonic solution in a supralinear manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main finding in the abstract and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "58f61b86-aabc-4d43-91f6-e4a62c3b1966",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C5",
+      "claim": "An additive vs multiplicative relationship between activation energy and fusion rate provides a novel explanation for previously observed non-linear effects of genetic/pharmacological perturbations on synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "An additive vs multiplicative relationship between activation energy and fusion rate provides a novel explanation for previously observed non-linear effects of genetic/pharmacological perturbations on synaptic transmission and a novel interpretation of the cooperative nature of Ca2+-dependent release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a key conclusion in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "039ed70d-ad23-46f5-8c47-a21d13bf7fb5",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C6",
+      "claim": "Local membrane deformation, dehydration of lipid head groups, neutralization of opposite membrane charges, lipid splaying, and the creation of a lipid stalk all contribute to the energy barrier that needs to be overcome before neurotransmitters are released.",
+      "claim_type": "EXPLICIT",
+      "source": "Local membrane deformation, dehydration of lipid head groups, neutralization of opposite membrane charges, lipid splaying, and the creation of a lipid stalk all contribute to the energy barrier that needs to be overcome before neurotransmitters are released (Kuzmin et al., 2001; Kozlovsky and Kozlov, 2002; Markin and Albanesi, 2002; Sorensen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "833c8e8e-be50-4ca9-b48c-908832aacadd",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C7",
+      "claim": "Reaction rates change exponentially with changes in the activation energy according to the Arrhenius equation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reaction rate theory suggests that specifically modulation of the fusion energy barrier is a powerful way to regulate synaptic efficacy. According to the Arrhenius equation, reaction rates change exponentially with changes in the activation energy, which is the minimum energy required for a reaction (e.g., vesicle fusion) (Arrhenius, 1889a, 1889b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the Arrhenius equation, a fundamental principle in chemical kinetics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "f9b29ce5-97a6-4c92-9a99-070d22ea1c97",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C8",
+      "claim": "Much of the energy required for SV fusion is likely provided by the SNARE proteins, synaptobrevin/VAMP, syntaxin, and SNAP25, whose assembly into a trimeric SNARE-complex drives the fusion reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of the energy required for SV fusion is likely provided by the SNARE proteins, synaptobrevin/VAMP, syntaxin, and SNAP25, whose assembly into a trimeric SNARE-complex drives the fusion reaction (Sorensen, 2009; Jahn and Fasshauer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on SNARE proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "05dda313-01f5-4c82-a2cb-8cc4e5eddee8",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C9",
+      "claim": "During action potential stimulation, SV fusion rates increase by several orders of magnitude within a few milliseconds due to the rapid activation of Ca2+ sensors of the synaptotagmin-family.",
+      "claim_type": "EXPLICIT",
+      "source": "During action potential (AP) stimulation, for example, SV fusion rates increase by several orders of magnitude within a few milliseconds due to the rapid activation of Ca2+ sensors of the synaptotagmin-family, which control SNARE-mediated fusion (Rhee et al., 2005; Xu et al., 2007; Walter et al., 2010; Weber et al., 2010; Kochubey and Schneggenburger, 2011; Arancillo et al., 2013; Sudhof, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "e7e9629f-d8f5-4574-a969-2847c5595ecd",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C10",
+      "claim": "Hypertonic solutions cause SV release from the same readily releasable SV pool (RRP) as APs do, but by a Ca2+-independent stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, hypertonic solutions have been used widely as they cause SV release from the same readily releasable SV pool (RRP) as APs do, but by a Ca2+-independent stimulus (Fatt and Katz, 1952; Stevens and Tsujimoto, 1995; Rosenmund and Stevens, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "bc192d97-ba13-49cf-a2c1-fe3b9fa1b8e2",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C11",
+      "claim": "Changes in the kinetics of synaptic responses to hypertonicity-induced SV fusion have been interpreted as changes in the intrinsic 'release willingness' or 'fusogenicity' of SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, changes in the kinetics of synaptic responses to hypertonicity-induced SV fusion have been interpreted as changes in the intrinsic 'release willingness' or 'fusogenicity' of SVs, which may represent an inverse measure for the activation energy for SV fusion (Basu et al., 2007; Wierda et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "98ca8e00-eea1-456a-80e1-c39fe49ebdb0",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C12",
+      "claim": "The vesicle fusion-rate constant is given by k2=Ae\u2212EaR\u00afT, where T is the absolute temperature, R\u00af is the gas constant, and Ea is the activation energy for synaptic vesicle fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, for transition from the primed to the fused state, the vesicle fusion-rate constant is given by(1)k2=Ae\u2212EaR\u00afT,with T the absolute temperature, R\u00af the gas constant, and Ea the activation energy for synaptic vesicle fusion (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical formulation based on the Arrhenius equation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "a38db56c-cfe8-4dae-9f50-ee8bf16f0d87",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C13",
+      "claim": "Additive effects on the activation energy for SV fusion result in multiplicative effects on the fusion rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation (4) implies that additive effects on the activation energy for SV fusion result in multiplicative effects on the fusion rate (Figure 1E,F), which renders it a powerful way to modulate synaptic strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived mathematically from the Arrhenius equation and illustrated in Figure 1E,F.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "16d071b6-2b89-47c1-9b9a-ffca1c73f0c1",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C14",
+      "claim": "Exposing neurons to hypertonic solution induces vesicle fusion selectively from the readily releasable pool (primed state).",
+      "claim_type": "EXPLICIT",
+      "source": "Exposing neurons to hypertonic solution induces vesicle fusion selectively from the readily releasable pool (primed state) (Rosenmund and Stevens, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "46c12a82-22e3-4a89-9c60-1428fb77e1ee",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C15",
+      "claim": "Hypertonic sucrose (HS)-induced excitatory postsynaptic currents (EPSCs) are not changed when intracellular Ca2+ is buffered by BAPTA.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs by a mechanism that is not mediated by Ca2+, as hypertonic sucrose (HS)-induced excitatory postsynaptic currents (EPSCs) are not changed when intracellular Ca2+ is buffered by BAPTA, or when Ca2+ influx through voltage gated Ca2+ channels is blocked by CdCl2 (Rosenmund and Stevens, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "2a1d70b4-1f49-4a26-ad59-434f48ca2f32",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C16",
+      "claim": "HS-induced EPSCs display concentration-dependent changes in release kinetics, with higher degrees of hypertonicity leading to faster release.",
+      "claim_type": "EXPLICIT",
+      "source": "HS-induced EPSCs display concentration-dependent changes in release kinetics, with higher degrees of hypertonicity leading to faster release, causing a decrease in time-to-peak and an increase in peak release rate (Basu et al., 2007) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "2e500873-7498-472d-aeb4-9c3f3d5a23fe",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C17",
+      "claim": "Selective modulation of the fusion rate constant by HS stimulation in a simple vesicle state model is sufficient to describe characteristic features of synaptic responses to different levels of hypertonicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, selective modulation of the fusion rate constant by HS stimulation in a simple vesicle state model is sufficient to describe characteristic features of synaptic responses to different levels of hypertonicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from model simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "ed229e6c-1f0b-4643-a5a6-dcdaa8cafdae",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C18",
+      "claim": "The model accurately fitted synaptic responses induced by RRP depleting concentrations of 0.5M and higher, providing estimates for all model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The model accurately fitted synaptic responses induced by RRP depleting concentrations of 0.5M and higher, providing estimates for all model parameters (Rosenmund and Stevens, 1996; Basu et al., 2007) (Figure 3A\u2013C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the fits shown in Figure 3 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "c1187599-474d-48a5-9307-a9a0673c197d",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C19",
+      "claim": "For 0.5M sucrose, the priming rate k1D was 0.132 \u00b1 0.031 nC/s, which corresponded to 0.10 pool-units/s given an average pool size of 1.31 nC.",
+      "claim_type": "EXPLICIT",
+      "source": "For 0.5M, we found a priming rate k1D of 0.132 \u00b1 0.031 nC/s, which corresponded to 0.10 pool-units/s given an average pool size of 1.31 nC (see below) and was of the same order of magnitude as the 0.20 \u00b1 0.03 pool-units/s at 25\u00b0C reported by Pyott et al. (2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from fitting the model to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "e5611568-9fe8-405f-9c32-0087f323d61c",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C20",
+      "claim": "The unpriming rate constant k\u22121 at 0.5M was 0.11 \u00b1 0.01 s\u22121, corresponding to a RRP recovery time constant of 1/k\u22121 = 9.1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The unpriming rate constant k\u22121 at 0.5M was 0.11 \u00b1 0.01 s\u22121, corresponding to a RRP recovery time constant of 1/k\u22121 = 9.1 s (see Equation (21), 'Materials and methods'), which was of the same order of magnitude as recovery time constants reported in previous studies (10 s at 36\u00b0C (Stevens and Tsujimoto, 1995), 2.9 s at 32\u00b0C (Toonen et al., 2006), and 13 s (slow phase) at 25\u00b0C (Pyott and Rosenmund, 2002)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from fitting the model to experimental data, compared with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "46b97a88-6bfb-4719-8f93-ba23a6b3f097",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C21",
+      "claim": "For stimulation with 0.5M sucrose, the RRP was 1.31 \u00b1 0.23 nC, corresponding to 11.9 \u00b1 2.4\u00b710\u00b3 vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "For stimulation with 0.5M, this yielded a RRP of 1.31 \u00b1 0.23 nC, corresponding to 11.9 \u00b1 2.4\u00b7103 (n = 12) vesicles, which was in the same range as reported for wild-type autaptic neurons by other studies (15.9 \u00b1 2.9\u00b7103 (Altrock et al., 2003), 2.5 \u00b1 1.1\u00b7103 (Augustin et al., 1999), 5.36 \u00b1 0.87\u00b7103 (Priller et al., 2006), 24.7 \u00b1 5.6\u00b7103 (Priller et al., 2007), 17.2 \u00b1 3.0\u00b7103 (Priller et al., 2009), 6.35 \u00b1 0.9\u00b7103 (Reim et al., 2001), 11.0 \u00b1 1.2\u00b7103 (Rhee et al., 2002)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the model, compared with multiple previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "8a600ec9-f75c-485e-86f7-967374ffba7a",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C22",
+      "claim": "Kinetics of responses to 0.5M sucrose were identical in the absence or presence of competitive AMPA receptor antagonist kynurenic acid (KYN).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that kinetics of responses to 0.5M were identical in the absence or presence of competitive AMPA receptor antagonist kynurenic acid (KYN), but found faster kinetics of 0.75M responses in the presence of KYN, suggesting that quantifications of model parameters obtained for concentrations higher than 0.5M should be interpreted with caution (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "0704ed77-81df-4db0-bb00-5309efb7aedc",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C23",
+      "claim": "The maximal reduction in the activation energy for fusion by 1M sucrose is 9.3R\u00afT.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the maximal reduction in the activation energy for fusion by 1M sucrose is 9.3R\u00afT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the fitted k2,max values using the Arrhenius equation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "5905faf3-c02f-4066-82bf-94fb945181d8",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C24",
+      "claim": "The HS-induced change in activation energy corresponds to 5.4 kCal/mol, which is comparable to the estimated reduction of 5.9 kCal/mol during the action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressed in units of kCal/mol, the HS-induced change in activation energy corresponds to 5.4 kCal/mol, which is comparable to the estimated reduction of 5.9 kCal/mol during the action potential (Rhee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of calculated values with a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "5c53daac-2999-4d0d-9162-90135c5431da",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C25",
+      "claim": "A change in k2,max only is sufficient to explain changes in the depleted RRP fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that a change in k2,max only is sufficient to explain changes in the depleted RRP fraction: with slow release kinetics (low k2,max), the RRP is not effectively depleted, because of on-going refilling (priming), whereas from a certain value of k2,max the amount of RRP depletion is maximal, but depletion occurs with faster kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the relationship between k2,max and RRP depletion shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "87dbcac5-b08b-4398-b562-ccf5b8321dbd",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C26",
+      "claim": "The non-linear dependence between release kinetics and RRP depletion can be explained by changes in the release rate constant k2,max only.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this non-linear dependence can be explained by changes in the release rate constant k2,max only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing model predictions with experimental data from multiple studies shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "19fe1420-3a04-4c8c-9d9e-40b0c41df3fd",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C27",
+      "claim": "PDBu application caused potentiation of spontaneous release and submaximal (0.2\u20130.4M) responses as well as faster kinetics for the 0.5M response.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed potentiation of the spontaneous release and submaximal (0.2\u20130.4M) responses as well as faster kinetics for the 0.5M response, but no effect on RRP size or priming and unpriming rate constants (Figure 6A, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "985db6d4-95a9-4b1d-a05e-9f4a0a6a396e",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C28",
+      "claim": "PDBu caused a supralinear increase in k2,max, with the increase being three orders of magnitude larger at 0.5M than at 0M.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the effect of PDBu on release kinetics between different sucrose concentrations, indeed a supralinear increase in k2,max was found, with the increase in k2,max being three orders of magnitude larger at 0.5M than at 0M (Figure 6B, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "e2a4dd08-27df-4e31-ad1d-94935e8a4521",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C29",
+      "claim": "PDBu reduced the activation energy with a similar \u0394Ea for all sucrose concentrations (0.2-0.5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we calculated the activation energies from the changes in k2,max, using Equation (5), which were reduced with a similar \u0394Ea for all sucrose concentrations (Figure 6C, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the k2,max values and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "93cbd8f2-c52c-43cc-9740-690c86ec48f7",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C30",
+      "claim": "PDBu caused an \u223c\u22120.3 R\u00afT shift in the fusion-activation energy for 0.2\u20130.5M sucrose.",
+      "claim_type": "EXPLICIT",
+      "source": "This multiplicative effect on release kinetics, but additive effect in the activation energy domain, became more evident when absolute changes in these variables were plotted, with an exponential increase in k2,max and a \u223c\u22120.3 R\u00afT shift in the fusion-activation energy for 0.2\u20130.5M sucrose (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "6abded8a-f83c-4ce5-a2ca-74945e84f47b",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C31",
+      "claim": "In complexinI/II deficient neurons, responses to 0.5M sucrose did not differ in released RRP size, and priming and unpriming were not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas responses to 0.5M did not differ in released RRP size, and priming and unpriming were not affected (Figure 7A, Figure 7\u2014figure supplement 1), a markedly reduced fraction of the RRP was released by 0.25M stimuli in the null mutants, suggesting an increased activation energy for fusion in the absence of complexins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from reanalysis of data from Xue et al. (2010), shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "06351c6b-ea9e-489b-8314-e141537b5c6a",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C32",
+      "claim": "In complexinI/II deficient neurons, a markedly reduced fraction of the RRP was released by 0.25M stimuli, suggesting an increased activation energy for fusion in the absence of complexins.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas responses to 0.5M did not differ in released RRP size, and priming and unpriming were not affected (Figure 7A, Figure 7\u2014figure supplement 1), a markedly reduced fraction of the RRP was released by 0.25M stimuli in the null mutants, suggesting an increased activation energy for fusion in the absence of complexins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from reanalysis of data from Xue et al. (2010), shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "97f47c5b-4d7a-47a7-a65d-1411fe1cd20b",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C33",
+      "claim": "Complexin deletion caused an eightfold larger reduction of k2,max at 0.5M than at 0.25M.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of complexin deletion on release kinetics was supralinear with an eightfold larger reduction of k2,max at 0.5M than at 0.25M, whereas the corresponding activation energies shifted with 0.4 and 0.8 R\u00afT at these concentrations (Figure 7B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "cff00032-da28-42a2-a4c9-cc3a5b2b087f",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C34",
+      "claim": "The energy released during the formation of a SNARE-complex has been estimated to range between 20 and 35 R\u00afT.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy released during the formation of a SNARE-complex has been estimated to range between 20 and 35 R\u00afT (Mohrmann and Sorensen, 2012), which is 2\u20133 times higher than what we find for 1M sucrose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "31d84b6c-ca7e-4fbf-8acb-dad9d24da0f1",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C35",
+      "claim": "The similar values of HS-induced reduction in activation energy identified here and in a theoretical study of protein-free liposome fusion indicate that the effect of hypertonicity might be on the lipids themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the similar values of HS-induced reduction in activation energy, identified here and in a theoretical study of protein-free liposome fusion (Malinin and Lentz, 2004), indicate that the effect of hypertonicity might be on the lipids themselves, by helping to fill energetically expensive 'voids' that form during fusion (Malinin and Lentz, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with a theoretical study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "1f07273e-1706-477b-97b9-b6f7ec18aa7a",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C36",
+      "claim": "Autaptic hippocampal neurons from wild-type mice were grown for 13\u201318 days on glia island cultures before measuring.",
+      "claim_type": "EXPLICIT",
+      "source": "Autaptic hippocampal neurons from wild-type mice were grown for 13\u201318 days on glia island cultures before measuring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "6b8d255c-6a9a-4123-ac89-626e14ebfed6",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C37",
+      "claim": "Whole-cell voltage-clamp recordings were performed at room temperature (20\u201324\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell voltage-clamp recordings (Vm = \u221270 mV) were performed at room temperature (20\u201324\u00b0C) with borosilicate glass pipettes (2.5\u20134.5 MOhm) filled with 125 mM K+-gluconic acid, 10 mM NaCl, 4.6 mM MgCl2, 4 mM K2-ATP, 15 mM creatine phosphate, 10U/ml phosphocreatine kinase, and 1 mM EGTA (pH 7.30).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "c6d165b5-334e-449d-8cbc-42f956900b39",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C38",
+      "claim": "Solution exchange was complete within 0.4 s as measured by the change in holding current after switching from normal to diluted extracellular solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, solution exchange was complete within 0.4 s as measured by the change in holding current after switching from normal (0.3M) to 10 times diluted (0.03M) extracellular solution containing 0.5 or 1M sucrose in an open-tip experiment (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental measurement shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "27232bd8-211b-4cbd-ad36-90f5934ab61d",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "claim_id": "C40",
+      "claim": "The RRP size at steady state is the result of a dynamic equilibrium between priming, unpriming, and fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The RRP size at steady state is the result of a dynamic equilibrium between priming, unpriming, and fusion (Weis et al., 1999), and can be obtained from Equation (8) under the assumption of dR/dt = 0,",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the model, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cdde653e-b355-4bee-b74e-9b35037cd808",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors present a theoretical framework based on the Arrhenius equation predicting that linear (additive) modulation of the activation energy barrier for synaptic vesicle fusion results in supralinear (multiplicative) effects on the fusion rate. This relationship is mathematically derived from reaction rate theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7, C12, and C13 collectively establish a coherent theoretical framework grounded in the Arrhenius equation. The mathematical derivation (C12, C13) logically follows from established chemical kinetics principles (C7), and the prediction (C2) is a direct consequence of this framework. The theoretical foundation is sound and well-supported by citations to fundamental principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "bdf36d82-917b-4d65-95ae-5e0373b027d7",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A minimal vesicle state model with selective modulation of the fusion rate constant k2 by hypertonic sucrose accurately fits experimental synaptic responses at concentrations \u22650.5M, providing quantitative estimates of RRP size (1.31 \u00b1 0.23 nC), priming rate (0.132 \u00b1 0.031 nC/s), and unpriming rate constant (0.11 \u00b1 0.01 s\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 demonstrate that the model successfully fits experimental data and yields parameter estimates consistent with previous literature. The quantitative values (C19-C21) are compared with multiple prior studies and fall within expected ranges. Figure 3 provides visual confirmation of model fits, and the methodology appears rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "199521b6-ae11-4819-ad4c-89419aa67246",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hypertonic sucrose (1M) reduces the activation energy for fusion by 9.3 R\u0304T (5.4 kCal/mol), which is comparable to the estimated reduction during action potential stimulation (5.9 kCal/mol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C23 and C24 report calculated activation energy changes, the authors acknowledge that the value at 0M is likely overestimated by ~3 R\u0304T due to Ca\u00b2\u207a-dependent spontaneous release (C23 evidence). Additionally, values at higher concentrations (0.75M, 1M) may be underestimated due to receptor saturation (C22). These uncertainties affect the reliability of the maximal reduction estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "d2f31c4e-a13c-45a1-a3c3-b18879e02258",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Changes in the maximal fusion rate constant k2,max alone are sufficient to explain the non-linear relationship between release kinetics and RRP depletion observed across different hypertonic sucrose concentrations and genetic/pharmacological perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 are supported by model simulations (Figure 4) and comparison with experimental data from multiple studies (Figure 5). The model prediction matches the observed non-linear relationship between k2,max and depleted RRP fraction, demonstrating that modulation of the fusion rate constant is sufficient to explain these effects without invoking changes in other parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "ef14ca26-2bcb-4e3c-b5a9-d5c13d13871f",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Phorbol ester (PDBu) stimulation produces supralinear effects on the fusion rate constant k2,max (three orders of magnitude larger increase at 0.5M than at 0M) while causing additive effects on activation energy (uniform ~-0.3 R\u0304T shift across 0.2-0.5M sucrose concentrations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C30 are well-supported by experimental data in Figure 6. The supralinear effect on k2,max (C28) and the additive effect on activation energy (C29, C30) are clearly demonstrated. Bootstrap analysis confirms that mean k2,max values fall within 95% confidence intervals. The authors appropriately note that the larger effect at 0M may be overestimated due to Ca\u00b2\u207a-dependent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "45b2931d-3706-492c-b54d-b836f3d97c6c",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ComplexinI/II deficiency produces supralinear effects on fusion kinetics (eightfold larger reduction of k2,max at 0.5M than at 0.25M) without affecting RRP size, priming, or unpriming rates, suggesting complexins reduce the activation energy for fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C33 are supported by reanalysis of published data (Xue et al., 2010) shown in Figure 7. The supralinear effect on k2,max (C33) and the lack of effect on RRP size and priming/unpriming (C31) are clearly demonstrated. However, the authors note some complexity in the activation energy changes across concentrations (C33), suggesting complexins may have multiple effects beyond simple activation energy reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "cfe16c50-cb50-497c-97dc-e0e7b9db9434",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The additive versus multiplicative relationship between activation energy and fusion rate provides a novel explanation for previously observed non-linear effects of genetic/pharmacological perturbations on synaptic transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by the integration of theoretical predictions (C2, C13) with experimental demonstrations for both PDBu (C28-C30) and complexin deficiency (C33), as well as the successful explanation of literature data (C26, Figure 5). The framework successfully unifies observations across multiple perturbations, providing a coherent mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "dcfea3f6-ae13-43ba-b0c6-85ce2eca7d9a",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hypertonic solutions induce Ca\u00b2\u207a-independent vesicle fusion selectively from the readily releasable pool, with concentration-dependent changes in release kinetics (higher hypertonicity produces faster release with decreased time-to-peak and increased peak release rate).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C14, C15, and C16 are well-supported by citations to established literature (Rosenmund and Stevens, 1996; Basu et al., 2007) and confirmed by experimental observations in Figure 2A. The Ca\u00b2\u207a-independence (C15) and concentration-dependence (C16) are fundamental properties that have been previously validated and are reproduced in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "0282d7e9-1318-4e5a-b87f-ac496898c665",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Kinetics of responses to 0.5M sucrose are unaffected by the competitive AMPA receptor antagonist kynurenic acid, but 0.75M responses show faster kinetics in the presence of KYN, suggesting receptor saturation/desensitization at higher concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by experimental data in Figure 3\u2014figure supplement 3. This control experiment is important for validating the use of 0.5M as the maximal depleting concentration and for cautioning against interpretation of parameters at higher concentrations. The finding appropriately limits the concentration range for reliable parameter estimation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "f33b1bfc-8f2f-43f2-8361-9e5377e703d2",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The similarity between the HS-induced reduction in activation energy measured here and theoretical estimates for protein-free liposome fusion suggests that hypertonicity may act directly on lipids rather than proteins, possibly by filling energetically expensive 'voids' during fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34 and C35 present an interesting hypothesis based on comparison with theoretical work (Malinin and Lentz, 2004). However, this remains speculative as the authors acknowledge uncertainty about whether SNARE complexes are pre-assembled and note that the measured value may be underestimated. The mechanism by which hypertonicity reduces activation energy is not directly tested and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "bd3f7643-4397-451e-9165-32638b438b43",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The experimental system uses autaptic hippocampal neurons cultured for 13-18 days with whole-cell voltage-clamp recordings at room temperature and a fast perfusion system achieving solution exchange within 0.4 seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 describe methodological details that are clearly stated and supported by experimental measurements (Figure 2\u2014figure supplement 2 for C38). These technical specifications are important for reproducibility and interpretation of results. The solution exchange time is appropriately fast relative to the measured response kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "613edd9e-fd6e-48ca-9358-605f2e53e14c",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple molecular processes contribute to the energy barrier for vesicle fusion, including membrane deformation, lipid modifications, and SNARE protein assembly, with Ca\u00b2\u207a sensors of the synaptotagmin family rapidly increasing fusion rates by several orders of magnitude during action potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, and C9 summarize established knowledge from the literature, supported by appropriate citations. These claims provide necessary background context for the study but do not represent novel findings. The citations are to authoritative reviews and primary research establishing these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    },
+    {
+      "id": "af8d8385-e4a8-4e7d-8424-3da9f92c7cb1",
+      "content_id": "b6544e4f-f03c-4657-a333-6876043fa21d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Changes in kinetics of hypertonic sucrose-induced responses have been interpreted as changes in 'release willingness' or 'fusogenicity' of vesicles, and RRP size at steady state results from dynamic equilibrium between priming, unpriming, and fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C40 describe established concepts from prior literature (Basu et al., 2007; Wierda et al., 2007; Weis et al., 1999) that form the conceptual foundation for the current study. These are well-accepted interpretations in the field and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T03:36:33.843672Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9db08572-4918-4bef-8724-72710af67154",
+      "result_id": "cdde653e-b355-4bee-b74e-9b35037cd808"
+    },
+    {
+      "claim_id": "03a91b92-c81a-4553-ad2e-1effd8cb53b7",
+      "result_id": "cdde653e-b355-4bee-b74e-9b35037cd808"
+    },
+    {
+      "claim_id": "833c8e8e-be50-4ca9-b48c-908832aacadd",
+      "result_id": "cdde653e-b355-4bee-b74e-9b35037cd808"
+    },
+    {
+      "claim_id": "98ca8e00-eea1-456a-80e1-c39fe49ebdb0",
+      "result_id": "cdde653e-b355-4bee-b74e-9b35037cd808"
+    },
+    {
+      "claim_id": "a38db56c-cfe8-4dae-9f50-ee8bf16f0d87",
+      "result_id": "cdde653e-b355-4bee-b74e-9b35037cd808"
+    },
+    {
+      "claim_id": "2e500873-7498-472d-aeb4-9c3f3d5a23fe",
+      "result_id": "bdf36d82-917b-4d65-95ae-5e0373b027d7"
+    },
+    {
+      "claim_id": "ed229e6c-1f0b-4643-a5a6-dcdaa8cafdae",
+      "result_id": "bdf36d82-917b-4d65-95ae-5e0373b027d7"
+    },
+    {
+      "claim_id": "c1187599-474d-48a5-9307-a9a0673c197d",
+      "result_id": "bdf36d82-917b-4d65-95ae-5e0373b027d7"
+    },
+    {
+      "claim_id": "e5611568-9fe8-405f-9c32-0087f323d61c",
+      "result_id": "bdf36d82-917b-4d65-95ae-5e0373b027d7"
+    },
+    {
+      "claim_id": "46b97a88-6bfb-4719-8f93-ba23a6b3f097",
+      "result_id": "bdf36d82-917b-4d65-95ae-5e0373b027d7"
+    },
+    {
+      "claim_id": "0704ed77-81df-4db0-bb00-5309efb7aedc",
+      "result_id": "199521b6-ae11-4819-ad4c-89419aa67246"
+    },
+    {
+      "claim_id": "5905faf3-c02f-4066-82bf-94fb945181d8",
+      "result_id": "199521b6-ae11-4819-ad4c-89419aa67246"
+    },
+    {
+      "claim_id": "5c53daac-2999-4d0d-9162-90135c5431da",
+      "result_id": "d2f31c4e-a13c-45a1-a3c3-b18879e02258"
+    },
+    {
+      "claim_id": "87dbcac5-b08b-4398-b562-ccf5b8321dbd",
+      "result_id": "d2f31c4e-a13c-45a1-a3c3-b18879e02258"
+    },
+    {
+      "claim_id": "6c8d1d5d-343a-4652-86f6-5ca52bd3d567",
+      "result_id": "ef14ca26-2bcb-4e3c-b5a9-d5c13d13871f"
+    },
+    {
+      "claim_id": "19fe1420-3a04-4c8c-9d9e-40b0c41df3fd",
+      "result_id": "ef14ca26-2bcb-4e3c-b5a9-d5c13d13871f"
+    },
+    {
+      "claim_id": "985db6d4-95a9-4b1d-a05e-9f4a0a6a396e",
+      "result_id": "ef14ca26-2bcb-4e3c-b5a9-d5c13d13871f"
+    },
+    {
+      "claim_id": "e2a4dd08-27df-4e31-ad1d-94935e8a4521",
+      "result_id": "ef14ca26-2bcb-4e3c-b5a9-d5c13d13871f"
+    },
+    {
+      "claim_id": "93cbd8f2-c52c-43cc-9740-690c86ec48f7",
+      "result_id": "ef14ca26-2bcb-4e3c-b5a9-d5c13d13871f"
+    },
+    {
+      "claim_id": "7e8a678d-f308-465d-af78-f36d4dae9412",
+      "result_id": "45b2931d-3706-492c-b54d-b836f3d97c6c"
+    },
+    {
+      "claim_id": "6abded8a-f83c-4ce5-a2ca-74945e84f47b",
+      "result_id": "45b2931d-3706-492c-b54d-b836f3d97c6c"
+    },
+    {
+      "claim_id": "06351c6b-ea9e-489b-8314-e141537b5c6a",
+      "result_id": "45b2931d-3706-492c-b54d-b836f3d97c6c"
+    },
+    {
+      "claim_id": "97f47c5b-4d7a-47a7-a65d-1411fe1cd20b",
+      "result_id": "45b2931d-3706-492c-b54d-b836f3d97c6c"
+    },
+    {
+      "claim_id": "58f61b86-aabc-4d43-91f6-e4a62c3b1966",
+      "result_id": "cfe16c50-cb50-497c-97dc-e0e7b9db9434"
+    },
+    {
+      "claim_id": "e7e9629f-d8f5-4574-a969-2847c5595ecd",
+      "result_id": "dcfea3f6-ae13-43ba-b0c6-85ce2eca7d9a"
+    },
+    {
+      "claim_id": "16d071b6-2b89-47c1-9b9a-ffca1c73f0c1",
+      "result_id": "dcfea3f6-ae13-43ba-b0c6-85ce2eca7d9a"
+    },
+    {
+      "claim_id": "46c12a82-22e3-4a89-9c60-1428fb77e1ee",
+      "result_id": "dcfea3f6-ae13-43ba-b0c6-85ce2eca7d9a"
+    },
+    {
+      "claim_id": "2a1d70b4-1f49-4a26-ad59-434f48ca2f32",
+      "result_id": "dcfea3f6-ae13-43ba-b0c6-85ce2eca7d9a"
+    },
+    {
+      "claim_id": "8a600ec9-f75c-485e-86f7-967374ffba7a",
+      "result_id": "0282d7e9-1318-4e5a-b87f-ac496898c665"
+    },
+    {
+      "claim_id": "cff00032-da28-42a2-a4c9-cc3a5b2b087f",
+      "result_id": "f33b1bfc-8f2f-43f2-8361-9e5377e703d2"
+    },
+    {
+      "claim_id": "31d84b6c-ca7e-4fbf-8acb-dad9d24da0f1",
+      "result_id": "f33b1bfc-8f2f-43f2-8361-9e5377e703d2"
+    },
+    {
+      "claim_id": "1f07273e-1706-477b-97b9-b6f7ec18aa7a",
+      "result_id": "bd3f7643-4397-451e-9165-32638b438b43"
+    },
+    {
+      "claim_id": "6b8d255c-6a9a-4123-ac89-626e14ebfed6",
+      "result_id": "bd3f7643-4397-451e-9165-32638b438b43"
+    },
+    {
+      "claim_id": "c6d165b5-334e-449d-8cbc-42f956900b39",
+      "result_id": "bd3f7643-4397-451e-9165-32638b438b43"
+    },
+    {
+      "claim_id": "039ed70d-ad23-46f5-8c47-a21d13bf7fb5",
+      "result_id": "613edd9e-fd6e-48ca-9358-605f2e53e14c"
+    },
+    {
+      "claim_id": "f9b29ce5-97a6-4c92-9a99-070d22ea1c97",
+      "result_id": "613edd9e-fd6e-48ca-9358-605f2e53e14c"
+    },
+    {
+      "claim_id": "05dda313-01f5-4c82-a2cb-8cc4e5eddee8",
+      "result_id": "613edd9e-fd6e-48ca-9358-605f2e53e14c"
+    },
+    {
+      "claim_id": "bc192d97-ba13-49cf-a2c1-fe3b9fa1b8e2",
+      "result_id": "af8d8385-e4a8-4e7d-8424-3da9f92c7cb1"
+    },
+    {
+      "claim_id": "27232bd8-211b-4cbd-ad36-90f5934ab61d",
+      "result_id": "af8d8385-e4a8-4e7d-8424-3da9f92c7cb1"
+    }
+  ],
+  "comparisons": []
+}

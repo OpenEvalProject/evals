@@ -1,0 +1,1660 @@
+{
+  "submission": {
+    "id": "5703e9a3-34bb-41b6-b2fd-40f0e95c6ad8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T05:05:19.192186Z",
+    "updated_at": "2025-11-29T05:05:19.192186Z"
+  },
+  "content": [
+    {
+      "id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "submission_id": "5703e9a3-34bb-41b6-b2fd-40f0e95c6ad8",
+      "content_type": "manuscript",
+      "content_text": "# Codon-level information improves predictions of inter-residue contacts in proteins by correlated mutation analysis\n\n## Authors\n\n- Etai Jacob<sup>1</sup>\n- Ron Unger<sup>1</sup> \u2020\n- Amnon Horovitz<sup>2</sup> \u2020\n\n### Affiliations\n\n1. The Mina and Everard Goodman Faculty of Life Sciences Bar-Ilan University Ramat-Gan Israel\n2. Department of Structural Biology Weizmann Institute of Science Rehovot Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nMethods for analysing correlated mutations in proteins are becoming an increasingly powerful tool for predicting contacts within and between proteins. Nevertheless, limitations remain due to the requirement for large multiple sequence alignments (MSA) and the fact that, in general, only the relatively small number of top-ranking predictions are reliable. To date, methods for analysing correlated mutations have relied exclusively on amino acid MSAs as inputs. Here, we describe a new approach for analysing correlated mutations that is based on combined analysis of amino acid and codon MSAs. We show that a direct contact is more likely to be present when the correlation between the positions is strong at the amino acid level but weak at the codon level. The performance of different methods for analysing correlated mutations in predicting contacts is shown to be enhanced significantly when amino acid and codon data are combined.\n\n## Introduction\n\nThe effects of mutations that disrupt protein structure and/or function at one site are often suppressed by mutations that occur at other sites either in the same protein or in other proteins. Such compensatory mutations can occur at positions that are distant from each other in space, thus, reflecting long-range interactions in proteins (Horovitz et al., 1994; Lee et al., 2008). It has often been assumed, however, that most compensatory mutations occur at positions that are close in space, thus motivating the development of computational methods for identifying co-evolving positions as distance constraints in protein structure prediction (G\u00f6bel et al., 1994). These methods, which rely on multiple sequence alignments (MSA) of homologous proteins as inputs, will become increasingly more useful in the coming years owing to the explosive growth in sequence data. The output of methods for correlated mutation analysis (CMA) is a rank order of the pairs of columns in the alignment according to the statistical and/or physical signficance attached to the correlation observed for each pair. The various methods for CMA that have been developed in the past 15 years differ in the measures they employ for attaching significance to the correlations (Livesay et al., 2012; de Juan et al., 2013; Mao et al., 2015). Early measures include, for example, mutual information (MI) from information theory (Gloor et al., 2005) and observed-minus-expected-squared (OMES) in the chi-square test (Kass and Horovitz, 2002).\n\nStatistically significant correlations in MSAs that do not reflect interactions between residues in contact, that is, false positives, can stem from (i) various indirect physical interactions and (ii) common ancestry. The extent of false positives due to the latter source is manifested in the large number of correlations between positions in non-interacting proteins that can be observed when the sequences of non-interacting proteins from the same organism are concatanated and subjected to CMA (Noivirt et al., 2005). Several methods for removing false positives owing to common ancestry were developed (Pollock et al., 1999; Wollenberg and Atchley, 2000; Noivirt et al., 2005; Dunn et al., 2008) but their success in contact prediction using CMA remained limited. False positives due to the former source, that is, indirect physical interactions, can occur when, for example, correlations corrersponding to positions i and j that are in contact and positions j and k that are in contact lead to a correlation for positions i and k that are not in contact. Methods that remove such transitive correlations have been developed in recent years and include, for example, Direct Coupling Analysis (DCA or DI for Direct Information) (Weigt et al., 2009; Morcos et al., 2011), Protein Sparse Inverse COVariance (PSICOV) (Jones et al., 2012) and Gremlin's pseudolikelihood method (Kamisetty et al., 2013). These methods have been found to be very successful in identifying contacting residues (Marks et al., 2012) and they outperform earlier methods (Mao et al., 2015). Nevertheless, their accuracy, which is \u223c80% for the correlations in the top 0.1% (ranked by their scores), drops to \u223c50% for the top 1% (Mao et al., 2015). Given that the number of contacts in a protein with N residues is \u223cN (Faure et al., 2008), it follows that for proteins with, for example, 100 residues (i.e. with 4560 potential contacts between residues separated by at least 5 residues in the sequence) only about 25% of the contacts (i.e. 23 of the top 1% 46 predictions) will be identified by these CMA methods. In addition, these methods require large MSAs comprising thousands of sequences in order to perform well and such sequence data are not always available. Consequently, it is clear that much can be gained from further improvements in methods of CMA. Here, we describe the development and application of a new method for CMA that uses both amino acid and codon MSAs as inputs instead of relying exclusively on amino acid MSAs as done before. We show that contact prediction is improved in a meaningful manner when amino acid and codon information are combined.\n\n## Results and discussion\n\nThe key premise underlying the method introduced here is that a correlation at the amino acid level between two positions is more likely to reflect a direct interaction if the correlation at the codon level for these positions is weak (Figure 1). In other words, it is assumed that cases of strong correlations at both the amino acid and codon levels for a pair of positions are less likely to reflect selection to conserve protein contacts and more likely to reflect selection to conserve interactions involving DNA or RNA and/or common ancestry. Given this rationale in mind, we decided to test whether contact identification improves when all the pairs of positions are ranked using a score that increases with (i) increasing strength of the correlation at the amino acid level and (ii) decreasing strength of the correlation at the codon level. Such a score, Si, is given, for example, by: Si = Si\u03b1(AA)/Si(C), where Si(AA) and Si(C) are the scores generated by method i (e.g., MI) for the amino acid and codon alignments, respectively, and the value of the power \u03b1 is determined empirically depending on the method (see below).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig1-v3.jpg)\n\n**Figure 1.:** A correlation at the amino acid level between two positions i and j may (top left) or may not (top right) be accompanied by a correlation at the codon level. The premise of the method introduced here is that a correlation at the amino acid level between two positions is more likely to reflect a direct interaction if the correlation at the codon level for these positions is weak (top right).\n\nThe approach outlined above was tested for the OMES (Kass and Horovitz, 2002), MI (Gloor et al., 2005), MIp (Dunn et al., 2008) and DCA (Morcos et al., 2011) methods using 114 MSAs each comprising at least 2000 sequences of length between 200 and 500 residues. In the case of the PSICOV method (Jones et al., 2012), only 86 MSAs out of the 114 MSAs were used since the others didn't pass this method's threshold for amino acid sequence diversity. Each MSA also included at least one sequence with a known crystal structure at a resolution <3 \u00c5 in which at least 80% of all the residues are resolved. The mean accuracy of contact identification was plotted as a function of the top ranked number of predicted pairwise contacts (Figure 2\u2014figure supplement 1) or as a function of the top ranked fraction of protein length, L, number of predicted pairwise contacts (Figure 2). Residues were considered as being in contact if the distance between their C\u03b2 atoms is \u22648 \u00c5 following the definition used in CASP experiments (Ezkurdia et al., 2009) and other studies (Kamisetty et al., 2013; Skwark et al., 2014) (see also Figure 2\u2014figure supplement 2). The results show that the PSICOV and DCA methods outperform the OMES, MI and MIp methods (Figure 2) as established before (Mao et al., 2015). They also show that combining amino acid and codon data leads to an improvement in the predictions by OMES, MI, DCA and PSICOV. In the case of MIp, however, no improvement is observed despite the fact that this method performs worse than DCA and PSICOV. In MIp, a term called average product correction (APC) is subtracted from the MI score for each pair of positions in order to reduce false positives. Removing this correction from PSICOV where it also exists and including the codon data yielded the best method (Figure 2). Hence, we can conclude that there is an overlap between the background noise reduced upon including the APC term and codon data and that including the latter can be more advantageous as we observe for PSICOV.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig2-v3.jpg)\n\n**Figure 2.:** The mean accuracies of contact identification by the OMES, MI, MIp, DCA and PSICOV methods are shown either with or without incorporating codon data. Residues were defined as being in contact if the distance between their C\u03b2 atoms is \u22648 \u00c5. PSICOV* indicates that it was carried out without the APC.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The mean accuracies of contact identification by PSICOV, DCA MIp, MI and OMES are shown either with or without incorporating codon data. Residues were defined as being in contact if the distance between their C\u03b2 atoms is \u22648 \u00c5.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Residue pairs defined to be in contact if at least one inter-atomic distance between them is \u22648 \u00c5 (designated \u2018All\u2019) or if the distance between their C\u03b2 atoms is \u22648 \u00c5 were identified in 2481 proteins with high-resolution structures. The fraction of these residue pairs that are in direct contact, that is, with a distance <3.5 \u00c5 between two of their respective heavy atoms, was then determined for each protein. Only pairs of residues that are separated by at least five amino acids along the protein sequence were considered.\n\nThe extent of improvement increases with increasing values of the power \u03b1 until a maximum is reached (Figure 3A) at a value of \u03b1 that depends on the method used and different values of \u03b1max were, therefore, chosen accordingly. Cross-validation by dividing the MSA data into training and test sets showed that the values of \u03b1max are stable, that is, they do not vary depending on the set of MSAs (Figure 3\u2014figure supplement 1). Given these values of \u03b1 max, the significance of the extent of improvement was assessed by comparing for each MSA the accuracy of the contact predictions using the different methods with and without incorporating codon data. Significance levels were determined using two non-parametric tests: (i) the Wilcoxon signed-rank test, which takes into account both the number of MSAs for which the accuracy of the contact predictions increases upon incorporating codon data (e.g., 81 in the case of DCA) and the magnitude of the improvement; and (ii) the sign test, which only considers the number of MSAs with improved accuracy. The extent of improvement achieved by incorporating codon data was found to be highly significant as indicated by the p-values obtained using both tests (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig3-v3.jpg)\n\n**Figure 3.:** (A) The median of the extent of improvement in contact prediction for 114 MSAs (86 in the case of PSICOV) is plotted as a function of the value of the power \u03b1 which determines the relative weights of the amino acid and codon correlations in the score, Si (Si = Si\u03b1(AA)/Si(C), where Si(AA) and Si(C) are the respective amino acid and codon scores generated by method i). The extent of improvement was determined by calculating the difference in the areas under the curves (AUC) of prediction accuracy vs number of predictions for each method i with and without incorporation of the codon data normalized by the area under the curve generated without codon data. The analysis was done for domains of length between 200 and 500 residues and at least 2000 coding sequences in their MSA. The value of \u03b1 which maximizes the median improvement was used for predictions. Maximal respective improvements of 3.9% and 4.2% were found for DCA and MI when \u03b1 is 2.5, 17.6% for OMES when \u03b1 is 1.7 and 1.13% for PSICOV when \u03b1 is 11.2. (B) Stacked bar plots showing the number of MSAs for which including codon data improved the contact predictions using the different methods (orange) and the number of those for which it was otherwise (green). The statistical significance of the improvement achieved by incorporating codon data is indicated by the top and bottom p-values obtained using the Wilcoxon signed-rank and sign tests, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The MSA data set was divided into 10,000 different learning and test sets of equal size. The value of \u03b1 which produces the maximal median percent of AUC improvement in accuracy of contact prediction was obtained for each learning set and then used to assess the median percent of AUC improvement for the corresponding test set. The distributions of the median percent of improvement obtained for the test sets are shown for OMES, MI, DCA and PSICOV. The mean values of these test sets distributions obtained using the different methods are similar to those of their learning sets, thus, showing that the improvement is not due to over-fitting. In the case of OMES, MI and DCA, the mean difference between the values of \u03b1 which maximizes the median of the percent of AUC improvement for the learning and test sets equals zero, thus, reflecting the stability of the values of \u03b1. In the case of PSICOV, the variance of that difference is high due to the asymptotic nature of the median percent of AUC improvement as a function of \u03b1.\n\nThe improvement in the predictions upon combining amino acid and codon data, when residues are defined as being in contact if the distance between their C\u03b2 atoms is \u22648 \u00c5, led us to examine whether direct contacts are identified better using this contact definition compared with an \u2018All\u2019 definition used by others (Morcos et al., 2011) according to which a contact exists if at least one inter-atomic distance between the residues is \u22648 \u00c5. A non-redundant set of 2481 proteins with an available crystal structure at a resolution better than 1.6 \u00c5 was compiled and all the residue pairs in each structure that are in contact according to these two definitions were identified. We then determined for each protein what is the fraction of the residue pairs in contact according to these two definitions that are actually in direct physical contact, that is, with a distance <3.5 \u00c5 between two of their respective heavy atoms. It should be noted that atoms can interact with each other even if the distance between them is larger than 3.5 \u00c5 via, for example, weak electrostatic interactions but pairs of atoms which are closer than 3.5 \u00c5 can always be considered as interacting. It may be seen that, on average, pairs in direct contact constitute only about 10% of the pairs in contact according to the \u2018All\u2019 definition and 30% of the pairs in contact according to the C\u03b2-based definition (Figure 2\u2014figure supplement 2). The better success of DCA in identifying contacts according to the C\u03b2-based definition when amino acid and codon data are combined is, therefore, an important result since more pairs that are in true physical contact are identified in this way.\n\nOur finding that the C\u03b2-based definition of contacts is better than the \u2018All\u2019 definition but still poor (only 30% of the pairs defined as being in contact are in physical contact) prompted us to test the performance of our method for additional contact definitions. The mean of the extent of improvement in contact prediction for 114 domains (or 86 in the case of PSICOV) was, therefore, determined as a function of the distance that must exist between at least two C\u03b2 atoms in different residues in order for them to be defined as being in contact. It may be seen that, in the cases of PSICOV, OMES and DCA, the maximum improvements in contact prediction upon combining amino acid and codon data are when these distances are about 5.5, 7 and 5.5 \u00c5, respectively, and that, in the cases of DCA and OMES, the improvement decreases dramatically when this distance is >\u223c10 \u00c5 (Figure 4). In the case of MI, the extent of improvement upon combining amino acid and codon data is found to be relatively insensitive to the distance used to define a contact and is maximal when it is \u223c4.5 \u00c5 (Figure 4). These data, therefore, show again that the improvement in contact prediction upon combining amino acid and codon data is greatest when the distance used for contact definition does not lead to many pairs being defined in contact when in fact they are not in direct physical contact.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig4-v3.jpg)\n\n**Figure 4.:** The mean of the extent of improvement in contact prediction for 114 domains (or 86 in the case of PSICOV) is plotted as a function of the distance that must exist between two C\u03b2 atoms in different residues in order for them to be defined as being in contact. The extent of improvement was determined by calculating the difference in the areas under the curves of prediction accuracy vs number of predictions by OMES, MI, DCA and PSICOV with and without incorporation of the codon data normalized by the area under the curve generated without codon data. The analysis was done for domains of length between 200 and 500 residues and at least 2000 coding sequences in their MSA. The contact predictions were made for the seven sequences with available crystal structures that have the highest resolution and that in all cases is <3 \u00c5.\n\nThe added value in combining amino acid and codon data can be illustrated for contact prediction by DCA in the case of Kex1\u0394p, a prohormone-processing carboxypeptidase from Saccharomyces cerevisiae that lacks the acidic domain and membrane-spanning portion of Kex1p. The crystal structure of Kex1\u0394p was solved at a resolution of 2.4 \u00c5 (Shilton et al., 1997) and its MSA consists of 1877 sequences. The predictions by DCA with or without incorporating codon data are shown in the respective top and bottom halves of the Kex1\u0394p contact map (Figure 5A). A comparison of the predictions by the two approaches shows that those made with incorporation of codon data are more long-range (in sequence) and more spread throughout the protein structure than those made without incorporation of codon data. Examples for such long-range contacts between different secondary structure elements in Kex1\u0394p that are predicted only when also the codon data is used include the interactions between Thr148 with Phe185, Ala186 with Leu208 and Leu190 with Leu368 (Figure 5B). This and other examples (Figure 5\u2014figure supplement 1) show that incorporation of codon data can yield predictions of contacts between residues that are distant in sequence and are, thus, of more value for structure prediction.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig5-v3.jpg)\n\n**Figure 5.:** (A) Contact map of the structure of Kex1\u0394p (PDB ID: 1AC5) in which all the contacts are shown as gray rectangles. Residues were defined as being in contact if the distance between their C\u03b2 atoms (C\u03b1 for glycine) is \u22648 \u00c5. The top 100 predictions of contacts made with or without incorporating codon data are highlighted above (in red) and below (in green) the diagonal, respectively, and those predicted by both methods by black circles. (B) The crystal structure of Kex1\u0394p with predicted contacts highlighted. Only true predicted contacts that were not predicted by the original method are highlighted. Each contacting pair has a different color. The contacts were predicted using an MSA with 1877 coding sequences with a length of 415 codons. The magnified region shows some long-range contacts between different secondary structure elements that are predicted only when also the codon data is used.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08932/elife-08932-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** All the contacts are shown as gray rectangles. Residues were defined as being in contact if at least one inter-atomic distance between their C\u03b2 atoms (C\u03b1 for glycine) is \u22648 \u00c5. The top 100 predicted contacts made with or without incorporating codon data are highlighted above (in red) and below (in green) the diagonal, respectively, and those predicted by both methods by black circles. 1BAG_A\u2014contact map of the structure of alpha-amylase from Bacillus subtilis (Pfam id: PF00128). 1Z63_A\u2014contact map of the structure of Sulfolobus solfataricus SWI2/SNF2 ATPase core (Pfam id: PF00176). 1AQU_A\u2014contact map of the structure of mouse estrogen sulphotransferase (Pfam id: PF00685). 1GW6_A\u2014contact map of the structure of human leukotriene A4 hydrolase (Pfam id: PF01433).\n\n### Conclusions\n\nThe input for methods for analysing correlated mutations has exclusively been multiple amino acid sequence alignments. Here, we have shown that improved contact prediction can be achieved by analysing both amino acid and codon MSAs together. The premise of our approach is that direct contacts are more likely if the correlation at the amino acid level is high but at the codon level is low. The score we propose, which reflects this expectation, can be used in conjunction with different methods of CMA but other possible scores should be examined in future work. Importantly, we find cases where contacts between residues that are distant in sequence and, thus, of greatest value for structure prediction are predicted only by using the combined method. Future work should test other potential applications of combined analysis of amino acid and codon MSAs such as predicting protein\u2013protein interactions and, more generally, in feature selection in machine learning.\n\n## Materials and methods\n\n### Collection of sequences\n\nProtein sequence datasets were collected from Pfam version 27.0 (Finn et al., 2014) based on representative proteomes (Chen et al., 2011) at 75% co-membership threshold (RP75). Protein coding sequences (CDS) of the collected proteins from Pfam were retrieved based on Uniprot cross reference annotations (for Refseq, Ensembl, EMBL and Ensembelgenomes databases in that order of priority) using the EMBL-EBI's WSDbfetch services (McWilliam et al., 2009) and Ensembl REST API (Beta version) (Yates et al., 2015). All collected CDSs were aligned in accordance to the Pfam HMM based MSAs using tranalign tool from the EMBOSS package (Rice et al., 2000). Pfam domain families with more than 2000 successfully retrieved coding sequences were used for further analysis (total of 551 MSAs). Only families with a known crystal structure at a resolution of 3 \u00c5 or better (more than 95% of the families have at least three such structures) and with an overlap of at least 80% of the domain sequence to the ATOM sequence in the solved structure were included in the analysis (total of 460 MSAs). Our analysis was also restricted for proteins with more than 200 residues that have a large number of potential contacts for prediction (114 MSAs). PDB structures were assigned to Pfam families in accordance to the mapping in the files downloaded from http://www.rcsb.org/pdb/rest/hmmer?file=hmmer_pdb_all.txt and ftp://ftp.ebi.ac.uk/pub/databases/msd/sifts/text/pdb_chain_uniprot.lst. PDB structures were retrieved and their coordinates were extracted using the bio3D R package (Grant et al., 2006). Pairwise sequence alignments for mapping were performed using Biostrings (Pages H., Aboyoun P., Gentleman R. and DebRoy S. Biostrings: String objects representing biological sequences, and matching algorithms. R package version 2.34.1).\n\n### Evaluation of prediction accuracy\n\nThe evaluation was based on the all structures with the highest resolution (at least 3 \u00c5) but, in cases where families have more than 30 known structures with unique sequences, only 30 with the best resolution were used (in cases of structures with the same resolution we arbitrarily chose one). The average accuracy of contact predictions for all the crystal structures of each domain family was then calculated so that domain families with many crystal structures would not be over-represented. Two definitions for a contact between two amino acids were employed: a distance of less than 8 \u00c5 between C\u03b2 atoms and a distance of less than 8 \u00c5 between any two heavy atoms. Only pairs of residues that are separated by at least five amino acids in the protein sequence were considered. Accuracy was calculated as the proportion of true contacts from the N pairs with the highest score in that set. We evaluated the improvement of our method using the difference in the area under the curve (AUC) of the accuracy vs number of predicted pairs of our method relative to the results of the original OMES, MI, MIp, PSICOV and DCA methods. AUC was calculated using the auc function in MESS package in R with the default parameters.\n\n### Determination of the number of pairs in physical contact using different contact definitions\n\nA non-redundant set of 2481 PDB entries with a percentage identity cutoff of 20%, resolution better than 1.6 \u00c5 and an R-factor cutoff of 0.25 was downloaded from the pre-compiled CullPDB lists (Wang and Dunbrack, 2003) at http://dunbrack.fccc.edu/Guoli/pisces_download.php on February 25, 2015. Two residues were defined to be in a physical contact if they have at least one pair of atoms with a distance \u22643.5 \u00c5. The number of true physical contacts, that is, those with a distance \u22643.5 \u00c5 between two of their respective heavy atoms, was determined for each protein in the set and divided by the number of residue pairs defined to be in contact if at least one inter-atomic distance between them is \u22648 \u00c5 (designated \u2018All\u2019) or if the distance between their C\u03b2 atoms is \u22648 \u00c5. Only pairs of residues that are separated by at least five amino acids along the protein sequence were considered.\n\n### Methods for analysing correlated mutations\n\nThe score for a pair of positions i and j, S (i,j), for the OMES (Observed Minus Expected Squared) method was calculated, as follows (Kass and Horovitz, 2002; Fodor and Aldrich, 2004):\n\n$$\nS_{OMES}(i,j)=\u2009\\suma\\sumb(OBS_{a_{i}b_{j}}\u2212EXP_{a_{i}b_{j}})^{2}\n$$\n\nwhere $OBS_{a_{i}b_{j}}$ and $EXP_{a_{i}b_{j}}$ are the respective observed and expected number of sequences in the MSA with residue type a at position i and residue type b at position j. The score for the mutual information, MI, method was calculated as follows (Gloor et al., 2005):\n\n$$\nS_{MI}(i,j)=\u2009\\suma=121\\sumb=121f_{(i,a;j,b)}\u2009log\\frac{f_{(i,a;j,b)}}{f_{(i,a)}f_{(j,b)}}\n$$\n\nwhere f(i,a) and f(j,b) denote the respective frequencies of occurrence of residue type a at position i and residue type b at position j and f(i,a; j,b) denotes the joint probability of occurrence of residue type a at position i and type b at position j. In the case of the MIp method (Dunn et al., 2008), an average product correction (APC) term is subtracted from the MI score for each pair of positions. The APC term, which is a measure of the background MI shared by positions i and j, is given by:\n\n$$\nAPC(i,j)=\u2009\u2009\\frac{MI_{(i,x\u00af)}MI_{(j,x\u00af)}}{MI\u00af}\n$$\n\nwhere terms in the nominator are the respective average MI values of positions i and j with all other positions in the alignment and the term in the denominator is the average background MI of all the positions in the alignment. The MIp score is given by:\n\n$$\n\u2009S_{MI_{p}}(i,j)=\u2009S_{MI}(i,j)\u2212APC(i,j)\n$$\n\nThe Direct Coupling Analysis (DCA) method (Morcos et al., 2011) was implemented in R for amino acid and codon MSAs based on a Matlab source code provided by Weigt et al. (http://dca.rice.edu/portal/dca/download). The PSICOV code was downloaded from http://bioinfadmin.cs.ucl.ac.uk/downloads/PSICOV/ and used for the predictions based on amino acid MSAs with the default parameters for faster options as recommended by the authors (-p -r 0.001 and with the -l option in order to avoid using the APC term). The PSICOV code was modified in order to carry out the same analysis for codon MSAs and a python script was implemented to perform the whole analysis as done for the other methods using Pfam MSA files in Stockholm format and fasta MSA files as inputs. PSICOV was used here either with the APC for amino acid MSAs or without the APC for the predictions based on both amino acid and codon MSAs.\n\n### Available software\n\nThe R and Python source codes for the contact prediction by all methods, C source code modifications to PSICOV V2.1b3, R source code for structure-domain sequence mapping and python scripts for generating codon MSAs are available at https://etaijacob.github.io/. Details on the relevant R packages that will be available on CRAN will also be provided at: https://etaijacob.github.io/.\n",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "72b6fe74-356e-4f54-9ad0-f63f2f04ccae",
+      "submission_id": "5703e9a3-34bb-41b6-b2fd-40f0e95c6ad8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Levitt, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08932.012](https://doi.org/10.7554/eLife.08932.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cCodon-level information improves predictions of inter-residue contacts in proteins by correlated mutation analysis\u201d for peer review at eLife. Your submission has been favorably evaluated by Aviv Regev (Senior Editor) and two reviewers, one of whom is a member of our Board of Reviewing editors. The Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe paper presents a potentially important advance in the area of deducing spatial contacts between amino acids in globular proteins, by proposing a simple yet elegant modification, which combines the analysis of amino acid and codon MSAs. While the results are potentially interesting, there are some important statistical analyses which are still lacking and need to addressed in the revision. In particular (1) the authors should incorporate statistical testing to assess the significance of the differences in accuracy with and without incorporating codon information. One would want to know if the improvement is robust, and it could be also that there are specific sub-classes where it is more/less beneficial. The scope of alternative methods to compare to should also be expanded. (2) The authors should show compelling analyses that address the question of over-fitting vs. generalization. This can be accomplished by cross-validation (the correct way to choose a set of parameters), and then with an additional test set (for seeing how the parameters chosen by cross validation perform on new data).\n\nEssential revisions:\n\n1) In Figure 1, there are differences shown for accuracy with and without incorporating codon information, but it is unclear if these differences are significant. Figure 1 shows the mean accuracy across the alignments, but it would be straightforward to also show or report the variance or standard deviation across the alignments. Then an explicit P-value could be put on a null hypothesis that incorporation of codon information increases or decreases accuracy. In general, the apparent result in Figure 1A that incorporation of codon information into SDCA either helps or hurts depending on how contacts are defined reduces confidence that incorporation of codon information is robustly improving the underlying algorithms.\n\n2) In Figure 1B, the incorporation of codon information appears to help OMES and MI, but a more appropriate comparison might be to other algorithms that attempt to correct for phylogenetic artifacts (see for example http://bioinformatics.oxfordjournals.org/content/24/3/333.short; Mutual information without the influence of phylogeny or entropy dramatically improves residue contact prediction).\n\n3) The data in Figure 2 should be on one plot. The figure needs to clearly emphasize that one set of lines are without the codon data and the other set are with it. This makes a huge difference and it the important conclusion of the work. The effect of how close distances are determined (C\u03b2 or All) is minor and confusing.\n\n4) In tuning a free parameter, such as is being performed in Figure 3, it is not surprising that a value for the free parameter alpha can be found that improves the performance. But does this just reflect over-fitting? It would perhaps be more informative to split the data into a training set and a test set, and evaluate the improvement on the test set which was not used to estimate alpha. By repeating this process on permutations of randomly chosen test sets and training sets, it might be possible to determine how stable estimates of alpha are or, alternatively, to demonstrate that the optimal value of alpha is highly variable from training set to training set.\n",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7ea23cfc-1639-4685-b4a7-877a23d585ef",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C1",
+      "claim": "Methods for analysing correlated mutations in proteins are becoming an increasingly powerful tool for predicting contacts within and between proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods for analysing correlated mutations in proteins are becoming an increasingly powerful tool for predicting contacts within and between proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by the context of the manuscript and established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "d47a0ad5-3308-4d83-a184-c8d7ee6e3d28",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C2",
+      "claim": "Limitations remain due to the requirement for large multiple sequence alignments (MSA).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, limitations remain due to the requirement for large multiple sequence alignments (MSA) and the fact that, in general, only the relatively small number of top-ranking predictions are reliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "15c9e337-983d-4f12-93ed-13116823ed6d",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C3",
+      "claim": "Only the relatively small number of top-ranking predictions are reliable in correlated mutation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, limitations remain due to the requirement for large multiple sequence alignments (MSA) and the fact that, in general, only the relatively small number of top-ranking predictions are reliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "76507e6b-619e-4aa7-b65e-2528310e96f6",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C4",
+      "claim": "Methods for analysing correlated mutations have relied exclusively on amino acid MSAs as inputs to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, methods for analysing correlated mutations have relied exclusively on amino acid MSAs as inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "1d8d30ba-db55-4c26-841d-debcb4c7a02b",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C5",
+      "claim": "A direct contact is more likely to be present when the correlation between the positions is strong at the amino acid level but weak at the codon level.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a direct contact is more likely to be present when the correlation between the positions is strong at the amino acid level but weak at the codon level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "3144a183-8369-496a-aee9-435fb141a626",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C6",
+      "claim": "The performance of different methods for analysing correlated mutations in predicting contacts is enhanced significantly when amino acid and codon data are combined.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of different methods for analysing correlated mutations in predicting contacts is shown to be enhanced significantly when amino acid and codon data are combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding supported by the data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "594e703d-35da-4440-bed8-df7d560db47b",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C7",
+      "claim": "Most compensatory mutations occur at positions that are close in space.",
+      "claim_type": "EXPLICIT",
+      "source": "It has often been assumed, however, that most compensatory mutations occur at positions that are close in space, thus motivating the development of computational methods for identifying co-evolving positions as distance constraints in protein structure prediction (G\u00f6bel et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "1f1eb42c-75df-4f36-a57a-f7a01b5fda2a",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C8",
+      "claim": "Methods for correlated mutation analysis will become increasingly more useful in the coming years owing to the explosive growth in sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods, which rely on multiple sequence alignments (MSA) of homologous proteins as inputs, will become increasingly more useful in the coming years owing to the explosive growth in sequence data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on trends in data availability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "ca0ab8a3-81bd-4352-804f-26f733f54991",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C9",
+      "claim": "The various methods for CMA differ in the measures they employ for attaching significance to the correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "The various methods for CMA that have been developed in the past 15 years differ in the measures they employ for attaching significance to the correlations (Livesay et al., 2012; de Juan et al., 2013; Mao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "1b6740cf-432a-4bc8-b066-1686635f886e",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C10",
+      "claim": "Statistically significant correlations in MSAs that do not reflect interactions between residues in contact can stem from various indirect physical interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistically significant correlations in MSAs that do not reflect interactions between residues in contact, that is, false positives, can stem from (i) various indirect physical interactions and (ii) common ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sources of false positives in CMA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "fb2889c7-30b8-4d9b-a853-28cad5d49734",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C11",
+      "claim": "Statistically significant correlations in MSAs that do not reflect interactions between residues in contact can stem from common ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistically significant correlations in MSAs that do not reflect interactions between residues in contact, that is, false positives, can stem from (i) various indirect physical interactions and (ii) common ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sources of false positives in CMA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "85c9d6ab-09b0-47a2-8c3d-11cbdbe114bf",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C12",
+      "claim": "The extent of false positives due to common ancestry is manifested in the large number of correlations between positions in non-interacting proteins when the sequences of non-interacting proteins from the same organism are concatenated and subjected to CMA.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of false positives due to the latter source is manifested in the large number of correlations between positions in non-interacting proteins that can be observed when the sequences of non-interacting proteins from the same organism are concatanated and subjected to CMA (Noivirt et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "12c0a7b1-9f9a-40a3-9864-ad15489a3bff",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C13",
+      "claim": "Several methods for removing false positives owing to common ancestry were developed but their success in contact prediction using CMA remained limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Several methods for removing false positives owing to common ancestry were developed (Pollock et al., 1999; Wollenberg and Atchley, 2000; Noivirt et al., 2005; Dunn et al., 2008) but their success in contact prediction using CMA remained limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "c2a3af7d-3579-4f58-93ff-4c3bd23116cd",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C14",
+      "claim": "Methods that remove transitive correlations have been developed in recent years and include Direct Coupling Analysis (DCA), PSICOV, and Gremlin's pseudolikelihood method.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods that remove such transitive correlations have been developed in recent years and include, for example, Direct Coupling Analysis (DCA or DI for Direct Information) (Weigt et al., 2009; Morcos et al., 2011), Protein Sparse Inverse COVariance (PSICOV) (Jones et al., 2012) and Gremlin's pseudolikelihood method (Kamisetty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the original papers describing these methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "2f8a63bb-7317-4dae-a07d-458bb0110669",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C15",
+      "claim": "DCA, PSICOV, and Gremlin's pseudolikelihood method have been found to be very successful in identifying contacting residues.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods have been found to be very successful in identifying contacting residues (Marks et al., 2012) and they outperform earlier methods (Mao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "ea67dada-90b4-4ec4-beae-4feb37686f8e",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C16",
+      "claim": "DCA, PSICOV, and Gremlin's pseudolikelihood method outperform earlier methods for correlated mutation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods have been found to be very successful in identifying contacting residues (Marks et al., 2012) and they outperform earlier methods (Mao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6c122de0-c635-49d6-b5c5-223f1a62c95b",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C17",
+      "claim": "The accuracy of DCA, PSICOV, and Gremlin's pseudolikelihood method is approximately 80% for the correlations in the top 0.1% ranked by their scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, their accuracy, which is \u223c80% for the correlations in the top 0.1% (ranked by their scores), drops to \u223c50% for the top 1% (Mao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "08e91dc8-f7a4-47f2-ab80-dc76ea19589a",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C18",
+      "claim": "The accuracy of DCA, PSICOV, and Gremlin's pseudolikelihood method drops to approximately 50% for the top 1% of correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, their accuracy, which is \u223c80% for the correlations in the top 0.1% (ranked by their scores), drops to \u223c50% for the top 1% (Mao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "b21da4a8-ac4f-4a06-bb5e-085bcfcd7e6c",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C19",
+      "claim": "The number of contacts in a protein with N residues is approximately N.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the number of contacts in a protein with N residues is \u223cN (Faure et al., 2008), it follows that for proteins with, for example, 100 residues (i.e. with 4560 potential contacts between residues separated by at least 5 residues in the sequence) only about 25% of the contacts (i.e. 23 of the top 1% 46 predictions) will be identified by these CMA methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "12084038-5397-4aa5-83cb-a7f616df0705",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C20",
+      "claim": "For proteins with 100 residues, only about 25% of the contacts will be identified by DCA, PSICOV, and Gremlin's pseudolikelihood method.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the number of contacts in a protein with N residues is \u223cN (Faure et al., 2008), it follows that for proteins with, for example, 100 residues (i.e. with 4560 potential contacts between residues separated by at least 5 residues in the sequence) only about 25% of the contacts (i.e. 23 of the top 1% 46 predictions) will be identified by these CMA methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated based on the accuracy data cited from previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "e181fcd0-47bc-4253-9122-5a56ad7f8330",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C21",
+      "claim": "DCA, PSICOV, and Gremlin's pseudolikelihood method require large MSAs comprising thousands of sequences in order to perform well.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these methods require large MSAs comprising thousands of sequences in order to perform well and such sequence data are not always available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of these methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "3517a7dd-ca58-46ce-9da1-d53eff8a1a80",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C22",
+      "claim": "A correlation at the amino acid level between two positions is more likely to reflect a direct interaction if the correlation at the codon level for these positions is weak.",
+      "claim_type": "EXPLICIT",
+      "source": "The key premise underlying the method introduced here is that a correlation at the amino acid level between two positions is more likely to reflect a direct interaction if the correlation at the codon level for these positions is weak (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the key premise of the new method introduced in this study, illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "dbf0d2e4-c67d-4e60-aa62-d788e49c42d9",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C23",
+      "claim": "Cases of strong correlations at both the amino acid and codon levels for a pair of positions are less likely to reflect selection to conserve protein contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, it is assumed that cases of strong correlations at both the amino acid and codon levels for a pair of positions are less likely to reflect selection to conserve protein contacts and more likely to reflect selection to conserve interactions involving DNA or RNA and/or common ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption underlying the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "f8564cf1-9d85-4b16-a2c3-7ec796918839",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C24",
+      "claim": "Cases of strong correlations at both the amino acid and codon levels for a pair of positions are more likely to reflect selection to conserve interactions involving DNA or RNA and/or common ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, it is assumed that cases of strong correlations at both the amino acid and codon levels for a pair of positions are less likely to reflect selection to conserve protein contacts and more likely to reflect selection to conserve interactions involving DNA or RNA and/or common ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption underlying the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "18ea8666-e77f-47ce-93fc-fca56b896522",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C25",
+      "claim": "The PSICOV and DCA methods outperform the OMES, MI and MIp methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the PSICOV and DCA methods outperform the OMES, MI and MIp methods (Figure 2) as established before (Mao et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "7f35e7d3-b19e-4b7e-971f-5a0f2d8beccd",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C26",
+      "claim": "Combining amino acid and codon data leads to an improvement in the predictions by OMES, MI, DCA and PSICOV.",
+      "claim_type": "EXPLICIT",
+      "source": "They also show that combining amino acid and codon data leads to an improvement in the predictions by OMES, MI, DCA and PSICOV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "ce7cb575-6333-4d9c-8b7c-0d58c280ecc9",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C27",
+      "claim": "In the case of MIp, no improvement is observed upon combining amino acid and codon data despite the fact that this method performs worse than DCA and PSICOV.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of MIp, however, no improvement is observed despite the fact that this method performs worse than DCA and PSICOV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "c5651da8-eb52-428b-a260-4fb9a2b8e86c",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C28",
+      "claim": "In MIp, a term called average product correction (APC) is subtracted from the MI score for each pair of positions in order to reduce false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "In MIp, a term called average product correction (APC) is subtracted from the MI score for each pair of positions in order to reduce false positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MIp method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "4e7868bb-588b-420c-8382-c4c0078f2523",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C29",
+      "claim": "Removing the APC correction from PSICOV and including the codon data yielded the best method.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing this correction from PSICOV where it also exists and including the codon data yielded the best method (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "0aebf358-3aa3-44f3-bc24-b7962f7d3350",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C30",
+      "claim": "There is an overlap between the background noise reduced upon including the APC term and codon data.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we can conclude that there is an overlap between the background noise reduced upon including the APC term and codon data and that including the latter can be more advantageous as we observe for PSICOV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that removing APC and including codon data improves PSICOV performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "074314ce-8870-4fcf-8255-ee1e189144ce",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C31",
+      "claim": "Including codon data can be more advantageous than including the APC term as observed for PSICOV.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we can conclude that there is an overlap between the background noise reduced upon including the APC term and codon data and that including the latter can be more advantageous as we observe for PSICOV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that removing APC and including codon data improves PSICOV performance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "7617d48d-9820-4aa9-9c59-9c08ec6d1280",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C32",
+      "claim": "The extent of improvement in contact prediction increases with increasing values of the power \u03b1 until a maximum is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of improvement increases with increasing values of the power \u03b1 until a maximum is reached (Figure 3A) at a value of \u03b1 that depends on the method used and different values of \u03b1max were, therefore, chosen accordingly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "d307bac2-6789-495d-8c22-24f596398378",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C33",
+      "claim": "The value of \u03b1 that maximizes improvement depends on the method used.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of improvement increases with increasing values of the power \u03b1 until a maximum is reached (Figure 3A) at a value of \u03b1 that depends on the method used and different values of \u03b1max were, therefore, chosen accordingly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "52178989-9b76-4623-bc98-bdbc8249912b",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C34",
+      "claim": "Cross-validation by dividing the MSA data into training and test sets showed that the values of \u03b1max are stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-validation by dividing the MSA data into training and test sets showed that the values of \u03b1max are stable, that is, they do not vary depending on the set of MSAs (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "bcd7f778-578a-428e-8480-72bff3ae2b59",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C35",
+      "claim": "The extent of improvement achieved by incorporating codon data was found to be highly significant as indicated by the p-values obtained using the Wilcoxon signed-rank test and the sign test.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of improvement achieved by incorporating codon data was found to be highly significant as indicated by the p-values obtained using both tests (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B with statistical tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "931c057b-ef97-4e99-a369-fbafefffffb4",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C36",
+      "claim": "On average, pairs in direct contact constitute only about 10% of the pairs in contact according to the 'All' definition.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be seen that, on average, pairs in direct contact constitute only about 10% of the pairs in contact according to the 'All' definition and 30% of the pairs in contact according to the C\u03b2-based definition (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6a6da02d-996d-402d-ade3-fffa0cf6b362",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C37",
+      "claim": "On average, pairs in direct contact constitute 30% of the pairs in contact according to the C\u03b2-based definition.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be seen that, on average, pairs in direct contact constitute only about 10% of the pairs in contact according to the 'All' definition and 30% of the pairs in contact according to the C\u03b2-based definition (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "44d26538-7299-4be6-9549-ded70609e282",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C38",
+      "claim": "The C\u03b2-based definition of contacts is better than the 'All' definition for identifying direct contacts using DCA when amino acid and codon data are combined.",
+      "claim_type": "EXPLICIT",
+      "source": "The better success of DCA in identifying contacts according to the C\u03b2-based definition when amino acid and codon data are combined is, therefore, an important result since more pairs that are in true physical contact are identified in this way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that the C\u03b2-based definition identifies a higher proportion of true physical contacts.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "4a1b9540-5358-4edd-9cc3-5fa8483d64e5",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C39",
+      "claim": "In the cases of PSICOV, OMES and DCA, the maximum improvements in contact prediction upon combining amino acid and codon data are when the distance between C\u03b2 atoms used to define a contact is about 5.5, 7 and 5.5 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be seen that, in the cases of PSICOV, OMES and DCA, the maximum improvements in contact prediction upon combining amino acid and codon data are when these distances are about 5.5, 7 and 5.5 \u00c5, respectively, and that, in the cases of DCA and OMES, the improvement decreases dramatically when this distance is >\u223c10 \u00c5 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "a038e88a-ee5c-4a4e-aacc-c303aa0eedbc",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C40",
+      "claim": "In the cases of DCA and OMES, the improvement in contact prediction decreases dramatically when the distance used to define a contact is greater than approximately 10 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be seen that, in the cases of PSICOV, OMES and DCA, the maximum improvements in contact prediction upon combining amino acid and codon data are when these distances are about 5.5, 7 and 5.5 \u00c5, respectively, and that, in the cases of DCA and OMES, the improvement decreases dramatically when this distance is >\u223c10 \u00c5 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "27f99479-2661-47ef-9244-d4105bd9d814",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C41",
+      "claim": "In the case of MI, the extent of improvement upon combining amino acid and codon data is relatively insensitive to the distance used to define a contact and is maximal when it is approximately 4.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of MI, the extent of improvement upon combining amino acid and codon data is found to be relatively insensitive to the distance used to define a contact and is maximal when it is \u223c4.5 \u00c5 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6fcd6c81-7ade-4b37-bab6-68609442d781",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C42",
+      "claim": "The improvement in contact prediction upon combining amino acid and codon data is greatest when the distance used for contact definition does not lead to many pairs being defined in contact when in fact they are not in direct physical contact.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, therefore, show again that the improvement in contact prediction upon combining amino acid and codon data is greatest when the distance used for contact definition does not lead to many pairs being defined in contact when in fact they are not in direct physical contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6ec5c50c-c8a4-4037-94f8-ed246ac42293",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C43",
+      "claim": "The crystal structure of Kex1\u0394p was solved at a resolution of 2.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of Kex1\u0394p was solved at a resolution of 2.4 \u00c5 (Shilton et al., 1997) and its MSA consists of 1877 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the original structure paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "eefc2721-aa68-4528-bc3e-264167f34de3",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C44",
+      "claim": "The MSA of Kex1\u0394p consists of 1877 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of Kex1\u0394p was solved at a resolution of 2.4 \u00c5 (Shilton et al., 1997) and its MSA consists of 1877 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6b66c68f-d9d3-4481-84bf-762e7e55c530",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C45",
+      "claim": "Predictions by DCA with incorporation of codon data are more long-range (in sequence) than those made without incorporation of codon data for Kex1\u0394p.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the predictions by the two approaches shows that those made with incorporation of codon data are more long-range (in sequence) and more spread throughout the protein structure than those made without incorporation of codon data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "2b9c6717-9e7b-4694-8e42-a4bc3ce6a08f",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C46",
+      "claim": "Predictions by DCA with incorporation of codon data are more spread throughout the protein structure than those made without incorporation of codon data for Kex1\u0394p.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the predictions by the two approaches shows that those made with incorporation of codon data are more long-range (in sequence) and more spread throughout the protein structure than those made without incorporation of codon data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "302028a8-3750-4e7a-be85-b34a82c60ce3",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C47",
+      "claim": "Long-range contacts between different secondary structure elements in Kex1\u0394p that are predicted only when also the codon data is used include the interactions between Thr148 with Phe185, Ala186 with Leu208 and Leu190 with Leu368.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples for such long-range contacts between different secondary structure elements in Kex1\u0394p that are predicted only when also the codon data is used include the interactions between Thr148 with Phe185, Ala186 with Leu208 and Leu190 with Leu368 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "8639b3e1-4c75-4f4d-addb-3ef1f763ddbd",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C48",
+      "claim": "Incorporation of codon data can yield predictions of contacts between residues that are distant in sequence and are of more value for structure prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "This and other examples (Figure 5\u2014figure supplement 1) show that incorporation of codon data can yield predictions of contacts between residues that are distant in sequence and are, thus, of more value for structure prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the examples shown in Figures 5 and 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "809f7773-c67c-4f19-a4c2-c90523119aac",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C49",
+      "claim": "Improved contact prediction can be achieved by analysing both amino acid and codon MSAs together.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that improved contact prediction can be achieved by analysing both amino acid and codon MSAs together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "ef4d975c-ac72-4d7e-8920-4b148bc01d14",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C50",
+      "claim": "The premise of the approach is that direct contacts are more likely if the correlation at the amino acid level is high but at the codon level is low.",
+      "claim_type": "EXPLICIT",
+      "source": "The premise of our approach is that direct contacts are more likely if the correlation at the amino acid level is high but at the codon level is low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the key premise of the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "76203947-f469-4c0d-b664-f16e3fd61022",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C51",
+      "claim": "The score proposed can be used in conjunction with different methods of CMA.",
+      "claim_type": "EXPLICIT",
+      "source": "The score we propose, which reflects this expectation, can be used in conjunction with different methods of CMA but other possible scores should be examined in future work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by applying the score to multiple CMA methods (OMES, MI, DCA, PSICOV).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "5e4e669c-6956-4ebe-86d6-543a732886ba",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C52",
+      "claim": "Other possible scores should be examined in future work.",
+      "claim_type": "EXPLICIT",
+      "source": "The score we propose, which reflects this expectation, can be used in conjunction with different methods of CMA but other possible scores should be examined in future work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "4bd73ab9-ae0f-4d37-b348-2b085ddacf36",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C53",
+      "claim": "Cases where contacts between residues that are distant in sequence are predicted only by using the combined method exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we find cases where contacts between residues that are distant in sequence and, thus, of greatest value for structure prediction are predicted only by using the combined method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "863a43d3-576d-4d1a-ba11-6c5ce1583f29",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C54",
+      "claim": "Future work should test other potential applications of combined analysis of amino acid and codon MSAs such as predicting protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work should test other potential applications of combined analysis of amino acid and codon MSAs such as predicting protein\u2013protein interactions and, more generally, in feature selection in machine learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6514b262-87db-4424-9b18-87b99782d6df",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C55",
+      "claim": "Future work should test combined analysis of amino acid and codon MSAs in feature selection in machine learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work should test other potential applications of combined analysis of amino acid and codon MSAs such as predicting protein\u2013protein interactions and, more generally, in feature selection in machine learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "79a3dbd1-1862-4e55-8c99-b6a200f48380",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C56",
+      "claim": "Protein sequence datasets were collected from Pfam version 27.0 based on representative proteomes at 75% co-membership threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein sequence datasets were collected from Pfam version 27.0 (Finn et al., 2014) based on representative proteomes (Chen et al., 2011) at 75% co-membership threshold (RP75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "ec61cb90-792e-4766-9274-5ea4bffa6e94",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C57",
+      "claim": "Protein coding sequences (CDS) of the collected proteins from Pfam were retrieved based on Uniprot cross reference annotations using the EMBL-EBI's WSDbfetch services and Ensembl REST API.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein coding sequences (CDS) of the collected proteins from Pfam were retrieved based on Uniprot cross reference annotations (for Refseq, Ensembl, EMBL and Ensembelgenomes databases in that order of priority) using the EMBL-EBI's WSDbfetch services (McWilliam et al., 2009) and Ensembl REST API (Beta version) (Yates et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "54f95009-ac86-47f2-a43a-c431dc039160",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C58",
+      "claim": "All collected CDSs were aligned in accordance to the Pfam HMM based MSAs using tranalign tool from the EMBOSS package.",
+      "claim_type": "EXPLICIT",
+      "source": "All collected CDSs were aligned in accordance to the Pfam HMM based MSAs using tranalign tool from the EMBOSS package (Rice et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "8e57b3cb-e96b-4567-aff0-a55384f29bda",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C59",
+      "claim": "Pfam domain families with more than 2000 successfully retrieved coding sequences were used for further analysis (total of 551 MSAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Pfam domain families with more than 2000 successfully retrieved coding sequences were used for further analysis (total of 551 MSAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "48ecfbea-1869-4a64-863a-5f51ad8a0f81",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C60",
+      "claim": "Only families with a known crystal structure at a resolution of 3 \u00c5 or better and with an overlap of at least 80% of the domain sequence to the ATOM sequence in the solved structure were included in the analysis (total of 460 MSAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Only families with a known crystal structure at a resolution of 3 \u00c5 or better (more than 95% of the families have at least three such structures) and with an overlap of at least 80% of the domain sequence to the ATOM sequence in the solved structure were included in the analysis (total of 460 MSAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "4ae62c71-9cd5-435f-b324-ef3421aebd96",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C61",
+      "claim": "The analysis was restricted to proteins with more than 200 residues that have a large number of potential contacts for prediction (114 MSAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis was also restricted for proteins with more than 200 residues that have a large number of potential contacts for prediction (114 MSAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "8c18f27b-4a24-41cf-92d9-f0daf69a973e",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C62",
+      "claim": "The evaluation was based on all structures with the highest resolution (at least 3 \u00c5) but, in cases where families have more than 30 known structures with unique sequences, only 30 with the best resolution were used.",
+      "claim_type": "EXPLICIT",
+      "source": "The evaluation was based on the all structures with the highest resolution (at least 3 \u00c5) but, in cases where families have more than 30 known structures with unique sequences, only 30 with the best resolution were used (in cases of structures with the same resolution we arbitrarily chose one).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "47e1ced6-9769-49f8-a1fe-a10c25b06858",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C63",
+      "claim": "Two definitions for a contact between two amino acids were employed: a distance of less than 8 \u00c5 between C\u03b2 atoms and a distance of less than 8 \u00c5 between any two heavy atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Two definitions for a contact between two amino acids were employed: a distance of less than 8 \u00c5 between C\u03b2 atoms and a distance of less than 8 \u00c5 between any two heavy atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the contact definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "35e3d7d2-c9c7-4662-ab82-d01d8ae66c4b",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C64",
+      "claim": "Only pairs of residues that are separated by at least five amino acids in the protein sequence were considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Only pairs of residues that are separated by at least five amino acids in the protein sequence were considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the contact definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "3c2ac037-168f-4d1e-a6e1-e9d6c3f58d0a",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C65",
+      "claim": "Accuracy was calculated as the proportion of true contacts from the N pairs with the highest score in that set.",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracy was calculated as the proportion of true contacts from the N pairs with the highest score in that set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the accuracy calculation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "73002680-57ac-4a24-a4a4-38d0e4fe68df",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C66",
+      "claim": "The improvement of the method was evaluated using the difference in the area under the curve (AUC) of the accuracy vs number of predicted pairs relative to the results of the original OMES, MI, MIp, PSICOV and DCA methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the improvement of our method using the difference in the area under the curve (AUC) of the accuracy vs number of predicted pairs of our method relative to the results of the original OMES, MI, MIp, PSICOV and DCA methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "c2efa392-5f1e-4f2f-8128-59b7b49ae742",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C67",
+      "claim": "A non-redundant set of 2481 PDB entries with a percentage identity cutoff of 20%, resolution better than 1.6 \u00c5 and an R-factor cutoff of 0.25 was downloaded from the pre-compiled CullPDB lists.",
+      "claim_type": "EXPLICIT",
+      "source": "A non-redundant set of 2481 PDB entries with a percentage identity cutoff of 20%, resolution better than 1.6 \u00c5 and an R-factor cutoff of 0.25 was downloaded from the pre-compiled CullPDB lists (Wang and Dunbrack, 2003) at http://dunbrack.fccc.edu/Guoli/pisces_download.php on February 25, 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "e5e46726-574d-4c28-b128-a554c0834a57",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C68",
+      "claim": "Two residues were defined to be in a physical contact if they have at least one pair of atoms with a distance \u22643.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Two residues were defined to be in a physical contact if they have at least one pair of atoms with a distance \u22643.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical contact definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "90cb21dd-2994-401a-9e0e-6aa29470ff5d",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C69",
+      "claim": "Maximal improvement of 3.9% was found for DCA when \u03b1 is 2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal respective improvements of 3.9% and 4.2% were found for DCA and MI when \u03b1 is 2.5, 17.6% for OMES when \u03b1 is 1.7 and 1.13% for PSICOV when \u03b1 is 11.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "fbee22ca-9191-4ace-be14-40c2fea6b11a",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C70",
+      "claim": "Maximal improvement of 4.2% was found for MI when \u03b1 is 2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal respective improvements of 3.9% and 4.2% were found for DCA and MI when \u03b1 is 2.5, 17.6% for OMES when \u03b1 is 1.7 and 1.13% for PSICOV when \u03b1 is 11.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "0af76354-4505-49d2-add9-48854e902d73",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C71",
+      "claim": "Maximal improvement of 17.6% was found for OMES when \u03b1 is 1.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal respective improvements of 3.9% and 4.2% were found for DCA and MI when \u03b1 is 2.5, 17.6% for OMES when \u03b1 is 1.7 and 1.13% for PSICOV when \u03b1 is 11.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "dcd9782c-ada1-4570-a83c-d8fc59fd19c5",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C72",
+      "claim": "Maximal improvement of 1.13% was found for PSICOV when \u03b1 is 11.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal respective improvements of 3.9% and 4.2% were found for DCA and MI when \u03b1 is 2.5, 17.6% for OMES when \u03b1 is 1.7 and 1.13% for PSICOV when \u03b1 is 11.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "eb82ee5d-44b4-48e5-ad35-5399c9e40047",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C73",
+      "claim": "In the case of OMES, MI and DCA, the mean difference between the values of \u03b1 which maximizes the median of the percent of AUC improvement for the learning and test sets equals zero.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of OMES, MI and DCA, the mean difference between the values of \u03b1 which maximizes the median of the percent of AUC improvement for the learning and test sets equals zero, thus, reflecting the stability of the values of \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "abfd916e-03ee-4316-be0a-7cbee1b77481",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C74",
+      "claim": "In the case of PSICOV, the variance of the difference between the values of \u03b1 which maximizes the median of the percent of AUC improvement for the learning and test sets is high due to the asymptotic nature of the median percent of AUC improvement as a function of \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of PSICOV, the variance of that difference is high due to the asymptotic nature of the median percent of AUC improvement as a function of \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "5ea186ef-b9cf-4218-ac41-0c8f4e69a2e9",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C75",
+      "claim": "Atoms can interact with each other even if the distance between them is larger than 3.5 \u00c5 via, for example, weak electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that atoms can interact with each other even if the distance between them is larger than 3.5 \u00c5 via, for example, weak electrostatic interactions but pairs of atoms which are closer than 3.5 \u00c5 can always be considered as interacting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of atomic interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "688ddb37-c41c-4669-b737-72428e51f95b",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C76",
+      "claim": "Pairs of atoms which are closer than 3.5 \u00c5 can always be considered as interacting.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that atoms can interact with each other even if the distance between them is larger than 3.5 \u00c5 via, for example, weak electrostatic interactions but pairs of atoms which are closer than 3.5 \u00c5 can always be considered as interacting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of atomic interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "6946e9f8-8a46-477e-b205-c174260d4e12",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C77",
+      "claim": "Residues were considered as being in contact if the distance between their C\u03b2 atoms is \u22648 \u00c5 following the definition used in CASP experiments and other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues were considered as being in contact if the distance between their C\u03b2 atoms is \u22648 \u00c5 following the definition used in CASP experiments (Ezkurdia et al., 2009) and other studies (Kamisetty et al., 2013; Skwark et al., 2014) (see also Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous work and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "c7028217-c612-452e-9bb8-a1c62d2c3fa9",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C78",
+      "claim": "The analysis was done for domains of length between 200 and 500 residues and at least 2000 coding sequences in their MSA.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis was done for domains of length between 200 and 500 residues and at least 2000 coding sequences in their MSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "c7493b90-90b5-4236-9eaa-daee97bfd270",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C79",
+      "claim": "In the case of the PSICOV method, only 86 MSAs out of the 114 MSAs were used since the others didn't pass this method's threshold for amino acid sequence diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the PSICOV method (Jones et al., 2012), only 86 MSAs out of the 114 MSAs were used since the others didn't pass this method's threshold for amino acid sequence diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria specific to PSICOV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "32de1112-8fe6-4bd9-a081-24315dade31a",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C80",
+      "claim": "Each MSA included at least one sequence with a known crystal structure at a resolution <3 \u00c5 in which at least 80% of all the residues are resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "Each MSA also included at least one sequence with a known crystal structure at a resolution <3 \u00c5 in which at least 80% of all the residues are resolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "738f540d-3284-4aa9-9a8e-15c33241f434",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C81",
+      "claim": "The contact predictions were made for the seven sequences with available crystal structures that have the highest resolution and that in all cases is <3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The contact predictions were made for the seven sequences with available crystal structures that have the highest resolution and that in all cases is <3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "a16af64b-f868-49f4-891e-86a567892490",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C82",
+      "claim": "Kex1\u0394p is a prohormone-processing carboxypeptidase from Saccharomyces cerevisiae that lacks the acidic domain and membrane-spanning portion of Kex1p.",
+      "claim_type": "EXPLICIT",
+      "source": "The added value in combining amino acid and codon data can be illustrated for contact prediction by DCA in the case of Kex1\u0394p, a prohormone-processing carboxypeptidase from Saccharomyces cerevisiae that lacks the acidic domain and membrane-spanning portion of Kex1p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the protein used as an example.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "aeeb7110-04ac-46a3-b58c-9d73d4a748bf",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C83",
+      "claim": "More than 95% of the families have at least three crystal structures at a resolution of 3 \u00c5 or better.",
+      "claim_type": "EXPLICIT",
+      "source": "Only families with a known crystal structure at a resolution of 3 \u00c5 or better (more than 95% of the families have at least three such structures) and with an overlap of at least 80% of the domain sequence to the ATOM sequence in the solved structure were included in the analysis (total of 460 MSAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "f3a44c95-9a16-4cea-a961-5f41f249b05c",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "claim_id": "C84",
+      "claim": "For 81 MSAs, the accuracy of the contact predictions by DCA increases upon incorporating codon data.",
+      "claim_type": "IMPLICIT",
+      "source": "Significance levels were determined using two non-parametric tests: (i) the Wilcoxon signed-rank test, which takes into account both the number of MSAs for which the accuracy of the contact predictions increases upon incorporating codon data (e.g., 81 in the case of DCA) and the magnitude of the improvement; and (ii) the sign test, which only considers the number of MSAs with improved accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3922300b-3696-4c91-b096-e0cef969f952",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors describe the current state and limitations of correlated mutation analysis (CMA) methods, noting that while these methods are increasingly powerful for predicting protein contacts, they require large MSAs and only a small number of top-ranking predictions are reliable. Historically, all CMA methods have relied exclusively on amino acid MSAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 accurately describe established knowledge about the field of CMA. These are well-documented limitations supported by the cited literature and represent the motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "b4a0c028-921c-4e52-bb42-20978f769307",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors review prior work on CMA methods, including the assumption that compensatory mutations occur at spatially close positions, sources of false positives (indirect interactions and common ancestry), and the development of methods like DCA, PSICOV, and Gremlin that remove transitive correlations. These newer methods achieve ~80% accuracy for top 0.1% predictions but drop to ~50% for top 1%, require large MSAs, and identify only ~25% of contacts in 100-residue proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C21 accurately summarize prior work with appropriate citations. The quantitative performance metrics and limitations are properly attributed to published studies (Mao et al., 2015; Faure et al., 2008), providing context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "568c3fb2-e065-418b-8f68-2266a4b92ce5",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors propose a novel premise that correlations strong at the amino acid level but weak at the codon level are more likely to reflect direct protein contacts, while correlations strong at both levels more likely reflect DNA/RNA interactions or common ancestry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22-C24, C50 present the key conceptual premise but it remains an assumption without direct experimental validation. While the premise is illustrated in Figure 1 and tested indirectly through improved predictions, the biological mechanism is not demonstrated. Alternative explanations for why codon-level correlations might differ are not thoroughly explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "cb634628-049f-41b4-ae12-498149364bc6",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that combining amino acid and codon MSA data significantly improves contact prediction performance for OMES, MI, DCA, and PSICOV methods, but not for MIp. Removing the APC correction from PSICOV and including codon data yielded the best overall method.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C25-C27, C29, C49 are well-supported by data in Figure 2 showing consistent improvements across multiple methods. The exception of MIp is explained by overlap between APC correction and codon data effects (C28-C31). Statistical significance is demonstrated in C35 with appropriate tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "80a45fd5-d619-4ce7-934c-fa364b5ca95c",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors infer that there is overlap between background noise reduced by the APC term and codon data, with codon data being more advantageous for PSICOV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide a reasonable mechanistic explanation for why MIp shows no improvement and why PSICOV performs best without APC when codon data is included. This inference is supported by the empirical results in Figure 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "20560b94-1d08-44d5-a7a9-cf52b96ad490",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors optimize the power parameter \u03b1 that determines relative weights of amino acid and codon correlations, finding method-dependent optimal values (\u03b1=2.5 for DCA and MI, \u03b1=1.7 for OMES, \u03b1=11.2 for PSICOV) that are stable across cross-validation, yielding improvements of 3.9%, 4.2%, 17.6%, and 1.13% respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34, C69-C74 describe a systematic optimization with appropriate cross-validation (Figure 3A, Figure 3\u2014figure supplement 1). The stability analysis demonstrates the parameters are not overfit, though the high variance for PSICOV (C74) is appropriately noted and explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "bd32610a-0cf1-4499-9bb5-22d4db69b494",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The improvement achieved by incorporating codon data is statistically significant, with 81 out of 114 MSAs showing improved accuracy for DCA, as assessed by Wilcoxon signed-rank and sign tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C84 demonstrate statistical rigor with appropriate non-parametric tests shown in Figure 3B. The use of two complementary tests (one considering magnitude, one only direction) strengthens the conclusion of significant improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "8c90544e-a187-4785-be6b-2b882ffe67b9",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors compare two contact definitions and find that the C\u03b2-based definition (\u22648\u00c5) identifies a higher proportion of true physical contacts (30%) compared to the 'All' definition (10%), making it superior for identifying direct contacts when amino acid and codon data are combined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C63, C77 are supported by systematic analysis of 2481 high-resolution structures (Figure 2\u2014figure supplement 2). The C\u03b2-based definition is shown to be more selective for true physical contacts (<3.5\u00c5), validating its use in the study and following CASP conventions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "d3284395-523f-4a06-a949-9239a0aa12c5",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors find that maximum improvement from combining amino acid and codon data occurs at specific inter-residue distances (5.5\u00c5 for PSICOV and DCA, 7\u00c5 for OMES, 4.5\u00c5 for MI), with improvement decreasing dramatically beyond ~10\u00c5 for DCA and OMES, supporting that the method works best for identifying true physical contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by systematic analysis across distance thresholds (Figure 4). The distance-dependence provides additional validation that the method preferentially identifies direct physical interactions rather than long-range correlations, consistent with the underlying premise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "d2c31ce8-9eec-4daf-b5df-566297bda3da",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using Kex1\u0394p as a case study, the authors demonstrate that incorporating codon data enables prediction of long-range contacts between distant secondary structure elements (e.g., Thr148-Phe185, Ala186-Leu208, Leu190-Leu368) that are not predicted without codon data, with predictions being more spread throughout the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48, C53, C82 provide concrete examples supported by Figure 5 and Figure 5\u2014figure supplement 1. The case study effectively illustrates the practical value of the method for structure prediction by identifying long-range contacts that are most informative for determining protein fold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "7b32af42-3cf0-4826-96bf-505d0a6af829",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The proposed scoring scheme can be applied to different CMA methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is demonstrated by successful application to five different methods (OMES, MI, MIp, DCA, PSICOV), showing the generalizability of the approach across different correlation measures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "51f4144d-3c3c-4f46-a713-43ac6c5bd4b3",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors suggest future work should examine alternative scoring schemes and test applications to protein-protein interaction prediction and machine learning feature selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C54-C55 appropriately identify limitations and future directions. These are reasonable suggestions for extending the work, acknowledging that the current scoring scheme may not be optimal and the approach may have broader applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    },
+    {
+      "id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f",
+      "content_id": "7050b618-0796-4581-a1ad-104718a3173c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors describe their data collection and analysis methodology, including collection of 114 MSAs from Pfam with >2000 sequences and 200-500 residues, retrieval of coding sequences, alignment procedures, contact definitions, accuracy calculations using AUC, and validation using high-resolution crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C68, C75-C76, C78-C81, C83 provide comprehensive methodological details with appropriate citations. The methods are clearly described and follow established practices in the field. The dataset size (114 MSAs, 86 for PSICOV) is substantial for validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T05:05:19.192186Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7ea23cfc-1639-4685-b4a7-877a23d585ef",
+      "result_id": "3922300b-3696-4c91-b096-e0cef969f952"
+    },
+    {
+      "claim_id": "d47a0ad5-3308-4d83-a184-c8d7ee6e3d28",
+      "result_id": "3922300b-3696-4c91-b096-e0cef969f952"
+    },
+    {
+      "claim_id": "15c9e337-983d-4f12-93ed-13116823ed6d",
+      "result_id": "3922300b-3696-4c91-b096-e0cef969f952"
+    },
+    {
+      "claim_id": "76507e6b-619e-4aa7-b65e-2528310e96f6",
+      "result_id": "3922300b-3696-4c91-b096-e0cef969f952"
+    },
+    {
+      "claim_id": "594e703d-35da-4440-bed8-df7d560db47b",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "1f1eb42c-75df-4f36-a57a-f7a01b5fda2a",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "ca0ab8a3-81bd-4352-804f-26f733f54991",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "1b6740cf-432a-4bc8-b066-1686635f886e",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "fb2889c7-30b8-4d9b-a853-28cad5d49734",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "85c9d6ab-09b0-47a2-8c3d-11cbdbe114bf",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "12c0a7b1-9f9a-40a3-9864-ad15489a3bff",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "c2a3af7d-3579-4f58-93ff-4c3bd23116cd",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "2f8a63bb-7317-4dae-a07d-458bb0110669",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "ea67dada-90b4-4ec4-beae-4feb37686f8e",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "6c122de0-c635-49d6-b5c5-223f1a62c95b",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "08e91dc8-f7a4-47f2-ab80-dc76ea19589a",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "b21da4a8-ac4f-4a06-bb5e-085bcfcd7e6c",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "12084038-5397-4aa5-83cb-a7f616df0705",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "e181fcd0-47bc-4253-9122-5a56ad7f8330",
+      "result_id": "b4a0c028-921c-4e52-bb42-20978f769307"
+    },
+    {
+      "claim_id": "3517a7dd-ca58-46ce-9da1-d53eff8a1a80",
+      "result_id": "568c3fb2-e065-418b-8f68-2266a4b92ce5"
+    },
+    {
+      "claim_id": "dbf0d2e4-c67d-4e60-aa62-d788e49c42d9",
+      "result_id": "568c3fb2-e065-418b-8f68-2266a4b92ce5"
+    },
+    {
+      "claim_id": "f8564cf1-9d85-4b16-a2c3-7ec796918839",
+      "result_id": "568c3fb2-e065-418b-8f68-2266a4b92ce5"
+    },
+    {
+      "claim_id": "ef4d975c-ac72-4d7e-8920-4b148bc01d14",
+      "result_id": "568c3fb2-e065-418b-8f68-2266a4b92ce5"
+    },
+    {
+      "claim_id": "1d8d30ba-db55-4c26-841d-debcb4c7a02b",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "3144a183-8369-496a-aee9-435fb141a626",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "18ea8666-e77f-47ce-93fc-fca56b896522",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "7f35e7d3-b19e-4b7e-971f-5a0f2d8beccd",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "ce7cb575-6333-4d9c-8b7c-0d58c280ecc9",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "4e7868bb-588b-420c-8382-c4c0078f2523",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "809f7773-c67c-4f19-a4c2-c90523119aac",
+      "result_id": "cb634628-049f-41b4-ae12-498149364bc6"
+    },
+    {
+      "claim_id": "c5651da8-eb52-428b-a260-4fb9a2b8e86c",
+      "result_id": "80a45fd5-d619-4ce7-934c-fa364b5ca95c"
+    },
+    {
+      "claim_id": "0aebf358-3aa3-44f3-bc24-b7962f7d3350",
+      "result_id": "80a45fd5-d619-4ce7-934c-fa364b5ca95c"
+    },
+    {
+      "claim_id": "074314ce-8870-4fcf-8255-ee1e189144ce",
+      "result_id": "80a45fd5-d619-4ce7-934c-fa364b5ca95c"
+    },
+    {
+      "claim_id": "7617d48d-9820-4aa9-9c59-9c08ec6d1280",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "d307bac2-6789-495d-8c22-24f596398378",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "52178989-9b76-4623-bc98-bdbc8249912b",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "90cb21dd-2994-401a-9e0e-6aa29470ff5d",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "fbee22ca-9191-4ace-be14-40c2fea6b11a",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "0af76354-4505-49d2-add9-48854e902d73",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "dcd9782c-ada1-4570-a83c-d8fc59fd19c5",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "eb82ee5d-44b4-48e5-ad35-5399c9e40047",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "abfd916e-03ee-4316-be0a-7cbee1b77481",
+      "result_id": "20560b94-1d08-44d5-a7a9-cf52b96ad490"
+    },
+    {
+      "claim_id": "bcd7f778-578a-428e-8480-72bff3ae2b59",
+      "result_id": "bd32610a-0cf1-4499-9bb5-22d4db69b494"
+    },
+    {
+      "claim_id": "f3a44c95-9a16-4cea-a961-5f41f249b05c",
+      "result_id": "bd32610a-0cf1-4499-9bb5-22d4db69b494"
+    },
+    {
+      "claim_id": "931c057b-ef97-4e99-a369-fbafefffffb4",
+      "result_id": "8c90544e-a187-4785-be6b-2b882ffe67b9"
+    },
+    {
+      "claim_id": "6a6da02d-996d-402d-ade3-fffa0cf6b362",
+      "result_id": "8c90544e-a187-4785-be6b-2b882ffe67b9"
+    },
+    {
+      "claim_id": "44d26538-7299-4be6-9549-ded70609e282",
+      "result_id": "8c90544e-a187-4785-be6b-2b882ffe67b9"
+    },
+    {
+      "claim_id": "47e1ced6-9769-49f8-a1fe-a10c25b06858",
+      "result_id": "8c90544e-a187-4785-be6b-2b882ffe67b9"
+    },
+    {
+      "claim_id": "6946e9f8-8a46-477e-b205-c174260d4e12",
+      "result_id": "8c90544e-a187-4785-be6b-2b882ffe67b9"
+    },
+    {
+      "claim_id": "4a1b9540-5358-4edd-9cc3-5fa8483d64e5",
+      "result_id": "d3284395-523f-4a06-a949-9239a0aa12c5"
+    },
+    {
+      "claim_id": "a038e88a-ee5c-4a4e-aacc-c303aa0eedbc",
+      "result_id": "d3284395-523f-4a06-a949-9239a0aa12c5"
+    },
+    {
+      "claim_id": "27f99479-2661-47ef-9244-d4105bd9d814",
+      "result_id": "d3284395-523f-4a06-a949-9239a0aa12c5"
+    },
+    {
+      "claim_id": "6fcd6c81-7ade-4b37-bab6-68609442d781",
+      "result_id": "d3284395-523f-4a06-a949-9239a0aa12c5"
+    },
+    {
+      "claim_id": "6ec5c50c-c8a4-4037-94f8-ed246ac42293",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "eefc2721-aa68-4528-bc3e-264167f34de3",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "6b66c68f-d9d3-4481-84bf-762e7e55c530",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "2b9c6717-9e7b-4694-8e42-a4bc3ce6a08f",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "302028a8-3750-4e7a-be85-b34a82c60ce3",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "8639b3e1-4c75-4f4d-addb-3ef1f763ddbd",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "4bd73ab9-ae0f-4d37-b348-2b085ddacf36",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "a16af64b-f868-49f4-891e-86a567892490",
+      "result_id": "d2c31ce8-9eec-4daf-b5df-566297bda3da"
+    },
+    {
+      "claim_id": "76203947-f469-4c0d-b664-f16e3fd61022",
+      "result_id": "7b32af42-3cf0-4826-96bf-505d0a6af829"
+    },
+    {
+      "claim_id": "5e4e669c-6956-4ebe-86d6-543a732886ba",
+      "result_id": "51f4144d-3c3c-4f46-a713-43ac6c5bd4b3"
+    },
+    {
+      "claim_id": "863a43d3-576d-4d1a-ba11-6c5ce1583f29",
+      "result_id": "51f4144d-3c3c-4f46-a713-43ac6c5bd4b3"
+    },
+    {
+      "claim_id": "6514b262-87db-4424-9b18-87b99782d6df",
+      "result_id": "51f4144d-3c3c-4f46-a713-43ac6c5bd4b3"
+    },
+    {
+      "claim_id": "79a3dbd1-1862-4e55-8c99-b6a200f48380",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "ec61cb90-792e-4766-9274-5ea4bffa6e94",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "54f95009-ac86-47f2-a43a-c431dc039160",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "8e57b3cb-e96b-4567-aff0-a55384f29bda",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "48ecfbea-1869-4a64-863a-5f51ad8a0f81",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "4ae62c71-9cd5-435f-b324-ef3421aebd96",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "8c18f27b-4a24-41cf-92d9-f0daf69a973e",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "35e3d7d2-c9c7-4662-ab82-d01d8ae66c4b",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "3c2ac037-168f-4d1e-a6e1-e9d6c3f58d0a",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "73002680-57ac-4a24-a4a4-38d0e4fe68df",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "c2efa392-5f1e-4f2f-8128-59b7b49ae742",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "e5e46726-574d-4c28-b128-a554c0834a57",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "5ea186ef-b9cf-4218-ac41-0c8f4e69a2e9",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "688ddb37-c41c-4669-b737-72428e51f95b",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "c7028217-c612-452e-9bb8-a1c62d2c3fa9",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "c7493b90-90b5-4236-9eaa-daee97bfd270",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "32de1112-8fe6-4bd9-a081-24315dade31a",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "738f540d-3284-4aa9-9a8e-15c33241f434",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    },
+    {
+      "claim_id": "aeeb7110-04ac-46a3-b58c-9d73d4a748bf",
+      "result_id": "f01d450c-d051-4d3a-a1ad-fb56e996e91f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C122"
+    ],
+    "result": "The authors developed a non-parametric Bayesian model that extends the infinite stochastic block model (iSBM) to incorporate spatial information (distance, soma depth, synapse distribution) alongside connectivity for automatic discovery of neuron types and microcircuitry patterns in connectomics data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C23, C30-C38, and C122 collectively describe the model architecture and capabilities. The model is well-documented with mathematical formulations, clear description of inputs (C33), outputs (C34-C35), and the extension from iSBM (C36-C37). The methodological contribution is substantiated by detailed methods and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "On simulated data with known ground truth, the model accurately recovers the correct number of cell types, cell identities, and spatial extent of types, outperforming the standard iSBM which cannot handle distance-dependent connectivity. The model performs well when data match its assumptions but struggles with continuous (non-discrete) type structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 are supported by simulation results shown in Figures 2 and 3. The comparative analysis demonstrates the model's ability to recover ground truth under appropriate conditions and identifies specific failure modes (e.g., latent position clustering, C53-C54). The convergence analysis (C49) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Edge effects from examining small tissue sections do not artificially introduce distance dependence when none exists, though very small sections can cause the model to miss true distance dependence. For datasets of currently available sizes, edge artifacts have limited effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by simulation results in Figure 4 that systematically examine edge effects across different spatial scales. The analysis demonstrates the model errs conservatively (C58) and validates its applicability to current dataset sizes (C59).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C29",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "On mouse retina data, the algorithm recovers known neuron types (ganglion, amacrine, bipolar cells) with high agreement to human anatomist classifications, accurately models distance-dependent connectivity, and produces spatially isotropic type distributions. The model identifies fewer types than the finest-grained anatomist classification (coarser grouping) but maintains high correlation with finer distinctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24, C29, C63-C71, C73 are supported by extensive results in Figures 5-6 showing quantitative agreement metrics (ARI, homogeneity, completeness), spatial distributions, and connectivity patterns. The acknowledged over-clustering (C73) is documented with data. The 8-hour runtime (C63) provides practical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C98"
+    ],
+    "result": "The model achieves superior link prediction accuracy (AUC ~0.9) and clustering accuracy (ARI) compared to simpler algorithms that use only connectivity. Performance improves when incorporating more information types (connectivity, distance, synapse distribution, soma depth), with distance information being critical for discovering spatially extended types rather than local cliques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C74-C81, C98 are supported by comparative analysis in Figure 6G-H showing quantitative metrics across multiple methods. The systematic ablation study (C78-C79) demonstrates the contribution of each data type. The spatial extent analysis (C80-C81) provides mechanistic insight into why distance information matters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The depth variance of discovered types is substantially larger than that predicted by human anatomists, indicating the model does not fully capture laminar structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by results in Figure 6H and acknowledged as a limitation requiring future work. This represents an honest assessment of model shortcomings with supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "On C. elegans connectome data, the model identifies cell types that agree with classifications from White (1986), clustering motor neurons, sensory neurons, and interneurons, though with some imperfect divisions. The identified types represent a 'coarsening' of known types based on connectivity and distance, even in this less spatially regular organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C88-C91 are supported by results in Figure 7 showing clustering patterns and comparison to established classifications. The acknowledgment of imperfect clustering (C90) with specific examples demonstrates rigorous evaluation. The generalization to a structurally different system validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "On a microprocessor (MOS 6502), the algorithm identifies transistor types that correspond to known functional components (clocked transistors, inverters, register control elements) and reveals spatial patterns of connectivity matching the engineered horizontal and vertical layout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C93-C97 are supported by results in Figure 8 with validation against original schematics. The identification of functionally meaningful types (C94-C96) and spatial patterns (C97) in a completely different domain (engineered circuits) provides strong evidence for the generality of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C108"
+    ],
+    "result": "Combining connectivity and distance information allows meaningful discovery of cell types and microcircuitry that match decades of previous research across multiple systems (retina, C. elegans, microprocessor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C108 are supported by the collective results across all three datasets (Figures 5-8). The consistency of findings across diverse systems with different spatial organizations provides strong validation of the core claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The MCMC inference approach cannot guarantee finding the global optimum, though different initializations converge to similar values. Inference time scales with data size, requiring several hours for 1000 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by computational analysis (Figures 9-10) and represent honest acknowledgment of computational limitations. The convergence analysis (C101) and runtime measurements (C103) provide empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The current dataset size is insufficient to distinguish all ~70 known retinal cell types. The model's hand-selected distance-dependent likelihood functions are non-exhaustive and assume monotonicity of connectivity probability, which is known to be insufficient for various neural systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C109-C111 represent acknowledged limitations with supporting reasoning. C107 is an inference based on statistical principles (C106), while C109-C111 identify specific model assumptions and their known inadequacies. These are honest assessments of current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C104",
+      "C105"
+    ],
+    "result": "With larger datasets, the algorithm is expected to distinguish more distinct types and achieve closer agreement with anatomical knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72, C104-C105 are speculations about future performance (evidence_type: SPECULATION). While reasonable based on general statistical principles (C106), these remain untested predictions without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The method may enable new applications including computational phenotyping for disease/genetic studies, cross-animal type identification, discovery of experience-dependent cell types, comparative anatomy, and integration of multiple data modalities. Computational approaches may become essential as datasets grow and could help resolve disagreements among anatomists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C121 are speculations about potential future applications and impacts (evidence_type: SPECULATION). While plausible and supported by analogies to other fields (C114, C115, C120), these remain untested hypotheses without empirical validation in the current work.",
+    "result_type": "MINOR"
+  }
+]

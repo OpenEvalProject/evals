@@ -1,0 +1,1835 @@
+{
+  "submission": {
+    "id": "f0ba97da-e152-4d08-85d4-5e13d362bb81",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:35:37.964793Z",
+    "updated_at": "2025-11-29T04:35:37.964793Z"
+  },
+  "content": [
+    {
+      "id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "submission_id": "f0ba97da-e152-4d08-85d4-5e13d362bb81",
+      "content_type": "manuscript",
+      "content_text": "# Logics and properties of a genetic regulatory program that drives embryonic muscle development in an echinoderm\n\n## Authors\n\n- Carmen Andrikou<sup>1</sup>\n- Chih-Yu Pai<sup>2</sup>\n- Yi-Hsien Su<sup>2</sup> \u2020\n- Maria Ina Arnone<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Biology and Evolution of Marine Organisms Stazione Zoologica Anton Dohrn Napoli Italy\n2. Institute of Cellular and Organismic Biology Academia Sinica Taipei Taiwan\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvolutionary origin of muscle is a central question when discussing mesoderm evolution. Developmental mechanisms underlying somatic muscle development have mostly been studied in vertebrates and fly where multiple signals and hierarchic genetic regulatory cascades selectively specify myoblasts from a pool of naive mesodermal progenitors. However, due to the increased organismic complexity and distant phylogenetic position of the two systems, a general mechanistic understanding of myogenesis is still lacking. In this study, we propose a gene regulatory network (GRN) model that promotes myogenesis in the sea urchin embryo, an early branching deuterostome. A fibroblast growth factor signaling and four Forkhead transcription factors consist the central part of our model and appear to orchestrate the myogenic process. The topological properties of the network reveal dense gene interwiring and a multilevel transcriptional regulation of conserved and novel myogenic genes. Finally, the comparison of the myogenic network architecture among different animal groups highlights the evolutionary plasticity of developmental GRNs.\n\n## Introduction\n\nMuscle cells are present in most animals with the characteristic of containing protein filaments that slide and produce contractions. In bilaterians, muscles develop usually from mesodermal cells in a process called myogenesis, during which the naive mesodermal progenitors are selectively specified as myoblasts and later differentiate into muscle cells. In vertebrate embryos, the mesoderm is subdivided into several regions from which different muscle types originated. For example, the axial skeletal muscles originate in the segmented paraxial mesoderm called somites, whereas the cardiac muscles develop from the lateral plate mesoderm. The subdivisions of different mesoderm regions require differential expression of the Forkhead (Fox) family of transcription factors, such as FoxC1 and FoxC2 for the paraxial mesoderm (Wilm et al., 2004) and FoxF1 for the lateral plate mesoderm (Mahlapuu et al., 2001). Analyses of molecular mechanisms underlying myogenesis in various parts of the somites further lead to a series of complex gene regulatory networks (GRNs) (Bryson-Richardson and Currie, 2008; Yokoyama and Asahara, 2011; Bentzinger et al., 2012). These networks are composed of multiple signals that drive the expression of the genes encoding basic helix-loop-helix (bHLH) domain-containing myogenic regulatory factors, which include myogenic differentiation 1 (MyoD), myogenic factor 5 (Myf5), Myf6, and myogenin (Myog). Other factors, including the myocyte enhancer binding factor 2 (MEF2) family of MADS-box proteins, transcription factors Pitx2, Pitx3, sine oculis-related homeobox (six) family members and their cofactors eyes-absent homologs (Eya), are also involved in specification and migration of the myogenic precursor cells (Molkentin and Olson, 1996; Yokoyama and Asahara, 2011). These myogenic transcriptional regulators then in turn initiate the transcription of muscle differentiation markers, such as myosin heavy chain proteins (MHC), that determine the morphological and functional identity of the differentiated muscle cells (Bryson-Richardson and Currie, 2008; Bentzinger et al., 2012).\n\nIn addition to the transcription factors mentioned above, myogenesis in different parts of the vertebrate somites depends on several signals including Notch, fibroblast growth factor (FGF), Wnts, bone morphogenetic factor 4 (BMP4), and Sonic hedgehog (Shh) that are secreted from adjacent tissues, such as neural tube, notochord, dorsal, and lateral ectoderms (Marcelle et al., 1997; Vasyutina et al., 2007; Delfini et al., 2009). Among these signals, FGF-signaling pathway is of particular interest because it has a crucial and conserved role in mesoderm patterning and muscle development in various animal models. In vertebrates, FGF induces the expression of myogenic genes in the primary myotome, controls the timing of the epithelial\u2013mesenchymal transition of the dermomyotome, which triggers the emergence of muscle progenitors (Delfini et al., 2009) and positively regulates muscle differentiation (Marics et al., 2002; Groves et al., 2005). In flies, an FGFR ortholog (Heartless)-mediated pathway is essential for cell migration and fate induction of the visceral mesoderm, heart, and the somatic muscle lineages (Beiman et al., 1996). In ascidians, FGF signaling is required for the specification of the heart progenitor cells and secondary muscle development (Beh et al., 2007; Tokuoka et al., 2007). In the nematode Caenorhabditis elegans, the crosstalk between FGF and Wnt signals is involved in larval sex myoblast specification and migration (Burdine et al., 1998; Lo et al., 2008). In the amphioxus Brachiostoma lanceolatum, FGF signaling is necessary for the formation of the anterior somites that will generate the musculature (Bertrand et al., 2011) and in the hemichordate Saccoglossus kowalevskii, FGF signaling is necessary for all types of mesoderm development (Green et al., 2013).\n\nThe overall genetic regulatory cascade that drives myogenesis appears to be highly conserved between ecdysozoans (Drosophila melanogaster and C. elegans) and vertebrates (Ciglar and Furlong, 2009). However, due to the high complexity that characterizes the vertebrate organogenesis and the distant phylogenetic position between ecdysozoans and vertebrates, the logics behind the genomic regulatory interactions that drive muscle development remain unclear. Therefore, elucidating the properties of the key genetic interconnections that orchestrate myogenesis in a larger set of model organisms is necessary to reveal the core myogenic circuits. Moreover, given the fact that the common origin of musculature is a highly debated topic (Seipel and Schmid, 2005; Burton, 2008; Steinmetz et al., 2012), a larger interspecies comparison of the transcriptional myogenic networks would provide new insights into the evolution of muscle and the kernel driven hypothesis.\n\nEchinoderms occupy a key phylogenetic position since they are early branching deuterostomes, therefore, are more closely related to vertebrates compared to the other two most studied invertebrate model systems (D. melanogaster and C. elegans). Sea urchin is a powerful model system for studying regulatory events that take place during development due to their advantageous properties for GRN analysis (Oliveri and Davidson, 2004). GRNs provide causal explanations of the molecular interactions occurring during dynamic developmental processes such as cell specification and differentiation (Davidson et al., 2002; Ben-Tabou de-Leon and Davidson, 2006). In the last decade, the extensive amount of data collected by perturbation analyses has led to the assembly of the largest so far known endomesodermal GRN (Davidson et al., 2002; Peter and Davidson, 2011; Materna et al., 2013) representing most of the transcriptional interactions that take place during endomesoderm formation in the sea urchin embryo. These properties make echinoderms an excellent model to study molecular developmental mechanisms and address aspects in evolution of organogenesis.\n\nSea urchin larvae possess a muscular apparatus that surrounds their esophagus and produces contractile force (Burke, 1981; Burke and Alvarez, 1988). These muscle cells originate from mesoderm and adapt the myogenic fate by segregating from the other three non-skeletogenic mesodermal (NSM) lineages at the early gastrula stage (Ruffins and Ettensohn, 1996). The first appearance of myoblasts is seen at the late gastrula stage as a few cells in the oral vegetal domain of each coelomic sac at the tip of the archenteron and they express a number of muscle-specific transcription regulators (Andrikou et al., 2013). Few hours later, at the prism stage, these cells extend pseudopods towards the midline of the esophagus, increase in number and diameter, fuse to each other, and finally form the circumesophagael contractile bands (Burke and Alvarez, 1988).\n\nDespite the existence of large amount of data concerning the mechanisms patterning the early endomesoderm segregation, little is known about the regulatory landscape of the later NSM specification. Parts of the regulatory events that underlie the specification of the three NSM mesodermal lineages (blastocoelar, pigment, and coelomic pouch cell lineages) were recently revealed (Luo and Su, 2012; Ransick and Davidson, 2012; Materna et al., 2013; Solek et al., 2013), and only scattered information regarding the molecular interplay that establish the muscle lineage is available in the literature. In particular, transcription factors such as Twist (Wu et al., 2008) and a sea urchin lineage-specific Fox family factor, FoxY (Materna et al., 2013), and signaling pathways such as Delta/Notch (D/N) (Sherwood and McClay, 1999; Sweet et al., 2002) and Hedgehog (Hh) (Walton et al., 2009; Warner et al., 2014) seem to be involved in muscle development, but the molecular mechanisms remain poorly understood.\n\nIn our previous work, we identified several homologues of myogenic regulators in the sea urchin embryo and revealed the regulatory state of the myoblasts and their precursor cells (Andrikou et al., 2013). Further functional analyses are needed to confirm the myogenic function of these transcription factors and to unravel the regulatory architecture of the muscle GRN. This study provides an explanatory mechanism on how the sea urchin muscle lineage is specified using a perturbation approach accompanied by a combination of temporal and spatial gene expression analyses. We show that FGF signaling is necessary for specifying naive NSM cells to myoblast precursors at the very early gastrula stage. The four Fox family factors FoxY, FoxC, FoxF, and FoxL1 (Tu et al., 2006) constitute the central part of our myogenic GRN model and are activated sequentially. Other conserved key factors that occupy different hierarchical levels in the myogenic GRN are members of the T-box (Tbx6) (Howard-Ashby et al., 2006), bHLH (MyoD2) (Andrikou et al., 2013), SRY (Sox) (Howard-Ashby et al., 2006), Scratch (ScratchX) (Materna et al., 2013), and Six (Six1/2) (Poustka et al., 2007) family genes. These findings imply an overall high level of functional conservation of both key myogenic transcriptional regulators and signaling components but not of the myogenic GRN architecture per se. Also, they explain in a rational way the logics and properties of the regulatory interactions that drive myogenesis in the sea urchin embryo.\n\n## Results\n\n### Genes encoding FGF-signaling components are expressed in the putative myoblast precursors\n\nAs shown in our previous work (Andrikou et al., 2013), the myogenic lineage seems to segregate as early as the very early gastrula stage (30 hr post fertilization). The relative position of these cells is not precise at the earlier stages but they seem to be located at the oral/lateral periphery of the vegetal plate, at the border between the blastocoelar and pigment cell precursors (Figure 1\u2014figure supplement 1 [Ruffins and Ettensohn, 1996]). To reveal the cause of myoblast emergence at the early gastrula stage, we searched for putative candidate signaling components that are expressed at that time in the myoblast precursors. As elsewhere demonstrated, a mesodermal Delta/Notch signal activates FoxY, which is required for the specification of the two mesoderm derivatives, coelomic pouches and muscles (Materna and Davidson, 2012; Materna et al., 2013). The segregation of these two derivatives should thus specifically rely on another signal that triggers myoblast specification at that particular developmental time.\n\nThere are one FGF ligand, FGFA (Figure 1\u2014figure supplement 2), and two FGF Receptors (FGFRs), FGFR1, and FGFR2 (Figure 1\u2014figure supplement 3), annotated in the sea urchin genome (McCoon et al., 1996; Lapraz et al., 2006). A previous study showed that inhibition of FGFR2 affects morphogenesis of the embryonic skeleton (Rottinger et al., 2008). We therefore focused on characterizing the expression patterns of genes encoding FGFR1 and FGFA ligand in the sea urchin Strongylocentrotus purpuratus. The expression profile of both genes matches with the one already described in another sea urchin species, Paracentrotus lividus (Rottinger et al., 2008). To better resolve the expression patterns of these two genes relatively to the myoblast precursors, double fluorescent in situ hybridizations (FISHs) with FoxC, the earliest myoblast precursor marker (Andrikou et al., 2013), were performed. At the very early gastrula stage, FGFR1 was expressed in all FoxC-positive cells (Figure 1A) whilst at the late gastrula stage (48 hr), only a number of FGFR1 transcripts overlap with FoxC-positive cells at the tip of the archenteron (Figure 1\u2014figure supplement 4). Moreover, FGFA transcripts were observed in the ventrolateral ectodermal regions in the vicinity of FoxC-positive cells (Figure 1B). The spatial and temporal expression of FGFR1 and FGFA suggests a putative role of FGF signaling in sea urchin myogenesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig1-v2.jpg)\n\n**Figure 1.:** FGFR1 and FGF were stained in green and FoxC in red at the very early gastrula stage (30\u201332 hr). Nuclei were labeled blue with DAPI. Yellow circles indicated by yellow arrowheads show cells co-expressing the analyzed genes. Panels A and B are stacks of merged confocal Z sections of all three channels, while separate channels over DAPI are presented in the other panels. Insets in panels A\u2013A\u2033 show representative single confocal sections to confirm that the two genes are indeed expressed in the same cell. Embryos in A\u2013A\u2033 are seen in a lateral view along the animal-top/vegetal-down axis. Embryos in B\u2013B\u2033 are displayed in a vegetal view. fv, frontal view; vv, vegetal view; o, oral, ab, aboral. The position of the putative unspecified myoblast precursors is indicated in Figure 1\u2014figure supplement 1. Phylogenetic analyses of sea urchin fibroblast growth factor (FGF) and FGFR protein sequences are reported in Figure 1\u2014figure supplements 2, 3, respectively. A co-expression analysis of FGFR1 and FoxC at late gastrula stage (48 hr) is reported in Figure 1\u2014figure supplement 4.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Co-staining of Gcm as a marker for aboral pigment cell precursors, Ese for oral blastocoelar cell precursors, and FoxA for endoderm at 26 hr. Gcm transcript was stained in light green, Ese in red, and FoxA in cyan. Nuclei were labeled blue with DAPI. Yellow circles indicate the SMs, and white circles indicated by white arrows show single cells that do not express any of the analyzed genes. In 85% of the embryos analyzed, approximately two triple-negative cells were observed that might represent myoblast precursors. All embryos are in a vegetal view. Panels A, B, and C are merged confocal stacks, while panels A\u2032\u2013A\u2034 depict separate channels over DAPI. Panel D is a schematic representation of the vegetal surface of a sea urchin mesenchyme blastula orientated along the oral right/aboral left (O/Ab) axis, seen from the vegetal pole. The different NSM domains identified by distinct regulatory signatures at the vegetal plate are shown in different colors as indicated in the legend. Primary mesenchyme cells are not visible as they have already ingressed into the blastocoel at this stage.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The protein domain structure of the SpFGFA contains a signal peptide and a FGF core domain. (B) Phylogenetic analysis of FGF proteins. The tree was constructed by the neighbor-joining method based on the multiple alignments of the FGF core domains from various organisms. Bootstrap values over 50% are shown at the branch points. Sea urchin FGFs (Sp-FgfA and Pl-FgfA) do not group with the seven vertebrate FGF families from A to G. The scale indicates the % amino acid difference with Poisson correction. GenBank accession numbers for FGFs are: acorn worm SkFgf20 like, NM_001171225; amphioxus AmphiFgf1/2, EU606032; AmphiFgf8/17/18, EU606035; AmphiFgf9/16/20, EU606036; ascidian CiFgf8/17/18, NM_001032476; CiFgf11/12/13/14, NM_001032561; Caenorhabditis elegans CeEGL17, NM_075706; Drosophila melanogaster DmPYR, AY55396; DmTHS, NM_136857; human HsFgf19, NM_005117; mouse MmFgf1, NM_010197; MmFgf2, NM_008006; MmFgf3, Y00848; MmFgf4, NM_010202; MmFgf5, NM_010203; MmFgf6, NM_010204; MmFgf7, NM_008008; MmFgf8, NM_010205; MmFgf9, U33535; MmFgf10, NM_008002; MmFgf11, NM_010198; MmFgf12, NM_183064; MmFgf13, NM_010200; MmFgf14, NM_010201; MmFgf15, NM_008003; MmFgf16, AB049219; MmFgf17, NM_008004; MmFgf18, NM_008005; MmFgf20, AB049218; MmFgf21, NM_020013; MmFgf22, NM_023304; MmFgf23, NM_022657; sea urchin Sp-FgfA, HQ107979; Pl-FgfA, EF157978.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) The protein domain structures of SpFGFR1 and SpFGFR2. The Fibronectin III domain (FN3), three Ig domains (Ig1-3), acid box (AB), transmembrane region (TM), and Tyrosine kinase domain are indicated. (B) For the phylogenetic analysis, the tyrosine kinase domains of FGFRs were aligned, and the tree was built in the same manner as the FGF tree. SpFGFR1 and SpFGFR2 are not orthologous to the human FGFR1 and FGFR2, respectively. GenBank accession numbers for FGFRs are: human HsFgfR1, AB208919; HsFgfR2, NM_000141; HsFgfR3, NM_000142; HsFgfR4, AY892920; ascidian CiFgfR, NM_001044355; C. elegans CeEGL-15, NM_077441; D. melanogaster DmBreathless, NM_168577; DmHeartless, NM_169784; sea urchin SpFgfR1, NM_214537; SpFgfR2, JF499690.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Relative spatial expression domains of FGFR1 and FoxC at late gastrula stage (48 hr). Image is a stack of merged confocal Z sections in all channels. Inset shows representative single confocal section of the tip of the archenteron. Color code of channel association to each gene is shown in each panel. Nuclei are stained blue with DAPI. Embryo is seen in a frontal view.\n\n### FGF signaling specifies the time of the myoblast emergence and acts through a MAPK/ERK cascade\n\nTo test whether FGF signaling through FGFR1 is involved in sea urchin myogenesis, we perturbed FGF-signaling pathway by using (a) SU5402, a FGFR inhibitor (Mohammadi et al., 1997); (b) U0126, a MEK inhibitor (Favata et al., 1998); (c) an antisense morpholino oligonucleotide (MO) targeted to FGFR1; (d) a dominant negative form (Dn) of FGFR1. A summary of the phenotypes observed after inhibitor treatments is in Figure 2\u2014figure supplement 1A. 70% of the 300 pluteus larvae treated with SU5402 from 26 hr showed an abnormal elongated archenteron missing the pyloric and possibly the anal sphincter constrictions, although the cardiac sphincter was still formed (Figure 2A\u2013D) suggesting that the three distinct sphincters are differentially regulated (Annunziata and Arnone, 2014). Moreover, all larvae had shorter spicules and their triradiate skeleton was never fully shaped possibly due to the inhibition of FGFR2, which is specifically expressed in the skeletogenic primary mesenchyme cells (PMCs) that produce the larval skeleton (Rottinger et al., 2008). Finally, the coelomic pouches were not formed and the circumesophagael muscle fibers were completely absent when tested for MHC gene expression by FISH at the prism stage (Figure 2D). To reveal the downstream cascade of the FGF signaling, we used the MEK inhibitor U0126. In one of our previous studies, we showed that MAPK/ERK activation is required for muscle formation (Fernandez-Serra et al., 2004). We repeated the experiment by treating the embryos with U0126 at 26 hr, as we did with the SU5402 inhibitor. The treated larvae were tested again for the presence of muscle fibers by examining the MHC protein level using immunostaining. Again, the level of MHC protein was greatly reduced in the treated larvae (Figure 2\u2014figure supplement 1B,C). These findings show an involvement of FGF signaling through MAPK/ERK pathway in muscle development.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig2-v2.jpg)\n\n**Figure 2.:** To analyze the phenotype of FGF perturbation, bright-field images were taken with differential interference contrast (DIC). Effects on muscle formation were also tested by detection of MHC expression by fluorescent in situ hybridization (FISH) or of myosin heavy chain (MHC) protein localization by immunostaining on pluteus larvae (72 hr). The ciliary band and gut internal cilia were stained with an anti-acetylated tubulin antibody (AcT). Panels (A\u2013D) show the effect of SU5402 in the formation of the coelomic pouches (B) and MHC expression (D). Panels (E\u2013H) show the effect of anti-FGFR1 translation morpholino oligonucleotide (MO) in the formation of the coelomic pouches, MHC protein localization, and gut morphology. Two representative phenotype embryos, both with impaired muscles while differing for gut sphincter formation, are reported in F (normal gut, 70% of cases) and H (reduced sphincters, 30% of cases). Panels (E, G, I, and J) show the effect in MHC protein localization caused by injection of FGFR1 dominant negative RNA (DnRNA) (J). Panels (A, C) show control embryos treated with DMSO. Panel (G) shows a larva injected with a fluo-control MO and panels (E, I) show control uninjected larvae (for MO injection controls see also \u2018Materials and methods\u2019 and Figure 2\u2014figure supplement 2). The inset in panel H is a magnified view of the cilia at the apical organ. Pictures in C, D, and G\u2013J are stacks of merged confocal Z sections. MHC was stained in red and acetylated tubulin in green. Nuclei were labeled blue with DAPI. Spicules are seen in DIC analysis as reflecting polarized light objects. All embryos are seen in frontal view except the ones in panels E, F, and I that are seen in lateral view with the oral side on the right (fv, frontal view; lv, lateral view). White arrows indicate the position of cardiac sphincters, whilst yellow and red arrows show, where present, the pyloric and anal sphincters, respectively. Black lines indicate pigment cells (pc). White lines indicate muscle fibers (mf). The asterisks indicate the absence of coelomic pouches (cp). A summary of SU5402 and U0126 treatments as well as MHC protein expression analysis after MEK pathway perturbation is reported in Figure 2\u2014figure supplement 1. Control MO experiments are reported in Figure 2\u2014figure supplement 2. Co-expression analysis of genes encoding putative MAPK effectors and FoxC as well as P-Elk protein detection is reported in Figure 2\u2014figure supplement 3.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scheme summarizing the drug treatments performed and the morphological phenotypes observed. (B, C) MHC protein localization was tested by immunostaining in (B) control pluteus larva and (C) pluteus larva treated with the MEK inhibitor U0126 as indicated in (A) by the green line. The ciliary band and gut internal cilia were stained with an anti-acetylated tubulin antibody. MHC was stained in red and acetylated tubulin in green. Nuclei were labeled blue with DAPI. All embryos are seen in lateral view with the oral side on the right.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Panels A- D show control uninjected embryos at very early gastrula (A), late gastrula (B), and pluteus larva (C, D). Panels (E\u2013G) show embryos injected with fluo-control MO at very early gastrula (E), late gastrula (F, H), and pluteus larva (G, I). Panels J and K show the effect in the translation of FGFR1-GFP fusion protein expression after FGFR1 MO injection (K\u2013K\u2032) compared to controls injected with FGFR1-GFP mRNA only (J\u2013J\u2032). A\u2013C, E\u2013G, J and K are bright-field images taken with DIC, E\u2032\u2013G\u2032, J\u2032 and K\u2032 are fluorescent images, whilst D, H, and I are stacks of merged confocal Z sections. In panels D, H, and I, MHC was immunostained in red, acetylated tubulin in green, and nuclei were labeled blue with DAPI. Embryos in panels D and I are the same shown in Figure 2I and Figure 4A, respectively. Embryos in panels A\u2013E, G, and I\u2013K are seen in lateral view while those in panels B, F, and H are in frontal view. fv, frontal view; lv, lateral view; cp, coelomic pouches; pc, pigment cells; sp, spicules; mo, mouth; st, stomach; in, intestine.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A, B) Localization of P-Elk protein by immunostaining. (C\u2013F) Spatial expression domains of (C, D) Erg and (E, F) Ets1/2 with respect to FoxC by double FISH. Panels A, B are DIC images, and panels C\u2013F are stacks of merged confocal Z sections. Insets in panels E, F show representative single confocal sections. FoxC is red, Erg is green, and Ets1/2 is cyan. Nuclei were stained blue with DAPI. Embryos in A and C panels are viewed from the vegetal pole while all the others are seen in frontal view.\n\nTo reinforce the role of FGF signaling mediated through FGFR1 during myogenesis, we performed gene knockdown experiments by injecting anti-translation MO against FGFR1 at a concentration of 500 \u03bcM. The MO toxicity and efficacy were examined by using a control MO and a GFP fusion construct, respectively (Figure 2\u2014figure supplement 2). Although in 90% of the morphant larvae, a malformation of coelomic pouches (Figure 2F) and a severe down-regulation of the MHC protein level were evident (Figure 2G,H), two different phenotypes concerning the compartmentalization of the archenteron were observed. 70% of the larvae displayed a fully elongated gut, with the cardiac and anal sphincters well formed (Figure 2F), while in the rest cases both sphincters were absent or partly formed (Figure 2H). In addition, an abnormal extension of cilia in the apical ectoderm was observed (Figure 2H insert) that provides a putative additional role of FGFR1 in patterning the apical organ (Paola Oliveri, personal communication) consistent with the expression of FGFR1 in the apical domain (Figure 1A). An evident reduction of the cilia in the gut lumen is also observed (Figure 2H), which may be related to the FGFR1 expression seen in the endoderm during gastrulation (Figure 1\u2014figure supplement 4). Moreover, the larval skeleton and the formation of pigment cells were not affected, confirming that FGFR1 is not involved either in PMC patterning and subsequent skeleton formation or in pigment cell development (Figure 2F). An even more severe phenotype was obtained by injecting the embryos with the mRNA encoding FGFR1 Dn with the cardiac and anal sphincters being absent in 60% of the cases (Figure 2J). As expected, MHC levels were greatly reduced whilst the same abnormal extension of cilia in the apical ectoderm and the reduction of the cilia in the gut lumen were observed. Taking together, these experiments not only demonstrate clearly an essential role of FGF signaling through FGFR1 in sea urchin myogenesis but also suggest its possible involvement in the formation of the ciliated gut epithelium and the ciliary ectoderm.\n\nWe then tested the expression of the myoblast marker genes FoxY, FoxC, and FoxF in the FGF signaling-perturbed embryos at the very early gastrula (28 hr), mid gastrula (36 hr), and late gastrula (48 hr) stages, respectively. While FoxY expression did not change when FGF signaling was perturbed (Figure 3A\u2013D), a severe impact was observed in FoxC and FoxF transcript levels in all treated embryos (Figure 3E\u2013L). To check whether the specification of other oral NSM cell lineages were affected as well by the FGFR1 perturbation, we also tested the expression of Ese, a marker of the blastocoelar cell lineage, and found it unaffected (Figure 3A,B). These results further support the involvement of FGF signaling in myogenesis and demonstrate that FoxC and FoxF factors are acting downstream of it.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig3-v2.jpg)\n\n**Figure 3.:** FoxY (A\u2013D) FoxC (E\u2013H), FoxF (I\u2013L), MHC (I, J), and Ese (A, B) transcript localization tested by FISH in control embryos (A, C, E, G, I, K) and in embryos treated with SU5402 (B, F, J) or injected with FGFR1 MO (D, H, L) (for MO injection controls see also \u2018Materials and methods\u2019 and Figure 2\u2014figure supplement 2). Panels A, B, I, and J show double FISH. FoxY was stained in green, FoxC and FoxF in red, MHC in cyan, and Ese in magenta. Nuclei were labeled blue with DAPI. Each picture is a stack of merged confocal Z sections. Yellow circles indicated by yellow arrowheads show cells co-expressing the analyzed genes. The orientation of the larvae is reported for each panel: fv, frontal view; av, animal view; lv, lateral view.\n\nETS family transcription factors are known effectors of the MAPK-signaling pathway. In order to understand whether ETS-domain-containing transcriptional regulators are likely to be the downstream effector of the MAPK pathway leading to FoxC and FoxF transcription in presumptive myoblasts, we searched for ETS family factors that are significantly expressed in the NSM at the very early gastrula stage. From the 11 members of the ETS gene family that are present in the sea urchin genome, only 3 are expressed in the NSM at 30 hr; Elk, Erg, and Ets1/2 (Rizzo et al., 2006). We performed an immunostaining experiment on the phosphorylated active form of Elk (P-Elk) and double FISH of FoxC and Erg or Ets1/2. The spatial localization of P-Elk protein seemed to be excluded from the myogenic cells, when comparing it to the expression pattern of FoxC (Figure 2\u2014figure supplement 3A\u2013C), suggesting that P-Elk is probably not the candidate effector of MAPK involved in myoblast specification. Erg expression was also not coincided with FoxC transcripts at 30 hr (Figure 2\u2014figure supplement 3C,D), thus, indicating that this factor is also not the downstream effector. On the other hand, Ets1/2 expression showed a clear co-localization with FoxC transcripts at around 30 hr (Figure 2\u2014figure supplement 3E,F) that perfectly corresponds to the onset of myogenesis, suggesting a putative role of Ets1/2 as one of the terminal effectors of MAPK pathway acting during myoblast specification. Further perturbation experiments are needed to confirm this hypothesis.\n\n### Four members of the Forkhead family of transcription factors in the myogenic GRN model\n\nGiven the interesting temporal and spatial expression profile of FoxY, FoxC, FoxL1, and FoxF regulators during myogenesis and the decrease in FoxC and FoxF expression observed after perturbing FGF signaling, translation-blocking MOs specific for all four Fox factors were designed and tested at a concentration of 200 \u03bcM.\n\nThe injected embryos were fixed at the larval stage for immunostaining to test MHC protein levels. In 90% of the FoxY morphants, the archenteron was fully elongated with signs of incomplete differentiation and the coelomic pouches were lacking, as was shown previously (Song and Wessel, 2012; Materna et al., 2013). The MHC level was also severely reduced (Figure 4A,B). 80% of the FoxC morphants showed a similar morphological alteration; the archenteron was fully invaginated and partially compartmentalized, missing completely the coelomic pouches and MHC protein (Figure 4C). In 90% of the FoxF morphant larvae, a fully tripartite archenteron was present with disorganized coelomic pouches and a great decrease in the MHC level (Figure 4D). 95% of the FoxL1 MO-injected larvae possessed a differentiated archenteron with disrupted coelomic pouches and reduced MHC protein level (Figure 4E). The phenotypes caused by FoxC, FoxF, and FoxL1 MOs were confirmed by injecting a second translation-blocking MO targeting to different sequences (Figure 4\u2014figure supplement 1). These observations reinforce the crucial role of Fox family factors in sea urchin myogenesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig4-v2.jpg)\n\n**Figure 4.:** MHC protein localization was tested by immunostaining in fluo-control MO-injected pluteus larvae (72 hr) (A) and in embryos of the same age injected with MOs against FoxY (B), FoxC (C), FoxF (D), FoxL1 (E), MyoD2 (F), Six1/2N (G), and Tbx6 (H) (for MO injection controls see also Materials and methods and Figure 2\u2014figure supplement 2). The ciliary band and gut internal cilia were stained by immunohistochemistry with an anti-acetylated tubulin antibody. Each picture is a stack of merged confocal Z sections with MHC in red and acetylated tubulin in green. Nuclei were labeled blue with DAPI. All embryos are seen in lateral view with the oral side on the right. White arrows indicate the position of cardiac sphincters. White lines indicate muscle fibers (mf). Below each panel, statistics of muscle fiber phenotype observed are reported as normal (6\u20137 mf), mild (4\u20135 mf), or strong (0\u20132 mf). A co-expression analysis of Six1/2 and FoxC is reported in Figure 4\u2014figure supplement 1. Analysis of the temporal expression profile of two distinct Six1/2 isoforms and visualization of pigmentation after perturbing Six1/2N isoform are reported in Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Circumesophagael muscles were tested by phalloidin staining in fluo-control MO-injected pluteus larvae (72 hr) (A, A\u2032) and in embryos of the same age injected with MOs against FoxC (B, B\u2032), FoxF (C, C\u2032), and FoxL1 (D, D\u2032) at different concentrations. Each picture is a stack of merged confocal Z sections. Phalloidin is seen in green and nuclei are labeled blue with Hoechst. All embryos are seen in lateral view with the oral side on the left. Below each panel, statistics of muscle fiber phenotype observed are reported.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Relative spatial expression domains of Six1/2 and FoxC at the mid gastrula stage (42 hr). Image is a stack of merged confocal Z sections in all channels. Inset shows representative single confocal section of the tip of the archenteron. Color code of channel association to each gene is shown in each panel. Nuclei are stained blue with DAPI. Embryo is seen in a frontal view.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Upstream sequence of the of the Six1/2 gene. Two ATGs are shown in red. The upstream one, highlighted in bold, corresponds to the first ATG in the long isoform (Six1/2N) that is probably generated by an alternative transcription start. The downstream ATG indeed corresponds to the first ATG of the short isoform in which transcription starts a few nucleotides upstream of it (Andrew Ransick, personal communication). Highlighted in different colors show the regions where the different set of qPCR primers were designed: the ones used to amplify the upstream sequence belonging to Six1/2N isoform only, are in yellow, while the ones used to amplify part of the homeobox domain (in bold), common to both isoforms, are highlighted in olive green. The target sequence used to design the MO against the long isoform Six1/2N is highlighted in cyan. (B) Temporal expression profiles of Six1/2 distinct isoforms during sea urchin embryogenesis. Graph shows the number of transcripts per embryo during embryogenesis revealed by qPCR. Six1/2HD represents the sum of the number of transcripts of the two isoforms, while Six1/2N shows only the number of transcripts for Six1/2N. The columns represent average of various measurements, and the error bars are standard deviations. (C, D) Bright-field images were taken with DIC of (C) control uninjected larva and (D) Six1/2N morphant (72 hr) for visualizing the effect on pigmentation.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Circumesophagael muscles were tested by phalloidin staining in fluo-control MO-injected pluteus larvae (72 hr) (A, A\u2032 in Figure 4\u2014figure supplement 1) and in embryos of the same age injected with MOs against Six1/2 (A, A\u2032) and Tbx6 (B, B\u2032) at a concentration of 100 \u03bcM. Each picture is a stack of merged confocal Z sections. Phalloidin is seen in green and nuclei are labeled blue with Hoechst. All embryos are seen in lateral view with the oral side on the left. Below each panel, statistics of muscle fiber phenotype observed are reported.\n\n### MyoD2, Tbx6, and Six1/2 are necessary for proper muscle development\n\nMOs blocking the translation of three mesodermal markers Tbx6, MyoD2, and Six1/2 that are known to have conserved roles in muscle development were included in the study. MyoD2 and Tbx6 are both parts of the molecular fingerprint of the myoblasts at the late gastrula stage, which makes them good candidates as myogenic regulators (Andrikou et al., 2013). Six1/2 is known to be a part of the regulatory state of the aboral mesoderm, which gives rise to two other mesodermal derivatives (pigment cells and coelomic pouches) (Poustka et al., 2007). At the mid gastrula stage, Six1/2 expression partially overlapped with that of FoxC in the oral mesodermal domain (Figure 4\u2014figure supplement 2). This transient expression seems to be correlated with the transcription of a late isoform whose peak of expression was seen at 42 hr (Figure 4\u2014figure supplement 3A,B). Therefore, a MO blocking the translation of the late isoform was designed and tested.\n\n85% of the MyoD2 morphants showed an elongated archenteron, and in most of the cases with reduced sphincter constrictions. The coelomic pouches were also not formed properly and the MHC level was dramatically reduced (Figure 4F). In 80% of the Six1/2 morphants, the archenteron was elongated but not differentiated, the coelomic pouches were absent, and the MHC level was decreased (Figure 4G). Interestingly, unlike what previously shown by using an MO against the early isoform of Six1/2, which negatively affects pigmentation (Ransick and Davidson, 2012), embryos injected with the MO targeted to the late Six1/2 isoform were fully pigmented (Figure 4\u2014figure supplement 3C,D). Finally, 95% of Tbx6 morphants had a milder phenotype, with no signs of malformed coelomic pouches and only a partial disrupted muscle fiber assembly as shown by MHC immunostaining (Figure 4H). Similar phenotypes were observed when injecting a second MO against Six1/2 and Tbx6 (Figure 4\u2014figure supplement 4). The above experiments demonstrate an important role of MyoD2 and the late isoform of Six1/2 as well as a limited role of Tbx6 in sea urchin muscle development, thus, suggesting that Tbx6 acts in a redundant manner with other factors, a known property of T-box factors (Gentsch et al., 2013). To test this hypothesis, double knockdown assays should be conducted.\n\n### Expression of selected mesodermal genes in FoxY, FoxC, FoxL1, FoxF, Tbx6, MyoD2, and Six1/2 morphants\n\nIn order to identify the myogenic gene core set and unravel in detail the inter-regulatory mechanisms that take place during myogenesis, we tested the expression of genes encoding selected mesodermal factors and signaling components in the morphants by FISH (Figure 5), quantitative PCR (qPCR) (asterisks in Figure 6), and NanoString analysis (Figure 6\u2014source data 1, 2). We selected three different developmental stages for our analyses that correspond to three distinct steps of myogenesis: early gastrula (30\u201335 hr) as myoblast specification stage, a broad mid gastrula (36\u201344 hr), and late gastrula (45\u201348 hr) stage as intermediate and later steps of myogenesis, respectively. For NanoString analyses, we used a code set containing probes for most known NSM factors expressed at these developmental stages and a number of signaling components. The MO effects on transcript levels analyzed using the three methods were mostly consistent. For quantitative analyses using QPCR and Nanostring (Figure 6), changes in the transcript level were considered significant if the effect between control and MO injected embryos is more than twofolds. Epistatic interactions were evaluated when the effects were observed in at least two significant data points.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig5-v2.jpg)\n\n**Figure 5.:** FoxC, FoxY, FoxF, MHC, and nanos transcripts were detected by FISH in fluo-control MO injected embryos (A, C, E, G, I) and in embryos injected with MOs against FoxY (B, D, F), FoxC (H), and FoxF (J). All images are obtained as stacks of merged confocal Z sections. Panels G, H show double FISH. In panel G, single channels over DAPI are shown as insets. FoxY was stained in green, FoxC and FoxF in red, MHC in cyan, and Nanos in magenta. Nuclei were labeled blue with DAPI. Yellow circles indicated by yellow arrowheads show cells co-expressing the analyzed genes. The orientation of the embryos is indicated in each panel: fv, frontal view; lv, lateral view.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig6-v2.jpg)\n\n**Figure 6.:** Each diamond represents a single measurement of three independent biological experiments. Fold differences were calculated between experiments and control counts using the quantitative data obtained from the NanoString nCounter. Onefold change represents no change; \u2265 2 indicates increased expression level significantly (blue labels); \u2264 0.5 indicates decreased expression level significantly (red labels). Asterisks indicate perturbation effects as measured in independent biological experiments by qPCR. NanoString and qPCR perturbation data normalized against controls are provided in Figure 6\u2014source data 1, and raw NanoString data are provided in Figure 6\u2014source data 2.\n\nAt the early gastrula stage, FoxY and FoxC expression was strongly reduced in FoxY MO-injected embryos (Figure 5A\u2013D), suggesting that FoxY positively regulates itself and FoxC. This positive regulation continued to the mid and late gastrula stages and FoxY also positive regulated the other two Fox factors, FoxF and FoxL1 (Figure 6). The expression of Nanos, a germ cell marker (Juliano et al., 2006) that is part of the molecular signature of the myoblasts precursors at that developmental time point (Andrikou et al., 2013), was also downregulated in FoxY morphants (Figure 5E,F and Figure 6). FoxC, FoxF, and FoxL1 were downstream of FoxC at the mid gastrula stage. Expression of FoxF and FoxL1 required FoxC input, whereas FoxC negatively regulated itself (Figure 5G,H and Figure 6). At the late gastrula stage, FoxY expression domain was expanded in the FoxF morphants to include the oral vegetal region of the archenteron tip, where myogenesis takes place (Figure 5I,J).\n\nIn addition to the inter-regulatory properties of the Fox factors, at the mid gastrula stage, FoxY also positively regulated Pitx2 (Hibino et al., 2006), MyoR, a gene expressed in sea urchin mesoderm but not in the myoblasts (Andrikou et al., 2013), Six1/2 and ScratchX. FoxC also activated Tbx6 and repressed Not and Dachshund (Dachs), an aboral NSM gene in the sea urchin embryo (Luo and Su, 2012). Six1/2 appeared to activate FoxL1, MyoR, and Pitx2, as previously suggested (Hibino et al., 2006). At the late gastrula stage, FoxY continued to activate the aforementioned downstream factors although its effect on Six1/2 was diminished and activated in addition SoxE gene. FoxL1 gave positive inputs to FoxF, MyoR, ScratchX, and Pitx2 and repressed Dachs, FoxY, and Not. Tbx6 repressed FoxY, Dach, and Scl and activated Pitx2 and MyoR. Positive inputs on Tbx6 gene from FoxC and on MyoR gene from Six1/2 remained at the late gastrula stage. These perturbation analyses revealed complex positive and negative regulatory interactions among the four Fox factors and other transcriptional regulators, and the myogenic GRN models were formulated based on these results.\n\n### A provisional GRN model driving muscle specification in the sea urchin embryo\n\nThis detailed perturbation analysis coupled with the available high-resolution transcriptional profiling during sea urchin embryogenesis (Materna et al., 2010) led to the construction of a GRN model that orchestrates sea urchin myoblast specification. Based on the examined developmental stages and regulatory states, three GRN diagrams have been illustrated using the BioTapestry software (www.biotapestry.org), one for the very early and two for the mid and late gastrula stages. The three proposed GRN models are summarized in Figure 7.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig7-v2.jpg)\n\n**Figure 7.:** On the left side, three developmental stages of the sea urchin embryo are schematized: (A) early, (B) mid, and (C) late gastrula stage. On the right side, the genetic interactions found within this study are summarized. Different colors are used for each domain showing exclusive regulatory states: oral animal non-skeletogenic mesodermal (NSM) (OR AN NSM), salmon pink; NSM, blue; aboral NSM (AB NSM), lavender; small micromere derivatives (SM), green; myogenic domain (M), light red; endoderm (ENDO), yellow-green; oral ectoderm (OR ECTO), light gray. Genes are presented as horizontal thick lines and their names are reported below the thick lines. The wiring among the genes is shown with solid lines, although none of them has been demonstrated to be direct. Arrows represent positive regulation, bars represent repression, and white bullets, together with the dashed lines, indicate signaling events. Genes that are expressed in more than one domain, for which the putative inputs were revealed by NanoString but not validated by spatial expression analysis, are shown on a shaded background. The asterisk in A relates to the fact that we did not demonstrate which FGF factor signals to FGFR1. A co-expression analysis of several genes included in the gene regulatory network (GRN) diagrams is reported in Figure 7\u2014figure supplement 1. Numbers associated to inputs indicate the evidence for all interactions reported and are listed in Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07343/elife-07343-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Relative spatial expression domains of (A) SoxE and FoxC at the mid gastrula stage (40 hr), (B) Not and FoxC at the mid gastrula stage (44 hr), and (C) Pitx2 and FoxC at the late gastrula stage (48 hr). Each picture is a stack of merged confocal Z sections in all channels. Inset in panel A shows a representative single confocal section of the tip of the archenteron. Color code of channel association to each gene is shown in each panel. Nuclei are stained blue with DAPI. All embryos are in a frontal view.\n\nAt the very early gastrula stage (28\u201332 hr; Figure 7A), FGFA is produced in the ventrolateral ectoderm and is received by FGFR1, which is expressed in all myoblast precursor cells. FGF signaling induces myoblast specification through the MAPK/ERK pathway and a downstream effector (indicated as a circle in Figure 7A), possibly Ets1/2, and results in the activation of FoxC transcription. FoxC activation needs an additional positive input from FoxY. Since FoxY expression is excluded from the other two NSM lineages (pigment and blastocoelar cells) (Andrikou et al., 2013), it is reasonable to consider the existence of a Non-Skeletogenic Mesoderm Repressor (NSMR) that inhibits FoxY transcription in these cell populations. The existence of such a repressor has also been postulated by Materna and Davidson (2012). Here, we propose that in the myoblast precursors this repressive action is blocked through a double-negative gate, due to the existence of another repressor (X).\n\nAt the mid gastrula stage (40\u201344 hr; Figure 7B), FoxY establishes the myoblast regulatory state by activating a variety of transcriptional regulators including all four Fox factors. FoxC is a broad connected hub gene and gives positive inputs to a number of factors that compose the muscle gene battery such as FoxF, FoxL1, and Tbx6. FoxL1 needs also an additional input from Six1/2. Finally, SoxE is also part of the molecular identity of the myoblasts at the mid gastrula stage since it appears to largely co-express with FoxC (Figure 7\u2014figure supplement 1A); however, the upstream factor(s) controlling SoxE expression remain unknown.\n\nAt the late gastrula stage (44\u201348 hr; Figure 7C), the expression of FoxY, Nanos, Six1/2, and SoxE clears from the myogenic territory and confines in other NSM domains (small micromere [SM] and aboral NSM [AB NSM domain]). This occurs due to the repressive functions of FoxF and Tbx6 on FoxY, which results in a subsequent loss of Six1/2, SoxE, and Nanos expression. Similarly, Not (whose expression domain relative to that of FoxC is reported in Figure 7\u2014figure supplement 1B), as well as Scl and Dach receive negative inputs from FoxL1 and Tbx6, respectively, that together prevent their expression in the myogenic domain. The initiation of MHC transcription marks the terminal differentiation state (Andrikou et al., 2013).\n\n### Regulatory interactions in the other three NSM domains\n\nThe analyses of the perturbation data provided additional information concerning the regulatory interactions seen in the other three NSM domains. As elsewhere stated (Materna et al., 2013), FoxY is at the top of the hierarchy of the NSM GRN. Tbx6 and FoxL1 positively regulate Pitx2 (whose expression domain relative to that of FoxC is reported in Figure 7\u2014figure supplement 1C) and together with Six1/2 activate MyoR. However, the fact that Tbx6 and FoxL1 are not expressed in the AB NSM (Andrikou et al., 2013) lead us to the conclusion that their inputs on MyoR are indirect. FoxL1 may also activate Pitx2 in the oral ectoderm (OR ECT). Finally, in the SM lineage, FoxY is upstream of Nanos, FoxC, and Pitx2.\n\n## Discussion\n\n### FGF signaling pathway triggers myoblast specification\n\nIn this study, we propose that the muscle progenitors originate from a pool of unspecified cells located at the oral/lateral periphery of the vegetal plate at the mesenchyme blastula stage and they adapt the myogenic fate by receiving an inductive signal at the moment of gastrulation. This would further imply that all developmental decisions regarding the separation of all four NSM regulatory states (pigment, blastocoelar, muscle, and coelomic pouch cells) take place during the interval between the blastula and the very early gastrula stage.\n\nA key finding of this work was the recruitment of FGF signal in myoblast specification. FGF-signaling cascade is reported to trigger the emergence and/or promote the expansion of muscle lineage progenitors in different organisms and probably possessed an ancestral role in mesoderm patterning (at least in deuterostomes), along with other developmental processes. Genes encoding FGF and FGFR were already present in the last common ancestor of all metazoans, but the origin of the FGF/FGFR couple appears to be an innovation specific to the Eumetazoa, potentially linked to the increase of animal complexity (Bertrand et al., 2014). The acquisition of diverse roles and functions of FGF signaling occurred with the expansion of FGF and FGFR families during evolution (Itoh and Ornitz, 2011). For example, vertebrates are known to have the largest number of FGF-signaling components due to the two whole-genome duplication events (22 ligands and four receptors). FGF signals are involved in various developmental contexts (e.g., somitogenesis, cancer, gastrulation, metabolism, neural induction, etc) (Dorey and Amaya, 2010; Oki et al., 2010; Naiche et al., 2011; Ko et al., 2014; Neugebauer and Yost, 2014; Sandhu et al., 2014). Similar situations have been observed in Drosophila where the moderate expansions of both FGFR (breathless and heartless) and FGF (Pyramus [Pyr], Thisbe [Ths], and Branchless [Bnl]) families resulted in different biological functions such as cell\u2013cell interactions during mesoderm layer formation, caudal visceral muscle formation, tracheal morphogenesis, and glia differentiation (Muha and Muller, 2013). In echinoderms, the two paralogues FGFR1 and FGFR2 are involved in two distinct developmental processes: myoblast specification (this study) and PMC migration (Rottinger et al., 2008), respectively. Diverse functions of FGF signaling seen among different animal taxa suggest that this signaling system is redeployed at different levels of GRN hierarchy and acquire new functions in developmental and physiological processes. Moreover, the hierarchical position of FGF signaling seems to depend on the level of complexity of the developmental process placing it as a \u2018checkpoint\u2019 in a non-conserved way regarding its downstream targets, a known property of GRN \u2018plug-in\u2019 devices defined previously (Davidson, 2010). The functional importance of being attachable onto any kind of circuitry reflects the need of developmental GRNs to adopt factors that act as turn on/off apparatuses, resulting in change of the undefined cell regulatory state to their specific cell lineage.\n\n### The multilevel transcriptional regulation\n\nAn interesting finding of this analysis is the hierarchical organization of the regulatory interactions in the network topology. FoxY, a sea urchin-specific Fox family factor, lies on the top of the GRN architecture and is the key upstream regulator of sea urchin myogenesis and coelomic pouch formation. As shown elsewhere, FoxY is a direct target of the D/N signal, produced in the adjacent NSM. D/N signaling is known to be effective in cells being in direct contact with the ligand-producing cells (Wang, 2011). Therefore, the positive autoregulation of FoxY maintains its own expression during gastrulation when cells invaginate into the blastocoel and may be away from the signaling source.\n\nFoxY then promotes the expression of downstream positive regulators necessary for the execution of the myogenic lineage fate. The next tier of the myogenic GRN includes FoxC, SoxE, ScratchX, and Six1/2 factors and may be regarded as the core level of GRN. FoxC initially needs both positive inputs from FGF signaling and FoxY to be activated but then acts as an autorepressor in order to stabilize its number of transcripts. All factors belonging to this group are highly interconnected and provide multiple inputs to their downstream targets. On the same level of the GRN, immediately adjacent to the core, stands the intermediate layer of the network composed of the FoxF and FoxL1 transcriptional effectors. Finally, the last level of the network includes the differentiation driver and repressor Tbx6 that triggers the terminal myoblast differentiation. Tbx6 seems to cooperate redundantly with other factors in an OR logic (Davidson, 2010), which also explains the mild phenotype seen in the Tbx6 perturbations. The differentiation drivers, such as MyoD (Andrikou et al., 2013), are seen in the bottom of the GRN and probably activate the differentiation gene battery set, composed of a number of structural genes (e.g., MHC) that account for the specific function of the muscle cell.\n\nThis highly multilevel transcriptional regulation seen in myogenesis can be interpreted as an example of \u2018correlated evolution\u2019 where the increase of complex processes is accompanied by the expansion of the relevant regulatory systems whilst in less complex systems a shallower regulatory system can be provided.\n\n### Recruitment of the Fox factors in the myogenic GRN\n\nAnother important outcome that arose from this analysis is the sequential inter-regulatory mechanism observed among the four Fox family members FoxY, FoxC, FoxF, and FoxL1. The Fox family of transcription factors is an ancient gene family and it has been proposed that its evolutionary origin occurred in a clade of unicellular organisms (Baldauf, 1999). This family has expanded over time through multiple duplication events, and sometimes through gene loss, and resulted in over 40 members in vertebrates, grouped in 23 subclasses (Hannenhalli and Kaestner, 2009). Among them, FoxC, FoxF, and FoxL subfamilies are of particular interest because they are clustered in most metazoan genomes and usually involved in mesoderm specification/differentiation processes (Mazet et al., 2006; Shimeld et al., 2010). Moreover, a linked activation or an overlapping expression has been reported in some cases, as in vertebrates, where FoxC specifies the dorsal mesoderm and derivatives, while FoxF patterns the lateral mesoderm and derivatives (Beh et al., 2007; Zinzen et al., 2009; Amin et al., 2010; Fritzenwanker et al., 2014). In the sea urchin, where a cluster of FoxC, FoxF, and FoxL1 genes is present (Andrikou et al., 2013), we witness a similar regulatory logic where the different Fox factors pattern in an overlapping fashion in different compartments of the coelomic pouches. This cluster was probably expressed initially in developing mesodermal tissues and further evolved in regulating the specification and compartmentalization of mesodermal derivatives. Moreover, our findings highlight the importance of the hierarchical position of the Fox family factors in the GRN. The expression patterns and sequential activation of FoxC, FoxF, and FoxL1 genes in time reflect the linkage properties of the retained cluster: among the three genes, FoxC is the first to be turned on in the myogenic lineage and is necessary for the activation of the downstream factors FoxF and FoxL1, which are inter-regulated. The outcome of such complex inter-wiring GRN may contribute to the establishment of a more robust output, able to mask putative perturbations of single nodes, as recently proposed (Macneil and Walhout, 2011).\n\n### Exclusion of alternative NSM fates\n\nThis study provides additional insights into understanding the logic of the exclusive mechanisms that occur in the sea urchin embryo during myoblast specification (Davidson, 2009). By 24 hr post fertilization, the separation of the different NSM regulatory states is defined. The vegetal plate of the embryo consists of four distinct NSM cell populations: the aboral part that occupies about two-thirds of the total cells will differentiate into the pigment cells; the oral part that consists of the remaining one-third of the total cells will become the blastocoelar cells; the four SMs in the center are primordial germ cells; approximately 2\u20133 cells in the oral/lateral domain of the periphery of the vegetal plate will give rise to the myoblast precursors. As showed elsewhere, the specification of the distinct NSM domains depends on D/N and Nodal signals (Sherwood and McClay, 1999; Ransick and Davidson, 2006; Duboc et al., 2010). At 9 hr post fertilization, Delta ligand produced by the skeletogenic mesoderm activates a D/N cascade, which subsequently initiates Gcm and GataE transcription in all NSM cells (Ransick and Davidson, 2006; Lee et al., 2007). Later, at 24 hr, the NSM GRN becomes regionalized into distinct oral and aboral NSM GRNs in consequence of Nodal signaling through the immediate expression of a Nodal target, Not, in the oral NSM. This causes the repression of the aboral GRN in the oral NSM cells, and the aboral NSM cells still express Gcm and GataE as part of the regulatory state of the pigment cell lineage (Materna et al., 2013). In the oral NSM, the expression of a new suite of regulatory genes is taking place that belong to the blastocoelar lineage GRN (Solek et al., 2013). Our study showed that in the periphery of the oral/lateral NSM, the appearance of 2\u20133 unspecified cells is evident. These cells will soon get specified, at 28/30 hr, by receiving an inductive FGF signaling at the moment of gastrulation. FGF signal reception together with the double-negative gate caused by the repressive action of factor X on NSMR leads to the transcriptional activation of FoxY and FoxC expression. Positive inputs from FoxY and FoxC genes into downstream effectors promote the recruitment of the myogenic genes and lock down the myoblast regulatory state. Genes such as Scl, Dachs, Pitx2, and Not that belong to different NSM regulatory states are excluded from the myogenic domain leaving only the muscle GRN operating. Finally, spatial repression circuits generate regulatory transitions in the expression of key genes such as FoxY, Nanos, SoxE, and Six1/2, which now are established only in the other NSM GRNs. The sea urchin myogenic GRN is a nice example of how dynamic developmental processes can be encoded in the genome and shows clearly that understanding in depth the wiring properties of a developmental GRN model can provide a comprehensive view on the relationship between the regulatory architecture and gene expression dynamics.\n\n### Rewiring the myogenic GRN over evolutionary time\n\nThe nature of the evolutionary alterations that arise from regulatory changes depends on the hierarchical positions of these changes within a GRN. One of the most striking findings of this study concerns the paradox that genes are constantly re-used in the same context, but are rewired in different networks. Despite the conserved regulatory modules found in the system, the myogenic GRN structure has diverged extensively among animal groups. As a consequence, the level of the functional importance of the homologous transcriptional regulators (e.g., Six1/2 in sea urchin and Ceh-34 in C. elegans or MyoD in vertebrates and Nautilus in Drosophila) (this study, [Olson and Klein, 1994; Balagopalan et al., 2001; Amin et al., 2009]), as reflected from the position within the GRN, is often diversified. New, lineage-specific genes are recruited (FoxY in sea urchin), and \u2018master regulatory genes\u2019 either have been lost completely (e.g., the absence of Pax3/7 ortholog in the sea urchin) or lose their hierarchical position within the network (e.g., Nautilus in Drosophila and MyoD in vertebrates), with the level of complexity to be reflected in the wiring density and in the GRN organization. However, the fact that the same factors are used over and over again in such different animal systems indicates that the modular components are somehow required for keeping their myogenic activity during evolutionary time. It seems that as transcription factor families expanded and functionally diversified during evolution, the ancestral myogenic function may have been preserved in a more distant family member, rather than the homologous gene, providing the system with several regulatory alternatives, and explaining the high degree of evolutionary plasticity of developmental GRN architecture (Andrikou and Arnone, 2015).\n\nIn conclusion, this large scale GRN analysis demonstrated a necessary hierarchical role for a large number of transcriptional regulators in muscle development and explained in a rational way the core gene network that is orchestrating the specification of the myogenic lineage. Moreover, it revealed the key signaling events involved in the activation of the muscle gene battery and underlined their crucial role in transforming an unspecified cell into a specific cell type with a characteristic molecular signature. Finally, this study reinforces the importance of GRN-based approach in understanding in detail complex developmental processes by assessing the causality of the regulatory mechanisms that accompany each step of the process.\n\n## Materials and methods\n\n### Animal husbandry and embryo cultures\n\nAdult S. purpuratus were obtained from Patrick Leahy (Kerckhoff Marine Laboratory, California Institute of Technology, Pasadena, CA, USA) and housed in circulating seawater aquaria in the Stazione Zoologica Anton Dohrn of Naples. Spawning was induced by vigorous shaking of animals or by intracoelomic injection of 0.5 M KCl. Embryos were cultured at 15\u00b0C in Millipore filtered Mediterranean seawater diluted 9:10 (Vol:Vol) in deionized H2O.\n\n### Perturbation experiments\n\nFoxC, FoxF, FoxL1, MyoD2, Tbx6, FGFR1, and Six1/2 antisense MOs were obtained from Gene Tools (Pilomath, OR, USA) and injected at different concentrations in the presence of 0.12 M KCl. Various MO concentrations were tested and the lowest that enabled the observation of a phenotype was used for the experiments (500 \u03bcM for the FGFR1 MO and 200 \u03bcM for FoxC, FoxF, FoxL1, MyoD2, Tbx6, and Six1/2). Second MOs for FoxC, FoxF, FoxL1, Six1/2, and Tbx6 were used to confirm the morphant phenotypes (Figure 4\u2014figure supplements 1, 4). As a control experiment, a Standard Morpholino Control oligo end modified with 3\u2032-Carboxyfluorescein (control-fluo MO, Gene Tools) was injected in parallel at the same concentration as the corresponding experiments (Figure 2\u2014figure supplement 2). Embryos injected with FoxY, FoxC, FoxF, FoxL1, MyoD2, Tbx6, and Six1/2 MOs displayed a normal gross morphology, similar to uninjected or fluo-control MO injected embryos up to the pluteus stage, except for the effects on the coelomic pouches, and in the case of FoxC MO, the apical organ, thus, suggesting confined effects of these MOs in the expression domains of the corresponding targeted genes. To test FGFR1 MO efficacy, embryos were injected with mRNA containing the MO target sequence fused to the 5\u2032 of the gfp-coding sequence (500 ng/\u03bcl) with or without the MO (Figure 2\u2014figure supplement 2). FoxY MO was kindly provided by Stefan Materna (Caltech, USA). MO sequences used in this study are listed in Supplementary file 1.\n\n### Chemical treatments\n\nSU5402 was dissolved in DMSO and added to a final concentration of 20 \u03bcM at 26 hr, 28 hr, 30 hr, or 36 hr up to the collection time. Higher concentrations than this were lethal to the embryos soon after the addition of the drug and addition of the drug after 30 hr did not show any effect. U0126 was dissolved in DMSO and added to a final concentration of 10 \u03bcM at 24 hr as reported previously (Fernandez-Serra et al., 2004). A corresponding volume of DMSO was added as controls. A table summarizing the drug treatments and the observed phenotypes is seen in Figure 2\u2014figure supplement 1.\n\n### PCR cloning and construction of expression plasmids\n\nThe primers used to amplify FGFA from embryonic cDNA were designed based on the gene models. 5\u2032 and 3\u2032 sequences were extended by the FirstChoice RLM-RACE Kit (Ambion, Austin, TX, United States). The complete mRNA sequences were deposited into GenBank (Sp-FGFA, HQ107979). FGFR1 was amplified based on the published sequence (U17164). Both primer sets are in Supplementary file 1. To construct the dominant-negative form of FGFR1, a DNA fragment containing the signal peptide, the extracellular, and transmembrane domains was amplified by PCR (forward primer: 5\u2032-CGGGATCCATGAGTCTGCCGCGTTGTCC-3\u2032, reverse primer: 5\u2032-CCATCGATTGTCTCGAGGGAACTCCCAC-3\u2032) and cloned into the pCS2+MT vector.\n\n### Whole-mount in situ hybridization\n\nIn situ RNA probe sequences for FoxY, FoxC, FoxF, Ese, Nanos, Six1/2, SoxE, MHC, and Gcm are as previously published (FoxY: [Ransick et al., 2002]; FoxC, FoxF: [Tu et al., 2006]; Ese: [Rizzo et al., 2006]; Nanos: [Juliano et al., 2006]; Gcm: [Ransick et al., 2002]; Six1/2, SoxE, and MHC: [Andrikou et al., 2013]). Labeled probes were transcribed from linearized DNA using digoxigenin-11-UTP or fluorescein-12-UTP (Roche, Indianapolis, IN, USA), or labeled with DNP (Mirus, Madison, WI, USA) following kit instructions. For whole-Mount In situ hybridization (WMISH) with single probe, we followed the protocol outlined in (Minokawa et al., 2004). Double FISH and immunohistochemistry coupled to FISH were performed as described in (Andrikou et al., 2013). For triple FISH, the third signal was developed using a 488 fluorophore-conjugated tyramide (Invitrogen). Embryos were imaged with a Zeiss Axio Imager M1. FISHs were imaged with a Zeiss 510Meta confocal microscope.\n\n### Whole-mount immunohistochemistry\n\nEmbryos were collected by gentle centrifugation and fixed in 2% paraformaldehyde in PBS for 15 min, washed 3 times in PBST, and incubated in 4% sheep serum and 1 mg/ml BSA in PBST for 30 min. Embryos were then incubated with a primary antibody (anti-SpMHC, rabbit polyclonal antibody, diluted 1:600, PRIMM, Italy or a commercially available anti-P-Elk1 [Serine 383], mouse monoclonal antibody, dilution 1:100, Santa Cruz Biotechnology, Santa Cruz, USA) overnight at 4\u00b0C, washed 4 times in PBST, and followed by another incubation in 4% sheep serum and 1 mg/ml BSA in PBST for 30 min. Similarly, embryos were then incubated with a secondary antibody (anti rabbit-AlexaFluor 555, Invitrogen or anti mouse-HRP) diluted 1:1000 for 1 hr in RT, washed 4 times in PBST, and imaged with a Zeiss 510Meta confocal microscope.\n\n### RNA extraction and transcriptional profiling\n\nTotal RNA was isolated from cultures of various embryonic stages, approximately 100 embryos per replica. The RNA was extracted with RNAquous (Ambion). The samples were treated with DNase I (Ambion) to remove DNA contamination as described by the manufacturer. First-strand cDNA was synthesized from total RNA using the VILO kit (Invitrogen) according to the manufacturer's protocol. Expression levels were quantified using the NanoString nCounter (NanoString, UCL, London) with a custom-designed probe set of 40 genes (Supplementary file 1). Samples were processed according to manufacturers' instructions and data processed as described previously (Materna and Davidson, 2012). Thresholds of 2- and 0.5-fold differences were chosen as significant changes (Materna and Davidson, 2012). Some data points were supplemented with results from quantitative real-time PCR (qPCR) analyses. qPCR was conducted as described (Rast et al., 2000), using the ViiA 7 REAL TIME PCR detection system and SYBR green chemistry (Applied Biosystems, Foster City, CA, USA). The primer sequences used are included in Supplementary file 1. ddCt values were calculated between experiment and control embryos and converted to fold differences to be comparable to the NanoString data. Fold changes were calculated using poly-ubiquitin as a reference, and a threshold of twofold difference was chosen as a significant change (Materna and Oliveri, 2008). Normalized perturbation data against control are reported in Figure 6\u2014source data 1, and raw data are reported in Figure 6\u2014source data 2.\n\n### Sequence and phylogenetic analysis\n\nThe signal peptide cleavage site of FGFA was predicted by SignalP 3.0 (http://www.cbs.dtu.dk/services/SignalP/). The core sequences of FGFs from different organisms were aligned using the Clustal W program, and the alignment was confirmed manually. After removing gaps, the verified alignments were used to construct phylogenetic trees with the MacVector software based on the neighbor-joining method. Bootstrap support values were calculated by 1000 pseudoreplications. All phylogenetic trees were illustrated with the FigTree program (http://tree.bio.ed.ac.uk/software/figtree/). The phylogenetic tree for FGFRs was constructed in the same manner as the FGF tree but was based on the alignments of the tyrosine kinase domains.\n",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "93d8b77f-99dc-41cf-98fd-b82c3476ea76",
+      "submission_id": "f0ba97da-e152-4d08-85d4-5e13d362bb81",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Margaret Buckingham, Institut Pasteur , France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07343.026](https://doi.org/10.7554/eLife.07343.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cLogics and properties of a genetic regulatory program that drives embryonic muscle development in an echinoderm\u201d for consideration at eLife. Your article has been favorably evaluated by Diethard Tautz (Senior Editor), a Reviewing Editor, and two peer reviewers.\n\nThe Reviewing Editor and the reviewers discussed their comments before reaching their decision, and the Reviewing Editor has assembled the following comments to help you prepare a revised submission.\n\nTo be acceptable for publication the manuscript requires substantial revision. We recognise that it represents a large amount of work and appreciate the new insights that it provides into the GRN underlying entry into myogeneis in the sea urchin model. However, the results are over-interpreted and parts of the data are not sufficiently validated for inclusion in the GRN, which requires at least one repeat experiment and preferably by an independent test. This is particularly the case for Hh and SFRP/Wnt signaling as well as Pitx2 and other factors. The FGF data are also unsatisfactory since it is not clear which Ets factor mediates the signal. It is also not clear why, based on the authors criteria for inclusion, some genes are excluded. Why for example is FoxC included and FoxF excluded. A detailed list of data points to be re-examined is given at the end of this letter.\n\nAnother concern of the reviewers is the morpholino data and the controls. It would be more convincing if more than one morpholino was shown to give the same phenotype. Knockdown of a GFP expressing construct, containing a sequence recognised by the morpholino is not sufficient and the use of a control morpholino simply shows that toxicity is not a problem for a batch of embryos.\n\nOverall the key nodal points should be presented based on solid validation and everything else should be eliminated, with a discussion that now focusses on the key points instead of an extensive and confusing discussion of weak data. We hope that you can modify the manuscript along these lines.\n\nThe following concerns have to be dealt with:\n\n1) If you apply the rule of more data points being necessary for inclusion, what else would fall out? Or, what might be included that is not currently included?\n\nFoxY -> SoxE which also is projected in one location where SoxE is located but not in the other, yet the RNA you obtain includes both regions.\n\nFoxY ->Gatae; FoxC ->SoxE; FoxY->SoxE; Six1/2-|Not; FoxL1-|FoxY\n\nFoxL1->Pitx2 which you don't include but it is significant by your rules. So, why is this one not included when the others above it are? By the rule of more than one it would be as it is, not included.\n\nFoxL1->Srfp\n\nFoxL1->MyoR is included though your data doesn't show significance by your rules, and only one data point is significant by the rule of more than 2 fold.\n\nFoxF-|Not is included even though it doesn't reach significance by your rules and also doesn't reach significance by the rule of needing more than one data point.\n\nFoxF->Pitx2 is not included even though by your rules it should be, but by the rule of more than one, it should not.\n\nFoxC->FoxF is included even though it should not be by your rules, and the one data point you have is supplied by the in situ. If the in situ is to be accepted there should be an indication that what is shown is not simply \u201cbest case\u201d but a consistent finding.\n\nFoxY->FoxL1 is not included though by your rules it should be and it also should be by the rule of more than one.\n\nFoxY->MyoR is not included yet is one of the strongest knockdown effects you see.\n\nAll told, you model 29 connections in the 44 hr GRN, yet there are 14 questionable connections due to only one data point without confirmation, or by not including a connection according to your rules when a point should be included by those rules.\n\n2) Situations exist where a perturbation has a very strong effect in the above, or at least a consistent effect, yet you don't include that connection. For example FoxY knockdowns have a very strong effect on expression of FoxF at 44 hrs \u2013 even stronger, relatively, than on FoxC \u2013 yet FoxC is included and FoxF is not. You make the call that FoxC has an input into FoxF and could argue that it is through that connection that FoxF is knocked down in FoxY MO. Though you have a connection there, your FoxC knockdowns don't show significance in knocking down FoxF. Since we are looking for consistency in the calls, this doesn't make sense.\n\n3) For the 48 hr GRN the following data points do not satisfy your rules, or fail if a requirement of more than one data point is included.\n\nMyoD-|Pitx2\n\nFoxF-|FoxY\n\nFoxF->MyoD\n\nFoxF-| Not is included though is not significant by your rules.\n\nFoxY->FoxL1 is not included though by your rules it should be.\n\nFoxY->MyoD is not included though by your rules it should be; by the rule of needing more than one data point it should not be.\n\nFoxY->Scratch is not included though by your rules it should be.\n\nFoxY->MyoR is not included though by your rules it should be.\n\nFoxL1-|FoxY not included though should be by your rules.\n\nFoxL1->Pitx2 not included though should be by your rules.\n\nFoxL1-|Not is included though goes against your rules.\n\nSix1/2-|Dach is not included though by your rules it should be; by the rule of more than one data point it should not be.\n\nSix1/2-|FoxY is not included though by your rules it should be. By rule of more than one it should not be.\n\nSix1/2-|Not not included though by your rules it should be. By rule of more than one it should not be.\n\nTbx6->Pitx2 is not included though by your rules it should be.\n\nTbx6->MyoR is not included though by your rules it should be.\n\nFoxY->twist is included though only one data point.\n\nIn this 45-48 hr GRN model, of 26 connections modeled, 17 connections are in question. 11 of those 17 are connections not included though by your rules they should be. It appears that even though you include all the data, your model is selective by not adhering to a set of rules. You have to apply consistent rules, and we strongly suggest for confidence that you adhere to a rule where more than one data point must be necessary to have some confidence that a call is likely to be correct.\n",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63234621-c771-468c-819e-a6f80f6b186a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C1",
+      "claim": "Sea urchin larvae possess a muscular apparatus that surrounds their esophagus and produces contractile force.",
+      "claim_type": "EXPLICIT",
+      "source": "Sea urchin larvae possess a muscular apparatus that surrounds their esophagus and produces contractile force (Burke, 1981; Burke and Alvarez, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burke, 1981 and Burke and Alvarez, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "3309a12a-451a-494c-a1ca-771569c41fda",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C2",
+      "claim": "Sea urchin muscle cells originate from mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "These muscle cells originate from mesoderm and adapt the myogenic fate by segregating from the other three non-skeletogenic mesodermal (NSM) lineages at the early gastrula stage (Ruffins and Ettensohn, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruffins and Ettensohn, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "18ba21f0-8cbf-4cc7-95c9-a707d36ae8c5",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C3",
+      "claim": "Sea urchin myoblasts segregate from other non-skeletogenic mesodermal lineages at the early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "These muscle cells originate from mesoderm and adapt the myogenic fate by segregating from the other three non-skeletogenic mesodermal (NSM) lineages at the early gastrula stage (Ruffins and Ettensohn, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruffins and Ettensohn, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "3e5ada9a-800f-4677-b6c7-36e401c6272b",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C4",
+      "claim": "The first appearance of myoblasts is seen at the late gastrula stage as a few cells in the oral vegetal domain of each coelomic sac at the tip of the archenteron.",
+      "claim_type": "EXPLICIT",
+      "source": "The first appearance of myoblasts is seen at the late gastrula stage as a few cells in the oral vegetal domain of each coelomic sac at the tip of the archenteron and they express a number of muscle-specific transcription regulators (Andrikou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Andrikou et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "321154e8-54aa-4f03-9b3e-6fc3992503e6",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C5",
+      "claim": "At the prism stage, myoblasts extend pseudopods towards the midline of the esophagus, increase in number and diameter, fuse to each other, and form the circumesophagael contractile bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Few hours later, at the prism stage, these cells extend pseudopods towards the midline of the esophagus, increase in number and diameter, fuse to each other, and finally form the circumesophagael contractile bands (Burke and Alvarez, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burke and Alvarez, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ccff67bc-71c3-4e5c-8461-876aa746eb20",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C6",
+      "claim": "FGFR1 is expressed in all FoxC-positive cells at the very early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the very early gastrula stage, FGFR1 was expressed in all FoxC-positive cells (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by double fluorescent in situ hybridization data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "2df24721-5e5e-4a9f-ad04-eaca033d4a57",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C7",
+      "claim": "At the late gastrula stage, only a number of FGFR1 transcripts overlap with FoxC-positive cells at the tip of the archenteron.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst at the late gastrula stage (48 hr), only a number of FGFR1 transcripts overlap with FoxC-positive cells at the tip of the archenteron (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-expression analysis shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "43800cfb-2d52-4b4f-8543-b56e44738f14",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C8",
+      "claim": "FGFA transcripts are observed in the ventrolateral ectodermal regions in the vicinity of FoxC-positive cells at the very early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, FGFA transcripts were observed in the ventrolateral ectodermal regions in the vicinity of FoxC-positive cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by double fluorescent in situ hybridization data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "277febb1-3bc3-4a98-bb83-87329ba2fc22",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C9",
+      "claim": "70% of pluteus larvae treated with SU5402 from 26 hr showed an abnormal elongated archenteron missing the pyloric and possibly the anal sphincter constrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "70% of the 300 pluteus larvae treated with SU5402 from 26 hr showed an abnormal elongated archenteron missing the pyloric and possibly the anal sphincter constrictions, although the cardiac sphincter was still formed (Figure 2A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from SU5402 treatment shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "a362874f-2f7a-4020-a3b7-1ebf17320bfa",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C10",
+      "claim": "All SU5402-treated larvae had shorter spicules and their triradiate skeleton was never fully shaped.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, all larvae had shorter spicules and their triradiate skeleton was never fully shaped possibly due to the inhibition of FGFR2, which is specifically expressed in the skeletogenic primary mesenchyme cells (PMCs) that produce the larval skeleton (Rottinger et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observation and citation to Rottinger et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "67e7906e-32ad-4495-9aa6-12742ccac919",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C11",
+      "claim": "In SU5402-treated larvae, the coelomic pouches were not formed and the circumesophagael muscle fibers were completely absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the coelomic pouches were not formed and the circumesophagael muscle fibers were completely absent when tested for MHC gene expression by FISH at the prism stage (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data for MHC gene expression shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "c8999e89-0be3-4865-b9ae-cc79f5f1e60d",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C12",
+      "claim": "U0126 treatment greatly reduced MHC protein level in treated larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the level of MHC protein was greatly reduced in the treated larvae (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "40c7f488-801a-4fa5-acf9-f98d55cb820a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C13",
+      "claim": "FGF signaling through MAPK/ERK pathway is involved in muscle development.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show an involvement of FGF signaling through MAPK/ERK pathway in muscle development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined results of SU5402 and U0126 treatments showing reduced muscle formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d36c87e1-6a61-4779-93d9-86459e3414ba",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C14",
+      "claim": "In 90% of FGFR1 morphant larvae, a malformation of coelomic pouches and a severe down-regulation of the MHC protein level were evident.",
+      "claim_type": "EXPLICIT",
+      "source": "Although in 90% of the morphant larvae, a malformation of coelomic pouches (Figure 2F) and a severe down-regulation of the MHC protein level were evident (Figure 2G,H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 2F, G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "c59ea430-f6ea-40b2-8f77-9f72cfc90655",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C15",
+      "claim": "70% of FGFR1 morphant larvae displayed a fully elongated gut with the cardiac and anal sphincters well formed.",
+      "claim_type": "EXPLICIT",
+      "source": "70% of the larvae displayed a fully elongated gut, with the cardiac and anal sphincters well formed (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "9a604b79-ea9f-402f-930d-5a6d8fd32551",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C16",
+      "claim": "In 30% of FGFR1 morphant larvae, both cardiac and anal sphincters were absent or partly formed.",
+      "claim_type": "EXPLICIT",
+      "source": "while in the rest cases both sphincters were absent or partly formed (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d17a705d-22e7-4749-871a-15b39db94ee6",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C17",
+      "claim": "FGFR1 morphants showed an abnormal extension of cilia in the apical ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an abnormal extension of cilia in the apical ectoderm was observed (Figure 2H insert) that provides a putative additional role of FGFR1 in patterning the apical organ (Paola Oliveri, personal communication)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 2H insert.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "2965842e-866d-4625-8131-76cf5438d60a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C18",
+      "claim": "FGFR1 morphants showed a reduction of cilia in the gut lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "An evident reduction of the cilia in the gut lumen is also observed (Figure 2H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "50378664-2383-45e3-b05c-9593148efdaa",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C19",
+      "claim": "FGFR1 is not involved in PMC patterning and subsequent skeleton formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the larval skeleton and the formation of pigment cells were not affected, confirming that FGFR1 is not involved either in PMC patterning and subsequent skeleton formation or in pigment cell development (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data showing no effect on skeleton shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d52944e7-fafa-477e-8da0-b102dc4b9521",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C20",
+      "claim": "FGFR1 is not involved in pigment cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the larval skeleton and the formation of pigment cells were not affected, confirming that FGFR1 is not involved either in PMC patterning and subsequent skeleton formation or in pigment cell development (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data showing no effect on pigment cells shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "568caad9-cf11-450f-b8cc-7acce7fec5c1",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C21",
+      "claim": "In 60% of FGFR1 dominant negative injected embryos, the cardiac and anal sphincters were absent.",
+      "claim_type": "EXPLICIT",
+      "source": "An even more severe phenotype was obtained by injecting the embryos with the mRNA encoding FGFR1 Dn with the cardiac and anal sphincters being absent in 60% of the cases (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dominant negative RNA injection data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "6a348eee-cf31-416b-a470-33e202360c08",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C22",
+      "claim": "FoxY expression did not change when FGF signaling was perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "While FoxY expression did not change when FGF signaling was perturbed (Figure 3A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 3A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "1bee26de-0648-4090-912d-e0e799587e7f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C23",
+      "claim": "A severe impact was observed in FoxC and FoxF transcript levels in all FGF signaling-perturbed embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "a severe impact was observed in FoxC and FoxF transcript levels in all treated embryos (Figure 3E\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 3E-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "cc1a3ba0-514e-4c75-abe0-145ef468ac00",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C24",
+      "claim": "Ese expression was unaffected by FGFR1 perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "To check whether the specification of other oral NSM cell lineages were affected as well by the FGFR1 perturbation, we also tested the expression of Ese, a marker of the blastocoelar cell lineage, and found it unaffected (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "b7000e5a-f91e-4238-b4ab-45338d4b61fa",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C25",
+      "claim": "FoxC and FoxF factors act downstream of FGF signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support the involvement of FGF signaling in myogenesis and demonstrate that FoxC and FoxF factors are acting downstream of it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that FoxC and FoxF expression is reduced when FGF signaling is perturbed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d73f4138-51f8-4b01-b3bf-8ad48d6f7271",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C26",
+      "claim": "Ets1/2 expression showed a clear co-localization with FoxC transcripts at around 30 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Ets1/2 expression showed a clear co-localization with FoxC transcripts at around 30 hr (Figure 2\u2014figure supplement 3E,F) that perfectly corresponds to the onset of myogenesis, suggesting a putative role of Ets1/2 as one of the terminal effectors of MAPK pathway acting during myoblast specification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by double FISH data shown in Figure 2\u2014figure supplement 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "bfa08496-ed45-4e4d-b363-37a3ea24d87f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C27",
+      "claim": "In 90% of FoxY morphants, the archenteron was fully elongated with signs of incomplete differentiation and the coelomic pouches were lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "In 90% of the FoxY morphants, the archenteron was fully elongated with signs of incomplete differentiation and the coelomic pouches were lacking, as was shown previously (Song and Wessel, 2012; Materna et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morpholino knockdown data and citations to Song and Wessel, 2012 and Materna et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ebb04ad4-d770-4bcb-99bf-6e742ba30640",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C28",
+      "claim": "In FoxY morphants, the MHC level was severely reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "The MHC level was also severely reduced (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "f641db66-c231-4a89-b4b7-b29a84d183a1",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C29",
+      "claim": "80% of FoxC morphants showed a fully invaginated and partially compartmentalized archenteron, missing completely the coelomic pouches and MHC protein.",
+      "claim_type": "EXPLICIT",
+      "source": "80% of the FoxC morphants showed a similar morphological alteration; the archenteron was fully invaginated and partially compartmentalized, missing completely the coelomic pouches and MHC protein (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "9765aeb4-9b8e-47c9-891d-d0b6b2ae7b2b",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C30",
+      "claim": "In 90% of FoxF morphant larvae, a fully tripartite archenteron was present with disorganized coelomic pouches and a great decrease in the MHC level.",
+      "claim_type": "EXPLICIT",
+      "source": "In 90% of the FoxF morphant larvae, a fully tripartite archenteron was present with disorganized coelomic pouches and a great decrease in the MHC level (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "8085c66b-d4d7-483b-a23d-c325bf28843a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C31",
+      "claim": "95% of FoxL1 MO-injected larvae possessed a differentiated archenteron with disrupted coelomic pouches and reduced MHC protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "95% of the FoxL1 MO-injected larvae possessed a differentiated archenteron with disrupted coelomic pouches and reduced MHC protein level (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "0d2436e9-2b4c-490e-84ea-4ca4abe22ba0",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C32",
+      "claim": "85% of MyoD2 morphants showed an elongated archenteron, and in most cases with reduced sphincter constrictions.",
+      "claim_type": "EXPLICIT",
+      "source": "85% of the MyoD2 morphants showed an elongated archenteron, and in most of the cases with reduced sphincter constrictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by morpholino knockdown data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "89d5facd-f50c-43ef-adbe-b744430ef4e7",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C33",
+      "claim": "In MyoD2 morphants, the coelomic pouches were not formed properly and the MHC level was dramatically reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "The coelomic pouches were also not formed properly and the MHC level was dramatically reduced (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "89198804-5992-4cf9-a57e-f8132d5e986f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C34",
+      "claim": "In 80% of Six1/2 morphants, the archenteron was elongated but not differentiated, the coelomic pouches were absent, and the MHC level was decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In 80% of the Six1/2 morphants, the archenteron was elongated but not differentiated, the coelomic pouches were absent, and the MHC level was decreased (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "105fee7b-a7aa-47db-a77b-f93eb0847344",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C35",
+      "claim": "Embryos injected with the MO targeted to the late Six1/2 isoform were fully pigmented.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike what previously shown by using an MO against the early isoform of Six1/2, which negatively affects pigmentation (Ransick and Davidson, 2012), embryos injected with the MO targeted to the late Six1/2 isoform were fully pigmented (Figure 4\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4\u2014figure supplement 3C,D and citation to Ransick and Davidson, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "061d363f-23cb-40e7-aa5d-ca50a800ac9d",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C36",
+      "claim": "95% of Tbx6 morphants had a milder phenotype, with no signs of malformed coelomic pouches and only a partial disrupted muscle fiber assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 95% of Tbx6 morphants had a milder phenotype, with no signs of malformed coelomic pouches and only a partial disrupted muscle fiber assembly as shown by MHC immunostaining (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by morpholino knockdown data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "57da750b-d98c-4f61-8da5-696aa073d356",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C37",
+      "claim": "FoxY positively regulates itself at the early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the early gastrula stage, FoxY and FoxC expression was strongly reduced in FoxY MO-injected embryos (Figure 5A\u2013D), suggesting that FoxY positively regulates itself and FoxC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data in FoxY morphants shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d7e56adc-6156-49ec-8964-06346e145f2c",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C38",
+      "claim": "FoxY positively regulates FoxC at the early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the early gastrula stage, FoxY and FoxC expression was strongly reduced in FoxY MO-injected embryos (Figure 5A\u2013D), suggesting that FoxY positively regulates itself and FoxC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data in FoxY morphants shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "70c6f5e8-a660-4249-8271-f517baa2ea73",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C39",
+      "claim": "FoxY positively regulates FoxF and FoxL1 at the mid and late gastrula stages.",
+      "claim_type": "EXPLICIT",
+      "source": "This positive regulation continued to the mid and late gastrula stages and FoxY also positive regulated the other two Fox factors, FoxF and FoxL1 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NanoString and qPCR data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "c19da755-4e6c-4680-96f6-45cb448fe9fb",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C40",
+      "claim": "Nanos expression was downregulated in FoxY morphants.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of Nanos, a germ cell marker (Juliano et al., 2006) that is part of the molecular signature of the myoblasts precursors at that developmental time point (Andrikou et al., 2013), was also downregulated in FoxY morphants (Figure 5E,F and Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH and quantitative data in FoxY morphants shown in Figure 5E,F and Figure 6, and citations to Juliano et al., 2006 and Andrikou et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "c9bd3f44-38e7-424c-afbe-f3abf27b3c2a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C41",
+      "claim": "FoxC, FoxF, and FoxL1 are downstream of FoxC at the mid gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxC, FoxF, and FoxL1 were downstream of FoxC at the mid gastrula stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "03343bb6-5dc7-4d7f-8c04-a45c9cebd52f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C42",
+      "claim": "FoxC negatively regulates itself at the mid gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FoxF and FoxL1 required FoxC input, whereas FoxC negatively regulated itself (Figure 5G,H and Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH and quantitative data in FoxC morphants shown in Figure 5G,H and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ac9be20d-e9d6-41b2-b9c5-6af213e5c9dc",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C43",
+      "claim": "FoxF and FoxL1 expression required FoxC input at the mid gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FoxF and FoxL1 required FoxC input, whereas FoxC negatively regulated itself (Figure 5G,H and Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH and quantitative data in FoxC morphants shown in Figure 5G,H and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "a2ee7d57-0e90-4705-b8f6-87adfe0e0139",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C44",
+      "claim": "FoxY expression domain was expanded in the FoxF morphants to include the oral vegetal region of the archenteron tip at the late gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the late gastrula stage, FoxY expression domain was expanded in the FoxF morphants to include the oral vegetal region of the archenteron tip, where myogenesis takes place (Figure 5I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data in FoxF morphants shown in Figure 5I,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "9c283fc7-1be2-4967-b980-c6372666a4c7",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C45",
+      "claim": "At the mid gastrula stage, FoxY positively regulates Pitx2, MyoR, Six1/2, and ScratchX.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the inter-regulatory properties of the Fox factors, at the mid gastrula stage, FoxY also positively regulated Pitx2 (Hibino et al., 2006), MyoR, a gene expressed in sea urchin mesoderm but not in the myoblasts (Andrikou et al., 2013), Six1/2 and ScratchX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results and citations to Hibino et al., 2006 and Andrikou et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "4ac42646-549b-4de6-9d60-9cc081593f51",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C46",
+      "claim": "FoxC activates Tbx6 at the mid gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxC also activated Tbx6 and repressed Not and Dachshund (Dachs), an aboral NSM gene in the sea urchin embryo (Luo and Su, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results and citation to Luo and Su, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "21d56e2c-2a88-493e-8dce-db7814b6c187",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C47",
+      "claim": "FoxC represses Not and Dachshund at the mid gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxC also activated Tbx6 and repressed Not and Dachshund (Dachs), an aboral NSM gene in the sea urchin embryo (Luo and Su, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results and citation to Luo and Su, 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "5d11eb96-f3fe-4689-8d3a-f5419879b73b",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C48",
+      "claim": "Six1/2 activates FoxL1, MyoR, and Pitx2 at the mid gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Six1/2 appeared to activate FoxL1, MyoR, and Pitx2, as previously suggested (Hibino et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results and citation to Hibino et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "1765bdb1-c92a-4358-abc3-b9693156fd77",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C49",
+      "claim": "At the late gastrula stage, FoxY activates SoxE gene.",
+      "claim_type": "EXPLICIT",
+      "source": "At the late gastrula stage, FoxY continued to activate the aforementioned downstream factors although its effect on Six1/2 was diminished and activated in addition SoxE gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "a2be45e1-c8e0-4f10-991e-bda9f9ba8f5b",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C50",
+      "claim": "FoxL1 gives positive inputs to FoxF, MyoR, ScratchX, and Pitx2 at the late gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxL1 gave positive inputs to FoxF, MyoR, ScratchX, and Pitx2 and repressed Dachs, FoxY, and Not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "0dcd4bc2-57d7-4797-82f4-35df92f14051",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C51",
+      "claim": "FoxL1 represses Dachs, FoxY, and Not at the late gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxL1 gave positive inputs to FoxF, MyoR, ScratchX, and Pitx2 and repressed Dachs, FoxY, and Not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "6cf18209-3995-421c-82df-9d558f4b14c3",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C52",
+      "claim": "Tbx6 represses FoxY, Dach, and Scl at the late gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6 repressed FoxY, Dach, and Scl and activated Pitx2 and MyoR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "35c0be0f-4fa0-4216-93af-f11dadff09fa",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C53",
+      "claim": "Tbx6 activates Pitx2 and MyoR at the late gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6 repressed FoxY, Dach, and Scl and activated Pitx2 and MyoR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "131d1019-c687-4360-bf00-ca048d6a2d6d",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C54",
+      "claim": "FGF signaling is necessary for specifying naive NSM cells to myoblast precursors at the very early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that FGF signaling is necessary for specifying naive NSM cells to myoblast precursors at the very early gastrula stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from FGF signaling perturbation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "9f95c326-0617-47c4-842f-32535cb93426",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C55",
+      "claim": "Four Fox family factors FoxY, FoxC, FoxF, and FoxL1 constitute the central part of the myogenic GRN model.",
+      "claim_type": "EXPLICIT",
+      "source": "The four Fox family factors FoxY, FoxC, FoxF, and FoxL1 (Tu et al., 2006) constitute the central part of our myogenic GRN model and are activated sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by perturbation analysis and citation to Tu et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "f6a1b790-59ef-45d5-a949-301b121fc681",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C56",
+      "claim": "FoxY, FoxC, FoxF, and FoxL1 are activated sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "The four Fox family factors FoxY, FoxC, FoxF, and FoxL1 (Tu et al., 2006) constitute the central part of our myogenic GRN model and are activated sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by temporal expression analysis and perturbation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "b14db434-2b07-49ce-8e03-38918a974f92",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C57",
+      "claim": "The muscle progenitors originate from a pool of unspecified cells located at the oral/lateral periphery of the vegetal plate at the mesenchyme blastula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we propose that the muscle progenitors originate from a pool of unspecified cells located at the oral/lateral periphery of the vegetal plate at the mesenchyme blastula stage and they adapt the myogenic fate by receiving an inductive signal at the moment of gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on expression pattern analysis and perturbation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ddaea0fb-9006-46f3-9cc9-c5ef546eab35",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C58",
+      "claim": "Muscle progenitors adapt the myogenic fate by receiving an inductive signal at the moment of gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we propose that the muscle progenitors originate from a pool of unspecified cells located at the oral/lateral periphery of the vegetal plate at the mesenchyme blastula stage and they adapt the myogenic fate by receiving an inductive signal at the moment of gastrulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed based on FGF signaling perturbation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "bee05d57-6668-4586-b17e-8ec3da67349f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C59",
+      "claim": "All developmental decisions regarding the separation of all four NSM regulatory states take place during the interval between the blastula and the very early gastrula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "This would further imply that all developmental decisions regarding the separation of all four NSM regulatory states (pigment, blastocoelar, muscle, and coelomic pouch cells) take place during the interval between the blastula and the very early gastrula stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the timing of FGF signaling requirement and cell fate specification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "57d0fc2d-4d74-45e8-84ea-9a9ee1dfce9e",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C60",
+      "claim": "FGF-signaling cascade triggers the emergence and/or promotes the expansion of muscle lineage progenitors in different organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF-signaling cascade is reported to trigger the emergence and/or promote the expansion of muscle lineage progenitors in different organisms and probably possessed an ancestral role in mesoderm patterning (at least in deuterostomes), along with other developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by knowledge from literature on FGF signaling in various organisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "051cc356-7541-4915-a232-2f43846b36b2",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C61",
+      "claim": "FGF signaling probably possessed an ancestral role in mesoderm patterning in deuterostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF-signaling cascade is reported to trigger the emergence and/or promote the expansion of muscle lineage progenitors in different organisms and probably possessed an ancestral role in mesoderm patterning (at least in deuterostomes), along with other developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on comparative analysis across deuterostomes.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "79812240-e54e-4734-b68a-81c6a4b40925",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C62",
+      "claim": "Genes encoding FGF and FGFR were already present in the last common ancestor of all metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding FGF and FGFR were already present in the last common ancestor of all metazoans, but the origin of the FGF/FGFR couple appears to be an innovation specific to the Eumetazoa, potentially linked to the increase of animal complexity (Bertrand et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bertrand et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "b4a2c5be-4b8c-4165-a2d9-63530c6e2f5f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C63",
+      "claim": "The origin of the FGF/FGFR couple appears to be an innovation specific to the Eumetazoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding FGF and FGFR were already present in the last common ancestor of all metazoans, but the origin of the FGF/FGFR couple appears to be an innovation specific to the Eumetazoa, potentially linked to the increase of animal complexity (Bertrand et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bertrand et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "19f5ff03-fab2-414f-8ee5-b5a465745180",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C64",
+      "claim": "The FGF/FGFR couple is potentially linked to the increase of animal complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding FGF and FGFR were already present in the last common ancestor of all metazoans, but the origin of the FGF/FGFR couple appears to be an innovation specific to the Eumetazoa, potentially linked to the increase of animal complexity (Bertrand et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bertrand et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "4c81b542-5ed4-4777-84a0-c6dabf865ec6",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C67",
+      "claim": "FoxY is a direct target of the Delta/Notch signal.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown elsewhere, FoxY is a direct target of the D/N signal, produced in the adjacent NSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by knowledge from literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d70228d7-f99d-4046-923e-7f4a6fff908d",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C68",
+      "claim": "The positive autoregulation of FoxY maintains its own expression during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the positive autoregulation of FoxY maintains its own expression during gastrulation when cells invaginate into the blastocoel and may be away from the signaling source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that FoxY positively regulates itself and the need to maintain expression during cell movement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "f791316c-5a38-4b96-b263-998f627d9079",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C69",
+      "claim": "FoxC initially needs both positive inputs from FGF signaling and FoxY to be activated.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxC initially needs both positive inputs from FGF signaling and FoxY to be activated but then acts as an autorepressor in order to stabilize its number of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis showing FoxC requires both FGF and FoxY.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "c4620afb-8153-4a71-b1a3-4e313af30052",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C70",
+      "claim": "FoxC acts as an autorepressor to stabilize its number of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "FoxC initially needs both positive inputs from FGF signaling and FoxY to be activated but then acts as an autorepressor in order to stabilize its number of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis showing FoxC negatively regulates itself.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "3976ae42-d3ea-4746-9666-4b441091eecc",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C71",
+      "claim": "Tbx6 cooperates redundantly with other factors in an OR logic.",
+      "claim_type": "EXPLICIT",
+      "source": "Tbx6 seems to cooperate redundantly with other factors in an OR logic (Davidson, 2010), which also explains the mild phenotype seen in the Tbx6 perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mild phenotype observed in Tbx6 morphants and citation to Davidson, 2010.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "74b2240d-e6c3-4d91-8f06-106a011a41b1",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C72",
+      "claim": "MyoD activates the differentiation gene battery set composed of structural genes such as MHC.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentiation drivers, such as MyoD (Andrikou et al., 2013), are seen in the bottom of the GRN and probably activate the differentiation gene battery set, composed of a number of structural genes (e.g., MHC) that account for the specific function of the muscle cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the hierarchical position of MyoD in the GRN and citation to Andrikou et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "7042420e-071b-4677-b75d-73774d42d2b0",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C73",
+      "claim": "FoxC, FoxF, and FoxL subfamilies are clustered in most metazoan genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, FoxC, FoxF, and FoxL subfamilies are of particular interest because they are clustered in most metazoan genomes and usually involved in mesoderm specification/differentiation processes (Mazet et al., 2006; Shimeld et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mazet et al., 2006 and Shimeld et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "8bcc1596-77a3-43c7-bf27-9d0695a69920",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C74",
+      "claim": "FoxC, FoxF, and FoxL subfamilies are usually involved in mesoderm specification/differentiation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, FoxC, FoxF, and FoxL subfamilies are of particular interest because they are clustered in most metazoan genomes and usually involved in mesoderm specification/differentiation processes (Mazet et al., 2006; Shimeld et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mazet et al., 2006 and Shimeld et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ae5c93ed-b615-42a7-a639-670c5103926f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C75",
+      "claim": "In vertebrates, FoxC specifies the dorsal mesoderm and derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a linked activation or an overlapping expression has been reported in some cases, as in vertebrates, where FoxC specifies the dorsal mesoderm and derivatives, while FoxF patterns the lateral mesoderm and derivatives (Beh et al., 2007; Zinzen et al., 2009; Amin et al., 2010; Fritzenwanker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Beh et al., 2007; Zinzen et al., 2009; Amin et al., 2010; Fritzenwanker et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "cd987c00-a76d-47f7-a157-37f85859dc12",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C76",
+      "claim": "In vertebrates, FoxF patterns the lateral mesoderm and derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a linked activation or an overlapping expression has been reported in some cases, as in vertebrates, where FoxC specifies the dorsal mesoderm and derivatives, while FoxF patterns the lateral mesoderm and derivatives (Beh et al., 2007; Zinzen et al., 2009; Amin et al., 2010; Fritzenwanker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Beh et al., 2007; Zinzen et al., 2009; Amin et al., 2010; Fritzenwanker et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "2698c6f9-31bd-4570-8601-e61195984dea",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C77",
+      "claim": "In the sea urchin, a cluster of FoxC, FoxF, and FoxL1 genes is present.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sea urchin, where a cluster of FoxC, FoxF, and FoxL1 genes is present (Andrikou et al., 2013), we witness a similar regulatory logic where the different Fox factors pattern in an overlapping fashion in different compartments of the coelomic pouches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Andrikou et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "971461eb-b859-4235-8a91-194d6a9fccb3",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C78",
+      "claim": "In the sea urchin, different Fox factors pattern in an overlapping fashion in different compartments of the coelomic pouches.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sea urchin, where a cluster of FoxC, FoxF, and FoxL1 genes is present (Andrikou et al., 2013), we witness a similar regulatory logic where the different Fox factors pattern in an overlapping fashion in different compartments of the coelomic pouches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by expression pattern analysis and citation to Andrikou et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "4540824c-bdb6-4170-91cb-9f9130668926",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C79",
+      "claim": "The FoxC, FoxF, FoxL1 cluster was probably expressed initially in developing mesodermal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster was probably expressed initially in developing mesodermal tissues and further evolved in regulating the specification and compartmentalization of mesodermal derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on comparative analysis and expression patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "0153d554-36af-43e4-a0dc-89cf5e99c167",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C80",
+      "claim": "FoxC is the first of the three genes FoxC, FoxF, and FoxL1 to be turned on in the myogenic lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression patterns and sequential activation of FoxC, FoxF, and FoxL1 genes in time reflect the linkage properties of the retained cluster: among the three genes, FoxC is the first to be turned on in the myogenic lineage and is necessary for the activation of the downstream factors FoxF and FoxL1, which are inter-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by temporal expression analysis and perturbation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "389b969f-9c71-4a39-9444-57e25204f466",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C81",
+      "claim": "FoxC is necessary for the activation of the downstream factors FoxF and FoxL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression patterns and sequential activation of FoxC, FoxF, and FoxL1 genes in time reflect the linkage properties of the retained cluster: among the three genes, FoxC is the first to be turned on in the myogenic lineage and is necessary for the activation of the downstream factors FoxF and FoxL1, which are inter-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by perturbation analysis showing FoxC is required for FoxF and FoxL1 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "45607186-e5cb-4aa2-bfa2-1290fa537b92",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C82",
+      "claim": "FoxF and FoxL1 are inter-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression patterns and sequential activation of FoxC, FoxF, and FoxL1 genes in time reflect the linkage properties of the retained cluster: among the three genes, FoxC is the first to be turned on in the myogenic lineage and is necessary for the activation of the downstream factors FoxF and FoxL1, which are inter-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from perturbation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "973d0fb7-669c-42db-8b21-2505caf85699",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C83",
+      "claim": "By 24 hr post fertilization, the separation of the different NSM regulatory states is defined.",
+      "claim_type": "EXPLICIT",
+      "source": "By 24 hr post fertilization, the separation of the different NSM regulatory states is defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by expression pattern analysis of NSM markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ee85e59a-9df8-4973-8205-93d716e636d3",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C84",
+      "claim": "At 9 hr post fertilization, Delta ligand produced by the skeletogenic mesoderm activates a Delta/Notch cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "At 9 hr post fertilization, Delta ligand produced by the skeletogenic mesoderm activates a D/N cascade, which subsequently initiates Gcm and GataE transcription in all NSM cells (Ransick and Davidson, 2006; Lee et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ransick and Davidson, 2006 and Lee et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "41d0fb98-d270-4576-a2cb-1d93e1824a75",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C85",
+      "claim": "Delta/Notch cascade initiates Gcm and GataE transcription in all NSM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 9 hr post fertilization, Delta ligand produced by the skeletogenic mesoderm activates a D/N cascade, which subsequently initiates Gcm and GataE transcription in all NSM cells (Ransick and Davidson, 2006; Lee et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ransick and Davidson, 2006 and Lee et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "94faf3ba-31fe-4b1d-87fd-ef9d58dbf6d4",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C86",
+      "claim": "At 24 hr, the NSM GRN becomes regionalized into distinct oral and aboral NSM GRNs in consequence of Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, at 24 hr, the NSM GRN becomes regionalized into distinct oral and aboral NSM GRNs in consequence of Nodal signaling through the immediate expression of a Nodal target, Not, in the oral NSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by knowledge from literature on Nodal signaling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "197775cc-be04-460e-807b-d64e4818e665",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C87",
+      "claim": "Nodal signaling causes the repression of the aboral GRN in the oral NSM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This causes the repression of the aboral GRN in the oral NSM cells, and the aboral NSM cells still express Gcm and GataE as part of the regulatory state of the pigment cell lineage (Materna et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Materna et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "278ab3f8-9571-4d32-88c0-a0b1b7b087e4",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C88",
+      "claim": "The myogenic GRN structure has diverged extensively among animal groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the conserved regulatory modules found in the system, the myogenic GRN structure has diverged extensively among animal groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparative analysis of myogenic GRNs across different animal groups.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "675a2424-01f6-432b-9c26-649297abaae6",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C89",
+      "claim": "The level of functional importance of homologous transcriptional regulators is often diversified among animal groups.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the level of the functional importance of the homologous transcriptional regulators (e.g., Six1/2 in sea urchin and Ceh-34 in C. elegans or MyoD in vertebrates and Nautilus in Drosophila) (this study, [Olson and Klein, 1994; Balagopalan et al., 2001; Amin et al., 2009]), as reflected from the position within the GRN, is often diversified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative analysis and citations to Olson and Klein, 1994; Balagopalan et al., 2001; Amin et al., 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "4474731b-e622-48c0-8ab3-807b52d79ceb",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C90",
+      "claim": "New, lineage-specific genes are recruited in myogenic GRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "New, lineage-specific genes are recruited (FoxY in sea urchin), and 'master regulatory genes' either have been lost completely (e.g., the absence of Pax3/7 ortholog in the sea urchin) or lose their hierarchical position within the network (e.g., Nautilus in Drosophila and MyoD in vertebrates)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparative analysis showing FoxY is sea urchin-specific and absence of Pax3/7 in sea urchin.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "74e8d96b-cd4d-44bd-8444-b6e50a7e1a2a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C91",
+      "claim": "Pax3/7 ortholog is absent in the sea urchin.",
+      "claim_type": "EXPLICIT",
+      "source": "New, lineage-specific genes are recruited (FoxY in sea urchin), and 'master regulatory genes' either have been lost completely (e.g., the absence of Pax3/7 ortholog in the sea urchin) or lose their hierarchical position within the network (e.g., Nautilus in Drosophila and MyoD in vertebrates)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "96d9c5a6-3af2-4380-89f7-8eea212d15c0",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C92",
+      "claim": "The same transcription factor families are used repeatedly in myogenic contexts across different animal systems.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the fact that the same factors are used over and over again in such different animal systems indicates that the modular components are somehow required for keeping their myogenic activity during evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparative analysis showing conservation of transcription factor families.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "edb5ea64-313d-4c9a-90ad-702850067160",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "claim_id": "C93",
+      "claim": "The ancestral myogenic function may have been preserved in a more distant family member rather than the homologous gene.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems that as transcription factor families expanded and functionally diversified during evolution, the ancestral myogenic function may have been preserved in a more distant family member, rather than the homologous gene, providing the system with several regulatory alternatives, and explaining the high degree of evolutionary plasticity of developmental GRN architecture (Andrikou and Arnone, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on comparative analysis and citation to Andrikou and Arnone, 2015.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2decc9a8-0b90-4077-8732-8b1b69fb2e36",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sea urchin larvae develop a muscular apparatus surrounding the esophagus, originating from mesoderm that segregates from other non-skeletogenic mesodermal lineages at the early gastrula stage, with myoblasts first appearing at the late gastrula stage and forming contractile bands at the prism stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by citations to prior work (Burke 1981, Burke and Alvarez 1988, Ruffins and Ettensohn 1996, Andrikou et al. 2013), establishing the developmental timeline and origin of sea urchin muscle cells. These claims provide essential background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "7fd5de94-8239-46dc-bddd-2a9323f177b3",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FGFR1 and FGFA are expressed in spatial and temporal patterns consistent with a role in myogenesis: FGFR1 is expressed in all FoxC-positive cells at very early gastrula stage, with partial overlap at late gastrula, while FGFA is expressed in ventrolateral ectoderm near FoxC-positive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by double fluorescent in situ hybridization data shown in Figures 1A, 1B, and Figure 1\u2014figure supplement 4. The spatial and temporal expression patterns provide correlative evidence for FGF signaling involvement in myogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "c1c83445-a12c-477a-b843-45841b2839d2",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of FGF signaling (SU5402) and MEK/ERK pathway (U0126) disrupts muscle development, causing absence of circumesophageal muscle fibers and coelomic pouches, along with skeletal defects, demonstrating that FGF signaling through MAPK/ERK pathway is involved in muscle development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 are supported by experimental data from chemical inhibitor treatments shown in Figures 2A-D and Figure 2\u2014figure supplement 1B,C. The consistent phenotypes across two different pathway inhibitors (FGFR inhibitor and MEK inhibitor) provide strong evidence for FGF/MAPK involvement in myogenesis. However, the specificity of SU5402 is questioned by the skeletal effects attributed to FGFR2 inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FGFR1 knockdown by morpholino and dominant negative approaches causes severe muscle defects (reduced MHC protein, malformed coelomic pouches) in 90% of larvae, with variable effects on gut sphincter formation, and additional effects on apical and gut cilia, but no effects on skeleton or pigment cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 are supported by morpholino knockdown and dominant negative RNA injection data shown in Figures 2F-J. The phenotypes are consistent with the chemical inhibitor results, strengthening the conclusion that FGFR1 is required for muscle development. The variable sphincter phenotypes (70% vs 30%) suggest incomplete penetrance or additional regulatory factors. The lack of skeletal and pigment cell defects confirms specificity to FGFR1 vs FGFR2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "ba13af7d-fc37-4c3d-bda4-064aaa20f1ca",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FGF signaling perturbation severely reduces FoxC and FoxF transcript levels but does not affect FoxY or Ese expression, demonstrating that FoxC and FoxF act downstream of FGF signaling in the myogenic lineage specifically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by FISH data shown in Figures 3A-L. The selective effect on FoxC and FoxF but not FoxY or Ese (blastocoelar marker) demonstrates pathway specificity and establishes the regulatory hierarchy. This is a key result linking FGF signaling to specific transcription factors in the myogenic program.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "4b821e41-7d17-4356-8878-f7dcbdef80e2",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ets1/2 expression co-localizes with FoxC transcripts at 30 hr, corresponding to the onset of myogenesis, suggesting Ets1/2 as a putative terminal effector of MAPK pathway during myoblast specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C26 is supported by double FISH data in Figure 2\u2014figure supplement 3E,F showing co-expression. However, the authors explicitly state that 'further perturbation experiments are needed to confirm this hypothesis,' indicating this is correlative evidence only without functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Morpholino knockdown of FoxY, FoxC, FoxF, FoxL1, MyoD2, and Six1/2 all cause severe muscle defects with reduced MHC levels and malformed coelomic pouches, while Tbx6 knockdown produces a milder phenotype, demonstrating essential roles for these transcription factors in muscle development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C36 are supported by morpholino knockdown data shown in Figures 4A-H and supplementary figures. The consistent muscle defects across multiple transcription factor knockdowns establish their requirement for myogenesis. The milder Tbx6 phenotype is consistent with the authors' interpretation of redundant function. The Six1/2 late isoform specificity (C35) is well-controlled by comparison to prior work on the early isoform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "df462f50-7de5-444d-baa7-3b8895d3b178",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FoxY positively regulates itself and FoxC at early gastrula stage, continues to regulate FoxF and FoxL1 at mid and late gastrula stages, and also regulates Nanos expression, establishing FoxY as a key upstream regulator in the myogenic hierarchy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by FISH data in FoxY morphants shown in Figures 5A-F and quantitative data in Figure 6. The temporal progression of regulatory effects establishes FoxY's position at the top of the myogenic transcriptional hierarchy. The autoregulation is a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "83fa3004-e6a3-4dc2-9696-eaf41037cb55",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FoxC acts as an autorepressor while positively regulating FoxF and FoxL1 at mid gastrula stage, and FoxF knockdown causes expansion of FoxY expression domain at late gastrula stage, revealing complex inter-regulatory relationships among Fox factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by FISH and quantitative data in FoxC and FoxF morphants shown in Figures 5G-J and Figure 6. The negative autoregulation of FoxC and the spatial expansion of FoxY in FoxF morphants are important mechanistic details of the regulatory network architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Perturbation analysis reveals a complex gene regulatory network where FoxY, FoxC, FoxL1, Six1/2, and Tbx6 regulate multiple downstream targets including Pitx2, MyoR, ScratchX, SoxE, Not, and Dachshund through both positive and negative regulatory interactions at mid and late gastrula stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53 are supported by NanoString and qPCR data shown in Figure 6, with some spatial validation by FISH. The authors used a threshold of 2-fold change as significant. While the regulatory interactions are inferred from perturbation data rather than direct binding studies, the consistent effects across multiple time points and biological replicates support these conclusions. The network complexity is appropriate for a developmental specification process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "371990d8-2ce0-4476-913b-4de44e39bf36",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study establishes that FGF signaling is necessary for myoblast specification at very early gastrula stage, and that four Fox family factors (FoxY, FoxC, FoxF, FoxL1) constitute the central part of the myogenic GRN and are activated sequentially.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 represent the main conclusions of the study, supported by the combined evidence from FGF perturbation experiments (C9-C25) and Fox factor perturbation experiments (C27-C53). The sequential activation is supported by temporal expression analysis and perturbation data showing hierarchical regulatory relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "fb579d60-2458-4ab8-9d4d-a4ea266c970a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that muscle progenitors originate from unspecified cells at the oral/lateral periphery of the vegetal plate at mesenchyme blastula stage, adapt myogenic fate by receiving FGF inductive signal at gastrulation, and that all NSM lineage decisions occur between blastula and very early gastrula stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by the combined evidence from expression pattern analysis (Figure 1\u2014figure supplement 1) and FGF signaling perturbation timing experiments. The proposal is consistent with the data showing FGF signaling requirement at very early gastrula stage and the spatial expression patterns of FGF components. However, these are inferred conclusions rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "3f37bfee-9408-413f-9475-cb9d2c086961",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FGF signaling cascade triggers emergence/expansion of muscle lineage progenitors across different organisms and probably possessed an ancestral role in mesoderm patterning in deuterostomes, with FGF/FGFR genes present in the last common ancestor of metazoans but the FGF/FGFR couple being a Eumetazoan innovation potentially linked to increased animal complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by citations to literature (Bertrand et al. 2014) and general knowledge about FGF signaling across animal phyla. These claims provide evolutionary context for the findings. The speculation about ancestral roles (C61) and link to complexity (C64) is appropriately qualified as 'probably' and 'potentially.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study proposes mechanistic details of the myogenic GRN including: FoxY as a direct target of Delta/Notch signal with positive autoregulation to maintain expression during gastrulation; FoxC requiring both FGF and FoxY inputs with negative autoregulation; Tbx6 acting redundantly in OR logic; and MyoD activating differentiation genes like MHC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are supported by the perturbation data and logical inference from the regulatory relationships established in the study. The Delta/Notch regulation of FoxY (C67) is cited to prior work. The mechanistic interpretations (autoregulation, redundancy, differentiation gene activation) are reasonable inferences from the data, though not all are directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FoxC, FoxF, and FoxL subfamilies are clustered in most metazoan genomes and involved in mesoderm specification, with FoxC specifying dorsal mesoderm and FoxF patterning lateral mesoderm in vertebrates. In sea urchin, the FoxC/FoxF/FoxL1 cluster shows sequential activation with FoxC first, followed by FoxF and FoxL1 which are inter-regulated, reflecting linkage properties and suggesting ancestral expression in developing mesodermal tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C82 are supported by citations to comparative literature (Mazet et al. 2006, Shimeld et al. 2010, Beh et al. 2007, etc.) and the temporal expression and perturbation data from this study (Andrikou et al. 2013). The evolutionary interpretation about ancestral expression (C79) is appropriately qualified as speculation. The sequential activation and regulatory hierarchy are well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "342d93aa-210e-4bbd-b9f4-dfd0c826eade",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "NSM regulatory state separation is defined by 24 hr post fertilization through a series of signaling events: Delta/Notch cascade at 9 hr initiates Gcm and GataE transcription in all NSM cells, followed by Nodal signaling at 24 hr that regionalizes the NSM GRN into oral and aboral domains by repressing the aboral GRN in oral NSM cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are supported by citations to prior work (Ransick and Davidson 2006, Lee et al. 2007, Materna et al. 2013) and expression pattern analysis. These claims provide essential developmental context for understanding when and how the myogenic lineage segregates from other NSM lineages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    },
+    {
+      "id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd",
+      "content_id": "cfbc3586-ee88-4a36-bb4e-ca913479903a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Comparative analysis reveals that myogenic GRN structure has diverged extensively among animal groups, with diversified functional importance of homologous regulators, recruitment of lineage-specific genes (FoxY in sea urchin), loss of master regulatory genes (Pax3/7 in sea urchin), but repeated use of the same transcription factor families, suggesting ancestral myogenic functions may be preserved in distant family members rather than homologous genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 are supported by comparative analysis across animal groups, citations to literature (Olson and Klein 1994, Balagopalan et al. 2001, Amin et al. 2009, Andrikou and Arnone 2015), and genomic analysis showing absence of Pax3/7. The evolutionary interpretations are appropriately qualified as inference and speculation. This represents an important synthesis of the findings in evolutionary context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:35:37.964793Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63234621-c771-468c-819e-a6f80f6b186a",
+      "result_id": "2decc9a8-0b90-4077-8732-8b1b69fb2e36"
+    },
+    {
+      "claim_id": "3309a12a-451a-494c-a1ca-771569c41fda",
+      "result_id": "2decc9a8-0b90-4077-8732-8b1b69fb2e36"
+    },
+    {
+      "claim_id": "18ba21f0-8cbf-4cc7-95c9-a707d36ae8c5",
+      "result_id": "2decc9a8-0b90-4077-8732-8b1b69fb2e36"
+    },
+    {
+      "claim_id": "3e5ada9a-800f-4677-b6c7-36e401c6272b",
+      "result_id": "2decc9a8-0b90-4077-8732-8b1b69fb2e36"
+    },
+    {
+      "claim_id": "321154e8-54aa-4f03-9b3e-6fc3992503e6",
+      "result_id": "2decc9a8-0b90-4077-8732-8b1b69fb2e36"
+    },
+    {
+      "claim_id": "ccff67bc-71c3-4e5c-8461-876aa746eb20",
+      "result_id": "7fd5de94-8239-46dc-bddd-2a9323f177b3"
+    },
+    {
+      "claim_id": "2df24721-5e5e-4a9f-ad04-eaca033d4a57",
+      "result_id": "7fd5de94-8239-46dc-bddd-2a9323f177b3"
+    },
+    {
+      "claim_id": "43800cfb-2d52-4b4f-8543-b56e44738f14",
+      "result_id": "7fd5de94-8239-46dc-bddd-2a9323f177b3"
+    },
+    {
+      "claim_id": "277febb1-3bc3-4a98-bb83-87329ba2fc22",
+      "result_id": "c1c83445-a12c-477a-b843-45841b2839d2"
+    },
+    {
+      "claim_id": "a362874f-2f7a-4020-a3b7-1ebf17320bfa",
+      "result_id": "c1c83445-a12c-477a-b843-45841b2839d2"
+    },
+    {
+      "claim_id": "67e7906e-32ad-4495-9aa6-12742ccac919",
+      "result_id": "c1c83445-a12c-477a-b843-45841b2839d2"
+    },
+    {
+      "claim_id": "c8999e89-0be3-4865-b9ae-cc79f5f1e60d",
+      "result_id": "c1c83445-a12c-477a-b843-45841b2839d2"
+    },
+    {
+      "claim_id": "40c7f488-801a-4fa5-acf9-f98d55cb820a",
+      "result_id": "c1c83445-a12c-477a-b843-45841b2839d2"
+    },
+    {
+      "claim_id": "d36c87e1-6a61-4779-93d9-86459e3414ba",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "c59ea430-f6ea-40b2-8f77-9f72cfc90655",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "9a604b79-ea9f-402f-930d-5a6d8fd32551",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "d17a705d-22e7-4749-871a-15b39db94ee6",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "2965842e-866d-4625-8131-76cf5438d60a",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "50378664-2383-45e3-b05c-9593148efdaa",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "d52944e7-fafa-477e-8da0-b102dc4b9521",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "568caad9-cf11-450f-b8cc-7acce7fec5c1",
+      "result_id": "38b9a917-e5f5-43b6-aaf0-b1d19542fd1c"
+    },
+    {
+      "claim_id": "6a348eee-cf31-416b-a470-33e202360c08",
+      "result_id": "ba13af7d-fc37-4c3d-bda4-064aaa20f1ca"
+    },
+    {
+      "claim_id": "1bee26de-0648-4090-912d-e0e799587e7f",
+      "result_id": "ba13af7d-fc37-4c3d-bda4-064aaa20f1ca"
+    },
+    {
+      "claim_id": "cc1a3ba0-514e-4c75-abe0-145ef468ac00",
+      "result_id": "ba13af7d-fc37-4c3d-bda4-064aaa20f1ca"
+    },
+    {
+      "claim_id": "b7000e5a-f91e-4238-b4ab-45338d4b61fa",
+      "result_id": "ba13af7d-fc37-4c3d-bda4-064aaa20f1ca"
+    },
+    {
+      "claim_id": "d73f4138-51f8-4b01-b3bf-8ad48d6f7271",
+      "result_id": "4b821e41-7d17-4356-8878-f7dcbdef80e2"
+    },
+    {
+      "claim_id": "bfa08496-ed45-4e4d-b363-37a3ea24d87f",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "ebb04ad4-d770-4bcb-99bf-6e742ba30640",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "f641db66-c231-4a89-b4b7-b29a84d183a1",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "9765aeb4-9b8e-47c9-891d-d0b6b2ae7b2b",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "8085c66b-d4d7-483b-a23d-c325bf28843a",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "0d2436e9-2b4c-490e-84ea-4ca4abe22ba0",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "89d5facd-f50c-43ef-adbe-b744430ef4e7",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "89198804-5992-4cf9-a57e-f8132d5e986f",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "105fee7b-a7aa-47db-a77b-f93eb0847344",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "061d363f-23cb-40e7-aa5d-ca50a800ac9d",
+      "result_id": "2ea1e28b-d616-4c87-a80b-c47aaeee128e"
+    },
+    {
+      "claim_id": "57da750b-d98c-4f61-8da5-696aa073d356",
+      "result_id": "df462f50-7de5-444d-baa7-3b8895d3b178"
+    },
+    {
+      "claim_id": "d7e56adc-6156-49ec-8964-06346e145f2c",
+      "result_id": "df462f50-7de5-444d-baa7-3b8895d3b178"
+    },
+    {
+      "claim_id": "70c6f5e8-a660-4249-8271-f517baa2ea73",
+      "result_id": "df462f50-7de5-444d-baa7-3b8895d3b178"
+    },
+    {
+      "claim_id": "c19da755-4e6c-4680-96f6-45cb448fe9fb",
+      "result_id": "df462f50-7de5-444d-baa7-3b8895d3b178"
+    },
+    {
+      "claim_id": "c9bd3f44-38e7-424c-afbe-f3abf27b3c2a",
+      "result_id": "83fa3004-e6a3-4dc2-9696-eaf41037cb55"
+    },
+    {
+      "claim_id": "03343bb6-5dc7-4d7f-8c04-a45c9cebd52f",
+      "result_id": "83fa3004-e6a3-4dc2-9696-eaf41037cb55"
+    },
+    {
+      "claim_id": "ac9be20d-e9d6-41b2-b9c5-6af213e5c9dc",
+      "result_id": "83fa3004-e6a3-4dc2-9696-eaf41037cb55"
+    },
+    {
+      "claim_id": "a2ee7d57-0e90-4705-b8f6-87adfe0e0139",
+      "result_id": "83fa3004-e6a3-4dc2-9696-eaf41037cb55"
+    },
+    {
+      "claim_id": "9c283fc7-1be2-4967-b980-c6372666a4c7",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "4ac42646-549b-4de6-9d60-9cc081593f51",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "21d56e2c-2a88-493e-8dce-db7814b6c187",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "5d11eb96-f3fe-4689-8d3a-f5419879b73b",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "1765bdb1-c92a-4358-abc3-b9693156fd77",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "a2be45e1-c8e0-4f10-991e-bda9f9ba8f5b",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "0dcd4bc2-57d7-4797-82f4-35df92f14051",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "6cf18209-3995-421c-82df-9d558f4b14c3",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "35c0be0f-4fa0-4216-93af-f11dadff09fa",
+      "result_id": "35ad5b3e-4e68-4a5f-8726-2f5ef2fb105f"
+    },
+    {
+      "claim_id": "131d1019-c687-4360-bf00-ca048d6a2d6d",
+      "result_id": "371990d8-2ce0-4476-913b-4de44e39bf36"
+    },
+    {
+      "claim_id": "9f95c326-0617-47c4-842f-32535cb93426",
+      "result_id": "371990d8-2ce0-4476-913b-4de44e39bf36"
+    },
+    {
+      "claim_id": "f6a1b790-59ef-45d5-a949-301b121fc681",
+      "result_id": "371990d8-2ce0-4476-913b-4de44e39bf36"
+    },
+    {
+      "claim_id": "b14db434-2b07-49ce-8e03-38918a974f92",
+      "result_id": "fb579d60-2458-4ab8-9d4d-a4ea266c970a"
+    },
+    {
+      "claim_id": "ddaea0fb-9006-46f3-9cc9-c5ef546eab35",
+      "result_id": "fb579d60-2458-4ab8-9d4d-a4ea266c970a"
+    },
+    {
+      "claim_id": "bee05d57-6668-4586-b17e-8ec3da67349f",
+      "result_id": "fb579d60-2458-4ab8-9d4d-a4ea266c970a"
+    },
+    {
+      "claim_id": "57d0fc2d-4d74-45e8-84ea-9a9ee1dfce9e",
+      "result_id": "3f37bfee-9408-413f-9475-cb9d2c086961"
+    },
+    {
+      "claim_id": "051cc356-7541-4915-a232-2f43846b36b2",
+      "result_id": "3f37bfee-9408-413f-9475-cb9d2c086961"
+    },
+    {
+      "claim_id": "79812240-e54e-4734-b68a-81c6a4b40925",
+      "result_id": "3f37bfee-9408-413f-9475-cb9d2c086961"
+    },
+    {
+      "claim_id": "b4a2c5be-4b8c-4165-a2d9-63530c6e2f5f",
+      "result_id": "3f37bfee-9408-413f-9475-cb9d2c086961"
+    },
+    {
+      "claim_id": "19f5ff03-fab2-414f-8ee5-b5a465745180",
+      "result_id": "3f37bfee-9408-413f-9475-cb9d2c086961"
+    },
+    {
+      "claim_id": "4c81b542-5ed4-4777-84a0-c6dabf865ec6",
+      "result_id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a"
+    },
+    {
+      "claim_id": "d70228d7-f99d-4046-923e-7f4a6fff908d",
+      "result_id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a"
+    },
+    {
+      "claim_id": "f791316c-5a38-4b96-b263-998f627d9079",
+      "result_id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a"
+    },
+    {
+      "claim_id": "c4620afb-8153-4a71-b1a3-4e313af30052",
+      "result_id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a"
+    },
+    {
+      "claim_id": "3976ae42-d3ea-4746-9666-4b441091eecc",
+      "result_id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a"
+    },
+    {
+      "claim_id": "74b2240d-e6c3-4d91-8f06-106a011a41b1",
+      "result_id": "3371844c-7463-42da-8ce8-f18e7f8e9d9a"
+    },
+    {
+      "claim_id": "7042420e-071b-4677-b75d-73774d42d2b0",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "8bcc1596-77a3-43c7-bf27-9d0695a69920",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "ae5c93ed-b615-42a7-a639-670c5103926f",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "cd987c00-a76d-47f7-a157-37f85859dc12",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "2698c6f9-31bd-4570-8601-e61195984dea",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "971461eb-b859-4235-8a91-194d6a9fccb3",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "4540824c-bdb6-4170-91cb-9f9130668926",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "0153d554-36af-43e4-a0dc-89cf5e99c167",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "389b969f-9c71-4a39-9444-57e25204f466",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "45607186-e5cb-4aa2-bfa2-1290fa537b92",
+      "result_id": "d5b3b67f-8e1b-4c6a-83c5-d18ac5959011"
+    },
+    {
+      "claim_id": "973d0fb7-669c-42db-8b21-2505caf85699",
+      "result_id": "342d93aa-210e-4bbd-b9f4-dfd0c826eade"
+    },
+    {
+      "claim_id": "ee85e59a-9df8-4973-8205-93d716e636d3",
+      "result_id": "342d93aa-210e-4bbd-b9f4-dfd0c826eade"
+    },
+    {
+      "claim_id": "41d0fb98-d270-4576-a2cb-1d93e1824a75",
+      "result_id": "342d93aa-210e-4bbd-b9f4-dfd0c826eade"
+    },
+    {
+      "claim_id": "94faf3ba-31fe-4b1d-87fd-ef9d58dbf6d4",
+      "result_id": "342d93aa-210e-4bbd-b9f4-dfd0c826eade"
+    },
+    {
+      "claim_id": "197775cc-be04-460e-807b-d64e4818e665",
+      "result_id": "342d93aa-210e-4bbd-b9f4-dfd0c826eade"
+    },
+    {
+      "claim_id": "278ab3f8-9571-4d32-88c0-a0b1b7b087e4",
+      "result_id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd"
+    },
+    {
+      "claim_id": "675a2424-01f6-432b-9c26-649297abaae6",
+      "result_id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd"
+    },
+    {
+      "claim_id": "4474731b-e622-48c0-8ab3-807b52d79ceb",
+      "result_id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd"
+    },
+    {
+      "claim_id": "74e8d96b-cd4d-44bd-8444-b6e50a7e1a2a",
+      "result_id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd"
+    },
+    {
+      "claim_id": "96d9c5a6-3af2-4380-89f7-8eea212d15c0",
+      "result_id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd"
+    },
+    {
+      "claim_id": "edb5ea64-313d-4c9a-90ad-702850067160",
+      "result_id": "bfa02d93-9911-4e7a-ba4d-ee6c6701f0bd"
+    }
+  ],
+  "comparisons": []
+}

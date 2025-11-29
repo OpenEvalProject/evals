@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study developed BRAIM, a Bayesian statistical model for detecting genomic imprinting from RNA-seq data at transcript-level resolution. The model was applied to 49,464 heterozygous transcripts from 48 individual cerebella (representing two developmental stages and both sexes, with six replicates per condition), using a posterior probability cutoff of 0.95 and a minimal expression threshold of 0.01 TPM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C39 describe the methodological approach comprehensively. The experimental design with 48 samples (C32-C36) provides adequate statistical power, and the model parameters (C37-C39) are clearly specified. The approach is well-documented and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C63",
+      "C64"
+    ],
+    "result": "The study identified 160 imprinted transcripts from 124 genes, including 74 previously known and 50 novel candidates. Independent pyrosequencing validation confirmed 41 of 50 novel candidates (93% precision), increasing the total number of mouse imprinted genes by approximately 30% (from 138 to 179).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C46-C53, C63-C64 collectively demonstrate rigorous validation. The use of independent samples for pyrosequencing (C49-C52), inclusion of positive and negative controls (C50-C51), and high correlation between RNA-seq and pyrosequencing (C62: r=0.91, p<10^-16) support the claimed precision and impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Many imprinted genes exhibit parentally biased rather than monoallelic expression, with a bimodal distribution spanning weak biases (50:50-60:40%, 36 genes) to strong monoallelic expression (90:10-100:0%, 55 genes). The weak bias mode is enriched with newly identified genes while stronger biases are enriched with known imprinted genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C56-C62 describe the distribution of parental biases with specific quantification. The strong correlation between RNA-seq and pyrosequencing (C62: r=0.91, p<10^-16) validates the accuracy of bias quantification across the full spectrum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Developmental changes in parental bias and overall gene expression are positively correlated (r=0.33, p=4\u00d710^-4). 59 imprinted genes (51%) show age-regulated parental bias and/or expression, with the majority exhibiting stronger bias and higher expression at P8. Age regulation is most commonly achieved by altering expression of the preferred allele (19 genes, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C75-C84, C91-C93 provide comprehensive evidence for developmental regulation with statistical support. The correlation analysis (C91) and mechanistic dissection (C92-C93) are well-documented. However, the correlation coefficient of 0.33, while statistically significant, indicates moderate effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Specific examples of age-regulated imprinted genes include Asb4 (maternally-biased at P8, biallelic in adults), Grb10 (biallelic at P8, paternally-biased in adults), Zim1 (maternal-to-paternal switch), and a novel imprinted cluster on chromosome 1 (Ier5, Mr1, Stx6, Impar) showing maternal bias at P8 but biallelic expression in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 provide specific examples with detailed characterization. The identification of the novel chromosome 1 cluster (C88-C89) and functional context for Stx6 (C90) strengthen the findings. These examples illustrate the broader patterns described in the previous result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The approach detected isoform-specific imprinting, identifying 8 of 10 known cases and discovering novel examples including a maternally-expressed short transcript at the Mest locus. Most imprinted genes show consistent imprinting across all isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 demonstrate the transcript-level resolution of the method. The detection of 8/10 known cases (C74) validates the approach, and the novel Mest transcript (C72-C73) represents a new discovery. The two missing cases are explained by biological/technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "106 of 115 imprinted genes (92%) localize within 1 MB of another imprinted gene, with 7 of 41 novel genes (17%) appearing isolated. Genes with weak-to-moderate parental bias tend to localize near strongly biased genes, with parental bias decaying significantly as a function of distance from cluster centers (p=1.08\u00d710^-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 describe genomic organization with statistical support. The decay analysis (C98) provides quantitative evidence for the spatial organization pattern. The clustering is well-documented and statistically significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The micro-synteny of imprinted clusters is evolutionarily conserved, with the mean propensity of adjacency of mammalian orthologs of weakly imprinted gene pairs significantly higher than all adjacent gene pairs (p=0.007), suggesting functional importance of weak-to-moderate parental biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide evolutionary evidence supporting functional significance. The comparative genomic analysis across 15 mammalian species with statistical significance (p=0.007) strengthens the interpretation that weak biases are functionally important rather than artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The analysis identified a clear effect of strain on expression, likely due to divergence in cis-regulatory regions. Genomic imprinting is sex-invariant in the mouse cerebellum (no transcripts with sex effect PP>0.95), but a group of transcripts show age-regulated imprinting. Among X-linked transcripts, two Xlr3b transcripts were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe additional factors affecting expression. The strain effect (C40-C41) is expected and properly controlled. The absence of sex effects (C42-C43) is clearly stated, though the interpretation of 'sex-invariant' (C43) may be overstated given the PP cutoff approach. The X-linked findings (C45) are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Among imprinted cerebellar genes, a slightly greater number show paternal bias. Five genes preferentially express distinct isoforms from both parental alleles. Examples include Fkbp6 (almost exclusive paternal expression), Ago2 and Nhlrc1 (moderate to weak biases), and Clptm1l (biallelic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C65-C67 describe the distribution of parental biases with specific examples. The characterization is supported by both RNA-seq and pyrosequencing data. These findings illustrate the spectrum of imprinting patterns detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Several isolated novel imprinted genes show evidence of differential methylation in prior studies. Nhlrc1 (paternally-biased) has downstream differential methylation and causes Lafora epilepsy in humans. Actn1 shows paternal bias in cerebellum despite prior reports of no brain bias. Fkbp6 displays maternal allele-specific ZFP57 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 connect novel findings to prior epigenetic and functional data. The integration with differential methylation studies (C101, C103) and ZFP57 binding (C105) provides mechanistic context. The human disease relevance (C102) adds translational significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Pyrosequencing analysis across 16 brain regions and 7 non-neural tissues revealed pronounced spatial variation in parental bias. Hierarchical clustering separated tissues into brain and non-brain clades, with brain showing more consistent and robust parental bias. Several genes (Ube3a, Trappc9, Bag3, B3gnt2, Bcl-xL, Inpp5f_v2, Begain) are exclusively or nearly exclusively biased throughout the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C116 describe comprehensive spatial profiling with 6 replicates per tissue. The hierarchical clustering analysis (C111, C115-C116) provides systematic evidence for tissue-specific patterns. The identification of brain-specific imprinted genes (C113-C114) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Genes within the same imprinted cluster (Ago2, Chrac1, Trappc9 on chromosome 15; Copg2 and Mest on chromosome 6) exhibit similar patterns of maternal bias across brain regions, suggesting the brain executes region-specific programs of imprinting involving genes from the same or distinct clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 identify coordinated regulation patterns across brain regions. The observation that genes from different chromosomes show similar spatial patterns (C118) is particularly interesting and supports the interpretation of coordinated programs (C119).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Developmental analysis across cortex, hypothalamus, and cerebellum revealed gene-specific and region-specific temporal dynamics. Blcap shows gradual decrease in maternal bias across all regions. Zim1 switches from maternal to paternal bias in cerebellum and cortex but maintains maternal bias in hypothalamus. Igf2 and Grb10 show temporally co-regulated switches that occur earlier in cortex and hypothalamus than cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 demonstrate spatiotemporal complexity with specific examples. The region-specific differences (C121) and temporal coordination (C122-C123) are well-documented. The correlation with developmental timing (C123) provides biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The programmed cell death pathway is a prominent target of imprinting, including 8 previously known and 5 newly identified genes. Most maternally-biased genes (Cdkn1c, Kcnk9, Blcap, Bmf) promote apoptosis, while most paternally-biased genes (Ndn, Peg3, Peg10, Plagl1, Magel2) inhibit apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 identify a functional pathway enriched for imprinted genes with opposing parental effects. The pattern of maternal genes promoting and paternal genes inhibiting apoptosis is striking and biologically coherent, though the mechanistic basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Bcl-xL (anti-apoptotic, paternally-biased) and Bag3 (maternally-biased in brain, biallelic in periphery) show opposing developmental trajectories and are significantly anti-correlated across 16 brain regions (r=-0.56, p=0.04). Their protein products interact to prevent mitochondrial release of apoptotic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 establish a specific functional relationship between two imprinted genes. The anti-correlation (C134) and known protein interaction (C131) suggest coordinated regulation. However, the correlation coefficient is moderate and excludes two brain regions, indicating the relationship is not universal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Brain-specific deletion of the paternal Bcl-x allele resulted in ~15% reduced brain weight and significant reductions in cortex, olfactory bulb, and cerebellum areas compared to wild-type and maternal deletion mice. Maternal deletion showed no significant differences from wild-type, supporting that the paternal allele makes a more substantial contribution to brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C135-C139 provide functional validation of parental bias significance. The use of Nestin::Cre for brain-specific deletion, inclusion of appropriate controls (WT littermates with Cre), and consistent effects across multiple brain regions strengthen the findings. The asymmetric phenotype directly demonstrates functional consequences of parental bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Paternal Bcl-x deletion caused cell-type-specific and region-specific effects. In cortex, DAPI+, NEUN+, and Vglut1+ cells were significantly reduced while S100\u03b2+ and Gad1+ cells were unaffected. In cerebellum, Gad1+ neurons in molecular and Purkinje layers were significantly reduced. These results suggest genomic imprinting regulates the distribution of specific cell types in distinct brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 demonstrate cell-type specificity of the phenotype using multiple markers. The differential effects on excitatory neurons (Vglut1+) vs inhibitory neurons (Gad1+) in cortex, and the region-specific patterns provide strong evidence for the interpretation (C145). However, the mechanistic basis for cell-type specificity remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The introduction provides background on genomic imprinting, its roles in development and brain function, human disorders (Prader-Willi, Angelman, Birk-Barel syndromes), tissue-specific imprinting, and critiques of prior RNA-seq studies. The cerebellum was chosen for its role in motor control, autism relevance, and postnatal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C31 summarize established knowledge and prior work with appropriate citations. The critiques of prior studies (C25, C28-C29) provide context for the current work's improvements. The rationale for studying cerebellum (C30-C31) is well-justified. These are primarily literature review claims that set up the study.",
+    "result_type": "MINOR"
+  }
+]

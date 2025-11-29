@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript establishes the biological context and significance of the mtDNA bottleneck, describing it as a highly debated developmental mechanism that ameliorates mtDNA damage during mammalian development. The bottleneck involves the generation of heteroplasmy variance across cells, which allows selection against cells with high mutant loads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 collectively establish well-documented background knowledge about mitochondria, mtDNA mutations, and the bottleneck mechanism. These claims are supported by multiple citations to established literature and represent accepted knowledge in the field rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript identifies conflicting experimental evidence in the literature regarding the mtDNA bottleneck mechanism, including disagreement about the magnitude of mtDNA copy number reduction and the timing of heteroplasmy variance increases. The authors identify gaps in existing theoretical approaches that fail to account for changing population size and discrete mtDNA populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C31 accurately characterize the state of the literature with appropriate citations. The identification of conflicting experimental results (C19, C22-C24) and theoretical gaps (C26-C31) is well-documented and provides clear motivation for the current study. This represents a thorough literature review rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors develop a general mathematical model for mtDNA bottleneck dynamics that encompasses multiple proposed mechanisms from the literature. The model represents individual mtDNAs as discrete elements subject to replication and degradation, with parameters controlling stochasticity (S), replication subset (\u03b1), partitioning mode (c), and six developmental phases with different dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C85-C101 describe the model construction in detail. The model design is clearly specified with well-defined parameters and biological interpretations (Figure 1). The claim that this model can encompass different proposed mechanisms (C32) is supported by the parameter flexibility described. This represents a methodological contribution that is adequately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Using approximate Bayesian computation (ABC) with existing mouse data, the authors find that the birth-death-partition (BDP) model\u2014combining binomial partitioning at cell divisions with random mtDNA turnover\u2014has the most statistical support among proposed bottleneck mechanisms. The BDP model produces increasing variance through both early cell division stochasticity and later random turnover, unlike alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33-C38 present the primary model selection result supported by Figure 2B showing increasing posterior probability for the BDP model as ABC threshold decreases. The mechanistic explanation (C36-C38) for why BDP outperforms alternatives is logical and supported by the trajectories in Figure 2A. ABC automatically accounts for model complexity (C35), strengthening the conclusion. The statistical approach is appropriate and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The analysis reveals that the exact magnitude of mtDNA copy number depletion during the bottleneck is flexible, with observed heteroplasmy variance achievable across a range of bottleneck sizes from ~200 to >1000. This finding reconciles conflicting experimental observations in the literature and indicates that copy number reduction magnitude is not the sole critical feature of the bottleneck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41, and C62-C66 present an important finding supported by Figure 3D showing posterior distributions on minimum copy number. The flexibility in bottleneck size (C41) is a direct result of the parametric inference and helps reconcile literature conflicts (C63-C64). The conclusion that magnitude is not the sole critical feature (C66) follows logically from the data and is consistent with cited prior arguments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "New experimental measurements from the HB mouse line (a wild-derived mtDNA pairing genetically distinct from previous studies) confirm key predictions of the BDP model. Heteroplasmy variance is low but non-zero around birth, then increases with time. The BDP mechanism receives the strongest statistical support in this independent system, and predicted heteroplasmy distributions match withheld experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43-C45, C48, and C106-C110 describe new experimental validation. Figure 4A clearly shows the predicted qualitative behavior (C44), Figure 4B demonstrates strong statistical support for BDP in the HB system (C45), and Figure 4D shows good agreement with withheld data (C48). The experimental methods are adequately described (C106-C110) following MIQE guidelines. This represents strong experimental confirmation of theoretical predictions in a genetically diverse system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The BDP model yields analytic solutions for all genetic properties of interest using generating functions and stochastic process theory. These analytic results provide an excellent match to stochastic simulation results across all model parameterizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C111-C114 describe the analytical tractability of the BDP model. The mathematical approach using generating functions and Riccati recurrence relations is established methodology (C111-C112 with citations). Figure 2A demonstrates excellent agreement between analytic and numeric results (C50). The availability of analytic solutions is a significant theoretical contribution that enables efficient computation and interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Model perturbation analysis shows that increasing mtDNA turnover or degradation increases heteroplasmy variance. The authors speculate that interventions increasing mitochondrial degradation may represent a potential clinical target to enhance the bottleneck's power to prevent mtDNA disease inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52 present model predictions supported by Figure 5A-B. However, claims C53-C54 are explicitly speculative (using terms like 'may' and 'speculate'). While the model predictions are sound, the clinical applicability requires experimental validation of whether such interventions are feasible and whether they would have the predicted effects in vivo without adverse consequences. The speculation is reasonable but not yet supported by experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The theory enables quantitative calculation of probabilities and timescales for heteroplasmy exceeding disease-relevant thresholds, and for inferring embryonic heteroplasmy from preimplantation sampling. Later sampling times are associated with greater uncertainty due to increasing heteroplasmy variance during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe clinical applications of the theory. C55 states established knowledge about threshold effects with citation. Claims C56-C57 correctly describe capabilities enabled by the analytical solutions, demonstrated in Figure 5D-E. The conclusion about sampling timing (C58) follows logically from the model's prediction of increasing variance. These represent valid theoretical applications, though clinical validation would strengthen the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study concludes that the bottleneck is most likely manifest through stochastic mtDNA dynamics and binomial partitioning with increased random turnover during development. The BDP model is the individually most likely mechanism and is consistent with aspects from all existing proposals in the literature. The bottom-up modeling approach increases flexibility and generality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C67-C69 present the main conclusions, supported by the ABC model selection (Figure 2B, 4B), parametric inference (Figure 3), and experimental validation (Figure 4). The synthesis that BDP is consistent with aspects of all prior proposals (C68) is well-argued. The methodological advantages of the bottom-up approach (C60) are demonstrated by the model's ability to encompass multiple mechanisms and match diverse data. Figure 6 effectively summarizes these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors acknowledge that hybrid mechanisms (where BDP dominates but other mechanisms provide small perturbations) cannot be discounted with current evidence. The statistics of heteroplasmic cluster inheritance are similar to binomial partitioning of individual mtDNAs, so the model is compatible with inheritance of heteroplasmic nucleoids or organelles containing mixed mtDNA populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 appropriately acknowledge limitations and alternative interpretations. C70 correctly notes that hybrid mechanisms cannot be excluded, showing appropriate scientific caution. C71 makes a theoretical claim about statistical equivalence that is supported by analysis in Appendix 1. C72 represents the authors' interpretation (using 'contend' and 'may') based on recent evidence, which is appropriately qualified. These represent honest assessment of uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors discuss that mitochondrial dynamics (fission and fusion) likely play a role in determining mtDNA turnover and may influence partitioning, but argue that the physical parameters of replication, degradation, and partitioning are the key determinants of heteroplasmy statistics during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 discuss the relationship between the coarse-grained model parameters and underlying mitochondrial dynamics. C73 is supported by citations to established literature. C74-C75 represent reasonable interpretations about which level of description is most relevant for heteroplasmy statistics. This appropriately acknowledges that the model abstracts away microscopic details while capturing the relevant statistical behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors note that their findings in mice are consistent with observations in other organisms including salmon, primates, humans, and HeLa cells. Specific observations about the m.3243A>G mutation in humans are consistent with the model's predictions linking heteroplasmy variance to mtDNA copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 discuss consistency with findings in other systems, all supported by appropriate citations. These comparisons strengthen the generalizability of the findings but represent secondary support rather than primary results. The consistency checks are appropriate and well-documented, though they rely on literature data rather than new experiments in these systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors conclude that their combination of stochastic modeling and statistical inference provides a powerful approach for deducing biological mechanisms, enables proposals for further experiments, and allows increased quantitative rigor in predictions for mtDNA disease therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 present methodological and translational conclusions. C82 is supported by the successful application demonstrated in the paper. C83 correctly notes that the theory enables experimental proposals (detailed in Appendix 1). C84 regarding therapeutic applications is more speculative (using 'believe' and 'allows') but is reasonably supported by the demonstrated applications in Figure 5. These represent appropriate conclusions about the study's contributions and implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The BDP model results in observation of only a subset of replicating mtDNAs over experimental timeframes, consistent with observations from Wai et al. (2008). The Wai (b) mechanism would require replication of <1% of mtDNAs during folliculogenesis, which is inconsistent with the higher proportions observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide additional support for the BDP model by showing its consistency with experimental observations (C39) and identifying a quantitative inconsistency with the Wai (b) mechanism (C40). C39 is supported by analysis in Appendix 1. C40 is supported by Figure 2A showing optimal \u03b1 = 0.006 and the observation that experimental proportions exceed 1%. This represents valid model discrimination based on quantitative predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The model uses cell doubling time data from the literature and employs Gillespie algorithms to simulate ensembles of 1000 realizations of mtDNA dynamics for each parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe data sources and simulation methodology. Cell doubling times are taken from cited literature (C102-C103). The use of Gillespie algorithms (C104-C105) is standard methodology for stochastic simulation, appropriately cited. The ensemble size of 1000 (C105) is reasonable for obtaining stable statistics. These methodological choices are appropriate and adequately documented.",
+    "result_type": "MINOR"
+  }
+]

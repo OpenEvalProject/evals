@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C26",
+      "C27"
+    ],
+    "result": "Conventional ChIP-seq using sonication has significant limitations including poor resolution (200-500 bp fragments vs. ~20-50 bp protein footprints), non-random fragmentation bias favoring accessible chromatin regions, and inability to achieve high-resolution mapping even with extensive sonication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16, C26-C27 collectively establish well-documented limitations of sonication-based ChIP through citations to prior work and analysis of published data (Figure 1\u2014figure supplement 1). The fragment size mismatch between sonication products and protein footprints is established knowledge, and sonication bias at promoters is demonstrated with data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C19",
+      "C20",
+      "C28",
+      "C76",
+      "C83"
+    ],
+    "result": "High-resolution X-ChIP-seq uses MNase (which has both endo- and exo-nuclease activity) to fragment chromatin and generate precise protein-DNA footprints, achieving single base-pair resolution for mapping protein binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C19-C20, C28, C76, C83 describe the core methodological innovation. The dual nuclease activity of MNase is established knowledge (C76), and the achievement of single base-pair resolution is supported by comparative data with 3'NT and DNase I footprinting (Figures 1B, 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "High-resolution X-ChIP-seq of PolII in Drosophila S2 cells achieves higher resolution and accuracy than conventional ChIP-seq, with the maximal PolII signal at +35 bp matching the 3'NT-determined active site position, while requiring fewer sequencing reads (7 million vs. 13 million for conventional ChIP or 150 million for 3'NT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C33 present a comprehensive comparison of PolII mapping methods supported by Figure 1B data. The agreement between X-ChIP-seq and 3'NT validates accuracy, while the narrower peak width demonstrates improved resolution. The sequencing depth comparison is supported by citations and demonstrates cost-effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C17",
+      "C18"
+    ],
+    "result": "A limitation of high-resolution X-ChIP-seq is that only a minority of immunoprecipitated fragments represent the protein footprint on DNA (only 10% were 20-70 bp and <3% under 50 bp for PolII), likely due to formaldehyde-mediated protein-protein crosslinking generating complexes like PolII crosslinked to nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C17-C18 acknowledge a significant technical limitation supported by data from the authors' prior study (Figure 1C) and citations explaining the crosslinking mechanism. This honest assessment of the method's limitations is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C85"
+    ],
+    "result": "An optimized AMpure bead size selection protocol (1.1\u00d7 volumetric ratio) enriches for short DNA fragments (<50 bp) after adapter ligation, achieving 25-fold enrichment of fragments below 50 bp and improving cost-effectiveness for transcription factor mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45, C85 describe a methodological optimization supported by experimental data in Figure 2. The 1.1\u00d7 ratio reproducibly selects fragments in the 100-200 bp range (C41-C42), and the 25-fold enrichment is directly demonstrated (C45, Figure 2C). The logic connecting adapter size (~125 bp) to selection strategy is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "High-resolution X-ChIP-seq of CTCF achieves a half-height peak width of 50 bp (analyzing 20-50 bp fragments) compared to 200 bp for conventional ChIP, with shorter fragments providing the highest resolution and smallest range in peak widths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 present quantitative resolution comparisons supported by Figure 3A-B data. The half-height width measurements provide objective metrics, and the fragment length analysis (Figure 3\u2014figure supplement 1) demonstrates that shorter fragments yield better resolution. The inference that MNase chews back to minimal footprints (C50) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "High-resolution X-ChIP-seq compares favorably to ChIP-exo: it requires simpler bioinformatic analysis (thresholding vs. dedicated software), fewer reads (13 million vs. 82 million), allows input normalization, shows less diffuse signal, and requires minimal workflow alterations compared to conventional ChIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 provide a comprehensive comparison to ChIP-exo supported by Figure 3C-D and citations. The read depth comparison is data-based (C56, C58), the methodological differences are accurately described based on ChIP-exo literature (C52-C54, C57), and the advantages regarding normalization (C61-C62) and workflow simplicity (C63) are logical inferences from the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "High-resolution X-ChIP-seq identifies two sharp peaks separated by 19 bp flanking the CTCF motif, indicating MNase digestion to one side of the minimal binding site, while ChIP-exo shows more diffuse signal with 52 bp average distance between peak pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe detailed binding site architecture supported by Figure 3D. The 19 bp separation matching the CTCF motif size (C79) provides internal validation. The comparison to ChIP-exo's 52 bp separation is supported by citation (C67). The inference about MNase digestion pattern (C65) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "High-resolution X-ChIP-seq achieves single nucleotide resolution comparable to DNase I footprinting (both identify 19 bp protected fragments at CTCF motifs) while having the advantage of being targeted to specific transcription factors through immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 compare X-ChIP-seq to DNase I footprinting, supported by Figure 3\u2014figure supplement 2. The agreement in identifying 19 bp protected regions (C70) validates the resolution claim. The advantage of factor-specific targeting (C72) is a logical inference from the immunoprecipitation-based approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C7",
+      "C8",
+      "C63"
+    ],
+    "result": "High-resolution X-ChIP-seq is a cost-effective, simple approach that achieves superior resolution compared to conventional ChIP-seq and ChIP-exo, requires minimal alterations to existing ChIP-seq workflows, and uses simple bioinformatic processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C7-C8, C63 present the overall conclusions supported by the cumulative evidence throughout the manuscript. The cost-effectiveness is demonstrated by sequencing depth comparisons, workflow simplicity by methodological descriptions, and superior resolution by multiple comparative analyses (Figures 1-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9"
+    ],
+    "result": "ChIP and its derivatives are the main techniques for determining transcription factor binding sites, but conventional ChIP-seq has poor resolution problems, newer techniques require significant alterations, and little has changed in the basic ChIP protocol since it was first described 27 years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9 provide background context supported by established knowledge (C1) and citation (C9). The limitations of conventional ChIP (C2) and complexity of newer methods (C3) are substantiated by the detailed comparisons presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "X-ChIP-seq was previously used by the authors to perform high-resolution mapping of RNA Polymerase II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 references prior work by the authors (Skene et al., 2014) and is supported by citation. This establishes the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "High resolution is especially required at closely spaced transcription factor binding sites such as locus control regions and super-enhancers, which are vital to cell fate decisions and human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide biological context for the importance of high-resolution mapping, supported by citations to prior work on regulatory regions. This motivates the technical development but is not a primary finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The footprint of PolII is approximately 20-70 bp, and analyzing fragments in this size range avoids complications from PolII crosslinked to adjacent nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 describe the rationale for fragment size selection, supported by citation (Samkurashvili and Luse, 1996) and logical inference about avoiding nucleosome-crosslinked complexes. This is a methodological detail supporting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The CTCF consensus binding motif is 19 bp, and 9403 such motifs were identified within DNase I sites at least 500 bp apart in K562 and HeLa cells using FIMO analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe the computational identification of CTCF binding sites used for analysis. The motif size is established knowledge, and the site identification is described with appropriate methodology (FIMO with FDR 0.01). This is a methodological detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C84",
+      "C86"
+    ],
+    "result": "Conventional ChIP-seq and ChIP-exo library protocols select against fragments below 100 bp and are designed for single-end sequencing, while X-ChIP-seq uses paired-end sequencing to obtain fragment lengths, and short fragment enrichment would be inappropriate for sonication-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C84, C86 describe technical differences between methods based on established knowledge of library preparation protocols. The reasoning about why short fragment enrichment is inappropriate for sonication-based methods (C86) is sound given fragment size distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "In MNase ChIP experiments, the vast majority of DNA fragments are from mono-nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 states established knowledge about MNase digestion patterns that is relevant for interpreting the enrichment results. This is background information supporting the methodological optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Immunoprecipitating sonicated 200-300 bp chromatin fragments containing more than one protein might block subsequent exonuclease cleavage in ChIP-exo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is explicitly speculative (\"This might be a consequence...\") and offers a potential mechanistic explanation for observed ChIP-exo signal patterns. While plausible, this hypothesis is not directly tested and remains uncertain.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,437 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Lysosomes in Drosophila muscle form an extensive, dynamic tubular network that extends throughout the sarcoplasm. The network exhibits tubule extension, retraction, scission, and fusion events, with the dominant activity being dynamic extension and retraction of individual tubules. This network exists in both dissected preparations and intact larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide strong converging evidence from live imaging, time-lapse microscopy, and observations in intact animals. The morphological characterization is well-documented with multiple figures and videos. The observation in intact larvae (C12) addresses potential artifacts from dissection, strengthening the conclusion that this is a physiologically relevant structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The tubular lysosomal network is highly sensitive to chemical fixation, which causes the network to collapse into vesicular structures. Live imaging is therefore essential for studying this network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 demonstrate a critical methodological finding that explains why this network has not been previously characterized. The observation that fixation destroys the tubular structure and leaves behind vesicular lysosomes is well-documented and logically supports the necessity of live imaging approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The tubular lysosomal network requires microtubules and clathrin for its integrity, but the actin cytoskeleton is not essential. Treatment with nocodazole abolished tubules, while latrunculin A had no significant effect. Clathrin heavy chain RNAi completely disrupted network integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide clear pharmacological and genetic evidence for cytoskeletal requirements. The differential effects of nocodazole versus latrunculin A are well-documented with imaging. However, the study would benefit from quantification of these effects and assessment of whether the drugs affected other cellular structures at the concentrations used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The tubular network is confirmed to be lysosomal based on multiple criteria: it is acidic (co-localizes with Lysotracker), exists in wild-type muscle without overexpression, and does not co-localize with markers for ER, mitochondria, early endosomes, recycling endosomes, or Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 provide comprehensive characterization using multiple organelle markers and pH-sensitive dyes. The co-localization experiments are well-controlled and the observation in wild-type muscle (C21) addresses concerns about overexpression artifacts. The systematic exclusion of other organelles strengthens the lysosomal identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "VCP is required for tubular lysosomal network integrity. Both RNAi-mediated knockdown and acute pharmacological inhibition with DBeQ abolished tubules, leaving behind irregular, clustered vesicles. The catalytic ATPase activity of VCP is required, and the remaining vesicular structures are completely static.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide strong evidence through both genetic and pharmacological approaches. The use of DBeQ to acutely inhibit VCP catalytic activity (C30-C31) is particularly valuable as it demonstrates continuous requirement rather than developmental effects. Time-lapse imaging showing static vesicles (C32) provides additional functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Human VCP can functionally rescue the tubular lysosomal network defects caused by Drosophila VCP knockdown, demonstrating evolutionary conservation of VCP function in maintaining lysosomal tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide strong evidence for functional conservation through cross-species rescue experiments. The complete rescue in every muscle (C33) is compelling. However, the manuscript does not report whether human VCP expression levels were comparable to endogenous Drosophila VCP, which could affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42"
+    ],
+    "result": "Disruption of the tubular lysosomal network is specific to VCP loss of function and not a secondary consequence of general muscle degeneration or ER stress. RNAi against other degenerative disease genes (parkin, tbph) did not affect tubules, and ER stress induced by tunicamycin did not disrupt the network despite increasing ER stress markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C42 provide important specificity controls. The comparison with other degenerative conditions (C36) and the tunicamycin experiment (C37-C39) strengthen the conclusion that tubule disruption is a specific VCP phenotype. The Western blot confirmation of ER stress (C38) validates the tunicamycin treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Autophagosome membranes, marked by mCherry-Atg8a, co-localize with and are dynamic within the tubular lysosomal network. Some Atg8a puncta traffic through the tubules, suggesting ongoing degradation of autophagosome membranes following fusion with lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide strong imaging evidence for autophagosome-lysosome interaction. The time-lapse data (C45-C46) showing dynamic Atg8a within tubules is particularly compelling. However, C47 is interpretive and would benefit from additional biochemical evidence of autophagosome membrane degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "VCP loss disrupts autophagosome-lysosome fusion. When VCP is knocked down, Atg8-positive autophagosomes no longer co-localize with lysosomes but are found closely apposed, suggesting defective fusion. This confirms prior reports and suggests VCP affects fusion by controlling lysosomal structural properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C61-C64 provide strong evidence for fusion defects through imaging. The close apposition without fusion (C49-C50) is consistent with a docking but not fusion phenotype. The connection to prior literature (C63) strengthens the interpretation. However, direct fusion assays would provide more definitive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The lysosomal tubules are acidic, as demonstrated by pH-sensitive GFP-mCherry-Atg8a reporter showing mCherry but not GFP signal in tubules. Treatment with V-ATPase inhibitor concanamycin A restored GFP signal, confirming acidification. Importantly, acidification is not necessary to maintain tubule structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 use an elegant pH-sensitive reporter to demonstrate acidification. The concanamycin A experiment (C53) provides strong validation and demonstrates that tubule structure is independent of acidification (C55), an important mechanistic insight. The experimental design is sound and well-controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "VCP inhibition with DBeQ creates GFP-positive (non-acidified) vesicles consistent with unfused autophagosomes. The rapid appearance of these vesicles suggests continual flux through the autophagy-lysosome system at steady state in muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide evidence for ongoing autophagic flux using the pH-sensitive reporter. The interpretation that GFP-positive vesicles represent unfused autophagosomes (C57) is reasonable given the pH sensitivity of GFP. The inference about steady-state flux (C58) is logical but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Autophagy induction is not required for lysosome tubule formation or maintenance. Expression of Atg7-RNAi, which blocks autophagosome assembly, did not affect tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide an important negative control showing that tubule formation is independent of autophagosome formation. This distinguishes the observed network from stress-induced autophagic lysosome reformation. The experiment is straightforward and the conclusion is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "VCP localizes to autolysosomes in addition to its known nuclear and cytoplasmic localization. VCP-Venus concentrates at structures labeled by Spin-RFP and mCherry-Atg8a, suggesting VCP acts at autolysosomal membranes to control tubulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C74 demonstrate VCP localization through co-imaging experiments. The concentration at autolysosomal structures (C66) is well-documented. However, the interpretation that VCP participates in tubulation (C74) is somewhat speculative and would benefit from additional functional evidence linking localization to activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "VCP forms reversible rod-shaped aggregates upon inhibition with DBeQ or proteasome inhibitor MG132, which correlates with tubular network dissolution. Upon MG132 washout, aggregates dissolve, VCP redistributes to autolysosomes, and tubules reform, demonstrating dynamic VCP requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 describe an unexpected but well-documented phenomenon. The reversibility upon washout (C72-C73) provides strong evidence for dynamic VCP requirement. The Western blot showing no change in total VCP levels (C70) is an important control. However, the biological significance of VCP aggregation remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "VCP knockdown in muscle causes muscle wasting and severe impairment in larval movement, consistent with compromised muscle function. The motility defect is not due to nervous system dysfunction as synaptic transmission remains intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 demonstrate functional consequences of VCP loss. The electrophysiology control (C76) is important for ruling out neuronal defects. However, the manuscript lacks quantification of muscle wasting and more detailed characterization of the movement defects would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Despite loss of tubular structure, the remaining vesicular lysosomes in VCP-RNAi muscles retain acidification and normal Cathepsin-L processing, indicating that disruption of tubular network does not affect basic proteolytic capacity of lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide important functional characterization showing that vesicular lysosomes retain some functions. The Lysotracker co-localization (C78) and Cathepsin-L processing (C79) are appropriate assays. However, these assays may not capture all aspects of lysosomal function, and the conclusion (C80) may be overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "VCP loss causes dramatic accumulation of cytoplasmic poly-ubiquitin aggregates, which occurs even with acute DBeQ treatment. Importantly, Spin-positive lysosomes are devoid of poly-ubiquitin staining, consistent with failed autophagosome-lysosome fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 provide strong immunofluorescence evidence for proteostasis defects. The acute DBeQ experiment (C82) demonstrates this is not a developmental effect. The lack of poly-ubiquitin in lysosomes (C84) supports the fusion defect model. Quantification in C82 strengthens the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "VCP-RNAi muscles show reduced mitochondrial membrane potential and altered mitochondrial morphology (round and dispersed rather than tubular). These swollen mitochondria are likely defective and should be targets for mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 document mitochondrial defects with appropriate imaging. However, C87 is highly speculative. The manuscript acknowledges that VCP has direct roles at mitochondria, making it unclear whether mitochondrial defects are due to failed mitophagy or direct VCP functions. Additional experiments would be needed to distinguish these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "VCP-RNAi muscles accumulate lipofuscin granules (autofluorescent material co-localizing with LysoTracker), which is a progressive phenotype not observed with acute DBeQ treatment. This suggests maintaining tubular lysosome integrity is critical for lysosome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 document lipofuscin accumulation using appropriate methods (autofluorescence and LysoTracker co-localization). The comparison between chronic RNAi and acute DBeQ (C91-C92) provides evidence for progressive accumulation. However, C93's conclusion about criticality of tubule structure is somewhat inferential and could reflect other aspects of VCP loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Overexpression of disease-associated VCP mutants (R155H, R191Q, A232E) profoundly impairs tubular lysosomes and causes lipofuscin accumulation, phenocopying VCP-RNAi. The most severe clinical mutation (A232E) caused the largest increase in autofluorescence. These data suggest the mutations are dominant-interfering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 provide strong evidence linking disease mutations to tubule dysfunction. The control showing wild-type VCP overexpression has no effect (C94) is critical. The correlation between clinical severity and phenotype strength (C97) is compelling. The dominant-interfering interpretation (C98) is reasonable given phenocopy of knockdown, though additional experiments could strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "This work identifies a novel, extensive dynamic tubular lysosomal network in Drosophila muscle that requires VCP for its integrity and dynamics. VCP catalytic activity is continuously required, and loss of VCP causes network collapse, compromised proteostasis and autophagy, and cellular manifestations resembling VCP-associated diseases. This represents an early marker of VCP-dependent pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 provide an appropriate summary of major findings. The novelty claim (C102) appears justified based on the literature cited. The connection to disease manifestations (C106) is supported by the poly-ubiquitin and lipofuscin data. The claim about early pathology markers (C107) is reasonable but somewhat speculative without temporal disease progression studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose that the tubular lysosomal network maintained by VCP ensures efficient autophagy throughout large muscle sarcoplasms and facilitates local nutrient recycling. This may be related to autophagic lysosome reformation (ALR), supported by the requirement for mammalian Spinster in ALR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 cite established knowledge appropriately. However, C110-C111 are speculative proposals about function, and C113 tentatively connects to ALR. While these are reasonable hypotheses supported by some evidence (C112, C114), they remain largely speculative and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The tubular network resembles lysosome tubules observed in cultured macrophages and may distribute autolysosomal activity throughout the cell, providing insights into lysosome tubule function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 appropriately connect findings to prior observations in macrophages. The comparison is reasonable and the proposed function (C116) is supported by the experimental data showing defects when tubules are lost. This provides a functional framework for understanding tubular lysosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "VCP has multiple cellular functions mediated by its role as a ubiquitin-dependent segregase with different cofactors. The data suggest VCP acts at autolysosomal membranes to control dynamics and autophagy progression, and that poly-ubiquitin and lipofuscin accumulation are direct consequences of impaired VCP-dependent lysosomal function. Disease mutants do not disrupt UPS/ERAD pathways in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 appropriately summarize established VCP biology. C120 is a reasonable interpretation of the localization and functional data, though the specific molecular mechanism remains unclear. C121 is a logical inference from the data. C122 cites prior work appropriately to emphasize autophagy defects over UPS/ERAD defects in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "This work challenges the classical view of vesicular lysosomes by demonstrating tubular lysosomes in vivo. VCP, an AAA-ATPase linked to degenerative diseases, is required for tubular lysosome integrity. Human VCP rescues Drosophila VCP loss, and disease mutations dismantle tubular lysosomes, linking tubule dysfunction to human disease. Network disruption correlates with multiple pathological features including impaired autophagy, protein aggregates, lipofuscin, damaged mitochondria, and muscle dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 provide an appropriate summary of the major findings and their significance. The evidence supporting each component is strong, with the human VCP rescue (C125) and disease mutant experiments (C126) providing particularly compelling links to human disease. The correlation of multiple pathological features (C128) is well-documented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "VCP mutations cause IBMPFD and related degenerative diseases affecting muscle, bone, and neurons. Muscle weakness is the first symptom in >50% of patients. Patient muscle biopsies show poly-ubiquitin aggregates, but disease mutations don't impair UPS/ERAD pathways. Instead, mutant VCP overexpression causes autophagosome accumulation, suggesting defects in autophagosome-lysosome fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 appropriately summarize established clinical and research knowledge about VCP diseases, with appropriate citations. This provides important context for the current work and justifies the focus on autophagy-lysosome interactions rather than proteasomal degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "While lysosomes are classically viewed as vesicular degradation sites, they can adopt tubular morphologies in certain systems including macrophages and during stress-induced autophagic lysosome reformation (ALR). However, the molecular requirements for lysosome tubule formation are largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 provide appropriate background on lysosome biology and tubulation, with proper citations. This establishes the knowledge gap that the current work addresses and justifies the novelty of identifying molecular requirements (VCP, microtubules, clathrin) for tubule formation.",
+    "result_type": "MINOR"
+  }
+]

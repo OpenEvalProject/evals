@@ -1,0 +1,1778 @@
+{
+  "submission": {
+    "id": "d883cd13-7382-4c96-a795-023f7af5f87a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:33:59.581113Z",
+    "updated_at": "2025-11-29T04:33:59.581113Z"
+  },
+  "content": [
+    {
+      "id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "submission_id": "d883cd13-7382-4c96-a795-023f7af5f87a",
+      "content_type": "manuscript",
+      "content_text": "# MicroRNA-203 represses selection and expansion of oncogenic Hras transformed tumor initiating cells\n\n## Authors\n\n- Kent Riemondy<sup>1</sup>\n- Xiao-jing Wang<sup>2</sup>\n- Enrique C Torchia<sup>3</sup>\n- Dennis R Roop<sup>3</sup>\n- Rui Yi<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cellular and Developmental Biology University of Colorado, Boulder Boulder United States\n2. Department of Pathology University of Colorado Denver Anschutz Medical Campus Denver United States\n3. Department of Dermatology University of Colorado Denver Anschutz Medical Campus Denver United States\n4. Charles C Gates Center for Regenerative Medicine and Stem Cell Biology University of Colorado Denver Anschutz Medical Campus Denver United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn many mouse models of skin cancer, only a few tumors typically form even though many cells competent for tumorigenesis receive the same oncogenic stimuli. These observations suggest an active selection process for tumor-initiating cells. Here, we use quantitative mRNA- and miR-Seq to determine the impact of HrasG12V on the transcriptome of keratinocytes. We discover that microRNA-203 is downregulated by HrasG12V. Using a knockout mouse model, we demonstrate that loss of microRNA-203 promotes selection and expansion of tumor-initiating cells. Conversely, restoration of microRNA-203 using an inducible model potently inhibits proliferation of these cells. We comprehensively identify microRNA-203 targets required for Hras-initiated tumorigenesis. These targets include critical regulators of the Ras pathway and essential genes required for cell division. This study establishes a role for the loss of microRNA-203 in promoting selection and expansion of Hras mutated cells and identifies a mechanism through which microRNA-203 antagonizes Hras-mediated tumorigenesis.\n\n## Introduction\n\nRecent efforts in comprehensively sequencing human cancer genomes have confirmed \u223c140 protein-coding genes that, when mutated, can drive tumorigenesis (Vogelstein et al., 2013). When genome sequencing data were utilized to construct the history of cancer cells in breast cancer, it was revealed that a considerable amount of \u2018molecular time\u2019 exists between the common ancestors that harbor the great majority of driver mutations and the phenotypically identified cancer cells that compose the bulk of the tumor (Nik-Zainal et al., 2012). In support of these observations, lineage tracing experiments conducted in genetically engineered mouse models revealed that only a few clones give rise to tumors whereas a vast majority of mutated cells are unable to sustain tumorigenesis (Driessens et al., 2012; Schepers et al., 2012). These results suggest that even after the acquisition of key driver mutations in the nascent cancer cells, these cells must still undergo continuous evolution and likely clonal selection before developing into clinically apparent tumors. To begin to understand the molecular basis underlying such selection, we examined papilloma formation driven by oncogenic Hras in the skin, a well-characterized model where Hras has been shown to initiate the formation of tumors that clonally evolve (Brown et al., 1986; Driessens et al., 2012; Beck and Blanpain, 2013). Oncogenic Ras mutations are some of the most frequently detected driver mutations in human cancer. Among the three Ras genes (H-, K-, and N-ras), Hras is commonly mutated in tumors originated from stratified epithelial tissues including squamous cell carcinoma in the skin, head, and neck cancer as well as bladder cancer (Bos, 1989; Agrawal et al., 2011; Stransky et al., 2011). Experimental and genomic sequencing studies have revealed that the vast majority of Ras mutations are missense, point mutations at amino acid residues glycine 12 (G12), glycine 13 (G13), or glutamine 61 (Q61) (Bos, 1989). Structural and biochemical studies have further confirmed that all of these mutations generally interfere with the GTP binding pocket and compromise the GTPase activity of Ras proteins. In turn, these mutations lead to uncontrolled activation of downstream effectors including Raf/MEK/ERK and PI(3)K pathways, resulting in sustained cell survival and proliferation observed in human cancers. Because of the prominent role of Ras mutations in human cancer, extensive efforts have been devoted to uncover and subsequently target downstream pathways that are regulated by Ras mutations. However, the immediate impact of Ras mutations on the transcriptome, in particular, with regards to microRNAs (miRNAs) remains unclear.\n\nmiRNAs are a class of small, noncoding RNA species that are involved in virtually all biological processes examined in mammals including mouse and human. These regulatory RNA molecules function by repressing the protein producing ability of mRNA targets through destabilization of mRNAs and inhibition of translation (Bartel, 2009). miRNAs typically target a large number of mRNAs in a dosage- and cell context-dependent manner (Mukherji et al., 2011). As prominent proto-oncogenes, Ras mutations have long been recognized to interact with the miRNA pathway. Indeed, Hras, Kras, and Nras all harbor multiple binding sites for the let-7 miRNA, a founding member of miRNAs, in their 3\u2032UTRs (Johnson et al., 2005). Additionally, impaired miRNA biogenesis in the form of Dicer1 disruption has been shown to be a tumor-suppressing mechanism for the development of Kras-induced lung cancer in a mouse model (Kumar et al., 2007). A number of individual miRNAs were also found to function as modifiers for Ras-induced tumorigenesis that include miR-21, -29, and miR-17\u223c92 as tumor-promoting miRNAs and miR-34, -15/16, and miR-143/145 as tumor-suppressing miRNAs (Kasinski and Slack, 2010; Iorio and Croce, 2012; Mendell and Olson, 2012). Collectively, these seminal studies demonstrate unequivocally that the miRNA pathway and individual miRNAs play important roles in Ras-induced tumorigenesis. However, it is unclear how Ras mutations, usually the tumor-initiating drivers, directly alter the landscape of miRNA expression during tumorigenesis. Importantly, it is also unknown whether the changes in miRNA expression play a role in the selection of oncogenic Ras-transformed cells during tumor initiation. Finally, the lack of a comprehensive survey of high-confidence miRNA targets that may play a role downstream of Ras mutations hinders our mechanistic understanding and limits the potential to develop miRNA-based therapeutics.\n\nIn this study, we utilized our recently improved quantitative miR-Seq techniques to examine the impact of an oncogenic Hras mutation (HrasG12V) on both mRNA and miRNA expression. We discovered that miR-203, the most highly expressed miRNA in the skin (Yi et al., 2008; Jackson et al., 2013), is downregulated by HrasG12V. Using both knockout (KO) and inducible models, we provide evidence for an important role of miR-203 in restricting expansion of oncogenic Hras-transformed cells in vitro and in vivo. We comprehensively surveyed skin-specific targets of miR-203 and identified a number of novel targets that have important implications for Hras-mediated tumorigenesis. Our results suggest that miR-203 plays a tumor-suppressing role in inhibiting selection and expansion of tumor-initiating cells early in tumor development.\n\n## Results\n\n### HrasG12V profoundly deregulates the mRNA and miRNA transcriptome in the skin\n\nOncogenic mutation of the Hras gene is one of the initiating drivers in the development of benign papillomas and malignant squamous cell carcinomas in murine skin chemical carcinogenesis. However, the molecular consequences defining the cellular changes that accompany expansion of oncogenic Hras-transformed keratinocytes to initiate papillomas remain elusive. We first investigated the consequences of HrasG12V activation on the mRNA transcriptome using a modified form of PolyA+ RNA-Seq, known as 3P-Seq, or 3seq (Figure 1A\u2013C). Compared to traditional RNA-Seq, 3Seq allows both quantification of mRNA transcripts and detection of changes in alternative 3\u2032 UTR formation (Wang et al., 2013). To examine the immediate impact of HrasG12V on primary skin cells, we used primary keratinocytes isolated from newborn skin and performed 3Seq after HrasG12V transduction. We did not observe widespread shortening or alternative formation of 3\u2032UTRs, which are often ascribed to oncogenic transformation when comparing tumor cell lines to normal cells (data not shown). This is similar to our previous observation that alternative 3\u2032UTR usage is infrequent within the skin lineages (Wang et al., 2013). Over 1100 transcripts were differently expressed (two-fold change and FDR <0.05) in keratinocytes expressing HrasG12V, compared to the control (Figure 1C and Figure 1\u2014source data 1). Gene ontology functional analysis revealed profound deregulation in three core processes by HrasG12V: activation of cellular migration, upregulation of pro-angiogenic pathways, and suppression of the terminal differentiation program (Figure 1D). All of these three processes are identified as hallmarks of human cancer (Hanahan and Weinberg, 2011). The observed widespread changes in the transcriptome also endorse the driver role of HrasG12V in skin tumorigenesis. Importantly, transcripts upregulated by HrasG12V in our primary keratinocytes strongly and significantly overlapped with the putative cancer stem cell signatures obtained from murine squamous cell carcinoma (SCC) models (Schober and Fuchs, 2011). In addition, transcripts upregulated by HrasG12V significantly overlapped with transcripts known to be targets of the c-Fos transcription factor in a genetic model of SCC (Durchdewald et al., 2008). Furthermore, known core components of the Hras signaling pathway were also among the differentially detected genes (Bild et al., 2006) (Figure 1E). These transcriptome data indicate that we have captured the initiating changes induced by oncogenic Hras in the keratinocytes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of experimental approach to identify deregulated mRNA and miRNA networks driven by oncogenic HrasG12V using small-RNA Seq and 3Seq. The 3seq library preparation allows quantitative definition of poly-A+ RNA 3\u2032ends and expression levels. (B) 3Seq reproducibly detects mRNA expression levels over 4 orders of magnitude. Pearson correlation coefficient displayed (C) unsupervised hierarchical clustering of log-transformed mean-centered mRNA expression levels for all transcripts deregulated twofold by oncogenic HrasG12V (n = 2 libraries per condition) (D) Gene Ontology analysis of transcripts up and downregulated by HrasG12V (twofold change FDR <0.05) indicates enrichment for migratory and angiogenic processes, and suppression of keratinocyte differentiation. (E) GSEA analysis of selected genesets relevant to skin carcinogenesis. (F) Unsupervised hierarchical clustering of log-transformed mean-centered miRNA expression levels for all transcripts deregulated twofold by oncogenic HrasG12V (n = 2 libraries per condition) (G, H) Abundant miRNAs such as miR-203, miR-205, and miR-21 are strongly deregulated by oncogenic Ras.\n\nTo define the impact of the oncogenic Hras on the landscape of miRNA, we applied our recently developed, quantitative miRNA-Seq (Zhang et al., 2013) to HrasG12V-transformed keratinocytes. Overall, we detected 15 differentially expressed miRNAs upon HrasG12V expression (FDR <0.05, two-fold change) (Figure 1F\u2013H). Two key patterns emerged in these profiles. First, the epithelial tissue-specific miRNAs, miR-203 and miR-205, which represent the most abundant miRNAs expressed in murine skin and primary keratinocytes were strongly suppressed by HrasG12V. Additionally, members of the abundantly expressed, miR-23/24/27 miRNA cluster were also downregulated by HrasG12V. Secondly, miR-21 was strongly induced becoming the most highly expressed miRNA, consistent with its direct activation by oncogenic Ras reported in other systems (Talotta et al., 2009). The upregulation of miR-21 is also consistent with its well-appreciated oncogenic function in skin cancer (Darido et al., 2011). miR-146 was also induced by HrasG12V. However, this miRNA is expressed 2-orders of magnitude lower than miR-21, suggesting that its upregulation may have limited contribution to Hras-initiated tumorigenesis at this early stage.\n\nWe further measured mature miR-21, miR-203, and miR-205 RNAs by qPCR. In support of the quantitative performance of our miR-Seq, the differential expression of all three miRNAs measured by qPCR was nearly identical to the quantification by our miR-Seq (Figure 2A,B). To initially probe the mechanism through which HRASG12V suppresses miR-203 expression, we examined the level of miR-203 primary transcripts. We previously characterized the transcribed genomic region of miR-203 including the promoter region and transcription start site (Jackson et al., 2013). Because the primary transcript of miR-203 harbors a polyadenylation [Poly(A)] signal and generates a Poly(A) tail, we directly quantified the abundance of the primary transcripts by counting the 3\u2032end reads of the primary miRNA obtained by 3seq (Figure 2C). This result was further confirmed by qPCR measurement specific to the pri-miR-203 (Figure 2D). The degree of downregulation for both mature and primary miR-203 transcripts was similar as judged by these two independent assays. Collectively, we conclude that the repression of miR-203 by HrasG12V is most likely mediated by suppressing the production of primary miR-203 transcripts at an early stage of oncogenic cellular transformation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) qPCR and small-RNA-Seq independently validate downregulation of miR-203 and upregulation of miR-21 driven by oncogenic HrasG12V (n = 3 biological rep. qPCR, n = 2 small-RNA-Seq, mean \u00b1 SEM displayed, *p < 0.05, Student's t-test two-sided). (C) Gene track and quantification the 3\u2032end of the miR-203 primary transcript based on 3Seq. (D) miR-203 primary transcript detection by qPCR (n = 3 biological replicates, Mean \u00b1 SEM displayed, *p < 0.05, ns = non-significant, Student's t-test two-sided). (E) miR-203 is downregulated in DMBA/TPA produced papillomas compared to normal adjacent tissue. Epi = epidermis, Der = dermis, T = tumor, and S = stroma. The black lines denote the epidermal/dermal and tumor/stroma boundary (F) miR-203 is downregulated in malignant SCCs derived from KrasG12D/Smad4cKO and passaged in immunocompromised mice. (G\u2013O) Reduced miR-203 expression is correlated with increasing malignancy in human skin SCC cancers. Panels G, J, M were taken from regions with more histologically normal regions to demonstrate successful miR-203 hybridization. (P) miRNA-Seq quantification from patient matched normal and tumor tissue obtained from the TCGA consortium data (bar indicates mean value, Student's t-test two-sided). Scale bar = 50 \u03bcm.\n\n### miR-203 silencing is an early event in mouse and human SCC\n\nOur data revealed the early silencing of miR-203 by oncogenic Hras in an in vitro model. We further investigated miR-203 expression with in situ hybridization during skin tumorigenesis in vivo. In classic chemical carcinogenesis models initiated by DMBA/TPA treatment of mouse skin, Hras is preferentially mutated, which compromises the GTPase activity and results in constitutive Hras activation. Mutating Hras at Q61 leads to papilloma development and infrequent malignant transformation to SCCs (Abel et al., 2009). We first examined miR-203 expression in benign papillomas. Consistent with our in vitro results, miR-203 expression was absent from epithelial compartments adjacent to tumor stroma, the region where putative cancer stem cells reside. Although we also observed moderately expressed miR-203 in tumor regions with evidence of cellular differentiation (keratin pearls and large differentiated morphology), the levels of miR-203 was considerably lower in these regions compared to the suprabasal cells of adjacent normal skin, where miR-203 is normally expressed (Figure 2E). Overall, miR-203 expression levels were strongly reduced in tumor tissues compared to adjacent epidermal regions. In an independent mouse model of SCC, we also found that miR-203 expression was gradually lost in a KrasG12D/Smad4cKO model where skin tumors progressed to invasive SCC through serial passages of tumors (White et al., 2013) (Figure 2F). Taken together, these results demonstrate that miR-203 is significantly downregulated at both early and late stages of papilloma and SCC formation in mouse models.\n\nTo evaluate the relevance of the loss of miR-203 in human skin cancer, we examined 9 tumor samples obtained from patients with the early, middle, and late stages of skin cancer. In these human skin SCC samples, miR-203 was already downregulated at the onset of tumorigenesis and progressively lost during the course of tumor progression, similar to the pattern observed in the mouse models. In the poorly differentiated SCC samples, the miR-203 signal was completely absent, yet readily detectable in surrounding hyperplastic or normal epidermal regions (Figure 2G\u2013O). In addition, we mined publically available data sets from The Cancer Genome Atlas (TCGA) and detected a significant reduction in miR-203 and an elevation of miR-21 in head and neck SCC samples compared to patient-matched normal tissues (Figure 2P). Altogether, these results corroborate our observations in mouse models and validate the strong correlation between the loss of miR-203 and the development of skin cancer at multiple stages of tumorigenesis. These expression analyses suggest that the loss of miR-203 coincides with the tumor-initiating events and miR-203 might function as a tumor-suppressing mechanism in skin cancer.\n\n### Genetic deletion of miR-203 impacts early epidermal development in mouse\n\nWe then generated a conditional KO mouse model to assess the function of miR-203 in murine skin development and carcinogenesis in vivo. We have characterized the genomic locus of miR-203 and determined that miR-203 is located in an intergenic region, 3.3 kbp downstream from the Asp gene and 15.3 kbp upstream of the Kif26a gene (Figure 3\u2014figure supplement 1). Two loxP sites were inserted to flank the miR-203 hairpin (Figure 3A). miR-203 was deleted by first mating miR-203fl/fl mice with Actb-Flpe mice to remove the Neo cassette, followed by breeding with EIIa-Cre or Krt14-Cre mice, resulting in complete miR-203 loss from all tissues or only from skin tissues, respectively. In both cases, ablation of miR-203 was confirmed by qPCR on isolated epidermis and in situ hybridization (Figure 3B,C). We previously demonstrated that expression of miR-203 was largely restricted to stratified epithelial tissues. Within the skin, the differentiated skin lineages express miR-203 \u223c10-fold higher than the stem/progenitor lineages. Consistent with this observation, there are no discernible differences between constitutive miR-203 null (miR-203\u2212/\u2212) mice and skin-specific cKO (Krt14-Cre/miR-203fl/fl) mice. Both strains were born at the expected Mendelian ratio. They also showed no signs of gross developmental defects as adults (Figure 3D). For all subsequent studies, we used miR-203\u2212/\u2212, which was maintained in the C57BL/6 background.\n\nmiR-203 is highly expressed primarily in stratified epithelial tissues, such as the epidermis, tongue, esophagus, and cervix, yet poorly expressed or absent in other tissues such as the small intestine, bladder, lung, kidney, liver, or brain (Figure 3\u2014figure supplement 2). Because miR-203 begins to be expressed by E13 when the epidermis begins to stratify, we examined the proliferation rate and thickness of embryonic skin from E16 to P4. At E16, we observed a mild increase in cell proliferation in the KO, as measured by BrdU incorporation (Figure 3E,F). Although the difference in BrdU incorporation did not achieve statistical significance (p = 0.07), the thickness of the KO epidermis was significantly increased, compared to WT littermates (p = 0.03). Interestingly, the increase in epidermal thickness was most prominent at early stages (E16 and E17) and waned as skin development progressed (P4) (Figure 3G). At P4, miR-203\u2212/\u2212 mice displayed normal histological development of the epidermis and hair follicles, and the difference in proliferation and epidermal thickness between KO and WT became indistinguishable (Figure 3G). In addition, we found no evidence of perturbed differentiation in miR-203\u2212/\u2212 mice based upon analysis of early and late epidermal differentiation markers, Keratin 1 and Loricrin, for the spinous and granular layers, respectively (Figure 3H,I). Together, these results provide evidence that miR-203 limits cell division when the proliferation rate is high during early embryonic skin development but not at later stages when the proliferation rate wanes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of miR-203 conditional allele generation and knockout strategy. (B) Validation of miR-203 ablation by qPCR from isolated epidermal samples (n = 3 biological replicates, * p < 0.05, ns = non-significant, Student's t-test two-sided). (C) Validation of miR-203 ablation within the epidermis by in situ hybridization (Scale bar = 50 \u03bcm). (D) miR-203 knockout mice are visibly indistinguishable from wild-type counterparts. (E\u2013G) miR-203 ablation results in mild epidermal hyperplasia during embryonic development. (n = 3 E16, n = 4 E17, and n = 3 p4 animals, p-value provided in figure, Student's t-test one-sided). (H) Representative hematotoxylin and eosin image from p4.5 animals, demonstrating restored normal skin morphology in neonatal animals. (Scale bars = 50 \u03bcm for inset and 100 \u03bcm for main images) (I) Epidermal differentiation is not compromised by loss of miR-203. (Scale bars = 50 \u03bcm) (J) miR-203\u2212/\u2212 primary keratinocytes are more clonogenic than wild-type counterparts (representative results from 3 experiments, *p < 0.05, Student's t-test two-sided). (K) Conditional ablation of miR-203 from passaged miR-203fl/fl keratinocytes results in higher clonogenicity (representative results from n = 3 independent experiments, mean \u00b1 standard deviation displayed, *p < 0.05, Student's t-test, two-sided).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) RNA-Seq and 3Seq detection of the miR-203 primary transcript (B) Schematic of the miR-203 conditional allele. H3 = HindIII (C) Southern blot confirmation of founder miR-203 conditional knockout mice (D) Small-RNA-seq confirmation of miR-203 loss. Blue lines indicate twofold change (E) qPCR quantification of miR-203 and miR-205, demonstrating that the miR-203floxed allele does not alter microRNA levels. Error bars represent S.E.M from reactions performed from n = 2 mice in technical triplicate, ns = non-significant.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** qPCR detection of mature miR-203 in various adult mouse organ tissues. Error bars represent S.E.M from reactions performed in technical duplicate.\n\nWe noted that the impact of miR-203 loss was correlated with the rate of cell proliferation. To further test whether miR-203 functions to restrict the expansion of highly proliferative cells, we investigated the roles for miR-203 in regulation of primary and established keratinocyte cell lines, respectively. We observed \u223ctwo-fold higher colony-forming capacity of miR-203\u2212/\u2212 keratinocytes, compared to the WT controls (Figure 3J). To further confirm the ability of miR-203 to suppress cell proliferation cell-autonomously, we generated a miR-203fl/fl keratinocyte cell line. By treating these cells with an adenoviral vector to express Cre (Ad-Cre), we determined that within 48 hr of Ad-Cre exposure miR-203 was completely depleted (<1% remaining as measured by qPCR). We again observed a similar, \u223ctwo-fold higher colony-forming capacity by the Ad-Cre-treated miR-203fl/fl cells compared to the Ad-GFP-treated control cells (Figure 3K). In both cases, although we detected some slightly larger clones with more cells formed by the miR-203 null keratinocytes, the biggest differences were the significantly increased number of clones formed by the miR-203 null cells. These results suggest that miR-203 limits the clonogenicity of normal keratinocytes. When miR-203 is deleted, more cells are likely to become clonogenic.\n\n### Loss of miR-203 enhances chemical carcinogenesis in the skin\n\nWe determined that the loss of miR-203 is an early event in the initiation and development of both mouse and human skin SCCs. Furthermore, genetic deletion of miR-203 confers \u223ctwo-fold higher colony-forming ability on primary keratinocytes. Because oncogenic Hras is a potent driver for tumorigenesis in the skin and our miR-seq data revealed a rapid and strong repression of miR-203 by HrasG12V, these observations prompted us to investigate whether the loss of miR-203 plays a role in skin carcinogenesis. We subjected WT and miR-203 null mice to two-stage chemical DMBA/TPA carcinogenesis (Figure 4A). The chemical carcinogenesis experiments were terminated at week 21 when tumor burden had reached a maximum. Because our mice were generated in the C57BL/6 background and these mice are known to be resistant to two-stage chemical carcinogenesis (Abel et al., 2009), all tumors generated in our mice were papillomas with no evidence for malignant conversion to squamous cell carcinomas during the time frame of our study. Nevertheless, we examined the temporal and numeric characteristics of tumor formation in our mice for the role of miR-203 in tumor initiation. During the course of carcinogenesis, we observed a slightly earlier tumor formation pattern on the backskin of miR-203 null animals (Figure 4B). Furthermore, miR-203 null animals developed \u223c2.5-fold more tumors, when compared to WT control animals (Figure 4B). Measurement of tumor sizes at week 17 showed no statistically significant difference in tumor sizes between genotypes although miR-203 null animals were more susceptible to tumor formation (Figure 4C). These results suggest that loss of miR-203 increases the number of tumor-initiating cells but does not significantly alter the type of tumors for example, conferring tumors with more aggressive phenotypes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of tumors that were formed in the skin of WT and miR-203 null mice treated with DMBA/TPA. (B) miR-203\u2212/\u2212 mice have a larger tumor burden than miR-203+/+ counterparts (n = 6 and 7 miR-203+/+ and miR-203\u2212/\u2212 animals respectively, mean \u00b1 SEM displayed, \u00a3 = p < 0.05, Whitney\u2013Mann U-test one-sided). (C) miR-203\u2212/\u2212 tumor size distribution is similar to wild-type animals (ns = non-significant, Student's t-test two sided, median displayed as bar). (D, E) miR-203+/+ and miR-203\u2212/\u2212 papillomas display similar morphologies and histology. (F) Proliferation and differentiation dynamics are similar between miR-203+/+ and miR-203\u2212/\u2212 tumors. (Scale bars = 50 \u03bcm).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative end-point PCR followed by XbaI digestion. The HrasQ61L allele produces 120 bp and 87 bp product, whereas wild-type produces a 207-bp product (B) Table with quantification of genotyping results. non-significant p > 0.05, chi-squared test.\n\nHematoxylin and Eosin staining revealed that the papillomas produced had similar morphology, displaying exophytic lesions with evidence for squamous differentiation (Figure 4D,E). Assessment of proliferation (Ki67), differentiation markers (Krt1, Lor) revealed similar dynamics between miR-203+/+ and miR-203\u2212/\u2212 tumors (Figure 4F). To further probe the mechanistic differences between miR-203 WT and KO tumors, we assessed the mutation spectra of these tumors and found that they possess the canonical HrasQ61L mutation at similar frequencies, 80% and 85.7% for WT and KO tumors, respectively (Figure 4\u2014figure supplement 1). Taken together, these results provide direct evidence for miR-203's tumor suppressing roles at the stage of tumor initiation in the classic DMBA/TPA tumorigenic model.\n\n### miR-203 represses clonal selection of oncogenic Hras-transformed cells in vitro\n\nTo further probe miR-203's role in clonal selection, we infected miR-203 WT and null primary keratinocytes with pBabe-HrasG12V. At the passage 1, the loss of miR-203 led to \u223c40% increase in colony-forming capacity immediately after the initial plating (Figure 5A). When we passaged the HrasG12V transduced cells, we began to observe reduced numbers of colonies that were formed by both the WT and null cells (Figure 5A). This was likely due to oncogenic stress caused by HrasG12V induction. Strikingly, in contrast to the WT cells that generally formed smaller colonies in subsequent passages, the miR-203 null cells generated more and bigger clones compared to WT control cells at each passage (Figure 5A). Collectively, the serial passage assay supported the enhanced selection of tumor-initiating cells in the absence of miR-203 upon oncogenic Hras induction.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig5-v2.jpg)\n\n**Figure 5.:** (A) HrasG12V transduced miR-203\u2212/\u2212 primary cultures are more colonogenic upon serial passage than wild-type controls (representative of n = 2 independent experiments, mean \u00b1 standard deviation displayed. *p < 0.05, ns = non-significant, Student's t-test two-sided). (B) qPCR of miR-203 induction upon addition of doxycycline in vector and HrasG12V transduced cells (mean \u00b1 SEM displayed, n = 3 biological replicates). (C) Restoration of miR-203 using a doxycycline-inducible transgene results in suppression of colony formation ability in HrasG12V transduced and control keratinocytes. miR-203 was induced with doxycycline (5 \u03bcg/ml) 24 hr after plating (representative of n = 3 independent experiments, mean \u00b1 standard deviation displayed, *p \u2264 0.05, , ns = non-significant). (D) miR-203 restoration suppresses HrasG12V-driven S-Phase entry. miR-203 was induced for 24 hr prior to harvesting for flow cytometry. (n = 3, mean \u00b1 standard deviation displayed, *p \u2264 0.05).\n\nTo further characterize the ability of miR-203 to suppress the growth of oncogenic Hras-transformed cells, we used our previously established Krt14-rtTA/pTre2-miR-203-inducible model (Jackson et al., 2013). After infecting the inducible keratinocytes with either the pBabe vector control or pBabe-HrasG12V, we treated the cells with 5 \u00b5g/ml doxycycline to induce \u223c4- to 7-fold increase in miR-203 expression, a physiologically relevant level of miR-203 typically observed during epidermal differentiation (Figure 5B). Introduction of miR-203 resulted in suppression of keratinocyte proliferation and colony formation ability (Figure 5C,D), as noted previously (Yi et al., 2008; Jackson et al., 2013; Benaich et al., 2014). Furthermore, whereas oncogenic Hras-enhanced S-phase entry, short-term (\u223c24 hr) induction of miR-203 completely abolished the gain of S-phase entry (Figure 5D). Over a longer term, continuous induction of miR-203 severely compromised the colony-forming capacity of the transduced cells (Figure 5C). We did not detect any evidence for enhanced apoptosis caused by miR-203, as measured by the absence of sub-G1 keratinocytes. Taken together, our results suggest that the loss of miR-203 is critical for the initial selection and expansion of primary keratinocytes harboring the oncogenic Hras mutation and the gain of miR-203 can effectively suppress the growth of these cells.\n\n### Comprehensive identification of miR-203 targets reveals regulation of the Ras signaling pathway\n\nOur data so far have suggested a role of miR-203 in suppressing the expansion of tumor-initiating cells driven by oncogenic Hras mutations. To decode the underlying mechanism, we carried out comprehensive analyses to identify miR-203 targets in the skin. Recent studies demonstrated that miRNAs' impact on gene expression could be largely captured by measuring the changes of mRNA levels upon manipulation of miRNA expression (Guo et al., 2010; Eichhorn et al., 2014). In parallel, the high-throughput sequencing of RNA isolated by crosslinking immunoprecipitation (HITS-CLIP) approach directly crosslinks miRISC to their targets and identifies miRNA targets through physical interaction (Chi et al., 2009). Therefore, we took a combinatorial approach integrating multiple data sets obtained from our KO and inducible mouse models with Ago2 HITS-CLIP analysis.\n\nWe applied several different profiling techniques including ribosome profiling, RNA-Seq (3Seq) and microarray methods to determine upregulated genes in miR-203 KO samples and downregulated genes in miR-203-induced samples. For ribosome profiling and 3Seq, we used primary keratinocytes, which are amenable to effective cycloheximide treatment and therefore also allowed us to investigate miR-203's impact on translation efficiency (Figure 6A). For microarray analysis, we used freshly isolated epidermis obtained from miR-203 WT and KO animals at P4.5. To interrogate the impact of miR-203 gain-of-function, we used the Krt14-rtTA/pTre2-miR-203-inducible mouse model that allows us to control the duration and dosage of miR-203 expression (Jackson et al., 2013). We applied microarray profiling to determine downregulated genes in FACS-purified neonatal epidermal and hair follicle progenitors with a short-term (24 hr) induction of miR-203 (Figure 6A). Altogether, we accrued 20 genome-wide expression data sets from miR-203 WT, KO and inducible samples. This comprehensive collection of functional genomic data allowed us to characterize the action of miR-203 on the transcriptome.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of genome-wide expression profiling data sets used in meta-analysis to identify bono-fide miR-203 targets. (B) Genes upregulated in all three miR-203 loss-of-function data sets (786 genes, no fold-change or p-value cut-off) were compared to genes downregulated in both miR-203 gain-of-function data sets (1704 genes, no fold-change or p-value cut-off) to identify a subset of genes with a strong inverse correlation to miR-203 expression (294 genes) of which 100 genes contained miR-203 7mer or 8mer seed sequence matches in their 3\u2032UTRs. (C) Table demonstrating top 20 genes identified in meta-analysis ranked by negative-correlation to miR-203 expression. Genes colored in red contain 3\u2032 UTR miR-203 7 or 8mer seed matches. (D) De novo motif searching identified an 8mer miR-203 seed motif, complementary to the miR-203 seed sequence enriched in the 3\u2032UTR of candidate miR-203 target genes identified in the meta-analysis (294 genes). Table demonstrating enrichment for 7 or 8mer seed matches in the 3\u2032UTR of candidate miR-203 target genes (294) over the background seed distribution in primary keratinocytes, which is not seen for randomly selected 294 genes expressed in primary keratinocytes or a negative control gene set of genes upregulated in miR-203 gain-of-function and downregulated miR-203 loss-of-function (353 genes). (E) Schematic of Ago2 HITS-CLIP and the identified miR-203 seed motif. (F) Diagram of genes detected by expression meta-analysis and Ago2-HITS-CLIP. Table of 21 high confidence miR-203 targets identified through expression meta-analysis and that have Ago2-HITS-CLIP 3\u2032UTR peaks with miR-203 seed matches.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Genes containing miR-203 seed matches are more likely to be downregulated upon miR-203 overexpression or (B) upregulated upon miR-203 ablation (panel B) (p-value <0.05 for comparison of 8mer match to no-match, K\u2013S test, one-sided). (C) Transcripts are ranked based upon aggregate fold-changes consistent with miR-203 regulation to produce a ranked expression correlation metric. Transcripts with 7 or 8mer miR-203 seed matches are more likely to be regulated by miR-203 modulation. (p < 0.05) (see \u2018Materials and methods\u2019).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Example autoradiogram of isolated Ago2-RNA complexes, red box indicates region excised for sequencing. (B) Proportion of miRNAs detected by Ago2-HITS-CLIP. (C) Number of 3\u2032UTR Ago2 peak containing seed sequences from miRNA families accounting for 90% of all miRNAs in p4 epidermis. (D) Genome-wide distribution of Ago2 peaks and reads. (E) Comparison of miRNAs detected by Ago2-HITS-CLIP and small-RNA-Seq.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Position of miRNA seed matches for miRNAs highly expressed in total epidermal samples. The peak summit represents nucleotide position 0 (B) De novo motif searching identifies the most enriched 8mer motifs in 3\u2032UTR peaks.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Cumulative distributions of miR-203 targets or not targeted transcripts based on HITS-CLIP in miR-203 overexpression data sets. (B) Cumulative distributions of miR-203 targets or not targeted transcripts based on HITS-CLIP in miR-203 knockout data sets (C) Ranked analysis of miR-203 targets detected by HITS-CLIP, based on 6, 7, 8mer seed only, or through meta-analysis (p value displayed on plots).\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** (A) Comparison of translation efficiency for miR-203 targets (red) and non-targeted transcripts (blue) identified by expression meta-analysis. (B) Quantification of the change in translation efficiency in miR-203 KO samples for miR-203 targets identified by expression meta-analysis. (C) Comparison of translation efficiency for miR-203 targets identified by Ago2-HITS-CLIP (red) and non-targeted transcripts (blue). (D) Quantification of the change in translation efficiency in miR-203 KO samples for miR-203 targets based on Ago2-HITS-CLIP.\n\nWe first analyzed the miR-203 overexpression samples. GO-analysis demonstrated that genes involved in regulation of mitotic cell cycle, DNA synthesis, and metabolism were prominently downregulated upon miR-203 induction (Figure 6\u2014source data 1). miR-203 upregulation in both epidermal and hair follicle progenitors resulted in strong suppression of transcripts harboring perfect seed matches to miR-203 in their 3\u2032UTRs (Figure 6\u2014figure supplement 1). Among them, transcripts containing the 8-mer matches were strongly suppressed, compared to transcripts without a miR-203 seed match (p = 1.5 \u00d7 10\u221223 for epidermis and 2.6 \u00d7 10\u221225 for hair follicle, respectively) (Figure 6\u2014figure supplement 1A). In contrast to miR-203 overexpression, deletion of miR-203 did not perturb transcript levels genome-wide as strongly as observed under the induced conditions and offered little insight into miR-203's function based upon GO analysis (Figure 6\u2014source data 1). However, despite the relatively mild changes in the transcript levels in the KO skin and primary keratinocytes, transcripts that contain 8-mer 3\u2032UTR matches were still more significantly upregulated than transcripts without any miR-203 seed matches (p < 0.05) (Figure 6\u2014figure supplement 1B). Lastly, a ranked sum analysis that ranked genes based on expression changes correlated with the levels of miR-203 showed that genes with the 8-mer or 7-mer seed ranked significantly higher than those transcripts without seed matches (Figure 6\u2014figure supplement 1C).\n\nBy demanding all potential targets be upregulated in all the miR-203 KO samples and downregulated in all the miR-203-induced samples, we identified 294 transcripts as our candidates for miR-203 targets (Figure 6B). Among the top 20 most differentially expressed transcripts when miR-203 was deleted or induced, 15 of them contain at least one 7-mer or 8-mer match in their 3\u2032UTRs (Figure 6C and Figure 6\u2014source data 2). In support of this approach, an unbiased de novo motif search using the 3\u2032UTRs of these 294 transcripts revealed that the most enriched motif (ACAUUUCA, p = 1 \u00d7 10\u221213) perfectly matched to nucleotide position 2\u20139 of miR-203, the 8-mer seed sequences of miR-203 (Figure 6D). Additional statistical analysis of the number of genes containing perfect 3\u2032UTR matches to the 7-mer or 8-mer seed among these candidates revealed significant enrichment over the background distribution among mRNAs expressed in the skin (Figure 6D). Therefore, we selected genes containing 7-mer or 8-mer seed matched 3\u2032UTR sites as miR-203 target candidates and obtained a collection of 100 potential miR-203 targets (Figure 6B).\n\nWe then applied HITS-CLIP to interrogate the direct interaction between miR-203 and its mRNA targets. We generated four Ago2 HITS-CLIP libraries from primary WT keratinocytes, which abundantly express miR-203 (Figure 1G). Ago2-RNA complexes were isolated from a region extending from approximately 110 kd\u2013130 kd as expected (Figure 6\u2014figure supplement 2A). Sequencing libraries from Ago2 HITS-CLIP samples were generated and analyzed using previously described methods (Chi et al., 2009; Moore et al., 2014). The HITS-CLIP faithfully captured miRNA species expressed in keratinocytes, including miR-203 (Figure 6\u2014figure supplement 2B,E). Overall our HITS-CLIP reads and clusters alignment were similar to previous published results with a significant portion aligned to 3\u2032UTRs (Figure 6\u2014figure supplement 2D). To further validate our approach, we analyzed the positional enrichment of miRNA seed sequences within the 3\u2032UTR HITS-CLIP clusters and detected strong enrichment over dinucleotide shuffled cluster sequences or randomly distributed 3\u2032UTR regions (Figure 6\u2014figure supplement 3A). Additionally, de novo motif searching for 8mer motifs identified the seed sequences of miRNAs that are highly expressed in keratinocytes (Figure 6\u2014figure supplement 3B). The motif corresponding to miR-203 detected by the HITS-CLIP was also ACAUUUCA (p = 1 \u00d7 10\u221219), identical to the motif detected by our transcriptome analysis (Figure 6E and Figure 6\u2014figure supplement 3B). A total of 113 mRNAs were detected to have miR-203 seed containing Ago2 binding sites. We next examined the ranked sum expression of these targets and determined that transcripts with Ago2 HITS-CLIP miR-203 binding sites were ranked significantly higher compared to non-targeted mRNAs, indicating that many of these targets are functional (Figure 6\u2014figure supplement 4). Finally, we did not detect any evidence for global regulation at the translation level for miR-203 targets based on our analysis of translational efficiency changes upon miR-203 deletion (Figure 6\u2014figure supplement 5). Together, these HITS-CLIP data independently validated that miR-203 uses its seed sequences for mRNA targeting and predicted 113 miR-203 targets based on Ago2 binding.\n\nBy combining the targets detected by our differential expression data sets and by the HITS-CLIP, we identified a list of high-confidence targets for miR-203 (Figure 6F). Importantly, we found a number of key regulators in the Ras signaling pathway and important genes involved in regulation of cell division including Hbegf, Ccnd1, Snai2, Met, and Pola1 in this list (Figure 6F). This collection of miR-203 targets suggests that miR-203 targets multiple pathways, including several components of the Ras signaling pathway, to suppress cell proliferation.\n\n### miR-203 directly targets Hbegf and Pola1\n\nOur genome-wide analyses identified a number of novel targets of miR-203. Given our findings that the loss of miR-203 promotes the selection and expansion of oncogenic Hras-transformed cells both in vivo and in vitro, we were interested in understanding the underlying mechanism. Overall, miR-203 targets identified in the meta-analysis were enriched in the upregulated transcripts in HrasG12V-transformed keratinocytes, compared to non-targeted transcripts, consistent with the downregulation of miR-203 in these cells (Figure 7\u2014figure supplement 1A). Among these targets, we were intrigued by the observation that multiple regulators of the Ras signaling pathway and critical factors for DNA replication and cell cycle progression were among our high confidence targets and additionally were among the most upregulated miR-203 targets in HrasG12V-transformed keratinocytes (Figure 7\u2014figure supplement 1B). To begin to validate the high-confidence set of miR-203 targets, we selected Pola1 and Hbegf for further study. Pola1 is the catalytic subunit of the DNA-POL-alpha holoenzyme, which is required in initiation of DNA replication during S-phase (Lehman and Kaguni, 1989). Hbegf is an Egf-like ligand that activates MAPK signaling through activation of EGF-receptors, Erbb1 and Erbb4. In keratinocytes, Hbegf is mitogenic and promotes keratinocyte migration (Stoll et al., 2012). In an epithelial cancer cell line, Hbegf acts as an oncogene promoting cell proliferation (Miyamoto et al., 2004). Pola1 and Hbegf contain 3\u2032 UTR miR-203 target sites (9-mer and 8-mer respectively) that are targeted by miR-203, validated by luciferase assay (Figure 7A). Furthermore, in miR-203 null epidermis, both Pola1 and Hbegf mRNAs were elevated (Figure 7B). In addition to mRNA levels, Pola1 protein levels were also elevated in the absence of miR-203. It was further elevated in the presence of HrasG12V and repressed by miR-203 induction (Figure 7C,D). We were unable to measure the protein level of Hbegf due to poor antibody performance. Additionally, we observed that the expression of Ccnd1, an essential cell cycle regulator that is often induced or amplified by oncogenic Ras (Downward, 2003; Stransky et al., 2011), showed a strong negative correlation to miR-203 (Figure 7C,D). This suggested that loss of miR-203 increases the levels of Ccnd1 and contributes to the observed upregulation of this critical gene.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig7-v2.jpg)\n\n**Figure 7.:** (A) 3\u2032UTR luciferase reporter assays demonstrate that miR-203 directly targets Trp63 (positive control), Pola1, and Hbegf in keratinocytes (representative of n = 3 independent experiments, mean \u00b1 propagated standard deviation displayed, *p < 0.05, ns = non-significant, Student's t-test two-sided) (B) Hbegf and Pola1 are upregulated in miR-203\u2212/\u2212 isolated epidermis (p4) (n = 8 and n = 10, miR-203+/+ and miR-203\u2212/\u2212 animals respectively, mean \u00b1 SEM displayed, *p < 0.05). (C, D) Western blots from lysates with miR-203 overexpression (48 hr) or miR-203 ablation. (E) shRNA knockdown of Hbegf or Pola1 impairs keratinocyte colony formation ability (representative of n = 3 independent experiments, *p <0.05, mean \u00b1 standard deviation displayed). (F) Model for the mechanism of miR-203 in restricting Hras-initiated tumorigenesis.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) miR-203 target genes identified through meta-analysis containing miR-203 seed matches are more likely to be upregulated upon HrasG12V expression in primary keratinocytes than non-targeted transcripts (p-value \u22640.05, K\u2013S test one-sided). (B) Top 20 miR-203 targets, based on expression meta-analysis, ranked by upregulation by HrasG12V, genes shown in red are also identified by Ago2-HITS-CLIP.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07004/elife-07004-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Colony formation assays of established miR-203+/+ cultures stably infected with pbabe-HrasG12V-neo, followed by Pola1 and Hbegf knockdown. (B) Colony formation assays of established miR-203+/+ cultures stably infected with pbabe-HrasG12V-neo, followed by Pola1 and Hbegf knockdown. (p-value determined by ANOVA with Tukey HSD correction, n = 3 wells per experiment).\n\nTo assess the functional consequences of Hbegf and Pola1 suppression on keratinocyte proliferation, we knocked down these targets using three independent shRNAs. Suppression of Hbegf and Pola1 strongly suppressed the growth potential of keratinocytes (Figure 7E). Additionally, we knocked down Hbegf and Pola1 in established miR-203+/+ and miR-203\u2212/\u2212 keratinocytes transduced with HrasG12V and similarly observed potent suppression of keratinocyte growth potential, demonstrating that these targets are also required in HrasG12V-transformed keratinocytes (Figure 7\u2014figure supplement 2). Taken together, these results validate Hbegf and Pola1 as direct targets of miR-203. We hereby propose a model in which miR-203 restricts selection and expansion of Hras-mutated cells by repressing multiple targets, a subset of which are involved in the Ras signaling pathway (Figure 7F).\n\n## Discussion\n\nIdentification and experimental validation of driver gene mutations have been instrumental for our understanding of cancer biology (Vogelstein et al., 2013). Although it is clear that not all cells harboring driver gene mutations develop into tumors, the mechanism of clonal selection within cells that have acquired driver gene mutations remains poorly understood. In this study, we used an oncogenic Hras-induced tumor model to determine the molecular consequences of this oncogenic driver mutation and to study the selection process. We quantitatively measured the impact of oncogenic HrasG12V on the landscape of mRNA and miRNA expression. Whereas our mRNA-Seq data confirmed the profound ability of HrasG12V in promoting cellular transformation, our miR-Seq data revealed new insights into the dynamic changes in highly expressed miRNAs caused by HrasG12V (Figure 1). In particular, the downregulation of miR-203, one of the most highly expressed miRNAs in the skin, likely occurs at the transcriptional level (Figure 2C,D). By examining tumor samples obtained from both mouse and human at multiple stages, we showed that the downregulation of miR-203 is associated with tumor initiation and progression (Figure 2E\u2013P). To determine the role of miR-203 in this process, we generated a KO mouse model. Initial insights into the function of miR-203 came from the analysis of miR-203 null epidermis during skin development. Whereas we and others have shown the potent inhibition of epidermal proliferation by miR-203 with gain-of-function approaches (Lena et al., 2008; Yi et al., 2008; Jackson et al., 2013; Benaich et al., 2014), it is unknown how the loss of miR-203 affects the skin and mouse development in general. By analyzing the KO mouse, we revealed an early, albeit mild, hyperproliferative phenotype in the embryonic but not postnatal skin (Figure 3E\u2013I). However, when we subjected miR-203 WT and null cells obtained from postnatal skin for their colony-forming ability, we observed an increased ability of the miR-203 null cells to give rise to colony-forming cells (Figure 3J,K). This observation was indicative of a role for miR-203 in restricting the expansion of highly proliferative cells. Of note, we did not observe any defects in the formation of the differentiated layers of the skin in the miR-203 KO mice. This suggests that the primary function of miR-203 is to restrict cell proliferation but not to promote epidermal differentiation per se. When we examined the role of miR-203 during DMBA/TPA-mediated chemical carcinogenesis, we observed strong increase in the number of papillomas formed in the KO skin (Figure 4A\u2013C). In vitro colony formation assays with serial passages further illustrated the enhanced ability for selecting tumor-initiating cells with miR-203 KO cells when subjected to HrasG12V transformation (Figure 5A). However, due to tumor resistance of our C57BL/6 strain, we were unable to determine if the loss of miR-203 also promotes malignant transition. Of note, a recent study showed interesting results that restoration of miR-203 suppresses human SCC metastasis (Benaich et al., 2014). Collectively, our results provide experimental evidence for an important role of miR-203 in suppressing clonal selection and expansion of Hras-mutated nascent cancer cells.\n\nA major challenge in understanding miRNA functions is to identify their high-confidence targets globally. To this end, we employed two independent approaches: transcriptome analysis with our KO and inducible models and direct miRNA target capture by Ago2 HITS-CLIP (Figure 6). Importantly, with our expansive data set, we confirmed that miR-203 utilizes the 5\u2032 seed sequences to target perfectly matched sequences located on the 3\u2032UTRs of its target genes. Consistent with recent genome-wide studies for the impact of miRNA on mRNA levels and translation efficiency in mammals (Guo et al., 2010; Eichhorn et al., 2014), we found no evidence for global changes of translational efficiency in the absence of miR-203, one of the most highly expressed miRNAs in the skin. However, we also noted that Trp63, a well-established miR-203 target, showed little change at the mRNA levels under all conditions (not shown). Our analysis with differential gene expression did not identify Trp63 as a miR-203 target. In contrast, the recognition of the 3\u2032UTR site of Trp63 by miR-203 was robustly detected by the HITS-CLIP (Figure 6E). Thus, it is likely that our identification of miR-203 targets based on the transcriptome analysis alone was conservative. More studies will be required to further integrate direct miRNA target capture with transcriptome analysis for miRNA target identification. Nevertheless, we still observed strong enrichment of miR-203 targets in genes required for cell proliferation. These high-confidence targets illustrate the broad targeting of cell proliferation by miR-203 and suggest mechanisms by which loss of miR-203 can facilitate the expansion of oncogenic Hras-transformed cells. These new insights point to the potential of utilizing miR-203 to simultaneously target multiple effectors required for cell division in human cancers. We also note that miR-203 is known to antagonize human papillomaviruses (HPV) (Melar-New and Laimins, 2010). Our identification of Pola1, a critical cellular gene required for HPV genome replication, as a target of miR-203 may provide a potential mechanism for miR-203-mediated antagonism against HPV infection. Finally, the relatively mild requirement for miR-203 in slowly proliferating cells suggests that a reduction or increase in the level of miR-203 may be well tolerated by most normal cells. This unexpected discovery could be further explored to determine miR-203's therapeutic potential in treating certain types of epithelial cancers.\n\n## Materials and methods\n\n### 3seq library construction\n\n3\u2032seq libraries were constructed using methods described previously (Wang et al., 2013). Briefly, 500 ng of total RNA isolated from primary keratinocytes was poly-A purified (Dynabeads, Thermo Fisher Scientific, Waltham, MA) and chemically fragmented by treatment 95\u00b0C for 8 min in Fragmentation Buffer (Thermo Fisher Scientific). Fragmented RNAs were then oligoDT primed with a P7T20V oligo and reverse transcribed using SuperScript III (Thermo Fisher Scientific) (see Supplementary file 2 for Oligo Sequences). Following ethanol precipitation, ligation competent cDNAs were generated via second-strand synthesis using RNase H and DNA Pol I enzymes, end-repaired using a mix of T4 DNA polymerase, Klenow DNA polymerase and T4 Polynucleotide Kinase in the presence of dNTPs (New England Biolabs, Ipswich, MA), and A-Tailed using Klenow 3\u2032 to 5\u2032 exo- in the presence of dATP (New England Biolabs). Ligation was then performed using the P5 Adaptor with T4 DNA Ligase for 1 hr (New England Biolabs). cDNA inserts 80\u2013100 nt in length were isolated from 8% PAGE gels and subject to PCR amplification using RP1 and RT-Primer oligos for 12\u201316 cycles (Phusion, New England Biolabs). PCR products were isolated from PAGE gels and subject to 6 cycles of secondary PCR to introduce unique indices for multiplexed DNA sequencing on a HiSeq 2000 (Illumina, San Diego, CA).\n\nBioinformatics processing of 3seq data was performed as described previously, including adaptor trimming, read alignments, peak calling, peak filtering to remove internal polyA priming events, and transcript quantification with minor modifications (Wang et al., 2013). Following read alignment to the mm10 genome, alignments from every library were grouped together for peak calling and 3\u2032end filtering to create a master set of high confidence 3\u2032 end peaks. From this 3\u2032end data set, reads counts for each library were obtained (see Supplementary file 1 for mapping statistics). To obtain transcript read counts, reads from all peaks that passed our internal priming filter and were 3\u2032UTR localized were summed to obtain an overall transcript count for each transcript. Normalized transcript counts were calculated as reads per million reads mapped (RPM). To determine differential transcript expression, low-abundance transcripts with less than 10 reads in two libraries were first excluded then the remaining transcripts were analyzed with EdgeR with classical analysis parameters.\n\n### Small RNA-Seq\n\nSmall RNA-Sequencing libraries were prepared using minor modifications of a previously published protocol that reduces RNA-ligation biases and enables accurate miRNA quantification (Zhang et al., 2013). Briefly, two micrograms of total RNA was first ligated to a pre-adenylated 3\u2032 linker (10 \u03bcM) using truncated T4 RNA Ligase 2 (20 Units New England Biolabs) in the presence of PEG-8000 (10% wt/vol) RNaseOUT (20 Units Thermo Fisher Scientific) for 4 hr at room temperature. Ligation reactions were then resolved on 7 M Urea-15% PAGE gel to isolate the miRNA-3\u2032 adaptor hybrids. Following overnight elution from the acrylamide gel in HSCB buffer (400 mM NaCl, 25 mM Tris\u2013HCl pH 7.5, 0.1% SDS), ligation products were ethanol precipitated, resuspended in 5\u2032 ligation reaction mixture containing a 5\u2032 linker (10 \u03bcM), 1 mM ATP, Peg-8000 (20% wt/vol), 1 \u00d7 T4 RNA Ligase buffer (New England Biolabs), denatured for 5 min at 70\u00b0C, after which RNaseOUT (20 units) and T4 RNA Ligase 1 (10 units) were added. Following ligation for 37\u00b0C for 2 hr, cDNA was generated via reverse transcription using Superscript III (Thermo Fisher Scientific) in the presence of a 3\u2032adaptor specific primer. cDNA products were then subjected to 10\u201314 PCR cycles and resolved on 8% native PAGE gels. Libraries were then eluted as described above, precipitated, and submitted for sequencing on a HiSeq 2000 (Illumina).\n\nSmall-RNA sequencing reads were analyzed following previously described methods with the following modifications (Zhang et al., 2013). Adaptor sequences were trimmed from reads using CutAdapt using default parameters. Reads were then further trimmed to remove the randomized adaptor dinucleotides on the 5\u2032 and 3\u2032 end. Read were next aligned to a database of mouse miRNA sequences (miRbase) using blastn with the following settings (blastn -word_size 11 -outfmt 6 -strand plus). Blast alignments were then parsed with custom python scripts to extract and count the best miRNA alignment for each read with a minimum read alignment of 18 nucleotides. miRNA counts for each library were then filtered to keep only miRNAs with a minimum count of 50 reads in two libraries and analyzed for differential expression using EdgeR, with classical analysis parameters.\n\n### Affymetrix microarray analysis\n\nFor the miR-203 epidermal loss-of-function microarray analysis, RNA was isolated from total epidermal samples from two-pairs of miR-203+/+ and miR-203\u2212/\u2212 animals at p4. For the doxycycline-inducible miR-203 over-expression microarray analysis, RNA was isolated from two pairs of doxycline induced or uninduced Krt14-rtTA/ pTre-miR-203 animals using FACS sorting for Krt14-H2B-GFP+ cells as described previously (Jackson et al., 2013). The microarray analysis of miR-203 overexpression in basal epidermis was previously published (Jackson et al., 2013). Subsequently total RNAs (500 ng) were processed and hybridized to the GeneChip Mouse Genome 430 2.0 array (Affymetrix, Santa Clara, CA) following the manufacturer's instruction at the MCDB microarray facility. Microarray image files were processed using the R Bioconductor suite and Mas5 normalization. Probesets were then filtered to include only those probes with present or absent calls in at least two arrays. Probesets were then collapsed using the probeset with the maximum averaged probeset intensity to represent each GeneID. Log2 fold changes were then computed using the limma Bioconductor package.\n\n### Ribosome profiling\n\nRibosome profiling was performed on primary keratinocyte lysates using the ARTseq Ribosome profiling kit (Illumina). Briefly, lysates from a 10-cm dish of primary keratinocytes were isolated in the presence of cycloheximide (Sigma-Aldrich, St. Louis, MI, 50 \u03bcg/ml) and subject to limited RNAse digestion (10 units) for 45 min at room temperature. RNase digestion was terminated by addition of 15 \u03bcl of SUPERase In (Thermo Fisher Scientific) followed by ribosome isolation using illustra MicroSpin S-400 HR Columns (GE Healthcare, United Kingdom). Following RNA extraction and precipitation, rRNA was depleted using the Ribo-Zero Gold kit (Illumina), with the remaining RNA then fractionated through 18% PAGE gels. RNA species 28\u201332 nt were isolated for adaptor ligation, reverse transcription, circularization, and PCR amplification following the manufacturer's protocol. PAGE gel isolated PCR products were then sequenced on a HiSeq 2000 (Illumina).\n\nRaw reads were first trimmed to remove 3\u2032 adaptors using cutAdapt with default parameters. Reads were aligned to mm10 rRNA, tRNA, and ncRNA (Ensemble annotation) databases using Bowtie (default settings) to exclude reads aligning to abundant rRNA, tRNA, and ncRNA sequences. Unaligned reads were then aligned via Tophat using default settings, with a supplied .gtf annotation file containing combined Refseq and Ensembl gene annotations (iGenomes Illumina downloaded 9/4/2013). Uniquely aligned read counts were quantified across each CDS using HTSeq Count (settings: -s yes -m union -t CDS) using the above-mentioned GTF annotation database. Transcripts with low reads counts were excluded by only keeping transcripts with at least 50 reads in at least two libraries. Filtered transcript reads count data were then analyzed for differential expression using EdgeR with classical analysis parameters. To calculate translation efficiency for each transcript, Reads Per Million Mapped (RPM) values from 3Seq were divided by Reads per Million Mapped to coding sequence for the Ribo-Seq. The change in translation efficiency was then computed as the ratio of translation efficiency in the miR-203\u2212/\u2212 and miR-203+/+ libraries.\n\n### Ago2 HITS-CLIP\n\nAgo2 HITS-CLIP was performed as described with minor modifications (Chi et al., 2009). 15-cm2 dishes of primary keratinocytes were irradiated twice at 200 mJ/cm with 254 nm UVC light. Following irradiation, cell lysates were harvested by scraping and stored at \u221280\u00b0C. Following thawing, lysates were further lysed by trituration 3 times through pre-chilled 25- and 30-gauge needles. Lysates were then treated with 10 \u03bcl Turbo DNase (Thermo Fisher Scientific) and 5 \u03bcl RNaseOUT (Thermo Fisher Scientific) per ml of lysate. Limited RNase digestion was performed using 10 \u03bcl per ml of lysate of a 1:20 dilution of an RnaseA/T1 mix (Sigma-Aldrich/Thermo Fischer Scientific 1\u00d7 mix = 3.33 \u03bcl RnaseA [2 \u03bcg/\u03bcl] with 6.66 \u03bcl RnaseT1 [1 U/\u03bcl]). Crosslinked Ago2 was recovered via immunoprecipitation for 2 hr at 4\u00b0C with 3 \u03bcg of a monoclonal anti-mouse Ago2 antibody (Wako Chemicals USA Inc., Richmond, VA, clone 2D4) complexed with Protein-G Dynabeads (Thermo Fisher Scientific). Immunoprecipitates were washed twice with High-Salt Buffer and PNK buffer, then end labeled with 25 \u03bcCi 32P y-ATP using PNK 3\u2032 phosphatase minus (New England Biolabs) for 5 min at 37\u00b0C. After washing the beads as listed above, 5\u2032 adaptor ligation was performed for 2 hr at room temperate using T4 RNA Ligase 1 with 10 \u03bcM 5\u2032 RNA Linker, 20% PEG-8000 (wt/vol final), 1 mM ATP, and RNaseOUT (Thermo Fisher Scientific). Beads were again washed twice with PNK buffer then resuspended in a phosphatase reaction with 5 \u03bcl FastAP (Thermo Fisher Scientific) with RNaseOUT. Following washing twice with PNK buffer, Protein\u2013RNA complexes were eluted from the beads using 1\u00d7 NuPage Loading buffer supplemented with 50 mM DTT at 70\u00b0C for 10 min. Protein\u2013RNA complexes were then resolved on an 8% Bis-Tris Gel and transferred to nitrocellulose. Membranes were exposed to a phosphor screen for 1\u20132 hr to obtain an autoradiograph. Subsequently, RNA\u2013protein complexes migrating in the 110\u2013130 kD range were excised. RNA was recovered from the nitrocellulose using Proteinase K treatment followed by phenol\u2013chloroform extraction and ethanol precipitation. Isolated RNA was ligated to a 3\u2032linker using the same ligation reaction conditions as for 5\u2032 ligation, and ligated RNA species were fractionated away from adaptor\u2013adaptor products on 10% UREA PAGE gels. The RNA was eluted from the PAGE gel with HSCB buffer overnight at 4\u00b0C, then ethanol precipitated and resuspended for reverse transcription with SuperScript III (Thermo Fisher Scientific). cDNA products were then subjected to PCR amplification for 20\u201324 cycles and fractionated on an 8% native PAGE gel. PCR products representing cDNA inserts of 20\u201350 nts were recovered and subject to sequencing on a HiSeq 2000 (Illumina).\n\nHITS-CLIP reads were analyzed as follows. First, reads were processed to identify miRNA alignments using the same pipeline that we use for Small-RNA-Seq listed above. Reads not mapping to miRNAs were next processed as follows. Reads were trimmed with Cutadapt to remove adaptor sequences using default settings. To avoid PCR duplicates from biasing the analysis, duplicate reads were then collapsed to a single read using Fastx_collapser (default settings). The 5\u2032 and 3\u2032 adaptor sequences contain randomized dinucleotides on their 3\u2032 and 5\u2032 ends respectively, which were next trimmed from the reads. The reads were then aligned to the mm10 genome assembly using NovoAlign requiring a minimum alignment length of 25 nucleotides (settings \u2013s 1 \u2013t 85 \u2013l 25) (Novocraft, Malaysia). All unique alignments from each library were then pooled to identify Ago2 HITS-CLIP clusters. Clusters were defined as two read alignments that overlap by a minimum of one nucleotide. Clusters were next annotated to gene features in a hierarchical manner in which clusters were annotated to protein coding RefSeq 3\u2032 UTRs (with 5 kbp extension allowed), RefSeq CDS regions, RefSeq 5\u2032 UTRs, Ensemble ncRNA regions, and RefSeq intron regions. Clusters not found in these regions were annotated as intergenic clusters. For predicting miRNA target sites, 3\u2032UTR cluster sequences were searched for 6mer seed-sequence matches for miRNA species that accounted for 90% of miRNAs expressed in epidermis based on small-RNA sequencing. From this data set, 117 binding sites in 113 mRNAs were predicted be miR-203 target sites.\n\n### Meta-analysis of miR-203 targets\n\nThe miR-203 overexpression data sets used in the meta-analysis included previously published microarrays from sorted H2B-GFP+ epidermal cells with transient miR-203 induction (GSE45121), and microarrays from sorted H2B-GFPhi+ hair follicle progenitor cells with transient miR-203 induction described in this manuscript. The miR-203 knockout data sets used in the meta-analysis included the microarrays from p4.5 total epidermal samples from miR-203+/+ and miR-203\u2212/\u2212 animals, ribosome profiling of miR-203+/+ and miR-203\u2212/\u2212 primary keratinocytes, and 3seq of miR-203+/+ and miR-203\u2212/\u2212 primary cultures. We also performed 3seq on miR-203\u2212/\u2212 cells transformed with HrasG12V; however, there was no enrichment for miR-203 seed matches in the upregulated transcripts based on CDF analysis, consistent with the low levels of miR-203 in HrasG12V-transformed keratinocytes, and therefore, this data set was excluded from the expression meta-analysis (data not shown). Gene symbols were used to compare across microarray, 3Seq, and Ribo-Seq data sets. Log2 fold changes were used to assess differential gene expression in each data set. In total 6407 genes were detectable in all the data sets, from which 294 satisfied the criteria of being upregulated in all the miR-203 knockout data sets and downregulated in the miR-203 overexpression data sets. Negative control data sets were constructed to analyze the enrichment of genes containing miR-203 seed matches with the following criteria, randomly selected genes from the list of detected transcripts in the meta-analysis, or genes that have a positive correlation to miR-203 expression (downregulated in miR-203 knockout data sets and upregulated in miR-203 overexpression data sets).\n\nIn order to compare gain-of-function and loss-of-function data sets in aggregate, a ranked correlation to miR-203 metric was calculated. Transcripts were assigned a rank in each knockout data set with the most upregulated gene given a rank of 1. Transcripts were next assigned a rank in each overexpression data set with the most downregulated gene given a rank of 1. The ranked values from each of the 5 data sets were then summed and ranked with the transcript most upregulated upon miR-203 ablation and downregulated upon overexpression being assigned a value of 1.\n\n### Hierarchical clustering, GO-term analysis, GSEA, 3\u2032UTR motif-searching\n\nNormalized transcript abundances (expressed as Reads Per Million) were used for mean-centered unsupervised hierarchical clustering using Cluster 3.0 software. For 3seq data, only transcripts with at least twofold change were selected and for miRNA data, only miRNAs with at least an expression level of 1000 RPM and at least a twofold change were selected for visualization in JavaTree View. GO-term enrichment analysis was performed by DAVID using Gene-IDs as input, with analysis being performed using GO biological processes data sets. GSEA analysis was performed using ranked expression values for the displayed data set, and genesets were selected from the referenced publications. De novo motif searching was performed using the HOMER package to search for 7 or 8mer motifs in RefSeq 3\u2032UTR sequences for selected genesets. For genes with multiple 3\u2032UTR isoforms, the longest 3\u2032UTR was selected for motif searching. miRNA seed-sequence searches in Ago2-HITS-CLIP clusters were performed with a Python script using regular expressions.\n\n### Analysis of The Cancer Genome Atlas (TCGA) data\n\nHead and Neck SCC miRNA-Seq data were obtained from the TCGA https://tcga-data.nci.nih.gov/tcga/ (Download date 10/23/2014). Patient matched normal solid tissue and tumor miRNA quantification records were identified using custom R scripts (regular expression query for tumor and solid tissue normal samples respectively \u2018TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-0\u2019, \u2018TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-11\u2019). The normalized reads_per_million quantification for miR-203 and miR-21 was then plotted to determine the relative expression in normal and tumor tissue samples.\n\n### Mouse strains and generation of the conditional miR-203 knockout mouse\n\nA gene targeting vector was constructed that contained 11 kbp homologous region surrounding the miR-203 locus (Figure 3\u2014figure supplement 1). LoxP were inserted flanking the pre-miR-203 sequences, with a neomycin selection cassette flanked by Frt sites. The construct was electroporated into Cy2.4 ES cells (B6(Cg)-Tyr<c2J> genetic background). Positive clones were identified by Southern blot analysis using a probe complementary to the 3\u2032 end of the targeted homologous region. ES cells were injected into blastocysts and chimeras were screened based on white/black coat color selection. Upon obtaining germline transmission, the neo cassette was excised by breeding the F1 progeny to an Actb-Flpe line maintained on a C57BL/6J background (obtained from Jackson Labs, Bar Harbor, ME). miR-203floxed animals were then bred to a EIIa:Cre line maintained on a C57Bl/6 background (obtained from Jackson Laboratory) or a Krt14:Cre line maintained on a mixed background (obtained from E. Fuchs Laboratory), to obtain germline or conditional ablation of miR-203. The EIIa:Cre transgene was removed from the germline miR-203 deleted line by backcrossing to a C57Bl/6 line and subsequently maintained on a C57Bl/6 background. pTre2-miR-203/Krt14-rtTA mice were generated as described previously and maintained on an FVB background (Jackson et al., 2013). Mice were bred and housed according to the guidelines of IACUC at a pathogen-free facility at the University of Colorado (Boulder, CO, USA).\n\n### Immunofluorescence, EdU detection, and miRNA in situ hybridization\n\nFrozen cryostat sections (8 \u03bcM) were fixed in 4% paraformaldehyde for 10 min at room temperature, washed thrice with PBS, and blocked for 10 min using Gelatin Block (0.1% Triton X-100, 2% gelatin, 2.5% normal goat serum, 2.5% normal donkey serum, and 1% BSA in PBS). Primary antibodies, diluted in gelatin block, were then incubated overnight (see Supplementary file 2 for antibody references). Following three washes with PBS, sections were incubated with appropriate Alexa-Fluor secondary antibodies (1:2000) for 1\u20132 hr at room temperature. Following three washes with PBS, sections were stained with Hoescht Dye and mounted in Anti-fade solution. miRNA in situ hybridization for miR-203 was performed on frozen sections as described previously (Yi et al., 2008). EdU detection was performed following manufacturer's instructions, with the following parameters. P4 animals were IP injected with 50 \u03bcg/g EdU 4 hr prior to tissue harvest. Following EdU detection, the sections were blocked and probed with antibodies as described above. BrdU detection was performed as previously described, with the following parameters. Pregnant female mice were IP injected with 50 \u03bcg/g BrdU for 2 hr prior to embryo harvest in OCT compound. miR-203 in situ hybridization on FFPE mouse and human tumor samples was performed with the following modifications, after deparaffinization in xylenes, the tissue was treated with proteinase K (20 \u03bcg/ml) for an extended period of 20 min at an elevated temperature (37\u00b0C). Microscopy images were obtained using a Leica DM5500B microscope with either a Leica camera (brightfield) or Hamamatsu C10600-10B camera (fluorescence) and processed with the Leica image analysis suite, MetaMorph (MDS Analytical Technologies, Sunnyvale, CA) and Fiji software. BrdU or EdU image quantifications were performed by counting the number of Krt5+/EdU or BrdU positive cells in randomly chosen microscopy fields. The length of the basement membrane was used to represent the length of the epidermis analyzed and was determined by tracing the basement membrane and calculating line length using Fiji software. Epidermal thickness was assessed by tracing a line tangential to the basement membrane and extending to the beginning of the stratum corneum and calculating the line length.\n\n### qPCR and western blotting\n\nqPCR was performed using the Qiagen (Germany) miR-script RT system and a BioRad CFX-384 machine (Hercules, CA). Fold-changes were computed using the \u0394\u0394Ct formula normalized to sno25 and Hprt values. In all qPCR figures, error bars denote standard errors of the normalized mean. Western blotting was performed using 20\u201340 \u03bcg of protein lysate run on 8\u201312% SDS-PAGE gels. Proteins were transferred to PVDF for detection of Pola1, \u03b2-tubulin (Tubb5), or Ccnd1. Primary antibodies were incubated in 5% BSA overnight and detected using HRP-conjugated secondary antibodies and Amersam ECL-Plus reagents (1:10,000)(GE Healthcare). See Supplementary file 2 for antibody descriptions and dilutions. X-ray films were scanned and processed with Fiji software to calculate relative protein abundance.\n\n### Primary keratinocyte harvesting and cell culture, viral infections, Edu flow cytometry, and shRNA knockdown\n\nPrimary keratinocytes were isolated from neonatal mice using previously described methods with the following modifications (Lichti et al., 2008). Isolated skin was incubated on a solution of Dispase overnight at 4\u00b0C to dissociate the epidermis from the dermis. The following day epidermal sheets were incubated in 37\u00b0C Trypsin for 10 min to isolate keratinocytes. Primary keratinocytes were then plated in 6-cm or 10-cm dishes with E-Low media supplemented with 0.2 mM calcium chloride for the first 24 hr then switched to E-Low media with 0.05 mM Ca++. Lentiviral particles were produced by transient transfection of pLKO-shRNA constructs, PsPax.2, and pVSVG. 24 hr post transfection, the media was changed to E-Low calcium. Retroviral particles were produced by transient transfection of pBabe-vector-puro, pBabe-HrasG12V-puro, pBabe-vector-neo, or pBabe-HrasG12V-neo, with PCL-Eco and pAdvantage packaging plasmids. Viral supernatant was harvested every 12 hr for up to 96 hr, pooled and filtered with 0.45-\u03bcM filter. Ad-eGFP or Ad-CREeGFP adenoviruses were obtained from the Iowa Gene Transfer Core and used at MOI of 50. Retroviral and lentiviral infections were performed 3\u20134 days after plating primary keratinocytes. Keratinocytes were selected with 2 \u03bcg/ml puromycin for 48 hr or 50 \u03bcg/ml neomycin for 7 days, at which time non-infected cell cultures were non-viable. Spontaneously immortalized miR-203+/+, miR-203\u2212/\u2212, and miR-203fl/fl mouse keratinocyte cell lines were also generated via serial passage on mitomycin-C treated NIH-3T3 feeder cell culture layer and utilized for assays as noted in the text. Flow cytometry was performed as previously described, with minor modifications (Jackson et al., 2013). Cell cultures derived from pTre2-miR-203/Krt14-rtTA animals were treated with 5 \u03bcg/ml doxycycline for 24 hr to induce miR-203 expression, pulsed with EdU (10 \u03bcM) for 30 min, harvested and analyzed according to the Click-IT EdU Plus instructions on an BD Cyan flow cytometer (Thermo Fisher Scientific). For colony formation assays, 2000 cells were split into individual wells of 6-well plates, cultured for 10\u201314 days, fixed with 4% PFA, and stained with 0.2% crystal violet in 70% ethanol. For induction of miR-203, 24 hr after plating, cells were supplied with fresh media containing doxycycline at 5 \u03bcg/ml. Sigma\u2013Aldrich TRC lentiviral shRNAs against Hbegf and Pola1 were obtained from the Functional Genomic Facility (University of Colorado at Boulder, sequences listed in Supplementary file 2).\n\n### 3\u2032UTR luciferase assays\n\n3\u2032UTR reporter constructs were generated by PCR amplification of 3\u2032UTRs from cDNA or gDNA and subcloning of the fragments into pGL3-Control (Promega, Madison, WI) (primer sequences listed in Supplementary file 2). 2 ng renilla luciferase control, 20 ng pGL3-3\u2032UTR reporter, and 380 ng of Krt14 empty vector, or Krt14-miR-203 were transiently cotransfected into keratinocytes in each well of a 12-well plate using Mirus Bio LT1 reagent (Mirus Bio LLC, Madison, WI). 24 hr later cell lysates were collected, and renilla and firefly luciferase activity were measured using Dual-Glo Luciferase Assay system (Promega) as described previously (Yi et al., 2008). Data are represented as the ratio of firefly to renilla RFU values, normalized to Pgl3-control values. Error bars represent propagated standard deviations.\n\n### DMBA/TPA carcinogenesis\n\nDMBA/TPA carcinogenesis was performed as described previously (Abel et al., 2009). The backskin of 7- to 9-week-old miR-203+/+ and miR-203\u2212/\u2212 mice was shaved. 48 hr later the backskin was painted with a single dose of 25 \u03bcg of DMBA in 200 \u03bcl of Acetone. 2 weeks following DMBA treatment the mice began receiving bi-weekly treatments of 4 \u03bcg of TPA in acetone. The number of palpable tumors of at least 1 mm in diameter, persisting for at least 2 weeks, was recorded weekly. Tumor diameters were measured using a digital caliper. Following 21 weeks of TPA treatment, mice were euthanized and tumors were collected for HrasQ61l genotyping, OCT embedding, and paraffin embedding.\n\n### HrasQ61L genotyping of DMBA/TPA tumors\n\nTumor DNA was isolated by incubating the tissue in a DNA Lysis Buffer (400 mM NaCl, 0.1% SDS, 1 mM EDTA, 1 \u03bcg/ml Proteinase K) at 55\u00b0C for 4 hr. Lysates were then vortexed and lightly centrifuged to liberate DNA from the partially digest tumor tissue. The supernatant was then removed and subject to Phenol\u2013chloroform extraction, followed by isopropanol precipitation. Isolated DNA pellets were then resuspended in TE buffer and quantified by UV spectrophotometry (10 mM Tris pH 8.0, 1 mM EDTA). The Hras gene was PCR amplified using primers that flank exon 2. Following amplification, the PCR reactions were digested with 5 units of XbaI restriction enzyme at 37\u00b0C. The reaction products were then resolved and visualized on a 3% agarose gel. DNA isolated from the tails of animals in the DMBA/TPA experiment was treated in parallel as a negative control for detection of the HrasQ61L mutation.\n\n### Statistical analysis\n\nStatistical analysis was performed using either R or Microsoft Excel. Statistical methods employed are indicated in the figure legends. Unpaired two-sided Student\u2019s t-tests were used to assess statistical significance unless indicated otherwise in the figure legends. For comparisons with multiple categories, ANOVA was used with Tukey's HSD post-hoc test. Non-parametric Whitney\u2013Mann U-tests were used to assess significance for the tumor multiplicity measurements (Abel et al., 2009). The hypergeometric test was used to assess the enrichment of gene lists in genome-wide studies. The Kolmogorov\u2013Smirnov test was used to assess differences in cumulative distributions functions.\n\n### Data access\n\nAll sequencing and microarray data are deposited in the Gene Expression Omnibus (GSE66056).\n",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "f499f171-80ff-4abe-9059-a8593c913174",
+      "submission_id": "d883cd13-7382-4c96-a795-023f7af5f87a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chi Van Dang, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07004.025](https://doi.org/10.7554/eLife.07004.025)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMicroRNA-203 represses selection and expansion of oncogenic HRas transformed tumor initiating cells\u201d for consideration at eLife. Your article has been favorably evaluated by Fiona Watt (Senior editor) and two reviewers, one of whom, Chi Dang, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor has compiled the following critique and list of specific comments to help you prepare a revised submission:\n\nThe manuscript by Riemondy et al. describes an analysis of mRNA and miRNA expression in mouse keratinocytes transformed by HrasG12V expression. They report the repression of miR-203 by oncogenic H-Ras in squamous cell carcinoma of the skin, purporting that the stem cell pool is affected. This work emanates from previous work connecting miR-203 to skin stem cell biology. Through loss and gain-of-function studies, the authors document the tumor suppressive role of miR-203, however, the mechanistic basis for the growth inhibitory role of miR-203 is less well established in this study. The authors performed a large number of transcriptome-wide analyses on miR-203-deficient and overexpressing cells (RNA-seq, microarray, ribosome profiling, CLIP-seq) in an attempt to identify the mechanisms underlying the phenotypic effects they observed. Unfortunately, these studies were not highly informative, especially in the case of miR-203-/- cells, where only very minor gene expression changes were observed. Two targets of miR-203 were documented and their loss of function diminishes cell viability, but whether this is H-Ras specific is not established. That is, whether knockdown of Pola1 affect non-transformed cells was not specifically addressed, since the authors suggest that Pola1 is involved in the 'Ras signaling pathway.' The mechanism by which activated H-Ras silence miR-203 expression was also not addressed. Notwithstanding these concerns, the work appears quite extensive and thorough and therefore could be suitable for publication in eLife. The strength of the paper is the novel demonstration, through genetic deletion studies, that miR-203 functions as a bona fide tumor suppressor in vivo. These findings are nicely correlated with in vitro data, establishing the ability of miR-203 to modulate Hras-mediated transformation.\n\n1) The authors should simplify their presentation of the genomic data and be more strategic about which datasets they include in a revised manuscript, including only those datasets and bioinformatic analyses that offer clear mechanistic insight.\n\n2) More mice should be analyzed in Figure 3E-G, especially at the E16 time-point when only 2 embryos were examined. The trend towards increased BrdU/EdU incorporation may then become significant, which would be an important finding since this is the only potential phenotype in the intact knockout animals. With the currently presented data, it is an overstatement to claim that \u201cmiR-203 functions as a gatekeeper to limit cell division when the proliferation rate is high during early embryonic skin development\u2026\u201d\n\n3) Where are the data that show that \u201cgenes involved in regulation of mitotic cell cycle, DNA synthesis, and metabolism were prominently downregulated upon miR-203 induction\u201d (the subsection \u201cComprehensive identification of miR-203 targets reveals regulation of the Ras signaling pathway\u201d, second paragraph)? Was an unbiased method such as GSEA or gene ontology employed?\n\n4) Based on the data presented in this manuscript, it is an overstatement to claim that \u201cmiR-203 directly targets the Ras-mediated signaling pathway\u201d (end of the subsection \u201cComprehensive identification of miR-203 targets reveals regulation of the Ras signaling pathway\u201d). At best, a few targets that contribute to multiple pro-proliferative pathways were identified. It is plausible that miR-203 exerts its effects via the coordinated, although minor, downregulation of a broad set of targets, some of which include members of the Ras pathway.\n\n5) shRNA knockdown experiments with putative targets (Figure 7F-G) should be performed in Hras-transformed miR-203 +/+ and -/- cells to see if these targets are relevant to transformation in these settings.\n",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c849fad2-c70f-4dde-abaa-70a78a1bac3d",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C1",
+      "claim": "In many mouse models of skin cancer, only a few tumors typically form even though many cells competent for tumorigenesis receive the same oncogenic stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In many mouse models of skin cancer, only a few tumors typically form even though many cells competent for tumorigenesis receive the same oncogenic stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about mouse models of skin cancer, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "48f26dce-11e3-42f2-8a8e-1db68d842785",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C2",
+      "claim": "microRNA-203 is downregulated by HrasG12V in keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that microRNA-203 is downregulated by HrasG12V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "a8ebe7ce-a8f2-4a1f-ba2d-038dca3535e7",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C3",
+      "claim": "Loss of microRNA-203 promotes selection and expansion of tumor-initiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a knockout mouse model, we demonstrate that loss of microRNA-203 promotes selection and expansion of tumor-initiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data from knockout mouse models shown in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "dd4adf97-15a2-41b7-b4b8-491f7b1b8189",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C4",
+      "claim": "Restoration of microRNA-203 using an inducible model potently inhibits proliferation of tumor-initiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, restoration of microRNA-203 using an inducible model potently inhibits proliferation of these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data from the inducible model shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "de8bb5c2-f4ba-4552-8580-d8cf08fec738",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C5",
+      "claim": "Over 1100 transcripts were differently expressed (two-fold change and FDR <0.05) in keratinocytes expressing HrasG12V, compared to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1100 transcripts were differently expressed (two-fold change and FDR <0.05) in keratinocytes expressing HrasG12V, compared to the control (Figure 1C and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the results section and supported by 3Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "5c62661f-036d-45d3-b7ae-35d7b736335e",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C6",
+      "claim": "HrasG12V activates cellular migration pathways in keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology functional analysis revealed profound deregulation in three core processes by HrasG12V: activation of cellular migration, upregulation of pro-angiogenic pathways, and suppression of the terminal differentiation program (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by gene ontology analysis of 3Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "5881bfdc-739a-470d-ae27-7be7ac57e7b3",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C7",
+      "claim": "HrasG12V upregulates pro-angiogenic pathways in keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology functional analysis revealed profound deregulation in three core processes by HrasG12V: activation of cellular migration, upregulation of pro-angiogenic pathways, and suppression of the terminal differentiation program (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by gene ontology analysis of 3Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "f0f43723-c0fe-4b6e-a3b8-e7d938fdddbf",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C8",
+      "claim": "HrasG12V suppresses the terminal differentiation program in keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology functional analysis revealed profound deregulation in three core processes by HrasG12V: activation of cellular migration, upregulation of pro-angiogenic pathways, and suppression of the terminal differentiation program (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by gene ontology analysis of 3Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "46d6e6ab-99d8-4211-8e3f-edd425adaf63",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C9",
+      "claim": "Transcripts upregulated by HrasG12V in primary keratinocytes strongly and significantly overlapped with putative cancer stem cell signatures obtained from murine squamous cell carcinoma (SCC) models.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, transcripts upregulated by HrasG12V in our primary keratinocytes strongly and significantly overlapped with the putative cancer stem cell signatures obtained from murine squamous cell carcinoma (SCC) models (Schober and Fuchs, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by comparison with published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "6e2a7197-c2d5-4481-be4c-421e19550120",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C10",
+      "claim": "Transcripts upregulated by HrasG12V significantly overlapped with transcripts known to be targets of the c-Fos transcription factor in a genetic model of SCC.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, transcripts upregulated by HrasG12V significantly overlapped with transcripts known to be targets of the c-Fos transcription factor in a genetic model of SCC (Durchdewald et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by comparison with published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "bd8fcd55-d92e-4665-8d9f-0efce93533cb",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C11",
+      "claim": "15 differentially expressed miRNAs were detected upon HrasG12V expression (FDR <0.05, two-fold change).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected 15 differentially expressed miRNAs upon HrasG12V expression (FDR <0.05, two-fold change) (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by miRNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "00119839-46b7-4534-b208-b52a8301021b",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C12",
+      "claim": "miR-203 and miR-205 are strongly suppressed by HrasG12V.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the epithelial tissue-specific miRNAs, miR-203 and miR-205, which represent the most abundant miRNAs expressed in murine skin and primary keratinocytes were strongly suppressed by HrasG12V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by miRNA-Seq data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "c94a783f-43e3-4afc-8743-9be71e02652d",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C13",
+      "claim": "Members of the abundantly expressed, miR-23/24/27 miRNA cluster were downregulated by HrasG12V.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, members of the abundantly expressed, miR-23/24/27 miRNA cluster were also downregulated by HrasG12V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by miRNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "51542f03-2296-4543-a7c4-cf0d4e978114",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C14",
+      "claim": "miR-21 was strongly induced by HrasG12V, becoming the most highly expressed miRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, miR-21 was strongly induced becoming the most highly expressed miRNA, consistent with its direct activation by oncogenic Ras reported in other systems (Talotta et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by miRNA-Seq data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "bc454800-a00e-4319-a3af-aa31323b8c97",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C15",
+      "claim": "miR-146 was induced by HrasG12V but is expressed 2-orders of magnitude lower than miR-21.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-146 was also induced by HrasG12V. However, this miRNA is expressed 2-orders of magnitude lower than miR-21, suggesting that its upregulation may have limited contribution to Hras-initiated tumorigenesis at this early stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by miRNA-Seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ce0a4db2-ab28-4a72-9d9e-877c3994ca0a",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C16",
+      "claim": "The differential expression of miR-21, miR-203, and miR-205 measured by qPCR was nearly identical to the quantification by miR-Seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the quantitative performance of our miR-Seq, the differential expression of all three miRNAs measured by qPCR was nearly identical to the quantification by our miR-Seq (Figure 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "8ff6d44c-d2ea-4676-9373-f41bddd6aa6b",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C17",
+      "claim": "The repression of miR-203 by HrasG12V is most likely mediated by suppressing the production of primary miR-203 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we conclude that the repression of miR-203 by HrasG12V is most likely mediated by suppressing the production of primary miR-203 transcripts at an early stage of oncogenic cellular transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by 3Seq and qPCR data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "f12626bb-2d94-41fa-b7c3-1b219418b68a",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C18",
+      "claim": "miR-203 expression was absent from epithelial compartments adjacent to tumor stroma in DMBA/TPA-induced papillomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our in vitro results, miR-203 expression was absent from epithelial compartments adjacent to tumor stroma, the region where putative cancer stem cells reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by in situ hybridization data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "8ac11464-c59b-41b4-a6e1-d01a801cf1db",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C19",
+      "claim": "miR-203 expression levels were strongly reduced in tumor tissues compared to adjacent epidermal regions in DMBA/TPA-induced papillomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, miR-203 expression levels were strongly reduced in tumor tissues compared to adjacent epidermal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by in situ hybridization data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "3cf9229f-b149-4ada-8177-7ce71f88d4f1",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C20",
+      "claim": "miR-203 expression was gradually lost in a KrasG12D/Smad4cKO model where skin tumors progressed to invasive SCC through serial passages.",
+      "claim_type": "EXPLICIT",
+      "source": "In an independent mouse model of SCC, we also found that miR-203 expression was gradually lost in a KrasG12D/Smad4cKO model where skin tumors progressed to invasive SCC through serial passages of tumors (White et al., 2013) (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by in situ hybridization data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "7f8e82f9-9e0a-4900-a750-eddd46282188",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C21",
+      "claim": "In human skin SCC samples, miR-203 was downregulated at the onset of tumorigenesis and progressively lost during the course of tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In these human skin SCC samples, miR-203 was already downregulated at the onset of tumorigenesis and progressively lost during the course of tumor progression, similar to the pattern observed in the mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by in situ hybridization data shown in Figure 2G-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "d215e928-5d3d-4d46-89e2-fc32c2609ebf",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C22",
+      "claim": "In poorly differentiated human SCC samples, the miR-203 signal was completely absent, yet readily detectable in surrounding hyperplastic or normal epidermal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the poorly differentiated SCC samples, the miR-203 signal was completely absent, yet readily detectable in surrounding hyperplastic or normal epidermal regions (Figure 2G\u2013O).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by in situ hybridization data shown in Figure 2G-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "f8971835-f00c-493b-9242-7dfaa24c6f06",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C23",
+      "claim": "A significant reduction in miR-203 and an elevation of miR-21 were detected in head and neck SCC samples compared to patient-matched normal tissues in TCGA data.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we mined publically available data sets from The Cancer Genome Atlas (TCGA) and detected a significant reduction in miR-203 and an elevation of miR-21 in head and neck SCC samples compared to patient-matched normal tissues (Figure 2P).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by analysis of TCGA data shown in Figure 2P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "062752ab-db94-4ac5-bf9a-ab182bd44fdb",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C24",
+      "claim": "miR-203 is located in an intergenic region, 3.3 kbp downstream from the Asp gene and 15.3 kbp upstream of the Kif26a gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We have characterized the genomic locus of miR-203 and determined that miR-203 is located in an intergenic region, 3.3 kbp downstream from the Asp gene and 15.3 kbp upstream of the Kif26a gene (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by genomic analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "28d88194-25d3-400e-a76d-e9e08133bd54",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C25",
+      "claim": "miR-203 null mice were born at the expected Mendelian ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Both strains were born at the expected Mendelian ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the miR-203 knockout mouse phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "1efca3de-0c98-4d70-9de4-03de69adf0d5",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C26",
+      "claim": "miR-203 null mice showed no signs of gross developmental defects as adults.",
+      "claim_type": "EXPLICIT",
+      "source": "They also showed no signs of gross developmental defects as adults (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by images shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "19d14a8f-ac5d-493c-9f58-d361570adc21",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C27",
+      "claim": "miR-203 is highly expressed primarily in stratified epithelial tissues, such as the epidermis, tongue, esophagus, and cervix.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-203 is highly expressed primarily in stratified epithelial tissues, such as the epidermis, tongue, esophagus, and cervix, yet poorly expressed or absent in other tissues such as the small intestine, bladder, lung, kidney, liver, or brain (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by qPCR data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "25f4b510-3bac-44b1-b601-75ef642841cc",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C28",
+      "claim": "miR-203 begins to be expressed by E13 when the epidermis begins to stratify.",
+      "claim_type": "EXPLICIT",
+      "source": "Because miR-203 begins to be expressed by E13 when the epidermis begins to stratify, we examined the proliferation rate and thickness of embryonic skin from E16 to P4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ee421cb3-c9f3-47da-b60a-0f23c3d95c78",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C29",
+      "claim": "At E16, miR-203 knockout mice showed a mild increase in cell proliferation as measured by BrdU incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "At E16, we observed a mild increase in cell proliferation in the KO, as measured by BrdU incorporation (Figure 3E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by BrdU incorporation data shown in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "50825f94-8c67-40e2-8b1c-f31e2eb41305",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C30",
+      "claim": "The thickness of the miR-203 knockout epidermis was significantly increased at E16, compared to WT littermates (p = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the difference in BrdU incorporation did not achieve statistical significance (p = 0.07), the thickness of the KO epidermis was significantly increased, compared to WT littermates (p = 0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by epidermal thickness measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "b1de7e0e-cfe9-47e2-bb82-a986cf741bcc",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C31",
+      "claim": "The increase in epidermal thickness in miR-203 knockout mice was most prominent at early stages (E16 and E17) and waned as skin development progressed (P4).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the increase in epidermal thickness was most prominent at early stages (E16 and E17) and waned as skin development progressed (P4) (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by epidermal thickness measurements shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "5a09b363-83ca-42ab-924f-68aeda6dc10c",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C32",
+      "claim": "At P4, miR-203 knockout mice displayed normal histological development of the epidermis and hair follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "At P4, miR-203\u2212/\u2212 mice displayed normal histological development of the epidermis and hair follicles, and the difference in proliferation and epidermal thickness between KO and WT became indistinguishable (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by histological analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "cf2fe057-44fb-465f-8a55-ca4140d47088",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C33",
+      "claim": "No evidence of perturbed differentiation was found in miR-203 knockout mice based upon analysis of early and late epidermal differentiation markers, Keratin 1 and Loricrin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found no evidence of perturbed differentiation in miR-203\u2212/\u2212 mice based upon analysis of early and late epidermal differentiation markers, Keratin 1 and Loricrin, for the spinous and granular layers, respectively (Figure 3H,I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by immunofluorescence data shown in Figure 3H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "b746599d-c007-4e37-a12b-e3ab9f35d2fa",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C34",
+      "claim": "miR-203 limits cell division when the proliferation rate is high during early embryonic skin development but not at later stages when the proliferation rate wanes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide evidence that miR-203 limits cell division when the proliferation rate is high during early embryonic skin development but not at later stages when the proliferation rate wanes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the embryonic skin development data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "9d5ae664-c4db-4f80-b5ea-455534424d35",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C35",
+      "claim": "miR-203 knockout primary keratinocytes showed approximately two-fold higher colony-forming capacity compared to WT controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed \u223ctwo-fold higher colony-forming capacity of miR-203\u2212/\u2212 keratinocytes, compared to the WT controls (Figure 3J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by colony formation assay data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "02b42788-ecf0-46fc-9c28-cf6bfdaf4efe",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C36",
+      "claim": "Ad-Cre-treated miR-203fl/fl cells showed approximately two-fold higher colony-forming capacity compared to Ad-GFP-treated control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We again observed a similar, \u223ctwo-fold higher colony-forming capacity by the Ad-Cre-treated miR-203fl/fl cells compared to the Ad-GFP-treated control cells (Figure 3K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by colony formation assay data shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "833af7f7-4139-4d1c-acca-562a22bfeecd",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C37",
+      "claim": "miR-203 limits the clonogenicity of normal keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that miR-203 limits the clonogenicity of normal keratinocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the colony formation assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "d55b07fb-66ad-4284-bc02-8d174bec2579",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C38",
+      "claim": "miR-203 null animals developed approximately 2.5-fold more tumors compared to WT control animals in DMBA/TPA carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, miR-203 null animals developed \u223c2.5-fold more tumors, when compared to WT control animals (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by tumor multiplicity data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "1e0d25db-f9fe-4931-8d04-74301cdb93a6",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C39",
+      "claim": "Measurement of tumor sizes at week 17 showed no statistically significant difference in tumor sizes between miR-203 null and WT genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of tumor sizes at week 17 showed no statistically significant difference in tumor sizes between genotypes although miR-203 null animals were more susceptible to tumor formation (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by tumor size distribution data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "a6691815-dcb8-447f-abc7-94ed62c1c5be",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C40",
+      "claim": "Loss of miR-203 increases the number of tumor-initiating cells but does not significantly alter the type of tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that loss of miR-203 increases the number of tumor-initiating cells but does not significantly alter the type of tumors for example, conferring tumors with more aggressive phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the DMBA/TPA carcinogenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ba667d3e-9fbf-472d-8d71-ab80098d14f7",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C41",
+      "claim": "miR-203 WT and KO papillomas possess the canonical HrasQ61L mutation at similar frequencies, 80% and 85.7% respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To further probe the mechanistic differences between miR-203 WT and KO tumors, we assessed the mutation spectra of these tumors and found that they possess the canonical HrasQ61L mutation at similar frequencies, 80% and 85.7% for WT and KO tumors, respectively (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by genotyping data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "4a3dfd74-e350-42f2-a902-1a9af9da35d9",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C42",
+      "claim": "The loss of miR-203 led to approximately 40% increase in colony-forming capacity immediately after the initial plating of HrasG12V transduced cells at passage 1.",
+      "claim_type": "EXPLICIT",
+      "source": "At the passage 1, the loss of miR-203 led to \u223c40% increase in colony-forming capacity immediately after the initial plating (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by colony formation assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ef83556c-8474-4c20-8e0b-bcbcc0b13f91",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C43",
+      "claim": "miR-203 null cells generated more and bigger clones compared to WT control cells at each passage when transduced with HrasG12V.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in contrast to the WT cells that generally formed smaller colonies in subsequent passages, the miR-203 null cells generated more and bigger clones compared to WT control cells at each passage (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by serial passage assay data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "342e893b-337f-4fbb-ae15-1360f2e75554",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C44",
+      "claim": "Introduction of miR-203 resulted in suppression of keratinocyte proliferation and colony formation ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of miR-203 resulted in suppression of keratinocyte proliferation and colony formation ability (Figure 5C,D), as noted previously (Yi et al., 2008; Jackson et al., 2013; Benaich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by colony formation and flow cytometry data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "441211ea-e5de-4138-b3ab-7a93c2590eea",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C45",
+      "claim": "Short-term (approximately 24 hr) induction of miR-203 completely abolished the gain of S-phase entry caused by oncogenic Hras.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, whereas oncogenic Hras-enhanced S-phase entry, short-term (\u223c24 hr) induction of miR-203 completely abolished the gain of S-phase entry (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by flow cytometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "b5198859-59e1-4212-b52f-ae7dcf8af1ce",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C46",
+      "claim": "Continuous induction of miR-203 severely compromised the colony-forming capacity of HrasG12V transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a longer term, continuous induction of miR-203 severely compromised the colony-forming capacity of the transduced cells (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by colony formation assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "afa35b0a-da0a-454f-9d40-bbe07439a86f",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C47",
+      "claim": "No evidence for enhanced apoptosis caused by miR-203 was detected, as measured by the absence of sub-G1 keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any evidence for enhanced apoptosis caused by miR-203, as measured by the absence of sub-G1 keratinocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on flow cytometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ccccac19-d9cb-4abf-bfe0-a234ed912c5c",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C48",
+      "claim": "294 transcripts were identified as candidates for miR-203 targets by demanding all potential targets be upregulated in all the miR-203 KO samples and downregulated in all the miR-203-induced samples.",
+      "claim_type": "EXPLICIT",
+      "source": "By demanding all potential targets be upregulated in all the miR-203 KO samples and downregulated in all the miR-203-induced samples, we identified 294 transcripts as our candidates for miR-203 targets (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by meta-analysis of multiple expression datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "c14a5919-d0d4-49c7-8a16-88eac9c41853",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C49",
+      "claim": "Among the top 20 most differentially expressed transcripts when miR-203 was deleted or induced, 15 of them contain at least one 7-mer or 8-mer match in their 3\u2032UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the top 20 most differentially expressed transcripts when miR-203 was deleted or induced, 15 of them contain at least one 7-mer or 8-mer match in their 3\u2032UTRs (Figure 6C and Figure 6\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by sequence analysis of candidate targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "3d1bd3a3-01ec-41af-bf29-853eecc317f4",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C50",
+      "claim": "An unbiased de novo motif search using the 3\u2032UTRs of 294 candidate transcripts revealed that the most enriched motif (ACAUUUCA, p = 1 \u00d7 10\u221213) perfectly matched to nucleotide position 2\u20139 of miR-203, the 8-mer seed sequences of miR-203.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this approach, an unbiased de novo motif search using the 3\u2032UTRs of these 294 transcripts revealed that the most enriched motif (ACAUUUCA, p = 1 \u00d7 10\u221213) perfectly matched to nucleotide position 2\u20139 of miR-203, the 8-mer seed sequences of miR-203 (Figure 6D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by de novo motif analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "97b328b7-bfb8-489f-acb1-96373e507b2e",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C51",
+      "claim": "A total of 113 mRNAs were detected to have miR-203 seed containing Ago2 binding sites by HITS-CLIP.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 113 mRNAs were detected to have miR-203 seed containing Ago2 binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by Ago2 HITS-CLIP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "cf4e2fd2-76ee-4019-9b4c-023fcbd2c21e",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C52",
+      "claim": "The motif corresponding to miR-203 detected by the HITS-CLIP was ACAUUUCA (p = 1 \u00d7 10\u221219), identical to the motif detected by transcriptome analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The motif corresponding to miR-203 detected by the HITS-CLIP was also ACAUUUCA (p = 1 \u00d7 10\u221219), identical to the motif detected by our transcriptome analysis (Figure 6E and Figure 6\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by de novo motif analysis of HITS-CLIP data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "5d60d6d7-9777-4ee7-bbac-8b307f3a226a",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C53",
+      "claim": "No evidence for global regulation at the translation level for miR-203 targets was detected based on analysis of translational efficiency changes upon miR-203 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we did not detect any evidence for global regulation at the translation level for miR-203 targets based on our analysis of translational efficiency changes upon miR-203 deletion (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by ribosome profiling data shown in Figure 6\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "936b2ee9-b4f5-416e-a82e-c29279abc236",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C54",
+      "claim": "Key regulators in the Ras signaling pathway and important genes involved in regulation of cell division including Hbegf, Ccnd1, Snai2, Met, and Pola1 were identified as high-confidence targets of miR-203.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found a number of key regulators in the Ras signaling pathway and important genes involved in regulation of cell division including Hbegf, Ccnd1, Snai2, Met, and Pola1 in this list (Figure 6F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the combined analysis of expression data and HITS-CLIP shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "42e42a93-044d-467d-b182-35c43a57e4a1",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C55",
+      "claim": "miR-203 targets identified in the meta-analysis were enriched in the upregulated transcripts in HrasG12V-transformed keratinocytes, compared to non-targeted transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, miR-203 targets identified in the meta-analysis were enriched in the upregulated transcripts in HrasG12V-transformed keratinocytes, compared to non-targeted transcripts, consistent with the downregulation of miR-203 in these cells (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by cumulative distribution analysis shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "0a73b3a1-e077-4f4b-b531-5eb01b8b08e2",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C56",
+      "claim": "Pola1 is the catalytic subunit of the DNA-POL-alpha holoenzyme, which is required in initiation of DNA replication during S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Pola1 is the catalytic subunit of the DNA-POL-alpha holoenzyme, which is required in initiation of DNA replication during S-phase (Lehman and Kaguni, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as background information about Pola1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "832c84dc-b22d-41b2-ba95-6c81cb18067b",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C57",
+      "claim": "Hbegf is an Egf-like ligand that activates MAPK signaling through activation of EGF-receptors, Erbb1 and Erbb4.",
+      "claim_type": "EXPLICIT",
+      "source": "Hbegf is an Egf-like ligand that activates MAPK signaling through activation of EGF-receptors, Erbb1 and Erbb4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as background information about Hbegf.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "4ecb206f-3576-4308-89a1-22517b770cc3",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C58",
+      "claim": "In keratinocytes, Hbegf is mitogenic and promotes keratinocyte migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In keratinocytes, Hbegf is mitogenic and promotes keratinocyte migration (Stoll et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as background information about Hbegf.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "50007d98-944f-4c21-9835-7092210b5e5d",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C59",
+      "claim": "In an epithelial cancer cell line, Hbegf acts as an oncogene promoting cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In an epithelial cancer cell line, Hbegf acts as an oncogene promoting cell proliferation (Miyamoto et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as background information about Hbegf.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "c2d68a9e-c49f-4c81-84c0-94e9a2fda15d",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C60",
+      "claim": "Pola1 and Hbegf contain 3\u2032 UTR miR-203 target sites (9-mer and 8-mer respectively) that are targeted by miR-203, validated by luciferase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Pola1 and Hbegf contain 3\u2032 UTR miR-203 target sites (9-mer and 8-mer respectively) that are targeted by miR-203, validated by luciferase assay (Figure 7A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by luciferase assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "2a12fe29-4944-4217-a05e-d1ef0eae1c3e",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C61",
+      "claim": "In miR-203 null epidermis, both Pola1 and Hbegf mRNAs were elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in miR-203 null epidermis, both Pola1 and Hbegf mRNAs were elevated (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by qPCR data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "36a0e264-a56b-4382-bc25-73f3ef4fc402",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C62",
+      "claim": "Pola1 protein levels were elevated in the absence of miR-203, further elevated in the presence of HrasG12V, and repressed by miR-203 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to mRNA levels, Pola1 protein levels were also elevated in the absence of miR-203. It was further elevated in the presence of HrasG12V and repressed by miR-203 induction (Figure 7C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by western blot data shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "03fdcd4f-1ab9-4195-b60a-5539e28569d3",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C63",
+      "claim": "The expression of Ccnd1 showed a strong negative correlation to miR-203.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that the expression of Ccnd1, an essential cell cycle regulator that is often induced or amplified by oncogenic Ras (Downward, 2003; Stransky et al., 2011), showed a strong negative correlation to miR-203 (Figure 7C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by western blot data shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "fb1049a3-c985-4721-b590-f78ba848b1f9",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C64",
+      "claim": "Suppression of Hbegf and Pola1 strongly suppressed the growth potential of keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of Hbegf and Pola1 strongly suppressed the growth potential of keratinocytes (Figure 7E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by shRNA knockdown colony formation assay data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "2c6071e1-9dc0-4ade-abb3-bce10840d26b",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C65",
+      "claim": "Knockdown of Hbegf and Pola1 in established miR-203+/+ and miR-203\u2212/\u2212 keratinocytes transduced with HrasG12V resulted in potent suppression of keratinocyte growth potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we knocked down Hbegf and Pola1 in established miR-203+/+ and miR-203\u2212/\u2212 keratinocytes transduced with HrasG12V and similarly observed potent suppression of keratinocyte growth potential, demonstrating that these targets are also required in HrasG12V-transformed keratinocytes (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by colony formation assay data shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "1300da60-0de2-41c4-9468-7b15ef5e6d43",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C66",
+      "claim": "A considerable amount of 'molecular time' exists between the common ancestors that harbor the great majority of driver mutations and the phenotypically identified cancer cells that compose the bulk of the tumor in breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "When genome sequencing data were utilized to construct the history of cancer cells in breast cancer, it was revealed that a considerable amount of 'molecular time' exists between the common ancestors that harbor the great majority of driver mutations and the phenotypically identified cancer cells that compose the bulk of the tumor (Nik-Zainal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "85ca3955-1838-4a53-8015-0a455a992236",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C67",
+      "claim": "Lineage tracing experiments conducted in genetically engineered mouse models revealed that only a few clones give rise to tumors whereas a vast majority of mutated cells are unable to sustain tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of these observations, lineage tracing experiments conducted in genetically engineered mouse models revealed that only a few clones give rise to tumors whereas a vast majority of mutated cells are unable to sustain tumorigenesis (Driessens et al., 2012; Schepers et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "4c59dcfd-783a-4431-953e-cf8b902bfd4a",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C68",
+      "claim": "Oncogenic Ras mutations are some of the most frequently detected driver mutations in human cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Oncogenic Ras mutations are some of the most frequently detected driver mutations in human cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "9728a314-1025-437f-956c-80ca786d48f6",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C69",
+      "claim": "Among the three Ras genes (H-, K-, and N-ras), Hras is commonly mutated in tumors originated from stratified epithelial tissues including squamous cell carcinoma in the skin, head, and neck cancer as well as bladder cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three Ras genes (H-, K-, and N-ras), Hras is commonly mutated in tumors originated from stratified epithelial tissues including squamous cell carcinoma in the skin, head, and neck cancer as well as bladder cancer (Bos, 1989; Agrawal et al., 2011; Stransky et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "aae3e3f5-b47e-443b-b3d5-c6083d851081",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C70",
+      "claim": "The vast majority of Ras mutations are missense, point mutations at amino acid residues glycine 12 (G12), glycine 13 (G13), or glutamine 61 (Q61).",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental and genomic sequencing studies have revealed that the vast majority of Ras mutations are missense, point mutations at amino acid residues glycine 12 (G12), glycine 13 (G13), or glutamine 61 (Q61) (Bos, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "1abecd77-4c2f-47f3-9cc8-3909c88a0680",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C71",
+      "claim": "All Ras mutations at G12, G13, or Q61 generally interfere with the GTP binding pocket and compromise the GTPase activity of Ras proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and biochemical studies have further confirmed that all of these mutations generally interfere with the GTP binding pocket and compromise the GTPase activity of Ras proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "4fdf3db5-082c-4ae1-ba64-905f0105cde2",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C72",
+      "claim": "Ras mutations lead to uncontrolled activation of downstream effectors including Raf/MEK/ERK and PI(3)K pathways, resulting in sustained cell survival and proliferation observed in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, these mutations lead to uncontrolled activation of downstream effectors including Raf/MEK/ERK and PI(3)K pathways, resulting in sustained cell survival and proliferation observed in human cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "61a992b2-8657-4fe7-a733-37f287c20280",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C73",
+      "claim": "Hras, Kras, and Nras all harbor multiple binding sites for the let-7 miRNA in their 3\u2032UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Hras, Kras, and Nras all harbor multiple binding sites for the let-7 miRNA, a founding member of miRNAs, in their 3\u2032UTRs (Johnson et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ddb677a4-f894-4b0b-a516-4b7012a8d889",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C74",
+      "claim": "Impaired miRNA biogenesis in the form of Dicer1 disruption has been shown to be a tumor-suppressing mechanism for the development of Kras-induced lung cancer in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, impaired miRNA biogenesis in the form of Dicer1 disruption has been shown to be a tumor-suppressing mechanism for the development of Kras-induced lung cancer in a mouse model (Kumar et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "d72289f4-4e3a-49a1-b089-7afda5774e2e",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C75",
+      "claim": "miR-21, -29, and miR-17\u223c92 function as tumor-promoting miRNAs in Ras-induced tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of individual miRNAs were also found to function as modifiers for Ras-induced tumorigenesis that include miR-21, -29, and miR-17\u223c92 as tumor-promoting miRNAs and miR-34, -15/16, and miR-143/145 as tumor-suppressing miRNAs (Kasinski and Slack, 2010; Iorio and Croce, 2012; Mendell and Olson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "181a24c6-36cb-40fc-b567-8271f6687339",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C76",
+      "claim": "miR-34, -15/16, and miR-143/145 function as tumor-suppressing miRNAs in Ras-induced tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of individual miRNAs were also found to function as modifiers for Ras-induced tumorigenesis that include miR-21, -29, and miR-17\u223c92 as tumor-promoting miRNAs and miR-34, -15/16, and miR-143/145 as tumor-suppressing miRNAs (Kasinski and Slack, 2010; Iorio and Croce, 2012; Mendell and Olson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "a5bc2c5b-cc02-4fe5-8672-f85a4c0c453f",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C77",
+      "claim": "miR-203 is the most highly expressed miRNA in the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that miR-203, the most highly expressed miRNA in the skin (Yi et al., 2008; Jackson et al., 2013), is downregulated by HrasG12V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by previous publications.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "3ad69e57-9fcf-4c66-9f23-a19a59943c43",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C78",
+      "claim": "Restoration of miR-203 suppresses human SCC metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a recent study showed interesting results that restoration of miR-203 suppresses human SCC metastasis (Benaich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as information from a recent publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "f82b961f-e28a-4e75-845d-1a63a8b84d6b",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C79",
+      "claim": "miR-203 utilizes the 5\u2032 seed sequences to target perfectly matched sequences located on the 3\u2032UTRs of its target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, with our expansive data set, we confirmed that miR-203 utilizes the 5\u2032 seed sequences to target perfectly matched sequences located on the 3\u2032UTRs of its target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the comprehensive target identification analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "41f7b176-aeab-45ec-b1a7-81a418918db4",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C80",
+      "claim": "Trp63 is a well-established miR-203 target.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also noted that Trp63, a well-established miR-203 target, showed little change at the mRNA levels under all conditions (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "f4f27ef8-e8ee-4ef1-a9be-f54903ed1b10",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C81",
+      "claim": "The recognition of the 3\u2032UTR site of Trp63 by miR-203 was robustly detected by the HITS-CLIP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the recognition of the 3\u2032UTR site of Trp63 by miR-203 was robustly detected by the HITS-CLIP (Figure 6E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by HITS-CLIP data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "1000e302-3f7b-4655-9472-0542a1c84001",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C82",
+      "claim": "miR-203 antagonizes human papillomaviruses (HPV).",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that miR-203 is known to antagonize human papillomaviruses (HPV) (Melar-New and Laimins, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as background information from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "d1c96248-765e-499d-b1cd-c0c1f1358939",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C83",
+      "claim": "Pola1 is a critical cellular gene required for HPV genome replication.",
+      "claim_type": "IMPLICIT",
+      "source": "Our identification of Pola1, a critical cellular gene required for HPV genome replication, as a target of miR-203 may provide a potential mechanism for miR-203-mediated antagonism against HPV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference based on the identification of Pola1 as a miR-203 target and its known role in HPV replication.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "37bcb65a-bbc3-4c86-9b83-3a0859f2dc0f",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "claim_id": "C84",
+      "claim": "A reduction or increase in the level of miR-203 may be well tolerated by most normal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the relatively mild requirement for miR-203 in slowly proliferating cells suggests that a reduction or increase in the level of miR-203 may be well tolerated by most normal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the observation that miR-203 has mild effects in slowly proliferating cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b457977-9759-41c5-aa5a-8f3a42f057cc",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HrasG12V downregulates miR-203 in keratinocytes by suppressing primary transcript production. miR-203 and miR-205 are strongly suppressed by HrasG12V, with qPCR validation nearly identical to miR-Seq quantification. The repression occurs at the transcriptional level through suppression of primary miR-203 transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12, C16, and C17 provide converging evidence from multiple independent methods (miR-Seq, qPCR, 3Seq) demonstrating HrasG12V-mediated downregulation of miR-203. The mechanistic insight (C17) is supported by direct measurement of primary transcripts via 3Seq and qPCR (Figure 2C,D), establishing transcriptional suppression as the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "miR-203 expression is progressively lost during skin tumor development in both mouse models and human SCC samples. In DMBA/TPA papillomas, miR-203 is absent from tumor-initiating cell compartments. Progressive loss occurs in KrasG12D/Smad4cKO tumors and human SCC samples, with complete absence in poorly differentiated tumors. TCGA data confirms significant miR-203 reduction in head and neck SCC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 provide comprehensive in situ hybridization evidence across multiple tumor models (DMBA/TPA, KrasG12D/Smad4cKO) and human samples at various stages of progression. The TCGA analysis (C23) provides independent validation with patient-matched samples. The consistent pattern across models and species strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "miR-203 knockout mice show mild, transient epidermal hyperplasia during early embryonic development (E16-E17) that resolves by P4. Loss of miR-203 causes increased epidermal thickness at E16 (p=0.03) and mild proliferation increase (p=0.07), but normal development by P4 with no differentiation defects. miR-203 limits cell division when proliferation rates are high but not at later stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 describe a coherent developmental phenotype with appropriate statistical analysis and temporal resolution. The mild, transient nature of the phenotype is well-documented with BrdU incorporation, epidermal thickness measurements, and differentiation marker analysis (Keratin 1, Loricrin). The conclusion (C34) appropriately reflects the data showing proliferation-rate-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "cb692d26-56af-4b67-8c8a-6848aa83f8ce",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of miR-203 increases colony-forming capacity of primary keratinocytes approximately two-fold. Both constitutive knockout and acute deletion (Ad-Cre) show similar increases in clonogenicity, suggesting miR-203 limits the clonogenic potential of normal keratinocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 provide complementary evidence using two independent approaches (germline knockout and conditional deletion). The consistency of the ~2-fold effect across both methods strengthens the conclusion. However, the mechanistic interpretation (C37) about clonogenicity vs. proliferation could benefit from additional analysis of clone size vs. number.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "26cc3031-2b63-42d3-90a1-63216dd937b5",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "miR-203 null mice develop approximately 2.5-fold more tumors in DMBA/TPA carcinogenesis without significant differences in tumor size or HrasQ61L mutation frequency (80% vs 85.7%). Loss of miR-203 increases tumor-initiating cell numbers but does not alter tumor type or aggressiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 provide comprehensive characterization of the in vivo tumor phenotype with appropriate statistical analysis (Whitney-Mann U-test for multiplicity). The HrasQ61L genotyping (C41) controls for mutation frequency differences. The interpretation (C40) is appropriately cautious, noting increased initiation without progression effects, though limited to papillomas due to strain resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "9c64008b-5b05-48c1-a34b-bd5f19c778a7",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Loss of miR-203 enhances clonal selection of HrasG12V-transformed keratinocytes during serial passage. miR-203 null cells show ~40% increased colony formation at passage 1 and generate more and larger colonies at subsequent passages compared to WT cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 describe a serial passage assay demonstrating enhanced selection of transformed cells. The temporal dynamics (immediate effect at P1, enhanced at later passages) support a role in clonal selection. However, the number of independent experiments (n=2) is limited, and quantification of colony size vs. number could be more rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "755ab574-127a-4df7-8d38-2a3762dc9b02",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Restoration of miR-203 using an inducible model suppresses HrasG12V-transformed keratinocyte proliferation. Short-term (24 hr) miR-203 induction completely abolishes HrasG12V-enhanced S-phase entry, and continuous induction severely compromises colony-forming capacity without inducing apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 provide complementary evidence from flow cytometry and colony formation assays using a doxycycline-inducible system. The temporal resolution (24 hr for S-phase, longer for colony formation) is appropriate. The absence of apoptosis (C47) is important for interpreting the mechanism. The physiologically relevant induction level (4-7 fold) strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ab28889e-9071-465f-bd72-31020c512150",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comprehensive target identification reveals 294 candidate miR-203 targets through meta-analysis, with 100 containing seed matches. De novo motif analysis identifies the miR-203 8-mer seed (ACAUUUCA, p=1\u00d710\u207b\u00b9\u00b3). Ago2 HITS-CLIP independently identifies 113 targets with the same motif (p=1\u00d710\u207b\u00b9\u2079). High-confidence targets include Ras pathway regulators (Hbegf, Ccnd1, Snai2, Met) and cell division genes (Pola1). No global translational regulation was detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 describe a rigorous, multi-platform approach integrating expression data (Ribo-Seq, 3Seq, microarray) with HITS-CLIP. The independent identification of the same seed motif by two methods (C50, C52) provides strong validation. The lack of translational regulation (C53) is appropriately documented. The identification of functionally relevant targets (C54) is well-supported, though functional validation is limited to Hbegf and Pola1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "miR-203 directly targets Hbegf and Pola1, validated by luciferase assays, with elevated mRNA and protein levels in miR-203 null cells. Ccnd1 shows strong negative correlation with miR-203. shRNA knockdown of Hbegf and Pola1 strongly suppresses keratinocyte growth in both normal and HrasG12V-transformed cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C60-C65 provide comprehensive validation of key targets through multiple approaches: luciferase assays (C60), qPCR (C61), western blots (C62-C63), and functional knockdown (C64-C65). The functional requirement in both normal and transformed cells (C65) strengthens the mechanistic link. However, Ccnd1 validation is limited to correlation without direct targeting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HrasG12V causes widespread transcriptome changes in keratinocytes (>1100 transcripts, FDR<0.05), activating migration and angiogenic pathways while suppressing differentiation. Upregulated transcripts overlap significantly with cancer stem cell signatures and c-Fos targets from SCC models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 describe comprehensive 3Seq analysis with appropriate statistical thresholds (2-fold, FDR<0.05). Gene ontology analysis (C6-C8) identifies biologically relevant pathways. The overlap with published signatures (C9-C10) provides validation, though the statistical significance of overlaps could be more explicitly stated. The data establish HrasG12V as a driver of transformation-associated transcriptional programs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "6d783e93-5b70-4534-b795-8c0f089808c9",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HrasG12V causes differential expression of 15 miRNAs (FDR<0.05, 2-fold change). miR-21 is strongly induced, becoming the most highly expressed miRNA. The miR-23/24/27 cluster is downregulated. miR-146 is induced but expressed 2 orders of magnitude lower than miR-21.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 describe miR-Seq results with appropriate statistical thresholds. The induction of miR-21 (C14) is consistent with prior literature and validated by qPCR (C16). The interpretation of miR-146's limited contribution (C15) is reasonable given expression levels, though somewhat speculative. The overall pattern of miRNA changes is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "30e09a33-880c-414e-b022-d51f9ef4a01c",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "miR-203 is located in an intergenic region, 3.3 kbp downstream from Asp and 15.3 kbp upstream of Kif26a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 describes genomic characterization supported by Figure 3\u2014figure supplement 1. This is straightforward genomic mapping with no apparent issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "7b6b88ef-14ec-460c-bcad-4ab49ccde843",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "miR-203 begins expression at E13 when the epidermis begins to stratify.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C28 is stated as background knowledge without direct experimental evidence in this manuscript. While likely accurate based on prior work, it is not directly demonstrated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "6fa38644-2fdd-408f-8bd2-54184b939c93",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Pola1 is the catalytic subunit of DNA-POL-alpha required for S-phase DNA replication initiation. Hbegf is an EGF-like ligand that activates MAPK signaling, is mitogenic in keratinocytes, and acts as an oncogene in epithelial cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 provide background information about target genes, appropriately cited from literature. These establish the biological relevance of the identified targets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "54536bd1-80af-4916-802d-70f2eee18090",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "miR-203 utilizes 5' seed sequences to target perfectly matched sequences in 3'UTRs of target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is a conclusion from the comprehensive target identification analysis (C48-C54). The de novo motif analysis and HITS-CLIP data strongly support this canonical miRNA targeting mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "ae850635-c287-4097-9ce0-910fed7478cc",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Trp63, a well-established miR-203 target, shows little mRNA change but robust HITS-CLIP detection of 3'UTR recognition by miR-203.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 highlight a discrepancy between expression-based and HITS-CLIP-based target identification. This is appropriately discussed as a limitation of expression-only approaches and demonstrates the value of HITS-CLIP. The observation is well-documented (Figure 6E).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "05d410fc-c9a7-4895-b6cc-aa845d46dd74",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In mouse models of skin cancer, only a few tumors form despite many cells receiving oncogenic stimuli. Lineage tracing and genomic studies reveal clonal selection occurs after driver mutation acquisition, with considerable 'molecular time' between mutation and tumor formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C66, C67 provide background context from published literature, appropriately cited. These establish the biological question addressed by the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "496c85de-e377-4a3d-bcf4-49e69c4698a3",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Oncogenic Ras mutations are frequent driver mutations in human cancer. Hras is commonly mutated in stratified epithelial tumors (skin, head/neck, bladder). Most Ras mutations are missense at G12, G13, or Q61, interfering with GTPase activity and causing constitutive activation of Raf/MEK/ERK and PI3K pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 provide well-established background information about Ras mutations, appropriately cited. This contextualizes the use of HrasG12V in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "85527934-5593-408a-96d1-d8d1f1b581ca",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Ras genes harbor let-7 miRNA binding sites. Dicer1 disruption is tumor-suppressing in Kras-induced lung cancer. Various miRNAs (miR-21, -29, miR-17~92, miR-34, -15/16, miR-143/145) function as tumor-promoting or tumor-suppressing in Ras-induced tumorigenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 provide background on miRNA-Ras interactions from published literature, appropriately cited. This establishes the rationale for investigating miRNA changes in Hras-transformed cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "e2c0e9f0-bacd-4438-8d87-c33aa8303cb9",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "miR-203 is the most highly expressed miRNA in skin. Recent studies show miR-203 restoration suppresses human SCC metastasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 provide background and recent findings from literature, appropriately cited. This establishes the relevance of studying miR-203 in skin cancer.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "6fcaaf0b-8a76-4933-9388-cf7344522f5e",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "miR-203 antagonizes HPV. Identification of Pola1 as a miR-203 target may provide a mechanism for this antagonism, as Pola1 is required for HPV genome replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is cited background, but C83 is speculative inference without direct experimental validation. While plausible, the connection between Pola1 targeting and HPV antagonism requires experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    },
+    {
+      "id": "23dee003-ff36-4d76-9d01-6dd8ab61fa47",
+      "content_id": "a5b644af-cdd3-4dfa-8536-354c99208451",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "A reduction or increase in miR-203 levels may be well tolerated by most normal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is an inference from the mild phenotype in slowly proliferating cells. While reasonable, this extrapolation to 'most normal cells' is speculative and would require broader tissue analysis to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:33:59.581113Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "48f26dce-11e3-42f2-8a8e-1db68d842785",
+      "result_id": "0b457977-9759-41c5-aa5a-8f3a42f057cc"
+    },
+    {
+      "claim_id": "00119839-46b7-4534-b208-b52a8301021b",
+      "result_id": "0b457977-9759-41c5-aa5a-8f3a42f057cc"
+    },
+    {
+      "claim_id": "ce0a4db2-ab28-4a72-9d9e-877c3994ca0a",
+      "result_id": "0b457977-9759-41c5-aa5a-8f3a42f057cc"
+    },
+    {
+      "claim_id": "8ff6d44c-d2ea-4676-9373-f41bddd6aa6b",
+      "result_id": "0b457977-9759-41c5-aa5a-8f3a42f057cc"
+    },
+    {
+      "claim_id": "f12626bb-2d94-41fa-b7c3-1b219418b68a",
+      "result_id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f"
+    },
+    {
+      "claim_id": "8ac11464-c59b-41b4-a6e1-d01a801cf1db",
+      "result_id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f"
+    },
+    {
+      "claim_id": "3cf9229f-b149-4ada-8177-7ce71f88d4f1",
+      "result_id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f"
+    },
+    {
+      "claim_id": "7f8e82f9-9e0a-4900-a750-eddd46282188",
+      "result_id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f"
+    },
+    {
+      "claim_id": "d215e928-5d3d-4d46-89e2-fc32c2609ebf",
+      "result_id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f"
+    },
+    {
+      "claim_id": "f8971835-f00c-493b-9242-7dfaa24c6f06",
+      "result_id": "1dd468f5-e187-463c-b6cf-4ad55441bd1f"
+    },
+    {
+      "claim_id": "28d88194-25d3-400e-a76d-e9e08133bd54",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "1efca3de-0c98-4d70-9de4-03de69adf0d5",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "19d14a8f-ac5d-493c-9f58-d361570adc21",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "ee421cb3-c9f3-47da-b60a-0f23c3d95c78",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "50825f94-8c67-40e2-8b1c-f31e2eb41305",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "b1de7e0e-cfe9-47e2-bb82-a986cf741bcc",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "5a09b363-83ca-42ab-924f-68aeda6dc10c",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "cf2fe057-44fb-465f-8a55-ca4140d47088",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "b746599d-c007-4e37-a12b-e3ab9f35d2fa",
+      "result_id": "154ccdd4-96a5-4b56-bb86-2bbd1d55e69a"
+    },
+    {
+      "claim_id": "9d5ae664-c4db-4f80-b5ea-455534424d35",
+      "result_id": "cb692d26-56af-4b67-8c8a-6848aa83f8ce"
+    },
+    {
+      "claim_id": "02b42788-ecf0-46fc-9c28-cf6bfdaf4efe",
+      "result_id": "cb692d26-56af-4b67-8c8a-6848aa83f8ce"
+    },
+    {
+      "claim_id": "833af7f7-4139-4d1c-acca-562a22bfeecd",
+      "result_id": "cb692d26-56af-4b67-8c8a-6848aa83f8ce"
+    },
+    {
+      "claim_id": "d55b07fb-66ad-4284-bc02-8d174bec2579",
+      "result_id": "26cc3031-2b63-42d3-90a1-63216dd937b5"
+    },
+    {
+      "claim_id": "1e0d25db-f9fe-4931-8d04-74301cdb93a6",
+      "result_id": "26cc3031-2b63-42d3-90a1-63216dd937b5"
+    },
+    {
+      "claim_id": "a6691815-dcb8-447f-abc7-94ed62c1c5be",
+      "result_id": "26cc3031-2b63-42d3-90a1-63216dd937b5"
+    },
+    {
+      "claim_id": "ba667d3e-9fbf-472d-8d71-ab80098d14f7",
+      "result_id": "26cc3031-2b63-42d3-90a1-63216dd937b5"
+    },
+    {
+      "claim_id": "4a3dfd74-e350-42f2-a902-1a9af9da35d9",
+      "result_id": "9c64008b-5b05-48c1-a34b-bd5f19c778a7"
+    },
+    {
+      "claim_id": "ef83556c-8474-4c20-8e0b-bcbcc0b13f91",
+      "result_id": "9c64008b-5b05-48c1-a34b-bd5f19c778a7"
+    },
+    {
+      "claim_id": "342e893b-337f-4fbb-ae15-1360f2e75554",
+      "result_id": "755ab574-127a-4df7-8d38-2a3762dc9b02"
+    },
+    {
+      "claim_id": "441211ea-e5de-4138-b3ab-7a93c2590eea",
+      "result_id": "755ab574-127a-4df7-8d38-2a3762dc9b02"
+    },
+    {
+      "claim_id": "b5198859-59e1-4212-b52f-ae7dcf8af1ce",
+      "result_id": "755ab574-127a-4df7-8d38-2a3762dc9b02"
+    },
+    {
+      "claim_id": "afa35b0a-da0a-454f-9d40-bbe07439a86f",
+      "result_id": "755ab574-127a-4df7-8d38-2a3762dc9b02"
+    },
+    {
+      "claim_id": "ccccac19-d9cb-4abf-bfe0-a234ed912c5c",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "c14a5919-d0d4-49c7-8a16-88eac9c41853",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "3d1bd3a3-01ec-41af-bf29-853eecc317f4",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "97b328b7-bfb8-489f-acb1-96373e507b2e",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "cf4e2fd2-76ee-4019-9b4c-023fcbd2c21e",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "5d60d6d7-9777-4ee7-bbac-8b307f3a226a",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "936b2ee9-b4f5-416e-a82e-c29279abc236",
+      "result_id": "ab28889e-9071-465f-bd72-31020c512150"
+    },
+    {
+      "claim_id": "42e42a93-044d-467d-b182-35c43a57e4a1",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "c2d68a9e-c49f-4c81-84c0-94e9a2fda15d",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "2a12fe29-4944-4217-a05e-d1ef0eae1c3e",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "36a0e264-a56b-4382-bc25-73f3ef4fc402",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "03fdcd4f-1ab9-4195-b60a-5539e28569d3",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "fb1049a3-c985-4721-b590-f78ba848b1f9",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "2c6071e1-9dc0-4ade-abb3-bce10840d26b",
+      "result_id": "e528c88f-ef8b-4063-b447-b192a7e6eb3b"
+    },
+    {
+      "claim_id": "de8bb5c2-f4ba-4552-8580-d8cf08fec738",
+      "result_id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf"
+    },
+    {
+      "claim_id": "5c62661f-036d-45d3-b7ae-35d7b736335e",
+      "result_id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf"
+    },
+    {
+      "claim_id": "5881bfdc-739a-470d-ae27-7be7ac57e7b3",
+      "result_id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf"
+    },
+    {
+      "claim_id": "f0f43723-c0fe-4b6e-a3b8-e7d938fdddbf",
+      "result_id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf"
+    },
+    {
+      "claim_id": "46d6e6ab-99d8-4211-8e3f-edd425adaf63",
+      "result_id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf"
+    },
+    {
+      "claim_id": "6e2a7197-c2d5-4481-be4c-421e19550120",
+      "result_id": "36a6c9e2-3cd7-4aa0-9942-74c92c96abdf"
+    },
+    {
+      "claim_id": "bd8fcd55-d92e-4665-8d9f-0efce93533cb",
+      "result_id": "6d783e93-5b70-4534-b795-8c0f089808c9"
+    },
+    {
+      "claim_id": "c94a783f-43e3-4afc-8743-9be71e02652d",
+      "result_id": "6d783e93-5b70-4534-b795-8c0f089808c9"
+    },
+    {
+      "claim_id": "51542f03-2296-4543-a7c4-cf0d4e978114",
+      "result_id": "6d783e93-5b70-4534-b795-8c0f089808c9"
+    },
+    {
+      "claim_id": "bc454800-a00e-4319-a3af-aa31323b8c97",
+      "result_id": "6d783e93-5b70-4534-b795-8c0f089808c9"
+    },
+    {
+      "claim_id": "062752ab-db94-4ac5-bf9a-ab182bd44fdb",
+      "result_id": "30e09a33-880c-414e-b022-d51f9ef4a01c"
+    },
+    {
+      "claim_id": "25f4b510-3bac-44b1-b601-75ef642841cc",
+      "result_id": "7b6b88ef-14ec-460c-bcad-4ab49ccde843"
+    },
+    {
+      "claim_id": "0a73b3a1-e077-4f4b-b531-5eb01b8b08e2",
+      "result_id": "6fa38644-2fdd-408f-8bd2-54184b939c93"
+    },
+    {
+      "claim_id": "832c84dc-b22d-41b2-ba95-6c81cb18067b",
+      "result_id": "6fa38644-2fdd-408f-8bd2-54184b939c93"
+    },
+    {
+      "claim_id": "4ecb206f-3576-4308-89a1-22517b770cc3",
+      "result_id": "6fa38644-2fdd-408f-8bd2-54184b939c93"
+    },
+    {
+      "claim_id": "50007d98-944f-4c21-9835-7092210b5e5d",
+      "result_id": "6fa38644-2fdd-408f-8bd2-54184b939c93"
+    },
+    {
+      "claim_id": "f82b961f-e28a-4e75-845d-1a63a8b84d6b",
+      "result_id": "54536bd1-80af-4916-802d-70f2eee18090"
+    },
+    {
+      "claim_id": "41f7b176-aeab-45ec-b1a7-81a418918db4",
+      "result_id": "ae850635-c287-4097-9ce0-910fed7478cc"
+    },
+    {
+      "claim_id": "f4f27ef8-e8ee-4ef1-a9be-f54903ed1b10",
+      "result_id": "ae850635-c287-4097-9ce0-910fed7478cc"
+    },
+    {
+      "claim_id": "c849fad2-c70f-4dde-abaa-70a78a1bac3d",
+      "result_id": "05d410fc-c9a7-4895-b6cc-aa845d46dd74"
+    },
+    {
+      "claim_id": "1300da60-0de2-41c4-9468-7b15ef5e6d43",
+      "result_id": "05d410fc-c9a7-4895-b6cc-aa845d46dd74"
+    },
+    {
+      "claim_id": "85ca3955-1838-4a53-8015-0a455a992236",
+      "result_id": "05d410fc-c9a7-4895-b6cc-aa845d46dd74"
+    },
+    {
+      "claim_id": "4c59dcfd-783a-4431-953e-cf8b902bfd4a",
+      "result_id": "496c85de-e377-4a3d-bcf4-49e69c4698a3"
+    },
+    {
+      "claim_id": "9728a314-1025-437f-956c-80ca786d48f6",
+      "result_id": "496c85de-e377-4a3d-bcf4-49e69c4698a3"
+    },
+    {
+      "claim_id": "aae3e3f5-b47e-443b-b3d5-c6083d851081",
+      "result_id": "496c85de-e377-4a3d-bcf4-49e69c4698a3"
+    },
+    {
+      "claim_id": "1abecd77-4c2f-47f3-9cc8-3909c88a0680",
+      "result_id": "496c85de-e377-4a3d-bcf4-49e69c4698a3"
+    },
+    {
+      "claim_id": "4fdf3db5-082c-4ae1-ba64-905f0105cde2",
+      "result_id": "496c85de-e377-4a3d-bcf4-49e69c4698a3"
+    },
+    {
+      "claim_id": "61a992b2-8657-4fe7-a733-37f287c20280",
+      "result_id": "85527934-5593-408a-96d1-d8d1f1b581ca"
+    },
+    {
+      "claim_id": "ddb677a4-f894-4b0b-a516-4b7012a8d889",
+      "result_id": "85527934-5593-408a-96d1-d8d1f1b581ca"
+    },
+    {
+      "claim_id": "d72289f4-4e3a-49a1-b089-7afda5774e2e",
+      "result_id": "85527934-5593-408a-96d1-d8d1f1b581ca"
+    },
+    {
+      "claim_id": "181a24c6-36cb-40fc-b567-8271f6687339",
+      "result_id": "85527934-5593-408a-96d1-d8d1f1b581ca"
+    },
+    {
+      "claim_id": "a5bc2c5b-cc02-4fe5-8672-f85a4c0c453f",
+      "result_id": "e2c0e9f0-bacd-4438-8d87-c33aa8303cb9"
+    },
+    {
+      "claim_id": "3ad69e57-9fcf-4c66-9f23-a19a59943c43",
+      "result_id": "e2c0e9f0-bacd-4438-8d87-c33aa8303cb9"
+    },
+    {
+      "claim_id": "1000e302-3f7b-4655-9472-0542a1c84001",
+      "result_id": "6fcaaf0b-8a76-4933-9388-cf7344522f5e"
+    },
+    {
+      "claim_id": "d1c96248-765e-499d-b1cd-c0c1f1358939",
+      "result_id": "6fcaaf0b-8a76-4933-9388-cf7344522f5e"
+    },
+    {
+      "claim_id": "37bcb65a-bbc3-4c86-9b83-3a0859f2dc0f",
+      "result_id": "23dee003-ff36-4d76-9d01-6dd8ab61fa47"
+    }
+  ],
+  "comparisons": []
+}

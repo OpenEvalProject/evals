@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C45",
+      "C46",
+      "C47",
+      "C226"
+    ],
+    "result": "A 2.6 \u00c5 resolution cryo-EM reconstruction of rotavirus VP6 was achieved from movies with 100 e\u207b/\u00c5\u00b2 total exposure. The reconstruction shows clear side chain density, Zn and Cl ions, and water molecules, enabling atomic model building with 0.4 \u00c5 RMSD to a crystal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C45, C46, C47, and C226 collectively demonstrate achievement of a high-resolution structure. The 2.6 \u00c5 resolution is validated by FSC curves (Figure 3A), clear visualization of atomic details (Figure 2), and good agreement with the crystal structure (0.4 \u00c5 RMSD). The data quality and resolution metrics are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C82",
+      "C83",
+      "C189"
+    ],
+    "result": "Optimal exposure values measured for single particles at low and intermediate resolutions are considerably higher than those from crystalline specimens, indicating that cryo-EM images should be collected with higher exposures (>10-20 e\u207b/\u00c5\u00b2) than commonly used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C82, C83, and C189 are supported by the critical exposure measurements shown in Figure 5B. The data demonstrate clear deviation from crystal values at lower spatial frequencies, with good agreement at ~4 \u00c5. The recommendation for higher exposures follows logically from the measured optimal exposure curve, though the generalizability depends on the validity of extrapolating from DLP to other specimens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C130",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "An exposure filtering method based on optimal exposure values was developed and integrated into the Unblur software. This method yields images with improved contrast, producing reconstructions nearly identical to manually optimized frame selections and superior to unfiltered sums.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C130, C134, C135, and C136 are supported by the comparison in Figure 3B showing that exposure-filtered reconstruction (frames 4-130) matches the quality of the manually optimized selection (frames 4-21) and exceeds unfiltered sums. The FSC curves provide quantitative validation of the filtering effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C78",
+      "C81"
+    ],
+    "result": "Critical exposure values were measured from ~22 \u00c5 to ~3.8 \u00c5 resolution and fit to a power law function (a=0.245, b=-1.665, c=2.81, R\u00b2=0.997). The optimal exposure is approximately 2.5 times the critical exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C78, and C81 are supported by the data in Figures 4 and 5A. The high R\u00b2 value (0.997) indicates excellent fit quality. The 2.5\u00d7 relationship between optimal and critical exposure is well-established from prior work (C19) and applied here. The resolution range limitation is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C102",
+      "C103"
+    ],
+    "result": "Beam-induced movement analysis showed that particle motion stabilized after frame 28 (~21 e\u207b/\u00c5\u00b2), with average shifts remaining constant at 0.2 \u00c5 per frame. Only frames 28-130 were used for critical exposure analysis to avoid movement-related signal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60, C102, and C103 describe a methodologically sound approach to separating radiation damage from movement effects. The quantitative movement measurements justify the exclusion of early frames. However, this creates a ~20 e\u207b/\u00c5\u00b2 pre-exposure that could affect the measured critical exposure values if radiation damage is not purely single-exponential (acknowledged in C104-C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C142",
+      "C147",
+      "C148",
+      "C151",
+      "C185"
+    ],
+    "result": "The exposure filtering method was validated on 20S proteasome (700 kDa), achieving 2.8 \u00c5 resolution matching published results. The method performs comparably to B-factor weighting in Relion, with exposure-filtered sums showing equal or higher SNR at all resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C147, C148, C151, and C185 are supported by Figure 7A-C. The comparison demonstrates that exposure filtering generalizes beyond DLP to a smaller, less symmetric particle. The equivalence to B-factor weighting validates the approach, though both methods were applied to the same high-quality dataset, limiting assessment of performance under more challenging conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "In simulated low-SNR conditions (ice background added to proteasome images), exposure-filtered reconstructions showed significantly improved resolution compared to unfiltered sums. Using alignment parameters from filtered data improved unfiltered reconstructions to the same resolution, demonstrating that improved alignment accuracy drives the resolution gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C169 describe a well-designed simulation experiment shown in Figure 7D. The parameter swap experiment (C168) provides strong evidence that alignment accuracy, not just SNR optimization, is the key benefit. However, this is a simulation rather than real data from smaller particles, and the ice background addition may not perfectly replicate true low-mass particle imaging conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95"
+    ],
+    "result": "The deviation of single-particle critical exposure values from crystalline specimen values at low resolution is attributed to differences in damage modes: crystals suffer both molecular damage and loss of long-range order, while single particles are affected primarily by short-range molecular damage. DLP's tight packing and smaller size compared to crystals (~5\u00d7 smaller than typical 1 \u03bcm crystals) make it more resistant to distortions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C89 and C94-C95 present a plausible mechanistic explanation for the observed differences, but this remains speculative (evidence_type: SPECULATION). While the size comparison and structural arguments are reasonable, no direct experimental evidence is provided to test this hypothesis. Alternative explanations (C100-C101) are acknowledged but not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Differential radiation sensitivity of amino acid side chains was observed, with carboxyl groups (e.g., Asp29) fading rapidly after ~3 e\u207b/\u00c5\u00b2 while aromatic groups (e.g., Tyr24) persist to ~35-40 e\u207b/\u00c5\u00b2. This pattern agrees with previous cryo-EM and crystallography studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by visual evidence in Figure 6 showing reconstructions at different exposures. The differential fading pattern is consistent with established knowledge (C113 cites multiple studies). However, the analysis is qualitative rather than quantitative, and the specific exposure values for complete loss are approximate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The measured radiation damage follows a single-exponential decay process. Pre-exposure of ~20 e\u207b/\u00c5\u00b2 should not affect results if damage is single-exponential, and evidence supports this model: linear fits are good (Figure 4), prior crystal studies show single-exponential decay, and low-resolution data across all frames show single-exponential behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 address a critical methodological concern. The evidence for single-exponential decay is strong: good linear fits in ln(SNR) vs exposure plots (C69, Figure 4), consistency with crystal studies (C106), and behavior at low resolution (C107). The reconstruction from frames 25-27 achieving 3.35 \u00c5 (C108) demonstrates that pre-exposed data retains structural information, supporting the validity of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C131",
+      "C141",
+      "C159",
+      "C171",
+      "C172",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "The high-exposure technique with exposure filtering should benefit all cryo-EM samples, especially smaller particles (<300 kDa) where alignment accuracy is limited by weak contrast. Higher exposures will increase SNR at low/intermediate resolutions, improving alignment and leading to better reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C131, C141, C159, C171, C172, C190-C192 are predictions (evidence_type: SPECULATION) not yet validated with real experimental data. While the simulation with proteasome (C167-C169) supports the concept, the authors acknowledge (C170) that appropriate datasets for direct validation are not available. The benefits for DLP were minimal (C140, C160) because alignment was already excellent, limiting empirical support for the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The current exposure filter corrects for radiation damage but does not account for beam-induced motion, which degrades early frames. Future versions should incorporate motion correction for optimal filtering across all frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 accurately describe a limitation of the current implementation and propose future work. The limitation is real and acknowledged (C176), and the recommendation (C175, C177) is logical given that motion affects early frames while radiation damage affects later frames. This is methodological refinement rather than a fundamental flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Compared to B-factor weighting methods (e.g., Relion), exposure filtering offers advantages: it can be applied early in processing without data assessment, works when B-factors are difficult to estimate (small datasets, low/intermediate resolution structures), and describes radiation damage across a wide resolution range. The methods perform comparably and could be used in combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C185 present a fair comparison of methods. The advantages of exposure filtering (C179, C182, C184) are logical and well-argued. The comparable performance (C147, C185) is demonstrated with proteasome data. The limitations of B-factor estimation (C181-C183) are reasonable concerns, though somewhat speculative. The suggestion to combine methods (C180) is practical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Rotavirus DLP was selected as an ideal specimen for measuring critical exposure due to its large size (~700 \u00c5, ~70 MDa), high icosahedral symmetry with T=13 lattice enabling 780-fold averaging, high contrast, and very low alignment errors. The data quality enables sub-3 \u00c5 reconstructions from just a few frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 justify the specimen choice with sound reasoning. The structural properties (C31-C36) are well-established (citations provided). The advantages for this study (C37-C39) follow logically from these properties. The data quality (C40-C41) is demonstrated by the achieved resolution. However, these same properties that make DLP ideal for measurement may limit generalizability to typical specimens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Reliable critical exposure measurements were limited to ~22 \u00c5 to ~3.8 \u00c5 resolution. At higher resolution, insufficient data points prevented fitting; at lower resolution, high FSC values (>0.999) made SNR estimates sensitive to small errors, and inelastic scattering effects became significant. Only 4 resolution shells exist below 22 \u00c5, further limiting low-resolution analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 transparently describe the limitations of the measurements. The explanations for poor fits at both extremes are reasonable: insufficient sampling at high resolution (C71) and technical/physical limitations at low resolution (C72-C76). The speculative nature of some explanations (C73, C74, C76) is appropriately indicated. These limitations are important for interpreting the fitted curve's validity range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "A new movie alignment program called Unblur was developed for per-particle motion correction. It uses iterative alignment of each frame to the sum of all other frames (excluding the current frame), with spline fitting to reduce noise sensitivity. The software includes optional exposure filtering and is publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C206-C212 describe the Unblur software and its algorithm. The iterative approach with leave-one-out alignment (C208) is methodologically sound to avoid self-correlation. The spline fitting (C209) addresses noise sensitivity. Public availability (C207, C211) supports reproducibility. The software is a key methodological contribution enabling the study's measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Exposure filtering could be applied to electron tomography, where B-factor determination is difficult due to low resolution and structural heterogeneity. Images at different tilts could be filtered to optimize SNR and resolution in tomograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C188 propose an application to tomography but provide no experimental validation. The reasoning is logical\u2014tomography faces the same radiation damage issues but has additional challenges for B-factor estimation (C188). However, this remains speculative without demonstration. Tomography also involves varying specimen thickness and defocus across tilts, which may complicate application of the exposure filter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Critical exposure was measured by calculating reconstructions from 3-frame sums (2.31 e\u207b/\u00c5\u00b2 each), generating FSC curves for each accumulated exposure, converting to ln(SNR) vs exposure plots, and performing linear regression from frame 28 until SNR fell below 3\u03c3 noise level. The linear fits were good, indicating single-exponential decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe a sound methodology for measuring critical exposure. The use of 3-frame sums (C63) balances signal and sampling. The FSC-to-SNR conversion (C64, C66) is standard. The regression approach (C67) is appropriate, and the 3\u03c3 cutoff is reasonable. The good linear fits (C69, Figure 4) validate the single-exponential model. The methodology is well-documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Secondary structure (\u03b1-helix backbone) remains visible even after ~50 e\u207b/\u00c5\u00b2 exposure, exceeding the optimal exposure of ~30 e\u207b/\u00c5\u00b2 at 8 \u00c5 resolution. This high tolerance may aid alignment of images recorded with high exposures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by observations in the reconstructions. The persistence of secondary structure (C114) at high exposure is documented. The comparison to optimal exposure (C115) provides context. The speculation about aiding alignment (C116) is reasonable given that secondary structure features are used in alignment, though this is not directly tested.",
+    "result_type": "MINOR"
+  }
+]

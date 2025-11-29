@@ -1,0 +1,1554 @@
+{
+  "submission": {
+    "id": "30404bf5-eaae-4984-a62d-152e536a2a72",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T04:18:08.865156Z",
+    "updated_at": "2025-11-29T04:18:08.865156Z"
+  },
+  "content": [
+    {
+      "id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "submission_id": "30404bf5-eaae-4984-a62d-152e536a2a72",
+      "content_type": "manuscript",
+      "content_text": "# A genetic toolkit for tagging intronic MiMIC containing genes\n\n## Authors\n\n- Sonal Nagarkar-Jaiswal<sup>1</sup>\n- Steven Z DeLuca<sup>2</sup>\n- Pei-Tseng Lee<sup>3</sup>\n- Wen-Wen Lin<sup>3</sup>\n- Hongling Pan<sup>1</sup>\n- Zhongyuan Zuo<sup>3</sup>\n- Jiangxing Lv<sup>3</sup>\n- Allan C Spradling<sup>2</sup>\n- Hugo J Bellen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Baylor College of Medicine Houston United States\n2. Department of Embryology Howard Hughes Medical Institute, Carnegie Institution for Science Baltimore United States\n3. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n4. Jan and Dan Duncan Neurological Research Institute Texas Children's Hospital Houston United States\n5. Department of Neuroscience Baylor College of Medicine Houston United States\n6. Program in Developmental Biology Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, we described a large collection of Minos-Mediated Integration Cassettes (MiMICs) that contain two phiC31 recombinase target sites and allow the generation of a new exon that encodes a protein tag when the MiMIC is inserted in a codon intron (Nagarkar-Jaiswal et al., 2015). These modified genes permit numerous applications including assessment of protein expression pattern, identification of protein interaction partners by immunoprecipitation followed by mass spec, and reversible removal of the tagged protein in any tissue. At present, these conversions remain time and labor-intensive as they require embryos to be injected with plasmid DNA containing the exon tag. In this study, we describe a simple and reliable genetic strategy to tag genes/proteins that contain MiMIC insertions using an integrated exon encoding GFP flanked by FRT sequences. We document the efficiency and tag 60 mostly uncharacterized genes.\n\n## Introduction\n\nOne of the most powerful techniques for characterizing gene function is to generate transgenic animals in which an epitope tag such as GFP has been fused to the gene at its normal genomic location (Ross-Macdonald et al., 1999; Morin et al., 2001; Skarnes et al., 2004). These tagged proteins are extremely useful as they permit determination of protein localization in vivo as well as conditional, tissue specific, temporal and reversible removal of the tagged proteins (Nagarkar-Jaiswal et al., 2015). However, previous methods for generating protein trap alleles in Drosophila have allowed only about 800 genes to be successfully tagged (Kelso et al., 2004; Buszczak et al., 2007; Quinones-Coello et al., 2007; Aleksic et al., 2009; Lowe et al., 2014).\n\nWe previously developed a flexible system for engineering the Drosophila genome using the Minos-Mediated Integration Cassette (MiMIC) transposable element. We generated 15,660 strains with a single MiMIC inserted at random within the fly genome and mapped their insertion site (Bellen et al., 2011; Venken et al., 2011; Nagarkar-Jaiswal et al., 2015). MiMIC carries sequences that function as a gene and protein trap when inserted in the proper orientation in a coding intron. Moreover, its content can be replaced by Recombination-Mediated Cassette Exchange (RMCE) leading to the introduction of any desired DNA, such as an artificial exon that encodes a protein tag. This approach can potentially be used to tag thousands of genes. Currently, 2854 existing insertions are located within the coding introns of 1862 distinct genes (Nagarkar-Jaiswal et al., 2015), and MiMIC-like elements can now be placed in any gene of interest by CRISPR (Zhang et al., 2014). Unfortunately, the RMCE method needed to convert these insertions into functional protein traps requires embryonic injections of an appropriate donor DNA and screening of many offspring to identify the desired events, a labor and cost-intensive procedure that does not scale easily. We therefore developed a more efficient and economical in vivo genetic tagging methodology that can in principle be used to generate protein trap alleles of all Drosophila genes.\n\n## Results and discussion\n\nWe developed a genetic strategy that allows the desired RMCE event to take place efficiently without the need for microinjection. The method uses FLP recombinase to release a genomically integrated DNA flanked by FRT sites into the nucleoplasm where it can efficiently undergo phiC31 integrase-mediated cassette exchange, as shown by Gohl et al. (2011). As shown in Figure 1A, we engineered three donor cassettes, one for each reading frame. The core, which contains a splice acceptor (SA) followed by a (GGS)4 flexible linker, multiple tags (EGFP-FlAsH-StrepII-TEVcs-3xFlag {GFSTF}), another (GGS)4 flexible linker, and a splice donor (SD), is flanked by two inverted attB sites for phiC31-mediated RMCE (Venken et al., 2011). We then cloned this cassette core between tandem FRT sites in a P-element transformation vector (Gong and Golic, 2003). FLP-mediated recombination between the tandem FRT sites excises a circular donor DNA molecule from its initial genetic locus, promoting its efficient recombination with a distal target site (Golic et al., 1997). A mini-white eye color marker gene between our donor cassette and one of the FRT sites allows us to monitor the presence or absence of the donor cassette in FLP recombinase-containing stocks.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08469/elife-08469-fig1-v2.jpg)\n\n**Figure 1.:** (A) Flp mediated generation of circular DNA with tag sequences. Donor line carries a source of Flp recombinase and phiC31 integrase, and the core cassette for a specific phase (0, 1, or 2) encoding a (GGS)4 flexible linker (L), multiple tags EGFP-FlAsH-StrepII-TEVcs-3xFlag (GFSTF), another (GGS)4 flexible linker, and a splice donor (SD), which is flanked by two inverted attB and two FRT sites oriented in that same direction. Upon Flp expression, the core is flipped out as a circular DNA containing one FRT site. (B) In vivo integration of tag sequence into Minos-Mediated Integration Cassette (MiMIC) locus. At a MiMIC locus in a coding intron, the MiMIC gene trap cassette is replaced by L-EGFP-FlAsH-StrepII-TEVcs-3xFlag-L sequence by phiC31 integrase resulting in loss of yellow+ marker.\n\nWe created 6 stocks (Figure 1\u2014source data 2), each harboring one of the three donor transgenes located on the second or third chromosome, and a heat shock-inducible FLP recombinase and a germ line-expressed phiC31 integrase on the X-chromosome. Because the heat shock-inducible FLP recombinase is somewhat leaky at 18\u00b0C, the donor transgene is lost from these stocks at a low frequency, resulting in rare white-eyed flies, which we periodically discard.\n\nTo initiate RMCE, we crossed the appropriate donor flies to MiMIC-containing flies and heat shocked the resulting embryos and larvae (Figure 2). Within the primordial germ cells of some of the embryos and larvae, phiC31 integrase catalyzed recombination between attB sites in the donor and attP sites in the MiMIC transposon. The positive RMCE events were selected based on the loss of the y + marker present in the original MiMIC (Figure 2). We confirmed the integration and orientation of the donor cassette by PCR as described in Venken et al. (2011). Typically, 50% of the integration events are in the proper orientation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08469/elife-08469-fig2-v2.jpg)\n\n**Figure 2.:** Females carrying the hs-FLP and vasa-phiC31 integrase on the X-chromosome, and the FRT flanked multiple tag (GFSTF) cassette on the II-chromosome are crossed to males carrying a MiMIC insertion in a coding intron of a gene on the III-chromosome. The resulting embryos are heat shocked, and adult progeny with the desired genotype are crossed with flies carrying appropriate balancers. The resulting progeny is screened for the loss of white+ and yellow+ and crossed to flies carrying appropriate balancers to establish stocks, which are then verified by PCR assay.\n\nWe observed one to ten RMCE events in 93 out of 113 attempts in our initial trial when we set up 3\u20137 crosses (Cross 2 in Figure 2). After PCR screening, 60/93 of the tested MiMICs allowed integration of at least one donor in the proper orientation to tag the endogenous gene (Supplementary file 1). In summary, we set up 3\u20137 vials for each starting cross and obtained 60/113 tagged genes. Since the efficiency of RMCE and the ease of detecting yellow\u2212 progeny vary between different starting sites, we propose to set up 10\u201320 vials and to score more progeny to improve the success rate. The method has been found to work for a wide variety of genes including a gene located in a telomeric region (lethal giant larvae (l(2)gl)), suggesting that there may be few limitations in its applicability.\n\nTo ensure that the expression pattern and protein distribution correspond to the endogenous protein, we costained two tagged lines with GFP for which specific monoclonal antibodies are available: Eyes shut (Eys) (mAb 21A6,) and Delta (Dl) (mAb C594.9B) (Figure 3A). In both cases, the protein recognized by the mAb colocalizes with the GFP and match the described expression patterns (Das et al., 2013; Haltom et al., 2014). Note, however, that the GFP tagged Eys protein is present in the cytoplasm of the photoreceptors and the inter-rhabdomere spaces (IRS) of the photoreceptors, whereas the mAb against Eys mostly localizes to the IRS (Figure 3A). These data are in agreement with what we previously observed for numerous tagged proteins (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08469/elife-08469-fig3-v2.jpg)\n\n**Figure 3.:** (A) Colocalization of GFP tagged proteins with gene specific antibodies: anti-GFP signals (green) show colocalization with anti-Eys (red) in inter-rhabdomere space in adult eye (top panel) and anti-Delta (blue) in L3 eye imaginal disc in bottom panel. Scale bars, 2 \u03bcm and 5 \u03bcm. (B) Examples of EGFP expression pattern in different tissues from third instar larvae: brain; l(2)gl (A), Dl (B), twins (tws) (C), Sap-r (E), Rgk3 (F), and Hrb98DE (G), wing imaginal disc: kay (D), hindgut: CG10086 (H), and cells of the cuticle: CG5656 (I). Scale bars 100 \u03bcm. (A\u2013I, except G), 25 \u03bcm (G). Eys, eyes shut.\n\nWe stained third instar larval brains and discs for the 60 tagged gene/proteins. The examples, shown in Figure 3B, include lethal (2) giant larvae (l(2)gl) (a), Delta (Dl) (b), and twins (tws) (c) whose expression patterns are consistent with published data (Kooh et al., 1993; Albertson and Doe, 2003; Chabu and Doe, 2009). Similarly, kayak/fos (kay) is expressed in wing disc nuclei (d) as described earlier (Zeitlinger and Bohmann, 1999). The expression pattern of the remaining genes has not been previously described (Figure 3B): Saposin-related (Sap-r) is expressed in a subset of cells in larval brain (e), Rad, Gem/Kir family member 3 (Rgk3) is enriched in mushroom body in L3 larval brain (f), Heterogeneous nuclear ribonucleoprotein at 98DE (Hrb98DE) is expressed in L3 larval brain (g), CG10086 is expressed in hindgut (h), and CG5656 is expressed in the cells of the cuticle (i). The expression patterns of all these genes as well as all the genes listed in Supplementary file 1 are documented in the MiMIC RMCE database at http://flypush.imgen.bcm.tmc.edu/pscreen/rmce/.\n\nIn summary, we developed a genetic tagging strategy that will greatly facilitate the EGFP tagging of nearly 2000 genes that already carry MiMIC insertions (Nagarkar-Jaiswal et al., 2015). The same strategies can also be used for tagging genes with other protein tags. In addition, a similar strategy based on lox sites instead of FRT cassettes has recently been developed to integrate an artificial exon carrying the GAL4 gene in MiMICs inserted in coding introns (Diao et al., 2015). These insertions are mutagenic but permit the expression of the endogenous wild-type and mutant cDNAs of Drosophila as well as other species under the control of UAS. Moreover, these tagging methods can now be combined with CRISPR directed integration of attP carrying cassettes similar to MiMIC in coding introns to tag almost every gene in Drosophila (Zhang et al., 2014).\n\n## Material and methods\n\n### Cloning\n\nThe core cassettes (attB-SA- phase 0/1/2-[GGS]4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-[GGS]4-SD-attB) for Phase 0,1, or 2 were excised from pBS-KS-attB1-2-PT-SA-SD-0-EGFP-FlAsH-StrepII-TEVcs-3xFlag, pBS-KS-attB1-2-PT-SA-SD-1-EGFP-FlAsH-StrepII-TEVcs-3xFlag, or pBS-KS-attB1-2-PT-SA-SD-2-EGFP-FlAsH-StrepII-TEVcs-3xFlag as NheI/NsiI fragments and subcloned into P-element vector pW35 (DGRC) between PstI/AvrII to create final donor vectors pW35-FRT-attB-SA-phase 0-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT, pW35-FRT-attB-SA-phase 1-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT and pW35-FRT-attB-SA-phase 2-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT.\n\n### In vivo tagging\n\nAround 15\u201320 phase-specific homozygous donor females (P{ry+t7.2= hsFLP}12, y1w*M{vas-int.B}ZH-2A; P{FRT-attB-{GFSTF}-attB(w+)-FRT}; Pri1/TM6B, Tb1 or P{ry+t7.2 = hsFLP}12, y1 w*M{vas-int.B}ZH-2A; S1/CyO; P{FRT-attB-{GFSTF}-attB (w+)-FRT}) were crossed with 5\u201310 males carrying MiMIC insertion in coding intron (y1 w*; Mi[MIC y+] geneMI/Mi[MIC y+] geneMI or balancer). Crosses were transferred to new vials every third day and constantly kept at 18\u00b0C. Vials with progeny embryos and larvae were heat shocked on day 3, 4, and 5 for 20 minutes at 37\u00b0C in a water bath and raised at 25\u00b0C. About 5\u20137 vials with a pool of 5 F1 males with mosaic red eyes and yellow body were crossed with 10\u201315 virgins of y1w67c23; In(2LR)Gla, wgGla\u22121/SM6a or y1w*; D/TM6b, Hu, Tb. Transgenic F2 progeny were screened for loss of yellow+ (yellow-phenotype) and subsequently crossed to virgins of y1w67c23; In(2LR)Gla, wgGla\u22121/SM6a or y1w*; D/TM3,Sb, Tb to establish stocks. Correct RMCE events were confirmed by PCR assay as described in Nagarkar-Jaiswal et al., 2015.\n\n### Immunostaining\n\nBriefly, third instar larvae were dissected for larval brains, imaginal discs, and gut in 1xPBS and fixed in 3.7% formaldehyde for 30 min at room temperature and washed in 0.2% Triton X-100 (Nagarkar-Jaiswal et al., 2015). They were then incubated for 1 hr at RT in 10% NGS-PBS-0.2% Triton X-100 and stained with primary antibodies diluted in 10% NGS-PBS-0.2% Triton X-100 overnight at 4\u00b0C. The samples were washed and incubated with secondary antibodies for 2 hr at RT. The samples were then washed and mounted in Vectashield (Vector Labs, Burlingame, CA) and imaged with a Zeiss LSM710 confocal microscope and processed using Adobe Photoshop (Adobe Systems Inc., San Jose, CA, USA).\n\n### Antibodies used\n\nPrimary antibodies used: rabbit anti-GFP 1:1000 (Life Technologies, A11122), mouse anti-Delta 1:1000 (C594.9B, DSHB [Qi et al., 1999]), and mouse anti-Eys 1:250 (21A6, DSHB [Fujita et al., 1982]). Secondary antibodies used: Alexa 488 (Invitrogen, Life Technologies, Grand Island, NY), Cy5 and Cy3 conjugated antibodies (Jackson ImmunoResearch, West Grove, PA) were used at 1:500.\n",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "010bdc0c-adf8-4f16-81e5-4abb64b594af",
+      "submission_id": "30404bf5-eaae-4984-a62d-152e536a2a72",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08469.008](https://doi.org/10.7554/eLife.08469.008)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cA genetic toolkit for tagging intronic MiMIC containing genes\u201d for peer review at eLife. Your submission has been favorably evaluated by K VijayRaghavan (Senior editor), Mani Ramaswami (Reviewing editor), and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis Research Advance describes the creation of a genetic toolkit that allows for the (Recombination Mediated Cassette Exchange) RMCE of an integrated exon encoding for GFP with existing MIMIC insertions. This resource bypasses the need for laborious injections and will facilitate the use of MIMIC lines for epitope tagging genes at their endogenous sites. An extension of the recent MiMIC resource that was published in eLife, it documents a simplified and streamlined version of converting an intronic MiMIC insertion (containing 2 attP sites) into a GFP tagged protein locus without need for the traditional labour-intensive injection approach. The source of the circular donor plasmid that contains both attB sites and the GFP cassette is a Flp mediated excision of a transgenic insertion. Transgenic lines for all three reading frames on second and third chromosome together with Flp and phiC31 sources were generated. The successful exchange has been demonstrated for 60 loci.\n\nThis RMCE approach provides a significant advance of the former MiMIC resource and can also be used beyond MiMIC, e.g. if the attP cassette has been inserted by CRISPR.\n\nEssential revisions:\n\nSeveral points should be addressed:\n\n1) Figure 1 appears incorrect: surely the white+ box should be between the attB site and the FRT.\n\n2) In the paragraph starting with \u201cWe observed RMCE events\u2026\u201d, the sentence \u201cWe set up 3-7 vials for each starting cross and this was sufficient to obtain 60/116 (113 or 116) tagged genes.\u201d What is meant by (113 or 116)? This paragraph suggests that RMCE is unsuccessful in close to half of the lines tested. Do the authors have any insights into why this may be the case? Is there a common feature amongst the MIMIC lines that failed RMCE?\n\nThe authors should provide some idea of how efficient the process is. How many individual events were obtained from the 3-7 starting vials? How many flies were typically screened to get potential recombinants?\n\n3) In \u201cSince the efficiency of RMCE\u2026\u201d, yellow should be replaced by yellow\u2013.\n\n4) In the same paragraph, the authors should list examples of genes in heterochromatic regions.\n\n5) Given the utility of newly developed CRISPR/Cas9 techniques, the authors should discuss the strengths of MIMIC system. The case can certainly be made. But the GFP cassettes described here represent only an incremental start. This resource would be greatly enhanced by generating lines with additional tags, as previously described by the authors.\n",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "98ccbf78-515c-44fe-a42f-e8d26afe9c11",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C1",
+      "claim": "A large collection of Minos-Mediated Integration Cassettes (MiMICs) contain two phiC31 recombinase target sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we described a large collection of Minos-Mediated Integration Cassettes (MiMICs) that contain two phiC31 recombinase target sites and allow the generation of a new exon that encodes a protein tag when the MiMIC is inserted in a codon intron (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "ec2ad6e0-027c-4ac7-88c6-415bf40b44fb",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C2",
+      "claim": "MiMICs allow the generation of a new exon that encodes a protein tag when inserted in a codon intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we described a large collection of Minos-Mediated Integration Cassettes (MiMICs) that contain two phiC31 recombinase target sites and allow the generation of a new exon that encodes a protein tag when the MiMIC is inserted in a codon intron (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "44de7b76-c4dc-4b45-bcdc-629704beee41",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C3",
+      "claim": "Modified genes with MiMIC insertions permit assessment of protein expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "These modified genes permit numerous applications including assessment of protein expression pattern, identification of protein interaction partners by immunoprecipitation followed by mass spec, and reversible removal of the tagged protein in any tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the described capabilities of the modified genes in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c99b76dc-e107-4aaf-9c66-fd4db93b18b8",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C4",
+      "claim": "Modified genes with MiMIC insertions permit identification of protein interaction partners by immunoprecipitation followed by mass spec.",
+      "claim_type": "EXPLICIT",
+      "source": "These modified genes permit numerous applications including assessment of protein expression pattern, identification of protein interaction partners by immunoprecipitation followed by mass spec, and reversible removal of the tagged protein in any tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the described capabilities of the modified genes in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "aa0d153e-4bc6-45e8-85b1-fb54a05062a6",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C5",
+      "claim": "Modified genes with MiMIC insertions permit reversible removal of the tagged protein in any tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These modified genes permit numerous applications including assessment of protein expression pattern, identification of protein interaction partners by immunoprecipitation followed by mass spec, and reversible removal of the tagged protein in any tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the described capabilities of the modified genes in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "4f868ec3-9b99-4f61-b466-a72f01f1eaba",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C6",
+      "claim": "Current MiMIC conversions remain time and labor-intensive as they require embryos to be injected with plasmid DNA containing the exon tag.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, these conversions remain time and labor-intensive as they require embryos to be injected with plasmid DNA containing the exon tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the current state of the methodology before the improvements described in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "240d0587-d5c8-4d88-ba61-bb3e51547d26",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C7",
+      "claim": "A simple and reliable genetic strategy was developed to tag genes/proteins that contain MiMIC insertions using an integrated exon encoding GFP flanked by FRT sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we describe a simple and reliable genetic strategy to tag genes/proteins that contain MiMIC insertions using an integrated exon encoding GFP flanked by FRT sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main methodological contribution of the study, supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "9e8fb058-bb63-4b53-b131-e69cb9be75e2",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C8",
+      "claim": "60 mostly uncharacterized genes were tagged using the new genetic strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We document the efficiency and tag 60 mostly uncharacterized genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "e1d8efe3-1b50-46cd-850d-cb8d1e0378bf",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C9",
+      "claim": "Generating transgenic animals with epitope tags fused to genes at their normal genomic location is one of the most powerful techniques for characterizing gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most powerful techniques for characterizing gene function is to generate transgenic animals in which an epitope tag such as GFP has been fused to the gene at its normal genomic location (Ross-Macdonald et al., 1999; Morin et al., 2001; Skarnes et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Ross-Macdonald et al., 1999; Morin et al., 2001; Skarnes et al., 2004).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "39213272-9fa0-41c2-aae3-7a353308b9ae",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C10",
+      "claim": "Tagged proteins permit determination of protein localization in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These tagged proteins are extremely useful as they permit determination of protein localization in vivo as well as conditional, tissue specific, temporal and reversible removal of the tagged proteins (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "d3ec2f72-9641-49f5-ae6f-d8b650c29bc3",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C11",
+      "claim": "Tagged proteins permit conditional, tissue specific, temporal and reversible removal of the tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These tagged proteins are extremely useful as they permit determination of protein localization in vivo as well as conditional, tissue specific, temporal and reversible removal of the tagged proteins (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "50dfbf64-cc2c-45e8-898e-803094dafa58",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C12",
+      "claim": "Previous methods for generating protein trap alleles in Drosophila have allowed only about 800 genes to be successfully tagged.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous methods for generating protein trap alleles in Drosophila have allowed only about 800 genes to be successfully tagged (Kelso et al., 2004; Buszczak et al., 2007; Quinones-Coello et al., 2007; Aleksic et al., 2009; Lowe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Kelso et al., 2004; Buszczak et al., 2007; Quinones-Coello et al., 2007; Aleksic et al., 2009; Lowe et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "694e96e5-ef66-460a-bf28-0670040ef091",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C13",
+      "claim": "15,660 strains with a single MiMIC inserted at random within the fly genome were generated and their insertion sites were mapped.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated 15,660 strains with a single MiMIC inserted at random within the fly genome and mapped their insertion site (Bellen et al., 2011; Venken et al., 2011; Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Bellen et al., 2011; Venken et al., 2011; Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "e374fef3-f195-43a3-b97b-edbd656ae96b",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C14",
+      "claim": "MiMIC carries sequences that function as a gene and protein trap when inserted in the proper orientation in a coding intron.",
+      "claim_type": "EXPLICIT",
+      "source": "MiMIC carries sequences that function as a gene and protein trap when inserted in the proper orientation in a coding intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the functional properties of MiMIC based on established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "70ace79a-e465-4d23-afef-a972d9f52b90",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C15",
+      "claim": "MiMIC content can be replaced by Recombination-Mediated Cassette Exchange (RMCE) leading to the introduction of any desired DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, its content can be replaced by Recombination-Mediated Cassette Exchange (RMCE) leading to the introduction of any desired DNA, such as an artificial exon that encodes a protein tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the functional capability of MiMIC based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "f498f42f-e065-4966-a840-da497eec4840",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C16",
+      "claim": "2854 existing MiMIC insertions are located within the coding introns of 1862 distinct genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, 2854 existing insertions are located within the coding introns of 1862 distinct genes (Nagarkar-Jaiswal et al., 2015), and MiMIC-like elements can now be placed in any gene of interest by CRISPR (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "2c7cba59-46a4-4d89-84ec-8be245c61c34",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C17",
+      "claim": "MiMIC-like elements can be placed in any gene of interest by CRISPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, 2854 existing insertions are located within the coding introns of 1862 distinct genes (Nagarkar-Jaiswal et al., 2015), and MiMIC-like elements can now be placed in any gene of interest by CRISPR (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Zhang et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "5ff9931c-e74f-4081-b7b8-adc6638e49ef",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C18",
+      "claim": "The RMCE method needed to convert MiMIC insertions into functional protein traps requires embryonic injections of an appropriate donor DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the RMCE method needed to convert these insertions into functional protein traps requires embryonic injections of an appropriate donor DNA and screening of many offspring to identify the desired events, a labor and cost-intensive procedure that does not scale easily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the limitations of the previous RMCE method based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "90b634a0-ec5a-484b-8ca4-9cb1a6b9c08d",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C19",
+      "claim": "The RMCE method requires screening of many offspring to identify the desired events.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the RMCE method needed to convert these insertions into functional protein traps requires embryonic injections of an appropriate donor DNA and screening of many offspring to identify the desired events, a labor and cost-intensive procedure that does not scale easily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the limitations of the previous RMCE method based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "0e798466-d36f-4bd6-ba73-00540f878df5",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C20",
+      "claim": "The RMCE method is a labor and cost-intensive procedure that does not scale easily.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the RMCE method needed to convert these insertions into functional protein traps requires embryonic injections of an appropriate donor DNA and screening of many offspring to identify the desired events, a labor and cost-intensive procedure that does not scale easily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the limitations of the previous RMCE method based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "2fb266c5-f6cd-4bfa-9ce8-6d06c2ee100f",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C21",
+      "claim": "A more efficient and economical in vivo genetic tagging methodology was developed that can in principle be used to generate protein trap alleles of all Drosophila genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore developed a more efficient and economical in vivo genetic tagging methodology that can in principle be used to generate protein trap alleles of all Drosophila genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and methodology presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "2da1bb66-12bc-4bb6-bdaa-325d264a747b",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C22",
+      "claim": "The genetic strategy allows the desired RMCE event to take place efficiently without the need for microinjection.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a genetic strategy that allows the desired RMCE event to take place efficiently without the need for microinjection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "a11b40fe-9437-4d17-a339-39678833edfe",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C23",
+      "claim": "The method uses FLP recombinase to release a genomically integrated DNA flanked by FRT sites into the nucleoplasm where it can efficiently undergo phiC31 integrase-mediated cassette exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "The method uses FLP recombinase to release a genomically integrated DNA flanked by FRT sites into the nucleoplasm where it can efficiently undergo phiC31 integrase-mediated cassette exchange, as shown by Gohl et al. (2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Gohl et al., 2011) and the experimental design in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "b883e59b-a6f5-453d-b3f8-c860d9ffeb53",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C24",
+      "claim": "Three donor cassettes were engineered, one for each reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1A, we engineered three donor cassettes, one for each reading frame.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the description in the text and Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "7a88ff21-bfb5-47b6-9f67-a3868b9e3108",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C25",
+      "claim": "The donor cassette core contains a splice acceptor (SA) followed by a (GGS)4 flexible linker, multiple tags (EGFP-FlAsH-StrepII-TEVcs-3xFlag {GFSTF}), another (GGS)4 flexible linker, and a splice donor (SD).",
+      "claim_type": "EXPLICIT",
+      "source": "The core, which contains a splice acceptor (SA) followed by a (GGS)4 flexible linker, multiple tags (EGFP-FlAsH-StrepII-TEVcs-3xFlag {GFSTF}), another (GGS)4 flexible linker, and a splice donor (SD), is flanked by two inverted attB sites for phiC31-mediated RMCE (Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the molecular composition of the donor cassette, supported by the experimental design and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "d5be6539-6979-4479-8434-26dab16372c4",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C26",
+      "claim": "The donor cassette core is flanked by two inverted attB sites for phiC31-mediated RMCE.",
+      "claim_type": "EXPLICIT",
+      "source": "The core, which contains a splice acceptor (SA) followed by a (GGS)4 flexible linker, multiple tags (EGFP-FlAsH-StrepII-TEVcs-3xFlag {GFSTF}), another (GGS)4 flexible linker, and a splice donor (SD), is flanked by two inverted attB sites for phiC31-mediated RMCE (Venken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the molecular composition of the donor cassette, supported by the experimental design and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "1c5a752f-409a-455e-926f-09b6f104da36",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C27",
+      "claim": "The cassette core was cloned between tandem FRT sites in a P-element transformation vector.",
+      "claim_type": "EXPLICIT",
+      "source": "We then cloned this cassette core between tandem FRT sites in a P-element transformation vector (Gong and Golic, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the cloning strategy, supported by citation to prior work (Gong and Golic, 2003).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "9e1db60b-fc35-4820-a230-831507e25f5f",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C28",
+      "claim": "FLP-mediated recombination between the tandem FRT sites excises a circular donor DNA molecule from its initial genetic locus, promoting its efficient recombination with a distal target site.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-mediated recombination between the tandem FRT sites excises a circular donor DNA molecule from its initial genetic locus, promoting its efficient recombination with a distal target site (Golic et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Golic et al., 1997) and the experimental design.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "37519db0-c836-4021-a041-d54471dad052",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C29",
+      "claim": "A mini-white eye color marker gene between the donor cassette and one of the FRT sites allows monitoring of the presence or absence of the donor cassette in FLP recombinase-containing stocks.",
+      "claim_type": "EXPLICIT",
+      "source": "A mini-white eye color marker gene between our donor cassette and one of the FRT sites allows us to monitor the presence or absence of the donor cassette in FLP recombinase-containing stocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the functional role of the mini-white marker in the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "56685a9c-20bd-4afb-bb93-2dfc0c651b06",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C30",
+      "claim": "6 stocks were created, each harboring one of the three donor transgenes located on the second or third chromosome, and a heat shock-inducible FLP recombinase and a germ line-expressed phiC31 integrase on the X-chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We created 6 stocks (Figure 1\u2014source data 2), each harboring one of the three donor transgenes located on the second or third chromosome, and a heat shock-inducible FLP recombinase and a germ line-expressed phiC31 integrase on the X-chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and Figure 1\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "5ef9a34e-c7d4-478a-8050-493d3e6fc05d",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C31",
+      "claim": "The heat shock-inducible FLP recombinase is somewhat leaky at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the heat shock-inducible FLP recombinase is somewhat leaky at 18\u00b0C, the donor transgene is lost from these stocks at a low frequency, resulting in rare white-eyed flies, which we periodically discard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations during the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "f1ac2535-7b83-462c-8b9b-a0310ccb8c52",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C32",
+      "claim": "The donor transgene is lost from stocks at a low frequency at 18\u00b0C, resulting in rare white-eyed flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the heat shock-inducible FLP recombinase is somewhat leaky at 18\u00b0C, the donor transgene is lost from these stocks at a low frequency, resulting in rare white-eyed flies, which we periodically discard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations during the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "dd70032d-cc3f-43fe-b377-2293aed29ea4",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C33",
+      "claim": "Appropriate donor flies were crossed to MiMIC-containing flies and the resulting embryos and larvae were heat shocked to initiate RMCE.",
+      "claim_type": "EXPLICIT",
+      "source": "To initiate RMCE, we crossed the appropriate donor flies to MiMIC-containing flies and heat shocked the resulting embryos and larvae (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental procedure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "fdd7a33b-a556-4a1c-8828-76b5a1a06c95",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C34",
+      "claim": "Within the primordial germ cells of some embryos and larvae, phiC31 integrase catalyzed recombination between attB sites in the donor and attP sites in the MiMIC transposon.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the primordial germ cells of some of the embryos and larvae, phiC31 integrase catalyzed recombination between attB sites in the donor and attP sites in the MiMIC transposon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the molecular mechanism of RMCE based on the experimental design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "15625685-b0d3-4563-9977-20e4ee0556b9",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C35",
+      "claim": "Positive RMCE events were selected based on the loss of the y+ marker present in the original MiMIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive RMCE events were selected based on the loss of the y + marker present in the original MiMIC (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the selection strategy shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "33308263-bbd1-4d24-b6e7-2ec563d7e17e",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C36",
+      "claim": "The integration and orientation of the donor cassette was confirmed by PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the integration and orientation of the donor cassette by PCR as described in Venken et al. (2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the verification method, supported by citation to prior work (Venken et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "608e350b-ab9a-49c1-a357-1c8369af88cb",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C37",
+      "claim": "Typically, 50% of the integration events are in the proper orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, 50% of the integration events are in the proper orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "eb837cbb-91bd-40d7-9122-fe88d041df79",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C38",
+      "claim": "One to ten RMCE events were observed in 93 out of 113 attempts in the initial trial when 3\u20137 crosses were set up.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed one to ten RMCE events in 93 out of 113 attempts in our initial trial when we set up 3\u20137 crosses (Cross 2 in Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "ad1796db-1682-4b65-b94c-97941c06a1e8",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C39",
+      "claim": "60 out of 93 tested MiMICs allowed integration of at least one donor in the proper orientation to tag the endogenous gene after PCR screening.",
+      "claim_type": "EXPLICIT",
+      "source": "After PCR screening, 60/93 of the tested MiMICs allowed integration of at least one donor in the proper orientation to tag the endogenous gene (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "4f6e472d-e749-4672-bf3a-5dbf7aebc797",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C40",
+      "claim": "3\u20137 vials were set up for each starting cross and 60 out of 113 tagged genes were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we set up 3\u20137 vials for each starting cross and obtained 60/113 tagged genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c43f7e76-5b59-4e0d-9a89-7e1e13b712b3",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C41",
+      "claim": "Setting up 10\u201320 vials and scoring more progeny is proposed to improve the success rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the efficiency of RMCE and the ease of detecting yellow\u2212 progeny vary between different starting sites, we propose to set up 10\u201320 vials and to score more progeny to improve the success rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a recommendation based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "82b33e43-e524-4f32-9a65-6f495a3a25d7",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C42",
+      "claim": "The method has been found to work for a wide variety of genes including a gene located in a telomeric region (lethal giant larvae (l(2)gl)).",
+      "claim_type": "EXPLICIT",
+      "source": "The method has been found to work for a wide variety of genes including a gene located in a telomeric region (lethal giant larvae (l(2)gl)), suggesting that there may be few limitations in its applicability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "5128aa0a-4afc-47c9-a159-27b267ec38ec",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C43",
+      "claim": "There may be few limitations in the applicability of the method.",
+      "claim_type": "EXPLICIT",
+      "source": "The method has been found to work for a wide variety of genes including a gene located in a telomeric region (lethal giant larvae (l(2)gl)), suggesting that there may be few limitations in its applicability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "a159c245-d5ba-4bea-98fd-3ed1c3b7d691",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C44",
+      "claim": "Two tagged lines (Eyes shut (Eys) and Delta (Dl)) were costained with GFP and gene-specific monoclonal antibodies to ensure that the expression pattern and protein distribution correspond to the endogenous protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that the expression pattern and protein distribution correspond to the endogenous protein, we costained two tagged lines with GFP for which specific monoclonal antibodies are available: Eyes shut (Eys) (mAb 21A6,) and Delta (Dl) (mAb C594.9B) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the validation experiment shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "a6b44fb6-8815-4fff-8a0b-b0315514e20a",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C45",
+      "claim": "In both Eys and Dl tagged lines, the protein recognized by the mAb colocalizes with the GFP and matches the described expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the protein recognized by the mAb colocalizes with the GFP and match the described expression patterns (Das et al., 2013; Haltom et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to prior work (Das et al., 2013; Haltom et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "b6f02c70-7727-4644-b1c8-fb4fa55a9735",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C46",
+      "claim": "The GFP tagged Eys protein is present in the cytoplasm of the photoreceptors and the inter-rhabdomere spaces (IRS) of the photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that the GFP tagged Eys protein is present in the cytoplasm of the photoreceptors and the inter-rhabdomere spaces (IRS) of the photoreceptors, whereas the mAb against Eys mostly localizes to the IRS (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "3a449853-8375-4504-9b1c-8ac6c541a78a",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C47",
+      "claim": "The mAb against Eys mostly localizes to the inter-rhabdomere spaces (IRS).",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that the GFP tagged Eys protein is present in the cytoplasm of the photoreceptors and the inter-rhabdomere spaces (IRS) of the photoreceptors, whereas the mAb against Eys mostly localizes to the IRS (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "230cba53-4e44-41cb-827f-83b5571ce447",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C48",
+      "claim": "The Eys localization data are in agreement with what was previously observed for numerous tagged proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are in agreement with what we previously observed for numerous tagged proteins (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "b4ca2813-0013-40a9-92d8-db52d50e5cf2",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C49",
+      "claim": "Third instar larval brains and discs were stained for the 60 tagged gene/proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We stained third instar larval brains and discs for the 60 tagged gene/proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental procedure for characterizing the tagged genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "7bd1c597-e121-4e3f-bfc0-b30eaf21bb02",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C50",
+      "claim": "The expression patterns of l(2)gl, Dl, and tws are consistent with published data.",
+      "claim_type": "EXPLICIT",
+      "source": "The examples, shown in Figure 3B, include lethal (2) giant larvae (l(2)gl) (a), Delta (Dl) (b), and twins (tws) (c) whose expression patterns are consistent with published data (Kooh et al., 1993; Albertson and Doe, 2003; Chabu and Doe, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and citations to prior work (Kooh et al., 1993; Albertson and Doe, 2003; Chabu and Doe, 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c77838e8-8ad2-46f9-9a82-93b3b1d1afb0",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C51",
+      "claim": "kayak/fos (kay) is expressed in wing disc nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, kayak/fos (kay) is expressed in wing disc nuclei (d) as described earlier (Zeitlinger and Bohmann, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and a citation to prior work (Zeitlinger and Bohmann, 1999).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "59a33651-a8e7-42b3-bafd-3105fbb52cb1",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C52",
+      "claim": "Saposin-related (Sap-r) is expressed in a subset of cells in larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression pattern of the remaining genes has not been previously described (Figure 3B): Saposin-related (Sap-r) is expressed in a subset of cells in larval brain (e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "736b3ec6-ee36-4e20-8385-78c813b4b957",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C53",
+      "claim": "Rad, Gem/Kir family member 3 (Rgk3) is enriched in mushroom body in L3 larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad, Gem/Kir family member 3 (Rgk3) is enriched in mushroom body in L3 larval brain (f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "804211c2-da90-49e5-87b0-97fed1614db7",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C54",
+      "claim": "Heterogeneous nuclear ribonucleoprotein at 98DE (Hrb98DE) is expressed in L3 larval brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneous nuclear ribonucleoprotein at 98DE (Hrb98DE) is expressed in L3 larval brain (g)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "f47095d1-315a-43d8-8d9a-fb68102a1b99",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C55",
+      "claim": "CG10086 is expressed in hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "CG10086 is expressed in hindgut (h)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "3f371533-6fa3-4b56-96a4-bf6c3477fab8",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C56",
+      "claim": "CG5656 is expressed in the cells of the cuticle.",
+      "claim_type": "EXPLICIT",
+      "source": "CG5656 is expressed in the cells of the cuticle (i)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "048f6d20-8dbb-42cd-8c62-f36b5e5fdb6f",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C57",
+      "claim": "The expression patterns of all tagged genes are documented in the MiMIC RMCE database at http://flypush.imgen.bcm.tmc.edu/pscreen/rmce/.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression patterns of all these genes as well as all the genes listed in Supplementary file 1 are documented in the MiMIC RMCE database at http://flypush.imgen.bcm.tmc.edu/pscreen/rmce/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the availability of data in a public database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "57bc7f4d-5e4b-44ac-ab39-8a90ed762445",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C58",
+      "claim": "A genetic tagging strategy was developed that will greatly facilitate the EGFP tagging of nearly 2000 genes that already carry MiMIC insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we developed a genetic tagging strategy that will greatly facilitate the EGFP tagging of nearly 2000 genes that already carry MiMIC insertions (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and a citation to prior work (Nagarkar-Jaiswal et al., 2015).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "e63e23bc-c7b6-4861-9e89-ad11dbe87f69",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C59",
+      "claim": "The same strategies can be used for tagging genes with other protein tags.",
+      "claim_type": "EXPLICIT",
+      "source": "The same strategies can also be used for tagging genes with other protein tags.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the flexibility of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "69fb3b89-60f7-49c4-9c87-666518a2d7e8",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C60",
+      "claim": "A similar strategy based on lox sites instead of FRT cassettes has recently been developed to integrate an artificial exon carrying the GAL4 gene in MiMICs inserted in coding introns.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a similar strategy based on lox sites instead of FRT cassettes has recently been developed to integrate an artificial exon carrying the GAL4 gene in MiMICs inserted in coding introns (Diao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Diao et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "06d93240-57de-4e12-914c-6553e2263899",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C61",
+      "claim": "GAL4 insertions in MiMICs are mutagenic but permit the expression of the endogenous wild-type and mutant cDNAs of Drosophila as well as other species under the control of UAS.",
+      "claim_type": "EXPLICIT",
+      "source": "These insertions are mutagenic but permit the expression of the endogenous wild-type and mutant cDNAs of Drosophila as well as other species under the control of UAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the properties of GAL4 insertions based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "e873963b-2afe-4949-b004-a786947804e5",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C62",
+      "claim": "These tagging methods can be combined with CRISPR directed integration of attP carrying cassettes similar to MiMIC in coding introns to tag almost every gene in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these tagging methods can now be combined with CRISPR directed integration of attP carrying cassettes similar to MiMIC in coding introns to tag almost every gene in Drosophila (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Zhang et al., 2014) and represents an inference about future applications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c4e36cb3-9deb-4569-af0b-804203b8cce9",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C63",
+      "claim": "The core cassettes for Phase 0, 1, or 2 were excised from specific pBS-KS vectors as NheI/NsiI fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The core cassettes (attB-SA- phase 0/1/2-[GGS]4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-[GGS]4-SD-attB) for Phase 0,1, or 2 were excised from pBS-KS-attB1-2-PT-SA-SD-0-EGFP-FlAsH-StrepII-TEVcs-3xFlag, pBS-KS-attB1-2-PT-SA-SD-1-EGFP-FlAsH-StrepII-TEVcs-3xFlag, or pBS-KS-attB1-2-PT-SA-SD-2-EGFP-FlAsH-StrepII-TEVcs-3xFlag as NheI/NsiI fragments and subcloned into P-element vector pW35 (DGRC) between PstI/AvrII to create final donor vectors pW35-FRT-attB-SA-phase 0-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT, pW35-FRT-attB-SA-phase 1-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT and pW35-FRT-attB-SA-phase 2-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the cloning methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "5ac11d84-9163-440d-a69d-83650ee9941e",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C64",
+      "claim": "The core cassettes were subcloned into P-element vector pW35 between PstI/AvrII to create final donor vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The core cassettes (attB-SA- phase 0/1/2-[GGS]4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-[GGS]4-SD-attB) for Phase 0,1, or 2 were excised from pBS-KS-attB1-2-PT-SA-SD-0-EGFP-FlAsH-StrepII-TEVcs-3xFlag, pBS-KS-attB1-2-PT-SA-SD-1-EGFP-FlAsH-StrepII-TEVcs-3xFlag, or pBS-KS-attB1-2-PT-SA-SD-2-EGFP-FlAsH-StrepII-TEVcs-3xFlag as NheI/NsiI fragments and subcloned into P-element vector pW35 (DGRC) between PstI/AvrII to create final donor vectors pW35-FRT-attB-SA-phase 0-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT, pW35-FRT-attB-SA-phase 1-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT and pW35-FRT-attB-SA-phase 2-(GGS)4-EGFP-FlAsH-StrepII-TEVcs-3xFlag-(GGS)4-SD-attB-white+-FRT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the cloning methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "aee3da1f-d97e-46a1-9c70-6ba597a6522a",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C65",
+      "claim": "Around 15\u201320 phase-specific homozygous donor females were crossed with 5\u201310 males carrying MiMIC insertion in coding intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 15\u201320 phase-specific homozygous donor females (P{ry+t7.2= hsFLP}12, y1w*M{vas-int.B}ZH-2A; P{FRT-attB-{GFSTF}-attB(w+)-FRT}; Pri1/TM6B, Tb1 or P{ry+t7.2 = hsFLP}12, y1 w*M{vas-int.B}ZH-2A; S1/CyO; P{FRT-attB-{GFSTF}-attB (w+)-FRT}) were crossed with 5\u201310 males carrying MiMIC insertion in coding intron (y1 w*; Mi[MIC y+] geneMI/Mi[MIC y+] geneMI or balancer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the crossing scheme used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "1de9df90-64ca-4136-b6f5-09cc0b2750e3",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C66",
+      "claim": "Crosses were transferred to new vials every third day and constantly kept at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosses were transferred to new vials every third day and constantly kept at 18\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "a406a7b7-089b-4bcc-8fac-8dec4b519936",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C67",
+      "claim": "Vials with progeny embryos and larvae were heat shocked on day 3, 4, and 5 for 20 minutes at 37\u00b0C in a water bath and raised at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Vials with progeny embryos and larvae were heat shocked on day 3, 4, and 5 for 20 minutes at 37\u00b0C in a water bath and raised at 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "207879b3-39d8-46ff-bfbb-b67a666a001b",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C68",
+      "claim": "About 5\u20137 vials with a pool of 5 F1 males with mosaic red eyes and yellow body were crossed with 10\u201315 virgins of specific balancer stocks.",
+      "claim_type": "EXPLICIT",
+      "source": "About 5\u20137 vials with a pool of 5 F1 males with mosaic red eyes and yellow body were crossed with 10\u201315 virgins of y1w67c23; In(2LR)Gla, wgGla\u22121/SM6a or y1w*; D/TM6b, Hu, Tb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the crossing scheme used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c20af011-9302-4aee-891c-ec05dce7db95",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C69",
+      "claim": "Transgenic F2 progeny were screened for loss of yellow+ (yellow-phenotype) and subsequently crossed to virgins of specific balancer stocks to establish stocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic F2 progeny were screened for loss of yellow+ (yellow-phenotype) and subsequently crossed to virgins of y1w67c23; In(2LR)Gla, wgGla\u22121/SM6a or y1w*; D/TM3,Sb, Tb to establish stocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the screening and stock establishment procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "27311813-57d8-40bb-85a5-adf03d754fda",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C70",
+      "claim": "Correct RMCE events were confirmed by PCR assay as described in Nagarkar-Jaiswal et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Correct RMCE events were confirmed by PCR assay as described in Nagarkar-Jaiswal et al., 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the verification method, supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "80dd012b-f5e2-49c6-9fb6-c45c0bb90ce8",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C71",
+      "claim": "Third instar larvae were dissected for larval brains, imaginal discs, and gut in 1xPBS and fixed in 3.7% formaldehyde for 30 min at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, third instar larvae were dissected for larval brains, imaginal discs, and gut in 1xPBS and fixed in 3.7% formaldehyde for 30 min at room temperature and washed in 0.2% Triton X-100 (Nagarkar-Jaiswal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the immunostaining protocol, supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "911aea12-cc9c-432c-9073-c9822fa761c8",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C72",
+      "claim": "Fixed samples were incubated for 1 hr at RT in 10% NGS-PBS-0.2% Triton X-100 and stained with primary antibodies diluted in 10% NGS-PBS-0.2% Triton X-100 overnight at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "They were then incubated for 1 hr at RT in 10% NGS-PBS-0.2% Triton X-100 and stained with primary antibodies diluted in 10% NGS-PBS-0.2% Triton X-100 overnight at 4\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the immunostaining protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "050d8c24-f1fb-4aac-afee-8f641cc7df97",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C73",
+      "claim": "Samples were washed and incubated with secondary antibodies for 2 hr at RT, then washed and mounted in Vectashield.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples were washed and incubated with secondary antibodies for 2 hr at RT. The samples were then washed and mounted in Vectashield (Vector Labs, Burlingame, CA) and imaged with a Zeiss LSM710 confocal microscope and processed using Adobe Photoshop (Adobe Systems Inc., San Jose, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the immunostaining and imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "b1bdff6e-aef5-4b91-830a-0d28bb62d173",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C74",
+      "claim": "Samples were imaged with a Zeiss LSM710 confocal microscope and processed using Adobe Photoshop.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples were then washed and mounted in Vectashield (Vector Labs, Burlingame, CA) and imaged with a Zeiss LSM710 confocal microscope and processed using Adobe Photoshop (Adobe Systems Inc., San Jose, CA, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the imaging and processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "e5f38d5d-d4a1-458c-8be7-7debb943b770",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C75",
+      "claim": "Rabbit anti-GFP was used at 1:1000 dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary antibodies used: rabbit anti-GFP 1:1000 (Life Technologies, A11122)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the antibody used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "aaff7820-9110-40f0-aaa6-1d449f792a6a",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C76",
+      "claim": "Mouse anti-Delta was used at 1:1000 dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "mouse anti-Delta 1:1000 (C594.9B, DSHB [Qi et al., 1999])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the antibody used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c725c4c3-7a11-4345-bd49-442d05a3f256",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C77",
+      "claim": "Mouse anti-Eys was used at 1:250 dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "mouse anti-Eys 1:250 (21A6, DSHB [Fujita et al., 1982])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the antibody used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "67b4f98b-6fac-4170-8f74-45a0b31c323a",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "claim_id": "C78",
+      "claim": "Alexa 488, Cy5 and Cy3 conjugated secondary antibodies were used at 1:500 dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary antibodies used: Alexa 488 (Invitrogen, Life Technologies, Grand Island, NY), Cy5 and Cy3 conjugated antibodies (Jackson ImmunoResearch, West Grove, PA) were used at 1:500.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the antibodies used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "777d1454-503b-4ebd-b04f-6d94cdf599d4",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a genetic strategy for tagging MiMIC-containing genes that eliminates the need for embryonic microinjection by using FLP recombinase to release genomically integrated donor DNA flanked by FRT sites, which then undergoes phiC31 integrase-mediated cassette exchange. Three donor cassettes were engineered (one for each reading frame) containing splice acceptor, flexible linkers, multiple tags (EGFP-FlAsH-StrepII-TEVcs-3xFlag), and splice donor sequences flanked by attB sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C21-C30 collectively describe a well-documented methodological innovation. The approach builds on established recombinase systems (C23 cites Gohl et al. 2011), and the molecular design is clearly specified with appropriate controls (mini-white marker in C29). The creation of 6 stocks (C30) with phase-specific donors demonstrates systematic implementation. The method is supported by Figure 1 and detailed protocols.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The genetic tagging method achieved RMCE events in 93 out of 113 attempts (82% success rate) when setting up 3-7 crosses, with 60 out of 93 tested MiMICs (65%) yielding correctly oriented donor integrations after PCR screening. Approximately 50% of integration events were in the proper orientation. The method worked across diverse genes including those in telomeric regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 provide quantitative success metrics supported by experimental data (Supplementary file 1). The 50% orientation rate (C37) is consistent with random integration expectations. Testing on telomeric genes (C42) demonstrates broad applicability. However, C41 is a recommendation for future work rather than a demonstrated result, and C43 is speculative. The core efficiency claims are well-supported by data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "a79cf0be-9373-4b66-85e8-64a5c47227df",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Validation experiments using two tagged lines (Eyes shut and Delta) showed that GFP-tagged proteins colocalize with endogenous proteins detected by gene-specific monoclonal antibodies and match published expression patterns. For Eys, the GFP-tagged protein showed broader localization (cytoplasm and inter-rhabdomere spaces) compared to the antibody signal (primarily inter-rhabdomere spaces).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 describe rigorous validation using orthogonal detection methods (GFP vs. mAb). The colocalization data (C45) supported by Figure 3A and citations to prior work (Das et al. 2013, Haltom et al. 2014) provide strong evidence. The discrepancy in Eys localization (C46-C47) is appropriately noted and consistent with prior observations (C48), suggesting the GFP tag may reveal additional protein pools not detected by antibodies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "b1d955b0-2727-44c2-865b-1d09954c8b82",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Expression pattern analysis of 60 tagged genes in third instar larvae revealed patterns consistent with published data for characterized genes (l(2)gl, Delta, twins, kayak) and novel expression patterns for previously uncharacterized genes including tissue-specific localization in brain subsets (Sap-r, Rgk3, Hrb98DE), hindgut (CG10086), and cuticle cells (CG5656).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C57 demonstrate successful application of the method. Known genes (C50-C51) serve as positive controls with citations validating the patterns. Novel patterns (C52-C56) are documented with imaging data (Figure 3B) and deposited in a public database (C57). The combination of validation with known genes and discovery of novel patterns provides strong support for the method's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "1c23faaa-38c8-4968-add5-2976d9273053",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Prior work established a collection of 15,660 MiMIC strains with mapped insertion sites, of which 2,854 insertions are located in coding introns of 1,862 distinct genes. MiMICs contain phiC31 recombinase target sites and function as gene/protein traps when properly oriented in coding introns, with content replaceable by RMCE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C13-C17 accurately cite prior work (Nagarkar-Jaiswal et al. 2015, Bellen et al. 2011, Venken et al. 2011, Zhang et al. 2014) establishing the MiMIC resource. The numbers and capabilities are well-documented in the cited literature. This provides appropriate context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tagged proteins generated by MiMIC conversions enable multiple applications including protein expression pattern assessment, identification of interaction partners by immunoprecipitation-mass spectrometry, and reversible protein removal in any tissue. Previous Drosophila protein trap methods tagged only ~800 genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C10-C11 describe established capabilities of protein tagging supported by citations (Nagarkar-Jaiswal et al. 2015). Claim C9 cites foundational work (Ross-Macdonald et al. 1999, Morin et al. 2001, Skarnes et al. 2004). Claim C12 accurately summarizes prior Drosophila efforts with appropriate citations. These claims provide valid scientific context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "bc7650bc-cf7a-416b-8296-9c21ccf4694e",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The previous RMCE method for converting MiMIC insertions required embryonic microinjection of donor DNA and screening of many offspring, making it labor-intensive, costly, and difficult to scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C18-C20 accurately describe limitations of injection-based RMCE that motivated the current work. These are well-established technical constraints in the field and provide clear justification for developing the genetic crossing-based alternative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "c2fa8e82-a738-4225-81f4-d886c88a7277",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The genetic tagging strategy will facilitate EGFP tagging of nearly 2,000 genes with existing MiMIC insertions, can be adapted for other protein tags, and can be combined with CRISPR-directed integration to potentially tag almost every Drosophila gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C59, C62 make forward-looking statements about future applications. While C58 is supported by demonstrated success on 60 genes and C62 cites relevant CRISPR work (Zhang et al. 2014), these represent potential rather than demonstrated capabilities. The scalability to 2,000 genes and universal applicability require additional validation beyond the current dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "0c1cb99e-7b87-4bed-8624-aa670340790b",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A parallel strategy using lox sites instead of FRT cassettes has been developed for integrating GAL4-encoding artificial exons into MiMICs, creating mutagenic insertions that permit UAS-controlled expression of wild-type and mutant cDNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 accurately cite complementary work (Diao et al. 2015) and describe its properties based on established GAL4-UAS system knowledge. This provides appropriate context for alternative approaches to MiMIC conversion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "f15aacb8-2aa2-4f4c-9208-62cddca4606d",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The heat shock-inducible FLP recombinase exhibits leaky expression at 18\u00b0C, causing low-frequency loss of the donor transgene and producing rare white-eyed flies that require periodic removal from stocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 describe an observed technical issue with the donor stocks. This is a straightforward observation documented during stock maintenance and represents honest reporting of a minor limitation that requires management but does not compromise the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "3787cf81-ace3-4696-a61b-239eb3e9c009",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The RMCE protocol involves crossing donor flies to MiMIC-containing flies, heat shocking embryos/larvae to induce FLP activity, selecting progeny based on loss of the y+ marker, and confirming correct integration by PCR. Specific crossing schemes, temperatures, and timing are detailed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36, C65-C70 provide detailed methodology supported by Figure 2 and citations to established protocols (Venken et al. 2011, Nagarkar-Jaiswal et al. 2015). The selection strategy using marker loss is logical and the PCR confirmation provides verification. The level of detail enables reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "e99d4808-05d3-470b-b819-d623f49188a0",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The donor vectors were constructed by excising core cassettes from pBS-KS vectors as NheI/NsiI fragments and subcloning into P-element vector pW35 between PstI/AvrII sites, creating three phase-specific final donor vectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 describe standard molecular cloning procedures with specific restriction sites and vector names. The methodology is conventional and the level of detail is appropriate for reproducibility. This represents routine but necessary technical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    },
+    {
+      "id": "299a0420-794b-48dd-a02a-54c3b4189f03",
+      "content_id": "38066b14-d7b1-4bab-b926-7aaae168473f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Immunostaining protocols involved dissecting third instar larvae, fixing in formaldehyde, blocking in NGS-PBS-Triton, incubating with primary antibodies overnight at 4\u00b0C, and secondary antibodies for 2 hours at room temperature, followed by confocal imaging. Specific antibodies and dilutions are documented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C78 provide standard immunohistochemistry protocols with appropriate citations (Nagarkar-Jaiswal et al. 2015) and specific reagent information. The antibody dilutions and sources are properly documented. These are well-established methods applied appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T04:18:08.865156Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "240d0587-d5c8-4d88-ba61-bb3e51547d26",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "2fb266c5-f6cd-4bfa-9ce8-6d06c2ee100f",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "2da1bb66-12bc-4bb6-bdaa-325d264a747b",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "a11b40fe-9437-4d17-a339-39678833edfe",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "b883e59b-a6f5-453d-b3f8-c860d9ffeb53",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "7a88ff21-bfb5-47b6-9f67-a3868b9e3108",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "d5be6539-6979-4479-8434-26dab16372c4",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "1c5a752f-409a-455e-926f-09b6f104da36",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "9e1db60b-fc35-4820-a230-831507e25f5f",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "37519db0-c836-4021-a041-d54471dad052",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "56685a9c-20bd-4afb-bb93-2dfc0c651b06",
+      "result_id": "777d1454-503b-4ebd-b04f-6d94cdf599d4"
+    },
+    {
+      "claim_id": "eb837cbb-91bd-40d7-9122-fe88d041df79",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "ad1796db-1682-4b65-b94c-97941c06a1e8",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "4f6e472d-e749-4672-bf3a-5dbf7aebc797",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "608e350b-ab9a-49c1-a357-1c8369af88cb",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "c43f7e76-5b59-4e0d-9a89-7e1e13b712b3",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "82b33e43-e524-4f32-9a65-6f495a3a25d7",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "5128aa0a-4afc-47c9-a159-27b267ec38ec",
+      "result_id": "ca6a1f3f-7218-4beb-aff4-54216e6bcf57"
+    },
+    {
+      "claim_id": "a159c245-d5ba-4bea-98fd-3ed1c3b7d691",
+      "result_id": "a79cf0be-9373-4b66-85e8-64a5c47227df"
+    },
+    {
+      "claim_id": "a6b44fb6-8815-4fff-8a0b-b0315514e20a",
+      "result_id": "a79cf0be-9373-4b66-85e8-64a5c47227df"
+    },
+    {
+      "claim_id": "b6f02c70-7727-4644-b1c8-fb4fa55a9735",
+      "result_id": "a79cf0be-9373-4b66-85e8-64a5c47227df"
+    },
+    {
+      "claim_id": "3a449853-8375-4504-9b1c-8ac6c541a78a",
+      "result_id": "a79cf0be-9373-4b66-85e8-64a5c47227df"
+    },
+    {
+      "claim_id": "230cba53-4e44-41cb-827f-83b5571ce447",
+      "result_id": "a79cf0be-9373-4b66-85e8-64a5c47227df"
+    },
+    {
+      "claim_id": "b4ca2813-0013-40a9-92d8-db52d50e5cf2",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "7bd1c597-e121-4e3f-bfc0-b30eaf21bb02",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "c77838e8-8ad2-46f9-9a82-93b3b1d1afb0",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "59a33651-a8e7-42b3-bafd-3105fbb52cb1",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "736b3ec6-ee36-4e20-8385-78c813b4b957",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "804211c2-da90-49e5-87b0-97fed1614db7",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "f47095d1-315a-43d8-8d9a-fb68102a1b99",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "3f371533-6fa3-4b56-96a4-bf6c3477fab8",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "048f6d20-8dbb-42cd-8c62-f36b5e5fdb6f",
+      "result_id": "b1d955b0-2727-44c2-865b-1d09954c8b82"
+    },
+    {
+      "claim_id": "98ccbf78-515c-44fe-a42f-e8d26afe9c11",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "ec2ad6e0-027c-4ac7-88c6-415bf40b44fb",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "694e96e5-ef66-460a-bf28-0670040ef091",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "e374fef3-f195-43a3-b97b-edbd656ae96b",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "70ace79a-e465-4d23-afef-a972d9f52b90",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "f498f42f-e065-4966-a840-da497eec4840",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "2c7cba59-46a4-4d89-84ec-8be245c61c34",
+      "result_id": "1c23faaa-38c8-4968-add5-2976d9273053"
+    },
+    {
+      "claim_id": "44de7b76-c4dc-4b45-bcdc-629704beee41",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "c99b76dc-e107-4aaf-9c66-fd4db93b18b8",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "aa0d153e-4bc6-45e8-85b1-fb54a05062a6",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "39213272-9fa0-41c2-aae3-7a353308b9ae",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "d3ec2f72-9641-49f5-ae6f-d8b650c29bc3",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "e1d8efe3-1b50-46cd-850d-cb8d1e0378bf",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "50dfbf64-cc2c-45e8-898e-803094dafa58",
+      "result_id": "cbf78749-9ab2-49e9-a253-029ae85d1c7c"
+    },
+    {
+      "claim_id": "4f868ec3-9b99-4f61-b466-a72f01f1eaba",
+      "result_id": "bc7650bc-cf7a-416b-8296-9c21ccf4694e"
+    },
+    {
+      "claim_id": "5ff9931c-e74f-4081-b7b8-adc6638e49ef",
+      "result_id": "bc7650bc-cf7a-416b-8296-9c21ccf4694e"
+    },
+    {
+      "claim_id": "90b634a0-ec5a-484b-8ca4-9cb1a6b9c08d",
+      "result_id": "bc7650bc-cf7a-416b-8296-9c21ccf4694e"
+    },
+    {
+      "claim_id": "0e798466-d36f-4bd6-ba73-00540f878df5",
+      "result_id": "bc7650bc-cf7a-416b-8296-9c21ccf4694e"
+    },
+    {
+      "claim_id": "57bc7f4d-5e4b-44ac-ab39-8a90ed762445",
+      "result_id": "c2fa8e82-a738-4225-81f4-d886c88a7277"
+    },
+    {
+      "claim_id": "e63e23bc-c7b6-4861-9e89-ad11dbe87f69",
+      "result_id": "c2fa8e82-a738-4225-81f4-d886c88a7277"
+    },
+    {
+      "claim_id": "e873963b-2afe-4949-b004-a786947804e5",
+      "result_id": "c2fa8e82-a738-4225-81f4-d886c88a7277"
+    },
+    {
+      "claim_id": "69fb3b89-60f7-49c4-9c87-666518a2d7e8",
+      "result_id": "0c1cb99e-7b87-4bed-8624-aa670340790b"
+    },
+    {
+      "claim_id": "06d93240-57de-4e12-914c-6553e2263899",
+      "result_id": "0c1cb99e-7b87-4bed-8624-aa670340790b"
+    },
+    {
+      "claim_id": "5ef9a34e-c7d4-478a-8050-493d3e6fc05d",
+      "result_id": "f15aacb8-2aa2-4f4c-9208-62cddca4606d"
+    },
+    {
+      "claim_id": "f1ac2535-7b83-462c-8b9b-a0310ccb8c52",
+      "result_id": "f15aacb8-2aa2-4f4c-9208-62cddca4606d"
+    },
+    {
+      "claim_id": "dd70032d-cc3f-43fe-b377-2293aed29ea4",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "fdd7a33b-a556-4a1c-8828-76b5a1a06c95",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "15625685-b0d3-4563-9977-20e4ee0556b9",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "33308263-bbd1-4d24-b6e7-2ec563d7e17e",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "aee3da1f-d97e-46a1-9c70-6ba597a6522a",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "1de9df90-64ca-4136-b6f5-09cc0b2750e3",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "a406a7b7-089b-4bcc-8fac-8dec4b519936",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "207879b3-39d8-46ff-bfbb-b67a666a001b",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "c20af011-9302-4aee-891c-ec05dce7db95",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "27311813-57d8-40bb-85a5-adf03d754fda",
+      "result_id": "3787cf81-ace3-4696-a61b-239eb3e9c009"
+    },
+    {
+      "claim_id": "c4e36cb3-9deb-4569-af0b-804203b8cce9",
+      "result_id": "e99d4808-05d3-470b-b819-d623f49188a0"
+    },
+    {
+      "claim_id": "5ac11d84-9163-440d-a69d-83650ee9941e",
+      "result_id": "e99d4808-05d3-470b-b819-d623f49188a0"
+    },
+    {
+      "claim_id": "80dd012b-f5e2-49c6-9fb6-c45c0bb90ce8",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "911aea12-cc9c-432c-9073-c9822fa761c8",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "050d8c24-f1fb-4aac-afee-8f641cc7df97",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "b1bdff6e-aef5-4b91-830a-0d28bb62d173",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "e5f38d5d-d4a1-458c-8be7-7debb943b770",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "aaff7820-9110-40f0-aaa6-1d449f792a6a",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "c725c4c3-7a11-4345-bd49-442d05a3f256",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    },
+    {
+      "claim_id": "67b4f98b-6fac-4170-8f74-45a0b31c323a",
+      "result_id": "299a0420-794b-48dd-a02a-54c3b4189f03"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Thioester-containing domains (TEDs) are unexpectedly prevalent and diverse in Gram-positive bacteria. PSI-BLAST searches identified hundreds of potential TEDs exclusively in Gram-positive bacteria, with 54 sequences from 40 species analyzed. These TEDs show high sequence diversity but share conserved structural features including the thioester-forming Cys and Gln residues in specific motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatics analysis (C26-C27) is well-documented with specific numbers and supported by sequence alignment data (Figure 1\u2014figure supplement 1). The identification of conserved motifs (C36-C40) and structural predictions (C35, C39) are supported by computational analysis. The claim of prevalence (C5) is directly supported by the search results showing hundreds of hits across diverse pathogens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Twelve TEDs from eight human pathogens were experimentally validated to contain internal thioester bonds. Mass spectrometry showed each TED had a molecular mass ~17 Da lower than predicted, consistent with thioester formation. Cys-to-Ala variants showed predicted masses, confirming the mass difference is attributable to thioesters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental validation is rigorous with clear controls (C46-C47). Mass spectrometry data (Table 1) consistently shows -17 Da differences for wild-type proteins and correct masses for Cys-to-Ala mutants across all twelve TEDs tested. The chemical interpretation (C45) is sound and supported by the mutagenesis controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Crystal structures of four TEDs reveal a conserved three-dimensional fold despite low sequence identity (as low as 12%). The structures show continuous electron density for the thioester bonds, which are buried at the interface between \u03b1-helical and \u03b2-barrel subdomains. Structural comparison of wild-type and Cys-to-Ala mutant confirms thioesters are not structural determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data is comprehensive with multiple structures solved (C49) and deposited in PDB. The observation of conserved structure despite low sequence identity (C50, Table 3) is well-documented. Electron density maps (Figure 2B) directly support thioester presence (C51). The comparison of wild-type and mutant structures (C58-C59) provides strong evidence that thioesters are not required for folding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SfbI-TED and FbaB-TED form covalent adducts with fibrinogen A\u03b1 chain in a thioester-dependent manner. SDS-PAGE shows new bands consistent with TED-fibrinogen adducts that are absent when Cys-to-Ala mutants are used. Acetylation experiments suggest lysine residues are the nucleophiles, forming intermolecular isopeptide bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical evidence is strong with clear gel shift assays (Figure 3A-B) showing adduct formation. The dependence on the thioester is demonstrated by loss of adduct formation with Cys-to-Ala mutants (C63-C64). The acetylation experiment (C68, Figure 3\u2014figure supplement 1) provides chemical evidence for lysine involvement. Mass spectrometry confirms the identity of adduct components (C67). The specificity is demonstrated by the observation that not all TEDs bind fibrinogen (C65-C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SfbI-TEDs specifically pull down fibrinogen from human blood plasma through covalent adduct formation with fibrinogen A\u03b1. All Cys-to-Ala variants fail to pull down fibrinogen, and there is no evidence for covalent binding to other plasma proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The plasma pull-down experiments (Figure 4B, Figure 4\u2014figure supplement 1) demonstrate specificity in a complex biological sample. The requirement for the thioester is confirmed by failure of all Cys-to-Ala mutants (C73). Mass spectrometry analysis supports the specificity claim (C74). The use of a biologically relevant sample (plasma) strengthens the physiological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "The specific fibrinogen residue targeted by SfbI-TEDs and FbaB-TED is A\u03b1-Lys100 (Lys81 in mature protein). Mass spectrometry of cross-linked peptides identified this single lysine residue, which is surface-exposed on the \u03b1-helical coiled-coil region and is not involved in fibrin cross-linking but is a plasmin cleavage site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of A\u03b1-Lys100 is supported by extensive mass spectrometry analysis (Figure 5, Supplementary file 1) showing multiple precursor ions and fragments consistent with this single residue (C75-C76). The acetylation protection experiment (C77, Figure 5\u2014figure supplement 1) provides orthogonal evidence. The structural context (C79, Figure 5\u2014figure supplement 2) and functional annotations (C80-C81, C83) are supported by citations and structural analysis. The claim of exclusivity (C78) is well-supported by the comprehensive MS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "L. lactis expressing SfbI-A40 or SfbI-A20 shows thioester-dependent binding to fibrin fibrils and clots. Bacteria expressing Cys-to-Ala variants do not show adherence to fibrin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron microscopy data (Figure 6, Figure 6\u2014figure supplement 2) clearly shows intimate bacterial adherence to fibrin for wild-type SfbI but not for Cys-to-Ala mutants. The results are consistent across two SfbI variants (C84, C86). Immunogold labeling (Figure 6\u2014figure supplement 1) confirms similar expression levels of wild-type and mutant proteins, ruling out expression differences as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SfbI-A40-TED binds to A549 lung epithelial cells under inflammatory conditions (induced by dexamethasone and interleukin-6) through thioester-mediated covalent binding to cell surface-associated fibrinogen. The Cys109Ala variant does not bind cells, and Western blot confirms formation of TED-fibrinogen A\u03b1 adducts only with wild-type TED.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell binding assays (Figure 7B) clearly show binding only to induced cells and only with wild-type TED (C91-C92). Western blot analysis (Figure 7C) provides direct molecular evidence for adduct formation (C94) and confirms the thioester-dependence (C95). The upregulation of fibrinogen in induced cells is confirmed (C93), consistent with cited literature. The experimental design with appropriate controls (uninduced cells, mutant TED) is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C105"
+    ],
+    "result": "The streptococcal surface protein SfbI mediates covalent interaction with fibrinogen using an internal thioester bond, allowing bacterial attachment to fibrin and binding to human cells in inflammation models. This represents a new molecular principle of bacterial-encoded covalent binding in host-microbe interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergence of multiple lines of evidence: biochemical adduct formation (C2), bacterial binding to fibrin (C3), cell binding under inflammatory conditions (C4), and the demonstration that this mechanism is widespread in Gram-positive bacteria (C105). The claim of novelty (C6) is justified given the prior lack of definitive evidence for pathogen-encoded covalent adhesion mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C102",
+      "C103"
+    ],
+    "result": "SfbI-TEDs may bind to fibrin with implications for fibrinolysis, and fibrinogen may have an unappreciated role as a cell-surface adhesion target. SfbI may confer tropism for inflamed tissue or healing wounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims (C82, C102, C103) based on the experimental findings but not directly tested. While the speculation is reasonable given that A\u03b1-Lys100 is a plasmin cleavage site and fibrinogen is present in inflamed tissues, no experiments directly address fibrinolysis, tissue tropism, or wound healing. These represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Thioester proteins could form covalent bridges providing mechanically strong attachment advantageous under shear stress. The sequence diversity of TEDs suggests undiscovered targets, and thioester-dependent adhesion may be a common mechanism in host colonization by Gram-positive bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative interpretations (C106-C107, C109) of the findings. While the inference about undiscovered targets (C108) is reasonable given the sequence diversity and observation that only some TEDs bind fibrinogen, the claims about mechanical strength and advantages under shear stress are not experimentally tested. These represent plausible hypotheses but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "TEDs represent potential therapeutic targets for treating bacterial infection and may offer opportunities for engineering beneficial interactions or as protein fusion tags for biotechnology applications. Thioester-containing proteins may also function in bacteria-bacteria interactions and biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are entirely speculative claims (C7-C8, C110-C114) about potential applications and alternative functions. No experiments test therapeutic targeting, engineering applications, or roles in bacteria-bacteria interactions or biofilm formation. While these are reasonable suggestions for future work, they are not supported by data in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior to this study, adhesins were only known to bind host receptors non-covalently. Internal thioesters were previously discovered in bacterial pilus adhesin Cpa and mammalian complement proteins, but these systems are evolutionarily distinct and definitive evidence for covalent pathogen targeting was lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the state of prior knowledge and are supported by appropriate citations (C9-C10, C12, C14-C17, C22-C25). The assessment that definitive evidence for covalent targeting was lacking (C18) is a fair characterization of the field. The claims about evolutionary distinctness (C19-C21) are supported by the lack of sequence/structural similarity noted in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104"
+    ],
+    "result": "The experimental models used (fibrin binding, A549 cells under inflammatory conditions) are biologically relevant for studying S. pyogenes infection. Fibrinogen is produced by hepatocytes and epithelial cells, is upregulated during inflammation, and is targeted by pathogenic bacteria. S. pyogenes targets epithelial cells and causes invasive infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims are well-supported by citations to established literature (C43, C87-C90, C97-C100). The inference that the experimental models are relevant (C101) is reasonable given the known biology of S. pyogenes and fibrinogen. These claims provide important context for interpreting the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The variable loop adjacent to the thioester may be involved in defining target specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as speculation that 'has yet to be tested' (C56). While the structural observation of loop variability near the thioester (C55) is supported, the functional interpretation is hypothetical. This represents a reasonable hypothesis for future investigation but lacks experimental support.",
+    "result_type": "MINOR"
+  }
+]
